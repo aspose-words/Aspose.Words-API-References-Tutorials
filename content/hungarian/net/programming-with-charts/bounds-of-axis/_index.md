@@ -104,7 +104,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 
 ## Következtetés
 
-Az Aspose.Words for .NET használatával egyszerűen hozhat létre és kezelhet diagramokat a dokumentumokban. Ez a lépésről lépésre bemutatott útmutató bemutatja, hogyan állíthatja be a tengely határait egy diagramban, így pontosabbá és professzionálisabbá teheti az adatok bemutatását. Akár jelentéseket, prezentációkat vagy bármilyen más dokumentumot készít, az Aspose.Words biztosítja a szükséges eszközöket.
+Az Aspose.Words for .NET használatával egyszerűen hozhat létre és kezelhet diagramokat a dokumentumokban. Ez a lépésről lépésre bemutatott útmutató bemutatja, hogyan állíthatja be a tengely határait egy diagramon, így pontosabbá és professzionálisabbá teheti az adatok bemutatását. Akár jelentéseket, prezentációkat vagy bármilyen más dokumentumot készít, az Aspose.Words biztosítja a szükséges eszközöket.
 
 ## GYIK
 
@@ -112,13 +112,13 @@ Az Aspose.Words for .NET használatával egyszerűen hozhat létre és kezelhet 
 Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi Word-dokumentumok programozott létrehozását, módosítását és konvertálását a .NET-keretrendszer használatával.
 
 ### Hogyan állíthatom be az Aspose.Words for .NET-et?
- Letöltheti innen[itt](https://releases.aspose.com/words/net/) és kövesse a mellékelt telepítési utasításokat.
+ Letöltheti innen[itt](https://releases.aspose.com/words/net/)és kövesse a mellékelt telepítési utasításokat.
 
 ### Használhatom ingyenesen az Aspose.Words-t?
  Igen, használhatod a[ingyenes próbaverzió](https://releases.aspose.com/) vagy kap a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).
 
 ### Hol találom az Aspose.Words for .NET dokumentációját?
- A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
+ részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
 
 ### Hogyan kaphatok támogatást az Aspose.Words számára?
  Meglátogathatja a[támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.

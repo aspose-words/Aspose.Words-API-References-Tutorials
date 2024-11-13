@@ -79,7 +79,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ## 9. 常见问题解答
 
-### Q1：我可以在一个文档中渲染多个形状吗？
+### 问题 1：我可以在一个文档中渲染多个形状吗？
 
 是的，您可以在一个文档中渲染多个形状。只需对要渲染的每个形状重复此过程即可。
 

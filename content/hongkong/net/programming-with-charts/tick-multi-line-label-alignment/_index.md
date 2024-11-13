@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-charts/tick-multi-line-label-alignment/
 
 在我們深入了解多行標籤對齊的世界之前，讓我們確保您已將所有事情排成一排。這是您需要的：
 
-1.  Aspose.Words for .NET：請確保您擁有最新版本的 Aspose.Words for .NET。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：請確保您擁有最新版本的 Aspose.Words for .NET。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
 2. .NET 環境：確保您的開發環境是使用 .NET 設定的。
 3. C# 基礎知識：對 C# 的基本了解將使這個旅程更加順利。
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 在圖表中成功勾選了多行標籤對齊。透過執行這些步驟，您可以輕鬆自訂圖表以滿足您的特定需求。無論您是準備專業報告還是只是進行實驗，Aspose.Words for .NET 都提供了完成工作的靈活性和功能。快樂編碼！
+現在你就擁有了！您已使用 Aspose.Words for .NET 在圖表中成功勾選了多行標籤對齊。透過執行這些步驟，您可以輕鬆自訂圖表以滿足您的特定需求。無論您是準備專業報告還是只是進行實驗，Aspose.Words for .NET 都提供了完成工作的靈活性和功能。快樂編碼！
 
 ## 常見問題解答
 

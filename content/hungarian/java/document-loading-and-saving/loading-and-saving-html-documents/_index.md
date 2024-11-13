@@ -79,7 +79,7 @@ Ebben a cikkben megtanultuk, hogyan tölthet be és menthet HTML-dokumentumokat 
 
 ### Hogyan telepíthetem az Aspose.Words for Java programot?
 
- Az Aspose.Words for Java letölthető innen[itt](https://releases.aspose.com/words/java/)Kövesse a webhelyen található telepítési utasításokat a Java projektben való beállításához.
+ Az Aspose.Words for Java letölthető innen[itt](https://releases.aspose.com/words/java/). Kövesse a webhelyen található telepítési utasításokat a Java projektben való beállításához.
 
 ### Betölthetek összetett HTML dokumentumokat az Aspose.Words használatával?
 
@@ -95,4 +95,4 @@ Teljesen! Az Aspose.Words egy robusztus megoldás, amelyet a vállalatok világs
 
 ### Hol találok további dokumentációt és példákat az Aspose.Words for Java-hoz?
 
-Részletes dokumentációt, kódpéldákat és oktatóanyagokat találhat az Aspose.Words for Java dokumentációs webhelyén:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).
+ Részletes dokumentációt, kódpéldákat és oktatóanyagokat találhat az Aspose.Words for Java dokumentációs webhelyén:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).

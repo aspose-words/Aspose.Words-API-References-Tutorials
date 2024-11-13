@@ -1,29 +1,29 @@
 ---
-title: Aspose.Words for Java'da XML Verilerini Kullanma
+title: Aspose.Words for Java'da XML Verilerinin Kullanımı
 linktitle: XML Verilerini Kullanma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'nın Gücünün Kilidini Açın. Adım Adım Öğreticilerle XML Veri İşleme, Adres Mektup Birleştirme ve Bıyık Söz Dizimini öğrenin.
+description: Java için Aspose.Words'ün Gücünü Açın. Adım Adım Eğitimlerle XML Veri İşleme, Posta Birleştirme ve Mustache Sözdizimini Öğrenin.
 type: docs
 weight: 12
 url: /tr/java/document-manipulation/using-xml-data/
 ---
 
-## Aspose.Words for Java'da XML Verilerini Kullanmaya Giriş
+## Aspose.Words for Java'da XML Verilerinin Kullanımına Giriş
 
-Bu kılavuzda Aspose.Words for Java kullanarak XML verileriyle nasıl çalışılacağını inceleyeceğiz. İç içe adres-mektup birleştirmeler de dahil olmak üzere adres-mektup birleştirme işlemlerini nasıl gerçekleştireceğinizi ve bir DataSet ile Mustache sözdizimini nasıl kullanacağınızı öğreneceksiniz. Başlamanıza yardımcı olmak için adım adım talimatlar ve kaynak kodu örnekleri sunacağız.
+Bu kılavuzda, Aspose.Words for Java kullanarak XML verileriyle nasıl çalışılacağını inceleyeceğiz. İç içe geçmiş posta birleştirmeleri de dahil olmak üzere posta birleştirme işlemlerini nasıl gerçekleştireceğinizi ve bir DataSet ile Mustache sözdizimini nasıl kullanacağınızı öğreneceksiniz. Başlamanıza yardımcı olmak için adım adım talimatlar ve kaynak kodu örnekleri sağlayacağız.
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-- [Aspose.Words for Java](https://products.aspose.com/words/java/) yüklü.
+Başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
+- [Java için Aspose.Words](https://products.aspose.com/words/java/) kuruldu.
 - Müşteriler, siparişler ve satıcılar için örnek XML veri dosyaları.
-- Adres-mektup birleştirme hedefleri için örnek Word belgeleri.
+- Posta birleştirme hedefleri için örnek Word belgeleri.
 
-## XML Verileriyle Adres Mektup Birleştirme
+## XML Verileriyle Posta Birleştirme
 
-### 1. Temel Adres Mektup Birleştirme
+### 1. Temel Posta Birleştirme
 
-XML verileriyle temel adres-mektup birleştirme gerçekleştirmek için şu adımları izleyin:
+XML verileriyle temel bir posta birleştirme işlemi gerçekleştirmek için şu adımları izleyin:
 
 ```java
 DataSet customersDs = new DataSet();
@@ -33,9 +33,9 @@ doc.getMailMerge().execute(customersDs.getTables().get("Customer"));
 doc.save("Your Directory Path" + "BasicMailMerge.docx");
 ```
 
-### 2. İç İçe Adres Mektup Birleştirme
+### 2. İç İçe Posta Birleştirme
 
-İç içe adres-mektup birleştirmeler için aşağıdaki kodu kullanın:
+İç içe posta birleştirmeleri için aşağıdaki kodu kullanın:
 
 ```java
 DataSet pizzaDs = new DataSet();
@@ -46,9 +46,9 @@ doc.getMailMerge().executeWithRegions(pizzaDs);
 doc.save("Your Directory Path" + "NestedMailMerge.docx");
 ```
 
-## DataSet Kullanarak Bıyık Söz Dizimi
+## DataSet Kullanarak Mustache Sözdizimi
 
-Bir DataSet ile Bıyık sözdiziminden yararlanmak için şu adımları izleyin:
+Mustache sözdizimini bir DataSet ile kullanmak için şu adımları izleyin:
 
 ```java
 DataSet ds = new DataSet();
@@ -61,18 +61,18 @@ doc.save("Your Directory Path" + "MustacheSyntaxUsingDataSet.docx");
 
 ## Çözüm
 
-Bu kapsamlı kılavuzda XML verilerinin Aspose.Words for Java ile nasıl etkili şekilde kullanılacağını araştırdık. Temel adres-mektup birleştirme, iç içe adres-mektup birleştirme dahil olmak üzere çeşitli adres-mektup birleştirme işlemlerini nasıl gerçekleştireceğinizi ve bir DataSet ile Mustache söz dizimini nasıl kullanacağınızı öğrendiniz. Bu teknikler, belge oluşturmayı ve özelleştirmeyi kolaylıkla otomatikleştirmenizi sağlar.
+Bu kapsamlı kılavuzda, Aspose.Words for Java ile XML verilerinin nasıl etkili bir şekilde kullanılacağını inceledik. Temel posta birleştirme, iç içe posta birleştirme ve bir DataSet ile Mustache sözdizimini nasıl kullanacağınız dahil olmak üzere çeşitli posta birleştirme işlemlerini nasıl gerçekleştireceğinizi öğrendiniz. Bu teknikler, belge oluşturma ve özelleştirmeyi kolaylıkla otomatikleştirmenizi sağlar.
 
-## SSS'ler
+## SSS
 
-### XML verilerimi adres-mektup birleştirmeye nasıl hazırlayabilirim?
+### XML verilerimi posta birleştirme için nasıl hazırlayabilirim?
 
-XML verilerinizin, sağlanan örneklerde gösterildiği gibi tanımlanmış tablolar ve ilişkilerle gerekli yapıyı takip ettiğinden emin olun.
+Verilen örneklerde gösterildiği gibi XML verilerinizin gerekli yapıyı izlediğinden, tabloların ve ilişkilerin tanımlandığından emin olun.
 
-### Adres-mektup birleştirme değerlerinin kırpma davranışını özelleştirebilir miyim?
+### Posta birleştirme değerleri için kırpma davranışını özelleştirebilir miyim?
 
- Evet, adres-mektup birleştirme sırasında öndeki ve sondaki boşlukların kırpılıp kırpılmayacağını kullanarak kontrol edebilirsiniz.`doc.getMailMerge().setTrimWhitespaces(false)`.
+ Evet, posta birleştirme sırasında öndeki ve arkadaki boşlukların kırpılıp kırpılmayacağını kontrol edebilirsiniz.`doc.getMailMerge().setTrimWhitespaces(false)`.
 
-### Bıyık sözdizimi nedir ve onu ne zaman kullanmalıyım?
+### Mustache söz dizimi nedir ve ne zaman kullanmalıyım?
 
- Bıyık sözdizimi, adres-mektup birleştirme alanlarını daha esnek bir şekilde biçimlendirmenize olanak tanır. Kullanmak`doc.getMailMerge().setUseNonMergeFields(true)` Bıyık söz dizimini etkinleştirmek için.
+ Mustache sözdizimi, posta birleştirme alanlarını daha esnek bir şekilde biçimlendirmenize olanak tanır.`doc.getMailMerge().setUseNonMergeFields(true)` Mustache sözdizimini etkinleştirmek için.

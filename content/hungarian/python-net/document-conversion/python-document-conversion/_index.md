@@ -175,7 +175,7 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 
 ## Dokumentumkonverzió automatizálása
 
-### Python szkriptek írása automatizáláshoz
+### Python-szkriptek írása automatizáláshoz
 
 A Python szkriptelési képességei kiváló választássá teszik az ismétlődő feladatok automatizálására. Python szkripteket írhat a kötegelt dokumentumok konvertálásához, így időt és erőfeszítést takaríthat meg.
 
@@ -203,7 +203,7 @@ for filename in input_files:
     doc.save(os.path.join(output_dir, output_filename), aw.SaveFormat.PDF)
 ```
 
-### Dokumentumok kötegelt átalakítása
+### A dokumentumok kötegelt átalakítása
 
 Által
 

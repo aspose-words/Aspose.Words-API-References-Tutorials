@@ -2,7 +2,7 @@
 title: 引用
 linktitle: 引用
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 将引号和嵌套块引用添加到 Word 文档中。按照此分步指南掌握文档创建。
+description: 了解如何使用 Aspose.Words for .NET 将引号和嵌套块引号添加到 Word 文档中。按照此分步指南掌握文档创建。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/quote/

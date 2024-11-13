@@ -70,7 +70,7 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
- Förklaring: Det här kodavsnittet går igenom varje fält i dokumentet. För varje fält hämtar den fältkoden och resultatet av fältet. De`GetFieldCode()` metoden returnerar råfältskoden, medan`Result` egenskapen ger dig värdet eller resultatet som produceras av fältet.
+ Förklaring: Det här kodavsnittet går igenom varje fält i dokumentet. För varje fält hämtar den fältkoden och resultatet av fältet. De`GetFieldCode()` metod returnerar råfältskoden, medan`Result` egenskapen ger dig värdet eller resultatet som produceras av fältet.
 
 ## Steg 4: Bearbeta fältkoder
 

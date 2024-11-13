@@ -46,7 +46,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Här,`dataDir` är sökvägen till din dokumentkatalog där du ska spara den slutliga filen.`Document`och`DocumentBuilder` är klasser från Aspose.Words som hjälper dig att skapa och manipulera Word-dokument.
+ Här,`dataDir` är sökvägen till din dokumentkatalog där du ska spara den slutliga filen.`Document` och`DocumentBuilder` är klasser från Aspose.Words som hjälper dig att skapa och manipulera Word-dokument.
 
 ## Steg 2: Infoga ett diagram
 
@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- De`InsertChart` metod infogar ett diagram av angiven typ (kolumn i detta fall) och dimensioner i dokumentet.
+De`InsertChart` metod infogar ett diagram av angiven typ (kolumn i detta fall) och dimensioner i dokumentet.
 
 ## Steg 3: Anpassa sjökortsserien
 
@@ -86,7 +86,7 @@ Låt oss slutligen formatera siffrorna på Y-axeln för att göra dem mer läsba
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
- De`FormatCode` egenskap låter dig ställa in ett anpassat format för siffrorna på axeln. I det här exemplet,`#,##0`ser till att stora siffror visas med kommatecken för tusentals.
+De`FormatCode` egenskap låter dig ställa in ett anpassat format för siffrorna på axeln. I det här exemplet,`#,##0`ser till att stora siffror visas med kommatecken för tusentals.
 
 ## Steg 5: Spara dokumentet
 

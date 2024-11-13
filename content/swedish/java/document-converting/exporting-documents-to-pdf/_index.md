@@ -26,7 +26,7 @@ Börja med att skapa ett nytt Java-projekt i din favorit-IDE. Se till att lägga
 
 ## Laddar ett Word-dokument
 
-din Java-kod måste du ladda Word-dokumentet du vill exportera till PDF. Använd följande kodavsnitt för att uppnå detta:
+I din Java-kod måste du ladda Word-dokumentet du vill exportera till PDF. Använd följande kodavsnitt för att uppnå detta:
 
 ```java
 // Ladda Word-dokumentet

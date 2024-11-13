@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## चरण 3: छवि सहेजें विकल्प कॉन्फ़िगर करें
+## चरण 3: छवि सहेजने के विकल्प कॉन्फ़िगर करें
 
  इसके बाद, हमें इसे सेट अप करना होगा`ImageSaveOptions`यहीं पर जादू होता है। हम इसे 1Bpp इंडेक्स्ड कलर मोड के साथ PNG फॉर्मेट में इमेज को सेव करने के लिए कॉन्फ़िगर करेंगे।
 
@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 ### क्या मुझे .NET के लिए Aspose.Words का उपयोग करने के लिए लाइसेंस की आवश्यकता है?
  हां, .NET के लिए Aspose.Words को पूर्ण कार्यक्षमता के लिए लाइसेंस की आवश्यकता होती है। आप एक प्राप्त कर सकते हैं[अस्थायी लाइसेंस यहाँ](https://purchase.aspose.com/temporary-license/).
 
-### मैं अपने वर्ड दस्तावेज़ को अन्य किस छवि प्रारूप में परिवर्तित कर सकता हूँ?
+### मैं अपने वर्ड दस्तावेज़ को अन्य किन छवि प्रारूपों में परिवर्तित कर सकता हूँ?
  Aspose.Words JPEG, BMP, और TIFF सहित विभिन्न छवि प्रारूपों का समर्थन करता है। बस बदलें`SaveFormat` में`ImageSaveOptions`.
 
 ### मैं .NET के लिए Aspose.Words पर अधिक दस्तावेज़ कहां पा सकता हूं?

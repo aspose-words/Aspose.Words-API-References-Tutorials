@@ -65,7 +65,7 @@ doc.save("Your Directory Path" + "MustacheSyntaxUsingDataSet.docx");
 
 ## 常见问题解答
 
-### 我如何准备用于邮件合并的 XML 数据？
+### 如何准备用于邮件合并的 XML 数据？
 
 确保您的 XML 数据遵循所需的结构，并定义表和关系，如所提供的示例所示。
 

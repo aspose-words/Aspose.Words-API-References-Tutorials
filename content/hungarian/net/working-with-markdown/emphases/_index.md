@@ -15,7 +15,7 @@ Markdown egy egyszerű jelölőnyelv, amellyel formázási elemeket adhat hozzá
 
 Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy mindennel rendelkezünk, ami az induláshoz szükséges:
 
-1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy az Aspose.Words for .NET legújabb verziója telepítve van. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy az Aspose.Words for .NET legújabb verziója telepítve van. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Megfelelő .NET fejlesztői környezet, például a Visual Studio.
 3. Alapvető C# ismerete: Hasznos lesz a C# programozás alapjainak megértése.
 4. A Markdown alapjai: A Markdown szintaxisának ismerete segít jobban megérteni a kontextust.
@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- A`dataDir` változó annak a könyvtárnak a helyőrzője, ahová a Markdown fájlt menteni fogja. Ügyeljen arra, hogy a „DOKUMENTUMKÖNYVTÁR” szöveget a tényleges elérési útra cserélje.
+A`dataDir` változó annak a könyvtárnak a helyőrzője, ahová a Markdown fájlt menteni fogja. Ügyeljen arra, hogy a „DOKUMENTUMKÖNYVTÁR” szöveget a tényleges elérési útra cserélje.
 
 ## 2. lépés: Normál szöveg írása
 
@@ -80,7 +80,7 @@ Ez a "dőlt" szöveget dőlt stílusban jeleníti meg, majd a szokásos szövege
 
 ## 5. lépés: A félkövér és a dőlt szöveg kombinálása
 
-Kombinálhatja a félkövér és a dőlt stílusokat úgy, hogy a szöveget három csillagba csomagolja (`*` ). Állítsa be mindkettőt`Bold`és`Italic` tulajdonságait`true`.
+Kombinálhatja a félkövér és a dőlt stílusokat úgy, hogy a szöveget három csillagba csomagolja (`*` ). Állítsa be mindkettőt`Bold` és`Italic` tulajdonságait`true`.
 
 ```csharp
 builder.Write("You can also write ");
@@ -114,7 +114,7 @@ Ez a sor menti a dokumentumot a megadott könyvtárba "WorkingWithMarkdown.Empha
 Igen, használhat más stílusokat, például fejléceket, listákat és kódblokkokat. Az Aspose.Words for .NET a Markdown formázási lehetőségek széles skáláját támogatja.
 
 ### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
- A könyvtár letölthető a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/) és kövesse a mellékelt telepítési utasításokat.
+ A könyvtár letölthető a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/)és kövesse a mellékelt telepítési utasításokat.
 
 ### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
  Igen, letöltheti a[ingyenes próbaverzió](https://releases.aspose.com/) az Aspose.Words for .NET funkcióinak tesztelésére.

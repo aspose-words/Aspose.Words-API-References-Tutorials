@@ -1,28 +1,28 @@
 ---
-title: Chuyển đổi Docx sang Mhtml và gửi email
-linktitle: Chuyển đổi Docx sang Mhtml và gửi email
+title: Chuyển đổi Docx sang Mhtml và gửi Email
+linktitle: Chuyển đổi Docx sang Mhtml và gửi Email
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chuyển đổi DOCX sang MHTML và gửi email bằng Aspose.Words cho .NET trong hướng dẫn từng bước này. Tăng năng suất của bạn với tự động hóa dễ dàng.
+description: Tìm hiểu cách chuyển đổi DOCX sang MHTML và gửi email bằng Aspose.Words cho .NET trong hướng dẫn từng bước này. Tăng năng suất của bạn với tính năng tự động hóa dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/basic-conversions/docx-to-mhtml-and-sending-email/
 ---
 ## Giới thiệu
 
-Trong thời đại kỹ thuật số ngày nay, việc chuyển đổi tài liệu từ định dạng này sang định dạng khác và gửi qua email là một công việc phổ biến. Bài viết này sẽ hướng dẫn bạn quy trình chuyển đổi tệp DOCX sang định dạng MHTML, sau đó gửi tệp đó dưới dạng email bằng Aspose.Words cho .NET. Chúng tôi sẽ chia nhỏ từng bước thành hướng dẫn chi tiết, dễ làm theo, đảm bảo bạn hiểu rõ quy trình từ đầu đến cuối. Hãy đi sâu vào!
+Trong thời đại kỹ thuật số ngày nay, việc chuyển đổi tài liệu từ định dạng này sang định dạng khác và gửi chúng qua email là một nhiệm vụ phổ biến. Bài viết này sẽ hướng dẫn bạn quy trình chuyển đổi tệp DOCX sang định dạng MHTML và sau đó gửi tệp đó dưới dạng email bằng Aspose.Words for .NET. Chúng tôi sẽ chia nhỏ từng bước trong hướng dẫn chi tiết, dễ làm theo, đảm bảo bạn hiểu quy trình từ đầu đến cuối. Hãy cùng bắt đầu nhé!
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
+Trước khi bắt đầu, hãy đảm bảo bạn đã đáp ứng đủ các điều kiện tiên quyết sau:
 
-1. Aspose.Words for .NET: Tải xuống và cài đặt thư viện Aspose.Words for .NET từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/).
-2.  Aspose.Email for .NET: Tải xuống và cài đặt thư viện Aspose.Email for .NET từ[Trang phát hành Aspose](https://releases.aspose.com/email/net/).
+1.  Aspose.Words cho .NET: Tải xuống và cài đặt thư viện Aspose.Words cho .NET từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/).
+2.  Aspose.Email cho .NET: Tải xuống và cài đặt thư viện Aspose.Email cho .NET từ[Trang phát hành Aspose](https://releases.aspose.com/email/net/).
 3. .NET Framework: Đảm bảo bạn đã cài đặt .NET Framework trên máy của mình.
 4. Máy chủ SMTP: Bạn cần truy cập vào máy chủ SMTP để gửi email.
 
 ## Nhập không gian tên
 
-Để sử dụng Aspose.Words và Aspose.Email trong dự án của bạn, bạn cần nhập các không gian tên cần thiết. Thêm các lệnh sử dụng sau vào đầu tệp C# của bạn:
+Để sử dụng Aspose.Words và Aspose.Email trong dự án của bạn, bạn cần nhập các không gian tên cần thiết. Thêm các chỉ thị using sau vào đầu tệp C# của bạn:
 
 ```csharp
 using Aspose.Words;
@@ -32,11 +32,11 @@ using Aspose.Email.Mime;
 using Aspose.Email.Clients.Smtp;
 ```
 
-Hãy chia nhỏ quy trình thành nhiều bước để đảm bảo bạn hiểu rõ từng phần.
+Chúng ta hãy chia nhỏ quy trình thành nhiều bước để đảm bảo bạn hiểu rõ từng phần.
 
-## Bước 1: Tải tài liệu DOCX
+## Bước 1: Tải Tài liệu DOCX
 
- Trước tiên, bạn cần tải tài liệu DOCX mà bạn muốn chuyển đổi. Sử dụng`Document` class từ Aspose.Words để tải tệp DOCX của bạn.
+ Đầu tiên, bạn cần tải tài liệu DOCX mà bạn muốn chuyển đổi. Sử dụng`Document` lớp từ Aspose.Words để tải tệp DOCX của bạn.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
@@ -46,7 +46,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Bước 2: Lưu tài liệu dưới dạng MHTML
 
- Tiếp theo, lưu tài liệu đã tải dưới dạng tệp MHTML. Việc này được thực hiện bằng cách sử dụng`Save` phương pháp của`Document` lớp học.
+ Tiếp theo, lưu tài liệu đã tải dưới dạng tệp MHTML. Điều này được thực hiện bằng cách sử dụng`Save` phương pháp của`Document` lớp học.
 
 ```csharp
 Stream stream = new MemoryStream();
@@ -58,10 +58,10 @@ stream.Position = 0;
 
 ## Bước 3: Tạo tin nhắn email
 
-Bây giờ, hãy tạo một email từ luồng MHTML bằng Aspose.Email. Bạn sẽ sử dụng`MailMessage` lớp cho mục đích này.
+ Bây giờ, hãy tạo một tin nhắn email từ luồng MHTML bằng Aspose.Email. Bạn sẽ sử dụng`MailMessage` lớp học dành cho mục đích này.
 
 ```csharp
-// Tạo một thông báo email Aspose.Email MIME từ luồng.
+// Tạo tin nhắn email MIME Aspose.Email từ luồng.
 MailMessage message = MailMessage.Load(stream, new MhtmlLoadOptions());
 message.From = "your_from@email.com";
 message.To = "your_to@email.com";
@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Bước 4: Gửi Email
 
- Cuối cùng, gửi email bằng ứng dụng khách SMTP. Định cấu hình máy khách SMTP với chi tiết máy chủ SMTP của bạn và sử dụng`Send` phương pháp gửi tin nhắn.
+Cuối cùng, gửi email bằng máy khách SMTP. Cấu hình máy khách SMTP với thông tin chi tiết về máy chủ SMTP của bạn và sử dụng`Send` phương pháp gửi tin nhắn.
 
 ```csharp
 // Gửi tin nhắn bằng Aspose.Email.
@@ -81,21 +81,21 @@ client.Send(message);
 
 ## Phần kết luận
 
-Chúc mừng! Bạn đã chuyển đổi thành công tài liệu DOCX sang MHTML và gửi tài liệu đó qua email bằng Aspose.Words for .NET. Quá trình này bao gồm việc tải tài liệu, chuyển đổi nó sang MHTML, tạo thư email và gửi nó bằng ứng dụng khách SMTP. Với các bước này, bạn có thể dễ dàng tự động hóa việc chuyển đổi và gửi tài liệu qua email trong ứng dụng của mình.
+Xin chúc mừng! Bạn đã chuyển đổi thành công một tài liệu DOCX sang MHTML và gửi qua email bằng Aspose.Words cho .NET. Quá trình này bao gồm việc tải tài liệu, chuyển đổi sang MHTML, tạo tin nhắn email và gửi bằng ứng dụng SMTP. Với các bước này, bạn có thể dễ dàng tự động hóa việc chuyển đổi và gửi email các tài liệu trong ứng dụng của mình.
 
 ## Câu hỏi thường gặp
 
 ### Tôi có thể sử dụng phương pháp này để chuyển đổi các định dạng tài liệu khác không?
 Có, Aspose.Words hỗ trợ nhiều định dạng khác nhau và bạn có thể chuyển đổi các tài liệu như DOC, DOCX, RTF, v.v. sang MHTML.
 
-### Làm cách nào để thêm tệp đính kèm vào email?
- Bạn có thể sử dụng`Attachments` tài sản của`MailMessage`class để thêm tệp đính kèm vào email của bạn.
+### Làm thế nào để thêm tệp đính kèm vào email?
+ Bạn có thể sử dụng`Attachments` tài sản của`MailMessage` lớp để thêm tệp đính kèm vào email của bạn.
 
 ### Aspose.Words có tương thích với .NET Core không?
 Có, Aspose.Words tương thích với .NET Core. Bạn cũng có thể sử dụng nó trong các ứng dụng .NET Core.
 
-### Tôi có cần giấy phép cho Aspose.Words và Aspose.Email không?
- Có, cả hai thư viện đều yêu cầu giấy phép. Bạn có thể nhận được giấy phép tạm thời từ[Trang mua hàng](https://purchase.aspose.com/temporary-license/) cho mục đích đánh giá.
+### Tôi có cần giấy phép sử dụng Aspose.Words và Aspose.Email không?
+Có, cả hai thư viện đều yêu cầu giấy phép. Bạn có thể nhận được giấy phép tạm thời từ[Trang mua hàng Aspose](https://purchase.aspose.com/temporary-license/) cho mục đích đánh giá.
 
 ### Tôi có thể tìm thêm tài liệu ở đâu?
- Bạn có thể tìm tài liệu chi tiết về Aspose.Words[đây](https://reference.aspose.com/words/net/) và cho Aspose.Email[đây](https://reference.aspose.com/email/net/).
+ Bạn có thể tìm thấy tài liệu chi tiết về Aspose.Words[đây](https://reference.aspose.com/words/net/) và cho Aspose.Email[đây](https://reference.aspose.com/email/net/).

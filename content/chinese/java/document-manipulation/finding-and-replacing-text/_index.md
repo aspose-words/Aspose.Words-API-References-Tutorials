@@ -252,7 +252,7 @@ doc.save("modified-document.docx");
 
 在此示例中，我们使用正则表达式模式来查找和替换文档中的文本。
 
-## 识别和替换模式中的替换
+## 识别并替换替换模式
 
 您可以使用 Aspose.Words for Java 识别替换模式并在其中进行替换。
 
@@ -337,9 +337,9 @@ Aspose.Words for Java 提供了全面的功能，可用于在 Word 文档中查�
 
 ## 常见问题解答
 
-### 如何下载 Aspose.Words for Java？
+### 如何下载适用于 Java 的 Aspose.Words？
 
-您可以从网站下载 Aspose.Words for Java，网址为：[此链接](https://releases.aspose.com/words/java/).
+您可以从网站下载 Aspose.Words for Java，网址：[此链接](https://releases.aspose.com/words/java/).
 
 ### 我可以使用正则表达式进行文本替换吗？
 

@@ -84,7 +84,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ### 我可以使用 Aspose.Words for .NET 附加两个以上的文档吗？
 是的，您可以通过对每个文档重复附加操作来按顺序附加多个文档。
 
-### 如何处理附加期间的文档格式冲突？
+### 如何处理附加过程中的文档格式冲突？
 Aspose.Words 提供各种导入模式来处理格式冲突，例如保留源格式或使用目标格式。
 
 ### Aspose.Words 是否支持附加不同语言或编码的文档？

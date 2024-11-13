@@ -78,7 +78,7 @@ Document doc = new Document("MyDocument.docx");
 doc.acceptAllRevisions();
 ```
 
-此代码接受文档中的所有修订，并有效地将更改应用于主文档。
+该代码接受文档中的所有修订，并有效地将更改应用于主文档。
 
 ## 管理文档版本
 

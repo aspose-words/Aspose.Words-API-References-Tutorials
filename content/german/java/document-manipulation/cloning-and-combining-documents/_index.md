@@ -1,6 +1,6 @@
 ---
 title: Klonen und Kombinieren von Dokumenten in Aspose.Words für Java
-linktitle: Klonen und Kombinieren von Dokumenten
+linktitle: Dokumente klonen und kombinieren
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
 description: Erfahren Sie, wie Sie Dokumente in Aspose.Words für Java klonen und kombinieren. Schritt-für-Schritt-Anleitung mit Quellcodebeispielen.
 type: docs

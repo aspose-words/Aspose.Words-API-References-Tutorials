@@ -16,7 +16,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/document-revisio
 
 ## 为 Python 设置 Aspose.Words
 
-在我们开始之前，请确保您已安装 Aspose.Words for Python。您可以从以下网址下载[这里](https://releases.aspose.com/words/python/)。安装完成后，您可以在 Python 脚本中导入必要的模块即可开始使用。
+在我们开始之前，请确保你已经安装了 Aspose.Words for Python。你可以从[这里](https://releases.aspose.com/words/python/)。安装完成后，您可以在 Python 脚本中导入必要的模块即可开始使用。
 
 ```python
 import asposewords
@@ -33,7 +33,7 @@ print(doc.get_text())
 
 ## 启用修订
 
-要启用文档的跟踪更改，您需要设置`TrackRevisions`财产`True`：
+要启用文档的修订跟踪，您需要设置`TrackRevisions`财产`True`：
 
 ```python
 doc.track_revisions = True

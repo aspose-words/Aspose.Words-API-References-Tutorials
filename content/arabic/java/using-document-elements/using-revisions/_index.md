@@ -1,26 +1,26 @@
 ---
-title: استخدام المراجعات في Aspose.Words لـ Java
+title: استخدام المراجعات في Aspose.Words للغة Java
 linktitle: استخدام المراجعات
-second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: تعلم كيفية استخدام Aspose.Words لمراجعة Java بكفاءة. دليل خطوة بخطوة للمطورين. تحسين إدارة المستندات الخاصة بك.
+second_title: واجهة برمجة تطبيقات معالجة المستندات في Java Aspose.Words
+description: تعلم كيفية استخدام Aspose.Words لإصدارات Java بكفاءة. دليل خطوة بخطوة للمطورين. قم بتحسين إدارة المستندات الخاصة بك.
 type: docs
 weight: 22
 url: /ar/java/using-document-elements/using-revisions/
 ---
 
-إذا كنت أحد مطوري Java وتتطلع إلى العمل مع المستندات وتحتاج إلى تنفيذ ضوابط المراجعة، فإن Aspose.Words for Java يوفر مجموعة قوية من الأدوات لمساعدتك في إدارة المراجعات بشكل فعال. في هذا البرنامج التعليمي، سنرشدك خلال استخدام المراجعة في Aspose.Words for Java خطوة بخطوة. 
+إذا كنت مطور Java وترغب في العمل مع المستندات وتحتاج إلى تنفيذ عناصر التحكم في المراجعة، فإن Aspose.Words for Java يوفر مجموعة قوية من الأدوات لمساعدتك في إدارة المراجعات بفعالية. في هذا البرنامج التعليمي، سنرشدك خلال استخدام المراجعة في Aspose.Words for Java خطوة بخطوة. 
 
-## 1. مقدمة إلى Aspose.Words لجافا
+## 1. مقدمة إلى Aspose.Words للغة Java
 
-Aspose.Words for Java عبارة عن واجهة برمجة تطبيقات Java قوية تسمح لك بإنشاء مستندات Word وتعديلها ومعالجتها دون الحاجة إلى Microsoft Word. إنه مفيد بشكل خاص عندما تحتاج إلى تنفيذ المراجعة داخل مستنداتك.
+Aspose.Words for Java عبارة عن واجهة برمجة تطبيقات Java قوية تتيح لك إنشاء مستندات Word وتعديلها ومعالجتها دون الحاجة إلى Microsoft Word. وهي مفيدة بشكل خاص عندما تحتاج إلى تنفيذ المراجعة داخل مستنداتك.
 
 ## 2. إعداد بيئة التطوير الخاصة بك
 
-قبل أن نتعمق في استخدام Aspose.Words for Java، تحتاج إلى إعداد بيئة التطوير الخاصة بك. تأكد من أن لديك أدوات تطوير Java الضرورية وتثبيت مكتبة Aspose.Words for Java.
+قبل أن نتعمق في استخدام Aspose.Words for Java، عليك إعداد بيئة التطوير الخاصة بك. تأكد من تثبيت أدوات تطوير Java الضرورية ومكتبة Aspose.Words for Java.
 
 ## 3. إنشاء مستند جديد
 
-لنبدأ بإنشاء مستند Word جديد باستخدام Aspose.Words لـ Java. وإليك كيف يمكنك القيام بذلك:
+لنبدأ بإنشاء مستند Word جديد باستخدام Aspose.Words for Java. وإليك كيفية القيام بذلك:
 
 ```java
 string outPath = "Your Output Directory";
@@ -29,7 +29,7 @@ Body body = doc.getFirstSection().getBody();
 Paragraph para = body.getFirstParagraph();
 ```
 
-## 4. إضافة محتوى إلى الوثيقة
+## 4. إضافة محتوى إلى المستند
 
 الآن بعد أن أصبح لديك مستند فارغ، يمكنك إضافة محتوى إليه. في هذا المثال، سنضيف ثلاث فقرات:
 
@@ -57,7 +57,7 @@ para = body.appendParagraph("Paragraph 4. ");
 
 ## 7. قبول ورفض المراجعات
 
-يمكنك قبول المراجعات أو رفضها في مستندك باستخدام Aspose.Words for Java. يمكن إدارة المراجعات بسهولة في Microsoft Word بعد إنشاء المستند.
+يمكنك قبول أو رفض المراجعات في مستندك باستخدام Aspose.Words for Java. ويمكن إدارة المراجعات بسهولة في Microsoft Word بعد إنشاء المستند.
 
 ## 8. إيقاف تتبع المراجعة
 
@@ -67,35 +67,35 @@ para = body.appendParagraph("Paragraph 4. ");
 doc.stopTrackRevisions();
 ```
 
-## 9. حفظ الوثيقة
+## 9. حفظ المستند
 
-أخيرًا، احفظ مستندك:
+وأخيرًا، احفظ مستندك:
 
 ```java
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
 
-## 10. الاستنتاج
+## 10. الخاتمة
 
-في هذا البرنامج التعليمي، قمنا بتغطية أساسيات استخدام المراجعة في Aspose.Words for Java. لقد تعلمت كيفية إنشاء مستند وإضافة محتوى وبدء تتبع المراجعة وإيقافه وحفظ المستند.
+في هذا البرنامج التعليمي، قمنا بتغطية أساسيات استخدام المراجعة في Aspose.Words for Java. لقد تعلمت كيفية إنشاء مستند وإضافة محتوى وبدء وإيقاف تتبع المراجعة وحفظ مستندك.
 
-الآن لديك الأدوات التي تحتاجها لإدارة المراجعات في تطبيقات Java بشكل فعال باستخدام Aspose.Words for Java.
+الآن أصبح لديك الأدوات التي تحتاجها لإدارة المراجعات بفعالية في تطبيقات Java الخاصة بك باستخدام Aspose.Words for Java.
 
-## كود المصدر الكامل
+## الكود المصدر الكامل
 ```java
 string outPath = "Your Output Directory";
 Document doc = new Document();
 Body body = doc.getFirstSection().getBody();
 Paragraph para = body.getFirstParagraph();
-// أضف نصًا إلى الفقرة الأولى، ثم أضف فقرتين أخريين.
+// أضف النص إلى الفقرة الأولى، ثم أضف فقرتين أخريين.
 para.appendChild(new Run(doc, "Paragraph 1. "));
 body.appendParagraph("Paragraph 2. ");
 body.appendParagraph("Paragraph 3. ");
-//لدينا ثلاث فقرات، لم يتم تسجيل أي منها على أنها أي نوع من المراجعة
-// إذا قمنا بإضافة/إزالة أي محتوى في المستند أثناء تتبع المراجعات،
+// لدينا ثلاث فقرات، لم يتم تسجيل أي منها كنوع من المراجعة
+// إذا أضفنا/أزلنا أي محتوى في المستند أثناء تتبع المراجعات،
 // سيتم عرضها على هذا النحو في المستند ويمكن قبولها/رفضها.
 doc.startTrackRevisions("John Doe", new Date());
-// هذه الفقرة عبارة عن مراجعة وستحتوي على مجموعة العلامات "IsInsertRevision" وفقًا لذلك.
+// هذه الفقرة عبارة عن مراجعة وسيتم تعيين العلامة "IsInsertRevision" وفقًا لها.
 para = body.appendParagraph("Paragraph 4. ");
 Assert.assertTrue(para.isInsertRevision());
 // احصل على مجموعة فقرات المستند وقم بإزالة فقرة.
@@ -103,16 +103,16 @@ ParagraphCollection paragraphs = body.getParagraphs();
 Assert.assertEquals(4, paragraphs.getCount());
 para = paragraphs.get(2);
 para.remove();
-// نظرًا لأننا نقوم بتتبع المراجعات، فإن الفقرة لا تزال موجودة في المستند، وستحتوي على مجموعة "IsDeleteRevision"
-// وسيتم عرضه كمراجعة في برنامج Microsoft Word، حتى نقبل جميع المراجعات أو نرفضها.
+// نظرًا لأننا نتتبع المراجعات، فإن الفقرة لا تزال موجودة في المستند، وسيتم تعيين "IsDeleteRevision" عليها
+// وسيتم عرضها كمراجعة في Microsoft Word، حتى نقبل أو نرفض كافة المراجعات.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// تتم إزالة فقرة حذف المراجعة بمجرد قبول التغييرات.
+// سيتم حذف فقرة المراجعة بمجرد قبول التغييرات.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //كان فارغا
 // يؤدي إيقاف تتبع المراجعات إلى ظهور هذا النص كنص عادي.
-// لا يتم احتساب المراجعات عند تغيير المستند.
+//لا يتم احتساب المراجعات عند تغيير المستند.
 doc.stopTrackRevisions();
 // احفظ المستند.
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -121,11 +121,11 @@ doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
 
 ## الأسئلة الشائعة
 
-### 1. هل يمكنني استخدام Aspose.Words for Java مع لغات البرمجة الأخرى؟
+### 1. هل يمكنني استخدام Aspose.Words لـ Java مع لغات برمجة أخرى؟
 
-لا، Aspose.Words for Java مصمم خصيصًا لتطوير Java.
+لا، تم تصميم Aspose.Words for Java خصيصًا لتطوير Java.
 
-### 2. هل يتوافق Aspose.Words for Java مع كافة إصدارات Microsoft Word؟
+### 2. هل Aspose.Words for Java متوافق مع كافة إصدارات Microsoft Word؟
 
 نعم، تم تصميم Aspose.Words for Java ليكون متوافقًا مع الإصدارات المختلفة من Microsoft Word.
 
@@ -135,10 +135,10 @@ doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
 
 ### 4. هل هناك أي متطلبات ترخيص لاستخدام Aspose.Words لـ Java؟
 
- نعم، ستحتاج إلى الحصول على ترخيص لاستخدام Aspose.Words for Java في مشاريعك. أنت تستطيع[الحصول على ترخيص هنا](https://purchase.aspose.com/buy).
+ نعم، ستحتاج إلى الحصول على ترخيص لاستخدام Aspose.Words for Java في مشاريعك. يمكنك[احصل على ترخيص هنا](https://purchase.aspose.com/buy).
 
 ### 5. أين يمكنني العثور على الدعم لـ Aspose.Words لـ Java؟
 
- لأية أسئلة أو مشاكل، يمكنك زيارة[Aspose.Words لمنتدى دعم جافا](https://forum.aspose.com/).
+ لأي أسئلة أو مشكلات، يمكنك زيارة[منتدى دعم Aspose.Words للغة Java](https://forum.aspose.com/).
 
-ابدأ استخدام Aspose.Words for Java اليوم وقم بتبسيط عمليات إدارة المستندات لديك.
+ابدأ باستخدام Aspose.Words for Java اليوم وقم بتبسيط عمليات إدارة المستندات الخاصة بك.

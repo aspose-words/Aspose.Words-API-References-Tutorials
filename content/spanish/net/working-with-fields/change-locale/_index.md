@@ -2,28 +2,28 @@
 title: Cambiar configuración regional
 linktitle: Cambiar configuración regional
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo cambiar la configuración regional en documentos de Word usando Aspose.Words para .NET con esta guía. Perfecto para manejar clientes y proyectos internacionales.
+description: Aprenda a cambiar la configuración regional en documentos de Word con Aspose.Words para .NET con esta guía. Perfecta para gestionar proyectos y clientes internacionales.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/change-locale/
 ---
 ## Introducción
 
-Trabajar con documentos de Word a menudo requiere un poco de delicadeza, especialmente cuando se trata de diferentes lugares y culturas. En este tutorial, exploraremos cómo cambiar la configuración regional de un documento de Word usando Aspose.Words para .NET. Ya sea que esté creando documentos para una audiencia global o simplemente necesite cambiar los formatos de fecha, esta guía lo tiene cubierto.
+Trabajar con documentos de Word suele requerir un poco de delicadeza, especialmente cuando se trabaja con diferentes configuraciones regionales y culturales. En este tutorial, exploraremos cómo cambiar la configuración regional de un documento de Word mediante Aspose.Words para .NET. Ya sea que esté creando documentos para una audiencia global o simplemente necesite cambiar los formatos de fecha, esta guía lo ayudará.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de profundizar en el meollo de la cuestión, asegurémonos de tener todo lo que necesitamos:
+Antes de sumergirnos en los detalles, asegurémonos de que tenemos todo lo que necesitamos:
 
--  Aspose.Words para .NET: puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
-- Visual Studio: cualquier versión que admita .NET framework.
+-  Aspose.Words para .NET: Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+- Visual Studio: cualquier versión que admita .NET Framework.
 - Conocimientos básicos de C#: comprender los conceptos básicos de C# y .NET le ayudará a seguir adelante.
 
- Asegúrese de haber instalado Aspose.Words para .NET. Si no lo has hecho, puedes obtener una prueba gratuita[aquí](https://releases.aspose.com/) o comprarlo[aquí](https://purchase.aspose.com/buy).
+ Asegúrate de haber instalado Aspose.Words para .NET. Si no lo has hecho, puedes obtener una versión de prueba gratuita[aquí](https://releases.aspose.com/) o comprarlo[aquí](https://purchase.aspose.com/buy).
 
 ## Importar espacios de nombres
 
-Antes de comenzar a codificar, necesitamos importar los espacios de nombres necesarios. Son como los ingredientes de una receta, lo que garantiza que todo funcione sin problemas.
+Antes de comenzar a codificar, debemos importar los espacios de nombres necesarios. Son como los ingredientes de una receta que garantizan que todo funcione sin problemas.
 
 ```csharp
 using System.Globalization;
@@ -32,11 +32,11 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Cambiar la configuración regional en un documento de Word es un proceso sencillo. Analicémoslo paso a paso.
+Cambiar la configuración regional en un documento de Word es un proceso sencillo. Vamos a explicarlo paso a paso.
 
-## Paso 1: configure su documento
+## Paso 1: Configura tu documento
 
-Primero lo primero, configuremos nuestro documento y nuestro generador de documentos. Esto es como configurar su espacio de trabajo antes de comenzar a cocinar.
+Primero lo primero: configuremos nuestro documento y el generador de documentos. Es como configurar el espacio de trabajo antes de empezar a cocinar.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,29 +46,29 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: Insertar un campo de combinación
 
-Ahora, insertaremos un campo de combinación para la fecha. Aquí es donde entrará en juego el lugar.
+Ahora, insertaremos un campo de combinación para la fecha. Aquí es donde la configuración regional entra en juego.
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-## Paso 3: guardar la cultura actual
+## Paso 3: Guardar la cultura actual
 
-Antes de cambiar la ubicación, debemos guardar la cultura actual. Piense en esto como marcar su lugar antes de pasar a otro capítulo.
+Antes de cambiar la configuración regional, debemos guardar la cultura actual. Piense en esto como si estuviera marcando un lugar como favorito antes de pasar a otro capítulo.
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
 ```
 
-## Paso 4: cambiar la configuración regional
+## Paso 4: Cambiar la configuración regional
 
-A continuación, cambiaremos la cultura actual del hilo a alemán ("de-DE"). Esto es como cambiar la configuración de idioma en su teléfono.
+A continuación, cambiaremos la cultura actual del hilo a alemán ("de-DE"). Esto es como cambiar la configuración de idioma en tu teléfono.
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-## Paso 5: ejecutar combinación de correspondencia
+## Paso 5: Ejecutar la combinación de correspondencia
 
 Ahora, ejecutamos la combinación de correspondencia con la fecha actual. Esto aplicará la nueva configuración regional al formato de fecha.
 
@@ -76,7 +76,7 @@ Ahora, ejecutamos la combinación de correspondencia con la fecha actual. Esto a
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-## Paso 6: restaurar la cultura original
+## Paso 6: Restaurar la cultura original
 
 Después de ejecutar la combinación de correspondencia, restauraremos la cultura original. Esto es como volver a la configuración de idioma preferida.
 
@@ -84,33 +84,33 @@ Después de ejecutar la combinación de correspondencia, restauraremos la cultur
 Thread.CurrentThread.CurrentCulture = currentCulture;
 ```
 
-## Paso 7: guarde el documento
+## Paso 7: Guardar el documento
 
-Finalmente, guarde el documento en su directorio especificado.
+Por último, guarde el documento en el directorio especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-¡Y ahí lo tienes! Ha cambiado con éxito la configuración regional en su documento de Word usando Aspose.Words para .NET.
+¡Y ya está! Has cambiado correctamente la configuración regional en tu documento de Word con Aspose.Words para .NET.
 
 ## Conclusión
 
-Cambiar la configuración regional en documentos de Word puede resultar increíblemente útil, especialmente cuando se trata de clientes o proyectos internacionales. Con Aspose.Words para .NET, esta tarea se vuelve muy sencilla. Siga estos pasos y podrá cambiar de configuración regional sin esfuerzo.
+Cambiar la configuración regional en documentos de Word puede resultar increíblemente útil, especialmente cuando se trabaja con clientes o proyectos internacionales. Con Aspose.Words para .NET, esta tarea se vuelve muy sencilla. Siga estos pasos y podrá cambiar la configuración regional sin esfuerzo.
 
 ## Preguntas frecuentes
 
 ### ¿Puedo cambiar la configuración regional a cualquier idioma?
-Sí, Aspose.Words para .NET admite el cambio de configuración regional a cualquier idioma admitido por .NET.
+Sí, Aspose.Words para .NET admite el cambio de la configuración regional a cualquier idioma compatible con .NET.
 
-### ¿Esto afectará otras partes de mi documento?
-Cambiar la configuración regional afectará principalmente los formatos de fecha y número. El resto del texto permanecerá sin cambios.
+### ¿Esto afectará a otras partes de mi documento?
+El cambio de configuración regional afectará principalmente los formatos de fecha y número. El resto del texto permanecerá sin cambios.
 
-### ¿Necesito una licencia especial para usar Aspose.Words para .NET?
- Puede comenzar con una prueba gratuita, pero para continuar usándolo, deberá comprar una licencia.[aquí](https://purchase.aspose.com/buy).
+### ¿Necesito una licencia especial para utilizar Aspose.Words para .NET?
+ Puede comenzar con una prueba gratuita, pero para continuar usándola, deberá comprar una licencia.[aquí](https://purchase.aspose.com/buy).
 
 ### ¿Puedo volver a la configuración regional original si algo sale mal?
-Sí, al guardar la cultura original y restaurarla más tarde, puede volver a la ubicación original.
+Sí, al guardar la cultura original y restaurarla más tarde, puedes volver a la configuración regional original.
 
-### ¿Dónde puedo obtener asistencia si tengo problemas?
- Puede obtener apoyo de la comunidad Aspose[aquí](https://forum.aspose.com/c/words/8).
+### ¿Dónde puedo obtener ayuda si tengo problemas?
+ Puede obtener soporte de la comunidad Aspose[aquí](https://forum.aspose.com/c/words/8).

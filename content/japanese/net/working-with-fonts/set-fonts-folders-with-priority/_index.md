@@ -48,7 +48,7 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 
 この例では、2 つのフォント ソースを設定しています。
 - SystemFontSource: これは、システムにインストールされているすべてのフォントを含むデフォルトのフォント ソースです。
--  FolderFontSource: これは、次の場所にあるカスタムフォントフォルダです。`C:\\MyFonts\\` 。`true`パラメータは、このフォルダを再帰的にスキャンすることを指定します。`1`優先順位を設定します。
+-  FolderFontSource: これはカスタムフォントフォルダです。`C:\\MyFonts\\` 。`true`パラメータは、このフォルダを再帰的にスキャンすることを指定します。`1`優先順位を設定します。
 
 ## ステップ2: ドキュメントを読み込む
 

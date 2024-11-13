@@ -105,7 +105,7 @@ Aspose.Words stöder att lägga till en vattenstämpel åt gången. För att lä
 
 ### Kan jag justera placeringen av vattenstämpeln?
 
- De`WatermarkLayout`egenskapen bestämmer orienteringen, men exakta positionsjusteringar stöds inte direkt. Du kan behöva använda andra tekniker för exakt placering.
+De`WatermarkLayout`egenskapen bestämmer orienteringen, men exakta positionsjusteringar stöds inte direkt. Du kan behöva använda andra tekniker för exakt placering.
 
 ### Vad händer om jag behöver en halvtransparent vattenstämpel?
 

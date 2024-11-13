@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 第 2 步：新增部分
 
-接下來，我們需要在文件中新增多個部分。每個部分將包含一些文字來幫助我們視覺化變更。
+接下來，我們需要在文件中新增多個部分。每個部分將包含一些文字來幫助我們視覺化更改。
 
 ```csharp
 builder.Writeln("Section 1");
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithSection.ModifyPageSetupInAllSections.doc");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功修改了 Word 文件中所有部分的頁面設定。本教學引導您建立文件、新增部分以及統一調整其頁面設定。 Aspose.Words 提供了豐富的功能，因此請隨意探索[API文件](https://reference.aspose.com/words/net/)以獲得更高級的功能。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功修改了 Word 文件中所有部分的頁面設定。本教學引導您建立文件、新增部分以及統一調整其頁面設定。 Aspose.Words 提供了豐富的功能，因此請隨意探索[API文件](https://reference.aspose.com/words/net/)以獲得更高級的功能。
 
 ## 常見問題解答
 

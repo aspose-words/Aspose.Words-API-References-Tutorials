@@ -19,7 +19,7 @@ Než se pustíme do výukového programu, je několik věcí, které budete pot�
 - Vývojové prostředí: Doporučuje se Visual Studio, ale můžete použít libovolné IDE C#.
 - Základní znalost C#: Základní znalost C# vám pomůže pokračovat.
 
-Teď pojďme rovnou do toho!
+Tak pojďme rovnou do toho!
 
 ## Krok 1: Nastavení vašeho projektu
 

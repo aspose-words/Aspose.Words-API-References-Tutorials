@@ -29,7 +29,7 @@ Aspose.Words for .NET 教程“使用 PdfSaveOptions 进行文字处理”将带
 | [通过将 Wmf 字体缩放至图元文件大小来减小 PDF 大小](./scale-wmf-fonts-to-metafile-size/) | 使用 Aspose.Words for .NET 转换为 PDF 时，逐步指导如何通过将 wmf 字体缩放为图元文件大小来减小 pdf 大小。 |
 | [使用附加文本定位功能改善 PDF 文本定位](./additional-text-positioning/) | 了解如何通过几个简单的步骤使用 Aspose.Words for .NET 改善 PDF 文本定位。增强文档的外观。 |
 | [将 Word 文档转换为 PDF 1.7](./conversion-to-pdf-17/) | 使用 Aspose.Words for .NET 轻松将 Word 文档转换为 PDF 1.7。按照本指南确保您的文档可供所有人访问且具有专业格式。 |
-| [通过降低图像采样率来减小 PDF 文档大小](./downsampling-images/) | 使用 Aspose.Words for .NET 对图像进行下采样，从而减小 PDF 文档大小。优化您的 PDF，以加快上传和下载时间。 |
+| [通过对图像进行下采样来减小 PDF 文档大小](./downsampling-images/) | 使用 Aspose.Words for .NET 对图像进行下采样，从而减小 PDF 文档大小。优化您的 PDF，以加快上传和下载时间。 |
 | [在 PDF 文档中设置大纲选项](./set-outline-options/) | 了解如何使用 Aspose.Words for .NET 在 PDF 文档中设置大纲选项。通过配置标题级别和扩展大纲来增强 PDF 导航。 |
 | [导出 PDF 文档中的自定义属性](./custom-properties-export/) | 通过我们详细的分步指南了解如何使用 Aspose.Words for .NET 导出 PDF 文档中的自定义属性。 |
 | [将 Word 文档结构导出为 PDF 文档](./export-document-structure/) | 使用 Aspose.Words for .NET 将 Word 文档的结构导出为 PDF。按照我们的分步指南保留文档布局并改善 PDF 导航。 |

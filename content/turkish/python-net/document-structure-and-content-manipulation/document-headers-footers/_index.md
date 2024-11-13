@@ -1,42 +1,42 @@
 ---
-title: Word Belgelerinde Üstbilgileri ve Altbilgileri Değiştirme
-linktitle: Word Belgelerinde Üstbilgileri ve Altbilgileri Değiştirme
-second_title: Aspose.Words Python Doküman Yönetimi API'si
-description: Aspose.Words for Python'u kullanarak Word belgelerindeki üstbilgileri ve altbilgileri değiştirmeyi öğrenin. Özelleştirme, ekleme, kaldırma ve daha fazlası için kaynak kodunu içeren adım adım kılavuz. Belge biçimlendirmenizi şimdi geliştirin!
+title: Word Belgelerinde Başlık ve Alt Bilgileri Düzenleme
+linktitle: Word Belgelerinde Başlık ve Alt Bilgileri Düzenleme
+second_title: Aspose.Words Python Belge Yönetim API'si
+description: Python için Aspose.Words kullanarak Word belgelerindeki başlıkları ve alt bilgileri düzenlemeyi öğrenin. Özelleştirme, ekleme, kaldırma ve daha fazlası için kaynak kodlu adım adım kılavuz. Belge biçimlendirmenizi şimdi geliştirin!
 type: docs
 weight: 16
 url: /tr/python-net/document-structure-and-content-manipulation/document-headers-footers/
 ---
-Word belgelerindeki üstbilgiler ve altbilgiler, içeriğinize bağlam, markalama ve ek bilgi sağlamada çok önemli bir rol oynar. Aspose.Words for Python API'sini kullanarak bu öğeleri değiştirmek, belgelerinizin görünümünü ve işlevselliğini önemli ölçüde geliştirebilir. Bu adım adım kılavuzda Aspose.Words for Python'u kullanarak üstbilgiler ve altbilgilerle nasıl çalışılacağını keşfedeceğiz.
+Word belgelerindeki başlıklar ve altbilgiler, içeriğinize bağlam, markalama ve ek bilgi sağlamada önemli bir rol oynar. Bu öğeleri Aspose.Words for Python API'sini kullanarak düzenlemek, belgelerinizin görünümünü ve işlevselliğini önemli ölçüde iyileştirebilir. Bu adım adım kılavuzda, Aspose.Words for Python kullanarak başlıklar ve altbilgilerle nasıl çalışılacağını inceleyeceğiz.
 
 
-## Aspose.Words for Python'a Başlarken
+## Python için Aspose.Words'e Başlarken
 
-Üstbilgi ve altbilgi manipülasyonuna dalmadan önce Aspose.Words for Python'u kurmanız gerekir. Şu adımları izleyin:
+Başlık ve altbilgi düzenlemesine dalmadan önce, Python için Aspose.Words'ü ayarlamanız gerekir. Şu adımları izleyin:
 
-1. Kurulum: Aspose.Words for Python'u pip kullanarak yükleyin.
+1. Kurulum: Pip kullanarak Python için Aspose.Words'ü kurun.
 
 ```python
 pip install aspose-words
 ```
 
-2. Modülü İçe Aktarma: Gerekli modülü Python betiğinize içe aktarın.
+2. Modülün İçe Aktarılması: Python betiğinize gerekli modülü içe aktarın.
 
 ```python
 import aspose.words
 ```
 
-## Basit Üstbilgi ve Altbilgi Ekleme
+## Basit Bir Üstbilgi ve Altbilgi Ekleme
 
-Word belgenize temel üstbilgi ve altbilgi eklemek için şu adımları izleyin:
+Word belgenize temel bir üstbilgi ve altbilgi eklemek için şu adımları izleyin:
 
-1. Belge Oluşturma: Aspose.Words'ü kullanarak yeni bir Word belgesi oluşturun.
+1. Belge Oluşturma: Aspose.Words kullanarak yeni bir Word belgesi oluşturun.
 
 ```python
 doc = aspose.words.Document()
 ```
 
-2.  Üstbilgi ve Altbilgi Ekleme:`sections` Bölümlere erişmek için belgenin özelliği. Daha sonra,`headers_footers` Üstbilgi ve altbilgi ekleme özelliği.
+2.  Üstbilgi ve Altbilgi Ekleme:`sections` Bölümlere erişmek için belgenin özelliğini kullanın. Ardından,`headers_footers` Başlık ve altbilgi ekleme özelliği.
 
 ```python
 section = doc.sections[0]
@@ -56,7 +56,7 @@ footer_run = footer_paragraph.runs.add()
 footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
 ```
 
-4. Belgeyi Kaydetme: Belgeyi üstbilgi ve altbilgiyle birlikte kaydedin.
+4. Belgeyi Kaydetme: Belgeyi üstbilgi ve altbilgi ile kaydedin.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -64,16 +64,16 @@ doc.save("document_with_header_footer.docx")
 
 ## Üstbilgi ve Altbilgi İçeriğini Özelleştirme
 
-Resimler, tablolar ve dinamik alanlar ekleyerek üst bilgi ve alt bilgi içeriğini özelleştirebilirsiniz. Örneğin:
+Resim, tablo ve dinamik alanlar ekleyerek başlık ve altbilgi içeriğini özelleştirebilirsiniz. Örneğin:
 
-1. Resim Ekleme: Üstbilgiye veya altbilgiye görseller ekleyin.
+1. Resim Ekleme: Üstbilgi veya altbilgiye resim ekleyin.
 
 ```python
 image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Tablo Ekleme: Tablo bilgileri için tablolar ekleyin.
+2. Tablo Ekleme: Tablolu bilgiler için tabloları dahil edin.
 
 ```python
 footer_table = footer.add_table(1, 2)
@@ -81,15 +81,15 @@ footer_table.rows[0].cells[0].text = "Copyright © 2023"
 footer_table.rows[0].cells[1].text = "All rights reserved."
 ```
 
-3. Dinamik Alanlar: Otomatik veri eklemek için dinamik alanları kullanın.
+3. Dinamik Alanlar: Otomatik veri ekleme için dinamik alanları kullanın.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
 ```
 
-## Tek ve Çift Sayfalar için Farklı Üstbilgi ve Altbilgiler
+## Tek ve Çift Sayfalar İçin Farklı Üst Bilgiler ve Alt Bilgiler
 
-Tek ve çift sayfalar için farklı üstbilgi ve altbilgiler oluşturmak, belgelerinize profesyonel bir dokunuş katabilir. İşte nasıl:
+Tek ve çift sayfalar için farklı üstbilgiler ve altbilgiler oluşturmak belgelerinize profesyonel bir dokunuş katabilir. İşte nasıl:
 
 1. Tek ve Çift Sayfa Düzenini Ayarlama: Tek ve çift sayfalar için farklı üstbilgi ve altbilgilere izin verecek düzeni tanımlayın.
 
@@ -110,20 +110,20 @@ header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
 
-3. Gerektiği Gibi Özelleştirin: Her üstbilgiyi ve altbilgiyi gereksinimlerinize göre özelleştirin.
+3. İhtiyacınıza Göre Özelleştirin: Her üstbilgi ve altbilgiyi ihtiyaçlarınıza göre özelleştirin.
 
-## Üstbilgileri ve Altbilgileri Kaldırma
+## Başlıkları ve Altbilgileri Kaldırma
 
 Bir Word belgesinden üstbilgileri ve altbilgileri kaldırmak için:
 
-1. Üstbilgileri ve Altbilgileri Kaldırma: Üstbilgilerin ve altbilgilerin içeriğini temizleyin.
+1. Üstbilgi ve Altbilgileri Kaldırma: Üstbilgi ve altbilgilerin içeriğini temizleyin.
 
 ```python
 header.clear_content()
 footer.clear_content()
 ```
 
-2. Farklı Üstbilgileri/Altbilgileri Devre Dışı Bırakma: Gerekirse tek ve çift sayfalar için farklı üstbilgileri ve altbilgileri devre dışı bırakın.
+2. Farklı Üstbilgi/Altbilgileri Devre Dışı Bırakma: Gerekirse tek ve çift sayfalar için farklı üstbilgi ve altbilgileri devre dışı bırakın.
 
 ```python
 section.page_setup.different_first_page_header_footer = False
@@ -132,22 +132,22 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ## SSS
 
-### Üstbilgi ve altbilgi içeriğine nasıl erişirim?
+### Üstbilgi ve altbilgi içeriğine nasıl erişebilirim?
 
- Üstbilgi ve altbilgi içeriğine erişmek için`headers_footers` belgenin bölümünün özelliği.
+ Üst bilgi ve alt bilgi içeriğine erişmek için şunu kullanın:`headers_footers` belgenin bölümünün mülkiyeti.
 
-### Üstbilgilere ve altbilgilere resim ekleyebilir miyim?
+### Başlık ve altbilgilere resim ekleyebilir miyim?
 
- Evet, üstbilgilere ve altbilgilere aşağıdakileri kullanarak resim ekleyebilirsiniz:`add_picture` Yöntem.
+ Evet, üstbilgilere ve altbilgilere resim ekleyebilirsiniz.`add_picture` yöntem.
 
-### Tek ve çift sayfalar için farklı başlıklara sahip olmak mümkün müdür?
+### Tek ve çift sayfalar için farklı başlıklar kullanmak mümkün müdür?
 
-Kesinlikle uygun ayarları etkinleştirerek tek ve çift sayfalar için farklı üstbilgi ve altbilgiler oluşturabilirsiniz.
+Elbette, uygun ayarları etkinleştirerek tek ve çift sayfalar için farklı üstbilgi ve altbilgiler oluşturabilirsiniz.
 
-### Belirli sayfalardan üstbilgileri ve altbilgileri kaldırabilir miyim?
+### Belirli sayfalardan üstbilgi ve altbilgileri kaldırabilir miyim?
 
-Evet, etkin bir şekilde kaldırmak için üstbilgi ve altbilgilerin içeriğini temizleyebilirsiniz.
+Evet, üstbilgi ve altbilgilerin içeriğini temizleyerek bunları etkili bir şekilde kaldırabilirsiniz.
 
-### Aspose.Words for Python hakkında daha fazla bilgiyi nereden edinebilirim?
+### Python için Aspose.Words hakkında daha fazla bilgiyi nereden edinebilirim?
 
 Daha ayrıntılı belgeler ve örnekler için şu adresi ziyaret edin:[Aspose.Words for Python API Referansı](https://reference.aspose.com/words/python-net/).

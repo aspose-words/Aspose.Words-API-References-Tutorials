@@ -115,7 +115,7 @@ Meg tudod változtatni a`ShapeType` a`InsertShape` különböző típusú formá
  Igen, stílusozhatja az alakzatokat olyan tulajdonságok beállításával, mint pl`FillColor`, `StrokeColor` , és`StrokeWeight`.
 
 ### Hogyan helyezhetem el az alakzatokat más elemekhez képest?
- Használja a`RelativeHorizontalPosition`és`RelativeVerticalPosition` tulajdonságokkal, hogy az alakzatokat a dokumentum más elemeihez képest helyezze el.
+ Használja a`RelativeHorizontalPosition` és`RelativeVerticalPosition` tulajdonságokkal, hogy az alakzatokat a dokumentum más elemeihez képest helyezze el.
 
 ### Csoportosíthatok több alakzatot?
  Igen, az Aspose.Words for .NET lehetővé teszi az alakzatok csoportosítását a`GroupShape` osztály.

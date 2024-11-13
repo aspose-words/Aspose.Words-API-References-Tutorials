@@ -70,7 +70,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 
 ## Abschluss
 
-Herzlichen Glückwunsch! Sie haben mit Aspose.Words für .NET erfolgreich einen formatierten Absatz in ein Word-Dokument eingefügt. Mit diesem Prozess können Sie dynamisch Rich Content generieren, der auf die Anforderungen Ihrer Anwendung zugeschnitten ist.
+Herzlichen Glückwunsch! Sie haben mit Aspose.Words für .NET erfolgreich einen formatierten Absatz in ein Word-Dokument eingefügt. Mit diesem Vorgang können Sie dynamisch Rich Content generieren, der auf die Anforderungen Ihrer Anwendung zugeschnitten ist.
 
 ## Häufig gestellte Fragen
 

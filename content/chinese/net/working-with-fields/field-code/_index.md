@@ -9,11 +9,11 @@ url: /zh/net/working-with-fields/field-code/
 ---
 ## 介绍
 
-在本指南中，我们将探索如何使用 Aspose.Words for .NET 处理 Word 文档中的字段代码。在本教程结束时，您将能够轻松地浏览字段、提取其代码并利用这些信息满足您的需求。无论您是想检查字段属性还是自动修改文档，本分步指南都将帮助您轻松熟练地处理字段代码。
+在本指南中，我们将探索如何使用 Aspose.Words for .NET 处理 Word 文档中的字段代码。在本教程结束时，您将能够轻松地浏览字段、提取其代码并利用这些信息满足您的需求。无论您是想检查字段属性还是自动修改文档，本分步指南都将使您能够轻松熟练地处理字段代码。
 
 ## 先决条件
 
-在我们深入了解字段代码之前，请确保您具有以下内容：
+在我们深入了解字段代码的细节之前，请确保您具有以下内容：
 
 1.  Aspose.Words for .NET：确保已安装 Aspose.Words。如果没有，你可以从以下位置下载[Aspose.Words for .NET 发布](https://releases.aspose.com/words/net/).
 2. Visual Studio：您需要一个像 Visual Studio 这样的集成开发环境 (IDE) 来编写和运行您的 .NET 代码。
@@ -105,7 +105,7 @@ foreach(Field field in doc.Range.Fields)
 
 要更新字段代码，您可以使用`Update()`方法`Field`对象。此方法根据文档的内容刷新字段以显示最新的结果。
 
-### 我可以以编程方式向 Word 文档添加新字段代码吗？
+### 我可以以编程方式向 Word 文档添加新的字段代码吗？
 
 是的，您可以使用`DocumentBuilder`类。这允许您根据需要将不同类型的字段插入到文档中。
 

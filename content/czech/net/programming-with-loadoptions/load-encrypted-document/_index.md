@@ -2,7 +2,7 @@
 title: Načíst šifrované v dokumentu aplikace Word
 linktitle: Načtení šifrovaného dokumentu do dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se načítat a ukládat zašifrované dokumenty Word pomocí Aspose.Words for .NET. Snadno zabezpečte své dokumenty pomocí nových hesel. Včetně průvodce krok za krokem.
+description: Naučte se načítat a ukládat zašifrované dokumenty Word pomocí Aspose.Words for .NET. Zabezpečte své dokumenty pomocí nových hesel snadno. Včetně průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-loadoptions/load-encrypted-document/

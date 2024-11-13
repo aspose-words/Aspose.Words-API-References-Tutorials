@@ -79,7 +79,7 @@ doc.Protect(ProtectionType.NoProtection);
 
 ## Βήμα 6: Αποθηκεύστε το έγγραφο
 
-Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο στην επιθυμητή θέση.
+Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο στη θέση που επιθυμείτε.
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ### Τι συμβαίνει εάν το έγγραφο διαθέτει ήδη διαφορετικό τύπο προστασίας;
 
- Ο`doc.Protect(ProtectionType.NoProtection)` μέθοδος διασφαλίζει ότι όλα τα είδη προστασίας αφαιρούνται από το έγγραφο.
+Ο`doc.Protect(ProtectionType.NoProtection)` μέθοδος διασφαλίζει ότι όλα τα είδη προστασίας αφαιρούνται από το έγγραφο.
 
 ### Υπάρχει τρόπος να γνωρίζουμε εάν ένα έγγραφο είναι μόνο για ανάγνωση πριν καταργήσετε τον περιορισμό;
 

@@ -1,88 +1,88 @@
 ---
-title: Gömülü Yazı Tiplerini Devre Dışı Bırakarak PDF Boyutunu Azaltın
-linktitle: Gömülü Yazı Tiplerini Devre Dışı Bırakarak PDF Boyutunu Azaltın
+title: Gömülü Yazı Tiplerini Devre Dışı Bırakarak PDF Boyutunu Küçültün
+linktitle: Gömülü Yazı Tiplerini Devre Dışı Bırakarak PDF Boyutunu Küçültün
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak gömülü yazı tiplerini devre dışı bırakarak PDF boyutunu küçültün. Belgelerinizi verimli depolama ve paylaşım amacıyla optimize etmek için adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for .NET kullanarak gömülü yazı tiplerini devre dışı bırakarak PDF boyutunu küçültün. Belgelerinizi verimli depolama ve paylaşım için optimize etmek üzere adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
 ## giriiş
 
-Verimli depolama ve hızlı paylaşım için PDF dosyalarının boyutunun küçültülmesi çok önemli olabilir. Bunu yapmanın etkili bir yolu, özellikle standart yazı tipleri çoğu sistemde zaten mevcut olduğunda, gömülü yazı tiplerini devre dışı bırakmaktır. Bu eğitimde, Aspose.Words for .NET kullanarak gömülü yazı tiplerini devre dışı bırakarak PDF boyutunun nasıl küçültülebileceğini inceleyeceğiz. Bunu kendi projelerinizde kolayca uygulayabilmenizi sağlamak için her adımı inceleyeceğiz.
+PDF dosyalarının boyutunu küçültmek, verimli depolama ve hızlı paylaşım için çok önemli olabilir. Bunu yapmanın etkili bir yolu, özellikle standart yazı tipleri çoğu sistemde zaten mevcut olduğunda, gömülü yazı tiplerini devre dışı bırakmaktır. Bu eğitimde, .NET için Aspose.Words kullanarak gömülü yazı tiplerini devre dışı bırakarak PDF boyutunu nasıl küçülteceğinizi inceleyeceğiz. Bunu kendi projelerinizde kolayca uygulayabilmenizi sağlamak için her adımı ele alacağız.
 
-## Önkoşullar
+## Ön koşullar
 
-Koda dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Koda dalmadan önce aşağıdakilerin mevcut olduğundan emin olun:
 
--  Aspose.Words for .NET: Henüz yapmadıysanız, şu adresten indirip yükleyin:[İndirme bağlantısı](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Eğer henüz yapmadıysanız, şu adresten indirip kurun:[İndirme bağlantısı](https://releases.aspose.com/words/net/).
 - .NET Geliştirme Ortamı: Visual Studio popüler bir seçimdir.
-- Örnek Bir Word Belgesi: PDF'ye dönüştürmek istediğiniz bir DOCX dosyanızı hazır bulundurun.
+- Örnek Bir Word Belgesi: PDF'e dönüştürmek istediğiniz bir DOCX dosyanız hazır olsun.
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamak için projenize gerekli ad alanlarının aktarıldığından emin olun. Bu, görevimiz için gereken sınıflara ve yöntemlere erişmenizi sağlar.
+Başlamak için, projenize gerekli ad alanlarının aktarıldığından emin olun. Bu, görevimiz için gereken sınıflara ve yöntemlere erişmenizi sağlar.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Süreci basit, yönetilebilir adımlara ayıralım. Her adım, görev boyunca size rehberlik edecek ve her noktada neler olduğunu anlamanızı sağlayacaktır.
+Süreci basit, yönetilebilir adımlara bölelim. Her adım sizi görev boyunca yönlendirecek ve her noktada ne olduğunu anlamanızı sağlayacaktır.
 
-## 1. Adım: Belgenizi Başlatın
+## Adım 1: Belgenizi Başlatın
 
-Öncelikle PDF'ye dönüştürmek istediğiniz Word belgesini yüklememiz gerekiyor. Yolculuğunuzun başladığı yer burasıdır.
+Öncelikle PDF'e dönüştürmek istediğiniz Word belgesini yüklememiz gerekiyor. Yolculuğunuz burada başlıyor.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Burada,`dataDir` belgenizin bulunduğu dizin için yer tutucudur. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` gerçek yol ile.
+ Burada,`dataDir` belgenizin bulunduğu dizin için bir yer tutucudur. Değiştir`"YOUR DOCUMENT DIRECTORY"` gerçek yol ile.
 
-## 2. Adım: PDF Kaydetme Seçeneklerini Yapılandırın
+## Adım 2: PDF Kaydetme Seçeneklerini Yapılandırın
 
-Daha sonra PDF kaydetme seçeneklerini ayarlayacağız. Standart Windows yazı tiplerini gömmek istemediğimizi belirttiğimiz yer burasıdır.
+Sonra, PDF kaydetme seçeneklerini ayarlayacağız. Burada standart Windows yazı tiplerini gömmek istemediğimizi belirteceğiz.
 
 ```csharp
-// Çıktı PDF'si standart Windows yazı tipleri eklenmeden kaydedilecektir.
+// Çıktı PDF'i standart Windows yazı tipleri gömülmeden kaydedilecektir.
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
     FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone
 };
 ```
 
- Ayarlayarak`FontEmbeddingMode` ile`EmbedNone`Aspose.Words'e bu yazı tiplerini PDF'ye eklememesini söyleyerek dosya boyutunu küçültüyoruz.
+ Ayarlayarak`FontEmbeddingMode` ile`EmbedNone`, Aspose.Words'e bu yazı tiplerini PDF'e eklememesini talimatlandırıyoruz, böylece dosya boyutu küçülüyor.
 
-## 3. Adım: Belgeyi PDF olarak kaydedin
+## Adım 3: Belgeyi PDF olarak kaydedin
 
-Son olarak yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF olarak kaydediyoruz. Bu, DOCX'inizin kompakt bir PDF'ye dönüştüğü gerçek anıdır.
+Son olarak, yapılandırılmış kaydetme seçeneklerini kullanarak belgeyi PDF olarak kaydediyoruz. Bu, DOCX'inizin kompakt bir PDF'ye dönüştüğü gerçek an.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` gerçek dizin yolunuzla bir kez daha. Çıktı PDF'si artık gömülü standart yazı tipleri olmadan belirtilen dizine kaydedilecektir.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` gerçek dizin yolunuzla bir kez daha. Çıktı PDF'i artık gömülü standart yazı tipleri olmadan belirtilen dizine kaydedilecektir.
 
 ## Çözüm
 
-Bu adımları izleyerek PDF dosyalarınızın boyutunu önemli ölçüde azaltabilirsiniz. Gömülü yazı tiplerini devre dışı bırakmak, belgelerinizi daha hafif ve paylaşılması daha kolay hale getirmenin basit ama etkili bir yoludur. Aspose.Words for .NET bu süreci sorunsuz hale getirerek dosyalarınızı minimum çabayla optimize edebilmenizi sağlar.
+Bu adımları izleyerek PDF dosyalarınızın boyutunu önemli ölçüde azaltabilirsiniz. Gömülü yazı tiplerini devre dışı bırakmak, belgelerinizi daha hafif ve paylaşımını daha kolay hale getirmenin basit ancak etkili bir yoludur. Aspose.Words for .NET bu süreci sorunsuz hale getirerek dosyalarınızı minimum çabayla optimize edebilmenizi sağlar.
 
-## SSS'ler
+## SSS
 
 ### PDF'deki gömülü yazı tiplerini neden devre dışı bırakmalıyım?
-Gömülü yazı tiplerini devre dışı bırakmak, PDF'nin dosya boyutunu önemli ölçüde azaltarak depolamayı daha verimli ve paylaşımı daha hızlı hale getirebilir.
+Gömülü yazı tiplerini devre dışı bırakmak, bir PDF'in dosya boyutunu önemli ölçüde azaltabilir, bu da depolamayı daha verimli hale getirir ve paylaşımı daha hızlı hale getirir.
 
-### PDF, gömülü yazı tipleri olmadan da düzgün görüntülenecek mi?
-Evet, yazı tipleri standart olduğu ve PDF'nin görüntülendiği sistemde mevcut olduğu sürece doğru şekilde görüntülenecektir.
+### Gömülü yazı tipleri olmadan PDF yine de düzgün şekilde görüntülenecek mi?
+Evet, yazı tipleri standart olduğu ve PDF'in görüntülendiği sistemde mevcut olduğu sürece düzgün bir şekilde görüntülenecektir.
 
-### Bir PDF'ye yalnızca belirli yazı tiplerini seçerek gömebilir miyim?
-Evet, Aspose.Words for .NET, hangi yazı tiplerinin gömülü olacağını özelleştirmenize olanak tanıyarak dosya boyutunu küçültme konusunda esneklik sağlar.
+### PDF'e yalnızca belirli yazı tiplerini seçerek yerleştirebilir miyim?
+Evet, Aspose.Words for .NET, hangi yazı tiplerinin yerleştirileceğini özelleştirmenize olanak tanır ve dosya boyutunu nasıl azaltacağınız konusunda esneklik sağlar.
 
 ### PDF'lerdeki gömülü yazı tiplerini devre dışı bırakmak için Aspose.Words for .NET'e ihtiyacım var mı?
-Evet, Aspose.Words for .NET, PDF'lerdeki yazı tipi gömme seçeneklerini yapılandırmak için gereken işlevselliği sağlar.
+Evet, Aspose.Words for .NET, PDF'lerdeki yazı tipi yerleştirme seçeneklerini yapılandırmak için gereken işlevselliği sağlar.
 
-### Sorunla karşılaşırsam nasıl destek alabilirim?
- Ziyaret edebilirsiniz[Destek forumu](https://forum.aspose.com/c/words/8) Karşılaştığınız herhangi bir sorunla ilgili yardım için.
+### Sorun yaşarsam nasıl destek alabilirim?
+ Ziyaret edebilirsiniz[Destek forumu](https://forum.aspose.com/c/words/8) Karşılaştığınız herhangi bir sorunda yardım için.

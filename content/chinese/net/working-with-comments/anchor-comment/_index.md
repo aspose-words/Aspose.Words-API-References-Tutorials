@@ -9,7 +9,7 @@ url: /zh/net/working-with-comments/anchor-comment/
 ---
 ## 介绍
 
-您是否曾经遇到过需要以编程方式向 Word 文档中的特定文本部分添加注释的情况？想象一下，您正在与团队协作处理一份文档，并且需要用注释突出显示某些部分以供其他人审阅。在本教程中，我们将深入介绍如何使用 Aspose.Words for .NET 在 Word 文档中插入锚注释。我们将把这个过程分解成简单的步骤，让您可以轻松地跟进并在项目中实施。
+您是否曾经遇到过需要以编程方式向 Word 文档中的特定文本部分添加注释的情况？想象一下，您正在与团队协作处理一份文档，并且需要用注释突出显示某些部分以供其他人审阅。在本教程中，我们将深入探讨如何使用 Aspose.Words for .NET 在 Word 文档中插入锚注释。我们将把这个过程分解成简单的步骤，让您可以轻松地跟进并在项目中实施。
 
 ## 先决条件
 
@@ -79,11 +79,10 @@ doc.FirstSection.Body.AppendChild(para2);
 ```csharp
 //创建新评论
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+comment.SetText("Comment text.");
 ```
 
-在此步骤中，我们创建一个`Comment`对象并添加一个段落和一段带有注释文本的运行。
+在此步骤中，我们创建一个`Comment`对象并添加一个段落以及带有注释文本的运行。
 
 ## 步骤 4：定义评论范围
 
@@ -122,7 +121,7 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 ## 常见问题解答
 
 ### 在 Word 文档中使用锚注释的目的是什么？
-锚点注释用于突出显示和评论文本的特定部分，从而更容易提供反馈和协作处理文档。
+锚点评论用于突出显示和评论文本的特定部分，从而更容易提供反馈和协作处理文档。
 
 ### 我可以向同一文本部分添加多条评论吗？
 是的，您可以通过定义多个评论范围向同一文本部分添加多个评论。

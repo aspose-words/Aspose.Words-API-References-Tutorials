@@ -115,7 +115,7 @@ Du kan ändra`ShapeType` i`InsertShape` metod för att infoga olika typer av for
  Ja, du kan styla formerna genom att ställa in egenskaper som`FillColor`, `StrokeColor` , och`StrokeWeight`.
 
 ### Hur placerar jag former i förhållande till andra element?
- Använd`RelativeHorizontalPosition`och`RelativeVerticalPosition` egenskaper för att placera former i förhållande till andra element i dokumentet.
+ Använd`RelativeHorizontalPosition` och`RelativeVerticalPosition` egenskaper för att placera former i förhållande till andra element i dokumentet.
 
 ### Kan jag gruppera flera former?
  Ja, Aspose.Words för .NET låter dig gruppera former med hjälp av`GroupShape` klass.

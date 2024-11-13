@@ -10,7 +10,7 @@ url: /pl/java/document-manipulation/cloning-and-combining-documents/
 
 ## Wprowadzenie do klonowania i łączenia dokumentów w Aspose.Words dla Java
 
-W tym samouczku przyjrzymy się, jak klonować i łączyć dokumenty za pomocą Aspose.Words dla Java. Omówimy różne scenariusze, w tym klonowanie dokumentu, wstawianie dokumentów w punktach zamiany, zakładkach i podczas operacji korespondencji seryjnej.
+W tym samouczku pokażemy, jak klonować i łączyć dokumenty za pomocą Aspose.Words for Java. Omówimy różne scenariusze, w tym klonowanie dokumentu, wstawianie dokumentów w punktach zastępowania, zakładkach i podczas operacji korespondencji seryjnej.
 
 ## Krok 1: Klonowanie dokumentu
 
@@ -22,11 +22,11 @@ Document clone = doc.deepClone();
 clone.save("Your Directory Path" + "CloneAndCombineDocuments.CloningDocument.docx");
 ```
 
-Ten kod utworzy głęboki klon oryginalnego dokumentu i zapisze go jako nowy plik.
+Ten kod utworzy głęboką kopię oryginalnego dokumentu i zapisze ją jako nowy plik.
 
-## Krok 2: Wstawianie dokumentów w punktach zamiany
+## Krok 2: Wstawianie dokumentów w punktach wymiany
 
-Możesz wstawiać dokumenty w określonych punktach zamiany w innym dokumencie. Oto jak możesz to zrobić:
+Możesz wstawiać dokumenty w określonych punktach zastępowania w innym dokumencie. Oto jak możesz to zrobić:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
@@ -37,11 +37,11 @@ mainDoc.getRange().replace(Pattern.compile("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
 
- W tym przykładzie używamy a`FindReplaceOptions` obiekt, aby określić procedurę obsługi wywołania zwrotnego dla zamiany. The`InsertDocumentAtReplaceHandler` klasa obsługuje logikę wstawiania.
+ W tym przykładzie używamy`FindReplaceOptions` obiekt, aby określić obsługę wywołania zwrotnego dla zastąpienia.`InsertDocumentAtReplaceHandler` Klasa obsługuje logikę wstawiania.
 
-## Krok 3: Wstawianie dokumentów w zakładkach
+## Krok 3: Wstawianie dokumentów do zakładek
 
-Aby wstawić dokument w określonej zakładce w innym dokumencie, możesz użyć następującego kodu:
+Aby wstawić dokument do określonej zakładki w innym dokumencie, możesz użyć następującego kodu:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
@@ -51,11 +51,11 @@ insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtBookmark.docx");
 ```
 
- Tutaj znajdujemy zakładkę według nazwy i używamy`insertDocument` metoda wstawiania zawartości pliku`subDoc` dokument w miejscu zakładki.
+ Tutaj znajdujemy zakładkę według nazwy i używamy`insertDocument` metoda wstawiania zawartości`subDoc` dokument w miejscu zakładki.
 
 ## Krok 4: Wstawianie dokumentów podczas korespondencji seryjnej
 
-Możesz wstawiać dokumenty podczas operacji korespondencji seryjnej w Aspose.Words for Java. Oto jak:
+Możesz wstawiać dokumenty podczas operacji korespondencji seryjnej w Aspose.Words dla Java. Oto jak:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
@@ -64,13 +64,13 @@ mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { "Yo
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
- W tym przykładzie ustawiamy wywołanie zwrotne scalania pól za pomocą`InsertDocumentAtMailMergeHandler` klasa do obsługi wstawiania dokumentu określonego w polu „Dokument_1”.
+ W tym przykładzie ustawiamy wywołanie zwrotne scalania pól za pomocą`InsertDocumentAtMailMergeHandler` Klasa obsługująca wstawianie dokumentu określonego w polu "Document_1".
 
 ## Wniosek
 
-Klonowanie i łączenie dokumentów w Aspose.Words for Java można przeprowadzić przy użyciu różnych technik. Niezależnie od tego, czy chcesz sklonować dokument, wstawić treść w punktach zamiany, zakładkach, czy podczas korespondencji seryjnej, Aspose.Words zapewnia zaawansowane funkcje do płynnego manipulowania dokumentami.
+Klonowanie i łączenie dokumentów w Aspose.Words for Java można wykonać za pomocą różnych technik. Niezależnie od tego, czy musisz sklonować dokument, wstawić zawartość w punktach zastępowania, zakładkach lub podczas scalania korespondencji, Aspose.Words zapewnia potężne funkcje do płynnego manipulowania dokumentami.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak sklonować dokument w Aspose.Words dla Java?
 
@@ -82,9 +82,9 @@ Document clone = doc.deepClone();
 clone.save("Your Directory Path" + "ClonedDocument.docx");
 ```
 
-### Jak wstawić dokument w zakładce?
+### Jak mogę wstawić dokument do zakładki?
 
- Aby wstawić dokument do zakładki w Aspose.Words for Java, możesz znaleźć zakładkę według nazwy, a następnie użyć`insertDocument` sposób wstawiania treści. Oto przykład:
+ Aby wstawić dokument do zakładki w Aspose.Words for Java, możesz wyszukać zakładkę według nazwy, a następnie użyć`insertDocument` metoda wstawiania treści. Oto przykład:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");
@@ -105,4 +105,4 @@ mainDoc.getMailMerge().execute(new String[] { "DocumentField" }, new Object[] { 
 mainDoc.save("Your Directory Path" + "MergedDocument.docx");
 ```
 
- W tym przykładzie`InsertDocumentAtMailMergeHandler`class obsługuje logikę wstawiania pola „DocumentField” podczas korespondencji seryjnej.
+ W tym przykładzie`InsertDocumentAtMailMergeHandler`Klasa obsługuje logikę wstawiania dla „DocumentField” podczas korespondencji seryjnej.

@@ -92,7 +92,7 @@ Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 
 ## 結論
 
-現在你就得到它了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆地從 Word 文件中的樣式擴充單元格和行的格式設定。這不僅可以節省時間，還可以確保文件之間的一致性。快樂編碼！
+現在你就擁有了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆地從 Word 文件中的樣式擴充單元格和行的格式設定。這不僅可以節省時間，還可以確保文件之間的一致性。快樂編碼！
 
 ## 常見問題解答
 

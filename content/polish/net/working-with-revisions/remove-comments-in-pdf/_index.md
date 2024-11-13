@@ -1,41 +1,41 @@
 ---
-title: Usuń komentarze z pliku PDF
-linktitle: Usuń komentarze z pliku PDF
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak usunąć komentarze z pliku PDF za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku.
+title: Usuń komentarze w pliku PDF
+linktitle: Usuń komentarze w pliku PDF
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak usuwać komentarze z pliku PDF za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-revisions/remove-comments-in-pdf/
 ---
 ## Wstęp
 
-Hej, drodzy programiści! Czy zdarzyło Ci się kiedyś zaplątać w bałagan w komentarzach podczas pracy z plikami PDF? Nie jesteś sam. Niezależnie od tego, czy pochodzą one z recenzji naukowych, czy wspólnych projektów, komentarze mogą czasem zaśmiecać dokumenty. Na szczęście dla nas Aspose.Words dla .NET zapewnia bezproblemowy sposób usuwania tych irytujących adnotacji. Dzisiaj omówimy ten proces krok po kroku. Zatem zapnij pasy i zanurzmy się w świat Aspose.Words!
+Hej, koledzy programiści! Czy zdarzyło ci się kiedyś utknąć w bałaganie komentarzy podczas pracy z plikami PDF? Nie jesteś sam. Niezależnie od tego, czy pochodzą one z recenzji kolegów, czy projektów współpracy, komentarze mogą czasami zaśmiecać dokumenty. Na szczęście dla nas, Aspose.Words dla .NET zapewnia bezproblemowy sposób usuwania tych uciążliwych adnotacji. Dzisiaj przejdziemy przez ten proces krok po kroku. Więc zapnij pasy i zanurzmy się w świecie Aspose.Words!
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: dowolne środowisko IDE zgodne z platformą .NET, takie jak Visual Studio.
-3. Podstawowa znajomość języka C#: Znajomość podstaw programowania w języku C# jest pomocna.
-4. Dokument z komentarzami: Będziemy potrzebować dokumentu programu Word (.docx) z komentarzami do przetestowania.
+1.  Aspose.Words dla .NET: Upewnij się, że biblioteka jest zainstalowana. Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: dowolne środowisko IDE zgodne z platformą .NET, np. Visual Studio.
+3. Podstawowa znajomość języka C#: Przydatna będzie znajomość podstaw programowania w języku C#.
+4. Dokument z komentarzami: Do przeprowadzenia testu będziemy potrzebować dokumentu Word (.docx) z komentarzami.
 
-Jeśli już wszystko gotowe, przejdźmy do ekscytującej części!
+Jeśli to wszystko już wiesz, przejdźmy do ekscytującej części!
 
 ## Importuj przestrzenie nazw
 
-Po pierwsze, musimy zaimportować niezbędne przestrzenie nazw. Dzięki temu możemy korzystać z klas i metod udostępnianych przez Aspose.Words.
+Po pierwsze, musimy zaimportować niezbędne przestrzenie nazw. To pozwoli nam używać klas i metod dostarczonych przez Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Layout;
 ```
 
-Te przestrzenie nazw dają nam dostęp do potrzebnych nam opcji obsługi i układu dokumentów.
+Te przestrzenie nazw dają nam dostęp do opcji obsługi dokumentu i układu, których będziemy potrzebować.
 
 ## Krok 1: Załaduj dokument
 
-Zacznijmy od załadowania dokumentu zawierającego komentarze. Dokument ten powinien być przechowywany w katalogu, do którego masz dostęp.
+Zacznijmy od załadowania dokumentu zawierającego komentarze. Ten dokument powinien być przechowywany w katalogu, do którego masz dostęp.
 
 
 ```csharp
@@ -44,49 +44,49 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Revisions.docx");
 ```
 
- W tym fragmencie zamień`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów. Ładujemy dokument o nazwie`Revisions.docx`.
+ W tym fragmencie kodu zamień`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów. Ładujemy dokument o nazwie`Revisions.docx`.
 
 ## Krok 2: Ukryj komentarze w pliku PDF
 
-Następnie musimy ukryć komentarze, aby nie pojawiały się w wersji PDF naszego dokumentu. Dzięki Aspose.Words jest to niezwykle proste.
+Następnie musimy ukryć komentarze, aby nie pojawiały się w wersji PDF naszego dokumentu. Aspose.Words sprawia, że jest to niezwykle proste.
 
 ```csharp
 // Ukryj komentarze w pliku PDF.
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 ```
 
-Ta linia kodu mówi Aspose.Words, aby ukrywał komentarze podczas renderowania dokumentu.
+Ten wiersz kodu informuje Aspose.Words o konieczności ukrycia komentarzy podczas renderowania dokumentu.
 
-## Krok 3: Zapisz dokument w formacie PDF
+## Krok 3: Zapisz dokument jako PDF
 
-Na koniec zapisujemy zmodyfikowany dokument jako plik PDF. Ten krok gwarantuje usunięcie naszych komentarzy z pliku wyjściowego.
+Na koniec zapisujemy zmodyfikowany dokument jako PDF. Ten krok zapewnia, że nasze komentarze zostaną usunięte z pliku wyjściowego.
 
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 ```
 
-Tutaj zapisujemy dokument w tym samym katalogu pod nową nazwą, co oznacza, że w wersji PDF komentarze zostały usunięte.
+Tutaj zapisujemy dokument w tym samym katalogu pod nową nazwą, co oznacza, że w wersji PDF usunięto komentarze.
 
 ## Wniosek
 
-I masz to! W kilku prostych krokach pomyślnie usunęliśmy komentarze z pliku PDF przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka upraszcza manipulowanie dokumentami, dzięki czemu wykonywanie zadań, które w innym przypadku byłyby kłopotliwe, jest dziecinnie proste.
+I masz! W zaledwie kilku prostych krokach udało nam się usunąć komentarze z pliku PDF za pomocą Aspose.Words dla .NET. Ta potężna biblioteka upraszcza manipulację dokumentami, dzięki czemu wykonywanie zadań, które w innym przypadku byłyby uciążliwe, staje się dziecinnie proste.
 
-Pamiętaj, praktyka czyni mistrza. Zatem wypróbuj to na swoich dokumentach. Będziesz zaskoczony, jak wyraźniej i profesjonalnie wyglądają Twoje pliki PDF bez tych wszystkich komentarzy zaśmiecających marginesy.
+Pamiętaj, praktyka czyni mistrza. Więc spróbuj tego ze swoimi dokumentami. Będziesz zaskoczony, jak dużo czystsze i bardziej profesjonalne będą Twoje pliki PDF bez wszystkich tych komentarzy zaśmiecających marginesy.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co się stanie, jeśli chcę zachować niektóre komentarze, ale usunąć inne?
- Możesz selektywnie ukrywać komentarze, manipulując węzłami komentarzy bezpośrednio w dokumencie przed ustawieniem opcji`CommentDisplayMode`.
+### Co zrobić, jeśli chcę zachować niektóre komentarze, ale usunąć inne?
+ Możesz selektywnie ukrywać komentarze, manipulując węzłami komentarzy bezpośrednio w dokumencie przed ustawieniem`CommentDisplayMode`.
 
 ### Czy mogę używać Aspose.Words do innych formatów plików niż PDF?
-Absolutnie! Aspose.Words obsługuje szeroką gamę formatów plików, w tym DOCX, TXT, HTML i inne.
+Oczywiście! Aspose.Words obsługuje szeroki zakres formatów plików, w tym DOCX, TXT, HTML i inne.
 
-### Czy dostępna jest bezpłatna wersja próbna Aspose.Words?
- Tak, możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
+### Czy jest dostępna bezpłatna wersja próbna Aspose.Words?
+ Tak, możesz otrzymać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
-### Co się stanie, jeśli napotkam problemy podczas korzystania z Aspose.Words?
- Możesz odwiedzić[forum wsparcia](https://forum.aspose.com/c/words/8) o pomoc w rozwiązaniu wszelkich problemów, z którymi możesz się spotkać.
+### Co zrobić, jeśli napotkam problemy podczas korzystania z Aspose.Words?
+ Możesz odwiedzić[forum wsparcia](https://forum.aspose.com/c/words/8) aby uzyskać pomoc w rozwiązaniu jakichkolwiek problemów.
 
-### Jak mogę kupić licencję na Aspose.Words?
+### Jak mogę zakupić licencję na Aspose.Words?
  Możesz kupić licencję od[Tutaj](https://purchase.aspose.com/buy).

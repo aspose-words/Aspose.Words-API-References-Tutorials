@@ -2,7 +2,7 @@
 title: 将 SDT 绑定到自定义 Xml 部分
 linktitle: 将 SDT 绑定到自定义 Xml 部分
 second_title: Aspose.Words 文档处理 API
-description: 通过本分步教程了解如何使用 Aspose.Words for .NET 将结构化文档标签 (SDT) 绑定到 Word 文档中的自定义 XML 部分。
+description: 通过本分步教程学习如何使用 Aspose.Words for .NET 将结构化文档标签 (SDT) 绑定到 Word 文档中的自定义 XML 部分。
 type: docs
 weight: 10
 url: /zh/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
@@ -15,7 +15,7 @@ url: /zh/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 
 在开始之前，请确保您已满足以下先决条件：
 
--  Aspose.Words for .NET：您可以从以下网址下载最新版本[Aspose.Words for .NET 发布](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：你可以从以下网址下载最新版本[Aspose.Words for .NET 发布](https://releases.aspose.com/words/net/).
 - 开发环境：Visual Studio 或任何其他兼容的.NET IDE。
 - 对 C# 的基本了解：熟悉 C# 编程语言和 .NET 框架。
 

@@ -2,12 +2,12 @@
 title: 管理 Word 文档中的连字和文本流
 linktitle: 管理 Word 文档中的连字和文本流
 second_title: Aspose.Words Python 文档管理 API
-description: 了解如何使用 Aspose.Words for Python 管理 Word 文档中的连字符和文本流。使用分步示例和源代码创建精美、易读的文档。
+description: 了解如何使用 Aspose.Words for Python 管理 Word 文档中的连字和文本流。使用分步示例和源代码创建精美、易读的文档。
 type: docs
 weight: 17
 url: /zh/python-net/document-structure-and-content-manipulation/document-hyphenation/
 ---
-在创建具有专业外观和结构良好的 Word 文档时，连字符和文本流是至关重要的方面。无论您是在准备报告、演示文稿还是任何其他类型的文档，确保文本流畅且连字符处理得当都可以显著提高内容的可读性和美观性。在本文中，我们将探讨如何使用 Aspose.Words for Python API 有效地管理连字符和文本流。我们将介绍从理解连字符到在文档中以编程方式实现连字符的所有内容。
+在创建具有专业外观和结构良好的 Word 文档时，连字和文本流是至关重要的方面。无论您是在准备报告、演示文稿还是任何其他类型的文档，确保文本流畅且连字处理得当都可以显著提高内容的可读性和美观性。在本文中，我们将探讨如何使用 Aspose.Words for Python API 有效地管理连字和文本流。我们将介绍从理解连字到在文档中以编程方式实现连字的所有内容。
 
 ## 了解连字
 
@@ -59,7 +59,7 @@ doc.save("sample_document.docx")
 
 ### 分页
 
-分页可确保您的内容被适当地划分为页面。这对于较大的文档来说尤其重要，以保持可读性。您可以根据文档的要求控制分页设置。
+分页可确保您的内容被适当地分成几页。这对于较大的文档来说尤其重要，以保持可读性。您可以根据文档的要求控制分页设置。
 
 ### 换行和分页
 

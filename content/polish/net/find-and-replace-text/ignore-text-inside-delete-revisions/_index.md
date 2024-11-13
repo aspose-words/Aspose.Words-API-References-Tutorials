@@ -1,22 +1,22 @@
 ---
-title: Ignoruj tekst wewnątrz Usuń poprawki
-linktitle: Ignoruj tekst wewnątrz Usuń poprawki
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak obsługiwać śledzone wersje w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Opanuj automatyzację dokumentów dzięki temu wszechstronnemu samouczkowi.
+title: Ignoruj tekst wewnątrz Usuń wersje
+linktitle: Ignoruj tekst wewnątrz Usuń wersje
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak obsługiwać śledzone wersje w dokumentach Worda za pomocą Aspose.Words dla .NET. Opanuj automatyzację dokumentów dzięki temu kompleksowemu samouczkowi.
 type: docs
 weight: 10
 url: /pl/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 ## Wstęp
 
-W dziedzinie programowania .NET Aspose.Words wyróżnia się jako solidna biblioteka do programowej pracy z dokumentami Microsoft Word. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, opanowanie możliwości Aspose.Words może znacznie zwiększyć Twoje możliwości efektywnego manipulowania, tworzenia i zarządzania dokumentami programu Word. W tym samouczku omówiono jedną z jego zaawansowanych funkcji: obsługę prześledzonych wersji dokumentów przy użyciu Aspose.Words dla .NET.
+W dziedzinie rozwoju .NET, Aspose.Words wyróżnia się jako solidna biblioteka do pracy z dokumentami Microsoft Word programowo. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, opanowanie możliwości Aspose.Words może znacznie zwiększyć Twoją zdolność do wydajnego manipulowania, tworzenia i zarządzania dokumentami Word. Ten samouczek zagłębia się w jedną z jego potężnych funkcji: obsługę śledzonych rewizji w dokumentach przy użyciu Aspose.Words dla .NET.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębisz się w ten samouczek, upewnij się, że spełnione są następujące wymagania wstępne:
+Zanim przejdziesz do tego samouczka, upewnij się, że spełnione są następujące wymagania wstępne:
 - Podstawowa znajomość języka programowania C#.
 - Program Visual Studio zainstalowany w systemie.
--  Biblioteka Aspose.Words dla .NET zintegrowana z Twoim projektem. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+-  Biblioteka Aspose.Words dla .NET zintegrowana z Twoim projektem. Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
 - Dostęp do Aspose.Words dla .NET[dokumentacja](https://reference.aspose.com/words/net/) w celach informacyjnych.
 
 ## Importuj przestrzenie nazw
@@ -30,15 +30,15 @@ using Aspose.Words.Replacing;
 ```
 ## Krok 1: Utwórz nowy dokument i wstaw tekst
 
- Najpierw zainicjuj nową instancję`Document` i a`DocumentBuilder` aby rozpocząć tworzenie dokumentu:
+ Najpierw zainicjuj nową instancję`Document` i`DocumentBuilder` aby rozpocząć tworzenie dokumentu:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Wstaw tekst i śledź poprawki
+## Krok 2: Wstaw tekst i śledź zmiany
 
-Możesz wstawić tekst do dokumentu i śledzić wersje, rozpoczynając i zatrzymując śledzenie wersji:
+Możesz wstawiać tekst do dokumentu i śledzić zmiany, uruchamiając i zatrzymując śledzenie zmian:
 ```csharp
 builder.Writeln("Deleted");
 builder.Write("Text");
@@ -50,7 +50,7 @@ doc.StopTrackRevisions();
 
 ## Krok 3: Zamień tekst za pomocą wyrażeń regularnych
 
-Aby manipulować tekstem, możesz użyć wyrażeń regularnych, aby znaleźć i zastąpić określone wzorce:
+Aby manipulować tekstem, możesz użyć wyrażeń regularnych w celu znalezienia i zastąpienia określonych wzorców:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
@@ -67,21 +67,21 @@ Console.WriteLine(doc.GetText());
 
 ## Wniosek
 
-Opanowanie prześledzonych wersji w dokumentach Word przy użyciu Aspose.Words dla .NET umożliwia programistom efektywną automatyzację zadań edycji dokumentów. Wykorzystując wszechstronne API i niezawodne funkcje, możesz bezproblemowo zintegrować obsługę wersji ze swoimi aplikacjami, zwiększając produktywność i możliwości zarządzania dokumentami.
+Opanowanie śledzonych rewizji w dokumentach Word przy użyciu Aspose.Words for .NET umożliwia programistom wydajną automatyzację zadań edycji dokumentów. Wykorzystując jego kompleksowe API i solidne funkcje, możesz bezproblemowo zintegrować obsługę rewizji ze swoimi aplikacjami, zwiększając produktywność i możliwości zarządzania dokumentami.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to są śledzone wersje w dokumentach programu Word?
-Śledzone wersje w dokumentach programu Word odnoszą się do zmian wprowadzonych w dokumencie, które są widoczne dla innych dzięki znacznikom, często używanym do wspólnego edytowania i recenzowania.
+### Czym są śledzone rewizje w dokumentach Word?
+Śledzone zmiany w dokumentach programu Word odnoszą się do zmian wprowadzonych do dokumentu, które są widoczne dla innych użytkowników i oznaczone znacznikami. Są one często wykorzystywane do wspólnego edytowania i recenzowania.
 
 ### Jak mogę zintegrować Aspose.Words for .NET z moim projektem Visual Studio?
-Możesz zintegrować Aspose.Words dla .NET, pobierając bibliotekę ze strony internetowej Aspose i odwołując się do niej w projekcie Visual Studio.
+Możesz zintegrować Aspose.Words z platformą .NET, pobierając bibliotekę ze strony internetowej Aspose i odwołując się do niej w projekcie programu Visual Studio.
 
-### Czy mogę programowo cofnąć prześledzone wersje za pomocą Aspose.Words dla .NET?
-Tak, możesz programowo zarządzać prześledzonymi wersjami i przywracać je za pomocą Aspose.Words dla .NET, umożliwiając precyzyjną kontrolę nad przepływami pracy związanymi z edycją dokumentów.
+### Czy mogę programowo przywrócić śledzone wersje, korzystając z Aspose.Words dla .NET?
+Tak, możesz programowo zarządzać śledzonymi wersjami i przywracać je do pierwotnego stanu za pomocą Aspose.Words for .NET, co pozwala na precyzyjną kontrolę nad przepływem pracy związanym z edycją dokumentów.
 
-### Czy Aspose.Words dla .NET nadaje się do obsługi dużych dokumentów ze śledzonymi wersjami?
-Aspose.Words dla .NET jest zoptymalizowany pod kątem wydajnej obsługi dużych dokumentów, w tym tych z obszernymi śledzonymi wersjami.
+### Czy Aspose.Words dla platformy .NET nadaje się do obsługi obszernych dokumentów ze śledzeniem rewizji?
+Rozwiązanie Aspose.Words for .NET zostało zoptymalizowane pod kątem wydajnej obsługi obszernych dokumentów, w tym dokumentów z wieloma śledzonymi rewizjami.
 
-### Gdzie mogę znaleźć więcej zasobów i wsparcia dla Aspose.Words dla .NET?
-Możesz przeglądać obszerną dokumentację i uzyskać pomoc od społeczności Aspose.Words dla .NET pod adresem[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+### Gdzie mogę znaleźć więcej materiałów i pomocy dla Aspose.Words dla .NET?
+Możesz zapoznać się z kompleksową dokumentacją i uzyskać pomoc od społeczności Aspose.Words for .NET pod adresem[Forum Aspose.Words](https://forum.aspose.com/c/words/8).

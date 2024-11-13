@@ -95,7 +95,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 
 ## Schritt 5: Speichern Sie das Dokument als HTML
 
-Abschließend speichern wir das Word-Dokument mit den von uns konfigurierten Speicheroptionen als HTML-Datei.
+Zum Abschluss speichern wir das Word-Dokument mit den von uns konfigurierten Speicheroptionen als HTML-Datei.
 
 1. Definieren Sie den Ausgabepfad: Geben Sie den Pfad an, in dem die HTML-Datei gespeichert wird.
 2.  Speichern Sie das Dokument: Verwenden Sie die`Save` Methode der`Document`Klasse zum Exportieren des Dokuments.

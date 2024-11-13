@@ -49,7 +49,7 @@ Tento fragment kódu nastaví nový dokument aplikace Word, kam přidáme pole A
 V dokumentu aplikace Word je obsah uspořádán do uzlů. Potřebujeme přístup k prvnímu bodu odstavce, kam vložíme pole ASK:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 Tento řádek kódu načte první odstavec v dokumentu, připravený pro vložení pole ASK.
@@ -114,7 +114,7 @@ Pole ASK v Aspose.Words je pole, které uživatele vyzve k zadání konkrétníh
 Ano, do dokumentu můžete vložit více polí ASK, každé s jedinečnými výzvami a odpověďmi.
 
 ###  Jaký je účel`PromptOnceOnMailMerge` property?
- The`PromptOnceOnMailMerge` vlastnost určuje, zda se výzva ASK zobrazí pouze jednou během operace hromadné korespondence nebo pokaždé.
+The`PromptOnceOnMailMerge` vlastnost určuje, zda se výzva ASK zobrazí pouze jednou během operace hromadné korespondence nebo pokaždé.
 
 ### Musím aktualizovat pole ASK po nastavení jeho vlastností?
 Ano, aktualizace pole ASK zajistí, že všechny vlastnosti budou správně použity a pole bude fungovat podle očekávání.

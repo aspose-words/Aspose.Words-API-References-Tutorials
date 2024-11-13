@@ -2,7 +2,7 @@
 title: Docx 转换为 Rtf
 linktitle: Docx 转换为 Rtf
 second_title: Aspose.Words 文档处理 API
-description: 通过我们的分步指南了解如何使用 Aspose.Words for .NET 将 DOCX 转换为 RTF。轻松转换，实现无缝文档处理。
+description: 通过我们的分步指南学习如何使用 Aspose.Words for .NET 将 DOCX 转换为 RTF。轻松转换，实现无缝文档处理。
 type: docs
 weight: 10
 url: /zh/net/basic-conversions/docx-to-rtf/
@@ -25,7 +25,7 @@ url: /zh/net/basic-conversions/docx-to-rtf/
 
 ## 导入命名空间
 
-要开始在 .NET 应用程序中使用 Aspose.Words，您需要导入必要的命名空间。这些命名空间提供您将用来操作和转换文档的类和方法。以下是设置方法：
+要开始在 .NET 应用程序中使用 Aspose.Words，您需要导入必要的命名空间。这些命名空间提供您将用来操作和转换文档的类和方法。您可以按照以下方法进行设置：
 
 ```csharp
 using Aspose.Words;

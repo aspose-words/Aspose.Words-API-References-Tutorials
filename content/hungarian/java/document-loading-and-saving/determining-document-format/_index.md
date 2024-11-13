@@ -189,7 +189,7 @@ A dokumentumformátumok meghatározása az Aspose.Words for Java programban elen
 
 ### Hogyan telepíthetem az Aspose.Words for Java programot?
 
- Letöltheti az Aspose.Words for Java programot a[itt](https://releases.aspose.com/words/java/) és kövesse a mellékelt telepítési utasításokat.
+ Letöltheti az Aspose.Words for Java programot a[itt](https://releases.aspose.com/words/java/)és kövesse a mellékelt telepítési utasításokat.
 
 ### Melyek a támogatott dokumentumformátumok?
 

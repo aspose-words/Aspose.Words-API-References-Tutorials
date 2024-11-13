@@ -69,7 +69,7 @@ Document doc = new Document();
 2. Lägg till ett stycke: Därefter lägger vi till ett stycke i dokumentet.
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 Det här stycket kommer att vara där vi infogar vårt författarefält.

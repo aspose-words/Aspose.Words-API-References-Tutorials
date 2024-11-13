@@ -95,13 +95,13 @@ destDoc.VbaProject.Modules.Add(copyModule);
 
 ### 保存文档
 
-以下是保存文档的代码：
+这是保存文档的代码：
 
 ```csharp
 destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 ```
 
-此行将新文档保存在您指定的目录中，名称为“WorkingWithVba.CloneVbaModule.docm”。
+此行将新文档以名称“WorkingWithVba.CloneVbaModule.docm”保存在您指定的目录中。
 
 ## 结论
 

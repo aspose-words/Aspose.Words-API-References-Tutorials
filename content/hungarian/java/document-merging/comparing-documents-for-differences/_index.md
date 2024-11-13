@@ -2,7 +2,7 @@
 title: Dokumentumok összehasonlítása a különbségekért
 linktitle: Dokumentumok összehasonlítása a különbségekért
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan hasonlíthatja össze a dokumentumokat a különbségek szempontjából az Aspose.Words használatával Java nyelven. Lépésről lépésre bemutatott útmutatónk biztosítja a pontos dokumentumkezelést.
+description: Tanulja meg, hogyan hasonlíthatja össze a dokumentumokat a különbségek szempontjából az Aspose.Words használatával Java nyelven. Lépésről lépésre bemutatott útmutatónk biztosítja a pontos dokumentumkezelést.
 type: docs
 weight: 12
 url: /hu/java/document-merging/comparing-documents-for-differences/
@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Cserélje ki`"original_document.docx"`és`"modified_document.docx"` a saját dokumentumaihoz vezető útvonalakkal.
+ Cserélje ki`"original_document.docx"` és`"modified_document.docx"` a saját dokumentumaihoz vezető útvonalakkal.
 
 ## 2. lépés: Hasonlítsa össze a dokumentumokat
 
@@ -69,7 +69,7 @@ dokumentumok közötti különbségek összehasonlítása az Aspose.Words for Ja
 
 ### Hogyan telepíthetem az Aspose.Words for Java programot?
 
- Az Aspose.Words for Java telepítéséhez látogasson el a letöltési oldalra[itt](https://releases.aspose.com/words/java/) és kövesse a mellékelt telepítési utasításokat.
+ Az Aspose.Words for Java telepítéséhez látogasson el a letöltési oldalra[itt](https://releases.aspose.com/words/java/)és kövesse a mellékelt telepítési utasításokat.
 
 ### Összehasonlíthatom a különböző formátumú dokumentumokat, mint például a DOCX és a PDF?
 

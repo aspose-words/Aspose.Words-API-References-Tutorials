@@ -1,58 +1,58 @@
 ---
-title: Cambiar las tabulaciones de Toc en un documento de Word
-linktitle: Cambiar las tabulaciones de Toc en un documento de Word
+title: Cambiar las tabulaciones de la tabla de contenidos en un documento de Word
+linktitle: Cambiar las tabulaciones de la tabla de contenidos en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo cambiar las tabulaciones de TOC en documentos de Word usando Aspose.Words para .NET. Esta guía paso a paso le ayudará a crear un índice de aspecto profesional.
+description: Aprenda a cambiar las tabulaciones de la tabla de contenidos en documentos de Word con Aspose.Words para .NET. Esta guía paso a paso le ayudará a crear una tabla de contenidos de aspecto profesional.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
 ## Introducción
 
-¿Alguna vez te has preguntado cómo mejorar la tabla de contenidos (TOC) de tus documentos de Word? Tal vez quieras que esas tabulaciones se alineen perfectamente para darle ese toque profesional. ¡Estás en el lugar correcto! Hoy, profundizaremos en cómo puede cambiar las tabulaciones de TOC usando Aspose.Words para .NET. Quédese y le prometo que se irá con todos los conocimientos necesarios para que su TOC luzca elegante y ordenado.
+¿Alguna vez te preguntaste cómo darle vida a la tabla de contenido (TOC) en tus documentos de Word? Tal vez quieras que las tabulaciones se alineen perfectamente para darle un toque profesional. ¡Estás en el lugar correcto! Hoy profundizaremos en cómo puedes cambiar las tabulaciones de la TOC usando Aspose.Words para .NET. Quédate y te prometo que te irás con todo el conocimiento para que tu TOC luzca elegante y ordenado.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de comenzar, asegurémonos de que tiene todo lo que necesita:
+Antes de comenzar, asegurémonos de que tienes todo lo que necesitas:
 
-1.  Aspose.Words para .NET: puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: puedes[Descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier IDE compatible con C#.
-3. Un documento de Word: específicamente, uno que contiene una TOC.
+3. Un documento de Word: específicamente, uno que contenga una tabla de contenidos.
 
-¿Tienes todo eso? ¡Impresionante! Vamos a rodar.
+¿Entendiste todo eso? ¡Genial! ¡Vamos allá!
 
 ## Importar espacios de nombres
 
-Lo primero es lo primero, necesitarás importar los espacios de nombres necesarios. Esto es como empacar sus herramientas antes de comenzar un proyecto.
+Lo primero es lo primero: deberás importar los espacios de nombres necesarios. Esto es como preparar tus herramientas antes de comenzar un proyecto.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Dividamos este proceso en pasos simples y digeribles. Pasaremos a cargar el documento, modificar las tabulaciones de TOC y guardar el documento actualizado.
+Dividamos este proceso en pasos sencillos y fáciles de entender. Repasaremos cómo cargar el documento, modificar las tabulaciones de la tabla de contenidos y guardar el documento actualizado.
 
-## Paso 1: cargue el documento
+## Paso 1: Cargue el documento
 
-¿Por qué? Necesitamos acceder al documento de Word que contiene el TOC que queremos modificar.
+¿Por qué? Necesitamos acceder al documento de Word que contiene la tabla de contenidos que queremos modificar.
 
-¿Cómo? Aquí hay un fragmento de código simple para comenzar:
+¿Cómo? A continuación, se incluye un fragmento de código sencillo para comenzar:
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Cargue el documento que contiene la tabla de contenidos.
+// Cargue el documento que contiene la tabla de contenidos
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-Imagine que su documento es como un pastel y estamos a punto de agregarle un poco de guinda. El primer paso es sacar ese pastel de la caja.
+Imagina que tu documento es como un pastel y que estamos a punto de agregarle un poco de glaseado. El primer paso es sacar el pastel de la caja.
 
-## Paso 2: identificar los párrafos de la TOC
+## Paso 2: Identificar los párrafos de la tabla de contenidos
 
-¿Por qué? Necesitamos identificar los párrafos que componen el TOC. 
+¿Por qué? Necesitamos identificar los párrafos que componen la tabla de contenidos. 
 
-¿Cómo? Recorre los párrafos y comprueba sus estilos:
+¿Cómo? Recorrer los párrafos y comprobar sus estilos:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -60,16 +60,16 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
     if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
         para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
     {
-        // Párrafo TOC encontrado
+        // Párrafo de TOC encontrado
     }
 }
 ```
 
-Piense en ello como escanear una multitud para encontrar a sus amigos. Aquí, buscamos párrafos con el estilo de entradas TOC.
+Piense en ello como si estuviera escaneando una multitud para encontrar a sus amigos. Aquí, buscamos párrafos con formato de entradas de índice.
 
-## Paso 3: modificar las tabulaciones
+## Paso 3: Modificar las tabulaciones
 
-¿Por qué? Aquí es donde ocurre la magia. Cambiar las tabulaciones le da a su TOC una apariencia más limpia.
+¿Por qué? Aquí es donde ocurre la magia. Al cambiar las tabulaciones, la tabla de contenidos tiene un aspecto más ordenado.
 
 ¿Cómo? Elimine la tabulación existente y agregue una nueva en una posición modificada:
 
@@ -86,38 +86,38 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-Es como ajustar los muebles de su sala de estar hasta que se sientan bien. Estamos ajustando esas tabulaciones para que sean perfectas.
+Es como ajustar los muebles de tu sala de estar hasta que quede perfecto. Estamos ajustando esas pestañas para lograr la perfección.
 
-## Paso 4: guarde el documento modificado
+## Paso 4: Guardar el documento modificado
 
 ¿Por qué? Para garantizar que todo su arduo trabajo se guarde y pueda verse o compartirse.
 
-¿Cómo? Guarde el documento con un nuevo nombre para mantener intacto el original:
+¿Cómo? Guarda el documento con un nuevo nombre para mantener intacto el original:
 
 ```csharp
 // Guardar el documento modificado
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-¡Y listo! Su TOC ahora tiene las tabulaciones exactamente donde las desea.
+¡Y listo! Tu índice ahora tiene las tabulaciones exactamente donde las quieres.
 
 ## Conclusión
 
-Cambiar las tabulaciones de TOC en un documento de Word usando Aspose.Words para .NET es sencillo una vez que lo desglosas. Al cargar su documento, identificar los párrafos de la TOC, modificar las tabulaciones y guardar el documento, puede lograr una apariencia pulida y profesional. Recuerde, la práctica hace la perfección, así que siga experimentando con diferentes posiciones de tabulación para obtener el diseño exacto que desea.
+Cambiar las tabulaciones de la tabla de contenidos en un documento de Word con Aspose.Words para .NET es muy sencillo una vez que lo analizas. Al cargar el documento, identificar los párrafos de la tabla de contenidos, modificar las tabulaciones y guardar el documento, puedes lograr un aspecto elegante y profesional. Recuerda que la práctica hace al maestro, así que sigue experimentando con diferentes posiciones de tabulación para obtener el diseño exacto que deseas.
 
 ## Preguntas frecuentes
 
 ### ¿Puedo modificar las tabulaciones para diferentes niveles de TOC por separado?
-¡Sí, puedes! Simplemente verifique cada nivel de TOC específico (Toc1, Toc2, etc.) y ajústelo en consecuencia.
+Sí, puedes. Solo tienes que comprobar cada nivel de TOC específico (Toc1, Toc2, etc.) y realizar los ajustes correspondientes.
 
-### ¿Qué pasa si mi documento tiene múltiples TOC?
-El código busca todos los párrafos con estilo TOC, por lo que modificará todos los TOC presentes en el documento.
+### ¿Qué pasa si mi documento tiene varias tablas de contenidos?
+El código escanea todos los párrafos con estilo TOC, por lo que modificará todos los TOC presentes en el documento.
 
-### ¿Es posible agregar varias tabulaciones en una entrada TOC?
- ¡Absolutamente! Puede agregar tantas tabulaciones como necesite ajustando el`para.ParagraphFormat.TabStops` recopilación.
+### ¿Es posible agregar varias tabulaciones en una entrada de TOC?
+ ¡Por supuesto! Puedes agregar tantas tabulaciones como necesites ajustando el`para.ParagraphFormat.TabStops` recopilación.
 
-### ¿Puedo cambiar la alineación de la tabulación y el estilo de la directriz?
-Sí, puede especificar diferentes alineaciones y estilos de guía al agregar una nueva tabulación.
+### ¿Puedo cambiar la alineación de las tabulaciones y el estilo del líder?
+Sí, puedes especificar diferentes alineaciones y estilos de líder al agregar una nueva tabulación.
 
 ### ¿Necesito una licencia para usar Aspose.Words para .NET?
- Sí, necesita una licencia válida para utilizar Aspose.Words para .NET más allá del período de prueba. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) o[comprar uno](https://purchase.aspose.com/buy).
+ Sí, necesita una licencia válida para usar Aspose.Words para .NET más allá del período de prueba. Puede obtener una[licencia temporal](https://purchase.aspose.com/temporary-license/) o[Compra uno](https://purchase.aspose.com/buy).

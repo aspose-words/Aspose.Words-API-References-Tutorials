@@ -49,7 +49,7 @@ DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 List<Document> pages = splitter.splitIntoPages();
 ```
 
- A`pages` A lista mostantól különálló dokumentumokat fog tartalmazni, amelyek mindegyike az eredeti dokumentum egyetlen oldalát képviseli.
+A`pages` A lista mostantól különálló dokumentumokat fog tartalmazni, amelyek mindegyike az eredeti dokumentum egyetlen oldalát képviseli.
 
 ## 3. lépés: Mentse el az oldalakat
 

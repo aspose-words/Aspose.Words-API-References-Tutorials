@@ -2,7 +2,7 @@
 title: Figyelmeztetés visszahívás a Word dokumentumban
 linktitle: Figyelmeztetés visszahívás a Word dokumentumban
 second_title: Aspose.Words Document Processing API
-description: A lépésenkénti útmutatónkból megtudhatja, hogyan lehet elkapni és kezelni a Word-dokumentumok figyelmeztetéseit az Aspose.Words for .NET használatával. Biztosítsa a robusztus dokumentumfeldolgozást.
+description: A lépésenkénti útmutatónkból megtudhatja, hogyan lehet elkapni és kezelni a Word-dokumentumokban lévő figyelmeztetéseket az Aspose.Words for .NET használatával. Biztosítsa a robusztus dokumentumfeldolgozást.
 type: docs
 weight: 10
 url: /hu/net/programming-with-loadoptions/warning-callback/
@@ -103,4 +103,4 @@ figyelmeztetés visszahívása lehetővé teszi a dokumentumfeldolgozás során 
 A figyelmeztetések közé tartozhatnak a nem támogatott szolgáltatásokkal, formázási inkonzisztenciákkal vagy más dokumentumspecifikus problémákkal kapcsolatos problémák.
 
 ### Hol találhatok további információt az Aspose.Words for .NET-ről?
- Hivatkozhat a[dokumentáció](https://reference.aspose.com/words/net/)részletes információkért és példákért.
+ Hivatkozhat a[dokumentáció](https://reference.aspose.com/words/net/) részletes információkért és példákért.

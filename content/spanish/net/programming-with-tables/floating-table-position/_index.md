@@ -9,20 +9,20 @@ url: /es/net/programming-with-tables/floating-table-position/
 ---
 ## Introducción
 
-¿Estás listo para sumergirte en el mundo de la manipulación de posiciones de tablas en documentos de Word usando Aspose.Words para .NET? Abróchate el cinturón, porque hoy vamos a explorar cómo controlar la posición flotante de las mesas con facilidad. ¡Vamos a convertirte en un asistente de posicionamiento de mesas en poco tiempo!
+¿Estás listo para sumergirte en el mundo de la manipulación de posiciones de tablas en documentos de Word con Aspose.Words para .NET? Abróchate el cinturón, porque hoy vamos a explorar cómo controlar la posición flotante de las tablas con facilidad. ¡Te convertiremos en un experto en posicionamiento de tablas en un abrir y cerrar de ojos!
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de embarcarnos en este emocionante viaje, asegurémonos de tener todo lo que necesitamos:
+Antes de embarcarnos en este apasionante viaje, asegurémonos de tener todo lo que necesitamos:
 
-1. Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión. Si no lo haces,[descárgalo aquí](https://releases.aspose.com/words/net/).
+1. Biblioteca Aspose.Words para .NET: asegúrese de tener la versión más reciente. Si no la tiene,[Descárgalo aquí](https://releases.aspose.com/words/net/).
 2. .NET Framework: asegúrese de que su entorno de desarrollo esté configurado con .NET.
 3. Entorno de desarrollo: Visual Studio o cualquier IDE preferido.
 4. Un documento de Word: Tenga listo un documento de Word que contenga una tabla.
 
 ## Importar espacios de nombres
 
-Para comenzar, necesita importar los espacios de nombres necesarios en su proyecto .NET. Aquí está el fragmento que debe incluir en la parte superior de su archivo C#:
+Para comenzar, debe importar los espacios de nombres necesarios en su proyecto .NET. Este es el fragmento que debe incluir en la parte superior de su archivo C#:
 
 ```csharp
 using System;
@@ -32,83 +32,83 @@ using Aspose.Words.Tables;
 
 ## Guía paso a paso
 
-Ahora, dividamos el proceso en pasos simples y digeribles.
+Ahora, vamos a dividir el proceso en pasos simples y digeribles.
 
-## Paso 1: cargue el documento
+## Paso 1: Cargue el documento
 
-Lo primero es lo primero: debe cargar su documento de Word. Aquí es donde se encuentra tu mesa.
+Lo primero es lo primero: debes cargar tu documento de Word. Aquí es donde se encuentra tu tabla.
 
 ```csharp
-// Ruta a su directorio de documentos
+// Ruta al directorio de su documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-Imagine que su documento de Word es un lienzo y su mesa es una obra de arte. Nuestro objetivo es colocar este arte exactamente donde queremos en el lienzo.
+Imagina que tu documento de Word es un lienzo y que tu tabla es una obra de arte sobre él. Nuestro objetivo es colocar esta obra de arte exactamente donde queremos en el lienzo.
 
-## Paso 2: accede a la mesa
+## Paso 2: Acceda a la tabla
 
-A continuación, debemos acceder a la tabla dentro del documento. Normalmente, trabajará con la primera tabla del cuerpo del documento.
+A continuación, debemos acceder a la tabla dentro del documento. Normalmente, trabajaremos con la primera tabla del cuerpo del documento.
 
 ```csharp
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-Piense en este paso como ubicar la tabla con la que desea trabajar en un documento físico. Necesita saber exactamente dónde está para realizar cambios.
+Piense en este paso como si estuviera buscando la tabla con la que desea trabajar en un documento físico. Debe saber exactamente dónde se encuentra para realizar cambios.
 
-## Paso 3: establecer la posición horizontal
+## Paso 3: Establecer la posición horizontal
 
-Ahora, establezcamos la posición horizontal de la mesa. Esto determina a qué distancia del borde izquierdo del documento se colocará la mesa.
+Ahora, establezcamos la posición horizontal de la tabla. Esto determina a qué distancia del borde izquierdo del documento se colocará la tabla.
 
 ```csharp
 table.AbsoluteHorizontalDistance = 10;
 ```
 
- Visualice esto moviendo la tabla horizontalmente a lo largo de su documento. El`AbsoluteHorizontalDistance` es la distancia exacta desde el borde izquierdo.
+ Visualice esto como mover la tabla horizontalmente a lo largo de su documento.`AbsoluteHorizontalDistance` es la distancia exacta desde el borde izquierdo.
 
-## Paso 4: establecer la alineación vertical
+## Paso 4: Establecer la alineación vertical
 
-También necesitamos establecer la alineación vertical de la mesa. Esto centrará la tabla verticalmente dentro del texto circundante.
+También debemos configurar la alineación vertical de la tabla. Esto centrará la tabla verticalmente dentro del texto que la rodea.
 
 ```csharp
 table.RelativeVerticalAlignment = VerticalAlignment.Center;
 ```
 
-Imagínese colgar un cuadro en una pared. Desea asegurarse de que esté centrado verticalmente para lograr un atractivo estético. Este paso logra eso.
+Imagina colgar un cuadro en una pared. Quieres asegurarte de que esté centrado verticalmente para que resulte atractivo estético. Este paso lo consigue.
 
-## Paso 5: guarde el documento modificado
+## Paso 5: Guardar el documento modificado
 
-Finalmente, después de colocar la tabla, guarde su documento modificado.
+Finalmente, después de posicionar la tabla, guarde el documento modificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ```
 
-Esto es como presionar "Guardar" en su documento editado. Todos sus cambios ahora se conservan.
+Es como pulsar "Guardar" en el documento editado. Ahora se conservan todos los cambios.
 
 ## Conclusión
 
-¡Y ahí lo tienes! Acaba de dominar cómo controlar la posición flotante de las tablas en un documento de Word usando Aspose.Words para .NET. Con estas habilidades, puede asegurarse de que sus mesas estén perfectamente ubicadas para mejorar la legibilidad y la estética de sus documentos. Siga experimentando y explorando las amplias capacidades de Aspose.Words para .NET.
+¡Y ya está! Acaba de aprender a controlar la posición flotante de las tablas en un documento de Word con Aspose.Words para .NET. Con estas habilidades, puede asegurarse de que sus tablas estén perfectamente posicionadas para mejorar la legibilidad y la estética de sus documentos. Siga experimentando y explorando las amplias capacidades de Aspose.Words para .NET.
 
 ## Preguntas frecuentes
 
-### ¿Puedo establecer la distancia vertical de la tabla desde la parte superior de la página?
+### ¿Puedo configurar la distancia vertical de la tabla desde la parte superior de la página?
 
- Sí, puedes usar el`AbsoluteVerticalDistance` Propiedad para establecer la distancia vertical de la tabla desde el borde superior de la página.
+ Sí, puedes utilizar el`AbsoluteVerticalDistance` propiedad para establecer la distancia vertical de la tabla desde el borde superior de la página.
 
 ### ¿Cómo alineo la tabla a la derecha del documento?
 
- Para alinear la tabla a la derecha, puede configurar el`HorizontalAlignment` propiedad de la tabla para`HorizontalAlignment.Right`.
+ Para alinear la tabla a la derecha, puede configurar el`HorizontalAlignment` propiedad de la tabla a`HorizontalAlignment.Right`.
 
-### ¿Es posible colocar varias tablas de forma diferente en el mismo documento?
+### ¿Es posible posicionar varias tablas de forma diferente en el mismo documento?
 
- ¡Absolutamente! Puede acceder y establecer posiciones para varias tablas individualmente iterando a través del`Tables` colección en el documento.
+ ¡Por supuesto! Puedes acceder y establecer posiciones para varias tablas individualmente iterando a través de la`Tables` colección en el documento.
 
 ### ¿Puedo utilizar el posicionamiento relativo para la alineación horizontal?
 
-Sí, Aspose.Words admite el posicionamiento relativo para alineaciones horizontales y verticales utilizando propiedades como`RelativeHorizontalAlignment`.
+Sí, Aspose.Words admite el posicionamiento relativo tanto para alineaciones horizontales como verticales utilizando propiedades como`RelativeHorizontalAlignment`.
 
 ### ¿Aspose.Words admite tablas flotantes en diferentes secciones de un documento?
 
-Sí, puedes colocar tablas flotantes en diferentes secciones accediendo a la sección específica y sus tablas dentro de tu documento.
+Sí, puedes posicionar tablas flotantes en diferentes secciones accediendo a la sección específica y sus tablas dentro de tu documento.

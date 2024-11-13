@@ -466,7 +466,7 @@ public int visitParagraphEnd(Paragraph paragraph) throws Exception {
 			clonePara.getListFormat().removeNumbers();
 			clonePara.getParagraphFormat().setLeftIndent(textPosition);
 		}
-		// Setzen Sie den Abstand geteilter Absätze in Tabellen zurück, da zusätzlicher Abstand dazu führen kann, dass sie anders aussehen.
+		// Setzen Sie den Abstand geteilter Absätze in Tabellen zurück, da zusätzlicher Abstand zu einem anderen Erscheinungsbild führen kann.
 		if (paragraph.isInCell())
 		{
 			clonePara.getParagraphFormat().setSpaceBefore(0.0);
@@ -590,7 +590,7 @@ private CompositeNode splitCompositeAtNode(CompositeNode baseNode, Node targetNo
 	}
 	// Fügen Sie den geteilten Knoten nach dem Original ein.
 	baseNode.getParentNode().insertAfter(cloneNode, baseNode);
-	// Aktualisieren Sie die neuen Seitenzahlen des Basisknotens und des geklonten Knotens, einschließlich seiner Nachkommen.
+	// Aktualisieren Sie die neuen Seitennummern des Basisknotens und des geklonten Knotens, einschließlich seiner Nachkommen.
 	// Dies wird nur eine einzelne Seite sein, da die geklonte Zusammenstellung auf eine Seite aufgeteilt wird.
 	int currentEndPageNum = pageNumberFinder.getPageEnd(baseNode);
 	pageNumberFinder.addPageNumbersForNode(baseNode, currentPageNum, currentEndPageNum - 1);

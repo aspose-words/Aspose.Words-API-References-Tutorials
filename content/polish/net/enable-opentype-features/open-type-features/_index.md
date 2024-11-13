@@ -1,28 +1,28 @@
 ---
-title: Funkcje typu otwartego
-linktitle: Funkcje typu otwartego
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak włączyć funkcje OpenType w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku.
+title: Funkcje typu Open
+linktitle: Funkcje typu Open
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak włączyć funkcje OpenType w dokumentach programu Word przy użyciu Aspose.Words dla platformy .NET, korzystając ze szczegółowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/enable-opentype-features/open-type-features/
 ---
 ## Wstęp
 
-Czy jesteś gotowy, aby zanurzyć się w świat funkcji OpenType przy użyciu Aspose.Words dla .NET? Zapnij pasy, ponieważ zaraz wyruszymy w wciągającą podróż, która nie tylko ulepszy Twoje dokumenty Word, ale także uczyni Cię ekspertem Aspose.Words. Zacznijmy!
+Czy jesteś gotowy, aby zanurzyć się w świecie funkcji OpenType przy użyciu Aspose.Words dla .NET? Zapnij pasy, ponieważ wyruszamy w angażującą podróż, która nie tylko ulepszy Twoje dokumenty Word, ale także uczyni Cię ekspertem Aspose.Words. Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
-1.  Aspose.Words dla .NET: Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Można go pobrać[Tutaj](https://releases.aspose.com/words/net/).
 2. .NET Framework: Upewnij się, że masz zainstalowaną zgodną wersję .NET Framework.
 3. Visual Studio: zintegrowane środowisko programistyczne (IDE) do kodowania.
-4. Podstawowa znajomość języka C#: W tym samouczku założono, że masz podstawową wiedzę na temat programowania w języku C#.
+4. Podstawowa wiedza o języku C#: W tym samouczku zakładamy, że posiadasz podstawową wiedzę na temat programowania w języku C#.
 
 ## Importuj przestrzenie nazw
 
-Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw, aby uzyskać dostęp do funkcjonalności udostępnianych przez Aspose.Words dla .NET. Oto jak możesz to zrobić:
+Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw, aby uzyskać dostęp do funkcjonalności udostępnianych przez Aspose.Words dla .NET. Oto, jak możesz to zrobić:
 
 ```csharp
 using System;
@@ -30,83 +30,83 @@ using Aspose.Words;
 using Aspose.Words.Shaping.HarfBuzz;
 ```
 
-Podzielmy teraz przykład na wiele kroków w formie przewodnika krok po kroku.
+Teraz rozbijemy przykład na kilka kroków w formie przewodnika krok po kroku.
 
 ## Krok 1: Skonfiguruj swój projekt
 
 ### Tworzenie nowego projektu
 
-Otwórz program Visual Studio i utwórz nowy projekt C#. Nazwij to czymś znaczącym, na przykład „OpenTypeFeaturesDemo”. To będzie nasz plac zabaw do eksperymentowania z funkcjami OpenType.
+Otwórz Visual Studio i utwórz nowy projekt C#. Nazwij go w sposób znaczący, np. „OpenTypeFeaturesDemo”. To będzie nasz plac zabaw do eksperymentowania z funkcjami OpenType.
 
-### Dodawanie odniesienia do Aspose.Words
+### Dodawanie odniesienia Aspose.Words
 
-Aby skorzystać z Aspose.Words, musisz dodać go do swojego projektu. Możesz to zrobić za pomocą Menedżera pakietów NuGet:
+Aby wykorzystać Aspose.Words, musisz dodać go do swojego projektu. Możesz to zrobić za pomocą NuGet Package Manager:
 
-1. Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań.
+1. Kliknij prawym przyciskiem myszy swój projekt w Eksploratorze rozwiązań.
 2. Wybierz „Zarządzaj pakietami NuGet”.
-3. Wyszukaj „Aspose.Words” i zainstaluj go.
+3. Wyszukaj „Aspose.Words” i zainstaluj.
 
 ## Krok 2: Załaduj swój dokument
 
 ### Określanie katalogu dokumentów
 
-Utwórz zmienną łańcuchową przechowującą ścieżkę do katalogu dokumentów. Tutaj przechowywany jest dokument programu Word.
+Utwórz zmienną typu string, aby zachować ścieżkę do katalogu dokumentu. To jest miejsce, w którym przechowywany jest dokument Word.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką, w której znajduje się dokument.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką, gdzie znajduje się Twój dokument.
 
 ### Ładowanie dokumentu
 
-Teraz załaduj dokument za pomocą Aspose.Words:
+Teraz załaduj swój dokument za pomocą Aspose.Words:
 
 ```csharp
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
 ```
 
-Ta linia kodu otwiera określony dokument, abyśmy mogli nim manipulować.
+Ta linijka kodu otwiera określony dokument, dzięki czemu możemy nim manipulować.
 
 ## Krok 3: Włącz funkcje OpenType
 
- HarfBuzz to silnik do kształtowania tekstu typu open source, który płynnie współpracuje z Aspose.Words. Aby włączyć funkcje OpenType, musimy ustawić`TextShaperFactory` własność`LayoutOptions` obiekt.
+ HarfBuzz to silnik kształtowania tekstu typu open source, który bezproblemowo współpracuje z Aspose.Words. Aby włączyć funkcje OpenType, musimy ustawić`TextShaperFactory` własność`LayoutOptions` obiekt.
 
 ```csharp
 doc.LayoutOptions.TextShaperFactory = HarfBuzzTextShaperFactory.Instance;
 ```
 
-Ten fragment kodu gwarantuje, że Twój dokument będzie korzystał z HarfBuzz do kształtowania tekstu, umożliwiając zaawansowane funkcje OpenType.
+Ten fragment kodu zapewnia, że Twój dokument używa HarfBuzz do kształtowania tekstu, umożliwiając korzystanie z zaawansowanych funkcji OpenType.
 
 ## Krok 4: Zapisz swój dokument
 
-Na koniec zapisz zmodyfikowany dokument w formacie PDF, aby zobaczyć wyniki swojej pracy.
+Na koniec zapisz zmodyfikowany dokument w formacie PDF, aby zobaczyć efekty swojej pracy.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-Ta linia kodu zapisuje dokument w formacie PDF, wykorzystując funkcje OpenType włączone przez HarfBuzz.
+Ta linijka kodu zapisuje dokument w formacie PDF, uwzględniając funkcje OpenType obsługiwane przez HarfBuzz.
 
 ## Wniosek
 
-I masz to! Pomyślnie włączyłeś funkcje OpenType w swoim dokumencie Word przy użyciu Aspose.Words dla .NET. Wykonując poniższe kroki, możesz odblokować zaawansowane możliwości typograficzne, zapewniając profesjonalny i dopracowany wygląd dokumentów.
+I masz to! Udało Ci się włączyć funkcje OpenType w dokumencie Word przy użyciu Aspose.Words dla .NET. Wykonując te kroki, możesz odblokować zaawansowane możliwości typograficzne, zapewniając profesjonalny i dopracowany wygląd dokumentów.
 
-Ale nie zatrzymuj się tutaj! Poznaj więcej funkcji Aspose.Words i zobacz, jak możesz jeszcze bardziej ulepszyć swoje dokumenty. Pamiętaj, praktyka czyni mistrza, więc eksperymentuj i ucz się.
+Ale nie zatrzymuj się tutaj! Odkryj więcej funkcji Aspose.Words i zobacz, jak możesz jeszcze bardziej udoskonalić swoje dokumenty. Pamiętaj, praktyka czyni mistrza, więc eksperymentuj i ucz się dalej.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jakie są funkcje OpenType?
+### Czym są funkcje OpenType?
 Funkcje OpenType obejmują zaawansowane możliwości typograficzne, takie jak ligatury, kerning i zestawy stylistyczne, które poprawiają wygląd tekstu w dokumentach.
 
 ### Dlaczego warto używać HarfBuzz z Aspose.Words?
-HarfBuzz to silnik do kształtowania tekstu typu open source, który zapewnia solidną obsługę funkcji OpenType, poprawiając jakość typograficzną dokumentów.
+HarfBuzz to oparty na otwartym kodzie źródłowym moduł kształtowania tekstu, który zapewnia rozbudowaną obsługę funkcji OpenType, poprawiając jakość typograficzną dokumentów.
 
-### Czy mogę używać innych silników kształtujących tekst z Aspose.Words?
-Tak, Aspose.Words obsługuje różne silniki kształtowania tekstu. Jednakże HarfBuzz jest wysoce zalecany ze względu na kompleksową obsługę funkcji OpenType.
+### Czy mogę używać innych mechanizmów kształtowania tekstu z Aspose.Words?
+Tak, Aspose.Words obsługuje różne silniki kształtowania tekstu. Jednak HarfBuzz jest wysoce zalecany ze względu na kompleksowe wsparcie funkcji OpenType.
 
 ### Czy Aspose.Words jest kompatybilny ze wszystkimi wersjami .NET?
- Aspose.Words obsługuje różne wersje .NET, w tym .NET Framework, .NET Core i .NET Standard. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać szczegółowe informacje o kompatybilności.
+ Aspose.Words obsługuje różne wersje .NET, w tym .NET Framework, .NET Core i .NET Standard. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać szczegółowe informacje na temat zgodności.
 
 ### Jak mogę wypróbować Aspose.Words przed zakupem?
- Możesz pobrać bezpłatną wersję próbną ze strony[Strona Aspose](https://releases.aspose.com/) i zażądaj tymczasowej licencji[Tutaj](https://purchase.aspose.com/temporary-license/).
+ Darmową wersję próbną możesz pobrać ze strony[Strona internetowa Aspose](https://releases.aspose.com/) i poproś o tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).

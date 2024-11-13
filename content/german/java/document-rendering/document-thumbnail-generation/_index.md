@@ -66,7 +66,7 @@ Die Generierung von Dokumentminiaturen mit Aspose.Words für Java bietet eine na
 
 ### Wie installiere ich Aspose.Words für Java?
 
- Um Aspose.Words für Java zu installieren, besuchen Sie die Download-Seite[Hier](https://releases.aspose.com/words/java/) und befolgen Sie die bereitgestellten Installationsanweisungen.
+ Um Aspose.Words für Java zu installieren, besuchen Sie die Download-Seite[Hier](https://releases.aspose.com/words/java/)und befolgen Sie die bereitgestellten Installationsanweisungen.
 
 ### Kann ich die Größe des generierten Miniaturbilds anpassen?
 
@@ -78,7 +78,7 @@ Ja, Aspose.Words für Java unterstützt verschiedene Dokumentformate, darunter D
 
 ### Gibt es Lizenzanforderungen für die Verwendung von Aspose.Words für Java?
 
-Ja, Aspose.Words für Java erfordert für die kommerzielle Nutzung eine gültige Lizenz. Sie können eine Lizenz von der Aspose-Website erhalten.
+Ja, für die kommerzielle Nutzung von Aspose.Words für Java ist eine gültige Lizenz erforderlich. Sie können eine Lizenz von der Aspose-Website erhalten.
 
 ### Wo finde ich zusätzliche Dokumentation für Aspose.Words für Java?
 

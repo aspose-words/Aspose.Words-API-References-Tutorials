@@ -61,7 +61,7 @@ Jetzt kommt der entscheidende Teil – das Festlegen der Schriftartenordner. Hie
 fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 ```
 
-Der zweite Parameter (`true` ) gibt an, dass diese Ordner alle Standardschriftartenquellen überschreiben. Wenn Sie auch die Systemschriftartenquellen beibehalten möchten, können Sie eine Kombination aus`GetFontSources`Und`SetFontSources`.
+Der zweite Parameter (`true` ) gibt an, dass diese Ordner alle Standardschriftartenquellen überschreiben. Wenn Sie auch die Systemschriftartenquellen beibehalten möchten, können Sie eine Kombination aus`GetFontSources` Und`SetFontSources`.
 
 ## Schritt 4: Schrifteinstellungen auf Dokument anwenden
 
@@ -96,7 +96,7 @@ Wenn eine Schriftart fehlt, greift Aspose.Words auf die angegebene Standardschri
 ### Kann ich Schriftartenordner hinzufügen, ohne Systemschriftarten zu überschreiben?
  Auf jeden Fall! Verwenden Sie`FontSettings.GetFontSources` um vorhandene Quellen abzurufen und sie mit Ihren benutzerdefinierten Ordnern zu kombinieren, indem Sie`FontSettings.SetFontSources`.
 
-### Gibt es eine Begrenzung für die Anzahl der Schriftartenordner, die ich hinzufügen kann?
+### Gibt es eine Begrenzung für die Anzahl der Schriftartordner, die ich hinzufügen kann?
 Es gibt keine strikte Begrenzung für die Anzahl der Schriftartordner. Achten Sie jedoch auf die Leistung, da mehr Ordner die Ladezeiten der Schriftarten verlängern können.
 
 ### Wie kann ich überprüfen, welche Schriftarten in meinem Dokument verwendet werden?

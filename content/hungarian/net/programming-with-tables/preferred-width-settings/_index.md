@@ -53,14 +53,13 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Itt adja meg azt a könyvtárat, ahová a dokumentumot menti, és inicializálja a`Document`és`DocumentBuilder` tárgyakat.
+ Itt adja meg azt a könyvtárat, ahová a dokumentumot menti, és inicializálja a`Document` és`DocumentBuilder` tárgyakat.
 
 ## 2. lépés: Helyezze be az első abszolút szélességű táblázatcellát
 
 Szúrja be az első cellát a táblázatba fix 40 pontos szélességgel. Ez biztosítja, hogy a cella szélessége mindig 40 pont legyen, függetlenül a táblázat méretétől.
 
 ```csharp
-
 // Szúrjon be egy abszolút méretű cellát.
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
@@ -97,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
- A`PreferredWidth.Auto` A beállítás lehetővé teszi, hogy ez a cella kibővüljön vagy összehúzódjon a többi cella elszámolása után hagyott hely alapján. Ez biztosítja, hogy az asztal elrendezése kiegyensúlyozott és professzionális legyen.
+A`PreferredWidth.Auto` A beállítás lehetővé teszi, hogy ez a cella kibővüljön vagy összehúzódjon a többi cella elszámolása után hagyott hely alapján. Ez biztosítja, hogy az asztal elrendezése kiegyensúlyozott és professzionális legyen.
 
 ## 5. lépés: Véglegesítse és mentse a dokumentumot
 

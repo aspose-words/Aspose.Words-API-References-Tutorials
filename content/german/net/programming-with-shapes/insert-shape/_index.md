@@ -115,7 +115,7 @@ Sie können die`ShapeType` im`InsertShape` Methode zum Einfügen verschiedener A
  Ja, Sie können die Formen gestalten, indem Sie Eigenschaften festlegen wie`FillColor`, `StrokeColor` , Und`StrokeWeight`.
 
 ### Wie positioniere ich Formen relativ zu anderen Elementen?
- Verwenden Sie die`RelativeHorizontalPosition`Und`RelativeVerticalPosition` Eigenschaften, um Formen relativ zu anderen Elementen im Dokument zu positionieren.
+ Verwenden Sie die`RelativeHorizontalPosition` Und`RelativeVerticalPosition` Eigenschaften, um Formen relativ zu anderen Elementen im Dokument zu positionieren.
 
 ### Kann ich mehrere Formen gruppieren?
  Ja, Aspose.Words für .NET ermöglicht das Gruppieren von Formen mithilfe der`GroupShape` Klasse.

@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
- A`Aspose.Words` névtér biztosítja a Word dokumentumok kezelésének alapvető funkcióit, míg`Aspose.Words.Tables` tartalmazza a kifejezetten a táblázatokkal való munkavégzéshez szükséges osztályokat.
+A`Aspose.Words` névtér biztosítja a Word dokumentumok kezelésének alapvető funkcióit, míg`Aspose.Words.Tables` tartalmazza a kifejezetten a táblázatokkal való munkavégzéshez szükséges osztályokat.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
 
@@ -88,7 +88,7 @@ A táblázatok automatikus illesztése a tartalomhoz az Aspose.Words for .NET ha
 ## GYIK
 
 ### Csak bizonyos oszlopokat illeszthetek automatikusan egy táblázatba?
- A`AutoFit` módszer az egész táblázatra vonatkozik. Ha bizonyos oszlopokat kell módosítania, előfordulhat, hogy manuálisan kell beállítania az oszlopszélességeket.
+A`AutoFit` módszer az egész táblázatra vonatkozik. Ha bizonyos oszlopokat kell módosítania, előfordulhat, hogy manuálisan kell beállítania az oszlopszélességeket.
 
 ### Mi a teendő, ha a dokumentumom több táblázatot tartalmaz?
  A dokumentumban lévő összes táblázatot a gombbal lapozhatja át`doc.GetChildNodes(NodeType.Table, true)` és szükség szerint alkalmazza az automatikus illesztést.

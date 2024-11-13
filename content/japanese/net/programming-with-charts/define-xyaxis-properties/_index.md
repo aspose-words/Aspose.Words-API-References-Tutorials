@@ -78,7 +78,7 @@ chart.Series.Add("Aspose Series 1",
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // 軸の表示単位 (百) で測定されます。
+xAxis.CrossesAt = 3; // Y 軸の表示単位 (百) で測定されます。
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

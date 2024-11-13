@@ -91,4 +91,4 @@ Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty W
  ImportFormatOptions umožňují určit, jak se bude zpracovávat formátování při importu obsahu z jednoho dokumentu do druhého. Například,`KeepSourceNumbering` zajišťuje zachování číslování seznamů ze zdrojového dokumentu.
 
 ### Kde mohu získat podporu pro Aspose.Words?
- Můžete získat podporu od[Fórum Aspose.Words](https://forum.aspose.com/c/words/8), kde můžete klást otázky a získat pomoc od komunity a vývojářů Aspose.
+ Můžete získat podporu od[Fórum Aspose.Words](https://forum.aspose.com/c/words/8)kde můžete klást otázky a získat pomoc od komunity a vývojářů Aspose.

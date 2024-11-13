@@ -13,8 +13,8 @@ url: /zh/net/programming-with-tables/get-table-position/
 
 ## 先决条件
 
-在我们讨论细节之前，让我们先确保您已经拥有所需的一切：
--  Aspose.Words for .NET：请确保您拥有最新版本。如果没有，您可以[点击下载](https://releases.aspose.com/words/net/).
+在我们讨论细节之前，让我们先确保您已获得所需的一切：
+-  Aspose.Words for .NET：确保您拥有最新版本。如果没有，您可以[点击下载](https://releases.aspose.com/words/net/).
 - Visual Studio：任何版本都可以，但始终建议使用最新版本。
 - .NET Framework：确保您拥有.NET Framework 4.0 或更高版本。
 - Word 文档：在本教程中，我们将使用名为`Tables.docx`.
@@ -64,7 +64,7 @@ if (table.TextWrapping == TextWrapping.Around)
 }
 else
 {
-    //如果不包装，则获取标准对齐
+    //如果不换行，则获取标准对齐方式
     Console.WriteLine(table.Alignment);
 }
 ```

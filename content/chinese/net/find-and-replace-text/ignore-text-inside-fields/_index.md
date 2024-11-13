@@ -83,7 +83,7 @@ doc.Range.Replace(regex, "*", options);
 ### 如何处理 Word 文档中的嵌套字段？
 可以通过使用 Aspose.Words 的 API 递归浏览文档内容来管理嵌套字段。
 
-### 我可以应用条件逻辑来选择性地替换文本吗？
+### 我可以应用条件逻辑来有选择地替换文本吗？
 是的，Aspose.Words 允许您使用 FindReplaceOptions 实现条件逻辑，以根据特定条件控制文本替换。
 
 ### Aspose.Words 与 .NET Core 应用程序兼容吗？

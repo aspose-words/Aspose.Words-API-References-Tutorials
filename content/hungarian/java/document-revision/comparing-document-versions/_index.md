@@ -89,4 +89,4 @@ Igen, az Aspose.Words for Java különféle dokumentumformátumokat támogat, be
 
 ### Hol érhetem el az Aspose.Words for Java dokumentációját?
 
-Az Aspose.Words for Java átfogó dokumentációját itt találja[itt](https://reference.aspose.com/words/java/).
+ Az Aspose.Words for Java átfogó dokumentációját itt találja[itt](https://reference.aspose.com/words/java/).

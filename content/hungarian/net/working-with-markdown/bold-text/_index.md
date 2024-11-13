@@ -33,7 +33,7 @@ Most bontsuk le a szöveg félkövérré tételét egy Word-dokumentumban az Asp
 
 ## 1. lépés: Inicializálja a DocumentBuilder programot
 
- A`DocumentBuilder` osztály gyors és egyszerű módja annak, hogy tartalmat adjon a dokumentumhoz. Inicializáljuk.
+A`DocumentBuilder` osztály gyors és egyszerű módja annak, hogy tartalmat adjon a dokumentumhoz. Inicializáljuk.
 
 ```csharp
 // Használjon dokumentumkészítőt, hogy tartalmat adjon a dokumentumhoz.
@@ -63,7 +63,7 @@ builder.Writeln("This text will be Bold");
  Teljesen! Használhatja a`builder.Font.Color`tulajdonság a szöveg színének beállításához.
 
 ### Alkalmazhatok több betűstílust egyszerre?
- Igen, megteheti. Például a szöveget egyszerre félkövérre és dőltre is szedheti, ha mindkettőt beállítja`builder.Font.Bold`és`builder.Font.Italic` hogy`true`.
+ Igen, megteheti. Például a szöveget egyszerre félkövérre és dőltre is szedheti, ha mindkettőt beállítja`builder.Font.Bold` és`builder.Font.Italic` hogy`true`.
 
 ### Milyen egyéb szövegformázási lehetőségek állnak rendelkezésre?
 Az Aspose.Words a szövegformázási lehetőségek széles skáláját kínálja, mint például a betűméret, aláhúzás, áthúzás stb.

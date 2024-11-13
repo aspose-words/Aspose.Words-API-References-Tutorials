@@ -2,7 +2,7 @@
 title: Aceitando e rejeitando alterações em documentos
 linktitle: Aceitando e rejeitando alterações em documentos
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda como gerenciar alterações em documentos sem esforço com Aspose.Words for Java. Aceite e rejeite revisões perfeitamente.
+description: Aprenda a gerenciar alterações de documentos sem esforço com Aspose.Words para Java. Aceite e rejeite revisões perfeitamente.
 type: docs
 weight: 12
 url: /pt/java/document-revision/accepting-rejecting-document-changes/
@@ -10,24 +10,24 @@ url: /pt/java/document-revision/accepting-rejecting-document-changes/
 
 ## Introdução ao Aspose.Words para Java
 
-Aspose.Words for Java é uma biblioteca robusta que permite aos desenvolvedores Java criar, manipular e converter documentos do Word com facilidade. Um de seus principais recursos é a capacidade de trabalhar com alterações em documentos, tornando-o uma ferramenta inestimável para edição colaborativa de documentos.
+Aspose.Words para Java é uma biblioteca robusta que permite que desenvolvedores Java criem, manipulem e convertam documentos do Word com facilidade. Um de seus principais recursos é a capacidade de trabalhar com alterações de documentos, tornando-o uma ferramenta inestimável para edição colaborativa de documentos.
 
-## Compreendendo as alterações nos documentos
+## Compreendendo as alterações do documento
 
-Antes de mergulhar na implementação, vamos entender o que são alterações no documento. As alterações no documento abrangem edições, inserções, exclusões e modificações de formatação feitas em um documento. Essas alterações normalmente são rastreadas usando um recurso de revisão.
+Antes de mergulhar na implementação, vamos entender o que são alterações de documento. Alterações de documento abrangem edições, inserções, exclusões e modificações de formatação feitas dentro de um documento. Essas alterações são normalmente rastreadas usando um recurso de revisão.
 
 ## Carregando um documento
 
-Para começar, você precisa carregar um documento do Word que contenha alterações controladas. Aspose.Words for Java fornece uma maneira direta de fazer isso:
+Para começar, você precisa carregar um documento do Word que contenha alterações rastreadas. O Aspose.Words para Java fornece uma maneira direta de fazer isso:
 
 ```java
 // Carregue o documento
 Document doc = new Document("document_with_changes.docx");
 ```
 
-## Revisão de alterações em documentos
+## Revisando alterações no documento
 
-Depois de carregar o documento, é essencial revisar as alterações. Você pode percorrer as revisões para ver quais modificações foram feitas:
+Depois de carregar o documento, é essencial revisar as alterações. Você pode iterar pelas revisões para ver quais modificações foram feitas:
 
 ```java
 // Iterar por meio de revisões
@@ -38,21 +38,21 @@ for (Revision revision : doc.getRevisions()) {
 }
 ```
 
-## Aceitando alterações
+## Aceitando Mudanças
 
-Aceitar alterações é uma etapa crítica na finalização de um documento. Aspose.Words for Java simplifica a aceitação de todas as revisões ou específicas:
+Aceitar alterações é uma etapa crítica na finalização de um documento. O Aspose.Words para Java simplifica a aceitação de todas as revisões ou de algumas específicas:
 
 ```java
-// Aceite todas as revisões
+// Aceitar todas as revisões
 doc.acceptAllRevisions();
 
-// Aceite uma revisão específica por índice
+// Aceitar uma revisão específica por índice
 doc.acceptRevision(0);
 ```
 
-## Rejeitando alterações
+## Rejeitando Mudanças
 
-Em alguns casos, pode ser necessário rejeitar determinadas alterações. Aspose.Words for Java oferece flexibilidade para rejeitar revisões conforme necessário:
+Em alguns casos, você pode precisar rejeitar certas alterações. O Aspose.Words para Java fornece a flexibilidade para rejeitar revisões conforme necessário:
 
 ```java
 // Rejeitar todas as revisões
@@ -67,36 +67,36 @@ doc.rejectRevision(1);
 Após aceitar ou rejeitar as alterações, é fundamental salvar o documento com as modificações desejadas:
 
 ```java
-// Salve o documento modificado
+// Salvar o documento modificado
 doc.save("document_with_accepted_changes.docx");
 ```
 
 ## Automatizando o Processo
 
-Para agilizar ainda mais o processo, você pode automatizar a aceitação ou rejeição de alterações com base em critérios específicos, como comentários do revisor ou tipos de revisões. Isso garante um fluxo de trabalho de documentos mais eficiente.
+Para simplificar ainda mais o processo, você pode automatizar a aceitação ou rejeição de alterações com base em critérios específicos, como comentários do revisor ou tipos de revisões. Isso garante um fluxo de trabalho de documentos mais eficiente.
 
 ## Conclusão
 
-Concluindo, dominar a arte de aceitar e rejeitar alterações em documentos usando Aspose.Words for Java pode melhorar significativamente sua experiência de colaboração em documentos. Esta poderosa biblioteca simplifica o processo, permitindo revisar, modificar e finalizar documentos com facilidade.
+Concluindo, dominar a arte de aceitar e rejeitar alterações em documentos usando o Aspose.Words para Java pode melhorar significativamente sua experiência de colaboração em documentos. Esta biblioteca poderosa simplifica o processo, permitindo que você revise, modifique e finalize documentos com facilidade.
 
 ## Perguntas frequentes
 
 ### Como posso determinar quem fez uma alteração específica no documento?
 
- Você pode acessar as informações do autor para cada revisão usando o`getAuthor` método no`Revision` objeto.
+ Você pode acessar as informações do autor para cada revisão usando o`getAuthor` método sobre o`Revision` objeto.
 
-### Posso personalizar a aparência das alterações controladas no documento?
+### Posso personalizar a aparência das alterações rastreadas no documento?
 
-Sim, você pode personalizar a aparência das alterações controladas modificando as opções de formatação das revisões.
+Sim, você pode personalizar a aparência das alterações rastreadas modificando as opções de formatação das revisões.
 
-### O Aspose.Words for Java é compatível com diferentes formatos de documentos do Word?
+### O Aspose.Words para Java é compatível com diferentes formatos de documentos do Word?
 
-Sim, Aspose.Words for Java oferece suporte a uma ampla variedade de formatos de documentos do Word, incluindo DOCX, DOC, RTF e muito mais.
+Sim, o Aspose.Words para Java suporta uma ampla variedade de formatos de documentos do Word, incluindo DOCX, DOC, RTF e muito mais.
 
-### Posso desfazer a aceitação ou rejeição das alterações?
+### Posso desfazer a aceitação ou rejeição de alterações?
 
-Infelizmente, as alterações que foram aceitas ou rejeitadas não podem ser facilmente desfeitas na biblioteca Aspose.Words.
+Infelizmente, alterações que foram aceitas ou rejeitadas não podem ser desfeitas facilmente na biblioteca Aspose.Words.
 
-### Onde posso encontrar mais informações e documentação sobre Aspose.Words for Java?
+### Onde posso encontrar mais informações e documentação sobre o Aspose.Words para Java?
 
- Para documentação detalhada e exemplos, visite o[Referência da API Aspose.Words para Java](https://reference.aspose.com/words/java/).
+ Para documentação detalhada e exemplos, visite o[Aspose.Words para referência da API Java](https://reference.aspose.com/words/java/).

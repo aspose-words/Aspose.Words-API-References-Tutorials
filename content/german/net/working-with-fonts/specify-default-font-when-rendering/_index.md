@@ -83,7 +83,7 @@ Wenn Sie diese Schritte befolgen, können Sie sicherstellen, dass Ihre Word-Doku
 Durch die Angabe einer Standardschriftart wird sichergestellt, dass Ihr Dokument auf verschiedenen Plattformen einheitlich angezeigt wird, auch wenn die Originalschriftarten nicht verfügbar sind.
 
 ### Was passiert, wenn die Standardschriftart beim Rendern nicht gefunden wird?
-Aspose.Words verwendet die ähnlichste verfügbare Schriftart auf dem Computer, um das Erscheinungsbild des Dokuments so genau wie möglich beizubehalten.
+Aspose.Words verwendet die auf dem Computer am ehesten verfügbare Schriftart, um das Erscheinungsbild des Dokuments so genau wie möglich beizubehalten.
 
 ### Kann ich mehrere Standardschriftarten angeben?
  Nein, Sie können nur eine Standardschriftart angeben. Sie können jedoch die Schriftartenersetzung für bestimmte Fälle mithilfe der`FontSettings` Klasse.

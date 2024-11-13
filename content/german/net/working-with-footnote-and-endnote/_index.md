@@ -13,5 +13,5 @@ url: /de/net/working-with-footnote-and-endnote/
 | Titel | Beschreibung |
 | --- | --- |
 | [Festlegen von Fußnotenspalten](./set-foot-note-columns/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Fußnotenspalten in Word-Dokumenten festlegen. Passen Sie Ihr Fußnotenlayout einfach mit unserer Schritt-für-Schritt-Anleitung an. |
-| [Position von Fußnote und Endnote festlegen](./set-footnote-and-end-note-position/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Fußnoten- und Endnotenpositionen in Word-Dokumenten festlegen. |
+| [Festlegen der Position von Fußnoten und Endnoten](./set-footnote-and-end-note-position/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Fußnoten- und Endnotenpositionen in Word-Dokumenten festlegen. |
 | [Endnote-Optionen festlegen](./set-endnote-options/) | Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Endnotenoptionen in Word-Dokumenten festlegen. |

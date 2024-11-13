@@ -1,7 +1,7 @@
 ---
 title: Umgang mit Feldern und Daten in Word-Dokumenten
 linktitle: Umgang mit Feldern und Daten in Word-Dokumenten
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Felder und Daten in Word-Dokumenten verarbeiten. Schritt-für-Schritt-Anleitung mit Codebeispielen für dynamische Inhalte, Automatisierung und mehr.
 type: docs
 weight: 12
@@ -119,7 +119,7 @@ Durch die effektive Handhabung von Feldern und Daten in Word-Dokumenten können 
 
 ### Kann ich Felder in Kopf- und Fußzeilenbereichen verwenden?
 
-Ja, Felder können in Kopf- und Fußzeilenbereichen genauso verwendet werden wie im Hauptdokument.
+Ja, Felder können in Kopf- und Fußzeilenbereichen genauso wie im Hauptdokument verwendet werden.
 
 ### Werden Felder in allen Word-Formaten unterstützt?
 

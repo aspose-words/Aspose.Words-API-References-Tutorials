@@ -1,7 +1,7 @@
 ---
 title: Kopf- und Fußzeilen in Word-Dokumenten bearbeiten
 linktitle: Kopf- und Fußzeilen in Word-Dokumenten bearbeiten
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie Kopf- und Fußzeilen in Word-Dokumenten mit Aspose.Words für Python bearbeiten. Schritt-für-Schritt-Anleitung mit Quellcode zum Anpassen, Hinzufügen, Entfernen und mehr. Verbessern Sie jetzt die Formatierung Ihres Dokuments!
 type: docs
 weight: 16
@@ -140,7 +140,7 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
  Ja, Sie können Bilder zu Kopf- und Fußzeilen hinzufügen, indem Sie`add_picture` Verfahren.
 
-### Ist es möglich, unterschiedliche Kopfzeilen für gerade und ungerade Seiten zu haben?
+### Ist es möglich, unterschiedliche Kopfzeilen für ungerade und gerade Seiten zu haben?
 
 Natürlich können Sie für gerade und ungerade Seiten unterschiedliche Kopf- und Fußzeilen erstellen, indem Sie die entsprechenden Einstellungen aktivieren.
 
@@ -150,4 +150,4 @@ Ja, Sie können den Inhalt von Kopf- und Fußzeilen löschen, um sie effektiv zu
 
 ### Wo kann ich mehr über Aspose.Words für Python erfahren?
 
-Ausführlichere Dokumentationen und Beispiele finden Sie im[Aspose.Words für Python API-Referenz](https://reference.aspose.com/words/python-net/).
+Ausführlichere Dokumentation und Beispiele finden Sie im[Aspose.Words für Python API-Referenz](https://reference.aspose.com/words/python-net/).

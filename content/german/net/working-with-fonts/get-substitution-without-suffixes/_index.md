@@ -30,7 +30,7 @@ using Aspose.Words.Fonts;
 using System.Collections.Generic;
 ```
 
-## Schritt 1: Dokumentverzeichnis definieren
+## Schritt 1: Definieren Sie das Dokumentverzeichnis
 
 Geben Sie zunächst das Verzeichnis an, in dem sich Ihr Dokument befindet. So können Sie das Dokument, an dem Sie arbeiten möchten, leichter finden.
 
@@ -93,12 +93,12 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 In dieser Klasse:
--  Der`Warning`Methode erfasst Warnungen im Zusammenhang mit der Schriftartersetzung.
--  Der`FontWarnings` Die Sammlung speichert diese Warnungen zur weiteren Überprüfung oder Protokollierung.
+- Der`Warning`Methode erfasst Warnungen im Zusammenhang mit der Schriftartersetzung.
+- Der`FontWarnings` Die Sammlung speichert diese Warnungen zur weiteren Überprüfung oder Protokollierung.
 
 ## Abschluss
 
-Sie beherrschen jetzt den Umgang mit der Schriftartenersetzung ohne Suffixe mit Aspose.Words für .NET. Mit diesem Wissen stellen Sie sicher, dass Ihre Dokumente unabhängig von den auf dem System verfügbaren Schriftarten ihr beabsichtigtes Erscheinungsbild beibehalten. Experimentieren Sie weiter mit verschiedenen Einstellungen und Quellen, um die Leistungsfähigkeit von Aspose.Words voll auszuschöpfen.
+Sie beherrschen jetzt den Prozess der Schriftartenersetzung ohne Suffixe mit Aspose.Words für .NET. Mit diesem Wissen stellen Sie sicher, dass Ihre Dokumente unabhängig von den auf dem System verfügbaren Schriftarten ihr beabsichtigtes Erscheinungsbild beibehalten. Experimentieren Sie weiter mit verschiedenen Einstellungen und Quellen, um die Leistungsfähigkeit von Aspose.Words voll auszuschöpfen.
 
 ## Häufig gestellte Fragen
 

@@ -52,7 +52,7 @@ Most állítsuk be a vázlatbeállításokat.
 
 ### Állítsa be a címsorok vázlatszintjeit
 
- A`HeadingsOutlineLevels` tulajdonság határozza meg, hogy hány szintű címsor szerepeljen a PDF-vázlatban. Ha például 3-ra állítja, akkor legfeljebb három szintű címsort fog tartalmazni a PDF-vázlatban.
+A`HeadingsOutlineLevels` tulajdonság határozza meg, hogy hány szintű címsor szerepeljen a PDF-vázlatban. Ha például 3-ra állítja, akkor legfeljebb három szintű címsort fog tartalmazni a PDF-vázlatban.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Állítsa be a kiterjesztett körvonalszinteket
 
- A`ExpandedOutlineLevels` tulajdonság azt szabályozza, hogy a vázlat hány szintje legyen kibontva alapértelmezés szerint a PDF megnyitásakor. Ha ezt 1-re állítja, akkor a legfelső szintű címsorok kibővülnek, így áttekinthetőek lesznek a fő szakaszok.
+A`ExpandedOutlineLevels` tulajdonság azt szabályozza, hogy a vázlat hány szintje legyen kibontva alapértelmezés szerint a PDF megnyitásakor. Ha ezt 1-re állítja, akkor a legfelső szintű címsorok kibővülnek, így áttekinthetőek lesznek a fő szakaszok.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

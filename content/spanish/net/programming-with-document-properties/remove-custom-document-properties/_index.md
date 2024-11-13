@@ -1,46 +1,46 @@
 ---
-title: Eliminar propiedades de documentos personalizados
-linktitle: Eliminar propiedades de documentos personalizados
+title: Eliminar propiedades de documento personalizadas
+linktitle: Eliminar propiedades de documento personalizadas
 second_title: API de procesamiento de documentos Aspose.Words
-description: Elimine las propiedades de documentos personalizados en archivos de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para obtener una solución rápida y sencilla. Perfecto para desarrolladores.
+description: Elimine propiedades de documentos personalizadas en archivos de Word con Aspose.Words para .NET. Siga nuestra guía paso a paso para obtener una solución rápida y sencilla. Perfecto para desarrolladores.
 type: docs
 weight: 10
 url: /es/net/programming-with-document-properties/remove-custom-document-properties/
 ---
 ## Introducción
 
-¿Alguna vez te has encontrado enredado en la red de propiedades de documentos personalizados en tus archivos de Word? ¡No estás solo! Administrar estas propiedades puede ser complicado, pero con Aspose.Words para .NET, puede agilizar este proceso sin esfuerzo. En este tutorial, lo guiaremos en la eliminación de propiedades de documentos personalizadas usando Aspose.Words para .NET. Tanto si es un desarrollador experimentado como si recién está empezando, esta guía le resultará sencilla y directa. ¿Listo para sumergirte? ¡Empecemos!
+¿Alguna vez te has encontrado enredado en la red de propiedades de documentos personalizadas en tus archivos de Word? ¡No estás solo! Administrar estas propiedades puede ser una molestia, pero con Aspose.Words para .NET, puedes agilizar este proceso sin esfuerzo. En este tutorial, te guiaremos en el proceso de eliminación de propiedades de documentos personalizadas con Aspose.Words para .NET. Ya seas un desarrollador experimentado o recién estés comenzando, esta guía te resultará sencilla y directa. ¿Estás listo para sumergirte en el proceso? ¡Comencemos!
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de pasar al código, asegurémonos de que tiene todo lo que necesita:
+Antes de pasar al código, asegurémonos de que tienes todo lo que necesitas:
 
-1.  Aspose.Words para la biblioteca .NET: puede[descárgalo aquí](https://releases.aspose.com/words/net/).
+1.  Biblioteca Aspose.Words para .NET: puede[Descárgalo aquí](https://releases.aspose.com/words/net/).
 2. .NET Framework: asegúrese de tener .NET Framework instalado en su máquina.
-3. Conocimientos básicos de C#: Es útil estar familiarizado con la programación en C#.
+3. Conocimientos básicos de C#: es útil estar familiarizado con la programación en C#.
 
 ## Importar espacios de nombres
 
-Para utilizar Aspose.Words para .NET, deberá importar los espacios de nombres necesarios. Esto prepara el escenario para que nuestro código se ejecute sin problemas.
+Para utilizar Aspose.Words para .NET, deberá importar los espacios de nombres necesarios. Esto prepara el terreno para que nuestro código se ejecute sin problemas.
 
 ```csharp
 using System;
 using Aspose.Words;
 ```
 
-## Paso 1: configurar el directorio de documentos
+## Paso 1: Configuración del directorio de documentos
 
-Primero lo primero, configuremos la ruta a nuestro directorio de documentos. Aquí es donde se encuentra su archivo de Word.
+Lo primero es lo primero: configuremos la ruta a nuestro directorio de documentos. Aquí es donde se encuentra el archivo de Word.
 
 ### Paso 1.1: Definir el directorio de datos
 
-En su proyecto C#, defina la ruta a su directorio de documentos. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta real.
+En su proyecto de C#, defina la ruta al directorio de sus documentos. Reemplace "YOUR DOCUMENT DIRECTORY" con la ruta real.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-### Paso 1.2: Cargue el documento
+### Paso 1.2: Cargar el documento
 
 Ahora, carguemos el documento en nuestro código. Aquí es donde entra en juego Aspose.Words para .NET.
 
@@ -48,11 +48,11 @@ Ahora, carguemos el documento en nuestro código. Aquí es donde entra en juego 
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
-## Paso 2: eliminar propiedades del documento personalizado
+## Paso 2: Eliminar propiedades personalizadas del documento
 
-Con el documento cargado, es hora de eliminar esas molestas propiedades personalizadas. Así es como lo haces paso a paso.
+Una vez cargado el documento, es hora de eliminar esas molestas propiedades personalizadas. A continuación, le indicamos cómo hacerlo paso a paso.
 
-### Paso 2.1: acceder a las propiedades del documento personalizado
+### Paso 2.1: Acceder a las propiedades personalizadas del documento
 
 Primero, acceda a las propiedades personalizadas del documento cargado.
 
@@ -60,29 +60,29 @@ Primero, acceda a las propiedades personalizadas del documento cargado.
 var customProperties = doc.CustomDocumentProperties;
 ```
 
-### Paso 2.2: eliminar la propiedad específica
+### Paso 2.2: Eliminar la propiedad específica
 
-A continuación, elimine la propiedad personalizada específica por su nombre. En este ejemplo, eliminaremos la "Fecha autorizada".
+A continuación, elimine la propiedad personalizada específica por su nombre. En este ejemplo, eliminaremos "Fecha de autorización".
 
 ```csharp
 customProperties.Remove("Authorized Date");
 ```
 
-## Paso 3: guardar el documento
+## Paso 3: Guardar el documento
 
-Después de eliminar la propiedad personalizada, el último paso es guardar el documento. Esto garantiza que se apliquen los cambios.
+Después de eliminar la propiedad personalizada, el paso final es guardar el documento. Esto garantiza que se apliquen los cambios.
 
-### Paso 3.1: Definir la ruta para guardar
+### Paso 3.1: Definir la ruta de guardado
 
-Defina dónde desea guardar el documento modificado.
+Define dónde quieres guardar el documento modificado.
 
 ```csharp
 string savePath = dataDir + "ModifiedProperties.docx";
 ```
 
-### Paso 3.2: guarde el documento
+### Paso 3.2: Guardar el documento
 
-Finalmente, guarde el documento con los cambios.
+Por último, guarde el documento con los cambios.
 
 ```csharp
 doc.Save(savePath);
@@ -90,21 +90,21 @@ doc.Save(savePath);
 
 ## Conclusión
 
-¡Y ahí lo tienes! Eliminar propiedades de documentos personalizados en archivos de Word usando Aspose.Words para .NET es muy fácil. Si sigue estos pasos, podrá administrar eficientemente las propiedades de sus documentos, ahorrándole tiempo y esfuerzo. Ya sea que esté limpiando metadatos o automatizando el procesamiento de documentos, Aspose.Words para .NET lo tiene cubierto. ¡Feliz codificación!
+¡Y ya está! Eliminar propiedades de documentos personalizadas en archivos de Word con Aspose.Words para .NET es muy fácil. Si sigue estos pasos, podrá administrar de manera eficiente las propiedades de sus documentos, lo que le permitirá ahorrar tiempo y esfuerzo. Ya sea que esté limpiando metadatos o automatizando el procesamiento de documentos, Aspose.Words para .NET lo ayudará. ¡Que disfrute codificando!
 
 ## Preguntas frecuentes
 
 ### 1. ¿Qué es Aspose.Words para .NET?
-Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos de Word mediante programación. Permite a los desarrolladores crear, modificar y convertir documentos en varios formatos.
+Aspose.Words para .NET es una potente biblioteca para trabajar con documentos de Word de forma programática. Permite a los desarrolladores crear, modificar y convertir documentos en varios formatos.
 
 ### 2. ¿Puedo utilizar Aspose.Words para .NET con otros lenguajes de programación?
 Aspose.Words para .NET está diseñado específicamente para aplicaciones .NET. Sin embargo, Aspose ofrece bibliotecas similares para Java y otras plataformas.
 
-### 3. ¿Cómo obtengo una prueba gratuita de Aspose.Words para .NET?
- Puede[descargar una prueba gratuita](https://releases.aspose.com/) del sitio web de Aspose.
+### 3. ¿Cómo puedo obtener una prueba gratuita de Aspose.Words para .NET?
+ Puede[Descargue una prueba gratuita](https://releases.aspose.com/) del sitio web de Aspose.
 
 ### 4. ¿Dónde puedo encontrar más tutoriales sobre Aspose.Words para .NET?
- Mira el[documentación](https://reference.aspose.com/words/net/) para más tutoriales y ejemplos.
+ Echa un vistazo a la[documentación](https://reference.aspose.com/words/net/) para más tutoriales y ejemplos.
 
-### 5. ¿Cómo puedo adquirir una licencia de Aspose.Words para .NET?
+### 5. ¿Cómo puedo comprar una licencia para Aspose.Words para .NET?
  Puede[comprar una licencia](https://purchase.aspose.com/buy) directamente desde el sitio web de Aspose.

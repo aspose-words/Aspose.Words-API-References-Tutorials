@@ -17,7 +17,7 @@ url: /zh/java/document-merging/document-splitting-extraction/
 在深入研究代码之前，请确保您已满足以下先决条件：
 
 - 您的系统上安装了 Java 开发工具包 (JDK)。
--  Aspose.Words for Java 库。您可以下载[这里](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java 库。您可以下载它[这里](https://releases.aspose.com/words/java/).
 
 ## 设置你的项目
 
@@ -39,7 +39,7 @@ Document doc = new Document("path/to/your/document.docx");
 接下来，我们将定义拆分文档的标准。可以是按页面、按部分，也可以是任何符合您需求的自定义标准。
 
 ```java
-//定义拆分标准
+//定义拆分条件
 DocumentSplitCriteria splitCriteria = new PageSplitCriteria();
 ```
 

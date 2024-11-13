@@ -1,22 +1,22 @@
 ---
-title: تقسيم المستندات باستخدام Content Builder للحصول على الدقة
-linktitle: تقسيم المستندات باستخدام Content Builder للحصول على الدقة
-second_title: Aspose.Words Python إدارة المستندات API
-description: قم بتقسيم مستنداتك وقهرها بدقة باستخدام Aspose.Words for Python. تعرف على كيفية الاستفادة من أداة إنشاء المحتوى لاستخراج المحتوى وتنظيمه بكفاءة.
+title: تقسيم المستندات باستخدام Content Builder لتحقيق الدقة
+linktitle: تقسيم المستندات باستخدام Content Builder لتحقيق الدقة
+second_title: Aspose.Words - واجهة برمجة تطبيقات إدارة المستندات باستخدام Python
+description: قسّم مستنداتك ورتبها بدقة باستخدام Aspose.Words for Python. تعرّف على كيفية الاستفادة من Content Builder لاستخراج المحتوى وتنظيمه بكفاءة.
 type: docs
 weight: 11
 url: /ar/python-net/document-splitting-and-formatting/divide-documents-content-builder/
 ---
 
-يوفر Aspose.Words for Python واجهة برمجة تطبيقات قوية للعمل مع مستندات Word، مما يسمح لك بأداء المهام المختلفة بكفاءة. إحدى الميزات الأساسية هي تقسيم المستندات باستخدام Content Builder، مما يساعد على تحقيق الدقة والتنظيم في مستنداتك. في هذا البرنامج التعليمي، سوف نستكشف كيفية استخدام Aspose.Words for Python لتقسيم المستندات باستخدام وحدة Content Builder.
+يوفر Aspose.Words for Python واجهة برمجة تطبيقات قوية للعمل مع مستندات Word، مما يسمح لك بأداء مهام مختلفة بكفاءة. إحدى الميزات الأساسية هي تقسيم المستندات باستخدام Content Builder، مما يساعد في تحقيق الدقة والتنظيم في مستنداتك. في هذا البرنامج التعليمي، سنستكشف كيفية استخدام Aspose.Words for Python لتقسيم المستندات باستخدام وحدة Content Builder.
 
 ## مقدمة
 
-عند التعامل مع المستندات الكبيرة، من الضروري الحفاظ على بنية وتنظيم واضحين. يمكن أن يؤدي تقسيم المستند إلى أقسام إلى تحسين إمكانية القراءة وتسهيل التحرير المستهدف. يتيح لك Aspose.Words for Python تحقيق ذلك من خلال وحدة Content Builder القوية الخاصة به.
+عند التعامل مع مستندات كبيرة، من المهم الحفاظ على هيكل وتنظيم واضحين. يمكن أن يؤدي تقسيم المستند إلى أقسام إلى تحسين قابلية القراءة وتسهيل التحرير المستهدف. يتيح لك Aspose.Words for Python تحقيق ذلك من خلال وحدة Content Builder القوية.
 
 ## إعداد Aspose.Words لـ Python
 
-قبل أن نتعمق في التنفيذ، فلنقم بإعداد Aspose.Words لـ Python.
+قبل أن نتعمق في التنفيذ، دعنا نقوم بإعداد Aspose.Words لـ Python.
 
 1.  التثبيت: قم بتثبيت مكتبة Aspose.Words باستخدام`pip`:
    
@@ -24,7 +24,7 @@ url: /ar/python-net/document-splitting-and-formatting/divide-documents-content-b
    pip install aspose-words
    ```
 
-2. الاستيراد:
+2. استيراد:
    
    ```python
    import aspose.words as aw
@@ -32,16 +32,16 @@ url: /ar/python-net/document-splitting-and-formatting/divide-documents-content-b
 
 ## إنشاء مستند جديد
 
-لنبدأ بإنشاء مستند Word جديد باستخدام Aspose.Words for Python.
+لنبدأ بإنشاء مستند Word جديد باستخدام Aspose.Words لـPython.
 
 ```python
 # Create a new document
 doc = aw.Document()
 ```
 
-## إضافة محتوى باستخدام منشئ المحتوى
+## إضافة المحتوى باستخدام Content Builder
 
-تسمح لنا وحدة Content Builder بإضافة محتوى إلى المستند بكفاءة. دعونا نضيف عنوانا وبعض النص التمهيدي.
+تتيح لنا وحدة Content Builder إضافة محتوى إلى المستند بكفاءة. فلنضف عنوانًا وبعض النصوص التمهيدية.
 
 ```python
 builder = aw.DocumentBuilder(doc)
@@ -57,20 +57,20 @@ builder.writeln("Dividing documents is essential for maintaining precision and o
 builder.writeln("In this tutorial, we will explore how to use the Content Builder module to achieve this.")
 ```
 
-## تقسيم المستندات بدقة
+## تقسيم المستندات لتحقيق الدقة
 
-الآن تأتي الوظيفة الأساسية – تقسيم المستند إلى أقسام. سوف نستخدم أداة إنشاء المحتوى لإدراج فواصل الأقسام.
+الآن تأتي الوظيفة الأساسية - تقسيم المستند إلى أقسام. سنستخدم Content Builder لإدراج فواصل الأقسام.
 
 ```python
 # Insert a section break
 builder.insert_break(aw.BreakType.SECTION_BREAK_NEW_PAGE)
 ```
 
- يمكنك إدراج أنواع مختلفة من الفواصل المقطعية بناءً على متطلباتك، مثل`SECTION_BREAK_NEW_PAGE`, `SECTION_BREAK_CONTINUOUS` ، أو`SECTION_BREAK_EVEN_PAGE`.
+ يمكنك إدراج أنواع مختلفة من فواصل الأقسام بناءً على متطلباتك، مثل`SECTION_BREAK_NEW_PAGE`, `SECTION_BREAK_CONTINUOUS` ، أو`SECTION_BREAK_EVEN_PAGE`.
 
-## مثال لحالة الاستخدام: إنشاء السيرة الذاتية
+## مثال على حالة الاستخدام: إنشاء السيرة الذاتية
 
-دعونا نفكر في حالة استخدام عملي: إنشاء سيرة ذاتية تحتوي على أقسام مميزة.
+دعونا نفكر في حالة استخدام عملية: إنشاء سيرة ذاتية (CV) تحتوي على أقسام مميزة.
 
 ```python
 # Add CV sections
@@ -84,21 +84,21 @@ for section in sections:
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، اكتشفنا كيفية استخدام Aspose.Words لوحدة Content Builder في Python لتقسيم المستندات وتحسين الدقة. تعتبر هذه الميزة مفيدة بشكل خاص عند التعامل مع محتوى طويل يتطلب تنظيمًا منظمًا.
+في هذا البرنامج التعليمي، استكشفنا كيفية استخدام وحدة Content Builder في Aspose.Words لـ Python لتقسيم المستندات وتعزيز الدقة. هذه الميزة مفيدة بشكل خاص عند التعامل مع محتوى طويل يتطلب تنظيمًا منظمًا.
 
 ## الأسئلة الشائعة
 
 ### كيف يمكنني تثبيت Aspose.Words لـ Python؟
  يمكنك تثبيته باستخدام الأمر:`pip install aspose-words`.
 
-### ما هي أنواع الفواصل المقطعية المتاحة؟
-يوفر Aspose.Words for Python أنواعًا مختلفة من فواصل الأقسام، مثل فواصل الصفحات الجديدة والمستمرة وحتى فواصل الصفحات.
+### ما هي أنواع فواصل الأقسام المتاحة؟
+يوفر Aspose.Words for Python أنواعًا مختلفة من فواصل الأقسام، مثل فواصل الصفحة الجديدة، والفواصل المستمرة، وحتى فواصل الصفحات.
 
 ### هل يمكنني تخصيص تنسيق كل قسم؟
-نعم، يمكنك تطبيق تنسيقات وأنماط وخطوط مختلفة على كل قسم باستخدام وحدة منشئ المحتوى.
+نعم، يمكنك تطبيق تنسيقات وأنماط وخطوط مختلفة على كل قسم باستخدام وحدة إنشاء المحتوى.
 
 ### هل Aspose.Words مناسب لإنشاء التقارير؟
-قطعاً! يتم استخدام Aspose.Words for Python على نطاق واسع لإنشاء أنواع مختلفة من التقارير والمستندات بتنسيق دقيق.
+بالتأكيد! يستخدم Aspose.Words for Python على نطاق واسع لإنشاء أنواع مختلفة من التقارير والمستندات بتنسيق دقيق.
 
 ### أين يمكنني الوصول إلى الوثائق والتنزيلات؟
- قم بزيارة[Aspose.Words لتوثيق بايثون](https://reference.aspose.com/words/python-net/) وتحميل المكتبة من[Aspose.Words إصدارات بايثون](https://releases.aspose.com/words/python/).
+ قم بزيارة[توثيق Aspose.Words للغة Python](https://reference.aspose.com/words/python-net/) وتحميل المكتبة من[إصدارات Aspose.Words Python](https://releases.aspose.com/words/python/).

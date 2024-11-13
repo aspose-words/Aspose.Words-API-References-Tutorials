@@ -1,58 +1,58 @@
 ---
-title: Update laatst opgeslagen tijdeigenschap
-linktitle: Update laatst opgeslagen tijdeigenschap
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de laatst opgeslagen tijd-eigenschap in Word-documenten bijwerkt met Aspose.Words voor .NET. Volg onze gedetailleerde, stapsgewijze handleiding.
+title: Laatst opgeslagen tijd eigenschap bijwerken
+linktitle: Laatst opgeslagen tijd eigenschap bijwerken
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u de laatst opgeslagen tijdeigenschap in Word-documenten kunt bijwerken met Aspose.Words voor .NET. Volg onze gedetailleerde, stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
 ## Invoering
 
-Heeft u zich ooit afgevraagd hoe u de laatst opgeslagen tijd in uw Word-documenten programmatisch kunt bijhouden? Als u met meerdere documenten te maken heeft en de metagegevens ervan moet bijhouden, kan het bijwerken van de laatst opgeslagen tijdeigenschap erg handig zijn. Vandaag ga ik je door dit proces leiden met behulp van Aspose.Words voor .NET. Dus, doe je gordel om en laten we erin duiken!
+Heb je je ooit afgevraagd hoe je de laatst opgeslagen tijdeigenschap in je Word-documenten programmatisch kunt bijhouden? Als je met meerdere documenten werkt en hun metagegevens moet onderhouden, kan het erg handig zijn om de laatst opgeslagen tijdeigenschap bij te werken. Vandaag ga ik je door dit proces leiden met behulp van Aspose.Words voor .NET. Dus, gesp je vast en laten we erin duiken!
 
 ## Vereisten
 
-Voordat we ingaan op de stapsgewijze handleiding, zijn er een paar dingen die je nodig hebt:
+Voordat we met de stapsgewijze handleiding beginnen, zijn er een paar dingen die u nodig hebt:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Als je dat nog niet hebt gedaan, kun je dat doen[download het hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: Zorg ervoor dat u Aspose.Words voor .NET hebt geïnstalleerd. Als u dat niet hebt gedaan, kunt u[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Een ontwikkelomgeving zoals Visual Studio.
-3. Basiskennis van C#: Het begrijpen van de basisprincipes van C#-programmeren zal nuttig zijn.
+3. Basiskennis van C#: Kennis van de basisprincipes van C#-programmering is nuttig.
 
 ## Naamruimten importeren
 
-Zorg er om te beginnen voor dat u de benodigde naamruimten in uw project importeert. Hierdoor krijgt u toegang tot de klassen en methoden die nodig zijn voor het manipuleren van Word-documenten.
+Zorg er allereerst voor dat u de benodigde namespaces in uw project importeert. Dit geeft u toegang tot de klassen en methoden die nodig zijn voor het manipuleren van Word-documenten.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Laten we het proces nu in eenvoudige stappen opsplitsen. Elke stap begeleidt u bij het bijwerken van de laatst opgeslagen tijdeigenschap in uw Word-document.
+Laten we het proces nu opsplitsen in eenvoudige stappen. Elke stap begeleidt u door het proces van het updaten van de laatst opgeslagen tijdeigenschap in uw Word-document.
 
 ## Stap 1: Stel uw documentenmap in
 
-Eerst moet u het pad naar uw documentmap opgeven. Dit is waar uw bestaande document wordt opgeslagen en waar het bijgewerkte document wordt opgeslagen.
+Eerst moet u het pad naar uw documentdirectory opgeven. Dit is waar uw bestaande document is opgeslagen en waar het bijgewerkte document zal worden opgeslagen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het werkelijke pad naar uw directory.
 
 ## Stap 2: Laad uw Word-document
 
- Laad vervolgens het Word-document dat u wilt bijwerken. U kunt dit doen door een exemplaar van de`Document` class en geef het pad van uw document door.
+ Laad vervolgens het Word-document dat u wilt bijwerken. U kunt dit doen door een exemplaar van de`Document` klasse en het pad van uw document doorgeven.
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Zorg ervoor dat het document met de naam`Document.docx` aanwezig is in de opgegeven map.
+ Zorg ervoor dat het document met de naam`Document.docx` is aanwezig in de opgegeven directory.
 
-## Stap 3: Configureer de opslagopties
+## Stap 3: Configureer opslagopties
 
- Maak nu een exemplaar van de`OoxmlSaveOptions` klas. Met deze klasse kunt u opties opgeven voor het opslaan van uw document in de Office Open XML (OOXML)-indeling. Hier stelt u de`UpdateLastSavedTimeProperty` naar`true`.
+ Maak nu een instantie van de`OoxmlSaveOptions` klasse. Met deze klasse kunt u opties opgeven voor het opslaan van uw document in de Office Open XML (OOXML)-indeling. Hier stelt u de`UpdateLastSavedTimeProperty` naar`true`.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
@@ -61,35 +61,35 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
 };
 ```
 
-Dit vertelt Aspose.Words om de laatst opgeslagen tijdeigenschap van het document bij te werken.
+Hiermee wordt Aspose.Words verteld om de laatst opgeslagen tijdseigenschap van het document bij te werken.
 
 ## Stap 4: Sla het bijgewerkte document op
 
- Sla ten slotte het document op met behulp van de`Save` werkwijze van de`Document` class, waarbij u het pad doorgeeft waar u het bijgewerkte document en de opslagopties wilt opslaan.
+ Sla het document ten slotte op met behulp van de`Save` methode van de`Document` klasse, waarbij u het pad doorgeeft waar u het bijgewerkte document wilt opslaan en de opslagopties.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
 ```
 
-Hierdoor wordt het document opgeslagen met de bijgewerkte laatst opgeslagen tijdeigenschap.
+Hiermee wordt het document opgeslagen met de bijgewerkte eigenschap voor de laatste keer dat het is opgeslagen.
 
 ## Conclusie
 
-En daar heb je het! Door deze stappen te volgen, kunt u eenvoudig de laatst opgeslagen tijdeigenschap van uw Word-documenten bijwerken met Aspose.Words voor .NET. Dit is vooral handig voor het behouden van nauwkeurige metadata in uw documenten, wat cruciaal kan zijn voor documentbeheersystemen en diverse andere toepassingen.
+En daar heb je het! Door deze stappen te volgen, kun je eenvoudig de laatst opgeslagen tijdeigenschap van je Word-documenten bijwerken met Aspose.Words voor .NET. Dit is vooral handig voor het onderhouden van nauwkeurige metagegevens in je documenten, wat cruciaal kan zijn voor documentbeheersystemen en verschillende andere toepassingen.
 
 ## Veelgestelde vragen
 
 ### Wat is Aspose.Words voor .NET?
 Aspose.Words voor .NET is een krachtige bibliotheek voor het maken, bewerken en converteren van Word-documenten in .NET-toepassingen.
 
-### Waarom moet ik de laatst opgeslagen tijdeigenschap bijwerken?
-Door de laatst opgeslagen tijd-eigenschap bij te werken, blijven nauwkeurige metagegevens behouden, wat essentieel is voor het volgen en beheren van documenten.
+### Waarom moet ik de eigenschap 'Laatst opgeslagen tijd' bijwerken?
+Door de eigenschap 'Laatst opgeslagen tijd' bij te werken, blijven de metagegevens nauwkeurig. Dit is essentieel voor het bijhouden en beheren van documenten.
 
 ### Kan ik andere eigenschappen bijwerken met Aspose.Words voor .NET?
 Ja, met Aspose.Words voor .NET kunt u verschillende documenteigenschappen bijwerken, zoals titel, auteur en onderwerp.
 
 ### Is Aspose.Words voor .NET gratis?
- Aspose.Words voor .NET biedt een gratis proefperiode, maar voor volledige functionaliteit is een licentie vereist. U kunt een licentie verkrijgen[hier](https://purchase.aspose.com/buy).
+ Aspose.Words voor .NET biedt een gratis proefversie, maar voor volledige functionaliteit is een licentie vereist. U kunt een licentie verkrijgen[hier](https://purchase.aspose.com/buy).
 
 ### Waar kan ik meer tutorials vinden over Aspose.Words voor .NET?
  kunt meer tutorials en documentatie vinden[hier](https://reference.aspose.com/words/net/).

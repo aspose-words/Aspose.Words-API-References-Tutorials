@@ -16,7 +16,7 @@ url: /ja/java/document-merging/document-splitting-extraction/
 
 コードに進む前に、次の前提条件が満たされていることを確認してください。
 
-- Java Development Kit (JDK) がシステムにインストールされています。
+- システムに Java 開発キット (JDK) がインストールされています。
 -  Aspose.Words for Javaライブラリ。ダウンロードできます[ここ](https://releases.aspose.com/words/java/).
 
 ## プロジェクトの設定

@@ -1,53 +1,53 @@
 ---
-title: Kaynakları Dışa Aktar
-linktitle: Kaynakları Dışa Aktar
+title: İhracat Kaynakları
+linktitle: İhracat Kaynakları
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerini HTML olarak kaydederken CSS ve yazı tipleri gibi kaynakları nasıl dışa aktaracağınızı öğrenin. Adım adım kılavuzumuzu takip edin.
+description: Aspose.Words for .NET kullanarak Word belgelerini HTML olarak kaydederken CSS ve yazı tipleri gibi kaynakları nasıl dışa aktaracağınızı öğrenin. Adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlsaveoptions/export-resources/
 ---
 ## giriiş
 
-Merhaba teknoloji meraklısı dostlarım! Word belgelerini HTML'ye dönüştürme ihtiyacı duyduysanız doğru yerdesiniz. Bugün Aspose.Words for .NET'in muhteşem dünyasına dalıyoruz. Bu güçlü kitaplık, Word belgeleriyle programlı olarak çalışmayı kolaylaştırır. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesini HTML olarak kaydederken yazı tipleri ve CSS gibi kaynakları dışa aktarma adımlarını anlatacağız. Eğlenceli ve bilgilendirici bir yolculuk için kemerlerinizi bağlayın!
+Merhaba, teknoloji meraklısı arkadaşım! Word belgelerini HTML'ye dönüştürmeniz gerektiyse doğru yerdesiniz. Bugün, Aspose.Words for .NET'in harika dünyasına dalıyoruz. Bu güçlü kütüphane, Word belgeleriyle programatik olarak çalışmayı çok kolaylaştırıyor. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesini HTML olarak kaydederken yazı tipleri ve CSS gibi kaynakları dışa aktarma adımlarını ele alacağız. Eğlenceli ve bilgilendirici bir yolculuğa hazır olun!
 
-## Önkoşullar
+## Ön koşullar
 
 Koda dalmadan önce, başlamak için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım. İşte hızlı bir kontrol listesi:
 
-1.  Visual Studio: Makinenizde Visual Studio'nun kurulu olduğundan emin olun. adresinden indirebilirsiniz.[Visual Studio web sitesi](https://visualstudio.microsoft.com/).
-2.  Aspose.Words for .NET: Aspose.Words for .NET kitaplığına ihtiyacınız olacak. Henüz almadıysanız, şu adresten ücretsiz deneme sürümünü edinin:[Sürümleri Aspose](https://releases.aspose.com/words/net/) veya adresinden satın alın[Aspose Mağaza](https://purchase.aspose.com/buy).
-3. Temel C# Bilgisi: Temel C# anlayışı, kod örneklerini takip etmenize yardımcı olacaktır.
+1.  Visual Studio: Makinenizde Visual Studio'nun yüklü olduğundan emin olun. Bunu şuradan indirebilirsiniz:[Visual Studio web sitesi](https://visualstudio.microsoft.com/).
+2.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesine ihtiyacınız olacak. Eğer henüz almadıysanız, şu adresten ücretsiz deneme sürümünü edinin:[Aspose Sürümleri](https://releases.aspose.com/words/net/) veya buradan satın alın[Aspose Mağazası](https://purchase.aspose.com/buy).
+3. Temel C# Bilgisi: C# hakkında temel bir anlayışa sahip olmak, kod örneklerini takip etmenize yardımcı olacaktır.
 
-Bunların hepsini anladın mı? Harika! Gerekli ad alanlarını içe aktarmaya geçelim.
+Hepsini anladınız mı? Harika! Gerekli ad alanlarını içe aktarmaya geçelim.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET'i kullanmak için projenize ilgili ad alanlarını eklemeniz gerekir. İşte bunu nasıl yapacağınız:
+Aspose.Words for .NET'i kullanmak için projenize ilgili ad alanlarını eklemeniz gerekir. Bunu şu şekilde yapabilirsiniz:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Bu ad alanları, eğitimimizde kullanacağımız Aspose.Words sınıflarına ve yöntemlerine erişim için çok önemlidir.
+Bu ad alanları, eğitimimizde kullanacağımız Aspose.Words sınıflarına ve metotlarına erişim için çok önemlidir.
 
-Bir Word belgesini HTML olarak kaydederken kaynakları dışa aktarma sürecini inceleyelim. Takip edilmesi kolay olsun diye adım adım ilerleyeceğiz.
+Bir Word belgesini HTML olarak kaydederken kaynakları dışa aktarma sürecini parçalara ayıralım. Adım adım ilerleyeceğiz, böylece takip etmesi kolay olacak.
 
-## 1. Adım: Belge Dizininizi Kurun
+## Adım 1: Belge Dizininizi Ayarlayın
 
-Öncelikle belgeler dizininizin yolunu belirtmeniz gerekir. Burası Word belgenizin bulunduğu ve HTML dosyasının kaydedileceği yerdir.
+İlk önce, belgeler dizininize giden yolu belirtmeniz gerekir. Word belgenizin bulunduğu ve HTML dosyasının kaydedileceği yer burasıdır.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Dizininizin gerçek yolu ile.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` dizininize giden gerçek yol ile.
 
 ## Adım 2: Word Belgesini Yükleyin
 
- Daha sonra HTML'ye dönüştürmek istediğiniz Word belgesini yükleyelim. Bu eğitim için adlı bir belge kullanacağız.`Rendering.docx`.
+ Sonra, HTML'ye dönüştürmek istediğiniz Word belgesini yükleyelim. Bu eğitim için, adlı bir belge kullanacağız`Rendering.docx`.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -55,9 +55,9 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 Bu kod satırı belgeyi belirtilen dizinden yükler.
 
-## 3. Adım: HTML Kaydetme Seçeneklerini Yapılandırın
+## Adım 3: HTML Kaydetme Seçeneklerini Yapılandırın
 
-CSS ve yazı tipleri gibi kaynakları dışa aktarmak için`HtmlSaveOptions`. Bu adım, HTML çıktınızın iyi yapılandırılmış olmasını ve gerekli kaynakları içermesini sağlamak için çok önemlidir.
+CSS ve yazı tipleri gibi kaynakları dışa aktarmak için, şunu yapılandırmanız gerekir:`HtmlSaveOptions`Bu adım, HTML çıktınızın iyi yapılandırılmış olmasını ve gerekli kaynakları içermesini sağlamak için çok önemlidir.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
@@ -65,7 +65,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
     CssStyleSheetType = CssStyleSheetType.External,
     ExportFontResources = true,
     ResourceFolder = dataDir + "Resources",
-    ResourceFolderAlias = "http://example.com/resources"
+    ResourceFolderAlias = "http://example.com/kaynaklar"
 };
 ```
 
@@ -73,35 +73,35 @@ Her seçeneğin ne işe yaradığını inceleyelim:
 - `CssStyleSheetType = CssStyleSheetType.External`: Bu seçenek, CSS stillerinin harici bir stil sayfasına kaydedilmesi gerektiğini belirtir.
 - `ExportFontResources = true`: Bu, yazı tipi kaynaklarının dışa aktarılmasını sağlar.
 - `ResourceFolder = dataDir + "Resources"`: Kaynakların (yazı tipleri ve CSS dosyaları gibi) kaydedileceği yerel klasörü belirtir.
-- `ResourceFolderAlias = "http://example.com/resources"`: Kaynak klasörü için HTML dosyasında kullanılacak bir takma ad ayarlar.
+- `ResourceFolderAlias = "http://example.com/resources"`: HTML dosyasında kullanılacak kaynak klasörü için bir takma ad belirler.
 
 ## Adım 4: Belgeyi HTML olarak kaydedin
 
-Kaydetme seçenekleri yapılandırıldığında son adım, belgeyi bir HTML dosyası olarak kaydetmektir. İşte bunu nasıl yapacağınız:
+Kaydetme seçenekleri yapılandırıldıktan sonra son adım belgeyi bir HTML dosyası olarak kaydetmektir. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
 ```
 
-Bu kod satırı, belgeyi dışa aktarılan kaynaklarla birlikte HTML biçiminde kaydeder.
+Bu kod satırı, belgeyi dışa aktarılan kaynaklarla birlikte HTML formatında kaydeder.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesini HTML olarak kaydederken kaynakları başarıyla dışa aktardınız. Bu güçlü kitaplık sayesinde Word belgelerinin programlı olarak işlenmesi çocuk oyuncağı haline gelir. İster bir web uygulaması üzerinde çalışıyor olun, ister yalnızca çevrimdışı kullanım için belgeleri dönüştürmeniz gerekiyor olsun, Aspose.Words size yardımcı olacaktır.
+Ve işte oldu! Aspose.Words for .NET kullanarak bir Word belgesini HTML olarak kaydederken kaynakları başarıyla dışa aktardınız. Bu güçlü kütüphaneyle, Word belgelerini programatik olarak yönetmek çocuk oyuncağı haline geliyor. İster bir web uygulaması üzerinde çalışıyor olun, ister sadece belgeleri çevrimdışı kullanım için dönüştürmeniz gereksin, Aspose.Words sizin için her şeyi yapar.
 
-## SSS'ler
+## SSS
 
-### Görselleri yazı tipleri ve CSS ile birlikte dışa aktarabilir miyim?
- Evet, yapabilirsin! Aspose.Words for .NET görüntülerin dışa aktarılmasını da destekler. Sadece yapılandırdığınızdan emin olun.`HtmlSaveOptions` buna göre.
+### Resimleri fontlar ve CSS ile birlikte dışarı aktarabilir miyim?
+ Evet, yapabilirsiniz! Aspose.Words for .NET görüntüleri dışa aktarmayı da destekler. Sadece yapılandırmayı unutmayın`HtmlSaveOptions` buna göre.
 
-### Harici bir stil sayfası kullanmak yerine CSS'yi yerleştirmenin bir yolu var mı?
- Kesinlikle. Ayarlayabilirsiniz`CssStyleSheetType` ile`CssStyleSheetType.Embedded` gömülü stilleri tercih ediyorsanız.
+### Harici bir stil sayfası kullanmak yerine CSS'yi gömmenin bir yolu var mı?
+ Kesinlikle. Ayarlayabilirsiniz`CssStyleSheetType` ile`CssStyleSheetType.Embedded` eğer gömülü stilleri tercih ediyorsanız.
 
 ### Çıktı HTML dosyasının adını nasıl özelleştirebilirim?
- İstediğiniz herhangi bir dosya adını belirtebilirsiniz.`doc.Save` Yöntem. Örneğin,`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
+ İstediğiniz herhangi bir dosya adını belirtebilirsiniz.`doc.Save` yöntem. Örneğin,`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
 
-### Aspose.Words HTML dışında diğer formatları da destekliyor mu?
- Evet, PDF, DOCX, TXT ve daha fazlasını içeren çeşitli formatları destekler. Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) tam liste için.
+### Aspose.Words HTML dışında başka formatları da destekliyor mu?
+ Evet, PDF, DOCX, TXT ve daha fazlası dahil olmak üzere çeşitli formatları destekler. Şuraya göz atın:[belgeleme](https://reference.aspose.com/words/net/) Tam liste için.
 
-### Daha fazla desteği ve kaynağı nereden alabilirim?
-Daha fazla yardım için şu adresi ziyaret edin:[Aspose.Words Destek Forumu](https://forum.aspose.com/c/words/8) . Ayrıca ayrıntılı belgeleri ve örnekleri de şu adreste bulabilirsiniz:[Web sitesi](https://reference.aspose.com/words/net/).
+### Daha fazla destek ve kaynağı nereden alabilirim?
+Daha fazla yardım için şu adresi ziyaret edin:[Aspose.Words Destek Forumu](https://forum.aspose.com/c/words/8) Ayrıca ayrıntılı dokümanları ve örnekleri şu adreste bulabilirsiniz:[Aspose web sitesi](https://reference.aspose.com/words/net/).

@@ -1,23 +1,23 @@
 ---
-title: Ustaw położenie przypisu dolnego i przypisu końcowego
-linktitle: Ustaw położenie przypisu dolnego i przypisu końcowego
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić pozycje przypisów dolnych i końcowych w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku.
+title: Ustaw pozycję przypisu dolnego i końcowego
+linktitle: Ustaw pozycję przypisu dolnego i końcowego
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak ustawiać położenie przypisów dolnych i końcowych w dokumentach programu Word za pomocą narzędzia Aspose.Words dla platformy .NET, korzystając z tego szczegółowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-footnote-and-endnote/set-footnote-and-end-note-position/
 ---
 ## Wstęp
 
-Jeśli pracujesz z dokumentami programu Word i chcesz efektywnie zarządzać przypisami dolnymi i końcowymi, biblioteka Aspose.Words dla .NET jest Twoją ulubioną biblioteką. Ten samouczek przeprowadzi Cię przez proces ustawiania pozycji przypisów dolnych i końcowych w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Podzielimy każdy krok, aby ułatwić jego wykonanie i wdrożenie.
+Jeśli pracujesz z dokumentami Worda i musisz skutecznie zarządzać przypisami dolnymi i końcowymi, Aspose.Words for .NET jest Twoją biblioteką docelową. Ten samouczek przeprowadzi Cię przez ustawianie pozycji przypisów dolnych i końcowych w dokumencie Worda za pomocą Aspose.Words for .NET. Podzielimy każdy krok, aby ułatwić śledzenie i wdrażanie.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące elementy:
+Zanim przejdziesz do samouczka, upewnij się, że posiadasz następujące rzeczy:
 
--  Biblioteka Aspose.Words dla .NET: Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-- Visual Studio: każda najnowsza wersja będzie działać poprawnie.
-- Podstawowa znajomość języka C#: Zrozumienie podstaw pomoże Ci z łatwością kontynuować naukę.
+-  Biblioteka Aspose.Words dla .NET: Można ją pobrać ze strony[Tutaj](https://releases.aspose.com/words/net/).
+- Visual Studio: każda nowsza wersja będzie działać dobrze.
+- Podstawowa wiedza o języku C#: Zrozumienie podstaw ułatwi Ci naukę.
 
 ## Importuj przestrzenie nazw
 
@@ -30,28 +30,28 @@ using Aspose.Words;
 
 ## Krok 1: Załaduj dokument Word
 
-Aby rozpocząć, musisz załadować dokument Word do obiektu Aspose.Words Document. Umożliwi to manipulowanie zawartością dokumentu.
+Aby rozpocząć, musisz załadować dokument Word do obiektu Aspose.Words Document. Pozwoli ci to manipulować zawartością dokumentu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- W tym kodzie zamień`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką, w której znajduje się dokument.
+ tym kodzie zamień`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką, gdzie znajduje się Twój dokument.
 
-## Krok 2: Ustaw położenie przypisu
+## Krok 2: Ustaw pozycję przypisu
 
-Następnie ustaw położenie przypisów. Aspose.Words dla .NET umożliwia umieszczanie przypisów na dole strony lub pod tekstem.
+Następnie ustawisz pozycję przypisów. Aspose.Words dla .NET pozwala na pozycjonowanie przypisów na dole strony lub pod tekstem.
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;
 ```
 
- Tutaj ustawiliśmy, że przypisy będą pojawiać się pod tekstem. Jeśli wolisz je na dole strony, użyj`FootnotePosition.BottomOfPage`.
+ Tutaj ustawiliśmy przypisy tak, aby pojawiały się pod tekstem. Jeśli wolisz, aby znajdowały się na dole strony, użyj`FootnotePosition.BottomOfPage`.
 
-## Krok 3: Ustaw pozycję przypisu końcowego
+## Krok 3: Ustaw położenie przypisu końcowego
 
-Podobnie możesz ustawić położenie przypisów końcowych. Przypisy końcowe można umieszczać na końcu sekcji lub na końcu dokumentu.
+Podobnie możesz ustawić pozycję przypisów końcowych. Przypisy końcowe mogą być umieszczone na końcu sekcji lub na końcu dokumentu.
 
 ```csharp
 doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
@@ -61,23 +61,23 @@ doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
 
 ## Krok 4: Zapisz dokument
 
-Na koniec zapisz dokument, aby zastosować zmiany. Upewnij się, że podałeś poprawną ścieżkę pliku i nazwę dokumentu wyjściowego.
+Na koniec zapisz dokument, aby zastosować zmiany. Upewnij się, że określiłeś prawidłową ścieżkę pliku i nazwę dla dokumentu wyjściowego.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
 ```
 
-Ta linia zapisuje zmodyfikowany dokument w określonym katalogu.
+Ten wiersz zapisuje zmodyfikowany dokument w podanym katalogu.
 
 ## Wniosek
 
-Ustawianie pozycji przypisów dolnych i końcowych w dokumentach programu Word przy użyciu Aspose.Words dla .NET jest proste, jeśli znasz kroki. Postępując zgodnie z tym przewodnikiem, możesz dostosować dokumenty do swoich potrzeb, zapewniając, że przypisy dolne i końcowe będą umieszczone dokładnie tam, gdzie chcesz.
+Ustawianie pozycji przypisów dolnych i końcowych w dokumentach Word za pomocą Aspose.Words dla .NET jest proste, gdy znasz już kroki. Postępując zgodnie z tym przewodnikiem, możesz dostosować swoje dokumenty do swoich potrzeb, zapewniając, że przypisy dolne i końcowe będą umieszczone dokładnie tam, gdzie chcesz.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę ustawić różne pozycje poszczególnych przypisów dolnych i końcowych?
+### Czy mogę ustawić różne pozycje dla poszczególnych przypisów dolnych i końcowych?
 
-Nie, Aspose.Words dla .NET ustawia jednolitą pozycję wszystkich przypisów dolnych i końcowych w dokumencie.
+Nie, Aspose.Words dla platformy .NET ustala położenie wszystkich przypisów dolnych i końcowych w dokumencie w jednolity sposób.
 
 ### Czy Aspose.Words dla .NET jest kompatybilny ze wszystkimi wersjami dokumentów Word?
 
@@ -85,12 +85,12 @@ Tak, Aspose.Words dla .NET obsługuje szeroką gamę formatów dokumentów Word,
 
 ### Czy mogę używać Aspose.Words dla .NET z innymi językami programowania?
 
-Aspose.Words dla .NET jest przeznaczony dla aplikacji .NET, ale można go używać z dowolnym językiem obsługiwanym przez .NET, takim jak C#, VB.NET itp.
+Aspose.Words for .NET jest przeznaczony dla aplikacji .NET, ale można go używać z dowolnym językiem obsługiwanym przez platformę .NET, takim jak C#, VB.NET itp.
 
-### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
+### Czy jest dostępna bezpłatna wersja próbna Aspose.Words dla .NET?
 
- Tak, możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
+ Tak, możesz otrzymać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację Aspose.Words dla .NET?
 
- Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
+Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).

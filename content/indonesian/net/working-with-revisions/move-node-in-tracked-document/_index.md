@@ -2,39 +2,39 @@
 title: Pindahkan Node Dalam Dokumen yang Dilacak
 linktitle: Pindahkan Node Dalam Dokumen yang Dilacak
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara memindahkan node dalam dokumen Word yang dilacak menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci. Sempurna untuk pengembang.
+description: Pelajari cara memindahkan node dalam dokumen Word yang dilacak menggunakan Aspose.Words untuk .NET dengan panduan terperinci dan langkah demi langkah. Sempurna untuk pengembang.
 type: docs
 weight: 10
 url: /id/net/working-with-revisions/move-node-in-tracked-document/
 ---
 ## Perkenalan
 
-Hai, Aspose. Penggemar kata-kata! Jika Anda pernah perlu memindahkan simpul di dokumen Word sambil melacak revisi, Anda berada di tempat yang tepat. Hari ini, kita akan mempelajari cara mencapai hal ini menggunakan Aspose.Words untuk .NET. Anda tidak hanya akan mempelajari proses langkah demi langkah, namun Anda juga akan mempelajari beberapa tip dan trik untuk membuat manipulasi dokumen Anda lancar dan efisien.
+Hai, penggemar Aspose.Words! Jika Anda pernah perlu memindahkan node dalam dokumen Word saat melacak revisi, Anda berada di tempat yang tepat. Hari ini, kita akan membahas cara melakukannya menggunakan Aspose.Words untuk .NET. Anda tidak hanya akan mempelajari proses langkah demi langkah, tetapi Anda juga akan memperoleh beberapa kiat dan trik untuk membuat manipulasi dokumen Anda lancar dan efisien.
 
 ## Prasyarat
 
-Sebelum kita mengotori beberapa kode, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita mulai mengerjakan beberapa kode, mari pastikan Anda memiliki semua yang dibutuhkan:
 
 -  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/).
 - Lingkungan .NET: Pastikan Anda telah menyiapkan lingkungan pengembangan .NET yang kompatibel.
 - Pengetahuan Dasar C#: Tutorial ini mengasumsikan Anda memiliki pemahaman dasar tentang C#.
 
-Punya segalanya? Besar! Mari beralih ke namespace yang perlu kita impor.
+Sudah mendapatkan semuanya? Bagus! Mari kita lanjutkan ke namespace yang perlu kita impor.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, kita perlu mengimpor namespace yang diperlukan. Ini penting untuk bekerja dengan Aspose.Words dan menangani node dokumen.
+Pertama-tama, kita perlu mengimpor namespace yang diperlukan. Namespace ini penting untuk bekerja dengan Aspose.Words dan menangani node dokumen.
 
 ```csharp
 using Aspose.Words;
 using System;
 ```
 
-Baiklah, mari kita bagi prosesnya menjadi langkah-langkah yang dapat dikelola. Setiap langkah akan dijelaskan secara rinci untuk memastikan Anda memahami apa yang terjadi di setiap titik.
+Baiklah, mari kita bagi prosesnya menjadi beberapa langkah yang mudah dikelola. Setiap langkah akan dijelaskan secara terperinci untuk memastikan Anda memahami apa yang terjadi di setiap tahap.
 
 ## Langkah 1: Inisialisasi Dokumen
 
- Untuk memulai, kita perlu menginisialisasi dokumen baru dan menggunakan a`DocumentBuilder` untuk menambahkan beberapa paragraf.
+ Untuk memulai, kita perlu menginisialisasi dokumen baru dan menggunakan`DocumentBuilder` untuk menambahkan beberapa paragraf.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -55,21 +55,21 @@ Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
-## Langkah 2: Mulai Lacak Revisi
+## Langkah 2: Mulai Melacak Revisi
 
-Selanjutnya, kita perlu mulai melacak revisi. Ini penting karena memungkinkan kita melihat perubahan yang dilakukan pada dokumen.
+Selanjutnya, kita perlu mulai melacak revisi. Hal ini penting karena memungkinkan kita melihat perubahan yang dibuat pada dokumen.
 
 ```csharp
-// Mulai lacak revisi
+// Mulai melacak revisi
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 ```
 
 ## Langkah 3: Pindahkan Node
 
-Sekarang sampai pada bagian inti dari tugas kita: memindahkan node dari satu lokasi ke lokasi lain. Kami akan memindahkan paragraf ketiga dan menempatkannya sebelum paragraf pertama.
+Sekarang tibalah bagian inti dari tugas kita: memindahkan simpul dari satu lokasi ke lokasi lain. Kita akan memindahkan paragraf ketiga dan meletakkannya sebelum paragraf pertama.
 
 ```csharp
-// Tentukan node yang akan dipindahkan dan jangkauan akhirnya
+// Tentukan node yang akan dipindahkan dan rentang akhirnya
 Node node = body.Paragraphs[3];
 Node endNode = body.Paragraphs[5].NextSibling;
 Node referenceNode = body.Paragraphs[0];
@@ -85,7 +85,7 @@ while (node != endNode)
 
 ## Langkah 4: Hentikan Pelacakan Revisi
 
-Setelah kita memindahkan node, kita harus berhenti melacak revisi.
+Setelah kita memindahkan node, kita perlu berhenti melacak revisi.
 
 ```csharp
 // Berhenti melacak revisi
@@ -94,37 +94,37 @@ doc.StopTrackRevisions();
 
 ## Langkah 5: Simpan Dokumen
 
-Terakhir, mari simpan dokumen kita yang telah dimodifikasi ke direktori yang ditentukan.
+Terakhir, mari simpan dokumen yang telah dimodifikasi ke direktori yang ditentukan.
 
 ```csharp
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
-// Keluarkan jumlah paragraf terakhir
+// Keluarkan jumlah paragraf akhir
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil memindahkan simpul dalam dokumen yang dilacak menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan manipulasi dokumen Word secara terprogram. Baik Anda membuat, mengedit, atau melacak perubahan, Aspose.Words siap membantu Anda. Jadi, silakan dan cobalah. Selamat membuat kode!
+Nah, itu dia! Anda telah berhasil memindahkan node dalam dokumen yang dilacak menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan Anda memanipulasi dokumen Word secara terprogram. Baik Anda membuat, mengedit, atau melacak perubahan, Aspose.Words siap membantu Anda. Jadi, silakan dan cobalah. Selamat membuat kode!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words for .NET adalah perpustakaan kelas untuk bekerja dengan dokumen Word secara terprogram. Hal ini memungkinkan pengembang untuk membuat, mengedit, mengkonversi, dan mencetak dokumen Word dalam aplikasi .NET.
+Aspose.Words untuk .NET adalah pustaka kelas untuk bekerja dengan dokumen Word secara terprogram. Pustaka ini memungkinkan pengembang untuk membuat, mengedit, mengonversi, dan mencetak dokumen Word dalam aplikasi .NET.
 
 ### Bagaimana cara melacak revisi dalam dokumen Word menggunakan Aspose.Words?
 
- Untuk melacak revisi, gunakan`StartTrackRevisions` metode pada`Document` obyek. Ini akan mengaktifkan pelacakan revisi, menunjukkan perubahan apa pun yang dilakukan pada dokumen.
+ Untuk melacak revisi, gunakan`StartTrackRevisions` metode pada`Document` objek. Ini akan mengaktifkan pelacakan revisi, yang menunjukkan perubahan apa pun yang dibuat pada dokumen.
 
-### Bisakah saya memindahkan banyak node di Aspose.Words?
+### Bisakah saya memindahkan beberapa node di Aspose.Words?
 
-Ya, Anda dapat memindahkan banyak node dengan mengulanginya dan menggunakan metode seperti`InsertBefore` atau`InsertAfter` untuk menempatkannya di lokasi yang diinginkan.
+Ya, Anda dapat memindahkan beberapa node dengan mengulanginya dan menggunakan metode seperti`InsertBefore` atau`InsertAfter` untuk menempatkannya di lokasi yang diinginkan.
 
-### Bagaimana cara berhenti melacak revisi di Aspose.Words?
+### Bagaimana cara menghentikan pelacakan revisi di Aspose.Words?
 
- Gunakan`StopTrackRevisions` metode pada`Document` keberatan untuk berhenti melacak revisi.
+ Gunakan`StopTrackRevisions` metode pada`Document` keberatan untuk menghentikan pelacakan revisi.
 
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
 

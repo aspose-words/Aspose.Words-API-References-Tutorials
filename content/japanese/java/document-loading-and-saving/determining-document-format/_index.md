@@ -10,7 +10,7 @@ url: /ja/java/document-loading-and-saving/determining-document-format/
 
 ## Aspose.Words for Java でのドキュメント形式の判別の概要
 
-Java でドキュメント処理を実行する場合、処理するファイルの形式を決定することが重要です。Aspose.Words for Java には、ドキュメント形式を識別するための強力な機能が用意されており、そのプロセスについて説明します。
+Java でドキュメント処理を行う場合、処理するファイルの形式を決定することが重要です。Aspose.Words for Java には、ドキュメント形式を識別するための強力な機能が用意されており、そのプロセスについて説明します。
 
 ## 前提条件
 
@@ -45,7 +45,7 @@ if (!pre97Dir.exists())
 
 ## ステップ2: ドキュメント形式の検出
 
-次に、ディレクトリ内のドキュメントの形式を検出します。これを実現するには、Aspose.Words for Java を使用します。
+次に、ディレクトリ内のドキュメントの形式を検出してみましょう。これを実現するには、Aspose.Words for Java を使用します。
 
 ```java
 Set<String> listFiles = Stream.of(new File("Your Directory Path").listFiles())

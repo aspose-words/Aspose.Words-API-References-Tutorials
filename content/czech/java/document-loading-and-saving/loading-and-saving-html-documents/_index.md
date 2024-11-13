@@ -73,13 +73,13 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 ## Závěr
 
-V tomto článku jsme se naučili, jak načíst a uložit HTML dokumenty pomocí Aspose.Words for Java. Tato knihovna poskytuje pohodlný způsob práce s různými formáty dokumentů, což z ní činí cenný nástroj pro manipulaci s dokumenty v aplikacích Java.
+tomto článku jsme se naučili, jak načíst a uložit HTML dokumenty pomocí Aspose.Words for Java. Tato knihovna poskytuje pohodlný způsob práce s různými formáty dokumentů, což z ní činí cenný nástroj pro manipulaci s dokumenty v aplikacích Java.
 
 ## FAQ
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Aspose.Words for Java lze stáhnout z[zde](https://releases.aspose.com/words/java/)Postupujte podle pokynů k instalaci uvedených na webu a nastavte jej ve svém projektu Java.
+ Aspose.Words for Java lze stáhnout z[zde](https://releases.aspose.com/words/java/). Postupujte podle pokynů k instalaci uvedených na webu a nastavte jej ve svém projektu Java.
 
 ### Mohu načíst složité HTML dokumenty pomocí Aspose.Words?
 
@@ -95,4 +95,4 @@ Absolutně! Aspose.Words je robustní řešení používané podniky po celém s
 
 ### Kde najdu další dokumentaci a příklady pro Aspose.Words pro Java?
 
-Podrobnou dokumentaci, příklady kódu a výukové programy naleznete na webu dokumentace Aspose.Words for Java:[Aspose.Words pro dokumentaci Java](https://reference.aspose.com/words/java/).
+ Podrobnou dokumentaci, příklady kódu a výukové programy naleznete na webu dokumentace Aspose.Words for Java:[Aspose.Words pro dokumentaci Java](https://reference.aspose.com/words/java/).

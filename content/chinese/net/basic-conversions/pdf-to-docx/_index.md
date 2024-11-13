@@ -23,7 +23,7 @@ url: /zh/net/basic-conversions/pdf-to-docx/
 ### 设置你的环境
 
 1. 下载并安装 Aspose.Words for .NET：前往[Aspose 网站](https://releases.aspose.com/words/net/)并获取最新版本。
-2. 创建新项目：打开您的 IDE，创建一个新的.NET 项目，并添加对 Aspose.Words 的引用。
+2. 创建新项目：打开您的 IDE，创建一个新的 .NET 项目，并添加对 Aspose.Words 的引用。
 3. 准备您的 PDF 文档：在您的项目目录中准备好您想要转换的 PDF 文档。
 
 有了这些必需品，我们就可以开始了！

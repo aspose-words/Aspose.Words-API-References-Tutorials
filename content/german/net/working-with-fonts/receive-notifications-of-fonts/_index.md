@@ -9,16 +9,16 @@ url: /de/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 ## Einführung
 
-Wenn Sie jemals Probleme mit Schriftarten hatten, die in Ihren Dokumenten nicht richtig dargestellt wurden, sind Sie nicht allein. Das Verwalten von Schriftarteinstellungen und das Erhalten von Benachrichtigungen über Schriftartersetzungen kann Ihnen viel Kopfzerbrechen ersparen. In diesem umfassenden Handbuch erfahren Sie, wie Sie mit Aspose.Words für .NET mit Schriftartbenachrichtigungen umgehen und sicherstellen, dass Ihre Dokumente immer optimal aussehen.
+Wenn Sie jemals Probleme mit nicht korrekt dargestellten Schriftarten in Ihren Dokumenten hatten, sind Sie nicht allein. Das Verwalten von Schriftarteinstellungen und das Erhalten von Benachrichtigungen über Schriftartersetzungen kann Ihnen viel Kopfzerbrechen ersparen. In diesem umfassenden Handbuch erfahren Sie, wie Sie mit Aspose.Words für .NET mit Schriftartbenachrichtigungen umgehen und sicherstellen, dass Ihre Dokumente immer optimal aussehen.
 
 ## Voraussetzungen
 
 Bevor wir ins Detail gehen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-- Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen das Folgen.
+- Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen den Lernprozess.
 -  Aspose.Words für .NET-Bibliothek: Laden Sie es herunter und installieren Sie es von der[offizieller Downloadlink](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Ein Setup wie Visual Studio zum Schreiben und Ausführen Ihres Codes.
--  Beispieldokument: Halten Sie ein Beispieldokument bereit (z. B.`Rendering.docx`) bereit, die Schrifteinstellungen zu testen.
+-  Beispieldokument: Halten Sie ein Beispieldokument bereit (z. B.`Rendering.docx`) bereit zum Testen der Schrifteinstellungen.
 
 ## Namespaces importieren
 
@@ -30,7 +30,7 @@ using Aspose.Words.Fonts;
 using Aspose.Words.WarningInfo;
 ```
 
-## Schritt 1: Dokumentverzeichnis definieren
+## Schritt 1: Definieren Sie das Dokumentverzeichnis
 
 Geben Sie zunächst das Verzeichnis an, in dem Ihr Dokument gespeichert ist. Dies ist wichtig, um das zu verarbeitende Dokument zu finden.
 
@@ -79,7 +79,7 @@ public class HandleDocumentWarnings : IWarningCallback
 
 ## Schritt 5: Dem Dokument die Rückruf- und Schriftarteinstellungen zuweisen
 
-Weisen Sie dem Dokument den Warnrückruf und die konfigurierten Schrifteinstellungen zu. Dadurch wird sichergestellt, dass alle Schriftprobleme erfasst und protokolliert werden.
+Weisen Sie dem Dokument den Warnrückruf und die konfigurierten Schriftarteinstellungen zu. Dadurch wird sichergestellt, dass alle Schriftartprobleme erfasst und protokolliert werden.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();

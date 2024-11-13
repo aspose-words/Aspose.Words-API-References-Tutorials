@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Lassen Sie uns den Vorgang nun in einfache, überschaubare Schritte unterteilen. Jeder Schritt wird ausführlich erklärt, damit Sie ihn problemlos nachvollziehen können.
+Lassen Sie uns den Vorgang nun in einfache, überschaubare Schritte unterteilen. Jeder Schritt enthält eine ausführliche Erklärung, damit Sie ihn mühelos nachvollziehen können.
 
 ## Schritt 1: Einrichten Ihres Projekts
 
@@ -37,7 +37,7 @@ Lassen Sie uns den Vorgang nun in einfache, überschaubare Schritte unterteilen.
 Öffnen Sie Visual Studio und erstellen Sie ein neues C#-Projekt. Wählen Sie der Einfachheit halber die Vorlage „Konsolen-App“.
 
 ### Schritt 1.2: Aspose.Words für .NET-Referenz hinzufügen
-Um Aspose.Words für .NET zu verwenden, müssen Sie einen Verweis auf die Aspose.Words-Bibliothek hinzufügen. Sie können dies über den NuGet-Paket-Manager tun:
+Um Aspose.Words für .NET zu verwenden, müssen Sie einen Verweis auf die Aspose.Words-Bibliothek hinzufügen. Sie können dies über den NuGet-Paketmanager tun:
 
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt.
 2. Wählen Sie „NuGet-Pakete verwalten“ aus.

@@ -96,7 +96,7 @@ series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Datumsformat
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Prozentformat
 ```
 
- Darüber hinaus können Sie das Format einer Datenbeschriftung mit einer Quellzelle verknüpfen. Wenn die Verknüpfung erfolgt,`NumberFormat` wird auf allgemein zurückgesetzt und aus der Quellzelle übernommen.
+ Darüber hinaus können Sie das Format einer Datenbeschriftung mit einer Quellzelle verknüpfen. Wenn die Verknüpfung erfolgt,`NumberFormat` wird auf allgemein zurückgesetzt und von der Quellzelle übernommen.
 
 ```csharp
 series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
@@ -125,7 +125,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum programmgesteuert
 Ja, Aspose.Words für .NET unterstützt eine Vielzahl von Diagrammtypen, darunter Balken-, Säulen-, Kreisdiagramme und mehr.
 
 ### Wie erhalte ich eine temporäre Lizenz für Aspose.Words für .NET?
- Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
+Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
 
 ### Ist es möglich, Datenbeschriftungen mit Quellzellen in Excel zu verknüpfen?
 Ja, Sie können Datenbeschriftungen mit Quellzellen verknüpfen, sodass das Zahlenformat von der Quellzelle übernommen wird.

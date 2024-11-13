@@ -45,7 +45,7 @@ Låt oss gå igenom processen att infoga hyperlänkar i ett Word-dokument med As
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- De`DocumentBuilder` class är ett mångsidigt verktyg som låter dig konstruera och modifiera dokumentet.
+De`DocumentBuilder` class är ett mångsidigt verktyg som låter dig konstruera och modifiera dokumentet.
 
 ## Steg 2: Infoga hyperlänk
 

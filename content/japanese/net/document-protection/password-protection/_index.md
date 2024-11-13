@@ -18,7 +18,7 @@ Word 文書をパスワードで保護する詳細に入る前に、いくつか
 1.  Aspose.Words for .NET: Aspose.Words for .NETライブラリがインストールされていることを確認してください。[ここからダウンロード](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio またはその他の C# 開発環境。
 3. 基本的な C# の知識: C# プログラミングの基本的な理解。
-4.  Asposeライセンス: ライセンスを取得する[ここ](https://purchase.aspose.com/buy)または[一時ライセンス](https://purchase.aspose.com/temporary-license/)評価のため。
+4. Asposeライセンス: ライセンスを取得する[ここ](https://purchase.aspose.com/buy)または[一時ライセンス](https://purchase.aspose.com/temporary-license/)評価のため。
 
 ## 名前空間のインポート
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ### 保護タイプを選択
 
-Aspose.Wordsは、次のようなさまざまなタイプの保護を提供します。`NoProtection`, `ReadOnly`, `AllowOnlyComments` 、 そして`AllowOnlyFormFields`この例では、`NoProtection`ただし、パスワードが設定されているため、基本的にはドキュメントは編集可能ですが、保護を解除するにはパスワードが必要です。
+Aspose.Wordsは、次のようなさまざまなタイプの保護を提供します。`NoProtection`, `ReadOnly`, `AllowOnlyComments` 、 そして`AllowOnlyFormFields`この例では、`NoProtection`ただし、パスワードが設定されていると、基本的にドキュメントは編集可能ですが、保護を解除するにはパスワードが必要になります。
 
 ### 保護を適用する
 
@@ -104,7 +104,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 はい、Aspose.Words は .NET Core、.NET Framework、およびその他の .NET プラットフォームと互換性があります。
 
-### 既存のドキュメントをパスワードで保護できますか?
+### 既存の文書をパスワードで保護できますか?
 
 もちろんです！既存の文書を読み込むには、`Document`クラスを作成してから保護を適用します。
 

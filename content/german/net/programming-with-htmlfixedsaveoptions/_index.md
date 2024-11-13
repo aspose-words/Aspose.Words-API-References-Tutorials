@@ -13,4 +13,4 @@ Die Aspose.Words für .NET-Tutorials sollen Ihnen dabei helfen, die Verwendung d
 | Titel | Beschreibung |
 | --- | --- |
 | [Schriftart vom Zielcomputer verwenden](./use-font-from-target-machine/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Schriftarten vom Zielcomputer in Ihren Word-Dokumenten verwenden. Folgen Sie unserer Schritt-für-Schritt-Anleitung für eine nahtlose Schriftartenintegration. |
-| [Schreiben Sie alle CSS-Regeln in eine einzige Datei](./write-all-css-rules-in-single-file/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Word-Dokumente mit allen CSS-Regeln in einer einzigen Datei in HTML konvertieren, um saubereren Code und einfachere Wartung zu erzielen. |
+| [Schreiben Sie alle CSS-Regeln in eine einzige Datei](./write-all-css-rules-in-single-file/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Word-Dokumente in HTML konvertieren, mit allen CSS-Regeln in einer einzigen Datei für saubereren Code und einfachere Wartung. |

@@ -69,7 +69,7 @@ Document doc = new Document();
 2. Bekezdés hozzáadása: Ezután hozzáadunk egy bekezdést a dokumentumhoz.
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 Ez a bekezdés lesz az a hely, ahol beszúrjuk a szerző mezőt.

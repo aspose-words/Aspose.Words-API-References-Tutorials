@@ -1,27 +1,27 @@
 ---
 title: Geneste velden invoegen
 linktitle: Geneste velden invoegen
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u geneste velden in Word-documenten invoegt met Aspose.Words voor .NET met onze stapsgewijze handleiding. Perfect voor ontwikkelaars die het maken van documenten willen automatiseren.
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u geneste velden in Word-documenten kunt invoegen met Aspose.Words voor .NET met onze stapsgewijze handleiding. Perfect voor ontwikkelaars die het maken van documenten willen automatiseren.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/insert-nested-fields/
 ---
 ## Invoering
 
-Heeft u ooit gemerkt dat u geneste velden programmatisch in uw Word-documenten moest invoegen? Misschien wilt u verschillende teksten voorwaardelijk weergeven op basis van het paginanummer? Nou, je hebt geluk! Deze tutorial leidt u door het proces van het invoegen van geneste velden met Aspose.Words voor .NET. Laten we erin duiken!
+Heb je ooit geneste velden in je Word-documenten programmatisch moeten invoegen? Misschien wil je verschillende teksten voorwaardelijk weergeven op basis van het paginanummer? Nou, dan heb je geluk! Deze tutorial leidt je door het proces van het invoegen van geneste velden met Aspose.Words voor .NET. Laten we beginnen!
 
 ## Vereisten
 
-Voordat we beginnen, zijn er een paar dingen die je nodig hebt:
+Voordat we beginnen, heb je een paar dingen nodig:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
-2. Ontwikkelomgeving: een IDE zoals Visual Studio.
-3. Basiskennis van C#: begrip van de programmeertaal C#.
+1.  Aspose.Words voor .NET: Zorg ervoor dat u de Aspose.Words voor .NET-bibliotheek hebt. U kunt deze downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een IDE zoals Visual Studio.
+3. Basiskennis van C#: inzicht in de programmeertaal C#.
 
 ## Naamruimten importeren
 
-Zorg er eerst voor dat u de benodigde naamruimten in uw project importeert. Deze naamruimten bevatten klassen die u nodig hebt voor interactie met Aspose.Words.
+Zorg er eerst voor dat u de benodigde namespaces in uw project importeert. Deze namespaces bevatten klassen die u nodig hebt om te interacteren met Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -31,7 +31,7 @@ using Aspose.Words.HeaderFooter;
 
 ## Stap 1: Initialiseer het document
 
-De eerste stap is het maken van een nieuw document en een DocumentBuilder-object. De klasse DocumentBuilder helpt bij het bouwen en wijzigen van Word-documenten.
+De eerste stap is het maken van een nieuw document en een DocumentBuilder-object. De DocumentBuilder-klasse helpt bij het bouwen en wijzigen van Word-documenten.
 
 ```csharp
 // Het pad naar de documentenmap.
@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 2: Pagina-einden invoegen
 
-Vervolgens voegen we een paar pagina-einden in het document in. Hierdoor kunnen we de geneste velden effectief demonstreren.
+Vervolgens voegen we een paar pagina-einden toe aan het document. Dit zal ons in staat stellen om de geneste velden effectief te demonstreren.
 
 ```csharp
 // Pagina-einden invoegen.
@@ -56,10 +56,10 @@ for (int i = 0; i < 5; i++)
 
 ## Stap 3: Ga naar voettekst
 
-Na het invoegen van pagina-einden moeten we naar de voettekst van het document gaan. Dit is waar we ons geneste veld invoegen.
+Nadat we pagina-einden hebben ingevoegd, moeten we naar de voettekst van het document. Hier voegen we ons geneste veld in.
 
 ```csharp
-// Verplaats naar voettekst.
+// Verplaatsen naar voettekst.
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
@@ -77,11 +77,11 @@ builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
 ```
 
-In deze stap voegen we eerst het IF-veld in, gaan naar het scheidingsteken ervan en voegen vervolgens de velden PAGE en NUMPAGES in. Het IF-veld controleert of het huidige paginanummer (PAGE) niet gelijk is aan het totale aantal pagina's (NUMPAGES). Indien waar, wordt “Zie volgende pagina” weergegeven, anders wordt “Laatste pagina” weergegeven.
+In deze stap voegen we eerst het IF-veld in, verplaatsen we naar de scheidingslijn en voegen we vervolgens de velden PAGE en NUMPAGES in. Het IF-veld controleert of het huidige paginanummer (PAGE) niet gelijk is aan het totale aantal pagina's (NUMPAGES). Als dit waar is, wordt 'Zie volgende pagina' weergegeven, anders wordt 'Laatste pagina' weergegeven.
 
 ## Stap 5: Werk het veld bij
 
-Ten slotte werken we het veld bij om ervoor te zorgen dat het de juiste tekst weergeeft.
+Ten slotte werken we het veld bij om ervoor te zorgen dat de juiste tekst wordt weergegeven.
 
 ```csharp
 // Werk het veld bij.
@@ -90,7 +90,7 @@ field.Update();
 
 ## Stap 6: Sla het document op
 
-De laatste stap is het opslaan van het document in de door u opgegeven map.
+De laatste stap is het opslaan van het document in de door u opgegeven directory.
 
 ```csharp
 doc.Save(dataDir + "InsertNestedFields.docx");
@@ -98,21 +98,21 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 
 ## Conclusie
 
-En daar heb je het! U hebt met succes geneste velden in een Word-document ingevoegd met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het ongelooflijk eenvoudig om Word-documenten programmatisch te manipuleren. Of u nu rapporten genereert, sjablonen maakt of documentworkflows automatiseert, Aspose.Words heeft de oplossing voor u.
+En daar heb je het! Je hebt met succes geneste velden ingevoegd in een Word-document met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het ongelooflijk eenvoudig om Word-documenten programmatisch te manipuleren. Of je nu rapporten genereert, sjablonen maakt of documentworkflows automatiseert, Aspose.Words heeft het allemaal.
 
 ## Veelgestelde vragen
 
 ### Wat is een genest veld in Word-documenten?
-Een genest veld is een veld dat andere velden bevat. Het maakt complexere en voorwaardelijke inhoud in documenten mogelijk.
+Een genest veld is een veld dat andere velden bevat. Het staat complexere en voorwaardelijke inhoud in documenten toe.
 
 ### Kan ik andere velden binnen het IF-veld gebruiken?
-Ja, u kunt verschillende velden, zoals DATUM, TIJD en AUTEUR, binnen het IF-veld nesten om dynamische inhoud te creëren.
+Ja, u kunt verschillende velden, zoals DATUM, TIJD en AUTEUR, nesten binnen het ALS-veld om dynamische inhoud te maken.
 
 ### Is Aspose.Words voor .NET gratis?
- Aspose.Words voor .NET is een commerciële bibliotheek, maar u kunt ook een .NET-bibliotheek krijgen[gratis proefperiode](https://releases.aspose.com/) om het uit te proberen.
+ Aspose.Words voor .NET is een commerciële bibliotheek, maar u kunt een[gratis proefperiode](https://releases.aspose.com/) om het uit te proberen.
 
 ### Kan ik Aspose.Words gebruiken met andere .NET-talen?
 Ja, Aspose.Words ondersteunt alle .NET-talen, inclusief VB.NET en F#.
 
 ### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
- U kunt gedetailleerde documentatie vinden[hier](https://reference.aspose.com/words/net/).
+ Gedetailleerde documentatie vindt u hier[hier](https://reference.aspose.com/words/net/).

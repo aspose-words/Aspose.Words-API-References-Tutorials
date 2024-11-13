@@ -9,13 +9,13 @@ url: /hu/net/programming-with-charts/define-xyaxis-properties/
 ---
 ## Bevezetés
 
-A diagramok hatékony eszközök az adatok megjelenítésére. Ha professzionális dokumentumokat kell létrehoznia dinamikus diagramokkal, az Aspose.Words for .NET felbecsülhetetlen értékű könyvtár. Ez a cikk végigvezeti az XY tengely tulajdonságainak diagramon történő meghatározásának folyamatán az Aspose.Words for .NET használatával, az egyes lépéseket lebontva az egyértelműség és a könnyebb érthetőség érdekében.
+A diagramok hatékony eszközt jelentenek az adatok megjelenítésére. Ha professzionális dokumentumokat kell létrehoznia dinamikus diagramokkal, az Aspose.Words for .NET felbecsülhetetlen értékű könyvtár. Ez a cikk végigvezeti az XY tengely tulajdonságainak diagramon történő meghatározásának folyamatán az Aspose.Words for .NET használatával, az egyes lépéseket lebontva az egyértelműség és a könnyebb érthetőség érdekében.
 
 ## Előfeltételek
 
 Mielőtt belemerülne a kódolásba, meg kell felelnie néhány előfeltételnek:
 
-1. Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztési környezet: Szüksége van egy integrált fejlesztői környezetre (IDE), például a Visual Studiora.
 3. .NET-keretrendszer: Győződjön meg arról, hogy a fejlesztői környezete be van állítva a .NET-fejlesztéshez.
 4. Alapvető C# ismerete: Ez az útmutató feltételezi, hogy rendelkezik a C# programozás alapvető ismereteivel.
@@ -78,7 +78,7 @@ Most itt az ideje, hogy meghatározzuk az X tengely tulajdonságait. Ez magában
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; //Az Y tengely kijelzési egységeiben mérve (száz).
+xAxis.CrossesAt = 3; // Az Y tengely kijelzési egységeiben mérve (száz).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
@@ -117,7 +117,7 @@ Word-dokumentumok diagramjainak létrehozása és testreszabása az Aspose.Words
 Különféle típusú diagramokat hozhat létre, beleértve a területet, oszlopot, vonalat, kört és még sok mást.
 
 ### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
- Az Aspose.Words for .NET letölthető innen[itt](https://releases.aspose.com/words/net/) és kövesse a mellékelt telepítési utasításokat.
+ Az Aspose.Words for .NET letölthető innen[itt](https://releases.aspose.com/words/net/)és kövesse a mellékelt telepítési utasításokat.
 
 ### Testreszabhatom a diagramjaim megjelenését?
 Igen, az Aspose.Words for .NET lehetővé teszi a diagramok széles körű testreszabását, beleértve a színeket, a betűtípusokat és a tengelytulajdonságokat.

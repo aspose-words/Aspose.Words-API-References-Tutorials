@@ -1,8 +1,8 @@
 ---
-title: Inhoud extraheren uit documenten in Aspose.Words voor Java
+title: Inhoud uit documenten extraheren in Aspose.Words voor Java
 linktitle: Inhoud uit documenten extraheren
-second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer hoe u eenvoudig inhoud uit documenten kunt extraheren met Aspose.Words voor Java. Onze stapsgewijze handleiding en codevoorbeelden vereenvoudigen het proces.
+second_title: Aspose.Words Java Documentverwerkings-API
+description: Leer hoe u eenvoudig inhoud uit documenten kunt halen met Aspose.Words voor Java. Onze stapsgewijze handleiding en codevoorbeelden vereenvoudigen het proces.
 type: docs
 weight: 13
 url: /nl/java/document-manipulation/extracting-content-from-documents/
@@ -10,15 +10,15 @@ url: /nl/java/document-manipulation/extracting-content-from-documents/
 
 ## Inleiding tot het extraheren van inhoud uit documenten in Aspose.Words voor Java
 
-In de wereld van documentverwerking is het extraheren van inhoud uit documenten een veel voorkomende vereiste. Of u nu tekst, tabellen, afbeeldingen of specifieke documentelementen moet extraheren, Aspose.Words voor Java biedt krachtige hulpmiddelen om deze taak een fluitje van een cent te maken. In deze uitgebreide handleiding leiden we u door het proces van het extraheren van inhoud uit documenten met behulp van Aspose.Words voor Java. 
+In de wereld van documentverwerking is het extraheren van inhoud uit documenten een veelvoorkomende vereiste. Of u nu tekst, tabellen, afbeeldingen of specifieke documentelementen wilt extraheren, Aspose.Words voor Java biedt krachtige tools om deze taak een fluitje van een cent te maken. In deze uitgebreide gids leiden we u door het proces van het extraheren van inhoud uit documenten met behulp van Aspose.Words voor Java. 
 
 ## Vereisten
 
-Voordat we ingaan op het extractieproces, moet je ervoor zorgen dat je aan de volgende vereisten voldoet:
+Voordat we beginnen met het extractieproces, moet u ervoor zorgen dat u aan de volgende voorwaarden voldoet:
 
-1.  Aspose.Words voor Java: Aspose.Words voor Java moet geïnstalleerd en ingesteld zijn in uw Java-ontwikkelomgeving. Je kunt het downloaden van[hier](https://releases.aspose.com/words/java/).
+1.  Aspose.Words voor Java: U moet Aspose.Words voor Java geïnstalleerd en ingesteld hebben in uw Java-ontwikkelomgeving. U kunt het downloaden van[hier](https://releases.aspose.com/words/java/).
 
-2. Een document om inhoud uit te extraheren: Voor deze handleiding gebruiken we een voorbeelddocument met de naam "Extract content.docx." Zorg ervoor dat u een soortgelijk document gereed heeft om uit te pakken.
+2. Een document om inhoud uit te extraheren: voor deze handleiding gebruiken we een voorbeelddocument met de naam 'Inhoud extraheren.docx'. Zorg ervoor dat u een soortgelijk document klaar hebt staan om te extraheren.
 
 ## Inhoud extraheren tussen knooppunten op blokniveau
 
@@ -93,7 +93,7 @@ Document dstDoc = ExtractContentHelper.generateDocument(doc, extractedNodes);
 dstDoc.save("Your Directory Path" + "ExtractContent.ExtractContentBetweenParagraphStyles.docx");
 ```
 
-## Inhoud extraheren tussen uitvoeringen
+## Inhoud extraheren tussen runs
 
 ```java
 // Java-codevoorbeeld voor het extraheren van inhoud tussen uitvoeringen
@@ -109,7 +109,7 @@ System.out.println(node.toString(SaveFormat.TEXT));
 ## Inhoud extraheren met DocumentVisitor
 
 ```java
-// Java-codevoorbeeld voor het extraheren van inhoud met DocumentVisitor
+// Java-codevoorbeeld voor het extraheren van inhoud met behulp van DocumentVisitor
 Document doc = new Document("Your Directory Path" + "Absolute position tab.docx");
 MyDocToTxtWriter myConverter = new MyDocToTxtWriter();
 doc.accept(myConverter);
@@ -213,7 +213,7 @@ System.out.println("\nContents of the cell: ");
 System.out.println(table.getLastRow().getLastCell().getRange().getText());
 ```
 
-## Afbeeldingen extraheren naar bestanden
+## Afbeeldingen naar bestanden extraheren
 
 ```java
 // Java-codevoorbeeld voor het extraheren van afbeeldingen naar bestanden
@@ -232,26 +232,26 @@ for (Shape shape : (Iterable<Shape>) shapes) {
 
 ## Conclusie
 
-Gefeliciteerd! Je hebt geleerd hoe je inhoud uit documenten kunt extraheren met Aspose.Words voor Java. Deze gids behandelde verschillende extractietechnieken, waaronder inhoud tussen knooppunten op blokniveau, bladwijzers, commentaarbereiken, alinea's en meer. U bent nu uitgerust om de extractie van documentinhoud efficiënt uit te voeren in uw Java-toepassingen.
+Gefeliciteerd! U hebt geleerd hoe u inhoud uit documenten kunt extraheren met Aspose.Words voor Java. Deze gids behandelde verschillende extractietechnieken, waaronder inhoud tussen blokniveauknooppunten, bladwijzers, opmerkingenreeksen, alinea's en meer. U bent nu uitgerust om documentinhoudsextractie efficiënt af te handelen in uw Java-toepassingen.
 
 ## Veelgestelde vragen
 
-### Hoe extraheer ik inhoud uit specifieke documentsecties?
+### Hoe kan ik inhoud uit specifieke secties van een document halen?
 
-Om inhoud uit specifieke documentsecties te extraheren, kunt u de begin- en eindpunten van de secties identificeren en de juiste Aspose.Words voor Java-methoden gebruiken om inhoud daartussen te extraheren.
+Om inhoud uit specifieke documentsecties te extraheren, kunt u de begin- en eindpunten van de secties identificeren en de juiste Aspose.Words voor Java-methoden gebruiken om inhoud tussen de secties te extraheren.
 
-### Kan ik inhoud extraheren uit met een wachtwoord beveiligde documenten?
+### Kan ik inhoud uit wachtwoordbeveiligde documenten halen?
 
-Ja, Aspose.Words voor Java biedt functionaliteit om inhoud uit met een wachtwoord beveiligde documenten te extraheren. U kunt het wachtwoord opgeven wanneer u het document opent met behulp van de`Document` klasse constructor.
+Ja, Aspose.Words voor Java biedt functionaliteit om inhoud uit wachtwoordbeveiligde documenten te halen. U kunt het wachtwoord opgeven bij het openen van het document met behulp van de`Document` klasseconstructor.
 
 ### Hoe kan ik inhoud extraheren en opslaan in verschillende formaten, zoals platte tekst of HTML?
 
- U kunt inhoud uit een document extraheren en in verschillende formaten opslaan met Aspose.Words voor Java. Nadat u de inhoud hebt geëxtraheerd, kunt u de`Document` class-methoden om het op te slaan in formaten zoals platte tekst, HTML of andere.
+ U kunt inhoud uit een document halen en opslaan in verschillende formaten met Aspose.Words voor Java. Nadat u de inhoud hebt uitgepakt, kunt u de`Document` klassemethoden om het op te slaan in formaten zoals platte tekst, HTML of andere.
 
-### Is er een manier om inhoud uit specifieke documentelementen, zoals tabellen of afbeeldingen, te extraheren?
+### Is er een manier om inhoud uit specifieke documentelementen te halen, zoals tabellen of afbeeldingen?
 
-Ja, u kunt inhoud extraheren uit specifieke documentelementen, zoals tabellen of afbeeldingen, met behulp van Aspose.Words voor Java. Identificeer de elementen die u wilt extraheren en gebruik vervolgens de juiste methoden om hun inhoud te extraheren.
+Ja, u kunt inhoud uit specifieke documentelementen, zoals tabellen of afbeeldingen, extraheren met Aspose.Words voor Java. Identificeer de elementen die u wilt extraheren en gebruik vervolgens de juiste methoden om hun inhoud te extraheren.
 
-### Hoe kan ik het contentextractieproces in mijn Java-applicatie automatiseren?
+### Hoe kan ik het proces van inhoudsextractie in mijn Java-applicatie automatiseren?
 
-Om het contentextractieproces in uw Java-toepassing te automatiseren, kunt u aangepaste code maken op basis van de technieken die in deze handleiding worden beschreven. U kunt ook logica implementeren om meerdere documenten te doorlopen en indien nodig inhoud te extraheren.
+Om het proces van content extractie in uw Java-applicatie te automatiseren, kunt u aangepaste code maken op basis van de technieken die in deze handleiding worden beschreven. U kunt ook logica implementeren om door meerdere documenten te itereren en content te extraheren indien nodig.

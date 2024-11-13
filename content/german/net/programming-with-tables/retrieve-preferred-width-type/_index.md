@@ -118,4 +118,4 @@ Dieses Tutorial behandelt speziell Word-Dokumente. Für andere Dokumenttypen mü
 
 ### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
 
- Ja, Aspose.Words für .NET ist ein lizenziertes Produkt. Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/) oder eine vorläufige Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
+ Ja, Aspose.Words für .NET ist ein lizenziertes Produkt. Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/) oder eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).

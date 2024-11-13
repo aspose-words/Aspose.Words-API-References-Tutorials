@@ -32,7 +32,7 @@ Um Aspose.Words für Java zu verwenden, müssen Sie die Aspose.Words JAR-Datei i
 
 Sobald Sie Aspose.Words für Java eingerichtet haben, können Sie mit dem Laden und Bearbeiten von Dokumenten beginnen. Aspose.Words unterstützt verschiedene Dokumentformate wie DOCX, DOC, RTF, HTML und mehr. Sie können diese Dokumente in den Speicher laden und programmgesteuert auf ihren Inhalt zugreifen.
 
-### Laden verschiedener Dokumentformate
+### Laden unterschiedlicher Dokumentformate
 
 Um ein Dokument zu laden, verwenden Sie die von Aspose.Words bereitgestellte Document-Klasse. Mit der Document-Klasse können Sie Dokumente aus Streams, Dateien oder URLs öffnen.
 
@@ -45,7 +45,7 @@ InputStream stream = new FileInputStream("path/to/document.docx");
 Document doc = new Document(stream);
 
 // Laden eines Dokuments von einer URL
-Document doc = new Document("https://example.com/document.docx");
+Document doc = new Document("https://beispiel.com/document.docx");
 ```
 
 ### Auf Dokumentinhalte zugreifen
@@ -211,13 +211,13 @@ doc.save("output.png", saveOptions);
 
 ## Abschluss
 
-Die Beherrschung der Dokumentdarstellung ist für die Erstellung robuster Anwendungen, die Dokumente effizient verarbeiten, unerlässlich. Mit Aspose.Words für Java steht Ihnen ein leistungsstarker Werkzeugsatz zur Verfügung, mit dem Sie Dokumente nahtlos bearbeiten und darstellen können. In diesem Tutorial haben wir die Grundlagen der Dokumentdarstellung, das Arbeiten mit Dokumentlayouts, das Rendern in verschiedene Ausgabeformate und erweiterte Rendering-Techniken behandelt. Durch die Verwendung der umfangreichen API von Aspose.Words für Java können Sie ansprechende dokumentenzentrierte Anwendungen erstellen, die ein hervorragendes Benutzererlebnis bieten.
+Die Beherrschung der Dokumentdarstellung ist für die Erstellung robuster Anwendungen, die Dokumente effizient verarbeiten, unerlässlich. Mit Aspose.Words für Java steht Ihnen ein leistungsstarkes Toolset zur Verfügung, mit dem Sie Dokumente nahtlos bearbeiten und darstellen können. In diesem Tutorial haben wir die Grundlagen der Dokumentdarstellung, das Arbeiten mit Dokumentlayouts, das Rendern in verschiedene Ausgabeformate und erweiterte Rendering-Techniken behandelt. Durch die Verwendung der umfangreichen API von Aspose.Words für Java können Sie ansprechende dokumentenzentrierte Anwendungen erstellen, die ein hervorragendes Benutzererlebnis bieten.
 
 ## FAQs
 
 ### Was ist der Unterschied zwischen Dokument-Rendering und Dokumentverarbeitung?
 
-Bei der Dokumentwiedergabe geht es darum, elektronische Dokumente in eine visuelle Darstellung umzuwandeln, damit Benutzer sie ansehen, bearbeiten oder drucken können, während die Dokumentverarbeitung Aufgaben wie Serienbrieferstellung, Konvertierung und Schutz beinhaltet.
+Bei der Dokumentwiedergabe geht es darum, elektronische Dokumente in eine visuelle Darstellung umzuwandeln, damit Benutzer sie anzeigen, bearbeiten oder drucken können, während die Dokumentverarbeitung Aufgaben wie Serienbrieferstellung, Konvertierung und Schutz beinhaltet.
 
 ### Ist Aspose.Words mit allen Java-Versionen kompatibel?
 

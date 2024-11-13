@@ -41,7 +41,7 @@ using Aspose.Words.Drawing;
 这`DocumentBuilder`类可帮助您在文档中添加和格式化内容。通过创建`DocumentBuilder`对象，您正在设置一个工具来插入和操作文本。
 
 ```csharp
-//创建一个 DocumentBuilder 实例来处理文档。
+//创建一个 DocumentBuilder 实例来处理该文档。
 DocumentBuilder builder = new DocumentBuilder();
 ```
 

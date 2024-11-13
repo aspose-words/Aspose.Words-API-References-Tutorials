@@ -33,7 +33,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Styla ditt dokument
 
-I det här avsnittet kommer vi att diskutera hur du tillämpar stilar på ditt Markdown-dokument. Vi kommer att täcka rubriker, betoning, listor och mer.
+det här avsnittet kommer vi att diskutera hur du tillämpar stilar på ditt Markdown-dokument. Vi kommer att täcka rubriker, betoning, listor och mer.
 
 ### Rubriker
 
@@ -115,10 +115,10 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 string outPath = "Your Output Directory";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-//Ange stilen "Rubrik 1" för stycket.
+// Ange stilen "Rubrik 1" för stycket.
 builder.getParagraphFormat().setStyleName("Heading 1");
 builder.writeln("Heading 1");
-// Återställ stilar från föregående stycke för att inte kombinera stilar mellan stycken.
+//Återställ stilar från föregående stycke för att inte kombinera stilar mellan stycken.
 builder.getParagraphFormat().setStyleName("Normal");
 // Infoga horisontell regel.
 builder.insertHorizontalRule();
@@ -167,7 +167,7 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 
 ## Slutsats
 
-den här handledningen har vi täckt grunderna för att använda Markdown i Aspose.Words för Java. Du har lärt dig hur du ställer in din miljö, tillämpar stilar, lägger till tabeller och sparar ditt Markdown-dokument. Med denna kunskap kan du börja använda Aspose.Words för Java för att generera Markdown-dokument effektivt.
+I den här handledningen har vi täckt grunderna för att använda Markdown i Aspose.Words för Java. Du har lärt dig hur du ställer in din miljö, tillämpar stilar, lägger till tabeller och sparar ditt Markdown-dokument. Med denna kunskap kan du börja använda Aspose.Words för Java för att generera Markdown-dokument effektivt.
 
 ### Vanliga frågor
 

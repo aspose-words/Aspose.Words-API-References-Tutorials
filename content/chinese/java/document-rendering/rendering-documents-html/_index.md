@@ -76,7 +76,7 @@ public class DocumentRenderer {
 
 ## 常见问题解答
 
-### 如何下载 Aspose.Words for Java？
+### 如何下载适用于 Java 的 Aspose.Words？
 
 您可以从以下网站下载 Aspose.Words for Java：[Aspose.Words for Java 下载](https://releases.aspose.com/words/java/).
 

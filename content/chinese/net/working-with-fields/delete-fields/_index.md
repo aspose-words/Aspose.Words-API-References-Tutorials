@@ -2,7 +2,7 @@
 title: 删除字段
 linktitle: 删除字段
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 以编程方式从 Word 文档中删除字段。带有代码示例的清晰分步指南。
+description: 了解如何使用 Aspose.Words for .NET 以编程方式从 Word 文档中删除字段。带有代码示例的清晰、分步指南。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/delete-fields/
@@ -28,7 +28,7 @@ url: /zh/net/working-with-fields/delete-fields/
 
 ## 导入命名空间
 
-在开始实施之前，请确保在 C# 代码文件中包含必要的命名空间：
+在开始实现之前，请确保在 C# 代码文件中包含必要的命名空间：
 
 ```csharp
 using Aspose.Words;

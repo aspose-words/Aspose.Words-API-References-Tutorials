@@ -2,78 +2,78 @@
 title: Insertar imagen flotante en un documento de Word
 linktitle: Insertar imagen flotante en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo insertar una imagen flotante en un documento de Word usando Aspose.Words para .NET con esta guía detallada paso a paso. Perfecto para mejorar sus documentos.
+description: Aprenda a insertar una imagen flotante en un documento de Word con Aspose.Words para .NET con esta guía detallada paso a paso. Perfecta para mejorar sus documentos.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-floating-image/
 ---
 ## Introducción
 
-Imagínese crear un informe o propuesta impresionante donde las imágenes estén perfectamente ubicadas para complementar su texto. Con Aspose.Words para .NET, puede lograrlo sin esfuerzo. Esta biblioteca proporciona potentes funciones para la manipulación de documentos, lo que la convierte en una solución de referencia para los desarrolladores. En este tutorial, nos centraremos en insertar una imagen flotante usando la clase DocumentBuilder. Si es un desarrollador experimentado o recién está comenzando, esta guía lo guiará en cada paso.
+Imagina crear un informe o una propuesta sorprendentes en los que las imágenes estén perfectamente posicionadas para complementar el texto. Con Aspose.Words para .NET, puedes lograrlo sin esfuerzo. Esta biblioteca ofrece potentes funciones para la manipulación de documentos, lo que la convierte en una solución ideal para los desarrolladores. En este tutorial, nos centraremos en insertar una imagen flotante mediante la clase DocumentBuilder. Tanto si eres un desarrollador experimentado como si recién estás empezando, esta guía te guiará paso a paso.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de sumergirnos, asegurémonos de que tiene todo lo que necesita para comenzar:
+Antes de comenzar, asegurémonos de que tienes todo lo que necesitas para comenzar:
 
-1.  Aspose.Words para .NET: puede descargar la biblioteca desde[Página de lanzamientos de Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: Puede descargar la biblioteca desde[Página de lanzamiento de Aspose](https://releases.aspose.com/words/net/).
 2. Visual Studio: cualquier versión que admita el desarrollo .NET.
 3. Conocimientos básicos de C#: será útil comprender los conceptos básicos de la programación en C#.
 4. Archivo de imagen: un archivo de imagen que desea insertar, como un logotipo o una imagen.
 
 ## Importar espacios de nombres
 
-Para usar Aspose.Words en su proyecto, necesita importar los espacios de nombres necesarios. Esto se hace agregando las siguientes líneas en la parte superior de su archivo C#:
+Para utilizar Aspose.Words en su proyecto, debe importar los espacios de nombres necesarios. Para ello, agregue las siguientes líneas en la parte superior de su archivo C#:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Con estos requisitos previos y espacios de nombres implementados, estamos listos para comenzar nuestro tutorial.
+Con estos requisitos previos y espacios de nombres establecidos, estamos listos para comenzar nuestro tutorial.
 
-Dividamos el proceso de insertar una imagen flotante en un documento de Word en pasos manejables. Cada paso se explicará en detalle para garantizar que pueda seguirlo sin contratiempos.
+Vamos a dividir el proceso de inserción de una imagen flotante en un documento de Word en pasos sencillos. Se explicará cada paso en detalle para garantizar que pueda seguirlo sin problemas.
 
-## Paso 1: configura tu proyecto
+## Paso 1: Configura tu proyecto
 
-Primero, cree un nuevo proyecto de C# en Visual Studio. Puede elegir una aplicación de consola para simplificar.
+Primero, crea un nuevo proyecto de C# en Visual Studio. Puedes elegir una aplicación de consola para simplificar el proceso.
 
 1. Abra Visual Studio y cree un nuevo proyecto.
 2. Seleccione "Aplicación de consola (.NET Core)" y haga clic en "Siguiente".
-3. Nombra tu proyecto y elige una ubicación para guardarlo. Haga clic en "Crear".
-4. Instale Aspose.Words para .NET a través del Administrador de paquetes NuGet. Haga clic derecho en su proyecto en el Explorador de soluciones, seleccione "Administrar paquetes NuGet" y busque "Aspose.Words". Instale la última versión.
+3. Ponle un nombre a tu proyecto y elige una ubicación para guardarlo. Haz clic en "Crear".
+4. Instale Aspose.Words para .NET mediante el Administrador de paquetes NuGet. Haga clic con el botón derecho en su proyecto en el Explorador de soluciones, seleccione "Administrar paquetes NuGet" y busque "Aspose.Words". Instale la versión más reciente.
 
-## Paso 2: Inicializar documento y DocumentBuilder
+## Paso 2: Inicializar el documento y DocumentBuilder
 
-Ahora que su proyecto está configurado, inicialicemos los objetos Documento y DocumentBuilder.
+Ahora que su proyecto está configurado, inicialicemos los objetos Document y DocumentBuilder.
 
-1.  Crear una nueva instancia del`Document` clase:
+1.  Crear una nueva instancia de la`Document` clase:
 
 ```csharp
 Document doc = new Document();
 ```
 
-2. Inicialice un objeto DocumentBuilder:
+2. Inicializar un objeto DocumentBuilder:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- El`Document` El objeto representa el documento de Word y el`DocumentBuilder` ayuda a agregarle contenido.
+El`Document` El objeto representa el documento de Word y el`DocumentBuilder` Ayuda a agregarle contenido.
 
-## Paso 3: definir la ruta de la imagen
+## Paso 3: Definir la ruta de la imagen
 
-A continuación, especifique la ruta a su archivo de imagen. Asegúrese de que su imagen sea accesible desde el directorio de su proyecto.
+A continuación, especifique la ruta del archivo de imagen. Asegúrese de que se pueda acceder a la imagen desde el directorio del proyecto.
 
-Defina el directorio de imágenes y el nombre del archivo de imagen:
+Defina el directorio de la imagen y el nombre del archivo de la imagen:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 string imagePath = dataDir + "Transparent background logo.png";
 ```
 
- Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde está almacenada su imagen.
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde se almacena tu imagen.
 
-## Paso 4: inserta la imagen flotante
+## Paso 4: Insertar la imagen flotante
 
 Con todo configurado, insertemos la imagen flotante en el documento.
 
@@ -91,18 +91,18 @@ builder.InsertImage(imagePath,
 ```
 
 Esto es lo que significa cada parámetro:
-- `imagePath`La ruta a su archivo de imagen.
-- `RelativeHorizontalPosition.Margin`: La posición horizontal relativa al margen.
-- `100`: El desplazamiento horizontal desde el margen (en puntos).
-- `RelativeVerticalPosition.Margin`: La posición vertical relativa al margen.
-- `100`: El desplazamiento vertical desde el margen (en puntos).
-- `200`: El ancho de la imagen (en puntos).
-- `100`: La altura de la imagen (en puntos).
-- `WrapType.Square`: El estilo de ajuste del texto alrededor de la imagen.
+- `imagePath`:La ruta a su archivo de imagen.
+- `RelativeHorizontalPosition.Margin`:La posición horizontal relativa al margen.
+- `100`:El desplazamiento horizontal desde el margen (en puntos).
+- `RelativeVerticalPosition.Margin`:La posición vertical relativa al margen.
+- `100`:El desplazamiento vertical desde el margen (en puntos).
+- `200`:El ancho de la imagen (en puntos).
+- `100`:La altura de la imagen (en puntos).
+- `WrapType.Square`:El estilo de ajuste del texto alrededor de la imagen.
 
-## Paso 5: guarde el documento
+## Paso 5: Guardar el documento
 
-Finalmente, guarde el documento en la ubicación deseada.
+Por último, guarde el documento en la ubicación deseada.
 
 1. Especifique la ruta del archivo de salida:
 
@@ -110,7 +110,7 @@ Finalmente, guarde el documento en la ubicación deseada.
 string outputPath = dataDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx";
 ```
 
-2. Guarde el documento:
+2. Guardar el documento:
 
 ```csharp
 doc.Save(outputPath);
@@ -120,26 +120,26 @@ doc.Save(outputPath);
 
 ## Conclusión
 
-Insertar una imagen flotante en un documento de Word usando Aspose.Words para .NET es un proceso sencillo cuando se divide en pasos manejables. Siguiendo esta guía, podrá agregar imágenes de aspecto profesional a sus documentos, mejorando su atractivo visual. Aspose.Words proporciona una API sólida que facilita la manipulación de documentos, ya sea que esté trabajando en informes, propuestas o cualquier otro tipo de documento.
+Insertar una imagen flotante en un documento de Word con Aspose.Words para .NET es un proceso sencillo si se divide en pasos manejables. Si sigue esta guía, podrá agregar imágenes de aspecto profesional a sus documentos, mejorando su atractivo visual. Aspose.Words ofrece una API sólida que facilita la manipulación de documentos, ya sea que esté trabajando en informes, propuestas o cualquier otro tipo de documento.
 
 ## Preguntas frecuentes
 
 ### ¿Puedo insertar varias imágenes usando Aspose.Words para .NET?
 
- Sí, puedes insertar varias imágenes repitiendo el`InsertImage` método para cada imagen con los parámetros deseados.
+ Sí, puedes insertar varias imágenes repitiendo las mismas`InsertImage` Método para cada imagen con los parámetros deseados.
 
 ### ¿Cómo cambio la posición de la imagen?
 
  Puedes ajustar el`RelativeHorizontalPosition`, `RelativeVerticalPosition`y parámetros de desplazamiento para posicionar la imagen según sea necesario.
 
-### ¿Qué otros tipos de envoltura están disponibles para imágenes?
+### ¿Qué otros tipos de envolturas están disponibles para las imágenes?
 
- Aspose.Words admite varios tipos de envoltura, como`Inline`, `TopBottom`, `Tight`, `Through`y más. Puede elegir el que mejor se adapte al diseño de su documento.
+ Aspose.Words admite varios tipos de envoltura, como`Inline`, `TopBottom`, `Tight`, `Through`, y más. Puedes elegir el que mejor se adapte al diseño de tu documento.
 
 ### ¿Puedo utilizar diferentes formatos de imagen?
 
 Sí, Aspose.Words admite una amplia gama de formatos de imagen, incluidos JPEG, PNG, BMP y GIF.
 
-### ¿Cómo obtengo una prueba gratuita de Aspose.Words para .NET?
+### ¿Cómo puedo obtener una prueba gratuita de Aspose.Words para .NET?
 
- Puede obtener una prueba gratuita desde el[Aspose página de prueba gratuita](https://releases.aspose.com/).
+ Puede obtener una prueba gratuita desde[Página de prueba gratuita de Aspose](https://releases.aspose.com/).

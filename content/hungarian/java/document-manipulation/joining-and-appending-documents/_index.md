@@ -140,4 +140,4 @@ Készlet`importFormatOptions.setIgnoreTextBoxes(false)` szövegdobozok beilleszt
 
 ### Mi a teendő, ha szeretném a fejléceket és a lábléceket összekapcsolni/leválasztani a dokumentumok között?
 
- A fejléceket és lábléceket összekapcsolhatja a következővel`linkToPrevious(true)` vagy megszünteti a kapcsolatukat`linkToPrevious(false)` szükség szerint.
+ A fejléceket és lábléceket összekapcsolhatja a következővel`linkToPrevious(true)` vagy leválasztja őket`linkToPrevious(false)` szükség szerint.

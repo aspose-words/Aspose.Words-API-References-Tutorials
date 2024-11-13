@@ -210,4 +210,4 @@ Ebben az oktatóanyagban az Aspose.Words for Java betöltési beállításaival 
 
 ###  Mi a célja a`setTempFolder` method in Load Options?
 
- A`setTempFolder`metódus lehetővé teszi annak a mappának a megadását, ahol a dokumentumfeldolgozás során ideiglenes fájlokat tárolnak.
+A`setTempFolder`metódus lehetővé teszi annak a mappának a megadását, ahol a dokumentumfeldolgozás során ideiglenes fájlokat tárolnak.

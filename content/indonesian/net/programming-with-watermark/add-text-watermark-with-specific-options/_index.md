@@ -2,26 +2,26 @@
 title: Tambahkan Tanda Air Teks Dengan Opsi Tertentu
 linktitle: Tambahkan Tanda Air Teks Dengan Opsi Tertentu
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menambahkan tanda air teks dengan opsi spesifik ke dokumen Word Anda menggunakan Aspose.Words untuk .NET. Sesuaikan font, ukuran, warna, dan tata letak dengan mudah.
+description: Pelajari cara menambahkan tanda air teks dengan opsi tertentu ke dokumen Word Anda menggunakan Aspose.Words untuk .NET. Sesuaikan font, ukuran, warna, dan tata letak dengan mudah.
 type: docs
 weight: 10
 url: /id/net/programming-with-watermark/add-text-watermark-with-specific-options/
 ---
 ## Perkenalan
 
-Tanda air dapat menjadi tambahan gaya dan fungsional pada dokumen Word Anda, yang berfungsi mulai dari menandai dokumen sebagai rahasia hingga menambahkan sentuhan pribadi. Dalam tutorial ini, kita akan mempelajari cara menambahkan tanda air teks ke dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan mendalami opsi spesifik yang dapat Anda konfigurasi, seperti jenis font, ukuran font, warna, dan tata letak. Pada akhirnya, Anda akan dapat menyesuaikan tanda air dokumen agar sesuai dengan kebutuhan Anda. Jadi, ambil editor kode Anda, dan mari kita mulai!
+Tanda air dapat menjadi tambahan yang bergaya dan fungsional pada dokumen Word Anda, yang memiliki berbagai tujuan, mulai dari menandai dokumen sebagai rahasia hingga menambahkan sentuhan yang dipersonalisasi. Dalam tutorial ini, kita akan menjelajahi cara menambahkan tanda air teks ke dokumen Word menggunakan Aspose.Words untuk .NET. Kita akan membahas opsi spesifik yang dapat Anda konfigurasikan, seperti jenis font, ukuran font, warna, dan tata letak. Pada akhirnya, Anda akan dapat menyesuaikan tanda air dokumen Anda agar sesuai dengan kebutuhan Anda. Jadi, ambil editor kode Anda, dan mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki hal berikut:
+Sebelum kita mulai, pastikan Anda telah menyiapkan hal-hal berikut:
 
-1.  Aspose.Words untuk .NET Library: Anda perlu menginstal perpustakaan Aspose.Words. Jika Anda belum melakukannya, Anda dapat mengunduhnya dari[Tautan Unduhan Aspose.Words](https://releases.aspose.com/words/net/).
-2. Pemahaman Dasar C#: Tutorial ini akan menggunakan C# sebagai bahasa pemrogramannya. Pemahaman mendasar tentang sintaksis C# akan sangat membantu.
-3. Lingkungan Pengembangan .NET: Pastikan Anda telah menyiapkan lingkungan pengembangan (seperti Visual Studio) tempat Anda dapat membuat dan menjalankan aplikasi .NET.
+1.  Pustaka Aspose.Words untuk .NET: Anda perlu memasang pustaka Aspose.Words. Jika Anda belum melakukannya, Anda dapat mengunduhnya dari[Tautan Unduhan Aspose.Words](https://releases.aspose.com/words/net/).
+2. Pemahaman Dasar tentang C#: Tutorial ini akan menggunakan C# sebagai bahasa pemrograman. Pemahaman dasar tentang sintaksis C# akan sangat membantu.
+3. Lingkungan Pengembangan .NET: Pastikan Anda telah menyiapkan lingkungan pengembangan (seperti Visual Studio) tempat Anda dapat membuat dan menjalankan aplikasi .NET Anda.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk bekerja dengan Aspose.Words, Anda harus menyertakan namespace yang diperlukan dalam proyek Anda. Inilah yang perlu Anda impor:
+Untuk bekerja dengan Aspose.Words, Anda perlu menyertakan namespace yang diperlukan dalam proyek Anda. Berikut ini yang perlu Anda impor:
 
 ```csharp
 using Aspose.Words;
@@ -31,7 +31,7 @@ using System.Drawing;
 
 ## Langkah 1: Siapkan Dokumen Anda
 
- Pertama, Anda perlu memuat dokumen yang ingin Anda kerjakan. Untuk tutorial ini, kita akan menggunakan contoh dokumen bernama`Document.docx`. Pastikan dokumen ini ada di direktori yang Anda tentukan.
+ Pertama, Anda perlu memuat dokumen yang ingin Anda kerjakan. Untuk tutorial ini, kami akan menggunakan contoh dokumen bernama`Document.docx`Pastikan dokumen ini ada di direktori yang Anda tentukan.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -39,11 +39,11 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Pada langkah ini, Anda menentukan direktori tempat dokumen Anda berada dan memuatnya ke dalam instance`Document` kelas.
+ Pada langkah ini, Anda menentukan direktori tempat dokumen Anda berada dan memuatnya ke dalam contoh`Document` kelas.
 
 ## Langkah 2: Konfigurasikan Opsi Tanda Air
 
-Selanjutnya, konfigurasikan opsi untuk tanda air teks Anda. Anda dapat menyesuaikan berbagai aspek, seperti jenis font, ukuran font, warna, dan tata letak. Mari siapkan opsi ini.
+Selanjutnya, konfigurasikan opsi untuk tanda air teks Anda. Anda dapat menyesuaikan berbagai aspek, seperti jenis font, ukuran font, warna, dan tata letak. Mari kita atur opsi-opsi ini.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()
@@ -56,57 +56,57 @@ TextWatermarkOptions options = new TextWatermarkOptions()
 };
 ```
 
-Inilah yang dilakukan setiap opsi:
-- `FontFamily`: Menentukan font teks tanda air.
-- `FontSize`: Menyetel ukuran teks tanda air.
-- `Color`: Mendefinisikan warna teks tanda air.
-- `Layout`Menentukan orientasi watermark (horizontal atau diagonal).
-- `IsSemitrasparent`: Menyetel apakah tanda air bersifat semi-transparan.
+Berikut ini fungsi masing-masing opsi:
+- `FontFamily`: Menentukan jenis huruf teks tanda air.
+- `FontSize`: Mengatur ukuran teks tanda air.
+- `Color`: Menentukan warna teks tanda air.
+- `Layout`Menentukan orientasi tanda air (horizontal atau diagonal).
+- `IsSemitrasparent`: Mengatur apakah tanda air semi-transparan.
 
 ## Langkah 3: Tambahkan Teks Tanda Air
 
-Sekarang, terapkan tanda air ke dokumen Anda menggunakan opsi yang telah dikonfigurasi sebelumnya. Pada langkah ini, Anda akan menyetel teks tanda air ke "Tes" dan menerapkan opsi yang Anda tentukan.
+Sekarang, terapkan tanda air pada dokumen Anda menggunakan opsi yang telah dikonfigurasi sebelumnya. Pada langkah ini, Anda akan mengatur teks tanda air menjadi "Uji" dan menerapkan opsi yang Anda tentukan.
 
 ```csharp
 doc.Watermark.SetText("Test", options);
 ```
 
-Baris kode ini menambahkan tanda air dengan teks "Tes" ke dokumen, menerapkan opsi yang ditentukan.
+Baris kode ini menambahkan tanda air dengan teks "Uji" ke dokumen, menerapkan opsi yang ditentukan.
 
 ## Langkah 4: Simpan Dokumen
 
-Terakhir, simpan dokumen dengan tanda air baru yang diterapkan. Anda dapat menyimpannya dengan nama baru untuk menghindari penimpaan dokumen asli.
+Terakhir, simpan dokumen dengan tanda air baru yang telah diterapkan. Anda dapat menyimpannya dengan nama baru untuk menghindari penimpaan dokumen asli.
 
 ```csharp
 doc.Save(dataDir + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx");
 ```
 
-Cuplikan kode ini menyimpan dokumen yang dimodifikasi di direktori yang sama dengan nama file baru.
+Potongan kode ini menyimpan dokumen yang dimodifikasi dalam direktori yang sama dengan nama file baru.
 
 ## Kesimpulan
 
-Menambahkan tanda air teks ke dokumen Word Anda menggunakan Aspose.Words untuk .NET adalah proses yang mudah saat Anda membaginya menjadi beberapa langkah yang dapat dikelola. Dengan mengikuti tutorial ini, Anda telah mempelajari cara mengonfigurasi berbagai opsi tanda air, termasuk font, ukuran, warna, tata letak, dan transparansi. Dengan keterampilan ini, kini Anda dapat menyesuaikan dokumen agar lebih memenuhi kebutuhan Anda atau untuk menyertakan informasi penting seperti kerahasiaan atau branding.
+Menambahkan tanda air teks ke dokumen Word Anda menggunakan Aspose.Words for .NET merupakan proses yang mudah jika dipecah menjadi beberapa langkah yang mudah dikelola. Dengan mengikuti tutorial ini, Anda telah mempelajari cara mengonfigurasi berbagai opsi tanda air, termasuk font, ukuran, warna, tata letak, dan transparansi. Dengan keterampilan ini, kini Anda dapat menyesuaikan dokumen Anda agar lebih memenuhi kebutuhan Anda atau menyertakan informasi penting seperti kerahasiaan atau pencitraan merek.
 
- Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, silakan lihat[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) atau kunjungi[Asumsikan Forum Dukungan](https://forum.aspose.com/c/words/8) untuk bantuan lebih lanjut.
+ Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, jangan ragu untuk memeriksa[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) atau kunjungi[Forum Dukungan Aspose](https://forum.aspose.com/c/words/8) untuk bantuan lebih lanjut.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya menggunakan font berbeda untuk tanda air?
+### Bisakah saya menggunakan font yang berbeda untuk tanda air?
 
- Ya, Anda dapat memilih font apa pun yang diinstal pada sistem Anda dengan menentukan`FontFamily` properti di`TextWatermarkOptions`.
+ Ya, Anda dapat memilih font apa pun yang terinstal di sistem Anda dengan menentukan`FontFamily` properti di`TextWatermarkOptions`.
 
 ### Bagaimana cara mengubah warna tanda air?
 
- Anda dapat mengubah warna tanda air dengan mengatur`Color` properti di`TextWatermarkOptions` untuk siapa pun`System.Drawing.Color` nilai.
+ Anda dapat mengubah warna tanda air dengan mengatur`Color` properti di`TextWatermarkOptions` untuk apa pun`System.Drawing.Color` nilai.
 
-### Apakah mungkin menambahkan banyak tanda air ke dokumen?
+### Apakah mungkin untuk menambahkan beberapa tanda air ke sebuah dokumen?
 
 Aspose.Words mendukung penambahan satu tanda air dalam satu waktu. Untuk menambahkan beberapa tanda air, Anda perlu membuat dan menerapkannya secara berurutan.
 
-### Bisakah saya mengatur posisi tanda air?
+### Bisakah saya menyesuaikan posisi tanda air?
 
- Itu`WatermarkLayout`properti menentukan orientasi, namun penyesuaian posisi yang tepat tidak didukung secara langsung. Anda mungkin perlu menggunakan teknik lain untuk penempatan yang tepat.
+Itu`WatermarkLayout`properti menentukan orientasi, tetapi penyesuaian posisi yang tepat tidak didukung secara langsung. Anda mungkin perlu menggunakan teknik lain untuk penempatan yang tepat.
 
-### Bagaimana jika saya memerlukan tanda air semi transparan?
+### Bagaimana jika saya membutuhkan tanda air semi-transparan?
 
- Atur`IsSemitrasparent`properti ke`true` untuk membuat tanda air Anda semi-transparan.
+ Mengatur`IsSemitrasparent`properti untuk`true` untuk membuat tanda air Anda semi-transparan.

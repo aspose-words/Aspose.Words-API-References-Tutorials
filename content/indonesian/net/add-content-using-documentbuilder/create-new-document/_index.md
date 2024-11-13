@@ -8,19 +8,19 @@ weight: 10
 url: /id/net/add-content-using-documentbuilder/create-new-document/
 ---
 ## Perkenalan
-Kami mendalami dunia Aspose.Words untuk .NET, permata perpustakaan untuk semua kebutuhan manipulasi dokumen Anda. Baik Anda membuat laporan dinamis, mengotomatiskan pembuatan dokumen, atau hanya lelah melakukan tugas berulang secara manual, Aspose.Words hadir untuk menghemat waktu. Mari menyingsingkan lengan baju dan mengotori tangan kita dengan membuat dokumen Word baru dari awal menggunakan alat canggih ini.
+Kami menyelami dunia Aspose.Words untuk .NET secara mendalam, pustaka yang luar biasa untuk semua kebutuhan manipulasi dokumen Anda. Baik Anda membuat laporan dinamis, mengotomatiskan pembuatan dokumen, atau sekadar lelah mengerjakan tugas berulang secara manual, Aspose.Words hadir untuk menyelamatkan hari Anda. Mari bekerja keras dan mulai membuat dokumen Word baru dari awal menggunakan alat yang hebat ini.
 
 ## Prasyarat
 
-Sebelum kita masuk ke seluk beluknya, mari pastikan kita memiliki semua yang kita butuhkan:
+Sebelum kita masuk ke inti pembahasan, mari pastikan kita punya semua yang kita butuhkan:
 
-1.  Visual Studio: Taman bermain coding kami. Jika Anda belum memilikinya, silakan unduh dari[Unduhan Visual Studio](https://visualstudio.microsoft.com/downloads/).
-2.  Aspose.Words for .NET: Bintang pertunjukan. Anda dapat mengambilnya dari[Di Sini](https://releases.aspose.com/words/net/).
-3.  .NET Framework: Pastikan Anda memiliki setidaknya .NET Framework 4.0 terinstal. Anda dapat memeriksa dan menginstalnya melalui[Halaman unduhan Microsoft .NET](https://dotnet.microsoft.com/download/dotnet-framework).
+1.  Visual Studio: Tempat bermain coding kami. Jika Anda belum memilikinya, silakan unduh dari[Unduhan Visual Studio](https://visualstudio.microsoft.com/downloads/).
+2.  Aspose.Words untuk .NET: Bintang pertunjukan. Anda dapat mengambilnya dari[Di Sini](https://releases.aspose.com/words/net/).
+3.  .NET Framework: Pastikan Anda telah menginstal setidaknya .NET Framework 4.0. Anda dapat memeriksa dan menginstalnya melalui[Halaman unduhan Microsoft .NET](https://dotnet.microsoft.com/download/dotnet-framework).
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, mari impor namespace yang diperlukan. Bayangkan ruang nama sebagai kotak peralatan tempat kita menyimpan semua peralatan.
+Pertama-tama, mari impor namespace yang diperlukan. Anggap namespace sebagai kotak peralatan tempat kita menyimpan semua peralatan kita.
 
 ```csharp
 using System;
@@ -28,34 +28,34 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Baiklah, mari kita ke bagian yang menyenangkan—membuat dokumen Word!
+Baiklah, mari kita masuk ke bagian yang menyenangkan—membuat dokumen Word sebenarnya!
 
 ## Langkah 1: Menyiapkan Direktori Dokumen
 
-Bayangkan Anda seorang koki yang menyiapkan bahan-bahan sebelum dimasak. Demikian pula, kita perlu mengatur jalur ke direktori dokumen tempat dokumen Word baru kita akan berada.
+Bayangkan Anda adalah seorang koki yang sedang menyiapkan bahan-bahan sebelum memasak. Demikian pula, kita perlu mengatur jalur ke direktori dokumen tempat dokumen Word baru kita akan berada.
 
 ```csharp
 // Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen Anda. Ini adalah basis dokumen Anda.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen. Ini adalah lokasi penyimpanan dokumen Anda.
 
 ## Langkah 2: Membuat Dokumen
 
-Sekarang, mari buat dokumen baru. Anggap saja ini seperti menyiapkan kanvas kosong.
+Sekarang, mari kita buat dokumen baru. Anggap saja ini seperti menyiapkan kanvas kosong.
 
 ```csharp
 Document doc = new Document();
 ```
 
-Kami baru saja membuat dokumen Word kosong. Cukup keren, ya?
+Kami baru saja membuat dokumen Word kosong. Keren, ya?
 
 ## Langkah 3: Menambahkan Konten dengan DocumentBuilder
 
 ### Inisialisasi DocumentBuilder
 
- Selanjutnya, kita perlu menambahkan beberapa konten ke dokumen kita. Untuk ini, kami akan menggunakan`DocumentBuilder`Ibarat pena kita yang menulis di atas kanvas.
+ Selanjutnya, kita perlu menambahkan beberapa konten ke dokumen kita. Untuk ini, kita akan menggunakan`DocumentBuilder`Itu seperti pena kita yang menulis di kanvas.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -63,7 +63,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Tulis Konten
 
-Mari tambahkan ucapan "Halo Dunia!" ke dokumen kami. Ini adalah "sapuan kuas pertama" pada kanvas kosong kita.
+Mari tambahkan "Halo Dunia!" yang ramah pada dokumen kita. Ini adalah "goresan kuas pertama" pada kanvas kosong kita.
 
 ```csharp
 builder.Writeln("Hello World!");
@@ -71,23 +71,23 @@ builder.Writeln("Hello World!");
 
 ## Langkah 4: Menyimpan Dokumen
 
-Terakhir, kita perlu menyelamatkan karya agung kita. Langkah ini seperti membingkai lukisan kita yang sudah jadi dan menggantungnya di dinding.
+Terakhir, kita perlu menyimpan karya agung kita. Langkah ini seperti membingkai lukisan yang sudah jadi dan menggantungnya di dinding.
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-Dan itu dia! Anda baru saja membuat dokumen Word baru menggunakan Aspose.Words untuk .NET.
+Nah, itu dia! Anda baru saja membuat dokumen Word baru menggunakan Aspose.Words for .NET.
 
 ## Kesimpulan
 
-Selamat! Anda telah mengambil langkah pertama Anda ke dunia otomatisasi dokumen dengan Aspose.Words untuk .NET. Kami memulai dari awal, menyiapkan lingkungan kami, membuat dokumen baru, menambahkan beberapa konten, dan menyimpannya. Ini hanyalah puncak gunung es. Dengan Aspose.Words, Anda dapat memanipulasi dokumen dengan cara yang tidak pernah Anda bayangkan—menggabungkan dokumen, menambahkan gambar, membuat tabel, dan banyak lagi.
+Selamat! Anda telah mengambil langkah pertama dalam dunia otomatisasi dokumen dengan Aspose.Words untuk .NET. Kami mulai dari awal, menyiapkan lingkungan, membuat dokumen baru, menambahkan beberapa konten, dan menyimpannya. Ini hanyalah puncak gunung es. Dengan Aspose.Words, Anda dapat memanipulasi dokumen dengan cara yang tidak pernah Anda duga sebelumnya—menggabungkan dokumen, menambahkan gambar, membuat tabel, dan masih banyak lagi.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya menambahkan gambar ke dokumen Word saya menggunakan Aspose.Words untuk .NET?
+### Dapatkah saya menambahkan gambar ke dokumen Word saya menggunakan Aspose.Words untuk .NET?
 
-Sangat! Anda dapat menambahkan gambar, tabel, header, footer, dan lainnya. Aspose.Words adalah perpustakaan otomatisasi dokumen lengkap.
+Tentu saja! Anda dapat menambahkan gambar, tabel, header, footer, dan banyak lagi. Aspose.Words adalah pustaka otomatisasi dokumen yang lengkap.
 
 ### Apakah Aspose.Words untuk .NET kompatibel dengan .NET Core?
 
@@ -103,4 +103,4 @@ Anda dapat membuat dan memanipulasi DOC, DOCX, PDF, HTML, dan banyak format lain
 
 ### Di mana saya dapat menemukan lebih banyak dokumentasi dan contoh?
 
- Lihat[Aspose.Words untuk Dokumentasi .NET](https://reference.aspose.com/words/net/) untuk lebih banyak contoh dan panduan terperinci.
+ Lihat di sini[Dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/) untuk contoh lebih lanjut dan panduan terperinci.

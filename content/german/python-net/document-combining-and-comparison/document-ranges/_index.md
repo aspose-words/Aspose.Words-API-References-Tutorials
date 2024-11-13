@@ -1,7 +1,7 @@
 ---
 title: Navigieren in Dokumentbereichen zur präzisen Bearbeitung
 linktitle: Navigieren in Dokumentbereichen zur präzisen Bearbeitung
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Dokumentbereiche präzise navigieren und bearbeiten. Schritt-für-Schritt-Anleitung mit Quellcode zur effizienten Inhaltsbearbeitung.
 type: docs
 weight: 12
@@ -75,7 +75,7 @@ doc.range.replace("old_text", "new_text", False, False)
 
 ## Formatierung ändern
 
-Zur präzisen Bearbeitung gehört die Anpassung der Formatierung. Durch die Navigation in Formatierungselementen können wir ein einheitliches Erscheinungsbild beibehalten:
+Präzises Bearbeiten beinhaltet das Anpassen der Formatierung. Durch das Navigieren in Formatierungselementen können wir ein einheitliches Erscheinungsbild beibehalten:
 
 ```python
 for run in doc.get_child_nodes(NodeType.RUN, True):

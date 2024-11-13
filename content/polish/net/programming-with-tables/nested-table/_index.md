@@ -1,38 +1,38 @@
 ---
-title: Zagnieżdżony stół
-linktitle: Zagnieżdżony stół
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak tworzyć zagnieżdżone tabele w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z naszego przewodnika. Idealny do programowego generowania złożonych układów dokumentów.
+title: Zagnieżdżona tabela
+linktitle: Zagnieżdżona tabela
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak tworzyć zagnieżdżone tabele w dokumentach Worda przy użyciu Aspose.Words dla .NET z naszym przewodnikiem. Idealne do generowania złożonych układów dokumentów programowo.
 type: docs
 weight: 10
 url: /pl/net/programming-with-tables/nested-table/
 ---
 ## Wstęp
 
-Czy kiedykolwiek potrzebowałeś programowo utworzyć zagnieżdżoną tabelę w dokumencie programu Word? Niezależnie od tego, czy generujesz raporty, faktury, czy jakikolwiek inny dokument wymagający szczegółowej struktury tabelarycznej, Aspose.Words dla .NET może być Twoim najlepszym przyjacielem. W tym samouczku zagłębimy się w proces tworzenia zagnieżdżonych tabel w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Omówimy wszystko, od wymagań wstępnych po ostateczną implementację kodu. Więc zaczynajmy!
+Czy kiedykolwiek potrzebowałeś programowo utworzyć zagnieżdżoną tabelę w dokumencie Word? Niezależnie od tego, czy generujesz raporty, faktury czy jakikolwiek dokument, który wymaga szczegółowej struktury tabelarycznej, Aspose.Words dla .NET może być Twoim najlepszym przyjacielem. W tym samouczku zagłębimy się w proces tworzenia zagnieżdżonych tabel w dokumentach Word przy użyciu Aspose.Words dla .NET. Omówimy wszystko, od wymagań wstępnych po ostateczną implementację kodu. Więc zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziemy do kodu, potrzebujemy kilku rzeczy:
+Zanim przejdziemy do kodu, jest kilka rzeczy, których będziesz potrzebować:
 
--  Aspose.Words dla .NET: Możesz go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne: Visual Studio lub dowolne inne IDE C#.
-- Podstawowa znajomość języka C#: Zrozumienie składni i pojęć języka C#.
+-  Aspose.Words dla .NET: Można go pobrać ze strony[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Visual Studio lub inne środowisko IDE C#.
+- Podstawowa wiedza o języku C#: zrozumienie składni i pojęć języka C#.
 
-Przed kontynuowaniem upewnij się, że masz je skonfigurowane.
+Upewnij się, że wszystko jest skonfigurowane zanim przejdziesz dalej.
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw. Te przestrzenie nazw pozwolą nam uzyskać dostęp do klas i metod wymaganych do pracy z dokumentami Word.
+Najpierw zaimportujmy niezbędne przestrzenie nazw. Te przestrzenie nazw pozwolą nam uzyskać dostęp do klas i metod wymaganych do pracy z dokumentami Word.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
+## Krok 1: Zainicjuj dokument i DocumentBuilder
 
- Na początek utworzymy nowy dokument Word i zainicjujemy plik`DocumentBuilder` obiekt, który pomoże nam skonstruować tabelę.
+ Na początek utworzymy nowy dokument Word i zainicjujemy go`DocumentBuilder` obiekt, który pomoże nam skonstruować tabelę.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -42,9 +42,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Utwórz stół zewnętrzny
+## Krok 2: Utwórz tabelę zewnętrzną
 
-Teraz utwórzmy tabelę zewnętrzną. Zaczniemy od wstawienia pierwszej komórki i dodania do niej zawartości.
+Teraz utwórzmy zewnętrzną tabelę. Zaczniemy od wstawienia pierwszej komórki i dodania do niej treści.
 
 ### Krok 2.1: Wstaw pierwszą komórkę tabeli zewnętrznej
 
@@ -62,17 +62,17 @@ builder.InsertCell();
 builder.Writeln("Outer Table Cell 2");
 ```
 
-### Krok 2.3: Zakończ stół zewnętrzny
+### Krok 2.3: Zakończ tabelę zewnętrzną
 
-Zakończenie tabeli w tym miejscu jest kluczowe, ponieważ pozwala rozpocząć zagnieżdżoną tabelę w pierwszej komórce.
+Zakończenie tabeli w tym miejscu jest kluczowe, ponieważ pozwala nam rozpocząć zagnieżdżoną tabelę w pierwszej komórce.
 
 ```csharp
 builder.EndTable();
 ```
 
-## Krok 3: Utwórz stół wewnętrzny
+## Krok 3: Utwórz tabelę wewnętrzną
 
-Aby utworzyć tabelę zagnieżdżoną, musimy przesunąć kursor do pierwszej komórki tabeli zewnętrznej, a następnie rozpocząć budowanie tabeli wewnętrznej.
+Aby utworzyć tabelę zagnieżdżoną, należy przenieść kursor do pierwszej komórki tabeli zewnętrznej, a następnie rozpocząć tworzenie tabeli wewnętrznej.
 
 ### Krok 3.1: Przejdź do pierwszej komórki tabeli zewnętrznej
 
@@ -98,9 +98,9 @@ builder.InsertCell();
 builder.Writeln("Inner Table Cell 2");
 ```
 
-### Krok 3.4: Zakończ stół wewnętrzny
+### Krok 3.4: Zakończ tabelę wewnętrzną
 
-Kończymy zakończeniem wewnętrznego stołu.
+Na koniec zamykamy tabelę wewnętrzną.
 
 ```csharp
 builder.EndTable();
@@ -108,7 +108,7 @@ builder.EndTable();
 
 ## Krok 4: Zapisz dokument
 
-Ostatnim krokiem jest zapisanie dokumentu we wskazanym katalogu.
+Ostatnim krokiem jest zapisanie dokumentu w wybranym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
@@ -116,17 +116,17 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 
 ## Wniosek
 
-I masz to! Pomyślnie utworzyłeś zagnieżdżoną tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że niezwykle łatwo jest programowo manipulować dokumentami programu Word. Niezależnie od tego, czy generujesz złożone raporty, czy proste tabele, Aspose.Words dla .NET Ci pomoże.
+I masz! Udało Ci się utworzyć zagnieżdżoną tabelę w dokumencie Worda przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że manipulowanie dokumentami Worda jest niezwykle łatwe programowo. Niezależnie od tego, czy generujesz złożone raporty, czy proste tabele, Aspose.Words dla .NET ma dla Ciebie rozwiązanie.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest tabela zagnieżdżona?
+### Czym jest tabela zagnieżdżona?
 
-Tabela zagnieżdżona to tabela w tabeli. Służy do tworzenia złożonych układów w dokumentach, takich jak formularze lub szczegółowe prezentacje danych.
+Zagnieżdżona tabela to tabela w tabeli. Służy do tworzenia złożonych układów w dokumentach, takich jak formularze lub szczegółowe prezentacje danych.
 
 ### Dlaczego warto używać Aspose.Words dla .NET?
 
-Aspose.Words dla .NET zapewnia solidny zestaw funkcji do programowego tworzenia, modyfikowania i konwertowania dokumentów programu Word, co czyni go idealnym wyborem dla programistów.
+Aspose.Words for .NET oferuje bogaty zestaw funkcji do programistycznego tworzenia, modyfikowania i konwertowania dokumentów Word, co czyni go idealnym wyborem dla programistów.
 
 ### Czy mogę dodać więcej poziomów zagnieżdżonych tabel?
 
@@ -134,8 +134,8 @@ Tak, możesz utworzyć wiele poziomów zagnieżdżonych tabel, powtarzając proc
 
 ### Czy Aspose.Words dla .NET jest kompatybilny ze wszystkimi wersjami programu Word?
 
-Aspose.Words dla .NET jest kompatybilny z szeroką gamą formatów dokumentów Word, w tym DOC, DOCX, RTF i innymi.
+Aspose.Words for .NET jest kompatybilny z szeroką gamą formatów dokumentów Word, w tym DOC, DOCX, RTF i innymi.
 
-### Jak mogę uzyskać wsparcie dla Aspose.Words dla .NET?
+### Gdzie mogę uzyskać pomoc techniczną dotyczącą Aspose.Words dla .NET?
 
  Możesz uzyskać wsparcie od[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).

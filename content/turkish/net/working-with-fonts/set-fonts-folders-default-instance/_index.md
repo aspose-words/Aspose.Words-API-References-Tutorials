@@ -1,27 +1,27 @@
 ---
-title: Yazı Tipleri Klasörlerinin Varsayılan Örneğini Ayarla
-linktitle: Yazı Tipleri Klasörlerinin Varsayılan Örneğini Ayarla
+title: Yazı Tipleri Klasörlerini Varsayılan Örnek Olarak Ayarla
+linktitle: Yazı Tipleri Klasörlerini Varsayılan Örnek Olarak Ayarla
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu adım adım eğitimle Aspose.Words for .NET'te varsayılan örnek için yazı tipi klasörlerini nasıl ayarlayacağınızı öğrenin. Word belgelerinizi zahmetsizce özelleştirin.
+description: Bu adım adım eğitimle Aspose.Words for .NET'te varsayılan örnek için font klasörlerini nasıl ayarlayacağınızı öğrenin. Word belgelerinizi zahmetsizce özelleştirin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-fonts-folders-default-instance/
 ---
 ## giriiş
 
-Merhaba kodlayıcı arkadaşım! .NET'te Word belgeleriyle çalışıyorsanız, yazı tiplerinizin doğru olmasının önemini muhtemelen biliyorsunuzdur. Bugün, Aspose.Words for .NET kullanarak varsayılan örnek için yazı tipi klasörlerinin nasıl ayarlanacağını detaylı olarak inceliyoruz. Tüm özel yazı tiplerinizin parmaklarınızın ucunda olduğunu ve belgelerinizin tam olarak hayal ettiğiniz gibi göründüğünü hayal edin. Kulağa harika geliyor, değil mi? Hadi başlayalım!
+Merhaba, kodlayıcı arkadaşım! .NET'te Word belgeleriyle çalışıyorsanız, muhtemelen yazı tiplerinizin tam olarak doğru olmasının önemini biliyorsunuzdur. Bugün, .NET için Aspose.Words kullanarak varsayılan örnek için yazı tipi klasörlerinin nasıl ayarlanacağına derinlemesine bakıyoruz. Tüm özel yazı tiplerinizin parmaklarınızın ucunda olduğunu ve belgelerinizin tam olarak hayal ettiğiniz gibi göründüğünü hayal edin. Kulağa harika geliyor, değil mi? Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-En ince ayrıntılara dalmadan önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
--  Aspose.Words for .NET: Kütüphanenin kurulu olduğundan emin olun. Değilse, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+Ayrıntılara dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+-  Aspose.Words for .NET: Kütüphanenin kurulu olduğundan emin olun. Eğer kurulu değilse,[buradan indirin](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Visual Studio veya herhangi bir .NET uyumlu IDE.
-- Temel C# Bilgisi: C# programlama konusunda rahat olmalısınız.
-- Yazı Tipleri Klasörü: Özel yazı tiplerinizi içeren bir dizin.
+- Temel C# Bilgisi: C# programlamayı rahatça anlayabiliyor olmalısınız.
+- Font Klasörü: Özel fontlarınızı içeren bir dizin.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktaralım. Bu, fonts klasörünü ayarlamak için gereken sınıflara ve yöntemlere erişmeye yardımcı olur.
+İlk önce gerekli ad alanlarını içe aktaralım. Bu, fonts klasörünü ayarlamak için gereken sınıflara ve yöntemlere erişimde yardımcı olur.
 
 ```csharp
 using System;
@@ -29,32 +29,32 @@ using Aspose.Words;
 using Aspose.Words.Fonts;
 ```
 
-Süreci basit, sindirilebilir adımlara ayıralım.
+Süreci basit ve anlaşılır adımlara bölelim.
 
 ## Adım 1: Veri Dizinini Tanımlayın
 
-Her harika yolculuk tek bir adımla başlar ve bizimkisi belgenizin saklandığı dizini tanımlamakla başlar. Aspose.Words'ün Word belgenizi arayacağı yer burasıdır.
+Her büyük yolculuk tek bir adımla başlar ve bizimki belgenizin saklandığı dizini tanımlamakla başlar. Aspose.Words'ün Word belgenizi arayacağı yer burasıdır.
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- İşte, değiştir`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile. Burası kaynak belgenizin bulunduğu ve çıktının kaydedileceği yerdir.
+ Burada, değiştirin`"YOUR DOCUMENT DIRECTORY"` belge dizininize giden gerçek yol ile. Kaynak belgenizin bulunduğu ve çıktının kaydedileceği yer burasıdır.
 
-## Adım 2: Yazı Tipleri Klasörünü Ayarlayın
+## Adım 2: Fontlar Klasörünü Ayarlayın
 
- Şimdi Aspose.Words'e özel yazı tiplerinizi nerede bulacağınızı anlatalım. Bu, yazı tipleri klasörünü kullanarak ayarlayarak yapılır.`FontSettings.DefaultInstance.SetFontsFolder` Yöntem.
+ Şimdi, Aspose.Words'e özel yazı tiplerinizi nerede bulacağını söyleyelim. Bu, yazı tipleri klasörünü kullanarak ayarlayarak yapılır`FontSettings.DefaultInstance.SetFontsFolder` yöntem.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
 ```
 
- Bu satırda,`"C:\\MyFonts\\"` özel yazı tipleri klasörünüzün yoludur. İkinci parametre,`true`, bu klasördeki yazı tiplerinin yinelemeli olarak taranması gerektiğini belirtir.
+ Bu satırda,`"C:\\MyFonts\\"` özel yazı tipleri klasörünüze giden yoldur. İkinci parametre,`true`, bu klasördeki yazı tiplerinin tekrarlı olarak taranması gerektiğini belirtir.
 
-## 3. Adım: Belgenizi Yükleyin
+## Adım 3: Belgenizi Yükleyin
 
- Fonts klasörü ayarlandığında bir sonraki adım Word belgenizi Aspose.Words'e yüklemek olacaktır. Bu, kullanılarak yapılır.`Document` sınıf.
+ Yazı tipleri klasörü ayarlandıktan sonraki adım Word belgenizi Aspose.Words'e yüklemektir. Bu,`Document` sınıf.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -64,31 +64,31 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Adım 4: Belgeyi Kaydedin
 
-Son adım, yazı tipleri klasörünü ayarladıktan sonra belgenizi kaydetmektir. Bu, özel yazı tiplerinizin çıktıda doğru şekilde uygulanmasını sağlar.
+Son adım, font klasörünü ayarladıktan sonra belgenizi kaydetmektir. Bu, özel fontlarınızın çıktıda doğru şekilde uygulanmasını sağlar.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ```
 
-Bu satır, belgenizi özel yazı tiplerinin uygulandığı PDF olarak kaydeder. Çıktı dosyası kaynak belgenizle aynı dizinde bulunacaktır.
+Bu satır, belgenizi özel yazı tiplerinin uygulandığı bir PDF olarak kaydeder. Çıktı dosyası, kaynak belgenizle aynı dizinde yer alacaktır.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'te varsayılan örnek için yazı tipi klasörlerini ayarlamak, bunu basit adımlara böldüğünüzde çocuk oyuncağıdır. Bu kılavuzu izleyerek, tüm özel yazı tipleriniz yerindeyken Word belgelerinizin tam olarak istediğiniz gibi görünmesini sağlayabilirsiniz. Öyleyse devam edin, deneyin ve belgelerinizin parıldamasını sağlayın!
+İşte oldu! Aspose.Words for .NET'te varsayılan örnek için font klasörlerini ayarlamak, basit adımlara böldüğünüzde çocuk oyuncağı. Bu kılavuzu izleyerek, Word belgelerinizin tüm özel fontlarınız yerindeyken tam olarak istediğiniz gibi görünmesini sağlayabilirsiniz. Hadi, deneyin ve belgelerinizin parlamasını sağlayın!
 
-## SSS'ler
+## SSS
 
-### Birden fazla yazı tipi klasörü ayarlayabilir miyim?
- Evet, kullanarak birden fazla yazı tipi klasörü ayarlayabilirsiniz.`SetFontsFolders` bir dizi klasör yolunu kabul eden yöntem.
+### Birden fazla font klasörü ayarlayabilir miyim?
+ Evet, kullanarak birden fazla yazı tipi klasörü ayarlayabilirsiniz.`SetFontsFolders` Klasör yollarının dizisini kabul eden yöntem.
 
-### Aspose.Words belgeleri kaydetmek için hangi dosya formatlarını destekliyor?
-Aspose.Words, DOCX, PDF, HTML, EPUB ve daha fazlasını içeren çeşitli formatları destekler.
+### Aspose.Words belgeleri kaydetmek için hangi dosya biçimlerini destekler?
+Aspose.Words DOCX, PDF, HTML, EPUB ve daha fazlası dahil olmak üzere çeşitli formatları destekler.
 
-### Aspose.Words'te çevrimiçi yazı tiplerini kullanmak mümkün mü?
+### Aspose.Words'de online fontları kullanmak mümkün müdür?
 Hayır, Aspose.Words şu anda yalnızca yerel yazı tipi dosyalarını desteklemektedir.
 
-### Özel yazı tiplerimin kaydedilen PDF'ye gömülmesini nasıl sağlayabilirim?
- Ayarlayarak`FontSettings` Aspose.Words, yazı tiplerinin doğru olduğundan ve mevcut olduğundan emin olduktan sonra bunları PDF çıktısına gömecektir.
+### Özel yazı tiplerimin kaydedilen PDF'e gömülmesini nasıl sağlayabilirim?
+ Ayarlayarak`FontSettings` Doğru şekilde ve yazı tiplerinin mevcut olduğundan emin olduktan sonra Aspose.Words bunları PDF çıktısına gömecektir.
 
-### Belirtilen klasörde bir yazı tipi bulunamazsa ne olur?
-Aspose.Words, belirtilen yazı tipi bulunamazsa bir yedek yazı tipi kullanacaktır.
+### Belirtilen klasörde bir font bulunamazsa ne olur?
+Belirtilen yazı tipi bulunamazsa Aspose.Words yedek yazı tipini kullanacaktır.

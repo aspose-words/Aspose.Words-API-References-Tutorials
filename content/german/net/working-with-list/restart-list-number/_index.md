@@ -9,7 +9,7 @@ url: /de/net/working-with-list/restart-list-number/
 ---
 ## Einführung
 
-Möchten Sie die Kunst der Listenmanipulation in Ihren Word-Dokumenten mit Aspose.Words für .NET meistern? Dann sind Sie hier genau richtig! In diesem Tutorial werden wir uns eingehend mit dem Neustarten von Listennummern befassen, einer praktischen Funktion, die Ihre Fähigkeiten zur Dokumentautomatisierung auf die nächste Stufe hebt. Schnall dich an und lass uns loslegen!
+Möchten Sie die Kunst der Listenmanipulation in Ihren Word-Dokumenten mit Aspose.Words für .NET meistern? Dann sind Sie hier genau richtig! In diesem Tutorial werden wir uns eingehend mit dem Neustarten von Listennummern befassen, einer raffinierten Funktion, die Ihre Fähigkeiten zur Dokumentautomatisierung auf die nächste Stufe hebt. Schnall dich an und lass uns loslegen!
 
 ## Voraussetzungen
 
@@ -98,7 +98,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 ## Abschluss
 
-Das Zurücksetzen von Listennummern in Word-Dokumenten mit Aspose.Words für .NET ist unkompliziert und unglaublich nützlich. Egal, ob Sie Berichte erstellen, strukturierte Dokumente erstellen oder einfach nur eine bessere Kontrolle über Ihre Listen benötigen, mit dieser Technik sind Sie bestens bedient.
+Das Neustarten von Listennummern in Word-Dokumenten mit Aspose.Words für .NET ist unkompliziert und unglaublich nützlich. Egal, ob Sie Berichte erstellen, strukturierte Dokumente erstellen oder einfach nur eine bessere Kontrolle über Ihre Listen benötigen, mit dieser Technik sind Sie bestens bedient.
 
 ## Häufig gestellte Fragen
 

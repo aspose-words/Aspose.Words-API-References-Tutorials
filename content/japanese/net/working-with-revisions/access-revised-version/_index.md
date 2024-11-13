@@ -9,7 +9,7 @@ url: /ja/net/working-with-revisions/access-revised-version/
 ---
 ## 導入
 
-プログラムでドキュメントの改訂版にアクセスする必要があることはありませんか? 共同プロジェクトで作業している場合でも、単にドキュメントの改訂版を管理する必要がある場合でも、Aspose.Words for .NET は頼りになるツールです。このチュートリアルでは、環境の設定から Word ドキュメントの改訂版へのアクセスと表示まで、プロセス全体を順を追って説明します。それでは、早速始めましょう!
+プログラムでドキュメントの改訂版にアクセスする必要があることはありませんか? 共同プロジェクトで作業している場合でも、単にドキュメントの改訂版を管理する必要がある場合でも、Aspose.Words for .NET は頼りになるツールです。このチュートリアルでは、環境の設定から Word ドキュメントの改訂版にアクセスして表示するまでのプロセス全体を順を追って説明します。それでは、早速始めましょう!
 
 ## 前提条件
 
@@ -68,7 +68,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 ## ステップ5: 修正を繰り返す
 
-リビジョンにアクセスするには、`Revisions`文書の収集。このステップでは、`foreach`各リビジョンをループして確認します。
+リビジョンにアクセスするには、`Revisions`文書の収集。このステップでは、`foreach`各リビジョンをループして実行します。
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -125,7 +125,7 @@ Console.WriteLine(paragraph.ListFormat.ListLevel);
 ### Aspose.Words for .NET とは何ですか?
 Aspose.Words for .NET は、Word 文書をプログラムで作成、編集、操作できる強力なライブラリです。
 
-### どの Word 文書でも変更履歴にアクセスできますか?
+### どの Word 文書でもリビジョンにアクセスできますか?
 はい、ドキュメントにリビジョンが含まれている限り、Aspose.Words for .NET を使用してアクセスできます。
 
 ### Aspose.Words for .NET を使用するにはライセンスが必要ですか?

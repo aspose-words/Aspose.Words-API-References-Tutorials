@@ -9,7 +9,7 @@ url: /sv/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
 ## Introduktion
 
-Har du någonsin undrat hur man sparar ett Word-dokument som en svartvit bild med bara några rader kod? Nåväl, du har tur! Idag dyker vi in i ett snyggt litet trick med Aspose.Words för .NET som låter dig konvertera dina dokument till 1Bpp indexerade bilder. Det här formatet är perfekt för vissa typer av digital arkivering, utskrift eller när du behöver spara utrymme. Vi kommer att dela upp varje steg för att göra det så enkelt som en plätt. Redo att börja? Låt oss dyka in!
+Har du någonsin undrat hur man sparar ett Word-dokument som en svartvit bild med bara några rader kod? Nåväl, du har tur! Idag dyker vi in i ett snyggt litet trick med Aspose.Words för .NET som låter dig konvertera dina dokument till 1Bpp indexerade bilder. Det här formatet är perfekt för vissa typer av digital arkivering, utskrift eller när du behöver spara utrymme. Vi kommer att dela upp varje steg för att göra det så enkelt som en plätt. Redo att komma igång? Låt oss dyka in!
 
 ## Förutsättningar
 

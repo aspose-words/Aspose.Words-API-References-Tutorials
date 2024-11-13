@@ -15,7 +15,7 @@ url: /ja/net/programming-with-pdfsaveoptions/interpolate-images/
 
 詳細に入る前に、すべてが設定されていることを確認しましょう。
 
-1.  Aspose.Words for .NET: Aspose.Wordsライブラリが必要です。ダウンロードはこちらから[Aspose リリース](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Aspose.Wordsライブラリが必要です。こちらからダウンロードできます。[Aspose リリース](https://releases.aspose.com/words/net/).
 2. .NET 開発環境: Visual Studio などの開発環境が準備されていることを確認します。
 3. C# の基礎知識: C# および .NET プログラミングに精通していると、スムーズに理解できるようになります。
 4. サンプル ドキュメント: テストに使用する画像を含む Word ドキュメントを用意します。
@@ -59,10 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 画像が補間されるようにするには、`PdfSaveOptions`このクラスを使用すると、ドキュメントを PDF として保存する方法に関するさまざまなオプションを設定できます。具体的には、画像補間を有効にします。
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	InterpolateImages = true
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 の`InterpolateImages`プロパティは次のように設定されています`true` PDF 内の画像が補間され、品質が向上することを確認します。
@@ -81,7 +78,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOption
 
 PDF ドキュメント内の画像の補間は、出力ファイルの品質を大幅に向上できる強力な機能です。上記の手順に従うことで、Word ドキュメントから生成された PDF で画像が鮮明でプロフェッショナルに見えるようになります。Aspose.Words for .NET を使用すると、このプロセスが簡単になり、画像品質の問題を心配することなくコンテンツに集中できます。
 
-さらに詳しい情報や他の機能について知りたい場合は、[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)または[無料トライアルをリクエスト](https://releases.aspose.com/).
+さらに詳しい情報や他の機能について知りたい場合は、[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)または[無料トライアルをリクエストする](https://releases.aspose.com/).
 
 ## よくある質問
 

@@ -1,28 +1,28 @@
 ---
-title: Düzeltmeleri Balonlarda Göster
-linktitle: Düzeltmeleri Balonlarda Göster
+title: Balonlarda Revizyonları Göster
+linktitle: Balonlarda Revizyonları Göster
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak balonlardaki revizyonları nasıl göstereceğinizi öğrenin. Bu ayrıntılı kılavuz, belge değişikliklerinizin açık ve düzenli olmasını sağlayarak her adımda size yol gösterir.
+description: Aspose.Words for .NET kullanarak balonlarda revizyonları nasıl göstereceğinizi öğrenin. Bu ayrıntılı kılavuz, belgenizdeki değişikliklerin açık ve düzenli olmasını sağlayarak her adımda size yol gösterir.
 type: docs
 weight: 10
 url: /tr/net/working-with-revisions/show-revisions-in-balloons/
 ---
 ## giriiş
 
-Bir Word belgesindeki değişiklikleri izlemek, işbirliği ve düzenleme için çok önemlidir. Aspose.Words for .NET, bu revizyonları yönetmek için netlik ve inceleme kolaylığı sağlayan güçlü araçlar sunar. Bu kılavuz, revizyonları balonlarda görüntülemenize yardımcı olacak ve hangi değişikliklerin kim tarafından yapıldığını görmenizi kolaylaştıracaktır.
+Bir Word belgesindeki değişiklikleri izlemek, işbirliği ve düzenleme için çok önemlidir. Aspose.Words for .NET, bu revizyonları yönetmek için sağlam araçlar sunarak netlik ve inceleme kolaylığı sağlar. Bu kılavuz, revizyonları balonlarda görüntülemenize yardımcı olacak ve hangi değişikliklerin kim tarafından yapıldığını görmenizi kolaylaştıracaktır.
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
--  Aspose.Words for .NET kitaplığı. İndirebilirsin[Burada](https://releases.aspose.com/words/net/).
--  Geçerli bir Aspose lisansı. Eğer bir tane yoksa, bir tane alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/).
-- Visual Studio veya .NET geliştirmeyi destekleyen başka bir IDE.
-- C# ve .NET çerçevesine ilişkin temel anlayış.
+-  Aspose.Words for .NET kütüphanesi. İndirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+-  Geçerli bir Aspose lisansınız var. Eğer yoksa, bir tane alabilirsiniz[geçici lisans](https://purchase.aspose.com/temporary-license/).
+- Visual Studio veya .NET geliştirmeyi destekleyen herhangi bir IDE.
+- C# ve .NET framework'üne dair temel bilgi.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını C# projenize aktaralım. Bu ad alanları Aspose.Words işlevlerine erişim için gereklidir.
+Öncelikle, C# projenize gerekli ad alanlarını içe aktaralım. Bu ad alanları, Aspose.Words işlevlerine erişmek için gereklidir.
 
 ```csharp
 using Aspose.Words;
@@ -30,40 +30,40 @@ using Aspose.Words.Layout;
 using Aspose.Words.RevisionOptions;
 ```
 
-Süreci basit, takip edilmesi kolay adımlara ayıralım.
+Süreci basit ve takip edilmesi kolay adımlara bölelim.
 
-## 1. Adım: Belgenizi Yükleyin
+## Adım 1: Belgenizi Yükleyin
 
-Öncelikle revizyonları içeren dokümanı yüklememiz gerekiyor. Belge yolunuzun doğru olduğundan emin olun.
+Öncelikle revizyonları içeren belgeyi yüklememiz gerekiyor. Belge yolunuzun doğru olduğundan emin olun.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Revisions.docx");
 ```
 
 ## Adım 2: Revizyon Seçeneklerini Yapılandırın
 
-Daha sonra, revizyon seçeneklerini satır içi eklemeyi görüntülemek ve revizyonları balonlarda silmek ve biçimlendirmek için revizyon seçeneklerini yapılandıracağız. Bu, farklı revizyon türleri arasında ayrım yapmayı kolaylaştırır.
+Sonra, revizyon seçeneklerini satır içi revizyon ekleme ve balonlardaki revizyonları silme ve biçimlendirme olarak görüntüleyecek şekilde yapılandıracağız. Bu, farklı revizyon türleri arasında ayrım yapmayı kolaylaştırır.
 
 ```csharp
-// Revizyonları satır içi olarak ekler, revizyonları balonlara siler ve biçimlendirir.
+// Render'lar revizyonları satır içi olarak ekler, balonlardaki revizyonları siler ve biçimlendirir.
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
 ```
 
-## Adım 3: Revizyon Çubuklarının Konumunu Ayarlayın
+## Adım 3: Revizyon Çubuklarının Pozisyonunu Ayarlayın
 
-Belgeyi daha da okunabilir hale getirmek için revizyon çubuklarının konumunu ayarlayabiliriz. Bu örnekte onları sayfanın sağ tarafına yerleştireceğiz.
+Belgeyi daha da okunabilir hale getirmek için revizyon çubuklarının konumunu ayarlayabiliriz. Bu örnekte, bunları sayfanın sağ tarafına yerleştireceğiz.
 
 ```csharp
-// Revizyon çubuklarını sayfanın sağ tarafında oluşturur.
+// Sayfanın sağ tarafına revizyon çubukları oluşturur.
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
 ```
 
 ## Adım 4: Belgeyi Kaydedin
 
-Son olarak belgeyi PDF olarak kaydedeceğiz. Bu, revizyonları istenilen formatta görmemizi sağlayacaktır.
+Son olarak belgeyi PDF olarak kaydedeceğiz. Bu, revizyonları istediğimiz formatta görmemizi sağlayacaktır.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
@@ -71,21 +71,21 @@ doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 
 ## Çözüm
 
-Ve işte karşınızda! Bu basit adımları izleyerek Aspose.Words for .NET'i kullanarak balonlardaki revizyonları kolayca gösterebilirsiniz. Bu, belgeleri incelemeyi ve üzerinde işbirliği yapmayı kolaylaştırarak tüm değişikliklerin açıkça görünür ve organize olmasını sağlar. Mutlu kodlama!
+İşte oldu! Bu basit adımları izleyerek, .NET için Aspose.Words'ü kullanarak revizyonları balonlarda kolayca gösterebilirsiniz. Bu, belgeleri incelemeyi ve belgeler üzerinde işbirliği yapmayı kolaylaştırır ve tüm değişikliklerin açıkça görünür ve düzenli olmasını sağlar. İyi kodlamalar!
 
-## SSS'ler
+## SSS
 
 ### Revizyon çubuklarının rengini özelleştirebilir miyim?
 Evet, Aspose.Words revizyon çubuklarının rengini tercihlerinize göre özelleştirmenize olanak tanır.
 
-### Balonlarda yalnızca belirli revizyon türlerini göstermek mümkün mü?
-Kesinlikle. Aspose.Words'ü, balonlarda yalnızca silme veya formatlama değişiklikleri gibi belirli revizyon türlerini görüntüleyecek şekilde yapılandırabilirsiniz.
+### Balonlarda sadece belirli revizyon tiplerini göstermek mümkün müdür?
+Kesinlikle. Aspose.Words'ü yalnızca silmeler veya biçimlendirme değişiklikleri gibi belirli düzeltme türlerini balonlarda görüntüleyecek şekilde yapılandırabilirsiniz.
 
-### Aspose.Words için nasıl geçici lisans alabilirim?
- Geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+### Aspose.Words için geçici lisansı nasıl alabilirim?
+Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET'i diğer programlama dilleriyle birlikte kullanabilir miyim?
-Aspose.Words öncelikli olarak .NET için tasarlanmıştır ancak VB.NET ve C de dahil olmak üzere .NET destekli herhangi bir dille kullanabilirsiniz.++/CLI.
+Aspose.Words öncelikle .NET için tasarlanmıştır, ancak VB.NET ve C dahil olmak üzere .NET tarafından desteklenen herhangi bir dille kullanabilirsiniz.++/Komut satırı arayüzü.
 
-### Aspose.Words, Word'ün yanı sıra diğer belge formatlarını da destekliyor mu?
-Evet, Aspose.Words PDF, HTML, EPUB ve daha fazlası dahil olmak üzere çeşitli belge formatlarını destekler.
+### Aspose.Words, Word dışında başka belge biçimlerini de destekliyor mu?
+Evet, Aspose.Words PDF, HTML, EPUB ve daha fazlası dahil olmak üzere çeşitli belge biçimlerini destekler.

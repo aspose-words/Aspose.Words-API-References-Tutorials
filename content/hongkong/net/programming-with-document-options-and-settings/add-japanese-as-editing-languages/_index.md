@@ -84,11 +84,11 @@ Console.WriteLine(
         : "The document default FarEast language was set to another than Japanese language originally, so it is not overridden.");
 ```
 
-此代碼檢查預設遠東語言是否設定為日文並列印相應的訊息。
+此代碼檢查預設的 FarEast 語言是否設定為日語並列印相應的訊息。
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將日文以編輯語言新增至文件。這就像在地圖中添加一種新語言，使其更易於導航和理解。無論您是處理多語言文件還是只需要確保文字格式正確，Aspose.Words 都能滿足您的需求。現在，繼續充滿信心地探索文件自動化的世界！
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將日文以編輯語言新增至文件。這就像在地圖中添加一種新語言，使其更易於導航和理解。無論您是處理多語言文件還是只需要確保文字格式正確，Aspose.Words 都能滿足您的需求。現在，繼續充滿信心地探索文件自動化的世界！
 
 ## 常見問題解答
 

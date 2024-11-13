@@ -71,7 +71,7 @@ Du kan hantera fotnoter och slutnoter programmatiskt genom att:
 
 ## Bästa metoder för att använda fotnoter och slutnoter
 
-- Håll fotnoterna kortfattade och relevanta
+- Håll fotnoter kortfattade och relevanta
 - Använd slutanteckningar för mer omfattande förklaringar
 - Behåll konsekvent formatering
 - Dubbelkolla citaten för noggrannhet

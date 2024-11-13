@@ -86,6 +86,6 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
  आप Aspose.Words पर जा सकते हैं[सहयता मंच](https://forum.aspose.com/c/words/8) किसी भी समस्या या प्रश्न के लिए सहायता हेतु हमसे संपर्क करें।
 
-### Aspose.Words अन्य क्या सुविधाएँ प्रदान करता है?
+### Aspose.Words क्या अन्य सुविधाएँ प्रदान करता है?
 
-Aspose.Words में कई विशेषताएं हैं। आप कई तरीकों से दस्तावेज़ बना सकते हैं, संपादित कर सकते हैं, बदल सकते हैं और उनमें हेरफेर कर सकते हैं। पूरी सूची के लिए, देखें[प्रलेखन](https://reference.aspose.com/words/net/).
+Aspose.Words में बहुत सारी खूबियाँ हैं। आप कई तरीकों से दस्तावेज़ बना सकते हैं, संपादित कर सकते हैं, बदल सकते हैं और उनमें हेरफेर कर सकते हैं। पूरी सूची के लिए, देखें[प्रलेखन](https://reference.aspose.com/words/net/).

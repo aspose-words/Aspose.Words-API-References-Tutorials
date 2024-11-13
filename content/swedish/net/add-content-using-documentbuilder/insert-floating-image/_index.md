@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- De`Document` objektet representerar Word-dokumentet och`DocumentBuilder` hjälper till att lägga till innehåll till den.
+De`Document` objektet representerar Word-dokumentet och`DocumentBuilder` hjälper till att lägga till innehåll till den.
 
 ## Steg 3: Definiera bildsökvägen
 

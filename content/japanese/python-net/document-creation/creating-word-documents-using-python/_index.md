@@ -24,7 +24,7 @@ Python を使用して Word ドキュメントを生成するという目標を�
 
 ## Aspose.Words for Python のインストール
 
-始めるには、Aspose.Words for Pythonライブラリをダウンロードしてインストールする必要があります。必要なファイルはAspose.Releases（https://releases.aspose.com/words/python/ライブラリをダウンロードしたら、ご使用のオペレーティング システム固有のインストール手順に従ってください。
+始めるには、Aspose.Words for Pythonライブラリをダウンロードしてインストールする必要があります。必要なファイルはAspose.Releases（https://releases.aspose.com/words/python/ライブラリをダウンロードしたら、ご使用のオペレーティング システムに応じたインストール手順に従ってください。
 
 ## Aspose.Words 環境の初期化
 
@@ -160,7 +160,7 @@ Aspose.Words for Python は、次のような幅広い機能を提供します�
 
 ### 4. Aspose.Words for Python を使用して Word 文書を最初から作成できますか?
 
-はい、Aspose.Words for Python を使用して Word 文書を最初から作成できます。このライブラリを使用すると、空白の文書を作成し、段落、表、画像などのコンテンツを追加して、完全にカスタマイズされた文書を生成できます。
+はい、Aspose.Words for Python を使用して Word 文書を最初から作成できます。ライブラリを使用すると、空白の文書を作成し、段落、表、画像などのコンテンツを追加して、完全にカスタマイズされた文書を生成できます。
 
 ### 5. Aspose.Words for Python を使用して Word 文書にテキストと段落を追加するにはどうすればよいですか?
 

@@ -17,7 +17,7 @@ url: /ja/net/programming-with-digital-signatures/set-signature-provider-id/
 
 1. Aspose.Words for .NET ライブラリ: まだお持ちでない場合は、[ここからダウンロード](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio または C# 互換の IDE。
-3. Word文書: 署名欄のある文書（`Signature line.docx`）。
+3. Word文書:署名欄のある文書（`Signature line.docx`）。
 4. デジタル証明書: A`.pfx`証明書ファイル（例：`morzal.pfx`）。
 5. C# の基礎知識: 基本的な知識だけです。心配しないでください。私たちがお手伝いします!
 
@@ -54,7 +54,7 @@ Document doc = new Document(dataDir + "Signature line.docx");
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-このコード行は、文書の最初のセクションの本文の最初の図形を取得し、それを`SignatureLine`物体。
+このコード行は、ドキュメントの最初のセクションの本文の最初の図形を取得し、それを`SignatureLine`物体。
 
 ## ステップ3: サインオプションを設定する
 

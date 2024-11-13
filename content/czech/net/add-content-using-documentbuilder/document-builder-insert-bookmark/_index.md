@@ -71,7 +71,7 @@ Jakmile je záložka spuštěna, můžeme do ní přidat libovolný obsah, kter�
 builder.Writeln("This is just a fine bookmark.");
 ```
 
- The`Writeln` metoda přidá do dokumentu nový odstavec se zadaným textem.
+The`Writeln` metoda přidá do dokumentu nový odstavec se zadaným textem.
 
 ## Krok 5: Ukončete záložku
 
@@ -81,7 +81,7 @@ Po přidání našeho obsahu musíme záložku zavřít. Tím Aspose.Words řekn
 builder.EndBookmark("FineBookmark");
 ```
 
- The`EndBookmark` metoda dokončí záložku, kterou jsme začali dříve.
+The`EndBookmark` metoda dokončí záložku, kterou jsme začali dříve.
 
 ## Krok 6: Uložte dokument
 

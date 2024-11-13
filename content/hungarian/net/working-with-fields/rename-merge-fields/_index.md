@@ -9,7 +9,7 @@ url: /hu/net/working-with-fields/rename-merge-fields/
 ---
 ## Bevezetés
 
-Az egyesítési mezők átnevezése a Word dokumentumokban ijesztő feladat lehet, ha nem ismeri a megfelelő eszközöket és technikákat. De ne aggódj, én gondoskodtam rólad! Ebben az útmutatóban az egyesítési mezők átnevezésének folyamatát mutatjuk be az Aspose.Words for .NET használatával, amely egy olyan hatékony könyvtár, amely gyerekjáték a dokumentumok kezelését. Akár tapasztalt fejlesztő, akár csak most kezdi, ez a lépésről lépésre bemutatott oktatóanyag végigvezeti Önt mindenen, amit tudnia kell.
+Az egyesítési mezők átnevezése a Word dokumentumokban ijesztő feladat lehet, ha nem ismeri a megfelelő eszközöket és technikákat. De ne aggódj, gondoskodtam rólad! Ebben az útmutatóban az egyesítési mezők átnevezésének folyamatát mutatjuk be az Aspose.Words for .NET használatával, amely egy olyan hatékony könyvtár, amely gyerekjáték a dokumentumok kezelését. Akár tapasztalt fejlesztő, akár csak most kezdi, ez a lépésről lépésre bemutatott oktatóanyag végigvezeti Önt mindenen, amit tudnia kell.
 
 ## Előfeltételek
 
@@ -47,7 +47,7 @@ builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 ```
 
- Itt egy új dokumentumot hozunk létre, és használjuk a`DocumentBuilder` osztályba két egyesítési mező beszúrásához:`MyMergeField1`és`MyMergeField2`.
+ Itt egy új dokumentumot hozunk létre, és használjuk a`DocumentBuilder` osztályba két egyesítési mező beszúrásához:`MyMergeField1` és`MyMergeField2`.
 
 ## 2. lépés: Ismételje meg a mezőket, és nevezze át őket
 

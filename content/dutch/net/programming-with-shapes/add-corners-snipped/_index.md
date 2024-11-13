@@ -1,63 +1,63 @@
 ---
-title: Hoeken toevoegen, geknipt
-linktitle: Hoeken toevoegen, geknipt
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een uit hoeken geknipte vorm aan uw Word-documenten kunt toevoegen met Aspose.Words voor .NET. Met deze stapsgewijze handleiding kunt u uw documenten eenvoudig verbeteren.
+title: Voeg afgeknipte hoeken toe
+linktitle: Voeg afgeknipte hoeken toe
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u een hoekige snipped shape toevoegt aan uw Word-documenten met Aspose.Words voor .NET. Deze stapsgewijze handleiding zorgt ervoor dat u uw documenten eenvoudig kunt verbeteren.
 type: docs
 weight: 10
 url: /nl/net/programming-with-shapes/add-corners-snipped/
 ---
 ## Invoering
 
-Het toevoegen van aangepaste vormen aan uw Word-documenten kan een leuke en visueel aantrekkelijke manier zijn om belangrijke informatie te benadrukken of een beetje flair aan uw inhoud toe te voegen. In deze zelfstudie gaan we dieper in op hoe u 'Corners Snipped'-vormen in uw Word-documenten kunt invoegen met Aspose.Words voor .NET. Deze gids begeleidt u bij elke stap, zodat u deze vormen moeiteloos kunt toevoegen en uw documenten als een professional kunt aanpassen.
+Aangepaste vormen toevoegen aan uw Word-documenten kan een leuke en visueel aantrekkelijke manier zijn om belangrijke informatie te benadrukken of een beetje flair toe te voegen aan uw content. In deze tutorial gaan we dieper in op hoe u "Corners Snipped"-vormen kunt invoegen in uw Word-documenten met behulp van Aspose.Words voor .NET. Deze gids leidt u door elke stap, zodat u moeiteloos deze vormen kunt toevoegen en uw documenten als een professional kunt aanpassen.
 
 ## Vereisten
 
-Voordat we ingaan op de code, zorgen we ervoor dat u alles heeft wat u nodig heeft om aan de slag te gaan:
+Voordat we met de code aan de slag gaan, controleren we eerst of je alles hebt wat je nodig hebt om te beginnen:
 
-1.  Aspose.Words voor .NET: Download de nieuwste versie van de .NET als u dat nog niet heeft gedaan[Aspose-releasespagina](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: Als u dat nog niet hebt gedaan, download dan de nieuwste versie van de[Aspose releases pagina](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Stel uw ontwikkelomgeving in. Visual Studio is een populaire keuze, maar u kunt elke IDE gebruiken die .NET ondersteunt.
-3.  Licentie: als je alleen maar aan het experimenteren bent, kun je een[gratis proefperiode](https://releases.aspose.com/) of krijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) om de volledige functionaliteit te ontgrendelen.
-4. Basiskennis van C#: Bekendheid met programmeren in C# zal u helpen de voorbeelden te volgen.
+3.  Licentie: Als u alleen maar aan het experimenteren bent, kunt u een[gratis proefperiode](https://releases.aspose.com/) of krijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) om de volledige functionaliteit te ontgrendelen.
+4. Basiskennis van C#: Kennis van C#-programmering helpt u de voorbeelden te volgen.
 
 ## Naamruimten importeren
 
-Voordat we met Aspose.Words voor .NET kunnen gaan werken, moeten we de benodigde naamruimten importeren. Voeg deze bovenaan uw C#-bestand toe:
+Voordat we kunnen beginnen met Aspose.Words voor .NET, moeten we de benodigde namespaces importeren. Voeg deze toe bovenaan uw C#-bestand:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Laten we nu het proces van het toevoegen van een 'Hoeken geknipt'-vorm in meerdere stappen opsplitsen. Volg deze stappen nauwkeurig om ervoor te zorgen dat alles soepel werkt.
+Laten we nu het proces van het toevoegen van een "Corners Snipped"-vorm opsplitsen in meerdere stappen. Volg deze stappen nauwkeurig om ervoor te zorgen dat alles soepel verloopt.
 
 ## Stap 1: Initialiseer het document en DocumentBuilder
 
- Het eerste dat we moeten doen is een nieuw document maken en een`DocumentBuilder` voorwerp. Deze builder helpt ons inhoud aan ons document toe te voegen.
+ Het eerste wat we moeten doen is een nieuw document maken en een`DocumentBuilder` object. Deze builder helpt ons om inhoud toe te voegen aan ons document.
 
 ```csharp
-// Pad naar uw documentmap
+// Pad naar uw documentenmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- In deze stap hebben we ons document en onze builder ingesteld. Denk aan de`DocumentBuilder` als uw digitale pen, klaar om in uw Word-document te schrijven en tekenen.
+ In deze stap hebben we ons document en onze builder ingesteld. Denk aan de`DocumentBuilder` als uw digitale pen, klaar om te schrijven en tekenen in uw Word-document.
 
-## Stap 2: Plaats de afgeknipte vorm
+## Stap 2: Voeg de afgeknipte hoeken in
 
- Vervolgens zullen we gebruik maken van de`DocumentBuilder` om een vorm 'Hoeken geknipt' in te voegen. Dit vormtype is vooraf gedefinieerd in Aspose.Words en kan eenvoudig worden ingevoegd met één regel code.
+ Vervolgens gebruiken we de`DocumentBuilder` om een "Corners Snipped" vorm in te voegen. Dit vormtype is vooraf gedefinieerd in Aspose.Words en kan eenvoudig worden ingevoegd met één regel code.
 
 ```csharp
 builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 ```
 
-Hier specificeren we het vormtype en de afmetingen ervan (50x50). Stel je voor dat je een kleine, perfect afgeknipte hoeksticker op je document plakt. 
+Hier specificeren we het vormtype en de afmetingen (50x50). Stel je voor dat je een kleine, perfect afgeknipte hoeksticker op je document plakt. 
 
 ## Stap 3: Definieer opslagopties met naleving
 
-Voordat we ons document opslaan, moeten we de opslagopties definiëren om ervoor te zorgen dat ons document aan specifieke normen voldoet. Wij gebruiken de`OoxmlSaveOptions` klasse hiervoor.
+Voordat we ons document opslaan, moeten we de opslagopties definiëren om ervoor te zorgen dat ons document voldoet aan specifieke standaarden. We gebruiken de`OoxmlSaveOptions` klasse hiervoor.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
@@ -66,35 +66,35 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 };
 ```
 
-Deze opslagopties zorgen ervoor dat ons document voldoet aan de ISO/IEC 29500:2008-norm, wat cruciaal is voor compatibiliteit en een lange levensduur van het document.
+Met deze opslagopties zorgen we ervoor dat ons document voldoet aan de ISO/IEC 29500:2008-norm, wat cruciaal is voor de compatibiliteit en de levensduur van het document.
 
 ## Stap 4: Sla het document op
 
-Ten slotte slaan we ons document op in de opgegeven map met behulp van de opslagopties die we eerder hebben gedefinieerd.
+Ten slotte slaan we ons document op in de opgegeven map, met behulp van de opslagopties die we eerder hebben gedefinieerd.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 ```
 
-En zomaar bevat uw document nu een aangepaste "Hoeken geknipt"-vorm, opgeslagen met de nodige compliance-opties.
+En zo bevat uw document nu een aangepaste 'Hoeken geknipt'-vorm, opgeslagen met de benodigde nalevingsopties.
 
 ## Conclusie
 
-Daar heb je het! Het toevoegen van aangepaste vormen aan uw Word-documenten met Aspose.Words voor .NET is eenvoudig en kan de visuele aantrekkingskracht van uw documenten aanzienlijk vergroten. Door deze stappen te volgen, kunt u eenvoudig een vorm met 'Hoeken afgesneden' invoegen en ervoor zorgen dat uw document aan de vereiste normen voldoet. Veel codeerplezier!
+Daar heb je het! Het toevoegen van aangepaste vormen aan je Word-documenten met Aspose.Words voor .NET is eenvoudig en kan de visuele aantrekkingskracht van je documenten aanzienlijk vergroten. Door deze stappen te volgen, kun je eenvoudig een "Corners Snipped"-vorm invoegen en ervoor zorgen dat je document voldoet aan de vereiste normen. Veel plezier met coderen!
 
 ## Veelgestelde vragen
 
-### Kan ik de grootte van de vorm 'Hoeken afgeknipt' aanpassen?
-Ja, je kunt de maat aanpassen door de afmetingen in het artikel te wijzigen`InsertShape` methode.
+### Kan ik de grootte van de vorm 'Hoeken bijgesneden' aanpassen?
+Ja, u kunt de grootte aanpassen door de afmetingen in de`InsertShape` methode.
 
 ### Is het mogelijk om andere soorten vormen toe te voegen?
- Absoluut! Aspose.Words ondersteunt verschillende vormen. Verander gewoon de`ShapeType` naar uw gewenste vorm.
+ Absoluut! Aspose.Words ondersteunt verschillende vormen. Verander gewoon de`ShapeType` in de gewenste vorm.
 
 ### Heb ik een licentie nodig om Aspose.Words te gebruiken?
-Hoewel u een gratis proefversie of een tijdelijke licentie kunt gebruiken, is voor onbeperkt gebruik een volledige licentie vereist.
+U kunt een gratis proefversie of tijdelijke licentie gebruiken, maar voor onbeperkt gebruik is een volledige licentie vereist.
 
 ### Hoe kan ik de vormen verder stylen?
-U kunt aanvullende eigenschappen en methoden van Aspose.Words gebruiken om het uiterlijk en het gedrag van vormen aan te passen.
+U kunt de aanvullende eigenschappen en methoden van Aspose.Words gebruiken om het uiterlijk en gedrag van vormen aan te passen.
 
 ### Is Aspose.Words compatibel met andere formaten?
 Ja, Aspose.Words ondersteunt meerdere documentformaten, waaronder DOCX, PDF, HTML en meer.

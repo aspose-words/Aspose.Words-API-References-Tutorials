@@ -74,7 +74,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 }
 ```
 
- Tato smyčka prochází každým odstavcem a používá`IsMoveFromRevision`a`IsMoveToRevision` vlastnosti k určení, zda byl odstavec přesunut (smazán) nebo přesunut (vložen).
+ Tato smyčka prochází každým odstavcem a používá`IsMoveFromRevision` a`IsMoveToRevision` vlastnosti k určení, zda byl odstavec přesunut (smazán) nebo přesunut (vložen).
 
 ## Závěr
 

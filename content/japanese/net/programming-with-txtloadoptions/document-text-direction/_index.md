@@ -13,7 +13,7 @@ Word 文書、特に複数の言語や特殊な書式設定が必要な文書を
 
 ## 前提条件
 
-コードに進む前に、次のものを用意しておいてください。
+コードに進む前に、次のものを用意してください。
 
 -  Aspose.Words for .NET ライブラリ: Aspose.Words for .NET がインストールされていることを確認してください。[Aspose ウェブサイト](https://releases.aspose.com/words/net/).
 - Visual Studio: C# コードを記述および実行するための開発環境。
@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントが保存されている実際のパスを入力します。
 
-## ステップ 2: ドキュメント方向設定を含む TxtLoadOptions を作成する
+## ステップ 2: ドキュメント方向設定を使用して TxtLoadOptions を作成する
 
 次に、インスタンスを作成する必要があります`TxtLoadOptions`そしてその`DocumentDirection`プロパティ。これは、ドキュメント内のテキストの方向をどのように処理するかを Aspose.Words に指示します。
 

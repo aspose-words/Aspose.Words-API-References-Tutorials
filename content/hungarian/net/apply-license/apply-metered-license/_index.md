@@ -16,7 +16,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi, hogy 
 Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
 1.  Aspose.Words for .NET: Ha még nem tette meg, töltse le a könyvtárat a[Aspose honlapja](https://releases.aspose.com/words/net/).
-2. Érvényes mért licenckulcsok: A kulcsokra van szüksége a mért licenc aktiválásához. Ezeket beszerezheti a[Aspose Vásárlás oldal](https://purchase.aspose.com/buy).
+2.  Érvényes mért licenckulcsok: A kulcsokra van szüksége a mért licenc aktiválásához. Ezeket beszerezheti a[Aspose Vásárlás oldal](https://purchase.aspose.com/buy).
 3. Fejlesztői környezet: Győződjön meg arról, hogy be van állítva egy .NET fejlesztői környezet. A Visual Studio népszerű választás, de bármilyen IDE-t használhat, amely támogatja a .NET-et.
 
 ## Névterek importálása
@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Cserélje ki`"your_public_key"`és`"your_private_key"`az Aspose-tól kapott tényleges kulcsokkal. Ez a lépés lényegében közli az Aspose-val, hogy mérsékelt licencet szeretne használni.
+ Cserélje ki`"your_public_key"` és`"your_private_key"` az Aspose-tól kapott tényleges kulcsokkal. Ez a lépés lényegében közli az Aspose-val, hogy mérsékelt licencet szeretne használni.
 
 ## 3. lépés: Töltse be a dokumentumot
 
@@ -95,7 +95,7 @@ Ez biztosítja, hogy ha valami elromlik, értelmes hibaüzenetet kapjon az alkal
 ## GYIK
 
 ### Mi az a mérős engedély?
-A mért licenc egy felosztó-kirovó modell, ahol csak az Aspose.Words for .NET könyvtár tényleges használatáért kell fizetni, rugalmasságot és költséghatékonyságot kínálva.
+mért licenc egy felosztó-kirovó modell, ahol csak az Aspose.Words for .NET könyvtár tényleges használatáért kell fizetni, rugalmasságot és költséghatékonyságot kínálva.
 
 ### Hol szerezhetem be a mért licenckulcsokat?
  A mért licenckulcsokat a[Aspose Vásárlás oldal](https://purchase.aspose.com/buy).

@@ -117,7 +117,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
  Igen, személyre szabhatja az előtagot minden egyes dokumentum mentésekor, ha módosítja a`CssClassNamePrefix` ingatlan.
 
 ### Ez a módszer támogatja a beépített CSS-t?
- A`CssClassNamePrefix` tulajdonság külső CSS-sel működik. A beépített CSS-hez más megközelítésre lesz szüksége.
+A`CssClassNamePrefix` tulajdonság külső CSS-sel működik. A beépített CSS-hez más megközelítésre lesz szüksége.
 
 ### Hogyan vehetek fel más HTML mentési lehetőségeket?
  Különféle tulajdonságait konfigurálhatja`HtmlSaveOptions` a HTML-kimenet testreszabásához. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.

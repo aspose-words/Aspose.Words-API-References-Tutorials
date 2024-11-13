@@ -16,7 +16,7 @@ Wollten Sie schon immer Ihr Word-Dokument in das Markdown-Format exportieren und
 Bevor wir beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 -  Aspose.Words für .NET: Sie können es herunterladen[Hier](https://releases.aspose.com/words/net/).
--  Eine gültige Lizenz: Erhalten Sie eine kostenlose Testversion[Hier](https://releases.aspose.com/) oder eine vorläufige Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
+-  Eine gültige Lizenz: Erhalten Sie eine kostenlose Testversion[Hier](https://releases.aspose.com/) oder eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
 - Visual Studio: Oder jede andere IDE, die .NET-Entwicklung unterstützt.
 - Grundkenntnisse in C#: Verständnis der Programmiersprache C#.
 
@@ -32,7 +32,7 @@ using System.IO;
 
 ## Schritt 1: Richten Sie Ihr Projekt ein
 
-Richten Sie zunächst Ihr .NET-Projekt in Ihrer IDE ein. Erstellen Sie eine neue Konsolenanwendung und fügen Sie einen Verweis auf Aspose.Words für .NET hinzu.
+Als Erstes richten Sie Ihr .NET-Projekt in Ihrer IDE ein. Erstellen Sie eine neue Konsolenanwendung und fügen Sie einen Verweis auf Aspose.Words für .NET hinzu.
 
 ### 1.1 Neues Projekt erstellen
 
@@ -100,7 +100,7 @@ Ja, Aspose.Words für .NET kann mit jeder .NET-kompatiblen Sprache wie VB.NET, F
 
 ### Wie erhalte ich eine temporäre Lizenz für Aspose.Words?
 
- Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
+Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
 
 ### Welche Dokumenttypen kann ich in Markdown konvertieren?
 

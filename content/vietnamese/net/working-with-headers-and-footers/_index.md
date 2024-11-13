@@ -1,18 +1,18 @@
 ---
-title: Xử lý từ với đầu trang và chân trang
-linktitle: Xử lý từ với đầu trang và chân trang
+title: Xử lý từ với tiêu đề và chân trang
+linktitle: Xử lý từ với tiêu đề và chân trang
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách làm việc với đầu trang và chân trang trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn đầy đủ và ví dụ thực tế.
+description: Tìm hiểu cách làm việc với tiêu đề và chân trang trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn đầy đủ và ví dụ thực tế.
 type: docs
 weight: 730
 url: /vi/net/working-with-headers-and-footers/
 ---
 
-Xử lý văn bản với đầu trang và chân trang là tài nguyên toàn diện để tìm hiểu cách thao tác và tùy chỉnh đầu trang và chân trang trong tài liệu Word bằng cách sử dụng thư viện Aspose.Words cho .NET. Hướng dẫn cung cấp giải thích chi tiết, ví dụ về mã và hướng dẫn từng bước để thêm, sửa đổi và xóa đầu trang và chân trang, đặt đầu trang và chân trang khác nhau cho các phần khác nhau của tài liệu, chèn hình ảnh, bảng, trường động, v.v. Tài nguyên này rất cần thiết cho các nhà phát triển muốn tạo tài liệu Word tùy chỉnh, chuyên nghiệp với đầu trang và chân trang phù hợp với nhu cầu cụ thể của họ.
+Words Processing with Headers and Footers là một nguồn tài nguyên toàn diện để tìm hiểu cách thao tác và tùy chỉnh header và footers trong tài liệu Word bằng cách sử dụng thư viện Aspose.Words cho .NET. Các hướng dẫn cung cấp các giải thích chi tiết, ví dụ về mã và hướng dẫn từng bước để thêm, sửa đổi và xóa header và footers, thiết lập các header và footers khác nhau cho các phần khác nhau của tài liệu, chèn hình ảnh, bảng, trường động và nhiều hơn nữa. Nguồn tài nguyên này rất cần thiết cho các nhà phát triển muốn tạo các tài liệu Word chuyên nghiệp, tùy chỉnh với header và footers được thiết kế riêng theo nhu cầu cụ thể của họ.
 
 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Tạo đầu trang chân trang](./create-header-footer/) | Tìm hiểu cách tạo đầu trang và chân trang trong tài liệu Word của bạn bằng Aspose.Words cho .NET. Tùy chỉnh đầu trang và chân trang cho mỗi trang. |
-| [Sao chép đầu trang chân trang từ phần trước](./copy-headers-footers-from-previous-section/) | Tìm hiểu cách sao chép đầu trang và chân trang từ phần trước trong tài liệu Word bằng Aspose.Words for .NET. |
+| [Tạo Header Footer](./create-header-footer/) | Tìm hiểu cách tạo tiêu đề và chân trang trong tài liệu Word của bạn bằng Aspose.Words cho .NET. Tùy chỉnh tiêu đề và chân trang cho từng trang. |
+| [Sao chép Tiêu đề Chân trang Từ Phần Trước](./copy-headers-footers-from-previous-section/) | Tìm hiểu cách sao chép tiêu đề và chân trang từ phần trước trong tài liệu Word bằng Aspose.Words cho .NET. |

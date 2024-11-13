@@ -9,7 +9,7 @@ url: /zh/net/programming-with-document-options-and-settings/set-russian-as-defau
 ---
 ## 介绍
 
-在当今的多语言世界中，经常需要自定义文档以满足不同受众的语言偏好。在 Word 文档中设置默认编辑语言就是这样一种自定义。如果您使用的是 Aspose.Words for .NET，本教程将指导您将俄语设置为 Word 文档中的默认编辑语言。 
+在当今的多语言世界中，经常需要自定义文档以满足不同受众的语言偏好。在 Word 文档中设置默认编辑语言就是这样一种自定义。如果您使用 Aspose.Words for .NET，本教程将指导您将俄语设置为 Word 文档中的默认编辑语言。 
 
 本分步指南可确保您了解该过程的每个部分，从设置环境到验证文档中的语言设置。
 

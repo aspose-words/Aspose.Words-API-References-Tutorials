@@ -66,7 +66,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
 Τέλος, αποθηκεύουμε το έγγραφο ως αρχείο HTML χρησιμοποιώντας τις διαμορφωμένες επιλογές αποθήκευσης. Αυτό το βήμα διασφαλίζει ότι όλοι οι κανόνες CSS είναι γραμμένοι σε ένα μόνο αρχείο.
 
 ```csharp
-//Μετατροπή εγγράφου σε σταθερό HTML
+// Μετατροπή εγγράφου σε σταθερό HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
 ```
 
@@ -89,4 +89,4 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 Το Aspose.Words για .NET υποστηρίζει διάφορες μορφές, όπως PDF, TXT και μορφές εικόνας όπως JPEG και PNG.
 
 ### Πού μπορώ να βρω περισσότερους πόρους στο Aspose.Words για .NET;
- Ελέγξτε το[απόδειξη με έγγραφα](https://reference.aspose.com/words/net/) για αναλυτικούς οδηγούς και αναφορές API.
+ Ελέγξτε το[απόδειξη με έγγραφα](https://reference.aspose.com/words/net/)για αναλυτικούς οδηγούς και αναφορές API.

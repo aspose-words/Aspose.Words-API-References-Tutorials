@@ -50,18 +50,6 @@ Most itt az ideje konvertálni a betöltött dokumentumot a kiválasztott kimene
 doc.save("output.pdf", SaveFormat.PDF);
 ```
 
-## 6. lépés: A kivételek kezelése
-
-Amikor dokumentumokkal dolgozik, elengedhetetlen a kivételek kecses kezelése. Az Aspose.Words for Java kivételkezelési mechanizmusokat biztosít az alkalmazás zökkenőmentes működéséhez.
-
-```java
-try {
-    // Itt végezze el a dokumentum konvertálását
-} catch (Exception e) {
-    // Kezelje a kivételeket
-}
-```
-
 ## Következtetés
 
 Ebben az útmutatóban megvizsgáltuk, hogyan használhatjuk az Aspose.Words for Java-t dokumentumok különböző formátumokba konvertálására. Ez a hatékony API leegyszerűsíti a dokumentumátalakítási folyamatot, így elérhetővé teszi a Java fejlesztők számára. Mostantól könnyedén, hatékonyan konvertálhat dokumentumokat Java-alkalmazásaiban.
@@ -86,4 +74,4 @@ Igen, az Aspose.Words for Java alkalmas személyes és kereskedelmi projektekre 
 
 ### Hol érhetem el az Aspose.Words for Java dokumentációját?
 
-Az Aspose.Words for Java átfogó dokumentációját itt találja[Aspose.Words for Java API References](https://reference.aspose.com/words/java/).
+ Az Aspose.Words for Java átfogó dokumentációját itt találja[Aspose.Words for Java API References](https://reference.aspose.com/words/java/).

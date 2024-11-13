@@ -9,7 +9,7 @@ url: /de/net/join-and-append-documents/join-continuous/
 ---
 ## Einführung
 
-Möchten Sie zwei Word-Dokumente nahtlos und ohne Umbrüche zu einem zusammenführen? Aspose.Words für .NET bietet mit der Funktion „Kontinuierlicher Abschnittsumbruch“ eine fantastische Möglichkeit, dies zu erreichen. Dieses Tutorial führt Sie Schritt für Schritt durch den Vorgang und stellt sicher, dass Sie Dokumente problemlos und ohne Aufwand zusammenführen können. Tauchen Sie ein!
+Möchten Sie zwei Word-Dokumente nahtlos und ohne Umbrüche zu einem zusammenführen? Aspose.Words für .NET bietet mit der Funktion „Kontinuierlicher Abschnittsumbruch“ eine fantastische Möglichkeit, dies zu erreichen. Dieses Tutorial führt Sie Schritt für Schritt durch den Vorgang und stellt sicher, dass Sie Dokumente problemlos und ohne Aufwand zusammenführen können. Lassen Sie uns eintauchen!
 
 ## Voraussetzungen
 
@@ -49,7 +49,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-Stellen Sie sicher, dass die Dateinamen und Pfade mit den tatsächlichen Dateien übereinstimmen, die Sie verwenden möchten.
+Stellen Sie sicher, dass die Dateinamen und Pfade mit den tatsächlich zu verwendenden Dateien übereinstimmen.
 
 ## Schritt 3: Abschnittsanfang als fortlaufend festlegen
 

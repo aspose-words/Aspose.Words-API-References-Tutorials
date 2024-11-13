@@ -2,7 +2,7 @@
 title: Silbentrennungs-Rückruf
 linktitle: Silbentrennungs-Rückruf
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie mit dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie in Aspose.Words für .NET die Silbentrennungs-Rückruffunktion implementieren, um die Dokumentformatierung zu verbessern.
+description: Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie in Aspose.Words für .NET die Silbentrennungs-Rückruffunktion implementieren, um die Dokumentformatierung zu verbessern.
 type: docs
 weight: 10
 url: /de/net/working-with-hyphenation/hyphenation-callback/
@@ -10,7 +10,7 @@ url: /de/net/working-with-hyphenation/hyphenation-callback/
 
 ## Einführung
 
-Hallo! Haben Sie sich schon einmal mit den Komplexitäten der Textformatierung herumgeschlagen, insbesondere bei Sprachen, die Silbentrennung erfordern? Damit sind Sie nicht allein. Silbentrennung ist zwar für ein korrektes Textlayout entscheidend, kann aber auch ein wenig Kopfzerbrechen bereiten. Aber wissen Sie was? Aspose.Words für .NET unterstützt Sie dabei. Mit dieser leistungsstarken Bibliothek können Sie die Textformatierung nahtlos verwalten, einschließlich der Silbentrennung über einen Rückrufmechanismus. Neugierig? Lassen Sie uns in die Einzelheiten eintauchen und sehen, wie Sie mit Aspose.Words für .NET einen Silbentrennungsrückruf implementieren können.
+Hallo! Haben Sie sich schon einmal mit den Komplexitäten der Textformatierung herumgeschlagen, insbesondere bei Sprachen, die Silbentrennung erfordern? Damit sind Sie nicht allein. Silbentrennung ist zwar für ein korrektes Textlayout entscheidend, kann aber auch ein wenig Kopfzerbrechen bereiten. Aber wissen Sie was? Aspose.Words für .NET unterstützt Sie dabei. Mit dieser leistungsstarken Bibliothek können Sie die Textformatierung nahtlos verwalten, einschließlich der Silbentrennung über einen Rückrufmechanismus. Neugierig geworden? Lassen Sie uns in die Einzelheiten eintauchen und sehen, wie Sie mit Aspose.Words für .NET einen Silbentrennungsrückruf implementieren können.
 
 ## Voraussetzungen
 
@@ -80,7 +80,7 @@ document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 
 Diese Zeile speichert das Dokument als PDF mit angewendeter Silbentrennung.
 
-## Schritt 5: Behandeln Sie die Wörterbuchausnahme für fehlende Silbentrennung
+## Schritt 5: Behandeln der Wörterbuchausnahme „Fehlende Silbentrennung“
 
 Manchmal kann es vorkommen, dass das Silbentrennungswörterbuch fehlt. Wir kümmern uns darum.
 

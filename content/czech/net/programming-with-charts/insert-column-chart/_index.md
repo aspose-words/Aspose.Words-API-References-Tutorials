@@ -52,7 +52,7 @@ Chart chart = shape.Chart;
 
 ## Krok 3: Přidejte data do grafu
 
- Přidejte datové řady do grafu pomocí`Series` vlastnictvím`Chart` objekt.
+ Přidejte datové řady do grafu pomocí`Series` vlastnictví`Chart` objekt.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new string[] { "Category 1", "Category 2" }, new double[] { 1, 2 });
@@ -85,5 +85,5 @@ Data můžete dynamicky naplnit do sloupcového grafu načtením dat z databáz�
 Ano, Aspose.Words for .NET vám umožňuje ukládat dokumenty s grafy v různých formátech včetně PDF, HTML a obrázků.
 
 ### Kde mohu získat další podporu nebo pomoc pro Aspose.Words pro .NET?
- Pro další pomoc navštivte[Aspose.Words for .NET fórum](https://forum.aspose.com/c/words/8) nebo kontaktujte podporu Aspose.
+ Pro další pomoc navštivte stránku[Aspose.Words for .NET fórum](https://forum.aspose.com/c/words/8) nebo kontaktujte podporu Aspose.
 

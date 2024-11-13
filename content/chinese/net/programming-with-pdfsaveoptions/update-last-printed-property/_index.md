@@ -15,7 +15,7 @@ url: /zh/net/programming-with-pdfsaveoptions/update-last-printed-property/
 
 在开始之前，请确保您已满足以下先决条件：
 
--  Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。如果您还没有安装，可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。如果尚未安装，可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
 - 开发环境：像 Visual Studio 这样的开发环境。
 - 对 C# 的基本了解：熟悉一些 C# 将会很有帮助。
 - 文档：您想要转换为 PDF 并更新最后打印属性的 Word 文档。
@@ -53,10 +53,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 我们需要配置 PDF 保存选项以更新上次打印的属性。创建一个新的实例`PdfSaveOptions`并设置`UpdateLastPrintedProperty`财产`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	UpdateLastPrintedProperty = true 
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 ## 步骤 5：将文档保存为 PDF
@@ -83,7 +80,7 @@ Aspose.Words for .NET 是一个强大的库，用于.NET 应用程序中的文�
 是的，Aspose.Words for .NET 允许您更新各种文档属性，例如作者、标题、主题等。
 
 ### Aspose.Words for .NET 免费吗？
-Aspose.Words for .NET 提供免费试用版，您可以下载[这里](https://releases.aspose.com/)。如需扩展使用，则需要购买许可证。
+Aspose.Words for .NET 提供免费试用版，您可以下载[这里](https://releases.aspose.com/)。如需延长使用时间，您需要购买许可证。
 
 ### 在哪里可以找到有关 Aspose.Words for .NET 的更多文档？
 您可以找到有关 Aspose.Words for .NET 的详细文档[这里](https://reference.aspose.com/words/net/).

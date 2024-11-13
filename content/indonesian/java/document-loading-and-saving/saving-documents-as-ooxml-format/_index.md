@@ -10,15 +10,15 @@ url: /id/java/document-loading-and-saving/saving-documents-as-ooxml-format/
 
 ## Pengantar Menyimpan Dokumen sebagai Format OOXML di Aspose.Words untuk Java
 
-Dalam panduan ini, kita akan mempelajari cara menyimpan dokumen dalam format OOXML menggunakan Aspose.Words untuk Java. OOXML (Office Open XML) adalah format file yang digunakan oleh Microsoft Word dan aplikasi perkantoran lainnya. Kami akan membahas berbagai opsi dan pengaturan untuk menyimpan dokumen dalam format OOXML.
+Dalam panduan ini, kita akan membahas cara menyimpan dokumen dalam format OOXML menggunakan Aspose.Words untuk Java. OOXML (Office Open XML) adalah format file yang digunakan oleh Microsoft Word dan aplikasi perkantoran lainnya. Kami akan membahas berbagai opsi dan pengaturan untuk menyimpan dokumen dalam format OOXML.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda telah menyiapkan pustaka Aspose.Words untuk Java di proyek Anda.
+Sebelum memulai, pastikan Anda telah menyiapkan pustaka Aspose.Words untuk Java di proyek Anda.
 
 ## Menyimpan Dokumen dengan Enkripsi Kata Sandi
 
-Anda dapat mengenkripsi dokumen Anda dengan kata sandi sambil menyimpannya dalam format OOXML. Inilah cara Anda melakukannya:
+Anda dapat mengenkripsi dokumen Anda dengan kata sandi saat menyimpannya dalam format OOXML. Berikut cara melakukannya:
 
 ```java
 import com.aspose.words.Document;
@@ -27,7 +27,7 @@ import com.aspose.words.OoxmlSaveOptions;
 // Muat dokumen
 Document doc = new Document("Document.docx");
 
-// Buat OoxmlSaveOptions dan atur kata sandi
+// Buat OoxmlSaveOptions dan atur kata sandinya
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setPassword("password");
 
@@ -35,9 +35,9 @@ saveOptions.setPassword("password");
 doc.save("EncryptedDoc.docx", saveOptions);
 ```
 
-## Mengatur Kepatuhan OOXML
+## Menetapkan Kepatuhan OOXML
 
-Anda dapat menentukan tingkat kepatuhan OOXML saat menyimpan dokumen. Misalnya, Anda dapat mengaturnya ke ISO 29500:2008 (Ketat). Begini caranya:
+Anda dapat menentukan tingkat kepatuhan OOXML saat menyimpan dokumen. Misalnya, Anda dapat mengaturnya ke ISO 29500:2008 (Ketat). Berikut caranya:
 
 ```java
 import com.aspose.words.Document;
@@ -59,9 +59,9 @@ saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_STRICT);
 doc.save("ComplianceDoc.docx", saveOptions);
 ```
 
-## Memperbarui Properti Waktu Tersimpan Terakhir
+## Memperbarui Properti Waktu Terakhir yang Disimpan
 
-Anda dapat memilih untuk memperbarui properti "Waktu Tersimpan Terakhir" pada dokumen saat menyimpannya. Begini caranya:
+Anda dapat memilih untuk memperbarui properti "Waktu Terakhir Disimpan" dari dokumen saat menyimpannya. Berikut caranya:
 
 ```java
 import com.aspose.words.Document;
@@ -70,7 +70,7 @@ import com.aspose.words.OoxmlSaveOptions;
 // Muat dokumen
 Document doc = new Document("Document.docx");
 
-// Buat OoxmlSaveOptions dan aktifkan pembaruan properti Waktu Tersimpan Terakhir
+// Buat OoxmlSaveOptions dan aktifkan pembaruan properti Waktu Terakhir Disimpan
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setUpdateLastSavedTimeProperty(true);
 
@@ -80,17 +80,17 @@ doc.save("UpdatedLastSavedTime.docx", saveOptions);
 
 ## Mempertahankan Karakter Kontrol Warisan
 
-Jika dokumen Anda berisi karakter kontrol lama, Anda dapat memilih untuk menyimpannya saat menyimpannya. Begini caranya:
+Jika dokumen Anda berisi karakter kontrol lama, Anda dapat memilih untuk menyimpannya saat menyimpan. Berikut caranya:
 
 ```java
 import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.SaveFormat;
 
-// Muat dokumen dengan karakter kontrol lama
+//Memuat dokumen dengan karakter kontrol lama
 Document doc = new Document("LegacyControlChars.doc");
 
-//Buat OoxmlSaveOptions dengan format FLAT_OPC dan aktifkan penyimpanan karakter kontrol lama
+// Buat OoxmlSaveOptions dengan format FLAT_OPC dan aktifkan penyimpanan karakter kontrol lama
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
 saveOptions.setKeepLegacyControlChars(true);
 
@@ -100,7 +100,7 @@ doc.save("LegacyControlCharsPreserved.docx", saveOptions);
 
 ## Mengatur Tingkat Kompresi
 
-Anda dapat mengatur tingkat kompresi saat menyimpan dokumen. Misalnya, Anda dapat menyetelnya ke SUPER_FAST untuk kompresi minimal. Begini caranya:
+Anda dapat menyesuaikan tingkat kompresi saat menyimpan dokumen. Misalnya, Anda dapat mengaturnya ke SUPER_FAST untuk kompresi minimal. Berikut caranya:
 
 ```java
 import com.aspose.words.Document;
@@ -118,9 +118,9 @@ saveOptions.setCompressionLevel(CompressionLevel.SUPER_FAST);
 doc.save("FastCompressionDoc.docx", saveOptions);
 ```
 
-Ini adalah beberapa opsi dan pengaturan utama yang dapat Anda gunakan saat menyimpan dokumen dalam format OOXML menggunakan Aspose.Words untuk Java. Jangan ragu untuk menjelajahi lebih banyak opsi dan menyesuaikan proses penyimpanan dokumen sesuai kebutuhan.
+Berikut ini adalah beberapa opsi dan pengaturan utama yang dapat Anda gunakan saat menyimpan dokumen dalam format OOXML menggunakan Aspose.Words untuk Java. Jangan ragu untuk menjelajahi lebih banyak opsi dan menyesuaikan proses penyimpanan dokumen sesuai kebutuhan.
 
-## Kode Sumber Lengkap Untuk Menyimpan Dokumen sebagai Format OOXML di Aspose.Words untuk Java
+## Source Code Lengkap Untuk Menyimpan Dokumen dalam Format OOXML di Aspose.Words untuk Java
 
 ```java
 public void encryptDocxWithPassword() throws Exception
@@ -162,18 +162,18 @@ public void setCompressionLevel() throws Exception
 
 ## Kesimpulan
 
-Dalam panduan komprehensif ini, kami telah mempelajari cara menyimpan dokumen dalam format OOXML menggunakan Aspose.Words untuk Java. Baik Anda perlu mengenkripsi dokumen Anda dengan kata sandi, memastikan kepatuhan terhadap standar OOXML tertentu, memperbarui properti dokumen, mempertahankan karakter kontrol lama, atau menyesuaikan tingkat kompresi, Aspose.Words menyediakan serangkaian alat serbaguna untuk memenuhi kebutuhan Anda.
+Dalam panduan lengkap ini, kami telah menjajaki cara menyimpan dokumen dalam format OOXML menggunakan Aspose.Words untuk Java. Baik Anda perlu mengenkripsi dokumen dengan kata sandi, memastikan kepatuhan terhadap standar OOXML tertentu, memperbarui properti dokumen, mempertahankan karakter kontrol lama, atau menyesuaikan tingkat kompresi, Aspose.Words menyediakan serangkaian alat serbaguna untuk memenuhi kebutuhan Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menghapus proteksi kata sandi dari dokumen yang dilindungi kata sandi?
 
-Untuk menghapus proteksi kata sandi dari dokumen yang dilindungi kata sandi, Anda dapat membuka dokumen dengan kata sandi yang benar lalu menyimpannya tanpa menentukan kata sandi di opsi penyimpanan. Ini akan menyimpan dokumen tanpa proteksi kata sandi.
+Untuk menghapus proteksi kata sandi dari dokumen yang dilindungi kata sandi, Anda dapat membuka dokumen tersebut dengan kata sandi yang benar lalu menyimpannya tanpa menentukan kata sandi dalam opsi penyimpanan. Ini akan menyimpan dokumen tanpa proteksi kata sandi.
 
-### Bisakah saya mengatur properti khusus saat menyimpan dokumen dalam format OOXML?
+### Dapatkah saya mengatur properti khusus saat menyimpan dokumen dalam format OOXML?
 
- Ya, Anda dapat mengatur properti khusus untuk dokumen sebelum menyimpannya dalam format OOXML. Gunakan`BuiltInDocumentProperties`Dan`CustomDocumentProperties` kelas untuk mengatur berbagai properti seperti penulis, judul, kata kunci, dan properti khusus.
+ Ya, Anda dapat mengatur properti khusus untuk dokumen sebelum menyimpannya dalam format OOXML. Gunakan`BuiltInDocumentProperties` Dan`CustomDocumentProperties` kelas untuk menetapkan berbagai properti seperti penulis, judul, kata kunci, dan properti khusus.
 
 ### Berapa tingkat kompresi default saat menyimpan dokumen dalam format OOXML?
 
- Tingkat kompresi default saat menyimpan dokumen dalam format OOXML menggunakan Aspose.Words untuk Java adalah`NORMAL` . Anda dapat mengubah tingkat kompresi menjadi`SUPER_FAST` atau`MAXIMUM` sesuai kebutuhan.
+ Tingkat kompresi default saat menyimpan dokumen dalam format OOXML menggunakan Aspose.Words untuk Java adalah`NORMAL` Anda dapat mengubah tingkat kompresi menjadi`SUPER_FAST` atau`MAXIMUM` sesuai kebutuhan.

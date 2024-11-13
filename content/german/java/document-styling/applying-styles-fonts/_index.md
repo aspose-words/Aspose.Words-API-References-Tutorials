@@ -114,4 +114,4 @@ Aspose.Words für Java kann Dokumente unterschiedlicher Größe und Komplexität
 
 ## Abschluss
 
-In diesem umfassenden Handbuch haben wir die Kunst der Anwendung von Stilen und Schriftarten in Dokumenten mit Aspose.Words für Java erkundet. Egal, ob Sie Geschäftsberichte erstellen, Rechnungen generieren oder schöne Dokumente gestalten, die Beherrschung der Dokumentformatierung ist von entscheidender Bedeutung. Mit der Leistung von Aspose.Words für Java haben Sie die Werkzeuge, um Ihre Dokumente zum Glänzen zu bringen.
+In diesem umfassenden Handbuch haben wir die Kunst der Anwendung von Stilen und Schriftarten in Dokumenten mit Aspose.Words für Java erkundet. Egal, ob Sie Geschäftsberichte erstellen, Rechnungen generieren oder schöne Dokumente gestalten, die Beherrschung der Dokumentformatierung ist entscheidend. Mit der Leistung von Aspose.Words für Java haben Sie die Werkzeuge, um Ihre Dokumente zum Glänzen zu bringen.

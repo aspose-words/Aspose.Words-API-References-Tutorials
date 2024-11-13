@@ -60,7 +60,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## 結論
 
-現在你就得到它了！透過在載入 Word 文件時使用臨時資料夾，您可以顯著提高應用程式的效能和效率，尤其是在處理大型檔案時。 Aspose.Words for .NET 的這項簡單而強大的功能有助於更好地管理資源並確保更順暢的文件處理。
+現在你就擁有了！透過在載入 Word 文件時使用臨時資料夾，您可以顯著提高應用程式的效能和效率，尤其是在處理大型檔案時。 Aspose.Words for .NET 的這項簡單而強大的功能有助於更好地管理資源並確保更順暢的文件處理。
 
 ## 常見問題解答
 

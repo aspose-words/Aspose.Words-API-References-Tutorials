@@ -1,7 +1,7 @@
 ---
 title: Visualisieren von Daten mit dynamischen Dokumentdiagrammen
 linktitle: Visualisieren von Daten mit dynamischen Dokumentdiagrammen
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python dynamische Dokumentdiagramme erstellen. Verbessern Sie die Datenvisualisierung in Ihren Dokumenten mit interaktiven Diagrammen.
 type: docs
 weight: 10

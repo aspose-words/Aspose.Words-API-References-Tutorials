@@ -15,10 +15,10 @@ url: /hi/net/working-with-list/restart-list-at-each-section/
 
 आरंभ करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
 
-1.  Aspose.Words for .NET: नवीनतम संस्करण डाउनलोड करें और इंस्टॉल करें[एस्पोज रिलीज](https://releases.aspose.com/words/net/) पृष्ठ.
+1.  .NET के लिए Aspose.Words: नवीनतम संस्करण डाउनलोड करें और इंस्टॉल करें[एस्पोज रिलीज](https://releases.aspose.com/words/net/) पृष्ठ.
 2. .NET वातावरण: .NET स्थापित करके अपना विकास वातावरण सेट करें।
 3. C# की बुनियादी समझ: C# प्रोग्रामिंग भाषा से परिचित होना अनुशंसित है।
-4.  Aspose लाइसेंस: आप एक का विकल्प चुन सकते हैं[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) यदि आपके पास एक नहीं है.
+4.  Aspose लाइसेंस: आप एक का विकल्प चुन सकते हैं[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) यदि आपके पास नहीं है.
 
 ## नामस्थान आयात करें
 
@@ -87,7 +87,7 @@ for (int i = 1; i < 45; i++)
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
+doc.Save(dataDir + "WorkingWithList.RestartListAtEachSection.docx", options);		
 ```
 
 ## निष्कर्ष
@@ -99,7 +99,7 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ### क्या मैं विभिन्न सूची प्रकारों के लिए प्रत्येक अनुभाग पर सूचियों को पुनः आरंभ कर सकता हूँ?
 हां, .NET के लिए Aspose.Words आपको बुलेट और क्रमांकित सूचियों सहित विभिन्न सूची प्रकारों को पुनः आरंभ करने की अनुमति देता है।
 
-### यदि मैं नंबरिंग प्रारूप को अनुकूलित करना चाहूं तो क्या होगा?
+### यदि मैं नंबरिंग प्रारूप को अनुकूलित करना चाहूँ तो क्या होगा?
  आप संख्या प्रारूप को संशोधित करके अनुकूलित कर सकते हैं`ListTemplate` सूची बनाते समय संपत्ति का उपयोग करें।
 
 ### क्या सूची में आइटमों की संख्या की कोई सीमा होती है?

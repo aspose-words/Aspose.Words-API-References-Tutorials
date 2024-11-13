@@ -1,22 +1,22 @@
 ---
-title: Gebruik maken van commentaarfuncties in Word-documenten
-linktitle: Gebruik maken van commentaarfuncties in Word-documenten
-second_title: Aspose.Words Python Documentbeheer-API
-description: Leer hoe u commentaarfuncties in Word-documenten kunt gebruiken met Aspose.Words voor Python. Stap-voor-stap handleiding met broncode. Verbeter de samenwerking en stroomlijn beoordelingen in documenten.
+title: Gebruik van commentaarfuncties in Word-documenten
+linktitle: Gebruik van commentaarfuncties in Word-documenten
+second_title: Aspose.Words Python-API voor documentbeheer
+description: Leer hoe u commentaarfuncties in Word-documenten kunt gebruiken met Aspose.Words voor Python. Stapsgewijze handleiding met broncode. Verbeter samenwerking en stroomlijn beoordelingen in documenten.
 type: docs
 weight: 11
 url: /nl/python-net/document-structure-and-content-manipulation/document-comments/
 ---
 
-Opmerkingen spelen een cruciale rol bij het samenwerken en beoordelen van documenten, waardoor meerdere personen hun gedachten en suggesties binnen een Word-document kunnen delen. Aspose.Words voor Python biedt een krachtige API waarmee ontwikkelaars moeiteloos met opmerkingen in Word-documenten kunnen werken. In dit artikel zullen we onderzoeken hoe u de commentaarfuncties in Word-documenten kunt gebruiken met Aspose.Words voor Python.
+Opmerkingen spelen een cruciale rol bij het samenwerken en beoordelen van documenten, waardoor meerdere personen hun gedachten en suggesties kunnen delen in een Word-document. Aspose.Words voor Python biedt een krachtige API waarmee ontwikkelaars moeiteloos met opmerkingen in Word-documenten kunnen werken. In dit artikel onderzoeken we hoe u de opmerkingenfuncties in Word-documenten kunt gebruiken met Aspose.Words voor Python.
 
 ## Invoering
 
-Samenwerking is een fundamenteel aspect bij het maken van documenten, en opmerkingen bieden meerdere gebruikers een naadloze manier om hun feedback en gedachten binnen een document te delen. Aspose.Words voor Python, een krachtige bibliotheek voor documentmanipulatie, stelt ontwikkelaars in staat programmatisch met Word-documenten te werken, inclusief het toevoegen, wijzigen en ophalen van commentaar.
+Samenwerking is een fundamenteel aspect van het maken van documenten en opmerkingen bieden een naadloze manier voor meerdere gebruikers om hun feedback en gedachten binnen een document te delen. Aspose.Words voor Python, een krachtige bibliotheek voor documentmanipulatie, stelt ontwikkelaars in staat om programmatisch met Word-documenten te werken, inclusief het toevoegen, wijzigen en ophalen van opmerkingen.
 
 ## Aspose.Words instellen voor Python
 
- Om aan de slag te gaan, moet je Aspose.Words voor Python installeren. U kunt de bibliotheek downloaden via de[Aspose.Woorden voor Python](https://releases.aspose.com/words/python/) downloadlink. Eenmaal gedownload, kun je het installeren met pip:
+ Om te beginnen moet je Aspose.Words voor Python installeren. Je kunt de bibliotheek downloaden van de[Aspose.Woorden voor Python](https://releases.aspose.com/words/python/) downloadlink. Na het downloaden kunt u het installeren met pip:
 
 ```python
 pip install aspose-words
@@ -47,7 +47,7 @@ run.insert_comment(comment)
 
 ## Opmerkingen uit een document ophalen
 
-Het ophalen van opmerkingen uit een document gaat net zo moeiteloos. U kunt de opmerkingen in een document doorlopen en toegang krijgen tot hun eigenschappen:
+Het ophalen van opmerkingen uit een document is net zo moeiteloos. U kunt door de opmerkingen in een document itereren en toegang krijgen tot hun eigenschappen:
 
 ```python
 for comment in doc.comments:
@@ -58,7 +58,7 @@ for comment in doc.comments:
 
 ## Opmerkingen wijzigen en oplossen
 
-Opmerkingen zijn vaak aan verandering onderhevig. Met Aspose.Words voor Python kunt u bestaande opmerkingen wijzigen en als opgelost markeren:
+Opmerkingen zijn vaak onderhevig aan verandering. Met Aspose.Words voor Python kunt u bestaande opmerkingen wijzigen en markeren als opgelost:
 
 ```python
 # Modify a comment's text
@@ -69,9 +69,9 @@ comment.text = "Updated insight: " + comment.text
 comment.resolved = True
 ```
 
-## Het afhandelen van antwoorden en gesprekken
+## Omgaan met antwoorden en gesprekken
 
-Opmerkingen kunnen deel uitmaken van gesprekken, waarbij antwoorden diepte toevoegen aan discussies. Met Aspose.Words voor Python kunt u reacties op reacties beheren:
+Reacties kunnen deel uitmaken van conversaties, waarbij reacties diepgang toevoegen aan discussies. Met Aspose.Words voor Python kunt u reacties op reacties beheren:
 
 ```python
 # Add a reply to a comment
@@ -81,9 +81,9 @@ reply.date_time = aw.DateTime.now()
 comment.replies.add(reply)
 ```
 
-## Opmerkingen opmaken en opmaken
+## Opmaak en styling van opmerkingen
 
-Het opmaken van opmerkingen vergroot de zichtbaarheid ervan. U kunt opmaak toepassen op opmerkingen met Aspose.Words voor Python:
+Het formatteren van opmerkingen verbetert de zichtbaarheid ervan. U kunt opmaak toepassen op opmerkingen met Aspose.Words voor Python:
 
 ```python
 # Apply formatting to a comment
@@ -92,7 +92,7 @@ comment.runs[0].font.bold = True
 comment.runs[0].font.color = aw.Color.red
 ```
 
-## Auteurs van reacties beheren
+## Commentaarauteurs beheren
 
 Opmerkingen worden toegeschreven aan auteurs. Met Aspose.Words voor Python kunt u auteurs van opmerkingen beheren:
 
@@ -114,12 +114,12 @@ doc.save_comments("comments.xml")
 doc.import_comments("comments.xml")
 ```
 
-## Beste praktijken voor het gebruik van opmerkingen
+## Beste werkwijzen voor het gebruik van opmerkingen
 
-- Gebruik opmerkingen om context, uitleg en suggesties te bieden.
-- Houd opmerkingen beknopt en relevant voor de inhoud.
-- Los opmerkingen op wanneer hun punten zijn behandeld.
-- Gebruik antwoorden om gedetailleerde discussies te bevorderen.
+- Gebruik opmerkingen om context, uitleg en suggesties te geven.
+- Zorg dat uw opmerkingen beknopt en relevant zijn voor de inhoud.
+- Los opmerkingen op zodra de punten zijn behandeld.
+- Gebruik reacties om gedetailleerde discussies te stimuleren.
 
 ## Conclusie
 
@@ -133,19 +133,19 @@ Aspose.Words voor Python is een krachtige bibliotheek voor documentmanipulatie w
 
 ### Hoe installeer ik Aspose.Words voor Python?
 
-Je kunt Aspose.Words voor Python installeren met pip:
+U kunt Aspose.Words voor Python installeren met behulp van pip:
 ```python
 pip install aspose-words
 ```
 
-### Kan ik Aspose.Words voor Python gebruiken om bestaande opmerkingen uit een Word-document te extraheren?
+### Kan ik Aspose.Words voor Python gebruiken om bestaande opmerkingen uit een Word-document te halen?
 
-Ja, u kunt de opmerkingen in een document doorlopen en hun eigenschappen ophalen met Aspose.Words voor Python.
+Ja, u kunt door de opmerkingen in een document bladeren en hun eigenschappen ophalen met Aspose.Words voor Python.
 
-### Is het mogelijk om opmerkingen programmatisch te verbergen of weer te geven met behulp van de API?
+### Is het mogelijk om opmerkingen programmatisch te verbergen of te tonen via de API?
 
- Ja, u kunt de zichtbaarheid van opmerkingen beheren met behulp van de`comment.visible` eigenschap in Aspose.Words voor Python.
+ Ja, u kunt de zichtbaarheid van opmerkingen regelen met behulp van de`comment.visible` eigenschap in Aspose.Words voor Python.
 
-### Ondersteunt Aspose.Words voor Python het toevoegen van commentaar aan specifieke tekstgebieden?
+### Ondersteunt Aspose.Words voor Python het toevoegen van opmerkingen aan specifieke tekstbereiken?
 
-Absoluut, je kunt commentaar toevoegen aan specifieke tekstgebieden binnen een document met behulp van Aspose.Words voor de rijke API van Python.
+Jazeker, u kunt opmerkingen toevoegen aan specifieke tekstgedeelten in een document met behulp van Aspose.Words voor de uitgebreide API van Python.

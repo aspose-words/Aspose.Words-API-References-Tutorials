@@ -1,26 +1,26 @@
 ---
 title: Tabelstijl maken
 linktitle: Tabelstijl maken
-second_title: Aspose.Words-API voor documentverwerking
-description: Maak en stijl tabellen in Word-documenten met Aspose.Words voor .NET. Leer stap voor stap hoe u uw documenten kunt verbeteren met professionele tabelopmaak.
+second_title: Aspose.Words API voor documentverwerking
+description: Maak en style tabellen in Word-documenten met Aspose.Words voor .NET. Leer stap voor stap hoe u uw documenten kunt verbeteren met professionele tabelopmaak.
 type: docs
 weight: 10
 url: /nl/net/programming-with-table-styles-and-formatting/create-table-style/
 ---
 ## Invoering
 
-Heeft u ooit vastgelopen bij het opmaken van tabellen in uw Word-documenten met behulp van .NET? Maak je geen zorgen! We duiken vandaag in de fantastische wereld van Aspose.Words voor .NET. We laten u zien hoe u een tabel maakt, aangepaste stijlen toepast en uw document opslaat, allemaal op een eenvoudige, gemoedelijke toon. Of je nu een beginner of een doorgewinterde professional bent, deze gids heeft iets voor jou. Klaar om van uw saaie tafels stijlvolle, professionele tafels te maken? Laten we beginnen!
+Heb je ooit vastgelopen bij het stylen van tabellen in je Word-documenten met .NET? Maak je geen zorgen! Vandaag duiken we in de fantastische wereld van Aspose.Words voor .NET. We laten je zien hoe je een tabel maakt, aangepaste stijlen toepast en je document opslaat, allemaal in een eenvoudige, informele toon. Of je nu een beginner bent of een doorgewinterde professional, deze gids heeft iets voor je. Ben je klaar om je saaie tabellen om te zetten in stijlvolle, professionele tabellen? Laten we beginnen!
 
 ## Vereisten
 
-Voordat we ingaan op de code, zorgen we ervoor dat je alles hebt wat je nodig hebt:
-- Aspose.Words voor .NET: Zorg ervoor dat deze krachtige bibliotheek is geïnstalleerd. Dat kan[download het hier](https://releases.aspose.com/words/net/).
+Voordat we met de code beginnen, controleren we eerst of je alles hebt wat je nodig hebt:
+- Aspose.Words voor .NET: Zorg ervoor dat u deze krachtige bibliotheek hebt geïnstalleerd. U kunt[download het hier](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Visual Studio of een andere .NET-ontwikkelomgeving.
-- Basiskennis van C#: Enige bekendheid met programmeren in C# zal nuttig zijn.
+- Basiskennis van C#: enige kennis van C#-programmering is nuttig.
 
 ## Naamruimten importeren
 
-Allereerst moeten we de benodigde naamruimten importeren. Deze stap zorgt ervoor dat onze code toegang heeft tot alle klassen en methoden die door Aspose.Words voor .NET worden geleverd.
+Allereerst moeten we de benodigde namespaces importeren. Deze stap zorgt ervoor dat onze code toegang heeft tot alle klassen en methoden die Aspose.Words voor .NET biedt.
 
 ```csharp
 using System;
@@ -30,21 +30,21 @@ using Aspose.Words.Tables;
 
 ## Stap 1: Initialiseer het document en DocumentBuilder
 
- In deze stap initialiseren we een nieuw document en een`DocumentBuilder` . De`DocumentBuilder` class biedt een eenvoudige manier om inhoud in een Word-document te maken en op te maken.
+ In deze stap initialiseren we een nieuw document en een`DocumentBuilder` . De`DocumentBuilder` Met de klasse kunt u eenvoudig inhoud in een Word-document maken en opmaken.
 
 ```csharp
-// Pad naar uw documentmap
+// Pad naar uw documentenmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Uitleg: We maken een nieuw document en a`DocumentBuilder` exemplaar waarmee we inhoud aan ons document kunnen toevoegen en opmaken.
+ Uitleg: We maken een nieuw document en een`DocumentBuilder` een voorbeeld dat ons helpt inhoud aan ons document toe te voegen en op te maken.
 
 ## Stap 2: Start de tabel en voeg cellen in
 
-Laten we nu beginnen met het bouwen van onze tafel. We beginnen met het invoegen van cellen en het toevoegen van wat tekst.
+Laten we nu beginnen met het bouwen van onze tabel. We beginnen met het invoegen van cellen en het toevoegen van wat tekst.
 
 ```csharp
 Table table = builder.StartTable();
@@ -58,11 +58,11 @@ builder.InsertCell();
 builder.EndTable();
 ```
 
- Uitleg: Hier gebruiken we de`StartTable` methode om onze tabel te beginnen. Vervolgens voegen we cellen in en voegen tekst toe ("Naam" en "Waarde"). Ten slotte beëindigen we de rij en de tafel.
+ Uitleg: Hier gebruiken we de`StartTable` methode om onze tabel te beginnen. Vervolgens voegen we cellen in en voegen tekst toe ("Naam" en "Waarde"). Ten slotte beëindigen we de rij en de tabel.
 
 ## Stap 3: Tabelstijl toevoegen en aanpassen
 
-Deze stap omvat het maken van een aangepaste tabelstijl en het toepassen ervan op onze tabel. Aangepaste stijlen zorgen ervoor dat onze tafels er professioneler en consistenter uitzien.
+Deze stap omvat het maken van een aangepaste tabelstijl en het toepassen ervan op onze tabel. Aangepaste stijlen zorgen ervoor dat onze tabellen er professioneler en consistenter uitzien.
 
 ```csharp
 TableStyle tableStyle = (TableStyle) doc.Styles.Add(StyleType.Table, "MyTableStyle1");
@@ -75,21 +75,21 @@ tableStyle.BottomPadding = 12;
 table.Style = tableStyle;
 ```
 
-Uitleg: We voegen een nieuwe tabelstijl toe met de naam "MyTableStyle1" en passen deze aan door de randstijl, randbreedte en opvulling in te stellen. Ten slotte passen we deze stijl toe op onze tafel.
+Uitleg: We voegen een nieuwe tabelstijl toe met de naam "MyTableStyle1" en passen deze aan door de borderstijl, borderbreedte en padding in te stellen. Ten slotte passen we deze stijl toe op onze tabel.
 
 ## Stap 4: Sla het document op
 
-Nadat we onze tabel hebben opgemaakt, is het tijd om het document op te slaan. Deze stap zorgt ervoor dat onze wijzigingen worden opgeslagen en dat we het document kunnen openen om onze opgemaakte tabel te bekijken.
+Nadat we onze tabel hebben gestyled, is het tijd om het document op te slaan. Deze stap zorgt ervoor dat onze wijzigingen worden opgeslagen en dat we het document kunnen openen om onze gestylede tabel te bekijken.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.CreateTableStyle.docx");
 ```
 
-Uitleg: We slaan ons document op in de opgegeven map met een beschrijvende bestandsnaam.
+Uitleg: We slaan ons document op in de opgegeven directory met een beschrijvende bestandsnaam.
 
 ## Conclusie
 
-Gefeliciteerd! U hebt met succes een tabel in een Word-document gemaakt en opgemaakt met Aspose.Words voor .NET. Door deze handleiding te volgen, kunt u nu professioneel ogende tabellen aan uw documenten toevoegen, waardoor de leesbaarheid en visuele aantrekkingskracht ervan wordt vergroot. Blijf experimenteren met verschillende stijlen en aanpassingen om uw documenten te laten opvallen!
+Gefeliciteerd! U hebt met succes een tabel gemaakt en gestyled in een Word-document met Aspose.Words voor .NET. Door deze handleiding te volgen, kunt u nu professioneel ogende tabellen toevoegen aan uw documenten, waardoor de leesbaarheid en visuele aantrekkingskracht ervan worden verbeterd. Blijf experimenteren met verschillende stijlen en aanpassingen om uw documenten te laten opvallen!
 
 ## Veelgestelde vragen
 
@@ -100,10 +100,10 @@ Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werk
 Ja, u kunt Aspose.Words voor .NET gebruiken met elke .NET-taal, inclusief VB.NET en F#.
 
 ### Hoe pas ik een tabelstijl toe op een bestaande tabel?
- U kunt een tabelstijl toepassen op een bestaande tabel door de stijl te maken en vervolgens de tabelstijl in te stellen`Style` pand naar de nieuwe stijl.
+ U kunt een tabelstijl toepassen op een bestaande tabel door de stijl te maken en vervolgens de tabelstijl in te stellen.`Style` eigendom aan de nieuwe stijl.
 
 ### Zijn er andere manieren om tabelstijlen aan te passen?
-Ja, u kunt tabelstijlen op vele manieren aanpassen, waaronder het wijzigen van de achtergrondkleur, lettertypestijlen en meer.
+Ja, u kunt tabelstijlen op veel manieren aanpassen, waaronder het wijzigen van de achtergrondkleur, lettertypestijlen en meer.
 
 ### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
- U kunt meer gedetailleerde documentatie vinden[hier](https://reference.aspose.com/words/net/).
+ Meer gedetailleerde documentatie vindt u hier[hier](https://reference.aspose.com/words/net/).

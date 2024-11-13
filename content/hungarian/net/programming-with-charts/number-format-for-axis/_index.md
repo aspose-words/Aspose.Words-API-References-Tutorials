@@ -46,7 +46,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Itt,`dataDir` a dokumentumkönyvtár elérési útja, ahová a végső fájlt menteni fogja.`Document`és`DocumentBuilder` az Aspose.Words osztályai, amelyek segítenek a Word dokumentumok létrehozásában és kezelésében.
+ Itt,`dataDir` a dokumentumkönyvtár elérési útja, ahová a végső fájlt menteni fogja.`Document` és`DocumentBuilder` az Aspose.Words osztályai, amelyek segítenek a Word dokumentumok létrehozásában és kezelésében.
 
 ## 2. lépés: Diagram beszúrása
 
@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- A`InsertChart` metódus meghatározott típusú (jelen esetben oszlop) és méretű diagramot szúr be a dokumentumba.
+A`InsertChart` metódus meghatározott típusú (jelen esetben oszlop) és méretű diagramot szúr be a dokumentumba.
 
 ## 3. lépés: A diagramsorozat testreszabása
 
@@ -86,7 +86,7 @@ Végül formázzuk meg a számokat az Y tengelyen, hogy jobban olvashatóak legy
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
- A`FormatCode` tulajdonság lehetővé teszi, hogy egyéni formátumot állítson be a tengelyen lévő számokhoz. Ebben a példában`#,##0`biztosítja, hogy a nagy számok ezres vesszővel együtt jelenjenek meg.
+A`FormatCode` tulajdonság lehetővé teszi, hogy egyéni formátumot állítson be a tengelyen lévő számokhoz. Ebben a példában`#,##0`biztosítja, hogy a nagy számok ezres vesszővel együtt jelenjenek meg.
 
 ## 5. lépés: A dokumentum mentése
 

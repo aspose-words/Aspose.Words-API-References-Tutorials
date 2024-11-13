@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Βήμα 2: Ξεκινήστε τη δημιουργία πίνακα
+## Βήμα 2: Ξεκινήστε τη δημιουργία ενός πίνακα
 
 Στη συνέχεια, χρησιμοποιήστε το DocumentBuilder για να ξεκινήσετε τη δημιουργία ενός πίνακα και να εισαγάγετε το πρώτο κελί.
 
@@ -144,4 +144,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 Ενώ το Aspose.Words δεν υποστηρίζει απευθείας εικόνες ως φόντο κελιών, μπορείτε να εισαγάγετε μια εικόνα σε ένα κελί και να προσαρμόσετε το μέγεθός της ώστε να καλύπτει την περιοχή του κελιού.
 
 ### Πώς μπορώ να συγχωνεύσω κελιά σε έναν πίνακα;
- Μπορείτε να συγχωνεύσετε κελιά χρησιμοποιώντας το`CellFormat.HorizontalMerge`και`CellFormat.VerticalMerge` σκηνικά θέατρου.
+ Μπορείτε να συγχωνεύσετε κελιά χρησιμοποιώντας το`CellFormat.HorizontalMerge` και`CellFormat.VerticalMerge` σκηνικά θέατρου.

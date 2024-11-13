@@ -9,7 +9,7 @@ url: /ja/net/programming-with-charts/format-number-of-data-label/
 ---
 ## 導入
 
-魅力的で情報豊富なドキュメントを作成するには、適切にフォーマットされたデータ ラベル付きのグラフを含めることがよく必要になります。洗練されたグラフを使用して Word ドキュメントを強化したい .NET 開発者にとって、Aspose.Words for .NET はそれを実現するのに役立つ素晴らしいライブラリです。このチュートリアルでは、Aspose.Words for .NET を使用してグラフの数値ラベルをフォーマットするプロセスを段階的に説明します。
+魅力的で情報豊富なドキュメントを作成するには、適切にフォーマットされたデータ ラベル付きのグラフを含めることがよく必要になります。Word ドキュメントを洗練されたグラフで強化したいと考えている .NET 開発者にとって、Aspose.Words for .NET はそれを実現するのに役立つ素晴らしいライブラリです。このチュートリアルでは、Aspose.Words for .NET を使用してグラフの数値ラベルをフォーマットするプロセスを段階的に説明します。
 
 ## 前提条件
 
@@ -17,7 +17,7 @@ url: /ja/net/programming-with-charts/format-number-of-data-label/
 
 -  Aspose.Words for .NET: Aspose.Words for .NETライブラリがインストールされていることを確認してください。まだインストールしていない場合は、[ここからダウンロード](https://releases.aspose.com/words/net/).
 - 開発環境: .NET 開発環境をセットアップする必要があります。Visual Studio を強くお勧めします。
-- C# の基礎知識: このチュートリアルでは C# コードの記述と理解が含まれるため、C# プログラミングの知識が必須です。
+- C# の基礎知識: このチュートリアルでは C# コードの作成と理解が含まれるため、C# プログラミングの知識が必須です。
 - 一時ライセンス: Aspose.Wordsを制限なく使用するには、[一時ライセンス](https://purchase.aspose.com/temporary-license/).
 
 それでは、グラフ内の数値ラベルをフォーマットする手順を詳しく説明します。

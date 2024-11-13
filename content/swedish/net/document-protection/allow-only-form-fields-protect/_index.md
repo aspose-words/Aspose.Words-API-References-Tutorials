@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
- Här skapar vi en ny`Document`och`DocumentBuilder` exempel. De`DocumentBuilder` låter oss lägga till text i vårt dokument.
+ Här skapar vi en ny`Document` och`DocumentBuilder` exempel. De`DocumentBuilder` låter oss lägga till text i vårt dokument.
 
 ## Steg 4: Skydda dokumentet
 

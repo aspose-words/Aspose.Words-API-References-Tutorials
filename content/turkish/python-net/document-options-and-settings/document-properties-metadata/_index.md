@@ -1,20 +1,20 @@
 ---
 title: Belge Özellikleri ve Meta Veri Yönetimi
 linktitle: Belge Özellikleri ve Meta Veri Yönetimi
-second_title: Aspose.Words Python Doküman Yönetimi API'si
-description: Aspose.Words for Python'u kullanarak belge özelliklerini ve meta verileri nasıl yöneteceğinizi öğrenin. Kaynak koduyla adım adım kılavuz.
+second_title: Aspose.Words Python Belge Yönetim API'si
+description: Python için Aspose.Words'ü kullanarak belge özelliklerini ve meta verilerini nasıl yöneteceğinizi öğrenin. Kaynak kodlu adım adım kılavuz.
 type: docs
 weight: 12
 url: /tr/python-net/document-options-and-settings/document-properties-metadata/
 ---
 
-## Belge Özelliklerine ve Meta Verilere Giriş
+## Belge Özellikleri ve Meta Verilere Giriş
 
-Belge özellikleri ve meta veriler elektronik belgelerin temel bileşenleridir. Belge hakkında yazarlık, oluşturulma tarihi ve anahtar kelimeler gibi önemli bilgiler sağlarlar. Meta veriler, belge kategorizasyonuna ve aramaya yardımcı olan ek bağlamsal bilgileri içerebilir. Aspose.Words for Python, bu hususları programlı olarak yönetme sürecini basitleştirir.
+Belge özellikleri ve meta veriler elektronik belgelerin temel bileşenleridir. Yazarlık, oluşturma tarihi ve anahtar sözcükler gibi belge hakkında önemli bilgiler sağlarlar. Meta veriler, belge kategorizasyonu ve aramada yardımcı olan ek bağlamsal bilgiler içerebilir. Python için Aspose.Words, bu yönleri programatik olarak yönetme sürecini basitleştirir.
 
-## Aspose.Words for Python'a Başlarken
+## Python için Aspose.Words'e Başlarken
 
-Belge özelliklerini ve meta verileri yönetmeye başlamadan önce Aspose.Words for Python ile ortamımızı ayarlayalım.
+Belge özelliklerini ve meta verilerini yönetmeye başlamadan önce, Python için Aspose.Words ile ortamımızı ayarlayalım.
 
 ```python
 # Install the Aspose.Words for Python package
@@ -26,7 +26,7 @@ import aspose.words as aw
 
 ## Belge Özelliklerini Alma
 
-Aspose.Words API'sini kullanarak belge özelliklerini kolayca alabilirsiniz. Bir belgenin yazarını ve başlığını nasıl alacağınıza dair bir örnek:
+Aspose.Words API'sini kullanarak belge özelliklerini kolayca alabilirsiniz. İşte bir belgenin yazarını ve başlığını nasıl alacağınıza dair bir örnek:
 
 ```python
 # Load the document
@@ -42,7 +42,7 @@ print("Title:", title)
 
 ## Belge Özelliklerini Ayarlama
 
-Belge özelliklerini güncellemek de aynı derecede basittir. Diyelim ki yazarın adını ve başlığını güncellemek istiyorsunuz:
+Belge özelliklerini güncellemek de aynı derecede basittir. Diyelim ki yazarın adını ve başlığı güncellemek istiyorsunuz:
 
 ```python
 # Update document properties
@@ -55,7 +55,7 @@ doc.save("updated_document.docx")
 
 ## Özel Belge Özellikleriyle Çalışma
 
-Özel belge özellikleri, belge içinde ek bilgiler saklamanıza olanak tanır. "Departman" adında özel bir özellik ekleyelim:
+Özel belge özellikleri, belge içinde ek bilgiler depolamanıza olanak tanır. "Departman" adlı özel bir özellik ekleyelim:
 
 ```python
 # Add a custom document property
@@ -67,14 +67,14 @@ doc.save("document_with_custom_property.docx")
 
 ## Meta Veri Bilgilerini Yönetme
 
-Meta veri yönetimi, değişiklikleri izleme, belge istatistikleri ve daha fazlası gibi bilgilerin kontrol edilmesini içerir. Aspose.Words bu meta verilere programlı olarak erişmenizi ve değiştirmenizi sağlar.
+Meta veri yönetimi, değişiklikleri izleme, belge istatistikleri ve daha fazlası gibi bilgileri kontrol etmeyi içerir. Aspose.Words, bu meta verilere programlı olarak erişmenizi ve bunları değiştirmenizi sağlar.
 
 ```python
 # Access and modify metadata
 doc.metadata["Keywords"] = "Python, Aspose.Words, Metadata"
 ```
 
-## Meta Veri Güncellemelerini Otomatikleştirme
+## Meta Veri Güncellemelerinin Otomatikleştirilmesi
 
 Sık meta veri güncellemeleri Aspose.Words kullanılarak otomatikleştirilebilir. Örneğin, "Son Değiştiren" özelliğini otomatik olarak güncelleyebilirsiniz:
 
@@ -95,9 +95,9 @@ for prop in sensitive_properties:
         doc.built_in_document_properties.remove(prop)
 ```
 
-## Belge Sürümlerini ve Geçmişini Yönetme
+## Belge Sürümlerinin ve Geçmişinin İşlenmesi
 
-Sürüm oluşturma, belge geçmişini korumak için çok önemlidir. Aspose.Words, sürümleri etkili bir şekilde yönetmenize olanak tanır:
+Sürümleme, belge geçmişini korumak için çok önemlidir. Aspose.Words, sürümleri etkili bir şekilde yönetmenizi sağlar:
 
 ```python
 # Add version history information
@@ -114,27 +114,27 @@ version_info.value = "Version 1.0 - Initial Release"
 
 ## Çözüm
 
-Belge özelliklerini ve meta verileri etkili bir şekilde yönetmek, belgenin düzenlenmesi ve alınması için hayati öneme sahiptir. Aspose.Words for Python bu süreci kolaylaştırarak geliştiricilerin belge niteliklerini programlı olarak zahmetsizce değiştirmesine ve kontrol etmesine olanak tanır.
+Belge özelliklerini ve meta verilerini etkili bir şekilde yönetmek, belge organizasyonu ve alımı için hayati önem taşır. Aspose.Words for Python bu süreci kolaylaştırır ve geliştiricilerin belge niteliklerini programatik olarak zahmetsizce düzenlemesini ve kontrol etmesini sağlar.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for Python'u nasıl yüklerim?
+### Python için Aspose.Words'ü nasıl kurarım?
 
-Aspose.Words for Python'u aşağıdaki komutu kullanarak yükleyebilirsiniz:
+Aşağıdaki komutu kullanarak Aspose.Words for Python'ı yükleyebilirsiniz:
 
 ```python
 pip install aspose-words
 ```
 
-### Aspose.Words'ü kullanarak meta veri güncellemelerini otomatikleştirebilir miyim?
+### Aspose.Words kullanarak meta veri güncellemelerini otomatikleştirebilir miyim?
 
-Evet, Aspose.Words'ü kullanarak meta veri güncellemelerini otomatikleştirebilirsiniz. Örneğin, "Son Değiştiren" özelliğini otomatik olarak güncelleyebilirsiniz.
+Evet, Aspose.Words kullanarak meta veri güncellemelerini otomatikleştirebilirsiniz. Örneğin, "Son Değiştiren" özelliğini otomatik olarak güncelleyebilirsiniz.
 
 ### Meta verilerdeki hassas bilgileri nasıl koruyabilirim?
 
- Meta verilerdeki hassas bilgileri korumak için belirli özellikleri aşağıdakileri kullanarak kaldırabilirsiniz:`remove` Yöntem.
+ Meta verilerdeki hassas bilgileri korumak için, belirli özellikleri kullanarak kaldırabilirsiniz.`remove` yöntem.
 
-### Belge özelliklerini yönetmeye yönelik en iyi uygulamalardan bazıları nelerdir?
+### Belge özelliklerini yönetmek için en iyi uygulamalar nelerdir?
 
 - Belge özelliklerinin doğruluğunu ve güncelliğini sağlayın.
 - Ek bağlam için özel özellikleri kullanın.

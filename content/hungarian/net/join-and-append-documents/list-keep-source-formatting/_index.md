@@ -44,7 +44,7 @@ Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 
 ## 3. lépés: Konfigurálja a szakaszbeállításokat
 
-folyamatos áramlás fenntartásához az egyesített dokumentumban állítsa be a szakasz elejét:
+A folyamatos áramlás fenntartásához az egyesített dokumentumban állítsa be a szakasz elejét:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;

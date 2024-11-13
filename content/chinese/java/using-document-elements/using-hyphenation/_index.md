@@ -8,7 +8,7 @@ weight: 17
 url: /zh/java/using-document-elements/using-hyphenation/
 ---
 
-在文档处理领域，精确度和美观度起着至关重要的作用。在创建不同语言的文档时，连字成为一个关键方面。连字可确保单词在行末正确拆分，从而保持文档的可读性和外观。在本教程中，我们将探讨如何在 Aspose.Words for Java 中使用连字来提高文档的质量。
+在文档处理领域，精确度和美观度至关重要。在创建不同语言的文档时，连字成为一个关键方面。连字可确保单词在行末正确拆分，从而保持文档的可读性和外观。在本教程中，我们将探讨如何在 Aspose.Words for Java 中使用连字来提高文档的质量。
 
 ## 1. 连字介绍
 
@@ -16,7 +16,7 @@ url: /zh/java/using-document-elements/using-hyphenation/
 
 ## 2. 设置你的环境
 
-在我们深入研究在 Aspose.Words for Java 中使用连字符之前，您需要设置开发环境。请确保您具有以下内容：
+在我们深入研究在 Aspose.Words for Java 中使用连字符之前，您需要设置开发环境。确保您具有以下内容：
 
 - 已安装 Java 开发工具包 (JDK)
 - Aspose.Words for Java 库
@@ -41,7 +41,7 @@ doc.save(outPath + "WorkingWithHyphenation.HyphenateWordsOfLanguages.pdf");
 
 ## 5. 加载连字词典
 
-在某些情况下，您可能需要动态加载连字词典。这允许您适应不同的语言要求。以下是加载特定语言的连字词典的方法：
+在某些情况下，您可能需要动态加载连字词典。这可让您适应不同的语言要求。以下是加载特定语言的连字词典的方法：
 
 ```java
 Document doc = new Document(dataDir + "German text.docx");
@@ -76,4 +76,4 @@ doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.
 
 ### 5. 如何访问 Aspose.Words for Java？
 
-要访问 Aspose.Words for Java，[点击这里](https://purchase.aspose.com/buy)体验 Java 应用程序中文档处理的强大功能！
+要访问 Aspose.Words for Java，[点击这里](https://purchase.aspose.com/buy)在您的 Java 应用程序中体验文档处理的强大功能！

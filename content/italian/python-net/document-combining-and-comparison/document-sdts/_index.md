@@ -1,8 +1,8 @@
 ---
-title: Utilizzo dei tag di documenti strutturati (SDT) per i dati strutturati
-linktitle: Utilizzo dei tag di documenti strutturati (SDT) per i dati strutturati
+title: Utilizzo di tag di documenti strutturati (SDT) per dati strutturati
+linktitle: Utilizzo di tag di documenti strutturati (SDT) per dati strutturati
 second_title: API di gestione dei documenti Python Aspose.Words
-description: Sfrutta la potenza dei tag di documenti strutturati (SDT) per l'organizzazione dei contenuti. Scopri come utilizzare Aspose.Words per Python per implementare SDT.
+description: Sblocca la potenza degli Structured Document Tag (SDT) per organizzare i contenuti. Scopri come usare Aspose.Words per Python per implementare gli SDT.
 type: docs
 weight: 13
 url: /it/python-net/document-combining-and-comparison/document-sdts/
@@ -10,23 +10,23 @@ url: /it/python-net/document-combining-and-comparison/document-sdts/
 
 ## Introduzione ai tag dei documenti strutturati (SDT)
 
-tag dei documenti strutturati, spesso definiti controlli del contenuto, sono elementi all'interno di un documento che forniscono struttura al contenuto che racchiudono. Consentono una formattazione coerente e consentono la manipolazione del contenuto a livello di codice. Gli SDT possono comprendere vari tipi di contenuti, come testo semplice, rich text, immagini, caselle di controllo e altro.
+Gli Structured Document Tag, spesso definiti content control, sono elementi all'interno di un documento che forniscono struttura al contenuto che racchiudono. Consentono una formattazione coerente e consentono la manipolazione del contenuto a livello di programmazione. Gli SDT possono comprendere vari tipi di contenuto, come testo normale, testo avanzato, immagini, caselle di controllo e altro ancora.
 
 ## Vantaggi dell'utilizzo degli SDT
 
 L'utilizzo degli SDT offre numerosi vantaggi, tra cui:
 
-- Coerenza: gli SDT garantiscono che il contenuto segua un formato standardizzato, prevenendo incoerenze di formattazione.
+- Coerenza: gli SDT garantiscono che il contenuto segua un formato standardizzato, evitando incongruenze di formattazione.
 - Automazione: con gli SDT è possibile automatizzare la generazione di documenti, semplificando la creazione di modelli e report.
 - Convalida dei dati: gli SDT possono applicare regole di convalida dei dati, riducendo gli errori e mantenendo l'integrità dei dati.
-- Contenuto dinamico: gli SDT consentono l'inserimento di contenuti dinamici che si aggiornano automaticamente, come data e ora.
-- Facilità di collaborazione: i collaboratori possono concentrarsi sui contenuti senza alterare la struttura del documento.
+- Contenuto dinamico: gli SDT consentono l'inserimento di contenuti dinamici che si aggiornano automaticamente, come ad esempio data e ora.
+- Facilità di collaborazione: i collaboratori possono concentrarsi sul contenuto senza alterare la struttura del documento.
 
-## Iniziare con Aspose.Words per Python
+## Introduzione ad Aspose.Words per Python
 
-Prima di approfondire l'uso degli SDT, iniziamo con Aspose.Words per Python. Aspose.Words è una potente libreria che consente agli sviluppatori di creare, modificare e convertire documenti Word a livello di codice. Per iniziare, segui questi passaggi:
+Prima di immergerci nell'uso degli SDT, iniziamo con Aspose.Words per Python. Aspose.Words è una potente libreria che consente agli sviluppatori di creare, modificare e convertire i documenti Word in modo programmatico. Per iniziare, segui questi passaggi:
 
-1. Installazione: installa Aspose.Words per Python utilizzando pip:
+1. Installazione: Installa Aspose.Words per Python usando pip:
    
    ```python
    pip install aspose-words
@@ -46,32 +46,32 @@ Prima di approfondire l'uso degli SDT, iniziamo con Aspose.Words per Python. Asp
 
 ## Creazione e aggiunta di SDT a un documento
 
-L'aggiunta di SDT a un documento prevede alcuni semplici passaggi:
+L'aggiunta di SDT a un documento comporta alcuni semplici passaggi:
 
-1.  Creazione di SDT: utilizzare il file`StructuredDocumentTag` classe per creare un'istanza SDT.
+1.  Creazione di SDT: utilizzare il`StructuredDocumentTag` classe per creare un'istanza SDT.
 
    ```python
    sdt = aspose.words.StructuredDocumentTag(doc, aspose.words.SdtType.PLAIN_TEXT)
    ```
 
-2. Impostazione contenuto: imposta il contenuto dell'SDT:
+2. Impostazione del contenuto: Imposta il contenuto dell'SDT:
 
    ```python
    sdt.get_first_child().remove_all_children()
    sdt.get_first_child().append_child(aspose.words.Run(doc, "Structured Content"))
    ```
 
-3. Aggiunta al documento: aggiungi l'SDT alla raccolta di nodi a livello di blocco del documento:
+3. Aggiunta al documento: aggiungere l'SDT alla raccolta di nodi a livello di blocco del documento:
 
    ```python
    doc.get_first_section().get_body().append_child(sdt)
    ```
 
-## Utilizzo dei controlli del contenuto SDT
+## Lavorare con i controlli dei contenuti SDT
 
-I controlli del contenuto SDT consentono agli utenti di interagire con il documento. Esploriamo alcuni controlli dei contenuti comuni:
+I controlli di contenuto SDT consentono agli utenti di interagire con il documento. Esploriamo alcuni controlli di contenuto comuni:
 
-1. Controllo testo semplice:
+1. Controllo del testo normale:
 
    ```python
    sdt = aspose.words.StructuredDocumentTag(doc, aspose.words.SdtType.PLAIN_TEXT)
@@ -86,9 +86,9 @@ I controlli del contenuto SDT consentono agli utenti di interagire con il docume
    sdt.get_first_child().append_child(aspose.words.Run(doc, "Check to agree: "))
    ```
 
-## Navigazione e manipolazione degli SDT a livello di codice
+## Navigazione e manipolazione degli SDT a livello di programmazione
 
-La navigazione e la manipolazione degli SDT a livello di codice consente la generazione di documenti dinamici. Ecco come puoi ottenerlo:
+La navigazione e la manipolazione degli SDT a livello di programmazione consentono la generazione dinamica di documenti. Ecco come puoi ottenerla:
 
 1. Accesso agli SDT:
 
@@ -105,43 +105,43 @@ La navigazione e la manipolazione degli SDT a livello di codice consente la gene
            sdt.get_first_child().append_child(aspose.words.Run(doc, "New Content"))
    ```
 
-## Utilizzo degli SDT per l'automazione dei documenti
+## Utilizzo di SDT per l'automazione dei documenti
 
-Gli SDT possono essere sfruttati per scenari di automazione dei documenti. Ad esempio, puoi creare modelli di fattura con SDT per campi variabili come nomi di clienti, importi e date. Compilare quindi questi campi a livello di codice in base ai dati di un database.
+Gli SDT possono essere sfruttati per scenari di automazione dei documenti. Ad esempio, puoi creare modelli di fattura con SDT per campi variabili come nomi dei clienti, importi e date. Quindi, popola programmaticamente questi campi in base ai dati di un database.
 
 ## Personalizzazione dell'aspetto e del comportamento di SDT
 
-Gli SDT offrono varie opzioni di personalizzazione, come la modifica degli stili, dei colori e del comportamento dei caratteri. Ad esempio, puoi impostare un testo segnaposto per guidare gli utenti durante la compilazione degli SDT.
+Gli SDT offrono varie opzioni di personalizzazione, come la modifica di stili di font, colori e comportamento. Ad esempio, puoi impostare testo segnaposto per guidare gli utenti durante la compilazione degli SDT.
 
-## Tecniche Avanzate con SDT
+## Tecniche avanzate con SDT
 
-Le tecniche avanzate coinvolgono SDT nidificati, associazione dati XML personalizzata e gestione degli eventi associati agli SDT. Queste tecniche consentono strutture di documenti complesse ed esperienze utente più interattive.
+Le tecniche avanzate includono SDT nidificati, binding di dati XML personalizzati e gestione di eventi associati a SDT. Queste tecniche consentono strutture di documenti complesse ed esperienze utente più interattive.
 
-## Migliori pratiche per l'utilizzo degli SDT
+## Buone pratiche per l'utilizzo degli SDT
 
-Segui queste best practice quando utilizzi gli SDT:
+Quando si utilizzano gli SDT, seguire queste buone pratiche:
 
-- Utilizza gli SDT in modo coerente per contenuti simili in tutti i documenti.
-- Pianifica la struttura del documento e degli SDT prima dell'implementazione.
-- Testare accuratamente il documento, soprattutto quando si automatizza il popolamento dei contenuti.
+- Utilizzare gli SDT in modo coerente per contenuti simili in tutti i documenti.
+- Pianificare la struttura del documento e degli SDT prima dell'implementazione.
+- Testare attentamente il documento, soprattutto quando si automatizza il popolamento dei contenuti.
 
 ## Caso di studio: creazione di un modello di report dinamico
 
-Consideriamo un caso di studio in cui creiamo un modello di report dinamico utilizzando SDT. Creeremo dei segnaposto per il titolo del report, il nome dell'autore e il contenuto. Quindi, popoleremo a livello di codice questi segnaposto con i dati pertinenti.
+Consideriamo un caso di studio in cui creiamo un modello di report dinamico utilizzando SDT. Creeremo segnaposto per un titolo di report, un nome autore e un contenuto. Quindi, popoleremo programmaticamente questi segnaposto con dati rilevanti.
 
 ## Conclusione
 
-I tag dei documenti strutturati forniscono un modo efficace per gestire i dati strutturati all'interno dei documenti. Sfruttando Aspose.Words per Python, gli sviluppatori possono creare facilmente soluzioni di documenti dinamici e automatizzati. Gli SDT consentono agli utenti di interagire con i documenti mantenendo coerenza e integrità.
+I tag dei documenti strutturati forniscono un modo efficace per gestire i dati strutturati all'interno dei documenti. Sfruttando Aspose.Words per Python, gli sviluppatori possono creare soluzioni di documenti dinamiche e automatizzate con facilità. Gli SDT consentono agli utenti di interagire con i documenti mantenendo coerenza e integrità.
 
 ## Domande frequenti
 
-### Come posso accedere al contenuto di un SDT?
+### Come posso accedere ai contenuti di un SDT?
 
- Per accedere al contenuto all'interno di un SDT, è possibile utilizzare il file`get_text()`metodo di controllo del contenuto dell'SDT. Ciò recupera il testo contenuto all'interno dell'SDT.
+ Per accedere al contenuto all'interno di un SDT, è possibile utilizzare`get_text()`metodo del controllo del contenuto dell'SDT. Questo recupera il testo contenuto nell'SDT.
 
 ### Posso utilizzare gli SDT nei documenti Excel o PowerPoint?
 
-No, gli SDT sono specifici dei documenti Word e non sono disponibili in Excel o PowerPoint.
+No, gli SDT sono specifici per i documenti Word e non sono disponibili in Excel o PowerPoint.
 
 ### Gli SDT sono compatibili con le versioni precedenti di Microsoft Word?
 
@@ -149,8 +149,8 @@ Gli SDT sono compatibili con Microsoft Word 2010 e versioni successive. Potrebbe
 
 ### Posso creare tipi SDT personalizzati?
 
-A partire da ora, Microsoft Word supporta un set predefinito di tipi SDT. Non è possibile creare tipi SDT personalizzati.
+Al momento, Microsoft Word supporta un set predefinito di tipi SDT. Non è possibile creare tipi SDT personalizzati.
 
 ### Come posso rimuovere un SDT da un documento?
 
-È possibile rimuovere un SDT da un documento selezionando il SDT e premendo il tasto "Elimina" o utilizzando il metodo appropriato nell'API Aspose.Words.
+È possibile rimuovere un SDT da un documento selezionando l'SDT e premendo il tasto "Elimina" oppure utilizzando il metodo appropriato nell'API Aspose.Words.

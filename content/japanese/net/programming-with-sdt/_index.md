@@ -22,9 +22,9 @@ Aspose.Words for .NET チュートリアルでは、ライブラリの機能を�
 | [コンボ ボックス コンテンツ コントロール](./combo-box-content-control/) | 詳細なチュートリアルに従って、Aspose.Words for .NET を使用して Word 文書にコンボ ボックス コンテンツ コントロールを作成します。文書のインタラクティブ性を高めるのに最適です。 |
 | [リッチテキストボックスコンテンツコントロール](./rich-text-box-content-control/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書にリッチ テキスト ボックス コンテンツ コントロールを追加およびカスタマイズする方法を学習します。 |
 | [コンテンツコントロールの色を設定する](./set-content-control-color/) | Aspose.Words for .NET を使用して、Word の構造化ドキュメント タグの色を簡単に設定できます。この簡単なガイドに従って、SDT をカスタマイズし、ドキュメントの外観を向上させます。 |
-| [クリアコンテンツコントロール](./clear-contents-control/) | ステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書内のコンテンツ コントロールをクリアする方法を学びます。 |
+| [クリアコンテンツコントロール](./clear-contents-control/) | Aspose.Words for .NET を使用して Word 文書内のコンテンツ コントロールをクリアする方法を、ステップ バイ ステップ ガイドで学習します。 |
 | [SDT をカスタム XML パーツにバインドする](./bind-sdt-to-custom-xml-part/) | このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して、構造化ドキュメント タグ (SDT) を Word 文書内のカスタム XML パーツにバインドする方法を学習します。 |
 | [コンテンツコントロールスタイルの設定](./set-content-control-style/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書のコンテンツ コントロール スタイルを設定する方法を学習します。文書の美観を向上させるのに最適です。 |
 | [カスタム XML パーツにマップされたテーブル繰り返しセクションの作成](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Aspose.Words for .NET を使用して、Word 文書内の CustomXmlPart にマップされた繰り返しセクションを含むテーブルを作成する方法を学習します。 |
 | [マルチセクション](./multi-section/) | このステップバイステップのチュートリアルでは、Aspose.Words for .NET で複数セクションの構造化ドキュメント タグを操作する方法を学習します。動的なドキュメント操作に最適です。 |
-| [構造化ドキュメントのタグ範囲の開始 XML マッピング](./structured-document-tag-range-start-xml-mapping/) | Aspose.Words for .NET を使用して、Word の構造化ドキュメント タグに XML データを動的にバインドする方法を学びます。ステップ バイ ステップ ガイドに従ってください。 |
+| [構造化ドキュメントのタグ範囲の開始 XML マッピング](./structured-document-tag-range-start-xml-mapping/) | Aspose.Words for .NET を使用して、Word で XML データを構造化ドキュメント タグに動的にバインドする方法を学びます。ステップ バイ ステップ ガイドに従ってください。 |

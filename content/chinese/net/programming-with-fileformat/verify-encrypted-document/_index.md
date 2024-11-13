@@ -9,13 +9,13 @@ url: /zh/net/programming-with-fileformat/verify-encrypted-document/
 ---
 ## 使用 Aspose.Words for .NET 验证加密的 Word 文档
 
- 您是否曾偶然发现加密的 Word 文档并想知道如何以编程方式验证其加密状态？好吧，您很幸运！今天，我们将深入介绍如何使用 Aspose.Words for .NET 来实现这一点。本分步指南将引导您了解您需要了解的一切，从设置环境到运行代码。那么，让我们开始吧，好吗？
+ 您是否曾偶然发现加密的 Word 文档并想知道如何以编程方式验证其加密状态？好吧，您很幸运！今天，我们将深入介绍如何使用 Aspose.Words for .NET 做到这一点。本分步指南将引导您了解您需要了解的一切，从设置环境到运行代码。那么，让我们开始吧，好吗？
 
 ## 先决条件
 
 在深入研究代码之前，让我们先确保您已准备好所需的一切。以下是一份快速检查表：
 
--  Aspose.Words for .NET 库：您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET 库：你可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 - .NET Framework：确保您的机器上安装了.NET。
 - IDE：像 Visual Studio 这样的集成开发环境。
 - C# 基础知识：了解 C# 的基础知识将帮助您更轻松地跟上。

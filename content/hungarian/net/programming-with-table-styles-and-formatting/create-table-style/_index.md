@@ -14,7 +14,7 @@ Előfordult már, hogy elakadt, amikor a Word-dokumentumokban lévő táblázato
 ## Előfeltételek
 
 Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
-- Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van ez a hatékony könyvtár. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van ez a hatékony könyvtár. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 - Fejlesztői környezet: Visual Studio vagy bármely más .NET fejlesztői környezet.
 - Alapvető C# ismeretek: Hasznos lehet némi C# programozási ismerete.
 

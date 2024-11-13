@@ -1,27 +1,27 @@
 ---
-title: Zaktualizuj inteligentny rysunek artystyczny
-linktitle: Zaktualizuj inteligentny rysunek artystyczny
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak aktualizować rysunki Smart Art w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Upewnij się, że Twoje wizualizacje są zawsze dokładne.
+title: Aktualizuj rysunek Smart Art
+linktitle: Aktualizuj rysunek Smart Art
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak aktualizować rysunki Smart Art w dokumentach Word za pomocą Aspose.Words dla .NET dzięki temu przewodnikowi krok po kroku. Upewnij się, że Twoje wizualizacje są zawsze dokładne.
 type: docs
 weight: 10
 url: /pl/net/programming-with-shapes/update-smart-art-drawing/
 ---
 ## Wstęp
 
-Grafika Smart Art to fantastyczny sposób na wizualne przedstawienie informacji w dokumentach programu Word. Niezależnie od tego, czy piszesz raport biznesowy, artykuł edukacyjny czy prezentację, Smart Art może sprawić, że złożone dane staną się bardziej zrozumiałe. Jednak w miarę ewolucji dokumentów grafika Smart Art w nich może wymagać aktualizacji, aby odzwierciedlała najnowsze zmiany. Jeśli używasz Aspose.Words dla .NET, możesz programowo usprawnić ten proces. W tym samouczku dowiesz się, jak aktualizować rysunki Smart Art w dokumentach programu Word za pomocą Aspose.Words dla .NET, dzięki czemu łatwiej będzie zachować świeżość i dokładność wizualizacji.
+Grafiki Smart Art to fantastyczny sposób na wizualną reprezentację informacji w dokumentach Word. Niezależnie od tego, czy tworzysz raport biznesowy, artykuł edukacyjny czy prezentację, Smart Art może sprawić, że złożone dane będą bardziej przyswajalne. Jednak w miarę ewolucji dokumentów grafiki Smart Art w nich zawarte mogą wymagać aktualizacji, aby odzwierciedlały najnowsze zmiany. Jeśli używasz Aspose.Words dla .NET, możesz usprawnić ten proces programowo. Ten samouczek przeprowadzi Cię przez proces aktualizacji rysunków Smart Art w dokumentach Word przy użyciu Aspose.Words dla .NET, dzięki czemu łatwiej będzie zachować świeżość i dokładność wizualizacji.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziesz do kolejnych kroków, upewnij się, że masz następujące elementy:
+Zanim przejdziesz do dalszych kroków, upewnij się, że masz następujące rzeczy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Można go pobrać z[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Możesz go pobrać ze strony[Strona wydań Aspose](https://releases.aspose.com/words/net/).
 
-2. Środowisko .NET: Należy mieć skonfigurowane środowisko programistyczne .NET, takie jak Visual Studio.
+2. Środowisko .NET: Należy skonfigurować środowisko programistyczne .NET, np. Visual Studio.
 
-3. Podstawowa znajomość języka C#: Znajomość języka C# będzie pomocna, ponieważ samouczek dotyczy kodowania.
+3. Podstawowa znajomość języka C#: Znajomość języka C# będzie pomocna, ponieważ samouczek obejmuje kodowanie.
 
-4. Przykładowy dokument: dokument programu Word z grafiką inteligentną, który chcesz zaktualizować. Na potrzeby tego samouczka użyjemy dokumentu o nazwie „SmartArt.docx”.
+4. Przykładowy dokument: Dokument Word ze Smart Art, który chcesz zaktualizować. Na potrzeby tego samouczka użyjemy dokumentu o nazwie „SmartArt.docx”.
 
 ## Importuj przestrzenie nazw
 
@@ -32,14 +32,14 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Te przestrzenie nazw zapewniają niezbędne klasy i metody do interakcji z dokumentami programu Word i grafiką inteligentną.
+Te przestrzenie nazw udostępniają klasy i metody niezbędne do interakcji z dokumentami Word i obiektami Smart Art.
 
 ## 1. Zainicjuj swój dokument
 
 Nagłówek: Załaduj dokument
 
 Wyjaśnienie:
- Najpierw musisz załadować dokument Word zawierający grafikę Smart Art. Odbywa się to poprzez utworzenie instancji`Document` class i podając ścieżkę do swojego dokumentu.
+ Najpierw musisz załadować dokument Word zawierający grafikę Smart Art. Można to zrobić, tworząc wystąpienie`Document` klasę i podając ścieżkę do dokumentu.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -49,82 +49,82 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
-Dlaczego ten krok ma znaczenie:
-Załadowanie dokumentu konfiguruje środowisko pracy, umożliwiając programowe manipulowanie zawartością dokumentu.
+Dlaczego ten krok jest ważny:
+Wczytanie dokumentu powoduje utworzenie środowiska roboczego, które umożliwia programowe manipulowanie jego zawartością.
 
-## 2. Identyfikuj inteligentne kształty artystyczne
+## 2. Identyfikuj kształty Smart Art
 
-Nagłówek: Znajdź inteligentną grafikę artystyczną
+Nagłówek: Znajdź grafikę Smart Art
 
 Wyjaśnienie:
-Po załadowaniu dokumentu musisz określić, które kształty są grafiką inteligentną. Osiąga się to poprzez iterację po wszystkich kształtach w dokumencie i sprawdzanie, czy są to grafiki Smart Art.
+Po załadowaniu dokumentu należy zidentyfikować, które kształty są Smart Art. Można to osiągnąć, przechodząc przez wszystkie kształty w dokumencie i sprawdzając, czy są Smart Art.
 
 ```csharp
-// Iteruj po wszystkich kształtach w dokumencie
+// Przejrzyj wszystkie kształty w dokumencie
 foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
 {
-    // Sprawdź, czy kształt jest inteligentną grafiką
+    // Sprawdź, czy kształt jest Smart Art
     if (shape.HasSmartArt)
     {
-        // Zaktualizuj rysunek Smart Art
+        // Aktualizuj rysunek Smart Art
         shape.UpdateSmartArtDrawing();
     }
 }
 ```
 
-Dlaczego ten krok ma znaczenie:
-Identyfikacja kształtów Smart Art gwarantuje, że będziesz próbował aktualizować tylko te grafiki, które rzeczywiście tego wymagają, unikając niepotrzebnych operacji.
+Dlaczego ten krok jest ważny:
+Rozpoznawanie kształtów Smart Art daje pewność, że aktualizujesz tylko te elementy grafiki, które rzeczywiście tego wymagają, unikając niepotrzebnych operacji.
 
-## 3. Zaktualizuj inteligentne rysunki artystyczne
+## 3. Aktualizuj rysunki Smart Art
 
-Nagłówek: Odśwież inteligentną grafikę artystyczną
+Nagłówek: Odśwież grafikę Smart Art
 
 Wyjaśnienie:
- The`UpdateSmartArtDrawing` Metoda odświeża grafikę Smart Art, upewniając się, że odzwierciedla ona wszelkie zmiany w danych lub układzie dokumentu. Tę metodę należy wywołać dla każdego kształtu Smart Art zidentyfikowanego w poprzednim kroku.
+Ten`UpdateSmartArtDrawing` Metoda odświeża grafikę Smart Art, zapewniając, że odzwierciedla ona wszelkie zmiany w danych lub układzie dokumentu. Ta metoda musi zostać wywołana dla każdego kształtu Smart Art zidentyfikowanego w poprzednim kroku.
 
 ```csharp
-// Zaktualizuj rysunek Smart Art dla każdego kształtu Smart Art
+// Aktualizuj rysunek Smart Art dla każdego kształtu Smart Art
 if (shape.HasSmartArt)
 {
     shape.UpdateSmartArtDrawing();
 }
 ```
 
-Dlaczego ten krok ma znaczenie:
-Aktualizacja grafiki Smart Art zapewnia aktualność i dokładność wizualizacji, poprawiając jakość i profesjonalizm dokumentu.
+Dlaczego ten krok jest ważny:
+Aktualizacja grafiki Smart Art gwarantuje aktualność i dokładność elementów wizualnych, co przekłada się na poprawę jakości i profesjonalizmu dokumentu.
 
 ## 4. Zapisz dokument
 
 Nagłówek: Zapisz zaktualizowany dokument
 
 Wyjaśnienie:
-Po zaktualizowaniu grafiki inteligentnej zapisz dokument, aby zachować zmiany. Ten krok zapewnia zapisanie wszystkich modyfikacji w pliku.
+Po zaktualizowaniu Smart Art zapisz dokument, aby zachować zmiany. Ten krok zapewnia, że wszystkie modyfikacje zostaną zapisane w pliku.
 
 ```csharp
 // Zapisz zaktualizowany dokument
 doc.Save(dataDir + "UpdatedSmartArt.docx");
 ```
 
-Dlaczego ten krok ma znaczenie:
-Zapisanie dokumentu kończy zmiany, zapewniając, że zaktualizowana grafika Smart Art jest przechowywana i gotowa do użycia.
+Dlaczego ten krok jest ważny:
+Zapisanie dokumentu powoduje sfinalizowanie zmian i gwarantuje, że zaktualizowana grafika Smart Art zostanie zachowana i będzie gotowa do użycia.
 
 ## Wniosek
 
-Aktualizowanie rysunków Smart Art w dokumentach programu Word za pomocą Aspose.Words dla .NET to prosty proces, który może znacznie poprawić jakość dokumentów. Wykonując kroki opisane w tym samouczku, możesz mieć pewność, że grafika Smart Art jest zawsze aktualna i dokładnie odzwierciedla najnowsze dane. To nie tylko poprawia atrakcyjność wizualną dokumentów, ale także zapewnia przejrzystą i profesjonalną prezentację informacji.
+Aktualizowanie rysunków Smart Art w dokumentach Word przy użyciu Aspose.Words dla .NET to prosty proces, który może znacznie poprawić jakość dokumentów. Postępując zgodnie z krokami opisanymi w tym samouczku, możesz mieć pewność, że grafiki Smart Art są zawsze aktualne i dokładnie odzwierciedlają najnowsze dane. To nie tylko poprawia atrakcyjność wizualną dokumentów, ale także zapewnia, że informacje są prezentowane w sposób przejrzysty i profesjonalny.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest inteligentna grafika w dokumentach programu Word?
-Smart Art to funkcja programu Microsoft Word umożliwiająca tworzenie atrakcyjnych wizualnie diagramów i grafik przedstawiających informacje i dane.
+### Czym jest Smart Art w dokumentach Word?
+Smart Art to funkcja programu Microsoft Word umożliwiająca tworzenie atrakcyjnych wizualnie diagramów i grafik w celu przedstawiania informacji i danych.
 
 ### Dlaczego muszę aktualizować rysunki Smart Art?
-Aktualizacja Smart Art zapewnia, że grafika odzwierciedla najnowsze zmiany w dokumencie, poprawiając dokładność i prezentację.
+Aktualizacja funkcji Smart Art gwarantuje, że grafika odzwierciedla najnowsze zmiany w dokumencie, zwiększając dokładność i prezentację.
 
-### Czy mogę zaktualizować grafikę Smart Art w partii dokumentów?
-Tak, możesz zautomatyzować proces aktualizacji grafiki inteligentnej w wielu dokumentach, przeglądając kolekcję plików i wykonując te same czynności.
+### Czy mogę aktualizować grafiki Smart Art w partii dokumentów?
+Tak, możesz zautomatyzować proces aktualizacji grafiki Smart Art w wielu dokumentach, powtarzając czynności w zbiorze plików i stosując te same kroki.
 
 ### Czy potrzebuję specjalnej licencji na Aspose.Words, aby korzystać z tych funkcji?
- Do korzystania z jego funkcji po okresie próbnym wymagana jest ważna licencja Aspose.Words. Możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
+ Do korzystania z funkcji poza okresem ewaluacyjnym wymagana jest ważna licencja Aspose.Words. Możesz uzyskać tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words?
- Można uzyskać dostęp do dokumentacji[Tutaj](https://reference.aspose.com/words/net/).
+ Możesz uzyskać dostęp do dokumentacji[Tutaj](https://reference.aspose.com/words/net/).

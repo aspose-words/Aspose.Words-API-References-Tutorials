@@ -2,84 +2,84 @@
 title: Salt Okunur Kısıtlamasını Kaldır
 linktitle: Salt Okunur Kısıtlamasını Kaldır
 second_title: Aspose.Words Belge İşleme API'si
-description: Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET'i kullanarak Word belgelerindeki salt okunur kısıtlamaları kolayca kaldırın. Geliştiriciler için mükemmel.
+description: Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET'i kullanarak Word belgelerinden salt okunur kısıtlamalarını kolayca kaldırın. Geliştiriciler için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/document-protection/remove-read-only-restriction/
 ---
 ## giriiş
 
-Doğru araçları ve yöntemleri bilmiyorsanız, bir Word belgesinden salt okunur kısıtlamasını kaldırmak oldukça zor bir iş olabilir. Neyse ki Aspose.Words for .NET bunu başarmanın kusursuz bir yolunu sunuyor. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki salt okunur kısıtlamayı kaldırma sürecinde size yol göstereceğiz.
+Doğru araçları ve yöntemleri bilmiyorsanız, bir Word belgesinden salt okunur kısıtlamasını kaldırmak oldukça zor bir iş olabilir. Neyse ki, Aspose.Words for .NET bunu başarmak için kusursuz bir yol sunar. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinden salt okunur kısıtlamasını kaldırma sürecini adım adım anlatacağız.
 
-## Önkoşullar
+## Ön koşullar
 
-Adım adım kılavuza geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Adım adım kılavuza dalmadan önce, aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
--  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. Henüz yüklemediyseniz adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olması gerekir. Henüz yüklemediyseniz, şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Visual Studio gibi bir .NET geliştirme ortamı.
 - Temel C# Bilgisi: Temel C# programlama kavramlarını anlamak faydalı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Gerçek kodla başlamadan önce projenize gerekli ad alanlarının aktarıldığından emin olun:
+Gerçek koda başlamadan önce, projenize gerekli ad alanlarının aktarıldığından emin olun:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Protection;
 ```
 
-## 1. Adım: Projenizi Kurun
+## Adım 1: Projenizi Kurun
 
-Öncelikle projenizi geliştirme ortamınızda kurun. Visual Studio'yu açın, yeni bir C# projesi oluşturun ve Aspose.Words for .NET kitaplığına bir referans ekleyin.
+İlk önce projenizi geliştirme ortamınıza kurun. Visual Studio'yu açın, yeni bir C# projesi oluşturun ve Aspose.Words for .NET kütüphanesine bir referans ekleyin.
 
 ## Adım 2: Belgeyi Başlatın
 
-Artık projeniz ayarlandığına göre bir sonraki adım, değiştirmek istediğiniz Word belgesini başlatmaktır.
+Artık projeniz kurulduğuna göre, bir sonraki adım değiştirmek istediğiniz Word belgesini başlatmaktır.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
- Bu adımda değiştirin`"YOUR DOCUMENT DIRECTORY"` belgenizin saklandığı gerçek yolla.`"YourDocument.docx"` değiştirmek istediğiniz belgenin adıdır.
+ Bu adımda, değiştirin`"YOUR DOCUMENT DIRECTORY"` Belgenizin saklandığı gerçek yol ile.`"YourDocument.docx"` değiştirmek istediğiniz belgenin adıdır.
 
-## 3. Adım: Bir Şifre Belirleyin (İsteğe Bağlı)
+## Adım 3: Bir Parola Ayarlayın (İsteğe bağlı)
 
-Parola ayarlamak isteğe bağlıdır ancak belgenizde değişiklik yapmadan önce ekstra bir güvenlik katmanı ekleyebilir.
+Parola belirlemek isteğe bağlıdır, ancak belgenizi değiştirmeden önce ona ekstra bir güvenlik katmanı ekleyebilir.
 
 ```csharp
 //En fazla 15 karakter uzunluğunda bir şifre girin.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-En fazla 15 karakter uzunluğunda istediğiniz bir şifre belirleyebilirsiniz.
+En fazla 15 karakter uzunluğunda, dilediğiniz bir şifre belirleyebilirsiniz.
 
-## 4. Adım: Salt Okunur Önerisini Kaldırma
+## Adım 4: Salt Okunur Önerisini Kaldırın
 
-Şimdi salt okunur öneriyi belgeden kaldıralım.
+Şimdi, salt okunur önerisini belgeden kaldıralım.
 
 ```csharp
 // Salt okunur seçeneğini kaldırın.
 doc.WriteProtection.ReadOnlyRecommended = false;
 ```
 
-Bu kod satırı, salt okunur öneriyi belgenizden kaldırarak belgeyi düzenlenebilir hale getirir.
+Bu kod satırı, belgenizden salt okunur önerisini kaldırarak düzenlenebilir hale getirir.
 
-## Adım 5: Koruma Yok Uygulayın
+## Adım 5: Hiçbir Koruma Uygulamayın
 
-Belgenizde başka kısıtlama olmadığından emin olmak için koruma yok ayarını uygulayın.
+Belgenizde başka kısıtlamalar olmadığından emin olmak için koruma yok ayarını uygulayın.
 
 ```csharp
-// Herhangi bir koruma olmadan yazma korumasını uygulayın.
+// Hiçbir koruma olmadan yazma korumasını uygulayın.
 doc.Protect(ProtectionType.NoProtection);
 ```
 
-Bu adım, belgenize herhangi bir yazma koruması uygulanmamasını sağladığı için çok önemlidir.
+Bu adım, belgenize herhangi bir yazma koruması uygulanmadığından emin olmanızı sağladığı için önemlidir.
 
 ## Adım 6: Belgeyi Kaydedin
 
-Son olarak değiştirilen belgeyi istediğiniz konuma kaydedin.
+Son olarak değiştirdiğiniz belgeyi istediğiniz yere kaydedin.
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
@@ -89,28 +89,28 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ## Çözüm
 
-İşte bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesindeki salt okunur kısıtlamayı başarıyla kaldırdınız. Bu süreç basittir ve belgelerinizin gereksiz kısıtlamalar olmadan serbestçe düzenlenebilmesini sağlar. 
+Ve işte bu kadar! Aspose.Words for .NET kullanarak bir Word belgesinden salt okunur kısıtlamasını başarıyla kaldırdınız. Bu işlem basittir ve belgelerinizin gereksiz kısıtlamalar olmadan özgürce düzenlenebilmesini sağlar. 
 
-İster küçük bir proje üzerinde çalışıyor olun ister birden fazla belgeyle ilgileniyor olun, belge korumalarının nasıl yönetileceğini bilmek size çok fazla zaman ve güçlük kazandırabilir. Öyleyse devam edin ve projelerinizde deneyin. Mutlu kodlama!
+İster küçük bir proje üzerinde çalışıyor olun, ister birden fazla belgeyle uğraşıyor olun, belge korumalarını nasıl yöneteceğinizi bilmek size çok zaman ve zahmet kazandırabilir. O halde devam edin ve projelerinizde deneyin. İyi kodlamalar!
 
-## SSS'ler
+## SSS
 
-### Salt okunur kısıtlamasını parola ayarlamadan kaldırabilir miyim?
+### Parola belirlemeden salt okunur kısıtlamasını kaldırabilir miyim?
 
-Evet, şifre belirlemek isteğe bağlıdır. Salt okunur öneriyi doğrudan kaldırabilir ve hiçbir koruma uygulamayabilirsiniz.
+Evet, parola ayarlamak isteğe bağlıdır. Salt okunur önerisini doğrudan kaldırabilir ve hiçbir koruma uygulamayabilirsiniz.
 
-### Belgede zaten farklı bir koruma türü varsa ne olur?
+### Belgenin zaten farklı bir koruma türü varsa ne olur?
 
-`doc.Protect(ProtectionType.NoProtection)` yöntemi belgeden her türlü korumanın kaldırılmasını sağlar.
+The`doc.Protect(ProtectionType.NoProtection)` yöntem, belgeden her türlü korumanın kaldırılmasını sağlar.
 
 ### Kısıtlamayı kaldırmadan önce bir belgenin salt okunur olup olmadığını bilmenin bir yolu var mı?
 
- Evet, kontrol edebilirsiniz`ReadOnlyRecommended` Herhangi bir değişiklik yapmadan önce belgenin salt okunur olup olmadığını görmek için özelliği.
+ Evet, kontrol edebilirsiniz`ReadOnlyRecommended` Herhangi bir değişiklik yapmadan önce belgenin salt okunur olup olmadığını kontrol etmek için özelliğin kullanılması önerilir.
 
-### Birden fazla belgedeki kısıtlamaları aynı anda kaldırmak için bu yöntemi kullanabilir miyim?
+### Bu yöntemi birden fazla belgedeki kısıtlamaları aynı anda kaldırmak için kullanabilir miyim?
 
-Evet, birden fazla belge arasında geçiş yapabilir ve salt okunur kısıtlamaları kaldırmak için her birine aynı yöntemi uygulayabilirsiniz.
+Evet, birden fazla belge arasında geçiş yapabilir ve her birine aynı yöntemi uygulayarak salt okunur kısıtlamalarını kaldırabilirsiniz.
 
-### Belge parola korumalıysa ve parolayı bilmiyorsam ne olur?
+### Belge şifreyle korunuyorsa ve ben şifreyi bilmiyorsam ne olur?
 
-Ne yazık ki, herhangi bir kısıtlamayı kaldırmak için şifreyi bilmeniz gerekiyor. Parola olmadan koruma ayarlarını değiştiremezsiniz.
+Ne yazık ki, herhangi bir kısıtlamayı kaldırmak için şifreyi bilmeniz gerekiyor. Şifre olmadan, koruma ayarlarını değiştiremezsiniz.

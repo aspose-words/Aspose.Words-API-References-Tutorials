@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- In diesem Schritt verschmelzen wir`Document1.docx`Und`Document2.docx` in eine neue Datei namens`MergedDocument.docx`.
+ In diesem Schritt verschmelzen wir`Document1.docx` Und`Document2.docx` in eine neue Datei namens`MergedDocument.docx`.
 
 ## Schritt 3: Zusammenführen mit Speicheroptionen
 
@@ -74,7 +74,7 @@ Wenn Sie Dokumente zusammenführen und das Ergebnis als PDF speichern müssen, m
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Hier verschmelzen wir`Document1.docx`Und`Document2.docx` und speichern Sie das Ergebnis als PDF-Datei.
+ Hier verschmelzen wir`Document1.docx` Und`Document2.docx` und speichern Sie das Ergebnis als PDF-Datei.
 
 ## Schritt 5: Erstellen einer Dokumentinstanz aus zusammengeführten Dokumenten
 
@@ -103,11 +103,11 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 
 ### Wie gehe ich beim Zusammenführen mit unterschiedlichen Formatierungen um?
 
- Aspose.Words bietet verschiedene Zusammenführungsformatmodi wie`KeepSourceFormatting`Und`MergeFormatting` Weitere Informationen finden Sie im[API-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Anweisungen.
+ Aspose.Words bietet verschiedene Zusammenführungsformatmodi wie`KeepSourceFormatting` Und`MergeFormatting` Weitere Informationen finden Sie im[API-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Anweisungen.
 
 ### Wie erhalte ich Unterstützung für Aspose.Words für .NET?
 
-Sie erhalten Unterstützung unter[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
+Sie erhalten Unterstützung durch den Besuch der[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
 
 ### Kann ich andere Dateiformate mit Aspose.Words für .NET zusammenführen?
 

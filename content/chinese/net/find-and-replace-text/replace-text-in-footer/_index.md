@@ -88,7 +88,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 
 ## 结论
 
-恭喜！您已成功使用 Aspose.Words for .NET 替换了 Word 文档页脚中的文本。本教程将引导您完成加载文档、访问页脚、设置查找和替换选项、执行文本替换以及保存修改后的文档。通过这些步骤，您可以轻松地以编程方式操作和更新 Word 文档的内容。
+恭喜！您已成功使用 Aspose.Words for .NET 替换了 Word 文档页脚中的文本。本教程将指导您加载文档、访问页脚、设置查找和替换选项、执行文本替换以及保存修改后的文档。通过这些步骤，您可以轻松地以编程方式操作和更新 Word 文档的内容。
 
 ## 常见问题解答
 
@@ -105,4 +105,4 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 是的，Aspose.Words 支持使用正则表达式进行查找和替换操作。您可以在`Range.Replace`方法。
 
 ### 如何处理文档中的多个页脚？
-如果您的文档有多个部分并且每个部分都有不同的页脚，请遍历每个部分并为每个页脚单独应用文本替换。
+如果您的文档有多个部分且每个部分具有不同的页脚，请遍历每个部分并为每个页脚单独应用文本替换。

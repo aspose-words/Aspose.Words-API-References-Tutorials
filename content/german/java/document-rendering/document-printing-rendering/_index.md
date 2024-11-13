@@ -52,7 +52,7 @@ Das Rendern von Dokumenten ist unerlässlich, wenn Sie diese in verschiedene For
 doc.save("output.pdf", SaveFormat.PDF);
 ```
 
- Sie können ersetzen`SaveFormat.PDF` mit dem gewünschten Format für die Darstellung.
+ Sie können ersetzen`SaveFormat.PDF` mit dem gewünschten Format zum Rendern.
 
 ## Anpassen von Drucken und Rendern
 
@@ -82,7 +82,7 @@ Aspose.Words für Java ist ein leistungsstarkes Tool zum Drucken und Rendern von
 
 ### Ist Aspose.Words für Java für die Verarbeitung umfangreicher Dokumente geeignet?
 
-Ja, Aspose.Words für Java ist sowohl für die Dokumentverarbeitung im kleinen als auch im großen Maßstab konzipiert und stellt somit eine vielseitige Wahl für verschiedene Anwendungen dar.
+Ja, Aspose.Words für Java ist sowohl für die Dokumentenverarbeitung im kleinen als auch im großen Maßstab konzipiert und stellt somit eine vielseitige Wahl für verschiedene Anwendungen dar.
 
 ### Wo finde ich weitere Beispiele und Dokumentation?
 

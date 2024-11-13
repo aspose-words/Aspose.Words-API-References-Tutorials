@@ -1,5 +1,5 @@
 ---
-title: Aspose.Words for Java でドキュメント シェイプを使用する
+title: Aspose.Words for Java でのドキュメント シェイプの使用
 linktitle: ドキュメントシェイプの使用
 second_title: Aspose.Words Java ドキュメント処理 API
 description: Aspose.Words for Java のドキュメント シェイプのパワーを解き放ちます。ステップ バイ ステップの例を使用して、視覚的に魅力的なドキュメントを作成する方法を学びます。
@@ -20,7 +20,7 @@ url: /ja/java/document-conversion-and-export/using-document-shapes/
 
 ### グループシェイプの挿入
 
-あ`GroupShape`複数の図形をグループ化することができます。グループを作成して挿入する方法は次のとおりです。`GroupShape`:
+あ`GroupShape`複数の図形をグループ化することができます。ここでは、図形を作成して挿入する方法を説明します。`GroupShape`:
 
 ```java
 Document doc = new Document();

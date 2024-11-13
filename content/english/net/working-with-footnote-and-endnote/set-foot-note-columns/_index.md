@@ -1,5 +1,5 @@
 ---
-title: Set Foot Note Columns
+title: Set Footnote Columns
 linktitle: Set Foot Note Columns
 second_title: Aspose.Words Document Processing API
 description: Learn how to set footnote columns in Word documents using Aspose.Words for .NET. Customize your footnote layout easily with our step-by-step guide.

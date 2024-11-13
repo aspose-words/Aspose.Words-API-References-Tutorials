@@ -68,7 +68,7 @@ doc.save("Your Directory Path" + "FixedLayoutDocument.html", saveOptions);
 
 ### मैं अपने प्रोजेक्ट में Java के लिए Aspose.Words कैसे सेट कर सकता हूँ?
 
- जावा के लिए Aspose.Words को सेट करना बहुत आसान है। आप लाइब्रेरी को यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/java/) और दस्तावेज़ में दिए गए इंस्टॉलेशन निर्देशों का पालन करें[यहाँ](https://reference.aspose.com/words/java/).
+ जावा के लिए Aspose.Words सेट करना सरल है। आप लाइब्रेरी को यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/java/) और दस्तावेज़ में दिए गए इंस्टॉलेशन निर्देशों का पालन करें[यहाँ](https://reference.aspose.com/words/java/).
 
 ### क्या Java के लिए Aspose.Words का उपयोग करने के लिए कोई लाइसेंसिंग आवश्यकताएं हैं?
 

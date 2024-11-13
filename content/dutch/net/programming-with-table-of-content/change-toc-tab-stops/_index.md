@@ -1,42 +1,42 @@
 ---
-title: Wijzig de Toc-tabstops in een Word-document
-linktitle: Wijzig de Toc-tabstops in een Word-document
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de TOC-tabstops in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Met deze stapsgewijze handleiding kunt u een professioneel ogende inhoudsopgave maken.
+title: Wijzig Toc Tab Stops in Word Document
+linktitle: Wijzig Toc Tab Stops in Word Document
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u TOC-tabstops in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Deze stapsgewijze handleiding helpt u een professioneel ogende inhoudsopgave te maken.
 type: docs
 weight: 10
 url: /nl/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
 ## Invoering
 
-Heeft u zich ooit afgevraagd hoe u de inhoudsopgave (TOC) in uw Word-documenten kunt verfraaien? Misschien wilt u dat de tabstops perfect uitgelijnd zijn voor een professionele uitstraling. Je bent op de juiste plek! Vandaag gaan we dieper in op de manier waarop u de TOC-tabstops kunt wijzigen met Aspose.Words voor .NET. Blijf nog even hangen, en ik beloof dat je weggaat met alle kennis om je inhoudsopgave er hip en netjes uit te laten zien.
+Heb je je ooit afgevraagd hoe je de inhoudsopgave (TOC) in je Word-documenten kunt opfleuren? Misschien wil je dat die tabstops perfect uitgelijnd zijn voor een professionele touch. Je bent op de juiste plek! Vandaag duiken we diep in hoe je TOC-tabstops kunt wijzigen met Aspose.Words voor .NET. Blijf hangen en ik beloof je dat je met alle knowhow naar huis gaat om je TOC er flitsend en netjes uit te laten zien.
 
 ## Vereisten
 
-Voordat we aan de slag gaan, zorgen we ervoor dat u over alles beschikt wat u nodig heeft:
+Voordat we beginnen, willen we ervoor zorgen dat u alles heeft wat u nodig hebt:
 
-1.  Aspose.Words voor .NET: dat kan[download het hier](https://releases.aspose.com/words/net/).
-2. Ontwikkelomgeving: Visual Studio of een C#-compatibele IDE.
+1.  Aspose.Words voor .NET: Je kunt[download het hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Visual Studio of een andere C#-compatibele IDE.
 3. Een Word-document: specifiek een document dat een inhoudsopgave bevat.
 
-Heb je dat allemaal? Geweldig! Laten we rollen.
+Heb je dat allemaal? Geweldig! Laten we gaan.
 
 ## Naamruimten importeren
 
-Allereerst moet u de benodigde naamruimten importeren. Dit is hetzelfde als het inpakken van uw gereedschap voordat u aan een project begint.
+Allereerst moet u de benodigde namespaces importeren. Dit is vergelijkbaar met het inpakken van uw tools voordat u een project start.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Laten we dit proces opsplitsen in eenvoudige, verteerbare stappen. We gaan door met het laden van het document, het wijzigen van de TOC-tabstops en het opslaan van het bijgewerkte document.
+Laten we dit proces opsplitsen in eenvoudige, verteerbare stappen. We gaan door het laden van het document, het aanpassen van de TOC-tabstops en het opslaan van het bijgewerkte document.
 
 ## Stap 1: Laad het document
 
-Waarom? We hebben toegang nodig tot het Word-document dat de inhoudsopgave bevat die we willen wijzigen.
+Waarom? We moeten toegang hebben tot het Word-document dat de inhoudsopgave bevat die we willen wijzigen.
 
-Hoe? Hier is een eenvoudig codefragment om u op weg te helpen:
+Hoe? Hier is een eenvoudig stukje code om je op weg te helpen:
 
 ```csharp
 // Pad naar uw documentenmap
@@ -46,11 +46,11 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-Stel je voor dat je document op een taart lijkt en dat we op het punt staan wat glazuur toe te voegen. De eerste stap is om die taart uit de doos te halen.
+Stel je voor dat je document een taart is, en dat we er wat glazuur op gaan doen. De eerste stap is om die taart uit de doos te halen.
 
 ## Stap 2: Identificeer TOC-paragrafen
 
-Waarom? We moeten de paragrafen identificeren waaruit de inhoudsopgave bestaat. 
+Waarom? We moeten de paragrafen die de inhoudsopgave vormen, nauwkeurig bepalen. 
 
 Hoe? Loop door de paragrafen en controleer hun stijlen:
 
@@ -65,11 +65,11 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-Zie het als het scannen van een menigte om je vrienden te vinden. Hier zoeken we naar alinea's die zijn opgemaakt als inhoudsopgave-items.
+Zie het als het scannen van een menigte om je vrienden te vinden. Hier zoeken we naar paragrafen die zijn opgemaakt als TOC-items.
 
-## Stap 3: Pas de tabstops aan
+## Stap 3: Wijzig de tabstops
 
-Waarom? Dit is waar de magie gebeurt. Als u de tabstops wijzigt, ziet uw inhoudsopgave er netter uit.
+Waarom? Dit is waar de magie gebeurt. Het veranderen van tabstops geeft uw TOC een schonere look.
 
 Hoe? Verwijder de bestaande tabstop en voeg een nieuwe toe op een gewijzigde positie:
 
@@ -86,7 +86,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-Het is alsof je het meubilair in je woonkamer aanpast totdat het precies goed voelt. We passen deze tabstops aan voor perfectie.
+Het is alsof je de meubels in je woonkamer aanpast tot ze precies goed voelen. We tweaken die tabstops tot ze perfect zijn.
 
 ## Stap 4: Sla het gewijzigde document op
 
@@ -99,25 +99,25 @@ Hoe? Sla het document op met een nieuwe naam om het origineel intact te houden:
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-En voila! Uw inhoudsopgave heeft nu de tabstops precies waar u ze wilt hebben.
+En voilà! Je inhoudsopgave heeft nu de tabstops precies waar je ze wilt hebben.
 
 ## Conclusie
 
-Het wijzigen van TOC-tabstops in een Word-document met Aspose.Words voor .NET is eenvoudig als je het eenmaal hebt opgesplitst. Door uw document te laden, de TOC-paragrafen te identificeren, de tabstops aan te passen en het document op te slaan, kunt u een verzorgde en professionele uitstraling krijgen. Vergeet niet dat oefening kunst baart, dus blijf experimenteren met verschillende tabstopposities om precies de gewenste lay-out te krijgen.
+Het wijzigen van TOC-tabstops in een Word-document met Aspose.Words voor .NET is eenvoudig zodra u het opsplitst. Door uw document te laden, de TOC-paragrafen te identificeren, de tabstops aan te passen en het document op te slaan, kunt u een gepolijste en professionele look bereiken. Vergeet niet, oefening baart kunst, dus blijf experimenteren met verschillende tabstopposities om de exacte lay-out te krijgen die u wenst.
 
 ## Veelgestelde vragen
 
-### Kan ik tabstops voor verschillende TOC-niveaus afzonderlijk wijzigen?
-Ja, dat kan! Controleer gewoon elk specifiek TOC-niveau (Toc1, Toc2, enz.) en pas het dienovereenkomstig aan.
+### Kan ik tabstops voor verschillende inhoudsopgaveniveaus afzonderlijk aanpassen?
+Ja, dat kan! Controleer gewoon voor elk specifiek TOC-niveau (Toc1, Toc2, etc.) en pas het dienovereenkomstig aan.
 
-### Wat moet ik doen als mijn document meerdere inhoudsopgaven heeft?
-De code scant op alle alinea's in TOC-stijl, zodat alle inhoudsopgaven in het document worden gewijzigd.
+### Wat als mijn document meerdere inhoudsopgaven heeft?
+De code scant alle paragrafen in inhoudsopgavestijl en wijzigt dus alle inhoudsopgaven in het document.
 
-### Is het mogelijk om meerdere tabstops toe te voegen aan een inhoudsopgave?
+### Is het mogelijk om meerdere tabstops toe te voegen aan een TOC-item?
  Absoluut! U kunt zoveel tabstops toevoegen als nodig is door de`para.ParagraphFormat.TabStops` verzameling.
 
-### Kan ik de uitlijning van de tabstops en de leaderstijl wijzigen?
-Ja, u kunt verschillende uitlijningen en verwijsstijlen opgeven wanneer u een nieuwe tabstop toevoegt.
+### Kan ik de uitlijning van de tabstop en de stijl van de opvulstreep wijzigen?
+Ja, u kunt verschillende uitlijningen en opvulstijlen opgeven wanneer u een nieuwe tabstop toevoegt.
 
 ### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
- Ja, u heeft een geldige licentie nodig om Aspose.Words voor .NET na de proefperiode te gebruiken. Je kunt een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) of[koop er een](https://purchase.aspose.com/buy).
+ Ja, u hebt een geldige licentie nodig om Aspose.Words voor .NET te gebruiken na de proefperiode. U kunt een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) of[koop er een](https://purchase.aspose.com/buy).

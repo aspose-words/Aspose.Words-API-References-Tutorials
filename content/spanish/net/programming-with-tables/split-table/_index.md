@@ -1,45 +1,45 @@
 ---
-title: Tabla dividida
-linktitle: Tabla dividida
+title: Mesa dividida
+linktitle: Mesa dividida
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a dividir tablas en documentos de Word usando Aspose.Words para .NET. Nuestra guía paso a paso hace que la gestión de mesas sea fácil y eficiente.
+description: Aprenda a dividir tablas en documentos de Word con Aspose.Words para .NET. Nuestra guía paso a paso facilita y hace más eficiente la gestión de tablas.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/split-table/
 ---
 ## Introducción
 
-¿Alguna vez se ha encontrado trabajando con una tabla grande en un documento de Word y ha deseado poder dividirla en dos tablas más pequeñas y manejables? Bueno, hoy profundizaremos en cómo puedes lograr esto exactamente usando Aspose.Words para .NET. Ya sea que esté tratando con tablas de datos extensas o estructuras de documentos complejas, dividir tablas puede ayudar a mejorar la legibilidad y la organización. Exploremos el proceso paso a paso para dividir una tabla usando Aspose.Words para .NET.
+¿Alguna vez ha trabajado con una tabla grande en un documento de Word y ha deseado poder dividirla en dos tablas más pequeñas y manejables? Hoy, analizaremos en profundidad cómo puede lograrlo con Aspose.Words para .NET. Ya sea que trabaje con tablas de datos extensas o con estructuras de documentos complejas, dividir tablas puede ayudar a mejorar la legibilidad y la organización. Exploremos el proceso paso a paso para dividir una tabla con Aspose.Words para .NET.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de pasar al tutorial, asegúrese de tener lo siguiente:
+Antes de comenzar con el tutorial, asegúrese de tener lo siguiente:
 
-1.  Biblioteca Aspose.Words para .NET: asegúrese de haber descargado e instalado la biblioteca Aspose.Words para .NET. Puedes conseguirlo desde el[Página de lanzamientos de Aspose](https://releases.aspose.com/words/net/).
+1.  Biblioteca Aspose.Words para .NET: asegúrese de haber descargado e instalado la biblioteca Aspose.Words para .NET. Puede obtenerla desde[Página de lanzamiento de Aspose](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: configure un entorno de desarrollo con soporte para .NET Framework, como Visual Studio.
-3. Documento de muestra: prepare un documento de Word (`Tables.docx`) con al menos una tabla para aplicar la operación de división.
+3. Documento de muestra: Prepare un documento de Word (`Tables.docx`) con al menos una tabla para aplicar la operación de división.
 
 ## Importar espacios de nombres
 
-Primero, importe los espacios de nombres necesarios a su proyecto. Esto le permite acceder a las clases y métodos proporcionados por Aspose.Words.
+En primer lugar, importe los espacios de nombres necesarios a su proyecto. Esto le permitirá acceder a las clases y métodos proporcionados por Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## Paso 1: cargue el documento
+## Paso 1: Cargue el documento
 
-Comencemos cargando el documento que contiene la tabla que desea dividir. Asegúrese de especificar la ruta correcta a su documento.
+Comencemos cargando el documento que contiene la tabla que desea dividir. Asegúrese de especificar la ruta correcta al documento.
 
 ```csharp
-// Ruta a su directorio de documentos
+// Ruta al directorio de su documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Paso 2: identificar la tabla a dividir
+## Paso 2: Identificar la tabla a dividir
 
 A continuación, identifique y recupere la tabla que desea dividir. En este ejemplo, nos centraremos en la primera tabla del documento.
 
@@ -47,41 +47,41 @@ A continuación, identifique y recupere la tabla que desea dividir. En este ejem
 Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Paso 3: seleccione la fila en la que dividir
+## Paso 3: Seleccione la fila en la que desea dividir
 
-Determine la fila donde desea dividir la tabla. Aquí, estamos dividiendo la tabla en la tercera fila (inclusive).
+Determina la fila en la que quieres dividir la tabla. Aquí, dividiremos la tabla en la tercera fila (incluida).
 
 ```csharp
 Row row = firstTable.Rows[2];
 ```
 
-## Paso 4: crear un nuevo contenedor de tabla
+## Paso 4: Crear un nuevo contenedor de tablas
 
-Cree un nuevo contenedor de tabla para contener las filas que se moverán de la tabla original.
+Cree un nuevo contenedor de tabla para almacenar las filas que se moverán de la tabla original.
 
 ```csharp
 Table table = (Table)firstTable.Clone(false);
 ```
 
-## Paso 5: inserte el contenedor de nueva tabla
+## Paso 5: Insertar el nuevo contenedor de tabla
 
-Inserte el nuevo contenedor de tablas justo después de la tabla original en el documento.
+Inserte el nuevo contenedor de tabla justo después de la tabla original en el documento.
 
 ```csharp
 firstTable.ParentNode.InsertAfter(table, firstTable);
 ```
 
-## Paso 6: agregue un párrafo de búfer
+## Paso 6: Agregar un párrafo de búfer
 
-Agregue un párrafo de amortiguación entre las dos tablas para asegurarse de que permanezcan separadas.
+Agregue un párrafo de separación entre las dos tablas para garantizar que permanezcan separadas.
 
 ```csharp
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
 ```
 
-## Paso 7: mover filas a la nueva tabla
+## Paso 7: Mueva las filas a la nueva tabla
 
-Mueva las filas de la tabla original al nuevo contenedor de tablas. Este bucle continúa hasta que se mueve la fila especificada (inclusive).
+Mueve las filas de la tabla original al nuevo contenedor de la tabla. Este bucle continúa hasta que se mueve la fila especificada (incluida).
 
 ```csharp
 Row currentRow;
@@ -92,9 +92,9 @@ do
 } while (currentRow != row);
 ```
 
-## Paso 8: guarde el documento
+## Paso 8: Guardar el documento
 
-Finalmente, guarde el documento modificado con las tablas divididas.
+Por último, guarde el documento modificado con las tablas divididas.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
@@ -102,21 +102,21 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 
 ## Conclusión
 
-¡Y ahí lo tienes! Si sigue estos pasos, puede dividir fácilmente una tabla en un documento de Word usando Aspose.Words para .NET. Este enfoque le ayuda a gestionar tablas grandes de forma más eficaz, mejorando la legibilidad y la organización de sus documentos. Pruébelo y vea cómo simplifica su trabajo con tablas en documentos de Word.
+¡Y ya está! Siguiendo estos pasos, puedes dividir fácilmente una tabla en un documento de Word usando Aspose.Words para .NET. Este enfoque te ayuda a administrar tablas grandes de manera más efectiva, mejorando la legibilidad y la organización de tus documentos. Pruébalo y observa cómo simplifica tu trabajo con tablas en documentos de Word.
 
 ## Preguntas frecuentes
 
 ### ¿Puedo dividir una tabla en varias filas?
-Sí, puede dividir una tabla en varias filas repitiendo el proceso para cada punto de división.
+Sí, puedes dividir una tabla en varias filas repitiendo el proceso para cada punto de división.
 
-### ¿Qué sucede con el formato de la tabla original?
-La nueva tabla hereda el formato de la tabla original. Cualquier cambio de formato específico se puede aplicar a la nueva tabla según sea necesario.
+### ¿Qué pasa con el formato de la tabla original?
+La nueva tabla hereda el formato de la tabla original. Se pueden aplicar cambios de formato específicos a la nueva tabla según sea necesario.
 
 ### ¿Es posible volver a fusionar tablas?
-Sí, puede fusionar tablas moviendo filas de una tabla a otra utilizando métodos similares.
+Sí, puedes fusionar tablas moviendo filas de una tabla a otra utilizando métodos similares.
 
 ### ¿Este método funciona con tablas anidadas?
 Sí, Aspose.Words para .NET también admite operaciones en tablas anidadas.
 
 ### ¿Puedo automatizar este proceso para varios documentos?
-¡Absolutamente! Puede crear una secuencia de comandos o una aplicación para automatizar el proceso de división de tablas para varios documentos.
+¡Por supuesto! Puedes crear un script o una aplicación para automatizar el proceso de división de tablas para varios documentos.

@@ -19,7 +19,7 @@ Mielőtt belevágnánk a tartalomvezérlők módosításának aprólékos dolgai
 
 2. Alapvető C# ismerete: Ez az oktatóanyag feltételezi, hogy ismeri az alapvető C# programozási fogalmakat.
 
-3. .NET fejlesztői környezet: A .NET-alkalmazások futtatásához be kell állítania egy IDE-t, például a Visual Studio-t.
+3. .NET fejlesztői környezet: A .NET-alkalmazások futtatásához be kell állítania egy IDE-t, mint a Visual Studio.
 
 4. Mintadokumentum: Word-mintadokumentumot fogunk használni különféle típusú SDT-kkel. Használhatja a példában szereplőt, vagy létrehozhatja sajátját.
 
@@ -71,7 +71,7 @@ if (sdt.SdtType == SdtType.PlainText)
 }
 ```
 
- Magyarázat: Tessék,`RemoveAllChildren()`törli az SDT meglévő tartalmát. Ezután létrehozunk egy újat`Paragraph`és`Run` objektumot az új szöveg beszúrásához.
+ Magyarázat: Tessék,`RemoveAllChildren()`törli az SDT meglévő tartalmát. Ezután létrehozunk egy újat`Paragraph` és`Run` objektumot az új szöveg beszúrásához.
 
 ## 4. lépés: A legördülő lista SDT-k módosítása
 

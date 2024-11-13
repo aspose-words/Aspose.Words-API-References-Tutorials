@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 V této třídě:
--  The`Warning`metoda zachycuje varování související se záměnou písem.
--  The`FontWarnings` kolekce ukládá tato varování pro další kontrolu nebo protokolování.
+- The`Warning`metoda zachycuje varování související se záměnou písem.
+- The`FontWarnings` kolekce ukládá tato varování pro další kontrolu nebo protokolování.
 
 ## Závěr
 

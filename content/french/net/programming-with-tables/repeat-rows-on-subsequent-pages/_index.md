@@ -9,18 +9,18 @@ url: /fr/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 ## Introduction
 
-La création d'un document Word par programmation peut être une tâche ardue, en particulier lorsque vous devez conserver la mise en forme sur plusieurs pages. Avez-vous déjà essayé de créer un tableau dans Word, pour vous rendre compte que vos lignes d'en-tête ne se répètent pas sur les pages suivantes ? N'ayez crainte ! Avec Aspose.Words pour .NET, vous pouvez facilement vous assurer que les en-têtes de vos tableaux se répètent sur chaque page, offrant ainsi un aspect professionnel et soigné à vos documents. Dans ce didacticiel, nous vous guiderons à travers les étapes pour y parvenir à l'aide d'exemples de code simples et d'explications détaillées. Allons-y !
+Créer un document Word par programmation peut être une tâche ardue, surtout lorsque vous devez conserver la mise en forme sur plusieurs pages. Avez-vous déjà essayé de créer un tableau dans Word, pour vous rendre compte que vos lignes d'en-tête ne se répètent pas sur les pages suivantes ? N'ayez crainte ! Avec Aspose.Words pour .NET, vous pouvez facilement vous assurer que vos en-têtes de tableau se répètent sur chaque page, offrant ainsi un aspect professionnel et soigné à vos documents. Dans ce didacticiel, nous vous guiderons à travers les étapes à suivre pour y parvenir à l'aide d'exemples de code simples et d'explications détaillées. Plongeons-nous dans le vif du sujet !
 
-## Conditions préalables
+## Prérequis
 
-Avant de commencer, assurez-vous d'avoir les éléments suivants :
+Avant de commencer, assurez-vous de disposer des éléments suivants :
 
-1.  Aspose.Words pour .NET : vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
-2. .NET Framework installé sur votre ordinateur.
+1.  Aspose.Words pour .NET : vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
+2. .NET Framework installé sur votre machine.
 3. Visual Studio ou tout autre IDE prenant en charge le développement .NET.
 4. Compréhension de base de la programmation C#.
 
-Assurez-vous d'avoir installé Aspose.Words pour .NET et configuré votre environnement de développement avant de continuer.
+Assurez-vous d’avoir installé Aspose.Words pour .NET et configuré votre environnement de développement avant de continuer.
 
 ## Importer des espaces de noms
 
@@ -31,25 +31,25 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Ces espaces de noms incluent les classes et méthodes requises pour manipuler les documents et les tableaux Word.
+Ces espaces de noms incluent les classes et les méthodes nécessaires pour manipuler les documents et les tableaux Word.
 
-## Étape 1 : initialiser le document
+## Étape 1 : Initialiser le document
 
- Tout d'abord, créons un nouveau document Word et un`DocumentBuilder` pour construire notre table.
+ Tout d’abord, créons un nouveau document Word et un`DocumentBuilder` pour construire notre table.
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
+// Chemin vers votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ce code initialise un nouveau document et un`DocumentBuilder` objet, qui aide à construire la structure du document.
+ Ce code initialise un nouveau document et un`DocumentBuilder` objet qui aide à construire la structure du document.
 
-## Étape 2 : démarrer le tableau et définir les lignes d'en-tête
+## Étape 2 : démarrer le tableau et définir les lignes d’en-tête
 
-Ensuite, nous allons démarrer le tableau et définir les lignes d'en-tête que nous souhaitons répéter sur les pages suivantes.
+Ensuite, nous allons démarrer le tableau et définir les lignes d’en-tête que nous souhaitons répéter sur les pages suivantes.
 
 ```csharp
 builder.StartTable();
@@ -66,11 +66,11 @@ builder.Writeln("Heading row 2");
 builder.EndRow();
 ```
 
- Ici, nous commençons une nouvelle table, définissons le`HeadingFormat`propriété à`true` pour indiquer que les lignes sont des en-têtes et définir l'alignement et la largeur des cellules.
+ Ici, nous commençons une nouvelle table, définissons les`HeadingFormat`propriété à`true` pour indiquer que les lignes sont des en-têtes et définir l'alignement et la largeur des cellules.
 
 ## Étape 3 : ajouter des lignes de données au tableau
 
-Maintenant, nous allons ajouter plusieurs lignes de données à notre table. Ces lignes ne se répéteront pas sur les pages suivantes.
+Nous allons maintenant ajouter plusieurs lignes de données à notre tableau. Ces lignes ne se répéteront pas sur les pages suivantes.
 
 ```csharp
 builder.CellFormat.Width = 50;
@@ -87,9 +87,9 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
- Cette boucle insère 50 lignes de données dans le tableau, avec deux colonnes dans chaque ligne. Le`HeadingFormat` est réglé sur`false` pour ces lignes, car ce ne sont pas des lignes d'en-tête.
+ Cette boucle insère 50 lignes de données dans la table, avec deux colonnes dans chaque ligne.`HeadingFormat` est réglé sur`false` pour ces lignes, car ce ne sont pas des lignes d'en-tête.
 
-## Étape 4 : Enregistrez le document
+## Étape 4 : Enregistrer le document
 
 Enfin, nous enregistrons le document dans le répertoire spécifié.
 
@@ -101,7 +101,7 @@ Cela enregistre le document avec le nom spécifié dans votre répertoire de doc
 
 ## Conclusion
 
-Et voilà ! Avec seulement quelques lignes de code, vous pouvez créer un document Word avec des tableaux comportant des lignes d'en-tête répétitives sur les pages suivantes à l'aide d'Aspose.Words pour .NET. Cela améliore non seulement la lisibilité de vos documents, mais garantit également une apparence cohérente et professionnelle. Maintenant, allez-y et essayez cela dans vos projets !
+Et voilà ! Avec seulement quelques lignes de code, vous pouvez créer un document Word avec des tableaux comportant des lignes d'en-tête répétées sur les pages suivantes à l'aide d'Aspose.Words pour .NET. Cela améliore non seulement la lisibilité de vos documents, mais garantit également une apparence cohérente et professionnelle. Maintenant, allez-y et essayez ceci dans vos projets !
 
 ## FAQ
 
@@ -109,13 +109,13 @@ Et voilà ! Avec seulement quelques lignes de code, vous pouvez créer un docume
  Oui, vous pouvez appliquer une mise en forme supplémentaire aux lignes d'en-tête en modifiant les propriétés de`ParagraphFormat`, `RowFormat` , et`CellFormat`.
 
 ### Est-il possible d'ajouter plus de colonnes au tableau ?
- Absolument! Vous pouvez ajouter autant de colonnes que nécessaire en insérant plus de cellules dans le`InsertCell` méthode.
+ Absolument ! Vous pouvez ajouter autant de colonnes que nécessaire en insérant plus de cellules dans le`InsertCell` méthode.
 
-### Comment puis-je répéter d’autres lignes sur les pages suivantes ?
+### Comment puis-je faire en sorte que d’autres lignes se répètent sur les pages suivantes ?
  Pour répéter une ligne, définissez le`RowFormat.HeadingFormat`propriété à`true` pour cette ligne spécifique.
 
-### Puis-je utiliser cette méthode pour les tableaux existants dans un document ?
+### Puis-je utiliser cette méthode pour des tableaux existants dans un document ?
  Oui, vous pouvez modifier les tables existantes en y accédant via le`Document` objet et en appliquant un formatage similaire.
 
 ### Quelles autres options de formatage de tableau sont disponibles dans Aspose.Words pour .NET ?
- Aspose.Words for .NET offre une large gamme d'options de formatage de tableau, notamment la fusion de cellules, les paramètres de bordure et l'alignement des tableaux. Découvrez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Aspose.Words pour .NET propose une large gamme d'options de mise en forme de tableau, notamment la fusion de cellules, les paramètres de bordure et l'alignement de tableau. Découvrez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.

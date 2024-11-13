@@ -68,10 +68,8 @@ builder.InsertHyperlink("Contact Support", "mailto:support@aspose.com", false);
  hiperhivatkozások testreszabhatók, hogy illeszkedjenek a dokumentum stílusához. A betűtípus színét, méretét és egyéb attribútumait a gombbal módosíthatja`Font` a DocumentBuilder tulajdona.
 
 ```csharp
-// A hiperhivatkozás megjelenésének testreszabása.
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.Font.Underline = Underline.Single;
-builder.InsertHyperlink("Styled Link", "https://www.aspose.com", false);
+builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
 ```
 
 Ez a részlet egy kék, aláhúzott hiperhivatkozást szúr be, így kiemeli a dokumentumot.
@@ -89,7 +87,7 @@ Igen, beszúrhat más dokumentumokra mutató hivatkozásokat, ha URL-ként megad
  A hivatkozás segítségével eltávolíthatja a hivatkozást`Remove` módszer a hiperhivatkozás csomópontján.
 
 ### Hozzáadhatok elemleírásokat a hiperhivatkozásokhoz?
-Igen, eszköztippeket adhat hozzá a`ScreenTip` a hiperhivatkozás tulajdonsága.
+ Igen, eszköztippeket adhat hozzá a`ScreenTip` hiperhivatkozás tulajdonsága.
 
 ### Lehetséges a hiperhivatkozások stílusa a dokumentumban eltérően?
  Igen, a hiperhivatkozások stílusát eltérő módon állíthatja be a`Font` tulajdonságait az egyes hiperhivatkozások beszúrása előtt.

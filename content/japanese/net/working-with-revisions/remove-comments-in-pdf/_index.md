@@ -16,7 +16,7 @@ url: /ja/net/working-with-revisions/remove-comments-in-pdf/
 始める前に、必要なものがすべて揃っていることを確認しましょう。
 
 1.  Aspose.Words for .NET: ライブラリがインストールされていることを確認してください。以下からダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
-2. 開発環境: Visual Studio などの .NET 互換の IDE。
+2. 開発環境: Visual Studio などの .NET 互換 IDE。
 3. C# の基礎知識: C# プログラミングの基礎を理解していると役立ちます。
 4. コメント付きのドキュメント: テストにはコメント付きの Word ドキュメント (.docx) が必要です。
 
@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用すると、わずか数ステップで PDF ファイルからコメントを削除できました。この強力なライブラリにより、ドキュメントの操作が簡素化され、面倒な作業も簡単に処理できるようになります。
+これで完了です。わずか数ステップで、Aspose.Words for .NET を使用して PDF ファイルからコメントを削除できました。この強力なライブラリによりドキュメントの操作が簡素化され、面倒な作業も簡単に処理できるようになります。
 
 覚えておいてください、練習すれば完璧になります。さあ、あなたのドキュメントでこれを試してみてください。余白を乱雑にするコメントがなくなると、PDF がどれだけすっきりしてプロフェッショナルに見えるかに驚くでしょう。
 

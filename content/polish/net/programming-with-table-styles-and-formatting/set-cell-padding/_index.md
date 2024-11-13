@@ -1,38 +1,38 @@
 ---
-title: Ustaw dopełnienie komórek
-linktitle: Ustaw dopełnienie komórek
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić dopełnienie komórek w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Z łatwością popraw formatowanie tabeli swojego dokumentu.
+title: Ustaw wypełnienie komórki
+linktitle: Ustaw wypełnienie komórki
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak ustawić odstępy między komórkami w dokumentach Worda za pomocą Aspose.Words dla .NET dzięki naszemu przewodnikowi krok po kroku. Łatwo popraw formatowanie tabeli w swoim dokumencie.
 type: docs
 weight: 10
 url: /pl/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
 ## Wstęp
 
-Czy zastanawiałeś się kiedyś, jak dodać trochę dodatkowej przestrzeni wokół tekstu w komórce tabeli w dokumencie programu Word? Cóż, jesteś we właściwym miejscu! Ten samouczek przeprowadzi Cię przez proces ustawiania dopełnienia komórek przy użyciu Aspose.Words dla .NET. Niezależnie od tego, czy chcesz nadać swojemu dokumentowi bardziej dopracowany wygląd, czy po prostu chcesz wyróżnić dane w tabeli, dostosowywanie dopełnienia komórek to proste, ale potężne narzędzie. Podzielimy każdy krok, abyś mógł łatwo go wykonać, nawet jeśli jesteś nowy w Aspose.Words dla .NET.
+Czy kiedykolwiek zastanawiałeś się, jak dodać trochę dodatkowej przestrzeni wokół tekstu w komórce tabeli w dokumencie Word? Cóż, jesteś we właściwym miejscu! Ten samouczek przeprowadzi Cię przez proces ustawiania odstępu komórek za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy chcesz, aby Twój dokument wyglądał bardziej elegancko, czy po prostu chcesz, aby dane w tabeli się wyróżniały, dostosowanie odstępu komórek jest prostym, ale potężnym narzędziem. Podzielimy każdy krok, aby zapewnić, że będziesz mógł łatwo go śledzić, nawet jeśli jesteś nowy w Aspose.Words dla .NET.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w temat, upewnij się, że masz następujące elementy:
+Zanim przejdziemy do konkretów, upewnij się, że masz następujące rzeczy:
 
-1. Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj Aspose.Words dla .NET ze strony[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: Potrzebujesz środowiska IDE takiego jak Visual Studio skonfigurowanego na swoim komputerze.
-3. Podstawowa znajomość języka C#: Choć wszystko wyjaśnimy, podstawowa znajomość języka C# pomoże Ci w dalszym ciągu.
+1. Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj Aspose.Words dla .NET ze strony[Strona wydań Aspose](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Potrzebujesz środowiska IDE, np. Visual Studio, zainstalowanego na Twoim komputerze.
+3. Podstawowa znajomość języka C#: Choć wszystko zostanie wyjaśnione, podstawowa znajomość języka C# ułatwi Ci zrozumienie materiału.
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw. Dzięki temu będziesz miał wszystkie narzędzia potrzebne do pracy z Aspose.Words.
+Po pierwsze, zaimportujmy niezbędne przestrzenie nazw. Dzięki temu będziesz mieć pewność, że masz wszystkie narzędzia potrzebne do pracy z Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Podzielmy proces na proste, łatwe do wykonania etapy. Gotowy? chodźmy!
+Podzielmy proces na proste, łatwe do opanowania kroki. Gotowi? Zaczynajmy!
 
 ## Krok 1: Utwórz nowy dokument
 
-Zanim zaczniemy dodawać tabele i ustawiać dopełnienie komórek, potrzebujemy dokumentu, z którym będziemy mogli pracować. Oto jak utworzyć nowy dokument:
+Zanim zaczniemy dodawać tabele i ustawiać wypełnienie komórek, potrzebujemy dokumentu, z którym będziemy pracować. Oto jak utworzyć nowy dokument:
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -43,19 +43,19 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Zacznij budować swój stół
+## Krok 2: Zacznij budować swoją tabelę
 
- Teraz, gdy mamy już nasz dokument, zacznijmy budować tabelę. Skorzystamy z`DocumentBuilder` aby wstawić komórki i wiersze.
+ Teraz, gdy mamy nasz dokument, zacznijmy budować tabelę. Użyjemy`DocumentBuilder` aby wstawić komórki i wiersze.
 
 ```csharp
-// Zacznij budować stół
+// Zacznij budować tabelę
 builder.StartTable();
 builder.InsertCell();
 ```
 
-## Krok 3: Ustaw dopełnienie komórek
+## Krok 3: Ustaw wypełnienie komórki
 
-To tutaj dzieje się magia! Ustalimy ilość miejsca (w punktach), którą należy dodać po lewej, górnej, prawej i dolnej części zawartości komórki.
+Tutaj dzieje się magia! Ustawimy ilość miejsca (w punktach), aby dodać do lewej, górnej, prawej i dolnej części zawartości komórki.
 
 ```csharp
 // Ustaw wypełnienie komórki
@@ -65,7 +65,7 @@ builder.Writeln("I'm a wonderfully formatted cell.");
 
 ## Krok 4: Uzupełnij tabelę
 
-Po ustawieniu wypełnienia zakończmy nasz stół, kończąc wiersz i tabelę.
+Po ustawieniu wypełnienia zakończmy tabelę, kończąc wiersz i tabelę.
 
 ```csharp
 builder.EndRow();
@@ -83,21 +83,21 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 
 ## Wniosek
 
-I masz to! Pomyślnie ustawiłeś dopełnienie komórek w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta prosta, ale potężna funkcja może znacząco poprawić czytelność i estetykę Twoich tabel. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, mamy nadzieję, że ten przewodnik był pomocny i łatwy w obsłudze. Miłego kodowania!
+I masz! Udało Ci się ustawić wypełnienie komórek w dokumencie Word za pomocą Aspose.Words dla .NET. Ta prosta, ale potężna funkcja może znacznie poprawić czytelność i estetykę Twoich tabel. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, mamy nadzieję, że ten przewodnik był pomocny i łatwy do naśladowania. Miłego kodowania!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę ustawić różne wartości dopełnienia dla każdej komórki w tabeli?
- Tak, możesz ustawić różne wartości dopełnienia dla każdej komórki, stosując opcję`SetPaddings` metodę do każdej komórki indywidualnie.
+### Czy mogę ustawić różne wartości wypełnienia dla każdej komórki w tabeli?
+ Tak, możesz ustawić różne wartości wypełnienia dla każdej komórki, stosując`SetPaddings` do każdej komórki indywidualnie.
 
-### Jakie jednostki są używane do dopełniania wartości w Aspose.Words?
-Wartości dopełnienia podawane są w punktach. Na cal przypada 72 punkty.
+### Jakie jednostki są używane do wartości wypełnienia w Aspose.Words?
+Wartości wypełnienia są określone w punktach. Cal ma 72 punkty.
 
-### Czy mogę zastosować dopełnienie tylko do określonych stron komórki?
-Tak, możesz określić wyściółkę indywidualnie dla lewej, górnej, prawej i dolnej strony.
+### Czy mogę zastosować wypełnienie tylko do wybranych stron komórki?
+Tak, możesz osobno określić wypełnienie lewej, górnej, prawej i dolnej krawędzi.
 
-### Czy istnieje ograniczenie ilości dopełnienia, które mogę ustawić?
-Nie ma określonego limitu, ale nadmierne dopełnienie może mieć wpływ na układ tabeli i dokumentu.
+### Czy istnieje limit ilości wypełnienia, jaką mogę ustawić?
+Nie ma konkretnego limitu, ale nadmierne wypełnienie może mieć wpływ na układ tabeli i dokumentu.
 
-### Czy mogę ustawić dopełnienie komórek za pomocą programu Microsoft Word?
-Tak, możesz ustawić dopełnianie komórek w programie Microsoft Word, ale użycie Aspose.Words dla .NET pozwala na zautomatyzowaną i programowalną manipulację dokumentami.
+### Czy mogę ustawić odstępy między komórkami za pomocą programu Microsoft Word?
+Tak, w programie Microsoft Word można ustawić odstęp komórek, ale użycie Aspose.Words dla platformy .NET umożliwia automatyczną i programowalną manipulację dokumentem.

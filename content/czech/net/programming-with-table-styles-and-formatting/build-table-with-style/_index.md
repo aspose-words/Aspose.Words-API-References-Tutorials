@@ -76,7 +76,7 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
 
 ## Krok 6: Upravte tabulku tak, aby odpovídala obsahu
 
- Aby náš stůl vypadal úhledně a uklizeně, můžeme použít`AutoFit` způsob, jak upravit tabulku tak, aby odpovídala jejímu obsahu.
+Aby náš stůl vypadal úhledně a uklizeně, můžeme použít`AutoFit` způsob, jak upravit tabulku tak, aby odpovídala jejímu obsahu.
 
 ```csharp
 table.AutoFit(AutoFitBehavior.AutoFitToContents);
@@ -145,4 +145,4 @@ Ano, Aspose.Words for .NET lze použít ke stylování nových i stávajících 
 Absolutně! Aspose.Words for .NET podporuje různé typy dokumentů, včetně DOCX, PDF, HTML a dalších.
 
 ### Kde najdu další příklady a dokumentaci?
- Komplexní dokumentaci a příklady naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).
+ Kompletní dokumentaci a příklady naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).

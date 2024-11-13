@@ -61,7 +61,7 @@ Fügen Sie jetzt eine neue Ordnerquelle hinzu, um Aspose.Words anzuweisen, in di
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
 ```
 
-- FolderFontSource: Diese Klasse repräsentiert eine Ordner-Schriftquelle. Der zweite Parameter (`true`) gibt an, ob rekursiv in Unterordnern nach Schriftarten gesucht werden soll.
+- FolderFontSource: Diese Klasse repräsentiert eine Ordner-Schriftartquelle. Der zweite Parameter (`true`) gibt an, ob rekursiv in Unterordnern nach Schriftarten gesucht werden soll.
 
 ## Schritt 4: Schriftartquellen aktualisieren
 
@@ -111,4 +111,4 @@ Sie können es über den NuGet Package Manager in Visual Studio installieren, in
  Ja, Sie können Schriftartdetails aus jeder Schriftartquelle abrufen, indem Sie den Index der Schriftartquelle im`updatedFontSources` -Array.
 
 ### Unterstützt Aspose.Words für .NET die Schriftartenersetzung?
-Ja, es unterstützt die Schriftartersetzung, um sicherzustellen, dass Text korrekt wiedergegeben wird, auch wenn die Originalschriftart nicht verfügbar ist.
+Ja, es unterstützt die Schriftartersetzung, um sicherzustellen, dass Text auch dann korrekt wiedergegeben wird, wenn die Originalschriftart nicht verfügbar ist.

@@ -15,7 +15,7 @@ Amikor a dokumentumkezelésről van szó, kulcsfontosságú az oldalelrendezés 
 
 Mielőtt belemerülnénk a kódba, nézzük meg, mire van szüksége az induláshoz.
 
--  Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 - Fejlesztői környezet: Bármely .NET-kompatibilis IDE (pl. Visual Studio).
 - Alapvető C# ismerete: A C# programozás ismerete elengedhetetlen.
 
@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
 
- Kezdjük azzal, hogy inicializáljuk a`Document`és`DocumentBuilder` tárgyakat. A`DocumentBuilder` egy segédosztály, amely leegyszerűsíti a dokumentumok létrehozását és kezelését.
+ Kezdjük azzal, hogy inicializáljuk a`Document` és`DocumentBuilder` tárgyakat. A`DocumentBuilder` egy segédosztály, amely leegyszerűsíti a dokumentumok létrehozását és kezelését.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.

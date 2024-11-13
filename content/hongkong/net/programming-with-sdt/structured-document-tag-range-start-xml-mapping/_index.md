@@ -33,7 +33,7 @@ using System.Text;
 
 ## 第 1 步：設定您的文件目錄
 
-每個專案都需要一個基礎，對吧？在這裡，我們設定文檔目錄的路徑。
+每個項目都需要一個基礎，對嗎？在這裡，我們設定文檔目錄的路徑。
 
 ```csharp
 //文檔目錄的路徑
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將 XML 部分對應到 Word 文件中的結構化文件標記。這項強大的功能使您能夠輕鬆建立動態和資料驅動的文件。無論您是產生報表、發票或任何其他文件類型，XML 對應都可以顯著簡化您的工作流程。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將 XML 部分對應到 Word 文件中的結構化文件標記。這項強大的功能使您能夠輕鬆建立動態和資料驅動的文件。無論您是產生報表、發票或任何其他文件類型，XML 對應都可以顯著簡化您的工作流程。
 
 ## 常見問題解答
 

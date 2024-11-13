@@ -13,11 +13,11 @@ Haben Sie sich schon einmal gefragt, wie Sie beim programmgesteuerten Arbeiten m
 
 ## Voraussetzungen
 
-Bevor Sie mit der Implementierung beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor Sie mit der Implementierung beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
 - Grundkenntnisse der C#-Programmierung
 - Auf Ihrem Computer installiertes Visual Studio
--  Aspose.Words für .NET-Bibliothek (Sie können es herunterladen[Hier](https://releases.aspose.com/words/net/))
+-  Aspose.Words für .NET-Bibliothek (Sie können sie herunterladen[Hier](https://releases.aspose.com/words/net/))
 -  Eine gültige Lizenz für Aspose.Words (falls Sie keine haben, holen Sie sich eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/))
 
 ## Namespaces importieren
@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## Schritt 4: Implementieren Sie die Warn-Callback-Klasse
 
- Erstellen Sie eine Klasse, die das implementiert`IWarningCallback` Schnittstelle. Diese Klasse definiert, wie Warnungen während der Dokumentverarbeitung behandelt werden.
+ Erstellen Sie eine Klasse, die das`IWarningCallback` Schnittstelle. Diese Klasse definiert, wie Warnungen während der Dokumentverarbeitung behandelt werden.
 
 ```csharp
 private class DocumentLoadingWarningCallback : IWarningCallback
@@ -103,4 +103,4 @@ Mit dem Warnungs-Callback können Sie Warnungen, die während der Dokumentverarb
 Warnungen können Probleme im Zusammenhang mit nicht unterstützten Funktionen, Formatierungsinkonsistenzen oder anderen dokumentspezifischen Problemen umfassen.
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für .NET?
- Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/)für detaillierte Informationen und Beispiele.
+ Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Informationen und Beispiele.

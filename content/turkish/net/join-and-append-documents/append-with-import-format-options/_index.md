@@ -1,106 +1,106 @@
 ---
-title: İçe Aktarma Formatı Seçenekleri ile Ekle
-linktitle: İçe Aktarma Formatı Seçenekleri ile Ekle
+title: İçe Aktarma Biçim Seçenekleriyle Ekle
+linktitle: İçe Aktarma Biçim Seçenekleriyle Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak Word belgelerini zahmetsizce ekleyin ve ayrıntılı adım adım yönlendirmeyle biçimlendirmeyi koruyun.
+description: Aspose.Words for .NET'i kullanarak Word belgelerini zahmetsizce ekleyin ve ayrıntılı adım adım kılavuzla biçimlendirmeyi koruyun.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/append-with-import-format-options/
 ---
 ## giriiş
 
-Selam! Hiç birden fazla Word belgesini tek bir belgede birleştirmeye ihtiyaç duyduğunuzu ancak bu sinir bozucu biçimlendirme sorunlarıyla karşılaştığınız oldu mu? Korkma! Bugün Aspose.Words for .NET'i kullanarak bir Word belgesini diğerine nasıl ekleyebileceğinizi ve aynı zamanda biçimlendirmenizi temiz ve düzenli tutabileceğinizi derinlemesine inceliyoruz. Kemerlerinizi bağlayın, çünkü bu kılavuzun sonunda, maestroyu birleştiren bir belge olacaksınız!
+Merhaba! Birden fazla Word belgesini birleştirmeniz gerekip de o sinir bozucu biçimlendirme sorunlarıyla mı karşılaştınız? Korkmayın! Bugün, .NET için Aspose.Words kullanarak bir Word belgesini diğerine nasıl ekleyebileceğinizi ve biçimlendirmenizi nasıl düzgün ve düzenli tutabileceğinizi derinlemesine inceliyoruz. Emniyet kemerlerinizi bağlayın çünkü bu kılavuzun sonunda belge birleştirme ustası olacaksınız!
 
-## Önkoşullar
+## Ön koşullar
 
-Eğlenceli kısma geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım. İşte hızlı bir kontrol listesi:
+Eğlenceli kısma geçmeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım. İşte hızlı bir kontrol listesi:
 
-1.  Aspose.Words for .NET: Bu kütüphanenin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
-2. Geliştirme Ortamı: Visual Studio gibi .NET uyumlu herhangi bir ortam.
-3. Temel C# Bilgisi: Sihirbaz olmanıza gerek yok, ancak C#'a biraz aşina olmak çok işe yarayacaktır.
+1.  Aspose.Words for .NET: Bu kütüphanenin kurulu olduğundan emin olun. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi herhangi bir .NET uyumlu ortam.
+3. Temel C# Bilgisi: Sihirbaz olmanıza gerek yok, ancak C# konusunda biraz bilgi sahibi olmak çok işinize yarayacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktaralım. Bu bizim kodlama maceramıza zemin hazırlıyor.
+İlk önce gerekli ad alanlarını içe aktaralım. Bu, kodlama maceramız için sahneyi hazırlar.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Süreci kolay, sindirilebilir adımlara ayıralım.
+Süreci kolay ve anlaşılır adımlara bölelim.
 
-## 1. Adım: Belge Dizininizi Kurun
+## Adım 1: Belge Dizininizi Ayarlayın
 
-Her yolculuk bir ilk adımla başlar ve burada belge dizininiz belirtilir. Bunu bir yolculuğa çıkmadan önce GPS'inizi ayarlamak olarak düşünün.
+Her yolculuk ilk adımla başlar ve burada, belge dizininizi belirtmektir. Bunu bir yolculuktan önce GPS'inizi ayarlamak olarak düşünün.
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgelerinizin saklandığı gerçek yolla. Kaynak ve hedef belgelerimizi buradan çekeceğiz.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgelerinizin saklandığı gerçek yol ile. Kaynak ve hedef belgelerimizi buradan çekeceğiz.
 
-## Adım 2: Kaynak ve Hedef Belgelerini Yükleyin
+## Adım 2: Kaynak ve Hedef Belgeleri Yükleyin
 
-Daha sonra belgelerimizi yüklememiz gerekiyor. Bir bulmacanın iki parçasını almak gibi.
+Sırada belgelerimizi yüklememiz var. Bu, bir bulmacanın iki parçasını almak gibi.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-Burada kaynak ve hedef belgelerimizi belleğe yüklüyoruz. Dosya adlarınızın dizininizdeki adlarla eşleştiğinden emin olun.
+Burada, kaynak ve hedef belgelerimizi belleğe yüklüyoruz. Dosya adlarınızın dizininizdekilerle eşleştiğinden emin olun.
 
-## 3. Adım: İçe Aktarma Formatı Seçeneklerini Tanımlayın
+## Adım 3: İçe Aktarma Biçimi Seçeneklerini Tanımlayın
 
-İşte sihrin gerçekleştiği yer burası. Ekleme işlemi sırasında biçimlendirmenin nasıl işlenmesi gerektiğini tanımlayacağız.
+Şimdi, sihrin gerçekleştiği yer burası. Ekleme işlemi sırasında biçimlendirmenin nasıl işleneceğini tanımlayacağız.
 
 ```csharp
-// Kaynak ve hedef belgelerdeki numaralandırmanın çakışması durumunda,
-// daha sonra kaynak belgedeki numaralandırma kullanılacaktır.
+// Kaynak ve hedef belgelerde numaralandırma çakışmaları varsa,
+// Daha sonra kaynak belgeden numaralandırma kullanılacaktır.
 ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-Bu kod parçası, belgeleriniz arasında numaralandırma çakışması olması durumunda kaynak belgenin numaralandırmasının geçerli olmasını sağlar. Kullanışlı, değil mi?
+Bu kod parçası, belgeleriniz arasında bir numaralandırma çakışması olması durumunda kaynak belgenin numaralandırmasının geçerli olacağını garanti eder. Kullanışlı, değil mi?
 
 ## Adım 4: Belgeleri Ekleyin
 
-Hepsini bir araya getirme zamanı! Tanımlanan içe aktarma formatı seçeneklerini kullanarak kaynak belgeyi hedef belgeye ekleyeceğiz.
+Hepsini bir araya getirme zamanı! Tanımlı içe aktarma biçimi seçeneklerini kullanarak kaynak belgeyi hedef belgeye ekleyeceğiz.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
- Buraya ekliyoruz`srcDoc` ile`dstDoc` hedef stillerini kullanma.`options` parametresi biçimlendirme kurallarımızın uygulanmasını sağlar.
+ Burada ekliyoruz`srcDoc` ile`dstDoc` hedef stilleri kullanarak.`options` parametresi biçimlendirme kurallarımızın uygulanmasını sağlar.
 
 ## Adım 5: Birleştirilmiş Belgeyi Kaydedin
 
-Son fakat en az değil, yeni birleştirilmiş belgemizi kaydedelim. Dondurmanın üstüne kiraz koymak gibi bir şey bu.
+Son olarak, yeni birleştirilmiş belgemizi kaydedelim. Bu, dondurmanızın üzerine kiraz koymak gibi bir şey.
 
 ```csharp
 dstDoc.Save(dataDir + "MergedDocument.docx");
 ```
 
-Bum! Biçimlendirmenizi değiştirmeden iki Word belgesini başarıyla birleştirdiniz. 
+Pat! Biçimlendirmenizi bozmadan iki Word belgesini başarıyla birleştirdiniz. 
 
 ## Çözüm
 
-Ve işte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak, biçimlendirmenizi kaybetmeden, zahmetsizce belge ekleyebilirsiniz. İster belge yönetimini kolaylaştırmak isteyen bir geliştirici olun, ister yalnızca düzenli belgeleri seven biri olun, bu kılavuz size yardımcı olacaktır. Mutlu kodlama!
+İşte karşınızda! Bu adımları izleyerek, biçimlendirmenizi kaybetmeden Aspose.Words for .NET kullanarak belgeleri zahmetsizce ekleyebilirsiniz. Belge yönetimini kolaylaştırmak isteyen bir geliştirici veya sadece düzenli belgeleri seven biri olun, bu kılavuz sizi korudu. İyi kodlamalar!
 
-## SSS'ler
+## SSS
 
-### Kaynağın numarası yerine hedef belgenin numaralandırmasını koruyabilir miyim?
- Evet, değiştirebilirsiniz`ImportFormatOptions` bunu başarmak için.
+### Kaynak belgenin numaralandırması yerine hedef belgenin numaralandırmasını koruyabilir miyim?
+ Evet, değiştirebilirsiniz`ImportFormatOptions` Bunu başarmak için.
 
-### Aspose.Words for .NET'e sahip değilsem ne olur?
+### Aspose.Words for .NET'im yoksa ne olur?
  Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).
 
-### Bu yöntemi PDF gibi diğer belge türleri için kullanabilir miyim?
+### Bu yöntemi PDF gibi diğer belge türleri için de kullanabilir miyim?
 Aspose.Words özellikle Word belgeleri içindir. PDF'ler için Aspose.PDF'e ihtiyacınız olabilir.
 
-### Belgelerdeki görselleri nasıl işleyebilirim?
-Görüntüler genellikle sorunsuz bir şekilde işlenir ancak kaynak ve hedef belgelerinizin doğru şekilde biçimlendirildiğinden emin olun.
+### Belgelerdeki görselleri nasıl işlerim?
+Görüntüler genellikle sorunsuz bir şekilde işlenir, ancak kaynak ve hedef belgelerinizin doğru biçimde biçimlendirildiğinden emin olun.
 
-###kaydetmeden önce bahsetmek ister misiniz?
-Belgeyi bir akışa dönüştürebilir veya önizlemek için uygulamanızda bir görüntüleyici kullanabilirsiniz.
+Kaydetmeden önce ###ment?
+Belgeyi bir akışa dönüştürebilir veya uygulamanızdaki bir görüntüleyiciyi kullanarak önizleme yapabilirsiniz.

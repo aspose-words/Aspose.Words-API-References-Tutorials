@@ -1,26 +1,26 @@
 ---
-title: Panggilan Balik Peringatan Dalam Dokumen Word
-linktitle: Panggilan Balik Peringatan Dalam Dokumen Word
+title: Peringatan Panggilan Balik Dalam Dokumen Word
+linktitle: Peringatan Panggilan Balik Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menangkap dan menangani peringatan di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Pastikan pemrosesan dokumen yang kuat.
+description: Pelajari cara menangkap dan menangani peringatan dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Pastikan pemrosesan dokumen yang kuat.
 type: docs
 weight: 10
 url: /id/net/programming-with-loadoptions/warning-callback/
 ---
 ## Perkenalan
 
-Pernahkah Anda bertanya-tanya bagaimana cara menangkap dan menangani peringatan saat bekerja dengan dokumen Word secara terprogram? Menggunakan Aspose.Words untuk .NET, Anda dapat menerapkan panggilan balik peringatan untuk mengelola potensi masalah yang muncul selama pemrosesan dokumen. Tutorial ini akan memandu Anda melalui proses langkah demi langkah, memastikan Anda memiliki pemahaman komprehensif tentang cara mengonfigurasi dan menggunakan fitur panggilan balik peringatan di proyek Anda.
+Pernahkah Anda bertanya-tanya bagaimana cara menangkap dan menangani peringatan saat bekerja dengan dokumen Word secara terprogram? Dengan menggunakan Aspose.Words for .NET, Anda dapat menerapkan callback peringatan untuk mengelola potensi masalah yang muncul selama pemrosesan dokumen. Tutorial ini akan memandu Anda melalui proses tersebut langkah demi langkah, memastikan Anda memiliki pemahaman yang komprehensif tentang cara mengonfigurasi dan menggunakan fitur callback peringatan dalam proyek Anda.
 
 ## Prasyarat
 
-Sebelum mendalami penerapannya, pastikan Anda memiliki prasyarat berikut:
+Sebelum terjun ke implementasi, pastikan Anda memiliki prasyarat berikut:
 
-- Pengetahuan dasar tentang pemrograman C#
-- Visual Studio diinstal pada mesin Anda
--  Aspose.Words untuk perpustakaan .NET (Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/))
--  Lisensi yang valid untuk Aspose.Words (jika Anda tidak memilikinya, dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/))
+- Pengetahuan dasar pemrograman C#
+- Visual Studio terinstal di komputer Anda
+-  Aspose.Words untuk pustaka .NET (Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/))
+-  Lisensi yang valid untuk Aspose.Words (jika Anda belum memilikinya, dapatkan lisensi dari situs web Aspose.Words).[lisensi sementara](https://purchase.aspose.com/temporary-license/))
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Untuk memulainya, Anda perlu mengimpor namespace yang diperlukan dalam proyek C# Anda:
 
@@ -31,9 +31,9 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-Mari kita uraikan proses menyiapkan callback peringatan menjadi langkah-langkah yang dapat dikelola.
+Mari kita uraikan proses pengaturan panggilan balik peringatan menjadi beberapa langkah yang dapat dikelola.
 
-## Langkah 1: Atur Direktori Dokumen
+## Langkah 1: Mengatur Direktori Dokumen
 
 Pertama, Anda perlu menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda disimpan.
 
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## Langkah 2: Konfigurasikan Opsi Pemuatan dengan Panggilan Balik Peringatan
 
- Selanjutnya, konfigurasikan opsi pemuatan dokumen. Ini melibatkan penciptaan a`LoadOptions` objek dan pengaturannya`WarningCallback` milik.
+ Berikutnya, konfigurasikan opsi pemuatan untuk dokumen. Ini melibatkan pembuatan`LoadOptions` objek dan pengaturannya`WarningCallback` milik.
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions
@@ -54,7 +54,7 @@ LoadOptions loadOptions = new LoadOptions
 
 ## Langkah 3: Muat Dokumen Menggunakan Fungsi Panggilan Balik
 
- Sekarang, muat dokumen menggunakan`LoadOptions` objek dikonfigurasi dengan panggilan balik peringatan.
+ Sekarang, muat dokumen menggunakan`LoadOptions` objek yang dikonfigurasi dengan panggilan balik peringatan.
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
@@ -86,21 +86,21 @@ private class DocumentLoadingWarningCallback : IWarningCallback
 
 ## Kesimpulan
 
-Dengan mengikuti langkah-langkah ini, Anda dapat mengelola dan menangani peringatan secara efektif saat bekerja dengan dokumen Word menggunakan Aspose.Words untuk .NET. Fitur ini memastikan bahwa Anda dapat secara proaktif mengatasi potensi masalah, menjadikan pemrosesan dokumen Anda lebih kuat dan andal.
+Dengan mengikuti langkah-langkah ini, Anda dapat mengelola dan menangani peringatan secara efektif saat bekerja dengan dokumen Word menggunakan Aspose.Words for .NET. Fitur ini memastikan bahwa Anda dapat secara proaktif mengatasi potensi masalah, sehingga pemrosesan dokumen Anda menjadi lebih tangguh dan andal.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa tujuan dari panggilan balik peringatan di Aspose.Words untuk .NET?
-Callback peringatan memungkinkan Anda menangkap dan menangani peringatan yang terjadi selama pemrosesan dokumen, membantu Anda mengatasi potensi masalah secara proaktif.
+Panggilan balik peringatan memungkinkan Anda menangkap dan menangani peringatan yang terjadi selama pemrosesan dokumen, membantu Anda mengatasi potensi masalah secara proaktif.
 
 ### Bagaimana cara mengatur fitur panggilan balik peringatan?
- Anda perlu mengkonfigurasi`LoadOptions` dengan`WarningCallback` properti dan mengimplementasikan kelas yang menangani peringatan dengan mengimplementasikan`IWarningCallback` antarmuka.
+ Anda perlu mengonfigurasi`LoadOptions` dengan`WarningCallback` properti dan menerapkan kelas yang menangani peringatan dengan menerapkan`IWarningCallback` antarmuka.
 
-### Bisakah saya menggunakan fitur panggilan balik peringatan tanpa lisensi yang valid?
- Anda dapat menggunakannya dengan versi uji coba gratis, tetapi untuk fungsionalitas penuh, disarankan untuk mendapatkan lisensi yang valid. Anda bisa mendapatkan[izin sementara di sini](https://purchase.aspose.com/temporary-license/).
+### Dapatkah saya menggunakan fitur panggilan balik peringatan tanpa lisensi yang valid?
+ Anda dapat menggunakannya dengan versi uji coba gratis, tetapi untuk fungsionalitas penuh, disarankan untuk mendapatkan lisensi yang valid. Anda bisa mendapatkan[lisensi sementara di sini](https://purchase.aspose.com/temporary-license/).
 
-### Peringatan seperti apa yang dapat saya harapkan saat memproses dokumen?
-Peringatan dapat mencakup masalah terkait fitur yang tidak didukung, ketidakkonsistenan format, atau masalah khusus dokumen lainnya.
+### Peringatan macam apa yang dapat saya harapkan saat memproses dokumen?
+Peringatan dapat mencakup masalah yang terkait dengan fitur yang tidak didukung, ketidakkonsistenan format, atau masalah khusus dokumen lainnya.
 
-### Di mana saya dapat menemukan informasi selengkapnya tentang Aspose.Words untuk .NET?
- Anda dapat merujuk ke[dokumentasi](https://reference.aspose.com/words/net/)untuk informasi rinci dan contoh.
+### Di mana saya dapat menemukan informasi lebih lanjut tentang Aspose.Words untuk .NET?
+ Anda dapat merujuk ke[dokumentasi](https://reference.aspose.com/words/net/) untuk informasi dan contoh terperinci.

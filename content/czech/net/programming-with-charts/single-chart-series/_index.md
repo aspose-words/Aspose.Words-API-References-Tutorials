@@ -1,6 +1,6 @@
 ---
-title: Přizpůsobte jednu řadu grafů v grafu
-linktitle: Přizpůsobte jednu řadu grafů v grafu
+title: Přizpůsobte jednu sérii grafů v grafu
+linktitle: Přizpůsobte jednu sérii grafů v grafu
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak přizpůsobit jednotlivé řady grafů v dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémový zážitek.
 type: docs
@@ -96,7 +96,7 @@ series1.Marker.Size = 10;
 
 ## Krok 8: Uložte dokument
 
-Nakonec náš dokument uložíme. Zde obdivujeme naši práci.
+Nakonec náš dokument uložíme. Tady obdivujeme naši práci.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");

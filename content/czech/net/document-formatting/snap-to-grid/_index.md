@@ -55,7 +55,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Inicializujte Document a DocumentBuilder
 
- Dále musíte vytvořit nový dokument aplikace Word a inicializovat jej`DocumentBuilder`třídy, která pomáhá při vytváření dokumentu.
+ Dále musíte vytvořit nový dokument aplikace Word a inicializovat jej`DocumentBuilder` třídy, která pomáhá při vytváření dokumentu.
 
 Vytvoření nového dokumentu
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-- `Document doc = new Document();` vytvoří nový dokument aplikace Word.
+- `Document doc = new Document();`vytvoří nový dokument aplikace Word.
 - `DocumentBuilder builder = new DocumentBuilder(doc);` inicializuje DocumentBuilder s vytvořeným dokumentem.
 
 ## Krok 3: Povolte u odstavců možnost Přichytit k mřížce
@@ -104,7 +104,7 @@ Nastavení uchopení písma na mřížku
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-- `par.Runs[0].Font.SnapToGrid = true;`zajistí, že se písmo použité v odstavci zarovná s mřížkou.
+- `par.Runs[0].Font.SnapToGrid = true;` zajistí, že se písmo použité v odstavci zarovná s mřížkou.
 
 ## Krok 6: Uložte dokument
 
@@ -137,4 +137,4 @@ Ano, i když pro vyzkoušení můžete použít dočasnou licenci, pro úplný p
 Ne, povolení Snap to Grid nemá významný vliv na výkon dokumentu.
 
 ### Kde najdu další informace o Aspose.Words pro .NET?
- Navštivte[dokumentace](https://reference.aspose.com/words/net/)pro podrobné informace a příklady.
+ Navštivte[dokumentace](https://reference.aspose.com/words/net/) pro podrobné informace a příklady.

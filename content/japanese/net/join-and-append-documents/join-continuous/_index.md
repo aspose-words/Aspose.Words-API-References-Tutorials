@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ステップ2: ソースドキュメントと宛先ドキュメントを読み込む
 
-次に、ソース ドキュメントと宛先ドキュメントをプログラムに読み込みます。これらは結合する 2 つのドキュメントです。
+次に、ソース ドキュメントとターゲット ドキュメントをプログラムに読み込みます。これらは結合する 2 つのドキュメントです。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -53,7 +53,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## ステップ3: セクションの開始を連続として設定する
 
-ソース文書の内容をターゲット文書の直後に表示させるには、`SectionStart`ソース文書の最初のセクションのプロパティを`Continuous`.
+ソース文書の内容を宛先文書の直後に表示させるには、`SectionStart`ソース文書の最初のセクションのプロパティを`Continuous`.
 
 ```csharp
 //ドキュメントを、宛先ドキュメントのコンテンツの直後に表示します。
@@ -93,7 +93,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 はい、追加のドキュメントをロードして順番に追加することで、複数のドキュメントを結合するプロセスを繰り返すことができます。
 
 ### 元の書式は保持されますか?
-はい、使用しています`ImportFormatMode.KeepSourceFormatting`ソース ドキュメントの書式設定が保持されることを保証します。
+はい、使用しています`ImportFormatMode.KeepSourceFormatting`ソース ドキュメントの書式が保持されることを保証します。
 
 ### Aspose.Words for .NET は .NET Core と互換性がありますか?
 はい、Aspose.Words for .NET は .NET Framework と .NET Core の両方と互換性があります。

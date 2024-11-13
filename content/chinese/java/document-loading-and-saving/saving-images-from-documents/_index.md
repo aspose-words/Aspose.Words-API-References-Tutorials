@@ -165,7 +165,7 @@ private static class HandlePageSavingCallback implements IPageSavingCallback
 
 ## 结论
 
-您已经了解了如何使用 Aspose.Words for Java 保存文档中的图像。这些示例演示了用于保存图像的各种自定义选项，包括格式、压缩和回调用法。探索 Aspose.Words for Java 强大功能的更多可能性。
+您已了解如何使用 Aspose.Words for Java 保存文档中的图像。这些示例演示了用于保存图像的各种自定义选项，包括格式、压缩和回调用法。探索 Aspose.Words for Java 强大功能的更多可能性。
 
 ## 常见问题解答
 

@@ -9,7 +9,7 @@ url: /de/net/programming-with-styles-and-themes/insert-style-separator/
 ---
 ## Einführung
 
-Wenn Sie programmgesteuert mit Word-Dokumenten unter Verwendung von Aspose.Words für .NET arbeiten, müssen Sie Dokumentstile und -formatierungen möglicherweise sorgfältig verwalten. Eine solche Aufgabe ist das Einfügen eines Stiltrennzeichens, um zwischen den Stilen in Ihrem Dokument zu unterscheiden. Diese Anleitung führt Sie Schritt für Schritt durch den Vorgang des Hinzufügens eines Dokumentstiltrennzeichens.
+Wenn Sie programmgesteuert mit Aspose.Words für .NET an Word-Dokumenten arbeiten, müssen Sie möglicherweise Dokumentstile und -formatierungen sorgfältig verwalten. Eine solche Aufgabe ist das Einfügen eines Stiltrennzeichens, um zwischen den Stilen in Ihrem Dokument zu unterscheiden. Diese Anleitung führt Sie Schritt für Schritt durch den Vorgang des Hinzufügens eines Dokumentstiltrennzeichens.
 
 ## Voraussetzungen
 
@@ -17,7 +17,7 @@ Bevor Sie in den Code eintauchen, stellen Sie sicher, dass Sie über Folgendes v
 
 1.  Aspose.Words für .NET-Bibliothek: Sie müssen die Aspose.Words-Bibliothek in Ihrem Projekt installiert haben. Wenn Sie sie noch nicht haben, können Sie sie von der[Aspose.Words für .NET-Releases-Seite](https://releases.aspose.com/words/net/).
    
-2. Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine .NET-Entwicklungsumgebung wie Visual Studio eingerichtet haben.
+2. Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine .NET-Entwicklungsumgebung wie beispielsweise Visual Studio eingerichtet haben.
 
 3. Grundkenntnisse: Grundlegende Kenntnisse in C# und der Verwendung von Bibliotheken in .NET sind hilfreich.
 
@@ -38,7 +38,7 @@ Diese Namespaces bieten Zugriff auf die Klassen und Methoden, die zum Bearbeiten
 
 Überschrift: Neues Dokument und Builder erstellen
 
- Erklärung: Beginnen Sie mit der Erstellung eines neuen`Document` Objekt und ein`DocumentBuilder` Instanz. Die`DocumentBuilder` Mit der Klasse können Sie Text und Elemente in das Dokument einfügen und formatieren.
+ Erläuterung: Beginnen Sie mit der Erstellung eines neuen`Document` Objekt und ein`DocumentBuilder` Instanz. Die`DocumentBuilder` Mit der Klasse können Sie Text und Elemente in das Dokument einfügen und formatieren.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis

@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 
 ## 結論
 
-現在你就得到它了！您剛剛掌握瞭如何使用 Aspose.Words for .NET 控制 Word 文件中表格的浮動位置。借助這些技能，您可以確保表格完美定位，以增強文件的可讀性和美觀性。不斷嘗試並探索 Aspose.Words for .NET 的強大功能。
+現在你就擁有了！您剛剛掌握瞭如何使用 Aspose.Words for .NET 控制 Word 文件中表格的浮動位置。借助這些技能，您可以確保表格完美定位，以增強文件的可讀性和美觀性。不斷嘗試並探索 Aspose.Words for .NET 的強大功能。
 
 ## 常見問題解答
 

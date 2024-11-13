@@ -42,7 +42,7 @@ using Aspose.Words.Tables;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 接下来，创建一个新文档和一个 DocumentBuilder 对象。DocumentBuilder 类允许您创建和修改 Word 文档。
 
@@ -119,4 +119,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 虽然本教程重点介绍表格，但 Aspose.Words for .NET 为各种文档元素提供了广泛的格式化选项。
 
 ### 我可以自动对大型文档进行条件格式设置吗？
-是的，您可以使用代码中的循环和条件来自动化该过程，从而提高处理大型文档的效率。
+是的，您可以使用代码中的循环和条件来自动化该过程，从而提高大型文档的效率。

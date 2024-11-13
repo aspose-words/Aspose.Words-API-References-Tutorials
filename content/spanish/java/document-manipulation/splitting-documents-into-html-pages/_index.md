@@ -1,8 +1,8 @@
 ---
-title: Dividir documentos en páginas HTML en Aspose.Words para Java
+title: Cómo dividir documentos en páginas HTML en Aspose.Words para Java
 linktitle: Dividir documentos en páginas HTML
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda a dividir documentos en páginas HTML con Aspose.Words para Java. Siga nuestra guía paso a paso para una conversión de documentos perfecta.
+description: Aprenda a dividir documentos en páginas HTML con Aspose.Words para Java. Siga nuestra guía paso a paso para lograr una conversión de documentos sin inconvenientes.
 type: docs
 weight: 25
 url: /es/java/document-manipulation/splitting-documents-into-html-pages/
@@ -10,16 +10,16 @@ url: /es/java/document-manipulation/splitting-documents-into-html-pages/
 
 ## Introducción a la división de documentos en páginas HTML en Aspose.Words para Java
 
-En esta guía paso a paso, exploraremos cómo dividir documentos en páginas HTML usando Aspose.Words para Java. Aspose.Words es una potente API de Java para trabajar con documentos de Microsoft Word y proporciona amplias funciones para la manipulación de documentos, incluida la capacidad de convertir documentos a varios formatos, incluido HTML.
+En esta guía paso a paso, exploraremos cómo dividir documentos en páginas HTML utilizando Aspose.Words para Java. Aspose.Words es una potente API de Java para trabajar con documentos de Microsoft Word y ofrece amplias funciones para la manipulación de documentos, incluida la capacidad de convertir documentos a varios formatos, incluido HTML.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de comenzar, asegúrese de cumplir con los siguientes requisitos previos:
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
 
-- Kit de desarrollo de Java (JDK) instalado en su sistema.
--  Aspose.Words para la biblioteca Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/).
+- Java Development Kit (JDK) instalado en su sistema.
+-  Biblioteca Aspose.Words para Java. Puedes descargarla desde[aquí](https://releases.aspose.com/words/java/).
 
-## Paso 1: importar los paquetes necesarios
+## Paso 1: Importar los paquetes necesarios
 
 ```java
 import com.aspose.words.*;
@@ -27,7 +27,7 @@ import java.io.*;
 import java.util.ArrayList;
 ```
 
-## Paso 2: cree un método para la conversión de Word a HTML
+## Paso 2: Crear un método para la conversión de Word a HTML
 
 ```java
 class WordToHtmlConverter
@@ -37,7 +37,7 @@ class WordToHtmlConverter
 }
 ```
 
-## Paso 3: seleccione los párrafos de encabezado como inicio del tema
+## Paso 3: Seleccione los párrafos de encabezado a medida que comienza el tema
 
 ```java
 private ArrayList<Paragraph> selectTopicStarts()
@@ -54,7 +54,7 @@ private ArrayList<Paragraph> selectTopicStarts()
 }
 ```
 
-## Paso 4: Insertar saltos de sección antes de los párrafos de título
+## Paso 4: Insertar saltos de sección antes de encabezar los párrafos
 
 ```java
 private void insertSectionBreaks(ArrayList<Paragraph> topicStartParas)
@@ -73,7 +73,7 @@ private void insertSectionBreaks(ArrayList<Paragraph> topicStartParas)
 }
 ```
 
-## Paso 5: dividir el documento en temas
+## Paso 5: Divida el documento en temas
 
 ```java
 private ArrayList<Topic> saveHtmlTopics() throws Exception
@@ -98,7 +98,7 @@ private ArrayList<Topic> saveHtmlTopics() throws Exception
 }
 ```
 
-## Paso 6: guarde cada tema como un archivo HTML
+## Paso 6: Guarde cada tema como un archivo HTML
 
 ```java
 private void saveHtmlTopic(Section section, Topic topic) throws Exception
@@ -117,7 +117,7 @@ private void saveHtmlTopic(Section section, Topic topic) throws Exception
 }
 ```
 
-## Paso 7: Genere una tabla de contenido para los temas
+## Paso 7: Generar una tabla de contenidos para los temas
 
 ```java
 private void saveTableOfContents(ArrayList<Topic> topics) throws Exception
@@ -129,11 +129,11 @@ private void saveTableOfContents(ArrayList<Topic> topics) throws Exception
 }
 ```
 
-Ahora que hemos descrito los pasos, puede implementar cada paso en su proyecto Java para dividir documentos en páginas HTML usando Aspose.Words para Java. Este proceso le permitirá crear una representación HTML estructurada de sus documentos, haciéndolos más accesibles y fáciles de usar.
+Ahora que hemos descrito los pasos, puede implementar cada paso en su proyecto Java para dividir documentos en páginas HTML utilizando Aspose.Words para Java. Este proceso le permitirá crear una representación HTML estructurada de sus documentos, haciéndolos más accesibles y fáciles de usar.
 
 ## Conclusión
 
-En esta guía completa, cubrimos el proceso de dividir documentos en páginas HTML usando Aspose.Words para Java. Si sigue los pasos descritos, puede convertir de manera eficiente documentos de Word a formato HTML, haciendo que su contenido sea más accesible en la web.
+En esta guía completa, hemos cubierto el proceso de división de documentos en páginas HTML mediante Aspose.Words para Java. Si sigue los pasos descritos, podrá convertir documentos de Word a formato HTML de manera eficiente, lo que hará que su contenido sea más accesible en la Web.
 
 ## Preguntas frecuentes
 
@@ -153,6 +153,6 @@ Aspose.Words para Java admite una amplia gama de formatos de documentos de Micro
 
 Aspose.Words para Java puede manejar imágenes en el HTML convertido guardándolas como archivos separados en la misma carpeta que el archivo HTML. Esto garantiza que las imágenes se muestren correctamente en la salida HTML.
 
-### ¿Existe una versión de prueba de Aspose.Words para Java disponible?
+### ¿Hay una versión de prueba de Aspose.Words para Java disponible?
 
 Sí, puede solicitar una versión de prueba gratuita de Aspose.Words para Java desde el sitio web de Aspose para evaluar sus características y capacidades antes de comprar una licencia.

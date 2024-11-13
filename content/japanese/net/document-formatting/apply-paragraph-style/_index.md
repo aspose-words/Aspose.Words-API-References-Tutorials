@@ -51,7 +51,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-ここでは、新しい`Document`オブジェクトと`DocumentBuilder`ドキュメントの作成に役立つオブジェクト。
+ここでは、新しい`Document`オブジェクトと`DocumentBuilder`ドキュメントの構築に役立つオブジェクト。
 
 ## ステップ3: 段落スタイルの適用
 

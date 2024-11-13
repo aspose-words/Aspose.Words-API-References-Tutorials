@@ -15,7 +15,7 @@ url: /ja/net/working-with-oleobjects-and-activex/insert-ole-object/
 
 始める前に、以下のものを用意してください。
 
-1. Aspose.Words for .NETライブラリ: ダウンロードはこちら[ここ](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NETライブラリ: ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio またはその他の .NET 開発環境。
 3. C# の基礎知識: C# プログラミングに精通していることが前提となります。
 

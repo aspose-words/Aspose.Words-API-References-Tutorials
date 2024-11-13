@@ -32,11 +32,11 @@ using Aspose.Words;
 using System;
 ```
 
- Der`Aspose.Words` Namespace gibt Ihnen Zugriff auf alle Klassen und Methoden, die Sie zur Bearbeitung von Word-Dokumenten benötigen, während`System` wird für grundlegende Funktionen wie die Konsolenausgabe verwendet.
+Der`Aspose.Words` Namespace gibt Ihnen Zugriff auf alle Klassen und Methoden, die Sie zur Bearbeitung von Word-Dokumenten benötigen, während`System` wird für grundlegende Funktionen wie die Konsolenausgabe verwendet.
 
 Lassen Sie uns den Vorgang des Extrahierens von Serienbrief-Feldnamen in eine klare Schritt-für-Schritt-Anleitung aufschlüsseln.
 
-## Schritt 1: Dokumentverzeichnis definieren
+## Schritt 1: Definieren Sie das Dokumentverzeichnis
 
 Überschrift: Geben Sie den Pfad zu Ihren Dokumenten an
 
@@ -47,7 +47,7 @@ Zuerst müssen Sie den Pfad zum Verzeichnis einrichten, in dem sich Ihr Word-Dok
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Ersetzen`"YOUR DOCUMENTS DIRECTORY"`mit dem tatsächlichen Pfad, in dem sich Ihr Dokument befindet. Dies könnte etwa so aussehen:`"C:\\Documents\\MyDoc.docx"`.
+ Ersetzen`"YOUR DOCUMENTS DIRECTORY"` mit dem tatsächlichen Pfad, in dem sich Ihr Dokument befindet. Dies könnte etwa so aussehen:`"C:\\Documents\\MyDoc.docx"`.
 
 ## Schritt 2: Laden Sie das Dokument
 
@@ -73,7 +73,7 @@ Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
- Der`GetFieldNames()` Die Methode gibt ein Array von Zeichenfolgen zurück, von denen jede einen im Dokument gefundenen Seriendruckfeldnamen darstellt. Dies sind die Platzhalter, die Sie in Ihrem Word-Dokument sehen werden.
+Der`GetFieldNames()`Die Methode gibt ein Array von Zeichenfolgen zurück, von denen jede den Namen eines Seriendruckfelds darstellt, das im Dokument gefunden wurde. Dies sind die Platzhalter, die Sie in Ihrem Word-Dokument sehen werden.
 
 ## Schritt 4: Anzahl der Seriendruckfelder anzeigen
 
@@ -92,12 +92,12 @@ Diese Codezeile druckt die Gesamtzahl der Serienbrieffelder im Dokument aus und 
 
 Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie mit Aspose.Words für .NET Seriendruckfeldnamen aus einem Word-Dokument extrahieren. Diese Technik ist ein wertvolles Tool zum Verwalten und Automatisieren von Dokument-Workflows und erleichtert die Handhabung personalisierter Inhalte. Indem Sie diese Schritte befolgen, können Sie Seriendruckfelder in Ihren Dokumenten effizient identifizieren und damit arbeiten.
 
- Wenn Sie Fragen haben oder weitere Hilfe benötigen, können Sie sich gerne im[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder treten Sie dem[Aspose-Gemeinschaft](https://forum.aspose.com/c/words/8) für die Unterstützung. Viel Spaß beim Programmieren!
+Wenn Sie Fragen haben oder weitere Hilfe benötigen, können Sie sich gerne im[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder treten Sie dem[Aspose-Gemeinschaft](https://forum.aspose.com/c/words/8) für die Unterstützung. Viel Spaß beim Programmieren!
 
 ## Häufig gestellte Fragen
 
 ### Was ist Aspose.Words für .NET?
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert in .NET-Anwendungen zu erstellen, zu ändern und zu verwalten.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente programmgesteuert in .NET-Anwendungen erstellen, ändern und verwalten können.
 
 ### Wie erhalte ich eine kostenlose Testversion von Aspose.Words?
  Sie können eine kostenlose Testversion erhalten, indem Sie die[Aspose-Veröffentlichungsseite](https://releases.aspose.com/).

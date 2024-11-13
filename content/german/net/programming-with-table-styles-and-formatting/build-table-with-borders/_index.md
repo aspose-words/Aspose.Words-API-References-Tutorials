@@ -9,7 +9,7 @@ url: /de/net/programming-with-table-styles-and-formatting/build-table-with-borde
 ---
 ## Einführung
 
-Durch das Erstellen von Tabellen mit benutzerdefinierten Rahmen in einem Word-Dokument können Sie Ihren Inhalt optisch ansprechend und übersichtlich gestalten. Mit Aspose.Words für .NET können Sie Tabellen ganz einfach erstellen und formatieren und dabei präzise Kontrolle über Rahmen, Stile und Farben haben. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess und stellt sicher, dass Sie jeden Teil des Codes genau verstehen.
+Durch das Erstellen von Tabellen mit benutzerdefinierten Rahmen in einem Word-Dokument können Sie Ihren Inhalt optisch ansprechend und übersichtlich gestalten. Mit Aspose.Words für .NET können Sie ganz einfach Tabellen erstellen und formatieren und dabei präzise Kontrolle über Rahmen, Stile und Farben haben. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess und stellt sicher, dass Sie jeden Teil des Codes genau verstehen.
 
 ## Voraussetzungen
 
@@ -61,7 +61,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Bevor Sie neue Rahmen festlegen, sollten Sie alle vorhandenen Rahmen löschen. Dadurch wird sichergestellt, dass die neue Formatierung sauber angewendet wird:
 
 ```csharp
-// Löschen Sie alle vorhandenen Ränder aus der Tabelle
+// Löschen aller vorhandenen Ränder aus der Tabelle
 table.ClearBorders();
 ```
 

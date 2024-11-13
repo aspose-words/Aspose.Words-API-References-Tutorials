@@ -9,7 +9,7 @@ url: /zh/net/programming-with-document-properties/use-control-characters/
 ---
 ## 介绍
 
-准备好进入文档自动化的世界了吗？如果您发现自己花费了太多时间手动创建或编辑 Word 文档，Aspose.Words for .NET 可以帮您解决这个问题。这个功能强大的库允许您以编程方式轻松创建、修改和转换 Word 文档。无论您是经验丰富的开发人员还是刚刚入门，本指南都将引导您完成入门所需的一切。
+准备好进入文档自动化的世界了吗？如果您发现自己花费了太多时间手动创建或编辑 Word 文档，Aspose.Words for .NET 可以帮您解决这一问题。这个功能强大的库允许您以编程方式轻松创建、修改和转换 Word 文档。无论您是经验丰富的开发人员还是刚刚入门，本指南都将引导您完成入门所需的一切。
 
 ## 先决条件
 
@@ -17,7 +17,7 @@ url: /zh/net/programming-with-document-properties/use-control-characters/
 
 1. 对 C# 的基本了解：您不需要成为 C# 专家，但了解基础知识会有所帮助。
 2. 已安装 .NET Framework：确保您的计算机上已安装 .NET。您可以从[Microsoft .NET 网站](https://dotnet.microsoft.com/download).
-3. Aspose.Words for .NET Library：从获取最新版本[Aspose 下载页面](https://releases.aspose.com/words/net/).
+3. Aspose.Words for .NET Library：从[Aspose 下载页面](https://releases.aspose.com/words/net/).
 
 ## 导入命名空间
 

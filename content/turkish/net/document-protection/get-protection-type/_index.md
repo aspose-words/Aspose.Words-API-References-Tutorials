@@ -2,26 +2,26 @@
 title: Word Belgesinde Koruma Türünü Alın
 linktitle: Word Belgesinde Koruma Türünü Alın
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerinin koruma türünü nasıl kontrol edeceğinizi öğrenin. Adım adım kılavuz, kod örnekleri ve SSS'ler dahildir.
+description: Aspose.Words for .NET kullanarak Word belgelerinin koruma türünün nasıl kontrol edileceğini öğrenin. Adım adım kılavuz, kod örnekleri ve SSS dahildir.
 type: docs
 weight: 10
 url: /tr/net/document-protection/get-protection-type/
 ---
 ## giriiş
 
-Selam! Word belgelerinizin koruma türünü programlı olarak nasıl kontrol edeceğinizi hiç merak ettiniz mi? İster hassas verileri güvence altına alıyor ister yalnızca belgenin durumunu merak ediyor olun, koruma türünün nasıl alınacağını bilmek son derece kullanışlı olabilir. Bugün, Word belgeleriyle çalışmayı kolaylaştıran güçlü bir kütüphane olan Aspose.Words for .NET'i kullanarak süreci inceleyeceğiz. Kemerlerinizi bağlayın ve dalmaya başlayalım!
+Merhaba! Word belgelerinizin koruma türünü programatik olarak nasıl kontrol edeceğinizi hiç merak ettiniz mi? İster hassas verileri güvence altına alıyor olun, ister belgenin durumu hakkında meraklı olun, koruma türünü nasıl alacağınızı bilmek çok kullanışlı olabilir. Bugün, Word belgeleriyle çalışmayı çocuk oyuncağı haline getiren güçlü bir kütüphane olan Aspose.Words for .NET'i kullanarak süreci ele alacağız. Emniyet kemerlerinizi bağlayın ve başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
 Kodlama kısmına geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET Library: Henüz yapmadıysanız, indirip yükleyin.[Aspose.Words for .NET kütüphanesi](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Kütüphanesi: Henüz yapmadıysanız, indirin ve kurun[Aspose.Words for .NET kütüphanesi](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio benzeri bir IDE.
-3. Temel C# Bilgisi: C# programlamaya aşinalık, takip etmenize yardımcı olacaktır.
+3. Temel C# Bilgisi: C# programlamaya aşina olmanız, takip etmenize yardımcı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Kodlamaya başlamadan önce gerekli ad alanlarını içe aktarmanız gerekir. Bu, Aspose.Words tarafından sağlanan tüm sınıflara ve yöntemlere erişebilmenizi sağlar.
+Kodlamaya başlamadan önce gerekli ad alanlarını içe aktarmanız gerekir. Bu, Aspose.Words tarafından sağlanan tüm sınıflara ve yöntemlere erişiminizin olmasını sağlar.
 
 ```csharp
 using System;
@@ -30,36 +30,36 @@ using Aspose.Words;
 
 ## Adım Adım Kılavuz
 
-Süreci basit, takip edilmesi kolay adımlara ayıralım. Her adım, görevin belirli bir bölümünde size rehberlik edecek ve her şeyi net bir şekilde anlamanızı sağlayacaktır.
+Süreci basit, takip etmesi kolay adımlara bölelim. Her adım sizi görevin belirli bir kısmında yönlendirecek ve her şeyi net bir şekilde anlamanızı sağlayacaktır.
 
-## 1. Adım: Projenizi Kurun
+## Adım 1: Projenizi Kurun
 
-İlk olarak C# projenizi Visual Studio'da ayarlayın. İşte nasıl:
+İlk önce, C# projenizi Visual Studio'da kurun. İşte nasıl:
 
 1. Yeni Bir Proje Oluşturun: Visual Studio'yu açın, Dosya > Yeni > Proje'ye gidin ve bir Konsol Uygulaması (.NET Core veya .NET Framework) seçin.
-2. Aspose.Words'ü yükleyin: Solution Explorer'da projenize sağ tıklayın, "NuGet Paketlerini Yönet" seçeneğini seçin, "Aspose.Words" ifadesini arayın ve yükleyin.
+2. Aspose.Words'ü yükleyin: Çözüm Gezgini'nde projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin, "Aspose.Words"ü arayın ve yükleyin.
 
-## 2. Adım: Belgenizi Yükleyin
+## Adım 2: Belgenizi Yükleyin
 
- Artık projeniz ayarlandığına göre kontrol etmek istediğiniz Word belgesini yükleyelim. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolu ile.
+ Artık projeniz kurulduğuna göre, kontrol etmek istediğiniz Word belgesini yükleyelim. Değiştir`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolunu belirtin.
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## 3. Adım: Koruma Türünü Alın
+## Adım 3: Koruma Türünü Edinin
 
-Sihrin gerçekleştiği yer burası! Aspose.Words'ü kullanarak belgenin koruma türünü alacağız.
+İşte sihir burada gerçekleşiyor! Aspose.Words kullanarak belgenin koruma türünü alacağız.
 
 ```csharp
 ProtectionType protectionType = doc.ProtectionType;
 ```
 
-## Adım 4: Koruma Türünü Görüntüleyin
+## Adım 4: Koruma Türünü Göster
 
-Son olarak koruma tipini konsolda görüntüleyelim. Bu, belgenizin mevcut koruma durumunu anlamanıza yardımcı olur.
+Son olarak, konsolda koruma türünü gösterelim. Bu, belgenizin geçerli koruma durumunu anlamanıza yardımcı olur.
 
 ```csharp
 Console.WriteLine("The protection type of the document is: " + protectionType);
@@ -67,21 +67,21 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinin koruma türünü başarıyla aldınız. Bu, belgelerinizin uygun şekilde korunmasını sağlamak veya yalnızca denetim amacıyla inanılmaz derecede yararlı olabilir. Aspose.Words'ün, Word belgelerini kolaylıkla değiştirmenize yardımcı olacak tonlarca başka özellik sunduğunu unutmayın. Bir deneyin ve mutlu kodlamalar yapın!
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinin koruma türünü başarıyla geri aldınız. Bu, belgelerinizin düzgün bir şekilde güvence altına alınmasını sağlamak veya yalnızca denetim amaçları için inanılmaz derecede yararlı olabilir. Unutmayın, Aspose.Words, Word belgelerini kolaylıkla düzenlemenize yardımcı olabilecek bir sürü başka özellik sunar. Deneyin ve mutlu kodlamalar!
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmanıza, düzenlemenize, dönüştürmenize ve değiştirmenize olanak tanıyan güçlü bir kitaplıktır.
+Aspose.Words for .NET, Word belgelerini programlı bir şekilde oluşturmanıza, düzenlemenize, dönüştürmenize ve değiştirmenize olanak tanıyan güçlü bir kütüphanedir.
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
- Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) ancak tam işlevsellik için bir lisans satın almanız gerekir. Şuna göz atın:[satın alma seçenekleri](https://purchase.aspose.com/buy).
+ Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) , ancak tam işlevsellik için bir lisans satın almanız gerekir. Şuraya göz atın:[satın alma seçenekleri](https://purchase.aspose.com/buy).
 
 ### Aspose.Words hangi koruma türlerini tespit edebilir?
-Aspose.Words, NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments ve AllowOnlyFormFields gibi çeşitli koruma türlerini tespit edebilir.
+Aspose.Words, NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments ve AllowOnlyFormFields gibi çeşitli koruma türlerini algılayabilir.
 
-### Sorunla karşılaşırsam nasıl destek alabilirim?
- Her türlü sorun için adresini ziyaret edebilirsiniz.[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8)yardım için.
+### Sorun yaşarsam nasıl destek alabilirim?
+Herhangi bir sorun için şu adresi ziyaret edebilirsiniz:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) yardım için.
 
 ### Aspose.Words .NET Core ile uyumlu mu?
 Evet, Aspose.Words hem .NET Framework hem de .NET Core ile uyumludur.

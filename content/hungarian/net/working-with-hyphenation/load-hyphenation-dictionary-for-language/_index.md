@@ -108,4 +108,4 @@ Az Aspose.Words támogatja a dokumentumok különböző formátumokba, köztük 
 
 ### Szükségem van engedélyre az Aspose.Words használatához?
 
- Igen, az Aspose.Words teljes funkcióihoz licenc szükséges. Vásárolhat licencet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
+ Igen, az Aspose.Words teljes funkcióihoz licenc szükséges. Vásárolhat licencet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).

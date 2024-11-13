@@ -86,7 +86,7 @@ Ja, Aspose.Words stöder komplexa strukturer som tabeller, bilder och hyperlänk
  Ja, du kan ladda ner en gratis testversion från[här](https://releases.aspose.com/).
 
 ### Var kan jag hitta dokumentation för Aspose.Words för .NET?
- Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
+Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
 
 ### Hur kan jag få tillfällig licens för Aspose.Words för .NET?
  Tillfälliga licenser kan erhållas[här](https://purchase.aspose.com/temporary-license/).

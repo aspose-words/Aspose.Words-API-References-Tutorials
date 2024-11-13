@@ -15,7 +15,7 @@ A Word dokumentumok PDF formátumba konvertálása gyakori követelmény a kül�
 
 Mielőtt elkezdenénk, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Visual Studio vagy bármely más IDE, amely támogatja a .NET fejlesztést.
 3. Alapvető C# ismerete: Az alapok megértése segít követni a kódrészleteket.
 

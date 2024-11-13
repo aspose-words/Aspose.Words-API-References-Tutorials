@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-Dieser Code ruft die erste Tabelle (Index 0) aus dem Dokument ab. Wenn Ihr Dokument mehrere Tabellen enthält und Sie auf eine andere zugreifen möchten, können Sie den Index entsprechend ändern.
+Dieser Code ruft die erste Tabelle (Index 0) aus dem Dokument ab. Wenn Ihr Dokument mehrere Tabellen hat und Sie auf eine andere zugreifen möchten, können Sie den Index entsprechend ändern.
 
 ## Schritt 3: Text in der Tabelle ersetzen
 

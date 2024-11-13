@@ -90,7 +90,7 @@ Und da haben Sie es! Sie haben Ihr Word-Dokument erfolgreich bereinigt, indem Si
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dokumente programmgesteuert mit C# erstellen, ändern und konvertieren können.
 
 ### Kann ich nicht verwendete Stile und Listen gleichzeitig entfernen?
-Ja, Sie können beides einstellen`UnusedLists`Und`UnusedStyles` Zu`true` im`CleanupOptions` um beides zu entfernen.
+Ja, Sie können beides einstellen`UnusedLists` Und`UnusedStyles` Zu`true` im`CleanupOptions` um beides zu entfernen.
 
 ### Ist es möglich, die Bereinigung rückgängig zu machen?
 Nein, sobald die Bereinigung abgeschlossen und das Dokument gespeichert ist, können Sie die Änderungen nicht mehr rückgängig machen. Bewahren Sie immer eine Sicherungskopie Ihres Originaldokuments auf.

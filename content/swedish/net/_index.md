@@ -13,6 +13,7 @@ is_root: true
 ## Handledningar
 | Titel | Beskrivning |
 | --- | --- | 
+| [AI-driven dokumentbearbetning](./ai-powered-document-processing/) | Lås upp din potential med Aspose.Words för .NET tutorials. Lär dig förbättra dokumentbehandlingen med AI-drivna lösningar för snabba och effektiva resultat. |  
 | [Tillämpa licens](./apply-license/) | Handledningar om olika varianter av att ansöka licenser för Aspose.Words för .NET inklusive applicera licens från fil, stream och mätlicens. |  
 | [Aktivera OpenType-funktioner](./enable-opentype-features/) | Lär dig hur du aktiverar OpenType-funktioner i Word-dokument med Aspose.Words för .NET. Handledningarna guidar dig genom stegen för att aktivera avancerade funktioner i OpenType-teckensnitt. |  
 | [Ordbehandling med kommentarer](./working-with-comments/) | Utforska kommentarhanteringsfunktioner i Word-dokument med Aspose.Words för .NET. Lär dig hur du lägger till, tar bort, söker och formaterar kommentarer med hjälp av steg-för-steg-instruktioner. |  
@@ -59,7 +60,7 @@ is_root: true
 | [Ordbehandling med Pdfloadoptions](./programming-with-pdfloadoptions/) | Lär dig ordbehandling med PDF-laddningsalternativ i Aspose.Words för .NET. Lär dig hur du laddar och manipulerar Word-dokument i PDF-format med steg-för-steg handledning och exempelkod. |  
 | [Ordbehandling med Rtfloadoptions](./programming-with-rtfloadoptions/) | Lär dig ordbehandling med RTF-laddningsalternativ i Aspose.Words för .NET. Lär dig hur du laddar och manipulerar RTF-dokument med hjälp av steg-för-steg handledningar och exempel på C#-kod. |  
 | [Ordbehandling med Txtloadoptions](./programming-with-txtloadoptions/) | Lär dig hur du programmerar med laddningsalternativ för textfiler i Aspose.Words för .NET. Lär dig hur du anger kodning, ignorerar okända tecken, hanterar radbrytningar och mer med steg-för-steg handledning och exempelkod i C#. |  
-| [Ordbehandling med Docsaveoptions](./programming-with-docsaveoptions/) | Lär dig hur du anpassar sparalternativ för Word-dokument med Aspose.Words för .NET. Handledningarna leder dig genom de olika tillgängliga alternativen, såsom filformat, komprimering, lösenordsskydd. |  
+| [Ordbehandling med DocSaveOptions](./programming-with-docsaveoptions/) | Lär dig hur du anpassar sparalternativ för Word-dokument med Aspose.Words för .NET. Handledningarna leder dig genom de olika tillgängliga alternativen, såsom filformat, komprimering, lösenordsskydd. |  
 | [Ordbehandling med HTMLfixedsaveoptions](./programming-with-htmlfixedsaveoptions/) | Lär dig hur du programmerar med fasta HTML-sparalternativ i Aspose.Words för .NET. Handledningarna guidar dig genom de olika funktionerna för att generera HTML-dokument med fast layout, inbäddade bilder. |  
 | [Ordbehandling med Htmlsaveoptions](./programming-with-htmlsaveoptions/) | Lär dig hur du programmerar med HTML-sparalternativ i Aspose.Words för .NET. Konvertera enkelt Word-dokument till HTML med bibehållen formatering och innehåll. |  
 | [Ordbehandling med bildsparalternativ](./programming-with-imagesaveoptions/) | Lär dig hur du programmerar med bildsparalternativ i Aspose.Words för .NET. Steg-för-steg handledning med exempelkod för att spara och manipulera bilder i dina Word-dokument. |  

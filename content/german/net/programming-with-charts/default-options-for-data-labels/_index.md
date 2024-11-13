@@ -56,7 +56,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 2: Einfügen eines Diagramms
 
- Als nächstes fügen wir unserem Dokument ein Kreisdiagramm hinzu. Das`InsertChart` Methode der`DocumentBuilder` Klasse macht das super einfach.
+ Als nächstes fügen wir unserem Dokument ein Kreisdiagramm hinzu. Das`InsertChart` Methode der`DocumentBuilder` Klasse macht dies super einfach.
 
 ```csharp
 // Einfügen eines Kreisdiagramms
@@ -90,7 +90,7 @@ In diesem Schritt stellen wir sicher, dass unser Diagramm leer ist, indem wir al
 
 ## Schritt 4: Standardoptionen für Datenbeschriftungen festlegen
 
-Datenbeschriftungen sind entscheidend, um Ihr Diagramm informativ zu gestalten. Wir legen Optionen fest, um Prozentsätze und Werte anzuzeigen und das Trennzeichen anzupassen.
+Datenbeschriftungen sind entscheidend, um Ihr Diagramm informativ zu gestalten. Wir legen Optionen zum Anzeigen von Prozentwerten und Werten fest und passen das Trennzeichen an.
 
 ```csharp
 // Zugriff auf die Sammlung von Datenbeschriftungen

@@ -15,7 +15,7 @@ Wenn Sie mit Aspose.Words für .NET arbeiten, ist das Erstellen reich formatiert
 
 Bevor wir beginnen, müssen Sie einige Dinge vorbereitet haben:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können es von der[Aspose Downloads-Seite](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können es herunterladen von der[Aspose Downloads-Seite](https://releases.aspose.com/words/net/).
 
 2. Visual Studio: Wenn Sie Visual Studio auf Ihrem Computer installiert haben, läuft der Codierungsprozess reibungsloser. 
 
@@ -38,7 +38,7 @@ Diese Namespaces bieten Zugriff auf die Klassen und Methoden, die zum Bearbeiten
 
 ## Schritt 1: Erstellen Sie einen DocumentBuilder
 
- Der`DocumentBuilder` Klasse hilft Ihnen, Inhalt im Dokument hinzuzufügen und zu formatieren. Durch die Erstellung einer`DocumentBuilder` -Objekt richten Sie ein Werkzeug zum Einfügen und Bearbeiten von Text ein.
+Der`DocumentBuilder` Klasse hilft Ihnen, Inhalt im Dokument hinzuzufügen und zu formatieren. Durch die Erstellung einer`DocumentBuilder` -Objekt richten Sie ein Werkzeug zum Einfügen und Bearbeiten von Text ein.
 
 ```csharp
 // Erstellen Sie eine DocumentBuilder-Instanz, um mit dem Dokument zu arbeiten.
@@ -85,7 +85,7 @@ Ja, Sie können Kursivformatierung auf bestimmte Textbereiche anwenden, indem Si
  Verwenden`builder.Font.Italic` um zu überprüfen, ob die aktuelle Textformatierung Kursivschrift enthält.
 
 ### Kann ich Text in Tabellen oder Überschriften kursiv formatieren?
- Absolut! Verwenden Sie die gleiche`DocumentBuilder` Techniken zum Formatieren von Text in Tabellen oder Überschriften.
+ Absolut! Verwenden Sie die gleichen`DocumentBuilder` Techniken zum Formatieren von Text in Tabellen oder Überschriften.
 
 ### Was ist, wenn ich Text in einer bestimmten Schriftgröße oder Farbe kursiv machen möchte?
  Sie können zusätzliche Eigenschaften festlegen wie`builder.Font.Size = 14;` oder`builder.Font.Color = Color.Red;` um das Erscheinungsbild des Textes weiter anzupassen.

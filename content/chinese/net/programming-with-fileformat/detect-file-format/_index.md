@@ -33,7 +33,7 @@ using System.IO;
 using System.Linq;
 ```
 
-我们将该示例分解为多个步骤，以便于理解。
+我们将示例分解为多个步骤，以便于理解。
 
 ## 步骤 1：设置目录
 
@@ -47,7 +47,7 @@ string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-//如果目录尚不存在，则创建目录。
+//如果目录不存在，则创建目录。
 if (!Directory.Exists(supportedDir))
     Directory.CreateDirectory(supportedDir);
 if (!Directory.Exists(unknownDir))
@@ -79,7 +79,7 @@ foreach (string fileName in fileList)
 
     FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-    //显示文件类型
+    //显示文档类型
     switch (info.LoadFormat)
     {
         case LoadFormat.Doc:

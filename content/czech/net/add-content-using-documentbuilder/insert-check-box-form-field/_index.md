@@ -1,6 +1,6 @@
 ---
-title: Vložit pole formuláře zaškrtávací políčko v dokumentu aplikace Word
-linktitle: Vložit pole formuláře zaškrtávací políčko v dokumentu aplikace Word
+title: Vložit pole formuláře zaškrtávací políčko do dokumentu aplikace Word
+linktitle: Vložit pole formuláře zaškrtávací políčko do dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak vložit pole formuláře zaškrtávacích políček do dokumentů aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. Ideální pro vývojáře.
 type: docs
@@ -50,11 +50,11 @@ Nyní, když máme nastavený adresář, je čas vytvořit nový dokument. Tento
 Document doc = new Document();
 ```
 
- Tento řádek inicializuje novou instanci souboru`Document` třídy, což nám dává prázdný dokument, se kterým můžeme pracovat.
+ Tento řádek inicializuje novou instanci souboru`Document` třída, což nám dává prázdný dokument, se kterým můžeme pracovat.
 
 ## Krok 3: Inicializace Tvůrce dokumentů
 
- The`DocumentBuilder` class je vaším nástrojem pro přidávání obsahu do dokumentu. Představte si to jako svůj štětec a paletu.
+The`DocumentBuilder` class je vaším nástrojem pro přidávání obsahu do dokumentu. Představte si to jako svůj štětec a paletu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

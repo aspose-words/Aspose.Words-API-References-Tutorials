@@ -19,7 +19,7 @@ Aspose.Words Python 教程指导开发人员实现文档处理工作流程自动
 
 ## 使用 Python 提升 Word 文档处理能力
 
-掌握使用 Aspose.Words for Python 进行文字文档处理。教程提供了创建专业文档的实际示例和分步说明。学习 Aspose.Words 教程可充分利用 Python 文档 API 的潜力，实现无缝文档管理和处理。
+掌握使用 Aspose.Words for Python 进行 word 文档处理。教程提供了创建专业文档的实际示例和分步说明。学习 Aspose.Words 教程可充分利用 Python 文档 API 的潜力，实现无缝文档管理和处理。
 
 ## Aspose.Words Python 文档管理教程
 ### [文档创建](./document-creation/)
@@ -45,4 +45,4 @@ Aspose.Words Python 教程指导开发人员实现文档处理工作流程自动
 ### [数据可视化和格式化](./data-visualization-and-formatting/)
 了解 Aspose.Words 中有关 Python 和 .NET 数据可视化和格式化的教程。学习如何有效地呈现数据、创建出色的报告以及以编程方式格式化文档。
 ### [表格和格式](./tables-and-formatting/)
-深入了解 Aspose.Words 教程，了解 Python 和 .NET 应用程序中的表格和格式。学习如何创建、自定义和设计表格，以制作出具有视觉吸引力的文档。 
+深入了解 Aspose.Words 教程，了解如何在 Python 和 .NET 应用程序中设置表格和格式。学习如何创建、自定义和设计表格，以制作出具有视觉吸引力的文档。 

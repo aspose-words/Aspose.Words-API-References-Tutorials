@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- Der`InsertChart` Die Methode verwendet den Diagrammtyp, die Breite und die Höhe als Parameter. In diesem Fall fügen wir ein Liniendiagramm mit einer Breite von 432 und einer Höhe von 252 ein.
+Der`InsertChart` Die Methode verwendet den Diagrammtyp, die Breite und die Höhe als Parameter. In diesem Fall fügen wir ein Liniendiagramm mit einer Breite von 432 und einer Höhe von 252 ein.
 
 ## Schritt 3: Auf Diagrammserien zugreifen
 

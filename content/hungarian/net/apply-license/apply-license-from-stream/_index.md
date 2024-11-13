@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Következtetés
 
-És megvan! Az Aspose.Words for .NET-ben található adatfolyamból származó licenc alkalmazása egyszerű folyamat, ha ismeri a lépéseket. Az útmutató követésével biztosítja, hogy alkalmazása korlátlanul ki tudja használni az Aspose.Words teljes képességét. Ha bármilyen problémába ütközik, ne habozzon nézni a[dokumentáció](https://reference.aspose.com/words/net/) vagy kérjen segítséget a[támogatási fórum](https://forum.aspose.com/c/words/8). Boldog kódolást!
+ És megvan! Az Aspose.Words for .NET-ben található adatfolyamból származó licenc alkalmazása egyszerű folyamat, ha ismeri a lépéseket. Az útmutató követésével biztosítja, hogy alkalmazása korlátlanul ki tudja használni az Aspose.Words teljes képességét. Ha bármilyen problémába ütközik, ne habozzon nézni a[dokumentáció](https://reference.aspose.com/words/net/) vagy kérjen segítséget a[támogatási fórum](https://forum.aspose.com/c/words/8). Boldog kódolást!
 
 ## GYIK
 

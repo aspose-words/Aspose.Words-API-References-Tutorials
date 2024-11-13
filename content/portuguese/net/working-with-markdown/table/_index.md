@@ -2,26 +2,26 @@
 title: Mesa
 linktitle: Mesa
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como criar e personalizar tabelas no Aspose.Words for .NET com este guia passo a passo. Perfeito para gerar documentos estruturados e visualmente atraentes.
+description: Aprenda como criar e personalizar tabelas no Aspose.Words para .NET com este guia passo a passo. Perfeito para gerar documentos estruturados e visualmente atraentes.
 type: docs
 weight: 10
 url: /pt/net/working-with-markdown/table/
 ---
 ## Introdução
 
-Trabalhar com tabelas em documentos é um requisito comum. Esteja você gerando relatórios, faturas ou quaisquer dados estruturados, as tabelas são indispensáveis. Neste tutorial, orientarei você na criação e personalização de tabelas usando Aspose.Words for .NET. Vamos mergulhar!
+Trabalhar com tabelas em documentos é um requisito comum. Não importa se você está gerando relatórios, faturas ou quaisquer dados estruturados, as tabelas são indispensáveis. Neste tutorial, vou orientá-lo na criação e personalização de tabelas usando o Aspose.Words para .NET. Vamos lá!
 
 ## Pré-requisitos
 
-Antes de começarmos, certifique-se de ter os seguintes pré-requisitos:
+Antes de começar, certifique-se de ter os seguintes pré-requisitos:
 
-- Visual Studio: você precisa de um ambiente de desenvolvimento para escrever e testar seu código. Visual Studio é uma boa escolha.
--  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Se você não tem, você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
-- Compreensão básica de C#: É necessária alguma familiaridade com a programação C# para acompanhar.
+- Visual Studio: Você precisa de um ambiente de desenvolvimento para escrever e testar seu código. O Visual Studio é uma boa escolha.
+-  Aspose.Words para .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Se não a tiver, você pode baixá-la[aqui](https://releases.aspose.com/words/net/).
+- Noções básicas de C#: É necessário ter alguma familiaridade com programação em C# para acompanhar.
 
 ## Importar namespaces
 
-Antes de prosseguirmos com as etapas, vamos importar os namespaces necessários:
+Antes de começarmos, vamos importar os namespaces necessários:
 
 ```csharp
 using Aspose.Words;
@@ -30,18 +30,18 @@ using Aspose.Words.Tables;
 
 ## Etapa 1: inicializar o documento e o DocumentBuilder
 
-Primeiramente, precisamos criar um novo documento e inicializar a classe DocumentBuilder, que nos ajudará na construção de nossa tabela.
+Primeiramente, precisamos criar um novo documento e inicializar a classe DocumentBuilder, que nos ajudará a construir nossa tabela.
 
 ```csharp
 // Inicialize o DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Esta etapa é como configurar seu espaço de trabalho. Você tem seu documento em branco e sua caneta pronta.
+Este passo é como configurar seu espaço de trabalho. Você tem seu documento em branco e sua caneta pronta.
 
-## Etapa 2: comece a construir sua mesa
+## Etapa 2: comece a construir sua tabela
 
-Agora que temos nossas ferramentas, vamos começar a construir a mesa. Começaremos inserindo a primeira célula da primeira linha.
+Agora que temos nossas ferramentas, vamos começar a construir a tabela. Começaremos inserindo a primeira célula da primeira linha.
 
 ```csharp
 // Adicione a primeira linha.
@@ -52,13 +52,13 @@ builder.Writeln("a");
 builder.InsertCell();
 builder.Writeln("b");
 
-// Termine a primeira linha.
+// Termine a primeira carreira.
 builder.EndRow();
 ```
 
-Pense nesta etapa como desenhar a primeira linha da sua tabela em um pedaço de papel e preencher as duas primeiras células com “a” e “b”.
+Pense nesta etapa como desenhar a primeira linha da sua tabela em um pedaço de papel e preencher as duas primeiras células com "a" e "b".
 
-## Etapa 3: adicionar mais linhas
+## Etapa 3: Adicionar mais linhas
 
 Vamos adicionar outra linha à nossa tabela.
 
@@ -70,25 +70,25 @@ builder.InsertCell();
 builder.Writeln("d");
 ```
 
-Aqui, estamos simplesmente estendendo nossa tabela adicionando outra linha com duas células preenchidas com “c” e “d”.
+Aqui, estamos simplesmente estendendo nossa tabela adicionando outra linha com duas células preenchidas com "c" e "d".
 
 ## Conclusão
 
-Criar e personalizar tabelas no Aspose.Words for .NET é simples quando você pega o jeito. Seguindo essas etapas, você pode gerar tabelas estruturadas e visualmente atraentes em seus documentos. Boa codificação!
+Criar e personalizar tabelas no Aspose.Words para .NET é simples quando você pega o jeito. Seguindo essas etapas, você pode gerar tabelas estruturadas e visualmente atraentes em seus documentos. Boa codificação!
 
 ## Perguntas frequentes
 
-### Posso adicionar mais de duas células seguidas?
- Sim, você pode adicionar quantas células precisar em uma linha, repetindo o`InsertCell()`e`Writeln()` métodos.
+### Posso adicionar mais de duas células em uma linha?
+ Sim, você pode adicionar quantas células precisar em uma linha repetindo o`InsertCell()` e`Writeln()` métodos.
 
 ### Como posso mesclar células em uma tabela?
- Você pode mesclar células usando o`CellFormat.HorizontalMerge`e`CellFormat.VerticalMerge` propriedades.
+ Você pode mesclar células usando o`CellFormat.HorizontalMerge` e`CellFormat.VerticalMerge` propriedades.
 
 ### É possível adicionar imagens às células da tabela?
- Absolutamente! Você pode inserir imagens em células usando o`DocumentBuilder.InsertImage` método.
+ Claro! Você pode inserir imagens em células usando o`DocumentBuilder.InsertImage` método.
 
-### Posso estilizar células individuais de maneira diferente?
- Sim, você pode aplicar estilos diferentes a células individuais acessando-as através do`Cells` coleção de uma linha.
+### Posso estilizar células individuais de forma diferente?
+ Sim, você pode aplicar estilos diferentes a células individuais acessando-as por meio do`Cells` coleção de uma linha.
 
-### Como removo as bordas da mesa?
- Você pode remover bordas definindo o estilo da borda como`LineStyle.None` para cada tipo de borda.
+### Como faço para remover bordas da tabela?
+ Você pode remover bordas definindo o estilo de borda como`LineStyle.None` para cada tipo de borda.

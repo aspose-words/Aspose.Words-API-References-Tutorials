@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Schritt 3: Laden Sie Ihre Dokumente
 
-Okay, es ist Zeit, die Dokumente zu laden, die Sie vergleichen möchten. Sie benötigen die Pfade zu diesen Dokumenten. Nehmen wir an, Sie haben zwei Dokumente:`DocumentA.docx`Und`DocumentB.docx`.
+Okay, es ist Zeit, die Dokumente zu laden, die Sie vergleichen möchten. Sie benötigen die Pfade zu diesen Dokumenten. Nehmen wir an, Sie haben zwei Dokumente:`DocumentA.docx` Und`DocumentB.docx`.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.

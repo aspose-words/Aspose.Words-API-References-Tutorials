@@ -74,7 +74,7 @@ Section sectionToAdd = new Section(doc);
 doc.Sections.Add(sectionToAdd);
 ```
 
-- `Section sectionToAdd = new Section(doc);` उसी दस्तावेज़ के भीतर एक नया अनुभाग बनाता है.
+- `Section sectionToAdd = new Section(doc);` उसी दस्तावेज़ में एक नया अनुभाग बनाता है.
 - `doc.Sections.Add(sectionToAdd);` नव निर्मित अनुभाग को दस्तावेज़ के अनुभाग संग्रह में जोड़ता है.
 
 ## चरण 4: नए अनुभाग में सामग्री जोड़ना
@@ -91,7 +91,7 @@ builder.Writeln("Welcome to the new section!");
 ```
 
 - `builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));` कर्सर को नए जोड़े गए अनुभाग पर ले जाता है.
-- `builder.Writeln("Welcome to the new section!");` नये अनुभाग में एक पैराग्राफ जोड़ता है.
+- `builder.Writeln("Welcome to the new section!");` नये अनुभाग में एक पैराग्राफ जोड़ता है।
 
 ## चरण 5: दस्तावेज़ को सहेजना
 

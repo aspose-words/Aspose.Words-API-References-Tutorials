@@ -1,7 +1,7 @@
 ---
 title: Dokumenttabellenstile und -formatierung mit Aspose.Words Python
 linktitle: Dokumenttabellenstile und -formatierung
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie Dokumenttabellen mit Aspose.Words für Python gestalten und formatieren. Erstellen, anpassen und exportieren Sie Tabellen mit Schritt-für-Schritt-Anleitungen und Codebeispielen. Verbessern Sie noch heute Ihre Dokumentpräsentationen!
 type: docs
 weight: 12
@@ -39,7 +39,7 @@ Um mit Aspose.Words für Python Tabellen zu erstellen und in Dokumente einzufüg
     table = builder.start_table()
     ```
 
-2.  Daten einfügen: Fügen Sie der Tabelle Daten hinzu, indem Sie den`insert_cell`Und`write` Methoden.
+2.  Daten einfügen: Fügen Sie der Tabelle Daten hinzu, indem Sie den`insert_cell` Und`write` Methoden.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Um mit Aspose.Words für Python Tabellen zu erstellen und in Dokumente einzufüg
 
 ## Grundlegende Tabellenformatierung anwenden
 
- Die grundlegende Tabellenformatierung kann mit den Methoden der`Table`Und`Cell` Klassen. So können Sie das Erscheinungsbild Ihrer Tabelle verbessern:
+ Die grundlegende Tabellenformatierung kann mit den Methoden der`Table` Und`Cell` Klassen. So können Sie das Erscheinungsbild Ihrer Tabelle verbessern:
 
 1. Spaltenbreiten festlegen: Passen Sie die Breite der Spalten an, um eine korrekte Ausrichtung und ein ansprechendes Erscheinungsbild sicherzustellen.
 
@@ -135,7 +135,7 @@ Optimieren Sie die Zeilen- und Spaltenabmessungen für ein ausgewogenes Tabellen
     row.row_format.height_rule = aspose.words.HeightRule.AUTO
     ```
 
-2. Spaltenbreite anpassen: Passt die Spaltenbreite automatisch an den Inhalt an.
+2. Spaltenbreite anpassen: Passen Sie die Spaltenbreite automatisch an den Inhalt an.
 
     ```python
     table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
@@ -168,7 +168,7 @@ Verwalten Sie Zellinhalte und -ausrichtung effizient für eine bessere Lesbarkei
     builder.write("Hello, Aspose!")
     ```
 
-2. Textausrichtung: Richten Sie Zellentext nach Bedarf aus.
+2. Textausrichtung: Richten Sie den Zellentext nach Bedarf aus.
 
     ```python
     cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER

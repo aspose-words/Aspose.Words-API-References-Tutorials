@@ -1,8 +1,8 @@
 ---
-title: Word 文書のヘッダー フッターに移動
-linktitle: Word 文書のヘッダー フッターに移動
+title: Word 文書のヘッダー フッターに移動する
+linktitle: Word 文書のヘッダー フッターに移動する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書のヘッダーとフッターに移動する方法をステップバイステップ ガイドで学習します。ドキュメント作成スキルを強化します。
+description: Aspose.Words for .NET を使用して Word 文書のヘッダーとフッターに移動する方法をステップバイステップ ガイドで学習します。ドキュメント作成スキルを向上させます。
 type: docs
 weight: 10
 url: /ja/net/add-content-using-documentbuilder/move-to-headers-footers/
@@ -59,7 +59,7 @@ builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 
 ## ステップ3: ヘッダー/フッターに移動してコンテンツを追加する
 
-次に、ヘッダーとフッターのセクションに移動してコンテンツを追加しましょう。
+次に、ヘッダーとフッターのセクションに移動して、コンテンツを追加しましょう。
 
 ```csharp
 //ヘッダーを作成します。

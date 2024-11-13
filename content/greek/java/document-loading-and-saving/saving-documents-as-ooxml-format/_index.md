@@ -87,10 +87,10 @@ import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.SaveFormat;
 
-// Φορτώστε ένα έγγραφο με χαρακτήρες ελέγχου παλαιού τύπου
+//Φορτώστε ένα έγγραφο με χαρακτήρες ελέγχου παλαιού τύπου
 Document doc = new Document("LegacyControlChars.doc");
 
-//Δημιουργήστε OoxmlSaveOptions με τη μορφή FLAT_OPC και ενεργοποιήστε τη διατήρηση χαρακτήρων ελέγχου παλαιού τύπου
+// Δημιουργήστε OoxmlSaveOptions με τη μορφή FLAT_OPC και ενεργοποιήστε τη διατήρηση χαρακτήρων ελέγχου παλαιού τύπου
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
 saveOptions.setKeepLegacyControlChars(true);
 
@@ -172,7 +172,7 @@ public void setCompressionLevel() throws Exception
 
 ### Μπορώ να ορίσω προσαρμοσμένες ιδιότητες κατά την αποθήκευση ενός εγγράφου σε μορφή OOXML;
 
- Ναι, μπορείτε να ορίσετε προσαρμοσμένες ιδιότητες για ένα έγγραφο πριν το αποθηκεύσετε σε μορφή OOXML. Χρησιμοποιήστε το`BuiltInDocumentProperties`και`CustomDocumentProperties` κλάσεις για να ορίσετε διάφορες ιδιότητες, όπως συγγραφέα, τίτλο, λέξεις-κλειδιά και προσαρμοσμένες ιδιότητες.
+ Ναι, μπορείτε να ορίσετε προσαρμοσμένες ιδιότητες για ένα έγγραφο πριν το αποθηκεύσετε σε μορφή OOXML. Χρησιμοποιήστε το`BuiltInDocumentProperties` και`CustomDocumentProperties` κλάσεις για να ορίσετε διάφορες ιδιότητες, όπως συγγραφέα, τίτλο, λέξεις-κλειδιά και προσαρμοσμένες ιδιότητες.
 
 ### Ποιο είναι το προεπιλεγμένο επίπεδο συμπίεσης κατά την αποθήκευση ενός εγγράφου σε μορφή OOXML;
 

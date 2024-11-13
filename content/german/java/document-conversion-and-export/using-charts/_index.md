@@ -2,7 +2,7 @@
 title: Verwenden von Diagrammen in Aspose.Words für Java
 linktitle: Verwenden von Diagrammen
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
-description: Erfahren Sie, wie Sie Diagramme in Aspose.Words für Java erstellen und anpassen. Erkunden Sie Diagrammtypen, Formatierungen und Achseneigenschaften zur Datenvisualisierung.
+description: Erfahren Sie, wie Sie in Aspose.Words für Java Diagramme erstellen und anpassen. Erkunden Sie Diagrammtypen, Formatierungen und Achseneigenschaften zur Datenvisualisierung.
 type: docs
 weight: 12
 url: /de/java/document-conversion-and-export/using-charts/
@@ -74,7 +74,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.insertChart(ChartType.AREA, 432.0, 252.0);
 Chart chart = shape.getChart();
 
-// Löschen Sie die Standardreihen und fügen Sie Ihre Daten hinzu.
+// Löschen Sie die Standardreihe und fügen Sie Ihre Daten hinzu.
 
 ChartAxis xAxis = chart.getAxisX();
 ChartAxis yAxis = chart.getAxisY();
@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Ändern Sie die X-Achse so, dass sie eine Kategorie statt einem Datum anzeigt.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); //Gemessen in Anzeigeeinheiten der Y-Achse (Hunderter).
+xAxis.setCrossesAt(3.0); // Gemessen in Anzeigeeinheiten der Y-Achse (Hunderter).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -108,7 +108,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.insertChart(ChartType.COLUMN, 432.0, 252.0);
 Chart chart = shape.getChart();
 
-// Löschen Sie die Standardreihen und fügen Sie Ihre Daten hinzu.
+// Löschen Sie die Standardreihe und fügen Sie Ihre Daten hinzu.
 
 chart.getAxisY().getNumberFormat().setFormatCode("#,##0");
 
@@ -131,7 +131,7 @@ In diesem Tutorial haben wir untersucht, wie Sie mit Diagrammen unter Verwendung
 
 ### Wie kann ich Datenbeschriftungen mit benutzerdefinierten Zahlenformaten formatieren?
 
-Sie können Datenbeschriftungen formatieren, indem Sie auf das`DataLabels` Eigenschaften einer Serie und Festlegen des gewünschten Formatcodes mit`getNumberFormat().setFormatCode()`.
+ Sie können Datenbeschriftungen formatieren, indem Sie auf das`DataLabels` Eigenschaften einer Serie und Festlegen des gewünschten Formatcodes mit`getNumberFormat().setFormatCode()`.
 
 ### Wie passe ich Achseneigenschaften in einem Diagramm an?
 
@@ -139,7 +139,7 @@ Sie können Datenbeschriftungen formatieren, indem Sie auf das`DataLabels` Eigen
 
 ### Wie kann ich andere Diagrammtypen wie Streu- oder Flächendiagramme erstellen?
 
- Sie können verschiedene Diagrammtypen erstellen, indem Sie die entsprechenden`ChartType` beim Einfügen des Diagramms mit`builder.insertChart(ChartType.TYPE, width, height)`.
+Sie können verschiedene Diagrammtypen erstellen, indem Sie die entsprechenden`ChartType` beim Einfügen des Diagramms mit`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Wie kann ich eine Diagrammachse ausblenden?
 

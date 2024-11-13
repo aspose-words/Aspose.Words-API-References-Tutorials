@@ -33,7 +33,7 @@ Lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Auf diese Wei
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
-Als Erstes müssen Sie den Pfad zu Ihrem Dokumentverzeichnis angeben. Hier sind Ihre Word-Dokumente gespeichert und hier speichern Sie die geänderten Dateien.
+Als Erstes müssen Sie den Pfad zu Ihrem Dokumentverzeichnis angeben. Hier werden Ihre Word-Dokumente gespeichert und hier speichern Sie die geänderten Dateien.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis

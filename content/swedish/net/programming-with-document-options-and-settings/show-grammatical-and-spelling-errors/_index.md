@@ -9,7 +9,7 @@ url: /sv/net/programming-with-document-options-and-settings/show-grammatical-and
 ---
 ## Introduktion
 
-Hittar du någonsin att du outtröttligt letar igenom dokument för att fånga varje litet grammatiskt och stavningsfel? Det är som att spela en oändlig omgång "Where's Waldo", är det inte? Nåväl, oroa dig inte längre! Med Aspose.Words för .NET kan du automatisera processen och spara massor av tid och krångel. Låt oss dyka in i hur du kan aktivera grammatiska och stavfelsvisningar i dina Word-dokument med detta fiffiga verktyg.
+Hittar du någonsin att du outtröttligt letar igenom dokument för att fånga varje litet grammatiskt och stavningsfel? Det är som att spela en oändlig omgång "Where's Waldo", är det inte? Nåväl, oroa dig inte mer! Med Aspose.Words för .NET kan du automatisera processen och spara massor av tid och krångel. Låt oss dyka in i hur du kan aktivera grammatiska och stavfelsvisningar i dina Word-dokument med detta fiffiga verktyg.
 
 ## Förutsättningar
 

@@ -1,8 +1,8 @@
 ---
 title: حفظ المستندات كملفات نصية في Aspose.Words لـ Java
 linktitle: حفظ المستندات كملفات نصية
-second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: تعرف على كيفية حفظ المستندات كملفات نصية في Aspose.Words لـ Java. اتبع دليلنا خطوة بخطوة مع أمثلة كود Java.
+second_title: واجهة برمجة تطبيقات معالجة المستندات في Java Aspose.Words
+description: تعرف على كيفية حفظ المستندات كملفات نصية في Aspose.Words for Java. اتبع دليلنا خطوة بخطوة مع أمثلة أكواد Java.
 type: docs
 weight: 24
 url: /ar/java/document-loading-and-saving/saving-documents-as-text-files/
@@ -10,15 +10,15 @@ url: /ar/java/document-loading-and-saving/saving-documents-as-text-files/
 
 ## مقدمة لحفظ المستندات كملفات نصية في Aspose.Words لـ Java
 
-في هذا البرنامج التعليمي، سوف نستكشف كيفية حفظ المستندات كملفات نصية باستخدام مكتبة Aspose.Words for Java. Aspose.Words عبارة عن واجهة برمجة تطبيقات Java قوية للعمل مع مستندات Word، وتوفر خيارات متنوعة لحفظ المستندات بتنسيقات مختلفة، بما في ذلك النص العادي. سنغطي الخطوات اللازمة لتحقيق ذلك ونقدم نموذجًا لتعليمات Java البرمجية على طول الطريق.
+في هذا البرنامج التعليمي، سنستكشف كيفية حفظ المستندات كملفات نصية باستخدام مكتبة Aspose.Words for Java. Aspose.Words عبارة عن واجهة برمجة تطبيقات Java قوية للعمل مع مستندات Word، وتوفر خيارات متنوعة لحفظ المستندات بتنسيقات مختلفة، بما في ذلك النص العادي. سنغطي الخطوات اللازمة لتحقيق ذلك وسنقدم عينة من أكواد Java على طول الطريق.
 
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
 
 - تم تثبيت Java Development Kit (JDK) على نظامك.
--  Aspose.Words لمكتبة Java المدمجة في مشروعك. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/java/).
-- المعرفة الأساسية ببرمجة جافا.
+-  تم دمج مكتبة Aspose.Words for Java في مشروعك. يمكنك تنزيلها من[هنا](https://releases.aspose.com/words/java/).
+- المعرفة الأساسية لبرمجة جافا.
 
 ## الخطوة 1: إنشاء مستند
 
@@ -33,13 +33,13 @@ builder.writeln("שלום עולם!");
 builder.writeln("مرحبا بالعالم!");
 ```
 
-في هذا الكود، نقوم بإنشاء مستند جديد وإضافة بعض النص إليه، بما في ذلك النص بلغات مختلفة.
+في هذا الكود نقوم بإنشاء مستند جديد وإضافة بعض النصوص إليه، بما في ذلك النصوص بلغات مختلفة.
 
 ## الخطوة 2: تحديد خيارات حفظ النص
 
-بعد ذلك، نحتاج إلى تحديد خيارات حفظ النص التي تحدد كيفية حفظ المستند كملف نصي. يمكننا تكوين إعدادات مختلفة مثل إضافة علامات ثنائية الاتجاه والمسافات البادئة للقائمة والمزيد. دعونا ننظر إلى مثالين:
+بعد ذلك، نحتاج إلى تحديد خيارات حفظ النص التي تحدد كيفية حفظ المستند كملف نصي. يمكننا تكوين إعدادات مختلفة مثل إضافة علامات ثنائية الاتجاه، وقائمة المسافات البادئة، والمزيد. دعنا نلقي نظرة على مثالين:
 
-### مثال 1: إضافة علامات بيدي
+### المثال 1: إضافة علامات البيدي
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -47,9 +47,9 @@ saveOptions.setAddBidiMarks(true);
 doc.save("output.txt", saveOptions);
 ```
 
- في هذا المثال، نقوم بإنشاء`TxtSaveOptions` الكائن وتعيين`AddBidiMarks`الملكية ل`true` لتضمين علامات ثنائية في إخراج النص.
+ في هذا المثال، نقوم بإنشاء`TxtSaveOptions` الكائن وتعيين`AddBidiMarks`الممتلكات ل`true` لتضمين علامات البيدي في إخراج النص.
 
-### المثال 2: استخدام حرف الجدولة للمسافة البادئة للقائمة
+### المثال 2: استخدام حرف Tab لإضافة مسافة بادئة إلى القائمة
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -58,19 +58,19 @@ saveOptions.getListIndentation().setCharacter('\t');
 doc.save("output.txt", saveOptions);
 ```
 
-هنا، نقوم بتكوين خيارات الحفظ لاستخدام حرف علامة التبويب للمسافة البادئة للقائمة مع عدد 1.
+هنا، قمنا بتكوين خيارات الحفظ لاستخدام حرف علامة التبويب لتجويف القائمة مع عدد 1.
 
-## الخطوة 3: احفظ المستند كنص
+## الخطوة 3: حفظ المستند كنص
 
-الآن بعد أن حددنا خيارات حفظ النص، يمكننا حفظ المستند كملف نصي. يوضح التعليمة البرمجية التالية كيفية القيام بذلك:
+الآن بعد أن حددنا خيارات حفظ النص، يمكننا حفظ المستند كملف نصي. يوضح الكود التالي كيفية القيام بذلك:
 
 ```java
 doc.save("output.txt", saveOptions);
 ```
 
- يستبدل`"output.txt"` باستخدام مسار الملف المطلوب حيث تريد حفظ الملف النصي.
+ يستبدل`"output.txt"` مع مسار الملف المطلوب حيث تريد حفظ ملف النص.
 
-## أكمل كود المصدر لحفظ المستندات كملفات نصية في Aspose.Words لـ Java
+## الكود المصدري الكامل لحفظ المستندات كملفات نصية في Aspose.Words لـ Java
 
 ```java
     public void addBidiMarks() throws Exception
@@ -89,7 +89,7 @@ doc.save("output.txt", saveOptions);
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة.
+        // إنشاء قائمة تحتوي على ثلاثة مستويات من المسافة البادئة.
         builder.getListFormat().applyNumberDefault();
         builder.writeln("Item 1");
         builder.getListFormat().listIndent();
@@ -106,7 +106,7 @@ doc.save("output.txt", saveOptions);
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // قم بإنشاء قائمة بثلاثة مستويات من المسافة البادئة.
+        // إنشاء قائمة تحتوي على ثلاثة مستويات من المسافة البادئة.
         builder.getListFormat().applyNumberDefault();
         builder.writeln("Item 1");
         builder.getListFormat().listIndent();
@@ -122,13 +122,13 @@ doc.save("output.txt", saveOptions);
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، تعلمنا كيفية حفظ المستندات كملفات نصية في Aspose.Words لـ Java. لقد تناولنا خطوات إنشاء مستند وتحديد خيارات حفظ النص وحفظ المستند بتنسيق نص. يوفر Aspose.Words مرونة واسعة النطاق عندما يتعلق الأمر بحفظ المستندات، مما يسمح لك بتخصيص المخرجات وفقًا لمتطلباتك المحددة.
+في هذا البرنامج التعليمي، تعلمنا كيفية حفظ المستندات كملفات نصية في Aspose.Words for Java. لقد قمنا بتغطية الخطوات اللازمة لإنشاء مستند، وتحديد خيارات حفظ النص، وحفظ المستند بتنسيق نصي. يوفر Aspose.Words مرونة كبيرة عندما يتعلق الأمر بحفظ المستندات، مما يسمح لك بتخصيص الناتج وفقًا لمتطلباتك المحددة.
 
 ## الأسئلة الشائعة
 
-### كيف أقوم بإضافة علامات بيدي إلى إخراج النص؟
+### كيف أضيف علامات bidi إلى إخراج النص؟
 
- لإضافة علامات ثنائية الاتجاه إلى مخرجات النص، قم بتعيين`AddBidiMarks` ملكية`TxtSaveOptions` ل`true`. على سبيل المثال:
+ لإضافة علامات bidi إلى إخراج النص، اضبط`AddBidiMarks` ممتلكات`TxtSaveOptions` ل`true`. على سبيل المثال:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -137,7 +137,7 @@ saveOptions.setAddBidiMarks(true);
 
 ### هل يمكنني تخصيص حرف المسافة البادئة للقائمة؟
 
- نعم، يمكنك تخصيص حرف المسافة البادئة للقائمة عن طريق تكوين`ListIndentation` ملكية`TxtSaveOptions`. على سبيل المثال، لاستخدام حرف جدولة للمسافة البادئة للقائمة، يمكنك القيام بما يلي:
+ نعم، يمكنك تخصيص حرف المسافة البادئة للقائمة عن طريق تكوين`ListIndentation` ممتلكات`TxtSaveOptions`على سبيل المثال، لاستخدام حرف علامة التبويب لإضافة مسافة بادئة إلى القائمة، يمكنك القيام بما يلي:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -145,14 +145,14 @@ saveOptions.getListIndentation().setCount(1);
 saveOptions.getListIndentation().setCharacter('\t');
 ```
 
-### هل Aspose.Words for Java مناسب للتعامل مع النص متعدد اللغات؟
+### هل Aspose.Words for Java مناسب للتعامل مع النصوص المتعددة اللغات؟
 
-نعم، Aspose.Words for Java مناسب للتعامل مع النص متعدد اللغات. وهو يدعم العديد من اللغات وترميزات الأحرف، مما يجعله خيارًا متعدد الاستخدامات للعمل مع المستندات بلغات مختلفة.
+نعم، يعد برنامج Aspose.Words for Java مناسبًا للتعامل مع النصوص متعددة اللغات. فهو يدعم العديد من اللغات وترميزات الأحرف، مما يجعله خيارًا متعدد الاستخدامات للعمل مع المستندات بلغات مختلفة.
 
-### كيف يمكنني الوصول إلى المزيد من الوثائق والموارد الخاصة بـ Aspose.Words لـ Java؟
+### كيف يمكنني الوصول إلى مزيد من الوثائق والموارد لـ Aspose.Words for Java؟
 
- يمكنك العثور على وثائق وموارد شاملة لـ Aspose.Words for Java على موقع وثائق Aspose:[Aspose.Words لتوثيق جافا](https://reference.aspose.com/words/java/).
+ يمكنك العثور على وثائق وموارد شاملة لـ Aspose.Words for Java على موقع وثائق Aspose:[توثيق Aspose.Words للغة Java](https://reference.aspose.com/words/java/).
 
 ### أين يمكنني تنزيل Aspose.Words لـ Java؟
 
- يمكنك تنزيل مكتبة Aspose.Words for Java من موقع Aspose الإلكتروني:[تحميل Aspose.Words لجافا](https://releases.aspose.com/words/java/).
+ يمكنك تنزيل مكتبة Aspose.Words for Java من موقع Aspose على الويب:[تنزيل Aspose.Words لجافا](https://releases.aspose.com/words/java/).

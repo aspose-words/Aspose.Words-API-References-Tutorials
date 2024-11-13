@@ -118,7 +118,7 @@ Att infoga hyperlänkar i ett Word-dokument med Aspose.Words för .NET är enkel
 
 ### Vad händer om webbadressen är ogiltig?
 
- De`InsertHyperlink` metoden validerar inte webbadresser, så det är viktigt att se till att webbadresserna är korrekta innan du infogar dem.
+De`InsertHyperlink` metoden validerar inte webbadresser, så det är viktigt att se till att webbadresserna är korrekta innan du infogar dem.
 
 ### Är det möjligt att ta bort en hyperlänk efter att den har infogats?
 

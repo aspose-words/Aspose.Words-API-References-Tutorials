@@ -16,7 +16,7 @@ Aspose.Words for .NET je výkonná knihovna, která vám umožňuje pracovat s d
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 
 1.  Aspose.Words for .NET: Pokud jste tak ještě neučinili, stáhněte si knihovnu z[Aspose webové stránky](https://releases.aspose.com/words/net/).
-2. Platné měřené licenční klíče: Klíče potřebujete k aktivaci měřené licence. Můžete je získat z[Aspose Nákup stránky](https://purchase.aspose.com/buy).
+2.  Platné měřené licenční klíče: Klíče potřebujete k aktivaci měřené licence. Můžete je získat z[Aspose Nákup stránky](https://purchase.aspose.com/buy).
 3. Vývojové prostředí: Ujistěte se, že máte nastavené vývojové prostředí .NET. Visual Studio je oblíbená volba, ale můžete použít jakékoli IDE, které podporuje .NET.
 
 ## Importovat jmenné prostory
@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Nahradit`"your_public_key"`a`"your_private_key"`se skutečnými klíči, které jste obdrželi od Aspose. Tento krok v podstatě říká Aspose, že chcete použít měřenou licenci.
+ Nahradit`"your_public_key"` a`"your_private_key"` se skutečnými klíči, které jste obdrželi od Aspose. Tento krok v podstatě říká Aspose, že chcete použít měřenou licenci.
 
 ## Krok 3: Vložte svůj dokument
 
@@ -66,7 +66,7 @@ Console.WriteLine(doc.PageCount);
 
 Tento krok zajistí, že váš dokument bude načten a zpracován pomocí měřené licence.
 
-## Krok 5: Ošetřete výjimky
+## Krok 5: Řešení výjimek
 
 Vždy je dobrým zvykem zvládnout jakékoli potenciální výjimky. Pojďme do našeho kódu přidat blok try-catch, abychom mohli elegantně zvládat chyby.
 
@@ -90,7 +90,7 @@ Tím je zajištěno, že pokud se něco pokazí, dostanete smysluplnou chybovou 
 
 ## Závěr
 
-tady to máte! Použití měřené licence v Aspose.Words pro .NET je jednoduché, jakmile ji rozdělíte do zvládnutelných kroků. Tento licenční model nabízí flexibilitu a úsporu nákladů, díky čemuž je vynikající volbou pro mnoho vývojářů. Pamatujte, že klíčem je správně nastavit měřené klíče a zpracovat všechny výjimky, které se mohou objevit. Šťastné kódování!
+A tady to máte! Použití měřené licence v Aspose.Words pro .NET je jednoduché, jakmile ji rozdělíte do zvládnutelných kroků. Tento licenční model nabízí flexibilitu a úsporu nákladů, díky čemuž je vynikající volbou pro mnoho vývojářů. Pamatujte, že klíčem je správně nastavit měřené klíče a zpracovat všechny výjimky, které se mohou objevit. Šťastné kódování!
 
 ## FAQ
 

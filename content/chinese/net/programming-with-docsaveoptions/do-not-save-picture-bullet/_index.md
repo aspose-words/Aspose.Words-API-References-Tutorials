@@ -40,11 +40,11 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-代替`"YOUR DOCUMENTS DIRECTORY"`与您的系统中文档所在的实际路径。
+代替`"YOUR DOCUMENTS DIRECTORY"`使用系统中文档所在的实际路径。
 
 ## 步骤 2：使用图像项目符号加载文档
 
-接下来，您将加载包含图片项目符号的 Word 文档。保存时，将修改此文档以删除图片项目符号。
+接下来，您将加载包含图片项目符号的 Word 文档。保存时，此文档将被修改以删除图片项目符号。
 
 ```csharp
 //用图片项目符号加载文档
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", save
 
 ## 结论
 
-就这样！只需几行代码，您就成功配置了 Aspose.Words for .NET，使其在保存文档时忽略图片项目符号。当您需要干净、一致的外观而不受图片项目符号干扰时，此功能非常有用。
+就这样！只需几行代码，您就成功配置了 Aspose.Words for .NET，以便在保存文档时忽略图片项目符号。当您需要干净、一致的外观而不受图片项目符号干扰时，这非常有用。
 
 ## 常见问题解答
 

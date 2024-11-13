@@ -9,7 +9,7 @@ url: /cs/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 ## Zavedení
 
-Ahoj, kolegové vývojáři! Už jste někdy pracovali s dokumenty aplikace Word a ocitli jste se zapleteni do složitostí ukládání obrázkových odrážek? Je to jeden z těch drobných detailů, které mohou mít velký vliv na konečný vzhled vašeho dokumentu. Dnes jsem tu, abych vás provedl procesem zpracování obrázkových odrážek v Aspose.Words pro .NET, zejména se zaměřením na funkci „Neukládat obrázkové odrážky“. Jste připraveni se ponořit? Jdeme na to!
+Ahoj, kolegové vývojáři! Už jste někdy pracovali s dokumenty aplikace Word a ocitli jste se zapleteni do složitostí ukládání obrázkových odrážek? Je to jeden z těch drobných detailů, které mohou mít velký vliv na konečný vzhled vašeho dokumentu. Dnes jsem tu, abych vás provedl procesem zpracování obrázkových odrážek v Aspose.Words pro .NET, zejména se zaměřením na funkci „Neukládat obrázkové odrážky“. Jste připraveni se ponořit? Jdeme!
 
 ## Předpoklady
 
@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Dále načtete dokument aplikace Word, který obsahuje odrážky obrázků. Tento dokument bude upraven tak, aby při uložení odstranil odrážky obrázku.
 
 ```csharp
-// Vložte dokument s odrážkami obrázků
+// Vložte dokument s obrázkovými odrážkami
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 

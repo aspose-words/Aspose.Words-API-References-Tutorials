@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Ρυθμίστε τη γεννήτρια γραμμωτού κώδικα
 
- Ορίστε μια προσαρμοσμένη γεννήτρια γραμμικού κώδικα χρησιμοποιώντας το`FieldOptions` τάξη. Σε αυτό το παράδειγμα, υποθέτουμε ότι έχετε εφαρμόσει α`CustomBarcodeGenerator`τάξη για τη δημιουργία του γραμμικού κώδικα. Αντικαθιστώ`CustomBarcodeGenerator` με την πραγματική λογική δημιουργίας γραμμωτού κώδικα:
+ Ορίστε μια προσαρμοσμένη γεννήτρια γραμμικού κώδικα χρησιμοποιώντας το`FieldOptions` τάξη. Σε αυτό το παράδειγμα, υποθέτουμε ότι έχετε εφαρμόσει α`CustomBarcodeGenerator` τάξη για τη δημιουργία του γραμμικού κώδικα. Αντικαθιστώ`CustomBarcodeGenerator` με την πραγματική λογική δημιουργίας γραμμωτού κώδικα:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

@@ -64,7 +64,7 @@ Shape shape2 = new Shape(doc, ShapeType.TextBox);
 - `ShapeType.TextBox`指定我们创建的形状是文本框。
 - `shape1`和`shape2`是我们的两个文本框。
 
-## 步骤3：访问 TextBox 对象
+## 步骤 3：访问 TextBox 对象
 
 每个`Shape`对象有一个`TextBox`属性，用于访问文本框的属性和方法。我们在这里设置文本框内容和链接。
 
@@ -110,7 +110,7 @@ if (textBox1.IsValidLinkTarget(textBox2))
 doc.Save("LinkedTextBoxes.docx");
 ```
 
-这将以文件名“LinkedTextBoxes.docx”保存文档。现在您可以打开文件来查看链接文本框的运行情况！
+这将以文件名“LinkedTextBoxes.docx”保存文档。现在您可以打开该文件来查看链接文本框的运行情况！
 
 ## 结论
 

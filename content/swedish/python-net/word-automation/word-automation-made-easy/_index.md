@@ -110,9 +110,9 @@ När vi har arbetat klart med dokumentet kan vi spara det i olika format.
 doc.save("output.docx", aw.SaveFormat.DOCX)
 ```
 
-## Avancerade funktioner för ordautomatisering
+## Avancerade ordautomatiseringsfunktioner
 
-Aspose.Words tillhandahåller avancerade funktioner såsom sammanslagning, dokumentkryptering och arbete med bokmärken, hyperlänkar och kommentarer.
+Aspose.Words tillhandahåller avancerade funktioner såsom sammankoppling av brev, dokumentkryptering och arbete med bokmärken, hyperlänkar och kommentarer.
 
 ## Automatisera dokumenthantering
 
@@ -130,8 +130,8 @@ Ja, Aspose.Words är tillgängligt för flera plattformar, inklusive Java och .N
 ### Kan jag konvertera Word-dokument till PDF med Aspose.Words?
 Absolut! Aspose.Words stöder olika format, inklusive DOCX till PDF-konvertering.
 
-### Är Aspose.Words lämpligt för att automatisera storskaliga dokumentbearbetningsuppgifter?
-Ja, Aspose.Words är designat för att hantera stora volymer dokumentbearbetning effektivt.
+### Är Aspose.Words lämpligt för att automatisera storskaliga dokumentbehandlingsuppgifter?
+Ja, Aspose.Words är designat för att hantera stora volymer dokumentbehandling effektivt.
 
 ### Stöder Aspose.Words molnbaserad dokumentmanipulation?
 Ja, Aspose.Words kan användas tillsammans med molnplattformar, vilket gör den idealisk för molnbaserade applikationer.

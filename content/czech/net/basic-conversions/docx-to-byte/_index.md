@@ -32,7 +32,7 @@ using Aspose.Words;
 
 Chcete-li převést soubor Docx na bajtové pole, postupujte takto:
 ```csharp
-// Načtěte soubor Docx z disku nebo streamu
+//Načtěte soubor Docx z disku nebo streamu
 Document doc = new Document("input.docx");
 
 // Uložte dokument do MemoryStream
@@ -61,10 +61,10 @@ Závěrem lze říci, že využití Aspose.Words pro .NET k převodu souborů Do
 ## FAQ
 
 ### Mohu používat Aspose.Words pro .NET bez licence?
-Ne, k používání Aspose.Words for .NET v produkci potřebujete platnou licenci. Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
+ Ne, k používání Aspose.Words for .NET v produkci potřebujete platnou licenci. Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Jak se mohu dozvědět více o dokumentaci Aspose.Words pro .NET?
- Navštivte dokumentaci[zde](https://reference.aspose.com/words/net/) pro komplexní průvodce a reference API.
+ Navštivte dokumentaci[zde](https://reference.aspose.com/words/net/)pro komplexní průvodce a reference API.
 
 ### Je Aspose.Words vhodný pro práci s velkými soubory Docx?
 Ano, Aspose.Words for .NET poskytuje efektivní správu paměti a optimalizaci výkonu pro práci s velkými dokumenty.

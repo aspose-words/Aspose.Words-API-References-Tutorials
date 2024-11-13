@@ -9,7 +9,7 @@ url: /sv/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## Introduktion
 
-Hej där! Om du dyker in i dokumentautomatiseringens värld är du på rätt plats. Idag ska vi utforska hur man infogar ett TC-fält (innehållsförteckning) i ett Word-dokument med Aspose.Words för .NET. Tro mig, i slutet av denna handledning kommer du att känna dig som en trollkarl som trollformar i dina Word-dokument. Redo att börja? Låt oss göra det här!
+Hej där! Om du dyker in i dokumentautomatiseringens värld är du på rätt plats. Idag ska vi utforska hur man infogar ett TC-fält (innehållsförteckning) i ett Word-dokument med Aspose.Words för .NET. Tro mig, i slutet av denna handledning kommer du att känna dig som en trollkarl som trollformar i dina Word-dokument. Redo att komma igång? Låt oss göra det här!
 
 ## Förutsättningar
 
@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Steg 2: Skapa ett nytt dokument
 
- Okej, låt oss börja med att skapa ett nytt Word-dokument. Vi kommer att använda`Document`och`DocumentBuilder` klasser från Aspose.Words för att få saker att rulla på.
+ Okej, låt oss börja med att skapa ett nytt Word-dokument. Vi kommer att använda`Document` och`DocumentBuilder` klasser från Aspose.Words för att få saker att rulla på.
 
 ```csharp
 // Sökvägen till dokumentkatalogen.

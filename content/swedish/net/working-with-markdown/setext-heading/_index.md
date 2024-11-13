@@ -52,19 +52,19 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Steg 3: Lägga till en Rubrik 1-tagg
 
-Låt oss börja med att lägga till en Rubrik 1-tagg i vårt dokument. Det här blir vår huvudtitel.
+Låt oss börja med att lägga till en Rubrik 1-tagg i vårt dokument. Detta blir vår huvudtitel.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
 builder.Writeln("This is an H1 tag");
 ```
 
-## Steg 4: Återställ styckeformat
+## Steg 4: Återställ styckestilar
 
 Efter att ha lagt till vår rubrik måste vi återställa stilarna för att säkerställa att de inte överförs till nästa stycke.
 
 ```csharp
-// Återställ stilar från föregående stycke för att inte kombinera stilar mellan stycken.
+//Återställ stilar från föregående stycke för att inte kombinera stilar mellan stycken.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
@@ -94,7 +94,7 @@ builder.Writeln("This is an H3 tag");
 Precis som tidigare måste vi återställa stilarna för att undvika oönskad formatering.
 
 ```csharp
-// Återställ stilar från föregående stycke för att inte kombinera stilar mellan stycken.
+//Återställ stilar från föregående stycke för att inte kombinera stilar mellan stycken.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
@@ -124,7 +124,7 @@ Och det är det! Du har precis skapat ett Word-dokument med Aspose.Words för .N
 
 ## Slutsats
 
-Där har ni det, gott folk! Med Aspose.Words för .NET är det en promenad i parken att manipulera Word-dokument programmatiskt. Från att ställa in din dokumentkatalog till att lägga till olika rubriker och formatera text, Aspose.Words tillhandahåller ett omfattande och flexibelt API för att passa alla dina dokumentautomatiseringsbehov. Oavsett om du genererar rapporter, skapar mallar eller hanterar sammanslagningar, har det här biblioteket dig täckt. Så fortsätt och prova – du kommer att bli förvånad över vad du kan uppnå!
+Där har ni det, gott folk! Med Aspose.Words för .NET är manipulering av Word-dokument programmatiskt en promenad i parken. Från att ställa in din dokumentkatalog till att lägga till olika rubriker och formatera text, Aspose.Words tillhandahåller ett omfattande och flexibelt API för att passa alla dina dokumentautomatiseringsbehov. Oavsett om du genererar rapporter, skapar mallar eller hanterar sammanslagningar, har det här biblioteket dig täckt. Så fortsätt och prova – du kommer att bli förvånad över vad du kan uppnå!
 
 ## FAQ's
 

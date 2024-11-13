@@ -103,7 +103,7 @@ Nyugodtan kísérletezzen különféle stílusokkal és formázási lehetősége
 Igen, bármilyen betűtípust használhat, amely megfelel az Ön igényeinek. Az olyan betűtípusokat, mint a „Courier New”, jellemzően kódként használják, egyszóközi jellegük miatt.
 
 ### Hogyan változtathatom meg a szövegközi kód szövegének színét?
- A színt a beállításával módosíthatja`Font.Color` a stílus tulajdonsága bármely`System.Drawing.Color`.
+ A színt a beállításával módosíthatja`Font.Color` a stílus tulajdona bármely`System.Drawing.Color`.
 
 ### Alkalmazhatok több stílust ugyanarra a szövegre?
 Az Aspose.Wordsben egyszerre csak egy stílust alkalmazhat. Ha stílusokat kell kombinálnia, fontolja meg egy új stílus létrehozását, amely magában foglalja az összes kívánt formázást.

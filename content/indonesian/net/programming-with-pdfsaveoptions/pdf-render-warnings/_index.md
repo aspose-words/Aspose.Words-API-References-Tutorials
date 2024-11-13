@@ -9,20 +9,20 @@ url: /id/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
 ## Perkenalan
 
-Jika Anda bekerja dengan Aspose.Words untuk .NET, mengelola peringatan render PDF merupakan aspek penting untuk memastikan dokumen Anda diproses dan disimpan dengan benar. Dalam panduan komprehensif ini, kami akan membahas cara menangani peringatan render PDF menggunakan Aspose.Words. Di akhir tutorial ini, Anda akan memiliki pemahaman yang jelas tentang cara mengimplementasikan fitur ini di proyek .NET Anda.
+Jika Anda bekerja dengan Aspose.Words untuk .NET, mengelola peringatan render PDF merupakan aspek penting untuk memastikan dokumen Anda diproses dan disimpan dengan benar. Dalam panduan lengkap ini, kami akan membahas cara menangani peringatan render PDF menggunakan Aspose.Words. Di akhir tutorial ini, Anda akan memiliki pemahaman yang jelas tentang cara mengimplementasikan fitur ini di proyek .NET Anda.
 
 ## Prasyarat
 
-Sebelum mendalami tutorial, pastikan Anda memiliki hal berikut:
+Sebelum memulai tutorial, pastikan Anda memiliki hal berikut:
 
 - Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C#.
 -  Aspose.Words untuk .NET: Unduh dan instal dari[tautan unduhan](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Pengaturan seperti Visual Studio untuk menulis dan menjalankan kode Anda.
--  Contoh Dokumen: Miliki contoh dokumen (misalnya,`WMF with image.docx`) siap untuk pengujian.
+-  Contoh Dokumen: Miliki contoh dokumen (misalnya,`WMF with image.docx`) siap untuk diuji.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk menggunakan Aspose.Words, Anda perlu mengimpor namespace yang diperlukan. Hal ini memungkinkan akses ke berbagai kelas dan metode yang diperlukan untuk pemrosesan dokumen.
+Untuk menggunakan Aspose.Words, Anda perlu mengimpor namespace yang diperlukan. Ini memungkinkan akses ke berbagai kelas dan metode yang diperlukan untuk pemrosesan dokumen.
 
 ```csharp
 using Aspose.Words;
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Muat Dokumen
 
- Muat dokumen Anda ke dalam Aspose.Words`Document` obyek. Langkah ini memungkinkan Anda bekerja dengan dokumen secara terprogram.
+ Muat dokumen Anda ke Aspose.Words`Document` objek. Langkah ini memungkinkan Anda untuk bekerja dengan dokumen secara terprogram.
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with image.docx");
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "WMF with image.docx");
 
 ## Langkah 3: Konfigurasikan Opsi Rendering Metafile
 
-Atur opsi rendering metafile untuk menentukan bagaimana metafile (misalnya file WMF) diproses selama rendering.
+Siapkan opsi rendering metafile untuk menentukan bagaimana metafile (misalnya, file WMF) diproses selama rendering.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -62,7 +62,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 
 ## Langkah 4: Konfigurasikan Opsi Penyimpanan PDF
 
-Siapkan opsi penyimpanan PDF, dengan menggabungkan opsi rendering metafile. Hal ini memastikan bahwa perilaku rendering yang ditentukan diterapkan saat menyimpan dokumen sebagai PDF.
+Siapkan opsi penyimpanan PDF, yang menyertakan opsi perenderan metafile. Ini memastikan bahwa perilaku perenderan yang ditentukan diterapkan saat menyimpan dokumen sebagai PDF.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -71,7 +71,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-## Langkah 5: Terapkan Callback Peringatan
+## Langkah 5: Terapkan Panggilan Balik Peringatan
 
  Buat kelas yang mengimplementasikan`IWarningCallback` antarmuka untuk menangani peringatan apa pun yang dihasilkan selama pemrosesan dokumen.
 
@@ -79,8 +79,8 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 public class HandleDocumentWarnings : IWarningCallback
 {
     /// <ringkasan>
-    //Metode ini dipanggil setiap kali ada potensi masalah selama pemrosesan dokumen.
-    ///</ringkasan>
+    //Metode ini dipanggil setiap kali ada masalah potensial selama pemrosesan dokumen.
+    /// </ringkasan>
     public void Warning(WarningInfo info)
     {
         if (info.WarningType == WarningType.MinorFormattingLoss)
@@ -96,19 +96,19 @@ public class HandleDocumentWarnings : IWarningCallback
 
 ## Langkah 6: Tetapkan Panggilan Balik Peringatan dan Simpan Dokumen
 
-Tetapkan panggilan balik peringatan ke dokumen dan simpan sebagai PDF. Setiap peringatan yang terjadi selama operasi penyimpanan akan dikumpulkan dan ditangani oleh callback.
+Tetapkan panggilan balik peringatan ke dokumen dan simpan sebagai PDF. Setiap peringatan yang muncul selama operasi penyimpanan akan dikumpulkan dan ditangani oleh panggilan balik.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 
-// Simpan dokumennya
+// Simpan dokumen
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfRenderWarnings.pdf", saveOptions);
 ```
 
-## Langkah 7: Tampilkan Peringatan yang Dikumpulkan
+## Langkah 7: Menampilkan Peringatan yang Dikumpulkan
 
-Terakhir, tampilkan peringatan apa pun yang dikumpulkan selama operasi penyimpanan. Ini membantu dalam mengidentifikasi dan mengatasi masalah apa pun yang terjadi.
+Terakhir, tampilkan peringatan apa pun yang terkumpul selama operasi penyimpanan. Ini membantu dalam mengidentifikasi dan mengatasi masalah apa pun yang terjadi.
 
 ```csharp
 // Tampilkan peringatan
@@ -120,17 +120,17 @@ foreach (WarningInfo warningInfo in callback.mWarnings)
 
 ## Kesimpulan
 
-Dengan mengikuti langkah-langkah ini, Anda dapat secara efektif menangani peringatan render PDF di Aspose.Words untuk .NET. Hal ini memastikan bahwa setiap potensi masalah selama pemrosesan dokumen dapat ditangkap dan diatasi, sehingga menghasilkan rendering dokumen yang lebih andal dan akurat.
+Dengan mengikuti langkah-langkah ini, Anda dapat menangani peringatan render PDF secara efektif di Aspose.Words untuk .NET. Ini memastikan bahwa setiap masalah potensial selama pemrosesan dokumen tertangkap dan ditangani, sehingga menghasilkan rendering dokumen yang lebih andal dan akurat.
 
-## FAQ
+## Tanya Jawab Umum
 
 ### Q1: Dapatkah saya menangani jenis peringatan lain dengan metode ini?
 
- Ya, itu`IWarningCallback` antarmuka dapat menangani berbagai jenis peringatan, tidak hanya yang terkait dengan rendering PDF.
+ Ya, itu`IWarningCallback` Antarmuka dapat menangani berbagai jenis peringatan, tidak hanya yang terkait dengan rendering PDF.
 
 ### Q2: Di mana saya dapat mengunduh uji coba gratis Aspose.Words untuk .NET?
 
- Anda dapat mengunduh uji coba gratis dari[Asumsikan halaman uji coba gratis](https://releases.aspose.com/).
+ Anda dapat mengunduh uji coba gratis dari[Halaman uji coba gratis Aspose](https://releases.aspose.com/).
 
 ### Q3: Apa itu MetafileRenderingOptions?
 
@@ -142,4 +142,4 @@ MetafileRenderingOptions adalah pengaturan yang menentukan bagaimana metafile (s
 
 ### Q5: Apakah mungkin untuk mendapatkan lisensi sementara untuk Aspose.Words?
 
- Ya, Anda bisa mendapatkan lisensi sementara dari[halaman lisensi sementara](https://purchase.aspose.com/temporary-license/).
+ Ya, Anda dapat memperoleh lisensi sementara dari[halaman lisensi sementara](https://purchase.aspose.com/temporary-license/).

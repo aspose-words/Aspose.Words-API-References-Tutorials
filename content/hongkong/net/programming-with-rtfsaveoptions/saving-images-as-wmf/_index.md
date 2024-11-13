@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOption
 
 ## 結論
 
-現在你就得到它了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 在 Word 文件中將圖片儲存為 WMF。這對於維護高品質影像和確保不同平台之間的相容性非常有用。嘗試一下，看看它會帶來什麼不同！
+現在你就擁有了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 在 Word 文件中將圖片儲存為 WMF。這對於維護高品質影像和確保不同平台之間的相容性非常有用。嘗試一下，看看它會帶來什麼不同！
 
 ## 常見問題解答
 

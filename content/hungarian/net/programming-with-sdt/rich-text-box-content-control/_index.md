@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Hozzon létre egy új dokumentumot
 
- Hozzon létre egy újat`Document` objektumot, amely a Word-dokumentum alapjául fog szolgálni.
+Hozzon létre egy újat`Document` objektumot, amely a Word-dokumentum alapjául fog szolgálni.
 
 ```csharp
 Document doc = new Document();

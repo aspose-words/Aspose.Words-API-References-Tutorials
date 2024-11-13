@@ -106,7 +106,7 @@ Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功移動了追蹤文件中的節點。這個功能強大的庫可以輕鬆地以程式設計方式操作 Word 文件。無論您是要建立、編輯還是追蹤更改，Aspose.Words 都能滿足您的需求。所以，繼續嘗試吧。快樂編碼！
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功移動了追蹤文件中的節點。這個功能強大的庫可以輕鬆地以程式設計方式操作 Word 文件。無論您是要建立、編輯還是追蹤更改，Aspose.Words 都能滿足您的需求。所以，繼續嘗試吧。快樂編碼！
 
 ## 常見問題解答
 

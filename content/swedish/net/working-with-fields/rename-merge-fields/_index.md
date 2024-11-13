@@ -47,7 +47,7 @@ builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 ```
 
- Här skapar vi ett nytt dokument och använder`DocumentBuilder` klass för att infoga två sammanslagningsfält:`MyMergeField1`och`MyMergeField2`.
+ Här skapar vi ett nytt dokument och använder`DocumentBuilder` klass för att infoga två sammanslagningsfält:`MyMergeField1` och`MyMergeField2`.
 
 ## Steg 2: Iterera genom fälten och byt namn på dem
 

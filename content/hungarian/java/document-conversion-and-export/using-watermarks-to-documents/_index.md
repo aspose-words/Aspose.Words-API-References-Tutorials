@@ -27,7 +27,7 @@ Most, hogy a könyvtárat beállítottuk, folytassuk a vízjelek hozzáadásáva
 A szöveges vízjelek gyakori választások, ha szöveges információkat kívánnak hozzáadni a dokumentumokhoz. A következőképpen adhat hozzá szöveges vízjelet az Aspose.Words for Java használatával:
 
 ```java
-//Hozzon létre egy dokumentumpéldányt
+// Hozzon létre egy dokumentumpéldányt
 Document doc = new Document("Document.docx");
 
 // Adja meg a TextWatermark Options beállításait
@@ -38,7 +38,7 @@ options.setColor(Color.BLACK);
 options.setLayout(WatermarkLayout.HORIZONTAL);
 options.setSemitransparent(false);
 
-// Állítsa be a vízjel szövegét és beállításait
+//Állítsa be a vízjel szövegét és beállításait
 doc.getWatermark().setText("Test", options);
 
 // Mentse el a dokumentumot vízjellel
@@ -50,7 +50,7 @@ doc.save("DocumentWithWatermark.docx");
 A szöveges vízjelek mellett képes vízjeleket is hozzáadni a dokumentumokhoz. A következőképpen adhat hozzá vízjelet a képhez:
 
 ```java
-//Hozzon létre egy dokumentumpéldányt
+// Hozzon létre egy dokumentumpéldányt
 Document doc = new Document("Document.docx");
 
 // Töltse be a képet a vízjelhez
@@ -80,7 +80,7 @@ Testreszabhatja a vízjeleket megjelenésük és helyzetük módosításával. S
 A vízjelek dokumentumból való eltávolításához a következő kódot használhatja:
 
 ```java
-//Hozzon létre egy dokumentumpéldányt
+// Hozzon létre egy dokumentumpéldányt
 Document doc = new Document("DocumentWithWatermark.docx");
 
 // Távolítsa el a vízjelet

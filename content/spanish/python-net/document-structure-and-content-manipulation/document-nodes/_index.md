@@ -1,22 +1,22 @@
 ---
-title: Comprender y navegar por los nodos de documentos
-linktitle: Comprender y navegar por los nodos de documentos
-second_title: API de gestión de documentos Aspose.Words Python
-description: Aprenda a manipular documentos de Word usando Aspose.Words para Python. Esta guía paso a paso cubre la carga, el formato, las tablas, las imágenes y más. ¡Mejore sus habilidades de procesamiento de documentos hoy!
+title: Comprensión y navegación por los nodos de documentos
+linktitle: Comprensión y navegación por los nodos de documentos
+second_title: API de gestión de documentos de Python de Aspose.Words
+description: Aprenda a manipular documentos de Word con Aspose.Words para Python. Esta guía paso a paso cubre la carga, el formato, las tablas, las imágenes y más. ¡Mejore sus habilidades de procesamiento de documentos hoy mismo!
 type: docs
 weight: 20
 url: /es/python-net/document-structure-and-content-manipulation/document-nodes/
 ---
 
-El procesamiento de documentos es un aspecto fundamental de muchas aplicaciones y Aspose.Words para Python proporciona una API potente para manipular documentos de Word mediante programación. Este tutorial lo guiará a través del proceso de comprensión y navegación por los nodos de documentos usando Aspose.Words para Python. Al final de esta guía, podrá aprovechar las capacidades de esta API para mejorar sus tareas de manipulación de documentos.
+El procesamiento de documentos es un aspecto fundamental de muchas aplicaciones, y Aspose.Words para Python proporciona una potente API para manipular documentos de Word mediante programación. Este tutorial lo guiará a través del proceso de comprensión y navegación de nodos de documentos mediante Aspose.Words para Python. Al final de esta guía, podrá aprovechar las capacidades de esta API para mejorar sus tareas de manipulación de documentos.
 
 ## Introducción a Aspose.Words para Python
 
-Aspose.Words para Python es una biblioteca rica en funciones que le permite crear, modificar y convertir documentos de Word usando Python. Ya sea que esté generando informes, automatizando flujos de trabajo de documentos o realizando conversiones de documentos, Aspose.Words simplifica las tareas complejas.
+Aspose.Words para Python es una biblioteca repleta de funciones que le permite crear, modificar y convertir documentos de Word con Python. Ya sea que esté generando informes, automatizando flujos de trabajo de documentos o realizando conversiones de documentos, Aspose.Words simplifica tareas complejas.
 
 ## Cargar y guardar documentos
 
-Para comenzar, necesitarás instalar la biblioteca Aspose.Words e importarla a tu script Python. Puede cargar documentos de Word existentes o crear otros nuevos desde cero. Guardar su documento modificado es igual de sencillo.
+Para comenzar, deberá instalar la biblioteca Aspose.Words e importarla en su secuencia de comandos de Python. Puede cargar documentos de Word existentes o crear otros nuevos desde cero. Guardar el documento modificado es igual de sencillo.
 
 ```python
 import aspose.words as aw
@@ -41,9 +41,9 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     print(paragraph.to_string())
 ```
 
-## Trabajar con párrafos y ejecuciones
+## Trabajar con párrafos y líneas
 
-Los párrafos contienen corridas, que son porciones de texto con el mismo formato. Puede agregar nuevos párrafos, modificar los existentes y aplicar formato.
+Los párrafos contienen fragmentos, que son porciones de texto con el mismo formato. Puedes agregar párrafos nuevos, modificar los existentes y aplicar formato.
 
 ```python
 # Add a new paragraph
@@ -56,7 +56,7 @@ run.text = "Modified text"
 run.font.size = 14
 ```
 
-## Modificar formato y estilos
+## Modificación de formatos y estilos
 
 Aspose.Words le permite ajustar el formato y aplicar estilos a varios elementos del documento.
 
@@ -71,7 +71,7 @@ paragraph.paragraph_format.alignment = aw.ParagraphAlignment.CENTER
 
 ## Manipulación de tablas y listas
 
-Trabajar con tablas y listas es un requisito común. Puede agregar tablas, filas y celdas, así como personalizar sus propiedades.
+Trabajar con tablas y listas es un requisito habitual. Puede agregar tablas, filas y celdas, así como personalizar sus propiedades.
 
 ```python
 # Add a new table
@@ -84,9 +84,9 @@ cell = row.first_cell
 cell.paragraphs[0].runs[0].text = "Cell text"
 ```
 
-## Insertar y modificar imágenes
+## Inserción y modificación de imágenes
 
-Incorporar imágenes en sus documentos es fácil con Aspose.Words.
+Incorporar imágenes a sus documentos es fácil con Aspose.Words.
 
 ```python
 # Add an image
@@ -95,7 +95,7 @@ shape.width = 300
 shape.height = 200
 ```
 
-## Agregar hipervínculos y marcadores
+## Cómo agregar hipervínculos y marcadores
 
 Los hipervínculos y marcadores mejoran la naturaleza interactiva de sus documentos.
 
@@ -117,9 +117,9 @@ section = doc.sections[0]
 section.page_setup.orientation = aw.Orientation.LANDSCAPE
 ```
 
-## Manejo de encabezados y pies de página
+## Cómo manejar encabezados y pies de página
 
-Los encabezados y pies de página son esenciales para agregar contenido coherente a cada página.
+Los encabezados y pies de página son esenciales para agregar contenido consistente a cada página.
 
 ```python
 # Access header and footer
@@ -169,9 +169,9 @@ merged_doc.append_document(doc2)
 split_docs = aw.Document.split_by_page(doc, 3)
 ```
 
-## Proteger y cifrar documentos
+## Protección y cifrado de documentos
 
-Aspose.Words te permite aplicar varios mecanismos de protección a tus documentos.
+Aspose.Words le permite aplicar varios mecanismos de protección a sus documentos.
 
 ```python
 # Protect document from editing
@@ -183,31 +183,31 @@ doc.encrypt(aw.EncryptionType.STANDARD, "password")
 
 ## Conclusión
 
-En este tutorial, ha aprendido los conceptos básicos del uso de Aspose.Words para Python para manipular y mejorar documentos de Word mediante programación. Desde cargar y guardar documentos hasta navegar por el árbol de documentos, trabajar con párrafos, formatos, tablas y más, ahora tiene una base sólida para la manipulación de documentos.
+En este tutorial, aprendió los conceptos básicos del uso de Aspose.Words para Python para manipular y mejorar documentos de Word mediante programación. Desde cargar y guardar documentos hasta navegar por el árbol de documentos, trabajar con párrafos, formato, tablas y más, ahora tiene una base sólida para la manipulación de documentos.
 
 ## Preguntas frecuentes
 
 ### ¿Cómo instalo Aspose.Words para Python?
 
-Para instalar Aspose.Words para Python, use el siguiente comando pip:
+Para instalar Aspose.Words para Python, utilice el siguiente comando pip:
 ```
 pip install aspose-words
 ```
 
 ### ¿Puedo convertir un documento de Word a PDF usando Aspose.Words para Python?
 
- Sí, puedes convertir fácilmente un documento de Word a PDF usando el`save` método con la extensión de archivo adecuada (por ejemplo, "salida.pdf").
+ Sí, puedes convertir fácilmente un documento de Word a PDF usando el`save` método con la extensión de archivo adecuada (por ejemplo, "output.pdf").
 
 ### ¿Aspose.Words para Python es compatible con diferentes versiones de Microsoft Word?
 
 Sí, Aspose.Words garantiza la compatibilidad con varias versiones de Microsoft Word, lo que le permite trabajar sin problemas en diferentes entornos.
 
-### ¿Puedo extraer texto de específico?
+### ¿Puedo extraer texto de un lugar específico?
 
- secciones de un documento?
+ ¿Secciones de un documento?
 
-Por supuesto, puede extraer texto de secciones, párrafos o incluso ejecuciones individuales específicas utilizando la API Aspose.Words.
+Por supuesto, puedes extraer texto de secciones específicas, párrafos o incluso ejecuciones individuales utilizando la API de Aspose.Words.
 
 ### ¿Dónde puedo acceder a más recursos y documentación?
 
- Para obtener documentación completa y ejemplos, visite el[Aspose.Words para referencias de la API de Python](https://reference.aspose.com/words/python-net/).
+ Para obtener documentación completa y ejemplos, visite el sitio[Referencias de API de Aspose.Words para Python](https://reference.aspose.com/words/python-net/).

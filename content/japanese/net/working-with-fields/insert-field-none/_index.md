@@ -16,7 +16,7 @@ url: /ja/net/working-with-fields/insert-field-none/
 Aspose.Words for .NET のエキサイティングな世界に飛び込む前に、準備しておく必要があるものがいくつかあります。
 
 1.  Visual Studio: お使いのマシンにVisual Studioがインストールされていることを確認してください。まだインストールされていない場合は、こちらからダウンロードできます。[ここ](https://visualstudio.microsoft.com/downloads/).
-2.  Aspose.Words for .NET: Aspose.Wordsライブラリが必要です。ダウンロードは以下から行えます。[ダウンロードページ](https://releases.aspose.com/words/net/).
+2.  Aspose.Words for .NET: Aspose.Wordsライブラリが必要です。[ダウンロードページ](https://releases.aspose.com/words/net/).
 3. .NET Framework: プロジェクトが互換性のある .NET Framework バージョンを対象としていることを確認します。Aspose.Words は、.NET Framework 2.0 以上、.NET Core、および .NET 5.0 以降をサポートしています。
 4. 基本的な C# の知識: C# プログラミングの基本的な理解があれば、例を理解するのに役立ちます。
 
@@ -41,7 +41,7 @@ using Aspose.Words.Fields;
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメント フォルダーへの実際のパスを入力します。ここに新しいドキュメントが保存されます。
+交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメント フォルダへの実際のパスを入力します。ここに新しいドキュメントが保存されます。
 
 ## ステップ2: ドキュメントとDocumentBuilderを作成する
 
@@ -64,7 +64,7 @@ FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, fals
 
 ## ステップ4: ドキュメントを保存する
 
-最後に、ドキュメントを保存しましょう。ここで、すべての努力が、開いて確認できる実体のあるファイルにまとめられます。
+最後に、ドキュメントを保存しましょう。ここで、あなたの努力の成果が、開いて確認できる実体のあるファイルにまとめられます。
 
 ```csharp
 doc.Save(dataDir + "InsertionFieldNone.docx");

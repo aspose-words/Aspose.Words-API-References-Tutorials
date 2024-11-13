@@ -1,16 +1,16 @@
 ---
 title: Word에서 문서 병합 및 비교
 linktitle: Word에서 문서 병합 및 비교
-second_title: Aspose.Words Python 문서 관리 API
-description: Aspose.Words for Python을 사용하여 Word 문서를 쉽게 병합하고 비교할 수 있습니다. 문서를 조작하고, 차이점을 강조하고, 작업을 자동화하는 방법을 알아보세요.
+second_title: Aspose.Words 파이썬 문서 관리 API
+description: Aspose.Words for Python을 사용하여 Word 문서를 손쉽게 병합하고 비교하세요. 문서를 조작하고, 차이점을 강조하고, 작업을 자동화하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/python-net/document-combining-and-comparison/merge-compare-documents/
 ---
 
-## Python용 Aspose.Words 소개
+## Python을 위한 Aspose.Words 소개
 
-Aspose.Words는 프로그래밍 방식으로 Word 문서를 생성, 편집 및 조작할 수 있는 다목적 라이브러리입니다. 문서 병합, 비교 등 다양한 기능을 제공하여 문서 관리 작업을 대폭 단순화할 수 있습니다.
+Aspose.Words는 Word 문서를 프로그래밍 방식으로 만들고, 편집하고, 조작할 수 있는 다재다능한 라이브러리입니다. 문서 병합 및 비교를 포함한 광범위한 기능을 제공하여 문서 관리 작업을 크게 간소화할 수 있습니다.
 
 ## Aspose.Words 설치 및 설정
 
@@ -22,15 +22,15 @@ pip install aspose-words
 
 설치가 완료되면 라이브러리에서 필요한 클래스를 가져와서 문서 작업을 시작할 수 있습니다.
 
-## 필수 라이브러리 가져오기
+## 필요한 라이브러리 가져오기
 
-Python 스크립트의 Aspose.Words에서 필요한 클래스를 가져옵니다.
+Python 스크립트에서 Aspose.Words에서 필요한 클래스를 가져옵니다.
 
 ```python
 from aspose_words import Document
 ```
 
-## 문서 로드
+## 문서 로딩
 
 병합하려는 문서를 로드합니다.
 
@@ -55,9 +55,9 @@ doc1.append_document(doc2, DocumentImportFormatMode.KEEP_SOURCE_FORMATTING)
 doc1.save("merged_document.docx")
 ```
 
-## 원본 문서 로드
+## 소스 문서 로딩
 
-비교하고 싶은 문서를 불러오세요:
+비교하려는 문서를 로드하세요:
 
 ```python
 source_doc = Document("source_document.docx")
@@ -66,7 +66,7 @@ modified_doc = Document("modified_document.docx")
 
 ## 문서 비교
 
-원본 문서를 수정된 문서와 비교합니다.
+원본 문서와 수정된 문서를 비교하세요:
 
 ```python
 comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
@@ -74,7 +74,7 @@ comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
 
 ## 차이점 강조
 
-문서 간의 차이점을 강조하세요.
+문서 간 차이점을 강조하세요:
 
 ```python
 comparison.highlight_changes()
@@ -90,29 +90,29 @@ comparison.save("comparison_result.docx")
 
 ## 결론
 
-이 튜토리얼에서는 Python용 Aspose.Words를 활용하여 Word 문서를 원활하게 병합하고 비교하는 방법을 살펴보았습니다. 이 강력한 라이브러리는 효율적인 문서 관리, 협업 및 자동화를 위한 기회를 열어줍니다.
+이 튜토리얼에서는 Aspose.Words for Python을 사용하여 Word 문서를 원활하게 병합하고 비교하는 방법을 살펴보았습니다. 이 강력한 라이브러리는 효율적인 문서 관리, 협업 및 자동화의 기회를 열어줍니다.
 
-## FAQ
+## 자주 묻는 질문
 
 ### Python용 Aspose.Words를 어떻게 설치하나요?
 
-다음 pip 명령을 사용하여 Python용 Aspose.Words를 설치할 수 있습니다:
+다음 pip 명령을 사용하여 Python용 Aspose.Words를 설치할 수 있습니다.
 ```
 pip install aspose-words
 ```
 
-### 서식이 복잡한 문서를 비교할 수 있나요?
+### 복잡한 서식의 문서를 비교할 수 있나요?
 
-예, Aspose.Words는 문서 비교 중에 복잡한 서식과 스타일을 처리하여 정확한 결과를 보장합니다.
+네, Aspose.Words는 문서 비교 중에 복잡한 서식과 스타일을 처리하여 정확한 결과를 보장합니다.
 
-### Aspose.Words는 자동화된 문서 생성에 적합합니까?
+### Aspose.Words는 자동 문서 생성에 적합합니까?
 
-전적으로! Aspose.Words는 자동화된 문서 생성 및 조작을 가능하게 하므로 다양한 애플리케이션에 탁월한 선택입니다.
+물론입니다! Aspose.Words는 자동화된 문서 생성 및 조작을 가능하게 하여 다양한 애플리케이션에 탁월한 선택이 됩니다.
 
 ### 이 라이브러리를 사용하여 두 개 이상의 문서를 병합할 수 있나요?
 
-예, 다음을 사용하여 원하는 만큼의 문서를 병합할 수 있습니다.`append_document` 방법은 튜토리얼에 나와 있습니다.
+예, 다음을 사용하여 아무리 많은 문서라도 병합할 수 있습니다.`append_document` 튜토리얼에서 보여준 것과 같은 방법입니다.
 
-### 도서관과 자료는 어디서 이용할 수 있나요?
+### 도서관과 자료는 어디에서 이용할 수 있나요?
 
- 도서관에 액세스하고 다음에서 자세히 알아보세요.[여기](https://releases.aspose.com/words/python/).
+ 도서관에 접속하여 자세한 정보를 알아보세요.[여기](https://releases.aspose.com/words/python/).

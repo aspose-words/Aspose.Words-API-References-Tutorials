@@ -16,7 +16,7 @@ Sziasztok fejlesztő kollégák! 👋 Volt már olyan feladatod, hogy olyan Word
 
 Mielőtt belevágnánk a kódba, nézzük meg, mire lesz szüksége:
 
-1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Egy .NET-kompatibilis IDE, mint például a Visual Studio, meg fogja tenni a trükköt.
 3. Alapvető C# ismerete: A C# szintaxis megértése segít a gördülékeny követésben.
 4. Word-dokumentum minta: Bár a semmiből fogunk létrehozni egyet, egy minta hasznos lehet tesztelés céljából.
@@ -111,7 +111,7 @@ doc.Save("YourPath/YourDocument.docx");
 
 ## GYIK
 
-### Mi az a szakasz egy Word dokumentumban?
+### Mi az a szakasz a Word-dokumentumban?
 
 Word-dokumentum egy szakasza olyan szegmens, amelynek saját elrendezése és formázása lehet, például fejlécek, láblécek és oszlopok. Segít a tartalom különálló részekre való rendszerezésében.
 

@@ -101,7 +101,7 @@ Igen, a jelszó beállítása nem kötelező. Közvetlenül eltávolíthatja a c
 
 ### Mi történik, ha a dokumentum már rendelkezik más típusú védelemmel?
 
- A`doc.Protect(ProtectionType.NoProtection)` módszer biztosítja, hogy minden típusú védelem eltávolításra kerüljön a dokumentumról.
+A`doc.Protect(ProtectionType.NoProtection)` módszer biztosítja, hogy minden típusú védelem eltávolításra kerüljön a dokumentumról.
 
 ### Van mód annak megállapítására, hogy egy dokumentum csak olvasható-e a korlátozás megszüntetése előtt?
 

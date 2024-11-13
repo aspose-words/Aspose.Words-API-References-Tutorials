@@ -23,7 +23,7 @@ url: /hi/net/clone-and-combine-documents/insert-document-at-replace/
 
 ## नामस्थान आयात करें
 
-सबसे पहले, हमें Aspose.Words के साथ काम करने के लिए आवश्यक नामस्थानों को आयात करना होगा। यह किसी प्रोजेक्ट को शुरू करने से पहले अपने सभी उपकरण इकट्ठा करने जैसा है। अपनी C# फ़ाइल के शीर्ष पर इन using निर्देशों को जोड़ें:
+सबसे पहले, हमें Aspose.Words के साथ काम करने के लिए आवश्यक नेमस्पेस आयात करने की आवश्यकता है। यह किसी प्रोजेक्ट को शुरू करने से पहले अपने सभी उपकरण इकट्ठा करने जैसा है। अपनी C# फ़ाइल के शीर्ष पर इन using निर्देशों को जोड़ें:
 
 ```csharp
 using System;
@@ -57,7 +57,7 @@ Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
 
 ## चरण 3: खोजें और बदलें विकल्प सेट करें
 
-हम अपने दस्तावेज़ को कहाँ सम्मिलित करना चाहते हैं, यह जानने के लिए हम ढूँढ़ें और बदलें कार्यक्षमता का उपयोग करते हैं। यह हमारे नए जोड़े गए दस्तावेज़ के लिए सटीक स्थान खोजने के लिए मानचित्र का उपयोग करने जैसा है।
+हम अपने दस्तावेज़ को जिस विशिष्ट स्थान पर सम्मिलित करना चाहते हैं, उसे खोजने के लिए हम ढूँढ़ें और बदलें कार्यक्षमता का उपयोग करते हैं। यह हमारे नए जोड़े गए दस्तावेज़ के लिए सटीक स्थान खोजने के लिए मानचित्र का उपयोग करने जैसा है।
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions
@@ -111,36 +111,40 @@ private class InsertDocumentAtReplaceHandler : IReplacingCallback
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
 {
-	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
-	{
-		CompositeNode destinationParent = insertionDestination.ParentNode;
+    // जाँच करें कि प्रविष्टि गंतव्य पैराग्राफ़ है या तालिका
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
 
-		NodeImporter importer =
-			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+        // स्रोत दस्तावेज़ से नोड्स आयात करने के लिए NodeImporter बनाएँ
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
 
-		// अनुभाग के मुख्य भाग में सभी ब्लॉक-स्तरीय नोड्स के माध्यम से लूप करें,
-		// फिर प्रत्येक नोड को क्लोन करें और डालें जो किसी अनुभाग का अंतिम खाली पैराग्राफ नहीं है।
-		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
-		foreach (Node srcNode in srcSection.Body)
-		{
-			if (srcNode.NodeType == NodeType.Paragraph)
-			{
-				Paragraph para = (Paragraph)srcNode;
-				if (para.IsEndOfSection && !para.HasChildNodes)
-					continue;
-			}
+        // स्रोत दस्तावेज़ के अनुभागों में सभी ब्लॉक-स्तरीय नोड्स के माध्यम से लूप करें
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        {
+            foreach (Node srcNode in srcSection.Body)
+            {
+                // किसी अनुभाग के अंतिम खाली पैराग्राफ को छोड़ दें
+                if (srcNode.NodeType == NodeType.Paragraph)
+                {
+                    Paragraph para = (Paragraph)srcNode;
+                    if (para.IsEndOfSection && !para.HasChildNodes)
+                        continue;
+                }
 
-			Node newNode = importer.ImportNode(srcNode, true);
-
-			destinationParent.InsertAfter(newNode, insertionDestination);
-			insertionDestination = newNode;
-		}
-	}
-	else
-	{
-		throw new ArgumentException("The destination node should be either a paragraph or table.");
-	}
+                // नोड को गंतव्य में आयात करें और डालें
+                Node newNode = importer.ImportNode(srcNode, true);
+                destinationParent.InsertAfter(newNode, insertionDestination);
+                insertionDestination = newNode;
+            }
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
 }
+
 ```
 
 यह विधि सम्मिलित किए जाने वाले दस्तावेज़ से नोड्स को आयात करने तथा उन्हें मुख्य दस्तावेज़ में सही स्थान पर रखने का कार्य करती है।

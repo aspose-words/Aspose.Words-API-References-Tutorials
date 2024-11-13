@@ -1,28 +1,28 @@
 ---
-title: Sertifika Sahibini Kullanarak PDF'ye Dijital İmza Ekleme
-linktitle: Sertifika Sahibini Kullanarak PDF'ye Dijital İmza Ekleme
+title: Sertifika Sahibini kullanarak PDF'ye Dijital İmza Ekleme
+linktitle: Sertifika Sahibini kullanarak PDF'ye Dijital İmza Ekleme
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak PDF dosyalarınızı dijital imzayla koruyun. PDF'lerinize zahmetsizce dijital imza eklemek için bu adım adım kılavuzu izleyin.
+description: PDF dosyalarınızı Aspose.Words for .NET kullanarak dijital imzayla güvenceye alın. PDF'lerinize zahmetsizce dijital imza eklemek için bu adım adım kılavuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
 ## giriiş
 
-PDF belgelerinizi dijital imzayla nasıl güvence altına alacağınızı hiç merak ettiniz mi? Peki, doğru yerdesiniz! Dijital imzalar, elle atılan imzaların modern eşdeğeridir ve dijital belgelerin orijinalliğini ve bütünlüğünü doğrulamanın bir yolunu sunar. Bu eğitimde size Aspose.Words for .NET kullanarak bir PDF'ye nasıl dijital imza ekleyeceğinizi göstereceğiz. Ortamınızın kurulumundan kodun adım adım yürütülmesine kadar her şeyi ele alacağız. Bu kılavuzun sonunda güvenli ve güvenilir, dijital olarak imzalanmış bir PDF'ye sahip olacaksınız.
+PDF belgelerinizi dijital imzayla nasıl güvence altına alacağınızı hiç merak ettiniz mi? Doğru yerdesiniz! Dijital imzalar, dijital belgelerin gerçekliğini ve bütünlüğünü doğrulamanın bir yolunu sunan, el yazısı imzaların modern eşdeğeridir. Bu eğitimde, .NET için Aspose.Words kullanarak bir PDF'ye dijital imza eklemeyi göstereceğiz. Ortamınızı kurmaktan kodu adım adım yürütmeye kadar her şeyi ele alacağız. Bu kılavuzun sonunda, güvenli ve güvenilir, dijital olarak imzalanmış bir PDF'niz olacak.
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce ihtiyacınız olacak birkaç şey var:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olduğundan emin olun. adresinden indirebilirsiniz.[Web sitesi](https://releases.aspose.com/words/net/).
-2. Sertifika Dosyası: PDF'yi imzalamak için bir .pfx sertifika dosyasına ihtiyacınız olacaktır. Eğer sertifikanız yoksa test amacıyla kendinden imzalı bir sertifika oluşturabilirsiniz.
-3. Visual Studio: Bu eğitimde, geliştirme ortamınız olarak Visual Studio'yu kullandığınız varsayılmaktadır.
-4. Temel C# Bilgisi: C# ve .NET programlamaya aşinalık esastır.
+1.  Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olduğundan emin olun. Bunu şuradan indirebilirsiniz:[Aspose web sitesi](https://releases.aspose.com/words/net/).
+2. Bir Sertifika Dosyası: PDF'yi imzalamak için bir .pfx sertifika dosyasına ihtiyacınız olacak. Eğer yoksa, test amaçlı kendi kendine imzalanmış bir sertifika oluşturabilirsiniz.
+3. Visual Studio: Bu eğitimde geliştirme ortamınız olarak Visual Studio kullandığınız varsayılmaktadır.
+4. Temel C# Bilgisi: C# ve .NET programlamaya aşinalık şarttır.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktaralım. Bunlar, belge işleme ve dijital imzalar için gereken sınıflara ve yöntemlere erişim için gereklidir.
+Öncelikle gerekli ad alanlarını içe aktaralım. Bunlar, belge düzenleme ve dijital imzalar için gerekli sınıflara ve yöntemlere erişim için olmazsa olmazdır.
 
 ```csharp
 using Aspose.Words;
@@ -30,29 +30,29 @@ using Aspose.Words.Saving;
 using System;
 ```
 
-Süreci basit, yönetilebilir adımlara ayıralım.
+Süreci basit ve yönetilebilir adımlara bölelim.
 
-## 1. Adım: Projenizi Kurun
+## Adım 1: Projenizi Kurun
 
-Visual Studio'da yeni bir C# projesi oluşturun. Aspose.Words for .NET'e bir referans ekleyin. Bunu NuGet Paket Yöneticisi aracılığıyla "Aspose.Words" ifadesini arayıp yükleyerek yapabilirsiniz.
+Visual Studio'da yeni bir C# projesi oluşturun. .NET için Aspose.Words'e bir referans ekleyin. Bunu "Aspose.Words"ü arayıp yükleyerek NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz.
 
-## 2. Adım: Belge Yükleme veya Oluşturma
+## Adım 2: Bir Belge Yükleyin veya Oluşturun
 
-İmzalamak için bir belgeye ihtiyacınız olacak. Mevcut bir belgeyi yükleyebilir veya yeni bir tane oluşturabilirsiniz. Bu eğitim için yeni bir belge oluşturup bazı örnek metinler ekleyeceğiz.
+İmzalamak için bir belgeye ihtiyacınız olacak. Mevcut bir belgeyi yükleyebilir veya yeni bir tane oluşturabilirsiniz. Bu eğitim için yeni bir belge oluşturacağız ve bazı örnek metinler ekleyeceğiz.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Belgeye bir miktar metin ekleyin.
+// Belgeye biraz metin ekleyin.
 builder.Writeln("Test Signed PDF.");
 ```
 
-## 3. Adım: Dijital İmza Ayrıntılarını Belirleyin
+## Adım 3: Dijital İmza Ayrıntılarını Belirleyin
 
-Şimdi dijital imza ayrıntılarını ayarlamanın zamanı geldi. .pfx sertifika dosyanızın yolunu, imzalama nedenini, konumunu ve imza tarihini belirtmeniz gerekir.
+Şimdi, dijital imza ayrıntılarını ayarlama zamanı. .pfx sertifika dosyanızın yolunu, imzalama nedenini, konumu ve imzalama tarihini belirtmeniz gerekecektir.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -63,9 +63,9 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Yer değiştirmek`"your_password"` .pfx dosyanızın parolasıyla.
+ Yer değiştirmek`"your_password"` .pfx dosyanızın şifresiyle.
 
-## 4. Adım: Belgeyi Dijital İmzalı PDF olarak kaydedin
+## Adım 4: Belgeyi Dijital Olarak İmzalanmış PDF Olarak Kaydedin
 
 Son olarak belgeyi dijital imzayla PDF olarak kaydedin.
 
@@ -73,13 +73,13 @@ Son olarak belgeyi dijital imzayla PDF olarak kaydedin.
 doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-İşte bu kadar! Belgeniz artık imzalandı ve PDF olarak kaydedildi.
+Ve işte bu kadar! Belgeniz artık imzalandı ve PDF olarak kaydedildi.
 
 ## Çözüm
 
-Dijital imzalar, belgelerinizin bütünlüğünü ve orijinalliğini sağlamak için güçlü bir araçtır. Aspose.Words for .NET ile PDF dosyalarınıza dijital imza eklemek basit ve etkilidir. Bu adım adım kılavuzu izleyerek PDF belgelerinizi güvence altına alabilir ve alıcıların orijinallikleri konusunda gönül rahatlığı sağlayabilirsiniz. Mutlu kodlama!
+Dijital imzalar, belgelerinizin bütünlüğünü ve gerçekliğini garanti altına almak için güçlü bir araçtır. Aspose.Words for .NET ile PDF dosyalarınıza dijital imza eklemek basit ve etkilidir. Bu adım adım kılavuzu izleyerek PDF belgelerinizi güvence altına alabilir ve alıcılara gerçekliği konusunda gönül rahatlığı sağlayabilirsiniz. İyi kodlamalar!
 
-## SSS'ler
+## SSS
 
 ### Dijital imza nedir?
 Dijital imza, dijital bir belgenin gerçekliğini ve bütünlüğünü doğrulayan elektronik bir imza biçimidir.
@@ -87,11 +87,11 @@ Dijital imza, dijital bir belgenin gerçekliğini ve bütünlüğünü doğrulay
 ### Dijital imza eklemek için sertifikaya ihtiyacım var mı?
 Evet, PDF'nize dijital imza eklemek için bir .pfx sertifika dosyasına ihtiyacınız olacak.
 
-### Test için kendinden imzalı bir sertifika oluşturabilir miyim?
-Evet, test amacıyla kendinden imzalı bir sertifika oluşturabilirsiniz. Ancak üretimde kullanım için güvenilir bir sertifika yetkilisinden sertifika almanız önerilir.
+### Test için kendi imzalı bir sertifika oluşturabilir miyim?
+Evet, test amaçlı kendi kendine imzalanmış bir sertifika oluşturabilirsiniz. Ancak, üretim kullanımı için güvenilir bir sertifika yetkilisinden sertifika edinmeniz önerilir.
 
 ### Aspose.Words for .NET ücretsiz mi?
- Aspose.Words for .NET ticari bir üründür ancak ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Web sitesi](https://releases.aspose.com/).
+ Aspose.Words for .NET ticari bir üründür, ancak ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[Aspose web sitesi](https://releases.aspose.com/).
 
 ### Aspose.Words for .NET'i diğer belge türlerini imzalamak için kullanabilir miyim?
-Evet, Aspose.Words for .NET yalnızca PDF'leri değil, çeşitli belge türlerini imzalamak için de kullanılabilir.
+Evet, Aspose.Words for .NET yalnızca PDF'leri değil, çeşitli türdeki belgeleri imzalamak için kullanılabilir.

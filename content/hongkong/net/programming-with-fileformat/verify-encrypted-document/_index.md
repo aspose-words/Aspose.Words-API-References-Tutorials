@@ -56,7 +56,7 @@ Console.WriteLine(info.IsEncrypted);
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功驗證了 Word 文件的加密狀態。幾行程式碼就能讓我們的生活變得如此輕鬆，這不是很神奇嗎？如果您有任何疑問或遇到任何問題，請隨時聯繫[Aspose 支援論壇](https://forum.aspose.com/c/words/8).
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功驗證了 Word 文件的加密狀態。幾行程式碼就能讓我們的生活變得如此輕鬆，這不是很神奇嗎？如果您有任何疑問或遇到任何問題，請隨時聯繫[Aspose 支援論壇](https://forum.aspose.com/c/words/8).
 
 ## 常見問題解答
 

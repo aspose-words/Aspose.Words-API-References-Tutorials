@@ -2,14 +2,14 @@
 title: Habilitar recursos OpenType
 linktitle: Habilitar recursos OpenType
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como habilitar recursos OpenType em documentos do Word com Aspose.Words for .NET. Os tutoriais guiarão você pelas etapas para ativar recursos avançados de fontes OpenType.
+description: Aprenda como habilitar recursos OpenType em documentos do Word com o Aspose.Words para .NET. Os tutoriais guiarão você pelas etapas para habilitar recursos avançados de fontes OpenType.
 type: docs
 weight: 40
 url: /pt/net/enable-opentype-features/
 ---
-Aprenda como habilitar recursos OpenType em seus documentos do Word com Aspose.Words for .NET. Este tutorial detalhado orienta você passo a passo no uso de recursos OpenType, como ligaduras, alternativas estilísticas, substituições contextuais e muito mais. Aprenda como ativar esses recursos para melhorar a tipografia e a aparência dos seus documentos do Word.
+Aprenda como habilitar recursos OpenType em seus documentos do Word com o Aspose.Words para .NET. Este tutorial detalhado leva você passo a passo pelo uso de recursos OpenType, como ligaduras, alternativas estilísticas, substituições contextuais e muito mais. Aprenda como habilitar esses recursos para melhorar a tipografia e a aparência de seus documentos do Word.
 
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Recursos de tipo aberto](./open-type-features/) | Aprenda como habilitar recursos OpenType em documentos do Word usando Aspose.Words for .NET com este guia passo a passo detalhado. |
+| [Recursos de tipo aberto](./open-type-features/) | Aprenda como habilitar recursos OpenType em documentos do Word usando o Aspose.Words para .NET com este guia detalhado passo a passo. |

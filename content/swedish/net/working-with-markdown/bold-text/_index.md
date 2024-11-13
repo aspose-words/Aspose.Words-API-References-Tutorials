@@ -33,7 +33,7 @@ Låt oss nu bryta ner processen att göra text fetstil i ett Word-dokument med A
 
 ## Steg 1: Initiera DocumentBuilder
 
- De`DocumentBuilder` klass ger ett snabbt och enkelt sätt att lägga till innehåll i ditt dokument. Låt oss initiera det.
+De`DocumentBuilder` klass ger ett snabbt och enkelt sätt att lägga till innehåll i ditt dokument. Låt oss initiera det.
 
 ```csharp
 // Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
@@ -63,7 +63,7 @@ Och där har du det! Du har framgångsrikt gjort text fetstil i ett Word-dokumen
  Absolut! Du kan använda`builder.Font.Color`egenskap för att ställa in textfärgen.
 
 ### Kan jag använda flera teckensnitt samtidigt?
- Ja, det kan du. Du kan till exempel göra text fet och kursiv samtidigt genom att ställa in båda`builder.Font.Bold`och`builder.Font.Italic` till`true`.
+ Ja, det kan du. Du kan till exempel göra text fet och kursiv samtidigt genom att ställa in båda`builder.Font.Bold` och`builder.Font.Italic` till`true`.
 
 ### Vilka andra textformateringsalternativ finns tillgängliga?
 Aspose.Words tillhandahåller ett brett utbud av textformateringsalternativ som teckenstorlek, understrykning, genomstruken och mer.

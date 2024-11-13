@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Krok 6: Vytvořte tabulku a přidejte řádky
 
- Vytvořte nový`Table`objekt a zadejte počet řádků a sloupců.
+Vytvořte nový`Table` objekt a zadejte počet řádků a sloupců.
 
 ```java
 Table table = new Table(doc);

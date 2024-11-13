@@ -1,33 +1,33 @@
 ---
-title: Multisezione
-linktitle: Multisezione
+title: Multi sezione
+linktitle: Multi sezione
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come lavorare con tag di documenti strutturati multisezione in Aspose.Words per .NET con questo tutorial passo passo. Ideale per la manipolazione dinamica dei documenti.
+description: Scopri come lavorare con tag di documenti strutturati multi-sezione in Aspose.Words per .NET con questo tutorial passo dopo passo. Ideale per la manipolazione dinamica di documenti.
 type: docs
 weight: 10
 url: /it/net/programming-with-sdt/multi-section/
 ---
 ## Introduzione
 
-Benvenuti in questa guida completa su come lavorare con tag di documenti strutturati in più sezioni in Aspose.Words per .NET! Se ti stai immergendo nel mondo della manipolazione dei documenti e hai bisogno di gestire i tag di documenti strutturati (SDT) in modo efficace, sei nel posto giusto. Che tu stia automatizzando l'elaborazione dei documenti, generando report o semplicemente gestendo documenti complessi, capire come interagire con gli SDT può essere incredibilmente prezioso. In questo tutorial, illustreremo il processo passo dopo passo, assicurandoci di comprendere ogni dettaglio relativo all'utilizzo di questi tag nelle applicazioni .NET.
+Benvenuti a questa guida completa su come lavorare con tag di documenti strutturati multi-sezione in Aspose.Words per .NET! Se vi state tuffando nel mondo della manipolazione dei documenti e avete bisogno di gestire efficacemente i tag di documenti strutturati (SDT), siete nel posto giusto. Che stiate automatizzando l'elaborazione dei documenti, generando report o semplicemente gestendo documenti complessi, capire come interagire con gli SDT può essere incredibilmente prezioso. In questo tutorial, vi guideremo passo dopo passo nel processo, assicurandovi di comprendere ogni dettaglio del lavoro con questi tag nelle vostre applicazioni .NET.
 
 ## Prerequisiti
 
 Prima di immergerci nel codice, assicurati di avere quanto segue:
 
-1.  Aspose.Words per .NET: è necessaria la libreria Aspose.Words per interagire con i documenti Word. Puoi scaricarlo da[Pagina dei download di Aspose.Words per .NET](https://releases.aspose.com/words/net/).
+1.  Aspose.Words per .NET: hai bisogno della libreria Aspose.Words per interagire con i documenti Word. Puoi scaricarla da[Pagina di download di Aspose.Words per .NET](https://releases.aspose.com/words/net/).
 
-2. Visual Studio: un IDE come Visual Studio per scrivere ed eseguire il codice C#.
+2. Visual Studio: un IDE simile a Visual Studio per scrivere ed eseguire il codice C#.
 
-3. Conoscenza di base di C#: la familiarità con C# e i concetti di base della programmazione .NET ti aiuteranno a seguire senza problemi.
+3. Conoscenza di base del linguaggio C#: la familiarità con il linguaggio C# e i concetti di base della programmazione .NET ti aiuteranno a seguire il corso senza problemi.
 
-4. Documento con tag di documento strutturato: per questo tutorial avrai bisogno di un documento di Word contenente tag di documento strutturato. È possibile utilizzare un documento di esempio o crearne uno con SDT per i test.
+4. Documento con tag di documento strutturato: per questo tutorial, avrai bisogno di un documento Word contenente tag di documento strutturato. Puoi usare un documento di esempio o crearne uno con SDT per il test.
 
-5.  Documentazione Aspose.Words: mantieni il file[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) utile per ulteriori riferimenti e dettagli.
+5.  Documentazione di Aspose.Words: Mantieni il[Documentazione di Aspose.Words](https://reference.aspose.com/words/net/) utile per ulteriori riferimenti e dettagli.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per iniziare a lavorare con Aspose.Words per .NET, dovrai importare gli spazi dei nomi necessari. Questi spazi dei nomi ti danno accesso alle classi e ai metodi necessari per manipolare i documenti di Word. Ecco come puoi impostare il tuo progetto:
+Per iniziare a lavorare con Aspose.Words per .NET, dovrai importare i namespace necessari. Questi namespace ti danno accesso alle classi e ai metodi richiesti per manipolare i documenti Word. Ecco come puoi impostare il tuo progetto:
 
 ```csharp
 using Aspose.Words;
@@ -37,76 +37,76 @@ using Aspose.Words.Markup;
 
 ## Passaggio 1: imposta la directory dei documenti
 
-Innanzitutto, devi specificare il percorso della directory in cui è archiviato il tuo documento Word. Questo è fondamentale per caricare correttamente il documento.
+Per prima cosa, devi specificare il percorso della directory in cui è archiviato il tuo documento Word. Questo è fondamentale per caricare correttamente il documento.
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo del documento.
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo del tuo documento.
 
 ## Passaggio 2: caricare il documento
 
- Usa il`Document` class per caricare il tuo documento Word. Questa classe consente di aprire e manipolare il documento a livello di codice.
+ Utilizzare il`Document` classe per caricare il tuo documento Word. Questa classe ti consente di aprire e manipolare il documento a livello di programmazione.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
 ```
 
- Qui,`"Multi-section structured document tags.docx"`dovrebbe essere sostituito con il nome del file del documento. Assicurarsi che questo file si trovi nella directory specificata.
+ Qui,`"Multi-section structured document tags.docx"`dovrebbe essere sostituito con il nome del tuo file di documento. Assicurati che questo file si trovi nella directory specificata.
 
-## Passaggio 3: recuperare i tag dei documenti strutturati
+## Passaggio 3: recuperare i tag del documento strutturato
 
- Aspose.Words ti consente di accedere ai tag dei documenti strutturati tramite il`GetChildNodes` metodo. Questo metodo ti aiuta a recuperare i nodi di un tipo specifico dal documento.
+ Aspose.Words consente di accedere ai tag dei documenti strutturati tramite`GetChildNodes` metodo. Questo metodo ti aiuta a recuperare nodi di un tipo specifico dal documento.
 
 ```csharp
 NodeCollection tags = doc.GetChildNodes(NodeType.StructuredDocumentTagRangeStart, true);
 ```
 
-- `NodeType.StructuredDocumentTagRangeStart`: specifica che si desidera recuperare i punti iniziali dei tag del documento strutturato.
-- `true`: Indica che la ricerca deve essere ricorsiva (ovvero, cercherà tutti i nodi del documento).
+- `NodeType.StructuredDocumentTagRangeStart`: Specifica che si desidera recuperare i punti di partenza dei tag del documento strutturato.
+- `true`: Indica che la ricerca deve essere ricorsiva (ovvero che cercherà in tutti i nodi del documento).
 
 ## Passaggio 4: scorrere i tag e visualizzare le informazioni
 
-Una volta ottenuta la raccolta dei tag, è possibile scorrerli per visualizzarne i titoli o eseguire altre operazioni. Questo passaggio è fondamentale per interagire con ciascun tag individualmente.
+Una volta ottenuta la raccolta di tag, puoi scorrere i tag per visualizzarne i titoli o eseguire altre operazioni. Questo passaggio è fondamentale per interagire con ogni tag singolarmente.
 
 ```csharp
 foreach (StructuredDocumentTagRangeStart tag in tags)
     Console.WriteLine(tag.Title);
 ```
 
-Questo ciclo stampa il titolo di ciascun tag del documento strutturato sulla console. È possibile modificare questo ciclo per eseguire azioni aggiuntive, come la modifica delle proprietà dei tag o l'estrazione di informazioni.
+Questo ciclo stampa il titolo di ogni tag di documento strutturato sulla console. Puoi modificare questo ciclo per eseguire azioni aggiuntive, come la modifica delle proprietà del tag o l'estrazione di informazioni.
 
 ## Conclusione
 
-Congratulazioni! Ora hai imparato come lavorare con tag di documenti strutturati in più sezioni utilizzando Aspose.Words per .NET. Seguendo questi passaggi, puoi manipolare in modo efficiente i tag dei documenti strutturati nei tuoi documenti Word. Che tu stia automatizzando i flussi di lavoro dei documenti o gestendo documenti complessi, queste competenze miglioreranno la tua capacità di gestire contenuti strutturati in modo dinamico.
+Congratulazioni! Ora hai imparato a lavorare con tag di documenti strutturati multi-sezione usando Aspose.Words per .NET. Seguendo questi passaggi, puoi manipolare in modo efficiente i tag di documenti strutturati nei tuoi documenti Word. Che tu stia automatizzando flussi di lavoro di documenti o gestendo documenti complessi, queste competenze miglioreranno la tua capacità di gestire dinamicamente i contenuti strutturati.
 
- Sentiti libero di sperimentare il codice e adattarlo alle tue esigenze specifiche. Per funzionalità più avanzate e documentazione dettagliata, consulta il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/).
+ Sentiti libero di sperimentare con il codice e adattarlo alle tue esigenze specifiche. Per funzionalità più avanzate e documentazione dettagliata, consulta il[Documentazione di Aspose.Words](https://reference.aspose.com/words/net/).
 
 ## Domande frequenti
 
 ### Cosa sono i tag dei documenti strutturati?
-I tag di documenti strutturati (SDT) sono segnaposto in un documento di Word che può contenere vari tipi di contenuto, inclusi testo, immagini e campi modulo.
+I tag di documento strutturato (SDT) sono segnaposto in un documento Word che possono contenere vari tipi di contenuto, tra cui testo, immagini e campi modulo.
 
-### Come posso creare un documento Word con SDT?
-Puoi creare SDT utilizzando Microsoft Word inserendo i controlli del contenuto dalla scheda Sviluppatore. Salvare il documento e utilizzarlo con Aspose.Words per .NET.
+### Come posso creare un documento Word con gli SDT?
+È possibile creare SDT utilizzando Microsoft Word inserendo controlli di contenuto dalla scheda Sviluppatore. Salvare il documento e utilizzarlo con Aspose.Words per .NET.
 
 ### Posso modificare il contenuto degli SDT utilizzando Aspose.Words?
 Sì, puoi modificare il contenuto degli SDT accedendo e aggiornando le loro proprietà tramite l'API Aspose.Words.
 
 ### Cosa succede se il mio documento contiene più tipi di SDT?
- Puoi filtrare e recuperare diversi tipi di SDT modificando il file`NodeType` parametro nel`GetChildNodes` metodo.
+ È possibile filtrare e recuperare diversi tipi di SDT regolando il`NodeType` parametro nel`GetChildNodes` metodo.
 
-### Dove posso ottenere ulteriore assistenza con Aspose.Words per .NET?
- Per ulteriore supporto, è possibile visitare il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8).
+### Dove posso trovare ulteriore assistenza con Aspose.Words per .NET?
+ Per ulteriore supporto, puoi visitare il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8).
 
 
 
-### Codice sorgente di esempio per Multi Sezione utilizzando Aspose.Words per .NET 
+### Esempio di codice sorgente per Multi Section utilizzando Aspose.Words per .NET 
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -115,4 +115,4 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 	Console.WriteLine(tag.Title);
 ```
 
-Questo è tutto! Hai recuperato ed elaborato con successo i tag del documento strutturato in più sezioni nel tuo documento Word utilizzando Aspose.Words per .NET.
+Ecco fatto! Hai recuperato ed elaborato con successo i tag di documenti strutturati multi-sezione nel tuo documento Word utilizzando Aspose.Words per .NET.

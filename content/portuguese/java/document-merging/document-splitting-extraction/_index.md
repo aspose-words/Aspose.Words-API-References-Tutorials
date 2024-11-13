@@ -2,7 +2,7 @@
 title: Divisão e extração de documentos
 linktitle: Divisão e extração de documentos
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda como dividir e extrair documentos sem esforço usando Aspose.Words for Java. Simplifique suas tarefas de processamento de documentos com orientação passo a passo.
+description: Aprenda a dividir e extrair documentos sem esforço usando Aspose.Words para Java. Simplifique suas tarefas de processamento de documentos com orientação passo a passo.
 type: docs
 weight: 14
 url: /pt/java/document-merging/document-splitting-extraction/
@@ -10,22 +10,22 @@ url: /pt/java/document-merging/document-splitting-extraction/
 
 ## Introdução
 
-Neste guia abrangente, exploraremos os poderosos recursos do Aspose.Words for Java, uma API versátil para trabalhar com documentos. Especificamente, mergulharemos no intrigante mundo da divisão e extração de documentos, demonstrando como esse recurso pode simplificar suas tarefas de processamento de documentos. 
+Neste guia abrangente, exploraremos os recursos poderosos do Aspose.Words para Java, uma API versátil para trabalhar com documentos. Especificamente, nos aprofundaremos no mundo intrigante da divisão e extração de documentos, demonstrando como esse recurso pode simplificar suas tarefas de processamento de documentos. 
 
 ## Pré-requisitos
 
 Antes de mergulharmos no código, certifique-se de ter os seguintes pré-requisitos em vigor:
 
-- Java Development Kit (JDK) instalado em seu sistema.
--  Biblioteca Aspose.Words para Java. Você pode baixá-lo[aqui](https://releases.aspose.com/words/java/).
+- Java Development Kit (JDK) instalado no seu sistema.
+-  Biblioteca Aspose.Words para Java. Você pode baixá-la[aqui](https://releases.aspose.com/words/java/).
 
-## Configurando Seu Projeto
+## Configurando seu projeto
 
-Para começar, crie um novo projeto Java em seu ambiente de desenvolvimento integrado (IDE) preferido. Em seguida, adicione a biblioteca Aspose.Words for Java ao classpath do seu projeto.
+Para começar, crie um novo projeto Java no seu Integrated Development Environment (IDE) preferido. Depois, adicione a biblioteca Aspose.Words for Java ao classpath do seu projeto.
 
-## Dividir um documento
+## Dividindo um documento
 
-### Etapa 1: carregue o documento
+### Etapa 1: Carregue o documento
 
 Para dividir um documento, primeiro precisamos carregá-lo em nosso aplicativo Java. Veja como você pode fazer isso:
 
@@ -34,25 +34,25 @@ Para dividir um documento, primeiro precisamos carregá-lo em nosso aplicativo J
 Document doc = new Document("path/to/your/document.docx");
 ```
 
-### Etapa 2: definir critérios de divisão
+### Etapa 2: Definir critérios de divisão
 
-A seguir definiremos os critérios com base nos quais queremos dividir o documento. Isso pode ser por página, seção ou qualquer critério personalizado que atenda às suas necessidades.
+Em seguida, definiremos os critérios com base nos quais queremos dividir o documento. Isso pode ser por página, seção ou qualquer critério personalizado que atenda às suas necessidades.
 
 ```java
 // Defina os critérios de divisão
 DocumentSplitCriteria splitCriteria = new PageSplitCriteria();
 ```
 
-### Etapa 3: execute a divisão
+### Etapa 3: Execute a divisão
 
 Agora, vamos dividir o documento usando os critérios definidos:
 
 ```java
-// Divida o documento
+// Dividir o documento
 List<Document> splitDocuments = doc.split(splitCriteria);
 ```
 
-### Etapa 4: salve os documentos divididos
+### Etapa 4: Salve os documentos divididos
 
 Por fim, salve os documentos divididos no local desejado:
 
@@ -64,7 +64,7 @@ for (int i = 0; i < splitDocuments.size(); i++) {
 
 ## Extraindo texto de um documento
 
-### Etapa 1: carregue o documento
+### Etapa 1: Carregue o documento
 
 Para extrair texto de um documento, seguiremos uma abordagem semelhante carregando o documento:
 
@@ -73,41 +73,41 @@ Para extrair texto de um documento, seguiremos uma abordagem semelhante carregan
 Document doc = new Document("path/to/your/document.docx");
 ```
 
-### Etapa 2: extrair texto
+### Etapa 2: Extrair texto
 
 Agora, vamos extrair o texto do documento:
 
 ```java
-// Extraia o texto do documento
+// Extrair texto do documento
 String extractedText = doc.getText();
 ```
 
-### Etapa 3: processar o texto extraído
+### Etapa 3: Processar o texto extraído
 
-Você pode processar ainda mais o texto extraído conforme necessário. Isso pode incluir análise de texto, extração de dados ou qualquer outra tarefa relacionada ao texto.
+Você pode processar ainda mais o texto extraído conforme necessário. Isso pode incluir análise de texto, extração de dados ou quaisquer outras tarefas relacionadas a texto.
 
 ## Conclusão
 
-Aspose.Words for Java permite dividir e extrair conteúdo de documentos com facilidade. Se você precisa dividir um documento grande em partes menores ou extrair texto para análise, esta API simplifica o processo. Seguindo as etapas descritas neste guia, você estará bem equipado para aproveitar todo o potencial do Aspose.Words for Java.
+O Aspose.Words para Java permite que você divida e extraia conteúdo de documentos com facilidade. Se você precisa dividir um documento grande em partes menores ou extrair texto para análise, esta API simplifica o processo. Ao seguir as etapas descritas neste guia, você estará bem equipado para aproveitar todo o potencial do Aspose.Words para Java.
 
 ## Perguntas frequentes
 
-### Como faço para instalar o Aspose.Words para Java?
+### Como instalo o Aspose.Words para Java?
 
- Para instalar Aspose.Words for Java, baixe a biblioteca em[aqui](https://releases.aspose.com/words/java/) e adicione-o ao classpath do seu projeto Java.
+ Para instalar o Aspose.Words para Java, baixe a biblioteca em[aqui](https://releases.aspose.com/words/java/) e adicione-o ao classpath do seu projeto Java.
 
 ### Posso dividir um documento por critérios personalizados?
 
- Sim, você pode definir critérios personalizados para dividir um documento usando Aspose.Words for Java. Basta criar seu personalizado`DocumentSplitCriteria` implementação.
+ Sim, você pode definir critérios personalizados para dividir um documento usando Aspose.Words para Java. Basta criar seu personalizado`DocumentSplitCriteria` implementação.
 
-### Quais formatos de arquivo o Aspose.Words for Java suporta?
+### Quais formatos de arquivo o Aspose.Words para Java suporta?
 
-Aspose.Words for Java oferece suporte a uma ampla variedade de formatos de documentos, incluindo DOC, DOCX, RTF, PDF e muito mais.
+Aspose.Words para Java oferece suporte a uma ampla variedade de formatos de documentos, incluindo DOC, DOCX, RTF, PDF e muito mais.
 
-### O Aspose.Words for Java é adequado para extração de texto de documentos digitalizados?
+### O Aspose.Words para Java é adequado para extração de texto de documentos digitalizados?
 
-Sim, Aspose.Words for Java pode extrair texto de documentos digitalizados com recursos de OCR.
+Sim, o Aspose.Words para Java pode extrair texto de documentos digitalizados com recursos de OCR.
 
-### Onde posso acessar a documentação do Aspose.Words for Java?
+### Onde posso acessar a documentação do Aspose.Words para Java?
 
- Você pode encontrar a documentação do Aspose.Words for Java[aqui](https://reference.aspose.com/words/java/).
+ Você pode encontrar a documentação do Aspose.Words para Java[aqui](https://reference.aspose.com/words/java/).

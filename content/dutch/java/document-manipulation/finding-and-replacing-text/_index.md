@@ -1,8 +1,8 @@
 ---
 title: Tekst zoeken en vervangen in Aspose.Words voor Java
 linktitle: Tekst zoeken en vervangen
-second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer hoe u tekst in Word-documenten kunt zoeken en vervangen met Aspose.Words voor Java. Stapsgewijze handleiding met codevoorbeelden. Verbeter uw vaardigheden op het gebied van Java-documentmanipulatie.
+second_title: Aspose.Words Java Documentverwerkings-API
+description: Leer hoe u tekst in Word-documenten kunt vinden en vervangen met Aspose.Words voor Java. Stapsgewijze handleiding met codevoorbeelden. Verbeter uw Java-documentmanipulatievaardigheden.
 type: docs
 weight: 15
 url: /nl/java/document-manipulation/finding-and-replacing-text/
@@ -14,7 +14,7 @@ Aspose.Words voor Java is een krachtige Java API waarmee u programmatisch met Wo
 
 ## Vereisten
 
-Voordat we dieper ingaan op de details van het zoeken en vervangen van tekst, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+Voordat we dieper ingaan op het zoeken en vervangen van tekst, moet u ervoor zorgen dat aan de volgende voorwaarden is voldaan:
 
 - Java-ontwikkelomgeving
 - Aspose.Words voor Java-bibliotheek
@@ -28,7 +28,7 @@ Voordat we dieper ingaan op de details van het zoeken en vervangen van tekst, mo
 // Laad het document
 Document doc = new Document("your-document.docx");
 
-// Maak een DocumentBuilder
+// Een DocumentBuilder maken
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Tekst zoeken en vervangen
@@ -38,17 +38,17 @@ builder.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 doc.save("modified-document.docx");
 ```
 
- In dit voorbeeld laden we een Word-document, maken we een`DocumentBuilder` en gebruik de`replace` methode om "oude tekst" te vinden en te vervangen door "nieuwe tekst" in het document.
+ In dit voorbeeld laden we een Word-document, maken een`DocumentBuilder` , en gebruik de`replace` Methode om "oude-tekst" te vinden en te vervangen door "nieuwe-tekst" in het document.
 
 ## Reguliere expressies gebruiken
 
-Reguliere expressies bieden krachtige mogelijkheden voor patroonvergelijking voor het zoeken en vervangen van tekst. Aspose.Words voor Java ondersteunt reguliere expressies voor geavanceerdere zoek- en vervangbewerkingen.
+Reguliere expressies bieden krachtige patroonmatchingmogelijkheden voor tekst zoeken en vervangen. Aspose.Words voor Java ondersteunt reguliere expressies voor geavanceerdere zoek- en vervangbewerkingen.
 
 ```java
 // Laad het document
 Document doc = new Document("your-document.docx");
 
-// Maak een DocumentBuilder
+// Een DocumentBuilder maken
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Gebruik reguliere expressies voor het zoeken en vervangen van tekst
@@ -59,11 +59,11 @@ builder.getRange().replace(regex, "replacement-text", new FindReplaceOptions());
 doc.save("modified-document.docx");
 ```
 
-In dit voorbeeld gebruiken we een reguliere-expressiepatroon om tekst in het document te zoeken en te vervangen.
+In dit voorbeeld gebruiken we een regulier expressiepatroon om tekst in het document te zoeken en te vervangen.
 
 ## Tekst in velden negeren
 
-kunt Aspose.Words configureren om tekst in velden te negeren bij het uitvoeren van zoek- en vervangbewerkingen.
+U kunt Aspose.Words configureren om tekst in velden te negeren bij het uitvoeren van zoek- en vervangbewerkingen.
 
 ```java
 // Laad het document
@@ -80,9 +80,9 @@ doc.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-Dit is handig als u wilt uitsluiten dat tekst in velden, zoals samenvoegvelden, wordt vervangen.
+Dit is handig als u wilt voorkomen dat tekst in velden, zoals samenvoegvelden, wordt vervangen.
 
-## Tekst binnenin negeren Revisies verwijderen
+## Tekst in Delete Revisions negeren
 
 U kunt Aspose.Words configureren om tekst in verwijderrevisies te negeren tijdens zoek- en vervangbewerkingen.
 
@@ -101,7 +101,7 @@ doc.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-Hiermee kunt u uitsluiten dat tekst die is gemarkeerd voor verwijdering in bijgehouden wijzigingen, wordt vervangen.
+Hiermee kunt u voorkomen dat tekst die in bijgehouden wijzigingen is gemarkeerd om te worden verwijderd, wordt vervangen.
 
 ## Tekst in invoegrevisies negeren
 
@@ -122,7 +122,7 @@ doc.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-Hierdoor kunt u uitsluiten dat tekst die is gemarkeerd als ingevoegd in bijgehouden wijzigingen, wordt vervangen.
+Hiermee kunt u voorkomen dat tekst die in bijgehouden wijzigingen als ingevoegd is gemarkeerd, wordt vervangen.
 
 ## Tekst vervangen door HTML
 
@@ -143,20 +143,20 @@ doc.getRange().replace("text-to-replace", "new-html-content", options);
 doc.save("modified-document.docx");
 ```
 
- In dit voorbeeld gebruiken we een custom`ReplaceWithHtmlEvaluator` om tekst te vervangen door HTML-inhoud.
+ In dit voorbeeld gebruiken we een aangepaste`ReplaceWithHtmlEvaluator` om tekst te vervangen door HTML-inhoud.
 
 ## Tekst in kop- en voetteksten vervangen
 
-U kunt tekst zoeken en vervangen in de kop- en voetteksten van uw Word-document.
+U kunt tekst in de kop- en voetteksten van uw Word-document zoeken en vervangen.
 
 ```java
 // Laad het document
 Document doc = new Document("your-document.docx");
 
-// Verkrijg de verzameling kop- en voetteksten
+// Ontvang de verzameling kop- en voetteksten
 HeaderFooterCollection headersFooters = doc.getFirstSection().getHeadersFooters();
 
-// Kies het kop- of voetteksttype waarin u tekst wilt vervangen (bijvoorbeeld HeaderFooterType.FOOTER_PRIMARY)
+// Kies het type kop- of voettekst waarin u tekst wilt vervangen (bijvoorbeeld HeaderFooterType.FOOTER_PRIMARY)
 HeaderFooter footer = headersFooters.getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
 
 // Maak een FindReplaceOptions-instantie en pas deze toe op het bereik van de voettekst
@@ -167,31 +167,31 @@ footer.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-Hierdoor kunt u tekstvervangingen specifiek in kop- en voetteksten uitvoeren.
+Hiermee kunt u tekstvervangingen uitvoeren, specifiek in kop- en voetteksten.
 
-## Wijzigingen voor kop- en voettekstorders weergeven
+## Wijzigingen weergeven voor kop- en voettekstorders
 
-U kunt Aspose.Words gebruiken om wijzigingen in de kop- en voettekstvolgorde in uw document weer te geven.
+U kunt Aspose.Words gebruiken om wijzigingen in de volgorde van kop- en voetteksten in uw document weer te geven.
 
 ```java
 // Laad het document
 Document doc = new Document("your-document.docx");
 
-// Verkrijg het eerste gedeelte
+// Ontvang het eerste gedeelte
 Section firstPageSection = doc.getFirstSection();
 
-// Maak een FindReplaceOptions-instantie en pas deze toe op het bereik van het document
+//Maak een FindReplaceOptions-instantie en pas deze toe op het documentbereik
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceLog());
 
-//Vervang tekst die van invloed is op de kop- en voettekstvolgorde
+// Vervang tekst die de volgorde van kop- en voetteksten beïnvloedt
 doc.getRange().replace(Pattern.compile("(header|footer)"), "", options);
 
 // Sla het gewijzigde document op
 doc.save("modified-document.docx");
 ```
 
-Hierdoor kunt u wijzigingen met betrekking tot de kop- en voettekstvolgorde in uw document visualiseren.
+Hiermee kunt u wijzigingen in de volgorde van kop- en voetteksten in uw document visualiseren.
 
 ## Tekst vervangen door velden
 
@@ -201,7 +201,7 @@ U kunt tekst vervangen door velden met Aspose.Words voor Java.
 // Laad het document
 Document doc = new Document("your-document.docx");
 
-// Maak een FindReplaceOptions-instantie en stel een aangepaste vervangende callback voor velden in
+// Maak een FindReplaceOptions-instantie en stel een aangepaste vervangende callback in voor velden
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceTextWithFieldHandler(FieldType.FIELD_MERGE_FIELD));
 
@@ -237,7 +237,7 @@ In dit voorbeeld gebruiken we een aangepaste evaluator (`MyReplaceEvaluator`) om
 
 ## Vervangen door Regex
 
-Met Aspose.Words voor Java kunt u tekst vervangen door reguliere expressies.
+Met Aspose.Words voor Java kunt u tekst vervangen met behulp van reguliere expressies.
 
 ```java
 // Laad het document
@@ -250,32 +250,32 @@ doc.getRange().replace(Pattern.compile("[s|m]ad"), "bad", new FindReplaceOptions
 doc.save("modified-document.docx");
 ```
 
-In dit voorbeeld gebruiken we een reguliere-expressiepatroon om tekst in het document te zoeken en te vervangen.
+In dit voorbeeld gebruiken we een regulier expressiepatroon om tekst in het document te zoeken en te vervangen.
 
-## Herkennen en vervangingen binnen vervangingspatronen
+## Herkennen en vervangen binnen vervangingspatronen
 
-Met Aspose.Words voor Java kunt u vervangingen binnen vervangingspatronen herkennen en uitvoeren.
+Met Aspose.Words voor Java kunt u vervangingspatronen herkennen en vervangen.
 
 ```java
 // Laad het document
 Document doc = new Document("your-document.docx");
 
-//Maak een FindReplaceOptions-instantie waarbij UseSubstitutions is ingesteld op true
+// Maak een FindReplaceOptions-instantie met UseSubstitutions ingesteld op true
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseSubstitutions(true);
 
-// Gebruik opties wanneer u tekst vervangt door een patroon
+// Gebruik opties bij het vervangen van tekst door een patroon
 doc.getRange().replace(Pattern.compile("([A-z]+) give money to ([A-z]+)"), "$2 take money from $1", options);
 
 // Sla het gewijzigde document op
 doc.save("modified-document.docx");
 ```
 
-Hierdoor kunt u vervangingen uitvoeren binnen de vervangingspatronen voor meer geavanceerde vervangingen.
+Hiermee kunt u vervangingen uitvoeren binnen de vervangingspatronen voor meer geavanceerde vervangingen.
 
-## Vervangen door een string
+## Vervangen door een String
 
-U kunt tekst vervangen door een eenvoudige tekenreeks met Aspose.Words voor Java.
+Met Aspose.Words voor Java kunt u tekst vervangen door een eenvoudige tekenreeks.
 
 ```java
 // Laad het document
@@ -288,11 +288,11 @@ doc.getRange().replace("text-to-replace", "new-string", new FindReplaceOptions()
 doc.save("modified-document.docx");
 ```
 
-In dit voorbeeld vervangen we "text-to-replace" door "new-string" in het document.
+In dit voorbeeld vervangen we "te-vervangen-tekst" door "nieuwe-tekenreeks" binnen het document.
 
-## Legacy-bestelling gebruiken
+## Legacy Order gebruiken
 
-U kunt een verouderde volgorde gebruiken bij het uitvoeren van zoek- en vervangbewerkingen.
+U kunt de oude volgorde gebruiken bij het uitvoeren van zoek- en vervangbewerkingen.
 
 ```java
 // Laad het document
@@ -309,7 +309,7 @@ doc.getRange().replace(Pattern.compile("\\[(.*?)\\]"), "", options);
 doc.save("modified-document.docx");
 ```
 
-Hierdoor kunt u de verouderde volgorde gebruiken voor zoek- en vervangbewerkingen.
+Hiermee kunt u de oude volgorde gebruiken voor zoek- en vervangbewerkingen.
 
 ## Tekst in een tabel vervangen
 
@@ -319,40 +319,40 @@ U kunt tekst in tabellen in uw Word-document zoeken en vervangen.
 // Laad het document
 Document doc = new Document("your-document.docx");
 
-// Een specifieke tafel ophalen (bijvoorbeeld de eerste tafel)
+// Een specifieke tabel verkrijgen (bijvoorbeeld de eerste tabel)
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 
-// Gebruik FindReplaceOptions voor het vervangen van tekst in de tabel
+//Gebruik FindReplaceOptions om tekst in de tabel te vervangen
 table.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 
 // Sla het gewijzigde document op
 doc.save("modified-document.docx");
 ```
 
-Hierdoor kunt u specifiek binnen tabellen tekstvervangingen uitvoeren.
+Hiermee kunt u tekstvervangingen specifiek binnen tabellen uitvoeren.
 
 ## Conclusie
 
-Aspose.Words voor Java biedt uitgebreide mogelijkheden voor het vinden en vervangen van tekst in Word-documenten. Of u nu eenvoudige tekstvervangingen of meer geavanceerde bewerkingen moet uitvoeren met behulp van reguliere expressies, veldmanipulaties of aangepaste evaluatieprogramma's, Aspose.Words voor Java heeft de oplossing voor u. Zorg ervoor dat u de uitgebreide documentatie en voorbeelden van Aspose verkent om het volledige potentieel van deze krachtige Java-bibliotheek te benutten.
+Aspose.Words voor Java biedt uitgebreide mogelijkheden voor het vinden en vervangen van tekst in Word-documenten. Of u nu eenvoudige tekstvervangingen of meer geavanceerde bewerkingen met reguliere expressies, veldmanipulaties of aangepaste evaluators moet uitvoeren, Aspose.Words voor Java heeft alles wat u nodig hebt. Zorg ervoor dat u de uitgebreide documentatie en voorbeelden van Aspose bekijkt om het volledige potentieel van deze krachtige Java-bibliotheek te benutten.
 
 ## Veelgestelde vragen
 
 ### Hoe download ik Aspose.Words voor Java?
 
- U kunt Aspose.Words voor Java downloaden van de website door naar[deze koppeling](https://releases.aspose.com/words/java/).
+ U kunt Aspose.Words voor Java downloaden van de website door te gaan naar[deze link](https://releases.aspose.com/words/java/).
 
-### Kan ik reguliere expressies gebruiken voor tekstvervanging?
+### Kan ik reguliere expressies gebruiken voor het vervangen van tekst?
 
-Ja, u kunt reguliere expressies gebruiken voor tekstvervanging in Aspose.Words voor Java. Hierdoor kunt u geavanceerdere en flexibelere zoek- en vervangbewerkingen uitvoeren.
+Ja, u kunt reguliere expressies gebruiken voor tekstvervanging in Aspose.Words voor Java. Hiermee kunt u geavanceerdere en flexibelere zoek- en vervangbewerkingen uitvoeren.
 
-### Hoe kan ik tekst in velden negeren tijdens het vervangen?
+### Hoe kan ik tekst in velden negeren tijdens vervanging?
 
- Om tekst in velden te negeren tijdens het vervangen, kunt u de`IgnoreFields` eigendom van de`FindReplaceOptions` naar`true`Dit zorgt ervoor dat tekst binnen velden, zoals samenvoegvelden, wordt uitgesloten van de vervanging.
+Om tekst in velden te negeren tijdens vervanging, kunt u de volgende instelling instellen:`IgnoreFields` eigendom van de`FindReplaceOptions` naar`true`Hiermee wordt ervoor gezorgd dat tekst in velden, zoals samenvoegvelden, wordt uitgesloten van de vervanging.
 
 ### Kan ik tekst in kop- en voetteksten vervangen?
 
- Ja, u kunt tekst in de kop- en voetteksten van uw Word-document vervangen. Ga eenvoudigweg naar de juiste kop- of voettekst en gebruik de`replace` methode met de gewenste`FindReplaceOptions`.
+ Ja, u kunt tekst in kop- en voetteksten van uw Word-document vervangen. Ga gewoon naar de juiste kop- of voettekst en gebruik de`replace` methode met de gewenste`FindReplaceOptions`.
 
-### Waar is de UseLegacyOrder-optie voor?
+### Waarvoor dient de optie UseLegacyOrder?
 
- De`UseLegacyOrder` optie in`FindReplaceOptions` Hiermee kunt u de oude volgorde gebruiken bij het uitvoeren van zoek- en vervangbewerkingen. Dit kan handig zijn in bepaalde scenario's waarin verouderd ordergedrag gewenst is.
+De`UseLegacyOrder` optie in`FindReplaceOptions` stelt u in staat om legacy order te gebruiken bij het uitvoeren van zoek- en vervangbewerkingen. Dit kan handig zijn in bepaalde scenario's waar legacy order-gedrag gewenst is.

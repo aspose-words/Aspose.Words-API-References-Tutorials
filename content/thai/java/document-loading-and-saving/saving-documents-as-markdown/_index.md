@@ -1,33 +1,33 @@
 ---
 title: การบันทึกเอกสารเป็น Markdown ใน Aspose.Words สำหรับ Java
-linktitle: บันทึกเอกสารเป็น Markdown
-second_title: Aspose.Words Java การประมวลผลเอกสาร API
-description: เรียนรู้วิธีแปลงเอกสาร Word เป็น Markdown ด้วย Aspose.Words สำหรับ Java คำแนะนำทีละขั้นตอนนี้ครอบคลุมถึงการจัดตำแหน่งตาราง การจัดการรูปภาพ และอื่นๆ
+linktitle: การบันทึกเอกสารเป็นมาร์กดาวน์
+second_title: API การประมวลผลเอกสาร Java ของ Aspose.Words
+description: เรียนรู้วิธีแปลงเอกสาร Word เป็น Markdown ด้วย Aspose.Words สำหรับ Java คำแนะนำทีละขั้นตอนนี้ครอบคลุมถึงการจัดตำแหน่งตาราง การจัดการรูปภาพ และอื่นๆ อีกมากมาย
 type: docs
 weight: 18
 url: /th/java/document-loading-and-saving/saving-documents-as-markdown/
 ---
 
-## ข้อมูลเบื้องต้นเกี่ยวกับการบันทึกเอกสารเป็น Markdown ใน Aspose.Words สำหรับ Java
+## บทนำสู่การบันทึกเอกสารเป็น Markdown ใน Aspose.Words สำหรับ Java
 
-ในคำแนะนำทีละขั้นตอนนี้ เราจะสาธิตวิธีการบันทึกเอกสารเป็น Markdown โดยใช้ Aspose.Words สำหรับ Java Markdown เป็นภาษามาร์กอัปแบบน้ำหนักเบาที่ใช้กันทั่วไปในการจัดรูปแบบเอกสารข้อความ ด้วย Aspose.Words สำหรับ Java คุณสามารถแปลงเอกสาร Word ของคุณเป็นรูปแบบ Markdown ได้อย่างง่ายดาย เราจะกล่าวถึงแง่มุมต่างๆ ของการบันทึกไฟล์ Markdown รวมถึงการจัดแนวเนื้อหาตารางและการจัดการรูปภาพ
+ในคู่มือทีละขั้นตอนนี้ เราจะสาธิตวิธีการบันทึกเอกสารเป็น Markdown โดยใช้ Aspose.Words สำหรับ Java Markdown เป็นภาษามาร์กอัปน้ำหนักเบาที่มักใช้ในการจัดรูปแบบเอกสารข้อความ ด้วย Aspose.Words สำหรับ Java คุณสามารถแปลงเอกสาร Word ของคุณเป็นรูปแบบ Markdown ได้อย่างง่ายดาย เราจะครอบคลุมด้านต่างๆ ของการบันทึกไฟล์ Markdown รวมถึงการจัดตำแหน่งเนื้อหาตารางและการจัดการรูปภาพ
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
+ก่อนที่คุณจะเริ่มต้น โปรดตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นดังต่อไปนี้:
 
-- ติดตั้ง Java Development Kit (JDK) บนระบบของคุณ
--  Aspose.Words สำหรับไลบรารี Java คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/java/).
+- Java Development Kit (JDK) ติดตั้งอยู่บนระบบของคุณ
+-  ไลบรารี Aspose.Words สำหรับ Java คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/java/).
 
 ## ขั้นตอนที่ 1: การสร้างเอกสาร Word
 
-เริ่มต้นด้วยการสร้างเอกสาร Word ที่เราจะแปลงเป็นรูปแบบ Markdown ในภายหลัง คุณสามารถปรับแต่งเอกสารนี้ตามความต้องการของคุณ
+เริ่มต้นด้วยการสร้างเอกสาร Word ที่จะแปลงเป็นรูปแบบ Markdown ในภายหลัง คุณสามารถปรับแต่งเอกสารนี้ตามความต้องการของคุณได้
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกตารางที่มีสองเซลล์
+//แทรกตารางด้วยสองเซลล์
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -41,45 +41,45 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
 doc.save("output.md", saveOptions);
 ```
 
- ในตัวอย่างนี้ เราสร้างตารางอย่างง่ายที่มีสองเซลล์และตั้งค่าการจัดตำแหน่งของย่อหน้าภายในเซลล์เหล่านี้ จากนั้นเราบันทึกเอกสารเป็น Markdown โดยใช้`MarkdownSaveOptions`.
+ ในตัวอย่างนี้ เราสร้างตารางง่ายๆ ที่มีเซลล์สองเซลล์ และกำหนดการจัดตำแหน่งของย่อหน้าภายในเซลล์เหล่านี้ จากนั้น บันทึกเอกสารเป็นมาร์กดาวน์โดยใช้`MarkdownSaveOptions`.
 
 ## ขั้นตอนที่ 2: ปรับแต่งการจัดตำแหน่งเนื้อหาตาราง
 
-Aspose.Words สำหรับ Java ช่วยให้คุณปรับแต่งการจัดตำแหน่งของเนื้อหาตารางเมื่อบันทึกเป็น Markdown คุณสามารถจัดแนวเนื้อหาตารางไปทางซ้าย ขวา กึ่งกลาง หรือปล่อยให้กำหนดโดยอัตโนมัติตามย่อหน้าแรกในแต่ละคอลัมน์ของตาราง
+Aspose.Words สำหรับ Java ช่วยให้คุณปรับแต่งการจัดวางเนื้อหาในตารางได้เมื่อบันทึกเป็น Markdown คุณสามารถจัดวางเนื้อหาในตารางให้ชิดซ้าย ชิดขวา กึ่งกลาง หรือให้กำหนดโดยอัตโนมัติตามย่อหน้าแรกในแต่ละคอลัมน์ของตาราง
 
-ต่อไปนี้เป็นวิธีปรับแต่งการจัดตำแหน่งเนื้อหาตาราง:
+วิธีปรับแต่งการจัดเรียงเนื้อหาตารางมีดังนี้:
 
 ```java
-// ตั้งค่าการจัดแนวเนื้อหาตารางไปทางซ้าย
+// ตั้งค่าการจัดตำแหน่งเนื้อหาตารางไปทางซ้าย
 saveOptions.setTableContentAlignment(TableContentAlignment.LEFT);
 doc.save("left_alignment.md", saveOptions);
 
-// ตั้งค่าการจัดตำแหน่งเนื้อหาตารางไปทางขวา
+// ตั้งค่าการจัดตำแหน่งเนื้อหาตารางให้ชิดขวา
 saveOptions.setTableContentAlignment(TableContentAlignment.RIGHT);
 doc.save("right_alignment.md", saveOptions);
 
-// ตั้งค่าการจัดตำแหน่งเนื้อหาตารางให้อยู่ตรงกลาง
+// ตั้งค่าการจัดตำแหน่งเนื้อหาตารางให้อยู่กึ่งกลาง
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-//ตั้งค่าการจัดตำแหน่งเนื้อหาตารางเป็นอัตโนมัติ (กำหนดโดยย่อหน้าแรก)
+// ตั้งค่าการจัดตำแหน่งเนื้อหาตารางเป็นอัตโนมัติ (กำหนดโดยย่อหน้าแรก)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
 
- โดยการเปลี่ยน`TableContentAlignment` คุณสมบัติ คุณสามารถควบคุมวิธีการจัดแนวเนื้อหาภายในตารางเมื่อแปลงเป็น Markdown
+ โดยการเปลี่ยนแปลง`TableContentAlignment` คุณสมบัติ คุณสามารถควบคุมวิธีการจัดเรียงเนื้อหาภายในตารางเมื่อแปลงเป็น Markdown ได้
 
 ## ขั้นตอนที่ 3: การจัดการรูปภาพ
 
- หากต้องการรวมรูปภาพในเอกสาร Markdown คุณต้องระบุโฟลเดอร์ที่มีรูปภาพอยู่ Aspose.Words สำหรับ Java ช่วยให้คุณสามารถตั้งค่าโฟลเดอร์รูปภาพในไฟล์`MarkdownSaveOptions`.
+หากต้องการรวมรูปภาพในเอกสาร Markdown ของคุณ คุณต้องระบุโฟลเดอร์ที่รูปภาพนั้นอยู่ Aspose.Words สำหรับ Java ช่วยให้คุณตั้งค่าโฟลเดอร์รูปภาพใน`MarkdownSaveOptions`.
 
-ต่อไปนี้เป็นวิธีการตั้งค่าโฟลเดอร์รูปภาพและบันทึกเอกสารด้วยรูปภาพ:
+วิธีตั้งค่าโฟลเดอร์รูปภาพและบันทึกเอกสารที่มีรูปภาพดังนี้:
 
 ```java
 // โหลดเอกสารที่มีรูปภาพ
 Document doc = new Document("document_with_images.docx");
 
-// กำหนดเส้นทางโฟลเดอร์รูปภาพ
+// ตั้งค่าเส้นทางโฟลเดอร์รูปภาพ
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
 saveOptions.setImagesFolder("images_folder/");
 
@@ -87,9 +87,9 @@ saveOptions.setImagesFolder("images_folder/");
 doc.save("document_with_images.md", saveOptions);
 ```
 
- ตรวจสอบให้แน่ใจว่าได้เปลี่ยน`"document_with_images.docx"` ด้วยเส้นทางไปยังเอกสาร Word ของคุณที่มีรูปภาพและ`"images_folder/"` พร้อมเส้นทางจริงไปยังโฟลเดอร์ที่เก็บรูปภาพของคุณ
+ อย่าลืมเปลี่ยน`"document_with_images.docx"` โดยมีเส้นทางไปยังเอกสาร Word ของคุณที่มีรูปภาพและ`"images_folder/"` พร้อมเส้นทางจริงไปยังโฟลเดอร์ที่เก็บรูปภาพของคุณ
 
-## กรอกซอร์สโค้ดสำหรับการบันทึกเอกสารเป็น Markdown ใน Aspose.Words สำหรับ Java
+## โค้ดต้นฉบับที่สมบูรณ์สำหรับการบันทึกเอกสารเป็น Markdown ใน Aspose.Words สำหรับ Java
 
 ```java
 public void autoTableContentAlignment() throws Exception
@@ -102,7 +102,7 @@ public void autoTableContentAlignment() throws Exception
 	builder.insertCell();
 	builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 	builder.write("Cell2");
-	// ทำให้ย่อหน้าทั้งหมดภายในตารางถูกจัดแนว
+	// จัดตำแหน่งย่อหน้าทั้งหมดภายในตารางให้ตรงกัน
 	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
 	{
 		saveOptions.setTableContentAlignment(TableContentAlignment.LEFT);
@@ -112,7 +112,7 @@ public void autoTableContentAlignment() throws Exception
 	doc.save("Your Directory Path" + "WorkingWithMarkdownSaveOptions.RightTableContentAlignment.md", saveOptions);
 	saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 	doc.save("Your Directory Path" + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
-	// การจัดตำแหน่งในกรณีนี้จะนำมาจากย่อหน้าแรกในคอลัมน์ตารางที่เกี่ยวข้อง
+	// การจัดตำแหน่งในกรณีนี้จะนำมาจากย่อหน้าแรกในคอลัมน์ตารางที่สอดคล้องกัน
 	saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 	doc.save("Your Directory Path" + "WorkingWithMarkdownSaveOptions.AutoTableContentAlignment.md", saveOptions);
 }
@@ -130,26 +130,26 @@ public void setImagesFolder() throws Exception
 
 ## บทสรุป
 
-ในคู่มือนี้ เราได้สำรวจวิธีการบันทึกเอกสารเป็น Markdown โดยใช้ Aspose.Words สำหรับ Java เราครอบคลุมถึงการสร้างเอกสาร Word การปรับแต่งการจัดแนวเนื้อหาตาราง และการจัดการรูปภาพในไฟล์ Markdown ตอนนี้คุณสามารถแปลงเอกสาร Word ของคุณเป็นรูปแบบ Markdown ได้อย่างมีประสิทธิภาพ ทำให้เหมาะสำหรับแพลตฟอร์มการเผยแพร่และความต้องการด้านเอกสารต่างๆ
+ในคู่มือนี้ เราได้ศึกษาวิธีการบันทึกเอกสารเป็น Markdown โดยใช้ Aspose.Words สำหรับ Java เราได้ครอบคลุมถึงการสร้างเอกสาร Word การปรับแต่งการจัดแนวเนื้อหาตาราง และการจัดการรูปภาพในไฟล์ Markdown ขณะนี้ คุณสามารถแปลงเอกสาร Word เป็นรูปแบบ Markdown ได้อย่างมีประสิทธิภาพ ทำให้เหมาะสำหรับแพลตฟอร์มการเผยแพร่และความต้องการด้านเอกสารต่างๆ
 
 ## คำถามที่พบบ่อย
 
-### ฉันจะติดตั้ง Aspose.Words สำหรับ Java ได้อย่างไร
+### ฉันจะติดตั้ง Aspose.Words สำหรับ Java ได้อย่างไร?
 
- Aspose.Words for Java สามารถติดตั้งได้โดยการรวมไลบรารีไว้ในโปรเจ็กต์ Java ของคุณ คุณสามารถดาวน์โหลดห้องสมุดได้จาก[ที่นี่](https://releases.aspose.com/words/java/) และปฏิบัติตามคำแนะนำในการติดตั้งที่ให้ไว้ในเอกสารประกอบ
+ สามารถติดตั้ง Aspose.Words สำหรับ Java ได้โดยรวมไลบรารีไว้ในโปรเจ็กต์ Java ของคุณ คุณสามารถดาวน์โหลดไลบรารีได้จาก[ที่นี่](https://releases.aspose.com/words/java/) และปฏิบัติตามคำแนะนำในการติดตั้งที่ระบุไว้ในเอกสาร
 
-### ฉันสามารถแปลงเอกสาร Word ที่ซับซ้อนด้วยตารางและรูปภาพเป็น Markdown ได้หรือไม่
+### ฉันสามารถแปลงเอกสาร Word ที่ซับซ้อนพร้อมตารางและรูปภาพเป็น Markdown ได้หรือไม่
 
-ใช่ Aspose.Words สำหรับ Java รองรับการแปลงเอกสาร Word ที่ซับซ้อนด้วยตาราง รูปภาพ และองค์ประกอบการจัดรูปแบบต่างๆ เป็น Markdown คุณสามารถปรับแต่งเอาต์พุต Markdown ตามความซับซ้อนของเอกสารของคุณได้
+ใช่ Aspose.Words สำหรับ Java รองรับการแปลงเอกสาร Word ที่ซับซ้อนพร้อมตาราง รูปภาพ และองค์ประกอบการจัดรูปแบบต่างๆ ให้เป็น Markdown คุณสามารถปรับแต่งผลลัพธ์ Markdown ให้เหมาะกับความซับซ้อนของเอกสารของคุณได้
 
-### ฉันจะจัดการรูปภาพในไฟล์ Markdown ได้อย่างไร
+### ฉันจะจัดการรูปภาพในไฟล์ Markdown ได้อย่างไร?
 
- หากต้องการรวมรูปภาพในไฟล์ Markdown ให้ตั้งค่าเส้นทางโฟลเดอร์รูปภาพโดยใช้`setImagesFolder`วิธีการใน`MarkdownSaveOptions`- ตรวจสอบให้แน่ใจว่าไฟล์รูปภาพถูกเก็บไว้ในโฟลเดอร์ที่ระบุ และ Aspose.Words สำหรับ Java จะจัดการการอ้างอิงรูปภาพตามนั้น
+ หากต้องการรวมรูปภาพในไฟล์ Markdown ให้ตั้งค่าเส้นทางโฟลเดอร์รูปภาพโดยใช้`setImagesFolder`วิธีการใน`MarkdownSaveOptions`ตรวจสอบให้แน่ใจว่าไฟล์รูปภาพถูกเก็บไว้ในโฟลเดอร์ที่ระบุ และ Aspose.Words สำหรับ Java จะจัดการการอ้างอิงรูปภาพตามนั้น
 
-### มี Aspose.Words สำหรับ Java เวอร์ชันทดลองใช้งานหรือไม่
+### มี Aspose.Words เวอร์ชันทดลองใช้งานสำหรับ Java หรือไม่
 
-ใช่ คุณสามารถขอรับ Aspose.Words สำหรับ Java เวอร์ชันทดลองใช้ได้จากเว็บไซต์ Aspose เวอร์ชันทดลองใช้งานช่วยให้คุณสามารถประเมินความสามารถของไลบรารีได้ก่อนที่จะซื้อใบอนุญาต
+ใช่ คุณสามารถรับ Aspose.Words รุ่นทดลองใช้สำหรับ Java ได้จากเว็บไซต์ Aspose รุ่นทดลองใช้ช่วยให้คุณประเมินความสามารถของไลบรารีได้ก่อนซื้อใบอนุญาต
 
-### ฉันจะหาตัวอย่างและเอกสารประกอบเพิ่มเติมได้ที่ไหน
+### ฉันสามารถหาตัวอย่างและเอกสารเพิ่มเติมได้ที่ไหน
 
- สำหรับตัวอย่างเพิ่มเติม เอกสาร และข้อมูลโดยละเอียดเกี่ยวกับ Aspose.Words สำหรับ Java โปรดไปที่[เอกสารประกอบ](https://reference.aspose.com/words/java/).
+ สำหรับตัวอย่าง เอกสาร และข้อมูลโดยละเอียดเพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ Java โปรดไปที่[เอกสารประกอบ](https://reference.aspose.com/words/java/).

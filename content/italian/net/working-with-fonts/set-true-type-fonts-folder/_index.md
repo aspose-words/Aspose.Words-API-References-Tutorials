@@ -1,28 +1,28 @@
 ---
-title: Imposta la cartella dei caratteri True Type
-linktitle: Imposta la cartella dei caratteri True Type
+title: Imposta cartella dei font True Type
+linktitle: Imposta cartella dei font True Type
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come impostare una cartella True Type Fonts nei documenti di Word utilizzando Aspose.Words per .NET. Segui la nostra guida dettagliata passo dopo passo per garantire una gestione coerente dei caratteri.
+description: Scopri come impostare una cartella True Type Fonts nei documenti Word usando Aspose.Words per .NET. Segui la nostra guida dettagliata, passo dopo passo, per garantire una gestione coerente dei font.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/set-true-type-fonts-folder/
 ---
 ## Introduzione
 
-ci stiamo immergendo nell'affascinante mondo della gestione dei caratteri nei documenti Word utilizzando Aspose.Words per .NET. Se hai mai avuto difficoltà a incorporare i caratteri corretti o a garantire che il tuo documento appaia perfetto su ogni dispositivo, sei nel posto giusto. Esamineremo il processo di impostazione di una cartella True Type Fonts per semplificare la gestione dei font del tuo documento, garantendo coerenza e chiarezza nei tuoi documenti.
+ci stiamo immergendo nell'affascinante mondo della gestione dei font nei documenti Word usando Aspose.Words per .NET. Se hai mai avuto difficoltà a incorporare i font corretti o a garantire che il tuo documento appaia perfetto su ogni dispositivo, sei nel posto giusto. Ti guideremo attraverso il processo di impostazione di una cartella True Type Fonts per semplificare la gestione dei font del tuo documento, assicurando coerenza e chiarezza nei tuoi documenti.
 
 ## Prerequisiti
 
-Prima di passare al nocciolo della questione, esaminiamo alcuni prerequisiti per assicurarci che tu sia pronto per il successo:
+Prima di entrare nel vivo dell'argomento, vediamo alcuni prerequisiti per assicurarti che tutto sia pronto per il successo:
 
-1.  Aspose.Words per .NET: assicurati di avere installata la versione più recente. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words per .NET: assicurati di avere installata l'ultima versione. Puoi scaricarla da[Qui](https://releases.aspose.com/words/net/).
 2. Ambiente di sviluppo: un ambiente di sviluppo .NET funzionante, come Visual Studio.
-3. Conoscenza di base di C#: sarà utile la familiarità con la programmazione C#.
-4. Un documento di esempio: tieni pronto un documento Word con cui desideri lavorare.
+3. Conoscenza di base di C#: sarà utile avere familiarità con la programmazione in C#.
+4. Un documento di esempio: tieni pronto un documento Word con cui vuoi lavorare.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per prima cosa, dobbiamo importare gli spazi dei nomi necessari. Sono come la troupe dietro le quinte che garantisce che tutto funzioni senza intoppi.
+Prima di tutto, dobbiamo importare i namespace necessari. Sono come la troupe dietro le quinte che assicura che tutto funzioni senza intoppi.
 
 ```csharp
 using Aspose.Words;
@@ -31,10 +31,10 @@ using Aspose.Words.Fonts;
 
 ## Passaggio 1: carica il documento
 
- Iniziamo caricando il documento. Utilizzeremo il`Document` classe da Aspose.Words per caricare un documento Word esistente.
+ Iniziamo caricando il tuo documento. Utilizzeremo il`Document` classe da Aspose.Words per caricare un documento Word esistente.
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -42,34 +42,34 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Passaggio 2: inizializzare FontSettings
 
- Successivamente, creeremo un'istanza di`FontSettings`classe. Questa classe ci consente di personalizzare il modo in cui vengono gestiti i caratteri nel nostro documento.
+ Successivamente, creeremo un'istanza di`FontSettings`classe. Questa classe ci consente di personalizzare il modo in cui i font vengono gestiti nel nostro documento.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 ```
 
-## Passaggio 3: imposta la cartella dei caratteri
+## Passaggio 3: impostare la cartella dei caratteri
 
-Ora arriva la parte emozionante. Specificheremo la cartella in cui si trovano i nostri caratteri True Type. Questo passaggio garantisce che Aspose.Words utilizzi i caratteri da questa cartella durante il rendering o l'incorporamento dei caratteri.
+Ora arriva la parte emozionante. Specifichiamo la cartella in cui si trovano i nostri font True Type. Questo passaggio assicura che Aspose.Words utilizzi i font da questa cartella quando esegue il rendering o l'incorporamento dei font.
 
 ```csharp
-// Tieni presente che questa impostazione sovrascriverà qualsiasi origine di caratteri predefinita ricercata per impostazione predefinita.
-// Ora solo queste cartelle verranno cercate per i caratteri durante il rendering o l'incorporamento dei caratteri.
+// Si noti che questa impostazione sovrascriverà tutte le fonti di font predefinite ricercate per impostazione predefinita.
+// D'ora in poi la ricerca dei font verrà effettuata solo in queste cartelle durante il rendering o l'incorporamento dei font.
 fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
 ```
 
-## Passaggio 4: applica le impostazioni dei caratteri al documento
+## Passaggio 4: applicare le impostazioni del carattere al documento
 
-Con le nostre impostazioni dei caratteri configurate, ora applicheremo queste impostazioni al nostro documento. Questo passaggio è fondamentale per garantire che il nostro documento utilizzi i caratteri specificati.
+Con le nostre impostazioni dei font configurate, applicheremo ora queste impostazioni al nostro documento. Questo passaggio è fondamentale per garantire che il nostro documento utilizzi i font specificati.
 
 ```csharp
-// Configura le impostazioni dei caratteri
+// Imposta le impostazioni del carattere
 doc.FontSettings = fontSettings;
 ```
 
-## Passaggio 5: salva il documento
+## Passaggio 5: Salvare il documento
 
-Infine, salveremo il documento. Puoi salvarlo in vari formati, ma per questo tutorial lo salveremo come PDF.
+Infine, salveremo il documento. Puoi salvarlo in vari formati, ma per questo tutorial, lo salveremo come PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
@@ -77,21 +77,21 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 
 ## Conclusione
 
-Ed ecco qua! Hai impostato con successo una cartella True Type Fonts per i tuoi documenti Word utilizzando Aspose.Words per .NET. Ciò garantisce che i tuoi documenti abbiano un aspetto coerente e professionale su tutte le piattaforme. La gestione dei caratteri è un aspetto critico della creazione di documenti e con Aspose.Words è incredibilmente semplice.
+Ed ecco fatto! Hai impostato con successo una cartella True Type Fonts per i tuoi documenti Word usando Aspose.Words per .NET. Questo assicura che i tuoi documenti abbiano un aspetto coerente e professionale su tutte le piattaforme. La gestione dei font è un aspetto critico della creazione di documenti e con Aspose.Words è incredibilmente semplice.
 
 ## Domande frequenti
 
-### Posso utilizzare più cartelle di caratteri?
- Sì, puoi utilizzare più cartelle di caratteri combinandole`FontSettings.GetFontSources`E`FontSettings.SetFontSources`.
+### Posso utilizzare più cartelle di font?
+ Sì, puoi utilizzare più cartelle di font combinandole`FontSettings.GetFontSources` E`FontSettings.SetFontSources`.
 
-### Cosa succede se la cartella dei caratteri specificata non esiste?
-Se la cartella dei caratteri specificata non esiste, Aspose.Words non sarà in grado di individuare i caratteri e verranno invece utilizzati i caratteri di sistema predefiniti.
+### Cosa succede se la cartella del font specificata non esiste?
+Se la cartella dei font specificata non esiste, Aspose.Words non sarà in grado di individuare i font e al loro posto verranno utilizzati i font di sistema predefiniti.
 
-### Posso ripristinare le impostazioni predefinite dei caratteri?
- Sì, puoi ripristinare le impostazioni predefinite dei caratteri reimpostando il file`FontSettings` esempio.
+### Posso ripristinare le impostazioni predefinite del font?
+ Sì, puoi ripristinare le impostazioni predefinite del font reimpostando`FontSettings` esempio.
 
-### È possibile incorporare caratteri nel documento?
-Sì, Aspose.Words ti consente di incorporare caratteri nel documento per garantire coerenza tra diversi dispositivi.
+### È possibile incorporare i font nel documento?
+Sì, Aspose.Words consente di incorporare i font nel documento per garantire la coerenza su diversi dispositivi.
 
 ### In quali formati posso salvare il mio documento?
-Aspose.Words supporta una varietà di formati tra cui PDF, DOCX, HTML e altri.
+Aspose.Words supporta vari formati, tra cui PDF, DOCX, HTML e altri.

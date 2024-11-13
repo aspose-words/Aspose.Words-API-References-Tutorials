@@ -109,7 +109,7 @@ Gratulálok! Sikeresen megtanulta, hogyan rejthet el diagramtengelyt egy Word-do
 Az Aspose.Words for .NET egy hatékony API Word dokumentumok létrehozására, szerkesztésére, konvertálására és manipulálására .NET alkalmazásokon belül.
 
 ### Elrejthetem az X és az Y tengelyt is egy diagramban?
- Igen, mindkét tengelyt elrejtheti a`Hidden` mindkettő tulajdona`AxisX`és`AxisY` hogy`true`.
+ Igen, mindkét tengelyt elrejtheti a`Hidden` mindkettő tulajdona`AxisX` és`AxisY` hogy`true`.
 
 ### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
  Igen, ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/).

@@ -68,7 +68,7 @@ foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
 
 ## Schritt 4: Eigenschaften aus ActiveX-Steuerelementen extrahieren
 
-Überprüfen Sie innerhalb der Schleife, ob das Steuerelement ein Forms2OleControl ist. Wenn ja, konvertieren Sie es und extrahieren Sie die Eigenschaften.
+Überprüfen Sie innerhalb der Schleife, ob das Steuerelement ein Forms2OleControl ist. Wenn dies der Fall ist, konvertieren Sie es und extrahieren Sie die Eigenschaften.
 
 ```csharp
 Forms2OleControl checkBox = (Forms2OleControl) oleControl;

@@ -18,7 +18,7 @@ url: /zh/net/join-and-append-documents/smart-style-behavior/
 -  Aspose.Words for .NET：确保您拥有最新版本。如果没有，请从[下载页面](https://releases.aspose.com/words/net/).
 - 开发环境：任何与 .NET 兼容的环境都可以，例如 Visual Studio。
 - 两个 Word 文档：对于本教程，我们将使用“Document source.docx”和“Northwind traders.docx”。
--  Aspose 许可证：为避免任何限制，请获取[临时执照](https://purchase.aspose.com/temporary-license/)如果你还没有购买的话。
+-  Aspose 许可证：为避免任何限制，请获取[临时执照](https://purchase.aspose.com/temporary-license/)如果您尚未购买。
 
 ### 导入命名空间
 
@@ -47,7 +47,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 解释：
 这里，我们从指定目录加载“Document source.docx”和“Northwind traders.docx”。确保替换`"YOUR DOCUMENT DIRECTORY"`使用存储文档的实际路径。
 
-## 步骤 2：初始化 DocumentBuilder
+## 第 2 步：初始化 DocumentBuilder
 
 接下来，我们需要创建一个`DocumentBuilder`目标文档的对象。这将允许我们操作文档的内容。
 
@@ -84,7 +84,7 @@ ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = tru
 ```
 
 解释：
-`SmartStyleBehavior`确保源文档的样式顺利集成到目标文档中，避免任何样式冲突。
+`SmartStyleBehavior`确保源文档的样式能够顺利集成到目标文档中，避免任何样式冲突。
 
 ## 步骤 5：将源文档插入目标文档
 
@@ -112,7 +112,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 
 ## 结论
 
-各位，现在就完成了！通过这些步骤，您已经学会了如何使用 Aspose.Words for .NET 合并 Word 文档，同时保持其独特的样式。不再有样式错误或格式化麻烦 — 每次都只有流畅、时尚的文档。无论您是合并报告、提案还是任何其他文档，此方法都能确保一切看起来都恰到好处。
+各位，现在就完成了！通过这些步骤，您已经学会了如何使用 Aspose.Words for .NET 合并 Word 文档，同时保持其独特的样式。不再有样式错误或格式问题 — 每次都只有流畅、时尚的文档。无论您是合并报告、提案还是任何其他文档，此方法都能确保一切看起来都恰到好处。
 
 ## 常见问题解答
 

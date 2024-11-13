@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Nahradit`"original_document.docx"`a`"modified_document.docx"` s cestami k vašim vlastním dokumentům.
+ Nahradit`"original_document.docx"` a`"modified_document.docx"` s cestami k vašim vlastním dokumentům.
 
 ## Krok 2: Porovnejte dokumenty
 
@@ -69,7 +69,7 @@ Porovnání rozdílů mezi dokumenty pomocí Aspose.Words for Java je jednoduch�
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Chcete-li nainstalovat Aspose.Words for Java, navštivte stránku pro stahování[zde](https://releases.aspose.com/words/java/) a postupujte podle dodaných pokynů k instalaci.
+ Chcete-li nainstalovat Aspose.Words for Java, navštivte stránku pro stahování[zde](https://releases.aspose.com/words/java/) postupujte podle dodaných pokynů k instalaci.
 
 ### Mohu porovnávat dokumenty s různými formáty, jako jsou DOCX a PDF?
 

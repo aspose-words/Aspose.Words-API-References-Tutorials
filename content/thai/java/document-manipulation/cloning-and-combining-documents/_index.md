@@ -1,20 +1,20 @@
 ---
 title: การโคลนและการรวมเอกสารใน Aspose.Words สำหรับ Java
 linktitle: การโคลนและการรวมเอกสาร
-second_title: Aspose.Words Java การประมวลผลเอกสาร API
-description: เรียนรู้วิธีโคลนและรวมเอกสารใน Aspose.Words สำหรับ Java คำแนะนำทีละขั้นตอนพร้อมตัวอย่างซอร์สโค้ด
+second_title: API การประมวลผลเอกสาร Java ของ Aspose.Words
+description: เรียนรู้วิธีโคลนและรวมเอกสารใน Aspose.Words สำหรับ Java คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ดต้นฉบับ
 type: docs
 weight: 27
 url: /th/java/document-manipulation/cloning-and-combining-documents/
 ---
 
-## ข้อมูลเบื้องต้นเกี่ยวกับการโคลนและการรวมเอกสารใน Aspose.Words สำหรับ Java
+## บทนำเกี่ยวกับการโคลนและการรวมเอกสารใน Aspose.Words สำหรับ Java
 
-ในบทช่วยสอนนี้ เราจะสำรวจวิธีการโคลนและรวมเอกสารโดยใช้ Aspose.Words สำหรับ Java เราจะครอบคลุมสถานการณ์ต่างๆ รวมถึงการโคลนเอกสาร การแทรกเอกสารที่จุดแทนที่ บุ๊กมาร์ก และระหว่างการดำเนินการจดหมายเวียน
+ในบทช่วยสอนนี้ เราจะศึกษาวิธีการโคลนและรวมเอกสารโดยใช้ Aspose.Words สำหรับ Java เราจะครอบคลุมสถานการณ์ต่างๆ รวมถึงการโคลนเอกสาร การแทรกเอกสารที่จุดแทนที่ การคั่นหน้า และระหว่างการดำเนินการผสานจดหมาย
 
 ## ขั้นตอนที่ 1: การโคลนเอกสาร
 
- หากต้องการโคลนเอกสารใน Aspose.Words สำหรับ Java คุณสามารถใช้ไฟล์`deepClone()` วิธี. นี่เป็นตัวอย่างง่ายๆ:
+ ในการโคลนเอกสารใน Aspose.Words สำหรับ Java คุณสามารถใช้`deepClone()` วิธีการนี้ เป็นตัวอย่างง่ายๆ ดังนี้:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -22,11 +22,11 @@ Document clone = doc.deepClone();
 clone.save("Your Directory Path" + "CloneAndCombineDocuments.CloningDocument.docx");
 ```
 
-โค้ดนี้จะสร้างสำเนาแบบลึกของเอกสารต้นฉบับและบันทึกเป็นไฟล์ใหม่
+โค้ดนี้จะสร้างโคลนเชิงลึกของเอกสารต้นฉบับและบันทึกเป็นไฟล์ใหม่
 
 ## ขั้นตอนที่ 2: การแทรกเอกสารที่จุดแทนที่
 
-คุณสามารถแทรกเอกสารที่จุดแทนที่เฉพาะในเอกสารอื่นได้ ต่อไปนี้คือวิธีที่คุณสามารถทำได้:
+คุณสามารถแทรกเอกสารที่จุดแทนที่เฉพาะในเอกสารอื่นได้ โดยทำได้ดังนี้:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
@@ -37,11 +37,11 @@ mainDoc.getRange().replace(Pattern.compile("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
 
- ในตัวอย่างนี้ เราใช้ a`FindReplaceOptions` วัตถุเพื่อระบุตัวจัดการการเรียกกลับสำหรับการแทนที่ ที่`InsertDocumentAtReplaceHandler` คลาสจัดการตรรกะการแทรก
+ ในตัวอย่างนี้เราใช้`FindReplaceOptions` วัตถุเพื่อระบุตัวจัดการการโทรกลับสำหรับการเปลี่ยน`InsertDocumentAtReplaceHandler` คลาสจัดการตรรกะการแทรก
 
-## ขั้นตอนที่ 3: การแทรกเอกสารที่บุ๊กมาร์ก
+## ขั้นตอนที่ 3: การแทรกเอกสารในบุ๊กมาร์ก
 
-หากต้องการแทรกเอกสารที่บุ๊กมาร์กเฉพาะในเอกสารอื่น คุณสามารถใช้รหัสต่อไปนี้:
+หากต้องการแทรกเอกสารที่บุ๊กมาร์กเฉพาะในเอกสารอื่น คุณสามารถใช้โค้ดดังต่อไปนี้:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
@@ -51,11 +51,11 @@ insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtBookmark.docx");
 ```
 
- ที่นี่เราค้นหาบุ๊กมาร์กตามชื่อและใช้`insertDocument` วิธีการแทรกเนื้อหาของ`subDoc` เอกสารที่ตำแหน่งบุ๊กมาร์ก
+ ที่นี่เราจะค้นหาบุ๊กมาร์กตามชื่อและใช้`insertDocument` วิธีการแทรกเนื้อหาของ`subDoc` เอกสารในตำแหน่งบุ๊กมาร์ก
 
-## ขั้นตอนที่ 4: การแทรกเอกสารระหว่างจดหมายเวียน
+## ขั้นตอนที่ 4: การแทรกเอกสารระหว่างการผสานจดหมาย
 
-คุณสามารถแทรกเอกสารระหว่างการดำเนินการจดหมายเวียนใน Aspose.Words สำหรับ Java มีวิธีดังนี้:
+คุณสามารถแทรกเอกสารระหว่างการดำเนินการผสานจดหมายใน Aspose.Words สำหรับ Java ได้ ดังต่อไปนี้:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
@@ -64,17 +64,17 @@ mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { "Yo
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
- ในตัวอย่างนี้ เราตั้งค่าฟิลด์ที่รวมการโทรกลับโดยใช้`InsertDocumentAtMailMergeHandler` คลาสเพื่อจัดการการแทรกเอกสารที่ระบุโดยฟิลด์ "Document_1"
+ ในตัวอย่างนี้ เราตั้งค่าคอลแบ็กการรวมฟิลด์โดยใช้`InsertDocumentAtMailMergeHandler` คลาสสำหรับจัดการการแทรกเอกสารที่ระบุโดยฟิลด์ "Document_1"
 
 ## บทสรุป
 
-การโคลนและการรวมเอกสารใน Aspose.Words สำหรับ Java สามารถทำได้โดยใช้เทคนิคต่างๆ ไม่ว่าคุณต้องการโคลนเอกสาร แทรกเนื้อหาที่จุดแทนที่ บุ๊กมาร์ก หรือระหว่างการรวมจดหมาย Aspose.Words มอบคุณสมบัติอันทรงพลังเพื่อจัดการเอกสารได้อย่างราบรื่น
+การโคลนและรวมเอกสารใน Aspose.Words สำหรับ Java สามารถทำได้โดยใช้เทคนิคต่างๆ ไม่ว่าคุณจะต้องโคลนเอกสาร แทรกเนื้อหาที่จุดแทนที่ คั่นหน้า หรือระหว่างการผสานจดหมาย Aspose.Words ก็มีฟีเจอร์อันทรงพลังเพื่อจัดการเอกสารได้อย่างราบรื่น
 
 ## คำถามที่พบบ่อย
 
 ### ฉันจะโคลนเอกสารใน Aspose.Words สำหรับ Java ได้อย่างไร
 
- คุณสามารถโคลนเอกสารใน Aspose.Words สำหรับ Java ได้โดยใช้`deepClone()` วิธี. นี่คือตัวอย่าง:
+ คุณสามารถโคลนเอกสารใน Aspose.Words สำหรับ Java ได้โดยใช้`deepClone()` วิธีการ นี่คือตัวอย่าง:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -82,9 +82,9 @@ Document clone = doc.deepClone();
 clone.save("Your Directory Path" + "ClonedDocument.docx");
 ```
 
-### ฉันจะแทรกเอกสารลงในบุ๊กมาร์กได้อย่างไร?
+### ฉันจะแทรกเอกสารไว้ในบุ๊กมาร์กได้อย่างไร?
 
- หากต้องการแทรกเอกสารที่บุ๊กมาร์กใน Aspose.Words สำหรับ Java คุณสามารถค้นหาบุ๊กมาร์กตามชื่อ จากนั้นใช้`insertDocument` วิธีการแทรกเนื้อหา นี่คือตัวอย่าง:
+ หากต้องการแทรกเอกสารที่บุ๊กมาร์กใน Aspose.Words สำหรับ Java คุณสามารถค้นหาบุ๊กมาร์กตามชื่อแล้วใช้`insertDocument` วิธีการแทรกเนื้อหา ดังตัวอย่างต่อไปนี้
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");
@@ -94,9 +94,9 @@ insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
 mainDoc.save("Your Directory Path" + "CombinedDocument.docx");
 ```
 
-### ฉันจะแทรกเอกสารระหว่างจดหมายเวียนใน Aspose.Words สำหรับ Java ได้อย่างไร
+### ฉันจะแทรกเอกสารในระหว่างการผสานจดหมายใน Aspose.Words สำหรับ Java ได้อย่างไร
 
-คุณสามารถแทรกเอกสารระหว่างจดหมายเวียนใน Aspose.Words สำหรับ Java ได้โดยตั้งค่าฟิลด์ที่รวมการโทรกลับและระบุเอกสารที่จะแทรก นี่คือตัวอย่าง:
+คุณสามารถแทรกเอกสารระหว่างการผสานจดหมายใน Aspose.Words สำหรับ Java ได้โดยตั้งค่าคอลแบ็กการผสานฟิลด์และระบุเอกสารที่จะแทรก ต่อไปนี้คือตัวอย่าง:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");
@@ -105,4 +105,4 @@ mainDoc.getMailMerge().execute(new String[] { "DocumentField" }, new Object[] { 
 mainDoc.save("Your Directory Path" + "MergedDocument.docx");
 ```
 
- ในตัวอย่างนี้`InsertDocumentAtMailMergeHandler`คลาสจัดการตรรกะการแทรกสำหรับ "DocumentField" ในระหว่างจดหมายเวียน
+ ในตัวอย่างนี้`InsertDocumentAtMailMergeHandler`คลาสจัดการตรรกะการแทรกสำหรับ "DocumentField" ในระหว่างการผสานจดหมาย

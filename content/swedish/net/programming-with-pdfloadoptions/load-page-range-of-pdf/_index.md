@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
  Ersätta`"Pdf Document.pdf"` med namnet på din PDF-fil.
 
-## Steg 5: Spara de laddade sidorna
+## Steg 5: Spara de inlästa sidorna
 
 Slutligen, spara de laddade sidorna till en ny PDF-fil.
 

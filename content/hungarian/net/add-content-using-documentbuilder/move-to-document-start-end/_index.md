@@ -15,7 +15,7 @@ Szia! Szóval, Ön Word-dokumentumokkal dolgozik, és szüksége van egy módra,
 
 Mielőtt belemerülnénk a kódba, győződjünk meg arról, hogy mindennel megvan, amire szüksége van:
 
-1.  Aspose.Words for .NET: Ez az a varázseszköz, amelyet használni fogunk. Tudod[töltse le itt](https://releases.aspose.com/words/net/) vagy megragad a[ingyenes próbaverzió](https://releases.aspose.com/).
+1.  Aspose.Words for .NET: Ez az a varázseszköz, amelyet használni fogunk. Megteheti[töltse le itt](https://releases.aspose.com/words/net/) vagy megragad a[ingyenes próbaverzió](https://releases.aspose.com/).
 2. .NET fejlesztői környezet: A Visual Studio jó választás.
 3. Alapvető C# ismerete: Ne aggódj, nem kell varázslónak lenned, de egy kis ismerkedés sokat segít.
 
@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Itt egy példányt hozunk létre`Document`és`DocumentBuilder` . Gondolj bele`Document` mint az üres Word-dokumentum és`DocumentBuilder` mint a tollad.
+ Itt egy példányt hozunk létre`Document` és`DocumentBuilder` . Gondolj bele`Document` mint az Ön üres Word-dokumentuma és`DocumentBuilder` mint a tollad.
 
 ## 2. lépés: Lépjen a Dokumentum indítása elemre
 

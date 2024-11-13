@@ -9,19 +9,19 @@ url: /es/net/programming-with-fileformat/detect-file-format/
 ---
 ## Introducción
 
-En el mundo digital actual, gestionar diferentes formatos de documentos de manera eficiente es crucial. Ya sea que maneje Word, PDF, HTML u otros formatos, poder detectar y procesar estos archivos correctamente puede ahorrarle mucho tiempo y esfuerzo. En este tutorial, exploraremos cómo detectar formatos de archivos de documentos usando Aspose.Words para .NET. Esta guía lo guiará a través de todo lo que necesita saber, desde requisitos previos hasta una guía detallada paso a paso.
+En el mundo digital actual, es fundamental gestionar distintos formatos de documentos de forma eficaz. Ya sea que trabaje con Word, PDF, HTML u otros formatos, poder detectar y procesar estos archivos correctamente puede ahorrarle mucho tiempo y esfuerzo. En este tutorial, exploraremos cómo detectar formatos de archivos de documentos con Aspose.Words para .NET. Esta guía le explicará todo lo que necesita saber, desde los requisitos previos hasta una guía detallada paso a paso.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de profundizar en el código, asegurémonos de que tiene todo lo que necesita:
+Antes de sumergirnos en el código, asegurémonos de que tienes todo lo que necesitas:
 
--  Aspose.Words para .NET: puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/) . Asegúrese de tener una licencia válida. Si no, puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/).
+-  Aspose.Words para .NET: Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/) Asegúrese de tener una licencia válida. Si no, puede obtener una[licencia temporal](https://purchase.aspose.com/temporary-license/).
 - Visual Studio: cualquier versión reciente funcionará bien.
 - .NET Framework: asegúrese de tener instalada la versión correcta.
 
 ## Importar espacios de nombres
 
-Para comenzar, necesitarás importar los espacios de nombres necesarios en tu proyecto:
+Para comenzar, deberá importar los espacios de nombres necesarios en su proyecto:
 
 ```csharp
 using Aspose.Words;
@@ -35,7 +35,7 @@ using System.Linq;
 
 Dividamos el ejemplo en varios pasos para que sea más fácil de seguir.
 
-## Paso 1: configurar directorios
+## Paso 1: Configurar directorios
 
 Primero, necesitamos configurar directorios donde se ordenarán los archivos según su formato.
 
@@ -47,7 +47,7 @@ string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-// Cree los directorios si aún no existen.
+// Crea los directorios si aún no existen.
 if (!Directory.Exists(supportedDir))
     Directory.CreateDirectory(supportedDir);
 if (!Directory.Exists(unknownDir))
@@ -58,17 +58,17 @@ if (!Directory.Exists(pre97Dir))
     Directory.CreateDirectory(pre97Dir);
 ```
 
-## Paso 2: obtenga la lista de archivos
+## Paso 2: Obtener la lista de archivos
 
-A continuación, obtendremos una lista de archivos del directorio, excluyendo los documentos dañados.
+A continuación, obtendremos una lista de archivos del directorio, excluyendo cualquier documento dañado.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(dataDir).Where(name => !name.EndsWith("Corrupted document.docx"));
 ```
 
-## Paso 3: detectar formatos de archivo
+## Paso 3: Detectar formatos de archivos
 
-Ahora, recorremos cada archivo y detectamos su formato usando Aspose.Words.
+Ahora, iteramos a través de cada archivo y detectamos su formato usando Aspose.Words.
 
 ```csharp
 foreach (string fileName in fileList)
@@ -154,21 +154,21 @@ foreach (string fileName in fileList)
 
 ## Conclusión
 
-Detectar formatos de archivos de documentos usando Aspose.Words para .NET es un proceso sencillo. Al configurar sus directorios, obtener su lista de archivos y utilizar Aspose.Words para detectar formatos de archivos, puede organizar y administrar sus documentos de manera eficiente. Este enfoque no sólo ahorra tiempo sino que también garantiza el manejo correcto de varios formatos de documentos.
+Detectar formatos de archivos de documentos con Aspose.Words para .NET es un proceso sencillo. Al configurar los directorios, obtener la lista de archivos y utilizar Aspose.Words para detectar formatos de archivos, puede organizar y administrar sus documentos de manera eficiente. Este enfoque no solo ahorra tiempo, sino que también garantiza que maneje varios formatos de documentos correctamente.
 
 ## Preguntas frecuentes
 
 ### ¿Qué es Aspose.Words para .NET?
-Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos de Word mediante programación. Permite a los desarrolladores crear, modificar y convertir documentos en varios formatos.
+Aspose.Words para .NET es una potente biblioteca para trabajar con documentos de Word de forma programática. Permite a los desarrolladores crear, modificar y convertir documentos en varios formatos.
 
 ### ¿Puede Aspose.Words detectar documentos cifrados?
-Sí, Aspose.Words puede detectar si un documento está cifrado y usted puede manejar dichos documentos en consecuencia.
+Sí, Aspose.Words puede detectar si un documento está encriptado y puede manejar dichos documentos en consecuencia.
 
 ### ¿Qué formatos puede detectar Aspose.Words?
 Aspose.Words puede detectar una amplia gama de formatos, incluidos DOC, DOCX, RTF, HTML, MHTML, ODT y muchos más.
 
 ### ¿Cómo puedo obtener una licencia temporal para Aspose.Words?
- Puede obtener una licencia temporal del[Asponer compra](https://purchase.aspose.com/temporary-license/) página.
+ Puede obtener una licencia temporal de la[Compra de Aspose](https://purchase.aspose.com/temporary-license/) página.
 
 ### ¿Dónde puedo encontrar la documentación de Aspose.Words?
- La documentación para Aspose.Words se puede encontrar[aquí](https://reference.aspose.com/words/net/).
+ La documentación de Aspose.Words se puede encontrar[aquí](https://reference.aspose.com/words/net/).

@@ -87,10 +87,10 @@ import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.SaveFormat;
 
-// Ladda ett dokument med äldre kontrolltecken
+//Ladda ett dokument med äldre kontrolltecken
 Document doc = new Document("LegacyControlChars.doc");
 
-//Skapa OoxmlSaveOptions med formatet FLAT_OPC och gör det möjligt att behålla äldre kontrolltecken
+// Skapa OoxmlSaveOptions med formatet FLAT_OPC och gör det möjligt att behålla äldre kontrolltecken
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
 saveOptions.setKeepLegacyControlChars(true);
 
@@ -172,7 +172,7 @@ För att ta bort lösenordsskyddet från ett lösenordsskyddat dokument kan du �
 
 ### Kan jag ställa in anpassade egenskaper när jag sparar ett dokument i OOXML-format?
 
- Ja, du kan ställa in anpassade egenskaper för ett dokument innan du sparar det i OOXML-format. Använd`BuiltInDocumentProperties`och`CustomDocumentProperties` klasser för att ställa in olika egenskaper som författare, titel, nyckelord och anpassade egenskaper.
+ Ja, du kan ställa in anpassade egenskaper för ett dokument innan du sparar det i OOXML-format. Använd`BuiltInDocumentProperties` och`CustomDocumentProperties` klasser för att ställa in olika egenskaper som författare, titel, nyckelord och anpassade egenskaper.
 
 ### Vilken är standardkomprimeringsnivån när du sparar ett dokument i OOXML-format?
 

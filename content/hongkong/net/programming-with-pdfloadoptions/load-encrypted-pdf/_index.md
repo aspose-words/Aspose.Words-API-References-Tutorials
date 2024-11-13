@@ -89,7 +89,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ## 結論
 
-現在你就得到它了！使用 Aspose.Words for .NET 載入加密的 PDF 不僅簡單，而且非常有趣。透過執行這些步驟，您已經解鎖了像專業人士一樣處理 PDF 加密的能力。請記住，掌握任何工具的關鍵是練習，因此請毫不猶豫地進行實驗和探索。
+現在你就擁有了！使用 Aspose.Words for .NET 載入加密的 PDF 不僅簡單，而且非常有趣。透過執行這些步驟，您已經解鎖了像專業人士一樣處理 PDF 加密的能力。請記住，掌握任何工具的關鍵是練習，因此請毫不猶豫地進行實驗和探索。
 
 如果您有任何疑問或需要進一步協助，[Aspose.Words 文檔](https://reference.aspose.com/words/net/)和[支援論壇](https://forum.aspose.com/c/words/8)都是很好的起點。
 

@@ -1,25 +1,25 @@
 ---
-title: Bir Grafikte Eksen Sınırları
-linktitle: Bir Grafikte Eksen Sınırları
+title: Bir Grafikteki Eksen Sınırları
+linktitle: Bir Grafikteki Eksen Sınırları
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak eksende görüntülenen değer aralığını kontrol ederek bir grafikte eksenin sınırlarını nasıl ayarlayacağınızı öğrenin.
+description: Aspose.Words for .NET kullanarak bir grafikteki eksenin sınırlarını nasıl ayarlayacağınızı ve eksende görüntülenen değer aralığını nasıl kontrol edeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/bounds-of-axis/
 ---
 ## giriiş
 
-.NET'te grafiklerle profesyonel belgeler mi oluşturmak istiyorsunuz? Doğru yerdesiniz! Bu kılavuz, bir grafikte eksen sınırlarını ayarlamak için Aspose.Words for .NET kullanma sürecinde size yol gösterecektir. Kütüphanede yeni olsanız bile kolayca takip edebilmenizi sağlamak için her adımı ayrıntılı olarak açıklayacağız. O halde haydi dalalım ve başlayalım!
+.NET'te grafiklerle profesyonel belgeler mi oluşturmak istiyorsunuz? Doğru yerdesiniz! Bu kılavuz, bir grafikteki eksenin sınırlarını belirlemek için .NET için Aspose.Words'ü kullanma sürecinde size yol gösterecek. Kütüphaneye yeni olsanız bile kolayca takip edebilmeniz için her adımı parçalara ayıracağız. Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
--  Aspose.Words for .NET: Yapabilirsin[indirmek](https://releases.aspose.com/words/net/) en son sürümü kullanın veya[ücretsiz deneme](https://releases.aspose.com/).
-- .NET Framework: Sisteminizde .NET'in kurulu olduğundan emin olun.
-- IDE: Visual Studio gibi bir geliştirme ortamı.
+-  Aspose.Words for .NET: Şunları yapabilirsiniz:[indirmek](https://releases.aspose.com/words/net/) en son sürümü kullanın veya[ücretsiz deneme](https://releases.aspose.com/).
+- .NET Framework: Sisteminizde .NET'in yüklü olduğundan emin olun.
+- IDE: Visual Studio benzeri bir geliştirme ortamı.
 
-Her şeyi hazırladıktan sonra bir sonraki adıma geçebiliriz.
+Her şey hazır olduğunda bir sonraki adımlara geçebiliriz.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -31,43 +31,43 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Drawing.Charts;
 ```
 
-## 1. Adım: Belge Dizininizi Kurun
+## Adım 1: Belge Dizininizi Ayarlayın
 
-Öncelikle belgenizin kaydedileceği dizini ayarlamanız gerekir. Bu basit bir adımdır ancak dosyalarınızı düzenlemek için çok önemlidir.
+İlk önce, belgenizin kaydedileceği dizini ayarlamanız gerekir. Bu basit bir adımdır ancak dosyalarınızı düzenlemek için önemlidir.
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Yeni Bir Belge Oluşturun
 
-Daha sonra yeni bir belge nesnesi oluşturun. Bu belge grafiğiniz için kapsayıcı görevi görecektir.
+Sonra, yeni bir belge nesnesi oluşturun. Bu belge, grafiğiniz için kapsayıcı görevi görecektir.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## 3. Adım: Belge Oluşturucuyu Başlatın
+## Adım 3: Belge Oluşturucuyu Başlatın
 
-DocumentBuilder sınıfı, belge oluşturmanın hızlı ve kolay bir yolunu sağlar. Belgenizle başlatın.
+DocumentBuilder sınıfı, belgeleri oluşturmanın hızlı ve kolay bir yolunu sağlar. Bunu belgenizle başlatın.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 4. Adım: Grafik Ekleme
+## Adım 4: Bir Grafik Ekle
 
-Şimdi belgenize bir grafik eklemenin zamanı geldi. Bu örnekte Sütun grafiği kullanacağız.
+Şimdi, belgenize bir grafik ekleme zamanı. Bu örnekte, bir Sütun grafiği kullanacağız.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Adım 5: Mevcut Serileri Temizle
+## Adım 5: Mevcut Seriyi Temizle
 
-Temiz bir sayfa açtığınızdan emin olmak için mevcut serileri grafikten silin.
+Temiz bir sayfa ile başladığınızdan emin olmak için, grafikteki mevcut serileri temizleyin.
 
 ```csharp
 chart.Series.Clear();
@@ -75,7 +75,7 @@ chart.Series.Clear();
 
 ## Adım 6: Grafiğe Veri Ekleme
 
-Burada grafiğe veri ekliyoruz. Buna seri adının ve veri noktalarının belirtilmesi de dahildir.
+Burada, grafiğe veri ekliyoruz. Bu, seri adını ve veri noktalarını belirtmeyi içerir.
 
 ```csharp
 chart.Series.Add("Aspose Series 1",
@@ -85,7 +85,7 @@ chart.Series.Add("Aspose Series 1",
 
 ## Adım 7: Eksen Sınırlarını Ayarlayın
 
-Y ekseni sınırlarını ayarlamak, grafiğinizin doğru şekilde ölçeklendirilmesini sağlar.
+Y ekseninin sınırlarını belirlemek, grafiğinizin doğru şekilde ölçeklenmesini sağlar.
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
@@ -100,25 +100,25 @@ Son olarak belgenizi belirtilen dizine kaydedin.
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-İşte bu kadar! Aspose.Words for .NET'i kullanarak grafik içeren bir belgeyi başarıyla oluşturdunuz. 
+Ve işte bu kadar! Aspose.Words for .NET kullanarak bir grafik içeren bir belgeyi başarıyla oluşturdunuz. 
 
 ## Çözüm
 
-Aspose.Words for .NET'i kullanarak belgelerinizde kolayca grafikler oluşturabilir ve değiştirebilirsiniz. Bu adım adım kılavuz, bir grafikte eksenin sınırlarını nasıl ayarlayacağınızı göstererek veri sunumunuzu daha hassas ve profesyonel hale nasıl getireceğinizi göstermiştir. İster rapor, ister sunum, ister başka bir belge oluşturuyor olun, Aspose.Words ihtiyacınız olan araçları sağlar.
+.NET için Aspose.Words'ü kullanarak belgelerinizde kolayca grafikler oluşturabilir ve düzenleyebilirsiniz. Bu adım adım kılavuz, bir grafikteki eksenin sınırlarını nasıl ayarlayacağınızı göstererek veri sunumunuzu daha kesin ve profesyonel hale getirir. İster raporlar, ister sunumlar veya başka bir belge oluşturun, Aspose.Words ihtiyacınız olan araçları sağlar.
 
 ## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, .NET çerçevesini kullanarak Word belgelerini programlı olarak oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanıyan bir kitaplıktır.
+Aspose.Words for .NET, .NET çerçevesini kullanarak Word belgelerini programlı bir şekilde oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanıyan bir kütüphanedir.
 
 ### Aspose.Words for .NET'i nasıl kurarım?
- Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/) ve verilen kurulum talimatlarını izleyin.
+ Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/)ve verilen kurulum talimatlarını izleyin.
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
  Evet, kullanabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/).
 
-### Aspose.Words for .NET belgelerini nerede bulabilirim?
- Detaylı dokümantasyon mevcut[Burada](https://reference.aspose.com/words/net/).
+### Aspose.Words for .NET için dokümanları nerede bulabilirim?
+Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words için nasıl destek alabilirim?
  Ziyaret edebilirsiniz[destek forumu](https://forum.aspose.com/c/words/8) yardım için.

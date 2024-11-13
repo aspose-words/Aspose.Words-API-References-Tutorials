@@ -1,23 +1,23 @@
 ---
-title: Zakresy Pobierz tekst w dokumencie programu Word
-linktitle: Zakresy Pobierz tekst w dokumencie programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Wyodrębnij tekst z dokumentów programu Word bez wysiłku, korzystając z Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem, aby łatwo rozpocząć pracę.
+title: Zakresy Pobierz tekst w dokumencie Word
+linktitle: Zakresy Pobierz tekst w dokumencie Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Wyodrębnij tekst z dokumentów Word bez wysiłku, używając Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem, aby łatwo rozpocząć.
 type: docs
 weight: 10
 url: /pl/net/programming-with-ranges/ranges-get-text/
 ---
 ## Wstęp
 
-Czy kiedykolwiek musiałeś programowo wyodrębnić tekst z dokumentu programu Word? Niezależnie od tego, czy automatyzujesz przetwarzanie dokumentów, czy po prostu chcesz pobrać określoną treść z pliku Word, Aspose.Words dla .NET Ci to umożliwi. Ta potężna biblioteka pozwala z łatwością manipulować dokumentami programu Word, zapewniając niezawodne narzędzia do wyodrębniania, edytowania i tworzenia treści. W tym samouczku przeprowadzimy Cię przez proces wyodrębniania tekstu z dokumentu programu Word za pomocą Aspose.Words dla .NET, dzieląc go krok po kroku, aby zapewnić płynność jego działania.
+Czy kiedykolwiek musiałeś programowo wyodrębnić tekst z dokumentu Word? Niezależnie od tego, czy automatyzujesz przetwarzanie dokumentów, czy po prostu musisz pobrać określoną zawartość z pliku Word, Aspose.Words for .NET ma dla Ciebie rozwiązanie. Ta potężna biblioteka pozwala z łatwością manipulować dokumentami Word, zapewniając solidne narzędzia do wyodrębniania, edytowania i tworzenia zawartości. W tym samouczku przeprowadzimy Cię przez proces wyodrębniania tekstu z dokumentu Word za pomocą Aspose.Words for .NET, rozbijając go krok po kroku, aby zapewnić, że będziesz w stanie płynnie podążać za nim.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w kod, musisz przygotować kilka rzeczy:
+Zanim zagłębimy się w kod, jest kilka rzeczy, które musisz mieć na miejscu:
 
-1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: Skonfiguruj środowisko programistyczne. Visual Studio jest popularnym wyborem do programowania .NET.
-3. Dokument programu Word: Przygotuj dokument programu Word, z którego chcesz wyodrębnić tekst. Zapisz go w znanym katalogu w swoim systemie.
+1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Skonfiguruj swoje środowisko programistyczne. Visual Studio jest popularnym wyborem do tworzenia oprogramowania .NET.
+3. Dokument Word: Przygotuj dokument Word, z którego chcesz wyodrębnić tekst. Zapisz go w znanym katalogu w swoim systemie.
 
 ## Importuj przestrzenie nazw
 
@@ -28,11 +28,11 @@ using System;
 using Aspose.Words;
 ```
 
-Podzielmy proces wyodrębniania tekstu z dokumentu programu Word na proste, łatwe do wykonania kroki.
+Podzielmy proces wyodrębniania tekstu z dokumentu Word na proste i łatwe do wykonania kroki.
 
 ## Krok 1: Skonfiguruj katalog projektu
 
-Po pierwsze, musisz skonfigurować katalog projektu i umieścić dokument programu Word w określonej lokalizacji. Oto jak to zrobić:
+Po pierwsze, musisz skonfigurować katalog projektu i umieścić dokument Word w określonej lokalizacji. Oto, jak to zrobić:
 
 Utwórz katalog dla swoich dokumentów
 
@@ -41,24 +41,24 @@ Utwórz katalog dla swoich dokumentów
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- W tym katalogu będzie przechowywany dokument programu Word. Pamiętaj o wymianie`"YOUR DOCUMENTS DIRECTORY"` z rzeczywistą ścieżką do katalogu.
+ Ten katalog będzie zawierał Twój dokument Word. Upewnij się, że zastąpisz`"YOUR DOCUMENTS DIRECTORY"` z rzeczywistą ścieżką do Twojego katalogu.
 
 ## Krok 2: Załaduj dokument Word
 
-Teraz, gdy katalog jest już skonfigurowany, następnym krokiem jest załadowanie dokumentu Worda za pomocą Aspose.Words. Oto jak to zrobić:
+Teraz, gdy Twój katalog jest skonfigurowany, następnym krokiem jest załadowanie dokumentu Word za pomocą Aspose.Words. Oto, jak to zrobić:
 
 Załaduj dokument
 
 ```csharp
-// Załaduj dokument programu Word
+// Załaduj dokument Word
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- W tym kroku utworzysz nową instancję pliku`Document` class i załaduj do niej dokument programu Word. Upewnij się, że nazwa pliku i ścieżka są poprawne.
+ W tym kroku utworzysz nową instancję`Document` class i załaduj do niego dokument Word. Upewnij się, że nazwa pliku i ścieżka są poprawne.
 
 ## Krok 3: Wyodrębnij tekst z dokumentu
 
-Po załadowaniu dokumentu nadszedł czas na wyodrębnienie tekstu. Tutaj dzieje się magia:
+Po załadowaniu dokumentu nadszedł czas na wyodrębnienie tekstu. To tutaj dzieje się magia:
 
 Wyodrębnij tekst
 
@@ -67,11 +67,11 @@ Wyodrębnij tekst
 string text = doc.Range.Text;
 ```
 
- The`Range.Text` Właściwość wyświetla cały tekst zawarty w zakresie dokumentu. Obejmuje to tekst ze wszystkich sekcji, nagłówków, stopek i części głównej.
+Ten`Range.Text` Właściwość ta daje Ci cały tekst zawarty w zakresie dokumentu. Obejmuje to tekst ze wszystkich sekcji, nagłówków, stopek i treści głównej.
 
 ## Krok 4: Wyświetl wyodrębniony tekst
 
-Na koniec, aby sprawdzić, czy wyodrębnienie tekstu zadziałało, możesz wyświetlić wyodrębniony tekst w konsoli. Oto jak:
+Na koniec, aby sprawdzić, czy wyodrębnienie tekstu zadziałało, możesz wyświetlić wyodrębniony tekst w konsoli. Oto jak to zrobić:
 
 Wyświetl tekst
 
@@ -80,30 +80,30 @@ Wyświetl tekst
 Console.WriteLine(text);
 ```
 
-Ten krok powoduje wydrukowanie wyodrębnionego tekstu na konsoli, dzięki czemu możesz zobaczyć wynik procesu wyodrębniania tekstu.
+Ten krok powoduje wydrukowanie wyodrębnionego tekstu na konsoli, umożliwiając obejrzenie rezultatu procesu wyodrębniania tekstu.
 
 ## Wniosek
 
-I masz to! Wyodrębnianie tekstu z dokumentu programu Word za pomocą Aspose.Words dla .NET jest proste, jeśli podzielisz go na te proste kroki. Postępując zgodnie z tym przewodnikiem, możesz zautomatyzować proces wyodrębniania tekstu w aplikacjach .NET, oszczędzając czas i wysiłek.
+I masz to! Wyodrębnianie tekstu z dokumentu Word za pomocą Aspose.Words dla .NET jest proste, gdy podzielisz je na te proste kroki. Postępując zgodnie z tym przewodnikiem, możesz zautomatyzować proces wyodrębniania tekstu w swoich aplikacjach .NET, oszczędzając czas i wysiłek.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
+### Czym jest Aspose.Words dla .NET?
 
-Aspose.Words dla .NET to potężna biblioteka do manipulacji dokumentami, która umożliwia programistom programowe tworzenie, edytowanie, konwertowanie i manipulowanie dokumentami programu Word.
+Aspose.Words for .NET to zaawansowana biblioteka do edycji dokumentów, która umożliwia programistom programistyczne tworzenie, edycję, konwertowanie i modyfikowanie dokumentów Word.
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
 
- Tak, Aspose.Words dla .NET jest produktem licencjonowanym. Licencję tymczasową można uzyskać od[Tutaj](https://purchase.aspose.com/temporary-license/) lub kup od[Tutaj](https://purchase.aspose.com/buy).
+ Tak, Aspose.Words dla .NET jest produktem licencjonowanym. Możesz uzyskać tymczasową licencję od[Tutaj](https://purchase.aspose.com/temporary-license/) lub kup od[Tutaj](https://purchase.aspose.com/buy).
 
-### Czy mogę używać Aspose.Words dla .NET z innymi językami .NET oprócz C#?
+### Czy mogę używać Aspose.Words dla .NET z innymi językami .NET poza C#?
 
-Absolutnie! Aspose.Words dla .NET obsługuje wszystkie języki .NET, w tym VB.NET.
+Oczywiście! Aspose.Words dla .NET obsługuje wszystkie języki .NET, w tym VB.NET.
 
 ### Gdzie mogę znaleźć dokumentację Aspose.Words dla .NET?
 
- Można znaleźć obszerną dokumentację[Tutaj](https://reference.aspose.com/words/net/).
+ Pełną dokumentację można znaleźć[Tutaj](https://reference.aspose.com/words/net/).
 
-### Jak uzyskać wsparcie dla Aspose.Words dla .NET?
+### Jak uzyskać pomoc techniczną dotyczącą Aspose.Words dla platformy .NET?
 
- Aby uzyskać pomoc, możesz odwiedzić forum Aspose.Words[Tutaj](https://forum.aspose.com/c/words/8).
+ Jeśli potrzebujesz wsparcia, możesz odwiedzić forum Aspose.Words[Tutaj](https://forum.aspose.com/c/words/8).

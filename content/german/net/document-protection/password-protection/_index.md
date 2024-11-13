@@ -18,7 +18,7 @@ Bevor wir uns mit den Einzelheiten des Kennwortschutzes Ihrer Word-Dokumente bef
 1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere C#-Entwicklungsumgebung.
 3. Grundlegende C#-Kenntnisse: Grundlegendes Verständnis der C#-Programmierung.
-4.  Aspose-Lizenz: Erhalten Sie eine Lizenz von[Hier](https://purchase.aspose.com/buy)oder verwenden Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zur Auswertung.
+4. Aspose-Lizenz: Erhalten Sie eine Lizenz von[Hier](https://purchase.aspose.com/buy) oder verwenden Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zur Auswertung.
 
 ## Namespaces importieren
 

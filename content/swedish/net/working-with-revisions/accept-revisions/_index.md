@@ -140,7 +140,7 @@ Ja, du kan sluta spåra revisioner genom att ringa`StopTrackRevisions` metod på
 
  För att acceptera alla ändringar, använd`AcceptAllRevisions` metod på ditt dokumentobjekt.
 
-### Kan jag avvisa specifika revisioner?
+### Kan jag avvisa specifika ändringar?
 
  Ja, du kan avvisa specifika revisioner genom att navigera till dem och använda`Reject` metod.
 

@@ -15,7 +15,7 @@ Någonsin behövt infoga en tabell från HTML i ett Word-dokument? Oavsett om du
 
 Innan vi börjar med att infoga en tabell från HTML, se till att du har följande förutsättningar på plats:
 
-1. Aspose.Words for .NET: Ladda ner och installera Aspose.Words for .NET-biblioteket från[nedladdningssida](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ladda ner och installera Aspose.Words for .NET-biblioteket från[nedladdningssida](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: Alla .NET-kompatibla utvecklingsmiljöer som Visual Studio.
 3. Grundläggande kunskaper i C#: Förståelse av grundläggande C#-programmeringskoncept.
 4. HTML-tabellkod: HTML-koden för tabellen du vill infoga.

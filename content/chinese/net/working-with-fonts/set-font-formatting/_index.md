@@ -100,5 +100,5 @@ Aspose.Words for .NET 是一个功能强大的库，可用于以编程方式创�
 ### 如何获得 Aspose.Words for .NET 的支持？
 您可以从 Aspose 社区和支持团队获得支持[这里](https://forum.aspose.com/c/words/8).
 
-### 我可以对文本的特定部分采用不同的格式吗？
+### 我可以对文本的特定部分设置不同的格式吗？
 是的，您可以通过调整`Font`的属性`DocumentBuilder`根据需要。

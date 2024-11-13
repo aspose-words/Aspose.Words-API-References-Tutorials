@@ -100,7 +100,7 @@ Někdy může být textové pole součástí řetězce a další pole na něj od
 textBox.Previous?.BreakForwardLink();
 ```
 
- The`?.` operátor zajišťuje, že metoda je volána pouze tehdy, když`Previous` není null, což zabraňuje potenciálním chybám za běhu.
+The`?.` operátor zajišťuje, že metoda je volána pouze tehdy, když`Previous` není null, což zabraňuje potenciálním chybám za běhu.
 
 ## Závěr
 
@@ -128,4 +128,4 @@ Přerušení odkazů může potenciálně ovlivnit rozvržení, zejména pokud b
 
 ### Kde najdu další zdroje o práci s Aspose.Words?
 
- Další informace a zdroje naleznete na adrese[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/)a[fórum podpory](https://forum.aspose.com/c/words/8).
+ Další informace a zdroje naleznete na adrese[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) a[fórum podpory](https://forum.aspose.com/c/words/8).

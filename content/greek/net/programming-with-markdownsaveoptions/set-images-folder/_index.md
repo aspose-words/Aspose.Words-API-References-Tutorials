@@ -100,7 +100,7 @@ using (MemoryStream stream = new MemoryStream())
 
 ### Πώς μπορώ να πάρω μια προσωρινή άδεια για το Aspose.Words;
 
- Μπορείτε να αποκτήσετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
+Μπορείτε να αποκτήσετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
 
 ### Τι τύπους εγγράφων μπορώ να μετατρέψω σε Markdown;
 

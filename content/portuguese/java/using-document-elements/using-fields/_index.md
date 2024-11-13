@@ -2,25 +2,25 @@
 title: Usando campos em Aspose.Words para Java
 linktitle: Usando campos
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda a usar os campos Aspose.Words para Java de maneira eficaz neste tutorial passo a passo. Crie documentos dinâmicos do Word com facilidade.
+description: Aprenda a usar o Aspose.Words para campos Java de forma eficaz neste tutorial passo a passo. Crie documentos dinâmicos do Word com facilidade.
 type: docs
 weight: 11
 url: /pt/java/using-document-elements/using-fields/
 ---
 
-Neste tutorial passo a passo, iremos orientá-lo sobre como usar campos em Aspose.Words for Java para manipular documentos com facilidade. Aspose.Words for Java é uma API poderosa que permite trabalhar com documentos do Word de forma programática, oferecendo controle total sobre seu conteúdo e formatação.
+Neste tutorial passo a passo, nós o guiaremos sobre como usar campos no Aspose.Words para Java para manipular documentos com facilidade. O Aspose.Words para Java é uma API poderosa que permite que você trabalhe com documentos do Word programaticamente, dando a você controle total sobre seu conteúdo e formatação.
 
 ## 1. Introdução
 
-Aspose.Words for Java é uma ferramenta essencial para quem lida com documentos Word em aplicativos Java. Os campos são espaços reservados que podem armazenar dados dinâmicos no seu documento. Este tutorial mostrará como trabalhar com campos de maneira eficaz.
+Aspose.Words para Java é uma ferramenta essencial para qualquer um que lide com documentos do Word em aplicativos Java. Campos são espaços reservados que podem armazenar dados dinâmicos em seu documento. Este tutorial mostrará como trabalhar com campos de forma eficaz.
 
 ## 2. Configurando seu ambiente
 
- Antes de começar, certifique-se de ter o Aspose.Words for Java instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/java/). Além disso, certifique-se de ter Java e um ambiente de desenvolvimento integrado (IDE) como Eclipse ou IntelliJ IDEA instalados em seu sistema.
+ Antes de começar, certifique-se de ter o Aspose.Words para Java instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/java/). Além disso, certifique-se de ter o Java e um ambiente de desenvolvimento integrado (IDE) como Eclipse ou IntelliJ IDEA instalado no seu sistema.
 
 ## 3. Carregando um documento do Word
 
-Em seu aplicativo Java, você precisa carregar o documento do Word com o qual deseja trabalhar. Aqui está um trecho de código para você começar:
+No seu aplicativo Java, você precisa carregar o documento do Word com o qual deseja trabalhar. Aqui está um trecho de código para você começar:
 
 ```java
 string dataDir = "Your Document Directory";
@@ -28,17 +28,17 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Substituir`"Your Document Directory"`e`"Your Output Directory"` com os caminhos apropriados.
+ Substituir`"Your Document Directory"` e`"Your Output Directory"` com os caminhos apropriados.
 
-## 4. Personalização da mala direta
+## 4. Personalizando a mala direta
 
-Aspose.Words for Java oferece excelente suporte para operações de mala direta. Você pode personalizar o processo de mala direta configurando um manipulador de eventos de mala direta. Veja como fazer isso:
+Aspose.Words para Java fornece excelente suporte para operações de mala direta. Você pode personalizar o processo de mala direta configurando um manipulador de eventos de mala direta. Veja como fazer isso:
 
 ```java
 // Configure o manipulador de eventos de mala direta para fazer o trabalho personalizado.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
 
-// Corte os valores de mala direta dos espaços em branco à direita e à esquerda.
+// Elimine espaços em branco à direita e à esquerda nos valores de mala direta.
 doc.getMailMerge().setTrimWhitespaces(false);
 
 String[] fieldNames = {
@@ -54,9 +54,9 @@ Object[] fieldValues = {
 doc.getMailMerge().execute(fieldNames, fieldValues);
 ```
 
-## 5. Salvando o Documento
+## 5. Salvando o documento
 
-Após personalizar seu documento, você pode salvá-lo usando o seguinte código:
+Depois de personalizar seu documento, você pode salvá-lo usando o seguinte código:
 
 ```java
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
@@ -71,7 +71,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 // Configure o manipulador de eventos de mala direta para fazer o trabalho personalizado.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
-// Corte os valores de mala direta dos espaços em branco à direita e à esquerda.
+// Elimine espaços em branco à direita e à esquerda nos valores de mala direta.
 doc.getMailMerge().setTrimWhitespaces(false);
 String[] fieldNames = {
 	"RecipientName", "SenderName", "FaxNumber", "PhoneNumber",
@@ -97,10 +97,10 @@ Código fonte da classe HandleMergeField
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // Decidimos que queremos que todos os valores booleanos sejam exibidos como campos de formulário de caixa de seleção.
+            // Decidimos que queríamos que todos os valores booleanos fossem exibidos como campos de formulário de caixa de seleção.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
-                // Mova o “cursor” para o campo de mesclagem atual.
+                // Mova o "cursor" para o campo de mesclagem atual.
                 mBuilder.moveToMergeField(e.getFieldName());
                 String checkBoxName = MessageFormat.format("{0}{1}", e.getFieldName(), e.getRecordIndex());
                 mBuilder.insertCheckBox(checkBoxName, (Boolean) e.getFieldValue(), 0);
@@ -209,14 +209,14 @@ Código fonte da classe HandleMergeField
         FieldIf fieldIf = (FieldIf)builder.insertField(" IF 1 = 2 ");
         builder.moveTo(fieldIf.getSeparator());
         builder.insertField(" MERGEFIELD  FullName ");
-        // Ainda podemos contar MERGEFIELDs dentro de campos IF de instrução falsa se definirmos esse sinalizador como verdadeiro.
+        // Ainda podemos contar MERGEFIELDs dentro de campos IF com instruções falsas se definirmos esse sinalizador como verdadeiro.
         doc.getMailMerge().setUnconditionalMergeFieldsAndRegions(true);
         DataTable dataTable = new DataTable();
         dataTable.getColumns().add("FullName");
         dataTable.getRows().add("James Bond");
         doc.getMailMerge().execute(dataTable);
-        // O resultado não ficará visível no documento porque o campo IF é falso,
-        // mas o MERGEFIELD interno realmente recebeu dados.
+        // O resultado não será visível no documento porque o campo SE é falso,
+        // mas o MERGEFIELD interno de fato recebeu dados.
         doc.save("Your Directory Path" + "WorkingWithFields.MailMergeAndConditionalField.docx");
     }
     @Test
@@ -243,7 +243,7 @@ Código fonte da classe HandleMergeField
         }
         /// <resumo>
         /// Isso é chamado quando o mecanismo de mala direta encontra o campo de mesclagem Image:XXX no documento.
-        /// Você tem a chance de retornar um objeto Image, um nome de arquivo ou um fluxo que contém a imagem.
+        /// Você tem a chance de retornar um objeto Image, nome de arquivo ou um fluxo que contém a imagem.
         /// </resumo>
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs e) throws Exception
         {
@@ -309,7 +309,7 @@ Código fonte da classe HandleMergeField
                 Color rowColor = isOdd(mRowIdx) 
                     ? new Color((213), (227), (235)) 
                     : new Color((242), (242), (242));
-                //Não há como definir as propriedades da célula para toda a linha no momento, então temos que iterar em todas as células da linha.
+                //Não há como definir propriedades de célula para a linha inteira no momento, então temos que iterar em todas as células da linha.
                 for (int colIdx = 0; colIdx < 4; colIdx++)
                 {
                     mBuilder.moveToCell(0, mRowIdx, colIdx, 0);
@@ -326,15 +326,15 @@ Código fonte da classe HandleMergeField
         private int mRowIdx;
     }
     /// <resumo>
-    /// Retorna verdadeiro se o valor for ímpar; false se o valor for par.
+    /// Retorna verdadeiro se o valor for ímpar; falso se o valor for par.
     /// </resumo>
     private static boolean isOdd(int value)
     {
         return (value / 2 * 2) == value;
     }
     /// <resumo>
-    /// Crie DataTable e preencha-o com dados.
-    /// Na vida real esse DataTable deveria ser preenchido a partir de um banco de dados.
+    /// Crie uma DataTable e preencha-a com dados.
+    /// Na vida real, esta DataTable deve ser preenchida a partir de um banco de dados.
     /// </resumo>
     private DataTable getSuppliersDataTable()
     {
@@ -355,24 +355,24 @@ Código fonte da classe HandleMergeField
 
 ## 6. Conclusão
 
-Parabéns! Você aprendeu como usar campos em Aspose.Words for Java para manipular documentos do Word dinamicamente. Essa API poderosa oferece controle total sobre seus documentos, tornando-a um recurso valioso para desenvolvedores Java.
+Parabéns! Você aprendeu a usar campos no Aspose.Words para Java para manipular documentos do Word dinamicamente. Esta API poderosa dá a você controle completo sobre seus documentos, tornando-a um recurso valioso para desenvolvedores Java.
 
 ## 7. Perguntas frequentes
 
-### Q1: Onde posso baixar Aspose.Words para Java?
+### P1: Onde posso baixar o Aspose.Words para Java?
  Você pode baixar Aspose.Words para Java em[aqui](https://releases.aspose.com/words/java/).
 
-### P2: Como posso obter uma licença temporária do Aspose.Words for Java?
+### P2: Como posso obter uma licença temporária para o Aspose.Words para Java?
  Você pode obter uma licença temporária em[aqui](https://purchase.aspose.com/temporary-license/).
 
-### Q3: Onde posso obter suporte para Aspose.Words for Java?
- Para suporte, você pode visitar o fórum Aspose.Words[aqui](https://forum.aspose.com/).
+### Q3: Onde posso obter suporte para o Aspose.Words para Java?
+ Para obter suporte, você pode visitar o fórum Aspose.Words[aqui](https://forum.aspose.com/).
 
-### Q4: O Aspose.Words for Java é adequado para lidar com conteúdo HTML em documentos do Word?
-Sim, Aspose.Words for Java oferece excelente suporte para lidar com conteúdo HTML em documentos do Word.
+### P4: O Aspose.Words para Java é adequado para manipular conteúdo HTML em documentos do Word?
+Sim, o Aspose.Words para Java oferece excelente suporte para manipular conteúdo HTML em documentos do Word.
 
-### Q5: Posso usar Aspose.Words for Java gratuitamente?
- Aspose.Words for Java é um produto comercial, mas você pode explorar seus recursos com uma avaliação gratuita disponível[aqui](https://releases.aspose.com/).
+### P5: Posso usar o Aspose.Words para Java gratuitamente?
+ Aspose.Words para Java é um produto comercial, mas você pode explorar seus recursos com uma avaliação gratuita disponível[aqui](https://releases.aspose.com/).
 
-Comece hoje mesmo com Aspose.Words for Java e assuma o controle de seus documentos do Word como nunca antes!
+Comece a usar o Aspose.Words para Java hoje mesmo e assuma o controle dos seus documentos do Word como nunca antes!
 

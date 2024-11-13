@@ -14,7 +14,7 @@ Words Processing with Markdown átfogó forrást biztosít a Markdown formátumm
 | Cím | Leírás |
 | --- | --- |
 | [Félkövér szöveg](./bold-text/) | A lépésenkénti útmutatónkból megtudhatja, hogyan lehet félkövér szöveget szedni a Word dokumentumokban az Aspose.Words for .NET használatával. Tökéletes a dokumentumformázás automatizálására. |
-| [Dőlt szöveg](./italic-text/) | Ismerje meg, hogyan alkalmazhat dőlt betűs formázást a Word dokumentumokban az Aspose.Words for .NET segítségével. Lépésről lépésre, kódpéldákkal. |
+| [Dőlt szöveg](./italic-text/) | Ismerje meg, hogyan alkalmazhat dőlt betűs formázást a Word dokumentumokban az Aspose.Words for .NET segítségével. Lépésről lépésre útmutató kódpéldákkal. |
 | [Áthúzott](./strikethrough/) | lépésenkénti útmutatónkból megtudhatja, hogyan alkalmazhat áthúzott formázást a szövegben az Aspose.Words for .NET használatával. Növelje dokumentumfeldolgozási készségeit. |
 | [Inline kód](./inline-code/) | Ismerje meg, hogyan alkalmazhat szövegközi kódstílusokat Word dokumentumokban az Aspose.Words for .NET használatával. Ez az oktatóanyag a kód formázásához szükséges egyszeri és többszörös backticket ismerteti. |
 | [Autolink](./autolink/) | Ebből a részletes útmutatóból megtudhatja, hogyan illeszthet be és testreszabhat hiperhivatkozásokat Word dokumentumokba az Aspose.Words for .NET használatával. Bővítse dokumentumait könnyedén. |

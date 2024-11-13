@@ -61,7 +61,7 @@ comparer.applyChangesToOriginalDocument();
 Po aplikaci změn je čas uložit porovnávaný dokument pro další použití.
 
 ```java
-// Uložte porovnaný dokument
+// Uložte porovnávaný dokument
 originalDocument.save("compared_document.docx");
 ```
 
@@ -89,4 +89,4 @@ Ano, Aspose.Words for Java podporuje různé formáty dokumentů, včetně DOC, 
 
 ### Kde mohu získat přístup k dokumentaci Aspose.Words for Java?
 
-Komplexní dokumentaci k Aspose.Words for Java naleznete na adrese[zde](https://reference.aspose.com/words/java/).
+ Komplexní dokumentaci k Aspose.Words for Java naleznete na adrese[zde](https://reference.aspose.com/words/java/).

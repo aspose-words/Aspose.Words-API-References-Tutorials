@@ -118,7 +118,7 @@ Ez a sor a dokumentumot "WorkingWithVba.CreateVbaProject.docm" néven menti a me
 
 Gratulálok! Sikeresen létrehozott egy VBA-projektet egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez az oktatóanyag a környezet beállításától a VBA-kód írásáig és mentéséig mindenre kiterjedt. Az Aspose.Words segítségével olyan módon automatizálhatja a feladatokat, makrókat hozhat létre, és testreszabhatja Word-dokumentumait, ahogyan azt soha nem is gondolta.
 
- Ha még többet szeretne felfedezni, a[API dokumentáció](https://reference.aspose.com/words/net/) információ kincsesbánya. És ha valaha segítségre van szüksége, a[támogatási fórum](https://forum.aspose.com/c/words/8) csak egy kattintásnyira van.
+ Ha még többet szeretne felfedezni, a[API dokumentáció](https://reference.aspose.com/words/net/) információkincs tárháza. És ha valaha segítségre van szüksége, a[támogatási fórum](https://forum.aspose.com/c/words/8) csak egy kattintásnyira van.
 
 Jó kódolást, és ne feledd, csak a képzeleted szab határt!
 

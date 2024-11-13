@@ -16,7 +16,7 @@ url: /el/net/add-content-using-documentbuilder/move-to-paragraph/
 Προτού περάσουμε στο νήμα, ας βεβαιωθούμε ότι έχετε όλα όσα χρειάζεστε για να ξεκινήσετε:
 
 1.  Aspose.Words για .NET: Μπορείτε να το κατεβάσετε[εδώ](https://releases.aspose.com/words/net/).
-2. Visual Studio: Οποιαδήποτε πρόσφατη έκδοση ισχύει.
+2. Visual Studio: Οποιαδήποτε πρόσφατη έκδοση θα κάνει.
 3. .NET Framework: Βεβαιωθείτε ότι έχετε εγκαταστήσει το .NET Framework.
 4. Ένα έγγραφο του Word: Θα χρειαστείτε ένα δείγμα εγγράφου του Word για να εργαστείτε.
 

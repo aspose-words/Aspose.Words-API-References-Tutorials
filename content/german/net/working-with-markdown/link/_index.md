@@ -17,9 +17,9 @@ Bevor Sie sich in den Code vertiefen, benötigen Sie zunächst einige Dinge:
 
 1.  Visual Studio: Stellen Sie sicher, dass Visual Studio auf Ihrem Computer installiert ist. Sie können es hier herunterladen:[Microsoft-Website](https://visualstudio.microsoft.com/).
 
-2.  Aspose.Words für .NET: Sie benötigen die Aspose.Words-Bibliothek. Sie können sie von der[Aspose-Website](https://releases.aspose.com/words/net/).
+2.  Aspose.Words für .NET: Sie benötigen die Aspose.Words-Bibliothek. Sie können sie herunterladen von[Aspose-Website](https://releases.aspose.com/words/net/).
 
-3. Grundlegende C#-Kenntnisse: Kenntnisse in der C#-Programmierung sind von Vorteil, da in diesem Lernprogramm das Schreiben von C#-Code erfolgt.
+3. Grundlegende C#-Kenntnisse: Kenntnisse in der C#-Programmierung sind von Vorteil, da in diesem Lernprogramm das Schreiben von C#-Code enthalten ist.
 
 4.  Aspose-Lizenz: Sie können mit einer kostenlosen Testversion oder einer temporären Lizenz beginnen. Weitere Informationen finden Sie unter[Kostenlose Testversion von Aspose](https://releases.aspose.com/).
 
@@ -45,7 +45,7 @@ Lassen Sie uns den Prozess des Einfügens von Hyperlinks in ein Word-Dokument mi
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- Der`DocumentBuilder` Klasse ist ein vielseitiges Tool, mit dem Sie das Dokument erstellen und ändern können.
+Der`DocumentBuilder` Klasse ist ein vielseitiges Tool, mit dem Sie das Dokument erstellen und ändern können.
 
 ## Schritt 2: Hyperlink einfügen
 
@@ -80,4 +80,4 @@ Verwenden Sie Lesezeichen im Dokument, um interne Links zu erstellen. Fügen Sie
  Ja, Sie können E-Mail-Hyperlinks erstellen, indem Sie das`mailto:` Protokoll in der Hyperlink-URL, z. B.`mailto:example@example.com`.
 
 ### Was ist, wenn ich einen Link zu einem in einem Cloud-Dienst gespeicherten Dokument benötigen?
-Sie können auf jede beliebige URL verlinken, auch auf URLs, die auf in Cloud-Diensten gespeicherte Dokumente verweisen, solange die URL zugänglich ist.
+Sie können auf jede beliebige URL verlinken, auch auf URLs, die auf in Cloud-Diensten gespeicherte Dokumente verweisen, solange auf die URL zugegriffen werden kann.

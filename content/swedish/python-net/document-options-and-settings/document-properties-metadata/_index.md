@@ -109,7 +109,7 @@ version_info.value = "Version 1.0 - Initial Release"
 
 - Håll dokumentegenskaperna korrekta och uppdaterade.
 - Använd anpassade egenskaper för ytterligare sammanhang.
-- Revidera och uppdatera metadata regelbundet.
+- Regelbundet granska och uppdatera metadata.
 - Skydda känslig information i metadata.
 
 ## Slutsats

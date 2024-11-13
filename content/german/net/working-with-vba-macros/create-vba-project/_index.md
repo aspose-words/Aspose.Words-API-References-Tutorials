@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ## Schritt 3: Erstellen eines VBA-Projekts
 
-Wenn das Dokument vorhanden ist, besteht der nächste Schritt darin, ein VBA-Projekt zu erstellen. Ein VBA-Projekt ist im Wesentlichen eine Sammlung von VBA-Modulen und Formularen, die Ihre Makros und Ihren Code enthalten.
+Wenn das Dokument vorhanden ist, besteht der nächste Schritt darin, ein VBA-Projekt zu erstellen. Ein VBA-Projekt ist im Wesentlichen eine Sammlung von VBA-Modulen und -Formularen, die Ihre Makros und Ihren Code enthalten.
 
 ### Erstellen des VBA-Projekts
 
@@ -96,7 +96,7 @@ doc.VbaProject.Modules.Add(module);
 
 In diesem Snippet:
 -  Wir schaffen ein neues`VbaModule` Objekt.
-- Wir setzen den Modulnamen auf „AsposeModule“.
+- Wir setzen den Namen des Moduls auf „AsposeModule“.
 -  Wir definieren den Modultyp als`VbaModuleType.ProceduralModule`, was bedeutet, dass es Prozeduren (Unterprogramme oder Funktionen) enthält.
 -  Wir setzen die`SourceCode` -Eigenschaft in ein einfaches „Hallo Welt!“-Makro.
 
@@ -116,7 +116,7 @@ Diese Zeile speichert das Dokument als „WorkingWithVba.CreateVbaProject.docm�
 
 ## Abschluss
 
-Herzlichen Glückwunsch! Sie haben erfolgreich ein VBA-Projekt in einem Word-Dokument mit Aspose.Words für .NET erstellt. Dieses Tutorial behandelte alles, vom Einrichten Ihrer Umgebung bis zum Schreiben und Speichern von VBA-Code. Mit Aspose.Words können Sie Aufgaben automatisieren, Makros erstellen und Ihre Word-Dokumente auf eine Weise anpassen, die Sie nie für möglich gehalten hätten.
+Herzlichen Glückwunsch! Sie haben mit Aspose.Words für .NET erfolgreich ein VBA-Projekt in einem Word-Dokument erstellt. Dieses Tutorial behandelte alles, vom Einrichten Ihrer Umgebung bis zum Schreiben und Speichern von VBA-Code. Mit Aspose.Words können Sie Aufgaben automatisieren, Makros erstellen und Ihre Word-Dokumente auf eine Weise anpassen, die Sie nie für möglich gehalten hätten.
 
  Wenn Sie mehr entdecken möchten,[API-Dokumentation](https://reference.aspose.com/words/net/) ist eine Fundgrube an Informationen. Und wenn Sie jemals Hilfe brauchen, die[Support-Forum](https://forum.aspose.com/c/words/8) ist nur einen Klick entfernt.
 
@@ -134,7 +134,7 @@ Aspose.Words für .NET ist eine umfassende Bibliothek, mit der Entwickler Word-D
  Sie können VBA-Code hinzufügen, indem Sie`VbaModule` und die Einstellung`SourceCode` Eigenschaft mit Ihrem Makrocode. Fügen Sie dann das Modul zu Ihrem`VbaProject`.
 
 ### Welche Arten von VBA-Modulen kann ich erstellen?  
-VBA-Module können unterschiedlicher Art sein, z. B. prozedurale Module (für Funktionen und Subs), Klassenmodule und UserForms. In diesem Tutorial haben wir ein prozedurales Modul erstellt.
+Es gibt verschiedene Typen von VBA-Modulen, z. B. prozedurale Module (für Funktionen und Subs), Klassenmodule und UserForms. In diesem Tutorial haben wir ein prozedurales Modul erstellt.
 
 ### Wo kann ich Aspose.Words für .NET kaufen?  
 Sie können Aspose.Words für .NET kaufen bei der[Kaufseite](https://purchase.aspose.com/buy).

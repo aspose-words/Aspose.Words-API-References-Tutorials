@@ -1,27 +1,27 @@
 ---
-title: Tabloyu ve Hücreyi Farklı Kenarlıklarla Biçimlendir
-linktitle: Tabloyu ve Hücreyi Farklı Kenarlıklarla Biçimlendir
+title: Tablo ve Hücreyi Farklı Kenarlıklarla Biçimlendir
+linktitle: Tablo ve Hücreyi Farklı Kenarlıklarla Biçimlendir
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak tabloları ve hücreleri farklı kenarlıklarla nasıl formatlayacağınızı öğrenin. Word belgelerinizi özelleştirilmiş tablo stilleri ve hücre gölgelendirmesiyle geliştirin.
+description: Aspose.Words for .NET kullanarak tabloları ve hücreleri farklı kenarlıklarla nasıl biçimlendireceğinizi öğrenin. Word belgelerinizi özelleştirilmiş tablo stilleri ve hücre gölgelendirmesiyle geliştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
 ## giriiş
 
-Tabloların ve hücrelerin kenarlıklarını özelleştirerek Word belgelerinizin daha profesyonel görünmesini hiç denediniz mi? Değilse, bir ziyafet içindesiniz! Bu eğitim, Aspose.Words for .NET'i kullanarak tabloları ve hücreleri farklı kenarlıklarla biçimlendirme sürecinde size yol gösterecektir. Yalnızca birkaç satır kodla tablolarınızın görünümünü değiştirme gücüne sahip olduğunuzu hayal edin. İlginizi mi çekti? Gelin derinlemesine inceleyelim ve bunu kolaylıkla nasıl başarabileceğinizi keşfedelim.
+Tablo ve hücrelerin kenarlıklarını özelleştirerek Word belgelerinizin daha profesyonel görünmesini hiç denediniz mi? Denemediyseniz, harika bir şey sizi bekliyor! Bu eğitim, Aspose.Words for .NET kullanarak tabloları ve hücreleri farklı kenarlıklarla biçimlendirme sürecini adım adım anlatacak. Tablolarınızın görünümünü yalnızca birkaç satır kodla değiştirme gücüne sahip olduğunuzu hayal edin. İlginizi çekti mi? Hadi başlayalım ve bunu nasıl kolaylıkla başarabileceğinizi inceleyelim.
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-- C# programlamanın temel anlayışı.
-- Bilgisayarınızda Visual Studio yüklü.
--  Aspose.Words for .NET kitaplığı. Henüz yüklemediyseniz indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
--  Geçerli bir Aspose lisansı. Şu adresten ücretsiz deneme sürümü veya geçici lisans alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
+Başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
+- C# programlamanın temellerini anlamak.
+- Bilgisayarınızda Visual Studio yüklü olmalıdır.
+-  Aspose.Words for .NET kütüphanesi. Eğer henüz yüklemediyseniz, indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+-  Geçerli bir Aspose lisansı. Ücretsiz deneme veya geçici lisansı şu adresten alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET ile çalışmak için gerekli ad alanlarını projenize aktarmanız gerekir. Kod dosyanızın en üstüne aşağıdaki kullanma yönergelerini ekleyin:
+Aspose.Words for .NET ile çalışmak için, gerekli ad alanlarını projenize içe aktarmanız gerekir. Aşağıdaki using yönergelerini kod dosyanızın en üstüne ekleyin:
 
 ```csharp
 using Aspose.Words;
@@ -29,39 +29,39 @@ using Aspose.Words.Tables;
 using System.Drawing;
 ```
 
-## 1. Adım: Document ve DocumentBuilder'ı başlatın
+## Adım 1: Belgeyi ve DocumentBuilder'ı Başlatın
 
-Öncelikle yeni bir belge oluşturmanız ve belge içeriğinin oluşturulmasına yardımcı olan DocumentBuilder'ı başlatmanız gerekir. 
+Öncelikle yeni bir belge oluşturmanız ve belge içeriğini oluşturmaya yardımcı olan DocumentBuilder'ı başlatmanız gerekiyor. 
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Adım 2: Tablo Oluşturmaya Başlayın
+## Adım 2: Bir Tablo Oluşturmaya Başlayın
 
-Daha sonra, bir tablo oluşturmaya başlamak ve ilk hücreyi eklemek için DocumentBuilder'ı kullanın.
+Daha sonra DocumentBuilder'ı kullanarak tablo oluşturmaya başlayın ve ilk hücreyi ekleyin.
 
 ```csharp
 Table table = builder.StartTable();
 builder.InsertCell();
 ```
 
-## 3. Adım: Tablo Kenarlıklarını Ayarlayın
+## Adım 3: Tablo Kenarlıklarını Ayarlayın
 
-Tüm tablonun kenarlıklarını ayarlayın. Bu adım, aksi belirtilmedikçe tablodaki tüm hücrelerin tutarlı bir kenarlık stiline sahip olmasını sağlar.
+Tüm tablo için sınırları ayarlayın. Bu adım, aksi belirtilmediği sürece tablo içindeki tüm hücrelerin tutarlı bir sınır stiline sahip olmasını sağlar.
 
 ```csharp
-// Tüm tablonun kenarlıklarını ayarlayın.
+// Tüm tablonun sınırlarını belirleyin.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 ```
 
-## Adım 4: Hücre Gölgelemeyi Uygulayın
+## Adım 4: Hücre Gölgelendirmesini Uygula
 
-Hücreleri görsel olarak farklı kılmak için gölgelendirme uygulayın. Bu örnekte ilk hücrenin arka plan rengini kırmızıya ayarlayacağız.
+Hücrelere görsel olarak belirgin hale getirmek için gölgelendirme uygulayın. Bu örnekte, ilk hücrenin arka plan rengini kırmızıya ayarlayacağız.
 
 
 ```csharp
@@ -70,13 +70,13 @@ builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
 ```
 
-## Adım 5: Farklı Gölgelendirmeye Sahip Başka Bir Hücre Ekleme
+## Adım 5: Farklı Gölgelendirmeye Sahip Başka Bir Hücre Ekle
 
-İkinci hücreyi ekleyin ve farklı bir gölgeleme rengi uygulayın. Bu, tablonun daha renkli ve okunması kolay olmasını sağlar.
+İkinci hücreyi ekleyin ve farklı bir gölgelendirme rengi uygulayın. Bu, tabloyu daha renkli ve okunması daha kolay hale getirir.
 
 ```csharp
 builder.InsertCell();
-// İkinci hücre için farklı bir hücre gölgelemesi belirtin.
+// İkinci hücre için farklı bir hücre gölgelendirmesi belirtin.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
 builder.EndRow();
@@ -84,22 +84,22 @@ builder.EndRow();
 
 ## Adım 6: Hücre Biçimlendirmesini Temizle
 
-Sonraki hücrelerin aynı stilleri devralmamasını sağlamak için önceki işlemlerdeki hücre biçimlendirmesini temizleyin.
+Bir sonraki hücrelerin aynı stilleri devralmamasını sağlamak için önceki işlemlerden kalan hücre biçimlendirmesini temizleyin.
 
 
 ```csharp
-// Önceki işlemlerden hücre biçimlendirmesini temizleyin.
+// Önceki işlemlerden kalan hücre biçimlendirmesini temizle.
 builder.CellFormat.ClearFormatting();
 ```
 
-## Adım 7: Belirli Hücreler İçin Kenarlıkları Özelleştirin
+## Adım 7: Belirli Hücreler için Kenarlıkları Özelleştirin
 
-Öne çıkmalarını sağlamak için belirli hücrelerin kenarlıklarını özelleştirin. Burada yeni satırın ilk hücresi için daha büyük kenarlıklar ayarlayacağız.
+Belirli hücreler için kenarlıkları özelleştirerek onları öne çıkarın. Burada, yeni satırın ilk hücresi için daha büyük kenarlıklar ayarlayacağız.
 
 ```csharp
 builder.InsertCell();
-// Bu satırın ilk hücresi için daha büyük kenarlıklar oluşturun. Bu farklı olacak
-// tablo için belirlenen kenarlıklarla karşılaştırılır.
+// Bu satırın ilk hücresi için daha büyük kenarlıklar oluşturun. Bu farklı olacaktır
+// Masaya konulan sınırlara göre.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
 builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
@@ -109,7 +109,7 @@ builder.Writeln("Cell #3");
 
 ## Adım 8: Son Hücreyi Ekle
 
-Son hücreyi ekleyin ve tablonun varsayılan stillerini kullanması için biçimlendirmesinin temizlendiğinden emin olun.
+Son hücreyi ekleyin ve biçimlendirmesinin temizlendiğinden emin olun, böylece tablonun varsayılan stilleri kullanılır.
 
 ```csharp
 builder.InsertCell();
@@ -127,21 +127,21 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET kullanarak tabloları ve hücreleri farklı kenarlıklarla nasıl formatlayacağınızı öğrendiniz. Tablo kenarlıklarını ve hücre gölgelendirmesini özelleştirerek belgelerinizin görsel çekiciliğini önemli ölçüde artırabilirsiniz. Öyleyse devam edin, farklı stilleri deneyin ve belgelerinizin öne çıkmasını sağlayın!
+İşte bu kadar! Aspose.Words for .NET kullanarak tabloları ve hücreleri farklı kenarlıklarla nasıl biçimlendireceğinizi öğrendiniz. Tablo kenarlıklarını ve hücre gölgelendirmesini özelleştirerek belgelerinizin görsel çekiciliğini önemli ölçüde artırabilirsiniz. O halde devam edin, farklı stilleri deneyin ve belgelerinizi öne çıkarın!
 
-## SSS'ler
+## SSS
 
 ### Her hücre için farklı kenarlık stilleri kullanabilir miyim?
  Evet, her hücre için farklı kenarlık stilleri ayarlayabilirsiniz.`CellFormat.Borders` mülk.
 
-### Bir tablodaki tüm sınırları nasıl kaldırabilirim?
+### Bir tablodan tüm kenarlıkları nasıl kaldırabilirim?
  Kenarlık stilini şu şekilde ayarlayarak tüm kenarlıkları kaldırabilirsiniz:`LineStyle.None`.
 
-### Her hücre için farklı kenarlık renkleri ayarlamak mümkün mü?
- Kesinlikle! kullanarak her hücrenin kenarlık rengini özelleştirebilirsiniz.`CellFormat.Borders.Color` mülk.
+### Her hücre için farklı kenarlık renkleri belirlemek mümkün müdür?
+ Kesinlikle! Her hücre için kenarlık rengini, şunu kullanarak özelleştirebilirsiniz:`CellFormat.Borders.Color` mülk.
 
-### Görüntüleri hücre arka planı olarak kullanabilir miyim?
-Aspose.Words görselleri doğrudan hücre arka planı olarak desteklemese de, hücreye bir görsel ekleyebilir ve hücre alanını kaplayacak şekilde boyutunu ayarlayabilirsiniz.
+### Hücre arka planı olarak resim kullanabilir miyim?
+Aspose.Words hücre arka planı olarak doğrudan resimleri desteklemese de, bir hücreye resim ekleyebilir ve hücre alanını kaplayacak şekilde boyutunu ayarlayabilirsiniz.
 
-### Tablodaki hücreleri nasıl birleştiririm?
- kullanarak hücreleri birleştirebilirsiniz.`CellFormat.HorizontalMerge`Ve`CellFormat.VerticalMerge` özellikler.
+### Bir tablodaki hücreleri nasıl birleştiririm?
+ Hücreleri birleştirmek için şunu kullanabilirsiniz:`CellFormat.HorizontalMerge` Ve`CellFormat.VerticalMerge` özellikler.

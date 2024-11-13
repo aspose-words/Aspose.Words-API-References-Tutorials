@@ -16,7 +16,7 @@ Mit den richtigen Tools kann das programmgesteuerte Arbeiten mit Dokumenten ein 
 Bevor wir uns in den Code vertiefen, wollen wir die wesentlichen Voraussetzungen für ein reibungsloses Erlebnis abdecken:
 
 1. Entwicklungsumgebung: Stellen Sie sicher, dass Sie Visual Studio oder eine andere .NET-kompatible IDE installiert haben.
-2.  Aspose.Words für .NET: Laden Sie die Aspose.Words für .NET-Bibliothek herunter von der[Veröffentlichungsseite](https://releases.aspose.com/words/net/).
+2.  Aspose.Words für .NET: Laden Sie die Aspose.Words für .NET-Bibliothek herunter von[Veröffentlichungsseite](https://releases.aspose.com/words/net/).
 3.  Lizenz: Erhalten Sie eine kostenlose Testversion oder eine temporäre Lizenz von[Hier](https://purchase.aspose.com/temporary-license/).
 
 ## Namespaces importieren
@@ -64,7 +64,7 @@ Diese Codezeile sammelt alle untergeordneten Knoten beliebigen Typs innerhalb de
 
 ## Schritt 4: Durch untergeordnete Knoten iterieren
 
-Mit den untergeordneten Knoten in der Hand können wir sie durchlaufen, um basierend auf ihren Typen bestimmte Aktionen auszuführen. In diesem Fall drucken wir den Text aller gefundenen Run-Knoten aus.
+Mit den untergeordneten Knoten in der Hand können wir sie durchlaufen, um basierend auf ihren Typen bestimmte Aktionen auszuführen. In diesem Fall drucken wir den Text aller gefundenen Run-Knoten.
 
 ```csharp
 foreach (Node child in children)

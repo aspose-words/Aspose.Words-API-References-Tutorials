@@ -64,7 +64,15 @@ Jetzt ist es Zeit, einen Kommentar zu erstellen. Wir initialisieren ein neues Ko
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-## Schritt 5: Fügen Sie den Kommentar dem Absatz hinzu
+## Schritt 5: Dem Kommentar Inhalt hinzufügen
+
+Zum Schluss fügen wir dem Kommentar Inhalt hinzu. Wir erstellen einen neuen Absatz und einen neuen Run, um den Kommentartext aufzunehmen, und fügen diese dann dem Kommentar hinzu.
+
+```csharp
+comment.SetText("Comment text.");
+```
+
+## Schritt 6: Fügen Sie den Kommentar dem Absatz hinzu
 
 Wir müssen den Kommentar an den aktuellen Absatz anhängen, in dem wir den Text eingefügt haben. Dies geschieht, indem wir den Kommentar an den Absatz anhängen.
 
@@ -72,18 +80,9 @@ Wir müssen den Kommentar an den aktuellen Absatz anhängen, in dem wir den Text
 builder.CurrentParagraph.AppendChild(comment);
 ```
 
-## Schritt 6: Dem Kommentar Inhalt hinzufügen
-
-Zum Schluss fügen wir dem Kommentar Inhalt hinzu. Wir erstellen einen neuen Absatz und einen neuen Run, um den Kommentartext aufzunehmen, und fügen diese dann dem Kommentar hinzu.
-
-```csharp
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
-```
-
 ## Schritt 7: Speichern Sie das Dokument
 
-Im letzten Schritt wird das Dokument mit den Kommentaren gespeichert. Wir geben dazu das Verzeichnis und den Dateinamen an.
+Im letzten Schritt wird das Dokument mit den Kommentaren gespeichert. Dazu geben wir das Verzeichnis und den Dateinamen an.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
@@ -105,7 +104,7 @@ Ja, Sie können einem einzelnen Dokument mehrere Kommentare hinzufügen, indem S
 
 ### Wie kann ich das Erscheinungsbild von Kommentaren anpassen?
 
-Während sich Aspose.Words auf den Inhalt und die Struktur von Kommentaren konzentriert, kann das Erscheinungsbild mithilfe der integrierten Formatierungsfunktionen von Word angepasst werden.
+Während sich Aspose.Words auf den Inhalt und die Struktur von Kommentaren konzentriert, kann das Erscheinungsbild mithilfe der in Word integrierten Formatierungsfunktionen angepasst werden.
 
 ### Ist es möglich, Kommentare programmgesteuert zu entfernen?
 
@@ -113,4 +112,4 @@ Ja, Sie können Kommentare programmgesteuert entfernen, indem Sie die Kommentare
 
 ### Kann ich Antworten auf Kommentare hinzufügen?
 
-Aspose.Words ermöglicht Ihnen die Arbeit mit Thread-Kommentaren und ermöglicht Ihnen das Hinzufügen von Antworten zu vorhandenen Kommentaren für detailliertere Diskussionen.
+Aspose.Words ermöglicht Ihnen die Arbeit mit Thread-Kommentaren und ermöglicht Ihnen das Hinzufügen von Antworten zu vorhandenen Kommentaren für ausführlichere Diskussionen.

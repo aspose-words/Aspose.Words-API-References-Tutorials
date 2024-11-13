@@ -55,7 +55,7 @@ Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx"
 
 このステップでは、`Document1.docx`そして`Document2.docx`新しいファイルに`MergedDocument.docx`.
 
-## ステップ3: 保存オプションによるマージ
+## ステップ3: 保存オプションとの結合
 
 場合によっては、結合したドキュメントにパスワード保護などの特定のオプションを設定する必要があります。その方法は次のとおりです。
 
@@ -64,7 +64,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "Aspose.Words" 
 Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, saveOptions, MergeFormatMode.KeepSourceFormatting);
 ```
 
-このコード スニペットは、パスワード保護を使用してドキュメントを結合し、最終的なドキュメントのセキュリティを確保します。
+このコード スニペットは、パスワード保護を使用してドキュメントを結合し、最終ドキュメントのセキュリティを確保します。
 
 ## ステップ4: 結合してPDFとして保存する
 

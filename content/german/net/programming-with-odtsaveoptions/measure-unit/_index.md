@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## Schritt 2: Laden Sie das Word-Dokument
 
- Als nächstes müssen Sie das Word-Dokument laden, das Sie konvertieren möchten. Dies geschieht über das`Document` Klasse von Aspose.Words.
+ Als nächstes müssen Sie das Word-Dokument laden, das Sie konvertieren möchten. Dies geschieht mit dem`Document` Klasse von Aspose.Words.
 
 ```csharp
 // Laden Sie das Word-Dokument
@@ -91,5 +91,5 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die programmgest
 ### Wo finde ich Dokumentation für Aspose.Words für .NET?
  Eine ausführliche Dokumentation zu Aspose.Words für .NET finden Sie unter[dieser Link](https://reference.aspose.com/words/net/).
 
-### Wie erhalte ich Support für Aspose.Words für .NET?
+### Wie kann ich Support für Aspose.Words für .NET erhalten?
  Für Unterstützung können Sie das Aspose.Words-Forum unter besuchen.[dieser Link](https://forum.aspose.com/c/words/8).

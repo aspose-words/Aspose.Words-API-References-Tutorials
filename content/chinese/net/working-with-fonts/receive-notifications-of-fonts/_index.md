@@ -55,7 +55,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
 
-//设置 Aspose.Words 仅在不存在的文件夹中查找字体
+//将 Aspose.Words 设置为仅在不存在的文件夹中查找字体
 fontSettings.SetFontsFolder(string.Empty, false);
 ```
 

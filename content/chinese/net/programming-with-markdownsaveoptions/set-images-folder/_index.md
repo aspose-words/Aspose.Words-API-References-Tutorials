@@ -9,11 +9,11 @@ url: /zh/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
 ## 介绍
 
-您是否曾想过将 Word 文档导出为 Markdown 格式，同时确保表格和内容完美对齐？Aspose.Words for .NET 是您完成此任务的首选解决方案。在本文中，我们将引导您完成设置 Aspose.Words、准备文档以及以正确的表格内容对齐方式将其导出到 Markdown 的过程。我们将分解每个步骤，使其易于遵循和理解。所以，让我们深入研究并将您的 Word 文档转换为精美对齐的 Markdown 文件！
+您是否曾想将 Word 文档导出为 Markdown 格式，同时确保表格和内容完美对齐？Aspose.Words for .NET 是您完成此任务的首选解决方案。在本文中，我们将引导您完成设置 Aspose.Words、准备文档以及以正确的表格内容对齐方式将其导出到 Markdown 的过程。我们将分解每个步骤，使其易于遵循和理解。所以，让我们深入研究并将您的 Word 文档转换为精美对齐的 Markdown 文件！
 
 ## 先决条件
 
-在开始之前，请确保您已准备好以下内容：
+在开始之前，请确保您已准备好以下物品：
 
 -  Aspose.Words for .NET：您可以下载它[这里](https://releases.aspose.com/words/net/).
 - 有效的许可证：获得免费试用[这里](https://releases.aspose.com/)或临时执照[这里](https://purchase.aspose.com/temporary-license/).
@@ -46,7 +46,7 @@ using System.IO;
 Install-Package Aspose.Words
 ```
 
-## 步骤 2：编写导出为 Markdown 的代码
+## 第 2 步：编写导出为 Markdown 的代码
 
 现在，让我们编写代码来读取 Word 文档并将其保存为具有适当表格对齐的 Markdown 文件。
 

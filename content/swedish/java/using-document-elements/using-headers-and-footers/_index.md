@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Sidnumrering
 
- Du kan inkludera sidnummer i sidhuvuden och sidfötter med fält som`PAGE`och`NUMPAGES`. Dessa fält uppdateras automatiskt när du lägger till eller tar bort sidor.
+ Du kan inkludera sidnummer i sidhuvuden och sidfötter med fält som`PAGE` och`NUMPAGES`. Dessa fält uppdateras automatiskt när du lägger till eller tar bort sidor.
 
 ## 9. Upphovsrättsinformation i sidfötter
 

@@ -81,7 +81,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 
 ## 結論
 
-現在你就得到它了！使用 Aspose.Words for .NET 在 Word 文件中設定字體強調標記就是這麼簡單。只需幾行程式碼，您就可以使您的文字脫穎而出，並為您的文件添加專業風格。請毫不猶豫地嘗試不同的強調標記和樣式來滿足您的需求。
+現在你就擁有了！使用 Aspose.Words for .NET 在 Word 文件中設定字體強調標記就是這麼簡單。只需幾行程式碼，您就可以使您的文字脫穎而出，並為您的文件添加專業風格。請毫不猶豫地嘗試不同的強調標記和樣式來滿足您的需求。
 
 ## 常見問題解答
 

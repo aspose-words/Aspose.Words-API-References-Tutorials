@@ -129,4 +129,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx"
  Απολύτως! Μπορείτε να χρησιμοποιήσετε οποιοδήποτε χρώμα διαθέσιμο στο`System.Drawing.Color` τάξη.
 
 ### Πώς μπορώ να ευθυγραμμίσω το τραπέζι οριζόντια;  
- Ο`table.Alignment = TableAlignment.Center;` γραμμή στον κώδικα κεντράρει τον πίνακα οριζόντια στη σελίδα.
+Ο`table.Alignment = TableAlignment.Center;` γραμμή στον κώδικα κεντράρει τον πίνακα οριζόντια στη σελίδα.

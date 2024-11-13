@@ -34,7 +34,7 @@ Dobře, vyhrneme si rukávy a pustíme se do práce. Proces vkládání pole v A
 
 ## Krok 1: Nastavte adresář dokumentů
 
-Než budeme moci vytvářet a ukládat dokumenty, musíme určit adresář, kam budou naše dokumenty uloženy. To pomáhá udržovat naše soubory organizované.
+Než budeme moci vytvářet a ukládat dokumenty, musíme určit adresář, kam budou naše dokumenty uloženy. To pomáhá udržovat naše soubory uspořádané.
 
 ```csharp
 // Cesta k adresáři dokumentů.
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
  Nahradit`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou ke složce dokumentů. Zde bude uložen váš nový dokument.
 
-## Krok 2: Vytvořte dokument a DocumentBuilder
+## Krok 2: Vytvořte Document a DocumentBuilder
 
 Nyní, když máme nastavený adresář, pojďme vytvořit nový dokument a DocumentBuilder. DocumentBuilder je jako naše kouzelné pero, které nám umožňuje přidávat obsah do dokumentu.
 

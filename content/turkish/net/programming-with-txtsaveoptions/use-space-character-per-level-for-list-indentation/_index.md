@@ -1,23 +1,23 @@
 ---
-title: Liste Girintisi İçin Düzey Başına Boşluk Karakteri Kullan
-linktitle: Liste Girintisi İçin Düzey Başına Boşluk Karakteri Kullan
+title: Liste Girintisi İçin Seviye Başına Boşluk Karakteri Kullan
+linktitle: Liste Girintisi İçin Seviye Başına Boşluk Karakteri Kullan
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'te boşluk karakteri girintili çok düzeyli listeler oluşturmayı öğrenin. Hassas belge biçimlendirmesi için adım adım kılavuz.
+description: Aspose.Words for .NET'te boşluk karakteri girintili çok düzeyli listelerin nasıl oluşturulacağını öğrenin. Hassas belge biçimlendirmesi için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
 ## giriiş
 
-Belge biçimlendirmesi söz konusu olduğunda, özellikle de listelerle çalışırken doğruluk çok önemlidir. Çeşitli seviyelerde girintilere sahip belgeler oluşturmanız gereken senaryolarda Aspose.Words for .NET bu görevi gerçekleştirmek için güçlü araçlar sunar. Kullanışlı olabilecek belirli bir özellik, metin dosyalarındaki liste girintisini yapılandırmaktır. Bu kılavuz, belgenizin istenen yapıyı ve okunabilirliği korumasını sağlayarak, liste girintisi için boşluk karakterlerini nasıl kullanacağınız konusunda size yol gösterecektir.
+Belge biçimlendirme söz konusu olduğunda, özellikle listelerle çalışırken, kesinlik anahtardır. Çeşitli girinti düzeylerine sahip belgeler oluşturmanız gereken senaryolarda, Aspose.Words for .NET bu görevi halletmek için güçlü araçlar sunar. İşe yarayabilecek belirli bir özellik, metin dosyalarında liste girintisini yapılandırmaktır. Bu kılavuz, liste girintisi için boşluk karakterlerinin nasıl kullanılacağı konusunda size yol gösterecek ve belgenizin istenen yapıyı ve okunabilirliği korumasını sağlayacaktır.
 
-## Önkoşullar
+## Ön koşullar
 
-Eğiticiye dalmadan önce ihtiyacınız olacaklar:
+Eğitime başlamadan önce ihtiyacınız olacaklar şunlardır:
 
--  Aspose.Words for .NET: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Henüz sahip değilseniz, adresinden indirebilirsiniz.[Web sitesi](https://releases.aspose.com/words/net/).
-- Visual Studio: Kodunuzu yazmak ve test etmek için bir geliştirme ortamı.
-- Temel C# Anlayışı: C# ve .NET çerçevesine aşinalık, süreci sorunsuz bir şekilde takip etmenize yardımcı olacaktır.
+-  Aspose.Words for .NET: Aspose.Words kütüphanesinin yüklü olduğundan emin olun. Eğer henüz yüklü değilse, şuradan indirebilirsiniz:[Aspose web sitesi](https://releases.aspose.com/words/net/).
+- Visual Studio: Kodunuzu yazıp test edebileceğiniz bir geliştirme ortamı.
+- C# Temel Anlayışı: C# ve .NET framework'üne aşinalık, konuyu sorunsuz bir şekilde takip etmenize yardımcı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -28,14 +28,14 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Çok düzeyli bir listeyle belge oluşturma ve girintileme için boşluk karakterleri belirleme sürecini inceleyelim. 
+Çok düzeyli liste içeren bir belge oluşturma ve girinti için boşluk karakterleri belirleme sürecini parçalayalım. 
 
-## 1. Adım: Belgenizi Ayarlayın
+## Adım 1: Belgenizi Ayarlayın
 
- Öncelikle yeni bir belge oluşturmanız ve başlangıç durumuna getirmeniz gerekir.`DocumentBuilder` nesne. Bu nesne, içeriği kolayca eklemenize ve gerektiği gibi biçimlendirmenize olanak tanır.
+ İlk olarak yeni bir belge oluşturmanız ve başlatmanız gerekecek`DocumentBuilder` nesne. Bu nesne, içeriği kolayca eklemenize ve gerektiği gibi biçimlendirmenize olanak tanır.
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Belgeyi oluşturun ve içerik ekleyin
@@ -43,11 +43,11 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Bu kod parçasında değiştirin`"YOUR DOCUMENTS DIRECTORY"` belgenizi kaydetmek istediğiniz gerçek yolla.
+ Bu kod parçacığında şunu değiştirin:`"YOUR DOCUMENTS DIRECTORY"` Belgenizi kaydetmek istediğiniz gerçek yol ile.
 
-## Adım 2: Birden Çok Girinti Düzeyinde Bir Liste Oluşturun
+## Adım 2: Birden Fazla Girinti Düzeyine Sahip Bir Liste Oluşturun
 
- ile`DocumentBuilder` Örneğin, artık farklı girinti düzeylerine sahip bir liste oluşturabilirsiniz. Kullanın`ListFormat` Numaralandırmayı uygulamak ve liste öğelerini gerektiği gibi girintilemek için kullanılan özellik.
+ İle`DocumentBuilder` örneğin, artık farklı girinti düzeylerine sahip bir liste oluşturabilirsiniz.`ListFormat` Liste öğelerini gerektiği gibi numaralandırma ve girintileme uygulamak için özellik.
 
 ```csharp
 // Üç düzeyde girintiye sahip bir liste oluşturun
@@ -59,49 +59,49 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- Bu adımda,`ApplyNumberDefault` liste formatını ayarlar ve`ListIndent` Sonraki her liste öğesinin girinti düzeyini artırmak için kullanılır.
+ Bu adımda,`ApplyNumberDefault` liste biçimini ayarlar ve`ListIndent` Her bir sonraki liste öğesinin girinti düzeyini artırmak için kullanılır.
 
-## 3. Adım: Girinti için Boşluk Karakterini Yapılandırma
+## Adım 3: Girinti için Boşluk Karakterini Yapılandırın
 
-Artık listenizi ayarladığınıza göre bir sonraki adım, belgeyi bir metin dosyasına kaydederken liste girintisinin nasıl işleneceğini yapılandırmaktır. Kullanacaksın`TxtSaveOptions` Girinti için boşluk karakterlerinin kullanılması gerektiğini belirtmek için.
+Artık listeniz ayarlandığına göre, bir sonraki adım belgeyi bir metin dosyasına kaydederken liste girintisinin nasıl işleneceğini yapılandırmaktır.`TxtSaveOptions` girintileme için boşluk karakterlerinin kullanılması gerektiğini belirtmek için.
 
 ```csharp
-// Liste girintisi için düzey başına bir boşluk karakteri kullanın
+// Liste girintisi için seviye başına bir boşluk karakteri kullanın
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 3;
 saveOptions.ListIndentation.Character = ' ';
 ```
 
- Burada,`ListIndentation.Count` girinti düzeyi başına boşluk karakterlerinin sayısını belirtir ve`ListIndentation.Character` girinti için kullanılan gerçek karakteri ayarlar.
+ Burada,`ListIndentation.Count` girinti düzeyi başına boşluk karakteri sayısını belirtir ve`ListIndentation.Character` girinti için kullanılan gerçek karakteri ayarlar.
 
 ## Adım 4: Belgeyi Belirtilen Seçeneklerle Kaydedin
 
-Son olarak, yapılandırılmış seçenekleri kullanarak belgenizi kaydedin. Bu, girinti ayarlarını uygulayacak ve dosyanızı istediğiniz formatta kaydedecektir.
+Son olarak, yapılandırılmış seçenekleri kullanarak belgenizi kaydedin. Bu, girinti ayarlarını uygulayacak ve dosyanızı istediğiniz biçimde kaydedecektir.
 
 ```csharp
 // Belgeyi belirtilen seçeneklerle kaydedin
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- Bu kod parçacığı, belgeyi şurada belirtilen yola kaydeder:`dataDir` dosya adı ile`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`. Kaydedilen dosyanın listesi girinti ayarlarınıza göre biçimlendirilmiş olacaktır.
+ Bu kod parçacığı belgeyi belirtilen yola kaydeder`dataDir` dosya adı ile`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`Kaydedilen dosyanın listesi girinti ayarlarınıza göre biçimlendirilecektir.
 
 ## Çözüm
 
-Bu adımları izleyerek, biçimlendirme için boşluk karakterlerini kullanarak çok düzeyli liste girintisine sahip bir belgeyi başarıyla oluşturdunuz. Bu yaklaşım, listelerinizin iyi yapılandırılmış olmasını ve metin dosyaları olarak kaydedildiğinde bile okunmasının kolay olmasını sağlar. Aspose.Words for .NET, belge işleme için güçlü araçlar sağlar ve bu özelliklere hakim olmak, belge işleme iş akışlarınızı önemli ölçüde geliştirebilir.
+Bu adımları izleyerek, biçimlendirme için boşluk karakterlerini kullanarak çok düzeyli liste girintisine sahip bir belgeyi başarıyla oluşturdunuz. Bu yaklaşım, listelerinizin iyi yapılandırılmış ve metin dosyaları olarak kaydedildiğinde bile okunması kolay olmasını sağlar. .NET için Aspose.Words, belge düzenleme için sağlam araçlar sunar ve bu özelliklerde ustalaşmak belge işleme iş akışlarınızı önemli ölçüde iyileştirebilir.
 
-## SSS'ler
+## SSS
 
-### Liste girintisi için boşlukların yanı sıra farklı karakterler kullanabilir miyim?
- Evet, liste girintisi için farklı karakterleri ayarlayarak belirtebilirsiniz.`Character` mülkiyet`TxtSaveOptions`.
+### Liste girintisinde boşlukların dışında farklı karakterler kullanabilir miyim?
+ Evet, liste girintisi için farklı karakterler belirleyebilirsiniz.`Character` mülk`TxtSaveOptions`.
 
-### Listelerde sayılar yerine madde işaretlerini nasıl uygularım?
- Kullanmak`ListFormat.ApplyBulletDefault()` yerine`ApplyNumberDefault()` madde işaretli bir liste oluşturmak için.
+### Listelerde numaralar yerine madde işaretleri nasıl uygularım?
+ Kullanmak`ListFormat.ApplyBulletDefault()` yerine`ApplyNumberDefault()` madde işaretli bir liste oluşturmak.
 
 ### Girinti için boşluk sayısını dinamik olarak ayarlayabilir miyim?
- Evet, ayarlayabilirsiniz`ListIndentation.Count` Gereksinimlerinize göre alan sayısını ayarlama özelliği.
+ Evet, ayarlayabilirsiniz`ListIndentation.Count` İhtiyaçlarınıza göre boşluk sayısını ayarlama özelliği.
 
 ### Belge oluşturulduktan sonra liste girintisini değiştirmek mümkün müdür?
-Evet, belgeyi kaydetmeden önce istediğiniz zaman liste formatı ve girinti ayarlarını değiştirebilirsiniz.
+Evet, belgeyi kaydetmeden önce liste biçimlendirme ve girinti ayarlarını istediğiniz zaman değiştirebilirsiniz.
 
-### Başka hangi belge biçimleri liste girinti ayarlarını destekler?
-Aspose.Words kullanılırken metin dosyalarının yanı sıra liste girinti ayarları DOCX, PDF ve HTML gibi diğer formatlara da uygulanabilir.
+### Hangi diğer belge biçimleri liste girinti ayarlarını destekler?
+Aspose.Words kullanıldığında liste girinti ayarları metin dosyalarının yanı sıra DOCX, PDF ve HTML gibi diğer formatlara da uygulanabilir.

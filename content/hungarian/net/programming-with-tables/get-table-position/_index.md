@@ -71,7 +71,7 @@ else
 
 ## 4. lépés: Futtassa a kódot
 
-Miután minden be van állítva, ideje futtatni a kódot. Nyissa ki a konzolt, és nézze meg a varázslatot! Vagy a relatív igazításokat kapja meg, ha a táblázat burkolt, vagy a szabványos igazítást, ha nem.
+Miután minden be van állítva, ideje futtatni a kódot. Nyissa ki a konzolt, és nézze meg a varázslat kibontakozását! Vagy a relatív igazításokat kapja meg, ha a táblázat burkolt, vagy a szabványos igazítást, ha nem.
 
 ## 5. lépés: Elemezze a kimenetet
 

@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-现在，让我们将这个过程分解成简单易懂的步骤。每个步骤都至关重要，因此请密切关注。
+现在，让我们将这个过程分解成简单易懂的步骤。每一步都至关重要，所以请仔细遵循。
 
 ## 步骤 1：设置文档目录
 
@@ -39,7 +39,7 @@ using Aspose.Words.Fields;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 接下来，我们需要创建一个新的实例`Document`类。这代表我们将要处理的 Word 文档。
 

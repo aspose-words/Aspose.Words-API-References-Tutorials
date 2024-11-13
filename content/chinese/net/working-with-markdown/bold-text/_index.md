@@ -9,7 +9,7 @@ url: /zh/net/working-with-markdown/bold-text/
 ---
 ## 介绍
 
-嗨，文档爱好者们！如果您正在使用 Aspose.Words for .NET 深入文档处理的世界，那么您将大饱眼福。这个强大的库提供了大量功能，可以通过编程来操作 Word 文档。今天，我们将带您了解其中一项功能 - 如何使用 Aspose.Words for .NET 将文本加粗。无论您是生成报告、制作动态文档还是自动化文档处理过程，学习控制文本格式都是必不可少的。准备好让您的文本脱颖而出了吗？让我们开始吧！
+嗨，文档爱好者们！如果您正在使用 Aspose.Words for .NET 深入文档处理的世界，那么您将大饱眼福。这个强大的库提供了大量功能，可让您以编程方式操作 Word 文档。今天，我们将带您了解其中一项功能 - 如何使用 Aspose.Words for .NET 将文本加粗。无论您是生成报告、制作动态文档还是自动化文档处理过程，学习控制文本格式都是必不可少的。准备好让您的文本脱颖而出了吗？让我们开始吧！
 
 ## 先决条件
 
@@ -66,7 +66,7 @@ builder.Writeln("This text will be Bold");
 是的，你可以。例如，你可以同时设置粗体和斜体文本`builder.Font.Bold`和`builder.Font.Italic`到`true`.
 
 ### 还有哪些其他文本格式选项可用？
-Aspose.Words 提供了丰富的文本格式选项，如字体大小、下划线、删除线等。
+Aspose.Words 提供了丰富的文本格式选项，如字体大小、下划线、删除线等等。
 
 ### 我需要许可证才能使用 Aspose.Words 吗？
 您可以使用免费试用版或临时许可证来使用 Aspose.Words，但要获得完整功能，建议购买许可证。查看[买](https://purchase.aspose.com/buy)页面以了解更多详情。

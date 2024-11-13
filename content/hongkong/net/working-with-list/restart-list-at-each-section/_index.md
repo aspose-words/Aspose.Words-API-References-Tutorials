@@ -87,12 +87,12 @@ for (int i = 1; i < 45; i++)
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
+doc.Save(dataDir + "WorkingWithList.RestartListAtEachSection.docx", options);		
 ```
 
 ## 結論
 
-現在你就得到它了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆地重新啟動 Word 文件中每個部分的清單。此功能對於建立結構良好的文件非常有用，這些文件需要具有自己的清單編號的單獨部分。透過 Aspose.Words，處理此類任務變得輕而易舉，讓您專注於製作高品質的內容。
+現在你就擁有了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆地重新啟動 Word 文件中每個部分的清單。此功能對於建立結構良好的文件非常有用，這些文件需要具有自己的清單編號的單獨部分。透過 Aspose.Words，處理此類任務變得輕而易舉，讓您專注於製作高品質的內容。
 
 ## 常見問題解答
 

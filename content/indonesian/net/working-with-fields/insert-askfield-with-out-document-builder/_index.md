@@ -2,28 +2,28 @@
 title: Masukkan ASKField Tanpa Pembuat Dokumen
 linktitle: Masukkan ASKField Tanpa Pembuat Dokumen
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan bidang ASK tanpa menggunakan Pembuat Dokumen di Aspose.Words untuk .NET. Ikuti panduan ini untuk menyempurnakan dokumen Word Anda secara dinamis.
+description: Pelajari cara menyisipkan kolom ASK tanpa menggunakan Document Builder di Aspose.Words untuk .NET. Ikuti panduan ini untuk menyempurnakan dokumen Word Anda secara dinamis.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
 ## Perkenalan
 
-Apakah Anda ingin menguasai otomatisasi dokumen dengan Aspose.Words untuk .NET? Anda datang ke tempat yang tepat! Hari ini, kami akan memandu Anda tentang cara menyisipkan kolom ASK tanpa menggunakan Pembuat Dokumen. Ini adalah fitur bagus ketika Anda ingin dokumen Anda meminta masukan tertentu kepada pengguna, menjadikan dokumen Word Anda lebih interaktif dan dinamis. Jadi, mari selami dan jadikan dokumen Anda lebih cerdas!
+Apakah Anda ingin menguasai otomatisasi dokumen dengan Aspose.Words untuk .NET? Anda telah datang ke tempat yang tepat! Hari ini, kami akan memandu Anda melalui cara memasukkan kolom ASK tanpa menggunakan Pembuat Dokumen. Ini adalah fitur yang praktis saat Anda ingin dokumen Anda meminta masukan tertentu kepada pengguna, sehingga dokumen Word Anda menjadi lebih interaktif dan dinamis. Jadi, mari kita mulai dan buat dokumen Anda lebih cerdas!
 
 ## Prasyarat
 
-Sebelum kita mengotori beberapa kode, pastikan kita sudah menyiapkan semuanya:
+Sebelum kita mulai mengerjakan beberapa kode, mari pastikan kita sudah menyiapkan semuanya:
 
-1.  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan ini. Jika tidak, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pastikan Anda telah menginstal pustaka ini. Jika belum, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: IDE yang cocok seperti Visual Studio.
 3. .NET Framework: Pastikan Anda telah menginstal .NET Framework.
 
-Besar! Sekarang kita sudah siap, mari mulai dengan mengimpor namespace yang diperlukan.
+Bagus! Sekarang setelah semuanya siap, mari kita mulai dengan mengimpor namespace yang diperlukan.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, kita perlu mengimpor namespace Aspose.Words untuk mengakses semua fitur Aspose.Words untuk .NET. Inilah cara Anda melakukannya:
+Pertama-tama, kita perlu mengimpor namespace Aspose.Words untuk mengakses semua fitur Aspose.Words untuk .NET. Berikut cara melakukannya:
 
 ```csharp
 using Aspose.Words;
@@ -32,7 +32,7 @@ using Aspose.Words.Fields;
 
 ## Langkah 1: Buat Dokumen Baru
 
-Sebelum kita dapat menyisipkan kolom ASK, kita memerlukan dokumen untuk digunakan. Berikut cara membuat dokumen baru:
+Sebelum kita dapat memasukkan kolom ASK, kita memerlukan dokumen untuk digunakan. Berikut cara membuat dokumen baru:
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -42,32 +42,32 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-Cuplikan kode ini menyiapkan dokumen Word baru tempat kita akan menambahkan kolom ASK.
+Potongan kode ini menyiapkan dokumen Word baru tempat kita akan menambahkan kolom ASK.
 
 ## Langkah 2: Akses Node Paragraf
 
-Dalam dokumen Word, konten disusun menjadi node. Kita perlu mengakses node paragraf pertama di mana kita akan memasukkan kolom ASK kita:
+Dalam dokumen Word, konten disusun ke dalam node. Kita perlu mengakses node paragraf pertama tempat kita akan memasukkan kolom ASK:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
-Baris kode ini mengambil paragraf pertama dalam dokumen, siap untuk dimasukkan ke kolom ASK.
+Baris kode ini mengambil paragraf pertama dalam dokumen, siap untuk penyisipan bidang ASK kita.
 
 ## Langkah 3: Masukkan Bidang ASK
 
-Sekarang, mari kita ke acara utama – memasukkan kolom ASK. Bidang ini akan meminta pengguna untuk memasukkan ketika dokumen dibuka.
+Sekarang, mari kita masuk ke acara utama – memasukkan kolom ASK. Kolom ini akan meminta masukan dari pengguna saat dokumen dibuka.
 
 ```csharp
-// Masukkan bidang ASK.
+// Masukkan kolom ASK.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
 ```
 
-Di sini, kami menambahkan bidang ASK ke paragraf. Sederhana, bukan?
+Di sini, kami menambahkan kolom ASK ke paragraf. Sederhana, bukan?
 
 ## Langkah 4: Konfigurasikan Bidang ASK
 
-Kita perlu mengatur beberapa properti untuk menentukan bagaimana perilaku bidang ASK. Mari konfigurasikan nama bookmark, teks perintah, respons default, dan perilaku gabungan surat:
+Kita perlu mengatur beberapa properti untuk menentukan bagaimana bidang ASK berperilaku. Mari konfigurasikan nama penanda, teks perintah, respons default, dan perilaku gabungan surat:
 
 ```csharp
 field.BookmarkName = "Test1";
@@ -77,9 +77,9 @@ field.PromptOnceOnMailMerge = true;
 ```
 
 - BookmarkName: Pengidentifikasi unik untuk bidang ASK.
-- PromptText: Teks yang meminta pengguna untuk memasukkan.
-- DefaultResponse: Respons yang telah diisi sebelumnya dan dapat diubah oleh pengguna.
-- PromptOnceOnMailMerge: Menentukan apakah perintah hanya muncul sekali selama penggabungan surat.
+- PromptText: Teks yang meminta masukan kepada pengguna.
+- DefaultResponse: Respons yang telah diisi sebelumnya yang dapat diubah oleh pengguna.
+- PromptOnceOnMailMerge: Menentukan apakah prompt hanya muncul satu kali selama gabungan surat.
 
 ## Langkah 5: Perbarui Bidang
 
@@ -89,7 +89,7 @@ Setelah mengonfigurasi bidang ASK, kita perlu memperbaruinya untuk memastikan se
 field.Update();
 ```
 
-Perintah ini memastikan kolom ASK kita sudah siap dan diatur dengan benar di dokumen.
+Perintah ini memastikan kolom ASK kita siap dan diatur dengan benar dalam dokumen.
 
 ## Langkah 6: Simpan Dokumen
 
@@ -99,25 +99,25 @@ Terakhir, mari simpan dokumen ke direktori yang kita tentukan:
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-Baris ini menyimpan dokumen dengan kolom ASK yang disisipkan. Dan begitulah – dokumen Anda kini dilengkapi dengan kolom ASK dinamis!
+Baris ini menyimpan dokumen dengan kolom ASK yang disisipkan. Dan begitulah – dokumen Anda kini dilengkapi dengan kolom ASK yang dinamis!
 
 ## Kesimpulan
 
-Selamat! Anda baru saja menambahkan bidang ASK ke dokumen Word menggunakan Aspose.Words untuk .NET tanpa Pembuat Dokumen. Fitur ini dapat meningkatkan interaksi pengguna dengan dokumen Anda secara signifikan, menjadikannya lebih fleksibel dan ramah pengguna. Teruslah bereksperimen dengan berbagai bidang dan properti untuk membuka potensi penuh Aspose.Words. Selamat membuat kode!
+Selamat! Anda baru saja menambahkan kolom ASK ke dokumen Word menggunakan Aspose.Words untuk .NET tanpa Document Builder. Fitur ini dapat meningkatkan interaksi pengguna dengan dokumen Anda secara signifikan, membuatnya lebih fleksibel dan mudah digunakan. Teruslah bereksperimen dengan berbagai kolom dan properti untuk membuka potensi penuh Aspose.Words. Selamat membuat kode!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Apa itu bidang ASK di Aspose.Words?
-Bidang ASK di Aspose.Words adalah bidang yang meminta pengguna untuk memasukkan input tertentu saat dokumen dibuka, sehingga memungkinkan entri data dinamis.
+### Apa itu kolom ASK di Aspose.Words?
+Kolom ASK di Aspose.Words adalah kolom yang meminta input spesifik kepada pengguna saat dokumen dibuka, yang memungkinkan entri data dinamis.
 
 ### Bisakah saya menggunakan beberapa kolom ASK dalam satu dokumen?
-Ya, Anda bisa menyisipkan beberapa bidang ASK dalam dokumen, masing-masing dengan perintah dan respons unik.
+Ya, Anda dapat menyisipkan beberapa kolom ASK dalam satu dokumen, masing-masing dengan perintah dan respons yang unik.
 
 ###  Apa tujuan dari`PromptOnceOnMailMerge` property?
- Itu`PromptOnceOnMailMerge` properti menentukan apakah prompt ASK muncul hanya sekali selama operasi penggabungan surat atau setiap saat.
+Itu`PromptOnceOnMailMerge` Properti menentukan apakah prompt ASK hanya muncul satu kali selama operasi gabungan surat atau setiap waktu.
 
-### Apakah saya perlu memperbarui kolom ASK setelah mengatur propertinya?
+### Apakah saya perlu memperbarui bidang ASK setelah mengatur propertinya?
 Ya, memperbarui bidang ASK memastikan bahwa semua properti diterapkan dengan benar dan bidang berfungsi seperti yang diharapkan.
 
-### Bisakah saya menyesuaikan teks prompt dan respons default?
-Sangat! Anda dapat mengatur teks perintah khusus dan respons default untuk menyesuaikan bidang ASK dengan kebutuhan spesifik Anda.
+### Bisakah saya menyesuaikan teks perintah dan respons default?
+Tentu saja! Anda dapat mengatur teks permintaan khusus dan respons default untuk menyesuaikan kolom ASK dengan kebutuhan spesifik Anda.

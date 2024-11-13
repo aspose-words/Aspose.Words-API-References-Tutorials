@@ -15,7 +15,7 @@ url: /ja/net/programming-with-table-styles-and-formatting/get-distance-between-t
 
 コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
 
-1.  Aspose.Words for .NET ライブラリ: Aspose.Words for .NET ライブラリがインストールされている必要があります。まだインストールしていない場合は、次のサイトからダウンロードできます。[Aspose リリース](https://releases.aspose.com/words/net/)ページ。
+1.  Aspose.Words for .NET ライブラリ: Aspose.Words for .NET ライブラリがインストールされている必要があります。まだインストールしていない場合は、[Aspose リリース](https://releases.aspose.com/words/net/)ページ。
 2. 開発環境: .NET Framework がインストールされた実用的な開発環境。Visual Studio が適切な選択肢です。
 3. サンプル ドキュメント: コードをテストするための少なくとも 1 つの表を含む Word ドキュメント (.docx)。
 
@@ -44,7 +44,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## ステップ2: テーブルにアクセスする
 
-次に、文書内の表にアクセスする必要があります。`GetChild`メソッドを使用すると、ドキュメント内で最初に見つかったテーブルを取得できます。
+次に、文書内の表にアクセスする必要があります。`GetChild`メソッドを使用すると、ドキュメント内で見つかった最初のテーブルを取得できます。
 
 ```csharp
 //ドキュメントの最初のテーブルを取得する

@@ -1,8 +1,8 @@
 ---
 title: Aspose.Words for Java ile Gelişmiş Kaydetme Seçenekleri
-linktitle: Belgeleri Çeşitli Formatlarda Kaydetme
+linktitle: Çeşitli Formatlarda Belgeleri Kaydetme
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java ile gelişmiş belge işlemeyi öğrenin. Meta dosyaları şifreleyin, yönetin ve daha fazlasını yapın. Word belgeleriniz, sizin yönteminiz.
+description: Aspose.Words for Java ile gelişmiş belge düzenlemeyi öğrenin. Meta dosyaları şifreleyin, yönetin ve daha fazlasını yapın. Word belgeleriniz, sizin tarzınız.
 type: docs
 weight: 14
 url: /tr/java/document-loading-and-saving/advance-saving-options/
@@ -10,17 +10,17 @@ url: /tr/java/document-loading-and-saving/advance-saving-options/
 
 # Adım Adım Eğitim Kılavuzu: Aspose.Words for Java ile Gelişmiş Kaydetme Seçenekleri
 
-Günümüzün dijital çağında, belge manipülasyonu geliştiricilerin ortak bir görevidir. Belgeleri şifrelemek, meta dosyaları yönetmek veya resim işaretlerini yönetmek olsun, Aspose.Words for Java bu süreçleri kolaylaştırmak için güçlü bir API sağlar. Bu eğitimde Aspose.Words for Java'yı kullanarak gelişmiş kaydetme seçeneklerinin nasıl gerçekleştirileceğini keşfedeceğiz.
+Günümüzün dijital çağında, belge düzenleme geliştiriciler için yaygın bir görevdir. Belgeleri şifrelemek, meta dosyaları yönetmek veya resim madde işaretlerini yönetmek olsun, Aspose.Words for Java bu süreçleri kolaylaştırmak için güçlü bir API sağlar. Bu eğitimde, Aspose.Words for Java kullanarak gelişmiş kaydetme seçeneklerinin nasıl gerçekleştirileceğini keşfedeceğiz.
 
-## Aspose.Words for Java'ya Giriş
+## Java için Aspose.Words'e Giriş
 
-Koda dalmadan önce Aspose.Words for Java'yı kısaca tanıtalım. Geliştiricilerin Word belgelerini zahmetsizce oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir Java kitaplığıdır. Rapor oluşturmanız, güvenlik eklemeniz veya metin biçimlendirmeniz gerekiyorsa Aspose.Words for Java ihtiyacınızı karşılar.
+Koda dalmadan önce, Aspose.Words for Java'yı kısaca tanıtalım. Geliştiricilerin Word belgelerini zahmetsizce oluşturmasına, düzenlemesine ve dönüştürmesine olanak tanıyan sağlam bir Java kütüphanesidir. Rapor oluşturmanız, güvenlik eklemeniz veya metni biçimlendirmeniz gerekip gerekmediğine bakılmaksızın, Aspose.Words for Java sizin için her şeyi yapar.
 
-## Ortamın Ayarlanması
+## Ortamın Kurulması
 
-Kodlamaya başlamadan önce gerekli ortamın kurulduğundan emin olun:
+Kodlamaya başlamadan önce gerekli ortamın kurulu olduğundan emin olun:
 
-1. Belge Oluşturun: Aspose.Words for Java'yı kullanarak yeni bir belge başlatın.
+1. Belge Oluşturun: Java için Aspose.Words'ü kullanarak yeni bir belge başlatın.
 
 ```java
     Document doc = new Document();
@@ -28,9 +28,9 @@ Kodlamaya başlamadan önce gerekli ortamın kurulduğundan emin olun:
     builder.write("Hello world!");
 ```
 
-## Bir Belgeyi Parolayla Şifrelemek
+## Bir Belgeyi Parola ile Şifreleme
 
-Şimdi ilk adıma geçelim; bir belgeyi parolayla şifrelemek. Bu, hassas belgelerinize ekstra bir güvenlik katmanı ekler.
+Şimdi ilk adıma geçelim - bir belgeyi parola ile şifrelemek. Bu, hassas belgelerinize ekstra bir güvenlik katmanı ekler.
 
 ```java
 DocSaveOptions saveOptions = new DocSaveOptions();
@@ -40,9 +40,9 @@ DocSaveOptions saveOptions = new DocSaveOptions();
 doc.save("Your Directory Path" + "EncryptedDocument.docx", saveOptions);
 ```
 
-## Küçük Meta Dosyalarını Sıkıştırmamak
+## Küçük Meta Dosyalarını Sıkıştırmama
 
-Meta dosyalar Word belgelerinde önemlidir, ancak küçük olanları sıkıştırmak istemeyebilirsiniz. Bunu nasıl başaracağınız aşağıda açıklanmıştır:
+Meta dosyaları Word belgelerinde önemlidir, ancak küçük olanları sıkıştırmak istemeyebilirsiniz. Bunu başarmanın yolu şöyledir:
 
 ```java
 @Test
@@ -56,9 +56,9 @@ public void doNotCompressSmallMetafiles() throws Exception {
 }
 ```
 
-## Resim Madde İşaretlerini Kaydetmekten Kaçınmak
+## Resim Madde İşaretlerini Kaydetmekten Kaçınma
 
-Resim madde işaretleri dikkat çekici olabilir ancak bunları hariç tutmak isteyebilirsiniz. İşte nasıl:
+Resimli maddeler dikkat çekici olabilir, ancak bunları hariç tutmak isteyebilirsiniz. İşte nasıl:
 
 ```java
 @Test
@@ -73,7 +73,7 @@ public void doNotSavePictureBullet() throws Exception {
 ```
 
 
-## Aspose.Words for Java ile Belgeleri Çeşitli Formatlarda Kaydetmek İçin Eksiksiz Kaynak Kodu
+## Aspose.Words for Java ile Çeşitli Formatlarda Belgeleri Kaydetmek İçin Tam Kaynak Kodu
 
 ```java
 public void encryptDocumentWithPassword() throws Exception {
@@ -107,28 +107,28 @@ public void doNotSavePictureBullet() throws Exception {
 
 ## Çözüm
 
-Tebrikler! Gelişmiş kaydetme seçeneklerini gerçekleştirmek için Aspose.Words for Java'yı nasıl kullanacağınızı öğrendiniz. Belgeleri şifrelemek, meta dosyaları yönetmek veya resim işaretlerini yönetmek olsun, Aspose.Words for Java, Word belgelerinizin kontrolünü elinize almanızı sağlar.
+Tebrikler! Gelişmiş kaydetme seçeneklerini gerçekleştirmek için Aspose.Words for Java'yı nasıl kullanacağınızı öğrendiniz. İster belgeleri şifrelemek, ister meta dosyaları yönetmek veya resim madde işaretlerini yönetmek olsun, Aspose.Words for Java, Word belgelerinizin kontrolünü ele geçirmenizi sağlar.
 
 ## SSS
 
 ### 1. Aspose.Words for Java ücretsiz bir kütüphane midir?
 
- Hayır, Aspose.Words for Java ticari bir kütüphanedir. Lisans ayrıntılarını bulabilirsiniz[Burada](https://purchase.aspose.com/buy).
+ Hayır, Aspose.Words for Java ticari bir kütüphanedir. Lisanslama ayrıntılarını bulabilirsiniz[Burada](https://purchase.aspose.com/buy).
 
 ### 2. Aspose.Words for Java'nın ücretsiz deneme sürümünü nasıl edinebilirim?
 
 Aspose.Words for Java'nın ücretsiz deneme sürümünü edinebilirsiniz[Burada](https://releases.aspose.com/).
 
-### 3. Aspose.Words for Java desteğini nerede bulabilirim?
+### 3. Java için Aspose.Words desteğini nerede bulabilirim?
 
  Destek ve topluluk tartışmaları için şu adresi ziyaret edin:[Aspose.Words for Java forumu](https://forum.aspose.com/).
 
 ### 4. Aspose.Words for Java'yı diğer Java kütüphaneleriyle birlikte kullanabilir miyim?
 
-Evet, Aspose.Words for Java, çeşitli Java kütüphaneleri ve çerçeveleriyle uyumludur.
+Evet, Aspose.Words for Java çeşitli Java kütüphaneleri ve çerçeveleriyle uyumludur.
 
-### 5. Geçici lisans seçeneği mevcut mu?
+### 5. Geçici lisans seçeneği mevcut mudur?
 
- Evet, geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+ Evet, geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
-Aspose.Words for Java'yı bugün kullanmaya başlayın ve Java uygulamalarınızda belge manipülasyonunun tüm potansiyelini ortaya çıkarın.
+Bugün Aspose.Words for Java'yı kullanmaya başlayın ve Java uygulamalarınızda belge düzenlemenin tüm potansiyelini ortaya çıkarın.

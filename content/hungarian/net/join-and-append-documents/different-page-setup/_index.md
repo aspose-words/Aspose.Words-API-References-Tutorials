@@ -15,7 +15,7 @@ Szia! Készen áll, hogy belemerüljön a dokumentumkezelés lenyűgöző világ
 
 Mielőtt bemocskolnánk a kezünket, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. .NET-keretrendszer: Bármely verzió, amely támogatja az Aspose.Words for .NET-et.
 3. Fejlesztői környezet: Visual Studio vagy bármely más .NET-kompatibilis IDE.
 4. Alapvető C# ismeretek: Csak az alapok a szintaxis és a szerkezet megértéséhez.
@@ -48,7 +48,7 @@ Install-Package Aspose.Words
 
 ## 2. lépés: Töltse be a dokumentumokat
 
- Most töltsük be az egyesíteni kívánt dokumentumokat. Ehhez a példához két Word dokumentumra lesz szüksége:`Document source.docx`és`Northwind traders.docx`. Győződjön meg arról, hogy ezek a fájlok a projektkönyvtárban vannak.
+ Most töltsük be az egyesíteni kívánt dokumentumokat. Ehhez a példához két Word dokumentumra lesz szüksége:`Document source.docx` és`Northwind traders.docx`. Győződjön meg arról, hogy ezek a fájlok a projektkönyvtárban vannak.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

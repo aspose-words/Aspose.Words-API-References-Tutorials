@@ -1,24 +1,24 @@
 ---
-title: Abaikan Teks di Dalam Bidang
-linktitle: Abaikan Teks di Dalam Bidang
+title: Abaikan Teks Di Dalam Kolom
+linktitle: Abaikan Teks Di Dalam Kolom
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara memanipulasi teks di dalam bidang di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini memberikan panduan langkah demi langkah dengan contoh praktis.
+description: Pelajari cara memanipulasi teks di dalam kolom dalam dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini menyediakan panduan langkah demi langkah dengan contoh-contoh praktis.
 type: docs
 weight: 10
 url: /id/net/find-and-replace-text/ignore-text-inside-fields/
 ---
 ## Perkenalan
 
-Dalam tutorial ini, kita akan mempelajari cara memanipulasi teks di dalam kolom dalam dokumen Word menggunakan Aspose.Words untuk .NET. Aspose.Words menyediakan fitur canggih untuk pemrosesan dokumen, memungkinkan pengembang mengotomatiskan tugas secara efisien. Di sini, kita akan fokus pada mengabaikan teks di dalam bidang, yang merupakan persyaratan umum dalam skenario otomatisasi dokumen.
+Dalam tutorial ini, kita akan mempelajari cara memanipulasi teks di dalam kolom dalam dokumen Word menggunakan Aspose.Words untuk .NET. Aspose.Words menyediakan fitur-fitur yang tangguh untuk pemrosesan dokumen, yang memungkinkan pengembang untuk mengotomatiskan tugas secara efisien. Di sini, kita akan fokus pada pengabaian teks di dalam kolom, persyaratan umum dalam skenario otomatisasi dokumen.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda telah menyiapkan yang berikut:
-- Visual Studio diinstal pada mesin Anda.
-- Aspose.Words untuk perpustakaan .NET terintegrasi ke dalam proyek Anda.
-- Keakraban dasar dengan pemrograman C# dan lingkungan .NET.
+Sebelum kita mulai, pastikan Anda telah menyiapkan hal berikut:
+- Visual Studio terinstal di komputer Anda.
+- Pustaka Aspose.Words untuk .NET terintegrasi ke dalam proyek Anda.
+- Kemampuan dasar dalam pemrograman C# dan lingkungan .NET.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Untuk memulai, sertakan namespace yang diperlukan dalam proyek C# Anda:
 ```csharp
@@ -31,22 +31,22 @@ using System.Text.RegularExpressions;
 
 ## Langkah 1: Buat Dokumen dan Pembuat Baru
 
- Pertama, inisialisasi dokumen Word baru dan a`DocumentBuilder`objek untuk memfasilitasi konstruksi dokumen:
+ Pertama, inisialisasi dokumen Word baru dan`DocumentBuilder`objek untuk memfasilitasi konstruksi dokumen:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Sisipkan Bidang dengan Teks
+## Langkah 2: Masukkan Kolom dengan Teks
 
  Gunakan`InsertField` metode`DocumentBuilder` untuk menambahkan bidang yang berisi teks:
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## Langkah 3: Abaikan Teks di Dalam Bidang
+## Langkah 3: Abaikan Teks di Dalam Kolom
 
- Untuk memanipulasi teks sambil mengabaikan konten dalam bidang, gunakan`FindReplaceOptions` dengan`IgnoreFields` properti disetel ke`true`:
+ Untuk memanipulasi teks sambil mengabaikan konten dalam bidang, gunakan`FindReplaceOptions` dengan`IgnoreFields` properti diatur ke`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
@@ -66,9 +66,9 @@ Ambil dan cetak teks yang dimodifikasi untuk memverifikasi penggantian yang dila
 Console.WriteLine(doc.GetText());
 ```
 
-## Langkah 6: Sertakan Teks di Dalam Bidang
+## Langkah 6: Sertakan Teks di Dalam Kolom
 
- Untuk memproses teks di dalam kolom, setel ulang`IgnoreFields`properti ke`false` dan lakukan operasi penggantian lagi:
+ Untuk memproses teks di dalam bidang, setel ulang`IgnoreFields`properti untuk`false` dan melakukan operasi penggantian lagi:
 ```csharp
 options.IgnoreFields = false;
 doc.Range.Replace(regex, "*", options);
@@ -76,21 +76,21 @@ doc.Range.Replace(regex, "*", options);
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita telah menjelajahi cara memanipulasi teks di dalam kolom di dokumen Word menggunakan Aspose.Words untuk .NET. Kemampuan ini penting untuk skenario di mana konten lapangan memerlukan penanganan khusus saat memproses dokumen secara terprogram.
+Dalam tutorial ini, kami telah mempelajari cara memanipulasi teks di dalam kolom dalam dokumen Word menggunakan Aspose.Words for .NET. Kemampuan ini penting untuk skenario di mana konten kolom memerlukan penanganan khusus saat memproses dokumen secara terprogram.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara menangani bidang bersarang dalam dokumen Word?
+### Bagaimana cara menangani kolom bersarang dalam dokumen Word?
 Bidang bersarang dapat dikelola dengan menavigasi konten dokumen secara rekursif menggunakan API Aspose.Words.
 
-### Bisakah saya menerapkan logika kondisional untuk mengganti teks secara selektif?
-Ya, Aspose.Words memungkinkan Anda mengimplementasikan logika kondisional menggunakan FindReplaceOptions untuk mengontrol penggantian teks berdasarkan kriteria tertentu.
+### Dapatkah saya menerapkan logika kondisional untuk mengganti teks secara selektif?
+Ya, Aspose.Words memungkinkan Anda menerapkan logika kondisional menggunakan FindReplaceOptions untuk mengontrol penggantian teks berdasarkan kriteria tertentu.
 
 ### Apakah Aspose.Words kompatibel dengan aplikasi .NET Core?
-Ya, Aspose.Words mendukung .NET Core, memastikan kompatibilitas lintas platform untuk kebutuhan otomatisasi dokumen Anda.
+Ya, Aspose.Words mendukung .NET Core, memastikan kompatibilitas lintas-platform untuk kebutuhan otomatisasi dokumen Anda.
 
 ### Di mana saya dapat menemukan lebih banyak contoh dan sumber daya untuk Aspose.Words?
- Mengunjungi[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) untuk panduan komprehensif, referensi API, dan contoh kode.
+ Mengunjungi[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) untuk panduan lengkap, referensi API, dan contoh kode.
 
 ### Bagaimana saya bisa mendapatkan dukungan teknis untuk Aspose.Words?
- Untuk bantuan teknis, kunjungi[Forum Dukungan Aspose.Words](https://forum.aspose.com/c/words/8) tempat Anda dapat memposting pertanyaan Anda dan berinteraksi dengan komunitas.
+ Untuk bantuan teknis, kunjungi[Forum Dukungan Aspose.Words](https://forum.aspose.com/c/words/8) tempat Anda dapat mengajukan pertanyaan dan berinteraksi dengan komunitas.

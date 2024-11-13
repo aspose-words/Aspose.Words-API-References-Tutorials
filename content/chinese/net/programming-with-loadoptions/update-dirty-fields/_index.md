@@ -23,7 +23,7 @@ url: /zh/net/programming-with-loadoptions/update-dirty-fields/
 
 ## 导入命名空间
 
-首先，请确保在 C# 项目中导入必要的命名空间：
+首先，确保在 C# 项目中导入必要的命名空间：
 
 ```csharp
 using Aspose.Words;

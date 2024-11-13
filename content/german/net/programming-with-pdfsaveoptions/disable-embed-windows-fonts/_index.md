@@ -13,7 +13,7 @@ Die Reduzierung der Größe von PDF-Dateien kann für eine effiziente Speicherun
 
 ## Voraussetzungen
 
-Bevor Sie in den Code eintauchen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+Bevor Sie sich in den Code vertiefen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 -  Aspose.Words für .NET: Wenn Sie es noch nicht getan haben, laden Sie es herunter und installieren Sie es von der[Download-Link](https://releases.aspose.com/words/net/).
 - Eine .NET-Entwicklungsumgebung: Visual Studio ist eine beliebte Wahl.

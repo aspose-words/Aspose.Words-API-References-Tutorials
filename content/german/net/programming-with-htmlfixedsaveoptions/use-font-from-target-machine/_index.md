@@ -37,7 +37,7 @@ using Aspose.Words.Saving;
 
 ### Schritt 1.1: Dokumentpfad festlegen
 
-Beginnen wir mit der Definition des Pfads zu Ihrem Dokumentverzeichnis. Hier befindet sich Ihr Word-Dokument.
+Definieren wir zunächst den Pfad zu Ihrem Dokumentverzeichnis. Hier befindet sich Ihr Word-Dokument.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
@@ -74,7 +74,7 @@ Zum Schluss speichern wir das Dokument als feste HTML-Datei. Hier geschieht die 
  Wir verwenden die`Save` Methode, um das Dokument mit den konfigurierten Speicheroptionen zu speichern.
 
 ```csharp
-//Dokument in festes HTML konvertieren
+// Dokument in festes HTML konvertieren
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
@@ -107,7 +107,7 @@ Wenn der Zielcomputer nicht über die erforderlichen Schriftarten verfügt, wird
  Das Einbetten von Schriftarten erfolgt über`FontSettings` Klasse in Aspose.Words für .NET. Siehe die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### Gibt es eine Möglichkeit, das Dokument vor dem Speichern in der Vorschau anzuzeigen?
- Ja, Sie können die`DocumentRenderer` Klasse, um das Dokument vor dem Speichern in der Vorschau anzuzeigen. Schauen Sie sich Aspose.Words für .NET an[Dokumentation](https://reference.aspose.com/words/net/) für weitere Informationen.
+ Ja, Sie können die`DocumentRenderer` Klasse, um das Dokument vor dem Speichern in der Vorschau anzuzeigen. Sehen Sie sich Aspose.Words für .NET an[Dokumentation](https://reference.aspose.com/words/net/) für weitere Informationen.
 
 ### Kann ich die HTML-Ausgabe weiter anpassen?
  Absolut! Die`HtmlFixedSaveOptions` Die Klasse bietet verschiedene Eigenschaften zum Anpassen der HTML-Ausgabe. Entdecken Sie die[Dokumentation](https://reference.aspose.com/words/net/) für alle verfügbaren Optionen.

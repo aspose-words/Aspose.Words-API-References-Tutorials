@@ -1,27 +1,27 @@
 ---
-title: Yer İşaretli Metni Word Belgesine Kopyala
-linktitle: Yer İşaretli Metni Word Belgesine Kopyala
+title: Word Belgesinde İşaretlenmiş Metni Kopyala
+linktitle: Word Belgesinde İşaretlenmiş Metni Kopyala
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak yer imlerine eklenmiş metni Word belgeleri arasında zahmetsizce kopyalayın. Bu adım adım kılavuzla nasıl yapılacağını öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgeleri arasında yer imli metni zahmetsizce kopyalayın. Bu adım adım kılavuzla nasıl yapacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 ## giriiş
 
-Hiç belirli bölümleri bir Word belgesinden diğerine kopyalamaya ihtiyaç duyduğunuzu fark ettiniz mi? Şanslısın! Bu eğitimde, Aspose.Words for .NET'i kullanarak yer imli metni bir Word belgesinden diğerine nasıl kopyalayacağınız konusunda size yol göstereceğiz. İster dinamik bir rapor oluşturuyor olun ister belge oluşturmayı otomatikleştiriyor olun, bu kılavuz süreci sizin için kolaylaştıracaktır.
+Belirli bölümleri bir Word belgesinden diğerine kopyalamanız gerektiğini hiç fark ettiniz mi? Şanslısınız! Bu eğitimde, Aspose.Words for .NET kullanarak yer imli metni bir Word belgesinden diğerine nasıl kopyalayacağınızı göstereceğiz. İster dinamik bir rapor oluşturun ister belge oluşturmayı otomatikleştirin, bu kılavuz sizin için süreci basitleştirecektir.
 
-## Önkoşullar
+## Ön koşullar
 
-Dalışa geçmeden önce aşağıdakilere sahip olduğunuzdan emin olun:
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
--  Aspose.Words for .NET Kütüphanesi: Buradan indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
-- Geliştirme Ortamı: Visual Studio veya başka herhangi bir .NET geliştirme ortamı.
-- Temel C# Bilgisi: C# programlama ve .NET çerçevesine aşinalık.
+-  Aspose.Words for .NET Kütüphanesi: Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio veya herhangi bir .NET geliştirme ortamı.
+- Temel C# Bilgisi: C# programlama ve .NET framework'üne aşinalık.
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamak için projenize gerekli ad alanlarının aktarıldığından emin olun:
+Başlamak için, projenize gerekli ad alanlarının aktarıldığından emin olun:
 
 ```csharp
 using Aspose.Words;
@@ -29,28 +29,28 @@ using Aspose.Words.Import;
 using Aspose.Words.Bookmark;
 ```
 
-## 1. Adım: Kaynak Belgeyi Yükleyin
+## Adım 1: Kaynak Belgeyi Yükle
 
-Öncelikle kopyalamak istediğiniz yer imlerine eklenmiş metni içeren kaynak belgeyi yüklemeniz gerekir.
+İlk önce kopyalamak istediğiniz yer imli metni içeren kaynak belgeyi yüklemeniz gerekiyor.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Burada,`dataDir` belge dizininizin yoludur ve`Bookmarks.docx` kaynak belgedir.
+ Burada,`dataDir` belge dizininize giden yoldur ve`Bookmarks.docx` kaynak belgedir.
 
 ## Adım 2: Yer İşaretini Tanımlayın
 
-Daha sonra kaynak belgeden kopyalamak istediğiniz yer imini tanımlayın.
+Daha sonra kaynak belgeden kopyalamak istediğiniz yer imini belirleyin.
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
- Yer değiştirmek`"MyBookmark1"` yer iminizin gerçek adıyla birlikte.
+ Yer değiştirmek`"MyBookmark1"` yer iminizin gerçek adıyla.
 
-## 3. Adım: Hedef Belgesini Oluşturun
+## Adım 3: Hedef Belgeyi Oluşturun
 
 Şimdi yer imlerine eklenen metnin kopyalanacağı yeni bir belge oluşturun.
 
@@ -59,7 +59,7 @@ Document dstDoc = new Document();
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## 4. Adım: Yer İşaretli İçeriği İçe Aktarın
+## Adım 4: Yer İşaretli İçeriği İçe Aktar
 
  Stillerin ve biçimlendirmenin korunduğundan emin olmak için şunu kullanın:`NodeImporter` Yer imlerine eklenen içeriği kaynak belgeden hedef belgeye aktarmak için.
 
@@ -70,7 +70,7 @@ AppendBookmarkedText(importer, srcBookmark, dstNode);
 
 ## Adım 5: AppendBookmarkedText Yöntemini Tanımlayın
 
-İşte sihrin gerçekleştiği yer burası. Yer imlerine eklenen metnin kopyalanmasını işlemek için bir yöntem tanımlayın:
+İşte sihir burada gerçekleşiyor. Yer imlerine eklenen metnin kopyalanmasını işleyecek bir yöntem tanımlayın:
 
 ```csharp
 private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
@@ -94,9 +94,9 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
 }
 ```
 
-## Adım 6: Hedef Belgesini Kaydedin
+## Adım 6: Hedef Belgeyi Kaydedin
 
-Son olarak, kopyalanan içeriği doğrulamak için hedef belgeyi kaydedin.
+Son olarak kopyalanan içeriği doğrulamak için hedef belgeyi kaydedin.
 
 ```csharp
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
@@ -104,21 +104,21 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Çözüm
 
-İşte bu kadar! Aspose.Words for .NET'i kullanarak yer imlerine eklenmiş metni bir Word belgesinden diğerine başarıyla kopyaladınız. Bu yöntem, belge işleme görevlerini otomatikleştirmek için güçlüdür ve iş akışınızı daha verimli ve akıcı hale getirir.
+Ve işte bu kadar! Aspose.Words for .NET kullanarak yer imli metni bir Word belgesinden diğerine başarıyla kopyaladınız. Bu yöntem, belge düzenleme görevlerini otomatikleştirmek, iş akışınızı daha verimli ve akıcı hale getirmek için güçlüdür.
 
-## SSS'ler
+## SSS
 
 ### Birden fazla yer imini aynı anda kopyalayabilir miyim?
-Evet, birden fazla yer imini yineleyebilir ve her birini kopyalamak için aynı yöntemi kullanabilirsiniz.
+Evet, birden fazla yer imi arasında dolaşabilir ve her birini kopyalamak için aynı yöntemi kullanabilirsiniz.
 
 ### Yer imi bulunamazsa ne olur?
-`Range.Bookmarks` mülk geri dönecek`null`, bu nedenle istisnalardan kaçınmak için bu vakayı ele aldığınızdan emin olun.
+The`Range.Bookmarks` mülk geri dönecek`null`, bu nedenle istisnalardan kaçınmak için bu durumu ele aldığınızdan emin olun.
 
-### Orijinal yer iminin formatını koruyabilir miyim?
- Kesinlikle! Kullanma`ImportFormatMode.KeepSourceFormatting` orijinal formatın korunmasını sağlar.
+### Orijinal yer iminin biçimini koruyabilir miyim?
+ Kesinlikle! Kullanarak`ImportFormatMode.KeepSourceFormatting` orijinal biçimlendirmenin korunmasını sağlar.
 
 ### Yer imlerine eklenen metnin boyutunda bir sınır var mı?
-Belirli bir sınır yoktur ancak performans çok büyük belgelerde değişiklik gösterebilir.
+Belirli bir sınır yoktur, ancak çok büyük belgelerde performans değişebilir.
 
-### Farklı Word belge formatları arasında metin kopyalayabilir miyim?
+### Farklı Word belge biçimleri arasında metin kopyalayabilir miyim?
 Evet, Aspose.Words çeşitli Word formatlarını destekler ve yöntem bu formatlarda çalışır.

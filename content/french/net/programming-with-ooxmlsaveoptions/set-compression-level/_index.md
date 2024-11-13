@@ -9,60 +9,60 @@ url: /fr/net/programming-with-ooxmlsaveoptions/set-compression-level/
 ---
 ## Introduction
 
-Prêt à plonger dans le monde de la compression de documents avec Aspose.Words pour .NET ? Que vous cherchiez à optimiser le stockage de vos documents ou à accélérer le temps de traitement, le réglage du niveau de compression peut faire une énorme différence. Dans ce didacticiel, nous passerons en revue le processus de définition du niveau de compression d'un document Word à l'aide d'Aspose.Words pour .NET. À la fin de ce guide, vous serez un pro pour rendre vos documents plus simples et plus efficaces.
+Prêt à plonger dans le monde de la compression de documents avec Aspose.Words pour .NET ? Que vous cherchiez à optimiser le stockage de vos documents ou à accélérer le temps de traitement, la définition du niveau de compression peut faire une énorme différence. Dans ce didacticiel, nous allons vous expliquer comment définir le niveau de compression d'un document Word à l'aide d'Aspose.Words pour .NET. À la fin de ce guide, vous serez un pro de la création de documents plus concis et plus efficaces.
 
-## Conditions préalables
+## Prérequis
 
-Avant de passer aux choses sérieuses, assurons-nous que vous disposez de tout ce dont vous avez besoin pour suivre ce didacticiel :
+Avant de passer aux choses sérieuses, assurons-nous que vous disposez de tout ce dont vous avez besoin pour suivre ce tutoriel :
 
-1.  Aspose.Words for .NET : assurez-vous que la bibliothèque Aspose.Words for .NET est installée. Vous pouvez le télécharger depuis le[Page des versions Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : Assurez-vous que la bibliothèque Aspose.Words pour .NET est installée. Vous pouvez la télécharger à partir du[Page de publication d'Aspose](https://releases.aspose.com/words/net/).
 
-2. Environnement de développement : vous devez disposer d'un environnement de développement, tel que Visual Studio.
+2. Environnement de développement : vous devez disposer d’un environnement de développement configuré, tel que Visual Studio.
 
-3. Connaissance de base de C# : Une connaissance de la programmation C# est essentielle pour suivre ce guide.
+3. Connaissances de base de C# : Une connaissance de la programmation C# est essentielle pour suivre ce guide.
 
-4. Exemple de document : préparez un document Word (par exemple, "Document.docx") dans le répertoire de votre projet.
+4. Exemple de document : préparez un document Word (par exemple, « Document.docx ») dans votre répertoire de projet.
 
 ## Importer des espaces de noms
 
-Tout d’abord, importons les espaces de noms nécessaires. Ceci est crucial pour accéder aux fonctionnalités d’Aspose.Words.
+Tout d'abord, importons les espaces de noms nécessaires. Ceci est crucial pour accéder aux fonctionnalités d'Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Très bien, décomposons cela en petites étapes pour vous permettre de suivre facilement.
+Très bien, décomposons cela en étapes de la taille d'une bouchée pour que vous puissiez suivre facilement.
 
-## Étape 1 : Configurez votre projet
+## Étape 1 : Configurez votre projet
 
-Avant d'entrer dans le code, assurez-vous que votre projet est correctement configuré.
+Avant d’entrer dans le code, assurez-vous que votre projet est correctement configuré.
 
-### Étape 1.1 : Créer un nouveau projet
+### Étape 1.1 : Créer un nouveau projet
 
-Ouvrez Visual Studio et créez un nouveau projet d'application console C#. Nommez-le quelque chose comme "AsposeWordsCompressionDemo".
+Ouvrez Visual Studio et créez un nouveau projet d'application console C#. Nommez-le quelque chose comme « AsposeWordsCompressionDemo ».
 
-### Étape 1.2 : Installer Aspose.Words pour .NET
+### Étape 1.2 : Installer Aspose.Words pour .NET
 
-Vous devez ajouter Aspose.Words for .NET à votre projet. Vous pouvez le faire via NuGet Package Manager. Recherchez « Aspose.Words » et installez-le. Vous pouvez également utiliser la console du gestionnaire de packages :
+Vous devez ajouter Aspose.Words pour .NET à votre projet. Vous pouvez le faire via le gestionnaire de packages NuGet. Recherchez « Aspose.Words » et installez-le. Vous pouvez également utiliser la console du gestionnaire de packages :
 
 ```shell
 Install-Package Aspose.Words
 ```
 
-## Étape 2 : Chargez votre document
+## Étape 2 : Chargez votre document
 
 Maintenant que votre projet est configuré, chargeons le document avec lequel vous souhaitez travailler.
 
-### Étape 2.1 : Définir le répertoire des documents
+### Étape 2.1 : Définir le répertoire des documents
 
-Tout d’abord, spécifiez le chemin d’accès à votre répertoire de documents. Remplacez « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin réel.
+Tout d'abord, spécifiez le chemin d'accès à votre répertoire de documents. Remplacez « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin d'accès réel.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-### Étape 2.2 : Charger le document
+### Étape 2.2 : Charger le document
 
 Utilisez le code suivant pour charger votre document Word :
 
@@ -70,11 +70,11 @@ Utilisez le code suivant pour charger votre document Word :
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Étape 3 : définir le niveau de compression
+## Étape 3 : Définir le niveau de compression
 
-C'est ici que la magie opère. Nous définirons le niveau de compression du document.
+C'est ici que la magie opère. Nous allons définir le niveau de compression du document.
 
- Créer une instance de`OoxmlSaveOptions` et réglez le niveau de compression. Le`CompressionLevel` la propriété peut être définie à différents niveaux tels que`Normal`, `Maximum`, `Fast` , et`SuperFast` . Pour cet exemple, nous utiliserons`SuperFast`.
+ Créer une instance de`OoxmlSaveOptions` et définissez le niveau de compression.`CompressionLevel` la propriété peut être définie à différents niveaux tels que`Normal`, `Maximum`, `Fast` , et`SuperFast` . Pour cet exemple, nous utiliserons`SuperFast`.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
@@ -83,7 +83,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
 };
 ```
 
-## Étape 4 : Enregistrez le document
+## Étape 4 : Enregistrer le document
 
 Enfin, enregistrez le document avec les nouveaux paramètres de compression.
 
@@ -93,34 +93,34 @@ Enfin, enregistrez le document avec les nouveaux paramètres de compression.
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveOptions);
 ```
 
-## Étape 5 : vérifier la sortie
+## Étape 5 : Vérifier la sortie
 
-Après avoir exécuté votre application, accédez au répertoire spécifié et vérifiez le nouveau fichier. Vous remarquerez que sa taille est réduite par rapport au document original, grâce aux paramètres de compression que nous avons appliqués.
+Après avoir exécuté votre application, accédez au répertoire spécifié et vérifiez le nouveau fichier. Vous devriez remarquer que sa taille est réduite par rapport au document d'origine, grâce aux paramètres de compression que nous avons appliqués.
 
 ## Conclusion
 
-Et voilà ! Vous avez défini avec succès le niveau de compression d'un document Word à l'aide d'Aspose.Words pour .NET. Cela peut réduire considérablement la taille du fichier et améliorer les performances lorsque vous travaillez avec des documents volumineux. N'oubliez pas d'explorer d'autres niveaux de compression pour trouver le meilleur équilibre entre taille de fichier et performances pour vos besoins.
+Et voilà ! Vous avez défini avec succès le niveau de compression d'un document Word à l'aide d'Aspose.Words pour .NET. Cela peut réduire considérablement la taille du fichier et améliorer les performances lorsque vous travaillez avec des documents volumineux. N'oubliez pas d'explorer d'autres niveaux de compression pour trouver le meilleur équilibre entre la taille du fichier et les performances en fonction de vos besoins.
 
-Si vous avez des questions ou rencontrez des problèmes, consultez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou contactez leur[Forum d'assistance](https://forum.aspose.com/c/words/8).
+Si vous avez des questions ou rencontrez des problèmes, consultez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou contactez-les[Forum de soutien](https://forum.aspose.com/c/words/8).
 
 ## FAQ
 
-### Qu’est-ce qu’Aspose.Words pour .NET ?
+### Qu'est-ce que Aspose.Words pour .NET ?
 
-Aspose.Words for .NET est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier, convertir et imprimer des documents Word par programme à l'aide de .NET.
+Aspose.Words pour .NET est une puissante bibliothèque de manipulation de documents qui permet aux développeurs de créer, modifier, convertir et imprimer des documents Word par programmation à l'aide de .NET.
 
-### Comment installer Aspose.Words pour .NET ?
+### Comment installer Aspose.Words pour .NET ?
 
 Vous pouvez installer Aspose.Words pour .NET via le gestionnaire de packages NuGet dans Visual Studio. Recherchez simplement « Aspose.Words » et installez-le.
 
 ### Quels sont les différents niveaux de compression disponibles ?
 
-Aspose.Words for .NET propose plusieurs niveaux de compression, notamment Normal, Maximum, Rapide et SuperFast. Chaque niveau offre un équilibre différent entre la taille du fichier et la vitesse de traitement.
+Aspose.Words pour .NET propose plusieurs niveaux de compression, notamment Normal, Maximum, Fast et SuperFast. Chaque niveau offre un équilibre différent entre la taille du fichier et la vitesse de traitement.
 
-### Puis-je appliquer une compression à d’autres formats de document ?
+### Puis-je appliquer la compression à d’autres formats de documents ?
 
-Oui, Aspose.Words for .NET prend en charge la compression pour divers formats de documents, notamment DOCX, PDF, etc.
+Oui, Aspose.Words pour .NET prend en charge la compression pour divers formats de documents, notamment DOCX, PDF, etc.
 
-### Où puis-je obtenir de l'aide si je rencontre des problèmes ?
+### Où puis-je obtenir de l’aide si je rencontre des problèmes ?
 
- Vous pouvez obtenir le soutien de la communauté Aspose en visitant leur[Forum d'assistance](https://forum.aspose.com/c/words/8).
+ Vous pouvez obtenir du soutien de la communauté Aspose en visitant leur[Forum de soutien](https://forum.aspose.com/c/words/8).

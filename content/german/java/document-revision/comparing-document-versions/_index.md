@@ -61,7 +61,7 @@ comparer.applyChangesToOriginalDocument();
 Nachdem Sie die Änderungen übernommen haben, ist es an der Zeit, das verglichene Dokument zur weiteren Verwendung zu speichern.
 
 ```java
-// Vergleichsdokument speichern
+// Speichern des verglichenen Dokuments
 originalDocument.save("compared_document.docx");
 ```
 
@@ -89,4 +89,4 @@ Ja, Aspose.Words für Java unterstützt verschiedene Dokumentformate, darunter D
 
 ### Wo kann ich auf die Aspose.Words-Dokumentation für Java zugreifen?
 
-Eine umfassende Dokumentation zu Aspose.Words für Java finden Sie unter[Hier](https://reference.aspose.com/words/java/).
+ Eine umfassende Dokumentation zu Aspose.Words für Java finden Sie unter[Hier](https://reference.aspose.com/words/java/).

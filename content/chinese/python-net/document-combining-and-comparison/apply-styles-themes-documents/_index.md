@@ -113,7 +113,7 @@ header.paragraph_format.style = custom_style
 
 ## 处理文档范围的样式
 
-轻松地将样式应用到整个文档。
+轻松地将样式应用于整个文档。
 
 ```python
 # Apply style document-wide

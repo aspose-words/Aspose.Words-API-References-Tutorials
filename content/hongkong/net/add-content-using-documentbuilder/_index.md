@@ -1,5 +1,5 @@
 ---
-title: 使用 Documentbuilder 新增內容
+title: 使用 DocumentBuilder 新增內容
 linktitle: 使用 Documentbuilder 新增內容
 second_title: Aspose.Words 文件處理 API
 description: 了解如何使用 DocumentBuilder 和 Aspose.Words for .NET 將內容新增至 Word 文件。帶有詳細程式碼範例的實踐教學。

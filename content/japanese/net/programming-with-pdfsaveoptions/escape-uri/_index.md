@@ -9,7 +9,7 @@ url: /ja/net/programming-with-pdfsaveoptions/escape-uri/
 ---
 ## 導入
 
-こんにちは! Aspose.Words for .NET を使用して Word 文書を PDF として保存するときに URI をどのように処理すればよいか疑問に思ったことはありませんか? 適切な場所に来ています! 今日は、PDF 文書の URI をエスケープして、文書を変換したときに URI が正しく機能するようにする方法について詳しく説明します。一緒にこの旅に出発し、ステップ バイ ステップで各概念を理解していきましょう。
+こんにちは! Aspose.Words for .NET を使用して Word 文書を PDF として保存するときに URI をどのように処理すればよいか疑問に思ったことはありませんか? 適切な場所に来ています! 今日は、PDF 文書の URI をエスケープして、文書を変換したときに URI が正しく機能するようにする方法について詳しく説明します。一緒にこの旅に出発し、ステップ バイ ステップで各概念を理解できるようにしましょう。
 
 ## 前提条件
 
@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 次に、ドキュメントにハイパーリンクを挿入します。このハイパーリンクが URI エスケープ プロセスの焦点になります。
 
 ```csharp
-builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", false);
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose"、false);
 ```
 
 この行では、`"Testlink"`ハイパーリンクの表示テキストであり、`"https://www.google.com/search?q= aspose"`はURLです。`false`パラメータは、リンクがハイパーリンクとしてフォーマットされないことを示します (つまり、下線が引かれ、青色になりません)。
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 これで完了です。Aspose.Words for .NET を使用して Word 文書を PDF として保存するときに URI をエスケープする方法を学習しました。このプロセスにより、結果として得られる PDF でハイパーリンクが機能し、適切にフォーマットされたままになります。 
 
-これらの小さいながらも重要なテクニックを習得すると、ドキュメントの品質と機能が大幅に向上することを覚えておいてください。コーディングを楽しんでください!
+これらの小さいながらも重要なテクニックを習得すると、ドキュメントの品質と機能が大幅に向上することを忘れないでください。コーディングを楽しんでください!
 
 ## よくある質問
 

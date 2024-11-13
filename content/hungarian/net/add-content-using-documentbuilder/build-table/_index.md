@@ -35,7 +35,7 @@ Rendben, bontsuk fel kezelhető lépésekre a táblázat létrehozásának folya
 
 ## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
 
- Először is be kell állítanunk a dokumentumunkat és a dokumentumkészítőnket. A`Document` osztály képviseli a Word dokumentumot, és`DocumentBuilder` praktikus eszközünk a tartalom hozzáadásához.
+ Először is be kell állítanunk a dokumentumunkat és a dokumentumkészítőnket. A`Document` osztály képviseli a Word dokumentumot, és`DocumentBuilder` a mi praktikus eszközünk tartalom hozzáadásához.
 
 ```csharp
 Document doc = new Document();
@@ -125,7 +125,7 @@ Ne feledje, gyakorlat teszi a mestert. Tehát ne habozzon kísérletezni a kül�
 Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való programozott munkavégzéshez. Lehetővé teszi dokumentumok létrehozását, szerkesztését és kezelését Microsoft Word nélkül.
 
 ### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
- Tudod[töltse le az Aspose.Words for .NET-et innen](https://releases.aspose.com/words/net/). Kövesse a mellékelt telepítési utasításokat a fejlesztői környezetben történő beállításához.
+ Megteheti[töltse le az Aspose.Words for .NET-et innen](https://releases.aspose.com/words/net/). Kövesse a mellékelt telepítési utasításokat a fejlesztői környezetben történő beállításához.
 
 ### Használhatom ingyenesen az Aspose.Words-t?
  Az Aspose.Words ajánlatok a[ingyenes próbaverzió](https://releases.aspose.com/) így tesztelheti a tulajdonságait. Hosszabb idejű használathoz licencet vásárolhat, vagy a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).

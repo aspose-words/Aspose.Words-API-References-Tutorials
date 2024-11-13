@@ -45,7 +45,7 @@ Pojďme si projít proces vkládání hypertextových odkazů do dokumentu aplik
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- The`DocumentBuilder` class je všestranný nástroj, který umožňuje vytvářet a upravovat dokument.
+The`DocumentBuilder` class je všestranný nástroj, který umožňuje vytvářet a upravovat dokument.
 
 ## Krok 2: Vložte hypertextový odkaz
 

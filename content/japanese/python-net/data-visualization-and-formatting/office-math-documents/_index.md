@@ -152,7 +152,7 @@ download_link = "https://releases.aspose.com/words/python/" + save_response.save
 
 ### Aspose.Words API を使用して積分などの複雑な式を挿入できますか?
 
-もちろん、API を使用してさまざまな複雑な数式を挿入できます。
+もちろん、API を使用すると、さまざまな複雑な数式を挿入できます。
 
 ### Aspose.Words for Python の使用に関する詳細なリソースはどこで見つかりますか?
 

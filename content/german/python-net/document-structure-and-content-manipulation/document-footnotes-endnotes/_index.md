@@ -1,7 +1,7 @@
 ---
 title: Untersuchen von Fußnoten und Endnoten in Word-Dokumenten
 linktitle: Untersuchen von Fußnoten und Endnoten in Word-Dokumenten
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Entdecken Sie, wie Sie mit Aspose.Words für Python Fußnoten und Endnoten in Word-Dokumenten effektiv verwenden. Erfahren Sie, wie Sie diese Elemente programmgesteuert hinzufügen, anpassen und verwalten.
 type: docs
 weight: 14
@@ -73,7 +73,7 @@ Sie können Fußnoten und Endnoten programmgesteuert verwalten, indem Sie:
 
 - Halten Sie Fußnoten kurz und relevant
 - Verwenden Sie Endnoten für ausführlichere Erklärungen
-- Achten Sie auf eine einheitliche Formatierung
+- Behalten Sie eine einheitliche Formatierung bei
 - Überprüfen Sie die Richtigkeit der Zitate
 
 ## Fehlerbehebung bei allgemeinen Problemen

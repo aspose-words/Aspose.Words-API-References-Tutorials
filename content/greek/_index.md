@@ -14,6 +14,7 @@ is_root: true
 {{% /alert %}}
 
 Αυτοί είναι σύνδεσμοι προς μερικούς χρήσιμους πόρους:
+- [Επεξεργασία εγγράφων με τεχνητή νοημοσύνη](./net/ai-powered-document-processing/)
 - [Εφαρμογή άδειας χρήσης](./net/apply-license/)   
 - [Ενεργοποιήστε τις λειτουργίες OpenType](./net/enable-opentype-features/)   
 - [Εργασία με σχόλια](./net/working-with-comments/)   

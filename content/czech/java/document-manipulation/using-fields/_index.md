@@ -56,7 +56,7 @@ doc.getMailMerge().execute(dataTable);
 
 ## Práce s obrázky
 
-Obrázky můžete sloučit do dokumentů. Zde je příklad sloučení obrázků z databáze do dokumentu:
+Obrázky můžete sloučit do svých dokumentů. Zde je příklad sloučení obrázků z databáze do dokumentu:
 
 ```java
 Document doc = new Document("ImageMergeTemplate.docx");
@@ -111,11 +111,11 @@ Podmíněná pole v Aspose.Words pro Java umožňují vytvářet dynamické doku
 
 ### Kde najdu další dokumentaci a zdroje pro Aspose.Words for Java?
 
- Komplexní dokumentaci, ukázky kódu a výukové programy pro Aspose.Words for Java naleznete na webu Aspose:[Aspose.Words pro dokumentaci Java](https://reference.aspose.com/words/java/). Tento zdroj vám pomůže prozkoumat další funkce a funkce knihovny.
+ Komplexní dokumentaci, ukázky kódu a výukové programy pro Aspose.Words for Java naleznete na webu Aspose:[Aspose.Words pro dokumentaci Java](https://reference.aspose.com/words/java/)Tento zdroj vám pomůže prozkoumat další funkce a funkce knihovny.
 
 ### Jak mohu získat podporu nebo vyhledat pomoc s Aspose.Words for Java?
 
- Pokud potřebujete pomoc, máte otázky nebo se při používání Aspose.Words pro Java setkáte s problémy, můžete navštívit fórum Aspose.Words, kde získáte podporu komunity a diskuse:[Fórum Aspose.Words](https://forum.aspose.com/c/words).
+ Pokud potřebujete pomoc, máte otázky nebo se při používání Aspose.Words pro Java setkáte s problémy, můžete navštívit fórum Aspose.Words, kde najdete podporu komunity a diskuse:[Fórum Aspose.Words](https://forum.aspose.com/c/words).
 
 ### Je Aspose.Words for Java kompatibilní s různými Java IDE?
 

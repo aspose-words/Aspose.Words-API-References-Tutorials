@@ -54,7 +54,7 @@ builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 
 ## Krok 3: Nastavte zdroj kultury aktualizace pole
 
- Pro kontrolu kultury používané při aktualizaci polí jsme nastavili`FieldUpdateCultureSource` vlastnictvím`FieldOptions`třída. Tato vlastnost určuje, zda je kultura převzata z kódu pole nebo dokumentu.
+ Pro kontrolu kultury používané při aktualizaci polí jsme nastavili`FieldUpdateCultureSource` vlastnictví`FieldOptions`třída. Tato vlastnost určuje, zda je kultura převzata z kódu pole nebo dokumentu.
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
@@ -83,7 +83,7 @@ A tady to máte! Úspěšně jste změnili zdroj kultury aktualizace pole v Aspo
 ## FAQ
 
 ###  Jaký je účel nastavení`LocaleId`?
- The`LocaleId` určuje nastavení kultury pro text, které ovlivňuje, jak jsou formátována data a další data citlivá na národní prostředí.
+The`LocaleId` určuje nastavení kultury pro text, které ovlivňuje, jak jsou formátována data a další data citlivá na národní prostředí.
 
 ### Mohu použít jiné národní prostředí než němčinu?
  Ano, můžete nastavit`LocaleId`na jakýkoli platný identifikátor národního prostředí. Například 1033 pro angličtinu (Spojené státy americké).

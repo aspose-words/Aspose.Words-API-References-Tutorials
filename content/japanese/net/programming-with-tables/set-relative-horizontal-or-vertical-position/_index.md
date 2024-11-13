@@ -69,7 +69,7 @@ table.HorizontalAnchor = RelativeHorizontalPosition.Column;
 table.VerticalAnchor = RelativeVerticalPosition.Page;
 ```
 
-設定`VerticalAnchor`に`RelativeVerticalPosition.Page`テーブルがページに応じて垂直に揃えられるようにします。
+設定`VerticalAnchor`に`RelativeVerticalPosition.Page`テーブルがページに応じて垂直に配置されるようにします。
 
 ## ステップ5: ドキュメントを保存する
 

@@ -82,7 +82,7 @@ Där har du det! Att slå samman dokument utan att tappa förståndet över form
 Aspose.Words för .NET är ett kraftfullt bibliotek för att arbeta med Word-dokument programmatiskt. Det låter dig skapa, ändra och konvertera dokument i olika format.
 
 ### Hur installerar jag Aspose.Words för .NET?
- Du kan ladda ner den från[webbplats](https://releases.aspose.com/words/net/) och följ installationsanvisningarna i[dokumentation](https://reference.aspose.com/words/net/).
+ Du kan ladda ner den från[webbplats](https://releases.aspose.com/words/net/) och följ installationsinstruktionerna i[dokumentation](https://reference.aspose.com/words/net/).
 
 ### Kan jag använda Aspose.Words gratis?
  Aspose.Words erbjuder en[gratis provperiod](https://releases.aspose.com/) med begränsade funktioner. För full åtkomst måste du köpa en licens[här](https://purchase.aspose.com/buy).
@@ -91,4 +91,4 @@ Aspose.Words för .NET är ett kraftfullt bibliotek för att arbeta med Word-dok
  ImportFormatOptions låter dig ange hur formatering ska hanteras när du importerar innehåll från ett dokument till ett annat. Till exempel,`KeepSourceNumbering` säkerställer att listnumrering från källdokumentet bevaras.
 
 ### Var kan jag få support för Aspose.Words?
- Du kan få stöd från[Aspose.Words forum](https://forum.aspose.com/c/words/8), där du kan ställa frågor och få hjälp från communityn och Aspose-utvecklare.
+ Du kan få stöd från[Aspose.Words forum](https://forum.aspose.com/c/words/8)där du kan ställa frågor och få hjälp från communityn och Aspose-utvecklare.

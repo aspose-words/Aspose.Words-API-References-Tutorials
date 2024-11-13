@@ -39,11 +39,11 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Der`dataDir` Die Variable ist ein Platzhalter für das Verzeichnis, in dem Sie Ihre Markdown-Datei speichern. Stellen Sie sicher, dass Sie „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Pfad ersetzen.
+Der`dataDir` Die Variable ist ein Platzhalter für das Verzeichnis, in dem Sie Ihre Markdown-Datei speichern. Achten Sie darauf, „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Pfad zu ersetzen.
 
 ## Schritt 2: Normalen Text schreiben
 
-Fügen wir nun unserem Dokument etwas einfachen Text hinzu. Dies dient als Grundlage für die Demonstration der Texthervorhebung.
+Fügen wir nun unserem Dokument einen einfachen Text hinzu. Dies dient als Grundlage für die Demonstration der Texthervorhebung.
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as indicators of emphases.");
@@ -67,7 +67,7 @@ Dieser Codeausschnitt setzt den Text „fett“ in Fettschrift und wechselt dann
 
 ## Schritt 4: Kursiver Text hinzufügen
 
-Kursiver Text in Markdown wird in einzelne Sternchen (`*` ). Stellen Sie in ähnlicher Weise die`Italic` Eigentum der`Font` Einwände erheben gegen`true`.
+Kursiver Text in Markdown wird in einzelne Sternchen (`*` ). Stellen Sie auf ähnliche Weise die`Italic` Eigentum der`Font` Einwände erheben gegen`true`.
 
 ```csharp
 builder.Font.Italic = true;
@@ -80,7 +80,7 @@ Dadurch wird „kursiv“ im Kursivstil wiedergegeben, gefolgt vom normalen Text
 
 ## Schritt 5: Fetten und kursiven Text kombinieren
 
-Sie können Fett- und Kursivschrift kombinieren, indem Sie den Text in drei Sternchen (`*` ). Stellen Sie beide`Bold`Und`Italic` Eigenschaften zu`true`.
+Sie können Fett- und Kursivschrift kombinieren, indem Sie den Text in drei Sternchen (`*` ). Stellen Sie beide`Bold` Und`Italic` Eigenschaften zu`true`.
 
 ```csharp
 builder.Write("You can also write ");
@@ -114,7 +114,7 @@ Und da haben Sie es! Sie wissen jetzt, wie Sie mit Aspose.Words für .NET hervor
 Ja, Sie können andere Stile wie Überschriften, Listen und Codeblöcke verwenden. Aspose.Words für .NET unterstützt eine breite Palette von Markdown-Formatierungsoptionen.
 
 ### Wie kann ich Aspose.Words für .NET installieren?
- Sie können die Bibliothek herunterladen von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/) und befolgen Sie die bereitgestellten Installationsanweisungen.
+ Sie können die Bibliothek herunterladen von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/)und befolgen Sie die bereitgestellten Installationsanweisungen.
 
 ### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?
  Ja, Sie können ein[Kostenlose Testversion](https://releases.aspose.com/) um die Funktionen von Aspose.Words für .NET zu testen.

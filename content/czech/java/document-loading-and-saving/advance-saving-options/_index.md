@@ -28,7 +28,7 @@ Než začnete kódovat, ujistěte se, že máte nastavené potřebné prostřed�
     builder.write("Hello world!");
 ```
 
-## Šifrování dokumentu pomocí hesla
+## Šifrování dokumentu heslem
 
 Nyní se vrhneme na první krok – zašifrování dokumentu heslem. To přidává vašim citlivým dokumentům další vrstvu zabezpečení.
 
@@ -40,7 +40,7 @@ DocSaveOptions saveOptions = new DocSaveOptions();
 doc.save("Your Directory Path" + "EncryptedDocument.docx", saveOptions);
 ```
 
-## Nekomprimuje malé metasoubory
+## Malé metasoubory se nekomprimují
 
 Metasoubory jsou nezbytné v dokumentech aplikace Word, ale možná nebudete chtít komprimovat malé soubory. Jak toho dosáhnout:
 
@@ -121,7 +121,7 @@ Můžete získat bezplatnou zkušební verzi Aspose.Words for Java[zde](https://
 
 ### 3. Kde najdu podporu pro Aspose.Words for Java?
 
- Pro podporu a komunitní diskuse navštivte[Aspose.Words for Java forum](https://forum.aspose.com/).
+ Pro podporu a komunitní diskuze navštivte[Aspose.Words for Java forum](https://forum.aspose.com/).
 
 ### 4. Mohu používat Aspose.Words for Java s jinými knihovnami Java?
 

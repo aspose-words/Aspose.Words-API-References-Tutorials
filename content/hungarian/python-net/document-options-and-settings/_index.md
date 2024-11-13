@@ -22,7 +22,7 @@ Ebben az oktatóanyag-sorozatban végigvezetjük Önt az Aspose.Words-ben Python
 
 - Oldalbeállítás: Ismerje meg, hogyan szabhatja testre az oldalméreteket, a margókat, a tájolást és a papírtípust.
 - Betűtípus és szöveg formázása: Fedezze fel a betűstílusokat, -méreteket, -színeket és a szövegigazítási lehetőségeket.
-- Bekezdés- és sorköz: Ismerje meg a bekezdéstávolság, a sormagasság és a behúzás beállításának technikáit.
+- Bekezdés- és sorköz: Ismerje meg a bekezdésköz, a sormagasság és a behúzás beállításának technikáit.
 - Fejlécek és láblécek: Sajátítsa el a fejlécek és láblécek létrehozását és testreszabását a következetes márkaépítés érdekében.
 - Táblázat kialakítása: Ismerje meg a táblázatok létrehozását, a cellák formázását és a szegélyek beállítását a strukturált tartalomhoz.
 - Stílusok és témák: Fedezze fel az előre meghatározott stílusokat és témákat az egységes dokumentumterv fenntartása érdekében.

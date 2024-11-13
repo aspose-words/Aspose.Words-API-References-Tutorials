@@ -29,7 +29,7 @@ url: /ja/python-net/document-combining-and-comparison/
 
 ## ドキュメントの結合と比較のチュートリアル
 ### [Word での文書の結合と比較](./merge-compare-documents/)
-Aspose.Words for Python を使用すると、Word 文書を簡単に結合および比較できます。文書の操作方法、相違点の強調表示方法、タスクの自動化方法を学習します。
+Aspose.Words for Python を使用すると、Word 文書を簡単に結合および比較できます。文書の操作、相違点の強調表示、タスクの自動化の方法を学びます。
 ### [ドキュメントブックマークの力を活用する](./document-bookmarks/)
 Aspose.Words for Python を使用してドキュメント ブックマークの機能を活用する方法を学びます。ステップ バイ ステップのガイドとコード例を使用して、ブックマークを作成、管理、およびナビゲートします。
 ### [精密編集のためのドキュメント範囲のナビゲート](./document-ranges/)

@@ -1,20 +1,20 @@
 ---
-title: Clonando e combinando documentos em Aspose.Words para Java
-linktitle: Clonando e Combinando Documentos
+title: Clonando e combinando documentos no Aspose.Words para Java
+linktitle: Clonagem e combinação de documentos
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda como clonar e combinar documentos em Aspose.Words for Java. Guia passo a passo com exemplos de código-fonte.
+description: Aprenda como clonar e combinar documentos no Aspose.Words para Java. Guia passo a passo com exemplos de código-fonte.
 type: docs
 weight: 27
 url: /pt/java/document-manipulation/cloning-and-combining-documents/
 ---
 
-## Introdução à clonagem e combinação de documentos em Aspose.Words para Java
+## Introdução à clonagem e combinação de documentos no Aspose.Words para Java
 
-Neste tutorial, exploraremos como clonar e combinar documentos usando Aspose.Words for Java. Abordaremos vários cenários, incluindo clonagem de um documento, inserção de documentos em pontos de substituição, marcadores e durante operações de mala direta.
+Neste tutorial, exploraremos como clonar e combinar documentos usando o Aspose.Words para Java. Cobriremos vários cenários, incluindo clonagem de um documento, inserção de documentos em pontos de substituição, marcadores e durante operações de mala direta.
 
-## Etapa 1: clonar um documento
+## Etapa 1: clonando um documento
 
- Para clonar um documento em Aspose.Words for Java, você pode usar o`deepClone()` método. Aqui está um exemplo simples:
+ Para clonar um documento no Aspose.Words para Java, você pode usar o`deepClone()` método. Aqui está um exemplo simples:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -24,7 +24,7 @@ clone.save("Your Directory Path" + "CloneAndCombineDocuments.CloningDocument.doc
 
 Este código criará um clone profundo do documento original e o salvará como um novo arquivo.
 
-## Passo 2: Inserindo Documentos em Pontos de Substituição
+## Etapa 2: Inserindo documentos em pontos de substituição
 
 Você pode inserir documentos em pontos de substituição específicos em outro documento. Veja como você pode fazer isso:
 
@@ -37,9 +37,9 @@ mainDoc.getRange().replace(Pattern.compile("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
 
- Neste exemplo, usamos um`FindReplaceOptions` objeto para especificar um manipulador de retorno de chamada para a substituição. O`InsertDocumentAtReplaceHandler` classe lida com a lógica de inserção.
+ Neste exemplo, usamos um`FindReplaceOptions` objeto para especificar um manipulador de retorno de chamada para a substituição. O`InsertDocumentAtReplaceHandler` A classe manipula a lógica de inserção.
 
-## Passo 3: Inserindo Documentos nos Favoritos
+## Etapa 3: Inserindo documentos nos favoritos
 
 Para inserir um documento em um marcador específico em outro documento, você pode usar o seguinte código:
 
@@ -51,11 +51,11 @@ insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtBookmark.docx");
 ```
 
- Aqui, encontramos o marcador por nome e usamos o`insertDocument` método para inserir o conteúdo do`subDoc` documento no local do marcador.
+ Aqui, encontramos o marcador pelo nome e usamos o`insertDocument` método para inserir o conteúdo do`subDoc` documento no local do marcador.
 
-## Etapa 4: Inserir documentos durante a mala direta
+## Etapa 4: Inserindo documentos durante a mala direta
 
-Você pode inserir documentos durante uma operação de mala direta em Aspose.Words for Java. Veja como:
+Você pode inserir documentos durante uma operação de mala direta no Aspose.Words para Java. Veja como:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
@@ -64,17 +64,17 @@ mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { "Yo
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
- Neste exemplo, definimos um retorno de chamada de mesclagem de campo usando o`InsertDocumentAtMailMergeHandler` classe para tratar a inserção do documento especificado pelo campo "Document_1".
+ Neste exemplo, definimos um retorno de chamada de mesclagem de campo usando o`InsertDocumentAtMailMergeHandler` classe para manipular a inserção do documento especificado pelo campo "Document_1".
 
 ## Conclusão
 
-clonagem e combinação de documentos em Aspose.Words for Java pode ser realizada usando várias técnicas. Se você precisa clonar um documento, inserir conteúdo em pontos de substituição, marcadores ou durante a mala direta, o Aspose.Words oferece recursos poderosos para manipular documentos sem problemas.
+clonagem e a combinação de documentos no Aspose.Words para Java podem ser realizadas usando várias técnicas. Se você precisa clonar um documento, inserir conteúdo em pontos de substituição, marcadores ou durante mala direta, o Aspose.Words fornece recursos poderosos para manipular documentos perfeitamente.
 
 ## Perguntas frequentes
 
-### Como faço para clonar um documento em Aspose.Words for Java?
+### Como clonar um documento no Aspose.Words para Java?
 
- Você pode clonar um documento em Aspose.Words for Java usando o`deepClone()` método. Aqui está um exemplo:
+ Você pode clonar um documento no Aspose.Words para Java usando o`deepClone()` método. Aqui está um exemplo:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -84,7 +84,7 @@ clone.save("Your Directory Path" + "ClonedDocument.docx");
 
 ### Como posso inserir um documento em um marcador?
 
- Para inserir um documento em um marcador no Aspose.Words for Java, você pode encontrar o marcador por nome e usar o`insertDocument` método para inserir o conteúdo. Aqui está um exemplo:
+ Para inserir um documento em um marcador no Aspose.Words para Java, você pode encontrar o marcador pelo nome e então usar o`insertDocument` método para inserir o conteúdo. Aqui está um exemplo:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");
@@ -94,9 +94,9 @@ insertDocument(bookmark.getBookmarkStart().getParentNode(), subDoc);
 mainDoc.save("Your Directory Path" + "CombinedDocument.docx");
 ```
 
-### Como insiro documentos durante a mala direta no Aspose.Words for Java?
+### Como faço para inserir documentos durante a mala direta no Aspose.Words para Java?
 
-Você pode inserir documentos durante a mala direta em Aspose.Words for Java definindo um campo de retorno de chamada de mesclagem e especificando o documento a ser inserido. Aqui está um exemplo:
+Você pode inserir documentos durante a mala direta no Aspose.Words para Java definindo um retorno de chamada de mesclagem de campo e especificando o documento a ser inserido. Aqui está um exemplo:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");
@@ -105,4 +105,4 @@ mainDoc.getMailMerge().execute(new String[] { "DocumentField" }, new Object[] { 
 mainDoc.save("Your Directory Path" + "MergedDocument.docx");
 ```
 
- Neste exemplo, o`InsertDocumentAtMailMergeHandler`classe lida com a lógica de inserção para o "DocumentField" durante a mala direta.
+ Neste exemplo, o`InsertDocumentAtMailMergeHandler` classe manipula a lógica de inserção do "DocumentField" durante a mala direta.

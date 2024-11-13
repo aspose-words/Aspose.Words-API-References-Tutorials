@@ -9,7 +9,7 @@ url: /zh/net/working-with-headers-and-footers/copy-headers-footers-from-previous
 ---
 ## 介绍
 
-在文档中添加和复制页眉和页脚可以大大提高文档的专业性和一致性。使用 Aspose.Words for .NET，这项任务变得简单且高度可定制。在本综合教程中，我们将逐步指导您完成将页眉和页脚从 Word 文档的一个部分复制到另一个部分的过程。
+在文档中添加和复制页眉和页脚可以大大提高文档的专业性和一致性。使用 Aspose.Words for .NET，这项任务变得简单且高度可定制。在本综合教程中，我们将逐步指导您完成将 Word 文档中的页眉和页脚从一个部分复制到另一个部分的过程。
 
 ## 先决条件
 

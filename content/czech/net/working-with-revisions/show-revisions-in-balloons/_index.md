@@ -82,7 +82,7 @@ Ano, Aspose.Words vám umožňuje přizpůsobit barvu revizních pruhů tak, aby
 Absolutně. Aspose.Words můžete nakonfigurovat tak, aby v bublinách zobrazoval pouze určité typy revizí, jako jsou odstranění nebo změny formátování.
 
 ### Jak získám dočasnou licenci pro Aspose.Words?
- Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
+Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Mohu používat Aspose.Words pro .NET s jinými programovacími jazyky?
 Aspose.Words je primárně navržen pro .NET, ale můžete jej použít s jakýmkoli jazykem podporovaným .NET, včetně VB.NET a C++/CLI.

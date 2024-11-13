@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Βήμα 3: Δημιουργία αντικειμένου DocumentBuilder
 
- Ο`DocumentBuilder` Η class είναι ένα ισχυρό εργαλείο στη βιβλιοθήκη Aspose.Words. Μας επιτρέπει να περιηγηθούμε και να χειριστούμε το έγγραφο.
+Ο`DocumentBuilder` Η class είναι ένα ισχυρό εργαλείο στη βιβλιοθήκη Aspose.Words. Μας επιτρέπει να περιηγηθούμε και να χειριστούμε το έγγραφο.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
@@ -121,4 +121,4 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilde
 Απολύτως! Η μέθοδος που περιγράφεται μπορεί να ενσωματωθεί σε μεγαλύτερες εφαρμογές για την αυτοματοποίηση των εργασιών επεξεργασίας εγγράφων.
 
 ### Πού μπορώ να βρω περισσότερους πόρους και υποστήριξη;  
-Για περισσότερες πληροφορίες, μπορείτε να ελέγξετε το[απόδειξη με έγγραφα](https://reference.aspose.com/words/net/) , ή επισκεφθείτε το[φόρουμ υποστήριξης](https://forum.aspose.com/c/words/8) για βοήθεια.
+ Για περισσότερες πληροφορίες, μπορείτε να ελέγξετε το[απόδειξη με έγγραφα](https://reference.aspose.com/words/net/) , ή επισκεφθείτε το[φόρουμ υποστήριξης](https://forum.aspose.com/c/words/8) για βοήθεια.

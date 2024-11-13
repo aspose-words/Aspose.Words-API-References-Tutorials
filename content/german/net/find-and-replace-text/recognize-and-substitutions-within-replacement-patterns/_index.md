@@ -33,14 +33,14 @@ Lassen Sie uns nun das Beispiel in überschaubare Schritte unterteilen. Jeder Sc
 
 ## Schritt 1: Initialisieren Sie das Dokument
 
-Als Erstes müssen Sie ein neues Dokument erstellen. Dieses Dokument dient als Vorlage für den Textersatz.
+Als Erstes müssen Sie ein neues Dokument erstellen. Dieses Dokument dient Ihnen als Vorlage für den Textersatz.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Der`Document` Objekt ist der Kern von Aspose.Words. Es stellt das gesamte Word-Dokument dar.
+Der`Document` Objekt ist der Kern von Aspose.Words. Es stellt das gesamte Word-Dokument dar.
 
 ## Schritt 2: Text zum Dokument hinzufügen
 
@@ -50,7 +50,7 @@ Als nächstes fügen wir dem Dokument Text hinzu. Dieser Text ist das Ziel unser
 builder.Write("Jason give money to Paul.");
 ```
 
- Der`DocumentBuilder` Klasse ist ein leistungsfähiges Tool zum Hinzufügen von Text und anderen Elementen zu Ihrem Dokument.
+Der`DocumentBuilder` Klasse ist ein leistungsfähiges Tool zum Hinzufügen von Text und anderen Elementen zu Ihrem Dokument.
 
 ## Schritt 3: Definieren Sie das Regex-Muster
 
@@ -70,7 +70,7 @@ Aspose.Words ermöglicht Ihnen die Verwendung von Ersetzungen in Ihren Ersetzung
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
- Der`FindReplaceOptions` Die Klasse bietet verschiedene Optionen zum Anpassen Ihrer Such- und Ersetzungsvorgänge.
+Der`FindReplaceOptions` Die Klasse bietet verschiedene Optionen zum Anpassen Ihrer Such- und Ersetzungsvorgänge.
 
 ## Schritt 5: Durchführen des Austauschs
 
@@ -80,7 +80,7 @@ Führen wir nun den Ersetzungsvorgang durch. Hier geschieht die Magie!
 doc.Range.Replace(regex, @"$2 take money from $1", options);
 ```
 
- Hier,`$2`Und`$1` sind Substitutionsmuster.`$2` bezieht sich auf die zweite gefangene Gruppe (Paul) und`$1` bezieht sich auf die erste gefangene Gruppe (Jason). Das Ergebnis wird sein: „Paul nimmt Geld von Jason.“
+ Hier,`$2` Und`$1` sind Substitutionsmuster.`$2` bezieht sich auf die zweite gefangene Gruppe (Paul) und`$1` bezieht sich auf die erste gefangene Gruppe (Jason). Das Ergebnis wird sein: „Paul nimmt Geld von Jason.“
 
 ## Schritt 6: Speichern Sie das Dokument
 
@@ -107,8 +107,8 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die Arbeit mit W
 ### Kann ich mit Aspose.Words für .NET reguläre Ausdrücke verwenden?
 Ja, Aspose.Words unterstützt reguläre Ausdrücke für Such- und Ersetzungsvorgänge und ermöglicht so komplexe Textmanipulationen.
 
-### Was sind Substitutionsmuster in regulären Ausdrücken?
- Substitutionsmuster, wie`$1`Und`$2`, beziehen sich auf erfasste Gruppen in der Regex-Übereinstimmung. Sie werden verwendet, um Teile des übereinstimmenden Textes in der Ersetzungszeichenfolge neu anzuordnen oder wiederzuverwenden.
+### Was sind Ersetzungsmuster in regulären Ausdrücken?
+ Substitutionsmuster, wie`$1` Und`$2`, beziehen sich auf erfasste Gruppen in der Regex-Übereinstimmung. Sie werden verwendet, um Teile des übereinstimmenden Textes in der Ersetzungszeichenfolge neu anzuordnen oder wiederzuverwenden.
 
 ### Wie erhalte ich Unterstützung für Aspose.Words für .NET?
  Sie können Unterstützung in den Aspose-Community-Foren erhalten[Hier](https://forum.aspose.com/c/words/8).

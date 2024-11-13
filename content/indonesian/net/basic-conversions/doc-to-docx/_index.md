@@ -1,6 +1,6 @@
 ---
-title: Konversikan Dokumen ke Docx
-linktitle: Konversikan Dokumen ke Docx
+title: Konversi Doc ke Docx
+linktitle: Konversi Doc ke Docx
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara mengonversi DOC ke DOCX menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah dengan contoh kode. Sempurna untuk pengembang.
 type: docs
@@ -9,23 +9,23 @@ url: /id/net/basic-conversions/doc-to-docx/
 ---
 ## Perkenalan
 
-Dalam tutorial ini, kita akan mempelajari cara mengonversi file DOC ke format DOCX menggunakan Aspose.Words untuk .NET. Aspose.Words adalah pustaka pemrosesan dokumen canggih yang memungkinkan pengembang memanipulasi dan mengonversi dokumen Word secara terprogram.
+Dalam tutorial ini, kita akan menjelajahi cara mengonversi file DOC ke format DOCX menggunakan Aspose.Words untuk .NET. Aspose.Words adalah pustaka pemrosesan dokumen canggih yang memungkinkan pengembang untuk memanipulasi dan mengonversi dokumen Word secara terprogram.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda telah menyiapkan yang berikut:
-- Visual Studio diinstal pada sistem Anda.
--  Aspose.Words untuk .NET diinstal. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
-- Pengetahuan dasar bahasa pemrograman C#.
+Sebelum kita mulai, pastikan Anda telah menyiapkan hal berikut:
+- Visual Studio terinstal di sistem Anda.
+-  Aspose.Words untuk .NET terinstal. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Pengetahuan dasar tentang bahasa pemrograman C#.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Pertama, Anda perlu mengimpor namespace yang diperlukan dalam kode C# Anda:
 ```csharp
 using Aspose.Words;
 ```
 
-Namespace ini menyediakan akses ke Aspose.Words API, memungkinkan Anda bekerja dengan dokumen Word di aplikasi Anda.
+Ruang nama ini menyediakan akses ke API Aspose.Words, yang memungkinkan Anda bekerja dengan dokumen Word di aplikasi Anda.
 
 ## Langkah 1: Muat File DOC
 
@@ -34,7 +34,7 @@ Mulailah dengan memuat file DOC yang ingin Anda konversi:
 // Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Muat file DOC menggunakan Aspose.Words
+// Memuat file DOC menggunakan Aspose.Words
 Document doc = new Document(dataDir + "Document.doc");
 ```
 
@@ -42,34 +42,34 @@ Document doc = new Document(dataDir + "Document.doc");
 
 Selanjutnya, simpan dokumen yang dimuat sebagai format DOCX:
 ```csharp
-// Simpan dokumen sebagai DOCX
+//Simpan dokumen sebagai DOCX
 doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 ```
 
 ## Langkah 3: Jalankan Kode
 
-Kompilasi dan jalankan aplikasi Anda untuk menjalankan proses konversi. Pastikan file input "Document.doc" ada di direktori yang ditentukan.
+Kompilasi dan jalankan aplikasi Anda untuk menjalankan proses konversi. Pastikan bahwa berkas input "Document.doc" ada di direktori yang ditentukan.
 
-## Langkah 4: Verifikasi Outputnya
+## Langkah 4: Verifikasi Output
 
-Periksa direktori keluaran untuk file DOCX yang dikonversi bernama "ConvertedDocument.docx". Anda telah berhasil mengonversi file DOC ke DOCX menggunakan Aspose.Words untuk .NET!
+Periksa direktori keluaran untuk berkas DOCX yang dikonversi bernama "ConvertedDocument.docx". Anda telah berhasil mengonversi berkas DOC ke DOCX menggunakan Aspose.Words untuk .NET!
 
 ## Kesimpulan
 
-Mengonversi DOC ke DOCX secara terprogram menggunakan Aspose.Words untuk .NET sangatlah mudah dan efisien. Hanya dengan beberapa baris kode, Anda dapat mengotomatiskan konversi dokumen, menghemat waktu dan tenaga. Baik Anda menangani konversi batch atau mengintegrasikan pemrosesan dokumen ke dalam aplikasi Anda, Aspose.Words menyediakan fungsionalitas yang kuat untuk memenuhi kebutuhan Anda.
+Mengonversi DOC ke DOCX secara terprogram menggunakan Aspose.Words untuk .NET mudah dan efisien. Hanya dengan beberapa baris kode, Anda dapat mengotomatiskan konversi dokumen, menghemat waktu dan tenaga. Baik Anda menangani konversi batch atau mengintegrasikan pemrosesan dokumen ke dalam aplikasi Anda, Aspose.Words menyediakan fungsionalitas yang tangguh untuk memenuhi kebutuhan Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bisakah Aspose.Words mengonversi format dokumen lain?
 Ya, Aspose.Words mendukung konversi antara berbagai format, termasuk DOC, DOCX, RTF, HTML, PDF, dan banyak lagi.
 
 ### Di mana saya dapat menemukan dokumentasi Aspose.Words?
- Anda dapat mengakses dokumentasinya[Di Sini](https://reference.aspose.com/words/net/).
+ Anda dapat mengakses dokumentasi[Di Sini](https://reference.aspose.com/words/net/).
 
 ### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words?
  Ya, Anda bisa mendapatkan uji coba gratis dari[Di Sini](https://releases.aspose.com/).
 
-### Bagaimana cara membeli lisensi untuk Aspose.Words?
+### Bagaimana saya dapat membeli lisensi untuk Aspose.Words?
  Anda dapat membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
 
 ### Di mana saya bisa mendapatkan dukungan untuk Aspose.Words?

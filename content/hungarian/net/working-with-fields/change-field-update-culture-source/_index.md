@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ## GYIK
 
 ###  Mi a célja a beállításnak a`LocaleId`?
- A`LocaleId` megadja a szöveg kultúra beállításait, amelyek befolyásolják a dátumok és más terület-érzékeny adatok formázását.
+A`LocaleId` megadja a szöveg kultúra beállításait, amelyek befolyásolják a dátumok és más terület-érzékeny adatok formázását.
 
 ### Használhatok a némettől eltérő területi beállítást?
  Igen, beállíthatja a`LocaleId`bármely érvényes területi azonosítóra. Például 1033 angol (Egyesült Államok) esetén.

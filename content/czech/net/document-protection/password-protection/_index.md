@@ -18,7 +18,7 @@ Než se ponoříme do toho nejnutnějšího, jak chránit vaše dokumenty ve Wor
 1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí C#.
 3. Základní znalost C#: Základní znalost programování v C#.
-4.  Aspose License: Získejte licenci od[zde](https://purchase.aspose.com/buy)nebo použijte a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
+4. Aspose License: Získejte licenci od[zde](https://purchase.aspose.com/buy) nebo použijte a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
 
 ## Importovat jmenné prostory
 

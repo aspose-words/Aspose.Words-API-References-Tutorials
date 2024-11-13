@@ -1,24 +1,24 @@
 ---
 title: Voorkeursbesturingstype in Word-document
 linktitle: Voorkeursbesturingstype in Word-document
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een formulierveld met invoervak invoegt in een Word-document met Aspose.Words voor .NET. Volg deze stapsgewijze handleiding voor een naadloze integratie van HTML-inhoud.
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u een combobox-formulierveld invoegt in een Word-document met Aspose.Words voor .NET. Volg deze stapsgewijze handleiding voor naadloze integratie van HTML-inhoud.
 type: docs
 weight: 10
 url: /nl/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
 ## Invoering
 
-we duiken in een spannende tutorial over hoe je kunt werken met HTML-laadopties in Aspose.Words voor .NET, waarbij we ons specifiek richten op het instellen van het gewenste besturingstype bij het invoegen van een keuzelijst met invoervak in een Word-document. Deze stapsgewijze handleiding helpt u te begrijpen hoe u effectief HTML-inhoud in uw Word-documenten kunt manipuleren en weergeven met behulp van Aspose.Words voor .NET.
+we duiken in een spannende tutorial over hoe je met HTML-laadopties in Aspose.Words voor .NET werkt, met name gericht op het instellen van het gewenste besturingstype bij het invoegen van een combobox-formulierveld in een Word-document. Deze stapsgewijze handleiding helpt je begrijpen hoe je HTML-inhoud in je Word-documenten effectief kunt manipuleren en renderen met Aspose.Words voor .NET.
 
 ## Vereisten
 
-Voordat we ingaan op de code, zijn er een paar dingen die u moet regelen:
+Voordat we met de code aan de slag gaan, zijn er een paar dingen die je moet regelen:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Je kunt het downloaden van de[website](https://releases.aspose.com/words/net/).
-2. Ontwikkelomgeving: U moet een ontwikkelomgeving hebben, zoals Visual Studio.
-3. Basiskennis van C#: Een fundamenteel begrip van C#-programmeren is noodzakelijk om samen met de tutorial te volgen.
-4. HTML-inhoud: Basiskennis van HTML is nuttig, aangezien we in dit voorbeeld met HTML-inhoud gaan werken.
+1.  Aspose.Words voor .NET: Zorg ervoor dat u de Aspose.Words voor .NET-bibliotheek hebt geïnstalleerd. U kunt deze downloaden van de[website](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: U moet een ontwikkelomgeving instellen, zoals Visual Studio.
+3. Basiskennis van C#: Een basiskennis van C#-programmering is noodzakelijk om de tutorial te kunnen volgen.
+4. HTML-inhoud: Basiskennis van HTML is handig omdat we in dit voorbeeld met HTML-inhoud werken.
 
 ## Naamruimten importeren
 
@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-Laten we het voorbeeld nu in meerdere stappen opsplitsen om duidelijkheid en begrip te garanderen.
+Laten we het voorbeeld nu opsplitsen in meerdere stappen, zodat het duidelijker en begrijpelijker wordt.
 
 ## Stap 1: Stel uw HTML-inhoud in
 
@@ -49,11 +49,11 @@ const string html = @"
 ";
 ```
 
-Deze HTML bevat een eenvoudige keuzelijst met twee opties. We laden deze HTML in een Word-document en specificeren hoe deze moet worden weergegeven.
+Deze HTML bevat een eenvoudige combobox met twee opties. We laden deze HTML in een Word-document en specificeren hoe het moet worden weergegeven.
 
-## Stap 2: Definieer de documentmap
+## Stap 2: Definieer de documentdirectory
 
-Geef vervolgens de map op waarin uw Word-document wordt opgeslagen. Dit helpt bij het organiseren van uw bestanden en het schoonhouden van het padbeheer.
+Geef vervolgens de directory op waar uw Word-document wordt opgeslagen. Dit helpt bij het organiseren van uw bestanden en het schoonhouden van het padbeheer.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -61,15 +61,15 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
  Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar u uw Word-document wilt opslaan.
 
-## Stap 3: Configureer HTML-laadopties
+## Stap 3: HTML-laadopties configureren
 
- Hier configureren we de HTML-laadopties, met name gericht op de`PreferredControlType`eigendom. Dit bepaalt hoe de keuzelijst met invoervak in het Word-document moet worden weergegeven.
+ Hier configureren we de HTML-laadopties, met speciale aandacht voor de`PreferredControlType`eigenschap. Dit bepaalt hoe de keuzelijst moet worden weergegeven in het Word-document.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
- Door in te stellen`PreferredControlType` naar`HtmlControlType.StructuredDocumentTag`, zorgen we ervoor dat de keuzelijst met invoervak wordt weergegeven als een gestructureerde documenttag (SDT) in het Word-document.
+ Door het instellen`PreferredControlType` naar`HtmlControlType.StructuredDocumentTag`zorgen we ervoor dat de keuzelijst wordt weergegeven als een gestructureerde documenttag (SDT) in het Word-document.
 
 ## Stap 4: Laad de HTML-inhoud in het document
 
@@ -79,35 +79,35 @@ Met behulp van de geconfigureerde laadopties laden we de HTML-inhoud in een nieu
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
 ```
 
-Hier converteren we de HTML-tekenreeks naar een byte-array en laden deze in het document met behulp van een geheugenstroom. Dit zorgt ervoor dat de HTML-inhoud correct wordt geïnterpreteerd en weergegeven door Aspose.Words.
+Hier converteren we de HTML-string naar een byte-array en laden deze in het document met behulp van een geheugenstroom. Dit zorgt ervoor dat de HTML-inhoud correct wordt geïnterpreteerd en weergegeven door Aspose.Words.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
-Sla het document ten slotte op in de opgegeven map in DOCX-indeling.
+Sla het document ten slotte op in de opgegeven map in DOCX-formaat.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-Hiermee wordt het Word-document met het weergegeven keuzelijstbesturingselement op de opgegeven locatie opgeslagen.
+Hiermee wordt het Word-document met het gerenderde keuzelijstbesturingselement op de opgegeven locatie opgeslagen.
 
 ## Conclusie
 
-En daar heb je het! We hebben met succes een keuzelijstformulierveld ingevoegd in een Word-document met behulp van Aspose.Words voor .NET door gebruik te maken van HTML-laadopties. Deze stapsgewijze handleiding moet u helpen het proces te begrijpen en toe te passen op uw projecten. Of u nu het maken van documenten automatiseert of HTML-inhoud manipuleert, Aspose.Words voor .NET biedt krachtige hulpmiddelen om uw doelen te bereiken.
+En daar heb je het! We hebben met succes een combo box-formulierveld ingevoegd in een Word-document met Aspose.Words voor .NET door HTML-laadopties te benutten. Deze stapsgewijze handleiding zou je moeten helpen het proces te begrijpen en toe te passen op je projecten. Of je nu het maken van documenten automatiseert of HTML-inhoud manipuleert, Aspose.Words voor .NET biedt krachtige tools om je doelen te bereiken.
 
 ## Veelgestelde vragen
 
 ### Wat is Aspose.Words voor .NET?
-Aspose.Words voor .NET is een krachtige bibliotheek voor documentmanipulatie waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, bewerken, converteren en weergeven.
+Aspose.Words voor .NET is een krachtige bibliotheek voor documentmanipulatie waarmee ontwikkelaars programmatisch Word-documenten kunnen maken, bewerken, converteren en weergeven.
 
-### Kan ik andere HTML-besturingstypen gebruiken met Aspose.Words voor .NET?
-Ja, Aspose.Words voor .NET ondersteunt verschillende HTML-besturingstypen. U kunt aanpassen hoe verschillende besturingselementen in het Word-document worden weergegeven.
+### Kan ik andere HTML-besturingselementen gebruiken met Aspose.Words voor .NET?
+Ja, Aspose.Words voor .NET ondersteunt verschillende HTML-besturingselementen. U kunt aanpassen hoe verschillende besturingselementen worden weergegeven in het Word-document.
 
-### Hoe ga ik om met complexe HTML-inhoud in Aspose.Words voor .NET?
- Aspose.Words voor .NET biedt uitgebreide ondersteuning voor HTML, inclusief complexe elementen. Zorg ervoor dat u de`HtmlLoadOptions`op de juiste manier om te gaan met uw specifieke HTML-inhoud.
+### Hoe verwerk ik complexe HTML-inhoud in Aspose.Words voor .NET?
+ Aspose.Words voor .NET biedt uitgebreide ondersteuning voor HTML, inclusief complexe elementen. Zorg ervoor dat u de`HtmlLoadOptions`op de juiste manier omgaan met uw specifieke HTML-inhoud.
 
 ### Waar kan ik meer voorbeelden en documentatie vinden?
- Gedetailleerde documentatie en voorbeelden vindt u op de website[Aspose.Words voor .NET-documentatiepagina](https://reference.aspose.com/words/net/).
+ Gedetailleerde documentatie en voorbeelden vindt u op de[Aspose.Words voor .NET-documentatiepagina](https://reference.aspose.com/words/net/).
 
 ### Is er een gratis proefversie beschikbaar voor Aspose.Words voor .NET?
  Ja, u kunt een gratis proefversie downloaden van de[Aspose-website](https://releases.aspose.com/).

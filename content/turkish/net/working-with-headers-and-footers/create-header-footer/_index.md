@@ -1,28 +1,28 @@
 ---
-title: Üstbilgi Altbilgisi Oluştur
-linktitle: Üstbilgi Altbilgisi Oluştur
+title: Üstbilgi Altbilgi Oluştur
+linktitle: Üstbilgi Altbilgi Oluştur
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak Word belgelerine üstbilgi ve altbilgileri nasıl ekleyeceğinizi ve özelleştireceğinizi öğrenin. Bu adım adım kılavuz, profesyonel belge biçimlendirmeyi sağlar.
+description: Aspose.Words for .NET kullanarak Word belgelerinde başlık ve altbilgilerin nasıl ekleneceğini ve özelleştirileceğini öğrenin. Bu adım adım kılavuz profesyonel belge biçimlendirmesini garanti eder.
 type: docs
 weight: 10
 url: /tr/net/working-with-headers-and-footers/create-header-footer/
 ---
 ## giriiş
 
-Belgelerinize üstbilgi ve altbilgi eklemek, belgelerinizin profesyonelliğini ve okunabilirliğini artırabilir. Aspose.Words for .NET ile Word belgeleriniz için kolayca üstbilgi ve altbilgi oluşturabilir ve özelleştirebilirsiniz. Bu eğitimde, bu özellikleri sorunsuz bir şekilde uygulayabilmenizi sağlamak için süreç boyunca size adım adım yol göstereceğiz.
+Belgelerinize başlıklar ve altbilgiler eklemek, profesyonelliklerini ve okunabilirliklerini artırabilir. Aspose.Words for .NET ile Word belgeleriniz için başlıklar ve altbilgileri kolayca oluşturabilir ve özelleştirebilirsiniz. Bu eğitimde, bu özellikleri sorunsuz bir şekilde uygulayabilmenizi sağlayarak sizi adım adım süreçte yönlendireceğiz.
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
--  Aspose.Words for .NET: Buradan indirip yükleyin.[indirme bağlantısı](https://releases.aspose.com/words/net/).
-- Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio gibi.
-- Temel C# Bilgisi: C# ve .NET çerçevesinin anlaşılması.
-- Örnek Belge: Üstbilgileri ve altbilgileri uygulamak veya öğreticide gösterildiği gibi yeni bir tane oluşturmak için örnek bir belge.
+-  Aspose.Words for .NET: Şuradan indirin ve kurun:[indirme bağlantısı](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Kodunuzu yazıp çalıştırabileceğiniz Visual Studio gibi bir ortam.
+- Temel C# Bilgisi: C# ve .NET framework'ünün anlaşılması.
+- Örnek Belge: Üstbilgi ve altbilgileri uygulamak için örnek bir belge veya eğitimde gösterildiği gibi yeni bir tane oluşturun.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words sınıflarına ve yöntemlerine erişmek için öncelikle gerekli ad alanlarını içe aktarmanız gerekir.
+Öncelikle Aspose.Words sınıflarına ve metotlarına erişmek için gerekli namespace'leri import etmeniz gerekiyor.
 
 ```csharp
 using Aspose.Words;
@@ -32,25 +32,25 @@ using System;
 
 ## Adım 1: Belge Dizinini Tanımlayın
 
-Belgenizin kaydedileceği dizini tanımlayın. Bu, yolu etkili bir şekilde yönetmenize yardımcı olur.
+Belgenizin kaydedileceği dizini tanımlayın. Bu, yolu etkili bir şekilde yönetmeye yardımcı olur.
 
 ```csharp
-// Belgeler dizininin yolu
+// Belgeler dizinine giden yol
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
 ## Adım 2: Yeni Bir Belge Oluşturun
 
- Yeni bir belge oluşturun ve`DocumentBuilder`İçerik eklenmesini kolaylaştırmak için.
+ Yeni bir belge oluşturun ve`DocumentBuilder`içerik eklenmesini kolaylaştırmak için.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Sayfa Yapısını Yapılandırın
+## Adım 3: Sayfa Kurulumunu Yapılandırın
 
-İlk sayfanın farklı bir üstbilgiye/altbilgiye sahip olup olmayacağı da dahil olmak üzere sayfa ayarlarını yapın.
+İlk sayfanın farklı bir üstbilgi/altbilgiye sahip olup olmayacağı da dahil olmak üzere sayfa ayarlarını yapın.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
@@ -60,7 +60,7 @@ pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
 ```
 
-## Adım 4: İlk Sayfaya Başlık Ekleme
+## Adım 4: İlk Sayfaya Bir Başlık Ekleyin
 
 İlk sayfanın başlık bölümüne gidin ve başlık metnini yapılandırın.
 
@@ -75,14 +75,14 @@ builder.Font.Size = 14;
 builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 ```
 
-## Adım 5: Birincil Başlık Ekleme
+## Adım 5: Birincil Başlık Ekleyin
 
-Birincil başlık bölümüne gidin ve bir resim ve metin ekleyin.
+Birincil başlık bölümüne geçin ve bir resim ve metin ekleyin.
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-// Başlığa bir resim ekleyin
+// Başlığa bir resim ekle
 builder.InsertImage(dataDir + "Graphics Interchange Format.gif", 
     RelativeHorizontalPosition.Page, 10, RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 
@@ -90,9 +90,9 @@ builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 builder.Write("Aspose.Words Header/Footer Creation Primer.");
 ```
 
-## Adım 6: Birincil Altbilgi Ekleme
+## Adım 6: Birincil Altbilgi Ekleyin
 
-Birincil altbilgi bölümüne gidin ve altbilgi içeriğini biçimlendirmek için bir tablo oluşturun.
+Birincil altbilgi bölümüne geçin ve altbilgi içeriğini biçimlendirmek için bir tablo oluşturun.
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
@@ -119,7 +119,7 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## 7. Adım: İçerik ve Sayfa Sonu Ekleme
+## Adım 7: İçerik ve Sayfa Sonları Ekleyin
 
 Belgenin sonuna gidin, sayfa sonu ekleyin ve farklı sayfa ayarlarıyla yeni bir bölüm oluşturun.
 
@@ -144,9 +144,9 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
-## Adım 8: Önceki Bölümden Üstbilgileri ve Altbilgileri Kopyalayın
+## Adım 8: Önceki Bölümden Başlıkları ve Alt Bilgileri Kopyalayın
 
-Önceki bir bölümdeki üstbilgileri ve altbilgileri yeniden kullanmak istiyorsanız bunları kopyalayın ve gerekli değişiklikleri uygulayın.
+Önceki bir bölümden üstbilgi ve altbilgileri yeniden kullanmak istiyorsanız, bunları kopyalayın ve gerekli değişiklikleri yapın.
 
 ```csharp
 private static void CopyHeadersFootersFromPreviousSection(Section section)
@@ -165,26 +165,26 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 ## Çözüm
 
-Bu adımları izleyerek Aspose.Words for .NET'i kullanarak Word belgelerinize etkili bir şekilde üstbilgi ve altbilgi ekleyebilir ve özelleştirebilirsiniz. Bu, belgenizin görünümünü ve profesyonelliğini geliştirerek onu daha okunabilir ve ilgi çekici hale getirir.
+Bu adımları izleyerek, Aspose.Words for .NET kullanarak Word belgelerinize üstbilgi ve altbilgileri etkili bir şekilde ekleyebilir ve özelleştirebilirsiniz. Bu, belgenizin görünümünü ve profesyonelliğini geliştirerek daha okunabilir ve ilgi çekici hale getirir.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
 
-Aspose.Words for .NET, geliştiricilerin .NET uygulamaları içerisinde Word belgelerini programlı olarak oluşturmasına, düzenlemesine ve dönüştürmesine olanak tanıyan bir kütüphanedir.
+Aspose.Words for .NET, geliştiricilerin .NET uygulamaları içerisinde Word belgelerini programlı bir şekilde oluşturmalarına, düzenlemelerine ve dönüştürmelerine olanak tanıyan bir kütüphanedir.
 
 ### Üstbilgiye veya altbilgiye resim ekleyebilir miyim?
 
- Evet, üst bilgi veya alt bilgiye kolayca resim ekleyebilirsiniz.`DocumentBuilder.InsertImage` Yöntem.
+ Evet, üstbilgiye veya altbilgiye kolayca resim ekleyebilirsiniz.`DocumentBuilder.InsertImage` yöntem.
 
-### İlk sayfa için farklı üstbilgileri ve altbilgileri nasıl ayarlarım?
+### İlk sayfa için farklı üstbilgi ve altbilgileri nasıl ayarlarım?
 
  İlk sayfa için farklı üstbilgiler ve altbilgiler ayarlayabilirsiniz.`DifferentFirstPageHeaderFooter` mülkiyeti`PageSetup` sınıf.
 
-### Aspose.Words hakkında daha fazla belgeyi nerede bulabilirim?
+### Aspose.Words hakkında daha fazla dokümanı nerede bulabilirim?
 
- Hakkında kapsamlı belgeler bulabilirsiniz.[Aspose.Words API dokümantasyon sayfası](https://reference.aspose.com/words/net/).
+ Kapsamlı belgeleri şurada bulabilirsiniz:[Aspose.Words API dokümantasyon sayfası](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words için destek mevcut mu?
 
- Evet, Aspose kendi aracılığıyla destek sunuyor[destek forumu](https://forum.aspose.com/c/words/8).
+ Evet, Aspose, kendi aracılığıyla destek sunuyor[destek forumu](https://forum.aspose.com/c/words/8).

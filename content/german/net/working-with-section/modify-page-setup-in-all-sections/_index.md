@@ -20,7 +20,7 @@ Bevor wir loslegen, stellen wir sicher, dass wir alles haben, was wir brauchen:
 3. Visual Studio: Jede aktuelle Version sollte funktionieren, für ein optimales Erlebnis wird jedoch die neueste Version empfohlen.
 4. .NET Framework: Stellen Sie sicher, dass es auf Ihrem System installiert ist.
 
-Nachdem wir nun die Voraussetzungen geklärt haben, fahren wir mit der eigentlichen Implementierung fort.
+Nachdem wir nun die Voraussetzungen geklärt haben, können wir mit der eigentlichen Implementierung fortfahren.
 
 ## Namespaces importieren
 
@@ -64,7 +64,7 @@ In diesem Schritt fügen wir unserem Dokument vier Abschnitte hinzu. Jeder Absch
 
 ## Schritt 3: Seiteneinrichtung verstehen
 
-Bevor wir das Seitenlayout ändern, müssen wir uns darüber im Klaren sein, dass jeder Abschnitt in einem Word-Dokument sein eigenes Seitenlayout haben kann. Diese Flexibilität ermöglicht unterschiedliche Formatierungen innerhalb eines einzelnen Dokuments.
+Bevor wir das Seiten-Setup ändern, ist es wichtig zu verstehen, dass jeder Abschnitt in einem Word-Dokument sein eigenes Seiten-Setup haben kann. Diese Flexibilität ermöglicht unterschiedliche Formatierungen innerhalb eines einzelnen Dokuments.
 
 ## Schritt 4: Seiteneinrichtung in allen Abschnitten ändern
 
@@ -95,7 +95,7 @@ Diese Codezeile speichert das Dokument im angegebenen Verzeichnis mit einem eind
 
 ### 1. Was ist Aspose.Words für .NET?
 
-Aspose.Words für .NET ist eine umfassende Bibliothek für die programmgesteuerte Arbeit mit Word-Dokumenten. Es unterstützt die Erstellung, Bearbeitung, Konvertierung von Dokumenten und mehr.
+Aspose.Words für .NET ist eine umfassende Bibliothek für die programmgesteuerte Arbeit mit Word-Dokumenten. Sie unterstützt die Erstellung, Bearbeitung, Konvertierung von Dokumenten und mehr.
 
 ### 2. Kann ich Aspose.Words für .NET kostenlos nutzen?
 

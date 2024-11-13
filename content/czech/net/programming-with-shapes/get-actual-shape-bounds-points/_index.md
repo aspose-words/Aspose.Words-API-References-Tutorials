@@ -69,7 +69,7 @@ Console.Write("\nGets the actual bounds of the shape in points: ");
 Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
- The`GetShapeRenderer` metoda poskytuje renderer pro tvar a`BoundsInPoints` nám dává přesné rozměry.
+The`GetShapeRenderer` metoda poskytuje renderer pro tvar a`BoundsInPoints` nám dává přesné rozměry.
 
 ## Závěr
 

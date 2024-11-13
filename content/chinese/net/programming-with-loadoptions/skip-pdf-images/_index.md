@@ -99,4 +99,4 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
 ### 如果 PDF 没有图像会发生什么情况？
 
-文档将照常加载，不会对流程产生任何影响。`SkipPdfImages`在这种情况下选项根本没有效果。
+文档照常加载，对流程没有任何影响。`SkipPdfImages`在这种情况下选项根本没有效果。

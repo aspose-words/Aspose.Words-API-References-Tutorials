@@ -9,7 +9,7 @@ url: /ja/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 ## 導入
 
-開発者の皆さん、こんにちは。Word 文書を操作していて、画像の箇条書きを保存する複雑な手順に困惑したことはありませんか? これは、文書の最終的な外観に大きな違いをもたらす可能性がある小さな詳細の 1 つです。今日は、Aspose.Words for .NET で画像の箇条書きを処理するプロセスについて、特に「画像の箇条書きを保存しない」機能に焦点を当てて説明します。準備はできましたか? さあ、始めましょう!
+開発者の皆さん、こんにちは。Word 文書を操作していて、画像の箇条書きを保存する複雑な手順に悩まされたことはありませんか? これは、文書の最終的な外観に大きな違いをもたらす可能性がある小さな詳細の 1 つです。今日は、Aspose.Words for .NET で画像の箇条書きを処理するプロセスについて、特に「画像の箇条書きを保存しない」機能に焦点を当てて説明します。準備はできましたか? さあ、始めましょう!
 
 ## 前提条件
 
@@ -69,7 +69,7 @@ DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 最後に、指定したオプションでドキュメントを保存します。これにより、画像の箇条書きが含まれない新しいファイルが生成されます。
 
 ```csharp
-//指定されたオプションでドキュメントを保存します
+//指定したオプションでドキュメントを保存します
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 

@@ -61,7 +61,7 @@ Když je tabulka nyní dostupná, dalším krokem je načtení prvního řádku.
 Row firstRow = table.FirstRow;
 ```
 
- The`FirstRow` vlastnost nám dává první řádek v tabulce. Nyní jsme připraveni začít upravovat jeho formátování.
+The`FirstRow` vlastnost nám dává první řádek v tabulce. Nyní jsme připraveni začít upravovat jeho formátování.
 
 ## Krok 4: Upravte okraje řádků
 
@@ -106,7 +106,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 Ano, můžete procházet řádky v tabulce a aplikovat změny formátování na každý řádek jednotlivě.
 
 ### Jak přidám ohraničení do řádku?
- Ohraničení můžete přidat nastavením`LineStyle` vlastnictvím`Borders` objekt k požadovanému stylu, jako je např`LineStyle.Single`.
+ Ohraničení můžete přidat nastavením`LineStyle` vlastnictví`Borders` objekt k požadovanému stylu, jako je např`LineStyle.Single`.
 
 ### Mohu nastavit pevnou výšku řádku?
  Ano, můžete nastavit pevnou výšku pomocí`HeightRule` vlastnost a určení hodnoty výšky.

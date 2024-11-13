@@ -35,7 +35,7 @@ Ladda först dokumentet som innehåller Office Math-ekvationen som du vill arbet
 Document doc = new Document("Your Directory Path" + "OfficeMath.docx");
 ```
 
-### Gå till Office Math Object
+### Öppna Office Math Object
 
 Låt oss nu komma åt Office Math-objektet i dokumentet:
 
@@ -80,7 +80,7 @@ doc.save("Your Directory Path" + "ModifiedOfficeMath.docx");
 
 ## Slutsats
 
-I den här guiden undersökte vi hur man använder Office Math-objekt i Aspose.Words för Java. Du lärde dig hur du laddar ett dokument, kommer åt Office Math-ekvationer och manipulerar deras visning och formatering. Denna kunskap ger dig möjlighet att skapa dokument med vackert renderat matematiskt innehåll.
+den här guiden undersökte vi hur man använder Office Math-objekt i Aspose.Words för Java. Du lärde dig hur du laddar ett dokument, kommer åt Office Math-ekvationer och manipulerar deras visning och formatering. Denna kunskap ger dig möjlighet att skapa dokument med vackert renderat matematiskt innehåll.
 
 ## FAQ's
 

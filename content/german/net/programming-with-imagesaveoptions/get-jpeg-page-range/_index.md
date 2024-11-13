@@ -56,7 +56,7 @@ options.HorizontalResolution = 72f; // Auflösung festlegen
 
 ## Schritt 3: Speichern Sie das Dokument als JPEG
 
-Abschließend speichern wir das Dokument mit den festgelegten Einstellungen als JPEG-Datei ab.
+Abschließend speichern wir das Dokument mit den von uns festgelegten Einstellungen als JPEG-Datei ab.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);

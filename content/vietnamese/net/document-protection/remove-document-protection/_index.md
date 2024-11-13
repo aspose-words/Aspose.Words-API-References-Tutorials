@@ -1,8 +1,8 @@
 ---
-title: Loại bỏ bảo vệ tài liệu trong tài liệu Word
-linktitle: Loại bỏ bảo vệ tài liệu trong tài liệu Word
+title: Xóa bỏ bảo vệ tài liệu trong tài liệu Word
+linktitle: Xóa bỏ bảo vệ tài liệu trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách loại bỏ tính năng bảo vệ khỏi tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để dễ dàng bỏ bảo vệ tài liệu của bạn.
+description: Tìm hiểu cách xóa bảo vệ khỏi tài liệu Word bằng Aspose.Words cho .NET. Làm theo hướng dẫn từng bước của chúng tôi để dễ dàng bỏ bảo vệ tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/document-protection/remove-document-protection/
@@ -10,15 +10,15 @@ url: /vi/net/document-protection/remove-document-protection/
 
 ## Giới thiệu
 
-Này! Bạn đã bao giờ thấy mình bị khóa tài liệu Word của mình do cài đặt bảo vệ chưa? Nó giống như cố gắng mở một cánh cửa bằng sai chìa khóa—thật khó chịu, phải không? Nhưng đừng sợ! Với Aspose.Words for .NET, bạn có thể dễ dàng loại bỏ tính năng bảo vệ khỏi tài liệu Word của mình. Hướng dẫn này sẽ hướng dẫn bạn từng bước trong quy trình, đảm bảo bạn có thể lấy lại toàn quyền kiểm soát tài liệu của mình ngay lập tức. Hãy đi sâu vào!
+Xin chào! Bạn đã bao giờ thấy mình bị khóa khỏi tài liệu Word của chính mình vì cài đặt bảo vệ chưa? Giống như cố gắng mở một cánh cửa bằng chìa khóa sai vậy—thật bực bội phải không? Nhưng đừng lo! Với Aspose.Words dành cho .NET, bạn có thể dễ dàng xóa bảo vệ khỏi tài liệu Word của mình. Hướng dẫn này sẽ hướng dẫn bạn từng bước trong quy trình, đảm bảo bạn có thể lấy lại toàn quyền kiểm soát tài liệu của mình chỉ trong thời gian ngắn. Hãy cùng bắt đầu nhé!
 
 ## Điều kiện tiên quyết
 
-Trước khi bắt đầu viết mã, hãy đảm bảo rằng chúng ta có mọi thứ mình cần:
+Trước khi bắt đầu viết mã, hãy đảm bảo rằng chúng ta có mọi thứ cần thiết:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words cho .NET: Đảm bảo bạn có thư viện Aspose.Words cho .NET. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Môi trường phát triển .NET như Visual Studio.
-3. Kiến thức cơ bản về C#: Hiểu những kiến thức cơ bản về C# sẽ giúp bạn theo dõi.
+3. Kiến thức cơ bản về C#: Hiểu được những kiến thức cơ bản về C# sẽ giúp bạn theo dõi dễ dàng hơn.
 
 ## Nhập không gian tên
 
@@ -30,11 +30,11 @@ using Aspose.Words.Saving;
 using Aspose.Words.Protection;
 ```
 
-Những không gian tên này sẽ cung cấp cho chúng ta tất cả các công cụ cần thiết để thao tác với tài liệu Word.
+Các không gian tên này sẽ cung cấp cho chúng ta tất cả các công cụ cần thiết để thao tác với các tài liệu Word.
 
 ## Bước 1: Tải tài liệu
 
-Được rồi, hãy bắt đầu. Bước đầu tiên là tải tài liệu bạn muốn bỏ bảo vệ. Đây là nơi chúng tôi cho chương trình biết chúng tôi đang xử lý tài liệu nào.
+Được rồi, chúng ta hãy bắt đầu. Bước đầu tiên là tải tài liệu bạn muốn bỏ bảo vệ. Đây là nơi chúng ta cho chương trình biết tài liệu nào chúng ta đang xử lý.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
@@ -44,41 +44,41 @@ Document doc = new Document(dataDir + "ProtectedDocument.docx");
 
  Ở đây, chúng tôi chỉ định đường dẫn đến thư mục chứa tài liệu của chúng tôi. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
 
-## Bước 2: Xóa bảo vệ không cần mật khẩu
+## Bước 2: Gỡ bỏ bảo vệ không cần mật khẩu
 
-Đôi khi, tài liệu được bảo vệ mà không cần mật khẩu. Trong những trường hợp như vậy, chúng ta có thể chỉ cần loại bỏ tính năng bảo vệ bằng một dòng mã.
+Đôi khi, tài liệu được bảo vệ mà không cần mật khẩu. Trong những trường hợp như vậy, chúng ta có thể dễ dàng xóa bỏ bảo vệ bằng một dòng mã duy nhất.
 
 ```csharp
-// Loại bỏ bảo vệ không cần mật khẩu
+// Xóa bảo vệ không cần mật khẩu
 doc.Unprotect();
 ```
 
-Thế thôi! Tài liệu của bạn bây giờ không được bảo vệ. Nhưng nếu có mật khẩu thì sao?
+Vậy là xong! Tài liệu của bạn hiện không còn được bảo vệ nữa. Nhưng nếu có mật khẩu thì sao?
 
-## Bước 3: Xóa bảo vệ bằng mật khẩu
+## Bước 3: Gỡ bỏ bảo vệ bằng mật khẩu
 
-Nếu tài liệu của bạn được bảo vệ bằng mật khẩu, bạn cần cung cấp mật khẩu đó để xóa bảo vệ. Đây là cách bạn làm điều đó:
+Nếu tài liệu của bạn được bảo vệ bằng mật khẩu, bạn cần cung cấp mật khẩu đó để xóa bảo vệ. Sau đây là cách thực hiện:
 
 ```csharp
-// Loại bỏ bảo vệ bằng mật khẩu chính xác
+// Xóa bảo vệ bằng mật khẩu đúng
 doc.Unprotect("currentPassword");
 ```
 
- Thay thế`"currentPassword"` với mật khẩu thực tế được sử dụng để bảo vệ tài liệu. Sau khi bạn cung cấp mật khẩu chính xác, tính năng bảo vệ sẽ được dỡ bỏ.
+ Thay thế`"currentPassword"` với mật khẩu thực tế được sử dụng để bảo vệ tài liệu. Khi bạn cung cấp đúng mật khẩu, chế độ bảo vệ sẽ được gỡ bỏ.
 
 ## Bước 4: Thêm và xóa bảo vệ
 
-Giả sử bạn muốn xóa biện pháp bảo vệ hiện tại rồi thêm một biện pháp bảo vệ mới. Điều này có thể hữu ích cho việc đặt lại bảo vệ tài liệu. Đây là cách bạn có thể làm điều đó:
+Giả sử bạn muốn xóa chế độ bảo vệ hiện tại rồi thêm chế độ mới. Điều này có thể hữu ích để thiết lập lại chế độ bảo vệ tài liệu. Sau đây là cách bạn có thể thực hiện:
 
 ```csharp
 // Thêm bảo vệ mới
 doc.Protect(ProtectionType.ReadOnly, "newPassword");
 
-// Loại bỏ lớp bảo vệ mới
+// Xóa bỏ bảo vệ mới
 doc.Unprotect("newPassword");
 ```
 
- Trong đoạn mã trên, trước tiên chúng tôi thêm một biện pháp bảo vệ mới bằng mật khẩu`"newPassword"`, rồi xóa ngay lập tức bằng cùng một mật khẩu.
+ Trong đoạn mã trên, trước tiên chúng ta thêm một biện pháp bảo vệ mới bằng mật khẩu`"newPassword"`và sau đó xóa ngay lập tức bằng cùng một mật khẩu.
 
 ## Bước 5: Lưu tài liệu
 
@@ -89,29 +89,29 @@ Cuối cùng, sau khi thực hiện tất cả các thay đổi cần thiết, �
 doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
 ```
 
-Thao tác này sẽ lưu tài liệu không được bảo vệ của bạn vào thư mục được chỉ định.
+Thao tác này sẽ lưu tài liệu không được bảo vệ của bạn vào thư mục đã chỉ định.
 
 ## Phần kết luận
 
-Và bạn có nó! Việc xóa tính năng bảo vệ khỏi tài liệu Word bằng Aspose.Words cho .NET thật dễ dàng. Cho dù đó có phải là tài liệu được bảo vệ bằng mật khẩu hay không, Aspose.Words đều cung cấp cho bạn sự linh hoạt để quản lý việc bảo vệ tài liệu một cách dễ dàng. Giờ đây, bạn có thể mở khóa tài liệu của mình và kiểm soát hoàn toàn chỉ bằng một vài dòng mã.
+Và bạn đã có nó! Việc xóa bảo vệ khỏi tài liệu Word bằng Aspose.Words cho .NET thật dễ dàng. Cho dù đó là tài liệu được bảo vệ bằng mật khẩu hay không, Aspose.Words cung cấp cho bạn sự linh hoạt để quản lý bảo vệ tài liệu một cách dễ dàng. Bây giờ bạn có thể mở khóa tài liệu của mình và kiểm soát hoàn toàn chỉ bằng một vài dòng mã.
 
 ## Câu hỏi thường gặp
 
 ### Điều gì xảy ra nếu tôi cung cấp sai mật khẩu?
 
-Nếu bạn cung cấp mật khẩu không chính xác, Aspose.Words sẽ đưa ra một ngoại lệ. Hãy chắc chắn rằng bạn sử dụng đúng mật khẩu để loại bỏ bảo vệ.
+Nếu bạn cung cấp mật khẩu không đúng, Aspose.Words sẽ đưa ra ngoại lệ. Hãy đảm bảo bạn sử dụng đúng mật khẩu để xóa bảo vệ.
 
-### Tôi có thể loại bỏ bảo vệ khỏi nhiều tài liệu cùng một lúc không?
+### Tôi có thể xóa chế độ bảo vệ khỏi nhiều tài liệu cùng lúc không?
 
-Có, bạn có thể duyệt qua danh sách tài liệu và áp dụng cùng một logic không bảo vệ cho từng tài liệu.
+Có, bạn có thể lặp qua danh sách các tài liệu và áp dụng cùng một logic hủy bảo vệ cho từng tài liệu.
 
 ### Aspose.Words cho .NET có miễn phí không?
 
- Aspose.Words for .NET là một thư viện trả phí nhưng bạn có thể dùng thử miễn phí. Kiểm tra[dùng thử miễn phí](https://releases.aspose.com/)!
+ Aspose.Words cho .NET là một thư viện trả phí, nhưng bạn có thể dùng thử miễn phí. Hãy xem[dùng thử miễn phí](https://releases.aspose.com/)!
 
 ### Tôi có thể áp dụng những loại bảo vệ nào khác cho tài liệu Word?
 
-Aspose.Words cho phép bạn áp dụng các loại bảo vệ khác nhau, chẳng hạn như ReadOnly, AllowOnlyRevisions, AllowOnlyComments và AllowOnlyFormFields.
+Aspose.Words cho phép bạn áp dụng nhiều loại bảo vệ khác nhau, chẳng hạn như ReadOnly, AllowOnlyRevisions, AllowOnlyComments và AllowOnlyFormFields.
 
 ### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
 

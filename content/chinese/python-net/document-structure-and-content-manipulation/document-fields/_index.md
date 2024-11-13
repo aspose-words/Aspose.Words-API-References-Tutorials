@@ -2,7 +2,7 @@
 title: 处理 Word 文档中的字段和数据
 linktitle: 处理 Word 文档中的字段和数据
 second_title: Aspose.Words Python 文档管理 API
-description: 了解如何使用 Aspose.Words for Python 处理 Word 文档中的字段和数据。分步指南，其中包含动态内容、自动化等的代码示例。
+description: 了解如何使用 Aspose.Words for Python 处理 Word 文档中的字段和数据。包含动态内容、自动化等代码示例的分步指南。
 type: docs
 weight: 12
 url: /zh/python-net/document-structure-and-content-manipulation/document-fields/
@@ -20,7 +20,7 @@ Microsoft Word 文档通常需要动态内容，例如日期、计算或来自�
 
 ## 插入简单字段
 
-要插入字段，您可以使用`FieldBuilder`类。例如，插入当前日期字段：
+要插入字段，您可以使用`FieldBuilder`类。例如，要插入当前日期字段：
 
 ```python
 from asposewords import Document, FieldBuilder

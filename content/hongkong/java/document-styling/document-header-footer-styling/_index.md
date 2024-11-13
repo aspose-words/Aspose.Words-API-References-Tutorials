@@ -48,7 +48,7 @@ Footer footer = section.getHeadersFooters().add(HeaderFooterType.FOOTER_PRIMARY)
 //將內容新增至頁尾
 footer.appendChild(new Run(doc, "Page 1"));
 
-//自訂頁腳格式
+//自訂頁尾格式
 footer.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 ```
 

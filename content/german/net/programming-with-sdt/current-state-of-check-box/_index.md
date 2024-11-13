@@ -15,7 +15,7 @@ In diesem Tutorial gehen wir den Prozess der Arbeit mit Kontrollkästchen in Wor
 
 Bevor wir mit dem Tutorial beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
 
-1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn Sie dies noch nicht getan haben, können Sie es von der[Aspose-Website](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn Sie dies noch nicht getan haben, können Sie sie von der[Aspose-Website](https://releases.aspose.com/words/net/).
 
 2. Visual Studio: Zum Kompilieren und Ausführen Ihres Codes ist eine .NET-Entwicklungsumgebung wie Visual Studio erforderlich.
 
@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Markup;
 ```
 
-Diese Namespaces ermöglichen Ihnen den Zugriff auf die Aspose.Words-API und die Arbeit damit sowie die Handhabung strukturierter Dokument-Tags, einschließlich Kontrollkästchen.
+Diese Namespaces ermöglichen Ihnen den Zugriff auf die Aspose.Words-API und die Arbeit mit dieser sowie die Handhabung strukturierter Dokument-Tags, einschließlich Kontrollkästchen.
 
 ## Schritt 1: Einrichten des Dokumentpfads
 

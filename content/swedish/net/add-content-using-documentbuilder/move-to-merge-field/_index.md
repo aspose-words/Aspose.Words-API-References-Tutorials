@@ -9,7 +9,7 @@ url: /sv/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
 ## Introduktion
 
-Hej där! Har du någonsin funnit dig själv begravd i ett Word-dokument och försökt ta reda på hur man navigerar till ett specifikt sammanfogningsfält? Det är som att vara i en labyrint utan karta, eller hur? Nåväl, oroa dig inte längre! Med Aspose.Words för .NET kan du sömlöst flytta till ett sammanslagningsfält i ditt dokument. Oavsett om du genererar rapporter, skapar personliga brev eller bara automatiserar dina Word-dokument, kommer den här guiden att leda dig genom hela processen, steg-för-steg. Låt oss dyka in!
+Hej där! Har du någonsin funnit dig själv begravd i ett Word-dokument och försökt ta reda på hur man navigerar till ett specifikt sammanfogningsfält? Det är som att vara i en labyrint utan karta, eller hur? Nåväl, oroa dig inte mer! Med Aspose.Words för .NET kan du sömlöst flytta till ett sammanslagningsfält i ditt dokument. Oavsett om du genererar rapporter, skapar personliga brev eller bara automatiserar dina Word-dokument, kommer den här guiden att leda dig genom hela processen, steg-för-steg. Låt oss dyka in!
 
 ## Förutsättningar
 

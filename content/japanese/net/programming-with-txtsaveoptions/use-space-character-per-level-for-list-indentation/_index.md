@@ -79,7 +79,7 @@ saveOptions.ListIndentation.Character = ' ';
 最後に、設定したオプションを使用してドキュメントを保存します。これにより、インデント設定が適用され、ファイルが希望の形式で保存されます。
 
 ```csharp
-//指定されたオプションでドキュメントを保存します
+//指定したオプションでドキュメントを保存します
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIn
 はい、調整できます`ListIndentation.Count`要件に応じてスペースの数を設定するプロパティ。
 
 ### ドキュメントを作成した後にリストのインデントを変更することは可能ですか?
-はい、ドキュメントを保存する前であれば、いつでもリストの書式設定とインデント設定を変更できます。
+はい、ドキュメントを保存する前に、いつでもリストの書式設定とインデント設定を変更できます。
 
 ### リストのインデント設定をサポートする他のドキュメント形式は何ですか?
 Aspose.Words を使用すると、テキスト ファイル以外にも、DOCX、PDF、HTML などの他の形式にリストのインデント設定を適用できます。

@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
-通过使用`StartTable`，我们告诉 Aspose.Words 我们即将创建一个表。`InsertCell`方法添加第一个单元格，并且`AutoFit`确保我们的列具有固定的宽度。
+通过使用`StartTable`，我们告诉 Aspose.Words 我们即将创建一个表格。`InsertCell`方法添加第一个单元格，并且`AutoFit`确保我们的列具有固定的宽度。
 
 ## 步骤 3：设置第一行的格式
 
@@ -70,7 +70,7 @@ builder.Write("This is row 1 cell 2");
 builder.EndRow();
 ```
 
-想象一下铺好桌布并摆好第一批盘子的过程。我们要确保所有东西都看起来整洁有序。
+想象一下铺好桌布并摆好第一批餐具的过程。我们要确保所有东西都看起来整洁有序。
 
 ## 步骤 4：使用自定义格式创建第二行
 
@@ -95,7 +95,7 @@ builder.EndRow();
 
 ## 步骤 5：结束表格
 
-所有行都设置好后，就该完成表创建过程了。
+设置完所有行之后，就该完成表创建过程了。
 
 ```csharp
 builder.EndTable();

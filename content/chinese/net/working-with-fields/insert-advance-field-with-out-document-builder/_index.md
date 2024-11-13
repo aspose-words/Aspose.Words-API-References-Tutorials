@@ -66,7 +66,7 @@ Document doc = new Document();
 2. 获取文档中的第一个段落：
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 这确保我们有一个可以使用的段落。
@@ -126,7 +126,7 @@ doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 
 ## 结论
 
-就这样！您已成功将高级字段插入 Word 文档，而无需使用 DocumentBuilder 类。通过遵循这些步骤，您已利用 Aspose.Words for .NET 的强大功能以编程方式操作 Word 文档。无论您是自动生成报告还是创建复杂的文档模板，这些知识无疑都会派上用场。继续尝试和探索 Aspose.Words 的功能，将您的文档处理提升到一个新的水平！
+就这样！您已成功将高级字段插入 Word 文档，而无需使用 DocumentBuilder 类。通过执行这些步骤，您已利用 Aspose.Words for .NET 的强大功能以编程方式操作 Word 文档。无论您是自动生成报告还是创建复杂的文档模板，这些知识无疑都会派上用场。继续尝试和探索 Aspose.Words 的功能，将您的文档处理提升到一个新的水平！
 
 ## 常见问题解答
 

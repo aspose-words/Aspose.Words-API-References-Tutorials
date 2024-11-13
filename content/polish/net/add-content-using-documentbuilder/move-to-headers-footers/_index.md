@@ -1,27 +1,27 @@
 ---
-title: Przejdź do nagłówków i stopek w dokumencie programu Word
-linktitle: Przejdź do nagłówków i stopek w dokumencie programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak przechodzić do nagłówków i stopek w dokumencie programu Word przy użyciu Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Zwiększ swoje umiejętności tworzenia dokumentów.
+title: Przenieś do nagłówków i stopek w dokumencie Word
+linktitle: Przenieś do nagłówków i stopek w dokumencie Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak przejść do nagłówków i stopek w dokumencie Word za pomocą Aspose.Words dla .NET dzięki naszemu przewodnikowi krok po kroku. Udoskonal swoje umiejętności tworzenia dokumentów.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 ## Wstęp
 
-Jeśli chodzi o programowe tworzenie dokumentów Word i zarządzanie nimi, Aspose.Words dla .NET jest potężnym narzędziem, które może zaoszczędzić dużo czasu i wysiłku. W tym artykule przyjrzymy się, jak przejść do nagłówków i stopek w dokumencie programu Word za pomocą Aspose.Words dla .NET. Ta funkcja jest niezbędna, gdy chcesz dodać określoną treść do sekcji nagłówka lub stopki dokumentu. Niezależnie od tego, czy tworzysz raport, fakturę, czy inny dokument wymagający profesjonalnego podejścia, kluczowa jest umiejętność manipulowania nagłówkami i stopkami.
+Jeśli chodzi o programowe tworzenie i zarządzanie dokumentami Word, Aspose.Words for .NET to potężne narzędzie, które może zaoszczędzić Ci mnóstwo czasu i wysiłku. W tym artykule przyjrzymy się, jak przejść do nagłówków i stopek w dokumencie Word za pomocą Aspose.Words for .NET. Ta funkcja jest niezbędna, gdy musisz dodać określoną treść do sekcji nagłówka lub stopki dokumentu. Niezależnie od tego, czy tworzysz raport, fakturę czy jakikolwiek dokument wymagający profesjonalnego podejścia, zrozumienie, jak manipulować nagłówkami i stopkami, jest kluczowe.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w kod, upewnijmy się, że wszystko mamy skonfigurowane:
+Zanim zagłębimy się w kod, upewnijmy się, że wszystko jest skonfigurowane:
 
-1. **Aspose.Words for .NET** : Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Można go pobrać z[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
-2. **Development Environment**Potrzebujesz środowiska programistycznego, takiego jak Visual Studio.
-3. **Basic Knowledge of C#**: Zrozumienie podstaw programowania w języku C# pomoże Ci podążać dalej.
+1. **Aspose.Words for .NET** : Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Możesz ją pobrać ze strony[Strona wydań Aspose](https://releases.aspose.com/words/net/).
+2. **Development Environment**:Potrzebne jest środowisko programistyczne, takie jak Visual Studio.
+3. **Basic Knowledge of C#**:Zrozumienie podstaw programowania w języku C# pomoże Ci zrozumieć istotę tematu.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Ten krok jest kluczowy dla uzyskania dostępu do klas i metod udostępnianych przez Aspose.Words dla .NET.
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Ten krok jest kluczowy dla dostępu do klas i metod udostępnianych przez Aspose.Words dla .NET.
 
 ```csharp
 using Aspose.Words;
@@ -30,11 +30,11 @@ using Aspose.Words.Drawing;
 using System;
 ```
 
-Podzielmy proces na proste kroki. Każdy krok zostanie jasno wyjaśniony, aby pomóc Ci zrozumieć, co robi kod i dlaczego.
+Podzielmy proces na proste kroki. Każdy krok zostanie jasno wyjaśniony, aby pomóc Ci zrozumieć, co kod robi i dlaczego.
 
 ## Krok 1: Zainicjuj dokument
 
-Pierwszym krokiem jest zainicjowanie nowego dokumentu i obiektu DocumentBuilder. Klasa DocumentBuilder umożliwia konstruowanie dokumentu i manipulowanie nim.
+Pierwszym krokiem jest zainicjowanie nowego dokumentu i obiektu DocumentBuilder. Klasa DocumentBuilder umożliwia konstruowanie i manipulowanie dokumentem.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
@@ -43,23 +43,23 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- W tym kroku utworzysz nową instancję pliku`Document` klasa i`DocumentBuilder` klasa. The`dataDir` zmienna służy do określenia katalogu, w którym chcesz zapisać dokument.
+ W tym kroku utworzysz nową instancję`Document` klasa i`DocumentBuilder` Klasa.`dataDir` Zmienna służy do określenia katalogu, w którym chcesz zapisać dokument.
 
 ## Krok 2: Skonfiguruj ustawienia strony
 
-Następnie musimy określić, że nagłówki i stopki powinny być różne dla pierwszej, parzystej i nieparzystej strony.
+Następnie musimy określić, że nagłówki i stopki mają być różne dla pierwszej, parzystej i nieparzystej strony.
 
 ```csharp
-//Określ, że nagłówki i stopki mają być różne dla stron pierwszych, parzystych i nieparzystych.
+//Określ, że chcemy, aby nagłówki i stopki były różne dla pierwszej, parzystej i nieparzystej strony.
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 ```
 
-Dzięki tym ustawieniom możesz mieć unikalne nagłówki i stopki dla różnych typów stron.
+Ustawienia te zapewniają możliwość posiadania unikalnych nagłówków i stopek dla różnych typów stron.
 
 ## Krok 3: Przejdź do nagłówka/stopki i dodaj treść
 
-Przejdźmy teraz do sekcji nagłówka i stopki i dodajmy trochę treści.
+Teraz przejdźmy do sekcji nagłówka i stopki i dodajmy trochę treści.
 
 ```csharp
 // Utwórz nagłówki.
@@ -71,7 +71,7 @@ builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 builder.Write("Header for all other pages");
 ```
 
- Na tym etapie używamy`MoveToHeaderFooter` metoda przejścia do żądanej sekcji nagłówka lub stopki. The`Write` Metoda ta jest następnie używana do dodawania tekstu do tych sekcji.
+ W tym kroku używamy`MoveToHeaderFooter` metoda nawigacji do pożądanej sekcji nagłówka lub stopki.`Write` Następnie metoda ta służy do dodawania tekstu do tych sekcji.
 
 ## Krok 4: Dodaj treść do treści dokumentu
 
@@ -99,21 +99,21 @@ Ta linia kodu zapisuje dokument pod nazwą „AddContentUsingDocumentBuilder.Mov
 
 ## Wniosek
 
- Wykonując poniższe kroki, możesz łatwo manipulować nagłówkami i stopkami w dokumencie programu Word przy użyciu Aspose.Words dla .NET. W tym samouczku omówiono podstawy, ale Aspose.Words oferuje szeroką gamę funkcji do bardziej złożonych manipulacji dokumentami. Nie wahaj się eksplorować[dokumentacja](https://reference.aspose.com/words/net/) dla bardziej zaawansowanych funkcji.
+ Wykonując te kroki, możesz łatwo manipulować nagłówkami i stopkami w dokumencie Word za pomocą Aspose.Words dla .NET. Ten samouczek obejmuje podstawy, ale Aspose.Words oferuje szeroki zakres funkcjonalności do bardziej złożonych manipulacji dokumentami. Nie wahaj się zapoznać z[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać dostęp do bardziej zaawansowanych funkcji.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to biblioteka, która umożliwia programistom tworzenie, modyfikowanie i konwertowanie dokumentów programu Word programowo przy użyciu języka C#.
+### Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to biblioteka umożliwiająca programistom tworzenie, modyfikowanie i konwertowanie dokumentów Word programowo przy użyciu języka C#.
 
 ### Czy mogę dodawać obrazy do nagłówków i stopek?
  Tak, możesz dodawać obrazy do nagłówków i stopek za pomocą`DocumentBuilder.InsertImage` metoda.
 
-### Czy można mieć różne nagłówki i stopki dla każdej sekcji?
- Absolutnie! Możesz mieć unikalne nagłówki i stopki dla każdej sekcji, konfigurując różne`HeaderFooterType` dla każdej sekcji.
+### Czy możliwe jest, aby dla każdej sekcji były różne nagłówki i stopki?
+ Oczywiście! Możesz mieć unikalne nagłówki i stopki dla każdej sekcji, ustawiając różne`HeaderFooterType` dla każdej sekcji.
 
 ### Jak utworzyć bardziej złożone układy nagłówków i stopek?
-Możesz używać tabel, obrazów i różnych opcji formatowania udostępnianych przez Aspose.Words do tworzenia złożonych układów.
+Za pomocą tabel, obrazów i różnych opcji formatowania udostępnianych przez Aspose.Words można tworzyć złożone układy.
 
-### Gdzie mogę znaleźć więcej przykładów i tutoriali?
- Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) i[forum wsparcia](https://forum.aspose.com/c/words/8) aby uzyskać więcej przykładów i wsparcie społeczności.
+### Gdzie mogę znaleźć więcej przykładów i poradników?
+ Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) i[forum wsparcia](https://forum.aspose.com/c/words/8) aby zobaczyć więcej przykładów i uzyskać wsparcie społeczności.

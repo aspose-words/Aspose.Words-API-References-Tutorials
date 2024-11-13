@@ -22,7 +22,7 @@ Innan du börjar, se till att du har följande:
 - En grundläggande förståelse för Python-programmering.
 - Aspose.Words för Python API-referenser.
 
-## Installera Aspose.Words för Python
+## Installerar Aspose.Words för Python
 
 För att komma igång måste du installera paketet Aspose.Words for Python. Du kan göra detta med pip, Python-paketets installationsprogram, med följande kommando:
 
@@ -32,7 +32,7 @@ pip install aspose-words
 
 ## Lägga till textrutor i ett Word-dokument
 
-Låt oss börja med att skapa ett nytt Word-dokument och lägga till en textruta i det. Här är ett exempel på ett kodavsnitt för att uppnå detta:
+Låt oss börja med att skapa ett nytt Word-dokument och lägga till en textruta till det. Här är ett exempel på ett kodavsnitt för att uppnå detta:
 
 ```python
 import aspose.words as aw
@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
- I den här koden skapar vi en ny`Document` och a`DocumentBuilder` . De`insert_text_box` metod används för att lägga till en textruta i dokumentet. Du kan anpassa textrutans innehåll, position och storlek enligt dina krav.
+ I den här koden skapar vi en ny`Document` och a`DocumentBuilder` . De`insert_text_box` metod används för att lägga till en textruta i dokumentet. Du kan anpassa innehållet, positionen och storleken på textrutan enligt dina krav.
 
 ## Formatera textrutor
 
@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Positionering av textrutor
 
- Att kontrollera placeringen av textrutor är avgörande för att uppnå önskad layout. Du kan ställa in positionen med hjälp av`left`och`top` fastigheter. Till exempel:
+ Att kontrollera placeringen av textrutor är avgörande för att uppnå önskad layout. Du kan ställa in positionen med hjälp av`left` och`top` fastigheter. Till exempel:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ I den här guiden har vi utforskat processen för att förbättra visuellt inneh
 
 ### Hur ändrar jag storlek på en textruta?
 
- För att ändra storlek på en textruta kan du justera dess egenskaper för bredd och höjd med hjälp av`width`och`height` attribut.
+ För att ändra storlek på en textruta kan du justera dess egenskaper för bredd och höjd med hjälp av`width` och`height` attribut.
 
 ### Kan jag rotera en textruta?
 

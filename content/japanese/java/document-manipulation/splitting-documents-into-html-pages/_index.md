@@ -16,7 +16,7 @@ url: /ja/java/document-manipulation/splitting-documents-into-html-pages/
 
 始める前に、次の前提条件が満たされていることを確認してください。
 
-- Java Development Kit (JDK) がシステムにインストールされています。
+- システムに Java 開発キット (JDK) がインストールされています。
 -  Aspose.Words for Javaライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## ステップ1: 必要なパッケージをインポートする
@@ -129,7 +129,7 @@ private void saveTableOfContents(ArrayList<Topic> topics) throws Exception
 }
 ```
 
-ここまで手順の概要を説明してきましたので、Java プロジェクトで各手順を実装し、Aspose.Words for Java を使用してドキュメントを HTML ページに分割できます。このプロセスにより、ドキュメントの構造化された HTML 表現を作成できるため、ドキュメントのアクセス性とユーザー フレンドリ性が高まります。
+ここまで手順の概要を説明してきましたので、Java プロジェクトの各手順を実装して、Aspose.Words for Java を使用してドキュメントを HTML ページに分割できます。このプロセスにより、ドキュメントの構造化された HTML 表現を作成できるため、ドキュメントのアクセス性とユーザー フレンドリ性が高まります。
 
 ## 結論
 

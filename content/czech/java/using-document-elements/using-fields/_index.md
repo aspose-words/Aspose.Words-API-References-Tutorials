@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Nahradit`"Your Document Directory"`a`"Your Output Directory"` s příslušnými cestami.
+ Nahradit`"Your Document Directory"` a`"Your Output Directory"` s příslušnými cestami.
 
 ## 4. Přizpůsobení hromadné korespondence
 

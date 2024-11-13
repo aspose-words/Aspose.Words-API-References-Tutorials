@@ -50,7 +50,7 @@ Paragraph paragraph = doc.FirstSection.Body.LastParagraph;
 
 ## 步骤 3：更改段落样式
 
-现在，让我们将段落样式更改为引言。Aspose.Words 提供了多种样式，但在本例中，我们将使用“引言”样式。
+现在，让我们将段落样式改为引言。Aspose.Words 提供了多种样式，但在本例中，我们将使用“引言”样式。
 
 ```csharp
 paragraph.ParagraphFormat.Style = doc.Styles["Quote"];
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 
 Aspose.Words for .NET 是一个功能强大的库，允许开发人员使用 C# 以编程方式创建、操作和转换 Word 文档。
 
-### 除了 C# 之外，我可以将 Aspose.Words 与其他 .NET 语言一起使用吗？
+### 除了 C# 之外，我还可以与其他 .NET 语言一起使用 Aspose.Words 吗？
 
 是的，Aspose.Words 支持所有.NET 语言，包括 VB.NET 和 F#。
 

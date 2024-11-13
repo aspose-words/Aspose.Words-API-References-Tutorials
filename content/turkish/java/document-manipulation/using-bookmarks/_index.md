@@ -1,18 +1,18 @@
 ---
-title: Aspose.Words for Java'da Yer İşaretlerini Kullanma
+title: Java için Aspose.Words'de Yer İşaretlerini Kullanma
 linktitle: Yer İşaretlerini Kullanma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java ile belge işlemenizi optimize edin. Bu adım adım kılavuzda içerikte verimli gezinme ve düzenleme için yer işaretlerini kullanmayı öğrenin.
+description: Aspose.Words for Java ile belge işlemenizi optimize edin. Bu adım adım kılavuzda, etkili içerik gezinme ve düzenleme için yer imlerini kullanmayı öğrenin.
 type: docs
 weight: 17
 url: /tr/java/document-manipulation/using-bookmarks/
 ---
 
-## Aspose.Words for Java'da Yer İmlerini Kullanmaya Giriş
+## Java için Aspose.Words'de Yer İşaretlerini Kullanmaya Giriş
 
-Yer imleri, Aspose.Words for Java'nın bir belgenin belirli bölümlerini işaretlemenize ve değiştirmenize olanak tanıyan güçlü bir özelliğidir. Bu adım adım kılavuzda, belge işlemenizi geliştirmek için Aspose.Words for Java'daki yer imlerinin nasıl kullanılacağını keşfedeceğiz. 
+Yer imleri, bir belgenin belirli bölümlerini işaretlemenize ve düzenlemenize olanak tanıyan Aspose.Words for Java'da güçlü bir özelliktir. Bu adım adım kılavuzda, belge işlemenizi geliştirmek için Aspose.Words for Java'da yer imlerinin nasıl kullanılacağını inceleyeceğiz. 
 
-## 1. Adım: Yer İşareti Oluşturma
+## Adım 1: Bir Yer İmi Oluşturma
 
 Yer imi oluşturmak için şu adımları izleyin:
 
@@ -20,7 +20,7 @@ Yer imi oluşturmak için şu adımları izleyin:
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Yer işaretini başlat
+// Yer imini başlat
 builder.startBookmark("My Bookmark");
 builder.writeln("Text inside a bookmark.");
 
@@ -28,21 +28,21 @@ builder.writeln("Text inside a bookmark.");
 builder.endBookmark("My Bookmark");
 ```
 
-## 2. Adım: Yer İşaretlerine Erişim
+## Adım 2: Yer İşaretlerine Erişim
 
 Bir belgedeki yer imlerine dizinlerini veya adlarını kullanarak erişebilirsiniz. İşte nasıl:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 
-// Dizine göre:
+// Dizin bazında:
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 
-// İsmiyle:
+// İsme göre:
 Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 ```
 
-## 3. Adım: Yer İşareti Verilerini Güncelleme
+## Adım 3: Yer İşareti Verilerini Güncelleme
 
 Yer imi verilerini güncellemek için aşağıdaki kodu kullanın:
 
@@ -55,9 +55,9 @@ bookmark.setName("RenamedBookmark");
 bookmark.setText("This is new bookmarked text.");
 ```
 
-## Adım 4: Yer İşaretli Metinle Çalışmak
+## Adım 4: Yer İşaretli Metinle Çalışma
 
-Yer imlerine eklenen metni kopyalayıp başka bir belgeye ekleyebilirsiniz. İşte nasıl:
+Yer imlerine eklenmiş metni kopyalayıp başka bir belgeye ekleyebilirsiniz. İşte nasıl:
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -70,7 +70,7 @@ dstDoc.save("Your Directory Path" + "WorkingWithBookmarks.CopyBookmarkedText.doc
 
 ## Adım 5: Yer İşaretlerini Göster ve Gizle
 
-Bir belgedeki yer işaretlerini gösterebilir veya gizleyebilirsiniz. İşte bir örnek:
+Bir belgedeki yer imlerini gösterebilir veya gizleyebilirsiniz. İşte bir örnek:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -78,9 +78,9 @@ showHideBookmarkedContent(doc, "MyBookmark1", false);
 doc.save("Your Directory Path" + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-## Adım 6: Satır Yer İmlerini Çözme
+## Adım 6: Satır İşaretlerini Çözme
 
-Satır yer işaretlerini çözmek, onlarla daha etkili bir şekilde çalışmanıza olanak tanır:
+Satır yer imlerini çözmek, onlarla daha etkili bir şekilde çalışmanıza olanak tanır:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Table column bookmarks.docx");
@@ -91,26 +91,26 @@ doc.save("Your Directory Path" + "WorkingWithBookmarks.UntangleRowBookmarks.docx
 
 ## Çözüm
 
-Aspose.Words for Java'da yer işaretlerini kullanmak, belge işleme görevlerini büyük ölçüde basitleştirebilir. İçerikte gezinmeniz, içeriği çıkarmanız veya değiştirmeniz gerekiyorsa, yer imleri bunu verimli bir şekilde yapmanız için güçlü bir mekanizma sağlar.
+Aspose.Words for Java'da yer imlerini kullanmak, belge işleme görevlerini büyük ölçüde basitleştirebilir. İçeriği gezinmeniz, çıkarmanız veya düzenlemeniz gerekip gerekmediğine bakılmaksızın, yer imleri bunu verimli bir şekilde yapmak için güçlü bir mekanizma sağlar.
 
-## SSS'ler
+## SSS
 
-### Tablo hücresinde nasıl yer imi oluşturabilirim?
+### Bir tablo hücresinde yer imi nasıl oluştururum?
 
- Bir tablo hücresinde yer imi oluşturmak için`DocumentBuilder` sınıf ve hücre içindeki yer işaretini başlat ve bitir.
+ Bir tablo hücresinde yer imi oluşturmak için şunu kullanın:`DocumentBuilder` sınıf ve hücre içindeki yer imini başlat ve bitir.
 
 ### Bir yer imini başka bir belgeye kopyalayabilir miyim?
 
- Evet, bir yer işaretini kullanarak başka bir belgeye kopyalayabilirsiniz.`NodeImporter` Biçimlendirmenin korunduğundan emin olmak için sınıf.
+ Evet, bir yer imini başka bir belgeye kopyalamak için şunu kullanabilirsiniz:`NodeImporter` Biçimlendirmenin korunduğundan emin olmak için sınıf.
 
 ### Bir satırı yer imine göre nasıl silebilirim?
 
-Bir satırı, önce yer işareti konmuş satırı bulup ardından belgeden kaldırarak, yer işaretine göre silebilirsiniz.
+Bir satırı yer imine göre silmek için önce yer imi eklenmiş satırı bulup ardından onu belgeden kaldırabilirsiniz.
 
-### Yer imlerinin bazı yaygın kullanım durumları nelerdir?
+### Yer imlerinin yaygın kullanım örnekleri nelerdir?
 
-Yer imleri genellikle içindekiler tablosu oluşturmak, belirli içeriği çıkarmak ve belge oluşturma süreçlerini otomatikleştirmek için kullanılır.
+Yer imleri genellikle içerik tablosu oluşturmak, belirli içerikleri çıkarmak ve belge oluşturma süreçlerini otomatikleştirmek için kullanılır.
 
 ### Aspose.Words for Java hakkında daha fazla bilgiyi nerede bulabilirim?
 
- Ayrıntılı belgeler ve indirmeler için şu adresi ziyaret edin:[Aspose.Words for Java Belgelendirmesi](https://reference.aspose.com/words/java/).
+ Ayrıntılı dokümantasyon ve indirmeler için şu adresi ziyaret edin:[Java Belgeleri için Aspose.Words](https://reference.aspose.com/words/java/).

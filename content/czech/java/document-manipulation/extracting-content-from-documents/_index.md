@@ -36,7 +36,7 @@ while (extractedNodes.size() > 0) {
 doc.save("Your Directory Path" + "ExtractContent.ExtractContentBetweenBlockLevelNodes.docx");
 ```
 
-## Extrahování obsahu mezi záložkami
+## Extrahování obsahu mezi záložky
 
 ```java
 //Ukázka kódu Java pro extrahování obsahu mezi záložkami

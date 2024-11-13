@@ -100,7 +100,7 @@ Igen, az Aspose.Words for .NET használható bármely .NET-kompatibilis nyelvvel
 
 ### Hogyan szerezhetek ideiglenes licencet az Aspose.Words számára?
 
- Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Milyen típusú dokumentumokat konvertálhatok Markdown-ba?
 

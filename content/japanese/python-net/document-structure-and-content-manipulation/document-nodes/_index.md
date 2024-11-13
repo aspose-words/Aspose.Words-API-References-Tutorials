@@ -2,7 +2,7 @@
 title: ドキュメントノードの理解とナビゲーション
 linktitle: ドキュメントノードの理解とナビゲーション
 second_title: Aspose.Words Python ドキュメント管理 API
-description: Aspose.Words for Python を使用して Word 文書を操作する方法を学びます。このステップ バイ ステップ ガイドでは、読み込み、書式設定、表、画像などについて説明します。今すぐドキュメント処理スキルを高めましょう。
+description: Aspose.Words for Python を使用して Word ドキュメントを操作する方法を学びます。このステップ バイ ステップ ガイドでは、読み込み、書式設定、表、画像などについて説明します。今すぐドキュメント処理スキルを高めましょう。
 type: docs
 weight: 20
 url: /ja/python-net/document-structure-and-content-manipulation/document-nodes/
@@ -196,7 +196,7 @@ pip install aspose-words
 
 ### Aspose.Words for Python を使用して Word 文書を PDF に変換できますか?
 
-はい、Word文書をPDFに簡単に変換できます。`save`適切なファイル拡張子（例：output.pdf）を持つメソッド。
+はい、Word文書をPDFに簡単に変換できます。`save`適切なファイル拡張子（例："output.pdf"）を持つメソッド。
 
 ### Aspose.Words for Python は、さまざまなバージョンの Microsoft Word と互換性がありますか?
 

@@ -42,7 +42,7 @@ Pojďme připravit náš projekt. Spusťte své vývojové prostředí a vytvoř
 
 ## Krok 2: Nainstalujte Aspose.Words for .NET
 
-Dále musíte do projektu přidat Aspose.Words. Můžete to udělat pomocí Správce balíčků NuGet. Stačí vyhledat Aspose.Words a nainstalovat jej. Snadno peasy!
+Dále musíte do projektu přidat Aspose.Words. Můžete to udělat pomocí Správce balíčků NuGet. Stačí vyhledat Aspose.Words a nainstalovat jej. Snadno!
 
 ```bash
 Install-Package Aspose.Words
@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Krok 3: Vložte své dokumenty
 
-Dobře, je čas načíst dokumenty, které chcete porovnat. Budete potřebovat cesty k těmto dokumentům. Předpokládejme, že máte dva dokumenty:`DocumentA.docx`a`DocumentB.docx`.
+Dobře, je čas načíst dokumenty, které chcete porovnat. Budete potřebovat cesty k těmto dokumentům. Předpokládejme, že máte dva dokumenty:`DocumentA.docx` a`DocumentB.docx`.
 
 ```csharp
 // Cesta k adresáři dokumentů.

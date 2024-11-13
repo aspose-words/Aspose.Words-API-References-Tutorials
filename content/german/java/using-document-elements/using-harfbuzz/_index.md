@@ -37,7 +37,7 @@ Document doc = new Document(dataDir + "SampleDocument.docx");
 
 ## Schritt 3: Konfigurieren der Textgestaltung mit HarfBuzz
 
-Um die HarfBuzz-Textgestaltung zu aktivieren, müssen wir die Textgestaltungsfabrik in den Layoutoptionen des Dokuments festlegen:
+Um die Textgestaltung mit HarfBuzz zu aktivieren, müssen wir die Textgestaltungsfabrik in den Layoutoptionen des Dokuments festlegen:
 
 ```java
 // Aktivieren Sie die HarfBuzz-Textgestaltung

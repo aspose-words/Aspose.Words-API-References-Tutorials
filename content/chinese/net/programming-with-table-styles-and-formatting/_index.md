@@ -16,7 +16,7 @@ Aspose.Words for .NET 教程“使用表格样式和格式进行文字处理”�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [获取表格周围文本之间的距离](./get-distance-between-table-surrounding-text/) | 了解如何使用 Aspose.Words for .NET 检索 Word 文档中表格与周围文本之间的距离。使用本指南改善文档布局。 |
+| [获取表格周围文本之间的距离](./get-distance-between-table-surrounding-text/) | 了解如何使用 Aspose.Words for .NET 检索 Word 文档中表格与周围文本之间的距离。使用本指南改善您的文档布局。 |
 | [应用轮廓边框](./apply-outline-border/) | 了解如何使用 Aspose.Words for .NET 在 Word 中将外框应用于表格。按照我们的分步指南进行操作，实现完美的表格格式。 |
 | [创建带边框的表格](./build-table-with-borders/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建和自定义表格边框。按照我们的分步指南获取详细说明。 |
 | [修改行格式](./modify-row-formatting/) | 通过我们详细的分步指南学习如何使用 Aspose.Words for .NET 修改 Word 文档中的行格式。适合所有级别的开发人员。 |

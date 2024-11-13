@@ -9,7 +9,7 @@ url: /de/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
 ## Einführung
 
-Hallo Technikbegeisterte! Haben Sie sich schon einmal in einer Zwickmühle befunden, als Sie versucht haben, Schriftarten mit Aspose.Words für .NET in ein PDF-Dokument einzubetten? Dann sind Sie hier genau richtig! In diesem Tutorial tauchen wir tief in die Details des Einbettens von Schriftarten in Ihre PDFs ein. Egal, ob Sie ein Neuling oder ein erfahrener Profi sind, diese Anleitung führt Sie auf einfache und ansprechende Weise durch jeden Schritt. Am Ende werden Sie ein Experte darin sein, sicherzustellen, dass Ihre PDFs ihr beabsichtigtes Erscheinungsbild beibehalten, egal wo sie angezeigt werden. Also, legen wir los, oder?
+Hallo Technikbegeisterte! Waren Sie schon einmal in der Klemme, als Sie versuchten, Schriftarten mit Aspose.Words für .NET in ein PDF-Dokument einzubetten? Dann sind Sie hier richtig! In diesem Tutorial tauchen wir tief in die Details des Einbettens von Schriftarten in Ihre PDFs ein. Egal, ob Sie ein Neuling oder ein erfahrener Profi sind, diese Anleitung führt Sie auf einfache und ansprechende Weise durch jeden Schritt. Am Ende sind Sie ein Experte darin, sicherzustellen, dass Ihre PDFs ihr beabsichtigtes Erscheinungsbild beibehalten, egal wo sie angezeigt werden. Also, legen wir los, oder?
 
 ## Voraussetzungen
 
@@ -35,7 +35,7 @@ Lassen Sie uns den Prozess nun in leicht verständliche Schritte unterteilen. Je
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
-Bevor Sie sich in den Code vertiefen, müssen Sie Ihr Dokumentverzeichnis einrichten. Hier wird Ihr Word-Beispieldokument (`Rendering.docx`), wo sich das Ausgabe-PDF befindet.
+Bevor Sie sich in den Code vertiefen, müssen Sie Ihr Dokumentverzeichnis einrichten. Hier wird Ihr Word-Beispieldokument (`Rendering.docx`) und das Ausgabe-PDF wird dort gespeichert.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
@@ -80,7 +80,7 @@ Und da haben Sie es! Sie haben erfolgreich Schriftarten in ein PDF-Dokument eing
 
 ## Häufig gestellte Fragen
 
-### Warum sollte ich Schriftarten in eine PDF-Datei einbetten?
+### Warum sollte ich Schriftarten in eine PDF einbetten?
 Durch das Einbetten von Schriftarten wird sichergestellt, dass Ihr Dokument auf allen Geräten gleich angezeigt wird, unabhängig von den auf dem System des Betrachters installierten Schriftarten.
 
 ### Kann ich bestimmte Schriftarten zum Einbetten auswählen?

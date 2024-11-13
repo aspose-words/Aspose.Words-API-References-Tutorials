@@ -63,7 +63,7 @@ doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
 ## Schritt 4: Beginnen Sie mit der Nachverfolgung von Revisionen
 
-Um Änderungen in unserem Dokument nachverfolgen zu können, müssen wir die Revisionsverfolgung aktivieren. Dies ist wichtig, um an Formen vorgenommene Änderungen zu identifizieren.
+Um Änderungen in unserem Dokument nachzuverfolgen, müssen wir die Revisionsverfolgung aktivieren. Dies ist wichtig, um an Formen vorgenommene Änderungen zu identifizieren.
 
 ```csharp
 doc.StartTrackRevisions("John Doe");
@@ -109,7 +109,7 @@ shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET Formrevisionen in Word-Dokumenten handhaben. Egal, ob Sie Dokumentvorlagen verwalten, Berichte automatisieren oder einfach nur Änderungen nachverfolgen, diese Fähigkeiten sind von unschätzbarem Wert. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen, beherrschen Sie nicht nur die Grundlagen, sondern gewinnen auch Einblick in fortgeschrittenere Dokumenthandhabungstechniken.
+Und da haben Sie es! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET Formrevisionen in Word-Dokumenten handhaben. Egal, ob Sie Dokumentvorlagen verwalten, Berichte automatisieren oder einfach nur Änderungen nachverfolgen, diese Fähigkeiten sind von unschätzbarem Wert. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen, beherrschen Sie nicht nur die Grundlagen, sondern gewinnen auch Einblick in fortgeschrittenere Techniken zur Dokumenthandhabung.
 
 ## Häufig gestellte Fragen
 

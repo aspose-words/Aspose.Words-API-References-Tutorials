@@ -13,5 +13,5 @@ url: /zh/net/working-with-footnote-and-endnote/
 | 标题 | 描述 |
 | --- | --- |
 | [设置脚注列](./set-foot-note-columns/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置脚注列。使用我们的分步指南轻松自定义脚注布局。 |
-| [设置脚注和尾注位置](./set-footnote-and-end-note-position/) | 通过详细的分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中设置脚注和尾注的位置。 |
+| [设置脚注和尾注的位置](./set-footnote-and-end-note-position/) | 通过详细的分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中设置脚注和尾注的位置。 |
 | [设置尾注选项](./set-endnote-options/) | 通过本全面的分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中设置尾注选项。 |

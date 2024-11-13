@@ -98,7 +98,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 
 ### 4. Wie erhalte ich Unterstützung für Aspose.Words für .NET?
 
-Sie erhalten Unterstützung unter[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
+Sie erhalten Unterstützung durch den Besuch der[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
 
 ### 5. Kann ich SmartArt-Formen programmgesteuert bearbeiten?
 

@@ -99,7 +99,7 @@ public class DocumentMerger {
 
 ## 6. 插入文档分隔符
 
-有时，需要在合并的文档之间插入分页符或分节符以保持正确的文档结构。 Aspose.Words 提供了在合并期间插入分页符的选项：
+有时，需要在合并的文档之间插入分页符或分节符以保持正确的文档结构。 Aspose.Words 提供了在合并期间插入分隔符的选项：
 
 - `doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);`：
 无缝地合并文档。
@@ -183,7 +183,7 @@ Aspose.Words for Java 使 Java 开发人员能够轻松合并 Word 文档。按�
 
 ## 11. 常见问题解答 
 
-### 我可以合并不同格式和风格的文档吗？
+### 我可以合并不同格式和样式的文档吗？
 
    是的，Aspose.Words for Java 可以处理不同格式和样式的文档合并。该库可以智能地解决冲突，让您可以无缝合并来自不同来源的文档。
 

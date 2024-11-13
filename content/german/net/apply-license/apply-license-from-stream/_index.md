@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Abschluss
 
-Und da haben Sie es! Das Anwenden einer Lizenz aus einem Stream in Aspose.Words für .NET ist ein unkomplizierter Vorgang, wenn Sie die Schritte kennen. Indem Sie dieser Anleitung folgen, stellen Sie sicher, dass Ihre Anwendung die vollen Funktionen von Aspose.Words ohne Einschränkungen nutzen kann. Wenn Sie auf Probleme stoßen, zögern Sie nicht, sich die[Dokumentation](https://reference.aspose.com/words/net/) oder suchen Sie Hilfe auf der[Support-Forum](https://forum.aspose.com/c/words/8). Viel Spaß beim Programmieren!
+ Und da haben Sie es! Das Anwenden einer Lizenz aus einem Stream in Aspose.Words für .NET ist ein unkomplizierter Vorgang, wenn Sie die Schritte kennen. Indem Sie dieser Anleitung folgen, stellen Sie sicher, dass Ihre Anwendung die vollen Funktionen von Aspose.Words ohne Einschränkungen nutzen kann. Wenn Sie auf Probleme stoßen, zögern Sie nicht, sich die[Dokumentation](https://reference.aspose.com/words/net/) oder suchen Sie Hilfe auf der[Support-Forum](https://forum.aspose.com/c/words/8). Viel Spaß beim Programmieren!
 
 ## Häufig gestellte Fragen
 

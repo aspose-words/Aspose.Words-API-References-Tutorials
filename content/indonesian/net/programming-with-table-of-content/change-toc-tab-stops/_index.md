@@ -1,58 +1,58 @@
 ---
-title: Ubah Toc Tab Stop di Dokumen Word
-linktitle: Ubah Toc Tab Stop di Dokumen Word
+title: Mengubah Pemberhentian Tab Daftar Isi di Dokumen Word
+linktitle: Mengubah Pemberhentian Tab Daftar Isi di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengubah perhentian tab TOC di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini akan membantu Anda membuat Daftar Isi yang terlihat profesional.
+description: Pelajari cara mengubah tab stop TOC dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini akan membantu Anda membuat Daftar Isi yang tampak profesional.
 type: docs
 weight: 10
 url: /id/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
 ## Perkenalan
 
-Pernah bertanya-tanya bagaimana cara meramaikan Daftar Isi (TOC) di dokumen Word Anda? Mungkin Anda ingin tab stop tersebut sejajar sempurna untuk sentuhan profesional. Anda berada di tempat yang tepat! Hari ini, kami mendalami cara mengubah perhentian tab TOC menggunakan Aspose.Words untuk .NET. Tetaplah di sini, dan saya berjanji Anda akan menyelesaikannya dengan semua pengetahuan untuk membuat TOC Anda terlihat menarik dan rapi.
+Pernahkah Anda bertanya-tanya bagaimana cara mempercantik Daftar Isi (TOC) di dokumen Word Anda? Mungkin Anda ingin tab stop tersebut sejajar sempurna untuk sentuhan profesional. Anda berada di tempat yang tepat! Hari ini, kita akan membahas secara mendalam cara mengubah tab stop TOC menggunakan Aspose.Words untuk .NET. Tetaplah di sini, dan saya jamin Anda akan pulang dengan semua pengetahuan untuk membuat TOC Anda terlihat menarik dan rapi.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita mulai, mari pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Aspose.Words untuk .NET: Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Anda dapat[unduh disini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE apa pun yang kompatibel dengan C#.
-3. Dokumen Word: Khususnya, dokumen yang berisi TOC.
+3. Dokumen Word: Khususnya, yang berisi Daftar Isi.
 
-Punya semua itu? Luar biasa! Ayo berguling.
+Sudah paham? Keren! Ayo mulai.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, Anda harus mengimpor namespace yang diperlukan. Ini seperti mengemas peralatan Anda sebelum memulai sebuah proyek.
+Pertama-tama, Anda perlu mengimpor namespace yang diperlukan. Ini seperti mengemas peralatan Anda sebelum memulai sebuah proyek.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Mari kita bagi proses ini menjadi langkah-langkah sederhana dan mudah dicerna. Kita akan memuat dokumen, memodifikasi perhentian tab TOC, dan menyimpan dokumen yang diperbarui.
+Mari kita uraikan proses ini menjadi beberapa langkah yang sederhana dan mudah dipahami. Kita akan mulai dari memuat dokumen, mengubah tab TOC, dan menyimpan dokumen yang telah diperbarui.
 
 ## Langkah 1: Muat Dokumen
 
-Mengapa? Kita perlu mengakses dokumen Word yang berisi TOC yang ingin kita modifikasi.
+Mengapa? Kita perlu mengakses dokumen Word yang berisi TOC yang ingin kita ubah.
 
-Bagaimana? Berikut cuplikan kode sederhana untuk Anda mulai:
+Bagaimana? Berikut cuplikan kode sederhana untuk membantu Anda memulai:
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Muat dokumen yang berisi daftar isi
+// Memuat dokumen yang berisi daftar isi
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-Bayangkan dokumen Anda seperti kue, dan kami akan menambahkan sedikit lapisan gula. Langkah pertama adalah mengeluarkan kue itu dari kotaknya.
+Bayangkan dokumen Anda seperti kue, dan kita akan menambahkan sedikit hiasan. Langkah pertama adalah mengeluarkan kue itu dari kotaknya.
 
 ## Langkah 2: Identifikasi Paragraf Daftar Isi
 
-Mengapa? Kita perlu menunjukkan dengan tepat paragraf-paragraf yang membentuk TOC. 
+Mengapa? Kita perlu menentukan paragraf yang membentuk TOC. 
 
-Bagaimana? Ulangi paragraf dan periksa gayanya:
+Bagaimana? Ulangi paragraf-paragraf tersebut dan periksa gayanya:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -65,13 +65,13 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-Anggap saja seperti memindai kerumunan untuk menemukan teman Anda. Di sini, kami mencari paragraf dengan gaya entri TOC.
+Bayangkan seperti memindai kerumunan untuk menemukan teman-teman Anda. Di sini, kita mencari paragraf yang diberi gaya entri TOC.
 
 ## Langkah 3: Ubah Tab Stop
 
-Mengapa? Di sinilah keajaiban terjadi. Mengubah perhentian tab membuat TOC Anda terlihat lebih bersih.
+Mengapa? Di sinilah keajaiban terjadi. Mengubah tab stop membuat TOC Anda tampak lebih bersih.
 
-Bagaimana? Hapus tab stop yang ada dan tambahkan yang baru pada posisi yang diubah:
+Bagaimana? Hapus tab stop yang ada dan tambahkan yang baru pada posisi yang dimodifikasi:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -86,38 +86,38 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-Ini seperti menyesuaikan furnitur di ruang tamu Anda hingga terasa pas. Kami mengubah perhentian tab tersebut untuk kesempurnaan.
+Ini seperti menata ulang furnitur di ruang tamu hingga terasa pas. Kami menyesuaikan tab stop tersebut agar sempurna.
 
 ## Langkah 4: Simpan Dokumen yang Dimodifikasi
 
-Mengapa? Untuk memastikan semua kerja keras Anda disimpan dan dapat dilihat atau dibagikan.
+Mengapa? Untuk memastikan semua kerja keras Anda tersimpan dan dapat dilihat atau dibagikan.
 
-Bagaimana? Simpan dokumen dengan nama baru agar aslinya tetap utuh:
+Bagaimana? Simpan dokumen dengan nama baru agar dokumen asli tetap utuh:
 
 ```csharp
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-Dan voila! TOC Anda sekarang memiliki tab berhenti tepat di tempat yang Anda inginkan.
+Dan voila! Daftar Isi Anda sekarang memiliki tab stop persis di tempat yang Anda inginkan.
 
 ## Kesimpulan
 
-Mengubah perhentian tab TOC di dokumen Word menggunakan Aspose.Words untuk .NET sangatlah mudah setelah Anda menguraikannya. Dengan memuat dokumen Anda, mengidentifikasi paragraf TOC, memodifikasi tab stop, dan menyimpan dokumen, Anda dapat memperoleh tampilan yang halus dan profesional. Ingat, latihan membuat sempurna, jadi teruslah bereksperimen dengan posisi tab stop yang berbeda untuk mendapatkan tata letak persis yang Anda inginkan.
+Mengubah tab stop TOC dalam dokumen Word menggunakan Aspose.Words untuk .NET mudah dilakukan setelah Anda menguraikannya. Dengan memuat dokumen, mengidentifikasi paragraf TOC, mengubah tab stop, dan menyimpan dokumen, Anda dapat memperoleh tampilan yang rapi dan profesional. Ingat, latihan akan menghasilkan kesempurnaan, jadi teruslah bereksperimen dengan posisi tab stop yang berbeda untuk memperoleh tata letak yang Anda inginkan.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya mengubah perhentian tab untuk level TOC yang berbeda secara terpisah?
-Ya kamu bisa! Cukup periksa setiap level TOC tertentu (Toc1, Toc2, dll.) dan sesuaikan.
+### Dapatkah saya mengubah penghentian tab untuk tingkat TOC yang berbeda secara terpisah?
+Ya, Anda bisa! Cukup periksa setiap level TOC tertentu (Toc1, Toc2, dst.) dan sesuaikan dengan tepat.
 
 ### Bagaimana jika dokumen saya memiliki beberapa TOC?
-Kode memindai semua paragraf bergaya TOC, sehingga akan mengubah semua TOC yang ada dalam dokumen.
+Kode ini memindai semua paragraf bergaya TOC, sehingga akan mengubah semua TOC yang ada dalam dokumen.
 
-### Apakah mungkin untuk menambahkan beberapa tab stop di entri TOC?
- Sangat! Anda dapat menambahkan perhentian tab sebanyak yang diperlukan dengan menyesuaikan`para.ParagraphFormat.TabStops` koleksi.
+### Apakah mungkin untuk menambahkan beberapa tab stop pada entri TOC?
+ Tentu saja! Anda dapat menambahkan tab stop sebanyak yang diperlukan dengan menyesuaikan`para.ParagraphFormat.TabStops` koleksi.
 
-### Bisakah saya mengubah perataan tab stop dan gaya pemimpin?
+### Bisakah saya mengubah penyelarasan pemberhentian tab dan gaya penunjuk?
 Ya, Anda dapat menentukan perataan dan gaya pemimpin yang berbeda saat menambahkan perhentian tab baru.
 
 ### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
- Ya, Anda memerlukan lisensi yang valid untuk menggunakan Aspose.Words untuk .NET di luar masa uji coba. Anda bisa mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/) atau[beli satu](https://purchase.aspose.com/buy).
+ Ya, Anda memerlukan lisensi yang valid untuk menggunakan Aspose.Words untuk .NET setelah masa uji coba. Anda bisa mendapatkannya[lisensi sementara](https://purchase.aspose.com/temporary-license/) atau[beli satu](https://purchase.aspose.com/buy).

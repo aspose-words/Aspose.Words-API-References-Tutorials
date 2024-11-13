@@ -61,7 +61,7 @@ Nu kommer den avgörande delen - att ställa in teckensnittsmapparna. Det är h�
 fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 ```
 
-Den andra parametern (`true` ) indikerar att dessa mappar kommer att åsidosätta alla standardfontkällor. Om du vill behålla systemets teckensnittskällor också kan du använda en kombination av`GetFontSources`och`SetFontSources`.
+Den andra parametern (`true` ) indikerar att dessa mappar kommer att åsidosätta alla standardfontkällor. Om du vill behålla systemets teckensnittskällor också kan du använda en kombination av`GetFontSources` och`SetFontSources`.
 
 ## Steg 4: Tillämpa teckensnittsinställningar på dokument
 

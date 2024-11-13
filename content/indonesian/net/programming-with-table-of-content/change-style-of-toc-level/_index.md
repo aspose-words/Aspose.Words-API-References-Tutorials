@@ -1,27 +1,27 @@
 ---
-title: Ubah Gaya Toc Di Dokumen Word
-linktitle: Ubah Gaya Toc Di Dokumen Word
+title: Ubah Gaya Daftar Isi Dalam Dokumen Word
+linktitle: Ubah Gaya Daftar Isi Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengubah gaya TOC di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sesuaikan TOC Anda dengan mudah.
+description: Pelajari cara mengubah gaya TOC dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sesuaikan TOC Anda dengan mudah.
 type: docs
 weight: 10
 url: /id/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 ## Perkenalan
 
-Jika Anda pernah perlu membuat dokumen Word profesional, Anda pasti tahu betapa pentingnya Daftar Isi (TOC). Ini tidak hanya mengatur konten Anda tetapi juga menambahkan sentuhan profesionalisme. Namun, menyesuaikan TOC agar sesuai dengan gaya Anda bisa jadi agak rumit. Dalam tutorial ini, kita akan mempelajari cara mengubah gaya TOC di dokumen Word menggunakan Aspose.Words untuk .NET. Siap untuk terjun? Mari kita mulai!
+Jika Anda pernah perlu membuat dokumen Word profesional, Anda tahu betapa pentingnya Daftar Isi (TOC). Daftar ini tidak hanya mengatur konten Anda tetapi juga menambahkan sentuhan profesionalisme. Namun, menyesuaikan TOC agar sesuai dengan gaya Anda bisa jadi agak sulit. Dalam tutorial ini, kami akan membahas cara mengubah gaya TOC dalam dokumen Word menggunakan Aspose.Words untuk .NET. Siap untuk mencobanya? Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita beralih ke kode, pastikan Anda memiliki yang berikut:
+Sebelum kita masuk ke kode, pastikan Anda memiliki yang berikut ini:
 
-1.  Aspose.Words untuk .NET: Anda harus menginstal perpustakaan Aspose.Words untuk .NET. Jika Anda belum menginstalnya, Anda dapat mendownloadnya dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Anda perlu menginstal pustaka Aspose.Words untuk .NET. Jika Anda belum menginstalnya, Anda dapat mengunduhnya dari[Aspose merilis halaman](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan seperti Visual Studio.
-3. Pengetahuan Dasar C#: Pemahaman bahasa pemrograman C#.
+3. Pengetahuan Dasar C#: Pemahaman tentang bahasa pemrograman C#.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk bekerja dengan Aspose.Words untuk .NET, Anda harus mengimpor namespace yang diperlukan. Inilah cara Anda melakukannya:
+Untuk bekerja dengan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan. Berikut cara melakukannya:
 
 ```csharp
 using System;
@@ -29,55 +29,55 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Mari kita bagi prosesnya menjadi langkah-langkah yang mudah diikuti:
+Mari kita uraikan prosesnya menjadi beberapa langkah yang mudah diikuti:
 
 ## Langkah 1: Siapkan Proyek Anda
 
-Hal pertama yang pertama, siapkan proyek Anda di Visual Studio. Buat proyek C# baru dan tambahkan referensi ke perpustakaan Aspose.Words untuk .NET.
+Pertama-tama, siapkan proyek Anda di Visual Studio. Buat proyek C# baru dan tambahkan referensi ke pustaka Aspose.Words for .NET.
 
 ```csharp
 // Buat dokumen baru
 Document doc = new Document();
 ```
 
-## Langkah 2: Ubah Gaya TOC
+## Langkah 2: Ubah Gaya Daftar Isi
 
-Selanjutnya, mari kita ubah gaya Daftar Isi (TOC) tingkat pertama.
+Berikutnya, mari kita ubah gaya Daftar Isi tingkat pertama.
 
 ```csharp
-// Modifikasi gaya daftar isi tingkat pertama
+// Modifikasi gaya tingkat pertama daftar isi
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
 ## Langkah 3: Simpan Dokumen yang Dimodifikasi
 
-Setelah melakukan perubahan yang diperlukan pada gaya TOC, simpan dokumen yang dimodifikasi.
+Setelah membuat perubahan yang diperlukan pada gaya TOC, simpan dokumen yang dimodifikasi.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 ```
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil mengubah gaya TOC di dokumen Word menggunakan Aspose.Words untuk .NET. Penyesuaian kecil ini dapat membuat perbedaan besar pada keseluruhan tampilan dan nuansa dokumen Anda. Jangan lupa bereksperimen dengan gaya dan level lain untuk menyesuaikan TOC Anda sepenuhnya.
+Nah, itu dia! Anda telah berhasil mengubah gaya TOC dalam dokumen Word menggunakan Aspose.Words for .NET. Kustomisasi kecil ini dapat membuat perbedaan besar dalam tampilan dan nuansa keseluruhan dokumen Anda. Jangan lupa bereksperimen dengan gaya dan level lain untuk menyesuaikan TOC Anda sepenuhnya.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
-Aspose.Words for .NET adalah perpustakaan kelas untuk membuat, memodifikasi, dan mengonversi dokumen Word dalam aplikasi .NET.
+Aspose.Words untuk .NET adalah pustaka kelas untuk membuat, memodifikasi, dan mengonversi dokumen Word dalam aplikasi .NET.
 
 ### Bisakah saya mengubah gaya lain di TOC?
-Ya, Anda dapat memodifikasi berbagai gaya dalam TOC dengan mengakses level dan properti gaya yang berbeda.
+Ya, Anda dapat mengubah berbagai gaya dalam TOC dengan mengakses berbagai level dan properti gaya.
 
 ### Apakah Aspose.Words untuk .NET gratis?
- Aspose.Words untuk .NET adalah perpustakaan berbayar, tetapi Anda bisa mendapatkan a[uji coba gratis](https://releases.aspose.com/) atau a[izin sementara](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words untuk .NET adalah pustaka berbayar, tetapi Anda bisa mendapatkannya[uji coba gratis](https://releases.aspose.com/) atau sebuah[lisensi sementara](https://purchase.aspose.com/temporary-license/).
 
 ### Apakah saya perlu menginstal Microsoft Word untuk menggunakan Aspose.Words untuk .NET?
-Tidak, Aspose.Words untuk .NET tidak memerlukan Microsoft Word untuk diinstal di mesin Anda.
+Tidak, Aspose.Words untuk .NET tidak memerlukan Microsoft Word untuk diinstal di komputer Anda.
 
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
- Anda dapat menemukan dokumentasi yang lebih detail[Di Sini](https://reference.aspose.com/words/net/).
+ Anda dapat menemukan dokumentasi yang lebih rinci[Di Sini](https://reference.aspose.com/words/net/).

@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Layout;
 ```
 
-Diese Namespaces geben uns Zugriff auf die Dokumentverwaltungs- und Layoutoptionen, die wir benötigen.
+Über diese Namespaces haben wir Zugriff auf die Dokumentverwaltungs- und Layoutoptionen, die wir benötigen.
 
 ## Schritt 1: Dokument laden
 
@@ -48,7 +48,7 @@ Document doc = new Document(dataDir + "Revisions.docx");
 
 ## Schritt 2: Kommentare im PDF ausblenden
 
-Als Nächstes müssen wir die Kommentare ausblenden, damit sie nicht in der PDF-Version unseres Dokuments erscheinen. Aspose.Words macht dies unglaublich einfach.
+Als nächstes müssen wir die Kommentare ausblenden, damit sie nicht in der PDF-Version unseres Dokuments erscheinen. Aspose.Words macht dies unglaublich einfach.
 
 ```csharp
 // Kommentare im PDF ausblenden.

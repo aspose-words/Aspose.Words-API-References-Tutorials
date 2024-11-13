@@ -43,17 +43,6 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, Aspose.Words!");
 ```
 
-## 自訂文檔元素
-
-您可以自訂各種文件元素，例如字體、樣式和格式。以下是更改字體大小的範例：
-
-```java
-// Java程式碼改變字體大小
-Run run = (Run) doc.getChildNodes(NodeType.RUN, true).get(0);
-Font font = run.getFont();
-font.setSize(14);
-```
-
 ## 列印文件
 
 使用 Aspose.Words for Java 列印您的自訂文件非常簡單：

@@ -10,7 +10,7 @@ url: /de/net/working-with-section/clone-section/
 
 ## Einführung
 
-Hallo, liebe Programmierer! 🚀 Waren Sie schon einmal mitten in einem Word-Dokumentprojekt und wünschten, Sie könnten einfach einen Abschnitt klonen, anstatt die ganze harte Arbeit noch einmal zu machen? Und wissen Sie was? Mit Aspose.Words für .NET können Sie Abschnitte in Ihren Word-Dokumenten ganz einfach klonen. Dieses Tutorial führt Sie Schritt für Schritt durch den Vorgang und macht das Replizieren von Abschnitten in Ihren Dokumenten zum Kinderspiel. Lassen Sie uns also direkt loslegen und Ihre Dokumentbearbeitungsaufgaben um einiges einfacher machen!
+Hallo, liebe Programmierer! 🚀 Waren Sie schon einmal mitten in einem Word-Dokumentprojekt und wünschten, Sie könnten einfach einen Abschnitt klonen, anstatt die ganze harte Arbeit noch einmal zu machen? Und wissen Sie was? Mit Aspose.Words für .NET können Sie Abschnitte in Ihren Word-Dokumenten ganz einfach klonen. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess und macht das Replizieren von Abschnitten in Ihren Dokumenten zum Kinderspiel. Lassen Sie uns also direkt loslegen und Ihre Dokumentbearbeitungsaufgaben um einiges einfacher machen!
 
 ## Voraussetzungen
 
@@ -91,7 +91,7 @@ doc.Save(dataDir + "ClonedDocument.docx");
 
 ## Schritt-für-Schritt-Anleitung
 
-Um Klarheit und Verständnis zu gewährleisten, wollen wir das Beispiel in eine detaillierte Schritt-für-Schritt-Anleitung aufschlüsseln.
+Um Klarheit und Verständnis zu gewährleisten, wollen wir das Beispiel in eine detaillierte Schritt-für-Schritt-Anleitung aufteilen.
 
 ### Schritt 1: Initialisieren Sie Ihre Umgebung
 

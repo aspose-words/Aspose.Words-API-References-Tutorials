@@ -2,7 +2,7 @@
 title: Generowanie spisu treści w Aspose.Words dla Java
 linktitle: Generowanie spisu treści
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak wygenerować i dostosować spis treści (TOC) przy użyciu Aspose.Words dla Java. Twórz zorganizowane i profesjonalne dokumenty bez wysiłku.
+description: Dowiedz się, jak generować i dostosowywać spis treści (TOC) za pomocą Aspose.Words dla Java. Twórz uporządkowane i profesjonalne dokumenty bez wysiłku.
 type: docs
 weight: 21
 url: /pl/java/document-manipulation/generating-table-of-contents/
@@ -10,15 +10,15 @@ url: /pl/java/document-manipulation/generating-table-of-contents/
 
 ## Wprowadzenie do generowania spisu treści w Aspose.Words dla Java
 
-W tym samouczku przeprowadzimy Cię przez proces generowania spisu treści (TOC) przy użyciu Aspose.Words dla Java. Spis treści jest kluczową funkcją tworzenia uporządkowanych dokumentów. Omówimy, jak dostosować wygląd i układ spisu treści.
+W tym samouczku przeprowadzimy Cię przez proces generowania spisu treści (TOC) przy użyciu Aspose.Words dla Java. TOC jest kluczową funkcją tworzenia uporządkowanych dokumentów. Omówimy, jak dostosować wygląd i układ spisu treści.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniesz, upewnij się, że masz zainstalowany i skonfigurowany Aspose.Words for Java w swoim projekcie Java.
+Zanim zaczniesz, upewnij się, że masz zainstalowany i skonfigurowany pakiet Aspose.Words for Java w swoim projekcie Java.
 
 ## Krok 1: Utwórz nowy dokument
 
-Najpierw utwórzmy nowy dokument do pracy.
+Najpierw utwórzmy nowy dokument, z którym będziemy pracować.
 
 ```java
 Document doc = new Document();
@@ -26,22 +26,22 @@ Document doc = new Document();
 
 ## Krok 2: Dostosuj style spisu treści
 
-Aby dostosować wygląd spisu treści, możesz modyfikować powiązane z nim style. W tym przykładzie pogrubimy wpisy spisu treści pierwszego poziomu.
+Aby dostosować wygląd spisu treści, możesz zmodyfikować style z nim powiązane. W tym przykładzie pogrubimy wpisy spisu treści pierwszego poziomu.
 
 ```java
 doc.getStyles().getByStyleIdentifier(StyleIdentifier.TOC_1).getFont().setBold(true);
 ```
 
-## Krok 3: Dodaj treść do swojego dokumentu
+## Krok 3: Dodaj zawartość do dokumentu
 
-Możesz dodać swoją treść do dokumentu. Ta treść zostanie wykorzystana do wygenerowania spisu treści.
+Możesz dodać swoją treść do dokumentu. Ta treść zostanie użyta do wygenerowania spisu treści.
 
 ## Krok 4: Wygeneruj spis treści
 
 Aby wygenerować spis treści, wstaw pole spisu treści w żądanym miejscu w dokumencie. To pole zostanie automatycznie wypełnione na podstawie nagłówków i stylów w dokumencie.
 
 ```java
-// Wstaw pole spisu treści w żądanym miejscu w dokumencie.
+// Wstaw pole spisu treści w wybranym miejscu dokumentu.
 FieldToc fieldToc = new FieldToc();
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(fieldToc);
 ```
@@ -56,7 +56,7 @@ doc.save("your_output_path_here");
 
 ## Dostosowywanie tabulatorów w spisie treści
 
-Możesz także dostosować tabulatory w spisie treści, aby kontrolować układ numerów stron. Oto jak zmienić tabulatory:
+Możesz również dostosować tabulatory w spisie treści, aby kontrolować układ numerów stron. Oto, jak możesz zmienić tabulatory:
 
 ```java
 Document doc = new Document("Table of contents.docx");
@@ -66,13 +66,13 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
     if (para.getParagraphFormat().getStyle().getStyleIdentifier() >= StyleIdentifier.TOC_1 &&
         para.getParagraphFormat().getStyle().getStyleIdentifier() <= StyleIdentifier.TOC_9)
     {
-        //Uzyskaj pierwszą zakładkę używaną w tym akapicie, która wyrównuje numery stron.
+        // Wybierz pierwszą kartę użytą w tym akapicie, która wyrównuje numery stron.
         TabStop tab = para.getParagraphFormat().getTabStops().get(0);
         
         // Usuń starą zakładkę.
         para.getParagraphFormat().getTabStops().removeByPosition(tab.getPosition());
         
-        // Wstaw nową zakładkę w zmodyfikowanej pozycji (np. 50 jednostek w lewo).
+        //Wstaw nową zakładkę w zmienionej pozycji (np. 50 jednostek na lewo).
         para.getParagraphFormat().getTabStops().add(tab.getPosition() - 50.0, tab.getAlignment(), tab.getLeader());
     }
 }
@@ -80,23 +80,23 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
 doc.save("output.docx");
 ```
 
-Teraz masz dostosowany spis treści w swoim dokumencie z dostosowanymi tabulatorami w celu wyrównania numerów stron.
+Teraz masz w swoim dokumencie dostosowany spis treści z dostosowanymi tabulatorami do wyrównania numerów stron.
 
 
 ## Wniosek
 
-W tym samouczku omówiliśmy, jak wygenerować spis treści (TOC) przy użyciu Aspose.Words dla języka Java, potężnej biblioteki do pracy z dokumentami programu Word. Dobrze zorganizowany spis treści jest niezbędny do organizowania długich dokumentów i poruszania się po nich, a Aspose.Words zapewnia narzędzia do łatwego tworzenia i dostosowywania spisów treści.
+W tym samouczku sprawdziliśmy, jak wygenerować spis treści (TOC) za pomocą Aspose.Words for Java, potężnej biblioteki do pracy z dokumentami Word. Dobrze ustrukturyzowany spis treści jest niezbędny do organizowania i nawigacji po długich dokumentach, a Aspose.Words zapewnia narzędzia do łatwego tworzenia i dostosowywania spisów treści.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak zmienić formatowanie wpisów spisu treści?
+### Jak zmienić formatowanie wpisów w spisie treści?
 
- Możesz modyfikować style powiązane z poziomami spisu treści za pomocą`doc.getStyles().getByStyleIdentifier(StyleIdentifier.TOC_X)`, gdzie X to poziom spisu treści.
+ Możesz modyfikować style powiązane z poziomami spisu treści za pomocą`doc.getStyles().getByStyleIdentifier(StyleIdentifier.TOC_X)`, gdzie X jest poziomem spisu treści.
 
-### Jak mogę dodać więcej poziomów do mojego spisu treści?
+### Jak mogę dodać więcej poziomów do spisu treści?
 
-Aby uwzględnić więcej poziomów w spisie treści, możesz zmodyfikować pole spisu treści i określić żądaną liczbę poziomów.
+Aby dodać więcej poziomów do spisu treści, możesz zmodyfikować pole spisu treści i określić żądaną liczbę poziomów.
 
-### Czy mogę zmienić pozycje tabulatorów dla określonych wpisów spisu treści?
+### Czy mogę zmienić położenie tabulatorów dla konkretnych wpisów spisu treści?
 
-Tak, jak pokazano w powyższym przykładzie kodu, możesz zmienić pozycje tabulatorów dla określonych wpisów spisu treści, iterując po akapitach i odpowiednio modyfikując tabulatory.
+Tak, jak pokazano w przykładzie kodu powyżej, można zmienić położenie tabulatorów dla konkretnych wpisów spisu treści, przechodząc przez akapity i odpowiednio modyfikując położenia tabulatorów.

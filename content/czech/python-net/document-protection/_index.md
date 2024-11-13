@@ -17,7 +17,7 @@ V těchto výukových programech vývojáři prozkoumají, jak využít Aspose.W
 
 Výukové programy se zaměřují na posílení zabezpečení dokumentů pomocí funkcí ochrany dokumentů Pythonu. Vývojáři získají přehled o vodoznaku, digitálních podpisech a úpravě obsahu. Zvládnutím technik ochrany dokumentů mohou vývojáři vylepšit zpracování textových dokumentů a pracovní postupy správy dokumentů a posílit důvěru v jejich operace související s dokumenty.
 
-## Vylepšete svou správu dokumentů
+## Zdokonalte svou správu dokumentů
 
 Zvládnutím ochrany dokumentů pomocí Aspose.Words pro Python mohou vývojáři posílit své možnosti správy dokumentů. Výukové programy nabízejí podrobné pokyny, ukázky kódu a praktické příklady, které vývojářům umožňují implementovat robustní funkce ochrany dokumentů v jejich aplikacích Python. Projděte si tyto výukové programy, abyste zajistili důvěrnost a integritu svých dokumentů.
 

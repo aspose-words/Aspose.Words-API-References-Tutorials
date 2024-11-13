@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 2: Seitenumbrüche einfügen
 
-Als nächstes fügen wir einige Seitenumbrüche in das Dokument ein. So können wir die verschachtelten Felder wirkungsvoll demonstrieren.
+Als nächstes fügen wir ein paar Seitenumbrüche in das Dokument ein. So können wir die verschachtelten Felder wirkungsvoll demonstrieren.
 
 ```csharp
 // Seitenumbrüche einfügen.
@@ -77,7 +77,7 @@ builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
 ```
 
-In diesem Schritt fügen wir zuerst das IF-Feld ein, wechseln zu seinem Trennzeichen und fügen dann die Felder PAGE und NUMPAGES ein. Das IF-Feld prüft, ob die aktuelle Seitenzahl (PAGE) nicht der Gesamtseitenzahl (NUMPAGES) entspricht. Wenn dies zutrifft, wird „Siehe nächste Seite“ angezeigt, andernfalls „Letzte Seite“.
+In diesem Schritt fügen wir zuerst das IF-Feld ein, gehen zu seinem Trennzeichen und fügen dann die Felder PAGE und NUMPAGES ein. Das IF-Feld prüft, ob die aktuelle Seitenzahl (PAGE) nicht der Gesamtseitenzahl (NUMPAGES) entspricht. Wenn dies zutrifft, wird „Siehe nächste Seite“ angezeigt, andernfalls „Letzte Seite“.
 
 ## Schritt 5: Aktualisieren Sie das Feld
 
@@ -106,7 +106,7 @@ Und da haben Sie es! Sie haben erfolgreich verschachtelte Felder mit Aspose.Word
 Ein verschachteltes Feld ist ein Feld, das andere Felder enthält. Es ermöglicht komplexere und bedingtere Inhalte in Dokumenten.
 
 ### Kann ich innerhalb des WENN-Felds andere Felder verwenden?
-Ja, Sie können verschiedene Felder wie DATUM, ZEIT und AUTOR im WENN-Feld verschachteln, um dynamische Inhalte zu erstellen.
+Ja, Sie können verschiedene Felder wie DATUM, ZEIT und AUTOR in das WENN-Feld verschachteln, um dynamische Inhalte zu erstellen.
 
 ### Ist Aspose.Words für .NET kostenlos?
  Aspose.Words für .NET ist eine kommerzielle Bibliothek, aber Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) um es auszuprobieren.

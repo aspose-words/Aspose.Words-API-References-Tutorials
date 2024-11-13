@@ -1,28 +1,28 @@
 ---
-title: Dołącz zaznaczony tekst do dokumentu programu Word
-linktitle: Dołącz zaznaczony tekst do dokumentu programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodać tekst z zakładkami do dokumentu programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Idealny dla programistów.
+title: Dołącz zakładkę do tekstu w dokumencie Word
+linktitle: Dołącz zakładkę do tekstu w dokumencie Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak dołączyć zakładkę do tekstu w dokumencie Word za pomocą Aspose.Words dla .NET dzięki temu przewodnikowi krok po kroku. Idealne dla programistów.
 type: docs
 weight: 10
 url: /pl/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 ## Wstęp
 
-Hej tam! Czy kiedykolwiek próbowałeś dołączyć tekst z sekcji oznaczonej zakładkami w dokumencie programu Word i okazało się to trudne? Masz szczęście! Ten samouczek przeprowadzi Cię przez proces korzystania z Aspose.Words dla .NET. Podzielimy to na proste kroki, dzięki czemu będziesz mógł łatwo je wykonać. Zanurzmy się i dołączmy tekst z zakładek jak profesjonalista!
+Cześć! Czy kiedykolwiek próbowałeś dołączyć tekst z sekcji zakładek w dokumencie Word i wydawało Ci się to trudne? Masz szczęście! Ten samouczek przeprowadzi Cię przez proces przy użyciu Aspose.Words dla .NET. Podzielimy go na proste kroki, abyś mógł łatwo śledzić. Zanurzmy się i dołączmy ten tekst zakładek jak profesjonalista!
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
--  Aspose.Words dla .NET: Upewnij się, że masz go zainstalowanego. Jeśli nie, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne: dowolne środowisko programistyczne .NET, takie jak Visual Studio.
-- Podstawowa znajomość języka C#: Pomocne będzie zrozumienie podstawowych koncepcji programowania w języku C#.
-- Dokument programu Word z zakładkami: dokument programu Word z ustawionymi zakładkami, z których będziemy dodawać tekst.
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany. Jeśli nie, możesz[pobierz tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: dowolne środowisko programistyczne .NET, np. Visual Studio.
+- Podstawowa wiedza o języku C#: Pomocna będzie znajomość podstawowych koncepcji programowania w języku C#.
+- Dokument Word z zakładkami: Dokument Word z ustawionymi zakładkami, których będziemy używać do dodawania tekstu.
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw. Dzięki temu będziemy mieć pewność, że wszystkie potrzebne nam narzędzia będą w zasięgu ręki.
+Po pierwsze, zaimportujmy niezbędne przestrzenie nazw. Dzięki temu będziemy mieć wszystkie potrzebne narzędzia pod ręką.
 
 ```csharp
 using System;
@@ -34,64 +34,64 @@ Podzielmy przykład na szczegółowe kroki.
 
 ## Krok 1: Załaduj dokument i zainicjuj zmienne
 
-W porządku, zacznijmy od załadowania naszego dokumentu Worda i zainicjowania potrzebnych nam zmiennych.
+No dobrze, zacznijmy od załadowania naszego dokumentu Word i zainicjowania zmiennych, których będziemy potrzebować.
 
 ```csharp
 // Załaduj dokumenty źródłowe i docelowe.
 Document srcDoc = new Document("source.docx");
 Document dstDoc = new Document("destination.docx");
 
-// Zainicjuj importera dokumentów.
+// Zainicjuj importer dokumentów.
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
 
 // Znajdź zakładkę w dokumencie źródłowym.
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
 ```
 
-## Krok 2: Znajdź akapit początkowy i końcowy
+## Krok 2: Zidentyfikuj akapit początkowy i końcowy
 
-Teraz zlokalizujmy akapity, w których zaczyna się i kończy zakładka. Ma to kluczowe znaczenie, ponieważ musimy obsługiwać tekst w tych granicach.
+Teraz zlokalizujmy akapity, w których zakładka zaczyna się i kończy. Jest to kluczowe, ponieważ musimy obsługiwać tekst w tych granicach.
 
 ```csharp
 // To jest akapit zawierający początek zakładki.
 Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
 
-// To jest akapit zawierający koniec zakładki.
+// To jest akapit zawierający zakończenie zakładki.
 Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
 
 if (startPara == null || endPara == null)
     throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## Krok 3: Zweryfikuj elementy nadrzędne akapitów
+## Krok 3: Sprawdź nadrzędne elementy akapitu
 
-Musimy upewnić się, że akapity początkowy i końcowy mają tego samego rodzica. Jest to prosty scenariusz, który pozwala zachować prostotę.
+Musimy upewnić się, że akapity początkowy i końcowy mają tego samego rodzica. To prosty scenariusz, aby zachować prostotę.
 
 ```csharp
-// Ograniczmy się do w miarę prostego scenariusza.
+// Ograniczmy się do stosunkowo prostego scenariusza.
 if (startPara.ParentNode != endPara.ParentNode)
     throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## Krok 4: Zidentyfikuj węzeł do zatrzymania
+## Krok 4: Zidentyfikuj węzeł, który chcesz zatrzymać
 
 Następnie musimy określić węzeł, w którym zakończymy kopiowanie tekstu. Będzie to węzeł bezpośrednio po akapicie końcowym.
 
 ```csharp
-// Chcemy skopiować wszystkie akapity od akapitu początkowego do akapitu końcowego (włącznie),
-// dlatego węzeł, w którym się zatrzymujemy, znajduje się po akapicie końcowym.
+// Chcemy skopiować wszystkie akapity od początkowego aż do końcowego (włącznie),
+// Dlatego węzeł, przy którym się zatrzymamy, znajduje się jeden po akapicie końcowym.
 Node endNode = endPara.NextSibling;
 ```
 
-## Krok 5: Dołącz tekst z zakładkami do dokumentu docelowego
+## Krok 5: Dołącz zapisany tekst do dokumentu docelowego
 
-Na koniec przejdźmy pętlą przez węzły od akapitu początkowego do węzła za akapitem końcowym i dołączmy je do dokumentu docelowego.
+Na koniec przejrzyjmy węzły od akapitu początkowego do węzła znajdującego się po akapicie końcowym i dołączmy je do dokumentu docelowego.
 
 ```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-    // Tworzy to kopię bieżącego węzła i importuje ją (uważa) w kontekście
-    // dokumentu docelowego. Importowanie oznacza prawidłowe dostosowanie stylów i identyfikatorów list.
+    // Tworzy kopię bieżącego węzła i importuje ją (uczyni ją prawidłową) w kontekście
+    // dokumentu docelowego. Importowanie oznacza prawidłowe dostosowanie stylów i identyfikatorów listy.
     Node newNode = importer.ImportNode(curNode, true);
 
     // Dołącz zaimportowany węzeł do dokumentu docelowego.
@@ -104,21 +104,21 @@ dstDoc.Save("appended_document.docx");
 
 ## Wniosek
 
-I masz to! Pomyślnie dodałeś tekst z sekcji oznaczonej zakładkami w dokumencie programu Word przy użyciu Aspose.Words dla .NET. To potężne narzędzie sprawia, że manipulowanie dokumentami jest dziecinnie proste, a teraz masz jeszcze jednego asa w rękawie. Miłego kodowania!
+I masz to! Udało Ci się dołączyć tekst z sekcji z zakładkami w dokumencie Worda przy użyciu Aspose.Words dla .NET. To potężne narzędzie sprawia, że manipulacja dokumentem staje się dziecinnie prosta, a teraz masz jeszcze jedną sztuczkę w rękawie. Miłego kodowania!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę za jednym razem dodać tekst z wielu zakładek?
-Tak, możesz powtórzyć proces dla każdej zakładki i odpowiednio dodać tekst.
+### Czy mogę dodać tekst z wielu zakładek na raz?
+Tak, możesz powtórzyć ten proces dla każdej zakładki i dodać odpowiedni tekst.
 
-### Co się stanie, jeśli akapity początkowy i końcowy mają różnych rodziców?
-bieżącym przykładzie założono, że mają tego samego rodzica. W przypadku różnych rodziców wymagana jest bardziej złożona obsługa.
+### Co się stanie, jeśli akapit początkowy i końcowy mają różnych nadrzędnych?
+bieżącym przykładzie zakłada się, że mają tego samego rodzica. W przypadku różnych rodziców wymagana jest bardziej złożona obsługa.
 
 ### Czy mogę zachować oryginalne formatowanie dołączonego tekstu?
- Absolutnie! The`ImportFormatMode.KeepSourceFormatting` gwarantuje zachowanie oryginalnego formatowania.
+ Absolutnie!`ImportFormatMode.KeepSourceFormatting` zapewnia zachowanie oryginalnego formatowania.
 
 ### Czy można dodać tekst w określonym miejscu w dokumencie docelowym?
-Tak, możesz dołączyć tekst w dowolnej pozycji, przechodząc do żądanego węzła w dokumencie docelowym.
+Tak, możesz dodać tekst w dowolnym miejscu, przechodząc do żądanego węzła w dokumencie docelowym.
 
-### Co się stanie, jeśli będę musiał dodać tekst z zakładki do nowej sekcji?
-Możesz utworzyć nową sekcję w dokumencie docelowym i dołączyć tam tekst.
+### Co zrobić, jeśli chcę dodać tekst z zakładki do nowej sekcji?
+Możesz utworzyć nową sekcję w dokumencie docelowym i dodać tam tekst.

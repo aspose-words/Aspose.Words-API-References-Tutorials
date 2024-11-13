@@ -233,4 +233,4 @@ Ano, Aspose.Words pro Java můžete nakonfigurovat tak, aby vyhovovala různým 
 Absolutně! Aspose.Words for Java podporuje pokročilé formátování dokumentů, včetně tabulek, obrázků a dalších. Příklady naleznete v dokumentaci.
 
 ### Kde mohu získat dočasnou licenci pro Aspose.Words for Java?
- Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
+Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).

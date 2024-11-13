@@ -1,8 +1,8 @@
 ---
 title: Effiziente Strategien zur Dokumentaufteilung und -formatierung
 linktitle: Effiziente Strategien zur Dokumentaufteilung und -formatierung
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
-description: Erfahren Sie, wie Sie Dokumente mit Aspose.Words für Python effizient aufteilen und formatieren. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung und Quellcodebeispiele.
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+description: Erfahren Sie, wie Sie mit Aspose.Words für Python Dokumente effizient aufteilen und formatieren. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung und Quellcodebeispiele.
 type: docs
 weight: 10
 url: /de/python-net/document-splitting-and-formatting/split-format-documents/
@@ -58,7 +58,7 @@ document.save("path/to/save/updated_document.docx")
 ## FAQs
 
 ### Wie kann ich ein Dokument in mehrere Dateien aufteilen?
-Sie können ein Dokument in mehrere Dateien aufteilen, indem Sie die Abschnitte durchlaufen und jeden Abschnitt als separates Dokument speichern. Hier ein Beispiel:
+Sie können ein Dokument in mehrere Dateien aufteilen, indem Sie die Abschnitte durchlaufen und jeden Abschnitt als separates Dokument speichern. Hier ist ein Beispiel:
 
 ```python
 for i, section in enumerate(sections):

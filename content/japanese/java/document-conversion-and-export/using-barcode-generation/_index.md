@@ -16,7 +16,7 @@ url: /ja/java/document-conversion-and-export/using-barcode-generation/
 
 始める前に、次の前提条件が満たされていることを確認してください。
 
-- Java Development Kit (JDK) がシステムにインストールされています。
+- システムに Java 開発キット (JDK) がインストールされています。
 -  Aspose.Words for Javaライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## 必要なクラスをインポートする
@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## バーコードジェネレーターを設定する
 
-カスタムバーコードジェネレーターを設定するには、`FieldOptions`クラス。この例では、`CustomBarcodeGenerator`バーコードを生成するクラス。`CustomBarcodeGenerator`実際のバーコード生成ロジックは次のとおりです。
+カスタムバーコードジェネレーターを設定するには、`FieldOptions`この例では、`CustomBarcodeGenerator`バーコードを生成するクラス。`CustomBarcodeGenerator`実際のバーコード生成ロジックは次のとおりです。
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
@@ -68,7 +68,7 @@ doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 
 ### 生成されたバーコードの外観をカスタマイズするにはどうすればよいですか?
 
-バーコードの外観は、以下の設定を変更することでカスタマイズできます。`CustomBarcodeGenerator`クラス。要件に合わせてバーコードの種類、サイズ、色などのパラメータを調整します。
+バーコードの外観は、`CustomBarcodeGenerator`クラス。要件に合わせてバーコードの種類、サイズ、色などのパラメータを調整します。
 
 ### テキストデータからバーコードを生成できますか?
 

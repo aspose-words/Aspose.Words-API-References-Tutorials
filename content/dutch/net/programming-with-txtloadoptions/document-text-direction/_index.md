@@ -1,38 +1,38 @@
 ---
 title: Documenttekstrichting
 linktitle: Documenttekstrichting
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer met deze stapsgewijze handleiding hoe u de tekstrichting van een document in Word instelt met behulp van Aspose.Words voor .NET. Perfect voor het verwerken van talen van rechts naar links.
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u de documenttekstrichting in Word instelt met Aspose.Words voor .NET met deze stapsgewijze handleiding. Perfect voor het verwerken van talen van rechts naar links.
 type: docs
 weight: 10
 url: /nl/net/programming-with-txtloadoptions/document-text-direction/
 ---
 ## Invoering
 
-Bij het werken met Word-documenten, vooral als deze meerdere talen bevatten of speciale opmaakbehoeften hebben, kan het instellen van de tekstrichting van cruciaal belang zijn. Als u bijvoorbeeld te maken heeft met talen die van rechts naar links worden geschreven, zoals Hebreeuws of Arabisch, moet u mogelijk de tekstrichting dienovereenkomstig aanpassen. In deze handleiding laten we zien hoe u de tekstrichting van het document kunt instellen met Aspose.Words voor .NET. 
+Bij het werken met Word-documenten, met name die met meerdere talen of speciale opmaakbehoeften, kan het instellen van de tekstrichting cruciaal zijn. Bijvoorbeeld, bij het werken met talen die van rechts naar links worden geschreven, zoals Hebreeuws of Arabisch, moet u de tekstrichting mogelijk dienovereenkomstig aanpassen. In deze handleiding laten we zien hoe u de tekstrichting van het document instelt met Aspose.Words voor .NET. 
 
 ## Vereisten
 
-Voordat we in de code duiken, zorg ervoor dat je het volgende hebt:
+Voordat we in de code duiken, moet u ervoor zorgen dat u het volgende heeft:
 
--  Aspose.Words voor .NET-bibliotheek: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Je kunt het downloaden van de[Aspose-website](https://releases.aspose.com/words/net/).
-- Visual Studio: Een ontwikkelomgeving voor het schrijven en uitvoeren van C#-code.
-- Basiskennis van C#: Bekendheid met programmeren in C# is handig als we wat code gaan schrijven.
+-  Aspose.Words voor .NET-bibliotheek: Zorg ervoor dat u Aspose.Words voor .NET hebt geïnstalleerd. U kunt het downloaden van de[Aspose-website](https://releases.aspose.com/words/net/).
+- Visual Studio: een ontwikkelomgeving voor het schrijven en uitvoeren van C#-code.
+- Basiskennis van C#: Kennis van C#-programmering is nuttig omdat we code gaan schrijven.
 
 ## Naamruimten importeren
 
-Om te beginnen moet u de benodigde naamruimten importeren om met Aspose.Words in uw project te kunnen werken. Hier ziet u hoe u het kunt doen:
+Om te beginnen moet u de benodigde naamruimten importeren om met Aspose.Words in uw project te werken. Dit is hoe u dat kunt doen:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-Deze naamruimten bieden toegang tot de klassen en methoden die nodig zijn om Word-documenten te manipuleren.
+Deze naamruimten bieden toegang tot de klassen en methoden die nodig zijn om Word-documenten te bewerken.
 
-## Stap 1: Definieer het pad naar uw documentmap
+## Stap 1: Definieer het pad naar uw documentdirectory
 
-Stel eerst het pad in naar de locatie waar uw document zich bevindt. Dit is cruciaal voor het correct laden en opslaan van bestanden.
+Stel eerst het pad in naar waar uw document zich bevindt. Dit is cruciaal voor het correct laden en opslaan van bestanden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -40,9 +40,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
  Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar uw document is opgeslagen.
 
-## Stap 2: Maak TxtLoadOptions met de instelling voor de documentrichting
+## Stap 2: Maak TxtLoadOptions met Documentrichtinginstelling
 
- Vervolgens moet u een exemplaar maken van`TxtLoadOptions` en stel zijn`DocumentDirection` eigendom. Dit vertelt Aspose.Words hoe om te gaan met de richting van de tekst in het document.
+ Vervolgens moet u een exemplaar van`TxtLoadOptions` en zet zijn`DocumentDirection` eigenschap. Dit vertelt Aspose.Words hoe de richting van tekst in het document moet worden behandeld.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection.Auto };
@@ -52,15 +52,15 @@ TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDi
 
 ## Stap 3: Laad het document
 
- Laad nu het document met behulp van de`Document` klasse en het eerder gedefinieerde`loadOptions`.
+ Laad nu het document met behulp van de`Document` klasse en de eerder gedefinieerde`loadOptions`.
 
 ```csharp
 Document doc = new Document(dataDir + "Hebrew text.txt", loadOptions);
 ```
 
- Hier,`"Hebrew text.txt"` is de naam van uw tekstbestand. Zorg ervoor dat dit bestand in de door u opgegeven map bestaat.
+ Hier,`"Hebrew text.txt"` is de naam van uw tekstbestand. Zorg ervoor dat dit bestand in de opgegeven directory staat.
 
-## Stap 4: Open en controleer de bidirectionele opmaak van de alinea
+## Stap 4: Toegang krijgen tot en controleren van de bidirectionele opmaak van de alinea
 
 Om te bevestigen dat de tekstrichting correct is ingesteld, opent u de eerste alinea van het document en controleert u de bidirectionele opmaak.
 
@@ -69,40 +69,40 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
-Deze stap is handig voor het opsporen van fouten en het verifiëren dat de tekstrichting van het document is toegepast zoals verwacht.
+Deze stap is handig om fouten op te sporen en te controleren of de tekstrichting van het document zoals verwacht is toegepast.
 
 ## Stap 5: Sla het document op met de nieuwe instellingen
 
-Sla ten slotte het document op om de wijzigingen toe te passen en vast te houden.
+Sla ten slotte het document op om de wijzigingen toe te passen en te behouden.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- Hier,`"WorkingWithTxtLoadOptions.DocumentTextDirection.docx"` is de naam van het uitvoerbestand. Zorg ervoor dat u een naam kiest die de wijzigingen weergeeft die u heeft aangebracht.
+ Hier,`"WorkingWithTxtLoadOptions.DocumentTextDirection.docx"` is de naam van het uitvoerbestand. Zorg ervoor dat u een naam kiest die de wijzigingen die u hebt aangebracht, weerspiegelt.
 
 ## Conclusie
 
-Het instellen van de tekstrichting in Word-documenten is een eenvoudig proces met Aspose.Words voor .NET. Door deze stappen te volgen, kunt u eenvoudig configureren hoe uw document omgaat met tekst van rechts naar links of van links naar rechts. Of u nu met meertalige documenten werkt of de tekstrichting voor specifieke talen moet opmaken, Aspose.Words biedt een robuuste oplossing die aan uw behoeften voldoet.
+Het instellen van de tekstrichting in Word-documenten is een eenvoudig proces met Aspose.Words voor .NET. Door deze stappen te volgen, kunt u eenvoudig configureren hoe uw document omgaat met tekst van rechts naar links of van links naar rechts. Of u nu werkt met meertalige documenten of tekstrichting voor specifieke talen moet opmaken, Aspose.Words biedt een robuuste oplossing die aan uw behoeften voldoet.
 
 ## Veelgestelde vragen
 
 ###  Wat is de`DocumentDirection` property used for?
 
- De`DocumentDirection` eigendom in`TxtLoadOptions` bepaalt de tekstrichting voor het document. Het kan worden ingesteld op`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , of`DocumentDirection.RightToLeft`.
+De`DocumentDirection` eigendom in`TxtLoadOptions` bepaalt de tekstrichting voor het document. Het kan worden ingesteld op`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , of`DocumentDirection.RightToLeft`.
 
 ### Kan ik de tekstrichting voor specifieke alinea's instellen in plaats van voor het hele document?
 
- Ja, u kunt de tekstrichting voor specifieke alinea's instellen met behulp van de`ParagraphFormat.Bidi` eigendom, maar de`TxtLoadOptions.DocumentDirection` eigenschap stelt de standaardrichting voor het gehele document in.
+ Ja, u kunt de tekstrichting voor specifieke alinea's instellen met behulp van de`ParagraphFormat.Bidi` eigendom, maar de`TxtLoadOptions.DocumentDirection` Met deze eigenschap wordt de standaardrichting voor het hele document ingesteld.
 
-###  Met welke bestandsformaten kan worden geladen`TxtLoadOptions`?
+###  Welke bestandsformaten worden ondersteund voor het laden met`TxtLoadOptions`?
 
-`TxtLoadOptions` wordt voornamelijk gebruikt voor het laden van tekstbestanden (.txt). Gebruik voor andere bestandsformaten verschillende klassen, zoals`DocLoadOptions` of`DocxLoadOptions`.
+`TxtLoadOptions` wordt voornamelijk gebruikt voor het laden van tekstbestanden (.txt). Voor andere bestandsformaten gebruikt u andere klassen, zoals`DocLoadOptions` of`DocxLoadOptions`.
 
-### Hoe kan ik omgaan met documenten met gemengde tekstrichtingen?
+### Hoe kan ik documenten met gemengde tekstrichtingen verwerken?
 
- Voor documenten met gemengde tekstrichtingen moet u mogelijk de opmaak per alinea regelen. Gebruik de`ParagraphFormat.Bidi` eigenschap om de richting van elke alinea indien nodig aan te passen.
+ Voor documenten met gemengde tekstrichtingen moet u de opmaak mogelijk per alinea verwerken. Gebruik de`ParagraphFormat.Bidi` eigenschap om de richting van elke alinea indien nodig aan te passen.
 
 ### Waar kan ik meer informatie vinden over Aspose.Words voor .NET?
 
- Voor meer details, bekijk de[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/) . U kunt ook aanvullende bronnen verkennen, zoals[Downloadlink](https://releases.aspose.com/words/net/), [Kopen](https://purchase.aspose.com/buy), [Gratis proefperiode](https://releases.aspose.com/), [Tijdelijke licentie](https://purchase.aspose.com/temporary-license/) , En[Steun](https://forum.aspose.com/c/words/8).
+ Voor meer details, bekijk de[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/) . U kunt ook aanvullende bronnen verkennen zoals[Downloadlink](https://releases.aspose.com/words/net/), [Kopen](https://purchase.aspose.com/buy), [Gratis proefperiode](https://releases.aspose.com/), [Tijdelijke licentie](https://purchase.aspose.com/temporary-license/) , En[Steun](https://forum.aspose.com/c/words/8).

@@ -32,7 +32,7 @@ using Aspose.Words;
 using System.IO;
 ```
 
- The`Aspose.Words` jmenný prostor obsahuje základní třídy pro zpracování dokumentů aplikace Word`System.IO` poskytuje funkce pro operace se soubory.
+The`Aspose.Words` jmenný prostor obsahuje základní třídy pro zpracování dokumentů aplikace Word`System.IO` poskytuje funkce pro operace se soubory.
 
 Pojďme si rozebrat proces převodu souboru DOCX do formátu RTF do jasných, zvládnutelných kroků. Postupujte podle těchto pokynů, abyste dosáhli hladkého převodu.
 

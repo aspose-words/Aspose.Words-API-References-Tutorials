@@ -2,26 +2,26 @@
 title: Ignorar caixas de texto
 linktitle: Ignorar caixas de texto
 second_title: API de processamento de documentos Aspose.Words
-description: Mesclar documentos do Word com Aspose.Words for .NET, garantindo que a formatação da caixa de texto seja preservada. Siga este guia passo a passo para um processamento de documentos perfeito.
+description: Mescle documentos do Word com o Aspose.Words para .NET, garantindo que a formatação da caixa de texto seja preservada. Siga este guia passo a passo para processamento de documentos sem interrupções.
 type: docs
 weight: 10
 url: /pt/net/join-and-append-documents/ignore-text-boxes/
 ---
 ## Introdução
 
-Bem-vindo a este tutorial detalhado sobre como usar Aspose.Words for .NET para mesclar documentos do Word ignorando caixas de texto. Se você deseja agilizar o processamento de documentos e garantir que a formatação das caixas de texto seja mantida, você está no lugar certo. Vamos mergulhar neste guia passo a passo.
+Bem-vindo a este tutorial detalhado sobre como usar o Aspose.Words para .NET para mesclar documentos do Word ignorando caixas de texto. Se você está procurando agilizar o processamento de documentos e garantir que a formatação das caixas de texto seja mantida, você está no lugar certo. Vamos mergulhar neste guia passo a passo.
 
 ## Pré-requisitos
 
-Antes de começarmos, vamos garantir que você tenha tudo o que precisa:
+Antes de começar, vamos garantir que você tenha tudo o que precisa:
 
-1.  Aspose.Words para .NET: Faça o download[aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: Baixe-o[aqui](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento .NET: Visual Studio ou qualquer outro IDE preferido.
-3. Conhecimento básico de C#: Compreensão dos conceitos básicos de programação em C#.
+3. Conhecimento básico de C#: Compreensão de conceitos básicos de programação em C#.
 
 ## Importar namespaces
 
-Para começar, você precisará importar os namespaces necessários para o seu projeto:
+Para começar, você precisará importar os namespaces necessários no seu projeto:
 
 ```csharp
 using Aspose.Words;
@@ -30,15 +30,15 @@ using Aspose.Words.Importing;
 
 ## Etapa 1: configure seu projeto
 
-Primeiro, certifique-se de que seu projeto esteja configurado corretamente. Abra seu IDE, crie um novo projeto e instale a biblioteca Aspose.Words for .NET por meio do NuGet Package Manager.
+Primeiro, garanta que seu projeto esteja configurado corretamente. Abra seu IDE, crie um novo projeto e instale a biblioteca Aspose.Words for .NET via NuGet Package Manager.
 
 ### Como instalar o Aspose.Words
 
-1. Abra o Gerenciador de pacotes NuGet em seu IDE.
-2. Procure por "Aspose.Words".
+1. Abra o Gerenciador de Pacotes NuGet no seu IDE.
+2. Pesquise por "Aspose.Words".
 3. Clique em "Instalar".
 
-## Etapa 2: definir o diretório de documentos
+## Etapa 2: Definir diretório de documentos
 
 Em seguida, especifique o diretório onde seus documentos de origem e destino estão localizados.
 
@@ -48,40 +48,40 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
  Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório do seu documento.
 
-## Etapa 3: carregue os documentos
+## Etapa 3: Carregue os documentos
 
-Agora, carregue os documentos de origem e de destino em seu projeto.
+Agora, carregue os documentos de origem e de destino no seu projeto.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Etapa 4: configurar opções de importação
+## Etapa 4: Configurar opções de importação
 
- Para garantir que a formatação das caixas de texto seja mantida, defina a opção`IgnoreTextBoxes` opção para`false`.
+ Para garantir que a formatação das caixas de texto seja mantida, defina o`IgnoreTextBoxes` opção para`false`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## Etapa 5: inicializar o importador de nó
+## Etapa 5: Inicializar o Importador de Nó
 
- Inicialize o`NodeImporter` para importar nós do documento de origem para o documento de destino.
+ Inicializar o`NodeImporter` para importar nós do documento de origem para o documento de destino.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## Etapa 6: importar parágrafos do documento de origem
+## Etapa 6: Importar parágrafos do documento de origem
 
-Obtenha todos os parágrafos da primeira seção do documento de origem.
+Busque todos os parágrafos da primeira seção do documento de origem.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
 ```
 
-## Etapa 7: anexar parágrafos importados ao documento de destino
+## Etapa 7: Anexar parágrafos importados ao documento de destino
 
 Percorra cada parágrafo e anexe-o ao documento de destino.
 
@@ -93,9 +93,9 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Etapa 8: salve o documento mesclado
+## Etapa 8: Salve o documento mesclado
 
-Por fim, salve o documento mesclado com um novo nome para evitar a substituição dos arquivos originais.
+Por fim, salve o documento mesclado com um novo nome para evitar sobrescrever os arquivos originais.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
@@ -103,21 +103,21 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 
 ## Conclusão
 
-Você mesclou com sucesso dois documentos do Word usando Aspose.Words for .NET, garantindo que as caixas de texto não sejam ignoradas durante a importação. Este processo é inestimável para manter a integridade da formatação de seus documentos. Esteja você lidando com relatórios, contratos ou qualquer outro tipo de documento, o Aspose.Words for .NET torna o processo perfeito.
+Você mesclou com sucesso dois documentos do Word usando o Aspose.Words para .NET, garantindo que as caixas de texto não sejam ignoradas durante a importação. Esse processo é inestimável para manter a integridade da formatação dos seus documentos. Não importa se você está lidando com relatórios, contratos ou qualquer outro tipo de documento, o Aspose.Words para .NET torna o processo perfeito.
 
 ## Perguntas frequentes
 
 ### O que é Aspose.Words para .NET?
- Aspose.Words for .NET é uma biblioteca poderosa para criar, manipular e converter documentos Word em aplicativos .NET.[Saber mais](https://reference.aspose.com/words/net/).
+ Aspose.Words para .NET é uma biblioteca poderosa para criar, manipular e converter documentos do Word em aplicativos .NET.[Saber mais](https://reference.aspose.com/words/net/).
 
-### Posso experimentar o Aspose.Words for .NET antes de comprar?
+### Posso testar o Aspose.Words para .NET antes de comprar?
  Sim, você pode baixar uma versão de teste gratuita[aqui](https://releases.aspose.com/).
 
-### Como posso obter uma licença temporária do Aspose.Words for .NET?
- Você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
+### Como posso obter uma licença temporária para o Aspose.Words para .NET?
+Você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
 
 ### Onde posso encontrar documentação mais detalhada?
- Você pode encontrar a documentação abrangente[aqui](https://reference.aspose.com/words/net/).
+ Você pode encontrar a documentação completa[aqui](https://reference.aspose.com/words/net/).
 
-### Como posso obter suporte para Aspose.Words for .NET?
- Para suporte, visite os fóruns Aspose[aqui](https://forum.aspose.com/c/words/8).
+### Como posso obter suporte para o Aspose.Words para .NET?
+ Para obter suporte, visite os fóruns do Aspose[aqui](https://forum.aspose.com/c/words/8).

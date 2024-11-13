@@ -9,7 +9,7 @@ url: /de/net/working-with-headers-and-footers/create-header-footer/
 ---
 ## Einführung
 
-Durch das Hinzufügen von Kopf- und Fußzeilen zu Ihren Dokumenten können Sie deren Professionalität und Lesbarkeit verbessern. Mit Aspose.Words für .NET können Sie Kopf- und Fußzeilen für Ihre Word-Dokumente ganz einfach erstellen und anpassen. In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess und stellen sicher, dass Sie diese Funktionen nahtlos implementieren können.
+Das Hinzufügen von Kopf- und Fußzeilen zu Ihren Dokumenten kann deren Professionalität und Lesbarkeit verbessern. Mit Aspose.Words für .NET können Sie Kopf- und Fußzeilen für Ihre Word-Dokumente ganz einfach erstellen und anpassen. In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess und stellen sicher, dass Sie diese Funktionen nahtlos implementieren können.
 
 ## Voraussetzungen
 
@@ -30,7 +30,7 @@ using Aspose.Words.Tables;
 using System;
 ```
 
-## Schritt 1: Dokumentverzeichnis definieren
+## Schritt 1: Definieren Sie das Dokumentverzeichnis
 
 Definieren Sie das Verzeichnis, in dem Ihr Dokument gespeichert wird. Dies hilft bei der effektiven Verwaltung des Pfads.
 
@@ -41,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Schritt 2: Neues Dokument erstellen
 
- Erstellen Sie ein neues Dokument und ein`DocumentBuilder`um das Hinzufügen von Inhalten zu erleichtern.
+ Erstellen Sie ein neues Dokument und eine`DocumentBuilder`um das Hinzufügen von Inhalten zu erleichtern.
 
 ```csharp
 Document doc = new Document();
@@ -82,7 +82,7 @@ Wechseln Sie zum primären Kopfzeilenbereich und fügen Sie ein Bild und Text ei
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 
-// Einfügen eines Bilds in die Kopfzeile
+// Einfügen eines Bildes in die Kopfzeile
 builder.InsertImage(dataDir + "Graphics Interchange Format.gif", 
     RelativeHorizontalPosition.Page, 10, RelativeVerticalPosition.Page, 10, 50, 50, WrapType.Through);
 

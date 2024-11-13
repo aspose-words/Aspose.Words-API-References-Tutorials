@@ -9,13 +9,13 @@ url: /ja/net/programming-with-tables/formatted-table/
 ---
 ## 導入
 
-プログラムを使用して Word 文書に表を作成して書式設定するのは困難な作業のように思えるかもしれませんが、Aspose.Words for .NET を使用すると、簡単かつ管理しやすくなります。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に書式設定された表を作成する方法について説明します。環境の設定から、美しく書式設定された表を含む文書の保存まで、すべてをカバーします。
+プログラムを使用して Word 文書に表を作成し、書式設定するのは困難な作業のように思えるかもしれませんが、Aspose.Words for .NET を使用すると、簡単かつ管理しやすくなります。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に書式設定された表を作成する方法について説明します。環境の設定から、美しく書式設定された表を含む文書の保存まで、すべてをカバーします。
 
 ## 前提条件
 
 コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
 
-1. Aspose.Words for .NETライブラリ: ダウンロードはこちら[ここ](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NETライブラリ: ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio のような IDE。
 3. .NET Framework: マシンに .NET Framework がインストールされていることを確認します。
 
@@ -113,7 +113,7 @@ builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
 ```
 
-## ステップ8: 本文行を挿入する
+## ステップ8: 本文の行を挿入する
 
 コンテンツを含む本文行を挿入します。
 

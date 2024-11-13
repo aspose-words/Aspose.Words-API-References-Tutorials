@@ -1,27 +1,27 @@
 ---
 title: Dodaj kształt grupy
 linktitle: Dodaj kształt grupy
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodawać kształty grup do dokumentów programu Word za pomocą Aspose.Words dla .NET, korzystając z tego wszechstronnego samouczka krok po kroku.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak dodawać kształty grupowe do dokumentów Word za pomocą Aspose.Words dla .NET, korzystając z tego kompleksowego samouczka krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-shapes/add-group-shape/
 ---
 ## Wstęp
 
-Tworzenie złożonych dokumentów z bogatymi elementami wizualnymi może czasami być trudnym zadaniem, szczególnie w przypadku kształtów grupowych. Ale nie bój się! Aspose.Words dla .NET upraszcza ten proces, czyniąc go tak prostym, jak ciasto. W tym samouczku przeprowadzimy Cię przez kolejne etapy dodawania kształtów grupowych do dokumentów programu Word. Gotowy do nurkowania? Zacznijmy!
+Tworzenie złożonych dokumentów z bogatymi elementami wizualnymi może być czasem zniechęcającym zadaniem, szczególnie w przypadku kształtów grupowych. Ale nie obawiaj się! Aspose.Words dla .NET upraszcza ten proces, czyniąc go dziecinnie prostym. W tym samouczku przeprowadzimy Cię przez kroki dodawania kształtów grupowych do dokumentów Word. Gotowy do działania? Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
-1.  Aspose.Words dla .NET: Możesz pobrać go z[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE kompatybilne z .NET.
+1.  Aspose.Words dla .NET: Można go pobrać ze strony[Strona wydań Aspose](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Visual Studio lub inne środowisko IDE zgodne z .NET.
 3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie dodatkowym atutem.
 
 ## Importuj przestrzenie nazw
 
-Na początek musimy zaimportować niezbędne przestrzenie nazw w naszym projekcie. Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulowania dokumentami Worda za pomocą Aspose.Words.
+Na początek musimy zaimportować niezbędne przestrzenie nazw do naszego projektu. Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulowania dokumentami Word za pomocą Aspose.Words.
 
 ```csharp
 using System;
@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 
 ## Krok 1: Zainicjuj dokument
 
-Na początek zainicjujmy nowy dokument programu Word. Pomyśl o tym jak o utworzeniu pustego płótna, na którym będziemy dodawać kształty naszych grup.
+Po pierwsze, zainicjujmy nowy dokument Word. Pomyśl o tym jak o stworzeniu pustego płótna, na którym będziemy dodawać nasze kształty grupowe.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -45,15 +45,15 @@ doc.EnsureMinimum();
 
 ## Krok 2: Utwórz obiekt GroupShape
 
- Następnie musimy utworzyć`GroupShape`obiekt. Obiekt ten będzie pełnił funkcję pojemnika na inne kształty, co umożliwi nam ich grupowanie.
+ Następnie musimy utworzyć`GroupShape`obiekt. Ten obiekt będzie służył jako pojemnik na inne kształty, pozwalając nam grupować je razem.
 
 ```csharp
 GroupShape groupShape = new GroupShape(doc);
 ```
 
-## Krok 3: Dodaj kształty do GroupShape
+## Krok 3: Dodaj kształty do grupy kształtów
 
- Teraz dodajmy poszczególne kształty do naszego`GroupShape` pojemnik. Zaczniemy od akcentującego kształtu obramowania, a następnie dodamy kształt przycisku akcji.
+ Teraz dodajmy do naszego projektu pojedyncze kształty.`GroupShape` kontener. Zaczniemy od kształtu obramowania akcentującego, a następnie dodamy kształt przycisku akcji.
 
 ### Dodawanie kształtu obramowania akcentującego
 
@@ -66,7 +66,7 @@ Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1)
 groupShape.AppendChild(accentBorderShape);
 ```
 
- Ten fragment kodu tworzy akcentujący kształt obramowania o szerokości i wysokości 100 jednostek i dodaje go do`GroupShape`.
+ Ten fragment kodu tworzy kształt obramowania akcentującego o szerokości i wysokości 100 jednostek i dodaje go do`GroupShape`.
 
 ### Dodawanie kształtu przycisku akcji
 
@@ -80,11 +80,11 @@ Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
 groupShape.AppendChild(actionButtonShape);
 ```
 
- Tutaj tworzymy kształt przycisku akcji, ustawiamy go i dodajemy do naszego`GroupShape`.
+ Tutaj tworzymy kształt przycisku akcji, umieszczamy go i dodajemy do naszego`GroupShape`.
 
-## Krok 4: Zdefiniuj wymiary GroupShape
+## Krok 4: Zdefiniuj wymiary kształtu grupy
 
- Aby mieć pewność, że nasze kształty dobrze pasują do grupy, musimy ustawić wymiary pliku`GroupShape`.
+ Aby mieć pewność, że nasze kształty dobrze pasują do grupy, musimy ustalić wymiary`GroupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -92,7 +92,7 @@ groupShape.Height = 200;
 groupShape.CoordSize = new Size(200, 200);
 ```
 
- Określa szerokość i wysokość`GroupShape` jako 200 jednostek i odpowiednio ustawia rozmiar współrzędnych.
+ Definiuje szerokość i wysokość`GroupShape` jako 200 jednostek i odpowiednio ustawia rozmiar współrzędnych.
 
 ## Krok 5: Wstaw GroupShape do dokumentu
 
@@ -103,35 +103,35 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertNode(groupShape);
 ```
 
-`DocumentBuilder` zapewnia łatwy sposób dodawania węzłów, w tym kształtów, do dokumentu.
+`DocumentBuilder` umożliwia łatwe dodawanie węzłów, w tym kształtów, do dokumentu.
 
 ## Krok 6: Zapisz dokument
 
-Na koniec zapisz dokument w określonym katalogu.
+Na koniec zapisz dokument w wybranym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-masz to! Twój dokument z kształtami grupowymi jest gotowy.
+masz! Twój dokument z kształtami grupowymi jest gotowy.
 
 ## Wniosek
 
-Dodawanie kształtów grupowych do dokumentów programu Word nie musi być skomplikowanym procesem. Dzięki Aspose.Words dla .NET możesz z łatwością tworzyć kształty i manipulować nimi, dzięki czemu Twoje dokumenty będą bardziej atrakcyjne wizualnie i funkcjonalne. Postępuj zgodnie z instrukcjami opisanymi w tym samouczku, a w mgnieniu oka staniesz się profesjonalistą!
+Dodawanie kształtów grupowych do dokumentów Word nie musi być skomplikowanym procesem. Dzięki Aspose.Words dla .NET możesz łatwo tworzyć i manipulować kształtami, dzięki czemu Twoje dokumenty będą bardziej atrakcyjne wizualnie i funkcjonalne. Postępuj zgodnie z krokami opisanymi w tym samouczku, a w mgnieniu oka zostaniesz profesjonalistą!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Czy mogę dodać więcej niż dwa kształty do GroupShape?
- Tak, możesz dodać tyle kształtów, ile potrzebujesz`GroupShape` . Po prostu skorzystaj z`AppendChild` metoda dla każdego kształtu.
+ Tak, możesz dodać do pliku dowolną liczbę kształtów.`GroupShape` . Po prostu użyj`AppendChild` metodę dla każdego kształtu.
 
-### Czy można stylizować kształty w GroupShape?
- Absolutnie! Każdy kształt można stylizować indywidualnie, korzystając z właściwości dostępnych w pliku`Shape` klasa.
+### Czy można stylizować kształty w ramach GroupShape?
+ Oczywiście! Każdy kształt można stylizować indywidualnie, korzystając z właściwości dostępnych w`Shape` klasa.
 
-### Jak ustawić GroupShape w dokumencie?
- Możesz ustawić`GroupShape` ustawiając jego`Left`I`Top` właściwości.
+### Jak umieścić GroupShape w dokumencie?
+ Możesz ustawić`GroupShape` ustawiając jego`Left` I`Top` Właściwości.
 
 ### Czy mogę dodać tekst do kształtów w GroupShape?
- Tak, możesz dodawać tekst do kształtów za pomocą`AppendChild` metoda dodania a`Paragraph` zawierający`Run` węzły z tekstem.
+ Tak, możesz dodawać tekst do kształtów za pomocą`AppendChild` metoda dodawania`Paragraph` zawierający`Run` węzły z tekstem.
 
-### Czy możliwe jest dynamiczne grupowanie kształtów na podstawie danych wejściowych użytkownika?
-Tak, możesz dynamicznie tworzyć i grupować kształty na podstawie danych wprowadzonych przez użytkownika, dostosowując odpowiednio właściwości i metody.
+### Czy możliwe jest dynamiczne grupowanie kształtów na podstawie danych wprowadzonych przez użytkownika?
+Tak, możesz dynamicznie tworzyć i grupować kształty na podstawie danych wprowadzonych przez użytkownika, odpowiednio dostosowując właściwości i metody.

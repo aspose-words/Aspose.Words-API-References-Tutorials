@@ -1,39 +1,39 @@
 ---
-title: Doküman Revizyonu
-linktitle: Doküman Revizyonu
+title: Belge Revizyonu
+linktitle: Belge Revizyonu
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java ile belge revizyonlarını kolaylaştırın! Değişiklikleri izleyin, sürüm kontrolünü yönetin ve revizyon görevlerini zahmetsizce otomatikleştirin.
+description: Aspose.Words for Java ile belge revizyonlarını kolaylaştırın! Değişiklikleri takip edin, sürüm kontrolünü yönetin ve revizyon görevlerini zahmetsizce otomatikleştirin.
 type: docs
 weight: 19
 url: /tr/java/document-revision/
 ---
 
-Belge revizyonu, sözcük işlem ve belge işlemenin çok önemli bir yönüdür ve belgelerin kapsamlı incelemelerden ve güncellemelerden geçmesini sağlar. Aspose.Words for Java, belge revizyonu konusunda kapsamlı eğitimler sunarak geliştiricilerin revizyonları verimli bir şekilde yönetmesine ve sürüm kontrolünü sürdürmesine olanak tanır.
+Belge revizyonu, kelime işleme ve belge işlemenin önemli bir yönüdür ve belgelerin kapsamlı incelemelerden ve güncellemelerden geçmesini sağlar. Java için Aspose.Words, belge revizyonu hakkında kapsamlı eğitimler sunarak geliştiricilerin revizyonları verimli bir şekilde yönetmelerini ve sürüm kontrolünü sürdürmelerini sağlar.
 
-## Aspose.Words ile Revizyonları Takip Etme
+## Aspose.Words ile Revizyonları İzleme
 
-Bu eğitimlerde geliştiriciler Aspose.Words for Java kullanarak revizyonları nasıl takip edeceklerini öğrenecekler. Kitaplık, kullanıcıların değişiklikleri vurgulamasına, yorum eklemesine ve revizyonları işbirliği içinde yönetmesine olanak tanıyan güçlü revizyon izleme yetenekleri sağlar. Geliştiriciler, revizyon izleme konusunda uzmanlaşarak inceleme sürecini kolaylaştırabilir ve belgelerin doğruluğundan ve kalitesinden emin olabilirler.
+Bu eğitimlerde, geliştiriciler Java için Aspose.Words kullanarak revizyonları nasıl izleyeceklerini öğrenecekler. Kütüphane, kullanıcıların değişiklikleri vurgulamalarına, yorum eklemelerine ve revizyonları işbirlikçi bir şekilde yönetmelerine olanak tanıyan güçlü revizyon izleme yetenekleri sunar. Geliştiriciler revizyon izlemede ustalaşarak inceleme sürecini kolaylaştırabilir ve belgelerin doğruluğunu ve kalitesini garanti edebilirler.
 
 ## Sürüm Kontrolü ve Belge Geçmişi
 
-Eğitimler Aspose.Words for Java ile sürüm kontrolü ve belge geçmişini yönetmeye odaklanıyor. Geliştiriciler, önceki yinelemelere kolay erişimi kolaylaştıracak şekilde farklı belge sürümlerini kaydetme ve yönetme tekniklerini keşfedecek. Aspose.Words sürüm kontrolünü basitleştirerek geliştiricilerin belge revizyonlarını etkili bir şekilde yönetmesine olanak tanır.
+Eğitimler sürüm denetimi ve Aspose.Words for Java ile belge geçmişini yönetmeye odaklanıyor. Geliştiriciler, önceki yinelemelere kolay erişimi kolaylaştırarak farklı belge sürümlerini kaydetme ve yönetme tekniklerini keşfedecek. Aspose.Words sürüm denetimini basitleştirerek geliştiricilerin belge revizyonlarını etkili bir şekilde yönetmesini sağlıyor.
 
-## Revizyon Görevlerini Otomatikleştirme
+## Gözden Geçirme Görevlerinin Otomatikleştirilmesi
 
-Geliştiriciler, Aspose.Words for Java'yı kullanarak revizyon görevlerini otomatikleştirme konusunda fikir sahibi olacaklar. Eğitimler, revizyonları programlı bir şekilde yönetme, revizyon kabul veya reddini otomatikleştirme ve revizyon raporları oluşturma tekniklerini kapsar. Geliştiriciler, revizyon görevlerini otomatikleştirerek belge işleme iş akışlarını geliştirebilir ve verimli revizyon yönetimi sağlayabilir.
+Geliştiriciler, Java için Aspose.Words kullanarak revizyon görevlerini otomatikleştirme konusunda içgörüler kazanacaklardır. Eğitimler, revizyonları programatik olarak yönetme, revizyon kabulünü veya reddini otomatikleştirme ve revizyon raporları oluşturma tekniklerini kapsar. Geliştiriciler, revizyon görevlerini otomatikleştirerek belge işleme iş akışlarını iyileştirebilir ve verimli revizyon yönetimi sağlayabilirler.
 
-Aspose.Words for Java ile belge revizyonunda uzmanlaşan geliştiriciler, kelime işlem ve belge işleme yeteneklerini optimize edebilirler. Eğitimler, pratik örnekler ve adım adım talimatlar sunarak geliştiricilerin Java uygulamalarında güçlü revizyon izleme ve sürüm kontrolü uygulamalarına olanak sağlar. Belge revizyon süreçlerini kolaylaştırmak ve belgelerin doğru, güncel olmasını sağlamak için bu eğitimlerden yararlanın.
+Geliştiriciler, Java için Aspose.Words ile belge revizyonunda ustalaşarak kelime işleme ve belge işleme yeteneklerini optimize edebilirler. Eğitimler, geliştiricilerin Java uygulamalarında sağlam revizyon takibi ve sürüm kontrolü uygulamalarına olanak tanıyan pratik örnekler ve adım adım talimatlar sunar. Belge revizyon süreçlerini kolaylaştırmak ve doğru, güncel belgeleri korumak için bu eğitimleri benimseyin.
 
 ## Belge Revizyon Eğitimleri
-### [Belge Revizyonu İçin Nihai Kılavuz](./guide-document-revision/)
-Aspose.Words for Java ile belge revizyonunda uzmanlaşın! Değişiklikleri verimli bir şekilde yönetin, revizyonları kabul edin/reddedin ve sorunsuz bir şekilde işbirliği yapın. Şimdi başlayın!
-### [Doküman Revizyonlarının Takibi ve Yönetimi](./tracking-managing-document-revisions/)
-Bu kapsamlı kılavuzdan Aspose.Words for Java ile belge revizyonlarını nasıl takip edeceğinizi ve yöneteceğinizi öğrenin. Adım adım talimatları ve kaynak kodu örneklerini alın.
+### [Belge Revizyonuna İlişkin Nihai Kılavuz](./guide-document-revision/)
+Aspose.Words for Java ile belge revizyonunu yönetin! Değişiklikleri etkin bir şekilde yönetin, revizyonları kabul edin/reddedin ve sorunsuz bir şekilde işbirliği yapın. Hemen başlayın!
+### [Belge Revizyonlarının İzlenmesi ve Yönetilmesi](./tracking-managing-document-revisions/)
+Bu kapsamlı kılavuzda Aspose.Words for Java ile belge revizyonlarını nasıl izleyeceğinizi ve yöneteceğinizi öğrenin. Adım adım talimatlar ve kaynak kodu örnekleri edinin.
 ### [Belge Sürümlerini Karşılaştırma](./comparing-document-versions/)
-Aspose.Words for Java kullanarak belge sürümlerini nasıl karşılaştıracağınızı öğrenin. Verimli sürüm kontrolü için adım adım kılavuz.
+Java için Aspose.Words'ü kullanarak belge sürümlerinin nasıl karşılaştırılacağını öğrenin. Verimli sürüm kontrolü için adım adım kılavuz.
 ### [Belge Değişikliklerini Kabul Etme ve Reddetme](./accepting-rejecting-document-changes/)
 Aspose.Words for Java ile belge değişikliklerini zahmetsizce nasıl yöneteceğinizi öğrenin. Revizyonları sorunsuz bir şekilde kabul edin ve reddedin.
-### [Belge Sürümü Kontrolü ve Geçmişi](./document-version-control-history/)
-Aspose.Words for Java'yı kullanarak etkili belge sürümü kontrolünü öğrenin. Değişiklikleri yönetin, sorunsuz bir şekilde işbirliği yapın ve revizyonları zahmetsizce takip edin.
+### [Belge Sürüm Kontrolü ve Geçmişi](./document-version-control-history/)
+Java için Aspose.Words'ü kullanarak verimli belge sürüm denetimini öğrenin. Değişiklikleri yönetin, sorunsuz bir şekilde işbirliği yapın ve revizyonları zahmetsizce izleyin.
 ### [Belge İşbirliği ve İnceleme](./document-collaboration-review/)
-Aspose.Words for Java ile Verimli Belge İşbirliğinin ve İncelemenin Kilidini Açın. Değişiklikleri Nasıl Takip Edeceğinizi, Belgeleri Paylaşmayı ve İş Akışını Kolaylaştırmayı Öğrenin.
+Aspose.Words for Java ile Verimli Belge İşbirliği ve İncelemenin Kilidini Açın. Değişiklikleri İzlemeyi, Belgeleri Paylaşmayı ve İş Akışını Düzenlemeyi Öğrenin.

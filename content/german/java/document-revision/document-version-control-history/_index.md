@@ -94,4 +94,4 @@ Absolut, Aspose.Words für Java kann problemlos in andere Java-Bibliotheken und 
 
 ### Wo finde ich weitere Ressourcen und Dokumentation?
 
- Sie können auf umfassende Dokumentation und zusätzliche Ressourcen für Aspose.Words für Java zugreifen unter[Hier](https://reference.aspose.com/words/java/).
+ Sie können auf die umfassende Dokumentation und zusätzliche Ressourcen für Aspose.Words für Java zugreifen unter[Hier](https://reference.aspose.com/words/java/).

@@ -1,7 +1,7 @@
 ---
-title: Detecteer het documentbestandsformaat
-linktitle: Detecteer het documentbestandsformaat
-second_title: Aspose.Words-API voor documentverwerking
+title: Detecteer documentbestandsformaat
+linktitle: Detecteer documentbestandsformaat
+second_title: Aspose.Words API voor documentverwerking
 description: Leer hoe u documentbestandsindelingen kunt detecteren met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze handleiding.
 type: docs
 weight: 10
@@ -9,19 +9,19 @@ url: /nl/net/programming-with-fileformat/detect-file-format/
 ---
 ## Invoering
 
-In de digitale wereld van vandaag is het efficiënt beheren van verschillende documentformaten cruciaal. Of u nu met Word, PDF, HTML of andere formaten werkt, het correct kunnen detecteren en verwerken van deze bestanden kan u veel tijd en moeite besparen. In deze zelfstudie onderzoeken we hoe u documentbestandsindelingen kunt detecteren met Aspose.Words voor .NET. In deze handleiding vindt u alles wat u moet weten, van de vereisten tot een gedetailleerde stapsgewijze handleiding.
+In de digitale wereld van vandaag is het cruciaal om verschillende documentformaten efficiënt te beheren. Of u nu Word, PDF, HTML of andere formaten gebruikt, het correct kunnen detecteren en verwerken van deze bestanden kan u veel tijd en moeite besparen. In deze tutorial onderzoeken we hoe u documentbestandsformaten kunt detecteren met Aspose.Words voor .NET. Deze gids leidt u door alles wat u moet weten, van vereisten tot een gedetailleerde stapsgewijze handleiding.
 
 ## Vereisten
 
-Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
+Voordat we in de code duiken, controleren we of je alles hebt wat je nodig hebt:
 
--  Aspose.Words voor .NET: Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/) . Zorg ervoor dat u over een geldige licentie beschikt. Zo niet, dan kunt u een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
+-  Aspose.Words voor .NET: U kunt het downloaden van[hier](https://releases.aspose.com/words/net/) . Zorg ervoor dat u een geldige licentie hebt. Zo niet, dan kunt u een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
 - Visual Studio: Elke recente versie werkt prima.
-- .NET Framework: Zorg ervoor dat de juiste versie is geïnstalleerd.
+- .NET Framework: Zorg ervoor dat u de juiste versie hebt geïnstalleerd.
 
 ## Naamruimten importeren
 
-Om aan de slag te gaan, moet u de benodigde naamruimten in uw project importeren:
+Om te beginnen moet u de benodigde naamruimten in uw project importeren:
 
 ```csharp
 using Aspose.Words;
@@ -33,11 +33,11 @@ using System.IO;
 using System.Linq;
 ```
 
-Laten we het voorbeeld opsplitsen in meerdere stappen, zodat het gemakkelijker te volgen is.
+Laten we het voorbeeld opsplitsen in meerdere stappen, zodat het makkelijker te volgen is.
 
 ## Stap 1: Mappen instellen
 
-Eerst moeten we mappen instellen waarin de bestanden worden gesorteerd op basis van hun formaat.
+Eerst moeten we de mappen instellen waarin de bestanden worden gesorteerd op basis van hun formaat.
 
 ```csharp
 // Het pad naar de documentenmap.
@@ -47,7 +47,7 @@ string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-// Maak de mappen aan als deze nog niet bestaan.
+// Maak de mappen aan als ze nog niet bestaan.
 if (!Directory.Exists(supportedDir))
     Directory.CreateDirectory(supportedDir);
 if (!Directory.Exists(unknownDir))
@@ -60,15 +60,15 @@ if (!Directory.Exists(pre97Dir))
 
 ## Stap 2: Haal de lijst met bestanden op
 
-Vervolgens krijgen we een lijst met bestanden uit de map, met uitzondering van eventuele beschadigde documenten.
+Vervolgens krijgen we een lijst met bestanden uit de map, exclusief beschadigde documenten.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(dataDir).Where(name => !name.EndsWith("Corrupted document.docx"));
 ```
 
-## Stap 3: Detecteer bestandsformaten
+## Stap 3: Bestandsindelingen detecteren
 
-Nu doorlopen we elk bestand en detecteren we het formaat ervan met behulp van Aspose.Words.
+Nu doorlopen we elk bestand en detecteren we de opmaak ervan met behulp van Aspose.Words.
 
 ```csharp
 foreach (string fileName in fileList)
@@ -154,21 +154,21 @@ foreach (string fileName in fileList)
 
 ## Conclusie
 
-Het detecteren van documentbestandsformaten met Aspose.Words voor .NET is een eenvoudig proces. Door uw mappen in te stellen, uw lijst met bestanden op te halen en Aspose.Words te gebruiken om bestandsindelingen te detecteren, kunt u uw documenten efficiënt organiseren en beheren. Deze aanpak bespaart niet alleen tijd, maar zorgt er ook voor dat u op de juiste manier omgaat met diverse documentformaten.
+Het detecteren van documentbestandsformaten met Aspose.Words voor .NET is een eenvoudig proces. Door uw mappen in te stellen, uw lijst met bestanden op te halen en Aspose.Words te gebruiken om bestandsformaten te detecteren, kunt u uw documenten efficiënt organiseren en beheren. Deze aanpak bespaart niet alleen tijd, maar zorgt er ook voor dat u verschillende documentformaten correct verwerkt.
 
 ## Veelgestelde vragen
 
 ### Wat is Aspose.Words voor .NET?
 Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werken met Word-documenten. Hiermee kunnen ontwikkelaars documenten in verschillende formaten maken, wijzigen en converteren.
 
-### Kan Aspose.Words gecodeerde documenten detecteren?
-Ja, Aspose.Words kan detecteren of een document gecodeerd is en u kunt dergelijke documenten dienovereenkomstig behandelen.
+### Kan Aspose.Words versleutelde documenten detecteren?
+Ja, Aspose.Words kan detecteren of een document is gecodeerd en u kunt dergelijke documenten dienovereenkomstig verwerken.
 
 ### Welke formaten kan Aspose.Words detecteren?
 Aspose.Words kan een breed scala aan formaten detecteren, waaronder DOC, DOCX, RTF, HTML, MHTML, ODT en nog veel meer.
 
-### Hoe kan ik een tijdelijke licentie krijgen voor Aspose.Words?
- U kunt een tijdelijke licentie verkrijgen bij de[Stel aankoop voor](https://purchase.aspose.com/temporary-license/) pagina.
+### Hoe kan ik een tijdelijke licentie voor Aspose.Words krijgen?
+ U kunt een tijdelijke vergunning krijgen bij de[Aspose Aankoop](https://purchase.aspose.com/temporary-license/) pagina.
 
 ### Waar kan ik de documentatie voor Aspose.Words vinden?
- De documentatie voor Aspose.Words kunt u vinden[hier](https://reference.aspose.com/words/net/).
+ De documentatie voor Aspose.Words is te vinden[hier](https://reference.aspose.com/words/net/).

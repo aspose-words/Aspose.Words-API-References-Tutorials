@@ -1,5 +1,5 @@
 ---
-title: Použití XML dat v Aspose.Words pro Java
+title: Použití XML dat v Aspose.Words pro Javu
 linktitle: Použití dat XML
 second_title: Aspose.Words Java Document Processing API
 description: Odemkněte sílu Aspose.Words pro Java. Naučte se práci s daty XML, hromadnou korespondenci a knírkovou syntaxi pomocí výukových programů krok za krokem.

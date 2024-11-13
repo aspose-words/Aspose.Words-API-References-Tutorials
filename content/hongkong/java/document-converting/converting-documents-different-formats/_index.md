@@ -50,18 +50,6 @@ Document doc = new Document("sample.docx");
 doc.save("output.pdf", SaveFormat.PDF);
 ```
 
-## 第 6 步：處理異常
-
-處理文件時，優雅地處理異常至關重要。 Aspose.Words for Java 提供異常處理機制以確保您的應用程式順利運行。
-
-```java
-try {
-    //在此執行文件轉換
-} catch (Exception e) {
-    //處理例外
-}
-```
-
 ## 結論
 
 在本指南中，我們探討如何使用 Aspose.Words for Java 將文件轉換為不同的格式。這個強大的 API 簡化了文件轉換過程，使其可供 Java 開發人員使用。現在，您可以輕鬆且有效率地轉換 Java 應用程式中的文件。

@@ -1,27 +1,27 @@
 ---
-title: Format Tabel Dan Sel Dengan Batas Berbeda
-linktitle: Format Tabel Dan Sel Dengan Batas Berbeda
+title: Format Tabel Dan Sel Dengan Batas Yang Berbeda
+linktitle: Format Tabel Dan Sel Dengan Batas Yang Berbeda
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara memformat tabel dan sel dengan batas berbeda menggunakan Aspose.Words untuk .NET. Sempurnakan dokumen Word Anda dengan gaya tabel dan bayangan sel yang disesuaikan.
+description: Pelajari cara memformat tabel dan sel dengan batas yang berbeda menggunakan Aspose.Words untuk .NET. Sempurnakan dokumen Word Anda dengan gaya tabel dan bayangan sel yang disesuaikan.
 type: docs
 weight: 10
 url: /id/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
 ## Perkenalan
 
-Pernahkah Anda mencoba membuat dokumen Word Anda terlihat lebih profesional dengan menyesuaikan batas tabel dan sel? Jika tidak, Anda siap menerima hadiah! Tutorial ini akan memandu Anda melalui proses pemformatan tabel dan sel dengan batas berbeda menggunakan Aspose.Words untuk .NET. Bayangkan memiliki kemampuan untuk mengubah tampilan tabel Anda hanya dengan beberapa baris kode. Penasaran? Mari selami dan jelajahi bagaimana Anda dapat mencapai hal ini dengan mudah.
+Pernahkah Anda mencoba membuat dokumen Word Anda terlihat lebih profesional dengan menyesuaikan batas tabel dan sel? Jika belum, Anda akan dimanjakan! Tutorial ini akan memandu Anda melalui proses pemformatan tabel dan sel dengan batas yang berbeda menggunakan Aspose.Words untuk .NET. Bayangkan memiliki kekuatan untuk mengubah tampilan tabel Anda hanya dengan beberapa baris kode. Penasaran? Mari selami dan jelajahi bagaimana Anda dapat mencapainya dengan mudah.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
+Sebelum kita memulai, pastikan Anda memiliki prasyarat berikut:
 - Pemahaman dasar tentang pemrograman C#.
-- Visual Studio diinstal di komputer Anda.
--  Aspose.Words untuk perpustakaan .NET. Jika Anda belum menginstalnya, Anda dapat mendownloadnya[Di Sini](https://releases.aspose.com/words/net/).
+- Visual Studio terinstal di komputer Anda.
+-  Aspose.Words untuk pustaka .NET. Jika Anda belum menginstalnya, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
 -  Lisensi Aspose yang valid. Anda bisa mendapatkan uji coba gratis atau lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk bekerja dengan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek Anda. Tambahkan arahan penggunaan berikut di bagian atas file kode Anda:
+Untuk bekerja dengan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek Anda. Tambahkan perintah berikut di bagian atas berkas kode Anda:
 
 ```csharp
 using Aspose.Words;
@@ -43,14 +43,14 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 2: Mulai Membuat Tabel
 
-Selanjutnya, gunakan DocumentBuilder untuk mulai membuat tabel dan menyisipkan sel pertama.
+Berikutnya, gunakan DocumentBuilder untuk mulai membuat tabel dan masukkan sel pertama.
 
 ```csharp
 Table table = builder.StartTable();
 builder.InsertCell();
 ```
 
-## Langkah 3: Tetapkan Batas Tabel
+## Langkah 3: Mengatur Batas Tabel
 
 Tetapkan batas untuk seluruh tabel. Langkah ini memastikan bahwa semua sel dalam tabel memiliki gaya batas yang konsisten kecuali ditentukan lain.
 
@@ -59,9 +59,9 @@ Tetapkan batas untuk seluruh tabel. Langkah ini memastikan bahwa semua sel dalam
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 ```
 
-## Langkah 4: Terapkan Shading Sel
+## Langkah 4: Terapkan Cell Shading
 
-Terapkan bayangan pada sel untuk membuatnya berbeda secara visual. Dalam contoh ini, kita akan mengatur warna latar belakang sel pertama menjadi merah.
+Terapkan bayangan pada sel untuk membuatnya tampak berbeda secara visual. Dalam contoh ini, kita akan menetapkan warna latar belakang sel pertama menjadi merah.
 
 
 ```csharp
@@ -70,9 +70,9 @@ builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
 ```
 
-## Langkah 5: Sisipkan Sel Lain dengan Bayangan Berbeda
+## Langkah 5: Masukkan Sel Lain dengan Bayangan Berbeda
 
-Masukkan sel kedua dan terapkan warna bayangan yang berbeda. Hal ini membuat tabel lebih berwarna dan mudah dibaca.
+Sisipkan sel kedua dan terapkan warna bayangan yang berbeda. Ini membuat tabel lebih berwarna dan lebih mudah dibaca.
 
 ```csharp
 builder.InsertCell();
@@ -92,9 +92,9 @@ Hapus pemformatan sel dari operasi sebelumnya untuk memastikan sel berikutnya ti
 builder.CellFormat.ClearFormatting();
 ```
 
-## Langkah 7: Sesuaikan Perbatasan untuk Sel Tertentu
+## Langkah 7: Sesuaikan Batas untuk Sel Tertentu
 
-Sesuaikan batas sel tertentu agar menonjol. Di sini, kita akan menetapkan batas yang lebih besar untuk sel pertama dari baris baru.
+Sesuaikan batas untuk sel tertentu agar terlihat menonjol. Di sini, kita akan mengatur batas yang lebih besar untuk sel pertama pada baris baru.
 
 ```csharp
 builder.InsertCell();
@@ -107,9 +107,9 @@ builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
 ```
 
-## Langkah 8: Masukkan Sel Terakhir
+## Langkah 8: Masukkan Sel Akhir
 
-Sisipkan sel terakhir dan pastikan pemformatannya dihapus, sehingga sel tersebut menggunakan gaya default tabel.
+Masukkan sel terakhir dan pastikan formatnya dihapus, sehingga menggunakan gaya default tabel.
 
 ```csharp
 builder.InsertCell();
@@ -127,21 +127,21 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 
 ## Kesimpulan
 
-Dan itu dia! Anda baru saja mempelajari cara memformat tabel dan sel dengan batas berbeda menggunakan Aspose.Words untuk .NET. Dengan menyesuaikan batas tabel dan bayangan sel, Anda dapat meningkatkan daya tarik visual dokumen Anda secara signifikan. Jadi silakan bereksperimen dengan gaya yang berbeda, dan buat dokumen Anda menonjol!
+Nah, itu dia! Anda baru saja mempelajari cara memformat tabel dan sel dengan batas yang berbeda menggunakan Aspose.Words untuk .NET. Dengan menyesuaikan batas tabel dan bayangan sel, Anda dapat meningkatkan daya tarik visual dokumen Anda secara signifikan. Jadi, silakan bereksperimen dengan berbagai gaya, dan buat dokumen Anda menonjol!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya menggunakan gaya batas yang berbeda untuk setiap sel?
+### Dapatkah saya menggunakan gaya batas yang berbeda untuk setiap sel?
  Ya, Anda dapat mengatur gaya batas yang berbeda untuk setiap sel dengan menggunakan`CellFormat.Borders` milik.
 
 ### Bagaimana cara menghapus semua batas dari tabel?
- Anda dapat menghapus semua batas dengan mengatur gaya batas menjadi`LineStyle.None`.
+ Anda dapat menghapus semua batas dengan mengatur gaya batas ke`LineStyle.None`.
 
-### Apakah mungkin untuk menetapkan warna batas yang berbeda untuk setiap sel?
- Sangat! Anda dapat menyesuaikan warna batas untuk setiap sel menggunakan`CellFormat.Borders.Color` milik.
+### Apakah mungkin untuk mengatur warna batas yang berbeda untuk setiap sel?
+ Tentu saja! Anda dapat menyesuaikan warna batas untuk setiap sel menggunakan`CellFormat.Borders.Color` milik.
 
 ### Bisakah saya menggunakan gambar sebagai latar belakang sel?
 Meskipun Aspose.Words tidak secara langsung mendukung gambar sebagai latar belakang sel, Anda dapat menyisipkan gambar ke dalam sel dan menyesuaikan ukurannya untuk menutupi area sel.
 
-### Bagaimana cara menggabungkan sel dalam sebuah tabel?
- Anda dapat menggabungkan sel menggunakan`CellFormat.HorizontalMerge`Dan`CellFormat.VerticalMerge` properti.
+### Bagaimana cara menggabungkan sel dalam tabel?
+ Anda dapat menggabungkan sel menggunakan`CellFormat.HorizontalMerge` Dan`CellFormat.VerticalMerge` properti.

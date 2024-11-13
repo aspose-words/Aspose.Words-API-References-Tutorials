@@ -179,7 +179,7 @@ Aspose.Words 可讓您處理文件中的多個部分。您可以為每個部分�
         //預設呼叫 currentSection.HeadersFooters.LinkToPrevious(false) 取消此頁面寬度
         //新部分不同，因此我們需要為頁腳表設定不同的儲存格寬度。
         currentSection.getHeadersFooters().linkToPrevious(false);
-        //如果我們想使用本節已經存在的頁首/頁尾集。
+        //如果我們想要使用本節已經存在的頁首/頁尾集。
         //但透過一些小的修改，複製頁首/頁尾可能會更方便
         //從上一節中取得並在我們想要的地方應用必要的修改。
         copyHeadersFootersFromPreviousSection(currentSection);

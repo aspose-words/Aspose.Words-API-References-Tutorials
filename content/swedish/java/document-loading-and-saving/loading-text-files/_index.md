@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-//Den fjärde listan, med blanksteg mellan listnumret och listobjektets innehåll,
+// Den fjärde listan, med blanksteg mellan listnumret och listobjektets innehåll,
 // kommer bara att upptäckas som en lista om "DetectNumberingWithWhitespaces" i ett LoadOptions-objekt är satt till true,
 // för att undvika att stycken som börjar med siffror av misstag upptäcks som listor.
 TxtLoadOptions loadOptions = new TxtLoadOptions();
@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- I det här exemplet laddar vi ett textdokument och trimmar inledande och efterföljande mellanslag med hjälp av`TxtLeadingSpacesOptions.TRIM`och`TxtTrailingSpacesOptions.TRIM`.
+ det här exemplet laddar vi ett textdokument och trimmar inledande och efterföljande mellanslag med hjälp av`TxtLeadingSpacesOptions.TRIM` och`TxtTrailingSpacesOptions.TRIM`.
 
 ## Steg 3: Styra textriktning
 
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-Den här koden ställer in dokumentriktningen till automatisk upptäckt (`DocumentDirection.AUTO`och laddar ett textdokument med hebreisk text. Du kan justera dokumentriktningen efter behov.
+Den här koden ställer in dokumentriktningen till automatisk upptäckt (`DocumentDirection.AUTO`) och laddar ett textdokument med hebreisk text. Du kan justera dokumentriktningen efter behov.
 
 ## Komplett källkod för att ladda textfiler med Aspose.Words för Java
 
@@ -166,7 +166,7 @@ Aspose.Words för Java är ett kraftfullt dokumentbehandlingsbibliotek som låte
 
 För att komma igång med Aspose.Words för Java, följ dessa steg:
 1. Ladda ner och installera Aspose.Words for Java-biblioteket.
-2.  Se dokumentationen på[Aspose.Words för Java API Referens](https://reference.aspose.com/words/java/)för detaljerad information och exempel.
+2.  Se dokumentationen på[Aspose.Words för Java API Referens](https://reference.aspose.com/words/java/) för detaljerad information och exempel.
 3. Utforska exempelkoden och självstudierna för att lära dig hur du använder biblioteket effektivt.
 
 ### Hur laddar jag ett textdokument med Aspose.Words för Java?
@@ -179,7 +179,7 @@ För att komma igång med Aspose.Words för Java, följ dessa steg:
 
 ### Hur hanterar jag mellanslag i laddade textdokument?
 
- Du kan styra hur inledande och efterföljande mellanslag hanteras i laddade textdokument med`TxtLoadOptions` . Alternativ som`TxtLeadingSpacesOptions`och`TxtTrailingSpacesOptions`låter dig trimma eller bevara utrymmen efter behov. Se avsnittet "Alternativ för hanteringsutrymmen" i den här guiden för ett exempel.
+ Du kan styra hur inledande och efterföljande mellanslag hanteras i laddade textdokument med`TxtLoadOptions` . Alternativ som`TxtLeadingSpacesOptions` och`TxtTrailingSpacesOptions` låter dig trimma eller bevara utrymmen efter behov. Se avsnittet "Alternativ för hanteringsutrymmen" i den här guiden för ett exempel.
 
 ### Vad är betydelsen av textriktning i Aspose.Words för Java?
 

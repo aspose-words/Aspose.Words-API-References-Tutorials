@@ -1,29 +1,29 @@
 ---
-title: Sisipkan Dokumen Saat Ganti
-linktitle: Sisipkan Dokumen Saat Ganti
+title: Masukkan Dokumen Saat Ganti
+linktitle: Masukkan Dokumen Saat Ganti
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan satu dokumen Word ke dokumen lain dengan lancar menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci. Sempurna untuk pengembang yang ingin menyederhanakan pemrosesan dokumen.
+description: Pelajari cara memasukkan satu dokumen Word ke dokumen lain dengan mudah menggunakan Aspose.Words untuk .NET dengan panduan terperinci langkah demi langkah kami. Sempurna bagi pengembang yang ingin menyederhanakan pemrosesan dokumen.
 type: docs
 weight: 10
 url: /id/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 ## Perkenalan
 
-Hai, maestro dokumentasi! Pernahkah Anda menemukan diri Anda terlalu mendalami kode, mencoba mencari cara untuk menyisipkan satu dokumen Word ke dokumen Word lainnya dengan lancar? Jangan takut, karena hari ini kita akan mendalami dunia Aspose.Words untuk .NET agar tugas tersebut menjadi mudah. Kami akan membahas panduan langkah demi langkah yang terperinci tentang cara menggunakan perpustakaan canggih ini untuk menyisipkan dokumen pada titik tertentu selama operasi pencarian dan penggantian. Siap menjadi penyihir Aspose.Words? Mari kita mulai!
+Hai, para ahli dokumen! Pernahkah Anda merasa sangat sibuk dengan kode, mencoba mencari tahu cara memasukkan satu dokumen Word ke dokumen lain dengan mudah? Jangan khawatir, karena hari ini kita akan menyelami dunia Aspose.Words untuk .NET untuk mempermudah tugas tersebut. Kami akan memandu Anda melalui panduan terperinci langkah demi langkah tentang cara menggunakan pustaka yang hebat ini untuk memasukkan dokumen pada titik tertentu selama operasi cari dan ganti. Siap menjadi ahli Aspose.Words? Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita beralih ke kode, ada beberapa hal yang perlu Anda siapkan:
+Sebelum kita masuk ke kode, ada beberapa hal yang perlu Anda siapkan:
 
--  Visual Studio: Pastikan Anda telah menginstal Visual Studio di mesin Anda. Jika Anda belum memilikinya, Anda dapat mengunduhnya dari[Di Sini](https://visualstudio.microsoft.com/).
--  Aspose.Words untuk .NET: Anda memerlukan perpustakaan Aspose.Words. Anda bisa mendapatkannya dari[Asumsikan situs web](https://releases.aspose.com/words/net/).
+-  Visual Studio: Pastikan Anda telah menginstal Visual Studio di komputer Anda. Jika Anda belum memilikinya, Anda dapat mengunduhnya dari[Di Sini](https://visualstudio.microsoft.com/).
+-  Aspose.Words untuk .NET: Anda memerlukan pustaka Aspose.Words. Anda bisa mendapatkannya dari[Situs web Aspose](https://releases.aspose.com/words/net/).
 - Pengetahuan Dasar C#: Pemahaman dasar tentang C# dan .NET akan membantu Anda mengikuti tutorial ini.
 
-Baiklah, jika sudah tidak ada lagi, mari kita mengotori tangan kita dengan beberapa kode!
+Baiklah, setelah itu selesai, mari kita mulai dengan kode!
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, kita perlu mengimpor namespace yang diperlukan untuk bekerja dengan Aspose.Words. Ini seperti mengumpulkan semua alat Anda sebelum memulai sebuah proyek. Tambahkan ini menggunakan arahan di bagian atas file C# Anda:
+Pertama-tama, kita perlu mengimpor namespace yang diperlukan untuk bekerja dengan Aspose.Words. Ini seperti mengumpulkan semua alat sebelum memulai proyek. Tambahkan ini menggunakan perintah di bagian atas berkas C# Anda:
 
 ```csharp
 using System;
@@ -33,7 +33,7 @@ using Aspose.Words.Replacing;
 using Aspose.Words.Tables;
 ```
 
-Sekarang kita sudah memiliki prasyaratnya, mari kita bagi prosesnya menjadi langkah-langkah kecil. Setiap langkah sangat penting dan akan membawa kita lebih dekat ke tujuan kita.
+Sekarang setelah kita memiliki prasyarat yang diperlukan, mari kita bagi prosesnya menjadi beberapa langkah kecil. Setiap langkah sangat penting dan akan membawa kita lebih dekat ke tujuan kita.
 
 ## Langkah 1: Menyiapkan Direktori Dokumen
 
@@ -43,11 +43,11 @@ Pertama, kita perlu menentukan direktori tempat dokumen kita disimpan. Ini seper
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur ke direktori Anda. Di sinilah dokumen Anda akan hidup dan bernafas.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur ke direktori Anda. Di sinilah dokumen Anda akan hidup dan berkembang.
 
 ## Langkah 2: Muat Dokumen Utama
 
-Selanjutnya, kita memuat dokumen utama yang ingin kita sisipkan dokumen lain. Anggaplah ini sebagai panggung utama kita di mana semua aksi akan terjadi.
+Selanjutnya, kita memuat dokumen utama yang ingin kita masukkan dokumen lain. Anggap ini sebagai panggung utama tempat semua tindakan akan terjadi.
 
 ```csharp
 Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
@@ -57,7 +57,7 @@ Kode ini memuat dokumen utama dari direktori yang ditentukan.
 
 ## Langkah 3: Atur Opsi Temukan dan Ganti
 
-Untuk menemukan lokasi spesifik di mana kita ingin menyisipkan dokumen, kita menggunakan fungsi temukan dan ganti. Ini seperti menggunakan peta untuk menemukan tempat yang tepat untuk tambahan baru kita.
+Untuk menemukan lokasi spesifik tempat kita ingin menyisipkan dokumen, kita menggunakan fungsi temukan dan ganti. Ini seperti menggunakan peta untuk menemukan lokasi pasti untuk penambahan baru kita.
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions
@@ -67,22 +67,22 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
-Di sini, kita menyetel arah ke mundur dan menentukan penangan panggilan balik khusus yang akan kita tentukan selanjutnya.
+Di sini, kita menetapkan arah ke belakang dan menentukan penangan panggilan balik khusus yang akan kita definisikan berikutnya.
 
 ## Langkah 4: Lakukan Operasi Penggantian
 
-Sekarang, kami memberi tahu dokumen utama kami untuk mencari teks placeholder tertentu dan menggantinya dengan apa pun, sambil menggunakan panggilan balik khusus kami untuk menyisipkan dokumen lain.
+Sekarang, kita perintahkan dokumen utama kita untuk mencari teks pengganti tertentu dan menggantinya dengan apa pun, sembari menggunakan panggilan balik kustom kita untuk menyisipkan dokumen lain.
 
 ```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
 
-Kode ini melakukan operasi temukan dan ganti, lalu menyimpan dokumen yang diperbarui.
+Kode ini melakukan operasi pencarian dan penggantian, lalu menyimpan dokumen yang diperbarui.
 
 ## Langkah 5: Buat Penangan Panggilan Balik Penggantian Kustom
 
-Penangan panggilan balik khusus kami adalah tempat keajaiban terjadi. Pengendali ini akan menentukan bagaimana penyisipan dokumen dilakukan selama operasi pencarian dan penggantian.
+Penangan panggilan balik kustom kami adalah tempat keajaiban terjadi. Penangan ini akan menentukan bagaimana penyisipan dokumen dilakukan selama operasi pencarian dan penggantian.
 
 ```csharp
 private class InsertDocumentAtReplaceHandler : IReplacingCallback
@@ -104,64 +104,68 @@ private class InsertDocumentAtReplaceHandler : IReplacingCallback
 
 Di sini, kita memuat dokumen yang akan disisipkan dan kemudian memanggil metode pembantu untuk melakukan penyisipan.
 
-## Langkah 6: Tentukan Metode Sisipkan Dokumen
+## Langkah 6: Tentukan Metode Penyisipan Dokumen
 
-Bagian terakhir dari teka-teki kita adalah metode yang benar-benar menyisipkan dokumen di lokasi yang ditentukan.
+Bagian terakhir teka-teki kita adalah metode yang benar-benar memasukkan dokumen di lokasi yang ditentukan.
 
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
 {
-	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
-	{
-		CompositeNode destinationParent = insertionDestination.ParentNode;
+    // Periksa apakah tujuan penyisipan adalah Paragraf atau Tabel
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
 
-		NodeImporter importer =
-			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+        // Buat NodeImporter untuk mengimpor node dari dokumen sumber
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
 
-		// Ulangi semua node tingkat blok di badan bagian,
-		// lalu klon dan masukkan setiap node yang bukan paragraf kosong terakhir dari suatu bagian.
-		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
-		foreach (Node srcNode in srcSection.Body)
-		{
-			if (srcNode.NodeType == NodeType.Paragraph)
-			{
-				Paragraph para = (Paragraph)srcNode;
-				if (para.IsEndOfSection && !para.HasChildNodes)
-					continue;
-			}
+        // Ulangi semua node tingkat blok di bagian dokumen sumber
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        {
+            foreach (Node srcNode in srcSection.Body)
+            {
+                // Lewati paragraf kosong terakhir dari suatu bagian
+                if (srcNode.NodeType == NodeType.Paragraph)
+                {
+                    Paragraph para = (Paragraph)srcNode;
+                    if (para.IsEndOfSection && !para.HasChildNodes)
+                        continue;
+                }
 
-			Node newNode = importer.ImportNode(srcNode, true);
-
-			destinationParent.InsertAfter(newNode, insertionDestination);
-			insertionDestination = newNode;
-		}
-	}
-	else
-	{
-		throw new ArgumentException("The destination node should be either a paragraph or table.");
-	}
+                // Impor dan masukkan node ke tujuan
+                Node newNode = importer.ImportNode(srcNode, true);
+                destinationParent.InsertAfter(newNode, insertionDestination);
+                insertionDestination = newNode;
+            }
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
 }
+
 ```
 
-Metode ini menangani impor node dari dokumen yang akan disisipkan dan menempatkannya di tempat yang tepat di dokumen utama.
+Metode ini menangani pengimporan simpul dari dokumen yang akan disisipkan dan penempatannya di tempat yang tepat dalam dokumen utama.
 
 ## Kesimpulan
 
-Dan itu dia! Panduan komprehensif untuk menyisipkan satu dokumen ke dokumen lain menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah mengotomatiskan tugas perakitan dan manipulasi dokumen. Baik Anda sedang membangun sistem manajemen dokumen atau hanya perlu menyederhanakan alur kerja pemrosesan dokumen Anda, Aspose.Words adalah sahabat karib Anda.
+Nah, itu dia! Panduan lengkap untuk memasukkan satu dokumen ke dokumen lain menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah mengotomatiskan tugas perakitan dan manipulasi dokumen. Baik Anda sedang membangun sistem manajemen dokumen atau hanya perlu menyederhanakan alur kerja pemrosesan dokumen, Aspose.Words adalah pendamping terpercaya Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk memanipulasi dokumen Word secara terprogram. Ini memungkinkan Anda membuat, memodifikasi, mengonversi, dan memproses dokumen Word dengan mudah.
+Aspose.Words untuk .NET adalah pustaka yang hebat untuk memanipulasi dokumen Word secara terprogram. Pustaka ini memungkinkan Anda membuat, memodifikasi, mengonversi, dan memproses dokumen Word dengan mudah.
 
-### Bisakah saya memasukkan banyak dokumen sekaligus?
-Ya, Anda dapat memodifikasi pengendali panggilan balik untuk menangani beberapa penyisipan dengan mengulangi kumpulan dokumen.
+### Bisakah saya memasukkan beberapa dokumen sekaligus?
+Ya, Anda dapat memodifikasi pengendali panggilan balik untuk menangani beberapa penyisipan dengan melakukan iterasi pada kumpulan dokumen.
 
 ### Apakah ada uji coba gratis yang tersedia?
- Sangat! Anda dapat mengunduh uji coba gratis dari[Di Sini](https://releases.aspose.com/).
+ Tentu saja! Anda dapat mengunduh uji coba gratis dari[Di Sini](https://releases.aspose.com/).
 
 ### Bagaimana cara mendapatkan dukungan untuk Aspose.Words?
-Anda bisa mendapatkan dukungan dengan mengunjungi[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8).
+Anda bisa mendapatkan dukungan dengan mengunjungi[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Bisakah saya mempertahankan format dokumen yang disisipkan?
  Ya, itu`NodeImporter` kelas memungkinkan Anda menentukan bagaimana pemformatan ditangani saat mengimpor node dari satu dokumen ke dokumen lainnya.

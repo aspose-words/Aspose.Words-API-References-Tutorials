@@ -84,28 +84,6 @@ doc.save("output.html", SaveFormat.HTML);
 doc.save("output.epub", SaveFormat.EPUB);
 ```
 
-## Step 5: Handling Font Substitution
-
-Font substitution is a common challenge when converting documents. Aspose.Words provides a mechanism to handle font substitution to ensure the visual consistency of the converted document:
-
-```java
-// Enable font substitution
-FontSettings.setFontsFolder("/path/to/fonts", true);
-```
-
-## Step 6: Customizing the Conversion Process
-
-Aspose.Words offers a wide range of options to customize the document converting process. For example, you can set the page range for conversion or specify the image resolution when saving to PDF:
-
-```java
-// Set the page range for conversion (convert pages 1 to 3)
-PdfSaveOptions options = new PdfSaveOptions();
-options.setPageSet(new PageSet(1, 3));
-
-// Set image resolution to 300 DPI
-options.setJpegQuality(300);
-```
-
 ## Tips for Effective Document Converting
 
 To ensure a smooth and efficient document converting process, consider the following tips:

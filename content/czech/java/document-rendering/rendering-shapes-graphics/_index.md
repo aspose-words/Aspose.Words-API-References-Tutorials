@@ -139,7 +139,7 @@ Vylepšení vašich dokumentů pomocí tvarů a grafiky může výrazně zlepši
 
 ### Jak mohu změnit velikost tvaru v dokumentu?
 
- Chcete-li změnit velikost tvaru, použijte`setWidth`a`setHeight` metody na objektu tvaru. Chcete-li například vytvořit tvar o šířce 150 pixelů a výšce 75 pixelů:
+ Chcete-li změnit velikost tvaru, použijte`setWidth` a`setHeight` metody na objektu tvaru. Chcete-li například vytvořit tvar o šířce 150 pixelů a výšce 75 pixelů:
 
 ```java
 shape.setWidth(150);

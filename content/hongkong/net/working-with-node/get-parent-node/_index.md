@@ -61,7 +61,7 @@ Console.WriteLine("Section parent is the document: " + (doc == section.ParentNod
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功導覽文件節點層次結構。理解這個概念對於更高階的文件操作任務至關重要。因此，繼續嘗試，看看您還可以使用文件節點做哪些其他很酷的事情！
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功導覽文件節點層次結構。理解這個概念對於更高階的文件操作任務至關重要。因此，繼續嘗試，看看您還可以使用文件節點做哪些其他很酷的事情！
 
 ## 常見問題解答
 

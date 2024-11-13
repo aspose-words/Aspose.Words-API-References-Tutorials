@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 
 ## 常见问题解答
 
-### 我可以仅自动调整表格中的特定列吗？
+### 我可以仅自动适应表中的特定列吗？
 这`AutoFit`方法适用于整个表格。如果需要调整特定列，则可能需要手动设置列宽。
 
 ### 如果我的文档包含多个表格怎么办？

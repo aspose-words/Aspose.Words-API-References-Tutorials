@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Schritt 3: Initialisieren des Document Builders
 
- Der`DocumentBuilder` class ist Ihr bevorzugtes Werkzeug zum Hinzufügen von Inhalten zum Dokument. Betrachten Sie es als Pinsel und Palette.
+Der`DocumentBuilder` class ist Ihr bevorzugtes Werkzeug zum Hinzufügen von Inhalten zum Dokument. Betrachten Sie es als Pinsel und Palette.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

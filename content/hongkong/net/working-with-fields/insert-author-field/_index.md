@@ -69,7 +69,7 @@ Document doc = new Document();
 2. 新增段落：接下來，我們將在文件中新增一個段落。
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 這一段將是我們插入作者欄位的地方。
@@ -116,7 +116,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將作者欄位插入 Word 文件中。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將作者欄位插入 Word 文件中。
 
 ## 結論
 

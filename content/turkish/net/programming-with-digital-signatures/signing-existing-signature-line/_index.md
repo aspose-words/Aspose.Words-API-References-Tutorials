@@ -1,28 +1,28 @@
 ---
-title: Word Belgesinde Mevcut İmza Satırının İmzalanması
-linktitle: Word Belgesinde Mevcut İmza Satırının İmzalanması
+title: Word Belgesinde Mevcut İmza Satırını İmzalama
+linktitle: Word Belgesinde Mevcut İmza Satırını İmzalama
 second_title: Aspose.Words Belge İşleme API'si
-description: Ayrıntılı adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesinde mevcut bir imza satırını nasıl imzalayacağınızı öğrenin. Geliştiriciler için mükemmel.
+description: Ayrıntılı adım adım kılavuzumuzla .NET için Aspose.Words'ü kullanarak bir Word belgesinde var olan bir imza satırını nasıl imzalayacağınızı öğrenin. Geliştiriciler için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
 ## giriiş
 
-Selam! Hiç dijital bir belge imzalamanız gerekti ama bunu biraz zahmetli buldunuz mu? Şanslısınız çünkü bugün Aspose.Words for .NET'i kullanarak bir Word belgesinde mevcut bir imza satırını zahmetsizce nasıl imzalayabileceğinizi inceliyoruz. Bu eğitim size süreç boyunca adım adım yol gösterecek ve bu görevde kısa sürede ustalaşmanızı sağlayacaktır.
+Merhaba! Hiç dijital bir belgeyi imzalamanız gerekti mi ama biraz zahmetli mi buldunuz? Şanslısınız çünkü bugün, .NET için Aspose.Words kullanarak bir Word belgesinde var olan bir imza satırını zahmetsizce nasıl imzalayabileceğinizi ele alacağız. Bu eğitim, sizi adım adım süreçte yönlendirecek ve bu görevi kısa sürede tamamlamanızı sağlayacaktır.
 
-## Önkoşullar
+## Ön koşullar
 
-En ince ayrıntılara dalmadan önce, ihtiyacımız olan her şeye sahip olduğumuzdan emin olalım:
+Ayrıntılara dalmadan önce ihtiyacımız olan her şeye sahip olduğumuzdan emin olalım:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. Henüz yapmadıysanız indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin yüklü olduğundan emin olun. Henüz yüklü değilse, indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio veya herhangi bir C# uyumlu IDE.
 3. Belge ve Sertifika: İmza satırı ve dijital sertifika (PFX dosyası) içeren bir Word belgesi.
-4. Temel C# Bilgisi: C# programlamaya aşina olmak faydalı olacaktır.
+4. Temel C# Bilgisi: C# programlamaya aşinalık faydalı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words'teki sınıfları ve yöntemleri kullanmadan önce gerekli ad alanlarını içe aktarmanız gerekir. Gerekli içe aktarma işlemlerinin bir kısmını burada bulabilirsiniz:
+Aspose.Words'den sınıfları ve yöntemleri kullanabilmeniz için, gerekli ad alanlarını içe aktarmanız gerekir. İşte gerekli içe aktarmaların bir kesiti:
 
 ```csharp
 using System;
@@ -32,26 +32,26 @@ using Aspose.Words.Drawing;
 using Aspose.Words.DigitalSignatures;
 ```
 
-## 1. Adım: Belgenizi Yükleyin
+## Adım 1: Belgenizi Yükleyin
 
-Öncelikle imza satırını içeren Word belgesini yüklemeniz gerekiyor. Bu adım, tüm sürecin temelini oluşturduğu için çok önemlidir.
+İlk önce, imza satırını içeren Word belgesini yüklemeniz gerekir. Bu adım, tüm sürecin temelini oluşturduğu için önemlidir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
 ```
 
-## Adım 2: İmza Hattına Erişin
+## Adım 2: İmza Satırına Erişim
 
-Artık belgemizi yüklediğimize göre, bir sonraki adım belge içindeki imza satırını bulup ona erişmek olacaktır.
+Artık belgemiz yüklendiğine göre, bir sonraki adım belgedeki imza satırını bulup ona erişmektir.
 
 ```csharp
 SignatureLine signatureLine = ((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## 3. Adım: İmza Seçeneklerini Ayarlayın
+## Adım 3: İşaret Seçeneklerini Ayarlayın
 
-İşaret seçeneklerini ayarlamak önemlidir. Bu, imza satırının kimliğinin belirtilmesini ve imza olarak kullanılacak görüntünün sağlanmasını içerir.
+İmza seçeneklerini ayarlamak esastır. Bu, imza satırının kimliğini belirtmeyi ve imza olarak kullanılacak resmi sağlamayı içerir.
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -61,9 +61,9 @@ SignOptions signOptions = new SignOptions
 };
 ```
 
-## 4. Adım: Sertifika Sahibi Oluşturun
+## Adım 4: Sertifika Sahibi Oluşturun
 
-Belgeyi dijital olarak imzalamak için dijital bir sertifikaya ihtiyacınız vardır. PFX dosyanızdan nasıl sertifika sahibi oluşturacağınız aşağıda açıklanmıştır.
+Belgeyi dijital olarak imzalamak için dijital bir sertifikaya ihtiyacınız var. PFX dosyanızdan bir sertifika sahibi nasıl oluşturacağınız aşağıda açıklanmıştır.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "your_password");
@@ -71,7 +71,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## Adım 5: Belgeyi İmzalayın
 
-Şimdi belgeyi imzalamak için tüm bileşenleri birleştiriyoruz. Sihrin gerçekleştiği yer burası!
+Şimdi, belgeyi imzalamak için tüm bileşenleri birleştiriyoruz. İşte sihir burada gerçekleşiyor!
 
 ```csharp
 DigitalSignatureUtil.Sign(
@@ -84,13 +84,13 @@ DigitalSignatureUtil.Sign(
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde mevcut bir imza satırını başarıyla imzaladınız. Çok sert değil, değil mi? Bu adımlarla artık belgeleri dijital olarak imzalayarak ekstra özgünlük ve profesyonellik katmanı sağlayabilirsiniz. Böylece bir dahaki sefere biri size imzalamanız için bir belge gönderdiğinde tam olarak ne yapmanız gerektiğini bileceksiniz!
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinde var olan bir imza satırını başarıyla imzaladınız. Çok zor değil, değil mi? Bu adımlarla artık belgeleri dijital olarak imzalayabilir, o ekstra özgünlük ve profesyonellik katmanını ekleyebilirsiniz. Yani bir dahaki sefere birisi size imzalamanız için bir belge gönderdiğinde, tam olarak ne yapmanız gerektiğini bileceksiniz!
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
 
-Aspose.Words for .NET, .NET uygulamalarında Word belgeleriyle çalışmak için güçlü bir kütüphanedir. Word belgelerini programlı olarak oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanır.
+Aspose.Words for .NET, .NET uygulamalarında Word belgeleriyle çalışmak için güçlü bir kütüphanedir. Word belgelerini programatik olarak oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanır.
 
 ### Aspose.Words for .NET'in ücretsiz deneme sürümünü nereden edinebilirim?
 
@@ -98,12 +98,12 @@ Aspose.Words for .NET, .NET uygulamalarında Word belgeleriyle çalışmak için
 
 ### İmza için herhangi bir resim formatını kullanabilir miyim?
 
-Aspose.Words çeşitli görüntü formatlarını destekler, ancak gelişmiş meta dosyası (EMF) kullanmak imzalar için daha iyi kalite sağlar.
+Aspose.Words çeşitli resim formatlarını destekler, ancak gelişmiş meta dosyası (EMF) kullanmak imzalar için daha iyi kalite sağlar.
 
 ### Dijital sertifikayı nasıl alabilirim?
 
-Dijital sertifikaları çevrimiçi olarak çeşitli sağlayıcılardan satın alabilirsiniz. Sertifikanın PFX formatında olduğundan ve şifrenin elinizde olduğundan emin olun.
+Çeşitli sağlayıcılardan çevrimiçi olarak dijital sertifikalar satın alabilirsiniz. Sertifikanın PFX formatında olduğundan ve şifrenizin olduğundan emin olun.
 
-### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+### Aspose.Words for .NET hakkında daha fazla dokümanı nerede bulabilirim?
 
- Kapsamlı belgeler bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+ Kapsamlı dokümanları bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

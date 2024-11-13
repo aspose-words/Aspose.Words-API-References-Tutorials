@@ -62,7 +62,7 @@ Hier erstellen wir ein neues benutzerdefiniertes XML-Teil mit einer eindeutigen 
 Nachdem wir den benutzerdefinierten XML-Teil hinzugefügt haben, erstellen wir ein SDT zur Anzeige der XML-Daten.
 
 ```csharp
-// Erstellen eines strukturierten Dokumenttags (SDT)
+//Erstellen eines strukturierten Dokumenttags (SDT)
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
 doc.FirstSection.Body.AppendChild(sdt);
 ```
@@ -93,7 +93,7 @@ Dieser Befehl speichert das Dokument mit dem gebundenen SDT in Ihrem angegebenen
 
 ## Abschluss
 
-Herzlichen Glückwunsch! Sie haben mithilfe von Aspose.Words für .NET erfolgreich ein SDT an ein benutzerdefiniertes XML-Teil gebunden. Mit dieser leistungsstarken Funktion können Sie dynamische Dokumente erstellen, die durch einfaches Ändern des XML-Inhalts problemlos mit neuen Daten aktualisiert werden können. Egal, ob Sie Berichte erstellen, Vorlagen erstellen oder Dokument-Workflows automatisieren, Aspose.Words für .NET bietet die Tools, die Sie benötigen, um Ihre Aufgaben einfacher und effizienter zu gestalten.
+Herzlichen Glückwunsch! Sie haben mithilfe von Aspose.Words für .NET erfolgreich ein SDT an ein benutzerdefiniertes XML-Teil gebunden. Mit dieser leistungsstarken Funktion können Sie dynamische Dokumente erstellen, die durch einfaches Ändern des XML-Inhalts problemlos mit neuen Daten aktualisiert werden können. Ob Sie Berichte erstellen, Vorlagen erstellen oder Dokument-Workflows automatisieren, Aspose.Words für .NET bietet die Tools, die Sie benötigen, um Ihre Aufgaben einfacher und effizienter zu gestalten.
 
 ## Häufig gestellte Fragen
 

@@ -1,27 +1,27 @@
 ---
-title: Uzyskaj pozycję stołu
-linktitle: Uzyskaj pozycję stołu
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak określić pozycję tabeli w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku.
+title: Uzyskaj pozycję w tabeli
+linktitle: Uzyskaj pozycję w tabeli
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak określić położenie tabeli w dokumentach programu Word za pomocą narzędzia Aspose.Words dla platformy .NET, korzystając z naszego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-tables/get-table-position/
 ---
 ## Wstęp
 
-Czy kiedykolwiek znalazłeś się w trudnej sytuacji, próbując ustalić dokładną pozycję tabeli w dokumencie programu Word? Niezależnie od tego, czy chcesz idealnie dopasować zawartość, czy po prostu z ciekawości, znajomość położenia stołu może być bardzo przydatna. Dzisiaj zagłębiamy się w to, jak uzyskać pozycję na stole za pomocą Aspose.Words dla .NET. Podzielimy to na krótkie kroki, więc nawet jeśli jesteś nowicjuszem, będziesz mógł śledzić dalej bez żadnych problemów. Gotowy, aby zostać kreatorem dokumentów programu Word? Zacznijmy!
+Czy kiedykolwiek znalazłeś się w tarapatach, próbując ustalić dokładną pozycję tabeli w dokumencie Word? Niezależnie od tego, czy chodzi o idealne wyrównanie treści, czy po prostu z ciekawości, znajomość pozycji tabeli może być bardzo przydatna. Dzisiaj zagłębimy się w to, jak uzyskać pozycję tabeli za pomocą Aspose.Words dla .NET. Podzielimy to na małe kroki, więc nawet jeśli jesteś nowicjuszem, będziesz w stanie nadążyć bez problemu. Gotowy, aby zostać czarodziejem dokumentów Word? Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz:
--  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję. Jeśli nie, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
-- Visual Studio: wystarczy każda wersja, ale zawsze zalecana jest najnowsza.
+Zanim przejdziemy do szczegółów, upewnijmy się, że masz wszystko, czego potrzebujesz:
+-  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję. Jeśli nie, możesz[pobierz tutaj](https://releases.aspose.com/words/net/).
+- Visual Studio: każda wersja jest dobra, ale zawsze zalecamy korzystanie z najnowszej.
 - .NET Framework: Upewnij się, że masz .NET Framework 4.0 lub nowszy.
-- Dokument programu Word: w tym samouczku użyjemy dokumentu o nazwie`Tables.docx`.
+- Dokument Word: W tym samouczku użyjemy dokumentu o nazwie`Tables.docx`.
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw. Przypomina to konfigurowanie zestawu narzędzi przed rozpoczęciem projektu.
+Po pierwsze, zaimportujmy niezbędne przestrzenie nazw. To jak skonfigurowanie skrzynki narzędziowej przed rozpoczęciem projektu.
 
 ```csharp
 using System;
@@ -31,7 +31,7 @@ using Aspose.Words.Tables;
 
 ## Krok 1: Załaduj swój dokument
 
-W porządku, załadujmy twój dokument Word. W tym miejscu wskażesz plik, z którym chcesz pracować.
+Dobrze, załadujmy dokument Word. Tutaj wskażesz plik, z którym chcesz pracować.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -41,9 +41,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Krok 2: Uzyskaj dostęp do pierwszego stołu
+## Krok 2: Uzyskaj dostęp do pierwszej tabeli
 
-Teraz zajmijmy się pierwszą tabelą w dokumencie. Pomyśl o tym jak o wyjęciu pierwszego kawałka cukierka ze słoika.
+Teraz zajmijmy się pierwszą tabelą w dokumencie. Wyobraźmy sobie, że wyławiamy pierwszy kawałek cukierka ze słoika.
 
 ```csharp
 // Uzyskaj dostęp do pierwszej tabeli w dokumencie
@@ -52,53 +52,53 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
 ## Krok 3: Sprawdź zawijanie tekstu w tabeli
 
-Tabele w programie Word można owijać wokół tekstu na różne sposoby. Zobaczmy jak zapakowany jest nasz stół.
+Tabele w Wordzie mogą być owijane wokół tekstu na różne sposoby. Zobaczmy, jak jest owijana nasza tabela.
 
 ```csharp
-// Sprawdź, czy zawijanie tekstu tabeli jest ustawione na „Wokół”
+// Sprawdź, czy zawijanie tekstu w tabeli jest ustawione na „Wokół”
 if (table.TextWrapping == TextWrapping.Around)
 {
-    // Jeśli jest zawinięty, uzyskaj względne wyrównanie w poziomie i pionie
+    // Jeśli zawinięte, uzyskaj względne wyrównania poziome i pionowe
     Console.WriteLine(table.RelativeHorizontalAlignment);
     Console.WriteLine(table.RelativeVerticalAlignment);
 }
 else
 {
-    // Jeśli nie jest owinięty, uzyskaj standardowe wyrównanie
+    // Jeżeli nie jest zawinięty, uzyskaj standardowe wyrównanie
     Console.WriteLine(table.Alignment);
 }
 ```
 
 ## Krok 4: Uruchom swój kod
 
-Po skonfigurowaniu wszystkiego czas uruchomić kod. Otwórz konsolę i zobacz, jak rozwija się magia! Otrzymasz albo względne wyrównanie, jeśli tabela jest zawinięta, albo standardowe wyrównanie, jeśli tak nie jest.
+Gdy wszystko jest już skonfigurowane, czas uruchomić kod. Otwórz konsolę i zobacz, jak dzieje się magia! Otrzymasz albo względne wyrównania, jeśli tabela jest zawinięta, albo standardowe wyrównanie, jeśli nie jest.
 
-## Krok 5: Przeanalizuj wyniki
+## Krok 5: Przeanalizuj wynik
 
-Po uruchomieniu kodu w konsoli zostaną wydrukowane szczegóły pozycji tabeli. Informacje te są bardzo przydatne przy dopasowywaniu treści lub debugowaniu problemów z układem.
+Po uruchomieniu kodu zobaczysz szczegóły pozycji tabeli wydrukowane w konsoli. Informacje te są bardzo przydatne do wyrównywania zawartości lub debugowania problemów z układem.
 
 ## Wniosek
 
-I masz to! Wykonując te proste kroki, nauczyłeś się określać położenie tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Niezależnie od tego, czy chodzi o idealne ustawienie, czy po prostu o zaspokojenie ciekawości, wiedza o tym, jak ustalić pozycję stołu, może być niezwykle przydatna. Eksperymentuj i odkrywaj więcej funkcji Aspose.Words, aby stać się prawdziwym mistrzem dokumentów Word!
+I masz to! Postępując zgodnie z tymi prostymi krokami, nauczyłeś się, jak określić pozycję tabeli w dokumencie Word za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy chodzi o idealne wyrównanie, czy po prostu o zaspokojenie ciekawości, wiedza o tym, jak uzyskać pozycję tabeli, może być niezwykle przydatna. Eksperymentuj i odkrywaj więcej funkcji Aspose.Words, aby stać się prawdziwym mistrzem dokumentów Word!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
+### Czym jest Aspose.Words dla .NET?
 
-Aspose.Words dla .NET to potężna biblioteka do przetwarzania dokumentów, która umożliwia programistom programowe tworzenie, modyfikowanie, konwertowanie i renderowanie dokumentów programu Word.
+Aspose.Words for .NET to zaawansowana biblioteka do przetwarzania dokumentów, która umożliwia programistom programistyczne tworzenie, modyfikowanie, konwertowanie i renderowanie dokumentów Word.
 
 ### Jak zainstalować Aspose.Words dla .NET?
 
- Możesz zainstalować Aspose.Words dla .NET za pośrednictwem Menedżera pakietów NuGet w Visual Studio lub[pobierz go bezpośrednio](https://releases.aspose.com/words/net/).
+ Możesz zainstalować Aspose.Words dla .NET za pomocą Menedżera pakietów NuGet w programie Visual Studio lub[pobierz bezpośrednio](https://releases.aspose.com/words/net/).
 
-### Czy mogę uzyskać pozycję wielu tabel?
+### Czy mogę uzyskać informacje o położeniu wielu tabel?
 
-Tak, możesz przeglądać wszystkie tabele w dokumencie i poznać ich pozycje, stosując podobne podejście.
+Tak, możesz przejść przez wszystkie tabele w dokumencie i uzyskać ich pozycje, stosując podobne podejście.
 
-### Co się stanie, jeśli mój stół znajduje się w strukturze zagnieżdżonej?
+### A co jeśli moja tabela znajduje się wewnątrz zagnieżdżonej struktury?
 
-Aby uzyskać dostęp do zagnieżdżonych tabel, konieczne będzie nawigowanie po drzewie węzłów dokumentu.
+Aby uzyskać dostęp do zagnieżdżonych tabel, należy przejść przez drzewo węzłów dokumentu.
 
-### Czy dostępna jest wersja próbna?
+### Czy jest dostępna wersja próbna?
 
- Tak, możesz dostać[bezpłatna wersja próbna](https://releases.aspose.com/) lub[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) aby wypróbować Aspose.Words dla .NET.
+ Tak, możesz dostać[bezpłatny okres próbny](https://releases.aspose.com/) lub[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) aby wypróbować Aspose.Words dla .NET.

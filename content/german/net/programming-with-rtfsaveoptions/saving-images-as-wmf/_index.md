@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Okay, jetzt kommen wir zum spaßigen Teil. Lassen Sie uns den Prozess in leicht verständliche Schritte unterteilen.
+Okay, jetzt kommen wir zum spaßigen Teil. Lassen Sie uns den Prozess in leicht verständliche Schritte aufteilen.
 
 ## Schritt 1: Laden Sie Ihr Dokument
 
@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Erklärung: In diesem Schritt geben wir das Verzeichnis an, in dem sich Ihr Dokument befindet. Anschließend laden wir das Dokument mit dem`Document` Klasse bereitgestellt von Aspose.Words. Kinderleicht, oder?
+ Erläuterung: In diesem Schritt geben wir das Verzeichnis an, in dem sich Ihr Dokument befindet. Anschließend laden wir das Dokument mit dem`Document` Klasse bereitgestellt von Aspose.Words. Kinderleicht, oder?
 
 ## Schritt 2: Speicheroptionen konfigurieren
 

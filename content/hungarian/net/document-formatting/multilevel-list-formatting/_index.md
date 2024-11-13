@@ -50,7 +50,7 @@ builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 ```
 
- Ezekben a sorokban,`ApplyNumberDefault` elindítja a számozott listát, és`Writeln` elemeket ad hozzá a listához.
+ Ezekben a sorokban`ApplyNumberDefault` elindítja a számozott listát, és`Writeln` elemeket ad hozzá a listához.
 
 ## 3. lépés: Behúzás az alszintekhez
 
@@ -125,7 +125,7 @@ Ezzel elmenti a gyönyörűen formázott dokumentumot többszintű listákkal.
  Igen, a számozást a gombbal folytathatja`ListFormat.List` tulajdonság egy meglévő listára való hivatkozáshoz.
 
 ### Hogyan változtathatom meg dinamikusan a behúzás szintjét?
- A használatával dinamikusan módosíthatja a behúzási szintet`ListIndent`és`ListOutdent` módszereket szükség szerint.
+ A használatával dinamikusan módosíthatja a behúzási szintet`ListIndent` és`ListOutdent` módszereket szükség szerint.
 
 ### Létrehozhatok többszintű listákat más dokumentumformátumokban, például PDF-ben?
 Igen, az Aspose.Words támogatja a dokumentumok mentését különféle formátumokban, beleértve a PDF-formátumot is, fenntartva a formázást.

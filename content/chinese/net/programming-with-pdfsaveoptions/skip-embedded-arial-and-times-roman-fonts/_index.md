@@ -9,7 +9,7 @@ url: /zh/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman
 ---
 ## 介绍
 
-您是否遇到过 PDF 文件过大的情况？这就像打包行李准备度假，却发现行李箱已经快要塞满。您知道自己需要减轻一些负担，但要放弃什么呢？处理 PDF 文件时，尤其是从 Word 文档转换而来的 PDF 文件，嵌入的字体会使文件体积膨胀。幸运的是，Aspose.Words for .NET 提供了一个精简的解决方案，让您的 PDF 文件保持精简。在本教程中，我们将深入探讨如何通过跳过嵌入的 Arial 和 Times Roman 字体来优化 PDF 大小。让我们开始吧！
+您是否遇到过 PDF 文件过大的情况？这就像打包行李准备度假，却发现行李箱已经快要塞满。您知道自己需要减轻一些负担，但要放弃什么呢？处理 PDF 文件时，尤其是从 Word 文档转换而来的 PDF 文件时，嵌入的字体会使文件大小膨胀。幸运的是，Aspose.Words for .NET 提供了一个精简的解决方案，让您的 PDF 保持精简。在本教程中，我们将深入探讨如何通过跳过嵌入的 Arial 和 Times Roman 字体来优化 PDF 大小。让我们开始吧！
 
 ## 先决条件
 

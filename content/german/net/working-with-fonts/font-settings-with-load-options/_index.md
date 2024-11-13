@@ -75,7 +75,7 @@ Dies ist der Moment der Wahrheit, in dem Ihr Programm das Dokument endlich mit a
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben die Schriftarteinstellungen mit Ladeoptionen mithilfe von Aspose.Words für .NET erfolgreich konfiguriert. Dies mag wie ein kleines Detail erscheinen, aber die richtigen Schriftarten können einen großen Unterschied in der Lesbarkeit und Professionalität Ihrer Dokumente ausmachen. Außerdem haben Sie jetzt ein weiteres leistungsstarkes Tool in Ihrem Entwickler-Toolkit. Probieren Sie es also aus und sehen Sie, welchen Unterschied es in Ihren Word-Dokumenten macht.
+Und da haben Sie es! Sie haben die Schrifteinstellungen mit Ladeoptionen mithilfe von Aspose.Words für .NET erfolgreich konfiguriert. Dies mag wie ein kleines Detail erscheinen, aber die richtigen Schriftarten können einen großen Unterschied in der Lesbarkeit und Professionalität Ihrer Dokumente ausmachen. Außerdem haben Sie jetzt ein weiteres leistungsstarkes Tool in Ihrem Entwickler-Toolkit. Probieren Sie es also aus und sehen Sie, welchen Unterschied es in Ihren Word-Dokumenten macht.
 
 ## Häufig gestellte Fragen
 

@@ -2,25 +2,25 @@
 title: İçerik Kontrol Rengini Ayarla
 linktitle: İçerik Kontrol Rengini Ayarla
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak Word'deki Yapılandırılmış Belge Etiketlerinin rengini kolayca ayarlayın. Bu basit kılavuzla belge görünümünü geliştirmek için SDT'lerinizi özelleştirin.
+description: Aspose.Words for .NET kullanarak Word'deki Yapılandırılmış Belge Etiketlerinin rengini kolayca ayarlayın. Bu basit kılavuzla belge görünümünü geliştirmek için SDT'lerinizi özelleştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/set-content-control-color/
 ---
 ## giriiş
 
-Word belgeleriyle çalışıyorsanız ve Yapılandırılmış Belge Etiketlerinin (SDT'ler) görünümünü özelleştirmeniz gerekiyorsa bunların rengini değiştirmek isteyebilirsiniz. Bu, özellikle öğelerin görsel olarak farklılaştırılmasının önemli olduğu formlar veya şablonlarla çalışırken kullanışlıdır. Bu kılavuzda Aspose.Words for .NET kullanarak bir SDT'nin rengini ayarlama sürecini anlatacağız.
+Word belgeleriyle çalışıyorsanız ve Yapılandırılmış Belge Etiketlerinin (SDT'ler) görünümünü özelleştirmeniz gerekiyorsa, renklerini değiştirmek isteyebilirsiniz. Bu, özellikle öğelerin görsel farklılaştırılmasının önemli olduğu formlar veya şablonlarla uğraşırken faydalıdır. Bu kılavuzda, .NET için Aspose.Words kullanarak bir SDT'nin rengini ayarlama sürecini ele alacağız.
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
--  Aspose.Words for .NET: Bu kütüphanenin kurulu olması gerekmektedir. Şuradan indirebilirsiniz[Aspose'un web sitesi](https://releases.aspose.com/words/net/).
-- Temel C# anlayışı: Bu eğitimde temel C# programlama kavramlarına aşina olduğunuz varsayılmaktadır.
+-  Aspose.Words for .NET: Bu kütüphanenin kurulu olması gerekir. Buradan indirebilirsiniz[Aspose'un web sitesi](https://releases.aspose.com/words/net/).
+- C# hakkında temel bilgi: Bu eğitimde temel C# programlama kavramlarına aşina olduğunuz varsayılmaktadır.
 - Bir Word belgesi: En az bir Yapılandırılmış Belge Etiketi içeren bir Word belgeniz olmalıdır.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle C# projenize gerekli ad alanlarını içe aktarmanız gerekir. Kod dosyanızın en üstüne aşağıdaki kullanma yönergelerini ekleyin:
+Öncelikle, C# projenize gerekli ad alanlarını içe aktarmanız gerekir. Aşağıdaki using yönergelerini kod dosyanızın en üstüne ekleyin:
 
 ```csharp
 using Aspose.Words;
@@ -28,26 +28,26 @@ using Aspose.Words.Fields;
 using System.Drawing;
 ```
 
-## 1. Adım: Belge Yolunuzu Ayarlayın
+## Adım 1: Belge Yolunuzu Ayarlayın
 
-Belge dizininizin yolunu belirtin ve belgeyi yükleyin:
+Belge dizininize giden yolu belirtin ve belgeyi yükleyin:
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Belgeyi Yükleyin
 
- Bir oluştur`Document` Word dosyanızı yükleyerek nesne:
+ Bir tane oluştur`Document` Word dosyanızı yükleyerek nesneyi bulun:
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 ```
 
-## 3. Adım: Yapılandırılmış Belge Etiketine Erişin
+## Adım 3: Yapılandırılmış Belge Etiketine Erişim
 
-Belgeden Yapılandırılmış Belge Etiketini (SDT) alın. Bu örnekte ilk SDT'ye erişiyoruz:
+Yapılandırılmış Belge Etiketini (SDT) belgeden alın. Bu örnekte, ilk SDT'ye erişiyoruz:
 
 ```csharp
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
@@ -55,7 +55,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 
 ## Adım 4: SDT Rengini Ayarlayın
 
-SDT'nin renk özelliğini değiştirin. Burada rengi kırmızı olarak ayarladık:
+SDT'nin renk özelliğini değiştirin. Burada rengi kırmızıya ayarlıyoruz:
 
 ```csharp
 sdt.Color = Color.Red;
@@ -71,26 +71,26 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlColor.docx");
 
 ## Çözüm
 
-Aspose.Words for .NET kullanarak bir Word belgesindeki Yapılandırılmış Belge Etiketinin rengini değiştirmek çok kolaydır. Yukarıda özetlenen adımları izleyerek SDT'lerinize kolayca görsel değişiklikler uygulayabilir, belgelerinizin görünümünü ve işlevselliğini geliştirebilirsiniz.
+Aspose.Words for .NET kullanarak bir Word belgesindeki Yapılandırılmış Belge Etiketinin rengini değiştirmek basittir. Yukarıda belirtilen adımları izleyerek, SDT'lerinize görsel değişiklikleri kolayca uygulayabilir, belgelerinizin görünümünü ve işlevselliğini geliştirebilirsiniz.
 
-## SSS'ler
+## SSS
 
-### SDT'ler için farklı renkler kullanabilir miyim?
+### SDT'lerde farklı renkler kullanabilir miyim?
 
- Evet mevcut olan herhangi bir rengi kullanabilirsiniz.`System.Drawing.Color` sınıf. Örneğin, kullanabilirsiniz`Color.Blue`, `Color.Green`, vesaire.
+ Evet, mevcut herhangi bir rengi kullanabilirsiniz.`System.Drawing.Color` sınıf. Örneğin, şunu kullanabilirsiniz`Color.Blue`, `Color.Green`, vesaire.
 
-### Bir belgedeki birden çok SDT'nin rengini nasıl değiştiririm?
+### Bir belgedeki birden fazla SDT'nin rengini nasıl değiştiririm?
 
-Belgedeki tüm SDT'ler arasında geçiş yapmanız ve renk değişikliğini her birine uygulamanız gerekir. Bunu, tüm SDT'ler boyunca yinelenen bir döngü kullanarak başarabilirsiniz.
+Belgedeki tüm SDT'ler arasında döngü oluşturmanız ve her birine renk değişikliğini uygulamanız gerekir. Bunu, tüm SDT'ler arasında yineleme yapan bir döngü kullanarak başarabilirsiniz.
 
-### SDT'lerin renk dışında diğer özelliklerini ayarlamak mümkün müdür?
+### SDT'lerin renk dışındaki diğer özelliklerini ayırt etmek mümkün müdür?
 
- Evet,`StructuredDocumentTag` sınıfında yazı tipi boyutu, yazı tipi stili ve daha fazlası dahil olmak üzere ayarlayabileceğiniz çeşitli özellikler bulunur. Daha fazla ayrıntı için Aspose.Words belgelerine bakın.
+ Evet,`StructuredDocumentTag` sınıfının yazı tipi boyutu, yazı tipi stili ve daha fazlası dahil olmak üzere ayarlayabileceğiniz çeşitli özellikleri vardır. Daha fazla ayrıntı için Aspose.Words belgelerine bakın.
 
-### Tıklama etkinlikleri gibi SDT'lere etkinlikler ekleyebilir miyim?
+### SDT'lere tıklama etkinlikleri gibi etkinlikler ekleyebilir miyim?
 
-Aspose.Words, SDT'ler için olay işlemeyi doğrudan desteklemez. Ancak SDT etkileşimlerini form alanları aracılığıyla yönetebilir veya kullanıcı girişlerini ve etkileşimlerini yönetmek için başka yöntemler kullanabilirsiniz.
+Aspose.Words, SDT'ler için doğrudan olay işlemeyi desteklemez. Ancak, form alanları aracılığıyla SDT etkileşimlerini yönetebilir veya kullanıcı girdilerini ve etkileşimlerini işlemek için diğer yöntemleri kullanabilirsiniz.
 
-### Bir SDT'yi belgeden kaldırmak mümkün mü?
+### Bir SDT'yi belgeden kaldırmak mümkün müdür?
 
- Evet, SDT'yi arayarak kaldırabilirsiniz.`Remove()` SDT'nin üst düğümündeki yöntem.
+ Evet, bir SDT'yi şu numarayı arayarak kaldırabilirsiniz:`Remove()` SDT'nin ana düğümündeki yöntem.

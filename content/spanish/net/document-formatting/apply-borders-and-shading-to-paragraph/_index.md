@@ -1,28 +1,28 @@
 ---
-title: Aplicar bordes y sombreado al párrafo en un documento de Word
-linktitle: Aplicar bordes y sombreado al párrafo en un documento de Word
+title: Cómo aplicar bordes y sombreado a un párrafo en un documento de Word
+linktitle: Cómo aplicar bordes y sombreado a un párrafo en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aplique bordes y sombreado a párrafos en documentos de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para mejorar el formato de su documento.
+description: Aplique bordes y sombreado a los párrafos de documentos de Word con Aspose.Words para .NET. Siga nuestra guía paso a paso para mejorar el formato de sus documentos.
 type: docs
 weight: 10
 url: /es/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 ## Introducción
 
-Hola, ¿alguna vez te has preguntado cómo hacer que tus documentos de Word destaquen con bordes y sombreados elegantes? Bueno, ¡estás en el lugar correcto! Hoy nos sumergimos en el mundo de Aspose.Words para .NET para darle vida a nuestros párrafos. Imagine que su documento luzca tan elegante como el trabajo de un diseñador profesional con sólo unas pocas líneas de código. ¿Listo para empezar? ¡Vamos!
+Hola, ¿alguna vez te preguntaste cómo hacer que tus documentos de Word destaquen con bordes y sombreados elegantes? ¡Pues estás en el lugar correcto! Hoy, nos sumergiremos en el mundo de Aspose.Words para .NET para darle vida a nuestros párrafos. Imagina que tu documento se ve tan elegante como el trabajo de un diseñador profesional con solo unas pocas líneas de código. ¿Listo para comenzar? ¡Vamos allá!
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de arremangarnos y sumergirnos en la codificación, asegurémonos de tener todo lo que necesitamos. Aquí está su lista de verificación rápida:
+Antes de ponernos manos a la obra y empezar a programar, asegurémonos de que tenemos todo lo que necesitamos. Aquí tienes una lista de verificación rápida:
 
--  Aspose.Words para .NET: Es necesario tener instalada esta biblioteca. Puedes descargarlo desde el[Aspose sitio web](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: Necesita tener instalada esta biblioteca. Puede descargarla desde el sitio web[Sitio web de Aspose](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: Visual Studio o cualquier otro IDE que admita .NET.
 - Conocimientos básicos de C#: lo suficiente para comprender y modificar los fragmentos de código.
-- Una licencia válida: ya sea una[licencia temporal](https://purchase.aspose.com/temporary-license/) o uno comprado en[asponer](https://purchase.aspose.com/buy).
+- Una licencia válida: ya sea una[licencia temporal](https://purchase.aspose.com/temporary-license/) o uno comprado en[Supongamos](https://purchase.aspose.com/buy).
 
 ## Importar espacios de nombres
 
-Antes de saltar al código, debemos asegurarnos de tener los espacios de nombres necesarios importados a nuestro proyecto. Esto hace que todas las funciones interesantes de Aspose.Words sean accesibles para nosotros.
+Antes de comenzar con el código, debemos asegurarnos de que tengamos los espacios de nombres necesarios importados en nuestro proyecto. Esto hace que todas las características interesantes de Aspose.Words estén disponibles para nosotros.
 
 ```csharp
 using Aspose.Words;
@@ -31,20 +31,20 @@ using Aspose.Words.Drawing;
 using System.Drawing;
 ```
 
-Ahora, dividamos el proceso en pasos breves. Cada paso tendrá un título y una explicación detallada. ¿Listo? ¡Vamos!
+Ahora, vamos a dividir el proceso en pequeños pasos. Cada paso tendrá un encabezado y una explicación detallada. ¿Listo? ¡Vamos!
 
-## Paso 1: configure su directorio de documentos
+## Paso 1: Configurar el directorio de documentos
 
-Lo primero es lo primero, necesitamos un lugar para guardar nuestro documento bellamente formateado. Establezcamos la ruta a su directorio de documentos.
+Lo primero es lo primero: necesitamos un lugar donde guardar nuestro documento con un bonito formato. Establezcamos la ruta al directorio del documento.
 
 ```csharp
 // La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Este directorio es donde se guardará su documento final. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real en su máquina.
+ Este directorio es donde se guardará el documento final. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta actual en su máquina.
 
-## Paso 2: cree un nuevo documento y DocumentBuilder
+## Paso 2: Crear un nuevo documento y DocumentBuilder
 
  A continuación, necesitamos crear un nuevo documento y un`DocumentBuilder` objeto. El`DocumentBuilder` es nuestra varita mágica que nos permite manipular el documento.
 
@@ -53,9 +53,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- El`Document` objeto representa todo nuestro documento de Word, y el`DocumentBuilder` nos ayuda a agregar y formatear contenido.
+El`Document` El objeto representa todo nuestro documento de Word y el`DocumentBuilder` Nos ayuda a agregar y formatear contenido.
 
-## Paso 3: definir los bordes de los párrafos
+## Paso 3: Definir los bordes del párrafo
 
 Ahora, agreguemos algunos bordes elegantes a nuestro párrafo. Definiremos la distancia desde el texto y estableceremos diferentes estilos de borde.
 
@@ -68,11 +68,11 @@ borders[BorderType.Top].LineStyle = LineStyle.Double;
 borders[BorderType.Bottom].LineStyle = LineStyle.Double;
 ```
 
-Aquí establecemos una distancia de 20 puntos entre el texto y los bordes. Los bordes de todos los lados (izquierdo, derecho, superior, inferior) están configurados como líneas dobles. Fantasía, ¿verdad?
+Aquí, establecemos una distancia de 20 puntos entre el texto y los bordes. Los bordes de todos los lados (izquierdo, derecho, superior, inferior) están configurados con líneas dobles. Elegante, ¿verdad?
 
-## Paso 4: aplicar sombreado al párrafo
+## Paso 4: Aplicar sombreado al párrafo
 
-Los bordes son geniales, pero vayamos un paso más allá con un poco de sombreado. Usaremos un patrón de cruz diagonal con una combinación de colores para que nuestro párrafo se destaque.
+Los bordes son geniales, pero vamos a mejorarlos con un poco de sombreado. Usaremos un patrón de cruz diagonal con una combinación de colores para que nuestro párrafo se destaque.
 
 ```csharp
 Shading shading = builder.ParagraphFormat.Shading;
@@ -81,9 +81,9 @@ shading.BackgroundPatternColor = System.Drawing.Color.LightCoral;
 shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 ```
 
-En este paso, aplicamos una textura cruzada diagonal con coral claro como color de fondo y salmón claro como color de primer plano. ¡Es como vestir tu párrafo con ropa de diseñador!
+En este paso, aplicamos una textura cruzada en diagonal con coral claro como color de fondo y salmón claro como color de primer plano. ¡Es como vestir tu párrafo con ropa de diseñador!
 
-## Paso 5: agregue texto al párrafo
+## Paso 5: Agregar texto al párrafo
 
 ¿Qué es un párrafo sin texto? Agreguemos una oración de muestra para ver nuestro formato en acción.
 
@@ -91,35 +91,35 @@ En este paso, aplicamos una textura cruzada diagonal con coral claro como color 
 builder.Write("I'm a formatted paragraph with double border and nice shading.");
 ```
 
-Esta línea inserta nuestro texto en el documento. Simple, pero ahora está envuelto en un marco elegante y un fondo sombreado.
+Esta línea inserta nuestro texto en el documento. Es simple, pero ahora está envuelto en un marco elegante y un fondo sombreado.
 
-## Paso 6: guarde el documento
+## Paso 6: Guardar el documento
 
-Finalmente, es hora de salvar nuestro trabajo. Guardemos el documento en el directorio especificado con un nombre descriptivo.
+Por último, es hora de guardar nuestro trabajo. Guardemos el documento en el directorio especificado con un nombre descriptivo.
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ```
 
- Esto guarda nuestro documento con el nombre.`DocumentFormatting.ApplyBordersAndShadingToParagraph.doc` en el directorio que especificamos anteriormente.
+ Esto guarda nuestro documento con el nombre`DocumentFormatting.ApplyBordersAndShadingToParagraph.doc` en el directorio que especificamos anteriormente.
 
 ## Conclusión
 
-¡Y ahí lo tienes! Con solo unas pocas líneas de código, hemos transformado un párrafo simple en un contenido visualmente atractivo. Aspose.Words para .NET hace que sea increíblemente fácil agregar formato de aspecto profesional a sus documentos. Ya sea que estés preparando un informe, una carta o cualquier documento, estos trucos te ayudarán a causar una gran impresión. ¡Así que adelante, pruébalo y observa cómo tus documentos cobran vida!
+¡Y ya está! Con solo unas pocas líneas de código, hemos transformado un párrafo simple en un contenido visualmente atractivo. Aspose.Words para .NET hace que sea increíblemente fácil agregar formato de aspecto profesional a sus documentos. Ya sea que esté preparando un informe, una carta o cualquier documento, estos trucos lo ayudarán a causar una excelente impresión. ¡Así que adelante, pruébelo y observe cómo sus documentos cobran vida!
 
 ## Preguntas frecuentes
 
-### ¿Puedo usar diferentes estilos de línea para cada borde?  
- ¡Absolutamente! Aspose.Words para .NET le permite personalizar cada borde individualmente. Simplemente configura el`LineStyle` para cada tipo de borde como se muestra en la guía.
+### ¿Puedo utilizar diferentes estilos de línea para cada borde?  
+ ¡Por supuesto! Aspose.Words para .NET te permite personalizar cada borde individualmente. Solo tienes que configurar el`LineStyle` para cada tipo de borde como se muestra en la guía.
 
 ### ¿Qué otras texturas de sombreado están disponibles?  
- Hay varias texturas que puede utilizar, como sólida, raya horizontal, raya vertical y más. Compruebe el[Asponer documentación](https://reference.aspose.com/words/net/) para obtener una lista completa.
+ Hay varias texturas que puedes usar, como texturas sólidas, rayas horizontales, rayas verticales y más. Consulta la[Documentación de Aspose](https://reference.aspose.com/words/net/) para una lista completa.
 
 ### ¿Cómo puedo cambiar el color del borde?  
- Puede establecer el color del borde usando el`Color` propiedad para cada frontera. Por ejemplo,`borders[BorderType.Left].Color = Color.Red;`.
+ Puede configurar el color del borde utilizando el`Color` propiedad para cada borde. Por ejemplo,`borders[BorderType.Left].Color = Color.Red;`.
 
 ### ¿Es posible aplicar bordes y sombreado a una parte específica del texto?  
- Sí, puedes aplicar bordes y sombreado a tiradas de texto específicas usando el`Run` objeto dentro del`DocumentBuilder`.
+ Sí, puedes aplicar bordes y sombreado a líneas de texto específicas usando el`Run` objeto dentro de la`DocumentBuilder`.
 
 ### ¿Puedo automatizar este proceso para varios párrafos?  
-¡Definitivamente! Puede recorrer sus párrafos y aplicar los mismos bordes y configuraciones de sombreado mediante programación.
+¡Por supuesto! Puedes recorrer los párrafos en bucle y aplicar los mismos bordes y configuraciones de sombreado mediante programación.

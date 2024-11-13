@@ -101,7 +101,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 
 ## 结论
 
-恭喜，您已经完成了！🎉 通过学习本教程，您已经学会了如何使用 Aspose.Words for .NET 在 Word 文档中插入水平线。此技能对于创建专业且结构良好的文档非常有用。请记住，掌握任何新工具的关键是实践，因此不要犹豫，尝试使用 Aspose.Words 中的不同元素和设置。
+恭喜，您已经完成了！🎉通过本教程，您学会了如何使用 Aspose.Words for .NET 在 Word 文档中插入水平线。此技能对于创建专业且结构良好的文档非常有用。请记住，掌握任何新工具的关键是实践，因此不要犹豫，尝试使用 Aspose.Words 中的不同元素和设置。
 
 如需了解更多信息，您可以随时查看[Aspose.Words 文档](https://reference.aspose.com/words/net/)祝您编码愉快！
 

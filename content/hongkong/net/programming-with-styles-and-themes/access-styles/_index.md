@@ -72,7 +72,7 @@ foreach (Style style in styles)
 
 以下是這段程式碼的作用的細分：
 
-- 初始化`styleName`：我們從一個空字串開始來建立樣式名稱列表。
+- 初始化`styleName`：我們從一個空字串開始建立樣式名稱列表。
 - 循環瀏覽樣式：`foreach`循環遍歷每個`Style`在`styles`收藏。
 - 更新與顯示`styleName`：對於每種樣式，我們將其名稱附加到`styleName`並列印出來。
 
@@ -114,5 +114,5 @@ Aspose.Words for .NET 是一個函式庫，可讓您在 .NET 應用程式中以�
 ### 如何過濾樣式以僅顯示特定類型？
 您可以透過檢查屬性來過濾樣式，例如`IsBuiltin`或使用基於樣式屬性的自訂邏輯。
 
-### 在哪裡可以找到更多有關 Aspose.Words for .NET 的資源？
+### 在哪裡可以找到更多關於 Aspose.Words for .NET 的資源？
 您可以探索更多[這裡](https://reference.aspose.com/words/net/).

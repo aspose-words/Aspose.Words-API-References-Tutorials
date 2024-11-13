@@ -2,7 +2,7 @@
 title: Java के लिए Aspose.Words में कस्टम बारकोड लेबल बनाना
 linktitle: कस्टम बारकोड लेबल बनाना
 second_title: Aspose.Words जावा दस्तावेज़ प्रसंस्करण एपीआई
-description: Aspose.Words for Java में कस्टम बारकोड लेबल जेनरेट करें। इस चरण-दर-चरण मार्गदर्शिका में Aspose.Words for Java का उपयोग करके वैयक्तिकृत बारकोड समाधान बनाने का तरीका जानें।
+description: Aspose.Words for Java में कस्टम बारकोड लेबल जेनरेट करें। इस चरण-दर-चरण मार्गदर्शिका में Aspose.Words for Java का उपयोग करके वैयक्तिकृत बारकोड समाधान बनाना सीखें।
 type: docs
 weight: 10
 url: /hi/java/document-conversion-and-export/generating-custom-barcode-labels/
@@ -24,7 +24,7 @@ url: /hi/java/document-conversion-and-export/generating-custom-barcode-labels/
 
 ## कस्टम बारकोड लेबल बनाना
 
-अब, आइए Aspose.Words for Java का उपयोग करके कस्टम बारकोड लेबल बनाना शुरू करें। हम इस प्रक्रिया को चरणों में विभाजित करेंगे और प्रत्येक चरण के लिए Java कोड स्निपेट प्रदान करेंगे।
+अब, आइए Java के लिए Aspose.Words का उपयोग करके कस्टम बारकोड लेबल बनाना शुरू करें। हम इस प्रक्रिया को चरणों में विभाजित करेंगे और प्रत्येक चरण के लिए Java कोड स्निपेट प्रदान करेंगे।
 
 ## बारकोड की ऊंचाई निर्धारित करना
 
@@ -81,7 +81,7 @@ private static float convertScalingFactor(String scalingFactor) throws Exception
 
 ## GetBarCodeImage() विधि का कार्यान्वयन
 
- इस चरण में, हम निम्नलिखित को क्रियान्वित करेंगे`getBarcodeImage` विधि, जो दिए गए मापदंडों के आधार पर बारकोड छवि उत्पन्न करती है। हम विभिन्न बारकोड प्रकारों को संभालेंगे, रंग सेट करेंगे, आयाम समायोजित करेंगे, और बहुत कुछ करेंगे। यहाँ इस विधि का कोड है:
+ इस चरण में, हम निम्नलिखित को क्रियान्वित करेंगे`getBarcodeImage`विधि, जो दिए गए मापदंडों के आधार पर बारकोड छवि उत्पन्न करती है। हम विभिन्न बारकोड प्रकारों को संभालेंगे, रंग सेट करेंगे, आयाम समायोजित करेंगे, और बहुत कुछ करेंगे। यहाँ इस विधि का कोड है:
 
 ```java
 /// <सारांश>
@@ -121,7 +121,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
 	}
 	
-	//कोड टेक्स्ट स्थान अनुकूलित करें
+	// कोड टेक्स्ट स्थान अनुकूलित करें
 	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
 	if (parameters.getDisplayText())
 		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
@@ -160,7 +160,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 
 ## GetOldBarcodeImage() विधि का कार्यान्वयन
 
- इस चरण में, हम निम्नलिखित को क्रियान्वित करेंगे`getOldBarcodeImage` विधि, जो पुराने जमाने के बारकोड के लिए बारकोड छवियाँ उत्पन्न करती है। यहाँ, हम एक विशिष्ट बारकोड प्रकार, जैसे कि POSTNET को संभालेंगे। इस विधि के लिए कोड यहाँ दिया गया है:
+ इस चरण में, हम निम्नलिखित को क्रियान्वित करेंगे`getOldBarcodeImage`विधि, जो पुराने जमाने के बारकोड के लिए बारकोड छवियाँ उत्पन्न करती है। यहाँ, हम एक विशिष्ट बारकोड प्रकार, जैसे कि POSTNET को संभालेंगे। इस विधि के लिए कोड यहाँ दिया गया है:
 
 ```java
 /// <सारांश>
@@ -176,14 +176,14 @@ public BufferedImage getOldBarcodeImage(BarcodeParameters parameters)
 	{
 		generator.setCodeText(parameters.getPostalAddress());
 	}
-	// पुराने ज़माने के बारकोड के लिए हार्डकोड प्रकार
+	// पुराने जमाने के बारकोड के लिए हार्डकोड प्रकार
 	return generator.generateBarCodeImage();
 }
 ```
 
 ## निष्कर्ष
 
-इस लेख में, हमने Aspose.Words for Java का उपयोग करके कस्टम बारकोड लेबल बनाने की प्रक्रिया का पता लगाया है। हमने बारकोड की ऊँचाई निर्धारित करने से लेकर बारकोड बनाने के तरीकों को लागू करने तक के आवश्यक चरणों को कवर किया है। Aspose.Words for Java डेवलपर्स को गतिशील और अनुकूलित बारकोड लेबल बनाने में सक्षम बनाता है, जिससे यह विभिन्न उद्योगों के लिए एक मूल्यवान उपकरण बन जाता है।
+इस लेख में, हमने जावा के लिए Aspose.Words का उपयोग करके कस्टम बारकोड लेबल बनाने की प्रक्रिया का पता लगाया है। हमने बारकोड की ऊँचाई निर्धारित करने से लेकर बारकोड बनाने के तरीकों को लागू करने तक के आवश्यक चरणों को कवर किया है। जावा के लिए Aspose.Words डेवलपर्स को गतिशील और अनुकूलित बारकोड लेबल बनाने में सक्षम बनाता है, जिससे यह विभिन्न उद्योगों के लिए एक मूल्यवान उपकरण बन जाता है।
 
 ## अक्सर पूछे जाने वाले प्रश्न
 

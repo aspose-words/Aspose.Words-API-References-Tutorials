@@ -1,7 +1,7 @@
 ---
-title: حفظ المستندات بتنسيق OOXML في Aspose.Words لـ Java
-linktitle: حفظ المستندات بتنسيق OOXML
-second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
+title: حفظ المستندات بصيغة OOXML في Aspose.Words لـ Java
+linktitle: حفظ المستندات بصيغة OOXML
+second_title: واجهة برمجة تطبيقات معالجة المستندات في Java Aspose.Words
 description: تعرف على كيفية حفظ المستندات بتنسيق OOXML باستخدام Aspose.Words for Java. قم بتأمين ملفاتك وتحسينها وتخصيصها بسهولة.
 type: docs
 weight: 20
@@ -10,34 +10,34 @@ url: /ar/java/document-loading-and-saving/saving-documents-as-ooxml-format/
 
 ## مقدمة لحفظ المستندات بتنسيق OOXML في Aspose.Words لـ Java
 
-في هذا الدليل، سنستكشف كيفية حفظ المستندات بتنسيق OOXML باستخدام Aspose.Words for Java. OOXML (Office Open XML) هو تنسيق ملف يستخدمه Microsoft Word والتطبيقات المكتبية الأخرى. سنغطي الخيارات والإعدادات المتنوعة لحفظ المستندات بتنسيق OOXML.
+في هذا الدليل، سنستكشف كيفية حفظ المستندات بتنسيق OOXML باستخدام Aspose.Words for Java. OOXML (Office Open XML) هو تنسيق ملف يستخدمه Microsoft Word وتطبيقات Office الأخرى. سنغطي خيارات وإعدادات مختلفة لحفظ المستندات بتنسيق OOXML.
 
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من إعداد مكتبة Aspose.Words for Java في مشروعك.
 
-## حفظ مستند بتشفير كلمة المرور
+## حفظ مستند باستخدام تشفير كلمة المرور
 
-يمكنك تشفير المستند الخاص بك بكلمة مرور أثناء حفظه بتنسيق OOXML. وإليك كيف يمكنك القيام بذلك:
+يمكنك تشفير مستندك بكلمة مرور أثناء حفظه بتنسيق OOXML. إليك كيفية القيام بذلك:
 
 ```java
 import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 
-// قم بتحميل المستند
+// تحميل المستند
 Document doc = new Document("Document.docx");
 
-// قم بإنشاء OoxmlSaveOptions وقم بتعيين كلمة المرور
+// إنشاء OoxmlSaveOptions وتعيين كلمة المرور
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setPassword("password");
 
-// احفظ المستند بالتشفير
+// حفظ المستند بالتشفير
 doc.save("EncryptedDoc.docx", saveOptions);
 ```
 
-## ضبط الامتثال لـ OOXML
+## إعداد التوافق مع OOXML
 
-يمكنك تحديد مستوى توافق OOXML عند حفظ المستند. على سبيل المثال، يمكنك ضبطه على ISO 29500:2008 (صارم). وإليك الطريقة:
+يمكنك تحديد مستوى توافق OOXML عند حفظ المستند. على سبيل المثال، يمكنك تعيينه على ISO 29500:2008 (صارم). وإليك الطريقة:
 
 ```java
 import com.aspose.words.Document;
@@ -45,21 +45,21 @@ import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.MsWordVersion;
 import com.aspose.words.OoxmlCompliance;
 
-// قم بتحميل المستند
+// تحميل المستند
 Document doc = new Document("Document.docx");
 
-// الأمثل لبرنامج Word 2016
+// تحسين Word 2016
 doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2016);
 
-// قم بإنشاء OoxmlSaveOptions وقم بتعيين مستوى الامتثال
+// إنشاء OoxmlSaveOptions وتعيين مستوى الامتثال
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_STRICT);
 
-// احفظ المستند مع إعداد الامتثال
+// حفظ المستند بإعدادات التوافق
 doc.save("ComplianceDoc.docx", saveOptions);
 ```
 
-## تحديث خاصية آخر وقت محفوظ
+## تحديث خاصية آخر وقت تم حفظه
 
 يمكنك اختيار تحديث خاصية "آخر وقت تم حفظه" للمستند عند حفظه. وإليك الطريقة:
 
@@ -67,10 +67,10 @@ doc.save("ComplianceDoc.docx", saveOptions);
 import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 
-// قم بتحميل المستند
+// تحميل المستند
 Document doc = new Document("Document.docx");
 
-// قم بإنشاء OoxmlSaveOptions وتمكين تحديث خاصية آخر وقت محفوظ
+// إنشاء OoxmlSaveOptions وتمكين تحديث خاصية Last Saved Time
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setUpdateLastSavedTimeProperty(true);
 
@@ -78,27 +78,27 @@ saveOptions.setUpdateLastSavedTimeProperty(true);
 doc.save("UpdatedLastSavedTime.docx", saveOptions);
 ```
 
-## الحفاظ على أحرف التحكم القديمة
+## الحفاظ على شخصيات التحكم القديمة
 
-إذا كان مستندك يحتوي على أحرف تحكم قديمة، فيمكنك اختيار الاحتفاظ بها أثناء الحفظ. وإليك الطريقة:
+إذا كانت مستندك تحتوي على أحرف تحكم قديمة، فيمكنك اختيار الاحتفاظ بها أثناء الحفظ. وإليك الطريقة:
 
 ```java
 import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.SaveFormat;
 
-// قم بتحميل مستند بأحرف التحكم القديمة
+//تحميل مستند يحتوي على أحرف تحكم قديمة
 Document doc = new Document("LegacyControlChars.doc");
 
-//قم بإنشاء OoxmlSaveOptions بتنسيق FLAT_OPC وتمكين الاحتفاظ بأحرف التحكم القديمة
+// إنشاء OoxmlSaveOptions بتنسيق FLAT_OPC وتمكين الاحتفاظ بأحرف التحكم القديمة
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
 saveOptions.setKeepLegacyControlChars(true);
 
-// احفظ المستند بأحرف التحكم القديمة
+// حفظ المستند باستخدام أحرف التحكم القديمة
 doc.save("LegacyControlCharsPreserved.docx", saveOptions);
 ```
 
-## تحديد مستوى الضغط
+## ضبط مستوى الضغط
 
 يمكنك ضبط مستوى الضغط عند حفظ المستند. على سبيل المثال، يمكنك ضبطه على SUPER_FAST للحصول على الحد الأدنى من الضغط. وإليك الطريقة:
 
@@ -107,10 +107,10 @@ import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.CompressionLevel;
 
-// قم بتحميل المستند
+// تحميل المستند
 Document doc = new Document("Document.docx");
 
-// قم بإنشاء OoxmlSaveOptions وقم بتعيين مستوى الضغط
+// إنشاء OoxmlSaveOptions وتعيين مستوى الضغط
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompressionLevel(CompressionLevel.SUPER_FAST);
 
@@ -118,9 +118,9 @@ saveOptions.setCompressionLevel(CompressionLevel.SUPER_FAST);
 doc.save("FastCompressionDoc.docx", saveOptions);
 ```
 
-هذه بعض الخيارات والإعدادات الأساسية التي يمكنك استخدامها عند حفظ المستندات بتنسيق OOXML باستخدام Aspose.Words for Java. لا تتردد في استكشاف المزيد من الخيارات وتخصيص عملية حفظ المستندات حسب الحاجة.
+هذه بعض الخيارات والإعدادات الرئيسية التي يمكنك استخدامها عند حفظ المستندات بتنسيق OOXML باستخدام Aspose.Words for Java. لا تتردد في استكشاف المزيد من الخيارات وتخصيص عملية حفظ المستندات حسب الحاجة.
 
-## أكمل كود المصدر لحفظ المستندات بتنسيق OOXML في Aspose.Words لـ Java
+## الكود المصدر الكامل لحفظ المستندات بتنسيق OOXML في Aspose.Words لـ Java
 
 ```java
 public void encryptDocxWithPassword() throws Exception
@@ -162,18 +162,18 @@ public void setCompressionLevel() throws Exception
 
 ## خاتمة
 
-في هذا الدليل الشامل، اكتشفنا كيفية حفظ المستندات بتنسيق OOXML باستخدام Aspose.Words for Java. سواء كنت بحاجة إلى تشفير مستنداتك بكلمات مرور، أو ضمان الامتثال لمعايير OOXML المحددة، أو تحديث خصائص المستند، أو الحفاظ على أحرف التحكم القديمة، أو ضبط مستويات الضغط، فإن Aspose.Words يوفر مجموعة متنوعة من الأدوات لتلبية متطلباتك.
+في هذا الدليل الشامل، استكشفنا كيفية حفظ المستندات بتنسيق OOXML باستخدام Aspose.Words for Java. سواء كنت بحاجة إلى تشفير مستنداتك بكلمات مرور، أو ضمان الامتثال لمعايير OOXML المحددة، أو تحديث خصائص المستند، أو الحفاظ على أحرف التحكم القديمة، أو ضبط مستويات الضغط، فإن Aspose.Words يوفر مجموعة متعددة الاستخدامات من الأدوات لتلبية متطلباتك.
 
 ## الأسئلة الشائعة
 
 ### كيف يمكنني إزالة الحماية بكلمة مرور من مستند محمي بكلمة مرور؟
 
-لإزالة الحماية بكلمة مرور من مستند محمي بكلمة مرور، يمكنك فتح المستند باستخدام كلمة المرور الصحيحة ثم حفظه دون تحديد كلمة مرور في خيارات الحفظ. سيؤدي هذا إلى حفظ المستند دون حماية بكلمة مرور.
+لإزالة الحماية بكلمة مرور من مستند محمي بكلمة مرور، يمكنك فتح المستند بكلمة المرور الصحيحة ثم حفظه دون تحديد كلمة مرور في خيارات الحفظ. سيؤدي هذا إلى حفظ المستند دون حماية بكلمة مرور.
 
 ### هل يمكنني تعيين خصائص مخصصة عند حفظ مستند بتنسيق OOXML؟
 
- نعم، يمكنك تعيين خصائص مخصصة للمستند قبل حفظه بتنسيق OOXML. استخدم`BuiltInDocumentProperties`و`CustomDocumentProperties` فئات لتعيين خصائص مختلفة مثل المؤلف والعنوان والكلمات الرئيسية والخصائص المخصصة.
+ نعم، يمكنك تعيين خصائص مخصصة لمستند قبل حفظه بتنسيق OOXML. استخدم`BuiltInDocumentProperties` و`CustomDocumentProperties` الفئات لتعيين خصائص مختلفة مثل المؤلف والعنوان والكلمات الرئيسية والخصائص المخصصة.
 
 ### ما هو مستوى الضغط الافتراضي عند حفظ مستند بتنسيق OOXML؟
 
- مستوى الضغط الافتراضي عند حفظ مستند بتنسيق OOXML باستخدام Aspose.Words for Java هو`NORMAL` . يمكنك تغيير مستوى الضغط إلى`SUPER_FAST` أو`MAXIMUM` حسب الحاجة.
+ مستوى الضغط الافتراضي عند حفظ مستند بتنسيق OOXML باستخدام Aspose.Words for Java هو`NORMAL` يمكنك تغيير مستوى الضغط إلى`SUPER_FAST` أو`MAXIMUM` حسب الحاجة.

@@ -49,7 +49,7 @@ DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 List<Document> pages = splitter.splitIntoPages();
 ```
 
- De`pages` Listan kommer nu att innehålla separata dokument, som var och en representerar en enda sida i originaldokumentet.
+De`pages` Listan kommer nu att innehålla separata dokument, som var och en representerar en enda sida i originaldokumentet.
 
 ## Steg 3: Spara sidorna
 

@@ -1,25 +1,25 @@
 ---
-title: Colonne della tabella dei segnalibri nel documento di Word
-linktitle: Colonne della tabella dei segnalibri nel documento di Word
+title: Aggiungi ai segnalibri le colonne della tabella nel documento Word
+linktitle: Aggiungi ai segnalibri le colonne della tabella nel documento Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come aggiungere ai segnalibri le colonne della tabella in un documento Word utilizzando Aspose.Words per .NET con questo tutorial completo e passo passo.
+description: Scopri come aggiungere segnalibri alle colonne di una tabella in un documento Word utilizzando Aspose.Words per .NET con questo tutorial completo e dettagliato.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## Introduzione
 
-Se stai cercando di migliorare le tue capacità di automazione dei documenti, allora sei pronto per una sorpresa. Questo tutorial ti guiderà attraverso il processo di aggiunta dei segnalibri alle colonne della tabella in un documento Word utilizzando Aspose.Words per .NET. Pronti a tuffarvi? Iniziamo!
+Se stai cercando di migliorare le tue capacità di automazione dei documenti, allora sei pronto per una sorpresa. Questo tutorial ti guiderà attraverso il processo di aggiunta di segnalibri alle colonne di tabella in un documento Word utilizzando Aspose.Words per .NET. Pronti a tuffarvi? Cominciamo!
 
 ## Prerequisiti
 
-Prima di addentrarci nel codice, ci sono alcune cose che devi avere a posto:
+Prima di passare al codice, ecco alcune cose che devi sapere:
 
 1.  Aspose.Words per .NET: assicurati di avere Aspose.Words per .NET installato. Puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
 2. Ambiente di sviluppo: configura un ambiente di sviluppo come Visual Studio.
-3. Conoscenza di base di C#: sarà utile la familiarità con la programmazione C#.
+3. Conoscenza di base di C#: sarà utile avere familiarità con la programmazione in C#.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
 Per iniziare, dovrai importare gli spazi dei nomi necessari nel tuo progetto C#:
 
@@ -29,36 +29,36 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Ora suddividiamo il processo in passaggi dettagliati.
+Ora scomponiamo il processo in passaggi dettagliati.
 
 ## Passaggio 1: inizializzare il documento e DocumentBuilder
 
- Per prima cosa dobbiamo creare un nuovo documento Word e inizializzarlo`DocumentBuilder` per lavorare con esso.
+ Per prima cosa, dobbiamo creare un nuovo documento Word e inizializzare il`DocumentBuilder` per lavorarci.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 2: avvia la tabella e inserisci la prima cella
+## Passaggio 2: avviare la tabella e inserire la prima cella
 
-Inizia a creare una tabella e inserisci la prima cella dove inizieremo il segnalibro.
+Iniziamo a creare una tabella e inseriamo la prima cella in cui inizieremo il segnalibro.
 
 ```csharp
 builder.StartTable();
 builder.InsertCell();
 ```
 
-## Passaggio 3: avvia il segnalibro
+## Passaggio 3: avviare il segnalibro
 
-Successivamente, iniziamo il segnalibro denominato "MyBookmark" nella prima cella.
+Ora avviamo il segnalibro denominato "MyBookmark" nella prima cella.
 
 ```csharp
 builder.StartBookmark("MyBookmark");
 builder.Write("This is row 1 cell 1");
 ```
 
-## Passaggio 4: inserisci celle aggiuntive e termina la riga
+## Passaggio 4: inserire celle aggiuntive e terminare la riga
 
 Aggiungi un'altra cella alla prima riga e completa la prima riga.
 
@@ -68,9 +68,9 @@ builder.Write("This is row 1 cell 2");
 builder.EndRow();
 ```
 
-## Passaggio 5: inserisci le celle per la seconda riga
+## Passaggio 5: inserire le celle per la seconda riga
 
-Continua aggiungendo celle per la seconda riga.
+Continuare aggiungendo celle per la seconda riga.
 
 ```csharp
 builder.InsertCell();
@@ -81,9 +81,9 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Passaggio 6: termina il segnalibro
+## Passaggio 6: terminare il segnalibro
 
-Termina il segnalibro dopo aver terminato la tabella.
+Termina il segnalibro dopo aver completato la tabella.
 
 ```csharp
 builder.EndBookmark("MyBookmark");
@@ -91,7 +91,7 @@ builder.EndBookmark("MyBookmark");
 
 ## Passaggio 7: scorrere i segnalibri e visualizzare le informazioni
 
-Infine, scorri i segnalibri nel documento e visualizza le informazioni su ciascuno di essi.
+Infine, scorrere i segnalibri nel documento e visualizzare le informazioni su ciascuno di essi.
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -107,21 +107,21 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Conclusione
 
-Ed ecco qua! Hai aggiunto con successo le colonne della tabella ai segnalibri in un documento Word utilizzando Aspose.Words per .NET. Questo processo non solo aiuta a organizzare il documento, ma semplifica anche la navigazione e la manipolazione di sezioni specifiche. L'aggiunta di segnalibri è una funzionalità potente che può migliorare significativamente le capacità di gestione dei documenti.
+Ed ecco fatto! Hai aggiunto con successo un segnalibro alle colonne di una tabella in un documento Word usando Aspose.Words per .NET. Questo processo non solo aiuta a organizzare il documento, ma rende anche più facile navigare e manipolare sezioni specifiche. L'aggiunta di segnalibri è una potente funzionalità che può migliorare significativamente le capacità di gestione dei documenti.
 
 ## Domande frequenti
 
-### Cos'è Aspose.Words per .NET?
-Aspose.Words per .NET è una potente libreria per lavorare con documenti Word a livello di codice. Ti consente di creare, modificare e convertire documenti senza che sia necessario installare Microsoft Word.
+### Che cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente libreria per lavorare con i documenti Word a livello di programmazione. Consente di creare, modificare e convertire documenti senza dover installare Microsoft Word.
 
-### Come installo Aspose.Words per .NET?
- È possibile scaricare Aspose.Words per .NET da[sito web](https://releases.aspose.com/words/net/). Seguire le istruzioni di installazione fornite.
+### Come faccio a installare Aspose.Words per .NET?
+ Puoi scaricare Aspose.Words per .NET da[sito web](https://releases.aspose.com/words/net/)Seguire le istruzioni di installazione fornite.
 
-### Posso utilizzare Aspose.Words per .NET con altri linguaggi di programmazione?
+### Posso usare Aspose.Words per .NET con altri linguaggi di programmazione?
 Sì, Aspose.Words per .NET può essere utilizzato con qualsiasi linguaggio supportato da .NET, inclusi C#, VB.NET e F#.
 
 ### Come posso ottenere supporto per Aspose.Words per .NET?
- Puoi ottenere supporto dalla comunità e dagli esperti di Aspose visitando il sito[forum di supporto](https://forum.aspose.com/c/words/8).
+ Puoi ottenere supporto dalla comunità e dagli esperti di Aspose visitando il[forum di supporto](https://forum.aspose.com/c/words/8).
 
 ### È disponibile una versione di prova di Aspose.Words per .NET?
  Sì, puoi ottenere una prova gratuita da[Qui](https://releases.aspose.com/).

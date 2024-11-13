@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Document.doc");
 
 Ezután mentse a betöltött dokumentumot DOCX formátumban:
 ```csharp
-// Mentse el a dokumentumot DOCX-ként
+//Mentse el a dokumentumot DOCX-ként
 doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 ```
 
@@ -56,7 +56,7 @@ Ellenőrizze a „ConvertedDocument.docx” nevű konvertált DOCX fájl kimenet
 
 ## Következtetés
 
-DOC programozottan DOCX-re konvertálása az Aspose.Words for .NET használatával egyszerű és hatékony. Csak néhány sornyi kóddal automatizálhatja a dokumentumok konvertálását, így időt és erőfeszítést takaríthat meg. Akár kötegelt konverziókat kezel, akár dokumentumfeldolgozást integrál alkalmazásába, az Aspose.Words robusztus funkcionalitást biztosít az Ön igényeinek kielégítésére.
+A DOC programozottan DOCX-re konvertálása az Aspose.Words for .NET használatával egyszerű és hatékony. Csak néhány sornyi kóddal automatizálhatja a dokumentumok konvertálását, így időt és erőfeszítést takaríthat meg. Akár kötegelt konverziókat kezel, akár dokumentumfeldolgozást integrál alkalmazásába, az Aspose.Words robusztus funkcionalitást biztosít az Ön igényeinek kielégítésére.
 
 ## GYIK
 

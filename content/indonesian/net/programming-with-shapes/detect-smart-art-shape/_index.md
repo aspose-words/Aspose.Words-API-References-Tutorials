@@ -2,7 +2,7 @@
 title: Deteksi Bentuk Seni Cerdas
 linktitle: Deteksi Bentuk Seni Cerdas
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mendeteksi bentuk SmartArt di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan komprehensif ini. Sempurna untuk mengotomatisasi alur kerja dokumen Anda.
+description: Pelajari cara mendeteksi bentuk SmartArt dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan lengkap ini. Sempurna untuk mengotomatiskan alur kerja dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/programming-with-shapes/detect-smart-art-shape/
@@ -10,20 +10,20 @@ url: /id/net/programming-with-shapes/detect-smart-art-shape/
 
 ## Perkenalan
 
-Hai! Pernahkah Anda perlu bekerja dengan SmartArt di dokumen Word secara terprogram? Baik Anda mengotomatiskan laporan, membuat dokumen dinamis, atau sekadar mendalami pemrosesan dokumen, Aspose.Words untuk .NET siap membantu Anda. Dalam tutorial ini, kita akan mempelajari cara mendeteksi bentuk SmartArt di dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan menguraikan setiap langkah dalam panduan terperinci dan mudah diikuti. Di akhir artikel ini, Anda akan dapat mengidentifikasi bentuk SmartArt di dokumen Word mana pun dengan mudah!
+Hai! Pernahkah Anda perlu bekerja dengan SmartArt dalam dokumen Word secara terprogram? Baik Anda mengotomatiskan laporan, membuat dokumen dinamis, atau sekadar mendalami pemrosesan dokumen, Aspose.Words for .NET siap membantu Anda. Dalam tutorial ini, kita akan membahas cara mendeteksi bentuk SmartArt dalam dokumen Word menggunakan Aspose.Words for .NET. Kami akan menguraikan setiap langkah dalam panduan terperinci dan mudah diikuti. Di akhir artikel ini, Anda akan dapat mengidentifikasi bentuk SmartArt dalam dokumen Word apa pun dengan mudah!
 
 ## Prasyarat
 
-Sebelum kita mendalami detailnya, pastikan Anda sudah menyiapkan semuanya:
+Sebelum kita membahas detailnya, mari pastikan Anda telah menyiapkan semuanya:
 
-1. Pengetahuan Dasar C#: Anda harus terbiasa dengan sintaks dan konsep C#.
-2.  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/) . Jika Anda baru menjelajah, Anda bisa memulai dengan a[uji coba gratis](https://releases.aspose.com/).
-3. Visual Studio: Versi terbaru apa pun akan berfungsi, tetapi versi terbaru disarankan.
-4. .NET Framework: Pastikan itu diinstal pada sistem Anda.
+1. Pengetahuan Dasar C#: Anda harus memahami sintaksis dan konsep C#.
+2.  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/) Jika Anda baru menjelajah, Anda bisa memulai dengan[uji coba gratis](https://releases.aspose.com/).
+3. Visual Studio: Versi terbaru apa pun seharusnya berfungsi, tetapi versi terbaru lebih direkomendasikan.
+4. .NET Framework: Pastikan telah terinstal di sistem Anda.
 
-Siap untuk memulai? Luar biasa! Ayo langsung masuk.
+Siap untuk memulai? Keren! Mari kita langsung mulai.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Untuk memulai, kita perlu mengimpor namespace yang diperlukan. Langkah ini penting karena menyediakan akses ke kelas dan metode yang akan kita gunakan.
 
@@ -34,11 +34,11 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Namespace ini penting untuk membuat, memanipulasi, dan menganalisis dokumen Word.
+Ruang nama ini penting untuk membuat, memanipulasi, dan menganalisis dokumen Word.
 
 ## Langkah 1: Menyiapkan Direktori Dokumen
 
-Pertama, kita perlu menentukan direktori tempat dokumen kita disimpan. Ini membantu Aspose.Words menemukan file yang ingin kita analisis.
+Pertama, kita perlu menentukan direktori tempat dokumen kita disimpan. Ini membantu Aspose.Words menemukan berkas yang ingin kita analisis.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -48,17 +48,17 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Memuat Dokumen
 
-Selanjutnya, kita akan memuat dokumen Word yang berisi bentuk SmartArt yang ingin kita deteksi.
+Berikutnya, kita akan memuat dokumen Word yang berisi bentuk SmartArt yang ingin kita deteksi.
 
 ```csharp
 Document doc = new Document(dataDir + "Smart Art.docx");
 ```
 
- Di sini, kami menginisialisasi a`Document` objek dengan path ke file Word kita.
+ Di sini, kita menginisialisasi`Document` objek dengan jalur ke file Word kita.
 
 ## Langkah 3: Mendeteksi Bentuk SmartArt
 
-Kini sampai pada bagian yang menarik – mendeteksi bentuk SmartArt di dokumen. Kita akan menghitung jumlah bentuk yang berisi SmartArt.
+Sekarang tibalah bagian yang menarik – mendeteksi bentuk SmartArt dalam dokumen. Kita akan menghitung jumlah bentuk yang berisi SmartArt.
 
 ```csharp
 int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmartArt);
@@ -66,40 +66,40 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- Pada langkah ini, kita menggunakan LINQ untuk memfilter dan menghitung bentuk yang memiliki SmartArt. Itu`GetChildNodes` metode mengambil semua bentuk, dan`HasSmartArt` properti memeriksa apakah suatu bentuk berisi SmartArt.
+ Pada langkah ini, kami menggunakan LINQ untuk memfilter dan menghitung bentuk yang memiliki SmartArt.`GetChildNodes` metode mengambil semua bentuk, dan`HasSmartArt` properti memeriksa apakah suatu bentuk berisi SmartArt.
 
 ## Langkah 4: Menjalankan Kode
 
-Setelah Anda menulis kodenya, jalankan di Visual Studio. Konsol akan menampilkan jumlah bentuk SmartArt yang ditemukan di dokumen.
+Setelah Anda menulis kode, jalankan kode tersebut di Visual Studio. Konsol akan menampilkan jumlah bentuk SmartArt yang ditemukan dalam dokumen.
 
 ```plaintext
 The document has X shapes with SmartArt.
 ```
 
-Ganti "X" dengan jumlah sebenarnya bentuk SmartArt di dokumen Anda.
+Ganti "X" dengan jumlah sebenarnya bentuk SmartArt dalam dokumen Anda.
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil mempelajari cara mendeteksi bentuk SmartArt di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup pengaturan lingkungan Anda, memuat dokumen, mendeteksi bentuk SmartArt, dan menjalankan kode. Aspose.Words menawarkan berbagai fitur, jadi pastikan untuk menjelajahinya[dokumentasi API](https://reference.aspose.com/words/net/) untuk membuka potensi penuhnya.
+Nah, itu dia! Anda telah berhasil mempelajari cara mendeteksi bentuk SmartArt dalam dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup pengaturan lingkungan Anda, memuat dokumen, mendeteksi bentuk SmartArt, dan menjalankan kode. Aspose.Words menawarkan berbagai fitur, jadi pastikan untuk menjelajahi[Dokumentasi API](https://reference.aspose.com/words/net/) untuk membuka potensi penuhnya.
 
-## FAQ
+## Tanya Jawab Umum
 
 ### 1. Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Ini ideal untuk mengotomatiskan tugas-tugas terkait dokumen.
+Aspose.Words untuk .NET adalah pustaka canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Pustaka ini ideal untuk mengotomatiskan tugas-tugas yang terkait dengan dokumen.
 
-### 2. Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
+### 2. Dapatkah saya menggunakan Aspose.Words untuk .NET secara gratis?
 
- Anda dapat mencoba Aspose.Words untuk .NET menggunakan a[uji coba gratis](https://releases.aspose.com/). Untuk penggunaan jangka panjang, Anda harus membeli lisensi.
+ Anda dapat mencoba Aspose.Words untuk .NET menggunakan[uji coba gratis](https://releases.aspose.com/)Untuk penggunaan jangka panjang, Anda perlu membeli lisensi.
 
-### 3. Bagaimana cara mendeteksi tipe bentuk lain dalam dokumen?
+### 3. Bagaimana cara mendeteksi jenis bentuk lain dalam dokumen?
 
- Anda dapat memodifikasi kueri LINQ untuk memeriksa properti atau tipe bentuk lainnya. Mengacu kepada[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
+ Anda dapat mengubah kueri LINQ untuk memeriksa properti atau tipe bentuk lainnya. Lihat[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
 
 ### 4. Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
 
-Anda bisa mendapatkan dukungan dengan mengunjungi[Asumsikan forum dukungan](https://forum.aspose.com/c/words/8).
+Anda bisa mendapatkan dukungan dengan mengunjungi[Forum dukungan Aspose](https://forum.aspose.com/c/words/8).
 
-### 5. Bisakah saya memanipulasi bentuk SmartArt secara terprogram?
+### 5. Dapatkah saya memanipulasi bentuk SmartArt secara terprogram?
 
- Ya, Aspose.Words memungkinkan Anda memanipulasi bentuk SmartArt secara terprogram. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk petunjuk rinci.
+ Ya, Aspose.Words memungkinkan Anda memanipulasi bentuk SmartArt secara terprogram. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk petunjuk terperinci.

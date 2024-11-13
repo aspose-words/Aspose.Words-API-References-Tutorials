@@ -164,7 +164,7 @@ Nagyméretű dokumentumok esetén fontolja meg a DocumentBuilder osztály haszn�
 
 Győződjön meg arról, hogy a dokumentumban használt betűtípusok és stílusok elérhetők és kompatibilisek a rendszerekkel.
 
-## 10. Legjobb gyakorlatok
+## 10. Bevált gyakorlatok
 
  a Dokumentumgeneráláshoz
 

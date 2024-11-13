@@ -51,7 +51,7 @@ ParagraphFormat format = doc.FirstSection.Body.Paragraphs[0].ParagraphFormat;
 
 ## ステップ3: Far East Line Break Controlを無効にする
 
-ここで、極東の改行コントロールを無効にします。この設定は、アジア言語でのテキストの折り返し方法を決定し、これをオフにすると書式をより細かく制御できるようになります。
+ここで、アジア言語の改行コントロールを無効にします。この設定は、アジア言語でのテキストの折り返し方法を決定し、これをオフにすると書式をより細かく制御できるようになります。
 
 ```csharp
 format.FarEastLineBreakControl = false;
@@ -59,7 +59,7 @@ format.FarEastLineBreakControl = false;
 
 ## ステップ4: ワードラップを有効にする
 
-テキストが適切に折り返されるようにするには、ワードラップを有効にする必要があります。これにより、テキストが不自然な区切りなしに自然に次の行に流れるようになります。
+テキストが適切に折り返されるようにするには、ワードラップを有効にする必要があります。これにより、テキストが不自然な区切りなしに自然に次の行に流れます。
 
 ```csharp
 format.WordWrap = true;

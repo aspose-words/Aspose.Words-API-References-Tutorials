@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
- The`Aspose.Words` jmenný prostor poskytuje základní funkce pro práci s dokumenty aplikace Word`Aspose.Words.Tables` obsahuje třídy speciálně pro práci s tabulkami.
+The`Aspose.Words` jmenný prostor poskytuje základní funkce pro práci s dokumenty aplikace Word`Aspose.Words.Tables` obsahuje třídy speciálně pro práci s tabulkami.
 
 ## Krok 1: Nastavte adresář dokumentů
 
@@ -88,7 +88,7 @@ Automatické přizpůsobení tabulek obsahu pomocí Aspose.Words for .NET je př
 ## FAQ
 
 ### Mohu automaticky přizpůsobit pouze určité sloupce v tabulce?
- The`AutoFit` metoda platí pro celou tabulku. Pokud potřebujete upravit konkrétní sloupce, možná budete muset ručně nastavit šířky sloupců.
+The`AutoFit` metoda platí pro celou tabulku. Pokud potřebujete upravit konkrétní sloupce, možná budete muset ručně nastavit šířky sloupců.
 
 ### Co když můj dokument obsahuje více tabulek?
  Všechny tabulky v dokumentu můžete procházet pomocí`doc.GetChildNodes(NodeType.Table, true)` a podle potřeby použijte automatické přizpůsobení.

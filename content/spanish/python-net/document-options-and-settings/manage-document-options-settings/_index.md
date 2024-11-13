@@ -1,8 +1,8 @@
 ---
 title: Ajuste de las opciones y configuraciones del documento para lograr eficiencia
 linktitle: Ajuste de las opciones y configuraciones del documento para lograr eficiencia
-second_title: API de gestión de documentos Aspose.Words Python
-description: Aprenda cómo manipular eficientemente documentos de Word usando Aspose.Words para Python. Guía paso a paso con código fuente.
+second_title: API de gestión de documentos de Python de Aspose.Words
+description: Aprenda a manipular documentos de Word de manera eficiente con Aspose.Words para Python. Guía paso a paso con código fuente.
 type: docs
 weight: 11
 url: /es/python-net/document-options-and-settings/manage-document-options-settings/
@@ -10,7 +10,7 @@ url: /es/python-net/document-options-and-settings/manage-document-options-settin
 
 ## Introducción a Aspose.Words para Python:
 
-Aspose.Words para Python es una API rica en funciones que permite a los desarrolladores crear, manipular y procesar documentos de Word mediante programación. Proporciona un amplio conjunto de clases y métodos para manejar diversos elementos del documento, como texto, párrafos, tablas, imágenes y más.
+Aspose.Words para Python es una API con numerosas funciones que permite a los desarrolladores crear, manipular y procesar documentos de Word de forma programática. Proporciona un amplio conjunto de clases y métodos para gestionar diversos elementos de documentos, como texto, párrafos, tablas, imágenes y más.
 
 ## Configuración del entorno:
 
@@ -30,9 +30,9 @@ import aspose.words as aw
 doc = aw.Document()
 ```
 
-## Modificación de propiedades del documento:
+## Modificar las propiedades del documento:
 
-Ajustar las propiedades del documento, como título, autor y palabras clave, es esencial para una organización y capacidad de búsqueda adecuadas:
+Ajustar las propiedades del documento, como el título, el autor y las palabras clave, es esencial para una organización y capacidad de búsqueda adecuadas:
 
 ```python
 doc.built_in_document_properties["Title"].value = "My Document"
@@ -40,9 +40,9 @@ doc.built_in_document_properties["Author"].value = "John Doe"
 doc.built_in_document_properties["Keywords"].value = "Python, Aspose.Words, Document"
 ```
 
-## Administrar la configuración de página:
+## Administrar la configuración de la página:
 
-Controlar las dimensiones, los márgenes y la orientación de la página garantiza que su documento aparezca según lo previsto:
+Controlar las dimensiones, los márgenes y la orientación de la página garantiza que su documento aparezca como lo desea:
 
 ```python
 page_setup = doc.sections[0].page_setup
@@ -65,7 +65,7 @@ for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 
 ## Trabajar con secciones y encabezados/pies de página:
 
-Divide tu documento en secciones y personaliza encabezados y pies de página:
+Divida su documento en secciones y personalice encabezados y pies de página:
 
 ```python
 section = doc.sections[0]
@@ -75,7 +75,7 @@ header.append_paragraph("My Custom Header")
 
 ## Agregar y formatear tablas:
 
-Las tablas son parte integral de muchos documentos. A continuación se explica cómo crearlos y darles formato:
+Las tablas son parte integral de muchos documentos. A continuación, se explica cómo crearlas y darles formato:
 
 ```python
 table = doc.tables.add(section.body)
@@ -86,7 +86,7 @@ for row in table.rows:
 
 ## Incorporación de imágenes e hipervínculos:
 
-Enriquece tu documento con imágenes e hipervínculos:
+Enriquezca su documento con imágenes e hipervínculos:
 
 ```python
 shape = aw.drawing.Shape(doc, aw.drawing.ShapeType.IMAGE)
@@ -105,7 +105,7 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## Conclusión:
 
-Aspose.Words para Python permite a los desarrolladores administrar de manera eficiente las opciones y configuraciones de los documentos, ofreciendo un control granular sobre cada aspecto de la creación y manipulación de documentos. Su API intuitiva y su extensa documentación la convierten en una herramienta invaluable para tareas relacionadas con documentos.
+Aspose.Words para Python permite a los desarrolladores gestionar de forma eficiente las opciones y configuraciones de los documentos, ofreciendo un control granular sobre cada aspecto de la creación y manipulación de documentos. Su API intuitiva y su extensa documentación lo convierten en una herramienta invaluable para las tareas relacionadas con los documentos.
 
 ## Preguntas frecuentes
 
@@ -117,7 +117,7 @@ Puede instalar Aspose.Words para Python usando el siguiente comando pip:
 pip install aspose-words
 ```
 
-### ¿Puedo crear encabezados y pies de página usando Aspose.Words?
+### ¿Puedo crear encabezados y pies de página utilizando Aspose.Words?
 
 Sí, puede crear encabezados y pies de página personalizados utilizando Aspose.Words y personalizarlos según sus necesidades.
 

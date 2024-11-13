@@ -66,7 +66,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.InsertSimpleColumnChart.docx
 
 ## 自定义轴属性
 
-您可以自定义轴属性，例如更改轴类型、设置刻度标记、设置标签格式等。以下是定义 XY 轴属性的示例：
+您可以自定义轴属性，例如更改轴类型、设置刻度线、设置标签格式等。以下是定义 XY 轴属性的示例：
 
 ```java
 Document doc = new Document();

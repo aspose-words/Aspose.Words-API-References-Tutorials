@@ -117,7 +117,7 @@ taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_150
 - `WebExtensionBindingType.Text`表示綁定是文字類型。
 - `194740422`是擴充綁定到的文件部分的 ID。
 
-### 步驟 8：儲存文檔
+### 第 8 步：儲存文檔
 
 設定完所有內容後，儲存文件。
 

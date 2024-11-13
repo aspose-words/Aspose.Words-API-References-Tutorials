@@ -2,36 +2,36 @@
 title: Vurgular
 linktitle: Vurgular
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak Markdown'da vurgulu metni nasıl oluşturacağınızı öğrenin. Bu kılavuz, adım adım talimatlarla kalın, italik ve birleştirilmiş stilleri kapsar.
+description: Aspose.Words for .NET kullanarak Markdown'da vurgulu metin oluşturmayı öğrenin. Bu kılavuz, adım adım talimatlarla kalın, italik ve birleşik stilleri kapsar.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/emphases/
 ---
 ## giriiş
 
-Markdown, düz metin metin belgelerine biçimlendirme öğeleri eklemek için kullanabileceğiniz hafif bir biçimlendirme dilidir. Bu kılavuzda, kalın ve italik stiller gibi vurgulanmış metinlere sahip Markdown dosyaları oluşturmak için Aspose.Words for .NET kullanmanın en ince ayrıntısına kadar inceleyeceğiz. İster dokümantasyon, ister blog yazısı, ister biraz yetenek gerektiren herhangi bir metin hazırlıyor olun, bu eğitim size sürecin her adımında yol gösterecektir.
+Markdown, düz metin belgelerine biçimlendirme öğeleri eklemek için kullanabileceğiniz hafif bir işaretleme dilidir. Bu kılavuzda, kalın ve italik stiller gibi vurgulanmış metinlerle Markdown dosyaları oluşturmak için Aspose.Words for .NET'i kullanmanın inceliklerine dalacağız. İster dokümantasyon, ister blog yazısı veya biraz gösteriş gerektiren herhangi bir metin oluşturun, bu eğitim sizi sürecin her adımında yönlendirecektir.
 
-## Önkoşullar
+## Ön koşullar
 
 Koda geçmeden önce, başlamak için ihtiyacımız olan her şeye sahip olduğumuzdan emin olalım:
 
-1.  Aspose.Words for .NET Library: Aspose.Words for .NET'in en son sürümünün kurulu olduğundan emin olun. Yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Kütüphanesi: Aspose.Words for .NET'in en son sürümünün yüklü olduğundan emin olun.[buradan indirin](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio gibi uygun bir .NET geliştirme ortamı.
 3. Temel C# Bilgisi: C# programlamanın temellerini anlamak faydalı olacaktır.
-4. Markdown Temelleri: Markdown sözdizimine aşina olmak, bağlamı daha iyi anlamanıza yardımcı olacaktır.
+4. Markdown Temelleri: Markdown sözdizimine aşinalık, bağlamı daha iyi anlamanıza yardımcı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET ile çalışmak için gerekli ad alanlarını içe aktarmanız gerekir. Kod dosyanızın en üstüne aşağıdaki kullanma yönergelerini ekleyin:
+Aspose.Words for .NET ile çalışmak için gerekli ad alanlarını içe aktarmanız gerekir. Aşağıdaki using yönergelerini kod dosyanızın en üstüne ekleyin:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-## Adım 1: Document ve DocumentBuilder'ı Kurma
+## Adım 1: Belge ve DocumentBuilder'ı Kurma
 
-Öncelikle yeni bir Word belgesi oluşturmamız ve bir başlangıç başlatmamız gerekiyor.`DocumentBuilder` İçerik eklemeye başlamak için.
+İlk önce, yeni bir Word belgesi oluşturmamız ve bir`DocumentBuilder` içerik eklemeye başlamak için.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,22 +39,22 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-`dataDir` değişken Markdown dosyanızı kaydedeceğiniz dizin için bir yer tutucudur. "BELGE DİZİNİ"ni gerçek yolla değiştirdiğinizden emin olun.
+The`dataDir` değişken, Markdown dosyanızı kaydedeceğiniz dizin için bir yer tutucudur. "YOUR DOCUMENT DIRECTORY" ifadesini gerçek yol ile değiştirdiğinizden emin olun.
 
-## Adım 2: Normal Metin Yazma
+## Adım 2: Normal Metin Yazımı
 
-Şimdi belgemize biraz düz metin ekleyelim. Bu, metin vurgusunu göstermek için temel görevi görecektir.
+Şimdi, belgemize biraz düz metin ekleyelim. Bu, metin vurgusunu göstermenin temeli olarak hizmet edecektir.
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as indicators of emphases.");
 builder.Write("You can write ");
 ```
 
- Burada,`Writeln` metinden sonra yeni bir satır eklerken`Write` aynı çizgide devam ediyor.
+ Burada,`Writeln` metnin ardından yeni bir satır eklerken,`Write` aynı çizgide devam ediyor.
 
-## 3. Adım: Kalın Metin Ekleme
+## Adım 3: Kalın Metin Ekleme
 
- Markdown'da kalın metin eklemek için istediğiniz metni çift yıldız (``) içine sarın. Aspose.Words for .NET'te bunu,`Bold` mülkiyeti`Font` itiraz etmek`true`.
+ Markdown'da kalın metin eklemek için, istediğiniz metni çift yıldız işareti (``) içine alın. .NET için Aspose.Words'de bunu,`Bold` mülkiyeti`Font` itiraz etmek`true`.
 
 ```csharp
 builder.Font.Bold = true;
@@ -63,11 +63,11 @@ builder.Font.Bold = false;
 builder.Write(" or ");
 ```
 
-Bu kod parçacığı, "kalın" metnini kalın olacak şekilde ayarlar ve ardından "veya" kelimesi için normal metne geri döner.
+Bu kod parçacığı "bold" metnini kalın yapar ve ardından "or" kelimesi için normal metne geri döner.
 
 ## Adım 4: İtalik Metin Ekleme
 
-Markdown'daki italik metin tek yıldız işaretleriyle sarılmıştır (`*` ). Benzer şekilde,`Italic` mülkiyeti`Font` itiraz etmek`true`.
+Markdown'daki italik metin tek yıldız işaretiyle sarılır (`*` ). Benzer şekilde, şunu ayarlayın:`Italic` mülkiyeti`Font` itiraz etmek`true`.
 
 ```csharp
 builder.Font.Italic = true;
@@ -76,11 +76,11 @@ builder.Font.Italic = false;
 builder.Writeln(" text.");
 ```
 
-Bu, italik tarzda "italik" ifadesini ve ardından normal metni oluşturacaktır.
+Bu, "italik" yazısını italik stilinde, ardından da normal metin olarak gösterecektir.
 
 ## Adım 5: Kalın ve İtalik Metni Birleştirme
 
-Metni üçlü yıldız işareti () içine sararak kalın ve italik stilleri birleştirebilirsiniz.`*` ). Her ikisini de ayarla`Bold`Ve`Italic` özellikleri`true`.
+Metni üçlü yıldız işaretiyle sararak kalın ve italik stilleri birleştirebilirsiniz (`*` ). Her ikisini de ayarlayın`Bold` Ve`Italic` özellikleri`true`.
 
 ```csharp
 builder.Write("You can also write ");
@@ -92,11 +92,11 @@ builder.Font.Italic = false;
 builder.Write(" text.");
 ```
 
-Bu kod parçası, hem kalın hem de italik stillerin "BoldItalic"e nasıl uygulanacağını gösterir.
+Bu kod parçası "BoldItalic" yazı tipine hem kalın hem de italik stillerinin nasıl uygulanacağını göstermektedir.
 
 ## Adım 6: Belgeyi Markdown Olarak Kaydetme
 
-Vurgulanan tüm metni ekledikten sonra belgeyi Markdown dosyası olarak kaydetmenin zamanı geldi.
+Tüm vurgulanan metni ekledikten sonra, belgeyi Markdown dosyası olarak kaydetme zamanı geldi.
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
@@ -106,21 +106,21 @@ Bu satır, belgeyi "WorkingWithMarkdown.Emphases.md" dosya adıyla belirtilen di
 
 ## Çözüm
 
-Ve işte karşınızda! Artık Aspose.Words for .NET'i kullanarak Markdown'da vurgulu metin oluşturma konusunda uzmanlaştınız. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi ve bunları Markdown da dahil olmak üzere çeşitli formatlara aktarmayı kolaylaştırır. Bu kılavuzda özetlenen adımları izleyerek belgelerinizi kalın ve italik metinlerle geliştirerek onları daha ilgi çekici ve okunabilir hale getirebilirsiniz.
+İşte karşınızda! Artık Aspose.Words for .NET kullanarak Markdown'da vurgulu metin oluşturmayı öğrendiniz. Bu güçlü kütüphane, Word belgelerini programatik olarak düzenlemeyi ve Markdown dahil olmak üzere çeşitli biçimlere aktarmayı kolaylaştırır. Bu kılavuzda özetlenen adımları izleyerek belgelerinizi kalın ve italik metinlerle zenginleştirebilir, daha ilgi çekici ve okunabilir hale getirebilirsiniz.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for .NET ile Markdown'da diğer metin stillerini kullanabilir miyim?
-Evet, başlıklar, listeler ve kod blokları gibi diğer stilleri de kullanabilirsiniz. Aspose.Words for .NET çok çeşitli Markdown formatlama seçeneklerini destekler.
+### Aspose.Words for .NET ile Markdown'da başka metin stilleri kullanabilir miyim?
+Evet, başlıklar, listeler ve kod blokları gibi diğer stilleri kullanabilirsiniz. Aspose.Words for .NET, çok çeşitli Markdown biçimlendirme seçeneklerini destekler.
 
 ### Aspose.Words for .NET'i nasıl kurabilirim?
- Kütüphaneyi adresinden indirebilirsiniz.[Aspose sürümler sayfası](https://releases.aspose.com/words/net/) ve verilen kurulum talimatlarını izleyin.
+ Kütüphaneyi şu adresten indirebilirsiniz:[Aspose sürüm sayfası](https://releases.aspose.com/words/net/)ve verilen kurulum talimatlarını izleyin.
 
-### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
+### Aspose.Words for .NET için ücretsiz deneme sürümü mevcut mu?
  Evet, indirebilirsiniz[ücretsiz deneme](https://releases.aspose.com/) Aspose.Words for .NET'in özelliklerini test etmek için.
 
-### Sorunla karşılaşırsam destek alabilir miyim?
- Kesinlikle! Ziyaret edebilirsiniz[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) topluluktan ve Aspose ekibinden yardım almak için.
+### Sorun yaşarsam destek alabilir miyim?
+ Kesinlikle! Ziyaret edebilirsiniz[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) Topluluktan ve Aspose ekibinden yardım almak için.
 
-### Aspose.Words for .NET için nasıl geçici lisans alabilirim?
- Bir[geçici lisans](https://purchase.aspose.com/temporary-license/) Kütüphanenin tüm yeteneklerini değerlendirmek.
+### Aspose.Words for .NET için geçici lisansı nasıl alabilirim?
+ Bir tane edinebilirsiniz[geçici lisans](https://purchase.aspose.com/temporary-license/) Kütüphanenin tüm imkânlarını değerlendirmek.

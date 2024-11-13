@@ -14,7 +14,7 @@ url: /ja/python-net/document-combining-and-comparison/apply-styles-themes-docume
 
 ## 環境の設定
 
-スタイリングを始める前に、開発環境を設定しましょう。Aspose.Words for Pythonがインストールされていることを確認してください。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/python/).
+スタイリングを始める前に、開発環境を設定しましょう。Aspose.Words for Pythonがインストールされていることを確認してください。ダウンロードはこちらからできます。[ここ](https://releases.aspose.com/words/python/).
 
 ## ドキュメントの読み込みと保存
 
@@ -145,7 +145,7 @@ doc.range.clear_formatting()
 
 ## 結論
 
-Aspose.Words for Python を使用してスタイルとテーマを適用すると、視覚的に魅力的でプロフェッショナルなドキュメントを作成できます。このガイドで説明されているテクニックに従うことで、ドキュメント作成スキルを次のレベルに引き上げることができます。
+Aspose.Words for Python を使用してスタイルとテーマを適用すると、視覚的に魅力的でプロフェッショナルなドキュメントを作成できます。このガイドで説明されている手法に従うことで、ドキュメント作成スキルを次のレベルに引き上げることができます。
 
 ## よくある質問
 
@@ -167,4 +167,4 @@ Aspose.Words for Python を使用してスタイルとテーマを適用する�
 
 ### ドキュメントから書式をクリアすることは可能ですか?
 
-はい、書式やスタイルは簡単に削除できます。`clear_formatting()` Aspose.Words for Python によって提供されるメソッド。
+はい、書式やスタイルを簡単に削除できます。`clear_formatting()` Aspose.Words for Python によって提供されるメソッド。

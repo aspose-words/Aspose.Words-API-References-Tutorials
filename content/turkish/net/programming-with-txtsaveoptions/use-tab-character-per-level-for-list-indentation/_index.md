@@ -1,57 +1,57 @@
 ---
-title: Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan
-linktitle: Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan
+title: Liste Girintisi İçin Seviye Başına Sekme Karakteri Kullan
+linktitle: Liste Girintisi İçin Seviye Başına Sekme Karakteri Kullan
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak sekmeli girintili çok düzeyli listeler oluşturmayı öğrenin. Belgelerinizde kesin liste biçimlendirmesi için bu kılavuzu izleyin.
+description: Aspose.Words for .NET kullanarak sekmeli girintili çok düzeyli listeler oluşturmayı öğrenin. Belgelerinizde hassas liste biçimlendirmesi için bu kılavuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
 ## giriiş
 
-İster bir rapor taslağı hazırlıyor olun, ister bir araştırma makalesi yazıyor olun, ister bir sunum hazırlıyor olun, listeler içeriğin düzenlenmesinde temeldir. Bununla birlikte, birden fazla girinti düzeyine sahip listeler sunmaya gelince, istenen formatı elde etmek biraz zor olabilir. Aspose.Words for .NET'i kullanarak liste girintisini kolayca yönetebilir ve her seviyenin nasıl temsil edildiğini özelleştirebilirsiniz. Bu öğreticide, hassas biçimlendirme için sekme karakterlerini kullanarak birden fazla girinti düzeyine sahip bir liste oluşturmaya odaklanacağız. Bu kılavuzun sonunda, belgenizi doğru girinti stiliyle nasıl ayarlayıp kaydedeceğiniz konusunda net bir anlayışa sahip olacaksınız.
+İster bir rapor taslağı hazırlayın, ister bir araştırma makalesi yazın veya bir sunum hazırlayın, listeler içerik düzenlemede temeldir. Ancak, birden fazla girinti düzeyine sahip listeleri sunmaya gelince, istenen biçimi elde etmek biraz zor olabilir. .NET için Aspose.Words'ü kullanarak, liste girintilerini kolayca yönetebilir ve her düzeyin nasıl temsil edildiğini özelleştirebilirsiniz. Bu eğitimde, hassas biçimlendirme için sekme karakterlerini kullanarak birden fazla girinti düzeyine sahip bir liste oluşturmaya odaklanacağız. Bu kılavuzun sonunda, belgenizi doğru girinti stiliyle nasıl ayarlayacağınız ve kaydedeceğiniz konusunda net bir anlayışa sahip olacaksınız.
 
-## Önkoşullar
+## Ön koşullar
 
 Adımlara geçmeden önce aşağıdakilerin hazır olduğundan emin olun:
 
-1.  Aspose.Words for .NET Yüklü: Aspose.Words kütüphanesine ihtiyacınız var. Henüz yüklemediyseniz adresinden indirebilirsiniz.[İndirilenler](https://releases.aspose.com/words/net/).
+1.  .NET için Aspose.Words Yüklendi: Aspose.Words kütüphanesine ihtiyacınız var. Henüz yüklemediyseniz, şuradan indirebilirsiniz:[Aspose İndirmeleri](https://releases.aspose.com/words/net/).
 
-2. C# ve .NET'in Temel Anlaşılması: C# programlama ve .NET çerçevesine aşinalık, bu eğitimi takip etmek için çok önemlidir.
+2. C# ve .NET'in Temel Anlayışı: Bu eğitimi takip etmek için C# programlama ve .NET framework'üne aşinalık şarttır.
 
-3. Geliştirme Ortamı: C# kodunuzu yazmak ve yürütmek için bir IDE veya metin düzenleyiciniz olduğundan emin olun (örneğin, Visual Studio).
+3. Geliştirme Ortamı: C# kodunuzu yazmak ve çalıştırmak için bir IDE veya metin düzenleyiciniz olduğundan emin olun (örneğin, Visual Studio).
 
 4. Örnek Belge Dizini: Belgenizi kaydedeceğiniz ve test edeceğiniz bir dizin oluşturun. 
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words'ü .NET uygulamanızda kullanmak için öncelikle gerekli ad alanlarını içe aktarmanız gerekir. C# dosyanızın başına aşağıdaki kullanma yönergelerini ekleyin:
+Öncelikle, .NET uygulamanızda Aspose.Words kullanmak için gerekli ad alanlarını içe aktarmanız gerekir. Aşağıdaki using yönergelerini C# dosyanızın başına ekleyin:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Bu bölümde Aspose.Words for .NET'i kullanarak sekmeli girintili çok düzeyli bir liste oluşturacağız. Şu adımları izleyin:
+Bu bölümde, .NET için Aspose.Words kullanarak sekmeli girintili çok seviyeli bir liste oluşturacağız. Şu adımları izleyin:
 
-## 1. Adım: Belgenizi Ayarlayın
+## Adım 1: Belgenizi Ayarlayın
 
-Yeni bir Belge ve DocumentBuilder Oluşturun
+Yeni Bir Belge ve DocumentBuilder Oluşturun
 
 ```csharp
-// Belgeler dizininizin yolu
+// Belgelerinizin dizinine giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Yeni bir belge oluştur
 Document doc = new Document();
 
-// DocumentBuilder'ı başlat
+// DocumentBuilder'ı Başlat
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Burada yeni bir tane kurduk`Document` nesne ve bir`DocumentBuilder` Belge içinde içerik oluşturmaya başlamak için.
+ Burada yeni bir kurulum yapıyoruz`Document` nesne ve bir`DocumentBuilder` Belge içerisinde içerik oluşturmaya başlamak için.
 
-## 2. Adım: Varsayılan Liste Formatını Uygulayın
+## Adım 2: Varsayılan Liste Biçimlendirmesini Uygula
 
 Listeyi Oluşturun ve Biçimlendirin
 
@@ -60,68 +60,68 @@ Listeyi Oluşturun ve Biçimlendirin
 builder.ListFormat.ApplyNumberDefault();
 ```
 
-Bu adımda varsayılan numaralandırma formatını listemize uyguluyoruz. Bu, daha sonra özelleştirebileceğimiz numaralı bir liste oluşturmamıza yardımcı olacaktır.
+Bu adımda, listemize varsayılan numaralandırma biçimini uygularız. Bu, daha sonra özelleştirebileceğimiz numaralı bir liste oluşturmamıza yardımcı olacaktır.
 
-## 3. Adım: Farklı Düzeylerdeki Liste Öğelerini Ekleme
+## Adım 3: Farklı Düzeylerde Liste Öğeleri Ekleyin
 
-Liste Öğeleri Ekle ve Girinti Yap
+Liste Öğeleri Ekle ve Girinti
 
 ```csharp
-//İlk liste öğesini ekleyin
+//İlk liste öğesini ekle
 builder.Write("Element 1");
 
-// İkinci düzeyi oluşturmak için girinti
+// İkinci seviyeyi oluşturmak için girinti
 builder.ListFormat.ListIndent();
 builder.Write("Element 2");
 
-// Üçüncü düzeyi oluşturmak için daha fazla girinti yapın
+// Üçüncü seviyeyi oluşturmak için daha fazla girinti yapın
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- Burada listemize her biri artan girinti düzeyine sahip üç öğe ekliyoruz.`ListIndent` yöntemi, sonraki her öğenin girinti düzeyini artırmak için kullanılır.
+ Burada, her biri artan girinti seviyelerine sahip üç öğeyi listemize ekliyoruz.`ListIndent` Her bir sonraki öğe için girinti düzeyini artırmak amacıyla kullanılan bir yöntemdir.
 
-## 4. Adım: Kaydetme Seçeneklerini Yapılandırın
+## Adım 4: Kaydetme Seçeneklerini Yapılandırın
 
-Sekme Karakterlerini Kullanmak İçin Girintiyi Ayarlama
+Girintiyi Sekme Karakterlerini Kullanacak Şekilde Ayarla
 
 ```csharp
-// Girinti için sekme karakterlerini kullanmak üzere kaydetme seçeneklerini yapılandırma
+// Girinti için sekme karakterlerini kullanacak şekilde kaydetme seçeneklerini yapılandırın
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- Biz yapılandırıyoruz`TxtSaveOptions` Kaydedilen metin dosyasındaki girinti için sekme karakterlerini kullanmak için.`ListIndentation.Character` özellik şu şekilde ayarlandı:`'\t'`, bir sekme karakterini temsil eder.
+ Biz yapılandırıyoruz`TxtSaveOptions` Kaydedilen metin dosyasında girintileme için sekme karakterlerini kullanmak için`ListIndentation.Character` mülk ayarlandı`'\t'`, bir sekme karakterini temsil eder.
 
 ## Adım 5: Belgeyi Kaydedin
 
-Belgeyi Belirtilen Seçeneklerle Kaydetme
+Belgeyi Belirtilen Seçeneklerle Kaydet
 
 ```csharp
 // Belgeyi belirtilen seçeneklerle kaydedin
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- Son olarak belgeyi kullanarak kaydediyoruz.`Save` bizim özel yöntemimizle`TxtSaveOptions`. Bu, listenin girinti düzeyleri için sekme karakterleriyle kaydedilmesini sağlar.
+ Son olarak, belgeyi kullanarak kaydediyoruz`Save` özel yöntemimizle`TxtSaveOptions`Bu, listenin girinti düzeyleri için sekme karakterleriyle kaydedilmesini sağlar.
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET'i kullanarak sekmeli girintili çok düzeyli bir liste oluşturmayı anlattık. Bu adımları izleyerek belgelerinizdeki listeleri kolayca yönetip biçimlendirebilir, bunların net ve profesyonel bir şekilde sunulmasını sağlayabilirsiniz. Raporlar, sunumlar veya başka herhangi bir belge türü üzerinde çalışıyor olsanız da, bu teknikler liste biçimlendirmeniz üzerinde hassas kontrol elde etmenize yardımcı olacaktır.
+Bu eğitimde, .NET için Aspose.Words kullanarak sekmeli girintili çok düzeyli bir liste oluşturmayı ele aldık. Bu adımları izleyerek, belgelerinizdeki listeleri kolayca yönetebilir ve biçimlendirebilir, bunların açık ve profesyonel bir şekilde sunulmasını sağlayabilirsiniz. İster raporlar, ister sunumlar veya başka bir belge türü üzerinde çalışıyor olun, bu teknikler liste biçimlendirmeniz üzerinde kesin kontrol sağlamanıza yardımcı olacaktır.
 
-## SSS'ler
+## SSS
 
 ### Girinti karakterini sekmeden boşluğa nasıl değiştirebilirim?
- Değiştirebilirsiniz`saveOptions.ListIndentation.Character` Sekme yerine boşluk karakteri kullanma özelliği.
+ Şunu değiştirebilirsiniz:`saveOptions.ListIndentation.Character` sekme yerine boşluk karakteri kullanma özelliği.
 
-### Farklı düzeylere farklı liste stilleri uygulayabilir miyim?
-Evet, Aspose.Words liste stillerinin çeşitli düzeylerde özelleştirilmesine olanak tanır. Farklı stiller elde etmek için liste biçimlendirme seçeneklerini değiştirebilirsiniz.
+### Farklı seviyelere farklı liste stilleri uygulayabilir miyim?
+Evet, Aspose.Words liste stillerinin çeşitli düzeylerde özelleştirilmesine izin verir. Farklı stiller elde etmek için liste biçimlendirme seçeneklerini değiştirebilirsiniz.
 
-### Rakamlar yerine madde işaretleri kullanmam gerekirse ne olur?
- Kullanın`ListFormat.ApplyBulletDefault()` bunun yerine yöntem`ApplyNumberDefault()` madde işaretli bir liste oluşturmak için.
+### Numaralar yerine madde işaretleri kullanmam gerekirse ne olur?
+ Kullanın`ListFormat.ApplyBulletDefault()` yöntem yerine`ApplyNumberDefault()` madde işaretli bir liste oluşturmak.
 
 ### Girinti için kullanılan sekme karakterinin boyutunu nasıl ayarlayabilirim?
- Maalesef sekme boyutu`TxtSaveOptions`sabittir. Girinti boyutunu ayarlamak için boşluk kullanmanız veya liste formatını doğrudan özelleştirmeniz gerekebilir.
+ Ne yazık ki, sekme boyutu`TxtSaveOptions`sabittir. Girinti boyutunu ayarlamak için boşluk kullanmanız veya liste biçimlendirmesini doğrudan özelleştirmeniz gerekebilir.
 
-### PDF veya DOCX gibi diğer formatlara dışa aktarırken bu ayarları kullanabilir miyim?
-Belirli sekme karakteri ayarları metin dosyalarına uygulanır. PDF veya DOCX gibi formatlar için bu formatlardaki formatlama seçeneklerini ayarlamanız gerekir.
+### PDF veya DOCX gibi diğer formatlara aktarım yaparken bu ayarları kullanabilir miyim?
+Belirli sekme karakteri ayarları metin dosyalarına uygulanır. PDF veya DOCX gibi biçimler için, bu biçimler içindeki biçimlendirme seçeneklerini ayarlamanız gerekir.

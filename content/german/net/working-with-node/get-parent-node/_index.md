@@ -9,7 +9,7 @@ url: /de/net/working-with-node/get-parent-node/
 ---
 ## Einführung
 
-Haben Sie sich schon einmal gefragt, wie Sie Dokumentknoten mit Aspose.Words für .NET bearbeiten können? Dann sind Sie hier genau richtig! Heute tauchen wir in eine nette kleine Funktion ein: das Abrufen des übergeordneten Knotens eines Dokumentabschnitts. Egal, ob Sie neu bei Aspose.Words sind oder einfach nur Ihre Fähigkeiten zur Dokumentbearbeitung verbessern möchten, diese Schritt-für-Schritt-Anleitung hilft Ihnen dabei. Bereit? Dann legen wir los!
+Haben Sie sich schon einmal gefragt, wie Sie Dokumentknoten mit Aspose.Words für .NET bearbeiten können? Dann sind Sie hier richtig! Heute tauchen wir in eine nette kleine Funktion ein: das Abrufen des übergeordneten Knotens eines Dokumentabschnitts. Egal, ob Sie neu bei Aspose.Words sind oder einfach nur Ihre Fähigkeiten zur Dokumentbearbeitung verbessern möchten, diese Schritt-für-Schritt-Anleitung hilft Ihnen dabei. Bereit? Dann legen wir los!
 
 ## Voraussetzungen
 
@@ -18,7 +18,7 @@ Bevor wir loslegen, stellen Sie sicher, dass Sie alles eingerichtet haben:
 -  Aspose.Words für .NET: Laden Sie es herunter und installieren Sie es von[Hier](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
 - Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung sind von Vorteil.
--  Temporäre Lizenz: Für volle Funktionalität ohne Einschränkungen, holen Sie sich eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
+-  Temporäre Lizenz: Für volle Funktionalität ohne Einschränkungen, erwerben Sie eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
 
 ## Namespaces importieren
 

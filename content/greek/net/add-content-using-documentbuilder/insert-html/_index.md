@@ -107,4 +107,4 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
  Μπορείτε να ξεκινήσετε με α[δωρεάν δοκιμή](https://releases.aspose.com/) ή αποκτήστε α[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/) για πλήρη χαρακτηριστικά.
 
 ### Πού μπορώ να βρω περισσότερα μαθήματα και παραδείγματα;  
- Ο[απόδειξη με έγγραφα](https://reference.aspose.com/words/net/)και[φόρουμ υποστήριξης](https://forum.aspose.com/c/words/8)είναι εξαιρετικά μέρη για να ξεκινήσετε για πιο λεπτομερείς οδηγούς και υποστήριξη της κοινότητας.
+Ο[απόδειξη με έγγραφα](https://reference.aspose.com/words/net/) και[φόρουμ υποστήριξης](https://forum.aspose.com/c/words/8)είναι εξαιρετικά μέρη για να ξεκινήσετε για πιο λεπτομερείς οδηγούς και υποστήριξη της κοινότητας.

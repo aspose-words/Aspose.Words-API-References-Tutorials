@@ -9,7 +9,7 @@ url: /de/net/join-and-append-documents/append-document-to-blank/
 ---
 ## Einführung
 
-Hallo! Haben Sie sich schon einmal am Kopf gekratzt und sich gefragt, wie Sie mit Aspose.Words für .NET ein Dokument nahtlos an ein leeres anhängen können? Sie sind nicht allein! Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst in die Welt der Dokumentenautomatisierung eintauchen, dieser Leitfaden hilft Ihnen, sich durch den Prozess zu navigieren. Wir werden die Schritte auf eine Weise aufschlüsseln, die leicht zu befolgen ist, auch wenn Sie kein Programmiergenie sind. Also, holen Sie sich eine Tasse Kaffee, lehnen Sie sich zurück und tauchen Sie ein in die Welt der Dokumentenbearbeitung mit Aspose.Words für .NET!
+Hallo! Haben Sie sich schon einmal am Kopf gekratzt und sich gefragt, wie Sie mit Aspose.Words für .NET ein Dokument nahtlos an ein leeres anhängen können? Damit sind Sie nicht allein! Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst in die Welt der Dokumentenautomatisierung eintauchen, dieser Leitfaden hilft Ihnen, sich durch den Prozess zu navigieren. Wir werden die Schritte auf eine Weise aufschlüsseln, die leicht zu befolgen ist, auch wenn Sie kein Programmiergenie sind. Also holen Sie sich eine Tasse Kaffee, lehnen Sie sich zurück und tauchen Sie ein in die Welt der Dokumentenbearbeitung mit Aspose.Words für .NET!
 
 ## Voraussetzungen
 
@@ -122,7 +122,7 @@ Ja, Sie können mehrere Dokumente anhängen, indem Sie den`AppendDocument` Metho
 
 ### Was passiert, wenn das Quelldokument eine andere Formatierung aufweist?
 
- Der`ImportFormatMode.KeepSourceFormatting` stellt sicher, dass die Formatierung des Quelldokuments beim Anhängen erhalten bleibt.
+Der`ImportFormatMode.KeepSourceFormatting` stellt sicher, dass die Formatierung des Quelldokuments beim Anhängen erhalten bleibt.
 
 ### Benötige ich eine Lizenz, um Aspose.Words zu verwenden?
 

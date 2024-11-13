@@ -1,29 +1,29 @@
 ---
 title: Zmień ustawienia regionalne
 linktitle: Zmień ustawienia regionalne
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Z tego przewodnika dowiesz się, jak zmienić ustawienia regionalne w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Idealny do obsługi międzynarodowych klientów i projektów.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak zmienić ustawienia regionalne w dokumentach Worda za pomocą Aspose.Words dla .NET z tego przewodnika. Idealne do obsługi międzynarodowych klientów i projektów.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/change-locale/
 ---
 ## Wstęp
 
-Praca z dokumentami programu Word często wymaga odrobiny finezji, szczególnie w przypadku różnych lokalizacji i kultur. W tym samouczku przyjrzymy się, jak zmienić ustawienia regionalne dokumentu programu Word za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy tworzysz dokumenty dla odbiorców na całym świecie, czy po prostu chcesz zmienić format daty, ten przewodnik pomoże Ci.
+Praca z dokumentami Worda często wymaga odrobiny finezji, zwłaszcza w przypadku różnych ustawień regionalnych i kultur. W tym samouczku pokażemy, jak zmienić ustawienia regionalne dokumentu Worda za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy tworzysz dokumenty dla globalnej publiczności, czy po prostu musisz zmienić formaty dat, ten przewodnik pomoże Ci.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w szczegóły, upewnijmy się, że mamy wszystko, czego potrzebujemy:
+Zanim przejdziemy do szczegółów, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
--  Aspose.Words dla .NET: Możesz go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Można go pobrać ze strony[Tutaj](https://releases.aspose.com/words/net/).
 - Visual Studio: dowolna wersja obsługująca platformę .NET.
-- Podstawowa znajomość C#: Zrozumienie podstaw C# i .NET pomoże Ci w dalszym ciągu.
+- Podstawowa wiedza o języku C#: Znajomość podstaw języka C# i .NET ułatwi Ci zrozumienie materiału.
 
- Upewnij się, że zainstalowałeś Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/) lub kup to[Tutaj](https://purchase.aspose.com/buy).
+ Upewnij się, że zainstalowałeś Aspose.Words dla .NET. Jeśli nie, możesz otrzymać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/) lub kup[Tutaj](https://purchase.aspose.com/buy).
 
 ## Importuj przestrzenie nazw
 
-Zanim zaczniemy kodować, musimy zaimportować niezbędne przestrzenie nazw. Działają jak składniki przepisu i zapewniają, że wszystko działa sprawnie.
+Zanim zaczniemy kodować, musimy zaimportować niezbędne przestrzenie nazw. Są one jak składniki w przepisie, zapewniając, że wszystko działa płynnie.
 
 ```csharp
 using System.Globalization;
@@ -32,11 +32,11 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Zmiana ustawień regionalnych w dokumencie programu Word jest prostym procesem. Rozłóżmy to krok po kroku.
+Zmiana ustawień regionalnych w dokumencie Word to prosty proces. Omówmy go krok po kroku.
 
 ## Krok 1: Skonfiguruj swój dokument
 
-Na początek skonfigurujmy nasz dokument i narzędzie do tworzenia dokumentów. To tak, jakby przygotować miejsce do pracy przed rozpoczęciem gotowania.
+Po pierwsze, skonfigurujmy nasz dokument i kreator dokumentów. To tak, jakbyś konfigurował miejsce pracy przed rozpoczęciem gotowania.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,15 +46,15 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Wstaw pole scalania
 
-Teraz wstawimy pole scalania dla daty. Tutaj w grę wchodzą ustawienia regionalne.
+Teraz wstawimy pole scalania dla daty. Tutaj wchodzi w grę ustawienie regionalne.
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-## Krok 3: Zapisz obecną kulturę
+## Krok 3: Zapisz bieżącą kulturę
 
-Zanim zmienimy lokalizację, musimy uratować obecną kulturę. Potraktuj to jak dodanie swojego miejsca do zakładek przed przejściem do kolejnego rozdziału.
+Zanim zmienimy lokalizację, musimy zapisać obecną kulturę. Pomyśl o tym jak o dodaniu zakładki do swojego miejsca przed przejściem do kolejnego rozdziału.
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
@@ -62,7 +62,7 @@ CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
 
 ## Krok 4: Zmień ustawienia regionalne
 
-Następnie zmienimy obecną kulturę wątku na niemiecką („de-DE”). To jakby zmienić ustawienia językowe w telefonie.
+Następnie zmienimy obecną kulturę wątku na niemiecką („de-DE”). To tak, jakbyśmy zmienili ustawienia językowe w telefonie.
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
@@ -70,15 +70,15 @@ Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 
 ## Krok 5: Wykonaj korespondencję seryjną
 
-Teraz wykonujemy korespondencję seryjną z bieżącą datą. Spowoduje to zastosowanie nowych ustawień regionalnych do formatu daty.
+Teraz wykonujemy korespondencję seryjną z bieżącą datą. Spowoduje to zastosowanie nowego ustawienia regionalnego do formatu daty.
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-## Krok 6: Przywróć pierwotną kulturę
+## Krok 6: Przywróć oryginalną kulturę
 
-Po wykonaniu korespondencji seryjnej przywrócimy oryginalną kulturę. Przypomina to powrót do preferowanych ustawień języka.
+Po wykonaniu korespondencji seryjnej przywrócimy oryginalną kulturę. Jest to jak powrót do preferowanych ustawień językowych.
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
@@ -86,31 +86,31 @@ Thread.CurrentThread.CurrentCulture = currentCulture;
 
 ## Krok 7: Zapisz dokument
 
-Na koniec zapisz dokument w określonym katalogu.
+Na koniec zapisz dokument w wybranym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-masz to! Pomyślnie zmieniłeś ustawienia regionalne w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+masz! Udało Ci się zmienić ustawienia regionalne w dokumencie Word za pomocą Aspose.Words dla .NET.
 
 ## Wniosek
 
-Zmiana ustawień regionalnych w dokumentach programu Word może być niezwykle przydatna, szczególnie w przypadku międzynarodowych klientów lub projektów. Dzięki Aspose.Words dla .NET zadanie to staje się proste. Wykonaj poniższe kroki, a będziesz mógł bez wysiłku zmieniać ustawienia regionalne.
+Zmiana ustawień regionalnych w dokumentach Word może być niezwykle przydatna, zwłaszcza w przypadku międzynarodowych klientów lub projektów. Dzięki Aspose.Words dla .NET to zadanie staje się dziecinnie proste. Wykonaj poniższe kroki, a będziesz w stanie bez wysiłku zmieniać ustawienia regionalne.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Czy mogę zmienić ustawienia regionalne na dowolny język?
-Tak, Aspose.Words dla .NET obsługuje zmianę ustawień regionalnych na dowolny język obsługiwany przez .NET.
+Tak, Aspose.Words dla .NET obsługuje zmianę ustawień regionalnych na dowolny język obsługiwany przez platformę .NET.
 
 ### Czy będzie to miało wpływ na inne części mojego dokumentu?
-Zmiana ustawień regionalnych będzie miała wpływ przede wszystkim na formaty daty i liczb. Pozostały tekst pozostanie niezmieniony.
+Zmiana ustawień regionalnych wpłynie przede wszystkim na formaty daty i liczb. Pozostały tekst pozostanie niezmieniony.
 
 ### Czy potrzebuję specjalnej licencji, aby używać Aspose.Words dla .NET?
- Możesz rozpocząć od bezpłatnego okresu próbnego, ale aby móc dalej korzystać, musisz kupić licencję[Tutaj](https://purchase.aspose.com/buy).
+ Możesz zacząć od bezpłatnego okresu próbnego, ale aby kontynuować korzystanie z usługi, musisz kupić licencję[Tutaj](https://purchase.aspose.com/buy).
 
-### Czy mogę powrócić do oryginalnych ustawień regionalnych, jeśli coś pójdzie nie tak?
-Tak, zapisując oryginalną kulturę i przywracając ją później, możesz przywrócić oryginalne ustawienia regionalne.
+### Czy mogę powrócić do oryginalnej lokalizacji, jeśli coś pójdzie nie tak?
+Tak, możesz powrócić do oryginalnej lokalizacji, zapisując oryginalną kulturę i przywracając ją później.
 
 ### Gdzie mogę uzyskać pomoc, jeśli napotkam problemy?
  Możesz uzyskać wsparcie od społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8).

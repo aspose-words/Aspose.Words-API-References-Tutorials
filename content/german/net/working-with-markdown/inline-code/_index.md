@@ -34,7 +34,7 @@ Lassen Sie uns den Prozess in klare Schritte unterteilen:
 
 ## Schritt 1: Initialisieren Sie das Dokument und den DocumentBuilder
 
- Zuerst müssen Sie ein neues Dokument erstellen und ein`DocumentBuilder` Instanz. Die`DocumentBuilder`Die Klasse hilft Ihnen, Inhalte hinzuzufügen und in einem Word-Dokument zu formatieren.
+ Zuerst müssen Sie ein neues Dokument erstellen und ein`DocumentBuilder` Instanz. Die`DocumentBuilder`Klasse hilft Ihnen, Inhalte hinzuzufügen und in einem Word-Dokument zu formatieren.
 
 ```csharp
 // Initialisieren Sie DocumentBuilder mit dem neuen Dokument.
@@ -93,7 +93,7 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 
 ## Abschluss
 
-Das Formatieren von Text als Inline-Code in Word-Dokumenten mit Aspose.Words für .NET ist unkompliziert, wenn Sie die Schritte kennen. Indem Sie benutzerdefinierte Stile mit einzelnen oder mehreren Backticks definieren und anwenden, können Sie Ihre Codeausschnitte deutlich hervorheben. Diese Methode ist besonders nützlich für technische Dokumentationen oder jedes Dokument, bei dem die Lesbarkeit des Codes von entscheidender Bedeutung ist.
+Das Formatieren von Text als Inline-Code in Word-Dokumenten mit Aspose.Words für .NET ist unkompliziert, wenn Sie die Schritte kennen. Indem Sie benutzerdefinierte Stile mit einzelnen oder mehreren Backticks definieren und anwenden, können Sie Ihre Codeausschnitte deutlich hervorheben. Diese Methode ist besonders nützlich für technische Dokumentationen oder alle Dokumente, bei denen die Lesbarkeit des Codes von entscheidender Bedeutung ist.
 
 Experimentieren Sie mit verschiedenen Stilen und Formatierungsoptionen, um das für Ihre Anforderungen am besten geeignete Format zu finden. Aspose.Words bietet umfassende Flexibilität, sodass Sie das Erscheinungsbild Ihres Dokuments weitgehend anpassen können.
 
@@ -109,7 +109,7 @@ Ja, Sie können jede Schriftart verwenden, die Ihren Anforderungen entspricht. S
 In Aspose.Words können Sie immer nur einen Stil gleichzeitig anwenden. Wenn Sie Stile kombinieren müssen, sollten Sie einen neuen Stil erstellen, der alle gewünschten Formatierungen enthält.
 
 ### Wie wende ich Stile auf vorhandenen Text in einem Dokument an?
- Um Stile auf vorhandenen Text anzuwenden, müssen Sie zuerst den Text auswählen und dann den gewünschten Stil mithilfe der`Font.Style` Eigentum.
+ Um Stile auf bestehenden Text anzuwenden, müssen Sie zuerst den Text auswählen und dann den gewünschten Stil mit dem`Font.Style` Eigentum.
 
 ### Kann ich Aspose.Words für andere Dokumentformate verwenden?
 Aspose.Words wurde speziell für Word-Dokumente entwickelt. Für andere Formate müssen Sie möglicherweise andere Bibliotheken verwenden oder die Dokumente in ein kompatibles Format konvertieren.

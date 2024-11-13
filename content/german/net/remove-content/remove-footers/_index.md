@@ -9,7 +9,7 @@ url: /de/net/remove-content/remove-footers/
 ---
 ## Einführung
 
-Haben Sie schon einmal versucht, Fußzeilen aus einem Word-Dokument zu entfernen? Damit sind Sie nicht allein! Viele Menschen stehen vor dieser Herausforderung, insbesondere wenn sie mit Dokumenten arbeiten, die auf verschiedenen Seiten unterschiedliche Fußzeilen haben. Glücklicherweise bietet Aspose.Words für .NET eine nahtlose Lösung dafür. In diesem Tutorial zeigen wir Ihnen Schritt für Schritt, wie Sie mit Aspose.Words für .NET Fußzeilen aus einem Word-Dokument entfernen. Diese Anleitung ist perfekt für Entwickler, die Word-Dokumente einfach und effizient programmgesteuert bearbeiten möchten.
+Haben Sie schon einmal versucht, Fußzeilen aus einem Word-Dokument zu entfernen? Damit sind Sie nicht allein! Viele Menschen stehen vor dieser Herausforderung, insbesondere wenn sie mit Dokumenten arbeiten, die auf verschiedenen Seiten unterschiedliche Fußzeilen haben. Glücklicherweise bietet Aspose.Words für .NET eine nahtlose Lösung dafür. In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET Fußzeilen aus einem Word-Dokument entfernen. Diese Anleitung ist perfekt für Entwickler, die Word-Dokumente einfach und effizient programmgesteuert bearbeiten möchten.
 
 ## Voraussetzungen
 
@@ -49,7 +49,7 @@ Word-Dokumente können mehrere Abschnitte mit jeweils eigenen Kopf- und Fußzeil
 ```csharp
 foreach (Section section in doc)
 {
-    // Der Code zum Entfernen der Fußzeilen wird hier eingefügt.
+    // Der Code zum Entfernen der Fußzeilen wird hier eingefügt
 }
 ```
 
@@ -104,4 +104,4 @@ Auf jeden Fall! Aspose.Words bietet umfangreiche Funktionen zur Bearbeitung von 
 Aspose.Words unterstützt verschiedene Versionen des .NET-Frameworks, einschließlich .NET Core.
 
 ### Wo finde ich ausführlichere Dokumentation und Support?
- Sie können detaillierte[Dokumentation](https://reference.aspose.com/words/net/) und erhalten Sie Unterstützung auf der[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).
+ Sie können detaillierte[Dokumentation](https://reference.aspose.com/words/net/) und erhalten Sie Unterstützung bei der[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).

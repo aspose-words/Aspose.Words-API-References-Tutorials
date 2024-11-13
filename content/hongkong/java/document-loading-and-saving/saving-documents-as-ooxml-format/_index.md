@@ -10,7 +10,7 @@ url: /zh-hant/java/document-loading-and-saving/saving-documents-as-ooxml-format/
 
 ## 在 Aspose.Words for Java 中將文件儲存為 OOXML 格式簡介
 
-在本指南中，我們將探討如何使用 Aspose.Words for Java 以 OOXML 格式儲存文件。 OOXML (Office Open XML) 是 Microsoft Word 和其他辦公室應用程式所使用的檔案格式。我們將介紹以 OOXML 格式儲存文件的各種選項和設定。
+在本指南中，我們將探討如何使用 Aspose.Words for Java 以 OOXML 格式儲存文件。 OOXML（Office Open XML）是 Microsoft Word 和其他辦公室應用程式所使用的一種檔案格式。我們將介紹以 OOXML 格式儲存文件的各種選項和設定。
 
 ## 先決條件
 

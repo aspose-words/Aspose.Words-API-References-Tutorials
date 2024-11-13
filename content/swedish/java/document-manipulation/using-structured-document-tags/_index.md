@@ -134,7 +134,7 @@ doc.getFirstSection().getBody().appendChild(sdtRichText);
 doc.save("RichTextDocument.docx");
 ```
 
-## Ställa in innehållskontrollstilar
+## Ställa in stilar för innehållskontroll
 
 Du kan använda stilar på innehållskontroller för att förbättra dokumentets visuella utseende. Låt oss se hur du ställer in stilen för en innehållskontroll.
 
@@ -142,7 +142,7 @@ Du kan använda stilar på innehållskontroller för att förbättra dokumentets
 Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
-//Använd en anpassad stil
+// Använd en anpassad stil
 Style style = doc.getStyles().getByStyleIdentifier(StyleIdentifier.QUOTE);
 sdt.setStyle(style);
 

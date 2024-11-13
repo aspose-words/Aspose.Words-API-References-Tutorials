@@ -57,7 +57,7 @@ builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 
 ## 步骤 3：定义符合法规要求的保存选项
 
-在保存文档之前，我们需要定义保存选项，以确保文档符合特定标准。我们将使用`OoxmlSaveOptions`为此课程。
+在保存文档之前，我们需要定义保存选项以确保文档符合特定标准。我们将使用`OoxmlSaveOptions`为此课程。
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 ### 我可以自定义“角剪”形状的大小吗？
 是的，您可以通过更改尺寸来调整尺寸`InsertShape`方法。
 
-### 是否可以添加其他类型的形状？
+### 可以添加其他类型的形状吗？
 当然！Aspose.Words 支持各种形状。只需更改`ShapeType`变成您想要的形状。
 
 ### 我需要许可证才能使用 Aspose.Words 吗？

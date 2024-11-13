@@ -1,65 +1,65 @@
 ---
 title: Wyczyść kontrolę zawartości
 linktitle: Wyczyść kontrolę zawartości
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wyczyścić kontrolę zawartości w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak wyczyścić kontrolkę zawartości w dokumencie Word za pomocą Aspose.Words dla platformy .NET, korzystając z naszego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-sdt/clear-contents-control/
 ---
 ## Wstęp
 
-Czy jesteś gotowy, aby zanurzyć się w świecie Aspose.Words dla .NET? Dzisiaj przyjrzymy się, jak wyczyścić kontrolę zawartości w dokumencie programu Word przy użyciu tej potężnej biblioteki. Zacznijmy od łatwego do zrozumienia przewodnika krok po kroku!
+Jesteś gotowy, aby zanurzyć się w świecie Aspose.Words dla .NET? Dzisiaj przyjrzymy się, jak wyczyścić kontrolkę zawartości w dokumencie Word za pomocą tej potężnej biblioteki. Zacznijmy od łatwego do naśladowania przewodnika krok po kroku!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
+Zanim zaczniemy, upewnij się, że spełniasz następujące wymagania wstępne:
 
 1.  Aspose.Words dla .NET: Pobierz bibliotekę z[Tutaj](https://releases.aspose.com/words/net/).
-2. .NET Framework: Upewnij się, że masz zainstalowaną platformę .NET Framework na swoim komputerze.
-3. IDE: Zintegrowane środowisko programistyczne, takie jak Visual Studio.
-4. Dokument: dokument programu Word ze znacznikami dokumentu strukturalnego.
+2. .NET Framework: Upewnij się, że na Twoim komputerze jest zainstalowany .NET Framework.
+3. IDE: Zintegrowane środowisko programistyczne podobne do Visual Studio.
+4. Dokument: Dokument Word ze strukturalnymi znacznikami dokumentu.
 
-Po spełnieniu tych wymagań wstępnych możesz rozpocząć kodowanie.
+Mając te wymagania wstępne za sobą, możesz zacząć kodować.
 
 ## Importuj przestrzenie nazw
 
-Aby używać Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw. Oto krótki fragment na dobry początek:
+Aby użyć Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw. Oto krótki fragment, który pomoże Ci zacząć:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Markup;
 ```
 
-Podzielmy proces czyszczenia kontroli zawartości na szczegółowe etapy.
+Omówmy szczegółowo proces czyszczenia kontroli zawartości w poszczególnych krokach.
 
 ## Krok 1: Skonfiguruj swój projekt
 
 Najpierw skonfiguruj środowisko projektu.
 
-1. Otwórz Visual Studio: Uruchom Visual Studio lub preferowane IDE.
-2.  Utwórz nowy projekt: Przejdź do`File` >`New` >`Project`i wybierz aplikację konsoli C#.
-3. Zainstaluj Aspose.Words dla .NET: Użyj Menedżera pakietów NuGet, aby zainstalować Aspose.Words. Uruchom następującą komendę w konsoli Menedżera pakietów:
+1. Otwórz program Visual Studio: Uruchom program Visual Studio lub preferowane środowisko IDE.
+2.  Utwórz nowy projekt: Przejdź do`File` >`New` >`Project`i wybierz aplikację konsolową C#.
+3. Zainstaluj Aspose.Words dla .NET: Użyj NuGet Package Manager, aby zainstalować Aspose.Words. Uruchom następujące polecenie w konsoli Package Manager:
 ```sh
 Install-Package Aspose.Words
 ```
 
 ## Krok 2: Załaduj dokument
 
-Następnie załadujmy dokument programu Word zawierający znaczniki dokumentu strukturalnego.
+Następnie załadujmy dokument Word zawierający strukturalne znaczniki dokumentu.
 
-1. Ścieżka do dokumentu: Zdefiniuj ścieżkę do katalogu dokumentów.
+1. Ścieżka do dokumentu: Określ ścieżkę do katalogu dokumentów.
    ```csharp
    string dataDir = "YOUR DOCUMENT DIRECTORY";
    ```
-2.  Załaduj dokument: Użyj`Document` class, aby załadować dokument programu Word.
+2.  Załaduj dokument: Użyj`Document` klasa, aby załadować dokument Word.
    ```csharp
    Document doc = new Document(dataDir + "Structured document tags.docx");
    ```
 
 ## Krok 3: Uzyskaj dostęp do znacznika dokumentu strukturalnego
 
-Przejdźmy teraz do znacznika dokumentu strukturalnego (SDT) znajdującego się w dokumencie.
+Teraz uzyskajmy dostęp do strukturalnego znacznika dokumentu (SDT) w dokumencie.
 
 1. Pobierz węzeł SDT: Pobierz węzeł SDT z dokumentu.
    ```csharp
@@ -70,7 +70,7 @@ Przejdźmy teraz do znacznika dokumentu strukturalnego (SDT) znajdującego się 
 
 Wyczyść zawartość znacznika dokumentu strukturalnego.
 
-1.  Wyczyść zawartość SDT: Użyj pliku`Clear` sposób na usunięcie zawartości.
+1.  Wyczyść zawartość SDT: Użyj`Clear` metoda usuwania zawartości.
    ```csharp
    sdt.Clear();
    ```
@@ -86,25 +86,25 @@ Na koniec zapisz zmodyfikowany dokument.
 
 ## Wniosek
 
-Gratulacje! Pomyślnie wyczyściłeś kontrolę zawartości w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że manipulowanie dokumentami programu Word jest dziecinnie proste. Wykonując poniższe kroki, możesz łatwo zarządzać uporządkowanymi znacznikami dokumentów w swoich projektach.
+Gratulacje! Udało Ci się wyczyścić kontrolę zawartości w dokumencie Word za pomocą Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że manipulowanie dokumentami Word staje się dziecinnie proste. Postępując zgodnie z tymi krokami, możesz łatwo zarządzać strukturalnymi tagami dokumentów w swoich projektach.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
+### Czym jest Aspose.Words dla .NET?
 
-Aspose.Words dla .NET to potężna biblioteka do programowej pracy z dokumentami Word w środowisku .NET.
+Aspose.Words for .NET to zaawansowana biblioteka umożliwiająca programową pracę z dokumentami Word w środowisku .NET.
 
 ### Czy mogę używać Aspose.Words za darmo?
 
  Aspose.Words oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/).
 
-### Jak uzyskać wsparcie dla Aspose.Words?
+### Jak uzyskać pomoc techniczną dotyczącą Aspose.Words?
 
  Możesz uzyskać wsparcie od społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8).
 
-### Co to są znaczniki dokumentów strukturalnych?
+### Czym są strukturalne znaczniki dokumentów?
 
-Tagi dokumentów strukturalnych (SDT) to kontrolki treści w dokumentach programu Word, które pełnią rolę obiektów zastępczych dla określonych typów treści.
+Ustrukturyzowane znaczniki dokumentu (SDT) to kontrolki zawartości w dokumentach programu Word, które pełnią funkcję symboli zastępczych określonych typów zawartości.
 
 ### Gdzie mogę znaleźć dokumentację Aspose.Words?
 

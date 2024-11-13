@@ -84,7 +84,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 builder.insertDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-## Att behålla källnumrering
+## Behåller källnumrering
 
 ```java
 ImportFormatOptions importFormatOptions = new ImportFormatOptions();

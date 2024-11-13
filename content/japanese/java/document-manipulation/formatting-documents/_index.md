@@ -10,11 +10,11 @@ url: /ja/java/document-manipulation/formatting-documents/
 
 ## Aspose.Words for Java でのドキュメントの書式設定の概要
 
-Java ドキュメント処理の世界では、Aspose.Words for Java は堅牢で多用途なツールとして知られています。レポートの生成、請求書の作成、複雑なドキュメントの作成など、どのような作業でも Aspose.Words for Java が対応します。この包括的なガイドでは、この強力な Java API を使用してドキュメントをフォーマットする技術について詳しく説明します。ステップ バイ ステップでこの旅に出発しましょう。
+Java ドキュメント処理の世界では、Aspose.Words for Java は堅牢で多用途なツールとして知られています。レポートの生成、請求書の作成、複雑なドキュメントの作成など、どのような作業でも Aspose.Words for Java が対応します。この包括的なガイドでは、この強力な Java API を使用してドキュメントをフォーマットする技術について詳しく説明します。ステップ バイ ステップでこの旅に乗り出しましょう。
 
 ## 環境の設定
 
-ドキュメントの書式設定の複雑さに入る前に、環境を設定することが重要です。プロジェクトにAspose.Words for Javaが正しくインストールされ、構成されていることを確認してください。ダウンロードするには、[ここ](https://releases.aspose.com/words/java/).
+ドキュメントの書式設定の複雑さに入る前に、環境を設定することが重要です。プロジェクトにAspose.Words for Javaが正しくインストールされ、設定されていることを確認してください。ダウンロードはここから行えます。[ここ](https://releases.aspose.com/words/java/).
 
 ## 簡単なドキュメントの作成
 
@@ -159,7 +159,7 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ## 結論
 
-この記事では、Aspose.Words for Java でのドキュメントの書式設定のさまざまな側面について説明しました。これらの情報を活用することで、Java アプリケーション用に美しく書式設定されたドキュメントを作成できます。[Aspose.Words for Java ドキュメント](https://reference.aspose.com/words/java/)より詳しいガイダンスについては、こちらをご覧ください。
+この記事では、Aspose.Words for Java でのドキュメントの書式設定のさまざまな側面について説明しました。これらの情報を活用して、Java アプリケーション用に美しく書式設定されたドキュメントを作成できます。[Aspose.Words for Java ドキュメント](https://reference.aspose.com/words/java/)より詳しいガイダンスについては、こちらをご覧ください。
 
 ## よくある質問
 

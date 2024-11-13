@@ -1,20 +1,20 @@
 ---
-title: Criação de tabelas e linhas em documentos
-linktitle: Criação de tabelas e linhas em documentos
+title: Criando tabelas e linhas em documentos
+linktitle: Criando tabelas e linhas em documentos
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda como criar tabelas e linhas em documentos usando Aspose.Words for Java. Siga este guia completo com código-fonte e perguntas frequentes.
+description: Aprenda a criar tabelas e linhas em documentos usando Aspose.Words para Java. Siga este guia abrangente com código-fonte e FAQs.
 type: docs
 weight: 12
 url: /pt/java/table-processing/creating-tables-rows/
 ---
 
 ## Introdução
-A criação de tabelas e linhas em documentos é um aspecto fundamental do processamento de documentos, e o Aspose.Words for Java torna essa tarefa mais fácil do que nunca. Neste guia passo a passo, exploraremos como utilizar Aspose.Words for Java para criar tabelas e linhas em seus documentos. Esteja você criando relatórios, gerando faturas ou criando qualquer documento que exija apresentação estruturada de dados, este guia o ajudará.
+Criar tabelas e linhas em documentos é um aspecto fundamental do processamento de documentos, e o Aspose.Words para Java torna essa tarefa mais fácil do que nunca. Neste guia passo a passo, exploraremos como utilizar o Aspose.Words para Java para criar tabelas e linhas em seus documentos. Quer você esteja criando relatórios, gerando faturas ou criando qualquer documento que exija apresentação de dados estruturados, este guia tem tudo o que você precisa.
 
 ## Preparando o cenário
- Antes de mergulharmos nos detalhes essenciais, vamos garantir que você tenha a configuração necessária para trabalhar com Aspose.Words for Java. Certifique-se de ter baixado e instalado a biblioteca. Se ainda não o fez, você pode encontrar o link para download[aqui](https://releases.aspose.com/words/java/).
+ Antes de mergulharmos nos detalhes essenciais, vamos garantir que você tenha a configuração necessária para trabalhar com o Aspose.Words para Java. Certifique-se de ter baixado e instalado a biblioteca. Se ainda não o fez, você pode encontrar o link para download[aqui](https://releases.aspose.com/words/java/).
 
-## Construindo Mesas
+## Construindo tabelas
 ### Criando uma tabela
 Para começar, vamos criar uma tabela no seu documento. Aqui está um trecho de código simples para você começar:
 
@@ -25,7 +25,7 @@ import java.io.*;
 
 public class TableCreation {
     public static void main(String[] args) throws Exception {
-        // Crie um novo documento
+        // Criar um novo documento
         Document doc = new Document();
         
         // Crie uma tabela com 3 linhas e 3 colunas
@@ -38,19 +38,19 @@ public class TableCreation {
             }
         }
         
-        // Salve o documento
+        // Salvar o documento
         doc.save("table_document.docx");
     }
 }
 ```
 
-Neste trecho de código, criamos uma tabela simples com 3 linhas e 3 colunas e preenchemos cada célula com o texto “Texto de exemplo”.
+Neste trecho de código, criamos uma tabela simples com 3 linhas e 3 colunas e preenchemos cada célula com o texto "Texto de amostra".
 
 ### Adicionando cabeçalhos à tabela
 Adicionar cabeçalhos à sua tabela geralmente é necessário para uma melhor organização. Veja como você pode conseguir isso:
 
 ```java
-// Adicione cabeçalhos à tabela
+// Adicionar cabeçalhos à tabela
 Row headerRow = table.getRows().get(0);
 headerRow.getRowFormat().setHeadingFormat(true);
 
@@ -71,7 +71,7 @@ table.setStyleIdentifier(StyleIdentifier.MEDIUM_GRID_1_ACCENT_1);
 
 ## Trabalhando com linhas
 ### Inserindo Linhas
-Adicionar linhas dinamicamente é essencial ao lidar com dados variados. Veja como inserir linhas em sua tabela:
+Adicionar linhas dinamicamente é essencial ao lidar com dados variáveis. Veja como inserir linhas na sua tabela:
 
 ```java
 // Insira uma nova linha em uma posição específica (por exemplo, após a primeira linha)
@@ -79,43 +79,43 @@ Row newRow = new Row(doc);
 table.getRows().insertAfter(newRow, table.getRows().get(0));
 ```
 
-### Excluindo linhas
+### Excluindo Linhas
 Para remover linhas indesejadas da sua tabela, você pode usar o seguinte código:
 
 ```java
-// Exclua uma linha específica (por exemplo, a segunda linha)
+// Excluir uma linha específica (por exemplo, a segunda linha)
 table.getRows().removeAt(1);
 ```
 
 ## Perguntas frequentes
-### Como definir a cor da borda da tabela?
- Você pode definir a cor da borda de uma tabela usando o`Table` aula`setBorders` método. Aqui está um exemplo:
+### Como defino a cor da borda da tabela?
+ Você pode definir a cor da borda de uma tabela usando o`Table` classe`setBorders` método. Aqui está um exemplo:
 ```java
 table.setBorders(Color.BLUE, LineStyle.SINGLE, 1.0);
 ```
 
 ### Posso mesclar células em uma tabela?
- Sim, você pode mesclar células em uma tabela usando o`Cell` aula`getCellFormat().setHorizontalMerge` método. Exemplo:
+ Sim, você pode mesclar células em uma tabela usando o`Cell` classe`getCellFormat().setHorizontalMerge` método. Exemplo:
 ```java
 Cell firstCell = table.getRows().get(0).getCells().get(0);
 firstCell.getCellFormat().setHorizontalMerge(CellMerge.FIRST);
 ```
 
 ### Como posso adicionar um índice ao meu documento?
- Para adicionar um índice, você pode usar Aspose.Words for Java's`DocumentBuilder` aula. Aqui está um exemplo básico:
+ Para adicionar um índice, você pode usar o Aspose.Words para Java`DocumentBuilder` classe. Aqui está um exemplo básico:
 ```java
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
 ### É possível importar dados de um banco de dados para uma tabela?
-Sim, você pode importar dados de um banco de dados e preencher uma tabela no seu documento. Você precisaria buscar os dados do seu banco de dados e então usar Aspose.Words for Java para inseri-los na tabela.
+Sim, você pode importar dados de um banco de dados e preencher uma tabela no seu documento. Você precisaria buscar os dados do seu banco de dados e então usar o Aspose.Words para Java para inseri-los na tabela.
 
-### Como posso formatar o texto nas células da tabela?
- Você pode formatar o texto nas células da tabela acessando o`Run` objetos e aplicando a formatação conforme necessário. Por exemplo, alterar o tamanho ou estilo da fonte.
+### Como posso formatar o texto dentro das células da tabela?
+ Você pode formatar o texto dentro das células da tabela acessando o`Run` objetos e aplicar formatação conforme necessário. Por exemplo, alterando o tamanho ou estilo da fonte.
 
 ### Posso exportar o documento para diferentes formatos?
- Aspose.Words for Java permite que você salve seu documento em vários formatos, incluindo DOCX, PDF, HTML e muito mais. Use o`Document.save` método para especificar o formato desejado.
+ Aspose.Words para Java permite que você salve seu documento em vários formatos, incluindo DOCX, PDF, HTML e muito mais. Use o`Document.save` método para especificar o formato desejado.
 
 ## Conclusão
-Criar tabelas e linhas em documentos usando Aspose.Words for Java é um recurso poderoso para automação de documentos. Com o código-fonte fornecido e a orientação neste guia abrangente, você está bem equipado para aproveitar o potencial do Aspose.Words for Java em seus aplicativos Java. Esteja você criando relatórios, documentos ou apresentações, a apresentação de dados estruturados está a apenas um trecho de código de distância.
+Criar tabelas e linhas em documentos usando o Aspose.Words para Java é um recurso poderoso para automação de documentos. Com o código-fonte e a orientação fornecidos neste guia abrangente, você está bem equipado para aproveitar o potencial do Aspose.Words para Java em seus aplicativos Java. Quer você esteja criando relatórios, documentos ou apresentações, a apresentação de dados estruturados está a apenas um trecho de código de distância.

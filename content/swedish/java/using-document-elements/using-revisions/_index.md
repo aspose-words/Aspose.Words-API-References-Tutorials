@@ -91,7 +91,7 @@ Paragraph para = body.getFirstParagraph();
 para.appendChild(new Run(doc, "Paragraph 1. "));
 body.appendParagraph("Paragraph 2. ");
 body.appendParagraph("Paragraph 3. ");
-//Vi har tre stycken, varav ingen är registrerad som någon typ av revision
+// Vi har tre stycken, varav ingen är registrerad som någon typ av revision
 // Om vi lägger till/tar bort något innehåll i dokumentet medan vi spårar revisioner,
 // de kommer att visas som sådana i dokumentet och kan accepteras/avvisas.
 doc.startTrackRevisions("John Doe", new Date());
@@ -112,7 +112,7 @@ doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //var Is.Empty
 // Att stoppa spårningen av revisioner gör att denna text visas som normal text.
-// Revisioner räknas inte när dokumentet ändras.
+//Revisioner räknas inte när dokumentet ändras.
 doc.stopTrackRevisions();
 // Spara dokumentet.
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");

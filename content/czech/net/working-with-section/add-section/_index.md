@@ -123,7 +123,7 @@ Absolutně! Můžete přidat tolik sekcí, kolik potřebujete. Každá sekce mů
 
 Rozvržení oddílu můžete přizpůsobit nastavením vlastností, jako je velikost stránky, orientace, okraje a záhlaví/zápatí. To lze provést programově pomocí Aspose.Words.
 
-### Mohou být sekce vnořeny do dokumentů aplikace Word?
+### Lze sekce vnořit do dokumentů aplikace Word?
 
 Ne, sekce nelze vnořovat do sebe. Můžete však mít několik sekcí po sobě, z nichž každá má své vlastní odlišné rozvržení a formátování.
 

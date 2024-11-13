@@ -2,7 +2,7 @@
 title: Drukowanie dokumentów z ustawieniami strony
 linktitle: Drukowanie dokumentów z ustawieniami strony
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak drukować dokumenty z precyzyjnym ustawieniem strony za pomocą Aspose.Words dla Java. Dostosuj układy, rozmiar papieru i nie tylko.
+description: Dowiedz się, jak drukować dokumenty z precyzyjnym ustawieniem strony za pomocą Aspose.Words for Java. Dostosuj układy, rozmiar papieru i wiele więcej.
 type: docs
 weight: 11
 url: /pl/java/document-printing/printing-documents-page-setup/
@@ -10,13 +10,13 @@ url: /pl/java/document-printing/printing-documents-page-setup/
 
 ## Wstęp
 
-Drukowanie dokumentów z precyzyjnym ustawieniem strony ma kluczowe znaczenie przy tworzeniu profesjonalnie wyglądających raportów, faktur lub innych materiałów drukowanych. Aspose.Words for Java upraszcza ten proces programistom Java, umożliwiając im kontrolę nad każdym aspektem układu strony.
+Drukowanie dokumentów z precyzyjnym ustawieniem strony jest kluczowe, jeśli chodzi o tworzenie profesjonalnie wyglądających raportów, faktur lub innych materiałów drukowanych. Aspose.Words for Java upraszcza ten proces dla programistów Java, umożliwiając im kontrolowanie każdego aspektu układu strony.
 
 ## Konfigurowanie środowiska programistycznego
 
 Zanim zaczniemy, upewnijmy się, że masz odpowiednie środowisko programistyczne. Będziesz potrzebować:
 
-- Zestaw programistyczny Java (JDK)
+- Zestaw narzędzi programistycznych Java (JDK)
 - Zintegrowane środowisko programistyczne (IDE), takie jak Eclipse lub IntelliJ IDEA
 - Aspose.Words dla biblioteki Java
 
@@ -24,17 +24,17 @@ Zanim zaczniemy, upewnijmy się, że masz odpowiednie środowisko programistyczn
 
 Zacznij od utworzenia nowego projektu Java w wybranym IDE. Nadaj mu znaczącą nazwę i możesz kontynuować.
 
-## Dodawanie Aspose.Words dla Java do Twojego projektu
+## Dodawanie Aspose.Words dla Java do projektu
 
-Aby używać Aspose.Words dla Java, musisz dodać bibliotekę do swojego projektu. Wykonaj następujące kroki:
+Aby użyć Aspose.Words dla Java, musisz dodać bibliotekę do swojego projektu. Wykonaj następujące kroki:
 
-1.  Pobierz bibliotekę Aspose.Words dla Java z[Tutaj](https://releases.aspose.com/words/java/).
+1.  Pobierz bibliotekę Aspose.Words dla Java ze strony[Tutaj](https://releases.aspose.com/words/java/).
 
 2. Dodaj plik JAR do ścieżki klas swojego projektu.
 
 ## Ładowanie dokumentu
 
-W tej sekcji omówimy, jak załadować dokument, który chcesz wydrukować. Możesz ładować dokumenty w różnych formatach, takich jak DOCX, DOC, RTF i inne.
+W tej sekcji omówimy, jak załadować dokument, który chcesz wydrukować. Możesz załadować dokumenty w różnych formatach, takich jak DOCX, DOC, RTF i inne.
 
 ```java
 // Załaduj dokument
@@ -43,10 +43,10 @@ Document doc = new Document("sample.docx");
 
 ## Dostosowywanie ustawień strony
 
-Teraz następuje ekscytująca część. Możesz dostosować ustawienia konfiguracji strony zgodnie ze swoimi wymaganiami. Obejmuje to ustawienie rozmiaru strony, marginesów, orientacji i nie tylko.
+Teraz nadchodzi ekscytująca część. Możesz dostosować ustawienia konfiguracji strony zgodnie ze swoimi wymaganiami. Obejmuje to ustawienie rozmiaru strony, marginesów, orientacji i innych.
 
 ```java
-// Dostosuj konfigurację strony
+// Dostosuj ustawienia strony
 PageSetup pageSetup = doc.getSections().get(0).getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
 pageSetup.setPageWidth(595.0);
@@ -57,7 +57,7 @@ pageSetup.setRightMargin(72.0);
 
 ## Drukowanie dokumentu
 
-Drukowanie dokumentu jest prostym procesem dzięki Aspose.Words dla Java. Możesz wydrukować na fizycznej drukarce lub wygenerować plik PDF do dystrybucji cyfrowej.
+Drukowanie dokumentu jest prostym procesem z Aspose.Words for Java. Możesz wydrukować na drukarce fizycznej lub wygenerować plik PDF do dystrybucji cyfrowej.
 
 ```java
 // Wydrukuj dokument
@@ -69,13 +69,13 @@ job.print();
 
 ## Wniosek
 
-W tym artykule omówiliśmy, jak drukować dokumenty z niestandardowymi ustawieniami strony przy użyciu Aspose.Words dla Java. Dzięki zaawansowanym funkcjom możesz z łatwością tworzyć profesjonalnie wyglądające materiały drukowane. Niezależnie od tego, czy jest to raport biznesowy, czy projekt kreatywny, Aspose.Words dla Java zapewni Ci wszystko.
+W tym artykule przyjrzeliśmy się sposobowi drukowania dokumentów z niestandardową konfiguracją strony za pomocą Aspose.Words for Java. Dzięki jego potężnym funkcjom możesz z łatwością tworzyć profesjonalnie wyglądające materiały drukowane. Niezależnie od tego, czy jest to raport biznesowy, czy projekt kreatywny, Aspose.Words for Java ma wszystko, czego potrzebujesz.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak mogę zmienić rozmiar papieru w dokumencie?
+### Jak mogę zmienić rozmiar papieru mojego dokumentu?
 
- Aby zmienić rozmiar papieru dokumentu, użyj opcji`setPageWidth`I`setPageHeight` metody`PageSetup` class i określ żądane wymiary w punktach.
+ Aby zmienić rozmiar papieru dokumentu, użyj`setPageWidth` I`setPageHeight` metody`PageSetup` klasę i podaj żądane wymiary w punktach.
 
 ### Czy mogę wydrukować wiele kopii dokumentu?
 
@@ -87,8 +87,8 @@ Tak, Aspose.Words for Java obsługuje szeroką gamę formatów dokumentów, w ty
 
 ### Czy mogę drukować na konkretnej drukarce?
 
- pewnością! Możesz określić konkretną drukarkę za pomocą opcji`setPrintService` metodę i zapewnienie pożądanego`PrintService` obiekt.
+ Oczywiście! Możesz określić konkretną drukarkę, używając`setPrintService` metoda i zapewnienie pożądanego`PrintService` obiekt.
 
 ### Jak zapisać wydrukowany dokument w formacie PDF?
 
-Aby zapisać wydrukowany dokument jako plik PDF, możesz użyć Aspose.Words for Java, aby zapisać dokument jako plik PDF po wydrukowaniu.
+Aby zapisać wydrukowany dokument w formacie PDF, możesz użyć Aspose.Words for Java, aby zapisać dokument jako plik PDF po wydrukowaniu.

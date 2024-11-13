@@ -41,7 +41,7 @@ Document doc = new Document(dataDir + "Hyperlinks.docx");
 
 代替`"Hyperlinks.docx"`使用您的实际文档的路径。
 
-## 第 2 步：迭代字段
+## 步骤 2：迭代字段
 
 遍历文档中的每个字段来查找和替换超链接：
 

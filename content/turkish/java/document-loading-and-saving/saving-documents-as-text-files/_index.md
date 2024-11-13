@@ -2,7 +2,7 @@
 title: Aspose.Words for Java'da Belgeleri Metin Dosyaları Olarak Kaydetme
 linktitle: Belgeleri Metin Dosyaları Olarak Kaydetme
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'da belgeleri metin dosyaları olarak nasıl kaydedeceğinizi öğrenin. Java kodu örneklerini içeren adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for Java'da belgeleri metin dosyaları olarak nasıl kaydedeceğinizi öğrenin. Java kod örnekleriyle adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 24
 url: /tr/java/document-loading-and-saving/saving-documents-as-text-files/
@@ -10,19 +10,19 @@ url: /tr/java/document-loading-and-saving/saving-documents-as-text-files/
 
 ## Aspose.Words for Java'da Belgeleri Metin Dosyaları Olarak Kaydetmeye Giriş
 
-Bu eğitimde Aspose.Words for Java kütüphanesini kullanarak belgeleri metin dosyaları olarak nasıl kaydedeceğimizi inceleyeceğiz. Aspose.Words, Word belgeleriyle çalışmak için güçlü bir Java API'sidir ve belgeleri düz metin de dahil olmak üzere farklı formatlarda kaydetmek için çeşitli seçenekler sunar. Bunu başarmak için gereken adımları ele alacağız ve yol boyunca örnek Java kodu sunacağız.
+Bu eğitimde, Aspose.Words for Java kütüphanesini kullanarak belgeleri metin dosyaları olarak nasıl kaydedeceğimizi inceleyeceğiz. Aspose.Words, Word belgeleriyle çalışmak için güçlü bir Java API'sidir ve düz metin de dahil olmak üzere belgeleri farklı biçimlerde kaydetmek için çeşitli seçenekler sunar. Bunu başarmak için adımları ele alacağız ve bu arada örnek Java kodu sağlayacağız.
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
 - Sisteminizde Java Geliştirme Kiti (JDK) yüklü.
--  Aspose.Words for Java kütüphanesi projenize entegre edilmiştir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
-- Java programlamanın temel bilgisi.
+-  Projenize entegre edilmiş Aspose.Words for Java kütüphanesi. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+- Temel Java programlama bilgisi.
 
-## 1. Adım: Bir Belge Oluşturun
+## Adım 1: Bir Belge Oluşturun
 
-Bir belgeyi metin dosyası olarak kaydetmek için öncelikle Aspose.Words'ü kullanarak bir belge oluşturmamız gerekir. Biraz içeriğe sahip bir belge oluşturmak için basit bir Java kod pasajı:
+Bir belgeyi metin dosyası olarak kaydetmek için, öncelikle Aspose.Words kullanarak bir belge oluşturmamız gerekir. İşte biraz içerikle bir belge oluşturmak için basit bir Java kod parçası:
 
 ```java
 Document doc = new Document();
@@ -33,13 +33,13 @@ builder.writeln("שלום עולם!");
 builder.writeln("مرحبا بالعالم!");
 ```
 
-Bu kodda yeni bir belge oluşturuyoruz ve ona farklı dillerdeki metinler de dahil olmak üzere bazı metinler ekliyoruz.
+Bu kodda yeni bir belge oluşturuyoruz ve içine farklı dillerdeki metinler de dahil olmak üzere bazı metinler ekliyoruz.
 
-## 2. Adım: Metin Kaydetme Seçeneklerini Tanımlayın
+## Adım 2: Metin Kaydetme Seçeneklerini Tanımlayın
 
-Daha sonra belgenin metin dosyası olarak nasıl kaydedileceğini belirten metin kaydetme seçeneklerini tanımlamamız gerekiyor. Bidi işaretleri ekleme, liste girintisi ve daha fazlası gibi çeşitli ayarları yapılandırabiliriz. İki örneğe bakalım:
+Sonra, belgenin bir metin dosyası olarak nasıl kaydedileceğini belirten metin kaydetme seçeneklerini tanımlamamız gerekir. Bidi işaretleri, liste girintisi ve daha fazlası gibi çeşitli ayarları yapılandırabiliriz. İki örneğe bakalım:
 
-### Örnek 1: Bidi İşaretlerini Ekleme
+### Örnek 1: Bidi İşaretleri Ekleme
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -47,9 +47,9 @@ saveOptions.setAddBidiMarks(true);
 doc.save("output.txt", saveOptions);
 ```
 
- Bu örnekte, bir oluşturuyoruz`TxtSaveOptions` nesneyi ayarlayın ve`AddBidiMarks`mülkiyet`true` metin çıktısına bidi işaretlerini dahil etmek için.
+ Bu örnekte, bir tane oluşturuyoruz`TxtSaveOptions` nesneyi seçin ve ayarlayın`AddBidiMarks`mülk`true` metin çıktısına bidi işaretleri eklemek için.
 
-### Örnek 2: Liste Girintisi için Sekme Karakterini Kullanma
+### Örnek 2: Liste Girintisi için Sekme Karakterinin Kullanılması
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -58,17 +58,17 @@ saveOptions.getListIndentation().setCharacter('\t');
 doc.save("output.txt", saveOptions);
 ```
 
-Burada, liste girintisi için 1 sayısıyla bir sekme karakteri kullanacak şekilde kaydetme seçeneklerini yapılandırıyoruz.
+Burada, liste girintisi için 1 sayısıyla sekme karakterini kullanacak şekilde kaydetme seçeneklerini yapılandırıyoruz.
 
-## 3. Adım: Belgeyi Metin Olarak Kaydetme
+## Adım 3: Belgeyi Metin Olarak Kaydedin
 
-Artık metin kaydetme seçeneklerini tanımladığımıza göre belgeyi metin dosyası olarak kaydedebiliriz. Aşağıdaki kod bunun nasıl yapılacağını gösterir:
+Artık metin kaydetme seçeneklerini tanımladığımıza göre, belgeyi bir metin dosyası olarak kaydedebiliriz. Aşağıdaki kod bunu nasıl yapacağınızı gösterir:
 
 ```java
 doc.save("output.txt", saveOptions);
 ```
 
- Yer değiştirmek`"output.txt"` metin dosyasını kaydetmek istediğiniz istenen dosya yolu ile.
+ Yer değiştirmek`"output.txt"` metin dosyasını kaydetmek istediğiniz dosya yolunu belirtin.
 
 ## Aspose.Words for Java'da Belgeleri Metin Dosyaları Olarak Kaydetmek İçin Tam Kaynak Kodu
 
@@ -122,13 +122,13 @@ doc.save("output.txt", saveOptions);
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for Java'da belgeleri metin dosyaları olarak nasıl kaydedeceğimizi öğrendik. Belge oluşturma, metin kaydetme seçeneklerini tanımlama ve belgeyi metin biçiminde kaydetme adımlarını ele aldık. Aspose.Words, belgeleri kaydetme konusunda kapsamlı esneklik sağlayarak çıktıyı özel gereksinimlerinize göre uyarlamanıza olanak tanır.
+Bu eğitimde, Java için Aspose.Words'de belgeleri metin dosyaları olarak nasıl kaydedeceğimizi öğrendik. Bir belge oluşturma, metin kaydetme seçeneklerini tanımlama ve belgeyi metin biçiminde kaydetme adımlarını ele aldık. Aspose.Words, belgeleri kaydetme konusunda kapsamlı esneklik sağlayarak çıktıyı özel gereksinimlerinize göre uyarlamanıza olanak tanır.
 
-## SSS'ler
+## SSS
 
-### Metin çıktısına bidi işaretlerini nasıl eklerim?
+### Metin çıktısına bidi işareti nasıl eklerim?
 
- Metin çıktısına bidi işaretleri eklemek için`AddBidiMarks` mülkiyeti`TxtSaveOptions` ile`true`. Örneğin:
+ Metin çıktısına bidi işaretleri eklemek için,`AddBidiMarks` mülkiyeti`TxtSaveOptions` ile`true`. Örneğin:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -137,7 +137,7 @@ saveOptions.setAddBidiMarks(true);
 
 ### Liste girinti karakterini özelleştirebilir miyim?
 
- Evet, liste girinti karakterini yapılandırarak özelleştirebilirsiniz.`ListIndentation` mülkiyeti`TxtSaveOptions`. Örneğin, liste girintisi amacıyla bir sekme karakteri kullanmak için aşağıdakileri yapabilirsiniz:
+ Evet, liste girinti karakterini yapılandırarak özelleştirebilirsiniz.`ListIndentation` mülkiyeti`TxtSaveOptions`Örneğin, liste girintisi için sekme karakteri kullanmak üzere aşağıdakileri yapabilirsiniz:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -145,14 +145,14 @@ saveOptions.getListIndentation().setCount(1);
 saveOptions.getListIndentation().setCharacter('\t');
 ```
 
-### Aspose.Words for Java çok dilli metinleri işlemeye uygun mu?
+### Aspose.Words for Java çok dilli metinleri işlemek için uygun mudur?
 
-Evet, Aspose.Words for Java çok dilli metinlerin işlenmesi için uygundur. Çeşitli dilleri ve karakter kodlamalarını desteklediğinden, farklı dillerdeki belgelerle çalışmak için çok yönlü bir seçimdir.
+Evet, Aspose.Words for Java çok dilli metinleri işlemek için uygundur. Çeşitli dilleri ve karakter kodlamalarını destekler, bu da onu farklı dillerdeki belgelerle çalışmak için çok yönlü bir seçenek haline getirir.
 
-### Aspose.Words for Java için daha fazla belge ve kaynağa nasıl erişebilirim?
+### Aspose.Words for Java için daha fazla dokümana ve kaynağa nasıl erişebilirim?
 
- Aspose.Words for Java ile ilgili kapsamlı belgeleri ve kaynakları Aspose belgelendirme web sitesinde bulabilirsiniz:[Aspose.Words for Java Belgelendirmesi](https://reference.aspose.com/words/java/).
+ Aspose.Words for Java için kapsamlı dokümanları ve kaynakları Aspose dokümantasyon web sitesinde bulabilirsiniz:[Java Belgeleri için Aspose.Words](https://reference.aspose.com/words/java/).
 
 ### Aspose.Words for Java'yı nereden indirebilirim?
 
- Aspose.Words for Java kütüphanesini Aspose web sitesinden indirebilirsiniz:[Aspose.Words for Java'yı indirin](https://releases.aspose.com/words/java/).
+ Aspose.Words for Java kütüphanesini Aspose web sitesinden indirebilirsiniz:[Java için Aspose.Words'ü indirin](https://releases.aspose.com/words/java/).

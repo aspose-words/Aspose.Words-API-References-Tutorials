@@ -34,7 +34,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 
 ## Schritt 2: ODT-Speicheroptionen festlegen
 
-Um das Dokument als ODT zu speichern, müssen wir die ODT-Speicheroptionen angeben. Zusätzlich können wir die Maßeinheit für das Dokument festlegen. Open Office verwendet Zentimeter, während MS Office Zoll verwendet. Wir stellen es auf Zoll ein:
+Um das Dokument als ODT zu speichern, müssen wir die ODT-Speicheroptionen angeben. Außerdem können wir die Maßeinheit für das Dokument festlegen. Open Office verwendet Zentimeter, während MS Office Zoll verwendet. Wir stellen es auf Zoll ein:
 
 ```java
 OdtSaveOptions saveOptions = new OdtSaveOptions();
@@ -69,7 +69,7 @@ In diesem Artikel haben wir gelernt, wie man Dokumente mit Aspose.Words für Jav
 
 ### Wie kann ich Aspose.Words für Java herunterladen?
 
- Sie können Aspose.Words für Java von der Aspose-Website herunterladen. Besuchen Sie[dieser Link](https://releases.aspose.com/words/java/)um auf die Download-Seite zuzugreifen.
+ Sie können Aspose.Words für Java von der Aspose-Website herunterladen. Besuchen Sie[dieser Link](https://releases.aspose.com/words/java/) um auf die Download-Seite zuzugreifen.
 
 ### Welchen Vorteil bietet das Speichern von Dokumenten im ODT-Format?
 

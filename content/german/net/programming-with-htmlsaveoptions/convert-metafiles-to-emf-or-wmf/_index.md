@@ -24,7 +24,7 @@ Alles dabei? Super! Dann legen wir los.
 
 ## Namespaces importieren
 
-Als Erstes müssen wir die erforderlichen Namespaces importieren. Dies ist wichtig, da es unserem Programm mitteilt, wo die Klassen und Methoden zu finden sind, die wir verwenden werden.
+Als Erstes müssen wir die erforderlichen Namespaces importieren. Dies ist wichtig, da es unserem Programm mitteilt, wo es die Klassen und Methoden findet, die wir verwenden werden.
 
 ```csharp
 using Aspose.Words;
@@ -50,7 +50,7 @@ Als nächstes benötigen wir einen HTML-String, der das SVG-Bild enthält, das w
 ```csharp
 string html = 
     @"<html>
-        <svg xmlns='http://www.w3.org/2000/svg' Breite='500' Höhe='40' Ansichtsbox='0 0 500 40'>
+        <svg xmlns='http://www.w3.org/2000/svg' width='500' height='40' viewBox='0 0 500 40'>
             <text x='0' y='35' font-family='Verdana' font-size='35'>Hello world!</text>
         </svg>
     </html>";
@@ -67,7 +67,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions { ConvertSvgToEmf = true };
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
 ```
 
- Dieser Codeausschnitt erstellt ein neues`Document` -Objekt, indem Sie die HTML-Zeichenfolge mit den angegebenen Ladeoptionen darin laden.
+ Dieser Codeausschnitt erstellt eine neue`Document` Objekt, indem Sie die HTML-Zeichenfolge mit den angegebenen Ladeoptionen darin laden.
 
 ## Schritt 4: HtmlSaveOptions für das Metadateiformat festlegen
 
@@ -97,7 +97,7 @@ Und da haben Sie es! Indem Sie diese Schritte befolgen, haben Sie SVG-Bilder mit
 Ja, Sie können verschiedene Bildformate konvertieren, indem Sie die Lade- und Speicheroptionen entsprechend anpassen.
 
 ### Ist es notwendig, eine bestimmte .NET Framework-Version zu verwenden?
-Aspose.Words für .NET unterstützt mehrere Versionen des .NET Frameworks, aber es ist immer eine gute Idee, für beste Kompatibilität und Funktionen die neueste Version zu verwenden.
+Aspose.Words für .NET unterstützt mehrere Versionen des .NET Frameworks, aber für optimale Kompatibilität und Funktionen ist es immer eine gute Idee, die neueste Version zu verwenden.
 
 ### Was ist der Vorteil der Konvertierung von SVG in EMF oder WMF?
 Durch die Konvertierung von SVG in EMF oder WMF wird sichergestellt, dass Vektorgrafiken in Umgebungen, die SVG möglicherweise nicht vollständig unterstützen, erhalten bleiben und korrekt gerendert werden.

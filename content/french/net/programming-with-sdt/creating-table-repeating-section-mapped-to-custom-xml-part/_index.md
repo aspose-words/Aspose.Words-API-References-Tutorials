@@ -1,6 +1,6 @@
 ---
-title: Création d'une section répétitive de tableau mappée à une partie XML personnalisée
-linktitle: Création d'une section répétitive de tableau mappée à une partie XML personnalisée
+title: Création d'une section répétitive de tableau mappée sur une partie XML personnalisée
+linktitle: Création d'une section répétitive de tableau mappée sur une partie XML personnalisée
 second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment créer un tableau avec une section répétitive mappée à un CustomXmlPart dans un document Word à l'aide d'Aspose.Words pour .NET.
 type: docs
@@ -9,12 +9,12 @@ url: /fr/net/programming-with-sdt/creating-table-repeating-section-mapped-to-cus
 ---
 ## Introduction
 
-Dans ce didacticiel, nous allons parcourir le processus de création d'un tableau avec une section répétitive mappée à une partie XML personnalisée à l'aide d'Aspose.Words pour .NET. Ceci est particulièrement utile pour générer dynamiquement des documents basés sur des données structurées.
+Dans ce didacticiel, nous allons parcourir le processus de création d'un tableau avec une section répétitive mappée à une partie XML personnalisée à l'aide d'Aspose.Words pour .NET. Cela est particulièrement utile pour générer dynamiquement des documents basés sur des données structurées.
 
-## Conditions préalables
+## Prérequis
 
-Avant de commencer, assurez-vous d'avoir les éléments suivants :
-1.  Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis le[Site Aspose](https://releases.aspose.com/words/net/).
+Avant de commencer, assurez-vous de disposer des éléments suivants :
+1.  Bibliothèque Aspose.Words pour .NET installée. Vous pouvez la télécharger à partir du[Site Web d'Aspose](https://releases.aspose.com/words/net/).
 2. Une compréhension de base de C# et XML.
 
 ## Importer des espaces de noms
@@ -27,9 +27,9 @@ using Aspose.Words.Markup;
 using Aspose.Words.Tables;
 ```
 
-## Étape 1 : initialiser le document et DocumentBuilder
+## Étape 1 : Initialiser le document et DocumentBuilder
 
- Tout d'abord, créez un nouveau document et initialisez un`DocumentBuilder`:
+ Tout d’abord, créez un nouveau document et initialisez un`DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -38,7 +38,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Étape 2 : ajouter une partie XML personnalisée
+## Étape 2 : Ajouter une partie XML personnalisée
 
 Ajoutez une partie XML personnalisée au document. Ce XML contient les données que nous souhaitons mapper à notre table :
 
@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Étape 4 : Créer une section répétitive
 
- Créer un`StructuredDocumentTag` (SDT) pour la section répétitive et mappez-la aux données XML :
+ Créer un`StructuredDocumentTag` (SDT) pour la section répétitive et la mapper aux données XML :
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
@@ -73,7 +73,7 @@ repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## Étape 5 : Créer un élément de section répétitive
+## Étape 5 : Créer un élément de section répétitif
 
 Créez un SDT pour l'élément de section répétitive et ajoutez-le à la section répétitive :
 
@@ -98,7 +98,7 @@ authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## Étape 7 : Enregistrez le document
+## Étape 7 : Enregistrer le document
 
 Enfin, enregistrez le document dans le répertoire spécifié :
 
@@ -108,15 +108,15 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 
 ## Conclusion
 
-En suivant ces étapes, vous avez réussi à créer un tableau avec une section répétitive mappée à une partie XML personnalisée à l'aide d'Aspose.Words pour .NET. Cela permet une génération de contenu dynamique basée sur des données structurées, rendant la création de documents plus flexible et plus puissante.
+En suivant ces étapes, vous avez réussi à créer un tableau avec une section répétitive mappée à une partie XML personnalisée à l'aide d'Aspose.Words pour .NET. Cela permet de générer du contenu dynamique basé sur des données structurées, ce qui rend la création de documents plus flexible et plus puissante.
 
 ## FAQ
 
-### Qu'est-ce qu'un StructuredDocumentTag (SDT) ?
-Un SDT, également appelé contrôle de contenu, est une région délimitée dans un document utilisée pour contenir des données structurées.
+### Qu'est-ce qu'un StructuredDocumentTag (SDT) ?
+Un SDT, également connu sous le nom de contrôle de contenu, est une région délimitée dans un document utilisée pour contenir des données structurées.
 
 ### Puis-je utiliser d’autres types de données dans la partie XML personnalisée ?
-Oui, vous pouvez structurer votre partie XML personnalisée avec n'importe quel type de données et les mapper en conséquence.
+Oui, vous pouvez structurer votre partie XML personnalisée avec n’importe quel type de données et les mapper en conséquence.
 
-### Comment puis-je ajouter plus de lignes à la section répétitive ?
+### Comment ajouter des lignes supplémentaires à la section répétitive ?
 La section répétitive réplique automatiquement la structure de ligne pour chaque élément du chemin XML mappé.

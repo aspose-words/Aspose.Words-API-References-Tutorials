@@ -2,7 +2,7 @@
 title: Erweitertes Feld ohne Dokumentgenerator einfügen
 linktitle: Erweitertes Feld ohne Dokumentgenerator einfügen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie ein erweitertes Feld einfügen, ohne DocumentBuilder in Aspose.Words für .NET zu verwenden. Folgen Sie dieser Anleitung, um Ihre Fähigkeiten zur Dokumentverarbeitung zu verbessern.
+description: Erfahren Sie, wie Sie in Aspose.Words für .NET ein erweitertes Feld einfügen, ohne DocumentBuilder zu verwenden. Folgen Sie dieser Anleitung, um Ihre Fähigkeiten zur Dokumentverarbeitung zu verbessern.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/insert-advance-field-with-out-document-builder/
@@ -31,7 +31,7 @@ using Aspose.Words.Fields;
 
 ## Schritt 1: Richten Sie Ihr Projekt ein
 
-Lassen Sie uns zunächst unser Visual Studio-Projekt einrichten.
+Als Erstes richten wir unser Visual Studio-Projekt ein.
 
 ### Neues Projekt erstellen
 
@@ -66,7 +66,7 @@ Dadurch wird ein neues, leeres Dokument erstellt.
 2. Holen Sie sich den ersten Absatz im Dokument:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 Dadurch wird sichergestellt, dass wir einen Absatz zum Arbeiten haben.
@@ -83,7 +83,7 @@ Fügen wir nun das Erweitert-Feld in unseren Absatz ein.
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 ```
 
-Dadurch wird in unserem Absatz ein neues Erweitertfeld erstellt.
+Dadurch wird in unserem Absatz ein neues Vorlauffeld erstellt.
 
 ### Feldeigenschaften festlegen
 
@@ -136,7 +136,7 @@ Mit einem erweiterten Feld in Aspose.Words können Sie die Positionierung von Te
 
 ### Kann ich DocumentBuilder mit erweiterten Feldern verwenden?
 
-Ja, Sie können DocumentBuilder verwenden, um erweiterte Felder einzufügen, dieses Tutorial zeigt Ihnen jedoch, wie Sie dies ohne DocumentBuilder tun können, um mehr Flexibilität und Kontrolle zu erreichen.
+Ja, Sie können DocumentBuilder verwenden, um erweiterte Felder einzufügen. Dieses Tutorial zeigt Ihnen jedoch, wie Sie dies ohne DocumentBuilder tun können, um mehr Flexibilität und Kontrolle zu erreichen.
 
 ### Wo finde ich weitere Beispiele zur Verwendung von Aspose.Words?
 

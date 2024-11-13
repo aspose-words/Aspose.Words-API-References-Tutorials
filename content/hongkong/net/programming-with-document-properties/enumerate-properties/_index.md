@@ -95,7 +95,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功地列舉了 Word 文件的內建屬性和自訂屬性。這只是 Aspose.Words 功能的冰山一角。無論您是自動產生文檔還是操作複雜文檔，Aspose.Words 都提供了一組豐富的功能，讓您的生活更輕鬆。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功地列舉了 Word 文件的內建屬性和自訂屬性。這只是 Aspose.Words 功能的冰山一角。無論您是自動產生文檔還是操作複雜文檔，Aspose.Words 都提供了一組豐富的功能，讓您的生活更輕鬆。
 
 ## 常見問題解答
 

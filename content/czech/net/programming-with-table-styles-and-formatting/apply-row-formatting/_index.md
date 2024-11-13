@@ -15,7 +15,7 @@ Pokud chcete své dokumenty Word okořenit nějakým efektním formátováním �
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete, abyste mohli začít:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ne, můžete si jej stáhnout z[Aspose stránku vydání](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud nemáte, můžete si jej stáhnout z[Aspose stránku vydání](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí AC# jako Visual Studio.
 3. Základní znalost C#: Znalost programování v C# je nezbytná.
 4. Adresář dokumentů: Adresář, kam uložíte dokument.
@@ -102,10 +102,10 @@ A tady to máte! Úspěšně jste použili formátování řádků na tabulku v 
  Šířku sloupců můžete nastavit pomocí`CellFormat.Width` vlastnictví.
 
 ### Je možné sloučit buňky v Aspose.Words pro .NET?  
- Ano, buňky můžete sloučit pomocí`CellMerge` vlastnictvím`CellFormat`.
+ Ano, buňky můžete sloučit pomocí`CellMerge` vlastnictví`CellFormat`.
 
 ### Mohu přidat ohraničení do řádků?  
- Absolutně! Ohraničení řádků můžete přidat nastavením`Borders` vlastnictvím`RowFormat`.
+ Absolutně! Ohraničení řádků můžete přidat nastavením`Borders` vlastnictví`RowFormat`.
 
 ### Jak použiji podmíněné formátování na řádky?  
 V kódu můžete použít podmíněnou logiku k použití jiného formátování na základě konkrétních podmínek.

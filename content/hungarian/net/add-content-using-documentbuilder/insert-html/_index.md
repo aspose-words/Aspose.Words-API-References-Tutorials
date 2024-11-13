@@ -9,7 +9,7 @@ url: /hu/net/add-content-using-documentbuilder/insert-html/
 ---
 ## Bevezetés
 
-Szia, kódolásrajongó társa! Gondolkozott már azon, hogyan lehet HTML-kódot beszúrni egy Word-dokumentumba az Aspose.Words for .NET használatával? Akár néhány divatos formázást szeretne hozzáadni, akár csak egyszerűsíteni szeretné dokumentumkészítési folyamatát, jó helyen jár. Ebben az oktatóanyagban belemerülünk az Aspose.Words for .NET használatával a HTML közvetlenül Word-dokumentumaiba való beágyazásához. És ne aggódj; a dolgokat egyszerűvé, vonzóvá és kifejezetten szórakoztatóvá tesszük!
+Szia, kódolásrajongó társa! Gondolkozott már azon, hogyan illeszthet be HTML-kódot egy Word-dokumentumba az Aspose.Words for .NET használatával? Akár néhány divatos formázást szeretne hozzáadni, akár csak egyszerűsíteni szeretné dokumentumkészítési folyamatát, jó helyen jár. Ebben az oktatóanyagban belemerülünk az Aspose.Words for .NET használatával a HTML közvetlenül Word-dokumentumaiba való beágyazásához. És ne aggódj; a dolgokat egyszerűvé, vonzóvá és kifejezetten szórakoztatóvá tesszük!
 
 ## Előfeltételek
 
@@ -107,4 +107,4 @@ Igen, a HTML beillesztése után tovább manipulálhatja a dokumentumot az Aspos
  Kezdheti a[ingyenes próbaverzió](https://releases.aspose.com/) vagy megszerezni a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) a teljes funkciókért.
 
 ### Hol találok további oktatóanyagokat és példákat?  
- A[dokumentáció](https://reference.aspose.com/words/net/)és[támogató fórumok](https://forum.aspose.com/c/words/8)remek kiindulópont a részletesebb útmutatók és a közösségi támogatás érdekében.
+A[dokumentáció](https://reference.aspose.com/words/net/) és[támogató fórumok](https://forum.aspose.com/c/words/8)remek kiindulópont a részletesebb útmutatók és a közösségi támogatás érdekében.

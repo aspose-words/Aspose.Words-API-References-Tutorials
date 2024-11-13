@@ -15,7 +15,7 @@ Szüksége volt valaha táblázatot beszúrni HTML-ből egy Word dokumentumba? F
 
 Mielőtt belevágnánk a táblázat HTML-ből történő beszúrásának ügyébe, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
 
-1. Aspose.Words for .NET: Töltse le és telepítse az Aspose.Words for .NET könyvtárat a[letöltési oldal](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Töltse le és telepítse az Aspose.Words for .NET könyvtárat a[letöltési oldal](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Bármely .NET-kompatibilis fejlesztői környezet, például a Visual Studio.
 3. C# alapismeretek: Az alapvető C# programozási fogalmak megértése.
 4. HTML-táblakód: A beszúrni kívánt táblázat HTML-kódja.

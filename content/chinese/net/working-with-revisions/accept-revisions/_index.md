@@ -2,7 +2,7 @@
 title: 接受修订
 linktitle: 接受修订
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 掌握文档修订。学习如何轻松跟踪、接受和拒绝更改。提升您的文档管理技能。
+description: 使用 Aspose.Words for .NET 掌握文档修订。学习如何轻松跟踪、接受和拒绝更改。提高您的文档管理技能。
 type: docs
 weight: 10
 url: /zh/net/working-with-revisions/accept-revisions/
@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Revision;
 ```
 
-让我们将这个过程分解成几个易于管理的步骤。每个步骤都会详细解释，以确保您理解代码的每个部分。
+让我们将这个过程分解成易于管理的步骤。每个步骤都会详细解释，以确保您理解代码的每个部分。
 
 ## 步骤 1：初始化文档
 

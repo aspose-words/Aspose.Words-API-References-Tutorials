@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-//Čtvrtý seznam s mezerami mezi číslem seznamu a obsahem položky seznamu,
+// Čtvrtý seznam s mezerami mezi číslem seznamu a obsahem položky seznamu,
 // bude detekováno jako seznam pouze v případě, že je "DetectNumberingWithWhitespaces" v objektu LoadOptions nastaveno na hodnotu true,
 // abyste předešli tomu, že odstavce začínající čísly nebudou mylně rozpoznány jako seznamy.
 TxtLoadOptions loadOptions = new TxtLoadOptions();
@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- V tomto příkladu načteme textový dokument a ořízneme úvodní a koncové mezery pomocí`TxtLeadingSpacesOptions.TRIM`a`TxtTrailingSpacesOptions.TRIM`.
+ tomto příkladu načteme textový dokument a ořízneme úvodní a koncové mezery pomocí`TxtLeadingSpacesOptions.TRIM` a`TxtTrailingSpacesOptions.TRIM`.
 
 ## Krok 3: Ovládání směru textu
 
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-Tento kód nastavuje směr dokumentu na automatickou detekci (`DocumentDirection.AUTO`a načte textový dokument s hebrejským textem. Směr dokumentu můžete upravit podle potřeby.
+Tento kód nastavuje směr dokumentu na automatickou detekci (`DocumentDirection.AUTO`) a načte textový dokument s hebrejským textem. Směr dokumentu můžete upravit podle potřeby.
 
 ## Kompletní zdrojový kód pro načítání textových souborů pomocí Aspose.Words pro Javu
 
@@ -166,7 +166,7 @@ Aspose.Words for Java je výkonná knihovna pro zpracování dokumentů, která 
 
 Chcete-li začít s Aspose.Words pro Java, postupujte takto:
 1. Stáhněte a nainstalujte knihovnu Aspose.Words for Java.
-2.  Podívejte se na dokumentaci na[Aspose.Words for Java API Reference](https://reference.aspose.com/words/java/)pro podrobné informace a příklady.
+2.  Podívejte se na dokumentaci na[Aspose.Words for Java API Reference](https://reference.aspose.com/words/java/) pro podrobné informace a příklady.
 3. Prozkoumejte ukázkový kód a výukové programy, abyste se naučili, jak knihovnu efektivně používat.
 
 ### Jak načtu textový dokument pomocí Aspose.Words for Java?
@@ -179,7 +179,7 @@ Chcete-li začít s Aspose.Words pro Java, postupujte takto:
 
 ### Jak zacházím s mezerami v načtených textových dokumentech?
 
- Pomocí můžete ovládat, jak se zachází s úvodními a koncovými mezerami v načtených textových dokumentech`TxtLoadOptions` . Možnosti jako`TxtLeadingSpacesOptions`a`TxtTrailingSpacesOptions`umožňují oříznout nebo zachovat místa podle potřeby. Příklad naleznete v části „Možnosti manipulace s prostory“ v této příručce.
+ Pomocí můžete ovládat, jak se zachází s úvodními a koncovými mezerami v načtených textových dokumentech`TxtLoadOptions` . Možnosti jako`TxtLeadingSpacesOptions` a`TxtTrailingSpacesOptions` umožňují oříznout nebo zachovat místa podle potřeby. Příklad naleznete v části „Možnosti manipulace s prostory“ v této příručce.
 
 ### Jaký je význam směrování textu v Aspose.Words pro Javu?
 

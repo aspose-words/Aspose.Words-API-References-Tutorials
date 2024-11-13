@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功定義了條件格式。透過執行這些步驟，您可以輕鬆突出顯示表格中的重要數據，使您的文件資訊更豐富且更具視覺吸引力。條件格式是一個強大的工具，掌握它可以顯著增強您的文件處理能力。
+現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功定義了條件格式。透過執行這些步驟，您可以輕鬆突出顯示表格中的重要數據，使您的文件資訊更豐富且更具視覺吸引力。條件格式是一個強大的工具，掌握它可以顯著增強您的文件處理能力。
 
 ## 常見問題解答
 

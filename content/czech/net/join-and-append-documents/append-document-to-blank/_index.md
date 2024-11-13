@@ -88,7 +88,7 @@ Tím zajistíte, že cílový dokument bude zcela prázdný a zabráníte tak ne
 
 ## Krok 4: Připojte zdrojový dokument
 
-Když je zdrojový i cílový dokument připraven, je čas připojit zdrojový dokument k prázdnému dokumentu.
+S připraveným zdrojovým i cílovým dokumentem je čas připojit zdrojový dokument k prázdnému dokumentu.
 
 1. Připojte zdrojový dokument k cílovému dokumentu:
 
@@ -122,7 +122,7 @@ Ano, můžete připojit více dokumentů opakovaným voláním`AppendDocument` m
 
 ### Co se stane, když má zdrojový dokument jiné formátování?
 
- The`ImportFormatMode.KeepSourceFormatting` zajišťuje, že formátování zdrojového dokumentu je po připojení zachováno.
+The`ImportFormatMode.KeepSourceFormatting` zajišťuje, že formátování zdrojového dokumentu je po připojení zachováno.
 
 ### Potřebuji licenci k používání Aspose.Words?
 

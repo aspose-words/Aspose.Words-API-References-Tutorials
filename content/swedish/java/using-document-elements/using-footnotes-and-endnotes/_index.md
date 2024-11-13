@@ -123,6 +123,6 @@ Fotnoter visas längst ned på sidan, medan slutnoter samlas i slutet av ett avs
 Ja, du kan anpassa formateringen av fotnoter och slutnoter med Aspose.Words för Java.
 
 ### 4. Är fotnoter och slutnoter viktiga i dokumentformatering?
-Ja, fotnoter och slutnoter är viktiga för att tillhandahålla referenser och ytterligare information i dokument.
+Ja, fotnoter och slutnoter är viktiga för att ge referenser och ytterligare information i dokument.
 
 Utforska gärna fler funktioner i Aspose.Words för Java och förbättra dina möjligheter att skapa dokument. Glad kodning!

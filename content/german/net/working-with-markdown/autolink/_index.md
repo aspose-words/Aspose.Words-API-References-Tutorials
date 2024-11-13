@@ -68,10 +68,8 @@ builder.InsertHyperlink("Contact Support", "mailto:support@aspose.com", false);
 Hyperlinks können an den Stil Ihres Dokuments angepasst werden. Sie können die Schriftfarbe, -größe und andere Attribute mithilfe der`Font` Eigenschaft des DocumentBuilder.
 
 ```csharp
-// Passen Sie das Erscheinungsbild des Hyperlinks an.
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.Font.Underline = Underline.Single;
-builder.InsertHyperlink("Styled Link", "https://www.aspose.com", false);
+builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
 ```
 
 Dieser Codeausschnitt fügt einen blauen, unterstrichenen Hyperlink ein, der ihn in Ihrem Dokument hervorhebt.
@@ -89,7 +87,7 @@ Ja, Sie können Hyperlinks zu anderen Dokumenten einfügen, indem Sie den Dateip
  Sie können einen Hyperlink entfernen, indem Sie das`Remove` Methode auf dem Hyperlink-Knoten.
 
 ### Kann ich Hyperlinks Tooltips hinzufügen?
-Ja, Sie können Tooltips hinzufügen, indem Sie`ScreenTip` Eigenschaft des Hyperlinks.
+ Ja, Sie können Tooltips hinzufügen, indem Sie`ScreenTip`Eigenschaft des Hyperlinks.
 
 ### Ist es möglich, Hyperlinks im gesamten Dokument unterschiedlich zu formatieren?
  Ja, Sie können Hyperlinks unterschiedlich formatieren, indem Sie die`Font` Eigenschaften vor dem Einfügen jedes Hyperlinks.

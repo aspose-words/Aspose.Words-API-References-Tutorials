@@ -1,7 +1,7 @@
 ---
 title: Einbetten von OLE-Objekten und ActiveX-Steuerelementen in Word-Dokumente
 linktitle: Einbetten von OLE-Objekten und ActiveX-Steuerelementen in Word-Dokumente
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python OLE-Objekte und ActiveX-Steuerelemente in Word-Dokumente einbetten. Erstellen Sie nahtlos interaktive und dynamische Dokumente.
 type: docs
 weight: 21
@@ -71,7 +71,7 @@ doc = aw.Document()
 
 ### Schritt 3: Einfügen eines ActiveX-Steuerelements
 
-Angenommen, Sie möchten einen Multimedia-Player einbetten. So können Sie das tun:
+Angenommen, Sie möchten einen Multimedia-Player einbetten. So geht's:
 
 ```python
 activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
@@ -95,7 +95,7 @@ Um die Größe eines eingebetteten Objekts zu ändern, klicken Sie darauf, um es
 
 ### Warum funktioniert mein ActiveX-Steuerelement nicht?
 
-Wenn das ActiveX-Steuerelement nicht funktioniert, liegt dies möglicherweise an den Sicherheitseinstellungen des Dokuments oder an der zum Anzeigen des Dokuments verwendeten Software. Überprüfen Sie die Sicherheitseinstellungen und stellen Sie sicher, dass ActiveX-Steuerelemente aktiviert sind.
+Wenn das ActiveX-Steuerelement nicht funktioniert, liegt dies möglicherweise an den Sicherheitseinstellungen des Dokuments oder an der Software, die zum Anzeigen des Dokuments verwendet wird. Überprüfen Sie die Sicherheitseinstellungen und stellen Sie sicher, dass ActiveX-Steuerelemente aktiviert sind.
 
 ## Abschluss
 

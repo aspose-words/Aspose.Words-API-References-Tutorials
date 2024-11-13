@@ -55,7 +55,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
  प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` आपकी निर्देशिका के वास्तविक पथ के साथ.
 
 ### चरण 2.2: दस्तावेज़ लोड करें
-अपने वर्ड दस्तावेज़ को प्रोजेक्ट में लोड करें।
+अपने वर्ड दस्तावेज़ को प्रोजेक्ट में लोड करें.
 
 ```csharp
 Document doc = new Document(dataDir + "Content-ID.docx");

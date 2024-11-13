@@ -8,7 +8,7 @@ weight: 16
 url: /zh/java/document-printing/
 ---
 
-文档打印是文字处理和文档处理的一个重要方面，而 Aspose.Words for Java 提供了强大的功能来促进高效的文档打印。这些使用 Aspose.Words for Java 的文档打印教程提供了有关如何以编程方式打印文档的全面指导，使开发人员能够自动化和简化打印过程。这些教程重点介绍文档打印、文字处理和文档处理，为开发人员提供了增强其文档管理工作流程的知识和技能。
+文档打印是文字处理和文档处理的一个重要方面，而 Aspose.Words for Java 提供了强大的功能来促进高效的文档打印。这些使用 Aspose.Words for Java 的文档打印教程提供了有关如何以编程方式打印文档的全面指导，使开发人员能够自动化和简化打印过程。这些教程重点介绍文档打印、文字处理和文档处理，为开发人员提供增强其文档管理工作流程的知识和技能。
 
 ## 探索文档打印功能
 
@@ -28,7 +28,7 @@ url: /zh/java/document-printing/
 学习使用 Aspose.Words for Java 自动打印文档。使用 Java 进行高效文档管理的分步指南和代码示例。
 ### [使用页面设置打印文档](./printing-documents-page-setup/)
 了解如何使用 Aspose.Words for Java 打印具有精确页面设置的文档。自定义布局、纸张尺寸等。
-### [定制文件印刷](./customized-document-printing/)
+### [定制文件打印](./customized-document-printing/)
 了解如何使用 Aspose.Words for Java 轻松实现自定义文档打印。本分步指南涵盖了从设置到高级自定义的所有内容。
 ### [打印特定文档页面](./printing-specific-document-pages/)
 了解如何使用 Aspose.Words for Java 打印 Word 文档中的特定页面。面向 Java 开发人员的分步指南。

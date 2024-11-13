@@ -43,7 +43,7 @@ using Aspose.Words.Editing;
 
 ## 步骤 2：加载文档
 
-现在，让我们加载要保护的文档。确保您的目录中已准备好 Word 文档。
+现在，让我们加载您想要保护的文档。确保您的目录中已准备好 Word 文档。
 
 1. 设置文档目录：定义文档目录的路径。
    ```csharp
@@ -90,7 +90,7 @@ using Aspose.Words.Editing;
 
 ## 步骤 5：关闭可编辑范围
 
-如果没有结束，可编辑范围就不完整。接下来让我们添加结束。
+可编辑范围没有结束就不完整。接下来让我们添加结束。
 
 1. 结束可编辑范围：定义可编辑范围的结束。
    ```csharp
@@ -112,7 +112,7 @@ using Aspose.Words.Editing;
 
 ## 结论
 
-就这样！您已成功使用 Aspose.Words for .NET 在 Word 文档中创建了不受限制的可编辑区域。此功能对于协作环境非常有用，在协作环境中，文档的某些部分需要保持不变，而其他部分可以编辑。 
+就这样！您已成功使用 Aspose.Words for .NET 在 Word 文档中创建了不受限制的可编辑区域。此功能对于协作环境非常有用，因为在协作环境中，文档的某些部分需要保持不变，而其他部分可以编辑。 
 
 尝试更复杂的场景和不同的保护级别，以充分利用 Aspose.Words。如果您有任何疑问或遇到问题，请随时查看[文档](https://reference.aspose.com/words/net/)或联系[支持](https://forum.aspose.com/c/words/8).
 
@@ -124,7 +124,7 @@ using Aspose.Words.Editing;
 ### Aspose.Words 中还有哪些其他保护类型？
 Aspose.Words 支持各种保护类型，例如 AllowOnlyComments、AllowOnlyFormFields 和 NoProtection。
 
-### 是否可以取消文档的保护？
+### 是否可以删除文档的保护？
 是的，您可以使用`Unprotect`方法并提供正确的密码。
 
 ### 我可以为不同的部分指定不同的密码吗？

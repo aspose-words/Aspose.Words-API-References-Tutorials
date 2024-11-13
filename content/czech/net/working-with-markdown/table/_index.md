@@ -79,15 +79,15 @@ Vytváření a přizpůsobení tabulek v Aspose.Words pro .NET je jednoduché, j
 ## FAQ
 
 ### Mohu přidat více než dvě buňky za sebou?
- Ano, můžete přidat tolik buněk, kolik potřebujete v řadě, opakováním`InsertCell()`a`Writeln()` metody.
+ Ano, můžete přidat tolik buněk, kolik potřebujete v řadě, opakováním`InsertCell()` a`Writeln()` metody.
 
 ### Jak mohu sloučit buňky v tabulce?
- Buňky můžete sloučit pomocí`CellFormat.HorizontalMerge`a`CellFormat.VerticalMerge` vlastnosti.
+ Buňky můžete sloučit pomocí`CellFormat.HorizontalMerge` a`CellFormat.VerticalMerge` vlastnosti.
 
 ### Je možné přidávat obrázky do buněk tabulky?
  Absolutně! Obrázky můžete vkládat do buněk pomocí`DocumentBuilder.InsertImage` metoda.
 
-### Mohu jednotlivé buňky různě stylovat?
+### Mohu jednotlivé buňky stylovat jinak?
  Ano, na jednotlivé buňky můžete použít různé styly tím, že k nim přistoupíte prostřednictvím`Cells` kolekce řady.
 
 ### Jak odstraním ohraničení z tabulky?

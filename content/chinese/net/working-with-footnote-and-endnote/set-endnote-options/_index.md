@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## 步骤 2：初始化 DocumentBuilder
+## 第 2 步：初始化 DocumentBuilder
 
 接下来，我们将初始化`DocumentBuilder`类。该类提供了一种向文档添加内容的简单方法。
 
@@ -82,13 +82,13 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 Aspose.Words for .NET 是一个功能强大的库，用于以编程方式操作 Word 文档。它允许开发人员创建、修改和转换各种格式的 Word 文档。
 
 ### 我可以免费使用 Aspose.Words 吗？
-您可以免费试用 Aspose.Words。如需长期使用，您可以购买许可证[这里](https://purchase.aspose.com/buy).
+您可以免费试用 Aspose.Words。如需长期使用，您可以从以下网站购买许可证[这里](https://purchase.aspose.com/buy).
 
 ### 什么是尾注？
 尾注是放在章节或文档末尾的参考或注释。它们提供附加信息或引文。
 
 ### 如何自定义尾注的外观？
-您可以使用以下选项自定义尾注选项，例如编号、位置和重新启动规则：`EndnoteOptions` Aspose.Words for .NET 中的类。
+您可以使用以下方式自定义尾注选项，例如编号、位置和重新启动规则`EndnoteOptions`Aspose.Words for .NET 中的类。
 
 ### 在哪里可以找到有关 Aspose.Words for .NET 的更多文档？
 详细文档可在[Aspose.Words for .NET 文档](https://reference.aspose.com/words/net/)页。

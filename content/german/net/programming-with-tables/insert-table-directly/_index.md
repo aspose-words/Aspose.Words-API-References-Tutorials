@@ -14,7 +14,7 @@ Das programmgesteuerte Erstellen von Tabellen kann eine ziemliche Herausforderun
 
 Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie zum Starten benötigen. Hier ist eine kurze Checkliste:
 
-1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek heruntergeladen und installiert haben. Sie erhalten sie von der[Download-Seite](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek heruntergeladen und installiert haben. Sie erhalten sie von[Download-Seite](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine Entwicklungsumgebung wie Visual Studio.
 3. Grundkenntnisse in C#: Verstehen der Grundlagen der C#-Programmierung.
 4. Dokumentverzeichnis: Ein Verzeichnispfad, in dem Sie Ihre Dokumente speichern.
@@ -53,7 +53,7 @@ Als nächstes erstellen wir das Tabellenobjekt. Hier definieren wir die Struktur
 
 ```csharp
 // Wir beginnen mit der Erstellung des Tabellenobjekts. Beachten Sie, dass wir das Dokumentobjekt übergeben müssen
-// zum Konstruktor jedes Knotens. Dies liegt daran, dass jeder Knoten, den wir erstellen,
+// zum Konstruktor jedes Knotens. Dies liegt daran, dass jeder Knoten, den wir erstellen, gehören muss
 // zu einem Dokument.
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);

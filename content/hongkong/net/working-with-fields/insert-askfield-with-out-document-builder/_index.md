@@ -49,7 +49,7 @@ Document doc = new Document();
 在 Word 文件中，內容被組織成節點。我們需要存取第一個段落節點，我們將在其中插入 ASK 欄位：
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 這行程式碼檢索文件中的第一段，為我們的 ASK 欄位插入做好準備。

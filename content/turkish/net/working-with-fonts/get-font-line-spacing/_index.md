@@ -1,6 +1,6 @@
 ---
-title: Yazı Tipi Satır Aralığını Alma
-linktitle: Yazı Tipi Satır Aralığını Alma
+title: Yazı Tipi Satır Aralığını Al
+linktitle: Yazı Tipi Satır Aralığını Al
 second_title: Aspose.Words Belge İşleme API'si
 description: Bu adım adım eğitimle Aspose.Words for .NET kullanarak yazı tipi satır aralığını nasıl elde edeceğinizi öğrenin. Geliştiriciler için mükemmel.
 type: docs
@@ -9,19 +9,19 @@ url: /tr/net/working-with-fonts/get-font-line-spacing/
 ---
 ## giriiş
 
-Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanıyan güçlü bir kitaplıktır. Gerçekleştirmeniz gerekebilecek yaygın görevlerden biri, bir belgedeki belirli bir yazı tipinin satır aralığını almaktır. Bu eğitimde, Aspose.Words for .NET'i kullanarak yazı tipi satır aralığını kolayca alabilmenizi sağlamak için size süreç boyunca adım adım yol göstereceğiz. 
+Aspose.Words for .NET, Word belgelerini programatik olarak oluşturmanıza, düzenlemenize ve dönüştürmenize olanak tanıyan güçlü bir kütüphanedir. Gerçekleştirmeniz gereken yaygın görevlerden biri, bir belgedeki belirli bir yazı tipinin satır aralığını almaktır. Bu eğitimde, Aspose.Words for .NET kullanarak yazı tipi satır aralığını kolayca elde edebilmenizi sağlayarak sizi adım adım süreçte yönlendireceğiz. 
 
-## Önkoşullar
+## Ön koşullar
 
-Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Koda dalmadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
-1.  Aspose.Words for .NET Library: En son sürümü şuradan indirin ve yükleyin:[Burada](https://releases.aspose.com/words/net/).
-2. Geliştirme Ortamı: Visual Studio gibi bir IDE kurulumuna sahip olduğunuzdan emin olun.
-3. Temel C# Bilgisi: Bu eğitimde, C# programlama konusunda temel bir anlayışa sahip olduğunuz varsayılmaktadır.
+1.  Aspose.Words for .NET Kütüphanesi: En son sürümü buradan indirin ve kurun[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi bir IDE'nin kurulu olduğundan emin olun.
+3. Temel C# Bilgisi: Bu eğitimde C# programlama hakkında temel bir anlayışa sahip olduğunuzu varsayıyoruz.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle C# projenize gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları Aspose.Words işlevlerine erişmenizi sağlayacaktır.
+Öncelikle, C# projenize gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları, Aspose.Words işlevlerine erişmenizi sağlayacaktır.
 
 ```csharp
 using System;
@@ -29,43 +29,43 @@ using Aspose.Words;
 using Aspose.Words.Fonts;
 ```
 
-Yazı tipi satır aralığını alma sürecini basit, yönetilebilir adımlara ayıralım.
+Yazı tipi satır aralığını ayarlama sürecini basit ve yönetilebilir adımlara bölelim.
 
-## 1. Adım: Yeni Bir Belge Oluşturun
+## Adım 1: Yeni Bir Belge Oluşturun
 
-İlk adım Aspose.Words for .NET'i kullanarak yeni bir Word belgesi örneği oluşturmaktır.
+İlk adım, Aspose.Words for .NET kullanarak yeni bir Word belgesi örneği oluşturmaktır.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## Adım 2: DocumentBuilder'ı başlatın
+## Adım 2: DocumentBuilder'ı Başlatın
 
-Daha sonra, başlatmamız gerekiyor`DocumentBuilder` nesne. Bu nesne belge içeriğini oluşturmamıza ve işlememize yardımcı olacaktır.
+Daha sonra, başlatmamız gerekiyor`DocumentBuilder` nesne. Bu nesne, belge içeriğini oluşturmamıza ve düzenlememize yardımcı olacaktır.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Yazı Tipi Özelliklerini Ayarlayın
+## Adım 3: Yazı Tipi Özelliklerini Ayarlayın
 
-Artık eklemek istediğimiz metnin yazı tipi özelliklerini ayarlıyoruz. Bu örnek için "Calibri" yazı tipini kullanacağız.
+Şimdi, eklemek istediğimiz metin için font özelliklerini ayarlıyoruz. Bu örnek için "Calibri" fontunu kullanacağız.
 
 ```csharp
 builder.Font.Name = "Calibri";
 ```
 
-## Adım 4: Belgeye Metin Yazma
+## Adım 4: Belgeye Metin Yazın
 
- kullanarak`DocumentBuilder` nesne, belgeye bir miktar metin yazın. Bu metin, önceki adımda belirlediğimiz yazı tipi özelliklerini kullanacaktır.
+ Kullanımı`DocumentBuilder` nesne, belgeye biraz metin yazın. Bu metin, önceki adımda ayarladığımız yazı tipi özelliklerini kullanacaktır.
 
 ```csharp
 builder.Writeln("Sample Text");
 ```
 
-## Adım 5: Yazı Tipi Nesnesini Alın
+## Adım 5: Font Nesnesini Alın
 
-Satır aralığını elde etmek için yeni eklediğimiz metnin font nesnesine erişmemiz gerekiyor. Bu, belge yapısından ilk paragraf dizisine gidilerek yapılabilir.
+Satır aralığını elde etmek için, az önce eklediğimiz metnin font nesnesine erişmemiz gerekir. Bu, belge yapısı boyunca ilk paragraf çalışmasına giderek yapılabilir.
 
 ```csharp
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
@@ -73,7 +73,7 @@ Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 
 ## Adım 6: Satır Aralığını Alın
 
-Son olarak yazı tipi nesnesinden satır aralığını alıp konsola yazdırıyoruz.
+Son olarak font nesnesinden satır aralığını alıp konsola yazdırıyoruz.
 
 ```csharp
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
@@ -81,21 +81,21 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak yazı tipi satır aralığını almak, bunu aşağıdaki basit adımlara ayırdığınızda çok kolaydır. İster yeni bir belge oluşturuyor olun ister mevcut bir belgeyle çalışıyor olun, Aspose.Words yazı tipi özelliklerini verimli bir şekilde yönetmek için ihtiyacınız olan tüm araçları sağlar.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak yazı tipi satır aralığını almak, bunu bu basit adımlara böldüğünüzde basittir. Yeni bir belge oluşturuyor veya mevcut bir belgeyle çalışıyor olun, Aspose.Words yazı tipi özelliklerini etkili bir şekilde yönetmeniz için gereken tüm araçları sağlar.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, geliştiricilerin C# kullanarak Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır.
+Aspose.Words for .NET, geliştiricilerin C# kullanarak Word belgelerini programlı bir şekilde oluşturmalarına, düzenlemelerine ve dönüştürmelerine olanak tanıyan güçlü bir kütüphanedir.
 
 ### Aspose.Words for .NET'i diğer .NET dillerinde kullanabilir miyim?
-Evet, Aspose.Words for .NET'i VB.NET ve F# dahil herhangi bir .NET diliyle kullanabilirsiniz.
+Evet, Aspose.Words for .NET'i VB.NET ve F# dahil olmak üzere herhangi bir .NET diliyle kullanabilirsiniz.
 
 ### Aspose.Words for .NET'i nasıl indirebilirim?
  Aspose.Words for .NET'in en son sürümünü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/net/).
 
-### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
- Evet, şu adresten ücretsiz deneme alabilirsiniz:[Burada](https://releases.aspose.com/).
+### Aspose.Words for .NET için ücretsiz deneme sürümü mevcut mu?
+ Evet, ücretsiz deneme sürümünü şu adresten alabilirsiniz:[Burada](https://releases.aspose.com/).
 
-### Aspose.Words for .NET belgelerini nerede bulabilirim?
- Aspose.Words for .NET'in belgeleri mevcuttur[Burada](https://reference.aspose.com/words/net/).
+### Aspose.Words for .NET'in belgelerini nerede bulabilirim?
+ Aspose.Words for .NET'e ilişkin belgeler mevcuttur[Burada](https://reference.aspose.com/words/net/).

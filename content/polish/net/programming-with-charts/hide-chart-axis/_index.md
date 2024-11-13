@@ -1,28 +1,28 @@
 ---
-title: Ukryj oś wykresu w dokumencie programu Word
-linktitle: Ukryj oś wykresu w dokumencie programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ukryć oś wykresu w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego samouczka krok po kroku.
+title: Ukryj oś wykresu w dokumencie Word
+linktitle: Ukryj oś wykresu w dokumencie Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak ukryć oś wykresu w dokumencie programu Word za pomocą Aspose.Words dla platformy .NET, korzystając z naszego szczegółowego samouczka krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-charts/hide-chart-axis/
 ---
 ## Wstęp
 
-Tworzenie dynamicznych i atrakcyjnych wizualnie dokumentów programu Word często wymaga dołączenia wykresów i wykresów. Jeden z takich scenariuszy może wymagać ukrycia osi wykresu w celu zapewnienia czystszej prezentacji. Aspose.Words dla .NET zapewnia wszechstronne i łatwe w użyciu API do takich zadań. Ten samouczek poprowadzi Cię przez kroki ukrywania osi wykresu w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+Tworzenie dynamicznych i wizualnie atrakcyjnych dokumentów Word często wiąże się z włączeniem wykresów i diagramów. Jeden z takich scenariuszy może wymagać ukrycia osi wykresu w celu uzyskania bardziej przejrzystej prezentacji. Aspose.Words dla .NET zapewnia kompleksowe i łatwe w użyciu API do takich zadań. Ten samouczek przeprowadzi Cię przez kroki ukrywania osi wykresu w dokumencie Word przy użyciu Aspose.Words dla .NET.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim przejdziemy do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
 
--  Aspose.Words dla .NET: Możesz go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne: dowolne środowisko IDE obsługujące programowanie w środowisku .NET, takie jak Visual Studio.
-- .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.
+-  Aspose.Words dla .NET: Można go pobrać ze strony[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: dowolne środowisko IDE obsługujące programowanie w środowisku .NET, np. Visual Studio.
+- .NET Framework: Upewnij się, że na Twoim komputerze jest zainstalowany .NET Framework.
 - Podstawowa znajomość języka C#: Znajomość języka programowania C# będzie korzystna.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć pracę z Aspose.Words dla .NET, musisz zaimportować wymagane przestrzenie nazw w swoim projekcie. Oto jak możesz to zrobić:
+Aby rozpocząć pracę z Aspose.Words dla .NET, musisz zaimportować wymagane przestrzenie nazw do swojego projektu. Oto, jak możesz to zrobić:
 
 ```csharp
 using Aspose.Words;
@@ -30,11 +30,11 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Drawing.Charts;
 ```
 
-Podzielmy proces na proste, łatwe do wykonania kroki.
+Podzielmy ten proces na proste, łatwe do wykonania kroki.
 
-## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
+## Krok 1: Zainicjuj dokument i DocumentBuilder
 
-Pierwszy krok polega na utworzeniu nowego dokumentu Word i zainicjowaniu obiektu DocumentBuilder.
+Pierwszy krok obejmuje utworzenie nowego dokumentu Word i zainicjowanie obiektu DocumentBuilder.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- W tym kroku definiujemy ścieżkę, w której dokument zostanie zapisany. Następnie tworzymy nowy`Document` obiekt i a`DocumentBuilder` obiekt, aby rozpocząć budowanie naszego dokumentu.
+ W tym kroku definiujemy ścieżkę, pod którą dokument zostanie zapisany. Następnie tworzymy nową`Document` obiekt i`DocumentBuilder` obiekt, aby rozpocząć tworzenie naszego dokumentu.
 
 ## Krok 2: Wstaw wykres
 
@@ -55,21 +55,21 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- Tutaj wstawiamy wykres kolumnowy o określonych wymiarach. The`InsertChart` metoda zwraca a`Shape` obiekt zawierający wykres.
+ Tutaj wstawiamy wykres kolumnowy o określonych wymiarach.`InsertChart` metoda zwraca`Shape` obiekt zawierający wykres.
 
-## Krok 3: Wyczyść istniejącą serię
+## Krok 3: Wyczyść istniejące serie
 
-Przed dodaniem nowych danych do wykresu musimy wyczyścić istniejące serie.
+Przed dodaniem nowych danych do wykresu musimy wyczyścić wszelkie istniejące serie.
 
 ```csharp
 chart.Series.Clear();
 ```
 
-Ten krok zapewnia usunięcie wszelkich domyślnych danych z wykresu, ustępując miejsca nowym danym, które dodamy w następnej kolejności.
+Ten krok zapewnia usunięcie wszelkich domyślnych danych na wykresie i utworzenie miejsca dla nowych danych, które dodamy jako następne.
 
 ## Krok 4: Dodaj dane serii
 
-Dodajmy teraz do wykresu własną serię danych.
+Teraz dodajmy własną serię danych do wykresu.
 
 ```csharp
 chart.Series.Add("Aspose Series 1",
@@ -77,17 +77,17 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-Na tym etapie dodajemy serię zatytułowaną „Aspose Series 1” z odpowiednimi kategoriami i wartościami.
+W tym kroku dodajemy serię zatytułowaną „Aspose Series 1” z odpowiednimi kategoriami i wartościami.
 
 ## Krok 5: Ukryj oś Y
 
- Aby ukryć oś Y wykresu, po prostu ustawiamy`Hidden` właściwość osi Y do`true`.
+ Aby ukryć oś Y wykresu, wystarczy ustawić`Hidden` właściwość osi Y do`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-Ta linia kodu ukrywa oś Y, czyniąc ją niewidoczną na wykresie.
+Ta linijka kodu ukrywa oś Y, przez co staje się ona niewidoczna na wykresie.
 
 ## Krok 6: Zapisz dokument
 
@@ -101,21 +101,21 @@ To polecenie zapisuje dokument Word z wykresem w określonej ścieżce.
 
 ## Wniosek
 
-Gratulacje! Pomyślnie nauczyłeś się, jak ukryć oś wykresu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka ułatwia programowe manipulowanie dokumentami programu Word. Wykonując poniższe kroki, możesz przy minimalnym wysiłku tworzyć spersonalizowane i profesjonalnie wyglądające dokumenty.
+Gratulacje! Udało Ci się nauczyć, jak ukryć oś wykresu w dokumencie Word za pomocą Aspose.Words dla .NET. Ta potężna biblioteka ułatwia programowe manipulowanie dokumentami Word. Postępując zgodnie z tymi krokami, możesz tworzyć dostosowane i profesjonalnie wyglądające dokumenty przy minimalnym wysiłku.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężny interfejs API do tworzenia, edytowania, konwertowania i manipulowania dokumentami Word w aplikacjach .NET.
+### Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to zaawansowany interfejs API umożliwiający tworzenie, edycję, konwersję i modyfikowanie dokumentów Word w aplikacjach .NET.
 
 ### Czy mogę ukryć osie X i Y na wykresie?
- Tak, możesz ukryć obie osie, ustawiając`Hidden` własność obu`AxisX`I`AxisY` Do`true`.
+ Tak, możesz ukryć obie osie, ustawiając`Hidden` własność obojga`AxisX` I`AxisY` Do`true`.
 
-### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
- Tak, możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
+### Czy jest dostępna bezpłatna wersja próbna Aspose.Words dla .NET?
+ Tak, możesz otrzymać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
 ### Gdzie mogę znaleźć więcej dokumentacji?
- Szczegółową dokumentację można znaleźć na temat Aspose.Words dla .NET[Tutaj](https://reference.aspose.com/words/net/).
+ Szczegółową dokumentację Aspose.Words dla .NET można znaleźć[Tutaj](https://reference.aspose.com/words/net/).
 
-### Jak mogę uzyskać wsparcie dla Aspose.Words dla .NET?
+### Gdzie mogę uzyskać pomoc techniczną dotyczącą Aspose.Words dla .NET?
  Możesz uzyskać wsparcie od społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8).

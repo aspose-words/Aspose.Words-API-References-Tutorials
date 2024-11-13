@@ -9,18 +9,18 @@ url: /it/net/programming-with-sdt/set-content-control-color/
 ---
 ## Introduzione
 
-Se lavori con documenti di Word e devi personalizzare l'aspetto dei tag di documenti strutturati (SDT), potresti voler cambiare il loro colore. Ciò è particolarmente utile quando hai a che fare con moduli o modelli in cui la differenziazione visiva degli elementi è essenziale. In questa guida, esamineremo il processo di impostazione del colore di un SDT utilizzando Aspose.Words per .NET.
+Se lavori con documenti Word e hai bisogno di personalizzare l'aspetto degli Structured Document Tags (SDT), potresti voler cambiare il loro colore. Ciò è particolarmente utile quando hai a che fare con form o template in cui la differenziazione visiva degli elementi è essenziale. In questa guida, illustreremo il processo di impostazione del colore di un SDT utilizzando Aspose.Words per .NET.
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di avere quanto segue:
--  Aspose.Words per .NET: è necessario che questa libreria sia installata. Puoi scaricarlo da[Il sito web di Aspose](https://releases.aspose.com/words/net/).
-- Una conoscenza di base di C#: questa esercitazione presuppone che tu abbia familiarità con i concetti di base della programmazione C#.
-- Un documento di Word: dovresti avere un documento di Word che contenga almeno un tag di documento strutturato.
+-  Aspose.Words per .NET: devi avere questa libreria installata. Puoi scaricarla da[Sito web di Aspose](https://releases.aspose.com/words/net/).
+- Conoscenze di base di C#: questo tutorial presuppone che tu abbia familiarità con i concetti di base della programmazione C#.
+- Un documento Word: dovresti avere un documento Word che contenga almeno un tag di documento strutturato.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Innanzitutto, devi importare gli spazi dei nomi necessari nel tuo progetto C#. Aggiungi le seguenti direttive using nella parte superiore del file di codice:
+Per prima cosa, devi importare i namespace necessari nel tuo progetto C#. Aggiungi le seguenti direttive using all'inizio del tuo file di codice:
 
 ```csharp
 using Aspose.Words;
@@ -30,24 +30,24 @@ using System.Drawing;
 
 ## Passaggio 1: imposta il percorso del documento
 
-Specifica il percorso della directory dei documenti e carica il documento:
+Specificare il percorso della directory del documento e caricare il documento:
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Passaggio 2: caricare il documento
 
- Crea un`Document` oggetto caricando il file Word:
+ Crea un`Document` oggetto caricando il tuo file Word:
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
 ```
 
-## Passaggio 3: accedi al tag del documento strutturato
+## Passaggio 3: accedere al tag del documento strutturato
 
-Recupera il tag del documento strutturato (SDT) dal documento. In questo esempio, stiamo accedendo al primo SDT:
+Recupera lo Structured Document Tag (SDT) dal documento. In questo esempio, stiamo accedendo al primo SDT:
 
 ```csharp
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
@@ -55,13 +55,13 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 
 ## Passaggio 4: imposta il colore SDT
 
-Modifica la proprietà del colore dell'SDT. Qui impostiamo il colore sul rosso:
+Modifica la proprietà colore dell'SDT. Qui, impostiamo il colore su rosso:
 
 ```csharp
 sdt.Color = Color.Red;
 ```
 
-## Passaggio 5: salva il documento
+## Passaggio 5: Salvare il documento
 
 Salva il documento aggiornato in un nuovo file:
 
@@ -71,25 +71,25 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlColor.docx");
 
 ## Conclusione
 
-Cambiare il colore di un tag di documento strutturato in un documento di Word utilizzando Aspose.Words per .NET è semplice. Seguendo i passaggi sopra descritti, puoi applicare facilmente modifiche visive ai tuoi SDT, migliorando l'aspetto e la funzionalità dei tuoi documenti.
+Cambiare il colore di uno Structured Document Tag in un documento Word usando Aspose.Words per .NET è semplice. Seguendo i passaggi descritti sopra, puoi facilmente applicare modifiche visive ai tuoi SDT, migliorando l'aspetto e la funzionalità dei tuoi documenti.
 
 ## Domande frequenti
 
-### Posso utilizzare colori diversi per gli SDT?
+### Posso usare colori diversi per gli SDT?
 
- Sì, puoi utilizzare qualsiasi colore disponibile nel`System.Drawing.Color` classe. Ad esempio, puoi usare`Color.Blue`, `Color.Green`, ecc.
+ Sì, puoi usare qualsiasi colore disponibile nel`System.Drawing.Color` classe. Ad esempio, puoi usare`Color.Blue`, `Color.Green`, ecc.
 
-### Come posso cambiare il colore di più SDT in un documento?
+### Come faccio a cambiare il colore di più SDT in un documento?
 
-Dovresti scorrere tutti gli SDT nel documento e applicare la modifica del colore a ciascuno di essi. Puoi ottenere questo risultato utilizzando un ciclo che scorre tutti gli SDT.
+Dovresti fare un loop attraverso tutti gli SDT nel documento e applicare il cambio colore a ognuno. Puoi ottenere questo risultato usando un loop che itera attraverso tutti gli SDT.
 
 ### È possibile impostare altre proprietà degli SDT oltre al colore?
 
- Sì, il`StructuredDocumentTag` La classe ha varie proprietà che puoi impostare, tra cui la dimensione del carattere, lo stile del carattere e altro. Fare riferimento alla documentazione di Aspose.Words per maggiori dettagli.
+ Sì, il`StructuredDocumentTag` la classe ha varie proprietà che puoi impostare, tra cui dimensione del carattere, stile del carattere e altro. Per maggiori dettagli, fai riferimento alla documentazione di Aspose.Words.
 
 ### Posso aggiungere eventi agli SDT, ad esempio eventi clic?
 
-Aspose.Words non supporta direttamente la gestione degli eventi per gli SDT. Tuttavia, puoi gestire le interazioni SDT tramite i campi modulo o utilizzare altri metodi per gestire gli input e le interazioni degli utenti.
+Aspose.Words non supporta direttamente la gestione degli eventi per gli SDT. Tuttavia, puoi gestire le interazioni SDT tramite campi modulo o utilizzare altri metodi per gestire gli input e le interazioni degli utenti.
 
 ### È possibile rimuovere un SDT dal documento?
 

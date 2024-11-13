@@ -1,7 +1,7 @@
 ---
-title: Stel de opmaak van de tabelcellen in
-linktitle: Stel de opmaak van de tabelcellen in
-second_title: Aspose.Words-API voor documentverwerking
+title: Tabelcelopmaak instellen
+linktitle: Tabelcelopmaak instellen
+second_title: Aspose.Words API voor documentverwerking
 description: Verbeter uw Word-documenten met professionele tabelcelopmaak met Aspose.Words voor .NET. Deze stapsgewijze handleiding vereenvoudigt het proces voor u.
 type: docs
 weight: 10
@@ -9,65 +9,65 @@ url: /nl/net/programming-with-table-styles-and-formatting/set-table-cell-formatt
 ---
 ## Invoering
 
-Heeft u zich ooit afgevraagd hoe u uw Word-documenten professioneler en visueel aantrekkelijker kunt maken? Een van de belangrijkste elementen om dit te bereiken is het beheersen van de opmaak van tabelcellen. In deze zelfstudie gaan we dieper in op de details van het instellen van de celopmaak van tabellen in Word-documenten met behulp van Aspose.Words voor .NET. We leggen het proces stap voor stap uit, zodat u deze technieken kunt volgen en in uw eigen projecten kunt implementeren.
+Heb je je ooit afgevraagd hoe je je Word-documenten professioneler en visueel aantrekkelijker kunt maken? Een van de belangrijkste elementen om dit te bereiken is door de opmaak van tabelcellen onder de knie te krijgen. In deze tutorial duiken we in de details van het instellen van tabelcelopmaak in Word-documenten met Aspose.Words voor .NET. We zullen het proces stap voor stap uitleggen, zodat je deze technieken kunt volgen en implementeren in je eigen projecten.
 
 ## Vereisten
 
-Voordat we beginnen, zorg ervoor dat je het volgende hebt:
+Voordat we beginnen, zorg ervoor dat u het volgende heeft:
 
-1.  Aspose.Words voor .NET: Je kunt het downloaden van de[Downloadlink](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: U kunt het downloaden van de[Downloadlink](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere IDE die .NET-ontwikkeling ondersteunt.
-3. Basiskennis van C#: Inzicht in de basisprogrammeerconcepten en syntaxis in C#.
-4.  Uw documentenmap: Zorg ervoor dat u een aangewezen map heeft om uw documenten op te slaan. We zullen dit noemen als`YOUR DOCUMENT DIRECTORY`.
+3. Basiskennis van C#: inzicht in de basisconcepten van programmeren en de syntaxis van C#.
+4.  Uw documentenmap: zorg dat u een aangewezen map hebt om uw documenten op te slaan. We noemen dit`YOUR DOCUMENT DIRECTORY`.
 
 ## Naamruimten importeren
 
-Eerst moet u de benodigde naamruimten importeren. Deze zijn essentieel voor toegang tot de klassen en methoden van Aspose.Words.
+Eerst moet u de benodigde namespaces importeren. Deze zijn essentieel voor toegang tot de klassen en methoden die Aspose.Words biedt.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Laten we het verstrekte codefragment opsplitsen en elke stap uitleggen om de tabelcelopmaak in een Word-document in te stellen.
+Laten we het meegeleverde codefragment eens nader bekijken en elke stap voor het instellen van de opmaak van tabelcellen in een Word-document uitleggen.
 
 ## Stap 1: Initialiseer het document en DocumentBuilder
 
- Om aan de slag te gaan, moet u een nieuw exemplaar van de`Document` klasse en de`DocumentBuilder`klas. Deze klassen zijn uw toegangspunten tot het maken en manipuleren van Word-documenten.
+ Om te beginnen moet u een nieuw exemplaar van de maken`Document` klasse en de`DocumentBuilder`klasse. Deze klassen zijn uw toegangspunten tot het maken en bewerken van Word-documenten.
 
 ```csharp
-// Pad naar uw documentmap
+// Pad naar uw documentenmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Initialiseer het Document en DocumentBuilder
+// Initialiseer het document en de DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Stap 2: Start een tabel
 
- Met de`DocumentBuilder` U kunt bijvoorbeeld beginnen met het maken van een tabel. Dit doet u door te bellen met de`StartTable` methode.
+ Met de`DocumentBuilder` U kunt bijvoorbeeld beginnen met het maken van een tabel. Dit doet u door de`StartTable` methode.
 
 ```csharp
-// Begin met de tafel
+// Start de tafel
 builder.StartTable();
 ```
 
-## Stap 3: Voeg een cel in
+## Stap 3: Een cel invoegen
 
 Vervolgens voegt u een cel in de tabel in. Dit is waar de opmaakmagie plaatsvindt.
 
 ```csharp
-// Voeg een cel in
+// Een cel invoegen
 builder.InsertCell();
 ```
 
-## Stap 4: Open celformaateigenschappen en stel deze in
+## Stap 4: Toegang tot en instellen van eigenschappen voor celopmaak
 
- Zodra de cel is ingevoegd, kunt u de opmaakeigenschappen ervan openen met behulp van de`CellFormat` eigendom van de`DocumentBuilder`. Hier kunt u verschillende opmaakopties instellen, zoals breedte en opvulling.
+ Zodra de cel is ingevoegd, kunt u de opmaakeigenschappen ervan openen met behulp van de`CellFormat` eigendom van de`DocumentBuilder`Hier kunt u verschillende opmaakopties instellen, zoals breedte en opvulling.
 
 ```csharp
-// Eigenschappen voor celopmaak openen en instellen
+// Toegang tot en instellen van celopmaakeigenschappen
 CellFormat cellFormat = builder.CellFormat;
 cellFormat.Width = 250;
 cellFormat.LeftPadding = 30;
@@ -76,18 +76,18 @@ cellFormat.TopPadding = 30;
 cellFormat.BottomPadding = 30;
 ```
 
-## Stap 5: Voeg inhoud toe aan de cel
+## Stap 5: Inhoud toevoegen aan de cel
 
-Nu kunt u wat inhoud aan de opgemaakte cel toevoegen. Laten we voor dit voorbeeld een eenvoudige regel tekst toevoegen.
+Nu kunt u wat inhoud toevoegen aan de opgemaakte cel. Voor dit voorbeeld voegen we een eenvoudige tekstregel toe.
 
 ```csharp
-// Voeg inhoud toe aan de cel
+// Inhoud toevoegen aan de cel
 builder.Writeln("I'm a wonderful formatted cell.");
 ```
 
 ## Stap 6: Beëindig de rij en de tabel
 
-Nadat u inhoud heeft toegevoegd, moet u de huidige rij en de tabel zelf beëindigen.
+Nadat u inhoud hebt toegevoegd, moet u de huidige rij en de tabel zelf afsluiten.
 
 ```csharp
 // Beëindig de rij en de tabel
@@ -95,32 +95,32 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Stap 7: Bewaar het document
+## Stap 7: Sla het document op
 
-Sla het document ten slotte op in de door u opgegeven map. Zorg ervoor dat de map bestaat, of maak deze indien nodig.
+Sla het document ten slotte op in de door u opgegeven directory. Zorg ervoor dat de directory bestaat of maak deze indien nodig aan.
 
 ```csharp
-// Bewaar het document
+// Sla het document op
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableCellFormatting.docx");
 ```
 
 ## Conclusie
 
-Het opmaken van tabelcellen kan de leesbaarheid en visuele aantrekkingskracht van uw Word-documenten aanzienlijk verbeteren. Met Aspose.Words voor .NET beschikt u over een krachtige tool waarmee u eenvoudig professioneel opgemaakte documenten kunt maken. Of u nu een rapport, een brochure of een ander document voorbereidt, als u deze opmaaktechnieken beheerst, zal uw werk opvallen.
+Het opmaken van tabelcellen kan de leesbaarheid en visuele aantrekkingskracht van uw Word-documenten aanzienlijk verbeteren. Met Aspose.Words voor .NET hebt u een krachtig hulpmiddel tot uw beschikking om eenvoudig professioneel opgemaakte documenten te maken. Of u nu een rapport, een brochure of een ander document voorbereidt, het beheersen van deze opmaaktechnieken zal uw werk laten opvallen.
 
 ## Veelgestelde vragen
 
-### Kan ik voor elke cel in een tabel verschillende opvulwaarden instellen?
- Ja, u kunt voor elke cel afzonderlijk verschillende opvulwaarden instellen door naar hun cel te gaan`CellFormat` eigenschappen afzonderlijk.
+### Kan ik voor elke cel in een tabel een andere opvulwaarde instellen?
+ Ja, u kunt voor elke cel afzonderlijk verschillende opvulwaarden instellen door toegang te krijgen tot hun`CellFormat` eigenschappen afzonderlijk.
 
 ### Is het mogelijk om dezelfde opmaak op meerdere cellen tegelijk toe te passen?
-Ja, u kunt de cellen doorlopen en dezelfde opmaakinstellingen programmatisch op elke cel toepassen.
+Ja, u kunt door de cellen heen bladeren en programmatisch dezelfde opmaakinstellingen op elke cel toepassen.
 
-### Hoe kan ik de hele tabel opmaken in plaats van individuele cellen?
- U kunt het algemene formaat van de tabel instellen met behulp van de`Table` klasse-eigenschappen en -methoden beschikbaar in Aspose.Words.
+### Hoe kan ik de hele tabel opmaken in plaats van afzonderlijke cellen?
+ U kunt de algemene opmaak van de tabel instellen met behulp van de`Table` klasse-eigenschappen en methoden beschikbaar in Aspose.Words.
 
-### Kan ik de tekstuitlijning binnen een cel wijzigen?
+### Kan ik de tekstuitlijning in een cel wijzigen?
  Ja, u kunt de tekstuitlijning wijzigen met behulp van de`ParagraphFormat` eigendom van de`DocumentBuilder`.
 
-### Is er een manier om randen aan de tabelcellen toe te voegen?
- Ja, u kunt randen aan de tabelcellen toevoegen door de`Borders` eigendom van de`CellFormat` klas.
+### Is er een manier om randen toe te voegen aan tabelcellen?
+ Ja, u kunt randen toevoegen aan de tabelcellen door de`Borders` eigendom van de`CellFormat` klas.

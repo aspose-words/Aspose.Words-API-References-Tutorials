@@ -76,7 +76,7 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
     Console.WriteLine(tag.Title);
 ```
 
-Diese Schleife gibt den Titel jedes strukturierten Dokumenttags auf der Konsole aus. Sie können diese Schleife ändern, um zusätzliche Aktionen auszuführen, z. B. Tag-Eigenschaften ändern oder Informationen extrahieren.
+Diese Schleife gibt den Titel jedes strukturierten Dokumenttags auf der Konsole aus. Sie können diese Schleife ändern, um zusätzliche Aktionen auszuführen, z. B. das Ändern von Tag-Eigenschaften oder das Extrahieren von Informationen.
 
 ## Abschluss
 

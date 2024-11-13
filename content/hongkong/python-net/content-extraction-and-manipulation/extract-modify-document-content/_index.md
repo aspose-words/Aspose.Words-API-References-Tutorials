@@ -125,7 +125,7 @@ doc.save("path/to/converted/document.pdf", asposewords.SaveFormat.PDF)
 
 ## 先進的功能和自動化
 
-Aspose.Words 提供了更進階的功能，如郵件合併、文件比較等。輕鬆自動化複雜的任務。
+Aspose.Words 提供了更進階的功能，例如郵件合併、文件比較等。輕鬆自動化複雜的任務。
 
 ## 結論
 

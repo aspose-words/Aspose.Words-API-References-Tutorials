@@ -114,7 +114,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
  Ναι, μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμής[εδώ](https://releases.aspose.com/).
 
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια χρήσης για το Aspose.Words για .NET;
- Μπορείτε να αποκτήσετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
+Μπορείτε να αποκτήσετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
 
 ### Πού μπορώ να βρω πιο αναλυτική τεκμηρίωση;
  Μπορείτε να βρείτε την πλήρη τεκμηρίωση[εδώ](https://reference.aspose.com/words/net/).

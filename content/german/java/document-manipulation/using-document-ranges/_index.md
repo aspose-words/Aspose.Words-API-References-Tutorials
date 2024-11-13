@@ -45,7 +45,7 @@ public void rangesGetText() throws Exception
 }
 ```
 
-## Dokumentbereiche bearbeiten
+## Bearbeiten von Dokumentbereichen
 
 Aspose.Words für Java bietet eine breite Palette an Methoden und Eigenschaften zum Bearbeiten von Dokumentbereichen. Sie können in diese Bereiche verschiedene Vorgänge einfügen, formatieren und ausführen, was es zu einem vielseitigen Tool für die Dokumentbearbeitung macht.
 

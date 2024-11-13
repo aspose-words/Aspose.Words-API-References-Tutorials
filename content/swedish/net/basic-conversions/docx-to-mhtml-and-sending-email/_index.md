@@ -15,7 +15,7 @@ I dagens digitala tidsålder är det en vanlig uppgift att konvertera dokument f
 
 Innan vi börjar, se till att du har följande förutsättningar på plats:
 
-1. Aspose.Words for .NET: Ladda ner och installera Aspose.Words for .NET-biblioteket från[Aspose releaser sida](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ladda ner och installera Aspose.Words for .NET-biblioteket från[Aspose releaser sida](https://releases.aspose.com/words/net/).
 2.  Aspose.Email for .NET: Ladda ner och installera Aspose.Email for .NET-biblioteket från[Aspose releaser sida](https://releases.aspose.com/email/net/).
 3. .NET Framework: Se till att du har .NET Framework installerat på din dator.
 4. SMTP-server: Du behöver tillgång till en SMTP-server för att skicka e-post.
@@ -58,7 +58,7 @@ stream.Position = 0;
 
 ## Steg 3: Skapa ett e-postmeddelande
 
-Skapa nu ett e-postmeddelande från MHTML-strömmen med Aspose.Email. Du kommer att använda`MailMessage` klass för detta ändamål.
+ Skapa nu ett e-postmeddelande från MHTML-strömmen med Aspose.Email. Du kommer att använda`MailMessage` klass för detta ändamål.
 
 ```csharp
 // Skapa ett Aspose.Email MIME-e-postmeddelande från strömmen.
@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Steg 4: Skicka e-postmeddelandet
 
- Slutligen, skicka e-postmeddelandet med en SMTP-klient. Konfigurera SMTP-klienten med dina SMTP-serverdetaljer och använd`Send` sätt att skicka meddelandet.
+Slutligen, skicka e-postmeddelandet med en SMTP-klient. Konfigurera SMTP-klienten med dina SMTP-serverdetaljer och använd`Send` sätt att skicka meddelandet.
 
 ```csharp
 // Skicka meddelandet med Aspose.Email.
@@ -89,13 +89,13 @@ Grattis! Du har framgångsrikt konverterat ett DOCX-dokument till MHTML och skic
 Ja, Aspose.Words stöder olika format, och du kan konvertera dokument som DOC, DOCX, RTF och mer till MHTML.
 
 ### Hur kan jag lägga till bilagor till e-postmeddelandet?
- Du kan använda`Attachments` egendom av`MailMessage`klass för att lägga till bilagor till din e-post.
+ Du kan använda`Attachments` egendom av`MailMessage` klass för att lägga till bilagor till din e-post.
 
 ### Är Aspose.Words kompatibelt med .NET Core?
 Ja, Aspose.Words är kompatibelt med .NET Core. Du kan också använda den i .NET Core-applikationer.
 
 ### Behöver jag en licens för Aspose.Words och Aspose.Email?
- Ja, båda biblioteken kräver licenser. Du kan få en tillfällig licens från[Aspose köpsida](https://purchase.aspose.com/temporary-license/) i utvärderingssyfte.
+Ja, båda biblioteken kräver licenser. Du kan få en tillfällig licens från[Aspose köpsida](https://purchase.aspose.com/temporary-license/) i utvärderingssyfte.
 
 ### Var kan jag hitta mer dokumentation?
  Du kan hitta detaljerad dokumentation för Aspose.Words[här](https://reference.aspose.com/words/net/) och för Aspose.Email[här](https://reference.aspose.com/email/net/).

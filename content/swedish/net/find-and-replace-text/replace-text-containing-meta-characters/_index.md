@@ -119,7 +119,7 @@ Absolut! Du kan ändra ersättningssträngen så att den inkluderar annan text, 
  Du kan kedja flera`Replace` anrop för att hantera olika taggar eller mönster i ditt dokument.
 
 ### Är det möjligt att använda andra typsnitt och formatering?
-Ja, du kan anpassa teckensnitt och andra formateringsalternativ med hjälp av`DocumentBuilder`och`FindReplaceOptions` föremål.
+Ja, du kan anpassa teckensnitt och andra formateringsalternativ med hjälp av`DocumentBuilder` och`FindReplaceOptions` föremål.
 
 ### Var kan jag hitta mer information om Aspose.Words för .NET?
  Du kan besöka[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) för mer information och exempel.

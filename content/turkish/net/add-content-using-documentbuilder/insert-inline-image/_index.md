@@ -1,40 +1,40 @@
 ---
-title: Word Belgesine Satır İçi Görüntü Ekleme
-linktitle: Word Belgesine Satır İçi Görüntü Ekleme
+title: Word Belgesine Satır İçi Resim Ekle
+linktitle: Word Belgesine Satır İçi Resim Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak satır içi görüntüleri Word belgelerine nasıl ekleyeceğinizi öğrenin. Kod örnekleri ve SSS içeren adım adım kılavuz.
+description: Aspose.Words for .NET kullanarak Word belgelerine satır içi resimlerin nasıl ekleneceğini öğrenin. Kod örnekleri ve SSS içeren adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 ## giriiş
 
-.NET uygulamalarıyla belge işleme alanında Aspose.Words, Word belgelerinin programlı olarak işlenmesi için güçlü bir çözüm olarak öne çıkıyor. Temel özelliklerinden biri, belgelerinizin görsel çekiciliğini ve işlevselliğini artırarak satır içi görüntüleri zahmetsizce ekleme yeteneğidir. Bu eğitimde, görüntüleri Word belgelerinize sorunsuz bir şekilde gömmek için Aspose.Words for .NET'ten nasıl yararlanabileceğiniz derinlemesine ele alınmaktadır.
+.NET uygulamalarıyla belge işleme alanında, Aspose.Words Word belgelerini programatik olarak düzenlemek için sağlam bir çözüm olarak öne çıkıyor. Temel özelliklerinden biri, belgelerinizin görsel çekiciliğini ve işlevselliğini artırarak satır içi resimleri zahmetsizce ekleme yeteneğidir. Bu eğitim, Word belgelerinize resimleri sorunsuz bir şekilde yerleştirmek için .NET için Aspose.Words'ü nasıl kullanabileceğinizi derinlemesine inceliyor.
 
-## Önkoşullar
+## Ön koşullar
 
-Aspose.Words for .NET kullanarak satır içi görsel ekleme sürecine geçmeden önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+Aspose.Words for .NET kullanarak satır içi görseller ekleme sürecine başlamadan önce, aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
-1. Visual Studio Ortamı: Visual Studio'nun kurulu ve .NET uygulamaları oluşturmaya ve derlemeye hazır olmasını sağlayın.
-2.  Aspose.Words for .NET Kütüphanesi: Aspose.Words for .NET kütüphanesini şu adresten indirip yükleyin:[Burada](https://releases.aspose.com/words/net/).
-3. Temel C# Anlayışı: C# programlama dilinin temellerine aşinalık, kod parçacıklarının uygulanmasında faydalı olacaktır.
+1. Visual Studio Ortamı: .NET uygulamaları oluşturmaya ve derlemeye hazır olmak için Visual Studio'yu yükleyin.
+2.  Aspose.Words for .NET Kütüphanesi: Aspose.Words for .NET kütüphanesini şu adresten indirin ve yükleyin:[Burada](https://releases.aspose.com/words/net/).
+3. C# Temel Anlayışı: C# programlama dilinin temellerine aşina olmak, kod parçacıklarını uygulamak için faydalı olacaktır.
 
-Şimdi Aspose.Words for .NET'i kullanarak gerekli ad alanlarını içe aktarma ve satır içi görüntü ekleme adımlarını inceleyelim.
+Şimdi, Aspose.Words for .NET kullanarak gerekli ad alanlarını içe aktarmak ve satır içi resim eklemek için gereken adımları inceleyelim.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET'in işlevlerine erişmek için öncelikle gerekli ad alanlarını C# kodunuza aktarmanız gerekir:
+Öncelikle Aspose.Words for .NET'in işlevlerine erişmek için gerekli ad alanlarını C# kodunuza aktarmanız gerekir:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Bu ad alanları, Word belgelerinin işlenmesi ve görüntülerin işlenmesi için gerekli sınıflara ve yöntemlere erişim sağlar.
+Bu ad alanları, Word belgelerini düzenlemek ve görselleri işlemek için gerekli sınıflara ve yöntemlere erişim sağlar.
 
-## 1. Adım: Yeni Bir Belge Oluşturun
+## Adım 1: Yeni Bir Belge Oluşturun
 
- Yeni bir örneğini başlatarak başlayın`Document` sınıf ve bir`DocumentBuilder` belge oluşturmayı kolaylaştırmak için.
+ Yeni bir örneğini başlatarak başlayın`Document` sınıf ve bir`DocumentBuilder` belge yapımını kolaylaştırmak için.
 
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
@@ -44,42 +44,42 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 2: Satır İçi Resmi Ekle
 
- Kullanın`InsertImage` yöntemi`DocumentBuilder` Belgeye geçerli konuma bir resim eklemek için sınıf.
+ Kullanın`InsertImage` yöntemi`DocumentBuilder` Belgenin geçerli konumuna bir resim eklemek için kullanılan sınıf.
 
 ```csharp
 string imagePath = "PATH_TO_YOUR_IMAGE_FILE";
 builder.InsertImage(imagePath);
 ```
 
- Yer değiştirmek`"PATH_TO_YOUR_IMAGE_FILE"` resim dosyanızın gerçek yolunu belirtin. Bu yöntem görüntüyü belgeye kusursuz bir şekilde entegre eder.
+ Yer değiştirmek`"PATH_TO_YOUR_IMAGE_FILE"` Görüntü dosyanızın gerçek yoluyla. Bu yöntem görüntüyü belgeye sorunsuz bir şekilde entegre eder.
 
-## 3. Adım: Belgeyi Kaydedin
+## Adım 3: Belgeyi Kaydedin
 
- Son olarak, belgeyi kullanarak istediğiniz konuma kaydedin.`Save` yöntemi`Document` sınıf.
+ Son olarak, belgeyi istediğiniz konuma kaydetmek için`Save` yöntemi`Document` sınıf.
 
 ```csharp
 doc.Save(dataDir + "InsertInlineImage.docx");
 ```
 
-Bu adım, satır içi görüntüyü içeren belgenin belirtilen dosya adıyla kaydedilmesini sağlar.
+Bu adım, satır içi resmi içeren belgenin belirtilen dosya adıyla kaydedilmesini sağlar.
 
 ## Çözüm
 
-Sonuç olarak, Aspose.Words for .NET kullanarak satır içi görüntüleri Word belgelerine entegre etmek, belge görselleştirmesini ve işlevselliğini artıran basit bir süreçtir. Yukarıda özetlenen adımları takip ederek Aspose.Words'ün gücünden yararlanarak belgelerinizdeki görselleri programlı bir şekilde etkili bir şekilde değiştirebilirsiniz.
+Sonuç olarak, .NET için Aspose.Words kullanarak Word belgelerine satır içi görseller entegre etmek, belge görselleştirmesini ve işlevselliğini geliştiren basit bir işlemdir. Yukarıda belirtilen adımları izleyerek, Aspose.Words'ün gücünden yararlanarak belgelerinizdeki görselleri programatik olarak verimli bir şekilde düzenleyebilirsiniz.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for .NET kullanarak tek bir Word belgesine birden fazla görüntü ekleyebilir miyim?
- Evet, resim dosyalarınızı yineleyerek ve çağırarak birden fazla resim ekleyebilirsiniz.`builder.InsertImage` her görüntü için.
+### Aspose.Words for .NET kullanarak tek bir Word belgesine birden fazla resim ekleyebilir miyim?
+ Evet, resim dosyalarınız arasında gezinerek ve çağırarak birden fazla resim ekleyebilirsiniz.`builder.InsertImage` Her bir resim için.
 
 ### Aspose.Words for .NET şeffaf arka plana sahip görsellerin eklenmesini destekliyor mu?
-Evet, Aspose.Words for .NET, şeffaf arka plana sahip görsellerin eklenmesini destekler ve görselin belgedeki şeffaflığını korur.
+Evet, Aspose.Words for .NET, belgedeki görüntünün şeffaflığını koruyarak şeffaf arka plana sahip resimlerin eklenmesini destekler.
 
-### Aspose.Words for .NET kullanılarak eklenen satır içi görüntüyü nasıl yeniden boyutlandırabilirim?
- Genişlik ve yükseklik özelliklerini ayarlayarak görüntüyü yeniden boyutlandırabilirsiniz.`Shape` tarafından döndürülen nesne`builder.InsertImage`.
+### Aspose.Words for .NET kullanılarak eklenen satır içi bir resmin boyutunu nasıl değiştirebilirim?
+ Bir resmin boyutunu, genişlik ve yükseklik özelliklerini ayarlayarak değiştirebilirsiniz.`Shape` nesne tarafından döndürüldü`builder.InsertImage`.
 
-### Aspose.Words for .NET kullanarak satır içi bir görüntüyü belge içinde belirli bir konuma yerleştirmek mümkün müdür?
- Evet, satır içi görüntünün konumunu, aramadan önce belge oluşturucunun imleç konumunu kullanarak belirleyebilirsiniz.`builder.InsertImage`.
+### Aspose.Words for .NET kullanarak belgenin belirli bir noktasına satır içi bir resim yerleştirmek mümkün müdür?
+ Evet, belge oluşturucunun imleç konumunu kullanarak satır içi bir görüntünün konumunu belirtebilirsiniz.`builder.InsertImage`.
 
-### Aspose.Words for .NET kullanarak URL'lerdeki görüntüleri bir Word belgesine gömebilir miyim?
-Evet, .NET kitaplıklarını kullanarak URL'lerden görseller indirebilir ve bunları Aspose.Words for .NET kullanarak bir Word belgesine ekleyebilirsiniz.
+### Aspose.Words for .NET kullanarak URL'lerden gelen resimleri bir Word belgesine gömebilir miyim?
+Evet, .NET kütüphanelerini kullanarak URL'lerden resim indirebilir ve daha sonra bunları Aspose.Words for .NET kullanarak bir Word belgesine ekleyebilirsiniz.

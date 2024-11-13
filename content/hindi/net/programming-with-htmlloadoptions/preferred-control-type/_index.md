@@ -2,7 +2,7 @@
 title: वर्ड दस्तावेज़ में पसंदीदा नियंत्रण प्रकार
 linktitle: वर्ड दस्तावेज़ में पसंदीदा नियंत्रण प्रकार
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में कॉम्बो बॉक्स फ़ॉर्म फ़ील्ड सम्मिलित करना सीखें। HTML सामग्री के सहज एकीकरण के लिए इस चरण-दर-चरण मार्गदर्शिका का पालन करें।
+description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में कॉम्बो बॉक्स फ़ॉर्म फ़ील्ड सम्मिलित करना सीखें। HTML सामग्री को सहजता से एकीकृत करने के लिए इस चरण-दर-चरण मार्गदर्शिका का पालन करें।
 type: docs
 weight: 10
 url: /hi/net/programming-with-htmlloadoptions/preferred-control-type/

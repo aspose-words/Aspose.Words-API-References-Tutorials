@@ -10,7 +10,7 @@ url: /hu/java/document-conversion-and-export/using-office-math-objects/
 
 ## Bevezetés az Office matematikai objektumok használatába az Aspose.Words for Java programban
 
-A Java dokumentumfeldolgozás területén az Aspose.Words megbízható és hatékony eszköz. Egyik kevésbé ismert gyöngyszeme az Office Math objektumokkal való munkavégzés képessége. Ebben az átfogó útmutatóban megvizsgáljuk, hogyan használhatjuk ki az Office Math objektumokat az Aspose.Words for Java-ban a matematikai egyenletek manipulálására és megjelenítésére a dokumentumokban. 
+Java dokumentumfeldolgozás területén az Aspose.Words megbízható és hatékony eszköz. Egyik kevésbé ismert gyöngyszeme az Office Math objektumokkal való munkavégzés képessége. Ebben az átfogó útmutatóban megvizsgáljuk, hogyan használhatjuk ki az Office Math objektumokat az Aspose.Words for Java-ban a matematikai egyenletek manipulálására és megjelenítésére a dokumentumokban. 
 
 ## Előfeltételek
 

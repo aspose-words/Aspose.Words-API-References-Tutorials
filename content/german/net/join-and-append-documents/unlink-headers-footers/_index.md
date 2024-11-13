@@ -61,7 +61,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ```csharp
 // Um dies zu verhindern, entfernen Sie die Verknüpfungen zwischen Kopf- und Fußzeilen im Quelldokument.
-//daran, die Kopf- und Fußzeilen des Zieldokuments fortzusetzen.
+//daran hindert, die Kopf- und Fußzeilen des Zieldokuments fortzusetzen.
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
@@ -75,7 +75,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Schritt 6: Speichern Sie das endgültige Dokument
 
-Speichern Sie abschließend das neu erstellte Dokument. In diesem Dokument wird der Inhalt des Quelldokuments an das Zieldokument angehängt, wobei die Verknüpfungen zu Kopf- und Fußzeilen aufgehoben werden.
+Speichern Sie abschließend das neu erstellte Dokument. In diesem Dokument wird der Inhalt des Quelldokuments an das Zieldokument angehängt, wobei die Kopf- und Fußzeilen nicht verknüpft sind.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
@@ -83,7 +83,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 
 ## Abschluss
 
-Und da haben Sie es! Indem Sie diese Schritte befolgen, haben Sie die Verknüpfung der Kopf- und Fußzeilen in Ihrem Quelldokument erfolgreich aufgehoben und sie mithilfe von Aspose.Words für .NET an Ihr Zieldokument angehängt. Diese Technik kann besonders nützlich sein, wenn Sie mit komplexen Dokumenten arbeiten, die für verschiedene Abschnitte unterschiedliche Kopf- und Fußzeilen erfordern. Viel Spaß beim Programmieren!
+Und da haben Sie es! Indem Sie diese Schritte befolgen, haben Sie die Verknüpfung der Kopf- und Fußzeilen in Ihrem Quelldokument erfolgreich aufgehoben und sie mithilfe von Aspose.Words für .NET an Ihr Zieldokument angehängt. Diese Technik kann besonders nützlich sein, wenn Sie mit komplexen Dokumenten arbeiten, die unterschiedliche Kopf- und Fußzeilen für unterschiedliche Abschnitte erfordern. Viel Spaß beim Programmieren!
 
 ## Häufig gestellte Fragen
 

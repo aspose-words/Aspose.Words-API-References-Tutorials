@@ -1,8 +1,8 @@
 ---
-title: Zastąp ciągiem
-linktitle: Zastąp ciągiem
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zamieniać ciągi znaków w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Idealny dla programistów chcących zautomatyzować edycję dokumentów.
+title: Zamień na ciąg
+linktitle: Zamień na ciąg
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak zamieniać ciągi w dokumentach Worda za pomocą Aspose.Words dla .NET dzięki temu przewodnikowi krok po kroku. Idealne dla programistów, którzy chcą zautomatyzować edycję dokumentów.
 type: docs
 weight: 10
 url: /pl/net/find-and-replace-text/replace-with-string/
@@ -10,58 +10,58 @@ url: /pl/net/find-and-replace-text/replace-with-string/
 
 ## Wstęp
 
-Hej tam! Czy kiedykolwiek zdarzyło Ci się, że siedziałeś po kolana w dokumencie programu Word i musiałeś zastąpić pewne słowa lub frazy? Nie jesteś sam. Niezależnie od tego, czy chodzi o aktualizację warunków, poprawianie błędów, czy po prostu ulepszanie treści, wiedza o tym, jak skutecznie znajdować i zamieniać tekst w dokumencie, ma kluczowe znaczenie. Dzisiaj zagłębiamy się w cudowny świat Aspose.Words dla .NET, aby pokazać Ci, jak zamieniać ciągi znaków w dokumentach programu Word jak profesjonalista.
+Cześć! Czy kiedykolwiek znalazłeś się po kolana w dokumencie Worda, potrzebując zastąpić pewne słowa lub frazy? Nie jesteś sam. Niezależnie od tego, czy chodzi o aktualizację terminów, poprawianie błędów, czy po prostu odświeżenie treści, wiedza o tym, jak skutecznie wyszukiwać i zastępować tekst w dokumencie, jest kluczowa. Dzisiaj zanurzamy się w cudowny świat Aspose.Words dla .NET, aby pokazać Ci, jak zastępować ciągi w dokumentach Worda jak profesjonalista.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zabrudzimy sobie ręce kodem, upewnijmy się, że masz wszystko, czego potrzebujesz:
+Zanim zaczniemy pisać kod, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
 1.  Aspose.Words dla .NET: Pobierz najnowszą wersję[Tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: Visual Studio lub dowolne IDE C#.
-3. Podstawowa znajomość języka C#: Pomocna będzie pewna znajomość języka C#.
+2. Środowisko programistyczne: Visual Studio lub dowolne środowisko IDE C#.
+3. Podstawowa znajomość języka C#: Przydatna będzie pewna znajomość języka C#.
 
 ## Importuj przestrzenie nazw
 
-Na początek upewnijmy się, że nasz projekt jest gotowy. Musimy zaimportować niezbędne przestrzenie nazw. To tak, jakby przygotować scenę przed głównym występem.
+Najpierw upewnijmy się, że nasz projekt jest gotowy. Musimy zaimportować niezbędne przestrzenie nazw. To jak przygotowanie sceny przed głównym występem.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Replacing;
 ```
 
-Podzielmy nasz przykład na wiele łatwych do wykonania kroków.
+Podzielmy nasz przykład na kilka łatwych do wykonania kroków.
 
-## Krok 1: Skonfiguruj katalog projektu
+## Krok 1: Skonfiguruj katalog swojego projektu
 
-Na początek potrzebujemy katalogu, w którym będą znajdować się nasze dokumenty. To tutaj będą przechowywane Twoje dokumenty programu Word i miejsce, w którym dzieje się magia.
+Na początek potrzebujemy katalogu, w którym będą się znajdować nasze dokumenty. To właśnie tam będą się znajdować Twoje dokumenty Word i tam dzieje się magia.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` ze ścieżką do katalogu dokumentów. To jest baza główna naszych plików.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` ze ścieżką do katalogu dokumentów. To jest baza domowa dla naszych plików.
 
-## Krok 2: Zainicjuj dokument i konstruktor
+## Krok 2: Zainicjuj dokument i kreator
 
-Następnie musimy utworzyć nowy dokument Word i narzędzie DocumentBuilder. Pomyśl o tym jak o położeniu fundamentów i przygotowaniu narzędzi.
+Następnie musimy utworzyć nowy dokument Word i DocumentBuilder. Pomyśl o tym jako o położeniu fundamentu i przygotowaniu narzędzi.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tutaj,`Document` reprezentuje dokument programu Word, z którym będziemy pracować, oraz`DocumentBuilder` jest naszym narzędziem do jego modyfikacji.
+ Tutaj,`Document` reprezentuje dokument Word, z którym będziemy pracować, i`DocumentBuilder` jest naszym narzędziem do jego modyfikacji.
 
-## Krok 3: Dodaj zawartość początkową
+## Krok 3: Dodaj początkową treść
 
-Dodajmy teraz trochę początkowej treści do naszego dokumentu. Ten krok przypomina przygotowanie płótna przed malowaniem.
+Teraz dodajmy trochę początkowej treści do naszego dokumentu. Ten krok jest jak przygotowanie płótna przed malowaniem.
 
 ```csharp
 builder.Writeln("sad mad bad");
 ```
 
-Dodaliśmy prostą linię tekstu, z którą będziemy pracować. Możesz dostosować tę treść.
+Dodaliśmy prostą linię tekstu, z którą będziemy pracować. Możesz swobodnie dostosować tę treść.
 
 ## Krok 4: Wykonaj operację Znajdź i zamień
 
@@ -71,35 +71,35 @@ Tutaj dzieje się prawdziwa akcja. Znajdziemy słowo „smutny” i zastąpimy j
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
- The`Replace`metoda jest prosta. Określamy słowo do znalezienia, słowo zastępcze oraz opcje operacji znajdź i zamień.
+Ten`Replace`Metoda jest prosta. Określamy słowo do znalezienia, słowo zastępcze i opcje operacji znajdowania i zamiany.
 
 ## Krok 5: Zapisz dokument
 
-Na koniec zapisujemy zmodyfikowany dokument. To moment, w którym oprawimy nasze ukończone arcydzieło.
+Na koniec zapisujemy zmodyfikowany dokument. To jest moment, w którym oprawiamy nasze ukończone arcydzieło.
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 ```
 
- Dokument zostanie zapisany w określonym katalogu pod nazwą`FindAndReplace.ReplaceWithString.docx`. I voila! Pomyślnie przeprowadziliśmy operację znajdź i zamień.
+ Dokument zostanie zapisany w podanym katalogu pod nazwą`FindAndReplace.ReplaceWithString.docx`. I voila! Udało nam się wykonać operację „znajdź i zamień”.
 
 ## Wniosek
 
-Masz to! Dzięki Aspose.Words dla .NET zamiana ciągów znaków w dokumencie programu Word jest dziecinnie prosta. To narzędzie jest niezwykle potężne i pozwala z łatwością programowo manipulować dokumentami. Niezależnie od tego, czy aktualizujesz pojedyncze słowo, czy zmieniasz całe sekcje, Aspose.Words Cię wspiera.
+Oto masz! Dzięki Aspose.Words dla .NET zamiana ciągów w dokumencie Word jest dziecinnie prosta. To narzędzie jest niesamowicie potężne, pozwalając na łatwą manipulację dokumentami programowo. Niezależnie od tego, czy aktualizujesz pojedyncze słowo, czy też przerabiasz całe sekcje, Aspose.Words ma dla Ciebie wsparcie.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Czy mogę zastąpić wiele słów w jednej operacji?
-Tak, możesz łączyć wiele operacji zamiany lub używać wyrażeń regularnych do dopasowywania i zastępowania wielu wzorców.
+Tak, możesz łączyć ze sobą wiele operacji zastępowania lub używać wyrażeń regularnych w celu dopasowywania i zastępowania wielu wzorców.
 
 ### Czy Aspose.Words dla .NET jest darmowy?
- Aspose.Words dla .NET jest biblioteką płatną, ale możesz ją pobrać[bezpłatna wersja próbna](https://releases.aspose.com/) aby przetestować jego funkcje.
+ Aspose.Words dla .NET to płatna biblioteka, ale można ją pobrać[bezpłatny okres próbny](https://releases.aspose.com/) aby przetestować jego funkcje.
 
-### Czy mogę zastąpić tekst sformatowaną treścią?
-Absolutnie! Aspose.Words umożliwia zastępowanie tekstu sformatowaną treścią, w tym różnymi czcionkami, kolorami i stylami.
+### Czy mogę zastąpić tekst treścią sformatowaną?
+Oczywiście! Aspose.Words pozwala zastąpić tekst sformatowaną treścią, w tym różnymi czcionkami, kolorami i stylami.
 
-### Co się stanie, jeśli nie zostanie znalezione słowo, które ma zostać zastąpione?
+### Co się stanie, jeśli słowo, które ma zostać zastąpione, nie zostanie znalezione?
 Jeśli słowo nie zostanie znalezione, operacja zamiany po prostu niczego nie zmieni. Żadnych błędów, po prostu żadnych zmian.
 
-### Jak uzyskać wsparcie dla Aspose.Words dla .NET?
- Możesz uzyskać wsparcie od[społeczność Aspose](https://forum.aspose.com/c/words/8) lub w razie potrzeby wykup wsparcie premium.
+### Jak uzyskać pomoc techniczną dotyczącą Aspose.Words dla platformy .NET?
+ Możesz uzyskać wsparcie od[Społeczność Aspose](https://forum.aspose.com/c/words/8) lub w razie potrzeby zakup wsparcia premium.

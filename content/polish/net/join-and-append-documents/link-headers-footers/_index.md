@@ -1,23 +1,23 @@
 ---
-title: Nagłówki linków, stopki
-linktitle: Nagłówki linków, stopki
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak łączyć nagłówki i stopki pomiędzy dokumentami w Aspose.Words dla .NET. Zapewniaj spójność i integralność formatowania bez wysiłku.
+title: Nagłówki łączy Stopki
+linktitle: Nagłówki łączy Stopki
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak łączyć nagłówki i stopki między dokumentami w Aspose.Words dla .NET. Zapewnij spójność i integralność formatowania bez wysiłku.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/link-headers-footers/
 ---
 ## Wstęp
 
-tym samouczku omówimy, jak łączyć nagłówki i stopki między dokumentami za pomocą Aspose.Words dla .NET. Ta funkcja pozwala zachować spójność i ciągłość w wielu dokumentach poprzez skuteczną synchronizację nagłówków i stopek.
+tym samouczku pokażemy, jak łączyć nagłówki i stopki między dokumentami za pomocą Aspose.Words dla .NET. Ta funkcja pozwala zachować spójność i ciągłość w wielu dokumentach poprzez skuteczną synchronizację nagłówków i stopek.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
+Zanim zaczniesz, upewnij się, że masz następujące rzeczy:
 
-- Zainstalowano Visual Studio z Aspose.Words dla .NET.
-- Podstawowa znajomość programowania w języku C# i frameworku .NET.
-- Dostęp do katalogu dokumentów, w którym przechowywane są dokumenty źródłowe i docelowe.
+- Zainstalowano program Visual Studio z pakietem Aspose.Words dla platformy .NET.
+- Podstawowa znajomość programowania w języku C# i środowiska .NET.
+- Uzyskaj dostęp do katalogu dokumentów, w którym przechowywane są dokumenty źródłowe i docelowe.
 
 ## Importuj przestrzenie nazw
 
@@ -27,11 +27,11 @@ Na początek uwzględnij niezbędne przestrzenie nazw w swoim projekcie C#:
 using Aspose.Words;
 ```
 
-Podzielmy proces na jasne etapy:
+Podzielmy ten proces na jasne kroki:
 
 ## Krok 1: Załaduj dokumenty
 
- Najpierw załaduj do niego dokumenty źródłowe i docelowe`Document` obiekty:
+ Najpierw załaduj dokumenty źródłowe i docelowe do`Document` obiekty:
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -43,15 +43,15 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Krok 2: Ustaw początek sekcji
 
- Aby mieć pewność, że dołączony dokument zacznie się na nowej stronie, skonfiguruj opcję`SectionStart` właściwość pierwszej części dokumentu źródłowego:
+ Aby mieć pewność, że dołączony dokument rozpocznie się na nowej stronie, skonfiguruj`SectionStart` właściwość pierwszej sekcji dokumentu źródłowego:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## Krok 3: Nagłówki i stopki linków
+## Krok 3: Połącz nagłówki i stopki
 
-Połącz nagłówki i stopki w dokumencie źródłowym z poprzednią sekcją w dokumencie docelowym. Ten krok gwarantuje, że nagłówki i stopki z dokumentu źródłowego zostaną zastosowane bez nadpisywania istniejących w dokumencie docelowym:
+Połącz nagłówki i stopki w dokumencie źródłowym z poprzednią sekcją w dokumencie docelowym. Ten krok zapewnia, że nagłówki i stopki z dokumentu źródłowego zostaną zastosowane bez nadpisywania istniejących w dokumencie docelowym:
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
@@ -75,21 +75,21 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 
 ## Wniosek
 
-Łączenie nagłówków i stopek pomiędzy dokumentami za pomocą Aspose.Words dla .NET jest proste i zapewnia spójność w dokumentach, ułatwiając zarządzanie i utrzymywanie dużych zestawów dokumentów.
+Łączenie nagłówków i stopek między dokumentami za pomocą Aspose.Words for .NET jest proste i zapewnia spójność między dokumentami, ułatwiając zarządzanie dużymi zestawami dokumentów i ich konserwację.
 
 ## Często zadawane pytania
 
-### Czy mogę łączyć nagłówki i stopki pomiędzy dokumentami o różnych układach?
-Tak, Aspose.Words płynnie obsługuje różne układy, zachowując integralność nagłówków i stopek.
+### Czy mogę łączyć nagłówki i stopki w dokumentach o różnych układach?
+Tak, Aspose.Words bezproblemowo obsługuje różne układy, zachowując integralność nagłówków i stopek.
 
 ### Czy łączenie nagłówków i stopek wpływa na inne formatowanie dokumentów?
-Nie, łączenie nagłówków i stopek wpływa tylko na określone sekcje, pozostawiając nienaruszoną inną treść i formatowanie.
+Nie, łączenie nagłówków i stopek ma wpływ tylko na określone sekcje, pozostawiając pozostałą treść i formatowanie nienaruszone.
 
 ### Czy Aspose.Words jest kompatybilny ze wszystkimi wersjami .NET?
-Aspose.Words obsługuje różne wersje .NET Framework i .NET Core, zapewniając kompatybilność na różnych platformach.
+Aspose.Words obsługuje różne wersje .NET Framework i .NET Core, zapewniając kompatybilność między platformami.
 
 ### Czy mogę odłączyć nagłówki i stopki po ich połączeniu?
-Tak, możesz odłączyć nagłówki i stopki za pomocą metod API Aspose.Words, aby przywrócić indywidualne formatowanie dokumentu.
+Tak, możesz rozłączyć nagłówki i stopki za pomocą metod API Aspose.Words, aby przywrócić formatowanie pojedynczego dokumentu.
 
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację dotyczącą Aspose.Words dla .NET?
- Odwiedzać[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) w celu uzyskania kompleksowych przewodników i referencji API.
+ Odwiedzać[Dokumentacja Aspose.Words dla .NET](https://reference.aspose.com/words/net/)aby uzyskać kompleksowe przewodniki i odniesienia do API.

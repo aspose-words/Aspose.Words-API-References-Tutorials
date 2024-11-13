@@ -22,14 +22,14 @@ Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfü
 
 ## Einrichten von Aspose.Words für Java
 
- Laden Sie zunächst die Aspose.Words für Java-Bibliothek herunter von[Hier](https://releases.aspose.com/words/java/). Befolgen Sie die Installationsanweisungen, um es in Ihr Java-Projekt zu integrieren.
+ Laden Sie zunächst die Aspose.Words für Java-Bibliothek herunter von[Hier](https://releases.aspose.com/words/java/)Befolgen Sie die Installationsanweisungen, um es in Ihr Java-Projekt zu integrieren.
 
 ## Erstellen eines leeren Dokuments
 
 Beginnen wir mit der Erstellung eines leeren Dokuments mit Aspose.Words für Java:
 
 ```java
-//Java-Code zum Erstellen eines leeren Dokuments
+// Java-Code zum Erstellen eines leeren Dokuments
 Document doc = new Document();
 ```
 
@@ -41,17 +41,6 @@ Fügen wir nun unserem Dokument einige Inhalte hinzu:
 // Java-Code zum Hinzufügen von Inhalten zum Dokument
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, Aspose.Words!");
-```
-
-## Anpassen von Dokumentelementen
-
-Sie können verschiedene Dokumentelemente wie Schriftarten, Stile und Formatierungen anpassen. Hier ist ein Beispiel für die Änderung der Schriftgröße:
-
-```java
-// Java-Code zum Ändern der Schriftgröße
-Run run = (Run) doc.getChildNodes(NodeType.RUN, true).get(0);
-Font font = run.getFont();
-font.setSize(14);
 ```
 
 ## Drucken des Dokuments
@@ -79,7 +68,7 @@ Durch den individuellen Dokumentendruck mit Aspose.Words für Java können Unter
 
 ### Wie kann ich Aspose.Words für Java installieren?
 
- Um Aspose.Words für Java zu installieren, laden Sie die Bibliothek herunter von[Hier](https://releases.aspose.com/words/java/) und befolgen Sie die bereitgestellten Installationsanweisungen.
+ Um Aspose.Words für Java zu installieren, laden Sie die Bibliothek herunter von[Hier](https://releases.aspose.com/words/java/)und befolgen Sie die bereitgestellten Installationsanweisungen.
 
 ### Kann ich das Dokumentlayout anpassen?
 

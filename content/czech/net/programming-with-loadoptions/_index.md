@@ -15,7 +15,7 @@ V těchto kurzech se naučíte, jak používat LoadOptions k načítání dokume
 | Titul | Popis |
 | --- | --- |
 | [Aktualizujte špinavá pole v dokumentu aplikace Word](./update-dirty-fields/) | Bez námahy aktualizujte špinavá pole v dokumentech aplikace Word pomocí Aspose.Words pro .NET pomocí tohoto komplexního průvodce krok za krokem. |
-| [Načíst šifrované v dokumentu aplikace Word](./load-encrypted-document/) | Naučte se načítat a ukládat zašifrované dokumenty Word pomocí Aspose.Words for .NET. Snadno zabezpečte své dokumenty pomocí nových hesel. Včetně průvodce krok za krokem. |
+| [Načíst šifrované v dokumentu aplikace Word](./load-encrypted-document/) | Naučte se načítat a ukládat zašifrované dokumenty Word pomocí Aspose.Words for .NET. Zabezpečte své dokumenty pomocí nových hesel snadno. Včetně průvodce krok za krokem. |
 | [Převést tvar na kancelářskou matematiku](./convert-shape-to-office-math/) | Naučte se s naším průvodcem převádět tvary na Office Math v dokumentech aplikace Word pomocí Aspose.Words for .NET. Vylepšete formátování dokumentu bez námahy. |
 | [Nastavte verzi MS Word](./set-ms-word-version/) | Naučte se, jak nastavit verze MS Word pomocí Aspose.Words pro .NET s naším podrobným průvodcem. Ideální pro vývojáře, kteří chtějí zjednodušit manipulaci s dokumenty. |
 | [Použijte složku Temp v dokumentu aplikace Word](./use-temp-folder/) | Naučte se, jak zvýšit výkon vašich aplikací .NET pomocí dočasné složky při načítání dokumentů aplikace Word pomocí Aspose.Words. |

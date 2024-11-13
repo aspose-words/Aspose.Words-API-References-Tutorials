@@ -64,21 +64,20 @@ Itt az ideje, hogy megjegyzést hozzon létre. Egy új Comment objektumot inicia
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-## 5. lépés: Csatolja a megjegyzést a bekezdéshez
-
-megjegyzést az aktuális bekezdéshez kell csatolnunk, ahol a szöveget hozzáadtuk. Ez úgy történik, hogy a bekezdéshez csatolja a megjegyzést.
-
-```csharp
-builder.CurrentParagraph.AppendChild(comment);
-```
-
-## 6. lépés: Adjon hozzá tartalmat a megjegyzéshez
+## 5. lépés: Adjon hozzá tartalmat a megjegyzéshez
 
 Végül tartalommal egészítjük ki a megjegyzést. Létrehozunk egy új bekezdést és a Futtatást a megjegyzés szövegének megtartásához, majd hozzáadjuk ezeket a megjegyzéshez.
 
 ```csharp
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+comment.SetText("Comment text.");
+```
+
+## 6. lépés: Csatolja a megjegyzést a bekezdéshez
+
+A megjegyzést az aktuális bekezdéshez kell csatolnunk, ahol a szöveget hozzáadtuk. Ez úgy történik, hogy a bekezdéshez csatolja a megjegyzést.
+
+```csharp
+builder.CurrentParagraph.AppendChild(comment);
 ```
 
 ## 7. lépés: Mentse el a dokumentumot

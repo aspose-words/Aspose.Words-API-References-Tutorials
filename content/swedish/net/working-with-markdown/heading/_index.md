@@ -66,47 +66,6 @@ builder.ParagraphFormat.StyleName = "Heading 3";
 builder.Writeln("Details");
 ```
 
-## Lägger till fler anpassningar
-
-### Anpassa teckensnitt och stycken
-
-Du kan ytterligare anpassa teckensnitts- och styckeinställningarna för att passa dina behov. Till exempel att ändra teckenstorlek, färg och justering.
-
-```csharp
-builder.Font.Size = 14;
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.Writeln("Centered Blue Heading");
-```
-
-### Infoga en innehållsförteckning
-
-Ett välstrukturerat dokument innehåller ofta en innehållsförteckning. Så här kan du infoga en med Aspose.Words för .NET.
-
-```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-doc.UpdateFields();
-```
-
-### Lägga till bilder
-
-Bilder kan göra ditt dokument mer engagerande. Låt oss lägga till en bild i vårt dokument.
-
-```csharp
-builder.InsertImage("YOUR DOCUMENT DIRECTORY/image.png");
-```
-
-### Använda dokumentsektioner
-
-Avsnitt hjälper till att organisera innehåll, särskilt när du behöver olika formatering för olika delar av dokumentet.
-
-```csharp
-Section section = doc.Sections.Add();
-DocumentBuilder sectionBuilder = new DocumentBuilder(section);
-sectionBuilder.ParagraphFormat.StyleName = "Heading 1";
-sectionBuilder.Writeln("New Section Heading");
-```
-
 ## Slutsats
 
 Att skapa ett välformaterat dokument handlar inte bara om estetik; det ökar också läsbarheten och professionalismen. Med Aspose.Words för .NET har du ett kraftfullt verktyg till ditt förfogande för att uppnå detta utan ansträngning. Följ den här guiden, experimentera med olika inställningar, och snart är du ett proffs på dokumentformatering!

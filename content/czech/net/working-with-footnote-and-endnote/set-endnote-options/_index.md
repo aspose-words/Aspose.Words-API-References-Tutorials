@@ -56,7 +56,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## Krok 4: Otevřete a nastavte možnosti Endnote
 
- Chcete-li přizpůsobit možnosti koncových poznámek, musíme získat přístup k`EndnoteOptions` vlastnictvím`Document` třída. Poté můžeme nastavit různé možnosti, jako je pravidlo restartu a pozice.
+ Chcete-li přizpůsobit možnosti koncových poznámek, musíme získat přístup k`EndnoteOptions` vlastnictví`Document` třída. Poté můžeme nastavit různé možnosti, jako je pravidlo restartu a pozice.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;

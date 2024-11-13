@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
- A`MetafileRenderingOptions` osztály lehetőséget biztosít a metafájlok (például a WMF) megjelenítésére. Beállítás által`ScaleWmfFontsToMetafileSize` hogy`false`, akkor utasítja az Aspose.Words-t, hogy ne méretezze át a betűtípusokat a metafájl méretének megfelelően, ami segíthet a PDF teljes méretének csökkentésében.
+A`MetafileRenderingOptions` osztály lehetőséget biztosít a metafájlok (például a WMF) megjelenítésére. Beállítás által`ScaleWmfFontsToMetafileSize` hogy`false`, akkor utasítja az Aspose.Words-t, hogy ne méretezze át a betűtípusokat a metafájl méretének megfelelően, ami segíthet a PDF teljes méretének csökkentésében.
 
 ## 3. lépés: Állítsa be a PDF mentési beállításokat
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- A`PdfSaveOptions` osztály lehetővé teszi különböző beállítások megadását a dokumentum PDF formátumban történő mentéséhez. A korábban konfigurált hozzárendelésével`MetafileRenderingOptions` a`MetafileRenderingOptions` tulajdona`PdfSaveOptions`, biztosítja, hogy a dokumentum a kívánt metafájl-megjelenítési beállításoknak megfelelően kerüljön mentésre.
+A`PdfSaveOptions` osztály lehetővé teszi különböző beállítások megadását a dokumentum PDF formátumban történő mentéséhez. A korábban konfigurált hozzárendelésével`MetafileRenderingOptions` a`MetafileRenderingOptions` tulajdona`PdfSaveOptions`, biztosítja, hogy a dokumentum a kívánt metafájl-megjelenítési beállításoknak megfelelően kerüljön mentésre.
 
 ## 4. lépés: Mentse el a dokumentumot PDF formátumban
 

@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ConversionToPdf17.pdf", saveOption
 
 ## 結論
 
-現在你就得到它了！使用 Aspose.Words for .NET 將 Word 文件轉換為 PDF 1.7 既簡單又有效率。此過程不僅可以節省時間，還可以確保您的文件可供所有人存取並採用專業格式。無論您是處理法律文件、學術論文還是商業報告，此方法都是可靠的解決方案。
+現在你就擁有了！使用 Aspose.Words for .NET 將 Word 文件轉換為 PDF 1.7 既簡單又有效率。此過程不僅可以節省時間，還可以確保您的文件可供所有人存取並採用專業格式。無論您是處理法律文件、學術論文還是商業報告，此方法都是可靠的解決方案。
 
 ## 常見問題解答
 

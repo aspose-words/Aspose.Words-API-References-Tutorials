@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 步骤 2：创建具有多级缩进的列表
 
-随着`DocumentBuilder`例如，您现在可以创建具有不同缩进级别的列表。使用`ListFormat`属性来根据需要应用编号并缩进列表项。
+随着`DocumentBuilder`例如，您现在可以创建具有不同缩进级别的列表。使用`ListFormat`属性来应用编号并根据需要缩进列表项。
 
 ```csharp
 //创建具有三级缩进的列表

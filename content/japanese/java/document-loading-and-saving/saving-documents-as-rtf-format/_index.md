@@ -16,7 +16,7 @@ url: /ja/java/document-loading-and-saving/saving-documents-as-rtf-format/
 
 始める前に、次の前提条件が満たされていることを確認してください。
 
-1.  Aspose.Words for Java ライブラリ: Java プロジェクトに Aspose.Words for Java ライブラリが統合されていることを確認してください。次の場所からダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
+1.  Aspose.Words for Java ライブラリ: Aspose.Words for Java ライブラリが Java プロジェクトに統合されていることを確認してください。次の場所からダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 2. 保存するドキュメント: RTF 形式で保存する既存の Word ドキュメント (例: 「Document.docx」) が必要です。
 
@@ -81,7 +81,7 @@ doc.save("Your Directory Path" + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rt
 
 ### RTF ドキュメントを別のエンコードで保存できますか?
 
-はい、RTF文書のエンコードは次のように指定できます。`saveOptions.setEncoding(Charset.forName("UTF-8"))`たとえば、UTF-8 エンコードで保存します。
+はい、RTF文書のエンコーディングは次のように指定できます。`saveOptions.setEncoding(Charset.forName("UTF-8"))`たとえば、UTF-8 エンコードで保存します。
 
 ### 画像なしで RTF ドキュメントを保存することは可能ですか?
 

@@ -55,7 +55,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Initialisieren Sie das Dokument und den DocumentBuilder
 
- Als nächstes müssen Sie ein neues Word-Dokument erstellen und das`DocumentBuilder`Klasse, die beim Erstellen des Dokuments hilft.
+ Als nächstes müssen Sie ein neues Word-Dokument erstellen und das`DocumentBuilder` Klasse, die beim Erstellen des Dokuments hilft.
 
 Erstellen eines neuen Dokuments
 
@@ -64,10 +64,10 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-- `Document doc = new Document();` erstellt ein neues Word-Dokument.
+- `Document doc = new Document();`erstellt ein neues Word-Dokument.
 - `DocumentBuilder builder = new DocumentBuilder(doc);` initialisiert den DocumentBuilder mit dem erstellten Dokument.
 
-## Schritt 3: Am Raster ausrichten für Absätze aktivieren
+## Schritt 3: Aktivieren Sie die Funktion „Am Raster ausrichten“ für Absätze
 
 Aktivieren wir nun die Option „Am Raster ausrichten“ für einen Absatz in Ihrem Dokument.
 
@@ -104,7 +104,7 @@ Festlegen der Schriftartausrichtung am Raster
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-- `par.Runs[0].Font.SnapToGrid = true;`stellt sicher, dass die im Absatz verwendete Schriftart am Raster ausgerichtet ist.
+- `par.Runs[0].Font.SnapToGrid = true;` stellt sicher, dass die im Absatz verwendete Schriftart am Raster ausgerichtet ist.
 
 ## Schritt 6: Speichern Sie das Dokument
 
@@ -125,7 +125,7 @@ Mit diesen Schritten haben Sie die Funktion „Am Raster ausrichten“ in einem 
 ## Häufig gestellte Fragen
 
 ### Was ist die Funktion „Am Raster ausrichten“?
-Mit „Am Raster ausrichten“ werden Text und Elemente an einem vordefinierten Raster ausgerichtet, wodurch eine einheitliche und strukturierte Dokumentformatierung gewährleistet wird.
+Mit der Funktion „Am Raster ausrichten“ werden Text und Elemente an einem vordefinierten Raster ausgerichtet, wodurch eine einheitliche und strukturierte Dokumentformatierung gewährleistet wird.
 
 ### Kann ich „Am Raster ausrichten“ nur für bestimmte Abschnitte verwenden?
 Ja, Sie können die Funktion „Am Raster ausrichten“ für bestimmte Absätze oder Abschnitte in Ihrem Dokument aktivieren.
@@ -137,4 +137,4 @@ Ja. Sie können zwar eine temporäre Lizenz zur Evaluierung verwenden, für den 
 Nein, die Aktivierung der Funktion „Am Raster ausrichten“ hat keine nennenswerten Auswirkungen auf die Dokumentleistung.
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für .NET?
- Besuchen Sie die[Dokumentation](https://reference.aspose.com/words/net/)für detaillierte Informationen und Beispiele.
+ Besuchen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Informationen und Beispiele.

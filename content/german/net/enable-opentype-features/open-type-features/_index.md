@@ -90,7 +90,7 @@ Diese Codezeile speichert das Dokument im PDF-Format und integriert die von Harf
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben OpenType-Funktionen in Ihrem Word-Dokument mithilfe von Aspose.Words für .NET erfolgreich aktiviert. Indem Sie diese Schritte befolgen, können Sie erweiterte typografische Funktionen freischalten und sicherstellen, dass Ihre Dokumente professionell und ausgefeilt aussehen.
+Und da haben Sie es! Sie haben OpenType-Funktionen in Ihrem Word-Dokument erfolgreich mit Aspose.Words für .NET aktiviert. Indem Sie diese Schritte befolgen, können Sie erweiterte typografische Funktionen freischalten und sicherstellen, dass Ihre Dokumente professionell und ausgefeilt aussehen.
 
 Aber hören Sie hier nicht auf! Entdecken Sie weitere Funktionen von Aspose.Words und erfahren Sie, wie Sie Ihre Dokumente weiter verbessern können. Denken Sie daran: Übung macht den Meister. Experimentieren und lernen Sie also weiter.
 
@@ -100,7 +100,7 @@ Aber hören Sie hier nicht auf! Entdecken Sie weitere Funktionen von Aspose.Word
 Zu den OpenType-Funktionen gehören erweiterte typografische Möglichkeiten wie Ligaturen, Unterschneidungen und Stilsätze, die die Darstellung von Text in Dokumenten verbessern.
 
 ### Warum HarfBuzz mit Aspose.Words verwenden?
-HarfBuzz ist eine Open-Source-Textgestaltungs-Engine, die robuste Unterstützung für OpenType-Funktionen bietet und so die typografische Qualität Ihrer Dokumente verbessert.
+HarfBuzz ist eine Open-Source-Textformungs-Engine, die robuste Unterstützung für OpenType-Funktionen bietet und so die typografische Qualität Ihrer Dokumente verbessert.
 
 ### Kann ich mit Aspose.Words andere Textformungs-Engines verwenden?
 Ja, Aspose.Words unterstützt verschiedene Textformungs-Engines. HarfBuzz ist jedoch aufgrund seiner umfassenden OpenType-Funktionsunterstützung sehr zu empfehlen.

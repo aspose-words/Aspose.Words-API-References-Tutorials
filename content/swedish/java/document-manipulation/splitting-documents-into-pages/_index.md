@@ -10,7 +10,7 @@ url: /sv/java/document-manipulation/splitting-documents-into-pages/
 
 Om du arbetar med dokumentbearbetning i Java är Aspose.Words för Java ett kraftfullt API som kan hjälpa dig att effektivt dela upp dokument i separata sidor. I denna steg-för-steg handledning guidar vi dig genom processen att dela upp dokument med hjälp av den medföljande källkoden. I slutet av denna handledning kommer du att kunna dela upp dokument med lätthet, vilket förbättrar dina dokumenthanteringsmöjligheter.
 
-## 1. Inledning
+## 1. Introduktion
 
 Aspose.Words för Java är ett Java-bibliotek som låter dig manipulera Word-dokument programmatiskt. En vanlig uppgift är att dela upp ett dokument i separata sidor, vilket kan vara användbart för olika ändamål, såsom arkivering, utskrift eller dokumentbehandling.
 

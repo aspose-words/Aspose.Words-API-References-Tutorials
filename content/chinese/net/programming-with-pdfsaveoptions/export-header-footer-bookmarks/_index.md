@@ -13,7 +13,7 @@ url: /zh/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 
 ## 先决条件
 
-在深入研究之前，请确保您已准备好以下内容：
+在深入研究之前，请确保您已具备以下条件：
 
 - Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。您可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 - 开发环境：设置您的开发环境。您可以使用 Visual Studio 或任何其他兼容 .NET 的 IDE。

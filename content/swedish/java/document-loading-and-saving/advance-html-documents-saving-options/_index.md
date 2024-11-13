@@ -10,11 +10,11 @@ url: /sv/java/document-loading-and-saving/advance-html-documents-saving-options/
 
 I den här handledningen kommer vi att utforska de avancerade alternativen för att spara HTML-dokument som tillhandahålls av Aspose.Words för Java. Aspose.Words är ett kraftfullt Java API för att arbeta med Word-dokument, och det erbjuder ett brett utbud av funktioner för dokumentmanipulation och konvertering.
 
-## 1. Inledning
+## 1. Introduktion
 Aspose.Words för Java låter dig arbeta med Word-dokument programmatiskt. I den här handledningen kommer vi att fokusera på avancerade alternativ för att spara HTML-dokument, som gör att du kan kontrollera hur Word-dokument konverteras till HTML.
 
 ## 2. Exportera information om tur och retur
- De`exportRoundtripInformation` metoden låter dig exportera Word-dokument till HTML samtidigt som du bevarar information om tur och retur. Denna information kan vara användbar när du vill konvertera HTML tillbaka till Word-format utan att förlora några dokumentspecifika detaljer.
+De`exportRoundtripInformation` metoden låter dig exportera Word-dokument till HTML samtidigt som du bevarar information om tur och retur. Denna information kan vara användbar när du vill konvertera HTML tillbaka till Word-format utan att förlora några dokumentspecifika detaljer.
 
 ```java
 public void exportRoundtripInformation() throws Exception {
@@ -39,7 +39,7 @@ public void exportFontsAsBase64() throws Exception {
 ```
 
 ## 4. Exportera resurser
- De`exportResources` metoden låter dig ange typen av CSS-formatmall och exportera teckensnittsresurser. Du kan också ställa in en resursmapp och ett alias för resurser i HTML.
+De`exportResources` metoden låter dig ange typen av CSS-formatmall och exportera teckensnittsresurser. Du kan också ställa in en resursmapp och ett alias för resurser i HTML.
 
 ```java
 @Test
@@ -55,7 +55,7 @@ public void exportResources() throws Exception {
 ```
 
 ## 5. Konvertera metafiler till EMF eller WMF
- De`convertMetafilesToEmfOrWmf`metoden låter dig konvertera metafiler i dokumentet till antingen EMF- eller WMF-format, vilket säkerställer kompatibilitet och smidig rendering i HTML.
+De`convertMetafilesToEmfOrWmf`metoden låter dig konvertera metafiler i dokumentet till antingen EMF- eller WMF-format, vilket säkerställer kompatibilitet och smidig rendering i HTML.
 
 ```java
 @Test
@@ -89,7 +89,7 @@ public void addCssClassNamePrefix() throws Exception {
 ```
 
 ## 8. Exportera CID-URL:er för MHTML-resurser
- De`exportCidUrlsForMhtmlResources` metod används när du sparar dokument i MHTML-format. Det tillåter export av Content-ID-webbadresser för resurser.
+De`exportCidUrlsForMhtmlResources` metod används när du sparar dokument i MHTML-format. Det tillåter export av Content-ID-webbadresser för resurser.
 
 ```java
 @Test
@@ -99,7 +99,7 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 ```
 
 ## 9. Lös teckensnittsnamn
- De`resolveFontNames` metod hjälper till att lösa teckensnittsnamn när du sparar dokument i HTML-format, vilket säkerställer konsekvent rendering på olika plattformar.
+De`resolveFontNames` metod hjälper till att lösa teckensnittsnamn när du sparar dokument i HTML-format, vilket säkerställer konsekvent rendering på olika plattformar.
 
 ```java
 @Test
@@ -109,7 +109,7 @@ public void resolveFontNames() throws Exception {
 ```
 
 ## 10. Exportera textinmatningsformulärfält som text
- De`exportTextInputFormFieldAsText` metod exporterar formulärfält som vanlig text i HTML, vilket gör dem lätta att läsa och redigera.
+De`exportTextInputFormFieldAsText` metod exporterar formulärfält som vanlig text i HTML, vilket gör dem lätta att läsa och redigera.
 
 ```java
 @Test

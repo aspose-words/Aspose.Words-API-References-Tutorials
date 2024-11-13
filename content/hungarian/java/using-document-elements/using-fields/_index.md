@@ -2,7 +2,7 @@
 title: Mezők használata az Aspose.Words for Java-ban
 linktitle: Mezők használata
 second_title: Aspose.Words Java Document Processing API
-description: Ebben a lépésenkénti oktatóanyagban tanulja meg az Aspose.Words for Java mezők hatékony használatát. Dinamikus Word dokumentumokat hozhat létre könnyedén.
+description: Tanulja meg az Aspose.Words for Java mezők hatékony használatát ebben a lépésről lépésre mutató oktatóanyagban. Dinamikus Word dokumentumokat hozhat létre könnyedén.
 type: docs
 weight: 11
 url: /hu/java/using-document-elements/using-fields/
@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Cserélje ki`"Your Document Directory"`és`"Your Output Directory"` a megfelelő utakkal.
+ Cserélje ki`"Your Document Directory"` és`"Your Output Directory"` a megfelelő utakkal.
 
 ## 4. A körlevél testreszabása
 

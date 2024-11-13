@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/add-content-using-documentbuilder/create-new-document/
 ---
 ## Zavedení
-Ponoříme se hluboko do světa Aspose.Words for .NET, klenotu knihovny pro všechny vaše potřeby manipulace s dokumenty. Ať už generujete dynamické sestavy, automatizujete vytváření dokumentů nebo vás jen nebaví dělat opakující se úkoly ručně, Aspose.Words je tu, aby vám zachránila situaci. Vyhrňme si rukávy a ušpiněme si ruce vytvořením nového dokumentu aplikace Word od začátku pomocí tohoto mocného nástroje.
+Ponoříme se hluboko do světa Aspose.Words pro .NET, klenotu knihovny pro všechny vaše potřeby manipulace s dokumenty. Ať už generujete dynamické sestavy, automatizujete vytváření dokumentů nebo vás jen nebaví dělat opakující se úkoly ručně, Aspose.Words je tu, aby vám zachránila situaci. Vyhrňme si rukávy a ušpiněme si ruce vytvořením nového dokumentu aplikace Word od začátku pomocí tohoto mocného nástroje.
 
 ## Předpoklady
 

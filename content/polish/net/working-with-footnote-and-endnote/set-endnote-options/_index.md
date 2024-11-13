@@ -1,27 +1,27 @@
 ---
-title: Ustaw opcje przypisu końcowego
-linktitle: Ustaw opcje przypisu końcowego
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić opcje przypisów końcowych w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku.
+title: Ustaw opcje przypisów końcowych
+linktitle: Ustaw opcje przypisów końcowych
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak ustawić opcje przypisów końcowych w dokumentach programu Word za pomocą Aspose.Words dla platformy .NET, korzystając z tego kompleksowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
 ## Wstęp
 
-Czy chcesz ulepszyć swoje dokumenty Word, efektywnie zarządzając przypisami końcowymi? Nie szukaj dalej! W tym samouczku przeprowadzimy Cię przez proces ustawiania opcji przypisów końcowych w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Pod koniec tego przewodnika będziesz profesjonalistą w dostosowywaniu przypisów końcowych do potrzeb dokumentu.
+Czy chcesz ulepszyć swoje dokumenty Word, sprawnie zarządzając przypisami końcowymi? Nie szukaj dalej! W tym samouczku przeprowadzimy Cię przez proces ustawiania opcji przypisów końcowych w dokumentach Word przy użyciu Aspose.Words dla .NET. Pod koniec tego przewodnika będziesz profesjonalistą w dostosowywaniu przypisów końcowych do potrzeb swojego dokumentu.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
+Zanim przejdziesz do samouczka, upewnij się, że spełnione są następujące wymagania wstępne:
 
--  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne: Skonfiguruj środowisko programistyczne, takie jak Visual Studio.
-- Podstawowa znajomość języka C#: Podstawowa znajomość programowania w języku C# będzie korzystna.
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Przygotuj środowisko programistyczne, np. Visual Studio.
+- Podstawowa znajomość języka C#: Podstawowa znajomość programowania w języku C# będzie przydatna.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulowania dokumentami programu Word.
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulowania dokumentami Word.
 
 ```csharp
 using Aspose.Words;
@@ -30,16 +30,16 @@ using Aspose.Words.Notes;
 
 ## Krok 1: Załaduj dokument
 
- Najpierw załadujmy dokument, w którym chcemy ustawić opcje przypisu końcowego. Skorzystamy z`Document` class z biblioteki Aspose.Words, aby to osiągnąć.
+ Najpierw załadujmy dokument, w którym chcemy ustawić opcje przypisów końcowych. Użyjemy`Document` Aby to osiągnąć, należy użyć klasy z biblioteki Aspose.Words.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Krok 2: Zainicjuj DocumentBuider
+## Krok 2: Zainicjuj DocumentBuilder
 
- Następnie zainicjujemy plik`DocumentBuilder`klasa. Ta klasa zapewnia prosty sposób dodawania treści do dokumentu.
+ Następnie zainicjujemy`DocumentBuilder`Klasa. Ta klasa zapewnia prosty sposób dodawania treści do dokumentu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -47,16 +47,16 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Dodaj tekst i wstaw przypis końcowy
 
- Teraz dodajmy trochę tekstu do dokumentu i wstawmy przypis końcowy. The`InsertFootnote` metoda`DocumentBuilder` class pozwala nam dodawać przypisy końcowe do dokumentu.
+ Teraz dodajmy trochę tekstu do dokumentu i wstawmy przypis końcowy.`InsertFootnote` metoda`DocumentBuilder` Klasa ta umożliwia dodawanie przypisów końcowych do dokumentu.
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## Krok 4: Uzyskaj dostęp i ustaw opcje przypisu końcowego
+## Krok 4: Dostęp i ustawienie opcji przypisów końcowych
 
- Aby dostosować opcje przypisu końcowego, musimy uzyskać dostęp do pliku`EndnoteOptions` własność`Document` klasa. Następnie możemy ustawić różne opcje, takie jak reguła ponownego uruchomienia i pozycja.
+ Aby dostosować opcje przypisów końcowych, musimy uzyskać dostęp do`EndnoteOptions` własność`Document` klasa. Następnie możemy ustawić różne opcje, takie jak reguła ponownego uruchomienia i pozycja.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -66,7 +66,7 @@ option.Position = EndnotePosition.EndOfSection;
 
 ## Krok 5: Zapisz dokument
 
- Na koniec zapiszmy dokument ze zaktualizowanymi opcjami przypisu końcowego. The`Save` metoda`Document` class pozwala nam zapisać dokument we wskazanym katalogu.
+ Na koniec zapiszmy dokument z zaktualizowanymi opcjami przypisów końcowych.`Save` metoda`Document` Klasa pozwala nam zapisać dokument do wskazanego katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
@@ -74,21 +74,21 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 ## Wniosek
 
-Ustawienie opcji przypisów końcowych w dokumentach programu Word za pomocą Aspose.Words dla .NET jest proste dzięki wykonaniu tych prostych kroków. Dostosowując regułę ponownego uruchamiania i położenie przypisów końcowych, możesz dostosować swoje dokumenty do określonych wymagań. Dzięki Aspose.Words możliwości manipulowania dokumentami programu Word są na wyciągnięcie ręki.
+Ustawianie opcji przypisów końcowych w dokumentach Word za pomocą Aspose.Words dla .NET jest dziecinnie proste dzięki tym prostym krokom. Dostosowując regułę ponownego uruchamiania i pozycję przypisów końcowych, możesz dostosować dokumenty do określonych wymagań. Dzięki Aspose.Words masz możliwość manipulowania dokumentami Word na wyciągnięcie ręki.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężna biblioteka do programowego manipulowania dokumentami programu Word. Umożliwia programistom tworzenie, modyfikowanie i konwertowanie dokumentów programu Word w różnych formatach.
+### Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to potężna biblioteka do programowego manipulowania dokumentami Word. Umożliwia ona programistom tworzenie, modyfikowanie i konwertowanie dokumentów Word w różnych formatach.
 
 ### Czy mogę używać Aspose.Words za darmo?
- Możesz używać Aspose.Words w ramach bezpłatnej wersji próbnej. W przypadku dłuższego użytkowania możesz kupić licencję na stronie[Tutaj](https://purchase.aspose.com/buy).
+ Możesz używać Aspose.Words z bezpłatną wersją próbną. W celu dłuższego użytkowania możesz kupić licencję od[Tutaj](https://purchase.aspose.com/buy).
 
-### Co to są przypisy końcowe?
-Przypisy końcowe to odniesienia lub notatki umieszczane na końcu sekcji lub dokumentu. Podają dodatkowe informacje lub cytaty.
+### Czym są przypisy końcowe?
+Przypisy końcowe to odniesienia lub notatki umieszczane na końcu sekcji lub dokumentu. Dostarczają dodatkowych informacji lub cytatów.
 
 ### Jak dostosować wygląd przypisów końcowych?
- Za pomocą przycisku możesz dostosować opcje przypisów końcowych, takie jak numeracja, pozycja i reguły ponownego uruchamiania`EndnoteOptions` klasa w Aspose.Words dla .NET.
+ Możesz dostosować opcje przypisów końcowych, takie jak numerowanie, pozycja i reguły ponownego uruchamiania, korzystając z`EndnoteOptions` klasa w Aspose.Words dla .NET.
 
 ### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
- Szczegółowa dokumentacja dostępna jest na stronie[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) strona.
+ Szczegółowa dokumentacja jest dostępna na stronie[Dokumentacja Aspose.Words dla .NET](https://reference.aspose.com/words/net/) strona.

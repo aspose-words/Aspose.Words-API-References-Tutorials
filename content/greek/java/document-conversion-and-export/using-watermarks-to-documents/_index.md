@@ -27,7 +27,7 @@ url: /el/java/document-conversion-and-export/using-watermarks-to-documents/
 Τα υδατογραφήματα κειμένου είναι μια κοινή επιλογή όταν θέλετε να προσθέσετε πληροφορίες κειμένου στα έγγραφά σας. Δείτε πώς μπορείτε να προσθέσετε ένα υδατογράφημα κειμένου χρησιμοποιώντας το Aspose.Words για Java:
 
 ```java
-//Δημιουργήστε μια παρουσία εγγράφου
+// Δημιουργήστε μια παρουσία εγγράφου
 Document doc = new Document("Document.docx");
 
 // Ορισμός Επιλογών TextWatermark
@@ -38,7 +38,7 @@ options.setColor(Color.BLACK);
 options.setLayout(WatermarkLayout.HORIZONTAL);
 options.setSemitransparent(false);
 
-// Ορίστε το κείμενο και τις επιλογές του υδατογραφήματος
+//Ορίστε το κείμενο και τις επιλογές του υδατογραφήματος
 doc.getWatermark().setText("Test", options);
 
 // Αποθηκεύστε το έγγραφο με το υδατογράφημα
@@ -50,7 +50,7 @@ doc.save("DocumentWithWatermark.docx");
 Εκτός από τα υδατογραφήματα κειμένου, μπορείτε επίσης να προσθέσετε υδατογραφήματα εικόνας στα έγγραφά σας. Δείτε πώς μπορείτε να προσθέσετε ένα υδατογράφημα εικόνας:
 
 ```java
-//Δημιουργήστε μια παρουσία εγγράφου
+// Δημιουργήστε μια παρουσία εγγράφου
 Document doc = new Document("Document.docx");
 
 // Φορτώστε την εικόνα για το υδατογράφημα
@@ -80,7 +80,7 @@ doc.save("DocumentWithImageWatermark.docx");
 Για να αφαιρέσετε υδατογραφήματα από ένα έγγραφο, μπορείτε να χρησιμοποιήσετε τον ακόλουθο κώδικα:
 
 ```java
-//Δημιουργήστε μια παρουσία εγγράφου
+// Δημιουργήστε μια παρουσία εγγράφου
 Document doc = new Document("DocumentWithWatermark.docx");
 
 // Αφαιρέστε το υδατογράφημα

@@ -2,20 +2,20 @@
 title: Código embutido
 linktitle: Código embutido
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como aplicar estilos de código embutido em documentos do Word usando Aspose.Words for .NET. Este tutorial cobre crases únicos e múltiplos para formatação de código.
+description: Aprenda como aplicar estilos de código inline em documentos do Word usando Aspose.Words para .NET. Este tutorial abrange acentos graves simples e múltiplos para formatação de código.
 type: docs
 weight: 10
 url: /pt/net/working-with-markdown/inline-code/
 ---
 ## Introdução
 
-Se você estiver trabalhando na geração ou manipulação de documentos do Word de forma programática, talvez seja necessário formatar o texto para se parecer com o código. Seja para documentação ou trechos de código em um relatório, o Aspose.Words for .NET fornece uma maneira robusta de lidar com estilos de texto. Neste tutorial, vamos nos concentrar em como aplicar estilos de código embutido ao texto usando Aspose.Words. Exploraremos como definir e usar estilos personalizados para crases únicos e múltiplos, fazendo com que seus segmentos de código se destaquem claramente em seus documentos.
+Se você estiver trabalhando na geração ou manipulação de documentos do Word programaticamente, pode ser necessário formatar o texto para que ele se assemelhe ao código. Seja para documentação ou trechos de código em um relatório, o Aspose.Words para .NET fornece uma maneira robusta de lidar com o estilo de texto. Neste tutorial, vamos nos concentrar em como aplicar estilos de código inline ao texto usando o Aspose.Words. Exploraremos como definir e usar estilos personalizados para acentos graves simples e múltiplos, fazendo com que seus segmentos de código se destaquem claramente em seus documentos.
 
 ## Pré-requisitos
 
-Antes de começarmos, certifique-se de ter o seguinte:
+Antes de começar, certifique-se de ter o seguinte:
 
-1.  Biblioteca Aspose.Words para .NET: Certifique-se de ter o Aspose.Words instalado em seu ambiente .NET. Você pode baixá-lo no[Página de lançamentos do Aspose.Words for .NET](https://releases.aspose.com/words/net/).
+1.  Biblioteca Aspose.Words para .NET: Certifique-se de ter o Aspose.Words instalado em seu ambiente .NET. Você pode baixá-lo do[Página de lançamentos do Aspose.Words para .NET](https://releases.aspose.com/words/net/).
 
 2. Conhecimento básico de programação .NET: Este guia pressupõe que você tenha um conhecimento fundamental de programação C# e .NET.
 
@@ -23,7 +23,7 @@ Antes de começarmos, certifique-se de ter o seguinte:
 
 ## Importar namespaces
 
-Para começar a usar Aspose.Words em seu projeto, você precisará importar os namespaces necessários. Veja como você faz isso:
+Para começar a usar o Aspose.Words no seu projeto, você precisará importar os namespaces necessários. Veja como fazer isso:
 
 ```csharp
 using Aspose.Words;
@@ -34,26 +34,26 @@ Vamos dividir o processo em etapas claras:
 
 ## Etapa 1: inicializar o documento e o DocumentBuilder
 
- Primeiro, você precisa criar um novo documento e um`DocumentBuilder` exemplo. O`DocumentBuilder`class ajuda você a adicionar conteúdo e formatá-lo em um documento do Word.
+ Primeiro, você precisa criar um novo documento e um`DocumentBuilder` instância. O`DocumentBuilder` classe ajuda você a adicionar conteúdo e formatá-lo em um documento do Word.
 
 ```csharp
 // Inicialize o DocumentBuilder com o novo documento.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Etapa 2: adicionar estilo de código embutido com um backtick
+## Etapa 2: adicione estilo de código embutido com uma crase
 
-Nesta etapa, definiremos um estilo para código embutido com um único crase. Este estilo formatará o texto para se parecer com o código embutido.
+Nesta etapa, definiremos um estilo para código inline com um único acento grave. Este estilo formatará o texto para parecer código inline.
 
 ### Defina o estilo
 
 ```csharp
-// Defina um novo estilo de caractere para código embutido com um crase.
+// Defina um novo estilo de caractere para código embutido com uma crase.
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 inlineCode1BackTicks.Font.Name = "Courier New"; // Uma fonte típica para código.
-inlineCode1BackTicks.Font.Size = 10.5; // Tamanho da fonte do código embutido.
+inlineCode1BackTicks.Font.Size = 10.5; // Tamanho da fonte para o código embutido.
 inlineCode1BackTicks.Font.Color = System.Drawing.Color.Blue; // Cor do texto do código.
-inlineCode1BackTicks.Font.Bold = true; // Deixe o texto do código em negrito.
+inlineCode1BackTicks.Font.Bold = true; // Coloque o texto do código em negrito.
 ```
 
 ### Aplicar o estilo
@@ -66,24 +66,24 @@ builder.Font.Style = inlineCode1BackTicks;
 builder.Writeln("Text with InlineCode style with 1 backtick");
 ```
 
-## Etapa 3: adicionar estilo de código embutido com três crases
+## Etapa 3: adicione estilo de código embutido com três acentos graves
 
-A seguir, definiremos um estilo para código embutido com três crases, que normalmente é usado para blocos de código multilinhas.
+Em seguida, definiremos um estilo para código embutido com três acentos graves, que normalmente é usado para blocos de código de várias linhas.
 
 ### Defina o estilo
 
 ```csharp
-// Defina um novo estilo de caractere para código embutido com três crases.
+// Defina um novo estilo de caractere para código embutido com três acentos graves.
 Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
 inlineCode3BackTicks.Font.Name = "Courier New"; // Fonte consistente para código.
-inlineCode3BackTicks.Font.Size = 10.5; // Tamanho da fonte do bloco de código.
+inlineCode3BackTicks.Font.Size = 10.5; // Tamanho da fonte para o bloco de código.
 inlineCode3BackTicks.Font.Color = System.Drawing.Color.Green; //Cor diferente para visibilidade.
-inlineCode3BackTicks.Font.Bold = true; // Mantenha-o em negrito para dar ênfase.
+inlineCode3BackTicks.Font.Bold = true; // Mantenha em negrito para dar ênfase.
 ```
 
 ### Aplicar o estilo
 
-Aplique este estilo ao texto para formatá-lo como um bloco de código multilinha.
+Aplique este estilo ao texto para formatá-lo como um bloco de código de várias linhas.
 
 ```csharp
 // Aplique o estilo ao bloco de código.
@@ -93,13 +93,13 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 
 ## Conclusão
 
-Formatar texto como código embutido em documentos do Word usando Aspose.Words for .NET é simples quando você conhece as etapas. Ao definir e aplicar estilos personalizados com crases únicos ou múltiplos, você pode fazer com que seus trechos de código se destaquem claramente. Este método é particularmente útil para documentação técnica ou qualquer documento onde a legibilidade do código seja essencial.
+Formatar texto como código inline em documentos do Word usando o Aspose.Words para .NET é simples quando você conhece os passos. Ao definir e aplicar estilos personalizados com acentos graves simples ou múltiplos, você pode fazer seus trechos de código se destacarem claramente. Este método é particularmente útil para documentação técnica ou qualquer documento em que a legibilidade do código seja essencial.
 
-Sinta-se à vontade para experimentar diferentes estilos e opções de formatação para melhor atender às suas necessidades. Aspose.Words oferece ampla flexibilidade, permitindo que você personalize bastante a aparência do seu documento.
+Sinta-se à vontade para experimentar diferentes estilos e opções de formatação para melhor atender às suas necessidades. O Aspose.Words oferece ampla flexibilidade, permitindo que você personalize a aparência do seu documento em grande medida.
 
 ## Perguntas frequentes
 
-### Posso usar fontes diferentes para estilos de código embutido?
+### Posso usar fontes diferentes para estilos de código embutidos?
 Sim, você pode usar qualquer fonte que atenda às suas necessidades. Fontes como "Courier New" são normalmente usadas para código devido à sua natureza monoespaçada.
 
 ### Como altero a cor do texto do código embutido?
@@ -109,7 +109,7 @@ Sim, você pode usar qualquer fonte que atenda às suas necessidades. Fontes com
 No Aspose.Words, você só pode aplicar um estilo por vez. Se precisar combinar estilos, considere criar um novo estilo que incorpore toda a formatação desejada.
 
 ### Como aplico estilos ao texto existente em um documento?
- Para aplicar estilos ao texto existente, você precisa primeiro selecionar o texto e depois aplicar o estilo desejado usando o botão`Font.Style` propriedade.
+ Para aplicar estilos ao texto existente, você precisa primeiro selecionar o texto e depois aplicar o estilo desejado usando o`Font.Style` propriedade.
 
-### Posso usar Aspose.Words para outros formatos de documentos?
-Aspose.Words foi projetado especificamente para documentos do Word. Para outros formatos, pode ser necessário usar bibliotecas diferentes ou converter os documentos para um formato compatível.
+### Posso usar o Aspose.Words para outros formatos de documento?
+O Aspose.Words foi projetado especificamente para documentos do Word. Para outros formatos, você pode precisar usar bibliotecas diferentes ou converter os documentos para um formato compatível.

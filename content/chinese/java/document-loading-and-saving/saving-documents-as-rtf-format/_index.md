@@ -8,7 +8,7 @@ weight: 23
 url: /zh/java/document-loading-and-saving/saving-documents-as-rtf-format/
 ---
 
-## 在 Aspose.Words for Java 中将文档保存为 RTF 格式的简介
+## 使用 Aspose.Words for Java 将文档保存为 RTF 格式的简介
 
 在本指南中，我们将引导您完成使用 Aspose.Words for Java 将文档保存为 RTF（富文本格式）的过程。RTF 是一种常用的文档格式，可在各种文字处理应用程序中提供高水平的兼容性。
 
@@ -35,7 +35,7 @@ Document doc = new Document("path/to/Document.docx");
 
 ## 步骤 2：配置 RTF 保存选项
 
-Aspose.Words 提供了各种配置 RTF 输出的选项。在本例中，我们将使用`RtfSaveOptions`并设置选项以在 RTF 文档中将图像保存为 WMF（Windows Metafile）格式。
+Aspose.Words 提供了多种配置 RTF 输出的选项。在本例中，我们将使用`RtfSaveOptions`并设置选项以在 RTF 文档中将图像保存为 WMF（Windows Metafile）格式。
 
 ```java
 import com.aspose.words.RtfSaveOptions;
@@ -54,14 +54,14 @@ saveOptions.setSaveImagesAsWmf(true);
 现在我们已经加载了文档并配置了 RTF 保存选项，是时候将文档保存为 RTF 格式了。
 
 ```java
-//将文档保存为 RTF 格式
+//以 RTF 格式保存文档
 
 doc.save("path/to/output.rtf", saveOptions);
 ```
 
 代替`"path/to/output.rtf"`使用 RTF 输出文件的所需路径和文件名。
 
-## 在 Aspose.Words for Java 中将文档保存为 RTF 格式的完整源代码
+## 使用 Aspose.Words for Java 将文档保存为 RTF 格式的完整源代码
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");

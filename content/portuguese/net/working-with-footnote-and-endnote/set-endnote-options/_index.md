@@ -2,22 +2,22 @@
 title: Definir opções de nota final
 linktitle: Definir opções de nota final
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como definir opções de notas finais em documentos do Word usando Aspose.Words for .NET com este guia passo a passo abrangente.
+description: Aprenda como definir opções de nota final em documentos do Word usando o Aspose.Words para .NET com este guia passo a passo abrangente.
 type: docs
 weight: 10
 url: /pt/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
 ## Introdução
 
-Você deseja aprimorar seus documentos do Word gerenciando notas finais com eficiência? Não procure mais! Neste tutorial, orientaremos você no processo de configuração de opções de notas finais em documentos do Word usando Aspose.Words for .NET. Ao final deste guia, você será um profissional na personalização de notas finais para atender às necessidades do seu documento.
+Você está procurando aprimorar seus documentos do Word gerenciando notas de rodapé de forma eficiente? Não procure mais! Neste tutorial, nós o guiaremos pelo processo de configuração de opções de notas de rodapé em documentos do Word usando o Aspose.Words para .NET. Ao final deste guia, você será um profissional na personalização de notas de rodapé para atender às necessidades do seu documento.
 
 ## Pré-requisitos
 
 Antes de mergulhar no tutorial, certifique-se de ter os seguintes pré-requisitos em vigor:
 
--  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words for .NET instalada. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
-- Ambiente de Desenvolvimento: Tenha um ambiente de desenvolvimento configurado, como o Visual Studio.
-- Conhecimento básico de C#: Uma compreensão fundamental da programação C# será benéfica.
+-  Aspose.Words para .NET: Certifique-se de ter a biblioteca Aspose.Words para .NET instalada. Você pode baixá-la em[aqui](https://releases.aspose.com/words/net/).
+- Ambiente de desenvolvimento: tenha um ambiente de desenvolvimento configurado, como o Visual Studio.
+- Conhecimento básico de C#: Uma compreensão fundamental da programação em C# será benéfica.
 
 ## Importar namespaces
 
@@ -28,35 +28,35 @@ using Aspose.Words;
 using Aspose.Words.Notes;
 ```
 
-## Etapa 1: carregue o documento
+## Etapa 1: Carregue o documento
 
- Primeiro, vamos carregar o documento onde queremos definir as opções de nota final. Usaremos o`Document` class da biblioteca Aspose.Words para fazer isso.
+ Primeiro, vamos carregar o documento onde queremos definir as opções de nota final. Usaremos o`Document` classe da biblioteca Aspose.Words para fazer isso.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Etapa 2: inicializar o DocumentBuilder
+## Etapa 2: Inicializar o DocumentBuilder
 
- A seguir, inicializaremos o`DocumentBuilder`aula. Esta classe fornece uma maneira simples de adicionar conteúdo ao documento.
+ Em seguida, inicializaremos o`DocumentBuilder`classe. Esta classe fornece uma maneira simples de adicionar conteúdo ao documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Etapa 3: adicionar texto e inserir nota final
+## Etapa 3: Adicionar texto e inserir nota final
 
- Agora, vamos adicionar algum texto ao documento e inserir uma nota final. O`InsertFootnote` método do`DocumentBuilder` class nos permite adicionar notas finais ao documento.
+ Agora, vamos adicionar algum texto ao documento e inserir uma nota final. O`InsertFootnote` método do`DocumentBuilder` A classe nos permite adicionar notas de rodapé ao documento.
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## Etapa 4: acessar e definir opções de nota final
+## Etapa 4: Acessar e definir opções de nota final
 
- Para personalizar as opções de notas finais, precisamos acessar o`EndnoteOptions` propriedade do`Document` aula. Podemos então definir várias opções, como regra e posição de reinicialização.
+ Para personalizar as opções de nota final, precisamos acessar o`EndnoteOptions` propriedade do`Document` classe. Podemos então definir várias opções, como a regra de reinicialização e a posição.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -64,9 +64,9 @@ option.RestartRule = FootnoteNumberingRule.RestartPage;
 option.Position = EndnotePosition.EndOfSection;
 ```
 
-## Etapa 5: salve o documento
+## Etapa 5: Salve o documento
 
- Finalmente, vamos salvar o documento com as opções de nota final atualizadas. O`Save` método do`Document` class nos permite salvar o documento no diretório especificado.
+ Por fim, vamos salvar o documento com as opções de nota de rodapé atualizadas. O`Save` método do`Document` A classe nos permite salvar o documento no diretório especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
@@ -74,21 +74,21 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 ## Conclusão
 
-Definir opções de notas finais em seus documentos do Word usando Aspose.Words for .NET é muito fácil com estas etapas simples. Ao personalizar a regra de reinicialização e a posição das notas finais, você pode adaptar seus documentos para atender a requisitos específicos. Com Aspose.Words, o poder de manipular documentos do Word está ao seu alcance.
+Definir opções de notas de fim em seus documentos do Word usando o Aspose.Words para .NET é moleza com estas etapas simples. Ao personalizar a regra de reinício e a posição das notas de fim, você pode adaptar seus documentos para atender a requisitos específicos. Com o Aspose.Words, o poder de manipular documentos do Word está na ponta dos seus dedos.
 
 ## Perguntas frequentes
 
 ### O que é Aspose.Words para .NET?
-Aspose.Words for .NET é uma biblioteca poderosa para manipular documentos do Word programaticamente. Ele permite que os desenvolvedores criem, modifiquem e convertam documentos do Word em vários formatos.
+Aspose.Words for .NET é uma biblioteca poderosa para manipular documentos do Word programaticamente. Ela permite que desenvolvedores criem, modifiquem e convertam documentos do Word em vários formatos.
 
 ### Posso usar o Aspose.Words gratuitamente?
- Você pode usar o Aspose.Words com uma avaliação gratuita. Para uso prolongado, você pode adquirir uma licença em[aqui](https://purchase.aspose.com/buy).
+ Você pode usar o Aspose.Words com um teste gratuito. Para uso prolongado, você pode comprar uma licença de[aqui](https://purchase.aspose.com/buy).
 
-### O que são notas finais?
-Notas finais são referências ou notas colocadas no final de uma seção ou documento. Eles fornecem informações ou citações adicionais.
+### O que são notas de rodapé?
+Notas de fim são referências ou notas colocadas no final de uma seção ou documento. Elas fornecem informações ou citações adicionais.
 
-### Como posso personalizar a aparência das notas finais?
- Você pode personalizar opções de notas finais, como numeração, posição e regras de reinicialização usando o`EndnoteOptions` classe em Aspose.Words para .NET.
+### Como posso personalizar a aparência das notas de rodapé?
+ Você pode personalizar opções de nota final, como numeração, posição e regras de reinicialização usando o`EndnoteOptions` classe em Aspose.Words para .NET.
 
-### Onde posso encontrar mais documentação sobre Aspose.Words for .NET?
- A documentação detalhada está disponível no site[Documentação Aspose.Words para .NET](https://reference.aspose.com/words/net/) página.
+### Onde posso encontrar mais documentação sobre o Aspose.Words para .NET?
+ A documentação detalhada está disponível em[Aspose.Words para documentação .NET](https://reference.aspose.com/words/net/) página.

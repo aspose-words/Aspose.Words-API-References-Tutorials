@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
- The`Styles` vlastnictvím`Document` class nám poskytuje přístup ke všem stylům dostupným v dokumentu. Používáme`StyleIdentifier.Quote`vyberte styl nabídky.
+The`Styles` vlastnictví`Document` class nám poskytuje přístup ke všem stylům dostupným v dokumentu. Používáme`StyleIdentifier.Quote`vyberte styl nabídky.
 
 ## Krok 4: Použijte styl na štítek strukturovaného dokumentu
 

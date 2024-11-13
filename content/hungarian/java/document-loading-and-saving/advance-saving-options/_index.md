@@ -1,6 +1,6 @@
 ---
 title: Speciális mentési beállítások az Aspose.Words for Java segítségével
-linktitle: Dokumentumok mentése különböző formátumokban a következővel
+linktitle: Dokumentumok mentése különféle formátumokban a következővel
 second_title: Aspose.Words Java Document Processing API
 description: Tanuljon meg haladó szintű dokumentumkezelést az Aspose.Words for Java segítségével. Titkosítás, metafájlok kezelése stb. A te Word-dokumentumoid, a te módod.
 type: docs

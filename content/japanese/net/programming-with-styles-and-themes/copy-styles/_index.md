@@ -27,7 +27,7 @@ url: /ja/net/programming-with-styles-and-themes/copy-styles/
 using Aspose.Words;
 ```
 
-この名前空間を含めることで、Aspose.Words ライブラリの強力な機能すべてにアクセスできるようになります。
+この名前空間を含めると、Aspose.Words ライブラリの強力な機能すべてにアクセスできるようになります。
 
 ## ステップ1: ドキュメントディレクトリを設定する
 

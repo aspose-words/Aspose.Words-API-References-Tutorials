@@ -2,7 +2,7 @@
 title: Używanie stylów i motywów w Aspose.Words dla Java
 linktitle: Korzystanie ze stylów i motywów
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak ulepszyć formatowanie dokumentów za pomocą Aspose.Words dla Java. Przeglądaj style, motywy i nie tylko w tym obszernym przewodniku z przykładami kodu źródłowego.
+description: Dowiedz się, jak ulepszyć formatowanie dokumentów za pomocą Aspose.Words for Java. Poznaj style, motywy i wiele więcej w tym kompleksowym przewodniku z przykładami kodu źródłowego.
 type: docs
 weight: 20
 url: /pl/java/document-manipulation/using-styles-and-themes/
@@ -10,11 +10,11 @@ url: /pl/java/document-manipulation/using-styles-and-themes/
 
 ## Wprowadzenie do używania stylów i motywów w Aspose.Words dla Java
 
-W tym przewodniku przyjrzymy się, jak pracować ze stylami i motywami w Aspose.Words dla Java, aby poprawić formatowanie i wygląd dokumentów. Omówimy takie tematy, jak pobieranie stylów, kopiowanie stylów, zarządzanie motywami i wstawianie separatorów stylów. Zacznijmy!
+W tym przewodniku przyjrzymy się sposobowi pracy ze stylami i motywami w Aspose.Words for Java, aby ulepszyć formatowanie i wygląd dokumentów. Omówimy takie tematy, jak pobieranie stylów, kopiowanie stylów, zarządzanie motywami i wstawianie separatorów stylów. Zaczynajmy!
 
-## Odzyskiwanie stylów
+## Pobieranie stylów
 
-Aby pobrać style z dokumentu, możesz użyć następującego fragmentu kodu Java:
+Aby pobrać style z dokumentu, możesz skorzystać z następującego fragmentu kodu Java:
 
 ```java
 Document doc = new Document();
@@ -36,11 +36,11 @@ for (Style style : styles)
 }
 ```
 
-Ten kod pobiera style zdefiniowane w dokumencie i wypisuje ich nazwy.
+Ten kod pobiera style zdefiniowane w dokumencie i wyświetla ich nazwy.
 
 ## Kopiowanie stylów
 
- Aby skopiować style z jednego dokumentu do drugiego, możesz użyć metody`copyStylesFromTemplate` metoda pokazana poniżej:
+ Aby skopiować style z jednego dokumentu do drugiego, możesz użyć`copyStylesFromTemplate` metoda pokazana poniżej:
 
 ```java
 @Test
@@ -55,9 +55,9 @@ public void copyStyles() throws Exception
 
 Ten kod kopiuje style z dokumentu szablonu do bieżącego dokumentu.
 
-## Zarządzanie tematami
+## Zarządzanie motywami
 
-Motywy są niezbędne do zdefiniowania ogólnego wyglądu dokumentu. Możesz pobrać i ustawić właściwości motywu, jak pokazano w następującym kodzie:
+Motywy są niezbędne do zdefiniowania ogólnego wyglądu dokumentu. Możesz pobrać i ustawić właściwości motywu, jak pokazano w poniższym kodzie:
 
 ```java
 @Test
@@ -80,11 +80,11 @@ public void setThemeProperties() throws Exception
 }
 ```
 
-Te fragmenty pokazują, jak pobierać i modyfikować właściwości motywu, takie jak czcionki i kolory.
+Poniższe fragmenty kodu pokazują, jak pobierać i modyfikować właściwości motywu, takie jak czcionki i kolory.
 
-## Wstawianie separatorów stylu
+## Wstawianie separatorów stylów
 
-Separatory stylów są przydatne do stosowania różnych stylów w jednym akapicie. Oto przykład wstawiania separatorów stylu:
+Separatory stylów są przydatne do stosowania różnych stylów w jednym akapicie. Oto przykład, jak wstawiać separatory stylów:
 
 ```java
 @Test
@@ -96,34 +96,34 @@ public void insertStyleSeparator() throws Exception
     paraStyle.getFont().setBold(false);
     paraStyle.getFont().setSize(8.0);
     paraStyle.getFont().setName("Arial");
-    // Dołącz tekst w stylu „Nagłówek 1”.
+    // Dodaj tekst w stylu „Nagłówek 1”.
     builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
     builder.write("Heading 1");
     builder.insertStyleSeparator();
-    // Dołącz tekst w innym stylu.
+    // Dodaj tekst w innym stylu.
     builder.getParagraphFormat().setStyleName(paraStyle.getName());
     builder.write("This is text with some other formatting ");
     doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 }
 ```
 
-W tym kodzie tworzymy niestandardowy styl akapitu i wstawiamy separator stylu, aby przełączać style w tym samym akapicie.
+W tym kodzie tworzymy niestandardowy styl akapitu i wstawiamy separator stylów, aby przełączać style w obrębie tego samego akapitu.
 
 ## Wniosek
 
-tym przewodniku omówiono podstawy pracy ze stylami i motywami w Aspose.Words dla Java. Nauczyłeś się, jak pobierać i kopiować style, zarządzać motywami i wstawiać separatory stylów, aby tworzyć atrakcyjne wizualnie i dobrze sformatowane dokumenty. Eksperymentuj z tymi technikami, aby dostosować dokumenty do swoich wymagań.
+tym przewodniku omówiono podstawy pracy ze stylami i motywami w Aspose.Words for Java. Nauczyłeś się, jak pobierać i kopiować style, zarządzać motywami i wstawiać separatory stylów, aby tworzyć wizualnie atrakcyjne i dobrze sformatowane dokumenty. Eksperymentuj z tymi technikami, aby dostosować dokumenty do swoich wymagań.
 
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak mogę pobrać właściwości motywu w Aspose.Words dla Java?
 
 Właściwości motywu można pobrać, uzyskując dostęp do obiektu motywu i jego właściwości.
 
-### Jak ustawić właściwości motywu, takie jak czcionki i kolory?
+### Jak mogę ustawić właściwości motywu, takie jak czcionki i kolory?
 
-Możesz ustawić właściwości motywu, modyfikując właściwości obiektu motywu.
+Właściwości motywu można ustawić poprzez modyfikację właściwości obiektu motywu.
 
-### Jak mogę używać separatorów stylów do przełączania stylów w tym samym akapicie?
+### Jak mogę używać separatorów stylów do zmiany stylów w obrębie tego samego akapitu?
 
- Separatory stylu można wstawiać za pomocą metody`insertStyleSeparator` metoda`DocumentBuilder` klasa.
+ Możesz wstawiać separatory stylów za pomocą`insertStyleSeparator` metoda`DocumentBuilder` klasa.

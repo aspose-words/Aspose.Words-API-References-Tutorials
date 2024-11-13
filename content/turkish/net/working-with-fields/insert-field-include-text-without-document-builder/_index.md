@@ -1,47 +1,47 @@
 ---
-title: Alan Ekle Belge Oluşturucu Olmadan Metni Ekle
+title: Belge Oluşturucu Olmadan Alan Ekleme Metin Ekleme
 linktitle: Belge Oluşturucu Olmadan FieldIncludeText Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET'te DocumentBuilder'ı kullanmadan FieldIncludeText'i nasıl ekleyeceğinizi öğrenin.
+description: Aspose.Words for .NET'te DocumentBuilder kullanmadan FieldIncludeText'in nasıl ekleneceğini ayrıntılı, adım adım kılavuzumuzla öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
 ## giriiş
 
-Belge otomasyonu ve manipülasyonu dünyasında Aspose.Words for .NET güçlü bir araç olarak duruyor. Bugün, DocumentBuilder'ı kullanmadan FieldIncludeText'in nasıl ekleneceğine dair ayrıntılı bir kılavuza geçiyoruz. Bu eğitim, kodun her bir bölümünü ve amacını anlamanızı sağlayacak şekilde süreç boyunca size adım adım yol gösterecektir.
+Belge otomasyonu ve düzenleme dünyasında, Aspose.Words for .NET güçlü bir araç olarak öne çıkıyor. Bugün, DocumentBuilder kullanmadan FieldIncludeText'in nasıl ekleneceğine dair ayrıntılı bir kılavuza dalıyoruz. Bu eğitim, kodun her bir bölümünü ve amacını anlamanızı sağlayarak sizi adım adım süreçte yönlendirecektir.
 
-## Önkoşullar
+## Ön koşullar
 
 Koda dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET: En son sürümün kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
-2. .NET Geliştirme Ortamı: Visual Studio gibi .NET uyumlu herhangi bir IDE.
-3. Temel C# Bilgisi: C# programlamaya aşinalık, takip etmenize yardımcı olacaktır.
+1.  Aspose.Words for .NET: En son sürümün yüklü olduğundan emin olun. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. .NET Geliştirme Ortamı: Visual Studio gibi herhangi bir .NET uyumlu IDE.
+3. Temel C# Bilgisi: C# programlamaya aşina olmanız, takip etmenize yardımcı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktarmamız gerekiyor. Bu ad alanları, Word belgelerini işlemek için gereken sınıflara ve yöntemlere erişim sağlar.
+İlk önce, gerekli ad alanlarını içe aktarmamız gerekiyor. Bu ad alanları, Word belgelerini düzenlemek için gereken sınıflara ve yöntemlere erişim sağlar.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Şimdi örneği birden çok adıma ayıralım. Netliği sağlamak için her adım ayrıntılı olarak açıklanacaktır.
+Şimdi örneği birden fazla adıma bölelim. Her adım, netliği sağlamak için ayrıntılı olarak açıklanacaktır.
 
-## 1. Adım: Dizin Yolunu Ayarlayın
+## Adım 1: Dizin Yolunu Ayarlayın
 
-İlk adım, belgeler dizininizin yolunu tanımlamaktır. Burası Word belgelerinizin saklanacağı ve erişileceği yerdir.
+İlk adım, belgeler dizininize giden yolu tanımlamaktır. Word belgelerinizin saklanacağı ve erişileceği yer burasıdır.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Adım 2: Belgeyi ve Paragrafı Oluşturun
 
-Daha sonra yeni bir belge ve o belgenin içinde bir paragraf oluşturuyoruz. Bu paragraf FieldIncludeText alanını tutacaktır.
+Sonra, yeni bir belge ve bu belgenin içinde bir paragraf oluşturuyoruz. Bu paragraf FieldIncludeText alanını tutacak.
 
 ```csharp
 // Belgeyi ve paragrafı oluşturun.
@@ -49,35 +49,35 @@ Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## 3. Adım: FieldIncludeText Alanını Ekle
+## Adım 3: FieldIncludeText Alanını Ekle
 
-Şimdi FieldIncludeText alanını paragrafın içine ekliyoruz. Bu alan başka bir belgedeki metni eklemenizi sağlar.
+Şimdi, FieldIncludeText alanını paragrafa ekliyoruz. Bu alan, başka bir belgeden metin eklemenize olanak tanır.
 
 ```csharp
 // FieldIncludeText alanını ekleyin.
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
 ```
 
-## 4. Adım: Alan Özelliklerini Ayarlayın
+## Adım 4: Alan Özelliklerini Ayarlayın
 
-FieldIncludeText alanına ait özellikleri belirtmemiz gerekiyor. Buna yer imi adının ve kaynak belgenin tam yolunun ayarlanması da dahildir.
+FieldIncludeText alanı için özellikleri belirtmemiz gerekiyor. Bu, yer imi adını ve kaynak belgenin tam yolunu ayarlamayı içerir.
 
 ```csharp
 fieldIncludeText.BookmarkName = "bookmark";
 fieldIncludeText.SourceFullName = dataDir + "IncludeText.docx";
 ```
 
-## Adım 5: Belgeye Paragraf Ekleme
+## Adım 5: Belgeye Paragraf Ekle
 
-Alan ayarlandığında paragrafı belgenin ilk bölüm gövdesine ekleriz.
+Alan ayarlandıktan sonra paragrafı belgenin ilk bölüm gövdesine ekliyoruz.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);
 ```
 
-## Adım 6: Alanı Güncelleyin
+## Adım 6: Alanı Güncelle
 
-Belgeyi kaydetmeden önce, kaynak belgeden doğru içeriği aldığından emin olmak için FieldIncludeText'i güncellememiz gerekir.
+Belgeyi kaydetmeden önce, kaynak belgeden doğru içeriği çektiğinden emin olmak için FieldIncludeText'i güncellememiz gerekiyor.
 
 ```csharp
 fieldIncludeText.Update();
@@ -93,21 +93,21 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 
 ## Çözüm
 
-Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'te DocumentBuilder'ı kullanmadan FieldIncludeText'i kolayca ekleyebilirsiniz. Bu yaklaşım, içeriği bir belgeden diğerine eklemek için kolaylaştırılmış bir yol sağlayarak belge otomasyonu görevlerinizi çok daha basit hale getirir.
+Ve işte oldu! Bu adımları izleyerek, .NET için Aspose.Words'de DocumentBuilder kullanmadan kolayca bir FieldIncludeText ekleyebilirsiniz. Bu yaklaşım, bir belgeden diğerine içerik eklemenin kolaylaştırılmış bir yolunu sunarak belge otomasyon görevlerinizi çok daha basit hale getirir.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?  
-Aspose.Words for .NET, .NET uygulamalarında Word belgeleriyle çalışmak için güçlü bir kütüphanedir. Belgelerin programlı olarak oluşturulmasına, düzenlenmesine ve dönüştürülmesine olanak tanır.
+Aspose.Words for .NET, .NET uygulamalarında Word belgeleriyle çalışmak için güçlü bir kütüphanedir. Belgeleri programatik olarak oluşturmanıza, düzenlemenize ve dönüştürmenize olanak tanır.
 
-### FieldIncludeText'i neden kullanmalıyım?  
-FieldIncludeText, içeriğin bir belgeden diğerine dinamik olarak dahil edilmesi ve daha modüler ve bakımı kolay belgeler sağlanması açısından kullanışlıdır.
+### FieldIncludeText'i neden kullanmalısınız?  
+FieldIncludeText, bir belgeden diğerine içerikleri dinamik olarak eklemek için kullanışlıdır ve daha modüler ve sürdürülebilir belgeler sağlar.
 
 ### Bu yöntemi diğer dosya biçimlerinden metin eklemek için kullanabilir miyim?  
-FieldIncludeText özellikle Word belgeleriyle çalışır. Diğer formatlar için Aspose.Words tarafından sağlanan farklı yöntemlere veya sınıflara ihtiyacınız olabilir.
+FieldIncludeText özellikle Word belgeleriyle çalışır. Diğer biçimler için Aspose.Words tarafından sağlanan farklı yöntemlere veya sınıflara ihtiyacınız olabilir.
 
-### Aspose.Words for .NET, .NET Core ile uyumlu mu?  
-Evet, Aspose.Words for .NET; .NET Framework, .NET Core ve .NET 5/6'yı destekler.
+### Aspose.Words for .NET, .NET Core ile uyumlu mudur?  
+Evet, Aspose.Words for .NET, .NET Framework, .NET Core ve .NET 5/6'yı destekler.
 
 ### Aspose.Words for .NET'in ücretsiz deneme sürümünü nasıl edinebilirim?  
- Şu adresten ücretsiz deneme alabilirsiniz:[Burada](https://releases.aspose.com/).
+ Ücretsiz deneme sürümünü şuradan alabilirsiniz:[Burada](https://releases.aspose.com/).

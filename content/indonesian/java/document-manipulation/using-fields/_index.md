@@ -1,24 +1,24 @@
 ---
-title: Menggunakan Bidang di Aspose.Words untuk Java
-linktitle: Menggunakan Bidang
+title: Menggunakan Fields di Aspose.Words untuk Java
+linktitle: Menggunakan Fields
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Buka Kunci Otomatisasi Dokumen dengan Aspose.Words untuk Java. Pelajari cara menggabungkan, memformat, dan menyisipkan gambar dalam dokumen Java. Panduan komprehensif dan contoh kode untuk pemrosesan dokumen yang efisien.
+description: Buka Kunci Otomatisasi Dokumen dengan Aspose.Words untuk Java. Pelajari cara menggabungkan, memformat, dan menyisipkan gambar dalam dokumen Java. Panduan lengkap dan contoh kode untuk pemrosesan dokumen yang efisien.
 type: docs
 weight: 11
 url: /id/java/document-manipulation/using-fields/
 ---
  
-## Pengantar Menggunakan Bidang di Aspose.Words untuk Java
+## Pengantar Penggunaan Fields di Aspose.Words untuk Java
 
-Dalam panduan langkah demi langkah ini, kita akan mempelajari cara menggunakan kolom di Aspose.Words untuk Java. Bidang adalah tempat penampung yang dapat menyisipkan data secara dinamis ke dalam dokumen Anda. Kami akan membahas berbagai skenario, termasuk penggabungan bidang dasar, bidang bersyarat, bekerja dengan gambar, dan pemformatan baris bergantian. Kami akan memberikan cuplikan kode Java dan penjelasan untuk setiap skenario.
+Dalam panduan langkah demi langkah ini, kami akan menjelajahi cara menggunakan kolom di Aspose.Words untuk Java. Kolom adalah tempat penampung yang ampuh yang dapat menyisipkan data secara dinamis ke dalam dokumen Anda. Kami akan membahas berbagai skenario, termasuk penggabungan kolom dasar, kolom bersyarat, bekerja dengan gambar, dan pemformatan baris bergantian. Kami akan menyediakan cuplikan kode Java dan penjelasan untuk setiap skenario.
 
 ## Prasyarat
 
- Sebelum memulai, pastikan Anda telah menginstal Aspose.Words for Java. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
+ Sebelum memulai, pastikan Anda telah menginstal Aspose.Words untuk Java. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
 
 ## Penggabungan Bidang Dasar
 
-Mari kita mulai dengan contoh penggabungan bidang sederhana. Kami memiliki templat dokumen dengan bidang gabungan surat, dan kami ingin mengisinya dengan data. Berikut kode Java untuk mencapai hal ini:
+Mari kita mulai dengan contoh penggabungan kolom yang sederhana. Kita memiliki templat dokumen dengan kolom gabungan surat, dan kita ingin mengisinya dengan data. Berikut kode Java untuk mencapainya:
 
 ```java
 Document doc = new Document("Mail merge template.docx");
@@ -35,11 +35,11 @@ doc.getMailMerge().execute(fieldNames, fieldValues);
 doc.save("MergedDocument.docx");
 ```
 
- Dalam kode ini, kita memuat templat dokumen, menyiapkan bidang gabungan surat, dan menjalankan penggabungan. Itu`HandleMergeField` kelas menangani tipe bidang tertentu seperti kotak centang dan konten isi HTML.
+ Dalam kode ini, kita memuat templat dokumen, menyiapkan bidang gabungan surat, dan menjalankan penggabungan.`HandleMergeField` kelas menangani jenis bidang tertentu seperti kotak centang dan konten badan HTML.
 
 ## Bidang Bersyarat
 
-Anda dapat menggunakan bidang bersyarat di dokumen Anda. Mari masukkan kolom IF ke dalam dokumen kita dan isi dengan data:
+Anda dapat menggunakan kolom bersyarat dalam dokumen Anda. Mari masukkan kolom IF di dalam dokumen kita dan isi dengan data:
 
 ```java
 Document doc = new Document("ConditionalFieldTemplate.docx");
@@ -52,11 +52,11 @@ dataTable.getRows().add("James Bond");
 doc.getMailMerge().execute(dataTable);
 ```
 
- Kode ini menyisipkan kolom IF dan MERGEFIELD di dalamnya. Meskipun pernyataan IF salah, kita tetapkan`setUnconditionalMergeFieldsAndRegions(true)` untuk menghitung MERGEFIELD di dalam kolom pernyataan palsu IF selama penggabungan surat.
+ Kode ini memasukkan kolom IF dan MERGEFIELD di dalamnya. Meskipun pernyataan IF salah, kita tetapkan`setUnconditionalMergeFieldsAndRegions(true)` untuk menghitung MERGEFIELD di dalam bidang IF pernyataan salah selama gabungan surat.
 
 ## Bekerja dengan Gambar
 
-Anda dapat menggabungkan gambar ke dalam dokumen Anda. Berikut contoh penggabungan gambar dari database ke dalam dokumen:
+Anda dapat menggabungkan gambar ke dalam dokumen Anda. Berikut ini contoh penggabungan gambar dari database ke dalam dokumen:
 
 ```java
 Document doc = new Document("ImageMergeTemplate.docx");
@@ -71,11 +71,11 @@ connection.close();
 doc.save("MergedDocumentWithImages.docx");
 ```
 
-Dalam kode ini, kita memuat templat dokumen dengan bidang penggabungan gambar dan mengisinya dengan gambar dari database.
+Dalam kode ini, kami memuat templat dokumen dengan bidang gabungan gambar dan mengisinya dengan gambar dari basis data.
 
 ## Pemformatan Baris Bergantian
 
-Anda dapat memformat baris bergantian dalam sebuah tabel. Berikut cara melakukannya:
+Anda dapat memformat baris-baris yang berselang-seling dalam sebuah tabel. Berikut ini cara melakukannya:
 
 ```java
 Document doc = new Document("AlternatingRowsTemplate.docx");
@@ -89,33 +89,33 @@ doc.save("FormattedDocument.doc");
 
 ## Kesimpulan
 
-Aspose.Words untuk Java menyediakan fitur canggih untuk bekerja dengan bidang di dokumen Anda. Anda dapat melakukan penggabungan bidang dasar, bekerja dengan bidang bersyarat, menyisipkan gambar, dan memformat tabel dengan mudah. Gabungkan teknik ini ke dalam proses otomatisasi dokumen Anda untuk membuat dokumen yang dinamis dan disesuaikan.
+Aspose.Words untuk Java menyediakan fitur-fitur canggih untuk bekerja dengan kolom-kolom di dokumen Anda. Anda dapat melakukan penggabungan kolom dasar, bekerja dengan kolom bersyarat, menyisipkan gambar, dan memformat tabel dengan mudah. Gabungkan teknik-teknik ini ke dalam proses otomatisasi dokumen Anda untuk membuat dokumen yang dinamis dan disesuaikan.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bisakah saya melakukan penggabungan surat dengan Aspose.Words untuk Java?
 
-Ya, Anda dapat melakukan penggabungan surat di Aspose.Words untuk Java. Anda bisa membuat templat dokumen dengan bidang gabungan surat dan kemudian mengisinya dengan data dari berbagai sumber. Lihat contoh kode yang diberikan untuk detail tentang cara melakukan penggabungan surat.
+Ya, Anda dapat melakukan penggabungan surat di Aspose.Words untuk Java. Anda dapat membuat templat dokumen dengan kolom gabungan surat lalu mengisinya dengan data dari berbagai sumber. Lihat contoh kode yang diberikan untuk detail tentang cara melakukan penggabungan surat.
 
 ### Bagaimana cara menyisipkan gambar ke dalam dokumen menggunakan Aspose.Words untuk Java?
 
-Untuk menyisipkan gambar ke dalam dokumen, Anda dapat menggunakan perpustakaan Aspose.Words untuk Java. Lihat contoh kode di bagian "Bekerja dengan Gambar" untuk panduan langkah demi langkah tentang cara menggabungkan gambar dari database ke dalam dokumen.
+Untuk memasukkan gambar ke dalam dokumen, Anda dapat menggunakan pustaka Aspose.Words untuk Java. Lihat contoh kode di bagian "Bekerja dengan Gambar" untuk panduan langkah demi langkah tentang cara menggabungkan gambar dari basis data ke dalam dokumen.
 
-### Apa tujuan bidang bersyarat di Aspose.Words untuk Java?
+### Apa tujuan bidang kondisional di Aspose.Words untuk Java?
 
-Bidang bersyarat di Aspose.Words untuk Java memungkinkan Anda membuat dokumen dinamis dengan menyertakan konten secara kondisional berdasarkan kriteria tertentu. Dalam contoh yang diberikan, bidang IF digunakan untuk memasukkan data secara kondisional ke dalam dokumen selama penggabungan surat berdasarkan hasil pernyataan IF.
+Kolom bersyarat di Aspose.Words untuk Java memungkinkan Anda membuat dokumen dinamis dengan menyertakan konten secara bersyarat berdasarkan kriteria tertentu. Dalam contoh yang diberikan, kolom IF digunakan untuk menyertakan data secara bersyarat dalam dokumen selama penggabungan surat berdasarkan hasil pernyataan IF.
 
 ### Bagaimana cara memformat baris bergantian dalam tabel menggunakan Aspose.Words untuk Java?
 
- Untuk memformat baris bergantian dalam tabel, Anda bisa menggunakan Aspose.Words for Java untuk menerapkan pemformatan tertentu ke baris berdasarkan kriteria Anda. Di bagian "Pemformatan Baris Bergantian", Anda akan menemukan contoh yang menunjukkan cara memformat baris dengan warna bergantian berdasarkan`CompanyName` bidang.
+ Untuk memformat baris bergantian dalam tabel, Anda dapat menggunakan Aspose.Words untuk Java untuk menerapkan pemformatan tertentu ke baris berdasarkan kriteria Anda. Di bagian "Pemformatan Baris Bergantian", Anda akan menemukan contoh yang menunjukkan cara memformat baris dengan warna bergantian berdasarkan`CompanyName` bidang.
 
 ### Di mana saya dapat menemukan lebih banyak dokumentasi dan sumber daya untuk Aspose.Words untuk Java?
 
- Anda dapat menemukan dokumentasi komprehensif, contoh kode, dan tutorial untuk Aspose.Words untuk Java di situs web Aspose:[Aspose.Words untuk Dokumentasi Java](https://reference.aspose.com/words/java/). Sumber daya ini akan membantu Anda menjelajahi fitur dan fungsi tambahan perpustakaan.
+ Anda dapat menemukan dokumentasi lengkap, contoh kode, dan tutorial untuk Aspose.Words untuk Java di situs web Aspose:[Dokumentasi Aspose.Words untuk Java](https://reference.aspose.com/words/java/)Sumber daya ini akan membantu Anda menjelajahi fitur dan fungsi tambahan dari pustaka tersebut.
 
 ### Bagaimana saya bisa mendapatkan dukungan atau mencari bantuan dengan Aspose.Words untuk Java?
 
- Jika Anda memerlukan bantuan, memiliki pertanyaan, atau mengalami masalah saat menggunakan Aspose.Words untuk Java, Anda dapat mengunjungi forum Aspose.Words untuk dukungan dan diskusi komunitas:[Aspose.Forum Kata-kata](https://forum.aspose.com/c/words).
+ Jika Anda memerlukan bantuan, memiliki pertanyaan, atau mengalami masalah saat menggunakan Aspose.Words untuk Java, Anda dapat mengunjungi forum Aspose.Words untuk dukungan dan diskusi komunitas:[Forum Aspose.Words](https://forum.aspose.com/c/words).
 
 ### Apakah Aspose.Words untuk Java kompatibel dengan IDE Java yang berbeda?
 

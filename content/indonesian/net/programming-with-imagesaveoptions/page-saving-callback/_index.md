@@ -1,27 +1,27 @@
 ---
-title: Panggilan Balik Penghematan Halaman
-linktitle: Panggilan Balik Penghematan Halaman
+title: Panggilan Balik Penyimpanan Halaman
+linktitle: Panggilan Balik Penyimpanan Halaman
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyimpan setiap halaman dokumen Word sebagai gambar PNG terpisah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci.
+description: Pelajari cara menyimpan setiap halaman dokumen Word sebagai gambar PNG terpisah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah terperinci kami.
 type: docs
 weight: 10
 url: /id/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
 ## Perkenalan
 
-Hai! Pernah merasa perlu menyimpan setiap halaman dokumen Word sebagai gambar terpisah? Mungkin Anda ingin memecah laporan besar menjadi visual yang mudah dicerna, atau mungkin Anda perlu membuat thumbnail untuk pratinjau. Apa pun alasan Anda, menggunakan Aspose.Words untuk .NET membuat tugas ini menjadi mudah. Dalam panduan ini, kami akan memandu Anda melalui proses menyiapkan panggilan balik penyimpanan halaman untuk menyimpan setiap halaman dokumen sebagai gambar PNG individual. Mari selami!
+Hai! Pernahkah Anda merasa perlu menyimpan setiap halaman dokumen Word sebagai gambar terpisah? Mungkin Anda ingin membagi laporan besar menjadi visual yang mudah dipahami, atau mungkin Anda perlu membuat gambar mini untuk pratinjau. Apa pun alasan Anda, menggunakan Aspose.Words untuk .NET membuat tugas ini mudah. Dalam panduan ini, kami akan memandu Anda melalui proses pengaturan panggilan balik penyimpanan halaman untuk menyimpan setiap halaman dokumen sebagai gambar PNG individual. Mari kita mulai!
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
 1.  Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduh dan instal dari[Di Sini](https://releases.aspose.com/words/net/).
-2. Visual Studio: Versi apa pun akan berfungsi, tetapi saya akan menggunakan Visual Studio 2019 untuk panduan ini.
-3. Pengetahuan Dasar tentang C#: Anda memerlukan pemahaman dasar tentang C# untuk mengikutinya.
+2. Visual Studio: Versi mana pun seharusnya berfungsi, tetapi saya akan menggunakan Visual Studio 2019 untuk panduan ini.
+3. Pengetahuan Dasar C#: Anda memerlukan pemahaman dasar tentang C# untuk mengikutinya.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Pertama, kita perlu mengimpor namespace yang diperlukan. Ini membantu kita mengakses kelas dan metode yang diperlukan tanpa harus mengetikkan namespace lengkap setiap saat.
+Pertama, kita perlu mengimpor namespace yang diperlukan. Ini membantu kita mengakses kelas dan metode yang diperlukan tanpa mengetik namespace lengkap setiap saat.
 
 ```csharp
 using System;
@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Langkah 1: Siapkan Direktori Dokumen Anda
 
-Baiklah, mari kita mulai dengan menentukan jalur ke direktori dokumen Anda. Di sinilah letak dokumen Word masukan Anda dan tempat gambar keluaran akan disimpan.
+Baiklah, mari kita mulai dengan menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word masukan Anda berada dan di mana gambar keluaran akan disimpan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Muat Dokumen Anda
 
-Selanjutnya, kami akan memuat dokumen yang ingin Anda proses. Pastikan dokumen Anda ("Rendering.docx") berada di direktori yang ditentukan.
+Selanjutnya, kita akan memuat dokumen yang ingin Anda proses. Pastikan dokumen Anda ("Rendering.docx") berada di direktori yang ditentukan.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Langkah 3: Konfigurasikan Opsi Penyimpanan Gambar
 
-Kita perlu mengkonfigurasi opsi untuk menyimpan gambar. Dalam hal ini, kami menyimpan halaman sebagai file PNG.
+Kita perlu mengonfigurasi opsi untuk menyimpan gambar. Dalam kasus ini, kita menyimpan halaman sebagai file PNG.
 
 ```csharp
 ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
@@ -57,11 +57,11 @@ ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
 };
 ```
 
- Di Sini,`PageSet` menentukan rentang halaman yang akan disimpan, dan`PageSavingCallback` menunjuk ke kelas panggilan balik khusus kami.
+ Di Sini,`PageSet` menentukan rentang halaman untuk disimpan, dan`PageSavingCallback` menunjuk ke kelas panggilan balik kustom kita.
 
 ## Langkah 4: Terapkan Panggilan Balik Penyimpanan Halaman
 
-Sekarang, mari kita terapkan kelas callback yang menangani cara setiap halaman disimpan.
+Sekarang, mari kita terapkan kelas panggilan balik yang menangani bagaimana setiap halaman disimpan.
 
 ```csharp
 private class HandlePageSavingCallback : IPageSavingCallback
@@ -73,7 +73,7 @@ private class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- Kelas ini mengimplementasikan`IPageSavingCallback` antarmuka, dan di dalam`PageSaving` metode, kami menentukan pola penamaan untuk setiap halaman yang disimpan.
+ Kelas ini mengimplementasikan`IPageSavingCallback` antarmuka, dan dalam`PageSaving` metode ini, kami mendefinisikan pola penamaan untuk setiap halaman yang disimpan.
 
 ## Langkah 5: Simpan Dokumen sebagai Gambar
 
@@ -85,23 +85,23 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil menyiapkan panggilan balik penyimpanan halaman untuk menyimpan setiap halaman dokumen Word sebagai gambar PNG terpisah menggunakan Aspose.Words untuk .NET. Teknik ini sangat berguna untuk berbagai aplikasi, mulai dari membuat pratinjau halaman hingga menghasilkan gambar halaman individual untuk laporan. 
+Nah, itu dia! Anda telah berhasil menyiapkan panggilan balik penyimpanan halaman untuk menyimpan setiap halaman dokumen Word sebagai gambar PNG terpisah menggunakan Aspose.Words untuk .NET. Teknik ini sangat berguna untuk berbagai aplikasi, mulai dari membuat pratinjau halaman hingga membuat gambar halaman individual untuk laporan. 
 
 Selamat membuat kode!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bisakah saya menyimpan halaman dalam format selain PNG?  
  Ya, Anda dapat menyimpan halaman dalam format berbeda seperti JPEG, BMP, dan TIFF dengan mengubah`SaveFormat` di dalam`ImageSaveOptions`.
 
 ### Bagaimana jika saya hanya ingin menyimpan halaman tertentu?  
- Anda dapat menentukan halaman yang ingin Anda simpan dengan menyesuaikan`PageSet` parameter di`ImageSaveOptions`.
+ Anda dapat menentukan halaman yang ingin Anda simpan dengan menyesuaikan`PageSet` parameter dalam`ImageSaveOptions`.
 
 ### Apakah mungkin untuk menyesuaikan kualitas gambar?  
- Sangat! Anda dapat mengatur properti seperti`ImageSaveOptions.JpegQuality` untuk mengontrol kualitas gambar keluaran.
+ Tentu saja! Anda dapat mengatur properti seperti`ImageSaveOptions.JpegQuality` untuk mengontrol kualitas gambar keluaran.
 
-### Bagaimana cara menangani dokumen berukuran besar secara efisien?  
-Untuk dokumen berukuran besar, pertimbangkan untuk memproses halaman secara batch untuk mengelola penggunaan memori secara efektif.
+### Bagaimana saya dapat menangani dokumen besar secara efisien?  
+Untuk dokumen besar, pertimbangkan untuk memproses halaman secara bertahap untuk mengelola penggunaan memori secara efektif.
 
-### Di mana saya dapat menemukan informasi selengkapnya tentang Aspose.Words untuk .NET?  
- Lihat[dokumentasi](https://reference.aspose.com/words/net/) untuk panduan dan contoh yang komprehensif.
+### Di mana saya dapat menemukan informasi lebih lanjut tentang Aspose.Words untuk .NET?  
+ Lihat di sini[dokumentasi](https://reference.aspose.com/words/net/) untuk panduan dan contoh yang lengkap.

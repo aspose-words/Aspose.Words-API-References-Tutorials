@@ -48,7 +48,7 @@ Install-Package Aspose.Words
 
 ## Krok 2: Vložte dokumenty
 
- Nyní načteme dokumenty, které chceme sloučit. Pro tento příklad budete potřebovat dva dokumenty aplikace Word:`Document source.docx`a`Northwind traders.docx`. Ujistěte se, že tyto soubory jsou v adresáři vašeho projektu.
+ Nyní načteme dokumenty, které chceme sloučit. Pro tento příklad budete potřebovat dva dokumenty aplikace Word:`Document source.docx` a`Northwind traders.docx`. Ujistěte se, že tyto soubory jsou v adresáři vašeho projektu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Schritt 6: Erstellen Sie eine Tabelle und fügen Sie Zeilen hinzu
 
- Erstellen Sie ein neues`Table`Objekt und geben Sie die Anzahl der Zeilen und Spalten an.
+Erstellen Sie ein neues`Table` Objekt und geben Sie die Anzahl der Zeilen und Spalten an.
 
 ```java
 Table table = new Table(doc);
@@ -115,7 +115,7 @@ public class AddTableInWord {
 
 ## Abschluss
 
-Herzlichen Glückwunsch! Sie haben erfolgreich eine Tabelle in ein Word-Dokument eingefügt, indem Sie Aspose.Words für Java verwenden. Aspose.Words bietet eine robuste und effiziente API für die Arbeit mit Word-Dokumenten, die das Erstellen, Bearbeiten und Anpassen von Tabellen und anderen Elementen in Ihren Dokumenten vereinfacht.
+Herzlichen Glückwunsch! Sie haben erfolgreich eine Tabelle in ein Word-Dokument mit Aspose.Words für Java eingefügt. Aspose.Words bietet eine robuste und effiziente API für die Arbeit mit Word-Dokumenten, die das Erstellen, Bearbeiten und Anpassen von Tabellen und anderen Elementen in Ihren Dokumenten vereinfacht.
 
 In dieser Schritt-für-Schritt-Anleitung haben Sie gelernt, wie Sie die Entwicklungsumgebung einrichten, ein neues Word-Dokument erstellen, eine Tabelle mit Zeilen und Spalten hinzufügen und das Dokument speichern. Entdecken Sie gerne weitere Funktionen von Aspose.Words, um Ihre Dokumentverarbeitungsaufgaben weiter zu verbessern.
 
@@ -131,7 +131,7 @@ Auf jeden Fall! Aspose.Words bietet umfassende Unterstützung für die Konvertie
 
 ### F3: Ist Aspose.Words für die Dokumentenverarbeitung auf Unternehmensebene geeignet?
 
-Tatsächlich ist Aspose.Words eine unternehmenstaugliche Lösung, der Tausende Entwickler weltweit aufgrund ihrer Zuverlässigkeit und Robustheit bei der Dokumentverarbeitung vertrauen.
+Tatsächlich ist Aspose.Words eine unternehmenstaugliche Lösung, der Tausende Entwickler weltweit aufgrund ihrer Zuverlässigkeit und Robustheit bei der Dokumentenverarbeitung vertrauen.
 
 ### F4: Kann ich den Tabellenzellen eine benutzerdefinierte Formatierung zuweisen?
 

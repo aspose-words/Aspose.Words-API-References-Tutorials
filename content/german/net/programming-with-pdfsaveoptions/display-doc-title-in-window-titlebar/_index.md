@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## Schritt 1: Laden Sie Ihr Dokument
 
-Der Vorgang beginnt mit dem Laden Ihres vorhandenen Word-Dokuments. Dieses Dokument wird in eine PDF-Datei konvertiert, wobei der Titel in der Titelleiste des Fensters angezeigt wird.
+Der Vorgang beginnt mit dem Laden Ihres vorhandenen Word-Dokuments. Dieses Dokument wird in ein PDF konvertiert, wobei der Titel in der Titelleiste des Fensters angezeigt wird.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.

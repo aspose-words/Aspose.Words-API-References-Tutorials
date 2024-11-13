@@ -10,22 +10,22 @@ url: /id/java/document-merging/joining-appending-documents/
 
 ## Perkenalan
 
-Aspose.Words for Java adalah perpustakaan kaya fitur yang memungkinkan Anda bekerja dengan berbagai format dokumen, termasuk DOC, DOCX, RTF, dan banyak lagi. Menggabungkan dan menambahkan dokumen adalah tugas umum ketika berhadapan dengan manipulasi dokumen, dan panduan ini akan memberi Anda petunjuk langkah demi langkah dan contoh kode Java untuk mencapai hal ini dengan lancar.
+Aspose.Words untuk Java adalah pustaka kaya fitur yang memungkinkan Anda bekerja dengan berbagai format dokumen, termasuk DOC, DOCX, RTF, dan banyak lagi. Menggabungkan dan menambahkan dokumen merupakan tugas umum saat menangani manipulasi dokumen, dan panduan ini akan memberi Anda petunjuk langkah demi langkah dan contoh kode Java untuk melakukannya dengan lancar.
 
 ## Prasyarat
 
-Sebelum kita mendalami kodenya, pastikan Anda memiliki prasyarat berikut:
+Sebelum kita masuk ke kode, pastikan Anda memiliki prasyarat berikut:
 
-- Java Development Kit (JDK) diinstal pada sistem Anda.
--  Aspose.Words untuk perpustakaan Java. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
+- Java Development Kit (JDK) terinstal di sistem Anda.
+-  Aspose.Words untuk pustaka Java. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
 
 ## Langkah 1: Menyiapkan Proyek Java Anda
 
-Untuk memulai, buat proyek Java baru di Lingkungan Pengembangan Terpadu (IDE) pilihan Anda. Pastikan untuk menyertakan perpustakaan Aspose.Words dalam dependensi proyek Anda.
+Untuk memulai, buat proyek Java baru di Lingkungan Pengembangan Terpadu (IDE) pilihan Anda. Pastikan untuk menyertakan pustaka Aspose.Words dalam dependensi proyek Anda.
 
 ## Langkah 2: Menginisialisasi Aspose.Words
 
-Dalam kode Java Anda, impor kelas Aspose.Words yang diperlukan dan inisialisasi perpustakaan:
+Dalam kode Java Anda, impor kelas Aspose.Words yang diperlukan dan inisialisasi pustaka:
 
 ```java
 import com.aspose.words.*;
@@ -39,32 +39,32 @@ public class DocumentJoiner {
 }
 ```
 
- Pastikan Anda menggantinya`"Aspose.Words.Java.lic"` dengan jalur ke file lisensi Anda.
+ Pastikan Anda mengganti`"Aspose.Words.Java.lic"` dengan jalur ke berkas lisensi Anda.
 
 ## Langkah 3: Memuat Dokumen
 
-Untuk menggabungkan atau menambahkan dokumen, Anda harus memuatnya terlebih dahulu ke dalam memori. Mari kita memuat dua contoh dokumen untuk contoh ini:
+Untuk menggabungkan atau menambahkan dokumen, Anda perlu memuatnya ke dalam memori terlebih dahulu. Mari kita muat dua contoh dokumen untuk contoh ini:
 
 ```java
-// Muat dokumen sumber
+// Memuat dokumen sumber
 Document doc1 = new Document("document1.docx");
 Document doc2 = new Document("document2.docx");
 ```
 
 ## Langkah 4: Menggabungkan Dokumen
 
- Sekarang setelah dokumen kita dimuat, mari kita lihat cara menggabungkannya. Dalam contoh ini, kita akan bergabung`doc2` sampai akhir`doc1`:
+ Sekarang setelah dokumen kita dimuat, mari kita lihat cara menggabungkannya. Dalam contoh ini, kita akan menggabungkan`doc2` sampai akhir`doc1`:
 
 ```java
-// Bergabunglah dengan dokumen
+// Gabungkan dokumen
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
- Itu`ImportFormatMode.KEEP_SOURCE_FORMATTING` opsi memastikan bahwa format dokumen sumber dipertahankan.
+Itu`ImportFormatMode.KEEP_SOURCE_FORMATTING` opsi memastikan bahwa format dokumen sumber dipertahankan.
 
 ## Langkah 5: Menyimpan Hasilnya
 
-Untuk menyimpan dokumen yang digabungkan ke sebuah file, Anda dapat menggunakan kode berikut:
+Untuk menyimpan dokumen yang digabungkan ke dalam sebuah file, Anda dapat menggunakan kode berikut:
 
 ```java
 // Simpan dokumen yang digabungkan
@@ -73,26 +73,26 @@ doc1.save("joined_document.docx");
 
 ## Kesimpulan
 
-Selamat! Anda telah berhasil mempelajari cara menggabungkan dan menambahkan dokumen menggunakan Aspose.Words untuk Java. Pustaka serbaguna ini memberdayakan Anda untuk memanipulasi dokumen dengan mudah, menjadikannya alat yang sangat berharga bagi pengembang Java.
+Selamat! Anda telah berhasil mempelajari cara menggabungkan dan menambahkan dokumen menggunakan Aspose.Words untuk Java. Pustaka serbaguna ini memungkinkan Anda untuk memanipulasi dokumen dengan mudah, menjadikannya alat yang sangat berharga bagi pengembang Java.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menginstal Aspose.Words untuk Java?
 
- Menginstal Aspose.Words untuk Java sangatlah mudah. Anda dapat mengunduhnya dari situs web Aspose[Di Sini](https://releases.aspose.com/words/java/). Pastikan Anda memiliki lisensi yang diperlukan untuk penggunaan komersial.
+ Menginstal Aspose.Words untuk Java sangatlah mudah. Anda dapat mengunduhnya dari situs web Aspose[Di Sini](https://releases.aspose.com/words/java/)Pastikan Anda memiliki lisensi yang diperlukan untuk penggunaan komersial.
 
 ### Bisakah saya menggabungkan lebih dari dua dokumen menggunakan Aspose.Words untuk Java?
 
- Ya, Anda dapat menggabungkan beberapa dokumen dengan menambahkannya secara berurutan menggunakan`appendDocument` metode, seperti yang ditunjukkan pada contoh.
+ Ya, Anda dapat menggabungkan beberapa dokumen dengan menambahkannya secara berurutan menggunakan`appendDocument` metode, seperti yang ditunjukkan dalam contoh.
 
-### Apakah Aspose.Words cocok untuk pemrosesan dokumen skala besar?
+### Apakah Aspose.Words cocok untuk pemrosesan dokumen berskala besar?
 
-Sangat! Aspose.Words dirancang untuk menangani pemrosesan dokumen skala besar secara efisien, menjadikannya pilihan yang dapat diandalkan untuk aplikasi tingkat perusahaan.
+Tentu saja! Aspose.Words dirancang untuk menangani pemrosesan dokumen berskala besar secara efisien, menjadikannya pilihan yang andal untuk aplikasi tingkat perusahaan.
 
 ### Apakah ada batasan saat menggabungkan dokumen dengan Aspose.Words?
 
-Meskipun Aspose.Words memberikan kemampuan manipulasi dokumen yang kuat, penting untuk mempertimbangkan kompleksitas dan ukuran dokumen Anda untuk memastikan kinerja optimal.
+Meskipun Aspose.Words menyediakan kemampuan manipulasi dokumen yang kuat, penting untuk mempertimbangkan kompleksitas dan ukuran dokumen Anda untuk memastikan kinerja yang optimal.
 
 ### Apakah saya perlu membayar lisensi untuk menggunakan Aspose.Words untuk Java?
 
- Ya, Aspose.Words untuk Java memerlukan lisensi yang valid untuk penggunaan komersial. Anda dapat memperoleh lisensi dari situs Aspose[Aspose.Words untuk dokumentasi Java](https://reference.aspose.com/words/java/)
+ Ya, Aspose.Words untuk Java memerlukan lisensi yang valid untuk penggunaan komersial. Anda dapat memperoleh lisensi dari situs web Aspose[Dokumentasi Aspose.Words untuk Java](https://reference.aspose.com/words/java/)

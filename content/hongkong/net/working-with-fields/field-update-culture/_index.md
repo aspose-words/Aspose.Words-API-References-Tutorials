@@ -75,7 +75,52 @@ doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 - `FieldUpdateCultureSource.FieldCode`告訴 Aspose.Words 使用欄位程式碼中指定的區域性進行更新。
 - `FieldUpdateCultureProvider`允許您指定用於欄位更新的區域性提供者。如果您需要實作自訂提供程序，您可以擴展此類。
 
-## 步驟 4：儲存文檔
+## 第 4 步：實施自訂文化提供程序
+
+我們現在需要實作自訂區域性提供程序，它將控制更新欄位時如何應用日期格式等區域性設定。
+
+我們將建立一個名為`FieldUpdateCultureProvider`實現了`IFieldUpdateCultureProvider`介面.該類將根據地區返回不同的文化格式。在此範例中，我們將配置俄羅斯和美國文化設定。
+
+```csharp
+private class FieldUpdateCultureProvider : IFieldUpdateCultureProvider
+{
+    public CultureInfo GetCulture(string name, Field field)
+    {
+        switch (name)
+        {
+            case "ru-RU":
+                CultureInfo culture = new CultureInfo(name, false);
+                DateTimeFormatInfo format = culture.DateTimeFormat;
+
+                format.MonthNames = new[] { "месяц 1", "месяц 2", "месяц 3", "месяц 4", "месяц 5", "месяц 6", "месяц 7", "месяц 8", "месяц 9", "месяц 10", "месяц 11", "месяц 12", "" };
+                format.MonthGenitiveNames = format.MonthNames;
+                format.AbbreviatedMonthNames = new[] { "мес 1", "мес 2", "мес 3", "мес 4", "мес 5", "мес 6", "мес 7", "мес 8", "мес 9", "мес 10", "мес 11", "мес 12", "" };
+                format.AbbreviatedMonthGenitiveNames = format.AbbreviatedMonthNames;
+
+                format.DayNames = new[] { "день недели 7", "день недели 1", "день недели 2", "день недели 3", "день недели 4", "день недели 5", "день недели 6" };
+                format.AbbreviatedDayNames = new[] { "день 7", "день 1", "день 2", "день 3", "день 4", "день 5", "день 6" };
+                format.ShortestDayNames = new[] { "д7", "д1", "д2", "д3", "д4", "д5", "д6" };
+
+                format.AMDesignator = "До полудня";
+                format.PMDesignator = "После полудня";
+
+                const string pattern = "yyyy MM (MMMM) dd (dddd) hh:mm:ss tt";
+                format.LongDatePattern = pattern;
+                format.LongTimePattern = pattern;
+                format.ShortDatePattern = pattern;
+                format.ShortTimePattern = pattern;
+
+                return culture;
+            case "en-US":
+                return new CultureInfo(name, false);
+            default:
+                return null;
+        }
+    }
+}
+```
+
+## 第 5 步：儲存文檔
 
 最後，將文檔儲存到指定目錄。這可確保保留您的所有變更。
 
@@ -88,7 +133,7 @@ doc.Save(dataDir + "UpdateCultureChamps.pdf");
 
 ## 結論
 
-在 Word 文件中配置欄位更新區域性似乎很複雜，但使用 Aspose.Words for .NET，它變得易於管理且簡單。透過執行這些步驟，您可以確保文件欄位根據指定的文化設定正確更新，從而使您的文件更具適應性和使用者友善性。無論您處理時間字段、日期還是自訂字段，理解和應用這些設定都將增強文件的功能和專業性。
+在 Word 文件中配置欄位更新區域性似乎很複雜，但使用 Aspose.Words for .NET，它變得易於管理且簡單。透過執行這些步驟，您可以確保文件欄位根據指定的文化設定正確更新，從而使您的文件更具適應性和使用者友善性。無論您處理的是時間字段、日期還是自訂字段，理解和應用這些設定都將增強文件的功能和專業性。
 
 ## 常見問題解答
 

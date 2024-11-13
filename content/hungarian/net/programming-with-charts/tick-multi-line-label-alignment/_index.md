@@ -21,7 +21,7 @@ Mielőtt belemerülnénk a többsoros címkeigazítás világába, győződjünk
 
 ## Névterek importálása
 
-kódolás megkezdése előtt importáljuk a szükséges névtereket. Ez a lépés kulcsfontosságú, mivel lehetővé teszi számunkra az Aspose.Words for .NET funkcióinak zökkenőmentes elérését.
+kódolás megkezdése előtt importáljuk a szükséges névtereket. Ez a lépés kulcsfontosságú, mivel lehetővé teszi számunkra, hogy zökkenőmentesen hozzáférjünk az Aspose.Words for .NET funkcióihoz.
 
 ```csharp
 using System;
@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## 3. lépés: A DocumentBuilder használata
 
- A`DocumentBuilder` osztály az Aspose.Words-ben egy hatékony eszköz, amely segít a dokumentumok létrehozásában. Arra használjuk, hogy beszúrjunk egy diagramot a dokumentumunkba.
+A`DocumentBuilder` osztály az Aspose.Words-ben egy hatékony eszköz, amely segít a dokumentumok létrehozásában. Arra használjuk, hogy beszúrjunk egy diagramot a dokumentumunkba.
 
  Inicializálja a`DocumentBuilder` osztályba, átadva a dokumentum objektumunkat a konstruktorának.
 

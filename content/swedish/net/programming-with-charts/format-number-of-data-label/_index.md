@@ -125,7 +125,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek för att skapa, manipulera o
 Ja, Aspose.Words för .NET stöder en mängd olika diagramtyper, inklusive stapel, kolumn, cirkel och mer.
 
 ### Hur får jag en tillfällig licens för Aspose.Words för .NET?
- Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
+Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
 ### Är det möjligt att länka dataetiketter till källceller i Excel?
 Ja, du kan länka dataetiketter till källceller, vilket gör att talformatet kan ärvas från källcellen.

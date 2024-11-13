@@ -97,6 +97,6 @@ Ja, Aspose.Words für Java unterstützt eine Vielzahl von Dokumentformaten, daru
 
 ### F5: Wo kann ich Unterstützung suchen oder Fragen zu Aspose.Words für Java stellen?
 
- Bei Fragen oder für Unterstützung besuchen Sie die[Aspose.Words für Java-Forum](https://forum.aspose.com/).
+Bei Fragen oder für Unterstützung besuchen Sie die[Aspose.Words für Java-Forum](https://forum.aspose.com/).
 
 Nachdem Sie nun das Rendern von Formen mit Aspose.Words für Java beherrschen, können Sie das volle Potenzial dieser vielseitigen API in Ihren Dokumentverarbeitungsprojekten ausschöpfen. Viel Spaß beim Programmieren!

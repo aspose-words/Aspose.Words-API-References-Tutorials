@@ -1,23 +1,23 @@
 ---
-title: Membuat Tabel Bagian Berulang yang Dipetakan ke Bagian Xml Kustom
-linktitle: Membuat Tabel Bagian Berulang yang Dipetakan ke Bagian Xml Kustom
+title: Membuat Bagian Pengulangan Tabel yang Dipetakan ke Bagian XML Kustom
+linktitle: Membuat Bagian Pengulangan Tabel yang Dipetakan ke Bagian XML Kustom
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat tabel dengan bagian berulang yang dipetakan ke CustomXmlPart di dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara membuat tabel dengan bagian berulang yang dipetakan ke CustomXmlPart dalam dokumen Word menggunakan Aspose.Words untuk .NET.
 type: docs
 weight: 10
 url: /id/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 ## Perkenalan
 
-Dalam tutorial ini, kita akan memandu proses pembuatan tabel dengan bagian berulang yang dipetakan ke bagian XML kustom menggunakan Aspose.Words untuk .NET. Hal ini sangat berguna untuk menghasilkan dokumen secara dinamis berdasarkan data terstruktur.
+Dalam tutorial ini, kita akan membahas proses pembuatan tabel dengan bagian berulang yang dipetakan ke bagian XML kustom menggunakan Aspose.Words untuk .NET. Ini sangat berguna untuk membuat dokumen secara dinamis berdasarkan data terstruktur.
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki hal berikut:
-1.  Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mengunduhnya dari[Asumsikan situs web](https://releases.aspose.com/words/net/).
+1.  Pustaka Aspose.Words untuk .NET telah terinstal. Anda dapat mengunduhnya dari[Situs web Aspose](https://releases.aspose.com/words/net/).
 2. Pemahaman dasar tentang C# dan XML.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Pastikan untuk menyertakan namespace yang diperlukan dalam proyek Anda:
 
@@ -29,7 +29,7 @@ using Aspose.Words.Tables;
 
 ## Langkah 1: Inisialisasi Dokumen dan DocumentBuilder
 
- Pertama, buat dokumen baru dan inisialisasi a`DocumentBuilder`:
+ Pertama, buat dokumen baru dan inisialisasi`DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -38,7 +38,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Tambahkan Bagian XML Khusus
+## Langkah 2: Tambahkan Bagian XML Kustom
 
 Tambahkan bagian XML khusus ke dokumen. XML ini berisi data yang ingin kita petakan ke tabel kita:
 
@@ -51,7 +51,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 
 ## Langkah 3: Buat Struktur Tabel
 
- Selanjutnya, gunakan`DocumentBuilder` untuk membuat header tabel:
+ Selanjutnya, gunakan`DocumentBuilder` untuk membuat tajuk tabel:
 
 ```csharp
 Table table = builder.StartTable();
@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Langkah 4: Buat Bagian Berulang
 
- Buat sebuah`StructuredDocumentTag` (SDT) untuk bagian berulang dan memetakannya ke data XML:
+ Membuat sebuah`StructuredDocumentTag` (SDT) untuk bagian yang berulang dan memetakannya ke data XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
@@ -84,7 +84,7 @@ Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## Langkah 6: Petakan Data XML ke Sel Tabel
+## Langkah 6: Memetakan Data XML ke Sel Tabel
 
 Buat SDT untuk judul dan penulis, petakan ke data XML, dan tambahkan ke baris:
 
@@ -108,15 +108,15 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 
 ## Kesimpulan
 
-Dengan mengikuti langkah-langkah ini, Anda telah berhasil membuat tabel dengan bagian berulang yang dipetakan ke bagian XML kustom menggunakan Aspose.Words untuk .NET. Hal ini memungkinkan pembuatan konten dinamis berdasarkan data terstruktur, menjadikan pembuatan dokumen lebih fleksibel dan canggih.
+Dengan mengikuti langkah-langkah ini, Anda telah berhasil membuat tabel dengan bagian berulang yang dipetakan ke bagian XML kustom menggunakan Aspose.Words untuk .NET. Hal ini memungkinkan pembuatan konten dinamis berdasarkan data terstruktur, sehingga pembuatan dokumen menjadi lebih fleksibel dan canggih.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu StructuredDocumentTag (SDT)?
 SDT, juga dikenal sebagai kontrol konten, adalah wilayah terbatas dalam dokumen yang digunakan untuk memuat data terstruktur.
 
 ### Bisakah saya menggunakan tipe data lain di bagian XML khusus?
-Ya, Anda dapat menyusun bagian XML khusus Anda dengan tipe data apa pun dan memetakannya sesuai dengan itu.
+Ya, Anda dapat menyusun bagian XML khusus Anda dengan tipe data apa pun dan memetakannya sebagaimana mestinya.
 
-### Bagaimana cara menambahkan lebih banyak baris ke bagian berulang?
-Bagian berulang secara otomatis mereplikasi struktur baris untuk setiap item di jalur XML yang dipetakan.
+### Bagaimana cara menambahkan lebih banyak baris ke bagian yang berulang?
+Bagian yang berulang secara otomatis mereplikasi struktur baris untuk setiap item di jalur XML yang dipetakan.

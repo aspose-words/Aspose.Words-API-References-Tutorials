@@ -30,7 +30,7 @@ import com.aspose.words.FieldOptions;
 
 ## 创建文档对象
 
-初始化一个`Document`通过加载包含条形码字段的现有 Word 文档来替换对象。`"Field sample - BARCODE.docx"`您的 Word 文档的路径：
+初始化一个`Document`通过加载包含条形码字段的现有 Word 文档来替换对象。`"Field sample - BARCODE.docx"`使用您的 Word 文档的路径：
 
 ```java
 Document doc = new Document("Field sample - BARCODE.docx");
@@ -80,7 +80,7 @@ doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 
 ### 使用 Aspose.Words for Java 有任何许可要求吗？
 
-是的，Aspose.Words for Java 需要有效的商业使用许可。您可以从 Aspose 网站获取许可证。
+是的，Aspose.Words for Java 需要有效的商业使用许可证。您可以从 Aspose 网站获取许可证。
 
 ### 在哪里可以找到更多文档和示例？
 

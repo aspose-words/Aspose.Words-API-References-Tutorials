@@ -1,33 +1,33 @@
 ---
-title: Tối ưu hóa kích thước PDF bằng cách bỏ qua phông chữ Arial & Times Roman được nhúng
-linktitle: Tối ưu hóa kích thước PDF bằng cách bỏ qua phông chữ Arial & Times Roman được nhúng
+title: Tối ưu hóa kích thước PDF bằng cách bỏ qua phông chữ Arial và Times Roman nhúng
+linktitle: Tối ưu hóa kích thước PDF bằng cách bỏ qua phông chữ Arial và Times Roman nhúng
 second_title: API xử lý tài liệu Aspose.Words
-description: Tối ưu hóa kích thước PDF bằng cách bỏ qua phông chữ Arial và Times Roman được nhúng bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước này để hợp lý hóa các tệp PDF của bạn.
+description: Tối ưu hóa kích thước PDF bằng cách bỏ qua phông chữ Arial và Times Roman được nhúng bằng Aspose.Words cho .NET. Thực hiện theo hướng dẫn từng bước này để sắp xếp hợp lý các tệp PDF của bạn.
 type: docs
 weight: 10
 url: /vi/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ gặp phải tình huống kích thước tệp PDF của bạn quá lớn chưa? Nó giống như việc chuẩn bị đồ đạc cho một kỳ nghỉ và nhận ra chiếc vali của mình đang bị bung ra ở các đường nối. Bạn biết mình cần phải giảm cân, nhưng bạn sẽ buông bỏ điều gì? Khi làm việc với các tệp PDF, đặc biệt là các tệp được chuyển đổi từ tài liệu Word, phông chữ được nhúng có thể làm tăng kích thước tệp của bạn. Rất may, Aspose.Words for .NET cung cấp một giải pháp mượt mà để giữ cho các tệp PDF của bạn gọn gàng và có ý nghĩa. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách tối ưu hóa kích thước tệp PDF của bạn bằng cách bỏ qua các phông chữ Arial và Times Roman được nhúng. Hãy bắt đầu!
+Bạn đã bao giờ rơi vào tình huống tệp PDF của mình có kích thước quá lớn chưa? Giống như khi bạn chuẩn bị hành lý cho một kỳ nghỉ và nhận ra rằng vali của mình đã quá chật. Bạn biết rằng mình cần phải giảm bớt trọng lượng, nhưng bạn sẽ bỏ đi những gì? Khi làm việc với các tệp PDF, đặc biệt là các tệp được chuyển đổi từ tài liệu Word, phông chữ nhúng có thể làm tăng kích thước tệp của bạn. Rất may, Aspose.Words for .NET cung cấp một giải pháp tinh tế để giữ cho tệp PDF của bạn gọn gàng và có ý nghĩa. Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách tối ưu hóa kích thước PDF của bạn bằng cách bỏ qua phông chữ Arial và Times Roman nhúng. Hãy bắt đầu nào!
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta đi sâu vào vấn đề chi tiết, có một số điều bạn cần:
--  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện mạnh mẽ này. Nếu không, bạn có thể tải nó từ[đây](https://releases.aspose.com/words/net/).
+Trước khi đi sâu vào vấn đề chính, bạn cần có một số thứ sau:
+-  Aspose.Words cho .NET: Hãy đảm bảo bạn đã cài đặt thư viện mạnh mẽ này. Nếu chưa, bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
 - Hiểu biết cơ bản về C#: Điều này sẽ giúp bạn theo dõi các đoạn mã.
-- Tài liệu Word: Chúng tôi sẽ sử dụng tài liệu mẫu để minh họa quy trình. 
+- Một tài liệu Word: Chúng tôi sẽ sử dụng một tài liệu mẫu để trình bày quy trình. 
 
 ## Nhập không gian tên
 
-Trước tiên, hãy đảm bảo bạn đã nhập các không gian tên cần thiết. Điều này tạo tiền đề cho việc truy cập các chức năng của Aspose.Words.
+Trước tiên, hãy đảm bảo bạn đã nhập các không gian tên cần thiết. Điều này thiết lập giai đoạn để truy cập các chức năng của Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Được rồi, hãy chia nhỏ quá trình này từng bước một.
+Được rồi, chúng ta hãy phân tích quy trình theo từng bước.
 
 ## Bước 1: Thiết lập môi trường của bạn
 
@@ -42,11 +42,11 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Trong đoạn mã này, thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn đến thư mục tài liệu của bạn.
+ Trong đoạn trích này, hãy thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn đến thư mục tài liệu của bạn.
 
-## Bước 3: Định cấu hình tùy chọn lưu PDF
+## Bước 3: Cấu hình tùy chọn lưu PDF
 
-Bây giờ, chúng ta cần định cấu hình các tùy chọn lưu PDF để kiểm soát cách nhúng phông chữ. Theo mặc định, tất cả các phông chữ đều được nhúng, điều này có thể làm tăng kích thước tệp. Chúng tôi sẽ thay đổi cài đặt này.
+Bây giờ, chúng ta cần cấu hình tùy chọn lưu PDF để kiểm soát cách nhúng phông chữ. Theo mặc định, tất cả phông chữ đều được nhúng, điều này có thể làm tăng kích thước tệp. Chúng ta sẽ thay đổi cài đặt này.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -57,31 +57,31 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Bước 4: Lưu tài liệu dưới dạng PDF
 
-Cuối cùng, lưu tài liệu dưới dạng PDF với các tùy chọn lưu được chỉ định. Đây là nơi phép thuật xảy ra.
+Cuối cùng, lưu tài liệu dưới dạng PDF với các tùy chọn lưu đã chỉ định. Đây chính là nơi phép thuật xảy ra.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-Lệnh này lưu tài liệu của bạn dưới dạng PDF có tên "OptimizedPDF.pdf" trong thư mục được chỉ định.
+Lệnh này sẽ lưu tài liệu của bạn dưới dạng PDF có tên "OptimizedPDF.pdf" trong thư mục được chỉ định.
 
 ## Phần kết luận
 
-Và bạn có nó! Bạn vừa học cách tối ưu hóa kích thước tệp PDF của mình bằng cách bỏ qua việc nhúng phông chữ Arial và Times Roman bằng Aspose.Words cho .NET. Tinh chỉnh đơn giản này có thể giảm đáng kể kích thước tệp của bạn, giúp chia sẻ và lưu trữ chúng dễ dàng hơn. Nó giống như việc tập thể dục để lấy các tệp PDF của bạn, giảm bớt trọng lượng không cần thiết trong khi vẫn giữ nguyên tất cả các yếu tố cần thiết.
+Và bạn đã có nó! Bạn vừa học được cách tối ưu hóa kích thước tệp PDF của mình bằng cách bỏ qua việc nhúng phông chữ Arial và Times Roman bằng Aspose.Words cho .NET. Điều chỉnh đơn giản này có thể giảm đáng kể kích thước tệp của bạn, giúp chia sẻ và lưu trữ dễ dàng hơn. Giống như đến phòng tập thể dục để lấy tệp PDF của bạn, giảm trọng lượng không cần thiết trong khi vẫn giữ nguyên mọi thứ cần thiết.
 
 ## Câu hỏi thường gặp
 
 ### Tại sao tôi nên bỏ qua việc nhúng phông chữ Arial và Times Roman?
-Việc bỏ qua các phông chữ phổ biến này có thể làm giảm kích thước tệp PDF của bạn vì hầu hết các hệ thống đều đã cài đặt các phông chữ này.
+Việc bỏ qua những phông chữ phổ biến này có thể làm giảm kích thước tệp PDF của bạn vì hầu hết các hệ thống đều đã cài đặt những phông chữ này.
 
-### Điều này có ảnh hưởng đến sự xuất hiện của bản PDF của tôi không?
-Không, nó sẽ không. Vì Arial và Times Roman là phông chữ tiêu chuẩn nên hình thức vẫn nhất quán trên các hệ thống khác nhau.
+### Điều này có ảnh hưởng tới giao diện tệp PDF của tôi không?
+Không, sẽ không. Vì Arial và Times Roman là phông chữ chuẩn nên giao diện vẫn nhất quán trên các hệ thống khác nhau.
 
 ### Tôi có thể bỏ qua việc nhúng các phông chữ khác không?
-Có, bạn có thể định cấu hình các tùy chọn lưu để bỏ qua việc nhúng các phông chữ khác nếu cần.
+Có, bạn có thể cấu hình tùy chọn lưu để bỏ qua việc nhúng các phông chữ khác nếu cần.
 
 ### Aspose.Words cho .NET có miễn phí không?
-Aspose.Words for .NET cung cấp bản dùng thử miễn phí mà bạn có thể tải xuống[đây](https://releases.aspose.com/) , nhưng để có toàn quyền truy cập, bạn cần phải mua giấy phép[đây](https://purchase.aspose.com/buy).
+Aspose.Words cho .NET cung cấp bản dùng thử miễn phí mà bạn có thể tải xuống[đây](https://releases.aspose.com/) , nhưng để có quyền truy cập đầy đủ, bạn cần phải mua giấy phép[đây](https://purchase.aspose.com/buy).
 
 ### Tôi có thể tìm thêm hướng dẫn về Aspose.Words cho .NET ở đâu?
  Bạn có thể tìm thấy tài liệu và hướng dẫn toàn diện[đây](https://reference.aspose.com/words/net/).

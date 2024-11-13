@@ -2,35 +2,35 @@
 title: Enumerare le proprietà
 linktitle: Enumerare le proprietà
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come enumerare le proprietà in un documento Word utilizzando Aspose.Words per .NET con questa guida passo passo. Perfetto per gli sviluppatori di tutti i livelli di abilità.
+description: Scopri come enumerare le proprietà in un documento Word usando Aspose.Words per .NET con questa guida passo-passo. Perfetta per sviluppatori di tutti i livelli di competenza.
 type: docs
 weight: 10
 url: /it/net/programming-with-document-properties/enumerate-properties/
 ---
 ## Introduzione
 
-Desideri lavorare con i documenti di Word a livello di codice? Aspose.Words per .NET è un potente strumento che può aiutarti a raggiungere proprio questo. Oggi ti spiegherò come enumerare le proprietà di un documento Word utilizzando Aspose.Words per .NET. Che tu sia un principiante o che tu abbia una certa esperienza, questa guida ti analizzerà passo dopo passo in modo colloquiale e facile da seguire.
+Vuoi lavorare con i documenti Word a livello di programmazione? Aspose.Words per .NET è uno strumento potente che può aiutarti a raggiungere proprio questo obiettivo. Oggi ti guiderò attraverso come enumerare le proprietà di un documento Word usando Aspose.Words per .NET. Che tu sia un principiante o abbia un po' di esperienza, questa guida lo spiegherà passo dopo passo in modo colloquiale e facile da seguire.
 
 ## Prerequisiti
 
-Prima di immergerci nel tutorial, ci sono alcune cose di cui avrai bisogno per iniziare:
+Prima di immergerci nel tutorial, ecco alcune cose di cui avrai bisogno per iniziare:
 
 -  Aspose.Words per .NET: puoi[scaricalo qui](https://releases.aspose.com/words/net/).
-- Ambiente di sviluppo: è consigliato Visual Studio, ma è possibile utilizzare qualsiasi IDE C#.
-- Conoscenza di base di C#: una comprensione fondamentale di C# ti aiuterà a proseguire.
+- Ambiente di sviluppo: si consiglia Visual Studio, ma è possibile utilizzare qualsiasi IDE C#.
+- Conoscenza di base di C#: una conoscenza fondamentale di C# ti aiuterà a seguire il corso.
 
-Ora entriamo subito!
+Ora, cominciamo subito!
 
-## Passaggio 1: impostazione del progetto
+## Fase 1: Impostazione del progetto
 
 Per prima cosa, devi configurare il tuo progetto in Visual Studio.
 
 1. Crea un nuovo progetto: apri Visual Studio e crea un nuovo progetto di applicazione console.
-2. Installare Aspose.Words per .NET: utilizzare NuGet Package Manager per installare Aspose.Words per .NET. Fai clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, seleziona "Gestisci pacchetti NuGet" e cerca "Aspose.Words". Installa il pacchetto.
+2. Installa Aspose.Words per .NET: usa NuGet Package Manager per installare Aspose.Words per .NET. Fai clic con il pulsante destro del mouse sul tuo progetto in Solution Explorer, seleziona "Manage NuGet Packages" e cerca "Aspose.Words". Installa il pacchetto.
 
-## Passaggio 2: importa gli spazi dei nomi
+## Passaggio 2: importare gli spazi dei nomi
 
-Per lavorare con Aspose.Words, è necessario importare gli spazi dei nomi necessari. Aggiungi quanto segue nella parte superiore del file Program.cs:
+Per lavorare con Aspose.Words, devi importare i namespace necessari. Aggiungi quanto segue in cima al tuo file Program.cs:
 
 ```csharp
 using System;
@@ -40,33 +40,33 @@ using Aspose.Words.Properties;
 
 ## Passaggio 3: carica il documento
 
-Successivamente, carichiamo il documento Word con cui vuoi lavorare. Per questo esempio, utilizzeremo un documento denominato "Properties.docx" situato nella directory del progetto.
+Ora, carichiamo il documento Word con cui vuoi lavorare. Per questo esempio, useremo un documento denominato "Properties.docx" che si trova nella directory del tuo progetto.
 
-1. Definisci il percorso del documento: specifica il percorso del tuo documento.
-2.  Caricare il documento: utilizzare Aspose.Words`Document` classe per caricare il documento.
+1. Definisci il percorso del documento: specifica il percorso del documento.
+2.  Carica il documento: usa Aspose.Words`Document` classe per caricare il documento.
 
 Ecco il codice:
 
 ```csharp
-// Il percorso della directory dei documenti.
+// Percorso verso la directory dei documenti.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
 ## Passaggio 4: Visualizza il nome del documento
 
-Una volta caricato il documento, potresti voler visualizzarne il nome. Aspose.Words fornisce una proprietà per questo:
+Una volta caricato il documento, potresti volerne visualizzare il nome. Aspose.Words fornisce una proprietà per questo:
 
 ```csharp
 Console.WriteLine("1. Document name: {0}", doc.OriginalFileName);
 ```
 
-## Passaggio 5: enumerare le proprietà integrate
+## Passaggio 5: Enumerare le proprietà integrate
 
-Le proprietà integrate sono proprietà di metadati predefinite da Microsoft Word. Questi includono il titolo, l'autore e altro.
+Le proprietà integrate sono proprietà di metadati predefinite da Microsoft Word. Tra queste rientrano il titolo, l'autore e altro.
 
-1.  Accedi alle proprietà integrate: utilizza il file`BuiltInDocumentProperties` collezione.
-2. Loop Through Properties: scorre le proprietà e ne visualizza i nomi e i valori.
+1.  Accedi alle proprietà integrate: usa`BuiltInDocumentProperties` collezione.
+2. Esegui un ciclo tra le proprietà: scorri le proprietà e visualizza i loro nomi e valori.
 
 Ecco il codice:
 
@@ -79,10 +79,10 @@ foreach (DocumentProperty prop in doc.BuiltInDocumentProperties)
 
 ## Passaggio 6: enumerare le proprietà personalizzate
 
-Le proprietà personalizzate sono proprietà di metadati definite dall'utente. Può essere qualsiasi cosa tu voglia aggiungere al tuo documento.
+Le proprietà personalizzate sono proprietà di metadati definite dall'utente. Possono essere qualsiasi cosa tu voglia aggiungere al tuo documento.
 
-1.  Accedi alle proprietà personalizzate: utilizza il file`CustomDocumentProperties` collezione.
-2. Loop Through Properties: scorre le proprietà e ne visualizza i nomi e i valori.
+1.  Accedi alle proprietà personalizzate: usa`CustomDocumentProperties` collezione.
+2. Esegui un ciclo tra le proprietà: scorri le proprietà e visualizza i loro nomi e valori.
 
 Ecco il codice:
 
@@ -95,21 +95,21 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 
 ## Conclusione
 
-Ed ecco qua! Hai enumerato con successo sia le proprietà integrate che quelle personalizzate di un documento Word utilizzando Aspose.Words per .NET. Questa è solo la punta dell'iceberg quando si tratta di cosa puoi fare con Aspose.Words. Che tu stia automatizzando la generazione di documenti o manipolando documenti complessi, Aspose.Words offre un ricco set di funzionalità per semplificarti la vita.
+Ed ecco fatto! Hai enumerato con successo sia le proprietà integrate che quelle personalizzate di un documento Word usando Aspose.Words per .NET. Questa è solo la punta dell'iceberg quando si tratta di cosa puoi fare con Aspose.Words. Sia che tu stia automatizzando la generazione di documenti o manipolando documenti complessi, Aspose.Words fornisce un ricco set di funzionalità per semplificarti la vita.
 
 ## Domande frequenti
 
 ### Posso aggiungere nuove proprietà a un documento?
- Sì, puoi aggiungere nuove proprietà personalizzate utilizzando il file`CustomDocumentProperties` collezione.
+ Sì, puoi aggiungere nuove proprietà personalizzate utilizzando`CustomDocumentProperties` collezione.
 
 ### Aspose.Words è gratuito?
- Aspose.Words offre a[prova gratuita](https://releases.aspose.com/) e diverso[opzioni di acquisto](https://purchase.aspose.com/buy).
+ Aspose.Words offre un[prova gratuita](https://releases.aspose.com/) e diverso[opzioni di acquisto](https://purchase.aspose.com/buy).
 
 ### Come posso ottenere supporto per Aspose.Words?
  Puoi ottenere supporto dalla comunità Aspose[Qui](https://forum.aspose.com/c/words/8).
 
-### Posso utilizzare Aspose.Words con altri linguaggi .NET?
-Sì, Aspose.Words supporta più linguaggi .NET incluso VB.NET.
+### Posso usare Aspose.Words con altri linguaggi .NET?
+Sì, Aspose.Words supporta più linguaggi .NET, incluso VB.NET.
 
 ### Dove posso trovare altri esempi?
- Dai un'occhiata a[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) per ulteriori esempi e informazioni dettagliate.
+ Dai un'occhiata al[Documentazione di Aspose.Words per .NET](https://reference.aspose.com/words/net/) per ulteriori esempi e informazioni dettagliate.

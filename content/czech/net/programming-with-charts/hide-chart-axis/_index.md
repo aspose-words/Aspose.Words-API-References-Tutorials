@@ -109,7 +109,7 @@ Gratuluji! Úspěšně jste se naučili, jak skrýt osu grafu v dokumentu aplika
 Aspose.Words for .NET je výkonné API pro vytváření, úpravy, konverzi a manipulaci s dokumenty Wordu v aplikacích .NET.
 
 ### Mohu skrýt obě osy X a Y v grafu?
- Ano, můžete skrýt obě osy nastavením`Hidden` majetek obou`AxisX`a`AxisY` na`true`.
+ Ano, můžete skrýt obě osy nastavením`Hidden` majetek obou`AxisX` a`AxisY` na`true`.
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
  Ano, můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).

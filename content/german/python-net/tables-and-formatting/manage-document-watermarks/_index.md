@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Formatieren von Wasserzeichen für eine ansprechendere Dokumentdarstellung
 linktitle: Erstellen und Formatieren von Wasserzeichen für eine ansprechendere Dokumentdarstellung
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Wasserzeichen in Dokumenten erstellen und formatieren. Schritt-für-Schritt-Anleitung mit Quellcode zum Hinzufügen von Text- und Bildwasserzeichen. Verbessern Sie mit diesem Tutorial die Ästhetik Ihres Dokuments.
 type: docs
 weight: 10
@@ -121,7 +121,7 @@ doc.save(output_path)
 
 ## Abschluss
 
-Das Hinzufügen von Wasserzeichen zu Ihren Dokumenten mit Aspose.Words für Python ist ein unkomplizierter Vorgang, der die visuelle Attraktivität und das Branding Ihrer Inhalte verbessert. Ob Text- oder Bildwasserzeichen, Sie haben die Flexibilität, deren Erscheinungsbild und Platzierung nach Ihren Wünschen anzupassen.
+Das Hinzufügen von Wasserzeichen zu Ihren Dokumenten mit Aspose.Words für Python ist ein unkomplizierter Vorgang, der die visuelle Attraktivität und das Branding Ihrer Inhalte verbessert. Ob Text- oder Bildwasserzeichen, Sie haben die Flexibilität, deren Aussehen und Platzierung nach Ihren Wünschen anzupassen.
 
 ## FAQs
 

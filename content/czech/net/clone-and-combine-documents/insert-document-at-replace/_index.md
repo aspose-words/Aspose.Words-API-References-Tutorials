@@ -111,43 +111,47 @@ Posledním kouskem naší skládačky je metoda, která skutečně vloží dokum
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
 {
-	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
-	{
-		CompositeNode destinationParent = insertionDestination.ParentNode;
+    // Zkontrolujte, zda je cílem vložení odstavec nebo tabulka
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
 
-		NodeImporter importer =
-			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+        // Vytvořte NodeImporter pro import uzlů ze zdrojového dokumentu
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
 
-		// Projděte všechny uzly na úrovni bloku v těle sekce,
-		// pak naklonujte a vložte každý uzel, který není posledním prázdným odstavcem sekce.
-		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
-		foreach (Node srcNode in srcSection.Body)
-		{
-			if (srcNode.NodeType == NodeType.Paragraph)
-			{
-				Paragraph para = (Paragraph)srcNode;
-				if (para.IsEndOfSection && !para.HasChildNodes)
-					continue;
-			}
+        // Projděte všechny uzly na úrovni bloku v částech zdrojového dokumentu
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        {
+            foreach (Node srcNode in srcSection.Body)
+            {
+                // Přeskočte poslední prázdný odstavec oddílu
+                if (srcNode.NodeType == NodeType.Paragraph)
+                {
+                    Paragraph para = (Paragraph)srcNode;
+                    if (para.IsEndOfSection && !para.HasChildNodes)
+                        continue;
+                }
 
-			Node newNode = importer.ImportNode(srcNode, true);
-
-			destinationParent.InsertAfter(newNode, insertionDestination);
-			insertionDestination = newNode;
-		}
-	}
-	else
-	{
-		throw new ArgumentException("The destination node should be either a paragraph or table.");
-	}
+                // Importujte a vložte uzel do cíle
+                Node newNode = importer.ImportNode(srcNode, true);
+                destinationParent.InsertAfter(newNode, insertionDestination);
+                insertionDestination = newNode;
+            }
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
 }
+
 ```
 
 Tato metoda se stará o import uzlů z vkládaného dokumentu a jejich umístění na správné místo v hlavním dokumentu.
 
 ## Závěr
 
-A tady to máte! Komplexní průvodce vkládáním jednoho dokumentu do druhého pomocí Aspose.Words pro .NET. Pomocí těchto kroků můžete snadno automatizovat úlohy sestavování dokumentů a manipulace s nimi. Ať už budujete systém správy dokumentů nebo jen potřebujete zefektivnit pracovní tok zpracování dokumentů, Aspose.Words je vaším spolehlivým pomocníkem.
+tady to máte! Komplexní průvodce vkládáním jednoho dokumentu do druhého pomocí Aspose.Words pro .NET. Pomocí těchto kroků můžete snadno automatizovat úlohy sestavování dokumentů a manipulace s nimi. Ať už budujete systém správy dokumentů nebo jen potřebujete zefektivnit pracovní tok zpracování dokumentů, Aspose.Words je vaším spolehlivým pomocníkem.
 
 ## FAQ
 

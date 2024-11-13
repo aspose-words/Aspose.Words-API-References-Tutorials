@@ -98,7 +98,7 @@ builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 
 さらに、段落内のフォントに対して「グリッドにスナップ」を有効にして、一貫した文字配置を維持することもできます。
 
-フォントをグリッドに合わせる設定
+フォントをグリッドにスナップする設定
 
 ```csharp
 par.Runs[0].Font.SnapToGrid = true;

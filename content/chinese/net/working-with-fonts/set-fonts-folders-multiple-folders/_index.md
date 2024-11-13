@@ -9,16 +9,16 @@ url: /zh/net/working-with-fonts/set-fonts-folders-multiple-folders/
 ---
 ## 介绍
 
-有没有想过如何管理 Word 文档中的多个字体源？也许您的字体集合分散在不同的文件夹中，您需要一种方法来确保您的文档无缝地使用它们。好吧，你很幸运！今天，我们将深入研究如何使用 Aspose.Words for .NET 设置字体文件夹。本指南将逐步指导您完成该过程，确保您的文档看起来符合您的要求。
+有没有想过如何管理 Word 文档中的多个字体源？也许您的字体集合分散在不同的文件夹中，您需要一种方法来确保您的文档无缝使用它们。好吧，你很幸运！今天，我们将深入研究如何使用 Aspose.Words for .NET 设置字体文件夹。本指南将逐步指导您完成该过程，确保您的文档看起来符合您的要求。
 
 ## 先决条件
 
 在我们开始之前，让我们确保您已准备好所有需要的东西。以下是您需要遵循的内容：
 
--  Aspose.Words for .NET：如果您还没有下载并安装 Aspose.Words for .NET。您可以获取它[这里](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：如果您还没有下载并安装 Aspose.Words for .NET，您可以获取它[这里](https://releases.aspose.com/words/net/).
 - 开发环境：Visual Studio 或任何其他与 .NET 兼容的开发环境。
 - C# 基础知识：对 C# 有一点熟悉将有助于您理解示例。
-- 字体文件：确保您的字体文件存储在您可以轻松访问的目录中。
+- 字体文件：确保将字体文件存储在您可以轻松访问的目录中。
 
 ## 导入命名空间
 
@@ -33,7 +33,7 @@ using Aspose.Words.Fonts;
 
 ## 步骤 1：加载文档
 
-好的，让我们首先加载要处理的 Word 文档。确保文档路径已准备好。在本例中，我们将使用名为“Rendering.docx”的文档。
+好的，让我们首先加载要使用的 Word 文档。确保文档路径已准备好。在本例中，我们将使用名为“Rendering.docx”的文档。
 
 ```csharp
 //文档目录的路径
@@ -100,4 +100,4 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 字体文件夹的数量没有严格限制。但是，请注意性能，因为文件夹越多，字体加载时间就越长。
 
 ### 我如何检查我的文档中使用了哪些字体？
-您可以使用`FontSettings.GetFontsSources`方法来检索和检查当前为文档设置的字体源。
+您可以使用`FontSettings.GetFontsSources`方法检索并检查当前为文档设置的字体源。

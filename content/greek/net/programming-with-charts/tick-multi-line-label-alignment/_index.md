@@ -52,9 +52,9 @@ Document doc = new Document();
 
 ## Βήμα 3: Χρησιμοποιήστε το DocumentBuilder
 
- Ο`DocumentBuilder` class στο Aspose.Words είναι ένα ισχυρό εργαλείο που βοηθά στη δημιουργία εγγράφων. Θα το χρησιμοποιήσουμε για να εισαγάγουμε ένα γράφημα στο έγγραφό μας.
+Ο`DocumentBuilder` class στο Aspose.Words είναι ένα ισχυρό εργαλείο που βοηθά στη δημιουργία εγγράφων. Θα το χρησιμοποιήσουμε για να εισαγάγουμε ένα γράφημα στο έγγραφό μας.
 
- Αρχικοποιήστε ένα στιγμιότυπο του`DocumentBuilder` class, μεταβιβάζοντας το αντικείμενο εγγράφου μας στον κατασκευαστή του.
+ Αρχικοποιήστε μια παρουσία του`DocumentBuilder` class, μεταβιβάζοντας το αντικείμενο εγγράφου μας στον κατασκευαστή του.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -70,7 +70,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
 ```
 
-## Βήμα 5: Πρόσβαση στον Άξονα του γραφήματος
+## Βήμα 5: Πρόσβαση στον άξονα του γραφήματος
 
 Για να τροποποιήσουμε τη στοίχιση της ετικέτας, πρέπει να έχουμε πρόσβαση στον άξονα Χ του γραφήματος μας.
 
@@ -124,4 +124,4 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ### Ποιες είναι οι απαιτήσεις συστήματος για το Aspose.Words για .NET;
 
- Το Aspose.Words για .NET απαιτεί περιβάλλον .NET. Συγκεκριμένες απαιτήσεις συστήματος μπορούν να βρεθούν στο[απόδειξη με έγγραφα](https://reference.aspose.com/words/net/).
+ Το Aspose.Words για .NET απαιτεί περιβάλλον .NET. Οι συγκεκριμένες απαιτήσεις συστήματος μπορούν να βρεθούν στο[απόδειξη με έγγραφα](https://reference.aspose.com/words/net/).

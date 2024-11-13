@@ -210,4 +210,4 @@ In diesem Tutorial haben wir uns mit verschiedenen Aspekten der Arbeit mit Ladeo
 
 ###  Was ist der Zweck der`setTempFolder` method in Load Options?
 
- Der`setTempFolder`Mit dieser Methode können Sie den Ordner angeben, in dem während der Dokumentverarbeitung temporäre Dateien gespeichert werden.
+Der`setTempFolder`Mit dieser Methode können Sie den Ordner angeben, in dem während der Dokumentverarbeitung temporäre Dateien gespeichert werden.

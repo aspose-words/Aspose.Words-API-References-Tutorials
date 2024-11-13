@@ -9,7 +9,7 @@ url: /zh/net/programming-with-charts/bounds-of-axis/
 ---
 ## 介绍
 
-您是否希望使用 .NET 创建带有图表的专业文档？您来对地方了！本指南将引导您完成使用 Aspose.Words for .NET 设置图表中轴的边界的过程。我们将分解每个步骤，以确保您可以轻松地跟进，即使您是库的新手。那么，让我们开始吧！
+您是否希望使用 .NET 中的图表创建专业文档？您来对地方了！本指南将引导您完成使用 Aspose.Words for .NET 设置图表中轴的边界的过程。我们将分解每个步骤，以确保您可以轻松地跟进，即使您是库的新手。那么，让我们开始吧！
 
 ## 先决条件
 
@@ -40,7 +40,7 @@ using Aspose.Words.Drawing.Charts;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 接下来，创建一个新的文档对象。此文档将作为图表的容器。
 
@@ -67,7 +67,7 @@ Chart chart = shape.Chart;
 
 ## 步骤 5：清除现有系列
 
-为了确保您从头开始，请清除图表中所有现有系列。
+为了确保您从头开始，请清除图表中的所有现有系列。
 
 ```csharp
 chart.Series.Clear();

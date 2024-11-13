@@ -69,7 +69,7 @@ V tomto článku jsme se naučili ukládat dokumenty ve formátu ODT pomocí Asp
 
 ### Jak si mohu stáhnout Aspose.Words pro Java?
 
- Aspose.Words for Java si můžete stáhnout z webu Aspose. Návštěva[tento odkaz](https://releases.aspose.com/words/java/)pro přístup na stránku stahování.
+ Aspose.Words for Java si můžete stáhnout z webu Aspose. Návštěva[tento odkaz](https://releases.aspose.com/words/java/) pro přístup na stránku stahování.
 
 ### Jaká je výhoda ukládání dokumentů ve formátu ODT?
 

@@ -75,7 +75,7 @@ Wir müssen auch die vertikale Ausrichtung der Tabelle festlegen. Dadurch wird d
 table.RelativeVerticalAlignment = VerticalAlignment.Center;
 ```
 
-Stellen Sie sich vor, Sie möchten ein Bild an die Wand hängen. Sie möchten sicherstellen, dass es vertikal zentriert ist, damit es optisch ansprechend wirkt. Mit diesem Schritt erreichen Sie das.
+Stellen Sie sich vor, Sie möchten ein Bild an die Wand hängen. Sie möchten sicherstellen, dass es vertikal zentriert ist, damit es optisch ansprechend aussieht. Mit diesem Schritt erreichen Sie das.
 
 ## Schritt 5: Speichern Sie das geänderte Dokument
 
@@ -107,7 +107,7 @@ Und da haben Sie es! Sie haben gerade gelernt, wie Sie die schwebende Position v
 
 ### Kann ich die relative Positionierung für die horizontale Ausrichtung verwenden?
 
-Ja, Aspose.Words unterstützt die relative Positionierung sowohl für horizontale als auch vertikale Ausrichtungen mithilfe von Eigenschaften wie`RelativeHorizontalAlignment`.
+Ja, Aspose.Words unterstützt die relative Positionierung sowohl für horizontale als auch vertikale Ausrichtungen mit Eigenschaften wie`RelativeHorizontalAlignment`.
 
 ### Unterstützt Aspose.Words schwebende Tabellen in verschiedenen Abschnitten eines Dokuments?
 

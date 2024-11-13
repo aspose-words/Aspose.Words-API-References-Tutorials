@@ -15,7 +15,7 @@ Gondolkozott már azon, hogyan menthet el egy Word-dokumentumot fekete-fehér k�
 
 Mielőtt bemocskolnánk a kezünket, néhány dolgot meg kell tennie:
 
--  Aspose.Words for .NET: Győződjön meg arról, hogy a könyvtár telepítve van. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Győződjön meg arról, hogy a könyvtár telepítve van. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 - .NET fejlesztői környezet: A Visual Studio jó választás, de bármilyen olyan környezetet használhat, amelyben kényelmes.
 - Alapvető C# ismeretek: Ne aggódjon, mi lesz egyszerű, de egy kis C# ismerete segít.
 - Word-dokumentum: Készítsen egy minta Word-dokumentumot a konvertálásra.

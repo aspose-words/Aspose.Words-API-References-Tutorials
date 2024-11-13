@@ -1,27 +1,27 @@
 ---
-title: Adres Mektup Birleştirmede Belgeyi Ekle
-linktitle: Adres Mektup Birleştirmede Belgeyi Ekle
+title: Belgeyi Posta Birleştirmede Ekle
+linktitle: Belgeyi Posta Birleştirmede Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu kapsamlı, adım adım eğitimde Aspose.Words for .NET kullanarak adres-mektup birleştirme alanlarına nasıl belge ekleyeceğinizi öğrenin.
+description: Bu kapsamlı, adım adım eğitimde Aspose.Words for .NET kullanarak birleştirme alanlarına belgelerin nasıl ekleneceğini öğrenin.
 type: docs
 weight: 10
 url: /tr/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
 ## giriiş
 
-Aspose.Words for .NET ile belge otomasyonu dünyasına hoş geldiniz! Adres-mektup birleştirme işlemi sırasında belgeleri ana belgedeki belirli alanlara dinamik olarak nasıl ekleyeceğinizi hiç merak ettiniz mi? Peki, doğru yerdesiniz. Bu eğitim, Aspose.Words for .NET kullanarak adres-mektup birleştirme alanlarına belge ekleme sürecinde size adım adım rehberlik edecektir. Her parçanın mükemmel bir şekilde yerine oturduğu bir bulmacanın parçalarını bir araya getirmeye benziyor. O halde hadi dalalım!
+Aspose.Words for .NET ile belge otomasyonu dünyasına hoş geldiniz! Bir posta birleştirme işlemi sırasında ana belgedeki belirli alanlara belgeleri dinamik olarak nasıl ekleyeceğinizi hiç merak ettiniz mi? Doğru yerdesiniz. Bu eğitim, Aspose.Words for .NET kullanarak belgeleri posta birleştirme alanlarına ekleme sürecinde adım adım size rehberlik edecektir. Her parçanın mükemmel bir şekilde yerine oturduğu bir bulmacayı bir araya getirmek gibidir. Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-1.  Aspose.Words for .NET: Yapabilirsin[en son sürümü buradan indirin](https://releases.aspose.com/words/net/) . Lisans satın almanız gerekiyorsa bunu yapabilirsiniz.[Burada](https://purchase.aspose.com/buy) . Alternatif olarak, bir[geçici lisans](https://purchase.aspose.com/temporary-license/) veya şunu deneyin[ücretsiz deneme](https://releases.aspose.com/).
-2. Geliştirme Ortamı: Visual Studio veya başka herhangi bir C# IDE.
-3. Temel C# Bilgisi: C# programlamaya aşinalık bu eğitimi çocuk oyuncağı haline getirecektir.
+1.  Aspose.Words for .NET: Şunları yapabilirsiniz:[en son sürümü buradan indirin](https://releases.aspose.com/words/net/) . Lisans satın almanız gerekiyorsa bunu yapabilirsiniz[Burada](https://purchase.aspose.com/buy) Alternatif olarak, bir tane alabilirsiniz[geçici lisans](https://purchase.aspose.com/temporary-license/) veya bir deneyin[ücretsiz deneme](https://releases.aspose.com/).
+2. Geliştirme Ortamı: Visual Studio veya herhangi bir C# IDE.
+3. Temel C# Bilgisi: C# programlamaya aşinalık bu eğitimi çok kolaylaştıracaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bunlar projenizin yapı taşları gibidir.
+İlk önce, gerekli ad alanlarını içe aktarmanız gerekecek. Bunlar projenizin yapı taşları gibidir.
 
 ```csharp
 using System;
@@ -30,11 +30,11 @@ using Aspose.Words.MailMerging;
 using System.Linq;
 ```
 
-Süreci yönetilebilir adımlara ayıralım. Her adım bir öncekinin üzerine inşa edilecek ve sizi eksiksiz bir çözüme götürecektir.
+Süreci yönetilebilir adımlara bölelim. Her adım bir öncekinin üzerine inşa edilecek ve sizi eksiksiz bir çözüme götürecektir.
 
-## 1. Adım: Dizininizi Kurma
+## Adım 1: Dizininizi Kurma
 
-Belgeleri eklemeye başlamadan önce belgeler dizininizin yolunu tanımlamanız gerekir. Belgelerinizin saklandığı yer burasıdır.
+Belgeleri eklemeye başlamadan önce, belgeler dizininize giden yolu tanımlamanız gerekir. Belgeleriniz burada saklanır.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,23 +42,23 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Adım 2: Ana Belgeyi Yükleme
 
-Daha sonra ana belgeyi yükleyeceksiniz. Bu belge, diğer belgelerin ekleneceği birleştirme alanlarını içerir.
+Sonra, ana belgeyi yükleyeceksiniz. Bu belge, diğer belgelerin ekleneceği birleştirme alanlarını içerir.
 
 ```csharp
 Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
 ```
 
-## 3. Adım: Alan Birleştirme Geri Aramasını Ayarlama
+## Adım 3: Alan Birleştirme Geri Aramasını Ayarlama
 
-Birleştirme işlemini gerçekleştirmek için bir geri arama işlevi ayarlamanız gerekir. Bu işlev, belgelerin belirtilen birleştirme alanlarına eklenmesinden sorumlu olacaktır.
+Birleştirme işlemini yönetmek için bir geri çağırma işlevi ayarlamanız gerekir. Bu işlev, belirtilen birleştirme alanlarına belge eklemekten sorumlu olacaktır.
 
 ```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 ```
 
-## Adım 4: Adres Mektup Birleştirmeyi Yürütme
+## Adım 4: Posta Birleştirmeyi Çalıştırma
 
-Şimdi adres-mektup birleştirmeyi yürütmenin zamanı geldi. Sihrin gerçekleştiği yer burasıdır. Birleştirme alanını ve bu alana eklenmesi gereken belgeyi belirteceksiniz.
+Şimdi posta birleştirmeyi yürütme zamanı. Sihir burada gerçekleşir. Birleştirme alanını ve bu alana eklenmesi gereken belgeyi belirteceksiniz.
 
 ```csharp
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
@@ -66,7 +66,7 @@ mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Docu
 
 ## Adım 5: Belgeyi Kaydetme
 
-Adres-mektup birleştirme tamamlandıktan sonra değiştirilen belgeyi kaydedersiniz. Bu yeni belgede eklenen içerik tam istediğiniz yerde olacaktır.
+Posta birleştirme tamamlandıktan sonra, değiştirilen belgeyi kaydedeceksiniz. Bu yeni belge, eklenen içeriği tam istediğiniz yerde bulunduracaktır.
 
 ```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
@@ -74,7 +74,7 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc")
 
 ## Adım 6: Geri Arama İşleyicisini Oluşturma
 
-Geri çağırma işleyicisi, birleştirme alanı için özel işlemler yapan bir sınıftır. Alan değerinde belirtilen belgeyi yükler ve geçerli birleştirme alanına ekler.
+Geri çağırma işleyicisi, birleştirme alanı için özel işlem yapan bir sınıftır. Alan değerinde belirtilen belgeyi yükler ve geçerli birleştirme alanına ekler.
 
 ```csharp
 private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
@@ -100,7 +100,7 @@ private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
 
 ## Adım 7: Belgeyi Ekleme
 
-Bu yöntem, belirtilen belgeyi geçerli paragraf veya tablo hücresine ekler.
+Bu yöntem belirtilen belgeyi geçerli paragrafa veya tablo hücresine ekler.
 
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
@@ -134,21 +134,21 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak adres-mektup birleştirme işlemi sırasında belgeleri belirli alanlara başarıyla eklediniz. Bu güçlü özellik, özellikle büyük hacimli belgelerle uğraşırken, zamandan ve emekten büyük miktarda tasarruf etmenizi sağlayabilir. Bunu, tüm ağır yükleri sizin için halledecek kişisel bir asistana sahip olmak gibi düşünün. Öyleyse devam edin ve deneyin. Mutlu kodlama!
+Ve işte oldu! Aspose.Words for .NET kullanarak bir posta birleştirme işlemi sırasında belgeleri belirli alanlara başarıyla eklediniz. Bu güçlü özellik, özellikle büyük miktarda belgeyle uğraşırken size bir ton zaman ve emek kazandırabilir. Bunu, sizin için tüm ağır işleri halleden kişisel bir asistanınız varmış gibi düşünün. O halde devam edin ve deneyin. İyi kodlamalar!
 
-## SSS'ler
+## SSS
 
 ### Farklı birleştirme alanlarına birden fazla belge ekleyebilir miyim?
-Evet yapabilirsin. Uygun birleştirme alanlarını ve karşılık gelen belge yollarını belirtmeniz yeterlidir.`MailMerge.Execute` Yöntem.
+Evet, yapabilirsiniz. Uygun birleştirme alanlarını ve karşılık gelen belge yollarını belirtmeniz yeterlidir.`MailMerge.Execute` yöntem.
 
-### Eklenen belgeyi ana belgeden farklı biçimlendirmek mümkün müdür?
- Kesinlikle! Şunu kullanabilirsiniz:`ImportFormatMode` parametresi`NodeImporter` biçimlendirmeyi kontrol etmek için.
+### Eklenen belgeyi ana belgeden farklı bir biçimde biçimlendirmek mümkün müdür?
+ Kesinlikle! Şunu kullanabilirsiniz`ImportFormatMode` parametre içinde`NodeImporter` Biçimlendirmeyi kontrol etmek için.
 
-### Birleştirme alanı adı dinamikse ne olur?
-Dinamik birleştirme alanı adlarını, geri çağırma işleyicisine parametre olarak ileterek işleyebilirsiniz.
+### Birleştirme alanı adı dinamik ise ne olur?
+Dinamik birleştirme alan adlarını, geri çağırma işleyicisine parametre olarak geçirerek işleyebilirsiniz.
 
-### Bu yöntemi farklı dosya formatlarıyla kullanabilir miyim?
-Evet, Aspose.Words DOCX, PDF ve daha fazlasını içeren çeşitli dosya formatlarını destekler.
+### Bu yöntemi farklı dosya formatlarında kullanabilir miyim?
+Evet, Aspose.Words DOCX, PDF ve daha fazlası dahil olmak üzere çeşitli dosya formatlarını destekler.
 
-### Belge ekleme işlemi sırasında hataları nasıl ele alabilirim?
-Oluşabilecek istisnaları yönetmek için geri arama işleyicinizde hata işlemeyi uygulayın.
+### Belge ekleme işlemi sırasında oluşan hataları nasıl çözebilirim?
+Oluşabilecek istisnaları yönetmek için geri çağırma işleyicinizde hata işlemeyi uygulayın.

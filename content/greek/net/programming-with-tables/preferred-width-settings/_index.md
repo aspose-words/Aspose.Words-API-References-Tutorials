@@ -53,14 +53,13 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Εδώ, καθορίζετε τον κατάλογο όπου θα αποθηκευτεί το έγγραφο και αρχικοποιείτε το`Document`και`DocumentBuilder` αντικείμενα.
+ Εδώ, καθορίζετε τον κατάλογο όπου θα αποθηκευτεί το έγγραφο και αρχικοποιείτε το`Document` και`DocumentBuilder` αντικείμενα.
 
 ## Βήμα 2: Εισαγάγετε το πρώτο κελί πίνακα με απόλυτο πλάτος
 
 Εισαγάγετε το πρώτο κελί στον πίνακα με σταθερό πλάτος 40 πόντων. Αυτό θα διασφαλίσει ότι αυτό το κελί διατηρεί πάντα πλάτος 40 σημείων ανεξάρτητα από το μέγεθος του πίνακα.
 
 ```csharp
-
 // Εισαγάγετε ένα κελί απόλυτου μεγέθους.
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
@@ -89,7 +88,7 @@ builder.Writeln("Cell at 20% width");
 Τέλος, εισαγάγετε ένα κελί που μεγεθύνεται αυτόματα με βάση τον υπόλοιπο διαθέσιμο χώρο στον πίνακα.
 
 ```csharp
-// Εισαγάγετε ένα κελί αυτόματου μεγέθους.
+// Εισαγάγετε ένα κελί σε αυτόματο μέγεθος.
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
@@ -97,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
- Ο`PreferredWidth.Auto` Η ρύθμιση επιτρέπει σε αυτό το κελί να επεκτείνεται ή να συστέλλεται με βάση τον χώρο που απομένει μετά την καταμέτρηση των άλλων κελιών. Αυτό διασφαλίζει ότι η διάταξη του τραπεζιού φαίνεται ισορροπημένη και επαγγελματική.
+Ο`PreferredWidth.Auto` Η ρύθμιση επιτρέπει σε αυτό το κελί να επεκτείνεται ή να συστέλλεται με βάση τον χώρο που απομένει μετά την καταμέτρηση των άλλων κελιών. Αυτό διασφαλίζει ότι η διάταξη του τραπεζιού φαίνεται ισορροπημένη και επαγγελματική.
 
 ## Βήμα 5: Οριστικοποιήστε και αποθηκεύστε το έγγραφο
 

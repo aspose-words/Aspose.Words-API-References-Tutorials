@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### 设置扩展大纲级别
 
-这`ExpandedOutlineLevels`属性控制打开 PDF 时默认应展开多少层大纲。将其设置为 1 将展开顶级标题，从而清晰显示主要部分。
+这`ExpandedOutlineLevels`属性控制 PDF 打开时默认应展开多少层大纲。将其设置为 1 将展开顶级标题，从而清晰显示主要部分。
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

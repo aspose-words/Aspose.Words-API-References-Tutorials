@@ -48,7 +48,7 @@ Document doc = new Document(dataDir + "Structured document tags.docx");
 
 ## Schritt 2: Durchlaufen strukturierter Dokument-Tags
 
- Um SDTs zu ändern, müssen Sie zunächst alle SDTs im Dokument durchlaufen. Dies geschieht mit dem`GetChildNodes` Methode zum Abrufen aller Knoten des Typs`StructuredDocumentTag`.
+ Um SDTs zu ändern, müssen Sie zunächst alle SDTs im Dokument durchlaufen. Dies geschieht mit dem`GetChildNodes` Methode zum Abrufen aller Knoten vom Typ`StructuredDocumentTag`.
 
 ```csharp
 foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
@@ -57,7 +57,7 @@ foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocum
 }
 ```
 
-## Schritt 3: Ändern von Klartext-SDTs
+## Schritt 3: Ändern von SDTs im Klartext
 
 Wenn das SDT ein einfacher Texttyp ist, können Sie seinen Inhalt ersetzen. Löschen Sie zuerst den vorhandenen Inhalt und fügen Sie dann neuen Text hinzu.
 
@@ -71,7 +71,7 @@ if (sdt.SdtType == SdtType.PlainText)
 }
 ```
 
- Erläuterung: Hier`RemoveAllChildren()`löscht den bestehenden Inhalt des SDT. Anschließend erstellen wir ein neues`Paragraph`Und`Run` Objekt, um den neuen Text einzufügen.
+ Erläuterung: Hier`RemoveAllChildren()`löscht den bestehenden Inhalt des SDT. Anschließend erstellen wir ein neues`Paragraph` Und`Run` Objekt, um den neuen Text einzufügen.
 
 ## Schritt 4: Dropdown-Liste SDTs ändern
 
@@ -116,7 +116,7 @@ Erklärung: Dadurch wird das Dokument unter einem neuen Dateinamen gespeichert, 
 
 ## Abschluss
 
-Das Ändern von Inhaltssteuerelementen in einem Word-Dokument mit Aspose.Words für .NET ist unkompliziert, wenn Sie die erforderlichen Schritte verstanden haben. Egal, ob Sie Text aktualisieren, Dropdown-Auswahlen ändern oder Bilder austauschen, Aspose.Words bietet eine robuste API für diese Aufgaben. Indem Sie diesem Tutorial folgen, können Sie die strukturierten Inhaltssteuerelemente Ihres Dokuments effektiv verwalten und anpassen und so Ihre Dokumente dynamischer und auf Ihre Bedürfnisse zugeschnitten gestalten.
+Das Ändern von Inhaltssteuerelementen in einem Word-Dokument mit Aspose.Words für .NET ist unkompliziert, wenn Sie die erforderlichen Schritte erst einmal verstanden haben. Egal, ob Sie Text aktualisieren, Dropdown-Auswahlen ändern oder Bilder austauschen, Aspose.Words bietet eine robuste API für diese Aufgaben. Indem Sie diesem Tutorial folgen, können Sie die strukturierten Inhaltssteuerelemente Ihres Dokuments effektiv verwalten und anpassen und so Ihre Dokumente dynamischer und auf Ihre Bedürfnisse zugeschnitten gestalten.
 
 ## FAQs
 

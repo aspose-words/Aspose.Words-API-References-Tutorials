@@ -2,7 +2,7 @@
 title: 修正を伴うワード処理
 linktitle: 修正を伴うワード処理
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書のリビジョンを操作する方法を学習します。リビジョンの管理と表示に関するサンプル コードを含むステップ バイ ステップのチュートリアルです。
+description: Aspose.Words for .NET を使用して Word 文書のリビジョンを操作する方法を学習します。リビジョンの管理と表示に関するサンプル コードを含むステップバイステップのチュートリアルです。
 type: docs
 weight: 1130
 url: /ja/net/working-with-revisions/

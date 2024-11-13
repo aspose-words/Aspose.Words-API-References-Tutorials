@@ -49,7 +49,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Ersätt i det här kodavsnittet`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till din katalog som innehåller Word-dokumentet. Se till dokumentnamnet (`Rendering.docx`) matchar din fil.
+ I det här kodavsnittet, ersätt`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till din katalog som innehåller Word-dokumentet. Se till dokumentnamnet (`Rendering.docx`) matchar din fil.
 
 ## Steg 3: Konfigurera sparalternativ
 

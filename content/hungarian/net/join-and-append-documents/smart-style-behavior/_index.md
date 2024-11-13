@@ -45,7 +45,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
 Magyarázat:
- Itt betöltjük a „Document source.docx” és a „Northwind traders.docx” fájlokat a megadott könyvtárból. Ügyeljen arra, hogy cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentumokat tárolják.
+ Itt betöltjük a „Document source.docx” és a „Northwind traders.docx” fájlokat a megadott könyvtárból. Ügyeljen arra, hogy cserélje ki`"YOUR DOCUMENT DIRECTORY"` azzal a tényleges elérési úttal, ahol a dokumentumokat tárolják.
 
 ## 2. lépés: Inicializálja a DocumentBuilder programot
 
@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Magyarázat:
- A`DocumentBuilder` egy praktikus eszköz, amely módszereket biztosít a dokumentumban való navigáláshoz és módosításához. Itt a céldokumentumunkhoz kötjük.
+A`DocumentBuilder` egy praktikus eszköz, amely módszereket biztosít a dokumentumban való navigáláshoz és módosításához. Itt a céldokumentumunkhoz kötjük.
 
 ## 3. lépés: Lépjen a Dokumentum végére, és szúrjon be egy oldaltörést
 

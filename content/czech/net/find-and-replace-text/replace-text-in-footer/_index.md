@@ -102,7 +102,7 @@ Jakýkoli konkrétní text v zápatí můžete nahradit. Pokud potřebujete nahr
  Absolutně! Soubor`MatchCase` na`true` v`FindReplaceOptions` aby se při výměně rozlišovala velká a malá písmena.
 
 ### Mohu k nahrazení textu použít regulární výrazy?
-Ano, Aspose.Words podporuje použití regulárních výrazů pro operace hledání a nahrazování. Vzor regulárního výrazu můžete zadat v`Range.Replace` metoda.
+Ano, Aspose.Words podporuje použití regulárních výrazů pro operace hledání a nahrazování. Můžete zadat vzor regulárního výrazu v`Range.Replace` metoda.
 
 ### Jak zpracuji více zápatí v dokumentu?
 Pokud má váš dokument více oddílů s různými zápatími, procházejte každý oddíl a použijte náhradu textu pro každé zápatí jednotlivě.

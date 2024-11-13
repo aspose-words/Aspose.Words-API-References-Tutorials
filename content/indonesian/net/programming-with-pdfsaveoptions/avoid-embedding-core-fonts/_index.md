@@ -1,6 +1,6 @@
 ---
-title: Kurangi Ukuran File PDF dengan Tidak Menyematkan Font Inti
-linktitle: Kurangi Ukuran File PDF dengan Tidak Menyematkan Font Inti
+title: Kurangi Ukuran File PDF dengan Tidak Menyertakan Font Inti
+linktitle: Kurangi Ukuran File PDF dengan Tidak Menyertakan Font Inti
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara mengurangi ukuran file PDF dengan tidak menyematkan font inti menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengoptimalkan PDF Anda.
 type: docs
@@ -9,22 +9,22 @@ url: /id/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
 ## Perkenalan
 
-Pernahkah Anda menggaruk-garuk kepala dan bertanya-tanya mengapa file PDF Anda begitu besar? Ya, kamu tidak sendirian. Salah satu penyebab umum adalah menyematkan font inti seperti Arial dan Times New Roman. Untungnya, Aspose.Words untuk .NET memiliki cara yang bagus untuk mengatasi masalah ini. Dalam tutorial ini, saya akan menunjukkan cara memperkecil ukuran file PDF Anda dengan menghindari penyematan font inti ini. Mari selami!
+Pernahkah Anda merasa bingung, bertanya-tanya mengapa file PDF Anda begitu besar? Anda tidak sendirian. Salah satu penyebab umum adalah penyematan font inti seperti Arial dan Times New Roman. Untungnya, Aspose.Words untuk .NET memiliki cara yang bagus untuk mengatasi masalah ini. Dalam tutorial ini, saya akan menunjukkan kepada Anda cara mengurangi ukuran file PDF dengan menghindari penyematan font inti ini. Mari kita bahas lebih lanjut!
 
 ## Prasyarat
 
-Sebelum kita memulai perjalanan yang mengasyikkan ini, pastikan Anda memiliki semua yang Anda butuhkan. Berikut daftar periksa singkatnya:
+Sebelum memulai perjalanan yang mengasyikkan ini, mari pastikan Anda memiliki semua yang Anda butuhkan. Berikut daftar periksa singkatnya:
 
--  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Jika Anda belum memilikinya, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstal Aspose.Words untuk .NET. Jika Anda belum memilikinya, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Anda memerlukan lingkungan pengembangan seperti Visual Studio.
 - Dokumen Word: Kami akan menggunakan dokumen Word (misalnya, "Rendering.docx") untuk tutorial ini.
 - Pengetahuan Dasar C#: Pemahaman dasar tentang C# akan membantu Anda mengikutinya.
 
-Baiklah, sekarang kita sudah siap, mari masuk ke seluk beluknya!
+Baiklah, sekarang kita sudah siap, mari kita masuk ke inti permasalahan!
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, mari impor namespace yang diperlukan. Langkah ini memastikan kita memiliki akses ke semua fungsi Aspose.Words yang kita perlukan.
+Pertama-tama, mari impor namespace yang diperlukan. Langkah ini memastikan kita memiliki akses ke semua fungsi Aspose.Words yang kita perlukan.
 
 ```csharp
 using System;
@@ -34,18 +34,18 @@ using Aspose.Words.Saving;
 
 ## Langkah 1: Inisialisasi Direktori Dokumen Anda
 
-Sebelum kita mulai memanipulasi dokumen kita, kita perlu menentukan direktori dimana dokumen kita disimpan. Ini penting untuk mengakses file.
+Sebelum kita mulai memanipulasi dokumen kita, kita perlu menentukan direktori tempat dokumen kita disimpan. Ini penting untuk mengakses berkas-berkas tersebut.
 
 ```csharp
 // Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya di mana dokumen Word Anda berada.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat dokumen Word Anda berada.
 
 ## Langkah 2: Muat Dokumen Word
 
-Selanjutnya, kita perlu memuat dokumen Word yang ingin kita konversi ke PDF. Dalam contoh ini, kami menggunakan dokumen bernama "Rendering.docx".
+Selanjutnya, kita perlu memuat dokumen Word yang ingin kita ubah ke PDF. Dalam contoh ini, kita menggunakan dokumen bernama "Rendering.docx".
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -55,7 +55,7 @@ Baris kode ini memuat dokumen ke dalam memori, siap untuk diproses lebih lanjut.
 
 ## Langkah 3: Konfigurasikan Opsi Penyimpanan PDF
 
-Sekarang sampai pada bagian ajaibnya! Kami akan mengonfigurasi opsi penyimpanan PDF untuk menghindari penyematan font inti. Ini adalah langkah kunci yang membantu mengurangi ukuran file PDF.
+Sekarang tibalah bagian ajaibnya! Kita akan mengonfigurasi opsi penyimpanan PDF untuk menghindari penyematan font inti. Ini adalah langkah kunci yang membantu mengurangi ukuran file PDF.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -64,32 +64,32 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Pengaturan`UseCoreFonts` ke`true` memastikan bahwa font inti seperti Arial dan Times New Roman tidak tertanam dalam PDF, sehingga mengurangi ukuran file secara signifikan.
+ Pengaturan`UseCoreFonts` ke`true` memastikan bahwa font inti seperti Arial dan Times New Roman tidak tertanam dalam PDF, yang secara signifikan mengurangi ukuran file.
 
 ## Langkah 4: Simpan Dokumen sebagai PDF
 
-Terakhir, kami menyimpan dokumen Word sebagai PDF menggunakan opsi penyimpanan yang dikonfigurasi. Langkah ini menghasilkan file PDF tanpa menyematkan font inti.
+Terakhir, kami menyimpan dokumen Word sebagai PDF menggunakan opsi penyimpanan yang telah dikonfigurasi. Langkah ini menghasilkan file PDF tanpa menyertakan font inti.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Dan itu dia! File PDF Anda sekarang disimpan di direktori yang ditentukan tanpa font inti yang besar.
+Nah, itu dia! File PDF Anda sekarang tersimpan di direktori yang ditentukan tanpa font inti yang besar.
 
 ## Kesimpulan
 
-Mengurangi ukuran file PDF sangatlah mudah dengan Aspose.Words untuk .NET. Dengan menghindari penyematan font inti, Anda dapat mengurangi ukuran file secara signifikan, sehingga lebih mudah untuk berbagi dan menyimpan dokumen Anda. Saya harap tutorial ini bermanfaat dan memberi Anda pemahaman yang jelas tentang prosesnya. Ingat, perubahan kecil dapat membuat perbedaan besar!
+Mengurangi ukuran file PDF dapat dilakukan dengan mudah menggunakan Aspose.Words untuk .NET. Dengan menghindari penyematan font inti, Anda dapat mengurangi ukuran file secara signifikan, sehingga memudahkan Anda untuk berbagi dan menyimpan dokumen. Saya harap tutorial ini bermanfaat dan memberi Anda pemahaman yang jelas tentang prosesnya. Ingat, perubahan kecil dapat membuat perbedaan besar!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Mengapa saya harus menghindari penyematan font inti dalam PDF?
-Menghindari penyematan font inti akan mengurangi ukuran file, sehingga lebih mudah untuk dibagikan dan disimpan.
+### Mengapa saya harus menghindari menanamkan font inti dalam PDF?
+Menghindari penyematan font inti akan mengurangi ukuran berkas, membuatnya lebih mudah untuk dibagikan dan disimpan.
 
-### Apakah saya masih dapat melihat PDF dengan benar tanpa font inti yang disematkan?
+### Apakah saya masih dapat melihat PDF dengan benar tanpa font inti yang tertanam?
 Ya, font inti seperti Arial dan Times New Roman umumnya tersedia di sebagian besar sistem.
 
-### Bagaimana jika saya perlu menyematkan font khusus?
- Anda dapat menyesuaikannya`PdfSaveOptions`untuk menyematkan font tertentu sesuai kebutuhan.
+### Bagaimana jika saya perlu menanamkan font khusus?
+ Anda dapat menyesuaikan`PdfSaveOptions`untuk menanamkan font tertentu sesuai kebutuhan.
 
 ### Apakah Aspose.Words untuk .NET gratis untuk digunakan?
  Aspose.Words untuk .NET memerlukan lisensi. Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/).

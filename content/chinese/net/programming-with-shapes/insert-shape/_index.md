@@ -15,7 +15,7 @@ url: /zh/net/programming-with-shapes/insert-shape/
 
 在深入学习本教程之前，请确保您满足以下先决条件：
 
-1.  Aspose.Words for .NET：从以下网址下载并安装最新版本[Aspose 发布页面](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：从以下网站下载并安装最新版本[Aspose 发布页面](https://releases.aspose.com/words/net/).
 2. 开发环境：合适的.NET 开发环境，例如 Visual Studio。
 3. C#基础知识：熟悉C#编程语言和基本概念。
 

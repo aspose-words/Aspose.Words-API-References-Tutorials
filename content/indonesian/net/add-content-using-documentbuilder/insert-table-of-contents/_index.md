@@ -1,24 +1,24 @@
 ---
-title: Sisipkan Daftar Isi Dalam Dokumen Word
-linktitle: Sisipkan Daftar Isi Dalam Dokumen Word
+title: Masukkan Daftar Isi Dalam Dokumen Word
+linktitle: Masukkan Daftar Isi Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan Daftar Isi di Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk navigasi dokumen yang lancar.
+description: Pelajari cara memasukkan Daftar Isi di Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk navigasi dokumen yang lancar.
 type: docs
 weight: 10
 url: /id/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 ## Perkenalan
-Dalam tutorial ini, Anda akan mempelajari cara menambahkan Daftar Isi (TOC) secara efisien ke dokumen Word Anda menggunakan Aspose.Words untuk .NET. Fitur ini penting untuk mengatur dan menavigasi dokumen yang panjang, meningkatkan keterbacaan, dan memberikan gambaran singkat tentang bagian-bagian dokumen.
+Dalam tutorial ini, Anda akan mempelajari cara menambahkan Daftar Isi (TOC) secara efisien ke dokumen Word Anda menggunakan Aspose.Words for .NET. Fitur ini penting untuk mengatur dan menavigasi dokumen yang panjang, meningkatkan keterbacaan, dan memberikan ikhtisar singkat bagian-bagian dokumen.
 
 ## Prasyarat
 
 Sebelum memulai, pastikan Anda memiliki hal berikut:
 
-- Pemahaman dasar tentang kerangka C# dan .NET.
-- Visual Studio diinstal pada mesin Anda.
--  Aspose.Words untuk perpustakaan .NET. Jika Anda belum menginstalnya, Anda dapat mendownloadnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Pemahaman dasar tentang C# dan kerangka kerja .NET.
+- Visual Studio terinstal di komputer Anda.
+-  Aspose.Words untuk pustaka .NET. Jika Anda belum menginstalnya, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Untuk memulai, impor namespace yang diperlukan dalam proyek C# Anda:
 
@@ -29,11 +29,11 @@ using Aspose.Words.Fields;
 using Aspose.Words.Tables;
 ```
 
-Mari kita bagi prosesnya menjadi langkah-langkah yang jelas:
+Mari kita uraikan prosesnya menjadi beberapa langkah yang jelas:
 
 ## Langkah 1: Inisialisasi Dokumen Aspose.Words dan DocumentBuilder
 
- Pertama, inisialisasi Aspose.Words baru`Document` objek dan a`DocumentBuilder` untuk bekerja dengan:
+ Pertama, inisialisasi Aspose.Words baru`Document` objek dan sebuah`DocumentBuilder` untuk bekerja dengan:
 
 ```csharp
 // Inisialisasi Dokumen dan DocumentBuilder
@@ -46,16 +46,16 @@ DocumentBuilder builder = new DocumentBuilder(doc);
  Sekarang, masukkan Daftar Isi menggunakan`InsertTableOfContents` metode:
 
 ```csharp
-// Sisipkan Daftar Isi
+// Masukkan Daftar Isi
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
 ## Langkah 3: Mulai Konten Dokumen di Halaman Baru
 
-Untuk memastikan pemformatan yang tepat, mulai konten dokumen sebenarnya di halaman baru:
+Untuk memastikan format yang tepat, mulai konten dokumen sebenarnya di halaman baru:
 
 ```csharp
-// Sisipkan hentian halaman
+// Masukkan jeda halaman
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
@@ -64,7 +64,7 @@ builder.InsertBreak(BreakType.PageBreak);
 Atur konten dokumen Anda menggunakan gaya judul yang sesuai:
 
 ```csharp
-// Tetapkan gaya judul
+// Mengatur gaya judul
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 builder.Writeln("Heading 1");
 
@@ -100,19 +100,19 @@ doc.UpdateFields();
 
 ## Langkah 6: Simpan Dokumen
 
-Terakhir, simpan dokumen Anda ke direktori tertentu:
+Terakhir, simpan dokumen Anda ke direktori yang ditentukan:
 
 ```csharp
-// Simpan dokumennya
+// Simpan dokumen
 string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 ```
 
 ## Kesimpulan
 
-Menambahkan Daftar Isi menggunakan Aspose.Words untuk .NET sangatlah mudah dan meningkatkan kegunaan dokumen Anda secara signifikan. Dengan mengikuti langkah-langkah ini, Anda dapat mengatur dan menavigasi dokumen yang kompleks secara efisien.
+Menambahkan Daftar Isi menggunakan Aspose.Words untuk .NET mudah dan meningkatkan kegunaan dokumen Anda secara signifikan. Dengan mengikuti langkah-langkah ini, Anda dapat mengatur dan menavigasi dokumen yang kompleks secara efisien.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bisakah saya menyesuaikan tampilan Daftar Isi?
 Ya, Anda dapat menyesuaikan tampilan dan perilaku Daftar Isi menggunakan Aspose.Words untuk .NET API.
@@ -123,8 +123,8 @@ Ya, Aspose.Words memungkinkan Anda memperbarui bidang seperti Daftar Isi secara 
 ### Bisakah saya membuat beberapa Daftar Isi dalam satu dokumen?
 Aspose.Words mendukung pembuatan beberapa Daftar Isi dengan pengaturan berbeda dalam satu dokumen.
 
-### Apakah Aspose.Words kompatibel dengan versi Microsoft Word yang berbeda?
+### Apakah Aspose.Words kompatibel dengan berbagai versi Microsoft Word?
 Ya, Aspose.Words memastikan kompatibilitas dengan berbagai versi format Microsoft Word.
 
-### Di mana saya dapat menemukan lebih banyak bantuan dan dukungan untuk Aspose.Words?
- Untuk bantuan lebih lanjut, kunjungi[Aspose.Forum Kata-kata](https://forum.aspose.com/c/words/8) atau periksa[dokumentasi resmi](https://reference.aspose.com/words/net/).
+### Di mana saya dapat menemukan bantuan dan dukungan lebih lanjut untuk Aspose.Words?
+ Untuk bantuan lebih lanjut, kunjungi[Forum Aspose.Words](https://forum.aspose.com/c/words/8) atau lihat di[dokumentasi resmi](https://reference.aspose.com/words/net/).

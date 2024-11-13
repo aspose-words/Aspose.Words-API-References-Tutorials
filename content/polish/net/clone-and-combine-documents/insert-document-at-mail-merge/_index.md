@@ -1,27 +1,27 @@
 ---
-title: Wstaw dokument podczas korespondencji seryjnej
-linktitle: Wstaw dokument podczas korespondencji seryjnej
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawiać dokumenty w polach korespondencji seryjnej za pomocą Aspose.Words dla .NET, w tym kompleksowym samouczku krok po kroku.
+title: Wstaw dokument do korespondencji seryjnej
+linktitle: Wstaw dokument do korespondencji seryjnej
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak wstawiać dokumenty w polach korespondencji seryjnej za pomocą Aspose.Words for .NET, korzystając z tego kompleksowego samouczka krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
 ## Wstęp
 
-Witamy w świecie automatyzacji dokumentów dzięki Aspose.Words dla .NET! Czy zastanawiałeś się kiedyś, jak dynamicznie wstawiać dokumenty do określonych pól w dokumencie głównym podczas operacji korespondencji seryjnej? Cóż, jesteś we właściwym miejscu. Ten samouczek poprowadzi Cię krok po kroku przez proces wstawiania dokumentów w polach korespondencji seryjnej przy użyciu Aspose.Words dla .NET. To jak układanie puzzli, w których każdy element idealnie pasuje na swoje miejsce. Zatem zanurzmy się!
+Witamy w świecie automatyzacji dokumentów z Aspose.Words dla .NET! Czy kiedykolwiek zastanawiałeś się, jak dynamicznie wstawiać dokumenty do określonych pól w dokumencie głównym podczas operacji korespondencji seryjnej? Cóż, jesteś we właściwym miejscu. Ten samouczek przeprowadzi Cię krok po kroku przez proces wstawiania dokumentów do pól korespondencji seryjnej przy użyciu Aspose.Words dla .NET. To jak układanie puzzli, w których każdy element idealnie pasuje do siebie. Więc zanurzmy się!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
-1.  Aspose.Words dla .NET: Można[pobierz najnowszą wersję tutaj](https://releases.aspose.com/words/net/) . Jeśli chcesz kupić licencję, możesz to zrobić[Tutaj](https://purchase.aspose.com/buy) . Alternatywnie możesz otrzymać tzw[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) lub wypróbuj z[bezpłatna wersja próbna](https://releases.aspose.com/).
-2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE C#.
-3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# sprawi, że ten samouczek będzie prosty.
+1.  Aspose.Words dla .NET: Możesz[pobierz najnowszą wersję tutaj](https://releases.aspose.com/words/net/) . Jeśli potrzebujesz kupić licencję, możesz to zrobić[Tutaj](https://purchase.aspose.com/buy) Alternatywnie możesz otrzymać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) lub wypróbuj z[bezpłatny okres próbny](https://releases.aspose.com/).
+2. Środowisko programistyczne: Visual Studio lub inne środowisko IDE C#.
+3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# sprawi, że zapoznanie się z tym kursem będzie proste.
 
 ## Importuj przestrzenie nazw
 
-Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw. Stanowią one elementy składowe Twojego projektu.
+Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw. Są one jak podstawowe elementy Twojego projektu.
 
 ```csharp
 using System;
@@ -30,11 +30,11 @@ using Aspose.Words.MailMerging;
 using System.Linq;
 ```
 
-Podzielmy proces na łatwe do wykonania etapy. Każdy krok będzie kontynuacją poprzedniego, prowadząc do kompletnego rozwiązania.
+Podzielmy proces na łatwe do opanowania kroki. Każdy krok będzie bazował na poprzednim, prowadząc do kompletnego rozwiązania.
 
 ## Krok 1: Konfigurowanie katalogu
 
-Zanim zaczniesz wstawiać dokumenty, musisz zdefiniować ścieżkę do katalogu dokumentów. Tutaj przechowywane są Twoje dokumenty.
+Zanim zaczniesz wstawiać dokumenty, musisz zdefiniować ścieżkę do katalogu dokumentów. To tutaj przechowywane są Twoje dokumenty.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -48,9 +48,9 @@ Następnie załadujesz dokument główny. Ten dokument zawiera pola scalania, w 
 Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
 ```
 
-## Krok 3: Ustawianie wywołania zwrotnego łączenia pól
+## Krok 3: Ustawianie wywołania zwrotnego scalania pól
 
-Aby obsłużyć proces łączenia, musisz ustawić funkcję wywołania zwrotnego. Ta funkcja będzie odpowiedzialna za wstawianie dokumentów w określonych polach scalania.
+Aby obsłużyć proces scalania, musisz ustawić funkcję wywołania zwrotnego. Ta funkcja będzie odpowiedzialna za wstawianie dokumentów w określonych polach scalania.
 
 ```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
@@ -58,7 +58,7 @@ mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 
 ## Krok 4: Wykonywanie korespondencji seryjnej
 
-Teraz nadszedł czas na wykonanie korespondencji seryjnej. To tutaj dzieje się magia. Określ pole scalania i dokument, który powinien zostać wstawiony w tym polu.
+Teraz czas na wykonanie korespondencji seryjnej. To tutaj dzieje się magia. Określisz pole korespondencji seryjnej i dokument, który powinien zostać wstawiony w tym polu.
 
 ```csharp
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
@@ -66,15 +66,15 @@ mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Docu
 
 ## Krok 5: Zapisywanie dokumentu
 
-Po zakończeniu korespondencji seryjnej zapiszesz zmodyfikowany dokument. W nowym dokumencie treść zostanie wstawiona dokładnie tam, gdzie chcesz.
+Po zakończeniu korespondencji seryjnej zapiszesz zmodyfikowany dokument. Ten nowy dokument będzie miał wstawioną treść dokładnie tam, gdzie chcesz.
 
 ```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
-## Krok 6: Tworzenie procedury obsługi wywołania zwrotnego
+## Krok 6: Tworzenie programu obsługi wywołań zwrotnych
 
-Procedura obsługi wywołania zwrotnego to klasa, która wykonuje specjalne przetwarzanie pola scalania. Ładuje dokument określony w wartości pola i wstawia go do bieżącego pola scalania.
+Obsługujący wywołanie zwrotne to klasa, która wykonuje specjalne przetwarzanie dla pola scalania. Ładuje dokument określony w wartości pola i wstawia go do bieżącego pola scalania.
 
 ```csharp
 private class InsertDocumentAtMailMergeHandler : IFieldMergingCallback
@@ -134,21 +134,21 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## Wniosek
 
-I masz to! Pomyślnie wstawiłeś dokumenty do określonych pól podczas operacji korespondencji seryjnej przy użyciu Aspose.Words dla .NET. Ta zaawansowana funkcja może zaoszczędzić mnóstwo czasu i wysiłku, szczególnie w przypadku dużych ilości dokumentów. Pomyśl o tym jak o osobistym asystentze, który zajmie się wszystkimi ciężkimi zadaniami za Ciebie. Więc śmiało, spróbuj. Miłego kodowania!
+I masz! Udało Ci się wstawić dokumenty do określonych pól podczas operacji korespondencji seryjnej przy użyciu Aspose.Words dla .NET. Ta potężna funkcja może zaoszczędzić Ci mnóstwo czasu i wysiłku, zwłaszcza przy pracy z dużymi wolumenami dokumentów. Pomyśl o tym jak o osobistym asystencie, który wykona za Ciebie całą ciężką robotę. Więc śmiało, spróbuj. Miłego kodowania!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Czy mogę wstawić wiele dokumentów w różnych polach scalania?
-Tak, możesz. Wystarczy określić odpowiednie pola scalania i odpowiadające im ścieżki dokumentów w pliku`MailMerge.Execute` metoda.
+Tak, możesz. Wystarczy określić odpowiednie pola scalania i odpowiadające im ścieżki dokumentów w`MailMerge.Execute` metoda.
 
-### Czy można sformatować wstawiony dokument inaczej niż dokument główny?
- Absolutnie! Możesz skorzystać z`ImportFormatMode` parametr w`NodeImporter` do kontrolowania formatowania.
+### Czy istnieje możliwość sformatowania wstawionego dokumentu inaczej niż dokumentu głównego?
+ Oczywiście! Możesz użyć`ImportFormatMode` parametr w`NodeImporter` aby kontrolować formatowanie.
 
-### Co się stanie, jeśli nazwa pola scalania jest dynamiczna?
-Możesz obsługiwać dynamiczne nazwy pól scalania, przekazując je jako parametry do procedury obsługi wywołania zwrotnego.
+### A co jeśli nazwa pola scalania jest dynamiczna?
+Można obsługiwać dynamiczne nazwy pól scalania, przekazując je jako parametry do funkcji obsługi wywołania zwrotnego.
 
-### Czy mogę używać tej metody z różnymi formatami plików?
+### Czy mogę stosować tę metodę do różnych formatów plików?
 Tak, Aspose.Words obsługuje różne formaty plików, w tym DOCX, PDF i inne.
 
-### Jak sobie radzić z błędami podczas procesu wstawiania dokumentu?
-Zaimplementuj obsługę błędów w procedurze obsługi wywołania zwrotnego, aby zarządzać wszelkimi wyjątkami, które mogą wystąpić.
+### Jak postępować w przypadku błędów podczas wstawiania dokumentu?
+Zaimplementuj obsługę błędów w programie obsługi wywołań zwrotnych, aby zarządzać wszelkimi wyjątkami, które mogą wystąpić.

@@ -1,24 +1,24 @@
 ---
-title: Utwórz stopkę nagłówka
-linktitle: Utwórz stopkę nagłówka
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodawać i dostosowywać nagłówki i stopki w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ten przewodnik krok po kroku zapewnia profesjonalne formatowanie dokumentu.
+title: Utwórz nagłówek i stopkę
+linktitle: Utwórz nagłówek i stopkę
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak dodawać i dostosowywać nagłówki i stopki w dokumentach Word za pomocą Aspose.Words dla .NET. Ten przewodnik krok po kroku zapewnia profesjonalne formatowanie dokumentów.
 type: docs
 weight: 10
 url: /pl/net/working-with-headers-and-footers/create-header-footer/
 ---
 ## Wstęp
 
-Dodawanie nagłówków i stopek do dokumentów może zwiększyć ich profesjonalizm i czytelność. Dzięki Aspose.Words dla .NET możesz łatwo tworzyć i dostosowywać nagłówki i stopki dla swoich dokumentów Word. W tym samouczku przeprowadzimy Cię krok po kroku przez proces, upewniając się, że możesz bezproblemowo wdrożyć te funkcje.
+Dodawanie nagłówków i stopek do dokumentów może zwiększyć ich profesjonalizm i czytelność. Dzięki Aspose.Words dla .NET możesz łatwo tworzyć i dostosowywać nagłówki i stopki do dokumentów Word. W tym samouczku przeprowadzimy Cię przez proces krok po kroku, zapewniając, że będziesz mógł bezproblemowo wdrożyć te funkcje.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
+Zanim zaczniesz, upewnij się, że masz następujące rzeczy:
 
 -  Aspose.Words dla .NET: Pobierz i zainstaluj z[link do pobrania](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: takie jak Visual Studio, do pisania i uruchamiania kodu.
-- Podstawowa znajomość C#: Zrozumienie C# i frameworku .NET.
-- Przykładowy dokument: Przykładowy dokument umożliwiający zastosowanie nagłówków i stopek lub utworzenie nowego, jak pokazano w samouczku.
+- Podstawowa wiedza o języku C#: zrozumienie języka C# i platformy .NET.
+- Przykładowy dokument: Przykładowy dokument służący do stosowania nagłówków i stopek lub tworzenia nowego dokumentu, tak jak pokazano w samouczku.
 
 ## Importuj przestrzenie nazw
 
@@ -32,7 +32,7 @@ using System;
 
 ## Krok 1: Zdefiniuj katalog dokumentów
 
-Zdefiniuj katalog, w którym zostanie zapisany dokument. Pomaga to w skutecznym zarządzaniu ścieżką.
+Zdefiniuj katalog, w którym zostanie zapisany Twój dokument. Pomaga to w efektywnym zarządzaniu ścieżką.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -41,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Krok 2: Utwórz nowy dokument
 
- Utwórz nowy dokument i a`DocumentBuilder`aby ułatwić dodawanie treści.
+ Utwórz nowy dokument i`DocumentBuilder`aby ułatwić dodawanie treści.
 
 ```csharp
 Document doc = new Document();
@@ -50,7 +50,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Skonfiguruj ustawienia strony
 
-Skonfiguruj ustawienia strony, w tym to, czy pierwsza strona będzie miała inny nagłówek/stopkę.
+Skonfiguruj ustawienia strony, w tym to, czy pierwsza strona ma mieć inny nagłówek/stopkę.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
@@ -75,9 +75,9 @@ builder.Font.Size = 14;
 builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 ```
 
-## Krok 5: Dodaj nagłówek podstawowy
+## Krok 5: Dodaj nagłówek główny
 
-Przejdź do głównej sekcji nagłówka i wstaw obraz i tekst.
+Przejdź do głównej sekcji nagłówka i wstaw obraz oraz tekst.
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
@@ -119,7 +119,7 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Krok 7: Dodaj treść i podziały stron
+## Krok 7: Dodaj zawartość i podziały stron
 
 Przejdź na koniec dokumentu, dodaj podział strony i utwórz nową sekcję z innymi ustawieniami strony.
 
@@ -165,26 +165,26 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 ## Wniosek
 
-Wykonując te kroki, możesz skutecznie dodawać i dostosowywać nagłówki i stopki w dokumentach programu Word za pomocą Aspose.Words dla .NET. Poprawia to wygląd i profesjonalizm dokumentu, czyniąc go bardziej czytelnym i wciągającym.
+Wykonując te kroki, możesz skutecznie dodawać i dostosowywać nagłówki i stopki w dokumentach Word za pomocą Aspose.Words dla .NET. To poprawia wygląd i profesjonalizm dokumentu, czyniąc go bardziej czytelnym i angażującym.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
+### Czym jest Aspose.Words dla .NET?
 
-Aspose.Words dla .NET to biblioteka, która umożliwia programistom programowe tworzenie, edytowanie i konwertowanie dokumentów programu Word w aplikacjach .NET.
+Aspose.Words for .NET to biblioteka umożliwiająca programistom tworzenie, edycję i konwertowanie dokumentów Word programowo w aplikacjach .NET.
 
 ### Czy mogę dodać obrazy do nagłówka lub stopki?
 
- Tak, możesz łatwo dodawać obrazy do nagłówka lub stopki za pomocą`DocumentBuilder.InsertImage` metoda.
+ Tak, możesz łatwo dodać obrazy do nagłówka lub stopki, korzystając z`DocumentBuilder.InsertImage` metoda.
 
 ### Jak ustawić różne nagłówki i stopki dla pierwszej strony?
 
- Możesz ustawić różne nagłówki i stopki dla pierwszej strony, korzystając z opcji`DifferentFirstPageHeaderFooter` własność`PageSetup` klasa.
+ Możesz ustawić różne nagłówki i stopki dla pierwszej strony, używając`DifferentFirstPageHeaderFooter` własność`PageSetup` klasa.
 
 ### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words?
 
- Obszerną dokumentację można znaleźć na stronie[Strona dokumentacji API Aspose.Words](https://reference.aspose.com/words/net/).
+ Pełną dokumentację można znaleźć na stronie[Strona dokumentacji API Aspose.Words](https://reference.aspose.com/words/net/).
 
-### Czy dostępna jest obsługa Aspose.Words?
+### Czy jest dostępne wsparcie dla Aspose.Words?
 
- Tak, Aspose oferuje wsparcie za pośrednictwem swoich[forum wsparcia](https://forum.aspose.com/c/words/8).
+ Tak, Aspose oferuje wsparcie poprzez swoje[forum wsparcia](https://forum.aspose.com/c/words/8).

@@ -17,7 +17,7 @@ Mielőtt belevágnánk a varázslatba, győződjünk meg arról, hogy mindennel 
 
 1.  Aspose.Words for .NET: Ha még nem tette meg, töltse le[itt](https://releases.aspose.com/words/net/).
 2. Visual Studio: Bármelyik legújabb verzió megfelel.
-3. C# alapvető ismerete: Nem kell varázslónak lenned, de némi jártasság segíthet.
+3. A C# alapvető ismerete: Nem kell varázslónak lenned, de némi jártasság segíthet.
 
  Győződjön meg arról, hogy az Aspose.Words telepítve van és be van állítva a projektben. Ha nem biztos abban, hogyan kell ezt megtenni, a[dokumentáció](https://reference.aspose.com/words/net/) remek hely a kezdéshez.
 
@@ -91,4 +91,4 @@ Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való pro
  Az ImportFormatOptions lehetővé teszi a formázás kezelésének meghatározását, amikor tartalmat importál egyik dokumentumból a másikba. Például,`KeepSourceNumbering` biztosítja, hogy a forrásdokumentumból származó listaszámozás megmaradjon.
 
 ### Hol kaphatok támogatást az Aspose.Words számára?
- Támogatást kaphat a[Aspose.Words fórum](https://forum.aspose.com/c/words/8), ahol kérdéseket tehet fel, és segítséget kérhet a közösségtől és az Aspose fejlesztőitől.
+ Támogatást kaphat a[Aspose.Words fórum](https://forum.aspose.com/c/words/8)ahol kérdéseket tehet fel, és segítséget kérhet a közösségtől és az Aspose fejlesztőitől.

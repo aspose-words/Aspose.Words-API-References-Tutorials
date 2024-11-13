@@ -79,7 +79,7 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 ### Πώς μπορώ να εγκαταστήσω το Aspose.Words για Java;
 
- Το Aspose.Words για Java μπορεί να γίνει λήψη από[εδώ](https://releases.aspose.com/words/java/)Ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται στον ιστότοπο για να το ρυθμίσετε στο έργο σας Java.
+ Το Aspose.Words για Java μπορεί να γίνει λήψη από[εδώ](https://releases.aspose.com/words/java/). Ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται στον ιστότοπο για να το ρυθμίσετε στο έργο σας Java.
 
 ### Μπορώ να φορτώσω σύνθετα έγγραφα HTML χρησιμοποιώντας το Aspose.Words;
 
@@ -95,4 +95,4 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση και παραδείγματα για το Aspose.Words για Java;
 
-Μπορείτε να βρείτε λεπτομερή τεκμηρίωση, παραδείγματα κώδικα και εκπαιδευτικά προγράμματα στον ιστότοπο τεκμηρίωσης Aspose.Words for Java:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).
+ Μπορείτε να βρείτε λεπτομερή τεκμηρίωση, παραδείγματα κώδικα και εκπαιδευτικά προγράμματα στον ιστότοπο τεκμηρίωσης Aspose.Words for Java:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).

@@ -48,9 +48,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## 第 3 步：建立文件產生器
+## 第 3 步：建立文件建構器
 
-DocumentBuilder 類別提供了一種建構文件的簡單方法。我們將使用它來插入我們的圖表。
+DocumentBuilder 類別提供了一種建構文件的簡單方法。我們將使用它來插入圖表。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

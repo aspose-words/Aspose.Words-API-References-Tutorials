@@ -1,23 +1,23 @@
 ---
-title: Tách tài liệu thành các trang HTML trong Aspose.Words cho Java
-linktitle: Tách tài liệu thành các trang HTML
+title: Chia tài liệu thành các trang HTML trong Aspose.Words cho Java
+linktitle: Chia tài liệu thành các trang HTML
 second_title: API xử lý tài liệu Java Aspose.Words
-description: Tìm hiểu cách chia tài liệu thành các trang HTML bằng Aspose.Words cho Java. Hãy làm theo hướng dẫn từng bước của chúng tôi để chuyển đổi tài liệu liền mạch.
+description: Tìm hiểu cách chia tài liệu thành các trang HTML bằng Aspose.Words for Java. Làm theo hướng dẫn từng bước của chúng tôi để chuyển đổi tài liệu liền mạch.
 type: docs
 weight: 25
 url: /vi/java/document-manipulation/splitting-documents-into-html-pages/
 ---
 
-## Giới thiệu về chia tài liệu thành các trang HTML trong Aspose.Words cho Java
+## Giới thiệu về việc chia tài liệu thành các trang HTML trong Aspose.Words cho Java
 
-Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách chia tài liệu thành các trang HTML bằng Aspose.Words cho Java. Aspose.Words là một API Java mạnh mẽ để làm việc với các tài liệu Microsoft Word và nó cung cấp các tính năng mở rộng để thao tác tài liệu, bao gồm khả năng chuyển đổi tài liệu sang nhiều định dạng khác nhau, bao gồm cả HTML.
+Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách chia tài liệu thành các trang HTML bằng Aspose.Words for Java. Aspose.Words là một API Java mạnh mẽ để làm việc với các tài liệu Microsoft Word và cung cấp các tính năng mở rộng để thao tác tài liệu, bao gồm khả năng chuyển đổi tài liệu thành nhiều định dạng khác nhau, bao gồm cả HTML.
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
+Trước khi bắt đầu, hãy đảm bảo bạn đã đáp ứng đủ các điều kiện tiên quyết sau:
 
 - Bộ công cụ phát triển Java (JDK) được cài đặt trên hệ thống của bạn.
--  Aspose.Words cho thư viện Java. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/java/).
+-  Aspose.Words cho thư viện Java. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/java/).
 
 ## Bước 1: Nhập các gói cần thiết
 
@@ -27,7 +27,7 @@ import java.io.*;
 import java.util.ArrayList;
 ```
 
-## Bước 2: Tạo phương thức chuyển đổi Word sang HTML
+## Bước 2: Tạo phương pháp chuyển đổi Word sang HTML
 
 ```java
 class WordToHtmlConverter
@@ -37,7 +37,7 @@ class WordToHtmlConverter
 }
 ```
 
-## Bước 3: Chọn đoạn tiêu đề làm chủ đề bắt đầu
+## Bước 3: Chọn Đoạn văn tiêu đề làm chủ đề bắt đầu
 
 ```java
 private ArrayList<Paragraph> selectTopicStarts()
@@ -54,7 +54,7 @@ private ArrayList<Paragraph> selectTopicStarts()
 }
 ```
 
-## Bước 4: Chèn dấu ngắt phần trước đoạn tiêu đề
+## Bước 4: Chèn ngắt phần trước đoạn văn tiêu đề
 
 ```java
 private void insertSectionBreaks(ArrayList<Paragraph> topicStartParas)
@@ -117,7 +117,7 @@ private void saveHtmlTopic(Section section, Topic topic) throws Exception
 }
 ```
 
-## Bước 7: Tạo mục lục cho các chủ đề
+## Bước 7: Tạo Mục lục cho các Chủ đề
 
 ```java
 private void saveTableOfContents(ArrayList<Topic> topics) throws Exception
@@ -129,30 +129,30 @@ private void saveTableOfContents(ArrayList<Topic> topics) throws Exception
 }
 ```
 
-Bây giờ chúng tôi đã phác thảo các bước, bạn có thể triển khai từng bước trong dự án Java của mình để chia tài liệu thành các trang HTML bằng Aspose.Words for Java. Quá trình này sẽ cho phép bạn tạo bản trình bày HTML có cấu trúc cho tài liệu của mình, giúp chúng dễ truy cập và thân thiện hơn với người dùng.
+Bây giờ chúng tôi đã phác thảo các bước, bạn có thể triển khai từng bước trong dự án Java của mình để chia tài liệu thành các trang HTML bằng Aspose.Words for Java. Quy trình này sẽ cho phép bạn tạo biểu diễn HTML có cấu trúc cho tài liệu của mình, giúp chúng dễ truy cập và thân thiện với người dùng hơn.
 
 ## Phần kết luận
 
-Trong hướng dẫn toàn diện này, chúng tôi đã đề cập đến quá trình chia tài liệu thành các trang HTML bằng Aspose.Words cho Java. Bằng cách làm theo các bước đã nêu, bạn có thể chuyển đổi tài liệu Word sang định dạng HTML một cách hiệu quả, giúp nội dung của bạn dễ truy cập hơn trên web.
+Trong hướng dẫn toàn diện này, chúng tôi đã đề cập đến quy trình chia tài liệu thành các trang HTML bằng Aspose.Words for Java. Bằng cách làm theo các bước được nêu, bạn có thể chuyển đổi hiệu quả các tài liệu Word sang định dạng HTML, giúp nội dung của bạn dễ truy cập hơn trên web.
 
 ## Câu hỏi thường gặp
 
-### Làm cách nào để cài đặt Aspose.Words cho Java?
+### Làm thế nào để cài đặt Aspose.Words cho Java?
 
  Để cài đặt Aspose.Words cho Java, bạn có thể tải xuống thư viện từ[đây](https://releases.aspose.com/words/java/) và làm theo hướng dẫn cài đặt được cung cấp trong tài liệu.
 
 ### Tôi có thể tùy chỉnh đầu ra HTML không?
 
- Có, bạn có thể tùy chỉnh đầu ra HTML bằng cách điều chỉnh các tùy chọn lưu trong`HtmlSaveOptions` lớp học. Điều này cho phép bạn kiểm soát định dạng và giao diện của tệp HTML được tạo.
+ Có, bạn có thể tùy chỉnh đầu ra HTML bằng cách điều chỉnh các tùy chọn lưu trong`HtmlSaveOptions` lớp. Điều này cho phép bạn kiểm soát định dạng và giao diện của các tệp HTML được tạo.
 
-### Phiên bản nào của Microsoft Word được Aspose.Words cho Java hỗ trợ?
+### Aspose.Words for Java hỗ trợ những phiên bản Microsoft Word nào?
 
-Aspose.Words for Java hỗ trợ nhiều định dạng tài liệu Microsoft Word, bao gồm DOC, DOCX, RTF, v.v. Nó tương thích với nhiều phiên bản khác nhau của Microsoft Word.
+Aspose.Words for Java hỗ trợ nhiều định dạng tài liệu Microsoft Word, bao gồm DOC, DOCX, RTF, v.v. Nó tương thích với nhiều phiên bản Microsoft Word khác nhau.
 
-### Làm cách nào tôi có thể xử lý hình ảnh trong HTML đã chuyển đổi?
+### Tôi có thể xử lý hình ảnh trong HTML đã chuyển đổi như thế nào?
 
 Aspose.Words for Java có thể xử lý hình ảnh trong HTML đã chuyển đổi bằng cách lưu chúng dưới dạng các tệp riêng biệt trong cùng thư mục với tệp HTML. Điều này đảm bảo rằng hình ảnh được hiển thị chính xác trong đầu ra HTML.
 
 ### Có phiên bản dùng thử của Aspose.Words cho Java không?
 
-Có, bạn có thể yêu cầu phiên bản dùng thử miễn phí của Aspose.Words cho Java từ trang web Aspose để đánh giá các tính năng và khả năng của nó trước khi mua giấy phép.
+Có, bạn có thể yêu cầu dùng thử miễn phí Aspose.Words for Java từ trang web Aspose để đánh giá các tính năng và khả năng của phần mềm này trước khi mua giấy phép.

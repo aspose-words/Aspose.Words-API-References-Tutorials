@@ -13,7 +13,7 @@ url: /zh/net/working-with-section/delete-all-sections/
 
 ## 先决条件
 
-在开始之前，让我们先确保您已准备好一切。以下是您需要做的准备：
+在开始之前，让我们先确保你已准备好一切。以下是开始前你需要做的：
 
 -  Aspose.Words for .NET：你可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 - 开发环境：任何与 .NET 兼容的 IDE（如 Visual Studio）。

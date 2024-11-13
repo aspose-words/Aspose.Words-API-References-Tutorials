@@ -54,7 +54,7 @@ DocumentBuilder builder = new DocumentBuilder();
 FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 ```
 
-这里，`builder.InsertField`用于在当前光标位置插入字段。字段类型指定为`"IF 1 = 1"`，这是简单条件，其中 1 等于 1。这将始终计算为真。`null`参数表示该字段不需要额外的格式。
+这里，`builder.InsertField`用于在当前光标位置插入字段。字段类型指定为`"IF 1 = 1"`，这是 1 等于 1 的简单条件。这将始终计算为真。`null`参数表示该字段不需要额外的格式化。
 
 ## 步骤 3：评估 IF 条件
 
@@ -80,7 +80,7 @@ Console.WriteLine(actualResult);
 
 ## 结论
 
-使用 Aspose.Words for .NET 评估 Word 文档中的 IF 条件是一种根据特定条件添加动态内容的有效方法。通过遵循本指南，您已经学会了如何创建文档、插入 IF 字段、评估其条件以及显示结果。此功能对于生成个性化报告、具有条件内容的文档或任何需要动态内容的场景都很有用。
+使用 Aspose.Words for .NET 评估 Word 文档中的 IF 条件是一种根据特定条件添加动态内容的有效方法。通过遵循本指南，您已经学会了如何创建文档、插入 IF 字段、评估其条件并显示结果。此功能对于生成个性化报告、具有条件内容的文档或任何需要动态内容的场景都很有用。
 
 请随意尝试不同的条件和输出，以充分了解如何利用文档中的 IF 字段。
 

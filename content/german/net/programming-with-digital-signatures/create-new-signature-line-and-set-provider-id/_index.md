@@ -9,7 +9,7 @@ url: /de/net/programming-with-digital-signatures/create-new-signature-line-and-s
 ---
 ## Einführung
 
-Hallo Technikbegeisterte! Haben Sie sich schon einmal gefragt, wie Sie Ihren Word-Dokumenten programmgesteuert eine Signaturzeile hinzufügen können? Heute tauchen wir mit Aspose.Words für .NET genau in diese Richtung ein. Diese Anleitung führt Sie durch jeden Schritt und macht es kinderleicht, eine neue Signaturzeile zu erstellen und die Anbieter-ID in Ihren Word-Dokumenten festzulegen. Egal, ob Sie die Dokumentenverarbeitung automatisieren oder einfach nur Ihren Workflow optimieren möchten, dieses Tutorial ist für Sie da.
+Hallo Technikbegeisterte! Haben Sie sich schon einmal gefragt, wie Sie Ihren Word-Dokumenten programmgesteuert eine Signaturzeile hinzufügen können? Heute tauchen wir genau in diese Richtung ein und verwenden dafür Aspose.Words für .NET. Diese Anleitung führt Sie durch jeden Schritt und macht es kinderleicht, eine neue Signaturzeile zu erstellen und die Anbieter-ID in Ihren Word-Dokumenten festzulegen. Egal, ob Sie die Dokumentenverarbeitung automatisieren oder einfach nur Ihren Workflow optimieren möchten, dieses Tutorial ist für Sie da.
 
 ## Voraussetzungen
 

@@ -18,7 +18,7 @@ Mielőtt belemerülnénk a finom részletekbe, győződjünk meg arról, hogy mi
 1.  Aspose.Words for .NET Library: Letöltheti a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/).
 2.  Érvényes Aspose licencfájl: Ha még nem rendelkezik ilyennel, ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/) vagy vásároljon egyet innen[itt](https://purchase.aspose.com/buy).
 3. Fejlesztői környezet: Egy IDE, mint a Visual Studio.
-4. A C# alapvető ismerete: Ez segít a kódpéldák követésében.
+4. C# alapvető ismerete: Ez segít a kódpéldák követésében.
 
 ## Névterek importálása
 
@@ -33,7 +33,7 @@ Rendben, most bontsuk fel a folyamatot kezelhető lépésekre.
 
 ## 1. lépés: Állítsa be projektjét
 
-Először is be kell állítania a projektet. Nyissa meg az IDE-jét, és hozzon létre egy új C#-projektet. Győződjön meg arról, hogy az Aspose.Words könyvtárra hivatkozik a projektben. Ha még nem adta hozzá, a NuGet Package Manager segítségével megteheti.
+Először is be kell állítania a projektet. Nyissa meg az IDE-jét, és hozzon létre egy új C#-projektet. Győződjön meg arról, hogy az Aspose.Words könyvtárra hivatkozik a projektben. Ha még nem adta hozzá, megteheti a NuGet Package Manager segítségével.
 
 ```shell
 Install-Package Aspose.Words
@@ -65,7 +65,7 @@ catch (Exception e)
 
 ## 4. lépés: Ellenőrizze a licencet
 
- Miután beállította a licencet, érdemes ellenőrizni, hogy megfelelően alkalmazta-e. Ezt megteheti a`IsLicensed` tulajdona a`License` osztály.
+Miután beállította a licencet, érdemes ellenőrizni, hogy megfelelően alkalmazta-e. Ezt megteheti a`IsLicensed` tulajdona a`License` osztály.
 
 ```csharp
 if (license.IsLicensed)

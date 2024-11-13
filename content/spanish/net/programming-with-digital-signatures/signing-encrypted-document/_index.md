@@ -2,27 +2,27 @@
 title: Firmar un documento de Word cifrado
 linktitle: Firmar un documento de Word cifrado
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a firmar documentos de Word cifrados utilizando Aspose.Words para .NET con esta guía detallada paso a paso. Perfecto para desarrolladores.
+description: Aprenda a firmar documentos de Word cifrados con Aspose.Words para .NET con esta guía detallada paso a paso. Perfecta para desarrolladores.
 type: docs
 weight: 10
 url: /es/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
 ## Introducción
 
-¿Alguna vez te has preguntado cómo firmar un documento de Word cifrado? Hoy, recorreremos este proceso usando Aspose.Words para .NET. ¡Abróchate el cinturón y prepárate para un tutorial detallado, atractivo y divertido!
+¿Alguna vez te preguntaste cómo firmar un documento de Word cifrado? Hoy, repasaremos este proceso con Aspose.Words para .NET. ¡Abróchate el cinturón y prepárate para un tutorial detallado, interesante y divertido!
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de profundizar en el código, asegurémonos de tener todo lo que necesita:
+Antes de sumergirnos en el código, asegurémonos de tener todo lo que necesitas:
 
 1.  Aspose.Words para .NET: descargar e instalar desde[aquí](https://releases.aspose.com/words/net/).
 2. Visual Studio: asegúrese de tenerlo instalado.
 3. Un certificado válido: necesitará un archivo de certificado .pfx.
-4. Conocimientos básicos de C#: comprender los conceptos básicos hará que este tutorial sea más fluido.
+4. Conocimientos básicos de C#: comprender los conceptos básicos hará que este tutorial sea más sencillo.
 
 ## Importar espacios de nombres
 
-Primero, importemos los espacios de nombres necesarios. Estos son cruciales para acceder a las funcionalidades de Aspose.Words.
+Primero, importemos los espacios de nombres necesarios. Estos son fundamentales para acceder a las funcionalidades de Aspose.Words.
 
 ```csharp
 using System;
@@ -33,31 +33,31 @@ using Aspose.Words.DigitalSignatures;
 
 Ahora, dividamos el proceso en pasos simples y manejables.
 
-## Paso 1: configurar su proyecto
+## Paso 1: Configuración del proyecto
 
-Lo primero es lo primero, configure su proyecto de Visual Studio. Abra Visual Studio y cree una nueva aplicación de consola C#. Nómbralo con algo descriptivo como "SignEncryptedWordDoc".
+Lo primero es lo primero: configure su proyecto de Visual Studio. Abra Visual Studio y cree una nueva aplicación de consola de C#. Asígnele un nombre descriptivo, como "SignEncryptedWordDoc".
 
-## Paso 2: Agregar Aspose.Words a su proyecto
+## Paso 2: Cómo agregar Aspose.Words a su proyecto
 
-continuación, debemos agregar Aspose.Words a su proyecto. Hay varias formas de hacer esto, pero usar NuGet es la más sencilla. 
+continuación, debemos agregar Aspose.Words a su proyecto. Hay varias formas de hacerlo, pero usar NuGet es la más sencilla. 
 
-1. Abra la Consola del Administrador de paquetes NuGet desde Herramientas > Administrador de paquetes NuGet > Consola del Administrador de paquetes.
+1. Abra la consola del administrador de paquetes NuGet desde Herramientas > Administrador de paquetes NuGet > Consola del administrador de paquetes.
 2. Ejecute el siguiente comando:
 
 ```powershell
 Install-Package Aspose.Words
 ```
 
-## Paso 3: Preparar el directorio de documentos
+## Paso 3: Preparación del directorio de documentos
 
-Necesitará un directorio para almacenar sus documentos y certificados de Word. Creemos uno.
+Necesitará un directorio para almacenar sus documentos y certificados de Word. Vamos a crear uno.
 
-1. Crea un directorio en tu computadora. Para simplificar, llamémoslo "Directorio de documentos".
+1. Crea un directorio en tu computadora. Para simplificarlo, lo llamaremos "DocumentDirectory".
 2. Coloque su documento de Word (por ejemplo, "Documento.docx") y su certificado .pfx (por ejemplo, "morzal.pfx") en este directorio.
 
-## Paso 4: escribir el código
+## Paso 4: Escribir el código
 
- Ahora, profundicemos en el código. Abre tu`Program.cs` archivo y comience configurando la ruta a su directorio de documentos e inicializando el`SignOptions` con la contraseña de descifrado.
+ Ahora, profundicemos en el código. Abra su`Program.cs` archivo y comience configurando la ruta a su directorio de documentos e inicializando el`SignOptions` con la contraseña de descifrado.
 
 ```csharp
 // La ruta al directorio de documentos.
@@ -65,17 +65,17 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
 ```
 
-## Paso 5: cargar el certificado
+## Paso 5: Carga del certificado
 
- A continuación, cargue su certificado usando el`CertificateHolder`clase. Esto requerirá la ruta a su archivo .pfx y la contraseña del certificado.
+ A continuación, cargue su certificado utilizando el`CertificateHolder`clase. Esto requerirá la ruta a su archivo .pfx y la contraseña del certificado.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-## Paso 6: Firmar el documento
+## Paso 6: Firma del documento
 
- Finalmente, utiliza el`DigitalSignatureUtil.Sign` método para firmar su documento de Word cifrado. Este método requiere las opciones de archivo de entrada, archivo de salida, titular del certificado y firma.
+ Por último, utilice el`DigitalSignatureUtil.Sign` Método para firmar un documento Word cifrado. Este método requiere el archivo de entrada, el archivo de salida, el titular del certificado y las opciones de firma.
 
 ```csharp
 DigitalSignatureUtil.Sign(
@@ -85,27 +85,27 @@ DigitalSignatureUtil.Sign(
     signOptions);
 ```
 
-## Paso 7: ejecutar el código
+## Paso 7: Ejecutar el código
 
-Guarde su archivo y ejecute el proyecto. Si todo está configurado correctamente, debería ver su documento firmado en el directorio especificado.
+Guarde el archivo y ejecute el proyecto. Si todo está configurado correctamente, debería ver el documento firmado en el directorio especificado.
 
 ## Conclusión
 
-¡Y ahí lo tienes! Ha firmado con éxito un documento de Word cifrado utilizando Aspose.Words para .NET. Con esta poderosa biblioteca, la firma digital se vuelve muy sencilla, incluso para archivos cifrados. ¡Feliz codificación!
+¡Y ya está! Has firmado con éxito un documento de Word cifrado con Aspose.Words para .NET. Con esta potente biblioteca, la firma digital se convierte en un juego de niños, incluso para archivos cifrados. ¡Que disfrutes codificando!
 
 ## Preguntas frecuentes
 
-### ¿Puedo utilizar un tipo diferente de certificado?
-Sí, Aspose.Words admite varios tipos de certificados, siempre que estén en el formato correcto.
+### ¿Puedo utilizar un tipo de certificado diferente?
+Sí, Aspose.Words admite varios tipos de certificados, siempre que tengan el formato correcto.
 
 ### ¿Es posible firmar varios documentos a la vez?
-¡Absolutamente! Puede recorrer una colección de documentos y firmar cada uno mediante programación.
+¡Por supuesto! Puedes recorrer una colección de documentos y firmar cada uno de ellos mediante programación.
 
 ### ¿Qué pasa si olvido la contraseña de descifrado?
-Lamentablemente, sin la contraseña de descifrado, no podrás firmar el documento.
+Desafortunadamente, sin la contraseña de descifrado, no podrá firmar el documento.
 
 ### ¿Puedo agregar una firma visible al documento?
-Sí, Aspose.Words también le permite agregar firmas digitales visibles.
+Sí, Aspose.Words también te permite agregar firmas digitales visibles.
 
-### ¿Hay alguna manera de verificar la firma?
- Sí, puedes usar el`DigitalSignatureUtil.Verify` Método para verificar firmas.
+### ¿Hay alguna forma de verificar la firma?
+ Sí, puedes utilizar el`DigitalSignatureUtil.Verify` Método para verificar firmas.

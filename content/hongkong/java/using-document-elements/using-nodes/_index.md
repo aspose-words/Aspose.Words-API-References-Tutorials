@@ -114,7 +114,7 @@ Aspose.Words for Java 是一個 Java 函式庫，可讓開發人員以程式設�
 ### Q3。有免費試用嗎？
 是的，您可以免費試用 Aspose.Words for Java[這裡](https://releases.aspose.com/).
 
-### Q4。我可以在哪裡拿到臨時駕照？
+### Q4。我在哪裡可以獲得臨時駕照？
 您可以獲得 Aspose.Words for Java 的臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
 
 ### Q5.在哪裡可以找到對 Aspose.Words for Java 的支援？

@@ -60,7 +60,7 @@ Felder in Word-Dokumenten können dynamisch sein, d. h. sie zeigen möglicherwei
 document.UpdateFields();
 ```
 
- Der`UpdateFields` Die Methode durchläuft alle Felder im Dokument und aktualisiert sie mit den neuesten Daten. Dieser Schritt ist wichtig, wenn Ihre Felder von dynamischen Inhalten wie Datumsangaben oder Berechnungen abhängen.
+Der`UpdateFields` Die Methode durchläuft alle Felder im Dokument und aktualisiert sie mit den neuesten Daten. Dieser Schritt ist wichtig, wenn Ihre Felder von dynamischen Inhalten wie Datumsangaben oder Berechnungen abhängen.
 
 ## Schritt 3: Feldergebnisse anzeigen
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
- Der`DisplayResult` Eigentum der`Field` Klasse gibt den formatierten Wert des Feldes zurück. Die`foreach` Die Schleife durchläuft alle Felder im Dokument und druckt die Ergebnisse aus.
+Der`DisplayResult` Eigentum der`Field` Klasse gibt den formatierten Wert des Feldes zurück. Die`foreach` Die Schleife durchläuft alle Felder im Dokument und druckt die Ergebnisse aus.
 
 ## Abschluss
 
@@ -94,7 +94,7 @@ Sie können verschiedene Feldtypen aktualisieren, darunter Datumsfelder, Dokumen
  Ja, Sie können die`Document.Sections` -Eigenschaft, um auf bestimmte Abschnitte zuzugreifen und die darin enthaltenen Felder zu aktualisieren.
 
 ### Wie gehe ich mit Feldern um, die Benutzereingaben erfordern?  
-Felder, die Benutzereingaben erfordern (wie Formularfelder), müssen manuell oder mithilfe von zusätzlichem Code ausgefüllt werden.
+Felder, die Benutzereingaben erfordern (wie Formularfelder), müssen manuell oder über zusätzlichen Code ausgefüllt werden.
 
 ### Ist es möglich, Feldergebnisse in einem anderen Format anzuzeigen?  
- Der`DisplayResult` -Eigenschaft stellt die formatierte Ausgabe bereit. Wenn Sie ein anderes Format benötigen, sollten Sie je nach Ihren Anforderungen eine zusätzliche Verarbeitung in Betracht ziehen.
+Der`DisplayResult` -Eigenschaft stellt die formatierte Ausgabe bereit. Wenn Sie ein anderes Format benötigen, sollten Sie je nach Ihren Anforderungen eine zusätzliche Verarbeitung in Betracht ziehen.

@@ -120,10 +120,10 @@ Aspose.Words for Python 与 VBA 宏的融合为 Word 文档的高级自动化提
 是的，VBA 宏可以在各种 Microsoft Office 应用程序中使用，包括 Excel 和 PowerPoint。
 
 ### 使用 VBA 宏是否存在安全风险？
-虽然 VBA 宏可以增强自动化，但如果使用不当，也会带来安全风险。始终确保宏来自可信来源，并考虑实施安全措施。
+虽然 VBA 宏可以增强自动化，但如果使用不当，也可能带来安全风险。始终确保宏来自可信来源，并考虑实施安全措施。
 
 ### 我可以根据外部数据源自动创建文档吗？
 当然！使用 Aspose.Words Python 和 VBA 宏，您可以使用来自外部来源、数据库或 API 的数据自动创建和填充文档。
 
-### 在哪里可以找到更多 Aspose.Words Python 资源和示例？
+### 在哪里可以找到更多 Aspose.Words Python 的资源和示例？
 您可以在[Aspose.Words Python API 参考](https://reference.aspose.com/words/python-net/)页。

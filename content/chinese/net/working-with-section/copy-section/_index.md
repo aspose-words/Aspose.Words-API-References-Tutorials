@@ -35,7 +35,7 @@ using Aspose.Words;
 
 ## 步骤 1：初始化您的环境
 
-在深入研究代码之前，请确保已安装 Aspose.Words 库并准备好两个示例 Word 文档。
+在深入研究代码之前，请确保您已安装 Aspose.Words 库并准备好两个示例 Word 文档。
 
 1. 下载并安装 Aspose.Words：获取它[这里](https://releases.aspose.com/words/net/).
 2. 设置您的项目：打开 Visual Studio 并创建一个新的 .NET 项目。
@@ -91,7 +91,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ## 结论
 
-就这样！🎉 您已成功使用 Aspose.Words for .NET 将一个部分从一个 Word 文档复制到另一个 Word 文档。这项强大的功能可以为您节省大量时间和精力，尤其是在处理复杂文档或重复性任务时。请记住，掌握 Aspose.Words 的关键在于练习和试验不同的功能。祝您编码愉快！
+就这样！🎉 您已成功使用 Aspose.Words for .NET 将一个部分从一个 Word 文档复制到另一个 Word 文档。此强大功能可以为您节省大量时间和精力，尤其是在处理复杂文档或重复性任务时。请记住，掌握 Aspose.Words 的关键在于练习和试验不同的功能。祝您编码愉快！
 
 ## 常见问题解答
 

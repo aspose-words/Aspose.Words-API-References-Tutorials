@@ -22,7 +22,7 @@ Word 文書にカスタム図形を追加すると、重要な情報を強調し
 
 ## 名前空間のインポート
 
-Aspose.Words for .NET の使用を開始する前に、必要な名前空間をインポートする必要があります。C# ファイルの先頭に以下を追加します。
+Aspose.Words for .NET の使用を開始する前に、必要な名前空間をインポートする必要があります。これらを C# ファイルの先頭に追加します。
 
 ```csharp
 using Aspose.Words;
@@ -70,7 +70,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 
 ## ステップ4: ドキュメントを保存する
 
-最後に、先ほど定義した保存オプションを使用して、指定されたディレクトリにドキュメントを保存します。
+最後に、先ほど定義した保存オプションを使用して、ドキュメントを指定されたディレクトリに保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);

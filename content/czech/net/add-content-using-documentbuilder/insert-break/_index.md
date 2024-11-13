@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Krok 3: Inicializace DocumentBuilderu
 
- The`DocumentBuilder` je jako váš štětec. Pomůže vám přidat obsah do vašeho dokumentu. Pojďme to inicializovat.
+The`DocumentBuilder` je jako váš štětec. Pomůže vám přidat obsah do vašeho dokumentu. Pojďme to inicializovat.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

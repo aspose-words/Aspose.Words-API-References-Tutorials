@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 
 ## 結論
 
-現在你就得到它了！您剛剛使用 Aspose.Words for .NET 在 Word 文件中建立了一個簡單的表格。透過將流程分解為可管理的步驟，我們使其易於理解和實施。現在您可以嘗試不同的表格結構和內容來滿足您的需求。快樂編碼！
+現在你就擁有了！您剛剛使用 Aspose.Words for .NET 在 Word 文件中建立了一個簡單的表格。透過將流程分解為可管理的步驟，我們使其易於理解和實施。現在您可以嘗試不同的表格結構和內容來滿足您的需求。快樂編碼！
 
 ## 常見問題解答
 

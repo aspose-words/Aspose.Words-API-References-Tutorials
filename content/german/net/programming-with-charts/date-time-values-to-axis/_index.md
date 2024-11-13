@@ -17,7 +17,7 @@ Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfü
 
 1. Visual Studio oder eine beliebige .NET IDE: Sie benötigen eine Entwicklungsumgebung zum Schreiben und Ausführen Ihres .NET-Codes.
 2.  Aspose.Words für .NET: Sie sollten die Bibliothek Aspose.Words für .NET installiert haben. Sie können sie herunterladen von[Hier](https://releases.aspose.com/words/net/).
-3. Grundkenntnisse in C#: Dieses Tutorial setzt grundlegende Kenntnisse der C#-Programmierung voraus.
+3. Grundkenntnisse in C#: Dieses Tutorial setzt voraus, dass Sie über grundlegende Kenntnisse der C#-Programmierung verfügen.
 4.  Eine gültige Aspose-Lizenz: Sie erhalten eine temporäre Lizenz von[Hier](https://purchase.aspose.com/temporary-license/).
 
 ## Namespaces importieren
@@ -81,7 +81,7 @@ chart.Series.Add("Aspose Series 1",
 
 ## Schritt 6: Konfigurieren Sie die X-Achse
 
-Legen Sie die Skalierung und Markierungen für die X-Achse fest. So stellen Sie sicher, dass Ihre Daten korrekt und in den richtigen Abständen angezeigt werden.
+Legen Sie die Skalierung und die Markierungen für die X-Achse fest. So stellen Sie sicher, dass Ihre Daten korrekt und in den richtigen Abständen angezeigt werden.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;

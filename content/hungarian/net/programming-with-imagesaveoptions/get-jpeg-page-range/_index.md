@@ -15,7 +15,7 @@ Word-dokumentumok képekké konvertálása hihetetlenül hasznos lehet, legyen s
 
 Mielőtt elkezdené, meg kell tennie néhány dolgot:
 
--  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 - Fejlesztői környezet: AC# fejlesztői környezet, például a Visual Studio.
 - Mintadokumentum: Word dokumentum, amellyel dolgozni. Ehhez az oktatóanyaghoz bármilyen .docx fájlt használhat.
 - C# alapismeretek: C# programozás ismerete.

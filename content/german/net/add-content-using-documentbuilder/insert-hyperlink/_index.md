@@ -118,7 +118,7 @@ Das Einfügen von Hyperlinks in ein Word-Dokument mit Aspose.Words für .NET ist
 
 ### Was passiert, wenn die URL ungültig ist?
 
- Der`InsertHyperlink` Die Methode validiert keine URLs. Daher ist es wichtig, vor dem Einfügen sicherzustellen, dass die URLs korrekt sind.
+Der`InsertHyperlink` Die Methode validiert keine URLs. Daher ist es wichtig, vor dem Einfügen sicherzustellen, dass die URLs korrekt sind.
 
 ### Ist es möglich, einen Hyperlink nach dem Einfügen zu entfernen?
 

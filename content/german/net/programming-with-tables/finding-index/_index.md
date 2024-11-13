@@ -32,7 +32,7 @@ Lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Wir werden je
 
 ## Schritt 1: Laden Sie Ihr Dokument
 
-Zuerst müssen Sie das Word-Dokument laden, das die Tabellen enthält, mit denen Sie arbeiten. Hier geben Sie den Pfad zu Ihrem Dokumentverzeichnis an.
+Zunächst müssen Sie das Word-Dokument laden, das die Tabellen enthält, mit denen Sie arbeiten. Geben Sie hier den Pfad zu Ihrem Dokumentverzeichnis an.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis

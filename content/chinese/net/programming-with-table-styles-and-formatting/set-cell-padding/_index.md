@@ -13,7 +13,7 @@ url: /zh/net/programming-with-table-styles-and-formatting/set-cell-padding/
 
 ## 先决条件
 
-在深入研究之前，请确保您已准备好以下内容：
+在深入研究之前，请确保您已具备以下条件：
 
 1. Aspose.Words for .NET：如果您还没有，请从[Aspose 发布页面](https://releases.aspose.com/words/net/).
 2. 开发环境：您需要在您的机器上安装一个像 Visual Studio 这样的 IDE。
@@ -88,9 +88,9 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 ## 常见问题解答
 
 ### 我可以为表中的每个单元格设置不同的填充值吗？
-是的，您可以通过应用`SetPaddings`对每个细胞分别进行方法。
+是的，您可以通过应用`SetPaddings`方法对每个细胞分别进行。
 
-### Aspose.Words 中填充值使用什么单位？
+### Aspose.Words 中的填充值使用什么单位？
 填充值以点为单位指定。1 英寸为 72 点。
 
 ### 我可以仅将填充应用于单元格的特定侧吗？

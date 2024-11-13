@@ -35,7 +35,7 @@ Durch Anpassen dieser Einstellungen können Sie Aspose.Words genau an Ihre Proje
 
 Die Lizenzierung und Konfiguration von Aspose.Words für Java ist ein grundlegender Aspekt für die effektive Nutzung dieses leistungsstarken Toolkits. Mit den richtigen Lizenz- und Konfigurationseinstellungen können Sie Dokumentverarbeitungsfunktionen nahtlos in Ihre Java-Anwendungen integrieren. Nutzen Sie das volle Potenzial von Aspose.Words und heben Sie Ihre Dokumentenverwaltungsaufgaben auf ein neues Niveau.
 
- Denken Sie daran, für detaillierte Codebeispiele und weitere Anleitungen siehe die[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/). Beginnen Sie Ihre Reise noch heute und entdecken Sie die Welt der Möglichkeiten, die Aspose.Words Java-Entwicklern bietet.
+ Beachten Sie, dass Sie für detaillierte Codebeispiele und weitere Anleitungen auf die[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/). Beginnen Sie Ihre Reise noch heute und entdecken Sie die Welt der Möglichkeiten, die Aspose.Words Java-Entwicklern bietet.
 
 ## Lizenzierungs- und Konfigurationstutorials
 ### [Lizenzierung auf Aspose.Words für Java anwenden](./applying-licensing/)

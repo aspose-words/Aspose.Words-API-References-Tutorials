@@ -66,7 +66,7 @@ This sets up a new, empty document.
 2. Get the first paragraph in the document:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 This ensures we have a paragraph to work with.

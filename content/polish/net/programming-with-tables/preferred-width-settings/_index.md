@@ -1,27 +1,27 @@
 ---
 title: Preferowane ustawienia szerokości
 linktitle: Preferowane ustawienia szerokości
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak tworzyć tabele z ustawieniami szerokości bezwzględnej, względnej i automatycznej w Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak tworzyć tabele z bezwzględnymi, względnymi i automatycznymi ustawieniami szerokości w Aspose.Words dla platformy .NET, korzystając z tego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-tables/preferred-width-settings/
 ---
 ## Wstęp
 
-Tabele to skuteczny sposób organizowania i prezentowania informacji w dokumentach programu Word. Podczas pracy z tabelami w Aspose.Words dla .NET masz kilka opcji ustawiania szerokości komórek tabeli, aby mieć pewność, że idealnie pasują do układu dokumentu. Ten przewodnik przeprowadzi Cię przez proces tworzenia tabel z preferowanymi ustawieniami szerokości przy użyciu Aspose.Words dla .NET, koncentrując się na opcjach rozmiaru bezwzględnego, względnego i automatycznego. 
+Tabele to potężny sposób na organizowanie i prezentowanie informacji w dokumentach Word. Podczas pracy z tabelami w Aspose.Words for .NET masz kilka opcji ustawiania szerokości komórek tabeli, aby zapewnić, że idealnie pasują do układu dokumentu. Ten przewodnik przeprowadzi Cię przez proces tworzenia tabel z preferowanymi ustawieniami szerokości przy użyciu Aspose.Words for .NET, skupiając się na opcjach bezwzględnego, względnego i automatycznego ustalania rozmiaru. 
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące elementy:
+Zanim przejdziesz do samouczka, upewnij się, że posiadasz następujące rzeczy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET w swoim środowisku programistycznym. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że Aspose.Words dla .NET jest zainstalowany w Twoim środowisku programistycznym. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
 
-2. Środowisko programistyczne .NET: skonfiguruj środowisko programistyczne .NET, takie jak Visual Studio.
+2. Środowisko programistyczne .NET: Skonfiguruj środowisko programistyczne .NET, np. Visual Studio.
 
-3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci lepiej zrozumieć fragmenty kodu i przykłady.
+3. Podstawowa wiedza o języku C#: Znajomość programowania w języku C# pomoże Ci lepiej zrozumieć fragmenty kodu i przykłady.
 
-4.  Dokumentacja Aspose.Words: Patrz[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) aby uzyskać szczegółowe informacje o API i dalszą lekturę.
+4.  Dokumentacja Aspose.Words: Zapoznaj się z[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) aby uzyskać szczegółowe informacje na temat interfejsu API i dalsze informacje.
 
 ## Importuj przestrzenie nazw
 
@@ -34,13 +34,13 @@ using Aspose.Words.Tables;
 
 Te przestrzenie nazw zapewniają dostęp do podstawowych funkcjonalności Aspose.Words i obiektu Table, umożliwiając manipulowanie tabelami dokumentów.
 
-Podzielmy proces tworzenia tabeli z różnymi preferowanymi ustawieniami szerokości na jasne i łatwe do wykonania etapy.
+Podzielmy proces tworzenia tabeli z różnymi preferowanymi ustawieniami szerokości na jasne i łatwe do opanowania kroki.
 
-## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
+## Krok 1: Zainicjuj dokument i DocumentBuilder
 
-Nagłówek: Tworzenie nowego dokumentu i narzędzie DocumentBuilder
+Nagłówek: Tworzenie nowego dokumentu i DocumentBuilder
 
- Objaśnienie: Zacznij od utworzenia nowego dokumentu programu Word i a`DocumentBuilder` przykład. The`DocumentBuilder` class zapewnia prosty sposób dodawania treści do dokumentu.
+ Wyjaśnienie: Zacznij od utworzenia nowego dokumentu Word i`DocumentBuilder` instancja.`DocumentBuilder` Klasa ta zapewnia prosty sposób dodawania treści do dokumentu.
 
 ```csharp
 // Zdefiniuj ścieżkę do zapisania dokumentu.
@@ -49,18 +49,17 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 // Utwórz nowy dokument.
 Document doc = new Document();
 
-// Utwórz narzędzie DocumentBuilder dla tego dokumentu.
+// Utwórz DocumentBuilder dla tego dokumentu.
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tutaj określasz katalog, w którym dokument zostanie zapisany i inicjujesz plik`Document`I`DocumentBuilder` obiekty.
+ Tutaj określasz katalog, w którym zostanie zapisany dokument i inicjujesz`Document` I`DocumentBuilder` obiekty.
 
 ## Krok 2: Wstaw pierwszą komórkę tabeli o szerokości bezwzględnej
 
-Wstaw pierwszą komórkę do tabeli o stałej szerokości 40 punktów. Dzięki temu komórka ta zawsze zachowa szerokość 40 punktów, niezależnie od rozmiaru tabeli.
+Wstaw pierwszą komórkę do tabeli o stałej szerokości 40 punktów. Dzięki temu komórka ta zawsze będzie miała szerokość 40 punktów, niezależnie od rozmiaru tabeli.
 
 ```csharp
-
 // Wstaw komórkę o rozmiarze bezwzględnym.
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
@@ -68,28 +67,28 @@ builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
 builder.Writeln("Cell at 40 points width");
 ```
 
- tym kroku rozpoczynasz tworzenie tabeli i wstawiasz komórkę o szerokości bezwzględnej. The`PreferredWidth.FromPoints(40)` metoda ustawia szerokość komórki na 40 punktów, oraz`Shading.BackgroundPatternColor` stosuje jasnożółty kolor tła.
+ tym kroku rozpoczynasz tworzenie tabeli i wstawiasz komórkę o szerokości bezwzględnej.`PreferredWidth.FromPoints(40)` metoda ustawia szerokość komórki na 40 punktów i`Shading.BackgroundPatternColor` stosuje jasnożółty kolor tła.
 
 ## Krok 3: Wstaw komórkę o względnym rozmiarze
 
-Wstaw kolejną komórkę o szerokości równej 20% całkowitej szerokości tabeli. Dzięki temu względnemu rozmiarowi komórka dopasowuje się proporcjonalnie do szerokości stołu.
+Wstaw inną komórkę o szerokości 20% całkowitej szerokości tabeli. To względne skalowanie zapewnia, że komórka dopasowuje się proporcjonalnie do szerokości tabeli.
 
 ```csharp
-// Wstaw komórkę o względnym (procentowym) rozmiarze.
+// Wstaw komórkę o rozmiarze względnym (procentowym).
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
 builder.Writeln("Cell at 20% width");
 ```
 
-Szerokość tej komórki będzie wynosić 20% całkowitej szerokości tabeli, dzięki czemu będzie można ją dostosować do różnych rozmiarów ekranów i układów dokumentów.
+Szerokość tej komórki będzie wynosić 20% całkowitej szerokości tabeli, dzięki czemu będzie można ją dostosować do różnych rozmiarów ekranu i układów dokumentu.
 
 ### Krok 4: Wstaw komórkę o automatycznym rozmiarze
 
-Na koniec wstaw komórkę, która automatycznie dopasuje się do pozostałego dostępnego miejsca w tabeli.
+Na koniec wstaw komórkę, która automatycznie dopasuje swój rozmiar do ilości wolnego miejsca w tabeli.
 
 ```csharp
-// Wstaw komórkę o rozmiarze automatycznym.
+// Wstaw komórkę o automatycznym rozmiarze.
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
@@ -97,9 +96,9 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
- The`PreferredWidth.Auto` ustawienie pozwala tej komórce rozszerzać się lub kurczyć w zależności od miejsca pozostałego po uwzględnieniu innych komórek. Dzięki temu układ stołu będzie wyglądał zrównoważony i profesjonalny.
+Ten`PreferredWidth.Auto` ustawienie pozwala tej komórce rozszerzać się lub kurczyć w oparciu o przestrzeń pozostałą po uwzględnieniu innych komórek. Dzięki temu układ tabeli wygląda na zrównoważony i profesjonalny.
 
-## Krok 5: Sfinalizuj i zapisz dokument
+## Krok 5: Zakończ i zapisz dokument
 
 Po wstawieniu wszystkich komórek uzupełnij tabelę i zapisz dokument w określonej ścieżce.
 
@@ -108,25 +107,25 @@ Po wstawieniu wszystkich komórek uzupełnij tabelę i zapisz dokument w określ
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-Ten krok kończy tabelę i zapisuje dokument pod nazwą „WorkingWithTables.PreferredWidthSettings.docx” w wyznaczonym katalogu.
+Ten krok kończy tworzenie tabeli i zapisuje dokument pod nazwą pliku „WorkingWithTables.PreferredWidthSettings.docx” w wyznaczonym katalogu.
 
 ## Wniosek
 
-Tworzenie tabel z preferowanymi ustawieniami szerokości w Aspose.Words dla .NET jest proste, jeśli zrozumiesz różne dostępne opcje rozmiaru. Niezależnie od tego, czy potrzebujesz stałych, względnych czy automatycznych szerokości komórek, Aspose.Words zapewnia elastyczność pozwalającą efektywnie obsługiwać różne scenariusze układu tabeli. Wykonując czynności opisane w tym przewodniku, możesz mieć pewność, że tabele w dokumentach programu Word będą miały dobrą strukturę i będą atrakcyjne wizualnie.
+Tworzenie tabel z preferowanymi ustawieniami szerokości w Aspose.Words dla .NET jest proste, gdy zrozumiesz różne dostępne opcje rozmiarów. Niezależnie od tego, czy potrzebujesz stałych, względnych czy automatycznych szerokości komórek, Aspose.Words zapewnia elastyczność, aby sprawnie obsługiwać różne scenariusze układu tabeli. Postępując zgodnie z krokami opisanymi w tym przewodniku, możesz upewnić się, że Twoje tabele są dobrze ustrukturyzowane i atrakcyjne wizualnie w dokumentach Word.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jaka jest różnica między bezwzględną i względną szerokością komórek?
-Bezwzględne szerokości komórek są stałe i nie ulegają zmianie, natomiast szerokości względne dostosowują się w oparciu o całkowitą szerokość tabeli.
+### Jaka jest różnica pomiędzy bezwzględną i względną szerokością komórki?
+Bezwzględne szerokości komórek są stałe i nie ulegają zmianie, natomiast szerokości względne są dostosowywane na podstawie całkowitej szerokości tabeli.
 
 ### Czy mogę używać ujemnych wartości procentowych dla szerokości względnych?
-Nie, ujemne wartości procentowe nie dotyczą szerokości komórek. Dozwolone są tylko wartości procentowe dodatnie.
+Nie, ujemne procenty nie są ważne dla szerokości komórek. Dozwolone są tylko dodatnie procenty.
 
 ### Jak działa funkcja automatycznego dopasowywania rozmiaru?
-Automatyczne dopasowywanie rozmiaru dostosowuje szerokość komórki tak, aby wypełnić całą pozostałą przestrzeń w tabeli po zmianie rozmiaru innych komórek.
+Funkcja automatycznego dostosowywania rozmiaru dostosowuje szerokość komórki, aby wypełnić całą przestrzeń pozostałą w tabeli po dopasowaniu rozmiaru innych komórek.
 
 ### Czy mogę zastosować różne style do komórek o różnych ustawieniach szerokości?
-Tak, możesz zastosować różne style i formatowanie do komórek niezależnie od ich ustawień szerokości.
+Tak, możesz stosować różne style i formatowanie do komórek bez względu na ustawienia ich szerokości.
 
-### Co się stanie, jeśli całkowita szerokość tabeli będzie mniejsza niż suma szerokości wszystkich komórek?
-Tabela automatycznie dopasuje szerokość komórek do dostępnej przestrzeni, co może spowodować zmniejszenie niektórych komórek.
+### Co się stanie, jeśli całkowita szerokość tabeli będzie mniejsza od sumy szerokości wszystkich komórek?
+Tabela automatycznie dostosuje szerokość komórek do dostępnej przestrzeni, co może spowodować zmniejszenie rozmiaru niektórych komórek.

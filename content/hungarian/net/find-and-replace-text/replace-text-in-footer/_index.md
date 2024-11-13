@@ -64,7 +64,7 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
- Ebben a példában`MatchCase` be van állítva`false` hogy figyelmen kívül hagyja a kisbetűs különbségeket, és`FindWholeWordsOnly` be van állítva`false` hogy lehetővé tegye a szavakon belüli részleges egyezést.
+ Ebben a példában`MatchCase` be van állítva`false` hogy figyelmen kívül hagyja a kisbetűs különbségeket, és`FindWholeWordsOnly` be van állítva`false` hogy lehetővé tegye a szavakon belüli részleges egyezéseket.
 
 ## 4. lépés: Cserélje ki a szöveget a láblécben
 

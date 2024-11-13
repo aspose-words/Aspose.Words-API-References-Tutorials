@@ -7,7 +7,7 @@ type: docs
 weight: 13
 url: /zh/java/word-processing/mastering-advanced-save-settings/
 ---
-您准备好将您的文档处理技能提升到新的水平了吗？在本综合指南中，我们将深入研究如何使用 Aspose.Words for Java 掌握文档的高级保存设置。无论您是经验丰富的开发人员还是刚刚入门，我们都会带您了解使用 Aspose.Words for Java 进行文档操作的复杂性。
+您准备好将您的文档处理技能提升到一个新的水平了吗？在本综合指南中，我们将深入研究如何使用 Aspose.Words for Java 掌握文档的高级保存设置。无论您是经验丰富的开发人员还是刚刚入门，我们都会带您了解使用 Aspose.Words for Java 进行文档操作的复杂性。
 
 ## 介绍
 
@@ -63,7 +63,7 @@ header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"))
 doc.save("header_first_page.docx", SaveFormat.DOCX);
 ```
 
-## 嵌入字体以供跨平台查看
+## 嵌入字体以实现跨平台查看
 
 在不同平台共享文档时，字体兼容性至关重要。了解如何嵌入字体以确保一致的浏览体验。
 
@@ -200,7 +200,7 @@ doc.protect(ProtectionType.READ_ONLY, "my_password");
 
 ### 如何在文档中添加水印？
 
-要添加水印，您可以使用`Shape`类并自定义其在文档中的外观和位置。
+要添加水印，您可以使用`Shape`类并定制其在文档中的外观和位置。
 
 ```java
 Document doc = new Document();

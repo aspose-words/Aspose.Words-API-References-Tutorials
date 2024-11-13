@@ -1,8 +1,8 @@
 ---
 title: Protección de documentos en Aspose.Words para Java
-linktitle: Proteger documentos
+linktitle: Protección de documentos
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda cómo proteger sus documentos Java Word con Aspose.Words para Java. Proteja sus datos con contraseña y más.
+description: Aprenda a proteger sus documentos Word en Java con Aspose.Words para Java. Proteja sus datos con contraseña y más.
 type: docs
 weight: 22
 url: /es/java/document-manipulation/protecting-documents/
@@ -10,11 +10,11 @@ url: /es/java/document-manipulation/protecting-documents/
 
 ## Introducción a la protección de documentos
 
-La protección de documentos es una característica vital cuando se trata de información confidencial. Aspose.Words para Java proporciona capacidades sólidas para proteger sus documentos del acceso no autorizado.
+La protección de documentos es una característica vital cuando se trabaja con información confidencial. Aspose.Words para Java ofrece funciones sólidas para proteger sus documentos del acceso no autorizado.
 
-## Proteger documentos con contraseñas
+## Protección de documentos con contraseñas
 
-Para proteger sus documentos, puede establecer una contraseña. Sólo los usuarios que conozcan la contraseña podrán acceder al documento. Veamos cómo hacerlo en código:
+Para proteger sus documentos, puede establecer una contraseña. Solo los usuarios que conozcan la contraseña podrán acceder al documento. Veamos cómo hacerlo en código:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -23,18 +23,18 @@ doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
 En el código anterior, cargamos un documento de Word y lo protegemos con una contraseña, permitiendo que solo se editen los campos del formulario.
 
-## Quitar la protección de documentos
+## Eliminar la protección de documentos
 
-Si necesita eliminar la protección de un documento, Aspose.Words para Java se lo pone fácil:
+Si necesita eliminar la protección de un documento, Aspose.Words para Java lo hace fácil:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
- El`unprotect` El método elimina cualquier protección aplicada al documento, haciéndolo accesible sin contraseña.
+El`unprotect` El método elimina cualquier protección aplicada al documento, haciéndolo accesible sin contraseña.
 
-## Comprobación del tipo de protección de documentos
+## Comprobación del tipo de protección del documento
 
 Es posible que desee determinar el tipo de protección aplicado a un documento mediante programación:
 
@@ -43,12 +43,12 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
- El`getProtectionType` El método devuelve un número entero que representa el tipo de protección aplicado al documento.
+El`getProtectionType` El método devuelve un entero que representa el tipo de protección aplicado al documento.
 
 
 ## Conclusión
 
-En este artículo, exploramos cómo proteger documentos de Word usando Aspose.Words para Java. Aprendimos cómo configurar una contraseña para restringir el acceso, eliminar la protección y verificar el tipo de protección. La seguridad de los documentos es esencial y con Aspose.Words para Java, puede garantizar la confidencialidad de su información.
+En este artículo, exploramos cómo proteger documentos de Word con Aspose.Words para Java. Aprendimos a establecer una contraseña para restringir el acceso, eliminar la protección y verificar el tipo de protección. La seguridad de los documentos es esencial y, con Aspose.Words para Java, puede garantizar la confidencialidad de su información.
 
 ## Preguntas frecuentes
 

@@ -62,7 +62,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 कस्टम XML भाग जोड़ने के बाद, हम XML डेटा प्रदर्शित करने के लिए एक SDT बनाते हैं।
 
 ```csharp
-// संरचित दस्तावेज़ टैग (SDT) बनाएँ
+//संरचित दस्तावेज़ टैग (SDT) बनाएँ
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
 doc.FirstSection.Body.AppendChild(sdt);
 ```

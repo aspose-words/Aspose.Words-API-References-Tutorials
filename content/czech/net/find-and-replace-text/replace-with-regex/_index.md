@@ -93,7 +93,7 @@ tady to máte! Úspěšně jste použili regulární výraz k vyhledání a nahr
 Absolutně! Aspose.Words podporuje širokou škálu vzorů regulárních výrazů. Vzory si můžete přizpůsobit tak, aby přesně odpovídaly tomu, co potřebujete.
 
 ### Podporuje Aspose.Words pro .NET další textové operace?  
-Ano, má. Aspose.Words for .NET nabízí bohatou sadu funkcí pro manipulaci s dokumenty aplikace Word, včetně extrakce textu, formátování a dalších.
+Ano, je. Aspose.Words for .NET nabízí bohatou sadu funkcí pro manipulaci s dokumenty aplikace Word, včetně extrakce textu, formátování a dalších.
 
 ### Mohu nahradit text v určitých částech dokumentu?  
 Ano, můžete. K cílení na konkrétní oddíly, odstavce nebo dokonce záhlaví a zápatí v dokumentu můžete použít různé metody.

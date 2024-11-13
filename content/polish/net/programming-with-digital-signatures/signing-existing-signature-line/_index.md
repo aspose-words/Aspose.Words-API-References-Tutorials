@@ -1,28 +1,28 @@
 ---
-title: Podpisywanie istniejącej linii podpisu w dokumencie programu Word
-linktitle: Podpisywanie istniejącej linii podpisu w dokumencie programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak podpisać istniejącą linię podpisu w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. Idealny dla programistów.
+title: Podpisywanie istniejącej linii podpisu w dokumencie Word
+linktitle: Podpisywanie istniejącej linii podpisu w dokumencie Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak podpisać istniejącą linię podpisu w dokumencie Word za pomocą Aspose.Words dla .NET dzięki naszemu szczegółowemu przewodnikowi krok po kroku. Idealne dla programistów.
 type: docs
 weight: 10
 url: /pl/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
 ## Wstęp
 
-Hej tam! Czy kiedykolwiek musiałeś podpisać dokument cyfrowy, ale było to trochę kłopotliwe? Masz szczęście, ponieważ dzisiaj zagłębimy się w sposób, w jaki możesz bez wysiłku podpisać istniejącą linię podpisu w dokumencie programu Word za pomocą Aspose.Words dla .NET. Ten samouczek przeprowadzi Cię przez proces krok po kroku, dzięki czemu poradzisz sobie z tym zadaniem w mgnieniu oka.
+Cześć! Czy kiedykolwiek musiałeś podpisać dokument cyfrowy, ale było to dla Ciebie trochę uciążliwe? Masz szczęście, ponieważ dzisiaj zagłębimy się w to, jak możesz bez wysiłku podpisać istniejącą linię podpisu w dokumencie Word, używając Aspose.Words dla .NET. Ten samouczek przeprowadzi Cię przez proces krok po kroku, zapewniając, że opanujesz to zadanie w mgnieniu oka.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w najdrobniejsze szczegóły, upewnijmy się, że mamy wszystko, czego potrzebujemy:
+Zanim zagłębimy się w szczegóły, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE zgodne z C#.
-3. Dokument i certyfikat: Dokument programu Word z linią podpisu i certyfikatem cyfrowym (plik PFX).
-4. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie korzystna.
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli jeszcze jej nie masz, możesz ją pobrać[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Visual Studio lub inne środowisko IDE zgodne z językiem C#.
+3. Dokument i certyfikat: Dokument Word z linią podpisu i certyfikatem cyfrowym (plik PFX).
+4. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie dodatkowym atutem.
 
 ## Importuj przestrzenie nazw
 
-Zanim będziesz mógł korzystać z klas i metod z Aspose.Words, musisz zaimportować niezbędne przestrzenie nazw. Oto fragment wymaganego importu:
+Zanim będziesz mógł używać klas i metod z Aspose.Words, musisz zaimportować niezbędne przestrzenie nazw. Oto fragment wymaganych importów:
 
 ```csharp
 using System;
@@ -34,24 +34,24 @@ using Aspose.Words.DigitalSignatures;
 
 ## Krok 1: Załaduj swój dokument
 
-Po pierwsze, musisz załadować dokument Word zawierający linię podpisu. Ten krok jest kluczowy, ponieważ stanowi podstawę całego procesu.
+Po pierwsze, musisz załadować dokument Word, który zawiera wiersz podpisu. Ten krok jest kluczowy, ponieważ stanowi podstawę całego procesu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
 ```
 
-## Krok 2: Uzyskaj dostęp do linii podpisu
+## Krok 2: Uzyskaj dostęp do linii Signature Line
 
-Teraz, gdy mamy załadowany dokument, następnym krokiem jest zlokalizowanie i uzyskanie dostępu do linii podpisu w dokumencie.
+Teraz, gdy wczytaliśmy już nasz dokument, kolejnym krokiem jest znalezienie i uzyskanie dostępu do wiersza podpisu w dokumencie.
 
 ```csharp
 SignatureLine signatureLine = ((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## Krok 3: Skonfiguruj opcje podpisywania
+## Krok 3: Ustaw opcje znaku
 
-Konfiguracja opcji znaku jest niezbędna. Obejmuje to określenie identyfikatora linii podpisu i podanie obrazu, który będzie używany jako podpis.
+Ustawienie opcji podpisu jest niezbędne. Obejmuje to określenie identyfikatora wiersza podpisu i podanie obrazu, który będzie używany jako podpis.
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -63,7 +63,7 @@ SignOptions signOptions = new SignOptions
 
 ## Krok 4: Utwórz posiadacza certyfikatu
 
-Aby podpisać dokument cyfrowo, potrzebny jest certyfikat cyfrowy. Oto jak utworzyć posiadacza certyfikatu na podstawie pliku PFX.
+Aby podpisać dokument cyfrowo, potrzebujesz certyfikatu cyfrowego. Oto jak utworzyć posiadacza certyfikatu z pliku PFX.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "your_password");
@@ -71,7 +71,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## Krok 5: Podpisz dokument
 
-Teraz łączymy wszystkie elementy, aby podpisać dokument. To tutaj dzieje się magia!
+Teraz łączymy wszystkie komponenty, aby podpisać dokument. To tutaj dzieje się magia!
 
 ```csharp
 DigitalSignatureUtil.Sign(
@@ -84,25 +84,25 @@ DigitalSignatureUtil.Sign(
 
 ## Wniosek
 
-I masz to! Pomyślnie podpisałeś istniejącą linię podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Niezbyt trudne, prawda? Dzięki tym krokom możesz teraz cyfrowo podpisywać dokumenty, dodając dodatkową warstwę autentyczności i profesjonalizmu. Dzięki temu następnym razem, gdy ktoś wyśle Ci dokument do podpisu, będziesz dokładnie wiedział, co robić!
+I masz! Udało Ci się podpisać istniejącą linię podpisu w dokumencie Word przy użyciu Aspose.Words dla .NET. Nie jest to trudne, prawda? Dzięki tym krokom możesz teraz cyfrowo podpisywać dokumenty, dodając dodatkową warstwę autentyczności i profesjonalizmu. Więc następnym razem, gdy ktoś wyśle Ci dokument do podpisania, będziesz dokładnie wiedział, co zrobić!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
+### Czym jest Aspose.Words dla .NET?
 
-Aspose.Words dla .NET to potężna biblioteka do pracy z dokumentami Word w aplikacjach .NET. Umożliwia programowe tworzenie, modyfikowanie i konwertowanie dokumentów programu Word.
+Aspose.Words for .NET to potężna biblioteka do pracy z dokumentami Word w aplikacjach .NET. Umożliwia programowe tworzenie, modyfikowanie i konwertowanie dokumentów Word.
 
-### Gdzie mogę uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
+### Gdzie mogę otrzymać bezpłatną wersję próbną Aspose.Words dla .NET?
 
  Możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
 ### Czy mogę użyć dowolnego formatu obrazu w podpisie?
 
-Aspose.Words obsługuje różne formaty obrazów, ale użycie ulepszonego metapliku (EMF) zapewnia lepszą jakość podpisów.
+Aspose.Words obsługuje różne formaty obrazów, ale korzystanie z rozszerzonego metapliku (EMF) zapewnia lepszą jakość podpisów.
 
 ### Jak mogę uzyskać certyfikat cyfrowy?
 
-Certyfikaty cyfrowe można kupić od różnych dostawców online. Upewnij się, że certyfikat jest w formacie PFX i masz hasło.
+Możesz kupić certyfikaty cyfrowe od różnych dostawców online. Upewnij się, że certyfikat jest w formacie PFX i masz hasło.
 
 ### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
 

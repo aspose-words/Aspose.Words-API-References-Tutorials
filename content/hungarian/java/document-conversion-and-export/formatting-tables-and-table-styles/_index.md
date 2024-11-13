@@ -1,287 +1,188 @@
 ---
-title: Táblázatok és táblázatstílusok formázása az Aspose.Words for Java programban
+title: Táblázatok és táblázatstílusok formázása
 linktitle: Táblázatok és táblázatstílusok formázása
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan formázhat táblázatokat és hogyan alkalmazhat táblázatstílusokat az Aspose.Words for Java programban. Fedezze fel a forráskóddal ellátott, lépésenkénti útmutatókat a hatékony táblázatformázás érdekében. Javítsa dokumentum-elrendezését az Aspose.Words segítségével.
+description: Ismerje meg, hogyan formázhat táblázatokat és alkalmazhat stílusokat az Aspose.Words for Java használatával. Ez a lépésenkénti útmutató a szegélyek beállítását, a cellák árnyékolását és a táblázatstílusok alkalmazását ismerteti.
 type: docs
 weight: 17
 url: /hu/java/document-conversion-and-export/formatting-tables-and-table-styles/
 ---
 
-## Bevezetés a táblák és táblázatstílusok formázásához az Aspose.Words for Java programban
+## Bevezetés
 
-A táblázatok döntő szerepet játszanak a dokumentumokban található információk strukturálásában és rendszerezésében. Az Aspose.Words for Java hatékony szolgáltatásokat nyújt a táblázatok formázásához és táblázatstílusok alkalmazásához, hogy javítsa a dokumentumok vizuális vonzerejét. Ebben a lépésenkénti útmutatóban a táblázatok formázásának és a táblázatstílusok Aspose.Words for Java használatával történő alkalmazásának különböző szempontjait vizsgáljuk meg.
+A dokumentumok formázásakor a táblázatok döntő szerepet játszanak az adatok rendezésében és egyértelmű megjelenítésében. Ha Java-val és Aspose.Words-szel dolgozik, akkor hatékony eszközök állnak rendelkezésére a táblázatok létrehozásához és formázásához a dokumentumokban. Akár egyszerű táblázatot tervez, akár fejlett stílusokat alkalmaz, az Aspose.Words for Java számos olyan funkciót kínál, amelyek segítségével professzionális megjelenésű eredményeket érhet el.
+
+Ebben az útmutatóban végigvezetjük a táblázatok formázásán és a táblázatstílusok alkalmazásán az Aspose.Words for Java használatával. Megtanulja, hogyan állíthat be táblázatszegélyeket, hogyan alkalmazhat cellaárnyékolást, és hogyan használhat táblázatstílusokat a dokumentumok megjelenésének javítására. A végére rendelkezni fog azzal a képességgel, hogy jól formázott táblázatokat készítsen, amelyek kiemelik adatait.
 
 ## Előfeltételek
 
-Mielőtt belemerülnénk a részletekbe, győződjön meg arról, hogy az Aspose.Words for Java könyvtár integrálva van a projektjébe. Letöltheti az Aspose webhelyéről:[Töltse le az Aspose.Words for Java programot](https://releases.aspose.com/words/java/).
+Mielőtt elkezdenénk, néhány dolgot meg kell tennie:
 
-## Mérje meg a távolságot a táblázat és a környező szöveg között
+1. Java Development Kit (JDK): Győződjön meg arról, hogy a JDK 8 vagy újabb verziója van telepítve. Az Aspose.Words for Java megfelelő futtatásához kompatibilis JDK szükséges.
+2. Integrált fejlesztői környezet (IDE): Az olyan IDE-k, mint az IntelliJ IDEA vagy az Eclipse, segítenek a Java-projektek kezelésében és a fejlesztési folyamat egyszerűsítésében.
+3.  Aspose.Words for Java Library: Töltse le az Aspose.Words for Java legújabb verzióját[itt](https://releases.aspose.com/words/java/) és vegye fel a projektjébe.
+4. Mintakód: Néhány minta kódrészletet fogunk használni, ezért győződjön meg arról, hogy rendelkezik alapvető ismeretekkel a Java programozásról és a könyvtárak projektbe való integrálásáról.
 
-Kezdésként nézzük meg, hogyan lehet lekérni a táblázat és a környező szöveg közötti távolságot a dokumentumban.
+## Csomagok importálása
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-System.out.println("Distance Top: " + table.getDistanceTop());
-System.out.println("Distance Bottom: " + table.getDistanceBottom());
-System.out.println("Distance Right: " + table.getDistanceRight());
-System.out.println("Distance Left: " + table.getDistanceLeft());
-```
-
-## Alkalmazza a körvonalszegélyt egy táblázatra
-
-Ezzel a kóddal egy táblázatot igazíthat az oldal közepéhez, törölheti a meglévő szegélyeket, és egyéni körvonalkeretet állíthat be:
+Az Aspose.Words for Java program használatához importálnia kell a megfelelő csomagokat a projektbe. Ezek a csomagok biztosítják a dokumentumok kezeléséhez és formázásához szükséges osztályokat és módszereket.
 
 ```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAlignment(TableAlignment.CENTER);
-table.clearBorders();
-table.setBorder(BorderType.LEFT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.RIGHT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.TOP, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
+import com.aspose.words.*;
 ```
 
-## Készítsen táblázatot szegélyekkel
+Ez az importálási utasítás hozzáférést biztosít a dokumentumokban lévő táblázatok létrehozásához és formázásához szükséges összes alapvető osztályhoz.
 
-Ez a kódrészlet bemutatja, hogyan hozhat létre táblázatot, és hogyan állíthat be szegélyeket a táblázathoz és celláihoz:
+## 1. lépés: Táblázatok formázása
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.clearBorders();
-table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
-```
+Az Aspose.Words for Java tábláinak formázása magában foglalja a szegélyek beállítását, a cellák árnyékolását és a különféle formázási beállítások alkalmazását. A következőképpen teheti meg:
 
-## Sorformázás módosítása
-
-Ismerje meg, hogyan módosíthatja egy adott sor formázását egy táblázaton belül:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Row firstRow = table.getFirstRow();
-firstRow.getRowFormat().getBorders().setLineStyle(LineStyle.NONE);
-firstRow.getRowFormat().setHeightRule(HeightRule.AUTO);
-firstRow.getRowFormat().setAllowBreakAcrossPages(true);
-```
-
-## Sorformázás alkalmazása
-
-Ez a példa bemutatja, hogyan alkalmazhat formázást egy táblázat teljes sorára:
+### Töltse be a dokumentumot
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+### Hozzon létre és formázza meg a táblázatot
+
+```java
 Table table = builder.startTable();
 builder.insertCell();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
 
-## Állítsa be a Cell Padding
-
-Fedezze fel, hogyan állíthat be kitöltést a táblázat egyes celláihoz:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
-builder.insertCell();
-builder.getCellFormat().setPaddings(30.0, 50.0, 30.0, 50.0);
-builder.writeln("I'm a wonderfully formatted cell.");
-```
-
-## Cellaformázás módosítása
-
-Fedezze fel, hogyan módosíthatja egy adott cella formázását egy táblázaton belül:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-firstCell.getCellFormat().setWidth(30.0);
-firstCell.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
-firstCell.getCellFormat().getShading().setForegroundPatternColor(Color.GREEN);
-```
-
-## Formázza a táblázatot és a cellát különböző szegéllyel
-
-Ismerje meg, hogyan állíthat be különböző szegélyeket a táblázat egyes celláihoz:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-// Állítsa be a táblázat határait
+// Állítsa be a szegélyeket az egész táblázathoz.
 table.setBorders(LineStyle.SINGLE, 2.0, Color.BLACK);
-// Cellaárnyékolás beállítása az egyes cellákhoz
+        
+// Állítsa be a cella árnyékolását ehhez a cellához.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.RED);
-// Adjon hozzá tartalmat a cellákhoz
 builder.writeln("Cell #1");
+
 builder.insertCell();
+        
+// Adjon meg más cellaárnyékolást a második cellához.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.GREEN);
 builder.writeln("Cell #2");
-// Törölje a következő sor cellaformázását
+
+builder.endRow();
+```
+
+### A cellaszegélyek testreszabása
+
+```java
+// Törölje a cellaformázást a korábbi műveletekből.
 builder.getCellFormat().clearFormatting();
-// Hozzon létre nagyobb kereteket a sor első cellájához
+
+builder.insertCell();
+
+//Hozzon létre nagyobb kereteket a sor első cellájához.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getBottom().setLineWidth(4.0);
 builder.writeln("Cell #3");
+
 builder.insertCell();
 builder.getCellFormat().clearFormatting();
 builder.writeln("Cell #4");
+        
+doc.save("FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-## Állítsa be a táblázat címét és leírását
+### Magyarázat
 
-Adjon hozzá címet és leírást a táblázathoz:
+Ebben a példában:
+- Szegélyek beállítása: A teljes táblázat szegélyeit egyetlen vonalstílusra állítottuk, 2,0 pont vastagsággal.
+- Cellaárnyékolás: Az első cella piros, a második cella zöld árnyalatú. Ez segít vizuálisan megkülönböztetni a sejteket.
+- Cellaszegélyek: A harmadik cellához vastagabb szegélyeket hozunk létre, hogy a többitől eltérően kiemeljük.
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setTitle("Test title");
-table.setDescription("Test description");
-```
+## 2. lépés: Táblázatstílusok alkalmazása
 
-## 10. lépés: Cellaköz engedélyezése
+Az Aspose.Words for Java táblázatstílusai lehetővé teszik, hogy előre meghatározott formázási beállításokat alkalmazzon a táblákra, megkönnyítve ezzel a konzisztens megjelenés elérését. A következőképpen alkalmazhat stílust az asztalra:
 
-Cellatávolság engedélyezése és értékének beállítása egy táblázathoz:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAllowCellSpacing(true);
-table.setCellSpacing(2.0);
-```
-
-## 11. lépés: Készítsen asztalt stílussal
-
-Hozzon létre egy táblázatot előre meghatározott stílussal:
+### Készítse el a dokumentumot és a táblázatot
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
 Table table = builder.startTable();
+        
+// A táblázat formázása előtt legalább egy sort be kell szúrnunk.
+builder.insertCell();
+```
+
+### Táblázatstílus alkalmazása
+
+```java
+// Állítsa be a táblázat stílusát egyedi stílusazonosító alapján.
 table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
+        
+// Alkalmazza, hogy mely jellemzőket kell a stílus szerint formázni.
 table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
+table.autoFit(AutoFitBehavior.AUTO_FIT_TO_CONTENTS);
+```
+
+### Táblázatadatok hozzáadása
+
+```java
 builder.writeln("Item");
 builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
 builder.writeln("Quantity (kg)");
-```
+builder.endRow();
 
-## 12. lépés: Bontsa ki a Formázást cellákon és sorokon a Stílusból
-
-Ismerje meg, hogyan bővítheti ki a táblázatstílusokat a cellák és sorok formázásának alkalmazásához:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-Color cellShadingBefore = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-doc.expandTableStylesToDirectFormatting();
-Color cellShadingAfter = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-```
-
-## 13. lépés: Hozzon létre egy táblázatstílust
-
-Hozzon létre egyéni táblázatstílust meghatározott formázással:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
-table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
-builder.writeln("Item");
-builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
-builder.writeln("Quantity (kg)");
-```
-
-## 14. lépés: Határozza meg a feltételes formázást
-
-Feltételes formázás alkalmazása a táblázat soraiban:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-TableStyle tableStyle = (TableStyle) doc.getStyles().add(StyleType.TABLE, "MyTableStyle1");
-tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatternColor(Color.yellow);
-table.setStyle(tableStyle);
-```
-
-## 15. lépés: Állítsa be a TableCell formázást
-
-Állítson be egyedi formázást az egyes cellákhoz:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
+builder.writeln("Apples");
 builder.insertCell();
-CellFormat cellFormat = builder.getCellFormat();
-cellFormat.setWidth(250.0);
-cellFormat.setLeftPadding(30.0);
-cellFormat.setRightPadding(30.0);
-cellFormat.setTopPadding(30.0);
-cellFormat.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted cell.");
+builder.writeln("20");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Bananas");
+builder.insertCell();
+builder.writeln("40");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Carrots");
+builder.insertCell();
+builder.writeln("50");
+builder.endRow();
+
+doc.save("BuildTableWithStyle.docx");
 ```
 
-## 16. lépés: Állítsa be a TableRow formázást
+### Magyarázat
 
-Formázás alkalmazása a táblázat teljes soraira:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
+Ebben a példában:
+- Táblázatstílus beállítása: Egy előre meghatározott stílust alkalmazunk (`MEDIUM_SHADING_1_ACCENT_1`) az asztalra. Ez a stílus magában foglalja a táblázat különböző részeinek formázását.
+- Stílusbeállítások: Meghatározzuk, hogy az első oszlopot, a sorsávokat és az első sort a stílusbeállításoknak megfelelően kell formázni.
+-  AutoFit: Használjuk`AUTO_FIT_TO_CONTENTS` hogy a táblázat méretét a tartalom alapján állítsa be.
 
 ## Következtetés
 
-Az Aspose.Words for Java lehetővé teszi a táblázatok formázását és a táblázatstílusok precíz alkalmazását. Az egyedi cellaformázás módosításától az egyéni táblázatstílusok létrehozásáig rendelkezésre állnak az eszközök, amelyekkel a dokumentumokat vizuálisan vonzóvá és rendszerezetté teheti.
+És megvan! Sikeresen formázta a táblázatokat és alkalmazta a stílusokat az Aspose.Words for Java segítségével. Ezekkel a technikákkal olyan asztalokat készíthet, amelyek nem csak funkcionálisak, hanem látványosak is. A táblázatok hatékony formázásával nagyban javíthatja a dokumentumok olvashatóságát és professzionális megjelenését.
+
+Az Aspose.Words for Java egy robusztus eszköz, amely kiterjedt szolgáltatásokat kínál a dokumentumkezeléshez. A táblázat formázásának és stílusainak elsajátításával egy lépéssel közelebb kerülhet a könyvtár teljes erejének kiaknázásához.
 
 ## GYIK
 
-### Hogyan tölthetem le az Aspose.Words for Java programot?
+### 1. Használhatok olyan egyéni táblázatstílusokat, amelyek nem szerepelnek az alapértelmezett beállításokban?
 
- Az Aspose.Words for Java letölthető az Aspose webhelyéről:[Töltse le az Aspose.Words for Java programot](https://releases.aspose.com/words/java/).
+Igen, az Aspose.Words for Java segítségével egyéni stílusokat határozhat meg és alkalmazhat a táblákra. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/java/) további részletekért az egyéni stílusok létrehozásáról.
 
-### Alkalmazhatok különböző szegélyeket egy táblázat egyes celláira?
+### 2. Hogyan alkalmazhatom a feltételes formázást a táblázatokban?
 
-Igen, az Aspose.Words for Java használatával különböző szegélyeket állíthat be egy táblázaton belüli egyes cellákhoz, amint az ebben az útmutatóban látható.
+Az Aspose.Words for Java lehetővé teszi a táblázat formázásának programozott beállítását a feltételek alapján. Ezt úgy teheti meg, hogy ellenőriz bizonyos feltételeket a kódban, és ennek megfelelően alkalmazza a formázást.
 
-### Mi a célja a táblázat címének és leírásának?
+### 3. Formázhatom az egyesített cellákat egy táblázatban?
 
-A táblázat címének és leírásának beállítása javítja a dokumentum hozzáférhetőségét és rendszerezését, így az olvasók és a kisegítő technológiák könnyebben megérthetik a tartalmat.
+Igen, az egyesített cellákat ugyanúgy formázhatja, mint a normál cellákat. Győződjön meg róla, hogy a cellák egyesítése után formázást alkalmaz, hogy a változások tükröződjenek.
 
-### Hogyan alkalmazhatom a feltételes formázást a táblázat adott soraira?
+### 4. Lehetséges-e dinamikusan beállítani a táblázat elrendezését?
 
-Feltételes formázást alkalmazhat a táblázat adott soraira úgy, hogy egyéni táblázatstílusokat definiál feltételes formázási szabályokkal, amint az ebben az útmutatóban látható.
+Igen, dinamikusan módosíthatja a táblázat elrendezését a cellák méretének, a táblázat szélességének és egyéb tulajdonságainak módosításával a tartalom vagy a felhasználói bevitel alapján.
 
-### Hol találok további dokumentációt és forrásokat az Aspose.Words for Java-hoz?
+### 5. Hol kaphatok további információkat a táblázat formázásával kapcsolatban?
 
- Átfogó dokumentációért és további forrásokért keresse fel az Aspose.Words for Java dokumentációját:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).
+ Részletesebb példákért és lehetőségekért keresse fel a[Aspose.Words API dokumentáció](https://reference.aspose.com/words/java/).

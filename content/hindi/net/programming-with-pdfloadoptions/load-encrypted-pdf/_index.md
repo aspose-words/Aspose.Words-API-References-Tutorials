@@ -55,7 +55,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf");
 
 ## चरण 3: एन्क्रिप्शन के साथ पीडीएफ सेव विकल्प सेट करना
 
- अब, आइए अपने PDF में कुछ सुरक्षा जोड़ें। हम सेटअप करेंगे`PdfSaveOptions` एन्क्रिप्शन विवरण शामिल करने के लिए.
+ अब, आइए अपने PDF में कुछ सुरक्षा जोड़ें। हम इसे सेट अप करेंगे`PdfSaveOptions` एन्क्रिप्शन विवरण शामिल करने के लिए.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -91,7 +91,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 और अब यह हो गया! .NET के लिए Aspose.Words के साथ एन्क्रिप्टेड PDF लोड करना आसान नहीं है - यह बिल्कुल मज़ेदार है। इन चरणों का पालन करके, आपने एक प्रो की तरह PDF एन्क्रिप्शन को संभालने की क्षमता अनलॉक कर ली है। याद रखें, किसी भी टूल में महारत हासिल करने की कुंजी अभ्यास है, इसलिए प्रयोग करने और अन्वेषण करने में संकोच न करें।
 
- यदि आपके कोई प्रश्न हों या आपको और सहायता की आवश्यकता हो, तो[Aspose.Words दस्तावेज़ीकरण](https://reference.aspose.com/words/net/)और[सहयता मंच](https://forum.aspose.com/c/words/8) शुरुआत करने के लिए बहुत बढ़िया स्थान हैं।
+ यदि आपके कोई प्रश्न हों या आपको और सहायता की आवश्यकता हो, तो[Aspose.Words दस्तावेज़ीकरण](https://reference.aspose.com/words/net/) और[सहयता मंच](https://forum.aspose.com/c/words/8) शुरुआत करने के लिए बहुत बढ़िया स्थान हैं।
 
 ## अक्सर पूछे जाने वाले प्रश्न
 

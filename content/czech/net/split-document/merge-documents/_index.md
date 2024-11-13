@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- V tomto kroku se spojíme`Document1.docx`a`Document2.docx` do nového souboru s názvem`MergedDocument.docx`.
+ V tomto kroku se spojíme`Document1.docx` a`Document2.docx` do nového souboru s názvem`MergedDocument.docx`.
 
 ## Krok 3: Sloučení s možnostmi uložení
 
@@ -74,7 +74,7 @@ Pokud potřebujete sloučit dokumenty a uložit výsledek jako PDF, Aspose.Words
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Tady se spojíme`Document1.docx`a`Document2.docx` a výsledek uložte jako soubor PDF.
+ Tady se spojíme`Document1.docx` a`Document2.docx` a výsledek uložte jako soubor PDF.
 
 ## Krok 5: Vytvoření instance dokumentu ze sloučených dokumentů
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### Jak zvládnu různé formátování během slučování?
 
- Aspose.Words poskytuje různé režimy formátu sloučení, jako je`KeepSourceFormatting`a`MergeFormatting` Viz[API dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
+ Aspose.Words poskytuje různé režimy formátu sloučení, jako je`KeepSourceFormatting` a`MergeFormatting` Viz[API dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
 
 ### Jak získám podporu pro Aspose.Words for .NET?
 

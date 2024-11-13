@@ -66,50 +66,9 @@ builder.ParagraphFormat.StyleName = "Heading 3";
 builder.Writeln("Details");
 ```
 
-## 添加更多自訂
-
-### 自訂字體和段落
-
-您可以進一步自訂字體和段落設定以滿足您的需求。例如，變更字體大小、顏色和對齊方式。
-
-```csharp
-builder.Font.Size = 14;
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.Writeln("Centered Blue Heading");
-```
-
-### 插入目錄
-
-結構良好的文件通常包括目錄。以下是如何使用 Aspose.Words for .NET 插入一個。
-
-```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-doc.UpdateFields();
-```
-
-### 新增影像
-
-圖像可以使您的文件更具吸引力。讓我們為文件添加圖像。
-
-```csharp
-builder.InsertImage("YOUR DOCUMENT DIRECTORY/image.png");
-```
-
-### 使用文件部分
-
-節有助於組織內容，特別是當您需要為文件的不同部分設定不同的格式時。
-
-```csharp
-Section section = doc.Sections.Add();
-DocumentBuilder sectionBuilder = new DocumentBuilder(section);
-sectionBuilder.ParagraphFormat.StyleName = "Heading 1";
-sectionBuilder.Writeln("New Section Heading");
-```
-
 ## 結論
 
-創建格式良好的文件不僅關乎美觀；還關乎美觀。它還增強了可讀性和專業性。透過 Aspose.Words for .NET，您可以使用一個強大的工具輕鬆實現這一目標。按照本指南，嘗試不同的設置，很快您就會成為文件格式的專家！
+創建格式良好的文件不僅關乎美觀；還關乎美觀。它還增強了可讀性和專業性。透過 Aspose.Words for .NET，您可以使用強大的工具輕鬆實現這一目標。按照本指南，嘗試不同的設置，很快您就會成為文件格式的專家！
 
 ## 常見問題解答
 

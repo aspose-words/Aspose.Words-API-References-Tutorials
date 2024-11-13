@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Emphases markdown warning.docx");
 
 ## 步骤 3：设置警告收集
 
-想象一下，读一本书时，用便签标记出重要点。`WarningInfoCollection`正是针对我们的文档处理进行的。
+想象一下，读一本书时，用便签标记出重要点。`WarningInfoCollection`对我们的文档处理来说就是这样的。
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
@@ -78,7 +78,7 @@ foreach (WarningInfo warningInfo in warnings)
 
 ## 步骤5：保存文档
 
-最后，让我们将文档保存为 Markdown 格式。这就像在完成所有必要的编辑后打印最终草稿一样。
+最后，让我们将文档保存为 Markdown 格式。这就像在进行所有必要的编辑后打印最终草稿一样。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");

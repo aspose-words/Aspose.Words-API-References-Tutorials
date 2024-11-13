@@ -233,4 +233,4 @@ Igen, az Aspose.Words for Java konfigurálható úgy, hogy megfeleljen a külön
 Teljesen! Az Aspose.Words for Java támogatja a fejlett dokumentumformázást, beleértve a táblázatokat, képeket és egyebeket. Nézze meg a dokumentációt példákért.
 
 ### Hol szerezhetek ideiglenes licencet az Aspose.Words for Java számára?
- Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).

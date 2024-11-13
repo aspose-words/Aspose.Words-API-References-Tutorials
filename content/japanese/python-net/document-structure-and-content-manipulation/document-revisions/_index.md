@@ -81,7 +81,7 @@ paragraph.insert_before(comment, paragraph.runs[0])
 
 ## リビジョンの外観のカスタマイズ
 
-挿入されたテキストや削除されたテキストの色を変更するなど、ドキュメント内での変更の表示方法をカスタマイズできます。
+挿入されたテキストや削除されたテキストの色を変更するなど、ドキュメント内での変更履歴の表示方法をカスタマイズできます。
 
 ```python
 doc.revision_options.inserted_color = asposewords.Color.RED

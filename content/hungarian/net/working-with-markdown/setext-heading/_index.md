@@ -64,7 +64,7 @@ builder.Writeln("This is an H1 tag");
 Miután hozzáadtuk a címsort, vissza kell állítani a stílusokat, hogy ne kerüljenek át a következő bekezdésbe.
 
 ```csharp
-// Állítsa vissza a stílusokat az előző bekezdésből, hogy ne keverje össze a stílusokat a bekezdések között.
+//Állítsa vissza a stílusokat az előző bekezdésből, hogy ne keverje össze a stílusokat a bekezdések között.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
@@ -94,7 +94,7 @@ builder.Writeln("This is an H3 tag");
 Csakúgy, mint korábban, vissza kell állítani a stílusokat, hogy elkerüljük a nem kívánt formázást.
 
 ```csharp
-// Állítsa vissza a stílusokat az előző bekezdésből, hogy ne keverje össze a stílusokat a bekezdések között.
+//Állítsa vissza a stílusokat az előző bekezdésből, hogy ne keverje össze a stílusokat a bekezdések között.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```

@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 是的，Aspose.Words for .NET 提供了广泛的自定义选项来保存文档。请参阅[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### 我需要许可证才能使用 Aspose.Words for .NET 吗？
-是的，您需要许可证才能使用 Aspose.Words for .NET。您可以获得免费试用[这里](https://releases.aspose.com/)或购买许可证[这里](https://purchase.aspose.com/buy).
+是的，您需要许可证才能使用 Aspose.Words for .NET。您可以获得免费试用版[这里](https://releases.aspose.com/)或购买许可证[这里](https://purchase.aspose.com/buy).
 
 ### 我可以对多个文档自动执行这一过程吗？
 当然！您可以创建一个脚本来自动执行多个文档的处理，利用 Aspose.Words for .NET 的强大功能高效地处理批处理操作。

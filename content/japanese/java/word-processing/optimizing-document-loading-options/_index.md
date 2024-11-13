@@ -36,7 +36,7 @@ import com.aspose.words.LoadOptions;
 //HTMLファイルへのパスを指定します
 String htmlFilePath = "path/to/your/document.html";
 
-//HTMLのLoadOptionsオブジェクトを作成する
+//HTML用のLoadOptionsオブジェクトを作成する
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setLoadFormat(LoadFormat.HTML);
 

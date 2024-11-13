@@ -1,26 +1,26 @@
 ---
-title: Revizyon Ekleme İçindeki Metni Yoksay
-linktitle: Revizyon Ekleme İçindeki Metni Yoksay
+title: Ekleme Revizyonlarındaki Metni Yoksay
+linktitle: Ekleme Revizyonlarındaki Metni Yoksay
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile belge revizyonlarını etkili bir şekilde nasıl yöneteceğinizi öğrenin. Kolaylaştırılmış düzenleme için düzeltme eklemelerin içindeki metni yok sayma tekniklerini keşfedin.
+description: Aspose.Words for .NET ile belge revizyonlarını etkili bir şekilde nasıl yöneteceğinizi öğrenin. Düzenlemeyi kolaylaştırmak için ekleme revizyonlarındaki metni yok sayma tekniklerini keşfedin.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 ## giriiş
 
-Bu kapsamlı kılavuzda, belge revizyonlarını etkili bir şekilde yönetmek için Aspose.Words for .NET'in kullanımını ayrıntılı olarak inceleyeceğiz. İster bir geliştirici ister teknoloji meraklısı olun, düzeltme eklemelerin içindeki metni nasıl göz ardı edeceğinizi anlamak, belge işleme iş akışlarınızı kolaylaştırabilir. Bu eğitim, belge revizyonlarını sorunsuz bir şekilde yönetmek için Aspose.Words'ün güçlü özelliklerinden yararlanmanız için sizi gerekli becerilerle donatacaktır.
+Bu kapsamlı kılavuzda, belge revizyonlarını etkili bir şekilde yönetmek için Aspose.Words for .NET'i kullanmayı inceleyeceğiz. İster geliştirici ister teknoloji meraklısı olun, revizyon ekleme içindeki metni nasıl görmezden geleceğinizi anlamak belge işleme iş akışlarınızı kolaylaştırabilir. Bu eğitim, belge revizyonlarını sorunsuz bir şekilde yönetmek için Aspose.Words'ün güçlü özelliklerinden yararlanmanız için gereken becerileri size kazandıracaktır.
 
-## Önkoşullar
+## Ön koşullar
 
-Eğiticiye dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-- Makinenizde Visual Studio yüklü.
-- Aspose.Words for .NET kütüphanesi projenize entegre edilmiştir.
-- C# programlama dili ve .NET çerçevesi hakkında temel bilgi.
+Eğitime başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
+- Bilgisayarınızda Visual Studio yüklü.
+- Projenize entegre edilmiş Aspose.Words for .NET kütüphanesi.
+- C# programlama dili ve .NET framework hakkında temel bilgi.
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamak için C# projenize gerekli ad alanlarını ekleyin:
+Başlamak için, C# projenize gerekli ad alanlarını ekleyin:
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Replacing;
@@ -28,29 +28,29 @@ using System;
 using System.Text.RegularExpressions;
 ```
 
-## 1. Adım: Yeni Bir Belge Oluşturun ve Revizyonları Takip Etmeye Başlayın
+## Adım 1: Yeni Bir Belge Oluşturun ve Revizyonları İzlemeye Başlayın
 
 Öncelikle yeni bir belge başlatın ve revizyonları izlemeye başlayın:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Revizyonları izlemeye başlayın
+// Revizyonları izlemeye başla
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //İzleme revizyonlarıyla metin ekleyin
+builder.Writeln("Inserted"); //İzleme revizyonları olan metni ekle
 doc.StopTrackRevisions();
 ```
 
-## Adım 2: Düzeltilmemiş Metni Ekle
+## Adım 2: Revize Edilmemiş Metni Ekle
 
-Daha sonra, düzeltmeleri izlemeden belgeye metin ekleyin:
+Daha sonra, revizyonları izlemeden metni belgeye ekleyin:
 ```csharp
 builder.Write("Text");
 ```
 
-## 3. Adım: FindReplaceOptions Kullanarak Eklenen Metni Yoksay
+## Adım 3: FindReplaceOptions'ı Kullanarak Eklenen Metni Yoksay
 
-Şimdi FindReplaceOptions'ı eklenen revizyonları yok sayacak şekilde yapılandırın:
+Şimdi, FindReplaceOptions'ı eklenen revizyonları yok sayacak şekilde yapılandırın:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
 
@@ -58,16 +58,16 @@ Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Adım 4: Belge Metninin Çıktısını Alın
+## Adım 4: Çıktı Belgesi Metni
 
-Eklenen revizyonları göz ardı ettikten sonra belge metnini görüntüle:
+Eklenen revizyonları yok saydıktan sonra belge metnini görüntüle:
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## Adım 5: Eklenen Metni Yoksay Seçeneğini Geri Döndürün
+## Adım 5: Eklenen Metni Yoksayma Seçeneğini Geri Al
 
-Eklenen metni yoksaymayı geri almak için FindReplaceOptions'ı değiştirin:
+Eklenen metni yoksayma özelliğini geri almak için FindReplaceOptions'ı değiştirin:
 ```csharp
 options.IgnoreInserted = false;
 doc.Range.Replace(regex, "*", options);
@@ -75,21 +75,21 @@ doc.Range.Replace(regex, "*", options);
 
 ## Çözüm
 
-Aspose.Words for .NET ile revizyonların içindeki metni göz ardı etme tekniğinde ustalaşmak, belge düzenleme yeteneklerinizi geliştirir. Bu adımları izleyerek belgelerinizdeki revizyonları etkili bir şekilde yönetebilir, metin işleme görevlerinizde netlik ve hassasiyet sağlayabilirsiniz.
+Aspose.Words for .NET ile ekleme revizyonları içindeki metni görmezden gelme tekniğinde ustalaşmak, belge düzenleme yeteneklerinizi geliştirir. Bu adımları izleyerek, belgelerinizdeki revizyonları etkili bir şekilde yönetebilir, metin işleme görevlerinizde netlik ve kesinlik sağlayabilirsiniz.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonları izlemeye nasıl başlayabilirim?
- Revizyonları izlemeye başlamak için şunu kullanın:`doc.StartTrackRevisions(author, date)` Yöntem.
+### Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonları izlemeyi nasıl başlatabilirim?
+ Revizyonları izlemeye başlamak için şunu kullanın:`doc.StartTrackRevisions(author, date)` yöntem.
 
-### Belge revizyonlarında eklenen metni göz ardı etmenin faydası nedir?
-Eklenen metnin göz ardı edilmesi, belge değişikliklerini verimli bir şekilde yönetirken temel içeriğe odaklanmaya yardımcı olur.
+### Belge revizyonlarında eklenen metni yok saymanın faydası nedir?
+Eklenen metni yok saymak, belge değişikliklerini etkin bir şekilde yönetirken temel içeriğe odaklanmaya yardımcı olur.
 
-### Aspose.Words for .NET'te yok sayılan eklenen metni orijinal haline geri döndürebilir miyim?
+### Aspose.Words for .NET'te yoksayılan eklenen metni orijinaline geri döndürebilir miyim?
 Evet, uygun FindReplaceOptions ayarlarını kullanarak yok sayılan eklenen metni geri alabilirsiniz.
 
-### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
- Ziyaret edin[Aspose.Words for .NET belgeleri](https://reference.aspose.com/words/net/) ayrıntılı kılavuzlar ve API referansları için.
+### Aspose.Words for .NET hakkında daha fazla dokümanı nerede bulabilirim?
+ Ziyaret edin[Aspose.Words for .NET belgeleri](https://reference.aspose.com/words/net/) Ayrıntılı kılavuzlar ve API referansları için.
 
-### Aspose.Words for .NET ile ilgili sorguların tartışılacağı bir topluluk forumu var mı?
- Evet, ziyaret edebilirsiniz[Aspose.Words forumu](https://forum.aspose.com/c/words/8) topluluk desteği ve tartışmalar için.
+### Aspose.Words for .NET ile ilgili sorguları tartışmak için bir topluluk forumu var mı?
+ Evet, ziyaret edebilirsiniz[Aspose.Words forumu](https://forum.aspose.com/c/words/8) Topluluk desteği ve tartışmaları için.

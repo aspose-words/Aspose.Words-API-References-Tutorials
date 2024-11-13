@@ -1,20 +1,20 @@
 ---
-title: Właściwości dokumentu i zarządzanie metadanymi
-linktitle: Właściwości dokumentu i zarządzanie metadanymi
-second_title: Aspose.Words API do zarządzania dokumentami w języku Python
+title: Zarządzanie właściwościami dokumentu i metadanymi
+linktitle: Zarządzanie właściwościami dokumentu i metadanymi
+second_title: Aspose.Words API zarządzania dokumentami Python
 description: Dowiedz się, jak zarządzać właściwościami dokumentu i metadanymi za pomocą Aspose.Words dla Pythona. Przewodnik krok po kroku z kodem źródłowym.
 type: docs
 weight: 12
 url: /pl/python-net/document-options-and-settings/document-properties-metadata/
 ---
 
-## Wprowadzenie do właściwości dokumentu i metadanych
+## Wprowadzenie do właściwości i metadanych dokumentu
 
-Właściwości dokumentu i metadane są istotnymi składnikami dokumentów elektronicznych. Dostarczają kluczowych informacji o dokumencie, takich jak autorstwo, data utworzenia i słowa kluczowe. Metadane mogą zawierać dodatkowe informacje kontekstowe, które pomagają w kategoryzacji i wyszukiwaniu dokumentów. Aspose.Words dla Pythona upraszcza proces programowego zarządzania tymi aspektami.
+Właściwości dokumentu i metadane są niezbędnymi składnikami dokumentów elektronicznych. Dostarczają kluczowych informacji o dokumencie, takich jak autorstwo, data utworzenia i słowa kluczowe. Metadane mogą zawierać dodatkowe informacje kontekstowe, które pomagają w kategoryzacji i wyszukiwaniu dokumentów. Aspose.Words for Python upraszcza proces zarządzania tymi aspektami programowo.
 
 ## Pierwsze kroki z Aspose.Words dla Pythona
 
-Zanim zagłębimy się w zarządzanie właściwościami dokumentów i metadanymi, skonfigurujmy nasze środowisko za pomocą Aspose.Words dla Pythona.
+Zanim przejdziemy do zarządzania właściwościami i metadanymi dokumentu, skonfigurujmy nasze środowisko za pomocą Aspose.Words dla języka Python.
 
 ```python
 # Install the Aspose.Words for Python package
@@ -55,7 +55,7 @@ doc.save("updated_document.docx")
 
 ## Praca z niestandardowymi właściwościami dokumentu
 
-Niestandardowe właściwości dokumentu umożliwiają przechowywanie dodatkowych informacji w dokumencie. Dodajmy niestandardową właściwość o nazwie „Dział”:
+Niestandardowe właściwości dokumentu pozwalają na przechowywanie dodatkowych informacji w dokumencie. Dodajmy niestandardową właściwość o nazwie „Department”:
 
 ```python
 # Add a custom document property
@@ -65,9 +65,9 @@ doc.custom_document_properties.add("Department", "Marketing")
 doc.save("document_with_custom_property.docx")
 ```
 
-## Zarządzanie informacjami o metadanych
+## Zarządzanie informacjami metadanych
 
-Zarządzanie metadanymi obejmuje kontrolowanie informacji, takich jak śledzenie zmian, statystyki dokumentów i nie tylko. Aspose.Words umożliwia programowy dostęp i modyfikowanie tych metadanych.
+Zarządzanie metadanymi obejmuje kontrolowanie informacji, takich jak śledzenie zmian, statystyki dokumentów i inne. Aspose.Words umożliwia programowy dostęp do tych metadanych i ich modyfikację.
 
 ```python
 # Access and modify metadata
@@ -76,7 +76,7 @@ doc.metadata["Keywords"] = "Python, Aspose.Words, Metadata"
 
 ## Automatyzacja aktualizacji metadanych
 
-Częste aktualizacje metadanych można zautomatyzować za pomocą Aspose.Words. Na przykład możesz automatycznie zaktualizować właściwość „Ostatnia modyfikacja przez”:
+Częste aktualizacje metadanych można zautomatyzować za pomocą Aspose.Words. Na przykład można automatycznie aktualizować właściwość „Last Modified By”:
 
 ```python
 # Automatically update "Last Modified By"
@@ -85,7 +85,7 @@ doc.built_in_document_properties["LastModifiedBy"] = "Automated Process"
 
 ## Ochrona poufnych informacji w metadanych
 
-Metadane mogą czasami zawierać informacje wrażliwe. Aby zapewnić prywatność danych, możesz usunąć określone właściwości:
+Metadane mogą czasami zawierać poufne informacje. Aby zapewnić prywatność danych, możesz usunąć określone właściwości:
 
 ```python
 # Remove sensitive metadata properties
@@ -97,7 +97,7 @@ for prop in sensitive_properties:
 
 ## Obsługa wersji i historii dokumentów
 
-Wersjonowanie ma kluczowe znaczenie dla utrzymania historii dokumentu. Aspose.Words pozwala efektywnie zarządzać wersjami:
+Wersjonowanie jest kluczowe dla utrzymania historii dokumentu. Aspose.Words pozwala na efektywne zarządzanie wersjami:
 
 ```python
 # Add version history information
@@ -107,20 +107,20 @@ version_info.value = "Version 1.0 - Initial Release"
 
 ## Najlepsze praktyki dotyczące właściwości dokumentu
 
-- Dbaj o dokładność i aktualność właściwości dokumentu.
+- Utrzymuj dokładność i aktualność właściwości dokumentu.
 - Użyj niestandardowych właściwości, aby uzyskać dodatkowy kontekst.
 - Regularnie audytuj i aktualizuj metadane.
-- Chroń poufne informacje w metadanych.
+- Chroń poufne informacje zawarte w metadanych.
 
 ## Wniosek
 
-Skuteczne zarządzanie właściwościami dokumentów i metadanymi ma kluczowe znaczenie dla organizacji i wyszukiwania dokumentów. Aspose.Words dla Pythona usprawnia ten proces, umożliwiając programistom łatwe programowe manipulowanie i kontrolowanie atrybutów dokumentów.
+Skuteczne zarządzanie właściwościami i metadanymi dokumentu jest kluczowe dla organizacji i pobierania dokumentów. Aspose.Words for Python usprawnia ten proces, umożliwiając programistom bezproblemową manipulację i kontrolę atrybutów dokumentu programowo.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak zainstalować Aspose.Words dla Pythona?
+### Jak zainstalować Aspose.Words dla języka Python?
 
-Możesz zainstalować Aspose.Words dla Pythona za pomocą następującego polecenia:
+Możesz zainstalować Aspose.Words dla języka Python za pomocą następującego polecenia:
 
 ```python
 pip install aspose-words
@@ -128,15 +128,15 @@ pip install aspose-words
 
 ### Czy mogę zautomatyzować aktualizację metadanych za pomocą Aspose.Words?
 
-Tak, możesz zautomatyzować aktualizację metadanych za pomocą Aspose.Words. Na przykład możesz automatycznie zaktualizować właściwość „Ostatnia modyfikacja przez”.
+Tak, możesz zautomatyzować aktualizacje metadanych za pomocą Aspose.Words. Na przykład możesz automatycznie aktualizować właściwość „Last Modified By”.
 
-### Jak chronić poufne informacje zawarte w metadanych?
+### Jak mogę chronić poufne informacje zawarte w metadanych?
 
  Aby chronić poufne informacje w metadanych, możesz usunąć określone właściwości za pomocą`remove` metoda.
 
-### Jakie są najlepsze praktyki zarządzania właściwościami dokumentów?
+### Jakie są najlepsze praktyki zarządzania właściwościami dokumentu?
 
 - Zapewnij dokładność i aktualność właściwości dokumentu.
-- Wykorzystaj niestandardowe właściwości, aby uzyskać dodatkowy kontekst.
+- Wykorzystaj właściwości niestandardowe, aby uzyskać dodatkowy kontekst.
 - Regularnie przeglądaj i aktualizuj metadane.
-- Chroń wrażliwe informacje zawarte w metadanych.
+- Zabezpiecz poufne informacje zawarte w metadanych.

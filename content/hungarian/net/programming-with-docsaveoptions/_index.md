@@ -1,6 +1,6 @@
 ---
-title: Szövegfeldolgozás Docsaveoptions segítségével
-linktitle: Szövegfeldolgozás Docsaveoptions segítségével
+title: Szövegfeldolgozás a DocSaveOptions segítségével
+linktitle: Szövegfeldolgozás a DocSaveOptions segítségével
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan testreszabhatja a Word-dokumentumok mentési beállításait az Aspose.Words for .NET használatával. Az oktatóanyagok végigvezetik a különféle rendelkezésre álló lehetőségeken, mint például a fájlformátum, a tömörítés, a jelszavas védelem.
 type: docs
@@ -16,6 +16,6 @@ Ezeket az oktatóanyagokat követve megismerheti a dokumentumok különböző fo
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Dokumentum titkosítása jelszóval](./encrypt-document-with-password/) | Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan titkosíthat egy dokumentumot jelszóval az Aspose.Words for .NET használatával. Gondoskodjon érzékeny információinak biztonságáról. |
+| [Dokumentum titkosítása jelszóval](./encrypt-document-with-password/) | Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan titkosíthat egy dokumentumot jelszóval az Aspose.Words for .NET használatával. Gondoskodjon kényes információiról erőfeszítés nélkül. |
 | [Ne tömörítse a kis metafájlokat](./do-not-compress-small-metafiles/) | Tanulja meg az Aspose.Words for .NET használatával biztosítani, hogy a Word-dokumentumokban lévő kis metafájlok ne legyenek tömörítve, megőrizve minőségüket és integritásukat. Lépésről lépésre útmutató mellékelve. |
 | [Ne mentse el a képet](./do-not-save-picture-bullet/) | lépésenkénti útmutatónkkal megtudhatja, hogyan kezelheti a képjeleket az Aspose.Words for .NET-ben. Egyszerűsítse a dokumentumkezelést és hozzon létre professzionális Word dokumentumokat könnyedén. |

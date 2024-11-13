@@ -1,7 +1,7 @@
 ---
-title: Mengekstrak dan Memodifikasi Konten di Dokumen Word
-linktitle: Mengekstrak dan Memodifikasi Konten di Dokumen Word
-second_title: API Manajemen Dokumen Aspose.Words Python
+title: Mengekstrak dan Memodifikasi Konten dalam Dokumen Word
+linktitle: Mengekstrak dan Memodifikasi Konten dalam Dokumen Word
+second_title: API Manajemen Dokumen Python Aspose.Words
 description: Pelajari cara mengekstrak dan mengubah konten dalam dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber.
 type: docs
 weight: 10
@@ -10,7 +10,7 @@ url: /id/python-net/content-extraction-and-manipulation/extract-modify-document-
 
 ## Pengantar Aspose.Words untuk Python
 
-Aspose.Words adalah perpustakaan manipulasi dan pembuatan dokumen populer yang menyediakan kemampuan luas untuk bekerja dengan dokumen Word secara terprogram. API Python-nya menawarkan berbagai fungsi untuk mengekstrak, memodifikasi, dan memanipulasi konten dalam dokumen Word.
+Aspose.Words adalah pustaka manipulasi dan pembuatan dokumen populer yang menyediakan kemampuan ekstensif untuk bekerja dengan dokumen Word secara terprogram. API Python-nya menawarkan berbagai fungsi untuk mengekstrak, memodifikasi, dan memanipulasi konten dalam dokumen Word.
 
 ## Instalasi dan Pengaturan
 
@@ -22,7 +22,7 @@ pip install aspose-words
 
 ## Memuat Dokumen Word
 
-Memuat dokumen Word adalah langkah pertama untuk mengerjakan kontennya. Anda dapat menggunakan cuplikan kode berikut untuk memuat dokumen:
+Memuat dokumen Word merupakan langkah pertama untuk mengolah kontennya. Anda dapat menggunakan potongan kode berikut untuk memuat dokumen:
 
 ```python
 from asposewords import Document
@@ -42,7 +42,7 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
 
 ## Memodifikasi Teks
 
-Anda dapat memodifikasi teks dengan langsung mengatur teks run atau paragraf:
+Anda dapat mengubah teks dengan langsung mengatur teks lari atau paragraf:
 
 ```python
 for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
@@ -62,13 +62,13 @@ run.get_font().set_color(255, 0, 0)
 
 ## Mengganti Teks
 
- Mengganti teks dapat dilakukan dengan menggunakan`replace` metode:
+ Penggantian teks dapat dilakukan dengan menggunakan`replace` metode:
 
 ```python
 doc.get_range().replace("old_text", "new_text", False, False)
 ```
 
-## Menambah dan Memodifikasi Gambar
+## Menambahkan dan Memodifikasi Gambar
 
  Gambar dapat ditambahkan atau diganti menggunakan`insert_image` metode:
 
@@ -85,9 +85,9 @@ Setelah melakukan modifikasi, simpan dokumen:
 doc.save("path/to/modified/document.docx")
 ```
 
-## Menangani Tabel dan Daftar
+## Penanganan Tabel dan Daftar
 
-Bekerja dengan tabel dan daftar melibatkan iterasi melalui baris dan sel:
+Bekerja dengan tabel dan daftar melibatkan pengulangan melalui baris dan sel:
 
 ```python
 for table in doc.get_child_nodes(asposewords.NodeType.TABLE, True):
@@ -123,32 +123,32 @@ Aspose.Words mendukung konversi dokumen ke berbagai format:
 doc.save("path/to/converted/document.pdf", asposewords.SaveFormat.PDF)
 ```
 
-## Fitur dan Otomatisasi Tingkat Lanjut
+## Fitur Lanjutan dan Otomatisasi
 
-Aspose.Words menawarkan fitur yang lebih canggih seperti gabungan surat, perbandingan dokumen, dan banyak lagi. Otomatiskan tugas kompleks dengan mudah.
+Aspose.Words menawarkan fitur yang lebih canggih seperti gabungan surat, perbandingan dokumen, dan banyak lagi. Otomatiskan tugas yang rumit dengan mudah.
 
 ## Kesimpulan
 
-Aspose.Words untuk Python adalah perpustakaan serbaguna yang memberdayakan Anda untuk memanipulasi dan memodifikasi dokumen Word dengan mudah. Baik Anda perlu mengekstrak teks, mengganti konten, atau memformat dokumen, API ini menyediakan alat yang diperlukan.
+Aspose.Words untuk Python adalah pustaka serbaguna yang memungkinkan Anda memanipulasi dan memodifikasi dokumen Word dengan mudah. Baik Anda perlu mengekstrak teks, mengganti konten, atau memformat dokumen, API ini menyediakan alat yang diperlukan.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menginstal Aspose.Words untuk Python?
 
  Untuk menginstal Aspose.Words untuk Python, gunakan perintah`pip install aspose-words`.
 
-### Bisakah saya mengubah format teks menggunakan perpustakaan ini?
+### Bisakah saya mengubah format teks menggunakan pustaka ini?
 
-Ya, Anda dapat mengubah pemformatan teks, seperti tebal, warna, dan ukuran font, menggunakan Aspose.Words untuk Python API.
+Ya, Anda dapat mengubah format teks, seperti tebal, warna, dan ukuran font, menggunakan Aspose.Words untuk Python API.
 
 ### Apakah mungkin untuk mengganti teks tertentu dalam dokumen?
 
- Tentu saja, Anda bisa menggunakan`replace` metode untuk mengganti teks tertentu dalam dokumen.
+ Tentu saja, Anda dapat menggunakan`replace` metode untuk mengganti teks tertentu dalam dokumen.
 
 ### Bisakah saya menambahkan hyperlink ke dokumen Word saya?
 
  Tentu saja, Anda dapat menambahkan hyperlink ke dokumen Anda menggunakan`insert_hyperlink` metode yang disediakan oleh Aspose.Words.
 
-### Format apa lagi yang dapat saya gunakan untuk mengonversi dokumen Word saya?
+### Format apa lagi yang dapat saya ubah ke dokumen Word saya?
 
-Aspose.Words mendukung konversi ke berbagai format seperti PDF, HTML, EPUB, dan lainnya.
+Aspose.Words mendukung konversi ke berbagai format seperti PDF, HTML, EPUB, dan banyak lagi.

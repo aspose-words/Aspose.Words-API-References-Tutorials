@@ -9,7 +9,7 @@ url: /sv/net/working-with-list/restart-list-number/
 ---
 ## Introduktion
 
-Vill du behärska konsten att manipulera listor i dina Word-dokument med Aspose.Words för .NET? Nåväl, du är på rätt plats! I den här handledningen kommer vi att dyka djupt in i att starta om listnummer, en snygg funktion som tar dina färdigheter i dokumentautomatisering till nästa nivå. Spänn fast och låt oss börja!
+Vill du behärska konsten att manipulera listor i dina Word-dokument med Aspose.Words för .NET? Tja, du är på rätt plats! I den här handledningen kommer vi att dyka djupt in i att starta om listnummer, en snygg funktion som tar dina färdigheter i dokumentautomatisering till nästa nivå. Spänn fast och låt oss börja!
 
 ## Förutsättningar
 
@@ -17,7 +17,7 @@ Innan vi hoppar in i koden, låt oss se till att du har allt du behöver:
 
 1.  Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Om du inte har installerat det än kan du göra det[ladda ner den här](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: Se till att du har en lämplig utvecklingsmiljö som Visual Studio.
-3. Grundläggande kunskaper om C#: En grundläggande förståelse av C# hjälper dig att följa handledningen.
+3. Grundläggande kunskaper om C#: En grundläggande förståelse för C# hjälper dig att följa handledningen.
 
 ## Importera namnområden
 

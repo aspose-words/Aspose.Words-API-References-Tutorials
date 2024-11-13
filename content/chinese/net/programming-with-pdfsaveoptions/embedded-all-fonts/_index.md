@@ -9,7 +9,7 @@ url: /zh/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
 ## 介绍
 
-嗨，科技爱好者们！您是否曾尝试使用 Aspose.Words for .NET 将字体嵌入 PDF 文档中？好吧，您来对地方了！在本教程中，我们将深入探讨在 PDF 中嵌入字体的细节。无论您是新手还是经验丰富的专业人士，本指南都将以简单、引人入胜的方式引导您完成每个步骤。到最后，您将能够确保您的 PDF 保留其预期的外观和感觉，无论它们在哪里查看。那么，让我们开始吧，好吗？
+嗨，科技爱好者们！您是否曾尝试使用 Aspose.Words for .NET 将字体嵌入 PDF 文档中而陷入困境？好吧，您来对地方了！在本教程中，我们将深入探讨在 PDF 中嵌入字体的细节。无论您是新手还是经验丰富的专业人士，本指南都将以简单、引人入胜的方式引导您完成每个步骤。到最后，您将能够确保您的 PDF 保留其预期的外观和感觉，无论它们在哪里查看。那么，让我们开始吧，好吗？
 
 ## 先决条件
 
@@ -35,7 +35,7 @@ using Aspose.Words.Saving;
 
 ## 步骤 1：设置文档目录
 
-在深入研究代码之前，您需要设置文档目录。这是您的示例 Word 文档 (`Rendering.docx`) 并且输出 PDF 将保留。
+在深入研究代码之前，您需要设置文档目录。这是您的示例 Word 文档 (`Rendering.docx`) 并且输出 PDF 将驻留。
 
 ```csharp
 //文档目录的路径。
@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
 ```
 
-此行创建一个新的`PdfSaveOptions`对象并设置`EmbedFullFonts`财产`true`这可确保生成的 PDF 将包含文档中使用的所有字体。
+此行创建了新的`PdfSaveOptions`对象并设置`EmbedFullFonts`财产`true`这可确保生成的 PDF 将包含文档中使用的所有字体。
 
 ## 步骤 4：将文档保存为 PDF
 

@@ -18,7 +18,7 @@ Než se pustíte do používání Aspose.Words for .NET k převodu souborů DOCX
 - Vývojové prostředí: Pracovní znalost C# a .NET frameworku.
 - Aspose.Words for .NET: Stáhněte si a nainstalujte Aspose.Words for .NET z[zde](https://releases.aspose.com/words/net/).
 - Integrované vývojové prostředí (IDE): Visual Studio nebo jakékoli jiné preferované IDE.
-- Základní porozumění: Znalost konceptů zpracování dokumentů.
+- Základní porozumění: Seznámení s koncepty zpracování dokumentů.
 
 ## Importovat jmenné prostory
 
@@ -38,23 +38,7 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
-## Krok 2: Vytvořte objekt DocumentBuilder
-
- Dále vytvořte a`DocumentBuilder` objekt pro usnadnění manipulace s dokumenty.
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## Krok 3: Manipulujte s obsahem dokumentu
-
- Použijte`DocumentBuilder` objekt manipulovat s obsahem podle potřeby. Například přidejte text nebo formátování.
-
-```csharp
-builder.Writeln("Insert your text or content manipulation code here!");
-```
-
-## Krok 4: Uložit jako Markdown
+## Krok 2: Uložit jako Markdown
 
 Nakonec upravený dokument uložte ve formátu Markdown.
 
@@ -75,10 +59,10 @@ Aspose.Words podporuje širokou škálu formátů dokumentů včetně DOCX, DOC,
 Ano, Aspose.Words poskytuje robustní API pro manipulaci s tabulkami, obrázky, formátováním textu a dalšími v dokumentech.
 
 ### Kde najdu podrobnou dokumentaci k Aspose.Words pro .NET?
- K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
+ dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
 
 ### Jak mohu získat dočasnou licenci pro Aspose.Words pro .NET?
- Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
+Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Kde mohu získat podporu komunity pro Aspose.Words pro .NET?
  Můžete najít podporu komunity a komunikovat s ostatními uživateli[zde](https://forum.aspose.com/c/words/8).

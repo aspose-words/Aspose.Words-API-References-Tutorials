@@ -130,7 +130,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 Makra VBA můžete číst z libovolného dokumentu aplikace Word, který obsahuje projekt VBA. Dokument musí být ve formátu s podporou maker (.docm).
 
 ### Jak upravím makra VBA po jejich přečtení?  
- Po přečtení maker můžete upravit`SourceCode` vlastnictvím`VbaModule` objekt. Poté dokument uložte, abyste použili změny.
+ Po přečtení maker můžete upravit`SourceCode` vlastnictví`VbaModule` objekt. Poté dokument uložte, abyste použili změny.
 
 ### Je Aspose.Words for .NET kompatibilní se všemi verzemi Wordu?  
 Aspose.Words for .NET je kompatibilní se širokou škálou verzí aplikace Word, což zajišťuje bezproblémovou funkčnost vašich dokumentů na různých platformách.

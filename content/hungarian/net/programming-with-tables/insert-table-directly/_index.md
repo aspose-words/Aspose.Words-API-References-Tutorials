@@ -23,7 +23,7 @@ Ha ezekkel az előfeltételekkel rendelkezik, akkor készen áll a kódolás meg
 
 ## Névterek importálása
 
-Először is importáljuk a szükséges névtereket. Ezek a névterek biztosítják számunkra a Word dokumentumok kezeléséhez szükséges osztályokat és módszereket.
+Először is importáljuk a szükséges névtereket. Ezek a névterek biztosítják számunkra a Word-dokumentumok kezeléséhez szükséges osztályokat és módszereket.
 
 ```csharp
 using System;

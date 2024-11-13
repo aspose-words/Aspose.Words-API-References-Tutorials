@@ -32,7 +32,7 @@ using Aspose.Words.CommentRangeStart;
 using Aspose.Words.CommentRangeEnd;
 ```
 
-Nachdem wir die Voraussetzungen und Namespaces geklärt haben, kommen wir nun zum spaßigen Teil: der schrittweisen Aufschlüsselung des Prozesses.
+Nachdem wir die Voraussetzungen und Namespaces geklärt haben, können wir nun zum spaßigen Teil übergehen: der schrittweisen Aufschlüsselung des Prozesses.
 
 ## Schritt 1: Neues Dokument erstellen
 
@@ -79,8 +79,7 @@ Lassen Sie uns nun einen Kommentar erstellen, den wir an unseren Text anhängen.
 ```csharp
 // Neuen Kommentar verfassen
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+comment.SetText("Comment text.");
 ```
 
  In diesem Schritt erstellen wir eine`Comment` Objekt und fügen Sie einen Absatz und einen Lauf mit dem Kommentartext hinzu.
@@ -102,7 +101,7 @@ run3.ParentNode.InsertAfter(commentRangeEnd, run3);
 commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
- Hier erstellen wir`CommentRangeStart`Und`CommentRangeEnd` Objekte und verknüpfen sie über die ID mit dem Kommentar. Anschließend fügen wir diese Bereiche in das Dokument ein und verankern unseren Kommentar effektiv im angegebenen Text.
+ Hier erstellen wir`CommentRangeStart` Und`CommentRangeEnd` Objekte und verknüpfen sie über die ID mit dem Kommentar. Anschließend fügen wir diese Bereiche in das Dokument ein und verankern unseren Kommentar effektiv im angegebenen Text.
 
 ## Schritt 5: Speichern Sie das Dokument
 

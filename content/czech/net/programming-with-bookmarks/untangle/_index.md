@@ -32,8 +32,6 @@ using Aspose.Words.Tables;
 
 Prvním krokem je načtení dokumentu aplikace Word, se kterým chcete pracovat. Tento dokument bude obsahovat záložky, které potřebujete rozmotat.
 
-Krok 1 Nadpis: Načtení dokumentu
-
 ```csharp
 Document doc = new Document("path/to/your/document.docx");
 ```
@@ -43,8 +41,6 @@ V tomto řádku jednoduše načítáme dokument ze zadané cesty. Ujistěte se, 
 ## Krok 2: Iterujte přes záložky
 
 Dále musíme iterovat všechny záložky v dokumentu. To nám umožňuje přístup ke každé záložce a jejím vlastnostem.
-
-Krok 2 Nadpis: Iterace přes záložky
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -59,8 +55,6 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 Pro každou záložku musíme najít řádky, které obsahují začátek a konec záložky. To je zásadní pro určení, zda se záložka rozprostírá přes sousední řádky.
 
-Krok 3 Nadpis: Identifikace řádků
-
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
@@ -71,8 +65,6 @@ Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ## Krok 4: Zkontrolujte sousedící řádky
 
 Než přesuneme konec záložky, musíme zajistit, aby začátek a konec záložky byly v sousedních řádcích. Tato podmínka je nezbytná pro správné rozmotání záložky.
-
-Krok 4 Nadpis: Kontrola sousedství řádků
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
@@ -87,13 +79,11 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 Nakonec, pokud jsou splněny podmínky, přesuneme koncový uzel záložky na konec posledního odstavce v poslední buňce horního řádku. Tento krok účinně rozmotá záložku.
 
-Krok 5 Nadpis: Přesunutí konce záložky
-
 ```csharp
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
- V tomto kroku používáme`AppendChild` metoda přesunutí koncového uzlu záložky. Jeho připojením k poslednímu odstavci poslední buňky horního řádku zajistíme, že je záložka správně rozmotaná.
+ V tomto kroku používáme`AppendChild`metoda přesunutí koncového uzlu záložky. Jeho připojením k poslednímu odstavci poslední buňky horního řádku zajistíme, že je záložka správně rozmotaná.
 
 ## Závěr
 

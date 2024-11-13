@@ -52,7 +52,7 @@ Nyní nastavíme možnosti osnovy.
 
 ### Nastavte úrovně obrysu nadpisů
 
- The`HeadingsOutlineLevels` Vlastnost definuje, kolik úrovní nadpisů by mělo být zahrnuto v obrysu PDF. Pokud například nastavíte hodnotu 3, budou v obrysu PDF zahrnuty až tři úrovně nadpisů.
+The`HeadingsOutlineLevels` Vlastnost definuje, kolik úrovní nadpisů by mělo být zahrnuto v obrysu PDF. Pokud například nastavíte hodnotu 3, budou v obrysu PDF zahrnuty až tři úrovně nadpisů.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Nastavte úrovně rozšířeného obrysu
 
- The`ExpandedOutlineLevels`Vlastnost určuje, kolik úrovní obrysu se má ve výchozím nastavení rozbalit při otevření PDF. Nastavením této hodnoty na 1 se rozbalí nadpisy nejvyšší úrovně a získáte jasný pohled na hlavní sekce.
+The`ExpandedOutlineLevels`Vlastnost určuje, kolik úrovní obrysu se má ve výchozím nastavení rozbalit při otevření PDF. Nastavením této hodnoty na 1 se rozbalí nadpisy nejvyšší úrovně a získáte jasný pohled na hlavní sekce.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

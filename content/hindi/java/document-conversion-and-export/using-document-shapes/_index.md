@@ -14,7 +14,7 @@ url: /hi/java/document-conversion-and-export/using-document-shapes/
 
 ## दस्तावेज़ आकृतियों के साथ आरंभ करना
 
- कोड में जाने से पहले, आइए अपना वातावरण सेट करें। सुनिश्चित करें कि आपके प्रोजेक्ट में Aspose.Words for Java एकीकृत है। यदि आपने पहले से ऐसा नहीं किया है, तो आप इसे Aspose वेबसाइट से डाउनलोड कर सकते हैं[Java के लिए Aspose.Words डाउनलोड करें](https://releases.aspose.com/words/java/)
+कोड में जाने से पहले, आइए अपना वातावरण सेट करें। सुनिश्चित करें कि आपके प्रोजेक्ट में Aspose.Words for Java एकीकृत है। यदि आपने पहले से ऐसा नहीं किया है, तो आप इसे Aspose वेबसाइट से डाउनलोड कर सकते हैं[Java के लिए Aspose.Words डाउनलोड करें](https://releases.aspose.com/words/java/)
 
 ## दस्तावेज़ों में आकृतियाँ जोड़ना
 

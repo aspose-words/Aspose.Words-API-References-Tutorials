@@ -1,32 +1,32 @@
 ---
-title: Generación de tabla de contenidos
-linktitle: Generación de tabla de contenidos
+title: Generación de índices
+linktitle: Generación de índices
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda a crear una tabla de contenido dinámica utilizando Aspose.Words para Java. Domine la generación de TOC con orientación paso a paso y ejemplos de código fuente.
+description: Aprenda a crear una tabla de contenido dinámica con Aspose.Words para Java. Domine la generación de tablas de contenido con instrucciones paso a paso y ejemplos de código fuente.
 type: docs
 weight: 14
 url: /es/java/table-processing/table-contents-generation/
 ---
 
-¿Estás listo para embarcarte en un viaje para dominar la generación de tablas de contenido (TOC) usando Aspose.Words para Java? En esta guía completa, exploraremos el arte de crear TOC dinámicos y visualmente atractivos sin esfuerzo. Estará equipado con el conocimiento y las habilidades necesarias para implementar esta característica sin problemas en sus aplicaciones Java. Así que ¡vamos a sumergirnos de lleno!
+¿Está listo para embarcarse en un viaje para dominar la generación de tablas de contenido (TOC) con Aspose.Words para Java? En esta guía completa, exploraremos el arte de crear tablas de contenido dinámicas y visualmente atractivas sin esfuerzo. Estará equipado con el conocimiento y las habilidades necesarias para implementar esta función sin problemas en sus aplicaciones Java. ¡Así que, vamos a sumergirnos en el tema!
 
 ## Introducción
 
-La tabla de contenidos (TOC) es un componente esencial de cualquier documento bien estructurado. Proporciona a los lectores una hoja de ruta que les permite navegar por documentos extensos con facilidad. Aspose.Words para Java es una potente API que simplifica la generación de TOC en aplicaciones Java. En esta guía paso a paso, cubriremos todo lo que necesita saber para crear TOC dinámicamente usando Aspose.Words para Java.
+La tabla de contenidos (TOC) es un componente esencial de cualquier documento bien estructurado. Proporciona a los lectores una hoja de ruta que les permite navegar por documentos extensos con facilidad. Aspose.Words para Java es una potente API que simplifica la generación de TOC en aplicaciones Java. En esta guía paso a paso, cubriremos todo lo que necesita saber para crear TOC de forma dinámica utilizando Aspose.Words para Java.
 
-## Primeros pasos con Aspose.Words para Java
+## Introducción a Aspose.Words para Java
 
 Antes de profundizar en los detalles de la generación de TOC, configuremos nuestro entorno y familiaricémonos con Aspose.Words para Java.
 
-### Configurando su entorno
+### Configuración de su entorno
 
-Para comenzar, asegúrese de tener instalado Aspose.Words para Java. Puedes descargarlo desde el sitio web.[aquí](https://releases.aspose.com/words/java/).
+Para comenzar, asegúrese de tener instalado Aspose.Words para Java. Puede descargarlo desde el sitio web[aquí](https://releases.aspose.com/words/java/).
 
 ### Creando un nuevo proyecto Java
 
 Comience creando un nuevo proyecto Java en su entorno de desarrollo integrado (IDE) favorito.
 
-### Agregar Aspose.Words para Java a su proyecto
+### Cómo agregar Aspose.Words para Java a su proyecto
 
 Agregue la biblioteca Aspose.Words para Java a su proyecto incluyéndola en sus dependencias.
 
@@ -41,19 +41,19 @@ com.aspose.words.Document doc = new com.aspose.words.Document();
 
 ## Comprensión de la tabla de contenidos (TOC)
 
-Antes de pasar a generar TOC, obtengamos una comprensión más profunda de qué son y cómo funcionan.
+Antes de comenzar a generar tablas de contenidos, comprendamos más profundamente qué son y cómo funcionan.
 
 ### ¿Qué es una tabla de contenidos?
 
-Una tabla de contenido es una lista que aparece al principio de un documento y proporciona enlaces a varias secciones o capítulos dentro del documento. Sirve como una útil herramienta de navegación para los lectores.
+Una tabla de contenidos es una lista que aparece al principio de un documento y que proporciona enlaces a varias secciones o capítulos dentro del documento. Sirve como una herramienta de navegación útil para los lectores.
 
 ### ¿Cómo funciona la generación de TOC?
 
-La generación de TOC implica identificar títulos o contenidos específicos dentro de su documento y crear enlaces a esas secciones. Aspose.Words para Java simplifica este proceso al automatizar la generación de TOC según reglas predefinidas.
+La generación de índices implica identificar encabezados o contenidos específicos dentro del documento y crear vínculos a esas secciones. Aspose.Words para Java simplifica este proceso al automatizar la generación de índices según reglas predefinidas.
 
-## Generar una tabla de contenido básica
+## Generar una tabla de contenidos básica
 
-Ahora que tenemos una base sólida, generemos un TOC básico usando Aspose.Words para Java.
+Ahora que tenemos una base sólida, generemos una tabla de contenidos básica utilizando Aspose.Words para Java.
 
 ```java
 // Crear una nueva tabla de contenidos
@@ -61,26 +61,26 @@ com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
 tocField.update();
 ```
 
-El código anterior crea un TOC básico en su documento. Puede personalizarlo aún más especificando los niveles, el formato y más.
+El código anterior crea una tabla de contenidos básica en el documento. Puede personalizarla aún más especificando los niveles, el formato y más.
 
-## Personalización avanzada de TOC
+## Personalización avanzada de la tabla de contenidos
 
-Aspose.Words para Java ofrece amplias opciones de personalización para sus TOC. Exploremos algunas funciones avanzadas:
+Aspose.Words para Java ofrece amplias opciones de personalización para sus tablas de contenidos. Exploremos algunas funciones avanzadas:
 
-### Personalización de estilos TOC
+### Personalización de estilos de tabla de contenidos
 
-Puede definir sus estilos TOC para que coincidan con la estética de su documento.
+Puede definir sus estilos de TOC para que coincidan con la estética de su documento.
 
 ```java
-// Personaliza los estilos de TOC
+// Personalizar estilos de índice
 com.aspose.words.Style tocStyle = doc.getStyles().add(StyleType.PARAGRAPH, "MyTOCStyle");
 tocStyle.getFont().setSize(16);
 tocStyle.getFont().setBold(true);
 ```
 
-### Incluyendo títulos específicos
+### Incluidos títulos específicos
 
-Puede elegir qué títulos incluir en su TOC especificando sus niveles de esquema.
+Puede elegir qué títulos incluir en su tabla de contenido especificando sus niveles de esquema.
 
 ```java
 // Incluir sólo títulos específicos
@@ -97,7 +97,7 @@ public void generateTOC() {
     com.aspose.words.Document doc = new com.aspose.words.Document();
     com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
     tocField.update();
-    // Agregue más personalización aquí
+    // Añade más personalización aquí
 }
 ```
 
@@ -105,30 +105,30 @@ Al encapsular la generación de TOC en un método, puedes incorporarlo fácilmen
 
 ## Preguntas frecuentes
 
-### ¿Cómo puedo actualizar un TOC existente?
+### ¿Cómo puedo actualizar una tabla de contenidos existente?
 
-Para actualizar un TOC existente en su documento, simplemente haga clic derecho sobre él y seleccione "Actualizar campo". Aspose.Words para Java actualizará el TOC en función de cualquier cambio en los encabezados de su documento.
+Para actualizar una tabla de contenidos existente en su documento, simplemente haga clic derecho sobre ella y seleccione "Actualizar campo". Aspose.Words para Java actualizará la tabla de contenidos en función de cualquier cambio en los encabezados de su documento.
 
-### ¿Puedo generar múltiples TOC en un solo documento?
+### ¿Puedo generar múltiples tablas de contenidos en un solo documento?
 
-Sí, puedes generar múltiples TOC en un solo documento. Utilice diferentes códigos de campo para cada TOC y personalice su configuración según sea necesario.
+Sí, puedes generar varias tablas de contenidos en un solo documento. Utiliza distintos códigos de campo para cada tabla de contenidos y personaliza sus configuraciones según sea necesario.
 
 ### ¿Aspose.Words para Java es adecuado tanto para documentos pequeños como grandes?
 
-¡Absolutamente! Aspose.Words para Java es versátil y puede manejar documentos de distintos tamaños, desde pequeños informes hasta novelas extensas.
+¡Por supuesto! Aspose.Words para Java es versátil y puede manejar documentos de distintos tamaños, desde pequeños informes hasta novelas extensas.
 
-### ¿Puedo personalizar la apariencia de mis entradas TOC?
+### ¿Puedo personalizar la apariencia de mis entradas de TOC?
 
-¡Ciertamente! Puede definir estilos personalizados para las entradas de TOC para que coincidan con el diseño y el formato de su documento.
+¡Por supuesto! Puedes definir estilos personalizados para las entradas de la tabla de contenidos que coincidan con el diseño y el formato de tu documento.
 
-### ¿Aspose.Words para Java admite referencias cruzadas dentro del TOC?
+### ¿Aspose.Words para Java admite referencias cruzadas dentro de la tabla de contenido?
 
-Sí, puede crear referencias cruzadas dentro del TOC para vincular a secciones o páginas específicas de su documento.
+Sí, puede crear referencias cruzadas dentro de la tabla de contenidos para vincular a secciones o páginas específicas en su documento.
 
-### ¿Aspose.Words para Java es adecuado para aplicaciones web?
+### ¿Es Aspose.Words para Java adecuado para aplicaciones web?
 
-De hecho, Aspose.Words para Java se puede integrar perfectamente en aplicaciones web para generar TOC de forma dinámica.
+De hecho, Aspose.Words para Java se puede integrar perfectamente en aplicaciones web para generar tablas de contenido de forma dinámica.
 
 ## Conclusión
 
-En esta guía completa, hemos explorado el arte de la generación de tablas de contenido (TOC) utilizando Aspose.Words para Java. Ha aprendido cómo configurar su entorno, crear TOC básicos y avanzados e incluso integrar la generación de TOC en sus proyectos Java con código fuente. Aspose.Words para Java le permite mejorar sus documentos con TOC dinámicos y visualmente atractivos. Ahora, siga adelante y aplique este conocimiento para crear TOC impresionantes en sus aplicaciones Java. ¡Feliz codificación!
+En esta guía completa, hemos explorado el arte de la generación de tablas de contenido (TOC) con Aspose.Words para Java. Aprendió a configurar su entorno, crear tablas de contenido básicas y avanzadas e incluso integrar la generación de tablas de contenido en sus proyectos Java con código fuente. Aspose.Words para Java le permite mejorar sus documentos con tablas de contenido dinámicas y visualmente atractivas. Ahora, siga adelante y aplique este conocimiento para crear tablas de contenido impresionantes en sus aplicaciones Java. ¡Que disfrute codificando!

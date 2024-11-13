@@ -2,24 +2,24 @@
 title: Sisipkan Bidang Bersarang
 linktitle: Sisipkan Bidang Bersarang
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan bidang bertumpuk di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna untuk pengembang yang ingin mengotomatiskan pembuatan dokumen.
+description: Pelajari cara menyisipkan kolom bersarang dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna bagi pengembang yang ingin mengotomatiskan pembuatan dokumen.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/insert-nested-fields/
 ---
 ## Perkenalan
 
-Pernahkah Anda merasa perlu menyisipkan bidang bersarang di dokumen Word Anda secara terprogram? Mungkin Anda ingin menampilkan teks berbeda secara kondisional berdasarkan nomor halaman? Nah, Anda beruntung! Tutorial ini akan memandu Anda melalui proses menyisipkan kolom bertingkat menggunakan Aspose.Words untuk .NET. Ayo selami!
+Pernahkah Anda merasa perlu memasukkan kolom bersarang ke dalam dokumen Word secara terprogram? Mungkin Anda ingin menampilkan teks yang berbeda secara kondisional berdasarkan nomor halaman? Nah, Anda beruntung! Tutorial ini akan memandu Anda melalui proses memasukkan kolom bersarang menggunakan Aspose.Words untuk .NET. Mari kita mulai!
 
 ## Prasyarat
 
 Sebelum kita mulai, ada beberapa hal yang Anda perlukan:
 
-1.  Aspose.Words for .NET: Pastikan Anda memiliki perpustakaan Aspose.Words for .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pastikan Anda memiliki pustaka Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: IDE seperti Visual Studio.
-3. Pengetahuan Dasar C#: Pemahaman bahasa pemrograman C#.
+3. Pengetahuan Dasar C#: Pemahaman tentang bahasa pemrograman C#.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Pertama, pastikan untuk mengimpor namespace yang diperlukan dalam proyek Anda. Namespace ini berisi kelas yang Anda perlukan untuk berinteraksi dengan Aspose.Words.
 
@@ -31,7 +31,7 @@ using Aspose.Words.HeaderFooter;
 
 ## Langkah 1: Inisialisasi Dokumen
 
-Langkah pertama adalah membuat dokumen baru dan objek DocumentBuilder. Kelas DocumentBuilder membantu dalam membuat dan memodifikasi dokumen Word.
+Langkah pertama adalah membuat dokumen baru dan objek DocumentBuilder. Kelas DocumentBuilder membantu dalam membangun dan memodifikasi dokumen Word.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -42,12 +42,12 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Sisipkan Hentian Halaman
+## Langkah 2: Masukkan Hentian Halaman
 
-Selanjutnya, kita akan menyisipkan beberapa hentian halaman ke dalam dokumen. Ini akan memungkinkan kita mendemonstrasikan bidang bersarang secara efektif.
+Selanjutnya, kita akan menyisipkan beberapa pemisah halaman ke dalam dokumen. Ini akan memungkinkan kita untuk menunjukkan kolom bersarang secara efektif.
 
 ```csharp
-// Sisipkan hentian halaman.
+// Sisipkan jeda halaman.
 for (int i = 0; i < 5; i++)
 {
     builder.InsertBreak(BreakType.PageBreak);
@@ -56,16 +56,16 @@ for (int i = 0; i < 5; i++)
 
 ## Langkah 3: Pindah ke Footer
 
-Setelah menyisipkan hentian halaman, kita perlu berpindah ke footer dokumen. Di sinilah kita akan menyisipkan bidang bersarang kita.
+Setelah menyisipkan pemisah halaman, kita perlu pindah ke bagian bawah dokumen. Di sinilah kita akan menyisipkan kolom bersarang.
 
 ```csharp
-// Pindah ke catatan kaki.
+// Pindah ke footer.
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
-## Langkah 4: Sisipkan Bidang Bersarang
+## Langkah 4: Masukkan Bidang Bersarang
 
-Sekarang, mari masukkan bidang bersarang. Kami akan menggunakan bidang IF untuk menampilkan teks secara kondisional berdasarkan nomor halaman saat ini.
+Sekarang, mari masukkan kolom bersarang. Kita akan menggunakan kolom IF untuk menampilkan teks secara kondisional berdasarkan nomor halaman saat ini.
 
 ```csharp
 // Sisipkan bidang bersarang.
@@ -77,14 +77,14 @@ builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
 ```
 
-Pada langkah ini, pertama-tama kita masukkan kolom IF, pindah ke pemisahnya, lalu masukkan kolom PAGE dan NUMPAGES. Bidang IF memeriksa apakah nomor halaman saat ini (PAGE) tidak sama dengan jumlah halaman total (NUMPAGES). Jika benar, maka akan ditampilkan “Lihat halaman berikutnya”, jika tidak, akan ditampilkan “Halaman terakhir”.
+Pada langkah ini, pertama-tama kita masukkan kolom IF, pindah ke pemisahnya, lalu masukkan kolom PAGE dan NUMPAGES. Kolom IF memeriksa apakah nomor halaman saat ini (PAGE) tidak sama dengan jumlah total halaman (NUMPAGES). Jika benar, akan ditampilkan “Lihat halaman berikutnya”, jika tidak, akan ditampilkan “Halaman terakhir”.
 
 ## Langkah 5: Perbarui Bidang
 
-Terakhir, kami memperbarui bidang tersebut untuk memastikan bidang tersebut menampilkan teks yang benar.
+Terakhir, kami memperbarui kolom untuk memastikan teks yang ditampilkan benar.
 
 ```csharp
-// Perbarui bidangnya.
+// Perbarui bidang.
 field.Update();
 ```
 
@@ -98,18 +98,18 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil menyisipkan bidang bersarang ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka yang kuat ini membuatnya sangat mudah untuk memanipulasi dokumen Word secara terprogram. Baik Anda membuat laporan, membuat templat, atau mengotomatiskan alur kerja dokumen, Aspose.Words siap membantu Anda.
+Nah, itu dia! Anda telah berhasil memasukkan kolom bersarang ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan Anda untuk memanipulasi dokumen Word secara terprogram. Baik Anda membuat laporan, membuat templat, atau mengotomatiskan alur kerja dokumen, Aspose.Words siap membantu Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Apa yang dimaksud dengan bidang bersarang di dokumen Word?
-Bidang bersarang adalah bidang yang berisi bidang lain di dalamnya. Hal ini memungkinkan konten yang lebih kompleks dan bersyarat dalam dokumen.
+### Apa itu bidang bersarang dalam dokumen Word?
+Kolom bersarang adalah kolom yang memuat kolom lain di dalamnya. Kolom ini memungkinkan konten yang lebih kompleks dan bersyarat dalam dokumen.
 
 ### Bisakah saya menggunakan kolom lain dalam kolom IF?
-Ya, Anda dapat menyarangkan berbagai bidang seperti TANGGAL, WAKTU, dan AUTHOR dalam bidang IF untuk membuat konten dinamis.
+Ya, Anda dapat menyarangkan berbagai bidang seperti TANGGAL, WAKTU, dan PENULIS dalam bidang IF untuk membuat konten dinamis.
 
 ### Apakah Aspose.Words untuk .NET gratis?
- Aspose.Words untuk .NET adalah perpustakaan komersial, tetapi Anda bisa mendapatkan a[uji coba gratis](https://releases.aspose.com/) untuk mencobanya.
+ Aspose.Words untuk .NET adalah pustaka komersial, tetapi Anda bisa mendapatkannya[uji coba gratis](https://releases.aspose.com/) untuk mencobanya.
 
 ### Bisakah saya menggunakan Aspose.Words dengan bahasa .NET lainnya?
 Ya, Aspose.Words mendukung semua bahasa .NET, termasuk VB.NET dan F#.

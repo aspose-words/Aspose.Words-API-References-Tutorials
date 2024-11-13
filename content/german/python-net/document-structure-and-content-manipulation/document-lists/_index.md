@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Verwalten von Listen in Word-Dokumenten
 linktitle: Erstellen und Verwalten von Listen in Word-Dokumenten
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie mit der Aspose.Words Python-API Listen in Word-Dokumenten erstellen und verwalten. Schritt-für-Schritt-Anleitung mit Quellcode für Listenformatierung, Anpassung, Verschachtelung und mehr.
 type: docs
 weight: 18
@@ -94,7 +94,7 @@ Listen können mehrere Ebenen haben, was zum Erstellen verschachtelter Listen n�
 
 ## Unterlisten hinzufügen
 
-Unterlisten sind eine leistungsstarke Möglichkeit, Informationen hierarchisch zu organisieren. Mit der Aspose.Words Python-API können Sie ganz einfach Unterlisten hinzufügen.
+Unterlisten sind eine leistungsstarke Möglichkeit, Informationen hierarchisch zu organisieren. Mit der Aspose.Words Python-API können Sie problemlos Unterlisten hinzufügen.
 
 ## Konvertieren von einfachem Text in Listen
 
@@ -127,4 +127,4 @@ Ja, Sie können verschachtelte Listen erstellen, indem Sie Ihrer Hauptliste Unte
 Ja, Aspose.Words Python bietet Methoden zum Parsen und Formatieren von einfachem Text in Listen, wodurch die Strukturierung Ihrer Inhalte vereinfacht wird.
 
 ### Wie kann ich mein Dokument nach dem Erstellen von Listen speichern?
- Sie können Ihr Dokument speichern, indem Sie`doc.save()` Methode und Angabe des gewünschten Ausgabeformats, beispielsweise DOCX oder PDF.
+ Sie können Ihr Dokument speichern mit dem`doc.save()` Methode und Angabe des gewünschten Ausgabeformats, beispielsweise DOCX oder PDF.

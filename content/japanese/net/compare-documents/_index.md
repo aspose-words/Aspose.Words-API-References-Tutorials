@@ -13,7 +13,7 @@ url: /ja/net/compare-documents/
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [Word 文書で等しいかどうかを比較する](./compare-for-equal/) | Aspose.Words for .NET を使用して 2 つの Word 文書が等しいかどうかを比較する方法を学びます。このステップ バイ ステップ ガイドに従って、文書が同一であることを確認します。 |
+| [Word 文書で等しいかどうかを比較する](./compare-for-equal/) | Aspose.Words for .NET を使用して 2 つの Word 文書を比較し、等しいかどうかを確認する方法を学びます。このステップ バイ ステップ ガイドに従って、文書が同一であることを確認します。 |
 | [Word 文書のオプションを比較する](./compare-options/) | Aspose.Words for .NET を使用して Word 文書を比較する方法をステップバイステップ ガイドで学習します。文書の一貫性を簡単に確保できます。 |
 | [Word 文書の比較対象](./comparison-target/) | この詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word 文書を簡単に比較します。時間を節約し、文書の比較の精度を高めます。 |
 | [Word 文書の比較の粒度](./comparison-granularity/) | Aspose.Words for .NET の Word 文書の比較の粒度について学習します。この機能を使用すると、文書を文字ごとに比較し、変更内容を報告できます。 |

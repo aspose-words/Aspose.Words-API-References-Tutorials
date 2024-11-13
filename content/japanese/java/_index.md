@@ -38,7 +38,7 @@ Aspose.Words for Java でドキュメント印刷をマスターしましょう�
 ### [ドキュメントレンダリング](./document-rendering/)
 Aspose.Words を使用して、Java で Word 文書をさまざまな形式に効率的にレンダリングします。プロフェッショナルな出力のための文書レンダリングをマスターします。
 ### [文書セキュリティ](./document-security/)
-Aspose.Words for Java でドキュメントのセキュリティを強化しましょう。保護、暗号化、デジタル署名を実装して、強力なデータ保護を実現します。 
+Aspose.Words for Java でドキュメントのセキュリティを強化します。保護、暗号化、デジタル署名を実装して、強力なデータ保護を実現します。 
 ### [ドキュメントの分割](./document-splitting/)
 Aspose.Words for Java を使用すると、ドキュメントを簡単に分割できます。ページ範囲、段落数、またはカスタム基準に基づいて、大きなファイルを効率的に分割します。
 ### [文書の改訂](./document-revision/)

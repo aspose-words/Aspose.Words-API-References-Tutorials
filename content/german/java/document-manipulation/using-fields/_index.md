@@ -99,7 +99,7 @@ Ja, Sie können Serienbriefe in Aspose.Words für Java erstellen. Sie können Do
 
 ### Wie kann ich mit Aspose.Words für Java Bilder in ein Dokument einfügen?
 
-Um Bilder in ein Dokument einzufügen, können Sie die Bibliothek Aspose.Words für Java verwenden. Im Codebeispiel im Abschnitt „Arbeiten mit Bildern“ finden Sie eine Schritt-für-Schritt-Anleitung zum Einfügen von Bildern aus einer Datenbank in ein Dokument.
+Um Bilder in ein Dokument einzufügen, können Sie die Bibliothek Aspose.Words für Java verwenden. Eine Schritt-für-Schritt-Anleitung zum Einfügen von Bildern aus einer Datenbank in ein Dokument finden Sie im Codebeispiel im Abschnitt „Arbeiten mit Bildern“.
 
 ### Was ist der Zweck bedingter Felder in Aspose.Words für Java?
 
@@ -111,7 +111,7 @@ Bedingte Felder in Aspose.Words für Java ermöglichen Ihnen die Erstellung dyna
 
 ### Wo finde ich weitere Dokumentation und Ressourcen für Aspose.Words für Java?
 
- Ausführliche Dokumentationen, Codebeispiele und Tutorials zu Aspose.Words für Java finden Sie auf der Aspose-Website:[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/). Diese Ressource hilft Ihnen dabei, zusätzliche Features und Funktionen der Bibliothek zu erkunden.
+ Ausführliche Dokumentationen, Codebeispiele und Tutorials zu Aspose.Words für Java finden Sie auf der Aspose-Website:[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/)Mithilfe dieser Ressource können Sie zusätzliche Features und Funktionen der Bibliothek erkunden.
 
 ### Wie kann ich Support oder Hilfe zu Aspose.Words für Java erhalten?
 

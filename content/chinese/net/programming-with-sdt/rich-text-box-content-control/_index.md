@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 代替`"YOUR DOCUMENT DIRECTORY"`与您想要保存文档的实际路径。
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 创建新的`Document`对象，它将作为 Word 文档的基础。
 

@@ -2,7 +2,7 @@
 title: IF-Bedingung auswerten
 linktitle: IF-Bedingung auswerten
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie IF-Bedingungen in Word-Dokumenten mit Aspose.Words für .NET auswerten. Diese Schritt-für-Schritt-Anleitung behandelt das Einfügen, Auswerten und die Ergebnisanzeige.
+description: Erfahren Sie, wie Sie IF-Bedingungen in Word-Dokumenten mit Aspose.Words für .NET auswerten. Diese Schritt-für-Schritt-Anleitung behandelt das Einfügen, Auswerten und Anzeigen der Ergebnisse.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/evaluate-ifcondition/
@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- Der`EvaluateCondition` Methode gibt einen`FieldIfComparisonResult` Enumeration, die das Ergebnis der Bedingungsauswertung darstellt. Diese Enumeration kann Werte wie`True`, `False` , oder`Unknown`.
+Der`EvaluateCondition` Methode gibt einen`FieldIfComparisonResult` Enumeration, die das Ergebnis der Bedingungsauswertung darstellt. Diese Enumeration kann Werte wie`True`, `False` , oder`Unknown`.
 
 ## Schritt 4: Ergebnis anzeigen
 
@@ -93,7 +93,7 @@ Ein WENN-Feld ist ein Word-Feld, mit dem Sie bedingte Logik in Ihr Dokument einf
  Sie können ein WENN-Feld einfügen mit dem`InsertField` Methode der`DocumentBuilder` Klasse und geben Sie die Bedingung an, die Sie auswerten möchten.
 
 ###  Was bedeutet`EvaluateCondition` method do?
- Der`EvaluateCondition` Die Methode wertet die in einem WENN-Feld angegebene Bedingung aus und gibt das Ergebnis zurück, das angibt, ob die Bedingung wahr oder falsch ist.
+Der`EvaluateCondition` Die Methode wertet die in einem WENN-Feld angegebene Bedingung aus und gibt das Ergebnis zurück, das angibt, ob die Bedingung wahr oder falsch ist.
 
 ### Kann ich mit dem WENN-Feld komplexe Bedingungen verwenden?
 Ja, Sie können mit dem WENN-Feld komplexe Bedingungen verwenden, indem Sie nach Bedarf verschiedene Ausdrücke und Vergleiche angeben.

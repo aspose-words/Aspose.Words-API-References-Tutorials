@@ -1,22 +1,22 @@
 ---
 title: Korzystanie z funkcji komentarzy w dokumentach programu Word
 linktitle: Korzystanie z funkcji komentarzy w dokumentach programu Word
-second_title: Aspose.Words API do zarządzania dokumentami w języku Python
-description: Dowiedz się, jak korzystać z funkcji komentarzy w dokumentach programu Word przy użyciu Aspose.Words dla języka Python. Przewodnik krok po kroku z kodem źródłowym. Usprawnij współpracę i usprawnij przeglądanie dokumentów.
+second_title: Aspose.Words API zarządzania dokumentami Python
+description: Dowiedz się, jak korzystać z funkcji komentarzy w dokumentach Worda, używając Aspose.Words dla Pythona. Przewodnik krok po kroku z kodem źródłowym. Ulepsz współpracę i usprawnij recenzje w dokumentach.
 type: docs
 weight: 11
 url: /pl/python-net/document-structure-and-content-manipulation/document-comments/
 ---
 
-Komentarze odgrywają kluczową rolę we współpracy i przeglądaniu dokumentów, umożliwiając wielu osobom dzielenie się przemyśleniami i sugestiami w dokumencie programu Word. Aspose.Words dla Pythona zapewnia potężne API, które umożliwia programistom bezproblemową pracę z komentarzami w dokumentach Word. W tym artykule przyjrzymy się, jak korzystać z funkcji komentarzy w dokumentach programu Word przy użyciu Aspose.Words dla Pythona.
+Komentarze odgrywają kluczową rolę we współpracy i przeglądaniu dokumentów, umożliwiając wielu osobom dzielenie się swoimi przemyśleniami i sugestiami w dokumencie Word. Aspose.Words for Python zapewnia potężne API, które umożliwia programistom bezproblemową pracę z komentarzami w dokumentach Word. W tym artykule przyjrzymy się, jak wykorzystać funkcje komentarzy w dokumentach Word przy użyciu Aspose.Words for Python.
 
 ## Wstęp
 
-Współpraca to podstawowy aspekt tworzenia dokumentów, a komentarze umożliwiają wielu użytkownikom dzielenie się swoimi opiniami i przemyśleniami w dokumencie. Aspose.Words dla Pythona, potężna biblioteka do manipulacji dokumentami, umożliwia programistom programową pracę z dokumentami programu Word, w tym dodawanie, modyfikowanie i pobieranie komentarzy.
+Współpraca jest podstawowym aspektem tworzenia dokumentów, a komentarze zapewniają bezproblemowy sposób, w jaki wielu użytkowników może dzielić się swoimi opiniami i przemyśleniami w dokumencie. Aspose.Words for Python, potężna biblioteka do manipulacji dokumentami, umożliwia programistom programową pracę z dokumentami Word, w tym dodawanie, modyfikowanie i pobieranie komentarzy.
 
 ## Konfigurowanie Aspose.Words dla Pythona
 
- Aby rozpocząć, musisz zainstalować Aspose.Words dla Pythona. Bibliotekę można pobrać ze strony[Aspose.Words dla Pythona](https://releases.aspose.com/words/python/) link do pobrania. Po pobraniu możesz go zainstalować za pomocą pip:
+ Aby rozpocząć, musisz zainstalować Aspose.Words dla Pythona. Możesz pobrać bibliotekę ze strony[Aspose.Words dla Pythona](https://releases.aspose.com/words/python/) link do pobrania. Po pobraniu możesz zainstalować za pomocą pip:
 
 ```python
 pip install aspose-words
@@ -24,7 +24,7 @@ pip install aspose-words
 
 ## Dodawanie komentarzy do dokumentu
 
-Dodawanie komentarza do dokumentu programu Word za pomocą Aspose.Words dla Pythona jest proste. Oto prosty przykład:
+Dodawanie komentarza do dokumentu Word przy użyciu Aspose.Words dla Pythona jest proste. Oto prosty przykład:
 
 ```python
 import aspose.words as aw
@@ -47,7 +47,7 @@ run.insert_comment(comment)
 
 ## Pobieranie komentarzy z dokumentu
 
-Równie łatwe jest pobieranie komentarzy z dokumentu. Możesz przeglądać komentarze w dokumencie i uzyskać dostęp do ich właściwości:
+Pobieranie komentarzy z dokumentu jest równie łatwe. Możesz iterować komentarze w dokumencie i uzyskiwać dostęp do ich właściwości:
 
 ```python
 for comment in doc.comments:
@@ -56,7 +56,7 @@ for comment in doc.comments:
     print("Date:", comment.date_time)
 ```
 
-## Modyfikowanie i rozpatrywanie komentarzy
+## Modyfikowanie i rozwiązywanie komentarzy
 
 Komentarze często podlegają zmianom. Aspose.Words for Python pozwala modyfikować istniejące komentarze i oznaczać je jako rozwiązane:
 
@@ -69,9 +69,9 @@ comment.text = "Updated insight: " + comment.text
 comment.resolved = True
 ```
 
-## Obsługa odpowiedzi i rozmów
+## Obsługa odpowiedzi i konwersacji
 
-Komentarze mogą być częścią rozmów, a odpowiedzi dodają dyskusji głębiej. Aspose.Words dla Pythona pozwala zarządzać odpowiedziami na komentarze:
+Komentarze mogą być częścią konwersacji, a odpowiedzi dodają głębi dyskusjom. Aspose.Words for Python pozwala zarządzać odpowiedziami na komentarze:
 
 ```python
 # Add a reply to a comment
@@ -81,9 +81,9 @@ reply.date_time = aw.DateTime.now()
 comment.replies.add(reply)
 ```
 
-## Komentarze dotyczące formatowania i stylizacji
+## Formatowanie i stylizowanie komentarzy
 
-Formatowanie komentarzy poprawia ich widoczność. Możesz zastosować formatowanie do komentarzy za pomocą Aspose.Words dla Pythona:
+Formatowanie komentarzy zwiększa ich widoczność. Możesz zastosować formatowanie do komentarzy za pomocą Aspose.Words dla Pythona:
 
 ```python
 # Apply formatting to a comment
@@ -94,7 +94,7 @@ comment.runs[0].font.color = aw.Color.red
 
 ## Zarządzanie autorami komentarzy
 
-Komentarze przypisuje się autorom. Aspose.Words dla Pythona pozwala zarządzać autorami komentarzy:
+Komentarze są przypisywane autorom. Aspose.Words for Python pozwala zarządzać autorami komentarzy:
 
 ```python
 # Change the author's name
@@ -104,7 +104,7 @@ comment.author = "Jane Doe"
 
 ## Eksportowanie i importowanie komentarzy
 
-Komentarze można eksportować i importować, aby ułatwić współpracę zewnętrzną:
+Komentarze można eksportować i importować w celu ułatwienia współpracy zewnętrznej:
 
 ```python
 # Export comments to a file
@@ -114,38 +114,38 @@ doc.save_comments("comments.xml")
 doc.import_comments("comments.xml")
 ```
 
-## Najlepsze praktyki dotyczące wykorzystywania komentarzy
+## Najlepsze praktyki korzystania z komentarzy
 
 - Użyj komentarzy, aby podać kontekst, wyjaśnienia i sugestie.
-- Staraj się, aby komentarze były zwięzłe i powiązane z treścią.
-- Rozwiązuj komentarze, gdy ich punkty zostaną uwzględnione.
-- Wykorzystuj odpowiedzi do wspierania szczegółowych dyskusji.
+- Komentarze powinny być zwięzłe i odnosić się do treści.
+- Rozwiąż komentarze, gdy ich punkty zostaną omówione.
+- Wykorzystuj odpowiedzi, aby wspierać szczegółowe dyskusje.
 
 ## Wniosek
 
-Aspose.Words dla Pythona upraszcza pracę z komentarzami w dokumentach Word, oferując wszechstronne API do dodawania, pobierania, modyfikowania i zarządzania komentarzami. Integrując Aspose.Words for Python ze swoimi projektami, możesz usprawnić współpracę i usprawnić proces recenzji swoich dokumentów.
+Aspose.Words for Python upraszcza pracę z komentarzami w dokumentach Word, oferując kompleksowe API do dodawania, pobierania, modyfikowania i zarządzania komentarzami. Integrując Aspose.Words for Python ze swoimi projektami, możesz usprawnić współpracę i usprawnić proces przeglądu w swoich dokumentach.
 
 ## Często zadawane pytania
 
-### Co to jest Aspose.Words dla Pythona?
+### Czym jest Aspose.Words dla języka Python?
 
-Aspose.Words dla języka Python to potężna biblioteka do manipulacji dokumentami, która umożliwia programistom programowe tworzenie, modyfikowanie i przetwarzanie dokumentów programu Word przy użyciu języka Python.
+Aspose.Words for Python to potężna biblioteka do manipulowania dokumentami, która umożliwia programistom programistyczne tworzenie, modyfikowanie i przetwarzanie dokumentów Word przy użyciu języka Python.
 
-### Jak zainstalować Aspose.Words dla Pythona?
+### Jak zainstalować Aspose.Words dla języka Python?
 
 Możesz zainstalować Aspose.Words dla Pythona za pomocą pip:
 ```python
 pip install aspose-words
 ```
 
-### Czy mogę używać Aspose.Words dla Pythona do wyodrębniania istniejących komentarzy z dokumentu programu Word?
+### Czy mogę użyć Aspose.Words dla Pythona do wyodrębnienia istniejących komentarzy z dokumentu Word?
 
-Tak, możesz przeglądać komentarze w dokumencie i pobierać ich właściwości za pomocą Aspose.Words dla Pythona.
+Tak, można przeglądać komentarze w dokumencie i pobierać ich właściwości korzystając z Aspose.Words dla języka Python.
 
-### Czy można programowo ukryć lub pokazać komentarze za pomocą interfejsu API?
+### Czy można ukrywać lub wyświetlać komentarze programowo, korzystając z interfejsu API?
 
- Tak, możesz kontrolować widoczność komentarzy za pomocą`comment.visible` właściwość w Aspose.Words dla Pythona.
+ Tak, widoczność komentarzy można kontrolować za pomocą`comment.visible` właściwość w Aspose.Words dla Pythona.
 
-### Czy Aspose.Words for Python obsługuje dodawanie komentarzy do określonych zakresów tekstu?
+### Czy Aspose.Words dla języka Python obsługuje dodawanie komentarzy do określonych zakresów tekstu?
 
-Oczywiście możesz dodawać komentarze do określonych zakresów tekstu w dokumencie, używając Aspose.Words dla bogatego API Pythona.
+Oczywiście, możesz dodawać komentarze do określonych fragmentów tekstu w dokumencie, korzystając z rozbudowanego interfejsu API Aspose.Words for Python.

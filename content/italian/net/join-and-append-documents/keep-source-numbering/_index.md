@@ -2,25 +2,25 @@
 title: Mantieni la numerazione delle fonti
 linktitle: Mantieni la numerazione delle fonti
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come importare documenti preservando la formattazione utilizzando Aspose.Words per .NET. Guida passo passo con esempi di codice.
+description: Scopri come importare documenti mantenendo la formattazione utilizzando Aspose.Words per .NET. Guida passo passo con esempi di codice.
 type: docs
 weight: 10
 url: /it/net/join-and-append-documents/keep-source-numbering/
 ---
 ## Introduzione
 
- Quando si lavora con Aspose.Words per .NET, l'importazione di documenti da una fonte a un'altra preservando la formattazione può essere gestita in modo efficiente utilizzando`NodeImporter` classe. Questo tutorial ti guiderà attraverso il processo passo dopo passo.
+ Quando si lavora con Aspose.Words per .NET, l'importazione di documenti da una fonte all'altra preservando la formattazione può essere gestita in modo efficiente utilizzando`NodeImporter` classe. Questo tutorial ti guiderà passo dopo passo attraverso il processo.
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di avere quanto segue:
 - Visual Studio installato sul tuo computer.
 -  Aspose.Words per .NET installato. In caso contrario, scaricalo da[Qui](https://releases.aspose.com/words/net/).
-- Conoscenza base di programmazione C# e .NET.
+- Conoscenza di base della programmazione C# e .NET.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Innanzitutto, includi gli spazi dei nomi necessari nel tuo progetto:
+Per prima cosa, includi gli spazi dei nomi necessari nel tuo progetto:
 
 ```csharp
 using Aspose.Words;
@@ -30,21 +30,21 @@ using Aspose.Words.Tables;
 
 ## Passaggio 1: imposta il tuo progetto
 
-Inizia creando un nuovo progetto C# in Visual Studio e installa Aspose.Words tramite NuGet Package Manager.
+Per prima cosa, crea un nuovo progetto C# in Visual Studio e installa Aspose.Words tramite NuGet Package Manager.
 
 ## Passaggio 2: inizializzare i documenti
-Creare istanze dell'origine (`srcDoc`) e destinazione (`dstDoc`) documenti.
+Crea istanze della sorgente (`srcDoc`) e destinazione (`dstDoc`) documenti.
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Passaggio 3: configura le opzioni di importazione
-Configura le opzioni di importazione per mantenere la formattazione originale, inclusi i paragrafi numerati.
+## Passaggio 3: configurare le opzioni di importazione
+Imposta le opzioni di importazione per mantenere la formattazione originale, inclusi i paragrafi numerati.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -52,8 +52,8 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 	importFormatOptions);
 ```
 
-## Passaggio 4: importa paragrafi
-Scorri i paragrafi nel documento di origine e importali nel documento di destinazione.
+## Passaggio 4: importare paragrafi
+Scorrere i paragrafi del documento di origine e importarli nel documento di destinazione.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -64,8 +64,8 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Passaggio 5: salva il documento
-Salva il documento unito nella posizione desiderata.
+## Passaggio 5: Salvare il documento
+Salvare il documento unito nella posizione desiderata.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
@@ -73,21 +73,21 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 
 ## Conclusione
 
- In conclusione, utilizzare Aspose.Words per .NET per importare documenti preservando la formattazione è semplice con il file`NodeImporter` classe. Questo metodo garantisce che i tuoi documenti mantengano perfettamente l'aspetto e la struttura originali.
+ In conclusione, utilizzare Aspose.Words per .NET per importare documenti preservandone la formattazione è semplice con`NodeImporter` classe. Questo metodo assicura che i tuoi documenti mantengano il loro aspetto e la loro struttura originali senza soluzione di continuità.
 
 ## Domande frequenti
 
 ### Posso importare documenti con stili di formattazione diversi?
- Sì, il`NodeImporter` La classe supporta l'importazione di documenti con vari stili di formattazione.
+ Sì, il`NodeImporter` La classe supporta l'importazione di documenti con stili di formattazione diversi.
 
 ### Cosa succede se i miei documenti contengono tabelle e immagini complesse?
 Aspose.Words per .NET gestisce strutture complesse come tabelle e immagini durante le operazioni di importazione.
 
 ### Aspose.Words è compatibile con tutte le versioni di .NET?
-Aspose.Words supporta le versioni .NET Framework e .NET Core per una perfetta integrazione.
+Aspose.Words supporta le versioni .NET Framework e .NET Core per un'integrazione perfetta.
 
 ### Come posso gestire gli errori durante l'importazione dei documenti?
-Utilizza i blocchi try-catch per gestire le eccezioni che possono verificarsi durante il processo di importazione.
+Utilizzare blocchi try-catch per gestire le eccezioni che potrebbero verificarsi durante il processo di importazione.
 
 ### Dove posso trovare una documentazione più dettagliata su Aspose.Words per .NET?
- Visita il[documentazione](https://reference.aspose.com/words/net/) per guide complete e riferimenti API.
+ Visita il[documentazione](https://reference.aspose.com/words/net/)per guide complete e riferimenti API.

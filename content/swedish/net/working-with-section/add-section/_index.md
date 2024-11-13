@@ -125,7 +125,7 @@ Du kan anpassa layouten för ett avsnitt genom att ställa in egenskaper som sid
 
 ### Kan avsnitt kapslas i Word-dokument?
 
-Nej, avsnitt kan inte kapslas inuti varandra. Du kan dock ha flera avsnitt efter varandra, var och en med sin egen distinkta layout och formatering.
+Nej, avsnitt kan inte kapslas in i varandra. Du kan dock ha flera avsnitt efter varandra, var och en med sin egen distinkta layout och formatering.
 
 ### Var kan jag hitta fler resurser på Aspose.Words?
 

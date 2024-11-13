@@ -74,7 +74,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 }
 ```
 
- Denna loop går igenom varje stycke och använder`IsMoveFromRevision`och`IsMoveToRevision` egenskaper för att avgöra om stycket har flyttats (raderats) eller flyttats (infogats).
+ Denna loop går igenom varje stycke och använder`IsMoveFromRevision` och`IsMoveToRevision` egenskaper för att avgöra om stycket har flyttats (raderats) eller flyttats (infogats).
 
 ## Slutsats
 

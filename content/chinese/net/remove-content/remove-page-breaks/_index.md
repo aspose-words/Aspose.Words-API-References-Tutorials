@@ -2,7 +2,7 @@
 title: 删除 Word 文档中的分页符
 linktitle: 删除分页符
 second_title: Aspose.Words 文档处理 API
-description: 通过我们的分步指南学习如何使用 Aspose.Words for .NET 删除 Word 文档中的分页符。增强您的文档处理技能。
+description: 通过我们的分步指南学习如何使用 Aspose.Words for .NET 删除 Word 文档中的分页符。提高您的文档处理技能。
 type: docs
 weight: 10
 url: /zh/net/remove-content/remove-page-breaks/

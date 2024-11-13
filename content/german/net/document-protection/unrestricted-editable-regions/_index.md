@@ -9,7 +9,7 @@ url: /de/net/document-protection/unrestricted-editable-regions/
 ---
 ## Einführung
 
-Wenn Sie schon immer ein Word-Dokument schützen, aber dennoch bestimmte Teile editierbar lassen wollten, sind Sie hier richtig! Diese Anleitung führt Sie durch den Prozess der Einrichtung uneingeschränkt editierbarer Bereiche in einem Word-Dokument mit Aspose.Words für .NET. Wir decken alles ab, von den Voraussetzungen bis zu den detaillierten Schritten, um sicherzustellen, dass Sie ein reibungsloses Erlebnis haben. Bereit? Lassen Sie uns eintauchen!
+Wenn Sie schon immer ein Word-Dokument schützen, aber dennoch bestimmte Teile editierbar lassen wollten, sind Sie hier richtig! Diese Anleitung führt Sie durch den Prozess der Einrichtung uneingeschränkt editierbarer Bereiche in einem Word-Dokument mit Aspose.Words für .NET. Wir decken alles ab, von den Voraussetzungen bis zu den detaillierten Schritten, um sicherzustellen, dass Sie ein reibungsloses Erlebnis haben. Bereit? Tauchen wir ein!
 
 ## Voraussetzungen
 
@@ -20,7 +20,7 @@ Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 3. Visual Studio: Jede aktuelle Version sollte einwandfrei funktionieren.
 4. Grundkenntnisse in C# und .NET: Diese helfen Ihnen dabei, dem Code zu folgen.
 
-Nun, da Sie bereit sind, können wir mit dem spaßigen Teil beginnen!
+Nun, da Sie fertig sind, können wir mit dem spaßigen Teil beginnen!
 
 ## Namespaces importieren
 
@@ -125,7 +125,7 @@ Ja, Sie können mehrere bearbeitbare Bereiche erstellen, indem Sie bearbeitbare 
 Aspose.Words unterstützt verschiedene Schutztypen wie AllowOnlyComments, AllowOnlyFormFields und NoProtection.
 
 ### Ist es möglich, den Schutz eines Dokuments aufzuheben?
- Ja, Sie können den Schutz entfernen mit dem`Unprotect` Methode und Eingabe des richtigen Passworts.
+ Ja, Sie können den Schutz entfernen mit dem`Unprotect` Methode und geben Sie das richtige Passwort ein.
 
 ### Kann ich für verschiedene Bereiche unterschiedliche Passwörter festlegen?
 Nein, der Schutz auf Dokumentebene wendet ein einziges Kennwort für das gesamte Dokument an.

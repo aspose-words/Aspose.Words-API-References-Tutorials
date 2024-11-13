@@ -2,7 +2,7 @@
 title: Menyimpan Dokumen sebagai File Teks di Aspose.Words untuk Java
 linktitle: Menyimpan Dokumen sebagai File Teks
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara menyimpan dokumen sebagai file teks di Aspose.Words untuk Java. Ikuti panduan langkah demi langkah kami dengan contoh kode Java.
+description: Pelajari cara menyimpan dokumen sebagai berkas teks di Aspose.Words untuk Java. Ikuti panduan langkah demi langkah kami dengan contoh kode Java.
 type: docs
 weight: 24
 url: /id/java/document-loading-and-saving/saving-documents-as-text-files/
@@ -10,19 +10,19 @@ url: /id/java/document-loading-and-saving/saving-documents-as-text-files/
 
 ## Pengantar Menyimpan Dokumen sebagai File Teks di Aspose.Words untuk Java
 
-Dalam tutorial ini, kita akan mempelajari cara menyimpan dokumen sebagai file teks menggunakan perpustakaan Aspose.Words untuk Java. Aspose.Words adalah Java API yang kuat untuk bekerja dengan dokumen Word, dan menyediakan berbagai opsi untuk menyimpan dokumen dalam berbagai format, termasuk teks biasa. Kami akan membahas langkah-langkah untuk mencapai hal ini dan memberikan contoh kode Java sepanjang prosesnya.
+Dalam tutorial ini, kita akan menjelajahi cara menyimpan dokumen sebagai berkas teks menggunakan pustaka Aspose.Words untuk Java. Aspose.Words adalah API Java yang hebat untuk bekerja dengan dokumen Word, dan menyediakan berbagai opsi untuk menyimpan dokumen dalam berbagai format, termasuk teks biasa. Kami akan membahas langkah-langkah untuk mencapainya dan menyediakan contoh kode Java di sepanjang jalan.
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
 
-- Java Development Kit (JDK) diinstal pada sistem Anda.
--  Aspose.Words untuk perpustakaan Java terintegrasi ke dalam proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
+- Java Development Kit (JDK) terinstal di sistem Anda.
+-  Pustaka Aspose.Words untuk Java terintegrasi ke dalam proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
 - Pengetahuan dasar tentang pemrograman Java.
 
 ## Langkah 1: Buat Dokumen
 
-Untuk menyimpan dokumen sebagai file teks, pertama-tama kita perlu membuat dokumen menggunakan Aspose.Words. Berikut cuplikan kode Java sederhana untuk membuat dokumen dengan beberapa konten:
+Untuk menyimpan dokumen sebagai berkas teks, pertama-tama kita perlu membuat dokumen menggunakan Aspose.Words. Berikut ini cuplikan kode Java sederhana untuk membuat dokumen dengan beberapa konten:
 
 ```java
 Document doc = new Document();
@@ -37,7 +37,7 @@ Dalam kode ini, kita membuat dokumen baru dan menambahkan beberapa teks ke dalam
 
 ## Langkah 2: Tentukan Opsi Penyimpanan Teks
 
-Selanjutnya, kita perlu menentukan opsi penyimpanan teks yang menentukan bagaimana dokumen harus disimpan sebagai file teks. Kita dapat mengkonfigurasi berbagai pengaturan seperti menambahkan tanda bidi, indentasi daftar, dan lainnya. Mari kita lihat dua contoh:
+Selanjutnya, kita perlu menentukan opsi penyimpanan teks yang menentukan bagaimana dokumen harus disimpan sebagai berkas teks. Kita dapat mengonfigurasi berbagai pengaturan seperti menambahkan tanda bidi, indentasi daftar, dan banyak lagi. Mari kita lihat dua contoh:
 
 ### Contoh 1: Menambahkan Tanda Bidi
 
@@ -47,7 +47,7 @@ saveOptions.setAddBidiMarks(true);
 doc.save("output.txt", saveOptions);
 ```
 
- Dalam contoh ini, kita membuat a`TxtSaveOptions` objek dan atur`AddBidiMarks`properti ke`true` untuk memasukkan tanda bidi dalam keluaran teks.
+ Dalam contoh ini, kita membuat`TxtSaveOptions` objek dan mengatur`AddBidiMarks`properti untuk`true` untuk menyertakan tanda bidi dalam keluaran teks.
 
 ### Contoh 2: Menggunakan Karakter Tab untuk Indentasi Daftar
 
@@ -62,15 +62,15 @@ Di sini, kami mengonfigurasi opsi penyimpanan untuk menggunakan karakter tab unt
 
 ## Langkah 3: Simpan Dokumen sebagai Teks
 
-Sekarang kita telah menentukan opsi penyimpanan teks, kita dapat menyimpan dokumen sebagai file teks. Kode berikut menunjukkan cara melakukan ini:
+Setelah kita menentukan opsi penyimpanan teks, kita dapat menyimpan dokumen sebagai file teks. Kode berikut menunjukkan cara melakukannya:
 
 ```java
 doc.save("output.txt", saveOptions);
 ```
 
- Mengganti`"output.txt"` dengan jalur file yang diinginkan tempat Anda ingin menyimpan file teks.
+ Mengganti`"output.txt"` dengan jalur berkas yang diinginkan di mana Anda ingin menyimpan berkas teks.
 
-## Kode Sumber Lengkap Untuk Menyimpan Dokumen sebagai File Teks di Aspose.Words untuk Java
+## Kode Sumber Lengkap Untuk Menyimpan Dokumen Sebagai File Teks di Aspose.Words untuk Java
 
 ```java
     public void addBidiMarks() throws Exception
@@ -89,7 +89,7 @@ doc.save("output.txt", saveOptions);
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Buat daftar dengan tiga tingkat lekukan.
+        // Buat daftar dengan tiga tingkat indentasi.
         builder.getListFormat().applyNumberDefault();
         builder.writeln("Item 1");
         builder.getListFormat().listIndent();
@@ -106,7 +106,7 @@ doc.save("output.txt", saveOptions);
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Buat daftar dengan tiga tingkat lekukan.
+        // Buat daftar dengan tiga tingkat indentasi.
         builder.getListFormat().applyNumberDefault();
         builder.writeln("Item 1");
         builder.getListFormat().listIndent();
@@ -122,22 +122,22 @@ doc.save("output.txt", saveOptions);
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita telah mempelajari cara menyimpan dokumen sebagai file teks di Aspose.Words untuk Java. Kami membahas langkah-langkah untuk membuat dokumen, menentukan opsi penyimpanan teks, dan menyimpan dokumen dalam format teks. Aspose.Words memberikan fleksibilitas luas dalam hal menyimpan dokumen, memungkinkan Anda menyesuaikan keluaran dengan kebutuhan spesifik Anda.
+Dalam tutorial ini, kita telah mempelajari cara menyimpan dokumen sebagai berkas teks di Aspose.Words untuk Java. Kita membahas langkah-langkah untuk membuat dokumen, menentukan opsi penyimpanan teks, dan menyimpan dokumen dalam format teks. Aspose.Words memberikan fleksibilitas yang luas dalam hal penyimpanan dokumen, yang memungkinkan Anda untuk menyesuaikan output dengan kebutuhan spesifik Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara menambahkan tanda bidi ke keluaran teks?
+### Bagaimana cara menambahkan tanda bidi pada keluaran teks?
 
- Untuk menambahkan tanda bidi pada keluaran teks, atur`AddBidiMarks` milik`TxtSaveOptions` ke`true`. Misalnya:
+ Untuk menambahkan tanda bidi ke keluaran teks, atur`AddBidiMarks` milik`TxtSaveOptions` ke`true`. Misalnya:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.setAddBidiMarks(true);
 ```
 
-### Bisakah saya mengkustomisasi karakter lekukan daftar?
+### Bisakah saya menyesuaikan karakter indentasi daftar?
 
- Ya, Anda dapat menyesuaikan karakter indentasi daftar dengan mengonfigurasi`ListIndentation` milik`TxtSaveOptions`. Misalnya, untuk menggunakan karakter tab untuk indentasi daftar, Anda dapat melakukan hal berikut:
+ Ya, Anda dapat menyesuaikan karakter indentasi daftar dengan mengonfigurasi`ListIndentation` milik`TxtSaveOptions`Misalnya, untuk menggunakan karakter tab untuk indentasi daftar, Anda dapat melakukan hal berikut:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -147,12 +147,12 @@ saveOptions.getListIndentation().setCharacter('\t');
 
 ### Apakah Aspose.Words untuk Java cocok untuk menangani teks multibahasa?
 
-Ya, Aspose.Words for Java cocok untuk menangani teks multibahasa. Ini mendukung berbagai bahasa dan pengkodean karakter, menjadikannya pilihan serbaguna untuk bekerja dengan dokumen dalam berbagai bahasa.
+Ya, Aspose.Words untuk Java cocok untuk menangani teks multibahasa. Mendukung berbagai bahasa dan penyandian karakter, menjadikannya pilihan serbaguna untuk bekerja dengan dokumen dalam berbagai bahasa.
 
-### Bagaimana saya bisa mengakses lebih banyak dokumentasi dan sumber daya untuk Aspose.Words untuk Java?
+### Bagaimana saya dapat mengakses lebih banyak dokumentasi dan sumber daya untuk Aspose.Words untuk Java?
 
- Anda dapat menemukan dokumentasi dan sumber daya komprehensif untuk Aspose.Words untuk Java di situs web dokumentasi Aspose:[Aspose.Words untuk Dokumentasi Java](https://reference.aspose.com/words/java/).
+ Anda dapat menemukan dokumentasi dan sumber daya yang komprehensif untuk Aspose.Words untuk Java di situs web dokumentasi Aspose:[Dokumentasi Aspose.Words untuk Java](https://reference.aspose.com/words/java/).
 
 ### Di mana saya dapat mengunduh Aspose.Words untuk Java?
 
- Anda dapat mengunduh perpustakaan Aspose.Words untuk Java dari situs web Aspose:[Unduh Aspose.Words untuk Java](https://releases.aspose.com/words/java/).
+ Anda dapat mengunduh pustaka Aspose.Words untuk Java dari situs web Aspose:[Unduh Aspose.Words untuk Java](https://releases.aspose.com/words/java/).

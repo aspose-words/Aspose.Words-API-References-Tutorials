@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## 3. lépés: Inicializálja a DocumentBuilder alkalmazást
 
- A`DocumentBuilder` osztály az elsődleges eszközünk, amellyel tartalmat adhatunk a dokumentumhoz. Tekintsd úgy, mint egy tollat, amely a Word dokumentumvásznára ír.
+A`DocumentBuilder` osztály az elsődleges eszközünk, amellyel tartalmat adhatunk a dokumentumhoz. Tekintsd úgy, mint egy tollat, amely a Word dokumentumvásznára ír.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

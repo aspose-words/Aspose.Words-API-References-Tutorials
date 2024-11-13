@@ -9,7 +9,7 @@ url: /de/net/join-and-append-documents/keep-source-formatting/
 ---
 ## Einführung
 
-In diesem Tutorial erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET zusammenführen und anhängen. Diese leistungsstarke Bibliothek bietet Entwicklern umfangreiche Möglichkeiten zur programmgesteuerten Bearbeitung von Word-Dokumenten. Wir konzentrieren uns auf die Methode, mit der die Quellformatierung beim Zusammenführen von Dokumenten intakt bleibt und die ursprünglichen Stile und Layouts nahtlos erhalten bleiben.
+In diesem Tutorial erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET zusammenführen und anhängen. Diese leistungsstarke Bibliothek bietet Entwicklern umfangreiche Möglichkeiten zur programmgesteuerten Bearbeitung von Word-Dokumenten. Wir konzentrieren uns auf die Methode, mit der die Quellformatierung beim Zusammenführen von Dokumenten intakt bleibt und sichergestellt wird, dass die ursprünglichen Stile und Layouts nahtlos erhalten bleiben.
 
 ## Voraussetzungen
 

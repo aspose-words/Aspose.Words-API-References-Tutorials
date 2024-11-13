@@ -30,7 +30,7 @@ Az Aspose.Words for Java használatához tartalmaznia kell az Aspose.Words JAR f
 
 ## Dokumentumok betöltése és kezelése
 
-Miután beállította az Aspose.Words for Java programot, megkezdheti a dokumentumok betöltését és kezelését. Az Aspose.Words különféle dokumentumformátumokat támogat, például DOCX, DOC, RTF, HTML stb. Ezeket a dokumentumokat betöltheti a memóriába, és programozottan elérheti a tartalmukat.
+Miután beállította az Aspose.Words for Java programot, megkezdheti a dokumentumok betöltését és kezelését. Az Aspose.Words különféle dokumentumformátumokat támogat, mint például a DOCX, DOC, RTF, HTML stb. Ezeket a dokumentumokat betöltheti a memóriába, és programozottan elérheti a tartalmukat.
 
 ### Különböző dokumentumformátumok betöltése
 

@@ -15,7 +15,7 @@ url: /zh/net/programming-with-table-styles-and-formatting/build-table-with-style
 
 在我们进入分步指南之前，请确保您已准备好所需的一切：
 
-1.  适用于 .NET 的 Aspose.Words：如果您还没有，请下载并安装[Aspose.Words for .NET](https://releases.aspose.com/words/net/).
+1.  适用于 .NET 的 Aspose.Words：如果尚未安装，请下载并安装[Aspose.Words for .NET](https://releases.aspose.com/words/net/).
 2. 开发环境：您应该设置一个开发环境。Visual Studio 是本教程的绝佳选择。
 3. C# 基础知识：熟悉 C# 编程将帮助您更轻松地跟上。
 

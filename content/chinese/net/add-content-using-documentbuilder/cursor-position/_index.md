@@ -9,7 +9,7 @@ url: /zh/net/add-content-using-documentbuilder/cursor-position/
 ---
 ## 介绍
 
-嗨，各位程序员们！您是否曾经发现自己在项目中陷入困境，在 .NET 应用程序中与 Word 文档搏斗？您并不孤单。我们都曾有过这样的经历，绞尽脑汁，试图找出如何在不失去理智的情况下操作 Word 文件。今天，我们将深入研究 Aspose.Words for .NET 的世界——这是一个很棒的库，可以让您轻松地以编程方式处理 Word 文档。我们将分解如何使用这个漂亮的工具来管理 Word 文档中的光标位置。所以，拿起咖啡，让我们开始编码吧！
+嗨，各位程序员们！您是否曾经发现自己深陷于一个项目中，在 .NET 应用程序中与 Word 文档搏斗？您并不孤单。我们都曾有过这样的经历，绞尽脑汁，试图找出如何在不失去理智的情况下操作 Word 文件。今天，我们将深入研究 Aspose.Words for .NET 的世界——这是一个非常棒的库，它可以让您轻松地以编程方式处理 Word 文档。我们将分解如何使用这个漂亮的工具来管理 Word 文档中的光标位置。所以，拿起咖啡，让我们开始编码吧！
 
 ## 先决条件
 
@@ -19,7 +19,7 @@ url: /zh/net/add-content-using-documentbuilder/cursor-position/
 2. 已安装 Visual Studio：任何最新版本都可以。如果你还没有，你可以从[地点](https://visualstudio.microsoft.com/).
 3. Aspose.Words for .NET Library：您需要下载并安装此库。您可以从以下位置获取[这里](https://releases.aspose.com/words/net/).
 
-好吧，如果您已经准备好了一切，让我们继续进行设置！
+好吧，如果您已经准备好了，让我们继续进行设置！
 
 ### 创建新项目
 
@@ -55,7 +55,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### 添加一些内容
 
-为了查看光标的实际操作，让我们在文档中添加一个段落。
+为了查看光标的实际作用，让我们在文档中添加一个段落。
 
 ```csharp
 builder.Writeln("Hello, Aspose.Words!");

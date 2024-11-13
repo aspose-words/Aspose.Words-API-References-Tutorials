@@ -81,7 +81,7 @@ private static float convertScalingFactor(String scalingFactor) throws Exception
 
 ## A GetBarCodeImage() metódus megvalósítása
 
- Ebben a lépésben megvalósítjuk a`getBarcodeImage` módszerrel, amely a megadott paraméterek alapján állítja elő a vonalkód képet. Különböző vonalkód-típusokat kezelünk, színeket állítunk be, méreteket állítunk be és még sok mást. Íme a módszer kódja:
+ Ebben a lépésben megvalósítjuk a`getBarcodeImage`módszerrel, amely a megadott paraméterek alapján állítja elő a vonalkód képet. Különböző vonalkód-típusokat kezelünk, színeket állítunk be, méreteket állítunk be és még sok mást. Íme a módszer kódja:
 
 ```java
 /// <összefoglaló>
@@ -121,7 +121,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
 	}
 	
-	// kódszöveg helyének testreszabása
+	// A kódszöveg helyének testreszabása
 	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
 	if (parameters.getDisplayText())
 		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
@@ -160,7 +160,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 
 ## A GetOldBarcodeImage() metódus megvalósítása
 
- Ebben a lépésben megvalósítjuk a`getOldBarcodeImage` módszerrel, amely vonalkód képeket generál a régimódi vonalkódokhoz. Itt egy adott vonalkódtípust kezelünk, például a POSTNET-et. Íme a módszer kódja:
+ Ebben a lépésben megvalósítjuk a`getOldBarcodeImage`módszerrel, amely vonalkód képeket generál a régimódi vonalkódokhoz. Itt egy adott vonalkódtípust kezelünk, például a POSTNET-et. Íme a módszer kódja:
 
 ```java
 /// <összefoglaló>
@@ -201,7 +201,7 @@ Az Aspose.Words for Java különféle vonalkódtípusokat támogat, beleértve a
 
 ### Hogyan integrálhatom a generált vonalkódot a Word dokumentumomba?
 
-generált vonalkód Word dokumentumba való integrálásához használhatja az Aspose.Words for Java dokumentumkezelési képességeit. A vonalkód képet a kívánt helyre beillesztheti a dokumentumba.
+A generált vonalkód Word dokumentumba való integrálásához használhatja az Aspose.Words for Java dokumentumkezelési képességeit. A vonalkód képet a kívánt helyre beillesztheti a dokumentumba.
 
 ### Rendelkezésre áll valamilyen mintakód a további testreszabáshoz?
 

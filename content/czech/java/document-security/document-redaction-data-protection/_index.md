@@ -8,7 +8,7 @@ weight: 14
 url: /cs/java/document-security/document-redaction-data-protection/
 ---
 
-V dnešní digitální době je ochrana citlivých informací a soukromí dat prvořadá. Ať už pracujete s právními dokumenty, finančními zprávami nebo lékařskými záznamy, je zásadní zajistit, aby důvěrné informace zůstaly důvěrné. Tento podrobný průvodce vás provede procesem redakce dokumentů a ochrany dat pomocí Aspose.Words for Java, výkonného Java API, které vám umožňuje snadno manipulovat s dokumenty Wordu.
+V dnešní digitální době je ochrana citlivých informací a soukromí dat prvořadá. Ať už pracujete s právními dokumenty, finančními zprávami nebo lékařskými záznamy, je zásadní zajistit, aby důvěrné informace zůstaly důvěrné. Tento podrobný průvodce vás provede procesem redakce dokumentů a ochrany dat pomocí Aspose.Words for Java, výkonného Java API, které vám umožňuje snadno manipulovat s dokumenty aplikace Word.
 
 ## Zavedení
 

@@ -39,11 +39,11 @@ using Aspose.Words;
 
 開発環境 (Visual Studio など) を開き、新しい C# プロジェクトを作成します。このプロジェクトで、Aspose.Words の魔法が働きます。
 
-### Aspose.Wordsをプロジェクトに追加する
+### プロジェクトに Aspose.Words を追加する
 
 Aspose.Wordsへの参照を追加してください。まだダウンロードしていない場合は、ここからダウンロードしてください。[ここ](https://releases.aspose.com/words/net/)NuGet パッケージ マネージャーを使用してプロジェクトに追加できます。
 
-## ステップ2: DocumentとDocumentBuilderを初期化する
+## ステップ 2: Document と DocumentBuilder を初期化する
 
 ### 新しいドキュメントを作成する
 
@@ -97,13 +97,13 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
-これで完了です。Aspose.Words for .NET を使用して、Word 文書に水平線を正常に挿入できました。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書に水平線を挿入できました。
 
 ## 結論
 
 おめでとうございます。最後までお読みいただきました! 🎉 このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に水平線を挿入する方法を学びました。このスキルは、プロフェッショナルで構造化された文書を作成するのに非常に役立ちます。新しいツールを習得する鍵は練習であることを忘れないでください。Aspose.Words のさまざまな要素や設定をためらわずに試してみてください。
 
-詳細については、[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)楽しいコーディングを！
+詳細については、[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/). 楽しいコーディングを！
 
 ## よくある質問
 

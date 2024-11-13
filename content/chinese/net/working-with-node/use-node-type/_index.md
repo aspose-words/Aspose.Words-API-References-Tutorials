@@ -69,7 +69,7 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 您可以检查`NodeType`通过访问节点`NodeType`属性，如下所示：`NodeType type = node.NodeType;`.
 
-### 我是否可以基于`NodeType`?
+### 我是否可以执行基于`NodeType`?
 
 可以，您可以根据`NodeType`。例如，您可以通过检查节点的`NodeType`是`NodeType.Paragraph`.
 

@@ -64,7 +64,7 @@ format.CharacterUnitRightIndent = 10; // ParagraphFormat.RightIndent wird aktual
 format.CharacterUnitFirstLineIndent = 20;  // ParagraphFormat.FirstLineIndent wird aktualisiert
 ```
 
-Diese Codezeilen setzen den linken Einzug, den rechten Einzug und den Einzug der ersten Zeile auf jeweils 10, 10 und 20 Zeicheneinheiten. Dadurch sieht der Text ordentlich und strukturiert aus.
+Diese Codezeilen setzen den linken Einzug, den rechten Einzug und den Einzug der ersten Zeile jeweils auf 10, 10 und 20 Zeicheneinheiten. Dadurch sieht der Text ordentlich und strukturiert aus.
 
 ## Schritt 4: Zeilenabstand vor und nach anpassen
 

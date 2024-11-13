@@ -144,4 +144,4 @@ A tady to máte! Právě jste se naučili formátovat tabulky a buňky s různý
 Přestože Aspose.Words přímo nepodporuje obrázky jako pozadí buněk, můžete do buňky vložit obrázek a upravit jeho velikost tak, aby pokryla oblast buňky.
 
 ### Jak sloučím buňky v tabulce?
- Buňky můžete sloučit pomocí`CellFormat.HorizontalMerge`a`CellFormat.VerticalMerge` vlastnosti.
+ Buňky můžete sloučit pomocí`CellFormat.HorizontalMerge` a`CellFormat.VerticalMerge` vlastnosti.

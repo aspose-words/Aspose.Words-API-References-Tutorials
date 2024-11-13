@@ -1,36 +1,36 @@
 ---
-title: Word Belgesinde Yer İmine Göre Satırı Sil
-linktitle: Word Belgesinde Yer İmine Göre Satırı Sil
+title: Word Belgesinde Yer İmi Satırını Sil
+linktitle: Word Belgesinde Yer İmi Satırını Sil
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak bir Word belgesinde yer işaretine göre bir satırı nasıl sileceğinizi öğrenin. Etkin belge yönetimi için adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for .NET kullanarak Word belgesinde yer imiyle bir satırı nasıl sileceğinizi öğrenin. Verimli belge yönetimi için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 ## giriiş
 
-Bir Word belgesinde bir satırı yer imine göre silmek karmaşık görünebilir, ancak Aspose.Words for .NET ile bu çok kolaydır. Bu kılavuz, bu görevi verimli bir şekilde gerçekleştirmek için bilmeniz gereken her şeyi size anlatacaktır. Dalmaya hazır mısınız? Hadi başlayalım!
+Word belgesinde yer imiyle bir satırı silmek karmaşık gelebilir, ancak .NET için Aspose.Words ile bu çok kolaydır. Bu kılavuz, bu görevi etkili bir şekilde gerçekleştirmek için bilmeniz gereken her şeyi size anlatacaktır. Başlamaya hazır mısınız? Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-Koda geçmeden önce aşağıdakilere sahip olduğunuzdan emin olun:
+Koda geçmeden önce aşağıdakilerin mevcut olduğundan emin olun:
 
--  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olduğundan emin olun. adresinden indirebilirsiniz.[Aspose sürümler sayfası](https://releases.aspose.com/words/net/).
-- Geliştirme Ortamı: Visual Studio veya .NET geliştirmeyi destekleyen başka bir IDE.
-- Temel C# Bilgisi: C# programlamaya aşinalık, öğreticiyi takip etmenize yardımcı olacaktır.
+-  Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olduğundan emin olun. Bunu şuradan indirebilirsiniz:[Aspose sürüm sayfası](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio veya .NET geliştirmeyi destekleyen herhangi bir IDE.
+- Temel C# Bilgisi: C# programlamaya aşina olmanız eğitimi takip etmenize yardımcı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları Aspose.Words'te Word belgeleriyle çalışmak için gereken sınıfları ve yöntemleri sağlar.
+Başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları, Aspose.Words'de Word belgeleriyle çalışmak için gereken sınıfları ve yöntemleri sağlar.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Süreci yönetilebilir adımlara ayıralım. Word belgenizdeki bir satırı yer imine göre nasıl sileceğinizi anlamanızı sağlamak için her adım ayrıntılı olarak açıklanacaktır.
+İşlemi yönetilebilir adımlara bölelim. Her adım, Word belgenizde yer imine göre bir satırı nasıl sileceğinizi anlamanızı sağlamak için ayrıntılı olarak açıklanacaktır.
 
-## 1. Adım: Belgeyi Yükleyin
+## Adım 1: Belgeyi Yükleyin
 
 Öncelikle yer imini içeren Word belgesini yüklemeniz gerekir. Bu belge, bir satırı silmek istediğiniz belge olacaktır.
 
@@ -40,23 +40,23 @@ Document doc = new Document("your-document.docx");
 
 ## Adım 2: Yer İşaretini Bulun
 
-Ardından, belgedeki yer işaretini bulun. Yer imi, silmek istediğiniz belirli satırı tanımlamanıza yardımcı olacaktır.
+Sonra, belgedeki yer imini bulun. Yer imi, silmek istediğiniz belirli satırı belirlemenize yardımcı olacaktır.
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks["YourBookmarkName"];
 ```
 
-## 3. Adım: Satırı Tanımlayın
+## Adım 3: Satırı Belirleyin
 
- Yer imini aldıktan sonra, yer imini içeren satırı tanımlamanız gerekir. Bu, yer iminin türü olan atasına gitmeyi içerir.`Row`.
+ Yer işaretine sahip olduğunuzda, yer işaretini içeren satırı tanımlamanız gerekir. Bu, yer işaretinin atasına gitmeyi içerir, bu da türdedir`Row`.
 
 ```csharp
 Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
 ```
 
-## Adım 4: Satırı Kaldır
+## Adım 4: Satırı Kaldırın
 
-Artık satırı tanımladığınıza göre onu belgeden kaldırmaya devam edebilirsiniz. İstisnalardan kaçınmak için olası boş değerleri ele aldığınızdan emin olun.
+Artık satırı tanımladığınıza göre, onu belgeden kaldırmaya devam edebilirsiniz. İstisnaları önlemek için olası boş değerleri işlediğinizden emin olun.
 
 ```csharp
 row?.Remove();
@@ -64,7 +64,7 @@ row?.Remove();
 
 ## Adım 5: Belgeyi Kaydedin
 
-Satırı sildikten sonra, değişiklikleri yansıtacak şekilde belgeyi kaydedin. Bu, yer işaretine göre bir satırı silme işlemini tamamlayacaktır.
+Satırı sildikten sonra, değişiklikleri yansıtmak için belgeyi kaydedin. Bu, bir satırı yer imine göre silme işlemini tamamlayacaktır.
 
 ```csharp
 doc.Save("output-document.docx");
@@ -72,21 +72,21 @@ doc.Save("output-document.docx");
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesindeki bir satırı yer imine göre silmek, bunu basit adımlara böldüğünüzde çok kolaydır. Bu yöntem, yer imlerine dayalı olarak satırları hassas bir şekilde hedefleyip kaldırabilmenizi sağlayarak belge yönetimi görevlerinizi daha verimli hale getirmenizi sağlar.
+Ve işte oldu! Aspose.Words for .NET kullanarak bir Word belgesinde yer imlerine göre bir satırı silmek, basit adımlara böldüğünüzde basittir. Bu yöntem, yer imlerine göre satırları hassas bir şekilde hedefleyebilmenizi ve kaldırabilmenizi sağlayarak belge yönetimi görevlerinizi daha verimli hale getirir.
 
-## SSS'ler
+## SSS
 
-### Yer işaretlerini kullanarak birden fazla satırı silebilir miyim?
-Evet, birden çok yer imini yineleyerek ve aynı yöntemi uygulayarak birden çok satırı silebilirsiniz.
+### Yer imlerini kullanarak birden fazla satırı silebilir miyim?
+Evet, birden fazla yer imi üzerinde gezinerek ve aynı yöntemi uygulayarak birden fazla satırı silebilirsiniz.
 
 ### Yer imi bulunamazsa ne olur?
- Yer imi bulunamazsa,`row` değişken boş olacak ve`Remove` yöntem çağrılmayacak, böylece herhangi bir hata önlenecektir.
+ Yer imi bulunamazsa,`row` değişken boş olacak ve`Remove` Herhangi bir hata oluşmasını engellemek için metot çağrılmayacaktır.
 
 ### Belgeyi kaydettikten sonra silme işlemini geri alabilir miyim?
-Belge kaydedildikten sonra değişiklikler kalıcı olur. Değişiklikleri geri almanız gerekiyorsa yedek tuttuğunuzdan emin olun.
+Belge kaydedildikten sonra değişiklikler kalıcıdır. Değişiklikleri geri almanız gerekirse bir yedek tuttuğunuzdan emin olun.
 
-### Bir satırı başka kriterlere göre silmek mümkün müdür?
-Evet, Aspose.Words for .NET, farklı kriterlere göre belge öğelerinde gezinmek ve bunları değiştirmek için çeşitli yöntemler sunar.
+### Başka kriterlere göre bir satırı silmek mümkün müdür?
+Evet, Aspose.Words for .NET, farklı ölçütlere göre belge öğelerinde gezinmek ve bunları düzenlemek için çeşitli yöntemler sunar.
 
-### Bu yöntem tüm Word belgesi türlerinde işe yarar mı?
+### Bu yöntem her türlü Word belgesi için işe yarıyor mu?
 Bu yöntem Aspose.Words for .NET ile uyumlu belgeler için işe yarar. Belge formatınızın desteklendiğinden emin olun.

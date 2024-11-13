@@ -23,7 +23,7 @@ När du har ordnat dessa är du redo att gå!
 
 ## Importera namnområden
 
-Innan vi dyker in i koden, låt oss se till att vi har de nödvändiga namnrymden importerade. I ditt C#-projekt, se till att inkludera:
+Innan vi dyker in i koden, låt oss se till att vi har de nödvändiga namnrymden importerade. Se till att inkludera i ditt C#-projekt:
 
 ```csharp
 using Aspose.Words;

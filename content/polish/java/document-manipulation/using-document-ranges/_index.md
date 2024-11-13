@@ -2,19 +2,19 @@
 title: Korzystanie z zakresów dokumentów w Aspose.Words dla Java
 linktitle: Korzystanie z zakresów dokumentów
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Manipulacja zakresem dokumentu głównego w Aspose.Words dla Java. Dzięki temu obszernemu przewodnikowi nauczysz się usuwać, wyodrębniać i formatować tekst.
+description: Opanuj manipulację zakresem dokumentu w Aspose.Words dla Java. Naucz się usuwać, wyodrębniać i formatować tekst dzięki temu kompleksowemu przewodnikowi.
 type: docs
 weight: 18
 url: /pl/java/document-manipulation/using-document-ranges/
 ---
 
-## Wprowadzenie do korzystania z zakresów dokumentów w Aspose.Words dla Java
+## Wprowadzenie do używania zakresów dokumentów w Aspose.Words dla Java
 
-tym obszernym przewodniku odkryjemy, jak wykorzystać moc zakresów dokumentów w Aspose.Words dla Java. Dowiesz się, jak manipulować tekstem i wyodrębniać go z określonych części dokumentu, otwierając przed Tobą świat możliwości przetwarzania dokumentów w języku Java.
+tym kompleksowym przewodniku przyjrzymy się, jak wykorzystać moc zakresów dokumentów w Aspose.Words for Java. Dowiesz się, jak manipulować tekstem i wyodrębniać go z określonych części dokumentu, otwierając świat możliwości dla Twoich potrzeb przetwarzania dokumentów Java.
 
 ## Pierwsze kroki
 
- Zanim zagłębisz się w kod, upewnij się, że w swoim projekcie masz skonfigurowaną bibliotekę Aspose.Words for Java. Można go pobrać z[Tutaj](https://releases.aspose.com/words/java/).
+ Zanim zagłębisz się w kod, upewnij się, że w swoim projekcie masz skonfigurowaną bibliotekę Aspose.Words for Java. Możesz ją pobrać ze strony[Tutaj](https://releases.aspose.com/words/java/).
 
 ## Tworzenie dokumentu
 
@@ -24,9 +24,9 @@ Zacznijmy od utworzenia obiektu dokumentu. W tym przykładzie użyjemy przykład
 Document doc = new Document("Your Directory Path" + "Document.docx");
 ```
 
-## Usuwanie zakresu dokumentów
+## Usuwanie zakresu dokumentu
 
-Jednym z typowych przypadków użycia zakresów dokumentów jest usuwanie określonej zawartości. Załóżmy, że chcesz usunąć zawartość pierwszej sekcji dokumentu. Można to osiągnąć za pomocą następującego kodu:
+Jednym z powszechnych przypadków użycia zakresów dokumentów jest usuwanie określonej zawartości. Załóżmy, że chcesz usunąć zawartość w pierwszej sekcji dokumentu. Możesz to osiągnąć, używając następującego kodu:
 
 ```java
 doc.getSections().get(0).getRange().delete();
@@ -34,7 +34,7 @@ doc.getSections().get(0).getRange().delete();
 
 ## Wyodrębnianie tekstu z zakresu dokumentu
 
-Wyodrębnianie tekstu z zakresu dokumentów to kolejna cenna funkcja. Aby uzyskać tekst mieszczący się w zakresie, użyj następującego kodu:
+Wyodrębnianie tekstu z zakresu dokumentu to kolejna cenna możliwość. Aby uzyskać tekst z zakresu, użyj następującego kodu:
 
 ```java
 @Test
@@ -47,30 +47,30 @@ public void rangesGetText() throws Exception
 
 ## Manipulowanie zakresami dokumentów
 
-Aspose.Words dla Java oferuje szeroką gamę metod i właściwości do manipulowania zakresami dokumentów. W tych zakresach możesz wstawiać, formatować i wykonywać różne operacje, dzięki czemu jest to wszechstronne narzędzie do edycji dokumentów.
+Aspose.Words for Java oferuje szeroki zakres metod i właściwości do manipulowania zakresami dokumentów. Możesz wstawiać, formatować i wykonywać różne operacje w tych zakresach, co czyni go wszechstronnym narzędziem do edycji dokumentów.
 
 ## Wniosek
 
-Zakresy dokumentów w Aspose.Words for Java zapewniają możliwość wydajnej pracy z określonymi częściami dokumentów. Niezależnie od tego, czy chcesz usunąć treść, wyodrębnić tekst, czy wykonać złożone operacje, zrozumienie sposobu korzystania z zakresów dokumentów jest cenną umiejętnością.
+Zakresy dokumentów w Aspose.Words for Java umożliwiają wydajną pracę z określonymi częściami dokumentów. Niezależnie od tego, czy musisz usunąć zawartość, wyodrębnić tekst, czy wykonać złożone manipulacje, zrozumienie, jak używać zakresów dokumentów, jest cenną umiejętnością.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest zakres dokumentów?
+### Czym jest zakres dokumentu?
 
-Zakres dokumentów w Aspose.Words for Java to określona część dokumentu, którą można niezależnie manipulować lub wyodrębniać. Umożliwia wykonywanie ukierunkowanych operacji w dokumencie.
+Zakres dokumentu w Aspose.Words for Java to konkretna część dokumentu, którą można niezależnie manipulować lub wyodrębniać. Umożliwia wykonywanie ukierunkowanych operacji w dokumencie.
 
-### Jak usunąć zawartość z zakresu dokumentu?
+### Jak usunąć zawartość zakresu dokumentu?
 
- Aby usunąć zawartość w zakresie dokumentu, możesz użyć opcji`delete()` metoda. Na przykład,`doc.getRange().delete()` usunie zawartość w całym zakresie dokumentu.
+ Aby usunąć zawartość w zakresie dokumentu, możesz użyć`delete()` metoda. Na przykład,`doc.getRange().delete()` usunie zawartość całego dokumentu.
 
-### Czy mogę sformatować tekst w zakresie dokumentu?
+### Czy mogę formatować tekst w obrębie dokumentu?
 
-Tak, możesz formatować tekst w zakresie dokumentu, korzystając z różnych metod formatowania i właściwości udostępnianych przez Aspose.Words dla Java.
+Tak, możesz formatować tekst w obrębie dokumentu, korzystając z różnych metod formatowania i właściwości udostępnianych przez Aspose.Words dla Java.
 
 ### Czy zakresy dokumentów są przydatne do wyodrębniania tekstu?
 
-Absolutnie! Zakresy dokumentów są przydatne do wyodrębniania tekstu z określonych części dokumentu, co ułatwia pracę z wyodrębnionymi danymi.
+Oczywiście! Zakresy dokumentów są przydatne do wyodrębniania tekstu z określonych części dokumentu, co ułatwia pracę z wyodrębnionymi danymi.
 
-### Gdzie mogę znaleźć bibliotekę Aspose.Words dla Java?
+### Gdzie mogę znaleźć bibliotekę Aspose.Words for Java?
 
- Możesz pobrać bibliotekę Aspose.Words for Java ze strony internetowej Aspose[Tutaj](https://releases.aspose.com/words/java/).
+ Bibliotekę Aspose.Words for Java można pobrać ze strony internetowej Aspose[Tutaj](https://releases.aspose.com/words/java/).

@@ -62,7 +62,7 @@ Shape shape2 = new Shape(doc, ShapeType.TextBox);
 
 V tomto úryvku:
 - `ShapeType.TextBox` určuje, že tvary, které vytváříme, jsou textová pole.
-- `shape1`a`shape2` jsou naše dvě textová pole.
+- `shape1` a`shape2` jsou naše dvě textová pole.
 
 ## Krok 3: Přístup k objektům TextBox
 
@@ -77,7 +77,7 @@ TextBox textBox1 = shape1.TextBox;
 TextBox textBox2 = shape2.TextBox;
 ```
 
- Tyto řádky ukládají`TextBox` objektů z tvarů do`textBox1`a`textBox2`.
+ Tyto řádky ukládají`TextBox` objektů z tvarů do`textBox1` a`textBox2`.
 
 ## Krok 4: Propojení textových polí
 
@@ -132,7 +132,7 @@ Ano, můžete propojit více textových polí v sekvenci. Jen se ujistěte, že 
 Text uvnitř každého textového pole můžete stylizovat stejně jako jakýkoli jiný text v dokumentu aplikace Word pomocí bohatých možností formátování Aspose.Words nebo uživatelského rozhraní aplikace Word.
 
 ### Je možné odpojit textová pole, jakmile jsou propojena?
- Ano, můžete odpojit textová pole nastavením`Next` vlastnictvím`TextBox` namítat proti`null`.
+ Ano, můžete odpojit textová pole nastavením`Next` vlastnictví`TextBox` namítat proti`null`.
 
 ### Kde najdu další návody na Aspose.Words pro .NET?
  Další návody a zdroje naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).

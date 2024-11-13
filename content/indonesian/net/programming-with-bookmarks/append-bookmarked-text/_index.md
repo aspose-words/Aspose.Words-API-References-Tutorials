@@ -1,28 +1,28 @@
 ---
-title: Tambahkan Teks yang Ditandai Dalam Dokumen Word
-linktitle: Tambahkan Teks yang Ditandai Dalam Dokumen Word
+title: Menambahkan Teks yang Ditandai di Dokumen Word
+linktitle: Menambahkan Teks yang Ditandai di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menambahkan teks yang ditandai di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk pengembang.
+description: Pelajari cara menambahkan teks yang diberi bookmark dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk pengembang.
 type: docs
 weight: 10
 url: /id/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 ## Perkenalan
 
-Hai! Pernah mencoba menambahkan teks dari bagian yang diberi bookmark di dokumen Word dan ternyata rumit? Anda beruntung! Tutorial ini akan memandu Anda melalui proses menggunakan Aspose.Words untuk .NET. Kami akan membaginya menjadi beberapa langkah sederhana sehingga Anda dapat mengikutinya dengan mudah. Mari selami dan tambahkan teks yang diberi bookmark seperti seorang profesional!
+Hai! Pernah mencoba menambahkan teks dari bagian yang ditandai di dokumen Word dan merasa kesulitan? Anda beruntung! Tutorial ini akan memandu Anda melalui proses menggunakan Aspose.Words untuk .NET. Kami akan menguraikannya menjadi beberapa langkah sederhana sehingga Anda dapat mengikutinya dengan mudah. Mari kita mulai dan tambahkan teks yang ditandai seperti seorang profesional!
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita mulai, mari pastikan Anda memiliki semua yang Anda butuhkan:
 
--  Aspose.Words untuk .NET: Pastikan Anda telah menginstalnya. Jika tidak, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
-- Lingkungan Pengembangan: Lingkungan pengembangan .NET apa pun seperti Visual Studio.
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstalnya. Jika belum, Anda dapat[unduh disini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Lingkungan pengembangan .NET seperti Visual Studio.
 - Pengetahuan Dasar C#: Memahami konsep dasar pemrograman C# akan membantu.
-- Dokumen Word dengan Bookmark: Dokumen Word dengan bookmark yang diatur, yang akan kita gunakan untuk menambahkan teks.
+- Dokumen Word dengan Penanda: Dokumen Word dengan penanda yang telah disiapkan, yang akan kita gunakan untuk menambahkan teks.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini akan memastikan kita memiliki semua alat yang kita butuhkan di ujung jari kita.
+Pertama-tama, mari impor namespace yang diperlukan. Ini akan memastikan kita memiliki semua alat yang kita butuhkan di ujung jari kita.
 
 ```csharp
 using System;
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Importing;
 ```
 
-Mari kita pecahkan contoh ini menjadi langkah-langkah mendetail.
+Mari kita uraikan contoh tersebut ke dalam langkah-langkah terperinci.
 
 ## Langkah 1: Muat Dokumen dan Inisialisasi Variabel
 
@@ -44,28 +44,28 @@ Document dstDoc = new Document("destination.docx");
 // Inisialisasi pengimpor dokumen.
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
 
-// Temukan bookmark di dokumen sumber.
+// Temukan penanda buku di dokumen sumber.
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
 ```
 
 ## Langkah 2: Identifikasi Paragraf Awal dan Akhir
 
-Sekarang, mari cari paragraf di mana penanda dimulai dan diakhiri. Hal ini penting karena kita perlu menangani teks dalam batas-batas ini.
+Sekarang, mari kita cari paragraf tempat penanda dimulai dan berakhir. Ini penting karena kita perlu menangani teks dalam batasan ini.
 
 ```csharp
-// Ini adalah paragraf yang berisi awal penanda.
+// Ini adalah paragraf yang memuat awal penanda buku.
 Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
 
-// Ini adalah paragraf yang berisi akhir dari bookmark.
+// Ini adalah paragraf yang berisi akhir penanda buku.
 Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
 
 if (startPara == null || endPara == null)
     throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## Langkah 3: Validasi Paragraf Orang Tua
+## Langkah 3: Validasi Orang Tua Paragraf
 
-Kita perlu memastikan paragraf awal dan akhir memiliki induk yang sama. Ini adalah skenario sederhana untuk menjaga segala sesuatunya tetap sederhana.
+Kita perlu memastikan paragraf awal dan akhir memiliki induk yang sama. Ini adalah skenario sederhana untuk menjaga semuanya tetap sederhana.
 
 ```csharp
 // Batasi diri kita pada skenario yang cukup sederhana.
@@ -75,50 +75,50 @@ if (startPara.ParentNode != endPara.ParentNode)
 
 ## Langkah 4: Identifikasi Node yang Akan Dihentikan
 
-Selanjutnya, kita perlu menentukan node dimana kita akan berhenti menyalin teks. Ini akan menjadi simpul tepat setelah paragraf akhir.
+Selanjutnya, kita perlu menentukan titik di mana kita akan berhenti menyalin teks. Ini akan menjadi titik tepat setelah paragraf terakhir.
 
 ```csharp
 // Kami ingin menyalin semua paragraf dari paragraf awal hingga (dan termasuk) paragraf akhir,
-// oleh karena itu simpul tempat kita berhenti adalah satu setelah paragraf akhir.
+// Oleh karena itu, simpul tempat kita berhenti adalah simpul setelah paragraf akhir.
 Node endNode = endPara.NextSibling;
 ```
 
 ## Langkah 5: Tambahkan Teks yang Ditandai ke Dokumen Tujuan
 
-Terakhir, mari kita ulangi node dari paragraf awal ke node setelah paragraf akhir, dan menambahkannya ke dokumen tujuan.
+Terakhir, mari kita mengulang simpul dari paragraf awal ke simpul setelah paragraf akhir, dan menambahkannya ke dokumen tujuan.
 
 ```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-    // Ini membuat salinan node saat ini dan mengimpornya (membuatnya valid) dalam konteksnya
+    // Ini membuat salinan dari node saat ini dan mengimpornya (membuatnya valid) dalam konteks
     // dari dokumen tujuan. Mengimpor berarti menyesuaikan gaya dan pengidentifikasi daftar dengan benar.
     Node newNode = importer.ImportNode(curNode, true);
 
-    // Tambahkan node yang diimpor ke dokumen tujuan.
+    // Tambahkan simpul yang diimpor ke dokumen tujuan.
     dstDoc.FirstSection.Body.AppendChild(newNode);
 }
 
-// Simpan dokumen tujuan dengan teks yang ditambahkan.
+// Simpan dokumen tujuan dengan teks terlampir.
 dstDoc.Save("appended_document.docx");
 ```
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil menambahkan teks dari bagian yang ditandai di dokumen Word menggunakan Aspose.Words untuk .NET. Alat canggih ini membuat manipulasi dokumen menjadi mudah, dan sekarang Anda memiliki satu trik lagi. Selamat membuat kode!
+Nah, itu dia! Anda telah berhasil menambahkan teks dari bagian yang ditandai dalam dokumen Word menggunakan Aspose.Words for .NET. Alat canggih ini memudahkan manipulasi dokumen, dan kini Anda memiliki satu trik lagi. Selamat membuat kode!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya menambahkan teks dari beberapa bookmark sekaligus?
-Ya, Anda dapat mengulangi proses untuk setiap bookmark dan menambahkan teks yang sesuai.
+### Bisakah saya menambahkan teks dari beberapa penanda sekaligus?
+Ya, Anda dapat mengulangi proses untuk setiap penanda buku dan menambahkan teks sebagaimana mestinya.
 
-### Bagaimana jika paragraf awal dan akhir memiliki orang tua yang berbeda?
-Contoh saat ini mengasumsikan mereka memiliki orang tua yang sama. Bagi orang tua yang berbeda-beda, diperlukan penanganan yang lebih kompleks.
+### Bagaimana jika paragraf awal dan akhir memiliki induk yang berbeda?
+Contoh saat ini mengasumsikan bahwa mereka memiliki induk yang sama. Untuk induk yang berbeda, diperlukan penanganan yang lebih rumit.
 
 ### Bisakah saya mempertahankan format asli teks yang ditambahkan?
- Sangat! Itu`ImportFormatMode.KeepSourceFormatting` memastikan format asli dipertahankan.
+ Tentu saja!`ImportFormatMode.KeepSourceFormatting` memastikan format asli dipertahankan.
 
-### Apakah mungkin untuk menambahkan teks ke posisi tertentu di dokumen tujuan?
-Ya, Anda dapat menambahkan teks ke posisi mana pun dengan menavigasi ke node yang diinginkan di dokumen tujuan.
+### Apakah mungkin untuk menambahkan teks ke posisi tertentu dalam dokumen tujuan?
+Ya, Anda dapat menambahkan teks ke posisi mana pun dengan menavigasi ke simpul yang diinginkan dalam dokumen tujuan.
 
-### Bagaimana jika saya perlu menambahkan teks dari bookmark ke bagian baru?
+### Bagaimana jika saya perlu menambahkan teks dari penanda halaman ke bagian baru?
 Anda dapat membuat bagian baru di dokumen tujuan dan menambahkan teks di sana.

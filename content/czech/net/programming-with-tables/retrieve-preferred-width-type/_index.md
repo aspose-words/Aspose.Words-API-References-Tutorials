@@ -110,7 +110,7 @@ Ano, můžete procházet každou buňku v tabulce a jednotlivě načíst jejich 
 
 ### Je možné nastavit preferovaný typ šířky programově?
 
- Absolutně! Upřednostňovaný typ šířky a hodnotu můžete nastavit pomocí`PreferredWidth` vlastnictvím`CellFormat` třída.
+ Absolutně! Upřednostňovaný typ šířky a hodnotu můžete nastavit pomocí`PreferredWidth` vlastnictví`CellFormat` třída.
 
 ### Mohu tuto metodu použít pro tabulky v jiných dokumentech než Word?
 

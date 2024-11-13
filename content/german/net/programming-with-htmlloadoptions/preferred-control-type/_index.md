@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-Lassen Sie uns das Beispiel nun in mehrere Schritte aufteilen, um Klarheit und Verständnis zu gewährleisten.
+Lassen Sie uns das Beispiel nun in mehrere Schritte unterteilen, um Klarheit und Verständnis sicherzustellen.
 
 ## Schritt 1: Richten Sie Ihren HTML-Inhalt ein
 

@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-tables/insert-table-from-html/
 
 在我們深入了解從 HTML 插入表格的細節之前，請確保滿足以下先決條件：
 
-1. Aspose.Words for .NET：從下列位置下載並安裝 Aspose.Words for .NET 函式庫：[下載頁面](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：從下列位置下載並安裝 Aspose.Words for .NET 函式庫：[下載頁面](https://releases.aspose.com/words/net/).
 2. 開發環境：任何 .NET 相容的開發環境，例如 Visual Studio。
 3. C# 基礎：了解基本 C# 程式設計概念。
 4. HTML 表格程式碼：要插入的表格的 HTML 程式碼。

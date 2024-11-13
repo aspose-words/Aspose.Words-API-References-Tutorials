@@ -50,7 +50,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
 ## 步骤 3：查找表的索引
 
-现在，让我们在文档中找到表格的索引。当您有多个表格并且需要识别特定表格时，这很有用。
+现在，让我们在文档中查找表格的索引。当您有多个表格并且需要识别特定表格时，这很有用。
 
 ```csharp
 NodeCollection allTables = doc.GetChildNodes(NodeType.Table, true);

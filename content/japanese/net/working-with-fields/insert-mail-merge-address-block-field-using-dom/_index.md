@@ -15,10 +15,10 @@ Word 文書をプログラムで効率的に管理および操作する方法を
 
 細かい点に入る前に、必要なものがすべて揃っているかどうか確認しましょう。
 
-1.  Aspose.Words for .NET: まだダウンロードしていない場合は、最新バージョンをこちらからダウンロードしてください。[ここ](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: まだダウンロードしていない場合は、最新バージョンをダウンロードしてください。[ここ](https://releases.aspose.com/words/net/).
 2. Visual Studio: マシンに Visual Studio がインストールされていることを確認します。
 3. C# の基本的な理解: このガイドでは、読者が C# プログラミングに精通していることを前提としています。
-4.  Asposeライセンス: 無料トライアルをご利用いただけます[ここ](https://releases.aspose.com/)または臨時免許証を取得する[ここ](https://purchase.aspose.com/temporary-license/).
+4.  Asposeライセンス: 無料トライアルをご利用いただけます[ここ](https://releases.aspose.com/)または一時ライセンスを取得する[ここ](https://purchase.aspose.com/temporary-license/).
 
 ## 名前空間のインポート
 
@@ -116,7 +116,7 @@ Aspose.Words for .NET は、開発者が .NET アプリケーションを使用�
  Aspose.Wordsは無料でダウンロードできるトライアルを提供しています[ここ](https://releases.aspose.com/)長期間の使用にはライセンスの購入を検討してください[ここ](https://purchase.aspose.com/buy).
 
 ### 差し込み印刷アドレスブロックとは何ですか?
-差し込み印刷アドレス ブロックは、特定の方法でフォーマットされたデータ ソースからアドレス情報を挿入できる Word のフィールドであり、パーソナライズされた手紙やラベルを生成するのに最適です。
+差し込み印刷アドレス ブロックは、データ ソースから特定の形式でアドレス情報を挿入できる Word のフィールドであり、パーソナライズされた手紙やラベルを生成するのに最適です。
 
 ### Aspose.Words のサポートを受けるにはどうすればよいですか?
  Asposeコミュニティと技術チームからサポートを受けることができます[ここ](https://forum.aspose.com/c/words/8).

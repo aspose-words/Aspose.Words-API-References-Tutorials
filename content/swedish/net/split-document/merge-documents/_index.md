@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- I detta steg slår vi samman`Document1.docx`och`Document2.docx` till en ny fil som heter`MergedDocument.docx`.
+ I detta steg slår vi samman`Document1.docx` och`Document2.docx` till en ny fil som heter`MergedDocument.docx`.
 
 ## Steg 3: Sammanfoga med Spara alternativ
 
@@ -74,7 +74,7 @@ Om du behöver slå samman dokument och spara resultatet som PDF, gör Aspose.Wo
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Här slår vi samman`Document1.docx`och`Document2.docx` och spara resultatet som en PDF-fil.
+ Här slår vi samman`Document1.docx` och`Document2.docx` och spara resultatet som en PDF-fil.
 
 ## Steg 5: Skapa en dokumentinstans från sammanslagna dokument
 
@@ -103,7 +103,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ### Hur hanterar jag olika formatering under sammanslagning?
 
- Aspose.Words tillhandahåller olika sammanslagningsformatlägen som`KeepSourceFormatting`och`MergeFormatting` Se till[API dokumentation](https://reference.aspose.com/words/net/) för detaljerade instruktioner.
+ Aspose.Words tillhandahåller olika sammanslagningsformatlägen som`KeepSourceFormatting` och`MergeFormatting` Se till[API dokumentation](https://reference.aspose.com/words/net/) för detaljerade instruktioner.
 
 ### Hur får jag support för Aspose.Words för .NET?
 

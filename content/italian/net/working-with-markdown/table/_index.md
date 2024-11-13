@@ -2,26 +2,26 @@
 title: Tavolo
 linktitle: Tavolo
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come creare e personalizzare tabelle in Aspose.Words per .NET con questa guida passo passo. Perfetto per generare documenti strutturati e visivamente accattivanti.
+description: Scopri come creare e personalizzare tabelle in Aspose.Words per .NET con questa guida passo-passo. Perfetta per generare documenti strutturati e visivamente accattivanti.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/table/
 ---
 ## Introduzione
 
-Lavorare con le tabelle nei documenti è un requisito comune. Che tu stia generando report, fatture o dati strutturati, le tabelle sono indispensabili. In questo tutorial ti guiderò attraverso la creazione e la personalizzazione delle tabelle utilizzando Aspose.Words per .NET. Immergiamoci!
+Lavorare con le tabelle nei documenti è un requisito comune. Che tu stia generando report, fatture o dati strutturati, le tabelle sono indispensabili. In questo tutorial, ti guiderò nella creazione e personalizzazione di tabelle usando Aspose.Words per .NET. Immergiamoci!
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di avere i seguenti prerequisiti:
 
-- Visual Studio: è necessario un ambiente di sviluppo per scrivere e testare il codice. Visual Studio è una buona scelta.
--  Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words installata. Se non ce l'hai, puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
-- Comprensione di base di C#: è necessaria una certa familiarità con la programmazione C#.
+- Visual Studio: hai bisogno di un ambiente di sviluppo per scrivere e testare il tuo codice. Visual Studio è una buona scelta.
+-  Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words installata. Se non ce l'hai, puoi scaricarla[Qui](https://releases.aspose.com/words/net/).
+- Nozioni di base di C#: per seguire il corso è necessaria una certa familiarità con la programmazione C#.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Prima di iniziare i passaggi, importiamo gli spazi dei nomi necessari:
+Prima di procedere, importiamo gli spazi dei nomi necessari:
 
 ```csharp
 using Aspose.Words;
@@ -30,25 +30,25 @@ using Aspose.Words.Tables;
 
 ## Passaggio 1: inizializzare Document e DocumentBuilder
 
-Per prima cosa, dobbiamo creare un nuovo documento e inizializzare la classe DocumentBuilder, che ci aiuterà nella costruzione della nostra tabella.
+Per prima cosa, dobbiamo creare un nuovo documento e inizializzare la classe DocumentBuilder, che ci aiuterà a costruire la nostra tabella.
 
 ```csharp
-// Inizializza DocumentBuilder.
+// Inizializzare DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Questo passaggio è come impostare il tuo spazio di lavoro. Hai il tuo documento vuoto e la tua penna pronti.
+Questo passaggio è come impostare il tuo spazio di lavoro. Hai il tuo documento vuoto e la tua penna pronta.
 
 ## Passaggio 2: inizia a costruire la tua tabella
 
 Ora che abbiamo i nostri strumenti, iniziamo a costruire la tabella. Inizieremo inserendo la prima cella della prima riga.
 
 ```csharp
-// Aggiungi la prima riga.
+// Aggiungere la prima riga.
 builder.InsertCell();
 builder.Writeln("a");
 
-// Inserisci la seconda cella.
+// Inserire la seconda cella.
 builder.InsertCell();
 builder.Writeln("b");
 
@@ -56,14 +56,14 @@ builder.Writeln("b");
 builder.EndRow();
 ```
 
-Pensa a questo passaggio come a disegnare la prima riga della tabella su un pezzo di carta e riempire le prime due celle con "a" e "b".
+Immagina che questo passaggio consista nel disegnare la prima riga della tua tabella su un foglio di carta e nel riempire le prime due celle con "a" e "b".
 
-## Passaggio 3: aggiungi altre righe
+## Passaggio 3: aggiungere altre righe
 
 Aggiungiamo un'altra riga alla nostra tabella.
 
 ```csharp
-// Aggiungi la seconda riga.
+// Aggiungere la seconda riga.
 builder.InsertCell();
 builder.Writeln("c");
 builder.InsertCell();
@@ -74,21 +74,21 @@ Qui stiamo semplicemente estendendo la nostra tabella aggiungendo un'altra riga 
 
 ## Conclusione
 
-Creare e personalizzare tabelle in Aspose.Words per .NET è semplice una volta capito come funziona. Seguendo questi passaggi, puoi generare tabelle strutturate e visivamente accattivanti nei tuoi documenti. Buona programmazione!
+Creare e personalizzare tabelle in Aspose.Words per .NET è semplice una volta che ci si prende la mano. Seguendo questi passaggi, è possibile generare tabelle strutturate e visivamente accattivanti nei documenti. Buona codifica!
 
 ## Domande frequenti
 
 ### Posso aggiungere più di due celle di seguito?
- Sì, puoi aggiungere tutte le celle di cui hai bisogno di seguito ripetendo il comando`InsertCell()`E`Writeln()` metodi.
+ Sì, puoi aggiungere tutte le celle di cui hai bisogno in una riga ripetendo la`InsertCell()` E`Writeln()` metodi.
 
 ### Come posso unire le celle in una tabella?
- Puoi unire le celle utilizzando il comando`CellFormat.HorizontalMerge`E`CellFormat.VerticalMerge` proprietà.
+ È possibile unire le celle utilizzando`CellFormat.HorizontalMerge` E`CellFormat.VerticalMerge` proprietà.
 
-### È possibile aggiungere immagini alle celle della tabella?
- Assolutamente! Puoi inserire immagini nelle celle utilizzando il comando`DocumentBuilder.InsertImage` metodo.
+### È possibile aggiungere immagini alle celle di una tabella?
+ Assolutamente! Puoi inserire immagini nelle celle usando il`DocumentBuilder.InsertImage` metodo.
 
-### Posso applicare uno stile diverso alle singole celle?
- Sì, puoi applicare stili diversi alle singole celle accedendovi tramite il file`Cells` raccolta di una riga.
+### Posso assegnare stili diversi alle singole celle?
+ Sì, puoi applicare stili diversi alle singole celle accedendovi tramite`Cells` raccolta di una riga.
 
-### Come rimuovo i bordi dalla tabella?
- Puoi rimuovere i bordi impostando lo stile del bordo su`LineStyle.None` per ogni tipo di bordo.
+### Come faccio a rimuovere i bordi dalla tabella?
+ È possibile rimuovere i bordi impostando lo stile del bordo su`LineStyle.None` per ogni tipo di confine.

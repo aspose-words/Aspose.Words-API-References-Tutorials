@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
- Der`Aspose.Words` Namespace stellt die Kernfunktionalität für die Handhabung von Word-Dokumenten bereit, während`Aspose.Words.Tables` beinhaltet die Klassen speziell für die Arbeit mit Tabellen.
+Der`Aspose.Words` Namespace stellt die Kernfunktionalität für die Handhabung von Word-Dokumenten bereit, während`Aspose.Words.Tables` beinhaltet die Klassen speziell für die Arbeit mit Tabellen.
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
@@ -88,7 +88,7 @@ Das automatische Anpassen von Tabellen an Inhalte mit Aspose.Words für .NET ist
 ## Häufig gestellte Fragen
 
 ### Kann ich nur bestimmte Spalten einer Tabelle automatisch anpassen?
- Der`AutoFit` Die Methode gilt für die gesamte Tabelle. Wenn Sie bestimmte Spalten anpassen müssen, müssen Sie die Spaltenbreiten möglicherweise manuell festlegen.
+Der`AutoFit` Die Methode gilt für die gesamte Tabelle. Wenn Sie bestimmte Spalten anpassen müssen, müssen Sie die Spaltenbreiten möglicherweise manuell festlegen.
 
 ### Was ist, wenn mein Dokument mehrere Tabellen enthält?
  Sie können alle Tabellen im Dokument durchlaufen, indem Sie`doc.GetChildNodes(NodeType.Table, true)` und wenden Sie bei Bedarf die automatische Anpassung an.

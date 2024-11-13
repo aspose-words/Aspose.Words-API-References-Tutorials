@@ -90,7 +90,7 @@ doc.Save(dataDir + "CleanedDocument.docx");
 Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi Word-dokumentumok programozott létrehozását, módosítását és konvertálását C# használatával.
 
 ### Eltávolíthatom egyszerre a fel nem használt stílusokat és listákat?
-Igen, mindkettőt beállíthatja`UnusedLists`és`UnusedStyles` hogy`true` a`CleanupOptions` mindkettő eltávolításához.
+Igen, mindkettőt beállíthatja`UnusedLists` és`UnusedStyles` hogy`true` a`CleanupOptions` mindkettő eltávolításához.
 
 ### Vissza lehet vonni a tisztítást?
 Nem, a tisztítás befejezése és a dokumentum mentése után a módosítások nem vonhatók vissza. Mindig készítsen biztonsági másolatot az eredeti dokumentumról.

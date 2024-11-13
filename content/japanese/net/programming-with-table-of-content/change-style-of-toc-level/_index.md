@@ -9,13 +9,13 @@ url: /ja/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 ## 導入
 
-プロフェッショナルな Word 文書を作成する必要がある場合、目次 (TOC) がいかに重要であるかはご存じでしょう。目次はコンテンツを整理するだけでなく、プロフェッショナルな印象を与えます。ただし、TOC を自分のスタイルに合わせてカスタマイズするのは少し難しい場合があります。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書の TOC スタイルを変更する方法について説明します。準備はできましたか? さあ、始めましょう!
+プロフェッショナルな Word 文書を作成する必要がある場合、目次 (TOC) がいかに重要であるかがおわかりでしょう。目次はコンテンツを整理するだけでなく、プロフェッショナルな印象を与えます。ただし、TOC を自分のスタイルに合わせてカスタマイズするのは少し難しい場合があります。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書の TOC スタイルを変更する方法について説明します。準備はできましたか? さあ、始めましょう!
 
 ## 前提条件
 
 コードに進む前に、次のものを用意してください。
 
-1.  Aspose.Words for .NET: Aspose.Words for .NETライブラリがインストールされている必要があります。まだインストールしていない場合は、以下からダウンロードできます。[Aspose リリース ページ](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Aspose.Words for .NETライブラリがインストールされている必要があります。まだインストールしていない場合は、[Aspose リリース ページ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio などの開発環境。
 3. C# の基礎知識: C# プログラミング言語の理解。
 

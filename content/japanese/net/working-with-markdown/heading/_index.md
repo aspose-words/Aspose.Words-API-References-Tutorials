@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## ステップ1: 新しいドキュメントを作成する
 
-まず、新しい Word 文書を作成しましょう。これが、美しくフォーマットされた文書を作成するための基盤となります。
+まず、新しい Word 文書を作成しましょう。これが、美しくフォーマットされた文書を作成するための基礎となります。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
@@ -66,50 +66,9 @@ builder.ParagraphFormat.StyleName = "Heading 3";
 builder.Writeln("Details");
 ```
 
-## カスタマイズの追加
-
-### フォントと段落のカスタマイズ
-
-フォントと段落の設定をニーズに合わせてさらにカスタマイズできます。たとえば、フォントのサイズ、色、配置を変更できます。
-
-```csharp
-builder.Font.Size = 14;
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.Writeln("Centered Blue Heading");
-```
-
-### 目次の挿入
-
-適切に構造化されたドキュメントには、多くの場合、目次が含まれています。Aspose.Words for .NET を使用して目次を挿入する方法を次に示します。
-
-```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-doc.UpdateFields();
-```
-
-### 画像の追加
-
-画像を使用すると、ドキュメントをより魅力的にすることができます。ドキュメントに画像を追加してみましょう。
-
-```csharp
-builder.InsertImage("YOUR DOCUMENT DIRECTORY/image.png");
-```
-
-### ドキュメントセクションの使用
-
-セクションは、特にドキュメントのさまざまな部分に異なる書式設定が必要な場合に、コンテンツを整理するのに役立ちます。
-
-```csharp
-Section section = doc.Sections.Add();
-DocumentBuilder sectionBuilder = new DocumentBuilder(section);
-sectionBuilder.ParagraphFormat.StyleName = "Heading 1";
-sectionBuilder.Writeln("New Section Heading");
-```
-
 ## 結論
 
-適切にフォーマットされたドキュメントを作成することは、見た目の美しさだけでなく、読みやすさとプロフェッショナリズムも向上させます。Aspose.Words for .NET には、これを簡単に実現できる強力なツールが用意されています。このガイドに従って、さまざまな設定を試せば、すぐにドキュメントのフォーマットのプロになれるでしょう。
+適切にフォーマットされたドキュメントを作成することは、見た目の美しさだけでなく、読みやすさとプロ意識も高めます。Aspose.Words for .NET には、これを簡単に実現できる強力なツールが用意されています。このガイドに従って、さまざまな設定を試せば、すぐにドキュメントのフォーマットのプロになれるでしょう。
 
 ## よくある質問
 

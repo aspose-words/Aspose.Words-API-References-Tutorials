@@ -1,99 +1,133 @@
 ---
-title: Pertahankan Sumber Bersama
-linktitle: Pertahankan Sumber Bersama
+title: Jaga Meja Tetap Bersama
+linktitle: Jaga Meja Tetap Bersama
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggabungkan dokumen Word menggunakan Aspose.Words untuk .NET sambil mempertahankan pemformatan. Panduan komprehensif ini mencakup semuanya mulai dari penyiapan hingga eksekusi.
+description: Pelajari cara mencegah tabel agar tidak terpisah di beberapa halaman menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Pastikan dokumen Word terlihat rapi dan profesional
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/keep-source-together/
 ---
 ## Perkenalan
 
-Di era digital saat ini, memanipulasi dokumen Word secara terprogram sangat penting di berbagai industri. Aspose.Words untuk .NET memberdayakan pengembang untuk mengotomatiskan tugas penanganan dokumen secara efisien. Panduan komprehensif ini akan memandu Anda melalui proses penggabungan dokumen sambil mempertahankan format sumber menggunakan Aspose.Words untuk .NET.
+Tabel merupakan bagian penting dari banyak dokumen Word, tetapi terkadang, Anda mungkin mengalami situasi di mana tabel Anda terbagi menjadi dua halaman. Hal ini dapat mengganggu alur dokumen Anda dan memengaruhi keterbacaannya. Bukankah menyenangkan jika ada cara untuk menyatukan seluruh tabel dalam satu halaman? Nah, dengan Aspose.Words untuk .NET, ada solusi mudah untuk masalah ini! Dalam tutorial ini, kami akan membahas cara mencegah tabel terbagi di beberapa halaman, memastikan dokumen Anda terlihat rapi dan profesional.
 
 ## Prasyarat
 
-Sebelum mendalami penggabungan dokumen dengan Aspose.Words untuk .NET, pastikan Anda memiliki hal berikut:
+Sebelum kita masuk ke tutorial, mari pastikan Anda memiliki semua yang dibutuhkan untuk mengikutinya dengan lancar.
 
-- Visual Studio: Lingkungan Pengembangan Terpadu (IDE) untuk pengembangan .NET.
-- Aspose.Words untuk .NET: Diinstal dan disiapkan di lingkungan pengembangan Anda.
-- Keakraban dengan C#: Pemahaman dasar bahasa pemrograman C#.
+### Pustaka Aspose.Words untuk .NET
 
-## Impor Namespace
+Pertama, Anda harus menginstal Aspose.Words for .NET. Ini adalah pustaka canggih yang memungkinkan Anda bekerja dengan dokumen Word secara terprogram.
 
-Untuk memulai, impor namespace yang diperlukan:
+- [Unduh Aspose.Words untuk .NET](https://releases.aspose.com/words/net/)
+
+### Lingkungan Pengembangan
+
+Anda harus menyiapkan lingkungan pengembangan untuk menjalankan kode C#, seperti:
+
+- Visual Studio (versi terbaru apa pun)
+- .NET Framework 2.0 atau yang lebih baru
+
+### Dokumen Word dengan Tabel
+
+ Anda memerlukan dokumen Word yang berisi tabel. Dalam tutorial ini, kita akan menggunakan contoh dokumen yang disebut`"Table spanning two pages.docx"`Berkas ini berisi tabel yang saat ini membentang di dua halaman.
+
+### Lisensi Sementara (Opsional)
+
+ Meskipun Aspose.Words hadir dengan uji coba gratis, Anda mungkin ingin menggunakan[lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk membuka potensi penuh perpustakaan.
+
+## Paket Impor
+
+Sebelum menulis kode apa pun, kita perlu mengimpor namespace yang diperlukan untuk bekerja dengan Aspose.Words for .NET. Tambahkan impor berikut di bagian atas berkas kode Anda:
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.DocumentBuilder;
+using Aspose.Words.Tables;
 ```
+
+ Ruang nama ini memberi Anda akses ke kelas seperti`Document`, `Table`, `Cell`, dan lainnya yang akan kita gunakan dalam tutorial ini.
 
 ## Langkah 1: Muat Dokumen
 
- Pertama, muat dokumen sumber dan tujuan ke Aspose.Words`Document` objek.
+ Hal pertama yang perlu kita lakukan adalah memuat dokumen Word yang berisi tabel. Untuk ini, kita akan menggunakan`Document` kelas dari Aspose.Words. Kelas ini memungkinkan Anda untuk membuka dan memanipulasi file Word secara terprogram.
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Memuat dokumen sumber dan tujuan
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-## Langkah 2: Atur Bagian Mulai
+ Dalam potongan kode ini, kami menentukan lokasi dokumen kami. Ganti`"YOUR DOCUMENTS DIRECTORY"` dengan direktori sebenarnya tempat dokumen Anda disimpan.
 
-Konfigurasikan bagian awal untuk memastikan konten dokumen sumber mengalir terus menerus setelah dokumen tujuan.
+## Langkah 2: Akses Tabel
+
+Setelah dokumen dimuat, langkah selanjutnya adalah mengakses tabel yang ingin kita simpan bersama. Dalam contoh ini, kita asumsikan tabel tersebut adalah tabel pertama dalam dokumen.
 
 ```csharp
-// Atur dokumen sumber agar muncul tepat setelah konten dokumen tujuan
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Langkah 3: Satukan Paragraf
+ Baris kode ini menemukan tabel pertama dalam dokumen.`GetChild` metode mengambil jenis node tertentu, yang dalam kasus ini adalah`NodeType.Table` . Itu`0` menunjukkan kita menginginkan tabel pertama, dan`true`bendera memastikan bahwa kami mencari secara rekursif melalui semua simpul anak.
 
-Untuk menjaga integritas pemformatan, tandai setiap paragraf di dokumen sumber agar tetap berada di paragraf berikutnya.
+## Langkah 3: Melakukan Looping Melalui Sel Tabel
+
+Sekarang, kita perlu mengulang setiap sel dalam tabel. Karena tabel berisi beberapa baris dan setiap baris berisi beberapa sel, kita akan mengulang setiap sel dan memastikannya tidak terputus di beberapa halaman.
 
 ```csharp
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
+foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 {
-    para.ParagraphFormat.KeepWithNext = true;
-}
+    cell.EnsureMinimum();
 ```
 
-## Langkah 4: Tambahkan Dokumen
+ Di Sini,`GetChildNodes` mengambil semua sel dalam tabel, dan kita mengulang setiap sel.`EnsureMinimum()` Metode ini memastikan bahwa setiap sel berisi setidaknya satu paragraf, karena sel yang kosong dapat menyebabkan masalah di kemudian hari.
 
- Gabungkan dokumen menggunakan`AppendDocument` metode, memastikan untuk mempertahankan format dokumen sumber.
+## Langkah 4: Tetapkan Properti KeepWithNext
+
+ Untuk mencegah tabel terpecah di beberapa halaman, kita perlu mengatur`KeepWithNext` properti untuk setiap paragraf dalam tabel. Properti ini memastikan bahwa paragraf tersebut tetap berada di dalam paragraf berikutnya, sehingga secara efektif mencegah terjadinya jeda halaman di antara paragraf tersebut.
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
+    foreach (Paragraph para in cell.Paragraphs)
+        if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
+            para.ParagraphFormat.KeepWithNext = true;
 ```
 
-## Langkah 5: Simpan Dokumen yang Digabung
+ Loop ini memeriksa setiap paragraf di dalam setiap sel. Kondisi ini memastikan bahwa kita tidak menerapkan`KeepWithNext`properti ke paragraf terakhir di baris terakhir. Jika tidak, properti tidak akan berpengaruh karena tidak ada paragraf berikutnya.
 
-Terakhir, simpan dokumen gabungan ke lokasi yang diinginkan.
+## Langkah 5: Simpan Dokumen
+
+ Akhirnya, setelah menerapkan`KeepWithNext` properti, kita perlu menyimpan dokumen yang dimodifikasi.
 
 ```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
+doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
+
+Baris ini menyimpan dokumen yang diperbarui dengan nama baru, sehingga berkas asli tetap utuh. Kini Anda dapat membuka berkas yang dihasilkan dan melihat bahwa tabel tidak lagi terbagi menjadi dua halaman!
 
 ## Kesimpulan
 
-Kesimpulannya, Aspose.Words untuk .NET menyederhanakan tugas menggabungkan dokumen Word sambil mempertahankan format asli dengan mulus. Kemampuan ini sangat penting untuk aplikasi yang memerlukan pemrosesan dokumen otomatis.
+Nah, itu dia! Dengan mengikuti langkah-langkah sederhana ini, Anda dapat dengan mudah mencegah tabel terpisah di beberapa halaman dalam dokumen Word menggunakan Aspose.Words untuk .NET. Baik Anda sedang mengerjakan laporan, kontrak, atau dokumen lainnya, menjaga tabel tetap utuh akan menghasilkan tampilan yang lebih rapi dan profesional.
 
-## FAQ
+Keunggulan Aspose.Words adalah fleksibilitas dan kemudahan penggunaannya, yang memungkinkan Anda memanipulasi dokumen Word secara terprogram tanpa perlu menginstal Microsoft Word di komputer Anda. Sekarang setelah Anda menguasai cara menyusun tabel, jelajahi fitur lain dari pustaka tersebut untuk meningkatkan keterampilan pemrosesan dokumen Anda ke tingkat berikutnya!
 
-### Bisakah Aspose.Words untuk .NET menggabungkan dokumen dengan format berbeda?
-Ya, itu bisa menggabungkan dokumen apa pun formatnya, mempertahankan format sumber.
+## Pertanyaan yang Sering Diajukan
 
-### Apakah Aspose.Words untuk .NET mendukung penggabungan dokumen besar secara efisien?
-Tentu saja, ini menangani dokumen besar dengan kinerja optimal.
+### Mengapa tabel saya masih terbagi beberapa halaman setelah menggunakan kode ini?
 
-### Apakah ada versi uji coba yang tersedia untuk Aspose.Words untuk .NET?
- Ya, Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/).
+ Jika meja Anda masih rusak, pastikan Anda telah menerapkan`KeepWithNext` properti dengan benar. Periksa kembali bahwa semua paragraf kecuali paragraf terakhir di setiap sel telah menetapkan properti ini.
 
-### Bagaimana saya bisa mendapatkan dukungan teknis untuk Aspose.Words untuk .NET?
- Dukungan teknis tersedia melalui[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8).
+### Bisakah saya hanya menyatukan baris-baris tertentu saja?
 
-### Bisakah saya membeli lisensi sementara untuk Aspose.Words untuk .NET?
- Ya, Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
+ Ya, Anda dapat menerapkannya secara selektif`KeepWithNext` properti ke baris atau paragraf tertentu dalam tabel untuk mengontrol bagian mana yang harus tetap bersama.
+
+### Apakah metode ini berfungsi dengan tabel besar?
+
+Untuk tabel yang sangat besar, Word mungkin masih membaginya ke beberapa halaman jika tidak ada cukup ruang untuk memuat seluruh tabel dalam satu halaman. Pertimbangkan untuk menyesuaikan format atau margin tabel Anda agar sesuai dengan tabel yang lebih besar.
+
+### Bisakah saya menggunakan metode ini dengan format dokumen lain?
+
+Ya! Aspose.Words untuk .NET mendukung banyak format seperti DOC, DOCX, PDF, dan lainnya. Metode yang sama berfungsi di semua format yang mendukung tabel.
+
+### Apakah Aspose.Words untuk .NET pustaka gratis?
+
+ Aspose.Words untuk .NET menawarkan uji coba gratis, tetapi untuk akses penuh ke semua fitur, Anda perlu membeli lisensi. Anda dapat menjelajahi opsi lisensi di[Halaman pembelian Aspose](https://purchase.aspose.com/buy).

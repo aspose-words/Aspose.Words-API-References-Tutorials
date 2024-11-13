@@ -1,30 +1,30 @@
 ---
-title: Wstaw przerwę w dokumencie programu Word
-linktitle: Wstaw przerwę w dokumencie programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić przerwę w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z tego szczegółowego przewodnika. Idealny dla programistów, którzy chcą opanować manipulację dokumentami.
+title: Wstaw przerwę w dokumencie Word
+linktitle: Wstaw przerwę w dokumencie Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak wstawić przerwę w dokumencie Word za pomocą Aspose.Words dla .NET dzięki temu szczegółowemu przewodnikowi. Idealne dla programistów, którzy chcą opanować manipulację dokumentami.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/insert-break/
 ---
 ## Wstęp
 
-Hej tam! Czy jesteś gotowy, aby zanurzyć się w świecie Aspose.Words dla .NET? Ta potężna biblioteka jest jak szwajcarski scyzoryk do manipulacji dokumentami w programie Word. Niezależnie od tego, czy masz do czynienia ze złożonymi zadaniami automatyzacji dokumentów, czy po prostu chcesz dodać prosty podział strony, Aspose.Words Ci pomoże. W tym samouczku omówimy krok po kroku, jak wstawiać przerwy w dokumencie programu Word. Więc weź filiżankę kawy i zaczynajmy!
+Cześć! Jesteś gotowy, aby zanurzyć się w świecie Aspose.Words dla .NET? Ta potężna biblioteka jest niczym scyzoryk szwajcarski do manipulowania dokumentami Word. Niezależnie od tego, czy masz do czynienia ze złożonymi zadaniami automatyzacji dokumentów, czy po prostu musisz dodać prosty podział strony, Aspose.Words ma dla Ciebie rozwiązanie. W tym samouczku przeprowadzimy Cię przez proces wstawiania podziałów w dokumencie Word krok po kroku. Więc weź filiżankę kawy i zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim przejdziemy do kodu, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1.  Aspose.Words dla biblioteki .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/) . Jeśli jesteś nowy w Aspose, możesz zacząć od[bezpłatna wersja próbna](https://releases.aspose.com/).
-2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE kompatybilne z .NET.
-3. .NET Framework: Upewnij się, że masz zainstalowaną platformę .NET Framework.
-4. Podstawowa znajomość języka C#: W tym samouczku założono, że znasz programowanie w języku C#.
+1.  Biblioteka Aspose.Words dla .NET: Możesz[pobierz tutaj](https://releases.aspose.com/words/net/) . Jeśli jesteś nowy w Aspose, możesz zacząć od[bezpłatny okres próbny](https://releases.aspose.com/).
+2. Środowisko programistyczne: Visual Studio lub inne środowisko IDE zgodne z platformą .NET.
+3. .NET Framework: Upewnij się, że masz zainstalowany .NET Framework.
+4. Podstawowa wiedza o języku C#: W tym samouczku zakładamy, że znasz programowanie w języku C#.
 
-Skoro już wszystko gotowe, przejdźmy do ekscytującej części – kodowania!
+Teraz, gdy już wszystko jest gotowe, możemy przejść do ekscytującej części — kodowania!
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw. Tutaj zaczyna się cała magia.
+Po pierwsze, zaimportujmy niezbędne przestrzenie nazw. To tutaj zaczyna się cała magia.
 
 ```csharp
 using Aspose.Words;
@@ -34,33 +34,33 @@ using System;
 
 ## Krok 1: Konfigurowanie katalogu dokumentów
 
-W porządku, zacznijmy od ustawienia ścieżki do naszego katalogu dokumentów. Tutaj zostanie zapisany dokument programu Word.
+Dobrze, zacznijmy od ustawienia ścieżki do naszego katalogu dokumentów. To tutaj zostanie zapisany Twój dokument Word.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której chcesz zapisać dokument.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, pod którą chcesz zapisać dokument.
 
 ## Krok 2: Tworzenie nowego dokumentu
 
- Następnie musimy utworzyć nową instancję pliku`Document` klasa. Potraktuj to jak puste płótno, na którym możesz rozpocząć dodawanie treści.
+ Następnie musimy utworzyć nową instancję`Document` klasa. Pomyśl o tym jak o pustym płótnie, na którym możesz zacząć dodawać swoją treść.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## Krok 3: Inicjowanie narzędzia DocumentBuilder
+## Krok 3: Inicjalizacja DocumentBuilder
 
- The`DocumentBuilder` jest jak twój pędzel. Pomaga w dodawaniu treści do dokumentu. Zainicjujmy to.
+Ten`DocumentBuilder` jest jak twój pędzel. Pomaga ci dodawać treść do twojego dokumentu. Zainicjujmy go.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 4: Zapisywanie treści na pierwszej stronie
+## Krok 4: Pisanie treści na pierwszej stronie
 
-Dodajmy trochę treści na pierwszą stronę. Tutaj możesz wykazać się kreatywnością.
+Dodajmy trochę treści do pierwszej strony. Tutaj możesz wykazać się kreatywnością.
 
 ```csharp
 builder.Writeln("This is page 1.");
@@ -68,15 +68,15 @@ builder.Writeln("This is page 1.");
 
 ## Krok 5: Wstawianie podziału strony
 
- Teraz nadchodzi zabawna część. Musimy wstawić podział strony, aby przejść do następnej strony. To tak proste, jak wywołanie`InsertBreak` metoda.
+ Teraz zaczyna się zabawa. Musimy wstawić podział strony, aby przejść do następnej strony. To takie proste, jak wywołanie`InsertBreak` metoda.
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## Krok 6: Zapisywanie treści na drugiej stronie
+## Krok 6: Pisanie treści na drugiej stronie
 
-Po wstawieniu podziału strony dodajmy trochę treści na drugą stronę.
+Po wstawieniu podziału strony dodajmy trochę treści na drugiej stronie.
 
 ```csharp
 builder.Writeln("This is page 2.");
@@ -90,7 +90,7 @@ Wstawmy kolejny podział strony, aby przejść do trzeciej strony.
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## Krok 8: Zapisywanie treści na trzeciej stronie
+## Krok 8: Pisanie treści na trzecią stronę
 
 Na koniec dodajmy trochę treści do trzeciej strony.
 
@@ -100,31 +100,31 @@ builder.Writeln("This is page 3.");
 
 ## Krok 9: Zapisywanie dokumentu
 
-Na koniec musimy zapisać nasz dokument. Tutaj zbiera się cała Twoja ciężka praca.
+Na koniec, ale nie mniej ważne, musimy zapisać nasz dokument. To tutaj cała twoja ciężka praca się łączy.
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-I masz to! Pomyślnie utworzyłeś dokument Word i wstawiłeś podziały stron przy użyciu Aspose.Words dla .NET.
+I masz! Udało Ci się utworzyć dokument Word i wstawić podziały stron za pomocą Aspose.Words dla .NET.
 
 ## Wniosek
 
-Czy to nie było zabawne? Dzięki Aspose.Words dla .NET manipulowanie dokumentami programu Word jest proste. Niezależnie od tego, czy dodajesz proste podziały stron, czy przeprowadzasz złożoną automatyzację dokumentów, ta biblioteka znacznie ułatwi Ci życie. Zatem śmiało i odkryj więcej możliwości Aspose.Words. Możliwości są nieograniczone!
+Czy to nie było zabawne? Dzięki Aspose.Words dla .NET manipulowanie dokumentami Worda to pestka. Niezależnie od tego, czy dodajesz proste podziały stron, czy wykonujesz złożoną automatyzację dokumentów, ta biblioteka znacznie ułatwia Ci życie. Więc idź dalej i odkryj więcej tego, co potrafi Aspose.Words. Możliwości są nieograniczone!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężna biblioteka do programowej pracy z dokumentami programu Word. Obsługuje szeroką gamę funkcji, od tworzenia i edytowania dokumentów po konwersję między różnymi formatami.
+### Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to potężna biblioteka do programowej pracy z dokumentami Word. Obsługuje szeroki zakres funkcji, od tworzenia i edytowania dokumentów po konwersję między różnymi formatami.
 
 ### Czy mogę używać Aspose.Words za darmo?
- Tak, możesz zacząć od[bezpłatna wersja próbna](https://releases.aspose.com/) aby poznać jego funkcje. W przypadku długotrwałego stosowania możesz[kupić licencję](https://purchase.aspose.com/buy).
+ Tak, możesz zacząć od[bezpłatny okres próbny](https://releases.aspose.com/) aby poznać jego funkcje. Do długotrwałego użytkowania możesz[kupić licencję](https://purchase.aspose.com/buy).
 
-### Jak uzyskać wsparcie dla Aspose.Words?
- Możesz uzyskać wsparcie od[Forum społeczności Aspose](https://forum.aspose.com/c/words/8). To świetne miejsce na zadawanie pytań i wymianę doświadczeń.
+### Jak uzyskać pomoc techniczną dotyczącą Aspose.Words?
+ Możesz uzyskać wsparcie od[Forum społeczności Aspose](https://forum.aspose.com/c/words/8). To świetne miejsce, aby zadawać pytania i dzielić się swoimi doświadczeniami.
 
 ### Czy Aspose.Words jest kompatybilny z .NET Core?
-Tak, Aspose.Words jest kompatybilny z .NET Core i .NET Framework.
+Tak, Aspose.Words jest kompatybilny zarówno z .NET Core, jak i .NET Framework.
 
 ### Czy mogę zautomatyzować złożone zadania związane z dokumentami za pomocą Aspose.Words?
-Absolutnie! Aspose.Words został zaprojektowany do obsługi złożonych zadań automatyzacji dokumentów, co czyni go potężnym narzędziem dla programistów.
+Oczywiście! Aspose.Words jest zaprojektowany do obsługi złożonych zadań automatyzacji dokumentów, co czyni go potężnym narzędziem dla programistów.

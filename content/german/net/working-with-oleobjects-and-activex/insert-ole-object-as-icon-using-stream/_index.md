@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 2: Bereiten Sie den Stream vor
 
-Als nächstes müssen wir einen Speicherstream vorbereiten, der die Datei enthält, die wir einbetten möchten. In diesem Beispiel betten wir eine PowerPoint-Präsentation ein.
+Als nächstes müssen wir einen Speicherstream vorbereiten, der die einzubettende Datei enthält. In diesem Beispiel betten wir eine PowerPoint-Präsentation ein.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_directory/Presentation.pptx")))

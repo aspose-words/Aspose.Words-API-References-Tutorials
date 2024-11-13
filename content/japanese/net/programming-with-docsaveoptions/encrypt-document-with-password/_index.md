@@ -60,7 +60,7 @@ builder.Write("Hello world!");
 
 ## ステップ3: 保存オプションを設定する
 
-ここで重要な部分、つまりパスワード保護を含む保存オプションの設定が行われます。ここでロックの強度を決定します。
+ここで重要な部分、つまり保存オプションを設定してパスワード保護を含めることが行われます。ここでロックの強度を決定します。
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };

@@ -82,7 +82,7 @@ tady to máte! Úspěšně jste nastavili složku True Type Fonts pro vaše doku
 ## FAQ
 
 ### Mohu použít více složek písem?
- Ano, kombinací můžete použít více složek písem`FontSettings.GetFontSources`a`FontSettings.SetFontSources`.
+ Ano, kombinací můžete použít více složek písem`FontSettings.GetFontSources` a`FontSettings.SetFontSources`.
 
 ### Co když zadaná složka písem neexistuje?
 Pokud zadaná složka písem neexistuje, Aspose.Words nebude moci najít písma a místo toho budou použita výchozí systémová písma.

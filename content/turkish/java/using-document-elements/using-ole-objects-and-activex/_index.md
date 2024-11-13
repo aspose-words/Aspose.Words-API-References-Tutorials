@@ -1,23 +1,23 @@
 ---
-title: Aspose.Words for Java'da OLE Nesnelerini ve ActiveX Kontrollerini Kullanma
-linktitle: OLE Nesnelerini ve ActiveX Denetimlerini Kullanma
+title: Aspose.Words for Java'da OLE Nesneleri ve ActiveX Denetimlerini Kullanma
+linktitle: OLE Nesneleri ve ActiveX Denetimlerini Kullanma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'da OLE nesnelerini ve ActiveX kontrollerini kullanmayı öğrenin. Kolayca etkileşimli belgeler oluşturun. Şimdi başlayın!
+description: Aspose.Words for Java'da OLE nesnelerini ve ActiveX denetimlerini kullanmayı öğrenin. Kolayca etkileşimli belgeler oluşturun. Hemen başlayın!
 type: docs
 weight: 21
 url: /tr/java/using-document-elements/using-ole-objects-and-activex/
 ---
-Bu eğitimde Aspose.Words for Java'da OLE (Nesne Bağlama ve Gömme) nesneleri ve ActiveX kontrolleriyle nasıl çalışılacağını keşfedeceğiz. OLE nesneleri ve ActiveX kontrolleri, elektronik tablolar, multimedya dosyaları veya etkileşimli kontroller gibi harici içerikleri gömerek veya bağlayarak belgelerinizi geliştirmenize olanak tanıyan güçlü araçlardır. Kod örneklerini incelerken bu adımları takip edin ve bu özellikleri etkili bir şekilde nasıl kullanabileceğimizi öğrenin.
+Bu eğitimde, Java için Aspose.Words'de OLE (Nesne Bağlama ve Gömme) nesneleri ve ActiveX denetimleriyle nasıl çalışılacağını keşfedeceğiz. OLE nesneleri ve ActiveX denetimleri, elektronik tablolar, multimedya dosyaları veya etkileşimli denetimler gibi harici içerikleri gömerek veya bağlayarak belgelerinizi geliştirmenize olanak tanıyan güçlü araçlardır. Kod örneklerini incelerken bizi takip edin ve bu özellikleri etkili bir şekilde nasıl kullanacağınızı öğrenin.
 
-### Önkoşullar
+### Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
-1.  Aspose.Words for Java : Java projenizde Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+1.  Java için Aspose.Words: Java projenizde Aspose.Words kütüphanesinin yüklü olduğundan emin olun. Bunu şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
 
 2. Java Geliştirme Ortamı: Sisteminizde çalışan bir Java geliştirme ortamının kurulu olması gerekir.
 
-### OLE Nesnesi Ekleme
+### Bir OLE Nesnesi Ekleme
 
 Bir Word belgesine bir OLE nesnesi ekleyerek başlayalım. Basit bir Word belgesi oluşturacağız ve ardından bir web sayfasını temsil eden bir OLE nesnesi ekleyeceğiz.
 
@@ -27,16 +27,16 @@ public void insertOleObject() throws Exception
 {
     Document doc = new Document();
     DocumentBuilder builder = new DocumentBuilder(doc);
-    builder.insertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
+    builder.insertOleObject("http://www.aspose.com", "htmldosyası", doğru, doğru, null);
     doc.save("Your Directory Path" + "WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
 }
 ```
 
-Bu kodda yeni bir belge oluşturup Aspose web sitesini görüntüleyen bir OLE nesnesi ekliyoruz. URL'yi istediğiniz içerikle değiştirebilirsiniz.
+Bu kodda yeni bir belge oluşturuyoruz ve Aspose web sitesini görüntüleyen bir OLE nesnesi ekliyoruz. URL'yi istediğiniz içerikle değiştirebilirsiniz.
 
 ### OlePackage ile OLE Nesnesi Ekleme
 
-Şimdi OlePackage kullanarak OLE nesnesinin nasıl ekleneceğini inceleyelim. Bu, harici dosyaları belgenize OLE nesneleri olarak yerleştirmenize olanak tanır.
+Şimdi, bir OlePackage kullanarak bir OLE nesnesinin nasıl ekleneceğini inceleyelim. Bu, harici dosyaları belgenize OLE nesneleri olarak yerleştirmenize olanak tanır.
 
 ```java
 @Test
@@ -56,11 +56,11 @@ public void insertOleObjectWithOlePackage() throws Exception
 }
 ```
 
-Bu örnekte, OlePackage kullanarak bir OLE nesnesi ekliyoruz ve böylece harici dosyaları gömülü nesneler olarak eklemenize olanak sağlıyoruz.
+Bu örnekte, harici dosyaları gömülü nesneler olarak eklemenize olanak tanıyan bir OlePackage kullanarak bir OLE nesnesi ekliyoruz.
 
-### OLE Nesnesini Simge Olarak Ekleme
+### Bir OLE Nesnesini Simge Olarak Ekleme
 
-Şimdi bir OLE nesnesinin simge olarak nasıl eklendiğini görelim. Bu, gömülü bir dosyayı temsil eden bir simgeyi görüntülemek istediğinizde kullanışlıdır.
+Şimdi, bir OLE nesnesinin simge olarak nasıl ekleneceğini görelim. Bu, gömülü bir dosyayı temsil eden bir simge görüntülemek istediğinizde faydalıdır.
 
 ```java
 @Test
@@ -73,11 +73,11 @@ public void insertOleObjectAsIcon() throws Exception
 }
 ```
 
-Bu kodda, gömülü içeriğin görsel olarak daha çekici bir temsilini sağlayan bir simge olarak bir OLE nesnesi ekliyoruz.
+Bu kodda, gömülü içeriğin görsel olarak daha çekici bir sunumunu sağlayan bir OLE nesnesini simge olarak ekliyoruz.
 
-### ActiveX Denetimi Özelliklerini Okuma
+### ActiveX Denetim Özelliklerini Okuma
 
-Şimdi odağımızı ActiveX kontrollerine kaydıralım. Bir Word belgesindeki ActiveX denetimlerinin özelliklerinin nasıl okunacağını öğreneceğiz.
+Şimdi, odak noktamızı ActiveX denetimlerine kaydıralım. Bir Word belgesindeki ActiveX denetimlerinin özelliklerini nasıl okuyacağımızı öğreneceğiz.
 
 ```java
 @Test
@@ -108,27 +108,27 @@ public void readActiveXControlProperties() throws Exception
 }
 ```
 
-Bu kodda, bir Word belgesindeki şekilleri yineliyoruz, ActiveX kontrollerini belirliyoruz ve bunların özelliklerini alıyoruz.
+Bu kodda, bir Word belgesindeki şekiller arasında dolaşıyoruz, ActiveX denetimlerini tanımlıyoruz ve özelliklerini alıyoruz.
 
 ### Çözüm
 
-Tebrikler! Aspose.Words for Java'da OLE nesneleri ve ActiveX kontrolleriyle nasıl çalışılacağını öğrendiniz. Bu özellikler, dinamik ve etkileşimli belgeler oluşturmaya yönelik bir olasılıklar dünyasının kapılarını açar.
+Tebrikler! Aspose.Words for Java'da OLE nesneleri ve ActiveX denetimleriyle nasıl çalışacağınızı öğrendiniz. Bu özellikler dinamik ve etkileşimli belgeler oluşturmak için bir olasılıklar dünyasının kapılarını açar.
 
 ### SSS
 
-### Word belgesindeki OLE nesnelerinin amacı nedir? 
-   - OLE nesneleri, dosyalar veya web sayfaları gibi harici içeriği bir Word belgesine yerleştirmenize veya bağlamanıza olanak tanır.
+### Word belgesinde OLE nesnelerinin amacı nedir? 
+   - OLE nesneleri, dosyalar veya web sayfaları gibi harici içerikleri bir Word belgesine yerleştirmenize veya bunlara bağlantı vermenize olanak tanır.
 
 ### Belgemdeki OLE nesnelerinin görünümünü özelleştirebilir miyim? 
-   - Evet, simgelerin ve dosya adlarının ayarlanması da dahil olmak üzere OLE nesnelerinin görünümünü özelleştirebilirsiniz.
+   - Evet, OLE nesnelerinin görünümünü, simgeleri ve dosya adlarını ayarlama dahil olmak üzere özelleştirebilirsiniz.
 
-### ActiveX denetimleri nedir ve belgelerimi nasıl geliştirebilirler? 
-   - ActiveX kontrolleri, Word belgelerinize form kontrolleri veya multimedya oynatıcılar gibi işlevler ekleyebilen etkileşimli öğelerdir.
+### ActiveX denetimleri nelerdir ve belgelerimi nasıl geliştirebilirler? 
+   - ActiveX denetimleri, form denetimleri veya multimedya oynatıcılar gibi Word belgelerinize işlevsellik katabilen etkileşimli öğelerdir.
 
-### Aspose.Words for Java kurumsal düzeyde belge otomasyonuna uygun mu? 
-   - Evet, Aspose.Words for Java, Java uygulamalarında belge oluşturmayı ve düzenlemeyi otomatikleştirmek için güçlü bir kütüphanedir.
+### Aspose.Words for Java kurumsal düzeyde belge otomasyonu için uygun mudur? 
+   - Evet, Aspose.Words for Java, Java uygulamalarında belge oluşturma ve düzenlemeyi otomatikleştirmek için güçlü bir kütüphanedir.
 
 ### Aspose.Words for Java'ya nereden erişebilirim? 
-   -  Aspose.Words for Java'yı şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
+   -  Java için Aspose.Words'ü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
 
-Aspose.Words for Java'yı bugün kullanmaya başlayın ve belge otomasyonu ve özelleştirmenin tüm potansiyelini ortaya çıkarın!
+Bugün Aspose.Words for Java'yı kullanmaya başlayın ve belge otomasyonunun ve özelleştirmesinin tüm potansiyelini ortaya çıkarın!

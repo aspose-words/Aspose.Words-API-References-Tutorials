@@ -9,7 +9,7 @@ url: /ja/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
 ## 導入
 
-エンドノートを効率的に管理して Word 文書を強化したいとお考えですか? もう探す必要はありません! このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のエンドノート オプションを設定する手順を説明します。このガイドを読み終える頃には、エンドノートを文書のニーズに合わせてカスタマイズするプロになれているでしょう。
+エンドノートを効率的に管理して Word 文書を強化したいとお考えですか? もう探す必要はありません! このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のエンドノート オプションを設定する手順を説明します。 このガイドを読み終える頃には、エンドノートを文書のニーズに合わせてカスタマイズするプロになれているはずです。
 
 ## 前提条件
 
@@ -74,12 +74,12 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 ## 結論
 
-Aspose.Words for .NET を使用して Word 文書に文末脚注オプションを設定するのは、これらの簡単な手順で簡単です。文末脚注の再開ルールと位置をカスタマイズすることで、特定の要件を満たすように文書を調整できます。Aspose.Words を使用すると、Word 文書を簡単に操作できます。
+Aspose.Words for .NET を使用して Word 文書の文末脚注オプションを設定するのは、これらの簡単な手順で簡単です。文末脚注の再開ルールと位置をカスタマイズすることで、特定の要件を満たすように文書を調整できます。Aspose.Words を使用すると、Word 文書を簡単に操作できます。
 
 ## よくある質問
 
 ### Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、Word 文書をプログラムで操作するための強力なライブラリです。開発者は、さまざまな形式で Word 文書を作成、変更、変換できます。
+Aspose.Words for .NET は、Word 文書をプログラムで操作するための強力なライブラリです。開発者は、さまざまな形式の Word 文書を作成、変更、変換できます。
 
 ### Aspose.Words を無料で使用できますか?
  Aspose.Wordsは無料トライアルでご利用いただけます。延長使用の場合は、ライセンスをご購入ください。[ここ](https://purchase.aspose.com/buy).

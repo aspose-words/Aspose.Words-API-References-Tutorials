@@ -35,7 +35,7 @@ Lassen Sie uns den Vorgang nun in einfache, überschaubare Schritte unterteilen.
 
 Zuerst müssen Sie Ihr Projekt einrichten. Öffnen Sie Ihre Entwicklungsumgebung und erstellen Sie ein neues Projekt oder öffnen Sie ein vorhandenes.
 
-1. Neues Projekt erstellen: Wenn Sie kein Projekt haben, erstellen Sie in Visual Studio ein neues, indem Sie „Neues Projekt erstellen“ auswählen.
+1. Neues Projekt erstellen: Wenn Sie kein Projekt haben, erstellen Sie ein neues in Visual Studio, indem Sie „Neues Projekt erstellen“ auswählen.
 2. Aspose.Words für .NET hinzufügen: Fügen Sie die Bibliothek Aspose.Words für .NET über den NuGet Package Manager zu Ihrem Projekt hinzu. Suchen Sie nach „Aspose.Words“ und installieren Sie die neueste Version.
 
 ## Schritt 2: Definieren Sie Ihr Dokumentverzeichnis
@@ -89,7 +89,7 @@ Herzlichen Glückwunsch! Sie haben die Noto-Fallback-Einstellungen mithilfe von 
 
 ## Häufig gestellte Fragen
 
-### Was sind Noto-Fallback-Einstellungen?
+### Was sind Noto-Fallbackeinstellungen?
 Die Fallback-Einstellungen von Noto bieten einen umfassenden Satz an Fallback-Schriftarten, um sicherzustellen, dass alle Zeichen in einem Dokument korrekt angezeigt werden.
 
 ### Warum sollte ich die Fallback-Einstellungen von Noto verwenden?

@@ -2,7 +2,7 @@
 title: 在 Word 文档中插入浮动图像
 linktitle: 在 Word 文档中插入浮动图像
 second_title: Aspose.Words 文档处理 API
-description: 通过本详细的分步指南学习如何使用 Aspose.Words for .NET 在 Word 文档中插入浮动图像。非常适合增强您的文档。
+description: 通过本详细分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中插入浮动图像。非常适合增强您的文档。
 type: docs
 weight: 10
 url: /zh/net/add-content-using-documentbuilder/insert-floating-image/
@@ -38,7 +38,7 @@ using Aspose.Words.Drawing;
 首先，在 Visual Studio 中创建一个新的 C# 项目。为了简单起见，您可以选择控制台应用程序。
 
 1. 打开 Visual Studio 并创建一个新项目。
-2. 选择“控制台应用程序（.NET Core）”并单击“下一步”。
+2. 选择“控制台应用程序（.NET Core）”，然后单击“下一步”。
 3. 为您的项目命名并选择保存位置。点击“创建”。
 4. 通过 NuGet 包管理器安装 Aspose.Words for .NET。在解决方案资源管理器中右键单击您的项目，选择“管理 NuGet 包”，然后搜索“Aspose.Words”。安装最新版本。
 
@@ -98,7 +98,7 @@ builder.InsertImage(imagePath,
 - `100`：距边距的垂直偏移量（以点为单位）。
 - `200`：图像的宽度（以点为单位）。
 - `100`：图像的高度（以点为单位）。
-- `WrapType.Square`：图像周围的文字环绕样式。
+- `WrapType.Square`：图像周围的文本环绕样式。
 
 ## 步骤 5：保存文档
 
@@ -120,7 +120,7 @@ doc.Save(outputPath);
 
 ## 结论
 
-使用 Aspose.Words for .NET 将浮动图像插入 Word 文档是一个简单的过程，分解为可管理的步骤。按照本指南，您可以向文档添加具有专业外观的图像，增强其视觉吸引力。Aspose.Words 提供了一个强大的 API，使文档操作变得轻而易举，无论您是在处理报告、提案还是任何其他文档类型。
+使用 Aspose.Words for .NET 将浮动图像插入 Word 文档是一个简单的过程，分解为可管理的步骤。按照本指南，您可以向文档添加具有专业外观的图像，增强其视觉吸引力。Aspose.Words 提供了一个强大的 API，使文档操作变得轻而易举，无论您处理的是报告、提案还是任何其他文档类型。
 
 ## 常见问题解答
 

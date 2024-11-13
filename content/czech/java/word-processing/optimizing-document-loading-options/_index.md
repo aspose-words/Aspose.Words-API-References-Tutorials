@@ -44,7 +44,7 @@ loadOptions.setLoadFormat(LoadFormat.HTML);
 Document document = new Document(htmlFilePath, loadOptions);
 ```
 
-### Načítání RTF dokumentů
+### Načítání dokumentů RTF
 
 Dokumenty RTF (Rich Text Format) se často používají pro svou kompatibilitu napříč různými platformami. Aspose.Words for Java usnadňuje efektivní načítání dokumentů RTF:
 

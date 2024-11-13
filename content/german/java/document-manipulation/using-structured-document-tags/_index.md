@@ -32,7 +32,7 @@ builder.insertNode(sdtCheckBox);
 doc.save("WorkingWithSDT.docx");
 ```
 
-## Überprüfen des aktuellen Status eines Checkbox-SDT
+## Überprüfen des aktuellen Status eines Kontrollkästchen-SDT
 
 Nachdem Sie Ihrem Dokument ein Kontrollkästchen-SDT hinzugefügt haben, möchten Sie möglicherweise dessen aktuellen Status programmgesteuert überprüfen. Dies kann nützlich sein, wenn Sie Benutzereingaben validieren oder bestimmte Aktionen basierend auf dem Kontrollkästchenstatus ausführen müssen.
 
@@ -118,7 +118,7 @@ doc.save("ComboBoxDocument.docx");
 
 ## Arbeiten mit Rich Text Content Control
 
-Rich-Text-Inhaltssteuerelemente eignen sich perfekt, um Ihren Dokumenten formatierten Text hinzuzufügen. Lassen Sie uns eines erstellen und seinen Inhalt festlegen.
+Rich-Text-Inhaltssteuerelemente eignen sich perfekt zum Hinzufügen formatierten Textes zu Ihren Dokumenten. Lassen Sie uns eines erstellen und seinen Inhalt festlegen.
 
 ```java
 Document doc = new Document();
@@ -142,7 +142,7 @@ Sie können Inhaltssteuerelementen Stile zuweisen, um die visuelle Darstellung I
 Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
-//Anwenden eines benutzerdefinierten Stils
+// Anwenden eines benutzerdefinierten Stils
 Style style = doc.getStyles().getByStyleIdentifier(StyleIdentifier.QUOTE);
 sdt.setStyle(style);
 

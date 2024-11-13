@@ -17,7 +17,7 @@ url: /zh/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 
 1.  Aspose.Words for .NET：您可以从[Aspose 发布页面](https://releases.aspose.com/words/net/).
 2. .NET Framework：确保您的机器上安装了 .NET Framework。
-3. 开发环境：任何 IDE（例如 Visual Studio）都可以。
+3. 开发环境：任何 IDE（如 Visual Studio）都可以。
 4. C# 基础知识：对 C# 有一点熟悉会很有帮助，但如果您是新手也不要担心——我们会详细解释一切。
 
 ## 导入命名空间
@@ -66,7 +66,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
-此代码片段将 SVG 图像插入到文档中。SVG 代码定义了一个具有指定点、颜色和样式的简单多边形。您可以根据需要随意自定义 SVG 代码。
+此代码片段将 SVG 图像插入文档。SVG 代码定义了一个具有指定点、颜色和样式的简单多边形。您可以根据需要随意自定义 SVG 代码。
 
 ## 步骤 4：定义 HtmlSaveOptions
 

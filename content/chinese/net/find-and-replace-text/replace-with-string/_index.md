@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("sad mad bad");
 ```
 
-我们添加了一行简单的文本以供使用。您可以随意自定义此内容。
+我们添加了一行简单的文字供我们使用。您可以随意自定义此内容。
 
 ## 步骤 4：执行查找和替换操作
 

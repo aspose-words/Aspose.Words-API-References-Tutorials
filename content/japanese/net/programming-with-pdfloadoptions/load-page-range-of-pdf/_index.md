@@ -34,7 +34,7 @@ using Aspose.Words.Saving;
 
 コードに進む前に、プロジェクトの準備が整っていることを確認してください。
 
-### ステップ 1.1: 新しいプロジェクトを作成する
+### ステップ1.1: 新しいプロジェクトを作成する
 Visual Studio を開き、新しいコンソール アプリ (.NET Core) プロジェクトを作成します。
 
 ### ステップ 1.2: Aspose.Words for .NET をインストールする
@@ -103,6 +103,6 @@ Aspose.Words では、一度に 1 つのページ範囲を指定できます。�
 もちろんです! 読み込んだ後は、編集、書式設定、他の形式への変換など、他の Aspose.Words ドキュメントと同様にページを操作できます。
 
 ### より詳細なドキュメントはどこで見つかりますか?
- Aspose.Words for .NETに関する包括的なドキュメントが見つかります。[ここ](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NETに関する包括的なドキュメントが見つかります[ここ](https://reference.aspose.com/words/net/).
 
 

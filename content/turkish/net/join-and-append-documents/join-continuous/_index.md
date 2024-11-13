@@ -2,65 +2,65 @@
 title: Sürekli Katıl
 linktitle: Sürekli Katıl
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak iki Word belgesini sorunsuz bir şekilde nasıl birleştireceğinizi öğrenin. Sorunsuz ve verimli bir belge birleştirme için adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for .NET kullanarak iki Word belgesini sorunsuz bir şekilde birleştirmeyi öğrenin. Sorunsuz ve etkili bir belge birleştirme için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/join-continuous/
 ---
 ## giriiş
 
-İki Word belgesini kesintisiz ve kesintisiz bir şekilde birleştirmek mi istiyorsunuz? Aspose.Words for .NET, Sürekli Bölüm Sonu özelliğini kullanarak bunu başarmanın harika bir yolunu sunuyor. Bu eğitim, süreç boyunca size adım adım rehberlik edecek ve belgeleri herhangi bir sorun yaşamadan kolayca birleştirebilmenizi sağlayacaktır. Hadi dalalım!
+İki Word belgesini kesintisiz bir şekilde birleştirmeyi mi düşünüyorsunuz? Aspose.Words for .NET, Sürekli Bölüm Sonu özelliğini kullanarak bunu başarmak için harika bir yol sunar. Bu eğitim, sizi süreç boyunca adım adım yönlendirerek, belgeleri hiçbir zorluk çekmeden kolayca birleştirebilmenizi sağlar. Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
--  Aspose.Words for .NET: Henüz yapmadıysanız indirip yükleyin[Aspose.Words for .NET](https://releases.aspose.com/words/net/).
-- Geliştirme Ortamı: Visual Studio'yu veya başka herhangi bir .NET geliştirme ortamını kullanabilirsiniz.
-- Örnek Belgeler: Birleştirmek istediğiniz iki Word belgesini hazır bulundurun.
+-  Aspose.Words .NET için: Henüz yapmadıysanız, indirin ve kurun[Aspose.Words for .NET](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio veya herhangi bir .NET geliştirme ortamını kullanabilirsiniz.
+- Örnek Belgeler: Birleştirmek istediğiniz iki Word belgeniz hazır olsun.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET'i kullanmak için projenize gerekli ad alanlarını içe aktarmanız gerekir. İşte bunu nasıl yapacağınız:
+Aspose.Words for .NET'i kullanmak için projenize gerekli ad alanlarını içe aktarmanız gerekir. Bunu şu şekilde yapabilirsiniz:
 
 ```csharp
 using Aspose.Words;
 ```
 
-Şimdi, netlik sağlamak için örneği birden fazla adıma ayıralım.
+Şimdi, daha anlaşılır olması için örneği birden fazla adıma bölelim.
 
-## 1. Adım: Belge Dizininizi Kurun
+## Adım 1: Belge Dizininizi Ayarlayın
 
-Öncelikle belgelerinizin saklanacağı dizini ayarlamamız gerekiyor. Bu, kodumuzun birleştirmek istediğimiz dosyaları bulmasını sağlayacaktır.
+Öncelikle belgelerinizin saklandığı dizini ayarlamamız gerekiyor. Bu, kodumuzun birleştirmek istediğimiz dosyaları bulmasını sağlayacaktır.
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgelerinizin saklandığı gerçek yolla.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgelerinizin saklandığı gerçek yol ile.
 
-## Adım 2: Kaynak ve Hedef Belgelerini Yükleyin
+## Adım 2: Kaynak ve Hedef Belgeleri Yükleyin
 
-Daha sonra kaynak ve hedef belgeleri programımıza yükleyeceğiz. Bunlar birleştirmek istediğiniz iki belgedir.
+Sonra, kaynak ve hedef belgeleri programımıza yükleyeceğiz. Bunlar birleştirmek istediğiniz iki belgedir.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-Dosya adlarının ve yolların, kullanmak istediğiniz gerçek dosyalarla eşleştiğinden emin olun.
+Kullanmak istediğiniz gerçek dosyalarla dosya adlarının ve yollarının eşleştiğinden emin olun.
 
 ## Adım 3: Bölüm Başlangıcını Sürekli Olarak Ayarlayın
 
- Kaynak belgenin içeriğinin hedef belgeden hemen sonra görünmesini sağlamak için,`SectionStart` kaynak belgedeki ilk bölümün özelliği`Continuous`.
+ Kaynak belgenin içeriğinin hedef belgeden hemen sonra görünmesini sağlamak için,`SectionStart` kaynak belgedeki ilk bölümün mülkiyeti`Continuous`.
 
 ```csharp
 // Belgenin, hedef belgenin içeriğinden hemen sonra görünmesini sağlayın.
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-Bu, birleştirildiğinde belgeler arasında herhangi bir kesinti olmamasını sağlar.
+Bu, birleştirildiğinde belgeler arasında herhangi bir kopukluk olmamasını sağlar.
 
 ## Adım 4: Kaynak Belgeyi Ekleyin
 
@@ -71,35 +71,35 @@ Bu, birleştirildiğinde belgeler arasında herhangi bir kesinti olmamasını sa
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Kullanma`ImportFormatMode.KeepSourceFormatting` kaynak belgedeki biçimlendirmenin son birleştirilmiş belgede korunmasını sağlar.
+ Kullanarak`ImportFormatMode.KeepSourceFormatting` Kaynak belgedeki biçimlendirmenin son birleştirilmiş belgede korunmasını sağlar.
 
 ## Adım 5: Birleştirilmiş Belgeyi Kaydedin
 
-Son olarak birleştirilen belgeyi belirtilen dizine kaydediyoruz. Bu, belgeleri birleştirme işlemini tamamlar.
+Son olarak birleştirilen belgeyi belirtilen dizine kaydederiz. Bu, belgelerin birleştirilmesi sürecini tamamlar.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```
 
-Yolun ve dosya adının ihtiyaçlarınıza uygun olduğundan emin olun.
+Yol ve dosya adının ihtiyaçlarınız için doğru olduğundan emin olun.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla iki Word belgesini tek bir sürekli belgede başarıyla birleştirdiniz. Bu işlem hem basit hem de son derece verimli olup belgelerinizin orijinal biçimlendirmesini korumasını sağlar.
+Ve işte oldu! Sadece birkaç satır kodla, Aspose.Words for .NET kullanarak iki Word belgesini tek bir sürekli belgeye başarıyla birleştirdiniz. Bu işlem yalnızca basit değil, aynı zamanda oldukça verimlidir ve belgelerinizin orijinal biçimlendirmesini korumasını sağlar.
 
-## SSS'ler
+## SSS
 
 ### İkiden fazla belgeyi birleştirebilir miyim?
-Evet, birden fazla belgeyi birleştirmek için ek belgeler yükleyip bunları sırayla ekleyerek işlemi tekrarlayabilirsiniz.
+Evet, birden fazla belgeyi birleştirme işlemini, ek belgeler yükleyerek ve bunları sırayla ekleyerek tekrarlayabilirsiniz.
 
 ### Orijinal biçimlendirme korunacak mı?
- Evet kullanıyorum`ImportFormatMode.KeepSourceFormatting` kaynak belgedeki biçimlendirmenin korunmasını sağlar.
+ Evet, kullanarak`ImportFormatMode.KeepSourceFormatting` kaynak belgedeki biçimlendirmenin korunmasını sağlar.
 
-### Aspose.Words for .NET, .NET Core ile uyumlu mu?
-Evet, Aspose.Words for .NET, hem .NET Framework hem de .NET Core ile uyumludur.
+### Aspose.Words for .NET, .NET Core ile uyumlu mudur?
+Evet, Aspose.Words for .NET hem .NET Framework hem de .NET Core ile uyumludur.
 
 ### Farklı sayfa düzenlerine sahip belgeleri birleştirebilir miyim?
-Evet, ancak sorunsuz bir birleştirme sağlamak için sayfa yapısı özelliklerini ayarlamanız gerekebilir.
+Evet, ancak kusursuz bir birleştirme sağlamak için sayfa düzeni özelliklerini ayarlamanız gerekebilir.
 
-### Sorunla karşılaşırsam nereden destek alabilirim?
+### Sorun yaşarsam nereden destek alabilirim?
  Aspose topluluk forumundan destek alabilirsiniz[Burada](https://forum.aspose.com/c/words/8).

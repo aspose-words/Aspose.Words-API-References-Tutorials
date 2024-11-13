@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Steg 3: Initiera DocumentBuilder
 
- De`DocumentBuilder` är som din pensel. Det hjälper dig att lägga till innehåll i ditt dokument. Låt oss initiera det.
+De`DocumentBuilder` är som din pensel. Det hjälper dig att lägga till innehåll i ditt dokument. Låt oss initiera det.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

@@ -1,24 +1,24 @@
 ---
-title: Aspose.Words for Java'da Belgelerdeki Görüntüleri Kaydetme
-linktitle: Belgelerden Görüntü Kaydetme
+title: Aspose.Words for Java'da Belgelerden Görüntüleri Kaydetme
+linktitle: Belgelerden Görüntüleri Kaydetme
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Kapsamlı adım adım kılavuzumuzla Aspose.Words for Java kullanarak belgelerden görüntüleri nasıl kaydedeceğinizi öğrenin. Formatları, sıkıştırmayı ve daha fazlasını özelleştirin.
+description: Kapsamlı adım adım kılavuzumuzla Aspose.Words for Java'yı kullanarak belgelerden görüntüleri nasıl kaydedeceğinizi öğrenin. Biçimleri, sıkıştırmayı ve daha fazlasını özelleştirin.
 type: docs
 weight: 17
 url: /tr/java/document-loading-and-saving/saving-images-from-documents/
 ---
 
-## Aspose.Words for Java'da Belgelerden Görüntü Kaydetmeye Giriş
+## Aspose.Words for Java'da Belgelerden Görüntüleri Kaydetmeye Giriş
 
-Bu derste Aspose.Words for Java kullanarak belgelerdeki görüntülerin nasıl kaydedileceğini inceleyeceğiz. Görüntü kaydetmeye yönelik çeşitli senaryoları ve özelleştirme seçeneklerini ele alacağız. Bu kılavuz, kaynak kodu örnekleriyle adım adım talimatlar sağlar.
+Bu eğitimde, Aspose.Words for Java kullanarak belgelerden resimlerin nasıl kaydedileceğini inceleyeceğiz. Resim kaydetme için çeşitli senaryoları ve özelleştirme seçeneklerini ele alacağız. Bu kılavuz, kaynak kodu örnekleriyle adım adım talimatlar sağlar.
 
-## Önkoşullar
+## Ön koşullar
 
- Başlamadan önce Aspose.Words for Java kütüphanesinin projenize entegre olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+ Başlamadan önce, projenize Aspose.Words for Java kütüphanesinin entegre olduğundan emin olun. Bunu şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
 
-## Adım 1: Eşik Kontrolüyle Görüntüleri TIFF Olarak Kaydetme
+## Adım 1: Eşik Kontrolü ile Görüntüleri TIFF Olarak Kaydetme
 
-Görüntüleri eşik kontrolüyle TIFF formatında kaydetmek için şu adımları izleyin:
+Görüntüleri eşik değeri kontrolüyle TIFF formatında kaydetmek için şu adımları izleyin:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
@@ -45,7 +45,7 @@ doc.save("Your Directory Path" + "SpecificPageMultipage.tiff", saveOptions);
 
 ## Adım 3: Görüntüleri 1 BPP Dizinli PNG Olarak Kaydetme
 
-Görüntüleri 1 BPP indeksli PNG olarak kaydetmek için şu adımları izleyin:
+Görüntüleri 1 BPP dizinli PNG olarak kaydetmek için şu adımları izleyin:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
@@ -56,9 +56,9 @@ saveOptions.setPixelFormat(ImagePixelFormat.FORMAT_1_BPP_INDEXED);
 doc.save("Your Directory Path" + "1BPPIndexed.png", saveOptions);
 ```
 
-## Adım 4: Özelleştirmeyle Bir Sayfayı JPEG Olarak Kaydetme
+## Adım 4: Özelleştirme ile Bir Sayfayı JPEG Olarak Kaydetme
 
-Belirli bir sayfayı özelleştirme seçenekleriyle JPEG olarak kaydetmek için bu kodu kullanın:
+Belirli bir sayfayı özelleştirme seçenekleriyle JPEG olarak kaydetmek için şu kodu kullanın:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
@@ -70,9 +70,9 @@ options.setHorizontalResolution(72f);
 doc.save("Your Directory Path" + "CustomizedJPEG.jpeg", options);
 ```
 
-## Adım 5: Sayfa Kaydederek Geri Aramayı Kullanma
+## Adım 5: Sayfa Kaydetme Geri Aramasını Kullanma
 
-Sayfa kaydetmeyi özelleştirmek için geri aramayı kullanabilirsiniz. İşte bir örnek:
+Sayfa kaydetmeyi özelleştirmek için bir geri arama kullanabilirsiniz. İşte bir örnek:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
@@ -90,7 +90,7 @@ private static class HandlePageSavingCallback implements IPageSavingCallback {
 }
 ```
 
-## Aspose.Words for Java'daki Belgelerdeki Görüntüleri Kaydetmek İçin Tam Kaynak Kodu
+## Aspose.Words for Java'da Belgelerden Görüntüleri Kaydetmek İçin Tam Kaynak Kodu
 
 ```java
 public void exposeThresholdControlForTiffBinarization() throws Exception
@@ -133,14 +133,14 @@ public void getJpegPageRange() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
-	// Bir belgenin yalnızca ilk sayfasını dönüştürmek için "PageSet"i "0" olarak ayarlayın.
+	// Belgenin yalnızca ilk sayfasını dönüştürmek için "PageSet" değerini "0" olarak ayarlayın.
 	options.setPageSet(new PageSet(0));
 	// Görüntünün parlaklığını ve kontrastını değiştirin.
 	// Her ikisi de 0-1 ölçeğindedir ve varsayılan olarak 0,5'tir.
 	options.setImageBrightness(0.3f);
 	options.setImageContrast(0.7f);
 	// Yatay çözünürlüğü değiştirin.
-	// Bu özelliklerin varsayılan değeri 96 dpi çözünürlük için 96,0'dır.
+	// Bu özelliklerin varsayılan değeri 96 dpi çözünürlük için 96.0'dır.
 	options.setHorizontalResolution(72f);
 	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
 }
@@ -165,52 +165,52 @@ private static class HandlePageSavingCallback implements IPageSavingCallback
 
 ## Çözüm
 
-Aspose.Words for Java kullanarak belgelerdeki görüntüleri nasıl kaydedeceğinizi öğrendiniz. Bu örnekler, format, sıkıştırma ve geri arama kullanımı da dahil olmak üzere görüntü kaydetmeye yönelik çeşitli özelleştirme seçeneklerini gösterir. Aspose.Words for Java'nın güçlü yetenekleriyle daha fazla olasılığı keşfedin.
+Aspose.Words for Java kullanarak belgelerden görüntüleri nasıl kaydedeceğinizi öğrendiniz. Bu örnekler, biçim, sıkıştırma ve geri arama kullanımı dahil olmak üzere görüntü kaydetme için çeşitli özelleştirme seçeneklerini göstermektedir. Aspose.Words for Java'nın güçlü yetenekleriyle daha fazla olasılığı keşfedin.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for Java ile kaydederken görüntü formatını nasıl değiştiririm?
+### Aspose.Words for Java ile kaydederken görüntü formatını nasıl değiştirebilirim?
 
- İstenilen formatı belirterek resim formatını değiştirebilirsiniz.`ImageSaveOptions` . Örneğin, PNG olarak kaydetmek için şunu kullanın:`SaveFormat.PNG` kodda gösterildiği gibi:
+ İstediğiniz formatı belirterek görüntü formatını değiştirebilirsiniz.`ImageSaveOptions` Örneğin, PNG olarak kaydetmek için şunu kullanın:`SaveFormat.PNG` kodda gösterildiği gibi:
 
 ```java
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
 ```
 
-### TIFF görüntüleri için sıkıştırma ayarlarını özelleştirebilir miyim?
+### TIFF resimler için sıkıştırma ayarlarını özelleştirebilir miyim?
 
-Evet, TIFF görüntü sıkıştırma ayarlarını özelleştirebilirsiniz. Örneğin, sıkıştırma yöntemini CCITT_3 olarak ayarlamak için aşağıdaki kodu kullanın:
+Evet, TIFF resim sıkıştırma ayarlarını özelleştirebilirsiniz. Örneğin, sıkıştırma yöntemini CCITT_3 olarak ayarlamak için aşağıdaki kodu kullanın:
 
 ```java
 saveOptions.setTiffCompression(TiffCompression.CCITT_3);
 ```
 
-### Bir belgedeki belirli bir sayfayı ayrı bir görüntü olarak nasıl kaydedebilirim?
+### Bir belgenin belirli bir sayfasını ayrı bir resim olarak nasıl kaydedebilirim?
 
- Belirli bir sayfayı resim olarak kaydetmek için`setPageSet`yöntem`ImageSaveOptions` . Örneğin yalnızca ilk sayfayı kaydetmek için`PageSet` ile`new PageSet(0)`.
+ Belirli bir sayfayı resim olarak kaydetmek için şunu kullanın:`setPageSet`yöntemde`ImageSaveOptions` Örneğin, yalnızca ilk sayfayı kaydetmek için,`PageSet` ile`new PageSet(0)`.
 
 ```java
-saveOptions.setPageSet(new PageSet(0)); // İlk sayfayı resim olarak kaydedin
+saveOptions.setPageSet(new PageSet(0)); // İlk sayfayı resim olarak kaydet
 ```
 
-### Kaydederken özel ayarları JPEG görüntülerine nasıl uygularım?
+### JPEG resimleri kaydederken özel ayarları nasıl uygularım?
 
-kullanarak JPEG görüntülere özel ayarlar uygulayabilirsiniz.`ImageSaveOptions`. Parlaklık, kontrast ve çözünürlük gibi özellikleri ayarlayın. Örneğin, parlaklığı 0,3'e ve kontrastı 0,7'ye değiştirmek için şu kodu kullanın:
+JPEG görüntülerine özel ayarlar uygulamak için şunları kullanabilirsiniz:`ImageSaveOptions`. Parlaklık, kontrast ve çözünürlük gibi özellikleri ayarlayın. Örneğin, parlaklığı 0,3'e ve kontrastı 0,7'ye değiştirmek için şu kodu kullanın:
 
 ```java
 options.setImageBrightness(0.3f);
 options.setImageContrast(0.7f);
 ```
 
-### Görüntü kaydetmeyi özelleştirmek için geri aramayı nasıl kullanabilirim?
+### Resim kaydetmeyi özelleştirmek için geri aramayı nasıl kullanabilirim?
 
- Görüntü kaydetmeyi özelleştirmek amacıyla geri aramayı kullanmak için`PageSavingCallback` içinde`ImageSaveOptions` . uygulayan bir sınıf oluşturun.`IPageSavingCallback` arayüzü geçersiz kılın ve`pageSaving` Yöntem.
+ Görüntü kaydetmeyi özelleştirmek için bir geri arama kullanmak üzere,`PageSavingCallback` içinde`ImageSaveOptions` . Aşağıdakileri uygulayan bir sınıf oluşturun:`IPageSavingCallback` arayüz ve geçersiz kılma`pageSaving` yöntem.
 
 ```java
 imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
 ```
 
- Daha sonra bunu uygulayan bir sınıf oluşturun.`IPageSavingCallback` arayüzde dosya adını ve konumunu özelleştirin`pageSaving` Yöntem.
+ Daha sonra, aşağıdakileri uygulayan bir sınıf oluşturun:`IPageSavingCallback` arayüz ve dosya adını ve konumunu özelleştirin`pageSaving` yöntem.
 
 ```java
 private static class HandlePageSavingCallback implements IPageSavingCallback {

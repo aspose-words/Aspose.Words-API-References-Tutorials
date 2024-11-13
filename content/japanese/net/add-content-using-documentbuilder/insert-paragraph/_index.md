@@ -70,7 +70,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 
 ## 結論
 
-おめでとうございます! Aspose.Words for .NET を使用して、書式設定された段落を Word 文書に正常に挿入できました。このプロセスにより、アプリケーションのニーズに合わせてリッチ コンテンツを動的に生成できます。
+おめでとうございます! Aspose.Words for .NET を使用して、書式設定された段落を Word 文書に挿入できました。このプロセスにより、アプリケーションのニーズに合わせてリッチ コンテンツを動的に生成できます。
 
 ## よくある質問
 

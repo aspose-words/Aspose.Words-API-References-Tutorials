@@ -9,7 +9,7 @@ url: /ja/net/programming-with-rtfsaveoptions/saving-images-as-wmf/
 ---
 ## 導入
 
-開発者の皆さん、こんにちは。Aspose.Words for .NET を使用して Word 文書に画像を WMF (Windows メタファイル) として保存する方法を知りたかったことはありませんか? まさにその通りです! このチュートリアルでは、Aspose.Words for .NET の世界を詳しく調べ、画像を WMF として保存する方法を説明します。これは、画像の品質を維持し、さまざまなプラットフォーム間で互換性を確保するために非常に便利です。準備はできましたか? さあ、始めましょう!
+開発者の皆さん、こんにちは。Aspose.Words for .NET を使用して Word 文書に画像を WMF (Windows メタファイル) として保存する方法を知りたかったことはありませんか? まさにその通りです。このチュートリアルでは、Aspose.Words for .NET の世界を詳しく調べ、画像を WMF として保存する方法を説明します。これは、画像の品質を維持し、さまざまなプラットフォーム間で互換性を確保するために非常に便利です。準備はできましたか? さあ、始めましょう!
 
 ## 前提条件
 
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Document.docx");
 RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
 ```
 
-説明: ここでは、`RtfSaveOptions`そして、`SaveImagesAsWmf`財産に`true`これにより、ドキュメントを保存するときに Aspose.Words に画像を WMF として保存するように指示します。
+説明: ここでは、`RtfSaveOptions`そして、`SaveImagesAsWmf`財産に`true`これにより、ドキュメントを保存するときに、Aspose.Words に画像を WMF として保存するように指示します。
 
 ## ステップ3: ドキュメントを保存する
 

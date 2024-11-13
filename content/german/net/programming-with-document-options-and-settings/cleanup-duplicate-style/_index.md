@@ -100,12 +100,12 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben doppelte Stile erfolgreich aus Ihrem Word-Dokument entfernt, indem Sie Aspose.Words für .NET verwenden. Indem Sie diese Schritte befolgen, können Sie Ihre Dokumente sauber und organisiert halten, sodass sie einfacher zu verwalten sind und weniger anfällig für Stilprobleme sind. Denken Sie daran, dass der Schlüssel zur Beherrschung jedes Tools die Übung ist. Experimentieren Sie also weiter mit Aspose.Words und entdecken Sie alle leistungsstarken Funktionen, die es zu bieten hat.
+Und da haben Sie es! Sie haben mit Aspose.Words für .NET erfolgreich doppelte Stile aus Ihrem Word-Dokument entfernt. Indem Sie diese Schritte befolgen, können Sie Ihre Dokumente sauber und organisiert halten, sodass sie einfacher zu verwalten sind und weniger anfällig für Stilprobleme sind. Denken Sie daran, dass der Schlüssel zur Beherrschung jedes Tools die Übung ist. Experimentieren Sie also weiter mit Aspose.Words und entdecken Sie alle leistungsstarken Funktionen, die es zu bieten hat.
 
 ## Häufig gestellte Fragen
 
 ### Was ist Aspose.Words für .NET?
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert mit .NET-Sprachen zu erstellen, zu bearbeiten, zu konvertieren und zu bearbeiten.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente programmgesteuert mithilfe von .NET-Sprachen erstellen, bearbeiten, konvertieren und bearbeiten können.
 
 ### Warum ist es wichtig, doppelte Stile in einem Word-Dokument zu bereinigen?
 Durch das Bereinigen doppelter Stile können Sie ein einheitliches und professionelles Erscheinungsbild Ihrer Dokumente bewahren, die Dateigröße verringern und das Dokument einfacher verwalten.

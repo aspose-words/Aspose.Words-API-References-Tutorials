@@ -1,6 +1,6 @@
 ---
-title: Bryt vidarelänken i Word-dokument
-linktitle: Bryt vidarelänken i Word-dokument
+title: Bryt länken framåt i Word-dokument
+linktitle: Bryt länken framåt i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du bryter länkar i Word-dokumenttextrutor med Aspose.Words för .NET. Följ vår guide för en smidigare dokumenthanteringsupplevelse.
 type: docs
@@ -100,7 +100,7 @@ Ibland kan en textruta vara en del av en kedja, med andra rutor som länkar till
 textBox.Previous?.BreakForwardLink();
 ```
 
- De`?.` operatören säkerställer att metoden endast anropas if`Previous` är inte null, vilket förhindrar potentiella körtidsfel.
+De`?.` operatören säkerställer att metoden endast anropas if`Previous` är inte null, vilket förhindrar potentiella körtidsfel.
 
 ## Slutsats
 
@@ -128,4 +128,4 @@ Att bryta länkar kan potentiellt påverka layouten, särskilt om textrutorna ut
 
 ### Var kan jag hitta fler resurser om att arbeta med Aspose.Words?
 
- För mer information och resurser kan du besöka[Aspose.Words dokumentation](https://reference.aspose.com/words/net/)och[supportforum](https://forum.aspose.com/c/words/8).
+ För mer information och resurser kan du besöka[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) och[supportforum](https://forum.aspose.com/c/words/8).

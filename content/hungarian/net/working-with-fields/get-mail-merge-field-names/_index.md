@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
- A`Aspose.Words` A névtér hozzáférést biztosít a Word dokumentumok kezeléséhez szükséges összes osztályhoz és metódushoz`System` olyan alapvető funkciókhoz használják, mint a konzol kimenet.
+A`Aspose.Words` A névtér hozzáférést biztosít a Word dokumentumok kezeléséhez szükséges összes osztályhoz és metódushoz`System` olyan alapvető funkciókhoz használják, mint a konzol kimenet.
 
 Bontsuk le a körlevél-mezőnevek kibontásának folyamatát egy világos, lépésenkénti útmutatóban.
 
@@ -47,7 +47,7 @@ Először is be kell állítania annak a könyvtárnak az elérési útját, aho
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Cserélje ki`"YOUR DOCUMENTS DIRECTORY"` tényleges elérési úttal, ahol a dokumentum található. Ez valami ilyesmi lehet`"C:\\Documents\\MyDoc.docx"`.
+ Cserélje ki`"YOUR DOCUMENTS DIRECTORY"` a tényleges elérési úttal, ahol a dokumentum található. Ez valami ilyesmi lehet`"C:\\Documents\\MyDoc.docx"`.
 
 ## 2. lépés: Töltse be a dokumentumot
 
@@ -69,11 +69,11 @@ Címsor: Körlevél-mezőnevek kibontása
  Most készen áll a dokumentumban található körlevél-mezők nevének lekérésére. Itt ragyog Aspose.Words – annak`MailMerge` osztály egyszerű módot biztosít a mezőnevek lekérésére.
 
 ```csharp
-// Az egyesítési mezők neveinek lekérése.
+// Egyesítési mezőnevek lekérése.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
- A`GetFieldNames()` metódus karakterláncok tömbjét adja vissza, amelyek mindegyike a dokumentumban található körlevél-mezőnevet képviseli. Ezek azok a helyőrzők, amelyeket a Word-dokumentumban láthat.
+A`GetFieldNames()`metódus karakterláncok tömbjét adja vissza, amelyek mindegyike a dokumentumban található körlevél-mezőnevet képviseli. Ezek azok a helyőrzők, amelyeket a Word-dokumentumban láthat.
 
 ## 4. lépés: Jelenítse meg az egyesítési mezők számát
 
@@ -92,7 +92,7 @@ Ez a kódsor kinyomtatja a dokumentumban lévő körlevél-mezők teljes számá
 
 Gratulálok! Most megtanulta, hogyan lehet kivonatolni a körlevél-mezők neveit Word-dokumentumból az Aspose.Words for .NET segítségével. Ez a technika értékes eszköz a dokumentumok munkafolyamatainak kezelésére és automatizálására, megkönnyítve a személyre szabott tartalmak kezelését. Ha követi ezeket a lépéseket, hatékonyan azonosíthatja és kezelheti a dokumentumok körlevél-mezőit.
 
- Ha bármilyen kérdése van, vagy további segítségre van szüksége, keresse fel a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy csatlakozzon a[Aspose közösség](https://forum.aspose.com/c/words/8) támogatásért. Boldog kódolást!
+Ha bármilyen kérdése van, vagy további segítségre van szüksége, keresse fel a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy csatlakozzon a[Aspose közösség](https://forum.aspose.com/c/words/8) támogatásért. Boldog kódolást!
 
 ## GYIK
 

@@ -196,7 +196,7 @@ public void loadChm() throws Exception {
 
 ## よくある質問
 
-### ドキュメントの読み込み中に警告を処理するにはどうすればよいですか?
+### ドキュメントの読み込み中に警告が発生した場合、どうすれば対処できますか?
 
 警告コールバックは次のように設定できます。`warningCallback()`上記の方法を使用します。`DocumentLoadingWarningCallback`アプリケーションの要件に応じて警告を処理するクラス。
 

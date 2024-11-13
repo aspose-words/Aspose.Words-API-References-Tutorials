@@ -2,7 +2,7 @@
 title: Java के लिए Aspose.Words में दस्तावेज़ विकल्प और सेटिंग्स का उपयोग करना
 linktitle: दस्तावेज़ विकल्प और सेटिंग्स का उपयोग करना
 second_title: Aspose.Words जावा दस्तावेज़ प्रसंस्करण एपीआई
-description: Java के लिए Aspose.Words की शक्ति अनलॉक करें। सहज दस्तावेज़ प्रबंधन के लिए दस्तावेज़ विकल्प और सेटिंग्स में महारत हासिल करें। ऑप्टिमाइज़ करें, कस्टमाइज़ करें और बहुत कुछ करें।
+description: Java के लिए Aspose.Words की शक्ति अनलॉक करें। सहज दस्तावेज़ प्रबंधन के लिए दस्तावेज़ विकल्प और सेटिंग्स में महारत हासिल करें। ऑप्टिमाइज़ करें, कस्टमाइज़ करें और बहुत कुछ।
 type: docs
 weight: 31
 url: /hi/java/document-manipulation/using-document-options-and-settings/
@@ -22,7 +22,7 @@ doc.save("Your Directory Path" + "WorkingWithDocumentOptionsAndSettings.Optimize
 
 दस्तावेज़ प्रबंधन का एक मुख्य पहलू Microsoft Word के विभिन्न संस्करणों के साथ संगतता सुनिश्चित करना है। Java के लिए Aspose.Words विशिष्ट Word संस्करणों के लिए दस्तावेज़ों को अनुकूलित करने का एक सीधा तरीका प्रदान करता है। उपरोक्त उदाहरण में, हम Word 2016 के लिए एक दस्तावेज़ को अनुकूलित करते हैं, जिससे निर्बाध संगतता सुनिश्चित होती है।
 
-## व्याकरण और वर्तनी संबंधी त्रुटियों की पहचान करना
+## व्याकरणिक और वर्तनी संबंधी त्रुटियों की पहचान करना
 
 ```java
 @Test
@@ -44,7 +44,7 @@ public void showGrammaticalAndSpellingErrors() throws Exception
 public void cleanupUnusedStylesAndLists() throws Exception
 {
     Document doc = new Document("Your Directory Path" + "Unused styles.docx");
-    // सफाई विकल्प परिभाषित करें
+    // सफ़ाई विकल्प परिभाषित करें
     CleanupOptions cleanupOptions = new CleanupOptions();
     cleanupOptions.setUnusedLists(false);
     cleanupOptions.setUnusedStyles(true);
@@ -159,7 +159,7 @@ doc.save("Your Directory Path" + "ShowErrors.docx");
 
 ### मैं किसी दस्तावेज़ से डुप्लिकेट शैलियाँ कैसे हटा सकता हूँ?
 
-किसी दस्तावेज़ से डुप्लिकेट शैलियाँ हटाने के लिए, का उपयोग करें`cleanup` विधि के साथ`duplicateStyle` विकल्प सेट करें`true`. यहाँ एक उदाहरण है:
+किसी दस्तावेज़ से डुप्लिकेट शैलियाँ हटाने के लिए, का उपयोग करें`cleanup` विधि के साथ`duplicateStyle` विकल्प सेट करें`true`यहाँ एक उदाहरण है:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -171,7 +171,7 @@ doc.save("Your Directory Path" + "CleanedDocument.docx");
 
 ### मैं किसी दस्तावेज़ के लिए देखने के विकल्प को कैसे अनुकूलित करूँ?
 
- आप इसका उपयोग करके दस्तावेज़ देखने के विकल्पों को अनुकूलित कर सकते हैं`ViewOptions` क्लास. उदाहरण के लिए, दृश्य प्रकार को पेज लेआउट और ज़ूम को 50% पर सेट करने के लिए:
+ आप दस्तावेज़ देखने के विकल्पों को अनुकूलित कर सकते हैं`ViewOptions` क्लास. उदाहरण के लिए, दृश्य प्रकार को पेज लेआउट और ज़ूम को 50% पर सेट करने के लिए:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");

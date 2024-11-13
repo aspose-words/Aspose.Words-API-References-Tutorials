@@ -17,7 +17,7 @@ url: /zh/net/programming-with-imagesaveoptions/page-saving-callback/
 
 1.  Aspose.Words for .NET：如果你还没有，请从以下网址下载并安装[这里](https://releases.aspose.com/words/net/).
 2. Visual Studio：任何版本都可以，但在本指南中我将使用 Visual Studio 2019。
-3. C# 基础知识：您需要对 C# 有基本的了解才能继续学习。
+3. C# 基础知识：您需要对 C# 有基本的了解才能跟上。
 
 ## 导入命名空间
 

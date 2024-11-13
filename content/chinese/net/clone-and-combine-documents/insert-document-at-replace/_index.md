@@ -15,7 +15,7 @@ url: /zh/net/clone-and-combine-documents/insert-document-at-replace/
 
 在我们进入代码之前，你需要做好以下几件事：
 
--  Visual Studio：确保您的计算机上安装了 Visual Studio。如果您还没有，可以从以下位置下载[这里](https://visualstudio.microsoft.com/).
+-  Visual Studio：确保您的计算机上安装了 Visual Studio。如果尚未安装，可以从以下位置下载[这里](https://visualstudio.microsoft.com/).
 - Aspose.Words for .NET：您需要 Aspose.Words 库。您可以从[Aspose 网站](https://releases.aspose.com/words/net/).
 - 基本 C# 知识：对 C# 和 .NET 的基本了解将帮助您跟随本教程。
 
@@ -37,7 +37,7 @@ using Aspose.Words.Tables;
 
 ## 步骤 1：设置文档目录
 
-首先，我们需要指定存储文档的目录。这就像大型演出前的准备工作。
+首先，我们需要指定存储文档的目录。这就像在大型演出前设置舞台一样。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -111,36 +111,40 @@ private class InsertDocumentAtReplaceHandler : IReplacingCallback
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
 {
-	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
-	{
-		CompositeNode destinationParent = insertionDestination.ParentNode;
+    //检查插入目标是否是段落或表格
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
 
-		NodeImporter importer =
-			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+        //创建 NodeImporter 以从源文档导入节点
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
 
-		//循环遍历节体中的所有块级节点，
-		//然后克隆并插入每个不是部分最后一个空段落的节点。
-		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
-		foreach (Node srcNode in srcSection.Body)
-		{
-			if (srcNode.NodeType == NodeType.Paragraph)
-			{
-				Paragraph para = (Paragraph)srcNode;
-				if (para.IsEndOfSection && !para.HasChildNodes)
-					continue;
-			}
+        //循环遍历源文档各节中的所有块级节点
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        {
+            foreach (Node srcNode in srcSection.Body)
+            {
+                //跳过章节的最后一个空白段落
+                if (srcNode.NodeType == NodeType.Paragraph)
+                {
+                    Paragraph para = (Paragraph)srcNode;
+                    if (para.IsEndOfSection && !para.HasChildNodes)
+                        continue;
+                }
 
-			Node newNode = importer.ImportNode(srcNode, true);
-
-			destinationParent.InsertAfter(newNode, insertionDestination);
-			insertionDestination = newNode;
-		}
-	}
-	else
-	{
-		throw new ArgumentException("The destination node should be either a paragraph or table.");
-	}
+                //导入节点并将其插入到目标中
+                Node newNode = importer.ImportNode(srcNode, true);
+                destinationParent.InsertAfter(newNode, insertionDestination);
+                insertionDestination = newNode;
+            }
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
 }
+
 ```
 
 此方法负责从要插入的文档中导入节点并将其放置在主文档中的正确位置。

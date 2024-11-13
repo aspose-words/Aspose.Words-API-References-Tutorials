@@ -20,7 +20,7 @@ url: /zh/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 3. Visual Studio 或任何其他支持 .NET 开发的 IDE。
 4. 对 C# 编程有基本的了解。
 
-在继续之前，请确保已安装 Aspose.Words for .NET 并设置了您的开发环境。
+在继续之前，请确保已安装 Aspose.Words for .NET 并设置了开发环境。
 
 ## 导入命名空间
 

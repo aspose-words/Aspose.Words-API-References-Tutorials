@@ -2,7 +2,7 @@
 title: Word での文書の結合と比較
 linktitle: Word での文書の結合と比較
 second_title: Aspose.Words Python ドキュメント管理 API
-description: Aspose.Words for Python を使用すると、Word 文書を簡単に結合および比較できます。文書の操作方法、相違点の強調表示方法、タスクの自動化方法を学習します。
+description: Aspose.Words for Python を使用すると、Word 文書を簡単に結合および比較できます。文書の操作、相違点の強調表示、タスクの自動化の方法を学びます。
 type: docs
 weight: 10
 url: /ja/python-net/document-combining-and-comparison/merge-compare-documents/

@@ -59,10 +59,7 @@ Here, `"Rendering.docx"` is the name of your Word file. Make sure this file exis
 To ensure images are interpolated, you need to configure the `PdfSaveOptions`. This class allows you to set various options for how your document is saved as a PDF. Specifically, you want to enable image interpolation.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	InterpolateImages = true
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 The `InterpolateImages` property is set to `true` to ensure that the images in your PDF are interpolated, improving their quality.

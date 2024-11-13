@@ -82,7 +82,7 @@ Igen, az Aspose.Words lehetővé teszi a revíziósávok színének testreszabá
 Teljesen. Beállíthatja, hogy az Aspose.Words csak bizonyos típusú változatokat, például törléseket vagy formázási módosításokat jelenítsen meg buborékokban.
 
 ### Hogyan szerezhetek ideiglenes licencet az Aspose.Words számára?
- Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Használhatom az Aspose.Words for .NET-et más programozási nyelvekkel?
 Az Aspose.Words elsősorban .NET-hez készült, de bármilyen .NET által támogatott nyelven használható, beleértve a VB.NET-et és a C-t is.++/CLI.

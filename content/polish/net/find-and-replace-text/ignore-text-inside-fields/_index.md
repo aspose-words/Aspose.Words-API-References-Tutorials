@@ -1,22 +1,22 @@
 ---
-title: Ignoruj tekst w polach
-linktitle: Ignoruj tekst w polach
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak manipulować tekstem wewnątrz pól w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ten samouczek zawiera wskazówki krok po kroku z praktycznymi przykładami.
+title: Ignoruj tekst wewnątrz pól
+linktitle: Ignoruj tekst wewnątrz pól
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak manipulować tekstem wewnątrz pól w dokumentach Worda za pomocą Aspose.Words dla .NET. Ten samouczek zawiera wskazówki krok po kroku z praktycznymi przykładami.
 type: docs
 weight: 10
 url: /pl/net/find-and-replace-text/ignore-text-inside-fields/
 ---
 ## Wstęp
 
-W tym samouczku zagłębimy się w manipulowanie tekstem w polach w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Aspose.Words zapewnia niezawodne funkcje przetwarzania dokumentów, umożliwiając programistom efektywną automatyzację zadań. W tym miejscu skupimy się na ignorowaniu tekstu wewnątrz pól, co jest częstym wymaganiem w scenariuszach automatyzacji dokumentów.
+W tym samouczku zagłębimy się w manipulowanie tekstem wewnątrz pól w dokumentach Worda przy użyciu Aspose.Words dla .NET. Aspose.Words zapewnia solidne funkcje do przetwarzania dokumentów, umożliwiając programistom wydajną automatyzację zadań. Tutaj skupimy się na ignorowaniu tekstu wewnątrz pól, co jest powszechnym wymogiem w scenariuszach automatyzacji dokumentów.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następującą konfigurację:
-- Program Visual Studio zainstalowany na Twoim komputerze.
-- Biblioteka Aspose.Words dla .NET zintegrowana z Twoim projektem.
-- Podstawowa znajomość programowania w C# i środowisku .NET.
+Zanim zaczniemy, upewnij się, że masz następujące ustawienia:
+- Na Twoim komputerze zainstalowano program Visual Studio.
+- Biblioteka Aspose.Words for .NET zintegrowana z Twoim projektem.
+- Podstawowa znajomość programowania w języku C# i środowiska .NET.
 
 ## Importuj przestrzenie nazw
 
@@ -29,9 +29,9 @@ using System;
 using System.Text.RegularExpressions;
 ```
 
-## Krok 1: Utwórz nowy dokument i konstruktor
+## Krok 1: Utwórz nowy dokument i kreator
 
- Najpierw zainicjuj nowy dokument programu Word i a`DocumentBuilder`obiekt ułatwiający budowę dokumentu:
+ Najpierw zainicjuj nowy dokument Word i`DocumentBuilder`obiekt ułatwiający konstruowanie dokumentów:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -39,36 +39,36 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Wstaw pole z tekstem
 
- Skorzystaj z`InsertField` metoda`DocumentBuilder` aby dodać pole zawierające tekst:
+ Użyj`InsertField` metoda`DocumentBuilder` aby dodać pole zawierające tekst:
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## Krok 3: Zignoruj tekst w polach
+## Krok 3: Ignoruj tekst wewnątrz pól
 
- Aby manipulować tekstem, ignorując zawartość pól, użyj`FindReplaceOptions` z`IgnoreFields` właściwość ustawiona na`true`:
+ Aby manipulować tekstem, ignorując jednocześnie zawartość pól, należy zastosować`FindReplaceOptions` z`IgnoreFields` właściwość ustawiona na`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
 
 ## Krok 4: Wykonaj zamianę tekstu
 
-Używaj wyrażeń regularnych do zastępowania tekstu. Tutaj zastępujemy wystąpienia litery „e” gwiazdką „*' w całym zakresie dokumentu:
+Użyj wyrażeń regularnych do zamiany tekstu. Tutaj zastępujemy wystąpienia litery 'e' gwiazdką '*' w całym zakresie dokumentu:
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Krok 5: Wyprowadź zmodyfikowany tekst dokumentu
+## Krok 5: Wyjście zmodyfikowanego tekstu dokumentu
 
-Pobierz i wydrukuj zmodyfikowany tekst, aby zweryfikować dokonane zamiany:
+Pobierz i wydrukuj zmodyfikowany tekst, aby sprawdzić wprowadzone zmiany:
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## Krok 6: Dołącz tekst w polach
+## Krok 6: Umieść tekst w polach
 
- Aby przetwarzać tekst wewnątrz pól, zresetuj opcję`IgnoreFields`własność do`false` i ponownie wykonaj operację wymiany:
+ Aby przetworzyć tekst wewnątrz pól, zresetuj`IgnoreFields`nieruchomość do`false` i ponownie wykonaj operację zamiany:
 ```csharp
 options.IgnoreFields = false;
 doc.Range.Replace(regex, "*", options);
@@ -76,21 +76,21 @@ doc.Range.Replace(regex, "*", options);
 
 ## Wniosek
 
-W tym samouczku omówiliśmy, jak manipulować tekstem w polach w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ta funkcja jest niezbędna w scenariuszach, w których zawartość pola wymaga specjalnej obsługi podczas programowego przetwarzania dokumentów.
+W tym samouczku zbadaliśmy, jak manipulować tekstem wewnątrz pól w dokumentach Worda przy użyciu Aspose.Words dla .NET. Ta możliwość jest niezbędna w scenariuszach, w których zawartość pola wymaga specjalnej obsługi podczas przetwarzania dokumentów programowo.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak obsługiwać zagnieżdżone pola w dokumentach programu Word?
-Zagnieżdżonymi polami można zarządzać poprzez rekurencyjne nawigowanie po zawartości dokumentu za pomocą interfejsu API Aspose.Words.
+### Jak radzić sobie z zagnieżdżonymi polami w dokumentach Word?
+Zagnieżdżonymi polami można zarządzać poprzez rekurencyjną nawigację po zawartości dokumentu przy użyciu interfejsu API Aspose.Words.
 
-### Czy mogę zastosować logikę warunkową do selektywnego zastępowania tekstu?
-Tak, Aspose.Words umożliwia implementację logiki warunkowej przy użyciu FindReplaceOptions do kontrolowania zastępowania tekstu w oparciu o określone kryteria.
+### Czy mogę zastosować logikę warunkową, aby selektywnie zastąpić tekst?
+Tak, Aspose.Words pozwala na implementację logiki warunkowej przy użyciu FindReplaceOptions, która umożliwia sterowanie zamianą tekstu na podstawie określonych kryteriów.
 
 ### Czy Aspose.Words jest kompatybilny z aplikacjami .NET Core?
-Tak, Aspose.Words obsługuje .NET Core, zapewniając kompatybilność między platformami dla potrzeb automatyzacji dokumentów.
+Tak, Aspose.Words obsługuje platformę .NET Core, co zapewnia kompatybilność międzyplatformową w kontekście automatyzacji dokumentów.
 
-### Gdzie mogę znaleźć więcej przykładów i zasobów dotyczących Aspose.Words?
- Odwiedzać[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) obszerne przewodniki, odniesienia do API i przykłady kodu.
+### Gdzie mogę znaleźć więcej przykładów i materiałów dla Aspose.Words?
+ Odwiedzać[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) gdzie znajdziesz kompleksowe przewodniki, odniesienia do interfejsów API i przykłady kodu.
 
-### Jak mogę uzyskać pomoc techniczną dla Aspose.Words?
- Aby uzyskać pomoc techniczną, odwiedź stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) gdzie możesz zamieszczać swoje zapytania i kontaktować się ze społecznością.
+### Jak mogę uzyskać pomoc techniczną dotyczącą Aspose.Words?
+ Aby uzyskać pomoc techniczną, odwiedź stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) gdzie możesz zamieszczać swoje zapytania i nawiązywać kontakt ze społecznością.

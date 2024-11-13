@@ -70,7 +70,7 @@ Section section = doc.Sections[0];
 section.ClearContent();
 ```
 
-- `section.ClearContent();`刪除指定節中的所有內容，保持節結構不變。
+- `section.ClearContent();`刪除指定節中的所有內容，保持節結構完整。
 
 ## 第五步：儲存修改後的文檔
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "Document_Without_Section_Content.docx");
 
 ## 結論
 
-現在你就得到它了！ 🎉 您已使用 Aspose.Words for .NET 成功清除了 Word 文件中某個部分的內容。這種方法可以成為真正的救星，特別是在處理大型文件或重複性任務時。請記住，熟能生巧，因此請不斷嘗試 Aspose.Words 的不同功能，以成為文件操作專家。快樂編碼！
+現在你就擁有了！ 🎉 您已使用 Aspose.Words for .NET 成功清除了 Word 文件中某個部分的內容。這種方法可以成為真正的救星，特別是在處理大型文件或重複性任務時。請記住，熟能生巧，因此請不斷嘗試 Aspose.Words 的不同功能，以成為文件操作專家。快樂編碼！
 
 ## 常見問題解答
 

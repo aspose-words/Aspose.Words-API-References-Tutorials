@@ -1,28 +1,28 @@
 ---
-title: Açık Tip Özellikler
-linktitle: Açık Tip Özellikler
+title: Açık Tip Özellikleri
+linktitle: Açık Tip Özellikleri
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde OpenType özelliklerini nasıl etkinleştireceğinizi öğrenin.
+description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerinde OpenType özelliklerinin nasıl etkinleştirileceğini öğrenin.
 type: docs
 weight: 10
 url: /tr/net/enable-opentype-features/open-type-features/
 ---
 ## giriiş
 
-Aspose.Words for .NET'i kullanarak OpenType özellikleri dünyasına dalmaya hazır mısınız? Kemerlerinizi bağlayın, çünkü yalnızca Word belgelerinizi geliştirmekle kalmayacak, aynı zamanda sizi bir Aspose.Words uzmanı yapacak ilgi çekici bir yolculuğa çıkmak üzereyiz. Hadi başlayalım!
+Aspose.Words for .NET kullanarak OpenType özelliklerinin dünyasına dalmaya hazır mısınız? Emniyet kemerlerinizi bağlayın, çünkü yalnızca Word belgelerinizi geliştirmekle kalmayacak, aynı zamanda sizi bir Aspose.Words uzmanı yapacak ilgi çekici bir yolculuğa çıkmak üzereyiz. Başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 1.  Aspose.Words for .NET: İndirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
-2. .NET Framework: .NET Framework'ün uyumlu bir sürümünün yüklü olduğundan emin olun.
+2. .NET Framework: Uyumlu bir .NET Framework sürümünün yüklü olduğundan emin olun.
 3. Visual Studio: Kodlama için entegre bir geliştirme ortamı (IDE).
-4. Temel C# Bilgisi: Bu eğitimde, C# programlama konusunda temel bir anlayışa sahip olduğunuz varsayılmaktadır.
+4. Temel C# Bilgisi: Bu eğitimde C# programlama hakkında temel bir anlayışa sahip olduğunuzu varsayıyoruz.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET tarafından sağlanan işlevlere erişmek için öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+Öncelikle, Aspose.Words for .NET tarafından sağlanan işlevlere erişmek için gerekli ad alanlarını içe aktarmanız gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```csharp
 using System;
@@ -30,83 +30,83 @@ using Aspose.Words;
 using Aspose.Words.Shaping.HarfBuzz;
 ```
 
-Şimdi örneği adım adım kılavuz formatında birden fazla adıma ayıralım.
+Şimdi örneği adım adım bir rehber formatında birden fazla adıma bölelim.
 
-## 1. Adım: Projenizi Kurun
+## Adım 1: Projenizi Kurun
 
-### Yeni Proje Oluşturma
+### Yeni Bir Proje Oluşturma
 
-Visual Studio'yu açın ve yeni bir C# projesi oluşturun. "OpenTypeFeaturesDemo" gibi anlamlı bir ad verin. Burası OpenType özelliklerini denemek için oyun alanımız olacak.
+Visual Studio'yu açın ve yeni bir C# projesi oluşturun. "OpenTypeFeaturesDemo" gibi anlamlı bir isim verin. Bu, OpenType özellikleriyle denemeler yapacağımız oyun alanımız olacak.
 
-### Aspose.Words Referansı Ekleme
+### Aspose.Words Referansı Ekleniyor
 
-Aspose.Words'ü kullanmak için projenize eklemeniz gerekir. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz:
+Aspose.Words'ü kullanmak için onu projenize eklemeniz gerekir. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz:
 
-1. Solution Explorer'da projenize sağ tıklayın.
+1. Çözüm Gezgini’nde projenizin üzerine sağ tıklayın.
 2. "NuGet Paketlerini Yönet" seçeneğini seçin.
-3. "Aspose.Words" ifadesini arayın ve yükleyin.
+3. "Aspose.Words"ü arayın ve yükleyin.
 
-## 2. Adım: Belgenizi Yükleyin
+## Adım 2: Belgenizi Yükleyin
 
 ### Belge Dizinini Belirleme
 
-Belge dizininizin yolunu tutacak bir dize değişkeni oluşturun. Burası Word belgenizin saklandığı yerdir.
+Belge dizininize giden yolu tutacak bir dize değişkeni oluşturun. Word belgenizin saklandığı yer burasıdır.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgenizin bulunduğu gerçek yolla.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`Belgenizin bulunduğu gerçek yol ile.
 
 ### Belgeyi Yükleme
 
-Şimdi belgenizi Aspose.Words'ü kullanarak yükleyin:
+Şimdi Aspose.Words kullanarak belgenizi yükleyin:
 
 ```csharp
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
 ```
 
-Bu kod satırı belirtilen belgeyi açar, böylece onu işleyebiliriz.
+Bu kod satırı belirtilen belgeyi açarak üzerinde değişiklik yapmamızı sağlar.
 
-## 3. Adım: OpenType Özelliklerini Etkinleştirin
+## Adım 3: OpenType Özelliklerini Etkinleştirin
 
- HarfBuzz, Aspose.Words ile sorunsuz bir şekilde çalışan, açık kaynaklı bir metin şekillendirme motorudur. OpenType özelliklerini etkinleştirmek için`TextShaperFactory` mülkiyeti`LayoutOptions` nesne.
+ HarfBuzz, Aspose.Words ile sorunsuz bir şekilde çalışan açık kaynaklı bir metin şekillendirme motorudur. OpenType özelliklerini etkinleştirmek için,`TextShaperFactory` mülkiyeti`LayoutOptions` nesne.
 
 ```csharp
 doc.LayoutOptions.TextShaperFactory = HarfBuzzTextShaperFactory.Instance;
 ```
 
-Bu kod parçacığı, belgenizin metin şekillendirme için HarfBuzz'ı kullanmasını sağlayarak gelişmiş OpenType özelliklerini etkinleştirir.
+Bu kod parçacığı, belgenizin metin şekillendirme için HarfBuzz'ı kullanmasını sağlayarak gelişmiş OpenType özelliklerinin etkinleştirilmesini sağlar.
 
-## 4. Adım: Belgenizi Kaydedin
+## Adım 4: Belgenizi Kaydedin
 
-Son olarak, çalışmanızın sonuçlarını görmek için değiştirilen belgenizi PDF olarak kaydedin.
+Son olarak, çalışmanızın sonuçlarını görmek için değiştirdiğiniz belgeyi PDF olarak kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-Bu kod satırı, HarfBuzz tarafından etkinleştirilen OpenType özelliklerini birleştirerek belgeyi PDF formatında kaydeder.
+Bu kod satırı, HarfBuzz tarafından etkinleştirilen OpenType özelliklerini de kullanarak belgeyi PDF formatında kaydeder.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgenizdeki OpenType özelliklerini başarıyla etkinleştirdiniz. Bu adımları izleyerek gelişmiş tipografik yeteneklerin kilidini açarak belgelerinizin profesyonel ve şık görünmesini sağlayabilirsiniz.
+Ve işte oldu! Aspose.Words for .NET kullanarak Word belgenizde OpenType özelliklerini başarıyla etkinleştirdiniz. Bu adımları izleyerek gelişmiş tipografik yeteneklerin kilidini açabilir, belgelerinizin profesyonel ve cilalı görünmesini sağlayabilirsiniz.
 
-Ama burada durma! Aspose.Words'ün diğer özelliklerini keşfedin ve belgelerinizi nasıl daha da geliştirebileceğinizi görün. Unutmayın, pratik mükemmelleştirir; bu nedenle denemeye ve öğrenmeye devam edin.
+Ama burada durmayın! Aspose.Words'ün daha fazla özelliğini keşfedin ve belgelerinizi nasıl daha da geliştirebileceğinizi görün. Unutmayın, pratik mükemmelleştirir, bu yüzden denemeye ve öğrenmeye devam edin.
 
-## SSS'ler
+## SSS
 
-### OpenType özellikleri nelerdir?
-OpenType özellikleri, bitişik harfler, karakter aralığı ve biçimsel kümeler gibi, belgelerdeki metnin görünümünü iyileştiren gelişmiş tipografik yetenekleri içerir.
+### OpenType'ın özellikleri nelerdir?
+OpenType özellikleri arasında, belgelerdeki metnin görünümünü iyileştiren bağlar, harf aralığı ve stilistik setler gibi gelişmiş tipografik yetenekler yer alır.
 
-### HarfBuzz'ı neden Aspose.Words ile kullanmalısınız?
-HarfBuzz, OpenType özellikleri için güçlü destek sağlayan ve belgelerinizin tipografik kalitesini artıran açık kaynaklı bir metin şekillendirme motorudur.
+### Aspose.Words ile HarfBuzz'ı neden kullanmalısınız?
+HarfBuzz, belgelerinizin tipografik kalitesini artırarak OpenType özelliklerine güçlü destek sağlayan açık kaynaklı bir metin şekillendirme motorudur.
 
 ### Aspose.Words ile diğer metin şekillendirme motorlarını kullanabilir miyim?
-Evet, Aspose.Words farklı metin şekillendirme motorlarını destekler. Ancak kapsamlı OpenType özellik desteği nedeniyle HarfBuzz şiddetle tavsiye edilir.
+Evet, Aspose.Words farklı metin şekillendirme motorlarını destekler. Ancak, HarfBuzz kapsamlı OpenType özellik desteği nedeniyle şiddetle tavsiye edilir.
 
-### Aspose.Words tüm .NET sürümleriyle uyumlu mu?
- Aspose.Words, .NET Framework, .NET Core ve .NET Standard dahil olmak üzere çeşitli .NET sürümlerini destekler. Kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) ayrıntılı uyumluluk bilgileri için.
+### Aspose.Words tüm .NET sürümleriyle uyumlu mudur?
+ Aspose.Words, .NET Framework, .NET Core ve .NET Standard dahil olmak üzere çeşitli .NET sürümlerini destekler.[belgeleme](https://reference.aspose.com/words/net/) Ayrıntılı uyumluluk bilgisi için.
 
 ### Satın almadan önce Aspose.Words'ü nasıl deneyebilirim?
- Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Web sitesi](https://releases.aspose.com/) ve geçici bir lisans talep edin[Burada](https://purchase.aspose.com/temporary-license/).
+ Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Aspose web sitesi](https://releases.aspose.com/) ve geçici bir lisans talep edin[Burada](https://purchase.aspose.com/temporary-license/).

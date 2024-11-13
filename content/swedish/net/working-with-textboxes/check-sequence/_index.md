@@ -1,6 +1,6 @@
 ---
-title: TextBox Sequence Check i Word
-linktitle: TextBox Sequence Check i Word
+title: Textbox Sequence Check i Word
+linktitle: Textbox Sequence Check i Word
 second_title: Aspose.Words Document Processing API
 description: Upptäck hur du kontrollerar sekvensen av textrutor i Word-dokument med Aspose.Words för .NET. Följ vår detaljerade guide för att bemästra dokumentflödet!
 type: docs
@@ -89,7 +89,7 @@ if (textBox.Next == null && textBox.Previous != null)
 - `textBox.Next`: Pekar på nästa textruta i sekvensen.
 - `textBox.Previous`: Pekar på föregående textruta i sekvensen.
 
- Denna kod kontrollerar egenskaperna`Next`och`Previous` för att bestämma textrutans position i sekvensen.
+ Denna kod kontrollerar egenskaperna`Next` och`Previous` för att bestämma textrutans position i sekvensen.
 
 ## Steg 4: Länka textrutor (valfritt)
 
@@ -151,4 +151,4 @@ Ja, textrutor kan länkas i valfri sekvens, inklusive icke-linjära arrangemang.
 Ja, du kan utforma texten i varje textruta oberoende, vilket ger dig flexibilitet i design och formatering.
 
 ### Var kan jag hitta fler resurser om att arbeta med textrutor i Aspose.Words?
- För mer information, kolla in[Aspose.Words dokumentation](https://reference.aspose.com/words/net/)och[supportforum](https://forum.aspose.com/c/words/8).
+ För mer information, kolla in[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) och[supportforum](https://forum.aspose.com/c/words/8).

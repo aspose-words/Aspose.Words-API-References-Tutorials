@@ -17,7 +17,7 @@ url: /hi/net/programming-with-bookmarks/append-bookmarked-text/
 
 -  Aspose.Words for .NET: सुनिश्चित करें कि आपने इसे इंस्टॉल किया है। यदि नहीं, तो आप कर सकते हैं[यहाँ पर डाउनलोड करो](https://releases.aspose.com/words/net/).
 - विकास वातावरण: कोई भी .NET विकास वातावरण जैसे विजुअल स्टूडियो.
-- C# का बुनियादी ज्ञान: बुनियादी C# प्रोग्रामिंग अवधारणाओं को समझने से मदद मिलेगी।
+- C# का बुनियादी ज्ञान: C# प्रोग्रामिंग की बुनियादी अवधारणाओं को समझने से मदद मिलेगी।
 - बुकमार्क के साथ वर्ड दस्तावेज़: बुकमार्क के साथ एक वर्ड दस्तावेज़, जिसका उपयोग हम पाठ जोड़ने के लिए करेंगे।
 
 ## नामस्थान आयात करें
@@ -41,7 +41,7 @@ using Aspose.Words.Importing;
 Document srcDoc = new Document("source.docx");
 Document dstDoc = new Document("destination.docx");
 
-// दस्तावेज़ आयातक को आरंभ करें.
+// दस्तावेज़ आयातक को प्रारंभ करें.
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
 
 // स्रोत दस्तावेज़ में बुकमार्क ढूंढें.

@@ -33,7 +33,7 @@ Lassen Sie uns nun den Vorgang der Fettdarstellung von Text in einem Word-Dokume
 
 ## Schritt 1: DocumentBuilder initialisieren
 
- Der`DocumentBuilder` Klasse bietet eine schnelle und einfache Möglichkeit, Ihrem Dokument Inhalt hinzuzufügen. Lassen Sie uns sie initialisieren.
+Der`DocumentBuilder` Klasse bietet eine schnelle und einfache Möglichkeit, Ihrem Dokument Inhalt hinzuzufügen. Lassen Sie uns sie initialisieren.
 
 ```csharp
 // Verwenden Sie einen Dokument-Generator, um dem Dokument Inhalt hinzuzufügen.
@@ -60,13 +60,13 @@ Und da haben Sie es! Sie haben mit Aspose.Words für .NET erfolgreich Text in ei
  Ja, das können Sie. Nutzen Sie dazu die`DocumentBuilder` um bestimmte Abschnitte Ihres Textes zu formatieren.
 
 ### Ist es auch möglich, die Textfarbe zu ändern?
- Auf jeden Fall! Sie können die`builder.Font.Color`-Eigenschaft, um die Textfarbe festzulegen.
+ Auf jeden Fall! Sie können die`builder.Font.Color`-Eigenschaft zum Festlegen der Textfarbe.
 
 ### Kann ich mehrere Schriftstile gleichzeitig anwenden?
- Ja, das können Sie. Sie können beispielsweise Text gleichzeitig fett und kursiv formatieren, indem Sie beide`builder.Font.Bold`Und`builder.Font.Italic` Zu`true`.
+ Ja, das können Sie. Sie können beispielsweise Text gleichzeitig fett und kursiv formatieren, indem Sie beide`builder.Font.Bold` Und`builder.Font.Italic` Zu`true`.
 
 ### Welche anderen Optionen zur Textformatierung sind verfügbar?
 Aspose.Words bietet zahlreiche Optionen zur Textformatierung wie Schriftgröße, Unterstreichen, Durchstreichen und mehr.
 
 ### Benötige ich eine Lizenz, um Aspose.Words zu verwenden?
- Sie können Aspose.Words mit einer kostenlosen Testversion oder einer temporären Lizenz verwenden, für die volle Funktionalität wird jedoch eine kostenpflichtige Lizenz empfohlen. Schauen Sie sich die[kaufen](https://purchase.aspose.com/buy) Weitere Einzelheiten finden Sie auf der Seite.
+ Sie können Aspose.Words mit einer kostenlosen Testversion oder einer temporären Lizenz verwenden, für die volle Funktionalität wird jedoch eine kostenpflichtige Lizenz empfohlen. Schauen Sie sich die[kaufen](https://purchase.aspose.com/buy) Seite für weitere Details.

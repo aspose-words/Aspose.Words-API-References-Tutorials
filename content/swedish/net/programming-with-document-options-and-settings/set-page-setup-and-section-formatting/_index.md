@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Steg 1: Initiera Document and DocumentBuilder
 
- Låt oss börja med att initiera`Document`och`DocumentBuilder` föremål. De`DocumentBuilder` är en hjälpklass som förenklar skapande och manipulering av dokument.
+ Låt oss börja med att initiera`Document` och`DocumentBuilder` föremål. De`DocumentBuilder` är en hjälpklass som förenklar skapande och manipulering av dokument.
 
 ```csharp
 // Sökvägen till dokumentkatalogen.

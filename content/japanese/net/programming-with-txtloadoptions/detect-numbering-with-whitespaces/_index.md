@@ -9,7 +9,7 @@ url: /ja/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
 ## 導入
 
-.NET 愛好家のための Aspose.Words! 今日は、プレーンテキスト ドキュメント内のリストを簡単に処理できる魅力的な機能を紹介します。テキスト ファイルの行の一部がリストであるはずなのに、Word ドキュメントに読み込んだときに見た目がおかしくなってしまうという経験はありませんか? 私たちには、空白文字を含む番号を検出するという巧妙なトリックがあります。このチュートリアルでは、`DetectNumberingWithWhitespaces` Aspose.Words for .NET のオプションを使用すると、数字とテキストの間に空白がある場合でも、リストが正しく認識されるようになります。
+.NET 愛好家のための Aspose.Words! 今日は、プレーンテキスト ドキュメント内のリストを簡単に処理できる魅力的な機能を紹介します。テキスト ファイルの行の一部がリストであるはずなのに、Word ドキュメントに読み込んだときに正しく表示されないという経験をしたことはありませんか? 私たちには、空白文字を含む番号を検出するという巧妙なトリックがあります。このチュートリアルでは、`DetectNumberingWithWhitespaces` Aspose.Words for .NET のオプションを使用すると、数字とテキストの間に空白がある場合でも、リストが正しく認識されるようになります。
 
 ## 前提条件
 
@@ -95,7 +95,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 ## よくある質問
 
 ### 何ですか`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
-`DetectNumberingWithWhitespaces`オプションです`TxtLoadOptions`これにより、番号とリスト項目のテキストの間に空白がある場合でも、Aspose.Words はリストを認識できるようになります。
+`DetectNumberingWithWhitespaces`はオプションです`TxtLoadOptions`これにより、番号とリスト項目のテキストの間に空白がある場合でも、Aspose.Words はリストを認識できるようになります。
 
 ### この機能を箇条書きや括弧などの他の区切り文字にも使用できますか?
 はい、Aspose.Wordsは箇条書きや括弧などの一般的な区切り文字を含むリストを自動的に検出します。`DetectNumberingWithWhitespaces`特に空白のあるリストに役立ちます。

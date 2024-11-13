@@ -68,10 +68,8 @@ builder.InsertHyperlink("Contact Support", "mailto:support@aspose.com", false);
 हाइपरलिंक को आपके दस्तावेज़ की शैली के अनुसार अनुकूलित किया जा सकता है। आप फ़ॉन्ट का रंग, आकार और अन्य विशेषताओं को बदल सकते हैं`Font` दस्तावेज़बिल्डर की संपत्ति.
 
 ```csharp
-// हाइपरलिंक का स्वरूप अनुकूलित करें.
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.Font.Underline = Underline.Single;
-builder.InsertHyperlink("Styled Link", "https://www.aspose.com", गलत);
+builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", गलत);
 ```
 
 यह स्निपेट एक नीले रंग का रेखांकित हाइपरलिंक सम्मिलित करेगा, जिससे यह आपके दस्तावेज़ में अलग दिखाई देगा।
@@ -89,7 +87,7 @@ builder.InsertHyperlink("Styled Link", "https://www.aspose.com", गलत);
  आप हाइपरलिंक को हटा सकते हैं`Remove` हाइपरलिंक नोड पर विधि.
 
 ### क्या मैं हाइपरलिंक में टूलटिप्स जोड़ सकता हूँ?
-हां, आप सेटिंग करके टूलटिप्स जोड़ सकते हैं`ScreenTip` हाइपरलिंक की संपत्ति.
+ हां, आप सेटिंग करके टूलटिप्स जोड़ सकते हैं`ScreenTip`हाइपरलिंक की संपत्ति.
 
 ### क्या पूरे दस्तावेज़ में हाइपरलिंक को अलग-अलग शैली में रखना संभव है?
  हां, आप हाइपरलिंक को अलग-अलग तरीके से स्टाइल कर सकते हैं`Font` प्रत्येक हाइपरलिंक डालने से पहले गुण देखें।

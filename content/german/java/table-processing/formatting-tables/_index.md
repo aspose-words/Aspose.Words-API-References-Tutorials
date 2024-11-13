@@ -1,6 +1,6 @@
 ---
-title: Formatieren von Tabellen in Dokumenten
-linktitle: Formatieren von Tabellen in Dokumenten
+title: Tabellen in Dokumenten formatieren
+linktitle: Tabellen in Dokumenten formatieren
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
 description: Meistern Sie die Kunst der Tabellenformatierung in Dokumenten mit Aspose.Words für Java. Entdecken Sie Schritt-für-Schritt-Anleitungen und Quellcodebeispiele für eine präzise Tabellenformatierung.
 type: docs

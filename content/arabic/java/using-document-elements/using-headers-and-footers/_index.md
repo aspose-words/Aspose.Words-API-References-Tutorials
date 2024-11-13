@@ -1,28 +1,28 @@
 ---
-title: استخدام الرؤوس والتذييلات في Aspose.Words لـ Java
+title: استخدام الرؤوس والتذييلات في Aspose.Words للغة Java
 linktitle: استخدام الرؤوس والتذييلات
-second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: تعرّف خطوة بخطوة على كيفية استخدام الرؤوس والتذييلات في Aspose.Words for Java. قم بإنشاء مستندات احترافية دون عناء.
+second_title: واجهة برمجة تطبيقات معالجة المستندات في Java Aspose.Words
+description: تعرف خطوة بخطوة على كيفية استخدام الرؤوس والتذييلات في Aspose.Words for Java. أنشئ مستندات احترافية دون عناء.
 type: docs
 weight: 16
 url: /ar/java/using-document-elements/using-headers-and-footers/
 ---
 
-في هذا الدليل الشامل، سنرشدك خلال عملية التعامل مع الرؤوس والتذييلات في Aspose.Words for Java. تعد الرؤوس والتذييلات عناصر أساسية في تنسيق المستندات، ويوفر Aspose.Words أدوات قوية لإنشاءها وتخصيصها وفقًا لاحتياجاتك.
+في هذا الدليل الشامل، سنطلعك على عملية العمل مع الرؤوس والتذييلات في Aspose.Words for Java. الرؤوس والتذييلات هي عناصر أساسية في تنسيق المستندات، ويوفر Aspose.Words أدوات قوية لإنشائها وتخصيصها وفقًا لاحتياجاتك.
 
 الآن، دعونا نتعمق في كل خطوة من هذه الخطوات بالتفصيل.
 
 ## 1. مقدمة إلى Aspose.Words
 
-Aspose.Words عبارة عن واجهة برمجة تطبيقات Java قوية تتيح لك إنشاء مستندات Word ومعالجتها وعرضها برمجيًا. فهو يوفر ميزات واسعة النطاق لتنسيق المستندات، بما في ذلك الرؤوس والتذييلات.
+Aspose.Words عبارة عن واجهة برمجة تطبيقات Java قوية تتيح لك إنشاء مستندات Word ومعالجتها وعرضها برمجيًا. كما توفر ميزات شاملة لتنسيق المستندات، بما في ذلك الرؤوس والتذييلات.
 
-## 2. إعداد بيئة جافا الخاصة بك
+## 2. إعداد بيئة Java الخاصة بك
 
- قبل البدء في استخدام Aspose.Words، تأكد من إعداد بيئة تطوير Java لديك بشكل صحيح. يمكنك العثور على تعليمات الإعداد اللازمة على صفحة وثائق Aspose.Words:[Aspose.Words وثائق جافا](https://reference.aspose.com/words/java/).
+ قبل أن تبدأ في استخدام Aspose.Words، تأكد من إعداد بيئة تطوير Java بشكل صحيح. يمكنك العثور على تعليمات الإعداد اللازمة على صفحة وثائق Aspose.Words:[توثيقات Aspose.Words بلغة Java](https://reference.aspose.com/words/java/).
 
 ## 3. إنشاء مستند جديد
 
-للعمل مع الرؤوس والتذييلات، تحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words. يوضح التعليمة البرمجية التالية كيفية القيام بذلك:
+للعمل مع الرؤوس والتذييلات، تحتاج إلى إنشاء مستند جديد باستخدام Aspose.Words. يوضح الكود التالي كيفية القيام بذلك:
 
 ```java
 // كود جافا لإنشاء مستند جديد
@@ -33,7 +33,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 4. فهم إعداد الصفحة
 
- يعد إعداد الصفحة أمرًا بالغ الأهمية للتحكم في تخطيط المستند. يمكنك تحديد خصائص متنوعة تتعلق بالرؤوس والتذييلات باستخدام الملف`PageSetup` فصل. على سبيل المثال:
+ يعد إعداد الصفحة أمرًا بالغ الأهمية للتحكم في تخطيط المستند. يمكنك تحديد خصائص مختلفة تتعلق بالرؤوس والتذييلات باستخدام`PageSetup` الصف. على سبيل المثال:
 
 ```java
 // إعداد خصائص الصفحة
@@ -43,15 +43,15 @@ pageSetup.setDifferentFirstPageHeaderFooter(true);
 pageSetup.setHeaderDistance(20.0);
 ```
 
-## 5. رأس/تذييل مختلف للصفحة الأولى
+## 5. رأس وتذييل مختلفان للصفحة الأولى
 
-يتيح لك Aspose.Words الحصول على رؤوس وتذييلات مختلفة للصفحة الأولى من المستند. يستخدم`pageSetup.setDifferentFirstPageHeaderFooter(true);` لتمكين هذه الميزة.
+يتيح لك Aspose.Words الحصول على رؤوس وتذييلات مختلفة للصفحة الأولى من مستندك. استخدم`pageSetup.setDifferentFirstPageHeaderFooter(true);` لتفعيل هذه الميزة.
 
-## 6. العمل مع الرؤوس
+## 6. العمل مع العناوين
 
-### 6.1. إضافة نص إلى الرؤوس
+### 6.1. إضافة نص إلى العناوين
 
- يمكنك إضافة نص إلى الرؤوس باستخدام`DocumentBuilder`. هنا مثال:
+ يمكنك إضافة نص إلى العناوين باستخدام`DocumentBuilder`. وإليك مثالاً:
 
 ```java
 // إضافة نص إلى رأس الصفحة الأولى
@@ -63,9 +63,9 @@ builder.getFont().setSize(14.0);
 builder.write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 ```
 
-### 6.2. إدراج الصور في الرؤوس
+### 6.2. إدراج الصور في العناوين
 
- لإدراج الصور في الرؤوس، يمكنك استخدام`insertImage` طريقة. هنا مثال:
+ لإدراج الصور في العناوين، يمكنك استخدام`insertImage` الطريقة. فيما يلي مثال:
 
 ```java
 // إدراج صورة في الرأس
@@ -75,13 +75,13 @@ builder.insertImage(getImagesDir() + "Graphics Interchange Format.gif", Relative
 
 ### 6.3. تخصيص أنماط الرأس
 
-يمكنك تخصيص أنماط الرأس عن طريق تعيين خصائص مختلفة مثل الخط والمحاذاة والمزيد، كما هو موضح في الأمثلة أعلاه.
+يمكنك تخصيص أنماط الرأس من خلال تعيين خصائص مختلفة مثل الخط والمحاذاة والمزيد، كما هو موضح في الأمثلة أعلاه.
 
 ## 7. العمل مع التذييلات
 
 ### 7.1. إضافة نص إلى التذييلات
 
- كما هو الحال مع الرؤوس، يمكنك إضافة نص إلى التذييلات باستخدام الزر`DocumentBuilder`. هنا مثال:
+ على غرار العناوين، يمكنك إضافة نص إلى التذييلات باستخدام`DocumentBuilder`. وإليك مثالاً:
 
 ```java
 // إضافة نص إلى التذييل الأساسي
@@ -91,7 +91,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ### 7.2. إدراج الصور في التذييلات
 
- لإدراج الصور في التذييلات، استخدم`insertImage` الطريقة، تماما كما هو الحال في الرؤوس.
+ لإدراج الصور في التذييلات، استخدم`insertImage` الطريقة، تمامًا كما هو الحال في الرؤوس.
 
 ### 7.3. تخصيص أنماط التذييل
 
@@ -99,37 +99,37 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. ترقيم الصفحات
 
- يمكنك تضمين أرقام الصفحات في الرؤوس والتذييلات باستخدام حقول مثل`PAGE`و`NUMPAGES`. يتم تحديث هذه الحقول تلقائيًا عند إضافة صفحات أو إزالتها.
+ يمكنك تضمين أرقام الصفحات في الرؤوس والتذييلات باستخدام حقول مثل`PAGE` و`NUMPAGES`يتم تحديث هذه الحقول تلقائيًا عند إضافة أو إزالة الصفحات.
 
 ## 9. معلومات حقوق النشر في التذييلات
 
-لإضافة معلومات حقوق الطبع والنشر إلى تذييل المستند، يمكنك استخدام جدول يحتوي على خليتين، بمحاذاة إحداهما إلى اليسار والأخرى إلى اليمين، كما هو موضح في مقتطف الشفرة.
+لإضافة معلومات حقوق النشر إلى تذييل المستند، يمكنك استخدام جدول يحتوي على خليتين، محاذاة واحدة إلى اليسار والأخرى إلى اليمين، كما هو موضح في مقتطف التعليمات البرمجية.
 
 ## 10. العمل مع أقسام متعددة
 
-يتيح لك Aspose.Words العمل مع أقسام متعددة داخل المستند. يمكنك تعيين إعدادات مختلفة للصفحة ورؤوس/تذييلات لكل قسم.
+يتيح لك Aspose.Words العمل مع أقسام متعددة داخل مستند. يمكنك تعيين إعدادات مختلفة للصفحة ورؤوس الصفحات وتذييلاتها لكل قسم.
 
-## 11. التوجه نحو المناظر الطبيعية
+## 11. اتجاه المناظر الطبيعية
 
-يمكنك تغيير اتجاه أقسام معينة إلى الوضع الأفقي إذا لزم الأمر.
+بإمكانك تغيير اتجاه أقسام معينة إلى الوضع الأفقي إذا لزم الأمر.
 
 ## 12. نسخ الرؤوس والتذييلات من الأقسام السابقة
 
-يمكن أن يؤدي نسخ الرؤوس والتذييلات من الأقسام السابقة إلى توفير الوقت عند إنشاء مستندات معقدة.
+قد يؤدي نسخ الرؤوس والتذييلات من الأقسام السابقة إلى توفير الوقت عند إنشاء مستندات معقدة.
 
-## 13. حفظ المستند الخاص بك
+## 13. حفظ مستندك
 
-بعد إنشاء المستند وتخصيصه، لا تنس حفظه باستخدام الملف`doc.save()` طريقة.
+بعد إنشاء مستندك وتخصيصه، لا تنس حفظه باستخدام`doc.save()` طريقة.
 
-## كود المصدر الكامل
+## الكود المصدر الكامل
 ```java
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
         Section currentSection = builder.getCurrentSection();
         PageSetup pageSetup = currentSection.getPageSetup();
         // حدد ما إذا كنا نريد أن تكون رؤوس/تذييلات الصفحة الأولى مختلفة عن الصفحات الأخرى.
-        // يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter للتحديد
-        // رؤوس/تذييلات مختلفة للصفحات الفردية والزوجية.
+        // يمكنك أيضًا استخدام خاصية PageSetup.OddAndEvenPagesHeaderFooter لتحديد
+        // رؤوس وتذييلات مختلفة للصفحات الفردية والزوجية.
         pageSetup.setDifferentFirstPageHeaderFooter(true);
         pageSetup.setHeaderDistance(20.0);
         builder.moveToHeaderFooter(HeaderFooterType.HEADER_FIRST);
@@ -140,20 +140,20 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
         builder.write("Aspose.Words Header/Footer Creation Primer - Title Page.");
         pageSetup.setHeaderDistance(20.0);
         builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
-        // قم بإدراج صورة موضوعة في الزاوية العلوية/اليسرى من الرأس.
-        // يتم ضبط المسافة من الحواف العلوية/اليسرى للصفحة على 10 نقاط.
+        // قم بإدراج صورة في الزاوية العلوية/اليسرى من الرأس.
+        // تم ضبط المسافة من الحواف العلوية/اليسرى للصفحة على 10 نقاط.
         builder.insertImage(getImagesDir() + "Graphics Interchange Format.gif", RelativeHorizontalPosition.PAGE, 10.0,
             RelativeVerticalPosition.PAGE, 10.0, 50.0, 50.0, WrapType.THROUGH);
         builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
         builder.write("Aspose.Words Header/Footer Creation Primer.");
         builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-        // نستخدم جدولاً يحتوي على خليتين لإنشاء جزء واحد من النص على السطر (مع ترقيم الصفحات).
-        // تتم محاذاته إلى اليسار، ومحاذاة الجزء الآخر من النص (مع حقوق الطبع والنشر) إلى اليمين.
+        // نستخدم جدولًا يحتوي على خليتين لإنشاء جزء واحد من النص على السطر (مع ترقيم الصفحات).
+        // يجب محاذاتها إلى اليسار، والجزء الآخر من النص (مع حقوق الطبع والنشر) يجب محاذاتها إلى اليمين.
         builder.startTable();
         builder.getCellFormat().clearFormatting();
         builder.insertCell();
         builder.getCellFormat().setPreferredWidth(PreferredWidth.fromPercent(100 / 3));
-        // ويستخدم حقول PAGE وNUMPAGES لحساب رقم الصفحة الحالية والعديد من الصفحات تلقائيًا.
+        // يستخدم حقول PAGE وNUMPAGES لحساب رقم الصفحة الحالية والعديد من الصفحات تلقائيًا.
         builder.write("Page ");
         builder.insertField("PAGE", "");
         builder.write(" of ");
@@ -166,21 +166,21 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
         builder.endRow();
         builder.endTable();
         builder.moveToDocumentEnd();
-        // قم بعمل فاصل صفحات لإنشاء صفحة ثانية تظهر عليها الرؤوس والتذييلات الأساسية.
+        // قم بإنشاء فاصل للصفحة لإنشاء صفحة ثانية تظهر فيها الرؤوس/التذييلات الأساسية.
         builder.insertBreak(BreakType.PAGE_BREAK);
         builder.insertBreak(BreakType.SECTION_BREAK_NEW_PAGE);
         currentSection = builder.getCurrentSection();
         pageSetup = currentSection.getPageSetup();
         pageSetup.setOrientation(Orientation.LANDSCAPE);
         // لا يحتاج هذا القسم إلى رأس/تذييل مختلف للصفحة الأولى، فنحن نحتاج فقط إلى صفحة عنوان واحدة في المستند،
-        //وقد تم بالفعل تحديد رأس/تذييل هذه الصفحة في القسم السابق.
+        //وقد تم بالفعل تعريف رأس/تذييل هذه الصفحة في القسم السابق.
         pageSetup.setDifferentFirstPageHeaderFooter(false);
-        // يعرض هذا القسم الرؤوس/التذييلات من القسم السابق
-        // بشكل افتراضي، قم باستدعاء currentSection.HeadersFooters.LinkToPrevious(false) لإلغاء عرض الصفحة هذا
-        // يختلف بالنسبة للقسم الجديد، وبالتالي نحتاج إلى تعيين عروض مختلفة للخلايا لجدول التذييل.
+        // يعرض هذا القسم الرؤوس والتذييلات من القسم السابق
+        // بشكل افتراضي، قم باستدعاء currentSection.HeadersFooters.LinkToPrevious(false) لإلغاء عرض هذه الصفحة
+        // يختلف الأمر بالنسبة للقسم الجديد، ولذلك نحتاج إلى تعيين عرض خلايا مختلف لجدول التذييل.
         currentSection.getHeadersFooters().linkToPrevious(false);
         // إذا أردنا استخدام مجموعة الرأس/التذييل الموجودة بالفعل لهذا القسم.
-        // ولكن مع بعض التعديلات الطفيفة، قد يكون من المناسب نسخ الرؤوس/التذييلات
+        // ولكن مع بعض التعديلات البسيطة، قد يكون من المناسب نسخ الرؤوس/التذييلات
         // من القسم السابق وتطبيق التعديلات اللازمة حيث نريدها.
         copyHeadersFootersFromPreviousSection(currentSection);
         HeaderFooter primaryFooter = currentSection.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
@@ -189,10 +189,10 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
         row.getLastCell().getCellFormat().setPreferredWidth(PreferredWidth.fromPercent(100 * 2 / 3));
         doc.save("Your Directory Path" + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```	
-الكود المصدري لأسلوب CopyHeadersFootersFromPreviousSection
+الكود المصدر لطريقة copyHeadersFootersFromPreviousSection
 ```java
-    /// <الملخص>
-    /// النسخ ونسخ الرؤوس والتذييلات من القسم السابق إلى القسم المحدد.
+    /// <ملخص>
+    /// استنساخ ونسخ رؤوس/تذييلات الصفحات من القسم السابق إلى القسم المحدد.
     /// </ملخص>
     private void copyHeadersFootersFromPreviousSection(Section section)
     {
@@ -207,23 +207,23 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، قمنا بتغطية أساسيات العمل باستخدام الرؤوس والتذييلات في Aspose.Words لـ Java. لقد تعلمت كيفية إنشاء الرؤوس والتذييلات وتخصيصها وتصميمها، بالإضافة إلى تقنيات تنسيق المستندات الأساسية الأخرى.
+في هذا البرنامج التعليمي، قمنا بتغطية أساسيات العمل مع الرؤوس والتذييلات في Aspose.Words for Java. لقد تعلمت كيفية إنشاء الرؤوس والتذييلات وتخصيصها وتصميمها، بالإضافة إلى تقنيات تنسيق المستندات الأساسية الأخرى.
 
- لمزيد من التفاصيل والميزات المتقدمة، راجع[Aspose.Words وثائق جافا](https://reference.aspose.com/words/java/).
+ لمزيد من التفاصيل والميزات المتقدمة، راجع[توثيقات Aspose.Words بلغة Java](https://reference.aspose.com/words/java/).
 
 ## الأسئلة الشائعة
 
 ### 1. كيف يمكنني إضافة أرقام الصفحات إلى تذييل المستند الخاص بي؟
- يمكنك إضافة أرقام الصفحات عن طريق إدراج`PAGE` الحقل في التذييل باستخدام Aspose.Words.
+ يمكنك إضافة أرقام الصفحات عن طريق إدخال`PAGE` قم بإضافة الحقل إلى التذييل باستخدام Aspose.Words.
 
 ### 2. هل Aspose.Words متوافق مع بيئات تطوير Java؟
-نعم، يوفر Aspose.Words الدعم لتطوير Java. تأكد من أن لديك الإعداد اللازم في مكانه.
+نعم، يوفر Aspose.Words الدعم لتطوير Java. تأكد من توفر الإعداد اللازم.
 
 ### 3. هل يمكنني تخصيص الخط ونمط الرؤوس والتذييلات؟
-بالتأكيد، يمكنك تخصيص الخطوط والمحاذاة والأنماط الأخرى لجعل الرؤوس والتذييلات جذابة بصريًا.
+بالتأكيد، يمكنك تخصيص الخطوط والمحاذاة والأنماط الأخرى لجعل رؤوس الصفحات وتذييلاتها جذابة بصريًا.
 
 ### 4. هل من الممكن أن يكون هناك رؤوس مختلفة للصفحات الفردية والزوجية؟
- نعم، يمكنك استخدام`PageSetup.OddAndEvenPagesHeaderFooter` لتحديد رؤوس مختلفة للصفحات الفردية والزوجية.
+ نعم يمكنك الاستخدام`PageSetup.OddAndEvenPagesHeaderFooter` لتحديد عناوين مختلفة للصفحات الفردية والزوجية.
 
 ### 5. كيف أبدأ باستخدام Aspose.Words لـ Java؟
- للبدء، قم بزيارة[Aspose.Words وثائق جافا](https://reference.aspose.com/words/java/) للحصول على إرشادات شاملة حول استخدام واجهة برمجة التطبيقات.
+ للبدء، قم بزيارة[توثيقات Aspose.Words بلغة Java](https://reference.aspose.com/words/java/) للحصول على إرشادات شاملة حول استخدام واجهة برمجة التطبيقات.

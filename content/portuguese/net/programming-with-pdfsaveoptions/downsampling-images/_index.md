@@ -1,28 +1,28 @@
 ---
-title: Reduza o tamanho do documento PDF com redução da resolução de imagens
-linktitle: Reduza o tamanho do documento PDF com redução da resolução de imagens
+title: Reduza o tamanho do documento PDF com imagens de redução de resolução
+linktitle: Reduza o tamanho do documento PDF com imagens de redução de resolução
 second_title: API de processamento de documentos Aspose.Words
-description: Reduza o tamanho do documento PDF reduzindo a resolução das imagens usando Aspose.Words for .NET. Otimize seus PDFs para tempos de upload e download mais rápidos.
+description: Reduza o tamanho do documento PDF reduzindo a resolução das imagens usando o Aspose.Words para .NET. Otimize seus PDFs para tempos de upload e download mais rápidos.
 type: docs
 weight: 10
 url: /pt/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
 ## Introdução
 
-Os PDFs são essenciais no mundo digital, usados para tudo, desde o compartilhamento de documentos até a criação de e-books. No entanto, seu tamanho às vezes pode ser um obstáculo, especialmente quando se trata de conteúdo rico em imagens. É aqui que a redução da resolução das imagens entra em ação. Ao reduzir a resolução das imagens no PDF, você pode diminuir significativamente o tamanho do arquivo sem comprometer muito a qualidade. Neste tutorial, percorreremos as etapas para conseguir isso usando Aspose.Words for .NET.
+PDFs são um item básico no mundo digital, usados para tudo, desde compartilhar documentos até criar eBooks. No entanto, seu tamanho às vezes pode ser um obstáculo, especialmente ao lidar com conteúdo rico em imagens. É aqui que a redução da resolução de imagens entra em jogo. Ao reduzir a resolução das imagens dentro do PDF, você pode diminuir significativamente o tamanho do arquivo sem comprometer muito a qualidade. Neste tutorial, mostraremos as etapas para fazer isso usando o Aspose.Words para .NET.
 
 ## Pré-requisitos
 
-Antes de entrarmos no código, vamos ter certeza de que você tem tudo o que precisa:
+Antes de começarmos o código, vamos garantir que você tenha tudo o que precisa:
 
-1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Se não, você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
-2. Ambiente de desenvolvimento: qualquer ambiente de desenvolvimento .NET como Visual Studio.
-3. Conhecimento básico de C#: Compreender os fundamentos da programação C# será útil.
+1.  Aspose.Words para .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Se não, você pode baixá-la[aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: qualquer ambiente de desenvolvimento .NET, como o Visual Studio.
+3. Conhecimento básico de C#: entender os conceitos básicos de programação em C# será útil.
 4.  Um documento de amostra: um documento do Word (por exemplo,`Rendering.docx`) com imagens para converter em PDF.
 
 ## Importar namespaces
 
-Em primeiro lugar, você precisa importar os namespaces necessários. Adicione-os no topo do seu arquivo de código:
+Primeiro, você precisa importar os namespaces necessários. Adicione estes no topo do seu arquivo de código:
 
 ```csharp
 using Aspose.Words;
@@ -31,9 +31,9 @@ using Aspose.Words.Saving;
 
 Agora, vamos dividir o processo em etapas gerenciáveis.
 
-## Etapa 1: carregue o documento
+## Etapa 1: Carregue o documento
 
-O primeiro passo é carregar seu documento Word. É aqui que você especifica o caminho para o diretório do seu documento.
+O primeiro passo é carregar seu documento do Word. É aqui que você especifica o caminho para o diretório do seu documento.
 
 ```csharp
 // O caminho para o diretório de documentos.
@@ -41,14 +41,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Nesta etapa, carregamos o documento do Word do diretório especificado. Certifique-se de substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real onde seu documento está localizado.
+Nesta etapa, estamos carregando o documento do Word do diretório especificado. Certifique-se de substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real onde seu documento está localizado.
 
-## Etapa 2: configurar opções de redução da resolução
+## Etapa 2: Configurar opções de redução de amostragem
 
-Em seguida, precisamos configurar as opções de redução da resolução. Isso envolve definir a resolução e o limite de resolução das imagens.
+Em seguida, precisamos configurar as opções de downsampling. Isso envolve definir a resolução e o limite de resolução para as imagens.
 
 ```csharp
-// Podemos definir um limite mínimo para redução da resolução.
+// Podemos definir um limite mínimo para redução da amostragem.
 // Este valor impedirá que a segunda imagem no documento de entrada seja reduzida.
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
@@ -56,35 +56,35 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Aqui, estamos criando uma nova instância de`PdfSaveOptions` e definindo o`Resolution` para 36 DPI e o`ResolutionThreshold` para 128 DPI. Isso significa que qualquer imagem com resolução superior a 128 DPI será reduzida para 36 DPI.
+ Aqui, estamos criando uma nova instância de`PdfSaveOptions` e definindo o`Resolution` para 36 DPI e o`ResolutionThreshold` para 128 DPI. Isso significa que qualquer imagem com resolução maior que 128 DPI será reduzida para 36 DPI.
 
-## Etapa 3: salve o documento como PDF
+## Etapa 3: Salve o documento como PDF
 
-Por fim, salvamos o documento em PDF com as opções configuradas.
+Por fim, salvamos o documento como PDF com as opções configuradas.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
 ```
 
-Nesta etapa final, salvamos o documento como PDF no mesmo diretório com as opções de redução de resolução especificadas.
+Nesta etapa final, estamos salvando o documento como PDF no mesmo diretório com as opções de redução de resolução especificadas.
 
 ## Conclusão
 
-aí está! Você reduziu com sucesso o tamanho do seu PDF reduzindo a resolução de imagens usando Aspose.Words for .NET. Isso não apenas torna seus PDFs mais gerenciáveis, mas também ajuda a fazer uploads e downloads mais rápidos e a experiências de visualização mais suaves.
+aí está! Você reduziu com sucesso o tamanho do seu PDF ao reduzir a resolução de imagens usando o Aspose.Words para .NET. Isso não só torna seus PDFs mais gerenciáveis, mas também ajuda em uploads e downloads mais rápidos e experiências de visualização mais suaves.
 
 ## Perguntas frequentes
 
-### O que é redução da resolução?
-Downsampling é o processo de redução da resolução das imagens, o que auxilia na diminuição do tamanho do arquivo dos documentos que contêm essas imagens.
+### O que é downsampling?
+A redução da resolução é o processo de redução da resolução das imagens, o que ajuda a diminuir o tamanho do arquivo dos documentos que contêm essas imagens.
 
 ### A redução da resolução afetará a qualidade das imagens?
-Sim, a redução da resolução reduzirá a qualidade da imagem. No entanto, o impacto depende do grau de redução da resolução. É uma troca entre tamanho de arquivo e qualidade de imagem.
+Sim, o downsampling reduzirá a qualidade da imagem. No entanto, o impacto depende do grau de redução da resolução. É uma troca entre tamanho do arquivo e qualidade da imagem.
 
-### Posso escolher quais imagens reduzir a resolução?
+### Posso escolher quais imagens serão reduzidas?
  Sim, definindo o`ResolutionThreshold`, você pode controlar quais imagens serão reduzidas com base na resolução original.
 
-### Qual é a resolução ideal para redução da resolução?
-resolução ideal depende de suas necessidades específicas. Normalmente, 72 DPI são usados para imagens da web, enquanto resoluções mais altas são usadas para qualidade de impressão.
+### Qual é a resolução ideal para downsampling?
+resolução ideal depende de suas necessidades específicas. Normalmente, 72 DPI é usado para imagens da web, enquanto resoluções mais altas são usadas para qualidade de impressão.
 
 ### O Aspose.Words para .NET é gratuito?
- Aspose.Words for .NET é um produto comercial, mas você pode baixar uma versão de avaliação gratuita[aqui](https://releases.aspose.com/) ou solicite um[licença temporária](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words para .NET é um produto comercial, mas você pode baixar uma versão de avaliação gratuita[aqui](https://releases.aspose.com/) ou solicitar um[licença temporária](https://purchase.aspose.com/temporary-license/).

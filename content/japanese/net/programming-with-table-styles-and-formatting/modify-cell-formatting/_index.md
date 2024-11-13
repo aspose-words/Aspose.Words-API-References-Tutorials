@@ -34,7 +34,7 @@ using System.Drawing;
 
 ## ステップ1: ドキュメントを読み込む
 
-まず最初に、変更したい表を含む Word 文書を読み込む必要があります。これは、お気に入りのワード プロセッサでファイルを開くのと似ていますが、プログラムで実行します。
+まず最初に、変更する表を含む Word 文書を読み込む必要があります。これは、お気に入りのワード プロセッサでファイルを開くのと似ていますが、プログラムで実行します。
 
 ```csharp
 //ドキュメントディレクトリへのパス
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-ここでは、`GetChild`ドキュメントの最初の表を取得するメソッド。`NodeType.Table`パラメータはテーブルを探すことを指定します。`0`最初のテーブルを示します。`true`パラメータにより、検索が深くなり、すべての子ノードが検索されることが保証されます。
+ここでは、`GetChild`メソッドを使用して、ドキュメントの最初の表を取得します。`NodeType.Table`パラメータはテーブルを探すことを指定します。`0`最初のテーブルを示します。`true`パラメータにより、検索が深くなり、すべての子ノードが検索されることが保証されます。
 
 ## ステップ3: 最初のセルを選択する
 
@@ -73,7 +73,7 @@ Cell firstCell = table.FirstRow.FirstCell;
 firstCell.CellFormat.Width = 30;
 ```
 
-ここでは、`Width`セルの書式のプロパティを`30`これにより、最初のセルの幅が 30 ポイントに変更されます。
+ここでは、`Width`セルの書式のプロパティ`30`これにより、最初のセルの幅が 30 ポイントに変更されます。
 
 ## ステップ5: テキストの向きを変更する
 
@@ -83,7 +83,7 @@ firstCell.CellFormat.Width = 30;
 firstCell.CellFormat.Orientation = TextOrientation.Downward;
 ```
 
-設定することで`Orientation`財産に`TextOrientation.Downward`セル内のテキストを下向きに回転しました。これは、独自の表のヘッダーやサイドノートを作成する場合に便利です。
+設定することで`Orientation`財産に`TextOrientation.Downward`セル内のテキストを下向きに回転しました。これは、ユニークな表のヘッダーやサイドノートを作成する場合に便利です。
 
 ## ステップ6: セルの網掛けを適用する
 
@@ -97,7 +97,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して、Word 文書のセルの書式設定を正常に変更できました。文書の読み込みから網掛けの適用まで、各ステップは、文書を希望どおりに表示する上で非常に重要です。これらは、セルの書式設定で実行できることのほんの一例に過ぎないことに留意してください。Aspose.Words for .NET には、他にも探索すべき機能が多数用意されています。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書のセルの書式設定を正常に変更できました。文書の読み込みから網掛けの適用まで、各ステップは文書を希望どおりに見せるために重要です。これらはセルの書式設定で実行できることのほんの一例に過ぎないことに留意してください。Aspose.Words for .NET には、他にも探索すべき機能が多数用意されています。
 
 ## よくある質問
 

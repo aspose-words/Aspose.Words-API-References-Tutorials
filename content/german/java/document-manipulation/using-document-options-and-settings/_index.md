@@ -134,7 +134,7 @@ In diesem Handbuch haben wir uns mit den verschiedenen Dokumentoptionen und -ein
 
 ### Wie optimiere ich ein Dokument für eine bestimmte Word-Version?
 
- Um ein Dokument für eine bestimmte Word-Version zu optimieren, verwenden Sie die`optimizeFor` -Methode und geben Sie die gewünschte Version an. Um beispielsweise für Word 2016 zu optimieren:
+ Um ein Dokument für eine bestimmte Word-Version zu optimieren, verwenden Sie die`optimizeFor` -Methode und geben Sie die gewünschte Version an. So optimieren Sie beispielsweise für Word 2016:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -144,7 +144,7 @@ doc.save("Your Directory Path" + "OptimizedForWord2016.docx");
 
 ### Wie kann ich Grammatik- und Rechtschreibfehler in einem Dokument hervorheben?
 
-Mit dem folgenden Code können Sie die Anzeige von Grammatik- und Rechtschreibfehlern in einem Dokument aktivieren:
+Sie können die Anzeige von Grammatik- und Rechtschreibfehlern in einem Dokument mit dem folgenden Code aktivieren:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -155,7 +155,7 @@ doc.save("Your Directory Path" + "ShowErrors.docx");
 
 ### Was ist der Zweck der Bereinigung nicht verwendeter Stile und Listen?
 
-Durch das Bereinigen nicht verwendeter Stile und Listen können Sie eine saubere und organisierte Dokumentstruktur beibehalten. Dadurch wird unnötiges Durcheinander beseitigt und die Lesbarkeit und Konsistenz des Dokuments verbessert.
+Durch das Bereinigen nicht verwendeter Stile und Listen bleibt die Dokumentstruktur sauber und übersichtlich. Dadurch wird unnötiges Durcheinander beseitigt und die Lesbarkeit und Konsistenz des Dokuments verbessert.
 
 ### Wie kann ich doppelte Stile aus einem Dokument entfernen?
 

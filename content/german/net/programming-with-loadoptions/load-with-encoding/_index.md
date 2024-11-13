@@ -9,7 +9,7 @@ url: /de/net/programming-with-loadoptions/load-with-encoding/
 ---
 ## Einführung
 
-Hallo! Sie arbeiten also mit Word-Dokumenten und müssen eines mit einer bestimmten Kodierung laden? Vielleicht sind Sie schon auf Dokumente gestoßen, deren Text in etwas wie UTF-7 kodiert ist, und Sie fragen sich, wie Sie damit umgehen sollen. Dann sind Sie hier richtig! In diesem Tutorial tauchen wir tief in die Frage ein, wie Sie mit Aspose.Words für .NET ein Word-Dokument mit einer bestimmten Kodierung laden können. Mit dieser leistungsstarken Bibliothek können Sie Word-Dokumente auf eine Weise bearbeiten, die Sie wahrscheinlich nie für möglich gehalten hätten. Lassen Sie uns anfangen!
+Hallo! Sie arbeiten also mit Word-Dokumenten und müssen eines mit einer bestimmten Kodierung laden? Vielleicht sind Sie schon auf Dokumente gestoßen, deren Text in etwas wie UTF-7 kodiert ist, und fragen sich, wie Sie damit umgehen sollen. Dann sind Sie hier richtig! In diesem Tutorial tauchen wir tief in die Frage ein, wie Sie mit Aspose.Words für .NET ein Word-Dokument mit einer bestimmten Kodierung laden können. Mit dieser leistungsstarken Bibliothek können Sie Word-Dokumente auf eine Weise bearbeiten, die Sie wahrscheinlich nie für möglich gehalten hätten. Lassen Sie uns anfangen!
 
 ## Voraussetzungen
 
@@ -17,7 +17,7 @@ Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie br
 
 1.  Aspose.Words für .NET: Sie können[herunterladen](https://releases.aspose.com/words/net/) die neueste Version.
 2. .NET-Entwicklungsumgebung: Visual Studio funktioniert perfekt.
-3. Ein Word-Dokument: Stellen Sie sicher, dass es im von Ihnen verwendeten Format, beispielsweise UTF-7, codiert ist.
+3. Ein Word-Dokument: Stellen Sie sicher, dass es im von Ihnen verwendeten Format codiert ist, beispielsweise UTF-7.
 
 ## Namespaces importieren
 

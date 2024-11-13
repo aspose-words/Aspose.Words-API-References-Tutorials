@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Document.doc");
 
 Dále uložte načtený dokument ve formátu DOCX:
 ```csharp
-// Uložte dokument jako DOCX
+//Uložte dokument jako DOCX
 doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 ```
 

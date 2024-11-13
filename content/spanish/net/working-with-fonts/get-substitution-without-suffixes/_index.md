@@ -2,23 +2,23 @@
 title: Obtener sustitución sin sufijos
 linktitle: Obtener sustitución sin sufijos
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a administrar la sustitución de fuentes sin sufijos en Aspose.Words para .NET. Siga nuestra guía paso a paso para asegurarse de que sus documentos luzcan perfectos en todo momento.
+description: Aprenda a administrar la sustitución de fuentes sin sufijos en Aspose.Words para .NET. Siga nuestra guía paso a paso para garantizar que sus documentos se vean perfectos en todo momento.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 ## Introducción
 
-Bienvenido a esta guía completa sobre cómo administrar la sustitución de fuentes usando Aspose.Words para .NET. Si alguna vez ha tenido problemas con las fuentes que no aparecen correctamente en sus documentos, ha venido al lugar correcto. Este tutorial lo llevará a través de un proceso paso a paso para manejar la sustitución de fuentes sin sufijos de manera eficiente.
+Bienvenido a esta guía completa sobre cómo gestionar la sustitución de fuentes con Aspose.Words para .NET. Si alguna vez ha tenido problemas porque las fuentes no aparecen correctamente en sus documentos, ha llegado al lugar indicado. Este tutorial le guiará a través de un proceso paso a paso para gestionar la sustitución de fuentes sin sufijos de forma eficiente.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de sumergirse en el tutorial, asegúrese de tener lo siguiente:
+Antes de sumergirte en el tutorial, asegúrate de tener lo siguiente:
 
-- Conocimientos básicos de C#: comprender la programación de C# hará que sea más fácil seguir e implementar los pasos.
--  Aspose.Words para la biblioteca .NET: descargue e instale la biblioteca desde[enlace de descarga](https://releases.aspose.com/words/net/).
+- Conocimientos básicos de C#: comprender la programación en C# hará que sea más fácil seguir e implementar los pasos.
+-  Biblioteca Aspose.Words para .NET: Descargue e instale la biblioteca desde[enlace de descarga](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: configure un entorno de desarrollo como Visual Studio para escribir y ejecutar su código.
--  Documento de muestra: Un documento de muestra (p. ej.,`Rendering.docx`) para trabajar durante este tutorial.
+-  Documento de muestra: Un documento de muestra (por ejemplo,`Rendering.docx`) para trabajar durante este tutorial.
 
 ## Importar espacios de nombres
 
@@ -30,18 +30,18 @@ using Aspose.Words.Fonts;
 using System.Collections.Generic;
 ```
 
-## Paso 1: definir el directorio de documentos
+## Paso 1: Definir el directorio del documento
 
-Para comenzar, especifique el directorio donde se encuentra su documento. Esto ayuda a localizar el documento en el que desea trabajar.
+Para comenzar, especifique el directorio donde se encuentra su documento. Esto le ayudará a localizar el documento en el que desea trabajar.
 
 ```csharp
-// Ruta a su directorio de documentos
+// Ruta al directorio de su documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Paso 2: configurar el controlador de advertencia de sustitución
+## Paso 2: Configurar el controlador de advertencia de sustitución
 
-continuación, debemos configurar un controlador de advertencia que nos notificará cada vez que se produzca una sustitución de fuente durante el procesamiento del documento. Esto es crucial para detectar y manejar cualquier problema de fuente.
+continuación, debemos configurar un controlador de advertencias que nos notifique cada vez que se produzca una sustitución de fuente durante el procesamiento del documento. Esto es fundamental para detectar y gestionar cualquier problema de fuente.
 
 ```csharp
 DocumentSubstitutionWarnings substitutionWarningHandler = new DocumentSubstitutionWarnings();
@@ -49,9 +49,9 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.WarningCallback = substitutionWarningHandler;
 ```
 
-## Paso 3: agregue fuentes de fuentes personalizadas
+## Paso 3: Agregar fuentes personalizadas
 
-En este paso, agregaremos fuentes de fuentes personalizadas para garantizar que Aspose.Words pueda ubicar y usar las fuentes correctas. Esto es particularmente útil si tiene fuentes específicas almacenadas en directorios personalizados.
+En este paso, agregaremos fuentes personalizadas para garantizar que Aspose.Words pueda localizar y usar las fuentes correctas. Esto es particularmente útil si tiene fuentes específicas almacenadas en directorios personalizados.
 
 ```csharp
 List<FontSourceBase> fontSources = new List<FontSourceBase>(FontSettings.DefaultInstance.GetFontsSources());
@@ -67,17 +67,17 @@ En este código:
 -  Recuperamos las fuentes de fuentes actuales y agregamos una nueva`FolderFontSource` apuntando a nuestro directorio de fuentes personalizadas (`C:\\MyFonts\\`).
 - Luego actualizamos las fuentes de fuentes con esta nueva lista.
 
-## Paso 4: guarde el documento
+## Paso 4: Guardar el documento
 
-Finalmente, guarde el documento después de aplicar la configuración de sustitución de fuentes. Para este tutorial, lo guardaremos como PDF.
+Por último, guarde el documento después de aplicar la configuración de sustitución de fuentes. Para este tutorial, lo guardaremos como PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 ```
 
-## Paso 5: crear la clase de controlador de advertencias
+## Paso 5: Crear la clase de controlador de advertencias
 
- Para manejar las advertencias de manera efectiva, cree una clase personalizada que implemente la`IWarningCallback` interfaz. Esta clase capturará y registrará cualquier advertencia de sustitución de fuentes.
+ Para gestionar las advertencias de manera eficaz, cree una clase personalizada que implemente la`IWarningCallback` Interfaz. Esta clase capturará y registrará cualquier advertencia de sustitución de fuentes.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -93,31 +93,31 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 En esta clase:
--  El`Warning`El método captura advertencias relacionadas con la sustitución de fuentes.
--  El`FontWarnings` La colección almacena estas advertencias para su posterior inspección o registro.
+- El`Warning`El método captura advertencias relacionadas con la sustitución de fuentes.
+- El`FontWarnings` La colección almacena estas advertencias para su posterior inspección o registro.
 
 ## Conclusión
 
-Ahora domina el proceso de manejo de la sustitución de fuentes sin sufijos usando Aspose.Words para .NET. Este conocimiento garantizará que sus documentos mantengan la apariencia deseada, independientemente de las fuentes disponibles en el sistema. Siga experimentando con diferentes configuraciones y fuentes para aprovechar al máximo el poder de Aspose.Words.
+Ya domina el proceso de manejo de la sustitución de fuentes sin sufijos con Aspose.Words para .NET. Este conocimiento garantizará que sus documentos mantengan la apariencia deseada, independientemente de las fuentes disponibles en el sistema. Siga experimentando con diferentes configuraciones y fuentes para aprovechar al máximo el poder de Aspose.Words.
 
 ## Preguntas frecuentes
 
 ### ¿Cómo puedo utilizar fuentes de varios directorios personalizados?
 
- Puedes agregar varios`FolderFontSource` instancias a la`fontSources` enumere y actualice las fuentes de fuentes en consecuencia.
+ Puedes agregar varios`FolderFontSource` instancias a la`fontSources` enumerar y actualizar las fuentes de fuentes en consecuencia.
 
 ### ¿Dónde puedo descargar una prueba gratuita de Aspose.Words para .NET?
 
- Puede descargar una prueba gratuita desde[Aspose página de prueba gratuita](https://releases.aspose.com/).
+ Puede descargar una versión de prueba gratuita desde[Página de prueba gratuita de Aspose](https://releases.aspose.com/).
 
-###  ¿Puedo manejar múltiples tipos de advertencias usando`IWarningCallback`?
+###  ¿Puedo gestionar varios tipos de advertencias utilizando?`IWarningCallback`?
 
  Sí, el`IWarningCallback` La interfaz le permite manejar varios tipos de advertencias, no solo la sustitución de fuentes.
 
 ### ¿Dónde puedo obtener soporte para Aspose.Words?
 
- Para obtener ayuda, visite el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8).
+ Para obtener ayuda, visite el sitio[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### ¿Es posible adquirir una licencia temporal?
+### ¿Es posible comprar una licencia temporal?
 
- Sí, puede obtener una licencia temporal del[página de licencia temporal](https://purchase.aspose.com/temporary-license/).
+ Sí, puede obtener una licencia temporal de la[página de licencia temporal](https://purchase.aspose.com/temporary-license/).

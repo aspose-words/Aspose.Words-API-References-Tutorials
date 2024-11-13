@@ -2,27 +2,27 @@
 title: Formato numérico para eixo em um gráfico
 linktitle: Formato numérico para eixo em um gráfico
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como formatar os números dos eixos do gráfico usando Aspose.Words for .NET com este guia passo a passo. Melhore a legibilidade e o profissionalismo do seu documento sem esforço.
+description: Aprenda a formatar números de eixos de gráficos usando o Aspose.Words para .NET com este guia passo a passo. Melhore a legibilidade e o profissionalismo do seu documento sem esforço.
 type: docs
 weight: 10
 url: /pt/net/programming-with-charts/number-format-for-axis/
 ---
 ## Introdução
 
-Ei! Você já trabalhou com gráficos em seus documentos e desejou poder formatar os números em seu eixo para torná-los mais profissionais? Bem, você está com sorte! Neste tutorial, vamos nos aprofundar em como você pode conseguir exatamente isso usando Aspose.Words for .NET. Esta poderosa biblioteca permite que você lide com documentos do Word de uma forma muito fácil. E hoje, estamos nos concentrando em dar uma reformulação nesses eixos do gráfico com formatos numéricos personalizados.
+Olá! Você já trabalhou com gráficos em seus documentos e desejou poder formatar os números em seu eixo para torná-los mais profissionais? Bem, você está com sorte! Neste tutorial, vamos nos aprofundar em como você pode conseguir exatamente isso usando o Aspose.Words para .NET. Esta biblioteca poderosa permite que você manipule documentos do Word de uma forma que é tão fácil quanto uma torta. E hoje, estamos nos concentrando em dar a esses eixos de gráfico uma reformulação com formatos de números personalizados.
 
 ## Pré-requisitos
 
-Antes de começarmos, vamos ter certeza de que você tem tudo o que precisa. Aqui está uma lista de verificação rápida:
+Antes de começarmos, vamos garantir que você tenha tudo o que precisa. Aqui está uma lista de verificação rápida:
 
--  Aspose.Words for .NET: Certifique-se de tê-lo instalado. Se não, você pode[baixe aqui](https://releases.aspose.com/words/net/).
-- .NET Framework: certifique-se de ter um .NET framework compatível instalado.
-- Ambiente de Desenvolvimento: Um IDE como o Visual Studio funcionará perfeitamente.
-- Conhecimento básico de C#: Isso o ajudará a acompanhar os exemplos de codificação.
+-  Aspose.Words para .NET: Certifique-se de que você o tenha instalado. Se não, você pode[baixe aqui](https://releases.aspose.com/words/net/).
+- .NET Framework: certifique-se de ter um .NET Framework compatível instalado.
+- Ambiente de desenvolvimento: Um IDE como o Visual Studio funcionará perfeitamente.
+- Conhecimento básico de C#: Isso ajudará você a acompanhar os exemplos de codificação.
 
 ## Importar namespaces
 
-Em primeiro lugar, você precisa importar os namespaces necessários para o seu projeto. É como lançar os alicerces antes de construir uma casa. Adicione o seguinte usando diretivas na parte superior do seu arquivo de código:
+Primeiro, você precisa importar os namespaces necessários no seu projeto. Isso é como lançar a fundação antes de construir uma casa. Adicione as seguintes diretivas using no topo do seu arquivo de código:
 
 ```csharp
 using System;
@@ -33,11 +33,11 @@ using Aspose.Words.Reporting;
 
 Agora, vamos dividir o processo em etapas simples e fáceis de seguir.
 
-## Passo 1: Configurando o Documento
+## Etapa 1: Configurando o documento
 
 Título: Inicialize seu documento
 
-Primeiro, você precisa criar um novo documento e um construtor de documentos. Pense nesta etapa como preparar a tela e o pincel antes de iniciar sua obra-prima.
+Primeiro, você precisa criar um novo documento e um construtor de documentos. Pense neste passo como preparar sua tela e pincel antes de começar sua obra-prima.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,26 +46,26 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Aqui,`dataDir` é o caminho para o diretório do documento onde você salvará o arquivo final.`Document`e`DocumentBuilder` são classes do Aspose.Words que ajudam você a criar e manipular documentos do Word.
+ Aqui,`dataDir` é o caminho para o diretório do seu documento onde você salvará o arquivo final.`Document` e`DocumentBuilder` são classes do Aspose.Words que ajudam você a criar e manipular documentos do Word.
 
-## Passo 2: Inserindo um Gráfico
+## Etapa 2: Inserindo um gráfico
 
-Título: Adicione um gráfico ao seu documento
+Título: Adicionar um gráfico ao seu documento
 
-A seguir, vamos adicionar um gráfico ao seu documento. É aqui que a magia começa. Inseriremos um gráfico de colunas que funcionará como nossa tela em branco.
+Em seguida, vamos adicionar um gráfico ao seu documento. É aqui que a mágica começa. Vamos inserir um gráfico de colunas que atuará como nossa tela em branco.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- O`InsertChart` O método insere um gráfico do tipo especificado (coluna, neste caso) e dimensões no documento.
+O`InsertChart` O método insere um gráfico do tipo especificado (Coluna neste caso) e dimensões no documento.
 
 ## Etapa 3: Personalizando a série de gráficos
 
 Título: Preencha seu gráfico com dados
 
-Agora, precisamos adicionar alguns dados ao nosso gráfico. Esta etapa é semelhante a preencher seu gráfico com informações significativas.
+Agora, precisamos adicionar alguns dados ao nosso gráfico. Este passo é semelhante a preencher seu gráfico com informações significativas.
 
 ```csharp
 chart.Series.Clear();
@@ -74,25 +74,25 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
 ```
 
- Aqui, estamos adicionando uma nova série chamada “Aspose Series 1” com cinco pontos de dados. O`Series.Clear` O método garante que todos os dados pré-existentes sejam removidos antes de adicionar nossa nova série.
+ Aqui, estamos adicionando uma nova série chamada "Aspose Series 1" com cinco pontos de dados. O`Series.Clear` O método garante que todos os dados pré-existentes sejam removidos antes de adicionar nossa nova série.
 
-## Etapa 4: formatando os números dos eixos
+## Etapa 4: Formatando os números dos eixos
 
-Título: Embeleze os números do seu eixo
+Título: Embeleze seus números de eixo
 
-Finalmente, vamos formatar os números no eixo Y para torná-los mais legíveis. É como dar os retoques finais em sua arte.
+Por fim, vamos formatar os números no eixo Y para torná-los mais legíveis. Isso é como dar os retoques finais na sua arte.
 
 ```csharp
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
- O`FormatCode` propriedade permite que você defina um formato personalizado para os números no eixo. Neste exemplo,`#,##0`garante que números grandes sejam exibidos com vírgulas para milhares.
+O`FormatCode` propriedade permite que você defina um formato personalizado para os números no eixo. Neste exemplo,`#,##0`garante que números grandes sejam exibidos com vírgulas para milhares.
 
-## Etapa 5: salvando o documento
+## Etapa 5: Salvando o documento
 
 Título: Salve sua obra-prima
 
-Agora que tudo está configurado, é hora de salvar seu documento. Esta etapa é a grande revelação do seu trabalho.
+Agora que tudo está configurado, é hora de salvar seu documento. Este passo é a grande revelação do seu trabalho.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
@@ -102,21 +102,21 @@ doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ## Conclusão
 
-E aí está! Você formatou com sucesso os números no eixo Y do seu gráfico usando Aspose.Words for .NET. Isso não apenas faz com que seus gráficos pareçam mais profissionais, mas também melhora a legibilidade. Aspose.Words oferece uma infinidade de recursos que podem ajudá-lo a criar documentos impressionantes do Word programaticamente. Então, por que não explorar mais e ver o que mais você pode fazer?
+E aí está! Você formatou com sucesso os números no eixo Y do seu gráfico usando o Aspose.Words para .NET. Isso não só faz com que seus gráficos pareçam mais profissionais, mas também melhora a legibilidade. O Aspose.Words oferece uma infinidade de recursos que podem ajudar você a criar documentos Word impressionantes programaticamente. Então, por que não explorar mais e ver o que mais você pode fazer?
 
 ## Perguntas frequentes
 
 ### O que é Aspose.Words para .NET?
-Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores criar, manipular e converter documentos do Word programaticamente.
+Aspose.Words para .NET é uma biblioteca poderosa que permite aos desenvolvedores criar, manipular e converter documentos do Word programaticamente.
 
 ### Posso formatar outros aspectos do gráfico além dos números dos eixos?
-Absolutamente! Aspose.Words for .NET permite formatar títulos, rótulos e até personalizar a aparência do gráfico.
+Com certeza! O Aspose.Words for .NET permite que você formate títulos, rótulos e até mesmo personalize a aparência do gráfico.
 
-### Existe um teste gratuito disponível para Aspose.Words for .NET?
+### Existe uma versão de avaliação gratuita disponível para o Aspose.Words para .NET?
  Sim, você pode obter um[teste gratuito aqui](https://releases.aspose.com/).
 
-### Posso usar Aspose.Words for .NET com outras linguagens .NET além de C#?
-Sim, Aspose.Words for .NET é compatível com qualquer linguagem .NET, incluindo VB.NET e F#.
+### Posso usar o Aspose.Words para .NET com outras linguagens .NET além de C#?
+Sim, o Aspose.Words para .NET é compatível com qualquer linguagem .NET, incluindo VB.NET e F#.
 
 ### Onde posso encontrar documentação mais detalhada?
- A documentação detalhada está disponível no site[Página de documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/).
+ A documentação detalhada está disponível em[Página de documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/).

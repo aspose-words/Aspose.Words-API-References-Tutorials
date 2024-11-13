@@ -9,19 +9,19 @@ url: /id/net/document-protection/read-only-protection/
 ---
 ## Perkenalan
 
-Saat mengelola dokumen Word, ada kalanya Anda perlu menjadikannya hanya-baca untuk melindungi kontennya. Baik untuk berbagi informasi penting tanpa risiko pengeditan yang tidak disengaja atau memastikan integritas dokumen hukum, perlindungan hanya baca adalah fitur yang berharga. Dalam tutorial ini, kita akan mempelajari cara menerapkan perlindungan baca-saja di dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan memandu Anda melalui setiap langkah secara mendetail dan menarik, memastikan Anda dapat mengikutinya dengan mudah.
+Dalam mengelola dokumen Word, ada kalanya Anda perlu membuatnya hanya-baca untuk melindungi isinya. Baik untuk berbagi informasi penting tanpa risiko penyuntingan yang tidak disengaja atau memastikan integritas dokumen hukum, perlindungan hanya-baca merupakan fitur yang berharga. Dalam tutorial ini, kita akan membahas cara menerapkan perlindungan hanya-baca dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan memandu Anda melalui setiap langkah secara terperinci dan menarik, memastikan Anda dapat mengikutinya dengan mudah.
 
 ## Prasyarat
 
-Sebelum kita mendalami kodenya, ada beberapa prasyarat yang perlu Anda miliki:
+Sebelum kita menyelami kodenya, ada beberapa prasyarat yang perlu Anda penuhi:
 
-1.  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Anda dapat mengunduhnya dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
-2. Lingkungan Pengembangan: Siapkan lingkungan pengembangan dengan .NET terinstal. Visual Studio adalah pilihan yang bagus.
+1.  Aspose.Words untuk .NET: Pastikan Anda telah menginstal pustaka Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Aspose merilis halaman](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Siapkan lingkungan pengembangan dengan .NET yang terinstal. Visual Studio adalah pilihan yang tepat.
 3. Pemahaman Dasar C#: Tutorial ini mengasumsikan Anda memiliki pemahaman dasar tentang pemrograman C#.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Pertama, pastikan kita telah mengimpor namespace yang diperlukan. Ini penting karena memungkinkan kita mengakses kelas dan metode yang kita perlukan dari Aspose.Words untuk .NET.
+Pertama, mari kita pastikan namespace yang diperlukan telah diimpor. Ini penting karena memungkinkan kita mengakses kelas dan metode yang kita perlukan dari Aspose.Words untuk .NET.
 
 ```csharp
 using Aspose.Words;
@@ -30,7 +30,7 @@ using Aspose.Words.Saving;
 
 ## Langkah 1: Siapkan Dokumen
 
-Pada langkah ini, kita akan membuat dokumen baru dan pembuat dokumen. Ini menjadi landasan bagi operasi kami.
+Pada langkah ini, kita akan membuat dokumen baru dan pembuat dokumen. Ini menjadi dasar bagi operasi kita.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -38,61 +38,61 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Tulis beberapa teks ke dokumen.
+// Tulis beberapa teks pada dokumen.
 builder.Write("Open document as read-only");
 ```
 
 Penjelasan:
 
 - Kita mulai dengan menentukan jalur direktori tempat dokumen akan disimpan.
--  Yang baru`Document` objek dibuat, dan a`DocumentBuilder` dikaitkan dengannya.
-- Dengan menggunakan pembuatnya, kami menambahkan sebaris teks sederhana ke dokumen.
+-  Sebuah baru`Document` objek dibuat, dan`DocumentBuilder` dikaitkan dengannya.
+- Dengan menggunakan pembangun, kami menambahkan baris teks sederhana ke dalam dokumen.
 
-## Langkah 2: Tetapkan Kata Sandi Perlindungan Tulis
+## Langkah 2: Tetapkan Kata Sandi Perlindungan Penulisan
 
-Selanjutnya, kita perlu mengatur kata sandi untuk proteksi penulisan. Kata sandi ini bisa sampai 15 karakter.
+Selanjutnya, kita perlu mengatur kata sandi untuk proteksi penulisan. Kata sandi ini dapat terdiri dari 15 karakter.
 
 ```csharp
-//Masukkan kata sandi yang panjangnya maksimal 15 karakter.
+//Masukkan kata sandi yang panjangnya hingga 15 karakter.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Penjelasan:
 
--  Itu`SetPassword` metode dipanggil di`WriteProtection` milik dokumen.
-- Kami memberikan kata sandi ("Kata Sandi Saya" dalam hal ini) yang diperlukan untuk menghapus perlindungan.
+- Itu`SetPassword` metode dipanggil pada`WriteProtection` milik dokumen.
+- Kami menyediakan kata sandi ("MyPassword" dalam kasus ini) yang akan diperlukan untuk menghapus perlindungan.
 
-## Langkah 3: Aktifkan Rekomendasi Hanya-Baca
+## Langkah 3: Aktifkan Rekomendasi Hanya Baca
 
-Pada langkah ini, kami membuat dokumen direkomendasikan hanya-baca. Artinya ketika dokumen dibuka, pengguna akan diminta untuk membukanya dalam mode read-only.
+Pada langkah ini, kami menjadikan dokumen tersebut sebagai dokumen yang direkomendasikan untuk dibaca saja. Ini berarti saat dokumen dibuka, dokumen tersebut akan meminta pengguna untuk membukanya dalam mode baca saja.
 
 ```csharp
-// Jadikan dokumen sebagai read-only direkomendasikan.
+// Jadikan dokumen sebagai baca-saja direkomendasikan.
 doc.WriteProtection.ReadOnlyRecommended = true;
 ```
 
 Penjelasan:
 
--  Itu`ReadOnlyRecommended` properti disetel ke`true`.
+- Itu`ReadOnlyRecommended` properti diatur ke`true`.
 - Ini akan meminta pengguna untuk membuka dokumen dalam mode baca-saja, meskipun mereka dapat memilih untuk mengabaikan rekomendasi tersebut.
 
-## Langkah 4: Terapkan Perlindungan Hanya-Baca
+## Langkah 4: Terapkan Perlindungan Hanya Baca
 
-Terakhir, kami menerapkan perlindungan read-only pada dokumen. Langkah ini menegakkan perlindungan.
+Terakhir, kami menerapkan perlindungan hanya-baca pada dokumen. Langkah ini memberlakukan perlindungan.
 
 ```csharp
-// Terapkan perlindungan tulis sebagai hanya-baca.
+// Terapkan proteksi penulisan sebagai hanya-baca.
 doc.Protect(ProtectionType.ReadOnly);
 ```
 
 Penjelasan:
 
--  Itu`Protect` metode dipanggil pada dokumen dengan`ProtectionType.ReadOnly` sebagai argumennya.
-- Metode ini menerapkan perlindungan read-only, mencegah modifikasi apa pun pada dokumen tanpa kata sandi.
+- Itu`Protect` metode dipanggil pada dokumen dengan`ProtectionType.ReadOnly` sebagai argumen.
+- Metode ini menegakkan perlindungan baca-saja, mencegah modifikasi apa pun pada dokumen tanpa kata sandi.
 
 ## Langkah 5: Simpan Dokumen
 
-Langkah terakhir adalah menyimpan dokumen dengan pengaturan proteksi yang diterapkan.
+Langkah terakhir adalah menyimpan dokumen dengan pengaturan perlindungan yang diterapkan.
 
 ```csharp
 // Simpan dokumen yang dilindungi.
@@ -101,26 +101,26 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Penjelasan:
 
--  Itu`Save` metode dipanggil pada dokumen, menentukan jalur dan nama file.
-- Dokumen disimpan dengan perlindungan read-only.
+- Itu`Save` Metode ini dipanggil pada dokumen, yang menentukan jalur dan nama file.
+- Dokumen disimpan dengan perlindungan baca-saja.
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil membuat dokumen Word yang dilindungi hanya-baca menggunakan Aspose.Words untuk .NET. Fitur ini memastikan konten dokumen Anda tetap utuh dan tidak berubah, sehingga memberikan lapisan keamanan tambahan. Baik Anda berbagi informasi sensitif atau dokumen hukum, perlindungan hanya baca adalah alat yang harus dimiliki dalam gudang manajemen dokumen Anda.
+Nah, itu dia! Anda telah berhasil membuat dokumen Word yang dilindungi hak baca-saja menggunakan Aspose.Words untuk .NET. Fitur ini memastikan bahwa konten dokumen Anda tetap utuh dan tidak berubah, sehingga memberikan lapisan keamanan ekstra. Baik Anda berbagi informasi sensitif atau dokumen hukum, perlindungan hak baca-saja adalah alat yang wajib dimiliki dalam gudang manajemen dokumen Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
-Aspose.Words untuk .NET adalah pustaka canggih yang memungkinkan pengembang membuat, memodifikasi, mengonversi, dan melindungi dokumen Word secara terprogram menggunakan C# atau bahasa .NET lainnya.
+Aspose.Words untuk .NET adalah pustaka hebat yang memungkinkan pengembang untuk membuat, memodifikasi, mengonversi, dan melindungi dokumen Word secara terprogram menggunakan C# atau bahasa .NET lainnya.
 
-### Bisakah saya menghapus perlindungan baca-saja dari suatu dokumen?
- Ya, Anda dapat menghapus perlindungan read-only dengan menggunakan`Unprotect` metode dan memberikan kata sandi yang benar.
+### Bisakah saya menghapus proteksi baca-saja dari suatu dokumen?
+ Ya, Anda dapat menghapus perlindungan baca-saja dengan menggunakan`Unprotect` metode dan memberikan kata sandi yang benar.
 
 ### Apakah kata sandi yang ditetapkan dalam dokumen dienkripsi?
 Ya, Aspose.Words mengenkripsi kata sandi untuk memastikan keamanan dokumen yang dilindungi.
 
-### Bisakah saya menerapkan jenis perlindungan lain menggunakan Aspose.Words untuk .NET?
-Ya, Aspose.Words untuk .NET mendukung berbagai jenis perlindungan, termasuk hanya mengizinkan komentar, mengisi formulir, atau melacak perubahan.
+### Dapatkah saya menerapkan jenis perlindungan lain menggunakan Aspose.Words untuk .NET?
+Ya, Aspose.Words untuk .NET mendukung berbagai jenis perlindungan, termasuk hanya mengizinkan komentar, pengisian formulir, atau pelacakan perubahan.
 
 ### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words untuk .NET?
- Ya, Anda dapat mengunduh uji coba gratis dari[Halaman rilis Aspose](https://releases.aspose.com/).
+ Ya, Anda dapat mengunduh uji coba gratis dari[Aspose merilis halaman](https://releases.aspose.com/).

@@ -78,7 +78,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyParagraphStyle.docx");
 
 ## 結論
 
-現在你就得到它了！您剛剛使用 Aspose.Words for .NET 設定了 Word 文件的樣式。很酷，對吧？只需幾行程式碼，您就可以將普通文件轉變為具有視覺吸引力的傑作。因此，請繼續嘗試不同的樣式，讓您的文件脫穎而出！
+現在你就擁有了！您剛剛使用 Aspose.Words for .NET 設定了 Word 文件的樣式。很酷，對吧？只需幾行程式碼，您就可以將普通文件轉變為具有視覺吸引力的傑作。因此，請繼續嘗試不同的樣式，讓您的文件脫穎而出！
 
 ## 常見問題解答
 

@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET で HTML 読み込みオプションを利用して、コンボ ボックス フォーム フィールドを Word 文書に挿入できました。このステップ バイ ステップ ガイドは、プロセスを理解し、プロジェクトに適用するのに役立ちます。文書作成を自動化する場合でも、HTML コンテンツを操作する場合でも、Aspose.Words for .NET は目標を達成するための強力なツールを提供します。
+これで完了です。Aspose.Words for .NET の HTML 読み込みオプションを利用して、コンボ ボックス フォーム フィールドを Word 文書に挿入できました。このステップ バイ ステップ ガイドは、プロセスを理解し、プロジェクトに適用するのに役立ちます。文書作成を自動化する場合でも、HTML コンテンツを操作する場合でも、Aspose.Words for .NET は目標を達成するための強力なツールを提供します。
 
 ## よくある質問
 

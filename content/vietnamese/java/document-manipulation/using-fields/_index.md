@@ -1,24 +1,24 @@
 ---
-title: Sử dụng Trường trong Aspose.Words cho Java
-linktitle: Sử dụng trường
+title: Sử dụng Fields trong Aspose.Words cho Java
+linktitle: Sử dụng các trường
 second_title: API xử lý tài liệu Java Aspose.Words
-description: Mở khóa Tự động hóa tài liệu với Aspose.Words cho Java. Tìm hiểu cách hợp nhất, định dạng và chèn hình ảnh trong tài liệu Java. Hướng dẫn toàn diện và ví dụ về mã để xử lý tài liệu hiệu quả.
+description: Mở khóa Tự động hóa Tài liệu với Aspose.Words cho Java. Tìm hiểu cách hợp nhất, định dạng và chèn hình ảnh vào tài liệu Java. Hướng dẫn toàn diện và ví dụ mã để xử lý tài liệu hiệu quả.
 type: docs
 weight: 11
 url: /vi/java/document-manipulation/using-fields/
 ---
  
-## Giới thiệu về Sử dụng Trường trong Aspose.Words cho Java
+## Giới thiệu về cách sử dụng Fields trong Aspose.Words cho Java
 
-Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách sử dụng các trường trong Aspose.Words cho Java. Trường là trình giữ chỗ mạnh mẽ có thể chèn dữ liệu động vào tài liệu của bạn. Chúng tôi sẽ đề cập đến nhiều tình huống khác nhau, bao gồm hợp nhất trường cơ bản, trường có điều kiện, làm việc với hình ảnh và định dạng hàng xen kẽ. Chúng tôi sẽ cung cấp các đoạn mã Java và giải thích cho từng tình huống.
+Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách sử dụng các trường trong Aspose.Words cho Java. Các trường là các trình giữ chỗ mạnh mẽ có thể chèn dữ liệu động vào tài liệu của bạn. Chúng ta sẽ đề cập đến nhiều tình huống khác nhau, bao gồm hợp nhất trường cơ bản, trường có điều kiện, làm việc với hình ảnh và định dạng hàng xen kẽ. Chúng ta sẽ cung cấp các đoạn mã Java và giải thích cho từng tình huống.
 
 ## Điều kiện tiên quyết
 
- Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt Aspose.Words for Java. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/java/).
+ Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt Aspose.Words for Java. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/java/).
 
 ## Hợp nhất trường cơ bản
 
-Hãy bắt đầu với một ví dụ hợp nhất trường đơn giản. Chúng tôi có một mẫu tài liệu với các trường phối thư và chúng tôi muốn điền dữ liệu vào chúng. Đây là mã Java để đạt được điều này:
+Hãy bắt đầu với một ví dụ đơn giản về việc hợp nhất trường. Chúng ta có một mẫu tài liệu với các trường hợp hợp nhất thư và chúng ta muốn điền dữ liệu vào đó. Sau đây là mã Java để thực hiện việc này:
 
 ```java
 Document doc = new Document("Mail merge template.docx");
@@ -35,11 +35,11 @@ doc.getMailMerge().execute(fieldNames, fieldValues);
 doc.save("MergedDocument.docx");
 ```
 
- Trong mã này, chúng tôi tải mẫu tài liệu, thiết lập các trường phối thư và thực hiện phối. các`HandleMergeField` lớp xử lý các loại trường cụ thể như hộp kiểm và nội dung HTML.
+ Trong mã này, chúng tôi tải một mẫu tài liệu, thiết lập các trường hợp nhất thư và thực hiện hợp nhất.`HandleMergeField` Lớp xử lý các kiểu trường cụ thể như hộp kiểm và nội dung HTML.
 
-## Trường có điều kiện
+## Các trường có điều kiện
 
-Bạn có thể sử dụng các trường có điều kiện trong tài liệu của mình. Hãy chèn trường IF bên trong tài liệu của chúng ta và điền dữ liệu vào đó:
+Bạn có thể sử dụng các trường có điều kiện trong tài liệu của mình. Hãy chèn một trường IF vào trong tài liệu của chúng ta và điền dữ liệu vào đó:
 
 ```java
 Document doc = new Document("ConditionalFieldTemplate.docx");
@@ -52,11 +52,11 @@ dataTable.getRows().add("James Bond");
 doc.getMailMerge().execute(dataTable);
 ```
 
- Mã này chèn trường IF và MERGEFIELD bên trong nó. Mặc dù câu lệnh IF sai, chúng ta vẫn đặt`setUnconditionalMergeFieldsAndRegions(true)` để đếm MERGEFIELD bên trong các trường IF sai trong quá trình trộn thư.
+ Mã này chèn một trường IF và một MERGEFIELD vào bên trong nó. Mặc dù câu lệnh IF là sai, chúng ta đặt`setUnconditionalMergeFieldsAndRegions(true)` để đếm MERGEFIELD bên trong các trường IF có câu lệnh sai trong quá trình trộn thư.
 
 ## Làm việc với hình ảnh
 
-Bạn có thể hợp nhất hình ảnh vào tài liệu của mình. Dưới đây là ví dụ về việc hợp nhất hình ảnh từ cơ sở dữ liệu vào tài liệu:
+Bạn có thể hợp nhất hình ảnh vào tài liệu của mình. Sau đây là ví dụ về việc hợp nhất hình ảnh từ cơ sở dữ liệu vào tài liệu:
 
 ```java
 Document doc = new Document("ImageMergeTemplate.docx");
@@ -71,11 +71,11 @@ connection.close();
 doc.save("MergedDocumentWithImages.docx");
 ```
 
-Trong mã này, chúng tôi tải một mẫu tài liệu có các trường hợp nhất hình ảnh và điền vào chúng những hình ảnh từ cơ sở dữ liệu.
+Trong đoạn mã này, chúng tôi tải một mẫu tài liệu với các trường hợp hợp nhất hình ảnh và điền vào đó các hình ảnh từ cơ sở dữ liệu.
 
 ## Định dạng hàng xen kẽ
 
-Bạn có thể định dạng các hàng xen kẽ trong một bảng. Đây là cách thực hiện:
+Bạn có thể định dạng các hàng xen kẽ trong một bảng. Sau đây là cách thực hiện:
 
 ```java
 Document doc = new Document("AlternatingRowsTemplate.docx");
@@ -85,38 +85,38 @@ doc.getMailMerge().executeWithRegions(dataTable);
 doc.save("FormattedDocument.doc");
 ```
 
- Mã này định dạng các hàng trong bảng với các màu xen kẽ dựa trên`CompanyName` cánh đồng.
+ Mã này định dạng các hàng trong một bảng với các màu xen kẽ dựa trên`CompanyName` cánh đồng.
 
 ## Phần kết luận
 
-Aspose.Words for Java cung cấp các tính năng mạnh mẽ để làm việc với các trường trong tài liệu của bạn. Bạn có thể thực hiện việc hợp nhất các trường cơ bản, làm việc với các trường có điều kiện, chèn hình ảnh và định dạng bảng một cách dễ dàng. Kết hợp các kỹ thuật này vào quy trình tự động hóa tài liệu của bạn để tạo tài liệu động và tùy chỉnh.
+Aspose.Words for Java cung cấp các tính năng mạnh mẽ để làm việc với các trường trong tài liệu của bạn. Bạn có thể thực hiện việc hợp nhất các trường cơ bản, làm việc với các trường có điều kiện, chèn hình ảnh và định dạng bảng một cách dễ dàng. Kết hợp các kỹ thuật này vào quy trình tự động hóa tài liệu của bạn để tạo các tài liệu động và tùy chỉnh.
 
 ## Câu hỏi thường gặp
 
-### Tôi có thể thực hiện việc trộn thư bằng Aspose.Words cho Java không?
+### Tôi có thể thực hiện trộn thư bằng Aspose.Words cho Java không?
 
-Có, bạn có thể thực hiện việc trộn thư trong Aspose.Words for Java. Bạn có thể tạo mẫu tài liệu với các trường phối thư rồi điền dữ liệu từ nhiều nguồn khác nhau vào chúng. Tham khảo các ví dụ về mã được cung cấp để biết chi tiết về cách thực hiện trộn thư.
+Có, bạn có thể thực hiện việc trộn thư trong Aspose.Words for Java. Bạn có thể tạo mẫu tài liệu với các trường trộn thư và sau đó điền dữ liệu từ nhiều nguồn khác nhau vào đó. Tham khảo các ví dụ mã được cung cấp để biết chi tiết về cách thực hiện việc trộn thư.
 
-### Làm cách nào tôi có thể chèn hình ảnh vào tài liệu bằng Aspose.Words cho Java?
+### Làm thế nào tôi có thể chèn hình ảnh vào tài liệu bằng Aspose.Words cho Java?
 
-Để chèn hình ảnh vào tài liệu, bạn có thể sử dụng thư viện Aspose.Words for Java. Tham khảo ví dụ về mã trong phần "Làm việc với hình ảnh" để biết hướng dẫn từng bước về cách hợp nhất hình ảnh từ cơ sở dữ liệu vào tài liệu.
+Để chèn hình ảnh vào tài liệu, bạn có thể sử dụng thư viện Aspose.Words cho Java. Tham khảo ví dụ mã trong phần "Làm việc với hình ảnh" để biết hướng dẫn từng bước về cách hợp nhất hình ảnh từ cơ sở dữ liệu vào tài liệu.
 
-### Mục đích của các trường có điều kiện trong Aspose.Words cho Java là gì?
+### Mục đích của trường điều kiện trong Aspose.Words dành cho Java là gì?
 
-Các trường có điều kiện trong Aspose.Words cho Java cho phép bạn tạo tài liệu động bằng cách đưa nội dung có điều kiện dựa trên các tiêu chí nhất định. Trong ví dụ được cung cấp, trường IF được sử dụng để bao gồm dữ liệu trong tài liệu có điều kiện trong quá trình trộn thư dựa trên kết quả của câu lệnh IF.
+Các trường có điều kiện trong Aspose.Words for Java cho phép bạn tạo các tài liệu động bằng cách bao gồm nội dung có điều kiện dựa trên các tiêu chí nhất định. Trong ví dụ được cung cấp, trường IF được sử dụng để bao gồm dữ liệu có điều kiện trong tài liệu trong quá trình trộn thư dựa trên kết quả của câu lệnh IF.
 
-### Làm cách nào tôi có thể định dạng các hàng xen kẽ trong bảng bằng Aspose.Words cho Java?
+### Làm thế nào tôi có thể định dạng các hàng xen kẽ trong bảng bằng Aspose.Words cho Java?
 
- Để định dạng các hàng xen kẽ trong bảng, bạn có thể sử dụng Aspose.Words for Java để áp dụng định dạng cụ thể cho các hàng dựa trên tiêu chí của bạn. Trong phần "Định dạng hàng xen kẽ", bạn sẽ tìm thấy ví dụ minh họa cách định dạng các hàng có màu xen kẽ dựa trên`CompanyName` cánh đồng.
+ Để định dạng các hàng xen kẽ trong một bảng, bạn có thể sử dụng Aspose.Words for Java để áp dụng định dạng cụ thể cho các hàng dựa trên tiêu chí của bạn. Trong phần "Định dạng hàng xen kẽ", bạn sẽ tìm thấy một ví dụ minh họa cách định dạng các hàng có màu xen kẽ dựa trên`CompanyName` cánh đồng.
 
-### Tôi có thể tìm thêm tài liệu và tài nguyên cho Aspose.Words cho Java ở đâu?
+### Tôi có thể tìm thêm tài liệu và tài nguyên về Aspose.Words cho Java ở đâu?
 
- Bạn có thể tìm thấy tài liệu toàn diện, mẫu mã và hướng dẫn về Aspose.Words cho Java trên trang web Aspose:[Aspose.Words cho tài liệu Java](https://reference.aspose.com/words/java/). Tài nguyên này sẽ giúp bạn khám phá các tính năng và chức năng bổ sung của thư viện.
+ Bạn có thể tìm thấy tài liệu toàn diện, mẫu mã và hướng dẫn về Aspose.Words for Java trên trang web Aspose:[Tài liệu Aspose.Words cho Java](https://reference.aspose.com/words/java/)Tài nguyên này sẽ giúp bạn khám phá các tính năng và chức năng bổ sung của thư viện.
 
-### Làm cách nào tôi có thể nhận được hỗ trợ hoặc tìm kiếm trợ giúp với Aspose.Words cho Java?
+### Tôi có thể nhận được hỗ trợ hoặc tìm kiếm trợ giúp với Aspose.Words cho Java như thế nào?
 
- Nếu bạn cần hỗ trợ, có thắc mắc hoặc gặp sự cố khi sử dụng Aspose.Words cho Java, bạn có thể truy cập diễn đàn Aspose.Words để được cộng đồng hỗ trợ và thảo luận:[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words).
+ Nếu bạn cần trợ giúp, có thắc mắc hoặc gặp sự cố khi sử dụng Aspose.Words cho Java, bạn có thể truy cập diễn đàn Aspose.Words để được cộng đồng hỗ trợ và thảo luận:[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words).
 
-### Aspose.Words cho Java có tương thích với các IDE Java khác nhau không?
+### Aspose.Words for Java có tương thích với các IDE Java khác không?
 
-Có, Aspose.Words cho Java tương thích với nhiều Môi trường phát triển tích hợp Java (IDE) khác nhau như Eclipse, IntelliJ IDEA và NetBeans. Bạn có thể tích hợp nó vào IDE ưa thích để hợp lý hóa các tác vụ xử lý tài liệu của mình.
+Có, Aspose.Words for Java tương thích với nhiều Môi trường phát triển tích hợp Java (IDE) như Eclipse, IntelliJ IDEA và NetBeans. Bạn có thể tích hợp nó vào IDE ưa thích của mình để hợp lý hóa các tác vụ xử lý tài liệu của mình.

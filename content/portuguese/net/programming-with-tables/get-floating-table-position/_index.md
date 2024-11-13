@@ -1,23 +1,23 @@
 ---
-title: Obtenha a posição da mesa flutuante
-linktitle: Obtenha a posição da mesa flutuante
+title: Obter posição de mesa flutuante
+linktitle: Obter posição de mesa flutuante
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como obter posições de tabela flutuantes em documentos do Word usando Aspose.Words for .NET. Este guia passo a passo detalhado orientará você em tudo o que você precisa saber.
+description: Aprenda como obter posições de tabela flutuantes em documentos do Word usando Aspose.Words para .NET. Este guia detalhado passo a passo o guiará por tudo o que você precisa saber.
 type: docs
 weight: 10
 url: /pt/net/programming-with-tables/get-floating-table-position/
 ---
 ## Introdução
 
-Você está pronto para mergulhar no mundo do Aspose.Words for .NET? Hoje, vamos levá-lo em uma jornada para descobrir os segredos das tabelas flutuantes em documentos do Word. Imagine que você tem uma mesa que não apenas fica parada, mas flutua elegantemente ao redor do texto. Muito legal, certo? Este tutorial orientará você sobre como obter as propriedades de posicionamento dessas tabelas flutuantes. Então, vamos começar!
+Você está pronto para mergulhar no mundo do Aspose.Words para .NET? Hoje, vamos levá-lo em uma jornada para descobrir os segredos das tabelas flutuantes em documentos do Word. Imagine que você tem uma tabela que não fica parada, mas flutua elegantemente em torno do texto. Muito legal, certo? Este tutorial mostrará como obter as propriedades de posicionamento dessas tabelas flutuantes. Então, vamos começar!
 
 ## Pré-requisitos
 
-Antes de entrarmos na parte divertida, há algumas coisas que você precisa ter em mente:
+Antes de começarmos a parte divertida, há algumas coisas que você precisa ter em mãos:
 
-1.  Aspose.Words for .NET: Se ainda não o fez, baixe e instale Aspose.Words for .NET do[Página de lançamentos do Aspose](https://releases.aspose.com/words/net/).
-2. Ambiente de desenvolvimento: certifique-se de ter um ambiente de desenvolvimento .NET configurado. Visual Studio é uma ótima opção.
-3. Documento de amostra: você precisará de um documento do Word com uma tabela flutuante. Você pode criar um ou usar um documento existente. 
+1.  Aspose.Words para .NET: Se ainda não o fez, baixe e instale o Aspose.Words para .NET do[Página de lançamentos da Aspose](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: Certifique-se de ter um ambiente de desenvolvimento .NET configurado. O Visual Studio é uma ótima opção.
+3. Documento de exemplo: Você precisará de um documento do Word com uma tabela flutuante. Você pode criar uma ou usar um documento existente. 
 
 ## Importar namespaces
 
@@ -32,7 +32,7 @@ Tudo bem, vamos dividir o processo em etapas fáceis de seguir.
 
 ## Etapa 1: carregue seu documento
 
-Em primeiro lugar, você precisa carregar seu documento do Word. Este documento deve conter a tabela flutuante que você deseja examinar.
+Primeiro, você precisa carregar seu documento do Word. Este documento deve conter a tabela flutuante que você quer examinar.
 
 ```csharp
 // Caminho para o diretório do seu documento
@@ -43,9 +43,9 @@ Document doc = new Document(dataDir + "Table wrapped by text.docx");
 
  Nesta etapa, você está essencialmente dizendo ao Aspose.Words onde encontrar seu documento. Certifique-se de substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o seu documento.
 
-## Passo 2: Acesse as Tabelas do Documento
+## Etapa 2: Acesse as tabelas no documento
 
-Em seguida, você precisa acessar as tabelas da primeira seção do documento. Pense no documento como um grande contêiner e você estará vasculhando-o para encontrar todas as tabelas.
+Em seguida, você precisa acessar as tabelas dentro da primeira seção do documento. Pense no documento como um grande contêiner, e você está cavando nele para encontrar todas as tabelas.
 
 ```csharp
 foreach (Table table in doc.FirstSection.Body.Tables)
@@ -56,22 +56,22 @@ foreach (Table table in doc.FirstSection.Body.Tables)
 
 Aqui, você percorre cada tabela encontrada no corpo da primeira seção do seu documento.
 
-## Etapa 3: verifique se a mesa está flutuando
+## Etapa 3: Verifique se a mesa está flutuando
 
-Agora, você precisa determinar se a tabela é do tipo flutuante. As tabelas flutuantes têm configurações específicas de quebra de texto.
+Agora, você precisa determinar se a tabela é do tipo flutuante. Tabelas flutuantes têm configurações específicas de quebra de texto.
 
 ```csharp
 if (table.TextWrapping == TextWrapping.Around)
 {
-    // Seu código para imprimir as propriedades de posicionamento da tabela vai aqui
+    // Seu código para imprimir propriedades de posicionamento de tabela vai aqui
 }
 ```
 
 Esta condição verifica se o estilo de quebra de texto da tabela está definido como “Around”, o que indica que é uma tabela flutuante.
 
-## Etapa 4: imprimir as propriedades de posicionamento
+## Etapa 4: Imprima as propriedades de posicionamento
 
-Finalmente, vamos extrair e imprimir as propriedades de posicionamento da tabela flutuante. Essas propriedades informam onde a tabela está posicionada em relação ao texto e à página.
+Por fim, vamos extrair e imprimir as propriedades de posicionamento da tabela flutuante. Essas propriedades informam onde a tabela está posicionada em relação ao texto e à página.
 
 ```csharp
 if (table.TextWrapping == TextWrapping.Around)
@@ -90,23 +90,23 @@ Essas propriedades fornecem uma visão detalhada de como a tabela está ancorada
 
 ## Conclusão
 
-E aí está! Seguindo essas etapas, você pode recuperar e imprimir facilmente as propriedades de posicionamento de tabelas flutuantes em seus documentos do Word usando Aspose.Words for .NET. Esteja você automatizando o processamento de documentos ou apenas curioso sobre layouts de tabelas, esse conhecimento certamente será útil.
+E aí está! Seguindo esses passos, você pode facilmente recuperar e imprimir as propriedades de posicionamento de tabelas flutuantes em seus documentos do Word usando o Aspose.Words para .NET. Não importa se você está automatizando o processamento de documentos ou apenas curioso sobre layouts de tabelas, esse conhecimento definitivamente será útil.
 
-Lembre-se de que trabalhar com Aspose.Words for .NET abre um mundo de possibilidades para manipulação e automação de documentos. Boa codificação!
+Lembre-se, trabalhar com Aspose.Words para .NET abre um mundo de possibilidades para manipulação e automação de documentos. Boa codificação!
 
 ## Perguntas frequentes
 
 ### O que é uma tabela flutuante em documentos do Word?
-Uma tabela flutuante é uma tabela que não é fixa ao texto, mas pode ser movida, normalmente com quebra automática de texto.
+Uma tabela flutuante é uma tabela que não é fixa ao texto, mas pode se mover, normalmente com texto ajustado ao redor dela.
 
-### Como posso saber se uma tabela está flutuando usando Aspose.Words for .NET?
- Você pode verificar se uma tabela está flutuando examinando sua`TextWrapping` propriedade. Se estiver definido para`TextWrapping.Around`, a tabela está flutuando.
+### Como posso saber se uma tabela está flutuando usando o Aspose.Words para .NET?
+ Você pode verificar se uma tabela está flutuando examinando sua`TextWrapping` propriedade. Se estiver definido como`TextWrapping.Around`, a mesa está flutuando.
 
 ### Posso alterar as propriedades de posicionamento de uma tabela flutuante?
-Sim, usando Aspose.Words for .NET, você pode modificar as propriedades de posicionamento de uma tabela flutuante para personalizar seu layout.
+Sim, usando o Aspose.Words para .NET, você pode modificar as propriedades de posicionamento de uma tabela flutuante para personalizar seu layout.
 
-### O Aspose.Words for .NET é adequado para automação de documentos em grande escala?
-Absolutamente! Aspose.Words for .NET foi projetado para automação de documentos de alto desempenho e pode lidar com operações em grande escala com eficiência.
+### O Aspose.Words for .NET é adequado para automação de documentos em larga escala?
+Absolutamente! O Aspose.Words for .NET foi projetado para automação de documentos de alto desempenho e pode lidar com operações de larga escala de forma eficiente.
 
-### Onde posso encontrar mais informações e recursos sobre Aspose.Words for .NET?
-Você pode encontrar documentação e recursos detalhados no site[Página de documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/).
+### Onde posso encontrar mais informações e recursos sobre o Aspose.Words para .NET?
+Você pode encontrar documentação e recursos detalhados em[Página de documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/).

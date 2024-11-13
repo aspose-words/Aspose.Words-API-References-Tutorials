@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
- Εδώ, δημιουργούμε ένα νέο`Document`και`DocumentBuilder` παράδειγμα. Ο`DocumentBuilder` μας επιτρέπει να προσθέσουμε κείμενο στο έγγραφό μας.
+ Εδώ, δημιουργούμε ένα νέο`Document` και`DocumentBuilder` παράδειγμα. Ο`DocumentBuilder` μας επιτρέπει να προσθέσουμε κείμενο στο έγγραφό μας.
 
 ## Βήμα 4: Προστατέψτε το έγγραφο
 

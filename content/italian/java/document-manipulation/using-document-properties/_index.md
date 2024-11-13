@@ -2,7 +2,7 @@
 title: Utilizzo delle proprietà del documento in Aspose.Words per Java
 linktitle: Utilizzo delle proprietà del documento
 second_title: API di elaborazione dei documenti Java Aspose.Words
-description: Ottimizza la gestione dei documenti con Aspose.Words per Java. Impara a lavorare con le proprietà del documento, aggiungi metadati personalizzati e altro ancora in questo tutorial completo.
+description: Ottimizza la gestione dei documenti con Aspose.Words per Java. Impara a lavorare con le proprietà dei documenti, ad aggiungere metadati personalizzati e altro ancora in questo tutorial completo.
 type: docs
 weight: 32
 url: /it/java/document-manipulation/using-document-properties/
@@ -10,13 +10,13 @@ url: /it/java/document-manipulation/using-document-properties/
 
 ## Introduzione alle proprietà del documento
 
-Le proprietà del documento sono una parte vitale di qualsiasi documento. Forniscono informazioni aggiuntive sul documento stesso, come titolo, autore, oggetto, parole chiave e altro. In Aspose.Words per Java, puoi manipolare sia le proprietà del documento integrate che quelle personalizzate.
+Le proprietà del documento sono una parte essenziale di qualsiasi documento. Forniscono informazioni aggiuntive sul documento stesso, come il titolo, l'autore, l'oggetto, le parole chiave e altro. In Aspose.Words for Java, puoi manipolare sia le proprietà del documento integrate che quelle personalizzate.
 
 ## Enumerazione delle proprietà del documento
 
 ### Proprietà integrate
 
-Per recuperare e utilizzare le proprietà del documento integrate, puoi utilizzare il seguente snippet di codice:
+Per recuperare e utilizzare le proprietà integrate del documento, è possibile utilizzare il seguente frammento di codice:
 
 ```java
 @Test
@@ -30,11 +30,11 @@ public void enumerateProperties() throws Exception
 }
 ```
 
-Questo codice visualizzerà il nome del documento e le proprietà integrate, incluse proprietà come "Titolo", "Autore" e "Parole chiave".
+Questo codice visualizzerà il nome del documento e le proprietà integrate, tra cui proprietà come "Titolo", "Autore" e "Parole chiave".
 
 ### Proprietà personalizzate
 
-Per utilizzare le proprietà personalizzate del documento, puoi utilizzare il seguente snippet di codice:
+Per lavorare con le proprietà personalizzate del documento, puoi utilizzare il seguente frammento di codice:
 
 ```java
 @Test
@@ -53,11 +53,11 @@ public void addCustomDocumentProperties() throws Exception
 }
 ```
 
-Questo frammento di codice mostra come aggiungere proprietà personalizzate del documento, tra cui un valore booleano, una stringa, una data, un numero di revisione e un valore numerico.
+Questo frammento di codice mostra come aggiungere proprietà personalizzate al documento, tra cui un valore booleano, una stringa, una data, un numero di revisione e un valore numerico.
 
 ## Rimozione delle proprietà del documento
 
-Per rimuovere proprietà specifiche del documento, è possibile utilizzare il seguente codice:
+Per rimuovere proprietà specifiche del documento, puoi utilizzare il seguente codice:
 
 ```java
 @Test
@@ -72,7 +72,7 @@ Questo codice rimuove la proprietà personalizzata "Data autorizzata" dal docume
 
 ## Configurazione del collegamento al contenuto
 
-In alcuni casi, potresti voler creare collegamenti all'interno del tuo documento. Ecco come puoi farlo:
+In alcuni casi, potresti voler creare dei link all'interno del tuo documento. Ecco come puoi farlo:
 
 ```java
 @Test
@@ -86,7 +86,7 @@ public void configuringLinkToContent() throws Exception
 
     CustomDocumentProperties customProperties = doc.getCustomDocumentProperties();
 
-    // Aggiungi la proprietà collegata al contenuto.
+    // Aggiungi collegato alla proprietà del contenuto.
     DocumentProperty customProperty = customProperties.addLinkToContent("Bookmark", "MyBookmark");
     customProperty = customProperties.get("Bookmark");
     boolean isLinkedToContent = customProperty.isLinkToContent();
@@ -95,7 +95,7 @@ public void configuringLinkToContent() throws Exception
 }
 ```
 
-Questo frammento di codice mostra come creare un segnalibro nel documento e aggiungere una proprietà del documento personalizzata che si collega a quel segnalibro.
+Questo frammento di codice mostra come creare un segnalibro nel documento e aggiungere una proprietà personalizzata del documento che si collega a tale segnalibro.
 
 ## Conversione tra unità di misura
 
@@ -136,30 +136,30 @@ public void useControlCharacters()
 }
 ```
 
-In questo esempio, sostituiamo il ritorno a capo (`\r`) con un ritorno a capo seguito da un avanzamento riga (`\r\n`).
+In questo esempio, sostituiamo il ritorno a capo (`\r`) con un ritorno a capo seguito da un avanzamento di riga (`\r\n`).
 
 ## Conclusione
 
-Le proprietà del documento svolgono un ruolo significativo nella gestione e nell'organizzazione dei documenti in modo efficace in Aspose.Words per Java. Che si tratti di lavorare con proprietà integrate, proprietà personalizzate o utilizzando caratteri di controllo, hai una gamma di strumenti a tua disposizione per migliorare le tue capacità di gestione dei documenti.
+Le proprietà del documento svolgono un ruolo significativo nella gestione e nell'organizzazione efficace dei documenti in Aspose.Words per Java. Sia che si tratti di lavorare con proprietà integrate, proprietà personalizzate o di utilizzare caratteri di controllo, hai a disposizione una gamma di strumenti per migliorare le tue capacità di gestione dei documenti.
 
 ## Domande frequenti
 
-### Come posso accedere alle proprietà del documento integrate?
+### Come posso accedere alle proprietà integrate del documento?
 
- Per accedere alle proprietà del documento integrate in Aspose.Words per Java, è possibile utilizzare il file`getBuiltInDocumentProperties` metodo sul`Document` oggetto. Questo metodo restituisce una raccolta di proprietà integrate su cui è possibile scorrere.
+ Per accedere alle proprietà del documento integrate in Aspose.Words per Java, è possibile utilizzare`getBuiltInDocumentProperties` metodo sul`Document` oggetto. Questo metodo restituisce una raccolta di proprietà integrate che puoi scorrere.
 
-### Posso aggiungere proprietà di documento personalizzate a un documento?
+### Posso aggiungere proprietà personalizzate a un documento?
 
- Sì, puoi aggiungere proprietà di documento personalizzate a un documento utilizzando il file`CustomDocumentProperties` collezione. Puoi definire proprietà personalizzate con vari tipi di dati, tra cui stringhe, valori booleani, date e valori numerici.
+ Sì, puoi aggiungere proprietà personalizzate a un documento utilizzando`CustomDocumentProperties` raccolta. È possibile definire proprietà personalizzate con vari tipi di dati, tra cui stringhe, valori booleani, date e valori numerici.
 
-### Come posso rimuovere una proprietà specifica del documento personalizzato?
+### Come posso rimuovere una specifica proprietà personalizzata di un documento?
 
- Per rimuovere una proprietà specifica del documento personalizzato, è possibile utilizzare il file`remove` metodo sul`CustomDocumentProperties`collection, passando come parametro il nome della proprietà che si desidera rimuovere.
+ Per rimuovere una proprietà specifica del documento personalizzato, puoi utilizzare`remove` metodo sul`CustomDocumentProperties`raccolta, passando come parametro il nome della proprietà che si desidera rimuovere.
 
 ### Qual è lo scopo del collegamento al contenuto di un documento?
 
-Il collegamento al contenuto di un documento consente di creare riferimenti dinamici a parti specifiche del documento. Questo può essere utile per creare documenti interattivi o riferimenti incrociati tra le sezioni.
+Il collegamento al contenuto all'interno di un documento consente di creare riferimenti dinamici a parti specifiche del documento. Ciò può essere utile per creare documenti interattivi o riferimenti incrociati tra sezioni.
 
-### Come posso convertire tra diverse unità di misura in Aspose.Words per Java?
+### Come posso convertire diverse unità di misura in Aspose.Words per Java?
 
- È possibile convertire tra diverse unità di misura in Aspose.Words per Java utilizzando il file`ConvertUtil` classe. Fornisce metodi per convertire unità come pollici in punti, punti in centimetri e altro.
+ È possibile convertire tra diverse unità di misura in Aspose.Words per Java utilizzando`ConvertUtil` classe. Fornisce metodi per convertire unità quali pollici in punti, punti in centimetri e altro ancora.

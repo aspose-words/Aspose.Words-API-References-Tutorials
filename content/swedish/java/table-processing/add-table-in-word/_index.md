@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Steg 6: Skapa en tabell och lägg till rader
 
- Skapa en ny`Table`objekt och ange antalet rader och kolumner.
+Skapa en ny`Table` objekt och ange antalet rader och kolumner.
 
 ```java
 Table table = new Table(doc);

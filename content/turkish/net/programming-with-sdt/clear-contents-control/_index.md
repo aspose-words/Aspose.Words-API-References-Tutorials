@@ -2,44 +2,44 @@
 title: İçerik Kontrolünü Temizle
 linktitle: İçerik Kontrolünü Temizle
 second_title: Aspose.Words Belge İşleme API'si
-description: Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesinde içerik kontrolünü nasıl temizleyeceğinizi öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgesinde içerik denetimini nasıl temizleyeceğinizi adım adım anlatan kılavuzumuzla öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/clear-contents-control/
 ---
 ## giriiş
 
-Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün, bu güçlü kütüphaneyi kullanarak bir Word belgesindeki içerik kontrolünün nasıl temizleneceğini keşfedeceğiz. Takip edilmesi kolay, adım adım bir kılavuzla başlayalım!
+Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün, bu güçlü kütüphaneyi kullanarak bir Word belgesinde içerik denetiminin nasıl temizleneceğini keşfedeceğiz. Takip etmesi kolay, adım adım bir kılavuzla başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+Başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
 1.  Aspose.Words for .NET: Kütüphaneyi şu adresten indirin:[Burada](https://releases.aspose.com/words/net/).
-2. .NET Framework: Makinenizde .NET Framework'ün kurulu olduğundan emin olun.
-3. IDE: Visual Studio gibi bir Entegre Geliştirme Ortamı.
+2. .NET Framework: Bilgisayarınızda .NET Framework'ün yüklü olduğundan emin olun.
+3. IDE: Visual Studio benzeri bütünleşik geliştirme ortamı.
 4. Belge: Yapılandırılmış belge etiketlerine sahip bir Word belgesi.
 
-Bu önkoşullar yerine getirildiğinde kodlamaya başlamaya hazırsınız.
+Bu ön koşullar sağlandığında kodlamaya başlamaya hazırsınız.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET'i kullanmak için gerekli ad alanlarını içe aktarmanız gerekir. İşte başlamanıza yardımcı olacak kısa bir pasaj:
+Aspose.Words for .NET'i kullanmak için gerekli ad alanlarını içe aktarmanız gerekir. Başlamanız için kısa bir kod parçası:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Markup;
 ```
 
-İçerik kontrolünü temizleme sürecini ayrıntılı adımlara ayıralım.
+İçerik denetimini temizleme sürecini ayrıntılı adımlara bölelim.
 
-## 1. Adım: Projenizi Kurun
+## Adım 1: Projenizi Kurun
 
-Öncelikle proje ortamınızı ayarlayın.
+Öncelikle proje ortamınızı kurun.
 
 1. Visual Studio'yu açın: Visual Studio'yu veya tercih ettiğiniz IDE'yi başlatın.
-2.  Yeni Bir Proje Oluşturun: Git`File` >`New` >`Project`ve bir C# Konsol Uygulaması seçin.
-3. Aspose.Words for .NET'i yükleyin: Aspose.Words'ü yüklemek için NuGet Paket Yöneticisini kullanın. Paket Yönetici Konsolunda aşağıdaki komutu çalıştırın:
+2.  Yeni Bir Proje Oluşturun: Şuraya gidin:`File` >`New` >`Project`ve bir C# Konsol Uygulaması seçin.
+3. .NET için Aspose.Words'ü yükleyin: Aspose.Words'ü yüklemek için NuGet Paket Yöneticisi'ni kullanın. Paket Yöneticisi Konsolu'nda aşağıdaki komutu çalıştırın:
 ```sh
 Install-Package Aspose.Words
 ```
@@ -48,25 +48,25 @@ Install-Package Aspose.Words
 
 Daha sonra yapılandırılmış belge etiketlerini içeren Word belgesini yükleyelim.
 
-1. Belge Yolu: Belge dizininizin yolunu tanımlayın.
+1. Belge Yolu: Belge dizininize giden yolu tanımlayın.
    ```csharp
    string dataDir = "YOUR DOCUMENT DIRECTORY";
    ```
-2.  Belgeyi Yükleyin: Kullanın`Document` Word belgenizi yüklemek için sınıf.
+2.  Belgeyi Yükle: Şunu kullanın:`Document` Word belgenizi yüklemek için sınıf.
    ```csharp
    Document doc = new Document(dataDir + "Structured document tags.docx");
    ```
 
-## 3. Adım: Yapılandırılmış Belge Etiketine Erişim
+## Adım 3: Yapılandırılmış Belge Etiketine Erişim
 
-Şimdi belge içindeki yapılandırılmış belge etiketine (SDT) erişelim.
+Şimdi belge içerisindeki yapılandırılmış belge etiketine (SDT) erişelim.
 
-1. SDT Düğümünü Al: SDT düğümünü belgeden alın.
+1. SDT Düğümünü Al: Belgeden SDT düğümünü al.
    ```csharp
    StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
    ```
 
-## Adım 4: SDT İçeriğini Temizleyin
+## Adım 4: SDT'nin İçeriğini Temizleyin
 
 Yapılandırılmış belge etiketinin içeriğini temizleyin.
 
@@ -86,13 +86,13 @@ Son olarak değiştirilen belgeyi kaydedin.
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesindeki içerik kontrolünü başarıyla temizlediniz. Bu güçlü kitaplık, Word belgelerinde değişiklik yapmayı çok kolaylaştırır. Bu adımları takip ederek projelerinizde yapılandırılmış belge etiketlerini kolayca yönetebilirsiniz.
+Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesinde içerik denetimini başarıyla temizlediniz. Bu güçlü kütüphane Word belgelerini düzenlemeyi çocuk oyuncağı haline getiriyor. Bu adımları izleyerek projelerinizdeki yapılandırılmış belge etiketlerini kolayca yönetebilirsiniz.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
 
-Aspose.Words for .NET, .NET çerçevesinde Word belgeleriyle programlı olarak çalışmak için güçlü bir kütüphanedir.
+Aspose.Words for .NET, .NET çerçevesi içerisinde Word belgeleriyle programlı olarak çalışmak için güçlü bir kütüphanedir.
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
 
@@ -102,10 +102,10 @@ Aspose.Words for .NET, .NET çerçevesinde Word belgeleriyle programlı olarak �
 
  Aspose topluluğundan destek alabilirsiniz[Burada](https://forum.aspose.com/c/words/8).
 
-### Yapılandırılmış Belge Etiketleri Nedir?
+### Yapılandırılmış Belge Etiketleri Nelerdir?
 
 Yapılandırılmış Belge Etiketleri (SDT'ler), Word belgelerindeki belirli içerik türleri için yer tutucu görevi gören içerik denetimleridir.
 
-### Aspose.Words belgelerini nerede bulabilirim?
+### Aspose.Words'ün dokümanlarını nerede bulabilirim?
 
- Belgeler mevcut[Burada](https://reference.aspose.com/words/net/).
+ Belgeler mevcuttur[Burada](https://reference.aspose.com/words/net/).

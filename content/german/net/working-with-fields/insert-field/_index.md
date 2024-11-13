@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Einfügen des Felds
 
-Nachdem unser DocumentBuilder fertig ist, können wir nun ein Feld einfügen. Felder sind dynamische Elemente, die Daten anzeigen, Berechnungen durchführen oder sogar andere Dokumente einbinden können.
+Nachdem unser DocumentBuilder bereit ist, können wir nun ein Feld einfügen. Felder sind dynamische Elemente, die Daten anzeigen, Berechnungen durchführen oder sogar andere Dokumente einbinden können.
 
 ```csharp
 builder.InsertField(@"MERGEFIELD MyFieldName \* MERGEFORMAT");
@@ -98,7 +98,7 @@ Auf jeden Fall! Aspose.Words unterstützt eine Vielzahl von Feldern, darunter ME
 Ja, Aspose.Words für .NET ist sowohl mit .NET Framework als auch mit .NET Core kompatibel.
 
 ### Kann ich das Einfügen mehrerer Felder in großen Mengen automatisieren?  
-Ja, Sie können das Einfügen von Feldern in großen Mengen automatisieren, indem Sie Ihre Daten durchlaufen und den DocumentBuilder zum programmgesteuerten Einfügen von Feldern verwenden.
+Ja, Sie können das Einfügen von Feldern in großen Mengen automatisieren, indem Sie Ihre Daten durchlaufen und den DocumentBuilder verwenden, um Felder programmgesteuert einzufügen.
 
 ### Wo finde ich ausführlichere Dokumentation zu Aspose.Words für .NET?  
  Eine ausführliche Dokumentation finden Sie[Hier](https://reference.aspose.com/words/net/).

@@ -1,28 +1,28 @@
 ---
-title: Adicionar assinatura digital ao PDF usando o titular do certificado
-linktitle: Adicionar assinatura digital ao PDF usando o titular do certificado
+title: Adicionar assinatura digital ao PDF usando o detentor do certificado
+linktitle: Adicionar assinatura digital ao PDF usando o detentor do certificado
 second_title: API de processamento de documentos Aspose.Words
-description: Proteja seus arquivos PDF com uma assinatura digital usando Aspose.Words for .NET. Siga este guia passo a passo para adicionar uma assinatura digital aos seus PDFs sem esforço.
+description: Proteja seus arquivos PDF com uma assinatura digital usando Aspose.Words para .NET. Siga este guia passo a passo para adicionar uma assinatura digital aos seus PDFs sem esforço.
 type: docs
 weight: 10
 url: /pt/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
 ## Introdução
 
-Você já se perguntou como proteger seus documentos PDF com uma assinatura digital? Bem, você está no lugar certo! As assinaturas digitais são o equivalente moderno das assinaturas manuscritas, oferecendo uma forma de verificar a autenticidade e integridade dos documentos digitais. Neste tutorial, mostraremos como adicionar uma assinatura digital a um PDF usando Aspose.Words for .NET. Abordaremos tudo, desde a configuração do seu ambiente até a execução do código passo a passo. Ao final deste guia, você terá um PDF assinado digitalmente, seguro e confiável.
+Você já se perguntou como proteger seus documentos PDF com uma assinatura digital? Bem, você está no lugar certo! Assinaturas digitais são o equivalente moderno de assinaturas manuscritas, oferecendo uma maneira de verificar a autenticidade e integridade de documentos digitais. Neste tutorial, mostraremos como adicionar uma assinatura digital a um PDF usando o Aspose.Words para .NET. Abordaremos tudo, desde a configuração do seu ambiente até a execução do código passo a passo. Ao final deste guia, você terá um PDF assinado digitalmente, seguro e confiável.
 
 ## Pré-requisitos
 
-Antes de começarmos, existem algumas coisas que você precisará:
+Antes de começar, há algumas coisas que você precisa:
 
-1.  Aspose.Words for .NET: Certifique-se de ter o Aspose.Words for .NET instalado. Você pode baixá-lo no[Aspor site](https://releases.aspose.com/words/net/).
-2. Um arquivo de certificado: você precisará de um arquivo de certificado .pfx para assinar o PDF. Se não tiver um, você poderá criar um certificado autoassinado para fins de teste.
-3. Visual Studio: este tutorial pressupõe que você esteja usando o Visual Studio como ambiente de desenvolvimento.
-4. Conhecimento básico de C#: Familiaridade com programação C# e .NET é essencial.
+1.  Aspose.Words para .NET: Certifique-se de ter o Aspose.Words para .NET instalado. Você pode baixá-lo do[Site Aspose](https://releases.aspose.com/words/net/).
+2. Um arquivo de certificado: você precisará de um arquivo de certificado .pfx para assinar o PDF. Se não tiver um, você pode criar um certificado autoassinado para fins de teste.
+3. Visual Studio: Este tutorial pressupõe que você esteja usando o Visual Studio como seu ambiente de desenvolvimento.
+4. Conhecimento básico de C#: familiaridade com programação em C# e .NET é essencial.
 
 ## Importar namespaces
 
-Primeiro, vamos importar os namespaces necessários. São essenciais para acessar as classes e métodos necessários à manipulação de documentos e assinaturas digitais.
+Primeiro, vamos importar os namespaces necessários. Eles são essenciais para acessar as classes e métodos necessários para manipulação de documentos e assinaturas digitais.
 
 ```csharp
 using Aspose.Words;
@@ -34,11 +34,11 @@ Vamos dividir o processo em etapas simples e gerenciáveis.
 
 ## Etapa 1: configure seu projeto
 
-Crie um novo projeto C# no Visual Studio. Adicione uma referência ao Aspose.Words for .NET. Você pode fazer isso por meio do NuGet Package Manager procurando por “Aspose.Words” e instalando-o.
+Crie um novo projeto C# no Visual Studio. Adicione uma referência a Aspose.Words para .NET. Você pode fazer isso por meio do NuGet Package Manager pesquisando por "Aspose.Words" e instalando-o.
 
-## Etapa 2: carregar ou criar um documento
+## Etapa 2: Carregar ou criar um documento
 
-Você precisará de um documento para assinar. Você pode carregar um documento existente ou criar um novo. Para este tutorial, criaremos um novo documento e adicionaremos um texto de exemplo.
+Você precisará de um documento para assinar. Você pode carregar um documento existente ou criar um novo. Para este tutorial, criaremos um novo documento e adicionaremos algum texto de exemplo.
 
 ```csharp
 // O caminho para o diretório de documentos.
@@ -50,9 +50,9 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Test Signed PDF.");
 ```
 
-## Etapa 3: Especifique os detalhes da assinatura digital
+## Etapa 3: especifique os detalhes da assinatura digital
 
-Agora é hora de configurar os detalhes da assinatura digital. Você precisará especificar o caminho para o arquivo de certificado .pfx, o motivo da assinatura, o local e a data da assinatura.
+Agora, é hora de configurar os detalhes da assinatura digital. Você precisará especificar o caminho para seu arquivo de certificado .pfx, o motivo da assinatura, o local e a data da assinatura.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -65,9 +65,9 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
  Substituir`"your_password"` com a senha do seu arquivo .pfx.
 
-## Etapa 4: salve o documento como PDF assinado digitalmente
+## Etapa 4: Salve o documento como um PDF assinado digitalmente
 
-Por fim, salve o documento como PDF com assinatura digital.
+Por fim, salve o documento como PDF com a assinatura digital.
 
 ```csharp
 doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
@@ -77,21 +77,21 @@ E é isso! Seu documento agora está assinado e salvo como PDF.
 
 ## Conclusão
 
-As assinaturas digitais são uma ferramenta poderosa para garantir a integridade e autenticidade dos seus documentos. Com Aspose.Words for .NET, adicionar uma assinatura digital aos seus arquivos PDF é simples e eficiente. Seguindo este guia passo a passo, você pode proteger seus documentos PDF e proporcionar tranquilidade aos destinatários quanto à sua autenticidade. Boa codificação!
+Assinaturas digitais são uma ferramenta poderosa para garantir a integridade e autenticidade dos seus documentos. Com o Aspose.Words para .NET, adicionar uma assinatura digital aos seus arquivos PDF é simples e eficiente. Seguindo este guia passo a passo, você pode proteger seus documentos PDF e dar tranquilidade aos destinatários quanto à sua autenticidade. Boa codificação!
 
 ## Perguntas frequentes
 
 ### O que é uma assinatura digital?
-Uma assinatura digital é uma forma eletrônica de assinatura que verifica a autenticidade e integridade de um documento digital.
+Uma assinatura digital é uma forma eletrônica de assinatura que verifica a autenticidade e a integridade de um documento digital.
 
 ### Preciso de um certificado para adicionar uma assinatura digital?
 Sim, você precisará de um arquivo de certificado .pfx para adicionar uma assinatura digital ao seu PDF.
 
-### Posso criar um certificado autoassinado para teste?
-Sim, você pode criar um certificado autoassinado para fins de teste. No entanto, para utilização em produção, é recomendado obter um certificado de uma autoridade de certificação confiável.
+### Posso criar um certificado autoassinado para testes?
+Sim, você pode criar um certificado autoassinado para fins de teste. No entanto, para uso em produção, é recomendado obter um certificado de uma autoridade de certificação confiável.
 
 ### O Aspose.Words para .NET é gratuito?
- Aspose.Words for .NET é um produto comercial, mas você pode baixar uma versão de avaliação gratuita no[Aspor site](https://releases.aspose.com/).
+ Aspose.Words para .NET é um produto comercial, mas você pode baixar uma versão de avaliação gratuita em[Site Aspose](https://releases.aspose.com/).
 
 ### Posso usar o Aspose.Words for .NET para assinar outros tipos de documentos?
-Sim, o Aspose.Words for .NET pode ser usado para assinar vários tipos de documentos, não apenas PDFs.
+Sim, o Aspose.Words para .NET pode ser usado para assinar vários tipos de documentos, não apenas PDFs.

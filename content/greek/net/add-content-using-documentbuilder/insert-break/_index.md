@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Βήμα 3: Εκκίνηση του DocumentBuilder
 
- Ο`DocumentBuilder` είναι σαν το πινέλο σου. Σας βοηθά να προσθέσετε περιεχόμενο στο έγγραφό σας. Ας το αρχικοποιήσουμε.
+Ο`DocumentBuilder` είναι σαν το πινέλο σου. Σας βοηθά να προσθέσετε περιεχόμενο στο έγγραφό σας. Ας το αρχικοποιήσουμε.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

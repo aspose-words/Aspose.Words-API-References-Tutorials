@@ -1,19 +1,19 @@
 ---
-title: Połączenie pionowe
-linktitle: Połączenie pionowe
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Opanuj scalanie pionowe w tabelach programu Word przy użyciu Aspose.Words dla .NET dzięki temu szczegółowemu przewodnikowi. Poznaj instrukcje krok po kroku dotyczące profesjonalnego formatowania dokumentów.
+title: Scalanie pionowe
+linktitle: Scalanie pionowe
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Opanuj pionowe scalanie w tabelach Worda przy użyciu Aspose.Words dla .NET dzięki temu szczegółowemu przewodnikowi. Poznaj instrukcje krok po kroku dotyczące profesjonalnego formatowania dokumentów.
 type: docs
 weight: 10
 url: /pl/net/programming-with-tables/vertical-merge/
 ---
 ## Wstęp
 
-Czy kiedykolwiek byłeś zaplątany w zawiłości obsługi tabel w dokumentach programu Word? Dzięki Aspose.Words dla .NET możesz uprościć swoją pracę i sprawić, że Twoje dokumenty będą lepiej zorganizowane i atrakcyjne wizualnie. W tym samouczku omówimy proces pionowego łączenia tabel, co jest przydatną funkcją umożliwiającą łączenie komórek w pionie, tworząc płynny przepływ danych. Niezależnie od tego, czy tworzysz faktury, raporty, czy jakikolwiek dokument zawierający dane tabelaryczne, opanowanie scalania pionowego może przenieść formatowanie dokumentu na wyższy poziom.
+Czy kiedykolwiek znalazłeś się w pułapce zawiłości obsługi tabel w dokumentach Word? Dzięki Aspose.Words dla .NET możesz uprościć swoją pracę i sprawić, że Twoje dokumenty będą bardziej uporządkowane i atrakcyjne wizualnie. W tym samouczku zagłębimy się w proces pionowego scalania w tabelach, co jest przydatną funkcją, która pozwala na pionowe scalanie komórek, tworząc płynny przepływ danych. Niezależnie od tego, czy tworzysz faktury, raporty czy jakikolwiek dokument zawierający dane tabelaryczne, opanowanie pionowego scalania może przenieść formatowanie dokumentów na wyższy poziom.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziemy do sedna łączenia pionowego, upewnijmy się, że wszystko jest skonfigurowane tak, aby zapewnić płynne działanie. Oto, czego będziesz potrzebować:
+Zanim przejdziemy do szczegółów pionowego łączenia, upewnijmy się, że wszystko jest skonfigurowane, aby zapewnić płynne działanie. Oto, czego będziesz potrzebować:
 
 -  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli nie, możesz go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: działające środowisko programistyczne, takie jak Visual Studio.
@@ -21,18 +21,18 @@ Zanim przejdziemy do sedna łączenia pionowego, upewnijmy się, że wszystko je
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć pracę z Aspose.Words, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu. Można to zrobić, dodając następujące linie na początku kodu:
+Aby rozpocząć pracę z Aspose.Words, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu. Możesz to zrobić, dodając następujące wiersze na początku swojego kodu:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Teraz, gdy mamy już przygotowane wymagania wstępne i zaimportowane przestrzenie nazw, przejdźmy do przewodnika krok po kroku dotyczącego scalania pionowego.
+Teraz, gdy spełniliśmy już wszystkie wymagania wstępne i zaimportowaliśmy przestrzenie nazw, możemy przejść do przewodnika krok po kroku dotyczącego scalania pionowego.
 
 ## Krok 1: Konfigurowanie dokumentu
 
-Pierwszym krokiem jest skonfigurowanie nowego dokumentu i kreatora dokumentów. Kreator dokumentów pomoże nam w łatwym dodawaniu i manipulowaniu elementami w dokumencie.
+Pierwszym krokiem jest skonfigurowanie nowego dokumentu i konstruktora dokumentów. Konstruktor dokumentów pomoże nam łatwo dodawać i manipulować elementami w dokumencie.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -42,11 +42,11 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Tutaj tworzymy nowy dokument i inicjujemy obiekt DocumentBuilder do pracy z naszym dokumentem.
+Tutaj tworzymy nowy dokument i inicjujemy obiekt DocumentBuilder, aby pracować z naszym dokumentem.
 
 ## Krok 2: Wstawianie pierwszej komórki
 
-Teraz wstawmy pierwszą komórkę do naszej tabeli i ustawmy jej pionowe scalanie na pierwszą komórkę w scalonym zakresie.
+Teraz wstawmy pierwszą komórkę do naszej tabeli i ustawmy jej scalenie pionowe na pierwszej komórce w scalonym zakresie.
 
 ```csharp
 builder.InsertCell();
@@ -54,11 +54,11 @@ builder.CellFormat.VerticalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
 ```
 
- W tym kroku wstawiamy pierwszą komórkę i ustawiamy jej właściwość scalania w pionie na`CellMerge.First`, wskazując, że jest to komórka początkowa scalania. Następnie dodajemy tekst do tej komórki.
+ W tym kroku wstawiamy pierwszą komórkę i ustawiamy jej właściwość scalania pionowego na`CellMerge.First`, wskazując, że jest to początkowa komórka scalenia. Następnie dodajemy do tej komórki trochę tekstu.
 
-## Krok 3: Wstawianie drugiej komórki w tym samym rzędzie
+## Krok 3: Wstawianie drugiej komórki w tym samym wierszu
 
-Następnie wstawiamy kolejną komórkę w tym samym wierszu, ale nie łączymy jej w pionie.
+Następnie wstawiamy inną komórkę do tego samego wiersza, ale nie łączymy jej w pionie.
 
 ```csharp
 builder.InsertCell();
@@ -67,15 +67,15 @@ builder.Write("Text in one cell");
 builder.EndRow();
 ```
 
- Tutaj wstawiamy komórkę i ustawiamy jej właściwość scalania w pionie na`CellMerge.None`i dodaj do niego jakiś tekst. Następnie kończymy bieżący rząd.
+ Tutaj wstawiamy komórkę i ustawiamy jej właściwość scalania pionowego na`CellMerge.None`i dodajemy do niego trochę tekstu. Następnie kończymy bieżący wiersz.
 
 ## Krok 4: Wstawianie drugiego rzędu i łączenie w pionie
 
-Na tym etapie wstawiamy drugi wiersz i łączymy pionowo pierwszą komórkę z komórką znajdującą się nad nią.
+W tym kroku wstawiamy drugi wiersz i łączymy pierwszą komórkę w pionie z komórką powyżej.
 
 ```csharp
 builder.InsertCell();
-// Ta komórka jest pionowo scalona z komórką powyżej i powinna być pusta.
+// Ta komórka jest połączona pionowo z komórką powyżej i powinna być pusta.
 builder.CellFormat.VerticalMerge = CellMerge.Previous;
 builder.InsertCell();
 builder.CellFormat.VerticalMerge = CellMerge.None;
@@ -84,35 +84,35 @@ builder.EndRow();
 builder.EndTable();
 ```
 
- Zaczynamy od wstawienia komórki i ustawienia jej właściwości scalania w pionie na`CellMerge.Previous`, wskazując, że należy go połączyć z komórką znajdującą się nad nim. Następnie wstawiamy kolejną komórkę w tym samym wierszu, dodajemy do niej tekst i kończymy tabelę.
+ Zaczynamy od wstawienia komórki i ustawienia jej właściwości scalania pionowego na`CellMerge.Previous`, wskazując, że należy ją połączyć z komórką nad nią. Następnie wstawiamy inną komórkę w tym samym wierszu, dodajemy do niej tekst i kończymy tabelę.
 
 ## Krok 5: Zapisywanie dokumentu
 
-Na koniec zapisujemy nasz dokument we wskazanym katalogu.
+Na koniec zapisujemy nasz dokument w podanym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 ```
 
-Ta linia zapisuje dokument pod określoną nazwą w wyznaczonym katalogu.
+Ten wiersz zapisuje dokument pod określoną nazwą pliku w wyznaczonym katalogu.
 
 ## Wniosek
 
-masz to! Wykonując te kroki, pomyślnie zaimplementowałeś scalanie pionowe w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta funkcja może znacznie poprawić czytelność i organizację dokumentów, czyniąc je bardziej profesjonalnymi i łatwiejszymi w nawigacji. Niezależnie od tego, czy masz do czynienia z prostymi tabelami, czy złożonymi strukturami danych, opanowanie scalania pionowego zapewni Ci przewagę w formatowaniu dokumentów.
+masz to! Postępując zgodnie z tymi krokami, udało Ci się pomyślnie wdrożyć scalanie pionowe w dokumencie Word przy użyciu Aspose.Words dla .NET. Ta funkcja może znacznie poprawić czytelność i organizację Twoich dokumentów, czyniąc je bardziej profesjonalnymi i łatwiejszymi w nawigacji. Niezależnie od tego, czy masz do czynienia z prostymi tabelami, czy złożonymi strukturami danych, opanowanie scalania pionowego da Ci przewagę w formatowaniu dokumentów.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest scalanie pionowe w tabelach programu Word?
-Scalanie pionowe umożliwia połączenie wielu komórek w kolumnie w jedną komórkę, tworząc bardziej usprawniony i zorganizowany układ tabeli.
+### Na czym polega scalanie pionowe w tabelach programu Word?
+Scalanie pionowe umożliwia scalenie wielu komórek w kolumnie w jedną komórkę, dzięki czemu układ tabeli staje się bardziej uporządkowany i przejrzysty.
 
-### Czy mogę scalić komórki zarówno w pionie, jak i w poziomie?
-Tak, Aspose.Words dla .NET obsługuje zarówno pionowe, jak i poziome łączenie komórek w tabeli.
+### Czy mogę scalać komórki zarówno w pionie, jak i w poziomie?
+Tak, Aspose.Words dla platformy .NET obsługuje zarówno pionowe, jak i poziome scalanie komórek w tabeli.
 
 ### Czy Aspose.Words dla .NET jest kompatybilny z różnymi wersjami programu Word?
-Tak, Aspose.Words dla .NET jest kompatybilny z różnymi wersjami Microsoft Word, zapewniając płynną pracę dokumentów na różnych platformach.
+Tak, Aspose.Words for .NET jest kompatybilny z różnymi wersjami programu Microsoft Word, co gwarantuje, że Twoje dokumenty będą działać bezproblemowo na różnych platformach.
 
-### Czy muszę mieć zainstalowany program Microsoft Word, aby korzystać z Aspose.Words dla .NET?
-Nie, Aspose.Words dla .NET działa niezależnie od Microsoft Word. Nie potrzebujesz programu Word zainstalowanego na swoim komputerze, aby tworzyć dokumenty Word lub manipulować nimi.
+### Czy muszę mieć zainstalowany program Microsoft Word, aby korzystać z Aspose.Words dla platformy .NET?
+Nie, Aspose.Words dla .NET działa niezależnie od Microsoft Word. Nie musisz mieć zainstalowanego Worda na swoim komputerze, aby tworzyć lub manipulować dokumentami Word.
 
-### Czy mogę używać Aspose.Words dla .NET do manipulowania istniejącymi dokumentami programu Word?
-Absolutnie! Aspose.Words dla .NET umożliwia łatwe tworzenie, modyfikowanie i zarządzanie istniejącymi dokumentami programu Word.
+### Czy mogę używać Aspose.Words dla .NET do manipulowania istniejącymi dokumentami Word?
+Oczywiście! Aspose.Words dla .NET pozwala na łatwe tworzenie, modyfikowanie i zarządzanie istniejącymi dokumentami Word.

@@ -1,287 +1,188 @@
 ---
-title: Memformat Tabel dan Gaya Tabel di Aspose.Words untuk Java
+title: Memformat Tabel dan Gaya Tabel
 linktitle: Memformat Tabel dan Gaya Tabel
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara memformat tabel dan menerapkan gaya tabel di Aspose.Words untuk Java. Jelajahi panduan langkah demi langkah dengan kode sumber untuk pemformatan tabel yang efektif. Sempurnakan tata letak dokumen Anda dengan Aspose.Words.
+description: Pelajari cara memformat tabel dan menerapkan gaya menggunakan Aspose.Words untuk Java. Panduan langkah demi langkah ini mencakup pengaturan batas, pewarnaan sel, dan penerapan gaya tabel.
 type: docs
 weight: 17
 url: /id/java/document-conversion-and-export/formatting-tables-and-table-styles/
 ---
 
-## Pengantar Pemformatan Tabel dan Gaya Tabel di Aspose.Words untuk Java
+## Perkenalan
 
-Tabel memainkan peran penting dalam penataan dan pengorganisasian informasi dalam dokumen. Aspose.Words untuk Java menyediakan fitur canggih untuk memformat tabel dan menerapkan gaya tabel untuk meningkatkan daya tarik visual dokumen Anda. Dalam panduan langkah demi langkah ini, kita akan menjelajahi berbagai aspek pemformatan tabel dan penerapan gaya tabel menggunakan Aspose.Words untuk Java.
+Dalam hal pemformatan dokumen, tabel memainkan peran penting dalam mengatur dan menyajikan data dengan jelas. Jika Anda bekerja dengan Java dan Aspose.Words, Anda memiliki alat yang hebat untuk membuat dan memformat tabel dalam dokumen Anda. Baik Anda mendesain tabel sederhana atau menerapkan gaya tingkat lanjut, Aspose.Words untuk Java menawarkan berbagai fitur untuk membantu Anda mencapai hasil yang tampak profesional.
+
+Dalam panduan ini, kami akan memandu Anda melalui proses pemformatan tabel dan penerapan gaya tabel menggunakan Aspose.Words untuk Java. Anda akan mempelajari cara mengatur batas tabel, menerapkan bayangan sel, dan menggunakan gaya tabel untuk menyempurnakan tampilan dokumen Anda. Pada akhirnya, Anda akan memiliki keterampilan untuk membuat tabel yang diformat dengan baik yang membuat data Anda menonjol.
 
 ## Prasyarat
 
-Sebelum kita mendalami detailnya, pastikan Anda memiliki perpustakaan Aspose.Words untuk Java yang terintegrasi ke dalam proyek Anda. Anda dapat mengunduhnya dari situs web Aspose:[Unduh Aspose.Words untuk Java](https://releases.aspose.com/words/java/).
+Sebelum kita memulai, ada beberapa hal yang perlu Anda siapkan:
 
-## Dapatkan Jarak Antara Tabel dan Teks Sekitarnya
+1. Java Development Kit (JDK): Pastikan Anda telah menginstal JDK 8 atau yang lebih baru. Aspose.Words untuk Java memerlukan JDK yang kompatibel agar dapat berjalan dengan benar.
+2. Lingkungan Pengembangan Terpadu (IDE): IDE seperti IntelliJ IDEA atau Eclipse akan membantu Anda mengelola proyek Java dan menyederhanakan proses pengembangan Anda.
+3.  Pustaka Aspose.Words untuk Java: Unduh versi terbaru Aspose.Words untuk Java[Di Sini](https://releases.aspose.com/words/java/) dan memasukkannya ke dalam proyek Anda.
+4. Contoh Kode: Kami akan menggunakan beberapa cuplikan kode contoh, jadi pastikan Anda memiliki pemahaman dasar tentang pemrograman Java dan cara mengintegrasikan pustaka ke dalam proyek Anda.
 
-Untuk memulai, mari kita jelajahi cara mengambil jarak antara tabel dan teks di sekitarnya dalam dokumen.
+## Paket Impor
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-System.out.println("Distance Top: " + table.getDistanceTop());
-System.out.println("Distance Bottom: " + table.getDistanceBottom());
-System.out.println("Distance Right: " + table.getDistanceRight());
-System.out.println("Distance Left: " + table.getDistanceLeft());
-```
-
-## Terapkan Garis Batas pada Tabel
-
-Anda dapat menyelaraskan tabel ke tengah halaman, menghapus batas yang ada, dan menetapkan batas kerangka khusus dengan kode ini:
+Untuk bekerja dengan Aspose.Words untuk Java, Anda perlu mengimpor paket yang relevan ke dalam proyek Anda. Paket-paket ini menyediakan kelas dan metode yang diperlukan untuk memanipulasi dan memformat dokumen.
 
 ```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAlignment(TableAlignment.CENTER);
-table.clearBorders();
-table.setBorder(BorderType.LEFT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.RIGHT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.TOP, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
+import com.aspose.words.*;
 ```
 
-## Bangun Tabel dengan Batas
+Pernyataan impor ini memberi Anda akses ke semua kelas penting yang diperlukan untuk membuat dan memformat tabel dalam dokumen Anda.
 
-Cuplikan kode ini menunjukkan cara membuat tabel dan menetapkan batas untuk tabel dan selnya:
+## Langkah 1: Memformat Tabel
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.clearBorders();
-table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
-```
+Memformat tabel di Aspose.Words untuk Java melibatkan pengaturan batas, pewarnaan sel, dan penerapan berbagai opsi pemformatan. Berikut cara melakukannya:
 
-## Ubah Pemformatan Baris
-
-Pelajari cara mengubah format baris tertentu dalam tabel:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Row firstRow = table.getFirstRow();
-firstRow.getRowFormat().getBorders().setLineStyle(LineStyle.NONE);
-firstRow.getRowFormat().setHeightRule(HeightRule.AUTO);
-firstRow.getRowFormat().setAllowBreakAcrossPages(true);
-```
-
-## Terapkan Pemformatan Baris
-
-Contoh ini menunjukkan cara menerapkan pemformatan ke seluruh baris dalam tabel:
+### Muat Dokumen
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+### Membuat dan Memformat Tabel
+
+```java
 Table table = builder.startTable();
 builder.insertCell();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
 
-## Atur Bantalan Sel
-
-Jelajahi cara mengatur padding untuk masing-masing sel dalam tabel:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
-builder.insertCell();
-builder.getCellFormat().setPaddings(30.0, 50.0, 30.0, 50.0);
-builder.writeln("I'm a wonderfully formatted cell.");
-```
-
-## Ubah Pemformatan Sel
-
-Temukan cara mengubah format sel tertentu dalam tabel:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-firstCell.getCellFormat().setWidth(30.0);
-firstCell.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
-firstCell.getCellFormat().getShading().setForegroundPatternColor(Color.GREEN);
-```
-
-## Format Tabel dan Sel dengan Batas Berbeda
-
-Pelajari cara menetapkan batas berbeda untuk masing-masing sel dalam tabel:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-// Tetapkan batas tabel
+// Tetapkan batas untuk seluruh tabel.
 table.setBorders(LineStyle.SINGLE, 2.0, Color.BLACK);
-// Atur bayangan sel untuk masing-masing sel
+        
+// Atur bayangan sel untuk sel ini.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.RED);
-// Tambahkan konten ke sel
 builder.writeln("Cell #1");
+
 builder.insertCell();
+        
+// Tentukan bayangan sel yang berbeda untuk sel kedua.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.GREEN);
 builder.writeln("Cell #2");
-// Hapus pemformatan sel untuk baris berikutnya
+
+builder.endRow();
+```
+
+### Sesuaikan Batas Sel
+
+```java
+// Hapus pemformatan sel dari operasi sebelumnya.
 builder.getCellFormat().clearFormatting();
-// Buat batas yang lebih besar untuk sel pertama baris ini
+
+builder.insertCell();
+
+//Buat batas yang lebih besar untuk sel pertama baris ini.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getBottom().setLineWidth(4.0);
 builder.writeln("Cell #3");
+
 builder.insertCell();
 builder.getCellFormat().clearFormatting();
 builder.writeln("Cell #4");
+        
+doc.save("FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-## Tetapkan Judul dan Deskripsi Tabel
+### Penjelasan
 
-Tambahkan judul dan deskripsi ke tabel Anda:
+Dalam contoh ini:
+- Tetapkan Batas: Kami menetapkan batas seluruh tabel ke gaya garis tunggal dengan ketebalan 2,0 poin.
+- Cell Shading: Sel pertama diarsir merah, dan sel kedua diarsir hijau. Ini membantu membedakan antarsel secara visual.
+- Batas Sel: Untuk sel ketiga, kita membuat batas yang lebih tebal untuk menyorotnya secara berbeda dari yang lain.
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setTitle("Test title");
-table.setDescription("Test description");
-```
+## Langkah 2: Menerapkan Gaya Tabel
 
-## Langkah 10: Izinkan Spasi Sel
+Gaya tabel di Aspose.Words untuk Java memungkinkan Anda menerapkan opsi pemformatan yang telah ditetapkan sebelumnya ke tabel, sehingga lebih mudah untuk mendapatkan tampilan yang konsisten. Berikut cara menerapkan gaya ke tabel Anda:
 
-Izinkan spasi sel dan tetapkan nilainya untuk tabel:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAllowCellSpacing(true);
-table.setCellSpacing(2.0);
-```
-
-## Langkah 11: Bangun Tabel dengan Gaya
-
-Buat tabel dengan gaya yang telah ditentukan sebelumnya:
+### Buat Dokumen dan Tabel
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
 Table table = builder.startTable();
+        
+// Kita harus menyisipkan setidaknya satu baris terlebih dahulu sebelum mengatur format tabel apa pun.
+builder.insertCell();
+```
+
+### Terapkan Gaya Tabel
+
+```java
+// Tetapkan gaya tabel berdasarkan pengenal gaya yang unik.
 table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
+        
+// Terapkan fitur mana yang harus diformat berdasarkan gaya.
 table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
+table.autoFit(AutoFitBehavior.AUTO_FIT_TO_CONTENTS);
+```
+
+### Tambahkan Data Tabel
+
+```java
 builder.writeln("Item");
 builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
 builder.writeln("Quantity (kg)");
-```
+builder.endRow();
 
-## Langkah 12: Perluas Pemformatan pada Sel dan Baris dari Gaya
-
-Pelajari cara memperluas gaya tabel untuk menerapkan pemformatan ke sel dan baris:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-Color cellShadingBefore = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-doc.expandTableStylesToDirectFormatting();
-Color cellShadingAfter = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-```
-
-## Langkah 13: Buat Gaya Tabel
-
-Buat gaya tabel khusus dengan format tertentu:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
-table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
-builder.writeln("Item");
-builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
-builder.writeln("Quantity (kg)");
-```
-
-## Langkah 14: Tentukan Pemformatan Bersyarat
-
-Menerapkan pemformatan bersyarat ke baris dalam tabel:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-TableStyle tableStyle = (TableStyle) doc.getStyles().add(StyleType.TABLE, "MyTableStyle1");
-tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatternColor(Color.yellow);
-table.setStyle(tableStyle);
-```
-
-## Langkah 15: Atur Pemformatan TableCell
-
-Tetapkan pemformatan spesifik untuk sel individual:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
+builder.writeln("Apples");
 builder.insertCell();
-CellFormat cellFormat = builder.getCellFormat();
-cellFormat.setWidth(250.0);
-cellFormat.setLeftPadding(30.0);
-cellFormat.setRightPadding(30.0);
-cellFormat.setTopPadding(30.0);
-cellFormat.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted cell.");
+builder.writeln("20");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Bananas");
+builder.insertCell();
+builder.writeln("40");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Carrots");
+builder.insertCell();
+builder.writeln("50");
+builder.endRow();
+
+doc.save("BuildTableWithStyle.docx");
 ```
 
-## Langkah 16: Atur Pemformatan TableRow
+### Penjelasan
 
-Menerapkan pemformatan ke seluruh baris dalam tabel:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
+Dalam contoh ini:
+- Atur Gaya Tabel: Kami menerapkan gaya yang telah ditentukan sebelumnya (`MEDIUM_SHADING_1_ACCENT_1`) ke tabel. Gaya ini mencakup pemformatan untuk berbagai bagian tabel.
+- Opsi Gaya: Kami menentukan bahwa kolom pertama, pita baris, dan baris pertama harus diformat sesuai dengan opsi gaya.
+-  AutoFit: Kami menggunakan`AUTO_FIT_TO_CONTENTS` untuk memastikan tabel menyesuaikan ukurannya berdasarkan konten.
 
 ## Kesimpulan
 
-Aspose.Words untuk Java memberdayakan Anda untuk memformat tabel dan menerapkan gaya tabel dengan presisi. Dari memodifikasi pemformatan sel individual hingga membuat gaya tabel khusus, Anda memiliki alat untuk membuat dokumen Anda menarik dan terorganisir secara visual.
+Nah, itu dia! Anda telah berhasil memformat tabel dan menerapkan gaya menggunakan Aspose.Words untuk Java. Dengan teknik ini, Anda dapat membuat tabel yang tidak hanya fungsional tetapi juga menarik secara visual. Memformat tabel secara efektif dapat meningkatkan keterbacaan dan tampilan profesional dokumen Anda.
 
-## FAQ
+Aspose.Words untuk Java adalah alat tangguh yang menawarkan fitur lengkap untuk manipulasi dokumen. Dengan menguasai format dan gaya tabel, Anda selangkah lebih dekat untuk memanfaatkan sepenuhnya kekuatan pustaka ini.
 
-### Bagaimana cara mengunduh Aspose.Words untuk Java?
+## Tanya Jawab Umum
 
- Anda dapat mengunduh Aspose.Words untuk Java dari situs web Aspose:[Unduh Aspose.Words untuk Java](https://releases.aspose.com/words/java/).
+### 1. Dapatkah saya menggunakan gaya tabel khusus yang tidak termasuk dalam opsi default?
 
-### Bisakah saya menerapkan batas berbeda ke masing-masing sel dalam tabel?
+Ya, Anda dapat menentukan dan menerapkan gaya khusus ke tabel Anda menggunakan Aspose.Words untuk Java. Periksa[dokumentasi](https://reference.aspose.com/words/java/) untuk detail lebih lanjut tentang pembuatan gaya khusus.
 
-Ya, Anda dapat mengatur batas berbeda untuk masing-masing sel dalam tabel menggunakan Aspose.Words untuk Java, seperti yang ditunjukkan dalam panduan ini.
+### 2. Bagaimana cara menerapkan pemformatan bersyarat pada tabel?
 
-### Apa tujuan menetapkan judul dan deskripsi tabel?
+Aspose.Words untuk Java memungkinkan Anda menyesuaikan format tabel secara terprogram berdasarkan kondisi. Hal ini dapat dilakukan dengan memeriksa kriteria tertentu dalam kode Anda dan menerapkan format yang sesuai.
 
-Menetapkan judul dan deskripsi tabel akan meningkatkan aksesibilitas dan pengorganisasian dokumen Anda, sehingga memudahkan pembaca dan teknologi pendukung untuk memahami konten.
+### 3. Dapatkah saya memformat sel yang digabungkan dalam tabel?
 
-### Bagaimana cara menerapkan pemformatan bersyarat ke baris tertentu dalam tabel?
+Ya, Anda dapat memformat sel yang digabungkan seperti sel biasa. Pastikan Anda menerapkan pemformatan setelah menggabungkan sel untuk melihat perubahan yang terjadi.
 
-Anda bisa menerapkan pemformatan bersyarat ke baris tertentu dalam tabel dengan menentukan gaya tabel khusus dengan aturan pemformatan bersyarat, seperti yang diperlihatkan dalam panduan ini.
+### 4. Apakah mungkin untuk menyesuaikan tata letak tabel secara dinamis?
 
-### Di mana saya dapat menemukan lebih banyak dokumentasi dan sumber daya untuk Aspose.Words untuk Java?
+Ya, Anda dapat menyesuaikan tata letak tabel secara dinamis dengan memodifikasi ukuran sel, lebar tabel, dan properti lainnya berdasarkan konten atau masukan pengguna.
 
- Untuk dokumentasi komprehensif dan sumber daya tambahan, silakan kunjungi dokumentasi Aspose.Words untuk Java:[Aspose.Words untuk Dokumentasi Java](https://reference.aspose.com/words/java/).
+### 5. Di mana saya bisa mendapatkan informasi lebih lanjut tentang pemformatan tabel?
+
+ Untuk contoh dan pilihan yang lebih rinci, kunjungi[Dokumentasi API Aspose.Words](https://reference.aspose.com/words/java/).

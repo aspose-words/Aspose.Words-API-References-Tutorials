@@ -9,19 +9,19 @@ url: /id/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 ## Perkenalan
 
-Dalam bidang pemrosesan dokumen dengan aplikasi .NET, Aspose.Words berdiri sebagai solusi tangguh untuk memanipulasi dokumen Word secara terprogram. Salah satu fitur utamanya adalah kemampuan menyisipkan gambar sebaris dengan mudah, meningkatkan daya tarik visual dan fungsionalitas dokumen Anda. Tutorial ini mendalami bagaimana Anda dapat memanfaatkan Aspose.Words untuk .NET untuk menyematkan gambar dengan lancar dalam dokumen Word Anda.
+Dalam ranah pemrosesan dokumen dengan aplikasi .NET, Aspose.Words berdiri kokoh sebagai solusi yang tangguh untuk memanipulasi dokumen Word secara terprogram. Salah satu fitur utamanya adalah kemampuan untuk menyisipkan gambar sebaris dengan mudah, yang meningkatkan daya tarik visual dan fungsionalitas dokumen Anda. Tutorial ini membahas secara mendalam cara memanfaatkan Aspose.Words untuk .NET guna menyematkan gambar dengan lancar dalam dokumen Word Anda.
 
 ## Prasyarat
 
-Sebelum mempelajari proses menyisipkan gambar sebaris menggunakan Aspose.Words untuk .NET, pastikan Anda memiliki prasyarat berikut:
+Sebelum mempelajari proses penyisipan gambar sebaris menggunakan Aspose.Words untuk .NET, pastikan Anda memiliki prasyarat berikut:
 
-1. Lingkungan Visual Studio: Telah menginstal Visual Studio dan siap untuk membuat dan mengkompilasi aplikasi .NET.
-2.  Aspose.Words for .NET Library: Unduh dan instal perpustakaan Aspose.Words for .NET dari[Di Sini](https://releases.aspose.com/words/net/).
+1. Lingkungan Visual Studio: Miliki Visual Studio yang terinstal dan siap untuk membuat dan mengompilasi aplikasi .NET.
+2.  Pustaka Aspose.Words untuk .NET: Unduh dan instal pustaka Aspose.Words untuk .NET dari[Di Sini](https://releases.aspose.com/words/net/).
 3. Pemahaman Dasar C#: Keakraban dengan dasar-dasar bahasa pemrograman C# akan bermanfaat untuk mengimplementasikan cuplikan kode.
 
-Sekarang, mari ikuti langkah-langkah untuk mengimpor namespace yang diperlukan dan menyisipkan gambar sebaris menggunakan Aspose.Words untuk .NET.
+Sekarang, mari kita telusuri langkah-langkah untuk mengimpor namespace yang diperlukan dan menyisipkan gambar sebaris menggunakan Aspose.Words untuk .NET.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Pertama, Anda perlu mengimpor namespace yang diperlukan ke dalam kode C# Anda untuk mengakses fungsionalitas Aspose.Words untuk .NET:
 
@@ -30,11 +30,11 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Namespace ini menyediakan akses ke kelas dan metode yang diperlukan untuk memanipulasi dokumen Word dan menangani gambar.
+Ruang nama ini menyediakan akses ke kelas dan metode yang diperlukan untuk memanipulasi dokumen Word dan menangani gambar.
 
 ## Langkah 1: Buat Dokumen Baru
 
- Mulailah dengan menginisialisasi instance baru dari`Document` kelas dan a`DocumentBuilder` untuk memudahkan pembuatan dokumen.
+ Mulailah dengan menginisialisasi instance baru dari`Document` kelas dan a`DocumentBuilder` untuk memfasilitasi konstruksi dokumen.
 
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
@@ -42,20 +42,20 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Sisipkan Gambar Sebaris
+## Langkah 2: Masukkan Gambar Sebaris
 
- Gunakan`InsertImage` metode`DocumentBuilder` kelas untuk menyisipkan gambar ke dalam dokumen pada posisi saat ini.
+ Gunakan`InsertImage` metode dari`DocumentBuilder` kelas untuk menyisipkan gambar ke dalam dokumen pada posisi saat ini.
 
 ```csharp
 string imagePath = "PATH_TO_YOUR_IMAGE_FILE";
 builder.InsertImage(imagePath);
 ```
 
- Mengganti`"PATH_TO_YOUR_IMAGE_FILE"` dengan jalur sebenarnya ke file gambar Anda. Metode ini mengintegrasikan gambar ke dalam dokumen dengan mulus.
+ Mengganti`"PATH_TO_YOUR_IMAGE_FILE"` dengan jalur sebenarnya ke berkas gambar Anda. Metode ini mengintegrasikan gambar ke dalam dokumen secara mulus.
 
 ## Langkah 3: Simpan Dokumen
 
- Terakhir, simpan dokumen ke lokasi yang Anda inginkan menggunakan`Save` metode`Document` kelas.
+ Terakhir, simpan dokumen ke lokasi yang Anda inginkan menggunakan`Save` metode dari`Document` kelas.
 
 ```csharp
 doc.Save(dataDir + "InsertInlineImage.docx");
@@ -65,14 +65,14 @@ Langkah ini memastikan bahwa dokumen yang berisi gambar sebaris disimpan dengan 
 
 ## Kesimpulan
 
-Kesimpulannya, mengintegrasikan gambar sebaris ke dalam dokumen Word menggunakan Aspose.Words untuk .NET adalah proses langsung yang meningkatkan visualisasi dan fungsionalitas dokumen. Dengan mengikuti langkah-langkah yang diuraikan di atas, Anda dapat memanipulasi gambar dalam dokumen Anda secara terprogram secara efisien, memanfaatkan kekuatan Aspose.Words.
+Kesimpulannya, mengintegrasikan gambar sebaris ke dalam dokumen Word menggunakan Aspose.Words untuk .NET merupakan proses mudah yang meningkatkan visualisasi dan fungsionalitas dokumen. Dengan mengikuti langkah-langkah yang diuraikan di atas, Anda dapat memanipulasi gambar secara efisien dalam dokumen Anda secara terprogram, memanfaatkan kekuatan Aspose.Words.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya menyisipkan banyak gambar ke dalam satu dokumen Word menggunakan Aspose.Words untuk .NET?
- Ya, Anda dapat menyisipkan banyak gambar dengan mengulangi file gambar Anda dan menelepon`builder.InsertImage` untuk setiap gambar.
+### Bisakah saya menyisipkan beberapa gambar ke dalam satu dokumen Word menggunakan Aspose.Words untuk .NET?
+ Ya, Anda dapat memasukkan beberapa gambar dengan mengulangi file gambar Anda dan memanggil`builder.InsertImage` untuk setiap gambar.
 
-### Apakah Aspose.Words for .NET mendukung penyisipan gambar dengan latar belakang transparan?
+### Apakah Aspose.Words untuk .NET mendukung penyisipan gambar dengan latar belakang transparan?
 Ya, Aspose.Words untuk .NET mendukung penyisipan gambar dengan latar belakang transparan, menjaga transparansi gambar dalam dokumen.
 
 ### Bagaimana cara mengubah ukuran gambar sebaris yang disisipkan menggunakan Aspose.Words untuk .NET?
@@ -81,5 +81,5 @@ Ya, Aspose.Words untuk .NET mendukung penyisipan gambar dengan latar belakang tr
 ### Apakah mungkin untuk memposisikan gambar sebaris di lokasi tertentu dalam dokumen menggunakan Aspose.Words untuk .NET?
  Ya, Anda dapat menentukan posisi gambar sebaris menggunakan posisi kursor pembuat dokumen sebelum memanggil`builder.InsertImage`.
 
-### Bisakah saya menyematkan gambar dari URL ke dalam dokumen Word menggunakan Aspose.Words untuk .NET?
-Ya, Anda dapat mengunduh gambar dari URL menggunakan pustaka .NET lalu menyisipkannya ke dalam dokumen Word menggunakan Aspose.Words untuk .NET.
+### Dapatkah saya menyematkan gambar dari URL ke dalam dokumen Word menggunakan Aspose.Words untuk .NET?
+Ya, Anda dapat mengunduh gambar dari URL menggunakan pustaka .NET lalu memasukkannya ke dalam dokumen Word menggunakan Aspose.Words untuk .NET.

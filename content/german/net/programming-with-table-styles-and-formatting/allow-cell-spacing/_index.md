@@ -39,7 +39,7 @@ Lassen Sie uns zunächst Ihr Projekt in Visual Studio einrichten.
 
 ### Schritt 1.1: Neues Projekt erstellen
 
-Öffnen Sie Visual Studio und erstellen Sie eine neue C#-Konsolenanwendung. Nennen Sie sie beispielsweise „TableCellSpacingDemo“.
+Öffnen Sie Visual Studio und erstellen Sie eine neue C#-Konsolenanwendung. Nennen Sie sie etwa „TableCellSpacingDemo“.
 
 ### Schritt 1.2: Aspose.Words für .NET hinzufügen
 
@@ -51,7 +51,7 @@ Als Nächstes müssen wir das Word-Dokument laden, das die Tabelle enthält, die
 
 ### Schritt 2.1: Definieren Sie das Dokumentverzeichnis
 
-Legen Sie zunächst den Pfad zu Ihrem Dokumentverzeichnis fest. Dort befindet sich Ihr Word-Dokument.
+Legen Sie zunächst den Pfad zu Ihrem Dokumentverzeichnis fest. Hier liegt Ihr Word-Dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -75,7 +75,7 @@ Rufen Sie die Tabelle aus dem Dokument ab. Wir gehen davon aus, dass es sich um 
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Schritt 4: Aktivieren des Zellenabstands
+## Schritt 4: Aktivieren des Zellabstands
 
 Aktivieren wir nun den Zellenabstand für die Tabelle.
 
@@ -97,7 +97,7 @@ table.CellSpacing = 2;
 
 ## Schritt 5: Speichern des geänderten Dokuments
 
-Speichern Sie abschließend das geänderte Dokument in dem von Ihnen angegebenen Verzeichnis.
+Speichern Sie abschließend das geänderte Dokument in Ihrem angegebenen Verzeichnis.
 
  Verwenden Sie die`Save` Methode zum Speichern Ihres Dokuments.
 

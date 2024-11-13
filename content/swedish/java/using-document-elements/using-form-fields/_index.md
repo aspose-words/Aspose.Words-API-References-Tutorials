@@ -48,7 +48,7 @@ public void formFieldsWorkWithProperties() throws Exception {
 }
 ```
 
-## 6. Öppna formulärfältsamling
+## 6. Öppna formulärfältsamlingen
 För att arbeta med formulärfält effektivt kan du komma åt samlingen av formulärfält i ett dokument:
 
 ```java

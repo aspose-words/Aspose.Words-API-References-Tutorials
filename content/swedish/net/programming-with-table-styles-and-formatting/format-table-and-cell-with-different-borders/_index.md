@@ -144,4 +144,4 @@ Och där har du det! Du har precis lärt dig hur du formaterar tabeller och cell
 Även om Aspose.Words inte direkt stöder bilder som cellbakgrunder, kan du infoga en bild i en cell och justera dess storlek för att täcka cellområdet.
 
 ### Hur slår jag ihop celler i en tabell?
- Du kan slå samman celler med hjälp av`CellFormat.HorizontalMerge`och`CellFormat.VerticalMerge` fastigheter.
+ Du kan slå samman celler med hjälp av`CellFormat.HorizontalMerge` och`CellFormat.VerticalMerge` fastigheter.

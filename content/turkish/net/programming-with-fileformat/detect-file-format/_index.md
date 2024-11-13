@@ -1,23 +1,23 @@
 ---
-title: Belge Dosya Formatını Algıla
-linktitle: Belge Dosya Formatını Algıla
+title: Belge Dosya Biçimini Algıla
+linktitle: Belge Dosya Biçimini Algıla
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu kapsamlı, adım adım kılavuzla Aspose.Words for .NET kullanarak belge dosya formatlarını nasıl tespit edeceğinizi öğrenin.
+description: Bu kapsamlı, adım adım kılavuzla Aspose.Words for .NET'i kullanarak belge dosya biçimlerini nasıl algılayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-fileformat/detect-file-format/
 ---
 ## giriiş
 
-Günümüzün dijital dünyasında, farklı belge formatlarını verimli bir şekilde yönetmek çok önemlidir. İster Word, PDF, HTML veya diğer formatları kullanıyor olun, bu dosyaları doğru bir şekilde algılayıp işleyebilmek size çok fazla zaman ve emek tasarrufu sağlayabilir. Bu eğitimde Aspose.Words for .NET kullanarak belge dosya formatlarının nasıl tespit edileceğini inceleyeceğiz. Bu kılavuz, ön koşullardan ayrıntılı adım adım kılavuza kadar bilmeniz gereken her şeyde size yol gösterecektir.
+Günümüzün dijital dünyasında, farklı belge biçimlerini verimli bir şekilde yönetmek hayati önem taşır. Word, PDF, HTML veya diğer biçimleri kullanıyor olun, bu dosyaları doğru bir şekilde algılayıp işleyebilmek size çok fazla zaman ve emek kazandırabilir. Bu eğitimde, .NET için Aspose.Words kullanarak belge dosya biçimlerinin nasıl algılanacağını inceleyeceğiz. Bu kılavuz, ön koşullardan ayrıntılı adım adım kılavuza kadar bilmeniz gereken her şeyde size yol gösterecektir.
 
-## Önkoşullar
+## Ön koşullar
 
 Koda dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
--  Aspose.Words for .NET: Buradan indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/) . Geçerli bir lisansınız olduğundan emin olun. Değilse, bir tane alabilirsiniz[geçici lisans](https://purchase.aspose.com/temporary-license/).
-- Visual Studio: Herhangi bir güncel sürüm düzgün çalışacaktır.
-- .NET Framework: Doğru sürümün kurulu olduğundan emin olun.
+-  Aspose.Words for .NET: Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/) . Geçerli bir lisansınız olduğundan emin olun. Değilse, bir tane alabilirsiniz[geçici lisans](https://purchase.aspose.com/temporary-license/).
+- Visual Studio: Güncel herhangi bir sürüm sorunsuz çalışacaktır.
+- .NET Framework: Doğru sürümün yüklü olduğundan emin olun.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -33,21 +33,21 @@ using System.IO;
 using System.Linq;
 ```
 
-Takip etmeyi kolaylaştırmak için örneği birden fazla adıma ayıralım.
+Takip etmeyi kolaylaştırmak için örneği birden fazla adıma bölelim.
 
-## 1. Adım: Dizinleri Ayarlayın
+## Adım 1: Dizinleri Ayarlayın
 
 Öncelikle dosyaların formatlarına göre sıralanacağı dizinleri ayarlamamız gerekiyor.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 string supportedDir = dataDir + "Supported";
 string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-// Henüz mevcut değilse dizinleri oluşturun.
+// Eğer henüz mevcut değilse dizinleri oluşturun.
 if (!Directory.Exists(supportedDir))
     Directory.CreateDirectory(supportedDir);
 if (!Directory.Exists(unknownDir))
@@ -58,17 +58,17 @@ if (!Directory.Exists(pre97Dir))
     Directory.CreateDirectory(pre97Dir);
 ```
 
-## Adım 2: Dosya Listesini Alın
+## Adım 2: Dosyaların Listesini Alın
 
-Daha sonra, bozuk belgeler hariç, dizindeki dosyaların bir listesini alacağız.
+Daha sonra dizindeki dosyaların bir listesini alacağız, bozuk belgeleri hariç tutacağız.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(dataDir).Where(name => !name.EndsWith("Corrupted document.docx"));
 ```
 
-## 3. Adım: Dosya Formatlarını Algılama
+## Adım 3: Dosya Biçimlerini Algıla
 
-Artık her dosyayı yineliyoruz ve Aspose.Words'ü kullanarak formatını tespit ediyoruz.
+Şimdi her dosyayı inceleyip Aspose.Words kullanarak formatını tespit edeceğiz.
 
 ```csharp
 foreach (string fileName in fileList)
@@ -154,21 +154,21 @@ foreach (string fileName in fileList)
 
 ## Çözüm
 
-Aspose.Words for .NET kullanarak belge dosya formatlarını tespit etmek basit bir işlemdir. Dizinlerinizi ayarlayarak, dosya listenizi alarak ve dosya formatlarını tespit etmek için Aspose.Words'ü kullanarak belgelerinizi verimli bir şekilde düzenleyebilir ve yönetebilirsiniz. Bu yaklaşım hem zamandan tasarruf etmenizi sağlar hem de çeşitli belge formatlarını doğru şekilde işlemenizi sağlar.
+Aspose.Words for .NET kullanarak belge dosya biçimlerini algılamak basit bir işlemdir. Dizinlerinizi ayarlayarak, dosya listenizi alarak ve dosya biçimlerini algılamak için Aspose.Words'ü kullanarak belgelerinizi etkili bir şekilde düzenleyebilir ve yönetebilirsiniz. Bu yaklaşım yalnızca zamandan tasarruf sağlamakla kalmaz, aynı zamanda çeşitli belge biçimlerini doğru bir şekilde işlemenizi de sağlar.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için güçlü bir kütüphanedir. Geliştiricilerin çeşitli formatlarda belgeler oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanır.
+Aspose.Words for .NET, Word belgeleriyle programatik olarak çalışmak için güçlü bir kütüphanedir. Geliştiricilerin çeşitli formatlarda belgeler oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanır.
 
 ### Aspose.Words şifrelenmiş belgeleri tespit edebilir mi?
-Evet, Aspose.Words bir belgenin şifreli olup olmadığını tespit edebilir ve siz de bu tür belgeleri buna göre yönetebilirsiniz.
+Evet, Aspose.Words bir belgenin şifrelenip şifrelenmediğini tespit edebilir ve bu tür belgeleri buna göre işleyebilirsiniz.
 
 ### Aspose.Words hangi formatları algılayabilir?
-Aspose.Words, DOC, DOCX, RTF, HTML, MHTML, ODT ve çok daha fazlasını içeren çok çeşitli formatları algılayabilir.
+Aspose.Words DOC, DOCX, RTF, HTML, MHTML, ODT ve daha birçok formatı algılayabilir.
 
-### Aspose.Words için nasıl geçici lisans alabilirim?
- Geçici lisansı şu adresten alabilirsiniz:[Satın Almayı Düşün](https://purchase.aspose.com/temporary-license/) sayfa.
+### Aspose.Words için geçici lisansı nasıl alabilirim?
+ Geçici bir lisansı şuradan alabilirsiniz:[Aspose Satın Alma](https://purchase.aspose.com/temporary-license/) sayfa.
 
-### Aspose.Words belgelerini nerede bulabilirim?
- Aspose.Words belgelerini burada bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+### Aspose.Words'ün dokümanlarını nerede bulabilirim?
+ Aspose.Words'ün belgeleri şurada bulunabilir:[Burada](https://reference.aspose.com/words/net/).

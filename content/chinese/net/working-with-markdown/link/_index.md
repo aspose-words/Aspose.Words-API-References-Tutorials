@@ -71,7 +71,7 @@ builder.InsertHyperlink("Aspose", "https://www.aspose.com", 错误);
 只需重复`InsertHyperlink`对于要添加的每个超链接，使用不同的参数的方法。
 
 ### 我可以设置超链接文本的样式吗？
-是的，您可以使用`DocumentBuilder`将格式应用到超链接文本的方法。
+是的，您可以使用`DocumentBuilder`将格式应用于超链接文本的方法。
 
 ### 如何创建指向同一文档中特定部分的超链接？
 使用文档中的书签创建内部链接。插入书签，然后创建指向该书签的超链接。

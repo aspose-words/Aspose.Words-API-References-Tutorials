@@ -105,7 +105,7 @@ foreach (Section section in doc.Sections)
 
 ### Tar den här metoden bort sidhuvuden och sidfötter också?
 
- Inga,`ClearContent()` påverkar inte sidhuvuden och sidfötter. För att rensa sidhuvuden och sidfötter använder du`ClearHeadersFooters()` metod.
+ Inga,`ClearContent()` påverkar inte sidhuvuden och sidfötter. För att rensa sidhuvuden och sidfötter skulle du använda`ClearHeadersFooters()` metod.
 
 ### Är Aspose.Words för .NET kompatibelt med alla versioner av Word-dokument?
 

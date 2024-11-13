@@ -31,7 +31,7 @@ Okay, lassen Sie uns das Schritt für Schritt durchgehen. Jeder Schritt führt S
 
 ## Schritt 1: Laden Sie das Word-Dokument
 
-Der erste Schritt besteht darin, Ihr Word-Dokument zu laden. Hier werden Ihre Revisionen gespeichert.
+Der erste Schritt besteht darin, Ihr Word-Dokument zu laden. Hier werden Ihre Überarbeitungen gespeichert.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
@@ -85,7 +85,7 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
-Dieser Codeausschnitt druckt den Gruppentext, wenn die Revision Teil einer Gruppe ist, oder gibt an, dass sie zu keiner Gruppe gehört.
+Dieses Snippet druckt den Gruppentext, wenn die Revision Teil einer Gruppe ist, oder gibt an, dass sie zu keiner Gruppe gehört.
 
 ## Abschluss
 
@@ -94,7 +94,7 @@ Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie mit Aspose.W
 ## Häufig gestellte Fragen
 
 ### Was ist Aspose.Words für .NET?
-Es handelt sich um eine leistungsstarke .NET-Bibliothek zum programmgesteuerten Erstellen, Bearbeiten, Konvertieren und Drucken von Word-Dokumenten.
+Es ist eine leistungsstarke .NET-Bibliothek zum programmgesteuerten Erstellen, Bearbeiten, Konvertieren und Drucken von Word-Dokumenten.
 
 ### Kann ich Aspose.Words für .NET mit anderen .NET-Sprachen verwenden?
 Auf jeden Fall! Sie können es mit jeder .NET-Sprache verwenden, einschließlich C#, VB.NET und ASP.NET.
@@ -106,4 +106,4 @@ Auf jeden Fall! Sie können es mit jeder .NET-Sprache verwenden, einschließlich
  Ja, Aspose.Words für .NET erfordert eine Lizenz für die volle Funktionalität. Sie können eine erwerben[Hier](https://purchase.aspose.com/buy) oder holen Sie sich eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
 
 ### Wo finde ich weitere Dokumentation zu Aspose.Words für .NET?
- Detaillierte Dokumentation ist verfügbar[Hier](https://reference.aspose.com/words/net/).
+Detaillierte Dokumentation ist verfügbar[Hier](https://reference.aspose.com/words/net/).

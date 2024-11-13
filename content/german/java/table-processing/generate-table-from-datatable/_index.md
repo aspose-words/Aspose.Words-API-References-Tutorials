@@ -82,7 +82,7 @@ Entdecken Sie weitere Features und Funktionen von Aspose.Words für Java, um Ihr
 
 ### 1. Kann ich Tabellen mit verbundenen Zellen oder verschachtelte Tabellen erstellen?
 
-Ja, mit Aspose.Words für Java können Sie Tabellen mit verbundenen Zellen erstellen oder sogar Tabellen ineinander verschachteln. So können Sie komplexe Tabellenlayouts entwerfen und Daten in verschiedenen Formaten darstellen.
+Ja, mit Aspose.Words für Java können Sie Tabellen mit verbundenen Zellen erstellen oder sogar Tabellen ineinander verschachteln. Auf diese Weise können Sie komplexe Tabellenlayouts entwerfen und Daten in verschiedenen Formaten darstellen.
 
 ### 2. Wie kann ich das Erscheinungsbild der generierten Tabelle anpassen?
 

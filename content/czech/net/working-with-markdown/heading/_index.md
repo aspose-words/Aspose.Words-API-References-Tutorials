@@ -66,47 +66,6 @@ builder.ParagraphFormat.StyleName = "Heading 3";
 builder.Writeln("Details");
 ```
 
-## Přidání dalších přizpůsobení
-
-### Přizpůsobení písma a odstavců
-
-Nastavení písma a odstavce můžete dále upravit tak, aby vyhovovalo vašim potřebám. Například změna velikosti písma, barvy a zarovnání.
-
-```csharp
-builder.Font.Size = 14;
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.Writeln("Centered Blue Heading");
-```
-
-### Vložení obsahu
-
-Dobře strukturovaný dokument často obsahuje obsah. Zde je návod, jak jej můžete vložit pomocí Aspose.Words pro .NET.
-
-```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-doc.UpdateFields();
-```
-
-### Přidávání obrázků
-
-Obrázky mohou učinit váš dokument poutavějším. Přidáme obrázek do našeho dokumentu.
-
-```csharp
-builder.InsertImage("YOUR DOCUMENT DIRECTORY/image.png");
-```
-
-### Použití sekcí dokumentu
-
-Sekce pomáhají při organizaci obsahu, zvláště když potřebujete různé formátování pro různé části dokumentu.
-
-```csharp
-Section section = doc.Sections.Add();
-DocumentBuilder sectionBuilder = new DocumentBuilder(section);
-sectionBuilder.ParagraphFormat.StyleName = "Heading 1";
-sectionBuilder.Writeln("New Section Heading");
-```
-
 ## Závěr
 
 Vytvoření dobře naformátovaného dokumentu není jen o estetice; zvyšuje také čitelnost a profesionalitu. S Aspose.Words pro .NET máte k dispozici výkonný nástroj, jak toho dosáhnout bez námahy. Postupujte podle tohoto průvodce, experimentujte s různými nastaveními a brzy budete profesionálem ve formátování dokumentů!
@@ -131,4 +90,4 @@ Ano, Aspose.Words for .NET je optimalizován pro výkon a dokáže efektivně zp
 
 ### Kde najdu další dokumentaci a podporu?
 
- Pro podrobnou dokumentaci navštivte[zde](https://reference.aspose.com/words/net/) . Pro podporu se podívejte na jejich[forum](https://forum.aspose.com/c/words/8).
+ Pro podrobnou dokumentaci navštivte[zde](https://reference.aspose.com/words/net/) . Pro podporu, podívejte se na jejich[forum](https://forum.aspose.com/c/words/8).

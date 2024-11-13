@@ -75,7 +75,7 @@ doc.range.replace("old_text", "new_text", False, False, condition_callback)
 
 ## Βήμα 6: Αντικατάσταση μορφοποίησης
 
-Αντικατάσταση κειμένου διατηρώντας τη μορφοποίηση:
+Αντικαταστήστε το κείμενο διατηρώντας τη μορφοποίηση:
 
 ```python
 def format_callback(sender, args):

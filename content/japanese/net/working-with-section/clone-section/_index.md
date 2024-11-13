@@ -19,7 +19,7 @@ url: /ja/net/working-with-section/clone-section/
 1.  Aspose.Words for .NETライブラリ: 最新バージョンを入手するには、[ここ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio などの .NET 互換 IDE。
 3. C# の基礎知識: C# の基礎を知っておくと、スムーズに理解できるようになります。
-4. サンプルの Word 文書: クローン作成のプロセスを説明するためにサンプル文書を使用します。
+4. サンプル Word 文書: クローン作成プロセスを説明するためにサンプル文書を使用します。
 
 ## 名前空間のインポート
 

@@ -76,7 +76,7 @@ project.Name = "AsposeProject";
 doc.VbaProject = project;
 ```
 
-これらの行で、私たちは新しい`VbaProject`オブジェクトを作成してドキュメントに割り当てます。プロジェクトには「AsposeProject」という名前を付けましたが、好きな名前を付けることができます。
+これらの行で、私たちは新しい`VbaProject`オブジェクトを作成して、ドキュメントに割り当てます。プロジェクトには「AsposeProject」という名前を付けましたが、好きな名前を付けることができます。
 
 ## ステップ4: VBAモジュールの追加
 
@@ -120,7 +120,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 もっと詳しく知りたい方は、[APIドキュメント](https://reference.aspose.com/words/net/)情報の宝庫です。助けが必要なら、[サポートフォーラム](https://forum.aspose.com/c/words/8)クリックするだけです。
 
-楽しいコーディングを。そして、唯一の限界はあなたの想像力であることを忘れないでください。
+楽しいコーディングを。そして、唯一の制限はあなたの想像力であることを忘れないでください。
 
 ## よくある質問
 

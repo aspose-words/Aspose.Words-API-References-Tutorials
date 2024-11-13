@@ -1,32 +1,32 @@
 ---
-title: Jednostka odstępu między etykietami na osi wykresu
-linktitle: Jednostka odstępu między etykietami na osi wykresu
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić jednostkę odstępu między etykietami na osi wykresu za pomocą Aspose.Words dla .NET.
+title: Jednostka interwału między etykietami na osi wykresu
+linktitle: Jednostka interwału między etykietami na osi wykresu
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak ustawić jednostkę interwału między etykietami na osi wykresu za pomocą Aspose.Words dla platformy .NET.
 type: docs
 weight: 10
 url: /pl/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
 ## Wstęp
 
-Witamy w naszym obszernym przewodniku na temat korzystania z Aspose.Words dla .NET! Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten artykuł przeprowadzi Cię przez wszystko, co musisz wiedzieć o wykorzystaniu Aspose.Words do programowego manipulowania i generowania dokumentów Word w aplikacjach .NET.
+Witamy w naszym kompleksowym przewodniku dotyczącym korzystania z Aspose.Words dla .NET! Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten artykuł przeprowadzi Cię przez wszystko, co musisz wiedzieć o korzystaniu z Aspose.Words do manipulowania i generowania dokumentów Word programowo w aplikacjach .NET.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębisz się w Aspose.Words, upewnij się, że masz następującą konfigurację:
-- Program Visual Studio zainstalowany na Twoim komputerze
+Zanim zaczniesz korzystać z Aspose.Words, upewnij się, że masz następujące ustawienia:
+- Visual Studio zainstalowane na Twoim komputerze
 - Podstawowa znajomość języka programowania C#
--  Dostęp do biblioteki Aspose.Words for .NET (link do pobrania[Tutaj](https://releases.aspose.com/words/net/))
+-  Dostęp do biblioteki Aspose.Words dla .NET (link do pobrania)[Tutaj](https://releases.aspose.com/words/net/))
 
 ## Importowanie przestrzeni nazw i pierwsze kroki
 
-Zacznijmy od zaimportowania niezbędnych przestrzeni nazw i skonfigurowania naszego środowiska programistycznego.
+Zacznijmy od zaimportowania niezbędnych przestrzeni nazw i skonfigurowania środowiska programistycznego.
 
 ### Konfigurowanie projektu w programie Visual Studio
-Aby rozpocząć, uruchom program Visual Studio i utwórz nowy projekt C#.
+Aby rozpocząć, uruchom program Visual Studio i utwórz nowy projekt w języku C#.
 
 ### Instalowanie Aspose.Words dla .NET
- Możesz zainstalować Aspose.Words dla .NET za pośrednictwem Menedżera pakietów NuGet lub pobierając go bezpośrednio z[Strona Aspose](https://releases.aspose.com/words/net/).
+ Możesz zainstalować Aspose.Words dla .NET za pomocą Menedżera pakietów NuGet lub pobierając go bezpośrednio z[Strona internetowa Aspose](https://releases.aspose.com/words/net/).
 
 ### Importowanie przestrzeni nazw Aspose.Words
 pliku kodu C# zaimportuj przestrzeń nazw Aspose.Words, aby uzyskać dostęp do jej klas i metod:
@@ -34,7 +34,7 @@ pliku kodu C# zaimportuj przestrzeń nazw Aspose.Words, aby uzyskać dostęp do 
 using Aspose.Words;
 ```
 
-W tej sekcji omówimy, jak tworzyć i dostosowywać wykresy za pomocą Aspose.Words dla .NET.
+W tej sekcji pokażemy, jak tworzyć i dostosowywać wykresy przy użyciu Aspose.Words dla platformy .NET.
 
 ## Krok 1: Dodawanie wykresu do dokumentu
 Aby wstawić wykres do dokumentu programu Word, wykonaj następujące kroki:
@@ -74,22 +74,22 @@ doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 
 ## Wniosek
 
-Gratulacje! Nauczyłeś się, jak integrować wykresy i manipulować nimi za pomocą Aspose.Words dla .NET. Ta potężna biblioteka umożliwia programistom łatwe tworzenie dynamicznych i atrakcyjnych wizualnie dokumentów.
+Gratulacje! Nauczyłeś się integrować i manipulować wykresami za pomocą Aspose.Words dla .NET. Ta potężna biblioteka umożliwia programistom łatwe tworzenie dynamicznych i atrakcyjnych wizualnie dokumentów.
 
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to biblioteka do przetwarzania dokumentów, która umożliwia programistom tworzenie, modyfikowanie i konwertowanie dokumentów Word w aplikacjach .NET.
+### Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to biblioteka do przetwarzania dokumentów umożliwiająca programistom tworzenie, modyfikowanie i konwertowanie dokumentów Word w aplikacjach .NET.
 
 ### Gdzie mogę znaleźć dokumentację Aspose.Words dla .NET?
- Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).
+ Szczegółową dokumentację można znaleźć[Tutaj](https://reference.aspose.com/words/net/).
 
 ### Czy mogę wypróbować Aspose.Words dla .NET przed zakupem?
  Tak, możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
-### Jak uzyskać wsparcie dla Aspose.Words dla .NET?
- Aby uzyskać pomoc i dyskusje w społeczności, odwiedź stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+### Jak uzyskać pomoc techniczną dotyczącą Aspose.Words dla platformy .NET?
+ Aby uzyskać wsparcie i wziąć udział w dyskusjach społecznościowych, odwiedź stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### Gdzie mogę kupić licencję na Aspose.Words dla .NET?
+### Gdzie mogę nabyć licencję na Aspose.Words dla .NET?
  Możesz kupić licencję[Tutaj](https://purchase.aspose.com/buy).

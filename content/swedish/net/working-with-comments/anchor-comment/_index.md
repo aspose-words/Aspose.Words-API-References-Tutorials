@@ -79,8 +79,7 @@ Låt oss nu skapa en kommentar som vi bifogar vår text.
 ```csharp
 // Skapa en ny kommentar
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+comment.SetText("Comment text.");
 ```
 
  I detta steg skapar vi en`Comment` objekt och lägg till ett stycke och en körning med kommentarstexten.
@@ -102,7 +101,7 @@ run3.ParentNode.InsertAfter(commentRangeEnd, run3);
 commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
- Här skapar vi`CommentRangeStart`och`CommentRangeEnd` objekt, länka dem till kommentaren med dess ID. Vi infogar sedan dessa intervall i dokumentet, vilket effektivt förankrar vår kommentar till den angivna texten.
+ Här skapar vi`CommentRangeStart` och`CommentRangeEnd` objekt, länka dem till kommentaren med dess ID. Vi infogar sedan dessa intervall i dokumentet, vilket effektivt förankrar vår kommentar till den angivna texten.
 
 ## Steg 5: Spara dokumentet
 

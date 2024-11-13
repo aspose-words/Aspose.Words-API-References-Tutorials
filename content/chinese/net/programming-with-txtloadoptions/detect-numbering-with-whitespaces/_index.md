@@ -9,7 +9,7 @@ url: /zh/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
 ## 介绍
 
-Aspose.Words 是 .NET 爱好者的福音！今天，我们将深入研究一项令人着迷的功能，它可以轻松处理纯文本文档中的列表。您是否曾经处理过这样的文本文件：其中某些行应该是列表，但加载到 Word 文档中时它们看起来不太正确？好吧，我们有一个巧妙的技巧：检测带有空格的编号。本教程将引导您了解如何使用`DetectNumberingWithWhitespaces`Aspose.Words for .NET 中的选项可确保您的列表被正确识别，即使数字和文本之间存在空格。
+Aspose.Words 是 .NET 爱好者的福音！今天，我们将深入介绍一项令人着迷的功能，它可以轻松处理纯文本文档中的列表。您是否曾经处理过这样的文本文件：其中某些行应该是列表，但加载到 Word 文档中时它们看起来不太正确？好吧，我们有一个巧妙的技巧：检测带有空格的编号。本教程将引导您了解如何使用`DetectNumberingWithWhitespaces`Aspose.Words for .NET 中的选项可确保您的列表被正确识别，即使数字和文本之间存在空格。
 
 ## 先决条件
 

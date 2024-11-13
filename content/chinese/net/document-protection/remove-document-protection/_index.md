@@ -93,13 +93,13 @@ doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
 
 ## 结论
 
-就这样！使用 Aspose.Words for .NET 轻松删除 Word 文档的保护。无论文档是否受密码保护，Aspose.Words 都能为您提供轻松管理文档保护的灵活性。现在，您只需几行代码即可解锁文档并完全控制。
+就这样！使用 Aspose.Words for .NET 删除 Word 文档的保护非常简单。无论文档是否受密码保护，Aspose.Words 都能为您提供轻松管理文档保护的灵活性。现在，您只需几行代码即可解锁文档并完全控制。
 
 ## 常见问题解答
 
 ### 如果我输入了错误的密码会发生什么情况？
 
-如果您输入的密码不正确，Aspose.Words 将抛出异常。请确保使用正确的密码来解除保护。
+如果您输入了错误的密码，Aspose.Words 将抛出异常。请确保使用正确的密码来解除保护。
 
 ### 我可以一次取消多个文档的保护吗？
 

@@ -96,7 +96,7 @@ Console.WriteLine("Paragraph has a parent node: " + (para.ParentNode != null));
 
 ## 結論
 
-現在你就得到它了！您剛剛學習如何在 Aspose.Words for .NET 中使用「所有者文件」。透過了解節點與其父文檔的關係，您可以更有效地操作文件。無論您是建立新節點、修改屬性或組織內容，本教學介紹的概念都將作為堅實的基礎。繼續試驗並探索 Aspose.Words for .NET 的巨大功能！
+現在你就擁有了！您剛剛學習如何在 Aspose.Words for .NET 中使用「所有者文件」。透過了解節點與其父文檔的關係，您可以更有效地操作文件。無論您是建立新節點、修改屬性或組織內容，本教學介紹的概念都將作為堅實的基礎。繼續試驗並探索 Aspose.Words for .NET 的巨大功能！
 
 ## 常見問題解答
 

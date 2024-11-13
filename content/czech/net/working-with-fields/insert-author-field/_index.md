@@ -69,7 +69,7 @@ Document doc = new Document();
 2. Přidat odstavec: Dále do dokumentu přidáme odstavec.
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 Do tohoto odstavce vložíme pole autora.

@@ -1,39 +1,39 @@
 ---
 title: Dodaj przycięte rogi
 linktitle: Dodaj przycięte rogi
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodać kształt obciętych rogów do dokumentów programu Word za pomocą Aspose.Words dla .NET. Dzięki temu przewodnikowi krok po kroku możesz łatwo ulepszać swoje dokumenty.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak dodać kształt przyciętych narożników do dokumentów Word za pomocą Aspose.Words dla .NET. Ten przewodnik krok po kroku zapewnia, że możesz łatwo ulepszyć swoje dokumenty.
 type: docs
 weight: 10
 url: /pl/net/programming-with-shapes/add-corners-snipped/
 ---
 ## Wstęp
 
-Dodawanie niestandardowych kształtów do dokumentów programu Word może być zabawnym i atrakcyjnym wizualnie sposobem na podkreślenie ważnych informacji lub dodanie odrobiny elegancji do treści. W tym samouczku omówimy, w jaki sposób można wstawiać kształty „Przycięte rogi” do dokumentów programu Word za pomocą Aspose.Words dla .NET. Ten przewodnik przeprowadzi Cię przez każdy krok, zapewniając, że możesz bez wysiłku dodawać te kształty i dostosowywać dokumenty jak profesjonalista.
+Dodawanie niestandardowych kształtów do dokumentów Word może być zabawnym i atrakcyjnym wizualnie sposobem na wyróżnienie ważnych informacji lub dodanie odrobiny elegancji do treści. W tym samouczku zagłębimy się w to, jak wstawiać kształty „Corners Snipped” do dokumentów Word za pomocą Aspose.Words dla .NET. Ten przewodnik przeprowadzi Cię przez każdy krok, zapewniając, że bez wysiłku dodasz te kształty i dostosujesz swoje dokumenty jak profesjonalista.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim przejdziemy do kodu, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
 
-1.  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz najnowszą wersję z[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: Skonfiguruj środowisko programistyczne. Visual Studio to popularny wybór, ale można użyć dowolnego środowiska IDE obsługującego platformę .NET.
-3.  Licencja: Jeśli tylko eksperymentujesz, możesz użyć[bezpłatna wersja próbna](https://releases.aspose.com/) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) aby odblokować pełną funkcjonalność.
-4. Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci postępować zgodnie z przykładami.
+1.  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz najnowszą wersję ze strony[Strona wydań Aspose](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Skonfiguruj swoje środowisko programistyczne. Visual Studio jest popularnym wyborem, ale możesz użyć dowolnego IDE, które obsługuje .NET.
+3.  Licencja: Jeśli tylko eksperymentujesz, możesz użyć[bezpłatny okres próbny](https://releases.aspose.com/) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) aby odblokować pełną funkcjonalność.
+4. Podstawowa znajomość języka C#: Znajomość programowania w języku C# ułatwi Ci zrozumienie przykładów.
 
 ## Importuj przestrzenie nazw
 
-Zanim będziemy mogli rozpocząć pracę z Aspose.Words dla .NET, musimy zaimportować niezbędne przestrzenie nazw. Dodaj je na górze pliku C#:
+Zanim zaczniemy pracę z Aspose.Words dla .NET, musimy zaimportować niezbędne przestrzenie nazw. Dodaj je na górze pliku C#:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Podzielmy teraz proces dodawania kształtu „Przycięte rogi” na kilka etapów. Wykonaj dokładnie poniższe kroki, aby mieć pewność, że wszystko działa sprawnie.
+Teraz podzielmy proces dodawania kształtu „Cięte narożniki” na kilka kroków. Postępuj dokładnie według tych kroków, aby upewnić się, że wszystko działa płynnie.
 
-## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
+## Krok 1: Zainicjuj dokument i DocumentBuilder
 
- Pierwszą rzeczą, którą musimy zrobić, to utworzyć nowy dokument i zainicjować plik`DocumentBuilder` obiekt. Ten kreator pomoże nam dodać treść do naszego dokumentu.
+ Pierwszą rzeczą, którą musimy zrobić, jest utworzenie nowego dokumentu i zainicjowanie go`DocumentBuilder` obiekt. Ten konstruktor pomoże nam dodać treść do naszego dokumentu.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -43,21 +43,21 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Na tym etapie skonfigurowaliśmy nasz dokument i kreator. Pomyśl o`DocumentBuilder` jako pióro cyfrowe, gotowe do pisania i rysowania w dokumencie programu Word.
+ W tym kroku skonfigurowaliśmy nasz dokument i konstruktor. Pomyśl o`DocumentBuilder` jako cyfrowy długopis, gotowy do pisania i rysowania w dokumencie Word.
 
-## Krok 2: Wstaw kształt ściętych narożników
+## Krok 2: Wstaw wycięty kształt narożników
 
- Następnie użyjemy`DocumentBuilder` , aby wstawić kształt „Przycięte rogi”. Ten typ kształtu jest predefiniowany w Aspose.Words i można go łatwo wstawić za pomocą jednej linii kodu.
+ Następnie użyjemy`DocumentBuilder` aby wstawić kształt „Cięte narożniki”. Ten typ kształtu jest wstępnie zdefiniowany w Aspose.Words i można go łatwo wstawić za pomocą jednej linii kodu.
 
 ```csharp
 builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 ```
 
-Tutaj określamy typ kształtu i jego wymiary (50x50). Wyobraź sobie, że umieszczasz na dokumencie małą, idealnie przyciętą naklejkę narożną. 
+Tutaj określamy typ kształtu i jego wymiary (50x50). Wyobraź sobie, że umieszczasz małą, idealnie przyciętą naklejkę narożną na swoim dokumencie. 
 
-## Krok 3: Zdefiniuj opcje zapisu z zachowaniem zgodności
+## Krok 3: Zdefiniuj opcje zapisu zgodnie ze zgodnością
 
-Przed zapisaniem naszego dokumentu musimy zdefiniować opcje zapisu, aby mieć pewność, że nasz dokument jest zgodny z określonymi standardami. Skorzystamy z`OoxmlSaveOptions` klasa do tego.
+Przed zapisaniem dokumentu musimy zdefiniować opcje zapisu, aby upewnić się, że nasz dokument jest zgodny z określonymi standardami. Użyjemy`OoxmlSaveOptions` klasa za to.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
@@ -66,35 +66,35 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 };
 ```
 
-Te opcje zapisywania zapewniają, że nasz dokument jest zgodny z normą ISO/IEC 29500:2008, która ma kluczowe znaczenie dla kompatybilności i trwałości dokumentu.
+Opcje zapisu zapewniają zgodność naszego dokumentu ze standardem ISO/IEC 29500:2008, co ma kluczowe znaczenie dla kompatybilności i trwałości dokumentu.
 
 ## Krok 4: Zapisz dokument
 
-Na koniec zapisujemy nasz dokument we wskazanym katalogu, korzystając z zdefiniowanych wcześniej opcji zapisu.
+Na koniec zapisujemy nasz dokument w określonym katalogu, korzystając z opcji zapisu, które zdefiniowaliśmy wcześniej.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 ```
 
-I tak po prostu Twój dokument zawiera teraz niestandardowy kształt „Przyciętych rogów”, zapisany z niezbędnymi opcjami zgodności.
+I w ten sposób Twój dokument zawiera teraz niestandardowy kształt „Obcięte rogi”, zapisany z wymaganymi opcjami zgodności.
 
 ## Wniosek
 
-Masz to! Dodawanie niestandardowych kształtów do dokumentów programu Word za pomocą Aspose.Words dla .NET jest proste i może znacznie poprawić atrakcyjność wizualną dokumentów. Wykonując poniższe kroki, możesz łatwo wstawić kształt „Przycięte rogi” i mieć pewność, że dokument spełnia wymagane standardy. Miłego kodowania!
+I masz! Dodawanie niestandardowych kształtów do dokumentów Word za pomocą Aspose.Words dla .NET jest proste i może znacznie poprawić atrakcyjność wizualną dokumentów. Postępując zgodnie z tymi krokami, możesz łatwo wstawić kształt „Corners Snipped” i upewnić się, że dokument spełnia wymagane standardy. Miłego kodowania!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę dostosować rozmiar kształtu „Przycięte rogi”?
-Tak, możesz dostosować rozmiar, zmieniając wymiary w pliku`InsertShape` metoda.
+### Czy mogę dostosować rozmiar kształtu „Obcięte rogi”?
+Tak, możesz dostosować rozmiar poprzez zmianę wymiarów w`InsertShape` metoda.
 
-### Czy można dodawać inne typy kształtów?
- Absolutnie! Aspose.Words obsługuje różne kształty. Po prostu zmień`ShapeType` do pożądanego kształtu.
+### Czy można dodać inne rodzaje kształtów?
+ Oczywiście! Aspose.Words obsługuje różne kształty. Wystarczy zmienić`ShapeType` do pożądanego kształtu.
 
 ### Czy potrzebuję licencji, aby korzystać z Aspose.Words?
-Chociaż możesz skorzystać z bezpłatnej wersji próbnej lub licencji tymczasowej, do nieograniczonego użytkowania wymagana jest pełna licencja.
+Można skorzystać z bezpłatnej wersji próbnej lub licencji tymczasowej, jednak do nieograniczonego użytkowania wymagana jest pełna licencja.
 
-### Jak mogę dalej stylizować kształty?
-Możesz użyć dodatkowych właściwości i metod dostarczonych przez Aspose.Words, aby dostosować wygląd i zachowanie kształtów.
+### Jak mogę dodatkowo stylizować kształty?
+Aby dostosować wygląd i zachowanie kształtów, możesz użyć dodatkowych właściwości i metod udostępnianych przez Aspose.Words.
 
 ### Czy Aspose.Words jest kompatybilny z innymi formatami?
 Tak, Aspose.Words obsługuje wiele formatów dokumentów, w tym DOCX, PDF, HTML i inne.

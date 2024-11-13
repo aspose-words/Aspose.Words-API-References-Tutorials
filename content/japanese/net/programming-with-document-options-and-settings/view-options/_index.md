@@ -2,7 +2,7 @@
 title: 表示オプション
 linktitle: 表示オプション
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書のオプションを表示する方法を学びます。このガイドでは、表示タイプの設定、ズーム レベルの調整、文書の保存について説明します。
+description: Aspose.Words for .NET を使用して Word 文書のオプションを表示する方法を学習します。このガイドでは、表示タイプの設定、ズーム レベルの調整、文書の保存について説明します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-document-options-and-settings/view-options/
@@ -52,7 +52,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.ViewOptions.ViewType = ViewType.PageLayout;
 ```
 
-ここでは、ビュータイプを`PageLayout`これは、Microsoft Word の印刷レイアウト表示に似ています。これにより、文書が印刷されたときにどのように表示されるかをより正確に表現できます。
+ここでは、ビュータイプを`PageLayout`これは、Microsoft Word の印刷レイアウト表示に似ています。これにより、文書が印刷されたときにどのように表示されるかがより正確に表現されます。
 
 ## ステップ3: ズームレベルを調整する
 
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ViewOptions.docx");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して Word 文書の表示オプションを変更するのは、手順がわかれば簡単です。このチュートリアルに従うことで、文書の読み込み、表示タイプの変更、ズーム レベルの調整、新しい設定での文書の保存方法を学習しました。Aspose.Words for .NET をマスターするには実践が鍵となることを忘れないでください。さまざまな設定を試して、自分に最適なものを見つけてください。コーディングを楽しんでください。
+これで完了です。Aspose.Words for .NET を使用して Word 文書の表示オプションを変更するのは、手順がわかれば簡単です。このチュートリアルでは、文書の読み込み、表示タイプの変更、ズーム レベルの調整、新しい設定での文書の保存方法を学習しました。Aspose.Words for .NET をマスターするには実践が鍵となることを忘れないでください。さまざまな設定を試して、自分に最適なものを見つけてください。コーディングを楽しんでください。
 
 ## よくある質問
 
@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ViewOptions.docx");
 
 はい、変更を保存せずにドキュメントを再度読み込むか、表示オプションを元の値に戻すことで、元の表示設定に戻すことができます。
 
-### 異なるデバイス間でドキュメントが同じように表示されるようにするにはどうすればよいですか?
+### 異なるデバイス間でドキュメントが同じように見えるようにするにはどうすればよいですか?
 
 一貫性を保つには、必要な表示オプションでドキュメントを保存し、同じファイルを配布します。ズーム レベルや表示タイプなどの表示設定は、デバイス間で一貫している必要があります。
 

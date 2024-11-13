@@ -1,6 +1,6 @@
 ---
-title: HTML からテーブルを挿入
-linktitle: HTML からテーブルを挿入
+title: HTML から表を挿入
+linktitle: HTML から表を挿入
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words for .NET を使用して HTML から Word 文書に表を挿入する方法を学びます。シームレスな文書統合のための詳細なガイドに従ってください。
 type: docs
@@ -15,7 +15,7 @@ HTML から Word 文書に表を挿入する必要があったことはありま
 
 HTML からテーブルを挿入する詳細に入る前に、次の前提条件が満たされていることを確認してください。
 
-1. Aspose.Words for .NET: Aspose.Words for .NETライブラリを以下のサイトからダウンロードしてインストールします。[ダウンロードページ](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Aspose.Words for .NETライブラリを以下のサイトからダウンロードしてインストールします。[ダウンロードページ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio などの .NET 互換の開発環境。
 3. C# の基礎知識: 基本的な C# プログラミング概念を理解していること。
 4. HTML テーブル コード: 挿入するテーブルの HTML コード。
@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ステップ3: HTMLテーブルを挿入する
 
-次は楽しい部分です！`DocumentBuilder` HTML テーブルを Word 文書に挿入します。自動調整設定は HTML から挿入されたテーブルには適用されないため、テーブルは HTML コードで定義されたとおりに表示されます。
+次は楽しい部分です！`DocumentBuilder` HTML テーブルを Word 文書に挿入します。自動調整設定は HTML から挿入されたテーブルには適用されないので、テーブルは HTML コードで定義されたとおりに表示されることに注意してください。
 
 ```csharp
 //HTML テーブルを挿入

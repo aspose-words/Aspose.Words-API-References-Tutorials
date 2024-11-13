@@ -18,7 +18,7 @@ url: /zh/net/working-with-node/get-parent-node/
 -  Aspose.Words for .NET：从以下网址下载并安装[这里](https://releases.aspose.com/words/net/).
 - 开发环境：Visual Studio 或任何其他.NET 兼容 IDE。
 - C# 基础知识：熟悉 C# 编程将会有所帮助。
-- 临时许可证：要获得不受限制的完整功能，请获取临时许可证[这里](https://purchase.aspose.com/temporary-license/).
+- 临时许可证：如需不受限制的完整功能，请获取临时许可证[这里](https://purchase.aspose.com/temporary-license/).
 
 ## 导入命名空间
 
@@ -47,7 +47,7 @@ Document doc = new Document();
 Node section = doc.FirstChild;
 ```
 
-通过这样做，我们就可以抓取文档中的第一个部分。想象一下获取一本书的第一页。
+通过这样做，我们抓取了文档中的第一个部分。想象一下获取一本书的第一页。
 
 ## 步骤3：获取父节点
 

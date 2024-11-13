@@ -81,7 +81,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi Word-d
 Az Aspose.Words különféle védelmi típusokat képes észlelni, mint például a NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments és AllowOnlyFormFields.
 
 ### Hogyan kaphatok támogatást, ha problémákba ütközöm?
- Bármilyen probléma esetén keresse fel a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8)segítségért.
+Bármilyen probléma esetén keresse fel a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.
 
 ### Az Aspose.Words kompatibilis a .NET Core-al?
 Igen, az Aspose.Words a .NET-keretrendszerrel és a .NET Core-val is kompatibilis.

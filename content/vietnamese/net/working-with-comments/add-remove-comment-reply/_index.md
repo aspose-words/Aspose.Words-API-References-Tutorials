@@ -2,26 +2,26 @@
 title: Thêm Xóa Bình luận Trả lời
 linktitle: Thêm Xóa Bình luận Trả lời
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách thêm và xóa trả lời nhận xét trong tài liệu Word bằng Aspose.Words cho .NET. Nâng cao khả năng cộng tác trên tài liệu của bạn với hướng dẫn từng bước này.
+description: Tìm hiểu cách thêm và xóa trả lời bình luận trong tài liệu Word bằng Aspose.Words cho .NET. Nâng cao khả năng cộng tác tài liệu của bạn với hướng dẫn từng bước này.
 type: docs
 weight: 10
 url: /vi/net/working-with-comments/add-remove-comment-reply/
 ---
 ## Giới thiệu
 
-Làm việc với nhận xét và câu trả lời của họ trong tài liệu Word có thể nâng cao đáng kể quá trình xem xét tài liệu của bạn. Với Aspose.Words for .NET, bạn có thể tự động hóa các tác vụ này, giúp quy trình làm việc của bạn hiệu quả và hợp lý hơn. Hướng dẫn này sẽ hướng dẫn bạn cách thêm và xóa các câu trả lời nhận xét, đồng thời cung cấp hướng dẫn từng bước để làm chủ tính năng này.
+Làm việc với các bình luận và phản hồi của chúng trong tài liệu Word có thể cải thiện đáng kể quy trình xem xét tài liệu của bạn. Với Aspose.Words cho .NET, bạn có thể tự động hóa các tác vụ này, giúp quy trình làm việc của bạn hiệu quả và hợp lý hơn. Hướng dẫn này sẽ hướng dẫn bạn cách thêm và xóa phản hồi bình luận, cung cấp hướng dẫn từng bước để thành thạo tính năng này.
 
 ## Điều kiện tiên quyết
 
-Trước khi đi sâu vào mã, hãy đảm bảo bạn có những điều sau:
+Trước khi tìm hiểu mã, hãy đảm bảo bạn có những điều sau:
 
--  Aspose.Words for .NET: Tải xuống và cài đặt nó từ[đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words cho .NET: Tải xuống và cài đặt từ[đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Visual Studio hoặc bất kỳ IDE nào khác hỗ trợ .NET.
-- Kiến thức cơ bản về C#: Cần phải làm quen với lập trình C#.
+- Kiến thức cơ bản về C#: Sự quen thuộc với lập trình C# là điều cần thiết.
 
 ## Nhập không gian tên
 
-Để bắt đầu, hãy nhập các vùng tên cần thiết trong dự án C# của bạn:
+Để bắt đầu, hãy nhập các không gian tên cần thiết vào dự án C# của bạn:
 
 ```csharp
 using System;
@@ -30,32 +30,32 @@ using Aspose.Words;
 
 ## Bước 1: Tải tài liệu Word của bạn
 
-Trước tiên, bạn cần tải tài liệu Word chứa các bình luận mà bạn muốn quản lý. Trong ví dụ này, chúng tôi giả sử bạn có tài liệu có tên "Comments.docx" trong thư mục của mình.
+Trước tiên, bạn cần tải tài liệu Word có chứa các bình luận bạn muốn quản lý. Đối với ví dụ này, chúng tôi giả sử bạn có một tài liệu có tên "Comments.docx" trong thư mục của mình.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
 ```
 
-## Bước 2: Truy cập bình luận đầu tiên
+## Bước 2: Truy cập vào bình luận đầu tiên
 
-Tiếp theo, truy cập bình luận đầu tiên trong tài liệu. Nhận xét này sẽ là mục tiêu để thêm và xóa các câu trả lời.
+Tiếp theo, truy cập bình luận đầu tiên trong tài liệu. Bình luận này sẽ là mục tiêu để thêm và xóa trả lời.
 
 ```csharp
 Comment comment = (Comment)doc.GetChild(NodeType.Comment, 0, true);
 ```
 
-## Bước 3: Xóa câu trả lời hiện có
+## Bước 3: Xóa trả lời hiện có
 
-Nếu nhận xét đã có câu trả lời, bạn có thể muốn xóa một câu trả lời. Đây là cách bạn có thể xóa câu trả lời đầu tiên của nhận xét:
+Nếu bình luận đã có phản hồi, bạn có thể muốn xóa một bình luận. Sau đây là cách bạn có thể xóa phản hồi đầu tiên của bình luận:
 
 ```csharp
 comment.RemoveReply(comment.Replies[0]);
 ```
 
-## Bước 4: Thêm câu trả lời mới
+## Bước 4: Thêm một câu trả lời mới
 
-Bây giờ, hãy thêm một câu trả lời mới cho bình luận. Bạn có thể chỉ định tên tác giả, tên viết tắt, ngày và giờ trả lời cũng như văn bản trả lời.
+Bây giờ, hãy thêm phản hồi mới vào bình luận. Bạn có thể chỉ định tên tác giả, chữ viết tắt, ngày giờ phản hồi và văn bản phản hồi.
 
 ```csharp
 comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New reply");
@@ -63,7 +63,7 @@ comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New re
 
 ## Bước 5: Lưu tài liệu đã cập nhật
 
-Cuối cùng, lưu tài liệu đã sửa đổi vào thư mục của bạn.
+Cuối cùng, lưu tài liệu đã chỉnh sửa vào thư mục của bạn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
@@ -71,26 +71,26 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 ## Phần kết luận
 
-Quản lý các câu trả lời nhận xét trong tài liệu Word theo chương trình có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt là khi xử lý các bài đánh giá sâu rộng. Aspose.Words for .NET làm cho quá trình này trở nên đơn giản và hiệu quả. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể dễ dàng thêm và xóa các câu trả lời nhận xét, nâng cao trải nghiệm cộng tác trên tài liệu của mình.
+Quản lý phản hồi bình luận trong tài liệu Word theo chương trình có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt là khi xử lý các đánh giá mở rộng. Aspose.Words for .NET giúp quá trình này trở nên đơn giản và hiệu quả. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể dễ dàng thêm và xóa phản hồi bình luận, nâng cao trải nghiệm cộng tác tài liệu của bạn.
 
 ## Câu hỏi thường gặp
 
-### Làm cách nào để thêm nhiều câu trả lời vào một nhận xét?
+### Làm thế nào để thêm nhiều phản hồi vào một bình luận?
 
- Bạn có thể thêm nhiều câu trả lời cho một nhận xét bằng cách gọi`AddReply` phương thức nhiều lần trên cùng một đối tượng nhận xét.
+ Bạn có thể thêm nhiều phản hồi vào một bình luận bằng cách gọi`AddReply` phương pháp nhiều lần trên cùng một đối tượng bình luận.
 
-### Tôi có thể tùy chỉnh chi tiết tác giả cho mỗi câu trả lời không?
+### Tôi có thể tùy chỉnh thông tin tác giả cho mỗi phản hồi không?
 
- Có, bạn có thể chỉ định tên tác giả, tên viết tắt cũng như ngày và giờ cho mỗi câu trả lời khi sử dụng`AddReply` phương pháp.
+ Có, bạn có thể chỉ định tên tác giả, chữ viết tắt và ngày giờ cho mỗi phản hồi khi sử dụng`AddReply` phương pháp.
 
-### Có thể xóa tất cả các câu trả lời khỏi một bình luận cùng một lúc không?
+### Có thể xóa tất cả phản hồi khỏi một bình luận cùng một lúc không?
 
-Để xóa tất cả các câu trả lời, bạn cần lặp qua`Replies` thu thập các bình luận và loại bỏ từng bình luận riêng lẻ.
+Để xóa tất cả các câu trả lời, bạn sẽ cần phải lặp lại`Replies` thu thập các bình luận và xóa từng bình luận một.
 
-### Tôi có thể truy cập nhận xét trong một phần cụ thể của tài liệu không?
+### Tôi có thể truy cập vào phần bình luận ở một phần cụ thể của tài liệu không?
 
- Có, bạn có thể điều hướng qua các phần của tài liệu và truy cập nhận xét trong mỗi phần bằng cách sử dụng`GetChild` phương pháp.
+ Có, bạn có thể điều hướng qua các phần của tài liệu và truy cập các bình luận trong mỗi phần bằng cách sử dụng`GetChild` phương pháp.
 
-### Aspose.Words for .NET có hỗ trợ các tính năng liên quan đến nhận xét khác không?
+### Aspose.Words cho .NET có hỗ trợ các tính năng liên quan đến bình luận khác không?
 
-Có, Aspose.Words for .NET cung cấp hỗ trợ rộng rãi cho nhiều tính năng liên quan đến nhận xét, bao gồm thêm nhận xét mới, đặt thuộc tính nhận xét, v.v.
+Có, Aspose.Words for .NET cung cấp hỗ trợ toàn diện cho nhiều tính năng liên quan đến chú thích, bao gồm thêm chú thích mới, thiết lập thuộc tính chú thích, v.v.

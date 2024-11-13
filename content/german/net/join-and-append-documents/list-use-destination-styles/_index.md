@@ -91,4 +91,4 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die programmgest
  Mit ImportFormatOptions können Sie angeben, wie die Formatierung beim Importieren von Inhalten aus einem Dokument in ein anderes gehandhabt wird. Beispiel:`KeepSourceNumbering` stellt sicher, dass die Listennummerierung aus dem Quelldokument erhalten bleibt.
 
 ### Wo erhalte ich Support für Aspose.Words?
- Unterstützung erhalten Sie vom[Aspose.Words-Forum](https://forum.aspose.com/c/words/8), wo Sie Fragen stellen und Hilfe von der Community und den Aspose-Entwicklern erhalten können.
+ Unterstützung erhalten Sie vom[Aspose.Words-Forum](https://forum.aspose.com/c/words/8)wo Sie Fragen stellen und Hilfe von der Community und den Aspose-Entwicklern erhalten können.

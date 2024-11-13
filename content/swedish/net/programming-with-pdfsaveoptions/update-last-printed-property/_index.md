@@ -53,15 +53,12 @@ Document doc = new Document(dataDir + "Rendering.docx");
  Vi måste konfigurera PDF-sparalternativen för att uppdatera den senast utskrivna egenskapen. Skapa en ny instans av`PdfSaveOptions` och ställ in`UpdateLastPrintedProperty`egendom till`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	UpdateLastPrintedProperty = true 
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 ## Steg 5: Spara dokumentet som PDF
 
-Slutligen, spara dokumentet som en PDF med den uppdaterade egenskapen. Ange utdatasökväg och spara alternativ.
+Slutligen, spara dokumentet som en PDF med den uppdaterade egenskapen. Ange utmatningsvägen och alternativen för att spara.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);

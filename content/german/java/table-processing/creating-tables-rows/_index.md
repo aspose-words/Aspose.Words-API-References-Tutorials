@@ -54,7 +54,7 @@ Für eine bessere Organisation ist es oft notwendig, Tabellen Überschriften hin
 Row headerRow = table.getRows().get(0);
 headerRow.getRowFormat().setHeadingFormat(true);
 
-// Kopfzeilenzellen füllen
+// Kopfzellen füllen
 for (int i = 0; i < table.getColumns().getCount(); i++) {
     Cell cell = headerRow.getCells().get(i);
     cell.getFirstParagraph().appendChild(new Run(doc, "Header " + (i + 1)));
@@ -62,7 +62,7 @@ for (int i = 0; i < table.getColumns().getCount(); i++) {
 ```
 
 ### Tabellenstil ändern
-Sie können den Stil Ihrer Tabelle an die Ästhetik Ihres Dokuments anpassen:
+Sie können den Stil Ihrer Tabelle anpassen, damit er zur Ästhetik Ihres Dokuments passt:
 
 ```java
 // Anwenden eines vordefinierten Tabellenstils

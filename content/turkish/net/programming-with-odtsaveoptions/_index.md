@@ -7,13 +7,13 @@ type: docs
 weight: 1650
 url: /tr/net/programming-with-odtsaveoptions/
 ---
-Aspose.Words for .NET eğitimleri, geliştirme projelerinizde yazılımın özelliklerini nasıl yöneteceğinizi ve tam olarak nasıl kullanacağınızı öğrenmek için değerli bir kaynaktır. "OdtSaveOptions ile Kelime İşleme" öğreticisi, Word belgelerini ODT (Açık Belge Metni) biçimine kaydetmek ve dönüştürmek için OdtSaveOptions sınıfını kullanma konusunda size adım adım yol gösterir. Görüntü sıkıştırma, yazı tipi yönetimi, metin biçimlendirme seçenekleri ve daha fazlası gibi çeşitli yedekleme seçeneklerini nasıl belirleyeceğinizi öğreneceksiniz.
+Aspose.Words for .NET eğitimleri, geliştirme projelerinizde yazılımın özelliklerini nasıl kullanacağınızı ve tam olarak kullanacağınızı öğrenmek için değerli bir kaynaktır. "OdtSaveOptions ile Word İşleme" eğitimi, Word belgelerini ODT (Açık Belge Metni) biçimine kaydetmek ve dönüştürmek için OdtSaveOptions sınıfını kullanma konusunda sizi adım adım yönlendirir. Görüntü sıkıştırma, yazı tipi yönetimi, metin biçimlendirme seçenekleri ve daha fazlası gibi çeşitli yedekleme seçeneklerini nasıl belirleyeceğinizi öğreneceksiniz.
 
-Bu eğitimler, geliştiricilerin Aspose.Words for .NET'i kullanma konusunda uzmanlaşmasına ve onun tüm potansiyelinden yararlanmasına yardımcı olmak için tasarlanmıştır. İster .NET geliştirmede yeni olun ister deneyimli olun, projelerinizde size yol gösterecek açık, adım adım talimatların yanı sıra kullanışlı kod örnekleri bulacaksınız. Eğiticiler, en yeni özellikleri ve programlamayla ilgili en iyi uygulamaları içerecek şekilde düzenli olarak güncellenmektedir.
+Bu eğitimler, geliştiricilerin .NET için Aspose.Words'ü ustalıkla kullanmalarına ve tüm potansiyelinden faydalanmalarına yardımcı olmak için tasarlanmıştır. .NET geliştirmeye yeni başlayan veya deneyimli olun, projelerinizde size rehberlik edecek açık, adım adım talimatlar ve kullanışlı kod örnekleri bulacaksınız. Eğitimler, en son özellikleri ve programlama en iyi uygulamalarını içerecek şekilde düzenli olarak güncellenir.
 
-Belgeleri dönüştürmeniz, içeriği değiştirmeniz, biçimlendirmeyi yönetmeniz veya belirli görevleri otomatikleştirmeniz gerekiyorsa Aspose.Words for .NET eğitimleri size yardımcı olmak için burada. Kapsamlı dokümantasyon ve ilgili kod örnekleri ile Aspose.Words'ü .NET geliştirme projelerinizde etkili bir şekilde kullanabilecek, böylece üretkenlik ve kalite kazanabileceksiniz.
+Belgeleri dönüştürmeniz, içerikleri düzenlemeniz, biçimlendirmeyi yönetmeniz veya belirli görevleri otomatikleştirmeniz gereksin, Aspose.Words for .NET eğitimleri size yardımcı olmak için burada. Kapsamlı dokümantasyon ve ilgili kod örnekleriyle, Aspose.Words'ü .NET geliştirme projelerinizde etkili bir şekilde kullanabilecek ve böylece üretkenlik ve kalite kazanacaksınız.
 
- ## Öğreticiler
+ ## Eğitimler
 | Başlık | Tanım |
 | --- | --- |
-| [Ölçü Birimi](./measure-unit/) | ODT dönüşümü sırasında belge formatını korumak için Aspose.Words for .NET'te ölçü birimi özelliğini nasıl yapılandıracağınızı öğrenin. |
+| [Ölçü Birimi](./measure-unit/) | ODT dönüştürme sırasında belge biçimlendirmesini korumak için Aspose.Words for .NET'te ölçüm birimi özelliğinin nasıl yapılandırılacağını öğrenin. |

@@ -15,7 +15,7 @@ url: /el/net/working-with-markdown/use-warning-source/
 
 Προτού πηδήξουμε στο μωρό, βεβαιωθείτε ότι έχετε έτοιμα τα εξής:
 
-1. Visual Studio: Οποιαδήποτε πρόσφατη έκδοση ισχύει.
+1. Visual Studio: Οποιαδήποτε πρόσφατη έκδοση θα κάνει.
 2.  Aspose.Words για .NET: Μπορείτε[κατεβάστε το εδώ](https://releases.aspose.com/words/net/).
 3. Βασικές γνώσεις C#: Η γνώση της C# θα σας βοηθήσει να ακολουθήσετε ομαλά.
 4.  Ένα δείγμα αρχείου DOCX: Για αυτό το σεμινάριο, θα χρησιμοποιήσουμε ένα αρχείο με το όνομα`Emphases markdown warning.docx`.

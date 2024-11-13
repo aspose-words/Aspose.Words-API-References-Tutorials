@@ -114,10 +114,10 @@ Sie haben erfolgreich zwei Word-Dokumente mit Aspose.Words für .NET zusammengef
  Ja, Sie können eine kostenlose Testversion herunterladen[Hier](https://releases.aspose.com/).
 
 ### Wie kann ich eine temporäre Lizenz für Aspose.Words für .NET erhalten?
- Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
+Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
 
 ### Wo finde ich ausführlichere Dokumentation?
  Die ausführliche Dokumentation finden Sie[Hier](https://reference.aspose.com/words/net/).
 
-### Wie erhalte ich Support für Aspose.Words für .NET?
+### Wie kann ich Support für Aspose.Words für .NET erhalten?
  Für Support besuchen Sie die Aspose-Foren[Hier](https://forum.aspose.com/c/words/8).

@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 
 ## 結論
 
-恭喜！您已使用 Aspose.Words for .NET 在 PDF 文件中成功渲染 3D DML 效果。透過執行這些簡單的步驟，您可以將具有高級 3D 效果的 Word 文件轉換為令人驚嘆的 PDF，使您的文件更具吸引力和視覺吸引力。 Aspose.Words 的這項強大功能可顯著提高文件的簡報品質。
+恭喜！您已使用 Aspose.Words for .NET 在 PDF 文件中成功渲染了 3D DML 效果。透過執行這些簡單的步驟，您可以將具有高級 3D 效果的 Word 文件轉換為令人驚嘆的 PDF，使您的文件更具吸引力和視覺吸引力。 Aspose.Words 的這項強大功能可顯著提高文件的簡報品質。
 
 ## 常見問題解答
 

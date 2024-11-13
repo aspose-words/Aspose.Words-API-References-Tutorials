@@ -63,7 +63,7 @@ SignatureLineOptions signatureLineOptions = new SignatureLineOptions
 };
 ```
 
-これらのオプションにより、署名行がパーソナライズされ、明確でプロフェッショナルなものになります。
+これらのオプションにより、署名行がパーソナライズされ、明確かつプロフェッショナルなものになります。
 
 ## ステップ3: 署名欄を挿入する
 

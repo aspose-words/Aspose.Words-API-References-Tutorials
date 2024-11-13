@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveO
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功設定了 Word 文件的壓縮等級。這可以顯著減小檔案大小並提高處理大型文件時的效能。不要忘記探索其他壓縮級別，以找到滿足您需求的檔案大小和效能之間的最佳平衡。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功設定了 Word 文件的壓縮等級。這可以顯著減小檔案大小並提高處理大型文件時的效能。不要忘記探索其他壓縮級別，以找到滿足您需求的檔案大小和效能之間的最佳平衡。
 
 如果您有任何疑問或遇到任何問題，請查看[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或聯絡他們[支援論壇](https://forum.aspose.com/c/words/8).
 

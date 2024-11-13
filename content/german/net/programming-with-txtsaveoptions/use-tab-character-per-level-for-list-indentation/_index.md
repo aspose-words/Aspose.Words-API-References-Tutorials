@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Hier haben wir ein neues`Document` Objekt und ein`DocumentBuilder` um mit der Erstellung von Inhalten im Dokument zu beginnen.
+ Hier haben wir eine neue`Document` Objekt und ein`DocumentBuilder` um mit der Erstellung von Inhalten im Dokument zu beginnen.
 
 ## Schritt 2: Standardmäßige Listenformatierung anwenden
 
@@ -117,7 +117,7 @@ In diesem Tutorial haben wir die Erstellung einer mehrstufigen Liste mit Tabulat
 ### Kann ich auf unterschiedlichen Ebenen unterschiedliche Listenstile anwenden?
 Ja, Aspose.Words ermöglicht die Anpassung von Listenstilen auf verschiedenen Ebenen. Sie können die Listenformatierungsoptionen ändern, um unterschiedliche Stile zu erzielen.
 
-### Was ist, wenn ich Aufzählungspunkte statt Zahlen verwenden muss?
+### Was ist, wenn ich Aufzählungszeichen statt Zahlen verwenden muss?
  Verwenden Sie die`ListFormat.ApplyBulletDefault()` Methode anstelle von`ApplyNumberDefault()` um eine Aufzählungsliste zu erstellen.
 
 ### Wie kann ich die Größe des zum Einrücken verwendeten Tabulatorzeichens anpassen?

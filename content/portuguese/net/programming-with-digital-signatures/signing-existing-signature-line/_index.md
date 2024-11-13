@@ -1,24 +1,24 @@
 ---
-title: Assinando linha de assinatura existente em documento do Word
-linktitle: Assinando linha de assinatura existente em documento do Word
+title: Assinando uma linha de assinatura existente em um documento do Word
+linktitle: Assinando uma linha de assinatura existente em um documento do Word
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como assinar uma linha de assinatura existente em um documento do Word usando Aspose.Words for .NET com nosso guia passo a passo detalhado. Perfeito para desenvolvedores.
+description: Aprenda como assinar uma linha de assinatura existente em um documento do Word usando o Aspose.Words para .NET com nosso guia detalhado passo a passo. Perfeito para desenvolvedores.
 type: docs
 weight: 10
 url: /pt/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
 ## Introdução
 
-Ei! Você já precisou assinar um documento digital, mas achou isso um pouco complicado? Você está com sorte porque hoje estamos nos aprofundando em como você pode assinar facilmente uma linha de assinatura existente em um documento do Word usando Aspose.Words for .NET. Este tutorial irá guiá-lo passo a passo pelo processo, garantindo que você domine essa tarefa rapidamente.
+Olá! Você já precisou assinar um documento digital, mas achou um pouco trabalhoso? Você está com sorte porque hoje, estamos mergulhando em como você pode assinar sem esforço uma linha de assinatura existente em um documento do Word usando o Aspose.Words para .NET. Este tutorial o guiará pelo processo passo a passo, garantindo que você domine essa tarefa em pouco tempo.
 
 ## Pré-requisitos
 
-Antes de mergulharmos nos detalhes essenciais, vamos garantir que temos tudo o que precisamos:
+Antes de nos aprofundarmos nos detalhes essenciais, vamos garantir que temos tudo o que precisamos:
 
-1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words for .NET instalada. Se ainda não o fez, você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
-2. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com C#.
-3. Documento e Certificado: Documento Word com linha de assinatura e certificado digital (arquivo PFX).
-4. Conhecimento básico de C#: Familiaridade com programação C# será benéfica.
+1.  Aspose.Words para .NET: Certifique-se de ter a biblioteca Aspose.Words para .NET instalada. Se ainda não tiver, você pode baixá-la[aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com C#.
+3. Documento e certificado: Um documento do Word com uma linha de assinatura e um certificado digital (arquivo PFX).
+4. Conhecimento básico de C#: familiaridade com programação em C# será benéfica.
 
 ## Importar namespaces
 
@@ -34,14 +34,14 @@ using Aspose.Words.DigitalSignatures;
 
 ## Etapa 1: carregue seu documento
 
-Em primeiro lugar, você precisa carregar o documento do Word que contém a linha de assinatura. Esta etapa é crucial porque estabelece a base para todo o processo.
+Primeiramente, você precisa carregar o documento do Word que contém a linha de assinatura. Este passo é crucial, pois define a base para todo o processo.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
 ```
 
-## Etapa 2: acesse a linha de assinatura
+## Etapa 2: Acesse a Linha de Assinatura
 
 Agora que carregamos nosso documento, o próximo passo é localizar e acessar a linha de assinatura dentro do documento.
 
@@ -49,9 +49,9 @@ Agora que carregamos nosso documento, o próximo passo é localizar e acessar a 
 SignatureLine signatureLine = ((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## Etapa 3: configurar opções de sinal
+## Etapa 3: Configurar opções de sinalização
 
-Configurar as opções de sinalização é essencial. Isso inclui especificar o ID da linha de assinatura e fornecer a imagem que será usada como assinatura.
+Configurar as opções de assinatura é essencial. Isso inclui especificar o ID da linha de assinatura e fornecer a imagem que será usada como assinatura.
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -61,17 +61,17 @@ SignOptions signOptions = new SignOptions
 };
 ```
 
-## Etapa 4: criar titular do certificado
+## Etapa 4: Criar detentor de certificado
 
-Para assinar o documento digitalmente, é necessário um certificado digital. Veja como você cria um detentor de certificado a partir do seu arquivo PFX.
+Para assinar o documento digitalmente, você precisa de um certificado digital. Veja como criar um detentor de certificado a partir do seu arquivo PFX.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "your_password");
 ```
 
-## Etapa 5: Assine o Documento
+## Etapa 5: Assine o documento
 
-Agora combinamos todos os componentes para assinar o documento. É aqui que a mágica acontece!
+Agora, combinamos todos os componentes para assinar o documento. É aqui que a mágica acontece!
 
 ```csharp
 DigitalSignatureUtil.Sign(
@@ -84,26 +84,26 @@ DigitalSignatureUtil.Sign(
 
 ## Conclusão
 
-E aí está! Você assinou com sucesso uma linha de assinatura existente em um documento do Word usando Aspose.Words for .NET. Não é muito difícil, certo? Com essas etapas, agora você pode assinar documentos digitalmente, adicionando uma camada extra de autenticidade e profissionalismo. Assim, da próxima vez que alguém lhe enviar um documento para assinar, você saberá exatamente o que fazer!
+E aí está! Você assinou com sucesso uma linha de assinatura existente em um documento do Word usando o Aspose.Words para .NET. Não é muito difícil, certo? Com essas etapas, agora você pode assinar documentos digitalmente, adicionando aquela camada extra de autenticidade e profissionalismo. Então, da próxima vez que alguém lhe enviar um documento para assinar, você saberá exatamente o que fazer!
 
 ## Perguntas frequentes
 
 ### O que é Aspose.Words para .NET?
 
-Aspose.Words for .NET é uma biblioteca poderosa para trabalhar com documentos do Word em aplicativos .NET. Ele permite criar, modificar e converter documentos do Word programaticamente.
+Aspose.Words for .NET é uma biblioteca poderosa para trabalhar com documentos do Word em aplicativos .NET. Ela permite que você crie, modifique e converta documentos do Word programaticamente.
 
-### Onde posso obter uma avaliação gratuita do Aspose.Words for .NET?
+### Onde posso obter uma avaliação gratuita do Aspose.Words para .NET?
 
  Você pode baixar uma versão de teste gratuita[aqui](https://releases.aspose.com/).
 
 ### Posso usar qualquer formato de imagem para a assinatura?
 
-Aspose.Words oferece suporte a vários formatos de imagem, mas o uso de um metarquivo aprimorado (EMF) fornece melhor qualidade para assinaturas.
+O Aspose.Words suporta vários formatos de imagem, mas usar um metarquivo aprimorado (EMF) proporciona melhor qualidade para assinaturas.
 
 ### Como posso obter um certificado digital?
 
-Você pode comprar certificados digitais de vários fornecedores online. Certifique-se de que o certificado esteja no formato PFX e que você tenha a senha.
+Você pode comprar certificados digitais de vários provedores online. Certifique-se de que o certificado esteja no formato PFX e que você tenha a senha.
 
-### Onde posso encontrar mais documentação sobre Aspose.Words for .NET?
+### Onde posso encontrar mais documentação sobre o Aspose.Words para .NET?
 
- Você pode encontrar extensa documentação[aqui](https://reference.aspose.com/words/net/).
+ Você pode encontrar ampla documentação[aqui](https://reference.aspose.com/words/net/).

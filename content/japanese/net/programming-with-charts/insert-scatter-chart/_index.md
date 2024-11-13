@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## ステップ 1: ドキュメントと DocumentBuilder を初期化する
 
-まず、新しいインスタンスを初期化します。`Document`クラスと`DocumentBuilder`クラスを使用してドキュメントの構築を開始します。
+まず、新しいインスタンスを初期化します`Document`クラスと`DocumentBuilder`クラスを使用してドキュメントの構築を開始します。
 
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
@@ -60,7 +60,7 @@ chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[]
 
 ## ステップ4: ドキュメントを保存する
 
-最後に、変更したドキュメントを目的の場所に保存します。`Save`方法の`Document`クラス。
+最後に、変更した文書を目的の場所に保存します。`Save`方法の`Document`クラス。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 
 ## 結論
 
-おめでとうございます! Aspose.Words for .NET を使用して散布図を Word 文書に挿入する方法を学習しました。散布図はデータの関係を視覚化する優れたツールであり、Aspose.Words を使用すると、散布図を文書に簡単に統合して、明瞭性と理解性を高めることができます。
+おめでとうございます。Aspose.Words for .NET を使用して散布図を Word 文書に挿入する方法を学習しました。散布図はデータの関係を視覚化する優れたツールであり、Aspose.Words を使用すると、散布図を文書に簡単に統合して、明瞭性と理解性を高めることができます。
 
 ## よくある質問
 

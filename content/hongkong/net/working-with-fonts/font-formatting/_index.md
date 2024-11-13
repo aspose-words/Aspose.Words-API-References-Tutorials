@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 
 ## 結論
 
-現在你就得到它了！透過遵循這些簡單的步驟，您可以使用 Aspose.Words for .NET 設定 Word 文件中的字體格式。這個強大的庫使您可以對文件格式進行精細控制，使您可以輕鬆建立專業且精美的文件。
+現在你就擁有了！透過遵循這些簡單的步驟，您可以使用 Aspose.Words for .NET 設定 Word 文件中的字體格式。這個強大的程式庫可以讓您對文件格式進行精細控制，讓您輕鬆建立專業且精美的文件。
 
 ## 常見問題解答
 

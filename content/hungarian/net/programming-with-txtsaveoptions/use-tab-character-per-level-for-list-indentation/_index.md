@@ -121,7 +121,7 @@ Igen, az Aspose.Words lehetővé teszi a listastílusok testreszabását külön
  Használja a`ListFormat.ApplyBulletDefault()` módszer helyett`ApplyNumberDefault()` pontozott lista létrehozásához.
 
 ### Hogyan állíthatom be a behúzáshoz használt tabulátor karakter méretét?
- Sajnos a lap mérete be`TxtSaveOptions`rögzített. A behúzás méretének módosításához szükség lehet szóközök használatára vagy a lista formázásának közvetlen testreszabására.
+ Sajnos a fül mérete be`TxtSaveOptions`rögzített. A behúzás méretének módosításához szükség lehet szóközök használatára vagy a lista formázásának közvetlen testreszabására.
 
 ### Használhatom ezeket a beállításokat, ha más formátumba, például PDF vagy DOCX formátumba exportálok?
 A tabulátor karakter beállításai a szöveges fájlokra vonatkoznak. Az olyan formátumok esetében, mint a PDF vagy a DOCX, ezeken a formátumokon belül módosítania kell a formázási beállításokat.

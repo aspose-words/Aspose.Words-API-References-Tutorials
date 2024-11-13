@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 ## 常见问题解答
 
 ### 什么是 1Bpp 索引图像？
-1Bpp（每像素 1 位）索引图像是黑白图像格式，其中每个像素由单个位（0 或 1）表示。这种格式的空间效率很高。
+1Bpp（每像素 1 位）索引图像是一种黑白图像格式，其中每个像素由一个位（0 或 1）表示。这种格式的空间效率很高。
 
 ### 我可以一次转换 Word 文档的多页吗？
 是的，你可以。修改`PageSet`财产在`ImageSaveOptions`包含多页或整个文档。

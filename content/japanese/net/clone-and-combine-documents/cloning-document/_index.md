@@ -55,7 +55,7 @@ using Aspose.Words;
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2. ドキュメントをロードする:`Document`サンプル ドキュメントを読み込むクラス。
+2. ドキュメントを読み込む:`Document`サンプル ドキュメントを読み込むクラス。
 
     ```csharp
     Document doc = new Document(dataDir + "Document.docx");

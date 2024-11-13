@@ -24,7 +24,7 @@ I dagens digitala värld är konvertering av Word-dokument till HTML-sidor ett v
 
 ## Att sätta upp projektet
 
-Börja med att skapa ett Java-projekt och lägga till Aspose.Words for Java-biblioteket till ditt projekts klassväg. Du kan göra detta genom att inkludera JAR-filerna du laddade ner tidigare.
+För att börja, skapa ett Java-projekt och lägg till Aspose.Words for Java-biblioteket till ditt projekts klassväg. Du kan göra detta genom att inkludera JAR-filerna du laddade ner tidigare.
 
 ## Laddar ett Word-dokument
 

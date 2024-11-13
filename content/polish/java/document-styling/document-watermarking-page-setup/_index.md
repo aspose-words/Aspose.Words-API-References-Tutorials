@@ -1,21 +1,21 @@
 ---
-title: Znak wodny dokumentu i konfiguracja strony
-linktitle: Znak wodny dokumentu i konfiguracja strony
+title: Znakowanie wodne dokumentów i konfiguracja strony
+linktitle: Znakowanie wodne dokumentów i konfiguracja strony
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak stosować znaki wodne i konfigurować konfiguracje strony za pomocą Aspose.Words dla Java. Obszerny przewodnik z kodem źródłowym.
+description: Dowiedz się, jak stosować znaki wodne i konfigurować strony za pomocą Aspose.Words dla Java. Kompleksowy przewodnik z kodem źródłowym.
 type: docs
 weight: 13
 url: /pl/java/document-styling/document-watermarking-page-setup/
 ---
 ## Wstęp
 
-W dziedzinie manipulacji dokumentami Aspose.Words dla Java jest potężnym narzędziem, pozwalającym programistom sprawować kontrolę nad każdym aspektem przetwarzania dokumentów. W tym obszernym przewodniku zagłębimy się w zawiłości związane ze znakami wodnymi dokumentów i konfiguracją strony za pomocą Aspose.Words dla Java. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero wkraczasz w świat przetwarzania dokumentów w języku Java, ten przewodnik krok po kroku zapewni Ci potrzebną wiedzę i kod źródłowy.
+W dziedzinie manipulacji dokumentami Aspose.Words for Java jest potężnym narzędziem, pozwalającym programistom sprawować kontrolę nad każdym aspektem przetwarzania dokumentów. W tym kompleksowym przewodniku zagłębimy się w zawiłości znakowania wodnego dokumentów i konfiguracji stron przy użyciu Aspose.Words for Java. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero wkraczasz w świat przetwarzania dokumentów Java, ten przewodnik krok po kroku wyposaży Cię w wiedzę i kod źródłowy, których potrzebujesz.
 
-## Znak wodny dokumentu
+## Znakowanie wodne dokumentów
 
 ### Dodawanie znaków wodnych
 
-Dodawanie znaków wodnych do dokumentów może mieć kluczowe znaczenie dla budowania marki lub zabezpieczania treści. Aspose.Words for Java sprawia, że to zadanie jest proste. Oto jak:
+Dodawanie znaków wodnych do dokumentów może mieć kluczowe znaczenie dla brandingu lub zabezpieczenia treści. Aspose.Words dla Java ułatwia to zadanie. Oto jak:
 
 ```java
 // Załaduj dokument
@@ -27,7 +27,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(300);
 watermark.setHeight(100);
 
-// Ustaw znak wodny
+// Umieść znak wodny
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.PAGE);
 watermark.setRelativeVerticalPosition(RelativeVerticalPosition.PAGE);
 watermark.setWrapType(WrapType.NONE);
@@ -43,13 +43,13 @@ doc.save("document_with_watermark.docx");
 
 ### Dostosowywanie znaków wodnych
 
-Możesz dodatkowo dostosować znaki wodne, dostosowując czcionkę, rozmiar, kolor i obrót. Dzięki tej elastyczności znak wodny będzie idealnie dopasowany do stylu dokumentu.
+Możesz dalej dostosowywać znaki wodne, dostosowując czcionkę, rozmiar, kolor i obrót. Ta elastyczność zapewnia, że znak wodny będzie idealnie pasował do stylu dokumentu.
 
-## Konfiguracja strony
+## Ustawienia strony
 
-### Rozmiar strony i orientacja
+### Rozmiar i orientacja strony
 
-Konfiguracja strony ma kluczowe znaczenie w formatowaniu dokumentu. Aspose.Words dla Java oferuje pełną kontrolę nad rozmiarem i orientacją strony:
+Ustawienia strony są kluczowe w formatowaniu dokumentu. Aspose.Words dla Java oferuje pełną kontrolę nad rozmiarem i orientacją strony:
 
 ```java
 // Załaduj dokument
@@ -68,7 +68,7 @@ doc.save("formatted_document.docx");
 
 ### Marginesy i numeracja stron
 
-Precyzyjna kontrola marginesów i numeracji stron jest niezbędna w przypadku profesjonalnych dokumentów. Osiągnij to dzięki Aspose.Words dla Java:
+Precyzyjna kontrola nad marginesami i numeracją stron jest niezbędna w przypadku profesjonalnych dokumentów. Osiągnij to dzięki Aspose.Words for Java:
 
 ```java
 // Załaduj dokument
@@ -80,7 +80,7 @@ doc.getFirstSection().getPageSetup().setRightMargin(72.0);
 doc.getFirstSection().getPageSetup().setTopMargin(72.0);
 doc.getFirstSection().getPageSetup().setBottomMargin(72.0);
 
-// Włącz numerację stron
+// Włącz numerowanie stron
 doc.getFirstSection().getPageSetup().setDifferentFirstPageHeaderFooter(true);
 HeaderFooter firstPageHeader = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 firstPageHeader.appendParagraph("First Page Header");
@@ -93,7 +93,7 @@ doc.save("formatted_document.docx");
 
 ### Jak usunąć znak wodny z dokumentu?
 
-Aby usunąć znak wodny z dokumentu, możesz przeglądać kształty dokumentu i usuwać te reprezentujące znaki wodne. Oto fragment:
+Aby usunąć znak wodny z dokumentu, możesz przejść przez kształty dokumentu i usunąć te, które reprezentują znaki wodne. Oto fragment:
 
 ```java
 Document doc = new Document("document_with_watermark.docx");
@@ -109,11 +109,11 @@ doc.save("document_without_watermark.docx");
 
 ### Czy mogę dodać wiele znaków wodnych do jednego dokumentu?
 
-Tak, możesz dodać wiele znaków wodnych do dokumentu, tworząc dodatkowe obiekty Shape i umieszczając je według potrzeb.
+Tak, możesz dodać do dokumentu wiele znaków wodnych, tworząc dodatkowe obiekty kształtu i rozmieszczając je według potrzeb.
 
-### Jak zmienić rozmiar strony na legalny w orientacji poziomej?
+### Jak zmienić rozmiar strony na zgodny z ustawieniami poziomymi?
 
-Aby ustawić legalny rozmiar strony w orientacji poziomej, zmodyfikuj szerokość i wysokość strony w następujący sposób:
+Aby ustawić dozwolony rozmiar strony w orientacji poziomej, zmień szerokość i wysokość strony w następujący sposób:
 
 ```java
 doc.getFirstSection().getPageSetup().setPageWidth(842.0);
@@ -122,22 +122,22 @@ doc.getFirstSection().getPageSetup().setPageHeight(595.0);
 
 ### Jaka jest domyślna czcionka znaków wodnych?
 
-Domyślną czcionką znaków wodnych jest Calibri o rozmiarze czcionki 36.
+Domyślną czcionką dla znaków wodnych jest Calibri o rozmiarze 36.
 
-### Jak dodać numery stron zaczynając od konkretnej strony?
+### Jak mogę dodać numery stron, zaczynając od określonej strony?
 
-Można to osiągnąć ustawiając numer strony początkowej w dokumencie w następujący sposób:
+Można to osiągnąć, ustawiając numer strony początkowej w dokumencie w następujący sposób:
 
 ```java
 doc.getFirstSection().getPageSetup().setPageStartingNumber(5);
 ```
 
-### Jak wyśrodkować tekst w nagłówku lub stopce?
+### Jak wyrównać tekst w nagłówku lub stopce do środka?
 
-Tekst w nagłówku lub stopce można wyśrodkować, korzystając z metody setAlignment na obiekcie Akapit w nagłówku lub stopce.
+Tekst w nagłówku lub stopce można wyrównać do środka, używając metody setAlignment w obiekcie Paragraph w nagłówku lub stopce.
 
 ## Wniosek
 
-tym obszernym przewodniku zgłębiliśmy sztukę znakowania wodnego dokumentów i konfigurowania strony za pomocą Aspose.Words dla Java. Uzbrojeni w dostarczone fragmenty kodu źródłowego i spostrzeżenia, posiadasz teraz narzędzia do finezyjnego manipulowania i formatowania dokumentów. Aspose.Words for Java umożliwia tworzenie profesjonalnych, markowych dokumentów dostosowanych do Twoich dokładnych specyfikacji.
+tym obszernym przewodniku zbadaliśmy sztukę znakowania wodnego dokumentów i konfiguracji stron przy użyciu Aspose.Words for Java. Uzbrojony w dostarczone fragmenty kodu źródłowego i spostrzeżenia, posiadasz teraz narzędzia do manipulowania i formatowania dokumentów z finezją. Aspose.Words for Java umożliwia tworzenie profesjonalnych, markowych dokumentów dostosowanych do Twoich dokładnych specyfikacji.
 
-Opanowanie manipulacji dokumentami to cenna umiejętność dla programistów, a Aspose.Words for Java jest Twoim zaufanym towarzyszem w tej podróży. Zacznij tworzyć wspaniałe dokumenty już dziś!
+Opanowanie manipulacji dokumentami to cenna umiejętność dla programistów, a Aspose.Words for Java jest Twoim zaufanym towarzyszem w tej podróży. Zacznij tworzyć oszałamiające dokumenty już dziś!

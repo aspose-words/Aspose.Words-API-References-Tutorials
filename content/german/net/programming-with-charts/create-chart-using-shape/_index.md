@@ -13,7 +13,7 @@ Das Erstellen und Anpassen von Diagrammen in Ihren Dokumenten ist in der heutige
 
 ## Voraussetzungen
 
-Bevor Sie in den Code eintauchen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+Bevor Sie sich in den Code vertiefen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 -  Aspose.Words für .NET-Bibliothek: Sie können sie herunterladen[Hier](https://releases.aspose.com/words/net/).
 - Visual Studio: Jede Version, die .NET unterstützt.
@@ -52,7 +52,7 @@ Chart chart = shape.Chart;
 
 ## Schritt 3: Den Diagrammtitel anpassen
 
-Durch Anpassen des Diagrammtitels können Sie den Kontext für die angezeigten Daten verbessern. Sie können den Titel anzeigen und seinen Text mit dem folgenden Code festlegen:
+Durch Anpassen des Diagrammtitels können Sie den Kontext für die angezeigten Daten verbessern. Mit dem folgenden Code können Sie den Titel anzeigen und seinen Text festlegen:
 
 ```csharp
 chart.Title.Show = true;
@@ -94,7 +94,7 @@ In diesem Tutorial haben wir erläutert, wie Sie mit Aspose.Words für .NET ein 
 
 ### Gibt es eine Möglichkeit, Support zu erhalten, wenn ich auf Probleme stoße?
 
- Absolut. Sie können Support über die Aspose-Community-Foren erhalten[Hier](https://forum.aspose.com/c/words/8)Die Community und die Mitarbeiter von Aspose reagieren sehr schnell.
+ Absolut. Sie können über die Aspose-Community-Foren auf Support zugreifen[Hier](https://forum.aspose.com/c/words/8)Die Community und die Mitarbeiter von Aspose reagieren sehr schnell.
 
 ### Wie kaufe ich eine Lizenz für Aspose.Words für .NET?
 

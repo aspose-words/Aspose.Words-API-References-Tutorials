@@ -40,14 +40,14 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## 2. lépés: Töltse be a dokumentumot
 
-Ezután töltsük be a Word dokumentumot a programunkba. Gondolj erre úgy, mint a kincsesládád kinyitására.
+Ezután töltsük be a Word dokumentumot a programunkba. Gondolj erre úgy, mint a kincsesláda kinyitására.
 
 ```csharp
 // Töltse be a dokumentumot.
 Document doc = new Document(dataDir + "Various fields.docx");
 ```
 
-## 3. lépés: Válassza ki az eltávolítandó mezőt
+## 3. lépés: Válassza ki az eltávolítani kívánt mezőt
 
 Most jön az izgalmas rész – az eltávolítani kívánt mező kiválasztása. Ez olyan, mintha a kincsesládából kiválasztaná az adott ékszert.
 

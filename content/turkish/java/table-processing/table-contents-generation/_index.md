@@ -1,95 +1,95 @@
 ---
-title: İçindekiler Oluşturma
-linktitle: İçindekiler Oluşturma
+title: İçindekiler Üretimi
+linktitle: İçindekiler Üretimi
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak dinamik İçindekiler Tablosu'nu nasıl oluşturacağınızı öğrenin. Adım adım rehberlik ve kaynak kodu örnekleriyle TOC oluşturma konusunda uzmanlaşın.
+description: Java için Aspose.Words kullanarak dinamik İçindekiler Tablosu oluşturmayı öğrenin. Adım adım rehberlik ve kaynak kodu örnekleriyle İçindekiler Tablosu oluşturma konusunda ustalaşın.
 type: docs
 weight: 14
 url: /tr/java/table-processing/table-contents-generation/
 ---
 
-Aspose.Words for Java'yı kullanarak İçindekiler Tablosu (TOC) oluşturma konusunda ustalaşmaya yönelik bir yolculuğa çıkmaya hazır mısınız? Bu kapsamlı kılavuzda, dinamik ve görsel olarak çekici TOC'leri zahmetsizce oluşturma sanatını keşfedeceğiz. Bu özelliği Java uygulamalarınızda sorunsuz bir şekilde uygulamak için gereken bilgi ve becerilerle donatılmış olacaksınız. O halde hemen içeri dalalım!
+Java için Aspose.Words kullanarak İçindekiler Tablosu (TOC) oluşturmada ustalaşmak için bir yolculuğa çıkmaya hazır mısınız? Bu kapsamlı kılavuzda, dinamik ve görsel olarak çekici TOC'leri zahmetsizce oluşturma sanatını keşfedeceğiz. Bu özelliği Java uygulamalarınızda sorunsuz bir şekilde uygulamak için gereken bilgi ve becerilere sahip olacaksınız. Hadi, hemen başlayalım!
 
 ## giriiş
 
-İçindekiler Tablosu (TOC), iyi yapılandırılmış herhangi bir belgenin önemli bir bileşenidir. Okuyuculara uzun belgeler arasında kolaylıkla gezinmelerine olanak tanıyan bir yol haritası sağlar. Aspose.Words for Java, Java uygulamalarında TOC oluşturmayı kolaylaştıran güçlü bir API'dir. Bu adım adım kılavuzda, Aspose.Words for Java'yı kullanarak dinamik olarak TOC'ler oluşturmak için bilmeniz gereken her şeyi ele alacağız.
+İçindekiler Tablosu (TOC), iyi yapılandırılmış herhangi bir belgenin temel bir bileşenidir. Okuyuculara bir yol haritası sunarak uzun belgelerde kolayca gezinmelerini sağlar. Aspose.Words for Java, Java uygulamalarında TOC oluşturmayı basitleştiren güçlü bir API'dir. Bu adım adım kılavuzda, Aspose.Words for Java kullanarak dinamik olarak TOC oluşturmak için bilmeniz gereken her şeyi ele alacağız.
 
-## Aspose.Words for Java'ya Başlarken
+## Java için Aspose.Words'e Başlarken
 
-TOC oluşturmanın ayrıntılarına girmeden önce ortamımızı kuralım ve Aspose.Words for Java'yı tanıyalım.
+İçindekiler oluşturmanın ayrıntılarına dalmadan önce, ortamımızı ayarlayalım ve Java için Aspose.Words'ü tanıyalım.
 
 ### Ortamınızı Kurma
 
-Başlamak için Aspose.Words for Java'nın kurulu olduğundan emin olun. Web sitesinden indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+Başlamak için Aspose.Words for Java'nın yüklü olduğundan emin olun. Bunu web sitesinden indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
 ### Yeni Bir Java Projesi Oluşturma
 
 En sevdiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturarak başlayın.
 
-### Aspose.Words for Java'yı Projenize Ekleme
+### Projenize Aspose.Words for Java'yı Ekleme
 
-Aspose.Words for Java kütüphanesini bağımlılıklarınıza dahil ederek projenize ekleyin.
+Aspose.Words for Java kütüphanesini bağımlılıklarınıza ekleyerek projenize ekleyin.
 
-### Aspose.Words'ün başlatılması
+### Aspose.Words başlatılıyor
 
-Onunla çalışmaya başlamak için Java kodunuzda Aspose.Words'ü başlatın.
+Java kodunuzda Aspose.Words'ü başlatarak çalışmaya başlayabilirsiniz.
 
 ```java
-// Aspose.Words'ü başlat
+// Aspose.Words'ü Başlat
 com.aspose.words.Document doc = new com.aspose.words.Document();
 ```
 
 ## İçindekiler Tablosunu (TOC) Anlamak
 
-TOC'leri oluşturmaya başlamadan önce, bunların ne olduğunu ve nasıl çalıştıklarını daha derinlemesine anlayalım.
+İçindekiler tablosu oluşturmaya başlamadan önce, bunların ne olduğu ve nasıl çalıştığı konusunda daha derin bir anlayışa sahip olalım.
 
-### İçindekiler Tablosu nedir?
+### İçindekiler Nedir?
 
 İçindekiler Tablosu, bir belgenin başında görünen ve belge içindeki çeşitli bölümlere veya bölümlere bağlantılar sağlayan bir listedir. Okuyucular için yararlı bir gezinme aracı görevi görür.
 
-### TOC Üretimi Nasıl Çalışır?
+### İçindekiler Oluşturma Nasıl Çalışır?
 
-İçindekiler oluşturma, belgenizdeki belirli başlıkları veya içeriği tanımlamayı ve bu bölümlere bağlantılar oluşturmayı içerir. Aspose.Words for Java, önceden tanımlanmış kurallara göre TOC'lerin oluşturulmasını otomatikleştirerek bu süreci basitleştirir.
+İçindekiler oluşturma, belgenizdeki belirli başlıkları veya içeriği tanımlamayı ve bu bölümlere bağlantılar oluşturmayı içerir. Aspose.Words for Java, önceden tanımlanmış kurallara dayalı İçindekiler oluşturmayı otomatikleştirerek bu süreci basitleştirir.
 
 ## Temel İçindekiler Tablosu Oluşturma
 
-Artık sağlam bir temele sahip olduğumuza göre Aspose.Words for Java'yı kullanarak temel bir TOC oluşturalım.
+Artık sağlam bir temele sahip olduğumuza göre, Aspose.Words for Java'yı kullanarak basit bir İçindekiler tablosu oluşturalım.
 
 ```java
-// Yeni bir İçindekiler Tablosu oluşturun
+// Yeni bir İçindekiler Tablosu Oluştur
 com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
 tocField.update();
 ```
 
-Yukarıdaki kod belgenizde temel bir TOC oluşturur. Düzeyleri, biçimlendirmeyi ve daha fazlasını belirterek bunu daha da özelleştirebilirsiniz.
+Yukarıdaki kod belgenizde temel bir TOC oluşturur. Seviyeleri, biçimlendirmeyi ve daha fazlasını belirterek daha da özelleştirebilirsiniz.
 
-## Gelişmiş TOC Özelleştirmesi
+## Gelişmiş İçindekiler Özelleştirmesi
 
-Aspose.Words for Java, TOC'leriniz için kapsamlı özelleştirme seçenekleri sunar. Bazı gelişmiş özellikleri inceleyelim:
+Java için Aspose.Words, TOC'larınız için kapsamlı özelleştirme seçenekleri sunar. Bazı gelişmiş özellikleri inceleyelim:
 
 ### İçindekiler Stillerini Özelleştirme
 
 İçindekiler stillerinizi belgenizin estetiğine uyacak şekilde tanımlayabilirsiniz.
 
 ```java
-// İçindekiler stillerini özelleştirin
+// İçindekiler stillerini özelleştir
 com.aspose.words.Style tocStyle = doc.getStyles().add(StyleType.PARAGRAPH, "MyTOCStyle");
 tocStyle.getFont().setSize(16);
 tocStyle.getFont().setBold(true);
 ```
 
-### Belirli Başlıklar Dahil
+### Belirli Başlıkları Dahil Etmek
 
-Anahat düzeylerini belirterek TOC'nize hangi başlıkların dahil edileceğini seçebilirsiniz.
+İçindekiler tablonuzda hangi başlıkların yer alacağını, ana hat düzeylerini belirterek seçebilirsiniz.
 
 ```java
-// Yalnızca belirli başlıkları dahil et
+// Yalnızca belirli başlıkları ekleyin
 tocField.setCode("TOC \\o \"1-3\" \\h \\z");
 ```
 
-## TOC Oluşturma için Kaynak Kodu Ekleme
+## İçindekiler Oluşturma için Kaynak Kodunun Eklenmesi
 
-Java uygulamalarınızda TOC oluşturmayı otomatikleştirmek için kaynak kodunu entegre ederek bunu bir adım daha ileri götürelim.
+Java uygulamalarınızda TOC üretimini otomatikleştirmek için kaynak kodunu entegre ederek bunu bir adım öteye taşıyalım.
 
 ```java
 // Java'da TOC oluşturmayı otomatikleştirin
@@ -97,21 +97,21 @@ public void generateTOC() {
     com.aspose.words.Document doc = new com.aspose.words.Document();
     com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
     tocField.update();
-    // Buraya daha fazla özelleştirme ekleyin
+    // Daha fazla özelleştirmeyi buraya ekleyin
 }
 ```
 
-TOC üretimini bir yöntem içinde kapsülleyerek projelerinize kolayca dahil edebilirsiniz.
+İçindekiler (TOC) üretimini bir metot içerisine yerleştirerek projelerinize kolaylıkla dahil edebilirsiniz.
 
 ## SSS
 
-### Mevcut bir TOC'yi nasıl güncelleyebilirim?
+### Mevcut bir İçindekiler tablosunu nasıl güncelleyebilirim?
 
-Belgenizdeki mevcut bir TOC'yi güncellemek için, üzerine sağ tıklayın ve "Alanı Güncelle"yi seçin. Aspose.Words for Java, belgenizin başlıklarındaki değişikliklere bağlı olarak İçindekiler'i yenileyecektir.
+Belgenizdeki mevcut bir İçindekiler tablosunu güncellemek için, üzerine sağ tıklayın ve "Alanı Güncelle"yi seçin. Aspose.Words for Java, belgenizin başlıklarındaki değişikliklere göre İçindekiler tablosunu yenileyecektir.
 
-### Tek bir belgede birden fazla İçindekiler oluşturabilir miyim?
+### Tek bir belgede birden fazla İçindekiler tablosu oluşturabilir miyim?
 
-Evet, tek bir belgede birden fazla İçindekiler oluşturabilirsiniz. Her TOC için farklı alan kodları kullanın ve ayarlarını gerektiği gibi özelleştirin.
+Evet, tek bir belgede birden fazla TOC üretebilirsiniz. Her TOC için farklı alan kodları kullanın ve ayarlarını gerektiği gibi özelleştirin.
 
 ### Aspose.Words for Java hem küçük hem de büyük belgeler için uygun mudur?
 
@@ -119,16 +119,16 @@ Kesinlikle! Aspose.Words for Java çok yönlüdür ve küçük raporlardan kapsa
 
 ### İçindekiler girişlerimin görünümünü özelleştirebilir miyim?
 
-Kesinlikle! İçindekiler girişleri için belgenizin tasarımına ve formatına uyacak özel stiller tanımlayabilirsiniz.
+Elbette! İçindekiler girişleri için belgenizin tasarımına ve biçimlendirmesine uyacak şekilde özel stiller tanımlayabilirsiniz.
 
-### Aspose.Words for Java, TOC içindeki çapraz referansları destekliyor mu?
+### Aspose.Words for Java, İçindekiler tablosunda çapraz referansları destekliyor mu?
 
-Evet, belgenizdeki belirli bölümlere veya sayfalara bağlantı vermek için TOC içinde çapraz referanslar oluşturabilirsiniz.
+Evet, belgenizdeki belirli bölümlere veya sayfalara bağlantı vermek için İçindekiler tablosunda çapraz referanslar oluşturabilirsiniz.
 
 ### Aspose.Words for Java web uygulamaları için uygun mudur?
 
-Aslında Aspose.Words for Java, TOC'leri dinamik olarak oluşturmak için web uygulamalarına sorunsuz bir şekilde entegre edilebilir.
+Aspose.Words for Java, dinamik olarak İçindekiler tablosu oluşturmak için web uygulamalarına sorunsuz bir şekilde entegre edilebilir.
 
 ## Çözüm
 
-Bu kapsamlı kılavuzda Aspose.Words for Java'yı kullanarak İçindekiler Tablosu (TOC) oluşturma sanatını inceledik. Ortamınızı nasıl kuracağınızı, temel ve gelişmiş TOC'leri nasıl oluşturacağınızı ve hatta TOC oluşturmayı kaynak koduyla Java projelerinize nasıl entegre edeceğinizi öğrendiniz. Aspose.Words for Java, belgelerinizi dinamik ve görsel açıdan çekici TOC'lerle geliştirmenize olanak sağlar. Şimdi devam edin ve bu bilgiyi Java uygulamalarınızda çarpıcı İçindekiler oluşturmak için uygulayın. Mutlu kodlama!
+Bu kapsamlı kılavuzda, Java için Aspose.Words kullanarak İçindekiler Tablosu (TOC) oluşturma sanatını inceledik. Ortamınızı nasıl kuracağınızı, temel ve gelişmiş TOC'ler nasıl oluşturacağınızı ve hatta kaynak koduyla Java projelerinize TOC oluşturmayı öğrendiniz. Java için Aspose.Words, belgelerinizi dinamik ve görsel olarak çekici TOC'lerle geliştirmenize olanak tanır. Şimdi, devam edin ve bu bilgiyi Java uygulamalarınızda çarpıcı TOC'ler oluşturmak için kullanın. İyi kodlamalar!

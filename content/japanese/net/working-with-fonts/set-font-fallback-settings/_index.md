@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ステップ2: ドキュメントを読み込む
 
-ドキュメントをAspose.Wordsにロードする`Document`オブジェクト。このステップでは、ドキュメントをプログラムで操作できます。
+ドキュメントをAspose.Wordsにロードする`Document`オブジェクト。この手順により、ドキュメントをプログラムで操作できるようになります。
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

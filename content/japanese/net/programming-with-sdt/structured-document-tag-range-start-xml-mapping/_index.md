@@ -2,14 +2,14 @@
 title: 構造化ドキュメントのタグ範囲の開始 XML マッピング
 linktitle: 構造化ドキュメントのタグ範囲の開始 XML マッピング
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word の構造化ドキュメント タグに XML データを動的にバインドする方法を学びます。ステップ バイ ステップ ガイドに従ってください。
+description: Aspose.Words for .NET を使用して、Word で XML データを構造化ドキュメント タグに動的にバインドする方法を学びます。ステップ バイ ステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/programming-with-sdt/structured-document-tag-range-start-xml-mapping/
 ---
 ## 導入
 
-Word 文書に XML データを動的に挿入したいと思ったことはありませんか? 幸運です! Aspose.Words for .NET を使用すると、この作業が簡単になります。このチュートリアルでは、構造化されたドキュメントのタグ範囲開始 XML マッピングについて詳しく説明します。この機能を使用すると、カスタム XML パーツをコンテンツ コントロールにバインドして、ドキュメント コンテンツを XML データでシームレスに更新できます。ドキュメントを動的な傑作に変える準備ができました。
+Word 文書に XML データを動的に挿入したいと思ったことはありませんか? 幸運です! Aspose.Words for .NET を使用すると、この作業が簡単になります。このチュートリアルでは、構造化されたドキュメントのタグ範囲開始 XML マッピングについて詳しく説明します。この機能を使用すると、カスタム XML パーツをコンテンツ コントロールにバインドして、ドキュメント コンテンツが XML データとシームレスに更新されるようにすることができます。ドキュメントを動的な傑作に変える準備ができました。
 
 ## 前提条件
 
@@ -94,7 +94,7 @@ sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 
 ## ステップ6: ドキュメントを保存する
 
-最後に、ドキュメントを保存して、変更が実際に反映されていることを確認します。Word ドキュメントの SDT に、指定した XML コンテンツが表示されるようになります。
+最後に、ドキュメントを保存して変更内容を確認します。Word ドキュメントの SDT に、指定した XML コンテンツが表示されるようになります。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
  XML部分の内容を更新するには、`xmlPartContent`文字列をドキュメントに追加する前に、新しいデータで文字列を更新して、`CustomXmlParts`コレクション。
 
 ### 同じドキュメント内の複数の XML パーツを異なる SDT にバインドできますか?
-はい、同じドキュメント内の異なる SDT に複数の XML パーツをバインドできます。各 SDT には、独自の XML パーツと XPath マッピングを設定できます。
+はい、同じドキュメント内の複数の XML パーツを異なる SDT にバインドできます。各 SDT には、独自の XML パーツと XPath マッピングを設定できます。
 
 ### 複雑な XML 構造を SDT にマップすることは可能ですか?
 もちろんです! XML 部分内の目的の要素を正確に指す詳細な XPath 式を使用することで、複雑な XML 構造を SDT にマップできます。

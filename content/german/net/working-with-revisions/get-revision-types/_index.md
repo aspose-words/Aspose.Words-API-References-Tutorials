@@ -9,11 +9,11 @@ url: /de/net/working-with-revisions/get-revision-types/
 ---
 ## Einführung
 
-Haben Sie sich schon einmal knietief in einem Meer von Dokumentrevisionen wiedergefunden und sich gefragt, wer was wann verschoben hat? Damit sind Sie nicht allein. Die Handhabung von Dokumentrevisionen kann eine mühsame Aufgabe sein, insbesondere bei umfangreichen Dokumenten. Aber keine Sorge! Mit Aspose.Words für .NET können Sie diese Revisionen problemlos identifizieren und verwalten. In dieser Anleitung führen wir Sie Schritt für Schritt durch den Prozess, wie Sie mit Aspose.Words für .NET Revisionstypen von Wörtern in einem Word-Dokument erhalten. Also, schnallen Sie sich an und legen Sie los!
+Haben Sie sich schon einmal knietief in einem Meer von Dokumentrevisionen wiedergefunden und sich gefragt, wer was wann verschoben hat? Sie sind nicht allein. Die Handhabung von Dokumentrevisionen kann eine mühsame Aufgabe sein, insbesondere bei umfangreichen Dokumenten. Aber keine Sorge! Mit Aspose.Words für .NET können Sie diese Revisionen problemlos identifizieren und verwalten. In dieser Anleitung führen wir Sie Schritt für Schritt durch den Prozess, wie Sie mit Aspose.Words für .NET Revisionstypen von Wörtern in einem Word-Dokument erhalten. Also, schnallen Sie sich an und legen Sie los!
 
 ## Voraussetzungen
 
-Bevor wir uns mit dem Code die Hände schmutzig machen, benötigen Sie ein paar Dinge:
+Bevor wir uns mit dem Code die Hände schmutzig machen, brauchen Sie ein paar Dinge:
 
 1.  Aspose.Words für .NET-Bibliothek: Falls noch nicht geschehen, laden Sie sie herunter von[Hier](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
@@ -74,7 +74,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 }
 ```
 
- Diese Schleife durchläuft jeden Absatz und verwendet die`IsMoveFromRevision`Und`IsMoveToRevision` Eigenschaften, um zu bestimmen, ob der Absatz verschoben (gelöscht) oder verschoben (eingefügt) wurde.
+ Diese Schleife durchläuft jeden Absatz und verwendet die`IsMoveFromRevision` Und`IsMoveToRevision` Eigenschaften, um zu bestimmen, ob der Absatz verschoben (gelöscht) oder verschoben (eingefügt) wurde.
 
 ## Abschluss
 
@@ -84,7 +84,7 @@ Und da haben Sie es! Mit nur wenigen Codezeilen können Sie mit Aspose.Words fü
 
 ### Kann ich Aspose.Words für .NET verwenden, um von bestimmten Benutzern vorgenommene Änderungen zu verfolgen?
 
-Ja, Aspose.Words für .NET bietet eine Funktion für den Zugriff auf Revisionsdetails, einschließlich des Autors der Änderungen.
+Ja, Aspose.Words für .NET bietet eine Funktion zum Zugriff auf Revisionsdetails, einschließlich des Autors der Änderungen.
 
 ### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?
 

@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // X अक्ष को दिनांक के स्थान पर श्रेणी में बदलें।
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); //वाई अक्ष (सैकड़ों) की प्रदर्शन इकाइयों में मापा जाता है।
+xAxis.setCrossesAt(3.0); // वाई अक्ष (सैकड़ों) की प्रदर्शन इकाइयों में मापा जाता है।
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### मैं कस्टम संख्या प्रारूपों के साथ डेटा लेबल को कैसे प्रारूपित कर सकता हूं?
 
-आप डेटा लेबल को एक्सेस करके फ़ॉर्मेट कर सकते हैं`DataLabels` किसी श्रृंखला के गुणधर्मों का उपयोग करके वांछित प्रारूप कोड सेट करना`getNumberFormat().setFormatCode()`.
+ आप डेटा लेबल को एक्सेस करके फ़ॉर्मेट कर सकते हैं`DataLabels` किसी श्रृंखला के गुणधर्मों का उपयोग करके वांछित प्रारूप कोड सेट करना`getNumberFormat().setFormatCode()`.
 
 ### मैं चार्ट में अक्ष गुण कैसे अनुकूलित करूँ?
 
@@ -139,7 +139,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### मैं स्कैटर या क्षेत्र चार्ट जैसे अन्य प्रकार के चार्ट कैसे बना सकता हूं?
 
- आप उपयुक्त चार्ट निर्दिष्ट करके विभिन्न चार्ट प्रकार बना सकते हैं`ChartType` चार्ट का उपयोग करते समय`builder.insertChart(ChartType.TYPE, width, height)`.
+आप उपयुक्त चार्ट निर्दिष्ट करके विभिन्न चार्ट प्रकार बना सकते हैं`ChartType` चार्ट का उपयोग करते समय`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### मैं चार्ट अक्ष को कैसे छिपा सकता हूँ?
 

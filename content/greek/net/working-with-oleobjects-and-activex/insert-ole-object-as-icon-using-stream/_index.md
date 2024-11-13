@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingSt
 Ναι, μπορείτε να ενσωματώσετε οποιονδήποτε τύπο αρχείου που υποστηρίζεται από το OLE, συμπεριλαμβανομένων των Word, Excel, PowerPoint και άλλων.
 
 ### Χρειάζομαι ειδική άδεια χρήσης για να χρησιμοποιήσω το Aspose.Words για .NET;
- Ναι, το Aspose.Words για .NET απαιτεί άδεια χρήσης. Μπορείτε να πάρετε ένα[δωρεάν δοκιμή](https://releases.aspose.com/) ή αγοράστε α[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/) για δοκιμή.
+ Ναι, το Aspose.Words για .NET απαιτεί άδεια χρήσης. Μπορείτε να πάρετε ένα[δωρεάν δοκιμή](https://releases.aspose.com/) ή αγορά α[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/) για δοκιμή.
 
 ### Μπορώ να προσαρμόσω το εικονίδιο που χρησιμοποιείται για το αντικείμενο OLE;
  Απολύτως! Μπορείτε να χρησιμοποιήσετε οποιοδήποτε αρχείο εικόνας για το εικονίδιο, προσδιορίζοντας τη διαδρομή του στο`InsertOleObjectAsIcon` μέθοδος.

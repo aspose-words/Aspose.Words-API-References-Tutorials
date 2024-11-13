@@ -64,7 +64,7 @@ A Word-dokumentumok témái gyakran tartalmaznak beállításokat különböző 
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
- A`MajorFonts` tulajdonság hozzáférést biztosít a főbb betűtípus-beállításokhoz. Ebben a példában kifejezetten a témában használt latin betűtípust kérjük le. Hasonló kódot használhat más fontos betűtípusok, például a kelet-ázsiai vagy a Complex Script betűtípusok beszerzéséhez.
+A`MajorFonts` tulajdonság hozzáférést biztosít a főbb betűtípus-beállításokhoz. Ebben a példában kifejezetten a témában használt latin betűtípust kérjük le. Hasonló kódot használhat más fontos betűtípusok, például a kelet-ázsiai vagy a Complex Script betűtípusok beszerzéséhez.
 
 ## 4. lépés: Kisebb betűtípusok lekérése
 
@@ -84,7 +84,7 @@ A témák a dokumentumban az ékezetekhez használt különféle színeket is me
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- A`Colors` tulajdona a`Theme` osztály lehetővé teszi a témában meghatározott különböző színkiemelések lekérését, lehetővé téve a konzisztens színsémák kezelését és alkalmazását a dokumentumokban.
+A`Colors` tulajdona a`Theme` osztály lehetővé teszi a témában meghatározott különböző színkiemelések lekérését, lehetővé téve a konzisztens színsémák kezelését és alkalmazását a dokumentumokban.
 
 ## Következtetés
 

@@ -27,7 +27,7 @@ import com.aspose.words.OoxmlSaveOptions;
 //ドキュメントを読み込む
 Document doc = new Document("Document.docx");
 
-// OoxmlSaveOptionsを作成し、パスワードを設定する
+//OoxmlSaveOptionsを作成し、パスワードを設定する
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setPassword("password");
 
@@ -118,7 +118,7 @@ saveOptions.setCompressionLevel(CompressionLevel.SUPER_FAST);
 doc.save("FastCompressionDoc.docx", saveOptions);
 ```
 
-これらは、Aspose.Words for Java を使用して OOXML 形式でドキュメントを保存するときに使用できる主要なオプションと設定の一部です。必要に応じて、他のオプションも自由に調べて、ドキュメントの保存プロセスをカスタマイズしてください。
+これらは、Aspose.Words for Java を使用して OOXML 形式でドキュメントを保存するときに使用できる主要なオプションと設定の一部です。必要に応じて、さらに多くのオプションを調べて、ドキュメントの保存プロセスをカスタマイズしてください。
 
 ## Aspose.Words for Java でドキュメントを OOXML 形式で保存するための完全なソース コード
 
@@ -162,13 +162,13 @@ public void setCompressionLevel() throws Exception
 
 ## 結論
 
-この包括的なガイドでは、Aspose.Words for Java を使用して OOXML 形式でドキュメントを保存する方法について説明しました。ドキュメントをパスワードで暗号化したり、特定の OOXML 標準に準拠したり、ドキュメントのプロパティを更新したり、従来の制御文字を保持したり、圧縮レベルを調整したりする必要がある場合でも、Aspose.Words は要件を満たす多目的なツール セットを提供します。
+この包括的なガイドでは、Aspose.Words for Java を使用してドキュメントを OOXML 形式で保存する方法について説明しました。ドキュメントをパスワードで暗号化したり、特定の OOXML 標準に準拠したり、ドキュメントのプロパティを更新したり、従来の制御文字を保持したり、圧縮レベルを調整したりする必要がある場合でも、Aspose.Words は要件を満たす多目的なツール セットを提供します。
 
 ## よくある質問
 
 ### パスワードで保護されたドキュメントからパスワード保護を削除するにはどうすればよいですか?
 
-パスワードで保護されたドキュメントからパスワード保護を削除するには、正しいパスワードでドキュメントを開き、保存オプションでパスワードを指定せずに保存します。これにより、ドキュメントはパスワード保護なしで保存されます。
+パスワードで保護されたドキュメントからパスワード保護を削除するには、正しいパスワードを使用してドキュメントを開き、保存オプションでパスワードを指定せずに保存します。これにより、ドキュメントはパスワード保護なしで保存されます。
 
 ### ドキュメントを OOXML 形式で保存するときにカスタム プロパティを設定できますか?
 

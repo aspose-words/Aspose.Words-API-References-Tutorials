@@ -10,7 +10,7 @@ url: /zh/java/document-manipulation/comparing-documents/
 
 ## 文档比较简介
 
-文档比较涉及分析两个文档并识别差异，这在法律、法规或内容管理等各种情况下都至关重要。Aspose.Words for Java 简化了此过程，使 Java 开发人员可以访问它。
+文档比较涉及分析两个文档并识别差异，这在法律、法规或内容管理等各种场景中都至关重要。Aspose.Words for Java 简化了此过程，使 Java 开发人员可以访问它。
 
 ## 设置你的环境
 

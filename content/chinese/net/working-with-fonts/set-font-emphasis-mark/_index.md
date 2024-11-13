@@ -13,7 +13,7 @@ url: /zh/net/working-with-fonts/set-font-emphasis-mark/
 
 ## 先决条件
 
-在我们深入讨论细节之前，请确保您已满足以下先决条件：
+在深入讨论具体细节之前，请确保您已满足以下先决条件：
 
 -  Aspose.Words for .NET 库：确保已安装 Aspose.Words for .NET 库。您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
 - 开发环境：一个有效的开发环境，例如 Visual Studio。
@@ -81,7 +81,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 
 ## 结论
 
-就这样！使用 Aspose.Words for .NET 在 Word 文档中设置字体强调标记就这么简单。只需几行代码，您就可以让您的文本脱颖而出，并为您的文档增添专业感。请随时尝试不同的强调标记和样式以满足您的需求。
+就这样！使用 Aspose.Words for .NET 在 Word 文档中设置字体强调标记就是这么简单。只需几行代码，您就可以让您的文本脱颖而出，并为您的文档增添专业感。请随时尝试不同的强调标记和样式以满足您的需求。
 
 ## 常见问题解答
 
@@ -103,4 +103,4 @@ Aspose.Words for .NET 需要许可证才能使用全部功能。您可以免费�
 
 ### 我可以将 Aspose.Words for .NET 与其他 .NET 框架一起使用吗？
 
-是的，Aspose.Words for .NET 与各种 .NET 框架兼容，包括 .NET Core 和 .NET 5/6。
+是的，Aspose.Words for .NET 与各种.NET 框架兼容，包括.NET Core 和 .NET 5/6。

@@ -9,7 +9,7 @@ url: /de/net/split-document/by-sections-html/
 ---
 ## Einführung
 
-Tauchen Sie in die Welt der Dokumentenautomatisierung ein und möchten lernen, wie Sie ein Word-Dokument mit Aspose.Words für .NET nach Abschnitten in HTML aufteilen? Dann sind Sie hier richtig! Dieser Leitfaden wurde speziell für Sie erstellt und enthält detaillierte Schritte, ansprechende Erklärungen und einen freundlichen Ton. Krempeln wir die Ärmel hoch und beginnen wir diese aufregende Reise!
+Tauchen Sie in die Welt der Dokumentenautomatisierung ein und möchten lernen, wie Sie ein Word-Dokument mit Aspose.Words für .NET nach Abschnitten in HTML aufteilen? Dann sind Sie hier richtig! Dieser Leitfaden wurde speziell für Sie erstellt und enthält detaillierte Schritte, interessante Erklärungen und einen freundlichen Ton. Krempeln wir die Ärmel hoch und beginnen wir diese spannende Reise!
 
 ## Voraussetzungen
 
@@ -17,7 +17,7 @@ Bevor wir in die Aktion einsteigen, müssen Sie einige Dinge vorbereitet haben:
 
 1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek installiert haben. Sie können sie von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine Entwicklungsumgebung wie Visual Studio.
-3. Grundkenntnisse in C#: Grundkenntnisse der C#-Programmierung sind hilfreich.
+3. Grundkenntnisse in C#: Grundlegende Kenntnisse der C#-Programmierung sind hilfreich.
 4. Word-Dokument: Ein Word-Dokument, das Sie in Abschnitte unterteilen möchten.
 
 Sobald Sie diese bereit haben, können wir mit der Codierung beginnen!

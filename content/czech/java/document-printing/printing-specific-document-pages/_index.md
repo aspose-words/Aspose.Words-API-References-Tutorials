@@ -94,7 +94,7 @@ Ano, Aspose.Words for Java podporuje širokou škálu formátů dokumentů, vče
 
 ### Jak mohu nastavit další možnosti tisku, jako je orientace stránky a velikost papíru?
 
- Můžete nastavit další možnosti tisku, jako je orientace stránky a velikost papíru, konfigurací`PrintOptions` objekt před tiskem dokumentu. Použijte metody jako`setOrientation`a`setPaperSize` pro přizpůsobení nastavení tisku.
+ Můžete nastavit další možnosti tisku, jako je orientace stránky a velikost papíru, konfigurací`PrintOptions` objekt před tiskem dokumentu. Použijte metody jako`setOrientation` a`setPaperSize` pro přizpůsobení nastavení tisku.
 
 ### Je k dispozici zkušební verze Aspose.Words for Java?
 

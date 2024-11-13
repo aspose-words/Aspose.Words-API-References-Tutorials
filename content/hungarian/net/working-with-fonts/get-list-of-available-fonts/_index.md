@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 -  dataDir: Ez a karakterlánc-változó tartalmazza annak a könyvtárnak az elérési útját, ahol a betűtípusok találhatók. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges úttal.
 
-## 3. lépés: Adjon hozzá egyéni betűtípus-mappát
+## 3. lépés: Adjon hozzá egyéni betűtípus mappát
 
 Most adjon hozzá egy új mappaforrást, és utasítsa az Aspose.Words-t, hogy keressen ebben a mappában betűtípusokat.
 

@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Neues Dokument erstellen
 
-Lassen Sie uns nun ein neues Word-Dokument erstellen. Dieses Dokument dient als Leinwand für unser Diagramm.
+Erstellen wir nun ein neues Word-Dokument. Dieses Dokument dient als Leinwand für unser Diagramm.
 
  Wir beginnen mit der Initialisierung einer neuen Instanz des`Document` Klasse.
 
@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Schritt 3: DocumentBuilder verwenden
 
- Der`DocumentBuilder` Klasse in Aspose.Words ist ein leistungsstarkes Tool, das beim Erstellen von Dokumenten hilft. Wir werden es verwenden, um ein Diagramm in unser Dokument einzufügen.
+Der`DocumentBuilder` Klasse in Aspose.Words ist ein leistungsstarkes Tool, das beim Erstellen von Dokumenten hilft. Wir werden es verwenden, um ein Diagramm in unser Dokument einzufügen.
 
  Initialisieren Sie eine Instanz des`DocumentBuilder` Klasse und übergibt unser Dokumentobjekt an seinen Konstruktor.
 

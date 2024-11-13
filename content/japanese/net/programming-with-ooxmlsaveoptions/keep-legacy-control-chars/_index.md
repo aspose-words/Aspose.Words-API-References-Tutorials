@@ -9,7 +9,7 @@ url: /ja/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
 ## 導入
 
-Word 文書内の奇妙で目に見えない制御文字に困惑したことはありませんか? それらは、書式設定や機能を台無しにする小さな隠れたグレムリンのようなものです。幸いなことに、Aspose.Words for .NET には、文書を保存するときにこれらの従来の制御文字をそのまま維持する便利な機能があります。このチュートリアルでは、Aspose.Words for .NET を使用してこれらの制御文字を管理する方法について詳しく説明します。手順ごとに説明し、すべての詳細を理解できるようにします。準備はできましたか? さあ、始めましょう!
+Word 文書内の奇妙で目に見えない制御文字に困惑したことはありませんか? それらは、書式設定や機能を台無しにする小さな隠れたグレムリンのようなものです。幸いなことに、Aspose.Words for .NET には、文書を保存するときにこれらの従来の制御文字をそのまま維持する便利な機能があります。このチュートリアルでは、Aspose.Words for .NET を使用してこれらの制御文字を管理する方法について詳しく説明します。手順を 1 つ 1 つ説明し、すべての詳細を理解できるようにします。準備はできましたか? さあ、始めましょう!
 
 ## 前提条件
 
@@ -69,7 +69,7 @@ using Aspose.Words.Saving;
 
 最後に、設定した保存オプションを使用してドキュメントを保存します。
 
-1. 文書を保存するには、`Save`方法の`Document`指定された保存オプションでドキュメントを保存するクラス。
+1. 文書を保存する:`Save`方法の`Document`指定された保存オプションでドキュメントを保存するクラス。
 
    ```csharp
    doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
@@ -87,7 +87,7 @@ using Aspose.Words.Saving;
 
 ### これらの制御文字を保持せずに削除することはできますか?
 
-はい、必要に応じて Aspose.Words for .NET を使用してこれらの文字を削除または置き換えることができます。
+はい、必要に応じて Aspose.Words for .NET を使用してこれらの文字を削除または置換できます。
 
 ### この機能は Aspose.Words for .NET のすべてのバージョンで使用できますか?
 

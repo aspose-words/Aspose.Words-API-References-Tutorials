@@ -42,11 +42,11 @@ using Aspose.Words;
 
 セットアップが完了したら、次のステップはセクション区切りを含む Word 文書を読み込むことです。
 
-1. ドキュメント ディレクトリの指定: ドキュメント ディレクトリへのパスを定義します。
+1. ドキュメント ディレクトリを指定します。ドキュメント ディレクトリへのパスを定義します。
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
-2. ドキュメントをロードする:`Document` Word 文書を読み込むためのクラス。
+2. ドキュメントを読み込む:`Document` Word 文書を読み込むためのクラス。
 ```csharp
 Document doc = new Document(dataDir + "your-document.docx");
 ```

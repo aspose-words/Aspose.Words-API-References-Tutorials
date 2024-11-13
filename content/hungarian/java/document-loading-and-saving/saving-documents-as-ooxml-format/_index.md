@@ -87,10 +87,10 @@ import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.SaveFormat;
 
-// Töltsön be egy régi vezérlőkaraktereket tartalmazó dokumentumot
+//Töltsön be egy régi vezérlőkaraktereket tartalmazó dokumentumot
 Document doc = new Document("LegacyControlChars.doc");
 
-//Hozzon létre OoxmlSaveOptions-t a FLAT_OPC formátummal, és engedélyezze a régi vezérlőkarakterek megtartását
+// Hozzon létre OoxmlSaveOptions-t a FLAT_OPC formátummal, és engedélyezze a régi vezérlőkarakterek megtartását
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
 saveOptions.setKeepLegacyControlChars(true);
 
@@ -172,7 +172,7 @@ A jelszóval védett dokumentum jelszavas védelmének eltávolításához megny
 
 ### Beállíthatok egyéni tulajdonságokat egy dokumentum OOXML formátumban való mentésekor?
 
- Igen, beállíthat egyéni tulajdonságokat egy dokumentumhoz, mielőtt OOXML formátumba menti. Használja a`BuiltInDocumentProperties`és`CustomDocumentProperties` osztályok különböző tulajdonságok, például szerző, cím, kulcsszavak és egyéni tulajdonságok beállításához.
+ Igen, beállíthat egyéni tulajdonságokat egy dokumentumhoz, mielőtt OOXML formátumba menti. Használja a`BuiltInDocumentProperties` és`CustomDocumentProperties` osztályok különböző tulajdonságok, például szerző, cím, kulcsszavak és egyéni tulajdonságok beállításához.
 
 ### Mi az alapértelmezett tömörítési szint egy dokumentum OOXML formátumban történő mentésekor?
 

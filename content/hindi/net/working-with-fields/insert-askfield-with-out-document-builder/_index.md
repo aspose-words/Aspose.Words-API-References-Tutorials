@@ -42,14 +42,14 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 ```
 
-यह कोड स्निपेट एक नया वर्ड दस्तावेज़ सेट करता है, जहाँ हम अपना ASK फ़ील्ड जोड़ेंगे।
+यह कोड स्निपेट एक नया वर्ड दस्तावेज़ तैयार करता है, जहां हम अपना ASK फ़ील्ड जोड़ेंगे।
 
 ## चरण 2: पैराग्राफ़ नोड तक पहुँचें
 
 वर्ड डॉक्यूमेंट में, सामग्री नोड्स में व्यवस्थित होती है। हमें पहले पैराग्राफ नोड तक पहुंचने की आवश्यकता है जहां हम अपना ASK फ़ील्ड डालेंगे:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 कोड की यह पंक्ति दस्तावेज़ में पहला पैराग्राफ़ प्राप्त करती है, जो हमारे ASK फ़ील्ड सम्मिलन के लिए तैयार है।

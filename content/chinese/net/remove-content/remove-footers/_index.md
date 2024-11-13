@@ -98,7 +98,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
 Aspose.Words for .NET 是一款商业产品，但您可以获得[免费试用](https://releases.aspose.com/)来测试其功能。
 
 ### 我可以使用 Aspose.Words 操作 Word 文档的其他元素吗？
-当然！Aspose.Words 提供了丰富的功能来操作 Word 文档中的文本、图像、表格等。
+当然！Aspose.Words 提供了广泛的功能来处理 Word 文档中的文本、图像、表格等。
 
 ### Aspose.Words 支持哪些版本的.NET？
 Aspose.Words 支持各种版本的.NET 框架，包括.NET Core。

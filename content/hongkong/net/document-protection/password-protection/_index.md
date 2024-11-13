@@ -18,7 +18,7 @@ url: /zh-hant/net/document-protection/password-protection/
 1.  Aspose.Words for .NET：請確定您擁有 Aspose.Words for .NET 函式庫。你可以[在這裡下載](https://releases.aspose.com/words/net/).
 2. 開發環境：Visual Studio 或任何其他 C# 開發環境。
 3. 基本 C# 知識：對 C# 程式設計的基本了解。
-4.  Aspose 許可證：從以下位置取得許可證[這裡](https://purchase.aspose.com/buy)或使用[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
+4. Aspose 許可證：從以下位置取得許可證[這裡](https://purchase.aspose.com/buy)或使用[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
 
 ## 導入命名空間
 
@@ -88,7 +88,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功為 Word 文件新增了密碼保護。這就像對您最重要的文件加了一把數位鎖，確保它們不被窺探。無論您是要保護敏感資訊還是只是想增加額外的安全層，Aspose.Words 都能讓您變得簡單又有效率。快樂編碼！
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功為 Word 文件新增了密碼保護。這就像對您最重要的文件加了一把數位鎖，確保它們不被窺探。無論您是要保護敏感資訊還是只是想增加額外的安全層，Aspose.Words 都能讓您變得簡單又有效率。快樂編碼！
 
 ## 常見問題解答
 

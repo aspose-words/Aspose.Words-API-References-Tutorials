@@ -18,7 +18,7 @@ Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, w
 - Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek installiert haben. Sie können sie von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Sie sollten eine Entwicklungsumgebung wie beispielsweise Visual Studio eingerichtet haben.
 - Grundkenntnisse in C#: Dieses Tutorial setzt voraus, dass Sie über Grundkenntnisse der C#-Programmierung verfügen.
-- Beispieldokument: Wir verwenden ein Word-Beispieldokument mit dem Namen „Tables.docx“. Stellen Sie sicher, dass sich dieses Dokument in Ihrem Projektverzeichnis befindet.
+- Beispieldokument: Wir verwenden ein Word-Beispieldokument mit dem Namen „Tables.docx“. Stellen Sie sicher, dass Sie dieses Dokument in Ihrem Projektverzeichnis haben.
 
 ## Namespaces importieren
 
@@ -61,7 +61,7 @@ Da die Tabelle nun zugänglich ist, besteht der nächste Schritt darin, die erst
 Row firstRow = table.FirstRow;
 ```
 
- Der`FirstRow` -Eigenschaft gibt uns die erste Zeile in der Tabelle. Jetzt können wir mit der Änderung der Formatierung beginnen.
+Der`FirstRow` -Eigenschaft gibt uns die erste Zeile in der Tabelle. Jetzt können wir mit der Änderung der Formatierung beginnen.
 
 ## Schritt 4: Zeilenränder ändern
 
@@ -75,7 +75,7 @@ firstRow.RowFormat.Borders.LineStyle = LineStyle.None;
 
 ## Schritt 5: Zeilenhöhe anpassen
 
-Als Nächstes passen wir die Höhe der ersten Zeile an. Manchmal möchten Sie die Höhe möglicherweise auf einen bestimmten Wert festlegen oder sie automatisch basierend auf dem Inhalt anpassen lassen.
+Als Nächstes passen wir die Höhe der ersten Zeile an. Manchmal möchten Sie die Höhe auf einen bestimmten Wert festlegen oder sie automatisch basierend auf dem Inhalt anpassen lassen.
 
 ```csharp
 firstRow.RowFormat.HeightRule = HeightRule.Auto;
@@ -91,7 +91,7 @@ Zum Schluss stellen wir sicher, dass die Zeile über mehrere Seiten verteilt wer
 firstRow.RowFormat.AllowBreakAcrossPages = true;
 ```
 
- Einstellung`AllowBreakAcrossPages` Zu`true` ermöglicht bei Bedarf die Aufteilung der Zeile auf mehrere Seiten. So bleibt die Struktur Ihrer Tabelle erhalten, auch wenn sie sich über mehrere Seiten erstreckt.
+ Einstellung`AllowBreakAcrossPages` Zu`true` ermöglicht bei Bedarf die Aufteilung der Zeile auf mehrere Seiten. Dadurch wird sichergestellt, dass Ihre Tabelle auch dann ihre Struktur behält, wenn sie sich über mehrere Seiten erstreckt.
 
 ## Abschluss
 
@@ -106,7 +106,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern e
 Ja, Sie können die Zeilen einer Tabelle durchlaufen und Formatierungsänderungen auf jede Zeile einzeln anwenden.
 
 ### Wie füge ich einer Zeile Ränder hinzu?
- Sie können Ränder hinzufügen, indem Sie`LineStyle` Eigentum der`Borders` Einspruch gegen einen gewünschten Stil erheben, wie`LineStyle.Single`.
+ Sie können Ränder hinzufügen, indem Sie`LineStyle` Eigentum der`Borders` Objekt zu einem gewünschten Stil, wie zum Beispiel`LineStyle.Single`.
 
 ### Kann ich für eine Reihe eine feste Höhe festlegen?
  Ja, Sie können eine feste Höhe einstellen, indem Sie die`HeightRule` -Eigenschaft und Angabe des Höhenwerts.

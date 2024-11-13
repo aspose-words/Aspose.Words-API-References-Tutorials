@@ -39,7 +39,7 @@ För att börja måste vi skapa en ny dokumentinstans. Detta dokument kommer att
 Document doc = new Document();
 ```
 
-## Steg 2: Öppna det första avsnittet
+## Steg 2: Gå till första avsnittet
 
 Varje dokument är strukturerat i sektioner. Vi måste komma åt den första delen för att dyka djupare in i dess element.
 

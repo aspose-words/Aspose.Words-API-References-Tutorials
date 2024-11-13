@@ -1,5 +1,5 @@
 ---
-title: Přidejte obsah pomocí Documentbuilderu
+title: Přidejte obsah pomocí DocumentBuilder
 linktitle: Přidejte obsah pomocí Documentbuilderu
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se přidávat obsah do dokumentů Word pomocí DocumentBuilder s Aspose.Words for .NET. Praktické návody s podrobnými příklady kódu.
@@ -20,7 +20,7 @@ Přidávání obsahu pomocí DocumentBuilder je komplexní zdroj, který vás pr
 | [Horizontální Pravidlo Formát V dokumentu Word](./horizontal-rule-format/) | Naučte se vkládat přizpůsobitelná horizontální pravidla do dokumentů aplikace Word pomocí Aspose.Words for .NET. Vylepšete automatizaci dokumentů. |
 | [Vložit konec do dokumentu aplikace Word](./insert-break/) | V tomto podrobném průvodci se dozvíte, jak vložit zalomení do dokumentu aplikace Word pomocí Aspose.Words for .NET. Ideální pro vývojáře, kteří chtějí zvládnout manipulaci s dokumenty. |
 | [Vložit textové vstupní pole formuláře do dokumentu aplikace Word](./insert-text-input-form-field/) | Naučte se, jak vložit pole formuláře pro zadávání textu do dokumentu aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného kurzu. Ideální pro vytváření interaktivních formulářů. |
-| [Vložit pole formuláře zaškrtávací políčko v dokumentu aplikace Word](./insert-check-box-form-field/) | Naučte se, jak vložit pole formuláře zaškrtávacích políček do dokumentů aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. Ideální pro vývojáře. |
+| [Vložit pole formuláře zaškrtávací políčko do dokumentu aplikace Word](./insert-check-box-form-field/) | Naučte se, jak vložit pole formuláře zaškrtávacích políček do dokumentů aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. Ideální pro vývojáře. |
 | [Vložit pole formuláře pole se seznamem v dokumentu aplikace Word](./insert-combo-box-form-field/) | Naučte se, jak vložit pole formuláře se seznamem do dokumentu aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. |
 | [Vložte html do dokumentu aplikace Word](./insert-html/) | Naučte se, jak bezproblémově vkládat HTML do dokumentů aplikace Word pomocí Aspose.Words for .NET s naším podrobným, podrobným výukovým programem. Ideální pro vývojáře. |
 | [Vložit hypertextový odkaz do dokumentu aplikace Word](./insert-hyperlink/) | Naučte se vkládat hypertextové odkazy do dokumentů aplikace Word pomocí Aspose.Words for .NET pomocí našeho podrobného průvodce. Ideální pro automatizaci vašich úloh při vytváření dokumentů. |

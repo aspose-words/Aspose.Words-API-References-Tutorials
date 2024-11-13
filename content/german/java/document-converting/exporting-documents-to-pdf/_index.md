@@ -22,7 +22,7 @@ Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfü
 
 ## Einrichten des Projekts
 
-Beginnen Sie mit der Erstellung eines neuen Java-Projekts in Ihrer bevorzugten IDE. Achten Sie darauf, die Bibliothek Aspose.Words zum Klassenpfad Ihres Projekts hinzuzufügen.
+Beginnen Sie mit der Erstellung eines neuen Java-Projekts in Ihrer bevorzugten IDE. Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words zum Klassenpfad Ihres Projekts hinzufügen.
 
 ## Laden eines Word-Dokuments
 

@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 ## 結論
 
-現在你就得到它了！透過執行以下步驟，您可以使用 Aspose.Words for .NET 輕鬆控制 Word 文件中的字型替換。這可以確保您的文件無論在何處查看，都保持其預期的外觀和感覺。
+現在你就擁有了！透過執行以下步驟，您可以使用 Aspose.Words for .NET 輕鬆控制 Word 文件中的字型替換。這可以確保您的文件無論在何處查看，都保持其預期的外觀和感覺。
 
 ## 常見問題解答
 

@@ -15,14 +15,14 @@ url: /hi/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties
 
 शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
 
-1.  Aspose.Words for .NET लाइब्रेरी: आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/net/).
+1.  .NET लाइब्रेरी के लिए Aspose.Words: आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/net/).
 2. विजुअल स्टूडियो या कोई भी C# IDE: अपना कोड लिखने और निष्पादित करने के लिए।
 3. ActiveX नियंत्रणों वाला एक Word दस्तावेज़: उदाहरण के लिए, "ActiveX controls.docx".
 4. C# का बुनियादी ज्ञान: आगे बढ़ने के लिए C# प्रोग्रामिंग से परिचित होना आवश्यक है।
 
 ## नामस्थान आयात करें
 
-सबसे पहले, आइए .NET के लिए Aspose.Words के साथ काम करने के लिए आवश्यक नामस्थानों को आयात करें।
+सबसे पहले, आइए .NET के लिए Aspose.Words के साथ काम करने के लिए आवश्यक नेमस्पेस आयात करें।
 
 ```csharp
 using Aspose.Words;

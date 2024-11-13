@@ -46,7 +46,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- यहाँ,`dataDir` यह आपके दस्तावेज़ निर्देशिका का पथ है जहाँ आप अंतिम फ़ाइल सहेजेंगे।`Document`और`DocumentBuilder` Aspose.Words की कक्षाएं हैं जो आपको Word दस्तावेज़ बनाने और उनमें हेरफेर करने में मदद करती हैं।
+ यहाँ,`dataDir` यह आपके दस्तावेज़ निर्देशिका का पथ है जहाँ आप अंतिम फ़ाइल सहेजेंगे।`Document` और`DocumentBuilder` Aspose.Words की कक्षाएं हैं जो आपको Word दस्तावेज़ बनाने और उनमें हेरफेर करने में मदद करती हैं।
 
 ## चरण 2: चार्ट सम्मिलित करना
 

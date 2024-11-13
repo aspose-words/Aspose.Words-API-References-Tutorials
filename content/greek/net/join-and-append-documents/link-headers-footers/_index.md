@@ -92,4 +92,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 Ναι, μπορείτε να αποσυνδέσετε κεφαλίδες και υποσέλιδα χρησιμοποιώντας μεθόδους API Aspose.Words για να επαναφέρετε τη μορφοποίηση μεμονωμένων εγγράφων.
 
 ### Πού μπορώ να βρω πιο λεπτομερή τεκμηρίωση για το Aspose.Words για .NET;
- Επίσκεψη[Aspose.Words for .NET Documentation](https://reference.aspose.com/words/net/) για αναλυτικούς οδηγούς και αναφορές API.
+ Επίσκεψη[Aspose.Words for .NET Documentation](https://reference.aspose.com/words/net/)για αναλυτικούς οδηγούς και αναφορές API.

@@ -37,7 +37,7 @@ class WordToHtmlConverter
 }
 ```
 
-## Schritt 3: Überschriftenabsätze als Themenanfang auswählen
+## Schritt 3: Überschriftenabsätze als Themenanfänge auswählen
 
 ```java
 private ArrayList<Paragraph> selectTopicStarts()

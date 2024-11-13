@@ -1,29 +1,29 @@
 ---
-title: Muat Kamus Tanda Hubung Untuk Bahasa
-linktitle: Muat Kamus Tanda Hubung Untuk Bahasa
+title: Muat Kamus Pemenggalan Kata untuk Bahasa
+linktitle: Muat Kamus Pemenggalan Kata untuk Bahasa
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara memuat kamus tanda hubung untuk bahasa apa pun menggunakan Aspose.Words untuk .NET dalam tutorial langkah demi langkah yang komprehensif ini.
+description: Pelajari cara memuat kamus pemenggalan kata untuk bahasa apa pun menggunakan Aspose.Words untuk .NET dalam tutorial langkah demi langkah yang komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 ---
 ## Perkenalan
 
-Pernah bergelut dengan masalah tanda hubung yang mengganggu di dokumen Word Anda? Ya, kamu tidak sendirian. Tanda hubung dapat meningkatkan atau merusak keterbacaan teks Anda, terutama dalam bahasa dengan aturan tanda hubung yang rumit. Jangan takut! Aspose.Words untuk .NET siap membantu Anda. Tutorial ini akan memandu Anda melalui proses memuat kamus tanda hubung untuk bahasa tertentu, memastikan dokumen Anda terlihat rapi dan profesional. Ayo selami!
+Pernahkah Anda berjuang dengan masalah pemenggalan kata yang mengganggu di dokumen Word Anda? Anda tidak sendirian. Pemenggalan kata dapat membuat atau merusak keterbacaan teks Anda, terutama dalam bahasa dengan aturan pemenggalan kata yang rumit. Jangan khawatir! Aspose.Words untuk .NET telah membantu Anda. Tutorial ini akan memandu Anda melalui proses memuat kamus pemenggalan kata untuk bahasa tertentu, memastikan dokumen Anda terlihat rapi dan profesional. Mari kita bahas!
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki yang berikut ini:
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
-- Visual Studio diinstal di komputer Anda.
-- Kerangka .NET diinstal.
--  Aspose.Words untuk perpustakaan .NET. Jika Anda belum menginstalnya, Anda dapat mendownloadnya dari[Di Sini](https://releases.aspose.com/words/net/).
-- File kamus tanda hubung untuk bahasa target Anda. Dalam tutorial ini, kita akan menggunakan kamus tanda hubung bahasa Jerman (`hyph_de_CH.dic`).
+- Visual Studio terinstal di komputer Anda.
+- Kerangka .NET telah terpasang.
+-  Aspose.Words untuk pustaka .NET. Jika Anda belum menginstalnya, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- File kamus pemenggalan kata untuk bahasa target Anda. Dalam tutorial ini, kami akan menggunakan kamus pemenggalan kata Jerman (`hyph_de_CH.dic`).
 - Contoh dokumen Word dalam bahasa target. Kami akan menggunakan dokumen bernama`German text.docx`.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan dalam proyek Anda. Inilah cara Anda melakukannya:
+Pertama-tama, Anda perlu mengimpor namespace yang diperlukan dalam proyek Anda. Berikut cara melakukannya:
 
 ```csharp
 using System;
@@ -32,17 +32,17 @@ using Aspose.Words;
 using Aspose.Words.Hyphenation;
 ```
 
-Sekarang, mari kita bagi prosesnya menjadi langkah-langkah yang mudah diikuti.
+Sekarang, mari kita uraikan prosesnya menjadi langkah-langkah yang mudah diikuti.
 
 ## Langkah 1: Siapkan Direktori Dokumen Anda
 
-Sebelum memulai, Anda perlu menentukan direktori tempat dokumen dan kamus tanda hubung Anda berada. Ini membantu menjaga proyek Anda tetap teratur dan kode Anda tetap bersih.
+Sebelum memulai, Anda perlu menentukan direktori tempat dokumen dan kamus pemenggalan kata berada. Ini membantu menjaga proyek Anda tetap teratur dan kode Anda tetap bersih.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur ke direktori yang berisi file Anda.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur ke direktori yang berisi berkas Anda.
 
 ## Langkah 2: Muat Dokumen
 
@@ -54,25 +54,25 @@ Document doc = new Document(dataDir + "German text.docx");
 
  Baris kode ini menginisialisasi yang baru`Document` objek dan memuat file`German text.docx` dari direktori yang Anda tentukan.
 
-## Langkah 3: Buka Kamus Tanda Hubung
+## Langkah 3: Buka Kamus Pemenggalan Kata
 
- Sekarang, Anda perlu membuka file kamus tanda hubung. Kami akan menggunakan`File.OpenRead` metode untuk membaca file kamus sebagai aliran.
+ Sekarang, Anda perlu membuka berkas kamus pemenggalan kata. Kita akan menggunakan`File.OpenRead` metode untuk membaca berkas kamus sebagai aliran.
 
 ```csharp
 Stream stream = File.OpenRead(dataDir + "hyph_de_CH.dic");
 ```
 
- Baris ini membuka file kamus tanda hubung`hyph_de_CH.dic` dan membacanya ke dalam aliran.
+ Baris ini membuka file kamus pemenggalan kata`hyph_de_CH.dic` dan membacanya ke dalam aliran.
 
-## Langkah 4: Daftarkan Kamus Tanda Hubung
+## Langkah 4: Daftarkan Kamus Pemenggalan Kata
 
- Dengan file kamus terbuka, langkah selanjutnya adalah mendaftarkannya untuk digunakan di Aspose.Words. Ini dilakukan dengan menggunakan`Hyphenation.RegisterDictionary` metode.
+ Setelah file kamus dibuka, langkah selanjutnya adalah mendaftarkannya untuk digunakan di Aspose.Words. Ini dilakukan dengan menggunakan`Hyphenation.RegisterDictionary` metode.
 
 ```csharp
 Hyphenation.RegisterDictionary("de-CH", stream);
 ```
 
-Di sini, kami mendaftarkan kamus tanda hubung untuk`de-CH` (Jerman Swiss).
+Di sini, kami mendaftarkan kamus pemenggalan kata untuk`de-CH` (Bahasa Jerman Swiss).
 
 ## Langkah 5: Simpan Dokumen
 
@@ -86,25 +86,25 @@ doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 
 ## Kesimpulan
 
-Itu dia! Anda telah berhasil memuat kamus tanda hubung untuk bahasa tertentu menggunakan Aspose.Words untuk .NET. Fitur kecil namun kuat ini dapat meningkatkan keterbacaan dan profesionalisme dokumen Anda secara signifikan. Sekarang, cobalah dengan berbagai bahasa dan lihat sendiri keajaibannya!
+Nah, itu dia! Anda telah berhasil memuat kamus pemenggalan kata untuk bahasa tertentu menggunakan Aspose.Words untuk .NET. Fitur kecil namun hebat ini dapat meningkatkan keterbacaan dan profesionalisme dokumen Anda secara signifikan. Sekarang, lanjutkan dan cobalah dengan bahasa lain dan lihat sendiri keajaibannya!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Apa itu kamus tanda hubung?
+### Apa itu kamus pemenggalan kata?
 
-Kamus tanda hubung adalah file yang berisi aturan untuk memecah kata pada titik yang tepat, menyempurnakan tata letak teks, dan keterbacaan.
+Kamus pemenggalan kata merupakan berkas yang memuat aturan-aturan untuk memecah kata pada titik yang tepat, meningkatkan tata letak teks, dan keterbacaan.
 
-### Di mana saya dapat menemukan kamus tanda hubung?
+### Di mana saya dapat menemukan kamus pemenggalan kata?
 
-Anda dapat menemukan kamus tanda hubung daring, yang sering kali disediakan oleh organisasi linguistik atau sumber terbuka. Pastikan formatnya kompatibel dengan Aspose.Words.
+Anda dapat menemukan kamus pemenggalan kata secara daring, yang sering kali disediakan oleh organisasi linguistik atau organisasi sumber terbuka. Pastikan kamus tersebut dalam format yang kompatibel dengan Aspose.Words.
 
 ### Bisakah saya menggunakan metode ini untuk bahasa lain?
 
-Ya, Anda dapat mendaftarkan kamus tanda hubung untuk berbagai bahasa dengan menentukan kode bahasa dan file kamus yang benar.
+Ya, Anda dapat mendaftarkan kamus pemenggalan kata untuk berbagai bahasa dengan menentukan kode bahasa dan berkas kamus yang benar.
 
-### Format file apa yang dapat disimpan Aspose.Words?
+### Format file apa yang dapat disimpan oleh Aspose.Words?
 
-Aspose.Words mendukung penyimpanan dokumen ke berbagai format, termasuk PDF, DOCX, DOC, HTML, dan masih banyak lagi.
+Aspose.Words mendukung penyimpanan dokumen dalam berbagai format, termasuk PDF, DOCX, DOC, HTML, dan masih banyak lagi.
 
 ### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words?
 

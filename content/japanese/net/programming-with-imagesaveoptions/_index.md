@@ -16,6 +16,6 @@ ImageSaveOptions を使用した Words Processing に関する Aspose.Words for 
 | --- | --- |
 | [TIFF バイナリ化のしきい値コントロールを公開する](./expose-threshold-control-for-tiff-binarization/) | この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書で TIFF 2 値化のしきい値制御を公開する方法を学習します。 |
 | [Tiff ページ範囲を取得](./get-tiff-page-range/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書の特定のページ範囲を TIFF ファイルに変換する方法を学習します。 |
-| [フォーマット 1Bpp インデックス](./format-1bpp-indexed/) | Aspose.Words for .NET を使用して、Word 文書を 1Bpp のインデックス付き画像に変換する方法を学びます。ステップ バイ ステップ ガイドに従って簡単に変換できます。 |
+| [フォーマット 1Bpp インデックス](./format-1bpp-indexed/) | Aspose.Words for .NET を使用して、Word 文書を 1Bpp のインデックス付き画像に変換する方法を学びます。簡単な変換を行うには、ステップ バイ ステップ ガイドに従ってください。 |
 | [Jpeg ページ範囲を取得](./get-jpeg-page-range/) | Aspose.Words for .NET を使用して、Word 文書の特定のページをカスタム設定で JPEG に変換します。明るさ、コントラスト、解像度を段階的に調整する方法を学びます。 |
 | [ページ保存コールバック](./page-saving-callback/) | 詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word 文書の各ページを個別の PNG 画像として保存する方法を学習します。 |

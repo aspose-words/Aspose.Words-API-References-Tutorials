@@ -1,27 +1,27 @@
 ---
 title: Ontvang werkelijke vormgrenspunten
 linktitle: Ontvang werkelijke vormgrenspunten
-second_title: Aspose.Words-API voor documentverwerking
-description: Ontdek hoe u de werkelijke vormgrenspunten in Word-documenten kunt verkrijgen met behulp van Aspose.Words voor .NET. Leer nauwkeurige vormmanipulatie met deze gedetailleerde gids.
+second_title: Aspose.Words API voor documentverwerking
+description: Ontdek hoe u de werkelijke vormgrenspunten in Word-documenten kunt krijgen met Aspose.Words voor .NET. Leer nauwkeurige vormmanipulatie met deze gedetailleerde gids.
 type: docs
 weight: 10
 url: /nl/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
 ## Invoering
 
-Heeft u ooit geprobeerd vormen in uw Word-documenten te manipuleren en vroeg u zich af wat de precieze afmetingen waren? Het kennen van de exacte grenzen van vormen kan van cruciaal belang zijn voor verschillende documentbewerkings- en opmaaktaken. Of u nu een gedetailleerd rapport, een mooie nieuwsbrief of een verfijnde flyer maakt, als u de vormafmetingen begrijpt, zorgt u ervoor dat uw ontwerp er precies goed uitziet. In deze handleiding gaan we dieper in op hoe je de werkelijke grenzen van vormen in punten kunt bepalen met behulp van Aspose.Words voor .NET. Klaar om uw vormen foto-perfect te maken? Laten we beginnen!
+Heb je ooit geprobeerd om vormen in je Word-documenten te manipuleren en je afgevraagd wat hun precieze afmetingen waren? Het kennen van de exacte grenzen van vormen kan cruciaal zijn voor verschillende documentbewerkings- en opmaaktaken. Of je nu een gedetailleerd rapport, een mooie nieuwsbrief of een geavanceerde flyer maakt, het begrijpen van de afmetingen van vormen zorgt ervoor dat je ontwerp er precies goed uitziet. In deze gids duiken we in hoe je de werkelijke grenzen van vormen in punten krijgt met behulp van Aspose.Words voor .NET. Ben je klaar om je vormen plaatjesperfect te maken? Laten we beginnen!
 
 ## Vereisten
 
-Voordat we in de kern duiken, laten we ervoor zorgen dat je alles hebt wat je nodig hebt:
+Voordat we in de details duiken, willen we eerst controleren of je alles hebt wat je nodig hebt:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Zo niet, dan kunt u deze downloaden[hier](https://releases.aspose.com/words/net/).
-2. Ontwikkelomgeving: U moet een ontwikkelomgeving hebben ingesteld, zoals Visual Studio.
-3. Basiskennis van C#: Deze handleiding gaat ervan uit dat u een basiskennis hebt van programmeren in C#.
+1.  Aspose.Words voor .NET: Zorg ervoor dat u de Aspose.Words voor .NET-bibliotheek hebt geïnstalleerd. Als dat niet zo is, kunt u deze downloaden[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: U dient een ontwikkelomgeving in te stellen, zoals Visual Studio.
+3. Basiskennis van C#: in deze gids wordt ervan uitgegaan dat u een basiskennis hebt van C#-programmering.
 
 ## Naamruimten importeren
 
-Laten we eerst de benodigde naamruimten importeren. Dit is van cruciaal belang omdat het ons toegang geeft tot de klassen en methoden die door Aspose.Words voor .NET worden aangeboden.
+Laten we eerst de benodigde namespaces importeren. Dit is cruciaal omdat we hiermee toegang krijgen tot de klassen en methoden die Aspose.Words voor .NET biedt.
 
 ```csharp
 using System;
@@ -38,56 +38,56 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Hier maken we een exemplaar van de`Document` klasse en een`DocumentBuilder` om ons te helpen inhoud in het document in te voegen.
+ Hier maken we een instantie van de`Document` klasse en een`DocumentBuilder` om ons te helpen inhoud in het document in te voegen.
 
 ## Stap 2: Voeg een afbeeldingsvorm in
 
-Laten we vervolgens een afbeelding in het document invoegen. Dit beeld zal als onze vorm dienen, en we zullen later de grenzen ervan achterhalen.
+Laten we vervolgens een afbeelding in het document invoegen. Deze afbeelding zal dienen als onze vorm, en we zullen later de grenzen ervan ophalen.
 
 ```csharp
 Shape shape = builder.InsertImage("YOUR DOCUMENT DIRECTORY/Transparent background logo.png");
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY/Transparent background logo.png"` met het pad naar uw afbeeldingsbestand. Deze lijn voegt de afbeelding als een vorm in het document in.
+ Vervangen`"YOUR DOCUMENT DIRECTORY/Transparent background logo.png"` met het pad naar uw afbeeldingsbestand. Deze regel voegt de afbeelding in het document in als een vorm.
 
-## Stap 3: Ontgrendel de beeldverhouding
+## Stap 3: Beeldverhouding ontgrendelen
 
-Voor dit voorbeeld ontgrendelen we de beeldverhouding van de vorm. Deze stap is optioneel, maar nuttig als u van plan bent het formaat van de vorm te wijzigen.
+Voor dit voorbeeld ontgrendelen we de aspectverhouding van de vorm. Deze stap is optioneel, maar handig als u van plan bent de vorm te vergroten of te verkleinen.
 
 ```csharp
 shape.AspectRatioLocked = false;
 ```
 
-Door de beeldverhouding te ontgrendelen, kunnen we de vorm vrij aanpassen zonder de oorspronkelijke verhoudingen te behouden.
+Door de beeldverhouding te ontgrendelen, kunt u de vorm naar wens aanpassen zonder dat de oorspronkelijke verhoudingen behouden blijven.
 
 ## Stap 4: Haal de vormgrenzen op
 
-Nu komt het spannende gedeelte: het ophalen van de werkelijke grenzen van de vorm in punten. Deze informatie kan van cruciaal belang zijn voor een nauwkeurige positionering en lay-out.
+Nu komt het spannende gedeelte: het ophalen van de werkelijke grenzen van de vorm in punten. Deze informatie kan van vitaal belang zijn voor een nauwkeurige positionering en lay-out.
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");
 Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
- De`GetShapeRenderer` methode biedt een renderer voor de vorm, en`BoundsInPoints` geeft ons de exacte afmetingen.
+De`GetShapeRenderer` methode biedt een renderer voor de vorm, en`BoundsInPoints` geeft ons de exacte afmetingen.
 
 ## Conclusie
 
-En daar heb je het! U hebt met succes de werkelijke grenzen van een vorm in punten opgehaald met Aspose.Words voor .NET. Deze kennis stelt u in staat vormen met precisie te manipuleren en te positioneren, zodat uw documenten er precies zo uitzien zoals u ze voor ogen heeft. Of u nu complexe lay-outs ontwerpt of eenvoudigweg een element moet aanpassen, het begrijpen van vormgrenzen is een game-changer.
+En daar heb je het! Je hebt met succes de werkelijke grenzen van een vorm in punten opgehaald met Aspose.Words voor .NET. Deze kennis stelt je in staat om vormen nauwkeurig te manipuleren en te positioneren, zodat je documenten er precies zo uitzien als je ze voor ogen hebt. Of je nu complexe lay-outs ontwerpt of gewoon een element wilt aanpassen, het begrijpen van vormgrenzen is een game-changer.
 
 ## Veelgestelde vragen
 
 ### Waarom is het belangrijk om de grenzen van een vorm te kennen?
-Het kennen van de grenzen helpt bij het nauwkeurig positioneren en uitlijnen van vormen in uw document, waardoor een professionele uitstraling wordt gegarandeerd.
+Als u de grenzen kent, kunt u vormen in uw document nauwkeurig positioneren en uitlijnen, wat zorgt voor een professionele uitstraling.
 
-### Kan ik naast afbeeldingen ook andere soorten vormen gebruiken?
-Absoluut! U kunt elke vorm gebruiken, zoals rechthoeken, cirkels en aangepaste tekeningen.
+### Kan ik naast afbeeldingen ook andere vormen gebruiken?
+Absoluut! Je kunt elke vorm gebruiken, zoals rechthoeken, cirkels en aangepaste tekeningen.
 
 ### Wat moet ik doen als mijn afbeelding niet in het document verschijnt?
 Zorg ervoor dat het bestandspad correct is en dat de afbeelding op die locatie bestaat. Controleer nogmaals op typefouten of onjuiste directoryverwijzingen.
 
 ### Hoe kan ik de beeldverhouding van mijn vorm behouden?
-Set`shape.AspectRatioLocked = true;`om de oorspronkelijke verhoudingen te behouden bij het wijzigen van het formaat.
+Set`shape.AspectRatioLocked = true;`om de oorspronkelijke verhoudingen te behouden bij het wijzigen van de grootte.
 
 ### Is het mogelijk om grenzen in andere eenheden dan punten te krijgen?
 Ja, u kunt punten omrekenen naar andere eenheden, zoals inches of centimeters, met behulp van de juiste conversiefactoren.

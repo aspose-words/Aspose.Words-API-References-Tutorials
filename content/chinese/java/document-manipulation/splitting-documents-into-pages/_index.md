@@ -23,7 +23,7 @@ Aspose.Words for Java 是一个 Java 库，允许您以编程方式操作 Word �
 
 ## 3. 设置你的环境
 
-首先，请按如下方式设置您的开发环境：
+首先，按如下方式设置您的开发环境：
 
 - 在您首选的集成开发环境 (IDE) 中创建一个 Java 项目。
 - 将 Aspose.Words for Java 库添加到您的项目中。您可以参考[文档](https://reference.aspose.com/words/java/)了解详细说明。
@@ -100,11 +100,11 @@ private Document getDocument() {
 /// <摘要>
 /// 获取某一页的文档。
 /// </摘要>
-/// <param name="pageIndex">
+///<param name="pageIndex">
 /// 1 为基础的页面索引。
 /// </param>
 /// <返回>
-/// <see cref="文档"/>。
+/// <see cref="Document"/>。
 /// </返回>
 public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
@@ -119,7 +119,7 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 /// 结束页的基于 1 的索引。
 /// </param>
 /// <返回>
-/// <see cref="文档"/>。
+/// <see cref="Document"/>。
 /// </返回>
 public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exception {
 	Document result = (Document) getDocument().deepClone(false);
@@ -458,7 +458,7 @@ public int visitParagraphEnd(Paragraph paragraph) throws Exception {
 	for (Node cloneNode : splitComposite(paragraph))
 	{
 		Paragraph clonePara = (Paragraph) cloneNode;
-		//从克隆的段落中删除列表编号，但保留缩进不变
+		//从克隆的段落中删除列表编号，但保留相同的缩进量
 		//因为该段落应该是之前项目的一部分。
 		if (paragraph.isListItem())
 		{
@@ -591,7 +591,7 @@ private CompositeNode splitCompositeAtNode(CompositeNode baseNode, Node targetNo
 	//将分割节点插入到原节点之后。
 	baseNode.getParentNode().insertAfter(cloneNode, baseNode);
 	//更新基节点和克隆节点（包括其后代）的新页码。
-	//由于克隆的复合内容被拆分到一页上，因此这将仅仅是一页。
+	//由于克隆的复合页被拆分到一页上，因此这将仅仅是一页。
 	int currentEndPageNum = pageNumberFinder.getPageEnd(baseNode);
 	pageNumberFinder.addPageNumbersForNode(baseNode, currentPageNum, currentEndPageNum - 1);
 	pageNumberFinder.addPageNumbersForNode(cloneNode, currentEndPageNum, currentEndPageNum);
@@ -663,7 +663,7 @@ private static void removePageBreak(Run run)
 ## 结论
 
 您现在已经了解了如何使用 Aspose.Words for Java 将文档拆分为单独的页面。本指南提供了全面的分步教程和源代码示例。您可以进一步自定义和扩展此代码以满足处理文档时的特定要求。
-当然！让我们在有关使用 Aspose.Words for Java 将文档拆分为页面的指南中添加一个常见问题解答部分。
+当然！让我们在指南中添加一个常见问题解答部分，介绍如何使用 Aspose.Words for Java 将文档拆分为页面。
 
 ## 常见问题解答
 

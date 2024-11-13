@@ -89,7 +89,7 @@ Aspose.Words for .NET は、開発者がプログラムによって Word ドキ�
 
 ### Aspose.Words for .NET をインストールするにはどうすればよいですか?
 
- Aspose.Words for .NETはVisual StudioのNuGetパッケージマネージャー経由でインストールするか、[直接ダウンロードする](https://releases.aspose.com/words/net/).
+ Aspose.Words for .NETはVisual StudioのNuGetパッケージマネージャー経由でインストールできます。[直接ダウンロードする](https://releases.aspose.com/words/net/).
 
 ### 複数のテーブルの位置を取得できますか?
 

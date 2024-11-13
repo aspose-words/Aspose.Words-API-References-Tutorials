@@ -53,7 +53,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## चरण 4: गंतव्य शैलियों का उपयोग करके स्रोत दस्तावेज़ जोड़ें
+## चरण 4: गंतव्य शैलियों का उपयोग करके स्रोत दस्तावेज़ को जोड़ें
 
  अब मुख्य भाग आता है: गंतव्य दस्तावेज़ की शैलियों का उपयोग करते हुए स्रोत दस्तावेज़ को गंतव्य दस्तावेज़ में जोड़ना।`AppendDocument` की विधि`Document` क्लास आपको ऐसा करने की अनुमति देता है।`ImportFormatMode.UseDestinationStyles` पैरामीटर यह सुनिश्चित करता है कि गंतव्य दस्तावेज़ की शैलियों का उपयोग किया जाए।
 

@@ -113,15 +113,15 @@ public void doNotSavePictureBullet() throws Exception {
 
 ### 1. Aspose.Words for Java は無料のライブラリですか?
 
-いいえ、Aspose.Words for Javaは商用ライブラリです。ライセンスの詳細は[ここ](https://purchase.aspose.com/buy).
+いいえ、Aspose.Words for Javaは商用ライブラリです。ライセンスの詳細については、[ここ](https://purchase.aspose.com/buy).
 
-### 2. Aspose.Words for Java の無料試用版を入手するにはどうすればよいですか?
+### 2. Aspose.Words for Java の無料試用版を入手するにはどうすればいいですか?
 
 Aspose.Words for Javaの無料トライアルを入手できます[ここ](https://releases.aspose.com/).
 
 ### 3. Aspose.Words for Java のサポートはどこで受けられますか?
 
-サポートとコミュニティの議論については、[Aspose.Words for Java フォーラム](https://forum.aspose.com/).
+サポートやコミュニティのディスカッションについては、[Aspose.Words for Java フォーラム](https://forum.aspose.com/).
 
 ### 4. Aspose.Words for Java を他の Java ライブラリと一緒に使用できますか?
 
@@ -129,6 +129,6 @@ Aspose.Words for Javaの無料トライアルを入手できます[ここ](https
 
 ### 5. 一時ライセンスオプションはありますか?
 
-はい、一時免許証を取得できます[ここ](https://purchase.aspose.com/temporary-license/).
+はい、一時ライセンスを取得できます[ここ](https://purchase.aspose.com/temporary-license/).
 
 今すぐ Aspose.Words for Java を使い始めて、Java アプリケーションでのドキュメント操作の可能性を最大限に引き出しましょう。

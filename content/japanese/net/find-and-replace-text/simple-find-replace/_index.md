@@ -17,7 +17,7 @@ url: /ja/net/find-and-replace-text/simple-find-replace/
 
 1.  Aspose.Words for .NETライブラリ:以下からダウンロードできます。[ここ](https://releases.aspose.com/words/net/)まだお試しでない方は、ぜひ無料トライアルをお試しください。[ここ](https://releases.aspose.com/).
 
-2. .NET Framework: マシンに .NET Framework がインストールされていることを確認してください。必要に応じて、Microsoft Web サイトからダウンロードできます。
+2. .NET Framework: マシンに .NET Framework がインストールされていることを確認してください。必要に応じて、Microsoft の Web サイトからダウンロードできます。
 
 3. C# の基礎知識: C# について少し知っておくと、このチュートリアルを理解するのに大いに役立ちます。
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 ## よくある質問
 
 ### 複数の異なるテキストを一度に置き換えることはできますか?
-はい、できます。`Replace`置換するテキストごとにメソッドを使用します。
+はい、できます。`Replace`置換するテキストごとにメソッドを実行します。
 
 ### Aspose.Words for .NET は無料ですか?
 Aspose.Words for .NETは無料トライアルを提供していますが、フル機能を使用するにはライセンスを購入する必要があります。[価格設定](https://purchase.aspose.com/buy)詳細についてはこちらをご覧ください。

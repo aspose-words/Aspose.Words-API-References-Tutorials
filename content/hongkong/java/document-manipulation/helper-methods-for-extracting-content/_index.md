@@ -140,7 +140,7 @@ public static Document generateDocument(Document srcDoc, ArrayList<Node> nodes) 
 
 ## 結論
 
-從 Word 文件中提取內容可能是許多文件處理任務的關鍵部分。 Aspose.Words for Java 提供了強大的幫助器方法來簡化此過程。無論您需要按樣式、節點之間的內容提取段落，還是生成新文檔，這些方法都將幫助您在 Java 應用程式中有效地處理 Word 文件。
+從 Word 文件中提取內容可能是許多文件處理任務的關鍵部分。 Aspose.Words for Java 提供了強大的幫助器方法來簡化此過程。無論您需要按樣式、節點之間的內容提取段落，還是產生新文檔，這些方法都將幫助您在 Java 應用程式中有效地處理 Word 文件。
 
 ## 常見問題解答
 

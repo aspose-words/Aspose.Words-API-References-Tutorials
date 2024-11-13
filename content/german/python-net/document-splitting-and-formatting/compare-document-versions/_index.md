@@ -1,7 +1,7 @@
 ---
 title: Vergleichen von Dokumentversionen für eine effektive Revisionskontrolle
 linktitle: Vergleichen von Dokumentversionen für eine effektive Revisionskontrolle
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Dokumentversionen effektiv vergleichen. Schritt-für-Schritt-Anleitung mit Quellcode zur Revisionskontrolle. Verbessern Sie die Zusammenarbeit und vermeiden Sie Fehler.
 type: docs
 weight: 13
@@ -11,7 +11,7 @@ In der heutigen schnelllebigen Welt der kollaborativen Dokumenterstellung ist di
 
 ## Einführung
 
-Bei der Zusammenarbeit an Dokumenten ist es wichtig, die von verschiedenen Autoren vorgenommenen Änderungen im Auge zu behalten. Aspose.Words für Python bietet eine zuverlässige Möglichkeit, den Vergleich von Dokumentversionen zu automatisieren. Dadurch können Änderungen leichter identifiziert und eine klare Aufzeichnung der Revisionen geführt werden.
+Bei der Zusammenarbeit an Dokumenten ist es wichtig, die von verschiedenen Autoren vorgenommenen Änderungen im Auge zu behalten. Aspose.Words für Python bietet eine zuverlässige Möglichkeit, den Vergleich von Dokumentversionen zu automatisieren, wodurch Änderungen leichter identifiziert und eine klare Aufzeichnung der Revisionen geführt werden können.
 
 ## Einrichten von Aspose.Words für Python
 

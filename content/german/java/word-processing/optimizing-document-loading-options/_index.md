@@ -36,7 +36,7 @@ import com.aspose.words.LoadOptions;
 // Geben Sie den Pfad zu Ihrer HTML-Datei an
 String htmlFilePath = "path/to/your/document.html";
 
-// Erstellen eines LoadOptions-Objekts für HTML
+// Erstellen Sie ein LoadOptions-Objekt für HTML
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.setLoadFormat(LoadFormat.HTML);
 
@@ -116,7 +116,7 @@ In diesem Artikel haben wir die Bedeutung der Optimierung des Dokumentladens unt
 
 #### Kann ich Aspose.Words für Java kostenlos nutzen?
 
-Aspose.Words für Java bietet eine kostenlose Testversion an, für die erweiterte Nutzung und den vollen Funktionsumfang müssen Sie jedoch möglicherweise eine Lizenz erwerben. Preisdetails finden Sie auf der Website.
+Aspose.Words für Java bietet eine kostenlose Testversion an, für die erweiterte Nutzung und volle Funktionalität müssen Sie jedoch möglicherweise eine Lizenz erwerben. Preisdetails finden Sie auf der Website.
 
 #### Welche anderen Dokumentformate unterstützt Aspose.Words für Java?
 

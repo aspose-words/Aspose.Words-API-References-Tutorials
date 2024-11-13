@@ -18,7 +18,7 @@ Aspose.Words for Java は、Java 開発者が Word 文書をプログラムで�
 
 ### 1. Aspose.Words for Javaのインストール
 
-始めるには、Aspose Releases (https://releases.aspose.com/words/java/) にアクセスし、Aspose.Words for Java ライブラリをダウンロードします。ダウンロード後、インストール手順に従って開発環境にライブラリをセットアップします。
+始めるには、Aspose Releases (https://releases.aspose.com/words/java/) にアクセスし、Aspose.Words for Java ライブラリをダウンロードします。ダウンロード後、インストール手順に従って開発環境にライブラリを設定します。
 
 ### 2. 開発環境の設定
 
@@ -154,7 +154,7 @@ font.setEmboss(true);
 
 ## リストと表の扱い
 
-### 1. 番号付きリストと箇条書きリストの作成
+### 1. 番号付きリストと箇条書きリストを作成する
 
 ドキュメント内にリストを作成するには、DocumentBuilder と組み合わせて ListFormat クラスを使用します。
 
@@ -275,7 +275,7 @@ doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 ドキュメントを分割するには、特定のセクションを別々のドキュメントに保存します。
 
-### 3. ドキュメントを異なる形式に変換する
+### 3. 文書を異なる形式に変換する
 
 Aspose.Words for Java を使用すると、ドキュメントを PDF、HTML などのさまざまな形式に変換できます。
 
@@ -344,7 +344,7 @@ watermark.setLeft(200);
 
 ### 3. 出力のプレビューとテスト
 
-ドキュメントが意図したとおりに表示されるように、常にさまざまなデバイスやプラットフォームでドキュメントをプレビューしてテストしてください。
+ドキュメントが意図したとおりに表示されることを確認するために、常にさまざまなデバイスやプラットフォームでドキュメントをプレビューしてテストしてください。
 
 ## 結論
 

@@ -1,8 +1,8 @@
 ---
-title: Belge Ekle
-linktitle: Belge Ekle
+title: Belgeyi Ekle
+linktitle: Belgeyi Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerini nasıl ekleyeceğinizi öğrenin. Belge iş akışınızı otomatikleştirmek için mükemmeldir.
+description: Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerine nasıl ekleme yapacağınızı öğrenin. Belge iş akışınızı otomatikleştirmek için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/append-document/
@@ -10,29 +10,29 @@ url: /tr/net/join-and-append-documents/append-document/
 
 ## giriiş
 
-Selam! Orijinal biçimlendirmeyi bozmadan iki Word belgesini tek bir belgede birleştirmeniz gerekti mi? İster rapor derliyor olun, ister kapsamlı proje dokümantasyonu oluşturuyor olun, ister sadece doküman yönetiminizi kolaylaştırmaya çalışıyor olun, Aspose.Words for .NET hayatınızı çok daha kolaylaştırabilir. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinin diğerine nasıl ekleneceğini inceleyeceğiz ve her adımı ayrıntılı olarak ele alacağız. Bu kılavuzun sonunda belgeleri bir profesyonel gibi birleştireceksiniz!
+Merhaba! Hiç iki Word belgesini, orijinal biçimlendirmeyi bozmadan birleştirmeniz gerekti mi? İster raporlar derliyor olun, ister kapsamlı proje belgeleri oluşturuyor olun veya sadece belge yönetiminizi kolaylaştırmaya çalışıyor olun, Aspose.Words for .NET hayatınızı çok daha kolaylaştırabilir. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesini diğerine nasıl ekleyeceğinizi inceleyeceğiz ve her adımı ayrıntılı olarak açıklayacağız. Bu kılavuzun sonunda, belgeleri bir profesyonel gibi birleştirmiş olacaksınız!
 
-## Önkoşullar
+## Ön koşullar
 
-İşin detayına dalmadan önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+Ayrıntılara dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1. Temel C# Bilgisi: C# sözdizimi ve kavramları konusunda rahat olmalısınız.
-2.  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/) . Sadece keşfediyorsanız, bir tane ile başlayabilirsiniz.[ücretsiz deneme](https://releases.aspose.com/).
-3. Visual Studio: Güncel sürümlerden herhangi biri çalışmalıdır ancak en son sürüm önerilir.
+1. Temel C# Bilgisi: C# söz dizimi ve kavramlarına hakim olmalısınız.
+2.  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/) Eğer yeni keşfediyorsanız, bir başlangıçla başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/).
+3. Visual Studio: Güncel herhangi bir sürüm işe yarar, ancak en son sürüm önerilir.
 4. .NET Framework: Sisteminizde kurulu olduğundan emin olun.
 
-Her şey hazır mı? Harika! Hadi içeri girelim.
+Her şey hazır mı? Harika! Hadi başlayalım.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET ile çalışmaya başlamak için gerekli ad alanlarını içe aktarmamız gerekiyor. Bu adım, ihtiyaç duyacağımız tüm sınıflara ve yöntemlere erişmemizi sağlar.
+Aspose.Words for .NET ile çalışmaya başlamak için gerekli ad alanlarını içe aktarmamız gerekir. Bu adım, ihtiyacımız olan tüm sınıflara ve yöntemlere erişimimiz olduğundan emin olmamızı sağlar.
 
 ```csharp
 using System;
 using Aspose.Words;
 ```
 
-Bu ad alanları, Word belgelerini oluşturmak, değiştirmek ve kaydetmek için gereklidir.
+Bu ad alanları Word belgelerini oluşturmak, düzenlemek ve kaydetmek için gereklidir.
 
 ## Adım 1: Belge Dizinini Ayarlama
 
@@ -42,9 +42,9 @@ Bu ad alanları, Word belgelerini oluşturmak, değiştirmek ve kaydetmek için 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgelerinizin gerçek yolu ile.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgelerinize giden gerçek yol ile.
 
-## Adım 2: Kaynak ve Hedef Belgelerini Yükleme
+## Adım 2: Kaynak ve Hedef Belgeleri Yükleme
 
 Daha sonra kaynak belgeyi (eklenecek belge) ve hedef belgeyi (kaynağın ekleneceği belge) yükleyeceğiz.
 
@@ -53,50 +53,50 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
- Burada iki tanesini başlatıyoruz`Document` nesneler.`srcDoc` kaynak belgeyi temsil eder ve`dstDoc` hedef belgeyi temsil eder.
+ Burada iki tane başlatıyoruz`Document` nesneler.`srcDoc` kaynak belgeyi temsil eder ve`dstDoc` hedef belgeyi temsil eder.
 
 ## Adım 3: Kaynak Belgeyi Hedef Belgeye Ekleme
 
-Şimdi heyecan verici kısım geliyor; orijinal biçimlendirmeyi olduğu gibi korurken kaynak belgeyi hedef belgeye eklemek.
+Şimdi heyecan verici kısma geliyoruz: Orijinal biçimlendirmeyi bozmadan kaynak belgeyi hedef belgeye eklemek.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Bu adımda şunu kullanıyoruz:`AppendDocument`İki belgeyi birleştirme yöntemi.`ImportFormatMode.KeepSourceFormatting` parametresi kaynak belgenin formatının korunmasını sağlar.
+ Bu adımda şunu kullanırız:`AppendDocument`iki belgeyi birleştirme yöntemi.`ImportFormatMode.KeepSourceFormatting` parametresi kaynak belgenin biçimlendirmesinin korunmasını sağlar.
 
 ## Adım 4: Birleştirilmiş Belgeyi Kaydetme
 
-Belgeleri ekledikten sonra son adım, birleştirilmiş belgeyi yeni bir adla kaydetmektir.
+Belgeler eklendikten sonra son adım, birleştirilen belgenin yeni bir adla kaydedilmesidir.
 
 ```csharp
 dstDoc.Save(dataDir + "AppendedDocument.docx");
 ```
 
-Burada, eklenen belgeyi, ek içerik içerdiğini belirten açıklayıcı bir dosya adı ile kaydediyoruz.
+Burada eklenen belgeyi, eklenen içeriği içerdiğini belirten açıklayıcı bir dosya adıyla kaydediyoruz.
 
 ## Çözüm
 
- Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesini diğerine nasıl ekleyeceğinizi başarıyla öğrendiniz. Bu eğitim ortamınızı ayarlamayı, belgeleri yüklemeyi, kaynak biçimlendirmesini korurken bir belgeyi diğerine eklemeyi ve birleştirilmiş belgeyi kaydetmeyi kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
+ Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesini diğerine eklemeyi başarıyla öğrendiniz. Bu eğitimde ortamınızı kurma, belgeleri yükleme, kaynak biçimlendirmesini koruyarak bir belgeyi diğerine ekleme ve birleştirilmiş belgeyi kaydetme konuları ele alındı. Aspose.Words çok çeşitli özellikler sunar, bu nedenle[API dokümantasyonu](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
 
 ## SSS
 
 ### 1. Aspose.Words for .NET nedir?
 
-Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır. Belgeyle ilgili görevleri otomatikleştirmek için idealdir.
+Aspose.Words for .NET, geliştiricilerin Word belgelerini programatik olarak oluşturmasına, düzenlemesine ve dönüştürmesine olanak tanıyan güçlü bir kütüphanedir. Belgeyle ilgili görevleri otomatikleştirmek için idealdir.
 
 ### 2. Aspose.Words for .NET'i ücretsiz kullanabilir miyim?
 
- Aspose.Words for .NET'i kullanarak deneyebilirsiniz.[ücretsiz deneme](https://releases.aspose.com/). Uzun süreli kullanım için lisans satın almanız gerekir.
+ .NET için Aspose.Words'ü şu şekilde deneyebilirsiniz:[ücretsiz deneme](https://releases.aspose.com/)Uzun süreli kullanım için lisans satın almanız gerekecektir.
 
-### 3. Belgeleri eklerken formatın korunduğundan nasıl emin olabilirim?
+### 3. Belgeleri eklerken biçimlendirmenin korunduğundan nasıl emin olabilirim?
 
- Kullanın`ImportFormatMode.KeepSourceFormatting` parametresi`AppendDocument` Kaynak belgenin biçimlendirmesini koruma yöntemi.
+ Kullanın`ImportFormatMode.KeepSourceFormatting` parametre içinde`AppendDocument` Kaynak belgenin biçimlendirmesini koruma yöntemi.
 
 ### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 
-adresini ziyaret ederek destek alabilirsiniz.[Aspose destek forumu](https://forum.aspose.com/c/words/8).
+Destek almak için şu adresi ziyaret edebilirsiniz:[Aspose destek forumu](https://forum.aspose.com/c/words/8).
 
 ### 5. Farklı formatlardaki belgeleri ekleyebilir miyim?
 
-Evet, Aspose.Words çeşitli formatları destekler ve DOCX, DOC, RTF vb. gibi farklı formatlardaki belgeleri ekleyebilirsiniz.
+Evet, Aspose.Words çeşitli formatları destekler ve DOCX, DOC, RTF gibi farklı formatlardaki belgeleri ekleyebilirsiniz.

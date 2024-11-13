@@ -128,7 +128,7 @@ Att lägga till gruppformer i dina Word-dokument behöver inte vara en komplicer
  Absolut! Varje form kan stylas individuellt med hjälp av egenskaperna som finns tillgängliga i`Shape` klass.
 
 ### Hur placerar jag GroupShape i dokumentet?
- Du kan placera`GroupShape` genom att ställa in dess`Left`och`Top` fastigheter.
+ Du kan placera`GroupShape` genom att ställa in dess`Left` och`Top` fastigheter.
 
 ### Kan jag lägga till text till formerna i GroupShape?
  Ja, du kan lägga till text till former med hjälp av`AppendChild` metod för att lägga till en`Paragraph` innehållande`Run` noder med text.

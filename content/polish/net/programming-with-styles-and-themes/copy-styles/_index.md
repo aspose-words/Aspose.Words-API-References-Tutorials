@@ -1,37 +1,37 @@
 ---
-title: Skopiuj style dokumentu programu Word
-linktitle: Skopiuj style dokumentu programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak kopiować style dokumentów programu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby bez wysiłku zapewnić spójne formatowanie dokumentu.
+title: Kopiuj style dokumentu Word
+linktitle: Kopiuj style dokumentu Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak kopiować style dokumentów Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby bez wysiłku zapewnić spójne formatowanie dokumentów.
 type: docs
 weight: 10
 url: /pl/net/programming-with-styles-and-themes/copy-styles/
 ---
 ## Wstęp
 
-Jeśli kiedykolwiek chciałeś, aby dokument wyglądał spójnie z innym, prawdopodobnie stałeś przed wyzwaniem kopiowania stylów. Wyobraź sobie, że jesteś projektantem, którego zadaniem jest zapewnienie, że każdy nowy raport będzie odpowiadał stylowi istniejącego szablonu. Używając Aspose.Words dla .NET, możesz uprościć to zadanie i sprawić, że Twoje dokumenty będą wyglądać ostro i jednolicie. W tym samouczku omówimy, jak łatwo kopiować style z jednego dokumentu programu Word do drugiego. Zacznijmy!
+Jeśli kiedykolwiek musiałeś sprawić, aby dokument wyglądał spójnie z innym, prawdopodobnie stanąłeś przed wyzwaniem kopiowania stylów. Wyobraź sobie, że jesteś projektantem, którego zadaniem jest zapewnienie, że każdy nowy raport będzie zgodny ze stylem istniejącego szablonu. Używając Aspose.Words dla .NET, możesz uprościć to zadanie i sprawić, aby Twoje dokumenty wyglądały ostro i jednolicie. W tym samouczku zagłębimy się w to, jak możesz bez wysiłku kopiować style z jednego dokumentu Word do drugiego. Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
-1.  Biblioteka Aspose.Words dla platformy .NET: Będziesz jej potrzebować do pracy z dokumentami programu Word w platformie .NET. Można go pobrać z[Aspose.Words do pobrania .NET](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne .NET: Należy mieć skonfigurowane działające środowisko programistyczne .NET, takie jak Visual Studio.
-3. Podstawowa znajomość języka C#: Znajomość języka C# pomoże Ci zrozumieć i skutecznie wdrożyć fragmenty kodu.
+1.  Aspose.Words for .NET Library: Będziesz jej potrzebować do pracy z dokumentami Word w .NET. Możesz ją pobrać z[Aspose.Words dla .NET Pobieranie](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne .NET: Musisz mieć skonfigurowane, działające środowisko programistyczne .NET, np. Visual Studio.
+3. Podstawowa znajomość języka C#: Znajomość języka C# pomoże Ci zrozumieć i skutecznie implementować fragmenty kodu.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz uwzględnić niezbędne przestrzenie nazw w swoim projekcie C#. Umożliwia to dostęp do klas i metod udostępnianych przez Aspose.Words. Oto jak możesz zaimportować wymagane przestrzenie nazw:
+Aby rozpocząć, musisz uwzględnić niezbędne przestrzenie nazw w swoim projekcie C#. Umożliwia to dostęp do klas i metod udostępnianych przez Aspose.Words. Oto, jak możesz zaimportować wymagane przestrzenie nazw:
 
 ```csharp
 using Aspose.Words;
 ```
 
-Włączając tę przestrzeń nazw, zyskujesz dostęp do wszystkich potężnych funkcji biblioteki Aspose.Words.
+Dodając tę przestrzeń nazw, zyskujesz dostęp do wszystkich zaawansowanych funkcji biblioteki Aspose.Words.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
 
- Najpierw musisz zdefiniować ścieżkę do katalogu dokumentów. Tutaj Aspose.Words będzie szukać Twoich plików. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której przechowywane są dokumenty.
+ Po pierwsze, musisz zdefiniować ścieżkę do katalogu dokumentów. To tutaj Aspose.Words będzie szukać Twoich plików. Zastąp`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której przechowywane są Twoje dokumenty.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,18 +39,18 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Załaduj swoje dokumenty
 
-W tym kroku załadujesz dokumenty źródłowe i docelowe. Dokument źródłowy to ten, który zawiera style, które chcesz skopiować, natomiast dokument docelowy to dokument, w którym te style zostaną zastosowane. 
+W tym kroku załadujesz dokumenty źródłowe i docelowe. Dokument źródłowy to ten, który zawiera style, które chcesz skopiować, podczas gdy dokument docelowy to ten, w którym style te zostaną zastosowane. 
 
 ```csharp
 Document doc = new Document();
 Document target = new Document(dataDir + "Rendering.docx");
 ```
 
- Tutaj,`Rendering.docx` to dokument źródłowy zawierający style, które chcesz skopiować. The`doc` obiekt reprezentuje dokument docelowy, do którego style zostaną skopiowane.
+ Tutaj,`Rendering.docx` jest twoim dokumentem źródłowym zawierającym style, które chcesz skopiować.`doc` obiekt reprezentuje dokument docelowy, do którego zostaną skopiowane style.
 
-## Krok 3: Skopiuj style ze źródła do celu
+## Krok 3: Kopiowanie stylów ze źródła do celu
 
- Po załadowaniu obu dokumentów możesz teraz skopiować style. The`CopyStylesFromTemplate` metoda jest Twoim narzędziem do tego zadania. Kopiuje style z pliku`doc`szablon do`target` dokument.
+ Po załadowaniu obu dokumentów możesz teraz skopiować style.`CopyStylesFromTemplate` metoda jest twoim narzędziem do tej pracy. Kopiuje style z`doc`szablon do`target` dokument.
 
 ```csharp
 target.CopyStylesFromTemplate(doc);
@@ -58,7 +58,7 @@ target.CopyStylesFromTemplate(doc);
 
 ## Krok 4: Zapisz zaktualizowany dokument
 
-Po skopiowaniu stylów zapisz zaktualizowany dokument docelowy. Ten krok gwarantuje, że wszystkie wprowadzone zmiany zostaną zapisane w nowym pliku.
+Po skopiowaniu stylów zapisz zaktualizowany dokument docelowy. Ten krok zapewnia, że wszystkie wprowadzone zmiany zostaną zapisane w nowym pliku.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
@@ -68,21 +68,21 @@ Ten kod zapisuje zmodyfikowany dokument pod nową nazwą, zachowując oryginalne
 
 ## Wniosek
 
-I masz to! Kopiowanie stylów pomiędzy dokumentami programu Word za pomocą Aspose.Words dla .NET jest prostym procesem, gdy już się o tym przekonasz. Wykonując poniższe kroki, masz pewność, że Twoje dokumenty zachowują spójny wygląd i styl, dzięki czemu Twoja praca jest bardziej wydajna i profesjonalna. Niezależnie od tego, czy aktualizujesz raport, czy tworzysz nowy szablon, ta metoda pozwala zaoszczędzić czas i wysiłek, pozwalając skupić się na treści, a nie na formatowaniu.
+I masz to! Kopiowanie stylów między dokumentami Word przy użyciu Aspose.Words dla .NET to prosty proces, gdy już się z nim oswoisz. Postępując zgodnie z tymi krokami, zapewniasz, że Twoje dokumenty zachowują spójny wygląd i styl, dzięki czemu Twoja praca jest bardziej wydajna i profesjonalna. Niezależnie od tego, czy aktualizujesz raport, czy tworzysz nowy szablon, ta metoda oszczędza Ci czasu i wysiłku, pozwalając Ci skupić się na treści, a nie na formatowaniu.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ###  Jaki jest cel`CopyStylesFromTemplate` method?  
- The`CopyStylesFromTemplate` Metoda kopiuje style z jednego dokumentu do drugiego, zapewniając, że dokument docelowy dziedziczy formatowanie dokumentu źródłowego.
+Ten`CopyStylesFromTemplate` Metoda kopiuje style z jednego dokumentu do drugiego, zapewniając, że dokument docelowy odziedziczy formatowanie dokumentu źródłowego.
 
 ###  Czy mogę użyć`CopyStylesFromTemplate` with documents in different formats?  
- Nie,`CopyStylesFromTemplate` metoda działa tylko z dokumentami w tym samym formacie, zazwyczaj DOCX.
+ Nie,`CopyStylesFromTemplate` Metoda ta działa tylko z dokumentami w tym samym formacie, zwykle DOCX.
 
 ### Jak mogę sprawdzić, czy style zostały pomyślnie skopiowane?  
 Otwórz dokument docelowy i sprawdź ustawienia stylu. Powinieneś zobaczyć zastosowane style z dokumentu źródłowego.
 
-### Co się stanie, jeśli dokument docelowy ma już style?  
- The`CopyStylesFromTemplate` Metoda nadpisze istniejące style w dokumencie docelowym stylami z dokumentu źródłowego.
+### A co jeśli dokument docelowy już ma style?  
+Ten`CopyStylesFromTemplate` Metoda nadpisze istniejące style w dokumencie docelowym stylami z dokumentu źródłowego.
 
 ### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?  
- Aspose.Words dla .NET jest produktem komercyjnym, ale możesz uzyskać bezpłatną wersję próbną[Aspose.Words dla .NET Bezpłatna wersja próbna](https://releases.aspose.com/).
+ Aspose.Words dla platformy .NET to produkt komercyjny, ale możesz uzyskać bezpłatną wersję próbną[Aspose.Words dla .NET Bezpłatna wersja próbna](https://releases.aspose.com/).

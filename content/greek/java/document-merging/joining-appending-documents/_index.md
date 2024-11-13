@@ -2,7 +2,7 @@
 title: Ένταξη και προσάρτηση εγγράφων
 linktitle: Ένταξη και προσάρτηση εγγράφων
 second_title: Aspose.Words Java Document Processing API
-description: Μάθετε πώς να ενώνετε και να προσαρτάτε έγγραφα χρησιμοποιώντας το Aspose.Words για Java. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα για αποτελεσματικό χειρισμό εγγράφων.
+description: Μάθετε πώς να ενώνετε και να προσαρτάτε έγγραφα χρησιμοποιώντας το Aspose.Words για Java. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα για αποτελεσματική διαχείριση εγγράφων.
 type: docs
 weight: 11
 url: /el/java/document-merging/joining-appending-documents/
@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
- Ο`ImportFormatMode.KEEP_SOURCE_FORMATTING` Η επιλογή διασφαλίζει ότι διατηρείται η μορφοποίηση των εγγράφων προέλευσης.
+Ο`ImportFormatMode.KEEP_SOURCE_FORMATTING` Η επιλογή διασφαλίζει ότι διατηρείται η μορφοποίηση των εγγράφων προέλευσης.
 
 ## Βήμα 5: Αποθήκευση του αποτελέσματος
 

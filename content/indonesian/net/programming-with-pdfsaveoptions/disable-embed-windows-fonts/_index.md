@@ -1,38 +1,38 @@
 ---
-title: Kurangi Ukuran PDF dengan Menonaktifkan Font Tersemat
-linktitle: Kurangi Ukuran PDF dengan Menonaktifkan Font Tersemat
+title: Kurangi Ukuran PDF dengan Menonaktifkan Font yang Disematkan
+linktitle: Kurangi Ukuran PDF dengan Menonaktifkan Font yang Disematkan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Kurangi ukuran PDF dengan menonaktifkan font yang disematkan menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengoptimalkan dokumen Anda demi penyimpanan dan berbagi yang efisien.
+description: Kurangi ukuran PDF dengan menonaktifkan font yang tertanam menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengoptimalkan dokumen Anda agar dapat disimpan dan dibagikan secara efisien.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
 ## Perkenalan
 
-Mengurangi ukuran file PDF sangat penting untuk penyimpanan yang efisien dan berbagi dengan cepat. Salah satu cara efektif untuk melakukannya adalah dengan menonaktifkan font yang disematkan, terutama ketika font standar sudah tersedia di sebagian besar sistem. Dalam tutorial ini, kita akan mempelajari cara memperkecil ukuran PDF dengan menonaktifkan font yang disematkan menggunakan Aspose.Words untuk .NET. Kami akan memandu setiap langkah untuk memastikan Anda dapat menerapkan ini dengan mudah di proyek Anda sendiri.
+Mengurangi ukuran file PDF dapat menjadi hal yang penting untuk penyimpanan yang efisien dan berbagi dengan cepat. Salah satu cara efektif untuk melakukannya adalah dengan menonaktifkan font yang disematkan, terutama jika font standar sudah tersedia di sebagian besar sistem. Dalam tutorial ini, kita akan membahas cara mengurangi ukuran PDF dengan menonaktifkan font yang disematkan menggunakan Aspose.Words untuk .NET. Kami akan memandu Anda melalui setiap langkah untuk memastikan Anda dapat menerapkannya dengan mudah dalam proyek Anda sendiri.
 
 ## Prasyarat
 
-Sebelum mendalami kodenya, pastikan Anda memiliki hal berikut:
+Sebelum menyelami kode, pastikan Anda memiliki hal berikut:
 
 -  Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduh dan instal dari[Tautan unduhan](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan .NET: Visual Studio adalah pilihan yang populer.
-- Contoh Dokumen Word: Siapkan file DOCX yang ingin Anda konversi ke PDF.
+- Contoh Dokumen Word: Siapkan file DOCX yang ingin Anda ubah ke PDF.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk memulai, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek Anda. Ini memungkinkan Anda untuk mengakses kelas dan metode yang diperlukan untuk tugas kita.
+Untuk memulai, pastikan Anda telah mengimpor namespace yang diperlukan ke dalam proyek Anda. Ini memungkinkan Anda untuk mengakses kelas dan metode yang diperlukan untuk tugas kita.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dikelola. Setiap langkah akan memandu Anda menjalani tugas, memastikan Anda memahami apa yang terjadi di setiap titik.
+Mari kita uraikan prosesnya menjadi beberapa langkah yang sederhana dan mudah dikelola. Setiap langkah akan memandu Anda melalui tugas tersebut, memastikan Anda memahami apa yang terjadi di setiap tahap.
 
 ## Langkah 1: Inisialisasi Dokumen Anda
 
-Pertama, kita perlu memuat dokumen Word yang ingin Anda konversi ke PDF. Di sinilah perjalanan Anda dimulai.
+Pertama, kita perlu memuat dokumen Word yang ingin Anda ubah menjadi PDF. Di sinilah perjalanan Anda dimulai.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -40,25 +40,25 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Di Sini,`dataDir` adalah pengganti direktori tempat dokumen Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya.
+ Di Sini,`dataDir` adalah tempat penampung untuk direktori tempat dokumen Anda berada. Ganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya.
 
 ## Langkah 2: Konfigurasikan Opsi Penyimpanan PDF
 
-Selanjutnya, kami akan menyiapkan opsi penyimpanan PDF. Di sinilah kami menentukan bahwa kami tidak ingin menyematkan font standar Windows.
+Selanjutnya, kita akan mengatur opsi penyimpanan PDF. Di sinilah kita menentukan bahwa kita tidak ingin menyematkan font Windows standar.
 
 ```csharp
-// PDF keluaran akan disimpan tanpa menyematkan font windows standar.
+// Output PDF akan disimpan tanpa menyertakan font Windows standar.
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
     FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone
 };
 ```
 
- Dengan mengatur`FontEmbeddingMode` ke`EmbedNone`, kami menginstruksikan Aspose.Words untuk tidak menyertakan font ini dalam PDF, sehingga mengurangi ukuran file.
+ Dengan pengaturan`FontEmbeddingMode` ke`EmbedNone`, kami menginstruksikan Aspose.Words untuk tidak menyertakan font ini dalam PDF, sehingga mengurangi ukuran file.
 
 ## Langkah 3: Simpan Dokumen sebagai PDF
 
-Terakhir, kami menyimpan dokumen sebagai PDF menggunakan opsi penyimpanan yang dikonfigurasi. Inilah saatnya DOCX Anda berubah menjadi PDF ringkas.
+Terakhir, kami menyimpan dokumen sebagai PDF menggunakan opsi penyimpanan yang dikonfigurasi. Inilah saat yang tepat saat DOCX Anda berubah menjadi PDF yang ringkas.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
@@ -68,21 +68,21 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 
 ## Kesimpulan
 
-Dengan mengikuti langkah-langkah ini, Anda dapat mengurangi ukuran file PDF Anda secara signifikan. Menonaktifkan font yang disematkan adalah cara sederhana namun efektif untuk membuat dokumen Anda lebih ringan dan mudah dibagikan. Aspose.Words untuk .NET membuat proses ini lancar, memastikan Anda dapat mengoptimalkan file Anda dengan sedikit usaha.
+Dengan mengikuti langkah-langkah ini, Anda dapat mengurangi ukuran file PDF secara signifikan. Menonaktifkan font yang disematkan adalah cara yang mudah namun efektif untuk membuat dokumen Anda lebih ringan dan mudah dibagikan. Aspose.Words untuk .NET membuat proses ini lancar, memastikan Anda dapat mengoptimalkan file Anda dengan upaya minimal.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Mengapa saya harus menonaktifkan font yang tertanam dalam PDF?
-Menonaktifkan font yang disematkan dapat secara signifikan mengurangi ukuran file PDF, menjadikannya lebih efisien untuk penyimpanan dan lebih cepat untuk dibagikan.
+Menonaktifkan font yang tertanam dapat mengurangi ukuran file PDF secara signifikan, membuatnya lebih efisien dalam penyimpanan dan lebih cepat untuk dibagikan.
 
-### Apakah PDF akan tetap ditampilkan dengan benar tanpa font yang disematkan?
-Ya, selama fontnya standar dan tersedia di sistem tempat PDF dilihat, font tersebut akan ditampilkan dengan benar.
+### Apakah PDF akan tetap ditampilkan dengan benar tanpa font yang tertanam?
+Ya, selama fontnya standar dan tersedia pada sistem tempat PDF dilihat, PDF akan ditampilkan dengan benar.
 
-### Bisakah saya menyematkan font tertentu secara selektif saja ke dalam PDF?
+### Bisakah saya menanamkan font tertentu saja secara selektif dalam PDF?
 Ya, Aspose.Words untuk .NET memungkinkan Anda menyesuaikan font mana yang disematkan, memberikan fleksibilitas dalam cara Anda mengurangi ukuran file.
 
-### Apakah saya memerlukan Aspose.Words untuk .NET untuk menonaktifkan font yang disematkan di PDF?
-Ya, Aspose.Words untuk .NET menyediakan fungsionalitas yang diperlukan untuk mengonfigurasi opsi penyematan font dalam PDF.
+### Apakah saya perlu Aspose.Words untuk .NET untuk menonaktifkan font yang tertanam dalam PDF?
+Ya, Aspose.Words untuk .NET menyediakan fungsionalitas yang dibutuhkan untuk mengonfigurasi opsi penyematan font dalam PDF.
 
 ### Bagaimana cara mendapatkan dukungan jika saya mengalami masalah?
- Anda dapat mengunjungi[Forum dukungan](https://forum.aspose.com/c/words/8) untuk bantuan dengan masalah apa pun yang Anda temui.
+ Anda dapat mengunjungi[Forum dukungan](https://forum.aspose.com/c/words/8) untuk bantuan terkait masalah yang Anda hadapi.

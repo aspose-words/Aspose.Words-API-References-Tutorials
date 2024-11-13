@@ -2,55 +2,55 @@
 title: Word Belgesinde Salt Okunur Koruması
 linktitle: Word Belgesinde Salt Okunur Koruması
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak salt okunur koruma uygulayarak Word belgelerinizi nasıl koruyacağınızı öğrenin. Adım adım kılavuzumuzu takip edin.
+description: Aspose.Words for .NET kullanarak salt okunur korumasını uygulayarak Word belgelerinizi nasıl koruyacağınızı öğrenin. Adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/document-protection/read-only-protection/
 ---
 ## giriiş
 
-Word belgelerini yönetmeye gelince, içeriklerini korumak için onları salt okunur hale getirmeniz gereken zamanlar vardır. Yanlışlıkla düzenleme riski olmadan önemli bilgilerin paylaşılması veya yasal belgelerin bütünlüğünün sağlanması için olsun, salt okunur koruma değerli bir özelliktir. Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesine salt okunur korumanın nasıl uygulanacağını inceleyeceğiz. Kolayca takip edebilmenizi sağlamak için her adımda size ayrıntılı ve ilgi çekici bir şekilde yol göstereceğiz.
+Word belgelerini yönetmeye gelince, içeriklerini korumak için bunları salt okunur yapmanız gereken zamanlar vardır. İster önemli bilgileri yanlışlıkla düzenleme riski olmadan paylaşmak, ister yasal belgelerin bütünlüğünü sağlamak olsun, salt okunur koruması değerli bir özelliktir. Bu eğitimde, .NET için Aspose.Words kullanarak bir Word belgesinde salt okunur korumasının nasıl uygulanacağını inceleyeceğiz. Her adımda ayrıntılı ve ilgi çekici bir şekilde size yol göstererek kolayca takip edebilmenizi sağlayacağız.
 
-## Önkoşullar
+## Ön koşullar
 
-Kodun ayrıntılarına girmeden önce yerine getirmeniz gereken birkaç önkoşul vardır:
+Koda dalmadan önce, yerine getirmeniz gereken birkaç ön koşul var:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. adresinden indirebilirsiniz.[Aspose sürümler sayfası](https://releases.aspose.com/words/net/).
-2. Geliştirme Ortamı: .NET'in yüklü olduğu bir geliştirme ortamı kurun. Visual Studio iyi bir seçimdir.
-3. Temel C# Anlayışı: Bu eğitimde, C# programlama konusunda temel bir anlayışa sahip olduğunuz varsayılmaktadır.
+1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin yüklü olduğundan emin olun. Bunu şuradan indirebilirsiniz:[Aspose sürüm sayfası](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: .NET yüklü bir geliştirme ortamı kurun. Visual Studio iyi bir seçimdir.
+3. C# Temel Anlayışı: Bu eğitimde C# programlama konusunda temel bir anlayışa sahip olduğunuzu varsayıyoruz.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarının içe aktarıldığından emin olalım. Bu, Aspose.Words for .NET'ten ihtiyacımız olan sınıflara ve yöntemlere erişmemizi sağladığı için çok önemlidir.
+Öncelikle gerekli ad alanlarının içe aktarıldığından emin olalım. Bu, .NET için Aspose.Words'den ihtiyaç duyduğumuz sınıflara ve yöntemlere erişmemizi sağladığı için önemlidir.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-## 1. Adım: Belgeyi Ayarlayın
+## Adım 1: Belgeyi Ayarlayın
 
-Bu adımda yeni bir belge ve belge oluşturucu oluşturacağız. Bu, operasyonlarımızın temelini oluşturur.
+Bu adımda yeni bir belge ve bir belge oluşturucu oluşturacağız. Bu, operasyonlarımızın temelini oluşturur.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Belgeye bir miktar metin yazın.
+// Belgeye biraz metin yazın.
 builder.Write("Open document as read-only");
 ```
 
 Açıklama:
 
 - Belgenin kaydedileceği dizin yolunu tanımlayarak başlıyoruz.
--  Yeni bir`Document` nesne yaratılır ve`DocumentBuilder` onunla ilişkilidir.
+-  Yeni bir`Document` nesne yaratılır ve bir`DocumentBuilder` bununla ilişkilidir.
 - Oluşturucuyu kullanarak belgeye basit bir metin satırı ekliyoruz.
 
 ## Adım 2: Yazma Koruması Parolasını Ayarlayın
 
-Daha sonra yazma koruması için bir şifre belirlememiz gerekiyor. Bu şifre en fazla 15 karakter uzunluğunda olabilir.
+Sonra, yazma koruması için bir parola ayarlamamız gerekiyor. Bu parola en fazla 15 karakter uzunluğunda olabilir.
 
 ```csharp
 //En fazla 15 karakter uzunluğunda bir şifre girin.
@@ -59,68 +59,68 @@ doc.WriteProtection.SetPassword("MyPassword");
 
 Açıklama:
 
-- `SetPassword` yöntem çağrılır`WriteProtection` belgenin özelliği.
-- Korumayı kaldırmak için gerekli olacak bir şifre (bu durumda MyPassword) sağlıyoruz.
+- The`SetPassword` yöntem çağrılır`WriteProtection` belgenin mülkiyeti.
+- Korumayı kaldırmak için gerekli olacak bir şifre (bu durumda "MyPassword") sağlıyoruz.
 
-## 3. Adım: Salt Okunur Öneriyi Etkinleştirin
+## Adım 3: Salt Okunur Önerisini Etkinleştir
 
-Bu adımda belgeyi salt okunur önerilir hale getiriyoruz. Bu, belge açıldığında kullanıcıdan onu salt okunur modda açmasının isteneceği anlamına gelir.
+Bu adımda, belgeyi salt okunur olarak öneriyoruz. Bu, belge açıldığında kullanıcıdan salt okunur modunda açmasını isteyeceği anlamına gelir.
 
 ```csharp
-// Belgeyi önerilen salt okunur hale getirin.
+// Belgeyi salt okunur olarak önerin.
 doc.WriteProtection.ReadOnlyRecommended = true;
 ```
 
 Açıklama:
 
-- `ReadOnlyRecommended` özellik şu şekilde ayarlandı:`true`.
-- Bu, kullanıcılardan belgeyi salt okunur modda açmalarını ister ancak öneriyi göz ardı etmeyi de seçebilirler.
+- The`ReadOnlyRecommended` mülk ayarlandı`true`.
+- Bu, kullanıcıların belgeyi salt okunur modunda açmasını isteyecektir; ancak kullanıcılar bu öneriyi görmezden gelmeyi seçebilirler.
 
-## 4. Adım: Salt Okunur Korumasını Uygulayın
+## Adım 4: Salt Okunur Korumasını Uygula
 
-Son olarak belgeye salt okunur korumayı uyguluyoruz. Bu adım korumayı güçlendirir.
+Son olarak, belgeye salt okunur korumasını uygularız. Bu adım korumayı zorunlu kılar.
 
 ```csharp
-// Yazma korumasını salt okunur olarak uygulayın.
+// Yazma korumasını salt okunur olarak uygula.
 doc.Protect(ProtectionType.ReadOnly);
 ```
 
 Açıklama:
 
-- `Protect` belgede yöntem çağrılır`ProtectionType.ReadOnly` argüman olarak.
-- Bu yöntem, salt okunur korumayı uygulayarak belgede parola olmadan değişiklik yapılmasını önler.
+- The`Protect` yöntem belge üzerinde çağrılır`ProtectionType.ReadOnly` argüman olarak.
+- Bu yöntem, salt okunur korumasını zorunlu kılarak, parola olmadan belgede herhangi bir değişiklik yapılmasını engeller.
 
 ## Adım 5: Belgeyi Kaydedin
 
 Son adım, belgeyi uygulanan koruma ayarlarıyla kaydetmektir.
 
 ```csharp
-// Korumalı belgeyi kaydedin.
+// Korunan belgeyi kaydedin.
 doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 ```
 
 Açıklama:
 
-- `Save` Belgede dosyanın yolunu ve adını belirten yöntem çağrılır.
-- Belge salt okunur korumayla birlikte kaydedilir.
+- The`Save` metodu, dosyanın yolunu ve adını belirterek belge üzerinde çağrılır.
+- Belge salt okunur koruması uygulanarak kaydedilir.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak başarıyla salt okunur korumalı bir Word belgesi oluşturdunuz. Bu özellik, belgenizin içeriğinin bozulmadan ve değiştirilmeden kalmasını sağlayarak ekstra bir güvenlik katmanı sağlar. İster hassas bilgileri ister yasal belgeleri paylaşıyor olun, salt okunur koruma, belge yönetimi cephanenizde bulunması gereken bir araçtır.
+İşte karşınızda! Aspose.Words for .NET kullanarak salt okunur korumalı bir Word belgesi başarıyla oluşturdunuz. Bu özellik, belgenizin içeriğinin bozulmadan ve değiştirilmeden kalmasını sağlayarak ekstra bir güvenlik katmanı sağlar. İster hassas bilgiler ister yasal belgeler paylaşın, salt okunur koruması belge yönetimi cephaneliğinizde olmazsa olmaz bir araçtır.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, geliştiricilerin Word belgelerini C# veya diğer .NET dillerini kullanarak programlı olarak oluşturmasına, değiştirmesine, dönüştürmesine ve korumasına olanak tanıyan güçlü bir kitaplıktır.
+Aspose.Words for .NET, geliştiricilerin C# veya diğer .NET dillerini kullanarak Word belgelerini programlı bir şekilde oluşturmalarına, değiştirmelerine, dönüştürmelerine ve korumalarına olanak tanıyan güçlü bir kütüphanedir.
 
-### Bir belgeden salt okunur korumayı kaldırabilir miyim?
- Evet, salt okunur korumayı şunu kullanarak kaldırabilirsiniz:`Unprotect` yöntem ve doğru şifrenin sağlanması.
+### Bir belgeden salt okunur korumasını kaldırabilir miyim?
+ Evet, salt okunur korumasını kullanarak kaldırabilirsiniz.`Unprotect` yöntemi ve doğru şifreyi girerek.
 
 ### Belgede belirlenen parola şifrelenmiş mi?
-Evet, Aspose.Words, korunan belgenin güvenliğini sağlamak için şifreyi şifreler.
+Evet, Aspose.Words korunan belgenin güvenliğini sağlamak için parolayı şifreler.
 
-### Aspose.Words for .NET'i kullanarak diğer koruma türlerini uygulayabilir miyim?
-Evet, Aspose.Words for .NET, yalnızca yorumlara izin verme, form doldurma veya değişiklikleri izleme dahil olmak üzere çeşitli koruma türlerini destekler.
+### Aspose.Words for .NET'i kullanarak başka koruma türleri uygulayabilir miyim?
+Evet, Aspose.Words for .NET yalnızca yorumlara izin verme, formları doldurma veya değişiklikleri izleme gibi çeşitli koruma türlerini destekler.
 
-### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
- Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Aspose sürümler sayfası](https://releases.aspose.com/).
+### Aspose.Words for .NET için ücretsiz deneme sürümü mevcut mu?
+ Evet, ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[Aspose sürüm sayfası](https://releases.aspose.com/).

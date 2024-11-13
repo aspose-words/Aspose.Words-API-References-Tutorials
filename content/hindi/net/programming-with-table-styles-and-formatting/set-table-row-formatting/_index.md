@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
  आप सेट करके पाठ संरेखण बदल सकते हैं`ParagraphFormat.Alignment` की संपत्ति`DocumentBuilder` वस्तु।
 
 ### क्या मैं .NET के लिए Aspose.Words का उपयोग करके तालिका में कक्षों को मर्ज कर सकता हूँ?
- हां, आप इसका उपयोग करके कोशिकाओं को मर्ज कर सकते हैं`CellFormat.HorizontalMerge`और`CellFormat.VerticalMerge` गुण।
+ हां, आप इसका उपयोग करके कोशिकाओं को मर्ज कर सकते हैं`CellFormat.HorizontalMerge` और`CellFormat.VerticalMerge` गुण।
 
 ### क्या तालिका को पूर्वनिर्धारित शैलियों के साथ स्टाइल करने का कोई तरीका है?
  हां, .NET के लिए Aspose.Words आपको पूर्वनिर्धारित तालिका शैलियों को लागू करने की अनुमति देता है`Table.Style` संपत्ति।

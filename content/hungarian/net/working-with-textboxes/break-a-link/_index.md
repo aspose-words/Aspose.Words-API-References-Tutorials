@@ -78,7 +78,7 @@ Ez a módszer megszakítja a hivatkozást az aktuális szövegmezőről a követ
 
 ## 4. lépés: Állítsa a továbbítási hivatkozást nullára
 
- A link megszakításának másik módja a`Next` a szövegdoboz tulajdonsága`null`. Ez a módszer különösen akkor hasznos, ha dinamikusan módosítja a dokumentumszerkezetet.
+ A hivatkozás megszakításának másik módja a`Next` a szövegdoboz tulajdonsága`null`. Ez a módszer különösen akkor hasznos, ha dinamikusan módosítja a dokumentumszerkezetet.
 
 ### A Null melletti beállítás
 
@@ -100,13 +100,13 @@ Néha egy szövegdoboz egy lánc része lehet, és más mezők hivatkoznak rá. 
 textBox.Previous?.BreakForwardLink();
 ```
 
- A`?.` operátor biztosítja, hogy a metódus csak akkor kerüljön meghívásra, ha`Previous` nem nulla, megelőzve a lehetséges futásidejű hibákat.
+A`?.` operátor biztosítja, hogy a metódus csak akkor kerüljön meghívásra, ha`Previous` nem nulla, megelőzve a lehetséges futásidejű hibákat.
 
 ## Következtetés
 
-És megvan! 🎉 Sikeresen megtanulta, hogyan bonthat tovább linkeket a szövegmezőkben az Aspose.Words for .NET használatával. Függetlenül attól, hogy megtisztít egy dokumentumot, előkészíti egy új formátumra, vagy csak kísérletezik, ezek a lépések segítenek a szövegdobozok precíz kezelésében. A kapcsolatok feltörése olyan, mint egy csomó kibogozása – néha szükséges a dolgok rendben tartásához. 
+És megvan! 🎉 Sikeresen megtanulta, hogyan bonthat tovább linkeket a szövegdobozokban az Aspose.Words for .NET használatával. Függetlenül attól, hogy megtisztít egy dokumentumot, előkészíti egy új formátumra, vagy csak kísérletezik, ezek a lépések segítenek a szövegdobozok precíz kezelésében. A kapcsolatok feltörése olyan, mint egy csomó kibogozása – néha szükséges a dolgok rendben tartásához. 
 
- Ha többet szeretne megtudni arról, mire képes az Aspose.Words, az övék[dokumentáció](https://reference.aspose.com/words/net/) információkincs tárháza. Kellemes kódolást, és dokumentumai mindig legyenek jól rendszerezve!
+ Ha többet szeretne megtudni arról, mire képes az Aspose.Words, az övék[dokumentáció](https://reference.aspose.com/words/net/) információ kincsesbánya. Kellemes kódolást, és dokumentumai mindig legyenek jól rendszerezve!
 
 ## GYIK
 
@@ -128,4 +128,4 @@ A hivatkozások megszakítása potenciálisan befolyásolhatja az elrendezést, 
 
 ### Hol találhatok további forrásokat az Aspose.Words használatával kapcsolatban?
 
- További információkért és forrásokért keresse fel a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/)és[támogatási fórum](https://forum.aspose.com/c/words/8).
+ További információkért és forrásokért keresse fel a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) és[támogatási fórum](https://forum.aspose.com/c/words/8).

@@ -66,7 +66,7 @@ Most, hogy beállítottuk a fontforrásainkat, ideje betölteni azt a dokumentum
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Biztosítsd ezt`"Rendering.docx"` a Word-dokumentum neve. Ha a dokumentumának más a neve, mindenképpen frissítse ennek megfelelően.
+ Biztosítsd ezt`"Rendering.docx"` a Word dokumentum neve. Ha a dokumentumának más a neve, mindenképpen frissítse ennek megfelelően.
 
 ## 4. lépés: Mentse el a dokumentumot PDF formátumban
 
@@ -86,7 +86,7 @@ Ezzel a dokumentumot PDF formátumban menti a megadott könyvtárba, a korábban
 
 ### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
 
- Tudod[letöltés](https://releases.aspose.com/words/net/) az Aspose.Words for .NET legújabb verziója a webhelyről.
+ Megteheti[letöltés](https://releases.aspose.com/words/net/) az Aspose.Words for .NET legújabb verziója a webhelyről.
 
 ### Használhatok több egyéni betűtípus-mappát?
 

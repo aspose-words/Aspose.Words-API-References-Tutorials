@@ -82,7 +82,7 @@ sdt.Style = style;
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ```
 
-在此步骤中，我们使用新名称保存修改后的文档以保留原始文件。您现在可以打开此文档并查看样式化内容控件的运行情况。
+在此步骤中，我们用新名称保存修改后的文档以保留原始文件。您现在可以打开此文档并查看样式化内容控件的运行情况。
 
 ## 结论
 
@@ -97,10 +97,10 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 您可以使用`foreach`循环并将样式单独应用于每一个。
 
 ### 可以将更改恢复到原始样式吗？  
-是的，您可以在进行更改之前存储原始样式，并在需要时重新应用。
+是的，您可以在进行更改之前存储原始样式，并在需要时重新应用它。
 
-### 我可以将此方法用于其他文档元素（如段落或表格）吗？  
+### 我可以将此方法用于其他文档元素（例如段落或表格）吗？  
 当然可以！此方法适用于各种文档元素。只需调整代码以定位所需元素即可。
 
-### Aspose.Words 除了.NET 之外还支持其他平台吗？  
-是的，Aspose.Words 适用于 Java、C++和其他平台。检查他们的[文档](https://reference.aspose.com/words/net/)了解更多详情。
+### Aspose.Words 除了 .NET 之外还支持其他平台吗？  
+是的，Aspose.Words 适用于 Java、C++和其他平台。查看他们的[文档](https://reference.aspose.com/words/net/)了解更多详情。

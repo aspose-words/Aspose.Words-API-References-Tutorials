@@ -27,8 +27,8 @@ Erfahren Sie, wie Sie mit Aspose.Words für Java Dokumente ins PDF-Format export
 ### [Konvertieren von Dokumenten in andere Formate](./converting-documents-different-formats/)
 Erfahren Sie, wie Sie mit Aspose.Words für Java Dokumente in verschiedene Formate konvertieren. Schritt-für-Schritt-Anleitung zur effizienten Dokumentkonvertierung.
 ### [Konvertieren von HTML in Dokumente](./converting-html-documents/)
-Erfahren Sie, wie Sie mit Aspose.Words HTML in Java in Word-Dokumente konvertieren. Folgen Sie unserer Schritt-für-Schritt-Anleitung für eine reibungslose Dokumentenverarbeitung.
+Konvertieren Sie HTML-Dokumente mühelos in Word-Dokumente mit Aspose.Words für Java. Erfahren Sie in unserem ausführlichen Leitfaden, wie Sie diese Konvertierung in nur wenigen Schritten durchführen.
 ### [Dokumentkonvertierung mit SaveOptions](./document-conversion-saveoptions/)
-Erfahren Sie mehr über die Dokumentkonvertierung mit Aspose.Words in Java. Schritt-für-Schritt-Anleitung, Codebeispiele und FAQs für die nahtlose Konvertierung von Word in PDF.
+Konvertieren Sie DOCX effizient in EPUB mit Aspose.Words für Java. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie Speicheroptionen anpassen, Inhalte aufteilen und Dokumenteigenschaften exportieren.
 ### [Konvertieren von Dokumenten in Bilder](./converting-documents-images/)
-Erfahren Sie, wie Sie mit Aspose.Words für Java Dokumente in Bilder konvertieren. Eine Schritt-für-Schritt-Anleitung für Java-Entwickler.
+Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für Java in Bilder konvertieren. Schritt-für-Schritt-Anleitung mit Codebeispielen und FAQs.

@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/add-content-using-documentbuilder/insert-check-box-form-field/
 ---
 ## 介绍
-在文档自动化领域，Aspose.Words for .NET 堪称强大工具，为开发人员提供了广泛的工具包，用于以编程方式创建、修改和操作 Word 文档。无论您是在处理调查、表单还是任何需要用户交互的文档，使用 Aspose.Words for .NET 插入复选框表单字段都轻而易举。在本综合指南中，我们将逐步指导您完成该过程，确保您像专业人士一样掌握此功能。
+在文档自动化领域，Aspose.Words for .NET 堪称一流工具，为开发人员提供了广泛的工具包，用于以编程方式创建、修改和操作 Word 文档。无论您是在处理调查、表单还是任何需要用户交互的文档，使用 Aspose.Words for .NET 插入复选框表单字段都轻而易举。在本综合指南中，我们将逐步指导您完成整个过程，确保您像专业人士一样掌握此功能。
 
 ## 先决条件
 
@@ -16,7 +16,7 @@ url: /zh/net/add-content-using-documentbuilder/insert-check-box-form-field/
 
 -  Aspose.Words for .NET Library：如果你还没有，请从[这里](https://releases.aspose.com/words/net/)。您还可以选择[免费试用](https://releases.aspose.com/)如果你正在探索图书馆。
 - 开发环境：像 Visual Studio 这样的 IDE 将成为您的游乐场。
-- 对 C# 的基本了解：虽然我们将详细介绍所有内容，但对 C# 的基本掌握将会很有帮助。
+- 对 C# 的基本了解：虽然我们将详细介绍所有内容，但对 C# 的基本掌握将会很有益。
 
 准备好了吗？让我们开始吧！
 

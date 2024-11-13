@@ -2,28 +2,28 @@
 title: Word 문서에 인라인 이미지 삽입
 linktitle: Word 문서에 인라인 이미지 삽입
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에 인라인 이미지를 삽입하는 방법을 알아보세요. 코드 예제와 FAQ가 포함된 단계별 가이드입니다.
+description: Aspose.Words for .NET을 사용하여 Word 문서에 인라인 이미지를 삽입하는 방법을 알아보세요. 코드 예제와 FAQ가 포함된 단계별 가이드입니다.
 type: docs
 weight: 10
 url: /ko/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 ## 소개
 
-.NET 애플리케이션을 사용한 문서 처리 영역에서 Aspose.Words는 Word 문서를 프로그래밍 방식으로 조작하기 위한 강력한 솔루션으로 우뚝 서 있습니다. 주요 기능 중 하나는 인라인 이미지를 손쉽게 삽입하여 문서의 시각적 매력과 기능을 향상시키는 기능입니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 활용하여 Word 문서에 이미지를 원활하게 포함시키는 방법에 대해 자세히 설명합니다.
+.NET 애플리케이션을 사용한 문서 처리 분야에서 Aspose.Words는 Word 문서를 프로그래밍 방식으로 조작하기 위한 강력한 솔루션으로 우뚝 서 있습니다. 주요 기능 중 하나는 인라인 이미지를 손쉽게 삽입하여 문서의 시각적 매력과 기능을 향상시키는 기능입니다. 이 튜토리얼은 Aspose.Words for .NET을 활용하여 Word 문서에 이미지를 원활하게 임베드하는 방법에 대해 자세히 설명합니다.
 
-## 전제 조건
+## 필수 조건
 
-.NET용 Aspose.Words를 사용하여 인라인 이미지를 삽입하는 프로세스를 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
+Aspose.Words for .NET을 사용하여 인라인 이미지를 삽입하는 과정을 살펴보기 전에 다음 필수 구성 요소가 준비되었는지 확인하세요.
 
-1. Visual Studio 환경: Visual Studio를 설치하고 .NET 애플리케이션을 만들고 컴파일할 준비를 합니다.
-2.  .NET 라이브러리용 Aspose.Words: 다음에서 .NET 라이브러리용 Aspose.Words를 다운로드하고 설치하세요.[여기](https://releases.aspose.com/words/net/).
-3. C#에 대한 기본 이해: C# 프로그래밍 언어 기본 사항에 익숙하면 코드 조각을 구현하는 데 도움이 됩니다.
+1. Visual Studio 환경: Visual Studio를 설치하고 .NET 애플리케이션을 만들고 컴파일할 준비를 하세요.
+2.  Aspose.Words for .NET 라이브러리: Aspose.Words for .NET 라이브러리를 다운로드하여 설치하세요.[여기](https://releases.aspose.com/words/net/).
+3. C#에 대한 기본적인 이해: C# 프로그래밍 언어의 기본에 대한 지식은 코드 조각을 구현하는 데 도움이 됩니다.
 
-이제 필요한 네임스페이스를 가져오고 .NET용 Aspose.Words를 사용하여 인라인 이미지를 삽입하는 단계를 살펴보겠습니다.
+이제 Aspose.Words for .NET을 사용하여 필요한 네임스페이스를 가져오고 인라인 이미지를 삽입하는 단계를 살펴보겠습니다.
 
 ## 네임스페이스 가져오기
 
-먼저, .NET용 Aspose.Words의 기능에 액세스하려면 필수 네임스페이스를 C# 코드로 가져와야 합니다.
+첫째, .NET용 Aspose.Words의 기능에 액세스하려면 필요한 네임스페이스를 C# 코드로 가져와야 합니다.
 
 ```csharp
 using Aspose.Words;
@@ -34,7 +34,7 @@ using Aspose.Words.Drawing;
 
 ## 1단계: 새 문서 만들기
 
- 새 인스턴스를 초기화하는 것으로 시작합니다.`Document` 수업과`DocumentBuilder` 문서 작성을 용이하게 합니다.
+ 새 인스턴스를 초기화하여 시작합니다.`Document` 클래스와`DocumentBuilder` 문서 작성을 용이하게 해줍니다.
 
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
@@ -44,18 +44,18 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2단계: 인라인 이미지 삽입
 
- 사용`InsertImage` 의 방법`DocumentBuilder` 문서의 현재 위치에 이미지를 삽입하는 클래스입니다.
+ 사용하세요`InsertImage` 의 방법`DocumentBuilder` 문서의 현재 위치에 이미지를 삽입하는 클래스입니다.
 
 ```csharp
 string imagePath = "PATH_TO_YOUR_IMAGE_FILE";
 builder.InsertImage(imagePath);
 ```
 
- 바꾸다`"PATH_TO_YOUR_IMAGE_FILE"` 이미지 파일의 실제 경로를 사용하세요. 이 방법은 이미지를 문서에 원활하게 통합합니다.
+ 바꾸다`"PATH_TO_YOUR_IMAGE_FILE"` 이미지 파일의 실제 경로와 함께. 이 방법은 이미지를 문서에 완벽하게 통합합니다.
 
 ## 3단계: 문서 저장
 
- 마지막으로 다음을 사용하여 문서를 원하는 위치에 저장합니다.`Save` 의 방법`Document` 수업.
+ 마지막으로, 다음을 사용하여 원하는 위치에 문서를 저장합니다.`Save` 의 방법`Document` 수업.
 
 ```csharp
 doc.Save(dataDir + "InsertInlineImage.docx");
@@ -65,21 +65,21 @@ doc.Save(dataDir + "InsertInlineImage.docx");
 
 ## 결론
 
-결론적으로 Aspose.Words for .NET을 사용하여 인라인 이미지를 Word 문서에 통합하는 것은 문서 시각화 및 기능을 향상시키는 간단한 프로세스입니다. 위에 설명된 단계를 따르면 Aspose.Words의 기능을 활용하여 문서 내 이미지를 프로그래밍 방식으로 효율적으로 조작할 수 있습니다.
+결론적으로 Aspose.Words for .NET을 사용하여 인라인 이미지를 Word 문서에 통합하는 것은 문서 시각화와 기능을 향상시키는 간단한 프로세스입니다. 위에 설명된 단계를 따르면 Aspose.Words의 힘을 활용하여 문서 내의 이미지를 프로그래밍 방식으로 효율적으로 조작할 수 있습니다.
 
-## FAQ
+## 자주 묻는 질문
 
-### .NET용 Aspose.Words를 사용하여 단일 Word 문서에 여러 이미지를 삽입할 수 있나요?
- 예, 이미지 파일을 반복하고 호출하여 여러 이미지를 삽입할 수 있습니다.`builder.InsertImage` 각 이미지마다.
+### Aspose.Words for .NET을 사용하여 하나의 Word 문서에 여러 이미지를 삽입할 수 있나요?
+ 예, 이미지 파일을 반복하고 호출하여 여러 이미지를 삽입할 수 있습니다.`builder.InsertImage` 각 이미지에 대해.
 
-### .NET용 Aspose.Words는 배경이 투명한 이미지 삽입을 지원합니까?
-예, Aspose.Words for .NET은 투명한 배경의 이미지 삽입을 지원하여 문서에서 이미지의 투명도를 유지합니다.
+### .NET용 Aspose.Words는 투명한 배경의 이미지 삽입을 지원합니까?
+네, Aspose.Words for .NET은 투명한 배경의 이미지를 삽입하는 것을 지원하며, 문서에서 이미지의 투명성을 유지합니다.
 
-### .NET용 Aspose.Words를 사용하여 삽입된 인라인 이미지의 크기를 어떻게 조정할 수 있나요?
- 너비와 높이 속성을 설정하여 이미지 크기를 조정할 수 있습니다.`Shape` 반환된 객체`builder.InsertImage`.
+### Aspose.Words for .NET을 사용하여 삽입한 인라인 이미지의 크기를 어떻게 조정할 수 있나요?
+ 너비 및 높이 속성을 설정하여 이미지 크기를 조정할 수 있습니다.`Shape` 반환된 객체`builder.InsertImage`.
 
-### .NET용 Aspose.Words를 사용하여 문서 내의 특정 위치에 인라인 이미지를 배치하는 것이 가능합니까?
- 예, 호출하기 전에 문서 작성기의 커서 위치를 사용하여 인라인 이미지의 위치를 지정할 수 있습니다.`builder.InsertImage`.
+### Aspose.Words for .NET을 사용하여 문서 내의 특정 위치에 인라인 이미지를 배치할 수 있습니까?
+ 예, 문서 작성기의 커서 위치를 호출하기 전에 인라인 이미지의 위치를 지정할 수 있습니다.`builder.InsertImage`.
 
-### Aspose.Words for .NET을 사용하여 URL의 이미지를 Word 문서에 포함할 수 있나요?
-예, .NET 라이브러리를 사용하여 URL에서 이미지를 다운로드한 다음 Aspose.Words for .NET을 사용하여 Word 문서에 삽입할 수 있습니다.
+### Aspose.Words for .NET을 사용하여 URL의 이미지를 Word 문서에 포함할 수 있습니까?
+네, .NET 라이브러리를 사용하여 URL에서 이미지를 다운로드한 다음 Aspose.Words for .NET을 사용하여 Word 문서에 삽입할 수 있습니다.

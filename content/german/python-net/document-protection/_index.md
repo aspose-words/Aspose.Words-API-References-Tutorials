@@ -1,7 +1,7 @@
 ---
 title: Dokumentenschutz
 linktitle: Dokumentenschutz
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Sichern Sie Ihre Dokumente mit Aspose.Words für Python! Implementieren Sie Kennwortverschlüsselung, Benutzerberechtigungen und digitale Signaturen für einen robusten Dokumentenschutz.
 type: docs
 weight: 14

@@ -53,7 +53,7 @@ Als Nächstes müssen Sie auf die Tabelle in Ihrem Dokument zugreifen. Stellen S
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-Hier verwenden wir die`GetChild` Methode, um die erste Tabelle im Dokument abzurufen. Die`NodeType.Table` Parameter gibt an, dass wir nach einer Tabelle suchen, und`0` bezeichnet die erste Tabelle. Die`true` Der Parameter stellt sicher, dass die Suche tief ist, d. h., es werden alle untergeordneten Knoten durchsucht.
+Hier verwenden wir die`GetChild` Methode, um die erste Tabelle im Dokument abzurufen. Die`NodeType.Table` Parameter gibt an, dass wir nach einer Tabelle suchen, und`0` zeigt die erste Tabelle an.`true` Der Parameter stellt sicher, dass die Suche tief ist, d. h., es werden alle untergeordneten Knoten durchsucht.
 
 ## Schritt 3: Wählen Sie die erste Zelle aus
 
@@ -108,7 +108,7 @@ Ja, Sie können die Zellen in Ihrer Tabelle durchlaufen und auf jede Zelle die g
  Verwenden Sie die`doc.Save("output.docx")` Methode, um Ihre Änderungen zu speichern.
 
 ### Ist es möglich, auf unterschiedliche Zellen unterschiedliche Farbtöne anzuwenden?
-Absolut! Greifen Sie einfach auf jede Zelle einzeln zu und legen Sie deren Schattierung fest.
+Auf jeden Fall! Greifen Sie einfach auf jede Zelle einzeln zu und legen Sie deren Schattierung fest.
 
 ### Kann ich Aspose.Words für .NET mit anderen Programmiersprachen verwenden?
 Aspose.Words für .NET ist für .NET-Sprachen wie C# konzipiert, es gibt aber auch Versionen für andere Plattformen.

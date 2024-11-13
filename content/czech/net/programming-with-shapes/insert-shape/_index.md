@@ -115,7 +115,7 @@ Můžete změnit`ShapeType` v`InsertShape` metoda pro vkládání různých typ�
  Ano, tvary můžete stylovat nastavením vlastností jako`FillColor`, `StrokeColor` a`StrokeWeight`.
 
 ### Jak umístím tvary vzhledem k ostatním prvkům?
- Použijte`RelativeHorizontalPosition`a`RelativeVerticalPosition` vlastnosti pro umístění tvarů vzhledem k ostatním prvkům v dokumentu.
+ Použijte`RelativeHorizontalPosition` a`RelativeVerticalPosition` vlastnosti pro umístění tvarů vzhledem k ostatním prvkům v dokumentu.
 
 ### Mohu seskupit více tvarů dohromady?
  Ano, Aspose.Words for .NET umožňuje seskupovat tvary pomocí`GroupShape` třída.

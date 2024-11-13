@@ -2,27 +2,27 @@
 title: Agregar valores de fecha y hora al eje de un gráfico
 linktitle: Agregar valores de fecha y hora al eje de un gráfico
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo agregar valores de fecha y hora al eje de un gráfico usando Aspose.Words para .NET en esta guía completa paso a paso.
+description: Aprenda a agregar valores de fecha y hora al eje de un gráfico usando Aspose.Words para .NET en esta completa guía paso a paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/date-time-values-to-axis/
 ---
 ## Introducción
 
-Crear gráficos en documentos puede ser una forma poderosa de visualizar datos. Cuando se trata de datos de series temporales, agregar valores de fecha y hora al eje de un gráfico es crucial para mayor claridad. En este tutorial, lo guiaremos a través del proceso de agregar valores de fecha y hora al eje de un gráfico usando Aspose.Words para .NET. Esta guía paso a paso lo ayudará a configurar su entorno, escribir el código y comprender cada parte del proceso. ¡Vamos a sumergirnos!
+La creación de gráficos en documentos puede ser una forma eficaz de visualizar datos. Cuando se trabaja con datos de series temporales, agregar valores de fecha y hora al eje de un gráfico es fundamental para lograr claridad. En este tutorial, lo guiaremos a través del proceso de agregar valores de fecha y hora al eje de un gráfico mediante Aspose.Words para .NET. Esta guía paso a paso lo ayudará a configurar su entorno, escribir el código y comprender cada parte del proceso. ¡Vamos a profundizar!
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de comenzar, asegúrese de cumplir con los siguientes requisitos previos:
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
 
 1. Visual Studio o cualquier IDE .NET: necesita un entorno de desarrollo para escribir y ejecutar su código .NET.
-2.  Aspose.Words para .NET: Debe tener instalada la biblioteca Aspose.Words para .NET. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
-3. Conocimientos básicos de C#: este tutorial asume que tienes conocimientos básicos de programación en C#.
-4.  Una licencia Aspose válida: puede obtener una licencia temporal de[aquí](https://purchase.aspose.com/temporary-license/).
+2.  Aspose.Words para .NET: Debe tener instalada la biblioteca Aspose.Words para .NET. Puede descargarla desde[aquí](https://releases.aspose.com/words/net/).
+3. Conocimientos básicos de C#: este tutorial asume que tienes un conocimiento básico de programación en C#.
+4.  Una licencia Aspose válida: Puede obtener una licencia temporal de[aquí](https://purchase.aspose.com/temporary-license/).
 
 ## Importar espacios de nombres
 
-Para comenzar, asegúrese de haber importado los espacios de nombres necesarios en su proyecto. Este paso es crucial para acceder a las clases y métodos de Aspose.Words.
+Para comenzar, asegúrese de haber importado los espacios de nombres necesarios en su proyecto. Este paso es fundamental para acceder a las clases y métodos de Aspose.Words.
 
 ```csharp
 using System;
@@ -31,24 +31,24 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Drawing.Charts;
 ```
 
-## Paso 1: configure su directorio de documentos
+## Paso 1: Configurar el directorio de documentos
 
-Primero, debe definir el directorio donde se guardará su documento. Esto es importante para organizar sus archivos y garantizar que su código se ejecute correctamente.
+En primer lugar, debe definir el directorio en el que se guardará el documento. Esto es importante para organizar los archivos y garantizar que el código se ejecute correctamente.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Paso 2: cree un nuevo documento y DocumentBuilder
+## Paso 2: Crear un nuevo documento y DocumentBuilder
 
- A continuación, cree una nueva instancia de`Document` clase y un`DocumentBuilder` objeto. Estos objetos le ayudarán a crear y manipular su documento.
+ A continuación, cree una nueva instancia del`Document` clase y una`DocumentBuilder` objeto. Estos objetos le ayudarán a crear y manipular su documento.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 3: inserte un gráfico en el documento
+## Paso 3: Insertar un gráfico en el documento
 
  Ahora, inserte un gráfico en su documento usando el`DocumentBuilder` objeto. En este ejemplo, utilizamos un gráfico de columnas, pero también puedes elegir otros tipos.
 
@@ -57,17 +57,17 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Paso 4: borrar series existentes
+## Paso 4: Borrar series existentes
 
-Borre cualquier serie existente en el gráfico para asegurarse de comenzar desde cero. Este paso es esencial para los datos personalizados.
+Borre cualquier serie existente en el gráfico para asegurarse de empezar desde cero. Este paso es esencial para los datos personalizados.
 
 ```csharp
 chart.Series.Clear();
 ```
 
-## Paso 5: agregar valores de fecha y hora a la serie
+## Paso 5: Agregar valores de fecha y hora a la serie
 
-Agregue sus valores de fecha y hora a la serie de gráficos. Este paso implica la creación de matrices para fechas y valores correspondientes.
+Agregue los valores de fecha y hora a la serie de gráficos. Este paso implica crear matrices para las fechas y los valores correspondientes.
 
 ```csharp
 chart.Series.Add("Aspose Series 1",
@@ -79,9 +79,9 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2, 5.3 });
 ```
 
-## Paso 6: configurar el eje X
+## Paso 6: Configurar el eje X
 
-Establezca la escala y las marcas para el eje X. Esto garantiza que sus fechas se muestren correctamente y en intervalos adecuados.
+Establezca la escala y las marcas de graduación para el eje X. Esto garantiza que las fechas se muestren correctamente y en intervalos apropiados.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
@@ -93,9 +93,9 @@ xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
 ```
 
-## Paso 7: guarde el documento
+## Paso 7: Guardar el documento
 
-Finalmente, guarde su documento en el directorio especificado. Este paso concluye el proceso y su documento ahora debería contener un gráfico con valores de fecha y hora en el eje X.
+Por último, guarde el documento en el directorio especificado. Este paso concluye el proceso y el documento debería contener un gráfico con valores de fecha y hora en el eje X.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
@@ -103,7 +103,7 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 
 ## Conclusión
 
-Agregar valores de fecha y hora al eje de un gráfico en un documento es un proceso sencillo con Aspose.Words para .NET. Si sigue los pasos descritos en este tutorial, puede crear gráficos claros e informativos que visualicen de manera efectiva datos de series temporales. Ya sea que esté preparando informes, presentaciones o cualquier documento que requiera una representación detallada de datos, Aspose.Words proporciona las herramientas que necesita para tener éxito.
+Agregar valores de fecha y hora al eje de un gráfico en un documento es un proceso sencillo con Aspose.Words para .NET. Si sigue los pasos que se describen en este tutorial, podrá crear gráficos claros e informativos que visualicen de manera eficaz los datos de series temporales. Ya sea que esté preparando informes, presentaciones o cualquier documento que requiera una representación detallada de los datos, Aspose.Words le proporciona las herramientas que necesita para tener éxito.
 
 ## Preguntas frecuentes
 
@@ -117,12 +117,12 @@ Puede personalizar la apariencia accediendo a las propiedades del gráfico y con
 
 ### ¿Es posible agregar varias series a un gráfico?
 
- ¡Absolutamente! Puede agregar varias series a su gráfico llamando al`Series.Add` método varias veces con diferentes datos.
+ ¡Por supuesto! Puedes agregar varias series a tu gráfico llamando al`Series.Add` método varias veces con diferentes datos.
 
-### ¿Qué pasa si necesito actualizar los datos del gráfico dinámicamente?
+### ¿Qué pasa si necesito actualizar los datos del gráfico de forma dinámica?
 
-Puede actualizar los datos del gráfico dinámicamente manipulando las propiedades de la serie y el eje mediante programación según sus requisitos.
+Puede actualizar los datos del gráfico de forma dinámica manipulando las propiedades de las series y los ejes mediante programación según sus requisitos.
 
 ### ¿Dónde puedo encontrar documentación más detallada sobre Aspose.Words para .NET?
 
- Puedes encontrar documentación más detallada.[aquí](https://reference.aspose.com/words/net/).
+ Puede encontrar documentación más detallada[aquí](https://reference.aspose.com/words/net/).

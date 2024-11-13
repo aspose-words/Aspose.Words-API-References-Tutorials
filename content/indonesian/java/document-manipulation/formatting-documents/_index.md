@@ -2,23 +2,23 @@
 title: Memformat Dokumen di Aspose.Words untuk Java
 linktitle: Memformat Dokumen
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari seni memformat dokumen di Aspose.Words untuk Java dengan panduan komprehensif kami. Jelajahi fitur-fitur canggih dan tingkatkan keterampilan pemrosesan dokumen Anda.
+description: Pelajari seni memformat dokumen di Aspose.Words untuk Java dengan panduan lengkap kami. Jelajahi fitur-fitur canggih dan tingkatkan keterampilan pemrosesan dokumen Anda.
 type: docs
 weight: 29
 url: /id/java/document-manipulation/formatting-documents/
 ---
 
-## Pengantar Memformat Dokumen di Aspose.Words untuk Java
+## Pengantar Pemformatan Dokumen di Aspose.Words untuk Java
 
-Dalam dunia pemrosesan dokumen Java, Aspose.Words for Java berdiri sebagai alat yang kuat dan serbaguna. Baik Anda sedang membuat laporan, membuat faktur, atau membuat dokumen yang rumit, Aspose.Words untuk Java siap membantu Anda. Dalam panduan komprehensif ini, kita akan mempelajari seni memformat dokumen menggunakan Java API yang canggih ini. Mari kita memulai perjalanan ini selangkah demi selangkah.
+Dalam dunia pemrosesan dokumen Java, Aspose.Words untuk Java merupakan alat yang tangguh dan serbaguna. Baik Anda sedang mengerjakan pembuatan laporan, menyusun faktur, atau membuat dokumen yang rumit, Aspose.Words untuk Java siap membantu Anda. Dalam panduan komprehensif ini, kita akan mempelajari seni memformat dokumen menggunakan API Java yang canggih ini. Mari kita mulai perjalanan ini selangkah demi selangkah.
 
 ## Menyiapkan Lingkungan Anda
 
- Sebelum kita menyelami seluk-beluk pemformatan dokumen, penting untuk menyiapkan lingkungan Anda. Pastikan Anda telah menginstal dan mengkonfigurasi Aspose.Words for Java dengan benar di proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
+ Sebelum kita menyelami seluk-beluk format dokumen, penting untuk menyiapkan lingkungan Anda. Pastikan Anda telah menginstal dan mengonfigurasi Aspose.Words untuk Java dengan benar di proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
 
 ## Membuat Dokumen Sederhana
 
-Mari kita mulai dengan membuat dokumen sederhana menggunakan Aspose.Words for Java. Cuplikan kode Java berikut menunjukkan cara membuat dokumen dan menambahkan beberapa teks ke dalamnya:
+Mari kita mulai dengan membuat dokumen sederhana menggunakan Aspose.Words untuk Java. Potongan kode Java berikut menunjukkan cara membuat dokumen dan menambahkan beberapa teks ke dalamnya:
 
 ```java
 Document doc = new Document();
@@ -27,9 +27,9 @@ builder.writeln("Hello, Aspose.Words for Java!");
 doc.save("MyDocument.docx");
 ```
 
-## Menyesuaikan Ruang Antara Teks Asia dan Latin
+## Menyesuaikan Spasi Antara Teks Asia dan Latin
 
-Aspose.Words untuk Java menyediakan fitur canggih untuk menangani spasi teks. Anda dapat secara otomatis menyesuaikan spasi antara teks Asia dan Latin seperti yang ditunjukkan di bawah ini:
+Aspose.Words untuk Java menyediakan fitur-fitur canggih untuk menangani spasi teks. Anda dapat secara otomatis menyesuaikan spasi antara teks Asia dan Latin seperti yang ditunjukkan di bawah ini:
 
 ```java
 Document doc = new Document();
@@ -44,7 +44,7 @@ doc.save("SpaceBetweenAsianAndLatinText.docx");
 
 ## Bekerja dengan Tipografi Asia
 
-Untuk mengontrol pengaturan tipografi Asia, pertimbangkan cuplikan kode berikut:
+Untuk mengontrol pengaturan tipografi Asia, pertimbangkan potongan kode berikut:
 
 ```java
 Document doc = new Document("AsianTypography.docx");
@@ -57,7 +57,7 @@ doc.save("AsianTypographyLineBreakGroup.docx");
 
 ## Pemformatan Paragraf
 
-Aspose.Words for Java memungkinkan Anda memformat paragraf dengan mudah. Lihat contoh ini:
+Aspose.Words untuk Java memungkinkan Anda memformat paragraf dengan mudah. Lihat contoh berikut:
 
 ```java
 Document doc = new Document();
@@ -72,9 +72,9 @@ builder.writeln("I'm another nice formatted paragraph. I'm intended to demonstra
 doc.save("ParagraphFormatting.docx");
 ```
 
-## Pemformatan Daftar Bertingkat
+## Pemformatan Daftar Multilevel
 
-Membuat daftar bertingkat adalah persyaratan umum dalam pemformatan dokumen. Aspose.Words untuk Java menyederhanakan tugas ini:
+Membuat daftar bertingkat merupakan persyaratan umum dalam pemformatan dokumen. Aspose.Words untuk Java menyederhanakan tugas ini:
 
 ```java
 Document doc = new Document();
@@ -114,7 +114,7 @@ doc.save("ApplyBordersAndShadingToParagraph.docx");
 
 ## Mengubah Spasi dan Indentasi Paragraf Asia
 
-Menyempurnakan spasi dan indentasi paragraf untuk teks Asia:
+Memperbaiki spasi paragraf dan indentasi untuk teks Asia:
 
 ```java
 Document doc = new Document("AsianTypography.docx");
@@ -127,9 +127,9 @@ format.setLineUnitAfter(10.0);
 doc.save("ChangeAsianParagraphSpacingAndIndents.docx");
 ```
 
-## Memotret ke Grid
+## Menempel pada Grid
 
-Optimalkan tata letak saat bekerja dengan karakter Asia dengan menjentikkan ke grid:
+Optimalkan tata letak saat bekerja dengan karakter Asia dengan menempelkannya ke kotak:
 
 ```java
 Document doc = new Document();
@@ -143,7 +143,7 @@ doc.save("SnapToGrid.docx");
 
 ## Mendeteksi Pemisah Gaya Paragraf
 
-Jika Anda perlu menemukan pemisah gaya di dokumen Anda, Anda dapat menggunakan kode berikut:
+Jika Anda perlu menemukan pemisah gaya dalam dokumen Anda, Anda dapat menggunakan kode berikut:
 
 ```java
 Document doc = new Document("Document.docx");
@@ -159,26 +159,26 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ## Kesimpulan
 
- Pada artikel ini, kami telah menjelajahi berbagai aspek pemformatan dokumen di Aspose.Words untuk Java. Berbekal wawasan ini, Anda dapat membuat dokumen berformat indah untuk aplikasi Java Anda. Ingatlah untuk merujuk pada[Aspose.Words untuk dokumentasi Java](https://reference.aspose.com/words/java/) untuk panduan lebih mendalam.
+ Dalam artikel ini, kami telah menjelajahi berbagai aspek pemformatan dokumen di Aspose.Words untuk Java. Berbekal wawasan ini, Anda dapat membuat dokumen berformat indah untuk aplikasi Java Anda. Ingatlah untuk merujuk ke[Dokumentasi Aspose.Words untuk Java](https://reference.aspose.com/words/java/) untuk panduan lebih mendalam.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara mengunduh Aspose.Words untuk Java?
 
  Anda dapat mengunduh Aspose.Words untuk Java dari[tautan ini](https://releases.aspose.com/words/java/).
 
-### Apakah Aspose.Words untuk Java cocok untuk membuat dokumen yang rumit?
+### Apakah Aspose.Words untuk Java cocok untuk membuat dokumen yang kompleks?
 
-Sangat! Aspose.Words untuk Java menawarkan kemampuan luas untuk membuat dan memformat dokumen kompleks dengan mudah.
+Tentu saja! Aspose.Words untuk Java menawarkan kemampuan ekstensif untuk membuat dan memformat dokumen kompleks dengan mudah.
 
 ### Bisakah saya menerapkan gaya khusus ke paragraf menggunakan Aspose.Words untuk Java?
 
-Ya, Anda dapat menerapkan gaya khusus pada paragraf, sehingga memberikan tampilan dan nuansa unik pada dokumen Anda.
+Ya, Anda dapat menerapkan gaya khusus pada paragraf, memberikan dokumen Anda tampilan dan nuansa yang unik.
 
 ### Apakah Aspose.Words untuk Java mendukung daftar bertingkat?
 
-Ya, Aspose.Words untuk Java memberikan dukungan luar biasa untuk membuat dan memformat daftar bertingkat di dokumen Anda.
+Ya, Aspose.Words untuk Java menyediakan dukungan yang sangat baik untuk membuat dan memformat daftar bertingkat dalam dokumen Anda.
 
 ### Bagaimana cara mengoptimalkan spasi paragraf untuk teks Asia?
 
-Anda dapat menyempurnakan spasi paragraf untuk teks Asia dengan menyesuaikan pengaturan yang relevan di Aspose.Words untuk Java.
+Anda dapat menyempurnakan spasi paragraf untuk teks Asia dengan menyesuaikan pengaturan relevan di Aspose.Words untuk Java.

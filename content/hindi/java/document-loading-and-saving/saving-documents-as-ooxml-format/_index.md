@@ -2,7 +2,7 @@
 title: Java के लिए Aspose.Words में OOXML प्रारूप में दस्तावेज़ों को सहेजना
 linktitle: दस्तावेज़ों को OOXML प्रारूप में सहेजना
 second_title: Aspose.Words जावा दस्तावेज़ प्रसंस्करण एपीआई
-description: Java के लिए Aspose.Words के साथ OOXML फ़ॉर्मेट में दस्तावेज़ों को सहेजना सीखें। अपनी फ़ाइलों को आसानी से सुरक्षित, अनुकूलित और कस्टमाइज़ करें।
+description: Java के लिए Aspose.Words के साथ OOXML फ़ॉर्मेट में दस्तावेज़ों को सहेजना सीखें। अपनी फ़ाइलों को सुरक्षित, अनुकूलित और आसानी से कस्टमाइज़ करें।
 type: docs
 weight: 20
 url: /hi/java/document-loading-and-saving/saving-documents-as-ooxml-format/
@@ -87,10 +87,10 @@ import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.SaveFormat;
 
-// विरासत नियंत्रण वर्णों के साथ दस्तावेज़ लोड करें
+//विरासत नियंत्रण वर्णों के साथ दस्तावेज़ लोड करें
 Document doc = new Document("LegacyControlChars.doc");
 
-//FLAT_OPC प्रारूप के साथ OoxmlSaveOptions बनाएं और विरासत नियंत्रण वर्णों को रखने में सक्षम करें
+// FLAT_OPC प्रारूप के साथ OoxmlSaveOptions बनाएं और विरासत नियंत्रण वर्णों को रखने में सक्षम करें
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
 saveOptions.setKeepLegacyControlChars(true);
 
@@ -162,7 +162,7 @@ public void setCompressionLevel() throws Exception
 
 ## निष्कर्ष
 
-इस व्यापक गाइड में, हमने Java के लिए Aspose.Words का उपयोग करके OOXML प्रारूप में दस्तावेज़ों को सहेजने का तरीका खोजा है। चाहे आपको अपने दस्तावेज़ों को पासवर्ड से एन्क्रिप्ट करना हो, विशिष्ट OOXML मानकों के अनुपालन को सुनिश्चित करना हो, दस्तावेज़ गुणों को अपडेट करना हो, विरासत नियंत्रण वर्णों को संरक्षित करना हो, या संपीड़न स्तरों को समायोजित करना हो, Aspose.Words आपकी आवश्यकताओं को पूरा करने के लिए उपकरणों का एक बहुमुखी सेट प्रदान करता है।
+इस व्यापक गाइड में, हमने जावा के लिए Aspose.Words का उपयोग करके OOXML प्रारूप में दस्तावेज़ों को सहेजने का तरीका खोजा है। चाहे आपको अपने दस्तावेज़ों को पासवर्ड से एन्क्रिप्ट करना हो, विशिष्ट OOXML मानकों के अनुपालन को सुनिश्चित करना हो, दस्तावेज़ गुणों को अपडेट करना हो, विरासत नियंत्रण वर्णों को संरक्षित करना हो, या संपीड़न स्तरों को समायोजित करना हो, Aspose.Words आपकी आवश्यकताओं को पूरा करने के लिए उपकरणों का एक बहुमुखी सेट प्रदान करता है।
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
@@ -172,8 +172,8 @@ public void setCompressionLevel() throws Exception
 
 ### क्या मैं किसी दस्तावेज़ को OOXML प्रारूप में सहेजते समय कस्टम गुण सेट कर सकता हूँ?
 
- हां, आप किसी दस्तावेज़ को OOXML फ़ॉर्मेट में सहेजने से पहले उसके लिए कस्टम गुण सेट कर सकते हैं।`BuiltInDocumentProperties`और`CustomDocumentProperties` विभिन्न गुण जैसे लेखक, शीर्षक, कीवर्ड और कस्टम गुण सेट करने के लिए कक्षाएं।
+ हां, आप किसी दस्तावेज़ को OOXML फ़ॉर्मेट में सहेजने से पहले उसके लिए कस्टम गुण सेट कर सकते हैं।`BuiltInDocumentProperties` और`CustomDocumentProperties` विभिन्न गुण जैसे लेखक, शीर्षक, कीवर्ड और कस्टम गुण सेट करने के लिए कक्षाएं।
 
 ### किसी दस्तावेज़ को OOXML प्रारूप में सहेजते समय डिफ़ॉल्ट संपीड़न स्तर क्या है?
 
- Java के लिए Aspose.Words का उपयोग करके OOXML प्रारूप में दस्तावेज़ सहेजते समय डिफ़ॉल्ट संपीड़न स्तर है`NORMAL` . आप संपीड़न स्तर को बदल सकते हैं`SUPER_FAST` या`MAXIMUM` जरुरत के अनुसार।
+ Aspose.Words for Java का उपयोग करके OOXML प्रारूप में दस्तावेज़ सहेजते समय डिफ़ॉल्ट संपीड़न स्तर है`NORMAL` . आप संपीड़न स्तर को बदल सकते हैं`SUPER_FAST` या`MAXIMUM` जरुरत के अनुसार।

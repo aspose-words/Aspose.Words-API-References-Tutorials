@@ -2,7 +2,7 @@
 title: フォントの行間隔を取得
 linktitle: フォントの行間隔を取得
 second_title: Aspose.Words ドキュメント処理 API
-description: このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用してフォントの行間隔を取得する方法を学びます。開発者に最適です。
+description: このステップバイステップのチュートリアルで、Aspose.Words for .NET を使用してフォントの行間隔を取得する方法を学びます。開発者に最適です。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/get-font-line-spacing/
@@ -81,7 +81,7 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用してフォントの行間隔を取得するのは、これらの簡単な手順に分解すると簡単です。新しいドキュメントを作成する場合でも、既存のドキュメントを操作する場合でも、Aspose.Words には、フォント プロパティを効率的に管理するために必要なすべてのツールが用意されています。
+これで完了です。Aspose.Words for .NET を使用してフォントの行間隔を取得するのは、これらの簡単な手順に分解すると簡単です。新しいドキュメントを作成する場合でも、既存のドキュメントを操作する場合でも、Aspose.Words にはフォント プロパティを効率的に管理するために必要なすべてのツールが用意されています。
 
 ## よくある質問
 

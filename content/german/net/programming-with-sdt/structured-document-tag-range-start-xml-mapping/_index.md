@@ -75,7 +75,7 @@ Console.WriteLine(Encoding.UTF8.GetString(xmlPart.Data));
 
 Ein Structured Document Tag (SDT) ist ein Inhaltssteuerelement, das an einen XML-Teil gebunden werden kann. Hier erstellen wir ein SDT, das den Inhalt unseres benutzerdefinierten XML-Teils anzeigt.
 
-Suchen Sie zunächst den SDT-Bereichsanfang im Dokument.
+Suchen Sie zunächst den Anfang des SDT-Bereichs im Dokument.
 
 ```csharp
 StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich einen XML-Teil einem strukturierten Dokument-Tag in einem Word-Dokument zugeordnet, indem Sie Aspose.Words für .NET verwendet haben. Mit dieser leistungsstarken Funktion können Sie mühelos dynamische und datengesteuerte Dokumente erstellen. Egal, ob Sie Berichte, Rechnungen oder andere Dokumenttypen erstellen, XML-Mapping kann Ihren Arbeitsablauf erheblich optimieren.
+Und da haben Sie es! Sie haben erfolgreich einen XML-Teil einem strukturierten Dokument-Tag in einem Word-Dokument zugeordnet, indem Sie Aspose.Words für .NET verwendet haben. Mit dieser leistungsstarken Funktion können Sie mühelos dynamische und datengesteuerte Dokumente erstellen. Egal, ob Sie Berichte, Rechnungen oder andere Dokumenttypen erstellen, XML-Mapping kann Ihren Workflow erheblich optimieren.
 
 ## Häufig gestellte Fragen
 

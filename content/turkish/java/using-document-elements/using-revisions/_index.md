@@ -1,6 +1,6 @@
 ---
-title: Aspose.Words for Java'da Düzeltmeleri Kullanma
-linktitle: Düzeltmeleri Kullanma
+title: Java için Aspose.Words'de Revizyonları Kullanma
+linktitle: Revizyonları Kullanma
 second_title: Aspose.Words Java Belge İşleme API'si
 description: Aspose.Words for Java'nın revizyonunu verimli bir şekilde kullanmayı öğrenin. Geliştiriciler için adım adım kılavuz. Belge yönetiminizi optimize edin.
 type: docs
@@ -8,19 +8,19 @@ weight: 22
 url: /tr/java/using-document-elements/using-revisions/
 ---
 
-Belgelerle çalışmak isteyen ve revizyon kontrolleri uygulamaya ihtiyaç duyan bir Java geliştiricisiyseniz Aspose.Words for Java, revizyonları etkili bir şekilde yönetmenize yardımcı olacak güçlü bir araç seti sunar. Bu eğitimde Aspose.Words for Java'da revizyon kullanımı konusunda size adım adım rehberlik edeceğiz. 
+Belgelerle çalışmak isteyen ve revizyon kontrolleri uygulamak isteyen bir Java geliştiricisiyseniz, Aspose.Words for Java revizyonları etkili bir şekilde yönetmenize yardımcı olacak güçlü bir araç seti sunar. Bu eğitimde, Aspose.Words for Java'da revizyonun adım adım kullanımında size rehberlik edeceğiz. 
 
-## 1. Aspose.Words for Java'ya Giriş
+## 1. Java için Aspose.Words'e Giriş
 
-Aspose.Words for Java, Microsoft Word'e ihtiyaç duymadan Word belgelerini oluşturmanıza, değiştirmenize ve değiştirmenize olanak tanıyan güçlü bir Java API'sidir. Belgelerinizde revizyon uygulamanız gerektiğinde özellikle yararlıdır.
+Aspose.Words for Java, Microsoft Word'e ihtiyaç duymadan Word belgeleri oluşturmanıza, değiştirmenize ve düzenlemenize olanak tanıyan sağlam bir Java API'sidir. Belgelerinizde revizyon uygulamanız gerektiğinde özellikle yararlıdır.
 
 ## 2. Geliştirme Ortamınızı Kurma
 
-Aspose.Words for Java'yı kullanmaya başlamadan önce geliştirme ortamınızı ayarlamanız gerekir. Gerekli Java geliştirme araçlarına sahip olduğunuzdan ve Aspose.Words for Java kütüphanesinin kurulu olduğundan emin olun.
+Aspose.Words for Java'yı kullanmaya başlamadan önce, geliştirme ortamınızı ayarlamanız gerekir. Gerekli Java geliştirme araçlarının ve Aspose.Words for Java kütüphanesinin yüklü olduğundan emin olun.
 
 ## 3. Yeni Bir Belge Oluşturma
 
-Aspose.Words for Java'yı kullanarak yeni bir Word belgesi oluşturarak başlayalım. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+Aspose.Words for Java kullanarak yeni bir Word belgesi oluşturarak başlayalım. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```java
 string outPath = "Your Output Directory";
@@ -29,9 +29,9 @@ Body body = doc.getFirstSection().getBody();
 Paragraph para = body.getFirstParagraph();
 ```
 
-## 4. Belgeye İçerik Eklemek
+## 4. Belgeye İçerik Ekleme
 
-Artık boş bir belgeniz olduğuna göre ona içerik ekleyebilirsiniz. Bu örnekte üç paragraf ekleyeceğiz:
+Artık boş bir belgeniz olduğuna göre, ona içerik ekleyebilirsiniz. Bu örnekte, üç paragraf ekleyeceğiz:
 
 ```java
 para.appendChild(new Run(doc, "Paragraph 1. "));
@@ -47,7 +47,7 @@ Belgenizdeki revizyonları izlemek için aşağıdaki kodu kullanabilirsiniz:
 doc.startTrackRevisions("John Doe", new Date());
 ```
 
-## 6. Revizyonların Yapılması
+## 6. Revizyon Yapmak
 
 Bir paragraf daha ekleyerek düzeltme yapalım:
 
@@ -55,9 +55,9 @@ Bir paragraf daha ekleyerek düzeltme yapalım:
 para = body.appendParagraph("Paragraph 4. ");
 ```
 
-## 7. Düzeltmelerin Kabul Edilmesi ve Reddedilmesi
+## 7. Revizyonları Kabul Etme ve Reddetme
 
-Aspose.Words for Java'yı kullanarak belgenizdeki revizyonları kabul edebilir veya reddedebilirsiniz. Belge oluşturulduktan sonra revizyonlar Microsoft Word'de kolaylıkla yönetilebilir.
+Aspose.Words for Java kullanarak belgenizdeki revizyonları kabul edebilir veya reddedebilirsiniz. Revizyonlar, belge oluşturulduktan sonra Microsoft Word'de kolayca yönetilebilir.
 
 ## 8. Revizyon Takibini Durdurma
 
@@ -67,7 +67,7 @@ Revizyonları izlemeyi durdurmak için aşağıdaki kodu kullanın:
 doc.stopTrackRevisions();
 ```
 
-## 9. Belgeyi Kaydetmek
+## 9. Belgeyi Kaydetme
 
 Son olarak belgenizi kaydedin:
 
@@ -77,11 +77,11 @@ doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
 
 ## 10. Sonuç
 
-Bu eğitimde Aspose.Words for Java'da revizyon kullanmanın temellerini ele aldık. Belge oluşturmayı, içerik eklemeyi, revizyon takibini başlatmayı ve durdurmayı ve belgenizi kaydetmeyi öğrendiniz.
+Bu eğitimde, Aspose.Words for Java'da revizyon kullanmanın temellerini ele aldık. Bir belge oluşturmayı, içerik eklemeyi, revizyon izlemeyi başlatmayı ve durdurmayı ve belgenizi kaydetmeyi öğrendiniz.
 
-Artık Aspose.Words for Java kullanarak Java uygulamalarınızdaki revizyonları etkili bir şekilde yönetmek için ihtiyacınız olan araçlara sahipsiniz.
+Artık Aspose.Words for Java'yı kullanarak Java uygulamalarınızdaki revizyonları etkili bir şekilde yönetmek için ihtiyaç duyduğunuz araçlara sahipsiniz.
 
-## Kaynak Kodunu Tamamlayın
+## Tam Kaynak Kodu
 ```java
 string outPath = "Your Output Directory";
 Document doc = new Document();
@@ -91,11 +91,11 @@ Paragraph para = body.getFirstParagraph();
 para.appendChild(new Run(doc, "Paragraph 1. "));
 body.appendParagraph("Paragraph 2. ");
 body.appendParagraph("Paragraph 3. ");
-//Hiçbiri herhangi bir revizyon türü olarak kayıtlı olmayan üç paragrafımız var
-// Revizyonları takip ederken dokümana herhangi bir içerik ekler/kaldırırsak,
-// belgede bu şekilde görüntülenecek ve kabul/reddedilebilecektir.
+// Hiçbiri herhangi bir revizyon türü olarak kaydedilmeyen üç paragrafımız var
+// Revizyonları izlerken belgeye herhangi bir içerik eklersek/kaldırırsak,
+// Bunlar belgede olduğu gibi gösterilecek ve kabul/reddedilebilecektir.
 doc.startTrackRevisions("John Doe", new Date());
-// Bu paragraf bir revizyondur ve uygun "IsInsertRevision" bayrağına sahip olacaktır.
+// Bu paragraf bir revizyondur ve buna uygun "IsInsertRevision" bayrağı ayarlanacaktır.
 para = body.appendParagraph("Paragraph 4. ");
 Assert.assertTrue(para.isInsertRevision());
 // Belgenin paragraf koleksiyonunu alın ve bir paragrafı kaldırın.
@@ -103,16 +103,16 @@ ParagraphCollection paragraphs = body.getParagraphs();
 Assert.assertEquals(4, paragraphs.getCount());
 para = paragraphs.get(2);
 para.remove();
-// Revizyonları takip ettiğimiz için paragraf hala belgede mevcut ve "IsDeleteRevision" ayarına sahip olacak
-// ve biz tüm revizyonları kabul edene veya reddedene kadar Microsoft Word'de revizyon olarak görüntülenecektir.
+// Revizyonları takip ettiğimizden, paragraf hala belgede mevcut olacak ve "IsDeleteRevision" ayarlanacak
+// ve tüm revizyonları kabul edene veya reddedene kadar Microsoft Word'de revizyon olarak görüntülenecektir.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
-// Değişiklikleri kabul ettiğimizde revizyon paragrafını sil kaldırılır.
+// Değişiklikleri kabul ettiğimizde silme revizyon paragrafı kaldırılır.
 doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
-Assert.assertEquals(para.getRuns().getCount(), 0); //Is.Boştu
-// Revizyonların takibinin durdurulması bu metnin normal metin olarak görünmesini sağlar.
-// Belge değiştirildiğinde revizyonlar sayılmaz.
+Assert.assertEquals(para.getRuns().getCount(), 0); //Is.Empty idi
+// Revizyonların takibini durdurduğunuzda bu metin normal metin gibi görünür.
+//Belgede değişiklik yapıldığında revizyonlar sayılmaz.
 doc.stopTrackRevisions();
 // Belgeyi kaydedin.
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -123,22 +123,22 @@ doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
 
 ### 1. Aspose.Words for Java'yı diğer programlama dilleriyle birlikte kullanabilir miyim?
 
-Hayır, Aspose.Words for Java, Java geliştirme için özel olarak tasarlanmıştır.
+Hayır, Aspose.Words for Java özellikle Java geliştirme için tasarlanmıştır.
 
 ### 2. Aspose.Words for Java, Microsoft Word'ün tüm sürümleriyle uyumlu mudur?
 
 Evet, Aspose.Words for Java, Microsoft Word'ün çeşitli sürümleriyle uyumlu olacak şekilde tasarlanmıştır.
 
-### 3. Mevcut Word dokümanlarındaki revizyonları takip edebilir miyim?
+### 3. Mevcut Word belgelerindeki revizyonları takip edebilir miyim?
 
-Evet, mevcut Word belgelerindeki revizyonları takip etmek için Aspose.Words for Java'yı kullanabilirsiniz.
+Evet, mevcut Word belgelerinizdeki revizyonları izlemek için Aspose.Words for Java'yı kullanabilirsiniz.
 
-### 4. Aspose.Words for Java'yı kullanmak için herhangi bir lisans gereksinimi var mı?
+### 4. Aspose.Words for Java'yı kullanmak için herhangi bir lisanslama gereksinimi var mı?
 
- Evet, Aspose.Words for Java'yı projelerinizde kullanmak için lisans almanız gerekir. Yapabilirsiniz[buradan bir lisansa erişin](https://purchase.aspose.com/buy).
+ Evet, projelerinizde Aspose.Words for Java'yı kullanmak için bir lisans edinmeniz gerekir.[lisansa buradan erişin](https://purchase.aspose.com/buy).
 
-### 5. Aspose.Words for Java desteğini nerede bulabilirim?
+### 5. Java için Aspose.Words desteğini nerede bulabilirim?
 
- Her türlü soru ve sorununuz için adresini ziyaret edebilirsiniz.[Aspose.Words for Java destek forumu](https://forum.aspose.com/).
+ Herhangi bir soru veya sorununuz varsa, şu adresi ziyaret edebilirsiniz:[Aspose.Words for Java destek forumu](https://forum.aspose.com/).
 
-Aspose.Words for Java'yı bugün kullanmaya başlayın ve belge yönetimi süreçlerinizi kolaylaştırın.
+Bugün Aspose.Words for Java'yı kullanmaya başlayın ve belge yönetimi süreçlerinizi kolaylaştırın.

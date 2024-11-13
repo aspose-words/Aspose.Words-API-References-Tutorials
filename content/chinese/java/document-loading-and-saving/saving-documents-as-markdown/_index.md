@@ -21,7 +21,7 @@ url: /zh/java/document-loading-and-saving/saving-documents-as-markdown/
 
 ## 步骤 1：创建 Word 文档
 
-我们先创建一个 Word 文档，稍后将其转换为 Markdown 格式。您可以根据需要自定义此文档。
+让我们首先创建一个 Word 文档，稍后将其转换为 Markdown 格式。您可以根据需要自定义此文档。
 
 ```java
 Document doc = new Document();
@@ -89,7 +89,7 @@ doc.save("document_with_images.md", saveOptions);
 
 确保更换`"document_with_images.docx"`包含图像的 Word 文档的路径和`"images_folder/"`使用存储图像的文件夹的实际路径。
 
-## 使用 Aspose.Words for Java 将文档保存为 Markdown 的完整源代码
+## 在 Aspose.Words for Java 中将文档保存为 Markdown 的完整源代码
 
 ```java
 public void autoTableContentAlignment() throws Exception

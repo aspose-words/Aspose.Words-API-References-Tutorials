@@ -1,8 +1,8 @@
 ---
-title: Özelleştirilmiş Belge Yazdırma
-linktitle: Özelleştirilmiş Belge Yazdırma
+title: Özelleştirilmiş Belge Baskısı
+linktitle: Özelleştirilmiş Belge Baskısı
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java ile özelleştirilmiş belge baskısını zahmetsizce nasıl elde edebileceğinizi öğrenin. Bu adım adım kılavuz, kurulumdan gelişmiş özelleştirmeye kadar her şeyi kapsar.
+description: Aspose.Words for Java ile özelleştirilmiş belge yazdırmayı zahmetsizce nasıl başaracağınızı öğrenin. Bu adım adım kılavuz, kurulumdan gelişmiş özelleştirmeye kadar her şeyi kapsar.
 type: docs
 weight: 12
 url: /tr/java/document-printing/customized-document-printing/
@@ -10,26 +10,26 @@ url: /tr/java/document-printing/customized-document-printing/
 
 ## giriiş
 
-Benzersiz bir marka kimliği yaratmayı amaçlayan işletmeler için özelleştirilmiş belge baskısı çok önemlidir. Aspose.Words for Java, Word belgeleriyle çalışmak için kapsamlı işlevsellik sağlayan bir Java kütüphanesidir. Belgeleri zahmetsizce oluşturmanıza, değiştirmenize ve yazdırmanıza olanak tanır.
+Özelleştirilmiş belge yazdırma, benzersiz bir marka kimliği oluşturmayı hedefleyen işletmeler için olmazsa olmazdır. Aspose.Words for Java, Word belgeleriyle çalışmak için kapsamlı işlevsellik sağlayan bir Java kütüphanesidir. Belgeleri zahmetsizce oluşturmanıza, değiştirmenize ve yazdırmanıza olanak tanır.
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
 - Java Geliştirme Ortamı
-- Aspose.Words for Java API
+- Java API'si için Aspose.Words
 - Entegre Geliştirme Ortamı (IDE)
 
-## Aspose.Words for Java'yı kurma
+## Java için Aspose.Words Kurulumu
 
- Başlamak için Aspose.Words for Java kütüphanesini şu adresten indirin:[Burada](https://releases.aspose.com/words/java/). Java projenize entegre etmek için kurulum talimatlarını izleyin.
+ Başlamak için Aspose.Words for Java kitaplığını şu adresten indirin:[Burada](https://releases.aspose.com/words/java/). Java projenize entegre etmek için kurulum talimatlarını izleyin.
 
-## Boş Belge Oluşturma
+## Boş Bir Belge Oluşturma
 
-Aspose.Words for Java'yı kullanarak boş bir belge oluşturarak başlayalım:
+Aspose.Words for Java kullanarak boş bir belge oluşturarak başlayalım:
 
 ```java
-//Boş bir belge oluşturmak için Java kodu
+// Boş bir belge oluşturmak için Java kodu
 Document doc = new Document();
 ```
 
@@ -43,20 +43,9 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, Aspose.Words!");
 ```
 
-## Belge Öğelerini Özelleştirme
-
-Yazı tipleri, stiller ve biçimlendirme gibi çeşitli belge öğelerini özelleştirebilirsiniz. Aşağıda yazı tipi boyutunu değiştirmeye ilişkin bir örnek verilmiştir:
-
-```java
-// Yazı tipi boyutunu değiştirmek için Java kodu
-Run run = (Run) doc.getChildNodes(NodeType.RUN, true).get(0);
-Font font = run.getFont();
-font.setSize(14);
-```
-
 ## Belgeyi Yazdırma
 
-Aspose.Words for Java ile kişiselleştirilmiş belgenizi yazdırmak çok kolay:
+Özelleştirilmiş belgenizi yazdırmak Aspose.Words for Java ile basittir:
 
 ```java
 // Belgeyi yazdırmak için Java kodu
@@ -65,29 +54,29 @@ doc.print("printerName");
 
 ## Gelişmiş Özelleştirme
 
-Aspose.Words for Java, üstbilgiler, altbilgiler ve sayfa ayarları dahil olmak üzere gelişmiş özelleştirme seçenekleri sunar. Daha fazla ayrıntı için API belgelerini inceleyin.
+Java için Aspose.Words, başlıklar, altbilgiler ve sayfa ayarları dahil olmak üzere gelişmiş özelleştirme seçenekleri sunar. Daha fazla ayrıntı için API belgelerini inceleyin.
 
 ## Sorun giderme
 
-Sorunlarla mı karşılaşıyorsunuz? Sorun giderme ipuçları için Aspose.Words for Java belgelerine bakın.
+Sorun mu yaşıyorsunuz? Sorun giderme ipuçları için Aspose.Words for Java belgelerine bakın.
 
 ## Çözüm
 
-Aspose.Words for Java kullanarak özelleştirilmiş belge yazdırma, işletmelerin özel belgeleri verimli bir şekilde oluşturmasını sağlar. Kapsamlı özellikleri ve esnekliğiyle Aspose.Words for Java, belge oluşturma için değerli bir araçtır.
+Aspose.Words for Java kullanılarak özelleştirilmiş belge yazdırma, işletmelerin etkili bir şekilde özelleştirilmiş belgeler oluşturmasını sağlar. Kapsamlı özellikleri ve esnekliğiyle Aspose.Words for Java, belge oluşturma için değerli bir araçtır.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for Java'yı nasıl kurabilirim?
+### Java için Aspose.Words'ü nasıl kurabilirim?
 
- Aspose.Words for Java'yı yüklemek için kütüphaneyi şuradan indirin:[Burada](https://releases.aspose.com/words/java/) ve verilen kurulum talimatlarını izleyin.
+ Java için Aspose.Words'ü yüklemek için kütüphaneyi şu adresten indirin:[Burada](https://releases.aspose.com/words/java/)ve verilen kurulum talimatlarını izleyin.
 
 ### Belge düzenini özelleştirebilir miyim?
 
-Evet, Aspose.Words for Java sayfa boyutu, kenar boşlukları, üstbilgiler ve altbilgiler dahil olmak üzere belge düzenini özelleştirmenize olanak tanır.
+Evet, Aspose.Words for Java, sayfa boyutu, kenar boşlukları, üstbilgiler ve altbilgiler dahil olmak üzere belge düzenini özelleştirmenize olanak tanır.
 
-### Aspose.Words for Java karmaşık belgeler oluşturmaya uygun mu?
+### Karmaşık belgeler oluşturmak için Aspose.Words for Java uygun mudur?
 
-Kesinlikle! Aspose.Words for Java, karmaşık belgeleri kolaylıkla yönetebilecek donanıma sahip olduğundan çok çeşitli uygulamalar için uygundur.
+Kesinlikle! Aspose.Words for Java, karmaşık belgeleri kolaylıkla işleyebilecek şekilde donatılmıştır ve bu da onu çok çeşitli uygulamalar için uygun hale getirir.
 
 ### Belge yazdırmayla ilgili sorunları nasıl giderebilirim?
 
@@ -95,4 +84,4 @@ Belge yazdırmayla ilgili sorunlarla karşılaşırsanız sorun giderme kılavuz
 
 ### Aspose.Words for Java'nın deneme sürümü mevcut mu?
 
-Evet, Aspose.Words for Java'nın deneme sürümüne web sitesinden erişebilirsiniz.
+Evet, Aspose.Words for Java'nın deneme sürümüne web sitelerinden erişebilirsiniz.

@@ -2,7 +2,7 @@
 title: Uso de etiquetas de documentos estructurados (SDT) en Aspose.Words para Java
 linktitle: Uso de etiquetas de documentos estructurados (SDT)
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda a utilizar etiquetas de documentos estructurados (SDT) en Aspose.Words para Java con esta guía completa. Cree, modifique y vincule SDT a datos XML personalizados.
+description: Aprenda a utilizar etiquetas de documento estructurado (SDT) en Aspose.Words para Java con esta guía completa. Cree, modifique y vincule etiquetas de documento estructurado a datos XML personalizados.
 type: docs
 weight: 19
 url: /es/java/document-manipulation/using-structured-document-tags/
@@ -10,31 +10,31 @@ url: /es/java/document-manipulation/using-structured-document-tags/
 
 ## Introducción al uso de etiquetas de documentos estructurados (SDT) en Aspose.Words para Java
 
-Las etiquetas de documentos estructurados (SDT) son una característica poderosa de Aspose.Words para Java que le permite crear y manipular contenido estructurado dentro de sus documentos. En esta guía completa, lo guiaremos a través de los diversos aspectos del uso de SDT en Aspose.Words para Java. Ya sea un principiante o un desarrollador experimentado, encontrará información valiosa y ejemplos prácticos en este artículo.
+Las etiquetas de documento estructurado (SDT) son una potente función de Aspose.Words para Java que le permite crear y manipular contenido estructurado dentro de sus documentos. En esta guía completa, le explicaremos los distintos aspectos del uso de las SDT en Aspose.Words para Java. Tanto si es un principiante como si es un desarrollador experimentado, en este artículo encontrará información valiosa y ejemplos prácticos.
 
 ## Empezando
 
-Antes de profundizar en los detalles, configuremos nuestro entorno y creemos un SDT básico. En esta sección, cubriremos los siguientes temas:
+Antes de profundizar en los detalles, configuremos nuestro entorno y creemos un SDT básico. En esta sección, abordaremos los siguientes temas:
 
 - Creando un nuevo documento
-- Agregar una etiqueta de documento estructurado
+- Cómo agregar una etiqueta de documento estructurado
 - Guardando el documento
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Cree una etiqueta de documento estructurado de tipo CHECKBOX
+// Crear una etiqueta de documento estructurado de tipo CHECKBOX
 StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.CHECKBOX, MarkupLevel.INLINE);
 builder.insertNode(sdtCheckBox);
 
-// guardar el documento
+// Guardar el documento
 doc.save("WorkingWithSDT.docx");
 ```
 
-## Comprobar el estado actual de una casilla de verificación SDT
+## Comprobación del estado actual de una casilla de verificación SDT
 
-Una vez que haya agregado una casilla de verificación SDT a su documento, es posible que desee verificar su estado actual mediante programación. Esto puede resultar útil cuando necesita validar la entrada del usuario o realizar acciones específicas según el estado de la casilla de verificación.
+Una vez que haya agregado una casilla de verificación SDT a su documento, es posible que desee verificar su estado actual mediante programación. Esto puede resultar útil cuando necesite validar la entrada del usuario o realizar acciones específicas según el estado de la casilla de verificación.
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
@@ -48,7 +48,7 @@ if (sdtCheckBox.getSdtType() == SdtType.CHECKBOX) {
 doc.save("UpdatedDocument.docx");
 ```
 
-## Modificar controles de contenido
+## Modificación de controles de contenido
 
 En esta sección, exploraremos cómo modificar los controles de contenido dentro de su documento. Cubriremos tres tipos de controles de contenido: texto sin formato, lista desplegable e imagen.
 
@@ -59,10 +59,10 @@ Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdtPlainText = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
 if (sdtPlainText.getSdtType() == SdtType.PLAIN_TEXT) {
-    // Borrar el contenido existente
+    // Limpiar el contenido existente
     sdtPlainText.removeAllChildren();
 
-    // Agregar nuevo texto
+    // Añadir nuevo texto
     Paragraph para = (Paragraph) sdtPlainText.appendChild(new Paragraph(doc));
     Run run = new Run(doc, "New text goes here");
     para.appendChild(run);
@@ -78,7 +78,7 @@ Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdtDropDown = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
 if (sdtDropDown.getSdtType() == SdtType.DROP_DOWN_LIST) {
-    // Seleccione el segundo elemento de la lista.
+    // Seleccione el segundo elemento de la lista
     SdtListItem secondItem = sdtDropDown.getListItems().get(2);
     sdtDropDown.getListItems().setSelectedValue(secondItem);
 }
@@ -86,7 +86,7 @@ if (sdtDropDown.getSdtType() == SdtType.DROP_DOWN_LIST) {
 doc.save("ModifiedDocument.docx");
 ```
 
-### Modificación del control del contenido de la imagen
+### Modificación del control de contenido de imágenes
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
@@ -94,16 +94,16 @@ StructuredDocumentTag sdtPicture = (StructuredDocumentTag) doc.getChild(NodeType
 Shape shape = (Shape) sdtPicture.getChild(NodeType.SHAPE, 0, true);
 
 if (shape.hasImage()) {
-    // Reemplace la imagen por una nueva.
+    // Reemplazar la imagen por una nueva
     shape.getImageData().setImage("Watermark.png");
 }
 
 doc.save("ModifiedDocument.docx");
 ```
 
-## Crear un control de contenido ComboBox
+## Creación de un control de contenido de cuadro combinado
 
-Un control de contenido ComboBox permite a los usuarios seleccionar de una lista predefinida de opciones. Creemos uno en nuestro documento.
+Un control de contenido de cuadro combinado permite a los usuarios seleccionar entre una lista predefinida de opciones. Vamos a crear uno en nuestro documento.
 
 ```java
 Document doc = new Document();
@@ -116,9 +116,9 @@ doc.getFirstSection().getBody().appendChild(sdtComboBox);
 doc.save("ComboBoxDocument.docx");
 ```
 
-## Trabajar con control de contenido de texto enriquecido
+## Cómo trabajar con control de contenido de texto enriquecido
 
-Los controles de contenido de texto enriquecido son perfectos para agregar texto formateado a sus documentos. Creemos uno y establezcamos su contenido.
+Los controles de contenido de texto enriquecido son perfectos para agregar texto con formato a sus documentos. Vamos a crear uno y configurar su contenido.
 
 ```java
 Document doc = new Document();
@@ -142,16 +142,16 @@ Puede aplicar estilos a los controles de contenido para mejorar la apariencia vi
 Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
-//Aplicar un estilo personalizado
+// Aplicar un estilo personalizado
 Style style = doc.getStyles().getByStyleIdentifier(StyleIdentifier.QUOTE);
 sdt.setStyle(style);
 
 doc.save("StyledDocument.docx");
 ```
 
-## Vincular un SDT a datos XML personalizados
+## Vinculación de un SDT a datos XML personalizados
 
-En algunos escenarios, es posible que necesite vincular un SDT a datos XML personalizados para la generación de contenido dinámico. Exploremos cómo lograrlo.
+En algunos casos, es posible que necesite vincular un SDT a datos XML personalizados para la generación de contenido dinámico. Exploremos cómo lograrlo.
 
 ```java
 Document doc = new Document();
@@ -163,9 +163,9 @@ sdt.getXmlMapping().setMapping(xmlPart, "/root[1]/text[1]", "");
 doc.save("CustomXMLBinding.docx");
 ```
 
-## Crear una tabla con secciones repetidas asignadas a datos XML personalizados
+## Creación de una tabla con secciones repetidas asignadas a datos XML personalizados
 
-Las tablas con secciones repetidas pueden resultar extremadamente útiles para presentar datos estructurados. Creemos una tabla de este tipo y asignemosla a datos XML personalizados.
+Las tablas con secciones repetidas pueden ser extremadamente útiles para presentar datos estructurados. Vamos a crear una tabla de este tipo y a asignarla a datos XML personalizados.
 
 ```java
 Document doc = new Document();
@@ -200,9 +200,9 @@ row.appendChild(authorSdt);
 doc.save("RepeatingTableDocument.docx");
 ```
 
-## Trabajar con etiquetas de documentos estructurados de varias secciones
+## Cómo trabajar con etiquetas de documentos estructurados de varias secciones
 
-Las etiquetas de documentos estructurados pueden abarcar varias secciones de un documento. En esta sección, exploraremos cómo trabajar con SDT de varias secciones.
+Las etiquetas de documento estructurado pueden abarcar varias secciones de un documento. En esta sección, exploraremos cómo trabajar con etiquetas de documento estructurado de varias secciones.
 
 ```java
 Document doc = new Document("MultiSectionDocument.docx");
@@ -217,7 +217,7 @@ doc.save("ModifiedMultiSectionDocument.docx");
 
 ## Conclusión
 
-Las etiquetas de documentos estructurados en Aspose.Words para Java proporcionan una forma versátil de administrar y formatear el contenido de sus documentos. Ya sea que necesite crear plantillas, formularios o documentos dinámicos, los SDT ofrecen la flexibilidad y el control que necesita. Si sigue los ejemplos y pautas proporcionados en este artículo, puede aprovechar el poder de los SDT para mejorar sus tareas de procesamiento de documentos.
+Las etiquetas de documentos estructurados en Aspose.Words para Java ofrecen una forma versátil de administrar y dar formato al contenido de sus documentos. Ya sea que necesite crear plantillas, formularios o documentos dinámicos, las etiquetas de documentos estructurados ofrecen la flexibilidad y el control que necesita. Si sigue los ejemplos y las pautas que se proporcionan en este artículo, podrá aprovechar el poder de las etiquetas de documentos estructurados para mejorar sus tareas de procesamiento de documentos.
 
 ## Preguntas frecuentes
 
@@ -225,9 +225,9 @@ Las etiquetas de documentos estructurados en Aspose.Words para Java proporcionan
 
 Las etiquetas de documentos estructurados (SDT) sirven para organizar y formatear el contenido dentro de los documentos, lo que facilita la creación de plantillas, formularios y documentos estructurados.
 
-### ¿Cómo puedo verificar el estado actual de un SDT de casilla de verificación?
+### ¿Cómo puedo comprobar el estado actual de una casilla de verificación SDT?
 
- Puede verificar el estado actual de un SDT de casilla de verificación usando el`setChecked` método, como se demuestra en el artículo.
+ Puede comprobar el estado actual de una casilla de verificación SDT utilizando el`setChecked` método, como se demuestra en el artículo.
 
 ### ¿Puedo aplicar estilos a los controles de contenido?
 

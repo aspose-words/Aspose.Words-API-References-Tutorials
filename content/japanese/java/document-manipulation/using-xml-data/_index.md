@@ -19,7 +19,7 @@ url: /ja/java/document-manipulation/using-xml-data/
 - 顧客、注文、ベンダーのサンプル XML データ ファイル。
 - 差し込み印刷の宛先のサンプル Word 文書。
 
-## XML データを使用した差し込み印刷
+## XML データによる差し込み印刷
 
 ### 1. 基本的な差し込み印刷
 

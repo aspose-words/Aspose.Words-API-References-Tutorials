@@ -2,7 +2,7 @@
 title: WMF フォントをメタファイル サイズにスケールして PDF サイズを縮小する
 linktitle: WMF フォントをメタファイル サイズにスケールして PDF サイズを縮小する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して PDF に変換するときに、wmf フォントをメタファイル サイズに合わせて PDF サイズを縮小する手順ガイド。
+description: Aspose.Words for .NET を使用して PDF に変換するときに、wmf フォントをメタファイル サイズにスケールして PDF サイズを縮小する手順ガイド。
 type: docs
 weight: 10
 url: /ja/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
@@ -16,7 +16,7 @@ PDF ファイル、特に WMF (Windows メタファイル) グラフィックを
 手順に進む前に、以下のものを用意してください。
 
 1. Aspose.Words for .NET: Aspose.Wordsライブラリがインストールされていることを確認してください。インストールされていない場合は、[ここからダウンロード](https://releases.aspose.com/words/net/).
-2. 開発環境: このチュートリアルでは、C# コードを記述して実行できる .NET 開発環境 (Visual Studio など) がセットアップされていることを前提としています。
+2. 開発環境: このチュートリアルでは、C# コードを記述して実行できる .NET 開発環境 (Visual Studio など) が設定されていることを前提としています。
 3. .NET プログラミングの基本的な理解: 基本的な .NET プログラミングの概念と C# 構文を理解していると役立ちます。
 4. WMF グラフィックを含む Word 文書: WMF グラフィックを含む Word 文書が必要です。独自の文書を使用することも、テスト用に文書を作成することもできます。
 
@@ -95,7 +95,7 @@ WMF (Windows メタファイル) は、Microsoft Windows で使用されるグ�
 
 ### WMF フォントをメタファイル サイズにスケーリングすると、PDF にどのような影響がありますか?
 
-WMF フォントをメタファイル サイズにスケーリングすると、ファイル サイズが増加する可能性のある高解像度フォントのレンダリングを回避することで、全体的な PDF サイズを削減できます。
+WMF フォントをメタファイル サイズにスケーリングすると、ファイル サイズが増加する可能性のある高解像度フォントのレンダリングを回避することで、PDF 全体のサイズを削減できます。
 
 ### Aspose.Words で他のメタファイル形式を使用できますか?
 

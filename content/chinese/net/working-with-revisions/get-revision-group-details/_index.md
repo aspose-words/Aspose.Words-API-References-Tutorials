@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Revisions.docx");
 ```
 
-在此代码片段中，替换`"YOUR DOCUMENT DIRECTORY"`替换为文档的实际路径。此代码将加载`Revisions.docx`文件放入`doc`目的。
+在此代码片段中，替换`"YOUR DOCUMENT DIRECTORY"`替换为文档的实际路径。此代码将加载`Revisions.docx`文件到`doc`目的。
 
 ## 第 2 步：访问修订集合
 

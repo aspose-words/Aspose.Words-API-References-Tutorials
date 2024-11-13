@@ -22,7 +22,7 @@ A dokumentumok konvertálása összetett folyamat lehet, különösen, ha külö
 Az Aspose.Words a dokumentumformátumok széles skáláját támogatja, beleértve a DOCX, DOC, RTF, PDF, EPUB, HTML és egyebeket. Ez azt jelenti, hogy könnyedén konvertálhat dokumentumokat különböző formátumokba és formátumokból.
 
 ## High Fidelity konverzió: 
-A dokumentumok konvertálásakor döntő fontosságú a tartalom hűségének megőrzése. Az Aspose.Words biztosítja, hogy a konvertált dokumentumok pontosan megőrizzék az eredeti formázást, stílusokat, képeket és egyéb elemeket.
+dokumentumok konvertálásakor döntő fontosságú a tartalom hűségének megőrzése. Az Aspose.Words biztosítja, hogy a konvertált dokumentumok pontosan megőrizzék az eredeti formázást, stílusokat, képeket és egyéb elemeket.
 
 ## Dokumentum egyesítés: 
 Az Aspose.Words lehetővé teszi több dokumentum egyesítését, megkönnyítve ezzel az információk kezelését és terjesztését.
@@ -84,34 +84,12 @@ doc.save("output.html", SaveFormat.HTML);
 doc.save("output.epub", SaveFormat.EPUB);
 ```
 
-## 5. lépés: Betűtípuscsere kezelése
-
-A betűtípus helyettesítése gyakori kihívás a dokumentumok konvertálásakor. Az Aspose.Words mechanizmust biztosít a betűtípusok helyettesítésére, hogy biztosítsa a konvertált dokumentum vizuális konzisztenciáját:
-
-```java
-// Betűtípus-helyettesítés engedélyezése
-FontSettings.setFontsFolder("/path/to/fonts", true);
-```
-
-## 6. lépés: Az átalakítási folyamat testreszabása
-
-Az Aspose.Words lehetőségek széles skáláját kínálja a dokumentum konvertálási folyamat testreszabásához. Például beállíthatja az oldaltartományt az átalakításhoz, vagy megadhatja a képfelbontást PDF-be mentésekor:
-
-```java
-// Állítsa be az oldaltartományt a konverzióhoz (az 1. oldal átalakítása a 3. oldalra)
-PdfSaveOptions options = new PdfSaveOptions();
-options.setPageSet(new PageSet(1, 3));
-
-// Állítsa a képfelbontást 300 DPI-re
-options.setJpegQuality(300);
-```
-
 ## Tippek a hatékony dokumentum-konvertáláshoz
 
 A zökkenőmentes és hatékony dokumentumátalakítási folyamat érdekében vegye figyelembe a következő tippeket:
 
 ## Dokumentumformátum-kompatibilitás: 
- Győződjön meg arról, hogy a forrás- és célformátumok kompatibilisek az Aspose.Words-szel.[Aspose.Words Java API referencia](https://reference.aspose.com/words/java/) a támogatott formátumokhoz.
+Győződjön meg arról, hogy a forrás- és célformátumok kompatibilisek az Aspose.Words-szel.[Aspose.Words Java API referencia](https://reference.aspose.com/words/java/) a támogatott formátumokhoz.
 
 ## Kezelési kivételek: 
 Ha nagyszámú dokumentumot kezel, az átalakítási folyamat során hibák léphetnek fel. Végezzen megfelelő kivételkezelést, hogy azonosítsa és kezelje ezeket a problémákat.

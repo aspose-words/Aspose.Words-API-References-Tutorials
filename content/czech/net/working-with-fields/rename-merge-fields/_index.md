@@ -47,7 +47,7 @@ builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 ```
 
- Zde vytváříme nový dokument a používáme`DocumentBuilder` třídy pro vložení dvou slučovacích polí:`MyMergeField1`a`MyMergeField2`.
+ Zde vytváříme nový dokument a používáme`DocumentBuilder` třídy pro vložení dvou slučovacích polí:`MyMergeField1` a`MyMergeField2`.
 
 ## Krok 2: Iterujte přes pole a přejmenujte je
 

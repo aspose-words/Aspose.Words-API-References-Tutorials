@@ -1,6 +1,6 @@
 ---
 title: Dokumentumok mentése Markdown néven az Aspose.Words for Java programban
-linktitle: Dokumentumok mentése Markdownként
+linktitle: Dokumentumok mentése Markdown néven
 second_title: Aspose.Words Java Document Processing API
 description: Ismerje meg, hogyan konvertálhat Word dokumentumokat Markdown formátumba az Aspose.Words for Java segítségével. Ez a lépésenkénti útmutató a táblázat igazítását, a képkezelést és egyebeket ismerteti.
 type: docs
@@ -27,7 +27,7 @@ Kezdjük egy Word dokumentum létrehozásával, amelyet később Markdown formá
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Szúrjon be egy táblázatot két cellával
+//Szúrjon be egy táblázatot két cellával
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-//Állítsa a táblázattartalom igazítását automatikusra (az első bekezdés határozza meg)
+// Állítsa a táblázattartalom igazítását automatikusra (az első bekezdés határozza meg)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## 3. lépés: Képek kezelése
 
- Ha képeket szeretne felvenni a Markdown dokumentumba, meg kell adnia a mappát, ahol a képek találhatók. Az Aspose.Words for Java lehetővé teszi a képek mappájának beállítását a`MarkdownSaveOptions`.
+Ha képeket szeretne felvenni a Markdown dokumentumba, meg kell adnia a mappát, ahol a képek találhatók. Az Aspose.Words for Java lehetővé teszi a képek mappájának beállítását a`MarkdownSaveOptions`.
 
 A következőképpen állíthatja be a képek mappát, és mentheti el a dokumentumot képekkel:
 

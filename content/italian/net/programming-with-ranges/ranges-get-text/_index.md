@@ -1,75 +1,75 @@
 ---
-title: Gli intervalli ottengono il testo nel documento di Word
-linktitle: Gli intervalli ottengono il testo nel documento di Word
+title: Intervalli Ottieni testo nel documento Word
+linktitle: Intervalli Ottieni testo nel documento Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Estrai testo da documenti Word senza sforzo utilizzando Aspose.Words per .NET. Segui la nostra guida dettagliata per iniziare con facilità.
+description: Estrai testo da documenti Word senza sforzo usando Aspose.Words per .NET. Segui la nostra guida dettagliata per iniziare con facilità.
 type: docs
 weight: 10
 url: /it/net/programming-with-ranges/ranges-get-text/
 ---
 ## Introduzione
 
-Hai mai avuto bisogno di estrarre testo da un documento Word a livello di codice? Che tu stia automatizzando l'elaborazione dei documenti o semplicemente desideri acquisire contenuti specifici da un file Word, Aspose.Words per .NET è quello che fa per te. Questa potente libreria ti consente di manipolare facilmente i documenti di Word, fornendo strumenti robusti per l'estrazione, la modifica e la creazione di contenuti. In questo tutorial ti guideremo attraverso il processo di estrazione del testo da un documento Word utilizzando Aspose.Words per .NET, suddividendolo passo dopo passo per assicurarti di poterlo seguire senza problemi.
+Hai mai avuto bisogno di estrarre testo da un documento Word in modo programmatico? Che tu stia automatizzando l'elaborazione di documenti o semplicemente abbia bisogno di acquisire contenuti specifici da un file Word, Aspose.Words per .NET è la soluzione che fa per te. Questa potente libreria ti consente di manipolare documenti Word con facilità, fornendo strumenti robusti per l'estrazione, la modifica e la creazione di contenuti. In questo tutorial, ti guideremo attraverso il processo di estrazione di testo da un documento Word utilizzando Aspose.Words per .NET, suddividendolo passo dopo passo per assicurarti di poter seguire senza problemi.
 
 ## Prerequisiti
 
-Prima di immergerci nel codice, ci sono alcune cose che dovrai avere a disposizione:
+Prima di immergerci nel codice, ecco alcune cose che devi sapere:
 
-1.  Libreria Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words per .NET installata. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
-2. Ambiente di sviluppo: configura il tuo ambiente di sviluppo. Visual Studio è una scelta popolare per lo sviluppo .NET.
-3. Un documento Word: tieni pronto un documento Word da cui desideri estrarre il testo. Salvalo in una directory conosciuta sul tuo sistema.
+1.  Libreria Aspose.Words per .NET: assicurati di avere installata la libreria Aspose.Words per .NET. Puoi scaricarla da[Qui](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: imposta il tuo ambiente di sviluppo. Visual Studio è una scelta popolare per lo sviluppo .NET.
+3. Un documento Word: tieni pronto un documento Word da cui vuoi estrarre il testo. Salvalo in una directory nota sul tuo sistema.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per iniziare a lavorare con Aspose.Words per .NET, è necessario importare gli spazi dei nomi necessari. Aggiungi le seguenti direttive using nella parte superiore del file di codice:
+Per iniziare a lavorare con Aspose.Words per .NET, devi importare i namespace necessari. Aggiungi le seguenti direttive using all'inizio del tuo file di codice:
 
 ```csharp
 using System;
 using Aspose.Words;
 ```
 
-Analizziamo il processo di estrazione del testo da un documento di Word in passaggi semplici e gestibili.
+Analizziamo nel dettaglio il processo di estrazione del testo da un documento Word in passaggi semplici e gestibili.
 
 ## Passaggio 1: impostare la directory del progetto
 
-Per prima cosa, devi impostare la directory del tuo progetto e includere il tuo documento Word in una posizione specifica. Ecco come farlo:
+Per prima cosa, devi impostare la directory del progetto e includere il tuo documento Word in una posizione specifica. Ecco come fare:
 
 Crea una directory per i tuoi documenti
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory dei tuoi documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Questa directory conterrà il tuo documento Word. Assicurati di sostituire`"YOUR DOCUMENTS DIRECTORY"` con il percorso effettivo della directory.
+ Questa directory conterrà il tuo documento Word. Assicurati di sostituire`"YOUR DOCUMENTS DIRECTORY"` con il percorso effettivo della tua directory.
 
 ## Passaggio 2: caricare il documento Word
 
-Ora che la directory è impostata, il passaggio successivo è caricare il documento Word utilizzando Aspose.Words. Ecco come farlo:
+Ora che la tua directory è impostata, il passo successivo è caricare il documento Word usando Aspose.Words. Ecco come fare:
 
 Carica il documento
 
 ```csharp
-// Carica il documento di Word
+// Caricare il documento Word
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- In questo passaggio creerai una nuova istanza di`Document` classe e caricarvi il documento Word. Assicurarsi che il nome e il percorso del file siano corretti.
+ In questo passaggio, crei una nuova istanza di`Document` classe e carica il tuo documento Word al suo interno. Assicurati che il nome del file e il percorso siano corretti.
 
-## Passaggio 3: estrai il testo dal documento
+## Passaggio 3: estrarre il testo dal documento
 
-Con il documento caricato, è il momento di estrarre il testo. È qui che avviene la magia:
+Una volta caricato il documento, è il momento di estrarre il testo. Ecco dove avviene la magia:
 
-Estrai testo
+Estrarre il testo
 
 ```csharp
-// Estrai il testo dal documento
+// Estrarre il testo dal documento
 string text = doc.Range.Text;
 ```
 
- IL`Range.Text` La proprietà ti dà tutto il testo contenuto nell'intervallo del documento. Ciò include il testo di tutte le sezioni, intestazioni, piè di pagina e corpo principale.
+IL`Range.Text` property ti fornisce tutto il testo contenuto nell'intervallo del documento. Questo include il testo di tutte le sezioni, intestazioni, piè di pagina e corpo principale.
 
-## Passaggio 4: Visualizza il testo estratto
+## Passaggio 4: visualizzare il testo estratto
 
 Infine, per verificare che l'estrazione del testo abbia funzionato, puoi visualizzare il testo estratto nella console. Ecco come:
 
@@ -80,29 +80,29 @@ Visualizza il testo
 Console.WriteLine(text);
 ```
 
-Questo passaggio stampa il testo estratto sulla console, consentendoti di vedere il risultato del processo di estrazione del testo.
+Questo passaggio stampa il testo estratto sulla console, consentendo di visualizzare il risultato del processo di estrazione del testo.
 
 ## Conclusione
 
-Ed ecco qua! Estrarre il testo da un documento Word utilizzando Aspose.Words per .NET è semplice se lo suddividi in questi semplici passaggi. Seguendo questa guida, puoi automatizzare il processo di estrazione del testo nelle tue applicazioni .NET, risparmiando tempo e fatica.
+Ed ecco fatto! Estrarre testo da un documento Word usando Aspose.Words per .NET è semplice se lo si suddivide in questi semplici passaggi. Seguendo questa guida, è possibile automatizzare il processo di estrazione del testo nelle applicazioni .NET, risparmiando tempo e fatica.
 
 ## Domande frequenti
 
-### Cos'è Aspose.Words per .NET?
+### Che cos'è Aspose.Words per .NET?
 
-Aspose.Words per .NET è una potente libreria di manipolazione di documenti che consente agli sviluppatori di creare, modificare, convertire e manipolare documenti Word a livello di codice.
+Aspose.Words per .NET è una potente libreria per la manipolazione di documenti che consente agli sviluppatori di creare, modificare, convertire e manipolare documenti Word a livello di programmazione.
 
 ### Ho bisogno di una licenza per utilizzare Aspose.Words per .NET?
 
- Sì, Aspose.Words per .NET è un prodotto concesso in licenza. È possibile ottenere una licenza temporanea da[Qui](https://purchase.aspose.com/temporary-license/) o acquistarlo da[Qui](https://purchase.aspose.com/buy).
+ Sì, Aspose.Words per .NET è un prodotto con licenza. Puoi ottenere una licenza temporanea da[Qui](https://purchase.aspose.com/temporary-license/) oppure acquistalo da[Qui](https://purchase.aspose.com/buy).
 
-### Posso utilizzare Aspose.Words per .NET con altri linguaggi .NET oltre a C#?
+### Posso usare Aspose.Words per .NET con altri linguaggi .NET oltre a C#?
 
 Assolutamente! Aspose.Words per .NET supporta tutti i linguaggi .NET, incluso VB.NET.
 
 ### Dove posso trovare la documentazione per Aspose.Words per .NET?
 
- È possibile trovare la documentazione completa[Qui](https://reference.aspose.com/words/net/).
+ Puoi trovare la documentazione completa[Qui](https://reference.aspose.com/words/net/).
 
 ### Come posso ottenere supporto per Aspose.Words per .NET?
 

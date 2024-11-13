@@ -13,7 +13,7 @@ Hallo! Möchten Sie Tabellen programmgesteuert in Ihren Word-Dokumenten erstelle
 
 ## Voraussetzungen
 
-Bevor wir uns auf unser Tischbau-Abenteuer einlassen, sollten wir sicherstellen, dass alles in Ordnung ist. Folgendes brauchen Sie:
+Bevor wir uns auf unser Tischbau-Abenteuer stürzen, sollten wir sicherstellen, dass alles in Ordnung ist. Folgendes brauchen Sie:
 
 - Visual Studio (oder eine andere C#-IDE)
 - .NET Framework (4.0 oder höher)
@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Okay, lassen Sie uns den Vorgang zum Erstellen einer Tabelle in einem Word-Dokument in überschaubare Schritte unterteilen. Stellen Sie es sich wie das Zusammenbauen eines Möbelstücks vor – wir nehmen uns Schraube für Schraube vor.
+Okay, lassen Sie uns den Vorgang zum Erstellen einer Tabelle in einem Word-Dokument in überschaubare Schritte unterteilen. Stellen Sie es sich wie das Zusammenbauen eines Möbelstücks vor – wir nehmen uns eine Schraube und einen Bolzen nach dem anderen vor.
 
 ## Schritt 1: Initialisieren Sie das Dokument und den DocumentBuilder
 
@@ -91,7 +91,7 @@ builder.Writeln("This is row 2 cell 2");
 builder.EndRow();
 ```
 
- Hier legen wir die Höhe der Reihe fest und stellen sicher, dass sie fixiert bleibt mit`HeightRule.Exactly`. Durch die Änderungen der Textausrichtung fällt unsere Tabelle auf und erhält einen Hauch von Einzigartigkeit.
+ Hier legen wir die Höhe der Reihe fest und sorgen dafür, dass sie fixiert bleibt mit`HeightRule.Exactly`. Durch die Änderungen der Textausrichtung fällt unsere Tabelle auf und erhält einen Hauch von Einzigartigkeit.
 
 ## Schritt 5: Beenden Sie die Tabelle
 

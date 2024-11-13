@@ -2,7 +2,7 @@
 title: 読み取り専用制限を解除
 linktitle: 読み取り専用制限を解除
 second_title: Aspose.Words ドキュメント処理 API
-description: 詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word 文書から読み取り専用制限を簡単に削除できます。開発者に最適です。
+description: 詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word ドキュメントから読み取り専用制限を簡単に削除できます。開発者に最適です。
 type: docs
 weight: 10
 url: /ja/net/document-protection/remove-read-only-restriction/
@@ -109,7 +109,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ### この方法を使用して、複数のドキュメントから一度に制限を削除できますか?
 
-はい、複数のドキュメントをループし、各ドキュメントに同じメソッドを適用して読み取り専用制限を解除できます。
+はい、複数のドキュメントをループし、それぞれに同じメソッドを適用して読み取り専用制限を解除できます。
 
 ### 文書がパスワードで保護されていて、パスワードがわからない場合はどうなりますか?
 

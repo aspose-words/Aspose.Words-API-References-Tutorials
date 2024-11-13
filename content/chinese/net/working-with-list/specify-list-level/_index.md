@@ -96,7 +96,7 @@ builder.ListFormat.List = null;
 
 ## 步骤 7：保存文档
 
-经过所有这些努力，是时候保存我们的文档了。让我们用一个有意义的名字保存它。
+经过所有这些辛苦的工作后，是时候保存我们的文档了。让我们用一个有意义的名字来保存它。
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");

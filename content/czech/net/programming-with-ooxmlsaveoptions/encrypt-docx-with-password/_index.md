@@ -54,7 +54,7 @@ Dále musíme nastavit možnosti pro uložení dokumentu. Zde zadáme heslo pro 
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
- The`OoxmlSaveOptions`třída nám umožňuje specifikovat různé možnosti ukládání souborů DOCX. Zde nastavíme`Password`majetek do`"password"` . Můžete vyměnit`"password"` s libovolným heslem dle vašeho výběru. Toto heslo bude vyžadováno pro otevření zašifrovaného souboru DOCX.
+The`OoxmlSaveOptions`třída nám umožňuje specifikovat různé možnosti ukládání souborů DOCX. Zde nastavíme`Password`majetek do`"password"` . Můžete vyměnit`"password"` s libovolným heslem dle vašeho výběru. Toto heslo bude vyžadováno pro otevření zašifrovaného souboru DOCX.
 
 ## Krok 3: Uložte zašifrovaný dokument
 
@@ -65,7 +65,7 @@ Nakonec dokument uložíme pomocí možností uložení nakonfigurovaných v př
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
- The`Save` metoda`Document` třída se používá k uložení dokumentu. Poskytujeme cestu a název souboru pro zašifrovaný dokument spolu s příponou`saveOptions` jsme nakonfigurovali dříve. Dokument je nyní uložen jako zašifrovaný soubor DOCX.
+The`Save` metoda`Document` třída se používá k uložení dokumentu. Poskytujeme cestu a název souboru pro zašifrovaný dokument spolu s příponou`saveOptions` jsme nakonfigurovali dříve. Dokument je nyní uložen jako zašifrovaný soubor DOCX.
 
 ## Závěr
 

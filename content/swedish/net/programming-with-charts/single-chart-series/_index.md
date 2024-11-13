@@ -9,7 +9,7 @@ url: /sv/net/programming-with-charts/single-chart-series/
 ---
 ## Introduktion
 
-Hej där! Har du någonsin velat förstärka dina Word-dokument med några snygga listor? Nåväl, du är på rätt plats! Idag dyker vi in i Aspose.Words för .NET-världen för att anpassa enstaka diagramserier i ett diagram. Oavsett om du är ett erfaret proffs eller precis har börjat, kommer den här guiden att leda dig genom hela processen steg för steg. Så, spänn fast och låt oss börja kartlägga!
+Hej där! Har du någonsin velat förstärka dina Word-dokument med några snygga listor? Tja, du är på rätt plats! Idag dyker vi in i Aspose.Words för .NET-världen för att anpassa enstaka diagramserier i ett diagram. Oavsett om du är ett erfaret proffs eller precis har börjat, kommer den här guiden att leda dig genom hela processen steg för steg. Så, spänn fast och låt oss börja kartlägga!
 
 ## Förutsättningar
 

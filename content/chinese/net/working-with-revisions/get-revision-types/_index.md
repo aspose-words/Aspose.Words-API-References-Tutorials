@@ -44,7 +44,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 第 2 步：加载 Word 文档
 
-接下来，您需要将 Word 文档加载到您的项目中。此文档应该包含您要分析的修订。
+接下来，您需要将 Word 文档加载到您的项目中。此文档应该包含您要分析的修订版本。
 
 ```csharp
 Document doc = new Document(dataDir + "Revisions.docx");
@@ -90,7 +90,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 当然！您可以免费试用[这里](https://releases.aspose.com/).
 
-### 如何为 Aspose.Words for .NET 申请临时许可证？
+### 如何申请 Aspose.Words for .NET 的临时许可证？
 
 您可以从[这里](https://purchase.aspose.com/temporary-license/).
 

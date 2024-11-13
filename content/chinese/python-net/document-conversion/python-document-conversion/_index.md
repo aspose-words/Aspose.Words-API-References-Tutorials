@@ -240,7 +240,7 @@ for filename in input_files:
 ```
 ## 使用 Aspose.Words for Python 的优势
 
-Aspose.Words for Python 具有多个优点，包括：
+Aspose.Words for Python 具有几个优点，包括：
 
 - 强大的文档转换功能
 - 丰富的文档操作功能

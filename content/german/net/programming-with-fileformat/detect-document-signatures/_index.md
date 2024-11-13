@@ -16,7 +16,7 @@ Die Gewährleistung der Integrität und Authentizität Ihrer Word-Dokumente ist 
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes eingerichtet haben:
 
 -  Aspose.Words für .NET-Bibliothek: Sie können es herunterladen von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
-- Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine .NET-Entwicklungsumgebung wie Visual Studio eingerichtet haben.
+- Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine .NET-Entwicklungsumgebung wie beispielsweise Visual Studio eingerichtet haben.
 - Grundlegende Kenntnisse in C#: Wenn Sie mit der Programmiersprache C# vertraut sind, können Sie problemlos mitmachen.
 
 ## Namespaces importieren
@@ -91,7 +91,7 @@ Nein, Aspose.Words für .NET behält beim Öffnen oder Speichern von Dokumenten 
 
 ### Gibt es eine Möglichkeit, mehrere digitale Signaturen auf einem Dokument zu erkennen?
 
- Ja, die`HasDigitalSignature` kann auf das Vorhandensein einer oder mehrerer digitaler Signaturen im Dokument hinweisen.
+ Ja, die`HasDigitalSignature` -Eigenschaft kann auf das Vorhandensein einer oder mehrerer digitaler Signaturen im Dokument hinweisen.
 
 ### Wie erhalte ich eine kostenlose Testversion von Aspose.Words für .NET?
 

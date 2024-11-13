@@ -1,28 +1,28 @@
 ---
-title: Sisipkan TCField di Dokumen Word
-linktitle: Sisipkan TCField di Dokumen Word
+title: Masukkan TCField Dalam Dokumen Word
+linktitle: Masukkan TCField Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan bidang TC di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk otomatisasi dokumen yang lancar.
+description: Pelajari cara memasukkan kolom TC dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk otomatisasi dokumen yang lancar.
 type: docs
 weight: 10
 url: /id/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## Perkenalan
 
-Hai! Jika Anda terjun ke dunia otomatisasi dokumen, Anda berada di tempat yang tepat. Hari ini, kita akan mempelajari cara menyisipkan bidang TC (Daftar Isi) ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Percayalah, di akhir tutorial ini, Anda akan merasa seperti seorang penyihir yang memberikan mantra pada dokumen Word Anda. Siap untuk memulai? Ayo lakukan ini!
+Hai! Jika Anda ingin mendalami dunia otomatisasi dokumen, Anda berada di tempat yang tepat. Hari ini, kita akan membahas cara memasukkan kolom TC (Table of Contents) ke dalam dokumen Word menggunakan Aspose.Words for .NET. Percayalah, di akhir tutorial ini, Anda akan merasa seperti seorang penyihir yang merapal mantra pada dokumen Word Anda. Siap untuk memulai? Ayo lakukan!
 
 ## Prasyarat
 
-Sebelum kita masuk ke seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita masuk ke inti permasalahan, mari pastikan Anda memiliki semua yang dibutuhkan:
 
-1.  Aspose.Words for .NET: Jika belum melakukannya, Anda harus mengunduh dan menginstal Aspose.Words for .NET. Anda bisa mendapatkannya dari[halaman unduhan](https://releases.aspose.com/words/net/).
-2. Lingkungan Pengembangan: Lingkungan pengembangan .NET apa pun bisa digunakan, tetapi Visual Studio sangat disarankan.
-3. Pengetahuan Dasar C#: Anda harus terbiasa dengan dasar-dasar pemrograman C#.
+1.  Aspose.Words untuk .NET: Jika Anda belum melakukannya, Anda perlu mengunduh dan menginstal Aspose.Words untuk .NET. Anda bisa mendapatkannya dari[halaman unduhan](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan .NET apa pun dapat digunakan, tetapi Visual Studio sangat direkomendasikan.
+3. Pengetahuan Dasar C#: Anda harus memahami dasar-dasar pemrograman C#.
 4.  Lisensi Sementara: Untuk membuka kemampuan penuh Aspose.Words, Anda mungkin memerlukan lisensi sementara yang dapat Anda peroleh[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini seperti menyiapkan panggung untuk pertunjukan sulap kita.
+Pertama-tama, mari impor namespace yang diperlukan. Ini seperti menyiapkan panggung untuk pertunjukan sulap kita.
 
 ```csharp
 using System;
@@ -30,11 +30,11 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Baiklah, setelah babak penyisihan selesai, mari kita mulai beraksi!
+Baiklah, setelah pendahuluan selesai, mari kita mulai aksinya!
 
 ## Langkah 1: Siapkan Proyek Anda
 
-Sebelum kita terjun ke coding, mari kita siapkan proyek kita. Buka lingkungan pengembangan Anda dan buat proyek .NET baru. Pastikan untuk menambahkan referensi ke perpustakaan Aspose.Words untuk .NET. Jika Anda menggunakan NuGet, Anda dapat menginstalnya dengan mudah melalui Package Manager Console:
+Sebelum kita mulai membuat kode, mari kita siapkan proyek kita. Buka lingkungan pengembangan Anda dan buat proyek .NET baru. Pastikan untuk menambahkan referensi ke pustaka Aspose.Words for .NET. Jika Anda menggunakan NuGet, Anda dapat menginstalnya dengan mudah melalui Konsol Pengelola Paket:
 
 ```shell
 Install-Package Aspose.Words
@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Langkah 2: Buat Dokumen Baru
 
- Baiklah, mari kita mulai dengan membuat dokumen Word baru. Kami akan menggunakan`Document`Dan`DocumentBuilder` kelas dari Aspose.Words untuk membuat segalanya berjalan lancar.
+ Baiklah, mari kita mulai dengan membuat dokumen Word baru. Kita akan menggunakan`Document` Dan`DocumentBuilder` kelas dari Aspose.Words untuk memulai semuanya.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -53,45 +53,45 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Ini menyiapkan dokumen kita dan mempersiapkan kita untuk mulai membuatnya.
+Ini menyiapkan dokumen kita dan mempersiapkan kita untuk mulai membangunnya.
 
 ## Langkah 3: Masukkan Bidang TC
 
-Sekarang, inilah bagian yang menyenangkan. Kami akan memasukkan bidang TC ke dalam dokumen kami. Bidang TC digunakan untuk menandai entri Daftar Isi.
+Nah, sekarang tibalah bagian yang menyenangkan. Kita akan memasukkan kolom TC ke dalam dokumen kita. Kolom TC digunakan untuk menandai entri untuk Daftar Isi.
 
 ```csharp
 // Masukkan bidang TC
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Baris kode ini memberitahu Aspose.Words untuk menyisipkan bidang TC dengan teks entri "Teks Entri". Itu`\\f t`bagiannya adalah tombol yang menentukan bagaimana entri ditampilkan di Daftar Isi.
+ Baris kode ini memberitahu Aspose.Words untuk memasukkan bidang TC dengan teks entri "Teks Entri".`\\f t`Bagian ini merupakan tombol yang menentukan bagaimana entri ditampilkan dalam Daftar Isi.
 
 ## Langkah 4: Simpan Dokumen
 
-Terakhir, mari simpan dokumen kita. Di sinilah semua kerja keras kita bersatu.
+Terakhir, mari kita simpan dokumen kita. Di sinilah semua kerja keras kita terkumpul.
 
 ```csharp
-// Simpan dokumennya
+// Simpan dokumen
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-Ledakan! Anda baru saja membuat dokumen Word dengan bidang TC. Betapa mengagumkannya itu?
+Wah! Anda baru saja membuat dokumen Word dengan kolom TC. Keren sekali, bukan?
 
 ## Kesimpulan
 
- Dan itu dia! Kami telah mempelajari cara menyisipkan bidang TC ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ini cukup mudah, bukan? Dengan keterampilan ini, kini Anda dapat mengotomatiskan dan menyesuaikan dokumen Word Anda seperti seorang profesional. Jika Anda memiliki pertanyaan atau mengalami masalah apa pun, jangan ragu untuk memeriksanya[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) atau menghubungi mereka[forum dukungan](https://forum.aspose.com/c/words/8). Selamat membuat kode!
+ Nah, itu dia! Kami telah membahas cara memasukkan kolom TC ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Cukup mudah, bukan? Dengan keterampilan ini, kini Anda dapat mengotomatiskan dan menyesuaikan dokumen Word Anda seperti seorang profesional. Jika Anda memiliki pertanyaan atau mengalami masalah, jangan ragu untuk memeriksa[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) atau hubungi mereka[forum dukungan](https://forum.aspose.com/c/words/8)Selamat membuat kode!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### 1. Apa yang dimaksud dengan bidang TC di Word?
+### 1. Apa itu bidang TC di Word?
 
-Bidang TC (Daftar Isi) di Word digunakan untuk menandai entri tertentu yang ingin Anda sertakan dalam Daftar Isi Anda.
+Kolom TC (Daftar Isi) di Word digunakan untuk menandai entri tertentu yang ingin Anda sertakan dalam Daftar Isi.
 
 ### 2. Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
 
- Ya, Anda dapat menggunakan lisensi sementara untuk membuka fitur lengkap Aspose.Words. Anda bisa mendapatkannya[Di Sini](https://purchase.aspose.com/temporary-license/).
+ Ya, Anda dapat menggunakan lisensi sementara untuk membuka fitur lengkap Aspose.Words. Anda dapat memperolehnya[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-### 3. Bisakah saya menggunakan Aspose.Words dengan bahasa pemrograman lain?
+### 3. Dapatkah saya menggunakan Aspose.Words dengan bahasa pemrograman lain?
 
 Aspose.Words terutama mendukung bahasa .NET seperti C#, tetapi ada versi yang tersedia untuk Java dan platform lainnya.
 
@@ -101,4 +101,4 @@ Aspose.Words terutama mendukung bahasa .NET seperti C#, tetapi ada versi yang te
 
 ### 5. Bagaimana saya bisa mendapatkan dukungan jika saya mengalami masalah?
 
- Jika Anda mengalami masalah apa pun, Anda bisa mendapatkan dukungan dari[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).
+ Jika Anda mengalami masalah, Anda bisa mendapatkan dukungan dari[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).

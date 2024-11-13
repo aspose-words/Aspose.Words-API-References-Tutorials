@@ -30,7 +30,7 @@ Az Aspose.Words for Java használatának megkezdéséhez be kell állítania a f
 
 2. Adja hozzá az Aspose.Words JAR fájlokat a projekt osztályútvonalához.
 
-3. Importálja a szükséges Aspose.Words osztályokat a Java kódba.
+3. Importálja a szükséges Aspose.Words osztályokat a Java kódjába.
 
 ## Dokumentumok felosztása
 

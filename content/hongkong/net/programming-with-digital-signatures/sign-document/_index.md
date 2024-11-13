@@ -17,7 +17,7 @@ url: /zh-hant/net/programming-with-digital-signatures/sign-document/
 
 1.  Aspose.Words for .NET：請確定您已安裝了最新版本的 Aspose.Words for .NET。你可以下載它[這裡](https://releases.aspose.com/words/net/).
 2. .NET 環境：確保您已設定 .NET 開發環境（例如 Visual Studio）。
-3. 數位憑證：取得用於簽署文件的數位憑證（例如.pfx 檔案）。
+3. 數位憑證：取得用於簽署文件的數位憑證（例如，.pfx 檔案）。
 4. 待簽名文件：準備好您要簽署的 Word 文件。
 
 ## 導入命名空間
@@ -90,7 +90,7 @@ doc.Save(dataDir + "Document.Signed.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功簽署了 Word 文件。透過執行這些簡單的步驟，您可以確保您的文件得到安全簽署和驗證。請記住，數位簽章是保護文件完整性的強大工具，因此在必要時請使用它們。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功簽署了 Word 文件。透過執行這些簡單的步驟，您可以確保您的文件得到安全簽署和驗證。請記住，數位簽章是保護文件完整性的強大工具，因此在必要時請使用它們。
 
 ## 常見問題解答
 

@@ -16,7 +16,7 @@ Hallo, liebe Technikbegeisterte! Waren Sie schon einmal in einer Situation, in d
 Bevor wir in die Einzelheiten eintauchen, müssen Sie einige Dinge vorbereitet haben:
 
 1. Visual Studio: Stellen Sie sicher, dass Visual Studio auf Ihrem Computer installiert ist. Hier schreiben und führen Sie Ihren Code aus.
-2.  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Sie können es herunterladen[Hier](https://releases.aspose.com/words/net/) . Vergessen Sie nicht, Ihre kostenlose Testversion zu erhalten[Hier](https://releases.aspose.com/) falls Sie das nicht schon getan haben!
+2.  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Sie können es herunterladen[Hier](https://releases.aspose.com/words/net/) Vergessen Sie nicht, Ihre kostenlose Testversion zu erhalten[Hier](https://releases.aspose.com/) falls Sie das nicht schon getan haben!
 3. Ein digital signiertes Word-Dokument: Sie verfügen über ein Word-Dokument, das bereits digital signiert ist. Mit dieser Datei werden Sie arbeiten, um die Signaturen zu überprüfen.
 
 ## Namespaces importieren
@@ -58,7 +58,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
- Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentverzeichnis. Dieser Codeausschnitt initialisiert ein neues`Document` Objekt und lädt Ihr signiertes Word-Dokument.
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis. Dieser Codeausschnitt initialisiert ein neues`Document` Objekt und lädt Ihr signiertes Word-Dokument.
 
 ## Schritt 3: Zugriff auf die digitalen Signaturen
 

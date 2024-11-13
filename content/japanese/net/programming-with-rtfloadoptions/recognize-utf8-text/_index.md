@@ -59,7 +59,7 @@ RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);
 ```
 
-このラインでは、新しい`Document`オブジェクトを作成し、RTF ファイルを読み込みます。拡張子を含め、ファイル名が完全に一致していることを確認してください。
+このラインでは、新しい`Document`オブジェクトを作成し、RTF ファイルをロードします。拡張子を含め、ファイル名が完全に一致していることを確認してください。
 
 ## ステップ4: 処理したドキュメントを保存する
 

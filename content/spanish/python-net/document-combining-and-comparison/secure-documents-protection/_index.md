@@ -1,8 +1,8 @@
 ---
-title: Proteger documentos con técnicas de protección avanzadas
-linktitle: Proteger documentos con técnicas de protección avanzadas
-second_title: API de gestión de documentos Aspose.Words Python
-description: Asegure sus documentos con protección avanzada usando Aspose.Words para Python. Aprenda a agregar contraseñas, cifrar contenido, aplicar firmas digitales y más.
+title: Protección de documentos con técnicas de protección avanzadas
+linktitle: Protección de documentos con técnicas de protección avanzadas
+second_title: API de gestión de documentos de Python de Aspose.Words
+description: Proteja sus documentos con protección avanzada usando Aspose.Words para Python. Aprenda a agregar contraseñas, cifrar contenido, aplicar firmas digitales y más.
 type: docs
 weight: 16
 url: /es/python-net/document-combining-and-comparison/secure-documents-protection/
@@ -10,11 +10,11 @@ url: /es/python-net/document-combining-and-comparison/secure-documents-protectio
 
 ## Introducción
 
-En esta era digital, las filtraciones de datos y el acceso no autorizado a información confidencial son preocupaciones comunes. Aspose.Words para Python ofrece una solución sólida para proteger documentos contra tales riesgos. Esta guía demostrará cómo utilizar Aspose.Words para implementar técnicas de protección avanzadas para sus documentos.
+En esta era digital, las filtraciones de datos y el acceso no autorizado a información confidencial son preocupaciones habituales. Aspose.Words para Python ofrece una solución sólida para proteger los documentos contra estos riesgos. Esta guía le mostrará cómo utilizar Aspose.Words para implementar técnicas de protección avanzadas para sus documentos.
 
 ## Instalación de Aspose.Words para Python
 
-Para comenzar, necesita instalar Aspose.Words para Python. Puedes instalarlo fácilmente usando pip:
+Para comenzar, debes instalar Aspose.Words para Python. Puedes instalarlo fácilmente usando pip:
 
 ```python
 pip install aspose-words
@@ -30,7 +30,7 @@ import aspose.words as aw
 doc = aw.Document("document.docx")
 ```
 
-## Aplicar protección con contraseña
+## Aplicación de protección por contraseña
 
 Puede agregar una contraseña a su documento para restringir el acceso:
 
@@ -38,16 +38,16 @@ Puede agregar una contraseña a su documento para restringir el acceso:
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## Restricción de permisos de edición
+## Restringir los permisos de edición
 
-Para controlar quién puede realizar cambios en el documento, puede configurar permisos de edición:
+Para controlar quién puede realizar cambios en el documento, puede establecer permisos de edición:
 
 ```python
 protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
 protection.set_editing_groups(["Editors"])
 ```
 
-## Cifrar el contenido del documento
+## Cifrado del contenido de los documentos
 
 Cifrar el contenido del documento mejora la seguridad:
 
@@ -57,23 +57,23 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 
 ## Firmas digitales
 
-Agregue una firma digital para garantizar la autenticidad del documento:
+Añade una firma digital para garantizar la autenticidad del documento:
 
 ```python
 digital_signature = aw.digital_signatures.DigitalSignature(doc)
 digital_signature.sign("certificate.pfx", "signature_password")
 ```
 
-## Marca de agua para seguridad
+## Marcas de agua para seguridad
 
-Las marcas de agua pueden desalentar el uso compartido no autorizado:
+Las marcas de agua pueden disuadir el uso compartido no autorizado:
 
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
 ```
 
-## Redacción de información confidencial
+## Redactar información confidencial
 
 Para eliminar información confidencial de forma permanente:
 
@@ -84,7 +84,7 @@ doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 
 ## Conclusión
 
-Aspose.Words para Python le permite proteger sus documentos utilizando técnicas avanzadas. Desde protección con contraseña y cifrado hasta firmas digitales y redacción, estas funciones garantizan que sus documentos permanezcan confidenciales y a prueba de manipulaciones.
+Aspose.Words para Python le permite proteger sus documentos mediante técnicas avanzadas. Desde protección con contraseña y cifrado hasta firmas digitales y redacción, estas funciones garantizan que sus documentos permanezcan confidenciales y a prueba de manipulaciones.
 
 ## Preguntas frecuentes
 
@@ -102,8 +102,8 @@ Aspose.Words ofrece opciones de cifrado como AES_256 para proteger el contenido 
 
 ### ¿Cómo mejoran las firmas digitales la seguridad de los documentos?
 
-Las firmas digitales garantizan la autenticidad e integridad de los documentos, lo que dificulta que partes no autorizadas alteren el contenido.
+Las firmas digitales garantizan la autenticidad e integridad de los documentos, lo que dificulta que terceros no autorizados alteren el contenido.
 
-### ¿Cómo puedo eliminar permanentemente información confidencial de un documento?
+### ¿Cómo puedo eliminar de forma permanente la información confidencial de un documento?
 
-Utilice la función de redacción para eliminar permanentemente información confidencial de un documento.
+Utilice la función de redacción para eliminar de forma permanente la información confidencial de un documento.

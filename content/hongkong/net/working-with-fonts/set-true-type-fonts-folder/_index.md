@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功為 Word 文件設定了 True Type Fonts 資料夾。這可確保您的文件在所有平台上看起來一致且專業。字體管理是文件建立的重要方面，而使用 Aspose.Words，它變得非常簡單。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功為 Word 文件設定了 True Type Fonts 資料夾。這可確保您的文件在所有平台上看起來一致且專業。字體管理是文件建立的重要方面，而使用 Aspose.Words，它變得非常簡單。
 
 ## 常見問題解答
 

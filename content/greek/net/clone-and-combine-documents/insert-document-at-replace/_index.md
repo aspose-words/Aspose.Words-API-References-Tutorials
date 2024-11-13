@@ -111,36 +111,40 @@ private class InsertDocumentAtReplaceHandler : IReplacingCallback
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
 {
-	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
-	{
-		CompositeNode destinationParent = insertionDestination.ParentNode;
+    // Ελέγξτε εάν ο προορισμός εισαγωγής είναι Παράγραφος ή Πίνακας
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
 
-		NodeImporter importer =
-			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+        // Δημιουργήστε ένα NodeImporter για εισαγωγή κόμβων από το έγγραφο προέλευσης
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
 
-		// Κάντε βρόχο σε όλους τους κόμβους σε επίπεδο μπλοκ στο σώμα της ενότητας,
-		// στη συνέχεια κλωνοποιήστε και εισαγάγετε κάθε κόμβο που δεν είναι η τελευταία κενή παράγραφο μιας ενότητας.
-		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
-		foreach (Node srcNode in srcSection.Body)
-		{
-			if (srcNode.NodeType == NodeType.Paragraph)
-			{
-				Paragraph para = (Paragraph)srcNode;
-				if (para.IsEndOfSection && !para.HasChildNodes)
-					continue;
-			}
+        // Κάντε βρόχο σε όλους τους κόμβους σε επίπεδο μπλοκ στις ενότητες του εγγράφου προέλευσης
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        {
+            foreach (Node srcNode in srcSection.Body)
+            {
+                // Παραλείψτε την τελευταία κενή παράγραφο μιας ενότητας
+                if (srcNode.NodeType == NodeType.Paragraph)
+                {
+                    Paragraph para = (Paragraph)srcNode;
+                    if (para.IsEndOfSection && !para.HasChildNodes)
+                        continue;
+                }
 
-			Node newNode = importer.ImportNode(srcNode, true);
-
-			destinationParent.InsertAfter(newNode, insertionDestination);
-			insertionDestination = newNode;
-		}
-	}
-	else
-	{
-		throw new ArgumentException("The destination node should be either a paragraph or table.");
-	}
+                // Εισαγάγετε και εισαγάγετε τον κόμβο στον προορισμό
+                Node newNode = importer.ImportNode(srcNode, true);
+                destinationParent.InsertAfter(newNode, insertionDestination);
+                insertionDestination = newNode;
+            }
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
 }
+
 ```
 
 Αυτή η μέθοδος φροντίζει για την εισαγωγή κόμβων από το έγγραφο που πρόκειται να εισαχθεί και την τοποθέτησή τους στο σωστό σημείο στο κύριο έγγραφο.
@@ -161,7 +165,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
  Απολύτως! Μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμής από[εδώ](https://releases.aspose.com/).
 
 ### Πώς μπορώ να λάβω υποστήριξη για το Aspose.Words;
-Μπορείτε να λάβετε υποστήριξη επισκεπτόμενοι το[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8).
+Μπορείτε να λάβετε υποστήριξη μεταβαίνοντας στο[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8).
 
 ### Μπορώ να διατηρήσω τη μορφοποίηση του εγγράφου που έχει εισαχθεί;
  Ναι, το`NodeImporter` class σάς επιτρέπει να καθορίσετε πώς γίνεται ο χειρισμός της μορφοποίησης κατά την εισαγωγή κόμβων από ένα έγγραφο σε άλλο.

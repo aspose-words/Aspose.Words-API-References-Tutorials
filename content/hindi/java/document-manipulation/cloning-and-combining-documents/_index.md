@@ -64,7 +64,7 @@ mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { "Yo
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
- इस उदाहरण में, हमने फ़ील्ड मर्जिंग कॉलबैक का उपयोग करके सेट किया है`InsertDocumentAtMailMergeHandler` "Document_1" फ़ील्ड द्वारा निर्दिष्ट दस्तावेज़ के सम्मिलन को संभालने के लिए क्लास।
+ इस उदाहरण में, हमने फ़ील्ड मर्जिंग कॉलबैक सेट किया है`InsertDocumentAtMailMergeHandler` "Document_1" फ़ील्ड द्वारा निर्दिष्ट दस्तावेज़ के सम्मिलन को संभालने के लिए क्लास।
 
 ## निष्कर्ष
 

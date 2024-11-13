@@ -73,7 +73,7 @@ builder.insert_html(markdown_table)
 
 ## Oldalelrendezés és formázás
 
-Az Aspose.Words széles körű szabályozást kínál az oldal elrendezése és formázása felett. Beállíthatja a margókat, beállíthatja az oldalméretet stb.:
+Az Aspose.Words széles körű szabályozást kínál az oldal elrendezése és formázása felett. Beállíthatja a margókat, beállíthatja az oldalméretet és sok mást:
 
 ```python
 section = doc.sections[0]
@@ -110,7 +110,7 @@ Teljesen! A Markdown szintaxis használatával képeket szúrhat be a dokumentum
 
 Igen, az Aspose.Words módszereket biztosít az oldalelrendezés és a margók igényeinek megfelelő beállítására.
 
-### Elmenthetem a dokumentumomat különböző formátumokban?
+### Menthetem a dokumentumomat különböző formátumokban?
 
 Igen, az Aspose.Words támogatja a dokumentumok mentését különféle formátumokban, például DOCX, PDF, HTML stb.
 

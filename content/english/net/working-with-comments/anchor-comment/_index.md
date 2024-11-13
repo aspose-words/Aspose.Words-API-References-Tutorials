@@ -79,8 +79,7 @@ Now, let's create a comment that we'll attach to our text.
 ```csharp
 // Create a new Comment
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+comment.SetText("Comment text.");
 ```
 
 In this step, we create a `Comment` object and add a paragraph and a run with the comment text.

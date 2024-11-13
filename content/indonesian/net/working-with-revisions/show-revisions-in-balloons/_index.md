@@ -9,20 +9,20 @@ url: /id/net/working-with-revisions/show-revisions-in-balloons/
 ---
 ## Perkenalan
 
-Melacak perubahan dalam dokumen Word sangat penting untuk kolaborasi dan pengeditan. Aspose.Words untuk .NET menawarkan alat canggih untuk mengelola revisi ini, memastikan kejelasan dan kemudahan peninjauan. Panduan ini akan membantu Anda menampilkan revisi pada balon, sehingga memudahkan untuk melihat perubahan apa yang telah dilakukan dan oleh siapa.
+Melacak perubahan dalam dokumen Word sangat penting untuk kolaborasi dan penyuntingan. Aspose.Words untuk .NET menawarkan alat yang tangguh untuk mengelola revisi ini, memastikan kejelasan dan kemudahan peninjauan. Panduan ini akan membantu Anda menampilkan revisi dalam bentuk balon, sehingga memudahkan untuk melihat perubahan apa yang telah dibuat dan oleh siapa.
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
--  Aspose.Words untuk perpustakaan .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
--  Lisensi Aspose yang valid. Jika Anda tidak memilikinya, Anda bisa mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/).
+-  Pustaka Aspose.Words untuk .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+-  Lisensi Aspose yang valid. Jika Anda belum memilikinya, Anda bisa mendapatkannya[lisensi sementara](https://purchase.aspose.com/temporary-license/).
 - Visual Studio atau IDE lain yang mendukung pengembangan .NET.
-- Pemahaman dasar tentang kerangka C# dan .NET.
+- Pemahaman dasar tentang C# dan kerangka kerja .NET.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, mari impor namespace yang diperlukan dalam proyek C# Anda. Namespace ini penting untuk mengakses fungsionalitas Aspose.Words.
+Pertama-tama, mari impor namespace yang diperlukan dalam proyek C# Anda. Namespace ini penting untuk mengakses fungsionalitas Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -30,11 +30,11 @@ using Aspose.Words.Layout;
 using Aspose.Words.RevisionOptions;
 ```
 
-Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah diikuti.
+Mari kita uraikan prosesnya menjadi langkah-langkah yang sederhana dan mudah diikuti.
 
 ## Langkah 1: Muat Dokumen Anda
 
-Pertama, kita perlu memuat dokumen yang berisi revisi. Pastikan jalur dokumen Anda benar.
+Pertama, kita perlu memuat dokumen yang berisi revisi. Pastikan jalur dokumen Anda sudah benar.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -44,26 +44,26 @@ Document doc = new Document(dataDir + "Revisions.docx");
 
 ## Langkah 2: Konfigurasikan Opsi Revisi
 
-Selanjutnya, kita akan mengonfigurasi opsi revisi untuk menampilkan sisipan revisi sebaris dan penghapusan serta format revisi dalam balon. Hal ini memudahkan untuk membedakan berbagai jenis revisi.
+Selanjutnya, kita akan mengonfigurasi opsi revisi untuk menampilkan revisi sisipan sebaris dan revisi hapus dan format dalam balon. Ini memudahkan untuk membedakan antara berbagai jenis revisi.
 
 ```csharp
-// Render menyisipkan revisi sebaris, menghapus, dan memformat revisi dalam balon.
+// Render menyisipkan revisi sebaris, menghapus dan memformat revisi dalam balon.
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
 ```
 
-## Langkah 3: Tetapkan Posisi Batang Revisi
+## Langkah 3: Atur Posisi Bilah Revisi
 
-Agar dokumen lebih mudah dibaca, kita dapat mengatur posisi bilah revisi. Dalam contoh ini, kami akan menempatkannya di sisi kanan halaman.
+Agar dokumen lebih mudah dibaca, kita dapat mengatur posisi bilah revisi. Dalam contoh ini, kita akan menempatkannya di sisi kanan halaman.
 
 ```csharp
-// Merender bilah revisi di sisi kanan halaman.
+// Menampilkan bilah revisi di sisi kanan halaman.
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
 ```
 
 ## Langkah 4: Simpan Dokumen
 
-Terakhir, kami akan menyimpan dokumen sebagai PDF. Ini akan memungkinkan kita melihat revisi dalam format yang diinginkan.
+Terakhir, kita akan menyimpan dokumen tersebut sebagai PDF. Dengan demikian, kita dapat melihat revisi dalam format yang diinginkan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
@@ -71,21 +71,21 @@ doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 
 ## Kesimpulan
 
-Dan itu dia! Dengan mengikuti langkah-langkah sederhana ini, Anda dapat dengan mudah memperlihatkan revisi pada balon menggunakan Aspose.Words untuk .NET. Hal ini membuat peninjauan dan kolaborasi dokumen menjadi mudah, memastikan bahwa semua perubahan terlihat jelas dan terorganisir. Selamat membuat kode!
+Nah, itu dia! Dengan mengikuti langkah-langkah sederhana ini, Anda dapat dengan mudah menampilkan revisi dalam bentuk balon menggunakan Aspose.Words untuk .NET. Ini memudahkan peninjauan dan kolaborasi pada dokumen, memastikan bahwa semua perubahan terlihat jelas dan terorganisasi. Selamat membuat kode!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bisakah saya menyesuaikan warna bilah revisi?
 Ya, Aspose.Words memungkinkan Anda menyesuaikan warna bilah revisi agar sesuai dengan preferensi Anda.
 
-### Apakah mungkin untuk hanya menampilkan jenis revisi tertentu pada balon?
-Sangat. Anda dapat mengonfigurasi Aspose.Words untuk hanya menampilkan jenis revisi tertentu, seperti penghapusan atau perubahan format, dalam balon.
+### Apakah mungkin untuk hanya menampilkan jenis revisi tertentu dalam balon?
+Tentu saja. Anda dapat mengonfigurasi Aspose.Words untuk hanya menampilkan jenis revisi tertentu, seperti penghapusan atau perubahan format, dalam balon.
 
 ### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words?
- Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
+Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?
-Aspose.Words terutama dirancang untuk .NET, tetapi Anda dapat menggunakannya dengan bahasa apa pun yang didukung .NET, termasuk VB.NET dan C++/CLI.
+### Dapatkah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?
+Aspose.Words terutama dirancang untuk .NET, tetapi Anda dapat menggunakannya dengan bahasa apa pun yang mendukung .NET, termasuk VB.NET dan CBahasa Indonesia: ++/CLI.
 
 ### Apakah Aspose.Words mendukung format dokumen lain selain Word?
-Ya, Aspose.Words mendukung berbagai format dokumen, termasuk PDF, HTML, EPUB, dan lainnya.
+Ya, Aspose.Words mendukung berbagai format dokumen, termasuk PDF, HTML, EPUB, dan banyak lagi.

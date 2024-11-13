@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Steg 3: Använd DocumentBuilder
 
- De`DocumentBuilder` klass i Aspose.Words är ett kraftfullt verktyg som hjälper till att skapa dokument. Vi kommer att använda den för att infoga ett diagram i vårt dokument.
+De`DocumentBuilder` klass i Aspose.Words är ett kraftfullt verktyg som hjälper till att skapa dokument. Vi kommer att använda den för att infoga ett diagram i vårt dokument.
 
  Initiera en instans av`DocumentBuilder` klass och skickar vårt dokumentobjekt till dess konstruktor.
 

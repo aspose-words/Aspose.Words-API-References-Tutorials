@@ -1,6 +1,6 @@
 ---
-title: Mit Lesezeichen versehenen Inhalt im Word-Dokument ein- und ausblenden
-linktitle: Mit Lesezeichen versehenen Inhalt im Word-Dokument ein- und ausblenden
+title: Mit Lesezeichen versehenen Inhalt im Word-Dokument ein-/ausblenden
+linktitle: Mit Lesezeichen versehenen Inhalt im Word-Dokument ein-/ausblenden
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET mit Lesezeichen versehene Inhalte in Word-Dokumenten ein- und ausblenden.
 type: docs
@@ -90,7 +90,7 @@ public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool is
 
 -  Lesezeichen abrufen:`Bookmark bm = doc.Range.Bookmarks[bookmarkName];` holt das Lesezeichen.
 - Knotendurchquerung: Wir durchlaufen die Knoten innerhalb des Lesezeichens.
--  Sichtbarkeit umschalten: Wenn der Knoten ein`Run` (ein zusammenhängender Textabschnitt) setzen wir`Hidden` Eigentum.
+-  Sichtbarkeit umschalten: Wenn der Knoten ein`Run` (ein zusammenhängender Textabschnitt) setzen wir seine`Hidden` Eigentum.
 
 ## Schritt 4: Anwenden der Methode
 
@@ -130,5 +130,5 @@ Mit dieser Methode können Sie gezielt Textläufe umschalten. Für andere Inhalt
 ### Ist Aspose.Words für .NET kostenlos?
  Aspose.Words bietet eine kostenlose Testversion an[Hier](https://releases.aspose.com/) , aber für den produktiven Einsatz ist eine Volllizenz erforderlich. Sie können diese erwerben[Hier](https://purchase.aspose.com/buy).
 
-### Wie kann ich Unterstützung erhalten, wenn ich auf Probleme stoße?
+### Wie erhalte ich Unterstützung, wenn Probleme auftreten?
  Sie können Unterstützung von der Aspose-Community erhalten[Hier](https://forum.aspose.com/c/words/8).

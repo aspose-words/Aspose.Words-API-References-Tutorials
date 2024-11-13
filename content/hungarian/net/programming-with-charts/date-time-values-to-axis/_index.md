@@ -9,7 +9,7 @@ url: /hu/net/programming-with-charts/date-time-values-to-axis/
 ---
 ## Bevezetés
 
-diagramok dokumentumokban történő létrehozása hatékony módja lehet az adatok megjelenítésének. Az idősorok adatainak kezelésekor a dátum és az idő értékek hozzáadása a diagram tengelyéhez elengedhetetlen az egyértelműség érdekében. Ebben az oktatóanyagban végigvezetjük a dátum- és időértékek diagram tengelyéhez való hozzáadásának folyamatán az Aspose.Words for .NET segítségével. Ez a lépésenkénti útmutató segít a környezet beállításában, a kód megírásában és a folyamat egyes részeinek megértésében. Merüljünk el!
+diagramok dokumentumokban történő létrehozása hatékony módja lehet az adatok megjelenítésének. Az idősorok adatainak kezelésekor a dátum és az idő értékek hozzáadása a diagram tengelyéhez elengedhetetlen az egyértelműség érdekében. Ebben az oktatóanyagban végigvezetjük a dátum- és időértékek diagram tengelyéhez való hozzáadásának folyamatán az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató segít a környezet beállításában, a kód megírásában és a folyamat egyes részeinek megértésében. Merüljünk el!
 
 ## Előfeltételek
 
@@ -17,8 +17,8 @@ Mielőtt elkezdené, győződjön meg arról, hogy a következő előfeltételek
 
 1. Visual Studio vagy bármely .NET IDE: A .NET-kód írásához és futtatásához fejlesztői környezetre van szüksége.
 2.  Aspose.Words for .NET: Az Aspose.Words for .NET könyvtárnak telepítve kell lennie. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
-3. Alapvető C# ismeretek: Ez az oktatóanyag feltételezi, hogy rendelkezik alapvető ismeretekkel a C# programozásról.
-4.  Érvényes Aspose-licenc: Ideiglenes licencet szerezhet be[itt](https://purchase.aspose.com/temporary-license/).
+3. Alapvető C# ismeretek: Ez az oktatóanyag feltételezi, hogy rendelkezik a C# programozás alapvető ismereteivel.
+4.  Érvényes Aspose licenc: Ideiglenes licencet szerezhet be[itt](https://purchase.aspose.com/temporary-license/).
 
 ## Névterek importálása
 

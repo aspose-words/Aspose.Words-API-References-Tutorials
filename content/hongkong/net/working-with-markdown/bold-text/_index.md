@@ -52,7 +52,7 @@ builder.Writeln("This text will be Bold");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將 Word 文件中的文字設定為粗體。這個簡單而強大的功能只是 Aspose.Words 所能實現的功能的冰山一角。因此，請繼續嘗試和探索，以釋放文件自動化任務的全部潛力。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將 Word 文件中的文字設定為粗體。這個簡單而強大的功能只是 Aspose.Words 所能實現的功能的冰山一角。因此，請繼續嘗試和探索，以釋放文件自動化任務的全部潛力。
 
 ## 常見問題解答
 

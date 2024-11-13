@@ -59,7 +59,7 @@ doc.WriteProtection.SetPassword("MyPassword");
 
 Förklaring:
 
--  De`SetPassword` metod kallas på`WriteProtection` handlingens egendom.
+- De`SetPassword` metod kallas på`WriteProtection` handlingens egendom.
 - Vi tillhandahåller ett lösenord ("MyPassword" i detta fall) som kommer att krävas för att ta bort skyddet.
 
 ## Steg 3: Aktivera skrivskyddad rekommendation
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Förklaring:
 
--  De`ReadOnlyRecommended` egenskapen är inställd på`true`.
+- De`ReadOnlyRecommended` egenskapen är inställd på`true`.
 - Detta kommer att uppmana användarna att öppna dokumentet i skrivskyddat läge, även om de kan välja att ignorera rekommendationen.
 
 ## Steg 4: Använd skrivskydd
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Förklaring:
 
--  De`Protect` metod anropas på dokumentet med`ProtectionType.ReadOnly` som argument.
+- De`Protect` metod anropas på dokumentet med`ProtectionType.ReadOnly` som argument.
 - Den här metoden upprätthåller skrivskyddet och förhindrar eventuella ändringar av dokumentet utan lösenord.
 
 ## Steg 5: Spara dokumentet
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Förklaring:
 
--  De`Save` metod anropas på dokumentet och anger sökvägen och namnet på filen.
+- De`Save` metod anropas på dokumentet och anger sökvägen och namnet på filen.
 - Dokumentet sparas med skrivskyddet på plats.
 
 ## Slutsats

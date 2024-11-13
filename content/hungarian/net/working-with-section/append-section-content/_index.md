@@ -88,7 +88,7 @@ Section sectionToAppend = doc.Sections[1];
 section.AppendContent(sectionToAppend);
 ```
 
-Ebben a lépésben elérjük a második szakaszt, és hozzáfűzzük annak tartalmát a harmadik szakaszhoz. Most a harmadik rész tartalmazza mind az első, mind a második rész tartalmát.
+Ebben a lépésben elérjük a második részt, és hozzáfűzzük annak tartalmát a harmadik részhez. Most a harmadik rész tartalmazza mind az első, mind a második rész tartalmát.
 
 ## 6. lépés: A dokumentum mentése
 
@@ -98,7 +98,7 @@ A szakaszok manipulálása után ideje elmenteni dokumentumunkat.
 doc.Save("output.docx");
 ```
 
-Itt mentjük a dokumentumot "output.docx" néven. A módosítások megtekintéséhez megnyithatja ezt a fájlt a Microsoft Word alkalmazásban.
+Itt elmentjük a dokumentumot "output.docx" néven. A módosítások megtekintéséhez megnyithatja ezt a fájlt a Microsoft Word alkalmazásban.
 
 ## Következtetés
 

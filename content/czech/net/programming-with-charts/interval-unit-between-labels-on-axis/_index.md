@@ -89,7 +89,7 @@ Aspose.Words for .NET je knihovna pro zpracování dokumentů, která umožňuje
  Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Jak získám podporu pro Aspose.Words for .NET?
- Pro podporu a komunitní diskuse navštivte[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Pro podporu a komunitní diskuze navštivte[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Kde si mohu zakoupit licenci pro Aspose.Words pro .NET?
  Můžete si zakoupit licenci[zde](https://purchase.aspose.com/buy).

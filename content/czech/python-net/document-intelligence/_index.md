@@ -18,7 +18,7 @@ V těchto výukových programech vývojáři prozkoumají sílu Python Document 
 
 Výukové programy se zaměřují na vylepšení pracovních postupů zpracování dokumentů pomocí Document Intelligence. Vývojáři získají přehled o analýze sentimentu, extrakci klíčových slov a klasifikaci dokumentů. Začleněním AI řízené Document Intelligence mohou vývojáři zjednodušit úlohy zpracování textu a dokumentů a zlepšit produktivitu a rozhodování.
 
-## Vylepšete svou správu dokumentů
+## Zdokonalte svou správu dokumentů
 
 Zvládnutím Document Intelligence pomocí Aspose.Words pro Python mohou vývojáři posílit své možnosti správy dokumentů. Výukové programy poskytují podrobné pokyny, ukázky kódu a praktické příklady, které vývojářům umožňují využít potenciál Document Intelligence pro chytřejší zpracování a správu dokumentů na základě dat. Přijměte tyto výukové programy a přeměňte své dokumenty na cenná aktiva pro vaši firmu.
 

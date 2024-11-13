@@ -9,7 +9,7 @@ url: /de/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## Einführung
 
-Wenn Sie Ihre Fähigkeiten zur Dokumentenautomatisierung verbessern möchten, erwartet Sie hier ein Leckerbissen. Dieses Tutorial führt Sie durch den Prozess des Lesezeichensetzens von Tabellenspalten in einem Word-Dokument mit Aspose.Words für .NET. Bereit, loszulegen? Dann legen wir los!
+Wenn Sie Ihre Fähigkeiten zur Dokumentenautomatisierung verbessern möchten, erwartet Sie hier eine Freude. Dieses Tutorial führt Sie durch den Prozess des Lesezeichensetzens von Tabellenspalten in einem Word-Dokument mit Aspose.Words für .NET. Bereit, loszulegen? Dann legen wir los!
 
 ## Voraussetzungen
 
@@ -91,7 +91,7 @@ builder.EndBookmark("MyBookmark");
 
 ## Schritt 7: Lesezeichen durchlaufen und Informationen anzeigen
 
-Zum Abschluss durchlaufen Sie die Lesezeichen im Dokument und zeigen zu jedem Lesezeichen Informationen an.
+Zum Abschluss durchlaufen Sie die Lesezeichen im Dokument und zeigen zu jedem einzelne Informationen an.
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -120,7 +120,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die programmgest
 ### Kann ich Aspose.Words für .NET mit anderen Programmiersprachen verwenden?
 Ja, Aspose.Words für .NET kann mit jeder .NET-unterstützten Sprache verwendet werden, einschließlich C#, VB.NET und F#.
 
-### Wie erhalte ich Support für Aspose.Words für .NET?
+### Wie kann ich Support für Aspose.Words für .NET erhalten?
  Sie können Unterstützung von der Aspose-Community und Experten erhalten, indem Sie die[Support-Forum](https://forum.aspose.com/c/words/8).
 
 ### Gibt es eine Testversion von Aspose.Words für .NET?

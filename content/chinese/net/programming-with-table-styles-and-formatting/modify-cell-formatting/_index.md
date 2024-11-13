@@ -83,7 +83,7 @@ firstCell.CellFormat.Width = 30;
 firstCell.CellFormat.Orientation = TextOrientation.Downward;
 ```
 
-通过设置`Orientation`财产`TextOrientation.Downward`，我们将单元格内的文本旋转为朝下。这对于创建独特的表格标题或旁注很有用。
+通过设置`Orientation`财产`TextOrientation.Downward`，我们将单元格内的文本旋转为朝下。这对于创建独特的表格标题或边注很有用。
 
 ## 步骤 6：应用单元格阴影
 
@@ -111,7 +111,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 当然可以！只需单独访问每个单元格并设置其阴影即可。
 
 ### 我可以将 Aspose.Words for .NET 与其他编程语言一起使用吗？
-Aspose.Words for .NET 是为 C# 等 .NET 语言设计的，但也有适用于其他平台的版本。
+Aspose.Words for .NET 是专为 C# 等 .NET 语言设计的，但也有适用于其他平台的版本。
 
 ### 在哪里可以找到更详细的文档？
 您可以找到完整的文档[这里](https://reference.aspose.com/words/net/).

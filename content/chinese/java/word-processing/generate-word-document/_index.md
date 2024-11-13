@@ -14,7 +14,7 @@ url: /zh/java/word-processing/generate-word-document/
 
 ## 1.什么是 Aspose.Words for Java？
 
-Aspose.Words for Java 是一个 Java 库，它使开发人员能够创建、修改和转换 Word 文档，而无需 Microsoft Word。它提供了广泛的功能，包括文本操作、文档格式、表格管理等等。
+Aspose.Words for Java 是一个 Java 库，它使开发人员能够创建、修改和转换 Word 文档，而无需 Microsoft Word。它提供了广泛的功能，包括文本操作、文档格式化、表格管理等等。
 
 ## 2.设置 Java 开发环境
 

@@ -2,27 +2,27 @@
 title: Definir formatação condicional
 linktitle: Definir formatação condicional
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como definir a formatação condicional em documentos do Word usando Aspose.Words for .NET. Melhore o apelo visual e a legibilidade do seu documento com nosso guia.
+description: Aprenda a definir formatação condicional em documentos do Word usando o Aspose.Words para .NET. Melhore o apelo visual e a legibilidade do seu documento com nosso guia.
 type: docs
 weight: 10
 url: /pt/net/programming-with-table-styles-and-formatting/define-conditional-formatting/
 ---
 ## Introdução
 
-A formatação condicional permite aplicar formatação específica às células de uma tabela com base em determinados critérios. Esse recurso é extremamente útil para enfatizar informações importantes, tornando seus documentos mais legíveis e visualmente atraentes. Orientaremos você no processo passo a passo, garantindo que você possa implementar esse recurso sem esforço.
+A formatação condicional permite que você aplique formatação específica a células em uma tabela com base em certos critérios. Esse recurso é incrivelmente útil para enfatizar informações importantes, tornando seus documentos mais legíveis e visualmente atraentes. Nós o guiaremos pelo processo passo a passo, garantindo que você possa implementar esse recurso sem esforço.
 
 ## Pré-requisitos
 
-Antes de começarmos, certifique-se de ter o seguinte:
+Antes de começar, certifique-se de ter o seguinte:
 
-1. Aspose.Words for .NET: Você precisa da biblioteca Aspose.Words for .NET. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
-2. Ambiente de desenvolvimento: um ambiente de desenvolvimento adequado como o Visual Studio.
-3. Conhecimento básico de C#: Familiaridade com programação C# será útil.
-4. Documento do Word: um documento do Word onde você deseja aplicar formatação condicional.
+1. Aspose.Words para .NET: Você precisa da biblioteca Aspose.Words para .NET. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: Um ambiente de desenvolvimento adequado, como o Visual Studio.
+3. Conhecimento básico de C#: familiaridade com programação em C# será útil.
+4. Documento do Word: um documento do Word ao qual você deseja aplicar formatação condicional.
 
 ## Importar namespaces
 
-Para começar, você precisa importar os namespaces necessários para o seu projeto. Esses namespaces fornecem as classes e os métodos necessários para trabalhar com documentos do Word.
+Para começar, você precisa importar os namespaces necessários no seu projeto. Esses namespaces fornecem as classes e métodos necessários para trabalhar com documentos do Word.
 
 ```csharp
 using System;
@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Vamos dividir o processo em várias etapas para facilitar o acompanhamento.
+Vamos dividir o processo em várias etapas para torná-lo mais fácil de seguir.
 
 ## Etapa 1: configure seu diretório de documentos
 
@@ -42,18 +42,18 @@ Primeiro, defina o caminho para o diretório do seu documento. É aqui que seu d
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Etapa 2: crie um novo documento
+## Etapa 2: Crie um novo documento
 
-A seguir, crie um novo documento e um objeto DocumentBuilder. A classe DocumentBuilder permite criar e modificar documentos do Word.
+Em seguida, crie um novo documento e um objeto DocumentBuilder. A classe DocumentBuilder permite que você crie e modifique documentos do Word.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Etapa 3: iniciar uma mesa
+## Etapa 3: Iniciar uma tabela
 
-Agora, inicie uma tabela usando o DocumentBuilder. Insira a primeira linha com duas células, “Nome” e “Valor”.
+Agora, inicie uma tabela usando o DocumentBuilder. Insira a primeira linha com duas células, "Nome" e "Valor".
 
 ```csharp
 Table table = builder.StartTable();
@@ -64,9 +64,9 @@ builder.Write("Value");
 builder.EndRow();
 ```
 
-## Etapa 4: adicionar mais linhas
+## Etapa 4: Adicionar mais linhas
 
-Insira linhas adicionais em sua tabela. Para simplificar, adicionaremos mais uma linha com células vazias.
+Insira linhas adicionais na sua tabela. Para simplificar, adicionaremos mais uma linha com células vazias.
 
 ```csharp
 builder.InsertCell();
@@ -74,7 +74,7 @@ builder.InsertCell();
 builder.EndTable();
 ```
 
-## Etapa 5: definir um estilo de tabela
+## Etapa 5: Defina um estilo de tabela
 
 Crie um novo estilo de tabela e defina a formatação condicional para a primeira linha. Aqui, definiremos a cor de fundo da primeira linha como VerdeAmarelo.
 
@@ -84,17 +84,17 @@ tableStyle.ConditionalStyles.FirstRow.Shading.BackgroundPatternColor = Color.Gre
 tableStyle.ConditionalStyles.FirstRow.Shading.Texture = TextureIndex.TextureNone;
 ```
 
-## Etapa 6: aplicar o estilo à tabela
+## Etapa 6: aplique o estilo à tabela
 
-Aplique o estilo recém-criado à sua mesa.
+Aplique o estilo recém-criado à sua tabela.
 
 ```csharp
 table.Style = tableStyle;
 ```
 
-## Etapa 7: salve o documento
+## Etapa 7: Salve o documento
 
-Finalmente, salve o documento no diretório especificado.
+Por fim, salve o documento no diretório especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatting.docx");
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 
 ## Conclusão
 
-E aí está! Você definiu com êxito a formatação condicional em um documento do Word usando Aspose.Words for .NET. Seguindo essas etapas, você pode destacar facilmente dados importantes em suas tabelas, tornando seus documentos mais informativos e visualmente atraentes. A formatação condicional é uma ferramenta poderosa e dominá-la pode aprimorar significativamente suas capacidades de processamento de documentos.
+E aí está! Você definiu com sucesso a formatação condicional em um documento do Word usando o Aspose.Words para .NET. Seguindo essas etapas, você pode destacar facilmente dados importantes em suas tabelas, tornando seus documentos mais informativos e visualmente atraentes. A formatação condicional é uma ferramenta poderosa, e dominá-la pode melhorar significativamente suas capacidades de processamento de documentos.
 
 ## Perguntas frequentes
 
@@ -110,13 +110,13 @@ E aí está! Você definiu com êxito a formatação condicional em um documento
 Sim, você pode definir vários formatos condicionais para diferentes partes da tabela, como cabeçalho, rodapé ou até mesmo células específicas.
 
 ### É possível alterar a cor do texto usando formatação condicional?
-Absolutamente! Você pode personalizar vários aspectos de formatação, incluindo cor do texto, estilo da fonte e muito mais.
+Absolutamente! Você pode personalizar vários aspectos de formatação, incluindo cor do texto, estilo de fonte e mais.
 
 ### Posso usar formatação condicional para tabelas existentes em um documento do Word?
 Sim, você pode aplicar formatação condicional a qualquer tabela, seja ela recém-criada ou já existente no documento.
 
-### O Aspose.Words for .NET oferece suporte à formatação condicional para outros elementos do documento?
-Embora este tutorial se concentre em tabelas, o Aspose.Words for .NET oferece amplas opções de formatação para vários elementos do documento.
+### O Aspose.Words para .NET oferece suporte à formatação condicional para outros elementos do documento?
+Embora este tutorial se concentre em tabelas, o Aspose.Words para .NET oferece amplas opções de formatação para vários elementos do documento.
 
 ### Posso automatizar a formatação condicional para documentos grandes?
-Sim, você pode automatizar o processo usando loops e condições em seu código, tornando-o eficiente para documentos grandes.
+Sim, você pode automatizar o processo usando loops e condições no seu código, tornando-o eficiente para documentos grandes.

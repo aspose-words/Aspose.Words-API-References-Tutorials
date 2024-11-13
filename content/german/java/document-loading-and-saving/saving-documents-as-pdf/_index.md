@@ -33,7 +33,7 @@ doc.save("output.pdf", saveOptions);
 
 ## Steuern der PDF-Speicheroptionen
 
- Sie können verschiedene PDF-Speicheroptionen steuern über die`PdfSaveOptions` Klasse. Sie können den Anzeigetitel für das PDF-Dokument beispielsweise wie folgt festlegen:
+ Sie können verschiedene PDF-Speicheroptionen steuern über die`PdfSaveOptions` Klasse. Beispielsweise können Sie den Anzeigetitel für das PDF-Dokument wie folgt festlegen:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();

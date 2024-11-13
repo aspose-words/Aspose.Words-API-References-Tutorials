@@ -49,7 +49,7 @@ This code snippet sets up a new Word document where we’ll be adding our ASK fi
 In a Word document, content is organized into nodes. We need to access the first paragraph node where we’ll insert our ASK field:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 This line of code retrieves the first paragraph in the document, ready for our ASK field insertion.

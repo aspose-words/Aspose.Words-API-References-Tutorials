@@ -1,14 +1,14 @@
 ---
 title: Dokumentstruktur und Inhaltsbearbeitung
 linktitle: Dokumentstruktur und Inhaltsbearbeitung
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Entdecken Sie Aspose.Words-Tutorials für Python und .NET mit Schwerpunkt auf Dokumentstruktur und Inhaltsbearbeitung. Erfahren Sie, wie Sie Dokumentelemente effizient navigieren, extrahieren und ändern. Quellcodebeispiele werden bereitgestellt.
 type: docs
 weight: 10
 url: /de/python-net/document-structure-and-content-manipulation/
 ---
 
-## Einführung in die Dokumentstruktur und Inhaltsbearbeitung in Aspose.Words-Tutorials
+## Einführung in die Dokumentstruktur und Inhaltsmanipulation in Aspose.Words-Tutorials
 
 Willkommen zu den umfassenden Aspose.Words-Tutorials zur Dokumentstruktur und Inhaltsbearbeitung! Diese Tutorial-Reihe soll Entwicklern, die Python und .NET verwenden, die erforderlichen Fähigkeiten und Kenntnisse vermitteln, um die Struktur und den Inhalt von Dokumenten zu bearbeiten. Egal, ob Sie mit einfachen Briefen, komplexen Berichten oder umfangreichen Manuskripten arbeiten, die Beherrschung der Dokumentbearbeitung ist für die Automatisierung von Aufgaben und die Gewährleistung der Konsistenz unerlässlich.
 
@@ -25,7 +25,7 @@ In dieser Tutorialreihe werden Sie tiefer in die Feinheiten der Dokumentstruktur
 - Inhalt ändern: Erfahren Sie, wie Sie Text ändern, neue Elemente einfügen und unerwünschten Inhalt entfernen.
 - Arbeiten mit Stilen: Erlernen Sie Techniken zum Anwenden und Anpassen von Stilen, um die gewünschte Dokumentformatierung zu erreichen.
 - Bilder und Medien: Erfahren Sie, wie Sie Bilder und andere Medien in Dokumenten einfügen, ersetzen und bearbeiten.
-- Tabellenmanipulation: Erfahren Sie, wie Sie Tabellen erstellen, bearbeiten und formatieren, um Informationen effektiv zu organisieren.
+- Tabellenbearbeitung: Erfahren Sie, wie Sie Tabellen erstellen, bearbeiten und formatieren, um Informationen effektiv zu organisieren.
 - Zusammenführen von Dokumenten: Erkunden Sie Strategien zum Zusammenführen mehrerer Dokumente zu einem schlüssigen Ganzen.
 - Dokumentkonvertierung: Erfahren Sie, wie Sie Dokumente in verschiedene Formate wie PDF oder HTML konvertieren.
 

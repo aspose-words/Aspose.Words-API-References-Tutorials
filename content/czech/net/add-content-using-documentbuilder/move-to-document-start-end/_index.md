@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Zde vytváříme instanci`Document`a`DocumentBuilder` . Myslete na to`Document` jako váš prázdný dokument aplikace Word a`DocumentBuilder` jako vaše pero.
+ Zde vytváříme instanci`Document` a`DocumentBuilder` . Myslete na to`Document` jako váš prázdný dokument aplikace Word a`DocumentBuilder` jako vaše pero.
 
 ## Krok 2: Přejděte na Start dokumentu
 
@@ -63,7 +63,7 @@ builder.MoveToDocumentEnd();
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-`MoveToDocumentEnd()` umístí kurzor na úplný konec, abyste mohli přidat další obsah. Snadno peasy!
+`MoveToDocumentEnd()` umístí kurzor na úplný konec, abyste mohli přidat další obsah. Snadno!
 
 ## Závěr
 

@@ -63,7 +63,7 @@ for (String fileName : listFiles) {
         case LoadFormat.DOC:
             System.out.println("\tMicrosoft Word 97-2003 document.");
             break;
-        // Podle potřeby přidejte pouzdra pro další formáty dokumentů
+        // Podle potřeby přidejte pouzdra pro jiné formáty dokumentů
     }
 
     // Zpracovávat šifrované dokumenty
@@ -189,7 +189,7 @@ Určení formátů dokumentů v Aspose.Words pro Java je nezbytné pro efektivn�
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Aspose.Words for Java si můžete stáhnout z[zde](https://releases.aspose.com/words/java/) a postupujte podle dodaných pokynů k instalaci.
+ Aspose.Words for Java si můžete stáhnout z[zde](https://releases.aspose.com/words/java/) postupujte podle dodaných pokynů k instalaci.
 
 ### Jaké jsou podporované formáty dokumentů?
 

@@ -24,6 +24,5 @@ Aspose.Words for .NET 教學課程將引導您了解在 Word 文件中使用書�
 | [在 Word 文件中附加添加書籤的文本](./append-bookmarked-text/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中附加書籤文字。非常適合開發人員。 |
 | [在Word文檔中建立書籤](./create-bookmark/) | 透過這份詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中建立書籤。非常適合文件導航和組織。 |
 | [在 Word 文件中顯示隱藏書籤內容](./show-hide-bookmarked-content/) | 透過這份詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中顯示和隱藏新增書籤的內容。 |
-| [解開Word文檔中的行書籤](./untangle-row-bookmarks/) | 使用 Aspose.Words for .NET 輕鬆理清 Word 文件中纏結的行書籤。本指南將引導您完成更乾淨、更安全的書籤管理流程。 |
 | [解開Word文件中的纏結](./untangle/) | 透過我們詳細的逐步指南，掌握使用 Aspose.Words for .NET 理清 Word 文件中的書籤的方法。非常適合 .NET 開發人員。 |
 | [在Word文件中按書籤刪除行](./delete-row-by-bookmark/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中按書籤刪除行。按照我們的逐步指南進行高效率的文件管理。 |

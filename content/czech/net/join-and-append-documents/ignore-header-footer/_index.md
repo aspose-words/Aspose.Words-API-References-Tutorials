@@ -125,4 +125,4 @@ Ano, Aspose.Words poskytuje různé možnosti přizpůsobení procesu importu, v
 
 ### Kde najdu další příklady a dokumentaci pro Aspose.Words pro .NET?
 
- Komplexní dokumentaci a příklady naleznete na[Aspose webové stránky](https://reference.aspose.com/words/net/).
+ Kompletní dokumentaci a příklady naleznete na[Aspose webové stránky](https://reference.aspose.com/words/net/).

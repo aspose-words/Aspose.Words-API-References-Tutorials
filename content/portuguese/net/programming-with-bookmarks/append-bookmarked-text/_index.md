@@ -1,28 +1,28 @@
 ---
-title: Anexar texto marcado em documento do Word
-linktitle: Anexar texto marcado em documento do Word
+title: Adicionar texto marcado em documento do Word
+linktitle: Adicionar texto marcado em documento do Word
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como anexar texto marcado em um documento do Word usando Aspose.Words for .NET com este guia passo a passo. Perfeito para desenvolvedores.
+description: Aprenda como anexar texto marcado em um documento do Word usando Aspose.Words para .NET com este guia passo a passo. Perfeito para desenvolvedores.
 type: docs
 weight: 10
 url: /pt/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 ## Introdução
 
-Ei! Você já tentou anexar texto de uma seção marcada em um documento do Word e achou complicado? Você está com sorte! Este tutorial irá guiá-lo através do processo usando Aspose.Words for .NET. Vamos dividi-lo em etapas simples para que você possa acompanhar facilmente. Vamos mergulhar e adicionar aquele texto marcado como um profissional!
+Olá! Já tentou anexar texto de uma seção marcada em um documento do Word e achou complicado? Você está com sorte! Este tutorial o guiará pelo processo usando o Aspose.Words para .NET. Vamos dividi-lo em etapas simples para que você possa acompanhar facilmente. Vamos mergulhar e anexar esse texto marcado como um profissional!
 
 ## Pré-requisitos
 
-Antes de começarmos, vamos ter certeza de que você tem tudo o que precisa:
+Antes de começar, vamos garantir que você tenha tudo o que precisa:
 
--  Aspose.Words for .NET: Certifique-se de tê-lo instalado. Se não, você pode[baixe aqui](https://releases.aspose.com/words/net/).
-- Ambiente de desenvolvimento: qualquer ambiente de desenvolvimento .NET como Visual Studio.
-- Conhecimento básico de C#: Compreender os conceitos básicos de programação em C# ajudará.
-- Documento do Word com marcadores: um documento do Word com marcadores configurados, que usaremos para anexar texto.
+-  Aspose.Words para .NET: Certifique-se de que você o tenha instalado. Se não, você pode[baixe aqui](https://releases.aspose.com/words/net/).
+- Ambiente de desenvolvimento: qualquer ambiente de desenvolvimento .NET, como o Visual Studio.
+- Conhecimento básico de C#: entender os conceitos básicos de programação em C# ajudará.
+- Documento do Word com marcadores: Um documento do Word com marcadores configurados, que usaremos para anexar texto.
 
 ## Importar namespaces
 
-Primeiramente, vamos importar os namespaces necessários. Isso garantirá que tenhamos todas as ferramentas de que precisamos ao nosso alcance.
+Primeiro, vamos importar os namespaces necessários. Isso garantirá que tenhamos todas as ferramentas que precisamos na ponta dos dedos.
 
 ```csharp
 using System;
@@ -32,9 +32,9 @@ using Aspose.Words.Importing;
 
 Vamos dividir o exemplo em etapas detalhadas.
 
-## Etapa 1: carregar o documento e inicializar as variáveis
+## Etapa 1: Carregue o documento e inicialize as variáveis
 
-Tudo bem, vamos começar carregando nosso documento Word e inicializando as variáveis que precisaremos.
+Tudo bem, vamos começar carregando nosso documento do Word e inicializando as variáveis que precisaremos.
 
 ```csharp
 // Carregue os documentos de origem e destino.
@@ -48,9 +48,9 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
 ```
 
-## Etapa 2: identificar os parágrafos iniciais e finais
+## Etapa 2: Identifique os parágrafos inicial e final
 
-Agora, vamos localizar os parágrafos onde o marcador começa e termina. Isto é crucial porque precisamos lidar com o texto dentro desses limites.
+Agora, vamos localizar os parágrafos onde o marcador começa e termina. Isso é crucial, pois precisamos lidar com o texto dentro desses limites.
 
 ```csharp
 // Este é o parágrafo que contém o início do marcador.
@@ -63,34 +63,34 @@ if (startPara == null || endPara == null)
     throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## Etapa 3: validar os pais do parágrafo
+## Etapa 3: Validar os pais do parágrafo
 
-Precisamos garantir que os parágrafos inicial e final tenham o mesmo pai. Este é um cenário simples para manter as coisas simples.
+Precisamos garantir que os parágrafos inicial e final tenham o mesmo pai. Este é um cenário simples para manter as coisas diretas.
 
 ```csharp
-// Limitamo-nos a um cenário razoavelmente simples.
+// Vamos nos limitar a um cenário razoavelmente simples.
 if (startPara.ParentNode != endPara.ParentNode)
     throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
 ## Etapa 4: Identifique o nó a ser interrompido
 
-A seguir, precisamos determinar o nó onde pararemos de copiar o texto. Este será o nó imediatamente após o parágrafo final.
+Em seguida, precisamos determinar o nó onde pararemos de copiar o texto. Este será o nó imediatamente após o parágrafo final.
 
 ```csharp
 // Queremos copiar todos os parágrafos desde o parágrafo inicial até (e incluindo) o parágrafo final,
-// portanto, o nó no qual paramos é aquele após o parágrafo final.
+// portanto, o nó em que paramos é aquele após o parágrafo final.
 Node endNode = endPara.NextSibling;
 ```
 
-## Etapa 5: anexar texto marcado ao documento de destino
+## Etapa 5: Anexar texto marcado ao documento de destino
 
-Finalmente, vamos percorrer os nós do parágrafo inicial até o nó após o parágrafo final e anexá-los ao documento de destino.
+Por fim, vamos percorrer os nós do parágrafo inicial até o nó após o parágrafo final e anexá-los ao documento de destino.
 
 ```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-    // Isso cria uma cópia do nó atual e o importa (torna-o válido) no contexto
+    // Isso cria uma cópia do nó atual e o importa (o torna válido) no contexto
     // do documento de destino. Importar significa ajustar estilos e identificadores de lista corretamente.
     Node newNode = importer.ImportNode(curNode, true);
 
@@ -104,21 +104,21 @@ dstDoc.Save("appended_document.docx");
 
 ## Conclusão
 
-E aí está! Você anexou com êxito o texto de uma seção marcada em um documento do Word usando Aspose.Words for .NET. Essa ferramenta poderosa facilita muito a manipulação de documentos e agora você tem mais um truque na manga. Boa codificação!
+E aí está! Você anexou com sucesso o texto de uma seção marcada em um documento do Word usando o Aspose.Words para .NET. Esta ferramenta poderosa torna a manipulação de documentos uma moleza, e agora você tem mais um truque na manga. Boa codificação!
 
 ## Perguntas frequentes
 
-### Posso anexar texto de vários marcadores de uma só vez?
-Sim, você pode repetir o processo para cada marcador e anexar o texto de acordo.
+### Posso anexar texto de vários favoritos de uma só vez?
+Sim, você pode repetir o processo para cada marcador e acrescentar o texto adequadamente.
 
 ### E se os parágrafos inicial e final tiverem pais diferentes?
-exemplo atual pressupõe que eles tenham o mesmo pai. Para pais diferentes, é necessário um tratamento mais complexo.
+exemplo atual assume que eles têm o mesmo pai. Para pais diferentes, um tratamento mais complexo é necessário.
 
 ### Posso manter a formatação original do texto anexado?
  Absolutamente! O`ImportFormatMode.KeepSourceFormatting` garante que a formatação original seja preservada.
 
-### É possível acrescentar texto a uma posição específica no documento de destino?
+### É possível anexar texto a uma posição específica no documento de destino?
 Sim, você pode anexar o texto a qualquer posição navegando até o nó desejado no documento de destino.
 
-### E se eu precisar anexar texto de um marcador a uma nova seção?
+### E se eu precisar anexar texto de um favorito a uma nova seção?
 Você pode criar uma nova seção no documento de destino e anexar o texto lá.

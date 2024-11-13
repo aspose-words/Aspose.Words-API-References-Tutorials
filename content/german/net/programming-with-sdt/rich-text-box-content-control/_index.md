@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 using System.Drawing;
 ```
 
-Lassen Sie uns nun den Vorgang zum Hinzufügen eines Rich-Text-Box-Inhaltssteuerelements zu Ihrem Word-Dokument im Detail betrachten.
+Lassen Sie uns nun den Vorgang zum Hinzufügen eines Rich-Text-Box-Inhaltssteuerelements zu Ihrem Word-Dokument aufschlüsseln.
 
 ## Schritt 1: Definieren Sie den Pfad zu Ihrem Dokumentverzeichnis
 
@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Neues Dokument erstellen
 
- Erstellen Sie ein neues`Document` Objekt, das als Grundlage für Ihr Word-Dokument dient.
+Erstellen Sie ein neues`Document` Objekt, das als Grundlage für Ihr Word-Dokument dient.
 
 ```csharp
 Document doc = new Document();

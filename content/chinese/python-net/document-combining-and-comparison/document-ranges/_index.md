@@ -150,12 +150,12 @@ pip install aspose-words
 
 ### 是否可以使用 Aspose.Words for Python 合并多个文档？
 
-当然。利用`append_document`无缝合并多个文档的方法。
+当然可以。利用`append_document`无缝合并多个文档的方法。
 
 ### 如何在文档部分中分别处理页眉和页脚？
 
 您可以使用 Aspose.Words for Python 提供的适当方法单独导航到每个部分的页眉和页脚。
 
-### 我可以在哪里访问 Aspose.Words for Python 文档？
+### 在哪里可以访问 Aspose.Words for Python 文档？
 
 如需详细文档和参考资料，请访问[这里](https://reference.aspose.com/words/python-net/).

@@ -66,47 +66,6 @@ builder.ParagraphFormat.StyleName = "Heading 3";
 builder.Writeln("Details");
 ```
 
-## अधिक अनुकूलन जोड़ना
-
-### फ़ॉन्ट और पैराग्राफ़ को अनुकूलित करना
-
-आप अपनी ज़रूरतों के हिसाब से फ़ॉन्ट और पैराग्राफ़ सेटिंग को और भी कस्टमाइज़ कर सकते हैं। उदाहरण के लिए, फ़ॉन्ट का आकार, रंग और संरेखण बदलना।
-
-```csharp
-builder.Font.Size = 14;
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.Writeln("Centered Blue Heading");
-```
-
-### विषय-सूची सम्मिलित करना
-
-एक अच्छी तरह से संरचित दस्तावेज़ में अक्सर विषय-सूची शामिल होती है। यहाँ बताया गया है कि आप .NET के लिए Aspose.Words का उपयोग करके इसे कैसे सम्मिलित कर सकते हैं।
-
-```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-doc.UpdateFields();
-```
-
-### छवियाँ जोड़ना
-
-छवियाँ आपके दस्तावेज़ को और अधिक आकर्षक बना सकती हैं। आइए अपने दस्तावेज़ में एक छवि जोड़ें।
-
-```csharp
-builder.InsertImage("YOUR DOCUMENT DIRECTORY/image.png");
-```
-
-### दस्तावेज़ अनुभागों का उपयोग करना
-
-अनुभाग सामग्री को व्यवस्थित करने में मदद करते हैं, खासकर जब आपको दस्तावेज़ के विभिन्न भागों के लिए अलग-अलग स्वरूपण की आवश्यकता होती है।
-
-```csharp
-Section section = doc.Sections.Add();
-DocumentBuilder sectionBuilder = new DocumentBuilder(section);
-sectionBuilder.ParagraphFormat.StyleName = "Heading 1";
-sectionBuilder.Writeln("New Section Heading");
-```
-
 ## निष्कर्ष
 
 एक अच्छी तरह से प्रारूपित दस्तावेज़ बनाना केवल सौंदर्य के बारे में नहीं है; यह पठनीयता और व्यावसायिकता को भी बढ़ाता है। .NET के लिए Aspose.Words के साथ, आपके पास इसे आसानी से प्राप्त करने के लिए एक शक्तिशाली उपकरण है। इस गाइड का पालन करें, विभिन्न सेटिंग्स के साथ प्रयोग करें, और जल्द ही आप दस्तावेज़ स्वरूपण में एक पेशेवर बन जाएंगे!

@@ -80,7 +80,7 @@ doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將複選框類型內容控制項新增至您的 Word 文件。此功能對於建立互動式且使用者友好的文件非常有用。無論您是建立表單、調查還是任何需要使用者輸入的文檔，複選框都是增強可用性的好方法。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將複選框類型內容控制項新增至您的 Word 文件。此功能對於建立互動式且使用者友好的文件非常有用。無論您是建立表單、調查還是任何需要使用者輸入的文檔，複選框都是增強可用性的好方法。
 
 如果您有任何疑問或需要進一步協助，請隨時查看[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或訪問[Aspose 支援論壇](https://forum.aspose.com/c/words/8).
 

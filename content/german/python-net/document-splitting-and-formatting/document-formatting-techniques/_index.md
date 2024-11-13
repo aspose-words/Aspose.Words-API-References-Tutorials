@@ -1,7 +1,7 @@
 ---
 title: Beherrschen von Dokumentformatierungstechniken für visuelle Wirkung
 linktitle: Beherrschen von Dokumentformatierungstechniken für visuelle Wirkung
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie die Dokumentformatierung mit Aspose.Words für Python meistern. Erstellen Sie optisch ansprechende Dokumente mit Schriftarten, Tabellen, Bildern und mehr. Schritt-für-Schritt-Anleitung mit Codebeispielen.
 type: docs
 weight: 14
@@ -37,7 +37,7 @@ doc.save("basic_document.docx")
 
 ## Anwenden von Schriftstilen und -größen
 
-Verbessern Sie die Lesbarkeit und visuelle Attraktivität Ihres Dokuments, indem Sie Schriftstile und -größen anwenden. Verwenden Sie den folgenden Code, um den Schriftstil und die Größe eines Absatzes zu ändern:
+Verbessern Sie die Lesbarkeit und die visuelle Attraktivität Ihres Dokuments, indem Sie Schriftstile und -größen anwenden. Verwenden Sie den folgenden Code, um den Schriftstil und die Größe eines Absatzes zu ändern:
 
 ```python
 # Assuming you have a paragraph object
@@ -72,7 +72,7 @@ builder.writeln("Item 2")
 
 ## Einfügen von Bildern und Formen
 
-Visuelle Elemente erhöhen die Attraktivität von Dokumenten. Integrieren Sie Bilder und Formen mithilfe dieser Codezeilen:
+Visuelle Elemente erhöhen die Attraktivität von Dokumenten. Integrieren Sie Bilder und Formen mit diesen Codezeilen:
 
 ```python
 builder.insert_image("image.jpg")

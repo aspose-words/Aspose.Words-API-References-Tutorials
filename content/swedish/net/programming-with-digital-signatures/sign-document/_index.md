@@ -86,7 +86,7 @@ doc.Save(dataDir + "Document.Signed.docx");
 
 ### Förklaring
 
-- `doc.Save` : Denna metod sparar det signerade dokumentet. Ersätta`"Document.Signed.docx"` med önskat namn på ditt undertecknade dokument.
+- `doc.Save` : Den här metoden sparar det signerade dokumentet. Ersätta`"Document.Signed.docx"` med önskat namn på ditt undertecknade dokument.
 
 ## Slutsats
 

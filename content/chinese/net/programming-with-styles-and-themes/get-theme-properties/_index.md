@@ -9,7 +9,7 @@ url: /zh/net/programming-with-styles-and-themes/get-theme-properties/
 ---
 ## 介绍
 
-在使用 Word 文档时，操作和检索主题属性的能力可能会改变游戏规则。无论您是在设计报告、起草提案还是只是调整文档的外观，了解如何获取主题属性都可以显著增强您的工作流程。在本教程中，我们将深入介绍如何使用 Aspose.Words for .NET 访问和使用 Word 文档中的主题属性。
+在使用 Word 文档时，操作和检索主题属性的能力可能会改变游戏规则。无论您是在设计报告、起草提案还是只是调整文档的外观，了解如何获取主题属性都可以显著增强您的工作流程。在本教程中，我们将深入探讨如何使用 Aspose.Words for .NET 访问和使用 Word 文档中的主题属性。
 
 ## 先决条件
 
@@ -44,9 +44,9 @@ using Aspose.Words.Themes;
 Document doc = new Document();
 ```
 
-创建新`Document`对象初始化一个空白的 Word 文档，这对于检索其主题属性至关重要。
+创建新的`Document`对象初始化一个空白的 Word 文档，这对于检索其主题属性至关重要。
 
-## 步骤 2：访问主题对象
+## 第 2 步：访问主题对象
 
 获得文档对象后，下一步就是访问其主题。`Theme`的财产`Document`该类提供对各种主题设置的访问。
 

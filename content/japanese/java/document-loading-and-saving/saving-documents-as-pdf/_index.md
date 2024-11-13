@@ -16,7 +16,7 @@ url: /ja/java/document-loading-and-saving/saving-documents-as-pdf/
 
 始める前に、次の前提条件が満たされていることを確認してください。
 
-- Java Development Kit (JDK) がシステムにインストールされています。
+- システムに Java 開発キット (JDK) がインストールされています。
 -  Aspose.Words for Javaライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## 文書をPDFに変換する
@@ -131,7 +131,7 @@ doc.save("output.pdf", saveOptions);
 
 ### Aspose.Words for Java で生成された PDF にフォントを埋め込むことはできますか?
 
-はい、PDFにフォントを埋め込むには、`setEmbedFullFonts`オプション`true`で`PdfSaveOptions`以下に例を示します。
+はい、PDFにフォントを埋め込むには、`setEmbedFullFonts`オプション`true`で`PdfSaveOptions`次に例を示します。
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();

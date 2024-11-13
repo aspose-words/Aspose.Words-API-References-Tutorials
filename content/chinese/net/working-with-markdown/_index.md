@@ -15,7 +15,7 @@ url: /zh/net/working-with-markdown/
 | --- | --- |
 | [粗体文本](./bold-text/) | 通过我们的分步指南学习如何使用 Aspose.Words for .NET 将 Word 文档中的文本加粗。非常适合自动化文档格式化。 |
 | [斜体文字](./italic-text/) | 了解如何使用 Aspose.Words for .NET 将斜体格式应用于 Word 文档中的文本。包含代码示例的分步指南。 |
-| [删除线](./strikethrough/) | 通过我们的分步指南学习如何使用 Aspose.Words for .NET 将删除线格式应用于文本。提高您的文档处理技能。 |
+| [删除线](./strikethrough/) | 通过我们的分步指南学习如何使用 Aspose.Words for .NET 将删除线格式应用于文本。增强您的文档处理技能。 |
 | [内联代码](./inline-code/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中应用内联代码样式。本教程介绍用于代码格式化的单个和多个反引号。 |
 | [自动链接](./autolink/) | 通过本详细指南了解如何使用 Aspose.Words for .NET 在 Word 文档中插入和自定义超链接。轻松增强您的文档。 |
 | [关联](./link/) | 通过本分步指南学习如何使用 Aspose.Words for .NET 将超链接插入 Word 文档。使用交互式链接轻松增强您的文档。 |
@@ -25,7 +25,7 @@ url: /zh/net/working-with-markdown/
 | [Setext 标题](./setext-heading/) | 通过这个全面的、循序渐进的教程学习如何使用 Aspose.Words for .NET 自动创建和格式化 Word 文档。 |
 | [缩进代码](./indented-code/) | 通过这个详细的分步教程学习如何使用 Aspose.Words for .NET 在 Word 文档中添加和设置缩进的代码块。 |
 | [围栏代码](./fenced-code/) | 了解如何使用 Aspose.Words for .NET 将隔离代码和信息字符串添加到 Word 文档。包含分步指南。增强您的文档格式化技能。 |
-| [引用](./quote/) | 了解如何使用 Aspose.Words for .NET 将引号和嵌套块引用添加到 Word 文档中。按照此分步指南掌握文档创建。 |
+| [引用](./quote/) | 了解如何使用 Aspose.Words for .NET 将引号和嵌套块引号添加到 Word 文档中。按照此分步指南掌握文档创建。 |
 | [项目符号列表](./bulleted-list/) | 通过本分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中创建和自定义项目符号列表。 |
 | [有序列表](./ordered-list/) | 通过我们的分步指南学习如何使用 Aspose.Words for .NET 在 Word 文档中创建有序列表。非常适合自动创建文档。 |
 | [桌子](./table/) | 通过本分步指南学习如何在 Aspose.Words for .NET 中创建和自定义表格。非常适合生成结构化且具有视觉吸引力的文档。 |

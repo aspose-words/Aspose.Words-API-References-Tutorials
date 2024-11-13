@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功配置了數學方程式。透過執行這些簡單的步驟，您可以自訂方程式的顯示和對齊方式以滿足您的需求。無論您是準備數學作業、撰寫研究論文或建立教育材料，Aspose.Words for .NET 都可以讓您輕鬆處理 Word 文件中的方程式。
+現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功配置了數學方程式。透過執行這些簡單的步驟，您可以自訂方程式的顯示和對齊方式以滿足您的需求。無論您是準備數學作業、撰寫研究論文或建立教育材料，Aspose.Words for .NET 都可以讓您輕鬆處理 Word 文件中的方程式。
 
 ## 常見問題解答
 

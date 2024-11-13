@@ -2,7 +2,7 @@
 title: Menemukan dan Mengganti Teks di Aspose.Words untuk Java
 linktitle: Menemukan dan Mengganti Teks
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara menemukan dan mengganti teks dalam dokumen Word dengan Aspose.Words untuk Java. Panduan langkah demi langkah dengan contoh kode. Tingkatkan keterampilan manipulasi dokumen Java Anda.
+description: Pelajari cara mencari dan mengganti teks dalam dokumen Word dengan Aspose.Words untuk Java. Panduan langkah demi langkah dengan contoh kode. Tingkatkan keterampilan manipulasi dokumen Java Anda.
 type: docs
 weight: 15
 url: /id/java/document-manipulation/finding-and-replacing-text/
@@ -10,17 +10,17 @@ url: /id/java/document-manipulation/finding-and-replacing-text/
 
 ## Pengantar Menemukan dan Mengganti Teks di Aspose.Words untuk Java
 
-Aspose.Words for Java adalah Java API canggih yang memungkinkan Anda bekerja dengan dokumen Word secara terprogram. Salah satu tugas umum saat menangani dokumen Word adalah mencari dan mengganti teks. Baik Anda perlu memperbarui placeholder di templat atau melakukan manipulasi teks yang lebih kompleks, Aspose.Words untuk Java dapat membantu Anda mencapai tujuan secara efisien.
+Aspose.Words untuk Java adalah API Java yang canggih yang memungkinkan Anda bekerja dengan dokumen Word secara terprogram. Salah satu tugas umum saat menangani dokumen Word adalah menemukan dan mengganti teks. Apakah Anda perlu memperbarui placeholder dalam template atau melakukan manipulasi teks yang lebih rumit, Aspose.Words untuk Java dapat membantu Anda mencapai tujuan secara efisien.
 
 ## Prasyarat
 
-Sebelum kita mendalami detail pencarian dan penggantian teks, pastikan Anda memiliki prasyarat berikut:
+Sebelum kita menyelami detail tentang mencari dan mengganti teks, pastikan Anda memiliki prasyarat berikut:
 
-- Lingkungan Pengembangan Jawa
-- Aspose.Words untuk perpustakaan Java
+- Lingkungan Pengembangan Java
+- Aspose.Words untuk pustaka Java
 - Contoh dokumen Word untuk digunakan
 
- Anda dapat mengunduh perpustakaan Aspose.Words untuk Java dari[Di Sini](https://releases.aspose.com/words/java/).
+ Anda dapat mengunduh pustaka Aspose.Words untuk Java dari[Di Sini](https://releases.aspose.com/words/java/).
 
 ## Menemukan dan Mengganti Teks Sederhana
 
@@ -28,59 +28,59 @@ Sebelum kita mendalami detail pencarian dan penggantian teks, pastikan Anda memi
 // Muat dokumen
 Document doc = new Document("your-document.docx");
 
-// Buat Pembuat Dokumen
+// Membuat DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Temukan dan ganti teks
 builder.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
- Dalam contoh ini, kita memuat dokumen Word, membuat a`DocumentBuilder` , dan gunakan`replace` metode untuk menemukan dan mengganti "teks lama" dengan "teks baru" di dalam dokumen.
+ Dalam contoh ini, kita memuat dokumen Word, membuat`DocumentBuilder` , dan gunakan`replace` metode untuk menemukan dan mengganti "teks lama" dengan "teks baru" dalam dokumen.
 
 ## Menggunakan Ekspresi Reguler
 
-Ekspresi reguler memberikan kemampuan pencocokan pola yang kuat untuk pencarian dan penggantian teks. Aspose.Words untuk Java mendukung ekspresi reguler untuk operasi pencarian dan penggantian lebih lanjut.
+Ekspresi reguler menyediakan kemampuan pencocokan pola yang canggih untuk pencarian dan penggantian teks. Aspose.Words untuk Java mendukung ekspresi reguler untuk operasi pencarian dan penggantian yang lebih canggih.
 
 ```java
 // Muat dokumen
 Document doc = new Document("your-document.docx");
 
-// Buat Pembuat Dokumen
+// Membuat DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Gunakan ekspresi reguler untuk menemukan dan mengganti teks
 Pattern regex = Pattern.compile("your-pattern");
 builder.getRange().replace(regex, "replacement-text", new FindReplaceOptions());
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
-Dalam contoh ini, kami menggunakan pola ekspresi reguler untuk mencari dan mengganti teks dalam dokumen.
+Dalam contoh ini, kami menggunakan pola ekspresi reguler untuk menemukan dan mengganti teks dalam dokumen.
 
-## Mengabaikan Teks di Dalam Bidang
+## Mengabaikan Teks di Dalam Kolom
 
-Anda dapat mengonfigurasi Aspose.Words untuk mengabaikan teks di dalam bidang saat melakukan operasi pencarian dan penggantian.
+Anda dapat mengonfigurasi Aspose.Words untuk mengabaikan teks di dalam kolom saat melakukan operasi temukan dan ganti.
 
 ```java
 // Muat dokumen
 Document doc = new Document("your-document.docx");
 
-// Buat instance FindReplaceOptions dan atur IgnoreFields ke true
+// Buat instance FindReplaceOptions dan atur IgnoreFields menjadi true
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreFields(true);
 
 // Gunakan opsi saat mengganti teks
 doc.getRange().replace("text-to-replace", "new-text", options);
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
-Ini berguna ketika Anda ingin mengecualikan teks di dalam bidang, seperti bidang gabungan, agar tidak diganti.
+Ini berguna saat Anda ingin mengecualikan teks di dalam bidang, seperti bidang gabungan, agar tidak diganti.
 
 ## Mengabaikan Teks Di Dalam Hapus Revisi
 
@@ -90,56 +90,56 @@ Anda dapat mengonfigurasi Aspose.Words untuk mengabaikan teks di dalam revisi pe
 // Muat dokumen
 Document doc = new Document("your-document.docx");
 
-// Buat instance FindReplaceOptions dan setel IgnoreDeleted ke true
+// Buat instance FindReplaceOptions dan atur IgnoreDeleted menjadi true
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreDeleted(true);
 
 // Gunakan opsi saat mengganti teks
 doc.getRange().replace("text-to-replace", "new-text", options);
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
-Ini memungkinkan Anda mengecualikan teks yang telah ditandai untuk dihapus dalam perubahan terlacak agar tidak diganti.
+Ini memungkinkan Anda untuk mengecualikan teks yang telah ditandai untuk dihapus dalam perubahan yang dilacak agar tidak diganti.
 
-## Mengabaikan Revisi Sisipkan Teks di Dalam
+## Mengabaikan Teks Di Dalam Sisipan Revisi
 
-Anda dapat mengonfigurasi Aspose.Words untuk mengabaikan teks di dalam revisi penyisipan selama operasi pencarian dan penggantian.
+Anda dapat mengonfigurasi Aspose.Words untuk mengabaikan teks di dalam revisi penyisipan selama operasi temukan dan ganti.
 
 ```java
 // Muat dokumen
 Document doc = new Document("your-document.docx");
 
-// Buat instance FindReplaceOptions dan atur IgnoreInserted ke true
+// Buat instance FindReplaceOptions dan atur IgnoreInserted menjadi true
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreInserted(true);
 
 // Gunakan opsi saat mengganti teks
 doc.getRange().replace("text-to-replace", "new-text", options);
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
-Hal ini memungkinkan Anda mengecualikan teks yang telah ditandai sebagai disisipkan dalam perubahan terlacak agar tidak diganti.
+Ini memungkinkan Anda untuk mengecualikan teks yang telah ditandai sebagai dimasukkan dalam perubahan yang dilacak agar tidak diganti.
 
 ## Mengganti Teks dengan HTML
 
-Anda dapat menggunakan Aspose.Words for Java untuk mengganti teks dengan konten HTML.
+Anda dapat menggunakan Aspose.Words untuk Java untuk mengganti teks dengan konten HTML.
 
 ```java
 // Muat dokumen
 Document doc = new Document("your-document.docx");
 
-// Buat instance FindReplaceOptions dengan callback pengganti khusus
+// Buat instance FindReplaceOptions dengan panggilan balik penggantian kustom
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceWithHtmlEvaluator(options));
 
 // Gunakan opsi saat mengganti teks
 doc.getRange().replace("text-to-replace", "new-html-content", options);
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
@@ -147,7 +147,7 @@ doc.save("modified-document.docx");
 
 ## Mengganti Teks di Header dan Footer
 
-Anda dapat menemukan dan mengganti teks di dalam header dan footer dokumen Word Anda.
+Anda dapat menemukan dan mengganti teks dalam header dan footer dokumen Word Anda.
 
 ```java
 // Muat dokumen
@@ -163,15 +163,15 @@ HeaderFooter footer = headersFooters.getByHeaderFooterType(HeaderFooterType.FOOT
 FindReplaceOptions options = new FindReplaceOptions();
 footer.getRange().replace("text-to-replace", "new-text", options);
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
-Ini memungkinkan Anda melakukan penggantian teks khusus di header dan footer.
+Hal ini memungkinkan Anda untuk melakukan penggantian teks khususnya pada header dan footer.
 
-## Menampilkan Perubahan Urutan Header dan Footer
+## Menampilkan Perubahan untuk Urutan Header dan Footer
 
-Anda dapat menggunakan Aspose.Words untuk memperlihatkan perubahan urutan header dan footer di dokumen Anda.
+Anda dapat menggunakan Aspose.Words untuk memperlihatkan perubahan susunan header dan footer pada dokumen Anda.
 
 ```java
 // Muat dokumen
@@ -180,39 +180,39 @@ Document doc = new Document("your-document.docx");
 // Dapatkan bagian pertama
 Section firstPageSection = doc.getFirstSection();
 
-// Buat instance FindReplaceOptions dan terapkan ke rentang dokumen
+//Buat instance FindReplaceOptions dan terapkan ke rentang dokumen
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceLog());
 
-//Ganti teks yang memengaruhi urutan header dan footer
+// Ganti teks yang memengaruhi urutan header dan footer
 doc.getRange().replace(Pattern.compile("(header|footer)"), "", options);
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
-Ini memungkinkan Anda memvisualisasikan perubahan terkait urutan header dan footer di dokumen Anda.
+Ini memungkinkan Anda memvisualisasikan perubahan yang terkait dengan urutan header dan footer pada dokumen Anda.
 
-## Mengganti Teks dengan Bidang
+## Mengganti Teks dengan Kolom
 
-Anda dapat mengganti teks dengan kolom menggunakan Aspose.Words untuk Java.
+Anda dapat mengganti teks dengan bidang menggunakan Aspose.Words untuk Java.
 
 ```java
 // Muat dokumen
 Document doc = new Document("your-document.docx");
 
-// Buat instance FindReplaceOptions dan atur panggilan balik pengganti khusus untuk bidang
+// Buat instance FindReplaceOptions dan tetapkan panggilan balik penggantian khusus untuk bidang
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceTextWithFieldHandler(FieldType.FIELD_MERGE_FIELD));
 
 // Gunakan opsi saat mengganti teks
 doc.getRange().replace(Pattern.compile("PlaceHolder(\\d+)"), "", options);
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
- Dalam contoh ini, kami mengganti teks dengan kolom dan menentukan jenis kolom (misalnya,`FieldType.FIELD_MERGE_FIELD`).
+ Dalam contoh ini, kami mengganti teks dengan bidang dan menentukan jenis bidang (misalnya,`FieldType.FIELD_MERGE_FIELD`).
 
 ## Mengganti dengan Evaluator
 
@@ -222,14 +222,14 @@ Anda dapat menggunakan evaluator khusus untuk menentukan teks pengganti secara d
 // Muat dokumen
 Document doc = new Document("your-document.docx");
 
-// Buat instance FindReplaceOptions dan atur panggilan balik pengganti khusus
+// Buat instance FindReplaceOptions dan tetapkan panggilan balik penggantian kustom
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new MyReplaceEvaluator());
 
 // Gunakan opsi saat mengganti teks
 doc.getRange().replace(Pattern.compile("[s|m]ad"), "", options);
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
@@ -237,7 +237,7 @@ Dalam contoh ini, kami menggunakan evaluator khusus (`MyReplaceEvaluator`) untuk
 
 ## Mengganti dengan Regex
 
-Aspose.Words untuk Java memungkinkan Anda mengganti teks menggunakan ekspresi reguler.
+Aspose.Wors untuk Java memungkinkan Anda mengganti teks menggunakan ekspresi reguler.
 
 ```java
 // Muat dokumen
@@ -246,32 +246,32 @@ Document doc = new Document("your-document.docx");
 // Gunakan ekspresi reguler untuk menemukan dan mengganti teks
 doc.getRange().replace(Pattern.compile("[s|m]ad"), "bad", new FindReplaceOptions());
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
-Dalam contoh ini, kami menggunakan pola ekspresi reguler untuk mencari dan mengganti teks dalam dokumen.
+Dalam contoh ini, kami menggunakan pola ekspresi reguler untuk menemukan dan mengganti teks dalam dokumen.
 
-## Mengenali dan Mengganti Dalam Pola Penggantian
+## Mengenali dan Substitusi dalam Pola Penggantian
 
-Anda dapat mengenali dan melakukan substitusi dalam pola penggantian menggunakan Aspose.Words untuk Java.
+Anda dapat mengenali dan membuat substitusi dalam pola penggantian menggunakan Aspose.Words untuk Java.
 
 ```java
 // Muat dokumen
 Document doc = new Document("your-document.docx");
 
-//Buat instance FindReplaceOptions dengan UseSubstitutions disetel ke true
+// Buat instance FindReplaceOptions dengan UseSubstitutions yang disetel ke true
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseSubstitutions(true);
 
 // Gunakan opsi saat mengganti teks dengan pola
 doc.getRange().replace(Pattern.compile("([A-z]+) give money to ([A-z]+)"), "$2 take money from $1", options);
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
-Hal ini memungkinkan Anda melakukan substitusi dalam pola penggantian untuk penggantian lebih lanjut.
+Hal ini memungkinkan Anda untuk melakukan penggantian dalam pola penggantian untuk penggantian yang lebih lanjut.
 
 ## Mengganti dengan String
 
@@ -284,32 +284,32 @@ Document doc = new Document("your-document.docx");
 // Ganti teks dengan string
 doc.getRange().replace("text-to-replace", "new-string", new FindReplaceOptions());
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
-Dalam contoh ini, kami mengganti "text-to-replace" dengan "new-string" di dalam dokumen.
+Dalam contoh ini, kami mengganti "teks-yang-akan-diganti" dengan "string-baru" dalam dokumen.
 
-## Menggunakan Pesanan Lama
+## Menggunakan Legacy Order
 
-Anda dapat menggunakan pesanan lama saat melakukan operasi pencarian dan penggantian.
+Anda dapat menggunakan perintah lama saat melakukan operasi temukan dan ganti.
 
 ```java
 // Muat dokumen
 Document doc = new Document("your-document.docx");
 
-// Buat instance FindReplaceOptions dan atur UseLegacyOrder ke true
+// Buat instance FindReplaceOptions dan tetapkan UseLegacyOrder menjadi true
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseLegacyOrder(true);
 
 // Gunakan opsi saat mengganti teks
 doc.getRange().replace(Pattern.compile("\\[(.*?)\\]"), "", options);
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
-Hal ini memungkinkan Anda menggunakan pesanan lama untuk operasi pencarian dan penggantian.
+Hal ini memungkinkan Anda menggunakan perintah lama untuk operasi pencarian dan penggantian.
 
 ## Mengganti Teks dalam Tabel
 
@@ -322,37 +322,37 @@ Document doc = new Document("your-document.docx");
 // Dapatkan tabel tertentu (misalnya, tabel pertama)
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 
-// Gunakan FindReplaceOptions untuk mengganti teks dalam tabel
+//Gunakan FindReplaceOptions untuk mengganti teks dalam tabel
 table.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("modified-document.docx");
 ```
 
-Ini memungkinkan Anda melakukan penggantian teks secara khusus di dalam tabel.
+Hal ini memungkinkan Anda untuk melakukan penggantian teks khusus dalam tabel.
 
 ## Kesimpulan
 
-Aspose.Words untuk Java memberikan kemampuan komprehensif untuk menemukan dan mengganti teks dalam dokumen Word. Apakah Anda perlu melakukan penggantian teks sederhana atau operasi lebih lanjut menggunakan ekspresi reguler, manipulasi bidang, atau evaluator khusus, Aspose.Words untuk Java siap membantu Anda. Pastikan untuk menjelajahi dokumentasi ekstensif dan contoh yang disediakan oleh Aspose untuk memanfaatkan potensi penuh dari perpustakaan Java yang kuat ini.
+Aspose.Words untuk Java menyediakan kemampuan komprehensif untuk menemukan dan mengganti teks dalam dokumen Word. Baik Anda perlu melakukan penggantian teks sederhana atau operasi yang lebih canggih menggunakan ekspresi reguler, manipulasi bidang, atau evaluator khusus, Aspose.Words untuk Java telah menyediakannya untuk Anda. Pastikan untuk menjelajahi dokumentasi dan contoh ekstensif yang disediakan oleh Aspose untuk memanfaatkan potensi penuh dari pustaka Java yang hebat ini.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara mengunduh Aspose.Words untuk Java?
 
  Anda dapat mengunduh Aspose.Words untuk Java dari situs web dengan mengunjungi[tautan ini](https://releases.aspose.com/words/java/).
 
-### Bisakah saya menggunakan ekspresi reguler untuk penggantian teks?
+### Dapatkah saya menggunakan ekspresi reguler untuk penggantian teks?
 
-Ya, Anda dapat menggunakan ekspresi reguler untuk penggantian teks di Aspose.Words untuk Java. Hal ini memungkinkan Anda melakukan operasi pencarian dan penggantian yang lebih canggih dan fleksibel.
+Ya, Anda dapat menggunakan ekspresi reguler untuk penggantian teks di Aspose.Words untuk Java. Ini memungkinkan Anda untuk melakukan operasi pencarian dan penggantian yang lebih canggih dan fleksibel.
 
 ### Bagaimana saya bisa mengabaikan teks di dalam kolom selama penggantian?
 
- Untuk mengabaikan teks di dalam kolom selama penggantian, Anda dapat mengatur`IgnoreFields` properti dari`FindReplaceOptions` ke`true`Hal ini memastikan bahwa teks di dalam bidang, seperti bidang gabungan, dikecualikan dari penggantian.
+Untuk mengabaikan teks di dalam bidang selama penggantian, Anda dapat mengatur`IgnoreFields` milik`FindReplaceOptions` ke`true`Ini memastikan bahwa teks dalam bidang, seperti bidang gabungan, dikecualikan dari penggantian.
 
 ### Bisakah saya mengganti teks di dalam header dan footer?
 
  Ya, Anda dapat mengganti teks di dalam header dan footer dokumen Word Anda. Cukup akses header atau footer yang sesuai dan gunakan`replace` metode dengan yang diinginkan`FindReplaceOptions`.
 
-### Untuk apa opsi UseLegacyOrder?
+### Apa fungsi opsi UseLegacyOrder?
 
- Itu`UseLegacyOrder` pilihan di`FindReplaceOptions` memungkinkan Anda menggunakan pesanan lama saat melakukan operasi pencarian dan penggantian. Hal ini dapat berguna dalam skenario tertentu yang menginginkan perilaku tatanan warisan.
+Itu`UseLegacyOrder` pilihan di`FindReplaceOptions` memungkinkan Anda menggunakan perintah lama saat melakukan operasi pencarian dan penggantian. Ini dapat berguna dalam skenario tertentu di mana perilaku perintah lama diinginkan.

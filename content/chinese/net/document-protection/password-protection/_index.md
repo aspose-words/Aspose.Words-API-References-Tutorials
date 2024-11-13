@@ -18,7 +18,7 @@ url: /zh/net/document-protection/password-protection/
 1.  Aspose.Words for .NET：确保您拥有 Aspose.Words for .NET 库。您可以[点击下载](https://releases.aspose.com/words/net/).
 2. 开发环境：Visual Studio 或任何其他 C# 开发环境。
 3. 基本 C# 知识：对 C# 编程的基本了解。
-4.  Aspose 许可证：从以下位置获取许可证[这里](https://purchase.aspose.com/buy)或使用[临时执照](https://purchase.aspose.com/temporary-license/)进行评估。
+4. Aspose 许可证：从以下位置获取许可证[这里](https://purchase.aspose.com/buy)或使用[临时执照](https://purchase.aspose.com/temporary-license/)进行评估。
 
 ## 导入命名空间
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ### 选择保护类型
 
-Aspose.Words 提供不同类型的保护，例如`NoProtection`, `ReadOnly`, `AllowOnlyComments`， 和`AllowOnlyFormFields`在本例中，我们将使用`NoProtection`但需要密码，这实质上意味着该文档是可编辑的，但需要密码才能删除保护。
+Aspose.Words 提供不同类型的保护，例如`NoProtection`, `ReadOnly`, `AllowOnlyComments`， 和`AllowOnlyFormFields`在本例中，我们将使用`NoProtection`但需要密码，这实质上意味着该文档是可编辑的，但需要密码才能取消保护。
 
 ### 应用保护
 
@@ -80,7 +80,7 @@ doc.Protect(ProtectionType.NoProtection, "password");
 最后，让我们将受保护的文档保存到指定的目录。
 
 
-使用`Save`方法保存您的文档。提供要保存文档的路径以及文件名。
+使用`Save`方法保存文档。提供要保存文档的路径以及文件名。
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");

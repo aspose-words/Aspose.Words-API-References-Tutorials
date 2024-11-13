@@ -33,7 +33,7 @@ using System.Text.RegularExpressions;
 
 ## 步骤 1：初始化文档
 
-首先，您需要创建一个新文档。此文档将作为文本替换的画布。
+首先，你需要创建一个新文档。此文档将作为文本替换的画布。
 
 ```csharp
 Document doc = new Document();

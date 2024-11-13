@@ -78,7 +78,7 @@ Word 文档中的跟踪修订是指对文档所做的更改可以通过标记供
 您可以从 Aspose 网站下载该库并在 Visual Studio 项目中引用它来集成 Aspose.Words for .NET。
 
 ### 我可以使用 Aspose.Words for .NET 以编程方式恢复跟踪的修订吗？
-是的，您可以使用 Aspose.Words for .NET 以编程方式管理和恢复跟踪的修订，从而实现对文档编辑工作流程的精确控制。
+是的，您可以使用 Aspose.Words for .NET 以编程方式管理和恢复已跟踪的修订，从而实现对文档编辑工作流程的精确控制。
 
 ### Aspose.Words for .NET 是否适合处理带有修订跟踪的大型文档？
 Aspose.Words for .NET 经过优化，可有效处理大型文档，包括具有大量可跟踪修订的文档。

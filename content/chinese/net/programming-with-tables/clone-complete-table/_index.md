@@ -21,7 +21,7 @@ url: /zh/net/programming-with-tables/clone-complete-table/
 
 3. 对 C# 的基本了解：熟悉 C# 编程和 .NET 框架将会很有益，因为我们将用 C# 编写代码。
 
-4. 带有表格的 Word 文档：准备一个至少包含一个要克隆的表格的 Word 文档。如果没有，您可以为本教程创建一个带有表格的示例文档。
+4. 带有表格的 Word 文档：拥有一个至少包含一个要克隆的表格的 Word 文档。如果没有，您可以为本教程创建一个带有表格的示例文档。
 
 ## 导入命名空间
 
@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-让我们将克隆表格的过程分解为几个易于管理的步骤。我们将首先设置环境，然后继续克隆表格并将其插入文档。
+让我们将克隆表格的过程分解为几个可管理的步骤。我们将首先设置环境，然后继续克隆表格并将其插入到文档中。
 
 ## 步骤 1：定义文档路径
 
@@ -124,4 +124,4 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 是的，克隆后，您可以使用 Aspose.Words 的格式属性和方法修改克隆表的格式。
 
 ### 可以从其他文档格式克隆表格吗？
-Aspose.Words 支持各种格式，因此您可以从 DOC、DOCX 和 RTF 等格式克隆表格，只要 Aspose.Words 支持它们。
+Aspose.Words 支持各种格式，因此您可以从 DOC、DOCX 和 RTF 等格式克隆表格，只要 Aspose.Words 支持这些格式。

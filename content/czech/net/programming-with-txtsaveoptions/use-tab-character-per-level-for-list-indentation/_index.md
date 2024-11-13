@@ -121,7 +121,7 @@ Ano, Aspose.Words umožňuje přizpůsobení stylů seznamů na různých úrovn
  Použijte`ListFormat.ApplyBulletDefault()` metoda místo toho`ApplyNumberDefault()` k vytvoření seznamu s odrážkami.
 
 ### Jak mohu upravit velikost znaku tabulátoru použitého pro odsazení?
- Bohužel velikost záložky v`TxtSaveOptions`je pevná. Chcete-li upravit velikost odsazení, možná budete muset použít mezery nebo přímo přizpůsobit formátování seznamu.
+ Bohužel velikost karty v`TxtSaveOptions`je pevná. Chcete-li upravit velikost odsazení, možná budete muset použít mezery nebo přímo přizpůsobit formátování seznamu.
 
 ### Mohu tato nastavení použít při exportu do jiných formátů, jako je PDF nebo DOCX?
 Konkrétní nastavení znaků tabulátoru platí pro textové soubory. U formátů jako PDF nebo DOCX budete muset upravit možnosti formátování v rámci těchto formátů.

@@ -2,26 +2,26 @@
 title: Copiar texto marcado en un documento de Word
 linktitle: Copiar texto marcado en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Copie sin esfuerzo texto marcado entre documentos de Word usando Aspose.Words para .NET. Aprenda cómo con esta guía paso a paso.
+description: Copie texto marcado entre documentos de Word sin esfuerzo con Aspose.Words para .NET. Aprenda cómo hacerlo con esta guía paso a paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 ## Introducción
 
-¿Alguna vez has necesitado copiar secciones específicas de un documento de Word a otro? ¡Pues estás de suerte! En este tutorial, le explicaremos cómo copiar texto marcado como favorito de un documento de Word a otro usando Aspose.Words para .NET. Ya sea que esté creando un informe dinámico o automatizando la generación de documentos, esta guía le simplificará el proceso.
+¿Alguna vez ha tenido que copiar secciones específicas de un documento de Word a otro? ¡Pues está de suerte! En este tutorial, le explicaremos cómo copiar texto marcado de un documento de Word a otro utilizando Aspose.Words para .NET. Ya sea que esté creando un informe dinámico o automatizando la generación de documentos, esta guía le simplificará el proceso.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de sumergirnos, asegúrese de tener lo siguiente:
+Antes de comenzar, asegúrese de tener lo siguiente:
 
--  Aspose.Words para la biblioteca .NET: puede descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+-  Biblioteca Aspose.Words para .NET: puede descargarla desde[aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: Visual Studio o cualquier otro entorno de desarrollo .NET.
-- Conocimientos básicos de C#: familiaridad con la programación en C# y .NET framework.
+- Conocimientos básicos de C#: Familiaridad con la programación en C# y el marco .NET.
 
 ## Importar espacios de nombres
 
-Para comenzar, asegúrese de tener importados los espacios de nombres necesarios en su proyecto:
+Para comenzar, asegúrese de tener los espacios de nombres necesarios importados en su proyecto:
 
 ```csharp
 using Aspose.Words;
@@ -29,18 +29,18 @@ using Aspose.Words.Import;
 using Aspose.Words.Bookmark;
 ```
 
-## Paso 1: cargue el documento fuente
+## Paso 1: Cargue el documento fuente
 
-Lo primero es lo primero: debe cargar el documento de origen que contiene el texto marcado que desea copiar.
+Lo primero es lo primero: debes cargar el documento fuente que contiene el texto marcado que deseas copiar.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Aquí,`dataDir` es la ruta a su directorio de documentos, y`Bookmarks.docx` es el documento fuente.
+ Aquí,`dataDir` es la ruta al directorio de su documento, y`Bookmarks.docx` Es el documento fuente.
 
-## Paso 2: identificar el marcador
+## Paso 2: Identificar el marcador
 
 A continuación, identifique el marcador que desea copiar del documento fuente.
 
@@ -48,11 +48,11 @@ A continuación, identifique el marcador que desea copiar del documento fuente.
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
- Reemplazar`"MyBookmark1"` con el nombre real de su marcador.
+ Reemplazar`"MyBookmark1"` con el nombre real de tu marcador.
 
-## Paso 3: crear el documento de destino
+## Paso 3: Crear el documento de destino
 
-Ahora, cree un nuevo documento donde se copiará el texto marcado.
+Ahora, crea un nuevo documento donde se copiará el texto marcado.
 
 ```csharp
 Document dstDoc = new Document();
@@ -61,16 +61,16 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 ## Paso 4: Importar contenido marcado
 
- Para garantizar que se conserven los estilos y el formato, utilice`NodeImporter` para importar el contenido marcado como favorito desde el documento de origen al documento de destino.
+ Para garantizar que se conserven los estilos y el formato, utilice`NodeImporter` para importar el contenido marcado del documento de origen al documento de destino.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
 AppendBookmarkedText(importer, srcBookmark, dstNode);
 ```
 
-## Paso 5: definir el método AppendBookmarkedText
+## Paso 5: Definir el método AppendBookmarkedText
 
-Aquí es donde ocurre la magia. Defina un método para manejar la copia del texto marcado:
+Aquí es donde ocurre la magia. Defina un método para gestionar la copia del texto marcado:
 
 ```csharp
 private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
@@ -94,9 +94,9 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
 }
 ```
 
-## Paso 6: guarde el documento de destino
+## Paso 6: Guardar el documento de destino
 
-Finalmente, guarde el documento de destino para verificar el contenido copiado.
+Por último, guarde el documento de destino para verificar el contenido copiado.
 
 ```csharp
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
@@ -104,18 +104,18 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Conclusión
 
-¡Y eso es todo! Ha copiado con éxito el texto marcado como favorito de un documento de Word a otro usando Aspose.Words para .NET. Este método es potente para automatizar las tareas de manipulación de documentos, haciendo que su flujo de trabajo sea más eficiente y optimizado.
+¡Y eso es todo! Has copiado con éxito el texto marcado de un documento de Word a otro usando Aspose.Words para .NET. Este método es eficaz para automatizar las tareas de manipulación de documentos, lo que hace que tu flujo de trabajo sea más eficiente y optimizado.
 
 ## Preguntas frecuentes
 
 ### ¿Puedo copiar varios marcadores a la vez?
-Sí, puede recorrer varios marcadores y utilizar el mismo método para copiar cada uno.
+Sí, puedes iterar a través de varios marcadores y utilizar el mismo método para copiar cada uno.
 
 ### ¿Qué pasa si no se encuentra el marcador?
- El`Range.Bookmarks` la propiedad regresará`null`, así que asegúrese de manejar este caso para evitar excepciones.
+El`Range.Bookmarks` La propiedad regresará`null`, así que asegúrese de manejar este caso para evitar excepciones.
 
 ### ¿Puedo conservar el formato del marcador original?
- ¡Absolutamente! Usando`ImportFormatMode.KeepSourceFormatting` garantiza que se conserve el formato original.
+ ¡Por supuesto! Utilizando`ImportFormatMode.KeepSourceFormatting` garantiza que se conserve el formato original.
 
 ### ¿Existe un límite para el tamaño del texto marcado?
 No hay un límite específico, pero el rendimiento puede variar con documentos extremadamente grandes.

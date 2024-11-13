@@ -103,7 +103,7 @@ Console.WriteLine("\n" + properties);
 
 ## 結論
 
-現在你就得到它了！您已成功學習如何使用 Aspose.Words for .NET 從 Word 文件讀取 ActiveX 控制項屬性。本教學介紹了載入文件、迭代形狀以及從 ActiveX 控制項中提取屬性。透過執行以下步驟，您可以自動從 Word 文件中提取重要數據，從而提高工作流程效率。
+現在你就擁有了！您已成功學習如何使用 Aspose.Words for .NET 從 Word 文件讀取 ActiveX 控制項屬性。本教學介紹了載入文件、迭代形狀以及從 ActiveX 控制項中提取屬性。透過執行以下步驟，您可以自動從 Word 文件中提取重要數據，從而提高工作流程效率。
 
 ## 常見問題解答
 

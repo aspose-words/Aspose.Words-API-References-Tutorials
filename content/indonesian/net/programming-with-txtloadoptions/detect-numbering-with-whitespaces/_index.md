@@ -1,28 +1,28 @@
 ---
-title: Deteksi Penomoran Dengan Spasi Putih
-linktitle: Deteksi Penomoran Dengan Spasi Putih
+title: Mendeteksi Penomoran Dengan Spasi Putih
+linktitle: Mendeteksi Penomoran Dengan Spasi Putih
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Temukan cara menggunakan Aspose.Words untuk .NET untuk mendeteksi penomoran dengan spasi putih dalam dokumen teks biasa dan memastikan daftar Anda dikenali dengan benar.
+description: Temukan cara menggunakan Aspose.Words untuk .NET untuk mendeteksi penomoran dengan spasi dalam dokumen teks biasa dan memastikan daftar Anda dikenali dengan benar.
 type: docs
 weight: 10
 url: /id/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
 ## Perkenalan
 
-Aspose.Words untuk penggemar .NET! Hari ini, kita akan mendalami fitur menarik yang dapat mempermudah penanganan daftar dalam dokumen teks biasa. Pernahkah Anda berurusan dengan file teks yang beberapa barisnya seharusnya berupa daftar, tetapi baris-baris tersebut terlihat kurang tepat saat dimuat ke dalam dokumen Word? Ya, kami punya trik menarik: mendeteksi penomoran dengan spasi. Tutorial ini akan memandu Anda tentang cara menggunakan`DetectNumberingWithWhitespaces` opsi di Aspose.Words untuk .NET untuk memastikan daftar Anda dikenali dengan benar, meskipun ada spasi antara angka dan teks.
+Aspose.Words untuk penggemar .NET! Hari ini, kita akan menyelami fitur menarik yang dapat mempermudah penanganan daftar dalam dokumen teks biasa. Pernahkah Anda menangani berkas teks yang beberapa barisnya seharusnya berupa daftar, tetapi tidak terlihat benar saat dimuat ke dalam dokumen Word? Nah, kami punya trik yang bagus: mendeteksi penomoran dengan spasi. Tutorial ini akan memandu Anda tentang cara menggunakan`DetectNumberingWithWhitespaces` opsi di Aspose.Words untuk .NET untuk memastikan daftar Anda dikenali dengan benar, bahkan saat ada spasi di antara angka dan teks.
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
--  Aspose.Words untuk .NET: Anda dapat mengunduhnya dari[Asumsikan Rilis](https://releases.aspose.com/words/net/) halaman.
-- Lingkungan Pengembangan: Visual Studio atau C# IDE lainnya.
-- .NET Framework diinstal pada mesin Anda.
-- Pengetahuan Dasar C#: Memahami dasar-dasarnya akan membantu Anda mengikuti contoh.
+-  Aspose.Words untuk .NET: Anda dapat mengunduhnya dari[Rilis Aspose](https://releases.aspose.com/words/net/) halaman.
+- Lingkungan Pengembangan: Visual Studio atau IDE C# lainnya.
+- .NET Framework terinstal di komputer Anda.
+- Pengetahuan Dasar C#: Memahami dasar-dasarnya akan membantu Anda mengikuti contoh-contohnya.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Sebelum beralih ke kode, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek Anda. Berikut cuplikan singkat untuk membantu Anda memulai:
+Sebelum memulai kode, pastikan Anda telah mengimpor namespace yang diperlukan ke dalam proyek Anda. Berikut cuplikan singkat untuk membantu Anda memulai:
 
 ```csharp
 using System;
@@ -30,11 +30,11 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dikelola. Setiap langkah akan memandu Anda melalui kode yang diperlukan dan menjelaskan apa yang terjadi.
+Mari kita uraikan prosesnya menjadi beberapa langkah yang sederhana dan mudah dikelola. Setiap langkah akan memandu Anda melalui kode yang diperlukan dan menjelaskan apa yang terjadi.
 
 ## Langkah 1: Tentukan Direktori Dokumen Anda
 
-Hal pertama yang pertama, mari siapkan jalur ke direktori dokumen Anda. Di sinilah file input dan output Anda akan disimpan.
+Pertama-tama, mari kita atur jalur ke direktori dokumen Anda. Di sinilah berkas masukan dan keluaran Anda akan disimpan.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Buat Dokumen Plaintext
 
-Selanjutnya, kita akan membuat dokumen plaintext sebagai string. Dokumen ini akan berisi bagian-bagian yang dapat diartikan sebagai daftar.
+Selanjutnya, kita akan membuat dokumen teks biasa sebagai string. Dokumen ini akan berisi bagian-bagian yang dapat diartikan sebagai daftar.
 
 ```csharp
 const string textDoc = "Full stop delimiters:\n" +
@@ -74,7 +74,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces
 
 ## Langkah 4: Muat Dokumen
 
- Sekarang, mari kita memuat dokumen menggunakan`TxtLoadOptions` sebagai parameter. Hal ini memastikan bahwa daftar keempat (dengan spasi) terdeteksi dengan benar.
+ Sekarang, mari kita memuat dokumen menggunakan`TxtLoadOptions` sebagai parameter. Ini memastikan bahwa daftar keempat (dengan spasi) terdeteksi dengan benar.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
@@ -82,7 +82,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 
 ## Langkah 5: Simpan Dokumen
 
-Terakhir, simpan dokumen ke direktori yang Anda tentukan. Ini akan menampilkan dokumen Word dengan daftar yang terdeteksi dengan benar.
+Terakhir, simpan dokumen ke direktori yang Anda tentukan. Ini akan menghasilkan dokumen Word dengan daftar yang terdeteksi dengan benar.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
@@ -90,22 +90,22 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## Kesimpulan
 
-Dan itu dia! Hanya dengan beberapa baris kode, Anda telah menguasai seni mendeteksi penomoran dengan spasi di dokumen teks biasa menggunakan Aspose.Words untuk .NET. Fitur ini bisa sangat berguna saat menangani berbagai format teks dan memastikan daftar Anda terwakili secara akurat dalam dokumen Word Anda. Jadi, lain kali Anda menemukan daftar rumit tersebut, Anda akan tahu persis apa yang harus dilakukan.
+Nah, itu dia! Hanya dengan beberapa baris kode, Anda telah menguasai seni mendeteksi penomoran dengan spasi dalam dokumen teks biasa menggunakan Aspose.Words untuk .NET. Fitur ini dapat sangat berguna saat menangani berbagai format teks dan memastikan daftar Anda terwakili secara akurat dalam dokumen Word Anda. Jadi, lain kali Anda menghadapi daftar yang rumit itu, Anda akan tahu persis apa yang harus dilakukan.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ###  Apa`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
-`DetectNumberingWithWhitespaces` adalah pilihan di`TxtLoadOptions` yang memungkinkan Aspose.Words mengenali daftar bahkan ketika ada spasi antara penomoran dan teks item daftar.
+`DetectNumberingWithWhitespaces` adalah sebuah pilihan di`TxtLoadOptions` yang memungkinkan Aspose.Words mengenali daftar bahkan ketika ada spasi antara penomoran dan teks item daftar.
 
-### Bisakah saya menggunakan fitur ini untuk pembatas lain seperti poin dan tanda kurung?
- Ya, Aspose.Words secara otomatis mendeteksi daftar dengan pembatas umum seperti poin dan tanda kurung. Itu`DetectNumberingWithWhitespaces` secara khusus membantu dengan daftar yang memiliki spasi.
+### Dapatkah saya menggunakan fitur ini untuk pemisah lain seperti poin dan tanda kurung?
+ Ya, Aspose.Words secara otomatis mendeteksi daftar dengan pembatas umum seperti poin dan tanda kurung.`DetectNumberingWithWhitespaces` khususnya membantu dengan daftar yang memiliki spasi.
 
-###  Apa yang terjadi jika saya tidak menggunakannya`DetectNumberingWithWhitespaces`?
+###  Apa yang terjadi jika saya tidak menggunakannya?`DetectNumberingWithWhitespaces`?
 Tanpa opsi ini, daftar dengan spasi antara penomoran dan teks mungkin tidak dikenali sebagai daftar, dan item dapat muncul sebagai paragraf biasa.
 
 ### Apakah fitur ini tersedia di produk Aspose lainnya?
-Fitur khusus ini disesuaikan untuk Aspose.Words untuk .NET, dirancang untuk menangani pemrosesan dokumen Word.
+Fitur khusus ini dirancang untuk Aspose.Words untuk .NET, yang dirancang untuk menangani pemrosesan dokumen Word.
 
-### Bagaimana saya bisa mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
- Anda dapat memperoleh lisensi sementara dari[Ajukan Lisensi Sementara](https://purchase.aspose.com/temporary-license/) halaman.
+### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
+ Anda dapat memperoleh lisensi sementara dari[Aspose Lisensi Sementara](https://purchase.aspose.com/temporary-license/) halaman.
 

@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## Βήμα 1: Αρχικοποιήστε το DocumentBuilder
 
- Ο`DocumentBuilder` Το class είναι ένα ισχυρό εργαλείο στο Aspose.Words που σας επιτρέπει να προσθέτετε περιεχόμενο στο έγγραφό σας με ευκολία.
+Ο`DocumentBuilder` Το class είναι ένα ισχυρό εργαλείο στο Aspose.Words που σας επιτρέπει να προσθέτετε περιεχόμενο στο έγγραφό σας με ευκολία.
 
 ```csharp
 // Αρχικοποιήστε ένα DocumentBuilder.

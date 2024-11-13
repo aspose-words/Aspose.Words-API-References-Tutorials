@@ -103,7 +103,7 @@ Ebben a példában elmentjük a dokumentum másolatát a "_v2" utótag jelzi, ho
 
 ### Elfogadhatom vagy elutasíthatom a módosításokat programozottan?
 
- Igen, az Aspose.Words for Java használatával elfogadhatja vagy elutasíthatja a revíziókat. Használja ki a`acceptAllRevisions`és`rejectAllRevisions` revíziók kezelésének módszerei.
+ Igen, az Aspose.Words for Java használatával elfogadhatja vagy elutasíthatja a revíziókat. Használja ki a`acceptAllRevisions` és`rejectAllRevisions` revíziók kezelésének módszerei.
 
 ### Létrehozható egy dokumentumból több verzió?
 

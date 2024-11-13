@@ -128,7 +128,7 @@ Csoportalakzatok hozzáadása a Word-dokumentumokhoz nem kell, hogy bonyolult fo
  Teljesen! Minden alakzat egyedileg formázható a következőben elérhető tulajdonságok segítségével`Shape` osztály.
 
 ### Hogyan helyezhetem el a GroupShape-ot a dokumentumban?
- Elhelyezheti a`GroupShape` beállításával`Left`és`Top` tulajdonságait.
+ Elhelyezheti a`GroupShape` beállításával`Left` és`Top` tulajdonságait.
 
 ### Hozzáadhatok szöveget az alakzatokhoz a GroupShape-en belül?
  Igen, szöveget adhat az alakzatokhoz a`AppendChild` módszer hozzáadásához a`Paragraph` tartalmazó`Run` csomópontok szöveggel.

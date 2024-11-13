@@ -1,37 +1,37 @@
 ---
-title: Sottolinea
-linktitle: Sottolinea
+title: Enfasi
+linktitle: Enfasi
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come creare testo enfatizzato in Markdown utilizzando Aspose.Words per .NET. Questa guida tratta gli stili grassetto, corsivo e combinato con istruzioni dettagliate.
+description: Scopri come creare testo enfatizzato in Markdown usando Aspose.Words per .NET. Questa guida copre gli stili grassetto, corsivo e combinato con istruzioni passo-passo.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/emphases/
 ---
 ## Introduzione
 
-Markdown è un linguaggio di markup leggero che puoi utilizzare per aggiungere elementi di formattazione a documenti di testo normale. In questa guida, approfondiremo l'utilizzo di Aspose.Words per .NET per creare file Markdown con testo enfatizzato, come gli stili grassetto e corsivo. Che tu stia creando documentazione, un post sul blog o qualsiasi testo che abbia bisogno di un po' di stile, questo tutorial ti guiderà attraverso ogni fase del processo.
+Markdown è un linguaggio di markup leggero che puoi usare per aggiungere elementi di formattazione a documenti di testo in chiaro. In questa guida, ci immergeremo nei dettagli dell'uso di Aspose.Words per .NET per creare file Markdown con testo enfatizzato, come stili grassetto e corsivo. Che tu stia creando documentazione, un post di blog o qualsiasi testo che abbia bisogno di un po' di stile, questo tutorial ti guiderà attraverso ogni fase del processo.
 
 ## Prerequisiti
 
-Prima di addentrarci nel codice, assicuriamoci di avere tutto ciò di cui abbiamo bisogno per iniziare:
+Prima di passare al codice, assicuriamoci di avere tutto il necessario per iniziare:
 
-1.  Libreria Aspose.Words per .NET: assicurati di avere installata la versione più recente di Aspose.Words per .NET. Puoi[scaricalo qui](https://releases.aspose.com/words/net/).
+1.  Libreria Aspose.Words per .NET: assicurati di avere installata l'ultima versione di Aspose.Words per .NET. Puoi[scaricalo qui](https://releases.aspose.com/words/net/).
 2. Ambiente di sviluppo: un ambiente di sviluppo .NET adatto, come Visual Studio.
-3. Conoscenza di base di C#: comprendere le basi della programmazione C# sarà utile.
-4. Nozioni di base su Markdown: la familiarità con la sintassi di Markdown ti aiuterà a comprendere meglio il contesto.
+3. Conoscenza di base di C#: sarà utile comprendere le basi della programmazione in C#.
+4. Nozioni di base di Markdown: avere familiarità con la sintassi di Markdown ti aiuterà a comprendere meglio il contesto.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per lavorare con Aspose.Words per .NET, è necessario importare gli spazi dei nomi necessari. Aggiungi le seguenti direttive using nella parte superiore del file di codice:
+Per lavorare con Aspose.Words per .NET, devi importare i namespace necessari. Aggiungi le seguenti direttive using all'inizio del tuo file di codice:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-## Passaggio 1: configurazione del documento e di DocumentBuilder
+## Passaggio 1: impostazione del documento e di DocumentBuilder
 
-Per prima cosa, dobbiamo creare un nuovo documento Word e inizializzare a`DocumentBuilder` per iniziare ad aggiungere contenuti.
+Prima di tutto, dobbiamo creare un nuovo documento Word e inizializzare un`DocumentBuilder` per iniziare ad aggiungere contenuti.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,11 +39,11 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- IL`dataDir` la variabile è un segnaposto per la directory in cui salverai il file Markdown. Assicurati di sostituire "LA TUA DIRECTORY DOCUMENTI" con il percorso effettivo.
+IL`dataDir` variabile è un segnaposto per la directory in cui salverai il tuo file Markdown. Assicurati di sostituire "YOUR DOCUMENT DIRECTORY" con il percorso effettivo.
 
-## Passaggio 2: scrivere testo normale
+## Fase 2: Scrittura di testo normale
 
-Ora aggiungiamo del testo semplice al nostro documento. Questo servirà come base per dimostrare l'enfasi del testo.
+Ora, aggiungiamo del testo semplice al nostro documento. Questo servirà come base per dimostrare l'enfasi del testo.
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as indicators of emphases.");
@@ -54,7 +54,7 @@ builder.Write("You can write ");
 
 ## Passaggio 3: aggiunta di testo in grassetto
 
- Per aggiungere testo in grassetto in Markdown, avvolgi il testo desiderato tra doppi asterischi (``). In Aspose.Words per .NET, puoi ottenere questo risultato impostando il file`Bold` proprietà del`Font` opporsi a`true`.
+ Per aggiungere testo in grassetto in Markdown, avvolgi il testo desiderato tra doppi asterischi (``). In Aspose.Words per .NET, puoi ottenere questo risultato impostando`Bold` proprietà del`Font` opporsi a`true`.
 
 ```csharp
 builder.Font.Bold = true;
@@ -63,11 +63,11 @@ builder.Font.Bold = false;
 builder.Write(" or ");
 ```
 
-Questo frammento di codice imposta il testo "grassetto" su grassetto e quindi ripristina il testo normale per la parola "o".
+Questo frammento di codice imposta il testo "bold" in grassetto e poi ripristina il testo normale per la parola "or".
 
 ## Passaggio 4: aggiunta di testo in corsivo
 
-Il testo in corsivo in Markdown è racchiuso tra singoli asterischi (`*` ). Allo stesso modo, imposta il`Italic` proprietà del`Font` opporsi a`true`.
+Il testo corsivo in Markdown è racchiuso tra asterischi singoli (`*` ). Allo stesso modo, impostare il`Italic` proprietà del`Font` opporsi a`true`.
 
 ```csharp
 builder.Font.Italic = true;
@@ -76,11 +76,11 @@ builder.Font.Italic = false;
 builder.Writeln(" text.");
 ```
 
-Ciò renderà "corsivo" in stile corsivo, seguito dal testo normale.
+In questo modo la parola "corsivo" verrà visualizzata in stile corsivo, seguita dal testo normale.
 
 ## Passaggio 5: combinazione di testo in grassetto e corsivo
 
-Puoi combinare gli stili grassetto e corsivo racchiudendo il testo in tripli asterischi (`*` ). Impostali entrambi`Bold`E`Italic` proprietà a`true`.
+È possibile combinare gli stili grassetto e corsivo racchiudendo il testo in tre asterischi (`*` ). Imposta entrambi`Bold` E`Italic` proprietà a`true`.
 
 ```csharp
 builder.Write("You can also write ");
@@ -92,7 +92,7 @@ builder.Font.Italic = false;
 builder.Write(" text.");
 ```
 
-Questo frammento mostra come applicare sia lo stile grassetto che quello corsivo a "BoldItalic".
+Questo frammento mostra come applicare gli stili grassetto e corsivo a "BoldItalic".
 
 ## Passaggio 6: salvataggio del documento come Markdown
 
@@ -106,21 +106,21 @@ Questa riga salva il documento nella directory specificata con il nome file "Wor
 
 ## Conclusione
 
-Ed ecco qua! Ora hai imparato come creare testo enfatizzato in Markdown utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione a livello di codice dei documenti Word e la loro esportazione in vari formati, incluso Markdown. Seguendo i passaggi descritti in questa guida, puoi arricchire i tuoi documenti con testo in grassetto e corsivo, rendendoli più accattivanti e leggibili.
+Ed ecco fatto! Ora hai imparato a creare testo enfatizzato in Markdown usando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione programmatica di documenti Word e la loro esportazione in vari formati, incluso Markdown. Seguendo i passaggi descritti in questa guida, puoi migliorare i tuoi documenti con testo in grassetto e corsivo, rendendoli più accattivanti e leggibili.
 
 ## Domande frequenti
 
-### Posso utilizzare altri stili di testo in Markdown con Aspose.Words per .NET?
-Sì, puoi utilizzare altri stili come intestazioni, elenchi e blocchi di codice. Aspose.Words per .NET supporta un'ampia gamma di opzioni di formattazione Markdown.
+### Posso usare altri stili di testo in Markdown con Aspose.Words per .NET?
+Sì, puoi usare altri stili come intestazioni, elenchi e blocchi di codice. Aspose.Words per .NET supporta un'ampia gamma di opzioni di formattazione Markdown.
 
 ### Come posso installare Aspose.Words per .NET?
- È possibile scaricare la libreria da[Pagina delle versioni di Aspose](https://releases.aspose.com/words/net/) e seguire le istruzioni di installazione fornite.
+ Puoi scaricare la libreria da[Pagina delle release di Aspose](https://releases.aspose.com/words/net/) seguire le istruzioni di installazione fornite.
 
 ### È disponibile una prova gratuita per Aspose.Words per .NET?
- Sì, puoi scaricare un file[prova gratuita](https://releases.aspose.com/) per testare le funzionalità di Aspose.Words per .NET.
+ Sì, puoi scaricare un[prova gratuita](https://releases.aspose.com/) per testare le funzionalità di Aspose.Words per .NET.
 
-### Posso ottenere supporto se riscontro problemi?
- Assolutamente! Puoi visitare il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8) per ottenere aiuto dalla comunità e dal team Aspose.
+### Posso ricevere assistenza se riscontro problemi?
+ Assolutamente! Puoi visitare il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8) per ricevere aiuto dalla community e dal team Aspose.
 
 ### Come posso ottenere una licenza temporanea per Aspose.Words per .NET?
- Puoi ottenere a[licenza temporanea](https://purchase.aspose.com/temporary-license/) per valutare tutte le capacità della biblioteca.
+ Puoi ottenere un[licenza temporanea](https://purchase.aspose.com/temporary-license/) per valutare tutte le capacità della biblioteca.

@@ -26,7 +26,7 @@ doc.save("Your Directory Path" + "SplitDocument.ByHeadingsHtml.html", options);
 
 ## Aufteilung von Dokumenten nach Abschnitten
 
-Eine weitere Möglichkeit zum Aufteilen von Dokumenten besteht in der Unterteilung nach Abschnitten. Abschnitte stellen in der Regel unterschiedliche Teile eines Dokuments dar, und die Unterteilung nach Abschnitten kann zum Erstellen kleinerer, überschaubarerer Dokumente nützlich sein.
+Eine weitere Möglichkeit zum Aufteilen von Dokumenten besteht in der Unterteilung in Abschnitte. Abschnitte stellen in der Regel unterschiedliche Teile eines Dokuments dar, und die Unterteilung in Abschnitte kann nützlich sein, um kleinere, überschaubarere Dokumente zu erstellen.
 
 ```java
 // Java-Code zum Aufteilen eines Dokuments in Abschnitte mit Aspose.Words für Java
@@ -90,7 +90,7 @@ extractedPages.save("Your Directory Path" + "SplitDocument.ByPageRange.docx");
 
 ## Abschluss
 
-In diesem Handbuch haben wir verschiedene Techniken zum Aufteilen von Dokumenten in Aspose.Words für Java untersucht. Unabhängig davon, ob Sie nach Überschriften, Abschnitten, Seiten oder bestimmten Seitenbereichen aufteilen müssen, bietet Aspose.Words für Java die Flexibilität und Leistung, um diese Aufgaben effizient zu erledigen. Indem Sie den bereitgestellten Java-Codeausschnitten und Beispielen folgen, können Sie noch heute mit der effektiveren Verwaltung Ihrer Dokumente beginnen.
+In diesem Handbuch haben wir verschiedene Techniken zum Aufteilen von Dokumenten in Aspose.Words für Java untersucht. Egal, ob Sie nach Überschriften, Abschnitten, Seiten oder bestimmten Seitenbereichen aufteilen müssen, Aspose.Words für Java bietet die Flexibilität und Leistung, um diese Aufgaben effizient zu erledigen. Indem Sie den bereitgestellten Java-Codeausschnitten und Beispielen folgen, können Sie noch heute damit beginnen, Ihre Dokumente effektiver zu verwalten.
 
 ## Häufig gestellte Fragen
 

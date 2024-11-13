@@ -1,27 +1,27 @@
 ---
-title: Dapatkan Gaya Dokumen Di Word
-linktitle: Dapatkan Gaya Dokumen Di Word
+title: Dapatkan Gaya Dokumen di Word
+linktitle: Dapatkan Gaya Dokumen di Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mendapatkan gaya dokumen di Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang mendetail ini. Akses dan kelola gaya secara terprogram di aplikasi .NET Anda.
+description: Pelajari cara mendapatkan gaya dokumen di Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang terperinci ini. Akses dan kelola gaya secara terprogram di aplikasi .NET Anda.
 type: docs
 weight: 10
 url: /id/net/programming-with-styles-and-themes/access-styles/
 ---
 ## Perkenalan
 
-Apakah Anda siap terjun ke dunia penataan dokumen di Word? Baik Anda sedang menyusun laporan yang rumit atau sekadar mengubah resume Anda, memahami cara mengakses dan memanipulasi gaya dapat menjadi terobosan baru. Dalam tutorial ini, kita akan menjelajahi cara mendapatkan gaya dokumen menggunakan Aspose.Words untuk .NET, pustaka canggih yang memungkinkan Anda berinteraksi secara terprogram dengan dokumen Word.
+Apakah Anda siap untuk menyelami dunia penataan dokumen di Word? Baik Anda sedang menyusun laporan yang rumit atau sekadar mengubah resume Anda, memahami cara mengakses dan memanipulasi gaya dapat menjadi pengubah permainan. Dalam tutorial ini, kita akan menjelajahi cara mendapatkan gaya dokumen menggunakan Aspose.Words untuk .NET, pustaka canggih yang memungkinkan Anda berinteraksi secara terprogram dengan dokumen Word.
 
 ## Prasyarat
 
-Sebelum kita masuk, pastikan Anda memiliki yang berikut ini:
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
-1.  Aspose.Words untuk .NET: Anda harus menginstal perpustakaan ini di lingkungan .NET Anda. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Anda perlu menginstal pustaka ini di lingkungan .NET Anda. Anda dapat[unduh disini](https://releases.aspose.com/words/net/).
 2. Pengetahuan Dasar tentang .NET: Keakraban dengan C# atau bahasa .NET lainnya akan membantu Anda memahami cuplikan kode yang disediakan.
 3. Lingkungan Pengembangan: Pastikan Anda memiliki IDE seperti Visual Studio yang disiapkan untuk menulis dan mengeksekusi kode .NET.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk mulai bekerja dengan Aspose.Words, Anda harus mengimpor namespace yang diperlukan. Hal ini memastikan bahwa kode Anda dapat mengenali dan memanfaatkan kelas dan metode Aspose.Words.
+Untuk mulai bekerja dengan Aspose.Words, Anda perlu mengimpor namespace yang diperlukan. Ini memastikan bahwa kode Anda dapat mengenali dan memanfaatkan kelas dan metode Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -30,7 +30,7 @@ using System;
 
 ## Langkah 1: Buat Dokumen Baru
 
-Pertama, Anda harus membuat sebuah instance dari`Document` kelas. Kelas ini mewakili dokumen Word Anda dan menyediakan akses ke berbagai properti dokumen, termasuk gaya.
+Pertama, Anda perlu membuat instance dari`Document` Kelas ini mewakili dokumen Word Anda dan menyediakan akses ke berbagai properti dokumen, termasuk gaya.
 
 ```csharp
 Document doc = new Document();
@@ -40,17 +40,17 @@ Document doc = new Document();
 
 ## Langkah 2: Akses Koleksi Gaya
 
-Setelah Anda memiliki objek dokumen, Anda dapat mengakses koleksi gayanya. Koleksi ini mencakup semua gaya yang ditentukan dalam dokumen. 
+Setelah Anda memiliki objek dokumen, Anda dapat mengakses koleksi gayanya. Koleksi ini mencakup semua gaya yang ditetapkan dalam dokumen. 
 
 ```csharp
 StyleCollection styles = doc.Styles;
 ```
 
-`StyleCollection` adalah kumpulan`Style` objek. Setiap`Style` objek mewakili satu gaya dalam dokumen.
+`StyleCollection` adalah kumpulan dari`Style` objek. Setiap`Style` Objek mewakili satu gaya dalam dokumen.
 
-## Langkah 3: Ulangi Gaya
+## Langkah 3: Ulangi Melalui Gaya
 
-Selanjutnya, Anda ingin mengulangi koleksi gaya untuk mengakses dan menampilkan nama setiap gaya. Di sinilah Anda dapat menyesuaikan keluaran sesuai kebutuhan Anda.
+Selanjutnya, Anda perlu menelusuri koleksi gaya untuk mengakses dan menampilkan nama setiap gaya. Di sinilah Anda dapat menyesuaikan output sesuai kebutuhan Anda.
 
 ```csharp
 string styleName = "";
@@ -70,15 +70,15 @@ foreach (Style style in styles)
 }
 ```
 
-Berikut rincian fungsi kode ini:
+Berikut rincian apa yang dilakukan kode ini:
 
--  Inisialisasi`styleName`: Kita memulai dengan string kosong untuk membuat daftar nama gaya.
--  Ulangi gaya: The`foreach` loop mengulangi masing-masing`Style` di`styles` koleksi.
-- Perbarui dan Tampilkan`styleName` : Untuk setiap gaya, kami menambahkan namanya`styleName` dan mencetaknya.
+-  Inisialisasi`styleName`:Kita mulai dengan string kosong untuk membangun daftar nama gaya kita.
+-  Ulangi melalui gaya:`foreach` loop berulang pada setiap`Style` di dalam`styles` koleksi.
+- Perbarui dan Tampilkan`styleName` :Untuk setiap gaya, kami menambahkan namanya ke`styleName` dan mencetaknya.
 
 ## Langkah 4: Menyesuaikan Output
 
-Bergantung pada kebutuhan Anda, Anda mungkin ingin menyesuaikan cara gaya ditampilkan. Misalnya, Anda dapat memformat keluaran secara berbeda atau memfilter gaya berdasarkan kriteria tertentu.
+Bergantung pada kebutuhan Anda, Anda mungkin ingin menyesuaikan cara gaya ditampilkan. Misalnya, Anda dapat memformat output secara berbeda atau memfilter gaya berdasarkan kriteria tertentu.
 
 ```csharp
 foreach (Style style in styles)
@@ -94,25 +94,25 @@ foreach (Style style in styles)
 }
 ```
 
- Dalam contoh ini, kami membedakan antara gaya bawaan dan gaya khusus dengan mencentang`IsBuiltin` milik.
+ Dalam contoh ini, kami membedakan antara gaya bawaan dan gaya kustom dengan memeriksa`IsBuiltin` milik.
 
 ## Kesimpulan
 
-Mengakses dan memanipulasi gaya dalam dokumen Word menggunakan Aspose.Words untuk .NET dapat menyederhanakan banyak tugas pemrosesan dokumen. Baik Anda mengotomatiskan pembuatan dokumen, memperbarui gaya, atau sekadar menjelajahi properti dokumen, memahami cara bekerja dengan gaya adalah keterampilan utama. Dengan langkah-langkah yang dijelaskan dalam tutorial ini, Anda sudah siap untuk menguasai gaya dokumen.
+Mengakses dan memanipulasi gaya dalam dokumen Word menggunakan Aspose.Words untuk .NET dapat menyederhanakan banyak tugas pemrosesan dokumen. Baik Anda mengotomatiskan pembuatan dokumen, memperbarui gaya, atau sekadar menjelajahi properti dokumen, memahami cara bekerja dengan gaya merupakan keterampilan utama. Dengan langkah-langkah yang diuraikan dalam tutorial ini, Anda akan segera menguasai gaya dokumen.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
 Aspose.Words untuk .NET adalah pustaka yang memungkinkan Anda membuat, mengedit, dan memanipulasi dokumen Word secara terprogram dalam aplikasi .NET.
 
-### Apakah saya perlu menginstal perpustakaan lain untuk bekerja dengan Aspose.Words?
-Tidak, Aspose.Words adalah perpustakaan mandiri dan tidak memerlukan perpustakaan tambahan untuk fungsionalitas dasar.
+### Apakah saya perlu menginstal pustaka lain untuk bekerja dengan Aspose.Words?
+Tidak, Aspose.Words adalah pustaka mandiri dan tidak memerlukan pustaka tambahan untuk fungsionalitas dasar.
 
 ### Bisakah saya mengakses gaya dari dokumen Word yang sudah memiliki konten?
 Ya, Anda dapat mengakses dan memanipulasi gaya dalam dokumen yang sudah ada maupun yang baru dibuat.
 
-### Bagaimana cara memfilter gaya untuk hanya menampilkan tipe tertentu?
+### Bagaimana saya bisa memfilter gaya untuk hanya menampilkan tipe tertentu?
  Anda dapat memfilter gaya dengan memeriksa properti seperti`IsBuiltin` atau menggunakan logika khusus berdasarkan atribut gaya.
 
 ### Di mana saya dapat menemukan lebih banyak sumber daya tentang Aspose.Words untuk .NET?
- Anda dapat menjelajah lebih jauh[Di Sini](https://reference.aspose.com/words/net/).
+ Anda dapat menjelajahi lebih lanjut[Di Sini](https://reference.aspose.com/words/net/).

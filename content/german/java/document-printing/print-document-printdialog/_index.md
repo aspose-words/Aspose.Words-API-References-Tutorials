@@ -104,4 +104,4 @@ Ja, Aspose.Words für Java ist mit verschiedenen Betriebssystemen kompatibel, da
 
 ### Wo finde ich weitere Dokumentation und Beispiele?
 
- Ausführliche Dokumentation und Beispiele zu Aspose.Words für Java finden Sie auf der Webseite:[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/).
+ Eine umfassende Dokumentation und Beispiele zu Aspose.Words für Java finden Sie auf der Webseite:[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/).

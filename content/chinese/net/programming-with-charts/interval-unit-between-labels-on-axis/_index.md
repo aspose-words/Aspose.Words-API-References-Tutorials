@@ -9,13 +9,13 @@ url: /zh/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
 ## 介绍
 
-欢迎阅读我们关于使用 Aspose.Words for .NET 的综合指南！无论您是经验丰富的开发人员还是刚刚起步，本文都将引导您了解利用 Aspose.Words 在 .NET 应用程序中以编程方式操作和生成 Word 文档所需的一切知识。
+欢迎阅读我们关于使用 Aspose.Words for .NET 的综合指南！无论您是经验丰富的开发人员还是刚刚入门，本文都将引导您了解利用 Aspose.Words 在 .NET 应用程序中以编程方式操作和生成 Word 文档所需的一切知识。
 
 ## 先决条件
 
 在深入了解 Aspose.Words 之前，请确保您已完成以下设置：
 - 您的计算机上安装了 Visual Studio
-- 具备 C# 编程语言的基础知识
+- C# 编程语言的基础知识
 - 访问 Aspose.Words for .NET 库（下载链接[这里](https://releases.aspose.com/words/net/）)
 
 ## 导入命名空间并开始使用

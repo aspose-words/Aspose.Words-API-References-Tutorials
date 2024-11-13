@@ -97,6 +97,6 @@ Igen, az Aspose.Words for Java a dokumentumformátumok széles skáláját támo
 
 ### 5. kérdés: Hol kérhetek támogatást, vagy hol tehetek fel kérdéseket az Aspose.Words for Java-val kapcsolatban?
 
- Ha kérdése vagy támogatása van, keresse fel a[Aspose.Words for Java fórum](https://forum.aspose.com/).
+Ha kérdése vagy támogatása van, keresse fel a[Aspose.Words for Java fórum](https://forum.aspose.com/).
 
 Most, hogy elsajátította az alakzatok megjelenítését az Aspose.Words for Java programmal, készen áll arra, hogy kiaknázza a sokoldalú API-ban rejlő lehetőségeket a dokumentumfeldolgozási projektjeiben. Boldog kódolást!

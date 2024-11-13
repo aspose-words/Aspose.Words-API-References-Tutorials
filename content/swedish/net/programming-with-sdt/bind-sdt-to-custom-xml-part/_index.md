@@ -62,7 +62,7 @@ Här skapar vi en ny anpassad XML-del med en unik identifierare och lägger till
 Efter att ha lagt till den anpassade XML-delen skapar vi en SDT för att visa XML-data.
 
 ```csharp
-// Skapa en strukturerad dokumenttagg (SDT)
+//Skapa en strukturerad dokumenttagg (SDT)
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
 doc.FirstSection.Body.AppendChild(sdt);
 ```

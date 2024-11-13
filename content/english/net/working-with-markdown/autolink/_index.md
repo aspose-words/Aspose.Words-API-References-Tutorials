@@ -68,10 +68,8 @@ Now, clicking "Contact Support" will open the default email client with a new em
 Hyperlinks can be customized to fit the style of your document. You can change the font color, size, and other attributes using the `Font` property of the DocumentBuilder.
 
 ```csharp
-// Customize the hyperlink appearance.
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.Font.Underline = Underline.Single;
-builder.InsertHyperlink("Styled Link", "https://www.aspose.com", false);
+builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
 ```
 
 This snippet will insert a blue, underlined hyperlink, making it stand out in your document.

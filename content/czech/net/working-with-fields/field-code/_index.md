@@ -70,7 +70,7 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
- Vysvětlení: Tento fragment kódu prochází každým polem v dokumentu. Pro každé pole načte kód pole a výsledek pole. The`GetFieldCode()` metoda vrací nezpracovaný kód pole, zatímco`Result` vlastnost vám dává hodnotu nebo výsledek vytvořený polem.
+ Vysvětlení: Tento fragment kódu prochází každým polem v dokumentu. Pro každé pole načte kód pole a výsledek pole. The`GetFieldCode()` metoda vrací nezpracovaný kód pole, zatímco metoda`Result` vlastnost vám dává hodnotu nebo výsledek vytvořený polem.
 
 ## Krok 4: Zpracujte kódy polí
 

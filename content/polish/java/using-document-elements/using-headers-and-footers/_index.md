@@ -8,21 +8,21 @@ weight: 16
 url: /pl/java/using-document-elements/using-headers-and-footers/
 ---
 
-W tym obszernym przewodniku przeprowadzimy Cię przez proces pracy z nagłówkami i stopkami w Aspose.Words dla Java. Nagłówki i stopki są niezbędnymi elementami w formatowaniu dokumentów, a Aspose.Words zapewnia potężne narzędzia do ich tworzenia i dostosowywania do własnych potrzeb.
+W tym kompleksowym przewodniku przeprowadzimy Cię przez proces pracy z nagłówkami i stopkami w Aspose.Words for Java. Nagłówki i stopki są niezbędnymi elementami formatowania dokumentów, a Aspose.Words zapewnia potężne narzędzia do ich tworzenia i dostosowywania zgodnie z Twoimi potrzebami.
 
 Przyjrzyjmy się teraz szczegółowo każdemu z tych kroków.
 
 ## 1. Wprowadzenie do Aspose.Words
 
-Aspose.Words to potężny interfejs API Java, który umożliwia programowe tworzenie, manipulowanie i renderowanie dokumentów programu Word. Zapewnia rozbudowane funkcje formatowania dokumentów, w tym nagłówków i stopek.
+Aspose.Words to potężne API Java, które umożliwia programowe tworzenie, manipulowanie i renderowanie dokumentów Word. Zapewnia rozbudowane funkcje formatowania dokumentów, w tym nagłówki i stopki.
 
 ## 2. Konfigurowanie środowiska Java
 
- Zanim zaczniesz używać Aspose.Words, upewnij się, że masz poprawnie skonfigurowane środowisko programistyczne Java. Niezbędne instrukcje konfiguracji można znaleźć na stronie dokumentacji Aspose.Words:[Dokumentacja Java Aspose.Words](https://reference.aspose.com/words/java/).
+ Zanim zaczniesz używać Aspose.Words, upewnij się, że Twoje środowisko programistyczne Java jest poprawnie skonfigurowane. Niezbędne instrukcje konfiguracji znajdziesz na stronie dokumentacji Aspose.Words:[Dokumentacja Aspose.Words Java](https://reference.aspose.com/words/java/).
 
 ## 3. Tworzenie nowego dokumentu
 
-Aby pracować z nagłówkami i stopkami, musisz utworzyć nowy dokument za pomocą Aspose.Words. Poniższy kod demonstruje, jak to zrobić:
+Aby pracować z nagłówkami i stopkami, musisz utworzyć nowy dokument za pomocą Aspose.Words. Poniższy kod pokazuje, jak to zrobić:
 
 ```java
 // Kod Java do tworzenia nowego dokumentu
@@ -33,7 +33,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 4. Zrozumienie ustawień strony
 
- Ustawienia strony mają kluczowe znaczenie dla kontrolowania układu dokumentu. Za pomocą opcji można określić różne właściwości związane z nagłówkami i stopkami`PageSetup` klasa. Na przykład:
+ Ustawienia strony są kluczowe dla kontrolowania układu dokumentu. Możesz określić różne właściwości związane z nagłówkami i stopkami za pomocą`PageSetup` klasa. Na przykład:
 
 ```java
 // Konfigurowanie właściwości strony
@@ -45,16 +45,16 @@ pageSetup.setHeaderDistance(20.0);
 
 ## 5. Inny nagłówek/stopka pierwszej strony
 
-Aspose.Words umożliwia ustawienie różnych nagłówków i stopek na pierwszej stronie dokumentu. Używać`pageSetup.setDifferentFirstPageHeaderFooter(true);` aby włączyć tę funkcję.
+Aspose.Words pozwala na posiadanie różnych nagłówków i stopek dla pierwszej strony dokumentu. Użyj`pageSetup.setDifferentFirstPageHeaderFooter(true);` aby włączyć tę funkcję.
 
 ## 6. Praca z nagłówkami
 
 ### 6.1. Dodawanie tekstu do nagłówków
 
- Możesz dodać tekst do nagłówków za pomocą`DocumentBuilder`. Oto przykład:
+ Możesz dodać tekst do nagłówków za pomocą`DocumentBuilder`Oto przykład:
 
 ```java
-// Dodanie tekstu do nagłówka pierwszej strony
+// Dodawanie tekstu do nagłówka pierwszej strony
 builder.moveToHeaderFooter(HeaderFooterType.HEADER_FIRST);
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 builder.getFont().setName("Arial");
@@ -65,7 +65,7 @@ builder.write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 
 ### 6.2. Wstawianie obrazów do nagłówków
 
- Aby wstawić obrazy do nagłówków, możesz użyć metody`insertImage` metoda. Oto przykład:
+ Aby wstawić obrazy do nagłówków, możesz użyć`insertImage` metoda. Oto przykład:
 
 ```java
 // Wstawianie obrazu do nagłówka
@@ -73,45 +73,45 @@ builder.insertImage(getImagesDir() + "Graphics Interchange Format.gif", Relative
     RelativeVerticalPosition.PAGE, 10.0, 50.0, 50.0, WrapType.THROUGH);
 ```
 
-### 6.3. Dostosowywanie stylów nagłówków
+### 6.3. Dostosowywanie stylów nagłówka
 
-Możesz dostosować style nagłówków, ustawiając różne właściwości, takie jak czcionka, wyrównanie i inne, jak pokazano w powyższych przykładach.
+Możesz dostosować style nagłówka, ustawiając różne właściwości, takie jak czcionka, wyrównanie i inne, jak pokazano w powyższych przykładach.
 
 ## 7. Praca ze stopkami
 
 ### 7.1. Dodawanie tekstu do stopek
 
- Podobnie jak w przypadku nagłówków, możesz dodać tekst do stopek za pomocą`DocumentBuilder`. Oto przykład:
+ Podobnie jak w przypadku nagłówków, do stopek można dodawać tekst za pomocą`DocumentBuilder`Oto przykład:
 
 ```java
 // Dodawanie tekstu do stopki głównej
 builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-// W razie potrzeby wstaw tekst i pola
+// Wstaw tekst i pola według potrzeb
 ```
 
-### 7.2. Wstawianie obrazów do stopek
+### 7.2. Wstawianie obrazków do stopek
 
- Aby wstawić obrazy do stopek, użyj opcji`insertImage` metoda, podobnie jak w nagłówkach.
+ Aby wstawić obrazy do stopek, użyj`insertImage` metody, podobnie jak w nagłówkach.
 
-### 7.3. Dostosowywanie stylów stopek
+### 7.3. Dostosowywanie stylów stopki
 
- Dostosuj style stopek za pomocą`DocumentBuilder`podobnie jak dostosowywanie nagłówków.
+ Dostosuj style stopki za pomocą`DocumentBuilder`podobnie jak dostosowywanie nagłówków.
 
-## 8. Numeracja stron
+## 8. Numerowanie stron
 
- Możesz umieścić numery stron w nagłówkach i stopkach, korzystając z pól takich jak`PAGE`I`NUMPAGES`. Pola te są automatycznie aktualizowane w miarę dodawania lub usuwania stron.
+ Numery stron można umieszczać w nagłówkach i stopkach za pomocą pól takich jak:`PAGE` I`NUMPAGES`. Pola te są automatycznie aktualizowane w miarę dodawania i usuwania stron.
 
 ## 9. Informacje o prawach autorskich w stopkach
 
-Aby dodać informacje o prawach autorskich do stopki dokumentu, możesz użyć tabeli składającej się z dwóch komórek, wyrównując jedną do lewej, a drugą do prawej, jak pokazano we fragmencie kodu.
+Aby dodać informacje o prawach autorskich do stopki dokumentu, możesz użyć tabeli z dwiema komórkami, wyrównując jedną do lewej, a drugą do prawej, jak pokazano we fragmencie kodu.
 
 ## 10. Praca z wieloma sekcjami
 
-Aspose.Words umożliwia pracę z wieloma sekcjami w dokumencie. Dla każdej sekcji możesz ustawić różne ustawienia strony oraz nagłówki/stopki.
+Aspose.Words umożliwia pracę z wieloma sekcjami w dokumencie. Możesz ustawić różne ustawienia strony i nagłówki/stopki dla każdej sekcji.
 
-## 11. Orientacja krajobrazowa
+## 11. Orientacja pozioma
 
-W razie potrzeby możesz zmienić orientację określonych sekcji na tryb poziomy.
+W razie potrzeby można zmienić orientację poszczególnych sekcji na tryb poziomy.
 
 ## 12. Kopiowanie nagłówków/stopek z poprzednich sekcji
 
@@ -119,7 +119,7 @@ Kopiowanie nagłówków i stopek z poprzednich sekcji może zaoszczędzić czas 
 
 ## 13. Zapisywanie dokumentu
 
-Po utworzeniu i dostosowaniu dokumentu nie zapomnij zapisać go za pomocą`doc.save()` metoda.
+Po utworzeniu i dostosowaniu dokumentu nie zapomnij go zapisać za pomocą`doc.save()` metoda.
 
 ## Kompletny kod źródłowy
 ```java
@@ -127,8 +127,8 @@ Po utworzeniu i dostosowaniu dokumentu nie zapomnij zapisać go za pomocą`doc.s
         DocumentBuilder builder = new DocumentBuilder(doc);
         Section currentSection = builder.getCurrentSection();
         PageSetup pageSetup = currentSection.getPageSetup();
-        // Określ, czy chcemy, aby nagłówki/stopki pierwszej strony różniły się od pozostałych stron.
-        // Aby określić, możesz także użyć właściwości PageSetup.OddAndEvenPagesHeaderFooter
+        // Określ, czy nagłówki/stopki pierwszej strony mają się różnić od nagłówków/stopek pozostałych stron.
+        // Można również użyć właściwości PageSetup.OddAndEvenPagesHeaderFooter, aby określić
         // różne nagłówki/stopki dla stron nieparzystych i parzystych.
         pageSetup.setDifferentFirstPageHeaderFooter(true);
         pageSetup.setHeaderDistance(20.0);
@@ -140,20 +140,20 @@ Po utworzeniu i dostosowaniu dokumentu nie zapomnij zapisać go za pomocą`doc.s
         builder.write("Aspose.Words Header/Footer Creation Primer - Title Page.");
         pageSetup.setHeaderDistance(20.0);
         builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
-        // Wstaw umieszczony obraz w górnym/lewym rogu nagłówka.
+        // Wstaw odpowiednio umieszczony obraz w lewym górnym rogu nagłówka.
         // Odległość od górnej/lewej krawędzi strony jest ustawiona na 10 punktów.
         builder.insertImage(getImagesDir() + "Graphics Interchange Format.gif", RelativeHorizontalPosition.PAGE, 10.0,
             RelativeVerticalPosition.PAGE, 10.0, 50.0, 50.0, WrapType.THROUGH);
         builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
         builder.write("Aspose.Words Header/Footer Creation Primer.");
         builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-        // Tablicę z dwiema komórkami wykorzystujemy do utworzenia jednej części tekstu w wierszu (z numeracją stron).
-        // Należy wyrównać do lewej, a drugą część tekstu (zgodnie z prawami autorskimi) do prawej.
+        // Używamy tabeli z dwiema komórkami, aby utworzyć jedną część tekstu w wierszu (z numeracją stron).
+        // Należy wyrównać do lewej, a pozostałą część tekstu (z prawami autorskimi) do prawej.
         builder.startTable();
         builder.getCellFormat().clearFormatting();
         builder.insertCell();
         builder.getCellFormat().setPreferredWidth(PreferredWidth.fromPercent(100 / 3));
-        // Używa pól PAGE i NUMPAGES do automatycznego obliczenia bieżącego numeru strony i wielu stron.
+        // Używa pól PAGE i NUMPAGES do automatycznego obliczania numeru bieżącej strony i liczby kolejnych stron.
         builder.write("Page ");
         builder.insertField("PAGE", "");
         builder.write(" of ");
@@ -166,22 +166,22 @@ Po utworzeniu i dostosowaniu dokumentu nie zapomnij zapisać go za pomocą`doc.s
         builder.endRow();
         builder.endTable();
         builder.moveToDocumentEnd();
-        // Zrób podział strony, aby utworzyć drugą stronę, na której będą widoczne główne nagłówki/stopki.
+        // Utwórz podział strony, aby utworzyć drugą stronę, na której będą widoczne główne nagłówki i stopki.
         builder.insertBreak(BreakType.PAGE_BREAK);
         builder.insertBreak(BreakType.SECTION_BREAK_NEW_PAGE);
         currentSection = builder.getCurrentSection();
         pageSetup = currentSection.getPageSetup();
         pageSetup.setOrientation(Orientation.LANDSCAPE);
-        // Ta sekcja nie wymaga innego nagłówka/stopki pierwszej strony, wystarczy jedna strona tytułowa w dokumencie,
-        // nagłówek/stopka tej strony została już zdefiniowana w poprzedniej sekcji.
+        // Ta sekcja nie wymaga odrębnego nagłówka/stopki na pierwszej stronie, w dokumencie potrzebujemy tylko jednej strony tytułowej,
+        // nagłówek/stopka tej strony zostały już zdefiniowane w poprzedniej sekcji.
         pageSetup.setDifferentFirstPageHeaderFooter(false);
         // W tej sekcji wyświetlane są nagłówki/stopki z poprzedniej sekcji
         // domyślnie wywołaj currentSection.HeadersFooters.LinkToPrevious(false), aby anulować tę szerokość strony
-        // jest inna dla nowej sekcji i dlatego musimy ustawić inną szerokość komórek dla tabeli stopki.
+        // jest inna dla nowej sekcji, dlatego musimy ustawić różne szerokości komórek dla tabeli stopki.
         currentSection.getHeadersFooters().linkToPrevious(false);
-        // Jeśli chcemy użyć już istniejącego zestawu nagłówków/stopek dla tej sekcji.
-        // Jednak po niewielkich modyfikacjach celowe może być skopiowanie nagłówków/stopek
-        // z poprzedniej sekcji i zastosuj niezbędne modyfikacje tam, gdzie chcemy.
+        // Jeśli chcemy wykorzystać już istniejący zestaw nagłówków/stopek dla tej sekcji.
+        // Ale po wprowadzeniu drobnych modyfikacji może być wskazane skopiowanie nagłówków i stopek
+        // z poprzedniej sekcji i zastosuj niezbędne modyfikacje tam, gdzie ich chcemy.
         copyHeadersFootersFromPreviousSection(currentSection);
         HeaderFooter primaryFooter = currentSection.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
         Row row = primaryFooter.getTables().get(0).getFirstRow();
@@ -207,23 +207,23 @@ Kod źródłowy metody copyHeadersFootersFromPreviousSection
 
 ## Wniosek
 
-tym samouczku omówiliśmy podstawy pracy z nagłówkami i stopkami w Aspose.Words dla Java. Nauczyłeś się tworzyć, dostosowywać i stylizować nagłówki i stopki, a także znasz inne podstawowe techniki formatowania dokumentów.
+tym samouczku omówiliśmy podstawy pracy z nagłówkami i stopkami w Aspose.Words for Java. Nauczyłeś się, jak tworzyć, dostosowywać i stylizować nagłówki i stopki, a także innych podstawowych technik formatowania dokumentów.
 
- Więcej szczegółów i zaawansowanych funkcji można znaleźć w[Dokumentacja Java Aspose.Words](https://reference.aspose.com/words/java/).
+ Więcej szczegółów i zaawansowanych funkcji znajdziesz w[Dokumentacja Aspose.Words Java](https://reference.aspose.com/words/java/).
 
 ## Często zadawane pytania
 
-### 1. Jak mogę dodać numery stron do stopki mojego dokumentu?
- Możesz dodać numery stron, wstawiając`PAGE` pole w stopce za pomocą Aspose.Words.
+### 1. Jak mogę dodać numery stron do stopki dokumentu?
+ Możesz dodać numery stron, wstawiając`PAGE` pole do stopki za pomocą Aspose.Words.
 
 ### 2. Czy Aspose.Words jest kompatybilny ze środowiskami programistycznymi Java?
-Tak, Aspose.Words zapewnia wsparcie dla programowania w języku Java. Upewnij się, że masz niezbędną konfigurację.
+Tak, Aspose.Words zapewnia wsparcie dla rozwoju Java. Upewnij się, że masz niezbędne ustawienia.
 
 ### 3. Czy mogę dostosować czcionkę i styl nagłówków i stopek?
-Oczywiście możesz dostosować czcionki, wyrównanie i inne style, aby Twoje nagłówki i stopki były atrakcyjne wizualnie.
+Oczywiście, możesz dostosować czcionki, wyrównanie i inne style, aby Twoje nagłówki i stopki wyglądały atrakcyjnie.
 
-### 4. Czy można mieć różne nagłówki dla stron parzystych i nieparzystych?
- Tak, możesz skorzystać`PageSetup.OddAndEvenPagesHeaderFooter` aby określić różne nagłówki dla stron nieparzystych i parzystych.
+### 4. Czy możliwe jest posiadanie różnych nagłówków dla stron nieparzystych i parzystych?
+ Tak, możesz użyć`PageSetup.OddAndEvenPagesHeaderFooter` aby określić różne nagłówki dla stron nieparzystych i parzystych.
 
 ### 5. Jak rozpocząć pracę z Aspose.Words dla Java?
- Na początek odwiedź[Dokumentacja Java Aspose.Words](https://reference.aspose.com/words/java/) aby uzyskać kompleksowe wskazówki dotyczące korzystania z interfejsu API.
+ Aby rozpocząć, odwiedź[Dokumentacja Aspose.Words Java](https://reference.aspose.com/words/java/) aby uzyskać kompleksowe wskazówki dotyczące korzystania z API.

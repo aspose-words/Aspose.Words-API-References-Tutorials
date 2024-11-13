@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ステップ2: 通常のテキストを書く
 
-ここで、ドキュメントにプレーン テキストを追加してみましょう。これは、テキストの強調を示すためのベースとして機能します。
+ここで、ドキュメントにプレーンテキストを追加してみましょう。これは、テキストの強調を示すためのベースとして機能します。
 
 ```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as indicators of emphases.");
@@ -67,7 +67,7 @@ builder.Write(" or ");
 
 ## ステップ4: 斜体テキストの追加
 
-Markdownのイタリック体テキストは、単一のアスタリスク（`*` ）。同様に、`Italic`の財産`Font`反対する`true`.
+Markdownのイタリック体テキストは単一のアスタリスク（`*` ）。同様に、`Italic`の財産`Font`反対する`true`.
 
 ```csharp
 builder.Font.Italic = true;

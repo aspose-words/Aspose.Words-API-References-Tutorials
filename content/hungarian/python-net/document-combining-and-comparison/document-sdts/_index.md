@@ -67,7 +67,7 @@ Az SDT-k dokumentumhoz való hozzáadása néhány egyszerű lépésből áll:
    doc.get_first_section().get_body().append_child(sdt)
    ```
 
-## Munka az SDT tartalomvezérlőkkel
+## Munkavégzés az SDT tartalomvezérlőkkel
 
 Az SDT tartalomvezérlők lehetővé teszik a felhasználók számára a dokumentummal való interakciót. Nézzünk meg néhány gyakori tartalomvezérlőt:
 
@@ -113,7 +113,7 @@ Az SDT-k felhasználhatók dokumentumautomatizálási forgatókönyvekhez. Létr
 
 Az SDT-k különféle testreszabási lehetőségeket kínálnak, például a betűstílusok, színek és viselkedés megváltoztatását. Beállíthat például egy helyőrző szöveget, amely útmutatást ad a felhasználóknak az SDT-k kitöltésekor.
 
-## Speciális technikák SDT-kkel
+## Fejlett technikák SDT-kkel
 
 A fejlett technikák magukban foglalják a beágyazott SDT-ket, az egyéni XML-adat-összerendelést és az SDT-kkel társított események kezelését. Ezek a technikák bonyolult dokumentumstruktúrákat és interaktívabb felhasználói élményt tesznek lehetővé.
 

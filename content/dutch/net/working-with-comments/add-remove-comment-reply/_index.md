@@ -1,27 +1,27 @@
 ---
-title: Voeg commentaar toe Antwoord verwijderen
-linktitle: Voeg commentaar toe Antwoord verwijderen
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u reactiereacties in Word-documenten kunt toevoegen en verwijderen met Aspose.Words voor .NET. Verbeter uw samenwerking aan documenten met deze stapsgewijze handleiding.
+title: Toevoegen Verwijderen Reactie Reageren
+linktitle: Toevoegen Verwijderen Reactie Reageren
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u opmerkingen kunt toevoegen en verwijderen in Word-documenten met Aspose.Words voor .NET. Verbeter uw samenwerking aan documenten met deze stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/working-with-comments/add-remove-comment-reply/
 ---
 ## Invoering
 
-Het werken met opmerkingen en hun antwoorden in Word-documenten kan uw documentbeoordelingsproces aanzienlijk verbeteren. Met Aspose.Words voor .NET kunt u deze taken automatiseren, waardoor uw workflow efficiënter en gestroomlijnder wordt. Deze tutorial begeleidt u bij het toevoegen en verwijderen van reacties en biedt een stapsgewijze handleiding om deze functie onder de knie te krijgen.
+Werken met opmerkingen en hun antwoorden in Word-documenten kan uw documentbeoordelingsproces aanzienlijk verbeteren. Met Aspose.Words voor .NET kunt u deze taken automatiseren, waardoor uw workflow efficiënter en gestroomlijnder wordt. Deze tutorial leidt u door het toevoegen en verwijderen van opmerkingenreacties en biedt een stapsgewijze handleiding om deze functie onder de knie te krijgen.
 
 ## Vereisten
 
-Voordat je in de code duikt, zorg ervoor dat je over het volgende beschikt:
+Voordat u de code induikt, moet u ervoor zorgen dat u het volgende hebt:
 
--  Aspose.Words voor .NET: Download en installeer het van[hier](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET: Download en installeer het vanaf[hier](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Visual Studio of een andere IDE die .NET ondersteunt.
-- Basiskennis van C#: Bekendheid met programmeren in C# is essentieel.
+- Basiskennis van C#: Kennis van C#-programmering is essentieel.
 
 ## Naamruimten importeren
 
-Importeer om te beginnen de benodigde naamruimten in uw C#-project:
+Om te beginnen importeert u de benodigde naamruimten in uw C#-project:
 
 ```csharp
 using System;
@@ -30,14 +30,14 @@ using Aspose.Words;
 
 ## Stap 1: Laad uw Word-document
 
-Eerst moet u het Word-document laden dat de opmerkingen bevat die u wilt beheren. Voor dit voorbeeld gaan we ervan uit dat u een document met de naam "Comments.docx" in uw directory heeft.
+Eerst moet u het Word-document laden dat de opmerkingen bevat die u wilt beheren. Voor dit voorbeeld gaan we ervan uit dat u een document met de naam 'Opmerkingen.docx' in uw directory hebt.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
 ```
 
-## Stap 2: Ga naar de eerste opmerking
+## Stap 2: Toegang tot de eerste opmerking
 
 Ga vervolgens naar de eerste opmerking in het document. Deze opmerking is het doel voor het toevoegen en verwijderen van antwoorden.
 
@@ -45,9 +45,9 @@ Ga vervolgens naar de eerste opmerking in het document. Deze opmerking is het do
 Comment comment = (Comment)doc.GetChild(NodeType.Comment, 0, true);
 ```
 
-## Stap 3: verwijder een bestaand antwoord
+## Stap 3: Een bestaand antwoord verwijderen
 
-Als de reactie al reacties bevat, wil je er misschien een verwijderen. Zo kun je het eerste antwoord van de reactie verwijderen:
+Als de opmerking al antwoorden heeft, wilt u er misschien een verwijderen. Zo verwijdert u het eerste antwoord van de opmerking:
 
 ```csharp
 comment.RemoveReply(comment.Replies[0]);
@@ -55,7 +55,7 @@ comment.RemoveReply(comment.Replies[0]);
 
 ## Stap 4: Voeg een nieuw antwoord toe
 
-Laten we nu een nieuw antwoord aan de opmerking toevoegen. U kunt de naam van de auteur, de initialen, de datum en tijd van het antwoord en de antwoordtekst opgeven.
+Laten we nu een nieuw antwoord aan de opmerking toevoegen. U kunt de naam van de auteur, initialen, de datum en tijd van het antwoord en de antwoordtekst opgeven.
 
 ```csharp
 comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New reply");
@@ -71,26 +71,26 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 ## Conclusie
 
-Het programmatisch beheren van reacties op opmerkingen in Word-documenten kan u veel tijd en moeite besparen, vooral als u te maken heeft met uitgebreide recensies. Aspose.Words voor .NET maakt dit proces eenvoudig en efficiënt. Door de stappen in deze handleiding te volgen, kunt u eenvoudig reacties op opmerkingen toevoegen en verwijderen, waardoor uw samenwerkingservaring aan documenten wordt verbeterd.
+Het programmatisch beheren van reacties op opmerkingen in Word-documenten kan u veel tijd en moeite besparen, vooral bij uitgebreide beoordelingen. Aspose.Words voor .NET maakt dit proces eenvoudig en efficiënt. Door de stappen in deze handleiding te volgen, kunt u eenvoudig reacties op opmerkingen toevoegen en verwijderen, wat uw samenwerking aan documenten verbetert.
 
 ## Veelgestelde vragen
 
 ### Hoe voeg ik meerdere antwoorden toe aan één opmerking?
 
- U kunt meerdere antwoorden aan één opmerking toevoegen door het telefoonnummer te bellen`AddReply` methode meerdere keren op hetzelfde commentaarobject.
+ U kunt meerdere antwoorden aan één opmerking toevoegen door de`AddReply` methode meerdere keren op hetzelfde commentaarobject uitvoeren.
 
 ### Kan ik de auteursgegevens voor elk antwoord aanpassen?
 
- Ja, u kunt voor elk antwoord de naam van de auteur, de initialen en de datum en tijd opgeven wanneer u de`AddReply` methode.
+ Ja, u kunt de naam van de auteur, initialen en de datum en tijd voor elk antwoord opgeven wanneer u de`AddReply` methode.
 
-### Is het mogelijk om alle reacties uit een reactie in één keer te verwijderen?
+### Is het mogelijk om alle reacties op een opmerking in één keer te verwijderen?
 
-Als u alle antwoorden wilt verwijderen, moet u het bestand doorlopen`Replies` verzameling van de opmerking en verwijder elke opmerking afzonderlijk.
+Om alle antwoorden te verwijderen, moet u de lus doorlopen`Replies` verzameling van de opmerkingen en verwijder ze afzonderlijk.
 
-### Heb ik toegang tot opmerkingen in een specifiek gedeelte van het document?
+### Kan ik opmerkingen in een specifiek gedeelte van het document bekijken?
 
- Ja, u kunt door de secties van het document navigeren en toegang krijgen tot opmerkingen binnen elke sectie met behulp van de`GetChild` methode.
+ Ja, u kunt door de secties van het document navigeren en opmerkingen binnen elke sectie openen met behulp van de`GetChild` methode.
 
-### Ondersteunt Aspose.Words voor .NET andere commentaargerelateerde functies?
+### Ondersteunt Aspose.Words voor .NET andere functies voor opmerkingen?
 
-Ja, Aspose.Words voor .NET biedt uitgebreide ondersteuning voor diverse commentaargerelateerde functies, waaronder het toevoegen van nieuwe opmerkingen, het instellen van commentaareigenschappen en meer.
+Ja, Aspose.Words voor .NET biedt uitgebreide ondersteuning voor diverse functies met betrekking tot opmerkingen, waaronder het toevoegen van nieuwe opmerkingen, het instellen van opmerkingseigenschappen en meer.

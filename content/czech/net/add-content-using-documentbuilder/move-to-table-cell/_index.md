@@ -85,7 +85,7 @@ Gratuluji! Právě jste se naučili, jak se přesunout na konkrétní buňku tab
  Ano, zadáním správného indexu tabulky v`MoveToCell` můžete přejít do libovolné buňky v jakékoli tabulce v dokumentu.
 
 ### Jak zacházet s buňkami, které zahrnují více řádků nebo sloupců?
- Můžete použít`RowSpan`a`ColSpan` vlastnosti`Cell` třídy pro správu sloučených buněk.
+ Můžete použít`RowSpan` a`ColSpan` vlastnosti`Cell` třídy pro správu sloučených buněk.
 
 ### Je možné formátovat text uvnitř buňky?
  Absolutně! Použití`DocumentBuilder` metody jako`Font.Size`, `Font.Bold`a další k formátování textu.

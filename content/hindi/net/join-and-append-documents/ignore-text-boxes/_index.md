@@ -114,10 +114,10 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
  हां, आप एक निःशुल्क परीक्षण डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/).
 
 ### मैं .NET के लिए Aspose.Words हेतु अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूँ?
- आप अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
+आप अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
 
 ### मैं अधिक विस्तृत दस्तावेज कहां पा सकता हूं?
- आप विस्तृत दस्तावेज यहाँ पा सकते हैं[यहाँ](https://reference.aspose.com/words/net/).
+ आप विस्तृत दस्तावेज पा सकते हैं[यहाँ](https://reference.aspose.com/words/net/).
 
 ### मैं .NET के लिए Aspose.Words का समर्थन कैसे प्राप्त कर सकता हूं?
  सहायता के लिए, Aspose फ़ोरम पर जाएँ[यहाँ](https://forum.aspose.com/c/words/8).

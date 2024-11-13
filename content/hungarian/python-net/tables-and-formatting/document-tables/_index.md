@@ -80,7 +80,7 @@ cell.cell_format.horizontal_merge = CellMerge.NONE
 
 ## Stílus és testreszabás:
 
-Az Aspose.Words különféle stíluslehetőségeket kínál a táblázatok megjelenésének javítására. Beállíthatja a cella háttérszíneit, a szövegigazítást, a betűtípus formázását stb.
+Az Aspose.Words különféle stíluslehetőségeket kínál a táblázatok megjelenésének javítására. Beállíthatja a cella hátterének színét, a szöveg igazítását, a betűtípus formázását stb.
 
 ```python
 # Apply bold formatting to a cell's text
@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Fejlécek és láblécek hozzáadása a táblázatokhoz:
 
- A táblázatok számára előnyös lehet olyan fejléc és lábléc, amely kontextust vagy további információkat biztosít. Fejléceket és lábléceket adhat hozzá a táblázatokhoz a`Table.title`és`Table.description` tulajdonságait.
+ A táblázatok számára előnyös lehet olyan fejléc és lábléc, amely kontextust vagy további információkat biztosít. Fejléceket és lábléceket adhat hozzá a táblázatokhoz a`Table.title` és`Table.description` tulajdonságait.
 
 ```python
 # Set table title (header)

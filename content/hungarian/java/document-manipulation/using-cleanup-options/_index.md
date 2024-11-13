@@ -150,7 +150,7 @@ Az Aspose.Words for Java tisztítási beállításai olyan beállítások, amely
 
 ###  Mi a célja a`REMOVE_UNUSED_REGIONS` cleanup option?
 
- A`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Az opció a körlevél-összevonási folyamat során a dokumentumok azon régióinak eltávolítására szolgál, amelyek nem rendelkeznek megfelelő adatokkal. Segít megőrizni a dokumentum rendezettségét azáltal, hogy megszabadul a nem használt helyőrzőktől.
+A`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Az opció a körlevél-összevonási folyamat során a dokumentumok azon régióinak eltávolítására szolgál, amelyek nem rendelkeznek megfelelő adatokkal. Segít megőrizni a dokumentum rendezettségét azáltal, hogy megszabadul a nem használt helyőrzőktől.
 
 ### Eltávolíthatom az üres táblázatsorokat a dokumentumból az Aspose.Words for Java segítségével?
 
@@ -166,7 +166,7 @@ Az Aspose.Words for Java tisztítási beállításai olyan beállítások, amely
 
 ###  Mi a különbség között`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
- A`REMOVE_EMPTY_FIELDS` Az opció eltávolítja azokat az egyesítési mezőket, amelyek nem tartalmaznak adatokat, vagy üresek a körlevél-egyesítési folyamat során. Másrészt a`REMOVE_UNUSED_FIELDS`Az opció eltávolítja azokat az egyesítési mezőket, amelyek nem töltődnek fel adatokkal az egyesítés során. A közöttük való választás attól függ, hogy el kívánja-e távolítani a tartalom nélküli mezőket, vagy azokat, amelyeket az adott egyesítési művelet során nem használnak.
+A`REMOVE_EMPTY_FIELDS` Az opció eltávolítja azokat az egyesítési mezőket, amelyek nem tartalmaznak adatokat, vagy üresek a körlevél-egyesítési folyamat során. Másrészt a`REMOVE_UNUSED_FIELDS`Az opció eltávolítja azokat az egyesítési mezőket, amelyek nem töltődnek fel adatokkal az egyesítés során. A közöttük való választás attól függ, hogy el kívánja-e távolítani a tartalom nélküli mezőket, vagy azokat, amelyeket az adott egyesítési művelet során nem használnak.
 
 ### Hogyan engedélyezhetem az írásjeleket tartalmazó bekezdések eltávolítását?
 

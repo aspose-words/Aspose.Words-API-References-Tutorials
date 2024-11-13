@@ -1,6 +1,6 @@
 ---
-title: Belgeleri Sayfa Yapısı ile Yazdırma
-linktitle: Belgeleri Sayfa Yapısı ile Yazdırma
+title: Sayfa Düzeni ile Belgeleri Yazdırma
+linktitle: Sayfa Düzeni ile Belgeleri Yazdırma
 second_title: Aspose.Words Java Belge İşleme API'si
 description: Aspose.Words for Java kullanarak belgeleri hassas sayfa düzeniyle nasıl yazdıracağınızı öğrenin. Düzenleri, kağıt boyutunu ve daha fazlasını özelleştirin.
 type: docs
@@ -10,43 +10,43 @@ url: /tr/java/document-printing/printing-documents-page-setup/
 
 ## giriiş
 
-Profesyonel görünümlü raporlar, faturalar veya herhangi bir basılı materyal oluşturmak söz konusu olduğunda belgeleri hassas sayfa düzeniyle yazdırmak çok önemlidir. Aspose.Words for Java, Java geliştiricileri için bu süreci basitleştirerek sayfa düzeninin her yönünü kontrol etmelerine olanak tanır.
+Profesyonel görünümlü raporlar, faturalar veya herhangi bir basılı materyal oluştururken belgeleri hassas sayfa düzeniyle yazdırmak çok önemlidir. Aspose.Words for Java, Java geliştiricileri için bu süreci basitleştirerek sayfa düzeninin her yönünü kontrol etmelerine olanak tanır.
 
-## Geliştirme Ortamını Kurma
+## Geliştirme Ortamının Kurulması
 
-Başlamadan önce uygun bir geliştirme ortamına sahip olduğunuzdan emin olalım. İhtiyacınız olacak:
+Başlamadan önce, uygun bir geliştirme ortamınızın olduğundan emin olalım. İhtiyacınız olacak:
 
 - Java Geliştirme Kiti (JDK)
 - Eclipse veya IntelliJ IDEA gibi Entegre Geliştirme Ortamı (IDE)
-- Aspose.Words for Java kütüphanesi
+- Java için Aspose.Words kütüphanesi
 
-## Java Projesi Oluşturma
+## Bir Java Projesi Oluşturma
 
 Seçtiğiniz IDE'de yeni bir Java projesi oluşturarak başlayın. Ona anlamlı bir isim verin ve devam etmeye hazırsınız.
 
-## Aspose.Words for Java'yı Projenize Ekleme
+## Projenize Aspose.Words for Java'yı Ekleme
 
-Aspose.Words for Java'yı kullanmak için kütüphaneyi projenize eklemeniz gerekir. Şu adımları izleyin:
+Java için Aspose.Words'ü kullanmak için, kütüphaneyi projenize eklemeniz gerekir. Aşağıdaki adımları izleyin:
 
 1.  Aspose.Words for Java kütüphanesini şu adresten indirin:[Burada](https://releases.aspose.com/words/java/).
 
 2. JAR dosyasını projenizin sınıf yoluna ekleyin.
 
-## Belge Yükleme
+## Bir Belgeyi Yükleme
 
-Bu bölümde yazdırmak istediğiniz belgenin nasıl yükleneceğini ele alacağız. Belgeleri DOCX, DOC, RTF ve daha fazlası gibi çeşitli formatlarda yükleyebilirsiniz.
+Bu bölümde, yazdırmak istediğiniz bir belgenin nasıl yükleneceğini ele alacağız. DOCX, DOC, RTF ve daha fazlası gibi çeşitli biçimlerdeki belgeleri yükleyebilirsiniz.
 
 ```java
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("sample.docx");
 ```
 
-## Sayfa Yapısını Özelleştirme
+## Sayfa Kurulumunu Özelleştirme
 
-Şimdi heyecan verici kısım geliyor. Sayfa düzeni ayarlarını gereksinimlerinize göre özelleştirebilirsiniz. Bu, sayfa boyutunun, kenar boşluklarının, yönlendirmenin ve daha fazlasının ayarlanmasını içerir.
+Şimdi heyecan verici kısım geliyor. Sayfa kurulum ayarlarını gereksinimlerinize göre özelleştirebilirsiniz. Bu, sayfa boyutunu, kenar boşluklarını, yönlendirmeyi ve daha fazlasını ayarlamayı içerir.
 
 ```java
-// Sayfa düzenini özelleştirin
+// Sayfa kurulumunu özelleştir
 PageSetup pageSetup = doc.getSections().get(0).getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
 pageSetup.setPageWidth(595.0);
@@ -57,7 +57,7 @@ pageSetup.setRightMargin(72.0);
 
 ## Belgeyi Yazdırma
 
-Aspose.Words for Java ile belgeyi yazdırmak basit bir işlemdir. Fiziksel bir yazıcıya yazdırabilir veya dijital dağıtım için bir PDF oluşturabilirsiniz.
+Belgeyi yazdırmak Aspose.Words for Java ile basit bir işlemdir. Fiziksel bir yazıcıya yazdırabilir veya dijital dağıtım için bir PDF oluşturabilirsiniz.
 
 ```java
 // Belgeyi yazdır
@@ -69,26 +69,26 @@ job.print();
 
 ## Çözüm
 
-Bu makalede Aspose.Words for Java kullanarak özel sayfa düzeniyle belgelerin nasıl yazdırılacağını araştırdık. Güçlü özellikleri sayesinde profesyonel görünümlü basılı materyalleri kolaylıkla oluşturabilirsiniz. İster bir iş raporu ister yaratıcı bir proje olsun, Aspose.Words for Java ihtiyacınızı karşılar.
+Bu makalede, Aspose.Words for Java kullanarak özel sayfa düzeniyle belgelerin nasıl yazdırılacağını inceledik. Güçlü özellikleriyle, profesyonel görünümlü basılı materyalleri kolaylıkla oluşturabilirsiniz. İster bir iş raporu ister yaratıcı bir proje olsun, Aspose.Words for Java sizin için her şeyi yapar.
 
-## SSS'ler
+## SSS
 
 ### Belgemin kağıt boyutunu nasıl değiştirebilirim?
 
- Belgenizin kağıt boyutunu değiştirmek için`setPageWidth`Ve`setPageHeight` yöntemleri`PageSetup` sınıfını seçin ve istediğiniz boyutları noktalar halinde belirtin.
+ Belgenizin kağıt boyutunu değiştirmek için şunu kullanın:`setPageWidth` Ve`setPageHeight` yöntemleri`PageSetup` sınıfını seçin ve istediğiniz boyutları noktalar halinde belirtin.
 
 ### Bir belgenin birden fazla kopyasını yazdırabilir miyim?
 
- Evet, çağrı yapmadan önce yazdırma ayarlarında kopya sayısını ayarlayarak bir belgenin birden fazla kopyasını yazdırabilirsiniz.`print()` Yöntem.
+ Evet, yazdırma ayarlarını çağırdıktan sonra kopya sayısını ayarlayarak bir belgenin birden fazla kopyasını yazdırabilirsiniz.`print()` yöntem.
 
-### Aspose.Words for Java farklı belge formatlarıyla uyumlu mu?
+### Aspose.Words for Java farklı belge formatlarıyla uyumlu mudur?
 
-Evet, Aspose.Words for Java, DOCX, DOC, RTF ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
+Evet, Aspose.Words for Java, DOCX, DOC, RTF ve daha fazlası dahil olmak üzere çok çeşitli belge biçimlerini destekler.
 
 ### Belirli bir yazıcıya yazdırabilir miyim?
 
-Kesinlikle! kullanarak belirli bir yazıcıyı belirleyebilirsiniz.`setPrintService` yöntem ve istenilenin sağlanması`PrintService` nesne.
+ Elbette! Belirli bir yazıcıyı belirtmek için şunu kullanabilirsiniz:`setPrintService` yöntem ve istenileni sağlamak`PrintService` nesne.
 
 ### Yazdırılan belgeyi PDF olarak nasıl kaydederim?
 
-Yazdırılan belgeyi PDF olarak kaydetmek için Aspose.Words for Java'yı kullanarak belgeyi yazdırdıktan sonra PDF dosyası olarak kaydedebilirsiniz.
+Yazdırılan belgeyi PDF olarak kaydetmek için, Aspose.Words for Java'yı kullanarak yazdırdıktan sonra belgeyi PDF dosyası olarak kaydedebilirsiniz.

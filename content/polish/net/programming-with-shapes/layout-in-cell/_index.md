@@ -1,28 +1,28 @@
 ---
-title: Układ W Komórce
-linktitle: Układ W Komórce
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić układ w komórce za pomocą Aspose.Words dla .NET, korzystając z tego obszernego przewodnika. Idealny dla programistów chcących dostosować dokumenty programu Word.
+title: Układ w komórce
+linktitle: Układ w komórce
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak ustawić układ w komórce za pomocą Aspose.Words dla .NET dzięki temu kompleksowemu przewodnikowi. Idealne dla programistów, którzy chcą dostosować dokumenty Word.
 type: docs
 weight: 10
 url: /pl/net/programming-with-shapes/layout-in-cell/
 ---
 ## Wstęp
 
-Jeśli kiedykolwiek chciałeś programowo dostosować układ komórek tabeli w dokumentach programu Word, jesteś we właściwym miejscu. Dzisiaj zajmiemy się ustawianiem układu w komórce za pomocą Aspose.Words dla .NET. Omówimy praktyczny przykład, dzieląc go krok po kroku, abyś mógł z łatwością go śledzić.
+Jeśli kiedykolwiek chciałeś programowo dostroić układ komórek tabeli w dokumentach Word, jesteś we właściwym miejscu. Dzisiaj zagłębimy się w to, jak ustawić układ w komórce za pomocą Aspose.Words dla .NET. Przeprowadzimy Cię przez praktyczny przykład, rozkładając go krok po kroku, abyś mógł łatwo śledzić.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim przejdziemy do kodu, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli tego nie zrobiłeś, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: Będziesz potrzebować środowiska programistycznego skonfigurowanego z platformą .NET. Visual Studio to świetny wybór, jeśli szukasz rekomendacji.
-3. Podstawowa znajomość języka C#: chociaż wyjaśnię każdy krok, podstawowa znajomość języka C# ułatwi ci wykonanie wszystkich czynności.
-4.  Katalog dokumentów: Przygotuj ścieżkę katalogu, w którym będziesz zapisywać swoje dokumenty. Będziemy to nazywać`YOUR DOCUMENT DIRECTORY`.
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli nie, możesz[pobierz tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Będziesz potrzebować środowiska programistycznego skonfigurowanego z .NET. Visual Studio jest świetnym wyborem, jeśli szukasz rekomendacji.
+3. Podstawowa znajomość języka C#: Choć dokładnie wyjaśnię każdy krok, podstawowa znajomość języka C# pomoże Ci łatwiej nadążać.
+4.  Katalog dokumentów: Przygotuj ścieżkę katalogu, w którym będziesz zapisywać swoje dokumenty. Będziemy się do tego odnosić jako`YOUR DOCUMENT DIRECTORY`.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, upewnij się, że importujesz niezbędne przestrzenie nazw w swoim projekcie:
+Aby rozpocząć, upewnij się, że importujesz niezbędne przestrzenie nazw do swojego projektu:
 
 ```csharp
 using System;
@@ -32,11 +32,11 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Tables;
 ```
 
-Podzielmy proces na łatwe do wykonania etapy.
+Podzielmy ten proces na łatwiejsze do opanowania kroki.
 
 ## Krok 1: Utwórz nowy dokument
 
- Najpierw utworzymy nowy dokument Word i zainicjujemy plik`DocumentBuilder` obiekt, który pomoże nam konstruować naszą treść.
+ Najpierw utworzymy nowy dokument Word i zainicjujemy`DocumentBuilder` obiekt, który pomoże nam w tworzeniu treści.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -44,9 +44,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Uruchom tabelę i ustaw format wiersza
+## Krok 2: Rozpocznij tworzenie tabeli i ustaw format wiersza
 
-Zaczniemy konstruować tabelę i określimy wysokość oraz regułę wysokości wierszy.
+Zaczniemy od utworzenia tabeli i określimy wysokość oraz regułę wysokości dla wierszy.
 
 ```csharp
 builder.StartTable();
@@ -54,9 +54,9 @@ builder.RowFormat.Height = 100;
 builder.RowFormat.HeightRule = HeightRule.Exactly;
 ```
 
-## Krok 3: Wstaw komórki i wypełnij treścią
+## Krok 3: Wstaw komórki i wypełnij je treścią
 
-Następnie wykonujemy pętlę, aby wstawić komórki do tabeli. Za każde 7 komórek zakończymy wiersz, aby utworzyć nowy.
+Następnie wykonujemy pętlę, aby wstawić komórki do tabeli. Co 7 komórek zakończymy wiersz, aby utworzyć nowy.
 
 ```csharp
 for (int i = 0; i < 31; i++)
@@ -70,14 +70,14 @@ builder.EndTable();
 
 ## Krok 4: Dodaj kształt znaku wodnego
 
- Teraz dodajmy znak wodny do naszego dokumentu. Stworzymy`Shape` obiekt i ustawić jego właściwości.
+ Teraz dodajmy znak wodny do naszego dokumentu. Stworzymy`Shape` obiekt i ustaw jego właściwości.
 
 ```csharp
 Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 {
     RelativeHorizontalPosition = RelativeHorizontalPosition.Page,
     RelativeVerticalPosition = RelativeVerticalPosition.Page,
-    IsLayoutInCell = true, // Wyświetl kształt poza komórką tabeli, jeśli zostanie on umieszczony w komórce.
+    IsLayoutInCell = true, // Wyświetl kształt poza komórką tabeli, jeśli będzie on umieszczony w komórce.
     Width = 300,
     Height = 70,
     HorizontalAlignment = HorizontalAlignment.Center,
@@ -88,7 +88,7 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 
 ## Krok 5: Dostosuj wygląd znaku wodnego
 
-Będziemy dalej dostosowywać wygląd znaku wodnego, ustawiając jego właściwości koloru i tekstu.
+Następnie dostosujemy wygląd znaku wodnego, ustawiając jego kolor i właściwości tekstu.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -111,7 +111,7 @@ builder.InsertNode(watermark);
 
 ## Krok 7: Zoptymalizuj dokument dla programu Word 2010
 
-Aby zapewnić kompatybilność, zoptymalizujemy dokument dla programu Word 2010.
+Aby zapewnić zgodność, zoptymalizujemy dokument pod kątem programu Word 2010.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
@@ -119,7 +119,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
 
 ## Krok 8: Zapisz dokument
 
-Na koniec zapiszemy nasz dokument we wskazanym katalogu.
+Na koniec zapiszemy nasz dokument w podanym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
@@ -127,21 +127,21 @@ doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 
 ## Wniosek
 
-I masz to! Pomyślnie utworzyłeś dokument Word z dostosowanym układem tabeli i dodałeś znak wodny za pomocą Aspose.Words dla .NET. Celem tego samouczka było zapewnienie jasnego przewodnika krok po kroku, który pomoże Ci zrozumieć każdą część procesu. Dzięki tym umiejętnościom możesz teraz programowo tworzyć bardziej wyrafinowane i dostosowane dokumenty programu Word.
+I masz to! Udało Ci się utworzyć dokument Word z dostosowanym układem tabeli i dodać znak wodny za pomocą Aspose.Words dla .NET. Ten samouczek miał na celu dostarczenie przejrzystego przewodnika krok po kroku, który pomoże Ci zrozumieć każdą część procesu. Dzięki tym umiejętnościom możesz teraz programowo tworzyć bardziej wyrafinowane i dostosowane dokumenty Word.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę użyć innej czcionki w tekście znaku wodnego?
- Tak, możesz zmienić czcionkę, ustawiając`watermark.TextPath.FontFamily` właściwość do żądanej czcionki.
+### Czy mogę użyć innej czcionki dla tekstu znaku wodnego?
+ Tak, możesz zmienić czcionkę, ustawiając`watermark.TextPath.FontFamily` właściwość na wybraną czcionkę.
 
-### Jak dostosować położenie znaku wodnego?
- Możesz modyfikować`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` , I`VerticalAlignment` właściwości umożliwiające dostosowanie położenia znaku wodnego.
+### Jak zmienić położenie znaku wodnego?
+ Możesz zmodyfikować`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` , I`VerticalAlignment` Właściwości umożliwiające dostosowanie położenia znaku wodnego.
 
-### Czy w znaku wodnym można użyć obrazu zamiast tekstu?
- Absolutnie! Możesz stworzyć`Shape` z typem`ShapeType.Image` i ustaw jego obraz za pomocą`ImageData.SetImage` metoda.
+### Czy można użyć obrazu zamiast tekstu w znaku wodnym?
+ Oczywiście! Możesz stworzyć`Shape` z typem`ShapeType.Image` i ustaw jego obraz za pomocą`ImageData.SetImage` metoda.
 
-### Czy mogę tworzyć tabele o różnej wysokości wierszy?
-Tak, możesz ustawić różne wysokości dla każdego wiersza, zmieniając`RowFormat.Height` właściwość przed wstawieniem komórek do tego wiersza.
+### Czy mogę tworzyć tabele z różną wysokością wierszy?
+Tak, możesz ustawić różne wysokości dla każdego rzędu, zmieniając`RowFormat.Height` właściwość przed wstawieniem komórek do tego wiersza.
 
 ### Jak usunąć znak wodny z dokumentu?
- Możesz usunąć znak wodny, lokalizując go w kolekcji kształtów dokumentu i wywołując metodę`Remove` metoda.
+ Możesz usunąć znak wodny, lokalizując go w kolekcji kształtów dokumentu i wywołując`Remove` metoda.

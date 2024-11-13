@@ -15,7 +15,7 @@ Hallo, angehender Programmierer! Mussten Sie schon einmal mehrere Vorkommen eine
 
 Bevor wir uns in die Magie des Textersetzens vertiefen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET-Bibliothek: Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/) . Wenn Sie es noch nicht getan haben, holen Sie sich eine kostenlose Testversion[Hier](https://releases.aspose.com/).
+1.  Aspose.Words für .NET-Bibliothek: Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/) Wenn Sie es noch nicht getan haben, holen Sie sich eine kostenlose Testversion[Hier](https://releases.aspose.com/).
 
 2. .NET Framework: Stellen Sie sicher, dass das .NET Framework auf Ihrem Computer installiert ist. Sie können es bei Bedarf von der Microsoft-Website herunterladen.
 
@@ -89,7 +89,7 @@ Sie sollten sehen, dass „_CustomerName_" wurde durch "James Bond" ersetzt.
 
 ## Schritt 6: Speichern des Dokuments
 
-Speichern Sie abschließend das geänderte Dokument in dem von Ihnen angegebenen Verzeichnis.
+Speichern Sie abschließend das geänderte Dokument in Ihrem angegebenen Verzeichnis.
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
@@ -101,7 +101,7 @@ Und da haben Sie es! Sie haben gerade den Prozess des Suchens und Ersetzens von 
 
 ## Häufig gestellte Fragen
 
-### Kann ich mehrere unterschiedliche Texte auf einmal ersetzen?
+### Kann ich mehrere verschiedene Texte auf einmal ersetzen?
  Ja, das können Sie. Rufen Sie einfach die`Replace` Methode für jeden Text, den Sie ersetzen möchten.
 
 ### Ist Aspose.Words für .NET kostenlos?

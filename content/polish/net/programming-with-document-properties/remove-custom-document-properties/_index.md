@@ -1,27 +1,27 @@
 ---
 title: Usuń niestandardowe właściwości dokumentu
 linktitle: Usuń niestandardowe właściwości dokumentu
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Usuń niestandardowe właściwości dokumentu w plikach Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby znaleźć szybkie i łatwe rozwiązanie. Idealny dla programistów.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Usuń niestandardowe właściwości dokumentu w plikach Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać szybkie i łatwe rozwiązanie. Idealne dla programistów.
 type: docs
 weight: 10
 url: /pl/net/programming-with-document-properties/remove-custom-document-properties/
 ---
 ## Wstęp
 
-Czy kiedykolwiek zaplątałeś się w sieć niestandardowych właściwości dokumentów w plikach programu Word? Nie jesteś sam! Zarządzanie tymi właściwościami może być kłopotliwe, ale dzięki Aspose.Words dla .NET możesz bez wysiłku usprawnić ten proces. W tym samouczku przeprowadzimy Cię przez proces usuwania niestandardowych właściwości dokumentu za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik będzie prosty i przejrzysty. Gotowy do nurkowania? Zacznijmy!
+Czy kiedykolwiek znalazłeś się w pułapce sieci niestandardowych właściwości dokumentu w plikach Word? Nie jesteś sam! Zarządzanie tymi właściwościami może być uciążliwe, ale dzięki Aspose.Words dla .NET możesz usprawnić ten proces bez wysiłku. W tym samouczku przeprowadzimy Cię przez usuwanie niestandardowych właściwości dokumentu za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik okaże się prosty i przejrzysty. Gotowy do działania? Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim przejdziemy do kodu, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla biblioteki .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/).
-2. .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.
-3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# jest pomocna.
+1.  Biblioteka Aspose.Words dla .NET: Możesz[pobierz tutaj](https://releases.aspose.com/words/net/).
+2. .NET Framework: Upewnij się, że na Twoim komputerze jest zainstalowany .NET Framework.
+3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie pomocna.
 
 ## Importuj przestrzenie nazw
 
-Aby używać Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw. To przygotowuje grunt pod płynne działanie naszego kodu.
+Aby użyć Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw. To przygotowuje grunt pod płynne działanie naszego kodu.
 
 ```csharp
 using System;
@@ -30,11 +30,11 @@ using Aspose.Words;
 
 ## Krok 1: Konfigurowanie katalogu dokumentów
 
-Na początek ustawmy ścieżkę do naszego katalogu dokumentów. Tutaj znajduje się Twój plik Word.
+Po pierwsze, ustalmy ścieżkę do naszego katalogu dokumentów. Tutaj znajduje się Twój plik Word.
 
 ### Krok 1.1: Zdefiniuj katalog danych
 
-W projekcie C# zdefiniuj ścieżkę do katalogu dokumentów. Zastąp „TWOJ KATALOG DOKUMENTÓW” rzeczywistą ścieżką.
+W swoim projekcie C# zdefiniuj ścieżkę do katalogu dokumentów. Zastąp „YOUR DOCUMENT DIRECTORY” rzeczywistą ścieżką.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ### Krok 1.2: Załaduj dokument
 
-Teraz załadujmy dokument do naszego kodu. Tutaj właśnie pojawia się Aspose.Words dla .NET.
+Teraz załadujmy dokument do naszego kodu. Tutaj wkracza Aspose.Words dla .NET.
 
 ```csharp
 Document doc = new Document(dataDir + "Properties.docx");
@@ -50,9 +50,9 @@ Document doc = new Document(dataDir + "Properties.docx");
 
 ## Krok 2: Usuwanie niestandardowych właściwości dokumentu
 
-Po załadowaniu dokumentu nadszedł czas, aby usunąć te irytujące właściwości niestandardowe. Oto jak to zrobić krok po kroku.
+Po załadowaniu dokumentu nadszedł czas na usunięcie tych irytujących właściwości niestandardowych. Oto jak to zrobić krok po kroku.
 
-### Krok 2.1: Uzyskaj dostęp do niestandardowych właściwości dokumentu
+### Krok 2.1: Dostęp do niestandardowych właściwości dokumentu
 
 Najpierw uzyskaj dostęp do niestandardowych właściwości załadowanego dokumentu.
 
@@ -62,7 +62,7 @@ var customProperties = doc.CustomDocumentProperties;
 
 ### Krok 2.2: Usuń określoną właściwość
 
-Następnie usuń określoną właściwość niestandardową według jej nazwy. W tym przykładzie usuwamy „Datę autoryzacji”.
+Następnie usuń konkretną niestandardową właściwość według jej nazwy. W tym przykładzie usuwamy „Authorized Date”.
 
 ```csharp
 customProperties.Remove("Authorized Date");
@@ -70,7 +70,7 @@ customProperties.Remove("Authorized Date");
 
 ## Krok 3: Zapisywanie dokumentu
 
-Ostatnim krokiem po usunięciu niestandardowej właściwości jest zapisanie dokumentu. Dzięki temu zmiany zostaną zastosowane.
+Po usunięciu właściwości niestandardowej ostatnim krokiem jest zapisanie dokumentu. Dzięki temu zmiany zostaną zastosowane.
 
 ### Krok 3.1: Zdefiniuj ścieżkę zapisu
 
@@ -90,21 +90,21 @@ doc.Save(savePath);
 
 ## Wniosek
 
-I masz to! Usuwanie niestandardowych właściwości dokumentów w plikach Word przy użyciu Aspose.Words dla .NET jest dziecinnie proste. Wykonując poniższe kroki, możesz efektywnie zarządzać właściwościami dokumentu, oszczędzając czas i wysiłek. Niezależnie od tego, czy czyścisz metadane, czy automatyzujesz przetwarzanie dokumentów, Aspose.Words dla .NET pomoże Ci. Miłego kodowania!
+I masz to! Usuwanie niestandardowych właściwości dokumentu w plikach Word za pomocą Aspose.Words dla .NET jest proste jak bułka z masłem. Wykonując te kroki, możesz wydajnie zarządzać właściwościami dokumentu, oszczędzając czas i wysiłek. Niezależnie od tego, czy czyścisz metadane, czy automatyzujesz przetwarzanie dokumentów, Aspose.Words dla .NET ma dla Ciebie rozwiązanie. Miłego kodowania!
 
 ## Często zadawane pytania
 
-### 1. Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężna biblioteka do programowej pracy z dokumentami programu Word. Umożliwia programistom tworzenie, modyfikowanie i konwertowanie dokumentów w różnych formatach.
+### 1. Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to potężna biblioteka do programowej pracy z dokumentami Word. Umożliwia ona programistom tworzenie, modyfikowanie i konwertowanie dokumentów w różnych formatach.
 
 ### 2. Czy mogę używać Aspose.Words dla .NET z innymi językami programowania?
-Aspose.Words dla .NET jest specjalnie zaprojektowany dla aplikacji .NET. Jednak Aspose oferuje podobne biblioteki dla Java i innych platform.
+Aspose.Words for .NET jest specjalnie zaprojektowany dla aplikacji .NET. Jednak Aspose oferuje podobne biblioteki dla Java i innych platform.
 
-### 3. Jak uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
- Możesz[pobierz bezpłatną wersję próbną](https://releases.aspose.com/) ze strony Aspose.
+### 3. Jak mogę otrzymać bezpłatną wersję próbną Aspose.Words dla .NET?
+ Możesz[pobierz bezpłatną wersję próbną](https://releases.aspose.com/) ze strony internetowej Aspose.
 
-### 4. Gdzie mogę znaleźć więcej samouczków na temat Aspose.Words dla .NET?
- Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej samouczków i przykładów.
+### 4. Gdzie mogę znaleźć więcej samouczków dotyczących Aspose.Words dla .NET?
+ Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby zobaczyć więcej samouczków i przykładów.
 
 ### 5. Jak mogę kupić licencję na Aspose.Words dla .NET?
- Możesz[kupić licencję](https://purchase.aspose.com/buy) bezpośrednio ze strony internetowej Aspose.
+ Możesz[kup licencję](https://purchase.aspose.com/buy) bezpośrednio ze strony internetowej Aspose.

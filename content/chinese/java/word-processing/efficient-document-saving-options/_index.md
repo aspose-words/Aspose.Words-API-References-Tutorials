@@ -55,7 +55,7 @@ doc.save("output.html", saveOptions);
 ```java
 // Java 代码将文档保存为图像
 ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
-imageSaveOptions.setResolution(300); //设置分辨率 (DPI)
+imageSaveOptions.setResolution(300); //设置分辨率（DPI）
 doc.save("output.png", imageSaveOptions);
 ```
 
@@ -73,7 +73,7 @@ Aspose.Words for Java 简化了 Java 开发人员的文档管理和保存流程�
 
 ### 常见问题解答
 
-#### 如何下载 Aspose.Words for Java？
+#### 如何下载适用于 Java 的 Aspose.Words？
 
 您可以从以下网站下载 Aspose.Words for Java：[下载 Aspose.Words for Java](https://releases.aspose.com/words/java/).
 

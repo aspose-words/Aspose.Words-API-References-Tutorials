@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Schritt 1: Neues Dokument erstellen
 
-Beginnen wir mit der Erstellung eines neuen Word-Dokuments. Dies ist die Grundlage, auf der wir unser schön formatiertes Dokument erstellen.
+Beginnen wir mit der Erstellung eines neuen Word-Dokuments. Dies ist die Grundlage, auf der wir unser schön formatiertes Dokument aufbauen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
@@ -66,47 +66,6 @@ builder.ParagraphFormat.StyleName = "Heading 3";
 builder.Writeln("Details");
 ```
 
-## Weitere Anpassungen hinzufügen
-
-### Anpassen von Schriftart und Absätzen
-
-Sie können die Schriftart- und Absatzeinstellungen weiter an Ihre Bedürfnisse anpassen. Ändern Sie beispielsweise die Schriftgröße, -farbe und -ausrichtung.
-
-```csharp
-builder.Font.Size = 14;
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.Writeln("Centered Blue Heading");
-```
-
-### Einfügen eines Inhaltsverzeichnisses
-
-Ein gut strukturiertes Dokument enthält oft ein Inhaltsverzeichnis. So können Sie mit Aspose.Words für .NET eines einfügen.
-
-```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-doc.UpdateFields();
-```
-
-### Bilder hinzufügen
-
-Bilder können Ihr Dokument ansprechender gestalten. Fügen wir unserem Dokument ein Bild hinzu.
-
-```csharp
-builder.InsertImage("YOUR DOCUMENT DIRECTORY/image.png");
-```
-
-### Verwenden von Dokumentabschnitten
-
-Abschnitte helfen bei der Organisation von Inhalten, insbesondere wenn Sie für verschiedene Teile des Dokuments unterschiedliche Formatierungen benötigen.
-
-```csharp
-Section section = doc.Sections.Add();
-DocumentBuilder sectionBuilder = new DocumentBuilder(section);
-sectionBuilder.ParagraphFormat.StyleName = "Heading 1";
-sectionBuilder.Writeln("New Section Heading");
-```
-
 ## Abschluss
 
 Beim Erstellen eines gut formatierten Dokuments geht es nicht nur um Ästhetik; es verbessert auch die Lesbarkeit und Professionalität. Mit Aspose.Words für .NET steht Ihnen ein leistungsstarkes Tool zur Verfügung, mit dem Sie dies mühelos erreichen können. Folgen Sie dieser Anleitung, experimentieren Sie mit verschiedenen Einstellungen und schon bald sind Sie ein Profi in der Dokumentformatierung!
@@ -119,7 +78,7 @@ Ja, Aspose.Words für .NET kann mit jeder .NET-Sprache verwendet werden, einschl
 
 ### Wie kann ich eine kostenlose Testversion von Aspose.Words für .NET erhalten?
 
- Sie können eine kostenlose Testversion erhalten von[Hier](https://releases.aspose.com/).
+ Eine kostenlose Testversion erhalten Sie bei[Hier](https://releases.aspose.com/).
 
 ### Ist es möglich, in Aspose.Words für .NET benutzerdefinierte Stile hinzuzufügen?
 

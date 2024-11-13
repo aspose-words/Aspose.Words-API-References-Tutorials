@@ -80,7 +80,7 @@ doc.Save(dataDir + "DocumentFormatting.SpaceBetweenAsianAndLatinText.docx");
 
 ## 結論
 
-現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 自動調整 Word 文件中亞洲文本和拉丁文本之間的間距。這就像擁有完美格式化的魔杖一樣。現在，繼續用您新發現的技能給您的朋友和同事留下深刻的印象。請記住，正確的工具使一切變得不同，Aspose.Words for .NET 絕對是您值得擁有的工具。
+現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 自動調整 Word 文件中亞洲文本和拉丁文本之間的間距。這就像擁有完美格式化的魔杖一樣。現在，繼續用您新發現的技能給您的朋友和同事留下深刻的印象。請記住，正確的工具使一切變得不同，Aspose.Words for .NET 絕對是您值得擁有的工具。
 
 ## 常見問題解答
 

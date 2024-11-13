@@ -21,9 +21,9 @@ Mielőtt belevetnénk magunkat a helyszíni frissítési kultúra aprólékos el
 
 3. Alapvető C# ismerete: Kényelmesnek kell lennie a C# programozásban és az alapvető Word dokumentumkezelésekben.
 
-4.  Aspose Licenc: A teljes funkcionalitáshoz licencre lehet szüksége. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
+4.  Aspose Licenc: A teljes funkcionalitáshoz licencre lehet szüksége. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
-5.  Hozzáférés a dokumentációhoz és támogatáshoz: További segítségért a[Aspose Dokumentáció](https://reference.aspose.com/words/net/)és[Támogatási fórum](https://forum.aspose.com/c/words/8) nagyszerű források.
+5.  Hozzáférés a dokumentációhoz és támogatáshoz: További segítségért a[Aspose Dokumentáció](https://reference.aspose.com/words/net/) és[Támogatási fórum](https://forum.aspose.com/c/words/8) nagyszerű források.
 
 ## Névterek importálása
 
@@ -75,7 +75,52 @@ doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 - `FieldUpdateCultureSource.FieldCode` utasítja az Aspose.Words-t, hogy a mezőkódban megadott kultúrát használja a frissítésekhez.
 - `FieldUpdateCultureProvider` lehetővé teszi egy kultúraszolgáltató megadását a helyszíni frissítésekhez. Ha egyéni szolgáltatót kell megvalósítania, kiterjesztheti ezt az osztályt.
 
-## 4. lépés: Mentse el a dokumentumot
+## 4. lépés: A Custom Culture Provider megvalósítása
+
+Most végre kell hajtanunk az egyéni kultúraszolgáltatót, amely szabályozni fogja, hogy a kultúra beállításai, például a dátumformátumok hogyan kerülnek alkalmazásra a mező frissítésekor.
+
+Létrehozunk egy osztályt, melynek neve`FieldUpdateCultureProvider` amely megvalósítja a`IFieldUpdateCultureProvider` felület. Ez az osztály különböző kulturális formátumokat ad vissza a régiótól függően. Ebben a példában az orosz és az amerikai kultúra beállításait konfiguráljuk.
+
+```csharp
+private class FieldUpdateCultureProvider : IFieldUpdateCultureProvider
+{
+    public CultureInfo GetCulture(string name, Field field)
+    {
+        switch (name)
+        {
+            case "ru-RU":
+                CultureInfo culture = new CultureInfo(name, false);
+                DateTimeFormatInfo format = culture.DateTimeFormat;
+
+                format.MonthNames = new[] { "месяц 1", "месяц 2", "месяц 3", "месяц 4", "месяц 5", "месяц 6", "месяц 7", "месяц 8", "месяц 9", "месяц 10", "месяц 11", "месяц 12", "" };
+                format.MonthGenitiveNames = format.MonthNames;
+                format.AbbreviatedMonthNames = new[] { "мес 1", "мес 2", "мес 3", "мес 4", "мес 5", "мес 6", "мес 7", "мес 8", "мес 9", "мес 10", "мес 11", "мес 12", "" };
+                format.AbbreviatedMonthGenitiveNames = format.AbbreviatedMonthNames;
+
+                format.DayNames = new[] { "день недели 7", "день недели 1", "день недели 2", "день недели 3", "день недели 4", "день недели 5", "день недели 6" };
+                format.AbbreviatedDayNames = new[] { "день 7", "день 1", "день 2", "день 3", "день 4", "день 5", "день 6" };
+                format.ShortestDayNames = new[] { "д7", "д1", "д2", "д3", "д4", "д5", "д6" };
+
+                format.AMDesignator = "До полудня";
+                format.PMDesignator = "После полудня";
+
+                const string pattern = "yyyy MM (MMMM) dd (dddd) hh:mm:ss tt";
+                format.LongDatePattern = pattern;
+                format.LongTimePattern = pattern;
+                format.ShortDatePattern = pattern;
+                format.ShortTimePattern = pattern;
+
+                return culture;
+            case "en-US":
+                return new CultureInfo(name, false);
+            default:
+                return null;
+        }
+    }
+}
+```
+
+## 5. lépés: Mentse el a dokumentumot
 
 Végül mentse a dokumentumot a megadott könyvtárba. Ez biztosítja az összes módosítás megőrzését.
 
@@ -88,13 +133,13 @@ doc.Save(dataDir + "UpdateCultureChamps.pdf");
 
 ## Következtetés
 
-mezőfrissítési kultúra konfigurálása a Word dokumentumokban bonyolultnak tűnhet, de az Aspose.Words for .NET segítségével kezelhetővé és egyszerűbbé válik. Az alábbi lépések követésével biztosíthatja, hogy a dokumentummezők a megadott kulturális beállításoknak megfelelően megfelelően frissüljenek, így a dokumentumok adaptálhatóbbá és felhasználóbarátabbá válnak. Legyen szó időmezőkről, dátumokról vagy egyéni mezőkről, ezeknek a beállításoknak a megértése és alkalmazása javítja a dokumentumok funkcionalitását és professzionalizmusát.
+A mezőfrissítési kultúra konfigurálása a Word dokumentumokban bonyolultnak tűnhet, de az Aspose.Words for .NET segítségével kezelhetővé és egyszerűbbé válik. Az alábbi lépések követésével biztosíthatja, hogy a dokumentummezők a megadott kulturális beállításoknak megfelelően megfelelően frissüljenek, így a dokumentumok adaptálhatóbbá és felhasználóbarátabbá válnak. Legyen szó időmezőkről, dátumokról vagy egyéni mezőkről, ezeknek a beállításoknak a megértése és alkalmazása javítja a dokumentumok funkcionalitását és professzionalizmusát.
 
 ## GYIK
 
 ### Mi az a terepi frissítési kultúra a Word dokumentumokban?
 
-A mezőfrissítési kultúra határozza meg, hogy a Word-dokumentum mezői hogyan frissüljenek a kulturális beállítások, például a dátumformátumok és az időkonvenciók alapján.
+mezőfrissítési kultúra határozza meg, hogy a Word-dokumentum mezői hogyan frissüljenek a kulturális beállítások, például a dátumformátumok és az időkonvenciók alapján.
 
 ### Használhatom az Aspose.Words-t más típusú mezők kultúrájának kezelésére?
 

@@ -82,4 +82,4 @@ doc.acceptAllRevisions();
 
 ### Aspose.Words for Java の詳細情報とドキュメントはどこで入手できますか?
 
-Aspose.Words for Javaの包括的なドキュメントは以下でご覧いただけます。[ここ](https://reference.aspose.com/words/java/).
+ Aspose.Words for Javaの包括的なドキュメントは以下でご覧いただけます。[ここ](https://reference.aspose.com/words/java/).

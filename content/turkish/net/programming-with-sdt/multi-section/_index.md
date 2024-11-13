@@ -1,33 +1,33 @@
 ---
-title: Çoklu Bölüm
-linktitle: Çoklu Bölüm
+title: Çok Bölümlü
+linktitle: Çok Bölümlü
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu adım adım eğitimle Aspose.Words for .NET'te çok bölümlü yapılandırılmış belge etiketleriyle nasıl çalışılacağını öğrenin. Dinamik belge manipülasyonu için idealdir.
+description: Bu adım adım eğitimle Aspose.Words for .NET'te çok bölümlü yapılandırılmış belge etiketleriyle nasıl çalışacağınızı öğrenin. Dinamik belge düzenleme için idealdir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/multi-section/
 ---
 ## giriiş
 
-Aspose.Words for .NET'te çok bölümlü yapılandırılmış belge etiketleriyle çalışmaya ilişkin bu kapsamlı kılavuza hoş geldiniz! Belge işleme dünyasına dalıyorsanız ve yapılandırılmış belge etiketlerini (SDT'ler) etkili bir şekilde kullanmanız gerekiyorsa doğru yerdesiniz. İster belge işlemeyi otomatikleştiriyor, ister rapor oluşturuyor, ister yalnızca karmaşık belgeleri yönetiyor olun, SDT'lerle nasıl etkileşim kuracağınızı anlamak inanılmaz derecede değerli olabilir. Bu öğreticide, süreci adım adım inceleyerek .NET uygulamalarınızda bu etiketlerle çalışmanın her ayrıntısını kavramanızı sağlayacağız.
+Aspose.Words for .NET'te çok bölümlü yapılandırılmış belge etiketleriyle çalışma hakkında bu kapsamlı kılavuza hoş geldiniz! Belge düzenleme dünyasına dalıyorsanız ve yapılandırılmış belge etiketlerini (SDT'ler) etkili bir şekilde işlemeniz gerekiyorsa, doğru yerdesiniz. Belge işlemeyi otomatikleştiriyor, raporlar oluşturuyor veya karmaşık belgeleri yönetiyor olun, SDT'lerle nasıl etkileşim kuracağınızı anlamak inanılmaz derecede değerli olabilir. Bu eğitimde, bu etiketlerle .NET uygulamalarınızda çalışmanın her ayrıntısını kavramanızı sağlayarak süreci adım adım ele alacağız.
 
-## Önkoşullar
+## Ön koşullar
 
-Koda dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Koda dalmadan önce aşağıdakilerin mevcut olduğundan emin olun:
 
-1.  Aspose.Words for .NET: Word belgeleriyle etkileşim kurmak için Aspose.Words kütüphanesine ihtiyacınız var. adresinden indirebilirsiniz.[Aspose.Words for .NET indirme sayfası](https://releases.aspose.com/words/net/).
+1.  .NET için Aspose.Words: Word belgeleriyle etkileşim kurmak için Aspose.Words kütüphanesine ihtiyacınız var. Bunu şu adresten indirebilirsiniz:[Aspose.Words for .NET indirme sayfası](https://releases.aspose.com/words/net/).
 
-2. Visual Studio: C# kodunuzu yazmak ve çalıştırmak için Visual Studio benzeri bir IDE.
+2. Visual Studio: C# kodlarınızı yazıp çalıştırmanıza olanak sağlayan Visual Studio benzeri bir IDE.
 
-3. Temel C# Bilgisi: C#'a aşinalık ve .NET programlamanın temel kavramları, sorunsuz bir şekilde ilerlemenize yardımcı olacaktır.
+3. Temel C# Bilgisi: C# ve .NET programlamanın temel kavramlarına aşinalık, konuyu sorunsuz bir şekilde takip etmenize yardımcı olacaktır.
 
-4. Yapılandırılmış Belge Etiketleri İçeren Belge: Bu eğitim için yapılandırılmış belge etiketleri içeren bir Word belgesine ihtiyacınız olacak. Test için örnek bir belge kullanabilir veya SDT'ler içeren bir belge oluşturabilirsiniz.
+4. Yapılandırılmış Belge Etiketleri İçeren Belge: Bu eğitim için yapılandırılmış belge etiketleri içeren bir Word belgesine ihtiyacınız olacak. Örnek bir belge kullanabilir veya test için SDT'lerle bir belge oluşturabilirsiniz.
 
 5.  Aspose.Words Belgeleri:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) ek referans ve ayrıntılar için kullanışlıdır.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET ile çalışmaya başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları, Word belgelerini işlemek için gereken sınıflara ve yöntemlere erişmenizi sağlar. Projenizi şu şekilde oluşturabilirsiniz:
+Aspose.Words for .NET ile çalışmaya başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları, Word belgelerini yönetmek için gereken sınıflara ve yöntemlere erişmenizi sağlar. Projenizi şu şekilde ayarlayabilirsiniz:
 
 ```csharp
 using Aspose.Words;
@@ -35,20 +35,20 @@ using Aspose.Words.Tables;
 using Aspose.Words.Markup;
 ```
 
-## 1. Adım: Belge Dizininizi Kurun
+## Adım 1: Belge Dizininizi Ayarlayın
 
-Öncelikle Word belgenizin saklandığı dizinin yolunu belirtmeniz gerekir. Bu, belgenin doğru şekilde yüklenmesi için çok önemlidir.
+Öncelikle Word belgenizin saklandığı dizine giden yolu belirtmeniz gerekir. Bu, belgenin doğru şekilde yüklenmesi için çok önemlidir.
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolu ile.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolunu belirtin.
 
 ## Adım 2: Belgeyi Yükleyin
 
- Kullanın`Document` Word belgenizi yüklemek için sınıf. Bu sınıf, belgeyi programlı olarak açmanıza ve değiştirmenize olanak tanır.
+ Kullanın`Document` Word belgenizi yüklemek için sınıf. Bu sınıf, belgeyi programlı olarak açmanıza ve düzenlemenize olanak tanır.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -56,57 +56,57 @@ Document doc = new Document(dataDir + "Multi-section structured document tags.do
 
  Burada,`"Multi-section structured document tags.docx"`belge dosyanızın adıyla değiştirilmelidir. Bu dosyanın belirtilen dizinde bulunduğundan emin olun.
 
-## 3. Adım: Yapılandırılmış Belge Etiketlerini Alın
+## Adım 3: Yapılandırılmış Belge Etiketlerini Alın
 
- Aspose.Words, yapılandırılmış belge etiketlerine`GetChildNodes` Yöntem. Bu yöntem, belgeden belirli bir türdeki düğümleri almanıza yardımcı olur.
+ Aspose.Words, yapılandırılmış belge etiketlerine erişmenizi sağlar`GetChildNodes` yöntem. Bu yöntem, belgeden belirli bir türdeki düğümleri almanıza yardımcı olur.
 
 ```csharp
 NodeCollection tags = doc.GetChildNodes(NodeType.StructuredDocumentTagRangeStart, true);
 ```
 
 - `NodeType.StructuredDocumentTagRangeStart`: Yapılandırılmış belge etiketlerinin başlangıç noktalarını almak istediğinizi belirtir.
-- `true`: Aramanın yinelemeli olması gerektiğini belirtir (yani, belgedeki tüm düğümleri arayacaktır).
+- `true`: Aramanın yinelemeli olması gerektiğini belirtir (yani, belgedeki tüm düğümleri arar).
 
-## Adım 4: Etiketleri Yineleyin ve Bilgileri Görüntüleyin
+## Adım 4: Etiketler Arasında Gezinin ve Bilgileri Görüntüleyin
 
-Etiketler koleksiyonunu elde ettiğinizde, başlıklarını görüntülemek veya diğer işlemleri gerçekleştirmek için bunlar arasında geçiş yapabilirsiniz. Bu adım, her etiketle ayrı ayrı etkileşim kurmak için çok önemlidir.
+Etiket koleksiyonuna sahip olduğunuzda, başlıklarını görüntülemek veya diğer işlemleri gerçekleştirmek için bunlar arasında yineleme yapabilirsiniz. Bu adım, her etiketle ayrı ayrı etkileşim kurmak için çok önemlidir.
 
 ```csharp
 foreach (StructuredDocumentTagRangeStart tag in tags)
     Console.WriteLine(tag.Title);
 ```
 
-Bu döngü, her yapılandırılmış belge etiketinin başlığını konsola yazdırır. Etiket özelliklerini değiştirmek veya bilgi çıkarmak gibi ek eylemleri gerçekleştirmek için bu döngüyü değiştirebilirsiniz.
+Bu döngü, her yapılandırılmış belge etiketinin başlığını konsola yazdırır. Etiket özelliklerini değiştirme veya bilgi çıkarma gibi ek eylemler gerçekleştirmek için bu döngüyü değiştirebilirsiniz.
 
 ## Çözüm
 
-Tebrikler! Artık Aspose.Words for .NET'i kullanarak çok bölümlü yapılandırılmış belge etiketleriyle nasıl çalışacağınızı öğrendiniz. Bu adımları izleyerek, Word belgelerinizdeki yapılandırılmış belge etiketlerini verimli bir şekilde değiştirebilirsiniz. İster belge iş akışlarını otomatikleştiriyor olun ister karmaşık belgeleri yönetiyor olun, bu beceriler yapılandırılmış içeriği dinamik olarak yönetme yeteneğinizi geliştirecektir.
+Tebrikler! Artık Aspose.Words for .NET kullanarak çok bölümlü yapılandırılmış belge etiketleriyle nasıl çalışacağınızı öğrendiniz. Bu adımları izleyerek Word belgelerinizdeki yapılandırılmış belge etiketlerini etkili bir şekilde işleyebilirsiniz. İster belge iş akışlarını otomatikleştirin ister karmaşık belgeleri yönetin, bu beceriler yapılandırılmış içeriği dinamik olarak işleme yeteneğinizi artıracaktır.
 
- Kodu denemekten ve özel ihtiyaçlarınıza uyacak şekilde uyarlamaktan çekinmeyin. Daha gelişmiş özellikler ve ayrıntılı belgeler için şuraya göz atın:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/).
+ Kodla deney yapmaktan ve onu özel ihtiyaçlarınıza uyacak şekilde uyarlamaktan çekinmeyin. Daha gelişmiş özellikler ve ayrıntılı belgeler için şuraya bakın:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/).
 
-## SSS'ler
+## SSS
 
 ### Yapılandırılmış belge etiketleri nelerdir?
-Yapılandırılmış belge etiketleri (SDT'ler), bir Word belgesindeki metin, resimler ve form alanları dahil olmak üzere çeşitli içerik türlerini içerebilen yer tutuculardır.
+Yapılandırılmış belge etiketleri (SDT'ler), metin, resim ve form alanları gibi çeşitli içerik türlerini barındırabilen bir Word belgesindeki yer tutuculardır.
 
-### SDT'lerle nasıl Word belgesi oluşturabilirim?
-Geliştirici sekmesinden içerik kontrolleri ekleyerek Microsoft Word'ü kullanarak SDT'ler oluşturabilirsiniz. Belgeyi kaydedin ve Aspose.Words for .NET ile kullanın.
+### SDT'lerle Word belgesi nasıl oluşturabilirim?
+Geliştirici sekmesinden içerik denetimleri ekleyerek Microsoft Word kullanarak SDT'ler oluşturabilirsiniz. Belgeyi kaydedin ve Aspose.Words for .NET ile kullanın.
 
-### Aspose.Words'ü kullanarak SDT'lerin içeriğini değiştirebilir miyim?
-Evet, Aspose.Words API aracılığıyla özelliklerine erişip bunları güncelleyerek SDT'lerin içeriğini değiştirebilirsiniz.
+### Aspose.Words kullanarak SDT'lerin içeriğini değiştirebilir miyim?
+Evet, Aspose.Words API'si aracılığıyla SDT'lerin özelliklerine erişip bunları güncelleyerek içeriklerini değiştirebilirsiniz.
 
 ### Belgemde birden fazla SDT türü varsa ne olur?
- ayarlayarak farklı SDT türlerini filtreleyebilir ve alabilirsiniz.`NodeType` parametresi`GetChildNodes` Yöntem.
+ Farklı SDT türlerini filtreleyebilir ve alabilirsiniz.`NodeType` parametre içinde`GetChildNodes` yöntem.
 
-### Aspose.Words for .NET ile ilgili nereden daha fazla yardım alabilirim?
+### Aspose.Words for .NET konusunda daha fazla yardımı nereden alabilirim?
  Ek destek için şu adresi ziyaret edebilirsiniz:[Aspose.Words Destek Forumu](https://forum.aspose.com/c/words/8).
 
 
 
-### Aspose.Words for .NET kullanan Çoklu Bölüm için örnek kaynak kodu 
+### .NET için Aspose.Words kullanılarak Çoklu Bölüm için örnek kaynak kodu 
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -115,4 +115,4 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 	Console.WriteLine(tag.Title);
 ```
 
-İşte bu! Aspose.Words for .NET'i kullanarak Word belgenizdeki çok bölümlü yapılandırılmış belge etiketlerini başarıyla aldınız ve işlediniz.
+İşte bu kadar! Aspose.Words for .NET kullanarak Word belgenizdeki çok bölümlü yapılandırılmış belge etiketlerini başarıyla aldınız ve işlediniz.

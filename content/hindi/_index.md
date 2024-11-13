@@ -14,11 +14,12 @@ is_root: true
 {{% /alert %}}
 
 ये कुछ उपयोगी संसाधनों के लिंक हैं:
+- [AI संचालित दस्तावेज़ प्रसंस्करण](./net/ai-powered-document-processing/)
 - [लाइसेंस लागू करें](./net/apply-license/)   
 - [ओपनटाइप सुविधाएँ सक्षम करें](./net/enable-opentype-features/)   
 - [टिप्पणियों के साथ काम करना](./net/working-with-comments/)   
 - [फ़ील्ड्स के साथ कार्य करना](./net/working-with-fields/)   
-- [फुटनोट और एंडनोट के साथ कार्य करना](./net/working-with-footnote-and-endnote/)   
+- [फ़ुटनोट और एंडनोट के साथ कार्य करना](./net/working-with-footnote-and-endnote/)   
 - [फॉर्मफील्ड्स के साथ कार्य करना](./net/working-with-formfields/)   
 - [हेडर और फूटर के साथ कार्य करना](./net/working-with-headers-and-footers/)   
 - [हाइफ़नेशन के साथ कार्य करना](./net/working-with-hyphenation/)   
@@ -33,7 +34,7 @@ is_root: true
 - [दस्तावेज़ों की तुलना करें](./net/compare-documents/) 
 - [दस्तावेज़ स्वरूपण](./net/document-formatting/)      
 - [वॉटरमार्क के साथ प्रोग्रामिंग](./net/programming-with-watermark/)    
-- [मार्कडाउनसेवऑप्शन के साथ प्रोग्रामिंग](./net/programming-with-markdownsaveoptions/)   
+- [मार्कडाउन के साथ प्रोग्रामिंगसेवऑप्शन](./net/programming-with-markdownsaveoptions/)   
 - [बुनियादी रूपांतरण](./net/basic-conversions/)   
 
 ## जावा के लिए Aspose.Words दस्तावेज़ प्रसंस्करण ट्यूटोरियल

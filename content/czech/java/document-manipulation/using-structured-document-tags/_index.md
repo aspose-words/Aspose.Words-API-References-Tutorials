@@ -142,7 +142,7 @@ Na ovládací prvky obsahu můžete použít styly a vylepšit tak vizuální vz
 Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
-//Použijte vlastní styl
+// Použijte vlastní styl
 Style style = doc.getStyles().getByStyleIdentifier(StyleIdentifier.QUOTE);
 sdt.setStyle(style);
 

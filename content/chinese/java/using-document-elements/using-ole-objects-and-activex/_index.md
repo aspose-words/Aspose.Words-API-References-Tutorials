@@ -128,7 +128,7 @@ public void readActiveXControlProperties() throws Exception
 ### Aspose.Words for Java 适合企业级文档自动化吗？ 
    - 是的，Aspose.Words for Java 是一个功能强大的库，用于自动生成和处理 Java 应用程序中的文档。
 
-### 在哪里可以访问 Aspose.Words for Java？ 
+### 我可以在哪里访问 Aspose.Words for Java？ 
    - 您可以从以下位置下载 Aspose.Words for Java[这里](https://releases.aspose.com/words/java/).
 
 立即开始使用 Aspose.Words for Java 并充分发挥文档自动化和定制的潜力！

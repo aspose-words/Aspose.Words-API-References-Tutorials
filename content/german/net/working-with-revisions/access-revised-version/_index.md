@@ -79,7 +79,7 @@ foreach (Revision revision in doc.Revisions)
 
 ## Schritt 6: Überprüfen des übergeordneten Knotentyps
 
- Überprüfen Sie bei jeder Revision, ob der übergeordnete Knoten vom Typ ist`Paragraph`. Dies ist wichtig, da wir auf den Absatz zugreifen möchten, der die Revision enthält.
+ Überprüfen Sie bei jeder Revision, ob der übergeordnete Knoten vom Typ ist`Paragraph`. Dies ist wichtig, da wir auf den Absatz zugreifen möchten, der die Überarbeitung enthält.
 
 ```csharp
 if (revision.ParentNode.NodeType == NodeType.Paragraph)
@@ -135,4 +135,4 @@ Ja, solange das Dokument Revisionen enthält, können Sie mit Aspose.Words für 
 Aspose.Words für .NET ist mit einer Vielzahl von .NET-Versionen kompatibel. Weitere Details finden Sie im[Dokumentation](https://reference.aspose.com/words/net/).
 
 ### Wo erhalte ich Support für Aspose.Words für .NET?
- Sie können Unterstützung von der Aspose-Community erhalten auf deren[Forum](https://forum.aspose.com/c/words/8).
+ Sie können Unterstützung von der Aspose-Community erhalten über deren[Forum](https://forum.aspose.com/c/words/8).

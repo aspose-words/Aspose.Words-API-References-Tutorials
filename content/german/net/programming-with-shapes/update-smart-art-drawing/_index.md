@@ -9,13 +9,13 @@ url: /de/net/programming-with-shapes/update-smart-art-drawing/
 ---
 ## Einführung
 
-Smart Art-Grafiken sind eine fantastische Möglichkeit, Informationen in Word-Dokumenten visuell darzustellen. Egal, ob Sie einen Geschäftsbericht, einen Lehrartikel oder eine Präsentation erstellen, Smart Art kann komplexe Daten leichter verdaulich machen. Wenn sich Dokumente jedoch weiterentwickeln, müssen die darin enthaltenen Smart Art-Grafiken möglicherweise aktualisiert werden, um die neuesten Änderungen widerzuspiegeln. Wenn Sie Aspose.Words für .NET verwenden, können Sie diesen Prozess programmgesteuert optimieren. Dieses Tutorial führt Sie durch die Aktualisierung von Smart Art-Zeichnungen in Word-Dokumenten mit Aspose.Words für .NET, sodass Ihre visuellen Darstellungen leichter aktuell und genau bleiben.
+Smart Art-Grafiken sind eine fantastische Möglichkeit, Informationen in Word-Dokumenten visuell darzustellen. Egal, ob Sie einen Geschäftsbericht, einen Lehrartikel oder eine Präsentation erstellen, Smart Art kann komplexe Daten leichter verdaulich machen. Wenn sich Dokumente jedoch weiterentwickeln, müssen die darin enthaltenen Smart Art-Grafiken möglicherweise aktualisiert werden, um die neuesten Änderungen widerzuspiegeln. Wenn Sie Aspose.Words für .NET verwenden, können Sie diesen Prozess programmgesteuert optimieren. Dieses Tutorial führt Sie durch die Aktualisierung von Smart Art-Zeichnungen in Word-Dokumenten mit Aspose.Words für .NET, sodass Ihre Grafiken leichter aktuell und genau bleiben.
 
 ## Voraussetzungen
 
 Bevor Sie mit den Schritten beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können es von der[Aspose-Releases-Seite](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können es herunterladen von der[Aspose-Releases-Seite](https://releases.aspose.com/words/net/).
 
 2. .NET-Umgebung: Sie sollten eine .NET-Entwicklungsumgebung wie Visual Studio eingerichtet haben.
 
@@ -80,7 +80,7 @@ Durch die Identifizierung von Smart Art-Formen wird sichergestellt, dass Sie nur
 Überschrift: Smart Art Graphics aktualisieren
 
 Erläuterung:
- Der`UpdateSmartArtDrawing` Die Methode aktualisiert die Smart Art-Grafik und stellt sicher, dass sie alle Änderungen an den Daten oder am Layout des Dokuments widerspiegelt. Diese Methode muss für jede im vorherigen Schritt identifizierte Smart Art-Form aufgerufen werden.
+Der`UpdateSmartArtDrawing` Die Methode aktualisiert die Smart Art-Grafik und stellt sicher, dass sie alle Änderungen an den Daten oder am Layout des Dokuments widerspiegelt. Diese Methode muss für jede im vorherigen Schritt identifizierte Smart Art-Form aufgerufen werden.
 
 ```csharp
 // Aktualisieren Sie die Smart Art-Zeichnung für jede Smart Art-Form

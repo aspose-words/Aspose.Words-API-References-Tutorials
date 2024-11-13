@@ -27,7 +27,7 @@ Nachdem wir die Bibliothek eingerichtet haben, können wir mit dem Hinzufügen v
 Textwasserzeichen sind eine häufige Wahl, wenn Sie Ihren Dokumenten Textinformationen hinzufügen möchten. So können Sie mit Aspose.Words für Java ein Textwasserzeichen hinzufügen:
 
 ```java
-//Erstellen einer Dokumentinstanz
+// Erstellen einer Dokumentinstanz
 Document doc = new Document("Document.docx");
 
 // TextWasserzeichenOptionen definieren
@@ -38,7 +38,7 @@ options.setColor(Color.BLACK);
 options.setLayout(WatermarkLayout.HORIZONTAL);
 options.setSemitransparent(false);
 
-// Legen Sie den Wasserzeichentext und die Optionen fest
+//Legen Sie den Wasserzeichentext und die Optionen fest
 doc.getWatermark().setText("Test", options);
 
 // Speichern Sie das Dokument mit dem Wasserzeichen
@@ -50,7 +50,7 @@ doc.save("DocumentWithWatermark.docx");
 Zusätzlich zu Textwasserzeichen können Sie Ihren Dokumenten auch Bildwasserzeichen hinzufügen. So fügen Sie ein Bildwasserzeichen hinzu:
 
 ```java
-//Erstellen einer Dokumentinstanz
+// Erstellen einer Dokumentinstanz
 Document doc = new Document("Document.docx");
 
 // Laden Sie das Bild für das Wasserzeichen
@@ -80,7 +80,7 @@ Sie können Wasserzeichen anpassen, indem Sie ihr Aussehen und ihre Position än
 Um Wasserzeichen aus einem Dokument zu entfernen, können Sie den folgenden Code verwenden:
 
 ```java
-//Erstellen einer Dokumentinstanz
+// Erstellen einer Dokumentinstanz
 Document doc = new Document("DocumentWithWatermark.docx");
 
 // Entfernen Sie das Wasserzeichen

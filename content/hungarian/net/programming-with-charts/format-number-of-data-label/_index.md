@@ -125,7 +125,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumok programozott
 Igen, az Aspose.Words for .NET számos diagramtípust támogat, beleértve a sávot, oszlopot, kört és egyebeket.
 
 ### Hogyan szerezhetek ideiglenes licencet az Aspose.Words for .NET-hez?
- Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Lehetséges adatcímkéket kapcsolni a forráscellákhoz az Excelben?
 Igen, csatolhat adatcímkéket a forráscellákhoz, lehetővé téve a számformátum öröklését a forráscellából.

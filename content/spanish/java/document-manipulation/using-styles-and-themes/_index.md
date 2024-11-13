@@ -1,8 +1,8 @@
 ---
 title: Uso de estilos y temas en Aspose.Words para Java
-linktitle: Usar estilos y temas
+linktitle: Uso de estilos y temas
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda cómo mejorar el formato de documentos con Aspose.Words para Java. Explore estilos, temas y más en esta guía completa con ejemplos de código fuente.
+description: Aprenda a mejorar el formato de los documentos con Aspose.Words para Java. Explore estilos, temas y más en esta guía completa con ejemplos de código fuente.
 type: docs
 weight: 20
 url: /es/java/document-manipulation/using-styles-and-themes/
@@ -10,16 +10,16 @@ url: /es/java/document-manipulation/using-styles-and-themes/
 
 ## Introducción al uso de estilos y temas en Aspose.Words para Java
 
-En esta guía, exploraremos cómo trabajar con estilos y temas en Aspose.Words para Java para mejorar el formato y la apariencia de sus documentos. Cubriremos temas como recuperar estilos, copiar estilos, administrar temas e insertar separadores de estilos. ¡Empecemos!
+En esta guía, exploraremos cómo trabajar con estilos y temas en Aspose.Words para Java para mejorar el formato y la apariencia de sus documentos. Trataremos temas como la recuperación de estilos, la copia de estilos, la administración de temas y la inserción de separadores de estilos. ¡Comencemos!
 
-## Recuperar estilos
+## Recuperando estilos
 
 Para recuperar estilos de un documento, puede utilizar el siguiente fragmento de código Java:
 
 ```java
 Document doc = new Document();
 String styleName = "";
-//Obtenga la colección de estilos del documento.
+//Obtener la colección de estilos del documento.
 StyleCollection styles = doc.getStyles();
 for (Style style : styles)
 {
@@ -36,9 +36,9 @@ for (Style style : styles)
 }
 ```
 
-Este código recupera los estilos definidos en el documento e imprime sus nombres.
+Este código obtiene los estilos definidos en el documento e imprime sus nombres.
 
-## Estilos de copia
+## Copiar estilos
 
  Para copiar estilos de un documento a otro, puede utilizar el`copyStylesFromTemplate` método como se muestra a continuación:
 
@@ -57,7 +57,7 @@ Este código copia estilos de un documento de plantilla al documento actual.
 
 ## Gestión de temas
 
-Los temas son esenciales para definir el aspecto general de su documento. Puede recuperar y establecer propiedades del tema como se demuestra en el siguiente código:
+Los temas son esenciales para definir el aspecto general de su documento. Puede recuperar y configurar las propiedades de los temas como se muestra en el siguiente código:
 
 ```java
 @Test
@@ -82,9 +82,9 @@ public void setThemeProperties() throws Exception
 
 Estos fragmentos demuestran cómo recuperar y modificar propiedades del tema, como fuentes y colores.
 
-## Insertar separadores de estilos
+## Inserción de separadores de estilo
 
-Los separadores de estilo son útiles para aplicar diferentes estilos dentro de un solo párrafo. A continuación se muestra un ejemplo de cómo insertar separadores de estilo:
+Los separadores de estilo son útiles para aplicar distintos estilos dentro de un mismo párrafo. A continuación, se muestra un ejemplo de cómo insertar separadores de estilo:
 
 ```java
 @Test
@@ -96,27 +96,27 @@ public void insertStyleSeparator() throws Exception
     paraStyle.getFont().setBold(false);
     paraStyle.getFont().setSize(8.0);
     paraStyle.getFont().setName("Arial");
-    // Agregue texto con estilo "Título 1".
+    // Añadir texto con el estilo "Título 1".
     builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
     builder.write("Heading 1");
     builder.insertStyleSeparator();
-    // Añade texto con otro estilo.
+    // Añadir texto con otro estilo.
     builder.getParagraphFormat().setStyleName(paraStyle.getName());
     builder.write("This is text with some other formatting ");
     doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 }
 ```
 
-En este código, creamos un estilo de párrafo personalizado e insertamos un separador de estilo para cambiar estilos dentro del mismo párrafo.
+En este código, creamos un estilo de párrafo personalizado e insertamos un separador de estilos para cambiar estilos dentro del mismo párrafo.
 
 ## Conclusión
 
-Esta guía ha cubierto los conceptos básicos para trabajar con estilos y temas en Aspose.Words para Java. Ha aprendido a recuperar y copiar estilos, administrar temas e insertar separadores de estilos para crear documentos visualmente atractivos y con buen formato. Experimente con estas técnicas para personalizar sus documentos según sus requisitos.
+En esta guía se han abordado los aspectos básicos del trabajo con estilos y temas en Aspose.Words para Java. Ha aprendido a recuperar y copiar estilos, administrar temas e insertar separadores de estilos para crear documentos visualmente atractivos y con un buen formato. Experimente con estas técnicas para personalizar sus documentos según sus requisitos.
 
 
 ## Preguntas frecuentes
 
-### ¿Cómo puedo recuperar las propiedades del tema en Aspose.Words para Java?
+### ¿Cómo puedo recuperar propiedades del tema en Aspose.Words para Java?
 
 Puede recuperar las propiedades del tema accediendo al objeto del tema y sus propiedades.
 
@@ -124,6 +124,6 @@ Puede recuperar las propiedades del tema accediendo al objeto del tema y sus pro
 
 Puede establecer las propiedades del tema modificando las propiedades del objeto del tema.
 
-### ¿Cómo puedo utilizar separadores de estilo para cambiar de estilo dentro del mismo párrafo?
+### ¿Cómo puedo usar separadores de estilos para cambiar estilos dentro del mismo párrafo?
 
  Puede insertar separadores de estilo utilizando el`insertStyleSeparator` método de la`DocumentBuilder` clase.

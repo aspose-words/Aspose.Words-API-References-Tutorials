@@ -79,7 +79,7 @@ customStyle.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 フォント効果を試して、テキストを目立たせてみましょう。以下は影の効果を適用する例です。
 
 ```java
-//フォントに影の効果を適用する
+//フォントに影効果を適用する
 builder.getFont().setShadow(true);
 ```
 

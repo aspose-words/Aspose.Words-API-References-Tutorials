@@ -14,7 +14,7 @@ Aspose.Words for .NET の使用に関する包括的なガイドへようこそ�
 ## 前提条件
 
 Aspose.Words を使い始める前に、次の設定がされていることを確認してください。
-- お使いのマシンに Visual Studio がインストールされている
+- マシンに Visual Studio がインストールされている
 - C#プログラミング言語の基礎知識
 - Aspose.Words for .NET ライブラリへのアクセス (ダウンロード リンク[ここ](https://releases.aspose.com/words/net/）)
 
@@ -89,7 +89,7 @@ Aspose.Words for .NET は、開発者が .NET アプリケーション内で Wor
 はい、無料トライアルをダウンロードできます[ここ](https://releases.aspose.com/).
 
 ### Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
-サポートとコミュニティの議論については、[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8).
+サポートやコミュニティのディスカッションについては、[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words for .NET のライセンスはどこで購入できますか?
 ライセンスを購入することができます[ここ](https://purchase.aspose.com/buy).

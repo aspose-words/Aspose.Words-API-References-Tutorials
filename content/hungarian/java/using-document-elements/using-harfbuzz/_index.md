@@ -28,7 +28,7 @@ A kezdéshez hozzon létre egy új Java-projektet, és vegye fel az Aspose.Words
 
 ## 2. lépés: Word-dokumentum betöltése
 
- Ebben a lépésben betöltünk egy Word-dokumentum mintát, amellyel dolgozni szeretnénk. Cserélje ki`"Your Document Directory"` a Word-dokumentum tényleges elérési útjával:
+ Ebben a lépésben betöltünk egy minta Word dokumentumot, amellyel dolgozni szeretnénk. Cserélje ki`"Your Document Directory"` a Word-dokumentum tényleges elérési útjával:
 
 ```java
 String dataDir = "Your Document Directory";
@@ -59,7 +59,7 @@ string dataDir = "Your Document Directory";
 string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
 // Amikor beállítjuk a szövegformáló gyárat, az elrendezés elkezdi használni az OpenType szolgáltatásait.
-// Egy példány tulajdonság a BasicTextShaperCache objektumcsomagolást adja vissza a HarfBuzzTextShaperFactory-ban.
+// Egy példány tulajdonság a BasicTextShaperCache objektumcsomagolást adja vissza a HarfBuzzTextShaperFactory-t.
 doc.getLayoutOptions().setTextShaperFactory(HarfBuzzTextShaperFactory.getInstance());
 doc.save(outPath + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```

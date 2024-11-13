@@ -82,7 +82,7 @@ doc.ExpandTableStylesToDirectFormatting();
 
 ## Schritt 6: Endgültige Zellschattierung prüfen
 
-Zum Schluss überprüfen und drucken wir die Schattierungsfarbe der Zelle, nachdem wir die Stile erweitert haben. Sie sollten die aktualisierte Formatierung sehen, die vom Tabellenstil angewendet wurde.
+Abschließend überprüfen und drucken wir die Schattierungsfarbe der Zelle, nachdem wir die Stile erweitert haben. Sie sollten die aktualisierte Formatierung sehen, die vom Tabellenstil angewendet wurde.
 
 ```csharp
 // Drucken Sie die Zellenschattierungsfarbe nach der Stilerweiterung.

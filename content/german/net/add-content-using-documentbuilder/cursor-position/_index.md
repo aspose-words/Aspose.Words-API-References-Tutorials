@@ -9,7 +9,7 @@ url: /de/net/add-content-using-documentbuilder/cursor-position/
 ---
 ## Einführung
 
-Hallo, liebe Programmierer! Waren Sie schon einmal mitten in einem Projekt und haben sich mit Word-Dokumenten in Ihren .NET-Anwendungen herumgeschlagen? Sie sind nicht allein. Wir alle haben uns schon einmal den Kopf zerbrochen und versucht, herauszufinden, wie wir Word-Dateien bearbeiten können, ohne den Verstand zu verlieren. Heute tauchen wir in die Welt von Aspose.Words für .NET ein – eine fantastische Bibliothek, die die programmgesteuerte Bearbeitung von Word-Dokumenten vereinfacht. Wir werden aufschlüsseln, wie Sie die Cursorposition in einem Word-Dokument mit diesem praktischen Tool verwalten. Also, schnappen Sie sich Ihren Kaffee und los geht‘s mit dem Programmieren!
+Hallo, liebe Programmierer! Waren Sie schon einmal mitten in einem Projekt und haben sich mit Word-Dokumenten in Ihren .NET-Anwendungen herumgeschlagen? Damit sind Sie nicht allein. Wir alle haben uns schon einmal den Kopf zerbrochen und versucht, herauszufinden, wie wir Word-Dateien bearbeiten können, ohne den Verstand zu verlieren. Heute tauchen wir in die Welt von Aspose.Words für .NET ein – eine fantastische Bibliothek, die die programmgesteuerte Bearbeitung von Word-Dokumenten vereinfacht. Wir werden erklären, wie Sie mit diesem praktischen Tool die Cursorposition in einem Word-Dokument verwalten. Also, schnappen Sie sich Ihren Kaffee und los geht‘s mit dem Programmieren!
 
 ## Voraussetzungen
 
@@ -19,11 +19,11 @@ Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, wa
 2.  Visual Studio installiert: Jede aktuelle Version ist geeignet. Wenn Sie es noch nicht haben, können Sie es von der[Website](https://visualstudio.microsoft.com/).
 3.  Aspose.Words für .NET-Bibliothek: Sie müssen diese Bibliothek herunterladen und installieren. Sie erhalten sie von[Hier](https://releases.aspose.com/words/net/).
 
-Okay, wenn Sie alles vorbereitet haben, können wir mit der Einrichtung fortfahren!
+Okay, wenn Sie alles bereit haben, können wir mit der Einrichtung fortfahren!
 
 ### Neues Projekt erstellen
 
-Als Erstes starten wir Visual Studio und erstellen eine neue C#-Konsolenanwendung. Dies wird heute unser Spielplatz sein.
+Als Erstes starten Sie Visual Studio und erstellen eine neue C#-Konsolenanwendung. Dies wird heute unser Spielplatz sein.
 
 ### Installieren Sie Aspose.Words für .NET
 
@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Initialisieren des Dokuments
 
- Beginnen wir mit der Erstellung eines neuen Word-Dokuments. Wir verwenden das`Document`Und`DocumentBuilder` Klassen von Aspose.Words.
+ Beginnen wir mit der Erstellung eines neuen Word-Dokuments. Wir verwenden das`Document` Und`DocumentBuilder` Klassen von Aspose.Words.
 
 ```csharp
 Document doc = new Document();

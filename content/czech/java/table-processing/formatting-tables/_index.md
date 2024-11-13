@@ -79,7 +79,7 @@ Ve formátování se děje kouzlo. Aspose.Words for Java poskytuje nepřeberné 
 
 ### Úprava šířky sloupců
 
-Můžete ovládat šířku sloupců, abyste zajistili, že tabulka bude vypadat vizuálně přitažlivě. Takto můžete upravit šířku sloupců:
+Můžete ovládat šířku sloupců, abyste zajistili, že tabulka bude vypadat vizuálně přitažlivě. Zde je návod, jak upravit šířku sloupců:
 
 ```java
 // Nastavte preferovanou šířku sloupce

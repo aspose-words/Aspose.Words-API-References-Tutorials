@@ -48,7 +48,7 @@ Install-Package Aspose.Words
 
 ## Schritt 2: Dokumente laden
 
- Laden wir nun die Dokumente, die wir zusammenführen möchten. Für dieses Beispiel benötigen Sie zwei Word-Dokumente:`Document source.docx`Und`Northwind traders.docx`. Stellen Sie sicher, dass sich diese Dateien in Ihrem Projektverzeichnis befinden.
+ Laden wir nun die Dokumente, die wir zusammenführen möchten. Für dieses Beispiel benötigen Sie zwei Word-Dokumente:`Document source.docx` Und`Northwind traders.docx`. Stellen Sie sicher, dass sich diese Dateien in Ihrem Projektverzeichnis befinden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -78,7 +78,7 @@ srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 ```
 
-## Schritt 4: Seiten-Setup-Einstellungen anpassen
+## Schritt 4: Seiteneinrichtungseinstellungen anpassen
 
 Um Layoutinkonsistenzen zu vermeiden, stellen Sie sicher, dass die Seiteneinrichtungseinstellungen des ersten Abschnitts des Quelldokuments mit denen des letzten Abschnitts des Zieldokuments übereinstimmen.
 

@@ -1,30 +1,30 @@
 ---
 title: Auteurveld invoegen
 linktitle: Auteurveld invoegen
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een auteursveld invoegt in een Word-document met Aspose.Words voor .NET met onze stapsgewijze handleiding. Perfect voor het automatiseren van het maken van documenten.
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u een auteursveld in een Word-document invoegt met Aspose.Words voor .NET met onze stapsgewijze handleiding. Perfect voor het automatiseren van documentcreatie.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/insert-author-field/
 ---
 ## Invoering
 
-In deze zelfstudie duiken we in de kern van hoe u een auteursveld in een Word-document kunt invoegen met behulp van Aspose.Words voor .NET. Of u nu het maken van documenten voor uw bedrijf automatiseert of eenvoudigweg uw bestanden wilt personaliseren, met deze stapsgewijze handleiding bent u aan het juiste adres. We doorlopen alles, van het instellen van uw omgeving tot het opslaan van uw voltooide document. Laten we beginnen!
+In deze tutorial duiken we in de details van het invoegen van een auteursveld in een Word-document met Aspose.Words voor .NET. Of u nu de documentcreatie voor uw bedrijf wilt automatiseren of gewoon uw bestanden wilt personaliseren, deze stapsgewijze handleiding helpt u verder. We doorlopen alles, van het instellen van uw omgeving tot het opslaan van uw voltooide document. Laten we beginnen!
 
 ## Vereisten
 
-Voordat we verder gaan met de tutorial, zorgen we ervoor dat je alles hebt wat je nodig hebt:
+Voordat we met de tutorial beginnen, willen we ervoor zorgen dat je alles hebt wat je nodig hebt:
 
--  Aspose.Words voor .NET-bibliotheek: dat kan[download het hier](https://releases.aspose.com/words/net/).
-- Visual Studio: hier zullen we onze code schrijven en uitvoeren.
-- .NET Framework: zorg ervoor dat het op uw computer is geïnstalleerd.
-- Basiskennis van C#: Bekendheid met programmeren in C# helpt u mee te volgen.
+-  Aspose.Words voor .NET-bibliotheek: U kunt[download het hier](https://releases.aspose.com/words/net/).
+- Visual Studio: hier schrijven en voeren we onze code uit.
+- .NET Framework: Zorg ervoor dat dit op uw computer is geïnstalleerd.
+- Basiskennis van C#: Kennis van C#-programmering helpt u de cursus te volgen.
 
-Zodra u deze vereisten gereed heeft, zijn we klaar om te beginnen.
+Zodra u aan deze vereisten voldoet, kunnen we beginnen.
 
 ## Naamruimten importeren
 
-Allereerst moeten we de benodigde naamruimten importeren. Hierdoor kunnen we de klassen en methoden van Aspose.Words gebruiken.
+Allereerst moeten we de benodigde namespaces importeren. Dit stelt ons in staat om de klassen en methoden te gebruiken die door Aspose.Words worden geleverd.
 
 ```csharp
 using Aspose.Words;
@@ -35,52 +35,52 @@ Nu we de naamruimten hebben geïmporteerd, gaan we verder met de stapsgewijze ha
 
 ## Stap 1: Stel uw project in
 
-Om te beginnen moeten we een nieuw project opzetten in Visual Studio. Als u al een project heeft, kunt u deze stap overslaan.
+Om te beginnen moeten we een nieuw project in Visual Studio opzetten. Als u al een project hebt, kunt u deze stap overslaan.
 
-### Maak een nieuw project
+### Een nieuw project maken
 
-1. Open Visual Studio: Start Visual Studio op uw computer.
-2. Nieuw project aanmaken: Klik op 'Een nieuw project maken'.
-3. Selecteer Projecttype: Kies "Console-app" met C# als taal.
-4. Configureer uw project: geef uw project een naam en kies een locatie om het op te slaan. Klik op 'Maken'.
+1. Open Visual Studio: start Visual Studio op uw computer.
+2. Nieuw project maken: Klik op 'Nieuw project maken'.
+3. Selecteer projecttype: Kies 'Console-app' met C# als taal.
+4. Configureer uw project: Geef uw project een naam en kies een locatie om het op te slaan. Klik op "Create."
 
 ### Installeer Aspose.Words voor .NET
 
-Vervolgens moeten we de Aspose.Words-bibliotheek installeren. U kunt dit doen via de NuGet-pakketbeheerder.
+Vervolgens moeten we de Aspose.Words-bibliotheek installeren. Dit kunt u doen via de NuGet Package Manager.
 
-1. Open NuGet Package Manager: Klik met de rechtermuisknop op uw project in de Solution Explorer en klik vervolgens op "NuGet-pakketten beheren".
-2. Zoeken naar Aspose.Words: Zoek op het tabblad Bladeren naar 'Aspose.Words'.
+1. Open NuGet Package Manager: klik met de rechtermuisknop op uw project in Solution Explorer en klik vervolgens op 'NuGet-pakketten beheren'.
+2. Zoeken naar Aspose.Words: Zoek in het tabblad Bladeren naar "Aspose.Words".
 3. Installeer het pakket: Klik op "Aspose.Words" en klik vervolgens op "Installeren".
 
-Nu het project is opgezet en de benodigde pakketten zijn geïnstalleerd, gaan we verder met het schrijven van onze code.
+Nu het project is opgezet en de benodigde pakketten zijn geïnstalleerd, kunnen we beginnen met het schrijven van de code.
 
 ## Stap 2: Initialiseer het document
 
-In deze stap maken we een nieuw Word-document en voegen er een alinea aan toe.
+In deze stap maken we een nieuw Word-document en voegen we er een alinea aan toe.
 
-### Maak en initialiseer het document
+### Het document maken en initialiseren
 
-1.  Maak een nieuw document: We beginnen met het maken van een nieuw exemplaar van het`Document` klas.
+1.  Een nieuw document maken: We beginnen met het maken van een nieuw exemplaar van de`Document` klas.
 
 ```csharp
 Document doc = new Document();
 ```
 
-2. Een alinea toevoegen: Vervolgens voegen we een alinea aan het document toe.
+2. Een alinea toevoegen: Vervolgens voegen we een alinea toe aan het document.
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
-In deze paragraaf voegen we ons auteursveld in.
+In deze alinea voegen we het auteursveld in.
 
-## Stap 3: Voeg het auteurveld in
+## Stap 3: Voeg het auteursveld in
 
-Nu is het tijd om het auteurveld in ons document in te voegen.
+Nu is het tijd om het auteursveld in ons document in te voegen.
 
-### Voeg het auteurveld toe
+### Voeg het auteursveld toe
 
-1.  Voeg het veld in: gebruik de`AppendField` methode om het auteurveld in de alinea in te voegen.
+1.  Het veld invoegen: Gebruik de`AppendField` Methode om het auteursveld in de alinea in te voegen.
 
 ```csharp
 FieldAuthor field = (FieldAuthor)para.AppendField(FieldType.FieldAuthor, false);
@@ -100,7 +100,7 @@ field.Update();
 
 ## Stap 4: Sla het document op
 
-De laatste stap is het opslaan van het document in de door u opgegeven map.
+De laatste stap is het opslaan van het document in de door u opgegeven directory.
 
 ### Bewaar uw document
 
@@ -110,13 +110,13 @@ De laatste stap is het opslaan van het document in de door u opgegeven map.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-2.  Sla het document op: gebruik de`Save` methode om uw document op te slaan.
+2.  Document opslaan: Gebruik de`Save` methode om uw document op te slaan.
 
 ```csharp
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-En daar heb je het! U hebt met succes een auteurveld in een Word-document ingevoegd met Aspose.Words voor .NET.
+En daar heb je het! Je hebt met succes een auteursveld ingevoegd in een Word-document met Aspose.Words voor .NET.
 
 ## Conclusie
 
@@ -126,20 +126,20 @@ Het invoegen van een auteursveld in een Word-document met Aspose.Words voor .NET
 
 ### Kan ik een andere programmeertaal dan C# gebruiken?
 
-Aspose.Words voor .NET ondersteunt voornamelijk .NET-talen, waaronder C# en VB.NET. Voor andere talen raadpleegt u de respectieve Aspose-producten.
+Aspose.Words voor .NET ondersteunt voornamelijk .NET-talen, waaronder C# en VB.NET. Voor andere talen, controleer de betreffende Aspose-producten.
 
 ### Is Aspose.Words voor .NET gratis te gebruiken?
 
-Aspose.Words biedt een gratis proefperiode, maar voor volledige functies en commercieel gebruik moet u een licentie aanschaffen. U kunt een tijdelijke licentie krijgen[hier](https://purchase.aspose.com/temporary-license/).
+Aspose.Words biedt een gratis proefperiode, maar voor volledige functies en commercieel gebruik moet u een licentie kopen. U kunt een tijdelijke licentie krijgen[hier](https://purchase.aspose.com/temporary-license/).
 
 ### Hoe kan ik de auteursnaam dynamisch bijwerken?
 
- U kunt de`AuthorName` eigenschap dynamisch door er een variabele of waarde aan toe te wijzen uit een database of gebruikersinvoer.
+ U kunt de`AuthorName` eigenschap dynamisch wijzigen door er een variabele of waarde aan toe te wijzen vanuit een database of door de invoer van de gebruiker.
 
 ### Kan ik andere typen velden toevoegen met Aspose.Words?
 
- Ja, Aspose.Words ondersteunt verschillende veldtypen, waaronder datum, tijd, paginanummer en meer. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor details.
+ Ja, Aspose.Words ondersteunt verschillende veldtypen, waaronder datum, tijd, paginanummer en meer. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
-### Waar kan ik ondersteuning vinden als ik problemen tegenkom?
+### Waar kan ik ondersteuning vinden als ik problemen ondervind?
 
- Ondersteuning vindt u op het Aspose.Words-forum[hier](https://forum.aspose.com/c/words/8).
+ Ondersteuning vind je op het Aspose.Words forum[hier](https://forum.aspose.com/c/words/8).

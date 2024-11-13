@@ -1,6 +1,6 @@
 ---
-title: Automaticky Přizpůsobit Oknu
-linktitle: Automaticky Přizpůsobit Oknu
+title: Automatické přizpůsobení oknu
+linktitle: Automatické přizpůsobení oknu
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Pomocí tohoto podrobného průvodce můžete snadno automaticky přizpůsobit tabulky oknu v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ideální pro čistší, profesionální dokumenty.
 type: docs
@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
- The`Aspose.Words` jmenný prostor obsahuje základní třídy pro manipulaci s dokumenty aplikace Word`Aspose.Words.Tables` je speciálně pro manipulaci se stoly.
+The`Aspose.Words` jmenný prostor obsahuje základní třídy pro manipulaci s dokumenty aplikace Word`Aspose.Words.Tables` je speciálně pro manipulaci se stoly.
 
 ## Krok 1: Nastavte svůj dokument
 
@@ -68,7 +68,7 @@ Nyní, když máte stůl, můžete použít funkci automatického přizpůsoben�
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
- The`AutoFit` metoda s`AutoFitBehavior.AutoFitToWindow` zajišťuje, že šířka tabulky je upravena tak, aby se vešla na celou šířku stránky.
+The`AutoFit` metoda s`AutoFitBehavior.AutoFitToWindow` zajišťuje, že šířka tabulky je upravena tak, aby se vešla na celou šířku stránky.
 
 ## Krok 4: Uložte upravený dokument
 

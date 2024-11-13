@@ -2,27 +2,27 @@
 title: Word Belgesinde Sınırsız Bölüm
 linktitle: Word Belgesinde Sınırsız Bölüm
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgenizdeki belirli bölümlerin kilidini açın. Hassas içeriği korumak için mükemmeldir.
+description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgenizdeki belirli bölümlerin kilidini açın. Hassas içerikleri korumak için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/document-protection/unrestricted-section/
 ---
 ## giriiş
 
-Selam! Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün süper pratik bir şeyle uğraşıyoruz: Bir Word belgesindeki belirli bölümlerin kilidini açarken diğer bölümleri korumayı nasıl sağlayacağız. Dokümanınızın bazı bölümlerini koruma altına alıp bazılarını düzenlemeye açık bırakmanız gerekiyorsa, bu eğitim tam size göre. Hadi başlayalım!
+Merhaba! Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün, süper pratik bir şeyle uğraşıyoruz: Bir Word belgesindeki belirli bölümlerin kilidini açarken diğer bölümleri korumayı nasıl başarabilirsiniz. Belgenizin bazı bölümlerini korumanız ancak diğerlerini düzenlemeye açık bırakmanız gerektiyse, bu eğitim tam size göre. Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-İşin özüne geçmeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olun:
+Ayrıntılara girmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olun:
 
--  Aspose.Words for .NET: Henüz yapmadıysanız, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Eğer henüz yapmadıysanız,[buradan indirin](https://releases.aspose.com/words/net/).
 - Visual Studio: Veya herhangi bir .NET uyumlu IDE.
-- Temel C# Anlayışı: C#'a biraz aşina olmak, bu eğitimde hızlı bir şekilde ilerlemenize yardımcı olacaktır.
--  Lisansı Alın: Bir tane alın[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/) Test için ihtiyacınız varsa.
+- C# Temel Anlayışı: C# ile ilgili biraz bilgi sahibi olmak bu eğitimi kolayca tamamlamanıza yardımcı olacaktır.
+-  Aspose Lisansı: Bir tane alın[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/) eğer test için ihtiyacınız varsa.
 
 ## Ad Alanlarını İçe Aktar
 
-Kodlamaya başlamadan önce C# projenize gerekli ad alanlarını içe aktardığınızdan emin olun:
+Kodlamaya başlamadan önce, C# projenize gerekli ad alanlarını aktardığınızdan emin olun:
 
 ```csharp
 using System;
@@ -32,79 +32,79 @@ using Aspose.Words.Tables;
 
 Şimdi adım adım inceleyelim!
 
-## 1. Adım: Projenizi Kurun
+## Adım 1: Projenizi Kurun
 
 ### Belge Dizininizi Başlatın
 
-Öncelikle belgeler dizininizin yolunu ayarlamanız gerekir. Burası Word dosyalarınızın kaydedileceği yerdir.
+İlk önce, belgeler dizininize giden yolu ayarlamanız gerekir. Word dosyalarınız buraya kaydedilecektir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgelerinizi kaydetmek istediğiniz gerçek yolla. Bu, dosyalarınızın doğru konumda saklanmasını sağladığı için çok önemlidir.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgelerinizi kaydetmek istediğiniz gerçek yol ile. Bu, dosyalarınızın doğru konumda saklandığından emin olmanızı sağladığı için önemlidir.
 
 ### Yeni Bir Belge Oluştur
 
-Daha sonra Aspose.Words'ü kullanarak yeni bir belge oluşturacağız. Bu belge sihrimizi uygulayacağımız tuval olacak.
+Sonra, Aspose.Words kullanarak yeni bir belge oluşturacağız. Bu belge, sihrimizi uygulayacağımız tuval olacak.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-`Document` sınıf yeni bir belge başlatır ve`DocumentBuilder` belgemize kolayca içerik eklememize yardımcı olur.
+The`Document` sınıf yeni bir belge başlatır ve`DocumentBuilder` belgelerimize kolayca içerik eklememize yardımcı olur.
 
 ## Adım 2: Bölümleri Ekle
 
-### Korumasız Bölüm Ekle
+### Korunmayan Bölüm Ekle
 
-Korumasız kalacak ilk bölümü ekleyerek başlayalım.
+Korunmasız kalacak olan ilk bölümü ekleyerek başlayalım.
 
 ```csharp
 builder.Writeln("Section 1. Unprotected.");
 ```
 
-Bu kod satırına "Bölüm 1. Korumasız" metni eklenir. belgeye. Basit, değil mi?
+Bu kod satırı belgeye "Bölüm 1. Korunmayan." metnini ekler. Basit, değil mi?
 
-### Korumalı Bölüm Ekle
+### Korunan Bölüm Ekle
 
-Şimdi ikinci bir bölüm ekleyelim ve onu birinciden ayırmak için bölüm sonu ekleyelim.
+Şimdi ikinci bir bölüm ekleyelim ve onu birinciden ayırmak için bir bölüm sonu ekleyelim.
 
 ```csharp
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-`InsertBreak` yöntemi sürekli bir bölüm sonu ekleyerek her bölüm için farklı ayarlara sahip olmamızı sağlar.
+The`InsertBreak` yöntemi, her bölüm için farklı ayarlar yapmamıza olanak tanıyan sürekli bir bölüm sonu ekler.
 
-## 3. Adım: Belgeyi Koruyun
+## Adım 3: Belgeyi Koruyun
 
 ### Belge Korumasını Etkinleştir
 
- Belgeyi korumak için şunu kullanacağız:`Protect` Yöntem. Bu yöntem, aksi belirtilmedikçe yalnızca form alanlarının düzenlenebilmesini sağlar.
+ Belgeyi korumak için şunu kullanacağız:`Protect` yöntem. Bu yöntem, aksi belirtilmediği sürece yalnızca form alanlarının düzenlenebilmesini sağlar.
 
 ```csharp
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 ```
 
- Burada belge şifre ile korunur ve yalnızca form alanları düzenlenebilir. Değiştirmeyi unutmayın`"password"` İstediğiniz şifre ile
+ Burada, belge bir parola ile korunmaktadır ve yalnızca form alanları düzenlenebilir. Değiştirmeyi unutmayın`"password"` İstediğiniz şifreyle.
 
 ### Belirli Bölümün Korumasını Kaldır
 
-Varsayılan olarak tüm bölümler korunur. İlk bölüm için korumayı seçici olarak kapatmamız gerekiyor.
+Varsayılan olarak tüm bölümler korunur. İlk bölüm için korumayı seçici olarak kapatmamız gerekir.
 
 ```csharp
 doc.Sections[0].ProtectedForForms = false;
 ```
 
-Bu satır, belgenin geri kalanı güvendeyken ilk bölümün korunmasız kalmasını sağlar.
+Bu satır, belgenin geri kalanı güvenli tutulurken ilk bölümün korunmasız kalmasını sağlar.
 
 ## Adım 4: Belgeyi Kaydedin ve Yükleyin
 
 ### Belgeyi Kaydet
 
-Artık belgenizi uygulanan koruma ayarlarıyla kaydetmenin zamanı geldi.
+Artık belgenizi koruma ayarlarını uygulayarak kaydetmenin zamanı geldi.
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
@@ -124,21 +124,21 @@ Bu adım, belgenin düzgün bir şekilde kaydedilmesini ve koruma ayarlarını k
 
 ## Çözüm
 
-Ve işte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak korumalı ve korumasız bölümlerin karışımından oluşan bir Word belgesini başarıyla oluşturdunuz. Bu yöntem, bir belgenin belirli bölümlerini kilitlerken diğer bölümlerini düzenlenebilir halde bırakmanız gerektiğinde son derece kullanışlıdır.
+İşte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET kullanarak korumalı ve korumasız bölümlerin bir karışımını içeren bir Word belgesini başarıyla oluşturdunuz. Bu yöntem, bir belgenin belirli bölümlerini kilitleyip diğer bölümlerini düzenlenebilir bırakmanız gerektiğinde inanılmaz derecede kullanışlıdır.
 
-## SSS'ler
+## SSS
 
 ### Birden fazla bölümü koruyabilir miyim?
-Evet, gerektiğinde birden fazla bölümü seçerek koruyabilir ve korumasını kaldırabilirsiniz.
+Evet, ihtiyacınıza göre birden fazla bölümü seçerek koruyabilir ve korumasını kaldırabilirsiniz.
 
 ### Belgeyi kaydettikten sonra koruma türünü değiştirmek mümkün müdür?
 Evet, belgeyi yeniden açabilir ve koruma ayarlarını gerektiği gibi değiştirebilirsiniz.
 
-### Aspose.Words'te başka hangi koruma türleri mevcut?
- Aspose.Words çeşitli koruma türlerini destekler:`ReadOnly`, `Comments` , Ve`TrackedChanges`.
+### Aspose.Words'de başka hangi koruma türleri mevcut?
+ Aspose.Words, aşağıdakiler de dahil olmak üzere çeşitli koruma türlerini destekler:`ReadOnly`, `Comments` , Ve`TrackedChanges`.
 
-### Bir belgeyi şifre olmadan koruyabilir miyim?
-Evet, bir belgeyi parola belirtmeden koruyabilirsiniz.
+### Şifre olmadan bir belgeyi koruyabilir miyim?
+Evet, bir belgeyi şifre belirlemeden de koruyabilirsiniz.
 
-### Bir bölümün korunup korunmadığını nasıl kontrol edebilirim?
- Kontrol edebilirsiniz`ProtectedForForms` Korunup korunmadığını belirlemek için bir bölümün özelliği.
+### Bir bölümün korunduğunu nasıl kontrol edebilirim?
+ Kontrol edebilirsiniz`ProtectedForForms` Bir bölümün korunup korunmadığını belirlemek için o bölümün mülkiyeti.

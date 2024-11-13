@@ -13,7 +13,7 @@ url: /zh/net/apply-license/apply-license-from-stream/
 
 ## 先决条件
 
-在我们开始之前，让我们确保您已拥有所需的一切：
+在我们开始之前，让我们确保您已准备好所需的一切：
 
 1.  Aspose.Words for .NET：确保已安装该库。如果没有，您可以[点击下载](https://releases.aspose.com/words/net/).
 2. 许可证文件：您需要有效的许可证文件。如果没有，您可以获取[临时执照](https://purchase.aspose.com/temporary-license/)用于测试目的。
@@ -46,7 +46,7 @@ License license = new License();
 ```csharp
 using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Aspose.Words.lic")))
 {
-    //您的代码将放在此处
+    //您的代码将在此处
 }
 ```
 
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## 结论
 
-就是这样！一旦您了解了步骤，从 Aspose.Words for .NET 中的流中应用许可证就是一个简单的过程。通过遵循本指南，您可以确保您的应用程序可以充分利用 Aspose.Words 的全部功能而不受任何限制。如果您遇到任何问题，请随时查看[文档](https://reference.aspose.com/words/net/)或寻求帮助[支持论坛](https://forum.aspose.com/c/words/8)祝您编码愉快！
+就这样！一旦您了解了步骤，从 Aspose.Words for .NET 中的流中应用许可证就是一个简单的过程。通过遵循本指南，您可以确保您的应用程序可以充分利用 Aspose.Words 的全部功能而不受任何限制。如果您遇到任何问题，请随时查看[文档](https://reference.aspose.com/words/net/)或寻求帮助[支持论坛](https://forum.aspose.com/c/words/8)祝您编码愉快！
 
 ## 常见问题解答
 

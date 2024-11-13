@@ -1,20 +1,20 @@
 ---
-title: Aspose.Words for Java'da Yapılandırılmış Belge Etiketlerini (SDT) Kullanmak
+title: Java için Aspose.Words'de Yapılandırılmış Belge Etiketlerini (SDT) Kullanma
 linktitle: Yapılandırılmış Belge Etiketlerini (SDT) Kullanma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Bu kapsamlı kılavuzla Aspose.Words for Java'da Yapılandırılmış Belge Etiketlerini (SDT) nasıl kullanacağınızı öğrenin. SDT'leri özel XML verilerine oluşturun, değiştirin ve bağlayın.
+description: Bu kapsamlı kılavuzla Aspose.Words for Java'da Yapılandırılmış Belge Etiketlerini (SDT) nasıl kullanacağınızı öğrenin. SDT'leri oluşturun, değiştirin ve özel XML verilerine bağlayın.
 type: docs
 weight: 19
 url: /tr/java/document-manipulation/using-structured-document-tags/
 ---
 
-## Aspose.Words for Java'da Yapılandırılmış Belge Etiketlerini (SDT) Kullanmaya Giriş
+## Java için Aspose.Words'de Yapılandırılmış Belge Etiketlerini (SDT) Kullanmaya Giriş
 
-Yapılandırılmış Belge Etiketleri (SDT), Aspose.Words for Java'nın belgelerinizde yapılandırılmış içerik oluşturmanıza ve değiştirmenize olanak tanıyan güçlü bir özelliğidir. Bu kapsamlı kılavuzda, Aspose.Words for Java'da SDT'leri kullanmanın çeşitli yönlerini size anlatacağız. İster yeni başlayan ister deneyimli bir geliştirici olun, bu makalede değerli bilgiler ve pratik örnekler bulacaksınız.
+Yapılandırılmış Belge Etiketleri (SDT), Aspose.Words for Java'da belgelerinizde yapılandırılmış içerik oluşturmanıza ve düzenlemenize olanak tanıyan güçlü bir özelliktir. Bu kapsamlı kılavuzda, Aspose.Words for Java'da SDT'leri kullanmanın çeşitli yönlerini ele alacağız. İster yeni başlayan ister deneyimli bir geliştirici olun, bu makalede değerli içgörüler ve pratik örnekler bulacaksınız.
 
 ## Başlarken
 
-Ayrıntılara dalmadan önce ortamımızı kuralım ve temel bir SDT oluşturalım. Bu bölümde aşağıdaki konuları ele alacağız:
+Ayrıntılara dalmadan önce, ortamımızı ayarlayalım ve temel bir SDT oluşturalım. Bu bölümde, aşağıdaki konuları ele alacağız:
 
 - Yeni bir belge oluşturma
 - Yapılandırılmış Belge Etiketi Ekleme
@@ -24,7 +24,7 @@ Ayrıntılara dalmadan önce ortamımızı kuralım ve temel bir SDT oluştural�
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// CHECKBOX türünde bir Yapılandırılmış Belge Etiketi oluşturun
+// CHECKBOX türünde Yapılandırılmış Belge Etiketi Oluşturun
 StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.CHECKBOX, MarkupLevel.INLINE);
 builder.insertNode(sdtCheckBox);
 
@@ -32,25 +32,25 @@ builder.insertNode(sdtCheckBox);
 doc.save("WorkingWithSDT.docx");
 ```
 
-## Onay Kutusu SDT'sinin Mevcut Durumunu Kontrol Etme
+## Bir Onay Kutusunun Mevcut Durumunu Kontrol Etme SDT
 
-Belgenize bir onay kutusu SDT'si ekledikten sonra, mevcut durumunu programlı olarak kontrol etmek isteyebilirsiniz. Bu, kullanıcı girişini doğrulamanız veya onay kutusu durumuna göre belirli eylemleri gerçekleştirmeniz gerektiğinde yararlı olabilir.
+Belgenize bir onay kutusu SDT ekledikten sonra, geçerli durumunu programatik olarak kontrol etmek isteyebilirsiniz. Bu, kullanıcı girdisini doğrulamanız veya onay kutusu durumuna göre belirli eylemler gerçekleştirmeniz gerektiğinde yararlı olabilir.
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdtCheckBox = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
 if (sdtCheckBox.getSdtType() == SdtType.CHECKBOX) {
-    // Onay kutusu işaretlendi
+    // Onay kutusu işaretli
     sdtCheckBox.setChecked(true);
 }
 
 doc.save("UpdatedDocument.docx");
 ```
 
-## İçerik Kontrollerini Değiştirme
+## İçerik Denetimlerini Değiştirme
 
-Bu bölümde belgenizdeki içerik kontrollerini nasıl değiştireceğinizi inceleyeceğiz. Üç tür içerik kontrolünü ele alacağız: Düz Metin, Açılır Liste ve Resim.
+Bu bölümde, belgenizdeki içerik denetimlerini nasıl değiştireceğinizi inceleyeceğiz. Üç tür içerik denetimini ele alacağız: Düz Metin, Açılır Liste ve Resim.
 
 ### Düz Metin İçerik Denetimini Değiştirme
 
@@ -86,7 +86,7 @@ if (sdtDropDown.getSdtType() == SdtType.DROP_DOWN_LIST) {
 doc.save("ModifiedDocument.docx");
 ```
 
-### Resim İçeriği Kontrolünü Değiştirme
+### Resim İçerik Kontrolünü Değiştirme
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
@@ -101,9 +101,9 @@ if (shape.hasImage()) {
 doc.save("ModifiedDocument.docx");
 ```
 
-## ComboBox İçerik Denetimi Oluşturma
+## Bir ComboBox İçerik Denetimi Oluşturma
 
-ComboBox İçerik Kontrolü, kullanıcıların önceden tanımlanmış seçenekler listesinden seçim yapmasına olanak tanır. Belgemizde bir tane oluşturalım.
+Bir ComboBox İçerik Denetimi, kullanıcıların önceden tanımlanmış bir seçenekler listesinden seçim yapmalarına olanak tanır. Belgemizde bir tane oluşturalım.
 
 ```java
 Document doc = new Document();
@@ -116,9 +116,9 @@ doc.getFirstSection().getBody().appendChild(sdtComboBox);
 doc.save("ComboBoxDocument.docx");
 ```
 
-## Zengin Metin İçeriği Denetimi ile Çalışma
+## Zengin Metin İçerik Denetimi ile Çalışma
 
-Zengin Metin İçeriği Kontrolleri, belgelerinize biçimlendirilmiş metin eklemek için mükemmeldir. Bir tane oluşturalım ve içeriğini ayarlayalım.
+Zengin Metin İçerik Kontrolleri, belgelerinize biçimlendirilmiş metin eklemek için mükemmeldir. Bir tane oluşturalım ve içeriğini ayarlayalım.
 
 ```java
 Document doc = new Document();
@@ -134,15 +134,15 @@ doc.getFirstSection().getBody().appendChild(sdtRichText);
 doc.save("RichTextDocument.docx");
 ```
 
-## İçerik Kontrol Stillerini Ayarlama
+## İçerik Denetim Stillerini Ayarlama
 
-Belgenizin görsel görünümünü geliştirmek için içerik kontrollerine stiller uygulayabilirsiniz. İçerik kontrolünün stilinin nasıl ayarlanacağını görelim.
+Belgenizin görsel görünümünü geliştirmek için içerik denetimlerine stiller uygulayabilirsiniz. Bir içerik denetiminin stilinin nasıl ayarlanacağını görelim.
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
-//Özel bir stil uygulama
+// Özel bir stil uygulayın
 Style style = doc.getStyles().getByStyleIdentifier(StyleIdentifier.QUOTE);
 sdt.setStyle(style);
 
@@ -151,7 +151,7 @@ doc.save("StyledDocument.docx");
 
 ## Bir SDT'yi Özel XML Verilerine Bağlama
 
-Bazı senaryolarda dinamik içerik oluşturmak için bir SDT'yi özel XML verilerine bağlamanız gerekebilir. Bunu nasıl başaracağımızı keşfedelim.
+Bazı senaryolarda, dinamik içerik üretimi için bir SDT'yi özel XML verilerine bağlamanız gerekebilir. Bunu nasıl başaracağınızı inceleyelim.
 
 ```java
 Document doc = new Document();
@@ -163,9 +163,9 @@ sdt.getXmlMapping().setMapping(xmlPart, "/root[1]/text[1]", "");
 doc.save("CustomXMLBinding.docx");
 ```
 
-## Özel XML Verilerine Eşlenen Yinelenen Bölümlere Sahip Bir Tablo Oluşturma
+## Özel XML Verilerine Eşlenen Tekrarlayan Bölümlere Sahip Bir Tablo Oluşturma
 
-Tekrarlanan bölümlere sahip tablolar, yapılandırılmış verileri sunmak için son derece yararlı olabilir. Böyle bir tablo oluşturalım ve onu özel XML verileriyle eşleştirelim.
+Tekrarlayan bölümlere sahip tablolar yapılandırılmış verileri sunmak için son derece yararlı olabilir. Böyle bir tablo oluşturalım ve onu özel XML verilerine eşleyelim.
 
 ```java
 Document doc = new Document();
@@ -200,9 +200,9 @@ row.appendChild(authorSdt);
 doc.save("RepeatingTableDocument.docx");
 ```
 
-## Çok Bölümlü Yapılandırılmış Belge Etiketleriyle Çalışma
+## Çok Bölümlü Yapılandırılmış Belge Etiketleri ile Çalışma
 
-Yapılandırılmış Belge Etiketleri bir belgedeki birden çok bölüme yayılabilir. Bu bölümde çok bölümlü SDT'lerle nasıl çalışılacağını inceleyeceğiz.
+Yapılandırılmış Belge Etiketleri bir belgedeki birden fazla bölümü kapsayabilir. Bu bölümde, çok bölümlü SDT'lerle nasıl çalışılacağını inceleyeceğiz.
 
 ```java
 Document doc = new Document("MultiSectionDocument.docx");
@@ -217,26 +217,26 @@ doc.save("ModifiedMultiSectionDocument.docx");
 
 ## Çözüm
 
-Aspose.Words for Java'daki Yapılandırılmış Belge Etiketleri, belgelerinizdeki içeriği yönetmenin ve biçimlendirmenin çok yönlü bir yolunu sunar. Şablonlar, formlar veya dinamik belgeler oluşturmanız gerekiyorsa SDT'ler ihtiyacınız olan esnekliği ve kontrolü sunar. Bu makalede verilen örnekleri ve yönergeleri izleyerek belge işleme görevlerinizi geliştirmek için SDT'lerin gücünden yararlanabilirsiniz.
+Aspose.Words for Java'daki Yapılandırılmış Belge Etiketleri, belgelerinizdeki içerikleri yönetmek ve biçimlendirmek için çok yönlü bir yol sunar. Şablonlar, formlar veya dinamik belgeler oluşturmanız gerekip gerekmediğine bakılmaksızın, SDT'ler ihtiyaç duyduğunuz esnekliği ve kontrolü sunar. Bu makalede sağlanan örnekleri ve yönergeleri izleyerek, belge işleme görevlerinizi geliştirmek için SDT'lerin gücünden yararlanabilirsiniz.
 
-## SSS'ler
+## SSS
 
-### Yapılandırılmış Belge Etiketlerinin (SDT'ler) amacı nedir?
+### Yapılandırılmış Belge Etiketlerinin (SDT) amacı nedir?
 
-Yapılandırılmış Belge Etiketleri (SDT'ler), belgeler içindeki içeriği düzenleme ve biçimlendirme amacına hizmet ederek şablonlar, formlar ve yapılandırılmış belgeler oluşturmayı kolaylaştırır.
+Yapılandırılmış Belge Etiketleri (SDT'ler), belgelerdeki içeriği düzenleme ve biçimlendirme amacına hizmet ederek şablonlar, formlar ve yapılandırılmış belgeler oluşturmayı kolaylaştırır.
 
 ### Checkbox SDT'nin mevcut durumunu nasıl kontrol edebilirim?
 
- Checkbox SDT'nin geçerli durumunu aşağıdaki komutu kullanarak kontrol edebilirsiniz:`setChecked` Makalede gösterildiği gibi yöntem.
+ Bir Onay Kutusu SDT'sinin geçerli durumunu şu şekilde kontrol edebilirsiniz:`setChecked` Yöntem, makalede gösterildiği gibi.
 
-### İçerik Kontrollerine stiller uygulayabilir miyim?
+### İçerik Denetimlerine stiller uygulayabilir miyim?
 
-Evet, belgedeki görünümlerini özelleştirmek için İçerik Kontrollerine stiller uygulayabilirsiniz.
+Evet, İçerik Denetimlerine stiller uygulayarak bunların belgedeki görünümünü özelleştirebilirsiniz.
 
-### Bir SDT'yi özel XML verilerine bağlamak mümkün mü?
+### Bir SDT'yi özel XML verilerine bağlamak mümkün müdür?
 
-Evet, bir SDT'yi özel XML verilerine bağlayarak dinamik içerik oluşturmaya ve veri eşlemeye olanak tanıyabilirsiniz.
+Evet, bir SDT'yi özel XML verilerine bağlayabilir, böylece dinamik içerik üretimi ve veri eşlemesine olanak sağlayabilirsiniz.
 
-### SDT'lerde Tekrarlanan Bölümler Nelerdir?
+### SDT’lerde Tekrarlayan Bölümler Nedir?
 
-SDT'lerdeki Tekrarlanan Bölümler, satırların eşlenen XML verilerine göre tekrarlanabileceği dinamik verilere sahip tablolar oluşturmanıza olanak tanır.
+SDT'lerdeki Tekrarlanan Bölümler, eşlenen XML verilerine göre satırların tekrarlanabileceği dinamik veriler içeren tablolar oluşturmanıza olanak tanır.

@@ -1,44 +1,44 @@
 ---
-title: İçerideki Metni Yoksay Revizyonları Sil
-linktitle: İçerideki Metni Yoksay Revizyonları Sil
+title: İçindeki Metni Yoksay Revizyonları Sil
+linktitle: İçindeki Metni Yoksay Revizyonları Sil
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerinde izlenen revizyonları nasıl yöneteceğinizi öğrenin. Bu kapsamlı eğitimle belge otomasyonunda ustalaşın.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki izlenen revizyonların nasıl işleneceğini öğrenin. Bu kapsamlı eğitimle belge otomasyonunda ustalaşın.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 ## giriiş
 
-.NET geliştirme alanında Aspose.Words, Microsoft Word belgeleriyle programlı olarak çalışmak için güçlü bir kütüphane olarak öne çıkıyor. İster deneyimli bir geliştirici olun, ister yeni başlıyor olun, Aspose.Words'ün yeteneklerinde uzmanlaşmak, Word belgelerini verimli bir şekilde işleme, oluşturma ve yönetme yeteneğinizi önemli ölçüde geliştirebilir. Bu eğitimde onun güçlü özelliklerinden biri inceleniyor: Aspose.Words for .NET kullanılarak belgelerdeki izlenen revizyonların yönetilmesi.
+.NET geliştirme alanında, Aspose.Words Microsoft Word belgeleriyle programatik olarak çalışmak için sağlam bir kütüphane olarak öne çıkıyor. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, Aspose.Words'ün yeteneklerinde ustalaşmak Word belgelerini etkili bir şekilde düzenleme, oluşturma ve yönetme yeteneğinizi önemli ölçüde artırabilir. Bu eğitim, güçlü özelliklerinden birine derinlemesine iniyor: .NET için Aspose.Words kullanarak belgelerdeki izlenen revizyonları yönetme.
 
-## Önkoşullar
+## Ön koşullar
 
-Bu eğitime dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-- Temel C# programlama dili bilgisi.
+Bu eğitime başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
+- C# programlama dilinin temel bilgisi.
 - Sisteminizde Visual Studio yüklü.
--  Aspose.Words for .NET kütüphanesi projenize entegre edilmiştir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
-- Aspose.Words for .NET'e erişim[dokümantasyon](https://reference.aspose.com/words/net/) referans için.
+-  Projenize entegre edilmiş .NET kütüphanesi için Aspose.Words. Bunu şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET'e erişim[belgeleme](https://reference.aspose.com/words/net/) Referans için.
 
 ## Ad Alanlarını İçe Aktar
 
-Gerekli ad alanlarını projenize aktararak başlayın:
+Öncelikle gerekli ad alanlarını projenize aktarın:
 ```csharp
 using System;
 using System.Text.RegularExpressions;
 using Aspose.Words;
 using Aspose.Words.Replacing;
 ```
-## 1. Adım: Yeni Bir Belge Oluşturun ve Metin Ekleyin
+## Adım 1: Yeni Bir Belge Oluşturun ve Metin Ekleyin
 
- İlk olarak, yeni bir örneğini başlatın`Document` ve bir`DocumentBuilder` belgenizi oluşturmaya başlamak için:
+ İlk olarak, yeni bir örnek başlatın`Document` ve bir`DocumentBuilder` belgenizi oluşturmaya başlamak için:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Metin Ekleme ve Düzeltmeleri Takip Etme
+## Adım 2: Metni Ekle ve Revizyonları İzle
 
-Revizyon izlemeyi başlatıp durdurarak belgeye metin ekleyebilir ve revizyonları izleyebilirsiniz:
+Belgeye metin ekleyebilir ve revizyon izlemeyi başlatıp durdurarak revizyonları izleyebilirsiniz:
 ```csharp
 builder.Writeln("Deleted");
 builder.Write("Text");
@@ -48,9 +48,9 @@ doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## 3. Adım: Normal İfadeler Kullanarak Metni Değiştirme
+## Adım 3: Düzenli İfadeleri Kullanarak Metni Değiştirin
 
-Metni değiştirmek için belirli kalıpları bulmak ve değiştirmek amacıyla normal ifadeleri kullanabilirsiniz:
+Metni düzenlemek için belirli kalıpları bulup değiştirmek üzere düzenli ifadeleri kullanabilirsiniz:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 
@@ -67,21 +67,21 @@ Console.WriteLine(doc.GetText());
 
 ## Çözüm
 
-Aspose.Words for .NET kullanarak Word belgelerindeki izlenen revizyonlara hakim olmak, geliştiricilerin belge düzenleme görevlerini verimli bir şekilde otomatikleştirmesine olanak tanır. Kapsamlı API'sinden ve sağlam özelliklerinden yararlanarak revizyon işlemeyi uygulamalarınıza sorunsuz bir şekilde entegre edebilir, üretkenliği ve belge yönetimi yeteneklerini artırabilirsiniz.
+Aspose.Words for .NET kullanarak Word belgelerindeki izlenen revizyonları yönetmek, geliştiricilerin belge düzenleme görevlerini verimli bir şekilde otomatikleştirmesini sağlar. Kapsamlı API'sini ve sağlam özelliklerini kullanarak, revizyon işlemeyi uygulamalarınıza sorunsuz bir şekilde entegre edebilir, üretkenliği ve belge yönetimi yeteneklerini artırabilirsiniz.
 
-## SSS'ler
+## SSS
 
-### Word belgelerinde izlenen düzeltmeler nelerdir?
-Word belgelerindeki izlenen düzeltmeler, bir belgede yapılan, işaretlemeyle başkaları tarafından görülebilen ve genellikle işbirliğine dayalı düzenleme ve inceleme için kullanılan değişiklikleri ifade eder.
+### Word belgelerinde izlenen revizyonlar nelerdir?
+Word belgelerindeki izlenen revizyonlar, işaretleme yoluyla başkaları tarafından görülebilen, genellikle ortak düzenleme ve inceleme için kullanılan belgede yapılan değişiklikleri ifade eder.
 
 ### Aspose.Words for .NET'i Visual Studio projeme nasıl entegre edebilirim?
-Aspose.Words for .NET'i Aspose web sitesinden kütüphaneyi indirerek ve Visual Studio projenizde referans vererek entegre edebilirsiniz.
+Aspose.Words for .NET'i, Aspose web sitesinden kütüphaneyi indirip Visual Studio projenizde referans vererek entegre edebilirsiniz.
 
-### Takip edilen revizyonları Aspose.Words for .NET kullanarak programlı olarak geri döndürebilir miyim?
-Evet, Aspose.Words for .NET'i kullanarak takip edilen revizyonları programlı bir şekilde yönetebilir ve geri alabilirsiniz, böylece belge düzenleme iş akışları üzerinde hassas kontrol sağlayabilirsiniz.
+### Aspose.Words for .NET kullanarak izlenen revizyonları programatik olarak geri alabilir miyim?
+Evet, Aspose.Words for .NET'i kullanarak izlenen revizyonları programlı bir şekilde yönetebilir ve geri alabilirsiniz; böylece belge düzenleme iş akışları üzerinde hassas bir kontrole sahip olursunuz.
 
-### Aspose.Words for .NET, revizyonları takip edilen büyük belgelerin işlenmesi için uygun mudur?
-Aspose.Words for .NET, kapsamlı izlenen revizyonlara sahip olanlar da dahil olmak üzere büyük belgeleri verimli bir şekilde işlemek için optimize edilmiştir.
+### Aspose.Words for .NET, revizyonları takip edilen büyük belgeleri işlemek için uygun mudur?
+Aspose.Words for .NET, kapsamlı revizyon takibi içerenler de dahil olmak üzere büyük belgeleri verimli bir şekilde işlemek için optimize edilmiştir.
 
-### Aspose.Words for .NET için daha fazla kaynağı ve desteği nerede bulabilirim?
-Kapsamlı belgeleri inceleyebilir ve Aspose.Words for .NET topluluğundan destek alabilirsiniz:[Aspose.Words Forumu](https://forum.aspose.com/c/words/8).
+### Aspose.Words for .NET için daha fazla kaynak ve desteği nerede bulabilirim?
+Aspose.Words for .NET topluluğundan kapsamlı belgeleri inceleyebilir ve destek alabilirsiniz.[Aspose.Words Forum](https://forum.aspose.com/c/words/8).

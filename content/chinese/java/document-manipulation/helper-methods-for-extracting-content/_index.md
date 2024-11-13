@@ -146,7 +146,7 @@ public static Document generateDocument(Document srcDoc, ArrayList<Node> nodes) 
 
 ### 如何安装 Aspose.Words for Java？
 
-要安装 Aspose.Words for Java，您可以从 Aspose 网站下载。访问[这里](https://releases.aspose.com/words/java/)获取最新版本。
+要安装 Aspose.Words for Java，您可以从 Aspose 网站下载。请访问[这里](https://releases.aspose.com/words/java/)获取最新版本。
 
 ### 我可以从 Word 文档的特定部分提取内容吗？
 

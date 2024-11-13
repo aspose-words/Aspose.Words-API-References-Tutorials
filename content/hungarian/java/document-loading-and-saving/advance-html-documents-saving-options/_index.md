@@ -14,7 +14,7 @@ Ebben az oktatóanyagban megvizsgáljuk az Aspose.Words for Java által biztosí
 Az Aspose.Words for Java lehetővé teszi, hogy programozottan dolgozzon Word dokumentumokkal. Ebben az oktatóanyagban a speciális HTML-dokumentummentési lehetőségekre összpontosítunk, amelyek lehetővé teszik a Word-dokumentumok HTML-formátumba való konvertálásának szabályozását.
 
 ## 2. Oda-vissza információk exportálása
- A`exportRoundtripInformation` módszer lehetővé teszi a Word-dokumentumok exportálását HTML-be, miközben megőrzi az oda-vissza információk. Ez az információ akkor lehet hasznos, ha a HTML-t vissza kívánja konvertálni Word formátumba anélkül, hogy elveszítené a dokumentumspecifikus részleteket.
+A`exportRoundtripInformation` módszer lehetővé teszi a Word-dokumentumok exportálását HTML-be, miközben megőrzi az oda-vissza információk. Ez az információ akkor lehet hasznos, ha a HTML-t vissza kívánja konvertálni Word formátumba anélkül, hogy elveszítené a dokumentumspecifikus részleteket.
 
 ```java
 public void exportRoundtripInformation() throws Exception {
@@ -39,7 +39,7 @@ public void exportFontsAsBase64() throws Exception {
 ```
 
 ## 4. Erőforrások exportálása
- A`exportResources` metódus lehetővé teszi a CSS-stíluslap típusának megadását és a betűkészlet-erőforrások exportálását. A HTML-ben erőforrásmappát és álnevet is beállíthat az erőforrásokhoz.
+A`exportResources` metódus lehetővé teszi a CSS-stíluslap típusának megadását és a betűkészlet-erőforrások exportálását. A HTML-ben erőforrásmappát és álnevet is beállíthat az erőforrásokhoz.
 
 ```java
 @Test
@@ -55,7 +55,7 @@ public void exportResources() throws Exception {
 ```
 
 ## 5. Konvertálja a metafájlokat EMF-re vagy WMF-re
- A`convertMetafilesToEmfOrWmf` módszer lehetővé teszi a dokumentumban lévő metafájlok konvertálását EMF vagy WMF formátumba, ezzel biztosítva a kompatibilitást és a sima HTML-megjelenítést.
+A`convertMetafilesToEmfOrWmf` módszer lehetővé teszi a dokumentumban lévő metafájlok konvertálását EMF vagy WMF formátumba, ezzel biztosítva a kompatibilitást és a sima HTML-megjelenítést.
 
 ```java
 @Test
@@ -89,7 +89,7 @@ public void addCssClassNamePrefix() throws Exception {
 ```
 
 ## 8. Exportáljon CID URL-eket az MHTML-erőforrásokhoz
- A`exportCidUrlsForMhtmlResources` módszert használjuk dokumentumok MHTML formátumba mentésekor. Lehetővé teszi a Content ID URL-ek exportálását erőforrásokhoz.
+A`exportCidUrlsForMhtmlResources` módszert használjuk dokumentumok MHTML formátumba mentésekor. Lehetővé teszi a Content ID URL-ek exportálását erőforrásokhoz.
 
 ```java
 @Test
@@ -99,7 +99,7 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 ```
 
 ## 9. A betűtípusnevek feloldása
- A`resolveFontNames` A metódus segít a betűtípusnevek feloldásában dokumentumok HTML formátumba mentésekor, biztosítva a konzisztens megjelenítést a különböző platformokon.
+A`resolveFontNames` A metódus segít a betűtípusnevek feloldásában dokumentumok HTML formátumba mentésekor, biztosítva a konzisztens megjelenítést a különböző platformokon.
 
 ```java
 @Test
@@ -109,7 +109,7 @@ public void resolveFontNames() throws Exception {
 ```
 
 ## 10. Szövegbeviteli űrlap mező exportálása szövegként
- A`exportTextInputFormFieldAsText` metódus az űrlapmezőket egyszerű szövegként exportálja a HTML-be, így könnyen olvashatóvá és szerkeszthetővé teszi őket.
+A`exportTextInputFormFieldAsText` metódus az űrlapmezőket egyszerű szövegként exportálja a HTML-be, így könnyen olvashatóvá és szerkeszthetővé teszi őket.
 
 ```java
 @Test

@@ -2,7 +2,7 @@
 title: Ajout de contenu à l'aide de DocumentBuilder dans Aspose.Words pour Java
 linktitle: Ajout de contenu à l'aide de DocumentBuilder
 second_title: API de traitement de documents Java Aspose.Words
-description: Création de documents maîtres avec Aspose.Words pour Java. Un guide étape par étape pour ajouter du texte, des tableaux, des images et bien plus encore. Créez de superbes documents Word sans effort.
+description: Maîtrisez la création de documents avec Aspose.Words pour Java. Un guide étape par étape pour ajouter du texte, des tableaux, des images et plus encore. Créez de superbes documents Word sans effort.
 type: docs
 weight: 26
 url: /fr/java/document-manipulation/adding-content-using-documentbuilder/
@@ -10,11 +10,11 @@ url: /fr/java/document-manipulation/adding-content-using-documentbuilder/
 
 ## Introduction à l'ajout de contenu à l'aide de DocumentBuilder dans Aspose.Words pour Java
 
-Dans ce guide étape par étape, nous explorerons comment utiliser Aspose.Words pour DocumentBuilder de Java pour ajouter différents types de contenu à un document Word. Nous aborderons l'insertion de texte, de tableaux, de règles horizontales, de champs de formulaire, de HTML, de liens hypertexte, de table des matières, d'images en ligne et flottantes, de paragraphes, etc. Commençons !
+Dans ce guide étape par étape, nous allons découvrir comment utiliser Aspose.Words pour DocumentBuilder de Java pour ajouter différents types de contenu à un document Word. Nous aborderons l'insertion de texte, de tableaux, de règles horizontales, de champs de formulaire, de HTML, d'hyperliens, de tables des matières, d'images en ligne et flottantes, de paragraphes, etc. Commençons !
 
-## Conditions préalables
+## Prérequis
 
- Avant de commencer, assurez-vous que la bibliothèque Aspose.Words for Java est configurée dans votre projet. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/java/).
+ Avant de commencer, assurez-vous que la bibliothèque Aspose.Words pour Java est configurée dans votre projet. Vous pouvez la télécharger à partir de[ici](https://releases.aspose.com/words/java/).
 
 ## Ajout de texte
 
@@ -22,10 +22,10 @@ Dans ce guide étape par étape, nous explorerons comment utiliser Aspose.Words 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Insérer un simple paragraphe de texte
+// Insérer un paragraphe de texte simple
 builder.write("This is a simple text paragraph.");
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Démarrer un tableau
+// Démarrer une table
 Table table = builder.startTable();
 
 // Insérer des cellules et du contenu
@@ -45,10 +45,10 @@ builder.write("Cell 1");
 builder.insertCell();
 builder.write("Cell 2");
 
-// Finir le tableau
+// Finir la table
 builder.endTable();
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
@@ -61,22 +61,22 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Insérer une règle horizontale
 builder.insertHorizontalRule();
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
 ## Ajout de champs de formulaire
 
-### Champ du formulaire de saisie de texte
+### Champ de saisie de texte
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Insérer un champ de formulaire de saisie de texte
+// Insérer un champ de saisie de texte
 builder.insertTextInput("TextInput", TextFormFieldType.REGULAR, "", "Default text", 0);
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
@@ -89,11 +89,11 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Insérer un champ de formulaire de case à cocher
 builder.insertCheckBox("CheckBox", true, true, 0);
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
-### Champ de formulaire de liste déroulante
+### Champ de formulaire de zone de liste déroulante
 
 ```java
 Document doc = new Document();
@@ -105,7 +105,7 @@ String[] items = { "Option 1", "Option 2", "Option 3" };
 // Insérer un champ de formulaire de zone de liste déroulante
 builder.insertComboBox("DropDown", items, 0);
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
@@ -118,7 +118,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Insérer du contenu HTML
 builder.insertHtml("<p>This is an HTML paragraph.</p>");
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
@@ -136,7 +136,7 @@ builder.insertHyperlink("Aspose Website", "http://www.aspose.com", faux);
 builder.getFont().clearFormatting();
 builder.write(" for more information.");
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
@@ -155,7 +155,7 @@ builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 // Mettre à jour la table des matières
 doc.updateFields();
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
@@ -170,7 +170,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Insérer une image en ligne
 builder.insertImage("path/to/your/image.png");
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
@@ -183,7 +183,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Insérer une image flottante
 builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN, 100.0, RelativeVerticalPosition.MARGIN, 100.0, 200.0, 100.0, WrapType.SQUARE);
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
@@ -193,7 +193,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Définir la mise en forme du paragraphe
+// Définir la mise en forme des paragraphes
 Font font = builder.getFont();
 font.setSize(16.0);
 font.setBold(true);
@@ -209,41 +209,41 @@ paragraphFormat.setKeepTogether(true);
 // Insérer un paragraphe
 builder.writeln("This is a formatted paragraph.");
 
-// Enregistrez le document
+// Enregistrer le document
 doc.save("path/to/your/document.docx");
 ```
 
 ## Étape 10 : Déplacer le curseur
 
- Vous pouvez contrôler la position du curseur dans le document en utilisant diverses méthodes telles que`moveToParagraph`, `moveToCell`et plus encore. Voici un exemple :
+ Vous pouvez contrôler la position du curseur dans le document à l'aide de diverses méthodes telles que`moveToParagraph`, `moveToCell`et plus encore. Voici un exemple :
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Déplacez le curseur sur un paragraphe spécifique
+// Déplacer le curseur vers un paragraphe spécifique
 builder.moveToParagraph(2, 0);
 
 // Ajouter du contenu à la nouvelle position du curseur
 builder.writeln("This is the 3rd paragraph.");
 ```
 
-Voici quelques opérations courantes que vous pouvez effectuer à l’aide de Aspose.Words pour DocumentBuilder de Java. Explorez la documentation de la bibliothèque pour découvrir des fonctionnalités plus avancées et des options de personnalisation. Bonne création de documents !
+Voici quelques opérations courantes que vous pouvez effectuer à l'aide d'Aspose.Words pour DocumentBuilder de Java. Explorez la documentation de la bibliothèque pour découvrir des fonctionnalités plus avancées et des options de personnalisation. Bonne création de documents !
 
 
 ## Conclusion
 
-Dans ce guide complet, nous avons exploré les capacités d'Aspose.Words pour DocumentBuilder de Java pour ajouter différents types de contenu aux documents Word. Nous avons couvert le texte, les tableaux, les règles horizontales, les champs de formulaire, le HTML, les hyperliens, la table des matières, les images, les paragraphes et le mouvement du curseur.
+Dans ce guide complet, nous avons exploré les capacités d'Aspose.Words pour DocumentBuilder de Java pour ajouter différents types de contenu aux documents Word. Nous avons abordé le texte, les tableaux, les règles horizontales, les champs de formulaire, le HTML, les hyperliens, la table des matières, les images, les paragraphes et le mouvement du curseur.
 
 ## FAQ
 
-### Q : Qu'est-ce qu'Aspose.Words pour Java ?
+### Q : Qu'est-ce qu'Aspose.Words pour Java ?
 
-R : Aspose.Words for Java est une bibliothèque Java qui permet aux développeurs de créer, modifier et manipuler des documents Microsoft Word par programme. Il offre un large éventail de fonctionnalités pour la génération, le formatage et l'insertion de contenu de documents.
+R : Aspose.Words for Java est une bibliothèque Java qui permet aux développeurs de créer, modifier et manipuler des documents Microsoft Word par programmation. Elle offre une large gamme de fonctionnalités pour la génération de documents, la mise en forme et l'insertion de contenu.
 
 ### Q : Comment puis-je ajouter une table des matières à mon document ?
 
-R : Pour ajouter une table des matières, utilisez le`DocumentBuilder` pour insérer un champ de table des matières dans votre document. Assurez-vous de mettre à jour les champs du document après avoir ajouté du contenu pour remplir la table des matières. Voici un exemple :
+ : Pour ajouter une table des matières, utilisez le`DocumentBuilder` pour insérer un champ de table des matières dans votre document. Assurez-vous de mettre à jour les champs du document après avoir ajouté du contenu pour remplir la table des matières. Voici un exemple :
 
 ```java
 Document doc = new Document();
@@ -259,9 +259,9 @@ builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 doc.updateFields();
 ```
 
-### Q : Comment insérer des images dans un document à l'aide d'Aspose.Words pour Java ?
+### Q : Comment insérer des images dans un document à l’aide d’Aspose.Words pour Java ?
 
- R : Vous pouvez insérer des images, à la fois en ligne et flottantes, à l'aide de l'outil`DocumentBuilder`. Voici des exemples des deux :
+ R : Vous pouvez insérer des images, en ligne et flottantes, à l'aide de l'`DocumentBuilder`Voici des exemples des deux :
 
 #### Image en ligne :
 
@@ -283,15 +283,15 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN, 100.0, RelativeVerticalPosition.MARGIN, 100.0, 200.0, 100.0, WrapType.SQUARE);
 ```
 
-### Q : Puis-je formater le texte et les paragraphes lors de l'ajout de contenu ?
+### Q : Puis-je formater du texte et des paragraphes lors de l’ajout de contenu ?
 
- R : Oui, vous pouvez formater le texte et les paragraphes à l'aide de l'option`DocumentBuilder`. Vous pouvez définir les propriétés de la police, l'alignement des paragraphes, l'indentation, etc. Voici un exemple :
+ R : Oui, vous pouvez formater du texte et des paragraphes à l'aide de l'`DocumentBuilder`. Vous pouvez définir les propriétés de police, l'alignement des paragraphes, l'indentation, etc. Voici un exemple :
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Définir la mise en forme de la police et du paragraphe
+// Définir la police et la mise en forme des paragraphes
 Font font = builder.getFont();
 font.setSize(16.0);
 font.setBold(true);
@@ -310,17 +310,17 @@ builder.writeln("This is a formatted paragraph.");
 
 ### Q : Comment puis-je déplacer le curseur vers un emplacement spécifique dans le document ?
 
- R : Vous pouvez contrôler la position du curseur en utilisant des méthodes telles que`moveToParagraph`, `moveToCell`et plus encore. Voici un exemple :
+ R : Vous pouvez contrôler la position du curseur à l’aide de méthodes telles que`moveToParagraph`, `moveToCell`et plus encore. Voici un exemple :
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Déplacez le curseur sur un paragraphe spécifique
+// Déplacer le curseur vers un paragraphe spécifique
 builder.moveToParagraph(2, 0);
 
 // Ajouter du contenu à la nouvelle position du curseur
 builder.writeln("This is the 3rd paragraph.");
 ```
 
-Voici quelques questions et réponses courantes pour vous aider à démarrer avec Aspose.Words pour DocumentBuilder de Java. Si vous avez d'autres questions ou avez besoin d'aide supplémentaire, reportez-vous au[documentation de la bibliothèque](https://reference.aspose.com/words/java/) ou demandez de l’aide à la communauté Aspose.Words et aux ressources d’assistance.
+Voici quelques questions et réponses courantes pour vous aider à démarrer avec Aspose.Words pour DocumentBuilder de Java. Si vous avez d'autres questions ou si vous avez besoin d'aide supplémentaire, reportez-vous à la[documentation de la bibliothèque](https://reference.aspose.com/words/java/) ou demandez de l'aide à la communauté Aspose.Words et aux ressources d'assistance.

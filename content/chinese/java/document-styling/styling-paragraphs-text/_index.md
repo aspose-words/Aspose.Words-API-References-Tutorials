@@ -260,7 +260,7 @@ doc.save("ImageDocument.docx");
 
 ## 页面布局和边距
 
-控制文档的页面布局和页边距对于实现所需的外观至关重要。以下是设置页边距的方法：
+控制文档的页面布局和页边距对于实现所需的外观至关重要。设置页边距的方法如下：
 
 ```java
 //创建新文档
@@ -344,7 +344,7 @@ doc.save("TableDocument.docx");
 
 ## 文档保存和导出
 
-创建并格式化文档后，必须以所需的格式保存或导出它。 Aspose.Words for Java 支持各种文档格式，包括 DOCX、PDF 等。以下是将文档保存为 PDF 的方法：
+创建并格式化文档后，必须以所需的格式保存或导出它。Aspose.Words for Java 支持各种文档格式，包括 DOCX、PDF 等。以下是将文档保存为 PDF 的方法：
 
 ```java
 //创建新文档
@@ -408,7 +408,7 @@ run.getFont().setItalic(true);  //使文本变为斜体
 ```
 
 ### Aspose.Words for Java 的最新版本是什么？
-您可以查看 Aspose 网站或 Maven 存储库以获取 Java 版 Aspose.Words 的最新版本。
+您可以检查 Aspose 网站或 Maven 存储库以获取 Java 版 Aspose.Words 的最新版本。
 
 ### Aspose.Words for Java 与 Java 11 兼容吗？
 是的，Aspose.Words for Java 与 Java 11 及更高版本兼容。

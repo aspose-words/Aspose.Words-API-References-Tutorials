@@ -1,8 +1,8 @@
 ---
 title: Uso de propiedades de documento en Aspose.Words para Java
-linktitle: Usar propiedades del documento
+linktitle: Uso de las propiedades del documento
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Optimice la gestión de documentos con Aspose.Words para Java. Aprenda a trabajar con propiedades de documentos, agregue metadatos personalizados y más en este completo tutorial.
+description: Optimice la gestión de documentos con Aspose.Words para Java. Aprenda a trabajar con propiedades de documentos, agregar metadatos personalizados y más en este completo tutorial.
 type: docs
 weight: 32
 url: /es/java/document-manipulation/using-document-properties/
@@ -10,13 +10,13 @@ url: /es/java/document-manipulation/using-document-properties/
 
 ## Introducción a las propiedades del documento
 
-Las propiedades del documento son una parte vital de cualquier documento. Proporcionan información adicional sobre el documento en sí, como su título, autor, tema, palabras clave y más. En Aspose.Words para Java, puede manipular propiedades de documentos tanto integradas como personalizadas.
+Las propiedades de los documentos son una parte fundamental de cualquier documento. Proporcionan información adicional sobre el documento en sí, como su título, autor, tema, palabras clave y más. En Aspose.Words para Java, puede manipular propiedades de documentos integradas y personalizadas.
 
-## Enumerar propiedades del documento
+## Enumeración de propiedades de documentos
 
-### Propiedades integradas
+### Propiedades incorporadas
 
-Para recuperar y trabajar con las propiedades integradas del documento, puede utilizar el siguiente fragmento de código:
+Para recuperar y trabajar con propiedades de documento integradas, puede utilizar el siguiente fragmento de código:
 
 ```java
 @Test
@@ -70,9 +70,9 @@ public void removeCustomDocumentProperties() throws Exception
 
 Este código elimina la propiedad personalizada "Fecha de autorización" del documento.
 
-## Configurar enlace al contenido
+## Configurar enlace a contenido
 
-En algunos casos, es posible que desee crear enlaces dentro de su documento. Así es como puedes hacerlo:
+En algunos casos, es posible que desee crear vínculos dentro de su documento. A continuación, le indicamos cómo hacerlo:
 
 ```java
 @Test
@@ -109,7 +109,7 @@ public void convertBetweenMeasurementUnits() throws Exception
     DocumentBuilder builder = new DocumentBuilder(doc);
     PageSetup pageSetup = builder.getPageSetup();
 
-    // Establezca los márgenes en pulgadas.
+    // Establecer márgenes en pulgadas.
     pageSetup.setTopMargin(ConvertUtil.inchToPoint(1.0));
     pageSetup.setBottomMargin(ConvertUtil.inchToPoint(1.0));
     pageSetup.setLeftMargin(ConvertUtil.inchToPoint(1.5));
@@ -121,9 +121,9 @@ public void convertBetweenMeasurementUnits() throws Exception
 
 Este fragmento de código establece varios márgenes y distancias en pulgadas convirtiéndolos en puntos.
 
-## Usar caracteres de control
+## Uso de caracteres de control
 
-Los caracteres de control pueden resultar útiles cuando se trata de texto. A continuación se explica cómo reemplazar un carácter de control en su texto:
+Los caracteres de control pueden resultar útiles al trabajar con texto. A continuación, se indica cómo reemplazar un carácter de control en el texto:
 
 ```java
 @Test
@@ -136,29 +136,29 @@ public void useControlCharacters()
 }
 ```
 
-En este ejemplo, reemplazamos el retorno de carro (`\r`) con un retorno de carro seguido de un avance de línea (`\r\n`).
+En este ejemplo, reemplazamos el retorno de carro (`\r`) con un retorno de carro seguido de un salto de línea (`\r\n`).
 
 ## Conclusión
 
-Las propiedades de los documentos desempeñan un papel importante en la gestión y organización de sus documentos de forma eficaz en Aspose.Words para Java. Ya sea trabajando con propiedades integradas, propiedades personalizadas o usando caracteres de control, tiene una variedad de herramientas a su disposición para mejorar sus capacidades de administración de documentos.
+Las propiedades de los documentos desempeñan un papel importante en la gestión y organización eficaz de los documentos en Aspose.Words para Java. Ya sea que trabaje con propiedades integradas, propiedades personalizadas o utilice caracteres de control, tiene una variedad de herramientas a su disposición para mejorar sus capacidades de gestión de documentos.
 
 ## Preguntas frecuentes
 
-### ¿Cómo accedo a las propiedades integradas del documento?
+### ¿Cómo puedo acceder a las propiedades integradas del documento?
 
- Para acceder a las propiedades integradas del documento en Aspose.Words para Java, puede utilizar el`getBuiltInDocumentProperties` método en el`Document` objeto. Este método devuelve una colección de propiedades integradas que puede recorrer en iteración.
+ Para acceder a las propiedades de documento integradas en Aspose.Words para Java, puede utilizar el`getBuiltInDocumentProperties` método en el`Document` objeto. Este método devuelve una colección de propiedades integradas que puede recorrer iterativamente.
 
 ### ¿Puedo agregar propiedades de documento personalizadas a un documento?
 
- Sí, puede agregar propiedades de documento personalizadas a un documento usando el`CustomDocumentProperties` recopilación. Puede definir propiedades personalizadas con varios tipos de datos, incluidas cadenas, valores booleanos, fechas y valores numéricos.
+ Sí, puede agregar propiedades de documento personalizadas a un documento usando el`CustomDocumentProperties` Colección. Puede definir propiedades personalizadas con varios tipos de datos, incluidas cadenas, valores booleanos, fechas y valores numéricos.
 
 ### ¿Cómo puedo eliminar una propiedad de documento personalizada específica?
 
- Para eliminar una propiedad de documento personalizada específica, puede utilizar el`remove` método en el`CustomDocumentProperties`colección, pasando el nombre de la propiedad que desea eliminar como parámetro.
+ Para eliminar una propiedad de documento personalizada específica, puede utilizar el`remove` método en el`CustomDocumentProperties`colección, pasando como parámetro el nombre de la propiedad que desea eliminar.
 
 ### ¿Cuál es el propósito de vincular al contenido dentro de un documento?
 
-Vincular contenido dentro de un documento le permite crear referencias dinámicas a partes específicas del documento. Esto puede resultar útil para crear documentos interactivos o referencias cruzadas entre secciones.
+Los vínculos a contenido dentro de un documento permiten crear referencias dinámicas a partes específicas del documento. Esto puede resultar útil para crear documentos interactivos o referencias cruzadas entre secciones.
 
 ### ¿Cómo puedo convertir entre diferentes unidades de medida en Aspose.Words para Java?
 

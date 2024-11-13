@@ -210,4 +210,4 @@ I den här handledningen har vi fördjupat oss i olika aspekter av att arbeta me
 
 ###  Vad är syftet med`setTempFolder` method in Load Options?
 
- De`setTempFolder`metoden låter dig ange mappen där temporära filer lagras under dokumentbearbetningen.
+De`setTempFolder`metoden låter dig ange mappen där temporära filer lagras under dokumentbearbetningen.

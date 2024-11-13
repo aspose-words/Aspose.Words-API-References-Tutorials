@@ -1,8 +1,8 @@
 ---
-title: Hapus Perlindungan Dokumen Di Dokumen Word
-linktitle: Hapus Perlindungan Dokumen Di Dokumen Word
+title: Hapus Proteksi Dokumen di Dokumen Word
+linktitle: Hapus Proteksi Dokumen di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menghapus perlindungan dari dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk membuka proteksi dokumen Anda dengan mudah.
+description: Pelajari cara menghapus proteksi dari dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk membuka proteksi dokumen Anda dengan mudah.
 type: docs
 weight: 10
 url: /id/net/document-protection/remove-document-protection/
@@ -10,17 +10,17 @@ url: /id/net/document-protection/remove-document-protection/
 
 ## Perkenalan
 
-Hai! Pernahkah Anda mendapati diri Anda terkunci di dokumen Word Anda karena pengaturan perlindungan? Ini seperti mencoba membuka pintu dengan kunci yang salah—membuat frustrasi, bukan? Tapi jangan takut! Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah menghapus perlindungan dari dokumen Word Anda. Tutorial ini akan memandu Anda melalui prosesnya, langkah demi langkah, memastikan Anda bisa mendapatkan kembali kendali penuh atas dokumen Anda dalam waktu singkat. Ayo selami!
+Hai! Pernahkah Anda merasa terkunci di luar dokumen Word Anda sendiri karena pengaturan proteksi? Ini seperti mencoba membuka pintu dengan kunci yang salah—membuat frustrasi, bukan? Namun, jangan khawatir! Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah menghapus proteksi dari dokumen Word Anda. Tutorial ini akan memandu Anda melalui proses tersebut, langkah demi langkah, memastikan Anda dapat memperoleh kembali kendali penuh atas dokumen Anda dalam waktu singkat. Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita beralih ke kode, pastikan kita memiliki semua yang kita perlukan:
+Sebelum kita masuk ke kode, mari pastikan kita punya semua yang dibutuhkan:
 
-1.  Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pastikan Anda memiliki pustaka Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan .NET seperti Visual Studio.
 3. Pengetahuan Dasar C#: Memahami dasar-dasar C# akan membantu Anda mengikutinya.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Sebelum menulis kode apa pun, pastikan Anda telah mengimpor namespace yang diperlukan:
 
@@ -30,11 +30,11 @@ using Aspose.Words.Saving;
 using Aspose.Words.Protection;
 ```
 
-Namespace ini akan memberi kita semua alat yang kita perlukan untuk memanipulasi dokumen Word.
+Ruang nama ini akan menyediakan semua alat yang kita perlukan untuk memanipulasi dokumen Word.
 
 ## Langkah 1: Muat Dokumen
 
-Baiklah, mari kita mulai. Langkah pertama adalah memuat dokumen yang ingin Anda buka proteksinya. Di sinilah kami memberi tahu program kami dokumen mana yang sedang kami tangani.
+Baiklah, mari kita mulai. Langkah pertama adalah memuat dokumen yang ingin Anda buka proteksinya. Di sinilah kita memberi tahu program kita dokumen mana yang sedang kita tangani.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -42,33 +42,33 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "ProtectedDocument.docx");
 ```
 
- Di sini, kami menentukan jalur ke direktori yang berisi dokumen kami. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+ Di sini, kita tentukan jalur ke direktori yang berisi dokumen kita. Ganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
 
-## Langkah 2: Hapus Perlindungan tanpa Kata Sandi
+## Langkah 2: Hapus Proteksi Tanpa Kata Sandi
 
-Terkadang, dokumen dilindungi tanpa kata sandi. Dalam kasus seperti itu, kita cukup menghapus perlindungan dengan satu baris kode.
+Terkadang, dokumen dilindungi tanpa kata sandi. Dalam kasus seperti itu, kita cukup menghapus perlindungan tersebut dengan satu baris kode.
 
 ```csharp
 // Hapus perlindungan tanpa kata sandi
 doc.Unprotect();
 ```
 
-Itu saja! Dokumen Anda sekarang tidak terlindungi. Tapi bagaimana jika ada kata sandinya?
+Selesai! Dokumen Anda kini tidak terlindungi. Namun, bagaimana jika ada kata sandi?
 
-## Langkah 3: Hapus Perlindungan dengan Kata Sandi
+## Langkah 3: Hapus Proteksi dengan Kata Sandi
 
-Jika dokumen Anda dilindungi dengan kata sandi, Anda perlu memberikan kata sandi tersebut untuk menghapus perlindungan. Inilah cara Anda melakukannya:
+Jika dokumen Anda dilindungi dengan kata sandi, Anda perlu memberikan kata sandi tersebut untuk menghapus perlindungan tersebut. Berikut cara melakukannya:
 
 ```csharp
 // Hapus perlindungan dengan kata sandi yang benar
 doc.Unprotect("currentPassword");
 ```
 
- Mengganti`"currentPassword"` dengan kata sandi sebenarnya yang digunakan untuk melindungi dokumen. Setelah Anda memberikan kata sandi yang benar, perlindungan akan dicabut.
+ Mengganti`"currentPassword"` dengan kata sandi yang sebenarnya digunakan untuk melindungi dokumen. Setelah Anda memberikan kata sandi yang benar, perlindungan akan dicabut.
 
-## Langkah 4: Tambah dan Hapus Perlindungan
+## Langkah 4: Tambahkan dan Hapus Perlindungan
 
-Katakanlah Anda ingin menghapus perlindungan saat ini dan kemudian menambahkan yang baru. Ini berguna untuk mengatur ulang perlindungan dokumen. Inilah cara Anda melakukannya:
+Misalnya, Anda ingin menghapus proteksi saat ini, lalu menambahkan proteksi baru. Ini dapat berguna untuk mengatur ulang proteksi dokumen. Berikut cara melakukannya:
 
 ```csharp
 // Tambahkan perlindungan baru
@@ -78,38 +78,38 @@ doc.Protect(ProtectionType.ReadOnly, "newPassword");
 doc.Unprotect("newPassword");
 ```
 
- Pada kode di atas, pertama kita tambahkan proteksi baru dengan password`"newPassword"`, lalu segera hapus menggunakan kata sandi yang sama.
+ Pada kode di atas, pertama kita tambahkan proteksi baru dengan password`"newPassword"`, lalu segera menghapusnya menggunakan kata sandi yang sama.
 
 ## Langkah 5: Simpan Dokumen
 
 Terakhir, setelah melakukan semua perubahan yang diperlukan, jangan lupa untuk menyimpan dokumen Anda. Berikut kode untuk menyimpan dokumen:
 
 ```csharp
-// Simpan dokumennya
+// Simpan dokumen
 doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
 ```
 
-Ini akan menyimpan dokumen Anda yang tidak dilindungi di direktori yang ditentukan.
+Ini akan menyimpan dokumen Anda yang tidak dilindungi dalam direktori yang ditentukan.
 
 ## Kesimpulan
 
-Dan itu dia! Menghapus perlindungan dari dokumen Word menggunakan Aspose.Words untuk .NET sangatlah mudah. Baik itu dokumen yang dilindungi kata sandi atau tidak, Aspose.Words memberi Anda fleksibilitas untuk mengelola perlindungan dokumen dengan mudah. Sekarang Anda dapat membuka kunci dokumen dan mengambil kendali penuh hanya dengan beberapa baris kode.
+Nah, itu dia! Menghapus proteksi dari dokumen Word menggunakan Aspose.Words untuk .NET sangat mudah. Baik dokumen tersebut dilindungi kata sandi atau tidak, Aspose.Words memberi Anda fleksibilitas untuk mengelola proteksi dokumen dengan mudah. Sekarang Anda dapat membuka kunci dokumen dan mengambil kendali penuh hanya dengan beberapa baris kode.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa yang terjadi jika saya memberikan kata sandi yang salah?
 
-Jika Anda memberikan kata sandi yang salah, Aspose.Words akan mengeluarkan pengecualian. Pastikan Anda menggunakan kata sandi yang benar untuk menghapus perlindungan.
+Jika Anda memberikan kata sandi yang salah, Aspose.Words akan memunculkan pengecualian. Pastikan Anda menggunakan kata sandi yang benar untuk menghilangkan perlindungan.
 
 ### Bisakah saya menghapus perlindungan dari beberapa dokumen sekaligus?
 
-Ya, Anda dapat menelusuri daftar dokumen dan menerapkan logika tidak proteksi yang sama pada masing-masing dokumen.
+Ya, Anda dapat melakukan pengulangan pada daftar dokumen dan menerapkan logika penghapusan proteksi yang sama pada setiap dokumen.
 
 ### Apakah Aspose.Words untuk .NET gratis?
 
- Aspose.Words for .NET adalah perpustakaan berbayar, tetapi Anda dapat mencobanya secara gratis. Lihat[uji coba gratis](https://releases.aspose.com/)!
+ Aspose.Words untuk .NET adalah pustaka berbayar, tetapi Anda dapat mencobanya secara gratis. Lihat[uji coba gratis](https://releases.aspose.com/)!
 
-### Jenis perlindungan apa lagi yang bisa saya terapkan pada dokumen Word?
+### Jenis perlindungan apa lagi yang dapat saya terapkan pada dokumen Word?
 
 Aspose.Words memungkinkan Anda menerapkan berbagai jenis perlindungan, seperti ReadOnly, AllowOnlyRevisions, AllowOnlyComments, dan AllowOnlyFormFields.
 

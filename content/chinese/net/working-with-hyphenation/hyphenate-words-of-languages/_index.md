@@ -2,7 +2,7 @@
 title: 语言单词连字符
 linktitle: 语言单词连字符
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 对不同语言的单词进行连字符连接。按照此详细的分步指南来增强文档的可读性。
+description: 了解如何使用 Aspose.Words for .NET 对不同语言的单词进行连字符连接。遵循此详细的分步指南可提高文档的可读性。
 type: docs
 weight: 10
 url: /zh/net/working-with-hyphenation/hyphenate-words-of-languages/
@@ -18,7 +18,7 @@ url: /zh/net/working-with-hyphenation/hyphenate-words-of-languages/
 - 已安装 Aspose.Words for .NET。如果尚未安装，请获取[这里](https://releases.aspose.com/words/net/).
 - 有效的 Aspose.Words 许可证。您可以购买一个[这里](https://purchase.aspose.com/buy)或获得临时执照[这里](https://purchase.aspose.com/temporary-license/).
 - C# 和 .NET 框架的基本知识。
-- 文本编辑器或像 Visual Studio 这样的 IDE。
+- 文本编辑器或类似 Visual Studio 的 IDE。
 
 ## 导入命名空间
 
@@ -40,7 +40,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## 步骤 3：注册连字词典
 
-Aspose.Words 需要不同语言的连字词典。请确保您拥有`.dic`您想要连字的语言的文件。使用`Hyphenation.RegisterDictionary`方法。
+Aspose.Words 需要不同语言的连字词典。请确保您拥有`.dic`您要连字的语言的文件。使用`Hyphenation.RegisterDictionary`方法。
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");

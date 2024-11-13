@@ -71,7 +71,7 @@ if (sdt.SdtType == SdtType.PlainText)
 }
 ```
 
- Förklaring: Här,`RemoveAllChildren()`rensar det befintliga innehållet i SDT. Vi skapar sedan en ny`Paragraph`och`Run` objekt för att infoga den nya texten.
+ Förklaring: Här,`RemoveAllChildren()`rensar det befintliga innehållet i SDT. Vi skapar sedan en ny`Paragraph` och`Run` objekt för att infoga den nya texten.
 
 ## Steg 4: Ändra SDT:er i rullgardinsmenyn
 

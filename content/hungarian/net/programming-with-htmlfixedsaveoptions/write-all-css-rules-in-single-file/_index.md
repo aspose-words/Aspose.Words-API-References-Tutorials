@@ -66,7 +66,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
 Végül a dokumentumot HTML-fájlként mentjük a beállított mentési beállításokkal. Ez a lépés biztosítja, hogy az összes CSS-szabály egyetlen fájlba legyen írva.
 
 ```csharp
-//Konvertálja a dokumentumot rögzített HTML formátumba
+// Konvertálja a dokumentumot rögzített HTML formátumba
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
 ```
 
@@ -89,4 +89,4 @@ Egyetlen CSS-fájl használata leegyszerűsíti a stílusok kezelését és karb
 Az Aspose.Words for .NET különféle formátumokat támogat, beleértve a PDF, TXT és képformátumokat, például JPEG és PNG.
 
 ### Hol találok további forrásokat az Aspose.Words for .NET webhelyen?
- Nézze meg a[dokumentáció](https://reference.aspose.com/words/net/) átfogó útmutatókért és API-referenciákért.
+ Nézze meg a[dokumentáció](https://reference.aspose.com/words/net/)átfogó útmutatókért és API-referenciákért.

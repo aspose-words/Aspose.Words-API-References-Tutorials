@@ -14,7 +14,7 @@ V tomto tutoriálu prozkoumáme pokročilé možnosti ukládání dokumentů HTM
 Aspose.Words for Java vám umožňuje pracovat s dokumenty Wordu programově. V tomto tutoriálu se zaměříme na pokročilé možnosti ukládání dokumentů HTML, které vám umožňují řídit, jak se dokumenty aplikace Word převádějí do HTML.
 
 ## 2. Exportujte informace o zpáteční cestě
- The`exportRoundtripInformation` umožňuje exportovat dokumenty Wordu do HTML při zachování zpátečních informací. Tyto informace mohou být užitečné, když chcete převést HTML zpět do formátu Word bez ztráty jakýchkoli podrobností specifických pro dokument.
+The`exportRoundtripInformation` umožňuje exportovat dokumenty Wordu do HTML při zachování zpátečních informací. Tyto informace mohou být užitečné, když chcete převést HTML zpět do formátu Word bez ztráty jakýchkoli podrobností specifických pro dokument.
 
 ```java
 public void exportRoundtripInformation() throws Exception {
@@ -39,7 +39,7 @@ public void exportFontsAsBase64() throws Exception {
 ```
 
 ## 4. Export zdrojů
- The`exportResources` umožňuje určit typ šablony stylů CSS a exportovat zdroje písem. Můžete také nastavit složku prostředků a alias pro prostředky v HTML.
+The`exportResources` umožňuje určit typ šablony stylů CSS a exportovat zdroje písem. Můžete také nastavit složku prostředků a alias pro prostředky v HTML.
 
 ```java
 @Test
@@ -55,12 +55,12 @@ public void exportResources() throws Exception {
 ```
 
 ## 5. Převeďte metasoubory na EMF nebo WMF
- The`convertMetafilesToEmfOrWmf`metoda umožňuje převést metasoubory v dokumentu buď do formátu EMF nebo WMF, což zajišťuje kompatibilitu a plynulé vykreslování v HTML.
+The`convertMetafilesToEmfOrWmf`metoda umožňuje převést metasoubory v dokumentu buď do formátu EMF nebo WMF, což zajišťuje kompatibilitu a plynulé vykreslování v HTML.
 
 ```java
 @Test
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    // Fragment kódu není pro stručnost zobrazen.
+    // Fragment kódu se pro stručnost nezobrazuje.
 }
 ```
 
@@ -70,7 +70,7 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 ```java
 @Test
 public void convertMetafilesToSvg() throws Exception {
-    // Fragment kódu není pro stručnost zobrazen.
+    // Fragment kódu se pro stručnost nezobrazuje.
 }
 ```
 
@@ -89,32 +89,32 @@ public void addCssClassNamePrefix() throws Exception {
 ```
 
 ## 8. Exportujte adresy URL CID pro zdroje MHTML
- The`exportCidUrlsForMhtmlResources` metoda se používá při ukládání dokumentů ve formátu MHTML. Umožňuje exportovat adresy URL Content-ID pro zdroje.
+The`exportCidUrlsForMhtmlResources` metoda se používá při ukládání dokumentů ve formátu MHTML. Umožňuje exportovat adresy URL Content-ID pro zdroje.
 
 ```java
 @Test
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    // Fragment kódu není pro stručnost zobrazen.
+    // Fragment kódu se pro stručnost nezobrazuje.
 }
 ```
 
 ## 9. Vyřešte názvy písem
- The`resolveFontNames` Tato metoda pomáhá vyřešit názvy písem při ukládání dokumentů ve formátu HTML a zajišťuje konzistentní vykreslování na různých platformách.
+The`resolveFontNames` Tato metoda pomáhá vyřešit názvy písem při ukládání dokumentů ve formátu HTML a zajišťuje konzistentní vykreslování na různých platformách.
 
 ```java
 @Test
 public void resolveFontNames() throws Exception {
-    // Fragment kódu není pro stručnost zobrazen.
+    // Fragment kódu se pro stručnost nezobrazuje.
 }
 ```
 
 ## 10. Export textového vstupního pole formuláře jako text
- The`exportTextInputFormFieldAsText` metoda exportuje pole formuláře jako prostý text v HTML, takže je snadno čitelná a upravitelná.
+The`exportTextInputFormFieldAsText` metoda exportuje pole formuláře jako prostý text v HTML, takže je snadno čitelná a upravitelná.
 
 ```java
 @Test
 public void exportTextInputFormFieldAsText() throws Exception {
-    // Fragment kódu není pro stručnost zobrazen.
+    // Fragment kódu se pro stručnost nezobrazuje.
 }
 ```
 

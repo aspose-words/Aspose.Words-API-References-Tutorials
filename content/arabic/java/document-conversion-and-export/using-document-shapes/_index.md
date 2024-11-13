@@ -1,26 +1,26 @@
 ---
-title: استخدام أشكال المستندات في Aspose.Words لـ Java
+title: استخدام أشكال المستندات في Aspose.Words للغة Java
 linktitle: استخدام أشكال المستندات
-second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: أطلق العنان لقوة أشكال المستندات في Aspose.Words لـ Java. تعلم كيفية إنشاء مستندات جذابة بصريًا باستخدام أمثلة خطوة بخطوة.
+second_title: واجهة برمجة تطبيقات معالجة المستندات في Java Aspose.Words
+description: اكتشف قوة أشكال المستندات في Aspose.Words for Java. تعلم كيفية إنشاء مستندات جذابة بصريًا من خلال أمثلة خطوة بخطوة.
 type: docs
 weight: 14
 url: /ar/java/document-conversion-and-export/using-document-shapes/
 ---
 
-## مقدمة لاستخدام أشكال المستندات في Aspose.Words لـ Java
+## مقدمة حول استخدام أشكال المستندات في Aspose.Words لـ Java
 
-في هذا الدليل الشامل، سنتعمق في عالم أشكال المستندات في Aspose.Words for Java. تعد الأشكال عناصر أساسية عندما يتعلق الأمر بإنشاء مستندات جذابة وتفاعلية. سواء كنت بحاجة إلى إضافة وسائل شرح أو أزرار أو صور أو علامات مائية، فإن Aspose.Words for Java يوفر الأدوات اللازمة للقيام بذلك بكفاءة. دعنا نستكشف كيفية استخدام هذه الأشكال خطوة بخطوة مع أمثلة التعليمات البرمجية المصدر.
+في هذا الدليل الشامل، سنتعمق في عالم أشكال المستندات في Aspose.Words for Java. تُعد الأشكال عناصر أساسية عندما يتعلق الأمر بإنشاء مستندات جذابة بصريًا وتفاعلية. سواء كنت بحاجة إلى إضافة تعليقات توضيحية أو أزرار أو صور أو علامات مائية، يوفر Aspose.Words for Java الأدوات اللازمة للقيام بذلك بكفاءة. دعنا نستكشف كيفية استخدام هذه الأشكال خطوة بخطوة مع أمثلة التعليمات البرمجية المصدرية.
 
-## الشروع في العمل مع أشكال المستندات
+## البدء باستخدام أشكال المستندات
 
- قبل أن ننتقل إلى التعليمات البرمجية، دعونا نهيئ بيئتنا. تأكد من دمج Aspose.Words for Java في مشروعك. إذا لم تكن قد قمت بذلك بالفعل، يمكنك تنزيله من موقع Aspose[تحميل Aspose.Words لجافا](https://releases.aspose.com/words/java/)
+قبل أن ننتقل إلى الكود، دعنا نعد بيئتنا. تأكد من دمج Aspose.Words for Java في مشروعك. إذا لم تكن قد قمت بذلك بالفعل، فيمكنك تنزيله من موقع Aspose على الويب[تنزيل Aspose.Words لجافا](https://releases.aspose.com/words/java/)
 
-## إضافة أشكال إلى المستندات
+## إضافة الأشكال إلى المستندات
 
 ### إدراج شكل المجموعة
 
- أ`GroupShape` يسمح لك بتجميع أشكال متعددة معًا. إليك كيفية إنشاء وإدراج ملف`GroupShape`:
+ أ`GroupShape` يتيح لك تجميع أشكال متعددة معًا. إليك كيفية إنشاء وإدراج`GroupShape`:
 
 ```java
 Document doc = new Document();
@@ -73,11 +73,11 @@ saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-## التعامل مع خصائص الشكل
+## التلاعب بخصائص الشكل
 
-### إدارة نسبة الارتفاع
+### إدارة نسبة العرض إلى الارتفاع
 
-يمكنك التحكم فيما إذا كانت نسبة العرض إلى الارتفاع للشكل مقفلة أم لا. فيما يلي كيفية فتح نسبة العرض إلى الارتفاع للشكل:
+يمكنك التحكم فيما إذا كانت نسبة العرض إلى الارتفاع لشكل ما مقفلة أم لا. إليك كيفية إلغاء قفل نسبة العرض إلى الارتفاع لشكل ما:
 
 ```java
 Document doc = new Document();
@@ -114,7 +114,7 @@ builder.endTable();
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.PAGE);
 watermark.setRelativeVerticalPosition(RelativeVerticalPosition.PAGE);
-watermark.isLayoutInCell(true); // عرض الشكل خارج خلية الجدول إذا كان سيتم وضعه في خلية.
+watermark.isLayoutInCell(true); // عرض الشكل خارج خلية الجدول إذا كان سيتم وضعه داخل خلية.
 watermark.setWidth(300.0);
 watermark.setHeight(70.0);
 watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
@@ -137,7 +137,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.LayoutInCell.docx");
 
 ## العمل مع أشكال SmartArt
 
-### الكشف عن أشكال SmartArt
+### اكتشاف أشكال SmartArt
 
 يمكنك اكتشاف أشكال SmartArt في مستند باستخدام الكود التالي:
 
@@ -150,7 +150,7 @@ System.out.println("The document has " + count + " shapes with SmartArt.");
 
 ### تحديث رسومات SmartArt
 
-لتحديث رسومات SmartArt داخل مستند، استخدم التعليمة البرمجية التالية:
+لتحديث رسومات SmartArt داخل مستند، استخدم الكود التالي:
 
 ```java
 Document doc = new Document("Your Directory Path" + "SmartArt.docx");
@@ -162,25 +162,25 @@ for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true)) {
 
 ## خاتمة
 
-في هذا الدليل، اكتشفنا عالم أشكال المستندات في Aspose.Words for Java. لقد تعلمت كيفية إضافة أشكال مختلفة إلى مستنداتك، ومعالجة خصائصها، والعمل باستخدام أشكال SmartArt. باستخدام هذه المعرفة، يمكنك إنشاء مستندات جذابة بصريًا وتفاعلية بسهولة.
+في هذا الدليل، استكشفنا عالم أشكال المستندات في Aspose.Words for Java. لقد تعلمت كيفية إضافة أشكال مختلفة إلى مستنداتك، والتلاعب بخصائصها، والعمل مع أشكال SmartArt. وبفضل هذه المعرفة، يمكنك إنشاء مستندات جذابة بصريًا وتفاعلية بسهولة.
 
 ## الأسئلة الشائعة
 
-### ما هو Aspose.Words لجافا؟
+### ما هو Aspose.Words لـ Java؟
 
-Aspose.Words for Java هي مكتبة Java تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. يوفر مجموعة واسعة من الميزات والأدوات للعمل مع المستندات بتنسيقات مختلفة.
+Aspose.Words for Java هي مكتبة Java تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا. وهي توفر مجموعة واسعة من الميزات والأدوات للعمل مع المستندات بتنسيقات مختلفة.
 
 ### كيف يمكنني تنزيل Aspose.Words لـ Java؟
 
- يمكنك تنزيل Aspose.Words for Java من موقع Aspose الإلكتروني باتباع هذا الرابط:[تحميل Aspose.Words لجافا](https://releases.aspose.com/words/java/)
+ يمكنك تنزيل Aspose.Words for Java من موقع Aspose الإلكتروني باتباع هذا الرابط:[تنزيل Aspose.Words لجافا](https://releases.aspose.com/words/java/)
 
 ### ما هي فوائد استخدام أشكال المستندات؟
 
-تضيف أشكال المستندات عناصر مرئية وتفاعلية إلى مستنداتك، مما يجعلها أكثر جاذبية وغنية بالمعلومات. باستخدام الأشكال، يمكنك إنشاء وسائل شرح وأزرار وصور وعلامات مائية والمزيد، مما يعزز تجربة المستخدم بشكل عام.
+تضيف أشكال المستندات عناصر بصرية وتفاعلية إلى مستنداتك، مما يجعلها أكثر جاذبية وإفادة. باستخدام الأشكال، يمكنك إنشاء تعليقات توضيحية وأزرار وصور وعلامات مائية وغير ذلك الكثير، مما يعزز تجربة المستخدم بشكل عام.
 
 ### هل يمكنني تخصيص مظهر الأشكال؟
 
-نعم، يمكنك تخصيص مظهر الأشكال عن طريق ضبط خصائصها مثل الحجم والموضع والتدوير ولون التعبئة. يوفر Aspose.Words for Java خيارات واسعة لتخصيص الشكل.
+نعم، يمكنك تخصيص مظهر الأشكال عن طريق ضبط خصائصها مثل الحجم والموضع والدوران ولون التعبئة. يوفر Aspose.Words for Java خيارات واسعة لتخصيص الأشكال.
 
 ### هل Aspose.Words for Java متوافق مع SmartArt؟
 

@@ -86,7 +86,7 @@ Boom! Sie haben erfolgreich zwei Word-Dokumente zusammengeführt und dabei die F
 
 ## Abschluss
 
-Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie mühelos Dokumente mit Aspose.Words für .NET anhängen, ohne dass Ihre Formatierung verloren geht. Egal, ob Sie Entwickler sind, der seine Dokumentenverwaltung optimieren möchte, oder einfach jemand, der organisierte Dokumente liebt, dieser Leitfaden hat alles für Sie. Viel Spaß beim Programmieren!
+Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie mühelos Dokumente mit Aspose.Words für .NET anhängen, ohne dass Ihre Formatierung verloren geht. Egal, ob Sie ein Entwickler sind, der seine Dokumentenverwaltung optimieren möchte, oder einfach jemand, der organisierte Dokumente liebt, dieser Leitfaden hat alles für Sie. Viel Spaß beim Programmieren!
 
 ## Häufig gestellte Fragen
 
@@ -94,7 +94,7 @@ Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie mühelos Dok
  Ja, Sie können die`ImportFormatOptions` um dies zu erreichen.
 
 ### Was ist, wenn ich Aspose.Words für .NET nicht habe?
- Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/).
+ Sie können eine kostenlose Testversion herunterladen von[Hier](https://releases.aspose.com/).
 
 ### Kann ich diese Methode für andere Dokumenttypen wie PDFs verwenden?
 Aspose.Words ist speziell für Word-Dokumente. Für PDFs benötigen Sie möglicherweise Aspose.PDF.

@@ -91,7 +91,7 @@ Paragraph para = body.getFirstParagraph();
 para.appendChild(new Run(doc, "Paragraph 1. "));
 body.appendParagraph("Paragraph 2. ");
 body.appendParagraph("Paragraph 3. ");
-//Wir haben drei Absätze, von denen keiner als irgendeine Art von Revision registriert ist
+// Wir haben drei Absätze, von denen keiner als irgendeine Art von Revision registriert ist
 // Wenn wir beim Verfolgen von Revisionen Inhalte im Dokument hinzufügen/entfernen,
 // Sie werden als solche im Dokument angezeigt und können akzeptiert/abgelehnt werden.
 doc.startTrackRevisions("John Doe", new Date());
@@ -103,7 +103,7 @@ ParagraphCollection paragraphs = body.getParagraphs();
 Assert.assertEquals(4, paragraphs.getCount());
 para = paragraphs.get(2);
 para.remove();
-// Da wir Revisionen verfolgen, existiert der Absatz immer noch im Dokument und hat den Wert "IsDeleteRevision"
+// Da wir Revisionen verfolgen, existiert der Absatz immer noch im Dokument und hat die Option "IsDeleteRevision"
 // und wird als Revision in Microsoft Word angezeigt, bis wir alle Revisionen akzeptieren oder ablehnen.
 Assert.assertEquals(4, paragraphs.getCount());
 Assert.assertTrue(para.isDeleteRevision());
@@ -112,7 +112,7 @@ doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //war Is.Empty
 // Wenn die Revisionsverfolgung gestoppt wird, wird dieser Text als normaler Text angezeigt.
-// Bei Änderungen am Dokument werden Revisionen nicht mitgezählt.
+//Bei Änderungen am Dokument werden Revisionen nicht mitgezählt.
 doc.stopTrackRevisions();
 // Speichern Sie das Dokument.
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");

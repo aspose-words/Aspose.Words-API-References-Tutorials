@@ -40,7 +40,7 @@ using Aspose.Words.Drawing;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 现在，让我们创建一个新的 Word 文档。此文档将作为我们图表的画布。
 

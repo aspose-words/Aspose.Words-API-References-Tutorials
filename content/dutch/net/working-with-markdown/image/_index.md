@@ -1,38 +1,38 @@
 ---
 title: Afbeelding
 linktitle: Afbeelding
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u afbeeldingen aan uw documenten kunt toevoegen met Aspose.Words voor .NET met deze stapsgewijze handleiding. Verbeter uw documenten in een mum van tijd met beeldmateriaal.
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u afbeeldingen aan uw documenten toevoegt met Aspose.Words voor .NET met deze stapsgewijze handleiding. Verbeter uw documenten in een mum van tijd met visuele elementen.
 type: docs
 weight: 10
 url: /nl/net/working-with-markdown/image/
 ---
 ## Invoering
 
-Ben je klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag gaan we onderzoeken hoe u afbeeldingen aan uw documenten kunt toevoegen. Of u nu aan een rapport, een brochure werkt of gewoon een eenvoudig document opfleurt, het toevoegen van afbeeldingen kan een groot verschil maken. Dus laten we aan de slag gaan!
+Bent u klaar om de wereld van Aspose.Words voor .NET in te duiken? Vandaag gaan we onderzoeken hoe u afbeeldingen aan uw documenten kunt toevoegen. Of u nu werkt aan een rapport, een brochure of gewoon een eenvoudig document opfleurt, het toevoegen van afbeeldingen kan een groot verschil maken. Dus laten we beginnen!
 
 ## Vereisten
 
-Voordat we ingaan op de code, zorgen we ervoor dat je alles hebt wat je nodig hebt:
+Voordat we met de code beginnen, controleren we eerst of je alles hebt wat je nodig hebt:
 
-1.  Aspose.Words voor .NET: Je kunt het downloaden van de[Aspose-website](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: U kunt het downloaden van de[Aspose-website](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Elke .NET-ontwikkelomgeving zoals Visual Studio.
-3. Basiskennis van C#: Als u bekend bent met C#, bent u klaar om te gaan!
+3. Basiskennis van C#: Als u bekend bent met C#, bent u klaar om te beginnen!
 
 ## Naamruimten importeren
 
-Laten we eerst de benodigde naamruimten importeren. Dit is essentieel voor toegang tot Aspose.Words-klassen en -methoden.
+Laten we eerst de benodigde namespaces importeren. Dit is essentieel voor toegang tot Aspose.Words-klassen en -methoden.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Laten we het proces nu in eenvoudige stappen opsplitsen. Elke stap heeft een kop en een gedetailleerde uitleg om ervoor te zorgen dat u deze soepel kunt volgen.
+Laten we het proces nu opsplitsen in simpele stappen. Elke stap heeft een kop en een gedetailleerde uitleg om ervoor te zorgen dat u het soepel kunt volgen.
 
-## Stap 1: Initialiseer DocumentBuilder
+## Stap 1: DocumentBuilder initialiseren
 
- Om te beginnen moet u een`DocumentBuilder` voorwerp. Met dit object kunt u inhoud aan uw document toevoegen.
+ Om te beginnen moet u een`DocumentBuilder` object. Dit object helpt u inhoud toe te voegen aan uw document.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
@@ -40,15 +40,15 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Stap 2: Afbeelding invoegen
 
-Vervolgens voegt u een afbeelding in uw document in. Zo doe je het:
+Vervolgens voegt u een afbeelding in uw document in. Dit is hoe u dat doet:
 
 ```csharp
 Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
- Vervangen`"path_to_your_image.jpg"` met het daadwerkelijke pad van uw afbeeldingsbestand. De`InsertImage`methode voegt de afbeelding toe aan uw document.
+ Vervangen`"path_to_your_image.jpg"` met het werkelijke pad van uw afbeeldingsbestand. De`InsertImage` Met deze methode wordt de afbeelding aan uw document toegevoegd.
 
-## Stap 3: Stel afbeeldingseigenschappen in
+## Stap 3: Stel de eigenschappen van de afbeelding in
 
 U kunt verschillende eigenschappen voor de afbeelding instellen. Laten we bijvoorbeeld de titel van de afbeelding instellen:
 
@@ -58,21 +58,21 @@ shape.ImageData.Title = "Your Image Title";
 
 ## Conclusie
 
-Het toevoegen van afbeeldingen aan uw documenten kan de visuele aantrekkingskracht en effectiviteit ervan aanzienlijk vergroten. Met Aspose.Words voor .NET wordt dit proces eenvoudig en efficiënt. Door de hierboven beschreven stappen te volgen, kunt u eenvoudig afbeeldingen in uw documenten integreren en uw vaardigheden op het gebied van documentcreatie naar een hoger niveau tillen.
+Het toevoegen van afbeeldingen aan uw documenten kan hun visuele aantrekkingskracht en effectiviteit aanzienlijk vergroten. Met Aspose.Words voor .NET wordt dit proces eenvoudig en efficiënt. Door de hierboven beschreven stappen te volgen, kunt u eenvoudig afbeeldingen integreren in uw documenten en uw documentcreatievaardigheden naar een hoger niveau tillen.
 
 ## Veelgestelde vragen
 
 ### Kan ik meerdere afbeeldingen aan één document toevoegen?  
- Ja, u kunt zoveel afbeeldingen toevoegen als u wilt door de stappen te herhalen`InsertImage` methode voor elke afbeelding.
+Ja, u kunt zoveel afbeeldingen toevoegen als u wilt door de`InsertImage` methode voor elke afbeelding.
 
 ### Welke afbeeldingsformaten worden ondersteund door Aspose.Words voor .NET?  
 Aspose.Words ondersteunt verschillende afbeeldingsformaten, waaronder JPEG, PNG, BMP, GIF en meer.
 
-### Kan ik het formaat van de afbeeldingen in het document wijzigen?  
- Absoluut! U kunt de hoogte- en breedte-eigenschappen van het`Shape` object om het formaat van de afbeeldingen te wijzigen.
+### Kan ik de grootte van de afbeeldingen in het document aanpassen?  
+ Absoluut! U kunt de eigenschappen hoogte en breedte van de`Shape` object om de grootte van de afbeeldingen te wijzigen.
 
-### Is het mogelijk om afbeeldingen toe te voegen vanaf een URL?  
-Ja, u kunt afbeeldingen toevoegen vanaf een URL door de URL op te geven in het`InsertImage` methode.
+### Is het mogelijk om afbeeldingen toe te voegen via een URL?  
+ Ja, u kunt afbeeldingen toevoegen vanaf een URL door de URL in de`InsertImage` methode.
 
 ### Hoe krijg ik een gratis proefversie van Aspose.Words voor .NET?  
  U kunt een gratis proefversie krijgen van de[Aspose-website](https://releases.aspose.com/).

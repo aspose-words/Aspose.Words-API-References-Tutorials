@@ -1,23 +1,23 @@
 ---
-title: Köprüleri Değiştir
-linktitle: Köprüleri Değiştir
+title: Köprü metinlerini değiştir
+linktitle: Köprü metinlerini değiştir
 second_title: Aspose.Words Belge İşleme API'si
-description: Etkin belge yönetimi ve dinamik içerik güncellemeleri için Aspose.Words'ü kullanarak .NET belgelerindeki köprüleri nasıl değiştireceğinizi öğrenin.
+description: Verimli belge yönetimi ve dinamik içerik güncellemeleri için Aspose.Words'ü kullanarak .NET belgelerindeki köprü metinlerini nasıl değiştireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/replace-hyperlinks/
 ---
 ## giriiş
 
-.NET geliştirme dünyasında, belgeleri yönetmek ve değiştirmek çok önemli bir görevdir ve genellikle belgeler içindeki köprülerin verimli bir şekilde ele alınmasını gerektirir. Aspose.Words for .NET, köprüleri sorunsuz bir şekilde değiştirmek için güçlü özellikler sunarak belgelerinizin doğru kaynaklara dinamik olarak bağlanmasını sağlar. Bu eğitim, Aspose.Words for .NET kullanarak bunu nasıl başarabileceğinizi derinlemesine ele alıyor ve süreç boyunca size adım adım yol gösteriyor.
+.NET geliştirme dünyasında, belgeleri yönetmek ve düzenlemek çok önemli bir görevdir ve genellikle belgelerdeki köprü metinlerinin verimli bir şekilde işlenmesini gerektirir. .NET için Aspose.Words, köprü metinlerini sorunsuz bir şekilde değiştirmek için güçlü yetenekler sunar ve belgelerinizin doğru kaynaklara dinamik olarak bağlanmasını sağlar. Bu eğitim, .NET için Aspose.Words kullanarak bunu nasıl başarabileceğinizi derinlemesine ele alır ve sizi süreç boyunca adım adım yönlendirir.
 
-## Önkoşullar
+## Ön koşullar
 
-Köprüleri Aspose.Words for .NET ile değiştirmeye başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Aspose.Words for .NET ile köprü metinlerini değiştirmeye başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-- Visual Studio: .NET geliştirme için yüklendi ve ayarlandı.
--  Aspose.Words for .NET: İndirilir ve projenizde referans alınır. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
-- C#'a aşinalık: Kod yazma ve derlemeye yönelik temel anlayış.
+- Visual Studio: .NET geliştirme için kuruldu ve ayarlandı.
+-  Aspose.Words for .NET: Projenizde indirilip referans olarak kullanılabilir. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- C# ile aşinalık: Kod yazma ve derleme konusunda temel anlayış.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -28,22 +28,22 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-## 1. Adım: Belgeyi Yükleyin
+## Adım 1: Belgeyi Yükleyin
 
-Belgeyi köprüleri değiştirmek istediğiniz yere yükleyerek başlayın:
+Öncelikle köprü metinlerini değiştirmek istediğiniz belgeyi yükleyerek başlayın:
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- Yer değiştirmek`"Hyperlinks.docx"` gerçek belgenizin yolu ile birlikte.
+ Yer değiştirmek`"Hyperlinks.docx"` gerçek belgenize giden yol ile.
 
 ## Adım 2: Alanlar Arasında Yineleme Yapın
 
-Köprüleri bulmak ve değiştirmek için belgedeki her alanı yineleyin:
+Köprü metinlerini bulup değiştirmek için belgedeki her alanı yineleyin:
 
 ```csharp
 foreach (Field field in doc.Range.Fields)
@@ -52,20 +52,20 @@ foreach (Field field in doc.Range.Fields)
     {
         FieldHyperlink hyperlink = (FieldHyperlink)field;
         
-        // Köprünün yerel bir bağlantı olup olmadığını kontrol edin (yer imlerini dikkate almayın).
+        // Bağlantının yerel bir bağlantı olup olmadığını kontrol edin (yer imlerini dikkate almayın).
         if (hyperlink.SubAddress != null)
             continue;
         
-        // Köprü adresini ve sonucunu değiştirin.
+        // Köprü adresini ve sonucu değiştirin.
         hyperlink.Address = "http://www.aspose.com";
         hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
     }
 }
 ```
 
-## 3. Adım: Belgeyi Kaydedin
+## Adım 3: Belgeyi Kaydedin
 
-Son olarak, değiştirilen belgeyi değiştirilen köprülerle birlikte kaydedin:
+Son olarak, değiştirilen belgeyi değiştirilmiş köprü metinleriyle birlikte kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
@@ -75,21 +75,21 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 
 ## Çözüm
 
-Aspose.Words for .NET kullanarak belgelerdeki köprüleri değiştirmek oldukça basittir ve belgelerinizin dinamik yapısını geliştirir. URL'leri güncellemek veya belge içeriğini programlı olarak dönüştürmek olsun, Aspose.Words bu görevleri basitleştirerek verimli belge yönetimi sağlar.
+Aspose.Words for .NET kullanarak belgelerdeki köprü metinlerini değiştirmek basittir ve belgelerinizin dinamik yapısını geliştirir. İster URL'leri güncelleyin, ister belge içeriğini programatik olarak dönüştürün, Aspose.Words bu görevleri basitleştirerek verimli belge yönetimi sağlar.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for .NET karmaşık belge yapılarını yönetebilir mi?
-Evet, Aspose.Words tablolar, resimler ve köprüler gibi karmaşık yapıları sorunsuz bir şekilde destekler.
+### Aspose.Words for .NET karmaşık belge yapılarını işleyebilir mi?
+Evet, Aspose.Words tablolar, resimler ve köprü metinleri gibi karmaşık yapıları sorunsuz bir şekilde destekler.
 
-### Aspose.Words for .NET'in deneme sürümü mevcut mu?
- Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).
+### Aspose.Words for .NET için deneme sürümü mevcut mu?
+ Evet, ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/).
 
-### Aspose.Words for .NET belgelerini nerede bulabilirim?
- Detaylı dokümantasyon mevcut[Burada](https://reference.aspose.com/words/net/).
+### Aspose.Words for .NET için dokümanları nerede bulabilirim?
+Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).
 
-### Aspose.Words for .NET için nasıl geçici lisans alabilirim?
- Geçici lisans alınabilecek[Burada](https://purchase.aspose.com/temporary-license/).
+### Aspose.Words for .NET için geçici lisanslamayı nasıl alabilirim?
+ Geçici lisanslar alınabilir[Burada](https://purchase.aspose.com/temporary-license/).
 
-### Aspose.Words for .NET için hangi destek seçenekleri mevcut?
- Topluluk desteği alabilir veya sorularınızı şu adresten gönderebilirsiniz:[Aspose.Words forumu](https://forum.aspose.com/c/words/8).
+### Aspose.Words for .NET için hangi destek seçenekleri mevcuttur?
+ Topluluk desteği alabilir veya sorularınızı şu adrese gönderebilirsiniz:[Aspose.Words forumu](https://forum.aspose.com/c/words/8).

@@ -10,29 +10,29 @@ url: /id/java/document-manipulation/protecting-documents/
 
 ## Pengantar Perlindungan Dokumen
 
-Perlindungan dokumen adalah fitur penting ketika menangani informasi sensitif. Aspose.Words untuk Java memberikan kemampuan yang kuat untuk melindungi dokumen Anda dari akses tidak sah.
+Perlindungan dokumen merupakan fitur penting saat menangani informasi sensitif. Aspose.Words untuk Java menyediakan kemampuan tangguh untuk melindungi dokumen Anda dari akses yang tidak sah.
 
 ## Melindungi Dokumen dengan Kata Sandi
 
-Untuk melindungi dokumen Anda, Anda dapat mengatur kata sandi. Hanya pengguna yang mengetahui kata sandinya yang dapat mengakses dokumen tersebut. Mari kita lihat cara melakukannya dalam kode:
+Untuk melindungi dokumen Anda, Anda dapat menetapkan kata sandi. Hanya pengguna yang mengetahui kata sandi yang dapat mengakses dokumen tersebut. Mari kita lihat cara melakukannya dalam kode:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 ```
 
-Dalam kode di atas, kami memuat dokumen Word dan melindunginya dengan kata sandi, sehingga hanya kolom formulir yang dapat diedit.
+Dalam kode di atas, kita memuat dokumen Word dan melindunginya dengan kata sandi, sehingga hanya kolom formulir yang bisa diedit.
 
 ## Menghapus Perlindungan Dokumen
 
-Jika Anda perlu menghapus proteksi dari dokumen, Aspose.Words for Java memudahkannya:
+Jika Anda perlu menghapus proteksi dari sebuah dokumen, Aspose.Words untuk Java memudahkannya:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
- Itu`unprotect` metode ini menghilangkan perlindungan apa pun yang diterapkan pada dokumen, sehingga dapat diakses tanpa kata sandi.
+Itu`unprotect` metode ini menghapus perlindungan apa pun yang diterapkan pada dokumen, membuatnya dapat diakses tanpa kata sandi.
 
 ## Memeriksa Jenis Perlindungan Dokumen
 
@@ -43,18 +43,18 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
- Itu`getProtectionType` metode mengembalikan bilangan bulat yang mewakili jenis perlindungan yang diterapkan pada dokumen.
+Itu`getProtectionType` metode mengembalikan integer yang mewakili jenis perlindungan yang diterapkan pada dokumen.
 
 
 ## Kesimpulan
 
-Pada artikel ini, kita mempelajari cara melindungi dokumen Word menggunakan Aspose.Words untuk Java. Kami mempelajari cara menyetel kata sandi untuk membatasi akses, menghapus proteksi, dan memeriksa jenis proteksi. Keamanan dokumen sangat penting, dan dengan Aspose.Words untuk Java, Anda dapat memastikan kerahasiaan informasi Anda.
+Dalam artikel ini, kami membahas cara melindungi dokumen Word menggunakan Aspose.Words untuk Java. Kami mempelajari cara mengatur kata sandi untuk membatasi akses, menghapus perlindungan, dan memeriksa jenis perlindungan. Keamanan dokumen sangat penting, dan dengan Aspose.Words untuk Java, Anda dapat memastikan kerahasiaan informasi Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara melindungi dokumen tanpa kata sandi?
+### Bagaimana saya bisa melindungi dokumen tanpa kata sandi?
 
- Jika Anda ingin melindungi dokumen tanpa kata sandi, Anda dapat menggunakan jenis perlindungan lain, seperti`ProtectionType.NO_PROTECTION` atau`ProtectionType.READ_ONLY`.
+ Jika Anda ingin melindungi dokumen tanpa kata sandi, Anda dapat menggunakan jenis perlindungan lainnya, seperti`ProtectionType.NO_PROTECTION` atau`ProtectionType.READ_ONLY`.
 
 ### Bisakah saya mengubah kata sandi untuk dokumen yang dilindungi?
 
@@ -66,8 +66,8 @@ Jika Anda lupa kata sandi untuk dokumen yang dilindungi, Anda tidak akan dapat m
 
 ### Bisakah saya melindungi bagian tertentu dari suatu dokumen?
 
-Ya, Anda dapat melindungi bagian tertentu dari dokumen dengan menerapkan perlindungan pada rentang atau node individual dalam dokumen.
+Ya, Anda dapat melindungi bagian tertentu dari suatu dokumen dengan menerapkan perlindungan pada rentang atau node individual dalam dokumen tersebut.
 
 ### Apakah mungkin untuk melindungi dokumen dalam format lain seperti PDF atau HTML?
 
-Aspose.Words untuk Java terutama berhubungan dengan dokumen Word, tetapi Anda dapat mengonversi dokumen Anda ke format lain seperti PDF atau HTML dan kemudian menerapkan perlindungan jika diperlukan.
+Aspose.Words untuk Java terutama menangani dokumen Word, tetapi Anda dapat mengonversi dokumen Anda ke format lain seperti PDF atau HTML, lalu menerapkan proteksi jika diperlukan.

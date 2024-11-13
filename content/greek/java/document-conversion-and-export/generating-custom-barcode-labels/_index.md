@@ -81,7 +81,7 @@ private static float convertScalingFactor(String scalingFactor) throws Exception
 
 ## Εφαρμογή της μεθόδου GetBarCodeImage().
 
- Σε αυτό το βήμα, θα εφαρμόσουμε το`getBarcodeImage` μέθοδο, η οποία δημιουργεί την εικόνα γραμμικού κώδικα με βάση τις παρεχόμενες παραμέτρους. Θα χειριστούμε διαφορετικούς τύπους γραμμωτού κώδικα, θα ορίσουμε χρώματα, θα προσαρμόσουμε τις διαστάσεις και πολλά άλλα. Εδώ είναι ο κώδικας για αυτήν τη μέθοδο:
+ Σε αυτό το βήμα, θα εφαρμόσουμε το`getBarcodeImage`μέθοδο, η οποία δημιουργεί την εικόνα γραμμικού κώδικα με βάση τις παρεχόμενες παραμέτρους. Θα χειριστούμε διαφορετικούς τύπους γραμμωτού κώδικα, θα ορίσουμε χρώματα, θα προσαρμόσουμε τις διαστάσεις και πολλά άλλα. Εδώ είναι ο κώδικας για αυτήν τη μέθοδο:
 
 ```java
 /// <περίληψη>
@@ -121,7 +121,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
 	}
 	
-	//Προσαρμόστε την τοποθεσία κειμένου κώδικα
+	// Προσαρμόστε την τοποθεσία κειμένου κώδικα
 	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
 	if (parameters.getDisplayText())
 		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
@@ -160,7 +160,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 
 ## Εφαρμογή της μεθόδου GetOldBarcodeImage().
 
- Σε αυτό το βήμα, θα εφαρμόσουμε το`getOldBarcodeImage` μέθοδο, η οποία δημιουργεί εικόνες γραμμωτού κώδικα για παλιομοδίτους γραμμωτούς κώδικες. Εδώ, θα χειριστούμε έναν συγκεκριμένο τύπο γραμμικού κώδικα, όπως το POSTNET. Εδώ είναι ο κώδικας για αυτήν τη μέθοδο:
+ Σε αυτό το βήμα, θα εφαρμόσουμε το`getOldBarcodeImage`μέθοδο, η οποία δημιουργεί εικόνες γραμμωτού κώδικα για παλιομοδίτους γραμμωτούς κώδικες. Εδώ, θα χειριστούμε έναν συγκεκριμένο τύπο γραμμικού κώδικα, όπως το POSTNET. Εδώ είναι ο κώδικας για αυτήν τη μέθοδο:
 
 ```java
 /// <περίληψη>

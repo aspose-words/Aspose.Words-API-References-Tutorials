@@ -79,7 +79,7 @@ Här händer magin. Vi kommer att skapa avsnitt i dokumentet som kan redigeras t
    ```csharp
    EditableRangeStart edRangeStart = builder.StartEditableRange();
    ```
-2.  Skapa redigerbart områdesobjekt: An`EditableRange` objektet skapas automatiskt.
+2.  Skapa redigerbart områdesobjekt: An`EditableRange` objekt kommer att skapas automatiskt.
    ```csharp
    EditableRange editableRange = edRangeStart.EditableRange;
    ```

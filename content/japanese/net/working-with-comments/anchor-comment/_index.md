@@ -19,7 +19,7 @@ Word 文書の特定のテキスト セクションにプログラムでコメ�
 - 開発環境: Visual Studio などの任意の .NET 開発環境。
 - C# の基本的な理解: C# プログラミングに精通していると、手順を簡単に実行できるようになります。
 
-ここで、このタスクにインポートする必要がある名前空間について詳しく見ていきましょう。
+それでは、このタスクにインポートする必要がある名前空間について詳しく見ていきましょう。
 
 ## 名前空間のインポート
 
@@ -79,8 +79,7 @@ doc.FirstSection.Body.AppendChild(para2);
 ```csharp
 //新しいコメントを作成する
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+comment.SetText("Comment text.");
 ```
 
 このステップでは、`Comment`オブジェクトを作成し、コメント テキストを含む段落と行を追加します。

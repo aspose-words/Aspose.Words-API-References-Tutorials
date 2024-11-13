@@ -62,7 +62,7 @@ Shape shape2 = new Shape(doc, ShapeType.TextBox);
 
 In diesem Snippet:
 - `ShapeType.TextBox` gibt an, dass die von uns erstellten Formen Textfelder sind.
-- `shape1`Und`shape2` sind unsere beiden Textfelder.
+- `shape1` Und`shape2` sind unsere beiden Textfelder.
 
 ## Schritt 3: Auf TextBox-Objekte zugreifen
 
@@ -77,7 +77,7 @@ TextBox textBox1 = shape1.TextBox;
 TextBox textBox2 = shape2.TextBox;
 ```
 
- Diese Zeilen speichern die`TextBox` Objekte aus den Formen in`textBox1`Und`textBox2`.
+ Diese Zeilen speichern die`TextBox` Objekte aus den Formen in`textBox1` Und`textBox2`.
 
 ## Schritt 4: Textfelder verknüpfen
 
@@ -110,7 +110,7 @@ Speichern Sie Ihr Meisterwerk mit diesem Code:
 doc.Save("LinkedTextBoxes.docx");
 ```
 
-Dadurch wird das Dokument unter dem Dateinamen „LinkedTextBoxes.docx“ gespeichert. Sie können die Datei nun öffnen, um Ihre verknüpften Textfelder in Aktion zu sehen!
+Dadurch wird das Dokument unter dem Dateinamen „LinkedTextBoxes.docx“ gespeichert. Sie können die Datei jetzt öffnen, um Ihre verknüpften Textfelder in Aktion zu sehen!
 
 ## Abschluss
 

@@ -1,18 +1,18 @@
 ---
-title: Utilisation de graphiques dans Aspose.Words pour Java
-linktitle: Utiliser des graphiques
+title: Utilisation des graphiques dans Aspose.Words pour Java
+linktitle: Utilisation des graphiques
 second_title: API de traitement de documents Java Aspose.Words
-description: Découvrez comment créer et personnaliser des graphiques dans Aspose.Words pour Java. Explorez les types de graphiques, le formatage et les propriétés des axes pour la visualisation des données.
+description: Découvrez comment créer et personnaliser des graphiques dans Aspose.Words pour Java. Découvrez les types de graphiques, la mise en forme et les propriétés des axes pour la visualisation des données.
 type: docs
 weight: 12
 url: /fr/java/document-conversion-and-export/using-charts/
 ---
 
-## Introduction à l'utilisation de graphiques dans Aspose.Words pour Java
+## Introduction à l'utilisation des graphiques dans Aspose.Words pour Java
 
-Dans ce didacticiel, nous verrons comment utiliser des graphiques à l'aide d'Aspose.Words pour Java. Vous apprendrez à créer différents types de graphiques, à personnaliser les propriétés des axes, à formater les étiquettes de données, etc. Allons-y !
+Dans ce didacticiel, nous allons découvrir comment travailler avec des graphiques à l'aide d'Aspose.Words pour Java. Vous apprendrez à créer différents types de graphiques, à personnaliser les propriétés des axes, à formater les étiquettes de données, et bien plus encore. Plongeons-nous dans le vif du sujet !
 
-## Création d'un graphique linéaire
+## Créer un graphique linéaire
 
 Pour créer un graphique linéaire, utilisez le code suivant :
 
@@ -23,7 +23,7 @@ Shape shape = builder.insertChart(ChartType.LINE, 432.0, 252.0);
 Chart chart = shape.getChart();
 chart.getTitle().setText("Data Labels With Different Number Format");
 
-// Supprimez la série générée par défaut.
+// Supprimer la série générée par défaut.
 chart.getSeries().clear();
 
 // Ajout d'une série avec des données et des étiquettes de données.
@@ -43,9 +43,9 @@ series1.getDataLabels().get(2).getNumberFormat().isLinkedToSource(true);
 doc.save("Your Directory Path" + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-## Création d'autres types de graphiques
+## Créer d'autres types de graphiques
 
-Vous pouvez créer différents types de graphiques comme des colonnes, des aires, des bulles, des nuages de points, etc. en utilisant des techniques similaires. Voici un exemple d'insertion d'un histogramme simple :
+Vous pouvez créer différents types de graphiques, comme des graphiques à colonnes, à aires, à bulles, à nuages de points, etc., en utilisant des techniques similaires. Voici un exemple d'insertion d'un graphique à colonnes simple :
 
 ```java
 Document doc = new Document();
@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.insertChart(ChartType.COLUMN, 432.0, 252.0);
 Chart chart = shape.getChart();
 
-// Supprimez la série générée par défaut.
+// Supprimer la série générée par défaut.
 chart.getSeries().clear();
 
 // Création de catégories et ajout de données.
@@ -64,9 +64,9 @@ chart.getSeries().add("Aspose Series 2", categories, new double[] { 3.0, 4.0 });
 doc.save("Your Directory Path" + "WorkingWithCharts.InsertSimpleColumnChart.docx");
 ```
 
-## Personnalisation des propriétés de l'axe
+## Personnalisation des propriétés des axes
 
-Vous pouvez personnaliser les propriétés de l'axe, telles que la modification du type d'axe, la définition de graduations, le formatage des étiquettes, etc. Voici un exemple de définition des propriétés de l'axe XY :
+Vous pouvez personnaliser les propriétés de l'axe, comme modifier le type d'axe, définir des graduations, formater les étiquettes, etc. Voici un exemple de définition des propriétés de l'axe XY :
 
 ```java
 Document doc = new Document();
@@ -79,10 +79,10 @@ Chart chart = shape.getChart();
 ChartAxis xAxis = chart.getAxisX();
 ChartAxis yAxis = chart.getAxisY();
 
-// Changez l'axe X pour qu'il soit une catégorie au lieu d'une date.
+// Modifiez l'axe X pour qu'il soit une catégorie au lieu d'une date.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); //Mesuré en unités d'affichage de l'axe Y (centaines).
+xAxis.setCrossesAt(3.0); // Mesuré en unités d'affichage de l'axe Y (centaines).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -117,30 +117,30 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ## Personnalisations supplémentaires des graphiques
 
-Vous pouvez personnaliser davantage vos graphiques en ajustant les limites, les unités d'intervalle entre les étiquettes, en masquant les axes du graphique, etc. Explorez les extraits de code fournis pour en savoir plus sur ces options.
+Vous pouvez personnaliser davantage vos graphiques en ajustant les limites, les unités d'intervalle entre les étiquettes, en masquant les axes des graphiques, etc. Explorez les extraits de code fournis pour en savoir plus sur ces options.
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons expliqué comment utiliser des graphiques à l'aide d'Aspose.Words pour Java. Vous avez appris à créer différents types de graphiques, à personnaliser les propriétés des axes, à formater les étiquettes de données, etc. Aspose.Words for Java fournit des outils puissants pour ajouter des représentations visuelles de données à vos documents, améliorant ainsi la façon dont vous présentez les informations.
+Dans ce didacticiel, nous avons découvert comment travailler avec des graphiques à l'aide d'Aspose.Words pour Java. Vous avez appris à créer différents types de graphiques, à personnaliser les propriétés des axes, à formater les étiquettes de données, etc. Aspose.Words pour Java fournit des outils puissants pour ajouter des représentations visuelles des données à vos documents, améliorant ainsi la façon dont vous présentez les informations.
 
 ## FAQ
 
 ### Comment puis-je ajouter plusieurs séries à un graphique ?
 
- Vous pouvez ajouter plusieurs séries à un graphique à l'aide de l'outil`chart.getSeries().add()` méthode. Assurez-vous de spécifier le nom de la série, les catégories et les valeurs des données.
+ Vous pouvez ajouter plusieurs séries à un graphique à l'aide de la`chart.getSeries().add()` méthode. Assurez-vous de spécifier le nom de la série, les catégories et les valeurs de données.
 
 ### Comment puis-je formater des étiquettes de données avec des formats numériques personnalisés ?
 
-Vous pouvez formater les étiquettes de données en accédant à`DataLabels` propriétés d'une série et définition du code de format souhaité à l'aide`getNumberFormat().setFormatCode()`.
+ Vous pouvez formater les étiquettes de données en accédant à l'`DataLabels` propriétés d'une série et définition du code de format souhaité à l'aide de`getNumberFormat().setFormatCode()`.
 
-### Comment personnaliser les propriétés des axes dans un graphique ?
+### Comment personnaliser les propriétés des axes dans un graphique ?
 
- Vous pouvez personnaliser les propriétés des axes telles que le type, les graduations, les étiquettes, etc. en accédant à l'onglet`ChartAxis` des propriétés comme`setCategoryType()`, `setCrosses()` , et`setMajorTickMark()`.
+ Vous pouvez personnaliser les propriétés de l'axe telles que le type, les graduations, les étiquettes, etc. en accédant à l'`ChartAxis` propriétés comme`setCategoryType()`, `setCrosses()` , et`setMajorTickMark()`.
 
-### Comment puis-je créer d’autres types de graphiques comme des graphiques en nuages de points ou en aires ?
+### Comment puis-je créer d’autres types de graphiques comme des graphiques en nuage de points ou en aires ?
 
- Vous pouvez créer différents types de graphiques en spécifiant le`ChartType` lors de l'insertion du graphique à l'aide`builder.insertChart(ChartType.TYPE, width, height)`.
+Vous pouvez créer différents types de graphiques en spécifiant les`ChartType` lors de l'insertion du graphique à l'aide de`builder.insertChart(ChartType.TYPE, width, height)`.
 
-### Comment puis-je masquer un axe du graphique ?
+### Comment puis-je masquer un axe de graphique ?
 
- Vous pouvez masquer un axe du graphique en définissant le`setHidden(true)` propriété de l’axe.
+ Vous pouvez masquer un axe de graphique en définissant le`setHidden(true)` propriété de l'axe.

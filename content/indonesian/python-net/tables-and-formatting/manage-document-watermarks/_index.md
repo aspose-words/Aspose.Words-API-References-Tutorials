@@ -1,24 +1,24 @@
 ---
 title: Membuat dan Memformat Tanda Air untuk Estetika Dokumen
 linktitle: Membuat dan Memformat Tanda Air untuk Estetika Dokumen
-second_title: API Manajemen Dokumen Aspose.Words Python
-description: Pelajari cara membuat dan memformat tanda air di dokumen menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk menambahkan tanda air teks dan gambar. Tingkatkan estetika dokumen Anda dengan tutorial ini.
+second_title: API Manajemen Dokumen Python Aspose.Words
+description: Pelajari cara membuat dan memformat tanda air dalam dokumen menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk menambahkan tanda air teks dan gambar. Tingkatkan estetika dokumen Anda dengan tutorial ini.
 type: docs
 weight: 10
 url: /id/python-net/tables-and-formatting/manage-document-watermarks/
 ---
 
-Tanda air berfungsi sebagai elemen halus namun berdampak dalam dokumen, menambah lapisan profesionalisme dan estetika. Dengan Aspose.Words untuk Python, Anda dapat dengan mudah membuat dan memformat tanda air untuk meningkatkan daya tarik visual dokumen Anda. Tutorial ini akan memandu Anda melalui proses langkah demi langkah menambahkan tanda air ke dokumen Anda menggunakan Aspose.Words untuk Python API.
+Tanda air berfungsi sebagai elemen yang halus namun berdampak dalam dokumen, menambahkan lapisan profesionalisme dan estetika. Dengan Aspose.Words untuk Python, Anda dapat dengan mudah membuat dan memformat tanda air untuk meningkatkan daya tarik visual dokumen Anda. Tutorial ini akan memandu Anda melalui proses langkah demi langkah untuk menambahkan tanda air ke dokumen Anda menggunakan API Aspose.Words untuk Python.
 
-## Pengantar Tanda Air dalam Dokumen
+## Pengenalan Tanda Air dalam Dokumen
 
-Watermark adalah elemen desain yang ditempatkan di latar belakang dokumen untuk menyampaikan informasi tambahan atau branding tanpa menghalangi konten utama. Mereka biasanya digunakan dalam dokumen bisnis, dokumen hukum, dan karya kreatif untuk menjaga integritas dokumen dan meningkatkan daya tarik visual.
+Tanda air adalah elemen desain yang ditempatkan di latar belakang dokumen untuk menyampaikan informasi tambahan atau pencitraan merek tanpa menghalangi konten utama. Tanda air umumnya digunakan dalam dokumen bisnis, dokumen hukum, dan karya kreatif untuk menjaga integritas dokumen dan meningkatkan daya tarik visual.
 
 ## Memulai dengan Aspose.Words untuk Python
 
- Untuk memulai, pastikan Anda telah menginstal Aspose.Words for Python. Anda dapat mengunduhnya dari Aspose Releases:[Unduh Aspose.Words untuk Python](https://releases.aspose.com/words/python/).
+ Untuk memulai, pastikan Anda telah menginstal Aspose.Words untuk Python. Anda dapat mengunduhnya dari Rilis Aspose:[Unduh Aspose.Words untuk Python](https://releases.aspose.com/words/python/).
 
-Setelah instalasi, Anda dapat mengimpor modul yang diperlukan dan mengatur objek dokumen.
+Setelah instalasi, Anda dapat mengimpor modul yang diperlukan dan menyiapkan objek dokumen.
 
 ```python
 import aspose.words as aw
@@ -33,7 +33,7 @@ doc = aw.Document()
 
 Untuk menambahkan tanda air teks, ikuti langkah-langkah berikut:
 
-1. Buat objek tanda air.
+1. Membuat objek tanda air.
 2. Tentukan teks untuk tanda air.
 3. Tambahkan tanda air ke dokumen.
 
@@ -61,10 +61,10 @@ watermark.color = aw.drawing.Color.GRAY
 
 ## Menambahkan Tanda Air Gambar
 
-Menambahkan tanda air gambar melibatkan proses serupa:
+Menambahkan tanda air gambar melibatkan proses yang serupa:
 
 1. Muat gambar untuk tanda air.
-2. Buat objek tanda air gambar.
+2. Membuat objek tanda air gambar.
 3. Tambahkan tanda air gambar ke dokumen.
 
 ```python
@@ -90,9 +90,9 @@ image_watermark.relative_horizontal_position = aw.drawing.RelativeHorizontalPosi
 image_watermark.relative_vertical_position = aw.drawing.RelativeVerticalPosition.MIDDLE
 ```
 
-## Menerapkan Tanda Air pada Bagian Dokumen Tertentu
+## Menerapkan Tanda Air ke Bagian Dokumen Tertentu
 
-Jika Anda ingin menerapkan tanda air ke bagian tertentu dari dokumen, Anda dapat menggunakan pendekatan berikut:
+Jika Anda ingin menerapkan tanda air ke bagian tertentu dokumen, Anda dapat menggunakan pendekatan berikut:
 
 ```python
 # Apply watermark to a specific section
@@ -121,25 +121,25 @@ doc.save(output_path)
 
 ## Kesimpulan
 
-Menambahkan tanda air ke dokumen Anda menggunakan Aspose.Words untuk Python adalah proses sederhana yang meningkatkan daya tarik visual dan pencitraan merek konten Anda. Baik itu tanda air teks atau gambar, Anda memiliki fleksibilitas untuk menyesuaikan tampilan dan penempatannya sesuai preferensi Anda.
+Menambahkan tanda air ke dokumen Anda menggunakan Aspose.Words untuk Python adalah proses mudah yang meningkatkan daya tarik visual dan pencitraan merek konten Anda. Baik itu tanda air teks atau gambar, Anda memiliki fleksibilitas untuk menyesuaikan tampilan dan penempatannya sesuai dengan preferensi Anda.
 
-## FAQ
+## Tanya Jawab Umum
 
 ### Bagaimana cara menghapus tanda air dari dokumen?
 
- Untuk menghapus tanda air, setel properti tanda air pada dokumen menjadi`None`.
+ Untuk menghapus tanda air, atur properti tanda air dokumen ke`None`.
 
-### Bisakah saya menerapkan tanda air berbeda pada halaman berbeda?
+### Dapatkah saya menerapkan tanda air yang berbeda pada halaman yang berbeda?
 
-Ya, Anda dapat menerapkan tanda air yang berbeda ke bagian atau halaman berbeda dalam dokumen.
+Ya, Anda dapat menerapkan tanda air yang berbeda ke bagian atau halaman yang berbeda dalam satu dokumen.
 
-### Apakah mungkin menggunakan tanda air teks yang diputar?
+### Bisakah saya menggunakan tanda air teks yang diputar?
 
-Sangat! Anda dapat memutar tanda air teks dengan mengatur properti sudut rotasi.
+Tentu saja! Anda dapat memutar tanda air teks dengan mengatur properti sudut rotasi.
 
-### Bisakah saya melindungi tanda air agar tidak diedit atau dihapus?
+### Dapatkah saya melindungi tanda air agar tidak diedit atau dihapus?
 
-Meskipun tanda air tidak dapat dilindungi sepenuhnya, Anda dapat membuatnya lebih tahan terhadap gangguan dengan menyesuaikan transparansi dan penempatannya.
+Meskipun tanda air tidak dapat sepenuhnya dilindungi, Anda dapat membuatnya lebih tahan terhadap gangguan dengan menyesuaikan transparansi dan penempatannya.
 
 ### Apakah Aspose.Words untuk Python cocok untuk Windows dan Linux?
 

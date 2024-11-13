@@ -91,7 +91,7 @@ Paragraph para = body.getFirstParagraph();
 para.appendChild(new Run(doc, "Paragraph 1. "));
 body.appendParagraph("Paragraph 2. ");
 body.appendParagraph("Paragraph 3. ");
-//3つの段落がありますが、いずれも修正として登録されていません
+// 3つの段落がありますが、いずれも修正として登録されていません
 //改訂を追跡しながら文書内のコンテンツを追加/削除すると、
 //これらはドキュメント内にそのように表示され、承認/拒否することができます。
 doc.startTrackRevisions("John Doe", new Date());

@@ -59,13 +59,10 @@ Document doc = new Document(dataDir + "Rendering.docx");
 Chcete-li zajistit interpolaci obrázků, musíte nakonfigurovat`PdfSaveOptions`. Tato třída vám umožňuje nastavit různé možnosti, jak se váš dokument uloží jako PDF. Konkrétně chcete povolit interpolaci obrazu.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	InterpolateImages = true
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
- The`InterpolateImages` vlastnost je nastavena na`true` abyste zajistili, že obrázky ve vašem PDF budou interpolovány, čímž se zlepší jejich kvalita.
+The`InterpolateImages` vlastnost je nastavena na`true` abyste zajistili, že obrázky ve vašem PDF budou interpolovány, čímž se zlepší jejich kvalita.
 
 ## Krok 4: Uložte dokument jako PDF
 

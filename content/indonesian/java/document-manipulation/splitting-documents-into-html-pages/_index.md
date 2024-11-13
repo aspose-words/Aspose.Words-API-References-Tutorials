@@ -1,6 +1,6 @@
 ---
-title: Memisahkan Dokumen menjadi Halaman HTML di Aspose.Words untuk Java
-linktitle: Memisahkan Dokumen menjadi Halaman HTML
+title: Membagi Dokumen menjadi Halaman HTML di Aspose.Words untuk Java
+linktitle: Membagi Dokumen menjadi Halaman HTML
 second_title: API Pemrosesan Dokumen Java Aspose.Words
 description: Pelajari cara membagi dokumen menjadi halaman HTML dengan Aspose.Words untuk Java. Ikuti panduan langkah demi langkah kami untuk konversi dokumen yang lancar.
 type: docs
@@ -8,16 +8,16 @@ weight: 25
 url: /id/java/document-manipulation/splitting-documents-into-html-pages/
 ---
 
-## Pengantar Memisahkan Dokumen menjadi Halaman HTML di Aspose.Words untuk Java
+## Pengantar Membagi Dokumen ke dalam Halaman HTML di Aspose.Words untuk Java
 
-Dalam panduan langkah demi langkah ini, kita akan mempelajari cara membagi dokumen menjadi halaman HTML menggunakan Aspose.Words untuk Java. Aspose.Words adalah Java API yang kuat untuk bekerja dengan dokumen Microsoft Word, dan menyediakan fitur ekstensif untuk manipulasi dokumen, termasuk kemampuan untuk mengkonversi dokumen ke berbagai format, termasuk HTML.
+Dalam panduan langkah demi langkah ini, kita akan menjelajahi cara membagi dokumen menjadi halaman HTML menggunakan Aspose.Words untuk Java. Aspose.Words adalah API Java yang hebat untuk bekerja dengan dokumen Microsoft Word, dan menyediakan fitur yang luas untuk manipulasi dokumen, termasuk kemampuan untuk mengonversi dokumen ke dalam berbagai format, termasuk HTML.
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
 
-- Java Development Kit (JDK) diinstal pada sistem Anda.
--  Aspose.Words untuk perpustakaan Java. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
+- Java Development Kit (JDK) terinstal di sistem Anda.
+-  Aspose.Words untuk pustaka Java. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
 
 ## Langkah 1: Impor Paket yang Diperlukan
 
@@ -37,7 +37,7 @@ class WordToHtmlConverter
 }
 ```
 
-## Langkah 3: Pilih Paragraf Judul sebagai Topik Dimulai
+## Langkah 3: Pilih Paragraf Judul sebagai Awal Topik
 
 ```java
 private ArrayList<Paragraph> selectTopicStarts()
@@ -54,7 +54,7 @@ private ArrayList<Paragraph> selectTopicStarts()
 }
 ```
 
-## Langkah 4: Sisipkan Bagian Istirahat Sebelum Menuju Paragraf
+## Langkah 4: Masukkan Hentian Bagian Sebelum Judul Paragraf
 
 ```java
 private void insertSectionBreaks(ArrayList<Paragraph> topicStartParas)
@@ -73,7 +73,7 @@ private void insertSectionBreaks(ArrayList<Paragraph> topicStartParas)
 }
 ```
 
-## Langkah 5: Bagi Dokumen menjadi Topik
+## Langkah 5: Membagi Dokumen menjadi Topik
 
 ```java
 private ArrayList<Topic> saveHtmlTopics() throws Exception
@@ -129,29 +129,29 @@ private void saveTableOfContents(ArrayList<Topic> topics) throws Exception
 }
 ```
 
-Sekarang kami telah menguraikan langkah-langkahnya, Anda dapat menerapkan setiap langkah dalam proyek Java Anda untuk membagi dokumen menjadi halaman HTML menggunakan Aspose.Words untuk Java. Proses ini akan memungkinkan Anda membuat representasi HTML terstruktur dari dokumen Anda, menjadikannya lebih mudah diakses dan ramah pengguna.
+Setelah kami menguraikan langkah-langkahnya, Anda dapat menerapkan setiap langkah dalam proyek Java Anda untuk membagi dokumen menjadi halaman HTML menggunakan Aspose.Words untuk Java. Proses ini akan memungkinkan Anda membuat representasi HTML terstruktur dari dokumen Anda, sehingga lebih mudah diakses dan ramah pengguna.
 
 ## Kesimpulan
 
-Dalam panduan komprehensif ini, kami telah membahas proses pemisahan dokumen menjadi halaman HTML menggunakan Aspose.Words untuk Java. Dengan mengikuti langkah-langkah yang diuraikan, Anda dapat mengonversi dokumen Word ke format HTML secara efisien, sehingga konten Anda lebih mudah diakses di web.
+Dalam panduan lengkap ini, kami telah membahas proses pemisahan dokumen menjadi halaman HTML menggunakan Aspose.Words untuk Java. Dengan mengikuti langkah-langkah yang diuraikan, Anda dapat mengonversi dokumen Word ke dalam format HTML secara efisien, sehingga konten Anda lebih mudah diakses di web.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menginstal Aspose.Words untuk Java?
 
- Untuk menginstal Aspose.Words untuk Java, Anda dapat mengunduh perpustakaan dari[Di Sini](https://releases.aspose.com/words/java/) dan ikuti petunjuk instalasi yang disediakan dalam dokumentasi.
+ Untuk menginstal Aspose.Words untuk Java, Anda dapat mengunduh pustaka dari[Di Sini](https://releases.aspose.com/words/java/) dan ikuti petunjuk instalasi yang disediakan dalam dokumentasi.
 
 ### Bisakah saya menyesuaikan keluaran HTML?
 
- Ya, Anda dapat menyesuaikan keluaran HTML dengan menyesuaikan opsi penyimpanan di`HtmlSaveOptions` kelas. Ini memungkinkan Anda mengontrol format dan tampilan file HTML yang dihasilkan.
+ Ya, Anda dapat menyesuaikan output HTML dengan menyesuaikan opsi penyimpanan di`HtmlSaveOptions` kelas. Ini memungkinkan Anda untuk mengontrol format dan tampilan file HTML yang dihasilkan.
 
 ### Versi Microsoft Word apa yang didukung oleh Aspose.Words untuk Java?
 
-Aspose.Words untuk Java mendukung berbagai format dokumen Microsoft Word, termasuk DOC, DOCX, RTF, dan banyak lagi. Ini kompatibel dengan berbagai versi Microsoft Word.
+Aspose.Words untuk Java mendukung berbagai format dokumen Microsoft Word, termasuk DOC, DOCX, RTF, dan banyak lagi. Aplikasi ini kompatibel dengan berbagai versi Microsoft Word.
 
-### Bagaimana cara menangani gambar dalam HTML yang dikonversi?
+### Bagaimana saya dapat menangani gambar dalam HTML yang dikonversi?
 
-Aspose.Words untuk Java dapat menangani gambar dalam HTML yang dikonversi dengan menyimpannya sebagai file terpisah di folder yang sama dengan file HTML. Ini memastikan bahwa gambar ditampilkan dengan benar dalam keluaran HTML.
+Aspose.Words untuk Java dapat menangani gambar dalam HTML yang dikonversi dengan menyimpannya sebagai file terpisah dalam folder yang sama dengan file HTML. Ini memastikan bahwa gambar ditampilkan dengan benar dalam keluaran HTML.
 
 ### Apakah ada versi uji coba Aspose.Words untuk Java yang tersedia?
 

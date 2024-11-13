@@ -67,7 +67,7 @@ Dieser Befehl speichert Ihr Dokument als PDF mit dem Namen „OptimizedPDF.pdf�
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben gerade gelernt, wie Sie die Größe Ihrer PDF-Datei optimieren, indem Sie die Einbettung der Schriftarten Arial und Times Roman mithilfe von Aspose.Words für .NET überspringen. Diese einfache Optimierung kann Ihre Dateigröße erheblich reduzieren und sie einfacher teilen und speichern lassen. Es ist, als würden Sie für Ihre PDFs ins Fitnessstudio gehen: Sie verlieren unnötiges Gewicht und behalten dabei alle wichtigen Elemente bei.
+Und da haben Sie es! Sie haben gerade gelernt, wie Sie die Größe Ihrer PDF-Datei optimieren, indem Sie die Einbettung der Schriftarten Arial und Times Roman mithilfe von Aspose.Words für .NET überspringen. Diese einfache Optimierung kann Ihre Dateigröße erheblich reduzieren und das Teilen und Speichern erleichtern. Es ist, als würden Sie für Ihre PDFs ins Fitnessstudio gehen: Sie verlieren unnötiges Gewicht und behalten dabei alle wichtigen Elemente bei.
 
 ## Häufig gestellte Fragen
 

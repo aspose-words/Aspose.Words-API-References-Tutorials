@@ -41,7 +41,7 @@ Ponořte se do pokročilých témat, jako je práce se záhlavím a zápatím, v
 
 ## Kde najít Aspose.Words pro výukové programy Java
 
- Jste připraveni vydat se na cestu manipulace s dokumenty? K našim návodům a zdrojům máte přístup na adrese[Aspose.Words API dokumentace](https://reference.aspose.com/words/java/). Ať už jste začátečník nebo zkušený vývojář, naše výukové programy krok za krokem uspokojí všechny úrovně dovedností.
+ Jste připraveni vydat se na cestu manipulace s dokumenty? K našim výukovým programům a zdrojům máte přístup na adrese[Aspose.Words API dokumentace](https://reference.aspose.com/words/java/). Ať už jste začátečník nebo zkušený vývojář, naše výukové programy krok za krokem uspokojí všechny úrovně dovedností.
 
 Manipulace s dokumenty pomocí Aspose.Words for Java je cenná dovednost pro vývojáře a podniky. S našimi výukovými programy a silou Aspose.Words můžete zjednodušit úkoly související s dokumenty, zvýšit produktivitu a snadno vytvářet úžasné dokumenty.
 
@@ -52,7 +52,7 @@ Začněte svou cestu učení ještě dnes a odemkněte nekonečné možnosti man
 Vylepšete srozumitelnost dokumentu pomocí možností Aspose.Words for Java Cleanup. Přečtěte si, jak odstranit prázdné odstavce, nepoužívané oblasti a další.
 ### [Použití polí v Aspose.Words pro Java](./using-fields/)
 Odemkněte automatizaci dokumentů pomocí Aspose.Words pro Java. Naučte se slučovat, formátovat a vkládat obrázky do dokumentů Java. Komplexní průvodce a příklady kódu pro efektivní zpracování dokumentů.
-### [Použití XML dat v Aspose.Words pro Java](./using-xml-data/)
+### [Použití XML dat v Aspose.Words pro Javu](./using-xml-data/)
 Odemkněte sílu Aspose.Words pro Java. Naučte se práci s daty XML, hromadnou korespondenci a knírkovou syntaxi pomocí výukových programů krok za krokem.
 ### [Extrahování obsahu z dokumentů v Aspose.Words pro Java](./extracting-content-from-documents/)
 Naučte se, jak snadno extrahovat obsah z dokumentů pomocí Aspose.Words for Java. Náš podrobný průvodce a ukázky kódu celý proces zjednodušují.

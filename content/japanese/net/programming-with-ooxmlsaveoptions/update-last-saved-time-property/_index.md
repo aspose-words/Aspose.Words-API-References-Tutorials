@@ -52,7 +52,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## ステップ3: 保存オプションを設定する
 
-さて、インスタンスを作成します`OoxmlSaveOptions`クラス。このクラスでは、Office Open XML (OOXML) 形式でドキュメントを保存するためのオプションを指定できます。ここでは、`UpdateLastSavedTimeProperty`に`true`.
+さて、インスタンスを作成します`OoxmlSaveOptions`クラス。このクラスでは、ドキュメントをOffice Open XML (OOXML)形式で保存するためのオプションを指定できます。ここでは、`UpdateLastSavedTimeProperty`に`true`.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions

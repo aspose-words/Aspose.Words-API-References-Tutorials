@@ -21,7 +21,7 @@ url: /ja/net/programming-with-charts/create-chart-using-shape/
 
 ## 名前空間のインポート
 
-開始するには、必要な名前空間をインポートする必要があります。この手順は、Aspose.Words for .NET によって提供されるクラスとメソッドを使用できるようにするため、不可欠です。
+まず、必要な名前空間をインポートする必要があります。この手順は、Aspose.Words for .NET によって提供されるクラスとメソッドを使用できるようにするため、不可欠です。
 
 ```csharp
 using Aspose.Words;
@@ -63,7 +63,7 @@ chart.Title.Overlay = false;
 
 ## ステップ4: 凡例の位置を調整する
 
-凡例は、グラフ内のさまざまなデータ系列を識別するのに役立ちます。凡例の位置とオーバーレイ設定は次のようにカスタマイズできます。
+凡例は、グラフ内のさまざまなデータ系列を識別するのに役立ちます。次のように凡例の位置とオーバーレイ設定をカスタマイズできます。
 
 ```csharp
 chart.Legend.Position = LegendPosition.Left;
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 
 ### 問題が発生した場合にサポートを受ける方法はありますか?
 
-もちろんです。Asposeコミュニティフォーラムを通じてサポートを受けることができます。[ここ](https://forum.aspose.com/c/words/8)コミュニティと Aspose スタッフの反応は非常に良好です。
+もちろんです。Asposeコミュニティフォーラムを通じてサポートを受けることができます。[ここ](https://forum.aspose.com/c/words/8)コミュニティと Aspose スタッフは非常に反応が良いです。
 
 ### Aspose.Words for .NET のライセンスを購入するにはどうすればよいですか?
 
@@ -102,4 +102,4 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 
 ### 短期プロジェクトのために一時的なライセンスが必要な場合はどうすればよいですか?
 
- Asposeは一時的なライセンスを提供しており、リクエストすることができます[ここ](https://purchase.aspose.com/temporary-license/).
+ Asposeは一時的なライセンスを提供しており、リクエストすることができます。[ここ](https://purchase.aspose.com/temporary-license/).

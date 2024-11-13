@@ -1,8 +1,8 @@
 ---
 title: تحديد تنسيق المستند في Aspose.Words لـ Java
-linktitle: تحديد تنسيق الوثيقة
-second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: تعرف على كيفية اكتشاف تنسيقات المستندات في Java باستخدام Aspose.Words. تحديد DOC وDOCX والمزيد. تنظيم الملفات بكفاءة.
+linktitle: تحديد تنسيق المستند
+second_title: واجهة برمجة تطبيقات معالجة المستندات في Java Aspose.Words
+description: تعرف على كيفية اكتشاف تنسيقات المستندات في Java باستخدام Aspose.Words. حدد DOC وDOCX والمزيد. قم بتنظيم الملفات بكفاءة.
 type: docs
 weight: 25
 url: /ar/java/document-loading-and-saving/determining-document-format/
@@ -10,19 +10,19 @@ url: /ar/java/document-loading-and-saving/determining-document-format/
 
 ## مقدمة لتحديد تنسيق المستند في Aspose.Words لـ Java
 
-عند العمل مع معالجة المستندات في Java، من المهم تحديد تنسيق الملفات التي تتعامل معها. يوفر Aspose.Words for Java ميزات قوية لتحديد تنسيقات المستندات، وسنرشدك خلال العملية.
+عند العمل على معالجة المستندات في Java، من المهم تحديد تنسيق الملفات التي تتعامل معها. يوفر Aspose.Words for Java ميزات قوية لتحديد تنسيقات المستندات، وسنقوم بإرشادك خلال العملية.
 
 ## المتطلبات الأساسية
 
-قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
+قبل أن نبدأ، تأكد من أن لديك المتطلبات الأساسية التالية:
 
-- [Aspose.Words لجافا](https://releases.aspose.com/words/java/)
-- تم تثبيت Java Development Kit (JDK) على نظامك
-- المعرفة الأساسية ببرمجة جافا
+- [كلمات Aspose.Words للغة جافا](https://releases.aspose.com/words/java/)
+- مجموعة تطوير Java (JDK) مثبتة على نظامك
+- المعرفة الأساسية لبرمجة جافا
 
 ## الخطوة 1: إعداد الدليل
 
-أولاً، نحتاج إلى إعداد الأدلة اللازمة لتنظيم ملفاتنا بشكل فعال. سنقوم بإنشاء أدلة لأنواع المستندات المختلفة.
+أولاً، نحتاج إلى إعداد الدلائل اللازمة لتنظيم ملفاتنا بشكل فعّال. سنقوم بإنشاء دلائل لأنواع مختلفة من المستندات.
 
 ```java
 File supportedDir = new File("Your Directory Path" + "Supported");
@@ -30,7 +30,7 @@ File unknownDir = new File("Your Directory Path" + "Unknown");
 File encryptedDir = new File("Your Directory Path" + "Encrypted");
 File pre97Dir = new File("Your Directory Path" + "Pre97");
 
-// قم بإنشاء الدلائل إذا لم تكن موجودة بالفعل.
+// إنشاء الدلائل إذا لم تكن موجودة بالفعل.
 if (!supportedDir.exists())
     supportedDir.mkdir();
 if (!unknownDir.exists())
@@ -41,11 +41,11 @@ if (!pre97Dir.exists())
     pre97Dir.mkdir();
 ```
 
-لقد أنشأنا أدلة لأنواع المستندات المدعومة وغير المعروفة والمشفرة وما قبل 97.
+لقد قمنا بإنشاء أدلة لأنواع المستندات المدعومة، وغير المعروفة، والمشفرة، وأنواع المستندات التي سبقت الإصدار 97.
 
-## الخطوة 2: الكشف عن تنسيق المستند
+## الخطوة 2: اكتشاف تنسيق المستند
 
-الآن، دعونا نكتشف تنسيق المستندات الموجودة في أدلةنا. سوف نستخدم Aspose.Words for Java لتحقيق ذلك.
+الآن، دعنا نكتشف تنسيق المستندات الموجودة في أدلةنا. سنستخدم Aspose.Words for Java لتحقيق ذلك.
 
 ```java
 Set<String> listFiles = Stream.of(new File("Your Directory Path").listFiles())
@@ -58,7 +58,7 @@ for (String fileName : listFiles) {
     System.out.println(nameOnly);
     FileFormatInfo info = FileFormatUtil.detectFileFormat(fileName);
 
-    // عرض نوع الوثيقة
+    // عرض نوع المستند
     switch (info.getLoadFormat()) {
         case LoadFormat.DOC:
             System.out.println("\tMicrosoft Word 97-2003 document.");
@@ -87,16 +87,16 @@ for (String fileName : listFiles) {
 }
 ```
 
-في مقتطف التعليمات البرمجية هذا، نقوم بمراجعة الملفات والكشف عن تنسيقاتها وتنظيمها في الأدلة المعنية.
+في مقتطف التعليمات البرمجية هذا، نقوم بالتكرار خلال الملفات، واكتشاف تنسيقاتها، وتنظيمها في الدلائل الخاصة بها.
 
-## أكمل كود المصدر لتحديد تنسيق المستند في Aspose.Words لـ Java
+## الكود المصدر الكامل لتحديد تنسيق المستند في Aspose.Words لـ Java
 
 ```java
         File supportedDir = new File("Your Directory Path" + "Supported");
         File unknownDir = new File("Your Directory Path" + "Unknown");
         File encryptedDir = new File("Your Directory Path" + "Encrypted");
         File pre97Dir = new File("Your Directory Path" + "Pre97");
-        // قم بإنشاء الدلائل إذا لم تكن موجودة بالفعل.
+        // إنشاء الدلائل إذا لم تكن موجودة بالفعل.
         if (supportedDir.exists() == false)
             supportedDir.mkdir();
         if (unknownDir.exists() == false)
@@ -113,7 +113,7 @@ for (String fileName : listFiles) {
             String nameOnly = Paths.get(fileName).getFileName().toString();
             System.out.println(nameOnly);
             FileFormatInfo info = FileFormatUtil.detectFileFormat(fileName);
-            // عرض نوع الوثيقة
+            // عرض نوع المستند
             switch (info.getLoadFormat()) {
                 case LoadFormat.DOC:
                     System.out.println("\tMicrosoft Word 97-2003 document.");
@@ -189,20 +189,20 @@ for (String fileName : listFiles) {
 
 ### كيف أقوم بتثبيت Aspose.Words لـ Java؟
 
- يمكنك تنزيل Aspose.Words for Java من[هنا](https://releases.aspose.com/words/java/) واتبع تعليمات التثبيت المقدمة.
+ يمكنك تنزيل Aspose.Words for Java من[هنا](https://releases.aspose.com/words/java/)واتبع تعليمات التثبيت المقدمة.
 
 ### ما هي تنسيقات المستندات المدعومة؟
 
-يدعم Aspose.Words for Java تنسيقات المستندات المختلفة، بما في ذلك DOC وDOCX وRTF وHTML والمزيد. يمكنك الرجوع إلى الوثائق للحصول على قائمة كاملة.
+يدعم Aspose.Words for Java تنسيقات مستندات مختلفة، بما في ذلك DOC وDOCX وRTF وHTML والمزيد. يمكنك الرجوع إلى الوثائق للحصول على قائمة كاملة.
 
 ### كيف يمكنني اكتشاف المستندات المشفرة باستخدام Aspose.Words لـ Java؟
 
  يمكنك استخدام`FileFormatUtil.detectFileFormat()` طريقة للكشف عن المستندات المشفرة، كما هو موضح في هذا الدليل.
 
-### هل هناك أي قيود عند العمل مع تنسيقات المستندات القديمة؟
+### هل هناك أية قيود عند العمل مع تنسيقات المستندات القديمة؟
 
-قد تحتوي تنسيقات المستندات القديمة، مثل MS Word 6 أو Word 95، على قيود من حيث الميزات والتوافق مع التطبيقات الحديثة. فكر في ترقية هذه المستندات أو تحويلها عند الضرورة.
+قد تكون تنسيقات المستندات القديمة، مثل MS Word 6 أو Word 95، محدودة من حيث الميزات والتوافق مع التطبيقات الحديثة. فكر في ترقية أو تحويل هذه المستندات عند الضرورة.
 
 ### هل يمكنني أتمتة اكتشاف تنسيق المستند في تطبيق Java الخاص بي؟
 
-نعم، يمكنك أتمتة الكشف عن تنسيق المستند عن طريق دمج الكود المقدم في تطبيق Java الخاص بك. يتيح لك هذا معالجة المستندات بناءً على تنسيقاتها المكتشفة.
+نعم، يمكنك أتمتة اكتشاف تنسيق المستند من خلال دمج الكود المقدم في تطبيق Java الخاص بك. يتيح لك هذا معالجة المستندات استنادًا إلى التنسيقات التي تم اكتشافها.

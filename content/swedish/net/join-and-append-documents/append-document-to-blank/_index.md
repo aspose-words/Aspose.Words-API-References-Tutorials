@@ -122,7 +122,7 @@ Ja, du kan lägga till flera dokument genom att upprepade gånger ringa till`App
 
 ### Vad händer om källdokumentet har en annan formatering?
 
- De`ImportFormatMode.KeepSourceFormatting` säkerställer att källdokumentets formatering bevaras när det läggs till.
+De`ImportFormatMode.KeepSourceFormatting` säkerställer att källdokumentets formatering bevaras när det läggs till.
 
 ### Behöver jag en licens för att använda Aspose.Words?
 

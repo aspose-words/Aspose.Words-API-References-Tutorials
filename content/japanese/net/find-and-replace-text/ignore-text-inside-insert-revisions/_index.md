@@ -92,4 +92,4 @@ Aspose.Words for .NET を使用して、挿入リビジョン内のテキスト�
 訪問する[Aspose.Words for .NET ドキュメント](https://reference.aspose.com/words/net/)詳細なガイドと API リファレンスについては、こちらをご覧ください。
 
 ### Aspose.Words for .NET 関連のクエリを議論するためのコミュニティ フォーラムはありますか?
-はい、訪問することができます[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)コミュニティのサポートとディスカッションのため。
+はい、訪問できます[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)コミュニティのサポートとディスカッションのため。

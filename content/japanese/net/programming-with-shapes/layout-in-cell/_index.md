@@ -9,7 +9,7 @@ url: /ja/net/programming-with-shapes/layout-in-cell/
 ---
 ## 導入
 
-Word 文書の表セルのレイアウトをプログラムで微調整したいと思ったことがあるなら、ここが最適な場所です。今日は、Aspose.Words for .NET を使用してセルのレイアウトを設定する方法について詳しく説明します。実用的な例を段階的に説明していくので、簡単に理解できます。
+Word 文書の表のセルのレイアウトをプログラムで微調整したいと思ったことがあるなら、ここが最適な場所です。今日は、Aspose.Words for .NET を使用してセルのレイアウトを設定する方法について詳しく説明します。実用的な例を段階的に説明していくので、簡単に理解できます。
 
 ## 前提条件
 
@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して、カスタマイズされたテーブル レイアウトの Word 文書を作成し、透かしを追加しました。このチュートリアルの目的は、プロセスの各部分を理解できるように、わかりやすいステップ バイ ステップ ガイドを提供することです。これらのスキルを身に付ければ、より洗練されたカスタマイズされた Word 文書をプログラムで作成できるようになります。
+これで完了です。Aspose.Words for .NET を使用して、カスタマイズされたテーブル レイアウトの Word 文書を作成し、透かしを追加しました。このチュートリアルの目的は、プロセスの各部分を理解できるように、わかりやすいステップ バイ ステップ ガイドを提供することです。これらのスキルがあれば、より洗練されたカスタマイズされた Word 文書をプログラムで作成できます。
 
 ## よくある質問
 
@@ -138,7 +138,7 @@ doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 変更することができます`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` 、 そして`VerticalAlignment`透かしの位置を調整するためのプロパティ。
 
 ### 透かしにテキストの代わりに画像を使用することは可能ですか?
-もちろんです！`Shape`タイプ`ShapeType.Image`そして、そのイメージを`ImageData.SetImage`方法。
+もちろんです！`Shape`タイプ`ShapeType.Image`そしてそのイメージを`ImageData.SetImage`方法。
 
 ### 行の高さが異なる表を作成できますか?
 はい、各行に異なる高さを設定するには、`RowFormat.Height`その行にセルを挿入する前に、プロパティを設定します。

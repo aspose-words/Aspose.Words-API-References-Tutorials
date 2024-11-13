@@ -1,29 +1,29 @@
 ---
-title: Usando dados XML em Aspose.Words para Java
+title: Usando dados XML no Aspose.Words para Java
 linktitle: Usando dados XML
 second_title: API de processamento de documentos Java Aspose.Words
-description: Desbloqueie o poder do Aspose.Words para Java. Aprenda manipulação de dados XML, mala direta e sintaxe de bigode com tutoriais passo a passo.
+description: Desbloqueie o poder do Aspose.Words para Java. Aprenda manipulação de dados XML, mala direta e sintaxe Mustache com tutoriais passo a passo.
 type: docs
 weight: 12
 url: /pt/java/document-manipulation/using-xml-data/
 ---
 
-## Introdução ao uso de dados XML em Aspose.Words para Java
+## Introdução ao uso de dados XML no Aspose.Words para Java
 
-Neste guia, exploraremos como trabalhar com dados XML usando Aspose.Words for Java. Você aprenderá como realizar operações de mala direta, incluindo malas diretas aninhadas, e utilizar a sintaxe Moustache com um DataSet. Forneceremos instruções passo a passo e exemplos de código-fonte para ajudá-lo a começar.
+Neste guia, exploraremos como trabalhar com dados XML usando Aspose.Words para Java. Você aprenderá como executar operações de mala direta, incluindo mala direta aninhadas, e utilizar a sintaxe Mustache com um DataSet. Forneceremos instruções passo a passo e exemplos de código-fonte para ajudar você a começar.
 
 ## Pré-requisitos
 
-Antes de começarmos, certifique-se de ter os seguintes pré-requisitos em vigor:
+Antes de começar, certifique-se de que você tenha os seguintes pré-requisitos:
 - [Aspose.Words para Java](https://products.aspose.com/words/java/) instalado.
-- Exemplos de arquivos de dados XML para clientes, pedidos e fornecedores.
+- Arquivos de dados XML de exemplo para clientes, pedidos e fornecedores.
 - Exemplos de documentos do Word para destinos de mala direta.
 
 ## Mala direta com dados XML
 
 ### 1. Mala direta básica
 
-Para realizar uma mala direta básica com dados XML, siga estas etapas:
+Para executar uma mala direta básica com dados XML, siga estas etapas:
 
 ```java
 DataSet customersDs = new DataSet();
@@ -35,7 +35,7 @@ doc.save("Your Directory Path" + "BasicMailMerge.docx");
 
 ### 2. Mala direta aninhada
 
-Para malas diretas aninhadas, use o seguinte código:
+Para mala direta aninhadas, use o seguinte código:
 
 ```java
 DataSet pizzaDs = new DataSet();
@@ -46,9 +46,9 @@ doc.getMailMerge().executeWithRegions(pizzaDs);
 doc.save("Your Directory Path" + "NestedMailMerge.docx");
 ```
 
-## Sintaxe do bigode usando DataSet
+## Sintaxe do Mustache usando DataSet
 
-Para aproveitar a sintaxe do Moustache com um DataSet, siga estas etapas:
+Para aproveitar a sintaxe Mustache com um DataSet, siga estas etapas:
 
 ```java
 DataSet ds = new DataSet();
@@ -61,7 +61,7 @@ doc.save("Your Directory Path" + "MustacheSyntaxUsingDataSet.docx");
 
 ## Conclusão
 
-Neste guia abrangente, exploramos como usar dados XML de maneira eficaz com Aspose.Words for Java. Você aprendeu como executar várias operações de mala direta, incluindo mala direta básica, mala direta aninhada e como utilizar a sintaxe Moustache com um DataSet. Essas técnicas permitem automatizar a geração e personalização de documentos com facilidade.
+Neste guia abrangente, exploramos como usar efetivamente dados XML com Aspose.Words para Java. Você aprendeu como executar várias operações de mala direta, incluindo mala direta básica, mala direta aninhada e como utilizar a sintaxe Mustache com um DataSet. Essas técnicas permitem que você automatize a geração e a personalização de documentos com facilidade.
 
 ## Perguntas frequentes
 
@@ -71,8 +71,8 @@ Certifique-se de que seus dados XML sigam a estrutura necessária, com tabelas e
 
 ### Posso personalizar o comportamento de corte para valores de mala direta?
 
- Sim, você pode controlar se os espaços em branco iniciais e finais são cortados durante a mala direta usando`doc.getMailMerge().setTrimWhitespaces(false)`.
+ Sim, você pode controlar se os espaços em branco iniciais e finais são aparados durante a mala direta usando`doc.getMailMerge().setTrimWhitespaces(false)`.
 
-### Qual é a sintaxe do Moustache e quando devo usá-la?
+### O que é a sintaxe Mustache e quando devo usá-la?
 
- A sintaxe do Moustache permite formatar campos de mala direta de uma forma mais flexível. Usar`doc.getMailMerge().setUseNonMergeFields(true)` para ativar a sintaxe do bigode.
+ A sintaxe Mustache permite que você formate campos de mala direta de uma forma mais flexível. Use`doc.getMailMerge().setUseNonMergeFields(true)` para habilitar a sintaxe Mustache.

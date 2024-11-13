@@ -1,6 +1,6 @@
 ---
-title: Words Processing with Docsaveoptions
-linktitle: Words Processing with Docsaveoptions
+title: Words Processing with DocSaveOptions
+linktitle: Words Processing with DocSaveOptions
 second_title: Aspose.Words Document Processing API
 description: Learn how to customize saving options for Word documents using Aspose.Words for .NET. The tutorials walk you through the various options available, such as file format, compression, password protection.
 type: docs

@@ -23,7 +23,7 @@ Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfü
 
 ### 1. Einfacher Serienbrief
 
-Um einen einfachen Serienbrief mit XML-Daten durchzuführen, führen Sie die folgenden Schritte aus:
+Um einen einfachen Serienbrief mit XML-Daten durchzuführen, gehen Sie folgendermaßen vor:
 
 ```java
 DataSet customersDs = new DataSet();

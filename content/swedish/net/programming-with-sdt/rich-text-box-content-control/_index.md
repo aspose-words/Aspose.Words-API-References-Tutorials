@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Skapa ett nytt dokument
 
- Skapa en ny`Document` objekt, som kommer att fungera som grunden för ditt Word-dokument.
+Skapa en ny`Document` objekt, som kommer att fungera som grunden för ditt Word-dokument.
 
 ```csharp
 Document doc = new Document();
@@ -66,7 +66,7 @@ StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichT
 
  Här,`SdtType.RichText` anger att SDT kommer att vara en Rich Text Box, och`MarkupLevel.Block` definierar dess beteende i dokumentet.
 
-## Steg 4: Lägg till innehåll i Rich Text-rutan
+## Steg 4: Lägg till innehåll i Rich Text Box
 
  Skapa en`Paragraph` och a`Run` objekt för att hålla innehållet du vill visa i Rich Text Box. Anpassa texten och formateringen efter behov.
 

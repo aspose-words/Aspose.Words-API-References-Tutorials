@@ -79,7 +79,7 @@ Directory.CreateDirectory(imagesDir);
 
 ## 步骤 4：配置保存选项
 
-奇迹就在这里发生。我们需要设置保存选项，将文本输入表单字段导出为纯文本。
+奇迹就在这里发生。我们需要设置保存选项，以将文本输入表单字段导出为纯文本。
 
 1. 创建保存选项：初始化一个新的`HtmlSaveOptions`目的。
 2. 设置导出文本选项：配置`ExportTextInputFormFieldAsText`财产`true`.

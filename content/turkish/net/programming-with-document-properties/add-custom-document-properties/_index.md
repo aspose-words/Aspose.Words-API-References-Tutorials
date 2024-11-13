@@ -9,124 +9,124 @@ url: /tr/net/programming-with-document-properties/add-custom-document-properties
 ---
 ## giriiş
 
-Selam! Aspose.Words for .NET dünyasına dalıyor ve Word dosyalarınıza özel belge özelliklerini nasıl ekleyeceğinizi merak mı ediyorsunuz? Peki, doğru yere geldiniz! Özel özellikler, yerleşik özelliklerin kapsamadığı ek meta verileri depolamak için son derece yararlı olabilir. İster bir belgeyi yetkilendirmek, ister revizyon numarası eklemek, hatta belirli tarihleri eklemek olsun, özel özellikler ihtiyacınızı karşılar. Bu eğitimde, Aspose.Words for .NET'i kullanarak bu özellikleri sorunsuz bir şekilde ekleme adımlarında size yol göstereceğiz. Başlamaya hazır mısınız? Hadi dalalım!
+Merhaba! Aspose.Words for .NET dünyasına mı dalıyorsunuz ve Word dosyalarınıza özel belge özelliklerinin nasıl ekleneceğini mi merak ediyorsunuz? Doğru yerdesiniz! Özel özellikler, yerleşik özellikler tarafından kapsanmayan ek meta verileri depolamak için inanılmaz derecede yararlı olabilir. Bir belgeyi yetkilendirmek, bir revizyon numarası eklemek veya hatta belirli tarihler eklemek olsun, özel özellikler sizi korur. Bu eğitimde, Aspose.Words for .NET kullanarak bu özellikleri sorunsuz bir şekilde eklemek için gereken adımları size göstereceğiz. Başlamaya hazır mısınız? Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
 Koda geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET Kütüphanesi: Aspose.Words for .NET kütüphanesine sahip olduğunuzdan emin olun. İndirebilirsin[Burada](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Kütüphanesi: Aspose.Words for .NET kütüphanesine sahip olduğunuzdan emin olun. İndirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio benzeri bir IDE.
-3. Temel C# Bilgisi: Bu eğitimde, C# ve .NET hakkında temel bilgiye sahip olduğunuz varsayılmaktadır.
-4.  Örnek Belge: Adlandırılmış örnek bir Word belgesini hazır bulundurun.`Properties.docx`, değiştireceğiniz.
+3. Temel C# Bilgisi: Bu eğitimde C# ve .NET hakkında temel bir anlayışa sahip olduğunuzu varsayıyoruz.
+4.  Örnek Belge: Örnek bir Word belgesi hazırlayın, adlandırın`Properties.docx`, bunu değiştireceksiniz.
 
 ## Ad Alanlarını İçe Aktar
 
-Kodlamaya başlamadan önce gerekli ad alanlarını içe aktarmamız gerekiyor. Bu, kodunuzun Aspose.Words tarafından sağlanan tüm işlevlere erişebilmesini sağlamak için çok önemli bir adımdır.
+Kodlamaya başlamadan önce gerekli ad alanlarını içe aktarmamız gerekir. Bu, kodunuzun Aspose.Words tarafından sağlanan tüm işlevlere erişebildiğinden emin olmak için önemli bir adımdır.
 
 ```csharp
 using System;
 using Aspose.Words;
 ```
 
-## 1. Adım: Belge Yolunu Ayarlama
+## Adım 1: Belge Yolunu Ayarlama
 
- Öncelikle belgemizin yolunu ayarlamamız gerekiyor. Burası bizim konumumuzu belirleyeceğimiz yer`Properties.docx` dosya.
+ İlk önce, belgemize giden yolu ayarlamamız gerekiyor. Burada belgemizin konumunu belirleyeceğiz.`Properties.docx` dosya.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
- Bu kod parçasında değiştirin`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolu ile. Bu adım, programın Word dosyanızı bulmasına ve açmasına izin verdiği için çok önemlidir.
+ Bu kod parçacığında şunu değiştirin:`"YOUR DOCUMENT DIRECTORY"` Belgenizin gerçek yolu ile. Bu adım, programın Word dosyanızı bulmasını ve açmasını sağladığı için önemlidir.
 
 ## Adım 2: Özel Belge Özelliklerine Erişim
 
-Daha sonra Word belgesinin özel belge özelliklerine erişelim. Burası tüm özel meta verilerinizin saklanacağı yerdir.
+Ardından, Word belgesinin özel belge özelliklerine erişelim. Tüm özel meta verilerinizin saklanacağı yer burasıdır.
 
 ```csharp
 CustomDocumentProperties customDocumentProperties = doc.CustomDocumentProperties;
 ```
 
-Bunu yaparak, sonraki adımlarda üzerinde çalışacağımız özel özellikler koleksiyonunu ele alacağız.
+Bunu yaparak, sonraki adımlarda üzerinde çalışacağımız özel özellik koleksiyonunu ele geçirmiş oluruz.
 
-## 3. Adım: Mevcut Özellikleri Kontrol Etme
+## Adım 3: Mevcut Özellikleri Kontrol Etme
 
-Yeni özellikler eklemeden önce belirli bir özelliğin zaten mevcut olup olmadığını kontrol etmek iyi bir fikirdir. Bu, gereksiz kopyaların önlenmesini sağlar.
+Yeni özellikler eklemeden önce, belirli bir özelliğin zaten mevcut olup olmadığını kontrol etmek iyi bir fikirdir. Bu, gereksiz çoğaltmayı önler.
 
 ```csharp
 if (customDocumentProperties["Authorized"] != null) return;
 ```
 
-Bu satır, "Yetkili" özelliğinin zaten mevcut olup olmadığını kontrol eder. Böyle bir durumda program, yinelenen özelliklerin eklenmesini önlemek için yöntemden erken çıkacaktır.
+Bu satır "Authorized" özelliğinin zaten mevcut olup olmadığını kontrol eder. Eğer mevcutsa, program yinelenen özelliklerin eklenmesini önlemek için yöntemden erken çıkar.
 
 ## Adım 4: Boole Özelliği Ekleme
 
-Şimdi ilk özel özelliğimizi (belgenin yetkili olup olmadığını belirten bir boole değeri) ekleyelim.
+Şimdi, belgenin yetkili olup olmadığını gösteren bir Boole değeri olan ilk özel özelliğimizi ekleyelim.
 
 ```csharp
 customDocumentProperties.Add("Authorized", true);
 ```
 
- Bu satır, değeriyle "Yetkili" adlı özel bir özellik ekler`true`. Basit ve anlaşılır!
+ Bu satır, "Yetkili" adlı özel bir özellik ekler ve değeri:`true`. Basit ve anlaşılır!
 
-## Adım 5: Dize Özelliği Ekleme
+## Adım 5: Bir Dize Özelliği Ekleme
 
-Daha sonra, belgeye kimin yetki verdiğini belirtmek için başka bir özel özellik ekleyeceğiz.
+Daha sonra, belgeyi kimin yetkilendirdiğini belirtmek için başka bir özel özellik ekleyeceğiz.
 
 ```csharp
 customDocumentProperties.Add("Authorized By", "John Smith");
 ```
 
-Burada "John Smith" değerine sahip "Yetkili" adlı bir özellik ekliyoruz. "John Smith"i tercih ettiğiniz başka bir adla değiştirmekten çekinmeyin.
+Burada, "John Smith" değerine sahip "Authorized By" adlı bir özellik ekliyoruz. "John Smith"i istediğiniz başka bir adla değiştirmekten çekinmeyin.
 
 ## Adım 6: Tarih Özelliği Ekleme
 
-Yetkilendirme tarihini saklayacak bir özellik ekleyelim. Bu, belgenin ne zaman yetkilendirildiğini takip etmenize yardımcı olur.
+Yetkilendirme tarihini saklamak için bir özellik ekleyelim. Bu, belgenin ne zaman yetkilendirildiğini takip etmeye yardımcı olur.
 
 ```csharp
 customDocumentProperties.Add("Authorized Date", DateTime.Today);
 ```
 
- Bu kod parçası, değeri geçerli tarih olan "Yetkili Tarih" adlı bir özellik ekler.`DateTime.Today`özellik otomatik olarak bugünün tarihini getirir.
+ Bu kod parçacığı, değeri geçerli tarih olan "Yetkili Tarih" adlı bir özellik ekler.`DateTime.Today`özellik otomatik olarak bugünün tarihini getirir.
 
 ## Adım 7: Revizyon Numarası Ekleme
 
-Belgenin revizyon numarasını takip etmek için bir özellik de ekleyebiliriz. Bu özellikle sürüm kontrolü için kullanışlıdır.
+Ayrıca belgenin revizyon numarasını takip etmek için bir özellik de ekleyebiliriz. Bu özellikle sürüm kontrolü için faydalıdır.
 
 ```csharp
 customDocumentProperties.Add("Authorized Revision", doc.BuiltInDocumentProperties.RevisionNumber);
 ```
 
-Burada "Yetkili Revizyon" adında bir özellik ekliyoruz ve ona belgenin mevcut revizyon numarasını atadık.
+Burada, "Yetkili Revizyon" adlı bir özellik ekliyoruz ve buna belgenin geçerli revizyon numarasını atıyoruz.
 
-## Adım 8: Sayısal Özellik Ekleme
+## Adım 8: Sayısal Bir Özellik Ekleme
 
-Son olarak yetkilendirilmiş bir tutarı depolamak için sayısal bir özellik ekleyelim. Bu, bütçe rakamından işlem tutarına kadar herhangi bir şey olabilir.
+Son olarak, yetkili bir miktarı depolamak için sayısal bir özellik ekleyelim. Bu, bir bütçe rakamından bir işlem miktarına kadar her şey olabilir.
 
 ```csharp
 customDocumentProperties.Add("Authorized Amount", 123.45);
 ```
 
- Bu satır, "Yetkili Tutar" adında, değeri olan bir özellik ekler.`123.45`. Tekrar ediyorum, bunu ihtiyaçlarınıza uygun herhangi bir sayıyla değiştirmekten çekinmeyin.
+ Bu satır, "Yetkili Tutar" adlı bir özelliği, değeri olan bir değerle ekler`123.45`Tekrar ediyorum, bunu ihtiyaçlarınıza uygun herhangi bir sayıyla değiştirmekten çekinmeyin.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak özel belge özelliklerini bir Word belgesine başarıyla eklediniz. Bu özellikler, ihtiyaçlarınıza özel ek meta verileri depolamak için inanılmaz derecede faydalı olabilir. Yetki ayrıntılarını, revizyon numaralarını veya belirli tutarları izliyor olsanız da, özel özellikler esnek bir çözüm sunar.
+İşte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesine özel belge özelliklerini başarıyla eklediniz. Bu özellikler, ihtiyaçlarınıza özgü ek meta verileri depolamak için inanılmaz derecede faydalı olabilir. Yetkilendirme ayrıntılarını, revizyon numaralarını veya belirli miktarları takip ediyor olun, özel özellikler esnek bir çözüm sunar.
 
-Aspose.Words for .NET'te uzmanlaşmanın anahtarının pratik olduğunu unutmayın. Bu nedenle, farklı özellikleri denemeye devam edin ve belgelerinizi nasıl geliştirebileceklerini görün. Mutlu kodlama!
+Unutmayın, Aspose.Words for .NET'te ustalaşmanın anahtarı pratiktir. Bu yüzden farklı özelliklerle denemeler yapmaya devam edin ve bunların belgelerinizi nasıl geliştirebileceğini görün. İyi kodlamalar!
 
-## SSS'ler
+## SSS
 
 ### Özel belge özellikleri nelerdir?
-Özel belge özellikleri, yerleşik özelliklerin kapsamadığı ek bilgileri depolamak için bir Word belgesine ekleyebileceğiniz meta verilerdir.
+Özel belge özellikleri, yerleşik özellikler tarafından kapsanmayan ek bilgileri depolamak için bir Word belgesine ekleyebileceğiniz meta verilerdir.
 
 ### Dizeler ve sayılar dışında özellikler ekleyebilir miyim?
-Evet, boolean, date ve hatta özel nesneler dahil olmak üzere çeşitli türde özellikler ekleyebilirsiniz.
+Evet, Boolean, tarih ve hatta özel nesneler de dahil olmak üzere çeşitli türde özellikler ekleyebilirsiniz.
 
-### Bu özelliklere bir Word belgesinde nasıl erişebilirim?
-Özel özelliklere Aspose.Words kullanılarak programlı olarak erişilebilir veya belge özellikleri aracılığıyla doğrudan Word'de görüntülenebilir.
+### Bu özelliklere Word belgesinde nasıl erişebilirim?
+Özel özelliklere Aspose.Words kullanılarak program aracılığıyla erişilebilir veya doğrudan Word'de belge özellikleri aracılığıyla görüntülenebilir.
 
 ### Özel özellikleri düzenlemek veya silmek mümkün mü?
 Evet, Aspose.Words tarafından sağlanan benzer yöntemleri kullanarak özel özellikleri kolayca düzenleyebilir veya silebilirsiniz.

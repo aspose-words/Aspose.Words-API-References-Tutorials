@@ -2,26 +2,26 @@
 title: Menggunakan Data XML di Aspose.Words untuk Java
 linktitle: Menggunakan Data XML
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Buka Kekuatan Aspose.Words untuk Java. Pelajari Penanganan Data XML, Penggabungan Surat, dan Sintaks Kumis dengan Tutorial Langkah demi Langkah.
+description: Buka Kekuatan Aspose.Words untuk Java. Pelajari Penanganan Data XML, Mail Merge, dan Sintaks Mustache dengan Tutorial Langkah demi Langkah.
 type: docs
 weight: 12
 url: /id/java/document-manipulation/using-xml-data/
 ---
 
-## Pengantar Menggunakan Data XML di Aspose.Words untuk Java
+## Pengantar Penggunaan Data XML di Aspose.Words untuk Java
 
-Dalam panduan ini, kita akan mempelajari cara bekerja dengan data XML menggunakan Aspose.Words untuk Java. Anda akan mempelajari cara melakukan operasi gabungan surat, termasuk gabungan surat bertingkat, dan memanfaatkan sintaksis Moustache dengan DataSet. Kami akan memberikan petunjuk langkah demi langkah dan contoh kode sumber untuk membantu Anda memulai.
+Dalam panduan ini, kita akan mempelajari cara bekerja dengan data XML menggunakan Aspose.Words untuk Java. Anda akan mempelajari cara melakukan operasi gabungan surat, termasuk gabungan surat bersarang, dan memanfaatkan sintaks Mustache dengan DataSet. Kami akan memberikan petunjuk langkah demi langkah dan contoh kode sumber untuk membantu Anda memulai.
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
-- [Aspose.Kata-kata untuk Java](https://products.aspose.com/words/java/) dipasang.
+- [Aspose.Words untuk Java](https://products.aspose.com/words/java/) terpasang.
 - Contoh file data XML untuk pelanggan, pesanan, dan vendor.
 - Contoh dokumen Word untuk tujuan gabungan surat.
 
 ## Gabungan Surat dengan Data XML
 
-### 1. Penggabungan Surat Dasar
+### 1. Gabungan Surat Dasar
 
 Untuk melakukan gabungan surat dasar dengan data XML, ikuti langkah-langkah berikut:
 
@@ -33,9 +33,9 @@ doc.getMailMerge().execute(customersDs.getTables().get("Customer"));
 doc.save("Your Directory Path" + "BasicMailMerge.docx");
 ```
 
-### 2. Gabungan Surat Bersarang
+### 2. Gabungan Surat Bertingkat
 
-Untuk gabungan surat bertingkat, gunakan kode berikut:
+Untuk gabungan surat bersarang, gunakan kode berikut:
 
 ```java
 DataSet pizzaDs = new DataSet();
@@ -46,9 +46,9 @@ doc.getMailMerge().executeWithRegions(pizzaDs);
 doc.save("Your Directory Path" + "NestedMailMerge.docx");
 ```
 
-## Sintaks Kumis Menggunakan DataSet
+## Sintaksis Kumis Menggunakan DataSet
 
-Untuk memanfaatkan sintaksis Moustache dengan DataSet, ikuti langkah-langkah berikut:
+Untuk memanfaatkan sintaks Mustache dengan DataSet, ikuti langkah-langkah berikut:
 
 ```java
 DataSet ds = new DataSet();
@@ -61,18 +61,18 @@ doc.save("Your Directory Path" + "MustacheSyntaxUsingDataSet.docx");
 
 ## Kesimpulan
 
-Dalam panduan komprehensif ini, kami telah menjelajahi cara efektif menggunakan data XML dengan Aspose.Words untuk Java. Anda telah mempelajari cara melakukan berbagai operasi gabungan surat, termasuk gabungan surat dasar, gabungan surat bertingkat, dan cara menggunakan sintaksis Moustache dengan DataSet. Teknik-teknik ini memberdayakan Anda untuk mengotomatiskan pembuatan dan penyesuaian dokumen dengan mudah.
+Dalam panduan lengkap ini, kami telah menjajaki cara menggunakan data XML secara efektif dengan Aspose.Words untuk Java. Anda telah mempelajari cara melakukan berbagai operasi gabungan surat, termasuk gabungan surat dasar, gabungan surat bertingkat, dan cara memanfaatkan sintaks Mustache dengan DataSet. Teknik-teknik ini memberdayakan Anda untuk mengotomatiskan pembuatan dan penyesuaian dokumen dengan mudah.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara menyiapkan data XML untuk gabungan surat?
+### Bagaimana saya dapat menyiapkan data XML saya untuk gabungan surat?
 
-Pastikan data XML Anda mengikuti struktur yang diperlukan, dengan tabel dan hubungan yang ditentukan, seperti yang ditunjukkan dalam contoh yang diberikan.
+Pastikan data XML Anda mengikuti struktur yang diperlukan, dengan tabel dan hubungan yang ditentukan, seperti yang ditunjukkan pada contoh yang diberikan.
 
-### Bisakah saya menyesuaikan perilaku trim untuk nilai gabungan surat?
+### Dapatkah saya menyesuaikan perilaku pemangkasan untuk nilai gabungan surat?
 
- Ya, Anda dapat mengontrol apakah spasi putih di depan dan di belakang dipangkas selama penggabungan surat dengan menggunakan`doc.getMailMerge().setTrimWhitespaces(false)`.
+ Ya, Anda dapat mengontrol apakah spasi awal dan akhir akan dipangkas selama penggabungan surat dengan menggunakan`doc.getMailMerge().setTrimWhitespaces(false)`.
 
-### Apa sintaksis Moustache, dan kapan saya harus menggunakannya?
+### Apa sintaksis Mustache, dan kapan saya harus menggunakannya?
 
- Sintaks Moustache memungkinkan Anda memformat bidang gabungan surat dengan cara yang lebih fleksibel. Menggunakan`doc.getMailMerge().setUseNonMergeFields(true)` untuk mengaktifkan sintaksis Kumis.
+ Sintaks Mustache memungkinkan Anda memformat bidang gabungan surat dengan cara yang lebih fleksibel. Gunakan`doc.getMailMerge().setUseNonMergeFields(true)` untuk mengaktifkan sintaks Mustache.

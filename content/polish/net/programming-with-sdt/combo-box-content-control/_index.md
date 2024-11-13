@@ -1,50 +1,50 @@
 ---
 title: Kontrola zawartości pola kombi
 linktitle: Kontrola zawartości pola kombi
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Utwórz kontrolę zawartości pola kombi w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z naszego szczegółowego samouczka. Idealny do zwiększania interaktywności dokumentu.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Utwórz kontrolkę zawartości pola kombi w dokumentach Worda za pomocą Aspose.Words dla .NET z naszym szczegółowym samouczkiem. Idealne do zwiększenia interaktywności dokumentu.
 type: docs
 weight: 10
 url: /pl/net/programming-with-sdt/combo-box-content-control/
 ---
 ## Wstęp
 
-Czy chcesz dodać interaktywne elementy do swoich dokumentów Word? Cóż, trafiłeś we właściwe miejsce! W tym przewodniku przeprowadzimy Cię przez proces tworzenia kontrolki zawartości pola kombi w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Pod koniec tego samouczka będziesz już dobrze wiedział, jak wstawiać kontrolki zawartości pól kombi i manipulować nimi, dzięki czemu Twoje dokumenty będą bardziej dynamiczne i przyjazne dla użytkownika.
+Chcesz dodać interaktywne elementy do swoich dokumentów Word? Cóż, trafiłeś we właściwe miejsce! W tym przewodniku przeprowadzimy Cię przez proces tworzenia kontrolki zawartości pola kombi w dokumencie Word przy użyciu Aspose.Words dla .NET. Pod koniec tego samouczka będziesz mieć solidne pojęcie o tym, jak wstawiać i manipulować kontrolkami zawartości pola kombi, dzięki czemu Twoje dokumenty będą bardziej dynamiczne i przyjazne dla użytkownika.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zagłębimy się w szczegóły kodowania, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną najnowszą wersję. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
-2. .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.
-3. Zintegrowane środowisko programistyczne (IDE): Visual Studio jest zalecane do programowania .NET.
-4. Podstawowa znajomość języka C#: W tym samouczku założono, że masz podstawową wiedzę na temat programowania w języku C#.
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną najnowszą wersję. Możesz ją pobrać[Tutaj](https://releases.aspose.com/words/net/).
+2. .NET Framework: Upewnij się, że na Twoim komputerze jest zainstalowany .NET Framework.
+3. Zintegrowane środowisko programistyczne (IDE): Do tworzenia oprogramowania .NET zaleca się korzystanie z programu Visual Studio.
+4. Podstawowa znajomość języka C#: W tym samouczku zakładamy, że posiadasz podstawową wiedzę na temat programowania w języku C#.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć korzystanie z Aspose.Words w swoim projekcie, musisz zaimportować niezbędne przestrzenie nazw. Oto jak to zrobić:
+Aby rozpocząć używanie Aspose.Words w swoim projekcie, musisz zaimportować niezbędne przestrzenie nazw. Oto, jak to zrobić:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Markup;
 ```
 
-W porządku, przejdźmy do przyjemniejszej części – kodowania! Podzielimy ten proces na łatwe do wykonania kroki.
+No dobrze, przejdźmy do zabawy – kodowania! Podzielimy proces na łatwe do naśladowania kroki.
 
 ## Krok 1: Skonfiguruj swój projekt
 
-Po pierwsze, skonfiguruj nowy projekt w swoim IDE. Oto jak:
+Po pierwsze, skonfiguruj nowy projekt w swoim IDE. Oto jak to zrobić:
 
-- Otwórz Visual Studio.
+- Otwórz program Visual Studio.
 - Utwórz nowy projekt aplikacji konsolowej C#.
-- Zainstaluj pakiet Aspose.Words dla .NET za pomocą Menedżera pakietów NuGet. Można to zrobić, uruchamiając następującą komendę w konsoli Menedżera pakietów:
+- Zainstaluj pakiet Aspose.Words dla .NET za pomocą Menedżera pakietów NuGet. Możesz to zrobić, uruchamiając następujące polecenie w Konsoli Menedżera pakietów:
   ```
   Install-Package Aspose.Words
   ```
 
-## Krok 2: Zainicjuj dokument
+## Krok 2: Zainicjuj swój dokument
 
-W tym kroku zainicjujemy nowy dokument programu Word, do którego dodamy kontrolę zawartości pola kombi.
+W tym kroku zainicjujemy nowy dokument programu Word, w którym dodamy kontrolkę zawartości pola kombi.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -54,9 +54,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## Krok 3: Utwórz kontrolę zawartości pola kombi
+## Krok 3: Utwórz kontrolkę zawartości pola kombi
 
-Teraz utwórzmy kontrolę zawartości pola kombi. Ta kontrolka pozwoli użytkownikom wybierać elementy z predefiniowanej listy.
+Teraz utwórzmy kontrolkę zawartości pola kombi. Ta kontrolka umożliwi użytkownikom wybór z predefiniowanej listy elementów.
 
 ```csharp
 // Utwórz kontrolkę zawartości ComboBox
@@ -65,10 +65,10 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 
 ## Krok 4: Dodaj elementy do pola kombi
 
-Pole kombi nie jest zbyt przydatne bez elementów do wyboru. Dodajmy do tego kilka elementów.
+Pole kombi nie jest zbyt użyteczne bez elementów do wyboru. Dodajmy do niego kilka elementów.
 
 ```csharp
-// Dodaj elementy do ComboBox
+// Dodaj elementy do pola kombi
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
 sdt.ListItems.Add(new SdtListItem("Item 1", "1"));
 sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
@@ -76,7 +76,7 @@ sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
 
 ## Krok 5: Wstaw pole kombi do dokumentu
 
-Następnie musimy wstawić to pole kombi do dokumentu. Dołączymy go do treści pierwszej części naszego dokumentu.
+Następnie musimy wstawić to pole kombi do dokumentu. Dołączymy je do treści pierwszej sekcji naszego dokumentu.
 
 ```csharp
 // Dołącz ComboBox do treści dokumentu
@@ -85,7 +85,7 @@ doc.FirstSection.Body.AppendChild(sdt);
 
 ## Krok 6: Zapisz swój dokument
 
-Na koniec zapiszmy dokument, abyśmy mogli zobaczyć nasze pole kombi w akcji.
+Na koniec zapiszmy dokument, aby zobaczyć nasze pole kombi w akcji.
 
 ```csharp
 // Zapisz dokument
@@ -94,23 +94,23 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 
 ## Wniosek
 
-I masz to! Pomyślnie utworzyłeś kontrolkę zawartości pola kombi w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Wykonując poniższe kroki, możesz dodać interaktywne elementy do swoich dokumentów, zwiększając ich funkcjonalność i komfort użytkowania.
+I masz! Udało Ci się utworzyć kontrolkę zawartości pola kombi w dokumencie Word przy użyciu Aspose.Words dla .NET. Wykonując te kroki, możesz dodać interaktywne elementy do swoich dokumentów, zwiększając ich funkcjonalność i doświadczenie użytkownika.
 
-Możesz eksperymentować z różnymi rodzajami kontroli treści i dostosowywać je do swoich potrzeb. Jeśli masz jakieś pytania lub napotkasz jakiekolwiek problemy, nie wahaj się skontaktować z pomocą techniczną.
+Możesz swobodnie eksperymentować z różnymi typami kontroli treści i dostosowywać je do swoich potrzeb. Jeśli masz jakieś pytania lub napotkasz jakiekolwiek problemy, nie wahaj się skontaktować z pomocą techniczną.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężna biblioteka do programowej pracy z dokumentami programu Word. Umożliwia tworzenie, modyfikowanie, konwertowanie i renderowanie dokumentów programu Word w różnych formatach.
+### Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to potężna biblioteka do programowej pracy z dokumentami Word. Umożliwia tworzenie, modyfikowanie, konwertowanie i renderowanie dokumentów Word w różnych formatach.
 
 ### Czy mogę używać Aspose.Words dla .NET z innymi frameworkami .NET?
-Tak, Aspose.Words dla .NET obsługuje różne platformy .NET, w tym .NET Core i .NET Standard.
+Tak, Aspose.Words for .NET obsługuje różne platformy .NET, w tym .NET Core i .NET Standard.
 
-### Jak mogę uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
+### Jak mogę otrzymać bezpłatną wersję próbną Aspose.Words dla .NET?
  Możesz pobrać bezpłatną wersję próbną Aspose.Words dla .NET[Tutaj](https://releases.aspose.com/).
 
-### Jakie inne typy kontroli treści mogę utworzyć za pomocą Aspose.Words?
-Oprócz pól kombi możesz tworzyć elementy sterujące wprowadzaniem tekstu, pola wyboru, selektory dat i nie tylko.
+### Jakie inne typy kontrolek treści mogę utworzyć za pomocą Aspose.Words?
+Oprócz pól kombi możesz tworzyć kontrolki wprowadzania tekstu, pola wyboru, selektory dat i wiele innych.
 
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację dotyczącą Aspose.Words dla .NET?
- Szczegółową dokumentację znajdziesz na stronie[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/).
+ Aby uzyskać szczegółową dokumentację, odwiedź stronę[Dokumentacja Aspose.Words dla .NET](https://reference.aspose.com/words/net/).

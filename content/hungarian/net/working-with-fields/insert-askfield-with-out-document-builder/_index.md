@@ -49,7 +49,7 @@ Ez a kódrészlet létrehoz egy új Word-dokumentumot, amelyhez hozzáadjuk az A
 A Word-dokumentumban a tartalom csomópontokba rendeződik. El kell érnünk az első bekezdés csomópontját, ahová beillesztjük az ASK mezőt:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 Ez a kódsor lekéri a dokumentum első bekezdését, készen áll az ASK mező beszúrására.
@@ -114,7 +114,7 @@ Az Aspose.Words ASK mezője egy olyan mező, amely a dokumentum megnyitásakor k
 Igen, egy dokumentumba több ASK mezőt is beilleszthet, amelyek mindegyike egyedi kérdésekkel és válaszokkal rendelkezik.
 
 ###  Mi a célja a`PromptOnceOnMailMerge` property?
- A`PromptOnceOnMailMerge` tulajdonság határozza meg, hogy az ASK prompt csak egyszer jelenik-e meg a körlevél-művelet során, vagy minden alkalommal.
+A`PromptOnceOnMailMerge` tulajdonság határozza meg, hogy az ASK prompt csak egyszer jelenik-e meg a körlevél-művelet során, vagy minden alkalommal.
 
 ### Frissítenem kell az ASK mezőt a tulajdonságainak beállítása után?
 Igen, az ASK mező frissítése biztosítja, hogy minden tulajdonság megfelelően kerül alkalmazásra, és a mező a várt módon működik.

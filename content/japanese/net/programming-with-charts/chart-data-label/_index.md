@@ -9,7 +9,7 @@ url: /ja/net/programming-with-charts/chart-data-label/
 ---
 ## 導入
 
-動的でカスタマイズされたドキュメント処理機能を使用して .NET アプリケーションを改良したいとお考えですか? Aspose.Words for .NET がまさにその答えかもしれません。このガイドでは、Word ドキュメントを作成、変更、変換するための強力なライブラリである Aspose.Words for .NET を使用して、グラフのデータ ラベルをカスタマイズする方法について詳しく説明します。熟練した開発者でも、初心者でも、このチュートリアルでは各ステップを順を追って説明し、このツールを効果的に活用する方法を理解できるようにします。
+動的でカスタマイズされたドキュメント処理機能を使用して .NET アプリケーションを改良したいとお考えですか? Aspose.Words for .NET がまさにその答えかもしれません! このガイドでは、Word ドキュメントを作成、変更、変換するための強力なライブラリである Aspose.Words for .NET を使用して、グラフのデータ ラベルをカスタマイズする方法について詳しく説明します。熟練した開発者でも、初心者でも、このチュートリアルでは各ステップを順を追って説明し、このツールを効果的に活用する方法を理解できるようにします。
 
 ## 前提条件
 
@@ -19,7 +19,7 @@ url: /ja/net/programming-with-charts/chart-data-label/
 2. .NET Framework: .NET Framework 4.0 以降がインストールされていることを確認してください。
 3.  Aspose.Words for .NET: Aspose.Words for .NETを以下のサイトからダウンロードしてインストールします。[ダウンロードリンク](https://releases.aspose.com/words/net/).
 4. C# の基礎知識: C# プログラミングに精通していることが必須です。
-5. 有効なライセンス:[一時ライセンス](https://purchase.aspose.com/temporary-license/)または、[購入リンク](https://purchase.aspose.com/buy).
+5. 有効なライセンス：取得[一時ライセンス](https://purchase.aspose.com/temporary-license/)または、[購入リンク](https://purchase.aspose.com/buy).
 
 ## 名前空間のインポート
 

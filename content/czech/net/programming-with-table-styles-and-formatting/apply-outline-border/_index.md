@@ -129,4 +129,4 @@ Díky těmto dovednostem můžete vylepšit vizuální prezentaci vašich tabule
  Absolutně! Můžete použít jakoukoli barvu dostupnou v`System.Drawing.Color` třída.
 
 ### Jak zarovnám stůl vodorovně na střed?  
- The`table.Alignment = TableAlignment.Center;` řádek v kódu vycentruje tabulku vodorovně na stránce.
+The`table.Alignment = TableAlignment.Center;` řádek v kódu vycentruje tabulku vodorovně na stránce.

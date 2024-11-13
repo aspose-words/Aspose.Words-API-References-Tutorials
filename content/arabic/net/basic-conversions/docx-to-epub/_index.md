@@ -1,43 +1,43 @@
 ---
-title: تحويل دوكإكس إلى إيبوب
-linktitle: الحفلة Docx إلى Epub
-second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: قم بتحويل DOCX إلى EPUB بسهولة باستخدام Aspose.Words لـ .NET. اتبع برنامجنا التعليمي للتكامل السلس مع تطبيقات .NET الخاصة بك.
+title: تحويل Docx إلى Epub
+linktitle: تحويل الحفلة إلى صيغة Docx و Epub
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
+description: يمكنك تحويل DOCX إلى EPUB بسهولة باستخدام Aspose.Words for .NET. اتبع البرنامج التعليمي الخاص بنا للتكامل السلس مع تطبيقات .NET الخاصة بك.
 type: docs
 weight: 10
 url: /ar/net/basic-conversions/docx-to-epub/
 ---
 ## مقدمة
 
-في مجال تطوير .NET، يعد التعامل مع مستندات Word بكفاءة أمرًا بالغ الأهمية للعديد من التطبيقات. يوفر Aspose.Words for .NET مجموعة أدوات قوية تعمل على تبسيط مهام معالجة المستندات، بما في ذلك تحويل ملفات DOCX إلى تنسيق EPUB. سيرشدك هذا البرنامج التعليمي خلال الخطوات اللازمة لتحقيق ذلك باستخدام Aspose.Words for .NET.
+في مجال تطوير .NET، يعد التعامل مع مستندات Word بكفاءة أمرًا بالغ الأهمية للعديد من التطبيقات. يوفر Aspose.Words for .NET مجموعة أدوات قوية تبسط مهام معالجة المستندات، بما في ذلك تحويل ملفات DOCX إلى تنسيق EPUB. سيرشدك هذا البرنامج التعليمي خلال الخطوات اللازمة لتحقيق ذلك باستخدام Aspose.Words for .NET.
 
 ## المتطلبات الأساسية
 
-قبل الغوص في عملية التحويل، تأكد من إعداد المتطلبات الأساسية التالية:
-- بيئة التطوير: تم تثبيت Visual Studio أو أي برنامج .NET IDE آخر.
-- Aspose.Words لـ .NET: قم بتنزيل Aspose.Words لـ .NET وتثبيته من[هنا](https://releases.aspose.com/words/net/).
-- ملفات المستندات: اجعل ملف (ملفات) DOCX جاهزة والتي تريد تحويلها إلى EPUB.
+قبل الخوض في عملية التحويل، تأكد من إعداد المتطلبات الأساسية التالية:
+- بيئة التطوير: Visual Studio أو أي .NET IDE آخر مثبت.
+- Aspose.Words for .NET: قم بتنزيل Aspose.Words for .NET وتثبيته من[هنا](https://releases.aspose.com/words/net/).
+- ملفات المستندات: قم بإعداد ملفات DOCX التي تريد تحويلها إلى EPUB.
 
 ## استيراد مساحات الأسماء
 
-ابدأ باستيراد مساحات الأسماء الضرورية في مشروع .NET الخاص بك:
+ابدأ باستيراد المساحات الأساسية اللازمة في مشروع .NET الخاص بك:
 
 ```csharp
 using Aspose.Words;
 ```
 
-## الخطوة 1: قم بتحميل المستند
+## الخطوة 1: تحميل المستند
 
- أولاً، قم بتهيئة Aspose.Words`Document` كائن بمسار ملف DOCX الخاص بك:
+ أولاً، قم بتشغيل Aspose.Words`Document` الكائن مع مسار ملف DOCX الخاص بك:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## الخطوة 2: احفظ بتنسيق EPUB
+## الخطوة 2: الحفظ بتنسيق EPUB
 
-بعد ذلك، احفظ المستند الذي تم تحميله بتنسيق EPUB:
+بعد ذلك، قم بحفظ المستند المحمّل بتنسيق EPUB:
 
 ```csharp
 doc.Save(dataDir + "ConvertedDocument.epub", SaveFormat.Epub);
@@ -45,21 +45,21 @@ doc.Save(dataDir + "ConvertedDocument.epub", SaveFormat.Epub);
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، اكتشفنا كيفية تحويل ملفات DOCX إلى تنسيق EPUB باستخدام Aspose.Words لـ .NET. باتباع هذه الخطوات المباشرة، يمكنك دمج إمكانيات تحويل المستندات بسلاسة في تطبيقات .NET الخاصة بك.
+في هذا البرنامج التعليمي، استكشفنا كيفية تحويل ملفات DOCX إلى تنسيق EPUB باستخدام Aspose.Words for .NET. باتباع هذه الخطوات البسيطة، يمكنك دمج إمكانيات تحويل المستندات بسلاسة في تطبيقات .NET الخاصة بك.
 
 ## الأسئلة الشائعة
 
 ### ما هي التنسيقات التي يدعمها Aspose.Words للتحويل؟
-يدعم Aspose.Words مجموعة واسعة من تنسيقات المستندات، بما في ذلك DOCX وEPUB وPDF وHTML والمزيد.
+يدعم Aspose.Words مجموعة واسعة من تنسيقات المستندات، بما في ذلك DOCX، وEPUB، وPDF، وHTML، والمزيد.
 
 ### هل يمكنني تحويل ملفات DOCX متعددة دفعة واحدة باستخدام Aspose.Words؟
-نعم، يمكنك تحويل ملفات DOCX دفعة واحدة إلى EPUB أو تنسيقات أخرى باستخدام Aspose.Words لـ .NET.
+نعم، يمكنك تحويل ملفات DOCX إلى EPUB أو تنسيقات أخرى دفعة واحدة باستخدام Aspose.Words لـ .NET.
 
 ### هل Aspose.Words متوافق مع .NET Core؟
-نعم، Aspose.Words يدعم بشكل كامل .NET Core و.NET Framework.
+نعم، يدعم Aspose.Words بشكل كامل .NET Core و.NET Framework.
 
-### أين يمكنني العثور على المزيد من الأمثلة والوثائق الخاصة بـ Aspose.Words؟
- قم بزيارة[Aspose.Words لوثائق .NET](https://reference.aspose.com/words/net/) للحصول على أمثلة مفصلة ومرجع API.
+### أين يمكنني العثور على المزيد من الأمثلة والوثائق لـ Aspose.Words؟
+ قم بزيارة[توثيق Aspose.Words لـ .NET](https://reference.aspose.com/words/net/) للحصول على أمثلة مفصلة ومرجع واجهة برمجة التطبيقات.
 
 ### كيف يمكنني الحصول على الدعم للمشكلات المتعلقة بـ Aspose.Words؟
  للحصول على الدعم، قم بزيارة[منتدى Aspose.Words](https://forum.aspose.com/c/words/8) حيث يمكنك طرح الأسئلة والتفاعل مع المجتمع.

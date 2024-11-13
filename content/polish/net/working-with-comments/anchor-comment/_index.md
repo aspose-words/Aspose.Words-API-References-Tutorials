@@ -1,29 +1,29 @@
 ---
 title: Komentarz kotwicy
 linktitle: Komentarz kotwicy
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodawać komentarze zakotwiczone w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby efektywnie współpracować nad dokumentami.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak dodawać komentarze kotwicowe w dokumentach Worda za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby wydajnie współpracować nad dokumentami.
 type: docs
 weight: 10
 url: /pl/net/working-with-comments/anchor-comment/
 ---
 ## Wstęp
 
-Czy kiedykolwiek znalazłeś się w sytuacji, w której musiałeś programowo dodać komentarze do określonych sekcji tekstu w dokumencie programu Word? Wyobraź sobie, że współpracujesz ze swoim zespołem nad dokumentem i musisz wyróżnić pewne fragmenty za pomocą komentarzy, aby inni mogli je przejrzeć. W tym samouczku szczegółowo omówimy, jak wstawiać komentarze zakotwiczone w dokumentach programu Word za pomocą Aspose.Words dla .NET. Podzielimy ten proces na proste kroki, dzięki czemu łatwiej będzie Ci je śledzić i wdrażać w swoich projektach.
+Czy kiedykolwiek znalazłeś się w sytuacji, w której musiałeś programowo dodać komentarze do określonych sekcji tekstu w dokumencie Word? Wyobraź sobie, że współpracujesz nad dokumentem ze swoim zespołem i musisz wyróżnić pewne części komentarzami, aby inni mogli je przejrzeć. W tym samouczku zagłębimy się w sposób wstawiania komentarzy kotwicowych w dokumentach Word za pomocą Aspose.Words dla .NET. Podzielimy proces na proste kroki, dzięki czemu będziesz mógł łatwo śledzić i wdrażać je w swoich projektach.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
--  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne: dowolne środowisko programistyczne .NET, takie jak Visual Studio.
-- Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci łatwo wykonać poniższe kroki.
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: dowolne środowisko programistyczne .NET, np. Visual Studio.
+- Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci z łatwością wykonywać poniższe kroki.
 
-Przyjrzyjmy się teraz przestrzeniom nazw, które będziesz musiał zaimportować w celu wykonania tego zadania.
+Przyjrzyjmy się teraz przestrzeniom nazw, które będziesz musiał zaimportować w ramach tego zadania.
 
 ## Importuj przestrzenie nazw
 
-Na początek upewnij się, że zaimportowałeś niezbędne przestrzenie nazw w swoim projekcie. Oto wymagane przestrzenie nazw:
+Na początek upewnij się, że importujesz niezbędne przestrzenie nazw do swojego projektu. Oto wymagane przestrzenie nazw:
 
 ```csharp
 using System;
@@ -32,28 +32,28 @@ using Aspose.Words.CommentRangeStart;
 using Aspose.Words.CommentRangeEnd;
 ```
 
-Po usunięciu wymagań wstępnych i przestrzeni nazw przejdźmy do przyjemniejszej części: podzielenia procesu krok po kroku.
+Mając już za sobą wymagania wstępne i przestrzenie nazw, możemy przejść do przyjemniejszej części: omówienia procesu krok po kroku.
 
 ## Krok 1: Utwórz nowy dokument
 
-Najpierw utwórzmy nowy dokument Word. Będzie to stanowić kanwę dla naszych komentarzy.
+Najpierw utwórzmy nowy dokument Word. Będzie on służył jako płótno dla naszych komentarzy.
 
 ```csharp
-// Określ katalog, w którym zostanie zapisany dokument
+// Zdefiniuj katalog, w którym zostanie zapisany dokument
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 
 // Utwórz instancję klasy Document
 Document doc = new Document();
 ```
 
- Na tym etapie inicjujemy nowy plik`Document` obiekt, który będzie używany do dodawania naszych komentarzy.
+ W tym kroku inicjujemy nowy`Document` obiekt, który będzie używany do dodawania naszych komentarzy.
 
 ## Krok 2: Dodaj tekst do dokumentu
 
-Następnie dodamy trochę tekstu do dokumentu. Tekst ten będzie przedmiotem naszych komentarzy.
+Następnie dodamy trochę tekstu do dokumentu. Ten tekst będzie celem naszych komentarzy.
 
 ```csharp
-// Utwórz pierwszy akapit i działa
+// Utwórz pierwszy akapit i uruchom
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
 Run run2 = new Run(doc, "text ");
@@ -61,7 +61,7 @@ para1.AppendChild(run1);
 para1.AppendChild(run2);
 doc.FirstSection.Body.AppendChild(para1);
 
-// Utwórz drugi akapit i działa
+// Utwórz drugi akapit i uruchom
 Paragraph para2 = new Paragraph(doc);
 Run run3 = new Run(doc, "is ");
 Run run4 = new Run(doc, "added ");
@@ -70,31 +70,30 @@ para2.AppendChild(run4);
 doc.FirstSection.Body.AppendChild(para2);
 ```
 
- Tutaj tworzymy dwa akapity z jakimś tekstem. Każdy fragment tekstu jest zamknięty w formacie A`Run` obiekt, który następnie jest dodawany do akapitów.
+ Tutaj tworzymy dwa akapity z tekstem. Każdy fragment tekstu jest zamknięty w`Run` obiekt, który następnie jest dodawany do akapitów.
 
 ## Krok 3: Utwórz komentarz
 
-Stwórzmy teraz komentarz, który dołączymy do naszego tekstu.
+Teraz utwórzmy komentarz, który dodamy do naszego tekstu.
 
 ```csharp
 // Utwórz nowy komentarz
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+comment.SetText("Comment text.");
 ```
 
- Na tym etapie tworzymy plik`Comment` obiekt i dodaj akapit oraz przebieg z tekstem komentarza.
+ W tym kroku tworzymy`Comment` obiekt i dodaj akapit oraz ciąg z tekstem komentarza.
 
-## Krok 4: Zdefiniuj zakres komentarza
+## Krok 4: Zdefiniuj zakres komentarzy
 
-Aby zakotwiczyć komentarz w konkretnym tekście, musimy zdefiniować początek i koniec zakresu komentarza.
+Aby zakotwiczyć komentarz w określonym tekście, musimy zdefiniować początek i koniec zakresu komentarza.
 
 ```csharp
 // Zdefiniuj CommentRangeStart i CommentRangeEnd
 CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
 CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
 
-// Wstaw elementy CommentRangeStart i CommentRangeEnd do dokumentu
+// Wstaw CommentRangeStart i CommentRangeEnd do dokumentu
 run1.ParentNode.InsertAfter(commentRangeStart, run1);
 run3.ParentNode.InsertAfter(commentRangeEnd, run3);
 
@@ -102,11 +101,11 @@ run3.ParentNode.InsertAfter(commentRangeEnd, run3);
 commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
- Tutaj tworzymy`CommentRangeStart`I`CommentRangeEnd` obiekty, łącząc je z komentarzem za pomocą jego identyfikatora. Następnie wstawiamy te zakresy do dokumentu, skutecznie zakotwiczając nasz komentarz do określonego tekstu.
+ Tutaj tworzymy`CommentRangeStart` I`CommentRangeEnd` obiektów, łącząc je z komentarzem poprzez jego ID. Następnie wstawiamy te zakresy do dokumentu, skutecznie zakotwiczając nasz komentarz do określonego tekstu.
 
 ## Krok 5: Zapisz dokument
 
-Na koniec zapiszmy nasz dokument we wskazanym katalogu.
+Na koniec zapiszmy nasz dokument w podanym katalogu.
 
 ```csharp
 // Zapisz dokument
@@ -117,21 +116,21 @@ Ten krok powoduje zapisanie dokumentu z zakotwiczonym komentarzem w określonym 
 
 ## Wniosek
 
-I masz to! Pomyślnie nauczyłeś się, jak dodawać komentarze zakotwiczone do określonych sekcji tekstu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Technika ta jest niezwykle przydatna we współpracy nad dokumentami, umożliwiając łatwe wyróżnianie i komentowanie określonych części tekstu. Niezależnie od tego, czy pracujesz nad projektem ze swoim zespołem, czy przeglądasz dokumenty, ta metoda zwiększy Twoją produktywność i usprawni przepływ pracy.
+I masz to! Udało Ci się nauczyć, jak dodawać komentarze kotwiczące do określonych sekcji tekstu w dokumencie Word za pomocą Aspose.Words dla .NET. Ta technika jest niezwykle przydatna do współpracy nad dokumentami, umożliwiając łatwe wyróżnianie i komentowanie określonych części tekstu. Niezależnie od tego, czy pracujesz nad projektem ze swoim zespołem, czy przeglądasz dokumenty, ta metoda zwiększy Twoją produktywność i usprawni Twój przepływ pracy.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jaki jest cel używania komentarzy zakotwiczeń w dokumentach programu Word?
-Komentarze zakotwiczone służą do wyróżniania i komentowania określonych sekcji tekstu, co ułatwia przekazywanie opinii i współpracę nad dokumentami.
+### Jaki jest cel stosowania komentarzy kotwicowych w dokumentach Word?
+Komentarze kotwiczące służą do wyróżniania i komentowania określonych fragmentów tekstu, co ułatwia przekazywanie opinii i współpracę nad dokumentami.
 
 ### Czy mogę dodać wiele komentarzy do tej samej sekcji tekstowej?
 Tak, możesz dodać wiele komentarzy do tej samej sekcji tekstowej, definiując wiele zakresów komentarzy.
 
 ### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
-Aspose.Words dla .NET oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/) . Aby uzyskać pełne funkcje, możesz kupić licencję[Tutaj](https://purchase.aspose.com/buy).
+Aspose.Words dla .NET oferuje bezpłatną wersję próbną, którą można pobrać[Tutaj](https://releases.aspose.com/) Aby uzyskać pełną funkcjonalność, możesz zakupić licencję[Tutaj](https://purchase.aspose.com/buy).
 
 ### Czy mogę dostosować wygląd komentarzy?
-Chociaż Aspose.Words koncentruje się na funkcjonalności, wygląd komentarzy w dokumentach programu Word jest zazwyczaj kontrolowany przez sam program Word.
+Podczas gdy Aspose.Words koncentruje się na funkcjonalności, wygląd komentarzy w dokumentach Worda jest generalnie kontrolowany przez sam Word.
 
 ### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
- Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).
+ Szczegółową dokumentację można znaleźć[Tutaj](https://reference.aspose.com/words/net/).

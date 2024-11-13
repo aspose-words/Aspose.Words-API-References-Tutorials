@@ -61,7 +61,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
 };
 ```
 
-Dadurch wird Aspose.Words angewiesen, die Eigenschaft „Zuletzt gespeicherte Zeit“ des Dokuments zu aktualisieren.
+Dies weist Aspose.Words an, die Eigenschaft „Zuletzt gespeicherte Zeit“ des Dokuments zu aktualisieren.
 
 ## Schritt 4: Speichern Sie das aktualisierte Dokument
 

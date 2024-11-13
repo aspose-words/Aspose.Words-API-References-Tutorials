@@ -1,27 +1,27 @@
 ---
-title: Aspose.Words for Java'da Belgeleri PDF olarak kaydetme
+title: Aspose.Words for Java'da Belgeleri PDF Olarak Kaydetme
 linktitle: Belgeleri PDF Olarak Kaydetme
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak Word belgelerini PDF olarak nasıl kaydedeceğinizi öğrenin. Yazı tiplerini, özellikleri ve görüntü kalitesini özelleştirin. PDF dönüşümü için kapsamlı bir kılavuz.
+description: Aspose.Words for Java kullanarak Word belgelerini PDF olarak nasıl kaydedeceğinizi öğrenin. Yazı tiplerini, özellikleri ve görüntü kalitesini özelleştirin. PDF dönüştürme için kapsamlı bir kılavuz.
 type: docs
 weight: 22
 url: /tr/java/document-loading-and-saving/saving-documents-as-pdf/
 ---
 
-## Aspose.Words for Java'da Belgeleri PDF olarak Kaydetmeye Giriş
+## Java için Aspose.Words'de Belgeleri PDF Olarak Kaydetmeye Giriş
 
-Bu adım adım kılavuzda Aspose.Words for Java kullanarak belgeleri PDF olarak nasıl kaydedeceğinizi inceleyeceğiz. PDF dönüştürmenin çeşitli yönlerini ele alacağız ve süreci kolaylaştırmak için kod örnekleri sunacağız.
+Bu adım adım kılavuzda, Aspose.Words for Java kullanarak belgeleri PDF olarak nasıl kaydedeceğinizi inceleyeceğiz. PDF dönüştürmenin çeşitli yönlerini ele alacağız ve süreci kolaylaştırmak için kod örnekleri sunacağız.
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
 - Sisteminizde Java Geliştirme Kiti (JDK) yüklü.
--  Aspose.Words for Java kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java kütüphanesi. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
 ## Bir Belgeyi PDF'ye Dönüştürme
 
-Bir Word belgesini PDF'ye dönüştürmek için aşağıdaki kod parçasını kullanabilirsiniz:
+Bir Word belgesini PDF'ye dönüştürmek için aşağıdaki kod parçacığını kullanabilirsiniz:
 
 ```java
 Document doc = new Document("input.docx");
@@ -29,11 +29,11 @@ PdfSaveOptions saveOptions = new PdfSaveOptions();
 doc.save("output.pdf", saveOptions);
 ```
 
- Yer değiştirmek`"input.docx"` Word belgenizin yolu ile ve`"output.pdf"` İstenilen çıktı PDF dosya yolu ile.
+ Yer değiştirmek`"input.docx"` Word belgenize giden yol ve`"output.pdf"` İstenilen çıktı PDF dosya yolu ile.
 
-## PDF Kaydetme Seçeneklerini Denetleme
+## PDF Kaydetme Seçeneklerini Kontrol Etme
 
- Çeşitli PDF kaydetme seçeneklerini kontrol edebilirsiniz.`PdfSaveOptions` sınıf. Örneğin, PDF belgesinin görünen başlığını şu şekilde ayarlayabilirsiniz:
+ Çeşitli PDF kaydetme seçeneklerini kullanarak kontrol edebilirsiniz.`PdfSaveOptions` sınıf. Örneğin, PDF belgesi için görüntüleme başlığını aşağıdaki gibi ayarlayabilirsiniz:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -41,9 +41,9 @@ saveOptions.setDisplayDocTitle(true);
 doc.save("output.pdf", saveOptions);
 ```
 
-## Yazı Tiplerini PDF'ye Gömme
+## PDF'ye Yazı Tiplerini Gömme
 
-Yazı tiplerini oluşturulan PDF'ye gömmek için aşağıdaki kodu kullanın:
+Oluşturulan PDF'e yazı tiplerini yerleştirmek için aşağıdaki kodu kullanın:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -53,7 +53,7 @@ doc.save("output.pdf", saveOptions);
 
 ## Belge Özelliklerini Özelleştirme
 
-Oluşturulan PDF'deki belge özelliklerini özelleştirebilirsiniz. Örneğin:
+Oluşturulan PDF'de belge özelliklerini özelleştirebilirsiniz. Örneğin:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -63,7 +63,7 @@ doc.save("output.pdf", saveOptions);
 
 ## Belge Yapısını Dışa Aktarma
 
- Belge yapısını dışa aktarmak için`exportDocumentStructure` seçeneği`true`:
+ Belge yapısını dışa aktarmak için,`exportDocumentStructure` seçeneği`true`:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -73,7 +73,7 @@ doc.save("output.pdf", saveOptions);
 
 ## Görüntü Sıkıştırma
 
-Aşağıdaki kodu kullanarak görüntü sıkıştırmayı kontrol edebilirsiniz:
+Aşağıdaki kodu kullanarak resim sıkıştırmayı kontrol edebilirsiniz:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -81,9 +81,9 @@ saveOptions.setImageCompression(PdfImageCompression.JPEG);
 doc.save("output.pdf", saveOptions);
 ```
 
-## Son Basılan Özelliğin Güncellenmesi
+## Son Yazdırılan Özelliği Güncelleme
 
-PDF'deki "Son Basılan" özelliğini güncellemek için şunu kullanın:
+PDF'deki "Son Yazdırılan" özelliğini güncellemek için şunu kullanın:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -91,9 +91,9 @@ saveOptions.setUpdateLastPrintedProperty(true);
 doc.save("output.pdf", saveOptions);
 ```
 
-## DML 3D Efektlerinin Oluşturulması
+## DML 3D Efektlerinin Render Edilmesi
 
-DML 3D efektlerinin gelişmiş görüntülenmesi için görüntü oluşturma modunu ayarlayın:
+DML 3D efektlerinin gelişmiş işlenmesi için işleme modunu ayarlayın:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -101,7 +101,7 @@ saveOptions.setDml3DEffectsRenderingMode(Dml3DEffectsRenderingMode.ADVANCED);
 doc.save("output.pdf", saveOptions);
 ```
 
-## Görüntülerin Enterpolasyonu
+## Görüntülerin Araya Girmesi
 
 Görüntü kalitesini artırmak için görüntü enterpolasyonunu etkinleştirebilirsiniz:
 
@@ -113,9 +113,9 @@ doc.save("output.pdf", saveOptions);
 
 ## Çözüm
 
-Aspose.Words for Java, esneklik ve özelleştirme seçenekleriyle Word belgelerini PDF formatına dönüştürmek için kapsamlı yetenekler sağlar. Yazı tipleri, belge özellikleri, görüntü sıkıştırma ve daha fazlası dahil olmak üzere PDF çıktısının çeşitli yönlerini kontrol edebilirsiniz.
+Aspose.Words for Java, Word belgelerini esneklik ve özelleştirme seçenekleriyle PDF formatına dönüştürmek için kapsamlı yetenekler sunar. Yazı tipleri, belge özellikleri, görüntü sıkıştırma ve daha fazlası dahil olmak üzere PDF çıktısının çeşitli yönlerini kontrol edebilirsiniz.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for Java kullanarak bir Word belgesini PDF'ye nasıl dönüştürebilirim?
 
@@ -127,11 +127,11 @@ PdfSaveOptions saveOptions = new PdfSaveOptions();
 doc.save("output.pdf", saveOptions);
 ```
 
- Yer değiştirmek`"input.docx"` Word belgenizin yolu ile ve`"output.pdf"` İstenilen çıktı PDF dosya yolu ile.
+ Yer değiştirmek`"input.docx"` Word belgenize giden yol ve`"output.pdf"` İstenilen çıktı PDF dosya yolu ile.
 
-### Aspose.Words for Java tarafından oluşturulan PDF'ye yazı tipi gömebilir miyim?
+### Aspose.Words for Java ile oluşturulan PDF'e font ekleyebilir miyim?
 
- Evet, PDF'ye yazı tiplerini ayarlayarak gömebilirsiniz.`setEmbedFullFonts` seçeneği`true` içinde`PdfSaveOptions`. İşte bir örnek:
+ Evet, PDF'e yazı tiplerini ayarlayarak yerleştirebilirsiniz.`setEmbedFullFonts` seçeneği`true` içinde`PdfSaveOptions`İşte bir örnek:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -141,7 +141,7 @@ doc.save("output.pdf", saveOptions);
 
 ### Oluşturulan PDF'deki belge özelliklerini nasıl özelleştirebilirim?
 
- PDF'deki belge özelliklerini aşağıdakileri kullanarak özelleştirebilirsiniz:`setCustomPropertiesExport` seçenek`PdfSaveOptions`. Örneğin:
+ PDF'deki belge özelliklerini, şunu kullanarak özelleştirebilirsiniz:`setCustomPropertiesExport` seçenek`PdfSaveOptions`. Örneğin:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -149,14 +149,14 @@ saveOptions.setCustomPropertiesExport(PdfCustomPropertiesExport.STANDARD);
 doc.save("output.pdf", saveOptions);
 ```
 
-### Aspose.Words for Java'da görüntü sıkıştırmanın amacı nedir?
+### Aspose.Words for Java'da resim sıkıştırmanın amacı nedir?
 
- Görüntü sıkıştırma, oluşturulan PDF'deki görüntülerin kalitesini ve boyutunu kontrol etmenize olanak tanır. Görüntü sıkıştırma modunu kullanarak ayarlayabilirsiniz.`setImageCompression` içinde`PdfSaveOptions`.
+ Görüntü sıkıştırma, oluşturulan PDF'deki görüntülerin kalitesini ve boyutunu kontrol etmenizi sağlar. Görüntü sıkıştırma modunu kullanarak ayarlayabilirsiniz`setImageCompression` içinde`PdfSaveOptions`.
 
-### PDF'deki "Son Basılan" özelliğini nasıl güncellerim?
+### PDF'deki "Son Yazdırılan" özelliğini nasıl güncellerim?
 
- PDF'deki "Son Basılan" özelliğini ayarlayarak güncelleyebilirsiniz.`setUpdateLastPrintedProperty` ile`true` içinde`PdfSaveOptions`. Bu, PDF meta verilerindeki son yazdırılan tarihi yansıtacaktır.
+ PDF'deki "Son Yazdırılan" özelliğini ayarlayarak güncelleyebilirsiniz.`setUpdateLastPrintedProperty` ile`true` içinde`PdfSaveOptions`Bu, PDF meta verilerinde son basılan tarihi yansıtacaktır.
 
-### PDF'ye dönüştürürken görüntü kalitesini nasıl geliştirebilirim?
+### PDF'e dönüştürürken görüntü kalitesini nasıl artırabilirim?
 
- Görüntü kalitesini artırmak için ayarlayarak görüntü enterpolasyonunu etkinleştirin`setInterpolateImages` ile`true` içinde`PdfSaveOptions`. Bu, PDF'de daha düzgün ve daha kaliteli görüntüler elde edilmesini sağlar.
+ Görüntü kalitesini iyileştirmek için, görüntü enterpolasyonunu şu şekilde ayarlayarak etkinleştirin:`setInterpolateImages` ile`true` içinde`PdfSaveOptions`Bu, PDF'de daha düzgün ve daha kaliteli görüntülerin elde edilmesini sağlayacaktır.

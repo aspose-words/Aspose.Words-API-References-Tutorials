@@ -2,7 +2,7 @@
 title: フォントフォルダのデフォルトインスタンスを設定する
 linktitle: フォントフォルダのデフォルトインスタンスを設定する
 second_title: Aspose.Words ドキュメント処理 API
-description: このステップバイステップのチュートリアルで、Aspose.Words for .NET の既定のインスタンスのフォント フォルダーを設定する方法を学びます。Word 文書を簡単にカスタマイズできます。
+description: このステップバイステップのチュートリアルで、Aspose.Words for .NET の既定のインスタンスのフォント フォルダーを設定する方法を学びます。Word ドキュメントを簡単にカスタマイズできます。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/set-fonts-folders-default-instance/

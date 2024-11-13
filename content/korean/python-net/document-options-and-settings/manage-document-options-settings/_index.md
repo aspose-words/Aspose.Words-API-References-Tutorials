@@ -1,20 +1,20 @@
 ---
 title: 효율성을 위한 문서 옵션 및 설정 미세 조정
 linktitle: 효율성을 위한 문서 옵션 및 설정 미세 조정
-second_title: Aspose.Words Python 문서 관리 API
-description: Aspose.Words for Python을 사용하여 Word 문서를 효율적으로 조작하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다.
+second_title: Aspose.Words 파이썬 문서 관리 API
+description: Aspose.Words for Python을 사용하여 Word 문서를 효율적으로 조작하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드.
 type: docs
 weight: 11
 url: /ko/python-net/document-options-and-settings/manage-document-options-settings/
 ---
 
-## Python용 Aspose.Words 소개:
+## Python을 위한 Aspose.Words 소개:
 
-Aspose.Words for Python은 개발자가 프로그래밍 방식으로 Word 문서를 생성, 조작 및 처리할 수 있는 기능이 풍부한 API입니다. 텍스트, 단락, 표, 이미지 등과 같은 다양한 문서 요소를 처리하기 위한 광범위한 클래스 및 메서드 세트를 제공합니다.
+Aspose.Words for Python은 개발자가 Word 문서를 프로그래밍 방식으로 만들고, 조작하고, 처리할 수 있는 기능이 풍부한 API입니다. 텍스트, 단락, 표, 이미지 등과 같은 다양한 문서 요소를 처리하기 위한 광범위한 클래스와 메서드 세트를 제공합니다.
 
 ## 환경 설정:
 
-시작하려면 시스템에 Python이 설치되어 있는지 확인하십시오. pip를 사용하여 Aspose.Words 라이브러리를 설치할 수 있습니다.
+시작하려면 시스템에 Python이 설치되어 있는지 확인하세요. pip를 사용하여 Aspose.Words 라이브러리를 설치할 수 있습니다.
 
 ```python
 pip install aspose-words
@@ -32,7 +32,7 @@ doc = aw.Document()
 
 ## 문서 속성 수정:
 
-제목, 작성자, 키워드 등의 문서 속성을 조정하는 것은 적절한 구성과 검색 가능성을 위해 필수적입니다.
+제목, 작성자, 키워드와 같은 문서 속성을 조정하는 것은 적절한 구성과 검색성을 위해 필수적입니다.
 
 ```python
 doc.built_in_document_properties["Title"].value = "My Document"
@@ -55,7 +55,7 @@ page_setup.bottom_margin = aw.ConvertUtil.inch_to_point(1.5)
 
 ## 글꼴 및 서식 제어:
 
-Aspose.Words를 사용하여 문서 텍스트에 일관된 서식을 적용합니다.
+Aspose.Words를 사용하여 문서의 텍스트에 일관된 서식을 적용하세요.
 
 ```python
 for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
@@ -65,7 +65,7 @@ for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 
 ## 섹션 및 머리글/바닥글 작업:
 
-문서를 여러 섹션으로 나누고 머리글과 바닥글을 맞춤설정하세요.
+문서를 섹션으로 나누고 머리글과 바닥글을 사용자 정의하세요.
 
 ```python
 section = doc.sections[0]
@@ -73,9 +73,9 @@ header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY].as_header_f
 header.append_paragraph("My Custom Header")
 ```
 
-## 테이블 추가 및 서식 지정:
+## 표 추가 및 서식 지정:
 
-테이블은 많은 문서에 필수적입니다. 생성하고 형식을 지정하는 방법은 다음과 같습니다.
+표는 많은 문서에 필수적입니다. 표 만들기 및 서식 지정 방법은 다음과 같습니다.
 
 ```python
 table = doc.tables.add(section.body)
@@ -84,7 +84,7 @@ for row in table.rows:
         cell.paragraphs[0].text = "Cell Text"
 ```
 
-## 이미지 및 하이퍼링크 통합:
+## 이미지와 하이퍼링크 통합:
 
 이미지와 하이퍼링크로 문서를 풍부하게 만드세요.
 
@@ -105,13 +105,13 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## 결론:
 
-Aspose.Words for Python은 개발자가 문서 옵션 및 설정을 효율적으로 관리할 수 있도록 지원하여 문서 생성 및 조작의 모든 측면에 대한 세부적인 제어를 제공합니다. 직관적인 API와 광범위한 문서는 문서 관련 작업을 위한 귀중한 도구입니다.
+Aspose.Words for Python은 개발자가 문서 옵션과 설정을 효율적으로 관리할 수 있도록 지원하여 문서 생성 및 조작의 모든 측면을 세부적으로 제어할 수 있도록 합니다. 직관적인 API와 광범위한 설명서는 문서 관련 작업에 매우 귀중한 도구입니다.
 
-## FAQ
+## 자주 묻는 질문
 
-### Python용 Aspose.Words를 어떻게 설치하나요?
+### Python에 Aspose.Words를 어떻게 설치하나요?
 
-다음 pip 명령을 사용하여 Python용 Aspose.Words를 설치할 수 있습니다:
+다음 pip 명령을 사용하여 Python용 Aspose.Words를 설치할 수 있습니다.
 
 ```python
 pip install aspose-words
@@ -119,11 +119,11 @@ pip install aspose-words
 
 ### Aspose.Words를 사용하여 머리글과 바닥글을 만들 수 있나요?
 
-예, Aspose.Words를 사용하여 사용자 정의 머리글과 바닥글을 만들고 요구 사항에 맞게 사용자 정의할 수 있습니다.
+네, Aspose.Words를 사용하여 사용자 정의 머리글과 바닥글을 만들고 요구 사항에 맞게 사용자 정의할 수 있습니다.
 
-### API를 사용하여 페이지 여백을 어떻게 조정합니까?
+### API를 사용하여 페이지 여백을 조정하려면 어떻게 해야 하나요?
 
- 다음을 사용하여 페이지 여백을 조정할 수 있습니다.`PageSetup` 수업. 예를 들어:
+ 페이지 여백은 다음을 사용하여 조정할 수 있습니다.`PageSetup` 클래스. 예를 들어:
 
 ```python
 page_setup = doc.sections[0].page_setup
@@ -131,14 +131,14 @@ page_setup.left_margin = aw.ConvertUtil.inch_to_point(1)
 page_setup.right_margin = aw.ConvertUtil.inch_to_point(1)
 ```
 
-### Aspose.Words를 사용하여 내 문서를 PDF로 내보낼 수 있나요?
+### Aspose.Words를 사용하여 문서를 PDF로 내보낼 수 있나요?
 
- 물론, 다음을 사용하여 문서를 PDF를 포함한 다양한 형식으로 내보낼 수 있습니다.`save` 방법. 예를 들어:
+ 물론입니다. PDF를 포함한 다양한 형식으로 문서를 내보낼 수 있습니다.`save` 방법. 예를 들어:
 
 ```python
 doc.save("output.pdf", aw.SaveFormat.PDF)
 ```
 
-### Aspose.Words for Python에 대한 자세한 정보는 어디서 찾을 수 있나요?
+### Python용 Aspose.Words에 대한 자세한 정보는 어디에서 찾을 수 있나요?
 
- 다음 문서를 참조할 수 있습니다.[여기](https://reference.aspose.com/words/python-net/).
+ 설명서는 다음에서 참조할 수 있습니다.[여기](https://reference.aspose.com/words/python-net/).

@@ -45,7 +45,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
 
 ## Word文書として保存
 
-HTMLをロードしたので、`Document`これを Word 文書として保存できます。DOCX 形式で保存してみましょう。
+HTMLを`Document`これを Word 文書として保存できます。DOCX 形式で保存してみましょう。
 
 ```java
 doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
@@ -83,7 +83,7 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 ### Aspose.Words を使用して複雑な HTML ドキュメントを読み込むことはできますか?
 
-はい、Aspose.Words for Java は複雑な HTML ドキュメントを処理できます。読み込みオプションをカスタマイズして、特定の要件を満たすことができます。
+はい、Aspose.Words for Java は複雑な HTML ドキュメントを処理できます。特定の要件に合わせて読み込みオプションをカスタマイズできます。
 
 ### Aspose.Words は他にどのようなドキュメント形式をサポートしていますか?
 

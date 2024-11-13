@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 开始和结束主书签
 
-要创建书签，您需要指定起点和终点。这里我们将创建一个名为“我的书签”的书签。
+创建书签需要指定开始点和结束点。这里我们创建一个名为“我的书签”的书签。
 
 ```csharp
 builder.StartBookmark("My Bookmark");

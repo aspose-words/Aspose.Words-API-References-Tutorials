@@ -1,44 +1,44 @@
 ---
-title: Insertar campo usando el generador de campos
-linktitle: Insertar campo usando el generador de campos
+title: Insertar un campo mediante el generador de campos
+linktitle: Insertar un campo mediante el generador de campos
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo insertar campos dinámicos en documentos de Word usando Aspose.Words para .NET con esta guía paso a paso. Perfecto para desarrolladores.
+description: Aprenda a insertar campos dinámicos en documentos de Word usando Aspose.Words para .NET con esta guía paso a paso. Perfecta para desarrolladores.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/insert-field-using-field-builder/
 ---
 ## Introducción
 
-¡Hola! ¿Alguna vez te has rascado la cabeza preguntándote cómo insertar campos dinámicos en tus documentos de Word mediante programación? Bueno, ¡no te preocupes más! En este tutorial, nos sumergiremos en las maravillas de Aspose.Words para .NET, una poderosa biblioteca que le permite crear, manipular y transformar documentos de Word sin problemas. Específicamente, veremos cómo insertar campos usando el Generador de campos. ¡Empecemos!
+¡Hola! ¿Alguna vez te has preguntado cómo insertar campos dinámicos en tus documentos de Word mediante programación? ¡Pues no te preocupes más! En este tutorial, nos sumergiremos en las maravillas de Aspose.Words para .NET, una potente biblioteca que te permite crear, manipular y transformar documentos de Word sin problemas. En concreto, explicaremos cómo insertar campos mediante el generador de campos. ¡Comencemos!
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de profundizar en el meollo de la cuestión, asegurémonos de que tiene todo lo que necesita:
+Antes de sumergirnos en los detalles, asegurémonos de que tienes todo lo que necesitas:
 
-1. Aspose.Words para .NET: necesitará tener instalado Aspose.Words para .NET. Si aún no lo has hecho, puedes conseguirlo.[aquí](https://releases.aspose.com/words/net/).
-2. Entorno de desarrollo: un entorno de desarrollo adecuado como Visual Studio.
+1. Aspose.Words para .NET: Necesitará tener instalado Aspose.Words para .NET. Si aún no lo ha hecho, puede descargarlo[aquí](https://releases.aspose.com/words/net/).
+2. Entorno de desarrollo: Un entorno de desarrollo adecuado como Visual Studio.
 3. Conocimientos básicos de C#: será útil si está familiarizado con los conceptos básicos de C# y .NET.
 
 ## Importar espacios de nombres
 
-Primero lo primero, importemos los espacios de nombres necesarios. Esto incluirá los espacios de nombres principales de Aspose.Words que usaremos a lo largo de nuestro tutorial.
+Lo primero es lo primero: importemos los espacios de nombres necesarios. Esto incluirá los espacios de nombres básicos de Aspose.Words que usaremos a lo largo de nuestro tutorial.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Muy bien, analicemos el proceso paso a paso. Al final de esto, serás un profesional en la inserción de campos usando el Generador de campos en Aspose.Words para .NET.
+Bien, analicemos el proceso paso a paso. Al final de este artículo, serás un profesional en la inserción de campos mediante el Generador de campos en Aspose.Words para .NET.
 
-## Paso 1: configura tu proyecto
+## Paso 1: Configura tu proyecto
 
-Antes de pasar a la parte de codificación, asegúrese de que su proyecto esté configurado correctamente. Cree un nuevo proyecto de C# en su entorno de desarrollo e instale el paquete Aspose.Words a través del Administrador de paquetes NuGet.
+Antes de pasar a la parte de codificación, asegúrese de que su proyecto esté configurado correctamente. Cree un nuevo proyecto de C# en su entorno de desarrollo e instale el paquete Aspose.Words mediante el Administrador de paquetes NuGet.
 
 ```bash
 Install-Package Aspose.Words
 ```
 
-## Paso 2: cree un nuevo documento
+## Paso 2: Crear un nuevo documento
 
 Comencemos creando un nuevo documento de Word. Este documento nos servirá como lienzo para insertar los campos.
 
@@ -46,13 +46,13 @@ Comencemos creando un nuevo documento de Word. Este documento nos servirá como 
 // La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Crea un nuevo documento.
+// Crear un nuevo documento.
 Document doc = new Document();
 ```
 
-## Paso 3: Inicialice FieldBuilder
+## Paso 3: Inicializar el FieldBuilder
 
-El FieldBuilder es el actor clave aquí. Nos permite construir campos dinámicamente.
+El FieldBuilder es el elemento clave en este caso, ya que nos permite construir campos de forma dinámica.
 
 ```csharp
 //Construcción del campo IF utilizando FieldBuilder.
@@ -62,9 +62,9 @@ FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
     .AddArgument("right expression");
 ```
 
-## Paso 4: agregar argumentos al FieldBuilder
+## Paso 4: Agregar argumentos al FieldBuilder
 
-Ahora agregaremos los argumentos necesarios a nuestro FieldBuilder. Esto incluirá nuestras expresiones y el texto que queremos insertar.
+Ahora, agregaremos los argumentos necesarios a nuestro FieldBuilder. Esto incluirá nuestras expresiones y el texto que queremos insertar.
 
 ```csharp
 fieldBuilder.AddArgument(
@@ -77,43 +77,43 @@ fieldBuilder.AddArgument(
             .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
 ```
 
-## Paso 5: inserte el campo en el documento
+## Paso 5: Insertar el campo en el documento
 
-Con nuestro FieldBuilder configurado, es hora de insertar el campo en nuestro documento. Haremos esto centrándonos en el primer párrafo de la primera sección.
+Una vez que tenemos configurado nuestro FieldBuilder, es momento de insertar el campo en nuestro documento. Para ello, seleccionaremos el primer párrafo de la primera sección.
 
 ```csharp
-// Inserte el campo SI en el documento.
+// Insertar el campo SI en el documento.
 Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
 field.Update();
 ```
 
-## Paso 6: guarde el documento
+## Paso 6: Guardar el documento
 
-Finalmente, guardemos nuestro documento y veamos los resultados.
+Por último, guardemos nuestro documento y veamos los resultados.
 
 ```csharp
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-¡Y ahí lo tienes! Ha insertado exitosamente un campo en un documento de Word usando Aspose.Words para .NET.
+¡Y ya lo tienes! Has insertado con éxito un campo en un documento de Word usando Aspose.Words para .NET.
 
 ## Conclusión
 
-¡Felicidades! Acaba de aprender cómo insertar campos dinámicamente en un documento de Word usando Aspose.Words para .NET. Esta poderosa característica puede ser increíblemente útil para crear documentos dinámicos que requieren combinación de datos en tiempo real. Siga experimentando con diferentes tipos de campos y explore las amplias capacidades de Aspose.Words.
+¡Felicitaciones! Acaba de aprender a insertar campos de forma dinámica en un documento de Word con Aspose.Words para .NET. Esta potente función puede resultar increíblemente útil para crear documentos dinámicos que requieren la fusión de datos en tiempo real. Siga experimentando con diferentes tipos de campos y explore las amplias capacidades de Aspose.Words.
 
 ## Preguntas frecuentes
 
 ### ¿Qué es Aspose.Words para .NET?
-Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrolladores crear, manipular y convertir documentos de Word mediante programación usando C#.
+Aspose.Words para .NET es una potente biblioteca que permite a los desarrolladores crear, manipular y convertir documentos de Word mediante programación utilizando C#.
 
 ### ¿Puedo utilizar Aspose.Words gratis?
- Aspose.Words ofrece una prueba gratuita que puedes descargar[aquí](https://releases.aspose.com/) . Para uso a largo plazo, necesitarás comprar una licencia.[aquí](https://purchase.aspose.com/buy).
+ Aspose.Words ofrece una prueba gratuita que puedes descargar[aquí](https://releases.aspose.com/) Para un uso a largo plazo, necesitarás comprar una licencia.[aquí](https://purchase.aspose.com/buy).
 
 ### ¿Qué tipos de campos puedo insertar usando FieldBuilder?
- FieldBuilder admite una amplia gama de campos, incluidos IF, MERGEFIELD y más. Puedes encontrar documentación detallada.[aquí](https://reference.aspose.com/words/net/).
+ FieldBuilder admite una amplia gama de campos, incluidos IF, MERGEFIELD y más. Puede encontrar documentación detallada[aquí](https://reference.aspose.com/words/net/).
 
 ### ¿Cómo actualizo un campo después de insertarlo?
  Puede actualizar un campo utilizando el`Update` método, como se demuestra en el tutorial.
 
 ### ¿Dónde puedo obtener soporte para Aspose.Words?
- Para cualquier pregunta o soporte, visite el foro de soporte de Aspose.Words[aquí](https://forum.aspose.com/c/words/8).
+ Para cualquier pregunta o ayuda, visite el foro de soporte de Aspose.Words[aquí](https://forum.aspose.com/c/words/8).

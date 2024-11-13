@@ -1,21 +1,21 @@
 ---
-title: Criando seção de repetição de tabela mapeada para parte XML personalizada
-linktitle: Criando seção de repetição de tabela mapeada para parte XML personalizada
+title: Criando Seção de Repetição de Tabela Mapeada para Parte XML Personalizada
+linktitle: Criando Seção de Repetição de Tabela Mapeada para Parte XML Personalizada
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como criar uma tabela com uma seção repetida mapeada para um CustomXmlPart em um documento do Word usando Aspose.Words for .NET.
+description: Aprenda a criar uma tabela com uma seção repetida mapeada para um CustomXmlPart em um documento do Word usando o Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /pt/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 ## Introdução
 
-Neste tutorial, percorreremos o processo de criação de uma tabela com uma seção repetida que é mapeada para uma parte XML personalizada usando Aspose.Words for .NET. Isto é particularmente útil para gerar documentos dinamicamente com base em dados estruturados.
+Neste tutorial, percorreremos o processo de criação de uma tabela com uma seção de repetição que é mapeada para uma parte XML personalizada usando Aspose.Words para .NET. Isso é particularmente útil para gerar documentos dinamicamente com base em dados estruturados.
 
 ## Pré-requisitos
 
-Antes de começarmos, certifique-se de ter o seguinte:
-1.  Biblioteca Aspose.Words para .NET instalada. Você pode baixá-lo no[Aspor site](https://releases.aspose.com/words/net/).
-2. Uma compreensão básica de C# e XML.
+Antes de começar, certifique-se de ter o seguinte:
+1.  Biblioteca Aspose.Words para .NET instalada. Você pode baixá-la do[Site Aspose](https://releases.aspose.com/words/net/).
+2. Um conhecimento básico de C# e XML.
 
 ## Importar namespaces
 
@@ -38,7 +38,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Etapa 2: adicionar parte XML personalizada
+## Etapa 2: Adicionar parte XML personalizada
 
 Adicione uma parte XML personalizada ao documento. Este XML contém os dados que queremos mapear para nossa tabela:
 
@@ -51,7 +51,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 
 ## Etapa 3: Crie a estrutura da tabela
 
- A seguir, use o`DocumentBuilder` para criar o cabeçalho da tabela:
+ Em seguida, use o`DocumentBuilder` para criar o cabeçalho da tabela:
 
 ```csharp
 Table table = builder.StartTable();
@@ -63,9 +63,9 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Etapa 4: criar seção repetitiva
+## Etapa 4: Criar seção de repetição
 
- Crie um`StructuredDocumentTag` (SDT) para a seção de repetição e mapeie-a para os dados XML:
+ Criar um`StructuredDocumentTag` (SDT) para a seção repetida e mapeie-a para os dados XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
@@ -73,9 +73,9 @@ repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## Etapa 5: criar um item de seção repetitivo
+## Etapa 5: Criar item de seção repetitivo
 
-Crie um SDT para o item da seção de repetição e adicione-o à seção de repetição:
+Crie um SDT para o item de seção repetitiva e adicione-o à seção repetitiva:
 
 ```csharp
 StructuredDocumentTag repeatingSectionItemSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
@@ -84,7 +84,7 @@ Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## Etapa 6: mapear dados XML para células da tabela
+## Etapa 6: Mapear dados XML para células de tabela
 
 Crie SDTs para o título e o autor, mapeie-os para os dados XML e anexe-os à linha:
 
@@ -98,9 +98,9 @@ authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## Etapa 7: salve o documento
+## Etapa 7: Salve o documento
 
-Finalmente, salve o documento no diretório especificado:
+Por fim, salve o documento no diretório especificado:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
@@ -108,15 +108,15 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 
 ## Conclusão
 
-Seguindo essas etapas, você criou com êxito uma tabela com uma seção de repetição mapeada para uma parte XML personalizada usando Aspose.Words for .NET. Isto permite a geração dinâmica de conteúdo com base em dados estruturados, tornando a criação de documentos mais flexível e poderosa.
+Seguindo essas etapas, você criou com sucesso uma tabela com uma seção de repetição mapeada para uma parte XML personalizada usando o Aspose.Words para .NET. Isso permite a geração dinâmica de conteúdo com base em dados estruturados, tornando a criação de documentos mais flexível e poderosa.
 
 ## Perguntas frequentes
 
-### O que é uma StructuredDocumentTag (SDT)?
-Um SDT, também conhecido como controle de conteúdo, é uma região delimitada em um documento usada para conter dados estruturados.
+### O que é um StructuredDocumentTag (SDT)?
+Um SDT, também conhecido como controle de conteúdo, é uma região delimitada em um documento que é usada para conter dados estruturados.
 
 ### Posso usar outros tipos de dados na parte XML personalizada?
-Sim, você pode estruturar sua parte XML personalizada com qualquer tipo de dados e mapeá-los adequadamente.
+Sim, você pode estruturar sua parte XML personalizada com qualquer tipo de dado e mapeá-los adequadamente.
 
 ### Como adiciono mais linhas à seção de repetição?
-A seção de repetição replica automaticamente a estrutura de linha para cada item no caminho XML mapeado.
+A seção de repetição replica automaticamente a estrutura da linha para cada item no caminho XML mapeado.

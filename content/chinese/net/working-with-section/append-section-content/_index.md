@@ -112,7 +112,7 @@ Aspose.Words for .NET 是一个功能强大的库，允许开发人员以编程�
 
 ### 2. 我可以免费使用 Aspose.Words for .NET 吗？
 
-您可以使用以下方式尝试 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需长期使用，您需要购买许可证。
+您可以使用以下方式尝试 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需长期使用，则需要购买许可证。
 
 ## 3. Aspose.Words for .NET 的主要功能是什么？
 

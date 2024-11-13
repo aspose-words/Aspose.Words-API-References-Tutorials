@@ -70,7 +70,7 @@ builder.EndTable();
 
 ## Steg 4: Lägg till en vattenstämpelform
 
- Låt oss nu lägga till en vattenstämpel till vårt dokument. Vi skapar en`Shape` objekt och ställ in dess egenskaper.
+ Låt oss nu lägga till en vattenstämpel i vårt dokument. Vi skapar en`Shape` objekt och ställ in dess egenskaper.
 
 ```csharp
 Shape watermark = new Shape(doc, ShapeType.TextPlainText)

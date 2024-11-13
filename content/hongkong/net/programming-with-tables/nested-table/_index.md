@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了巢狀表格。這個功能強大的庫使得以程式設計方式操作 Word 文件變得異常容易。無論您是產生複雜的報表還是簡單的表格，Aspose.Words for .NET 都能滿足您的需求。
+現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了巢狀表格。這個功能強大的庫使得以程式設計方式操作 Word 文件變得異常容易。無論您是產生複雜的報表還是簡單的表格，Aspose.Words for .NET 都能滿足您的需求。
 
 ## 常見問題解答
 

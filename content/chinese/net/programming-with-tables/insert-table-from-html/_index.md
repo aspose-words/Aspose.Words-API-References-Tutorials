@@ -15,7 +15,7 @@ url: /zh/net/programming-with-tables/insert-table-from-html/
 
 在我们深入了解从 HTML 插入表格的细节之前，请确保您已满足以下先决条件：
 
-1. Aspose.Words for .NET：从以下位置下载并安装 Aspose.Words for .NET 库：[下载页面](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：从以下位置下载并安装 Aspose.Words for .NET 库：[下载页面](https://releases.aspose.com/words/net/).
 2. 开发环境：任何与 .NET 兼容的开发环境，如 Visual Studio。
 3. C# 基础知识：了解基本的 C# 编程概念。
 4. HTML 表格代码：您要插入的表格的 HTML 代码。
@@ -41,7 +41,7 @@ using System;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 接下来，您将创建一个新的 Word 文档。此文档将作为您插入 HTML 表格的画布。
 

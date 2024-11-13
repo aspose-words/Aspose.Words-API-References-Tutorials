@@ -1,16 +1,16 @@
 ---
-title: Aspose.Words for Java에서 로드 옵션 사용
+title: Java용 Aspose.Words에서 로드 옵션 사용
 linktitle: 로드 옵션 사용
 second_title: Aspose.Words Java 문서 처리 API
-description: Aspose.Words for Java의 로드 옵션 마스터하기 효율적인 Java 문서 처리를 위해 문서 로딩을 사용자 정의하고, 암호화를 처리하고, 모양을 변환하고, Word 버전을 설정하는 등의 작업을 수행하세요.
+description: Java용 Aspose.Words에서 로드 옵션 마스터링. 효율적인 Java 문서 처리를 위해 문서 로딩을 사용자 지정하고, 암호화를 처리하고, 모양을 변환하고, Word 버전을 설정하고, 기타 작업을 수행합니다.
 type: docs
 weight: 11
 url: /ko/java/document-loading-and-saving/using-load-options/
 ---
 
-## Aspose.Words for Java의 로드 옵션 작업 소개
+## Aspose.Words for Java에서 로드 옵션 작업 소개
 
-이 튜토리얼에서는 Aspose.Words for Java에서 로드 옵션을 사용하는 방법을 살펴보겠습니다. 로드 옵션을 사용하면 문서 로드 및 처리 방법을 사용자 정의할 수 있습니다. 더티 필드 업데이트, 암호화된 문서 로드, 도형을 Office Math로 변환, MS Word 버전 설정, 임시 폴더 지정, 경고 처리, 메타파일을 PNG로 변환 등 다양한 시나리오를 다룹니다. 단계별로 살펴보겠습니다.
+이 튜토리얼에서는 Aspose.Words for Java에서 로드 옵션을 사용하는 방법을 살펴보겠습니다. 로드 옵션을 사용하면 문서를 로드하고 처리하는 방법을 사용자 지정할 수 있습니다. 더티 필드 업데이트, 암호화된 문서 로드, 셰이프를 Office Math로 변환, MS Word 버전 설정, 임시 폴더 지정, 경고 처리, 메타파일을 PNG로 변환하는 등 다양한 시나리오를 다룹니다. 단계별로 살펴보겠습니다.
 
 ## 더티 필드 업데이트
 
@@ -22,7 +22,7 @@ Document doc = new Document("Your Directory Path" + "Dirty field.docx", loadOpti
 doc.save("Your Directory Path" + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 ```
 
- 이 코드 조각은 문서의 더티 필드를 업데이트하는 방법을 보여줍니다. 그만큼`setUpdateDirtyFields(true)` 메서드는 문서를 로드하는 동안 더티 필드가 업데이트되도록 하는 데 사용됩니다.
+ 이 코드 조각은 문서에서 더티 필드를 업데이트하는 방법을 보여줍니다.`setUpdateDirtyFields(true)` 이 방법은 문서 로딩 중에 더티 필드가 업데이트되도록 하는 데 사용됩니다.
 
 ## 암호화된 문서 로드
 
@@ -34,9 +34,9 @@ public void loadEncryptedDocument() throws Exception {
 }
 ```
 
- 여기서는 비밀번호를 사용하여 암호화된 문서를 로드합니다. 그만큼`LoadOptions` 생성자는 문서 비밀번호를 허용하며 다음을 사용하여 문서를 저장할 때 새 비밀번호를 지정할 수도 있습니다.`OdtSaveOptions`.
+ 여기서는 비밀번호를 사용하여 암호화된 문서를 로드합니다.`LoadOptions` 생성자는 문서 비밀번호를 수락하며 문서를 저장할 때 새 비밀번호를 지정할 수도 있습니다.`OdtSaveOptions`.
 
-## 도형을 Office 수학으로 변환
+## 모양을 사무실 수학으로 변환
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
@@ -46,7 +46,7 @@ Document doc = new Document("Your Directory Path" + "Office math.docx", loadOpti
 doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
 ```
 
- 이 코드는 문서를 로드하는 동안 도형을 Office Math 개체로 변환하는 방법을 보여줍니다. 그만큼`setConvertShapeToOfficeMath(true)`메서드를 사용하면 이 변환이 가능해집니다.
+ 이 코드는 문서 로딩 중에 모양을 Office Math 개체로 변환하는 방법을 보여줍니다.`setConvertShapeToOfficeMath(true)`이 방법을 사용하면 이러한 변환이 가능합니다.
 
 ## MS Word 버전 설정
 
@@ -61,7 +61,7 @@ public void setMsWordVersion() throws Exception {
 }
 ```
 
- 문서 로딩을 위해 MS Word 버전을 지정할 수 있습니다. 이 예에서는 다음을 사용하여 버전을 Microsoft Word 2010으로 설정했습니다.`setMswVersion`.
+ 문서 로딩을 위해 MS Word 버전을 지정할 수 있습니다. 이 예에서 우리는 다음을 사용하여 버전을 Microsoft Word 2010으로 설정했습니다.`setMswVersion`.
 
 ## 임시 폴더 사용
 
@@ -75,7 +75,7 @@ public void useTempFolder() throws Exception {
 }
 ```
 
- 다음을 사용하여 임시 폴더를 설정하여`setTempFolder`를 사용하면 문서 처리 중에 임시 파일이 저장되는 위치를 제어할 수 있습니다.
+ 임시 폴더를 설정하여`setTempFolder`문서 처리 중에 임시 파일이 저장되는 위치를 제어할 수 있습니다.
 
 ## 경고 콜백
 
@@ -90,14 +90,14 @@ public void warningCallback() throws Exception {
 
 public static class DocumentLoadingWarningCallback implements IWarningCallback {
     public void warning(WarningInfo info) {
-        // 문서를 로드하는 동안 발생하는 경고를 처리합니다.
+        // 문서 로딩 중에 발생하는 경고를 처리합니다.
         System.out.println(MessageFormat.format("WARNING: {0}, source: {1}", info.getWarningType(), info.getSource()));
         System.out.println(MessageFormat.format("\tDescription: {0}", info.getDescription()));
     }
 }
 ```
 
-이 코드는 문서를 로드하는 동안 경고를 처리하기 위해 경고 콜백을 설정하는 방법을 보여줍니다. 경고가 발생할 때 애플리케이션의 동작을 사용자 정의할 수 있습니다.
+이 코드는 문서 로딩 중 경고를 처리하기 위해 경고 콜백을 설정하는 방법을 보여줍니다. 경고가 발생할 때 애플리케이션의 동작을 사용자 지정할 수 있습니다.
 
 ## 메타파일을 PNG로 변환
 
@@ -111,9 +111,9 @@ public void convertMetafilesToPng() throws Exception {
 }
 ```
 
- 문서를 로드하는 동안 메타파일(예: WMF)을 PNG 이미지로 변환하려면 다음을 사용할 수 있습니다.`setConvertMetafilesToPng(true)` 방법.
+ 문서 로딩 중에 메타파일(예: WMF)을 PNG 이미지로 변환하려면 다음을 사용할 수 있습니다.`setConvertMetafilesToPng(true)` 방법.
 
-## Aspose.Words for Java의 로드 옵션 작업을 위한 완전한 소스 코드
+## Aspose.Words for Java에서 로드 옵션 작업을 위한 전체 소스 코드
 
 ```java
 public void updateDirtyFields() throws Exception {
@@ -167,7 +167,7 @@ public void warningCallback() throws Exception {
 }
 public static class DocumentLoadingWarningCallback implements IWarningCallback {
 	public void warning(WarningInfo info) {
-		//문서를 로드하는 동안 발생하는 경고와 세부 정보를 인쇄합니다.
+		//문서를 로딩하는 동안 발생하는 경고와 해당 세부 정보를 인쇄합니다.
 		System.out.println(MessageFormat.format("WARNING: {0}, source: {1}", info.getWarningType(), info.getSource()));
 		System.out.println(MessageFormat.format("\tDescription: {0}", info.getDescription()));
 	}
@@ -192,22 +192,22 @@ public void loadChm() throws Exception {
 
 ## 결론
 
-이 튜토리얼에서는 Aspose.Words for Java에서 로드 옵션 작업의 다양한 측면을 살펴보았습니다. 로드 옵션은 문서 로드 및 처리 방법을 사용자 정의하는 데 중요한 역할을 하여 특정 요구 사항에 맞게 문서 처리를 맞춤화할 수 있습니다. 이 가이드에서 다루는 주요 사항을 요약해 보겠습니다.
+이 튜토리얼에서는 Aspose.Words for Java에서 로드 옵션으로 작업하는 다양한 측면을 살펴보았습니다. 로드 옵션은 문서가 로드되고 처리되는 방식을 사용자 지정하는 데 중요한 역할을 하며, 문서 처리를 특정 요구 사항에 맞게 조정할 수 있습니다. 이 가이드에서 다룬 핵심 요점을 다시 살펴보겠습니다.
 
-## FAQ
+## 자주 묻는 질문
 
-### 문서를 로드하는 동안 경고를 어떻게 처리합니까?
+### 문서 로딩 중에 경고가 발생하면 어떻게 처리할 수 있나요?
 
- 다음과 같이 경고 콜백을 설정할 수 있습니다.`warningCallback()` 위의 방법. 사용자 정의`DocumentLoadingWarningCallback` 애플리케이션의 요구 사항에 따라 경고를 처리하는 클래스입니다.
+ 표시된 대로 경고 콜백을 설정할 수 있습니다.`warningCallback()` 위의 방법. 사용자 정의`DocumentLoadingWarningCallback` 애플리케이션의 요구 사항에 따라 경고를 처리하는 클래스입니다.
 
 ### 문서를 로드할 때 도형을 Office Math 개체로 변환할 수 있나요?
 
- 예, 다음을 사용하여 도형을 Office Math 개체로 변환할 수 있습니다.`loadOptions.setConvertShapeToOfficeMath(true)`.
+ 예, 다음을 사용하여 모양을 Office Math 개체로 변환할 수 있습니다.`loadOptions.setConvertShapeToOfficeMath(true)`.
 
-### 문서 로딩을 위해 MS Word 버전을 어떻게 지정합니까?
+### 문서 로딩을 위한 MS Word 버전을 어떻게 지정합니까?
 
  사용`loadOptions.setMswVersion(MsWordVersion.WORD_2010)` 문서 로딩을 위한 MS Word 버전을 지정합니다.
 
 ###  의 목적은 무엇입니까?`setTempFolder` method in Load Options?
 
- 그만큼`setTempFolder`방법을 사용하면 문서 처리 중에 임시 파일이 저장되는 폴더를 지정할 수 있습니다.
+그만큼`setTempFolder`이 방법을 사용하면 문서 처리 중에 임시 파일이 저장되는 폴더를 지정할 수 있습니다.

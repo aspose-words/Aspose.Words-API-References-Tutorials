@@ -13,6 +13,7 @@ is_root: true
 ## 教學
 | 標題 | 描述 |
 | --- | --- | 
+| [人工智慧驅動的文檔處理](./ai-powered-document-processing/) | 透過 Aspose.Words for .NET 教學釋放您的潛力。了解使用人工智慧驅動的解決方案增強文件處理，以獲得快速有效的結果。 |  
 | [申請許可證](./apply-license/) | 將許可應用於 Aspose.Words for .NET 的不同變體的教程，包括從文件、流和計量許可應用許可應用許可。 |  
 | [啟用 OpenType 功能](./enable-opentype-features/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中啟用 OpenType 功能。這些教學將引導您完成啟用 OpenType 字型進階功能的步驟。 |  
 | [附註釋的文字處理](./working-with-comments/) | 使用 Aspose.Words for .NET 探索 Word 文件中的註解管理功能。使用逐步教學了解如何新增、刪除、搜尋評論和設定評論格式。 |  
@@ -59,7 +60,7 @@ is_root: true
 | [使用 Pdfloadoptions 進行文字處理](./programming-with-pdfloadoptions/) | 使用 Aspose.Words for .NET 中的 PDF 載入選項學習文字處理。透過逐步教學和範例程式碼了解如何載入和操作 PDF 格式的 Word 文件。 |  
 | [使用 Rtfloadoptions 進行文字處理](./programming-with-rtfloadoptions/) | 使用 Aspose.Words for .NET 中的 RTF 載入選項學習文字處理。了解如何使用逐步教學和範例 C# 程式碼載入和操作 RTF 文件。 |  
 | [使用 Txtloadoptions 進行文字處理](./programming-with-txtloadoptions/) | 了解如何使用 Aspose.Words for .NET 中的文字檔案載入選項進行程式設計。透過 C# 中的逐步教學和範例程式碼，了解如何指定編碼、忽略未知字元、處理換行符等。 |  
-| [使用 Docsaveoptions 進行文字處理](./programming-with-docsaveoptions/) | 了解如何使用 Aspose.Words for .NET 自訂 Word 文件的儲存選項。這些教學將引導您了解各種可用的選項，例如檔案格式、壓縮、密碼保護。 |  
+| [使用 DocSaveOptions 進行文字處理](./programming-with-docsaveoptions/) | 了解如何使用 Aspose.Words for .NET 自訂 Word 文件的儲存選項。這些教學將引導您了解各種可用的選項，例如檔案格式、壓縮、密碼保護。 |  
 | [使用 Htmlfixedsaveoptions 進行文字處理](./programming-with-htmlfixedsaveoptions/) | 了解如何在 Aspose.Words for .NET 中使用固定的 HTML 儲存選項進行程式設計。這些教學課程將指導您使用不同的功能來產生具有固定佈局、嵌入圖像的 HTML 文件。 |  
 | [使用 Htmlsaveoptions 進行文字處理](./programming-with-htmlsaveoptions/) | 了解如何在 Aspose.Words for .NET 中使用 HTML 儲存選項進行程式設計。輕鬆將 Word 文件轉換為 HTML，同時保留格式和內容。 |  
 | [使用影像儲存選項進行文字處理](./programming-with-imagesaveoptions/) | 了解如何使用 Aspose.Words for .NET 中的圖片儲存選項進行程式設計。包含用於在 Word 文件中儲存和操作圖像的範例程式碼的逐步教學。 |  

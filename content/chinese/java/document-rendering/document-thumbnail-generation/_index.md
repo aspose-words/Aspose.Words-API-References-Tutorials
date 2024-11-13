@@ -78,7 +78,7 @@ stream.writeTo(outputStream);
 
 ### 使用 Aspose.Words for Java 有任何许可要求吗？
 
-是的，Aspose.Words for Java 需要有效的商业使用许可。您可以从 Aspose 网站获取许可证。
+是的，Aspose.Words for Java 需要有效的商业使用许可证。您可以从 Aspose 网站获取许可证。
 
 ### 在哪里可以找到有关 Aspose.Words for Java 的其他文档？
 

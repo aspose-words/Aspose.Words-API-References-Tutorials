@@ -1,26 +1,26 @@
 ---
-title: Substitua por Regex
-linktitle: Substitua por Regex
+title: Substituir por Regex
+linktitle: Substituir por Regex
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como usar regex para localizar e substituir documentos do Word com Aspose.Words for .NET. Siga nosso guia passo a passo detalhado para dominar a manipulação de texto.
+description: Aprenda a usar regex para localizar e substituir em documentos do Word com Aspose.Words para .NET. Siga nosso guia detalhado passo a passo para dominar a manipulação de texto.
 type: docs
 weight: 10
 url: /pt/net/find-and-replace-text/replace-with-regex/
 ---
 ## Introdução
 
-Ei! Você já precisou substituir texto em um documento do Word, mas precisa de um pouco mais de poder do que simplesmente localizar e substituir? Talvez você precise de algo que possa lidar com padrões e curingas? Bem, você está com sorte! Aspose.Words for .NET oferece cobertura para você com sua funcionalidade de localização e substituição baseada em regex. Neste tutorial, vamos nos aprofundar em como você pode usar regex para substituir texto em seus documentos do Word usando Aspose.Words for .NET. Dividiremos tudo passo a passo, portanto, mesmo que você seja novo no regex ou no Aspose.Words, poderá acompanhar e se atualizar rapidamente.
+Olá! Já se viu precisando substituir texto em um documento do Word, mas precisa de um pouco mais de poder do que um simples localizar e substituir? Talvez você precise de algo que possa lidar com padrões e curingas? Bem, você está com sorte! O Aspose.Words para .NET tem tudo o que você precisa com sua funcionalidade de localizar e substituir baseada em regex. Neste tutorial, vamos nos aprofundar em como você pode usar regex para substituir texto em seus documentos do Word usando o Aspose.Words para .NET. Vamos detalhar tudo passo a passo, então, mesmo que você seja novo em regex ou Aspose.Words, você poderá acompanhar e se atualizar rapidamente.
 
 ## Pré-requisitos
 
-Antes de começarmos, vamos ter certeza de que temos tudo o que precisamos:
-1. Aspose.Words for .NET: Você precisa ter o Aspose.Words for .NET instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
-2. Ambiente de desenvolvimento: um IDE como o Visual Studio onde você pode escrever e executar seu código C#.
+Antes de começar, vamos ter certeza de que temos tudo o que precisamos:
+1. Aspose.Words para .NET: Você precisa ter o Aspose.Words para .NET instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: um IDE como o Visual Studio, onde você pode escrever e executar seu código C#.
 3. Conhecimento básico de C# e Regex: Familiaridade com C# e um entendimento básico de expressões regulares serão úteis.
 
 ## Importar namespaces
 
-Em primeiro lugar, precisamos importar os namespaces necessários. No seu arquivo C#, adicione as seguintes instruções using na parte superior:
+Primeiro, precisamos importar os namespaces necessários. No seu arquivo C#, adicione as seguintes instruções using no topo:
 
 ```csharp
 using System;
@@ -31,18 +31,18 @@ using Aspose.Words.Replacing;
 
 ## Etapa 1: configure seu diretório de documentos
 
-Vamos começar definindo o caminho para o diretório de documentos. É aqui que seus documentos do Word são armazenados e onde salvaremos o documento modificado.
+Vamos começar definindo o caminho para o diretório dos seus documentos. É aqui que seus documentos do Word são armazenados e onde salvaremos o documento modificado.
 
 ```csharp
 // O caminho para o diretório de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o seu diretório.
+ Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para seu diretório.
 
-## Etapa 2: crie um novo documento
+## Etapa 2: Crie um novo documento
 
- A seguir, criaremos um novo documento e um`DocumentBuilder` para adicionar algum texto inicial.
+ Em seguida, criaremos um novo documento e um`DocumentBuilder` para adicionar algum texto inicial.
 
 ```csharp
 Document doc = new Document();
@@ -51,19 +51,19 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("sad mad bad");
 ```
 
-Aqui, estamos criando um novo documento e adicionando o texto “sad mad bad” a ele. Este texto serão nossos dados de teste para a substituição da regex.
+Aqui, estamos criando um novo documento e adicionando o texto "sad mad bad" a ele. Este texto será nossos dados de teste para a substituição do regex.
 
-## Etapa 3: definir opções de localização e substituição
+## Etapa 3: Defina as opções Localizar e Substituir
 
- Para realizar a substituição da regex, precisamos configurar algumas opções. O`FindReplaceOptions`classe nos permite especificar como a operação localizar e substituir deve se comportar.
+ Para executar a substituição de regex, precisamos configurar algumas opções. O`FindReplaceOptions` classe nos permite especificar como a operação de localização e substituição deve se comportar.
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions();
 ```
 
-No momento, estamos usando as opções padrão, mas você pode personalizá-las, se necessário.
+No momento, estamos usando as opções padrão, mas você pode personalizá-las se necessário.
 
-## Etapa 4: execute a substituição do Regex
+## Etapa 4: Execute a substituição do Regex
 
  Agora vem a parte divertida! Usaremos o`Range.Replace` método para substituir todas as ocorrências de "triste" ou "louco" por "ruim" usando uma expressão regular.
 
@@ -71,11 +71,11 @@ No momento, estamos usando as opções padrão, mas você pode personalizá-las,
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
 ```
 
- O padrão regex`[s|m]ad` corresponde a qualquer palavra que termine em "ad" e que comece com "s" ou "m". A string de substituição "ruim" substituirá todas as correspondências encontradas.
+ O padrão regex`[s|m]ad` corresponde a qualquer palavra terminada em "ad" que comece com "s" ou "m". A string de substituição "bad" substituirá quaisquer correspondências encontradas.
 
-## Etapa 5: salve o documento modificado
+## Etapa 5: Salve o documento modificado
 
-Finalmente, salvaremos o documento modificado em nosso diretório especificado.
+Por fim, salvaremos o documento modificado no diretório especificado.
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
@@ -85,21 +85,21 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 
 ## Conclusão
 
-aí está! Você usou regex com sucesso para localizar e substituir texto em um documento do Word usando Aspose.Words for .NET. Esse recurso poderoso pode economizar muito tempo e esforço, especialmente ao lidar com padrões de texto complexos. Esteja você limpando documentos, formatando texto ou fazendo alterações em massa, regex com Aspose.Words for .NET é uma ferramenta que você deseja em seu arsenal.
+aí está! Você usou regex com sucesso para encontrar e substituir texto em um documento do Word usando o Aspose.Words para .NET. Esse recurso poderoso pode economizar muito tempo e esforço, especialmente ao lidar com padrões de texto complexos. Não importa se você está limpando documentos, formatando texto ou fazendo alterações em massa, regex com Aspose.Words para .NET é uma ferramenta que você vai querer em seu arsenal.
 
 ## Perguntas frequentes
 
-### Posso usar padrões regex mais complexos com Aspose.Words for .NET?  
-Absolutamente! Aspose.Words oferece suporte a uma ampla variedade de padrões regex. Você pode adaptar seus padrões para corresponder exatamente ao que você precisa.
+### Posso usar padrões regex mais complexos com o Aspose.Words para .NET?  
+Absolutamente! O Aspose.Words suporta uma ampla gama de padrões regex. Você pode adaptar seus padrões para corresponder exatamente ao que você precisa.
 
-### O Aspose.Words for .NET oferece suporte a outras operações de texto?  
-Sim, é verdade. Aspose.Words for .NET oferece um rico conjunto de recursos para manipulação de documentos do Word, incluindo extração de texto, formatação e muito mais.
+### O Aspose.Words para .NET suporta outras operações de texto?  
+Sim, ele faz. O Aspose.Words for .NET oferece um rico conjunto de recursos para manipular documentos do Word, incluindo extração de texto, formatação e muito mais.
 
 ### Posso substituir texto em seções específicas de um documento?  
-Sim, você pode. Você pode usar métodos diferentes para direcionar seções, parágrafos ou até mesmo cabeçalhos e rodapés específicos em seu documento.
+Sim, você pode. Você pode usar métodos diferentes para mirar em seções, parágrafos ou até mesmo cabeçalhos e rodapés específicos no seu documento.
 
 ### Existe uma maneira de visualizar as alterações antes de salvar o documento?  
-Embora Aspose.Words não forneça um recurso de visualização direta, você sempre pode salvar uma cópia do documento antes de fazer alterações e comparar as versões.
+Embora o Aspose.Words não forneça um recurso de visualização direta, você sempre pode salvar uma cópia do documento antes de fazer alterações e comparar as versões.
 
-### Posso usar o Aspose.Words for .NET em aplicativos da web?  
-Sim, o Aspose.Words for .NET é versátil e pode ser usado em vários tipos de aplicativos, incluindo aplicativos da web, desktop e baseados em nuvem.
+### Posso usar o Aspose.Words para .NET em aplicativos web?  
+Sim, o Aspose.Words para .NET é versátil e pode ser usado em vários tipos de aplicativos, incluindo aplicativos da web, de desktop e baseados em nuvem.

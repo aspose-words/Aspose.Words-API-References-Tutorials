@@ -2,14 +2,14 @@
 title: フォーマット 1Bpp インデックス
 linktitle: フォーマット 1Bpp インデックス
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書を 1Bpp のインデックス付き画像に変換する方法を学びます。ステップ バイ ステップ ガイドに従って簡単に変換できます。
+description: Aspose.Words for .NET を使用して、Word 文書を 1Bpp のインデックス付き画像に変換する方法を学びます。簡単な変換を行うには、ステップ バイ ステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
 ## 導入
 
-数行のコードで Word 文書を白黒画像として保存する方法を考えたことはありませんか? いいえ、大丈夫です! 今日は、Aspose.Words for .NET を使用して、文書を 1Bpp インデックス画像に変換する便利な小技を紹介します。この形式は、特定の種類のデジタル アーカイブ、印刷、またはスペースを節約する必要がある場合に最適です。各手順を分解して、簡単に行えるようにします。準備はできましたか? さあ、始めましょう!
+数行のコードで Word 文書を白黒画像として保存する方法を考えたことはありませんか? いいえ、大丈夫です! 今日は、Aspose.Words for .NET を使用して、文書を 1Bpp インデックス画像に変換できる便利な小技を紹介します。この形式は、特定の種類のデジタル アーカイブ、印刷、またはスペースを節約する必要がある場合に最適です。各手順を分解して、簡単に行えるようにします。準備はできましたか? さあ、始めましょう!
 
 ## 前提条件
 
@@ -18,7 +18,7 @@ url: /ja/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 -  Aspose.Words for .NET: ライブラリがインストールされていることを確認してください。[ここからダウンロード](https://releases.aspose.com/words/net/).
 - .NET 開発環境: Visual Studio は良い選択肢ですが、使い慣れた環境であればどれでも使用できます。
 - C# の基本知識: 心配しないでください。簡単に説明しますが、C# に少し精通していると役立ちます。
-- Word 文書: 変換するサンプルの Word 文書を用意しておきます。
+- Word 文書: 変換するサンプルの Word 文書を用意します。
 
 ## 名前空間のインポート
 

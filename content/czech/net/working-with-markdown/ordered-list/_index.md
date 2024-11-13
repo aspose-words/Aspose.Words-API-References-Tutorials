@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
- The`ListIndent` metoda odsadí seznam a vytvoří podseznam. Nyní vytváříte hierarchický seznam, podobně jako vnořený seznam úkolů.
+The`ListIndent` metoda odsadí seznam a vytvoří podseznam. Nyní vytváříte hierarchický seznam, podobně jako vnořený seznam úkolů.
 
 ## Závěr
 

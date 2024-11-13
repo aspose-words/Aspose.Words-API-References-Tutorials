@@ -21,7 +21,7 @@ Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
 ## Namespaces importieren
 
-Als Erstes importieren wir die erforderlichen Namespaces. Dieser Schritt ist entscheidend, da er uns den Zugriff auf die Aspose.Words-Funktionen ermöglicht.
+Als Erstes importieren wir die erforderlichen Namespaces. Dieser Schritt ist entscheidend, da er uns den Zugriff auf die Funktionen von Aspose.Words ermöglicht.
 
 ```csharp
 using Aspose.Words;

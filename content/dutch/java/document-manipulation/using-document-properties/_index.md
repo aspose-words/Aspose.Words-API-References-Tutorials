@@ -1,8 +1,8 @@
 ---
 title: Documenteigenschappen gebruiken in Aspose.Words voor Java
 linktitle: Documenteigenschappen gebruiken
-second_title: Aspose.Words Java-documentverwerkings-API
-description: Optimaliseer documentbeheer met Aspose.Words voor Java. Leer werken met documenteigenschappen, voeg aangepaste metagegevens toe en meer in deze uitgebreide zelfstudie.
+second_title: Aspose.Words Java Documentverwerkings-API
+description: Optimaliseer documentbeheer met Aspose.Words voor Java. Leer werken met documenteigenschappen, voeg aangepaste metadata toe en meer in deze uitgebreide tutorial.
 type: docs
 weight: 32
 url: /nl/java/document-manipulation/using-document-properties/
@@ -30,11 +30,11 @@ public void enumerateProperties() throws Exception
 }
 ```
 
-Deze code geeft de naam van het document en de ingebouwde eigenschappen weer, inclusief eigenschappen als 'Titel', 'Auteur' en 'Trefwoorden'.
+Met deze code worden de naam van het document en de ingebouwde eigenschappen weergegeven, waaronder eigenschappen als 'Titel', 'Auteur' en 'Trefwoorden'.
 
 ### Aangepaste eigenschappen
 
-Als u met aangepaste documenteigenschappen wilt werken, kunt u het volgende codefragment gebruiken:
+Om met aangepaste documenteigenschappen te werken, kunt u het volgende codefragment gebruiken:
 
 ```java
 @Test
@@ -53,7 +53,7 @@ public void addCustomDocumentProperties() throws Exception
 }
 ```
 
-Dit codefragment laat zien hoe u aangepaste documenteigenschappen kunt toevoegen, waaronder een Booleaanse waarde, een tekenreeks, een datum, een revisienummer en een numerieke waarde.
+Dit codefragment laat zien hoe u aangepaste documenteigenschappen toevoegt, waaronder een Booleaanse waarde, een tekenreeks, een datum, een revisienummer en een numerieke waarde.
 
 ## Documenteigenschappen verwijderen
 
@@ -68,11 +68,11 @@ public void removeCustomDocumentProperties() throws Exception
 }
 ```
 
-Deze code verwijdert de aangepaste eigenschap 'Geautoriseerde datum' uit het document.
+Met deze code wordt de aangepaste eigenschap 'Geautoriseerde datum' uit het document verwijderd.
 
 ## Link naar inhoud configureren
 
-In sommige gevallen wilt u mogelijk koppelingen in uw document maken. Hier ziet u hoe u het kunt doen:
+In sommige gevallen wilt u wellicht links in uw document maken. Dit is hoe u dat kunt doen:
 
 ```java
 @Test
@@ -86,7 +86,7 @@ public void configuringLinkToContent() throws Exception
 
     CustomDocumentProperties customProperties = doc.getCustomDocumentProperties();
 
-    // Voeg gekoppeld aan inhoudseigenschap toe.
+    // Voeg gekoppelde inhoudseigenschap toe.
     DocumentProperty customProperty = customProperties.addLinkToContent("Bookmark", "MyBookmark");
     customProperty = customProperties.get("Bookmark");
     boolean isLinkedToContent = customProperty.isLinkToContent();
@@ -95,11 +95,11 @@ public void configuringLinkToContent() throws Exception
 }
 ```
 
-Dit codefragment laat zien hoe u een bladwijzer in uw document kunt maken en een aangepaste documenteigenschap kunt toevoegen die naar die bladwijzer linkt.
+Dit codefragment laat zien hoe u een bladwijzer in uw document maakt en een aangepaste documenteigenschap toevoegt die naar die bladwijzer linkt.
 
 ## Converteren tussen meeteenheden
 
-In Aspose.Words voor Java kunt u eenvoudig meeteenheden converteren. Hier is een voorbeeld van hoe u dit moet doen:
+In Aspose.Words voor Java kunt u eenvoudig meeteenheden converteren. Hier is een voorbeeld van hoe u dat doet:
 
 ```java
 @Test
@@ -119,11 +119,11 @@ public void convertBetweenMeasurementUnits() throws Exception
 }
 ```
 
-Met dit codefragment worden verschillende marges en afstanden in inches ingesteld door deze naar punten te converteren.
+Met dit codefragment worden verschillende marges en afstanden in inches ingesteld door ze om te zetten in punten.
 
-## Controletekens gebruiken
+## Controlekarakters gebruiken
 
-Controletekens kunnen handig zijn bij het omgaan met tekst. Zo vervangt u een controleteken in uw tekst:
+Control characters kunnen handig zijn bij het werken met tekst. Zo vervangt u een control character in uw tekst:
 
 ```java
 @Test
@@ -131,35 +131,35 @@ public void useControlCharacters()
 {
     final String TEXT = "test\r";
 
-    // Vervang het controleteken "\r" door "\r\n".
+    // Vervang het besturingsteken "\r" door "\r\n".
     String replace = TEXT.replace(ControlChar.CR, ControlChar.CR_LF);
 }
 ```
 
-In dit voorbeeld vervangen we de regelterugloop (`\r`) met een harde return gevolgd door een regelinvoer (`\r\n`).
+In dit voorbeeld vervangen we de wagenretour (`\r`) met een wagenretour gevolgd door een regelterugloop (`\r\n`).
 
 ## Conclusie
 
-Documenteigenschappen spelen een belangrijke rol bij het effectief beheren en organiseren van uw documenten in Aspose.Words voor Java. Of u nu werkt met ingebouwde eigenschappen, aangepaste eigenschappen of het gebruik van besturingstekens, u beschikt over een reeks hulpmiddelen om uw mogelijkheden voor documentbeheer te verbeteren.
+Documenteigenschappen spelen een belangrijke rol bij het effectief beheren en organiseren van uw documenten in Aspose.Words voor Java. Of u nu werkt met ingebouwde eigenschappen, aangepaste eigenschappen of controlekarakters gebruikt, u hebt een scala aan hulpmiddelen tot uw beschikking om uw documentbeheermogelijkheden te verbeteren.
 
 ## Veelgestelde vragen
 
-### Hoe krijg ik toegang tot de ingebouwde documenteigenschappen?
+### Hoe krijg ik toegang tot ingebouwde documenteigenschappen?
 
- Om toegang te krijgen tot ingebouwde documenteigenschappen in Aspose.Words voor Java, kunt u de`getBuiltInDocumentProperties` methode op de`Document` voorwerp. Deze methode retourneert een verzameling ingebouwde eigenschappen die u kunt doorlopen.
+ Om toegang te krijgen tot ingebouwde documenteigenschappen in Aspose.Words voor Java, kunt u de`getBuiltInDocumentProperties` methode op de`Document` object. Deze methode retourneert een verzameling ingebouwde eigenschappen waar u doorheen kunt itereren.
 
 ### Kan ik aangepaste documenteigenschappen aan een document toevoegen?
 
- Ja, u kunt aangepaste documenteigenschappen aan een document toevoegen met behulp van de`CustomDocumentProperties` verzameling. U kunt aangepaste eigenschappen definiëren met verschillende gegevenstypen, waaronder tekenreeksen, booleaanse waarden, datums en numerieke waarden.
+ Ja, u kunt aangepaste documenteigenschappen aan een document toevoegen met behulp van de`CustomDocumentProperties` verzameling. U kunt aangepaste eigenschappen definiëren met verschillende gegevenstypen, waaronder strings, booleans, datums en numerieke waarden.
 
 ### Hoe kan ik een specifieke aangepaste documenteigenschap verwijderen?
 
- Om een specifieke aangepaste documenteigenschap te verwijderen, kunt u de`remove` methode op de`CustomDocumentProperties`collection, waarbij u de naam van de eigenschap die u wilt verwijderen als parameter doorgeeft.
+ Om een specifieke aangepaste documenteigenschap te verwijderen, kunt u de`remove` methode op de`CustomDocumentProperties`verzameling, waarbij u de naam van de eigenschap die u wilt verwijderen als parameter doorgeeft.
 
-### Wat is het doel van het linken naar inhoud in een document?
+### Wat is het doel van het linken naar inhoud binnen een document?
 
-Door naar inhoud in een document te linken, kunt u dynamische verwijzingen naar specifieke delen van het document maken. Dit kan handig zijn voor het maken van interactieve documenten of kruisverwijzingen tussen secties.
+Door te linken naar content binnen een document kunt u dynamische verwijzingen naar specifieke delen van het document maken. Dit kan handig zijn voor het maken van interactieve documenten of kruisverwijzingen tussen secties.
 
-### Hoe kan ik tussen verschillende maateenheden converteren in Aspose.Words voor Java?
+### Hoe kan ik in Aspose.Words voor Java converteren tussen verschillende maateenheden?
 
- U kunt in Aspose.Words voor Java tussen verschillende maateenheden converteren met behulp van de`ConvertUtil` klas. Het biedt methoden om eenheden zoals inches naar punten, punten naar centimeters en meer te converteren.
+ U kunt in Aspose.Words voor Java tussen verschillende meeteenheden converteren met behulp van de`ConvertUtil` klasse. Het biedt methoden om eenheden zoals inches naar punten, punten naar centimeters en meer te converteren.

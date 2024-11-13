@@ -114,7 +114,7 @@ Du har framgångsrikt slagit samman två Word-dokument med Aspose.Words för .NE
  Ja, du kan ladda ner en gratis testversion[här](https://releases.aspose.com/).
 
 ### Hur kan jag få en tillfällig licens för Aspose.Words för .NET?
- Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
+Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
 ### Var kan jag hitta mer detaljerad dokumentation?
  Du hittar den omfattande dokumentationen[här](https://reference.aspose.com/words/net/).

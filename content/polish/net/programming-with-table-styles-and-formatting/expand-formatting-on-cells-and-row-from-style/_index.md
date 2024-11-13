@@ -1,28 +1,28 @@
 ---
-title: Rozwiń formatowanie komórek i wierszy ze stylu
-linktitle: Rozwiń formatowanie komórek i wierszy ze stylu
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak rozszerzyć formatowanie komórek i wierszy ze stylów w dokumentach programu Word przy użyciu Aspose.Words dla .NET. W zestawie instrukcja krok po kroku.
+title: Rozszerz formatowanie komórek i wierszy ze stylu
+linktitle: Rozszerz formatowanie komórek i wierszy ze stylu
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak rozszerzyć formatowanie komórek i wierszy ze stylów w dokumentach Word za pomocą Aspose.Words dla .NET. Zawiera przewodnik krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-table-styles-and-formatting/expand-formatting-on-cells-and-row-from-style/
 ---
 ## Wstęp
 
-Czy zdarzyło Ci się kiedyś zastosować spójną stylizację w tabelach w dokumentach programu Word? Ręczne dostosowywanie każdej komórki może być żmudne i podatne na błędy. Właśnie tam przydaje się Aspose.Words dla .NET. Ten samouczek poprowadzi Cię przez proces rozszerzania formatowania komórek i wierszy ze stylu tabeli, dzięki czemu Twoje dokumenty będą wyglądały elegancko i profesjonalnie, bez dodatkowych kłopotów.
+Czy kiedykolwiek zdarzyło Ci się stosować spójny styl w tabelach w dokumentach Word? Ręczne dostosowywanie każdej komórki może być żmudne i podatne na błędy. W tym miejscu Aspose.Words dla .NET okazuje się przydatne. Ten samouczek przeprowadzi Cię przez proces rozszerzania formatowania komórek i wierszy ze stylu tabeli, zapewniając, że Twoje dokumenty będą wyglądać dopracowane i profesjonalne bez dodatkowych problemów.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziemy do najdrobniejszych szczegółów, upewnij się, że masz przygotowane następujące elementy:
+Zanim przejdziemy do szczegółów, upewnij się, że masz zapewnione następujące rzeczy:
 
--  Aspose.Words dla .NET: Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
-- Visual Studio: każda najnowsza wersja będzie działać.
+-  Aspose.Words dla .NET: Można go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+- Visual Studio: Działa każda nowsza wersja.
 - Podstawowa znajomość języka C#: Znajomość programowania w języku C# jest niezbędna.
-- Przykładowy dokument: Przygotuj dokument Word z tabelą lub możesz skorzystać z tej podanej w przykładowym kodzie.
+- Przykładowy dokument: Przygotuj dokument Word zawierający tabelę lub możesz wykorzystać tabelę podaną w przykładowym kodzie.
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw. Dzięki temu wszystkie wymagane klasy i metody będą dostępne do użycia w naszym kodzie.
+Po pierwsze, zaimportujmy niezbędne przestrzenie nazw. Dzięki temu wszystkie wymagane klasy i metody będą dostępne do użycia w naszym kodzie.
 
 ```csharp
 using System;
@@ -31,11 +31,11 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Podzielmy teraz proces na proste, łatwe do wykonania kroki.
+Teraz podzielimy ten proces na proste, łatwe do wykonania kroki.
 
 ## Krok 1: Załaduj swój dokument
 
-W tym kroku załadujemy dokument programu Word zawierający tabelę, którą chcesz sformatować. 
+W tym kroku załadujemy dokument Word zawierający tabelę, którą chcesz sformatować. 
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -45,38 +45,38 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Krok 2: Uzyskaj dostęp do tabeli
 
-Następnie musimy uzyskać dostęp do pierwszej tabeli w dokumencie. Ta tabela będzie głównym przedmiotem naszych operacji formatowania.
+Następnie musimy uzyskać dostęp do pierwszej tabeli w dokumencie. Ta tabela będzie przedmiotem naszych operacji formatowania.
 
 ```csharp
 // Pobierz pierwszą tabelę w dokumencie.
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Krok 3: Odzyskaj pierwszą komórkę
+## Krok 3: Pobierz pierwszą komórkę
 
-Teraz pobierzmy pierwszą komórkę pierwszego wiersza tabeli. Pomoże nam to zademonstrować, jak zmienia się formatowanie komórki po rozwinięciu stylów.
+Teraz pobierzmy pierwszą komórkę pierwszego wiersza w tabeli. Pomoże nam to pokazać, jak formatowanie komórki zmienia się, gdy style są rozwijane.
 
 ```csharp
-// Pobierz pierwszą komórkę pierwszego wiersza tabeli.
+// Pobierz pierwszą komórkę pierwszego wiersza w tabeli.
 Cell firstCell = table.FirstRow.FirstCell;
 ```
 
 ## Krok 4: Sprawdź początkowe cieniowanie komórek
 
-Zanim zastosujemy jakiekolwiek formatowanie sprawdźmy i wydrukujmy początkowy kolor cieniowania komórki. To da nam punkt odniesienia do porównania po rozwinięciu stylu.
+Zanim zastosujemy jakiekolwiek formatowanie, sprawdźmy i wydrukujmy początkowy kolor cieniowania komórki. Da nam to punkt odniesienia do porównania po rozwinięciu stylu.
 
 ```csharp
-// Wydrukuj początkowy kolor cieniowania komórek.
+// Wydrukuj początkowy kolor cieniowania komórki.
 Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
 Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 ```
 
 ## Krok 5: Rozwiń style tabeli
 
- Tutaj dzieje się magia. Zadzwonimy do`ExpandTableStylesToDirectFormatting` metoda stosowania stylów tabeli bezpośrednio do komórek.
+ Tutaj dzieje się magia. Nazwiemy to`ExpandTableStylesToDirectFormatting` metoda pozwalająca zastosować style tabeli bezpośrednio do komórek.
 
 ```csharp
-// Rozwiń style tabeli do formatowania bezpośredniego.
+// Rozszerz style tabeli o bezpośrednie formatowanie.
 doc.ExpandTableStylesToDirectFormatting();
 ```
 
@@ -85,28 +85,28 @@ doc.ExpandTableStylesToDirectFormatting();
 Na koniec sprawdzimy i wydrukujemy kolor cieniowania komórki po rozwinięciu stylów. Powinieneś zobaczyć zaktualizowane formatowanie zastosowane ze stylu tabeli.
 
 ```csharp
-// Wydrukuj kolor cieniowania komórek po rozwinięciu stylu.
+// Wydrukuj kolor cieniowania komórki po rozwinięciu stylu.
 Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;
 Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 ```
 
 ## Wniosek
 
-I masz to! Wykonując poniższe kroki, możesz łatwo rozszerzyć formatowanie komórek i wierszy na podstawie stylów w dokumentach programu Word przy użyciu Aspose.Words dla .NET. To nie tylko oszczędza czas, ale także zapewnia spójność dokumentów. Miłego kodowania!
+I masz! Wykonując te kroki, możesz łatwo rozszerzyć formatowanie komórek i wierszy ze stylów w dokumentach Worda za pomocą Aspose.Words dla .NET. To nie tylko oszczędza czas, ale także zapewnia spójność w dokumentach. Miłego kodowania!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężny interfejs API, który umożliwia programistom programowe tworzenie, edytowanie, konwertowanie i manipulowanie dokumentami programu Word.
+### Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to zaawansowany interfejs API umożliwiający programistom programistyczne tworzenie, edycję, konwertowanie i manipulowanie dokumentami Word.
 
 ### Dlaczego miałbym rozszerzać formatowanie ze stylów?
-Rozszerzanie formatowania ze stylów gwarantuje, że styl zostanie zastosowany bezpośrednio do komórek, co ułatwia konserwację i aktualizację dokumentu.
+Rozszerzenie formatowania za pomocą stylów zapewnia bezpośrednie zastosowanie stylów do komórek, co ułatwia konserwację i aktualizację dokumentu.
 
 ### Czy mogę zastosować te kroki do wielu tabel w dokumencie?
-Absolutnie! Możesz przeglądać wszystkie tabele w dokumencie i zastosować te same kroki do każdej z nich.
+Oczywiście! Możesz przejść przez wszystkie tabele w dokumencie i zastosować te same kroki do każdej z nich.
 
 ### Czy istnieje sposób na przywrócenie rozwiniętych stylów?
-Po rozwinięciu stylów są one bezpośrednio stosowane do komórek. Aby przywrócić zmiany, należy ponownie załadować dokument lub ponownie zastosować style ręcznie.
+Po rozwinięciu style są bezpośrednio stosowane do komórek. Aby przywrócić, musisz ponownie załadować dokument lub ręcznie ponownie zastosować style.
 
 ### Czy ta metoda działa ze wszystkimi wersjami Aspose.Words dla .NET?
- Tak,`ExpandTableStylesToDirectFormatting` metoda jest dostępna w najnowszych wersjach Aspose.Words dla .NET. Zawsze sprawdzaj[dokumentacja](https://reference.aspose.com/words/net/) w celu uzyskania najnowszych aktualizacji.
+ Tak,`ExpandTableStylesToDirectFormatting` Metoda jest dostępna w ostatnich wersjach Aspose.Words dla .NET. Zawsze sprawdzaj[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać najnowsze informacje.

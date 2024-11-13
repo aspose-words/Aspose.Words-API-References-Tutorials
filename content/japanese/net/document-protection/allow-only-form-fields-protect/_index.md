@@ -86,7 +86,7 @@ doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ## よくある質問
 
 ###	 ドキュメントの保護を解除するにはどうすればいいですか?  
-保護を解除するには、`doc.Unprotect("password")`メソッドです。「password」はドキュメントを保護するために使用されるパスワードです。
+保護を解除するには、`doc.Unprotect("password")`メソッドです。ここで、「password」はドキュメントを保護するために使用されるパスワードです。
 
 ###	 Aspose.Words for .NET を使用して異なるタイプの保護を適用できますか?  
 はい、Aspose.Wordsは次のようなさまざまな保護タイプをサポートしています。`ReadOnly`, `NoProtection` 、 そして`AllowOnlyRevisions`.

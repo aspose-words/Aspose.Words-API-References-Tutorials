@@ -100,7 +100,7 @@ Ano, Aspose.Words for .NET lze použít s jakýmkoli jazykem kompatibilním s .N
 
 ### Jak získám dočasnou licenci pro Aspose.Words?
 
- Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
+Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Jaké typy dokumentů mohu převést na Markdown?
 

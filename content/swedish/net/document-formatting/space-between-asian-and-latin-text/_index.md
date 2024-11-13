@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Genom att ställa in`AddSpaceBetweenFarEastAndAlpha`och`AddSpaceBetweenFarEastAndDigit` till`true`, säger vi till Aspose.Words att automatiskt justera avståndet mellan asiatiska tecken och latinska bokstäver eller siffror.
+ Genom att ställa in`AddSpaceBetweenFarEastAndAlpha` och`AddSpaceBetweenFarEastAndDigit` till`true`, säger vi till Aspose.Words att automatiskt justera avståndet mellan asiatiska tecken och latinska bokstäver eller siffror.
 
 ## Steg 3: Lägga till text i dokumentet
 

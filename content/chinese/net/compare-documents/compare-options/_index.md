@@ -13,7 +13,7 @@ url: /zh/net/compare-documents/compare-options/
 
 ## 先决条件
 
-在开始编写代码之前，让我们先确保我们已准备好所需的一切。以下是一份快速检查表：
+在开始编写代码之前，让我们先确保我们已准备好所有需要的东西。以下是一份快速检查表：
 
 1.  Aspose.Words for .NET 库：您需要安装 Aspose.Words for .NET 库。如果您尚未安装，可以下载[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：任何 C# 开发环境（如 Visual Studio）都可以。
@@ -58,7 +58,7 @@ Document docB = docA.Clone();
 在此代码片段中：
 - 我们指定存储文档的目录。
 - 我们加载第一个文档（`docA`）。
-- 我们克隆`docA`创造`docB`这样，我们就有两个相同的文档可以使用。
+- 我们克隆`docA`创造`docB`这样，我们就有两份相同的文档可以使用。
 
 ## 步骤 3：配置比较选项
 
@@ -85,7 +85,7 @@ CompareOptions options = new CompareOptions
 - IgnoreTables：忽略表中的变化。
 - IgnoreFields：忽略字段的变化。
 - IgnoreComments：忽略评论中的更改。
-- IgnoreTextboxes：忽略文本框中的变化。
+- IgnoreTextboxes：忽略文本框中的更改。
 - IgnoreFootnotes：忽略脚注的变化。
 
 ## 步骤 4：比较文档

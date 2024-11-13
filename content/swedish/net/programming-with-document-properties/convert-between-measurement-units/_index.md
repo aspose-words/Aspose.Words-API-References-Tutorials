@@ -50,7 +50,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 PageSetup pageSetup = builder.PageSetup;
 ```
 
-Detta ger dig tillgång till olika sidinställningar, såsom marginaler, sidhuvudsavstånd och sidfotsavstånd.
+Detta ger dig tillgång till olika sidinställningar som marginaler, sidhuvudsavstånd och sidfotsavstånd.
 
 ## Steg 3: Konvertera tum till poäng
 
@@ -66,7 +66,7 @@ pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
 Här är en uppdelning av vad varje rad gör:
-- Ställer in de övre och nedre marginalerna till 1 tum (omräknat till punkter).
+- Ställer in topp- och bottenmarginalerna till 1 tum (omräknat till punkter).
 - Ställer in vänster och höger marginal till 1,5 tum (omräknat till punkter).
 - Ställer in sidhuvudet och sidfotens avstånd till 0,2 tum (omräknat till punkter).
 

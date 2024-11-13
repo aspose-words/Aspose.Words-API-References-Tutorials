@@ -59,10 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 यह सुनिश्चित करने के लिए कि छवियाँ प्रक्षेपित हैं, आपको कॉन्फ़िगर करने की आवश्यकता है`PdfSaveOptions`यह क्लास आपको अपने दस्तावेज़ को PDF के रूप में सहेजने के लिए विभिन्न विकल्प सेट करने की अनुमति देता है। विशेष रूप से, आप छवि इंटरपोलेशन को सक्षम करना चाहते हैं।
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	InterpolateImages = true
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 `InterpolateImages` संपत्ति पर सेट है`true` यह सुनिश्चित करने के लिए कि आपके पीडीएफ में छवियां प्रक्षेपित हैं, उनकी गुणवत्ता में सुधार करें।

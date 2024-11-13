@@ -16,7 +16,7 @@ url: /zh/net/programming-with-styles-and-themes/set-theme-properties/
 在深入学习本教程之前，请确保您满足以下先决条件：
 
 - C# 编程基础知识：本教程假设您熟悉 C# 和 .NET 框架。
--  Aspose.Words for .NET：从以下网址下载并安装最新版本[Aspose.Words 下载页面](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：从以下网站下载并安装最新版本[Aspose.Words 下载页面](https://releases.aspose.com/words/net/).
 - 开发环境：Visual Studio 或任何其他首选的 C# IDE。
 
 ## 导入命名空间
@@ -38,7 +38,7 @@ using System.Drawing;
 Document doc = new Document();
 ```
 
-## 步骤 2：访问主题对象
+## 第 2 步：访问主题对象
 
 接下来，您需要访问`Theme`文档中的对象。`Theme`对象包含与文档主题相关的属性，包括字体和颜色。
 
@@ -89,4 +89,4 @@ doc.Save("StyledDocument.docx");
 您可以参考[Aspose.Words 文档](https://reference.aspose.com/words/net/)以获取更多深入信息。
 
 ### 如果我遇到问题，有哪些支持选项可供选择？  
- Aspose 提供了[支持论坛](https://forum.aspose.com/c/words/8)您可以在这里获得社区和 Aspose 团队的帮助。
+ Aspose 提供[支持论坛](https://forum.aspose.com/c/words/8)您可以在这里获得社区和 Aspose 团队的帮助。

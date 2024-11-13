@@ -32,8 +32,6 @@ using Aspose.Words.Tables;
 
 Det första steget är att ladda Word-dokumentet du vill arbeta med. Detta dokument kommer att innehålla de bokmärken du behöver för att reda ut.
 
-Steg 1 Rubrik: Ladda dokumentet
-
 ```csharp
 Document doc = new Document("path/to/your/document.docx");
 ```
@@ -43,8 +41,6 @@ På den här raden laddar vi helt enkelt dokumentet från en angiven sökväg. S
 ## Steg 2: Iterera genom bokmärken
 
 Därefter måste vi iterera igenom alla bokmärken i dokumentet. Detta ger oss tillgång till varje bokmärke och dess egenskaper.
-
-Steg 2 Rubrik: Iterera genom bokmärken
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -59,8 +55,6 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 För varje bokmärke måste vi hitta de rader som innehåller början och slutet av bokmärket. Detta är avgörande för att avgöra om bokmärket sträcker sig över intilliggande rader.
 
-Steg 3 Rubrik: Identifiera rader
-
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
@@ -71,8 +65,6 @@ Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ## Steg 4: Kontrollera om det finns angränsande rader
 
 Innan vi flyttar bokmärkesänden måste vi se till att bokmärkets början och slut finns på intilliggande rader. Detta villkor är viktigt för att korrekt reda ut bokmärket.
-
-Steg 4 Rubrik: Kontrollera radanslutning
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
@@ -85,15 +77,13 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 ## Steg 5: Flytta bokmärkesänden
 
-Slutligen, om villkoren är uppfyllda, flyttar vi bokmärkets slutnod till slutet av det sista stycket i den översta radens sista cell. Detta steg löser bokmärket effektivt.
-
-Steg 5 Rubrik: Flytta bokmärkesänden
+Slutligen, om villkoren är uppfyllda, flyttar vi bokmärkets slutnod till slutet av det sista stycket i den översta radens sista cell. Detta steg löser effektivt bokmärket.
 
 ```csharp
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
- I det här steget använder vi`AppendChild` metod för att flytta bokmärkets slutnod. Genom att lägga till det i det sista stycket i den översta radens sista cell säkerställer vi att bokmärket är korrekt löst.
+ I det här steget använder vi`AppendChild`metod för att flytta bokmärkets slutnod. Genom att lägga till det i det sista stycket i den översta radens sista cell säkerställer vi att bokmärket är korrekt löst.
 
 ## Slutsats
 

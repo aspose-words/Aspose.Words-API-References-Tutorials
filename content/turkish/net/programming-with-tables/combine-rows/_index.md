@@ -2,28 +2,28 @@
 title: Satırları Birleştir
 linktitle: Satırları Birleştir
 second_title: Aspose.Words Belge İşleme API'si
-description: Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak birden fazla tablodaki satırları nasıl birleştireceğinizi öğrenin.
+description: Aspose.Words for .NET'i kullanarak birden fazla tablodaki satırları tek bir tabloda birleştirmeyi adım adım rehberimizle öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/combine-rows/
 ---
 ## giriiş
 
-Birden fazla tablodaki satırları tek bir uyumlu tabloda birleştirmek göz korkutucu bir görev olabilir. Ancak Aspose.Words for .NET ile bu çok kolay! Bu kılavuz tüm süreç boyunca size yol gösterecek ve tabloları sorunsuz bir şekilde birleştirmenizi kolaylaştıracaktır. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu öğreticiyi çok değerli bulacaksınız. O halde gelin hemen konuya dalalım ve bu dağınık satırları birleşik bir tabloya dönüştürelim.
+Birden fazla tablodan satırları tek bir tutarlı tabloda birleştirmek zorlu bir görev olabilir. Ancak .NET için Aspose.Words ile bu çok kolay! Bu kılavuz, tabloları sorunsuz bir şekilde birleştirmenizi kolaylaştırarak tüm süreçte size yol gösterecektir. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu öğreticiyi paha biçilmez bulacaksınız. O halde başlayalım ve bu dağınık satırları birleşik bir tabloya dönüştürelim.
 
-## Önkoşullar
+## Ön koşullar
 
 Kodlama kısmına geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
 1.  Aspose.Words for .NET: İndirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio veya herhangi bir .NET uyumlu IDE.
-3. Temel C# Bilgisi: C#'ı anlamak faydalı olacaktır.
+3. Temel C# Bilgisi: C# dilini anlamak faydalı olacaktır.
 
- Henüz Aspose.Words for .NET'e sahip değilseniz,[ücretsiz deneme](https://releases.aspose.com/) veya satın al[Burada](https://purchase.aspose.com/buy) . Her türlü sorunuz için,[destek forumu](https://forum.aspose.com/c/words/8) başlamak için harika bir yerdir.
+ Eğer henüz .NET için Aspose.Words'ünüz yoksa, bir tane edinebilirsiniz[ücretsiz deneme](https://releases.aspose.com/) veya satın al[Burada](https://purchase.aspose.com/buy) Herhangi bir sorunuz varsa,[destek forumu](https://forum.aspose.com/c/words/8) başlamak için harika bir yer.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bu, Aspose.Words sınıflarına ve yöntemlerine erişmenizi sağlayacaktır. İşte bunu nasıl yapacağınız:
+Öncelikle gerekli ad alanlarını içe aktarmanız gerekecek. Bu, Aspose.Words sınıflarına ve yöntemlerine erişmenizi sağlayacaktır. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 using System;
@@ -31,34 +31,34 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Artık her şeyi ayarladığımıza göre süreci takip edilmesi kolay adımlara ayıralım.
+Artık her şeyi ayarladığımıza göre, süreci takip etmesi kolay adımlara bölelim.
 
-## 1. Adım: Belgenizi Yükleyin
+## Adım 1: Belgenizi Yükleyin
 
-İlk adım Word belgenizi yüklemektir. Bu belge, birleştirmek istediğiniz tabloları içermelidir. Bir belgeyi yüklemek için gereken kod:
+İlk adım Word belgenizi yüklemektir. Bu belge, birleştirmek istediğiniz tabloları içermelidir. İşte bir belgeyi yüklemek için kod:
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- Bu örnekte değiştirin`"YOUR DOCUMENT DIRECTORY"` belgenizin yolu ile birlikte.
+ Bu örnekte şunu değiştirin:`"YOUR DOCUMENT DIRECTORY"` belgenizin yolunu belirtin.
 
-## Adım 2: Tabloları Tanımlayın
+## Adım 2: Tabloları Belirleyin
 
- Daha sonra birleştirmek istediğiniz tabloları tanımlamanız gerekir. Aspose.Words, bir belgeden tablolar almanızı sağlar.`GetChild` Yöntem. İşte nasıl:
+ Sonra, birleştirmek istediğiniz tabloları tanımlamanız gerekir. Aspose.Words, bir belgeden tabloları almanıza olanak tanır`GetChild` yöntem. İşte nasıl:
 
 ```csharp
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
 Table secondTable = (Table) doc.GetChild(NodeType.Table, 1, true);
 ```
 
-Bu kodda belgeden birinci ve ikinci tabloları getiriyoruz.
+Bu kodda, belgeden ilk ve ikinci tabloyu alıyoruz.
 
-## Adım 3: İkinci Tablodaki Satırları İlk Tabloya Ekleme
+## Adım 3: İkinci Tablodan Birinci Tabloya Satır Ekle
 
-Şimdi satırları birleştirmenin zamanı geldi. İkinci tablodaki tüm satırları birinci tabloya ekleyeceğiz. Bu basit bir while döngüsü kullanılarak yapılır:
+Şimdi satırları birleştirme zamanı. İkinci tablodaki tüm satırları birinci tabloya ekleyeceğiz. Bu basit bir while döngüsü kullanılarak yapılır:
 
 ```csharp
 // İkinci tablodaki tüm satırları birinci tabloya ekle
@@ -68,9 +68,9 @@ while (secondTable.HasChildNodes)
 
 Bu döngü, ikinci tablodaki tüm satırlar birinci tabloya eklenene kadar devam eder.
 
-## Adım 4: İkinci Tabloyu Kaldır
+## Adım 4: İkinci Tabloyu Kaldırın
 
- Satırları ekledikten sonra ikinci tabloya artık gerek yoktur. kullanarak kaldırabilirsiniz.`Remove` yöntem:
+ Satırları ekledikten sonra ikinci tabloya artık gerek kalmaz. Bunu kullanarak kaldırabilirsiniz`Remove` yöntem:
 
 ```csharp
 secondTable.Remove();
@@ -78,38 +78,38 @@ secondTable.Remove();
 
 ## Adım 5: Belgeyi Kaydedin
 
-Son olarak değiştirilen belgeyi kaydedin. Bu adım, değişikliklerinizin dosyaya yazılmasını sağlar:
+Son olarak, değiştirilen belgeyi kaydedin. Bu adım, değişikliklerinizin dosyaya yazılmasını sağlar:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-İşte bu kadar! Aspose.Words for .NET'i kullanarak iki tablodaki satırları başarılı bir şekilde tek tablo halinde birleştirdiniz.
+Ve işte bu kadar! Aspose.Words for .NET kullanarak iki tablodaki satırları başarıyla birleştirdiniz.
 
 ## Çözüm
 
-Birden fazla tablodaki satırları tek bir tabloda birleştirmek, belge işleme görevlerinizi önemli ölçüde basitleştirebilir. Aspose.Words for .NET ile bu görev basit ve verimli hale geliyor. Bu adım adım kılavuzu izleyerek tabloları kolayca birleştirebilir ve iş akışınızı kolaylaştırabilirsiniz.
+Birden fazla tablodan satırları birleştirmek, belge işleme görevlerinizi önemli ölçüde basitleştirebilir. Aspose.Words for .NET ile bu görev basit ve verimli hale gelir. Bu adım adım kılavuzu izleyerek tabloları kolayca birleştirebilir ve iş akışınızı düzene sokabilirsiniz.
 
 Daha fazla bilgiye ihtiyacınız varsa veya herhangi bir sorunuz varsa,[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) mükemmel bir kaynaktır. Ayrıca satın alma seçeneklerini de keşfedebilirsiniz[Burada](https://purchase.aspose.com/buy) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/) test için.
 
-## SSS'ler
+## SSS
 
 ### Farklı sütun sayılarına sahip tabloları birleştirebilir miyim?
 
-Evet, Aspose.Words, farklı sütun sayılarına ve genişliklere sahip olsalar bile tabloları birleştirmenize olanak tanır.
+Evet, Aspose.Words farklı sütun sayılarına ve genişliklerine sahip olsalar bile tabloları birleştirmenize olanak tanır.
 
-### Birleştirildiğinde satırların formatına ne olur?
+### Satırların birleştirilmesiyle biçimlendirme ne olur?
 
-Satırların formatı, ilk tabloya eklendiklerinde korunur.
+Satırların biçimlendirmesi, ilk tabloya eklendiklerinde korunur.
 
-### İkiden fazla tabloyu birleştirmek mümkün mü?
+### İkiden fazla tabloyu birleştirmek mümkün müdür?
 
 Evet, her ek tablo için adımları tekrarlayarak birden fazla tabloyu birleştirebilirsiniz.
 
-### Bu işlemi birden fazla belge için otomatikleştirebilir miyim?
+### Bu süreci birden fazla belge için otomatikleştirebilir miyim?
 
-Kesinlikle! Birden fazla belge için bu işlemi otomatikleştirmek amacıyla bir komut dosyası oluşturabilirsiniz.
+Kesinlikle! Bu süreci birden fazla belge için otomatikleştirmek üzere bir betik oluşturabilirsiniz.
 
-### Sorunlarla karşılaşırsam nereden yardım alabilirim?
+### Sorunla karşılaşırsam nereden yardım alabilirim?
 
-[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) yardım almak ve sık karşılaşılan sorunlara çözüm bulmak için harika bir yerdir.
+The[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) Yardım almak ve yaygın sorunlara çözüm bulmak için harika bir yerdir.

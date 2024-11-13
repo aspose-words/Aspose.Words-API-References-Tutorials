@@ -1,97 +1,97 @@
 ---
-title: Resim Madde İşaretini Kaydetme
-linktitle: Resim Madde İşaretini Kaydetme
+title: Resim Madde İşaretini Kaydetmeyin
+linktitle: Resim Madde İşaretini Kaydetmeyin
 second_title: Aspose.Words Belge İşleme API'si
-description: Adım adım kılavuzumuzla Aspose.Words for .NET'te resim işaretlerini nasıl kullanacağınızı öğrenin. Belge yönetimini basitleştirin ve zahmetsizce profesyonel Word belgeleri oluşturun.
+description: Aspose.Words for .NET'te resim madde işaretlerini nasıl kullanacağınızı adım adım kılavuzumuzla öğrenin. Belge yönetimini basitleştirin ve profesyonel Word belgelerini zahmetsizce oluşturun.
 type: docs
 weight: 10
 url: /tr/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 ## giriiş
 
-Merhaba geliştirici arkadaşlar! Hiç Word belgeleriyle çalıştınız ve kendinizi resim madde işaretlerini kaydetmenin inceliklerine karışmış halde buldunuz mu? Belgenizin son görünümünde büyük fark yaratabilecek küçük ayrıntılardan biridir. Bugün, Aspose.Words for .NET'te resim madde işaretlerini işleme sürecinde size rehberlik etmek için buradayım, özellikle de "Resim Madde İşaretini Kaydetme" özelliğine odaklanarak. Dalmaya hazır mısınız? Hadi gidelim!
+Merhaba, geliştirici arkadaşlar! Hiç Word belgeleriyle çalışıp kendinizi resim madde işaretlerini kaydetmenin karmaşıklıklarıyla boğuşurken buldunuz mu? Bu, belgenizin son görünümünde büyük fark yaratabilecek o küçük ayrıntılardan biridir. Bugün, özellikle "Resim Madde İşaretlerini Kaydetme" özelliğine odaklanarak, .NET için Aspose.Words'de resim madde işaretlerini işleme sürecinde size rehberlik etmek için buradayım. Başlamaya hazır mısınız? Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-Kodu düzeltmeye başlamadan önce, yerine getirmeniz gereken birkaç şey var:
+Kodla oynamaya başlamadan önce, yerinde olması gereken birkaç şey var:
 
-1.  Aspose.Words for .NET: Bu güçlü kütüphanenin kurulu olduğundan emin olun. Henüz almadıysanız indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Bu güçlü kütüphanenin kurulu olduğundan emin olun. Eğer henüz yoksa, indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio gibi çalışan bir .NET geliştirme ortamı.
-3. Temel C# Bilgisi: C# programlamaya biraz aşina olmak faydalı olacaktır.
-4. Örnek Belge: Test amaçlı resim madde işaretleri içeren bir Word belgesi.
+3. Temel C# Bilgisi: C# programlama konusunda biraz bilgi sahibi olmak faydalı olacaktır.
+4. Örnek Belge: Test amaçlı resimli madde işaretlerinin bulunduğu bir Word belgesi.
 
 ## Ad Alanlarını İçe Aktar
 
-İşleri başlatmak için gerekli ad alanlarını içe aktarmanız gerekir. Bu oldukça basittir ancak Aspose.Words işlevlerine erişim için çok önemlidir.
+Başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bu oldukça basittir ancak Aspose.Words işlevlerine erişmek için önemlidir.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Süreci yönetilebilir adımlara ayıralım. Bu şekilde kodun her bölümünü kolayca takip edebilir ve anlayabilirsiniz.
+Süreci yönetilebilir adımlara bölelim. Bu şekilde, kodun her bir bölümünü kolayca takip edebilir ve anlayabilirsiniz.
 
-## 1. Adım: Belge Dizininizi Kurun
+## Adım 1: Belge Dizininizi Ayarlayın
 
-Öncelikle belgeler dizininizin yolunu belirtmeniz gerekir. Burası Word belgelerinizin saklandığı ve değiştirilen dosyaları kaydedeceğiniz yerdir.
+İlk önce, belgeler dizininize giden yolu belirtmeniz gerekir. Word belgelerinizin saklandığı ve değiştirilen dosyaları kaydedeceğiniz yer burasıdır.
 
 ```csharp
-// Belgeler dizininizin yolu
+// Belgelerinizin dizinine giden yol
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` sisteminizde belgelerinizin bulunduğu gerçek yolla.
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` sisteminizde belgelerinizin bulunduğu gerçek yol ile.
 
-## Adım 2: Belgeyi Görüntü Madde İşaretleriyle Yükleme
+## Adım 2: Belgeyi Resim Madde İşaretleriyle Yükleyin
 
-Daha sonra, görüntü madde işaretlerini içeren Word belgesini yükleyeceksiniz. Bu belge kaydedildiğinde resim madde işaretlerini kaldıracak şekilde değiştirilecektir.
+Sonra, resim madde işaretlerini içeren Word belgesini yükleyeceksiniz. Bu belge, kaydedildiğinde resim madde işaretlerini kaldıracak şekilde değiştirilecektir.
 
 ```csharp
-// Belgeyi görüntü madde işaretleriyle yükleyin
+// Belgeyi resimli maddelerle yükle
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
- Dosyanın olduğundan emin olun`"Image bullet points.docx"` Belirtilen dizinde mevcut.
+ Dosyanın güvenli olduğundan emin olun`"Image bullet points.docx"` belirtilen dizinde mevcuttur.
 
-## 3. Adım: Kaydetme Seçeneklerini Yapılandırın
+## Adım 3: Kaydetme Seçeneklerini Yapılandırın
 
-Şimdi resim madde işaretlerinin kaydedilmemesi gerektiğini belirtmek için kaydetme seçeneklerini yapılandıralım. Sihrin gerçekleştiği yer burası!
+Şimdi, resim madde işaretlerinin kaydedilmemesi gerektiğini belirtmek için kaydetme seçeneklerini yapılandıralım. İşte sihir burada gerçekleşiyor!
 
 ```csharp
 // "Resim Madde İşaretini Kaydetme" özelliğiyle kaydetme seçeneklerini yapılandırın
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
- Ayarlayarak`SavePictureBullet` ile`false`Aspose.Words'e resim madde işaretlerini çıktı belgesine kaydetmemesi talimatını verirsiniz.
+ Ayarlayarak`SavePictureBullet` ile`false`, Aspose.Words'e çıktı belgesinde resim madde işaretlerini kaydetmemesi talimatını verirsiniz.
 
 ## Adım 4: Belgeyi Kaydedin
 
-Son olarak belgeyi belirtilen seçeneklerle kaydedin. Bu, resim madde işaretlerinin dahil edilmediği yeni bir dosya oluşturacaktır.
+Son olarak, belgeyi belirtilen seçeneklerle kaydedin. Bu, resim madde işaretlerinin dahil edilmediği yeni bir dosya oluşturacaktır.
 
 ```csharp
 // Belgeyi belirtilen seçeneklerle kaydedin
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
- Yeni dosya,`"WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx"`, dokümanlar dizininize kaydedilecektir.
+ Yeni dosya,`"WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx"`, belgeler dizininize kaydedilecektir.
 
 ## Çözüm
 
-Ve işte karşınızda! Yalnızca birkaç satır kodla Aspose.Words for .NET'i, bir belgeyi kaydederken resim işaretlerini çıkaracak şekilde başarıyla yapılandırdınız. Bu, görüntü madde işaretlerinin dikkati dağıtmadığı, temiz ve tutarlı bir görünüme ihtiyaç duyduğunuzda inanılmaz derecede yararlı olabilir.
+Ve işte oldu! Sadece birkaç satır kodla, bir belgeyi kaydederken resim madde işaretlerini atlamak için Aspose.Words for .NET'i başarıyla yapılandırdınız. Bu, resim madde işaretlerinin dikkat dağıtması olmadan temiz, tutarlı bir görünüme ihtiyaç duyduğunuzda inanılmaz derecede faydalı olabilir.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, .NET uygulamalarında Word belgeleri oluşturmaya, düzenlemeye ve dönüştürmeye yönelik güçlü bir kitaplıktır.
+Aspose.Words for .NET, .NET uygulamaları içerisinde Word belgeleri oluşturmak, düzenlemek ve dönüştürmek için güçlü bir kütüphanedir.
 
-### Bu özelliği diğer mermi türleri için kullanabilir miyim?
-Hayır, bu özel özellik resim madde işaretleri içindir. Ancak Aspose.Words diğer madde işareti türlerini yönetmek için kapsamlı seçenekler sunar.
+### Bu özelliği diğer mermi tipleri için de kullanabilir miyim?
+Hayır, bu belirli özellik resim madde işaretleri içindir. Ancak, Aspose.Words diğer madde işareti türlerini işlemek için kapsamlı seçenekler sunar.
 
-### Aspose.Words için nereden destek alabilirim?
- adresinden destek alabilirsiniz.[Aspose.Words Forumu](https://forum.aspose.com/c/words/8).
+### Aspose.Words için desteği nereden alabilirim?
+ Destek alabilirsiniz[Aspose.Words Forum](https://forum.aspose.com/c/words/8).
 
-### Aspose.Words for .NET'in ücretsiz deneme sürümü var mı?
- Evet, ücretsiz deneme sürümünden yararlanabilirsiniz[Burada](https://releases.aspose.com/).
+### Aspose.Words for .NET için ücretsiz deneme sürümü var mı?
+ Evet, ücretsiz deneme alabilirsiniz[Burada](https://releases.aspose.com/).
 
-### Aspose.Words for .NET lisansını nasıl satın alabilirim?
- adresinden lisans satın alabilirsiniz.[Aspose Mağaza](https://purchase.aspose.com/buy).
+### Aspose.Words for .NET için lisans nasıl satın alabilirim?
+ Lisansı şuradan satın alabilirsiniz:[Aspose Mağazası](https://purchase.aspose.com/buy).

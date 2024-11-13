@@ -1,27 +1,27 @@
 ---
-title: Permitir espaçamento entre células
-linktitle: Permitir espaçamento entre células
+title: Permitir espaçamento de células
+linktitle: Permitir espaçamento de células
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como permitir o espaçamento de células em uma tabela usando Aspose.Words for .NET com nosso guia detalhado. Perfeito para desenvolvedores que buscam aprimorar a formatação de documentos do Word.
+description: Aprenda como permitir espaçamento de células em uma tabela usando Aspose.Words para .NET com nosso guia detalhado. Perfeito para desenvolvedores que buscam aprimorar a formatação de seus documentos Word.
 type: docs
 weight: 10
 url: /pt/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
 ## Introdução
 
-Bem-vindo a este guia completo sobre como permitir o espaçamento de células em uma tabela usando Aspose.Words for .NET! Se você já trabalhou com tabelas em documentos do Word, sabe que o espaçamento pode fazer uma grande diferença na legibilidade e na estética. Neste tutorial, orientaremos você no processo de ativação do espaçamento de células em suas tabelas, passo a passo. Abordaremos tudo, desde a configuração do seu ambiente até a escrita do código e a execução do seu aplicativo. Então, aperte o cinto e vamos mergulhar no mundo do Aspose.Words for .NET!
+Bem-vindo a este guia abrangente sobre como permitir espaçamento de células em uma tabela usando o Aspose.Words para .NET! Se você já trabalhou com tabelas em documentos do Word, sabe que o espaçamento pode fazer uma grande diferença na legibilidade e na estética. Neste tutorial, vamos orientá-lo no processo de habilitar o espaçamento de células em suas tabelas, passo a passo. Abordaremos tudo, desde a configuração do seu ambiente até a escrita do código e a execução do seu aplicativo. Então, aperte os cintos e vamos mergulhar no mundo do Aspose.Words para .NET!
 
 ## Pré-requisitos
 
-Antes de começarmos, vamos garantir que você tenha tudo o que precisa:
+Antes de começar, vamos garantir que você tenha tudo o que precisa:
 
-- Aspose.Words for .NET: Você precisa ter o Aspose.Words for .NET instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
-- Ambiente de desenvolvimento: um ambiente de desenvolvimento como o Visual Studio.
-- Compreensão básica de C#: Familiaridade com programação C# é essencial.
+- Aspose.Words para .NET: Você precisa ter o Aspose.Words para .NET instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+- Ambiente de desenvolvimento: Um ambiente de desenvolvimento como o Visual Studio.
+- Conhecimento básico de C#: familiaridade com programação em C# é essencial.
 
 ## Importar namespaces
 
-Antes de mergulhar no código, importe os namespaces necessários. Veja como você faz isso:
+Antes de mergulhar no código, certifique-se de importar os namespaces necessários. Veja como fazer isso:
 
 ```csharp
 using System;
@@ -31,55 +31,55 @@ using Aspose.Words.Tables;
 
 ## Guia passo a passo
 
-Agora, vamos dividir o processo de permitir o espaçamento entre células em uma tabela em etapas fáceis de seguir.
+Agora, vamos dividir o processo de permitir espaçamento de células em uma tabela em etapas fáceis de seguir.
 
-## Etapa 1: configurando seu projeto
+## Etapa 1: Configurando seu projeto
 
 Primeiramente, vamos configurar seu projeto no Visual Studio.
 
-### Etapa 1.1: Crie um novo projeto
+### Etapa 1.1: Criar um novo projeto
 
-Abra o Visual Studio e crie um novo aplicativo de console C#. Nomeie-o como "TableCellSpacingDemo".
+Abra o Visual Studio e crie um novo aplicativo de console C#. Dê a ele um nome como "TableCellSpacingDemo".
 
 ### Etapa 1.2: Adicionar Aspose.Words para .NET
 
-Adicione Aspose.Words for .NET ao seu projeto. Você pode fazer isso usando o Gerenciador de Pacotes NuGet. Clique com o botão direito no seu projeto, selecione "Gerenciar pacotes NuGet", pesquise "Aspose.Words" e instale-o.
+Adicione Aspose.Words para .NET ao seu projeto. Você pode fazer isso usando o NuGet Package Manager. Clique com o botão direito no seu projeto, selecione "Manage NuGet Packages", procure por "Aspose.Words" e instale-o.
 
-## Etapa 2: carregando seu documento
+## Etapa 2: Carregando seu documento
 
-A seguir, precisamos carregar o documento Word que contém a tabela que queremos modificar.
+Em seguida, precisamos carregar o documento do Word que contém a tabela que queremos modificar.
 
-### Passo 2.1: Definir o diretório de documentos
+### Etapa 2.1: Definir o diretório de documentos
 
-Primeiro, defina o caminho para o diretório do seu documento. É aqui que o seu documento do Word está localizado.
+Primeiro, defina o caminho para o diretório do seu documento. É aqui que seu documento do Word está localizado.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-### Passo 2.2: Carregar o Documento
+### Etapa 2.2: Carregue o documento
 
- Agora, carregue o documento usando o`Document` classe de Aspose.Words.
+ Agora, carregue o documento usando o`Document` classe do Aspose.Words.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Passo 3: Acessando a Tabela
+## Etapa 3: Acessando a tabela
 
-Assim que o documento for carregado, precisamos acessar a tabela específica que queremos modificar.
+Depois que o documento for carregado, precisamos acessar a tabela específica que queremos modificar.
 
-Recupere a tabela do documento. Assumiremos que é a primeira tabela do documento.
+Recupere a tabela do documento. Vamos supor que seja a primeira tabela do documento.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Etapa 4: ativar o espaçamento entre células
+## Etapa 4: Habilitando o espaçamento de células
 
-Agora, vamos habilitar o espaçamento entre células para a tabela.
+Agora, vamos habilitar o espaçamento de células para a tabela.
 
-### Etapa 4.1: permitir espaçamento entre células
+### Etapa 4.1: Permitir espaçamento de células
 
  Defina o`AllowCellSpacing` propriedade da tabela para`true`.
 
@@ -87,17 +87,17 @@ Agora, vamos habilitar o espaçamento entre células para a tabela.
 table.AllowCellSpacing = true;
 ```
 
-### Etapa 4.2: Definir o valor do espaçamento entre células
+### Etapa 4.2: Defina a quantidade de espaçamento entre células
 
-Defina a quantidade de espaçamento entre células. Aqui, estamos definindo para 2 pontos.
+Defina a quantidade de espaçamento de células. Aqui, estamos definindo para 2 pontos.
 
 ```csharp
 table.CellSpacing = 2;
 ```
 
-## Etapa 5: salvando o documento modificado
+## Etapa 5: Salvando o documento modificado
 
-Finalmente, salve o documento modificado no diretório especificado.
+Por fim, salve o documento modificado no diretório especificado.
 
  Use o`Save` método para salvar seu documento.
 
@@ -107,26 +107,26 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 
 ## Conclusão
 
-Parabéns! Você aprendeu com sucesso como permitir o espaçamento de células em uma tabela usando Aspose.Words for .NET. Essa pequena mudança pode melhorar significativamente a aparência de suas tabelas, tornando seus documentos mais profissionais e legíveis. Lembre-se de que a prática leva à perfeição, então não hesite em experimentar diferentes configurações e ver o que funciona melhor para você.
+Parabéns! Você aprendeu com sucesso como permitir espaçamento de células em uma tabela usando o Aspose.Words para .NET. Essa pequena alteração pode melhorar significativamente a aparência das suas tabelas, tornando seus documentos mais profissionais e legíveis. Lembre-se, a prática leva à perfeição, então não hesite em experimentar diferentes configurações e ver o que funciona melhor para você.
 
 ## Perguntas frequentes
 
 ### O que é Aspose.Words para .NET?
 
-Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores criar, manipular e converter documentos do Word programaticamente.
+Aspose.Words para .NET é uma biblioteca poderosa que permite aos desenvolvedores criar, manipular e converter documentos do Word programaticamente.
 
-### Posso usar Aspose.Words for .NET com outras linguagens de programação?
+### Posso usar o Aspose.Words para .NET com outras linguagens de programação?
 
-Aspose.Words for .NET foi projetado especificamente para linguagens .NET como C#. No entanto, existem outras versões do Aspose.Words disponíveis para Java, Python e muito mais.
+Aspose.Words para .NET é projetado especificamente para linguagens .NET como C#. No entanto, há outras versões do Aspose.Words disponíveis para Java, Python e mais.
 
 ### Como instalo o Aspose.Words para .NET?
 
-Você pode instalar o Aspose.Words for .NET usando o NuGet Package Manager no Visual Studio. Basta procurar por "Aspose.Words" e instalá-lo.
+Você pode instalar o Aspose.Words para .NET usando o NuGet Package Manager no Visual Studio. Basta procurar por "Aspose.Words" e instalá-lo.
 
-### Existe um teste gratuito disponível para Aspose.Words for .NET?
+### Existe uma versão de avaliação gratuita disponível para o Aspose.Words para .NET?
 
- Sim, você pode baixar uma avaliação gratuita em[aqui](https://releases.aspose.com/).
+ Sim, você pode baixar uma versão de avaliação gratuita em[aqui](https://releases.aspose.com/).
 
-### Onde posso encontrar mais documentação sobre Aspose.Words for .NET?
+### Onde posso encontrar mais documentação sobre o Aspose.Words para .NET?
 
  Você pode encontrar documentação abrangente[aqui](https://reference.aspose.com/words/net/).

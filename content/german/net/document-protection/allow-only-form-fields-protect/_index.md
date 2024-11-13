@@ -1,6 +1,6 @@
 ---
-title: Nur Formularfelder im Word-Dokument schützen lassen
-linktitle: Nur Formularfelder im Word-Dokument schützen lassen
+title: Nur Formularfelder schützen lassen im Word-Dokument
+linktitle: Nur Formularfelder schützen lassen im Word-Dokument
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie Word-Dokumente schützen und nur die Bearbeitung von Formularfeldern mit Aspose.Words für .NET zulassen. Folgen Sie unserer Anleitung, um sicherzustellen, dass Ihre Dokumente sicher und leicht bearbeitbar sind.
 type: docs
@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
- Hier erstellen wir ein neues`Document`Und`DocumentBuilder` Instanz. Die`DocumentBuilder` ermöglicht es uns, unserem Dokument Text hinzuzufügen.
+ Hier erstellen wir ein neues`Document` Und`DocumentBuilder` Instanz. Die`DocumentBuilder` ermöglicht es uns, unserem Dokument Text hinzuzufügen.
 
 ## Schritt 4: Schützen Sie das Dokument
 

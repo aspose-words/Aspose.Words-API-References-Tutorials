@@ -1,20 +1,20 @@
 ---
 title: การเพิ่มเนื้อหาโดยใช้ DocumentBuilder ใน Aspose.Words สำหรับ Java
 linktitle: การเพิ่มเนื้อหาโดยใช้ DocumentBuilder
-second_title: Aspose.Words Java การประมวลผลเอกสาร API
-description: การสร้างเอกสารหลักด้วย Aspose.Words สำหรับ Java คำแนะนำทีละขั้นตอนในการเพิ่มข้อความ ตาราง รูปภาพ และอื่นๆ สร้างเอกสาร Word ที่น่าทึ่งได้อย่างง่ายดาย
+second_title: API การประมวลผลเอกสาร Java ของ Aspose.Words
+description: สร้างเอกสารอย่างมืออาชีพด้วย Aspose.Words สำหรับ Java คำแนะนำทีละขั้นตอนในการเพิ่มข้อความ ตาราง รูปภาพ และอื่นๆ สร้างเอกสาร Word ที่สวยงามได้อย่างง่ายดาย
 type: docs
 weight: 26
 url: /th/java/document-manipulation/adding-content-using-documentbuilder/
 ---
 
-## ข้อมูลเบื้องต้นเกี่ยวกับการเพิ่มเนื้อหาโดยใช้ DocumentBuilder ใน Aspose.Words สำหรับ Java
+## การแนะนำการเพิ่มเนื้อหาโดยใช้ DocumentBuilder ใน Aspose.Words สำหรับ Java
 
-ในคำแนะนำทีละขั้นตอนนี้ เราจะสำรวจวิธีใช้ Aspose.Words สำหรับ DocumentBuilder ของ Java เพื่อเพิ่มเนื้อหาประเภทต่างๆ ลงในเอกสาร Word เราจะครอบคลุมถึงการแทรกข้อความ ตาราง กฎแนวนอน ฟิลด์แบบฟอร์ม HTML ไฮเปอร์ลิงก์ สารบัญ รูปภาพในบรรทัดและแบบลอย ย่อหน้า และอื่นๆ อีกมากมาย มาเริ่มกันเลย!
+ในคู่มือทีละขั้นตอนนี้ เราจะมาดูวิธีใช้ DocumentBuilder ของ Aspose.Words สำหรับ Java เพื่อเพิ่มเนื้อหาประเภทต่างๆ ลงในเอกสาร Word เราจะครอบคลุมการแทรกข้อความ ตาราง แนวระนาบ ฟิลด์ฟอร์ม HTML ไฮเปอร์ลิงก์ สารบัญ รูปภาพแบบอินไลน์และแบบลอย ย่อหน้า และอื่นๆ อีกมากมาย มาเริ่มกันเลย!
 
 ## ข้อกำหนดเบื้องต้น
 
- ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าไลบรารี Aspose.Words สำหรับ Java ในโปรเจ็กต์ของคุณแล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/java/).
+ ก่อนเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าไลบรารี Aspose.Words สำหรับ Java ไว้ในโปรเจ็กต์ของคุณแล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/java/).
 
 ## การเพิ่มข้อความ
 
@@ -22,7 +22,7 @@ url: /th/java/document-manipulation/adding-content-using-documentbuilder/
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกย่อหน้าข้อความธรรมดา
+// แทรกข้อความย่อหน้าแบบง่าย
 builder.write("This is a simple text paragraph.");
 
 // บันทึกเอกสาร
@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// เริ่มโต๊ะ
+// เริ่มต้นตาราง
 Table table = builder.startTable();
 
 // แทรกเซลล์และเนื้อหา
@@ -45,64 +45,64 @@ builder.write("Cell 1");
 builder.insertCell();
 builder.write("Cell 2");
 
-// ปิดท้ายโต๊ะ
+// จบตาราง
 builder.endTable();
 
 // บันทึกเอกสาร
 doc.save("path/to/your/document.docx");
 ```
 
-## การเพิ่มกฎแนวนอน
+## การเพิ่มเส้นแนวนอน
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกกฎแนวนอน
+// แทรกไม้บรรทัดแนวนอน
 builder.insertHorizontalRule();
 
 // บันทึกเอกสาร
 doc.save("path/to/your/document.docx");
 ```
 
-## การเพิ่มฟิลด์แบบฟอร์ม
+## การเพิ่มฟิลด์ฟอร์ม
 
-### ช่องกรอกข้อความ
+### ฟอร์มป้อนข้อความ
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกฟิลด์แบบฟอร์มการป้อนข้อความ
+// แทรกช่องฟอร์มป้อนข้อความ
 builder.insertTextInput("TextInput", TextFormFieldType.REGULAR, "", "Default text", 0);
 
 // บันทึกเอกสาร
 doc.save("path/to/your/document.docx");
 ```
 
-### ช่องทำเครื่องหมายช่องแบบฟอร์ม
+### แบบฟอร์มช่องกาเครื่องหมาย
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกฟิลด์แบบฟอร์มกล่องกาเครื่องหมาย
+// แทรกช่องกาเครื่องหมายแบบฟอร์ม
 builder.insertCheckBox("CheckBox", true, true, 0);
 
 // บันทึกเอกสาร
 doc.save("path/to/your/document.docx");
 ```
 
-### ฟิลด์ฟอร์มกล่องคำสั่งผสม
+### ฟอร์มกล่องคอมโบ
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// กำหนดรายการสำหรับกล่องคำสั่งผสม
+// กำหนดรายการสำหรับกล่องคอมโบ
 String[] items = { "Option 1", "Option 2", "Option 3" };
 
-// แทรกเขตข้อมูลฟอร์มกล่องคำสั่งผสม
+// แทรกฟิลด์ฟอร์มกล่องรวม
 builder.insertComboBox("DropDown", items, 0);
 
 // บันทึกเอกสาร
@@ -152,7 +152,7 @@ builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 // เพิ่มเนื้อหาเอกสาร
 // -
 
-// อัพเดตสารบัญ
+// อัปเดตสารบัญ
 doc.updateFields();
 
 // บันทึกเอกสาร
@@ -161,26 +161,26 @@ doc.save("path/to/your/document.docx");
 
 ## การเพิ่มรูปภาพ
 
-### รูปภาพอินไลน์
+### ภาพอินไลน์
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกรูปภาพในบรรทัด
+// แทรกภาพอินไลน์
 builder.insertImage("path/to/your/image.png");
 
 // บันทึกเอกสาร
 doc.save("path/to/your/document.docx");
 ```
 
-### รูปภาพลอยตัว
+### ภาพลอยน้ำ
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกรูปภาพแบบลอย
+// แทรกภาพลอย
 builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN, 100.0, RelativeVerticalPosition.MARGIN, 100.0, 200.0, 100.0, WrapType.SQUARE);
 
 // บันทึกเอกสาร
@@ -213,85 +213,85 @@ builder.writeln("This is a formatted paragraph.");
 doc.save("path/to/your/document.docx");
 ```
 
-## ขั้นตอนที่ 10: การเลื่อนเคอร์เซอร์
+## ขั้นตอนที่ 10: การย้ายเคอร์เซอร์
 
- คุณสามารถควบคุมตำแหน่งเคอร์เซอร์ภายในเอกสารได้โดยใช้วิธีการต่างๆ เช่น`moveToParagraph`, `moveToCell`และอีกมากมาย นี่คือตัวอย่าง:
+ คุณสามารถควบคุมตำแหน่งเคอร์เซอร์ภายในเอกสารได้โดยใช้หลากหลายวิธี เช่น`moveToParagraph`, `moveToCell`และอื่นๆ นี่คือตัวอย่าง:
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// ย้ายเคอร์เซอร์ไปยังย่อหน้าเฉพาะ
+// เลื่อนเคอร์เซอร์ไปที่ย่อหน้าที่ต้องการ
 builder.moveToParagraph(2, 0);
 
 // เพิ่มเนื้อหาที่ตำแหน่งเคอร์เซอร์ใหม่
 builder.writeln("This is the 3rd paragraph.");
 ```
 
-นี่คือการดำเนินการทั่วไปบางอย่างที่คุณสามารถทำได้โดยใช้ Aspose.Words สำหรับ DocumentBuilder ของ Java สำรวจเอกสารประกอบของไลบรารีเพื่อดูคุณสมบัติขั้นสูงและตัวเลือกการปรับแต่งเพิ่มเติม ขอให้มีความสุขกับการสร้างเอกสาร!
+เหล่านี้คือการดำเนินการทั่วไปบางอย่างที่คุณสามารถทำได้โดยใช้ Aspose.Words สำหรับ DocumentBuilder ของ Java สำรวจเอกสารของไลบรารีเพื่อดูคุณลักษณะขั้นสูงและตัวเลือกการปรับแต่ง สร้างเอกสารอย่างมีความสุข!
 
 
 ## บทสรุป
 
-ในคู่มือที่ครอบคลุมนี้ เราได้สำรวจความสามารถของ Aspose.Words สำหรับ DocumentBuilder ของ Java เพื่อเพิ่มเนื้อหาประเภทต่างๆ ลงในเอกสาร Word เราได้ครอบคลุมถึงข้อความ ตาราง กฎแนวนอน ฟิลด์แบบฟอร์ม HTML ไฮเปอร์ลิงก์ สารบัญ รูปภาพ ย่อหน้า และการเลื่อนเคอร์เซอร์
+ในคู่มือฉบับสมบูรณ์นี้ เราได้สำรวจความสามารถของ DocumentBuilder ของ Aspose.Words สำหรับ Java ในการเพิ่มเนื้อหาประเภทต่างๆ ลงในเอกสาร Word เราได้ครอบคลุมข้อความ ตาราง กฎแนวนอน ฟิลด์ฟอร์ม HTML ไฮเปอร์ลิงก์ สารบัญ รูปภาพ ย่อหน้า และการเคลื่อนเคอร์เซอร์
 
 ## คำถามที่พบบ่อย
 
-### ถาม: Aspose.Words สำหรับ Java คืออะไร
+### ถาม: Aspose.Words สำหรับ Java คืออะไร?
 
-ตอบ: Aspose.Words สำหรับ Java เป็นไลบรารี Java ที่ช่วยให้นักพัฒนาสามารถสร้าง แก้ไข และจัดการเอกสาร Microsoft Word โดยทางโปรแกรม โดยมีคุณสมบัติที่หลากหลายสำหรับการสร้างเอกสาร การจัดรูปแบบ และการแทรกเนื้อหา
+A: Aspose.Words for Java เป็นไลบรารี Java ที่ช่วยให้นักพัฒนาสามารถสร้าง แก้ไข และจัดการเอกสาร Microsoft Word ได้ด้วยโปรแกรม โดยมีคุณสมบัติมากมายสำหรับการสร้างเอกสาร การจัดรูปแบบ และการแทรกเนื้อหา
 
-### ถาม: ฉันจะเพิ่มสารบัญลงในเอกสารได้อย่างไร
+### ถาม: ฉันจะเพิ่มสารบัญลงในเอกสารของฉันได้อย่างไร
 
-ตอบ: หากต้องการเพิ่มสารบัญ ให้ใช้`DocumentBuilder` เพื่อแทรกฟิลด์สารบัญลงในเอกสารของคุณ ตรวจสอบให้แน่ใจว่าได้อัปเดตฟิลด์ในเอกสารหลังจากเพิ่มเนื้อหาเพื่อเติมสารบัญ นี่คือตัวอย่าง:
+ก: หากต้องการเพิ่มสารบัญ ให้ใช้`DocumentBuilder` เพื่อแทรกฟิลด์สารบัญลงในเอกสารของคุณ อย่าลืมอัปเดตฟิลด์ในเอกสารหลังจากเพิ่มเนื้อหาเพื่อเติมลงในสารบัญ นี่คือตัวอย่าง:
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกฟิลด์สารบัญ
+// แทรกช่องสารบัญ
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
 // เพิ่มเนื้อหาเอกสาร
 // -
 
-// อัพเดตสารบัญ
+// อัปเดตสารบัญ
 doc.updateFields();
 ```
 
-### ถาม: ฉันจะแทรกรูปภาพลงในเอกสารโดยใช้ Aspose.Words สำหรับ Java ได้อย่างไร
+### ถาม: ฉันจะแทรกภาพลงในเอกสารโดยใช้ Aspose.Words สำหรับ Java ได้อย่างไร
 
- ตอบ: คุณสามารถแทรกรูปภาพทั้งแบบอินไลน์และแบบลอยได้โดยใช้`DocumentBuilder`- นี่คือตัวอย่างของทั้งสอง:
+ A: คุณสามารถแทรกภาพได้ทั้งแบบอินไลน์และแบบลอยโดยใช้`DocumentBuilder`. ต่อไปนี้เป็นตัวอย่างของทั้งสอง:
 
-#### รูปภาพอินไลน์:
+#### ภาพอินไลน์:
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกรูปภาพในบรรทัด
+// แทรกภาพอินไลน์
 builder.insertImage("path/to/your/image.png");
 ```
 
-#### รูปภาพลอยตัว:
+#### ภาพลอย:
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// แทรกรูปภาพแบบลอย
+// แทรกภาพลอย
 builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN, 100.0, RelativeVerticalPosition.MARGIN, 100.0, 200.0, 100.0, WrapType.SQUARE);
 ```
 
 ### ถาม: ฉันสามารถจัดรูปแบบข้อความและย่อหน้าเมื่อเพิ่มเนื้อหาได้หรือไม่
 
- ตอบ: ได้ คุณสามารถจัดรูปแบบข้อความและย่อหน้าได้โดยใช้`DocumentBuilder`- คุณสามารถตั้งค่าคุณสมบัติแบบอักษร การจัดแนวย่อหน้า การเยื้อง และอื่นๆ ได้ นี่คือตัวอย่าง:
+ A: ใช่ คุณสามารถจัดรูปแบบข้อความและย่อหน้าโดยใช้`DocumentBuilder`คุณสามารถตั้งค่าคุณสมบัติของแบบอักษร การจัดตำแหน่งย่อหน้า การเยื้องย่อหน้า และอื่นๆ ได้ ต่อไปนี้คือตัวอย่าง:
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// ตั้งค่าการจัดรูปแบบแบบอักษรและย่อหน้า
+// ตั้งค่ารูปแบบฟอนต์และย่อหน้า
 Font font = builder.getFont();
 font.setSize(16.0);
 font.setBold(true);
@@ -304,23 +304,23 @@ paragraphFormat.setFirstLineIndent(8.0);
 paragraphFormat.setAlignment(ParagraphAlignment.JUSTIFY);
 paragraphFormat.setKeepTogether(true);
 
-// แทรกย่อหน้าที่มีการจัดรูปแบบ
+// แทรกย่อหน้าที่มีการจัดรูปแบบแล้ว
 builder.writeln("This is a formatted paragraph.");
 ```
 
-### ถาม: ฉันจะเลื่อนเคอร์เซอร์ไปยังตำแหน่งเฉพาะภายในเอกสารได้อย่างไร
+### ถาม: ฉันจะย้ายเคอร์เซอร์ไปยังตำแหน่งเฉพาะภายในเอกสารได้อย่างไร
 
- ตอบ: คุณสามารถควบคุมตำแหน่งเคอร์เซอร์ได้โดยใช้วิธีการเช่น`moveToParagraph`, `moveToCell`และอีกมากมาย นี่คือตัวอย่าง:
+ A: คุณสามารถควบคุมตำแหน่งเคอร์เซอร์ได้โดยใช้วิธีการเช่น`moveToParagraph`, `moveToCell`และอื่นๆ นี่คือตัวอย่าง:
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// ย้ายเคอร์เซอร์ไปยังย่อหน้าเฉพาะ
+// เลื่อนเคอร์เซอร์ไปที่ย่อหน้าที่ต้องการ
 builder.moveToParagraph(2, 0);
 
 // เพิ่มเนื้อหาที่ตำแหน่งเคอร์เซอร์ใหม่
 builder.writeln("This is the 3rd paragraph.");
 ```
 
-ต่อไปนี้เป็นคำถามและคำตอบทั่วไปที่จะช่วยคุณเริ่มต้นใช้งาน Aspose.Words สำหรับ DocumentBuilder ของ Java หากคุณมีคำถามเพิ่มเติมหรือต้องการความช่วยเหลือเพิ่มเติม โปรดดูที่[เอกสารของห้องสมุด](https://reference.aspose.com/words/java/) หรือขอความช่วยเหลือจากชุมชน Aspose.Words และแหล่งข้อมูลสนับสนุน
+เหล่านี้เป็นคำถามและคำตอบทั่วไปที่จะช่วยให้คุณเริ่มต้นใช้งาน Aspose.Words สำหรับ DocumentBuilder ของ Java ได้ หากคุณมีคำถามเพิ่มเติมหรือต้องการความช่วยเหลือเพิ่มเติม โปรดดูที่[เอกสารประกอบของห้องสมุด](https://reference.aspose.com/words/java/) หรือขอความช่วยเหลือจากชุมชน Aspose.Words และทรัพยากรสนับสนุน

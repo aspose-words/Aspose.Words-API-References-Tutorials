@@ -2,7 +2,7 @@
 title: カスタムドキュメントプロパティを追加する
 linktitle: カスタムドキュメントプロパティを追加する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word ファイルにカスタム ドキュメント プロパティを追加する方法を学びます。ステップ バイ ステップ ガイドに従って、追加のメタデータを使用してドキュメントを強化します。
+description: Aspose.Words for .NET を使用して、Word ファイルにカスタム ドキュメント プロパティを追加する方法を学びます。ステップ バイ ステップ ガイドに従って、追加のメタデータを使用してドキュメントを強化します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-document-properties/add-custom-document-properties/
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Properties.docx");
 
 ## ステップ2: カスタムドキュメントプロパティにアクセスする
 
-次に、Word 文書のカスタム ドキュメント プロパティにアクセスします。ここにすべてのカスタム メタデータが保存されます。
+次に、Word 文書のカスタム ドキュメント プロパティにアクセスします。ここに、すべてのカスタム メタデータが保存されます。
 
 ```csharp
 CustomDocumentProperties customDocumentProperties = doc.CustomDocumentProperties;
@@ -115,7 +115,7 @@ customDocumentProperties.Add("Authorized Amount", 123.45);
 
 これで完了です。Aspose.Words for .NET を使用して、Word 文書にカスタム ドキュメント プロパティを正常に追加できました。これらのプロパティは、ニーズに固有の追加メタデータを保存するのに非常に便利です。承認の詳細、リビジョン番号、特定の金額などを追跡する場合、カスタム プロパティは柔軟なソリューションを提供します。
 
-Aspose.Words for .NET をマスターするには、練習が鍵となることを忘れないでください。さまざまなプロパティを試してみて、それがドキュメントをどのように強化できるかを確認してください。コーディングを楽しんでください。
+Aspose.Words for .NET をマスターするには、実践が鍵となることを忘れないでください。さまざまなプロパティを試して、ドキュメントをどう強化できるかを確認してください。コーディングを楽しんでください。
 
 ## よくある質問
 

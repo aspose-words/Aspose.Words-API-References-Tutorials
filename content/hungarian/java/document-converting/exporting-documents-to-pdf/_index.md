@@ -26,7 +26,7 @@ Kezdje azzal, hogy hozzon létre egy új Java-projektet kedvenc IDE-jében. Ügy
 
 ## Word dokumentum betöltése
 
-Java-kódban be kell töltenie a PDF-be exportálni kívánt Word-dokumentumot. Ennek eléréséhez használja a következő kódrészletet:
+A Java-kódban be kell töltenie a PDF-be exportálni kívánt Word-dokumentumot. Ennek eléréséhez használja a következő kódrészletet:
 
 ```java
 // Töltse be a Word dokumentumot

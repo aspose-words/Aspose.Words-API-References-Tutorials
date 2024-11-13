@@ -2,25 +2,25 @@
 title: Firmas digitales en documentos
 linktitle: Firmas digitales en documentos
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda cómo implementar firmas digitales seguras en documentos usando Aspose.Words para Java. Garantice la integridad del documento con guía paso a paso y código fuente
+description: Aprenda a implementar firmas digitales seguras en documentos con Aspose.Words para Java. Garantice la integridad de los documentos con instrucciones paso a paso y código fuente
 type: docs
 weight: 13
 url: /es/java/document-security/digital-signatures-in-documents/
 ---
 
-Las firmas digitales desempeñan un papel crucial a la hora de garantizar la autenticidad y la integridad de los documentos digitales. Proporcionan una forma de verificar que un documento no ha sido manipulado y que, de hecho, fue creado o aprobado por el firmante indicado. En esta guía paso a paso, exploraremos cómo implementar firmas digitales en documentos usando Aspose.Words para Java. Cubriremos todo, desde configurar el entorno hasta agregar firmas digitales a sus documentos. ¡Empecemos!
+Las firmas digitales desempeñan un papel fundamental a la hora de garantizar la autenticidad e integridad de los documentos digitales. Proporcionan una forma de verificar que un documento no ha sido alterado y que, en efecto, fue creado o aprobado por el firmante indicado. En esta guía paso a paso, exploraremos cómo implementar firmas digitales en documentos utilizando Aspose.Words para Java. Cubriremos todo, desde la configuración del entorno hasta la incorporación de firmas digitales a sus documentos. ¡Comencemos!
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de profundizar en la implementación, asegúrese de tener implementados los siguientes requisitos previos:
+Antes de profundizar en la implementación, asegúrese de tener los siguientes requisitos previos:
 
--  Aspose.Words para Java: descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
+-  Aspose.Words para Java: Descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
-## Configurando su proyecto
+## Configuración de su proyecto
 
 1. Cree un nuevo proyecto Java en su entorno de desarrollo integrado (IDE) preferido.
 
-2. Agregue la biblioteca Aspose.Words para Java a su proyecto incluyendo el archivo JAR en su classpath.
+2. Agregue la biblioteca Aspose.Words para Java a su proyecto incluyendo el archivo JAR en su ruta de clase.
 
 ## Agregar una firma digital
 
@@ -30,7 +30,7 @@ Ahora, procedamos a agregar una firma digital a un documento:
 // Inicializar Aspose.Words
 com.aspose.words.Document doc = new com.aspose.words.Document("your_document.docx");
 
-// Crear un objeto de firma digital
+// Crear un objeto DigitalSignature
 com.aspose.words.digitalSignatures.DigitalSignature digitalSignature = new com.aspose.words.digitalSignatures.DigitalSignature();
 
 // Establecer la ruta del certificado
@@ -39,10 +39,10 @@ digitalSignature.setCertificateFile("your_certificate.pfx");
 //Establecer la contraseña para el certificado
 digitalSignature.setPassword("your_password");
 
-// Firma el documento
+// Firmar el documento
 doc.getDigitalSignatures().add(digitalSignature);
 
-// guardar el documento
+// Guardar el documento
 doc.save("signed_document.docx");
 ```
 
@@ -54,7 +54,7 @@ Para verificar una firma digital en un documento, siga estos pasos:
 // Cargar el documento firmado
 com.aspose.words.Document signedDoc = new com.aspose.words.Document("signed_document.docx");
 
-// Comprobar si el documento está firmado digitalmente
+// Compruebe si el documento está firmado digitalmente
 if (signedDoc.getDigitalSignatures().getCount() > 0) {
     // Verificar la firma digital
     boolean isValid = signedDoc.getDigitalSignatures().get(0).isValid();
@@ -71,7 +71,7 @@ if (signedDoc.getDigitalSignatures().getCount() > 0) {
 
 ## Conclusión
 
-En esta guía, hemos aprendido cómo implementar firmas digitales en documentos usando Aspose.Words para Java. Este es un paso crucial para garantizar la autenticidad e integridad de sus documentos digitales. Si sigue los pasos descritos aquí, podrá agregar y verificar con confianza firmas digitales en sus aplicaciones Java.
+En esta guía, hemos aprendido a implementar firmas digitales en documentos utilizando Aspose.Words para Java. Este es un paso crucial para garantizar la autenticidad e integridad de sus documentos digitales. Si sigue los pasos que se describen aquí, podrá agregar y verificar con confianza firmas digitales en sus aplicaciones Java.
 
 ## Preguntas frecuentes
 
@@ -81,7 +81,7 @@ Una firma digital es una técnica criptográfica que verifica la autenticidad e 
 
 ### ¿Puedo utilizar un certificado autofirmado para firmas digitales?
 
-Sí, puede utilizar un certificado autofirmado, pero es posible que no proporcione el mismo nivel de confianza que un certificado de una autoridad certificadora (CA) confiable.
+Sí, puede utilizar un certificado autofirmado, pero es posible que no proporcione el mismo nivel de confianza que un certificado de una autoridad de certificación (CA) confiable.
 
 ### ¿Aspose.Words para Java es compatible con otros formatos de documentos?
 
@@ -89,7 +89,7 @@ Sí, Aspose.Words para Java admite varios formatos de documentos, incluidos DOCX
 
 ### ¿Cómo puedo obtener un certificado digital para firmar documentos?
 
-Puede obtener un certificado digital de una autoridad certificadora (CA) confiable o crear un certificado autofirmado utilizando herramientas como OpenSSL.
+Puede obtener un certificado digital de una autoridad de certificación (CA) confiable o crear un certificado autofirmado utilizando herramientas como OpenSSL.
 
 ### ¿Son las firmas digitales legalmente vinculantes?
 

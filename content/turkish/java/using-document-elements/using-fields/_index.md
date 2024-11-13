@@ -1,26 +1,26 @@
 ---
-title: Aspose.Words for Java'da Alanları Kullanma
+title: Java için Aspose.Words'de Alanları Kullanma
 linktitle: Alanları Kullanma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Bu adım adım eğitimde Aspose.Words for Java alanlarını etkili bir şekilde kullanmayı öğrenin. Kolaylıkla dinamik Word belgeleri oluşturun.
+description: Bu adım adım eğitimde Aspose.Words for Java alanlarını etkili bir şekilde kullanmayı öğrenin. Dinamik Word belgelerini kolaylıkla oluşturun.
 type: docs
 weight: 11
 url: /tr/java/using-document-elements/using-fields/
 ---
 
-Bu adım adım eğitimde, belgeleri kolaylıkla işlemek için Aspose.Words for Java'daki alanların nasıl kullanılacağı konusunda size rehberlik edeceğiz. Aspose.Words for Java, Word belgeleriyle programlı olarak çalışmanıza olanak tanıyan, içerikleri ve formatları üzerinde tam kontrol sahibi olmanızı sağlayan güçlü bir API'dir.
+Bu adım adım eğitimde, Aspose.Words for Java'da belgeleri kolayca düzenlemek için alanları nasıl kullanacağınız konusunda size rehberlik edeceğiz. Aspose.Words for Java, Word belgeleriyle programatik olarak çalışmanıza olanak tanıyan ve içerikleri ve biçimlendirmeleri üzerinde tam kontrol sağlayan güçlü bir API'dir.
 
 ## 1. Giriş
 
-Aspose.Words for Java, Java uygulamalarında Word belgeleriyle ilgilenen herkes için önemli bir araçtır. Alanlar, dinamik verileri belgenizde saklayabilen yer tutuculardır. Bu eğitim size alanlarla etkili bir şekilde nasıl çalışacağınızı gösterecektir.
+Aspose.Words for Java, Java uygulamalarında Word belgeleriyle uğraşan herkes için olmazsa olmaz bir araçtır. Alanlar, belgenizde dinamik verileri depolayabilen yer tutuculardır. Bu eğitim, alanlarla etkili bir şekilde nasıl çalışacağınızı gösterecektir.
 
-## 2. Ortamınızı Kurmak
+## 2. Ortamınızı Ayarlama
 
- Başlamadan önce Aspose.Words for Java'nın kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/). Ayrıca sisteminizde Java'nın ve Eclipse veya IntelliJ IDEA gibi bir entegre geliştirme ortamının (IDE) kurulu olduğundan emin olun.
+ Başlamadan önce, Aspose.Words for Java'nın yüklü olduğundan emin olun. Bunu şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/)Ayrıca sisteminizde Java ve Eclipse veya IntelliJ IDEA gibi entegre bir geliştirme ortamının (IDE) yüklü olduğundan emin olun.
 
-## 3. Word Belgesi Yükleme
+## 3. Bir Word Belgesi Yükleme
 
-Java uygulamanızda çalışmak istediğiniz Word belgesini yüklemeniz gerekmektedir. İşte başlamanıza yardımcı olacak bir kod pasajı:
+Java uygulamanızda, çalışmak istediğiniz Word belgesini yüklemeniz gerekir. Başlamanız için işte bir kod parçası:
 
 ```java
 string dataDir = "Your Document Directory";
@@ -28,17 +28,17 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Yer değiştirmek`"Your Document Directory"`Ve`"Your Output Directory"` uygun yollar ile.
+ Yer değiştirmek`"Your Document Directory"` Ve`"Your Output Directory"` uygun yollarla.
 
-## 4. Adres Mektup Birleştirmeyi Özelleştirme
+## 4. Posta Birleştirmeyi Özelleştirme
 
-Aspose.Words for Java, adres-mektup birleştirme işlemleri için mükemmel destek sağlar. Bir adres-mektup birleştirme olay işleyicisi ayarlayarak adres-mektup birleştirme işlemini özelleştirebilirsiniz. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
+Java için Aspose.Words, posta birleştirme işlemleri için mükemmel destek sağlar. Bir posta birleştirme olay işleyicisi ayarlayarak posta birleştirme sürecini özelleştirebilirsiniz. İşte nasıl yapacağınız:
 
 ```java
-// Özel işi yapmak için adres-mektup birleştirme olay işleyicisini kurun.
+// Özel çalışmayı yapmak için posta birleştirme olay işleyicisini ayarlayın.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
 
-// Sondaki ve baştaki boşlukların adres-mektup birleştirme değerlerini kırpın.
+// Posta birleştirme değerlerinde son ve öndeki boşlukları kırpın.
 doc.getMailMerge().setTrimWhitespaces(false);
 
 String[] fieldNames = {
@@ -54,7 +54,7 @@ Object[] fieldValues = {
 doc.getMailMerge().execute(fieldNames, fieldValues);
 ```
 
-## 5. Belgeyi Kaydetmek
+## 5. Belgeyi Kaydetme
 
 Belgenizi özelleştirdikten sonra aşağıdaki kodu kullanarak kaydedebilirsiniz:
 
@@ -62,16 +62,16 @@ Belgenizi özelleştirdikten sonra aşağıdaki kodu kullanarak kaydedebilirsini
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```
 
- Yer değiştirmek`"Your Output Directory"` İstenilen çıkış yolu ile.
+ Yer değiştirmek`"Your Output Directory"` İstenilen çıktı yolu ile.
 
-## Kaynak Kodunu Tamamlayın
+## Tam Kaynak Kodu
 ```java
 string dataDir = "Your Document Directory";
 string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
-// Özel işi yapmak için adres-mektup birleştirme olay işleyicisini kurun.
+// Özel çalışmayı yapmak için posta birleştirme olay işleyicisini ayarlayın.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
-// Sondaki ve baştaki boşlukların adres-mektup birleştirme değerlerini kırpın.
+// Posta birleştirme değerlerinde son ve öndeki boşlukları kırpın.
 doc.getMailMerge().setTrimWhitespaces(false);
 String[] fieldNames = {
 	"RecipientName", "SenderName", "FaxNumber", "PhoneNumber",
@@ -90,17 +90,17 @@ HandleMergeField Sınıfının kaynak kodu
     private static class HandleMergeField implements IFieldMergingCallback
     {
         /// <özet>
-        /// Bu işleyici, belgede bulunan her adres-mektup birleştirme alanı için çağrılır,
-        /// veri kaynağında bulunan her kayıt için.
+        /// Bu işleyici, belgede bulunan her posta birleştirme alanı için çağrılır.
+        /// Veri kaynağında bulunan her kayıt için.
         /// </özet>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e) throws Exception
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // Tüm boole değerlerinin onay kutusu form alanları olarak çıktılanmasını istediğimize karar verdik.
+            // Tüm boole değerlerinin onay kutusu form alanları olarak çıktı olarak verilmesini istediğimize karar verdik.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
-                // "İmleci" mevcut birleştirme alanına taşıyın.
+                // "İmleci" geçerli birleştirme alanına taşıyın.
                 mBuilder.moveToMergeField(e.getFieldName());
                 String checkBoxName = MessageFormat.format("{0}{1}", e.getFieldName(), e.getRecordIndex());
                 mBuilder.insertCheckBox(checkBoxName, (Boolean) e.getFieldValue(), 0);
@@ -152,7 +152,7 @@ HandleMergeField Sınıfının kaynak kodu
     {
         public void fieldMerging(FieldMergingArgs args)
         {
-            // Uygulama gerekli değildir.
+            // Uygulanması zorunlu değildir.
         }
         public void imageFieldMerging(ImageFieldMergingArgs args) throws Exception
         {
@@ -203,19 +203,19 @@ HandleMergeField Sınıfının kaynak kodu
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // IF alanının içine yerleştirilmiş bir MERGEFIELD ekleyin.
-        // IF alanı ifadesi yanlış olduğundan iç MERGEFIELD'ın sonucu görüntülenmez,
-        //ve MERGEFIELD, adres-mektup birleştirme sırasında herhangi bir veri almayacaktır.
+        // Bir IF alanının içine yerleştirilmiş bir MERGEFIELD ekleyin.
+        // IF alan ifadesi yanlış olduğundan, iç MERGEFIELD'ın sonucu görüntülenmeyecektir.
+        //ve MERGEFIELD, posta birleştirme sırasında herhangi bir veri almayacaktır.
         FieldIf fieldIf = (FieldIf)builder.insertField(" IF 1 = 2 ");
         builder.moveTo(fieldIf.getSeparator());
         builder.insertField(" MERGEFIELD  FullName ");
-        // Bu bayrağı true olarak ayarlarsak, false-statement IF alanlarının içindeki MERGEFIELD'leri hâlâ sayabiliriz.
+        // Bu bayrağı true olarak ayarlarsak, yanlış ifadeli IF alanlarındaki MERGEFIELD'leri hala sayabiliriz.
         doc.getMailMerge().setUnconditionalMergeFieldsAndRegions(true);
         DataTable dataTable = new DataTable();
         dataTable.getColumns().add("FullName");
         dataTable.getRows().add("James Bond");
         doc.getMailMerge().execute(dataTable);
-        // IF alanı yanlış olduğundan sonuç belgede görünmeyecektir,
+        // IF alanı yanlış olduğundan sonuç belgede görünmeyecektir.
         // ancak iç MERGEFIELD gerçekten de veri aldı.
         doc.save("Your Directory Path" + "WorkingWithFields.MailMergeAndConditionalField.docx");
     }
@@ -239,17 +239,17 @@ HandleMergeField Sınıfının kaynak kodu
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Hiçbir şey yapma.
+            // Hiçbir şey yapmayın.
         }
         /// <özet>
-        /// Bu, adres-mektup birleştirme motoru belgede Resim:XXX birleştirme alanıyla karşılaştığında çağrılır.
-        /// Bir Görüntü nesnesini, dosya adını veya görüntüyü içeren bir akışı döndürme şansınız vardır.
+        /// Bu, posta birleştirme motorunun belgede Image:XXX birleştirme alanıyla karşılaştığında çağrılır.
+        /// Bir Resim nesnesi, dosya adı veya resmi içeren bir akışı döndürme şansınız var.
         /// </özet>
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs e) throws Exception
         {
-            // Alan değeri bir bayt dizisidir, onu yayınlayın ve üzerinde bir akış oluşturun.
+            // Alan değeri bir bayt dizisidir, sadece onu dönüştürün ve üzerinde bir akış oluşturun.
             ByteArrayInputStream imageStream = new ByteArrayInputStream((byte[]) e.getFieldValue());
-            // Artık adres-mektup birleştirme motoru görüntüyü akıştan alacaktır.
+            // Artık posta birleştirme motoru görüntüyü akıştan alacaktır.
             e.setImageStream(imageStream);
         }
     }
@@ -296,8 +296,8 @@ HandleMergeField Sınıfının kaynak kodu
     {
         /// <özet>
         /// Belgede karşılaşılan her birleştirme alanı için çağrılır.
-        /// Bazı verileri adres-mektup birleştirme motoruna geri gönderebiliriz veya belgeyle başka bir şey yapabiliriz.
-        /// Bu durumda hücre formatını değiştiriyoruz.
+        /// Birleştirme motoruna bazı veriler döndürebiliriz veya belgeyle başka bir şey yapabiliriz.
+        /// Bu durumda hücre biçimlendirmesini değiştiriyoruz.
         /// </özet>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e)
         {
@@ -305,11 +305,11 @@ HandleMergeField Sınıfının kaynak kodu
                 mBuilder = new DocumentBuilder(e.getDocument());
             if ("CompanyName".equals(e.getFieldName()))
             {
-                // Satır numarasının çift veya tek olmasına bağlı olarak rengi seçin.
+                // Satır numarasının çift veya tek olmasına göre rengi seçin.
                 Color rowColor = isOdd(mRowIdx) 
                     ? new Color((213), (227), (235)) 
                     : new Color((242), (242), (242));
-                //Şu anda satırın tamamı için hücre özelliklerini ayarlamanın bir yolu yok, bu nedenle satırdaki tüm hücreleri yinelememiz gerekiyor.
+                //Şu anda tüm satır için hücre özelliklerini ayarlamanın bir yolu yok, bu yüzden satırdaki tüm hücreler üzerinde yineleme yapmamız gerekiyor.
                 for (int colIdx = 0; colIdx < 4; colIdx++)
                 {
                     mBuilder.moveToCell(0, mRowIdx, colIdx, 0);
@@ -320,21 +320,21 @@ HandleMergeField Sınıfının kaynak kodu
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Hiçbir şey yapma.
+            // Hiçbir şey yapmayın.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;
     }
     /// <özet>
-    /// Değer tek ise true değerini döndürür; değer çift ise false.
+    /// Değer tek ise true, çift ise false döndürür.
     /// </özet>
     private static boolean isOdd(int value)
     {
         return (value / 2 * 2) == value;
     }
     /// <özet>
-    /// DataTable'ı oluşturun ve verilerle doldurun.
-    /// Gerçek hayatta bu DataTable bir veritabanından doldurulmalıdır.
+    /// DataTable'ı oluşturup içini verilerle doldur.
+    /// Gerçek hayatta bu DataTable'ın bir veritabanından doldurulması gerekir.
     /// </özet>
     private DataTable getSuppliersDataTable()
     {
@@ -355,24 +355,24 @@ HandleMergeField Sınıfının kaynak kodu
 
 ## 6. Sonuç
 
-Tebrikler! Word belgelerini dinamik olarak değiştirmek için Aspose.Words for Java'daki alanların nasıl kullanılacağını öğrendiniz. Bu güçlü API, belgeleriniz üzerinde tam kontrol sahibi olmanızı sağlar ve bu da onu Java geliştiricileri için değerli bir varlık haline getirir.
+Tebrikler! Aspose.Words for Java'da Word belgelerini dinamik olarak düzenlemek için alanları nasıl kullanacağınızı öğrendiniz. Bu güçlü API, belgeleriniz üzerinde tam kontrol sağlayarak onu Java geliştiricileri için değerli bir varlık haline getirir.
 
 ## 7. SSS
 
 ### S1: Aspose.Words for Java'yı nereden indirebilirim?
- Aspose.Words for Java'yı şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
+ Java için Aspose.Words'ü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
 
-### S2: Aspose.Words for Java için nasıl geçici lisans alabilirim?
- adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/).
+### S2: Aspose.Words for Java için geçici lisansı nasıl alabilirim?
+ Geçici lisansı şuradan alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
 
-### S3: Aspose.Words for Java desteğini nereden alabilirim?
- Destek için Aspose.Words forumunu ziyaret edebilirsiniz.[Burada](https://forum.aspose.com/).
+### S3: Java için Aspose.Words desteğini nereden alabilirim?
+ Destek için Aspose.Words forumunu ziyaret edebilirsiniz[Burada](https://forum.aspose.com/).
 
-### S4: Aspose.Words for Java, Word belgelerindeki HTML içeriğini işlemeye uygun mudur?
+### S4: Aspose.Words for Java, Word belgelerindeki HTML içeriğini işlemek için uygun mudur?
 Evet, Aspose.Words for Java, Word belgelerindeki HTML içeriğinin işlenmesi için mükemmel destek sağlar.
 
 ### S5: Aspose.Words for Java'yı ücretsiz kullanabilir miyim?
- Aspose.Words for Java ticari bir üründür, ancak özelliklerini mevcut ücretsiz deneme sürümüyle keşfedebilirsiniz[Burada](https://releases.aspose.com/).
+ Aspose.Words for Java ticari bir üründür, ancak ücretsiz deneme sürümüyle özelliklerini keşfedebilirsiniz[Burada](https://releases.aspose.com/).
 
-Aspose.Words for Java'yı bugün kullanmaya başlayın ve Word belgelerinizin kontrolünü daha önce hiç olmadığı şekilde elinize alın!
+Bugün Aspose.Words for Java'yı kullanmaya başlayın ve Word belgelerinizin kontrolünü daha önce hiç olmadığı kadar ele alın!
 

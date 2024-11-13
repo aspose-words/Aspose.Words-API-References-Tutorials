@@ -39,7 +39,7 @@ Táblázatok létrehozásához és dokumentumokba való beszúrásához az Aspos
     table = builder.start_table()
     ```
 
-2.  Adatok beszúrása: Adatok hozzáadása a táblához az építő segítségével`insert_cell`és`write` mód.
+2.  Adatok beszúrása: Adatok hozzáadása a táblához az építő segítségével`insert_cell` és`write` mód.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Táblázatok létrehozásához és dokumentumokba való beszúrásához az Aspos
 
 ## Alapvető táblázatformázás alkalmazása
 
- Az alapvető táblázatformázás a által biztosított módszerekkel érhető el`Table`és`Cell` osztályok. A következőképpen javíthatja asztala megjelenését:
+ Az alapvető táblázatformázás a által biztosított módszerekkel érhető el`Table` és`Cell` osztályok. A következőképpen javíthatja asztala megjelenését:
 
 1. Oszlopszélesség beállítása: Állítsa be az oszlopok szélességét a megfelelő igazítás és látványosság érdekében.
 
@@ -157,9 +157,9 @@ Javítsa a táblázat megjelenését szegélyek és árnyékolás hozzáadásáv
     cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
     ```
 
-## Munka a cellatartalommal és -igazítással
+## Munka a cellatartalommal és az igazítással
 
-Hatékonyan kezelheti a cella tartalmát és igazítását a jobb olvashatóság érdekében:
+Hatékonyan kezelheti a cellatartalmat és az igazítást a jobb olvashatóság érdekében:
 
 1. Cellatartalom: Tartalom, például szöveg és kép beszúrása a cellákba.
 

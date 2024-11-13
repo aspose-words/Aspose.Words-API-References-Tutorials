@@ -1,5 +1,5 @@
 ---
-title: Set Footnote And End Note Position
+title: Set Footnote And Endnote Position
 linktitle: Set Footnote And End Note Position
 second_title: Aspose.Words Document Processing API
 description: Learn how to set footnote and endnote positions in Word documents using Aspose.Words for .NET with this detailed step-by-step guide.

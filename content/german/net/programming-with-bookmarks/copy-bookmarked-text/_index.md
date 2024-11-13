@@ -104,7 +104,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Abschluss
 
-Und das war’s! Sie haben mit Aspose.Words für .NET erfolgreich mit Lesezeichen versehenen Text von einem Word-Dokument in ein anderes kopiert. Diese Methode ist leistungsstark für die Automatisierung von Dokumentbearbeitungsaufgaben und macht Ihren Arbeitsablauf effizienter und schlanker.
+Und das war’s! Sie haben mit Aspose.Words für .NET erfolgreich mit Lesezeichen versehenen Text von einem Word-Dokument in ein anderes kopiert. Diese Methode ist leistungsstark für die Automatisierung von Dokumentbearbeitungsaufgaben und macht Ihren Arbeitsablauf effizienter und rationalisierter.
 
 ## Häufig gestellte Fragen
 
@@ -112,7 +112,7 @@ Und das war’s! Sie haben mit Aspose.Words für .NET erfolgreich mit Lesezeiche
 Ja, Sie können mehrere Lesezeichen durchsuchen und jedes mit der gleichen Methode kopieren.
 
 ### Was passiert, wenn das Lesezeichen nicht gefunden wird?
- Der`Range.Bookmarks` Eigentum wird zurückgegeben`null`, stellen Sie also sicher, dass Sie diesen Fall behandeln, um Ausnahmen zu vermeiden.
+Der`Range.Bookmarks` Eigentum wird zurückgegeben`null`, stellen Sie also sicher, dass Sie diesen Fall behandeln, um Ausnahmen zu vermeiden.
 
 ### Kann ich die Formatierung des ursprünglichen Lesezeichens beibehalten?
  Auf jeden Fall! Mit`ImportFormatMode.KeepSourceFormatting` stellt sicher, dass die ursprüngliche Formatierung erhalten bleibt.

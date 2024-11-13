@@ -13,7 +13,7 @@ Mussten Sie schon einmal ein Dokument mit einem Passwort schützen? Damit sind S
 
 ## Voraussetzungen
 
-Bevor wir uns mit dem Code die Hände schmutzig machen, benötigen Sie ein paar Dinge:
+Bevor wir uns mit dem Code die Hände schmutzig machen, brauchen Sie ein paar Dinge:
 1.  Aspose.Words für .NET: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine beliebige C#-IDE Ihrer Wahl.
 3. .NET Framework: Stellen Sie sicher, dass Sie es installiert haben.
@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 - dataDir: Diese Variable speichert den Pfad, unter dem Ihr Dokument gespeichert wird.
 - Document doc = neues Dokument(): Diese Zeile initialisiert ein neues Dokument.
-- DocumentBuilder Builder = neuer DocumentBuilder(doc): Der DocumentBuilder ist ein praktisches Tool zum Hinzufügen von Inhalten zu Ihrem Dokument.
+- DocumentBuilder Builder = neuer DocumentBuilder (doc): Der DocumentBuilder ist ein praktisches Tool zum Hinzufügen von Inhalten zu Ihrem Dokument.
 
 ## Schritt 2: Inhalt hinzufügen
 
@@ -97,7 +97,7 @@ Und da haben Sie es! Sie haben gerade gelernt, wie Sie mit Aspose.Words für .NE
 Wenn Sie das Passwort vergessen, können Sie leider nicht auf das Dokument zugreifen. Bewahren Sie Ihre Passwörter gut auf!
 
 ### Kann ich das Passwort eines bestehenden Dokuments ändern?
-Ja, Sie können mit denselben Schritten ein bestehendes Dokument laden und es mit einem neuen Passwort speichern.
+Ja, Sie können mit den gleichen Schritten ein bestehendes Dokument laden und es mit einem neuen Passwort speichern.
 
 ### Ist es möglich, das Passwort aus einem Dokument zu entfernen?
 Ja, durch das Speichern des Dokuments ohne Angabe eines Passworts können Sie den bestehenden Passwortschutz aufheben.

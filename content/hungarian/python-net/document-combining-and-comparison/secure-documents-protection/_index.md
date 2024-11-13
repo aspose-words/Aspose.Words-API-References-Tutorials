@@ -90,7 +90,7 @@ Az Aspose.Words for Python lehetővé teszi a dokumentumok biztonságos védelm�
 
 ### Hogyan telepíthetem az Aspose.Words for Python programot?
 
- Telepítheti a pip használatával a következő futtatásával:`pip install aspose-words`.
+ Telepítheti a pip segítségével a következő futtatásával:`pip install aspose-words`.
 
 ### Korlátozhatom a szerkesztést bizonyos csoportokra?
 

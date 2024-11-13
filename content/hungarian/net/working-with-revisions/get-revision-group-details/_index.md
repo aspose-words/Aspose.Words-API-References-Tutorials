@@ -103,7 +103,7 @@ Teljesen! Bármilyen .NET nyelvvel használható, beleértve a C#-ot, a VB.NET-e
  Ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/).
 
 ### Szükségem van licencre az Aspose.Words for .NET használatához?
- Igen, az Aspose.Words for .NET szolgáltatáshoz licenc szükséges a teljes funkcionalitáshoz. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
+ Igen, az Aspose.Words for .NET szolgáltatáshoz licenc szükséges a teljes funkcionalitáshoz. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
- A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
+ részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).

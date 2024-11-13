@@ -82,4 +82,4 @@ Ano, Aspose.Words for Java je vynikající volbou pro společnou správu dokumen
 
 ### Kde najdu další informace a dokumentaci k Aspose.Words for Java?
 
-Komplexní dokumentaci k Aspose.Words for Java naleznete na adrese[zde](https://reference.aspose.com/words/java/).
+ Komplexní dokumentaci k Aspose.Words for Java naleznete na adrese[zde](https://reference.aspose.com/words/java/).

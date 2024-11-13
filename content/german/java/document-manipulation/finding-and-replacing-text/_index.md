@@ -180,11 +180,11 @@ Document doc = new Document("your-document.docx");
 // Holen Sie sich den ersten Abschnitt
 Section firstPageSection = doc.getFirstSection();
 
-// Erstellen Sie eine FindReplaceOptions-Instanz und wenden Sie sie auf den Bereich des Dokuments an
+//Erstellen Sie eine FindReplaceOptions-Instanz und wenden Sie sie auf den Bereich des Dokuments an
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceLog());
 
-//Ersetzen von Text, der die Reihenfolge von Kopf- und Fußzeilen beeinflusst
+// Ersetzen von Text, der die Reihenfolge von Kopf- und Fußzeilen beeinflusst
 doc.getRange().replace(Pattern.compile("(header|footer)"), "", options);
 
 // Speichern des geänderten Dokuments
@@ -260,7 +260,7 @@ Mit Aspose.Words für Java können Sie Ersetzungen innerhalb von Ersetzungsmuste
 // Laden Sie das Dokument
 Document doc = new Document("your-document.docx");
 
-//Erstellen Sie eine FindReplaceOptions-Instanz mit UseSubstitutions auf true
+// Erstellen Sie eine FindReplaceOptions-Instanz mit UseSubstitutions auf true
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseSubstitutions(true);
 
@@ -271,7 +271,7 @@ doc.getRange().replace(Pattern.compile("([A-z]+) give money to ([A-z]+)"), "$2 t
 doc.save("modified-document.docx");
 ```
 
-Auf diese Weise können Sie innerhalb der Ersetzungsmuster Ersetzungen für komplexere Ersetzungen durchführen.
+Auf diese Weise können Sie innerhalb der Ersetzungsmuster Ersetzungen für erweiterte Ersetzungen durchführen.
 
 ## Ersetzen durch eine Zeichenfolge
 
@@ -322,7 +322,7 @@ Document doc = new Document("your-document.docx");
 // Holen Sie sich eine bestimmte Tabelle (z. B. die erste Tabelle)
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 
-// Verwenden Sie FindReplaceOptions zum Ersetzen von Text in der Tabelle
+//Verwenden Sie FindReplaceOptions zum Ersetzen von Text in der Tabelle
 table.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 
 // Speichern des geänderten Dokuments
@@ -333,7 +333,7 @@ Damit ist es möglich, Textersetzungen gezielt innerhalb von Tabellen vorzunehme
 
 ## Abschluss
 
-Aspose.Words für Java bietet umfassende Funktionen zum Suchen und Ersetzen von Text in Word-Dokumenten. Egal, ob Sie einfache Textersetzungen oder erweiterte Operationen mit regulären Ausdrücken, Feldmanipulationen oder benutzerdefinierten Evaluatoren durchführen müssen, Aspose.Words für Java bietet alles. Sehen Sie sich unbedingt die umfangreiche Dokumentation und die Beispiele von Aspose an, um das volle Potenzial dieser leistungsstarken Java-Bibliothek auszuschöpfen.
+Aspose.Words für Java bietet umfassende Funktionen zum Suchen und Ersetzen von Text in Word-Dokumenten. Ob Sie einfache Textersetzungen oder erweiterte Operationen mit regulären Ausdrücken, Feldmanipulationen oder benutzerdefinierten Evaluatoren durchführen müssen, Aspose.Words für Java bietet alles. Sehen Sie sich unbedingt die umfangreiche Dokumentation und die Beispiele von Aspose an, um das volle Potenzial dieser leistungsstarken Java-Bibliothek auszuschöpfen.
 
 ## Häufig gestellte Fragen
 
@@ -347,7 +347,7 @@ Ja, Sie können reguläre Ausdrücke zum Ersetzen von Text in Aspose.Words für 
 
 ### Wie kann ich Text in Feldern beim Ersetzen ignorieren?
 
- Um Text in Feldern beim Ersetzen zu ignorieren, können Sie die`IgnoreFields` Eigentum der`FindReplaceOptions` Zu`true`Dadurch wird sichergestellt, dass Text in Feldern, wie z. B. Seriendruckfeldern, vom Ersetzen ausgeschlossen wird.
+Um Text in Feldern beim Ersetzen zu ignorieren, können Sie die`IgnoreFields` Eigentum der`FindReplaceOptions` Zu`true`. Dadurch wird sichergestellt, dass Text in Feldern, wie z. B. Seriendruckfeldern, vom Ersetzen ausgeschlossen wird.
 
 ### Kann ich Text in Kopf- und Fußzeilen ersetzen?
 
@@ -355,4 +355,4 @@ Ja, Sie können reguläre Ausdrücke zum Ersetzen von Text in Aspose.Words für 
 
 ### Wofür ist die Option UseLegacyOrder?
 
- Der`UseLegacyOrder` Option in`FindReplaceOptions` ermöglicht Ihnen, bei Such- und Ersetzungsvorgängen die alte Reihenfolge zu verwenden. Dies kann in bestimmten Szenarien nützlich sein, in denen das alte Reihenfolgeverhalten erwünscht ist.
+Der`UseLegacyOrder` Option in`FindReplaceOptions` ermöglicht Ihnen, bei Such- und Ersetzungsvorgängen die alte Reihenfolge zu verwenden. Dies kann in bestimmten Szenarien nützlich sein, in denen das alte Reihenfolgeverhalten erwünscht ist.

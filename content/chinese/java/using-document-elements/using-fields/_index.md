@@ -309,7 +309,7 @@ HandleMergeField 类的源代码
                 Color rowColor = isOdd(mRowIdx) 
                     ? new Color((213), (227), (235)) 
                     : new Color((242), (242), (242));
-                //目前没有办法为整行设置单元格属性，所以我们必须遍历该行的所有单元格。
+                //目前没有办法为整行设置单元格属性，所以我们必须遍历该行中的所有单元格。
                 for (int colIdx = 0; colIdx < 4; colIdx++)
                 {
                     mBuilder.moveToCell(0, mRowIdx, colIdx, 0);

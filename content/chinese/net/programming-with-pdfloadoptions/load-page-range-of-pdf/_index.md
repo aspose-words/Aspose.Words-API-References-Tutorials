@@ -17,7 +17,7 @@ url: /zh/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 
 1. Aspose.Words for .NET：确保您拥有 Aspose.Words 库。如果您还没有，您可以[点击下载](https://releases.aspose.com/words/net/).
 2. 开发环境：使用 Visual Studio 或任何其他首选 IDE 设置您的开发环境。
-3. 许可证：虽然 Aspose.Words 提供免费试用，但可以考虑获取[临时执照](https://purchase.aspose.com/temporary-license/)实现所有功能，不受限制。
+3. 许可证：虽然 Aspose.Words 提供免费试用，但您可以考虑获取[临时执照](https://purchase.aspose.com/temporary-license/)获得完整功能，不受限制。
 
 ## 导入命名空间
 
@@ -97,7 +97,7 @@ Aspose.Words 允许您一次指定一个页面范围。要加载多个范围，�
 是的，Aspose.Words for .NET 与 .NET Core 完全兼容，使其适用于各种项目类型。
 
 ### 如何才能有效地处理大型 PDF 文件？
-通过仅加载特定页面`PdfLoadOptions`，您可以有效地管理内存使用情况，尤其是对于大型 PDF 文件。
+使用以下方式仅加载特定页面`PdfLoadOptions`，您可以有效地管理内存使用情况，尤其是对于大型 PDF 文件。
 
 ### 我可以进一步操作已加载的页面吗？
 当然可以！加载后，您可以像操作其他 Aspose.Words 文档一样操作这些页面，包括编辑、格式化和转换为其他格式。

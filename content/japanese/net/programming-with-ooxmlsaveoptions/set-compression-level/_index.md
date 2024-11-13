@@ -38,7 +38,7 @@ using Aspose.Words.Saving;
 
 コードに入る前に、プロジェクトが正しく設定されていることを確認してください。
 
-### ステップ 1.1: 新しいプロジェクトを作成する
+### ステップ1.1: 新しいプロジェクトを作成する
 
 Visual Studio を開き、新しい C# コンソール アプリケーション プロジェクトを作成します。「AsposeWordsCompressionDemo」のような名前を付けます。
 
@@ -62,7 +62,7 @@ Install-Package Aspose.Words
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-### ステップ2.2: ドキュメントを読み込む
+### ステップ 2.2: ドキュメントを読み込む
 
 Word 文書を読み込むには、次のコードを使用します。
 
@@ -107,7 +107,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveO
 
 ### Aspose.Words for .NET とは何ですか?
 
-Aspose.Words for .NET は、開発者が .NET を使用してプログラム的に Word 文書を作成、編集、変換、印刷できるようにする強力なドキュメント操作ライブラリです。
+Aspose.Words for .NET は、開発者が .NET を使用してプログラムで Word 文書を作成、編集、変換、印刷できるようにする強力なドキュメント操作ライブラリです。
 
 ### Aspose.Words for .NET をインストールするにはどうすればよいですか?
 
@@ -123,4 +123,4 @@ Aspose.Words for .NET には、標準、最大、高速、超高速など、複�
 
 ### 問題が発生した場合、どこでサポートを受けることができますか?
 
- Asposeコミュニティからサポートを受けるには、次のサイトにアクセスしてください。[サポートフォーラム](https://forum.aspose.com/c/words/8).
+ Asposeコミュニティからサポートを受けるには、[サポートフォーラム](https://forum.aspose.com/c/words/8).

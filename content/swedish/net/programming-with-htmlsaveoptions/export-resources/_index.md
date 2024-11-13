@@ -16,7 +16,7 @@ Hej där, andra teknikentusiast! Om du någonsin har märkt att du behöver konv
 Innan vi dyker in i koden, låt oss se till att du har allt du behöver för att komma igång. Här är en snabb checklista:
 
 1.  Visual Studio: Se till att du har Visual Studio installerat på din dator. Du kan ladda ner den från[Visual Studio hemsida](https://visualstudio.microsoft.com/).
-2.  Aspose.Words for .NET: Du behöver Aspose.Words for .NET-biblioteket. Om du inte har fått det ännu, prova gratis från[Aspose släpper](https://releases.aspose.com/words/net/) eller köp den från[Aspose Store](https://purchase.aspose.com/buy).
+2.  Aspose.Words for .NET: Du behöver Aspose.Words for .NET-biblioteket. Om du inte har det ännu, prova gratis från[Aspose släpper](https://releases.aspose.com/words/net/) eller köp den från[Aspose Store](https://purchase.aspose.com/buy).
 3. Grundläggande kunskaper om C#: En grundläggande förståelse av C# hjälper dig att följa med i kodexemplen.
 
 Har du allt det där? Stor! Låt oss gå vidare till att importera de nödvändiga namnrymden.

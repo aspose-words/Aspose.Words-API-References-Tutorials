@@ -13,7 +13,7 @@ url: /zh/net/working-with-oleobjects-and-activex/insert-ole-object/
 
 ## 先决条件
 
-在开始之前，请确保您已准备好以下物品：
+在开始之前，请确保您已准备好以下内容：
 
 1. Aspose.Words for .NET 库：从以下网址下载[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：Visual Studio 或任何其他.NET 开发环境。
@@ -21,7 +21,7 @@ url: /zh/net/working-with-oleobjects-and-activex/insert-ole-object/
 
 ## 导入命名空间
 
-首先，请确保在 C# 项目中导入必要的命名空间：
+首先，确保在 C# 项目中导入必要的命名空间：
 
 ```csharp
 using Aspose.Words;
@@ -62,10 +62,10 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 ## 常见问题解答
 
 ### 我可以使用 Aspose.Words for .NET 插入哪些类型的 OLE 对象？
-您可以插入各种类型的 OLE 对象，包括 HTML 文件、Excel 电子表格、PowerPoint 演示文稿和其他与 OLE 兼容的内容。
+您可以插入各种类型的 OLE 对象，包括 HTML 文件、Excel 电子表格、PowerPoint 演示文稿和其他 OLE 兼容内容。
 
 ### 我可以将 OLE 对象显示为图标而不是其实际内容吗？
-是的，您可以选择将 OLE 对象显示为图标，方法是设置`asIcon`参数`true`.
+是的，您可以通过设置`asIcon`参数`true`.
 
 ### 是否可以将 OLE 对象链接到其源文件？
 是的，通过设置`isLinked`参数`true`，您可以将 OLE 对象链接到其源文件。

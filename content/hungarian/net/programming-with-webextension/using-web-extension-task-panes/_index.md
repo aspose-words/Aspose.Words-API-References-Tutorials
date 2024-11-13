@@ -18,7 +18,7 @@ Mielőtt belemerülnénk, győződjünk meg arról, hogy mindent megvan, amire s
 -  Aspose.Words for .NET: Letöltheti[itt](https://releases.aspose.com/words/net/).
 - .NET fejlesztői környezet: Visual Studio vagy bármely más IDE, amit szeretne.
 - Alapvető C# ismerete: Ez segít a kódpéldák követésében.
--  Licenc az Aspose.Words számára: Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
+-  Licenc az Aspose.Words számára: Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
 ## Névterek importálása
 

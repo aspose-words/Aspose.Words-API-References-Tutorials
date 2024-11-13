@@ -2,20 +2,20 @@
 title: Penandaan Air Dokumen dan Pengaturan Halaman
 linktitle: Penandaan Air Dokumen dan Pengaturan Halaman
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara menerapkan tanda air dan mengatur konfigurasi halaman dengan Aspose.Words untuk Java. Panduan komprehensif dengan kode sumber.
+description: Pelajari cara menerapkan tanda air dan mengatur konfigurasi halaman dengan Aspose.Words untuk Java. Panduan lengkap dengan kode sumber.
 type: docs
 weight: 13
 url: /id/java/document-styling/document-watermarking-page-setup/
 ---
 ## Perkenalan
 
-Dalam bidang manipulasi dokumen, Aspose.Words untuk Java berdiri sebagai alat yang ampuh, memungkinkan pengembang untuk memegang kendali atas setiap aspek pemrosesan dokumen. Dalam panduan komprehensif ini, kita akan mempelajari seluk-beluk watermarking dokumen dan pengaturan halaman menggunakan Aspose.Words untuk Java. Baik Anda seorang pengembang berpengalaman atau baru terjun ke dunia pemrosesan dokumen Java, panduan langkah demi langkah ini akan membekali Anda dengan pengetahuan dan kode sumber yang Anda perlukan.
+Dalam ranah manipulasi dokumen, Aspose.Words untuk Java merupakan alat yang ampuh, yang memungkinkan pengembang memegang kendali atas setiap aspek pemrosesan dokumen. Dalam panduan komprehensif ini, kita akan membahas seluk-beluk pemberian tanda air pada dokumen dan pengaturan halaman menggunakan Aspose.Words untuk Java. Apakah Anda seorang pengembang berpengalaman atau baru saja terjun ke dunia pemrosesan dokumen Java, panduan langkah demi langkah ini akan membekali Anda dengan pengetahuan dan kode sumber yang Anda butuhkan.
 
 ## Penandaan Air Dokumen
 
 ### Menambahkan Tanda Air
 
-Menambahkan tanda air ke dokumen bisa menjadi hal yang penting untuk memberi merek atau mengamankan konten Anda. Aspose.Words untuk Java membuat tugas ini mudah. Begini caranya:
+Menambahkan tanda air ke dokumen dapat menjadi hal penting untuk memberi merek atau mengamankan konten Anda. Aspose.Words untuk Java mempermudah tugas ini. Berikut caranya:
 
 ```java
 // Muat dokumen
@@ -37,13 +37,13 @@ watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
 // Masukkan tanda air
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
-// Simpan dokumennya
+// Simpan dokumen
 doc.save("document_with_watermark.docx");
 ```
 
 ### Menyesuaikan Tanda Air
 
-Anda selanjutnya dapat menyesuaikan tanda air dengan menyesuaikan font, ukuran, warna, dan rotasi. Fleksibilitas ini memastikan tanda air Anda cocok dengan gaya dokumen Anda.
+Anda dapat menyesuaikan tanda air lebih lanjut dengan menyesuaikan font, ukuran, warna, dan rotasi. Fleksibilitas ini memastikan tanda air Anda sesuai dengan gaya dokumen Anda dengan sempurna.
 
 ## Pengaturan Halaman
 
@@ -55,26 +55,26 @@ Pengaturan halaman sangat penting dalam pemformatan dokumen. Aspose.Words untuk 
 // Muat dokumen
 Document doc = new Document("document.docx");
 
-// Atur ukuran halaman menjadi A4
+// Atur ukuran halaman ke A4
 doc.getFirstSection().getPageSetup().setPageWidth(595.0);
 doc.getFirstSection().getPageSetup().setPageHeight(842.0);
 
 // Ubah orientasi halaman menjadi lanskap
 doc.getFirstSection().getPageSetup().setOrientation(Orientation.LANDSCAPE);
 
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("formatted_document.docx");
 ```
 
 ### Margin dan Penomoran Halaman
 
-Kontrol yang tepat atas margin dan penomoran halaman sangat penting untuk dokumen profesional. Capai ini dengan Aspose.Words untuk Java:
+Kontrol yang tepat atas margin dan penomoran halaman sangat penting untuk dokumen profesional. Raihlah ini dengan Aspose.Words untuk Java:
 
 ```java
 // Muat dokumen
 Document doc = new Document("document.docx");
 
-// Tetapkan margin
+// Mengatur margin
 doc.getFirstSection().getPageSetup().setLeftMargin(72.0);
 doc.getFirstSection().getPageSetup().setRightMargin(72.0);
 doc.getFirstSection().getPageSetup().setTopMargin(72.0);
@@ -89,11 +89,11 @@ firstPageHeader.appendParagraph("First Page Header");
 doc.save("formatted_document.docx");
 ```
 
-## FAQ
+## Tanya Jawab Umum
 
 ### Bagaimana cara menghapus tanda air dari dokumen?
 
-Untuk menghapus tanda air dari dokumen, Anda dapat mengulangi bentuk dokumen dan menghapus bentuk yang mewakili tanda air. Berikut cuplikannya:
+Untuk menghapus tanda air dari dokumen, Anda dapat menelusuri bentuk dokumen dan menghapus bentuk yang mewakili tanda air. Berikut cuplikannya:
 
 ```java
 Document doc = new Document("document_with_watermark.docx");
@@ -122,22 +122,22 @@ doc.getFirstSection().getPageSetup().setPageHeight(595.0);
 
 ### Apa font default untuk tanda air?
 
-Font default untuk watermark adalah Calibri dengan ukuran font 36.
+Font default untuk tanda air adalah Calibri dengan ukuran font 36.
 
 ### Bagaimana cara menambahkan nomor halaman mulai dari halaman tertentu?
 
-Anda dapat mencapainya dengan mengatur nomor halaman awal di dokumen Anda sebagai berikut:
+Anda dapat mencapainya dengan mengatur nomor halaman awal dalam dokumen Anda sebagai berikut:
 
 ```java
 doc.getFirstSection().getPageSetup().setPageStartingNumber(5);
 ```
 
-### Bagaimana cara meratakan teks di tengah header atau footer?
+### Bagaimana cara meratakan tengah teks di header atau footer?
 
-Anda dapat meratakan tengah teks di header atau footer dengan menggunakan metode setAlignment pada objek Paragraph di dalam header atau footer.
+Anda dapat menyelaraskan teks di tengah header atau footer dengan menggunakan metode setAlignment pada objek Paragraph di dalam header atau footer.
 
 ## Kesimpulan
 
-Dalam panduan ekstensif ini, kami telah menjelajahi seni penandaan air pada dokumen dan pengaturan halaman menggunakan Aspose.Words untuk Java. Berbekal cuplikan dan wawasan kode sumber yang disediakan, kini Anda memiliki alat untuk memanipulasi dan memformat dokumen Anda dengan baik. Aspose.Words untuk Java memberdayakan Anda untuk membuat dokumen bermerek profesional yang disesuaikan dengan spesifikasi Anda.
+Dalam panduan lengkap ini, kami telah menjelajahi seni pemberian tanda air pada dokumen dan pengaturan halaman menggunakan Aspose.Words untuk Java. Berbekal potongan kode sumber dan wawasan yang disediakan, kini Anda memiliki alat untuk memanipulasi dan memformat dokumen Anda dengan cermat. Aspose.Words untuk Java memberdayakan Anda untuk membuat dokumen bermerek profesional yang disesuaikan dengan spesifikasi persis Anda.
 
-Menguasai manipulasi dokumen adalah keterampilan berharga bagi pengembang, dan Aspose.Words for Java adalah teman tepercaya Anda dalam perjalanan ini. Mulailah membuat dokumen menakjubkan hari ini!
+Menguasai manipulasi dokumen merupakan keterampilan yang berharga bagi para pengembang, dan Aspose.Words untuk Java adalah teman tepercaya Anda dalam perjalanan ini. Mulailah membuat dokumen yang menakjubkan hari ini!

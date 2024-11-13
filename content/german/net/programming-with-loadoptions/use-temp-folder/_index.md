@@ -27,7 +27,7 @@ Stellen Sie zunächst sicher, dass Sie die erforderlichen Namespaces in Ihr Proj
 using Aspose.Words;
 ```
 
-Lassen Sie uns den Prozess in einfache, leicht verständliche Schritte unterteilen.
+Lassen Sie uns den Prozess in einfache, leicht verständliche Schritte aufteilen.
 
 ## Schritt 1: Einrichten Ihres Dokumentverzeichnisses
 
@@ -52,7 +52,7 @@ LoadOptions loadOptions = new LoadOptions { TempFolder = dataDir };
 Nachdem die Ladeoptionen konfiguriert sind, besteht der nächste Schritt darin, Ihr Dokument mit diesen Optionen zu laden.
 
 ```csharp
-// Laden Sie das Dokument aus einem angegebenen temporären Ordner
+// Laden Sie das Dokument mithilfe eines angegebenen temporären Ordners
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 

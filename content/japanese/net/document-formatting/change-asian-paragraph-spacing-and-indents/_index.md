@@ -1,6 +1,6 @@
 ---
-title: Word 文書のアジア言語の段落間隔とインデントを変更する
-linktitle: Word 文書のアジア言語の段落間隔とインデントを変更する
+title: Word 文書でアジア言語の段落間隔とインデントを変更する
+linktitle: Word 文書でアジア言語の段落間隔とインデントを変更する
 second_title: Aspose.Words ドキュメント処理 API
 description: この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内のアジア言語の段落間隔とインデントを変更する方法を学習します。
 type: docs

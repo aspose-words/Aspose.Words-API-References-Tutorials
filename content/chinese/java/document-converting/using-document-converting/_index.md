@@ -84,28 +84,6 @@ doc.save("output.html", SaveFormat.HTML);
 doc.save("output.epub", SaveFormat.EPUB);
 ```
 
-## 步骤 5：处理字体替换
-
-字体替换是转换文档时常见的挑战。 Aspose.Words 提供了一种处理字体替换的机制，以确保转换后的文档的视觉一致性：
-
-```java
-//启用字体替换
-FontSettings.setFontsFolder("/path/to/fonts", true);
-```
-
-## 步骤 6：自定义转换过程
-
-Aspose.Words 提供了多种选项来定制文档转换过程。例如，您可以设置转换的页面范围或指定保存为 PDF 时的图像分辨率：
-
-```java
-//设置转换的页面范围（转换第 1 至 3 页）
-PdfSaveOptions options = new PdfSaveOptions();
-options.setPageSet(new PageSet(1, 3));
-
-//将图像分辨率设置为 300 DPI
-options.setJpegQuality(300);
-```
-
 ## 有效文档转换的技巧
 
 为了确保文档转换过程顺利、高效，请考虑以下提示：
@@ -117,11 +95,11 @@ options.setJpegQuality(300);
 处理大量文档时，转换过程中可能会出现错误。实施适当的异常处理以识别并妥善解决这些问题。
 
 ## 质量保证： 
-在生产环境中部署文档转换功能之前，请用各种文档类型和大小彻底测试转换过程，以验证输出的准确性和保真度。
+在生产环境中部署文档转换功能之前，请利用各种文档类型和大小彻底测试转换过程，以验证输出的准确性和保真度。
 
 ## 结论
 
-在当今快节奏的世界中，文档转换是数据管理和信息交换的一个重要方面。Aspose.Words for Java 为需要高效可靠地转换文档的 Java 开发人员提供了出色的解决方案。凭借其广泛的格式支持、高保真转换和文字处理功能，Aspose.Words 简化了文档转换过程，为开发人员和企业节省了时间和精力。
+在当今快节奏的世界中，文档转换是数据管理和信息交换的关键方面。Aspose.Words for Java 为需要高效可靠地转换文档的 Java 开发人员提供了出色的解决方案。凭借其广泛的格式支持、高保真转换和文字处理功能，Aspose.Words 简化了文档转换过程，为开发人员和企业节省了时间和精力。
 
 准备好利用 Aspose.Words for Java 强大的文档转换功能并简化您的文档管理任务！
 

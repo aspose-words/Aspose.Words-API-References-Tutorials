@@ -106,7 +106,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 ## 結論
 
-現在你就得到它了！現在您已經掌握如何使用 Aspose.Words for .NET 在 Markdown 中建立強調文字。這個強大的程式庫可以輕鬆地以程式設計方式操作 Word 文件並將其匯出為各種格式，包括 Markdown。透過遵循本指南中概述的步驟，您可以使用粗體和斜體文字增強文檔，使其更具吸引力和可讀性。
+現在你就擁有了！現在您已經掌握如何使用 Aspose.Words for .NET 在 Markdown 中建立強調文字。這個強大的程式庫可以輕鬆地以程式設計方式操作 Word 文件並將其匯出為各種格式，包括 Markdown。透過遵循本指南中概述的步驟，您可以使用粗體和斜體文字增強文檔，使其更具吸引力和可讀性。
 
 ## 常見問題解答
 

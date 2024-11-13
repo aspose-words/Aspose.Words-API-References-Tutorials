@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 FormFieldCollection formFields = doc.Range.FormFields;
 ```
 
- स्पष्टीकरण:`FormFields` की संपत्ति`Range` ऑब्जेक्ट आपको दस्तावेज़ में फ़ॉर्म फ़ील्ड तक पहुँच प्रदान करता है। हम इस संग्रह को एक में संग्रहीत करते हैं`formFields` आगे हेरफेर के लिए चर.
+ स्पष्टीकरण:`FormFields` की संपत्ति`Range` ऑब्जेक्ट आपको दस्तावेज़ में फ़ॉर्म फ़ील्ड तक पहुँच देता है। हम इस संग्रह को एक में संग्रहीत करते हैं`formFields` आगे हेरफेर के लिए चर.
 
 ## चरण 3: फ़ॉर्म फ़ील्ड में बदलाव करें
 

@@ -1,7 +1,7 @@
 ---
 title: Menggabungkan dan Membandingkan Dokumen di Word
 linktitle: Menggabungkan dan Membandingkan Dokumen di Word
-second_title: API Manajemen Dokumen Aspose.Words Python
+second_title: API Manajemen Dokumen Python Aspose.Words
 description: Gabungkan dan bandingkan dokumen Word dengan mudah menggunakan Aspose.Words untuk Python. Pelajari cara memanipulasi dokumen, menyorot perbedaan, dan mengotomatiskan tugas.
 type: docs
 weight: 10
@@ -10,11 +10,11 @@ url: /id/python-net/document-combining-and-comparison/merge-compare-documents/
 
 ## Pengantar Aspose.Words untuk Python
 
-Aspose.Words adalah perpustakaan serbaguna yang memungkinkan Anda membuat, mengedit, dan memanipulasi dokumen Word secara terprogram. Ini menyediakan berbagai fitur, termasuk penggabungan dan perbandingan dokumen, yang dapat menyederhanakan tugas manajemen dokumen secara signifikan.
+Aspose.Words adalah pustaka serbaguna yang memungkinkan Anda membuat, mengedit, dan memanipulasi dokumen Word secara terprogram. Pustaka ini menyediakan berbagai fitur, termasuk penggabungan dan perbandingan dokumen, yang dapat menyederhanakan tugas pengelolaan dokumen secara signifikan.
 
-## Memasang dan Menyiapkan Aspose.Words
+## Menginstal dan Menyiapkan Aspose.Words
 
-Untuk memulai, Anda perlu menginstal perpustakaan Aspose.Words untuk Python. Anda dapat menginstalnya menggunakan pip, manajer paket Python:
+Untuk memulai, Anda perlu menginstal pustaka Aspose.Words untuk Python. Anda dapat menginstalnya menggunakan pip, pengelola paket Python:
 
 ```python
 pip install aspose-words
@@ -22,7 +22,7 @@ pip install aspose-words
 
 Setelah terinstal, Anda dapat mengimpor kelas yang diperlukan dari perpustakaan untuk mulai bekerja dengan dokumen Anda.
 
-## Mengimpor Perpustakaan yang Diperlukan
+## Mengimpor Pustaka yang Diperlukan
 
 Dalam skrip Python Anda, impor kelas yang diperlukan dari Aspose.Words:
 
@@ -39,7 +39,7 @@ doc1 = Document("document1.docx")
 doc2 = Document("document2.docx")
 ```
 
-## Penggabungan Dokumen
+## Menggabungkan Dokumen
 
 Gabungkan dokumen yang dimuat menjadi satu dokumen:
 
@@ -72,9 +72,9 @@ Bandingkan dokumen sumber dengan dokumen yang dimodifikasi:
 comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
 ```
 
-## Menyoroti Perbedaan
+## Menyorot Perbedaan
 
-Soroti perbedaan antara dokumen-dokumen tersebut:
+Sorot perbedaan antara dokumen-dokumen berikut:
 
 ```python
 comparison.highlight_changes()
@@ -90,9 +90,9 @@ comparison.save("comparison_result.docx")
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita telah menjelajahi cara memanfaatkan Aspose.Words untuk Python untuk menggabungkan dan membandingkan dokumen Word dengan lancar. Pustaka canggih ini membuka peluang pengelolaan dokumen, kolaborasi, dan otomatisasi yang efisien.
+Dalam tutorial ini, kami telah mempelajari cara memanfaatkan Aspose.Words untuk Python guna menggabungkan dan membandingkan dokumen Word dengan lancar. Pustaka canggih ini membuka peluang untuk manajemen dokumen, kolaborasi, dan otomatisasi yang efisien.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menginstal Aspose.Words untuk Python?
 
@@ -101,15 +101,15 @@ Anda dapat menginstal Aspose.Words untuk Python menggunakan perintah pip berikut
 pip install aspose-words
 ```
 
-### Bisakah saya membandingkan dokumen dengan format yang rumit?
+### Dapatkah saya membandingkan dokumen dengan format yang rumit?
 
 Ya, Aspose.Words menangani pemformatan dan gaya yang rumit selama perbandingan dokumen, memastikan hasil yang akurat.
 
 ### Apakah Aspose.Words cocok untuk pembuatan dokumen otomatis?
 
-Sangat! Aspose.Words memungkinkan pembuatan dan manipulasi dokumen otomatis, menjadikannya pilihan yang sangat baik untuk berbagai aplikasi.
+Tentu saja! Aspose.Words memungkinkan pembuatan dan manipulasi dokumen secara otomatis, menjadikannya pilihan yang sangat baik untuk berbagai aplikasi.
 
-### Bisakah saya menggabungkan lebih dari dua dokumen menggunakan perpustakaan ini?
+### Bisakah saya menggabungkan lebih dari dua dokumen menggunakan pustaka ini?
 
 Ya, Anda dapat menggabungkan sejumlah dokumen menggunakan`append_document` metode, seperti yang ditunjukkan dalam tutorial.
 

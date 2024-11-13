@@ -23,7 +23,7 @@ url: /el/net/working-with-fields/field-update-culture/
 
 4.  Aspose License: Για την πλήρη λειτουργικότητα, ίσως χρειαστείτε μια άδεια χρήσης. Μπορείτε να αγοράσετε ένα[εδώ](https://purchase.aspose.com/buy) ή πάρτε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
 
-5.  Πρόσβαση σε τεκμηρίωση και υποστήριξη: Για οποιαδήποτε πρόσθετη βοήθεια, το[Aspose Documentation](https://reference.aspose.com/words/net/)και[Φόρουμ υποστήριξης](https://forum.aspose.com/c/words/8) είναι μεγάλοι πόροι.
+5.  Πρόσβαση σε τεκμηρίωση και υποστήριξη: Για οποιαδήποτε πρόσθετη βοήθεια, το[Aspose Documentation](https://reference.aspose.com/words/net/) και[Φόρουμ υποστήριξης](https://forum.aspose.com/c/words/8) είναι μεγάλοι πόροι.
 
 ## Εισαγωγή χώρων ονομάτων
 
@@ -75,7 +75,52 @@ doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 - `FieldUpdateCultureSource.FieldCode` λέει στο Aspose.Words να χρησιμοποιεί την κουλτούρα που καθορίζεται στον κώδικα πεδίου για ενημερώσεις.
 - `FieldUpdateCultureProvider` σας επιτρέπει να καθορίσετε έναν πάροχο πολιτισμού για ενημερώσεις πεδίου. Εάν χρειάζεται να εφαρμόσετε έναν προσαρμοσμένο πάροχο, μπορείτε να επεκτείνετε αυτήν την κλάση.
 
-## Βήμα 4: Αποθηκεύστε το έγγραφο
+## Βήμα 4: Εφαρμογή του Custom Culture Provider
+
+Τώρα πρέπει να εφαρμόσουμε τον πάροχο προσαρμοσμένης κουλτούρας, ο οποίος θα ελέγχει τον τρόπο με τον οποίο εφαρμόζονται οι ρυθμίσεις πολιτισμού, όπως οι μορφές ημερομηνίας, όταν ενημερώνεται το πεδίο.
+
+Θα δημιουργήσουμε μια τάξη που ονομάζεται`FieldUpdateCultureProvider` που υλοποιεί το`IFieldUpdateCultureProvider` διεπαφή. Αυτή η τάξη θα επιστρέψει διαφορετικές μορφές πολιτισμού με βάση την περιοχή. Για αυτό το παράδειγμα, θα διαμορφώσουμε τις ρυθμίσεις πολιτισμού της Ρωσίας και των ΗΠΑ.
+
+```csharp
+private class FieldUpdateCultureProvider : IFieldUpdateCultureProvider
+{
+    public CultureInfo GetCulture(string name, Field field)
+    {
+        switch (name)
+        {
+            case "ru-RU":
+                CultureInfo culture = new CultureInfo(name, false);
+                DateTimeFormatInfo format = culture.DateTimeFormat;
+
+                format.MonthNames = new[] { "месяц 1", "месяц 2", "месяц 3", "месяц 4", "месяц 5", "месяц 6", "месяц 7", "месяц 8", "месяц 9", "месяц 10", "месяц 11", "месяц 12", "" };
+                format.MonthGenitiveNames = format.MonthNames;
+                format.AbbreviatedMonthNames = new[] { "мес 1", "мес 2", "мес 3", "мес 4", "мес 5", "мес 6", "мес 7", "мес 8", "мес 9", "мес 10", "мес 11", "мес 12", "" };
+                format.AbbreviatedMonthGenitiveNames = format.AbbreviatedMonthNames;
+
+                format.DayNames = new[] { "день недели 7", "день недели 1", "день недели 2", "день недели 3", "день недели 4", "день недели 5", "день недели 6" };
+                format.AbbreviatedDayNames = new[] { "день 7", "день 1", "день 2", "день 3", "день 4", "день 5", "день 6" };
+                format.ShortestDayNames = new[] { "д7", "д1", "д2", "д3", "д4", "д5", "д6" };
+
+                format.AMDesignator = "До полудня";
+                format.PMDesignator = "После полудня";
+
+                const string pattern = "yyyy MM (MMMM) dd (dddd) hh:mm:ss tt";
+                format.LongDatePattern = pattern;
+                format.LongTimePattern = pattern;
+                format.ShortDatePattern = pattern;
+                format.ShortTimePattern = pattern;
+
+                return culture;
+            case "en-US":
+                return new CultureInfo(name, false);
+            default:
+                return null;
+        }
+    }
+}
+```
+
+## Βήμα 5: Αποθηκεύστε το έγγραφο
 
 Τέλος, αποθηκεύστε το έγγραφό σας στον καθορισμένο κατάλογο. Αυτό διασφαλίζει ότι όλες οι αλλαγές σας θα διατηρηθούν.
 

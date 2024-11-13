@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
- A`ListIndent` metódus behúzza a listát, létrehozva egy allistát. Most egy hierarchikus listát hoz létre, hasonlóan egy beágyazott teendőlistához.
+A`ListIndent` metódus behúzza a listát, létrehozva egy allistát. Most egy hierarchikus listát hoz létre, hasonlóan egy beágyazott teendőlistához.
 
 ## Következtetés
 

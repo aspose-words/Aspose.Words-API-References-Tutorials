@@ -1,7 +1,7 @@
 ---
-title: Elaboración de una tabla de contenidos completa para documentos de Word
-linktitle: Elaboración de una tabla de contenidos completa para documentos de Word
-second_title: API de gestión de documentos Aspose.Words Python
+title: Cómo crear una tabla de contenidos completa para documentos de Word
+linktitle: Cómo crear una tabla de contenidos completa para documentos de Word
+second_title: API de gestión de documentos de Python de Aspose.Words
 description: Cree una tabla de contenidos fácil de leer con Aspose.Words para Python. Aprenda a generar, personalizar y actualizar la estructura de su documento sin problemas.
 type: docs
 weight: 15
@@ -10,13 +10,13 @@ url: /es/python-net/document-combining-and-comparison/generate-table-contents/
 
 ## Introducción a la tabla de contenidos
 
-Una tabla de contenido proporciona una instantánea de la estructura de un documento, lo que permite a los lectores navegar a secciones específicas sin esfuerzo. Es especialmente útil para documentos extensos como trabajos de investigación, informes o libros. Al crear una tabla de contenido, mejora la experiencia del usuario y ayuda a los lectores a interactuar de manera más efectiva con su contenido.
+Una tabla de contenido proporciona una instantánea de la estructura de un documento, lo que permite a los lectores navegar a secciones específicas sin esfuerzo. Es especialmente útil para documentos extensos, como artículos de investigación, informes o libros. Al crear una tabla de contenido, mejora la experiencia del usuario y ayuda a los lectores a interactuar de manera más eficaz con su contenido.
 
-## Configurar el entorno
+## Configuración del entorno
 
- Antes de comenzar, asegúrese de tener instalado Aspose.Words para Python. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/python/). Además, asegúrese de tener un documento de Word de muestra que le gustaría mejorar con una tabla de contenido.
+ Antes de comenzar, asegúrese de tener instalado Aspose.Words para Python. Puede descargarlo desde[aquí](https://releases.aspose.com/words/python/)Además, asegúrate de tener un documento de Word de muestra que te gustaría mejorar con una tabla de contenido.
 
-## Cargando un documento
+## Cargar un documento
 
 ```python
 import asposewords
@@ -27,7 +27,7 @@ doc = asposewords.Document("your_document.docx")
 
 ## Definición de títulos y subtítulos
 
-Para generar una tabla de contenido, debe definir los títulos y subtítulos dentro de su documento. Utilice estilos de párrafo apropiados para marcar estas secciones. Por ejemplo, utilice "Título 1" para los títulos principales y "Título 2" para los subtítulos.
+Para generar una tabla de contenidos, debe definir los títulos y subtítulos dentro del documento. Utilice estilos de párrafo adecuados para marcar estas secciones. Por ejemplo, utilice "Título 1" para los títulos principales y "Título 2" para los subtítulos.
 
 ```python
 # Define headings and subheadings
@@ -40,7 +40,7 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
 
 ## Generando la tabla de contenidos
 
-Ahora que tenemos nuestros títulos y subtítulos definidos, generemos la tabla de contenido en sí. Crearemos una nueva sección al principio del documento y la rellenaremos con el contenido apropiado.
+Ahora que hemos definido los títulos y subtítulos, vamos a generar la tabla de contenidos propiamente dicha. Crearemos una nueva sección al principio del documento y la completaremos con el contenido adecuado.
 
 ```python
 # Create a new section for the table of contents
@@ -54,7 +54,7 @@ toc_title.paragraph_format.style_name = "Table of Contents Title"
 
 ## Personalización de la tabla de contenidos
 
-Puede personalizar la apariencia de su tabla de contenido ajustando fuentes, estilos y formato. Asegúrese de utilizar un formato coherente en todo el documento para lograr una apariencia pulida.
+Puede personalizar la apariencia de su tabla de contenido ajustando las fuentes, los estilos y el formato. Asegúrese de utilizar un formato uniforme en todo el documento para lograr un aspecto impecable.
 
 ```python
 # Customize the appearance of the table of contents
@@ -64,7 +64,7 @@ for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
 
 ## Agregar hipervínculos
 
-Para que la tabla de contenido sea interactiva, agregue hipervínculos que permitan a los lectores saltar directamente a las secciones correspondientes del documento.
+Para que la tabla de contenidos sea interactiva, agregue hipervínculos que permitan a los lectores saltar directamente a las secciones correspondientes en el documento.
 
 ```python
 # Add hyperlinks to headings
@@ -74,9 +74,9 @@ for heading in headings:
     entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
 ```
 
-## Aplicar estilo a la tabla de contenidos
+## Dar estilo a la tabla de contenidos
 
-Diseñar la tabla de contenido implica definir estilos de párrafo apropiados para el título, las entradas y otros elementos.
+Para darle estilo a la tabla de contenidos es necesario definir estilos de párrafo apropiados para el título, las entradas y otros elementos.
 
 ```python
 # Define styles for the table of contents
@@ -84,7 +84,7 @@ toc_title.style.name = "Table of Contents Title"
 doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
 ```
 
-## Actualización de la tabla de contenidos
+## Actualización del índice
 
 Si realiza cambios en la estructura de su documento, puede actualizar fácilmente la tabla de contenido para reflejar esos cambios.
 
@@ -95,7 +95,7 @@ doc.update_fields()
 
 ## Automatizando el proceso
 
-Para ahorrar tiempo y garantizar la coherencia, considere crear un script que genere y actualice automáticamente la tabla de contenido de sus documentos.
+Para ahorrar tiempo y garantizar la coherencia, considere crear un script que genere y actualice automáticamente la tabla de contenidos de sus documentos.
 
 ```python
 # Automation script
@@ -112,7 +112,7 @@ def generate_table_of_contents(document_path):
 
 ## Manejo de números de página
 
-Puede agregar números de página a la tabla de contenido para brindar a los lectores más contexto sobre dónde encontrar secciones específicas.
+Puede agregar números de página a la tabla de contenido para proporcionar a los lectores más contexto sobre dónde encontrar secciones específicas.
 
 ```python
 # Add page numbers to table of contents
@@ -126,22 +126,22 @@ for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
 
 ## Conclusión
 
-Crear una tabla de contenido completa usando Aspose.Words para Python puede mejorar significativamente la experiencia del usuario de sus documentos. Si sigue estos pasos, puede mejorar la navegabilidad de los documentos, proporcionar acceso rápido a secciones clave y presentar su contenido de una manera más organizada y fácil de leer.
+La creación de una tabla de contenidos completa con Aspose.Words para Python puede mejorar significativamente la experiencia del usuario con sus documentos. Si sigue estos pasos, podrá mejorar la navegabilidad de los documentos, proporcionar un acceso rápido a las secciones clave y presentar su contenido de una manera más organizada y fácil de leer.
 
 ## Preguntas frecuentes
 
-### ¿Cómo puedo definir subsubtítulos dentro de la tabla de contenido?
+### ¿Cómo puedo definir subtítulos dentro de la tabla de contenidos?
 
-Para definir subsubtítulos, utilice los estilos de párrafo apropiados en su documento, como "Título 3" o "Título 4". El script los incluirá automáticamente en la tabla de contenido según su jerarquía.
+Para definir subtítulos, utilice los estilos de párrafo adecuados en su documento, como "Título 3" o "Título 4". El script los incluirá automáticamente en la tabla de contenido según su jerarquía.
 
-### ¿Puedo cambiar el tamaño de fuente de las entradas del índice?
+### ¿Puedo cambiar el tamaño de fuente de las entradas de la tabla de contenido?
 
-¡Absolutamente! Personalice el estilo de las "Entradas TOC" ajustando el tamaño de fuente y otros atributos de formato para que coincidan con la estética de su documento.
+¡Por supuesto! Personalice el estilo de las "Entradas de índice" ajustando el tamaño de fuente y otros atributos de formato para que coincidan con la estética de su documento.
 
-### ¿Es posible generar una tabla de contenido para documentos existentes?
+### ¿Es posible generar una tabla de contenidos para documentos existentes?
 
-Sí, puede generar una tabla de contenido para documentos existentes. Simplemente cargue el documento usando Aspose.Words, siga los pasos descritos en este tutorial y actualice la tabla de contenido según sea necesario.
+Sí, puedes generar una tabla de contenidos para documentos existentes. Simplemente carga el documento usando Aspose.Words, sigue los pasos que se describen en este tutorial y actualiza la tabla de contenidos según sea necesario.
 
-### ¿Cómo elimino la tabla de contenido de mi documento?
+### ¿Cómo elimino la tabla de contenidos de mi documento?
 
-Si decide eliminar la tabla de contenido, simplemente elimine la sección que contiene la tabla de contenido. No olvide actualizar los números de página restantes para reflejar los cambios.
+Si decide eliminar la tabla de contenidos, simplemente borre la sección que contiene la tabla de contenidos. No olvide actualizar los números de página restantes para reflejar los cambios.

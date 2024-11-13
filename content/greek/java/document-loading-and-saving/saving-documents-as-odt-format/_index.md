@@ -69,7 +69,7 @@ doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", sa
 
 ### Πώς μπορώ να κατεβάσω το Aspose.Words για Java;
 
- Μπορείτε να κατεβάσετε το Aspose.Words για Java από τον ιστότοπο Aspose. Επίσκεψη[αυτόν τον σύνδεσμο](https://releases.aspose.com/words/java/)για πρόσβαση στη σελίδα λήψης.
+ Μπορείτε να κατεβάσετε το Aspose.Words για Java από τον ιστότοπο Aspose. Επίσκεψη[αυτόν τον σύνδεσμο](https://releases.aspose.com/words/java/) για πρόσβαση στη σελίδα λήψης.
 
 ### Ποιο είναι το όφελος της αποθήκευσης εγγράφων σε μορφή ODT;
 

@@ -52,7 +52,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Laden wir nun das DOCX-Dokument, das Sie konvertieren möchten.
 
-1.  Initialisieren Sie das Dokument: Verwenden Sie die`Document` Klasse von Aspose.Words, um die DOCX-Datei zu laden.
+1.  Initialisieren Sie das Dokument: Verwenden Sie die`Document` Klasse von Aspose.Words zum Laden der DOCX-Datei.
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

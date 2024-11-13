@@ -98,5 +98,5 @@ Aspose.Words for .NET 是一个功能强大的库，允许您使用 C# 以编程
 ### 我需要 Aspose.Words for .NET 的许可证吗？
 是的，Aspose.Words for .NET 需要许可证才能使用全部功能。您可以获得[临时执照](https://purchase.aspose.com/temporary-license)或者[购买一个](https://purchase.aspose.com/buy).
 
-### 在哪里可以找到更多信息和支持？
+### 我可以在哪里找到更多信息和支持？
 您可以找到详细的文档[这里](https://reference.aspose.com/words/net/)并获得支持[Aspose 论坛](https://forum.aspose.com/c/words/8).

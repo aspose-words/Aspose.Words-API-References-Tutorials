@@ -1,7 +1,7 @@
 ---
 title: Formularfelder und Datenerfassung in Word-Dokumenten beherrschen
 linktitle: Formularfelder und Datenerfassung in Word-Dokumenten beherrschen
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Meistern Sie die Kunst des Erstellens und Verwaltens von Formularfeldern in Word-Dokumenten mit Aspose.Words für Python. Lernen Sie, Daten effizient zu erfassen und die Benutzereinbindung zu verbessern.
 type: docs
 weight: 15
@@ -31,7 +31,7 @@ Bevor wir uns mit der Erstellung und Beherrschung von Formularfeldern befassen, 
 
 Nachdem die Einrichtung abgeschlossen ist, fahren wir mit den Kernkonzepten des Erstellens und Verwaltens von Formularfeldern fort.
 
-## Erstellen von Formularfeldern
+## Formularfelder erstellen
 
 Formularfelder sind wesentliche Bestandteile interaktiver Dokumente. Erfahren Sie, wie Sie mit Aspose.Words für Python verschiedene Arten von Formularfeldern erstellen.
 
@@ -207,7 +207,7 @@ Dropdown-Listen vereinfachen die Auswahl von Optionen aus einem vordefinierten S
 
 ### Datumsauswahl
 
-Datumsauswahlen vereinfachen die Erfassung von Daten von Benutzern. Sie bieten eine benutzerfreundliche Oberfläche zur Auswahl von Daten und verringern so die Wahrscheinlichkeit von Eingabefehlern. Um ein Datumsauswahlformularfeld zu erstellen, verwenden Sie den folgenden Code:
+Datumsauswahlen vereinfachen die Erfassung von Daten von Benutzern. Sie bieten eine benutzerfreundliche Oberfläche zur Auswahl von Daten und verringern so die Wahrscheinlichkeit von Eingabefehlern. Verwenden Sie den folgenden Code, um ein Datumsauswahlformularfeld zu erstellen:
 
 ```python
 # Create a date picker form field
@@ -232,7 +232,7 @@ Die Beherrschung von Formularfeldern und Datenerfassung in Word-Dokumenten ist e
 
 In diesem Handbuch haben wir die Grundlagen von Formularfeldern, Formularfeldtypen, das Festlegen von Eigenschaften und das Anpassen ihres Verhaltens untersucht. Wir haben auch Best Practices für die Formulargestaltung angesprochen und Einblicke in die Optimierung von Dokumentformularen für Suchmaschinen gegeben.
 
-Indem Sie die Leistungsfähigkeit von Aspose.Words für Python nutzen, können Sie Dokumente erstellen, die nicht nur Daten effektiv erfassen, sondern auch die Benutzereinbindung verbessern und Datenverarbeitungsabläufe optimieren. Jetzt sind Sie bereit, sich auf den Weg zu machen, ein Meister der Formularfelder und der Datenerfassung in Word-Dokumenten zu werden.
+Indem Sie die Leistungsfähigkeit von Aspose.Words für Python nutzen, können Sie Dokumente erstellen, die nicht nur Daten effektiv erfassen, sondern auch die Benutzereinbindung verbessern und Datenverarbeitungsabläufe optimieren. Jetzt sind Sie bereit, sich auf den Weg zu machen, um ein Meister der Formularfelder und der Datenerfassung in Word-Dokumenten zu werden.
 
 ## FAQs
 

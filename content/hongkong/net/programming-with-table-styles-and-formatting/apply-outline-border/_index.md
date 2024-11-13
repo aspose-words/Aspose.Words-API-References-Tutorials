@@ -110,7 +110,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx"
 
 ## 結論
 
-現在你就得到它了！透過執行這些步驟，您已使用 Aspose.Words for .NET 成功將輪廓邊框套用到 Word 文件中的表格。本教學介紹了載入文件、存取表格、對齊表格、清除現有邊框、應用新邊框、新增儲存格底紋以及最後儲存文件。 
+現在你就擁有了！透過執行這些步驟，您已使用 Aspose.Words for .NET 成功將輪廓邊框套用到 Word 文件中的表格。本教學介紹了載入文件、存取表格、對齊表格、清除現有邊框、應用新邊框、新增儲存格底紋以及最後儲存文件。 
 
 借助這些技能，您可以增強表格的視覺呈現，使您的文件更加專業和有吸引力。快樂編碼！
 

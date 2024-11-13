@@ -16,7 +16,7 @@ url: /ja/net/basic-conversions/
 | [Doc を Docx に変換する](./doc-to-docx/) | Aspose.Words for .NET を使用して DOC を DOCX に変換する方法を学びます。コード例付きのステップバイステップ ガイド。開発者に最適です。  |
 | [Docx を Rtf に変換する](./docx-to-rtf/) | Aspose.Words for .NET を使用して DOCX を RTF に変換する方法を、ステップバイステップ ガイドで学習します。簡単な変換でシームレスなドキュメント処理が実現します。 |  
 | [Word ファイルを PDF に変換する](./docx-to-pdf/) | ガイドに従って、Aspose.Words for .NET を使用して Word ファイルを PDF に簡単に変換する方法を学びます。迅速かつ信頼性の高いドキュメント変換を求める開発者に最適です。 | 
-| [Docx をバイトに変換](./docx-to-byte/) | 効率的なドキュメント処理のために、Aspose.Words を使用して .NET で Docx をバイト配列に変換する方法を学びます。ステップバイステップのガイドが含まれています。 |  
+| [Docx をバイトに変換](./docx-to-byte/) | 効率的なドキュメント処理のために、Aspose.Words を使用して Docx を .NET のバイト配列に変換する方法を学びます。ステップバイステップのガイドが含まれています。 |  
 | [Docx を EPUB に変換する](./docx-to-epub/) | Aspose.Words for .NET を使用すると、DOCX を EPUB に簡単に変換できます。.NET アプリケーションへのシームレスな統合については、チュートリアルに従ってください。 |
 | [Docx を Mhtml に変換してメールを送信する](./docx-to-mhtml-and-sending-email/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して DOCX を MHTML に変換し、電子メールを送信する方法を説明します。簡単な自動化で生産性を向上します。 |
 | [Docx ファイルを Markdown に変換する](./docx-to-markdown/) | Aspose.Words for .NET を使用して DOCX ファイルを Markdown に変換する方法を学びます。.NET アプリケーションへのシームレスな統合については、詳細なガイドに従ってください。 |

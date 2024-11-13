@@ -1,6 +1,6 @@
 ---
-title: Aspose.Words for Java'da HTML Belgelerini Sabit Düzenle Kaydetme
-linktitle: HTML Belgelerini Sabit Düzen ile Kaydetme
+title: Aspose.Words for Java'da Sabit Düzen ile HTML Belgelerini Kaydetme
+linktitle: Sabit Düzen ile HTML Belgelerini Kaydetme
 second_title: Aspose.Words Java Belge İşleme API'si
 description: Aspose.Words for Java'da HTML belgelerini sabit düzende nasıl kaydedeceğinizi öğrenin. Sorunsuz belge biçimlendirmesi için adım adım kılavuzumuzu izleyin.
 type: docs
@@ -8,47 +8,47 @@ weight: 15
 url: /tr/java/document-loading-and-saving/saving-html-documents-with-fixed-layout/
 ---
 
-## Aspose.Words for Java'da HTML Belgelerini Sabit Düzenle Kaydetmeye Giriş
+## Aspose.Words for Java'da Sabit Düzen ile HTML Belgelerini Kaydetmeye Giriş
 
-Bu kapsamlı kılavuzda, Aspose.Words for Java'yı kullanarak HTML belgelerini sabit bir düzende kaydetme sürecinde size yol göstereceğiz. Adım adım talimatlar ve kod örnekleriyle bunu sorunsuz bir şekilde nasıl başaracağınızı öğreneceksiniz. O halde hemen içeri dalalım!
+Bu kapsamlı kılavuzda, Aspose.Words for Java kullanarak HTML belgelerini sabit bir düzende kaydetme sürecini adım adım anlatacağız. Adım adım talimatlar ve kod örnekleriyle, bunu sorunsuz bir şekilde nasıl başaracağınızı öğreneceksiniz. Hadi, hemen başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
 - Java geliştirme ortamı kuruldu.
 - Aspose.Words for Java kütüphanesi kuruldu ve yapılandırıldı.
 
 ## Adım 1: Belgeyi Yükleme
 
-Öncelikle HTML formatında kaydetmek istediğimiz belgeyi yüklememiz gerekiyor. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+Öncelikle HTML formatında kaydetmek istediğimiz belgeyi yüklememiz gerekiyor. Bunu şu şekilde yapabilirsiniz:
 
 ```java
 Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 ```
 
- Yer değiştirmek`"YourDocument.docx"` Word belgenizin yolu ile.
+ Yer değiştirmek`"YourDocument.docx"` Word belgenizin yolunu belirtin.
 
-## 2. Adım: HTML Sabit Kaydetme Seçeneklerini Yapılandırma
+## Adım 2: HTML Sabit Kaydetme Seçeneklerini Yapılandırın
 
- Belgeyi sabit bir düzende kaydetmek için yapılandırmamız gerekir.`HtmlFixedSaveOptions` sınıf. biz ayarlayacağız`useTargetMachineFonts`mülkiyet`true` HTML çıktısında hedef makinenin yazı tiplerinin kullanıldığından emin olmak için:
+ Belgeyi sabit bir düzende kaydetmek için, şunu yapılandırmamız gerekir:`HtmlFixedSaveOptions` sınıf. Biz ayarlayacağız`useTargetMachineFonts`mülk`true` Hedef makinenin yazı tiplerinin HTML çıktısında kullanıldığından emin olmak için:
 
 ```java
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions();
 saveOptions.setUseTargetMachineFonts(true);
 ```
 
-## 3. Adım: Belgeyi HTML olarak kaydedin
+## Adım 3: Belgeyi HTML olarak kaydedin
 
-Şimdi, önceden yapılandırılmış seçenekleri kullanarak belgeyi sabit düzende HTML olarak kaydedelim:
+Şimdi, daha önce yapılandırılan seçenekleri kullanarak belgeyi sabit düzende HTML olarak kaydedelim:
 
 ```java
 doc.save("Your Directory Path" + "FixedLayoutDocument.html", saveOptions);
 ```
 
- Yer değiştirmek`"FixedLayoutDocument.html"` HTML dosyanız için istediğiniz adla.
+ Yer değiştirmek`"FixedLayoutDocument.html"` HTML dosyanız için istediğiniz ismi yazın.
 
-## Aspose.Words for Java'da HTML Belgelerini Sabit Düzenle Kaydetmek İçin Tam Kaynak Kodu
+## Aspose.Words for Java'da Sabit Düzen ile HTML Belgelerini Kaydetmek İçin Tam Kaynak Kodu
 
 ```java
         Document doc = new Document("Your Directory Path" + "Bullet points with alternative font.docx");
@@ -62,22 +62,22 @@ doc.save("Your Directory Path" + "FixedLayoutDocument.html", saveOptions);
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for Java'yı kullanarak HTML belgelerini sabit bir düzende nasıl kaydedeceğimizi öğrendik. Bu basit adımları izleyerek belgelerinizin farklı platformlarda tutarlı bir görsel yapıya sahip olmasını sağlayabilirsiniz.
+Bu eğitimde, Aspose.Words for Java kullanarak HTML belgelerini sabit bir düzende nasıl kaydedeceğimizi öğrendik. Bu basit adımları izleyerek, belgelerinizin farklı platformlarda tutarlı bir görsel yapıyı korumasını sağlayabilirsiniz.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for Java'yı projemde nasıl kurabilirim?
+### Projemde Aspose.Words for Java'yı nasıl kurabilirim?
 
- Aspose.Words for Java'nın kurulumu basittir. Kütüphaneyi adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/java/) ve belgelerde verilen kurulum talimatlarını izleyin[Burada](https://reference.aspose.com/words/java/).
+ Aspose.Words for Java'yı kurmak basittir. Kütüphaneyi şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/) ve belgelerde verilen kurulum talimatlarını izleyin[Burada](https://reference.aspose.com/words/java/).
 
-### Aspose.Words for Java'yı kullanmak için herhangi bir lisans gereksinimi var mı?
+### Aspose.Words for Java'yı kullanmak için herhangi bir lisanslama gereksinimi var mı?
 
-Evet, Aspose.Words for Java'nın üretim ortamında kullanılması geçerli bir lisans gerektirir. Aspose web sitesinden lisans alabilirsiniz. Daha fazla ayrıntıyı belgelerde bulabilirsiniz.
+Evet, Aspose.Words for Java'nın üretim ortamında kullanılabilmesi için geçerli bir lisansa ihtiyacı vardır. Lisansı Aspose web sitesinden edinebilirsiniz. Daha fazla ayrıntı belgelerde bulunabilir.
 
-### HTML çıktısını daha da özelleştirebilir miyim?
+### HTML çıktısını daha fazla özelleştirebilir miyim?
 
-Kesinlikle! Aspose.Words for Java, HTML çıktısını özel gereksinimlerinizi karşılayacak şekilde özelleştirmek için çok çeşitli seçenekler sunar. Özelleştirme seçenekleri hakkında ayrıntılı bilgi için belgeleri inceleyebilirsiniz.
+Elbette! Aspose.Words for Java, HTML çıktısını özel gereksinimlerinizi karşılayacak şekilde özelleştirmek için geniş bir yelpazede seçenekler sunar. Özelleştirme seçenekleri hakkında ayrıntılı bilgi için belgeleri inceleyebilirsiniz.
 
-### Aspose.Words for Java farklı Java sürümleriyle uyumlu mu?
+### Aspose.Words for Java farklı Java sürümleriyle uyumlu mudur?
 
-Evet, Aspose.Words for Java, Java'nın çeşitli sürümleriyle uyumludur. Aspose.Words for Java'nın Java geliştirme ortamınıza uygun, uyumlu bir sürümünü kullandığınızdan emin olun.
+Evet, Aspose.Words for Java çeşitli Java sürümleriyle uyumludur. Java geliştirme ortamınıza uyan uyumlu bir Aspose.Words for Java sürümü kullandığınızdan emin olun.

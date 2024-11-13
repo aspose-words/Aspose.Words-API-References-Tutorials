@@ -15,7 +15,7 @@ url: /ja/net/working-with-hyphenation/hyphenate-words-of-languages/
 
 始める前に、以下のものを用意してください。
 
--  Aspose.Words for .NET がインストールされていること。まだの場合は、入手してください。[ここ](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET がインストールされている。まだの場合は、入手してください。[ここ](https://releases.aspose.com/words/net/).
 -  Aspose.Wordsの有効なライセンス。購入することができます[ここ](https://purchase.aspose.com/buy)または一時免許を取得する[ここ](https://purchase.aspose.com/temporary-license/).
 - C# および .NET フレームワークに関する基本的な知識。
 - テキスト エディターまたは Visual Studio のような IDE。

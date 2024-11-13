@@ -38,23 +38,7 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
-## Step 2: Create DocumentBuilder Object
-
-Next, create a `DocumentBuilder` object to facilitate document manipulation.
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## Step 3: Manipulate Document Content
-
-Use the `DocumentBuilder` object to manipulate the content as needed. For example, add text or formatting.
-
-```csharp
-builder.Writeln("Insert your text or content manipulation code here!");
-```
-
-## Step 4: Save as Markdown
+## Step 2: Save as Markdown
 
 Finally, save the modified document as Markdown format.
 

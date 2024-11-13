@@ -1,58 +1,58 @@
 ---
-title: Cancella controllo dei contenuti
-linktitle: Cancella controllo dei contenuti
+title: Controllo dei contenuti chiari
+linktitle: Controllo dei contenuti chiari
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come cancellare il controllo dei contenuti in un documento Word utilizzando Aspose.Words per .NET con la nostra guida passo passo.
+description: Scopri come cancellare il controllo del contenuto in un documento Word utilizzando Aspose.Words per .NET con la nostra guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/programming-with-sdt/clear-contents-control/
 ---
 ## Introduzione
 
-Sei pronto per tuffarti nel mondo di Aspose.Words per .NET? Oggi esploreremo come cancellare il controllo dei contenuti in un documento Word utilizzando questa potente libreria. Iniziamo con una guida passo passo facile da seguire!
+Siete pronti a immergervi nel mondo di Aspose.Words per .NET? Oggi esploreremo come cancellare il controllo dei contenuti in un documento Word utilizzando questa potente libreria. Cominciamo con una guida passo dopo passo facile da seguire!
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di possedere i seguenti prerequisiti:
+Prima di iniziare, assicurati di disporre dei seguenti prerequisiti:
 
-1.  Aspose.Words per .NET: scarica la libreria da[Qui](https://releases.aspose.com/words/net/).
-2. .NET Framework: assicurati di avere .NET Framework installato sul tuo computer.
-3. IDE: un ambiente di sviluppo integrato come Visual Studio.
+1.  Aspose.Words per .NET: Scarica la libreria da[Qui](https://releases.aspose.com/words/net/).
+2. .NET Framework: assicurati che .NET Framework sia installato sul tuo computer.
+3. IDE: ambiente di sviluppo integrato come Visual Studio.
 4. Documento: un documento Word con tag di documento strutturati.
 
-Con questi prerequisiti in atto, sei pronto per iniziare a scrivere codice.
+Una volta soddisfatti questi prerequisiti, sei pronto per iniziare a programmare.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per utilizzare Aspose.Words per .NET, è necessario importare gli spazi dei nomi necessari. Ecco un breve frammento per iniziare:
+Per usare Aspose.Words per .NET, devi importare i namespace necessari. Ecco un breve frammento per iniziare:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Markup;
 ```
 
-Analizziamo il processo di cancellazione del controllo dei contenuti in passaggi dettagliati.
+Analizziamo nel dettaglio i passaggi necessari per eliminare il controllo dei contenuti.
 
 ## Passaggio 1: imposta il tuo progetto
 
-Innanzitutto, configura l'ambiente del tuo progetto.
+Per prima cosa, configura l'ambiente del tuo progetto.
 
-1. Apri Visual Studio: avvia Visual Studio o il tuo IDE preferito.
+1. Aprire Visual Studio: avviare Visual Studio o l'IDE preferito.
 2.  Crea un nuovo progetto: vai a`File` >`New` >`Project`e selezionare un'applicazione console C#.
-3. Installare Aspose.Words per .NET: utilizzare Gestione pacchetti NuGet per installare Aspose.Words. Esegui il comando seguente nella Console di gestione pacchetti:
+3. Installa Aspose.Words per .NET: usa NuGet Package Manager per installare Aspose.Words. Esegui il seguente comando nella Package Manager Console:
 ```sh
 Install-Package Aspose.Words
 ```
 
 ## Passaggio 2: caricare il documento
 
-Successivamente, carichiamo il documento Word che contiene i tag del documento strutturato.
+Carichiamo ora il documento Word che contiene i tag del documento strutturato.
 
-1. Percorso del documento: definire il percorso della directory dei documenti.
+1. Percorso al documento: definisce il percorso alla directory del documento.
    ```csharp
    string dataDir = "YOUR DOCUMENT DIRECTORY";
    ```
-2.  Caricare il documento: utilizzare il file`Document` class per caricare il tuo documento Word.
+2.  Carica il documento: usa il`Document` classe per caricare il documento Word.
    ```csharp
    Document doc = new Document(dataDir + "Structured document tags.docx");
    ```
@@ -66,16 +66,16 @@ Ora accediamo al tag del documento strutturato (SDT) all'interno del documento.
    StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
    ```
 
-## Passaggio 4: Cancella contenuto di SDT
+## Passaggio 4: Cancella il contenuto di SDT
 
 Cancella il contenuto del tag del documento strutturato.
 
-1.  Cancella contenuto SDT: utilizza il file`Clear` metodo per rimuovere il contenuto.
+1.  Cancella contenuto SDT: usa il`Clear` metodo per rimuovere il contenuto.
    ```csharp
    sdt.Clear();
    ```
 
-## Passaggio 5: salva il documento
+## Passaggio 5: Salvare il documento
 
 Infine, salva il documento modificato.
 
@@ -86,11 +86,11 @@ Infine, salva il documento modificato.
 
 ## Conclusione
 
-Congratulazioni! Hai cancellato con successo il controllo dei contenuti in un documento di Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione dei documenti Word. Seguendo questi passaggi, puoi gestire facilmente i tag dei documenti strutturati nei tuoi progetti.
+Congratulazioni! Hai eliminato con successo il controllo dei contenuti in un documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione dei documenti Word. Seguendo questi passaggi, puoi gestire facilmente i tag dei documenti strutturati nei tuoi progetti.
 
 ## Domande frequenti
 
-### Cos'è Aspose.Words per .NET?
+### Che cos'è Aspose.Words per .NET?
 
 Aspose.Words per .NET è una potente libreria per lavorare con documenti Word a livello di programmazione all'interno del framework .NET.
 
@@ -104,7 +104,7 @@ Aspose.Words per .NET è una potente libreria per lavorare con documenti Word a 
 
 ### Cosa sono i tag dei documenti strutturati?
 
-I tag di documento strutturato (SDT) sono controlli di contenuto nei documenti di Word che fungono da segnaposto per tipi specifici di contenuto.
+I tag di documento strutturato (SDT) sono controlli di contenuto nei documenti Word che fungono da segnaposto per tipi specifici di contenuto.
 
 ### Dove posso trovare la documentazione per Aspose.Words?
 

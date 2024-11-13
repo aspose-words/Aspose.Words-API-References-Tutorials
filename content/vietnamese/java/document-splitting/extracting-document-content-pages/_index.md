@@ -2,33 +2,33 @@
 title: Trích xuất nội dung tài liệu theo trang
 linktitle: Trích xuất nội dung tài liệu theo trang
 second_title: API xử lý tài liệu Java Aspose.Words
-description: Tìm hiểu cách trích xuất nội dung tài liệu theo trang bằng Aspose.Words cho Java. Hướng dẫn từng bước với mã nguồn này sẽ giúp bạn trở thành chuyên gia ngay lập tức.
+description: Tìm hiểu cách trích xuất nội dung tài liệu theo trang bằng Aspose.Words for Java. Hướng dẫn từng bước này với mã nguồn sẽ giúp bạn trở thành chuyên gia trong thời gian ngắn.
 type: docs
 weight: 13
 url: /vi/java/document-splitting/extracting-document-content-pages/
 ---
 
-Bạn đã sẵn sàng bắt đầu hành trình nắm vững nghệ thuật trích xuất nội dung tài liệu theo trang bằng Aspose.Words cho Java chưa? Bạn đang ở đúng nơi! Trong hướng dẫn toàn diện này, chúng tôi sẽ đi sâu vào những điểm phức tạp của Aspose.Words cho Java, bao gồm hướng dẫn từng bước và ví dụ về mã nguồn để giúp bạn khai thác toàn bộ tiềm năng của API Java mạnh mẽ này.
+Bạn đã sẵn sàng bắt đầu hành trình để thành thạo nghệ thuật trích xuất nội dung tài liệu theo trang bằng Aspose.Words for Java chưa? Bạn đã đến đúng nơi rồi! Trong hướng dẫn toàn diện này, chúng ta sẽ đi sâu vào những điều phức tạp của Aspose.Words for Java, có hướng dẫn từng bước và ví dụ về mã nguồn để giúp bạn khai thác toàn bộ tiềm năng của API Java mạnh mẽ này.
 
 ## Giới thiệu
 
-Aspose.Words for Java là một công cụ thay đổi cuộc chơi khi làm việc với các tài liệu Word theo chương trình. Cho dù bạn là nhà phát triển Java dày dạn kinh nghiệm hay mới bắt đầu hành trình viết mã, hướng dẫn này sẽ hướng dẫn bạn quy trình trích xuất nội dung tài liệu theo trang, cung cấp cho bạn bộ kỹ năng có giá trị cho các ứng dụng khác nhau.
+Aspose.Words for Java là một công cụ thay đổi cuộc chơi khi nói đến việc làm việc với các tài liệu Word theo chương trình. Cho dù bạn là một nhà phát triển Java dày dạn kinh nghiệm hay chỉ mới bắt đầu hành trình lập trình của mình, hướng dẫn này sẽ hướng dẫn bạn qua quy trình trích xuất nội dung tài liệu theo trang, cung cấp cho bạn một bộ kỹ năng có giá trị cho nhiều ứng dụng khác nhau.
 
 ## Bắt đầu
 
 ### Thiết lập môi trường phát triển của bạn
 
-Trước khi có thể bắt đầu làm việc với Aspose.Words cho Java, chúng ta cần thiết lập môi trường phát triển của mình. Thực hiện theo các bước sau:
+Trước khi chúng ta có thể bắt đầu làm việc với Aspose.Words for Java, chúng ta cần thiết lập môi trường phát triển của mình. Thực hiện theo các bước sau:
 
 1. Cài đặt Java: Nếu bạn chưa cài đặt Java, hãy tải xuống và cài đặt phiên bản mới nhất từ trang web.
 
 2.  Tải xuống Aspose.Words cho Java: Truy cập[Aspose.Words cho Java](https://releases.aspose.com/words/java/) và tải xuống phiên bản mới nhất của thư viện.
 
-3. Tích hợp Aspose.Words vào dự án của bạn: Thêm tệp JAR Aspose.Words vào đường dẫn lớp của dự án Java của bạn.
+3. Tích hợp Aspose.Words vào dự án của bạn: Thêm các tệp JAR Aspose.Words vào classpath của dự án Java.
 
 ### Tạo một dự án Java mới
 
-Bây giờ, hãy tạo một dự án Java mới để bắt đầu hành trình của chúng ta:
+Bây giờ, chúng ta hãy tạo một dự án Java mới để bắt đầu hành trình của mình:
 
 ```java
 public class DocumentExtractor {
@@ -38,15 +38,15 @@ public class DocumentExtractor {
 }
 ```
 
-### Thêm Aspose.Words vào dự án của bạn
+### Thêm Aspose.Words vào Dự án của bạn
 
- Để thêm Aspose.Words vào dự án của bạn, hãy sao chép các tệp JAR đã tải xuống vào dự án của bạn`lib` thư mục và thêm chúng vào đường dẫn lớp của bạn. Bây giờ bạn đã sẵn sàng đi sâu vào thế giới trích xuất tài liệu!
+ Để thêm Aspose.Words vào dự án của bạn, hãy sao chép các tệp JAR đã tải xuống vào thư mục dự án của bạn`lib` và thêm chúng vào classpath của bạn. Bây giờ bạn đã sẵn sàng để khám phá thế giới trích xuất tài liệu!
 
 ## Tải và phân tích tài liệu
 
-### Đang tải tài liệu Word
+### Tải một tài liệu Word
 
-Hãy bắt đầu bằng cách tải tài liệu Word:
+Chúng ta hãy bắt đầu bằng cách tải một tài liệu Word:
 
 ```java
 // Tải tài liệu
@@ -55,16 +55,16 @@ Document doc = new Document("sample.docx");
 
 ### Phân tích cấu trúc tài liệu
 
-Bây giờ chúng ta đã tải xong tài liệu, hãy phân tích cấu trúc của nó:
+Bây giờ tài liệu đã được tải, hãy phân tích cấu trúc của nó:
 
 ```java
-// Tạo một khách truy cập tài liệu
+// Tạo một DocumentVisitor
 DocumentVisitor visitor = new DocumentVisitor();
 
 // Duyệt qua tài liệu
 doc.accept(visitor);
 
-//Nội dung được trích xuất hiện có sẵn trong khách truy cập
+//Nội dung được trích xuất hiện có sẵn trong trình duyệt của khách truy cập
 String extractedText = visitor.getText();
 ```
 
@@ -72,12 +72,12 @@ String extractedText = visitor.getText();
 
 ### Trang tài liệu là gì?
 
-Trong Aspose.Words, một tài liệu có thể được chia thành các trang. Mỗi trang đại diện cho một phần nội dung của tài liệu. Nhưng làm cách nào để chúng ta truy cập các trang này theo chương trình?
+Trong Aspose.Words, một tài liệu có thể được chia thành các trang. Mỗi trang đại diện cho một phần nội dung của tài liệu. Nhưng làm thế nào để chúng ta truy cập các trang này theo chương trình?
 
 ### Trích xuất văn bản từ một trang cụ thể
 
 ```java
-// Chỉ định số trang (chỉ mục dựa trên số không)
+// Chỉ định số trang (chỉ mục bắt đầu từ số không)
 int pageNumber = 0;
 
 // Trích xuất văn bản từ trang được chỉ định
@@ -87,7 +87,7 @@ String pageText = doc.extractText(pageInfo);
 
 ### Lặp qua tất cả các trang
 
-Để trích xuất nội dung từ tất cả các trang, bạn có thể sử dụng một vòng lặp đơn giản:
+Để trích xuất nội dung từ tất cả các trang, bạn có thể sử dụng vòng lặp đơn giản:
 
 ```java
 // Lấy tổng số trang trong tài liệu
@@ -96,39 +96,39 @@ int pageCount = doc.getPageCount();
 for (int i = 0; i < pageCount; i++) {
     PageInfo pageInfo = doc.getPageInfo(i);
     String pageText = doc.extractText(pageInfo);
-    // Xử lý nội dung được trích xuất khi cần thiết
+    // Xử lý nội dung đã trích xuất khi cần thiết
 }
 ```
 
-## Thao tác nội dung được trích xuất
+## Thao tác nội dung trích xuất
 
-### Định dạng và tạo kiểu cho văn bản
+### Định dạng và tạo kiểu văn bản
 
-Bạn có thể áp dụng định dạng và kiểu dáng cho văn bản được trích xuất, giống như cách bạn làm với bất kỳ văn bản nào khác trong Java. Ví dụ: để in đậm văn bản:
+Bạn có thể áp dụng định dạng và kiểu dáng cho văn bản đã trích xuất, giống như bạn làm với bất kỳ văn bản nào khác trong Java. Ví dụ, để làm cho văn bản in đậm:
 
 ```java
-// Tạo Trình tạo tài liệu
+// Tạo DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Chèn văn bản được định dạng
+// Chèn văn bản đã định dạng
 builder.getFont().setBold(true);
 builder.write("This text is bold.");
 ```
 
-### Lưu nội dung được trích xuất vào tài liệu mới
+### Lưu nội dung đã trích xuất vào một tài liệu mới
 
-Sau khi đã trích xuất và thao tác nội dung, bạn có thể lưu nó vào tài liệu mới:
+Sau khi trích xuất và chỉnh sửa nội dung, bạn có thể lưu nội dung đó vào một tài liệu mới:
 
 ```java
-//Lưu nội dung được trích xuất vào tài liệu mới
+//Lưu nội dung đã trích xuất vào một tài liệu mới
 doc.save("extracted_content.docx");
 ```
 
 ## Câu hỏi thường gặp
 
-### Làm cách nào để xử lý các tài liệu Word được mã hóa?
+### Tôi phải xử lý các tài liệu Word được mã hóa như thế nào?
 
-Aspose.Words for Java cung cấp các phương thức để mở và thao tác với các tài liệu Word được mã hóa. Bạn có thể chỉ định mật khẩu khi tải tài liệu:
+Aspose.Words for Java cung cấp các phương pháp để mở và thao tác các tài liệu Word được mã hóa. Bạn có thể chỉ định mật khẩu khi tải tài liệu:
 
 ```java
 Document doc = new Document("encrypted.docx", new LoadOptions("password"));
@@ -136,7 +136,7 @@ Document doc = new Document("encrypted.docx", new LoadOptions("password"));
 
 ### Tôi có thể trích xuất nội dung từ các tài liệu được bảo vệ bằng mật khẩu không?
 
-Có, bạn có thể trích xuất nội dung từ các tài liệu được bảo vệ bằng mật khẩu bằng Aspose.Words for Java. Chỉ cần cung cấp mật khẩu chính xác khi tải tài liệu, như được hiển thị ở trên.
+Có, bạn có thể trích xuất nội dung từ các tài liệu được bảo vệ bằng mật khẩu bằng Aspose.Words for Java. Chỉ cần cung cấp đúng mật khẩu khi tải tài liệu, như minh họa ở trên.
 
 ### Aspose.Words for Java có tương thích với Java 11 trở lên không?
 
@@ -144,16 +144,16 @@ Có, Aspose.Words for Java tương thích với Java 11 và các phiên bản ca
 
 ### Một số lỗi thường gặp là gì và cách khắc phục chúng?
 
-Các lỗi phổ biến trong Aspose.Words for Java thường liên quan đến cấu trúc hoặc định dạng tài liệu. Tham khảo tài liệu và diễn đàn cộng đồng để biết các mẹo khắc phục sự cố.
+Các lỗi thường gặp trong Aspose.Words for Java thường liên quan đến cấu trúc hoặc định dạng tài liệu. Tham khảo tài liệu và diễn đàn cộng đồng để biết mẹo khắc phục sự cố.
 
-### Làm cách nào tôi có thể đóng góp cho cộng đồng Aspose.Words for Java?
+### Làm thế nào tôi có thể đóng góp cho cộng đồng Aspose.Words dành cho Java?
 
-Bạn có thể đóng góp bằng cách chia sẻ kiến thức của mình trên diễn đàn, báo cáo lỗi hoặc thậm chí gửi đóng góp mã. Hãy tham gia cộng đồng Aspose sôi động ngay hôm nay!
+Bạn có thể đóng góp bằng cách chia sẻ kiến thức của mình trên diễn đàn, báo cáo lỗi hoặc thậm chí gửi đóng góp mã. Tham gia cộng đồng Aspose sôi động ngay hôm nay!
 
-### Có bất kỳ cân nhắc cấp phép nào không?
+### Có bất kỳ cân nhắc nào về cấp phép không?
 
-Aspose.Words for Java yêu cầu giấy phép hợp lệ để sử dụng cho mục đích thương mại. Đảm bảo có được giấy phép cần thiết để tuân thủ các điều khoản sử dụng.
+Aspose.Words for Java yêu cầu giấy phép hợp lệ để sử dụng thương mại. Hãy đảm bảo có được giấy phép cần thiết để tuân thủ các điều khoản sử dụng.
 
 ## Phần kết luận
 
-Chúc mừng! Bạn đã hoàn thành hướng dẫn từng bước về trích xuất nội dung tài liệu theo trang bằng Aspose.Words cho Java. Bây giờ bạn sở hữu một bộ kỹ năng có giá trị để làm việc với các tài liệu Word theo chương trình. Hãy thoải mái khám phá thêm các tính năng của Aspose.Words và thỏa sức sáng tạo trong thao tác tài liệu.
+Xin chúc mừng! Bạn đã hoàn thành hướng dẫn từng bước về cách trích xuất nội dung tài liệu theo trang bằng Aspose.Words for Java. Bây giờ bạn đã có một bộ kỹ năng có giá trị để làm việc với các tài liệu Word theo chương trình. Hãy thoải mái khám phá thêm các tính năng của Aspose.Words và giải phóng sự sáng tạo của bạn trong việc thao tác tài liệu.

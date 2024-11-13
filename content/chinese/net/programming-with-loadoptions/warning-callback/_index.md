@@ -17,7 +17,7 @@ url: /zh/net/programming-with-loadoptions/warning-callback/
 
 - C# 编程基础知识
 - 您的计算机上安装了 Visual Studio
-- Aspose.Words for .NET 库（你可以下载[这里](https://releases.aspose.com/words/net/）)
+- Aspose.Words for .NET 库（您可以下载[这里](https://releases.aspose.com/words/net/）)
 - 有效的 Aspose.Words 许可证（如果没有，请获取[临时执照](https://purchase.aspose.com/temporary-license/）)
 
 ## 导入命名空间

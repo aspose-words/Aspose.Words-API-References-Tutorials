@@ -9,7 +9,7 @@ url: /de/net/working-with-vba-macros/modify-vba-macros/
 ---
 ## Einführung
 
-Hallo liebe Programmierer und Dokumentautomatisierungs-Enthusiasten! Seid ihr bereit, eure Word-Dokumentenkenntnisse auf die nächste Stufe zu heben? Heute tauchen wir in die faszinierende Welt der VBA-Makros (Visual Basic for Applications) in Word-Dokumenten ein. Insbesondere werden wir untersuchen, wie man vorhandene VBA-Makros mit Aspose.Words für .NET ändert. Diese leistungsstarke Bibliothek macht es einfach, Aufgaben zu automatisieren, Dokumente anzupassen und sogar diese lästigen Makros zu optimieren. Egal, ob Sie Ihre Makros aktualisieren möchten oder einfach nur neugierig auf den Vorgang sind, dieses Tutorial hat alles für Sie. Also, legen wir los!
+Hallo liebe Programmierer und Dokumentautomatisierungs-Enthusiasten! Sind Sie bereit, Ihre Word-Dokumente auf die nächste Stufe zu heben? Heute tauchen wir in die faszinierende Welt der VBA-Makros (Visual Basic for Applications) in Word-Dokumenten ein. Insbesondere werden wir untersuchen, wie vorhandene VBA-Makros mit Aspose.Words für .NET geändert werden können. Mit dieser leistungsstarken Bibliothek können Sie ganz einfach Aufgaben automatisieren, Dokumente anpassen und sogar diese lästigen Makros optimieren. Egal, ob Sie Ihre Makros aktualisieren möchten oder einfach nur neugierig auf den Vorgang sind, dieses Tutorial bietet alles, was Sie brauchen. Also, legen wir los!
 
 ## Voraussetzungen
 
@@ -22,7 +22,7 @@ Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, wa
 
 ## Namespaces importieren
 
-Um die Funktionen von Aspose.Words nutzen zu können, müssen Sie die erforderlichen Namespaces importieren. Dazu gehören Klassen und Methoden zur Handhabung von Word-Dokumenten und VBA-Projekten.
+Um die Funktionen von Aspose.Words nutzen zu können, müssen Sie die erforderlichen Namespaces importieren. Dazu gehören Klassen und Methoden für die Handhabung von Word-Dokumenten und VBA-Projekten.
 
 Hier ist der Code zum Importieren:
 
@@ -63,7 +63,7 @@ Document doc = new Document(dataDir + "VBA project.docm");
 
 ## Schritt 3: Zugriff auf das VBA-Projekt
 
-Nachdem wir nun unser Dokument geladen haben, besteht der nächste Schritt darin, auf das VBA-Projekt innerhalb des Dokuments zuzugreifen. Das VBA-Projekt enthält alle Makros und Module, die wir ändern können.
+Nachdem wir unser Dokument geladen haben, besteht der nächste Schritt darin, auf das VBA-Projekt im Dokument zuzugreifen. Das VBA-Projekt enthält alle Makros und Module, die wir ändern können.
 
 ### Abrufen des VBA-Projekts
 
@@ -120,7 +120,7 @@ Viel Spaß beim Programmieren und denken Sie daran: Bei der Automatisierung Ihre
 Aspose.Words für .NET ist eine umfassende Bibliothek, mit der Entwickler Word-Dokumente in .NET-Anwendungen erstellen, bearbeiten und manipulieren können. Sie eignet sich perfekt für die Automatisierung von Dokument-Workflows, einschließlich der Arbeit mit VBA-Makros.
 
 ### Kann ich mit Aspose.Words VBA-Makros in Word-Dokumenten ändern?  
-Ja, Aspose.Words bietet die Funktionalität, auf VBA-Makros in Word-Dokumenten zuzugreifen und diese zu ändern. Sie können den Makrocode ändern, neue Module hinzufügen und mehr.
+Ja, Aspose.Words bietet die Funktionalität, auf VBA-Makros in Word-Dokumenten zuzugreifen und diese zu ändern. Sie können den Makrocode ändern, neue Module hinzufügen und vieles mehr.
 
 ### Wie teste ich meine geänderten VBA-Makros?  
 Um Ihre geänderten VBA-Makros zu testen, öffnen Sie das gespeicherte Word-Dokument in Microsoft Word, wechseln Sie zur Registerkarte „Entwickler“ und führen Sie die Makros aus. Sie können sie auch direkt im VBA-Editor debuggen.

@@ -139,7 +139,7 @@ Ha a dokumentumokat formákkal és grafikákkal javítja, jelentősen javíthatj
 
 ### Hogyan méretezhetek át egy alakzatot a dokumentumban?
 
- Egy alakzat átméretezéséhez használja a`setWidth`és`setHeight` módszerek az alakzat objektumon. Például egy 150 pixel széles és 75 képpont magas alakzat létrehozásához:
+ Egy alakzat átméretezéséhez használja a`setWidth` és`setHeight` módszerek az alakzat objektumon. Például egy 150 pixel széles és 75 képpont magas alakzat létrehozásához:
 
 ```java
 shape.setWidth(150);

@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### A MoveToBookmark megértése
 
- A`MoveToBookmark`módszer lehetővé teszi, hogy egy adott könyvjelzőhöz navigáljon a dokumentumban. A metódus aláírása a következő:
+A`MoveToBookmark`módszer lehetővé teszi, hogy egy adott könyvjelzőhöz navigáljon a dokumentumban. A metódus aláírása a következő:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);
@@ -130,7 +130,7 @@ Megvan! Most tanulta meg, hogyan lehet egy Word-dokumentumban a könyvjelző vé
 
 ### 1. Mozoghatok a könyvjelző elejére a vége helyett?
 
- Teljesen! Csak állítsd be a`isBookmarkStart` paraméterhez`true`és`isBookmarkEnd` hogy`false` a`MoveToBookmark` módszer.
+ Teljesen! Csak állítsd be a`isBookmarkStart` paraméterhez`true` és`isBookmarkEnd` hogy`false` a`MoveToBookmark` módszer.
 
 ### 2. Mi a teendő, ha a könyvjelző neve helytelen?
 

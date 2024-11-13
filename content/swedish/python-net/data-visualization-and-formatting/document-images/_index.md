@@ -149,7 +149,7 @@ Att införliva multimediebilder i dina dokument är en spelomvandlare. Genom att
 
 ### Kan jag lägga till bildtexter till bilderna jag infogar?
 
- Ja, du kan lägga till bildtexter med Aspose.Words. Använd`add_caption` metod och anpassa bildtextens utseende.
+ Ja, du kan lägga till bildtexter till bilder med Aspose.Words. Använd`add_caption` metod och anpassa bildtextens utseende.
 
 ### Vilka format kan jag exportera mina dokument till?
 
@@ -157,7 +157,7 @@ Aspose.Words stöder export av dokument till olika format, inklusive PDF, DOCX, 
 
 ### Är Aspose.Words lämplig för både webb- och skrivbordsapplikationer?
 
-Absolut! Aspose.Words kan sömlöst integreras i både webb- och skrivbordsapplikationer för att generera dokument med rich media-bilder.
+Absolut! Aspose.Words kan sömlöst integreras i både webb- och skrivbordsapplikationer för att generera dokument med rika mediabilder.
 
 ### Hur kan jag säkerställa att mitt dokuments filstorlek inte blir för stor?
 

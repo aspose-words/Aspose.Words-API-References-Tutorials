@@ -90,7 +90,7 @@ private static float convertScalingFactor(String scalingFactor) throws Exception
 /// <param name="パラメータ"></param>
 /// <戻り値></戻り値>
 public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Exception {
-	//バーコードの種類と値が提供されているかどうかを確認する
+	//バーコードの種類と値が提供されているかどうかを確認します
 	if (parameters.getBarcodeType() == null || parameters.getBarcodeValue() == null)
 		return null;
 	
@@ -201,7 +201,7 @@ Aspose.Words for Java は、QR コード、CODE128、CODE39、EAN8、EAN13、UPC
 
 ### 生成されたバーコードを Word 文書に統合するにはどうすればよいですか?
 
-生成されたバーコードを Word 文書に統合するには、Aspose.Words for Java の文書操作機能を使用できます。バーコード イメージを文書の任意の場所に挿入できます。
+生成されたバーコードを Word 文書に統合するには、Aspose.Words for Java の文書操作機能を使用できます。バーコード イメージを文書内の任意の場所に挿入できます。
 
 ### さらにカスタマイズできるサンプルコードはありますか?
 

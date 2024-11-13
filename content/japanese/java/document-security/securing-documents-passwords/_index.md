@@ -17,7 +17,7 @@ Aspose.Words for Java のパワーを活用して、パスワードでドキュ�
 
 ## Aspose.Words for Java の設定
 
-ドキュメントのセキュリティ保護に進む前に、Java環境にAspose.Words for Javaがセットアップされていることを確認しましょう。まだセットアップしていない場合は、こちらからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
+ドキュメントのセキュリティ保護に進む前に、Java環境にAspose.Words for Javaがセットアップされていることを確認しましょう。まだセットアップしていない場合は、以下からダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## 文書の保護: ステップバイステップ
 
@@ -59,7 +59,7 @@ doc.save("path/to/your/secured/document.docx");
 
 ### Aspose.Words for Java のパスワード保護はどの程度安全ですか?
 
-Aspose.Words for Java のパスワード保護は極めて安全です。強力な暗号化アルゴリズムを使用して、ドキュメントが不正アクセスから保護されるようにします。
+Aspose.Words for Java のパスワード保護は極めて安全です。強力な暗号化アルゴリズムを使用して、ドキュメントを不正アクセスから保護します。
 
 ### パスワードを後で変更または削除できますか?
 

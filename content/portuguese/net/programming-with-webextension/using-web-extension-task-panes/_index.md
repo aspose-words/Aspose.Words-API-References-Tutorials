@@ -2,27 +2,27 @@
 title: Usando painéis de tarefas de extensão da Web
 linktitle: Usando painéis de tarefas de extensão da Web
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como adicionar e configurar painéis de tarefas de extensão da Web em documentos do Word usando Aspose.Words for .NET neste tutorial passo a passo detalhado.
+description: Aprenda como adicionar e configurar Painéis de Tarefas de Extensão da Web em documentos do Word usando o Aspose.Words para .NET neste tutorial detalhado e passo a passo.
 type: docs
 weight: 10
 url: /pt/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 ## Introdução
 
-Bem-vindo a este tutorial detalhado sobre como usar painéis de tarefas de extensão da Web em um documento do Word usando Aspose.Words for .NET. Se você sempre quis aprimorar seus documentos do Word com painéis de tarefas interativos, você está no lugar certo. Este guia irá orientá-lo em todas as etapas para conseguir isso sem problemas.
+Bem-vindo a este tutorial aprofundado sobre como usar Painéis de Tarefas de Extensão da Web em um documento do Word usando Aspose.Words para .NET. Se você sempre quis aprimorar seus documentos do Word com painéis de tarefas interativos, você está no lugar certo. Este guia o guiará por cada etapa para conseguir isso perfeitamente.
 
 ## Pré-requisitos
 
-Antes de começarmos, vamos ter certeza de que você tem tudo o que precisa:
+Antes de começarmos, vamos garantir que você tenha tudo o que precisa:
 
--  Aspose.Words para .NET: você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: Você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
 - Ambiente de desenvolvimento .NET: Visual Studio ou qualquer outro IDE de sua preferência.
-- Conhecimento básico de C#: Isso o ajudará a acompanhar os exemplos de código.
--  Licença para Aspose.Words: você pode comprar uma[aqui](https://purchase.aspose.com/buy) ou obtenha uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
+- Conhecimento básico de C#: Isso ajudará você a acompanhar os exemplos de código.
+-  Licença para Aspose.Words: Você pode comprar uma[aqui](https://purchase.aspose.com/buy) ou obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
 
 ## Importar namespaces
 
-Antes de começarmos a codificar, certifique-se de ter os seguintes namespaces importados em seu projeto:
+Antes de começar a codificar, certifique-se de ter os seguintes namespaces importados em seu projeto:
 
 ```csharp
 using Aspose.Words;
@@ -33,9 +33,9 @@ using Aspose.Words.WebExtensions;
 
 Agora, vamos dividir o processo em etapas fáceis de seguir.
 
-### Etapa 1: configurando seu diretório de documentos
+### Etapa 1: Configurando seu diretório de documentos
 
-Em primeiro lugar, precisamos configurar o caminho para o diretório de documentos. É aqui que seu documento do Word será salvo.
+Primeiro, precisamos configurar o caminho para o diretório dos seus documentos. É aqui que seu documento do Word será salvo.
 
 ```csharp
 // O caminho para o diretório de documentos.
@@ -44,28 +44,28 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
  Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para sua pasta de documentos.
 
-### Etapa 2: Criando um Novo Documento
+### Etapa 2: Criando um novo documento
 
-A seguir, criaremos um novo documento do Word usando Aspose.Words.
+Em seguida, criaremos um novo documento do Word usando o Aspose.Words.
 
 ```csharp
 Document doc = new Document();
 ```
 
- Esta linha inicializa uma nova instância do`Document` class, que representa um documento do Word.
+ Esta linha inicializa uma nova instância do`Document` classe, que representa um documento do Word.
 
-### Etapa 3: adicionar um painel de tarefas
+### Etapa 3: Adicionar um painel de tarefas
 
-Agora, adicionaremos um Painel de Tarefas ao nosso documento. Os painéis de tarefas são úteis para fornecer funcionalidades e ferramentas adicionais em um documento do Word.
+Agora, adicionaremos um Painel de Tarefas ao nosso documento. Painéis de Tarefas são úteis para fornecer funcionalidades e ferramentas adicionais dentro de um documento do Word.
 
 ```csharp
 TaskPane taskPane = new TaskPane();
 doc.WebExtensionTaskPanes.Add(taskPane);
 ```
 
- Aqui, criamos um novo`TaskPane` objeto e adicione-o ao documento`WebExtensionTaskPanes` coleção.
+ Aqui, criamos um novo`TaskPane` objeto e adicioná-lo ao documento`WebExtensionTaskPanes` coleção.
 
-### Etapa 4: configurando o painel de tarefas
+### Etapa 4: Configurando o Painel de Tarefas
 
 Para tornar nosso Painel de Tarefas visível e definir suas propriedades, usamos o seguinte código:
 
@@ -75,13 +75,13 @@ taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-- `DockState` define onde o Painel de Tarefas aparecerá. Neste caso, está à direita.
+- `DockState` define onde o Painel de Tarefas aparecerá. Neste caso, é à direita.
 - `IsVisible` garante que o Painel de Tarefas esteja visível.
 - `Width` define a largura do Painel de Tarefas.
 
 ### Etapa 5: Configurando a referência de extensão da Web
 
-A seguir, configuramos a Referência de extensão da Web que inclui ID, versão, tipo de loja e loja.
+Em seguida, configuramos a Referência de Extensão da Web, que inclui o ID, a versão, o tipo de loja e a loja.
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -95,9 +95,9 @@ taskPane.WebExtension.Reference.Store = "th-TH";
 - `StoreType` indica o tipo de loja (neste caso, OMEX).
 - `Store` especifica o código de idioma/cultura da loja.
 
-### Etapa 6: adicionando propriedades à extensão da web
+### Etapa 6: Adicionando propriedades à extensão da Web
 
-Você pode adicionar propriedades à sua extensão da web para definir seu comportamento ou conteúdo.
+Você pode adicionar propriedades à sua extensão web para definir seu comportamento ou conteúdo.
 
 ```csharp
 taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
@@ -105,19 +105,19 @@ taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign
 
  Aqui, adicionamos uma propriedade chamada`mailchimpCampaign`.
 
-### Etapa 7: vinculando a extensão da web
+### Etapa 7: Vinculando a extensão da Web
 
-Finalmente, adicionamos ligações à nossa extensão web. As ligações permitem vincular a extensão a partes específicas do documento.
+Por fim, adicionamos bindings à nossa extensão web. Bindings permitem que você vincule a extensão a partes específicas do documento.
 
 ```csharp
 taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545", WebExtensionBindingType.Text, "194740422"));
 ```
 
 - `UnnamedBinding_0_1506535429545` é o nome da ligação.
-- `WebExtensionBindingType.Text` indica que a encadernação é do tipo texto.
+- `WebExtensionBindingType.Text` indica que a ligação é do tipo texto.
 - `194740422` é o ID da parte do documento à qual a extensão está vinculada.
 
-### Etapa 8: salvando o documento
+### Etapa 8: Salvando o documento
 
 Depois de configurar tudo, salve seu documento.
 
@@ -143,25 +143,25 @@ foreach (TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
 }
 ```
 
-Esse código carrega o documento e imprime o provedor, a versão e o identificador do catálogo de cada painel de tarefas no console.
+Este código carrega o documento e imprime o provedor, a versão e o identificador de catálogo de cada painel de tarefas no console.
 
 ## Conclusão
 
-E é isso! Você adicionou e configurou com êxito um painel de tarefas de extensão da Web em um documento do Word usando Aspose.Words for .NET. Este poderoso recurso pode aprimorar significativamente seus documentos do Word, fornecendo funcionalidades adicionais diretamente no documento. 
+E é isso! Você adicionou e configurou com sucesso um Painel de Tarefas de Extensão da Web em um documento do Word usando o Aspose.Words para .NET. Esse recurso poderoso pode melhorar significativamente seus documentos do Word ao fornecer funcionalidades adicionais diretamente no documento. 
 
 ## Perguntas frequentes
 
-### O que é um painel de tarefas no Word?
-Um Painel de Tarefas é um elemento de interface que fornece ferramentas e funcionalidades adicionais em um documento do Word, melhorando a interação e a produtividade do usuário.
+### O que é um Painel de Tarefas no Word?
+Um Painel de Tarefas é um elemento de interface que fornece ferramentas e funcionalidades adicionais dentro de um documento do Word, melhorando a interação do usuário e a produtividade.
 
 ### Posso personalizar a aparência do Painel de Tarefas?
  Sim, você pode personalizar a aparência do Painel de Tarefas definindo propriedades como`DockState`, `IsVisible` , e`Width`.
 
-### O que são propriedades de extensão da web?
+### O que são propriedades de extensão da Web?
 Propriedades de extensão da Web são propriedades personalizadas que você pode adicionar a uma extensão da Web para definir seu comportamento ou conteúdo.
 
-### Como vinculo uma extensão da Web a uma parte do documento?
+### Como vincular uma extensão da Web a uma parte do documento?
  Você pode vincular uma extensão da Web a uma parte do documento usando o`WebExtensionBinding` classe, especificando o tipo de ligação e o ID de destino.
 
-### Onde posso encontrar mais informações sobre o Aspose.Words for .NET?
+### Onde posso encontrar mais informações sobre o Aspose.Words para .NET?
  Você pode encontrar documentação detalhada[aqui](https://reference.aspose.com/words/net/).

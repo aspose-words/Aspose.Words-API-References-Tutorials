@@ -1,6 +1,6 @@
 ---
-title: Abaikan Teks di Dalam Hapus Revisi
-linktitle: Abaikan Teks di Dalam Hapus Revisi
+title: Abaikan Teks Di Dalam Hapus Revisi
+linktitle: Abaikan Teks Di Dalam Hapus Revisi
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara menangani revisi terlacak dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kuasai otomatisasi dokumen dengan tutorial komprehensif ini.
 type: docs
@@ -9,17 +9,17 @@ url: /id/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 ## Perkenalan
 
-Dalam bidang pengembangan .NET, Aspose.Words menonjol sebagai perpustakaan yang kuat untuk bekerja dengan dokumen Microsoft Word secara terprogram. Baik Anda seorang pengembang berpengalaman atau baru memulai, menguasai kemampuan Aspose.Words dapat secara signifikan meningkatkan kemampuan Anda untuk memanipulasi, membuat, dan mengelola dokumen Word secara efisien. Tutorial ini mendalami salah satu fitur canggihnya: menangani revisi terlacak dalam dokumen menggunakan Aspose.Words untuk .NET.
+Dalam bidang pengembangan .NET, Aspose.Words menonjol sebagai pustaka yang tangguh untuk bekerja dengan dokumen Microsoft Word secara terprogram. Baik Anda seorang pengembang berpengalaman atau baru memulai, menguasai kemampuan Aspose.Words dapat meningkatkan kemampuan Anda untuk memanipulasi, membuat, dan mengelola dokumen Word secara efisien. Tutorial ini membahas salah satu fitur hebatnya: menangani revisi terlacak dalam dokumen menggunakan Aspose.Words untuk .NET.
 
 ## Prasyarat
 
-Sebelum mendalami tutorial ini, pastikan Anda memiliki prasyarat berikut:
-- Pengetahuan dasar bahasa pemrograman C#.
-- Visual Studio diinstal pada sistem Anda.
--  Aspose.Words untuk perpustakaan .NET terintegrasi ke dalam proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+Sebelum menyelami tutorial ini, pastikan Anda memiliki prasyarat berikut:
+- Pengetahuan dasar tentang bahasa pemrograman C#.
+- Visual Studio terinstal di sistem Anda.
+-  Pustaka Aspose.Words untuk .NET terintegrasi ke dalam proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
 - Akses ke Aspose.Words untuk .NET[dokumentasi](https://reference.aspose.com/words/net/) untuk referensi.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Mulailah dengan mengimpor namespace yang diperlukan ke dalam proyek Anda:
 ```csharp
@@ -28,15 +28,15 @@ using System.Text.RegularExpressions;
 using Aspose.Words;
 using Aspose.Words.Replacing;
 ```
-## Langkah 1: Buat Dokumen Baru dan Sisipkan Teks
+## Langkah 1: Buat Dokumen Baru dan Masukkan Teks
 
- Pertama, inisialisasi instance baru`Document` dan sebuah`DocumentBuilder` untuk mulai membuat dokumen Anda:
+ Pertama, inisialisasikan instance baru dari`Document` dan sebuah`DocumentBuilder` untuk mulai membangun dokumen Anda:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Sisipkan Teks dan Lacak Revisi
+## Langkah 2: Masukkan Teks dan Lacak Revisi
 
 Anda dapat memasukkan teks ke dalam dokumen dan melacak revisi dengan memulai dan menghentikan pelacakan revisi:
 ```csharp
@@ -67,15 +67,15 @@ Console.WriteLine(doc.GetText());
 
 ## Kesimpulan
 
-Menguasai revisi terlacak dalam dokumen Word menggunakan Aspose.Words untuk .NET memberdayakan pengembang untuk mengotomatiskan tugas pengeditan dokumen secara efisien. Dengan memanfaatkan API yang komprehensif dan fitur-fitur canggihnya, Anda dapat dengan mudah mengintegrasikan penanganan revisi ke dalam aplikasi Anda, sehingga meningkatkan produktivitas dan kemampuan manajemen dokumen.
+Menguasai revisi terlacak dalam dokumen Word menggunakan Aspose.Words for .NET memberdayakan pengembang untuk mengotomatiskan tugas pengeditan dokumen secara efisien. Dengan memanfaatkan API yang komprehensif dan fitur-fitur yang tangguh, Anda dapat mengintegrasikan penanganan revisi ke dalam aplikasi Anda dengan lancar, meningkatkan produktivitas dan kemampuan manajemen dokumen.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Apa saja revisi terlacak dalam dokumen Word?
-Revisi terlacak di dokumen Word mengacu pada perubahan yang dilakukan pada dokumen yang terlihat oleh orang lain dengan markup, sering kali digunakan untuk pengeditan dan peninjauan kolaboratif.
+### Apa itu revisi terlacak dalam dokumen Word?
+Revisi terlacak dalam dokumen Word merujuk pada perubahan yang dibuat pada dokumen yang dapat dilihat oleh orang lain dengan markup, sering digunakan untuk pengeditan dan peninjauan kolaboratif.
 
-### Bagaimana cara mengintegrasikan Aspose.Words untuk .NET ke dalam proyek Visual Studio saya?
-Anda dapat mengintegrasikan Aspose.Words untuk .NET dengan mengunduh perpustakaan dari situs web Aspose dan mereferensikannya dalam proyek Visual Studio Anda.
+### Bagaimana saya dapat mengintegrasikan Aspose.Words untuk .NET ke dalam proyek Visual Studio saya?
+Anda dapat mengintegrasikan Aspose.Words untuk .NET dengan mengunduh pustaka dari situs web Aspose dan merujuknya dalam proyek Visual Studio Anda.
 
 ### Bisakah saya mengembalikan revisi terlacak secara terprogram menggunakan Aspose.Words untuk .NET?
 Ya, Anda dapat mengelola dan mengembalikan revisi terlacak secara terprogram menggunakan Aspose.Words untuk .NET, memungkinkan kontrol yang tepat atas alur kerja pengeditan dokumen.
@@ -84,4 +84,4 @@ Ya, Anda dapat mengelola dan mengembalikan revisi terlacak secara terprogram men
 Aspose.Words untuk .NET dioptimalkan untuk menangani dokumen besar secara efisien, termasuk dokumen dengan revisi terlacak yang ekstensif.
 
 ### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan untuk Aspose.Words untuk .NET?
-Anda dapat menjelajahi dokumentasi komprehensif dan mendapatkan dukungan dari komunitas Aspose.Words untuk .NET di[Aspose.Forum Kata-kata](https://forum.aspose.com/c/words/8).
+Anda dapat menjelajahi dokumentasi yang komprehensif dan mendapatkan dukungan dari komunitas Aspose.Words untuk .NET di[Forum Aspose.Words](https://forum.aspose.com/c/words/8).

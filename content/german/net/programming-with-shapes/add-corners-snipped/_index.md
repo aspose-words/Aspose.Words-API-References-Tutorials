@@ -66,7 +66,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 };
 ```
 
-Diese Speicheroptionen stellen sicher, dass unser Dokument dem Standard ISO/IEC 29500:2008 entspricht, was für die Kompatibilität und Dokumentlebensdauer von entscheidender Bedeutung ist.
+Diese Speicheroptionen stellen sicher, dass unser Dokument dem Standard ISO/IEC 29500:2008 entspricht, was für die Kompatibilität und Langlebigkeit des Dokuments von entscheidender Bedeutung ist.
 
 ## Schritt 4: Speichern Sie das Dokument
 

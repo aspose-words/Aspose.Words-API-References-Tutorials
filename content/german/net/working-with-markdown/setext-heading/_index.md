@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Schritt 3: Hinzufügen eines Überschrift-1-Tags
 
-Beginnen wir damit, unserem Dokument ein Überschrift-1-Tag hinzuzufügen. Dies wird unser Haupttitel.
+Beginnen wir damit, unserem Dokument ein Überschriften-1-Tag hinzuzufügen. Dies wird unser Haupttitel.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
@@ -64,14 +64,14 @@ builder.Writeln("This is an H1 tag");
 Nachdem wir unsere Überschrift hinzugefügt haben, müssen wir die Stile zurücksetzen, um sicherzustellen, dass sie nicht in den nächsten Absatz übernommen werden.
 
 ```csharp
-// Setzen Sie die Stile aus dem vorherigen Absatz zurück, um Stile zwischen Absätzen nicht zu kombinieren.
+//Setzen Sie die Stile aus dem vorherigen Absatz zurück, um Stile zwischen Absätzen nicht zu kombinieren.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
 
 ## Schritt 5: Hinzufügen einer Setext-Überschrift der Ebene 1
 
-Jetzt fügen wir eine Setext-Überschriftebene 1 hinzu. Setext-Überschriften sind eine weitere Möglichkeit, Überschriften in Markdown zu definieren.
+Jetzt fügen wir eine Setext-Überschrift der Ebene 1 hinzu. Setext-Überschriften sind eine weitere Möglichkeit, Überschriften in Markdown zu definieren.
 
 ```csharp
 Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");
@@ -94,7 +94,7 @@ builder.Writeln("This is an H3 tag");
 Genau wie zuvor müssen wir die Stile zurücksetzen, um unerwünschte Formatierungen zu vermeiden.
 
 ```csharp
-// Setzen Sie die Stile aus dem vorherigen Absatz zurück, um Stile zwischen Absätzen nicht zu kombinieren.
+//Setzen Sie die Stile aus dem vorherigen Absatz zurück, um Stile zwischen Absätzen nicht zu kombinieren.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
@@ -141,4 +141,4 @@ Ja, Aspose.Words für .NET unterstützt .NET Core, sodass Sie es in plattformüb
  Aspose bietet eine[Kostenlose Testversion](https://releases.aspose.com/) mit dem Sie die Bibliothek testen können, bevor Sie eine Lizenz erwerben.
 
 ### Wo erhalte ich Support für Aspose.Words für .NET?
- Sie können Unterstützung von der Aspose-Community erhalten auf deren[Support-Forum](https://forum.aspose.com/c/words/8).
+ Sie können Unterstützung von der Aspose-Community erhalten über deren[Support-Forum](https://forum.aspose.com/c/words/8).

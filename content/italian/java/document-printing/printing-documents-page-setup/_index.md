@@ -1,8 +1,8 @@
 ---
-title: Stampa di documenti con Imposta pagina
-linktitle: Stampa di documenti con Imposta pagina
+title: Stampa di documenti con impostazione pagina
+linktitle: Stampa di documenti con impostazione pagina
 second_title: API di elaborazione dei documenti Java Aspose.Words
-description: Scopri come stampare documenti con un'impostazione precisa della pagina utilizzando Aspose.Words per Java. Personalizza layout, dimensioni della carta e altro ancora.
+description: Scopri come stampare documenti con un'impostazione di pagina precisa usando Aspose.Words per Java. Personalizza layout, dimensioni della carta e altro ancora.
 type: docs
 weight: 11
 url: /it/java/document-printing/printing-documents-page-setup/
@@ -10,23 +10,23 @@ url: /it/java/document-printing/printing-documents-page-setup/
 
 ## Introduzione
 
-La stampa di documenti con un'impostazione precisa della pagina è fondamentale quando si tratta di creare report, fatture o qualsiasi materiale stampato dall'aspetto professionale. Aspose.Words per Java semplifica questo processo per gli sviluppatori Java, consentendo loro di controllare ogni aspetto del layout della pagina.
+La stampa di documenti con un'impostazione di pagina precisa è fondamentale quando si tratta di creare report, fatture o qualsiasi materiale stampato dall'aspetto professionale. Aspose.Words for Java semplifica questo processo per gli sviluppatori Java, consentendo loro di controllare ogni aspetto del layout di pagina.
 
 ## Impostazione dell'ambiente di sviluppo
 
-Prima di iniziare, assicuriamoci di disporre di un ambiente di sviluppo adeguato. Avrai bisogno di:
+Prima di iniziare, assicuriamoci di avere un ambiente di sviluppo adatto. Avrai bisogno di:
 
 - Kit di sviluppo Java (JDK)
 - Ambiente di sviluppo integrato (IDE) come Eclipse o IntelliJ IDEA
-- Aspose.Words per la libreria Java
+- Libreria Aspose.Words per Java
 
 ## Creazione di un progetto Java
 
-Inizia creando un nuovo progetto Java nell'IDE scelto. Dategli un nome significativo e siete pronti per procedere.
+Inizia creando un nuovo progetto Java nell'IDE che hai scelto. Dagli un nome significativo e sei pronto per procedere.
 
-## Aggiunta di Aspose.Words per Java al tuo progetto
+## Aggiungere Aspose.Words per Java al tuo progetto
 
-Per utilizzare Aspose.Words per Java, devi aggiungere la libreria al tuo progetto. Segui questi passaggi:
+Per usare Aspose.Words per Java, devi aggiungere la libreria al tuo progetto. Segui questi passaggi:
 
 1.  Scarica la libreria Aspose.Words per Java da[Qui](https://releases.aspose.com/words/java/).
 
@@ -34,16 +34,16 @@ Per utilizzare Aspose.Words per Java, devi aggiungere la libreria al tuo progett
 
 ## Caricamento di un documento
 
-In questa sezione spiegheremo come caricare un documento che desideri stampare. Puoi caricare documenti in vari formati come DOCX, DOC, RTF e altri.
+In questa sezione, spiegheremo come caricare un documento che vuoi stampare. Puoi caricare documenti in vari formati come DOCX, DOC, RTF e altro.
 
 ```java
-// Caricare il documento
+// Carica il documento
 Document doc = new Document("sample.docx");
 ```
 
 ## Personalizzazione dell'impostazione della pagina
 
-Ora arriva la parte emozionante. È possibile personalizzare le impostazioni di impostazione della pagina in base alle proprie esigenze. Ciò include l'impostazione delle dimensioni della pagina, dei margini, dell'orientamento e altro.
+Ora arriva la parte emozionante. Puoi personalizzare le impostazioni di impostazione pagina in base alle tue esigenze. Ciò include l'impostazione delle dimensioni della pagina, dei margini, dell'orientamento e altro ancora.
 
 ```java
 // Personalizza l'impostazione della pagina
@@ -57,7 +57,7 @@ pageSetup.setRightMargin(72.0);
 
 ## Stampa del documento
 
-La stampa del documento è un processo semplice con Aspose.Words per Java. Puoi stampare su una stampante fisica o generare un PDF per la distribuzione digitale.
+Stampare il documento è un processo semplice con Aspose.Words per Java. Puoi stampare su una stampante fisica o generare un PDF per la distribuzione digitale.
 
 ```java
 // Stampa il documento
@@ -69,25 +69,25 @@ job.print();
 
 ## Conclusione
 
-In questo articolo, abbiamo esplorato come stampare documenti con l'impostazione della pagina personalizzata utilizzando Aspose.Words per Java. Grazie alle sue potenti funzionalità, puoi creare facilmente materiali stampati dall'aspetto professionale. Che si tratti di un rapporto aziendale o di un progetto creativo, Aspose.Words per Java ti copre.
+In questo articolo, abbiamo esplorato come stampare documenti con impostazione di pagina personalizzata utilizzando Aspose.Words per Java. Grazie alle sue potenti funzionalità, puoi creare facilmente materiali stampati dall'aspetto professionale. Che si tratti di un report aziendale o di un progetto creativo, Aspose.Words per Java è la soluzione che fa per te.
 
 ## Domande frequenti
 
-### Come posso modificare il formato carta del mio documento?
+### Come posso modificare il formato della carta del mio documento?
 
- Per modificare il formato carta del documento, utilizzare il file`setPageWidth`E`setPageHeight` metodi del`PageSetup` classe e specificare le dimensioni desiderate in punti.
+ Per modificare il formato della carta del documento, utilizzare`setPageWidth` E`setPageHeight` metodi di`PageSetup` classe e specificare le dimensioni desiderate in punti.
 
 ### Posso stampare più copie di un documento?
 
- Sì, puoi stampare più copie di un documento impostando il numero di copie nelle impostazioni di stampa prima di chiamare il`print()` metodo.
+ Sì, è possibile stampare più copie di un documento impostando il numero di copie nelle impostazioni di stampa prima di chiamare il`print()` metodo.
 
 ### Aspose.Words per Java è compatibile con diversi formati di documenti?
 
-Sì, Aspose.Words per Java supporta un'ampia gamma di formati di documenti, inclusi DOCX, DOC, RTF e altri.
+Sì, Aspose.Words per Java supporta un'ampia gamma di formati di documenti, tra cui DOCX, DOC, RTF e altri.
 
 ### Posso stampare su una stampante specifica?
 
-Certamente! È possibile specificare una stampante specifica utilizzando il comando`setPrintService` metodo e fornendo quanto desiderato`PrintService` oggetto.
+ Certamente! Puoi specificare una stampante specifica utilizzando`setPrintService` metodo e fornendo il desiderato`PrintService` oggetto.
 
 ### Come posso salvare il documento stampato come PDF?
 

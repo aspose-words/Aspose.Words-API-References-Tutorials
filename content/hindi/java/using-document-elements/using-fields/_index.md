@@ -12,7 +12,7 @@ url: /hi/java/using-document-elements/using-fields/
 
 ## 1 परिचय
 
-Aspose.Words for Java, Java अनुप्रयोगों में Word दस्तावेज़ों से निपटने वाले किसी भी व्यक्ति के लिए एक आवश्यक उपकरण है। फ़ील्ड प्लेसहोल्डर हैं जो आपके दस्तावेज़ में गतिशील डेटा संग्रहीत कर सकते हैं। यह ट्यूटोरियल आपको दिखाएगा कि फ़ील्ड के साथ प्रभावी ढंग से कैसे काम किया जाए।
+जावा के लिए Aspose.Words जावा अनुप्रयोगों में वर्ड दस्तावेज़ों से निपटने वाले किसी भी व्यक्ति के लिए एक आवश्यक उपकरण है। फ़ील्ड प्लेसहोल्डर हैं जो आपके दस्तावेज़ में गतिशील डेटा संग्रहीत कर सकते हैं। यह ट्यूटोरियल आपको दिखाएगा कि फ़ील्ड के साथ प्रभावी ढंग से कैसे काम किया जाए।
 
 ## 2. अपना वातावरण स्थापित करना
 
@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- प्रतिस्थापित करें`"Your Document Directory"`और`"Your Output Directory"` उचित पथों के साथ.
+ प्रतिस्थापित करें`"Your Document Directory"` और`"Your Output Directory"` उचित पथों के साथ.
 
 ## 4. मेल मर्ज को अनुकूलित करना
 
@@ -209,7 +209,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         FieldIf fieldIf = (FieldIf)builder.insertField(" IF 1 = 2 ");
         builder.moveTo(fieldIf.getSeparator());
         builder.insertField(" MERGEFIELD  FullName ");
-        // यदि हम इस फ्लैग को true पर सेट करते हैं, तो हम अभी भी false-statement IF फ़ील्ड के अंदर MERGEFIELDs की गणना कर सकते हैं।
+        // यदि हम इस फ्लैग को सत्य पर सेट करते हैं, तो हम अभी भी गलत-कथन IF फ़ील्ड के अंदर MERGEFIELDs की गणना कर सकते हैं।
         doc.getMailMerge().setUnconditionalMergeFieldsAndRegions(true);
         DataTable dataTable = new DataTable();
         dataTable.getColumns().add("FullName");

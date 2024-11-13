@@ -23,7 +23,7 @@ url: /hi/net/working-with-section/copy-section/
 
 ## नामस्थान आयात करें
 
-सबसे पहले, हमें आवश्यक नेमस्पेस को आयात करना होगा। ये आयात हमें Aspose.Words क्लासेस और विधियों तक पहुँच प्रदान करेंगे।
+सबसे पहले, हमें आवश्यक नेमस्पेस को आयात करना होगा। ये आयात हमें Aspose.Words क्लासेस और मेथड्स तक पहुँच प्रदान करेंगे।
 
 ```csharp
 using Aspose.Words;
@@ -67,7 +67,7 @@ Section newSection = (Section) dstDoc.ImportNode(sourceSection, true);
 ```
 
 - `Section sourceSection = srcDoc.Sections[0];` स्रोत दस्तावेज़ में पहले अनुभाग की पहचान करता है.
-- `Section newSection = (Section) dstDoc.ImportNode(sourceSection, true);` पहचाने गए अनुभाग को गंतव्य दस्तावेज़ में कॉपी करता है.
+- `Section newSection = (Section) dstDoc.ImportNode(sourceSection, true);` पहचाने गए अनुभाग को गंतव्य दस्तावेज़ में कॉपी करता है।
 
 ## चरण 4: कॉपी किए गए अनुभाग को गंतव्य दस्तावेज़ में जोड़ें
 

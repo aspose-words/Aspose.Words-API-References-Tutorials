@@ -1,27 +1,27 @@
 ---
-title: Kopieer de tekst met bladwijzer naar een Word-document
-linktitle: Kopieer de tekst met bladwijzer naar een Word-document
-second_title: Aspose.Words-API voor documentverwerking
-description: Kopieer tekst met bladwijzers moeiteloos tussen Word-documenten met Aspose.Words voor .NET. Leer hoe u dit doet met deze stapsgewijze handleiding.
+title: Kopieer gemarkeerde tekst in Word-document
+linktitle: Kopieer gemarkeerde tekst in Word-document
+second_title: Aspose.Words API voor documentverwerking
+description: Kopieer moeiteloos bladwijzertekst tussen Word-documenten met Aspose.Words voor .NET. Leer hoe met deze stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 ## Invoering
 
-Ooit gemerkt dat u specifieke secties van het ene Word-document naar het andere moest kopiëren? Nou, je hebt geluk! In deze zelfstudie laten we u zien hoe u tekst met een bladwijzer van het ene Word-document naar het andere kunt kopiëren met Aspose.Words voor .NET. Of u nu een dynamisch rapport bouwt of het genereren van documenten automatiseert, deze handleiding zal het proces voor u vereenvoudigen.
+Heb je ooit specifieke secties van het ene Word-document naar het andere moeten kopiëren? Dan heb je geluk! In deze tutorial laten we je zien hoe je bladwijzertekst van het ene Word-document naar het andere kopieert met Aspose.Words voor .NET. Of je nu een dynamisch rapport maakt of de generatie van documenten automatiseert, deze gids vereenvoudigt het proces voor je.
 
 ## Vereisten
 
-Voordat we erin duiken, zorg ervoor dat je het volgende hebt:
+Voordat we beginnen, zorg ervoor dat u het volgende heeft:
 
--  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET-bibliotheek: U kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Visual Studio of een andere .NET-ontwikkelomgeving.
-- Basiskennis van C#: Bekendheid met C#-programmeren en .NET-framework.
+- Basiskennis van C#: Kennis van C#-programmering en .NET Framework.
 
 ## Naamruimten importeren
 
-Zorg er om te beginnen voor dat u de benodigde naamruimten in uw project importeert:
+Zorg er allereerst voor dat u de benodigde naamruimten in uw project hebt geïmporteerd:
 
 ```csharp
 using Aspose.Words;
@@ -31,18 +31,18 @@ using Aspose.Words.Bookmark;
 
 ## Stap 1: Laad het brondocument
 
-Allereerst moet u het brondocument laden dat de tekst met bladwijzer bevat die u wilt kopiëren.
+Allereerst moet u het brondocument laden dat de bladwijzertekst bevat die u wilt kopiëren.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Hier,`dataDir` is het pad naar uw documentmap, en`Bookmarks.docx` is het brondocument.
+ Hier,`dataDir` is het pad naar uw documentenmap, en`Bookmarks.docx` is het bron document.
 
 ## Stap 2: Identificeer de bladwijzer
 
-Identificeer vervolgens de bladwijzer die u uit het brondocument wilt kopiëren.
+Selecteer vervolgens de bladwijzer die u uit het brondocument wilt kopiëren.
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
@@ -50,18 +50,18 @@ Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 
  Vervangen`"MyBookmark1"` met de werkelijke naam van uw bladwijzer.
 
-## Stap 3: Maak het bestemmingsdocument
+## Stap 3: Het bestemmingsdocument maken
 
-Maak nu een nieuw document waarin de tekst met de bladwijzer wordt gekopieerd.
+Maak nu een nieuw document waarin de bladwijzertekst wordt gekopieerd.
 
 ```csharp
 Document dstDoc = new Document();
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## Stap 4: Importeer inhoud met bladwijzers
+## Stap 4: Importeer gemarkeerde inhoud
 
- Om ervoor te zorgen dat de stijlen en opmaak behouden blijven, gebruikt u`NodeImporter` om de inhoud met bladwijzer van het brondocument naar het doeldocument te importeren.
+ Om ervoor te zorgen dat de stijlen en opmaak behouden blijven, gebruikt u`NodeImporter` om de gemarkeerde inhoud van het brondocument naar het doeldocument te importeren.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -70,7 +70,7 @@ AppendBookmarkedText(importer, srcBookmark, dstNode);
 
 ## Stap 5: Definieer de AppendBookmarkedText-methode
 
-Hier gebeurt de magie. Definieer een methode om het kopiëren van de tekst met bladwijzer af te handelen:
+Hier gebeurt de magie. Definieer een methode om het kopiëren van de gebookmarkte tekst te verwerken:
 
 ```csharp
 private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
@@ -94,9 +94,9 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
 }
 ```
 
-## Stap 6: Sla het bestemmingsdocument op
+## Stap 6: Sla het doeldocument op
 
-Sla ten slotte het doeldocument op om de gekopieerde inhoud te verifiëren.
+Sla ten slotte het doeldocument op om de gekopieerde inhoud te controleren.
 
 ```csharp
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
@@ -104,21 +104,21 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Conclusie
 
-En dat is het! U hebt met succes tekst met een bladwijzer van het ene Word-document naar het andere gekopieerd met Aspose.Words voor .NET. Deze methode is krachtig voor het automatiseren van documentmanipulatietaken, waardoor uw workflow efficiënter en gestroomlijnder wordt.
+En dat is alles! U hebt met succes bladwijzertekst van het ene Word-document naar het andere gekopieerd met Aspose.Words voor .NET. Deze methode is krachtig voor het automatiseren van documentmanipulatietaken, waardoor uw workflow efficiënter en gestroomlijnder wordt.
 
 ## Veelgestelde vragen
 
 ### Kan ik meerdere bladwijzers tegelijk kopiëren?
-Ja, u kunt meerdere bladwijzers doorlopen en dezelfde methode gebruiken om ze allemaal te kopiëren.
+Ja, u kunt door meerdere bladwijzers bladeren en dezelfde methode gebruiken om elke bladwijzer te kopiëren.
 
 ### Wat gebeurt er als de bladwijzer niet wordt gevonden?
- De`Range.Bookmarks` eigendom zal terugkeren`null`Zorg er dus voor dat u deze zaak afhandelt om uitzonderingen te voorkomen.
+De`Range.Bookmarks` eigendom zal terugkeren`null`Zorg er dus voor dat u dit geval zo behandelt dat er geen uitzonderingen ontstaan.
 
 ### Kan ik de opmaak van de originele bladwijzer behouden?
- Absoluut! Gebruiken`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de originele opmaak behouden blijft.
+ Absoluut! Gebruik`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de originele opmaak behouden blijft.
 
-### Is er een limiet aan de grootte van de tekst in de bladwijzer?
+### Is er een limiet aan de grootte van de gemarkeerde tekst?
 Er is geen specifieke limiet, maar de prestaties kunnen variëren bij extreem grote documenten.
 
 ### Kan ik tekst kopiëren tussen verschillende Word-documentformaten?
-Ja, Aspose.Words ondersteunt verschillende Word-formaten en de methode werkt in deze formaten.
+Ja, Aspose.Words ondersteunt verschillende Word-formaten en de methode werkt met al deze formaten.

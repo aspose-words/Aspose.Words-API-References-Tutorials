@@ -97,11 +97,11 @@ Egal, ob Sie an einem kleinen Projekt arbeiten oder mehrere Dokumente verwalten,
 
 ### Kann ich die Lesebeschränkung aufheben, ohne ein Kennwort festzulegen?
 
-Ja, das Festlegen eines Passworts ist optional. Sie können die Nur-Lese-Empfehlung direkt entfernen und keinen Schutz anwenden.
+Ja, das Festlegen eines Passworts ist optional. Sie können die Leseschutz-Empfehlung direkt entfernen und keinen Schutz anwenden.
 
 ### Was passiert, wenn das Dokument bereits über einen anderen Schutztyp verfügt?
 
- Der`doc.Protect(ProtectionType.NoProtection)` Methode stellt sicher, dass sämtliche Schutzarten aus dem Dokument entfernt werden.
+Der`doc.Protect(ProtectionType.NoProtection)` Methode stellt sicher, dass sämtliche Schutzarten aus dem Dokument entfernt werden.
 
 ### Gibt es eine Möglichkeit, festzustellen, ob ein Dokument schreibgeschützt ist, bevor die Einschränkung aufgehoben wird?
 
@@ -109,7 +109,7 @@ Ja, das Festlegen eines Passworts ist optional. Sie können die Nur-Lese-Empfehl
 
 ### Kann ich mit dieser Methode Einschränkungen aus mehreren Dokumenten gleichzeitig entfernen?
 
-Ja, Sie können mehrere Dokumente durchlaufen und auf jedes die gleiche Methode anwenden, um die schreibgeschützten Einschränkungen aufzuheben.
+Ja, Sie können mehrere Dokumente durchlaufen und auf jedes die gleiche Methode anwenden, um die Schreibschutzbeschränkungen aufzuheben.
 
 ### Was ist, wenn das Dokument passwortgeschützt ist und ich das Passwort nicht kenne?
 

@@ -16,7 +16,7 @@ url: /hi/net/programming-with-styles-and-themes/set-theme-properties/
 इससे पहले कि हम ट्यूटोरियल में आगे बढ़ें, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ हैं:
 
 - C# प्रोग्रामिंग का बुनियादी ज्ञान: यह ट्यूटोरियल मानता है कि आप C# और .NET फ्रेमवर्क से परिचित हैं।
--  Aspose.Words for .NET: नवीनतम संस्करण डाउनलोड करें और इंस्टॉल करें[Aspose.Words डाउनलोड पृष्ठ](https://releases.aspose.com/words/net/).
+-  .NET के लिए Aspose.Words: नवीनतम संस्करण डाउनलोड करें और इंस्टॉल करें[Aspose.Words डाउनलोड पृष्ठ](https://releases.aspose.com/words/net/).
 - विकास वातावरण: विजुअल स्टूडियो या कोई अन्य पसंदीदा C# IDE.
 
 ## नामस्थान आयात करें

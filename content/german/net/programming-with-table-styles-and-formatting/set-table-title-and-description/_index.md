@@ -18,7 +18,7 @@ Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie br
 1.  Aspose.Words für .NET: Falls Sie es noch nicht haben, müssen Sie es sich besorgen. Sie können es hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere C#-IDE.
 3. Grundlegende Kenntnisse in C#: Nichts Ausgefallenes, nur die Grundlagen.
-4. Ein Beispiel für ein Word-Dokument: Wir arbeiten mit einem Dokument, das Tabellen enthält. Sie können ein neues Dokument erstellen oder ein vorhandenes verwenden.
+4. Ein Beispiel für ein Word-Dokument: Wir arbeiten mit einem Dokument, das Tabellen enthält. Sie können ein neues erstellen oder ein vorhandenes Dokument verwenden.
 
 ## Namespaces importieren
 
@@ -83,7 +83,7 @@ Und da haben Sie es! Sie haben gerade mithilfe von Aspose.Words für .NET einer 
 ### Kann ich mehreren Tabellen in einem Dokument Titel und Beschreibungen hinzufügen?
 Ja, Sie können den Vorgang für jede Tabelle wiederholen, die Sie aktualisieren möchten.
 
-### Welche praktischen Anwendungen gibt es für Tabellentitel und -beschreibungen?
+### Welche praktischen Einsatzmöglichkeiten gibt es für Tabellentitel und -beschreibungen?
 Sie helfen dabei, einen Kontext bereitzustellen, insbesondere in großen Dokumenten mit mehreren Tabellen.
 
 ### Ist Aspose.Words für .NET kostenlos?

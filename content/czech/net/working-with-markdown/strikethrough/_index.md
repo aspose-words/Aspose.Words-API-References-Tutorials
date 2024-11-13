@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## Krok 1: Inicializujte DocumentBuilder
 
- The`DocumentBuilder` class je výkonný nástroj v Aspose.Words, který vám umožňuje snadno přidávat obsah do vašeho dokumentu.
+The`DocumentBuilder` class je výkonný nástroj v Aspose.Words, který vám umožňuje snadno přidávat obsah do vašeho dokumentu.
 
 ```csharp
 // Inicializujte DocumentBuilder.
@@ -41,10 +41,10 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Nastavte vlastnost přeškrtnutí
 
-Nyní aplikujme vlastnost přeškrtnutí na náš text. To zahrnuje nastavení`StrikeThrough` vlastnictvím`Font` namítat proti`true`.
+Nyní aplikujme vlastnost přeškrtnutí na náš text. To zahrnuje nastavení`StrikeThrough` vlastnictví`Font` namítat proti`true`.
 
 ```csharp
-// Přeškrtněte text.
+// Proveďte přeškrtnutí textu.
 builder.Font.StrikeThrough = true;
 ```
 

@@ -79,10 +79,10 @@ táblák létrehozása és testreszabása az Aspose.Words for .NET-ben egyszerű
 ## GYIK
 
 ### Hozzáadhatok kettőnél több cellát egymás után?
- Igen, annyi cellát vehet fel egymás után, amennyire szüksége van a következő megismétlésével`InsertCell()`és`Writeln()` mód.
+ Igen, annyi cellát vehet fel egymás után, amennyire szüksége van a következő megismétlésével`InsertCell()` és`Writeln()` mód.
 
 ### Hogyan egyesíthetem a cellákat egy táblázatban?
- A cellákat a segítségével egyesítheti`CellFormat.HorizontalMerge`és`CellFormat.VerticalMerge` tulajdonságait.
+ A cellákat a segítségével egyesítheti`CellFormat.HorizontalMerge` és`CellFormat.VerticalMerge` tulajdonságait.
 
 ### Lehetséges képeket hozzáadni a táblázat celláihoz?
  Teljesen! A cellákba képeket szúrhat be a`DocumentBuilder.InsertImage` módszer.

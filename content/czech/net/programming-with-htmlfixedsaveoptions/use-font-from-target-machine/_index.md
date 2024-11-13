@@ -74,13 +74,13 @@ Nakonec dokument uložíme jako pevný HTML soubor. Tady se děje kouzlo!
  Použijeme`Save` způsob uložení dokumentu s nakonfigurovanými možnostmi uložení.
 
 ```csharp
-//Převést dokument do pevného HTML
+// Převést dokument do pevného HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
 ## Krok 4: Ověřte výstup
 
-V neposlední řadě je vždy dobré výstup ověřit. Otevřete uložený soubor HTML a zkontrolujte, zda jsou písma správně použita z cílového počítače.
+neposlední řadě je vždy dobré výstup ověřit. Otevřete uložený soubor HTML a zkontrolujte, zda jsou písma správně použita z cílového počítače.
 
 Přejděte do adresáře, do kterého jste uložili soubor HTML, a otevřete jej ve webovém prohlížeči.
 

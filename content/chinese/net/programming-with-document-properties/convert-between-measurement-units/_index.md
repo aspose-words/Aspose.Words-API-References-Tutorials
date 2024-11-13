@@ -13,7 +13,7 @@ url: /zh/net/programming-with-document-properties/convert-between-measurement-un
 
 ## 先决条件
 
-在开始之前，请确保您已准备好以下内容：
+在开始之前，请确保您已准备好以下物品：
 
 1.  Aspose.Words for .NET Library：如果尚未下载，请下载[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：Visual Studio 或任何其他与 .NET 兼容的 IDE。

@@ -1,27 +1,27 @@
 ---
-title: Dapatkan Posisi Meja
-linktitle: Dapatkan Posisi Meja
+title: Dapatkan Posisi Tabel
+linktitle: Dapatkan Posisi Tabel
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Temukan cara menentukan posisi tabel di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami.
+description: Temukan cara menentukan posisi tabel dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami.
 type: docs
 weight: 10
 url: /id/net/programming-with-tables/get-table-position/
 ---
 ## Perkenalan
 
-Pernahkah Anda kebingungan saat mencoba mencari tahu posisi sebenarnya dari sebuah tabel dalam dokumen Word Anda? Baik untuk menyelaraskan konten Anda dengan sempurna atau hanya karena penasaran, mengetahui posisi tabel bisa sangat berguna. Hari ini, kita mendalami cara mendapatkan posisi tabel menggunakan Aspose.Words untuk .NET. Kami akan membaginya menjadi beberapa langkah kecil sehingga meskipun Anda seorang pemula, Anda dapat mengikutinya tanpa hambatan. Siap menjadi ahli dokumen Word? Mari kita mulai!
+Pernahkah Anda merasa kesulitan saat mencoba mencari tahu posisi tabel yang tepat dalam dokumen Word Anda? Baik untuk menyelaraskan konten Anda dengan sempurna atau sekadar ingin tahu, mengetahui posisi tabel bisa sangat berguna. Hari ini, kita akan membahas secara mendalam cara mendapatkan posisi tabel menggunakan Aspose.Words untuk .NET. Kita akan membaginya menjadi beberapa langkah kecil sehingga meskipun Anda seorang pemula, Anda akan dapat mengikutinya tanpa hambatan. Siap menjadi ahli dokumen Word? Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita masuk ke seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan:
--  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Jika tidak, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
-- Visual Studio: Versi apa pun bisa digunakan, tetapi versi terbaru selalu disarankan.
-- .NET Framework: Pastikan Anda memiliki .NET Framework 4.0 atau lebih baru.
+Sebelum kita masuk ke inti pembahasan, mari pastikan Anda sudah memiliki semua yang dibutuhkan:
+-  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Jika tidak, Anda dapat[unduh disini](https://releases.aspose.com/words/net/).
+- Visual Studio: Versi apa pun bisa digunakan, tetapi versi terbaru selalu direkomendasikan.
+- .NET Framework: Pastikan Anda memiliki .NET Framework 4.0 atau yang lebih baru.
 - Dokumen Word: Untuk tutorial ini, kita akan menggunakan dokumen bernama`Tables.docx`.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini seperti menyiapkan kotak peralatan Anda sebelum memulai sebuah proyek.
+Pertama-tama, mari impor namespace yang diperlukan. Ini seperti menyiapkan kotak peralatan sebelum memulai proyek.
 
 ```csharp
 using System;
@@ -31,7 +31,7 @@ using Aspose.Words.Tables;
 
 ## Langkah 1: Muat Dokumen Anda
 
-Baiklah, mari muat dokumen Word Anda. Di sinilah Anda akan menunjuk ke file yang ingin Anda kerjakan.
+Baiklah, mari kita muat dokumen Word Anda. Di sinilah Anda akan mengarahkan ke berkas yang ingin Anda kerjakan.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Langkah 2: Akses Tabel Pertama
 
-Sekarang, mari kita lihat tabel pertama dalam dokumen. Anggap saja ini seperti mengeluarkan permen pertama dari stoples.
+Sekarang, mari kita lihat tabel pertama dalam dokumen. Bayangkan ini seperti mengambil permen pertama dari toples.
 
 ```csharp
 // Akses tabel pertama dalam dokumen
@@ -52,53 +52,53 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
 ## Langkah 3: Periksa Pembungkusan Teks Tabel
 
-Tabel di Word dapat dirangkai di sekitar teks dengan berbagai cara. Mari kita lihat bagaimana meja kita dibungkus.
+Tabel di Word dapat dibungkus di sekitar teks dengan berbagai cara. Mari kita lihat bagaimana tabel kita dibungkus.
 
 ```csharp
 // Periksa apakah pembungkusan teks tabel diatur ke 'Sekitar'
 if (table.TextWrapping == TextWrapping.Around)
 {
-    // Jika dibungkus, dapatkan kesejajaran relatif horizontal dan vertikal
+    // Jika dibungkus, dapatkan perataan horizontal dan vertikal relatif
     Console.WriteLine(table.RelativeHorizontalAlignment);
     Console.WriteLine(table.RelativeVerticalAlignment);
 }
 else
 {
-    // Jika tidak dibungkus, dapatkan perataan standar
+    // Jika tidak dibungkus, dapatkan penyelarasan standar
     Console.WriteLine(table.Alignment);
 }
 ```
 
 ## Langkah 4: Jalankan Kode Anda
 
-Setelah semuanya siap, saatnya menjalankan kode Anda. Buka konsol Anda dan lihat keajaiban terungkap! Anda akan mendapatkan perataan relatif jika tabel dibungkus atau perataan standar jika tidak.
+Setelah semuanya siap, saatnya menjalankan kode Anda. Buka konsol Anda dan lihat keajaibannya! Anda akan mendapatkan penyelarasan relatif jika tabel dibungkus atau penyelarasan standar jika tidak.
 
-## Langkah 5: Analisis Outputnya
+## Langkah 5: Analisis Output
 
-Setelah kode Anda dijalankan, Anda akan melihat detail posisi tabel tercetak di konsol. Informasi ini sangat berguna untuk menyelaraskan konten Anda atau men-debug masalah tata letak.
+Setelah kode Anda berjalan, Anda akan melihat detail posisi tabel tercetak di konsol. Informasi ini sangat berguna untuk menyelaraskan konten atau men-debug masalah tata letak.
 
 ## Kesimpulan
 
-Dan itu dia! Dengan mengikuti langkah-langkah sederhana ini, Anda telah mempelajari cara menentukan posisi tabel dalam dokumen Word menggunakan Aspose.Words untuk .NET. Entah itu untuk penyelarasan sempurna atau hanya untuk memuaskan rasa ingin tahu Anda, mengetahui cara mendapatkan posisi meja bisa sangat berguna. Teruslah bereksperimen dan jelajahi lebih banyak fitur Aspose.Words untuk menjadi maestro dokumen Word sejati!
+Nah, itu dia! Dengan mengikuti langkah-langkah sederhana ini, Anda telah mempelajari cara menentukan posisi tabel dalam dokumen Word menggunakan Aspose.Words untuk .NET. Baik untuk penyelarasan sempurna atau sekadar untuk memuaskan rasa ingin tahu Anda, mengetahui cara mendapatkan posisi tabel bisa sangat berguna. Teruslah bereksperimen dan jelajahi lebih banyak fitur Aspose.Words untuk menjadi maestro dokumen Word sejati!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen canggih yang memungkinkan pengembang membuat, memodifikasi, mengonversi, dan merender dokumen Word secara terprogram.
+Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen canggih yang memungkinkan pengembang untuk membuat, memodifikasi, mengonversi, dan merender dokumen Word secara terprogram.
 
 ### Bagaimana cara menginstal Aspose.Words untuk .NET?
 
- Anda dapat menginstal Aspose.Words untuk .NET melalui NuGet Package Manager di Visual Studio atau[unduh secara langsung](https://releases.aspose.com/words/net/).
+ Anda dapat menginstal Aspose.Words untuk .NET melalui NuGet Package Manager di Visual Studio atau[unduh langsung](https://releases.aspose.com/words/net/).
 
 ### Bisakah saya mendapatkan posisi beberapa tabel?
 
-Ya, Anda dapat menelusuri semua tabel dalam dokumen dan mendapatkan posisinya menggunakan pendekatan serupa.
+Ya, Anda dapat mengulang semua tabel dalam dokumen dan mendapatkan posisinya menggunakan pendekatan yang serupa.
 
 ### Bagaimana jika tabel saya berada di dalam struktur bersarang?
 
-Anda harus menavigasi pohon simpul dokumen untuk mengakses tabel bertumpuk.
+Anda perlu menavigasi melalui pohon simpul dokumen untuk mengakses tabel bersarang.
 
 ### Apakah ada versi uji coba yang tersedia?
 
- Ya, Anda bisa mendapatkan[uji coba gratis](https://releases.aspose.com/) atau a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk mencoba Aspose.Words untuk .NET.
+ Ya, Anda bisa mendapatkannya[uji coba gratis](https://releases.aspose.com/) atau sebuah[lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk mencoba Aspose.Words untuk .NET.

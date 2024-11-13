@@ -2,7 +2,7 @@
 title: 測定単位の変換
 linktitle: 測定単位の変換
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET で測定単位を変換する方法を学びます。ステップ バイ ステップ ガイドに従って、ドキュメントの余白、ヘッダー、フッターをインチとポイントで設定します。
+description: Aspose.Words for .NET で測定単位を変換する方法を学びます。ステップバイステップ ガイドに従って、ドキュメントの余白、ヘッダー、フッターをインチとポイントで設定します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-document-properties/convert-between-measurement-units/

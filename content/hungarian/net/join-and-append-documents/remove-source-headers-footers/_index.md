@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## 1. lépés: Töltse be a forrásdokumentumot
 
-Először is be kell töltenie azt a forrásdokumentumot, amelyből el kívánja távolítani a fejlécet és a láblécet. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával, ahol a forrásdokumentum található.
+ Először is be kell töltenie azt a forrásdokumentumot, amelyből el kívánja távolítani a fejlécet és a láblécet. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával, ahol a forrásdokumentum található.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -92,7 +92,7 @@ Igen, ismételheti a szakaszokat, és szükség szerint szelektíven törölheti
 Természetesen az Aspose.Words for .NET segítségével több dokumentum fejléceit és lábléceit is módosíthatja.
 
 ###  Mi történik, ha elfelejtem beállítani`LinkToPrevious` to `false`?
-A forrásdokumentum fejlécei és láblécei folytatódhatnak a céldokumentumban.
+forrásdokumentum fejlécei és láblécei folytatódhatnak a céldokumentumban.
 
 ### Eltávolíthatom a fejléceket és lábléceket programozottan anélkül, hogy ez más formázást befolyásolna?
 Igen, az Aspose.Words for .NET lehetővé teszi a fejlécek és láblécek eltávolítását, miközben megőrzi a dokumentum többi formázását.

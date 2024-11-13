@@ -87,10 +87,10 @@ import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.SaveFormat;
 
-// Načtěte dokument se staršími řídicími znaky
+//Načtěte dokument se staršími řídicími znaky
 Document doc = new Document("LegacyControlChars.doc");
 
-//Vytvořte OoxmlSaveOptions s formátem FLAT_OPC a povolte zachování starších řídicích znaků
+// Vytvořte OoxmlSaveOptions s formátem FLAT_OPC a povolte zachování starších řídicích znaků
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
 saveOptions.setKeepLegacyControlChars(true);
 
@@ -172,7 +172,7 @@ Chcete-li odstranit ochranu heslem z dokumentu chráněného heslem, můžete do
 
 ### Mohu nastavit uživatelské vlastnosti při ukládání dokumentu ve formátu OOXML?
 
- Ano, můžete nastavit uživatelské vlastnosti dokumentu před jeho uložením ve formátu OOXML. Použijte`BuiltInDocumentProperties`a`CustomDocumentProperties` třídy pro nastavení různých vlastností, jako je autor, název, klíčová slova a uživatelské vlastnosti.
+ Ano, můžete nastavit uživatelské vlastnosti dokumentu před jeho uložením ve formátu OOXML. Použijte`BuiltInDocumentProperties` a`CustomDocumentProperties` třídy pro nastavení různých vlastností, jako je autor, název, klíčová slova a uživatelské vlastnosti.
 
 ### Jaká je výchozí úroveň komprese při ukládání dokumentu ve formátu OOXML?
 

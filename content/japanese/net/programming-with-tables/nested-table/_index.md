@@ -91,7 +91,7 @@ builder.Writeln("Inner Table Cell 1");
 
 ### ステップ3.3: 内部テーブルの2番目のセルを挿入する
 
-最後に、2 番目のセルを挿入し、コンテンツを追加します。
+最後に、2 番目のセルを挿入してコンテンツを追加します。
 
 ```csharp
 builder.InsertCell();
@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して、Word 文書にネストされたテーブルを作成できました。この強力なライブラリを使用すると、Word 文書をプログラムで操作することが非常に簡単になります。複雑なレポートを生成する場合でも、単純なテーブルを生成する場合でも、Aspose.Words for .NET が役立ちます。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書にネストされたテーブルを正常に作成できました。この強力なライブラリを使用すると、Word 文書をプログラムで操作することが非常に簡単になります。複雑なレポートを生成する場合でも、単純なテーブルを生成する場合でも、Aspose.Words for .NET が役立ちます。
 
 ## よくある質問
 

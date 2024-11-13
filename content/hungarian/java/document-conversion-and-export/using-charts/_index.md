@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Módosítsa az X tengelyt kategóriára a dátum helyett.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); //Az Y tengely kijelzési egységeiben mérve (száz).
+xAxis.setCrossesAt(3.0); // Az Y tengely kijelzési egységeiben mérve (száz).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ Ebben az oktatóanyagban megvizsgáltuk, hogyan dolgozhatunk diagramokkal az Asp
 
 ### Hogyan formázhatom az adatcímkéket egyéni számformátumokkal?
 
-Az adatcímkéket a`DataLabels` egy sorozat tulajdonságait, és állítsa be a kívánt formátumkódot`getNumberFormat().setFormatCode()`.
+ Az adatcímkéket a`DataLabels` egy sorozat tulajdonságait, és állítsa be a kívánt formátumkódot`getNumberFormat().setFormatCode()`.
 
 ### Hogyan szabhatom testre a tengely tulajdonságait egy diagramban?
 
@@ -139,7 +139,7 @@ Az adatcímkéket a`DataLabels` egy sorozat tulajdonságait, és állítsa be a 
 
 ### Hogyan hozhatok létre más típusú diagramokat, például szóró- vagy területdiagramokat?
 
- Különféle diagramtípusokat hozhat létre a megfelelő megadásával`ChartType` segítségével a diagram beillesztésekor`builder.insertChart(ChartType.TYPE, width, height)`.
+Különféle diagramtípusokat hozhat létre a megfelelő megadásával`ChartType` segítségével a diagram beillesztésekor`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Hogyan rejthetek el egy diagramtengelyt?
 

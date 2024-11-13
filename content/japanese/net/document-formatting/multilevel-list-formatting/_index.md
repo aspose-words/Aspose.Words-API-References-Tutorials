@@ -2,14 +2,14 @@
 title: Word 文書での複数レベルのリストの書式設定
 linktitle: Word 文書での複数レベルのリストの書式設定
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書のマルチレベル リストの書式設定を習得する方法を、ステップ バイ ステップ ガイドで学習します。ドキュメント構造を簡単に強化できます。
+description: Aspose.Words for .NET を使用して Word 文書のマルチレベル リストの書式設定を習得する方法を、ステップ バイ ステップ ガイドで学習します。文書構造を簡単に強化できます。
 type: docs
 weight: 10
 url: /ja/net/document-formatting/multilevel-list-formatting/
 ---
 ## 導入
 
-Word 文書の作成と書式設定を自動化したい開発者にとって、Aspose.Words for .NET は画期的なツールです。今日は、この強力なライブラリを使用して、マルチレベル リストの書式設定をマスターする方法について詳しく説明します。構造化文書の作成、レポートのアウトライン作成、技術文書の生成など、マルチレベル リストを使用すると、コンテンツの読みやすさと構成が向上します。
+Word 文書の作成と書式設定を自動化したい開発者にとって、Aspose.Words for .NET は画期的なツールです。今日は、この強力なライブラリを使用して、マルチレベル リストの書式設定をマスターする方法について詳しく説明します。構造化文書の作成、レポートのアウトライン作成、技術文書の生成など、マルチレベル リストを使用すると、コンテンツの読みやすさと整理性が向上します。
 
 ## 前提条件
 
@@ -85,7 +85,7 @@ builder.ListFormat.ListOutdent();
 builder.Writeln("Item 2.3");
 ```
 
-これにより、「項目 2.3」が 2 番目のレベルに戻ります。
+これにより、「項目 2.3」が第 2 レベルに戻ります。
 
 ## ステップ6: 番号を削除する
 
@@ -128,4 +128,4 @@ doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 インデントレベルを動的に変更するには、`ListIndent`そして`ListOutdent`必要に応じて方法を選択します。
 
 ### PDF などの他のドキュメント形式で複数レベルのリストを作成できますか?
-はい、Aspose.Words は書式を維持しながら、PDF を含むさまざまな形式でのドキュメントの保存をサポートしています。
+はい、Aspose.Words は書式を維持したまま、PDF を含むさまざまな形式でのドキュメントの保存をサポートしています。

@@ -114,7 +114,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ### ブックマークが見つからない場合はどうなりますか?
 の`Range.Bookmarks`財産は返還される`null`したがって、例外を回避するためにこのケースを処理するようにしてください。
 
-### 元のブックマークの書式を保持できますか?
+### 元のブックマークの書式設定を保持できますか?
 絶対に！使用`ImportFormatMode.KeepSourceFormatting`元の書式が保持されます。
 
 ### ブックマークしたテキストのサイズに制限はありますか?

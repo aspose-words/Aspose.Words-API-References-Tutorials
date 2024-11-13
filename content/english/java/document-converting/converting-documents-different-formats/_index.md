@@ -50,18 +50,6 @@ Now, it's time to convert the loaded document to the chosen output format. Aspos
 doc.save("output.pdf", SaveFormat.PDF);
 ```
 
-## Step 6: Handling Exceptions
-
-When working with documents, it's essential to handle exceptions gracefully. Aspose.Words for Java provides exception handling mechanisms to ensure your application runs smoothly.
-
-```java
-try {
-    // Perform document conversion here
-} catch (Exception e) {
-    // Handle exceptions
-}
-```
-
 ## Conclusion
 
 In this guide, we've explored how to use Aspose.Words for Java to convert documents to different formats. This powerful API simplifies the document conversion process, making it accessible to Java developers. Now you can efficiently convert documents in your Java applications with ease.

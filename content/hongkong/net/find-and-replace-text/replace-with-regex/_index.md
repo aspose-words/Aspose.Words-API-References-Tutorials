@@ -85,7 +85,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 
 ## 結論
 
-現在你就得到它了！您已成功使用正規表示式透過 Aspose.Words for .NET 尋找並取代 Word 文件中的文字。這個強大的功能可以為您節省大量的時間和精力，特別是在處理複雜的文字模式時。無論您是要清理文件、格式化文字還是進行批次更改，Aspose.Words for .NET 的正規表示式都是您的工具庫中需要的工具。
+現在你就擁有了！您已成功使用正規表示式透過 Aspose.Words for .NET 尋找並取代 Word 文件中的文字。這個強大的功能可以為您節省大量的時間和精力，特別是在處理複雜的文字模式時。無論您是要清理文件、格式化文字還是進行批次更改，Aspose.Words for .NET 的正規表示式都是您的工具庫中需要的工具。
 
 ## 常見問題解答
 

@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 Ebben az osztályban:
--  A`Warning`metódus rögzíti a betűtípus-cserével kapcsolatos figyelmeztetéseket.
--  A`FontWarnings` A gyűjtemény ezeket a figyelmeztetéseket tárolja további ellenőrzés vagy naplózás céljából.
+- A`Warning`metódus rögzíti a betűtípus-cserével kapcsolatos figyelmeztetéseket.
+- A`FontWarnings` A gyűjtemény ezeket a figyelmeztetéseket tárolja további ellenőrzés vagy naplózás céljából.
 
 ## Következtetés
 

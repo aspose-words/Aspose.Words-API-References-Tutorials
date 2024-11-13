@@ -17,7 +17,7 @@ Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfü
 - Grundlegende Kenntnisse der C#-Programmierung.
 - Visual Studio ist auf Ihrem Computer installiert.
 -  Aspose.Words für .NET-Bibliothek. Wenn Sie es noch nicht installiert haben, können Sie es herunterladen[Hier](https://releases.aspose.com/words/net/).
--  Eine gültige Aspose-Lizenz. Sie können eine kostenlose Testversion oder eine temporäre Lizenz erhalten von[Hier](https://purchase.aspose.com/temporary-license/).
+-  Eine gültige Aspose-Lizenz. Sie erhalten eine kostenlose Testversion oder eine temporäre Lizenz von[Hier](https://purchase.aspose.com/temporary-license/).
 
 ## Namespaces importieren
 
@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben gerade gelernt, wie Sie Tabellen und Zellen mit unterschiedlichen Rändern mithilfe von Aspose.Words für .NET formatieren. Durch Anpassen von Tabellenrändern und Zellenschattierung können Sie die visuelle Attraktivität Ihrer Dokumente deutlich verbessern. Also los, experimentieren Sie mit verschiedenen Stilen und lassen Sie Ihre Dokumente hervorstechen!
+Und da haben Sie es! Sie haben gerade gelernt, wie Sie Tabellen und Zellen mit verschiedenen Rändern mithilfe von Aspose.Words für .NET formatieren. Durch Anpassen von Tabellenrändern und Zellenschattierungen können Sie die visuelle Attraktivität Ihrer Dokumente deutlich verbessern. Also los, experimentieren Sie mit verschiedenen Stilen und lassen Sie Ihre Dokumente hervorstechen!
 
 ## Häufig gestellte Fragen
 
@@ -144,4 +144,4 @@ Und da haben Sie es! Sie haben gerade gelernt, wie Sie Tabellen und Zellen mit u
 Obwohl Aspose.Words Bilder nicht direkt als Zellenhintergründe unterstützt, können Sie ein Bild in eine Zelle einfügen und seine Größe so anpassen, dass es den Zellenbereich abdeckt.
 
 ### Wie füge ich Zellen in einer Tabelle zusammen?
- Sie können Zellen verbinden, indem Sie`CellFormat.HorizontalMerge`Und`CellFormat.VerticalMerge` Eigenschaften.
+ Sie können Zellen verbinden, indem Sie`CellFormat.HorizontalMerge` Und`CellFormat.VerticalMerge` Eigenschaften.

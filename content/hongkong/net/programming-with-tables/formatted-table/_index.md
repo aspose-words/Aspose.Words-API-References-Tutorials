@@ -113,7 +113,7 @@ builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
 ```
 
-## 第8步：插入主體行
+## 第8步：插入正文行
 
 插入包含內容的正文行：
 
@@ -157,7 +157,7 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 
 ## 結論
 
-現在你就得到它了！透過執行下列步驟，您可以使用 Aspose.Words for .NET 在 Word 文件中建立格式良好的表格。這個強大的程式庫使您可以輕鬆地以程式設計方式操作 Word 文檔，從而節省您的時間和精力。
+現在你就擁有了！透過執行下列步驟，您可以使用 Aspose.Words for .NET 在 Word 文件中建立格式良好的表格。這個強大的程式庫使您可以輕鬆地以程式設計方式操作 Word 文檔，從而節省您的時間和精力。
 
 ## 常見問題解答
 

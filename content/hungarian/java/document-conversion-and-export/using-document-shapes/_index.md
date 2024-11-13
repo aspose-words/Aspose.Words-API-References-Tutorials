@@ -14,7 +14,7 @@ Ebben az átfogó útmutatóban elmélyülünk az Aspose.Words for Java dokument
 
 ## Ismerkedés a dokumentumalakzatokkal
 
- Mielőtt belevágnánk a kódba, állítsuk be a környezetünket. Győződjön meg arról, hogy az Aspose.Words for Java integrálva van a projektjébe. Ha még nem tette meg, letöltheti az Aspose webhelyéről[Töltse le az Aspose.Words for Java programot](https://releases.aspose.com/words/java/)
+Mielőtt belevágnánk a kódba, állítsuk be a környezetünket. Győződjön meg arról, hogy az Aspose.Words for Java integrálva van a projektjébe. Ha még nem tette meg, letöltheti az Aspose webhelyéről[Töltse le az Aspose.Words for Java programot](https://releases.aspose.com/words/java/)
 
 ## Alakzatok hozzáadása a dokumentumokhoz
 
@@ -52,7 +52,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AddGroupShape.docx");
 
 ### Szövegdoboz alakzat beszúrása
 
- Szövegdoboz alakzat beszúrásához használhatja a`insertShape` módszer az alábbi példában látható módon:
+ Szövegdoboz alakzat beszúrásához használhatja a`insertShape` az alábbi példában bemutatott módszer:
 
 ```java
 Document doc = new Document();
@@ -135,7 +135,7 @@ doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2010);
 doc.save("Your Directory Path" + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-## SmartArt alakzatokkal való munka
+## Munkavégzés SmartArt alakzatokkal
 
 ### SmartArt alakzatok észlelése
 
@@ -176,7 +176,7 @@ Az Aspose.Words for Java egy Java-könyvtár, amely lehetővé teszi a fejleszt�
 
 ### Milyen előnyei vannak a dokumentumformák használatának?
 
-A dokumentumformák vizuális elemeket és interaktivitást adnak a dokumentumokhoz, így vonzóbbá és informatívabbá teszik azokat. Az alakzatokkal kiemeléseket, gombokat, képeket, vízjeleket és egyebeket hozhat létre, javítva az általános felhasználói élményt.
+dokumentumformák vizuális elemeket és interaktivitást adnak a dokumentumokhoz, így vonzóbbá és informatívabbá teszik azokat. Az alakzatokkal kiemeléseket, gombokat, képeket, vízjeleket és egyebeket hozhat létre, javítva az általános felhasználói élményt.
 
 ### Testreszabhatom az alakzatok megjelenését?
 

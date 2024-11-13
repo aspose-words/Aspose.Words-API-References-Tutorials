@@ -70,7 +70,7 @@ Tento řádek kódu otevře zadaný dokument, abychom s ním mohli manipulovat.
 
 ## Krok 3: Povolte funkce OpenType
 
- HarfBuzz je open-source nástroj pro tvarování textu, který bezproblémově spolupracuje s Aspose.Words. Abychom povolili funkce OpenType, musíme nastavit`TextShaperFactory` vlastnictvím`LayoutOptions` objekt.
+ HarfBuzz je open-source nástroj pro tvarování textu, který bezproblémově spolupracuje s Aspose.Words. Abychom povolili funkce OpenType, musíme nastavit`TextShaperFactory` vlastnictví`LayoutOptions` objekt.
 
 ```csharp
 doc.LayoutOptions.TextShaperFactory = HarfBuzzTextShaperFactory.Instance;

@@ -81,7 +81,7 @@ V tomto tutoriálu jsme ukázali, jak zakázat zalomení řádků mezi stránkam
 Ano, stejným způsobem můžete přistupovat a upravovat vnořené tabulky. Ujistěte se, že správně odkazujete na vnořenou tabulku pomocí jejího indexu nebo jiných vlastností.
 
 ### Jak mohu zkontrolovat, zda řádek umožňuje přerušení mezi stránkami?  
- Můžete zkontrolovat, zda řádek umožňuje přerušení mezi stránkami přístupem k`AllowBreakAcrossPages` vlastnictvím`RowFormat` a kontrolu jeho hodnoty.
+ Můžete zkontrolovat, zda řádek umožňuje přerušení mezi stránkami přístupem k`AllowBreakAcrossPages` vlastnictví`RowFormat` a kontrolu jeho hodnoty.
 
 ### Existuje způsob, jak toto nastavení použít na všechny tabulky v dokumentu?  
 Ano, můžete procházet všechny tabulky v dokumentu a použít toto nastavení pro každou z nich.

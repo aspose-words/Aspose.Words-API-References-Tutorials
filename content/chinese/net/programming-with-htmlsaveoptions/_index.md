@@ -11,7 +11,7 @@ Aspose.Words for .NET 是一个功能强大的库，用于在 .NET 应用程序�
 
 “使用 HtmlSaveOptions 进行文字处理”教程重点介绍如何在 Aspose.Words for .NET 中使用 HTML 保存选项。本教程将指导开发人员使用各种选项来自定义 Word 文档到 HTML 的转换。提供了详细的代码示例来演示如何使用这些选项并实现所需的转换结果。
 
-无论您是想将 Word 文档转换为 HTML 以在网络上显示、将 HTML 内容嵌入 Word 文档还是自定义 HTML 渲染，本教程都会为您提供所需的知识和技能。借助详细的解释和实际示例，您将能够在开发项目中充分利用 Aspose.Words for .NET 的 HTML 转换功能。
+无论您是想将 Word 文档转换为 HTML 以在网络上显示、将 HTML 内容嵌入 Word 文档还是自定义 HTML 渲染，本教程都会为您提供所需的知识和技能。通过详细的解释和实际示例，您将能够在开发项目中充分利用 Aspose.Words for .NET 的 HTML 转换功能。
 
  ## 教程
 | 标题 | 描述 |

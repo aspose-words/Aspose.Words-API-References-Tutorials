@@ -24,10 +24,10 @@ url: /zh/net/working-with-fields/
 | [使用 DOM 插入邮件合并地址块字段](./insert-mail-merge-address-block-field-using-dom/) | 通过本全面的分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中插入邮件合并地址块字段。 |
 | [不使用文档生成器插入 FieldIncludeText](./insert-field-include-text-without-document-builder/) |  通过我们详细的分步指南了解如何在 Aspose.Words for .NET 中不使用 DocumentBuilder 插入 FieldIncludeText。 |
 | [插入字段 无](./insert-field-none/) | 使用 Aspose.Words for .NET 掌握文档自动化。了解如何逐步插入字段并简化工作流程。适合所有级别的开发人员。 |
-| [插入字段](./insert-field/) | 通过我们详细的分步指南，了解如何使用 Aspose.Words for .NET 将字段插入 Word 文档。非常适合文档自动化。 |
-| [使用字段生成器插入字段](./insert-field-using-field-builder/) | 通过本分步指南了解如何使用 Aspose.Words for .NET 将动态字段插入 Word 文档。非常适合开发人员。 |
+| [插入字段](./insert-field/) | 通过我们详细的分步指南学习如何使用 Aspose.Words for .NET 将字段插入 Word 文档。非常适合文档自动化。 |
+| [使用字段生成器插入字段](./insert-field-using-field-builder/) | 通过本分步指南学习如何使用 Aspose.Words for .NET 将动态字段插入 Word 文档。非常适合开发人员。 |
 | [插入作者字段](./insert-author-field/) | 通过我们的分步指南学习如何使用 Aspose.Words for .NET 在 Word 文档中插入作者字段。非常适合自动创建文档。 |
-| [使用文档生成器插入 ASKField](./insert-askfield-with-out-document-builder/) | 了解如何在不使用 Aspose.Words for .NET 中的 Document Builder 的情况下插入 ASK 字段。按照本指南动态增强您的 Word 文档。 |
+| [使用 Document Builder 插入 ASKField](./insert-askfield-with-out-document-builder/) | 了解如何在不使用 Aspose.Words for .NET 中的 Document Builder 的情况下插入 ASK 字段。按照本指南动态增强您的 Word 文档。 |
 | [不使用文档生成器插入高级字段](./insert-advance-field-with-out-document-builder/) | 了解如何在 Aspose.Words for .NET 中不使用 DocumentBuilder 插入高级字段。遵循本指南可提高您的文档处理技能。 |
 | [获取邮件合并字段名称](./get-mail-merge-field-names/) | 通过本详细的分步指南了解如何使用 Aspose.Words for .NET 从 Word 文档中提取邮件合并字段名称。 |
 | [删除字段](./delete-fields/) | 使用 Aspose.Words for .NET 删除 Word 文档中合并字段的分步指南 |

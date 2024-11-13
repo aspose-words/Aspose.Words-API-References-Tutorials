@@ -1,8 +1,8 @@
 ---
-title: Yapılandırılmış Veriler için Yapılandırılmış Belge Etiketlerini (SDT'ler) Kullanma
-linktitle: Yapılandırılmış Veriler için Yapılandırılmış Belge Etiketlerini (SDT'ler) Kullanma
-second_title: Aspose.Words Python Doküman Yönetimi API'si
-description: İçeriği Düzenlemek için Yapılandırılmış Belge Etiketlerinin (SDT'ler) Gücünün Kilidini Açın. SDT'leri Uygulamak İçin Aspose.Words for Python'un Nasıl Kullanılacağını Öğrenin.
+title: Yapılandırılmış Veriler için Yapılandırılmış Belge Etiketlerinin (SDT'ler) Kullanılması
+linktitle: Yapılandırılmış Veriler için Yapılandırılmış Belge Etiketlerinin (SDT'ler) Kullanılması
+second_title: Aspose.Words Python Belge Yönetim API'si
+description: İçeriği Düzenlemek İçin Yapılandırılmış Belge Etiketlerinin (SDT'ler) Gücünü Açın. SDT'leri Uygulamak İçin Aspose.Words for Python'ı Nasıl Kullanacağınızı Öğrenin.
 type: docs
 weight: 13
 url: /tr/python-net/document-combining-and-comparison/document-sdts/
@@ -10,66 +10,66 @@ url: /tr/python-net/document-combining-and-comparison/document-sdts/
 
 ## Yapılandırılmış Belge Etiketlerine (SDT'ler) Giriş
 
-Genellikle içerik kontrolleri olarak anılan Yapılandırılmış Belge Etiketleri, bir belgenin içerdikleri içeriğe yapı sağlayan öğelerdir. Tutarlı biçimlendirmeye izin verir ve içeriğin programlı olarak değiştirilmesine olanak tanır. SDT'ler düz metin, zengin metin, resimler, onay kutuları ve daha fazlası gibi çeşitli içerik türlerini kapsayabilir.
+Genellikle içerik denetimleri olarak adlandırılan Yapılandırılmış Belge Etiketleri, kapsadıkları içeriğe yapı sağlayan bir belge içindeki öğelerdir. Tutarlı biçimlendirmeye olanak tanır ve içeriğin programatik olarak işlenmesini sağlar. SDT'ler düz metin, zengin metin, resimler, onay kutuları ve daha fazlası gibi çeşitli içerik türlerini kapsayabilir.
 
-## SDT Kullanmanın Yararları
+## SDT'leri Kullanmanın Faydaları
 
-SDT'lerin kullanılması aşağıdakiler de dahil olmak üzere çeşitli avantajlar sunar:
+SDT'lerin kullanılmasının birçok faydası vardır, bunlardan bazıları şunlardır:
 
 - Tutarlılık: SDT'ler, içeriğin standart bir formata uymasını sağlayarak biçimlendirme tutarsızlıklarını önler.
-- Otomasyon: SDT'lerle belge oluşturmayı otomatikleştirerek şablon ve rapor oluşturmayı kolaylaştırabilirsiniz.
+- Otomasyon: SDT'lerle belge oluşturmayı otomatikleştirebilir, şablon ve rapor oluşturmayı kolaylaştırabilirsiniz.
 - Veri Doğrulaması: SDT'ler veri doğrulama kurallarını uygulayabilir, hataları azaltabilir ve veri bütünlüğünü koruyabilir.
-- Dinamik İçerik: SDT'ler, tarih ve saat damgaları gibi otomatik olarak güncellenen dinamik içeriğin eklenmesine olanak tanır.
-- İşbirliği Kolaylığı: Ortak çalışanlar, belgenin yapısını değiştirmeden içeriğe odaklanabilir.
+- Dinamik İçerik: SDT'ler, tarih ve saat damgaları gibi otomatik olarak güncellenen dinamik içeriklerin eklenmesini sağlar.
+- İşbirliği Kolaylığı: İşbirlikçiler, belgenin yapısını değiştirmeden içeriğe odaklanabilirler.
 
-## Aspose.Words for Python'a Başlarken
+## Python için Aspose.Words'e Başlarken
 
-SDT'leri kullanmaya başlamadan önce Aspose.Words for Python'a başlayalım. Aspose.Words, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kütüphanedir. Başlamak için şu adımları izleyin:
+SDT'leri kullanmaya başlamadan önce, Python için Aspose.Words ile başlayalım. Aspose.Words, geliştiricilerin Word belgelerini programatik olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kütüphanedir. Başlamak için şu adımları izleyin:
 
-1. Kurulum: Aspose.Words for Python'u pip kullanarak yükleyin:
+1. Kurulum: Pip kullanarak Python için Aspose.Words'ü kurun:
    
    ```python
    pip install aspose-words
    ```
 
-2. Kütüphaneyi İçe Aktarma: Aspose.Words kütüphanesini Python betiğinize içe aktarın:
+2. Kütüphaneyi İçe Aktarma: Aspose.Words kütüphanesini Python betiğinize aktarın:
 
    ```python
    import aspose.words
    ```
 
-3. Belge Yükleme: Aspose.Words'ü kullanarak mevcut bir Word belgesini yükleyin:
+3. Belge Yükleme: Aspose.Words kullanarak mevcut bir Word belgesini yükleyin:
 
    ```python
    doc = aspose.words.Document("sample.docx")
    ```
 
-## Bir Belgeye SDT'ler Oluşturma ve Ekleme
+## Bir Belgeye SDT Oluşturma ve Ekleme
 
-Bir belgeye SDT'ler eklemek birkaç basit adımı içerir:
+Bir belgeye SDT eklemek birkaç basit adımı içerir:
 
-1.  SDT Oluşturma:`StructuredDocumentTag` Bir SDT örneği oluşturmak için sınıf.
+1.  SDT Oluşturma: Şunu kullanın:`StructuredDocumentTag` SDT örneği oluşturmak için sınıf.
 
    ```python
    sdt = aspose.words.StructuredDocumentTag(doc, aspose.words.SdtType.PLAIN_TEXT)
    ```
 
-2. İçeriğin Ayarlanması: SDT'nin içeriğini ayarlayın:
+2. İçerik Ayarı: SDT'nin içeriğini ayarlayın:
 
    ```python
    sdt.get_first_child().remove_all_children()
    sdt.get_first_child().append_child(aspose.words.Run(doc, "Structured Content"))
    ```
 
-3. Belgeye Ekleme: SDT'yi belgenin blok düzeyinde düğüm koleksiyonuna ekleyin:
+3. Belgeye Ekleme: SDT'yi belgenin blok düzeyindeki düğüm koleksiyonuna ekleyin:
 
    ```python
    doc.get_first_section().get_body().append_child(sdt)
    ```
 
-## SDT İçerik Kontrolleriyle Çalışmak
+## SDT İçerik Kontrolleriyle Çalışma
 
-SDT içerik kontrolleri kullanıcıların belgeyle etkileşime girmesine olanak tanır. Bazı yaygın içerik kontrollerini inceleyelim:
+SDT içerik denetimleri kullanıcıların belgeyle etkileşim kurmasına olanak tanır. Bazı yaygın içerik denetimlerini inceleyelim:
 
 1. Düz Metin Kontrolü:
 
@@ -86,11 +86,11 @@ SDT içerik kontrolleri kullanıcıların belgeyle etkileşime girmesine olanak 
    sdt.get_first_child().append_child(aspose.words.Run(doc, "Check to agree: "))
    ```
 
-## SDT'lerde Programlı Olarak Gezinme ve İşleme
+## SDT'leri Programatik Olarak Gezinme ve Yönetme
 
-SDT'lerde programlı olarak gezinmek ve bunları değiştirmek, dinamik belge oluşturmaya olanak tanır. Bunu nasıl başarabileceğiniz aşağıda açıklanmıştır:
+SDT'leri programatik olarak gezinmek ve düzenlemek dinamik belge üretimine olanak tanır. Bunu nasıl başarabileceğiniz aşağıda açıklanmıştır:
 
-1. SDT'lere erişme:
+1. SDT'lere erişim:
 
    ```python
    sdt_collection = doc.get_child_nodes(aspose.words.NodeType.STRUCTURED_DOCUMENT_TAG, True)
@@ -105,52 +105,52 @@ SDT'lerde programlı olarak gezinmek ve bunları değiştirmek, dinamik belge ol
            sdt.get_first_child().append_child(aspose.words.Run(doc, "New Content"))
    ```
 
-## Belge Otomasyonu için SDT'leri Kullanma
+## Belge Otomasyonu için SDT'lerin Kullanılması
 
-Belge otomasyon senaryoları için SDT'lerden yararlanılabilir. Örneğin müşteri adları, tutarlar ve tarihler gibi değişken alanlar için SDT'lerle fatura şablonları oluşturabilirsiniz. Daha sonra bu alanları veritabanındaki verilere göre programlı olarak doldurun.
+SDT'ler belge otomasyon senaryoları için kullanılabilir. Örneğin, müşteri adları, tutarlar ve tarihler gibi değişken alanlar için SDT'lerle fatura şablonları oluşturabilirsiniz. Ardından, bu alanları bir veritabanından alınan verilere göre programatik olarak doldurun.
 
 ## SDT Görünümünü ve Davranışını Özelleştirme
 
-SDT'ler yazı tipi stillerini, renklerini ve davranışını değiştirme gibi çeşitli özelleştirme seçenekleri sunar. Örneğin, SDT'leri doldururken kullanıcılara rehberlik edecek yer tutucu metni ayarlayabilirsiniz.
+SDT'ler, yazı tipi stilleri, renkler ve davranışları değiştirme gibi çeşitli özelleştirme seçenekleri sunar. Örneğin, SDT'leri doldururken kullanıcıları yönlendirmek için yer tutucu metin ayarlayabilirsiniz.
 
 ## SDT'lerle İleri Teknikler
 
-Gelişmiş teknikler, iç içe geçmiş SDT'leri, özel XML veri bağlamayı ve SDT'lerle ilişkili olayların işlenmesini içerir. Bu teknikler karmaşık belge yapılarına ve daha etkileşimli kullanıcı deneyimlerine olanak tanır.
+Gelişmiş teknikler, iç içe geçmiş SDT'leri, özel XML veri bağlamayı ve SDT'lerle ilişkili olayları işlemeyi içerir. Bu teknikler karmaşık belge yapıları ve daha etkileşimli kullanıcı deneyimleri sağlar.
 
-## SDT'leri Kullanmaya İlişkin En İyi Uygulamalar
+## SDT'leri Kullanmak İçin En İyi Uygulamalar
 
 SDT'leri kullanırken şu en iyi uygulamaları izleyin:
 
-- Belgelerdeki benzer içerik için SDT'leri tutarlı bir şekilde kullanın.
-- Uygulamadan önce belgenizin ve SDT'lerinizin yapısını planlayın.
-- Özellikle içerik doldurmayı otomatikleştirirken belgeyi kapsamlı bir şekilde test edin.
+- Benzer içerikler için belgeler arasında tutarlı bir şekilde SDT'leri kullanın.
+- Uygulamaya geçmeden önce belgenizin ve SDT'lerinizin yapısını planlayın.
+- Özellikle içerik doldurma işlemini otomatikleştirirken belgeyi iyice test edin.
 
-## Örnek Olay İncelemesi: Dinamik Rapor Şablonu Oluşturma
+## Vaka Çalışması: Dinamik Bir Rapor Şablonu Oluşturma
 
-SDT'leri kullanarak dinamik bir rapor şablonu oluşturduğumuz bir örnek olay incelemesini ele alalım. Rapor başlığı, yazar adı ve içerik için yer tutucular oluşturacağız. Daha sonra bu yer tutucuları programlı olarak ilgili verilerle dolduracağız.
+SDT'leri kullanarak dinamik bir rapor şablonu oluşturduğumuz bir vaka çalışmasını ele alalım. Bir rapor başlığı, yazar adı ve içerik için yer tutucular oluşturacağız. Daha sonra, bu yer tutucuları ilgili verilerle programatik olarak dolduracağız.
 
 ## Çözüm
 
-Yapılandırılmış Belge Etiketleri, belgeler içindeki yapılandırılmış verileri yönetmenin etkili bir yolunu sağlar. Geliştiriciler Aspose.Words for Python'dan yararlanarak kolaylıkla dinamik ve otomatikleştirilmiş belge çözümleri oluşturabilirler. SDT'ler tutarlılığı ve bütünlüğü korurken kullanıcılara belgelerle etkileşimde bulunma olanağı sağlar.
+Yapılandırılmış Belge Etiketleri, belgelerdeki yapılandırılmış verileri yönetmek için etkili bir yol sağlar. Geliştiriciler, Python için Aspose.Words'ü kullanarak dinamik ve otomatik belge çözümlerini kolaylıkla oluşturabilirler. SDT'ler, kullanıcıların tutarlılık ve bütünlüğü korurken belgelerle etkileşim kurmasını sağlar.
 
-## SSS'ler
+## SSS
 
-### Bir SDT içindeki içeriğe nasıl erişirim?
+### Bir SDT içindeki içeriğe nasıl erişebilirim?
 
- Bir SDT içindeki içeriğe erişmek için`get_text()`SDT'nin içerik kontrolünün yöntemi. Bu, SDT'nin içerdiği metni alır.
+ Bir SDT içindeki içeriğe erişmek için şunu kullanabilirsiniz:`get_text()`SDT'nin içerik kontrol yöntemi. Bu, SDT içinde bulunan metni alır.
 
 ### SDT'leri Excel veya PowerPoint belgelerinde kullanabilir miyim?
 
-Hayır, SDT'ler Word belgelerine özeldir ve Excel veya PowerPoint'te kullanılamaz.
+Hayır, SDT'ler Word belgelerine özeldir ve Excel veya PowerPoint'te mevcut değildir.
 
-### SDT'ler Microsoft Word'ün eski sürümleriyle uyumlu mu?
+### SDT'ler Microsoft Word'ün eski sürümleriyle uyumlu mudur?
 
-SDT'ler Microsoft Word 2010 ve sonraki sürümleriyle uyumludur. Önceki sürümlerde amaçlandığı gibi çalışmayabilirler.
+SDT'ler Microsoft Word 2010 ve sonraki sürümlerle uyumludur. Daha önceki sürümlerde amaçlandığı gibi çalışmayabilirler.
 
-### Özel SDT türleri oluşturabilir miyim?
+### Özel SDT tipleri oluşturabilir miyim?
 
-Şu an itibariyle, Microsoft Word önceden tanımlanmış bir dizi SDT türünü desteklemektedir. Özel SDT türleri oluşturulamaz.
+Microsoft Word şu an için önceden tanımlanmış bir SDT türü kümesini destekliyor. Özel SDT türleri oluşturulamıyor.
 
-### Bir SDT'yi bir belgeden nasıl kaldırabilirim?
+### Bir belgeden SDT'yi nasıl kaldırabilirim?
 
-SDT'yi seçip "Sil" tuşuna basarak veya Aspose.Words API'sindeki uygun yöntemi kullanarak bir SDT'yi bir belgeden kaldırabilirsiniz.
+Bir SDT'yi bir belgeden kaldırmak için SDT'yi seçip "Sil" tuşuna basabilir veya Aspose.Words API'sindeki uygun yöntemi kullanabilirsiniz.

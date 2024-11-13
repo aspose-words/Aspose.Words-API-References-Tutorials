@@ -51,7 +51,7 @@ doc.save("customized.docx");
 
 ### Ändern der Designfarben
 
-Sie können Designfarben ganz einfach mit Aspose.Words für Java ändern. So geht's:
+Sie können die Designfarben ganz einfach mit Aspose.Words für Java ändern. So geht's:
 
 ```java
 // Laden Sie das Dokument

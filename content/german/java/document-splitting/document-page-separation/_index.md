@@ -49,7 +49,7 @@ DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 List<Document> pages = splitter.splitIntoPages();
 ```
 
- Der`pages` Die Liste enthält nun separate Dokumente, von denen jedes eine einzelne Seite des Originaldokuments darstellt.
+Der`pages` Die Liste enthält nun separate Dokumente, von denen jedes eine einzelne Seite des Originaldokuments darstellt.
 
 ## Schritt 3: Seiten speichern
 

@@ -28,7 +28,7 @@ Nachdem wir Aspose.Words für Java nun zum Laufen gebracht haben, wollen wir uns
 
 Bevor Sie Dokumentberechtigungen verwalten können, müssen Sie die verschiedenen Aspekte der Dokumentsicherheit verstehen. Aspose.Words für Java bietet eine Reihe von Funktionen, mit denen Sie steuern können, wer auf Ihre Dokumente zugreifen und sie ändern kann. Lassen Sie uns die wichtigsten Konzepte aufschlüsseln:
 
-- Dokumentenschutz: Aspose.Words für Java ermöglicht es Ihnen, Dokumente mit einem Passwort zu schützen. Nur Benutzer mit dem richtigen Passwort können das Dokument öffnen und bearbeiten.
+- Dokumentenschutz: Mit Aspose.Words für Java können Sie Dokumente mit einem Passwort schützen. Nur Benutzer mit dem richtigen Passwort können das Dokument öffnen und bearbeiten.
 
 - Dokumentenverschlüsselung: Sie können Ihre Dokumente verschlüsseln, um unbefugten Zugriff zu verhindern. Aspose.Words für Java unterstützt Verschlüsselungsalgorithmen zum Schutz Ihrer Daten.
 

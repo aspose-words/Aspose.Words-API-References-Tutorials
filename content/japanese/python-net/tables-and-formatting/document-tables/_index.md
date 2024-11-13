@@ -78,7 +78,7 @@ cell.cell_format.horizontal_merge = CellMerge.FIRST
 cell.cell_format.horizontal_merge = CellMerge.NONE
 ```
 
-## スタイリングとカスタマイズ:
+## スタイルとカスタマイズ:
 
 Aspose.Words には、表の外観を向上させるさまざまなスタイル設定オプションが用意されています。セルの背景色、テキストの配置、フォントの書式設定などを設定できます。
 
@@ -146,4 +146,4 @@ pip install aspose-words
 
 ### 個々のセルに異なるスタイルを適用できますか?
 
-はい、フォントの書式、背景色、配置を調整することでセルのスタイルをカスタマイズできます。
+はい、フォントの書式、背景色、配置を調整することで、セルのスタイルをカスタマイズできます。

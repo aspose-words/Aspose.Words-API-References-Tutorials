@@ -9,7 +9,7 @@ url: /de/net/programming-with-tables/auto-fit-to-page-width/
 ---
 ## Einführung
 
-Haben Sie schon einmal erlebt, dass Tabellen in Word-Dokumenten nicht perfekt auf die Seite passen? Sie optimieren die Ränder, ändern die Spaltengröße und es sieht trotzdem komisch aus. Wenn Sie Aspose.Words für .NET verwenden, gibt es eine elegante Lösung für dieses Problem: Tabellen werden automatisch an das Fenster angepasst. Diese praktische Funktion passt die Tabellenbreite so an, dass sie perfekt mit der Seitenbreite übereinstimmt und Ihr Dokument elegant und professionell aussieht. In dieser Anleitung führen wir Sie durch die Schritte, um dies mit Aspose.Words für .NET zu erreichen und sicherzustellen, dass Ihre Tabellen immer wie angegossen passen.
+Haben Sie schon einmal die Frustration erlebt, dass Tabellen in Word-Dokumenten nicht perfekt auf die Seite passen? Sie optimieren Ränder, ändern die Spaltengröße und es sieht trotzdem komisch aus. Wenn Sie Aspose.Words für .NET verwenden, gibt es eine elegante Lösung für dieses Problem: Tabellen werden automatisch an das Fenster angepasst. Diese praktische Funktion passt die Tabellenbreite so an, dass sie perfekt mit der Seitenbreite übereinstimmt und Ihr Dokument elegant und professionell aussieht. In dieser Anleitung führen wir Sie durch die Schritte, um dies mit Aspose.Words für .NET zu erreichen und sicherzustellen, dass Ihre Tabellen immer wie angegossen passen.
 
 ## Voraussetzungen
 
@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
- Der`Aspose.Words` Namespace enthält die Kernklassen zur Bearbeitung von Word-Dokumenten, während`Aspose.Words.Tables` ist speziell für die Handhabung von Tabellen.
+Der`Aspose.Words` Namespace enthält die Kernklassen zur Bearbeitung von Word-Dokumenten, während`Aspose.Words.Tables` ist speziell für die Handhabung von Tabellen.
 
 ## Schritt 1: Richten Sie Ihr Dokument ein
 
@@ -68,7 +68,7 @@ Nachdem Sie nun die Tabelle erstellt haben, können Sie die Funktion „Automati
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
- Der`AutoFit` Methode mit`AutoFitBehavior.AutoFitToWindow` sorgt dafür, dass die Tabellenbreite an die gesamte Seitenbreite angepasst wird.
+Der`AutoFit` Methode mit`AutoFitBehavior.AutoFitToWindow` sorgt dafür, dass die Tabellenbreite an die gesamte Seitenbreite angepasst wird.
 
 ## Schritt 4: Speichern Sie das geänderte Dokument
 

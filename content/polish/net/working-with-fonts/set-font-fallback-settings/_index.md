@@ -1,29 +1,29 @@
 ---
-title: Ustaw ustawienia zastępczej czcionki
-linktitle: Ustaw ustawienia zastępczej czcionki
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak skonfigurować ustawienia zastępczych czcionek w Aspose.Words dla .NET. Dzięki temu obszernemu przewodnikowi wszystkie znaki w dokumentach będą wyświetlane poprawnie.
+title: Ustaw ustawienia zastępcze czcionki
+linktitle: Ustaw ustawienia zastępcze czcionki
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak skonfigurować ustawienia Font Fallback w Aspose.Words dla .NET. Ten kompleksowy przewodnik zapewnia, że wszystkie znaki w dokumentach są wyświetlane poprawnie.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/set-font-fallback-settings/
 ---
 ## Wstęp
 
-Podczas pracy z dokumentami zawierającymi różnorodne elementy tekstowe, takie jak różne języki czy znaki specjalne, niezwykle istotne jest zapewnienie prawidłowego wyświetlania tych elementów. Aspose.Words dla .NET oferuje zaawansowaną funkcję zwaną Ustawieniami zastępczych czcionek, która pomaga w definiowaniu reguł zastępowania czcionek, gdy oryginalna czcionka nie obsługuje niektórych znaków. W tym przewodniku omówimy krok po kroku, jak skonfigurować ustawienia zastępczej czcionki przy użyciu Aspose.Words dla .NET.
+Podczas pracy z dokumentami zawierającymi różne elementy tekstowe, takie jak różne języki lub znaki specjalne, kluczowe jest zapewnienie, że te elementy są wyświetlane poprawnie. Aspose.Words for .NET oferuje potężną funkcję o nazwie Font Fallback Settings, która pomaga w definiowaniu reguł zastępowania czcionek, gdy oryginalna czcionka nie obsługuje niektórych znaków. W tym przewodniku pokażemy, jak skonfigurować Font Fallback Settings za pomocą Aspose.Words for .NET w samouczku krok po kroku.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
+Zanim przejdziesz do samouczka, upewnij się, że spełnione są następujące wymagania wstępne:
 
-- Podstawowa znajomość C#: Znajomość języka programowania C# i frameworku .NET.
+- Podstawowa znajomość języka C#: Znajomość języka programowania C# i platformy .NET.
 -  Aspose.Words dla .NET: Pobierz i zainstaluj z[link do pobrania](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne: konfiguracja taka jak Visual Studio do pisania i uruchamiania kodu.
--  Przykładowy dokument: Przygotuj przykładowy dokument (np.`Rendering.docx`) gotowy do testów.
-- Reguły zastępowania czcionek XML: Przygotuj plik XML definiujący zasady zastępowania czcionek.
+- Środowisko programistyczne: środowisko podobne do Visual Studio, służące do pisania i uruchamiania kodu.
+-  Przykładowy dokument: Posiadaj przykładowy dokument (np.`Rendering.docx`) gotowe do testów.
+- Reguły zapasowe czcionek w formacie XML: Przygotuj plik XML definiujący reguły zapasowe czcionek.
 
 ## Importuj przestrzenie nazw
 
-Aby korzystać z Aspose.Words, musisz zaimportować niezbędne przestrzenie nazw. Umożliwia to dostęp do różnych klas i metod niezbędnych do przetwarzania dokumentów.
+Aby użyć Aspose.Words, musisz zaimportować niezbędne przestrzenie nazw. Umożliwia to dostęp do różnych klas i metod wymaganych do przetwarzania dokumentów.
 
 ```csharp
 using Aspose.Words;
@@ -33,7 +33,7 @@ using System;
 
 ## Krok 1: Zdefiniuj katalog dokumentów
 
-Najpierw zdefiniuj katalog, w którym przechowywany jest dokument. Jest to niezbędne do zlokalizowania i przetworzenia dokumentu.
+Najpierw zdefiniuj katalog, w którym przechowywany jest Twój dokument. Jest to niezbędne do zlokalizowania i przetworzenia Twojego dokumentu.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Załaduj dokument
 
- Załaduj swój dokument do Aspose.Words`Document` obiekt. Ten krok umożliwia programową pracę z dokumentem.
+ Załaduj swój dokument do Aspose.Words`Document` obiekt. Ten krok pozwala na programową pracę z dokumentem.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Skonfiguruj ustawienia czcionek
 
- Utwórz nowy`FontSettings` obiekt i załaduj ustawienia zastępczej czcionki z pliku XML. Ten plik XML zawiera reguły dotyczące zastępczych czcionek.
+Utwórz nowy`FontSettings` obiekt i załaduj ustawienia zapasowe czcionek z pliku XML. Ten plik XML zawiera reguły zapasowe czcionek.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -59,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Krok 4: Zastosuj ustawienia czcionki do dokumentu
 
- Przypisz skonfigurowane`FontSettings`do dokumentu. Dzięki temu podczas renderowania dokumentu zostaną zastosowane reguły dotyczące czcionek zastępczych.
+ Przypisz skonfigurowane`FontSettings`do dokumentu. Zapewnia to, że reguły zapasowe czcionek zostaną zastosowane podczas renderowania dokumentu.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -67,15 +67,15 @@ doc.FontSettings = fontSettings;
 
 ## Krok 5: Zapisz dokument
 
-Na koniec zapisz dokument. Ustawienia zastępczej czcionki zostaną użyte podczas operacji zapisywania, aby zapewnić prawidłowe podstawienie czcionek.
+Na koniec zapisz dokument. Ustawienia zapasowe czcionki zostaną użyte podczas operacji zapisywania, aby zapewnić właściwą zamianę czcionki.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-## Plik XML: Reguły zastępowania czcionek
+## Plik XML: Reguły zapasowe czcionek
 
-Oto przykład tego, jak powinien wyglądać plik XML definiujący reguły zastępczych czcionek:
+Oto przykład, jak powinien wyglądać plik XML definiujący reguły zapasowe czcionek:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -93,26 +93,26 @@ Oto przykład tego, jak powinien wyglądać plik XML definiujący reguły zastę
 
 ## Wniosek
 
-Wykonując poniższe kroki, możesz skutecznie skonfigurować i używać ustawień zastępczych czcionek w Aspose.Words dla .NET. Dzięki temu wszystkie znaki będą poprawnie wyświetlane w dokumentach, nawet jeśli oryginalna czcionka nie obsługuje niektórych znaków. Wdrożenie tych ustawień znacznie poprawi jakość i czytelność dokumentów.
+Postępując zgodnie z tymi krokami, możesz skutecznie skonfigurować i używać Font Fallback Settings w Aspose.Words dla .NET. Dzięki temu Twoje dokumenty będą wyświetlać wszystkie znaki poprawnie, nawet jeśli oryginalna czcionka nie obsługuje niektórych znaków. Wdrożenie tych ustawień znacznie poprawi jakość i czytelność Twoich dokumentów.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### P1: Co to jest funkcja zastępowania czcionek?
+### P1: Czym jest funkcja Font Fallback?
 
-Font Fallback to funkcja umożliwiająca podmianę czcionek, gdy oryginalna czcionka nie obsługuje niektórych znaków, zapewniając prawidłowe wyświetlanie wszystkich elementów tekstu.
+Font Fallback to funkcja umożliwiająca zamianę czcionek w przypadku, gdy oryginalna czcionka nie obsługuje niektórych znaków, zapewniając tym samym prawidłowe wyświetlanie wszystkich elementów tekstowych.
 
-### P2: Czy mogę określić wiele czcionek zastępczych?
+### P2: Czy mogę określić wiele czcionek zapasowych?
 
-Tak, możesz określić wiele czcionek zastępczych w regułach XML. Aspose.Words sprawdzi każdą czcionkę w określonej kolejności, aż znajdzie taką, która obsługuje dany znak.
+Tak, możesz określić wiele czcionek zapasowych w regułach XML. Aspose.Words sprawdzi każdą czcionkę w podanej kolejności, aż znajdzie taką, która obsługuje dany znak.
 
-### P3: Gdzie mogę pobrać Aspose.Words dla .NET?
+### P3: Gdzie mogę pobrać Aspose.Words dla platformy .NET?
 
- Można go pobrać z[Strona pobierania Aspose](https://releases.aspose.com/words/net/).
+ Można go pobrać ze strony[Strona pobierania Aspose](https://releases.aspose.com/words/net/).
 
-### P4: Jak utworzyć plik XML dla reguł zastępczych czcionek?
+### P4: Jak utworzyć plik XML zawierający reguły zapasowe czcionek?
 
-Plik XML można utworzyć za pomocą dowolnego edytora tekstu. Powinien mieć strukturę pokazaną w przykładzie podanym w tym samouczku.
+Plik XML można utworzyć za pomocą dowolnego edytora tekstu. Powinien on mieć strukturę pokazaną w przykładzie podanym w tym samouczku.
 
-### P5: Czy dostępna jest obsługa Aspose.Words?
+### P5: Czy jest dostępne wsparcie dla Aspose.Words?
 
- Tak, możesz znaleźć pomoc na stronie[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).
+ Tak, możesz znaleźć wsparcie na[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).

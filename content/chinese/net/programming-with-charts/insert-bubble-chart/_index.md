@@ -17,7 +17,7 @@ url: /zh/net/programming-with-charts/insert-bubble-chart/
 
 - Aspose.Words for .NET：如果您还没有，您需要下载并安装 Aspose.Words for .NET。您可以从[下载页面](https://releases.aspose.com/words/net/).
 - 开发环境：您应该设置一个开发环境，以便编写和执行 .NET 代码。Visual Studio 是一个流行的选择。
-- C# 基础知识：虽然本指南对初学者很友好，但对 C# 的基本了解将帮助您更轻松地理解本指南。
+- C# 基础知识：虽然本指南对初学者友好，但对 C# 的基本了解将帮助您更轻松地理解本指南。
 
 ## 导入命名空间
 

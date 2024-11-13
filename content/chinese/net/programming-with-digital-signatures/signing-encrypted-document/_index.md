@@ -15,7 +15,7 @@ url: /zh/net/programming-with-digital-signatures/signing-encrypted-document/
 
 在深入研究代码之前，请确保您已准备好所需的一切：
 
-1.  Aspose.Words for .NET：从以下网址下载并安装[这里](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：下载并安装[这里](https://releases.aspose.com/words/net/).
 2. Visual Studio：确保您已安装它。
 3. 有效证书：您需要一个 .pfx 证书文件。
 4. 基本 C# 知识：了解基础知识将使本教程更加顺畅。

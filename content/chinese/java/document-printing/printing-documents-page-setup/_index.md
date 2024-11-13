@@ -57,7 +57,7 @@ pageSetup.setRightMargin(72.0);
 
 ## 打印文档
 
-使用 Aspose.Words for Java 打印文档的过程非常简单。您可以打印到物理打印机或生成 PDF 进行数字分发。
+使用 Aspose.Words for Java 打印文档的过程非常简单。您可以打印到物理打印机或生成 PDF 以进行数字分发。
 
 ```java
 //打印文档

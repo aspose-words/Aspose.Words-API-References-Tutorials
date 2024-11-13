@@ -15,7 +15,7 @@ Készen állsz, hogy belemerülj a Word dokumentumstílusának világába? Akár
 
 Mielőtt belevágnánk, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-1.  Aspose.Words for .NET: Ezt a könyvtárat telepítenie kell a .NET-környezetbe. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ezt a könyvtárat telepítenie kell a .NET-környezetbe. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. A .NET alapszintű ismerete: A C# vagy más .NET nyelv ismerete segít megérteni a megadott kódrészleteket.
 3. Fejlesztői környezet: Győződjön meg arról, hogy rendelkezik egy olyan IDE-vel, mint a Visual Studio, amely be van állítva a .NET kód írására és végrehajtására.
 

@@ -2,7 +2,7 @@
 title: ドキュメント結合の使用
 linktitle: ドキュメント結合の使用
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用して Word 文書をシームレスに結合する方法を学びます。わずか数ステップで、効率的に結合、フォーマット、競合の処理ができます。今すぐ始めましょう。
+description: Aspose.Words for Java を使用して Word 文書をシームレスに結合する方法を学びます。わずか数ステップで効率的に結合、フォーマット、競合の処理ができます。今すぐ始めましょう!
 type: docs
 weight: 10
 url: /ja/java/document-merging/using-document-merging/
@@ -57,7 +57,7 @@ public class DocumentMerger {
 
 ## 4. ドキュメントの書式設定の処理
 
-ドキュメントを結合する場合、ソース ドキュメントのスタイルと書式が衝突する場合があります。Aspose.Words for Java には、このような状況に対処するための複数のインポート形式モードが用意されています。
+ドキュメントを結合する場合、ソース ドキュメントのスタイルと書式設定が衝突する場合があります。Aspose.Words for Java には、このような状況に対処するための複数のインポート形式モードが用意されています。
 
 - `ImportFormatMode.KEEP_SOURCE_FORMATTING`: 
 ソース ドキュメントの書式を保持します。
@@ -72,7 +72,7 @@ public class DocumentMerger {
 
 ## 5. 複数の文書を結合する
 
-2つ以上の文書を結合するには、上記と同様の方法に従い、`appendDocument()`メソッドを複数回実行します。
+2つ以上の文書を結合するには、上記と同様のアプローチに従い、`appendDocument()`メソッドを複数回実行します。
 
 ```java
 import com.aspose.words.*;
@@ -179,7 +179,7 @@ public class DocumentMerger {
 
 ## 10. 結論
 
-Aspose.Words for Java を使用すると、Java 開発者は Word ドキュメントを簡単に結合できます。この記事のステップ バイ ステップ ガイドに従うことで、ドキュメントの結合、書式設定の処理、改行の挿入、競合の管理を簡単に行うことができます。Aspose.Words for Java を使用すると、ドキュメントの結合がシームレスで自動化されたプロセスになり、貴重な時間と労力を節約できます。
+Aspose.Words for Java は、Java 開発者が Word 文書を簡単に結合できるようにします。この記事のステップバイステップ ガイドに従うことで、文書の結合、書式設定の処理、改行の挿入、競合の管理を簡単に行うことができます。Aspose.Words for Java を使用すると、文書の結合がシームレスで自動化されたプロセスになり、貴重な時間と労力を節約できます。
 
 ## 11. よくある質問 
 

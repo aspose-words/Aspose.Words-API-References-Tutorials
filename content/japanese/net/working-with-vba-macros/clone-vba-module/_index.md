@@ -105,7 +105,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して、Word 文書から別の文書に VBA モジュールを正常に複製できました。この強力なライブラリを使用すると、Word 文書の操作が非常に簡単になります。ここで説明した手順は、ほんの一部にすぎません。文書の作成を自動化したり、コンテンツを変更したり、VBA プロジェクトを管理したりする場合でも、Aspose.Words が役立ちます。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書から別の文書に VBA モジュールを正常に複製できました。この強力なライブラリを使用すると、Word 文書の操作が非常に簡単になります。ここで説明した手順はほんの一部にすぎません。ドキュメントの作成を自動化したり、コンテンツを変更したり、VBA プロジェクトを管理したりする場合でも、Aspose.Words が役立ちます。
 
 より多くの機能に興味がある場合は、[APIドキュメント](https://reference.aspose.com/words/net/)ヘルプが必要ですか？[サポートフォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。
 

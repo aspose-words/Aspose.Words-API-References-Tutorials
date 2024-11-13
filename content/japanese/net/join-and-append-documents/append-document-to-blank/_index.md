@@ -66,7 +66,7 @@ using Aspose.Words;
    Document srcDoc = new Document(dataDir + "Document source.docx");
    ```
 
-このスニペットはソースドキュメントを`Document`オブジェクトは、次の手順で空のドキュメントに追加されます。
+このスニペットはソースドキュメントを`Document`オブジェクトは、次の手順で空白のドキュメントに追加されます。
 
 ## ステップ3: 宛先ドキュメントを作成して準備する
 

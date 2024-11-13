@@ -22,7 +22,7 @@ url: /hi/python-net/content-extraction-and-manipulation/remove-content-documents
 
 ## पायथन के लिए Aspose.Words स्थापित करना
 
- आरंभ करने के लिए, आपको Aspose.Words for Python लाइब्रेरी स्थापित करनी होगी। आप इसका उपयोग करके ऐसा कर सकते हैं`pip`, पायथन पैकेज मैनेजर, को निम्न आदेश चलाकर खोलें:
+ आरंभ करने के लिए, आपको Aspose.Words for Python लाइब्रेरी स्थापित करनी होगी। आप इसका उपयोग करके ऐसा कर सकते हैं`pip`, पायथन पैकेज मैनेजर को निम्न आदेश चलाकर:
 
 ```bash
 pip install aspose-words
@@ -74,7 +74,7 @@ for shape in doc.get_child_nodes(aw.NodeType.SHAPE, True):
         shape.remove()
 ```
 
-## शैलियों का पुनःप्रारूपण
+## शैलियों का पुनः प्रारूपण
 
 सामग्री को परिष्कृत करने में शैलियों को पुनः स्वरूपित करना भी शामिल हो सकता है। मान लीजिए कि आप विशिष्ट पैराग्राफ़ का फ़ॉन्ट बदलना चाहते हैं:
 

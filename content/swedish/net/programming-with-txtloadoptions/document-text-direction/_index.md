@@ -89,7 +89,7 @@ Att ställa in textriktningen i Word-dokument är en enkel process med Aspose.Wo
 
 ###  Vad är`DocumentDirection` property used for?
 
- De`DocumentDirection` fastighet i`TxtLoadOptions` bestämmer textriktningen för dokumentet. Den kan ställas in på`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , eller`DocumentDirection.RightToLeft`.
+De`DocumentDirection` fastighet i`TxtLoadOptions` bestämmer textriktningen för dokumentet. Den kan ställas in på`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , eller`DocumentDirection.RightToLeft`.
 
 ### Kan jag ställa in textriktningen för specifika stycken istället för hela dokumentet?
 

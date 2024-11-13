@@ -9,20 +9,20 @@ url: /tr/net/programming-with-htmlsaveoptions/export-text-input-form-field-as-te
 ---
 ## giriiş
 
-Aspose.Words for .NET dünyasına mı dalıyorsunuz? Harika seçim! Bir metin giriş formu alanını metin olarak nasıl dışa aktaracağınızı öğrenmek istiyorsanız doğru yerdesiniz. İster yeni başlıyor olun ister becerilerinizi geliştiriyor olun, bu kılavuz bilmeniz gereken her şeyde size yol gösterecektir. Haydi başlayalım, olur mu?
+Yani, .NET için Aspose.Words dünyasına mı dalıyorsunuz? Harika bir seçim! Bir metin girişi form alanını metin olarak nasıl dışa aktaracağınızı öğrenmek istiyorsanız, doğru yerdesiniz. İster yeni başlıyor olun ister becerilerinizi tazeliyor olun, bu kılavuz bilmeniz gereken her şeyi size anlatacak. Hadi başlayalım, olur mu?
 
-## Önkoşullar
+## Ön koşullar
 
-İşin özüne dalmadan önce, sorunsuz bir şekilde takip etmeniz gereken her şeye sahip olduğunuzdan emin olalım:
+Ayrıntılara dalmadan önce, süreci sorunsuz bir şekilde takip edebilmeniz için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
--  Aspose.Words for .NET: En son sürümü şuradan indirip yükleyin:[Burada](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: En son sürümü buradan indirin ve kurun[Burada](https://releases.aspose.com/words/net/).
 - IDE: Visual Studio veya herhangi bir C# geliştirme ortamı.
 - Temel C# Bilgisi: Temel C# sözdizimi ve nesne yönelimli programlama kavramlarının anlaşılması.
-- Belge: Örnek bir Word belgesi (`Rendering.docx`) metin girişi form alanları ile.
+- Belge: Örnek bir Word belgesi (`Rendering.docx`) metin girişi form alanlarıyla.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bunlar her şeyin kusursuz çalışmasını sağlayan yapı taşları gibidir.
+İlk önce, gerekli ad alanlarını içe aktarmanız gerekir. Bunlar her şeyin sorunsuz çalışmasını sağlayan yapı taşları gibidir.
 
 ```csharp
 using System;
@@ -31,42 +31,42 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Pekala, artık ad alanlarımızı hazırladığımıza göre harekete geçelim!
+Tamam, artık ad alanlarımız hazır olduğuna göre, aksiyona geçebiliriz!
 
 ## Adım 1: Projeyi Kurun
 
-Koda geçmeden önce projemizin doğru kurulduğundan emin olalım.
+Koda geçmeden önce projemizin doğru bir şekilde kurulduğundan emin olalım.
 
-## Proje Oluşturma
+## Projenin Oluşturulması
 
 1. Visual Studio'yu açın: Visual Studio'yu veya tercih ettiğiniz C# geliştirme ortamını açarak başlayın.
-2.  Yeni Bir Proje Oluşturun: Şuraya gidin:`File > New > Project` . Seçme`Console App (.NET Core)` veya başka herhangi bir ilgili proje türü.
-3.  Projenize Ad Verin: Projenize anlamlı bir ad verin;`AsposeWordsExportExample`.
+2.  Yeni Bir Proje Oluşturun: Şuraya gidin:`File > New > Project` . Seçme`Console App (.NET Core)` veya herhangi bir diğer ilgili proje türü.
+3.  Projenize İsim Verin: Projenize anlamlı bir isim verin, örneğin:`AsposeWordsExportExample`.
 
-## Aspose.Words'ü Eklemek
+## Aspose.Words'ü ekleme
 
-1.  NuGet Paketlerini Yönetin: Çözüm Gezgini'nde projenize sağ tıklayın ve`Manage NuGet Packages`.
-2.  Aspose.Words'ü arayın: NuGet Paket Yöneticisi'nde şunu arayın:`Aspose.Words`.
-3.  Aspose.Words'ü yükleyin: Tıklayın`Install` Aspose.Words kütüphanesini projenize eklemek için.
+1.  NuGet Paketlerini Yönetin: Çözüm Gezgini'nde projenize sağ tıklayın ve şunu seçin:`Manage NuGet Packages`.
+2.  Aspose.Words'ü arayın: NuGet Paket Yöneticisi'nde, şunu arayın:`Aspose.Words`.
+3.  Aspose.Words'ü yükleyin: Üzerine tıklayın`Install` Aspose.Words kütüphanesini projenize eklemek için.
 
 ## Adım 2: Word Belgesini Yükleyin
 
-Artık projemiz kurulduğuna göre metin giriş form alanlarını içeren Word belgesini yükleyelim.
+Artık projemiz kurulduğuna göre, metin giriş form alanlarını içeren Word belgesini yükleyelim.
 
-1. Belge Dizinini Belirtin: Belgenizin saklandığı dizinin yolunu tanımlayın.
-2.  Belgeyi Yükleyin: Kullanın`Document` Word belgenizi yüklemek için sınıf.
+1. Belge Dizinini Belirleyin: Belgenizin saklandığı dizine giden yolu tanımlayın.
+2.  Belgeyi Yükle: Şunu kullanın:`Document` Word belgenizi yüklemek için sınıf.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. Adım: Dışa Aktarma Dizinini Hazırlayın
+## Adım 3: İhracat Dizinini Hazırlayın
 
-Export yapmadan önce ihracat dizinimizin hazır olduğundan emin olalım. Burası HTML dosyamızın ve görsellerimizin kaydedileceği yerdir.
+Dışa aktarmadan önce, dışa aktarma dizinimizin hazır olduğundan emin olalım. HTML dosyamız ve görsellerimiz buraya kaydedilecektir.
 
-1. Dışa Aktarma Dizinini Tanımlayın: Dışa aktarılan dosyaların kaydedileceği yolu belirtin.
-2. Dizini Kontrol Edin ve Temizleyin: Dizinin var olduğundan ve boş olduğundan emin olun.
+1. Dışa Aktarım Dizinini Tanımlayın: Dışa aktarılacak dosyaların kaydedileceği yolu belirtin.
+2. Dizinleri Kontrol Edin ve Temizleyin: Dizinin mevcut olduğundan ve boş olduğundan emin olun.
 
 ```csharp
 string imagesDir = Path.Combine(dataDir, "Images");
@@ -77,13 +77,13 @@ if (Directory.Exists(imagesDir))
 Directory.CreateDirectory(imagesDir);
 ```
 
-## 4. Adım: Kaydetme Seçeneklerini Yapılandırın
+## Adım 4: Kaydetme Seçeneklerini Yapılandırın
 
-İşte sihrin gerçekleştiği yer burası. Metin giriş formu alanını düz metin olarak dışa aktarmak için kaydetme seçeneklerimizi ayarlamamız gerekiyor.
+İşte sihir burada gerçekleşiyor. Metin giriş formu alanını düz metin olarak dışa aktarmak için kaydetme seçeneklerimizi ayarlamamız gerekiyor.
 
-1.  Kaydetme Seçenekleri Oluşturun: Yeni bir başlangıç değeri oluşturun`HtmlSaveOptions` nesne.
-2.  Metni Dışa Aktarma Seçeneğini Ayarla:`ExportTextInputFormFieldAsText`mülkiyet`true`.
-3. Görüntüler Klasörünü Ayarla: Görüntülerin kaydedileceği klasörü tanımlayın.
+1.  Kaydetme Seçenekleri Oluştur: Yeni bir tane başlat`HtmlSaveOptions` nesne.
+2.  Dışa Aktarma Metni Seçeneğini Ayarla:`ExportTextInputFormFieldAsText`mülk`true`.
+3. Resim Klasörünü Ayarla: Resimlerin kaydedileceği klasörü tanımlayın.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
@@ -95,10 +95,10 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 
 ## Adım 5: Belgeyi HTML olarak kaydedin
 
-Son olarak, yapılandırılmış kaydetme seçeneklerimizi kullanarak Word belgesini HTML dosyası olarak kaydedelim.
+Son olarak, yapılandırdığımız kaydetme seçeneklerini kullanarak Word belgesini bir HTML dosyası olarak kaydedelim.
 
-1. Çıkış Yolunu Tanımlayın: HTML dosyasının kaydedileceği yolu belirtin.
-2.  Belgeyi Kaydet: Kullan`Save` yöntemi`Document`Belgeyi dışa aktarmak için sınıf.
+1. Çıktı Yolunu Tanımlayın: HTML dosyasının kaydedileceği yolu belirtin.
+2.  Belgeyi Kaydedin: Şunu kullanın:`Save` yöntemi`Document`Belgeyi dışa aktarmak için sınıf.
 
 ```csharp
 doc.Save(dataDir + "ExportedDocument.html", saveOptions);
@@ -106,25 +106,25 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir metin giriş formu alanını başarıyla düz metin olarak dışa aktardınız. Bu kılavuz size bu görevi başarmanız için açık ve adım adım bir yaklaşım sunmuş olmalıdır. Unutmayın, pratik mükemmelleştirir; bu nedenle Aspose.Words ile başka neler yapabileceğinizi görmek için farklı seçenekler ve ayarlarla denemeler yapmaya devam edin.
+Ve işte oldu! Aspose.Words for .NET kullanarak bir metin girişi form alanını düz metin olarak başarıyla dışa aktardınız. Bu kılavuz, bu görevi başarmanız için size açık, adım adım bir yaklaşım sunmuş olmalı. Unutmayın, pratik mükemmelleştirir, bu yüzden Aspose.Words ile başka neler yapabileceğinizi görmek için farklı seçenekler ve ayarlarla denemeler yapmaya devam edin.
 
-## SSS'ler
+## SSS
 
-### Aynı yöntemi kullanarak diğer form alanı türlerini dışa aktarabilir miyim?
+### Aynı yöntemi kullanarak diğer form alanı türlerini de dışa aktarabilir miyim?
 
- Evet, form alanının farklı özelliklerini yapılandırarak diğer form alanı türlerini dışa aktarabilirsiniz.`HtmlSaveOptions` sınıf.
+ Evet, farklı form alanı özelliklerini yapılandırarak diğer form alanı türlerini dışa aktarabilirsiniz.`HtmlSaveOptions` sınıf.
 
-### Belgemde resimler varsa ne olur?
+### Belgemde görseller varsa ne olur?
 
- Resimler belirtilen resimler klasörüne kaydedilecektir. ayarladığınızdan emin olun.`ImagesFolder` içindeki mülk`HtmlSaveOptions`.
+ Görüntüler belirtilen görüntü klasörüne kaydedilecektir. Ayarladığınızdan emin olun`ImagesFolder` mülk`HtmlSaveOptions`.
 
 ### Aspose.Words için lisansa ihtiyacım var mı?
 
- Evet, ücretsiz deneme sürümünden yararlanabilirsiniz[Burada](https://releases.aspose.com/) veya bir lisans satın alın[Burada](https://purchase.aspose.com/buy).
+ Evet, ücretsiz deneme alabilirsiniz[Burada](https://releases.aspose.com/) veya bir lisans satın alın[Burada](https://purchase.aspose.com/buy).
 
 ### Dışa aktarılan HTML'yi özelleştirebilir miyim?
 
- Kesinlikle! Aspose.Words, HTML çıktısını özelleştirmek için çeşitli seçenekler sunar. Şuraya bakın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Kesinlikle! Aspose.Words, HTML çıktısını özelleştirmek için çeşitli seçenekler sunar.[belgeleme](https://reference.aspose.com/words/net/) Daha detaylı bilgi için.
 
 ### Aspose.Words .NET Core ile uyumlu mu?
 

@@ -55,7 +55,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Itt,`"Rendering.docx"` a minta Word-dokumentum neve. Győződjön meg arról, hogy ez a fájl a megadott könyvtárban található.
+ Itt,`"Rendering.docx"` a minta Word dokumentum neve. Győződjön meg arról, hogy ez a fájl a megadott könyvtárban található.
 
 ## 3. lépés: Az alapvető képtömörítés konfigurálása
 

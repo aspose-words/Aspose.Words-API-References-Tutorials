@@ -1,27 +1,27 @@
 ---
-title: Belge Filigranı ve Sayfa Yapısı
-linktitle: Belge Filigranı ve Sayfa Yapısı
+title: Belge Filigranlama ve Sayfa Düzeni
+linktitle: Belge Filigranlama ve Sayfa Düzeni
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java ile filigranları nasıl uygulayacağınızı ve sayfa yapılandırmalarını nasıl ayarlayacağınızı öğrenin. Kaynak koduyla birlikte kapsamlı bir kılavuz.
+description: Aspose.Words for Java ile filigranların nasıl uygulanacağını ve sayfa yapılandırmalarının nasıl ayarlanacağını öğrenin. Kaynak kodlu kapsamlı bir kılavuz.
 type: docs
 weight: 13
 url: /tr/java/document-styling/document-watermarking-page-setup/
 ---
 ## giriiş
 
-Belge işleme alanında Aspose.Words for Java, geliştiricilerin belge işlemenin her yönü üzerinde kontrol sahibi olmalarına olanak tanıyan güçlü bir araç olarak duruyor. Bu kapsamlı kılavuzda Aspose.Words for Java kullanarak belge filigranlama ve sayfa düzeninin inceliklerini inceleyeceğiz. İster deneyimli bir geliştirici olun ister Java belge işleme dünyasına yeni adım atın, bu adım adım kılavuz sizi ihtiyacınız olan bilgi ve kaynak koduyla donatacaktır.
+Belge düzenleme alanında, Aspose.Words for Java, geliştiricilerin belge işlemenin her yönü üzerinde kontrol sahibi olmasını sağlayan güçlü bir araç olarak öne çıkıyor. Bu kapsamlı kılavuzda, Aspose.Words for Java kullanarak belge filigranlama ve sayfa kurulumunun inceliklerini inceleyeceğiz. İster deneyimli bir geliştirici olun, ister Java belge işleme dünyasına yeni adım atıyor olun, bu adım adım kılavuz size ihtiyaç duyduğunuz bilgi ve kaynak kodunu sağlayacaktır.
 
-## Belge Filigranı
+## Belge Filigranlama
 
 ### Filigran Ekleme
 
-Belgelere filigran eklemek, içeriğinizi markalamak veya güvence altına almak için çok önemli olabilir. Aspose.Words for Java bu görevi basitleştirir. İşte nasıl:
+Belgelere filigran eklemek, markalaşma veya içeriğinizin güvenliğini sağlama açısından kritik olabilir. Java için Aspose.Words bu görevi kolaylaştırır. İşte nasıl:
 
 ```java
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("document.docx");
 
-// Filigran oluşturma
+// Bir filigran oluşturun
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(300);
@@ -34,7 +34,7 @@ watermark.setWrapType(WrapType.NONE);
 watermark.setVerticalAlignment(VerticalAlignment.CENTER);
 watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
 
-// Filigranı ekleyin
+// Filigranı ekle
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
 // Belgeyi kaydet
@@ -43,35 +43,35 @@ doc.save("document_with_watermark.docx");
 
 ### Filigranları Özelleştirme
 
-Yazı tipini, boyutunu, rengini ve dönüşünü ayarlayarak filigranları daha da özelleştirebilirsiniz. Bu esneklik, filigranınızın belgenizin stiliyle kusursuz bir şekilde eşleşmesini sağlar.
+Yazı tipini, boyutunu, rengini ve dönüşünü ayarlayarak filigranları daha da özelleştirebilirsiniz. Bu esneklik, filigranınızın belgenizin stiline kusursuz bir şekilde uymasını sağlar.
 
-## Sayfa Yapısı
+## Sayfa Düzeni
 
-### Sayfa Boyutu ve Yönü
+### Sayfa Boyutu ve Yönlendirme
 
-Sayfa düzeni belge biçimlendirmesinde çok önemlidir. Aspose.Words for Java, sayfa boyutu ve yönü üzerinde tam kontrol sunar:
+Sayfa düzeni belge biçimlendirmede çok önemlidir. Aspose.Words for Java, sayfa boyutu ve yönü üzerinde tam kontrol sağlar:
 
 ```java
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("document.docx");
 
 // Sayfa boyutunu A4 olarak ayarla
 doc.getFirstSection().getPageSetup().setPageWidth(595.0);
 doc.getFirstSection().getPageSetup().setPageHeight(842.0);
 
-// Sayfa yönünü yatay olarak değiştirme
+// Sayfa yönünü yatay olarak değiştir
 doc.getFirstSection().getPageSetup().setOrientation(Orientation.LANDSCAPE);
 
 // Değiştirilen belgeyi kaydet
 doc.save("formatted_document.docx");
 ```
 
-### Kenar Boşlukları ve Sayfa Numaralandırma
+### Kenar Boşlukları ve Sayfa Numaralandırması
 
-Profesyonel belgeler için kenar boşlukları ve sayfa numaralandırma üzerinde hassas kontrol şarttır. Aspose.Words for Java ile bunu başarabilirsiniz:
+Profesyonel belgeler için kenar boşlukları ve sayfa numaralandırması üzerinde hassas kontrol esastır. Bunu Java için Aspose.Words ile elde edin:
 
 ```java
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("document.docx");
 
 // Kenar boşluklarını ayarlayın
@@ -93,7 +93,7 @@ doc.save("formatted_document.docx");
 
 ### Bir belgeden filigranı nasıl kaldırabilirim?
 
-Bir belgeden filigranı kaldırmak için belgenin şekillerini yineleyebilir ve filigranı temsil eden şekilleri kaldırabilirsiniz. İşte bir kesit:
+Bir belgeden filigranı kaldırmak için, belgenin şekilleri arasında dolaşabilir ve filigranları temsil edenleri kaldırabilirsiniz. İşte bir kesit:
 
 ```java
 Document doc = new Document("document_with_watermark.docx");
@@ -109,11 +109,11 @@ doc.save("document_without_watermark.docx");
 
 ### Tek bir belgeye birden fazla filigran ekleyebilir miyim?
 
-Evet, ek Shape nesneleri oluşturup bunları gerektiği gibi konumlandırarak bir belgeye birden fazla filigran ekleyebilirsiniz.
+Evet, ek Şekil nesneleri oluşturup bunları gerektiği gibi konumlandırarak bir belgeye birden fazla filigran ekleyebilirsiniz.
 
-### Yatay yönde sayfa boyutunu yasal olarak nasıl değiştiririm?
+### Yatay yönde sayfa boyutunu yasal boyuta nasıl değiştirebilirim?
 
-Sayfa boyutunu yatay yönde yasal olarak ayarlamak için sayfa genişliğini ve yüksekliğini aşağıdaki gibi değiştirin:
+Yatay yönde sayfa boyutunu yasal olarak ayarlamak için sayfa genişliğini ve yüksekliğini aşağıdaki gibi değiştirin:
 
 ```java
 doc.getFirstSection().getPageSetup().setPageWidth(842.0);
@@ -122,11 +122,11 @@ doc.getFirstSection().getPageSetup().setPageHeight(595.0);
 
 ### Filigranlar için varsayılan yazı tipi nedir?
 
-Filigranlar için varsayılan yazı tipi, yazı tipi boyutu 36 olan Calibri'dir.
+Filigranlar için varsayılan yazı tipi Calibri'dir ve yazı tipi boyutu 36'dır.
 
-### Belirli bir sayfadan başlayarak sayfa numaralarını nasıl ekleyebilirim?
+### Belirli bir sayfadan başlayarak sayfa numaraları nasıl ekleyebilirim?
 
-Bunu, belgenizdeki başlangıç sayfa numarasını aşağıdaki gibi ayarlayarak sağlayabilirsiniz:
+Bunu, belgenizde başlangıç sayfa numarasını aşağıdaki şekilde ayarlayarak başarabilirsiniz:
 
 ```java
 doc.getFirstSection().getPageSetup().setPageStartingNumber(5);
@@ -134,10 +134,10 @@ doc.getFirstSection().getPageSetup().setPageStartingNumber(5);
 
 ### Üstbilgi veya altbilgideki metni nasıl ortaya hizalarım?
 
-Üstbilgi veya altbilgideki metni, üstbilgi veya altbilgi içindeki Paragraph nesnesindeki setAlignment yöntemini kullanarak ortalayarak hizalayabilirsiniz.
+Başlık veya altbilgideki metni, başlık veya altbilgideki Paragraf nesnesinde setAlignment yöntemini kullanarak ortaya hizalayabilirsiniz.
 
 ## Çözüm
 
-Bu kapsamlı kılavuzda Aspose.Words for Java'yı kullanarak belge filigranlama ve sayfa düzeni sanatını inceledik. Sağlanan kaynak kod parçacıkları ve öngörülerle donanmış olarak artık belgelerinizi ustalıkla işlemek ve biçimlendirmek için gereken araçlara sahipsiniz. Aspose.Words for Java, tam spesifikasyonlarınıza göre uyarlanmış profesyonel, markalı belgeler oluşturmanıza olanak sağlar.
+Bu kapsamlı kılavuzda, Aspose.Words for Java kullanarak belge filigranlama ve sayfa kurulumu sanatını inceledik. Sağlanan kaynak kodu parçacıkları ve içgörülerle donanmış olarak, artık belgelerinizi ustalıkla düzenlemek ve biçimlendirmek için araçlara sahipsiniz. Aspose.Words for Java, tam olarak özelliklerinize göre uyarlanmış profesyonel, markalı belgeler oluşturmanızı sağlar.
 
-Belge manipülasyonunda ustalaşmak geliştiriciler için değerli bir beceridir ve Aspose.Words for Java bu yolculukta güvenilir arkadaşınızdır. Bugün çarpıcı belgeler oluşturmaya başlayın!
+Belge düzenlemede ustalaşmak geliştiriciler için değerli bir beceridir ve Aspose.Words for Java bu yolculukta güvendiğiniz arkadaşınızdır. Bugün çarpıcı belgeler oluşturmaya başlayın!

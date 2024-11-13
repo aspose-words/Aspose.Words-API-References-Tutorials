@@ -2,7 +2,7 @@
 title: फ़ॉन्ट नाम हल करें
 linktitle: फ़ॉन्ट नाम हल करें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: जानें कि .NET के लिए Aspose.Words का उपयोग करके HTML में कनवर्ट करते समय Word दस्तावेज़ों में फ़ॉन्ट नामों को कैसे हल किया जाए। विस्तृत स्पष्टीकरण के साथ चरण-दर-चरण मार्गदर्शिका।
+description: .NET के लिए Aspose.Words का उपयोग करके HTML में कनवर्ट करते समय Word दस्तावेज़ों में फ़ॉन्ट नामों को हल करना सीखें। विस्तृत स्पष्टीकरण के साथ चरण-दर-चरण मार्गदर्शिका।
 type: docs
 weight: 10
 url: /hi/net/programming-with-htmlsaveoptions/resolve-font-names/
@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptio
 ## अक्सर पूछे जाने वाले प्रश्न
 
 ### .NET के लिए Aspose.Words क्या है?
-.NET के लिए Aspose.Words एक शक्तिशाली लाइब्रेरी है जो डेवलपर्स को प्रोग्रामेटिक रूप से Word दस्तावेज़ों को बनाने, संशोधित करने और परिवर्तित करने की अनुमति देती है।
+Aspose.Words for .NET एक शक्तिशाली लाइब्रेरी है जो डेवलपर्स को प्रोग्रामेटिक रूप से Word दस्तावेज़ों को बनाने, संशोधित करने और परिवर्तित करने की अनुमति देती है।
 
 ### मैं .NET के लिए Aspose.Words कैसे स्थापित करूं?
  आप .NET के लिए Aspose.Words को यहां से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/net/)दस्तावेज़ में दिए गए स्थापना निर्देशों का पालन करें।
@@ -96,7 +96,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptio
  हां, लेकिन इसकी कुछ सीमाएं होंगी। पूर्ण कार्यक्षमता के लिए, आप लाइसेंस खरीद सकते हैं[यहाँ](https://purchase.aspose.com/buy) या अस्थायी लाइसेंस प्राप्त करें[यहाँ](https://purchase.aspose.com/temporary-license/).
 
 ### मेरे फ़ॉन्ट HTML में सही ढंग से क्यों नहीं दिख रहे हैं?
- ऐसा तब हो सकता है जब रूपांतरण के दौरान फ़ॉन्ट को ठीक से हल नहीं किया गया हो।`ResolveFontNames = true` में`HtmlSaveOptions` इस समस्या को ठीक करने में मदद कर सकते हैं.
+ ऐसा तब हो सकता है जब रूपांतरण के दौरान फ़ॉन्ट को ठीक से हल नहीं किया जाता है।`ResolveFontNames = true` में`HtmlSaveOptions` इस समस्या को ठीक करने में मदद कर सकते हैं.
 
 ### मुझे .NET के लिए Aspose.Words का समर्थन कहां मिल सकता है?
  आप यहाँ से सहायता प्राप्त कर सकते हैं[Aspose.Words समर्थन मंच](https://forum.aspose.com/c/words/8).

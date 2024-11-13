@@ -57,7 +57,7 @@ Diese Schleife durchläuft alle Abschnitte Ihres Dokuments. Die Magie geschieht 
 
 ## Schritt 3: Klonen und neues Dokument erstellen
 
-Innerhalb der Schleife müssen wir jeden Abschnitt klonen und für jeden geklonten Abschnitt ein neues Dokument erstellen. Durch das Klonen bleibt das Originaldokument intakt.
+Innerhalb der Schleife müssen wir jeden Abschnitt klonen und für jeden geklonten Abschnitt ein neues Dokument erstellen. Durch das Klonen können wir das Originaldokument intakt halten.
 
 ```csharp
 Section section = doc.Sections[i].Clone();
@@ -86,11 +86,11 @@ Abschließend speichern wir jedes neue Dokument unter einem eindeutigen Namen. D
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
- Der`Save` Die Methode speichert das neue Dokument im angegebenen Verzeichnis unter einem eindeutigen Namen basierend auf dem Abschnittsindex.
+Der`Save` Die Methode speichert das neue Dokument im angegebenen Verzeichnis unter einem eindeutigen Namen basierend auf dem Abschnittsindex.
 
 ## Abschluss
 
-Und da haben Sie es! Das Aufteilen eines Word-Dokuments in Abschnitte mit Aspose.Words für .NET ist kinderleicht. Diese Methode kann Ihnen jede Menge Zeit und Mühe ersparen und die Handhabung Ihrer Dokumente erheblich vereinfachen. Denken Sie daran, dass es immer eine kluge Entscheidung ist, große Aufgaben in kleinere, überschaubare Teile aufzuteilen. Probieren Sie es jetzt aus und machen Sie Ihre Dokumentenverwaltung zum Kinderspiel!
+Und da haben Sie es! Das Aufteilen eines Word-Dokuments in Abschnitte mit Aspose.Words für .NET ist kinderleicht. Diese Methode kann Ihnen jede Menge Zeit und Mühe sparen und die Handhabung Ihrer Dokumente erheblich vereinfachen. Denken Sie daran, dass es immer eine kluge Entscheidung ist, große Aufgaben in kleinere, überschaubare Teile aufzuteilen. Probieren Sie es jetzt aus und machen Sie Ihre Dokumentenverwaltung zum Kinderspiel!
 
 ## Häufig gestellte Fragen
 

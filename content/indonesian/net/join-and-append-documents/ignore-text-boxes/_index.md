@@ -2,24 +2,24 @@
 title: Abaikan Kotak Teks
 linktitle: Abaikan Kotak Teks
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Gabungkan dokumen Word dengan Aspose.Words untuk .NET, memastikan format kotak teks dipertahankan. Ikuti panduan langkah demi langkah ini untuk pemrosesan dokumen yang lancar.
+description: Gabungkan dokumen Word dengan Aspose.Words untuk .NET, pastikan format kotak teks dipertahankan. Ikuti panduan langkah demi langkah ini untuk pemrosesan dokumen yang lancar.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/ignore-text-boxes/
 ---
 ## Perkenalan
 
-Selamat datang di tutorial mendetail tentang penggunaan Aspose.Words untuk .NET untuk menggabungkan dokumen Word sambil mengabaikan kotak teks. Jika Anda ingin menyederhanakan pemrosesan dokumen dan memastikan format kotak teks tetap terjaga, Anda berada di tempat yang tepat. Mari selami panduan langkah demi langkah ini.
+Selamat datang di tutorial terperinci tentang penggunaan Aspose.Words untuk .NET guna menggabungkan dokumen Word sambil mengabaikan kotak teks. Jika Anda ingin menyederhanakan pemrosesan dokumen dan memastikan bahwa format kotak teks dipertahankan, Anda berada di tempat yang tepat. Mari selami panduan langkah demi langkah ini.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita mulai, mari pastikan Anda memiliki semua yang Anda butuhkan:
 
 1.  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/).
-2. Lingkungan Pengembangan .NET: Visual Studio atau IDE pilihan lainnya.
-3. Pengetahuan Dasar C#: Pemahaman konsep dasar pemrograman C#.
+2. Lingkungan Pengembangan .NET: Visual Studio atau IDE lain yang disukai.
+3. Pengetahuan Dasar C#: Memahami konsep pemrograman dasar dalam C#.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Untuk memulai, Anda perlu mengimpor namespace yang diperlukan dalam proyek Anda:
 
@@ -30,17 +30,17 @@ using Aspose.Words.Importing;
 
 ## Langkah 1: Siapkan Proyek Anda
 
-Pertama, pastikan proyek Anda disiapkan dengan benar. Buka IDE Anda, buat proyek baru, dan instal perpustakaan Aspose.Words untuk .NET melalui NuGet Package Manager.
+Pertama, pastikan proyek Anda telah disiapkan dengan benar. Buka IDE Anda, buat proyek baru, dan instal pustaka Aspose.Words for .NET melalui NuGet Package Manager.
 
 ### Cara Memasang Aspose.Words
 
-1. Buka Manajer Paket NuGet di IDE Anda.
-2. Telusuri "Aspose.Words".
-3. Klik pada "Instal".
+1. Buka NuGet Package Manager di IDE Anda.
+2. Cari "Aspose.Words".
+3. Klik "Instal".
 
 ## Langkah 2: Tentukan Direktori Dokumen
 
-Selanjutnya, tentukan direktori tempat dokumen sumber dan tujuan Anda berada.
+Berikutnya, tentukan direktori tempat dokumen sumber dan tujuan Anda berada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -65,9 +65,9 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## Langkah 5: Inisialisasi Pengimpor Node
+## Langkah 5: Inisialisasi Importir Node
 
- Inisialisasi`NodeImporter` untuk mengimpor node dari dokumen sumber ke dokumen tujuan.
+ Inisialisasi`NodeImporter` untuk mengimpor simpul dari dokumen sumber ke dokumen tujuan.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -93,7 +93,7 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Langkah 8: Simpan Dokumen yang Digabung
+## Langkah 8: Simpan Dokumen yang Digabungkan
 
 Terakhir, simpan dokumen gabungan dengan nama baru untuk menghindari penimpaan file asli.
 
@@ -103,20 +103,20 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 
 ## Kesimpulan
 
-Anda telah berhasil menggabungkan dua dokumen Word menggunakan Aspose.Words untuk .NET sambil memastikan bahwa kotak teks tidak diabaikan selama impor. Proses ini sangat berharga untuk menjaga integritas format dokumen Anda. Baik Anda berurusan dengan laporan, kontrak, atau jenis dokumen lainnya, Aspose.Words untuk .NET membuat prosesnya lancar.
+Anda telah berhasil menggabungkan dua dokumen Word menggunakan Aspose.Words untuk .NET sambil memastikan bahwa kotak teks tidak diabaikan selama proses impor. Proses ini sangat penting untuk menjaga integritas format dokumen Anda. Baik Anda menangani laporan, kontrak, atau jenis dokumen lainnya, Aspose.Words untuk .NET membuat prosesnya lancar.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
- Aspose.Words for .NET adalah perpustakaan yang kuat untuk membuat, memanipulasi, dan mengonversi dokumen Word dalam aplikasi .NET.[Pelajari lebih lanjut](https://reference.aspose.com/words/net/).
+ Aspose.Words untuk .NET adalah pustaka yang hebat untuk membuat, memanipulasi, dan mengonversi dokumen Word dalam aplikasi .NET.[Pelajari lebih lanjut](https://reference.aspose.com/words/net/).
 
-### Bisakah saya mencoba Aspose.Words untuk .NET sebelum membeli?
+### Dapatkah saya mencoba Aspose.Words untuk .NET sebelum membeli?
  Ya, Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/).
 
-### Bagaimana saya bisa mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
- Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
+### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
+Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-### Di mana saya dapat menemukan dokumentasi yang lebih detail?
+### Di mana saya dapat menemukan dokumentasi yang lebih rinci?
  Anda dapat menemukan dokumentasi lengkapnya[Di Sini](https://reference.aspose.com/words/net/).
 
 ### Bagaimana saya bisa mendapatkan dukungan untuk Aspose.Words untuk .NET?

@@ -2,7 +2,7 @@
 title: Belge Bölme ve Çıkarma
 linktitle: Belge Bölme ve Çıkarma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak belgeleri zahmetsizce nasıl böleceğinizi ve çıkaracağınızı öğrenin. Adım adım rehberlikle belge işleme görevlerinizi basitleştirin.
+description: Aspose.Words for Java kullanarak belgeleri zahmetsizce nasıl böleceğinizi ve çıkaracağınızı öğrenin. Adım adım kılavuzla belge işleme görevlerinizi basitleştirin.
 type: docs
 weight: 14
 url: /tr/java/document-merging/document-splitting-extraction/
@@ -10,51 +10,51 @@ url: /tr/java/document-merging/document-splitting-extraction/
 
 ## giriiş
 
-Bu kapsamlı kılavuzda, belgelerle çalışmaya yönelik çok yönlü bir API olan Aspose.Words for Java'nın güçlü yeteneklerini keşfedeceğiz. Özellikle belge bölme ve çıkarma işleminin ilgi çekici dünyasına dalacağız ve bu özelliğin belge işleme görevlerinizi nasıl basitleştirebileceğini göstereceğiz. 
+Bu kapsamlı kılavuzda, belgelerle çalışmak için çok yönlü bir API olan Aspose.Words for Java'nın güçlü yeteneklerini keşfedeceğiz. Özellikle, belge bölme ve çıkarma işlemlerinin ilgi çekici dünyasına dalacağız ve bu özelliğin belge işleme görevlerinizi nasıl basitleştirebileceğini göstereceğiz. 
 
-## Önkoşullar
+## Ön koşullar
 
-Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Koda dalmadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
 - Sisteminizde Java Geliştirme Kiti (JDK) yüklü.
--  Aspose.Words for Java kütüphanesi. İndirebilirsin[Burada](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java kütüphanesi. İndirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
 ## Projenizi Kurma
 
-Başlamak için tercih ettiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturun. Ardından Aspose.Words for Java kütüphanesini projenizin sınıf yoluna ekleyin.
+Başlamak için, tercih ettiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturun. Ardından, Aspose.Words for Java kitaplığını projenizin sınıf yoluna ekleyin.
 
-## Belgeyi Bölme
+## Bir Belgeyi Bölme
 
-### 1. Adım: Belgeyi Yükleyin
+### Adım 1: Belgeyi Yükleyin
 
-Bir belgeyi bölmek için öncelikle onu Java uygulamamıza yüklememiz gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+Bir belgeyi bölmek için, önce onu Java uygulamamıza yüklememiz gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```java
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("path/to/your/document.docx");
 ```
 
-### Adım 2: Bölünme Kriterlerini Tanımlayın
+### Adım 2: Bölme Kriterlerini Tanımlayın
 
-Daha sonra, belgeyi bölmek istediğimiz kriterleri temel alarak tanımlayacağız. Bu, sayfaya, bölüme veya ihtiyaçlarınıza uygun herhangi bir özel kritere göre olabilir.
+Sonra, belgeyi bölmek istediğimiz ölçütleri tanımlayacağız. Bu, sayfa, bölüm veya ihtiyaçlarınıza uygun herhangi bir özel ölçüt olabilir.
 
 ```java
-// Bölünme kriterlerini tanımlayın
+// Bölme kriterlerini tanımlayın
 DocumentSplitCriteria splitCriteria = new PageSplitCriteria();
 ```
 
-### 3. Adım: Bölmeyi Gerçekleştirin
+### Adım 3: Bölmeyi Gerçekleştirin
 
-Şimdi belgeyi tanımlanan kriterleri kullanarak bölelim:
+Şimdi, tanımlanan ölçütleri kullanarak belgeyi bölelim:
 
 ```java
 // Belgeyi böl
 List<Document> splitDocuments = doc.split(splitCriteria);
 ```
 
-### Adım 4: Bölünmüş Belgeleri Kaydetme
+### Adım 4: Bölünmüş Belgeleri Kaydedin
 
-Son olarak bölünmüş belgeleri istediğiniz konuma kaydedin:
+Son olarak bölünmüş belgeleri istediğiniz yere kaydedin:
 
 ```java
 for (int i = 0; i < splitDocuments.size(); i++) {
@@ -62,23 +62,23 @@ for (int i = 0; i < splitDocuments.size(); i++) {
 }
 ```
 
-## Belgeden Metin Çıkarma
+## Bir Belgeden Metin Çıkarma
 
-### 1. Adım: Belgeyi Yükleyin
+### Adım 1: Belgeyi Yükleyin
 
-Bir belgeden metin çıkarmak için belgeyi yükleyerek benzer bir yaklaşım izleyeceğiz:
+Bir belgeden metin çıkarmak için, belgeyi yükleyerek benzer bir yaklaşım izleyeceğiz:
 
 ```java
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("path/to/your/document.docx");
 ```
 
 ### Adım 2: Metni Çıkarın
 
-Şimdi metni belgeden çıkaralım:
+Şimdi belgeden metni çıkaralım:
 
 ```java
-// Belgeden metin çıkarma
+// Belgeden metni çıkar
 String extractedText = doc.getText();
 ```
 
@@ -88,26 +88,26 @@ String extractedText = doc.getText();
 
 ## Çözüm
 
-Aspose.Words for Java, belgelerdeki içeriği kolaylıkla bölmenize ve çıkarmanıza olanak tanır. Büyük bir belgeyi daha küçük parçalara ayırmanız veya analiz için metin çıkarmanız gerekiyorsa, bu API süreci basitleştirir. Bu kılavuzda özetlenen adımları takip ederek Aspose.Words for Java'nın tüm potansiyelinden yararlanmak için iyi bir donanıma sahip olacaksınız.
+Aspose.Words for Java, belgelerinizden içerikleri kolayca bölmenize ve çıkarmanıza olanak tanır. Büyük bir belgeyi daha küçük parçalara ayırmanız veya analiz için metin çıkarmanız gerekip gerekmediğine bakılmaksızın, bu API süreci basitleştirir. Bu kılavuzda özetlenen adımları izleyerek, Aspose.Words for Java'nın tüm potansiyelinden yararlanmak için iyi bir donanıma sahip olacaksınız.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for Java'yı nasıl yüklerim?
+### Java için Aspose.Words'ü nasıl yüklerim?
 
- Aspose.Words for Java'yı yüklemek için kütüphaneyi şuradan indirin:[Burada](https://releases.aspose.com/words/java/) ve onu Java projenizin sınıf yoluna ekleyin.
+ Java için Aspose.Words'ü yüklemek için kütüphaneyi şu adresten indirin:[Burada](https://releases.aspose.com/words/java/) ve bunu Java projenizin sınıf yoluna ekleyin.
 
 ### Bir belgeyi özel ölçütlere göre bölebilir miyim?
 
- Evet, Aspose.Words for Java'yı kullanarak bir belgeyi bölmek için özel kriterler tanımlayabilirsiniz. Basitçe özelinizi yaratın`DocumentSplitCriteria` uygulama.
+ Evet, Java için Aspose.Words kullanarak bir belgeyi bölmek için özel ölçütler tanımlayabilirsiniz. Basitçe özel ölçütlerinizi oluşturun`DocumentSplitCriteria` Uygulama.
 
-### Aspose.Words for Java hangi dosya formatlarını destekliyor?
+### Aspose.Words for Java hangi dosya formatlarını destekler?
 
-Aspose.Words for Java, DOC, DOCX, RTF, PDF ve daha fazlasını içeren çok çeşitli belge formatlarını destekler.
+Java için Aspose.Words, DOC, DOCX, RTF, PDF ve daha fazlası dahil olmak üzere çok çeşitli belge biçimlerini destekler.
 
-### Aspose.Words for Java, taranan belgelerden metin çıkarmak için uygun mudur?
+### Aspose.Words for Java, taranmış belgelerden metin çıkarmak için uygun mudur?
 
-Evet, Aspose.Words for Java, OCR özellikleriyle taranan belgelerden metin çıkarabilir.
+Evet, Aspose.Words for Java, OCR yetenekleriyle taranmış belgelerden metin çıkarabilir.
 
-### Aspose.Words for Java belgelerine nereden erişebilirim?
+### Aspose.Words for Java'nın belgelerine nereden ulaşabilirim?
 
- Aspose.Words for Java belgelerini bulabilirsiniz[Burada](https://reference.aspose.com/words/java/).
+ Java için Aspose.Words belgelerini bulabilirsiniz[Burada](https://reference.aspose.com/words/java/).

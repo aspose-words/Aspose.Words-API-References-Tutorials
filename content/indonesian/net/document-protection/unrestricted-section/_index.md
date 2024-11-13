@@ -2,27 +2,27 @@
 title: Bagian Tidak Terbatas Dalam Dokumen Word
 linktitle: Bagian Tidak Terbatas Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Buka kunci bagian tertentu di dokumen Word Anda menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk melindungi konten sensitif.
+description: Buka bagian tertentu dalam dokumen Word Anda menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk melindungi konten sensitif.
 type: docs
 weight: 10
 url: /id/net/document-protection/unrestricted-section/
 ---
 ## Perkenalan
 
-Hai! Siap terjun ke dunia Aspose.Words untuk .NET? Hari ini, kami membahas sesuatu yang sangat praktis: cara membuka kunci bagian tertentu di dokumen Word sambil menjaga bagian lain tetap terlindungi. Jika Anda pernah perlu melindungi beberapa bagian dokumen Anda namun membiarkan bagian lainnya terbuka untuk diedit, tutorial ini cocok untuk Anda. Mari kita mulai!
+Hai! Siap menyelami dunia Aspose.Words untuk .NET? Hari ini, kita akan membahas sesuatu yang sangat praktis: cara membuka kunci bagian tertentu dalam dokumen Word sambil tetap melindungi bagian lain. Jika Anda pernah perlu melindungi beberapa bagian dokumen Anda tetapi membiarkan bagian lain terbuka untuk diedit, tutorial ini cocok untuk Anda. Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita masuk ke seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita masuk ke inti pembahasan, pastikan Anda memiliki semua yang dibutuhkan:
 
--  Aspose.Words for .NET: Jika Anda belum melakukannya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Jika Anda belum melakukannya, Anda dapat[unduh disini](https://releases.aspose.com/words/net/).
 - Visual Studio: Atau IDE lain yang kompatibel dengan .NET.
-- Pemahaman Dasar C#: Sedikit pemahaman tentang C# akan membantu Anda memahami tutorial ini.
--  Lisensi Aspose: Ambil a[uji coba gratis](https://releases.aspose.com/) atau dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) Jika Anda membutuhkannya untuk pengujian.
+- Pemahaman Dasar C#: Sedikit pengetahuan tentang C# akan membantu Anda memahami tutorial ini.
+-  Lisensi Aspose: Ambil[uji coba gratis](https://releases.aspose.com/) atau dapatkan[lisensi sementara](https://purchase.aspose.com/temporary-license/) jika Anda memerlukannya untuk pengujian.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Sebelum memulai pengkodean, pastikan Anda telah mengimpor namespace yang diperlukan dalam proyek C# Anda:
+Sebelum Anda mulai membuat kode, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek C# Anda:
 
 ```csharp
 using System;
@@ -36,30 +36,30 @@ Sekarang, mari kita uraikan langkah demi langkah!
 
 ### Inisialisasi Direktori Dokumen Anda
 
-Hal pertama yang pertama, Anda perlu mengatur jalur ke direktori dokumen Anda. Di sinilah file Word Anda akan disimpan.
+Pertama-tama, Anda perlu mengatur jalur ke direktori dokumen Anda. Di sinilah file Word Anda akan disimpan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen Anda. Ini penting karena memastikan file Anda disimpan di lokasi yang benar.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen. Hal ini penting karena memastikan berkas Anda disimpan di lokasi yang benar.
 
 ### Buat Dokumen Baru
 
-Selanjutnya, kita akan membuat dokumen baru menggunakan Aspose.Words. Dokumen ini akan menjadi kanvas di mana kita akan menerapkan keajaiban kita.
+Selanjutnya, kita akan membuat dokumen baru menggunakan Aspose.Words. Dokumen ini akan menjadi kanvas tempat kita akan menerapkan keajaiban kita.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Itu`Document` kelas menginisialisasi dokumen baru, dan`DocumentBuilder` membantu kami dengan mudah menambahkan konten ke dokumen kami.
+Itu`Document` kelas menginisialisasi dokumen baru, dan`DocumentBuilder` membantu kita dengan mudah menambahkan konten ke dokumen kita.
 
-## Langkah 2: Sisipkan Bagian
+## Langkah 2: Masukkan Bagian
 
 ### Tambahkan Bagian yang Tidak Dilindungi
 
-Mari kita mulai dengan menambahkan bagian pertama, yang tetap tidak terlindungi.
+Mari kita mulai dengan menambahkan bagian pertama, yang akan tetap tidak dilindungi.
 
 ```csharp
 builder.Writeln("Section 1. Unprotected.");
@@ -69,20 +69,20 @@ Baris kode ini menambahkan teks "Bagian 1. Tidak dilindungi." ke dokumen. Sederh
 
 ### Tambahkan Bagian yang Dilindungi
 
-Sekarang, mari tambahkan bagian kedua dan masukkan pemisah bagian untuk memisahkannya dari bagian pertama.
+Sekarang, mari tambahkan bagian kedua dan sisipkan pemisah bagian untuk memisahkannya dari bagian pertama.
 
 ```csharp
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
- Itu`InsertBreak` metode menyisipkan hentian bagian secara terus-menerus, memungkinkan kita memiliki pengaturan berbeda untuk setiap bagian.
+Itu`InsertBreak` metode menyisipkan pemisah bagian berkelanjutan, yang memungkinkan kita memiliki pengaturan berbeda untuk setiap bagian.
 
 ## Langkah 3: Lindungi Dokumen
 
 ### Aktifkan Perlindungan Dokumen
 
- Untuk melindungi dokumen, kami akan menggunakan`Protect` metode. Metode ini memastikan bahwa hanya kolom formulir yang dapat diedit kecuali ditentukan lain.
+ Untuk melindungi dokumen, kita akan menggunakan`Protect` metode. Metode ini memastikan bahwa hanya kolom formulir yang dapat diedit kecuali ditentukan lain.
 
 ```csharp
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
@@ -90,27 +90,27 @@ doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
  Di sini, dokumen dilindungi dengan kata sandi, dan hanya kolom formulir yang dapat diedit. Ingatlah untuk mengganti`"password"` dengan kata sandi yang Anda inginkan.
 
-### Buka Proteksi Bagian Tertentu
+### Buka Perlindungan Bagian Tertentu
 
-Secara default, semua bagian dilindungi. Kita perlu mematikan perlindungan secara selektif untuk bagian pertama.
+Secara default, semua bagian dilindungi. Kita perlu menonaktifkan perlindungan secara selektif untuk bagian pertama.
 
 ```csharp
 doc.Sections[0].ProtectedForForms = false;
 ```
 
-Baris ini memastikan bahwa bagian pertama tetap tidak terlindungi sementara bagian dokumen lainnya diamankan.
+Baris ini memastikan bahwa bagian pertama tetap tidak terlindungi sementara sisa dokumen diamankan.
 
 ## Langkah 4: Simpan dan Muat Dokumen
 
 ### Simpan Dokumen
 
-Sekarang, saatnya menyimpan dokumen Anda dengan pengaturan proteksi yang diterapkan.
+Sekarang, saatnya menyimpan dokumen Anda dengan pengaturan perlindungan yang diterapkan.
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 ```
 
- Ini menyimpan dokumen di direktori tertentu dengan nama`DocumentProtection.UnrestrictedSection.docx`.
+ Ini menyimpan dokumen di direktori yang ditentukan dengan nama`DocumentProtection.UnrestrictedSection.docx`.
 
 ### Muat Dokumen
 
@@ -120,19 +120,19 @@ Terakhir, kami memuat dokumen untuk memverifikasi bahwa semuanya telah diatur de
 doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 ```
 
-Langkah ini memastikan bahwa dokumen disimpan dengan benar dan dapat dimuat ulang tanpa kehilangan pengaturan proteksi.
+Langkah ini memastikan bahwa dokumen disimpan dengan benar dan dapat dimuat ulang tanpa kehilangan pengaturan perlindungan.
 
 ## Kesimpulan
 
-Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda telah berhasil membuat dokumen Word dengan campuran bagian yang dilindungi dan tidak dilindungi menggunakan Aspose.Words untuk .NET. Metode ini sangat berguna ketika Anda perlu mengunci bagian tertentu dari dokumen dan membiarkan bagian lain dapat diedit.
+Nah, itu dia! Dengan mengikuti langkah-langkah ini, Anda telah berhasil membuat dokumen Word dengan campuran bagian yang dilindungi dan tidak dilindungi menggunakan Aspose.Words untuk .NET. Metode ini sangat berguna saat Anda perlu mengunci bagian-bagian tertentu dari dokumen sambil membiarkan bagian lain tetap dapat diedit.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bisakah saya melindungi lebih dari satu bagian?
-Ya, Anda dapat memproteksi dan membuka proteksi beberapa bagian secara selektif sesuai kebutuhan.
+Ya, Anda dapat secara selektif melindungi dan membuka perlindungan beberapa bagian sesuai kebutuhan.
 
-### Apakah mungkin mengubah jenis proteksi setelah menyimpan dokumen?
-Ya, Anda dapat membuka kembali dokumen dan mengubah pengaturan proteksi sesuai kebutuhan.
+### Apakah mungkin untuk mengubah jenis proteksi setelah menyimpan dokumen?
+Ya, Anda dapat membuka kembali dokumen dan mengubah pengaturan perlindungan sebagaimana diperlukan.
 
 ### Jenis perlindungan apa lagi yang tersedia di Aspose.Words?
  Aspose.Words mendukung beberapa jenis perlindungan termasuk`ReadOnly`, `Comments` , Dan`TrackedChanges`.
@@ -140,5 +140,5 @@ Ya, Anda dapat membuka kembali dokumen dan mengubah pengaturan proteksi sesuai k
 ### Bisakah saya melindungi dokumen tanpa kata sandi?
 Ya, Anda dapat melindungi dokumen tanpa menentukan kata sandi.
 
-### Bagaimana cara memeriksa apakah suatu bagian dilindungi?
+### Bagaimana saya dapat memeriksa apakah suatu bagian dilindungi?
  Anda dapat memeriksa`ProtectedForForms` properti suatu bagian untuk menentukan apakah bagian tersebut dilindungi.

@@ -41,7 +41,7 @@ public class DocumentCombination {
 
 ## Steg 2: Ladda källdokument
 
-Därefter måste du ladda källdokumenten som du vill kombinera. Du kan ladda flera dokument i separata instanser av`Document` klass.
+ Därefter måste du ladda källdokumenten som du vill kombinera. Du kan ladda flera dokument i separata instanser av`Document` klass.
 
 ```java
 // Ladda källdokument

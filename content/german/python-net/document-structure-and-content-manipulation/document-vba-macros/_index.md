@@ -1,7 +1,7 @@
 ---
 title: Erweiterte Automatisierung mit VBA-Makros in Word-Dokumenten freischalten
 linktitle: Erweiterte Automatisierung mit VBA-Makros in Word-Dokumenten freischalten
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Schalten Sie erweiterte Automatisierung in Word-Dokumenten mithilfe der Aspose.Words Python-API und VBA-Makros frei. Lernen Sie Schritt für Schritt mit Quellcode und FAQs. Steigern Sie jetzt Ihre Produktivität. Zugriff unter [Link].
 type: docs
 weight: 26
@@ -67,7 +67,7 @@ End Sub
 
 ## Effizienzsteigerung mit bedingter Logik
 
-Bei intelligenter Automatisierung werden Entscheidungen auf Grundlage des Dokumentinhalts getroffen. Mit Aspose.Words Python- und VBA-Makros können Sie bedingte Logik implementieren, um Antworten auf Grundlage vordefinierter Kriterien zu automatisieren.
+Bei intelligenter Automatisierung werden Entscheidungen auf Grundlage des Dokumentinhalts getroffen. Mit den Python- und VBA-Makros von Aspose.Words können Sie bedingte Logik implementieren, um Antworten auf Grundlage vordefinierter Kriterien zu automatisieren.
 
 ```vba
 Sub ApplyConditionalFormatting()

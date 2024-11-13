@@ -100,7 +100,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功清除了 Word 文件中的重複樣式。透過執行這些步驟，您可以保持文件整潔有序，使它們更易於管理且不易出現樣式問題。請記住，掌握任何工具的關鍵是練習，因此請不斷嘗試 Aspose.Words 並發現它提供的所有強大功能。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功清除了 Word 文件中的重複樣式。透過執行這些步驟，您可以保持文件整潔有序，使它們更易於管理且不易出現樣式問題。請記住，掌握任何工具的關鍵是練習，因此請不斷嘗試 Aspose.Words 並發現它提供的所有強大功能。
 
 ## 常見問題解答
 

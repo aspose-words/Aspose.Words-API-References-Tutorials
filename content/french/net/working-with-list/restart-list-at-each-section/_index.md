@@ -2,23 +2,23 @@
 title: Redémarrer la liste à chaque section
 linktitle: Redémarrer la liste à chaque section
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment redémarrer des listes dans chaque section des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide détaillé étape par étape pour gérer efficacement les listes.
+description: Découvrez comment redémarrer des listes à chaque section dans des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide détaillé étape par étape pour gérer efficacement les listes.
 type: docs
 weight: 10
 url: /fr/net/working-with-list/restart-list-at-each-section/
 ---
 ## Introduction
 
-Créer des documents structurés et bien organisés peut parfois donner l’impression de résoudre un casse-tête complexe. Une pièce de ce puzzle consiste à gérer efficacement les listes, en particulier lorsque vous souhaitez qu'elles redémarrent à chaque section. Avec Aspose.Words pour .NET, vous pouvez y parvenir de manière transparente. Voyons comment redémarrer des listes dans chaque section de vos documents Word à l'aide d'Aspose.Words pour .NET.
+Créer des documents structurés et bien organisés peut parfois ressembler à résoudre un casse-tête complexe. L'une des pièces de ce casse-tête consiste à gérer efficacement les listes, en particulier lorsque vous souhaitez qu'elles redémarrent à chaque section. Avec Aspose.Words pour .NET, vous pouvez y parvenir en toute transparence. Voyons comment vous pouvez redémarrer les listes à chaque section de vos documents Word à l'aide d'Aspose.Words pour .NET.
 
-## Conditions préalables
+## Prérequis
 
-Avant de commencer, assurez-vous d'avoir les éléments suivants :
+Avant de commencer, assurez-vous de disposer des éléments suivants :
 
-1.  Aspose.Words pour .NET : téléchargez et installez la dernière version à partir du[Aspose les versions](https://releases.aspose.com/words/net/) page.
+1.  Aspose.Words pour .NET : téléchargez et installez la dernière version à partir du[Sorties d'Aspose](https://releases.aspose.com/words/net/) page.
 2. Environnement .NET : configurez votre environnement de développement avec .NET installé.
-3. Compréhension de base de C# : Une connaissance du langage de programmation C# est recommandée.
-4.  Licence Aspose : Vous pouvez opter pour une[permis temporaire](https://purchase.aspose.com/temporary-license/) si vous n'en avez pas.
+3. Compréhension de base de C# : une connaissance du langage de programmation C# est recommandée.
+4.  Licence Aspose : Vous pouvez opter pour une[permis temporaire](https://purchase.aspose.com/temporary-license/) si vous n'en avez pas.
 
 ## Importer des espaces de noms
 
@@ -32,9 +32,9 @@ using Aspose.Words.Lists;
 
 Maintenant, décomposons le processus en plusieurs étapes pour le rendre facile à suivre.
 
-## Étape 1 : initialiser le document
+## Étape 1 : Initialiser le document
 
-Tout d’abord, vous devrez créer une nouvelle instance de document.
+Tout d’abord, vous devez créer une nouvelle instance de document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -49,16 +49,16 @@ Ensuite, ajoutez une liste numérotée au document. Cette liste suivra un format
 doc.Lists.Add(ListTemplate.NumberDefault);
 ```
 
-## Étape 3 : accéder à la liste et définir la propriété de redémarrage
+## Étape 3 : Accéder à la liste et définir la propriété de redémarrage
 
-Récupérez la liste que vous venez de créer et définissez son`IsRestartAtEachSection`propriété à`true`. Cela garantit que la liste redémarre la numérotation à chaque nouvelle section.
+Récupérez la liste que vous venez de créer et définissez-la`IsRestartAtEachSection`propriété à`true`Cela garantit que la liste redémarre la numérotation à chaque nouvelle section.
 
 ```csharp
 List list = doc.Lists[0];
 list.IsRestartAtEachSection = true;
 ```
 
-## Étape 4 : créer un générateur de documents et associer la liste
+## Étape 4 : Créer un générateur de documents et associer la liste
 
  Créer un`DocumentBuilder` pour insérer du contenu dans le document et l'associer à la liste.
 
@@ -69,7 +69,7 @@ builder.ListFormat.List = list;
 
 ## Étape 5 : ajouter des éléments de liste et insérer un saut de section
 
-Maintenant, ajoutez des éléments à la liste. Pour illustrer la fonctionnalité de redémarrage, nous insérerons un saut de section après un certain nombre d'éléments.
+Ajoutez maintenant des éléments à la liste. Pour illustrer la fonctionnalité de redémarrage, nous allons insérer un saut de section après un certain nombre d'éléments.
 
 ```csharp
 for (int i = 1; i < 45; i++)
@@ -81,32 +81,32 @@ for (int i = 1; i < 45; i++)
 }
 ```
 
-## Étape 6 : Enregistrez le document
+## Étape 6 : Enregistrer le document
 
-Enfin, enregistrez le document avec les options appropriées pour garantir sa conformité.
+Enfin, enregistrez le document avec les options appropriées pour garantir la conformité.
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
+doc.Save(dataDir + "WorkingWithList.RestartListAtEachSection.docx", options);		
 ```
 
 ## Conclusion
 
-Et voilà ! En suivant ces étapes, vous pouvez facilement redémarrer les listes dans chaque section de vos documents Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité est incroyablement utile pour créer des documents bien structurés nécessitant des sections distinctes avec leur propre numérotation de liste. Avec Aspose.Words, gérer de telles tâches devient un jeu d'enfant, vous permettant de vous concentrer sur la création de contenu de haute qualité.
+Et voilà ! En suivant ces étapes, vous pouvez facilement redémarrer des listes à chaque section de vos documents Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité est incroyablement utile pour créer des documents bien structurés qui nécessitent des sections séparées avec leur propre numérotation de liste. Avec Aspose.Words, la gestion de ces tâches devient un jeu d'enfant, vous permettant de vous concentrer sur la création de contenu de haute qualité.
 
 ## FAQ
 
-### Puis-je redémarrer les listes dans chaque section pour différents types de listes ?
-Oui, Aspose.Words for .NET vous permet de redémarrer différents types de listes, notamment les listes à puces et numérotées.
+### Puis-je redémarrer les listes à chaque section pour différents types de listes ?
+Oui, Aspose.Words pour .NET vous permet de redémarrer différents types de listes, y compris les listes à puces et numérotées.
 
-### Que faire si je souhaite personnaliser le format de numérotation ?
+### Que faire si je souhaite personnaliser le format de numérotation ?
  Vous pouvez personnaliser le format de numérotation en modifiant le`ListTemplate` propriété lors de la création de la liste.
 
-### Y a-t-il une limite au nombre d'éléments dans une liste ?
-Non, il n'y a pas de limite spécifique au nombre d'éléments que vous pouvez avoir dans une liste à l'aide d'Aspose.Words for .NET.
+### Existe-t-il une limite au nombre d’éléments dans une liste ?
+Non, il n'y a pas de limite spécifique au nombre d'éléments que vous pouvez avoir dans une liste en utilisant Aspose.Words pour .NET.
 
-### Puis-je utiliser cette fonctionnalité dans d’autres formats de documents comme le PDF ?
-Oui, vous pouvez utiliser Aspose.Words pour convertir des documents Word vers d'autres formats comme PDF tout en conservant la structure de la liste.
+### Puis-je utiliser cette fonctionnalité dans d’autres formats de documents comme PDF ?
+Oui, vous pouvez utiliser Aspose.Words pour convertir des documents Word en d'autres formats comme PDF tout en conservant la structure de la liste.
 
-### Comment puis-je obtenir un essai gratuit d’Aspose.Words pour .NET ?
- Vous pouvez obtenir un essai gratuit auprès du[Aspose les versions](https://releases.aspose.com/) page.
+### Comment puis-je obtenir un essai gratuit d'Aspose.Words pour .NET ?
+ Vous pouvez obtenir un essai gratuit à partir du[Sorties d'Aspose](https://releases.aspose.com/) page.

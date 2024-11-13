@@ -79,7 +79,7 @@ def add_content_to_document():
 
 ## 整合格式和样式
 
-要创建具有专业外观的文档，您可能需要对添加的内容应用格式和样式。 Aspose.Words for Python 提供了多种格式化选项，包括字体样式、颜色、对齐、缩进等。让我们看一个将格式应用于段落的示例：
+要创建具有专业外观的文档，您可能希望对添加的内容应用格式和样式。 Aspose.Words for Python 提供了多种格式化选项，包括字体样式、颜色、对齐、缩进等。让我们看一个将格式应用于段落的示例：
 
 ```python
 import asposewords
@@ -189,7 +189,7 @@ doc.save("output.docx")
 
 ### 7. 我可以使用 Aspose.Words for Python 将图像插入 Word 文档吗？
 
-当然可以！Aspose.Words for Python 支持将图像插入 Word 文档。您可以从本地文件或内存中添加图像、调整其大小以及将其放置在文档中。
+当然可以！Aspose.Words for Python 支持将图像插入 Word 文档。您可以从本地文件或内存中添加图像，调整其大小，并将它们放置在文档中。
 
 ### 8. Aspose.Words for Python 是否支持邮件合并以生成个性化文档？
 

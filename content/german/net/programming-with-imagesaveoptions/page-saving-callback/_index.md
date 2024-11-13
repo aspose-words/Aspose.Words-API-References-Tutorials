@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Laden Sie Ihr Dokument
 
-Als nächstes laden wir das zu verarbeitende Dokument. Stellen Sie sicher, dass sich Ihr Dokument („Rendering.docx“) im angegebenen Verzeichnis befindet.
+Als nächstes laden wir das Dokument, das Sie verarbeiten möchten. Stellen Sie sicher, dass sich Ihr Dokument („Rendering.docx“) im angegebenen Verzeichnis befindet.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

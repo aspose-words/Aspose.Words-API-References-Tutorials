@@ -2,27 +2,27 @@
 title: Masukkan Objek Ole Di Word Dengan Paket Ole
 linktitle: Masukkan Objek Ole Di Word Dengan Paket Ole
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan objek OLE di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci untuk menyematkan file dengan lancar.
+description: Pelajari cara menyisipkan objek OLE dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah terperinci kami untuk menyematkan file dengan mudah.
 type: docs
 weight: 10
 url: /id/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
 ## Perkenalan
 
-Jika Anda ingin menyematkan file ke dalam dokumen Word, Anda berada di tempat yang tepat. Baik itu file ZIP, lembar Excel, atau jenis file lainnya, menyematkannya langsung ke dokumen Word Anda bisa sangat berguna. Anggap saja seperti memiliki kompartemen rahasia di dokumen Anda tempat Anda dapat menyimpan segala macam harta karun. Dan hari ini, kita akan membahas cara melakukan ini menggunakan Aspose.Words untuk .NET. Siap menjadi ahli Word? Ayo selami!
+Jika Anda pernah ingin menyematkan berkas ke dalam dokumen Word, Anda berada di tempat yang tepat. Baik itu berkas ZIP, lembar Excel, atau jenis berkas lainnya, menyematkannya langsung ke dalam dokumen Word Anda bisa sangat berguna. Anggap saja seperti memiliki kompartemen rahasia di dalam dokumen Anda tempat Anda dapat menyimpan berbagai harta karun. Dan hari ini, kita akan membahas cara melakukannya menggunakan Aspose.Words untuk .NET. Siap menjadi ahli Word? Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki yang berikut ini:
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
 1. Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduh dari[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan .NET lainnya.
-3. Pemahaman Dasar C#: Anda tidak perlu menjadi seorang ahli, tetapi mengetahui cara menggunakan C# akan membantu.
+3. Pemahaman Dasar tentang C#: Anda tidak perlu menjadi seorang ahli, tetapi mengetahui cara menggunakan C# akan membantu.
 4. Direktori Dokumen: Folder tempat Anda dapat menyimpan dan mengambil dokumen.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, mari kita atur namespace kita. Anda perlu menyertakan namespace berikut dalam proyek Anda:
+Pertama-tama, mari kita atur namespace kita. Anda perlu menyertakan namespace berikut dalam proyek Anda:
 
 ```csharp
 using System;
@@ -31,11 +31,11 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Mari kita bagi menjadi langkah-langkah kecil, sehingga mudah untuk diikuti.
+Mari kita uraikan ini ke dalam langkah-langkah kecil, sehingga mudah diikuti.
 
 ## Langkah 1: Siapkan Dokumen Anda
 
-Bayangkan Anda seorang seniman dengan kanvas kosong. Pertama, kita membutuhkan kanvas kosong, yaitu dokumen Word kita. Inilah cara Anda mengaturnya:
+Bayangkan Anda seorang seniman dengan kanvas kosong. Pertama, kita perlu kanvas kosong, yaitu dokumen Word. Berikut cara mengaturnya:
 
 ```csharp
 // Jalur ke direktori dokumen Anda
@@ -48,17 +48,17 @@ Kode ini menginisialisasi dokumen Word baru dan menyiapkan DocumentBuilder, yang
 
 ## Langkah 2: Baca Objek Ole Anda
 
-Selanjutnya, mari kita baca file yang ingin Anda sematkan. Anggap saja ini seperti mengambil harta karun yang ingin Anda sembunyikan di kompartemen rahasia Anda:
+Selanjutnya, mari kita baca berkas yang ingin Anda sisipkan. Bayangkan ini seperti mengambil harta karun yang ingin Anda sembunyikan di kompartemen rahasia Anda:
 
 ```csharp
 byte[] bs = File.ReadAllBytes(dataDir + "Zip file.zip");
 ```
 
-Baris ini membaca semua byte dari file ZIP Anda dan menyimpannya dalam array byte.
+Baris ini membaca semua byte dari berkas ZIP Anda dan menyimpannya dalam array byte.
 
 ## Langkah 3: Masukkan Objek Ole
 
-Sekarang sampai pada bagian ajaibnya. Kami akan menyematkan file ke dalam dokumen Word kami:
+Sekarang tibalah bagian ajaibnya. Kita akan menyematkan berkas tersebut ke dalam dokumen Word kita:
 
 ```csharp
 using (Stream stream = new MemoryStream(bs))
@@ -70,35 +70,35 @@ using (Stream stream = new MemoryStream(bs))
 }
 ```
 
- Di sini, kita membuat aliran memori dari array byte dan menggunakan`InsertOleObject` metode untuk menyematkannya ke dalam dokumen. Kami juga mengatur nama file dan nama tampilan untuk objek yang disematkan.
+ Di sini, kita membuat aliran memori dari array byte dan menggunakan`InsertOleObject` metode untuk menanamkannya ke dalam dokumen. Kami juga menetapkan nama file dan nama tampilan untuk objek yang disematkan.
 
 ## Langkah 4: Simpan Dokumen Anda
 
-Terakhir, mari simpan karya kita:
+Terakhir, mari kita simpan karya agung kita:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-Ini menyimpan dokumen dengan file yang Anda sematkan di direktori yang ditentukan.
+Ini akan menyimpan dokumen dengan berkas yang tertanam dalam direktori yang ditentukan.
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil menyematkan objek OLE ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ini seperti menambahkan permata tersembunyi di dalam dokumen Anda yang dapat diungkapkan kapan saja. Teknik ini bisa sangat berguna untuk berbagai aplikasi, mulai dari dokumentasi teknis hingga laporan dinamis. 
+Nah, itu dia! Anda telah berhasil menyematkan objek OLE ke dalam dokumen Word menggunakan Aspose.Words for .NET. Ini seperti menambahkan permata tersembunyi di dalam dokumen Anda yang dapat disingkapkan kapan saja. Teknik ini dapat sangat berguna untuk berbagai aplikasi, mulai dari dokumentasi teknis hingga laporan dinamis. 
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya menyematkan jenis file lain menggunakan metode ini?
+### Bisakah saya menyematkan tipe berkas lain menggunakan metode ini?
 Ya, Anda dapat menyematkan berbagai jenis file seperti lembar Excel, PDF, dan gambar.
 
 ### Apakah saya memerlukan lisensi untuk Aspose.Words?
- Ya, Anda memerlukan lisensi yang valid. Anda bisa mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/) untuk evaluasi.
+ Ya, Anda memerlukan lisensi yang valid. Anda bisa mendapatkannya[lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk evaluasi.
 
-### Bagaimana cara menyesuaikan nama tampilan objek OLE?
- Anda dapat mengatur`DisplayName` properti dari`OlePackage` untuk menyesuaikannya.
+### Bagaimana saya dapat menyesuaikan nama tampilan objek OLE?
+ Anda dapat mengatur`DisplayName` milik`OlePackage` untuk menyesuaikannya.
 
 ### Apakah Aspose.Words kompatibel dengan .NET Core?
 Ya, Aspose.Words mendukung .NET Framework dan .NET Core.
 
 ### Bisakah saya mengedit objek OLE yang tertanam dalam dokumen Word?
-Tidak, Anda tidak bisa mengedit objek OLE langsung di dalam Word. Anda harus membukanya di aplikasi aslinya.
+Tidak, Anda tidak dapat mengedit objek OLE secara langsung di Word. Anda perlu membukanya di aplikasi aslinya.

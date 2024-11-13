@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Krok 1: Inicializujte Document a DocumentBuilder
 
- Začněme inicializací`Document`a`DocumentBuilder` objektů. The`DocumentBuilder` je pomocná třída, která zjednodušuje vytváření dokumentů a manipulaci s nimi.
+ Začněme inicializací`Document` a`DocumentBuilder` objektů. The`DocumentBuilder` je pomocná třída, která zjednodušuje vytváření dokumentů a manipulaci s nimi.
 
 ```csharp
 // Cesta k adresáři dokumentů.

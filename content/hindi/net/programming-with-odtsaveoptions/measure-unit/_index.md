@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## चरण 2: वर्ड दस्तावेज़ लोड करें
 
- इसके बाद, आपको उस वर्ड डॉक्यूमेंट को लोड करना होगा जिसे आप कनवर्ट करना चाहते हैं।`Document` Aspose.Words से क्लास.
+ इसके बाद, आपको उस वर्ड डॉक्यूमेंट को लोड करना होगा जिसे आप कनवर्ट करना चाहते हैं। यह काम करने के लिए`Document` Aspose.Words से क्लास.
 
 ```csharp
 // Word दस्तावेज़ लोड करें
@@ -53,14 +53,14 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## चरण 3: माप की इकाई कॉन्फ़िगर करें
 
- अब, ODT रूपांतरण के लिए माप की इकाई को कॉन्फ़िगर करते हैं। यहीं पर जादू होता है। हम सेट अप करेंगे`OdtSaveOptions` माप की इकाई के रूप में इंच का उपयोग करना।
+ अब, आइए ODT रूपांतरण के लिए माप की इकाई को कॉन्फ़िगर करें। यहीं पर जादू होता है। हम सेट अप करेंगे`OdtSaveOptions` माप की इकाई के रूप में इंच का उपयोग करना।
 
 ```csharp
 // "माप की इकाई" सुविधा के साथ बैकअप विकल्पों का कॉन्फ़िगरेशन
 OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
 ```
 
- इस उदाहरण में, हम माप की इकाई को इंच में सेट कर रहे हैं। आप अन्य इकाइयाँ भी चुन सकते हैं जैसे कि`OdtSaveMeasureUnit.Centimeters` या`OdtSaveMeasureUnit.Points` आपकी आवश्यकताओं के आधार पर.
+ इस उदाहरण में, हम माप की इकाई को इंच में सेट कर रहे हैं। आप अन्य इकाइयाँ भी चुन सकते हैं जैसे`OdtSaveMeasureUnit.Centimeters` या`OdtSaveMeasureUnit.Points` आपकी आवश्यकताओं के आधार पर.
 
 ## चरण 4: दस्तावेज़ को ODT में बदलें
 

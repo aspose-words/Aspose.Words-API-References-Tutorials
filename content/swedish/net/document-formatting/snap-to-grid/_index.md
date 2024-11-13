@@ -55,7 +55,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Initiera Document and DocumentBuilder
 
- Därefter måste du skapa ett nytt Word-dokument och initiera`DocumentBuilder`klass, vilket hjälper till att konstruera dokumentet.
+ Därefter måste du skapa ett nytt Word-dokument och initiera`DocumentBuilder` klass, vilket hjälper till att konstruera dokumentet.
 
 Skapa ett nytt dokument
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-- `Document doc = new Document();` skapar ett nytt Word-dokument.
+- `Document doc = new Document();`skapar ett nytt Word-dokument.
 - `DocumentBuilder builder = new DocumentBuilder(doc);` initierar DocumentBuilder med det skapade dokumentet.
 
 ## Steg 3: Aktivera Snap to Grid för stycken
@@ -104,7 +104,7 @@ Ställa in Font Snap to Grid
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-- `par.Runs[0].Font.SnapToGrid = true;`ser till att teckensnittet som används i stycket är i linje med rutnätet.
+- `par.Runs[0].Font.SnapToGrid = true;` ser till att teckensnittet som används i stycket är i linje med rutnätet.
 
 ## Steg 6: Spara dokumentet
 
@@ -137,4 +137,4 @@ Ja, även om du kan använda en tillfällig licens för utvärdering, rekommende
 Nej, att aktivera Snap to Grid påverkar inte dokumentets prestanda nämnvärt.
 
 ### Var kan jag hitta mer information om Aspose.Words för .NET?
- Besök[dokumentation](https://reference.aspose.com/words/net/)för detaljerad information och exempel.
+ Besök[dokumentation](https://reference.aspose.com/words/net/) för detaljerad information och exempel.

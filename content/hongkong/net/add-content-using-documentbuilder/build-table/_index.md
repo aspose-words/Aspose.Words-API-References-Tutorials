@@ -115,7 +115,7 @@ doc.Save("YourDirectoryPath/AddContentUsingDocumentBuilder.BuildTable.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了表格。本教學將引導您完成從初始化文件到保存最終產品的每個步驟。有了 Aspose.Words，就有無限的可能性。無論您是建立報告、發票或任何其他文檔，您現在都可以根據自己的喜好設定表格格式和自訂表格。
+現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了表格。本教學將引導您完成從初始化文件到保存最終產品的每個步驟。有了 Aspose.Words，就有無限的可能性。無論您是建立報告、發票或任何其他文檔，您現在都可以根據自己的喜好設定表格格式和自訂表格。
 
 請記住，熟能生巧。因此，請毫不猶豫地嘗試不同的表格格式和樣式。快樂編碼！
 

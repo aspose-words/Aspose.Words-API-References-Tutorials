@@ -1,287 +1,188 @@
 ---
-title: Formatting Tables and Table Styles in Aspose.Words for Java
+title: Formatting Tables and Table Styles
 linktitle: Formatting Tables and Table Styles
 second_title: Aspose.Words Java Document Processing API
-description: Learn how to format tables and apply table styles in Aspose.Words for Java. Explore step-by-step guides with source code for effective table formatting. Enhance your document layout with Aspose.Words.
+description: Learn how to format tables and apply styles using Aspose.Words for Java. This step-by-step guide covers setting borders, shading cells, and applying table styles.
 type: docs
 weight: 17
 url: /java/document-conversion-and-export/formatting-tables-and-table-styles/
 ---
 
-## Introduction to Formatting Tables and Table Styles in Aspose.Words for Java
+## Introduction
 
-Tables play a crucial role in structuring and organizing information in documents. Aspose.Words for Java provides powerful features for formatting tables and applying table styles to enhance the visual appeal of your documents. In this step-by-step guide, we'll explore various aspects of formatting tables and applying table styles using Aspose.Words for Java.
+When it comes to document formatting, tables play a crucial role in organizing and presenting data clearly. If you’re working with Java and Aspose.Words, you have powerful tools at your disposal for creating and formatting tables in your documents. Whether you're designing a simple table or applying advanced styles, Aspose.Words for Java offers a range of features to help you achieve professional-looking results.
+
+In this guide, we’ll walk you through the process of formatting tables and applying table styles using Aspose.Words for Java. You’ll learn how to set table borders, apply cell shading, and use table styles to enhance the appearance of your documents. By the end, you’ll have the skills to create well-formatted tables that make your data stand out.
 
 ## Prerequisites
 
-Before we dive into the details, make sure you have the Aspose.Words for Java library integrated into your project. You can download it from the Aspose website: [Download Aspose.Words for Java](https://releases.aspose.com/words/java/).
+Before we get started, there are a few things you need to have in place:
 
-## Get Distance Between Table and Surrounding Text
+1. Java Development Kit (JDK): Ensure you have JDK 8 or later installed. Aspose.Words for Java requires a compatible JDK to run correctly.
+2. Integrated Development Environment (IDE): An IDE such as IntelliJ IDEA or Eclipse will help you manage your Java projects and streamline your development process.
+3. Aspose.Words for Java Library: Download the latest version of Aspose.Words for Java [here](https://releases.aspose.com/words/java/) and include it in your project.
+4. Sample Code: We’ll be using some sample code snippets, so make sure you have a basic understanding of Java programming and how to integrate libraries into your project.
 
-To begin, let's explore how to retrieve the distance between a table and the surrounding text in a document.
+## Import Packages
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-System.out.println("Distance Top: " + table.getDistanceTop());
-System.out.println("Distance Bottom: " + table.getDistanceBottom());
-System.out.println("Distance Right: " + table.getDistanceRight());
-System.out.println("Distance Left: " + table.getDistanceLeft());
-```
-
-## Apply Outline Border to a Table
-
-You can align a table to the center of the page, clear existing borders, and set a custom outline border with this code:
+To work with Aspose.Words for Java, you need to import the relevant packages into your project. These packages provide the classes and methods necessary for manipulating and formatting documents.
 
 ```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAlignment(TableAlignment.CENTER);
-table.clearBorders();
-table.setBorder(BorderType.LEFT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.RIGHT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.TOP, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
+import com.aspose.words.*;
 ```
 
-## Build a Table with Borders
+This import statement gives you access to all the essential classes required for creating and formatting tables in your documents.
 
-This code snippet demonstrates how to create a table and set borders for both the table and its cells:
+## Step 1: Formatting Tables
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.clearBorders();
-table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
-```
+Formatting tables in Aspose.Words for Java involves setting borders, shading cells, and applying various formatting options. Here’s how you can do it:
 
-## Modify Row Formatting
-
-Learn how to modify the formatting of a specific row within a table:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Row firstRow = table.getFirstRow();
-firstRow.getRowFormat().getBorders().setLineStyle(LineStyle.NONE);
-firstRow.getRowFormat().setHeightRule(HeightRule.AUTO);
-firstRow.getRowFormat().setAllowBreakAcrossPages(true);
-```
-
-## Apply Row Formatting
-
-This example demonstrates how to apply formatting to an entire row in a table:
+### Load the Document
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+### Create and Format the Table
+
+```java
 Table table = builder.startTable();
 builder.insertCell();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
 
-## Set Cell Padding
-
-Explore how to set padding for individual cells in a table:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
-builder.insertCell();
-builder.getCellFormat().setPaddings(30.0, 50.0, 30.0, 50.0);
-builder.writeln("I'm a wonderfully formatted cell.");
-```
-
-## Modify Cell Formatting
-
-Discover how to modify the formatting of a specific cell within a table:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-firstCell.getCellFormat().setWidth(30.0);
-firstCell.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
-firstCell.getCellFormat().getShading().setForegroundPatternColor(Color.GREEN);
-```
-
-## Format Table and Cell with Different Borders
-
-Learn how to set different borders for individual cells in a table:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-// Set the table borders
+// Set the borders for the entire table.
 table.setBorders(LineStyle.SINGLE, 2.0, Color.BLACK);
-// Set cell shading for individual cells
+        
+// Set the cell shading for this cell.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.RED);
-// Add content to the cells
 builder.writeln("Cell #1");
+
 builder.insertCell();
+        
+// Specify a different cell shading for the second cell.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.GREEN);
 builder.writeln("Cell #2");
-// Clear cell formatting for the next row
+
+builder.endRow();
+```
+
+### Customize Cell Borders
+
+```java
+// Clear the cell formatting from previous operations.
 builder.getCellFormat().clearFormatting();
-// Create larger borders for the first cell of this row
+
+builder.insertCell();
+
+// Create larger borders for the first cell of this row.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getBottom().setLineWidth(4.0);
 builder.writeln("Cell #3");
+
 builder.insertCell();
 builder.getCellFormat().clearFormatting();
 builder.writeln("Cell #4");
+        
+doc.save("FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-## Set Table Title and Description
+### Explanation
 
-Add a title and description to your table:
+In this example:
+- Set Borders: We set the borders of the entire table to a single line style with a thickness of 2.0 points.
+- Cell Shading: The first cell is shaded red, and the second cell is shaded green. This helps differentiate between cells visually.
+- Cell Borders: For the third cell, we create thicker borders to highlight it differently from the rest.
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setTitle("Test title");
-table.setDescription("Test description");
-```
+## Step 2: Applying Table Styles
 
-## Step 10: Allow Cell Spacing
+Table styles in Aspose.Words for Java allow you to apply predefined formatting options to tables, making it easier to achieve a consistent look. Here’s how to apply a style to your table:
 
-Allow cell spacing and set its value for a table:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAllowCellSpacing(true);
-table.setCellSpacing(2.0);
-```
-
-## Step 11: Build a Table with Style
-
-Create a table with a predefined style:
+### Create the Document and Table
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
 Table table = builder.startTable();
+        
+// We must insert at least one row first before setting any table formatting.
+builder.insertCell();
+```
+
+### Apply Table Style
+
+```java
+// Set the table style based on a unique style identifier.
 table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
+        
+// Apply which features should be formatted by the style.
 table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
+table.autoFit(AutoFitBehavior.AUTO_FIT_TO_CONTENTS);
+```
+
+### Add Table Data
+
+```java
 builder.writeln("Item");
 builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
 builder.writeln("Quantity (kg)");
-```
+builder.endRow();
 
-## Step 12: Expand Formatting on Cells and Rows from Style
-
-Learn how to expand table styles to apply formatting to cells and rows:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-Color cellShadingBefore = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-doc.expandTableStylesToDirectFormatting();
-Color cellShadingAfter = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-```
-
-## Step 13: Create a Table Style
-
-Create a custom table style with specific formatting:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
-table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
-builder.writeln("Item");
-builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
-builder.writeln("Quantity (kg)");
-```
-
-## Step 14: Define Conditional Formatting
-
-Apply conditional formatting to rows in a table:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-TableStyle tableStyle = (TableStyle) doc.getStyles().add(StyleType.TABLE, "MyTableStyle1");
-tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatternColor(Color.yellow);
-table.setStyle(tableStyle);
-```
-
-## Step 15: Set TableCell Formatting
-
-Set specific formatting for individual cells:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
+builder.writeln("Apples");
 builder.insertCell();
-CellFormat cellFormat = builder.getCellFormat();
-cellFormat.setWidth(250.0);
-cellFormat.setLeftPadding(30.0);
-cellFormat.setRightPadding(30.0);
-cellFormat.setTopPadding(30.0);
-cellFormat.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted cell.");
+builder.writeln("20");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Bananas");
+builder.insertCell();
+builder.writeln("40");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Carrots");
+builder.insertCell();
+builder.writeln("50");
+builder.endRow();
+
+doc.save("BuildTableWithStyle.docx");
 ```
 
-## Step 16: Set TableRow Formatting
+### Explanation
 
-Apply formatting to entire rows in a table:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
+In this example:
+- Set Table Style: We apply a predefined style (`MEDIUM_SHADING_1_ACCENT_1`) to the table. This style includes formatting for different parts of the table.
+- Style Options: We specify that the first column, row bands, and first row should be formatted according to the style options.
+- AutoFit: We use `AUTO_FIT_TO_CONTENTS` to ensure the table adjusts its size based on the content.
 
 ## Conclusion
 
-Aspose.Words for Java empowers you to format tables and apply table styles with precision. From modifying individual cell formatting to creating custom table styles, you have the tools to make your documents visually appealing and organized.
+And there you have it! You’ve successfully formatted tables and applied styles using Aspose.Words for Java. With these techniques, you can create tables that are not only functional but also visually appealing. Formatting tables effectively can greatly enhance the readability and professional appearance of your documents.
 
-## FAQ's
+Aspose.Words for Java is a robust tool that offers extensive features for document manipulation. By mastering table formatting and styles, you’re one step closer to harnessing the full power of this library.
 
-### How do I download Aspose.Words for Java?
+## FAQs
 
-You can download Aspose.Words for Java from the Aspose website: [Download Aspose.Words for Java](https://releases.aspose.com/words/java/).
+### 1. Can I use custom table styles not included in the default options?
 
-### Can I apply different borders to individual cells within a table?
+Yes, you can define and apply custom styles to your tables using Aspose.Words for Java. Check the [documentation](https://reference.aspose.com/words/java/) for more details on creating custom styles.
 
-Yes, you can set different borders for individual cells within a table using Aspose.Words for Java, as demonstrated in this guide.
+### 2. How can I apply conditional formatting to tables?
 
-### What is the purpose of setting a table title and description?
+Aspose.Words for Java allows you to programmatically adjust table formatting based on conditions. This can be done by checking specific criteria in your code and applying formatting accordingly.
 
-Setting a table title and description enhances the accessibility and organization of your document, making it easier for readers and assistive technologies to understand the content.
+### 3. Can I format merged cells in a table?
 
-### How can I apply conditional formatting to specific rows in a table?
+Yes, you can format merged cells just like regular cells. Ensure you apply formatting after merging cells to see the changes reflected.
 
-You can apply conditional formatting to specific rows in a table by defining custom table styles with conditional formatting rules, as shown in this guide.
+### 4. Is it possible to adjust the table layout dynamically?
 
-### Where can I find more documentation and resources for Aspose.Words for Java?
+Yes, you can adjust the table layout dynamically by modifying cell sizes, table width, and other properties based on the content or user input.
 
-For comprehensive documentation and additional resources, please visit the Aspose.Words for Java documentation: [Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).
+### 5. Where can I get more information on table formatting?
+
+For more detailed examples and options, visit the [Aspose.Words API documentation](https://reference.aspose.com/words/java/).

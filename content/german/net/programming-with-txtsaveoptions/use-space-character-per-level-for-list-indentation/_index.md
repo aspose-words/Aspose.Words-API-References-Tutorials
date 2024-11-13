@@ -1,6 +1,6 @@
 ---
-title: Leerzeichen pro Ebene zur Listeneinrückung verwenden
-linktitle: Leerzeichen pro Ebene zur Listeneinrückung verwenden
+title: Verwenden Sie pro Ebene ein Leerzeichen für die Listeneinrückung
+linktitle: Verwenden Sie pro Ebene ein Leerzeichen für die Listeneinrückung
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mehrstufige Listen mit Leerzeicheneinrückungen in Aspose.Words für .NET erstellen. Schritt-für-Schritt-Anleitung zur präzisen Dokumentformatierung.
 type: docs
@@ -83,7 +83,7 @@ Speichern Sie abschließend Ihr Dokument mit den konfigurierten Optionen. Dadurc
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- Dieser Codeausschnitt speichert das Dokument in dem in`dataDir` mit dem Dateinamen`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`. In der gespeicherten Datei ist die Liste entsprechend Ihren Einrückungseinstellungen formatiert.
+ Dieser Codeausschnitt speichert das Dokument im angegebenen Pfad in`dataDir` mit dem Dateinamen`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`. In der gespeicherten Datei wird die Liste entsprechend Ihren Einrückungseinstellungen formatiert sein.
 
 ## Abschluss
 
@@ -104,4 +104,4 @@ Wenn Sie diese Schritte befolgen, haben Sie erfolgreich ein Dokument mit mehrstu
 Ja, Sie können die Listenformatierung und Einrückungseinstellungen jederzeit ändern, bevor Sie das Dokument speichern.
 
 ### Welche anderen Dokumentformate unterstützen Einstellungen für Listeneinrückungen?
-Neben Textdateien können bei Verwendung von Aspose.Words Einstellungen für Listeneinrückungen auch auf andere Formate wie DOCX, PDF und HTML angewendet werden.
+Neben Textdateien können Listeneinrückungseinstellungen bei Verwendung von Aspose.Words auch auf andere Formate wie DOCX, PDF und HTML angewendet werden.

@@ -84,7 +84,7 @@ doc.Save(dataDir + "ConvertedDocument.pdf");
 
 ## 結論
 
-現在你就得到它了！使用 Aspose.Words for .NET 將 Word 文件轉換為 PDF 就是這麼簡單。只需幾行程式碼，您就可以將 Word 檔案轉換為通用的 PDF。無論您是要自動化文件工作流程還是只需要快速轉換，Aspose.Words for .NET 都能滿足您的需求。 
+現在你就擁有了！使用 Aspose.Words for .NET 將 Word 文件轉換為 PDF 就是這麼簡單。只需幾行程式碼，您就可以將 Word 檔案轉換為通用的 PDF。無論您是要自動化文件工作流程還是只需要快速轉換，Aspose.Words for .NET 都能滿足您的需求。 
 
 請隨意探索 Aspose.Words 的更多功能，以增強您的文件處理能力。快樂編碼！
 

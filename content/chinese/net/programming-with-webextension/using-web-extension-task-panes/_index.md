@@ -22,7 +22,7 @@ url: /zh/net/programming-with-webextension/using-web-extension-task-panes/
 
 ## 导入命名空间
 
-在开始编码之前，请确保已在项目中导入以下命名空间：
+在开始编码之前，请确保您已在项目中导入以下命名空间：
 
 ```csharp
 using Aspose.Words;
@@ -35,7 +35,7 @@ using Aspose.Words.WebExtensions;
 
 ### 步骤 1：设置文档目录
 
-首先，我们需要设置文档目录的路径。这是保存 Word 文档的位置。
+首先，我们需要设置文档目录的路径。这是保存 Word 文档的地方。
 
 ```csharp
 //文档目录的路径。

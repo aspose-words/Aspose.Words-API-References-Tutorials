@@ -1,5 +1,5 @@
 ---
-title: 使用 Documentbuilder 添加内容
+title: 使用 DocumentBuilder 添加内容
 linktitle: 使用 Documentbuilder 添加内容
 second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 DocumentBuilder 和 Aspose.Words for .NET 将内容添加到 Word 文档。带有详细代码示例的实践教程。
@@ -26,7 +26,7 @@ url: /zh/net/add-content-using-documentbuilder/
 | [在 Word 文档中插入超链接](./insert-hyperlink/) | 通过我们的分步指南学习如何使用 Aspose.Words for .NET 将超链接插入 Word 文档。非常适合自动执行文档创建任务。 |
 | [在 Word 文档中插入目录](./insert-table-of-contents/) | 了解如何使用 Aspose.Words for .NET 在 Word 中插入目录。按照我们的分步指南进行无缝文档导航。 |
 | [在 Word 文档中插入内嵌图像](./insert-inline-image/) | 了解如何使用 Aspose.Words for .NET 将内联图像插入 Word 文档。包含代码示例和常见问题解答的分步指南。 |
-| [在 Word 文档中插入浮动图像](./insert-floating-image/) | 通过本详细的分步指南学习如何使用 Aspose.Words for .NET 在 Word 文档中插入浮动图像。非常适合增强您的文档。 |
+| [在 Word 文档中插入浮动图像](./insert-floating-image/) | 通过本详细分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中插入浮动图像。非常适合增强您的文档。 |
 | [在 Word 文档中插入段落](./insert-paragraph/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入段落。按照我们的详细教程进行无缝文档操作。 |
 | [在 Word 文档中插入 TCField](./insert-tcfield/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入 TC 字段。按照我们的分步指南实现无缝文档自动化。 |
 | [Word 文档中的光标位置](./cursor-position/) | 通过这份详细的分步指南，了解如何使用 Aspose.Words for .NET 管理 Word 文档中的光标位置。非常适合 .NET 开发人员。 |

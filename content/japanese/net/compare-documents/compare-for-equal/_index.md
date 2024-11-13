@@ -2,7 +2,7 @@
 title: Word 文書で等しいかどうかを比較する
 linktitle: Word 文書で等しいかどうかを比較する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して 2 つの Word 文書が等しいかどうかを比較する方法を学びます。このステップ バイ ステップ ガイドに従って、文書が同一であることを確認します。
+description: Aspose.Words for .NET を使用して 2 つの Word 文書を比較し、等しいかどうかを確認する方法を学びます。このステップ バイ ステップ ガイドに従って、文書が同一であることを確認します。
 type: docs
 weight: 10
 url: /ja/net/compare-documents/compare-for-equal/
@@ -63,7 +63,7 @@ Document docBClone = docB.Clone();
 docA.Compare(docBClone, "user", DateTime.Now);
 ```
 
-## ステップ5: 改訂版を確認する
+## ステップ5: 修正を確認する
 
 書類を比較した後、`Revisions`コレクションを比較して、違いがあるかどうかを確認します。コレクションが空の場合、ドキュメントは同一です。
 

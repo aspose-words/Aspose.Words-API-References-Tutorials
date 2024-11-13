@@ -13,7 +13,7 @@ url: /zh/net/programming-with-table-styles-and-formatting/set-table-title-and-de
 
 ## 先决条件
 
-在讨论细节之前，让我们先确保您已准备好一切所需。以下是您的清单：
+在讨论细节之前，让我们先确保你已准备好一切所需。以下是你的清单：
 
 1.  Aspose.Words for .NET：如果你还没有，你需要得到它。你可以从[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：Visual Studio 或任何其他 C# IDE。

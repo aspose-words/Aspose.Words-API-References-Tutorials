@@ -106,7 +106,7 @@ Und da haben Sie es! Sie haben erfolgreich eine formatierte Tabelle in einem Wor
  Sie können die Textausrichtung ändern, indem Sie die`ParagraphFormat.Alignment` Eigentum der`DocumentBuilder` Objekt.
 
 ### Kann ich mit Aspose.Words für .NET Zellen in einer Tabelle zusammenführen?
- Ja, Sie können Zellen verbinden mit dem`CellFormat.HorizontalMerge`Und`CellFormat.VerticalMerge` Eigenschaften.
+ Ja, Sie können Zellen verbinden mit dem`CellFormat.HorizontalMerge` Und`CellFormat.VerticalMerge` Eigenschaften.
 
 ### Gibt es eine Möglichkeit, die Tabelle mit vordefinierten Stilen zu gestalten?
  Ja, Aspose.Words für .NET ermöglicht Ihnen die Anwendung vordefinierter Tabellenstile mithilfe der`Table.Style` Eigentum.

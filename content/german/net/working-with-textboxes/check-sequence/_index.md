@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Diese Zeilen importieren die Kernnamespaces zum Erstellen und Bearbeiten von Word-Dokumenten und Formen wie Textfeldern.
+Diese Zeilen importieren die Kernnamespaces zum Erstellen und Bearbeiten von Word-Dokumenten und Formen, beispielsweise Textfeldern.
 
 ## Schritt 1: Neues Dokument erstellen
 
@@ -51,7 +51,7 @@ Als Nächstes müssen wir dem Dokument ein Textfeld hinzufügen. Textfelder sind
 
 ### Erstellen eines Textfelds
 
-So erstellen Sie ein Textfeld und fügen es zu Ihrem Dokument hinzu:
+So erstellen Sie ein Textfeld und fügen es Ihrem Dokument hinzu:
 
 ```csharp
 Shape shape = new Shape(doc, ShapeType.TextBox);
@@ -89,7 +89,7 @@ if (textBox.Next == null && textBox.Previous != null)
 - `textBox.Next`: Zeigt auf das nächste Textfeld in der Sequenz.
 - `textBox.Previous`: Zeigt auf das vorherige Textfeld in der Sequenz.
 
- Dieser Code überprüft die Eigenschaften`Next`Und`Previous` um die Position des Textfelds in der Sequenz zu bestimmen.
+ Dieser Code überprüft die Eigenschaften`Next` Und`Previous` um die Position des Textfelds in der Sequenz zu bestimmen.
 
 ## Schritt 4: Textfelder verknüpfen (optional)
 
@@ -151,4 +151,4 @@ Ja, Textfelder können in beliebiger Reihenfolge verknüpft werden, auch in nich
 Ja, Sie können den Text in jedem Textfeld unabhängig gestalten, was Ihnen Flexibilität bei der Gestaltung und Formatierung gibt.
 
 ### Wo finde ich weitere Ressourcen zum Arbeiten mit Textfeldern in Aspose.Words?
- Weitere Informationen finden Sie im[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/)Und[Support-Forum](https://forum.aspose.com/c/words/8).
+ Weitere Informationen finden Sie im[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) Und[Support-Forum](https://forum.aspose.com/c/words/8).

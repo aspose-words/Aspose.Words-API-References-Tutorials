@@ -22,7 +22,7 @@ pip install aspose-words
 
 ## 基本的な文書処理
 
-まず、Aspose.Words を使用してドキュメントを読み込みます。
+まず、Aspose.Words を使用してドキュメントを読み込みましょう。
 
 ```python
 import aspose.words as aw
@@ -47,7 +47,7 @@ protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
 protection.set_editing_groups(["Editors"])
 ```
 
-## 文書の内容を暗号化する
+## 文書コンテンツの暗号化
 
 ドキュメントの内容を暗号化するとセキュリティが強化されます。
 
@@ -98,7 +98,7 @@ Aspose.Words for Python を使用すると、高度な技術を使用してド�
 
 ### Aspose.Words はどのような暗号化オプションを提供していますか?
 
-Aspose.Words は、ドキュメントのコンテンツを保護するために AES_256 などの暗号化オプションを提供します。
+Aspose.Words は、ドキュメントの内容を保護するために AES_256 などの暗号化オプションを提供します。
 
 ### デジタル署名は文書のセキュリティをどのように強化するのでしょうか?
 

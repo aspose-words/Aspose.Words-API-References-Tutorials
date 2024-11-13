@@ -8,12 +8,12 @@ weight: 50
 url: /tr/net/working-with-comments/
 ---
 
-Bu eğitimlerde Aspose.Words for .NET kullanarak Word belgelerindeki yorumlarla Kelime İşleme'nin çeşitli yönlerini öğreneceksiniz. Belgelere nasıl yorum ekleyeceğinizi, yorum yanıtlarını belirli bir metne nasıl sabitleyeceğinizi, yorum yanıtlarını nasıl ekleyip kaldıracağınızı ve yorumları ve yanıtlarını nasıl çözeceğinizi keşfedeceksiniz. Her bir eğitim, tam kaynak kodunu içeren adım adım bir kılavuz sunarak Aspose.Words for .NET kullanarak Word belgelerinizde işbirliğini ve geri bildirim yönetimini geliştirmenize olanak tanır.
+Bu eğitimlerde, Aspose.Words for .NET kullanarak Word belgelerinde yorumlarla Word İşlemenin çeşitli yönlerini öğreneceksiniz. Belgelere yorum eklemeyi, yorum yanıtlarını belirli bir metne bağlamayı, yorum yanıtlarını eklemeyi ve kaldırmayı ve yorumları ve yanıtlarını çözmeyi keşfedeceksiniz. Her eğitim, tam kaynak koduyla adım adım bir kılavuz sunarak, Aspose.Words for .NET kullanarak Word belgelerinizde iş birliğini ve geri bildirim yönetimini geliştirmenizi sağlar.
 
- ## Öğreticiler
+ ## Eğitimler
 | Başlık | Tanım |
 | --- | --- |
-| [Yorum Ekle](./add-comments/) | Rehberimizi kullanarak Aspose.Words for .NET'i kullanarak Word belgelerinize nasıl yorum ekleyeceğinizi öğrenin. Belge işbirliği sürecinizi zahmetsizce geliştirin. |
-| [Bağlantı Yorumu](./anchor-comment/) | Aspose.Words for .NET kullanarak Word belgelerine nasıl bağlantı yorumları ekleyeceğinizi öğrenin. Verimli belge işbirliği için adım adım kılavuzumuzu izleyin. |
-| [Ekle Yorumu Kaldır Yanıtla](./add-remove-comment-reply/) | Aspose.Words for .NET kullanarak Word belgelerinde yorum yanıtlarını nasıl ekleyip kaldıracağınızı öğrenin. Bu adım adım kılavuzla belge işbirliğinizi geliştirin. |
-| [Yorum Çözüldü ve Cevaplar](./comment-resolved-and-replies/) | Aspose.Words for .NET ile Word belgelerindeki yorumları çözümlemeyi ve yanıtlamayı otomatikleştirin. Adım adım kılavuz dahildir. |
+| [Yorum Ekle](./add-comments/) | Aspose.Words for .NET'i kullanarak Word belgelerinize yorum eklemeyi rehberimizle öğrenin. Belge işbirliği sürecinizi zahmetsizce geliştirin. |
+| [Çapa Yorumu](./anchor-comment/) | Aspose.Words for .NET kullanarak Word belgelerine bağlantı yorumlarının nasıl ekleneceğini öğrenin. Verimli belge işbirliği için adım adım kılavuzumuzu izleyin. |
+| [Ekle Kaldır Yorum Cevapla](./add-remove-comment-reply/) | Aspose.Words for .NET kullanarak Word belgelerinde yorum yanıtlarının nasıl ekleneceğini ve kaldırılacağını öğrenin. Bu adım adım kılavuzla belge iş birliğinizi geliştirin. |
+| [Yorum Çözüldü Ve Cevaplar](./comment-resolved-and-replies/) | Aspose.Words for .NET ile Word belgelerindeki yorumları çözmeyi ve yanıtlamayı otomatikleştirin. Adım adım kılavuz dahildir. |

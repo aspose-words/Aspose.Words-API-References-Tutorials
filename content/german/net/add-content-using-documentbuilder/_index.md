@@ -1,5 +1,5 @@
 ---
-title: Inhalte mit Documentbuilder hinzufügen
+title: Hinzufügen von Inhalten mit DocumentBuilder
 linktitle: Inhalte mit Documentbuilder hinzufügen
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit DocumentBuilder und Aspose.Words für .NET Inhalt zu Ihren Word-Dokumenten hinzufügen. Praktische Tutorials mit detaillierten Codebeispielen.
@@ -35,5 +35,5 @@ url: /de/net/add-content-using-documentbuilder/
 | [In Word-Dokument zu Kopf- und Fußzeilen verschieben](./move-to-headers-footers/) | Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET zu Kopf- und Fußzeilen in einem Word-Dokument wechseln. Verbessern Sie Ihre Fähigkeiten zur Dokumenterstellung. |
 | [In Word-Dokument zu Absatz verschieben](./move-to-paragraph/) | Mit diesem umfassenden Handbuch können Sie mit Aspose.Words für .NET mühelos zu einem bestimmten Absatz in Word-Dokumenten wechseln. Perfekt für Entwickler, die ihre Dokument-Workflows optimieren möchten. |
 | [In Tabellenzelle im Word-Dokument verschieben](./move-to-table-cell/) | Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET zu einer Tabellenzelle in einem Word-Dokument wechseln. Perfekt für Entwickler. |
-| [Im Word-Dokument ans Lesezeichenende verschieben](./move-to-bookmark-end/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET zum Ende eines Lesezeichens in einem Word-Dokument wechseln. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung zur präzisen Dokumentbearbeitung. |
+| [An das Lesezeichenende im Word-Dokument verschieben](./move-to-bookmark-end/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET zum Ende eines Lesezeichens in einem Word-Dokument wechseln. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung zur präzisen Dokumentbearbeitung. |
 | [In Seriendruckfeld im Word-Dokument verschieben](./move-to-merge-field/) | Erfahren Sie in unserer umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET zu einem Seriendruckfeld in einem Word-Dokument wechseln. Perfekt für .NET-Entwickler. |

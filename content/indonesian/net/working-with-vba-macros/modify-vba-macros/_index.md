@@ -1,26 +1,26 @@
 ---
-title: Ubah Makro Vba Dari Dokumen Word
-linktitle: Ubah Makro Vba Dari Dokumen Word
+title: Memodifikasi Makro VBA pada Dokumen Word
+linktitle: Memodifikasi Makro VBA pada Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara memodifikasi makro VBA di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci untuk otomatisasi dokumen yang lancar!
+description: Pelajari cara memodifikasi makro VBA dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan terperinci kami, langkah demi langkah untuk otomatisasi dokumen yang lancar!
 type: docs
 weight: 10
 url: /id/net/working-with-vba-macros/modify-vba-macros/
 ---
 ## Perkenalan
 
-Halo, rekan pembuat kode dan penggemar otomatisasi dokumen! Apakah Anda siap untuk membawa permainan dokumen Word Anda ke level berikutnya? Hari ini, kita menyelami dunia makro VBA (Visual Basic for Applications) yang menakjubkan di dokumen Word. Secara khusus, kita akan mempelajari cara memodifikasi makro VBA yang ada menggunakan Aspose.Words untuk .NET. Pustaka yang kuat ini memudahkan untuk mengotomatiskan tugas, menyesuaikan dokumen, dan bahkan mengubah makro yang mengganggu tersebut. Baik Anda ingin memperbarui makro atau hanya ingin tahu tentang prosesnya, tutorial ini siap membantu Anda. Jadi, mari kita mulai!
+Halo, rekan-rekan pembuat kode dan penggemar otomatisasi dokumen! Apakah Anda siap untuk membawa permainan dokumen Word Anda ke tingkat berikutnya? Hari ini, kita akan menyelami dunia makro VBA (Visual Basic for Applications) yang menarik dalam dokumen Word. Secara khusus, kita akan menjelajahi cara memodifikasi makro VBA yang ada menggunakan Aspose.Words untuk .NET. Pustaka yang hebat ini memudahkan untuk mengotomatiskan tugas, menyesuaikan dokumen, dan bahkan mengubah makro yang mengganggu tersebut. Apakah Anda ingin memperbarui makro atau hanya ingin tahu tentang prosesnya, tutorial ini akan membantu Anda. Jadi, mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita beralih ke kode, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita masuk ke kode, mari pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Perpustakaan Aspose.Words for .NET: Pastikan Anda memiliki Aspose.Words for .NET versi terbaru. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
+1.  Pustaka Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru Aspose.Words untuk .NET. Anda dapat[unduh disini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan .NET seperti Visual Studio sangat penting untuk menulis dan menguji kode Anda.
-3. Pengetahuan C# Dasar: Pemahaman dasar tentang C# akan membantu Anda mengikuti cuplikan kode.
-4.  Contoh Dokumen Word: Miliki a[Dokumen kata](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) dengan makro VBA yang sudah siap. Ini akan menjadi subjek pengujian kami untuk memodifikasi makro.
+3. Pengetahuan Dasar C#: Pemahaman dasar tentang C# akan membantu Anda mengikuti cuplikan kode.
+4.  Contoh Dokumen Word: Memiliki[Dokumen kata](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) dengan makro VBA yang sudah ada. Ini akan menjadi subjek pengujian untuk memodifikasi makro.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Untuk menggunakan fitur Aspose.Words, Anda perlu mengimpor namespace yang diperlukan. Ini termasuk kelas dan metode untuk menangani dokumen Word dan proyek VBA.
 
@@ -31,25 +31,25 @@ using Aspose.Words;
 using Aspose.Words.Vba;
 ```
 
-Namespace ini akan menyediakan semua alat yang kita perlukan untuk bekerja dengan dokumen Word dan makro VBA.
+Ruang nama ini akan menyediakan semua alat yang kita perlukan untuk bekerja dengan dokumen Word dan makro VBA.
 
 ## Langkah 1: Menyiapkan Direktori Dokumen Anda
 
-Pertama, kita perlu menentukan jalur ke direktori dokumen Anda. Direktori ini akan menjadi lokasi penyimpanan dokumen Word Anda dan tempat kami menyimpan dokumen yang telah dimodifikasi.
+Pertama, kita perlu menentukan jalur ke direktori dokumen Anda. Direktori ini akan menjadi lokasi penyimpanan dokumen Word Anda dan tempat kita menyimpan dokumen yang telah dimodifikasi.
 
-### Mendefinisikan Jalan
+### Menentukan Jalur
 
-Siapkan jalur ke direktori Anda seperti ini:
+Atur jalur ke direktori Anda seperti ini:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya di mana dokumen Word Anda berada. Direktori ini akan menjadi ruang kerja kita untuk tutorial.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat dokumen Word Anda berada. Direktori ini akan menjadi ruang kerja kita untuk tutorial ini.
 
 ## Langkah 2: Memuat Dokumen Word
 
-Setelah direktori kami diatur, langkah selanjutnya adalah memuat dokumen Word yang berisi makro VBA yang ingin Anda modifikasi. Dokumen ini akan menjadi sumber modifikasi kami.
+Setelah direktori kita siap, langkah selanjutnya adalah memuat dokumen Word yang berisi makro VBA yang ingin Anda ubah. Dokumen ini akan menjadi sumber modifikasi kita.
 
 ### Memuat Dokumen
 
@@ -63,11 +63,11 @@ Document doc = new Document(dataDir + "VBA project.docm");
 
 ## Langkah 3: Mengakses Proyek VBA
 
-Sekarang setelah dokumen kita dimuat, langkah selanjutnya adalah mengakses proyek VBA di dalam dokumen. Proyek VBA berisi semua makro dan modul yang dapat kita modifikasi.
+Setelah dokumen kita dimuat, langkah selanjutnya adalah mengakses proyek VBA di dalam dokumen tersebut. Proyek VBA berisi semua makro dan modul yang dapat kita modifikasi.
 
 ### Mendapatkan Proyek VBA
 
-Mari akses proyek VBA seperti ini:
+Mari mengakses proyek VBA seperti ini:
 
 ```csharp
 VbaProject project = doc.VbaProject;
@@ -77,7 +77,7 @@ VbaProject project = doc.VbaProject;
 
 ## Langkah 4: Memodifikasi Makro VBA
 
-Dengan akses ke proyek VBA, kini kita dapat memodifikasi makro VBA yang ada. Dalam contoh ini, kita akan mengubah kode sumber modul pertama dalam proyek.
+Dengan akses ke proyek VBA, kita sekarang dapat mengubah makro VBA yang ada. Dalam contoh ini, kita akan mengubah kode sumber modul pertama dalam proyek.
 
 ### Mengubah Kode Makro
 
@@ -88,13 +88,13 @@ const string newSourceCode = "Sub TestChange()\nMsgBox \"Source code changed!\"\
 project.Modules[0].SourceCode = newSourceCode;
 ```
 
-Di baris ini:
-- Kami mendefinisikan kode sumber makro baru sebagai string konstan. Kode ini menampilkan kotak pesan yang mengatakan, "Kode sumber diubah!"
--  Kami kemudian mengatur`SourceCode` properti modul pertama dalam proyek ke kode baru.
+Dalam baris berikut:
+- Kami mendefinisikan kode sumber makro baru sebagai string konstan. Kode ini menampilkan kotak pesan yang mengatakan, "Kode sumber berubah!"
+-  Kemudian kami mengatur`SourceCode` properti modul pertama dalam proyek ke kode baru.
 
 ## Langkah 5: Menyimpan Dokumen yang Dimodifikasi
 
-Setelah memodifikasi makro VBA, langkah terakhir adalah menyimpan dokumen. Hal ini memastikan semua perubahan Anda dipertahankan dan kode makro baru disimpan dalam dokumen.
+Setelah memodifikasi makro VBA, langkah terakhir adalah menyimpan dokumen. Ini memastikan semua perubahan Anda dipertahankan dan kode makro baru disimpan dalam dokumen.
 
 ### Menyimpan Dokumen
 
@@ -108,25 +108,25 @@ Baris ini menyimpan dokumen dengan makro VBA yang dimodifikasi sebagai "WorkingW
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil memodifikasi makro VBA di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup semuanya mulai dari memuat dokumen Anda dan mengakses proyek VBA hingga mengubah kode makro dan menyimpan dokumen yang dimodifikasi. Dengan Aspose.Words, Anda dapat dengan mudah mengotomatiskan tugas, menyesuaikan dokumen, dan bahkan bermain-main dengan makro VBA untuk memenuhi kebutuhan Anda.
+Nah, itu dia! Anda telah berhasil memodifikasi makro VBA dalam dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup semuanya, mulai dari memuat dokumen dan mengakses proyek VBA hingga mengubah kode makro dan menyimpan dokumen yang dimodifikasi. Dengan Aspose.Words, Anda dapat dengan mudah mengotomatiskan tugas, menyesuaikan dokumen, dan bahkan bermain-main dengan makro VBA sesuai kebutuhan Anda.
 
- Jika Anda ingin menjelajah lebih jauh,[dokumentasi API](https://reference.aspose.com/words/net/) adalah sumber daya yang luar biasa. Dan jika Anda menemui hambatan, itu[forum dukungan](https://forum.aspose.com/c/words/8) selalu ada untuk membantu Anda.
+ Jika Anda ingin menjelajah lebih jauh,[Dokumentasi API](https://reference.aspose.com/words/net/) adalah sumber daya yang fantastis. Dan jika Anda pernah mengalami kendala,[forum dukungan](https://forum.aspose.com/c/words/8) selalu ada untuk membantu Anda.
 
-Selamat membuat kode, dan ingat, tidak ada batasnya dalam mengotomatisasi dokumen Word Anda!
+Selamat membuat kode, dan ingat, langit adalah batasnya dalam hal mengotomatisasi dokumen Word Anda!
 
-## FAQ
+## Tanya Jawab Umum
 
 ### Apa itu Aspose.Words untuk .NET?  
-Aspose.Words untuk .NET adalah perpustakaan komprehensif yang memungkinkan pengembang membuat, mengedit, dan memanipulasi dokumen Word dalam aplikasi .NET. Ini sempurna untuk mengotomatiskan alur kerja dokumen, termasuk bekerja dengan makro VBA.
+Aspose.Words untuk .NET adalah pustaka lengkap yang memungkinkan pengembang membuat, mengedit, dan memanipulasi dokumen Word dalam aplikasi .NET. Pustaka ini sempurna untuk mengotomatiskan alur kerja dokumen, termasuk bekerja dengan makro VBA.
 
-### Bisakah saya memodifikasi makro VBA di dokumen Word menggunakan Aspose.Words?  
-Ya, Aspose.Words menyediakan fungsionalitas untuk mengakses dan memodifikasi makro VBA di dokumen Word. Anda dapat mengubah kode makro, menambahkan modul baru, dan lainnya.
+### Bisakah saya memodifikasi makro VBA dalam dokumen Word menggunakan Aspose.Words?  
+Ya, Aspose.Words menyediakan fungsionalitas untuk mengakses dan mengubah makro VBA dalam dokumen Word. Anda dapat mengubah kode makro, menambahkan modul baru, dan banyak lagi.
 
-### Bagaimana cara menguji makro VBA saya yang telah dimodifikasi?  
-Untuk menguji makro VBA Anda yang dimodifikasi, buka dokumen Word yang disimpan di Microsoft Word, buka tab Pengembang, dan jalankan makro. Anda juga dapat men-debugnya langsung di editor VBA.
+### Bagaimana cara menguji makro VBA saya yang dimodifikasi?  
+Untuk menguji makro VBA yang dimodifikasi, buka dokumen Word yang tersimpan di Microsoft Word, buka tab Pengembang, dan jalankan makro tersebut. Anda juga dapat men-debug makro tersebut langsung di editor VBA.
 
 ### Apa yang terjadi jika saya menyimpan dokumen tanpa mengaktifkan makro?  
-Jika Anda menyimpan dokumen Word dengan makro VBA tanpa mengaktifkannya, makro tersebut tidak akan berjalan. Pastikan untuk menyimpan dokumen dalam format yang mendukung makro (.docm) dan mengaktifkan makro di pengaturan Word.
+Jika Anda menyimpan dokumen Word dengan makro VBA tanpa mengaktifkannya, makro tersebut tidak akan berjalan. Pastikan untuk menyimpan dokumen dalam format yang mendukung makro (.docm) dan mengaktifkan makro dalam pengaturan Word.
 
 ### Di mana saya dapat membeli Aspose.Words untuk .NET?  
  Anda dapat membeli Aspose.Words untuk .NET dari[halaman pembelian](https://purchase.aspose.com/buy).

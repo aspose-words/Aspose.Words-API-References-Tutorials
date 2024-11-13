@@ -9,33 +9,33 @@ url: /id/net/programming-with-document-options-and-settings/show-grammatical-and
 ---
 ## Perkenalan
 
-Pernahkah Anda tanpa lelah menyisir dokumen untuk menemukan setiap kesalahan tata bahasa dan ejaan? Ini seperti memainkan permainan "Di mana Waldo" yang tiada akhir, bukan? Nah, jangan khawatir lagi! Dengan Aspose.Words untuk .NET, Anda dapat mengotomatiskan proses dan menghemat banyak waktu dan kerumitan. Mari selami bagaimana Anda dapat mengaktifkan tampilan kesalahan tata bahasa dan ejaan di dokumen Word Anda menggunakan alat yang bagus ini.
+Pernahkah Anda merasa lelah menyisir dokumen untuk menemukan setiap kesalahan tata bahasa dan ejaan yang kecil? Ini seperti memainkan permainan "Mana Waldo" yang tiada habisnya, bukan? Nah, jangan khawatir lagi! Dengan Aspose.Words untuk .NET, Anda dapat mengotomatiskan prosesnya dan menghemat banyak waktu dan kerepotan. Mari kita bahas cara mengaktifkan tampilan kesalahan tata bahasa dan ejaan di dokumen Word Anda menggunakan alat praktis ini.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita mulai, mari pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Aspose.Words untuk .NET: Unduh dan instal perpustakaan dari[Di Sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Unduh dan instal pustaka dari[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang mendukung .NET.
-3. Pengetahuan Dasar C#: Anda harus familiar dengan konsep dasar pemrograman C#.
+3. Pengetahuan Dasar C#: Anda harus terbiasa dengan konsep dasar pemrograman C#.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk memulai, Anda perlu mengimpor namespace yang diperlukan. Ini akan memastikan bahwa kode Anda dapat mengakses semua fitur perpustakaan Aspose.Words.
+Untuk memulai, Anda perlu mengimpor namespace yang diperlukan. Ini akan memastikan bahwa kode Anda dapat mengakses semua fitur pustaka Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 ```
 
-Mari kita uraikan proses menampilkan kesalahan tata bahasa dan ejaan di dokumen Word Anda langkah demi langkah. Setiap langkah akan memiliki judul dan penjelasan rinci.
+Mari kita bahas proses menampilkan kesalahan tata bahasa dan ejaan dalam dokumen Word Anda langkah demi langkah. Setiap langkah akan memiliki judul dan penjelasan terperinci.
 
 ## Langkah 1: Siapkan Proyek Anda
 
- Sebelum kita mendalami kodenya, pastikan proyek Anda sudah disiapkan dengan benar. Buka IDE Anda dan buat proyek .NET baru. Tambahkan referensi ke perpustakaan Aspose.Words. Jika Anda belum mendownloadnya, Anda bisa mendapatkannya dari[Di Sini](https://releases.aspose.com/words/net/).
+ Sebelum kita menyelami kodenya, pastikan proyek Anda telah disiapkan dengan benar. Buka IDE Anda dan buat proyek .NET baru. Tambahkan referensi ke pustaka Aspose.Words. Jika Anda belum mengunduhnya, Anda bisa mendapatkannya dari[Di Sini](https://releases.aspose.com/words/net/).
 
 ## Langkah 2: Tentukan Direktori Dokumen
 
-Hal pertama yang pertama, Anda perlu menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda berada.
+Pertama-tama, Anda perlu menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda berada.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -46,48 +46,48 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 3: Muat Dokumen Anda
 
-Selanjutnya, Anda perlu memuat dokumen yang ingin Anda proses. Aspose.Words membuat ini menjadi sangat sederhana.
+Selanjutnya, Anda perlu memuat dokumen yang ingin Anda proses. Aspose.Words membuat ini sangat mudah.
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Di Sini,`Document.docx` adalah nama file yang ingin Anda periksa kesalahan tata bahasa dan ejaannya. Pastikan file ini ada di direktori yang Anda tentukan.
+ Di Sini,`Document.docx` adalah nama berkas yang ingin Anda periksa kesalahan tata bahasa dan ejaannya. Pastikan berkas ini ada di direktori yang Anda tentukan.
 
 ## Langkah 4: Aktifkan Tampilan Kesalahan Tata Bahasa dan Ejaan
 
-Sekarang sampai pada bagian yang menyenangkan! Anda dapat mengaktifkan tampilan kesalahan tata bahasa dan ejaan hanya dengan beberapa baris kode.
+Sekarang tibalah bagian yang menyenangkan! Anda dapat mengaktifkan tampilan kesalahan tata bahasa dan ejaan hanya dengan beberapa baris kode.
 
 ```csharp
 doc.ShowGrammaticalErrors = true;
 doc.ShowSpellingErrors = true;
 ```
 
-Properti ini memberi tahu Aspose.Words untuk menyorot kesalahan tata bahasa dan ejaan apa pun dalam dokumen, seperti cara Word melakukannya.
+Properti ini memberitahu Aspose.Words untuk menyorot setiap kesalahan tata bahasa dan ejaan dalam dokumen, seperti yang dilakukan Word.
 
 ## Langkah 5: Simpan Dokumen yang Dimodifikasi
 
-Terakhir, Anda perlu menyimpan dokumen setelah mengaktifkan tampilan kesalahan. Ini akan membuat file baru dengan perubahan yang Anda buat.
+Terakhir, Anda perlu menyimpan dokumen setelah mengaktifkan tampilan kesalahan. Ini akan membuat berkas baru dengan perubahan yang Anda buat.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpellingErrors.docx");
 ```
 
-Ini akan menyimpan dokumen yang diubah dengan nama baru, memastikan Anda tidak menimpa file asli. Anda sekarang dapat membuka file baru ini untuk melihat semua kesalahan tata bahasa dan ejaan yang disorot.
+Ini akan menyimpan dokumen yang dimodifikasi dengan nama baru, memastikan Anda tidak menimpa berkas asli. Kini Anda dapat membuka berkas baru ini untuk melihat semua kesalahan tata bahasa dan ejaan yang disorot.
 
 ## Kesimpulan
 
-Dan itu dia! Hanya dalam beberapa langkah mudah, Anda telah mempelajari cara mengotomatiskan proses menampilkan kesalahan tata bahasa dan ejaan dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ini tidak hanya menghemat waktu Anda tetapi juga memastikan dokumen Anda bebas kesalahan dan profesional.
+Nah, itu dia! Hanya dalam beberapa langkah mudah, Anda telah mempelajari cara mengotomatiskan proses menampilkan kesalahan tata bahasa dan ejaan dalam dokumen Word menggunakan Aspose.Words for .NET. Ini tidak hanya menghemat waktu Anda, tetapi juga memastikan dokumen Anda bebas kesalahan dan profesional.
 
- Omong-omong, jika Anda belum mencoba Aspose.Words untuk .NET, Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/) . Jika Anda perlu membeli lisensi, Anda dapat melakukannya[Di Sini](https://purchase.aspose.com/buy) Dan jika Anda membutuhkan dukungan, jangan ragu untuk mengunjungi mereka[forum](https://forum.aspose.com/c/words/8).
+ Ngomong-ngomong, jika Anda belum mencoba Aspose.Words untuk .NET, Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/) Jika Anda perlu membeli lisensi, Anda dapat melakukannya[Di Sini](https://purchase.aspose.com/buy)Dan jika Anda membutuhkan dukungan, jangan ragu untuk mengunjungi mereka[forum](https://forum.aspose.com/c/words/8).
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
-Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram.
+Aspose.Words untuk .NET adalah pustaka hebat yang memungkinkan pengembang untuk membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram.
 
-### Bisakah saya menggunakan Aspose.Words untuk .NET di proyek saya yang sudah ada?
-Sangat! Aspose.Words terintegrasi secara mulus dengan proyek .NET Anda.
+### Dapatkah saya menggunakan Aspose.Words untuk .NET dalam proyek saya yang sudah ada?
+Tentu saja! Aspose.Words terintegrasi dengan lancar dengan proyek .NET Anda.
 
 ### Bagaimana cara menginstal Aspose.Words untuk .NET?
  Anda dapat mengunduh perpustakaan dari[situs web](https://releases.aspose.com/words/net/) dan menambahkannya ke proyek Anda sebagai referensi.
@@ -95,5 +95,5 @@ Sangat! Aspose.Words terintegrasi secara mulus dengan proyek .NET Anda.
 ### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words untuk .NET?
  Ya, Anda bisa mendapatkan uji coba gratis dari[Di Sini](https://releases.aspose.com/).
 
-### Di mana saya dapat menemukan dokumentasi Aspose.Words untuk .NET?
- Dokumentasi tersedia[Di Sini](https://reference.aspose.com/words/net/).
+### Di mana saya dapat menemukan dokumentasi untuk Aspose.Words untuk .NET?
+ Dokumentasinya tersedia[Di Sini](https://reference.aspose.com/words/net/).

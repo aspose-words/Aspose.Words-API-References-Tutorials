@@ -59,7 +59,7 @@ Jetzt konvertieren wir alle WENN-Felder im Dokument in Text. WENN-Felder sind be
 doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f.Unlink());
 ```
 
-Dieser Codeausschnitt findet alle WENN-Felder im Dokument und wandelt sie in einfachen Text um.
+Dieser Codeausschnitt findet alle WENN-Felder im Dokument und konvertiert sie in einfachen Text.
 
 ## Schritt 4: Speichern Sie das Dokument
 

@@ -30,7 +30,7 @@ using Aspose.Words.Drawing;
 
 ## ステップ1: プロジェクトを設定する
 
-図形の挿入を開始する前に、プロジェクトを設定し、Aspose.Words for .NET ライブラリを追加する必要があります。
+図形の挿入を開始する前に、プロジェクトをセットアップし、Aspose.Words for .NET ライブラリを追加する必要があります。
 
 1. 新しいプロジェクトを作成する: Visual Studio を開き、新しい C# コンソール アプリケーション プロジェクトを作成します。
 2. Aspose.Words for .NET を追加します。NuGet パッケージ マネージャーを使用して Aspose.Words for .NET ライブラリをインストールします。

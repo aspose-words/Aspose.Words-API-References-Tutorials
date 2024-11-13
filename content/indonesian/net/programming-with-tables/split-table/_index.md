@@ -2,26 +2,26 @@
 title: Tabel Terpisah
 linktitle: Tabel Terpisah
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membagi tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah kami membuat pengelolaan meja menjadi mudah dan efisien.
+description: Pelajari cara membagi tabel dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah kami membuat pengelolaan tabel menjadi mudah dan efisien.
 type: docs
 weight: 10
 url: /id/net/programming-with-tables/split-table/
 ---
 ## Perkenalan
 
-Pernahkah Anda menemukan diri Anda bekerja dengan tabel besar di dokumen Word dan berharap dapat membaginya menjadi dua tabel yang lebih kecil dan lebih mudah dikelola? Nah, hari ini, kami akan mendalami bagaimana Anda dapat mencapai hal ini menggunakan Aspose.Words untuk .NET. Baik Anda berurusan dengan tabel data yang luas atau struktur dokumen yang kompleks, pemisahan tabel dapat membantu meningkatkan keterbacaan dan pengorganisasian. Mari jelajahi proses langkah demi langkah untuk membagi tabel menggunakan Aspose.Words untuk .NET.
+Pernahkah Anda bekerja dengan tabel besar dalam dokumen Word dan berharap dapat membaginya menjadi dua tabel yang lebih kecil dan lebih mudah dikelola? Nah, hari ini, kita akan membahas secara mendalam bagaimana Anda dapat melakukannya menggunakan Aspose.Words untuk .NET. Baik Anda menangani tabel data yang ekstensif atau struktur dokumen yang kompleks, membagi tabel dapat membantu meningkatkan keterbacaan dan pengaturan. Mari kita telusuri proses langkah demi langkah untuk membagi tabel menggunakan Aspose.Words untuk .NET.
 
 ## Prasyarat
 
-Sebelum kita masuk ke tutorial, pastikan Anda memiliki yang berikut:
+Sebelum kita masuk ke tutorial, pastikan Anda memiliki hal berikut:
 
-1.  Aspose.Words for .NET Library: Pastikan Anda telah mengunduh dan menginstal perpustakaan Aspose.Words for .NET. Anda bisa mendapatkannya dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
+1.  Pustaka Aspose.Words untuk .NET: Pastikan Anda telah mengunduh dan memasang pustaka Aspose.Words untuk .NET. Anda bisa mendapatkannya dari[Aspose merilis halaman](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Siapkan lingkungan pengembangan dengan dukungan kerangka .NET, seperti Visual Studio.
 3. Contoh Dokumen: Siapkan dokumen Word (`Tables.docx`) dengan setidaknya satu tabel untuk menerapkan operasi pemisahan.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Pertama, impor namespace yang diperlukan ke proyek Anda. Ini memungkinkan Anda untuk mengakses kelas dan metode yang disediakan oleh Aspose.Words.
+Pertama, impor namespace yang diperlukan ke proyek Anda. Ini memungkinkan Anda mengakses kelas dan metode yang disediakan oleh Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -39,25 +39,25 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Langkah 2: Identifikasi Tabel yang akan Dibagi
+## Langkah 2: Identifikasi Tabel yang Akan Dibagi
 
-Selanjutnya, identifikasi dan ambil tabel yang ingin Anda bagi. Dalam contoh ini, kami akan menargetkan tabel pertama dalam dokumen.
+Berikutnya, identifikasi dan ambil tabel yang ingin Anda bagi. Dalam contoh ini, kita akan menargetkan tabel pertama dalam dokumen.
 
 ```csharp
 Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Langkah 3: Pilih Baris yang akan Dibagi
+## Langkah 3: Pilih Baris untuk Dipisah
 
-Tentukan baris tempat Anda ingin membagi tabel. Di sini, kami membagi tabel di baris ketiga (inklusif).
+Tentukan baris tempat Anda ingin membagi tabel. Di sini, kita membagi tabel di baris ketiga (inklusif).
 
 ```csharp
 Row row = firstTable.Rows[2];
 ```
 
-## Langkah 4: Buat Kontainer Tabel Baru
+## Langkah 4: Buat Wadah Tabel Baru
 
-Buat wadah tabel baru untuk menampung baris-baris yang akan dipindahkan dari tabel asli.
+Buat wadah tabel baru untuk menampung baris yang akan dipindahkan dari tabel asli.
 
 ```csharp
 Table table = (Table)firstTable.Clone(false);
@@ -71,9 +71,9 @@ Sisipkan wadah tabel baru tepat setelah tabel asli dalam dokumen.
 firstTable.ParentNode.InsertAfter(table, firstTable);
 ```
 
-## Langkah 6: Tambahkan Paragraf Penyangga
+## Langkah 6: Tambahkan Paragraf Buffer
 
-Tambahkan paragraf penyangga di antara kedua tabel untuk memastikan keduanya tetap terpisah.
+Tambahkan paragraf penyangga antara dua tabel untuk memastikan keduanya tetap terpisah.
 
 ```csharp
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
@@ -81,7 +81,7 @@ firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
 
 ## Langkah 7: Pindahkan Baris ke Tabel Baru
 
-Pindahkan baris dari tabel asli ke wadah tabel baru. Perulangan ini berlanjut hingga baris tertentu (inklusif) dipindahkan.
+Pindahkan baris dari tabel asli ke wadah tabel baru. Perulangan ini berlanjut hingga baris yang ditentukan (inklusif) dipindahkan.
 
 ```csharp
 Row currentRow;
@@ -102,21 +102,21 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 
 ## Kesimpulan
 
-Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah membagi tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Pendekatan ini membantu Anda mengelola tabel besar dengan lebih efektif, meningkatkan keterbacaan dan pengorganisasian dokumen Anda. Cobalah dan lihat bagaimana ini menyederhanakan pekerjaan Anda dengan tabel di dokumen Word.
+Nah, itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah membagi tabel dalam dokumen Word menggunakan Aspose.Words for .NET. Pendekatan ini membantu Anda mengelola tabel besar dengan lebih efektif, meningkatkan keterbacaan dan pengaturan dokumen Anda. Cobalah dan lihat bagaimana pendekatan ini menyederhanakan pekerjaan Anda dengan tabel dalam dokumen Word.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bisakah saya membagi tabel menjadi beberapa baris?
 Ya, Anda dapat membagi tabel menjadi beberapa baris dengan mengulangi proses untuk setiap titik pemisahan.
 
-### Apa yang terjadi dengan pemformatan tabel asli?
-Tabel baru mewarisi format tabel asli. Perubahan pemformatan spesifik apa pun dapat diterapkan ke tabel baru sesuai kebutuhan.
+### Apa yang terjadi pada format tabel asli?
+Tabel baru mewarisi format tabel asli. Setiap perubahan format tertentu dapat diterapkan ke tabel baru sesuai kebutuhan.
 
-### Apakah mungkin untuk menggabungkan kembali tabel?
-Ya, Anda bisa menggabungkan tabel dengan memindahkan baris dari satu tabel ke tabel lainnya menggunakan metode serupa.
+### Bisakah tabel-tabel digabungkan kembali?
+Ya, Anda dapat menggabungkan tabel dengan memindahkan baris dari satu tabel ke tabel lainnya menggunakan metode yang serupa.
 
 ### Apakah metode ini berfungsi dengan tabel bersarang?
-Ya, Aspose.Words untuk .NET juga mendukung operasi pada tabel bertumpuk.
+Ya, Aspose.Words untuk .NET juga mendukung operasi pada tabel bersarang.
 
-### Bisakah saya mengotomatiskan proses ini untuk banyak dokumen?
-Sangat! Anda dapat membuat skrip atau aplikasi untuk mengotomatiskan proses pemisahan tabel untuk beberapa dokumen.
+### Bisakah saya mengotomatiskan proses ini untuk beberapa dokumen?
+Tentu saja! Anda dapat membuat skrip atau aplikasi untuk mengotomatiskan proses pemisahan tabel untuk beberapa dokumen.

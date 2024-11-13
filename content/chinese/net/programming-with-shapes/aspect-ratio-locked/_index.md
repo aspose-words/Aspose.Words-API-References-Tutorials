@@ -37,7 +37,7 @@ using Aspose.Words.Drawing;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 接下来，我们将使用 Aspose.Words 创建一个新 Word 文档。该文档将作为我们添加形状和图像的画布。
 

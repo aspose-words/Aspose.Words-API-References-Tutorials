@@ -73,7 +73,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## ステップ6: 結果のドキュメントを保存する
 
-ヘッダーとフッターを削除した最終ドキュメントを、指定したディレクトリに保存します。
+ヘッダーとフッターを削除した最終ドキュメントを指定したディレクトリに保存します。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");

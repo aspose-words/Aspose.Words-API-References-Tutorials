@@ -50,18 +50,6 @@ Jetzt ist es an der Zeit, das geladene Dokument in das gewählte Ausgabeformat z
 doc.save("output.pdf", SaveFormat.PDF);
 ```
 
-## Schritt 6: Ausnahmen behandeln
-
-Beim Arbeiten mit Dokumenten ist es wichtig, Ausnahmen ordnungsgemäß zu behandeln. Aspose.Words für Java bietet Ausnahmebehandlungsmechanismen, um sicherzustellen, dass Ihre Anwendung reibungslos läuft.
-
-```java
-try {
-    // Hier Dokumentkonvertierung durchführen
-} catch (Exception e) {
-    // Behandeln von Ausnahmen
-}
-```
-
 ## Abschluss
 
 In diesem Handbuch haben wir untersucht, wie Sie mit Aspose.Words für Java Dokumente in verschiedene Formate konvertieren können. Diese leistungsstarke API vereinfacht den Dokumentkonvertierungsprozess und macht ihn für Java-Entwickler zugänglich. Jetzt können Sie Dokumente in Ihren Java-Anwendungen problemlos und effizient konvertieren.
@@ -86,4 +74,4 @@ Ja, Aspose.Words für Java eignet sich sowohl für persönliche als auch für ko
 
 ### Wo kann ich auf die Aspose.Words-Dokumentation für Java zugreifen?
 
-Eine umfassende Dokumentation zu Aspose.Words für Java finden Sie unter[Aspose.Words für Java API-Referenzen](https://reference.aspose.com/words/java/).
+ Eine umfassende Dokumentation zu Aspose.Words für Java finden Sie unter[Aspose.Words für Java API-Referenzen](https://reference.aspose.com/words/java/).

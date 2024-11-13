@@ -75,7 +75,7 @@ Ebben a cikkben megvizsgáltuk, hogyan nyomtathat ki dokumentumokat egyéni olda
 
 ### Hogyan változtathatom meg a dokumentumom papírméretét?
 
- A dokumentum papírméretének módosításához használja a`setPageWidth`és`setPageHeight` módszerei a`PageSetup` osztályba, és pontokban adja meg a kívánt méreteket.
+ A dokumentum papírméretének módosításához használja a`setPageWidth` és`setPageHeight` módszerei a`PageSetup` osztályba, és pontokban adja meg a kívánt méreteket.
 
 ### Nyomtathatok több példányt egy dokumentumból?
 
@@ -87,7 +87,7 @@ Igen, az Aspose.Words for Java a dokumentumformátumok széles skáláját támo
 
 ### Nyomtathatok egy adott nyomtatóra?
 
-Biztosan! Megadhat egy adott nyomtatót a segítségével`setPrintService` módszer és a kívánt biztosítása`PrintService` objektum.
+ Biztosan! Megadhat egy adott nyomtatót a segítségével`setPrintService` módszer és a kívánt biztosítása`PrintService` objektum.
 
 ### Hogyan menthetem el a kinyomtatott dokumentumot PDF formátumban?
 

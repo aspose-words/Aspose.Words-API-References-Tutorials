@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Schritt 3: Initialisieren des DocumentBuilder
 
-Um HTML einzufügen, benötigen wir die Hilfe des`DocumentBuilder` Klasse. Mit dieser praktischen Klasse können wir unserem Dokument ganz einfach Inhalte hinzufügen.
+Um HTML einzufügen, benötigen wir die Hilfe des`DocumentBuilder` Klasse. Diese praktische Klasse erleichtert das Hinzufügen von Inhalten zu unserem Dokument.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -107,4 +107,4 @@ Ja, sobald das HTML eingefügt ist, können Sie das Dokument mit den verschieden
  Sie können beginnen mit einem[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) für den vollen Funktionsumfang.
 
 ### Wo finde ich weitere Tutorials und Beispiele?  
- Der[Dokumentation](https://reference.aspose.com/words/net/)Und[Support-Foren](https://forum.aspose.com/c/words/8)sind ein guter Ausgangspunkt für ausführlichere Anleitungen und Community-Support.
+Der[Dokumentation](https://reference.aspose.com/words/net/) Und[Support-Foren](https://forum.aspose.com/c/words/8)sind ein guter Ausgangspunkt für ausführlichere Anleitungen und Community-Support.

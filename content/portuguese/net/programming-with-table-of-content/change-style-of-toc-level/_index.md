@@ -1,27 +1,27 @@
 ---
-title: Alterar o estilo do toque no documento do Word
-linktitle: Alterar o estilo do toque no documento do Word
+title: Alterar estilo de índice em documento do Word
+linktitle: Alterar estilo de índice em documento do Word
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como alterar o estilo do sumário em documentos do Word usando Aspose.Words for .NET com este guia passo a passo. Personalize seu sumário sem esforço.
+description: Aprenda como alterar o estilo do TOC em documentos do Word usando o Aspose.Words para .NET com este guia passo a passo. Personalize seu TOC sem esforço.
 type: docs
 weight: 10
 url: /pt/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 ## Introdução
 
-Se você já precisou criar um documento Word profissional, sabe como um Índice (TOC) pode ser crucial. Ele não apenas organiza seu conteúdo, mas também adiciona um toque de profissionalismo. No entanto, personalizar o sumário para combinar com seu estilo pode ser um pouco complicado. Neste tutorial, veremos como alterar o estilo do sumário em um documento do Word usando Aspose.Words for .NET. Pronto para mergulhar? Vamos começar!
+Se você já precisou criar um documento profissional do Word, sabe o quão crucial um Índice (TOC) pode ser. Ele não apenas organiza seu conteúdo, mas também adiciona um toque de profissionalismo. No entanto, personalizar o TOC para combinar com seu estilo pode ser um pouco complicado. Neste tutorial, mostraremos como alterar o estilo do TOC em um documento do Word usando o Aspose.Words para .NET. Pronto para mergulhar? Vamos começar!
 
 ## Pré-requisitos
 
-Antes de entrarmos no código, certifique-se de ter o seguinte:
+Antes de começarmos o código, certifique-se de ter o seguinte:
 
-1.  Aspose.Words for .NET: Você precisa ter a biblioteca Aspose.Words for .NET instalada. Se você ainda não o instalou, você pode baixá-lo no site[Página de lançamentos do Aspose](https://releases.aspose.com/words/net/).
-2. Ambiente de desenvolvimento: um ambiente de desenvolvimento como o Visual Studio.
+1.  Aspose.Words para .NET: Você precisa ter a biblioteca Aspose.Words para .NET instalada. Se você ainda não a instalou, você pode baixá-la do[Página de lançamentos da Aspose](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: Um ambiente de desenvolvimento como o Visual Studio.
 3. Conhecimento básico de C#: Compreensão da linguagem de programação C#.
 
 ## Importar namespaces
 
-Para trabalhar com Aspose.Words for .NET, você precisará importar os namespaces necessários. Veja como você pode fazer isso:
+Para trabalhar com Aspose.Words para .NET, você precisará importar os namespaces necessários. Veja como você pode fazer isso:
 
 ```csharp
 using System;
@@ -33,51 +33,51 @@ Vamos dividir o processo em etapas fáceis de seguir:
 
 ## Etapa 1: configure seu projeto
 
-Primeiramente, configure seu projeto no Visual Studio. Crie um novo projeto C# e adicione uma referência à biblioteca Aspose.Words for .NET.
+Primeiro, configure seu projeto no Visual Studio. Crie um novo projeto C# e adicione uma referência à biblioteca Aspose.Words for .NET.
 
 ```csharp
-// Crie um novo documento
+// Criar um novo documento
 Document doc = new Document();
 ```
 
-## Etapa 2: modificar o estilo do sumário
+## Etapa 2: Modifique o estilo do TOC
 
-A seguir, vamos modificar o estilo do primeiro nível do Índice (TOC).
+Em seguida, vamos modificar o estilo do primeiro nível do Índice (TOC).
 
 ```csharp
 // Modificação do estilo do primeiro nível do índice
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-## Etapa 3: salve o documento modificado
+## Etapa 3: Salve o documento modificado
 
 Depois de fazer as alterações necessárias no estilo do sumário, salve o documento modificado.
 
 ```csharp
-// Caminho para o seu diretório de documentos
+// Caminho para o diretório dos seus documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Salve o documento modificado
+// Salvar o documento modificado
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 ```
 
 ## Conclusão
 
-E aí está! Você alterou com sucesso o estilo do sumário em um documento do Word usando Aspose.Words for .NET. Essa pequena personalização pode fazer uma grande diferença na aparência geral do seu documento. Não se esqueça de experimentar outros estilos e níveis para personalizar totalmente seu sumário.
+E aí está! Você alterou com sucesso o estilo do TOC em um documento do Word usando o Aspose.Words para .NET. Essa pequena personalização pode fazer uma grande diferença na aparência geral do seu documento. Não se esqueça de experimentar outros estilos e níveis para personalizar totalmente seu TOC.
 
 ## Perguntas frequentes
 
 ### O que é Aspose.Words para .NET?
-Aspose.Words for .NET é uma biblioteca de classes para criar, modificar e converter documentos do Word em aplicativos .NET.
+Aspose.Words para .NET é uma biblioteca de classes para criar, modificar e converter documentos do Word em aplicativos .NET.
 
-### Posso alterar outros estilos no sumário?
-Sim, você pode modificar vários estilos no sumário acessando diferentes níveis e propriedades de estilo.
+### Posso alterar outros estilos no TOC?
+Sim, você pode modificar vários estilos dentro do TOC acessando diferentes níveis e propriedades de estilo.
 
 ### O Aspose.Words para .NET é gratuito?
- Aspose.Words for .NET é uma biblioteca paga, mas você pode obter um[teste gratuito](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words para .NET é uma biblioteca paga, mas você pode obter uma[teste gratuito](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/).
 
-### Preciso instalar o Microsoft Word para usar o Aspose.Words for .NET?
-Não, o Aspose.Words for .NET não requer a instalação do Microsoft Word em sua máquina.
+### Preciso instalar o Microsoft Word para usar o Aspose.Words para .NET?
+Não, o Aspose.Words para .NET não requer que o Microsoft Word esteja instalado em sua máquina.
 
-### Onde posso encontrar mais documentação sobre Aspose.Words for .NET?
+### Onde posso encontrar mais documentação sobre o Aspose.Words para .NET?
  Você pode encontrar documentação mais detalhada[aqui](https://reference.aspose.com/words/net/).

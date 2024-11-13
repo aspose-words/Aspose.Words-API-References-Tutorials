@@ -105,7 +105,7 @@ Und da haben Sie es! Sie haben mit Aspose.Words für .NET erfolgreich Zeilenform
  Ja, Sie können Zellen verbinden mit dem`CellMerge` Eigentum der`CellFormat`.
 
 ### Kann ich den Zeilen Ränder hinzufügen?  
- Absolut! Sie können Zeilenränder hinzufügen, indem Sie`Borders` Eigentum der`RowFormat`.
+ Auf jeden Fall! Sie können Zeilenränder hinzufügen, indem Sie`Borders` Eigentum der`RowFormat`.
 
 ### Wie wende ich eine bedingte Formatierung auf Zeilen an?  
 Sie können in Ihrem Code bedingte Logik verwenden, um je nach bestimmten Bedingungen unterschiedliche Formatierungen anzuwenden.

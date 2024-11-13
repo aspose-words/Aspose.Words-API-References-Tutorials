@@ -76,7 +76,7 @@ taskPane.Width = 300;
 ```
 
 - `DockState` anger var aktivitetsfönstret ska visas. I det här fallet är det till höger.
-- `IsVisible` ser till att uppgiftsfönstret är synligt.
+- `IsVisible` ser till att aktivitetsfönstret är synligt.
 - `Width` anger bredden på aktivitetsfönstret.
 
 ### Steg 5: Konfigurera webbtilläggsreferens

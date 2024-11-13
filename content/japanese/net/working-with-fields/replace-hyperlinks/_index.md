@@ -83,7 +83,7 @@ Aspose.Words for .NET を使用してドキュメント内のハイパーリン�
 はい、Aspose.Words は、表、画像、ハイパーリンクなどの複雑な構造をシームレスにサポートします。
 
 ### Aspose.Words for .NET の試用版はありますか?
-はい、無料トライアルはここからダウンロードできます。[ここ](https://releases.aspose.com/).
+はい、無料トライアルは以下からダウンロードできます。[ここ](https://releases.aspose.com/).
 
 ### Aspose.Words for .NET のドキュメントはどこにありますか?
 詳細なドキュメントが利用可能[ここ](https://reference.aspose.com/words/net/).

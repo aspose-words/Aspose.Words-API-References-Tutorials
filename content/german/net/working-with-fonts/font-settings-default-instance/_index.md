@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Fonts;
 ```
 
-## Schritt 1: Dokumentverzeichnis definieren
+## Schritt 1: Definieren Sie das Dokumentverzeichnis
 
 Zuerst müssen Sie das Verzeichnis angeben, in dem Ihr Dokument gespeichert ist. Dies erleichtert das Auffinden des Dokuments, mit dem Sie arbeiten möchten.
 
@@ -70,7 +70,7 @@ Speichern Sie das Dokument abschließend, nachdem Sie die Schrifteinstellungen v
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-Durch Befolgen dieser Schritte haben Sie erfolgreich benutzerdefinierte Schriftarteinstellungen konfiguriert und das Dokument mit diesen Einstellungen gespeichert.
+Indem Sie diese Schritte befolgen, haben Sie erfolgreich benutzerdefinierte Schriftarteinstellungen konfiguriert und das Dokument mit diesen Einstellungen gespeichert.
 
 ## Abschluss
 

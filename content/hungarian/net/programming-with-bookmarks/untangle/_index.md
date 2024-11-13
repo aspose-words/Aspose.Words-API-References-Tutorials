@@ -32,8 +32,6 @@ using Aspose.Words.Tables;
 
 Az első lépés a Word dokumentum betöltése, amellyel dolgozni szeretne. Ez a dokumentum tartalmazza a kibontandó könyvjelzőket.
 
-1. lépés Címsor: A dokumentum betöltése
-
 ```csharp
 Document doc = new Document("path/to/your/document.docx");
 ```
@@ -43,8 +41,6 @@ Ebben a sorban egyszerűen betöltjük a dokumentumot egy megadott útvonalról.
 ## 2. lépés: Ismétlés a könyvjelzőkkel
 
 Ezután át kell ismételnünk a dokumentum összes könyvjelzőjét. Ez lehetővé teszi számunkra, hogy hozzáférjünk minden könyvjelzőhöz és tulajdonságaihoz.
-
-2. lépés Címsor: Ismétlés könyvjelzőkkel
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -59,8 +55,6 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 Minden könyvjelzőnél meg kell találnunk azokat a sorokat, amelyek a könyvjelző elejét és végét tartalmazzák. Ez döntő fontosságú annak meghatározásához, hogy a könyvjelző átnyúlik-e a szomszédos sorokon.
 
-3. lépés Címsor: Sorok azonosítása
-
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
@@ -71,8 +65,6 @@ Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ## 4. lépés: Ellenőrizze a szomszédos sorokat
 
 Mielőtt áthelyeznénk a könyvjelző végét, gondoskodnunk kell arról, hogy a könyvjelző eleje és vége szomszédos sorokban legyen. Ez a feltétel elengedhetetlen a könyvjelző helyes kibontásához.
-
-4. lépés Címsor: Sorok szomszédságának ellenőrzése
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
@@ -87,13 +79,11 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 Végül, ha a feltételek teljesülnek, áthelyezzük a könyvjelző végcsomópontját a felső sor utolsó cellájának utolsó bekezdésének végére. Ez a lépés hatékonyan oldja ki a könyvjelzőt.
 
-5. lépés Címsor: A könyvjelző végének mozgatása
-
 ```csharp
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
- Ebben a lépésben a`AppendChild` módszer a könyvjelző végcsomópontjának mozgatásához. Ha hozzáfűzi a felső sor utolsó cellájának utolsó bekezdéséhez, biztosítjuk, hogy a könyvjelző helyesen legyen kibontva.
+ Ebben a lépésben a`AppendChild`módszer a könyvjelző végcsomópontjának mozgatásához. Ha hozzáfűzi a felső sor utolsó cellájának utolsó bekezdéséhez, biztosítjuk, hogy a könyvjelző helyesen legyen kibontva.
 
 ## Következtetés
 

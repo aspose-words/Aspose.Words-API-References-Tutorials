@@ -64,7 +64,7 @@ builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 ```
 
-## Steg 5: Lägg till underordnade objekt
+## Steg 5: Lägg till underartiklar
 
 För att göra saker mer intressanta, låt oss lägga till några underobjekt under "Artikel 2". Detta hjälper till att organisera underpunkter.
 
@@ -90,7 +90,7 @@ Experimentera gärna med olika liststilar och format för att passa dina behov. 
     Använd`ListIndent` metod för att lägga till fler nivåer och`ListOutdent` att gå tillbaka till en högre nivå.
 
 ### Är det möjligt att blanda punktlistor och nummerlistor?
-   Absolut! Du kan växla mellan punkt- och nummerformat med hjälp av`ApplyNumberDefault`och`ApplyBulletDefault` metoder.
+   Absolut! Du kan växla mellan punkt- och nummerformat med hjälp av`ApplyNumberDefault` och`ApplyBulletDefault` metoder.
 
 ### Kan jag stila texten i listobjekten?
     Ja, du kan använda olika stilar, teckensnitt och formatering på texten i listobjekt med hjälp av`Font` egendom av`DocumentBuilder`.

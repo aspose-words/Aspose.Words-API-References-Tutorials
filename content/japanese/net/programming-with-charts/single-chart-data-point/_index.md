@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ステップ2: グラフを挿入する
 
-次に、ドキュメントに折れ線グラフを挿入します。これは、データ ポイントをカスタマイズするための遊び場になります。
+次に、ドキュメントに折れ線グラフを挿入しましょう。これは、データ ポイントをカスタマイズするための遊び場になります。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -62,7 +62,7 @@ ChartSeries series0 = chart.Series[0];
 ChartSeries series1 = chart.Series[1];
 ```
 
-ここでは、チャートの最初の 2 つのシリーズにアクセスします。 
+ここでは、チャートの最初の 2 つのシリーズにアクセスしています。 
 
 ## ステップ4: データポイントをカスタマイズする
 
@@ -84,16 +84,16 @@ dataPoint00.Marker.Symbol = MarkerSymbol.Circle;
 dataPoint00.Marker.Size = 15;
 ```
 
-のために`dataPoint00`爆発（円グラフに便利）を設定し、マーカー シンボルを円に変更し、マーカー サイズを 15 に設定します。
+のために`dataPoint00`爆発を設定（円グラフに便利）し、マーカー シンボルを円に変更し、マーカー サイズを 15 に設定します。
 
-### データポイント01をカスタマイズ
+### データポイント 01 をカスタマイズ
 
 ```csharp
 dataPoint01.Marker.Symbol = MarkerSymbol.Diamond;
 dataPoint01.Marker.Size = 20;
 ```
 
-のために`dataPoint01`マーカーのシンボルをダイヤモンドに変更し、マーカーのサイズを 20 に設定します。
+のために`dataPoint01`マーカー シンボルをダイヤモンドに変更し、マーカー サイズを 20 に設定します。
 
 ### シリーズ 1 のデータ ポイントをカスタマイズする
 

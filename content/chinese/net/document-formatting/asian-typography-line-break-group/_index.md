@@ -17,7 +17,7 @@ url: /zh/net/document-formatting/asian-typography-line-break-group/
 
 - Aspose.Words for .NET：确保已安装 Aspose.Words 库。如果尚未安装，可以下载[这里](https://releases.aspose.com/words/net/).
 - 开发环境：您需要一个像 Visual Studio 这样的开发环境。
-- C# 基础知识：虽然我们会解释所有内容，但对 C# 的基本了解将会有所帮助。
+- C# 基础知识：虽然我们会解释所有内容，但对 C# 的基本了解将会很有益。
 - 带有亚洲字体的 Word 文档：准备一个包含亚洲字体的 Word 文档。这将是我们的工作文件。
 
 一切都准备好了吗？太棒了！让我们继续设置您的项目。

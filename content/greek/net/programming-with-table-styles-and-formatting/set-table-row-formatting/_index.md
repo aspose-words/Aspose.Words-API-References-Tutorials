@@ -81,7 +81,7 @@ builder.Writeln("I'm a wonderfully formatted row.");
 builder.EndRow();
 ```
 
-## Βήμα 6: Ολοκληρώστε τον πίνακα
+## Βήμα 6: Οριστικοποιήστε τον πίνακα
 
 Για να ολοκληρώσετε τη διαδικασία δημιουργίας πίνακα, πρέπει να τερματίσετε τον πίνακα και να αποθηκεύσετε το έγγραφο.
 
@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
  Μπορείτε να αλλάξετε τη στοίχιση κειμένου ρυθμίζοντας το`ParagraphFormat.Alignment` ιδιοκτησία του`DocumentBuilder` αντικείμενο.
 
 ### Μπορώ να συγχωνεύσω κελιά σε έναν πίνακα χρησιμοποιώντας το Aspose.Words για .NET;
- Ναι, μπορείτε να συγχωνεύσετε κελιά χρησιμοποιώντας το`CellFormat.HorizontalMerge`και`CellFormat.VerticalMerge` σκηνικά θέατρου.
+ Ναι, μπορείτε να συγχωνεύσετε κελιά χρησιμοποιώντας το`CellFormat.HorizontalMerge` και`CellFormat.VerticalMerge` σκηνικά θέατρου.
 
 ### Υπάρχει τρόπος να διαμορφώσετε τον πίνακα με προκαθορισμένα στυλ;
  Ναι, το Aspose.Words για .NET σάς επιτρέπει να εφαρμόζετε προκαθορισμένα στυλ πίνακα χρησιμοποιώντας το`Table.Style` ιδιοκτησία.

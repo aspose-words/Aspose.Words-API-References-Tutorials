@@ -13,7 +13,7 @@ url: /zh/net/programming-with-sdt/combo-box-content-control/
 
 ## 先决条件
 
-在我们深入研究编码细节之前，让我们确保您已准备好所需的一切：
+在深入研究编码细节之前，让我们确保您已准备好所需的一切：
 
 1.  Aspose.Words for .NET：请确保您已安装最新版本。您可以下载[这里](https://releases.aspose.com/words/net/).
 2. .NET Framework：确保您的机器上安装了 .NET Framework。

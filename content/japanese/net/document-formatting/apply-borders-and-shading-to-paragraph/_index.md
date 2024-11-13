@@ -22,7 +22,7 @@ url: /ja/net/document-formatting/apply-borders-and-shading-to-paragraph/
 
 ## 名前空間のインポート
 
-コードに進む前に、プロジェクトに必要な名前空間がインポートされていることを確認する必要があります。これにより、Aspose.Words のすべての優れた機能が利用できるようになります。
+コードに進む前に、プロジェクトに必要な名前空間がインポートされていることを確認する必要があります。これにより、Aspose.Words のすべての優れた機能にアクセスできるようになります。
 
 ```csharp
 using Aspose.Words;
@@ -95,7 +95,7 @@ builder.Write("I'm a formatted paragraph with double border and nice shading.");
 
 ## ステップ6: ドキュメントを保存する
 
-最後に、作業内容を保存します。わかりやすい名前を付けて、指定したディレクトリにドキュメントを保存しましょう。
+最後に、作業内容を保存します。ドキュメントを、わかりやすい名前で指定したディレクトリに保存しましょう。
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
@@ -112,8 +112,8 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ### 境界線ごとに異なる線のスタイルを使用できますか?  
 もちろんです！Aspose.Words for .NETでは、各境界線を個別にカスタマイズできます。`LineStyle`ガイドに示されているように、各境界線の種類ごとに。
 
-### 他にどのようなシェーディング テクスチャが利用できますか?  
-使用できるテクスチャは、無地、横縞、縦縞など、いくつかあります。[Aspose ドキュメント](https://reference.aspose.com/words/net/)完全なリストについてはこちらをご覧ください。
+### 他にどのようなシェーディングテクスチャが利用できますか?  
+使用できるテクスチャは、無地、横縞、縦縞などいくつかあります。[Aspose ドキュメント](https://reference.aspose.com/words/net/)完全なリストについてはこちらをご覧ください。
 
 ### 境界線の色を変更するにはどうすればよいですか?  
 境界線の色は、`Color`各境界線のプロパティを設定します。たとえば、`borders[BorderType.Left].Color = Color.Red;`.

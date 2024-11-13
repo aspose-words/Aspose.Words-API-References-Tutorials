@@ -20,7 +20,7 @@ Aspose.Words for .NET 图形编程教程提供了全面的资源，用于学习�
 | [使用形状创建和自定义图表](./create-chart-using-shape/) | 通过本分步指南学习如何使用 Aspose.Words for .NET 在 Word 文档中创建和自定义图表。非常适合数据可视化。 |
 | [在 Word 文档中插入简单柱形图](./insert-simple-column-chart/) | 了解如何使用 Aspose.Words for .NET 在 Word 中插入简单柱形图。使用动态可视化数据演示增强您的文档。 |
 | [在 Word 文档中插入柱形图](./insert-column-chart/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入柱形图。增强报告和演示文稿中的数据可视化。 |
-| [将面积图插入 Word 文档](./insert-area-chart/) | 在本全面的分步指南中了解如何使用 Aspose.Words for .NET 将面积图插入 Word 文档。 |
+| [将面积图插入 Word 文档](./insert-area-chart/) | 通过本全面的分步指南了解如何使用 Aspose.Words for .NET 将面积图插入 Word 文档。 |
 | [在 Word 文档中插入气泡图](./insert-bubble-chart/) | 通过本分步指南学习如何使用 Aspose.Words for .NET 在 Word 文档中插入气泡图。增强您的文档。 |
 | [在 Word 文档中插入散点图](./insert-scatter-chart/) | 了解如何使用 Aspose.Words for .NET 在 Word 中插入散点图。将可视化数据表示集成到文档中的简单步骤。 |
 | [在图表中定义 XY 轴属性](./define-xyaxis-properties/) | 通过本分步指南学习如何使用 Aspose.Words for .NET 定义图表中的 XY 轴属性。非常适合 .NET 开发人员。 |

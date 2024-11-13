@@ -63,7 +63,7 @@ doc.FirstSection.Body.AppendChild(para);
 
 具体如下：
 - Paragraph para = new Paragraph(doc);：在文档内创建一个新段落。
--  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);：向段落添加 TA 字段。`FieldType.FieldTOAEntry`指定这是一个 TOA 输入字段。
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);：向段落添加 TA 字段。这`FieldType.FieldTOAEntry`指定这是一个 TOA 输入字段。
 - fieldTA.EntryCategory = "1";：设置条目类别。这对于对不同类型的条目进行分类很有用。
 - fieldTA.LongCitation = "Value 0";：指定长引文文本。这是将出现在 TOA 中的文本。
 - doc.FirstSection.Body.AppendChild(para);：将包含TA字段的段落附加到文档正文。

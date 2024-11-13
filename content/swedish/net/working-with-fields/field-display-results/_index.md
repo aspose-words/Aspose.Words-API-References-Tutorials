@@ -60,7 +60,7 @@ Fält i Word-dokument kan vara dynamiska, vilket innebär att de kanske inte all
 document.UpdateFields();
 ```
 
- De`UpdateFields` metod itererar genom alla fält i dokumentet och uppdaterar dem med den senaste informationen. Detta steg är avgörande om dina fält är beroende av dynamiskt innehåll som datum eller beräkningar.
+De`UpdateFields` metod itererar genom alla fält i dokumentet och uppdaterar dem med den senaste informationen. Detta steg är avgörande om dina fält är beroende av dynamiskt innehåll som datum eller beräkningar.
 
 ## Steg 3: Visa fältresultat
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
- De`DisplayResult` egendom av`Field` klass returnerar det formaterade värdet för fältet. De`foreach` loop går igenom alla fält i dokumentet och skriver ut deras resultat.
+De`DisplayResult` egendom av`Field` klass returnerar det formaterade värdet för fältet. De`foreach` loop går igenom alla fält i dokumentet och skriver ut deras resultat.
 
 ## Slutsats
 
@@ -93,8 +93,8 @@ Du kan uppdatera olika fälttyper, inklusive datumfält, dokumentegenskaper och 
 ### Kan jag uppdatera fält i en specifik del av dokumentet?  
  Ja, du kan använda`Document.Sections` egendom för att komma åt specifika avsnitt och uppdatera fält inom dem.
 
-### Hur hanterar jag fält som kräver användarinmatning?  
+### Hur hanterar jag fält som kräver användarinput?  
 Fält som kräver användarinmatning (som formulärfält) kommer att behöva fyllas i manuellt eller genom ytterligare kod.
 
 ### Är det möjligt att visa fältresultat i ett annat format?  
- De`DisplayResult` egenskapen tillhandahåller den formaterade utdata. Om du behöver ett annat format, överväg ytterligare bearbetning baserat på dina krav.
+De`DisplayResult` egenskapen tillhandahåller den formaterade utdata. Om du behöver ett annat format, överväg ytterligare bearbetning baserat på dina krav.

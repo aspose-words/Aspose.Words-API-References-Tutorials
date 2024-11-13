@@ -63,7 +63,7 @@ Az Aspose.Words for Java jelszavas védelme rendkívül biztonságos. Erős titk
 
 ### Módosíthatom vagy törölhetem később a jelszót?
 
-Igen, a jelszót később módosíthatja vagy eltávolíthatja az Aspose.Words for Java használatával. Egyszerűen töltse be a dokumentumot, hajtsa végre a szükséges módosításokat, majd mentse újra.
+Igen, a jelszót később módosíthatja vagy eltávolíthatja az Aspose.Words for Java segítségével. Egyszerűen töltse be a dokumentumot, hajtsa végre a szükséges módosításokat, majd mentse újra.
 
 ### Lehetséges-e különböző jelszavakat beállítani a dokumentum különböző részeihez?
 

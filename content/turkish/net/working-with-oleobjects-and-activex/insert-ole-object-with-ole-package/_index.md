@@ -2,27 +2,27 @@
 title: Ole Paketi ile Word'e Ole Nesnesi Ekleme
 linktitle: Ole Paketi ile Word'e Ole Nesnesi Ekleme
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak OLE nesnelerini Word belgelerine nasıl ekleyeceğinizi öğrenin. Dosyaları sorunsuz bir şekilde gömmek için ayrıntılı adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for .NET kullanarak Word belgelerine OLE nesnelerinin nasıl ekleneceğini öğrenin. Dosyaları sorunsuz bir şekilde yerleştirmek için ayrıntılı adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
 ## giriiş
 
-Bir dosyayı bir Word belgesine gömmek istediyseniz doğru yerdesiniz. İster ZIP dosyası, ister Excel sayfası, ister başka bir dosya türü olsun, onu doğrudan Word belgenize yerleştirmek inanılmaz derecede yararlı olabilir. Bunu, belgenizde her türlü hazineyi saklayabileceğiniz gizli bir bölmenin olması gibi düşünün. Bugün bunu Aspose.Words for .NET kullanarak nasıl yapacağımızı anlatacağız. Bir Word sihirbazı olmaya hazır mısınız? Hadi dalalım!
+Bir dosyayı Word belgesine gömmek istediyseniz, doğru yerdesiniz. İster bir ZIP dosyası, ister bir Excel sayfası veya başka bir dosya türü olsun, dosyayı doğrudan Word belgenize gömmek inanılmaz derecede faydalı olabilir. Bunu, belgenizde her türlü hazineyi saklayabileceğiniz gizli bir bölme gibi düşünün. Ve bugün, bunu .NET için Aspose.Words kullanarak nasıl yapacağınızı anlatacağız. Word sihirbazı olmaya hazır mısınız? Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-1. Aspose.Words for .NET: Henüz yapmadıysanız adresinden indirin.[Burada](https://releases.aspose.com/words/net/).
-2. Geliştirme Ortamı: Visual Studio veya başka herhangi bir .NET geliştirme ortamı.
-3. Temel C# Anlayışı: Uzman olmanıza gerek yok, ancak C#'ı nasıl kullanacağınızı bilmek yardımcı olacaktır.
-4. Belge Dizini: Belgeleri saklayabileceğiniz ve alabileceğiniz bir klasör.
+1. .NET için Aspose.Words: Henüz yapmadıysanız, şu adresten indirin:[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio veya herhangi bir .NET geliştirme ortamı.
+3. C# Hakkında Temel Bilgi: Uzman olmanıza gerek yok, ancak C# konusunda bilgi sahibi olmak faydalı olacaktır.
+4. Belge Dizini: Belgeleri saklayabileceğiniz ve geri alabileceğiniz klasör.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle isim alanlarımızı düzene koyalım. Projenize aşağıdaki ad alanlarını eklemeniz gerekir:
+İlk önce ilk şeyler, ad alanlarımızı sıralayalım. Projenize aşağıdaki ad alanlarını eklemeniz gerekir:
 
 ```csharp
 using System;
@@ -31,34 +31,34 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Bunu küçük adımlara bölelim, böylece takip edilmesi kolay olur.
+Bunu takip etmesi kolay olacak şekilde küçük adımlara bölelim.
 
-## 1. Adım: Belgenizi Ayarlayın
+## Adım 1: Belgenizi Ayarlayın
 
-Boş bir tuvali olan bir sanatçı olduğunuzu hayal edin. Öncelikle Word belgemiz olan boş tuvalimize ihtiyacımız var. Bunu nasıl ayarlayacağınız aşağıda açıklanmıştır:
+Boş bir tuvale sahip bir sanatçı olduğunuzu düşünün. Öncelikle, Word belgemiz olan boş tuvalimize ihtiyacımız var. İşte nasıl kuracağınız:
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Bu kod yeni bir Word belgesini başlatır ve belgemize içerik eklemek için kullanacağımız DocumentBuilder'ı kurar.
+Bu kod yeni bir Word belgesi başlatır ve belgeye içerik eklemek için kullanacağımız DocumentBuilder'ı kurar.
 
 ## Adım 2: Ole Nesnenizi Okuyun
 
-Daha sonra yerleştirmek istediğiniz dosyayı okuyalım. Bunu gizli bölmenizde saklamak istediğiniz hazineyi almak gibi düşünün:
+Sonra, gömmek istediğiniz dosyayı okuyalım. Bunu, gizli bölmenizde saklamak istediğiniz hazineyi almak gibi düşünün:
 
 ```csharp
 byte[] bs = File.ReadAllBytes(dataDir + "Zip file.zip");
 ```
 
-Bu satır, ZIP dosyanızdaki tüm baytları okur ve bunları bir bayt dizisinde saklar.
+Bu satır ZIP dosyanızdaki tüm baytları okur ve bunları bir bayt dizisine depolar.
 
-## Adım 3: Ole Nesnesini Ekleyin
+## Adım 3: Ole Nesnesini Ekle
 
-Şimdi işin sihirli kısmı geliyor. Dosyayı Word belgemize gömeceğiz:
+Şimdi sihirli kısım geliyor. Dosyayı Word belgemize gömeceğiz:
 
 ```csharp
 using (Stream stream = new MemoryStream(bs))
@@ -70,35 +70,35 @@ using (Stream stream = new MemoryStream(bs))
 }
 ```
 
- Burada bayt dizisinden bir bellek akışı oluşturuyoruz ve bunu kullanıyoruz.`InsertOleObject` belgeye yerleştirme yöntemini kullanın. Ayrıca gömülü nesnenin dosya adını ve görünen adını da ayarladık.
+ Burada, bayt dizisinden bir bellek akışı oluşturuyoruz ve şunu kullanıyoruz:`InsertOleObject` belgeye yerleştirme yöntemi. Ayrıca gömülü nesne için dosya adını ve görüntüleme adını da ayarladık.
 
-## 4. Adım: Belgenizi Kaydedin
+## Adım 4: Belgenizi Kaydedin
 
-Son olarak şaheserimizi kaydedelim:
+Son olarak şaheserimizi kurtaralım:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-Bu, belgeyi gömülü dosyanızla birlikte belirtilen dizine kaydeder.
+Bu, belgenizi gömülü dosyanızla birlikte belirtilen dizine kaydeder.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir OLE nesnesini bir Word belgesine başarıyla gömdünüz. Bu, belgenizin içine her an ortaya çıkabilecek gizli bir mücevher eklemek gibidir. Bu teknik, teknik dokümantasyondan dinamik raporlara kadar çeşitli uygulamalar için inanılmaz derecede faydalı olabilir. 
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir OLE nesnesini bir Word belgesine başarıyla yerleştirdiniz. Bu, belgenizin içine istediğiniz zaman ortaya çıkarılabilecek gizli bir mücevher eklemek gibidir. Bu teknik, teknik dokümantasyondan dinamik raporlara kadar çeşitli uygulamalar için inanılmaz derecede faydalı olabilir. 
 
-## SSS'ler
+## SSS
 
-### Bu yöntemi kullanarak başka dosya türlerini gömebilir miyim?
-Evet, Excel sayfaları, PDF'ler ve resimler gibi çeşitli dosya türlerini gömebilirsiniz.
+### Bu yöntemi kullanarak başka dosya türlerini de gömebilir miyim?
+Evet, Excel dosyaları, PDF'ler ve resimler gibi çeşitli dosya türlerini gömebilirsiniz.
 
 ### Aspose.Words için lisansa ihtiyacım var mı?
- Evet, geçerli bir lisansa ihtiyacınız var. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) değerlendirme için.
+ Evet, geçerli bir lisansa ihtiyacınız var. Bir tane alabilirsiniz[geçici lisans](https://purchase.aspose.com/temporary-license/) Değerlendirme için.
 
-### OLE nesnesinin görünen adını nasıl özelleştirebilirim?
+### OLE nesnesinin görüntü adını nasıl özelleştirebilirim?
  Ayarlayabilirsiniz`DisplayName` mülkiyeti`OlePackage` özelleştirmek için.
 
 ### Aspose.Words .NET Core ile uyumlu mu?
 Evet, Aspose.Words hem .NET Framework'ü hem de .NET Core'u destekler.
 
-### Katıştırılmış OLE nesnesini Word belgesinde düzenleyebilir miyim?
-Hayır, OLE nesnesini doğrudan Word'ün içinden düzenleyemezsiniz. Yerel uygulamasında açmanız gerekir.
+### Word belgesindeki gömülü OLE nesnesini düzenleyebilir miyim?
+Hayır, OLE nesnesini doğrudan Word içinde düzenleyemezsiniz. Bunu kendi yerel uygulamasında açmanız gerekir.

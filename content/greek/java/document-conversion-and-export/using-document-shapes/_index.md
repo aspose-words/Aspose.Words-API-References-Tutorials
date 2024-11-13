@@ -14,7 +14,7 @@ url: /el/java/document-conversion-and-export/using-document-shapes/
 
 ## Ξεκινώντας με τα σχήματα εγγράφων
 
- Πριν μεταβούμε στον κώδικα, ας ρυθμίσουμε το περιβάλλον μας. Βεβαιωθείτε ότι έχετε ενσωματώσει το Aspose.Words for Java στο έργο σας. Εάν δεν το έχετε κάνει ήδη, μπορείτε να το κατεβάσετε από τον ιστότοπο του Aspose[Κατεβάστε το Aspose.Words για Java](https://releases.aspose.com/words/java/)
+Πριν μεταβούμε στον κώδικα, ας ρυθμίσουμε το περιβάλλον μας. Βεβαιωθείτε ότι έχετε ενσωματώσει το Aspose.Words for Java στο έργο σας. Εάν δεν το έχετε κάνει ήδη, μπορείτε να το κατεβάσετε από τον ιστότοπο του Aspose[Κατεβάστε το Aspose.Words για Java](https://releases.aspose.com/words/java/)
 
 ## Προσθήκη σχημάτων σε έγγραφα
 

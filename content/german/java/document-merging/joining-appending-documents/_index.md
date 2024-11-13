@@ -10,7 +10,7 @@ url: /de/java/document-merging/joining-appending-documents/
 
 ## Einführung
 
-Aspose.Words für Java ist eine funktionsreiche Bibliothek, die Ihnen das Arbeiten mit verschiedenen Dokumentformaten ermöglicht, darunter DOC, DOCX, RTF und mehr. Das Zusammenfügen und Anhängen von Dokumenten ist eine gängige Aufgabe bei der Dokumentbearbeitung. In diesem Handbuch finden Sie Schritt-für-Schritt-Anleitungen und Java-Codebeispiele, um dies nahtlos zu erreichen.
+Aspose.Words für Java ist eine funktionsreiche Bibliothek, die Ihnen das Arbeiten mit verschiedenen Dokumentformaten ermöglicht, darunter DOC, DOCX, RTF und mehr. Das Zusammenfügen und Anhängen von Dokumenten ist eine gängige Aufgabe bei der Dokumentbearbeitung. Dieses Handbuch bietet Ihnen Schritt-für-Schritt-Anleitungen und Java-Codebeispiele, um dies nahtlos zu erreichen.
 
 ## Voraussetzungen
 
@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
- Der`ImportFormatMode.KEEP_SOURCE_FORMATTING` stellt sicher, dass die Formatierung der Quelldokumente erhalten bleibt.
+Der`ImportFormatMode.KEEP_SOURCE_FORMATTING` stellt sicher, dass die Formatierung der Quelldokumente erhalten bleibt.
 
 ## Schritt 5: Speichern des Ergebnisses
 
@@ -73,7 +73,7 @@ doc1.save("joined_document.docx");
 
 ## Abschluss
 
-Herzlichen Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für Java Dokumente zusammenfügen und anhängen. Diese vielseitige Bibliothek ermöglicht Ihnen die mühelose Bearbeitung von Dokumenten und ist somit ein unschätzbares Werkzeug für Java-Entwickler.
+Herzlichen Glückwunsch! Sie haben erfolgreich gelernt, wie Sie Dokumente mit Aspose.Words für Java zusammenfügen und anhängen. Diese vielseitige Bibliothek ermöglicht Ihnen die mühelose Bearbeitung von Dokumenten und ist somit ein unschätzbares Werkzeug für Java-Entwickler.
 
 ## Häufig gestellte Fragen
 

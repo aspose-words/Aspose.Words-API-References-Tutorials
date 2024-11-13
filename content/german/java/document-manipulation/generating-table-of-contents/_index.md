@@ -66,13 +66,13 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
     if (para.getParagraphFormat().getStyle().getStyleIdentifier() >= StyleIdentifier.TOC_1 &&
         para.getParagraphFormat().getStyle().getStyleIdentifier() <= StyleIdentifier.TOC_9)
     {
-        //Holen Sie sich den ersten in diesem Absatz verwendeten Tabulator, der die Seitenzahlen ausrichtet.
+        // Holen Sie sich den ersten in diesem Absatz verwendeten Tabulator, der die Seitenzahlen ausrichtet.
         TabStop tab = para.getParagraphFormat().getTabStops().get(0);
         
         // Entfernen Sie die alte Lasche.
         para.getParagraphFormat().getTabStops().removeByPosition(tab.getPosition());
         
-        // Fügt einen neuen Tabulator an geänderter Position ein (z. B. 50 Einheiten weiter links).
+        //Fügt einen neuen Tabulator an geänderter Position ein (z. B. 50 Einheiten weiter links).
         para.getParagraphFormat().getTabStops().add(tab.getPosition() - 50.0, tab.getAlignment(), tab.getLeader());
     }
 }

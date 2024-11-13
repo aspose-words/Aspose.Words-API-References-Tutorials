@@ -15,7 +15,7 @@ url: /zh/net/working-with-fields/convert-fields-in-body/
 
 在深入研究使用 Aspose.Words for .NET 转换文档正文中字段的教程之前，请确保您满足以下先决条件：
 
-- Visual Studio：已安装并配置为用于 .NET 开发。
+- Visual Studio：已安装并配置为.NET 开发。
 -  Aspose.Words for .NET：已下载并在 Visual Studio 项目中引用。您可以从以下位置获取它[这里](https://releases.aspose.com/words/net/).
 - C# 基础知识：熟悉 C# 编程语言，以理解和修改所提供的代码片段。
 
@@ -83,4 +83,4 @@ Aspose.Words 支持各种字段类型，如 DATE、PAGE、MERGEFIELD 等，允�
 提供详细文档和 API 参考[这里](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words for .NET 有试用版吗？
-是的，你可以从下载免费试用版[这里](https://releases.aspose.com/).
+是的，你可以从以下网站下载免费试用版[这里](https://releases.aspose.com/).

@@ -9,7 +9,7 @@ url: /zh/net/working-with-markdown/heading/
 ---
 ## 介绍
 
-在当今快节奏的数字世界中，创建结构良好且美观的文档至关重要。无论您是在起草报告、提案还是任何专业文档，正确的格式都会产生很大的不同。这就是 Aspose.Words for .NET 发挥作用的地方。在本指南中，我们将引导您完成使用 Aspose.Words for .NET 添加标题和构建 Word 文档的过程。让我们开始吧！
+在当今快节奏的数字世界中，创建结构良好且美观的文档至关重要。无论您是在起草报告、提案还是任何专业文档，正确的格式都会产生很大的影响。这就是 Aspose.Words for .NET 发挥作用的地方。在本指南中，我们将引导您完成使用 Aspose.Words for .NET 添加标题和构建 Word 文档的过程。让我们开始吧！
 
 ## 先决条件
 
@@ -64,47 +64,6 @@ builder.Writeln("Overview");
 //添加标题 3
 builder.ParagraphFormat.StyleName = "Heading 3";
 builder.Writeln("Details");
-```
-
-## 添加更多自定义
-
-### 自定义字体和段落
-
-您可以进一步自定义字体和段落设置以满足您的需求。例如，更改字体大小、颜色和对齐方式。
-
-```csharp
-builder.Font.Size = 14;
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.Writeln("Centered Blue Heading");
-```
-
-### 插入目录
-
-结构良好的文档通常包含目录。以下是使用 Aspose.Words for .NET 插入目录的方法。
-
-```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-doc.UpdateFields();
-```
-
-### 添加图像
-
-图片可以使您的文档更具吸引力。让我们将图片添加到文档中。
-
-```csharp
-builder.InsertImage("YOUR DOCUMENT DIRECTORY/image.png");
-```
-
-### 使用文档部分
-
-章节有助于组织内容，特别是当您需要对文档的不同部分设置不同的格式时。
-
-```csharp
-Section section = doc.Sections.Add();
-DocumentBuilder sectionBuilder = new DocumentBuilder(section);
-sectionBuilder.ParagraphFormat.StyleName = "Heading 1";
-sectionBuilder.Writeln("New Section Heading");
 ```
 
 ## 结论

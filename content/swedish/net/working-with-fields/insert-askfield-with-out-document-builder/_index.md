@@ -44,12 +44,12 @@ Document doc = new Document();
 
 Det här kodavsnittet skapar ett nytt Word-dokument där vi lägger till vårt ASK-fält.
 
-## Steg 2: Öppna paragrafnoden
+## Steg 2: Gå till paragrafnoden
 
 I ett Word-dokument är innehållet organiserat i noder. Vi måste komma åt noden första stycket där vi infogar vårt ASK-fält:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 Denna kodrad hämtar det första stycket i dokumentet, redo för vårt ASK-fältinfogning.
@@ -114,7 +114,7 @@ Ett ASK-fält i Aspose.Words är ett fält som ber användaren om specifik inmat
 Ja, du kan infoga flera ASK-fält i ett dokument, vart och ett med unika uppmaningar och svar.
 
 ###  Vad är syftet med`PromptOnceOnMailMerge` property?
- De`PromptOnceOnMailMerge` egenskapen avgör om ASK-prompten endast visas en gång under en kopplingsoperation eller varje gång.
+De`PromptOnceOnMailMerge` egenskapen avgör om ASK-prompten endast visas en gång under en kopplingsoperation eller varje gång.
 
 ### Behöver jag uppdatera fältet ASK efter att ha ställt in dess egenskaper?
 Ja, uppdatering av ASK-fältet säkerställer att alla egenskaper tillämpas korrekt och att fältet fungerar som förväntat.

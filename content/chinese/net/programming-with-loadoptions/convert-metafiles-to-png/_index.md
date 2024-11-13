@@ -16,7 +16,7 @@ url: /zh/net/programming-with-loadoptions/convert-metafiles-to-png/
 在深入研究之前，请确保您已准备好以下事项：
 
 1.  Aspose.Words for .NET - 从以下网址下载最新版本[这里](https://releases.aspose.com/words/net/).
-2. 开发环境-Visual Studio或任何其他.NET兼容IDE。
+2. 开发环境-Visual Studio或任何其他.NET兼容的IDE。
 3. C# 基础知识 - 了解 C# 编程基础知识将会有所帮助。
 4. Word 文档 — 确保您有一个包含要转换的元文件的 Word 文档。
 

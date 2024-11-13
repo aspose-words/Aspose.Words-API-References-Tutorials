@@ -1,28 +1,28 @@
 ---
-title: Crear pie de página de encabezado
-linktitle: Crear pie de página de encabezado
+title: Crear encabezado y pie de página
+linktitle: Crear encabezado y pie de página
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a agregar y personalizar encabezados y pies de página en documentos de Word usando Aspose.Words para .NET. Esta guía paso a paso garantiza un formato de documento profesional.
+description: Aprenda a agregar y personalizar encabezados y pies de página en documentos de Word con Aspose.Words para .NET. Esta guía paso a paso garantiza un formato de documento profesional.
 type: docs
 weight: 10
 url: /es/net/working-with-headers-and-footers/create-header-footer/
 ---
 ## Introducción
 
-Agregar encabezados y pies de página a sus documentos puede mejorar su profesionalismo y legibilidad. Con Aspose.Words para .NET, puede crear y personalizar fácilmente encabezados y pies de página para sus documentos de Word. En este tutorial, lo guiaremos a través del proceso paso a paso, asegurándonos de que pueda implementar estas funciones sin problemas.
+Agregar encabezados y pies de página a sus documentos puede mejorar su profesionalidad y legibilidad. Con Aspose.Words para .NET, puede crear y personalizar fácilmente encabezados y pies de página para sus documentos de Word. En este tutorial, lo guiaremos por el proceso paso a paso, asegurándonos de que pueda implementar estas funciones sin problemas.
 
-## Requisitos previos
+## Prerrequisitos
 
 Antes de comenzar, asegúrese de tener lo siguiente:
 
--  Aspose.Words para .NET: descargue e instale desde[enlace de descarga](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: descargar e instalar desde[enlace de descarga](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: como Visual Studio, para escribir y ejecutar su código.
-- Conocimientos básicos de C#: comprensión de C# y .NET framework.
+- Conocimientos básicos de C#: comprensión de C# y .NET Framework.
 - Documento de muestra: un documento de muestra para aplicar los encabezados y pies de página, o crear uno nuevo como se muestra en el tutorial.
 
 ## Importar espacios de nombres
 
-Primero, necesita importar los espacios de nombres necesarios para acceder a las clases y métodos de Aspose.Words.
+Primero, debe importar los espacios de nombres necesarios para acceder a las clases y métodos de Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -30,16 +30,16 @@ using Aspose.Words.Tables;
 using System;
 ```
 
-## Paso 1: definir el directorio de documentos
+## Paso 1: Definir el directorio del documento
 
-Defina el directorio donde se guardará su documento. Esto ayuda a gestionar el camino de forma eficaz.
+Define el directorio donde se guardará tu documento. Esto ayuda a gestionar la ruta de forma eficaz.
 
 ```csharp
-// La ruta al directorio de documentos.
+// La ruta al directorio de documentos
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-## Paso 2: cree un nuevo documento
+## Paso 2: Crear un nuevo documento
 
  Crea un nuevo documento y un`DocumentBuilder`para facilitar la adición de contenido.
 
@@ -48,9 +48,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 3: configurar la configuración de página
+## Paso 3: Configurar la configuración de la página
 
-Configure la configuración de la página, incluido si la primera página tendrá un encabezado o pie de página diferente.
+Configure los ajustes de la página, incluso si la primera página tendrá un encabezado/pie de página diferente.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
@@ -60,9 +60,9 @@ pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
 ```
 
-## Paso 4: agregue un encabezado a la primera página
+## Paso 4: Agrega un encabezado a la primera página
 
-Vaya a la sección del encabezado de la primera página y configure el texto del encabezado.
+Vaya a la sección de encabezado de la primera página y configure el texto del encabezado.
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.HeaderFirst);
@@ -75,7 +75,7 @@ builder.Font.Size = 14;
 builder.Write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 ```
 
-## Paso 5: agregue un encabezado principal
+## Paso 5: Agregar un encabezado principal
 
 Vaya a la sección del encabezado principal e inserte una imagen y un texto.
 
@@ -90,9 +90,9 @@ builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 builder.Write("Aspose.Words Header/Footer Creation Primer.");
 ```
 
-## Paso 6: agregue un pie de página principal
+## Paso 6: Agregar un pie de página principal
 
-Vaya a la sección de pie de página principal y cree una tabla para formatear el contenido del pie de página.
+Vaya a la sección de pie de página principal y cree una tabla para dar formato al contenido del pie de página.
 
 ```csharp
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
@@ -102,7 +102,7 @@ builder.CellFormat.ClearFormatting();
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 / 3);
 
-// Agregar numeración de páginas
+// Añadir numeración de páginas
 builder.Write("Page ");
 builder.InsertField("PAGE", "");
 builder.Write(" of ");
@@ -119,7 +119,7 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Paso 7: agregue contenido y saltos de página
+## Paso 7: Agregar contenido y saltos de página
 
 Vaya al final del documento, agregue un salto de página y cree una nueva sección con diferentes configuraciones de página.
 
@@ -144,7 +144,7 @@ row.LastCell.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3)
 doc.Save(dataDir + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```
 
-## Paso 8: copie los encabezados y pies de página de la sección anterior
+## Paso 8: Copiar encabezados y pies de página de la sección anterior
 
 Si desea reutilizar encabezados y pies de página de una sección anterior, cópielos y aplique las modificaciones necesarias.
 
@@ -165,7 +165,7 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 ## Conclusión
 
-Si sigue estos pasos, puede agregar y personalizar de manera efectiva encabezados y pies de página en sus documentos de Word usando Aspose.Words para .NET. Esto mejora la apariencia y el profesionalismo de su documento, haciéndolo más legible y atractivo.
+Si sigue estos pasos, podrá agregar y personalizar eficazmente encabezados y pies de página en sus documentos de Word con Aspose.Words para .NET. Esto mejorará la apariencia y el profesionalismo de su documento, haciéndolo más legible y atractivo.
 
 ## Preguntas frecuentes
 
@@ -175,7 +175,7 @@ Aspose.Words para .NET es una biblioteca que permite a los desarrolladores crear
 
 ### ¿Puedo agregar imágenes al encabezado o pie de página?
 
- Sí, puedes agregar fácilmente imágenes al encabezado o pie de página usando el`DocumentBuilder.InsertImage` método.
+ Sí, puedes agregar imágenes fácilmente al encabezado o pie de página usando el`DocumentBuilder.InsertImage` método.
 
 ### ¿Cómo configuro diferentes encabezados y pies de página para la primera página?
 
@@ -183,7 +183,7 @@ Aspose.Words para .NET es una biblioteca que permite a los desarrolladores crear
 
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Words?
 
- Puede encontrar documentación completa sobre el[Página de documentación de la API de Aspose.Words](https://reference.aspose.com/words/net/).
+ Puede encontrar documentación completa en el[Página de documentación de la API de Aspose.Words](https://reference.aspose.com/words/net/).
 
 ### ¿Hay soporte disponible para Aspose.Words?
 

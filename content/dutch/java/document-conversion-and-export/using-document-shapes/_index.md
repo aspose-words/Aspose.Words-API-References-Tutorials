@@ -1,7 +1,7 @@
 ---
 title: Documentvormen gebruiken in Aspose.Words voor Java
 linktitle: Documentvormen gebruiken
-second_title: Aspose.Words Java-documentverwerkings-API
+second_title: Aspose.Words Java Documentverwerkings-API
 description: Ontgrendel de kracht van documentvormen in Aspose.Words voor Java. Leer visueel aantrekkelijke documenten te maken met stapsgewijze voorbeelden.
 type: docs
 weight: 14
@@ -10,17 +10,17 @@ url: /nl/java/document-conversion-and-export/using-document-shapes/
 
 ## Inleiding tot het gebruik van documentvormen in Aspose.Words voor Java
 
-In deze uitgebreide handleiding duiken we in de wereld van documentvormen in Aspose.Words voor Java. Vormen zijn essentiële elementen als het gaat om het creëren van visueel aantrekkelijke en interactieve documenten. Of u nu toelichtingen, knoppen, afbeeldingen of watermerken moet toevoegen, Aspose.Words voor Java biedt de hulpmiddelen om dit efficiënt te doen. Laten we stap voor stap bekijken hoe u deze vormen kunt gebruiken met broncodevoorbeelden.
+In deze uitgebreide gids duiken we in de wereld van documentvormen in Aspose.Words voor Java. Vormen zijn essentiële elementen als het gaat om het maken van visueel aantrekkelijke en interactieve documenten. Of u nu callouts, knoppen, afbeeldingen of watermerken wilt toevoegen, Aspose.Words voor Java biedt de tools om dit efficiënt te doen. Laten we stap voor stap bekijken hoe u deze vormen kunt gebruiken met broncodevoorbeelden.
 
 ## Aan de slag met documentvormen
 
- Voordat we in de code duiken, gaan we eerst onze omgeving instellen. Zorg ervoor dat Aspose.Words voor Java in uw project is geïntegreerd. Als u dat nog niet heeft gedaan, kunt u het downloaden van de Aspose-website[Download Aspose.Words voor Java](https://releases.aspose.com/words/java/)
+Voordat we in de code duiken, gaan we onze omgeving instellen. Zorg ervoor dat je Aspose.Words voor Java in je project hebt geïntegreerd. Als je dat nog niet hebt gedaan, kun je het downloaden van de Aspose-website[Download Aspose.Words voor Java](https://releases.aspose.com/words/java/)
 
-## Vormen aan documenten toevoegen
+## Vormen toevoegen aan documenten
 
-### Een groepsvorm invoegen
+### Een GroupShape invoegen
 
- A`GroupShape` Hiermee kunt u meerdere vormen groeperen. Zo kunt u een`GroupShape`:
+ A`GroupShape` kunt u meerdere vormen groeperen. Hier leest u hoe u een`GroupShape`:
 
 ```java
 Document doc = new Document();
@@ -52,7 +52,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AddGroupShape.docx");
 
 ### Een tekstvakvorm invoegen
 
- Om een tekstvakvorm in te voegen, kunt u de`insertShape` methode zoals weergegeven in het onderstaande voorbeeld:
+ Om een tekstvakvorm in te voegen, kunt u de`insertShape` methode zoals getoond in het onderstaande voorbeeld:
 
 ```java
 Document doc = new Document();
@@ -75,9 +75,9 @@ doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptio
 
 ## Vormeigenschappen manipuleren
 
-### Beeldverhouding beheren
+### Het beheren van de beeldverhouding
 
-U kunt bepalen of de beeldverhouding van een vorm is vergrendeld of niet. U kunt als volgt de beeldverhouding van een vorm ontgrendelen:
+U kunt bepalen of de beeldverhouding van een vorm is vergrendeld of niet. Hier leest u hoe u de beeldverhouding van een vorm ontgrendelt:
 
 ```java
 Document doc = new Document();
@@ -91,7 +91,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AspectRatioLocked.docx");
 
 ### Een vorm in een tabelcel plaatsen
 
-Als u een vorm in een tabelcel moet plaatsen, kunt u dit bereiken met de volgende code:
+Als u een vorm in een tabelcel wilt plaatsen, kunt u dit doen met de volgende code:
 
 ```java
 Document doc = new Document();
@@ -150,7 +150,7 @@ System.out.println("The document has " + count + " shapes with SmartArt.");
 
 ### SmartArt-tekeningen bijwerken
 
-Gebruik de volgende code om SmartArt-tekeningen binnen een document bij te werken:
+Gebruik de volgende code om SmartArt-tekeningen in een document bij te werken:
 
 ```java
 Document doc = new Document("Your Directory Path" + "SmartArt.docx");
@@ -162,13 +162,13 @@ for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true)) {
 
 ## Conclusie
 
-In deze handleiding hebben we de wereld van documentvormen in Aspose.Words voor Java verkend. U hebt geleerd hoe u verschillende vormen aan uw documenten kunt toevoegen, de eigenschappen ervan kunt manipuleren en met SmartArt-vormen kunt werken. Met deze kennis kunt u eenvoudig visueel aantrekkelijke en interactieve documenten maken.
+In deze gids hebben we de wereld van documentvormen in Aspose.Words voor Java verkend. U hebt geleerd hoe u verschillende vormen aan uw documenten kunt toevoegen, hun eigenschappen kunt manipuleren en met SmartArt-vormen kunt werken. Met deze kennis kunt u eenvoudig visueel aantrekkelijke en interactieve documenten maken.
 
 ## Veelgestelde vragen
 
 ### Wat is Aspose.Words voor Java?
 
-Aspose.Words voor Java is een Java-bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen en converteren. Het biedt een breed scala aan functies en hulpmiddelen voor het werken met documenten in verschillende formaten.
+Aspose.Words voor Java is een Java-bibliotheek waarmee ontwikkelaars programmatisch Word-documenten kunnen maken, wijzigen en converteren. Het biedt een breed scala aan functies en tools voor het werken met documenten in verschillende formaten.
 
 ### Hoe kan ik Aspose.Words voor Java downloaden?
 
@@ -176,12 +176,12 @@ Aspose.Words voor Java is een Java-bibliotheek waarmee ontwikkelaars Word-docume
 
 ### Wat zijn de voordelen van het gebruik van documentvormen?
 
-Documentvormen voegen visuele elementen en interactiviteit toe aan uw documenten, waardoor ze aantrekkelijker en informatiever worden. Met vormen kunt u toelichtingen, knoppen, afbeeldingen, watermerken en meer maken, waardoor de algehele gebruikerservaring wordt verbeterd.
+Documentvormen voegen visuele elementen en interactiviteit toe aan uw documenten, waardoor ze aantrekkelijker en informatiever worden. Met vormen kunt u callouts, knoppen, afbeeldingen, watermerken en meer maken, waardoor de algehele gebruikerservaring wordt verbeterd.
 
 ### Kan ik het uiterlijk van vormen aanpassen?
 
-Ja, u kunt het uiterlijk van vormen aanpassen door hun eigenschappen aan te passen, zoals grootte, positie, rotatie en vulkleur. Aspose.Words voor Java biedt uitgebreide mogelijkheden voor vormaanpassing.
+Ja, u kunt het uiterlijk van vormen aanpassen door hun eigenschappen aan te passen, zoals grootte, positie, rotatie en opvulkleur. Aspose.Words voor Java biedt uitgebreide opties voor het aanpassen van vormen.
 
 ### Is Aspose.Words voor Java compatibel met SmartArt?
 
-Ja, Aspose.Words voor Java ondersteunt SmartArt-vormen, waardoor u met complexe diagrammen en afbeeldingen in uw documenten kunt werken.
+Ja, Aspose.Words voor Java ondersteunt SmartArt-vormen, zodat u met complexe diagrammen en afbeeldingen in uw documenten kunt werken.

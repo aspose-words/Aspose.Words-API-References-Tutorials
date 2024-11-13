@@ -109,7 +109,7 @@ public void createAndAddParagraphNode() throws Exception
 Aspose.Words for Java は、開発者がプログラムで Word 文書を作成、操作、変換できるようにする Java ライブラリです。
 
 ### Q2. Aspose.Words for Java をインストールするにはどうすればよいですか?
-Aspose.Words for Javaは以下からダウンロードしてインストールできます。[ここ](https://releases.aspose.com/words/java/).
+ Aspose.Words for Javaは以下からダウンロードしてインストールできます。[ここ](https://releases.aspose.com/words/java/).
 
 ### Q3. 無料トライアルはありますか？
 はい、Aspose.Words for Javaの無料トライアルを入手できます。[ここ](https://releases.aspose.com/).

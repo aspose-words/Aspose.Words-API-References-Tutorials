@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Förstå MoveToBookmark
 
- De`MoveToBookmark`metoden låter dig navigera till ett specifikt bokmärke i ditt dokument. Metodsignaturen är:
+De`MoveToBookmark`metoden låter dig navigera till ett specifikt bokmärke i ditt dokument. Metodsignaturen är:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);
@@ -130,7 +130,7 @@ Där har du det! Du har precis lärt dig hur du flyttar till slutet av ett bokm�
 
 ### 1. Kan jag flytta till början av ett bokmärke istället för slutet?
 
- Absolut! Ställ bara in`isBookmarkStart` parameter till`true`och`isBookmarkEnd` till`false` i`MoveToBookmark` metod.
+ Absolut! Ställ bara in`isBookmarkStart` parameter till`true` och`isBookmarkEnd` till`false` i`MoveToBookmark` metod.
 
 ### 2. Vad händer om mitt bokmärkesnamn är felaktigt?
 

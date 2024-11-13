@@ -63,7 +63,7 @@ Lassen Sie uns nun das Kombinationsfeld-Inhaltssteuerelement erstellen. Mit dies
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, MarkupLevel.Block);
 ```
 
-## Schritt 4: Elemente zur Kombinationsbox hinzufügen
+## Schritt 4: Elemente zum Kombinationsfeld hinzufügen
 
 Eine Kombinationsbox ist ohne Elemente, aus denen man auswählen kann, nicht sehr nützlich. Fügen wir ihr einige Elemente hinzu.
 

@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Seitennummerierung
 
- Sie können Seitenzahlen in Ihre Kopf- und Fußzeilen einfügen, indem Sie Felder wie`PAGE`Und`NUMPAGES`. Diese Felder werden automatisch aktualisiert, wenn Sie Seiten hinzufügen oder entfernen.
+ Sie können Seitenzahlen in Ihre Kopf- und Fußzeilen einfügen, indem Sie Felder wie`PAGE` Und`NUMPAGES`. Diese Felder werden automatisch aktualisiert, wenn Sie Seiten hinzufügen oder entfernen.
 
 ## 9. Copyright-Informationen in Fußzeilen
 
@@ -147,7 +147,7 @@ Vergessen Sie nicht, Ihr Dokument nach der Erstellung und Anpassung mit dem`doc.
         builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
         builder.write("Aspose.Words Header/Footer Creation Primer.");
         builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-        // Wir verwenden eine Tabelle mit zwei Zellen, um einen Teiltext in der Zeile darzustellen (mit Seitennummerierung).
+        // Wir verwenden eine Tabelle mit zwei Zellen, um einen Textteil in der Zeile darzustellen (mit Seitennummerierung).
         // Soll linksbündig ausgerichtet sein, der restliche Textteil (mit Copyright) rechtsbündig.
         builder.startTable();
         builder.getCellFormat().clearFormatting();
@@ -175,7 +175,7 @@ Vergessen Sie nicht, Ihr Dokument nach der Erstellung und Anpassung mit dem`doc.
         // Dieser Abschnitt benötigt keine andere Kopf-/Fußzeile auf der ersten Seite, wir brauchen nur eine Titelseite im Dokument,
         //und die Kopf-/Fußzeile für diese Seite wurde bereits im vorherigen Abschnitt definiert.
         pageSetup.setDifferentFirstPageHeaderFooter(false);
-        // Dieser Abschnitt zeigt Kopf-/Fußzeilen aus dem vorherigen Abschnitt
+        // Dieser Abschnitt zeigt Kopf- und Fußzeilen aus dem vorherigen Abschnitt an.
         // Rufen Sie standardmäßig currentSection.HeadersFooters.LinkToPrevious(false) auf, um diese Seitenbreite aufzuheben
         // ist für den neuen Abschnitt anders und daher müssen wir für eine Fußzeilentabelle unterschiedliche Zellenbreiten festlegen.
         currentSection.getHeadersFooters().linkToPrevious(false);
@@ -222,7 +222,7 @@ Ja, Aspose.Words bietet Unterstützung für die Java-Entwicklung. Stellen Sie si
 ### 3. Kann ich die Schriftart und den Stil von Kopf- und Fußzeilen anpassen?
 Natürlich können Sie Schriftarten, Ausrichtung und andere Stile anpassen, um Ihre Kopf- und Fußzeilen optisch ansprechend zu gestalten.
 
-### 4. Ist es möglich, unterschiedliche Kopfzeilen für gerade und ungerade Seiten zu haben?
+### 4. Ist es möglich, unterschiedliche Kopfzeilen für ungerade und gerade Seiten zu haben?
  Ja, Sie können`PageSetup.OddAndEvenPagesHeaderFooter` um unterschiedliche Kopfzeilen für ungerade und gerade Seiten festzulegen.
 
 ### 5. Wie beginne ich mit Aspose.Words für Java?

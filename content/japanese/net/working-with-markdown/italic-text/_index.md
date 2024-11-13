@@ -88,4 +88,4 @@ builder.Writeln("This text will be Italic");
 絶対に！同じものを使用してください`DocumentBuilder`表やヘッダー内のテキストをフォーマットするテクニック。
 
 ### 特定のフォント サイズまたは色で斜体のテキストを作成したい場合はどうすればよいでしょうか?
-次のような追加プロパティを設定できます`builder.Font.Size = 14;`または`builder.Font.Color = Color.Red;`テキストの外観をさらにカスタマイズします。
+次のような追加のプロパティを設定できます`builder.Font.Size = 14;`または`builder.Font.Color = Color.Red;`テキストの外観をさらにカスタマイズします。

@@ -2,7 +2,7 @@
 title: 差し込みフィールドの名前を変更する
 linktitle: 差し込みフィールドの名前を変更する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内の結合フィールドの名前を変更する方法を学びます。詳細なステップバイステップ ガイドに従って、文書を簡単に操作します。
+description: Aspose.Words for .NET を使用して Word 文書内の結合フィールドの名前を変更する方法を学びます。詳細なステップバイステップのガイドに従って、文書を簡単に操作します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/rename-merge-fields/
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して Word 文書の結合フィールドの名前を変更するのは、手順がわかれば簡単です。このガイドに従うことで、ニーズに合わせて Word 文書を簡単に操作およびカスタマイズできます。レポートの生成、パーソナライズされたレターの作成、データの管理など、どのような作業でもこのテクニックが役立ちます。
+これで完了です。Aspose.Words for .NET を使用して Word 文書の結合フィールドの名前を変更するのは、手順がわかれば簡単です。このガイドに従うことで、Word 文書をニーズに合わせて簡単に操作およびカスタマイズできます。レポートの生成、パーソナライズされたレターの作成、データの管理など、どのような作業でもこのテクニックが役立ちます。
 
 ## よくある質問
 

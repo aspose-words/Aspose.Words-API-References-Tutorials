@@ -49,7 +49,7 @@ DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 List<Document> pages = splitter.splitIntoPages();
 ```
 
- The`pages` seznam bude nyní obsahovat samostatné dokumenty, z nichž každý představuje jednu stránku původního dokumentu.
+The`pages` seznam bude nyní obsahovat samostatné dokumenty, z nichž každý představuje jednu stránku původního dokumentu.
 
 ## Krok 3: Uložte stránky
 

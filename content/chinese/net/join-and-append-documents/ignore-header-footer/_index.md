@@ -79,7 +79,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 加载文档并配置导入选项后，就可以合并文档了。
 
-操作方法如下：
+具体操作如下：
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);

@@ -95,7 +95,7 @@ tady to máte! Úspěšně jste odstranili zápatí z dokumentu aplikace Word po
  Ano, podobný přístup můžete použít k odstranění záhlaví pomocí přístupu`HeaderFooterType.HeaderFirst`, `HeaderFooterType.HeaderPrimary` a`HeaderFooterType.HeaderEven`.
 
 ### Je Aspose.Words for .NET zdarma k použití?
- Aspose.Words for .NET je komerční produkt, ale můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) vyzkoušet jeho vlastnosti.
+ Aspose.Words for .NET je komerční produkt, ale můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) otestovat jeho vlastnosti.
 
 ### Mohu manipulovat s jinými prvky dokumentu aplikace Word pomocí Aspose.Words?
 Absolutně! Aspose.Words poskytuje rozsáhlé funkce pro manipulaci s textem, obrázky, tabulkami a dalšími v dokumentech aplikace Word.

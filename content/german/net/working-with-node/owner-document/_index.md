@@ -70,7 +70,7 @@ Dadurch wird bestätigt, dass der Absatz zu demselben Dokument gehört, das wir 
 
 ## Schritt 5: Absatzeigenschaften ändern
 
-Da der Knoten zu einem Dokument gehört, können Sie auf seine Eigenschaften, wie Stile oder Listen, zugreifen und diese ändern. Lassen Sie uns den Stil des Absatzes auf „Überschrift 1“ setzen:
+Da der Knoten zu einem Dokument gehört, können Sie auf seine Eigenschaften wie Stile oder Listen zugreifen und diese ändern. Lassen Sie uns den Stil des Absatzes auf „Überschrift 1“ festlegen:
 
 ```csharp
 para.ParagraphFormat.StyleName = "Heading 1";

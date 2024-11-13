@@ -9,11 +9,11 @@ url: /zh/net/working-with-fonts/load-noto-fallback-settings/
 ---
 ## 介绍
 
-在本教程中，我们将探索如何使用 Aspose.Words for .NET 在 Word 文档中加载 Noto 后备设置。此过程可确保正确显示文档的字体，即使原始字体缺少某些字符。无论您处理的是多语言文档还是特殊字符，Noto 后备设置都可以成为救星。
+在本教程中，我们将探索如何使用 Aspose.Words for .NET 在 Word 文档中加载 Noto 后备设置。此过程可确保正确显示文档的字体，即使原始字体中缺少某些字符。无论您处理的是多语言文档还是特殊字符，Noto 后备设置都可以成为救星。
 
 ## 先决条件
 
-在深入了解分步指南之前，让我们先了解一下您需要的先决条件：
+在我们深入了解分步指南之前，让我们先了解一下您需要的先决条件：
 
 1.  Aspose.Words for .NET 库：确保您拥有最新版本的 Aspose.Words for .NET。您可以下载它[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：Visual Studio 或任何其他兼容的.NET 开发环境。

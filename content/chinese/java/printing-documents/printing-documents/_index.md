@@ -106,7 +106,7 @@ class MultipagePrintDocument implements Printable
                 (float) (pf.getImageableHeight() / thumbCount.getHeight()));
         //计算这张纸上要打印的第一页的数字。
         int startPage = pagesOnCurrentSheet + fromPage;
-        //选择此纸上要打印的最后一页的页码。
+        //选择在此纸张上要打印的最后一页的页码。
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
         //循环遍历所选页面，从存储的当前页面到计算的
         //最后一页。
@@ -186,7 +186,7 @@ class MultipagePrintDocument implements Printable
 
 ## 常见问题解答
 
-### 问题 1：我可以使用 Aspose.Words for Java 打印文档的特定页面吗？
+### 问题 1: 我可以使用 Aspose.Words for Java 打印文档的特定页面吗？
 
 是的，您可以在打印文档时指定页面范围。在代码示例中，我们使用了`attributes.add(new PageRanges(1, doc.getPageCount()))`打印所有页面。您可以根据需要调整页面范围。
 

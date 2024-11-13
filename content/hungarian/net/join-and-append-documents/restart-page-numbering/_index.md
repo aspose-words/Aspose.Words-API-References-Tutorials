@@ -35,9 +35,9 @@ Most pedig nézzük meg a dokumentumokon belüli oldalszámozás újraindítás�
 
 ## 1. lépés: Töltse be a forrás- és céldokumentumot:
 
- Határozzon meg egy karakterlánc-változót`dataDir` hogy tárolja a dokumentumkönyvtár elérési útját. Cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a tényleges hellyel.
+Határozzon meg egy karakterlánc-változót`dataDir` hogy tárolja a dokumentumkönyvtár elérési útját. Cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a tényleges hellyel.
 
- Hozzon létre kettőt`Document` objektumok segítségével`Aspose.Words.Document`konstruktőr. Az első (`srcDoc`) fogja tárolni a csatolandó tartalmat tartalmazó forrásdokumentumot. A második (`dstDoc`) jelenti azt a céldokumentumot, amelybe integráljuk a forrástartalmat az újraindított oldalszámozással.
+ Hozzon létre kettőt`Document` objektumok segítségével`Aspose.Words.Document` konstruktőr. Az első (`srcDoc`) fogja tárolni a csatolandó tartalmat tartalmazó forrásdokumentumot. A második (`dstDoc`) jelenti azt a céldokumentumot, amelybe integráljuk a forrástartalmat az újraindított oldalszámozással.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Cserélje le a tényleges könyvtárával
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## 3. lépés: Az oldalszámozás újraindításának engedélyezése:
 
- Ugyanezen belül`PageSetup` a forrásdokumentum első szakaszának objektumát, állítsa be a`RestartPageNumbering`tulajdonát`true`. Ez a döntő lépés arra utasítja az Aspose.Words-t, hogy kezdje újra az oldalszámozást a hozzáfűzött tartalomhoz.
+ Ugyanezen belül`PageSetup` a forrásdokumentum első szakaszának objektumát, állítsa be a`RestartPageNumbering`tulajdonát`true`Ez a döntő lépés arra utasítja az Aspose.Words-t, hogy kezdje újra az oldalszámozást a hozzáfűzött tartalomhoz.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

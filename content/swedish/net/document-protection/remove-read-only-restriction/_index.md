@@ -101,7 +101,7 @@ Ja, det är valfritt att ställa in ett lösenord. Du kan direkt ta bort skrivsk
 
 ### Vad händer om dokumentet redan har en annan typ av skydd?
 
- De`doc.Protect(ProtectionType.NoProtection)` metod säkerställer att alla typer av skydd tas bort från dokumentet.
+De`doc.Protect(ProtectionType.NoProtection)` metod säkerställer att alla typer av skydd tas bort från dokumentet.
 
 ### Finns det något sätt att veta om ett dokument är skrivskyddat innan du tar bort begränsningen?
 

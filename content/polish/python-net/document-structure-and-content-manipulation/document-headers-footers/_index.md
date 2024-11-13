@@ -1,13 +1,13 @@
 ---
 title: Manipulowanie nagłówkami i stopkami w dokumentach Word
 linktitle: Manipulowanie nagłówkami i stopkami w dokumentach Word
-second_title: Aspose.Words API do zarządzania dokumentami w języku Python
-description: Naucz się manipulować nagłówkami i stopkami w dokumentach programu Word przy użyciu Aspose.Words dla Pythona. Przewodnik krok po kroku z kodem źródłowym umożliwiającym dostosowywanie, dodawanie, usuwanie i nie tylko. Ulepsz formatowanie swojego dokumentu już teraz!
+second_title: Aspose.Words API zarządzania dokumentami Python
+description: Naucz się manipulować nagłówkami i stopkami w dokumentach Worda za pomocą Aspose.Words dla Pythona. Przewodnik krok po kroku z kodem źródłowym do dostosowywania, dodawania, usuwania i nie tylko. Ulepsz formatowanie swojego dokumentu już teraz!
 type: docs
 weight: 16
 url: /pl/python-net/document-structure-and-content-manipulation/document-headers-footers/
 ---
-Nagłówki i stopki w dokumentach programu Word odgrywają kluczową rolę w zapewnianiu kontekstu, budowania marki i dodatkowych informacji do treści. Manipulowanie tymi elementami za pomocą interfejsu API Aspose.Words for Python może znacząco poprawić wygląd i funkcjonalność dokumentów. W tym przewodniku krok po kroku odkryjemy, jak pracować z nagłówkami i stopkami za pomocą Aspose.Words dla Pythona.
+Nagłówki i stopki w dokumentach Word odgrywają kluczową rolę w zapewnianiu kontekstu, marki i dodatkowych informacji do Twojej treści. Manipulowanie tymi elementami za pomocą Aspose.Words for Python API może znacznie poprawić wygląd i funkcjonalność Twoich dokumentów. W tym przewodniku krok po kroku przyjrzymy się, jak pracować z nagłówkami i stopkami za pomocą Aspose.Words for Python.
 
 
 ## Pierwsze kroki z Aspose.Words dla Pythona
@@ -20,7 +20,7 @@ Zanim zagłębisz się w manipulację nagłówkiem i stopką, musisz skonfigurow
 pip install aspose-words
 ```
 
-2. Importowanie modułu: Zaimportuj wymagany moduł do skryptu Python.
+2. Importowanie modułu: Zaimportuj wymagany moduł do skryptu Pythona.
 
 ```python
 import aspose.words
@@ -28,7 +28,7 @@ import aspose.words
 
 ## Dodawanie prostego nagłówka i stopki
 
-Aby dodać podstawowy nagłówek i stopkę do dokumentu programu Word, wykonaj następujące kroki:
+Aby dodać podstawowy nagłówek i stopkę do dokumentu Word, wykonaj następujące kroki:
 
 1. Tworzenie dokumentu: Utwórz nowy dokument Word za pomocą Aspose.Words.
 
@@ -36,7 +36,7 @@ Aby dodać podstawowy nagłówek i stopkę do dokumentu programu Word, wykonaj n
 doc = aspose.words.Document()
 ```
 
-2.  Dodawanie nagłówka i stopki: Użyj metody`sections` właściwość dokumentu umożliwiająca dostęp do sekcji. Następnie skorzystaj z`headers_footers` właściwość dodawania nagłówków i stopek.
+2.  Dodawanie nagłówka i stopki: Użyj`sections` właściwości dokumentu, aby uzyskać dostęp do sekcji. Następnie wykorzystaj`headers_footers` właściwość umożliwiająca dodanie nagłówków i stopek.
 
 ```python
 section = doc.sections[0]
@@ -56,7 +56,7 @@ footer_run = footer_paragraph.runs.add()
 footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
 ```
 
-4. Zapisywanie dokumentu: Zapisz dokument wraz z nagłówkiem i stopką.
+4. Zapisywanie dokumentu: Zapisz dokument z nagłówkiem i stopką.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,7 +73,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Dodawanie tabel: Dołącz tabele zawierające informacje tabelaryczne.
+2. Dodawanie tabel: Dodawanie tabel w celu uzyskania informacji tabelarycznych.
 
 ```python
 footer_table = footer.add_table(1, 2)
@@ -87,11 +87,11 @@ footer_table.rows[0].cells[1].text = "All rights reserved."
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
 ```
 
-## Różne nagłówki i stopki dla stron nieparzystych i parzystych
+## Różne nagłówki i stopki dla stron parzystych i nieparzystych
 
-Tworzenie różnych nagłówków i stopek dla stron nieparzystych i parzystych może nadać Twoim dokumentom profesjonalny charakter. Oto jak:
+Tworzenie różnych nagłówków i stopek dla stron nieparzystych i parzystych może dodać Twoim dokumentom profesjonalnego charakteru. Oto jak to zrobić:
 
-1. Ustawianie układu strony nieparzystej i parzystej: Zdefiniuj układ, aby umożliwić różne nagłówki i stopki dla stron nieparzystych i parzystych.
+1. Ustawianie układu stron nieparzystych i parzystych: Zdefiniuj układ, aby umożliwić używanie różnych nagłówków i stopek dla stron nieparzystych i parzystych.
 
 ```python
 section = doc.sections[0]
@@ -99,7 +99,7 @@ section.page_setup.different_first_page_header_footer = True
 section.page_setup.odd_and_even_pages_header_footer = True
 ```
 
-2. Dodawanie nagłówków i stopek: Dodaj nagłówki i stopki dla pierwszej strony, stron nieparzystych i parzystych.
+2. Dodawanie nagłówków i stopek: Dodaj nagłówki i stopki dla pierwszej strony, stron nieparzystych i stron parzystych.
 
 ```python
 header_first = section.headers_footers[aspose.words.HeaderFooterType.HEADER_FIRST]
@@ -114,7 +114,7 @@ footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 
 ## Usuwanie nagłówków i stopek
 
-Aby usunąć nagłówki i stopki z dokumentu programu Word:
+Aby usunąć nagłówki i stopki z dokumentu Word:
 
 1. Usuwanie nagłówków i stopek: Wyczyść zawartość nagłówków i stopek.
 
@@ -134,20 +134,20 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### Jak uzyskać dostęp do zawartości nagłówka i stopki?
 
- Aby uzyskać dostęp do zawartości nagłówka i stopki, użyj opcji`headers_footers` właściwość sekcji dokumentu.
+ Aby uzyskać dostęp do zawartości nagłówka i stopki, użyj`headers_footers` własność sekcji dokumentu.
 
 ### Czy mogę dodawać obrazy do nagłówków i stopek?
 
  Tak, możesz dodawać obrazy do nagłówków i stopek za pomocą`add_picture` metoda.
 
-### Czy można mieć różne nagłówki dla stron nieparzystych i parzystych?
+### Czy możliwe jest ustawienie różnych nagłówków dla stron parzystych i nieparzystych?
 
-Oczywiście możesz tworzyć różne nagłówki i stopki dla stron nieparzystych i parzystych, włączając odpowiednie ustawienia.
+Oczywiście, możesz utworzyć różne nagłówki i stopki dla stron parzystych i nieparzystych, włączając odpowiednie ustawienia.
 
-### Czy mogę usunąć nagłówki i stopki z określonych stron?
+### Czy mogę usunąć nagłówki i stopki z wybranych stron?
 
 Tak, możesz wyczyścić zawartość nagłówków i stopek, aby skutecznie je usunąć.
 
-### Gdzie mogę dowiedzieć się więcej o Aspose.Words dla Pythona?
+### Gdzie mogę dowiedzieć się więcej o Aspose.Words dla języka Python?
 
-Bardziej szczegółową dokumentację i przykłady można znaleźć na stronie[Aspose.Words — dokumentacja API języka Python](https://reference.aspose.com/words/python-net/).
+Aby uzyskać bardziej szczegółową dokumentację i przykłady, odwiedź stronę[Aspose.Words dla API Pythona](https://reference.aspose.com/words/python-net/).

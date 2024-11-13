@@ -1,6 +1,6 @@
 ---
-title: 带修订的文字处理
-linktitle: 带修订的文字处理
+title: 文字处理与修订
+linktitle: 文字处理与修订
 second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的修订版本。分步教程，包含用于管理和查看修订版本的示例代码。
 type: docs
@@ -16,7 +16,7 @@ url: /zh/net/working-with-revisions/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [接受修订](./accept-revisions/) | 使用 Aspose.Words for .NET 掌握文档修订。学习如何轻松跟踪、接受和拒绝更改。提升您的文档管理技能。 |
+| [接受修订](./accept-revisions/) | 使用 Aspose.Words for .NET 掌握文档修订。学习如何轻松跟踪、接受和拒绝更改。提高您的文档管理技能。 |
 | [获取单词的修订类型](./get-revision-types/) |了解如何使用 Aspose.Words for .NET 获取 Word 文档中单词的修订类型。本分步指南可帮助您高效处理文档修订。 |
 | [获取修订组](./get-revision-groups/) | 通过这份全面的分步指南，了解如何使用 Aspose.Words for .NET 从 Word 文档中检索修订组。非常适合文档管理。 |
 | [删除 PDF 文件中的注释](./remove-comments-in-pdf/) | 通过我们的分步指南了解如何使用 Aspose.Words for .NET 从 PDF 文件中删除注释。 |

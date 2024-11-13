@@ -1,8 +1,8 @@
 ---
 title: Zabezpieczanie dokumentów za pomocą zaawansowanych technik ochrony
 linktitle: Zabezpieczanie dokumentów za pomocą zaawansowanych technik ochrony
-second_title: Aspose.Words API do zarządzania dokumentami w języku Python
-description: Zabezpiecz swoje dokumenty zaawansowaną ochroną za pomocą Aspose.Words dla Pythona. Dowiedz się, jak dodawać hasła, szyfrować zawartość, stosować podpisy cyfrowe i nie tylko.
+second_title: Aspose.Words API zarządzania dokumentami Python
+description: Zabezpiecz swoje dokumenty za pomocą zaawansowanej ochrony za pomocą Aspose.Words for Python. Dowiedz się, jak dodawać hasła, szyfrować zawartość, stosować podpisy cyfrowe i nie tylko.
 type: docs
 weight: 16
 url: /pl/python-net/document-combining-and-comparison/secure-documents-protection/
@@ -10,11 +10,11 @@ url: /pl/python-net/document-combining-and-comparison/secure-documents-protectio
 
 ## Wstęp
 
-W epoce cyfrowej naruszenia bezpieczeństwa danych i nieuprawniony dostęp do poufnych informacji stanowią częsty problem. Aspose.Words dla Pythona oferuje solidne rozwiązanie do zabezpieczania dokumentów przed takimi zagrożeniami. Ten przewodnik pokaże, jak używać Aspose.Words do wdrażania zaawansowanych technik ochrony dokumentów.
+W tej cyfrowej erze naruszenia danych i nieautoryzowany dostęp do poufnych informacji są powszechnymi obawami. Aspose.Words dla Pythona oferuje solidne rozwiązanie do zabezpieczania dokumentów przed takimi zagrożeniami. Ten przewodnik pokaże, jak używać Aspose.Words do wdrażania zaawansowanych technik ochrony dokumentów.
 
 ## Instalowanie Aspose.Words dla Pythona
 
-Aby rozpocząć, musisz zainstalować Aspose.Words dla Pythona. Możesz go łatwo zainstalować za pomocą pip:
+Aby zacząć, musisz zainstalować Aspose.Words dla Pythona. Możesz łatwo zainstalować go za pomocą pip:
 
 ```python
 pip install aspose-words
@@ -32,7 +32,7 @@ doc = aw.Document("document.docx")
 
 ## Stosowanie ochrony hasłem
 
-Możesz dodać hasło do swojego dokumentu, aby ograniczyć dostęp:
+Możesz dodać hasło do dokumentu, aby ograniczyć dostęp:
 
 ```python
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
@@ -57,14 +57,14 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 
 ## Podpisy cyfrowe
 
-Dodaj podpis cyfrowy, aby zapewnić autentyczność dokumentu:
+Dodaj podpis cyfrowy, aby potwierdzić autentyczność dokumentu:
 
 ```python
 digital_signature = aw.digital_signatures.DigitalSignature(doc)
 digital_signature.sign("certificate.pfx", "signature_password")
 ```
 
-## Znak wodny dla bezpieczeństwa
+## Znakowanie wodne dla bezpieczeństwa
 
 Znaki wodne mogą zniechęcać do nieautoryzowanego udostępniania:
 
@@ -73,7 +73,7 @@ watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
 ```
 
-## Redagowanie informacji wrażliwych
+## Redagowanie poufnych informacji
 
 Aby trwale usunąć poufne informacje:
 
@@ -84,26 +84,26 @@ doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 
 ## Wniosek
 
-Aspose.Words dla Pythona umożliwia zabezpieczenie dokumentów przy użyciu zaawansowanych technik. Od ochrony hasłem i szyfrowania po podpisy cyfrowe i redakcję — funkcje te zapewniają, że Twoje dokumenty pozostaną poufne i zabezpieczone przed manipulacją.
+Aspose.Words for Python umożliwia zabezpieczanie dokumentów za pomocą zaawansowanych technik. Od ochrony hasłem i szyfrowania po podpisy cyfrowe i redagowanie, te funkcje zapewniają, że Twoje dokumenty pozostaną poufne i odporne na manipulacje.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak mogę zainstalować Aspose.Words dla Pythona?
+### Jak zainstalować Aspose.Words dla języka Python?
 
- Możesz go zainstalować za pomocą pip, uruchamiając:`pip install aspose-words`.
+ Możesz zainstalować go za pomocą pip, uruchamiając:`pip install aspose-words`.
 
-### Czy mogę ograniczyć edycję dla określonych grup?
+### Czy mogę ograniczyć możliwość edycji dla określonych grup?
 
  Tak, możesz ustawić uprawnienia do edycji dla określonych grup za pomocą`protection.set_editing_groups(["Editors"])`.
 
 ### Jakie opcje szyfrowania oferuje Aspose.Words?
 
-Aspose.Words oferuje opcje szyfrowania, takie jak AES_256, w celu zabezpieczenia zawartości dokumentu.
+Aspose.Words oferuje opcje szyfrowania, np. AES_256, w celu zabezpieczenia zawartości dokumentu.
 
 ### W jaki sposób podpisy cyfrowe zwiększają bezpieczeństwo dokumentów?
 
-Podpisy cyfrowe zapewniają autentyczność i integralność dokumentów, utrudniając osobom nieupoważnionym manipulowanie ich treścią.
+Podpisy cyfrowe gwarantują autentyczność i integralność dokumentów, dzięki czemu osobom nieupoważnionym trudniej jest manipulować ich treścią.
 
-### Jak trwale usunąć poufne informacje z dokumentu?
+### Jak mogę trwale usunąć poufne informacje z dokumentu?
 
-Skorzystaj z funkcji redakcji, aby trwale usunąć poufne informacje z dokumentu.
+Skorzystaj z funkcji redagowania, aby trwale usunąć poufne informacje z dokumentu.

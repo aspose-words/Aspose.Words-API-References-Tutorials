@@ -111,7 +111,7 @@ doc.save("FormattedDocument.doc");
 
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση και πόρους για το Aspose.Words για Java;
 
- Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση, δείγματα κώδικα και μαθήματα για το Aspose.Words για Java στον ιστότοπο Aspose:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/). Αυτός ο πόρος θα σας βοηθήσει να εξερευνήσετε πρόσθετες δυνατότητες και λειτουργίες της βιβλιοθήκης.
+ Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση, δείγματα κώδικα και μαθήματα για το Aspose.Words για Java στον ιστότοπο Aspose:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/)Αυτός ο πόρος θα σας βοηθήσει να εξερευνήσετε πρόσθετες δυνατότητες και λειτουργίες της βιβλιοθήκης.
 
 ### Πώς μπορώ να λάβω υποστήριξη ή να αναζητήσω βοήθεια με το Aspose.Words για Java;
 

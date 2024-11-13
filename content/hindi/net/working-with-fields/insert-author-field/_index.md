@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-अब जबकि हमने नेमस्पेस आयात कर लिया है, तो चलिए चरण-दर-चरण मार्गदर्शिका पर चलते हैं।
+अब जब हमने नेमस्पेस आयात कर लिया है, तो चलिए चरण-दर-चरण मार्गदर्शिका पर चलते हैं।
 
 ## चरण 1: अपना प्रोजेक्ट सेट करें
 
@@ -69,7 +69,7 @@ Document doc = new Document();
 2. पैराग्राफ जोड़ें: इसके बाद, हम दस्तावेज़ में एक पैराग्राफ जोड़ेंगे।
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 यह पैराग्राफ वह स्थान होगा जहां हम अपना लेखक फ़ील्ड डालेंगे।

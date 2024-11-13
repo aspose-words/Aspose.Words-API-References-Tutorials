@@ -96,7 +96,7 @@ doc.Save(dataDir + "WorkingWithTables.AutoFitTableToWindow.docx");
 ### 如果我的表格有我想保留的特定列宽该怎么办？  
 自动调整将覆盖特定的列宽。如果您需要保持一定的宽度，则可能需要在应用自动调整之前手动调整列。
 
-### 我可以对其他文档格式的表格使用自动调整功能吗？  
+### 我可以对其他文档格式的表格使用自动适应功能吗？  
 Aspose.Words 主要支持 Word 文档 (.docx)。对于其他格式，您可能需要先将其转换为 .docx。
 
 ### 如何获得 Aspose.Words 的试用版？  

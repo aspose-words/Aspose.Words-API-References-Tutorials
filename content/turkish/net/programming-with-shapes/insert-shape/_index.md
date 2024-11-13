@@ -2,35 +2,35 @@
 title: Şekil Ekle
 linktitle: Şekil Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerine şekilleri nasıl ekleyeceğinizi ve değiştireceğinizi öğrenin.
+description: Aspose.Words for .NET'i kullanarak Word belgelerine şekil eklemeyi ve düzenlemeyi adım adım anlatan kılavuzumuzla öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-shapes/insert-shape/
 ---
 ## giriiş
 
-Görsel olarak çekici ve iyi yapılandırılmış Word belgeleri oluşturma söz konusu olduğunda şekiller hayati bir rol oynayabilir. İster oklar, kutular, hatta karmaşık özel şekiller ekliyor olun, bu öğeleri programlı olarak değiştirme yeteneği benzersiz bir esneklik sunar. Bu eğitimde Aspose.Words for .NET kullanarak Word belgelerine şekillerin nasıl eklendiğini ve değiştirildiğini inceleyeceğiz.
+Görsel olarak çekici ve iyi yapılandırılmış Word belgeleri oluşturmaya gelince, şekiller hayati bir rol oynayabilir. Oklar, kutular veya hatta karmaşık özel şekiller ekliyor olun, bu öğeleri programatik olarak düzenleme yeteneği benzersiz bir esneklik sunar. Bu eğitimde, .NET için Aspose.Words kullanarak Word belgelerine şekillerin nasıl ekleneceğini ve düzenleneceğini keşfedeceğiz.
 
-## Önkoşullar
+## Ön koşullar
 
-Eğiticiye dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+Eğitime başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-1.  Aspose.Words for .NET: En son sürümü şuradan indirin ve yükleyin:[Aspose sürümler sayfası](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: En son sürümü indirin ve yükleyin[Aspose sürüm sayfası](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio gibi uygun bir .NET geliştirme ortamı.
-3. Temel C# Bilgisi: C# programlama diline ve temel kavramlara aşinalık.
+3. C# Temel Bilgisi: C# programlama dili ve temel kavramlara aşinalık.
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamak için C# projenize gerekli ad alanlarını içe aktarmanız gerekir:
+Başlamak için, C# projenize gerekli ad alanlarını içe aktarmanız gerekir:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## 1. Adım: Projenizi Kurun
+## Adım 1: Projenizi Kurun
 
-Şekil eklemeye başlamadan önce projenizi ayarlamanız ve Aspose.Words for .NET kitaplığını eklemeniz gerekir.
+Şekil eklemeye başlamadan önce projenizi ayarlamanız ve Aspose.Words for .NET kütüphanesini eklemeniz gerekir.
 
 1. Yeni Bir Proje Oluşturun: Visual Studio'yu açın ve yeni bir C# Konsol Uygulaması projesi oluşturun.
 2. Aspose.Words for .NET'i ekleyin: Aspose.Words for .NET kitaplığını NuGet Paket Yöneticisi aracılığıyla yükleyin.
@@ -41,39 +41,39 @@ Install-Package Aspose.Words
 
 ## Adım 2: Belgeyi Başlatın
 
-İlk olarak, yeni bir belgeyi ve belgenin oluşturulmasına yardımcı olacak bir belge oluşturucuyu başlatmanız gerekir.
+Öncelikle yeni bir belge ve belgenin oluşturulmasına yardımcı olacak bir belge oluşturucu başlatmanız gerekecek.
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Yeni bir belge başlat
 Document doc = new Document();
 
-// Belgeyi oluşturmaya yardımcı olması için DocumentBuilder'ı başlatın
+// Belgeyi oluşturmaya yardımcı olması için bir DocumentBuilder başlatın
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Şekil Ekleme
+## Adım 3: Bir Şekil Ekle
 
 Şimdi belgeye bir şekil ekleyelim. Basit bir metin kutusu ekleyerek başlayacağız.
 
 ```csharp
-// Belgeye metin kutusu şekli ekleme
+// Belgeye bir metin kutusu şekli ekleyin
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100, RelativeVerticalPosition.Page, 100, 50, 50, WrapType.None);
 
 // Şekli döndür
 shape.Rotation = 30.0;
 ```
 
-Bu örnekte (100, 100) konumuna genişliği ve yüksekliği 50 birim olan bir metin kutusu ekliyoruz. Ayrıca şekli 30 derece döndürüyoruz.
+Bu örnekte, (100, 100) konumuna her biri 50 birim genişlik ve yükseklikte bir metin kutusu ekliyoruz. Ayrıca şekli 30 derece döndürüyoruz.
 
 ## Adım 4: Başka Bir Şekil Ekleyin
 
-Bu sefer konumu belirtmeden belgeye başka bir şekil ekleyelim.
+Belgeye bir şekil daha ekleyelim, bu sefer konumunu belirtmeyelim.
 
 ```csharp
-// Başka bir metin kutusu şekli ekleme
+// Başka bir metin kutusu şekli ekle
 Shape secondShape = builder.InsertShape(ShapeType.TextBox, 50, 50);
 
 // Şekli döndür
@@ -84,10 +84,10 @@ Bu kod parçacığı, ilkiyle aynı boyutlara ve dönüşe sahip ancak konumunu 
 
 ## Adım 5: Belgeyi Kaydedin
 
- Şekilleri ekledikten sonra son adım belgeyi kaydetmektir. biz kullanacağız`OoxmlSaveOptions` Kaydetme formatını belirtmek için
+ Şekilleri ekledikten sonra son adım belgeyi kaydetmektir.`OoxmlSaveOptions` kaydetme biçimini belirtmek için.
 
 ```csharp
-// Kaydetme seçeneklerini uyumlulukla tanımlayın
+// Uygunlukla kaydetme seçeneklerini tanımlayın
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 {
     Compliance = OoxmlCompliance.Iso29500_2008_Transitional
@@ -99,23 +99,23 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesine şekilleri başarılı bir şekilde eklediniz ve değiştirdiniz. Bu eğitimde temel bilgiler yer alıyordu ancak Aspose.Words, şekillerle çalışmak için özel stiller, bağlayıcılar ve grup şekilleri gibi daha birçok gelişmiş özellik sunuyor.
+Ve işte oldu! Aspose.Words for .NET kullanarak bir Word belgesine şekilleri başarıyla eklediniz ve düzenlediniz. Bu eğitim temelleri kapsıyordu, ancak Aspose.Words şekillerle çalışmak için özel stiller, bağlayıcılar ve grup şekilleri gibi çok daha gelişmiş özellikler sunuyor.
 
- Daha ayrıntılı bilgi için şu adresi ziyaret edin:[Aspose.Words for .NET belgeleri](https://reference.aspose.com/words/net/).
+ Daha detaylı bilgi için şu adresi ziyaret edin:[Aspose.Words for .NET belgeleri](https://reference.aspose.com/words/net/).
 
-## SSS'ler
+## SSS
 
 ### Farklı şekil türlerini nasıl eklerim?
-değiştirebilirsiniz`ShapeType` içinde`InsertShape` Daireler, dikdörtgenler ve oklar gibi farklı türdeki şekilleri ekleme yöntemini kullanın.
+Değiştirebilirsiniz`ShapeType` içinde`InsertShape` Daire, dikdörtgen ve ok gibi farklı şekil türlerini ekleme yöntemi.
 
 ### Şekillerin içine metin ekleyebilir miyim?
- Evet, kullanabilirsiniz`builder.Write` Şekilleri ekledikten sonra içine metin ekleme yöntemi.
+ Evet, kullanabilirsiniz`builder.Write` Şekilleri ekledikten sonra içlerine metin ekleme yöntemi.
 
-### Şekillere stil vermek mümkün mü?
- Evet, aşağıdaki gibi özellikleri ayarlayarak şekillere stil verebilirsiniz:`FillColor`, `StrokeColor` , Ve`StrokeWeight`.
+### Şekilleri biçimlendirmek mümkün mü?
+ Evet, şekilleri şu şekilde özellikler ayarlayarak biçimlendirebilirsiniz:`FillColor`, `StrokeColor` , Ve`StrokeWeight`.
 
-### Şekilleri diğer öğelere göre nasıl konumlandırırım?
- Kullanın`RelativeHorizontalPosition`Ve`RelativeVerticalPosition` şekilleri belgedeki diğer öğelere göre konumlandırmak için özellikler.
+### Şekilleri diğer öğelere göre nasıl konumlandırabilirim?
+ Kullanın`RelativeHorizontalPosition` Ve`RelativeVerticalPosition` Şekilleri belgedeki diğer öğelere göre konumlandırmak için özellikler.
 
-### Birden fazla şekli birlikte gruplayabilir miyim?
- Evet, Aspose.Words for .NET, şekilleri gruplandırmanıza olanak tanır.`GroupShape` sınıf.
+### Birden fazla şekli bir arada gruplayabilir miyim?
+ Evet, Aspose.Words for .NET, şekilleri gruplandırmanıza olanak tanır`GroupShape` sınıf.

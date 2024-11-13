@@ -2,7 +2,7 @@
 title: सटीकता के लिए कंटेंट बिल्डर के साथ दस्तावेजों को विभाजित करना
 linktitle: सटीकता के लिए कंटेंट बिल्डर के साथ दस्तावेजों को विभाजित करना
 second_title: Aspose.Words पायथन दस्तावेज़ प्रबंधन API
-description: Python के लिए Aspose.Words का उपयोग करके अपने दस्तावेज़ों को सटीकता से विभाजित और जीतें। कुशल सामग्री निष्कर्षण और संगठन के लिए कंटेंट बिल्डर का लाभ उठाने का तरीका जानें।
+description: Python के लिए Aspose.Words का उपयोग करके अपने दस्तावेज़ों को सटीकता से विभाजित और जीतें। कुशल सामग्री निष्कर्षण और संगठन के लिए Content Builder का लाभ उठाने का तरीका जानें।
 type: docs
 weight: 11
 url: /hi/python-net/document-splitting-and-formatting/divide-documents-content-builder/
@@ -100,5 +100,5 @@ for section in sections:
 ### क्या Aspose.Words रिपोर्ट तैयार करने के लिए उपयुक्त है?
 बिल्कुल! पायथन के लिए Aspose.Words का उपयोग सटीक स्वरूपण के साथ विभिन्न प्रकार की रिपोर्ट और दस्तावेज़ बनाने के लिए व्यापक रूप से किया जाता है।
 
-### मैं दस्तावेज और डाउनलोड कहां से प्राप्त कर सकता हूं?
+### मैं दस्तावेज़ और डाउनलोड कहां से प्राप्त कर सकता हूं?
  दौरा करना[पायथन दस्तावेज़ीकरण के लिए Aspose.Words](https://reference.aspose.com/words/python-net/) और लाइब्रेरी को यहाँ से डाउनलोड करें[Aspose.Words पायथन रिलीज़](https://releases.aspose.com/words/python/).

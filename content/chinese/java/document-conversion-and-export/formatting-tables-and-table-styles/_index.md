@@ -1,287 +1,188 @@
 ---
-title: 在 Aspose.Words for Java 中格式化表格和表格样式
+title: 格式化表格和表格样式
 linktitle: 格式化表格和表格样式
 second_title: Aspose.Words Java 文档处理 API
-description: 了解如何在 Aspose.Words for Java 中格式化表格并应用表格样式。探索带有源代码的分步指南，以实现有效的表格格式化。使用 Aspose.Words 增强文档布局。
+description: 了解如何使用 Aspose.Words for Java 格式化表格并应用样式。本分步指南涵盖设置边框、为单元格添加阴影以及应用表格样式。
 type: docs
 weight: 17
 url: /zh/java/document-conversion-and-export/formatting-tables-and-table-styles/
 ---
 
-## Aspose.Words for Java 中表格格式化和表格样式简介
+## 介绍
 
-表格在文档中构建和组织信息方面起着至关重要的作用。Aspose.Words for Java 提供了强大的功能来格式化表格和应用表格样式，以增强文档的视觉吸引力。在本分步指南中，我们将探索使用 Aspose.Words for Java 格式化表格和应用表格样式的各个方面。
+在文档格式方面，表格在组织和清晰呈现数据方面起着至关重要的作用。如果您使用 Java 和 Aspose.Words，则可以使用强大的工具来创建和格式化文档中的表格。无论您是设计简单表格还是应用高级样式，Aspose.Words for Java 都提供了一系列功能来帮助您实现专业效果。
+
+在本指南中，我们将引导您完成使用 Aspose.Words for Java 格式化表格和应用表格样式的过程。您将学习如何设置表格边框、应用单元格阴影以及使用表格样式来增强文档的外观。最后，您将掌握创建格式良好的表格的技能，让您的数据脱颖而出。
 
 ## 先决条件
 
-在深入讨论细节之前，请确保您已将 Aspose.Words for Java 库集成到您的项目中。您可以从 Aspose 网站下载它：[下载 Aspose.Words for Java](https://releases.aspose.com/words/java/).
+在开始之前，您需要做好以下几件事：
 
-## 获取表格与周围文本之间的距离
+1. Java 开发工具包 (JDK)：确保您已安装 JDK 8 或更高版本。Aspose.Words for Java 需要兼容的 JDK 才能正确运行。
+2. 集成开发环境 (IDE)：IntelliJ IDEA 或 Eclipse 等 IDE 将帮助您管理 Java 项目并简化开发流程。
+3.  Aspose.Words for Java 库：下载最新版本的 Aspose.Words for Java[这里](https://releases.aspose.com/words/java/)并将其包含在您的项目中。
+4. 示例代码：我们将使用一些示例代码片段，因此请确保您对 Java 编程以及如何将库集成到项目中有基本的了解。
 
-首先，让我们探索如何检索表格和文档中周围文本之间的距离。
+## 导入包
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-System.out.println("Distance Top: " + table.getDistanceTop());
-System.out.println("Distance Bottom: " + table.getDistanceBottom());
-System.out.println("Distance Right: " + table.getDistanceRight());
-System.out.println("Distance Left: " + table.getDistanceLeft());
-```
-
-## 将外框应用于表格
-
-您可以使用以下代码将表格对齐到页面中心、清除现有边框以及设置自定义轮廓边框：
+要使用 Aspose.Words for Java，您需要将相关包导入到您的项目中。这些包提供了操作和格式化文档所需的类和方法。
 
 ```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAlignment(TableAlignment.CENTER);
-table.clearBorders();
-table.setBorder(BorderType.LEFT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.RIGHT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.TOP, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
+import com.aspose.words.*;
 ```
 
-## 创建带边框的表格
+此导入语句使您可以访问在文档中创建和格式化表格所需的所有基本类。
 
-此代码片段演示了如何创建表格并为表格及其单元格设置边框：
+## 步骤 1：格式化表格
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.clearBorders();
-table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
-```
+在 Aspose.Words for Java 中格式化表格涉及设置边框、为单元格添加阴影以及应用各种格式化选项。您可以这样做：
 
-## 修改行格式
-
-了解如何修改表格中特定行的格式：
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Row firstRow = table.getFirstRow();
-firstRow.getRowFormat().getBorders().setLineStyle(LineStyle.NONE);
-firstRow.getRowFormat().setHeightRule(HeightRule.AUTO);
-firstRow.getRowFormat().setAllowBreakAcrossPages(true);
-```
-
-## 应用行格式
-
-此示例说明如何将格式应用于表中的整行：
+### 加载文档
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+### 创建并格式化表格
+
+```java
 Table table = builder.startTable();
 builder.insertCell();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
 
-## 设置单元格填充
-
-探索如何设置表格中各个单元格的填充：
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
-builder.insertCell();
-builder.getCellFormat().setPaddings(30.0, 50.0, 30.0, 50.0);
-builder.writeln("I'm a wonderfully formatted cell.");
-```
-
-## 修改单元格格式
-
-了解如何修改表格中特定单元格的格式：
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-firstCell.getCellFormat().setWidth(30.0);
-firstCell.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
-firstCell.getCellFormat().getShading().setForegroundPatternColor(Color.GREEN);
-```
-
-## 使用不同的边框格式化表格和单元格
-
-了解如何为表格中的各个单元格设置不同的边框：
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-//设置表格边框
+//设置整个表格的边框。
 table.setBorders(LineStyle.SINGLE, 2.0, Color.BLACK);
-//为单个单元格设置单元格底纹
+        
+//设置此单元格的单元格阴影。
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.RED);
-//向单元格添加内容
 builder.writeln("Cell #1");
+
 builder.insertCell();
+        
+//为第二个单元格指定不同的单元格阴影。
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.GREEN);
 builder.writeln("Cell #2");
-//清除下一行的单元格格式
+
+builder.endRow();
+```
+
+### 自定义单元格边框
+
+```java
+//清除以前操作的单元格格式。
 builder.getCellFormat().clearFormatting();
-//为该行的第一个单元格创建更大的边框
+
+builder.insertCell();
+
+//为该行的第一个单元格创建更大的边框。
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getBottom().setLineWidth(4.0);
 builder.writeln("Cell #3");
+
 builder.insertCell();
 builder.getCellFormat().clearFormatting();
 builder.writeln("Cell #4");
+        
+doc.save("FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-## 设置表标题和描述
+### 解释
 
-为表格添加标题和描述：
+在此示例中：
+- 设置边框：我们将整个表格的边框设置为单线样式，粗细为2.0磅。
+- 单元格阴影：第一个单元格为红色阴影，第二个单元格为绿色阴影。这有助于在视觉上区分单元格。
+- 单元格边框：对于第三个单元格，我们创建更粗的边框，以突出显示它与其他单元格的不同之处。
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setTitle("Test title");
-table.setDescription("Test description");
-```
+## 步骤 2：应用表格样式
 
-## 步骤 10：留出单元格间距
+Aspose.Words for Java 中的表格样式允许您将预定义的格式选项应用于表格，从而更轻松地实现一致的外观。以下是如何将样式应用于表格：
 
-允许单元格间距并为表格设置其值：
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAllowCellSpacing(true);
-table.setCellSpacing(2.0);
-```
-
-## 步骤 11：构建具有样式的表格
-
-创建具有预定义样式的表格：
+### 创建文档和表
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
 Table table = builder.startTable();
+        
+//在设置任何表格格式之前，我们必须先插入至少一行。
+builder.insertCell();
+```
+
+### 应用表格样式
+
+```java
+//根据唯一的样式标识符设置表格样式。
 table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
+        
+//应用应按样式格式化的特征。
 table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
+table.autoFit(AutoFitBehavior.AUTO_FIT_TO_CONTENTS);
+```
+
+### 添加表数据
+
+```java
 builder.writeln("Item");
 builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
 builder.writeln("Quantity (kg)");
-```
+builder.endRow();
 
-## 步骤 12：从样式扩展单元格和行的格式
-
-了解如何扩展表格样式以将格式应用于单元格和行：
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-Color cellShadingBefore = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-doc.expandTableStylesToDirectFormatting();
-Color cellShadingAfter = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-```
-
-## 步骤 13：创建表格样式
-
-创建具有特定格式的自定义表格样式：
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
-table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
-builder.writeln("Item");
-builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
-builder.writeln("Quantity (kg)");
-```
-
-## 步骤 14：定义条件格式
-
-将条件格式应用到表中的行：
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-TableStyle tableStyle = (TableStyle) doc.getStyles().add(StyleType.TABLE, "MyTableStyle1");
-tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatternColor(Color.yellow);
-table.setStyle(tableStyle);
-```
-
-## 步骤 15：设置 TableCell 格式
-
-为各个单元格设置特定格式：
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
+builder.writeln("Apples");
 builder.insertCell();
-CellFormat cellFormat = builder.getCellFormat();
-cellFormat.setWidth(250.0);
-cellFormat.setLeftPadding(30.0);
-cellFormat.setRightPadding(30.0);
-cellFormat.setTopPadding(30.0);
-cellFormat.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted cell.");
+builder.writeln("20");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Bananas");
+builder.insertCell();
+builder.writeln("40");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Carrots");
+builder.insertCell();
+builder.writeln("50");
+builder.endRow();
+
+doc.save("BuildTableWithStyle.docx");
 ```
 
-## 步骤16：设置TableRow格式
+### 解释
 
-将格式应用于表中的整行：
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
+在此示例中：
+- 设置表格样式：我们应用预定义的样式（`MEDIUM_SHADING_1_ACCENT_1`) 添加到表格中。此样式包括表格不同部分的格式。
+- 样式选项：我们指定应根据样式选项设置第一列、行带和第一行的格式。
+- 自动调整：我们使用`AUTO_FIT_TO_CONTENTS`确保表格根据内容调整其大小。
 
 ## 结论
 
-Aspose.Words for Java 可让您精确格式化表格并应用表格样式。从修改单个单元格格式到创建自定义表格样式，您都拥有各种工具，让您的文档看起来更具吸引力且井然有序。
+就这样！您已成功使用 Aspose.Words for Java 格式化表格并应用样式。借助这些技术，您可以创建不仅实用而且外观美观的表格。有效格式化表格可以大大提高文档的可读性和专业外观。
+
+Aspose.Words for Java 是一款功能强大的工具，可提供丰富的文档处理功能。通过掌握表格格式和样式，您距离充分利用此库的功能更近了一步。
 
 ## 常见问题解答
 
-### 如何下载 Aspose.Words for Java？
+### 1. 我可以使用默认选项中未包含的自定义表格样式吗？
 
-您可以从 Aspose 网站下载 Aspose.Words for Java：[下载 Aspose.Words for Java](https://releases.aspose.com/words/java/).
+是的，您可以使用 Aspose.Words for Java 定义自定义样式并将其应用于表格。检查[文档](https://reference.aspose.com/words/java/)有关创建自定义样式的更多详细信息。
 
-### 我可以对表格中的各个单元格应用不同的边框吗？
+### 2. 如何将条件格式应用于表格？
 
-是的，您可以使用 Aspose.Words for Java 为表格中的各个单元格设置不同的边框，如本指南中所示。
+Aspose.Words for Java 允许您根据条件以编程方式调整表格格式。这可以通过检查代码中的特定条件并相应地应用格式来实现。
 
-### 设置表格标题和描述的目的是什么？
+### 3. 我可以设置表格中合并单元格的格式吗？
 
-设置表格标题和描述可以增强文档的可访问性和组织性，使读者和辅助技术更容易理解内容。
+是的，您可以像格式化普通单元格一样格式化合并单元格。请确保在合并单元格后应用格式，以查看更改是否反映出来。
 
-### 如何将条件格式应用于表中的特定行？
+### 4. 是否可以动态调整表格布局？
 
-您可以通过定义具有条件格式规则的自定义表格样式将条件格式应用于表格中的特定行，如本指南所示。
+是的，您可以根据内容或用户输入修改单元格大小、表格宽度和其他属性来动态调整表格布局。
 
-### 在哪里可以找到有关 Aspose.Words for Java 的更多文档和资源？
+### 5. 在哪里可以获得有关表格格式的更多信息？
 
-有关全面的文档和其他资源，请访问 Aspose.Words for Java 文档：[Aspose.Words for Java 文档](https://reference.aspose.com/words/java/).
+有关更多详细示例和选项，请访问[Aspose.Words API 文档](https://reference.aspose.com/words/java/).

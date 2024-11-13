@@ -42,7 +42,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Steg 2: Leta upp styckenoden
+## Steg 2: Leta reda på paragrafnoden
 
 Därefter måste vi hitta stycket där vi vill infoga fältet Mail Merge Address Block. För det här exemplet använder vi det första stycket i dokumentet.
 

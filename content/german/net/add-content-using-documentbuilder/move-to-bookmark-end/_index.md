@@ -1,6 +1,6 @@
 ---
-title: Im Word-Dokument ans Lesezeichenende verschieben
-linktitle: Im Word-Dokument ans Lesezeichenende verschieben
+title: An das Lesezeichenende im Word-Dokument verschieben
+linktitle: An das Lesezeichenende im Word-Dokument verschieben
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET zum Ende eines Lesezeichens in einem Word-Dokument wechseln. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung zur präzisen Dokumentbearbeitung.
 type: docs
@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Informationen zu MoveToBookmark
 
- Der`MoveToBookmark`Mit dieser Methode können Sie zu einem bestimmten Lesezeichen in Ihrem Dokument navigieren. Die Methodensignatur lautet:
+Der`MoveToBookmark`Mit dieser Methode können Sie zu einem bestimmten Lesezeichen in Ihrem Dokument navigieren. Die Methodensignatur lautet:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);
@@ -103,7 +103,7 @@ builder.MoveToBookmark("MyBookmark1", false, true);
 ## Schritt 5: Text am Lesezeichenende einfügen
 
 
-Wenn Sie am Ende des Lesezeichens angekommen sind, können Sie Text oder andere Inhalte einfügen. Fügen wir eine einfache Textzeile hinzu:
+Wenn Sie am Ende des Lesezeichens angekommen sind, können Sie Text oder anderen Inhalt einfügen. Fügen wir eine einfache Textzeile hinzu:
 
 ```csharp
 builder.Writeln("This is a bookmark.");
@@ -130,7 +130,7 @@ Da haben Sie es! Sie haben gerade gelernt, wie Sie mit Aspose.Words für .NET zu
 
 ### 1. Kann ich zum Anfang eines Lesezeichens statt zum Ende gehen?
 
- Absolut! Stellen Sie einfach die`isBookmarkStart` Parameter auf`true`Und`isBookmarkEnd` Zu`false` im`MoveToBookmark` Verfahren.
+ Absolut! Stellen Sie einfach die`isBookmarkStart` Parameter auf`true` Und`isBookmarkEnd` Zu`false` im`MoveToBookmark` Verfahren.
 
 ### 2. Was ist, wenn mein Lesezeichenname falsch ist?
 

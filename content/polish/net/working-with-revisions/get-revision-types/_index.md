@@ -1,28 +1,28 @@
 ---
-title: Uzyskaj typy wersji słów
-linktitle: Uzyskaj typy wersji słów
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak uzyskać typy wersji słów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ten przewodnik krok po kroku pomoże Ci efektywnie zarządzać zmianami dokumentów.
+title: Uzyskaj typy rewizji słów
+linktitle: Uzyskaj typy rewizji słów
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak uzyskać typy rewizji słów w dokumencie Word za pomocą Aspose.Words dla .NET. Ten przewodnik krok po kroku pomoże Ci sprawnie obsługiwać rewizje dokumentów.
 type: docs
 weight: 10
 url: /pl/net/working-with-revisions/get-revision-types/
 ---
 ## Wstęp
 
-Czy kiedykolwiek znalazłeś się po kolana w morzu poprawek dokumentów i zastanawiałeś się, kto co i kiedy przeniósł? Nie jesteś sam. Obsługa poprawek dokumentów może być żmudnym zadaniem, szczególnie w przypadku obszernych dokumentów. Ale nie martw się! Dzięki Aspose.Words dla .NET możesz łatwo zidentyfikować te wersje i zarządzać nimi. W tym przewodniku przeprowadzimy Cię krok po kroku przez proces uzyskiwania typów wersji słów w dokumencie programu Word za pomocą Aspose.Words dla .NET. Zatem zapnij pasy i zanurzmy się!
+Czy kiedykolwiek znalazłeś się po kolana w morzu rewizji dokumentów, zastanawiając się, kto co przeniósł i kiedy? Nie jesteś sam. Obsługa rewizji dokumentów może być żmudnym zadaniem, szczególnie w przypadku obszernych dokumentów. Ale nie martw się! Dzięki Aspose.Words dla .NET możesz łatwo identyfikować i zarządzać tymi rewizjami. W tym przewodniku przeprowadzimy Cię przez proces krok po kroku, jak uzyskać typy rewizji słów w dokumencie Word za pomocą Aspose.Words dla .NET. Więc zapnij pasy i zanurzmy się!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zabrudzimy sobie ręce kodem, potrzebujemy kilku rzeczy:
+Zanim zaczniemy pisać kod, potrzebujemy kilku rzeczy:
 
-1.  Biblioteka Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz ją z[Tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE kompatybilne z .NET.
+1.  Biblioteka Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz ją ze strony[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Visual Studio lub inne środowisko IDE zgodne z platformą .NET.
 3. Podstawowa znajomość języka C#: Znajomość języka programowania C# będzie korzystna.
-4.  Dokument programu Word ze zmianami: Upewnij się, że masz plik`.docx`plik ze prześledzonymi zmianami w celu przetestowania kodu.
+4.  Dokument Word z poprawkami: Upewnij się, że masz`.docx`plik ze śledzonymi zmianami, umożliwiający przetestowanie kodu.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu C#. Umożliwi to dostęp do funkcjonalności udostępnianych przez Aspose.Words dla .NET.
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw w swoim projekcie C#. Umożliwi ci to dostęp do funkcjonalności udostępnianych przez Aspose.Words dla .NET.
 
 ```csharp
 using Aspose.Words;
@@ -30,21 +30,21 @@ using Aspose.Words.Revision;
 using System;
 ```
 
-Podzielmy przykład na wiele kroków, aby lepiej zrozumieć i wdrożyć.
+Podzielmy przykład na kilka kroków, aby lepiej go zrozumieć i wdrożyć.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
 
-Najpierw musisz zdefiniować ścieżkę do katalogu dokumentów. W tym miejscu będzie znajdować się dokument programu Word z wersjami.
+Po pierwsze, musisz zdefiniować ścieżkę do katalogu dokumentów. To tutaj będzie się znajdował dokument Word z poprawkami.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do folderu dokumentów.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do folderu z dokumentami.
 
-## Krok 2: Załaduj dokument Word
+## Krok 2: Załaduj swój dokument Word
 
-Następnie musisz załadować dokument Word do swojego projektu. Dokument ten powinien zawierać poprawki, które chcesz przeanalizować.
+Następnie musisz załadować dokument Word do swojego projektu. Ten dokument powinien zawierać rewizje, które chcesz przeanalizować.
 
 ```csharp
 Document doc = new Document(dataDir + "Revisions.docx");
@@ -52,17 +52,17 @@ Document doc = new Document(dataDir + "Revisions.docx");
 
  Upewnij się, że plik`Revisions.docx` istnieje w określonym katalogu.
 
-## Krok 3: Uzyskaj dostęp do zbioru akapitów
+## Krok 3: Uzyskaj dostęp do kolekcji akapitów
 
-Teraz, gdy dokument jest załadowany, musisz uzyskać dostęp do akapitów w pierwszej sekcji treści dokumentu. Pomoże Ci to w przeglądaniu każdego akapitu w celu sprawdzenia poprawek.
+Teraz, gdy Twój dokument jest załadowany, musisz uzyskać dostęp do akapitów w pierwszej sekcji treści dokumentu. Pomoże Ci to przejrzeć każdy akapit, aby sprawdzić, czy nie ma w nim poprawek.
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 ```
 
-## Krok 4: Iteruj po akapitach i sprawdzaj, czy nie ma poprawek
+## Krok 4: Przejrzyj akapity i sprawdź, czy nie ma żadnych poprawek
 
-Tutaj dzieje się magia. Będziesz przeglądać każdy akapit i sprawdzać, czy został przeniesiony (usunięty lub wstawiony).
+Tutaj dzieje się magia. Przejdziesz przez każdy akapit i sprawdzisz, czy został przeniesiony (usunięty lub wstawiony).
 
 ```csharp
 for (int i = 0; i < paragraphs.Count; i++)
@@ -74,30 +74,30 @@ for (int i = 0; i < paragraphs.Count; i++)
 }
 ```
 
- Ta pętla przechodzi przez każdy akapit i wykorzystuje metodę`IsMoveFromRevision`I`IsMoveToRevision` właściwości, aby określić, czy akapit został przeniesiony (usunięty), czy przeniesiony (wstawiony).
+ Ta pętla przechodzi przez każdy akapit i używa`IsMoveFromRevision` I`IsMoveToRevision` właściwości, aby określić, czy akapit został przeniesiony (usunięty) czy przeniesiony (wstawiony).
 
 ## Wniosek
 
-I masz to! Za pomocą zaledwie kilku linii kodu możesz łatwo zidentyfikować typy wersji w dokumencie programu Word za pomocą Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że obsługa poprawek dokumentów jest dziecinnie prosta i pozwala skupić się na ważniejszych zadaniach. 
+I masz to! Za pomocą zaledwie kilku linijek kodu możesz łatwo zidentyfikować typy rewizji w dokumencie Word, korzystając z Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że obsługa rewizji dokumentów staje się dziecinnie prosta, pozwalając Ci skupić się na ważniejszych zadaniach. 
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę używać Aspose.Words dla .NET do śledzenia zmian wprowadzanych przez określonych użytkowników?
+### Czy mogę używać Aspose.Words dla .NET do śledzenia zmian wprowadzanych przez konkretnych użytkowników?
 
-Tak, Aspose.Words dla .NET zapewnia funkcjonalność umożliwiającą dostęp do szczegółów wersji, w tym autora zmian.
+Tak, Aspose.Words for .NET zapewnia funkcjonalność umożliwiającą dostęp do szczegółów rewizji, włącznie z danymi autora zmian.
 
-### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
+### Czy jest dostępna bezpłatna wersja próbna Aspose.Words dla .NET?
 
- Absolutnie! Możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
+ Oczywiście! Możesz otrzymać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
-### Jak mogę zastosować tymczasową licencję na Aspose.Words dla .NET?
+### Jak mogę ubiegać się o tymczasową licencję na Aspose.Words dla .NET?
 
- Możesz poprosić o licencję tymczasową i ją zastosować[Tutaj](https://purchase.aspose.com/temporary-license/).
+ Możesz poprosić o tymczasową licencję i złożyć wniosek[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację Aspose.Words dla .NET?
 
- Szczegółowa dokumentacja dostępna jest na stronie[Strona Aspose](https://reference.aspose.com/words/net/).
+ Szczegółowa dokumentacja jest dostępna na stronie[Strona internetowa Aspose](https://reference.aspose.com/words/net/).
 
 ### Czy mogę używać Aspose.Words dla .NET w projekcie niekomercyjnym?
 
-Tak, Aspose.Words dla .NET może być używany zarówno w projektach komercyjnych, jak i niekomercyjnych, ale pamiętaj o sprawdzeniu warunków licencji.
+Tak, Aspose.Words dla platformy .NET może być używany zarówno w projektach komercyjnych, jak i niekomercyjnych, należy jednak zapoznać się z warunkami licencji.

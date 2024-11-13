@@ -16,7 +16,7 @@ url: /el/net/working-with-fields/insert-advance-field-with-out-document-builder/
 Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε τα εξής:
 
 -  Aspose.Words for .NET Library: Μπορείτε να το κατεβάσετε[εδώ](https://releases.aspose.com/words/net/).
-- Visual Studio: Οποιαδήποτε πρόσφατη έκδοση ισχύει.
+- Visual Studio: Οποιαδήποτε πρόσφατη έκδοση θα κάνει.
 - Βασικές γνώσεις C#: Αυτό το σεμινάριο προϋποθέτει ότι έχετε θεμελιώδη κατανόηση του προγραμματισμού C#.
 -  Άδεια χρήσης Aspose.Words: Λάβετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/) αν δεν έχεις.
 
@@ -66,7 +66,7 @@ Document doc = new Document();
 2. Λάβετε την πρώτη παράγραφο στο έγγραφο:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 Αυτό διασφαλίζει ότι έχουμε μια παράγραφο για να εργαστούμε.

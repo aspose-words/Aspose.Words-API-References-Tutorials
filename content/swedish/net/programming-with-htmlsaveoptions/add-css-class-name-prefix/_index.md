@@ -117,7 +117,7 @@ Och där har du det! Genom att följa dessa steg har du framgångsrikt lagt till
  Ja, du kan anpassa prefixet varje gång du sparar ett dokument genom att ändra`CssClassNamePrefix` egendom.
 
 ### Stöder den här metoden inline CSS?
- De`CssClassNamePrefix`egenskapen fungerar med extern CSS. För inline CSS behöver du ett annat tillvägagångssätt.
+De`CssClassNamePrefix`egenskapen fungerar med extern CSS. För inline CSS behöver du ett annat tillvägagångssätt.
 
 ### Hur kan jag inkludera andra HTML-sparalternativ?
  Du kan konfigurera olika egenskaper för`HtmlSaveOptions` för att anpassa din HTML-utdata. Kontrollera[dokumentation](https://reference.aspose.com/words/net/) för mer information.

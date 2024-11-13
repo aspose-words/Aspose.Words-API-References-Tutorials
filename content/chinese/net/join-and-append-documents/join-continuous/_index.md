@@ -15,7 +15,7 @@ url: /zh/net/join-and-append-documents/join-continuous/
 
 在开始之前，请确保您已准备好所需的一切：
 
--  适用于 .NET 的 Aspose.Words：如果您还没有，请下载并安装[Aspose.Words for .NET](https://releases.aspose.com/words/net/).
+-  适用于 .NET 的 Aspose.Words：如果尚未安装，请下载并安装[Aspose.Words for .NET](https://releases.aspose.com/words/net/).
 - 开发环境：您可以使用 Visual Studio 或任何其他 .NET 开发环境。
 - 示例文档：准备好两个想要合并的 Word 文档。
 
@@ -90,7 +90,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ## 常见问题解答
 
 ### 我可以合并两个以上的文档吗？
-是的，您可以通过加载其他文档并按顺序附加它们来重复该过程以合并多个文档。
+是的，您可以通过加载其他文档并按顺序附加它们来重复该过程来合并多个文档。
 
 ### 原始格式会被保留吗？
 是的，使用`ImportFormatMode.KeepSourceFormatting`确保源文档的格式得以保留。

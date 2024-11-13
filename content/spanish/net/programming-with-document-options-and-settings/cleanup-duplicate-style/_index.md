@@ -1,28 +1,28 @@
 ---
-title: Limpieza de estilo duplicado
-linktitle: Limpieza de estilo duplicado
+title: Limpiar estilo duplicado
+linktitle: Limpiar estilo duplicado
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo limpiar estilos duplicados en sus documentos de Word usando Aspose.Words para .NET con nuestra guía completa paso a paso.
+description: Aprenda a limpiar estilos duplicados en sus documentos de Word usando Aspose.Words para .NET con nuestra completa guía paso a paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-document-options-and-settings/cleanup-duplicate-style/
 ---
 ## Introducción
 
-¡Hola, entusiastas de la codificación! ¿Alguna vez te has encontrado enredado en una red de estilos duplicados mientras trabajabas en un documento de Word? Todos hemos pasado por eso y no es un espectáculo agradable. Pero no se preocupe, ¡Aspose.Words para .NET está aquí para salvar el día! En este tutorial, profundizaremos en el meollo de la cuestión de limpiar estilos duplicados en sus documentos de Word usando Aspose.Words para .NET. Ya sea que sea un desarrollador experimentado o recién esté comenzando, esta guía lo guiará en cada paso con instrucciones claras y fáciles de seguir. Entonces, ¡arremanguémonos y comencemos!
+¡Hola, entusiastas de la codificación! ¿Alguna vez te has visto enredado en una red de estilos duplicados mientras trabajabas en un documento de Word? Todos hemos pasado por eso y no es una imagen agradable. Pero no te preocupes, ¡Aspose.Words para .NET está aquí para salvar el día! En este tutorial, nos sumergiremos en los detalles de la limpieza de estilos duplicados en tus documentos de Word usando Aspose.Words para .NET. Ya seas un desarrollador experimentado o recién estés comenzando, esta guía te guiará por cada paso con instrucciones claras y fáciles de seguir. ¡Así que, arremanguémonos y comencemos!
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de pasar a la acción, asegurémonos de que tiene todo lo que necesita:
+Antes de entrar en acción, asegurémonos de que tienes todo lo que necesitas:
 
-1. Conocimientos básicos de C#: no es necesario ser un asistente de C#, pero un conocimiento básico del lenguaje será útil.
-2. Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words para .NET. Si no, puedes descargarlo.[aquí](https://releases.aspose.com/words/net/).
-3. Entorno de desarrollo: un buen entorno de desarrollo como Visual Studio le hará la vida mucho más fácil.
+1. Conocimientos básicos de C#: no es necesario ser un experto en C#, pero será útil tener conocimientos básicos del lenguaje.
+2. Aspose.Words para .NET: Asegúrate de tener instalada la biblioteca Aspose.Words para .NET. Si no es así, puedes descargarla[aquí](https://releases.aspose.com/words/net/).
+3. Entorno de desarrollo: Un buen entorno de desarrollo como Visual Studio te hará la vida mucho más fácil.
 4. Documento de muestra: tenga un documento de Word de muestra (.docx) que contenga estilos duplicados listo para probar.
 
 ## Importar espacios de nombres
 
-Primero lo primero, importemos los espacios de nombres necesarios. Este paso garantiza que tenga acceso a todas las clases y métodos que necesitará.
+Lo primero es lo primero: importemos los espacios de nombres necesarios. Este paso garantiza que tenga acceso a todas las clases y métodos que necesitará.
 
 ```csharp
 using System;
@@ -30,12 +30,12 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-## Paso 1: cargue su documento
+## Paso 1: Cargue su documento
 
-Para comenzar, debe cargar su documento de Word en su proyecto. Aquí es donde entra en juego su documento de muestra.
+Para comenzar, debes cargar el documento de Word en el proyecto. Aquí es donde entra en juego el documento de muestra.
 
-1. Especifique el directorio de documentos: defina la ruta al directorio donde está almacenado su documento.
-2.  Cargue el documento: utilice el`Document` clase para cargar su documento.
+1. Especificar el directorio del documento: defina la ruta al directorio donde se almacena su documento.
+2.  Cargar el documento: Utilice el`Document` clase para cargar su documento.
 
 ```csharp
 // La ruta al directorio de documentos.
@@ -43,56 +43,56 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Paso 2: Cuente los estilos antes de la limpieza
+## Paso 2: Cuente los estilos antes de limpiar
 
-Antes de limpiar, veamos cuántos estilos hay actualmente en el documento. Esto nos da una línea de base con la que comparar después de la limpieza.
+Antes de limpiar, veamos cuántos estilos hay actualmente en el documento. Esto nos dará una línea de base con la que comparar después de la limpieza.
 
-1.  Acceda a la colección de estilos: use el`Styles` propiedad de la`Document` clase.
-2. Imprima el recuento de estilos: uso`Console.WriteLine` para mostrar el número de estilos.
+1.  Acceda a la colección de estilos: utilice el`Styles` propiedad de la`Document` clase.
+2. Imprima el recuento de estilos: utilice`Console.WriteLine` para mostrar el número de estilos.
 
 ```csharp
 // Recuento de estilos antes de la limpieza.
 Console.WriteLine(doc.Styles.Count);
 ```
 
-## Paso 3: configurar las opciones de limpieza
+## Paso 3: Configurar las opciones de limpieza
 
-Ahora es el momento de configurar las opciones de limpieza. Aquí es donde le decimos a Aspose.Words que se concentre en limpiar estilos duplicados.
+Ahora es el momento de configurar las opciones de limpieza. Aquí es donde le indicamos a Aspose.Words que se concentre en limpiar estilos duplicados.
 
-1.  Crear CleanupOptions: crear una instancia del`CleanupOptions` clase.
-2.  Habilitar limpieza de DuplicateStyle: configure el`DuplicateStyle`propiedad a`true`.
+1.  Crear CleanupOptions: crear una instancia de`CleanupOptions` clase.
+2.  Habilitar limpieza de DuplicateStyle: configure la`DuplicateStyle`propiedad a`true`.
 
 ```csharp
-// Limpia estilos duplicados del documento.
+// Limpia los estilos duplicados del documento.
 CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 ```
 
-## Paso 4: realice la limpieza
+## Paso 4: Realizar la limpieza
 
 Con las opciones de limpieza configuradas, es hora de limpiar esos molestos estilos duplicados.
 
- Invocar el método de limpieza: utilizar el`Cleanup` método de la`Document` clase, pasando las opciones de limpieza.
+ Invocar el método de limpieza: utilice el`Cleanup` método de la`Document` clase, pasando las opciones de limpieza.
 
 ```csharp
 doc.Cleanup(options);
 ```
 
-## Paso 5: cuente los estilos después de la limpieza
+## Paso 5: Cuente los estilos después de la limpieza
 
 Veamos el resultado de nuestra operación de limpieza contando los estilos nuevamente. Esto nos mostrará cuántos estilos se eliminaron.
 
- Imprimir el recuento de nuevos estilos: utilizar`Console.WriteLine` para mostrar el número actualizado de estilos.
+ Imprima el nuevo recuento de estilos: utilice`Console.WriteLine` para mostrar el número actualizado de estilos.
 
 ```csharp
-// Se redujo el recuento de estilos después de la limpieza.
+// Se redujo el número de estilos después de la limpieza.
 Console.WriteLine(doc.Styles.Count);
 ```
 
-## Paso 6: guarde el documento actualizado
+## Paso 6: Guarde el documento actualizado
 
-Finalmente, guarde el documento limpio en su directorio especificado.
+Por último, guarde el documento limpio en el directorio especificado.
 
- Guarde el documento: utilice el`Save` método de la`Document` clase.
+ Guardar el documento: Utilice el`Save` método de la`Document` clase.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");
@@ -100,7 +100,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 
 ## Conclusión
 
-¡Y ahí lo tienes! Ha limpiado con éxito estilos duplicados de su documento de Word usando Aspose.Words para .NET. Si sigue estos pasos, podrá mantener sus documentos limpios y organizados, haciéndolos más fáciles de administrar y menos propensos a problemas de estilo. Recuerde, la clave para dominar cualquier herramienta es la práctica, así que siga experimentando con Aspose.Words y descubra todas las potentes funciones que tiene para ofrecer.
+¡Y ya está! Has eliminado con éxito los estilos duplicados de tu documento de Word con Aspose.Words para .NET. Si sigues estos pasos, podrás mantener tus documentos limpios y organizados, lo que hará que sean más fáciles de administrar y menos propensos a problemas de estilo. Recuerda que la clave para dominar cualquier herramienta es la práctica, así que sigue experimentando con Aspose.Words y descubre todas las potentes funciones que tiene para ofrecer.
 
 ## Preguntas frecuentes
 
@@ -114,7 +114,7 @@ Limpiar estilos duplicados ayuda a mantener una apariencia consistente y profesi
 Sí, Aspose.Words para .NET se puede utilizar con cualquier lenguaje .NET, incluidos VB.NET y F#.
 
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Words para .NET?
- Puedes encontrar documentación detallada.[aquí](https://reference.aspose.com/words/net/).
+ Puede encontrar documentación detallada[aquí](https://reference.aspose.com/words/net/).
 
 ### ¿Hay una prueba gratuita disponible para Aspose.Words para .NET?
- Sí, puedes descargar una prueba gratuita.[aquí](https://releases.aspose.com/).
+ Sí, puedes descargar una versión de prueba gratuita[aquí](https://releases.aspose.com/).

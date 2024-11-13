@@ -1,23 +1,23 @@
 ---
-title: Salvando documentos como PDF em Aspose.Words for Java
+title: Salvando documentos como PDF no Aspose.Words para Java
 linktitle: Salvando documentos como PDF
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda como salvar documentos do Word como PDF usando Aspose.Words for Java. Personalize fontes, propriedades e qualidade de imagem. Um guia completo para conversão de PDF.
+description: Aprenda como salvar documentos do Word como PDF usando o Aspose.Words para Java. Personalize fontes, propriedades e qualidade de imagem. Um guia abrangente para conversão de PDF.
 type: docs
 weight: 22
 url: /pt/java/document-loading-and-saving/saving-documents-as-pdf/
 ---
 
-## Introdução ao salvamento de documentos como PDF em Aspose.Words for Java
+## Introdução ao salvamento de documentos como PDF no Aspose.Words para Java
 
-Neste guia passo a passo, exploraremos como salvar documentos como PDF usando Aspose.Words for Java. Abordaremos vários aspectos da conversão de PDF e forneceremos exemplos de código para facilitar o processo.
+Neste guia passo a passo, exploraremos como salvar documentos como PDF usando o Aspose.Words para Java. Abordaremos vários aspectos da conversão de PDF e forneceremos exemplos de código para tornar o processo mais fácil.
 
 ## Pré-requisitos
 
-Antes de começarmos, certifique-se de ter os seguintes pré-requisitos em vigor:
+Antes de começar, certifique-se de que você tenha os seguintes pré-requisitos:
 
-- Java Development Kit (JDK) instalado em seu sistema.
--  Biblioteca Aspose.Words para Java. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/java/).
+- Java Development Kit (JDK) instalado no seu sistema.
+-  Biblioteca Aspose.Words para Java. Você pode baixá-la em[aqui](https://releases.aspose.com/words/java/).
 
 ## Convertendo um documento em PDF
 
@@ -31,9 +31,9 @@ doc.save("output.pdf", saveOptions);
 
  Substituir`"input.docx"` com o caminho para o seu documento do Word e`"output.pdf"` com o caminho do arquivo PDF de saída desejado.
 
-## Controlando as opções de salvamento de PDF
+## Controlando opções de salvamento de PDF
 
- Você pode controlar várias opções de salvamento de PDF usando o`PdfSaveOptions` aula. Por exemplo, você pode definir o título de exibição do documento PDF da seguinte maneira:
+ Você pode controlar várias opções de salvamento de PDF usando o`PdfSaveOptions` classe. Por exemplo, você pode definir o título de exibição para o documento PDF da seguinte forma:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -83,7 +83,7 @@ doc.save("output.pdf", saveOptions);
 
 ## Atualizando a última propriedade impressa
 
-Para atualizar a propriedade “Última impressão” no PDF, use:
+Para atualizar a propriedade "Última impressão" no PDF, use:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -93,7 +93,7 @@ doc.save("output.pdf", saveOptions);
 
 ## Renderizando efeitos 3D DML
 
-Para renderização avançada de efeitos 3D DML, defina o modo de renderização:
+Para renderização avançada de efeitos DML 3D, defina o modo de renderização:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -103,7 +103,7 @@ doc.save("output.pdf", saveOptions);
 
 ## Interpolando Imagens
 
-Você pode ativar a interpolação de imagem para melhorar a qualidade da imagem:
+Você pode habilitar a interpolação de imagem para melhorar a qualidade da imagem:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -113,13 +113,13 @@ doc.save("output.pdf", saveOptions);
 
 ## Conclusão
 
-Aspose.Words for Java oferece recursos abrangentes para converter documentos do Word para o formato PDF com flexibilidade e opções de personalização. Você pode controlar vários aspectos da saída do PDF, incluindo fontes, propriedades do documento, compactação de imagem e muito mais.
+O Aspose.Words para Java fornece recursos abrangentes para converter documentos do Word para o formato PDF com flexibilidade e opções de personalização. Você pode controlar vários aspectos da saída do PDF, incluindo fontes, propriedades do documento, compactação de imagem e muito mais.
 
 ## Perguntas frequentes
 
-### Como faço para converter um documento do Word em PDF usando Aspose.Words for Java?
+### Como faço para converter um documento do Word em PDF usando o Aspose.Words para Java?
 
-Para converter um documento Word em PDF, use o seguinte código:
+Para converter um documento do Word em PDF, use o seguinte código:
 
 ```java
 Document doc = new Document("input.docx");
@@ -129,7 +129,7 @@ doc.save("output.pdf", saveOptions);
 
  Substituir`"input.docx"` com o caminho para o seu documento do Word e`"output.pdf"` com o caminho do arquivo PDF de saída desejado.
 
-### Posso incorporar fontes no PDF gerado pelo Aspose.Words for Java?
+### Posso incorporar fontes no PDF gerado pelo Aspose.Words para Java?
 
  Sim, você pode incorporar fontes no PDF definindo o`setEmbedFullFonts` opção para`true` em`PdfSaveOptions`. Aqui está um exemplo:
 
@@ -149,14 +149,14 @@ saveOptions.setCustomPropertiesExport(PdfCustomPropertiesExport.STANDARD);
 doc.save("output.pdf", saveOptions);
 ```
 
-### Qual é o propósito da compactação de imagem no Aspose.Words for Java?
+### Qual é o propósito da compactação de imagens no Aspose.Words para Java?
 
- A compactação de imagens permite controlar a qualidade e o tamanho das imagens no PDF gerado. Você pode definir o modo de compactação de imagem usando`setImageCompression` em`PdfSaveOptions`.
+ A compressão de imagem permite que você controle a qualidade e o tamanho das imagens no PDF gerado. Você pode definir o modo de compressão de imagem usando`setImageCompression` em`PdfSaveOptions`.
 
-### Como atualizo a propriedade “Última impressão” no PDF?
+### Como atualizo a propriedade "Última impressão" no PDF?
 
  Você pode atualizar a propriedade "Última impressão" no PDF definindo`setUpdateLastPrintedProperty` para`true` em`PdfSaveOptions`. Isso refletirá a última data impressa nos metadados do PDF.
 
 ### Como posso melhorar a qualidade da imagem ao converter para PDF?
 
- Para melhorar a qualidade da imagem, ative a interpolação de imagem definindo`setInterpolateImages` para`true` em`PdfSaveOptions`. Isso resultará em imagens mais suaves e de maior qualidade no PDF.
+ Para melhorar a qualidade da imagem, habilite a interpolação de imagem definindo`setInterpolateImages` para`true` em`PdfSaveOptions`. Isso resultará em imagens mais suaves e de alta qualidade no PDF.

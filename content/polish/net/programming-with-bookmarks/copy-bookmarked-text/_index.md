@@ -1,23 +1,23 @@
 ---
-title: Skopiuj tekst z zakładek do dokumentu programu Word
-linktitle: Skopiuj tekst z zakładek do dokumentu programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Bez wysiłku kopiuj tekst z zakładek pomiędzy dokumentami programu Word za pomocą Aspose.Words dla .NET. Dowiedz się, jak to zrobić, korzystając z tego przewodnika krok po kroku.
+title: Kopiuj zakładkę do tekstu w dokumencie Word
+linktitle: Kopiuj zakładkę do tekstu w dokumencie Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Bez wysiłku kopiuj zakładki tekstowe między dokumentami Word za pomocą Aspose.Words dla .NET. Dowiedz się, jak to zrobić dzięki temu przewodnikowi krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 ## Wstęp
 
-Czy zdarzyło Ci się kiedyś skopiować określone sekcje z jednego dokumentu programu Word do drugiego? Cóż, masz szczęście! W tym samouczku przeprowadzimy Cię przez proces kopiowania tekstu z zakładek z jednego dokumentu programu Word do drugiego za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy tworzysz raport dynamiczny, czy automatyzujesz generowanie dokumentów, ten przewodnik uprości Ci ten proces.
+Czy zdarzyło Ci się kiedyś, że musiałeś skopiować określone sekcje z jednego dokumentu Word do drugiego? Cóż, masz szczęście! W tym samouczku pokażemy Ci, jak skopiować tekst z zakładkami z jednego dokumentu Word do drugiego przy użyciu Aspose.Words dla .NET. Niezależnie od tego, czy tworzysz dynamiczny raport, czy automatyzujesz generowanie dokumentów, ten przewodnik uprości Ci ten proces.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w temat, upewnij się, że masz następujące elementy:
+Zanim przejdziemy do konkretów, upewnij się, że masz następujące rzeczy:
 
--  Biblioteka Aspose.Words dla .NET: Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne: Visual Studio lub dowolne inne środowisko programistyczne .NET.
-- Podstawowa znajomość języka C#: Znajomość programowania w języku C# i frameworku .NET.
+-  Biblioteka Aspose.Words dla .NET: Można ją pobrać ze strony[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Visual Studio lub inne środowisko programistyczne .NET.
+- Podstawowa znajomość języka C#: Znajomość programowania w języku C# i środowiska .NET.
 
 ## Importuj przestrzenie nazw
 
@@ -31,37 +31,37 @@ using Aspose.Words.Bookmark;
 
 ## Krok 1: Załaduj dokument źródłowy
 
-Najpierw musisz załadować dokument źródłowy zawierający tekst z zakładek, który chcesz skopiować.
+Najpierw musisz załadować dokument źródłowy zawierający zapisany w zakładkach tekst, który chcesz skopiować.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Tutaj,`dataDir` to ścieżka do katalogu dokumentów, oraz`Bookmarks.docx` jest dokumentem źródłowym.
+ Tutaj,`dataDir` jest ścieżką do katalogu dokumentów i`Bookmarks.docx` jest dokumentem źródłowym.
 
 ## Krok 2: Zidentyfikuj zakładkę
 
-Następnie określ zakładkę, którą chcesz skopiować z dokumentu źródłowego.
+Następnie zidentyfikuj zakładkę, którą chcesz skopiować z dokumentu źródłowego.
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
- Zastępować`"MyBookmark1"` z rzeczywistą nazwą Twojej zakładki.
+ Zastępować`"MyBookmark1"` z rzeczywistą nazwą zakładki.
 
 ## Krok 3: Utwórz dokument docelowy
 
-Teraz utwórz nowy dokument, do którego zostanie skopiowany tekst z zakładek.
+Teraz utwórz nowy dokument, do którego zostanie skopiowany zaznaczony tekst.
 
 ```csharp
 Document dstDoc = new Document();
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## Krok 4: Zaimportuj zawartość dodaną do zakładek
+## Krok 4: Importuj zakładkę z treścią
 
- Aby mieć pewność, że style i formatowanie zostaną zachowane, użyj`NodeImporter` , aby zaimportować zawartość zakładek z dokumentu źródłowego do dokumentu docelowego.
+ Aby mieć pewność, że style i formatowanie zostaną zachowane, użyj`NodeImporter` aby zaimportować dodaną do zakładek zawartość z dokumentu źródłowego do dokumentu docelowego.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -70,7 +70,7 @@ AppendBookmarkedText(importer, srcBookmark, dstNode);
 
 ## Krok 5: Zdefiniuj metodę AppendBookmarkedText
 
-Tutaj dzieje się magia. Zdefiniuj metodę obsługi kopiowania tekstu z zakładek:
+Tutaj dzieje się magia. Zdefiniuj metodę obsługi kopiowania tekstu z zakładką:
 
 ```csharp
 private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
@@ -96,7 +96,7 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
 
 ## Krok 6: Zapisz dokument docelowy
 
-Na koniec zapisz dokument docelowy, aby zweryfikować skopiowaną treść.
+Na koniec zapisz dokument docelowy, aby sprawdzić skopiowaną zawartość.
 
 ```csharp
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
@@ -104,21 +104,21 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Wniosek
 
-I tyle! Pomyślnie skopiowałeś tekst z zakładek z jednego dokumentu programu Word do innego za pomocą Aspose.Words dla .NET. Ta metoda doskonale nadaje się do automatyzacji zadań związanych z manipulacją dokumentami, dzięki czemu przepływ pracy jest bardziej wydajny i usprawniony.
+I to wszystko! Udało Ci się skopiować zakładkę tekstu z jednego dokumentu Word do drugiego za pomocą Aspose.Words dla .NET. Ta metoda jest skuteczna w automatyzowaniu zadań związanych z manipulacją dokumentami, dzięki czemu Twój przepływ pracy jest bardziej wydajny i usprawniony.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Czy mogę skopiować wiele zakładek jednocześnie?
 Tak, możesz przeglądać wiele zakładek i używać tej samej metody do kopiowania każdej z nich.
 
 ### Co się stanie, jeśli zakładka nie zostanie znaleziona?
- The`Range.Bookmarks` nieruchomość powróci`null`, więc upewnij się, że zajmiesz się tą sprawą, aby uniknąć wyjątków.
+Ten`Range.Bookmarks` nieruchomość powróci`null`, więc upewnij się, że zajmiesz się tym przypadkiem, aby uniknąć wyjątków.
 
 ### Czy mogę zachować formatowanie oryginalnej zakładki?
- Absolutnie! Używanie`ImportFormatMode.KeepSourceFormatting` gwarantuje zachowanie oryginalnego formatowania.
+ Oczywiście! Używam`ImportFormatMode.KeepSourceFormatting` zapewnia zachowanie oryginalnego formatowania.
 
-### Czy istnieje ograniczenie rozmiaru tekstu dodanego do zakładek?
-Nie ma określonego limitu, ale wydajność może się różnić w przypadku bardzo dużych dokumentów.
+### Czy istnieje ograniczenie rozmiaru tekstu dodawanego do zakładek?
+Nie ma konkretnego limitu, ale wydajność może się różnić w przypadku bardzo dużych dokumentów.
 
-### Czy mogę kopiować tekst pomiędzy różnymi formatami dokumentów programu Word?
-Tak, Aspose.Words obsługuje różne formaty programu Word i metoda działa w przypadku tych formatów.
+### Czy mogę kopiować tekst pomiędzy różnymi formatami dokumentów Word?
+Tak, Aspose.Words obsługuje różne formaty Worda, a opisana metoda działa w przypadku wszystkich tych formatów.

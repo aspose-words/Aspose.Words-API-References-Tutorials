@@ -17,7 +17,7 @@ url: /zh-hant/net/clone-and-combine-documents/insert-document-at-replace/
 
 -  Visual Studio：確保您的電腦上安裝了 Visual Studio。如果您還沒有，您可以從以下位置下載[這裡](https://visualstudio.microsoft.com/).
 - Aspose.Words for .NET：您需要 Aspose.Words 函式庫。您可以從[阿斯普斯網站](https://releases.aspose.com/words/net/).
-- 基本 C# 知識：對 C# 和 .NET 的基本了解將幫助您學習本教學。
+- 基本 C# 知識：對 C# 和 .NET 的基本了解將幫助您遵循本教學。
 
 好吧，拋開這些，讓我們開始寫一些程式碼吧！
 
@@ -111,43 +111,47 @@ private class InsertDocumentAtReplaceHandler : IReplacingCallback
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
 {
-	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
-	{
-		CompositeNode destinationParent = insertionDestination.ParentNode;
+    //檢查插入目標是段落還是表格
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
 
-		NodeImporter importer =
-			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+        //建立 NodeImporter 以從來源文件導入節點
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
 
-		//循環該節主體中的所有區塊級節點，
-		//然後克隆並插入不是節的最後一個空段落的每個節點。
-		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
-		foreach (Node srcNode in srcSection.Body)
-		{
-			if (srcNode.NodeType == NodeType.Paragraph)
-			{
-				Paragraph para = (Paragraph)srcNode;
-				if (para.IsEndOfSection && !para.HasChildNodes)
-					continue;
-			}
+        //循環遍歷來源文檔各部分中的所有區塊級節點
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        {
+            foreach (Node srcNode in srcSection.Body)
+            {
+                //跳過節的最後一個空段落
+                if (srcNode.NodeType == NodeType.Paragraph)
+                {
+                    Paragraph para = (Paragraph)srcNode;
+                    if (para.IsEndOfSection && !para.HasChildNodes)
+                        continue;
+                }
 
-			Node newNode = importer.ImportNode(srcNode, true);
-
-			destinationParent.InsertAfter(newNode, insertionDestination);
-			insertionDestination = newNode;
-		}
-	}
-	else
-	{
-		throw new ArgumentException("The destination node should be either a paragraph or table.");
-	}
+                //導入並將節點插入目標中
+                Node newNode = importer.ImportNode(srcNode, true);
+                destinationParent.InsertAfter(newNode, insertionDestination);
+                insertionDestination = newNode;
+            }
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
 }
+
 ```
 
 此方法負責從要插入的文件中匯入節點並將它們放置在主文件中的正確位置。
 
 ## 結論
 
-現在你就得到它了！使用 Aspose.Words for .NET 將一個文件插入另一個文件的綜合指南。透過執行這些步驟，您可以輕鬆地自動執行文件組裝和操作任務。無論您是要建立文件管理系統還是只是需要簡化文件處理工作流程，Aspose.Words 都是您值得信賴的助手。
+現在你就擁有了！使用 Aspose.Words for .NET 將一個文件插入另一個文件的綜合指南。透過執行這些步驟，您可以輕鬆地自動執行文件組裝和操作任務。無論您是要建立文件管理系統還是只是需要簡化文件處理工作流程，Aspose.Words 都是您值得信賴的助手。
 
 ## 常見問題解答
 

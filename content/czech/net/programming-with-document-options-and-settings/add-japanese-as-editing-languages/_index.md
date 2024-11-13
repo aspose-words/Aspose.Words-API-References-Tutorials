@@ -40,7 +40,7 @@ S importovanými jmennými prostory jste připraveni začít kódovat!
 LoadOptions loadOptions = new LoadOptions();
 ```
 
- The`LoadOptions` třída umožňuje přizpůsobit způsob načítání dokumentů. Tady s tím teprve začínáme.
+The`LoadOptions` třída umožňuje přizpůsobit způsob načítání dokumentů. Tady s tím teprve začínáme.
 
 ## Krok 2: Přidejte japonštinu jako jazyk úprav
 

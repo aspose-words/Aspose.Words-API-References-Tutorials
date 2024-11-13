@@ -10,7 +10,7 @@ url: /ja/java/document-conversion-and-export/using-office-math-objects/
 
 ## Aspose.Words for Java での Office Math オブジェクトの使用の概要
 
-Java でのドキュメント処理の分野では、Aspose.Words は信頼性が高く強力なツールとして知られています。あまり知られていない機能の 1 つに、Office Math オブジェクトを操作できる機能があります。この包括的なガイドでは、Aspose.Words for Java で Office Math オブジェクトを活用して、ドキュメント内の数式を操作および表示する方法について詳しく説明します。 
+Java でのドキュメント処理の分野では、Aspose.Words は信頼性が高く強力なツールとして知られています。あまり知られていない機能の 1 つに、Office Math オブジェクトを操作できる機能があります。この包括的なガイドでは、Aspose.Words for Java で Office Math オブジェクトを活用してドキュメント内の数式を操作および表示する方法について詳しく説明します。 
 
 ## 前提条件
 

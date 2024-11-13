@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## 步骤 2：初始化 DocumentBuilder
+## 第 2 步：初始化 DocumentBuilder
 
 接下来，我们需要创建一个实例`DocumentBuilder`。这个方便的类允许我们轻松地导航和修改文档。
 

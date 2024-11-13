@@ -10,7 +10,7 @@ url: /sv/net/working-with-section/copy-section/
 
 ## Introduktion
 
-Hej där, Word-entusiaster! 📄 Har du någonsin behövt kopiera ett avsnitt från ett Word-dokument till ett annat, men blivit fastlåst av den upprepade manuella ansträngningen? Nåväl, oroa dig inte längre! Med Aspose.Words för .NET kan du automatisera denna uppgift med lätthet. Den här guiden leder dig genom processen att kopiera avsnitt mellan dokument steg för steg, vilket säkerställer att du kan effektivisera ditt arbetsflöde för dokumenthantering. Redo att dyka i? Låt oss komma igång!
+Hej där, Word-entusiaster! 📄 Har du någonsin behövt kopiera ett avsnitt från ett Word-dokument till ett annat, men blivit fastlåst av den upprepade manuella ansträngningen? Nåväl, oroa dig inte mer! Med Aspose.Words för .NET kan du automatisera denna uppgift med lätthet. Den här guiden leder dig genom processen att kopiera avsnitt mellan dokument steg för steg, vilket säkerställer att du kan effektivisera ditt arbetsflöde för dokumenthantering. Redo att dyka i? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -77,7 +77,7 @@ När vi har kopierat avsnittet är nästa steg att lägga till det i måldokumen
 dstDoc.Sections.Add(newSection);
 ```
 
-- `dstDoc.Sections.Add(newSection);` lägger till det kopierade avsnittet till måldokumentets avsnittssamling.
+- `dstDoc.Sections.Add(newSection);` lägger till den kopierade sektionen till måldokumentets sektionssamling.
 
 ## Steg 5: Spara destinationsdokumentet
 

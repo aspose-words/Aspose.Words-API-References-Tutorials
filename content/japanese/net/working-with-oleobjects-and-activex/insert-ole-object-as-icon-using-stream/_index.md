@@ -54,7 +54,7 @@ using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_di
 {
 ```
 
-このステップは、ブラシに絵の具を塗るようなものです。ファイルを埋め込む準備をします。
+このステップは、ブラシに絵の具を塗るようなものです。ファイルを埋め込む準備をしています。
 
 ## ステップ3: OLEオブジェクトをアイコンとして挿入する
 
@@ -96,4 +96,4 @@ doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingSt
 メソッドは例外をスローします。エラーを回避するには、ファイルへのパスが正しいことを確認してください。
 
 ### 埋め込まれたオブジェクトを埋め込むのではなく、リンクすることは可能ですか?
-はい、Aspose.Words では、ファイルの内容を埋め込まずにファイルを参照するリンクされた OLE オブジェクトを挿入できます。
+はい、Aspose.Words では、コンテンツを埋め込まずにファイルを参照するリンクされた OLE オブジェクトを挿入できます。

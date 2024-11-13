@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Ebben a kódban cserélje ki`"YOUR DOCUMENT DIRECTORY"` tényleges elérési úttal, ahol a dokumentum található.
+Ebben a kódban cserélje ki`"YOUR DOCUMENT DIRECTORY"` tényleges elérési úttal, ahol a dokumentum található.
 
 ## 2. lépés: Állítsa be a lábjegyzet pozícióját
 
@@ -93,4 +93,4 @@ Az Aspose.Words for .NET .NET-alkalmazásokhoz készült, de bármilyen .NET ál
 
 ### Hol találhatok részletesebb dokumentációt az Aspose.Words for .NET-hez?
 
- A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
+ részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).

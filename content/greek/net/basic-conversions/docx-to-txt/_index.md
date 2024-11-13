@@ -15,7 +15,7 @@ url: /el/net/basic-conversions/docx-to-txt/
 
 Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
-1.  Aspose.Words for .NET Library: Κατεβάστε και εγκαταστήστε την πιο πρόσφατη έκδοση του Aspose.Words για .NET από το[Aspose Releases Page](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Κατεβάστε και εγκαταστήστε την πιο πρόσφατη έκδοση του Aspose.Words για .NET από το[Σελίδα εκδόσεων Aspose](https://releases.aspose.com/words/net/).
 2. Περιβάλλον ανάπτυξης: Visual Studio ή οποιοδήποτε άλλο περιβάλλον ανάπτυξης C#.
 3. Βασικές γνώσεις C#: Εξοικείωση με τη γλώσσα προγραμματισμού C# και το πλαίσιο .NET.
 

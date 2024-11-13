@@ -17,7 +17,7 @@ Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen e
 
 - Visual Studio: Sie benötigen eine Entwicklungsumgebung zum Schreiben und Testen Ihres Codes. Visual Studio ist eine gute Wahl.
 -  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn Sie sie nicht haben, können Sie sie herunterladen[Hier](https://releases.aspose.com/words/net/).
-- Grundlegende Kenntnisse in C#: Um den Kurs folgen zu können, sind gewisse Kenntnisse der C#-Programmierung erforderlich.
+- Grundlegende Kenntnisse in C#: Um den Schritten folgen zu können, sind gewisse Kenntnisse in der C#-Programmierung erforderlich.
 
 ## Namespaces importieren
 
@@ -79,16 +79,16 @@ Das Erstellen und Anpassen von Tabellen in Aspose.Words für .NET ist unkomplizi
 ## Häufig gestellte Fragen
 
 ### Kann ich mehr als zwei Zellen in einer Reihe hinzufügen?
- Ja, Sie können beliebig viele Zellen in einer Zeile hinzufügen, indem Sie die`InsertCell()`Und`Writeln()` Methoden.
+ Ja, Sie können beliebig viele Zellen in einer Zeile hinzufügen, indem Sie die`InsertCell()` Und`Writeln()` Methoden.
 
 ### Wie kann ich Zellen in einer Tabelle zusammenführen?
- Sie können Zellen verbinden, indem Sie`CellFormat.HorizontalMerge`Und`CellFormat.VerticalMerge` Eigenschaften.
+ Sie können Zellen verbinden, indem Sie`CellFormat.HorizontalMerge` Und`CellFormat.VerticalMerge` Eigenschaften.
 
 ### Ist es möglich, Tabellenzellen Bilder hinzuzufügen?
  Auf jeden Fall! Sie können Bilder in Zellen einfügen, indem Sie`DocumentBuilder.InsertImage` Verfahren.
 
 ### Kann ich einzelne Zellen unterschiedlich stylen?
- Ja, Sie können einzelne Zellen durch den Zugriff über die`Cells` Sammlung einer Zeile.
+ Ja, Sie können einzelne Zellen über die Schaltfläche`Cells` Sammlung einer Zeile.
 
 ### Wie entferne ich Ränder aus der Tabelle?
  Sie können Ränder entfernen, indem Sie den Randstil auf`LineStyle.None` für jeden Randtyp.

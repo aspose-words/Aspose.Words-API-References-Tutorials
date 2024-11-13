@@ -94,4 +94,4 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 Υποστηρίζει ένα ευρύ φάσμα γλωσσών, συμπεριλαμβανομένων ασιατικών γλωσσών όπως τα κινέζικα και τα ιαπωνικά.
 
 ### Πού μπορώ να βρω πιο αναλυτική τεκμηρίωση;
- Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).
+Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).

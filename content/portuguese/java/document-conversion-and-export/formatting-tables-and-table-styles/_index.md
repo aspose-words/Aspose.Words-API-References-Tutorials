@@ -1,287 +1,188 @@
 ---
-title: Formatando tabelas e estilos de tabela em Aspose.Words para Java
-linktitle: Formatando Tabelas e Estilos de Tabela
+title: Formatação de tabelas e estilos de tabelas
+linktitle: Formatação de tabelas e estilos de tabelas
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda como formatar tabelas e aplicar estilos de tabela em Aspose.Words for Java. Explore guias passo a passo com código-fonte para uma formatação de tabela eficaz. Aprimore o layout do seu documento com Aspose.Words.
+description: Aprenda a formatar tabelas e aplicar estilos usando Aspose.Words para Java. Este guia passo a passo abrange a configuração de bordas, sombreamento de células e aplicação de estilos de tabela.
 type: docs
 weight: 17
 url: /pt/java/document-conversion-and-export/formatting-tables-and-table-styles/
 ---
 
-## Introdução à formatação de tabelas e estilos de tabela em Aspose.Words for Java
+## Introdução
 
-As tabelas desempenham um papel crucial na estruturação e organização das informações nos documentos. Aspose.Words for Java fornece recursos poderosos para formatar tabelas e aplicar estilos de tabela para aprimorar o apelo visual de seus documentos. Neste guia passo a passo, exploraremos vários aspectos da formatação de tabelas e da aplicação de estilos de tabela usando Aspose.Words for Java.
+Quando se trata de formatação de documentos, as tabelas desempenham um papel crucial na organização e apresentação clara de dados. Se você estiver trabalhando com Java e Aspose.Words, você tem ferramentas poderosas à sua disposição para criar e formatar tabelas em seus documentos. Não importa se você está projetando uma tabela simples ou aplicando estilos avançados, o Aspose.Words para Java oferece uma variedade de recursos para ajudar você a obter resultados com aparência profissional.
+
+Neste guia, nós o guiaremos pelo processo de formatação de tabelas e aplicação de estilos de tabela usando o Aspose.Words para Java. Você aprenderá como definir bordas de tabela, aplicar sombreamento de células e usar estilos de tabela para melhorar a aparência dos seus documentos. No final, você terá as habilidades para criar tabelas bem formatadas que farão seus dados se destacarem.
 
 ## Pré-requisitos
 
-Antes de entrarmos nos detalhes, certifique-se de ter a biblioteca Aspose.Words for Java integrada ao seu projeto. Você pode baixá-lo no site da Aspose:[Baixe Aspose.Words para Java](https://releases.aspose.com/words/java/).
+Antes de começar, há algumas coisas que você precisa ter em mãos:
 
-## Obtenha distância entre a tabela e o texto circundante
+1. Java Development Kit (JDK): Certifique-se de ter o JDK 8 ou posterior instalado. O Aspose.Words para Java requer um JDK compatível para ser executado corretamente.
+2. Ambiente de Desenvolvimento Integrado (IDE): Um IDE como o IntelliJ IDEA ou o Eclipse ajudará você a gerenciar seus projetos Java e otimizar seu processo de desenvolvimento.
+3.  Biblioteca Aspose.Words para Java: Baixe a versão mais recente do Aspose.Words para Java[aqui](https://releases.aspose.com/words/java/) e inclua-o em seu projeto.
+4. Código de exemplo: Usaremos alguns trechos de código de exemplo, portanto, certifique-se de ter um conhecimento básico de programação Java e de como integrar bibliotecas ao seu projeto.
 
-Para começar, vamos explorar como recuperar a distância entre uma tabela e o texto ao redor em um documento.
+## Pacotes de importação
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-System.out.println("Distance Top: " + table.getDistanceTop());
-System.out.println("Distance Bottom: " + table.getDistanceBottom());
-System.out.println("Distance Right: " + table.getDistanceRight());
-System.out.println("Distance Left: " + table.getDistanceLeft());
-```
-
-## Aplicar borda de contorno a uma tabela
-
-Você pode alinhar uma tabela ao centro da página, limpar as bordas existentes e definir uma borda de contorno personalizada com este código:
+Para trabalhar com Aspose.Words para Java, você precisa importar os pacotes relevantes para seu projeto. Esses pacotes fornecem as classes e métodos necessários para manipular e formatar documentos.
 
 ```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAlignment(TableAlignment.CENTER);
-table.clearBorders();
-table.setBorder(BorderType.LEFT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.RIGHT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.TOP, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
+import com.aspose.words.*;
 ```
 
-## Construa uma mesa com bordas
+Esta instrução de importação fornece acesso a todas as classes essenciais necessárias para criar e formatar tabelas em seus documentos.
 
-Este trecho de código demonstra como criar uma tabela e definir bordas para a tabela e suas células:
+## Etapa 1: Formatando tabelas
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.clearBorders();
-table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
-```
+A formatação de tabelas no Aspose.Words para Java envolve definir bordas, sombrear células e aplicar várias opções de formatação. Veja como você pode fazer isso:
 
-## Modificar formatação de linha
-
-Aprenda como modificar a formatação de uma linha específica em uma tabela:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Row firstRow = table.getFirstRow();
-firstRow.getRowFormat().getBorders().setLineStyle(LineStyle.NONE);
-firstRow.getRowFormat().setHeightRule(HeightRule.AUTO);
-firstRow.getRowFormat().setAllowBreakAcrossPages(true);
-```
-
-## Aplicar formatação de linha
-
-Este exemplo demonstra como aplicar formatação a uma linha inteira de uma tabela:
+### Carregar o documento
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+### Crie e formate a tabela
+
+```java
 Table table = builder.startTable();
 builder.insertCell();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
 
-## Definir preenchimento de célula
-
-Explore como definir o preenchimento para células individuais em uma tabela:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
-builder.insertCell();
-builder.getCellFormat().setPaddings(30.0, 50.0, 30.0, 50.0);
-builder.writeln("I'm a wonderfully formatted cell.");
-```
-
-## Modificar formatação de célula
-
-Descubra como modificar a formatação de uma célula específica dentro de uma tabela:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-firstCell.getCellFormat().setWidth(30.0);
-firstCell.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
-firstCell.getCellFormat().getShading().setForegroundPatternColor(Color.GREEN);
-```
-
-## Formatar tabela e célula com bordas diferentes
-
-Aprenda como definir bordas diferentes para células individuais em uma tabela:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-// Defina as bordas da mesa
+// Defina as bordas para a tabela inteira.
 table.setBorders(LineStyle.SINGLE, 2.0, Color.BLACK);
-// Definir sombreamento de células para células individuais
+        
+// Defina o sombreamento desta célula.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.RED);
-// Adicione conteúdo às células
 builder.writeln("Cell #1");
+
 builder.insertCell();
+        
+// Especifique um sombreamento de célula diferente para a segunda célula.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.GREEN);
 builder.writeln("Cell #2");
-// Limpar formatação de célula para a próxima linha
+
+builder.endRow();
+```
+
+### Personalizar bordas de células
+
+```java
+// Limpe a formatação de células de operações anteriores.
 builder.getCellFormat().clearFormatting();
-// Crie bordas maiores para a primeira célula desta linha
+
+builder.insertCell();
+
+//Crie bordas maiores para a primeira célula desta linha.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getBottom().setLineWidth(4.0);
 builder.writeln("Cell #3");
+
 builder.insertCell();
 builder.getCellFormat().clearFormatting();
 builder.writeln("Cell #4");
+        
+doc.save("FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-## Definir título e descrição da tabela
+### Explicação
 
-Adicione um título e uma descrição à sua tabela:
+Neste exemplo:
+- Definir bordas: definimos as bordas de toda a tabela para um único estilo de linha com espessura de 2,0 pontos.
+- Sombreamento de Células: A primeira célula é sombreada em vermelho, e a segunda célula é sombreada em verde. Isso ajuda a diferenciar as células visualmente.
+- Bordas da célula: para a terceira célula, criamos bordas mais grossas para destacá-la de forma diferente das demais.
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setTitle("Test title");
-table.setDescription("Test description");
-```
+## Etapa 2: Aplicando estilos de tabela
 
-## Etapa 10: permitir espaçamento entre células
+Estilos de tabela no Aspose.Words para Java permitem que você aplique opções de formatação predefinidas a tabelas, facilitando a obtenção de uma aparência consistente. Veja como aplicar um estilo à sua tabela:
 
-Permita o espaçamento entre células e defina seu valor para uma tabela:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAllowCellSpacing(true);
-table.setCellSpacing(2.0);
-```
-
-## Passo 11: Construa uma Mesa com Estilo
-
-Crie uma tabela com um estilo predefinido:
+### Crie o documento e a tabela
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
 Table table = builder.startTable();
+        
+// Precisamos inserir pelo menos uma linha antes de definir qualquer formatação de tabela.
+builder.insertCell();
+```
+
+### Aplicar estilo de tabela
+
+```java
+// Defina o estilo da tabela com base em um identificador de estilo exclusivo.
 table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
+        
+// Aplique quais recursos devem ser formatados pelo estilo.
 table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
+table.autoFit(AutoFitBehavior.AUTO_FIT_TO_CONTENTS);
+```
+
+### Adicionar dados da tabela
+
+```java
 builder.writeln("Item");
 builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
 builder.writeln("Quantity (kg)");
-```
+builder.endRow();
 
-## Etapa 12: Expanda a formatação em células e linhas do estilo
-
-Aprenda como expandir estilos de tabela para aplicar formatação a células e linhas:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-Color cellShadingBefore = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-doc.expandTableStylesToDirectFormatting();
-Color cellShadingAfter = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-```
-
-## Etapa 13: Crie um estilo de tabela
-
-Crie um estilo de tabela personalizado com formatação específica:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
-table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
-builder.writeln("Item");
-builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
-builder.writeln("Quantity (kg)");
-```
-
-## Etapa 14: Definir formatação condicional
-
-Aplique formatação condicional às linhas de uma tabela:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-TableStyle tableStyle = (TableStyle) doc.getStyles().add(StyleType.TABLE, "MyTableStyle1");
-tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatternColor(Color.yellow);
-table.setStyle(tableStyle);
-```
-
-## Etapa 15: definir a formatação de TableCell
-
-Defina uma formatação específica para células individuais:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
+builder.writeln("Apples");
 builder.insertCell();
-CellFormat cellFormat = builder.getCellFormat();
-cellFormat.setWidth(250.0);
-cellFormat.setLeftPadding(30.0);
-cellFormat.setRightPadding(30.0);
-cellFormat.setTopPadding(30.0);
-cellFormat.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted cell.");
+builder.writeln("20");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Bananas");
+builder.insertCell();
+builder.writeln("40");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Carrots");
+builder.insertCell();
+builder.writeln("50");
+builder.endRow();
+
+doc.save("BuildTableWithStyle.docx");
 ```
 
-## Etapa 16: definir a formatação do TableRow
+### Explicação
 
-Aplique formatação a linhas inteiras de uma tabela:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
+Neste exemplo:
+- Definir estilo de tabela: aplicamos um estilo predefinido (`MEDIUM_SHADING_1_ACCENT_1`) para a tabela. Este estilo inclui formatação para diferentes partes da tabela.
+- Opções de estilo: especificamos que a primeira coluna, as faixas de linha e a primeira linha devem ser formatadas de acordo com as opções de estilo.
+-  AutoFit: Nós usamos`AUTO_FIT_TO_CONTENTS` para garantir que a tabela ajuste seu tamanho com base no conteúdo.
 
 ## Conclusão
 
-Aspose.Words for Java permite formatar tabelas e aplicar estilos de tabela com precisão. Desde a modificação da formatação de células individuais até a criação de estilos de tabela personalizados, você tem as ferramentas para tornar seus documentos visualmente atraentes e organizados.
+E aí está! Você formatou tabelas e aplicou estilos com sucesso usando o Aspose.Words para Java. Com essas técnicas, você pode criar tabelas que não são apenas funcionais, mas também visualmente atraentes. Formatar tabelas de forma eficaz pode melhorar muito a legibilidade e a aparência profissional dos seus documentos.
+
+Aspose.Words para Java é uma ferramenta robusta que oferece recursos extensivos para manipulação de documentos. Ao dominar a formatação e os estilos de tabela, você está um passo mais perto de aproveitar todo o poder desta biblioteca.
 
 ## Perguntas frequentes
 
-### Como faço o download do Aspose.Words para Java?
+### 1. Posso usar estilos de tabela personalizados não incluídos nas opções padrão?
 
- Você pode baixar Aspose.Words para Java no site da Aspose:[Baixe Aspose.Words para Java](https://releases.aspose.com/words/java/).
+Sim, você pode definir e aplicar estilos personalizados às suas tabelas usando Aspose.Words para Java. Verifique o[documentação](https://reference.aspose.com/words/java/) para mais detalhes sobre como criar estilos personalizados.
 
-### Posso aplicar bordas diferentes a células individuais de uma tabela?
+### 2. Como posso aplicar formatação condicional a tabelas?
 
-Sim, você pode definir bordas diferentes para células individuais em uma tabela usando Aspose.Words for Java, conforme demonstrado neste guia.
+O Aspose.Words para Java permite que você ajuste programaticamente a formatação de tabelas com base em condições. Isso pode ser feito verificando critérios específicos no seu código e aplicando a formatação de acordo.
 
-### Qual é o propósito de definir um título e uma descrição de tabela?
+### 3. Posso formatar células mescladas em uma tabela?
 
-Definir um título e uma descrição de tabela melhora a acessibilidade e a organização do seu documento, facilitando a compreensão do conteúdo pelos leitores e pelas tecnologias assistenciais.
+Sim, você pode formatar células mescladas como células comuns. Certifique-se de aplicar a formatação após mesclar células para ver as alterações refletidas.
 
-### Como posso aplicar formatação condicional a linhas específicas de uma tabela?
+### 4. É possível ajustar o layout da tabela dinamicamente?
 
-Você pode aplicar formatação condicional a linhas específicas de uma tabela definindo estilos de tabela personalizados com regras de formatação condicional, conforme mostrado neste guia.
+Sim, você pode ajustar o layout da tabela dinamicamente modificando o tamanho das células, a largura da tabela e outras propriedades com base no conteúdo ou na entrada do usuário.
 
-### Onde posso encontrar mais documentação e recursos para Aspose.Words for Java?
+### 5. Onde posso obter mais informações sobre formatação de tabelas?
 
- Para documentação abrangente e recursos adicionais, visite a documentação do Aspose.Words para Java:[Documentação Aspose.Words para Java](https://reference.aspose.com/words/java/).
+ Para exemplos e opções mais detalhados, visite o[Documentação da API Aspose.Words](https://reference.aspose.com/words/java/).

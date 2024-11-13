@@ -17,7 +17,7 @@ Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, w
 
 1.  Aspose.Words für .NET-Bibliothek: Um mit Word-Dokumenten arbeiten zu können, benötigen Sie die neueste Version von Aspose.Words für .NET. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine .NET-Entwicklungsumgebung wie Visual Studio ist zum Schreiben und Testen Ihres Codes unerlässlich.
-3. Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse von C# helfen Ihnen dabei, sich in den Codeausschnitten und Konzepten zurechtzufinden.
+3. Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse in C# helfen Ihnen bei der Navigation durch die Codefragmente und Konzepte.
 4.  Beispiel eines Word-Dokuments:[Word-Dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) mit bereiten VBA-Makros. Dies wird unsere Quelle zum Lesen der Makros sein.
 
 ## Namespaces importieren

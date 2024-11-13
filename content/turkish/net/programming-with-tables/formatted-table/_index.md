@@ -2,22 +2,22 @@
 title: Biçimlendirilmiş Tablo
 linktitle: Biçimlendirilmiş Tablo
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu ayrıntılı adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerinde tabloları nasıl oluşturacağınızı ve formatlayacağınızı öğrenin.
+description: Bu ayrıntılı adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerinde tabloların nasıl oluşturulacağını ve biçimlendirileceğini öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/formatted-table/
 ---
 ## giriiş
 
-Word belgelerinde tabloları programlı olarak oluşturmak ve biçimlendirmek göz korkutucu bir görev gibi görünebilir, ancak Aspose.Words for .NET ile bu iş basit ve yönetilebilir hale geliyor. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde biçimlendirilmiş bir tablonun nasıl oluşturulacağını size anlatacağız. Ortamınızı ayarlamaktan belgenizi güzel biçimlendirilmiş bir tabloyla kaydetmeye kadar her şeyi ele alacağız.
+Word belgelerinde tabloları programatik olarak oluşturmak ve biçimlendirmek zorlu bir görev gibi görünebilir, ancak Aspose.Words for .NET ile bu basit ve yönetilebilir hale gelir. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde biçimlendirilmiş bir tablonun nasıl oluşturulacağını göstereceğiz. Ortamınızı kurmaktan belgenizi güzel biçimlendirilmiş bir tabloyla kaydetmeye kadar her şeyi ele alacağız.
 
-## Önkoşullar
+## Ön koşullar
 
 Koda dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1. Aspose.Words for .NET Kütüphanesi: Şu adresten indirin:[Burada](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Kütüphanesi: Buradan indirin[Burada](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio benzeri bir IDE.
-3. .NET Framework: Makinenizde .NET Framework'ün kurulu olduğundan emin olun.
+3. .NET Framework: Bilgisayarınızda .NET Framework'ün yüklü olduğundan emin olun.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -30,30 +30,30 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## 1. Adım: Belge Dizininizi Kurun
+## Adım 1: Belge Dizininizi Ayarlayın
 
-Öncelikle belgenizin kaydedileceği yolu tanımlamanız gerekir.
+Öncelikle belgenizin kaydedileceği yolu tanımlamanız gerekiyor.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz gerçek yolla.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz gerçek yol ile.
 
-## Adım 2: Document'ı ve DocumentBuilder'ı başlatın
+## Adım 2: Belgeyi ve Belge Oluşturucuyu Başlatın
 
-Şimdi yeni bir belge ve DocumentBuilder nesnesini başlatın.
+Şimdi yeni bir belge ve bir DocumentBuilder nesnesi başlatın.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-`DocumentBuilder` belge oluşturma sürecini basitleştiren bir yardımcı sınıftır.
+The`DocumentBuilder` belge oluşturma sürecini basitleştiren bir yardımcı sınıftır.
 
-## 3. Adım: Tabloyu Başlatın
+## Adım 3: Tabloyu Başlatın
 
- Daha sonra tabloyu kullanarak tabloyu oluşturmaya başlayın.`StartTable` Yöntem.
+ Daha sonra, tabloyu oluşturmaya başlayın`StartTable` yöntem.
 
 ```csharp
 Table table = builder.StartTable();
@@ -62,9 +62,9 @@ builder.InsertCell();
 
 Tabloyu başlatmak için bir hücre eklemek gereklidir.
 
-## 4. Adım: Tablo Genelinde Formatlamayı Uygulayın
+## Adım 4: Tablo Genelinde Biçimlendirmeyi Uygulayın
 
-Tablonun tamamını etkileyen biçimlendirmeyi uygulayabilirsiniz. Örneğin, sol girintiyi ayarlamak:
+Tüm tabloyu etkileyen biçimlendirme uygulayabilirsiniz. Örneğin, sol girintiyi ayarlama:
 
 ```csharp
 table.LeftIndent = 20.0;
@@ -86,11 +86,11 @@ builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
 ```
 
-Bu adımda arka plan rengini, yazı tipi boyutunu ve hizalamayı ayarlayarak başlık satırının öne çıkmasını sağlıyoruz.
+Bu adımda, arka plan rengini, yazı tipi boyutunu ve hizalamayı ayarlayarak başlık satırını öne çıkarıyoruz.
 
-## Adım 6: Ek Başlık Hücreleri Ekleme
+## Adım 6: Ek Başlık Hücreleri Ekle
 
-Başlık satırına daha fazla hücre ekleyin:
+Başlık satırına daha fazla hücre ekle:
 
 ```csharp
 builder.InsertCell();
@@ -115,7 +115,7 @@ builder.RowFormat.HeightRule = HeightRule.Auto;
 
 ## Adım 8: Gövde Satırlarını Ekle
 
-İçeriği içeren gövde satırlarını ekleyin:
+İçeriği olan gövde satırlarını ekleyin:
 
 ```csharp
 builder.InsertCell();
@@ -153,13 +153,13 @@ Son olarak belgeyi belirtilen dizine kaydedin:
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-Bu, biçimlendirilmiş tabloyla bir Word belgesi oluşturup kaydedecektir.
+Bu, biçimlendirilmiş tabloyu içeren bir Word belgesi oluşturacak ve kaydedecektir.
 
 ## Çözüm
 
-Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak bir Word belgesinde iyi biçimlendirilmiş bir tablo oluşturabilirsiniz. Bu güçlü kitaplık, Word belgelerini programlı olarak düzenlemeyi kolaylaştırarak zamandan ve emekten tasarruf etmenizi sağlar.
+İşte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET kullanarak bir Word belgesinde iyi biçimlendirilmiş bir tablo oluşturabilirsiniz. Bu güçlü kütüphane, Word belgelerini programatik olarak yönetmenizi kolaylaştırarak size zaman ve emek kazandırır.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
 Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmak, düzenlemek ve dönüştürmek için güçlü bir kütüphanedir.
@@ -168,10 +168,10 @@ Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmak, düzenlem
 Evet, farklı satırlara veya hücrelere renkler de dahil olmak üzere farklı biçimlendirmeler uygulayabilirsiniz.
 
 ### Aspose.Words for .NET ücretsiz mi?
- Aspose.Words for .NET ücretli bir kütüphanedir, ancak[ücretsiz deneme](https://releases.aspose.com/).
+ Aspose.Words for .NET ücretli bir kütüphanedir, ancak bir tane alabilirsiniz[ücretsiz deneme](https://releases.aspose.com/).
 
-### Aspose.Words for .NET için nasıl destek alabilirim?
- adresinden destek alabilirsiniz.[Topluluk forumlarını görevlendirin](https://forum.aspose.com/c/words/8).
+### Aspose.Words for .NET desteğini nasıl alabilirim?
+ Destek alabilirsiniz[Aspose topluluk forumları](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words for .NET ile başka türde belgeler oluşturabilir miyim?
-Evet, Aspose.Words for .NET, PDF, HTML ve TXT dahil olmak üzere çeşitli belge formatlarını destekler.
+Evet, Aspose.Words for .NET, PDF, HTML ve TXT dahil olmak üzere çeşitli belge biçimlerini destekler.

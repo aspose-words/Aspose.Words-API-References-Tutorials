@@ -1,5 +1,5 @@
 ---
-title: Aspose.Words for Java'da Listeleri Kullanma
+title: Java için Aspose.Words'de Listelerin Kullanımı
 linktitle: Listeleri Kullanma
 second_title: Aspose.Words Java Belge İşleme API'si
 description: Bu adım adım eğitimle Aspose.Words for Java'da listeleri kullanmayı öğrenin. Belgelerinizi etkili bir şekilde düzenleyin ve biçimlendirin.
@@ -8,21 +8,21 @@ weight: 18
 url: /tr/java/using-document-elements/using-lists/
 ---
 
-Bu kapsamlı eğitimde, Microsoft Word belgeleriyle programlı olarak çalışmak için güçlü bir API olan Aspose.Words for Java'da listelerin nasıl etkili bir şekilde kullanılacağını keşfedeceğiz. Listeler, belgelerinizdeki içeriği yapılandırmak ve düzenlemek için gereklidir. Listelerle çalışmanın iki önemli yönünü ele alacağız: her bölümde listeleri yeniden başlatmak ve liste düzeylerini belirlemek. Hadi dalalım!
+Bu kapsamlı eğitimde, Microsoft Word belgeleriyle programatik olarak çalışmak için güçlü bir API olan Aspose.Words for Java'da listeleri etkili bir şekilde nasıl kullanacağınızı keşfedeceğiz. Listeler, belgelerinizdeki içeriği yapılandırmak ve düzenlemek için olmazsa olmazdır. Listelerle çalışmanın iki temel yönünü ele alacağız: her bölümde listeleri yeniden başlatmak ve liste düzeylerini belirtmek. Hadi başlayalım!
 
-## Aspose.Words for Java'ya Giriş
+## Java için Aspose.Words'e Giriş
 
-Listelerle çalışmaya başlamadan önce Aspose.Words for Java'yı tanıyalım. Bu API, geliştiricilere Java ortamında Word belgeleri oluşturma, değiştirme ve işleme araçları sağlar. Basit belge oluşturmadan karmaşık biçimlendirme ve içerik yönetimine kadar çeşitli görevler için çok yönlü bir çözümdür.
+Listelerle çalışmaya başlamadan önce, Java için Aspose.Words ile tanışalım. Bu API, geliştiricilere Java ortamında Word belgeleri oluşturma, düzenleme ve işleme araçları sağlar. Basit belge oluşturmadan karmaşık biçimlendirme ve içerik yönetimine kadar çeşitli görevler için çok yönlü bir çözümdür.
 
 ### Ortamınızı Kurma
 
- Başlamak için, geliştirme ortamınızda Aspose.Words for Java'nın kurulu ve kurulu olduğundan emin olun. İndirebilirsin[Burada](https://releases.aspose.com/words/java/). 
+ Başlamak için, geliştirme ortamınızda Aspose.Words for Java'nın yüklü ve ayarlanmış olduğundan emin olun. İndirebilirsiniz[Burada](https://releases.aspose.com/words/java/). 
 
-## Listelerin Her Bölümde Yeniden Başlatılması
+## Her Bölümde Listeleri Yeniden Başlatma
 
-Çoğu senaryoda belgenizin her bölümünde listeleri yeniden başlatmanız gerekebilir. Bu, raporlar, kılavuzlar veya akademik makaleler gibi birden fazla bölümden oluşan yapılandırılmış belgeler oluşturmak için yararlı olabilir.
+Birçok senaryoda, belgenizin her bölümünde listeleri yeniden başlatmanız gerekebilir. Bu, raporlar, kılavuzlar veya akademik makaleler gibi birden fazla bölümü olan yapılandırılmış belgeler oluşturmak için yararlı olabilir.
 
-Aspose.Words for Java kullanarak bunu nasıl başaracağınıza ilişkin adım adım kılavuzu burada bulabilirsiniz:
+İşte Java için Aspose.Words'ü kullanarak bunu nasıl başaracağınıza dair adım adım bir kılavuz:
 
 ### Belgenizi Başlatın: 
 Yeni bir belge nesnesi oluşturarak başlayın.
@@ -31,15 +31,15 @@ Yeni bir belge nesnesi oluşturarak başlayın.
 Document doc = new Document();
 ```
 
-### Numaralı Liste Ekle: 
-Belgenize numaralı bir liste ekleyin. Varsayılan numaralandırma stilini kullanacağız.
+### Numaralandırılmış Liste Ekle: 
+Belgenize numaralandırılmış bir liste ekleyin. Varsayılan numaralandırma stilini kullanacağız.
 
 ```java
 doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
 ```
 
 ### Liste Ayarlarını Yapılandırın: 
-\Listenin her bölümde yeniden başlatılmasını etkinleştirin.
+\Her bölümde listenin yeniden başlatılmasını etkinleştir.
 
 ```java
 List list = doc.getLists().get(0);
@@ -54,8 +54,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.getListFormat().setList(list);
 ```
 
-### Liste Öğelerini Ekle: 
-Belgenize liste öğeleri eklemek için bir döngü kullanın. 15. maddeden sonra bölüm sonu ekleyeceğiz.
+### Liste Öğeleri Ekle: 
+Belgenize liste öğeleri eklemek için bir döngü kullanın. 15. öğeden sonra bir bölüm sonu ekleyeceğiz.
 
 ```java
 for (int i = 1; i < 45; i++) {
@@ -66,7 +66,7 @@ for (int i = 1; i < 45; i++) {
 ```
 
 ### Belgenizi Kaydedin: 
-Belgeyi istediğiniz seçeneklerle kaydedin.
+İstediğiniz seçeneklerle belgeyi kaydedin.
 
 ```java
 OoxmlSaveOptions options = new OoxmlSaveOptions();
@@ -78,7 +78,7 @@ Bu adımları izleyerek, her bölümde yeniden başlayan listeler içeren, net v
 
 ## Liste Düzeylerini Belirleme
 
-Aspose.Words for Java, liste düzeylerini belirlemenize olanak tanır; bu, özellikle belgenizde farklı liste formatlarına ihtiyaç duyduğunuzda kullanışlıdır. Bunu nasıl yapacağımızı inceleyelim:
+Java için Aspose.Words, özellikle belgenizde farklı liste biçimlerine ihtiyaç duyduğunuzda kullanışlı olan liste düzeylerini belirtmenize olanak tanır. Bunu nasıl yapacağınızı inceleyelim:
 
 ### Belgenizi Başlatın: 
 Yeni bir belge nesnesi oluşturun.
@@ -88,15 +88,15 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-### Numaralı Liste Oluşturun: 
-Microsoft Word'den numaralandırılmış bir liste şablonu uygulayın.
+### Numaralandırılmış Liste Oluşturun: 
+Microsoft Word'den numaralandırılmış liste şablonunu uygulayın.
 
 ```java
 builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
 ```
 
-### Liste Seviyelerini Belirleyin: 
-Farklı liste düzeylerini yineleyin ve içerik ekleyin.
+### Liste Düzeylerini Belirleyin: 
+Farklı liste seviyelerinde gezinin ve içerik ekleyin.
 
 ```java
 for (int i = 0; i < 9; i++) {
@@ -106,14 +106,14 @@ for (int i = 0; i < 9; i++) {
 ```
 
 ### Madde İşaretli Liste Oluşturun: 
-Şimdi madde işaretli bir liste oluşturalım.
+Şimdi maddeler halinde bir liste oluşturalım.
 
 ```java
 builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
 ```
 
-### Madde İşaretli Liste Seviyelerini Belirleyin: 
-Numaralandırılmış listeye benzer şekilde düzeyleri belirtin ve içerik ekleyin.
+### Belirtilen Madde İşaretli Liste Düzeyleri: 
+Numaralandırılmış listeye benzer şekilde seviyeleri belirtin ve içerik ekleyin.
 
 ```java
 for (int i = 0; i < 9; i++) {
@@ -122,7 +122,7 @@ for (int i = 0; i < 9; i++) {
 }
 ```
 
-### Liste Biçimlendirmesini Durdur: 
+### Durdurma Listesi Biçimlendirmesi: 
 Liste biçimlendirmesini durdurmak için listeyi null olarak ayarlayın.
 
 ```java
@@ -136,9 +136,9 @@ Belgeyi kaydedin.
 builder.getDocument().save(outPath + "SpecifyListLevel.docx");
 ```
 
-Bu adımları izleyerek, belgelerinizdeki listelerin biçimlendirmesini kontrol etmenize olanak tanıyan özel liste düzeylerine sahip belgeler oluşturabilirsiniz.
+Bu adımları izleyerek, özel liste düzeylerine sahip belgeler oluşturabilir, böylece belgelerinizdeki listelerin biçimlendirmesini kontrol edebilirsiniz.
 
-## Kaynak Kodunu Tamamlayın
+## Tam Kaynak Kodu
 ```java
 	string outPath = "Your Output Directory";
  public void restartListAtEachSection() throws Exception
@@ -164,7 +164,7 @@ Bu adımları izleyerek, belgelerinizdeki listelerin biçimlendirmesini kontrol 
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Microsoft Word liste şablonlarından birine dayalı numaralandırılmış bir liste oluşturun
+        // Microsoft Word liste şablonlarından birine dayalı olarak numaralandırılmış bir liste oluşturun
         //ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DOT));
         // Bu listede dokuz seviye var, hepsini deneyelim.
@@ -173,7 +173,7 @@ Bu adımları izleyerek, belgelerinizdeki listelerin biçimlendirmesini kontrol 
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Microsoft Word liste şablonlarından birini temel alan madde işaretli bir liste oluşturun
+        // Microsoft Word liste şablonlarından birine dayalı madde işaretli bir liste oluşturun
         //ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
         builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));
         for (int i = 0; i < 9; i++)
@@ -199,9 +199,9 @@ Bu adımları izleyerek, belgelerinizdeki listelerin biçimlendirmesini kontrol 
         builder.writeln("Item 1");
         builder.writeln("Item 2");
         builder.getListFormat().removeNumbers();
-        // İlk listeyi yeniden kullanmak için orijinal liste formatının bir kopyasını oluşturarak numaralandırmayı yeniden başlatmamız gerekir.
+        // İlk listeyi yeniden kullanmak için, orijinal liste biçimlendirmesinin bir kopyasını oluşturarak numaralandırmayı yeniden başlatmamız gerekir.
         List list2 = doc.getLists().addCopy(list1);
-        // Yeni listeyi, yeni bir başlangıç numarası ayarlamak da dahil olmak üzere herhangi bir şekilde değiştirebiliriz.
+        // Yeni listeyi, yeni bir başlangıç numarası belirlemek de dahil olmak üzere, istediğimiz şekilde değiştirebiliriz.
         list2.getListLevels().get(0).setStartAt(10);
         builder.writeln("List 2 starts below:");
         builder.getListFormat().setList(list2);
@@ -214,23 +214,23 @@ Bu adımları izleyerek, belgelerinizdeki listelerin biçimlendirmesini kontrol 
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for Java'da listelerle etkili bir şekilde nasıl çalışılacağını öğrendiniz. Listeler, belgelerinizdeki içeriği düzenlemek ve sunmak için çok önemlidir. Her bölümde listeleri yeniden başlatmanız veya liste seviyelerini belirtmeniz gerekip gerekmediğini Aspose.Words for Java, profesyonel görünümlü belgeler oluşturmak için ihtiyaç duyduğunuz araçları sağlar.
+Tebrikler! Aspose.Words for Java'da listelerle etkili bir şekilde nasıl çalışacağınızı öğrendiniz. Listeler, belgelerinizdeki içerikleri düzenlemek ve sunmak için çok önemlidir. Her bölümde listeleri yeniden başlatmanız veya liste düzeyleri belirtmeniz gerekip gerekmediğine bakılmaksızın, Aspose.Words for Java profesyonel görünümlü belgeler oluşturmanız için ihtiyaç duyduğunuz araçları sağlar.
 
-Artık belge oluşturma ve biçimlendirme görevlerinizi geliştirmek için bu özellikleri güvenle kullanabilirsiniz. Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, bizimle iletişime geçmekten çekinmeyin.[Topluluk forumu aspose](https://forum.aspose.com/) destek için.
+Artık bu özellikleri belge oluşturma ve biçimlendirme görevlerinizi geliştirmek için güvenle kullanabilirsiniz. Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, çekinmeden bize ulaşın[Aspose topluluk forumu](https://forum.aspose.com/) destek için.
 
 ## SSS
 
-### Aspose.Words for Java'yı nasıl yüklerim?
- Aspose.Words for Java'yı şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/) ve belgelerdeki kurulum talimatlarını izleyin.
+### Java için Aspose.Words'ü nasıl yüklerim?
+ Java için Aspose.Words'ü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/) ve dokümanlardaki kurulum talimatlarını izleyin.
 
 ### Listelerin numaralandırma biçimini özelleştirebilir miyim?
-Evet, Aspose.Words for Java, liste numaralandırma formatlarını özelleştirmek için kapsamlı seçenekler sunar. Ayrıntılar için API belgelerine başvurabilirsiniz.
+Evet, Aspose.Words for Java, liste numaralandırma biçimlerini özelleştirmek için kapsamlı seçenekler sunar. Ayrıntılar için API belgelerine başvurabilirsiniz.
 
-### Aspose.Words for Java en son Word belge standartlarıyla uyumlu mu?
-Evet, Aspose.Words for Java'yı ISO 29500 de dahil olmak üzere çeşitli Word belge standartlarıyla uyumlu olacak şekilde yapılandırabilirsiniz.
+### Aspose.Words for Java en son Word belge standartlarıyla uyumlu mudur?
+Evet, Aspose.Words for Java'yı ISO 29500 dahil olmak üzere çeşitli Word belge standartlarına uyacak şekilde yapılandırabilirsiniz.
 
-### Aspose.Words for Java'yı kullanarak tablolar ve görseller içeren karmaşık belgeler oluşturabilir miyim?
-Kesinlikle! Aspose.Words for Java; tablolar, resimler ve daha fazlasını içeren gelişmiş belge formatını destekler. Örnekler için belgelere bakın.
+### Aspose.Words for Java kullanarak tablolar ve resimler içeren karmaşık belgeler oluşturabilir miyim?
+Kesinlikle! Aspose.Words for Java, tablolar, resimler ve daha fazlası dahil olmak üzere gelişmiş belge biçimlendirmesini destekler. Örnekler için belgeleri kontrol edin.
 
-### Aspose.Words for Java için nereden geçici lisans alabilirim?
- Geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+### Aspose.Words for Java için geçici lisansı nereden alabilirim?
+Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).

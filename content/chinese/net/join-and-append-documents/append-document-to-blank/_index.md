@@ -41,7 +41,7 @@ using Aspose.Words;
 
 ### 安装 Aspose.Words
 
-1. 在 Visual Studio 中，转到工具>NuGet 包管理器>包管理器控制台。
+1. 在 Visual Studio 中，转到“工具”>“NuGet 包管理器”>“包管理器控制台”。
 2. 运行以下命令安装 Aspose.Words：
 
    ```powershell

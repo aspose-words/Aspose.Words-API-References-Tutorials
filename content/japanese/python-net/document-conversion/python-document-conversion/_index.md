@@ -95,7 +95,7 @@ doc = aw.Document("input.pdf")
 doc.save("output.docx", aw.SaveFormat.DOCX)
 ```
 
-### その他のサポートされている形式
+### サポートされているその他の形式
 
 Aspose.Words for Python は、Word や PDF 以外にも、HTML、TXT、EPUB など、さまざまなドキュメント形式をサポートしています。
 

@@ -99,4 +99,4 @@ Támogatást kaphat, ha ellátogat a[Aspose támogatási fórum](https://forum.a
 
 ### 5. Csatolhatok különböző formátumú dokumentumokat?
 
-Igen, az Aspose.Words különféle formátumokat támogat, és különböző formátumú dokumentumokat is csatolhat, például DOCX, DOC, RTF stb.
+Igen, az Aspose.Words különféle formátumokat támogat, és különféle formátumú dokumentumokat is csatolhat, például DOCX, DOC, RTF stb.

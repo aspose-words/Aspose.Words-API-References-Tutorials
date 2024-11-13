@@ -64,21 +64,20 @@ Nyní je čas vytvořit komentář. Inicializujeme nový objekt Comment s uveden
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-## Krok 5: Připojte komentář k odstavci
+## Krok 5: Přidejte obsah do komentáře
+
+Nakonec do komentáře přidáme obsah. Vytvoříme nový Odstavec a Spustit, ve kterých bude text komentáře uložen, a poté je přidáme do komentáře.
+
+```csharp
+comment.SetText("Comment text.");
+```
+
+## Krok 6: Připojte komentář k odstavci
 
 Komentář musíme připojit k aktuálnímu odstavci, kam jsme text přidali. To se provádí připojením komentáře k odstavci.
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
-```
-
-## Krok 6: Přidejte obsah do komentáře
-
-Nakonec do komentáře přidáme obsah. Vytvoříme nový Odstavec a Spustit, ve kterých bude text komentáře uložen, a poté je přidáme do komentáře.
-
-```csharp
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
 ## Krok 7: Uložte dokument
@@ -103,7 +102,7 @@ Aspose.Words for .NET je výkonné rozhraní API, které umožňuje vývojářů
 
 Ano, k jednomu dokumentu můžete přidat více komentářů opakováním procesu vytváření a přidávání komentářů k různým odstavcům nebo textovým úsekům.
 
-### Jak mohu přizpůsobit vzhled komentářů?
+### Jak mohu upravit vzhled komentářů?
 
 Zatímco Aspose.Words se zaměřuje na obsah a strukturu komentářů, vzhled lze přizpůsobit pomocí vestavěných funkcí formátování aplikace Word.
 

@@ -1,26 +1,26 @@
 ---
-title: Używanie kształtów dokumentów w Aspose.Words dla Java
+title: Korzystanie z kształtów dokumentów w Aspose.Words dla Java
 linktitle: Korzystanie z kształtów dokumentów
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Odblokuj moc kształtów dokumentów w Aspose.Words dla Java. Naucz się tworzyć atrakcyjne wizualnie dokumenty na podstawie przykładów krok po kroku.
+description: Odblokuj moc kształtów dokumentów w Aspose.Words dla Java. Naucz się tworzyć wizualnie angażujące dokumenty dzięki przykładom krok po kroku.
 type: docs
 weight: 14
 url: /pl/java/document-conversion-and-export/using-document-shapes/
 ---
 
-## Wprowadzenie do używania kształtów dokumentów w Aspose.Words dla Java
+## Wprowadzenie do korzystania z kształtów dokumentów w Aspose.Words dla Java
 
-tym obszernym przewodniku zagłębimy się w świat kształtów dokumentów w Aspose.Words dla Java. Kształty są niezbędnymi elementami podczas tworzenia atrakcyjnych wizualnie i interaktywnych dokumentów. Niezależnie od tego, czy chcesz dodać objaśnienia, przyciski, obrazy czy znaki wodne, Aspose.Words dla Java zapewnia narzędzia, które pozwalają to efektywnie zrobić. Przyjrzyjmy się krok po kroku, jak korzystać z tych kształtów, korzystając z przykładów kodu źródłowego.
+W tym kompleksowym przewodniku zagłębimy się w świat kształtów dokumentów w Aspose.Words for Java. Kształty są niezbędnymi elementami, jeśli chodzi o tworzenie wizualnie atrakcyjnych i interaktywnych dokumentów. Niezależnie od tego, czy musisz dodać objaśnienia, przyciski, obrazy lub znaki wodne, Aspose.Words for Java zapewnia narzędzia, aby zrobić to wydajnie. Przyjrzyjmy się, jak używać tych kształtów krok po kroku na przykładach kodu źródłowego.
 
-## Pierwsze kroki z kształtami dokumentów
+## Rozpoczęcie pracy z kształtami dokumentów
 
- Zanim przejdziemy do kodu, skonfigurujmy nasze środowisko. Upewnij się, że w Twoim projekcie znajduje się Aspose.Words for Java. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go ze strony internetowej Aspose[Pobierz Aspose.Words dla Javy](https://releases.aspose.com/words/java/)
+Zanim przejdziemy do kodu, skonfigurujmy nasze środowisko. Upewnij się, że masz Aspose.Words for Java zintegrowane z projektem. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać je ze strony internetowej Aspose[Pobierz Aspose.Words dla Java](https://releases.aspose.com/words/java/)
 
 ## Dodawanie kształtów do dokumentów
 
 ### Wstawianie GroupShape
 
- A`GroupShape` pozwala grupować wiele kształtów razem. Oto jak możesz utworzyć i wstawić plik`GroupShape`:
+ A`GroupShape` pozwala na grupowanie wielu kształtów razem. Oto jak możesz utworzyć i wstawić`GroupShape`:
 
 ```java
 Document doc = new Document();
@@ -52,7 +52,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AddGroupShape.docx");
 
 ### Wstawianie kształtu pola tekstowego
 
- Aby wstawić kształt pola tekstowego, możesz użyć opcji`insertShape` sposób pokazany w poniższym przykładzie:
+ Aby wstawić kształt pola tekstowego, możesz użyć`insertShape` metodę pokazano w poniższym przykładzie:
 
 ```java
 Document doc = new Document();
@@ -77,7 +77,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptio
 
 ### Zarządzanie współczynnikiem proporcji
 
-Możesz kontrolować, czy współczynnik proporcji kształtu jest zablokowany, czy nie. Oto jak odblokować proporcje kształtu:
+Możesz kontrolować, czy współczynnik proporcji kształtu jest zablokowany, czy nie. Oto jak odblokować współczynnik proporcji kształtu:
 
 ```java
 Document doc = new Document();
@@ -91,7 +91,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AspectRatioLocked.docx");
 
 ### Umieszczanie kształtu w komórce tabeli
 
-Jeśli chcesz umieścić kształt w komórce tabeli, możesz to osiągnąć za pomocą następującego kodu:
+Jeśli chcesz umieścić kształt w komórce tabeli, możesz to zrobić za pomocą następującego kodu:
 
 ```java
 Document doc = new Document();
@@ -114,7 +114,7 @@ builder.endTable();
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.PAGE);
 watermark.setRelativeVerticalPosition(RelativeVerticalPosition.PAGE);
-watermark.isLayoutInCell(true); // Wyświetl kształt poza komórką tabeli, jeśli zostanie on umieszczony w komórce.
+watermark.isLayoutInCell(true); // Wyświetl kształt poza komórką tabeli, jeśli będzie on umieszczony w komórce.
 watermark.setWidth(300.0);
 watermark.setHeight(70.0);
 watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
@@ -139,7 +139,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.LayoutInCell.docx");
 
 ### Wykrywanie kształtów SmartArt
 
-Kształty SmartArt można wykryć w dokumencie za pomocą następującego kodu:
+Możesz wykryć kształty SmartArt w dokumencie, korzystając z następującego kodu:
 
 ```java
 Document doc = new Document("Your Directory Path" + "SmartArt.docx");
@@ -162,26 +162,26 @@ for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true)) {
 
 ## Wniosek
 
-W tym przewodniku poznaliśmy świat kształtów dokumentów w Aspose.Words dla Java. Wiesz już, jak dodawać różne kształty do dokumentów, manipulować ich właściwościami i pracować z kształtami SmartArt. Dzięki tej wiedzy możesz z łatwością tworzyć atrakcyjne wizualnie i interaktywne dokumenty.
+W tym przewodniku zbadaliśmy świat kształtów dokumentów w Aspose.Words for Java. Nauczyłeś się, jak dodawać różne kształty do dokumentów, manipulować ich właściwościami i pracować z kształtami SmartArt. Dzięki tej wiedzy możesz z łatwością tworzyć atrakcyjne wizualnie i interaktywne dokumenty.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla Java?
+### Czym jest Aspose.Words dla języka Java?
 
-Aspose.Words for Java to biblioteka Java, która umożliwia programistom programowe tworzenie, modyfikowanie i konwertowanie dokumentów programu Word. Zapewnia szeroką gamę funkcji i narzędzi do pracy z dokumentami w różnych formatach.
+Aspose.Words for Java to biblioteka Java, która umożliwia programistom programowe tworzenie, modyfikowanie i konwertowanie dokumentów Word. Zapewnia szeroki zakres funkcji i narzędzi do pracy z dokumentami w różnych formatach.
 
 ### Jak mogę pobrać Aspose.Words dla Java?
 
- Możesz pobrać Aspose.Words dla Java ze strony internetowej Aspose, klikając ten link:[Pobierz Aspose.Words dla Javy](https://releases.aspose.com/words/java/)
+ Możesz pobrać Aspose.Words for Java ze strony internetowej Aspose, korzystając z tego łącza:[Pobierz Aspose.Words dla Java](https://releases.aspose.com/words/java/)
 
-### Jakie są korzyści z używania kształtów dokumentów?
+### Jakie są korzyści ze stosowania kształtów dokumentów?
 
-Kształty dokumentów dodają elementy wizualne i interaktywność do dokumentów, czyniąc je bardziej wciągającymi i pouczającymi. Dzięki kształtom możesz tworzyć objaśnienia, przyciski, obrazy, znaki wodne i nie tylko, poprawiając ogólne wrażenia użytkownika.
+Kształty dokumentów dodają elementy wizualne i interaktywność do dokumentów, dzięki czemu stają się bardziej angażujące i informacyjne. Za pomocą kształtów możesz tworzyć objaśnienia, przyciski, obrazy, znaki wodne i inne, ulepszając ogólne wrażenia użytkownika.
 
 ### Czy mogę dostosować wygląd kształtów?
 
-Tak, możesz dostosować wygląd kształtów, dostosowując ich właściwości, takie jak rozmiar, położenie, obrót i kolor wypełnienia. Aspose.Words dla Java zapewnia rozbudowane opcje dostosowywania kształtu.
+Tak, możesz dostosować wygląd kształtów, dostosowując ich właściwości, takie jak rozmiar, położenie, obrót i kolor wypełnienia. Aspose.Words for Java zapewnia rozbudowane opcje dostosowywania kształtów.
 
-### Czy Aspose.Words dla Java jest kompatybilny z SmartArt?
+### Czy Aspose.Words dla Java jest kompatybilny ze SmartArt?
 
-Tak, Aspose.Words for Java obsługuje kształty SmartArt, umożliwiając pracę ze złożonymi diagramami i grafiką w dokumentach.
+Tak, Aspose.Words for Java obsługuje kształty SmartArt, co umożliwia pracę ze złożonymi diagramami i grafikami w dokumentach.

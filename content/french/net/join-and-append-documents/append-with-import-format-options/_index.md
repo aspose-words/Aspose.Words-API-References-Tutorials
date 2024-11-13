@@ -2,46 +2,46 @@
 title: Ajouter avec les options de format d'importation
 linktitle: Ajouter avec les options de format d'importation
 second_title: API de traitement de documents Aspose.Words
-description: Ajoutez sans effort des documents Word à l'aide d'Aspose.Words for .NET, en conservant le formatage avec des instructions détaillées étape par étape.
+description: Ajoutez sans effort des documents Word à l'aide d'Aspose.Words pour .NET, en conservant la mise en forme avec des instructions détaillées étape par étape.
 type: docs
 weight: 10
 url: /fr/net/join-and-append-documents/append-with-import-format-options/
 ---
 ## Introduction
 
-Salut! Vous êtes-vous déjà retrouvé dans le besoin de fusionner plusieurs documents Word en un seul, mais vous êtes resté coincé avec ces problèmes de formatage embêtants ? N'ayez crainte ! Aujourd'hui, nous examinons en profondeur comment vous pouvez ajouter un document Word à un autre à l'aide d'Aspose.Words pour .NET tout en gardant votre formatage propre et bien rangé. Attachez votre ceinture, car à la fin de ce guide, vous serez un maestro de la fusion de documents !
+Bonjour ! Vous avez déjà eu besoin de fusionner plusieurs documents Word en un seul, mais vous êtes resté bloqué face à ces problèmes de formatage embêtants ? N'ayez crainte ! Aujourd'hui, nous allons découvrir comment vous pouvez ajouter un document Word à un autre à l'aide d'Aspose.Words pour .NET tout en gardant votre formatage propre et ordonné. Attachez vos ceintures, car à la fin de ce guide, vous serez un maître de la fusion de documents !
 
-## Conditions préalables
+## Prérequis
 
-Avant de passer à la partie amusante, assurons-nous que vous disposez de tout ce dont vous avez besoin. Voici une liste de contrôle rapide :
+Avant de passer à la partie amusante, assurons-nous que vous avez tout ce dont vous avez besoin. Voici une liste de contrôle rapide :
 
-1.  Aspose.Words pour .NET : assurez-vous que cette bibliothèque est installée. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
-2. Environnement de développement : tout environnement compatible .NET comme Visual Studio.
-3. Connaissance de base de C# : vous n'avez pas besoin d'être un assistant, mais un peu de familiarité avec C# sera très utile.
+1.  Aspose.Words pour .NET : assurez-vous que cette bibliothèque est installée. Vous pouvez la télécharger à partir de[ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : tout environnement compatible .NET comme Visual Studio.
+3. Connaissances de base de C# : vous n’avez pas besoin d’être un assistant, mais une petite familiarité avec C# vous sera très utile.
 
 ## Importer des espaces de noms
 
-Tout d’abord, importons les espaces de noms nécessaires. Cela prépare le terrain pour notre aventure de codage.
+Tout d'abord, nous allons importer les espaces de noms nécessaires. Cela ouvre la voie à notre aventure de codage.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Décomposons le processus en étapes faciles et digestes.
+Décomposons le processus en étapes simples et digestes.
 
 ## Étape 1 : Configurez votre répertoire de documents
 
-Chaque voyage commence par une première étape, et ici, il s'agit de spécifier votre répertoire de documents. Considérez cela comme un réglage de votre GPS avant un road trip.
+Tout voyage commence par une première étape, et ici, il s'agit de définir votre répertoire de documents. C'est un peu comme si vous régliez votre GPS avant un voyage en voiture.
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
+// Chemin vers votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où vos documents sont stockés. C'est de là que nous extrairons nos documents source et destination.
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où sont stockés vos documents. C'est de là que nous allons extraire nos documents source et de destination.
 
-## Étape 2 : Charger les documents source et de destination
+## Étape 2 : Charger les documents source et de destination
 
 Ensuite, nous devons charger nos documents. C'est comme ramasser deux pièces d'un puzzle.
 
@@ -50,57 +50,57 @@ Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-Ici, nous chargeons nos documents source et destination en mémoire. Assurez-vous que vos noms de fichiers correspondent à ceux de votre répertoire.
+Ici, nous chargeons nos documents source et destination en mémoire. Assurez-vous que les noms de vos fichiers correspondent à ceux de votre répertoire.
 
-## Étape 3 : Définir les options de format d'importation
+## Étape 3 : Définir les options de format d’importation
 
-Maintenant, c'est ici que la magie opère. Nous définirons comment le formatage doit être géré lors de l'opération d'ajout.
+C'est maintenant que la magie opère. Nous allons définir comment le formatage doit être géré pendant l'opération d'ajout.
 
 ```csharp
-// Spécifiez que si la numérotation entre en conflit dans les documents source et de destination,
+// Spécifiez qu'en cas de conflit de numérotation dans les documents source et de destination,
 // alors la numérotation du document source sera utilisée.
 ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-Cet extrait garantit qu'en cas de conflit de numérotation entre vos documents, la numérotation du document source prévaudra. Pratique, non ?
+Cet extrait garantit qu'en cas de conflit de numérotation entre vos documents, la numérotation du document source prévaudra. Pratique, n'est-ce pas ?
 
-## Étape 4 : Joindre les documents
+## Étape 4 : Joindre les documents
 
-Il est temps de tout rassembler ! Nous ajouterons le document source au document de destination en utilisant les options de format d'importation définies.
+Il est temps de rassembler le tout ! Nous allons ajouter le document source au document de destination à l'aide des options de format d'importation définies.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
- Ici, nous ajoutons`srcDoc` à`dstDoc` en utilisant les styles de destination. Le`options` Le paramètre garantit que nos règles de formatage sont appliquées.
+ Ici, nous ajoutons`srcDoc` à`dstDoc` en utilisant des styles de destination.`options` le paramètre garantit que nos règles de formatage sont appliquées.
 
-## Étape 5 : Enregistrez le document fusionné
+## Étape 5 : Enregistrer le document fusionné
 
-Enfin et surtout, sauvons notre document nouvellement fusionné. C'est comme mettre une cerise sur votre coupe glacée.
+Enfin, et ce n'est pas le moins important, sauvegardons notre document nouvellement fusionné. C'est comme mettre une cerise sur votre sundae.
 
 ```csharp
 dstDoc.Save(dataDir + "MergedDocument.docx");
 ```
 
-Boom! Vous avez réussi à fusionner deux documents Word tout en conservant votre mise en forme intacte. 
+Boum ! Vous avez réussi à fusionner deux documents Word tout en conservant leur mise en forme intacte. 
 
 ## Conclusion
 
-Et voilà ! En suivant ces étapes, vous pouvez facilement ajouter des documents à l'aide d'Aspose.Words for .NET sans perdre votre mise en forme. Que vous soyez un développeur cherchant à rationaliser la gestion des documents ou simplement quelqu'un qui aime les documents organisés, ce guide est là pour vous. Bon codage !
+Et voilà ! En suivant ces étapes, vous pouvez facilement ajouter des documents à l'aide d'Aspose.Words pour .NET sans perdre votre mise en forme. Que vous soyez un développeur cherchant à rationaliser la gestion des documents ou simplement quelqu'un qui aime les documents organisés, ce guide est fait pour vous. Bon codage !
 
 ## FAQ
 
 ### Puis-je conserver la numérotation du document de destination au lieu de celle de la source ?
  Oui, vous pouvez modifier le`ImportFormatOptions` pour y parvenir.
 
-### Que faire si je n'ai pas Aspose.Words pour .NET ?
- Vous pouvez télécharger un essai gratuit à partir de[ici](https://releases.aspose.com/).
+### Que faire si je n’ai pas Aspose.Words pour .NET ?
+ Vous pouvez télécharger une version d'essai gratuite à partir de[ici](https://releases.aspose.com/).
 
 ### Puis-je utiliser cette méthode pour d’autres types de documents comme les PDF ?
-Aspose.Words est spécifiquement destiné aux documents Word. Pour les PDF, vous aurez peut-être besoin d'Aspose.PDF.
+Aspose.Words est spécialement conçu pour les documents Word. Pour les PDF, vous aurez peut-être besoin d'Aspose.PDF.
 
 ### Comment gérer les images dans les documents ?
 Les images sont généralement traitées de manière transparente, mais assurez-vous que vos documents source et de destination sont correctement formatés.
 
-###ment avant d'enregistrer ?
+###ment avant de sauvegarder ?
 Vous pouvez restituer le document dans un flux ou utiliser une visionneuse dans votre application pour le prévisualiser.

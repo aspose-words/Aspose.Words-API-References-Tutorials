@@ -1,7 +1,7 @@
 ---
 title: Visuelle Inhalte mit Textfeldern in Word-Dokumenten verbessern
 linktitle: Visuelle Inhalte mit Textfeldern in Word-Dokumenten verbessern
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Verbessern Sie die visuelle Darstellung von Dokumenten mit Aspose.Words Python! Erfahren Sie Schritt für Schritt, wie Sie Textfelder in Word-Dokumenten erstellen und anpassen. Verbessern Sie Inhaltslayout, Formatierung und Stil für ansprechende Dokumente.
 type: docs
 weight: 25
@@ -12,7 +12,7 @@ Textfelder sind eine leistungsstarke Funktion in Word-Dokumenten, mit der Sie op
 
 ## Einführung
 
-Textfelder bieten eine vielseitige Möglichkeit, Inhalte in einem Word-Dokument darzustellen. Sie ermöglichen es Ihnen, Text und Bilder zu isolieren, ihre Positionierung zu steuern und Formatierungen speziell auf den Inhalt des Textfelds anzuwenden. Diese Anleitung führt Sie durch den Prozess der Verwendung von Aspose.Words für Python zum Erstellen und Anpassen von Textfeldern in Ihren Dokumenten.
+Textfelder bieten eine vielseitige Möglichkeit, Inhalte in einem Word-Dokument darzustellen. Sie ermöglichen es Ihnen, Text und Bilder zu isolieren, ihre Positionierung zu steuern und Formatierungen speziell auf den Inhalt im Textfeld anzuwenden. Diese Anleitung führt Sie durch den Prozess der Verwendung von Aspose.Words für Python zum Erstellen und Anpassen von Textfeldern in Ihren Dokumenten.
 
 ## Voraussetzungen
 
@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Textfelder positionieren
 
- Die Kontrolle der Position von Textfeldern ist entscheidend für das gewünschte Layout. Sie können die Position mithilfe der`left`Und`top` Eigenschaften. Zum Beispiel:
+ Die Kontrolle der Position von Textfeldern ist entscheidend für das gewünschte Layout. Sie können die Position mithilfe der`left` Und`top` Eigenschaften. Zum Beispiel:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ In diesem Handbuch haben wir den Prozess der Verbesserung visueller Inhalte mit 
 
 ### Wie ändere ich die Größe eines Textfelds?
 
- Um die Größe eines Textfelds zu ändern, können Sie dessen Breite und Höhe mithilfe der`width`Und`height` Attribute.
+ Um die Größe eines Textfelds zu ändern, können Sie dessen Breite und Höhe mithilfe der`width` Und`height` Attribute.
 
 ### Kann ich ein Textfeld drehen?
 

@@ -51,7 +51,7 @@ Aspose.Wordsでは、文書の最初のページに異なるヘッダーとフ�
 
 ### 6.1. ヘッダーにテキストを追加する
 
-ヘッダーにテキストを追加するには、`DocumentBuilder`以下に例を示します。
+ヘッダーにテキストを追加するには、`DocumentBuilder`次に例を示します。
 
 ```java
 //最初のページのヘッダーにテキストを追加する
@@ -81,7 +81,7 @@ builder.insertImage(getImagesDir() + "Graphics Interchange Format.gif", Relative
 
 ### 7.1. フッターにテキストを追加する
 
-ヘッダーと同様に、フッターにもテキストを追加できます。`DocumentBuilder`以下に例を示します。
+ヘッダーと同様に、フッターにもテキストを追加できます。`DocumentBuilder`次に例を示します。
 
 ```java
 //プライマリフッターにテキストを追加する
@@ -111,7 +111,7 @@ Aspose.Words を使用すると、ドキュメント内の複数のセクショ�
 
 ## 11. 横向き
 
-必要に応じて、特定のセクションの向きを横向きモードに変更できます。
+必要に応じて、特定のセクションの向きを横向きに変更できます。
 
 ## 12. 前のセクションからヘッダー/フッターをコピーする
 
@@ -166,7 +166,7 @@ Aspose.Words を使用すると、ドキュメント内の複数のセクショ�
         builder.endRow();
         builder.endTable();
         builder.moveToDocumentEnd();
-        //改ページして、主要なヘッダー/フッターが表示される 2 ページ目を作成します。
+        //改ページして、主要なヘッダー/フッターが表示される 2 番目のページを作成します。
         builder.insertBreak(BreakType.PAGE_BREAK);
         builder.insertBreak(BreakType.SECTION_BREAK_NEW_PAGE);
         currentSection = builder.getCurrentSection();
@@ -209,7 +209,7 @@ copyHeadersFootersFromPreviousSection メソッドのソースコード
 
 このチュートリアルでは、Aspose.Words for Java でのヘッダーとフッターの操作の基本について説明しました。ヘッダーとフッターの作成、カスタマイズ、スタイル設定の方法や、その他の重要なドキュメント書式設定テクニックについて学習しました。
 
-詳しい情報や高度な機能については、[Aspose.Words Java ドキュメント](https://reference.aspose.com/words/java/).
+詳細と高度な機能については、[Aspose.Words Java ドキュメント](https://reference.aspose.com/words/java/).
 
 ## よくある質問
 

@@ -24,7 +24,7 @@ options.setDocumentSplitCriteria(DocumentSplitCriteria.HEADING_PARAGRAPH);
 doc.save("Your Directory Path" + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
-## 按章节拆分文档
+## 按部分拆分文档
 
 另一种拆分文档的方法是按节拆分。节通常代表文档的不同部分，按节拆分对于创建更小、更易于管理的文档很有用。
 
@@ -108,7 +108,7 @@ Aspose.Words for Java 提供广泛的功能，包括文档创建、编辑、转�
 
 ### 我可以使用 Aspose.Words for Java 将分割的文档重新合并在一起吗？
 
-当然可以。Aspose.Words for Java 允许您无缝合并拆分文档，确保您可以根据需要处理各个部分和整个文档。
+当然。Aspose.Words for Java 允许您无缝合并拆分文档，确保您可以根据需要处理各个部分和整个文档。
 
 ### 我可以在哪里访问 Aspose.Words for Java 并开始使用它？
 

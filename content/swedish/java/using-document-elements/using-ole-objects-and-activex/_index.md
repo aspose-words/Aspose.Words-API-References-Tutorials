@@ -7,7 +7,7 @@ type: docs
 weight: 21
 url: /sv/java/using-document-elements/using-ole-objects-and-activex/
 ---
-den här handledningen kommer vi att utforska hur man arbetar med OLE-objekt (Object Linking and Embedding) och ActiveX-kontroller i Aspose.Words för Java. OLE-objekt och ActiveX-kontroller är kraftfulla verktyg som låter dig förbättra dina dokument genom att bädda in eller länka externt innehåll, såsom kalkylblad, multimediafiler eller interaktiva kontroller. Följ med när vi fördjupar oss i kodexemplen och lär oss hur du använder dessa funktioner effektivt.
+I den här handledningen kommer vi att utforska hur man arbetar med OLE-objekt (Object Linking and Embedding) och ActiveX-kontroller i Aspose.Words för Java. OLE-objekt och ActiveX-kontroller är kraftfulla verktyg som låter dig förbättra dina dokument genom att bädda in eller länka externt innehåll, såsom kalkylblad, multimediafiler eller interaktiva kontroller. Följ med när vi fördjupar oss i kodexemplen och lär oss hur du använder dessa funktioner effektivt.
 
 ### Förutsättningar
 
@@ -56,7 +56,7 @@ public void insertOleObjectWithOlePackage() throws Exception
 }
 ```
 
-I det här exemplet infogar vi ett OLE-objekt med hjälp av ett OlePackage, så att du kan inkludera externa filer som inbäddade objekt.
+det här exemplet infogar vi ett OLE-objekt med hjälp av ett OlePackage, så att du kan inkludera externa filer som inbäddade objekt.
 
 ### Infoga ett OLE-objekt som en ikon
 

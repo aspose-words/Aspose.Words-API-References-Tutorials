@@ -7,9 +7,9 @@ type: docs
 weight: 1500
 url: /zh/net/join-and-append-documents/
 ---
- Aspose.Words for .NET 教程将引导您了解应用程序中使用 Word 文档进行文字处理的不同功能和技术。其中一个教程是“合并和合并文档”，它向您展示了如何将多个 Word 文档合并为一个。您将学习如何使用`Document`用于打开和操作文档的类，以及`AppendDocument`方法将一个文档的内容附加到另一个文档。本教程将逐步指导您轻松执行此操作。
+Aspose.Words for .NET 教程将引导您了解应用程序中使用 Word 文档进行文字处理的不同功能和技术。其中一个教程是“合并和合并文档”，它向您展示了如何将多个 Word 文档合并为一个。您将学习如何使用`Document`用于打开和操作文档的类，以及`AppendDocument`方法将一个文档的内容附加到另一个文档。本教程将逐步指导您轻松执行此操作。
 
-另一个很棒的教程是“替换文档中的文本”，它告诉您如何在 Word 文档中执行自动文本替换。您将学习如何使用`FindReplaceOptions`和`Document`类来查找和替换文本，指定灵活的搜索选项。本教程将引导您完成替换文档中的文本的过程，让您可以自动完成这项繁琐的任务。
+另一个很棒的教程是“在文档中替换文本”，它告诉您如何在 Word 文档中执行自动文本替换。您将学习如何使用`FindReplaceOptions`和`Document`类来查找和替换文本，指定灵活的搜索选项。本教程将引导您完成替换文档中的文本的过程，让您可以自动完成这项繁琐的任务。
 
 最后，“使用合并数据生成报告”教程将向您展示如何通过将数据合并到 Word 文档模板中来创建动态报告。您将学习如何使用`MailMerge`类来执行来自不同来源（例如表、自定义对象或数据库）的数据合并。本教程为您提供了从各种数据生成自定义报告的具体示例和实用技巧。
 
@@ -26,7 +26,7 @@ url: /zh/net/join-and-append-documents/
 | [加入连续](./join-continuous/) | 了解如何使用 Aspose.Words for .NET 无缝合并两个 Word 文档。按照我们的分步指南，实现顺畅高效的文档合并。 |
 | [加入新页面](./join-new-page/) | 了解如何使用 Aspose.Words for .NET 在 Word 中合并和附加文档。按照我们的分步指南进行高效的文档合并。 |
 | [保留源格式](./keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 合并 Word 文档并保留格式。非常适合希望自动执行文档组装任务的开发人员。 |
-| [保持源代码一致](./keep-source-together/) | 了解如何使用 Aspose.Words for .NET 合并 Word 文档并保留格式。本综合指南涵盖从设置到执行的所有内容。 |
+| [保持桌子整齐](./keep-source-together/) | 通过本分步指南了解如何使用 Aspose.Words for .NET 防止表格跨页中断。确保 Word 文档整洁、专业 |
 | [列表保留源格式](./list-keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 合并 Word 文档并保留格式。本教程提供无缝文档合并的分步指导。 |
 | [列出使用目标样式](./list-use-destination-styles/) | 了解如何使用 Aspose.Words for .NET 合并 Word 文档而不丢失列表格式。分步指南可帮助您保持文档样式完好无损。 |
 | [重新开始页码编号](./restart-page-numbering/) | 了解如何使用 Aspose.Words for .NET 合并和附加 Word 文档时重新开始页码编号。 |

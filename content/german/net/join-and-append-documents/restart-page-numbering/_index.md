@@ -9,7 +9,7 @@ url: /de/net/join-and-append-documents/restart-page-numbering/
 ---
 ## Einführung
 
-Haben Sie schon einmal Probleme gehabt, ein übersichtliches Dokument mit klar abgegrenzten Abschnitten zu erstellen, die alle mit der Seitenzahl 1 beginnen? Stellen Sie sich einen Bericht vor, in dem die Kapitel neu beginnen, oder einen langen Vorschlag mit separaten Abschnitten für die Zusammenfassung und ausführliche Anhänge. Aspose.Words für .NET, eine leistungsstarke Bibliothek zur Dokumentverarbeitung, ermöglicht Ihnen, dies mit Finesse zu erreichen. Dieser umfassende Leitfaden enthüllt die Geheimnisse der Seitennummerierung und ermöglicht Ihnen, mühelos professionell aussehende Dokumente zu erstellen.
+Hatten Sie schon einmal Probleme, ein übersichtliches Dokument mit klar abgegrenzten Abschnitten zu erstellen, die alle mit der Seitenzahl 1 beginnen? Stellen Sie sich einen Bericht vor, in dem die Kapitel neu beginnen, oder einen langen Vorschlag mit separaten Abschnitten für die Zusammenfassung und ausführliche Anhänge. Aspose.Words für .NET, eine leistungsstarke Bibliothek zur Dokumentverarbeitung, ermöglicht Ihnen, dies mit Finesse zu erreichen. Dieser umfassende Leitfaden enthüllt die Geheimnisse der Seitennummerierung und ermöglicht Ihnen, mühelos professionell aussehende Dokumente zu erstellen.
 
 ## Voraussetzungen
 
@@ -35,9 +35,9 @@ Lassen Sie uns nun einen Blick auf die praktischen Schritte zum Neustarten der S
 
 ## Schritt 1: Laden Sie die Quell- und Zieldokumente:
 
- Definieren einer Zeichenfolgenvariable`dataDir` um den Pfad zu Ihrem Dokumentverzeichnis zu speichern. Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Speicherort.
+Definieren einer Zeichenfolgenvariable`dataDir` um den Pfad zu Ihrem Dokumentverzeichnis zu speichern. Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Speicherort.
 
- Erstellen Sie zwei`Document` Objekte mit dem`Aspose.Words.Document`Konstruktor. Der erste (`srcDoc`) enthält das Quelldokument mit dem anzuhängenden Inhalt. Das zweite (`dstDoc`) stellt das Zieldokument dar, in das wir den Quellinhalt mit neu gestarteter Seitennummerierung integrieren.
+ Erstellen Sie zwei`Document` Objekte mit dem`Aspose.Words.Document` Konstruktor. Der erste (`srcDoc`) enthält das Quelldokument mit dem anzuhängenden Inhalt. Das zweite (`dstDoc`) stellt das Zieldokument dar, in das wir den Quellinhalt mit neu gestarteter Seitennummerierung integrieren.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Ersetzen Sie es durch Ihr aktuelles Verzeichnis
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Schritt 3: Neustart der Seitennummerierung aktivieren:
 
- Innerhalb derselben`PageSetup` Objekt des ersten Abschnitts des Quelldokuments, setzen Sie die`RestartPageNumbering`Eigentum an`true`. Dieser wichtige Schritt weist Aspose.Words an, die Seitennummerierung für den angehängten Inhalt neu zu starten.
+ Innerhalb derselben`PageSetup` Objekt des ersten Abschnitts des Quelldokuments, setzen Sie die`RestartPageNumbering`Eigentum an`true`Dieser wichtige Schritt weist Aspose.Words an, die Seitennummerierung für den angehängten Inhalt neu zu starten.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
@@ -95,7 +95,7 @@ Zusammenfassend lässt sich sagen, dass Sie durch die Beherrschung von Seitenumb
 
  Leider unterstützt Aspose.Words für .NET nicht direkt das Neustarten der Seitennummerierung innerhalb eines einzelnen Abschnitts. Sie können jedoch einen ähnlichen Effekt erzielen, indem Sie an der gewünschten Stelle einen neuen Abschnitt erstellen und`RestartPageNumbering` Zu`true` für diesen Abschnitt.
 
-### Wie kann ich die Startseitennummer nach einem Neustart anpassen?
+### Wie kann ich die Startseitenzahl nach einem Neustart anpassen?
 
  Während der bereitgestellte Code die Nummerierung ab 1 einleitet, können Sie ihn anpassen. Nutzen Sie die`PageNumber` Eigentum der`HeaderFooter` Objekt innerhalb des neuen Abschnitts. Durch Festlegen dieser Eigenschaft können Sie die Seitenzahl der Startseite definieren.
 

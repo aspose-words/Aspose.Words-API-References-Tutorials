@@ -1,84 +1,84 @@
 ---
 title: Kod wbudowany
 linktitle: Kod wbudowany
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zastosować style kodu wbudowanego w dokumentach programu Word przy użyciu Aspose.Words dla .NET. W tym samouczku omówiono pojedyncze i wielokrotne backticki do formatowania kodu.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak stosować style kodu inline w dokumentach Worda przy użyciu Aspose.Words dla .NET. Ten samouczek obejmuje pojedyncze i wielokrotne znaki odwrotnego apostrofu do formatowania kodu.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/inline-code/
 ---
 ## Wstęp
 
-Jeśli pracujesz nad programowym generowaniem dokumentów programu Word lub manipulowaniem nimi, może być konieczne sformatowanie tekstu tak, aby przypominał kod. Niezależnie od tego, czy chodzi o dokumentację, czy fragmenty kodu w raporcie, Aspose.Words dla .NET zapewnia solidny sposób obsługi stylizacji tekstu. W tym samouczku skupimy się na zastosowaniu stylów kodu wbudowanego do tekstu za pomocą Aspose.Words. Zbadamy, jak definiować i używać niestandardowych stylów dla pojedynczych i wielokrotnych zwrotów, dzięki czemu segmenty kodu będą wyraźnie wyróżniać się w dokumentach.
+Jeśli pracujesz nad generowaniem lub manipulowaniem dokumentami Word programowo, może być konieczne sformatowanie tekstu tak, aby przypominał kod. Niezależnie od tego, czy chodzi o dokumentację, czy fragmenty kodu w raporcie, Aspose.Words dla .NET zapewnia solidny sposób obsługi stylów tekstu. W tym samouczku skupimy się na tym, jak stosować style kodu inline do tekstu za pomocą Aspose.Words. Przyjrzymy się, jak definiować i używać niestandardowych stylów dla pojedynczych i wielokrotnych znaków odwrotnego apostrofu, dzięki czemu segmenty kodu będą wyraźnie wyróżniać się w dokumentach.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
-1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words w środowisku .NET. Można go pobrać z[Strona z wydaniami Aspose.Words dla platformy .NET](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla biblioteki .NET: Upewnij się, że Aspose.Words jest zainstalowany w środowisku .NET. Możesz go pobrać ze strony[Strona wydań Aspose.Words dla .NET](https://releases.aspose.com/words/net/).
 
-2. Podstawowa wiedza na temat programowania .NET: W tym przewodniku założono, że masz podstawową wiedzę na temat programowania w językach C# i .NET.
+2. Podstawowa wiedza na temat programowania w środowisku .NET: W tym przewodniku założono, że posiadasz podstawową wiedzę na temat programowania w języku C# i środowisku .NET.
 
-3. Środowisko programistyczne: Należy mieć skonfigurowane środowisko programistyczne .NET, takie jak Visual Studio, w którym można pisać i wykonywać kod C#.
+3. Środowisko programistyczne: Musisz mieć skonfigurowane środowisko programistyczne .NET, takie jak Visual Studio, w którym będziesz mógł pisać i wykonywać kod C#.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć korzystanie z Aspose.Words w swoim projekcie, musisz zaimportować niezbędne przestrzenie nazw. Oto jak to zrobić:
+Aby rozpocząć używanie Aspose.Words w swoim projekcie, musisz zaimportować niezbędne przestrzenie nazw. Oto, jak to zrobić:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Podzielmy proces na jasne etapy:
+Podzielmy ten proces na jasne kroki:
 
-## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
+## Krok 1: Zainicjuj dokument i DocumentBuilder
 
- Najpierw musisz utworzyć nowy dokument i plik`DocumentBuilder` przykład. The`DocumentBuilder`class pomaga dodawać treść i formatować ją w dokumencie programu Word.
+ Najpierw musisz utworzyć nowy dokument i`DocumentBuilder` instancja.`DocumentBuilder`Klasa ta pomaga dodawać treść i formatować ją w dokumencie Word.
 
 ```csharp
-// Zainicjuj DocumentBuilder nowym dokumentem.
+// Zainicjuj DocumentBuilder przy użyciu nowego dokumentu.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Dodaj styl kodu wbudowanego za pomocą jednego kliknięcia
+## Krok 2: Dodaj styl kodu inline z jednym znakiem odwrotnego apostrofu
 
-W tym kroku zdefiniujemy styl kodu wbudowanego za pomocą jednego znaku wstecz. Ten styl sformatuje tekst tak, aby wyglądał jak kod wbudowany.
+W tym kroku zdefiniujemy styl dla kodu inline z pojedynczym odwrotnym apostrofem. Ten styl sformatuje tekst tak, aby wyglądał jak kod inline.
 
 ### Zdefiniuj styl
 
 ```csharp
-// Zdefiniuj nowy styl znaków dla kodu wbudowanego za pomocą jednego znaku wstecz.
+// Zdefiniuj nowy styl znaku dla kodu inline z jednym znakiem odwrotnego apostrofu.
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
-inlineCode1BackTicks.Font.Name = "Courier New"; // Typowa czcionka dla kodu.
-inlineCode1BackTicks.Font.Size = 10.5; // Rozmiar czcionki dla kodu wbudowanego.
+inlineCode1BackTicks.Font.Name = "Courier New"; // Typowa czcionka do kodu.
+inlineCode1BackTicks.Font.Size = 10.5; // Rozmiar czcionki dla kodu inline.
 inlineCode1BackTicks.Font.Color = System.Drawing.Color.Blue; // Kolor tekstu kodu.
 inlineCode1BackTicks.Font.Bold = true; // Pogrub tekst kodu.
 ```
 
 ### Zastosuj styl
 
-Teraz możesz zastosować ten styl do tekstu w dokumencie.
+Teraz możesz zastosować ten styl do tekstu w swoim dokumencie.
 
 ```csharp
-// Użyj narzędzia DocumentBuilder, aby wstawić tekst w stylu kodu wbudowanego.
+// Użyj DocumentBuilder, aby wstawić tekst za pomocą stylu kodu inline.
 builder.Font.Style = inlineCode1BackTicks;
 builder.Writeln("Text with InlineCode style with 1 backtick");
 ```
 
-## Krok 3: Dodaj styl kodu wbudowanego z trzema backtickami
+## Krok 3: Dodaj styl kodu inline z trzema znakami odwrotnymi
 
-Następnie zdefiniujemy styl kodu wbudowanego z trzema znakami odwrotnymi, który jest zwykle używany w przypadku wieloliniowych bloków kodu.
+Następnie zdefiniujemy styl kodu inline z trzema znakami odwrotnego apostrofu, który jest zwykle stosowany w przypadku bloków kodu składających się z wielu wierszy.
 
 ### Zdefiniuj styl
 
 ```csharp
-// Zdefiniuj nowy styl znaku dla kodu wbudowanego za pomocą trzech zwrotów.
+// Zdefiniuj nowy styl znaku dla kodu inline z trzema znakami odwrotnego apostrofu.
 Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
 inlineCode3BackTicks.Font.Name = "Courier New"; // Spójna czcionka dla kodu.
 inlineCode3BackTicks.Font.Size = 10.5; // Rozmiar czcionki dla bloku kodu.
-inlineCode3BackTicks.Font.Color = System.Drawing.Color.Green; //Inny kolor dla widoczności.
-inlineCode3BackTicks.Font.Bold = true; // Zachowaj pogrubienie dla podkreślenia.
+inlineCode3BackTicks.Font.Color = System.Drawing.Color.Green; //Różne kolory dla lepszej widoczności.
+inlineCode3BackTicks.Font.Bold = true; // Użyj pogrubienia dla podkreślenia.
 ```
 
 ### Zastosuj styl
@@ -86,30 +86,30 @@ inlineCode3BackTicks.Font.Bold = true; // Zachowaj pogrubienie dla podkreślenia
 Zastosuj ten styl do tekstu, aby sformatować go jako wielowierszowy blok kodu.
 
 ```csharp
-// Zastosuj styl do bloku kodu.
+// Zastosuj styl dla bloku kodu.
 builder.Font.Style = inlineCode3BackTicks;
 builder.Writeln("Text with InlineCode style with 3 backticks");
 ```
 
 ## Wniosek
 
-Formatowanie tekstu jako kodu wbudowanego w dokumentach programu Word przy użyciu Aspose.Words dla .NET jest proste, jeśli znasz kroki. Definiując i stosując niestandardowe style z jednym lub wieloma backtickami, możesz wyraźnie wyróżnić fragmenty kodu. Ta metoda jest szczególnie przydatna w przypadku dokumentacji technicznej lub dowolnego dokumentu, w którym istotna jest czytelność kodu.
+Formatowanie tekstu jako kodu inline w dokumentach Word przy użyciu Aspose.Words dla .NET jest proste, gdy znasz już kroki. Definiując i stosując niestandardowe style z pojedynczymi lub wieloma znakami odwrotnymi, możesz sprawić, że Twoje fragmenty kodu będą się wyraźnie wyróżniać. Ta metoda jest szczególnie przydatna w przypadku dokumentacji technicznej lub dowolnego dokumentu, w którym czytelność kodu jest niezbędna.
 
-Możesz eksperymentować z różnymi stylami i opcjami formatowania, aby najlepiej odpowiadać swoim potrzebom. Aspose.Words oferuje dużą elastyczność, pozwalając w dużym stopniu dostosować wygląd dokumentu.
+Możesz swobodnie eksperymentować z różnymi stylami i opcjami formatowania, aby najlepiej dopasować je do swoich potrzeb. Aspose.Words oferuje szeroką elastyczność, pozwalając w dużym stopniu dostosować wygląd dokumentu.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę używać różnych czcionek w stylach kodu wbudowanego?
-Tak, możesz użyć dowolnej czcionki, która odpowiada Twoim potrzebom. Czcionki takie jak „Courier New” są zwykle używane w kodzie ze względu na ich charakter o stałej szerokości.
+### Czy mogę używać różnych czcionek w stylach kodu inline?
+Tak, możesz użyć dowolnej czcionki, która odpowiada Twoim potrzebom. Czcionki takie jak „Courier New” są zazwyczaj używane do kodu ze względu na ich monospacedową naturę.
 
-### Jak zmienić kolor tekstu kodu wbudowanego?
- Kolor można zmienić ustawiając opcję`Font.Color` właściwość stylu do dowolnego`System.Drawing.Color`.
+### Jak zmienić kolor tekstu kodu inline?
+ Możesz zmienić kolor, ustawiając`Font.Color` właściwość stylu do dowolnego`System.Drawing.Color`.
 
 ### Czy mogę zastosować wiele stylów do tego samego tekstu?
-W Aspose.Words możesz zastosować tylko jeden styl na raz. Jeśli chcesz połączyć style, rozważ utworzenie nowego stylu, który będzie zawierał całe pożądane formatowanie.
+W Aspose.Words możesz zastosować tylko jeden styl na raz. Jeśli musisz połączyć style, rozważ utworzenie nowego stylu, który zawiera wszystkie pożądane formatowania.
 
 ### Jak zastosować style do istniejącego tekstu w dokumencie?
  Aby zastosować style do istniejącego tekstu, należy najpierw zaznaczyć tekst, a następnie zastosować żądany styl za pomocą`Font.Style` nieruchomość.
 
-### Czy mogę używać Aspose.Words do innych formatów dokumentów?
-Aspose.Words został zaprojektowany specjalnie dla dokumentów Word. W przypadku innych formatów może być konieczne użycie innych bibliotek lub przekonwertowanie dokumentów na zgodny format.
+### Czy mogę używać Aspose.Words w innych formatach dokumentów?
+Aspose.Words jest zaprojektowany specjalnie dla dokumentów Word. W przypadku innych formatów może być konieczne użycie innych bibliotek lub przekonwertowanie dokumentów do zgodnego formatu.

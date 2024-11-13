@@ -1,26 +1,26 @@
 ---
-title: Ignoruj tekst wewnątrz wstawiaj poprawki
-linktitle: Ignoruj tekst wewnątrz wstawiaj poprawki
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak skutecznie zarządzać wersjami dokumentów za pomocą Aspose.Words dla .NET. Odkryj techniki ignorowania tekstu we wkładkach w celu usprawnienia edycji.
+title: Ignoruj tekst wewnątrz wstawianych wersji
+linktitle: Ignoruj tekst wewnątrz wstawianych wersji
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak skutecznie zarządzać rewizjami dokumentów za pomocą Aspose.Words dla .NET. Odkryj techniki ignorowania tekstu wewnątrz wstawianych rewizji w celu usprawnienia edycji.
 type: docs
 weight: 10
 url: /pl/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 ## Wstęp
 
-W tym obszernym przewodniku zagłębimy się w wykorzystanie Aspose.Words dla .NET do skutecznego zarządzania wersjami dokumentów. Niezależnie od tego, czy jesteś programistą, czy entuzjastą technologii, zrozumienie, jak ignorować tekst we wkładanych wersjach, może usprawnić przepływ pracy podczas przetwarzania dokumentów. Ten samouczek wyposaży Cię w umiejętności niezbędne do wykorzystania zaawansowanych funkcji Aspose.Words do płynnego zarządzania wersjami dokumentów.
+W tym kompleksowym przewodniku zagłębimy się w używanie Aspose.Words dla .NET do efektywnego zarządzania wersjami dokumentów. Niezależnie od tego, czy jesteś programistą, czy entuzjastą technologii, zrozumienie, jak ignorować tekst wewnątrz wstawianych wersji, może usprawnić przepływy pracy przetwarzania dokumentów. Ten samouczek wyposaży Cię w niezbędne umiejętności, aby wykorzystać potężne funkcje Aspose.Words do bezproblemowego zarządzania wersjami dokumentów.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
-- Program Visual Studio zainstalowany na Twoim komputerze.
-- Biblioteka Aspose.Words dla .NET zintegrowana z Twoim projektem.
-- Podstawowa znajomość języka programowania C# i frameworku .NET.
+Zanim przejdziesz do samouczka, upewnij się, że spełnione są następujące wymagania wstępne:
+- Na Twoim komputerze zainstalowano program Visual Studio.
+- Biblioteka Aspose.Words for .NET zintegrowana z Twoim projektem.
+- Podstawowa znajomość języka programowania C# i .NET Framework.
 
 ## Importuj przestrzenie nazw
 
-Na początek uwzględnij niezbędne przestrzenie nazw w projekcie C#:
+Na początek uwzględnij niezbędne przestrzenie nazw w swoim projekcie C#:
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Replacing;
@@ -28,27 +28,27 @@ using System;
 using System.Text.RegularExpressions;
 ```
 
-## Krok 1: Utwórz nowy dokument i rozpocznij śledzenie poprawek
+## Krok 1: Utwórz nowy dokument i zacznij śledzić zmiany
 
-Najpierw zainicjuj nowy dokument i rozpocznij śledzenie wersji:
+Najpierw zainicjuj nowy dokument i zacznij śledzić zmiany:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Rozpocznij śledzenie wersji
+// Rozpocznij śledzenie rewizji
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //Wstaw tekst ze śledzeniem wersji
+builder.Writeln("Inserted"); //Wstaw tekst ze śledzeniem rewizji
 doc.StopTrackRevisions();
 ```
 
-## Krok 2: Wstaw nie poprawiony tekst
+## Krok 2: Wstaw tekst niepoddany rewizji
 
-Następnie wstaw tekst do dokumentu bez śledzenia wersji:
+Następnie wstaw tekst do dokumentu bez śledzenia zmian:
 ```csharp
 builder.Write("Text");
 ```
 
-## Krok 3: Zignoruj wstawiony tekst za pomocą opcji FindReplaceOptions
+## Krok 3: Ignoruj wstawiony tekst za pomocą opcji FindReplace
 
 Teraz skonfiguruj FindReplaceOptions, aby ignorować wstawione wersje:
 ```csharp
@@ -58,7 +58,7 @@ Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Krok 4: Wyprowadź tekst dokumentu
+## Krok 4: Tekst dokumentu wyjściowego
 
 Wyświetl tekst dokumentu po zignorowaniu wstawionych wersji:
 ```csharp
@@ -75,21 +75,21 @@ doc.Range.Replace(regex, "*", options);
 
 ## Wniosek
 
-Opanowanie techniki ignorowania tekstu we wstawionych wersjach za pomocą Aspose.Words dla .NET zwiększa możliwości edycji dokumentów. Wykonując poniższe kroki, możesz skutecznie zarządzać wersjami swoich dokumentów, zapewniając przejrzystość i precyzję w zadaniach związanych z przetwarzaniem tekstu.
+Opanowanie techniki ignorowania tekstu wewnątrz wstawianych rewizji z Aspose.Words dla .NET zwiększa możliwości edycji dokumentów. Postępując zgodnie z tymi krokami, możesz skutecznie zarządzać rewizjami w swoich dokumentach, zapewniając przejrzystość i precyzję w zadaniach przetwarzania tekstu.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak mogę rozpocząć śledzenie wersji w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
- Aby rozpocząć śledzenie wersji, użyj`doc.StartTrackRevisions(author, date)` metoda.
+### Jak mogę rozpocząć śledzenie zmian w dokumencie Word za pomocą Aspose.Words dla .NET?
+ Aby rozpocząć śledzenie rewizji, użyj`doc.StartTrackRevisions(author, date)` metoda.
 
 ### Jaka jest korzyść z ignorowania wstawionego tekstu w wersjach dokumentu?
-Ignorowanie wstawionego tekstu pomaga skupić się na podstawowej treści, jednocześnie efektywnie zarządzając zmianami w dokumencie.
+Ignorowanie wstawionego tekstu pozwala skupić się na głównej treści i sprawnie zarządzać zmianami w dokumencie.
 
 ### Czy mogę przywrócić zignorowany wstawiony tekst do oryginału w Aspose.Words dla .NET?
 Tak, możesz przywrócić zignorowany wstawiony tekst, używając odpowiednich ustawień FindReplaceOptions.
 
 ### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
- Odwiedź[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe przewodniki i odniesienia do API.
+ Odwiedź[Dokumentacja Aspose.Words dla .NET](https://reference.aspose.com/words/net/) Aby uzyskać szczegółowe przewodniki i odniesienia do API.
 
-### Czy istnieje forum społecznościowe do omawiania zapytań związanych z Aspose.Words związanych z platformą .NET?
- Tak, możesz odwiedzić[Forum Aspose.Words](https://forum.aspose.com/c/words/8) za wsparcie społeczności i dyskusje.
+### Czy istnieje forum społecznościowe umożliwiające dyskusję na temat Aspose.Words w przypadku zapytań związanych z platformą .NET?
+ Tak, możesz odwiedzić[Forum Aspose.Words](https://forum.aspose.com/c/words/8) w celu uzyskania wsparcia społeczności i dyskusji.

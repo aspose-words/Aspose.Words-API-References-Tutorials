@@ -10,7 +10,7 @@ url: /hu/java/document-conversion-and-export/using-barcode-generation/
 
 ## Bevezetés a vonalkódgenerálás használatába az Aspose.Words for Java programban
 
-dokumentumfeldolgozás és automatizálás területén az Aspose.Words for Java egy sokoldalú és hatékony könyvtár. Ez a cikk végigvezeti Önt a vonalkódok Aspose.Words for Java használatával létrehozásának folyamatán. Lépésről lépésre megvizsgáljuk, hogyan építheti be a vonalkód-generálást Java-alkalmazásaiba. Szóval, ugorjunk bele!
+A dokumentumfeldolgozás és automatizálás területén az Aspose.Words for Java egy sokoldalú és hatékony könyvtár. Ez a cikk végigvezeti Önt a vonalkódok Aspose.Words for Java használatával létrehozásának folyamatán. Lépésről lépésre megvizsgáljuk, hogyan építheti be a vonalkód-generálást Java-alkalmazásaiba. Szóval, ugorjunk bele!
 
 ## Előfeltételek
 
@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Állítsa be a Vonalkód generátort
 
- Állítson be egyéni vonalkód-generátort a`FieldOptions` osztály. Ebben a példában feltételezzük, hogy megvalósította a`CustomBarcodeGenerator`osztályt a vonalkód generálásához. Cserélje ki`CustomBarcodeGenerator` a tényleges vonalkód generálási logikával:
+ Állítson be egyéni vonalkód-generátort a`FieldOptions` osztály. Ebben a példában feltételezzük, hogy megvalósította a`CustomBarcodeGenerator` osztályt a vonalkód generálásához. Cserélje ki`CustomBarcodeGenerator` a tényleges vonalkód generálási logikával:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

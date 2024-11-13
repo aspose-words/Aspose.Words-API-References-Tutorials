@@ -22,7 +22,7 @@ url: /zh/java/document-merging/merging-documents-documentbuilder/
 
 ## 入门
 
-首先创建一个新的 Java 项目，并向其中添加 Aspose.Words 库。您可以从以下位置下载该库[这里](https://releases.aspose.com/words/java/).
+首先创建一个新的 Java 项目并向其中添加 Aspose.Words 库。您可以从以下位置下载该库[这里](https://releases.aspose.com/words/java/).
 
 ## 创建新文档
 
