@@ -13,6 +13,7 @@ is_root: true
 ## 教程
 | 标题 | 描述 |
 | --- | --- | 
+| [人工智能文档处理](./ai-powered-document-processing/) | 使用 Aspose.Words for .NET 教程释放您的潜力。学习使用 AI 驱动的解决方案增强文档处理能力，以获得快速有效的结果。 |  
 | [申请许可证](./apply-license/) | 有关对 Aspose.Words for .NET 应用许可的不同变体的教程，包括从文件、流和计量许可证应用许可证。 |  
 | [启用 OpenType 功能](./enable-opentype-features/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中启用 OpenType 功能。本教程将指导您完成启用 OpenType 字体高级功能的步骤。 |  
 | [带注释的文字处理](./working-with-comments/) | 使用 Aspose.Words for .NET 探索 Word 文档中的注释管理功能。了解如何使用分步教程添加、删除、搜索和格式化注释。 |  
@@ -26,7 +27,7 @@ is_root: true
 | [使用 Markdown 进行文字处理](./working-with-markdown/) | 通过这些分步教程和实践示例学习如何使用 Aspose.Words for .NET 在 Word 文档中使用 Markdown 语法。 |  
 | [使用 Node 进行文字处理](./working-with-node/) | 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的节点。带有代码示例的详细教程。 |  
 | [使用 OleObjects 和 ActiveX 进行文字处理](./working-with-oleobjects-and-activex/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中使用 OLE 和 ActiveX 对象。带有代码示例的详细教程。 |  
-| [带修订的文字处理](./working-with-revisions/) | 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的修订版本。分步教程，包含用于管理和查看修订版本的示例代码。 |  
+| [文字处理与修订](./working-with-revisions/) | 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的修订版本。分步教程，包含用于管理和查看修订版本的示例代码。 |  
 | [使用 Section 进行文字处理](./working-with-section/) | 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的部分。分步教程包含示例代码，可帮助您高效地创建、编辑和格式化部分。 |  
 | [使用文本框进行文字处理](./working-with-textboxes/) | 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的文本框。分步教程包含示例代码，用于高效创建、操作和格式化文本框。 |  
 | [使用 VBA 宏进行文字处理](./working-with-vba-macros/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中使用 VBA 宏。使用代码示例完成教程，以在 Word 文档中创建、修改和运行 VBA 宏。  |  
@@ -49,7 +50,7 @@ is_root: true
 | [使用文档属性进行文字处理](./programming-with-document-properties/) | 了解如何使用 Aspose.Words for .NET 管理 Word 文档属性。本教程将引导您了解各种功能，例如读取和写入属性、自定义默认属性。 |  
 | [使用 Webextension 进行文字处理](./programming-with-webextension/) | 了解如何使用 Aspose.Words for .NET 开发 Word 文档的 Web 扩展。了解如何创建、修改和自定义 Web 扩展，并将其集成到您的 Word 文档中。 |  
 | [用图表处理文字](./programming-with-charts/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建、自定义和操作图形。教程提供分步说明和 C# 源代码来帮助您添加图表。 |  
-| [使用 Officemath 进行文字处理](./programming-with-officemath/) | 在 Aspose.Words for .NET 中探索使用 Office Math 公式进行文字处理。用于在 Word 文档中创建、编辑和格式化数学公式的分步教程和示例代码。 |  
+| [使用 Officemath 进行文字处理](./programming-with-officemath/) | 探索 Aspose.Words for .NET 中 Office Math 公式的文字处理。用于在 Word 文档中创建、编辑和格式化数学公式的分步教程和示例代码。 |  
 | [用形状处理文字](./programming-with-shapes/) | 探索 Aspose.Words for .NET 中的形状编程。通过分步教程和 C# 中的示例代码了解如何操作和自定义 Word 文档中的形状。 |  
 | [带水印的文字处理](./programming-with-watermark/) | 了解如何在 Aspose.Words for .NET 中使用水印进行编程。通过分步教程和示例 C# 代码了解如何添加文本或图像水印、自定义其外观、将其放置在页面上等。 |  
 | [使用表格样式和格式进行文字处理](./programming-with-table-styles-and-formatting/) | 了解如何在 Aspose.Words for .NET 中编程表格样式和格式。通过分步教程和 C# 中的示例代码了解如何应用预定义样式、自定义单元格格式、边框等。 |  
@@ -59,7 +60,7 @@ is_root: true
 | [使用 Pdfloadoptions 进行文字处理](./programming-with-pdfloadoptions/) | 学习使用 Aspose.Words for .NET 中的 PDF 加载选项进行文字处理。通过分步教程和示例代码学习如何加载和操作 PDF 格式的 Word 文档。 |  
 | [使用 Rtfloadoptions 进行文字处理](./programming-with-rtfloadoptions/) | 学习使用 Aspose.Words for .NET 中的 RTF 加载选项进行文字处理。学习如何使用分步教程和示例 C# 代码加载和操作 RTF 文档。 |  
 | [使用 Txtloadoptions 进行文字处理](./programming-with-txtloadoptions/) | 了解如何使用 Aspose.Words for .NET 中的文本文件加载选项进行编程。通过分步教程和 C# 中的示例代码了解如何指定编码、忽略未知字符、处理换行符等。 |  
-| [使用 Docsaveoptions 进行文字处理](./programming-with-docsaveoptions/) | 了解如何使用 Aspose.Words for .NET 自定义 Word 文档的保存选项。本教程将引导您了解各种可用选项，例如文件格式、压缩、密码保护。 |  
+| [使用 DocSaveOptions 进行文字处理](./programming-with-docsaveoptions/) | 了解如何使用 Aspose.Words for .NET 自定义 Word 文档的保存选项。本教程将引导您了解各种可用选项，例如文件格式、压缩、密码保护。 |  
 | [使用 Htmlfixedsaveoptions 进行文字处理](./programming-with-htmlfixedsaveoptions/) | 了解如何在 Aspose.Words for .NET 中使用固定 HTML 保存选项进行编程。本教程将指导您使用不同的功能来生成具有固定布局、嵌入图像的 HTML 文档。 |  
 | [使用 Htmlsaveoptions 进行文字处理](./programming-with-htmlsaveoptions/) | 了解如何使用 Aspose.Words for .NET 中的 HTML 保存选项进行编程。轻松将 Word 文档转换为 HTML，同时保留格式和内容。 |  
 | [使用 Imagesaveoptions 处理文字](./programming-with-imagesaveoptions/) | 了解如何使用 Aspose.Words for .NET 中的图像保存选项进行编程。带有示例代码的分步教程，用于保存和处理 Word 文档中的图像。 |  

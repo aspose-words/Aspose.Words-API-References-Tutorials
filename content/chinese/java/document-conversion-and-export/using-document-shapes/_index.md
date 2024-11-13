@@ -77,7 +77,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptio
 
 ### 管理宽高比
 
-您可以控制是否锁定形状的纵横比。解锁形状纵横比的方法如下：
+您可以控制是否锁定形状的纵横比。以下是如何解锁形状的纵横比：
 
 ```java
 Document doc = new Document();

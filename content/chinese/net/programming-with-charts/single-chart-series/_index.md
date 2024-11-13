@@ -15,9 +15,9 @@ url: /zh/net/programming-with-charts/single-chart-series/
 
 在我们开始之前，让我们确保我们已经准备好了所有需要的东西。以下是一份快速检查清单：
 
-1.  Aspose.Words for .NET 库：您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET 库：你可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 2. Visual Studio：任何最新版本都应该可以。
-3. 对 C# 的基本了解：没什么特别的，只要掌握基础知识即可。
+3. 对 C# 的基本了解：没什么特别的，只要基础知识即可。
 
 ## 导入命名空间
 
@@ -68,7 +68,7 @@ series1.Name = "Chart Series Name 2";
 
 ## 步骤 5：平滑线条
 
-想要让这些线条看起来平滑而圆滑吗？让我们使用 Catmull-Rom 样条来实现这一点。
+想要这些线条看起来平滑而圆滑吗？让我们使用 Catmull-Rom 样条来实现。
 
 ```csharp
 series0.Smooth = true;
@@ -96,7 +96,7 @@ series1.Marker.Size = 10;
 
 ## 步骤 8：保存文档
 
-最后，让我们保存我们的文档。这是我们欣赏我们的作品的地方。
+最后，让我们保存文档。这里是我们欣赏我们作品的地方。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");

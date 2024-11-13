@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
 
 ## 结论
 
-就这样！只需几行代码，您就可以使用 Aspose.Words for .NET 针对 MS Word 2016 优化文档。这样可以确保无论受众使用哪个版本的 Word，您的文档看起来都很棒。就是这么简单直接。所以，快来尝试一下吧！您的文档会感谢您的。
+就这样！只需几行代码，您就可以使用 Aspose.Words for .NET 针对 MS Word 2016 优化文档。这样可以确保您的文档无论受众使用哪个版本的 Word 都看起来很棒。就是这么简单直接。所以，快来尝试一下吧！您的文档会感谢您的。
 
 ## 常见问题解答
 

@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### 解释
 
-- 文档 doc：创建 Document 类的新实例。
+- 文档doc：创建Document类的新实例。
 - DocumentBuilder 构建器：DocumentBuilder 有助于将内容插入到 Document 对象中。
 
 ## 步骤 2：插入图表
@@ -77,7 +77,7 @@ ChartSeries series0 = shape.Chart.Series[0];
 
 ## 步骤 4：自定义数据标签
 
-可以自定义数据标签以显示各种信息。我们将配置标签以显示图例图例、系列名称和值，同时隐藏类别名称和百分比。
+数据标签可以自定义以显示各种信息。我们将配置标签以显示图例图例、系列名称和值，同时隐藏类别名称和百分比。
 
 ```csharp
 ChartDataLabelCollection labels = series0.DataLabels;

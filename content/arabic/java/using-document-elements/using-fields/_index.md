@@ -1,26 +1,26 @@
 ---
-title: استخدام الحقول في Aspose.Words لجافا
+title: استخدام الحقول في Aspose.Words للغة Java
 linktitle: استخدام الحقول
-second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: تعلم كيفية استخدام Aspose.Words لحقول Java بشكل فعال في هذا البرنامج التعليمي خطوة بخطوة. قم بإنشاء مستندات Word ديناميكية بسهولة.
+second_title: واجهة برمجة تطبيقات معالجة المستندات في Java Aspose.Words
+description: تعلم كيفية استخدام Aspose.Words لحقول Java بفعالية في هذا البرنامج التعليمي خطوة بخطوة. قم بإنشاء مستندات Word ديناميكية بسهولة.
 type: docs
 weight: 11
 url: /ar/java/using-document-elements/using-fields/
 ---
 
-في هذا البرنامج التعليمي خطوة بخطوة، سنرشدك حول كيفية استخدام الحقول في Aspose.Words for Java للتعامل مع المستندات بسهولة. Aspose.Words for Java عبارة عن واجهة برمجة تطبيقات قوية تتيح لك العمل مع مستندات Word برمجيًا، مما يمنحك التحكم الكامل في محتواها وتنسيقها.
+في هذا البرنامج التعليمي خطوة بخطوة، سنرشدك إلى كيفية استخدام الحقول في Aspose.Words for Java للتعامل مع المستندات بسهولة. Aspose.Words for Java عبارة عن واجهة برمجة تطبيقات قوية تتيح لك العمل مع مستندات Word برمجيًا، مما يمنحك التحكم الكامل في محتواها وتنسيقها.
 
-## 1. مقدمة
+## 1. المقدمة
 
-Aspose.Words for Java هي أداة أساسية لأي شخص يتعامل مع مستندات Word في تطبيقات Java. الحقول عبارة عن عناصر نائبة يمكنها تخزين البيانات الديناميكية في مستندك. سيوضح لك هذا البرنامج التعليمي كيفية العمل مع الحقول بفعالية.
+يعد Aspose.Words for Java أداة أساسية لأي شخص يتعامل مع مستندات Word في تطبيقات Java. الحقول عبارة عن عناصر نائبة يمكنها تخزين البيانات الديناميكية في مستندك. سيوضح لك هذا البرنامج التعليمي كيفية العمل مع الحقول بشكل فعال.
 
-## 2. إعداد بيئتك
+## 2. إعداد البيئة الخاصة بك
 
- قبل أن تبدأ، تأكد من تثبيت Aspose.Words for Java. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/java/). تأكد أيضًا من تثبيت Java وبيئة التطوير المتكاملة (IDE) مثل Eclipse أو IntelliJ IDEA على نظامك.
+ قبل أن تبدأ، تأكد من تثبيت Aspose.Words for Java. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/java/)تأكد أيضًا من تثبيت Java وبيئة التطوير المتكاملة (IDE) مثل Eclipse أو IntelliJ IDEA على نظامك.
 
 ## 3. تحميل مستند Word
 
-في تطبيق Java الخاص بك، تحتاج إلى تحميل مستند Word الذي تريد العمل معه. إليك مقتطف من التعليمات البرمجية للبدء:
+في تطبيق Java الخاص بك، تحتاج إلى تحميل مستند Word الذي تريد العمل به. فيما يلي مقتطف من التعليمات البرمجية لمساعدتك في البدء:
 
 ```java
 string dataDir = "Your Document Directory";
@@ -28,17 +28,17 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- يستبدل`"Your Document Directory"`و`"Your Output Directory"` بالطرق المناسبة .
+ يستبدل`"Your Document Directory"` و`"Your Output Directory"` مع المسارات المناسبة.
 
 ## 4. تخصيص دمج البريد
 
-يوفر Aspose.Words for Java دعمًا ممتازًا لعمليات دمج البريد. يمكنك تخصيص عملية دمج المراسلات عن طريق إعداد معالج حدث دمج المراسلات. وإليك كيفية القيام بذلك:
+يوفر Aspose.Words for Java دعمًا ممتازًا لعمليات دمج البريد. يمكنك تخصيص عملية دمج البريد من خلال إعداد معالج حدث دمج البريد. وإليك كيفية القيام بذلك:
 
 ```java
-// قم بإعداد معالج حدث دمج البريد للقيام بالعمل المخصص.
+// إعداد معالج حدث دمج البريد للقيام بالعمل المخصص.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
 
-// قم بقص قيم دمج المراسلات اللاحقة والمسافات البيضاء البادئة.
+// قم بقص المسافات البيضاء الزائدة والبادئة في قيم دمج البريد.
 doc.getMailMerge().setTrimWhitespaces(false);
 
 String[] fieldNames = {
@@ -54,9 +54,9 @@ Object[] fieldValues = {
 doc.getMailMerge().execute(fieldNames, fieldValues);
 ```
 
-## 5. حفظ الوثيقة
+## 5. حفظ المستند
 
-بعد تخصيص المستند الخاص بك، يمكنك حفظه باستخدام الكود التالي:
+بعد تخصيص مستندك، يمكنك حفظه باستخدام الكود التالي:
 
 ```java
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
@@ -64,14 +64,14 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 
  يستبدل`"Your Output Directory"` مع مسار الإخراج المطلوب.
 
-## كود المصدر الكامل
+## الكود المصدر الكامل
 ```java
 string dataDir = "Your Document Directory";
 string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
-// قم بإعداد معالج حدث دمج البريد للقيام بالعمل المخصص.
+// إعداد معالج حدث دمج البريد للقيام بالعمل المخصص.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
-// قم بقص قيم دمج المراسلات اللاحقة والمسافات البيضاء البادئة.
+// قم بقص المسافات البيضاء الزائدة والبادئة في قيم دمج البريد.
 doc.getMailMerge().setTrimWhitespaces(false);
 String[] fieldNames = {
 	"RecipientName", "SenderName", "FaxNumber", "PhoneNumber",
@@ -84,23 +84,23 @@ Object[] fieldValues = {
 doc.getMailMerge().execute(fieldNames, fieldValues);
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```
-كود المصدر لفئة HandleMergeField
+الكود المصدر لفئة HandleMergeField
 
 ```java
     private static class HandleMergeField implements IFieldMergingCallback
     {
-        /// <الملخص>
-        /// يتم استدعاء هذا المعالج لكل حقل دمج بريدي موجود في المستند،
+        /// <ملخص>
+        //يتم استدعاء هذا المعالج لكل حقل دمج بريد موجود في المستند،
         /// لكل سجل موجود في مصدر البيانات.
         /// </ملخص>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e) throws Exception
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // قررنا أننا نريد أن يتم إخراج جميع القيم المنطقية كحقول نموذج خانة اختيار.
+            // لقد قررنا أننا نريد إخراج كافة القيم المنطقية كحقول نموذج مربع الاختيار.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
-                // انقل "المؤشر" إلى حقل الدمج الحالي.
+                // نقل "المؤشر" إلى حقل الدمج الحالي.
                 mBuilder.moveToMergeField(e.getFieldName());
                 String checkBoxName = MessageFormat.format("{0}{1}", e.getFieldName(), e.getRecordIndex());
                 mBuilder.insertCheckBox(checkBoxName, (Boolean) e.getFieldValue(), 0);
@@ -152,7 +152,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         public void fieldMerging(FieldMergingArgs args)
         {
-            // التنفيذ غير مطلوب.
+            // لا يتطلب التنفيذ.
         }
         public void imageFieldMerging(ImageFieldMergingArgs args) throws Exception
         {
@@ -203,20 +203,20 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // قم بإدراج MERGEFIELD متداخل داخل حقل IF.
-        // نظرًا لأن عبارة الحقل IF خاطئة، فلن يتم عرض نتيجة MERGEFIELD الداخلي،
-        //ولن يتلقى MERGEFIELD أية بيانات أثناء عملية دمج المراسلات.
+        // إدراج MERGEFIELD متداخلاً داخل حقل IF.
+        // نظرًا لأن بيان الحقل IF خاطئ، فلن يتم عرض نتيجة MERGEFIELD الداخلي،
+        //ولن يستقبل MERGEFIELD أي بيانات أثناء دمج البريد.
         FieldIf fieldIf = (FieldIf)builder.insertField(" IF 1 = 2 ");
         builder.moveTo(fieldIf.getSeparator());
         builder.insertField(" MERGEFIELD  FullName ");
-        // لا يزال بإمكاننا حساب MERGEFIELDs داخل حقول IF الخاصة بالبيانات الخاطئة إذا قمنا بتعيين هذه العلامة على "صحيح".
+        // لا يزال بإمكاننا حساب MERGEFIELDs داخل حقول IF ذات العبارة الخاطئة إذا قمنا بتعيين هذا العلم إلى true.
         doc.getMailMerge().setUnconditionalMergeFieldsAndRegions(true);
         DataTable dataTable = new DataTable();
         dataTable.getColumns().add("FullName");
         dataTable.getRows().add("James Bond");
         doc.getMailMerge().execute(dataTable);
-        // لن تكون النتيجة مرئية في المستند لأن حقل IF خطأ،
-        // لكن MERGEFIELD الداخلي تلقى البيانات بالفعل.
+        // لن تكون النتيجة مرئية في المستند لأن حقل IF خاطئ،
+        // لكن حقل MERGEFIELD الداخلي تلقى بالفعل بيانات.
         doc.save("Your Directory Path" + "WorkingWithFields.MailMergeAndConditionalField.docx");
     }
     @Test
@@ -241,15 +241,15 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         {
             // لا تفعل شيئا.
         }
-        /// <الملخص>
-        /// يتم استدعاء هذا عندما يواجه محرك دمج البريد حقل دمج الصورة:XXX في المستند.
-        /// لديك فرصة لإرجاع كائن صورة أو اسم ملف أو دفق يحتوي على الصورة.
+        /// <ملخص>
+        //يتم استدعاء هذا عندما يواجه محرك دمج البريد حقل الدمج Image:XXX في المستند.
+        //لديك فرصة لإرجاع كائن صورة، أو اسم ملف، أو مجرى يحتوي على الصورة.
         /// </ملخص>
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs e) throws Exception
         {
-            // قيمة الحقل عبارة عن مصفوفة بايت، ما عليك سوى إرسالها وإنشاء دفق عليها.
+            // قيمة الحقل عبارة عن مصفوفة بايتات، فقط قم بإلقائها وإنشاء تدفق عليها.
             ByteArrayInputStream imageStream = new ByteArrayInputStream((byte[]) e.getFieldValue());
-            // الآن سيقوم مشغل دمج المراسلات باسترداد الصورة من الدفق.
+            // الآن سوف يقوم محرك دمج البريد باسترداد الصورة من الدفق.
             e.setImageStream(imageStream);
         }
     }
@@ -294,9 +294,9 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     }
     private static class HandleMergeFieldAlternatingRows implements IFieldMergingCallback
     {
-        /// <الملخص>
-        /// يتم استدعاؤه لكل حقل دمج موجود في المستند.
-        /// يمكننا إما إرجاع بعض البيانات إلى محرك دمج المراسلات أو القيام بشيء آخر بالمستند.
+        /// <ملخص>
+        /// يتم استدعاؤها لكل حقل دمج موجود في المستند.
+        //يمكننا إما إرجاع بعض البيانات إلى محرك دمج البريد أو القيام بشيء آخر بالمستند.
         /// في هذه الحالة نقوم بتعديل تنسيق الخلية.
         /// </ملخص>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e)
@@ -305,7 +305,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
                 mBuilder = new DocumentBuilder(e.getDocument());
             if ("CompanyName".equals(e.getFieldName()))
             {
-                // حدد اللون بناءً على ما إذا كان رقم الصف زوجيًا أم فرديًا.
+                // حدد اللون اعتمادًا على ما إذا كان رقم الصف زوجيًا أم فرديًا.
                 Color rowColor = isOdd(mRowIdx) 
                     ? new Color((213), (227), (235)) 
                     : new Color((242), (242), (242));
@@ -325,16 +325,16 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         private DocumentBuilder mBuilder;
         private int mRowIdx;
     }
-    /// <الملخص>
-    /// إرجاع صحيح إذا كانت القيمة غريبة؛ كاذبة إذا كانت القيمة زوجية.
+    /// <ملخص>
+    /// يعود صحيحًا إذا كانت القيمة فردية؛ ويعود خطأً إذا كانت القيمة زوجية.
     /// </ملخص>
     private static boolean isOdd(int value)
     {
         return (value / 2 * 2) == value;
     }
-    /// <الملخص>
-    /// قم بإنشاء DataTable واملأه بالبيانات.
-    /// في الواقع، يجب ملء DataTable هذا من قاعدة بيانات.
+    /// <ملخص>
+    /// إنشاء جدول البيانات وملئه بالبيانات.
+    //في الحياة الواقعية، يجب ملء جدول البيانات هذا من قاعدة البيانات.
     /// </ملخص>
     private DataTable getSuppliersDataTable()
     {
@@ -353,26 +353,26 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 }
 ```
 
-## 6. الاستنتاج
+## 6. الخاتمة
 
-تهانينا! لقد تعلمت كيفية استخدام الحقول في Aspose.Words for Java لمعالجة مستندات Word ديناميكيًا. تمنحك واجهة برمجة التطبيقات القوية هذه تحكمًا كاملاً في مستنداتك، مما يجعلها رصيدًا قيمًا لمطوري Java.
+تهانينا! لقد تعلمت كيفية استخدام الحقول في Aspose.Words for Java للتعامل مع مستندات Word بشكل ديناميكي. تمنحك واجهة برمجة التطبيقات القوية هذه التحكم الكامل في مستنداتك، مما يجعلها أصلًا قيمًا لمطوري Java.
 
 ## 7. الأسئلة الشائعة
 
 ### س1: أين يمكنني تنزيل Aspose.Words لـ Java؟
  يمكنك تنزيل Aspose.Words for Java من[هنا](https://releases.aspose.com/words/java/).
 
-### س2: كيف يمكنني الحصول على ترخيص مؤقت لبرنامج Aspose.Words لـ Java؟
+### س2: كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Words لـ Java؟
  يمكنك الحصول على ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/).
 
 ### س3: أين يمكنني الحصول على الدعم لـ Aspose.Words لـ Java؟
  للحصول على الدعم، يمكنك زيارة منتدى Aspose.Words[هنا](https://forum.aspose.com/).
 
-### س 4: هل Aspose.Words for Java مناسب للتعامل مع محتوى HTML في مستندات Word؟
+### س4: هل Aspose.Words for Java مناسب للتعامل مع محتوى HTML في مستندات Word؟
 نعم، يوفر Aspose.Words for Java دعمًا ممتازًا للتعامل مع محتوى HTML في مستندات Word.
 
 ### س5: هل يمكنني استخدام Aspose.Words لـ Java مجانًا؟
- يعد Aspose.Words for Java منتجًا تجاريًا، ولكن يمكنك استكشاف ميزاته من خلال الإصدار التجريبي المجاني المتاح[هنا](https://releases.aspose.com/).
+ Aspose.Words for Java هو منتج تجاري، ولكن يمكنك استكشاف ميزاته من خلال إصدار تجريبي مجاني متاح[هنا](https://releases.aspose.com/).
 
-ابدأ استخدام Aspose.Words for Java اليوم وتحكم في مستندات Word الخاصة بك كما لم يحدث من قبل!
+ابدأ باستخدام Aspose.Words for Java اليوم وتحكم في مستندات Word الخاصة بك بشكل لم يسبق له مثيل!
 

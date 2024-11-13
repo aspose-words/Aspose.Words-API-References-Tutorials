@@ -13,7 +13,7 @@ url: /zh/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 
 ## 先决条件
 
-在开始之前，请确保您已准备好以下内容：
+在开始之前，请确保您已准备好以下物品：
 
 -  Aspose.Words for .NET：从以下网址下载并安装最新版本[这里](https://releases.aspose.com/words/net/).
 - 开发环境：Visual Studio 或任何其他兼容的 IDE。
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 代替`"YOUR DOCUMENTS DIRECTORY"`与您想要保存文档的实际路径。
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 接下来，我们创建一个新文档和一个文档构建器来向文档添加内容。
 

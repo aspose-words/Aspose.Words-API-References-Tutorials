@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 步骤 2：加载源文档
 
-接下来，加载要附加到目标文档的源文档。Aspose.Words 提供了一种简单的方法来执行此操作，使用`Document`班级。
+接下来，加载要附加到目标文档的源文档。Aspose.Words 提供了一种简单的方法来执行此操作，方法是使用`Document`班级。
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");

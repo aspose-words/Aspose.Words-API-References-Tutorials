@@ -14,7 +14,7 @@ url: /zh/java/document-loading-and-saving/saving-documents-as-pcl-format/
 
 ## 先决条件
 
-在我们深入研究代码和逐步过程之前，请确保您已满足以下先决条件：
+在深入研究代码和逐步过程之前，请确保您已满足以下先决条件：
 
 - Aspose.Words for Java：确保您已在 Java 开发环境中安装并设置了 Aspose.Words for Java。
 

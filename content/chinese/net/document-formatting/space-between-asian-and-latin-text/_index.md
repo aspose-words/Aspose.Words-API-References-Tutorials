@@ -13,14 +13,14 @@ url: /zh/net/document-formatting/space-between-asian-and-latin-text/
 
 ## 先决条件
 
-在我们开始魔法之前，让我们确保我们已经准备好了一切所需。以下是一份快速检查清单：
+在我们开始魔法之前，让我们确保我们拥有所需的一切。以下是一份快速检查清单：
 
 1.  Aspose.Words for .NET：确保你已安装此强大的库。你可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：任何与 .NET 兼容的环境，如 Visual Studio。
 3. C# 基础知识：您不需要成为一名巫师，但稍微熟悉一下就会有很大帮助。
 4. 有效许可证：获取免费试用[这里](https://releases.aspose.com/)或购买许可证[这里](https://purchase.aspose.com/buy).
 
-好了，一切都搞定了？太棒了！让我们开始吧。
+好了，一切都搞定了？太棒了！让我们开始动手吧。
 
 ## 导入命名空间
 
@@ -66,7 +66,7 @@ builder.Writeln("Automatically adjust space between Asian and Latin text");
 builder.Writeln("Automatically adjust space between Asian text and numbers");
 ```
 
-这里，我们在文档中添加两行文本。第一行包含亚洲字符和拉丁文本，而第二行包含亚洲字符和数字。这将帮助我们清楚地看到间距调整。
+这里，我们向文档中添加两行文本。第一行包含亚洲字符和拉丁文本，而第二行包含亚洲字符和数字。这将帮助我们清楚地看到间距调整。
 
 ## 步骤4：保存文档
 

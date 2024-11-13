@@ -48,7 +48,7 @@ Bookmark bookmark = doc.Range.Bookmarks["YourBookmarkName"];
 
 ## 步骤 3：识别行
 
-获得书签后，您需要确定包含书签的行。这涉及导航到书签的祖先，其类型为`Row`.
+获得书签后，您需要确定包含该书签的行。这涉及导航到书签的祖先，其类型为`Row`.
 
 ```csharp
 Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));

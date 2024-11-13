@@ -15,7 +15,7 @@ url: /zh/net/find-and-replace-text/simple-find-replace/
 
 在我们深入研究文本替换的魔力之前，让我们确保您已准备好所需的一切：
 
-1.  Aspose.Words for .NET 库：您可以从以下位置下载[这里](https://releases.aspose.com/words/net/) 。如果您还没有，请立即免费试用[这里](https://releases.aspose.com/).
+1.  Aspose.Words for .NET 库：你可以从以下网址下载[这里](https://releases.aspose.com/words/net/) 。如果您还没有，请立即免费试用[这里](https://releases.aspose.com/).
 
 2. .NET Framework：确保您的机器上安装了 .NET Framework。如果需要，您可以从 Microsoft 网站下载。
 

@@ -8,7 +8,7 @@ weight: 15
 url: /zh/java/using-document-elements/using-harfbuzz/
 ---
 
-Aspose.Words for Java 是一个功能强大的 API，允许开发人员在 Java 应用程序中处理 Word 文档。它提供了各种功能来操作和生成 Word 文档，包括文本整形。在本分步教程中，我们将探索如何在 Aspose.Words for Java 中使用 HarfBuzz 进行文本整形。
+Aspose.Words for Java 是一个功能强大的 API，允许开发人员在 Java 应用程序中处理 Word 文档。它提供各种功能来操作和生成 Word 文档，包括文本整形。在本分步教程中，我们将探索如何在 Aspose.Words for Java 中使用 HarfBuzz 进行文本整形。
 
 ## HarfBuzz 简介
 
@@ -72,9 +72,9 @@ doc.save(outPath + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 
 ### 1. 什么是HarfBuzz？
 
-HarfBuzz 是一个开源文本塑造引擎，支持复杂的脚本和语言，这使其成为正确呈现文本的必需条件。
+HarfBuzz 是一个开源文本塑造引擎，支持复杂的脚本和语言，这使其成为正确呈现文本的必需工具。
 
-### 2.为什么将HarfBuzz与Aspose.Words一起使用？
+### 2. 为什么将HarfBuzz与Aspose.Words一起使用？
 
 HarfBuzz 增强了 Aspose.Words 的文本塑造功能，确保准确呈现复杂的脚本和语言。
 

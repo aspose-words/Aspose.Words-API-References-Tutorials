@@ -40,11 +40,11 @@ using Aspose.Words.Loading;
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-这`LoadOptions`类允许您自定义文档的加载方式。这里我们才刚刚开始使用它。
+这`LoadOptions`类允许您自定义文档的加载方式。这里，我们才刚刚开始使用它。
 
 ## 第 2 步：添加日语作为编辑语言
 
-现在你已经设置好了`LoadOptions`，是时候添加日语作为编辑语言了。想象一下，将你的 GPS 设置为正确的语言，这样你就可以顺利导航。
+现在你已经设置好了`LoadOptions`，是时候添加日语作为编辑语言了。想象一下将你的 GPS 设置为正确的语言，这样你就可以顺利导航。
 
 ```csharp
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);

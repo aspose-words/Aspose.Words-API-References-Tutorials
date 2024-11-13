@@ -2,7 +2,7 @@
 title: 使用 Officemath 进行文字处理
 linktitle: 使用 Officemath 进行文字处理
 second_title: Aspose.Words 文档处理 API
-description: 在 Aspose.Words for .NET 中探索使用 Office Math 公式进行文字处理。用于在 Word 文档中创建、编辑和格式化数学公式的分步教程和示例代码。
+description: 探索使用 Aspose.Words for .NET 中的 Office Math 公式进行文字处理。用于在 Word 文档中创建、编辑和格式化数学公式的分步教程和示例代码。
 type: docs
 weight: 1550
 url: /zh/net/programming-with-officemath/

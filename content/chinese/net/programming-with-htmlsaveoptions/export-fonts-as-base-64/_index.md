@@ -100,7 +100,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOp
 
 ## 结论
 
-恭喜！您已成功使用 Aspose.Words for .NET 将字体从 Word 文档导出为 Base64。这可确保您的字体在不同平台上得到保留和正确显示。无论您是准备用于 Web 显示的文档还是仅仅确保兼容性，此功能都非常有用。
+恭喜！您已成功使用 Aspose.Words for .NET 将字体从 Word 文档导出为 Base64。这可确保您的字体在不同平台上得到保留并正确显示。无论您是准备用于 Web 显示的文档还是仅仅确保兼容性，此功能都非常有用。
 
 ## 常见问题解答
 

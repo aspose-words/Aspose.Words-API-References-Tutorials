@@ -22,7 +22,7 @@ url: /zh/net/programming-with-digital-signatures/creating-and-signing-new-signat
 
 ## 导入命名空间
 
-首先，我们需要导入必要的命名空间。这一步至关重要，因为它设置了使用 Aspose.Words 功能的环境。
+首先，我们需要导入必要的命名空间。此步骤至关重要，因为它设置了使用 Aspose.Words 功能的环境。
 
 ```csharp
 using System;
@@ -60,7 +60,7 @@ SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptio
 
 ## 步骤 4：保存带有签名行的文档
 
-签名完成后，我们需要保存文件。这是我们签署文件前的中间步骤。
+签名完成后，我们需要保存文档。这是我们签署文档前的中间步骤。
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
@@ -97,7 +97,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ## 结论
 
-就这样！通过这些步骤，您已成功创建了一个新的 Word 文档，添加了签名行，并使用 Aspose.Words for .NET 对其进行了数字签名。这是一个强大的工具，可让文档自动化变得轻而易举。无论您处理的是合同、协议还是任何正式文件，此方法都可以确保它们得到安全签名和验证。
+就这样！通过这些步骤，您已成功创建了一个新的 Word 文档，添加了签名行，并使用 Aspose.Words for .NET 对其进行了数字签名。这是一个强大的工具，可轻松实现文档自动化。无论您处理的是合同、协议还是任何正式文件，此方法都可以确保它们得到安全签名和验证。
 
 ## 常见问题解答
 
@@ -114,4 +114,4 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 您需要从受信任的证书颁发机构获取数字证书或使用 OpenSSL 等工具生成数字证书。
 
 ### 如何验证文档中的数字签名？
-您可以在Word中打开已签名的文档并转到签名详细信息以验证签名的真实性和完整性。
+您可以在Word中打开已签名的文档，并转到签名详细信息以验证签名的真实性和完整性。

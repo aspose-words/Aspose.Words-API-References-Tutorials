@@ -10,7 +10,7 @@ url: /zh/java/document-manipulation/using-fields/
  
 ## Aspose.Words for Java 中字段使用简介
 
-在本分步指南中，我们将探索如何在 Aspose.Words for Java 中使用字段。字段是功能强大的占位符，可以动态地将数据插入到文档中。我们将介绍各种场景，包括基本字段合并、条件字段、处理图像和交替行格式。我们将为每种场景提供 Java 代码片段和说明。
+在本分步指南中，我们将探索如何在 Aspose.Words for Java 中使用字段。字段是功能强大的占位符，可以动态地将数据插入到您的文档中。我们将介绍各种场景，包括基本字段合并、条件字段、处理图像和交替行格式。我们将为每种场景提供 Java 代码片段和说明。
 
 ## 先决条件
 
@@ -71,7 +71,7 @@ connection.close();
 doc.save("MergedDocumentWithImages.docx");
 ```
 
-在此代码中，我们加载带有图像合并字段的文档模板，并使用来自数据库的图像填充它们。
+在此代码中，我们加载带有图像合并字段的文档模板，并使用数据库中的图像填充它们。
 
 ## 交替行格式
 
@@ -107,13 +107,13 @@ Aspose.Words for Java 中的条件字段允许您根据某些条件有条件地�
 
 ### 如何使用 Aspose.Words for Java 格式化表格中的交替行？
 
-要格式化表格中的交替行，您可以使用 Aspose.Words for Java 根据您的标准对行应用特定格式。在“交替行格式”部分，您将找到一个示例，该示例演示了如何根据`CompanyName`场地。
+要格式化表格中的交替行，您可以使用 Aspose.Words for Java 根据您的标准对行应用特定格式。在“交替行格式”部分，您将找到一个示例，该示例演示如何根据`CompanyName`场地。
 
 ### 在哪里可以找到有关 Aspose.Words for Java 的更多文档和资源？
 
 您可以在 Aspose 网站上找到 Aspose.Words for Java 的全面文档、代码示例和教程：[Aspose.Words for Java 文档](https://reference.aspose.com/words/java/)。此资源将帮助您探索图书馆的其他特性和功能。
 
-### 如何获得 Aspose.Words for Java 的支持或帮助？
+### 如何获得 Aspose.Words for Java 的支持或寻求帮助？
 
 如果您在使用 Aspose.Words for Java 时需要帮助、有疑问或遇到问题，您可以访问 Aspose.Words 论坛获取社区支持和讨论：[Aspose.Words 论坛](https://forum.aspose.com/c/words).
 

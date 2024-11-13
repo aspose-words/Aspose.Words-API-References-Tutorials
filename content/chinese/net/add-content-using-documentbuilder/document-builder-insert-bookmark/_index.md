@@ -13,7 +13,7 @@ url: /zh/net/add-content-using-documentbuilder/document-builder-insert-bookmark/
 
 ## 先决条件
 
-在我们开始编写代码之前，让我们先确保我们已准备好所需的一切：
+在我们开始编写代码之前，让我们先确保我们拥有所需的一切：
 
 1.  Aspose.Words for .NET：从以下网址下载并安装最新版本[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：确保您已为 .NET 开发设置了类似 Visual Studio 的 IDE。
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 此变量将保存您想要保存 Word 文档的路径。
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 接下来，我们将创建一个新的 Word 文档。这将是我们插入书签的画布。
 

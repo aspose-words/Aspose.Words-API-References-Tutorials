@@ -15,7 +15,7 @@ url: /zh/net/join-and-append-documents/simple-append-document/
 
 在我们进入代码之前，让我们确保您拥有所需的一切：
 
-1.  Aspose.Words for .NET：如果您还没有，请从以下位置下载该库[这里](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：如果您还没有，请从以下网址下载该库[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：您可以使用 Visual Studio 或任何其他与 .NET 兼容的 IDE。
 3. C# 基础知识：本教程假设您对 C# 编程有基本的了解。
 4. 两个 Word 文档：确保您有两个准备好合并的 Word 文档。

@@ -44,7 +44,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 步骤 2：创建新文档
 
-接下来，我们需要创建一个新的实例`Document`类。将其视为您的空白画布，您可以在其中开始添加内容。
+接下来，我们需要创建一个新的实例`Document`类。将其视为空白画布，您可以在其中开始添加内容。
 
 ```csharp
 Document doc = new Document();

@@ -27,8 +27,8 @@ Aspose.Words for Java 提供了一系列教程，让文档转换变得轻而易�
 ### [将文档转换为不同的格式](./converting-documents-different-formats/)
 了解如何使用 Aspose.Words for Java 将文档转换为不同的格式。高效文档转换的分步指南。
 ### [将 HTML 转换为文档](./converting-html-documents/)
-了解如何使用 Aspose.Words 在 Java 中将 HTML 转换为 Word 文档。按照我们的分步指南进行无缝文档处理。
+使用 Aspose.Words for Java 轻松将 HTML 转换为 Word 文档。通过我们的综合指南了解如何仅用几个步骤完成此转换。
 ### [使用 SaveOptions 进行文档转换](./document-conversion-saveoptions/)
-学习使用 Java 中的 Aspose.Words 进行文档转换。分步指南、代码示例和常见问题解答，实现 Word 到 PDF 的无缝转换。
+使用 Aspose.Words for Java 高效地将 DOCX 转换为 EPUB。在此分步指南中了解如何自定义保存选项、拆分内容和导出文档属性。
 ### [将文档转换为图像](./converting-documents-images/)
-了解如何使用 Aspose.Words for Java 将文档转换为图像。面向 Java 开发人员的分步指南。
+了解如何使用 Aspose.Words for Java 将 Word 文档转换为图像。分步指南，包括代码示例和常见问题解答。

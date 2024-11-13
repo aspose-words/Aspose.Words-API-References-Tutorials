@@ -103,7 +103,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 这`doc.Protect(ProtectionType.NoProtection)`方法确保从文档中删除所有类型的保护。
 
-### 在取消限制之前有没有办法知道文档是否是只读的？
+### 有没有办法在取消限制之前知道文档是否是只读的？
 
 是的，您可以查看`ReadOnlyRecommended`属性来查看文档是否是只读的，建议在进行任何更改之前先检查一下。
 

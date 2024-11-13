@@ -1,24 +1,24 @@
 ---
-title: ضم المستندات وإلحاقها في Aspose.Words لـ Java
-linktitle: الانضمام وإلحاق المستندات
-second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: تعرف على كيفية ضم المستندات وإلحاقها بسهولة باستخدام Aspose.Words for Java. الحفاظ على التنسيق وإدارة الرؤوس والتذييلات والمزيد.
+title: ربط المستندات وإضافتها في Aspose.Words لـ Java
+linktitle: ربط المستندات وإضافتها
+second_title: واجهة برمجة تطبيقات معالجة المستندات في Java Aspose.Words
+description: تعرف على كيفية ضم المستندات وإضافتها بسهولة باستخدام Aspose.Words for Java. حافظ على التنسيق، وأدر رؤوس الصفحات وتذييلاتها، والمزيد.
 type: docs
 weight: 30
 url: /ar/java/document-manipulation/joining-and-appending-documents/
 ---
 
-## مقدمة لضم المستندات وإلحاقها في Aspose.Words لـ Java
+## مقدمة حول ربط المستندات وإضافتها في Aspose.Words لـ Java
 
-في هذا البرنامج التعليمي، سنستكشف كيفية ضم المستندات وإلحاقها باستخدام مكتبة Aspose.Words for Java. ستتعلم كيفية دمج مستندات متعددة بسلاسة مع الحفاظ على التنسيق والبنية.
+في هذا البرنامج التعليمي، سنستكشف كيفية ضم المستندات وإضافتها باستخدام مكتبة Aspose.Words for Java. ستتعلم كيفية دمج مستندات متعددة بسلاسة مع الحفاظ على التنسيق والبنية.
 
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من إعداد Aspose.Words for Java API في مشروع Java الخاص بك.
 
-## خيارات الانضمام إلى المستندات
+## خيارات ربط المستندات
 
-### إلحاق بسيط
+### إضافة بسيطة
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -26,7 +26,7 @@ Document dstDoc = new Document("destination.docx");
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### إلحاق مع خيارات تنسيق الاستيراد
+### إضافة مع خيارات تنسيق الاستيراد
 
 ```java
 ImportFormatOptions options = new ImportFormatOptions();
@@ -34,7 +34,7 @@ options.setKeepSourceNumbering(true);
 dstDoc.appendDocument(srcDoc, ImportFormatMode.USE_DESTINATION_STYLES, options);
 ```
 
-### إلحاق بمستند فارغ
+### إضافة إلى مستند فارغ
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -43,33 +43,33 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### إلحاق مع تحويل رقم الصفحة
+### إضافة مع تحويل رقم الصفحة
 
 ```java
 Document srcDoc = new Document("source.docx");
 Document dstDoc = new Document("destination.docx");
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-convertNumPageFieldsToPageRef(dstDoc); // تحويل NUMPAGES من الحقول
-dstDoc.updatePageLayout(); // تحديث تخطيط الصفحة للترقيم الصحيح
+convertNumPageFieldsToPageRef(dstDoc); // تحويل عدد من الحقول
+dstDoc.updatePageLayout(); // تحديث تخطيط الصفحة لترقيمها بشكل صحيح
 ```
 
-## التعامل مع إعدادات الصفحة المختلفة
+## التعامل مع إعدادات الصفحات المختلفة
 
-عند إلحاق مستندات بإعدادات صفحة مختلفة:
+عند إلحاق المستندات بإعدادات صفحات مختلفة:
 
 ```java
 srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.CONTINUOUS);
 srcDoc.getFirstSection().getPageSetup().setRestartPageNumbering(true);
-// تأكد من تطابق إعدادات إعداد الصفحة مع المستند الوجهة
+// تأكد من أن إعدادات إعداد الصفحة تتطابق مع المستند الوجهة
 ```
 
-## ضم المستندات بأنماط مختلفة
+## ربط المستندات بأنماط مختلفة
 
 ```java
 dstDoc.appendDocument(srcDoc, ImportFormatMode.USE_DESTINATION_STYLES);
 ```
 
-## سلوك النمط الذكي
+## سلوكيات ذكية
 
 ```java
 ImportFormatOptions options = new ImportFormatOptions();
@@ -84,7 +84,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 builder.insertDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-## حفظ ترقيم المصدر
+## الحفاظ على ترقيم المصدر
 
 ```java
 ImportFormatOptions importFormatOptions = new ImportFormatOptions();
@@ -118,26 +118,26 @@ dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 ## خاتمة
 
-يوفر Aspose.Words for Java أدوات مرنة وقوية لضم المستندات وإلحاقها، سواء كنت بحاجة إلى الحفاظ على التنسيق أو التعامل مع إعدادات الصفحة المختلفة أو إدارة الرؤوس والتذييلات. قم بتجربة هذه التقنيات لتلبية احتياجاتك المحددة لمعالجة المستندات.
+يوفر Aspose.Words for Java أدوات مرنة وقوية لضم المستندات وإضافتها، سواء كنت بحاجة إلى الحفاظ على التنسيق أو التعامل مع إعدادات الصفحات المختلفة أو إدارة الرؤوس والتذييلات. جرّب هذه التقنيات لتلبية احتياجات معالجة المستندات الخاصة بك.
 
 ## الأسئلة الشائعة
 
-### كيف يمكنني ضم المستندات ذات الأنماط المختلفة بسلاسة؟
+### كيف يمكنني دمج المستندات ذات الأنماط المختلفة بسلاسة؟
 
- لضم المستندات ذات الأنماط المختلفة، استخدم`ImportFormatMode.USE_DESTINATION_STYLES` عند الإلحاق.
+ لربط المستندات ذات الأنماط المختلفة، استخدم`ImportFormatMode.USE_DESTINATION_STYLES` عند الإلحاق.
 
-### هل يمكنني الحفاظ على ترقيم الصفحات عند إلحاق المستندات؟
+### هل يمكنني الحفاظ على ترقيم الصفحات عند إضافة المستندات؟
 
- نعم، يمكنك الحفاظ على ترقيم الصفحات باستخدام`convertNumPageFieldsToPageRef` طريقة وتحديث تخطيط الصفحة.
+ نعم، يمكنك الحفاظ على ترقيم الصفحات باستخدام`convertNumPageFieldsToPageRef` الطريقة وتحديث تخطيط الصفحة.
 
-### ما هو سلوك النمط الذكي؟
+### ما هو أسلوب السلوك الذكي؟
 
- يساعد سلوك النمط الذكي في الحفاظ على الأنماط المتسقة عند إلحاق المستندات. استخدامه مع`ImportFormatOptions` للحصول على نتائج أفضل.
+ يساعد سلوك النمط الذكي في الحفاظ على الأنماط المتسقة عند إضافة المستندات. استخدمه مع`ImportFormatOptions` للحصول على نتائج أفضل.
 
-### كيف يمكنني التعامل مع مربعات النص عند إلحاق المستندات؟
+### كيف يمكنني التعامل مع مربعات النص عند إضافة المستندات؟
 
 تعيين`importFormatOptions.setIgnoreTextBoxes(false)` لتضمين مربعات النص أثناء الإلحاق.
 
-### ماذا لو كنت أرغب في ربط/إلغاء ربط الرؤوس والتذييلات بين المستندات؟
+### ماذا لو أردت ربط/إلغاء ربط الرؤوس والتذييلات بين المستندات؟
 
- يمكنك ربط الرؤوس والتذييلات باستخدام`linkToPrevious(true)` أو فك الارتباط معهم`linkToPrevious(false)` حسب الحاجة.
+ يمكنك ربط الرؤوس والتذييلات بـ`linkToPrevious(true)` أو افصلهم عن`linkToPrevious(false)` حسب الحاجة.

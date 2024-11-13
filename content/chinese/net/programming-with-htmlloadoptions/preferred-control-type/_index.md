@@ -9,7 +9,7 @@ url: /zh/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
 ## 介绍
 
-我们正在深入研究有关如何使用 Aspose.Words for .NET 中的 HTML 加载选项的精彩教程，特别是重点介绍在将组合框表单字段插入 Word 文档时设置首选控件类型。本分步指南将帮助您了解如何使用 Aspose.Words for .NET 在 Word 文档中有效地操作和呈现 HTML 内容。
+我们正在深入研究有关如何使用 Aspose.Words for .NET 中的 HTML 加载选项的精彩教程，特别是重点介绍在将组合框表单字段插入 Word 文档时设置首选控件类型。本分步指南将帮助您了解如何使用 Aspose.Words for .NET 有效地操作和呈现 Word 文档中的 HTML 内容。
 
 ## 先决条件
 

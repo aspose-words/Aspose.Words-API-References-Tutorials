@@ -14,7 +14,7 @@ url: /zh/java/document-manipulation/formatting-documents/
 
 ## 设置你的环境
 
-在我们深入研究格式化文档的复杂性之前，设置您的环境至关重要。确保您已在项目中正确安装和配置了 Aspose.Words for Java。您可以从以下网址下载[这里](https://releases.aspose.com/words/java/).
+在我们深入研究格式化文档的复杂性之前，设置环境至关重要。确保您已在项目中正确安装和配置了 Aspose.Words for Java。您可以从以下网址下载[这里](https://releases.aspose.com/words/java/).
 
 ## 创建简单文档
 

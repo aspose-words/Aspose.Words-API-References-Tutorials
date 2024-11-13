@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Lists;
 ```
 
-## 步骤 1：初始化文档和构建器
+## 步骤 1：初始化文档和生成器
 
 首先，让我们创建一个新的 Word 文档并初始化 DocumentBuilder。DocumentBuilder 类提供了将内容插入文档的方法。
 
@@ -52,7 +52,7 @@ builder.Writeln("Item 2");
 
 在这些行中，`ApplyNumberDefault`开始编号列表，然后`Writeln`将项目添加到列表中。
 
-## 步骤 3：子层级缩进
+## 步骤 3：缩进子层
 
 接下来，要在列表中创建子级别，请使用`ListIndent`方法。此方法缩进列表项，使其成为前一个项的子级。
 
@@ -76,7 +76,7 @@ builder.Writeln("Item 2.2.2");
 
 现在您在“项目 2.2”下有了第三级列表。
 
-## 步骤 5：减少缩进以返回到更高级别
+## 步骤 5：取消缩进以返回更高级别
 
 要返回更高级别，请使用`ListOutdent`方法。这会将项目移回上一个列表级别。
 
@@ -127,5 +127,5 @@ doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 ### 如何动态改变缩进级别？
 您可以使用以下方式动态更改缩进级别`ListIndent`和`ListOutdent`根据需要使用方法。
 
-### 我可以在其他文档格式（如 PDF）中创建多级列表吗？
+### 我可以在其他文档格式（例如 PDF）中创建多级列表吗？
 是的，Aspose.Words 支持以各种格式保存文档，包括 PDF，并保留格式。

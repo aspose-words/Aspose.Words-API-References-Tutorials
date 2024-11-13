@@ -1,25 +1,25 @@
 ---
-title: إنشاء قسم تكرار الجدول المعين لجزء Xml المخصص
-linktitle: إنشاء قسم تكرار الجدول المعين لجزء Xml المخصص
-second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إنشاء جدول يحتوي على قسم متكرر معين إلى CustomXmlPart في مستند Word باستخدام Aspose.Words for .NET.
+title: إنشاء قسم متكرر في الجدول مرتبط بجزء XML مخصص
+linktitle: إنشاء قسم متكرر في الجدول مرتبط بجزء XML مخصص
+second_title: واجهة برمجة تطبيقات معالجة المستندات Aspose.Words
+description: تعرف على كيفية إنشاء جدول يحتوي على قسم متكرر مرتبط بـ CustomXmlPart في مستند Word باستخدام Aspose.Words لـ .NET.
 type: docs
 weight: 10
 url: /ar/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 ## مقدمة
 
-في هذا البرنامج التعليمي، سنتعرف على عملية إنشاء جدول يحتوي على قسم متكرر تم تعيينه إلى جزء XML مخصص باستخدام Aspose.Words for .NET. يعد هذا مفيدًا بشكل خاص لإنشاء المستندات ديناميكيًا استنادًا إلى البيانات المنظمة.
+في هذا البرنامج التعليمي، سنستعرض عملية إنشاء جدول يحتوي على قسم متكرر يتم تعيينه إلى جزء XML مخصص باستخدام Aspose.Words for .NET. وهذا مفيد بشكل خاص لإنشاء مستندات بشكل ديناميكي استنادًا إلى بيانات منظمة.
 
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
-1.  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[موقع أسبوز](https://releases.aspose.com/words/net/).
+1.  تم تثبيت مكتبة Aspose.Words لـ .NET. يمكنك تنزيلها من[موقع اسبوس](https://releases.aspose.com/words/net/).
 2. فهم أساسي لـ C# وXML.
 
 ## استيراد مساحات الأسماء
 
-تأكد من تضمين مساحات الأسماء الضرورية في مشروعك:
+تأكد من تضمين المساحات الأساسية اللازمة في مشروعك:
 
 ```csharp
 using Aspose.Words;
@@ -27,9 +27,9 @@ using Aspose.Words.Markup;
 using Aspose.Words.Tables;
 ```
 
-## الخطوة 1: تهيئة المستند و DocumentBuilder
+## الخطوة 1: تهيئة المستند وDocumentBuilder
 
- أولاً، قم بإنشاء مستند جديد وتهيئة ملف`DocumentBuilder`:
+ أولاً، قم بإنشاء مستند جديد وقم بتشغيله`DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -40,7 +40,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 2: إضافة جزء XML مخصص
 
-أضف جزءًا XML مخصصًا إلى المستند. يحتوي ملف XML هذا على البيانات التي نريد تعيينها لجدولنا:
+أضف جزءًا مخصصًا من XML إلى المستند. يحتوي هذا الجزء من XML على البيانات التي نريد تعيينها إلى جدولنا:
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
@@ -63,9 +63,9 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## الخطوة 4: إنشاء قسم مكرر
+## الخطوة 4: إنشاء قسم متكرر
 
- إنشاء أ`StructuredDocumentTag` (SDT) للقسم المكرر وقم بتعيينه على بيانات XML:
+ إنشاء`StructuredDocumentTag` (SDT) للقسم المتكرر وربطه ببيانات XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
@@ -73,9 +73,9 @@ repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## الخطوة 5: إنشاء عنصر القسم المتكرر
+## الخطوة 5: إنشاء عنصر قسم متكرر
 
-أنشئ SDT لعنصر القسم المكرر وأضفه إلى القسم المكرر:
+قم بإنشاء SDT لعنصر القسم المتكرر وأضفه إلى القسم المتكرر:
 
 ```csharp
 StructuredDocumentTag repeatingSectionItemSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
@@ -86,7 +86,7 @@ repeatingSectionItemSdt.AppendChild(row);
 
 ## الخطوة 6: تعيين بيانات XML إلى خلايا الجدول
 
-قم بإنشاء SDTs للعنوان والمؤلف، وقم بتعيينها إلى بيانات XML، وألحقها بالصف:
+قم بإنشاء SDTs للعنوان والمؤلف، وقم بربطهما ببيانات XML، ثم قم بإضافتهما إلى الصف:
 
 ```csharp
 StructuredDocumentTag titleSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
@@ -98,9 +98,9 @@ authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## الخطوة 7: احفظ المستند
+## الخطوة 7: حفظ المستند
 
-أخيرًا، احفظ المستند في الدليل المحدد:
+وأخيرًا، قم بحفظ المستند في الدليل المحدد:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
@@ -108,15 +108,15 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 
 ## خاتمة
 
-باتباع هذه الخطوات، تكون قد نجحت في إنشاء جدول يحتوي على قسم متكرر تم تعيينه إلى جزء XML مخصص باستخدام Aspose.Words for .NET. وهذا يسمح بإنشاء محتوى ديناميكي استنادًا إلى البيانات المنظمة، مما يجعل إنشاء المستندات أكثر مرونة وقوة.
+باتباع هذه الخطوات، تكون قد نجحت في إنشاء جدول يحتوي على قسم متكرر مرتبط بجزء XML مخصص باستخدام Aspose.Words for .NET. يتيح هذا إنشاء محتوى ديناميكي استنادًا إلى بيانات منظمة، مما يجعل إنشاء المستندات أكثر مرونة وقوة.
 
 ## الأسئلة الشائعة
 
-### ما هي علامة الوثيقة المنظمة (SDT)؟
-إن SDT، المعروف أيضًا باسم التحكم في المحتوى، هو منطقة محددة في مستند يتم استخدامه لاحتواء البيانات المنظمة.
+### ما هو StructuredDocumentTag (SDT)؟
+SDT، المعروف أيضًا باسم عنصر التحكم في المحتوى، هو منطقة محدودة في مستند تُستخدم لاحتواء البيانات المنظمة.
 
 ### هل يمكنني استخدام أنواع بيانات أخرى في جزء XML المخصص؟
 نعم، يمكنك هيكلة جزء XML المخصص الخاص بك باستخدام أي أنواع بيانات وتعيينها وفقًا لذلك.
 
-### كيف يمكنني إضافة المزيد من الصفوف إلى القسم المكرر؟
-يقوم القسم المكرر تلقائيًا بتكرار بنية الصف لكل عنصر في مسار XML المعين.
+### كيف أضيف المزيد من الصفوف إلى القسم المتكرر؟
+يقوم القسم المتكرر بتكرار بنية الصف تلقائيًا لكل عنصر في مسار XML المحدد.

@@ -9,7 +9,7 @@ url: /zh/java/document-manipulation/
 ---
 
 
-您是否想掌握 Java 中文档操作的艺术？别再找了！在本文中，我们将引导您了解 Aspose.Words for Java 教程的世界，为您提供在文档处理方面出类拔萃所需的知识和技能。
+您是否想掌握 Java 中文档操作的技巧？别再找了！在本文中，我们将引导您了解 Aspose.Words for Java 教程的世界，为您提供在文档处理方面出类拔萃所需的知识和技能。
 
 ## 为什么选择 Aspose.Words for Java？
 

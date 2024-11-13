@@ -43,12 +43,12 @@ TxtLoadOptions loadOptions = new TxtLoadOptions();
 {
     loadOptions.setDetectNumberingWithWhitespaces(true);
 }
-//应用 LoadOptions 作为参数来加载文档并验证结果。
+//使用 LoadOptions 作为参数加载文档并验证结果。
 Document doc = new Document(new ByteArrayInputStream(TEXT_DOC.getBytes()), loadOptions);
 doc.save("Your Directory Path" + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
 ```
 
-此代码演示如何加载具有各种列表格式的文本文档，并使用`DetectNumberingWithWhitespaces`选项可以正确检测列表。
+此代码演示如何加载具有各种列表格式的文本文档，并使用`DetectNumberingWithWhitespaces`选项来正确检测列表。
 
 ## 第 2 步：处理空间选项
 
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-此代码将文档方向设置为自动检测（`DocumentDirection.AUTO`并加载包含希伯来语文本的文本文档。您可以根据需要调整文档方向。
+此代码将文档方向设置为自动检测（`DocumentDirection.AUTO`) 并加载包含希伯来语文本的文本文档。您可以根据需要调整文档方向。
 
 ## 使用 Aspose.Words for Java 加载文本文件的完整源代码
 
@@ -122,7 +122,7 @@ public void detectNumberingWithWhitespaces() throws Exception {
 	{
 		loadOptions.setDetectNumberingWithWhitespaces(true);
 	}
-	//应用 LoadOptions 作为参数来加载文档并验证结果。
+	//使用 LoadOptions 作为参数加载文档并验证结果。
 	Document doc = new Document(new ByteArrayInputStream(TEXT_DOC.getBytes()), loadOptions);
 	doc.save("Your Directory Path" + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
 }
@@ -187,7 +187,7 @@ Aspose.Words for Java 是一个功能强大的文档处理库，允许开发人�
 
 ### 在哪里可以找到有关 Aspose.Words for Java 的更多资源和支持？
 
-如需更多资源、文档和支持，请访问[Aspose.Words for Java 文档](https://reference.aspose.com/words/java/)。您还可以参加 Aspose.Words 社区论坛或联系 Aspose 支持以获取有关特定问题或咨询的帮助。
+如需更多资源、文档和支持，请访问[Aspose.Words for Java 文档](https://reference.aspose.com/words/java/)。您还可以参加 Aspose.Words 社区论坛或联系 Aspose 支持以获取有关特定问题或疑问的帮助。
 
 ### Aspose.Words for Java 适合商业项目吗？
 

@@ -15,7 +15,7 @@ url: /zh/net/basic-conversions/docx-to-pdf/
 
 在我们讨论细节之前，让我们先确保您已准备好开始所需的一切：
 
-1.  Aspose.Words for .NET 库：您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET 库：你可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 2. .NET Framework：确保您的机器上安装了 .NET Framework。
 3. Visual Studio：本教程假设您使用 Visual Studio，但任何兼容的 IDE 都可以。
 4. Word 文档：您想要转换为 PDF 的 Word 文件。

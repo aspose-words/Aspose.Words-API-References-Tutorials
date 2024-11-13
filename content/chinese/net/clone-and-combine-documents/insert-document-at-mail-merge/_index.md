@@ -21,7 +21,7 @@ url: /zh/net/clone-and-combine-documents/insert-document-at-mail-merge/
 
 ## 导入命名空间
 
-首先，您需要导入必要的命名空间。这些命名空间就像项目的构建块。
+首先，您需要导入必要的命名空间。这些就像项目的构建块。
 
 ```csharp
 using System;
@@ -30,7 +30,7 @@ using Aspose.Words.MailMerging;
 using System.Linq;
 ```
 
-让我们将这个过程分解成几个可管理的步骤。每个步骤都建立在前一个步骤的基础上，从而为您提供完整的解决方案。
+让我们将这个过程分解成几个可管理的步骤。每个步骤都建立在前一个步骤的基础上，从而引导您获得完整的解决方案。
 
 ## 步骤 1：设置目录
 
@@ -134,7 +134,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## 结论
 
-就这样！您已成功使用 Aspose.Words for .NET 在邮件合并操作期间将文档插入特定字段。这个强大的功能可以为您节省大量时间和精力，尤其是在处理大量文档时。您可以将其想象为拥有一位私人助理，为您处理所有繁重的工作。所以，继续尝试吧。祝您编码愉快！
+就这样！您已成功使用 Aspose.Words for .NET 在邮件合并操作期间将文档插入特定字段。此强大功能可为您节省大量时间和精力，尤其是在处理大量文档时。您可以将其视为拥有一位私人助理，为您处理所有繁重工作。所以，请继续尝试。祝您编码愉快！
 
 ## 常见问题解答
 

@@ -21,7 +21,7 @@ url: /zh/net/join-and-append-documents/insert-document-with-builder/
 
 ## 导入命名空间
 
-首先，您需要导入必要的命名空间才能访问 Aspose.Words 库功能。操作方法如下：
+首先，您需要导入必要的命名空间以访问 Aspose.Words 库功能。操作方法如下：
 
 ```csharp
 using Aspose.Words;
@@ -50,7 +50,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-在这里，我们使用`Document`Aspose.Words 库中的类来加载我们的文档。确保文件名与目录中的文件名匹配。
+在这里，我们使用`Document` Aspose.Words 库中的类来加载我们的文档。确保文件名与目录中的文件名匹配。
 
 ## 步骤3：创建 DocumentBuilder 对象
 

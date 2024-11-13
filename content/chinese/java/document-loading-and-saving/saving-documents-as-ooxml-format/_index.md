@@ -8,7 +8,7 @@ weight: 20
 url: /zh/java/document-loading-and-saving/saving-documents-as-ooxml-format/
 ---
 
-## Aspose.Words for Java 中将文档保存为 OOXML 格式的简介
+## 在 Aspose.Words for Java 中将文档保存为 OOXML 格式的简介
 
 在本指南中，我们将探索如何使用 Aspose.Words for Java 将文档保存为 OOXML 格式。OOXML（Office Open XML）是 Microsoft Word 和其他办公应用程序使用的文件格式。我们将介绍将文档保存为 OOXML 格式的各种选项和设置。
 
@@ -110,7 +110,7 @@ import com.aspose.words.CompressionLevel;
 //加载文档
 Document doc = new Document("Document.docx");
 
-//创建OoxmlSaveOptions并设置压缩级别
+//创建 OoxmlSaveOptions 并设置压缩级别
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompressionLevel(CompressionLevel.SUPER_FAST);
 

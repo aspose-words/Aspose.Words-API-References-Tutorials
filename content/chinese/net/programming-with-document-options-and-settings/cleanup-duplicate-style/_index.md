@@ -9,14 +9,14 @@ url: /zh/net/programming-with-document-options-and-settings/cleanup-duplicate-st
 ---
 ## 介绍
 
-嗨，编码爱好者们！在处理 Word 文档时，您是否曾发现自己陷入了重复样式的泥潭？我们都遇到过这种情况，而且情况并不乐观。但别担心，Aspose.Words for .NET 可以帮您解决这一问题！在本教程中，我们将深入探讨如何使用 Aspose.Words for .NET 清理 Word 文档中的重复样式。无论您是经验丰富的开发人员还是刚刚入门，本指南都将通过清晰、易于理解的说明引导您完成每个步骤。那么，让我们撸起袖子开始吧！
+嗨，编码爱好者们！在处理 Word 文档时，您是否曾发现自己陷入了重复样式的泥潭？我们都遇到过这种情况，而且情况并不乐观。但别担心，Aspose.Words for .NET 可以帮您解决这一问题！在本教程中，我们将深入探讨如何使用 Aspose.Words for .NET 清理 Word 文档中的重复样式。无论您是经验丰富的开发人员还是刚刚入门，本指南都将通过清晰、易于理解的说明引导您完成每个步骤。所以，让我们撸起袖子开始吧！
 
 ## 先决条件
 
 在我们开始行动之前，让我们确保您已准备好所需的一切：
 
-1. C# 基础知识：您不需要是 C# 专家，但对该语言的基本了解将会很有帮助。
-2. Aspose.Words for .NET：确保已安装 Aspose.Words for .NET 库。如果没有，您可以下载[这里](https://releases.aspose.com/words/net/).
+1. C# 基础知识：您不需要成为 C# 专家，但对该语言的基本了解将会很有帮助。
+2. Aspose.Words for .NET：请确保您已安装 Aspose.Words for .NET 库。如果没有，您可以下载它[这里](https://releases.aspose.com/words/net/).
 3. 开发环境：像 Visual Studio 这样的良好开发环境将使您的生活变得轻松很多。
 4. 示例文档：准备一个包含重复样式的示例 Word 文档 (.docx)，以供测试。
 
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## 第 2 步：清理前计算样式数
+## 第 2 步：清理前计算样式
 
 在清理之前，我们先看看文档中目前有多少种样式。这为我们在清理后提供了一个比较的基准。
 
@@ -81,7 +81,7 @@ doc.Cleanup(options);
 
 让我们再次计算样式数量，看看清理操作的结果。这将告诉我们有多少样式被删除了。
 
-打印新样式计数：使用`Console.WriteLine`显示更新后的样式数量。
+打印新样式计数：使用`Console.WriteLine`显示更新后的款式数量。
 
 ```csharp
 //清理后样式数量减少了。

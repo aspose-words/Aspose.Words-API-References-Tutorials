@@ -1,6 +1,6 @@
 ---
-title: 在 Word 文档中对段落应用边框和底纹
-linktitle: 在 Word 文档中对段落应用边框和底纹
+title: 在 Word 文档中将边框和底纹应用于段落
+linktitle: 在 Word 文档中将边框和底纹应用于段落
 second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 为 Word 文档中的段落添加边框和底纹。按照我们的分步指南来增强您的文档格式。
 type: docs
@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using System.Drawing;
 ```
 
-现在，让我们将流程分解成几个小步骤。每个步骤都会有一个标题和详细说明。准备好了吗？我们开始吧！
+现在，让我们将流程分解成几个小步骤。每个步骤都有一个标题和详细说明。准备好了吗？我们开始吧！
 
 ## 步骤 1：设置文档目录
 
@@ -42,18 +42,18 @@ using System.Drawing;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-此目录是保存最终文档的位置。替换`"YOUR DOCUMENT DIRECTORY"`与您的机器上的实际路径。
+此目录是保存最终文档的位置。替换`"YOUR DOCUMENT DIRECTORY"`使用您机器上的实际路径。
 
 ## 步骤 2：创建新文档和 DocumentBuilder
 
-接下来，我们需要创建一个新文档和一个`DocumentBuilder`对象。`DocumentBuilder`是让我们可以操纵文档的魔杖。
+接下来，我们需要创建一个新文档和一个`DocumentBuilder`对象。`DocumentBuilder`是让我们操纵文档的魔杖。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-这`Document`对象代表整个 Word 文档，并且`DocumentBuilder`帮助我们添加和格式化内容。
+这`Document`对象代表我们的整个 Word 文档，并且`DocumentBuilder`帮助我们添加和格式化内容。
 
 ## 步骤 3：定义段落边框
 
@@ -70,7 +70,7 @@ borders[BorderType.Bottom].LineStyle = LineStyle.Double;
 
 这里，我们设置文本和边框之间的距离为 20 磅。所有边（左、右、上、下）的边框都设置为双线。很奇特，对吧？
 
-## 步骤 4：对段落应用底纹
+## 步骤 4：对段落应用阴影
 
 边框很棒，但让我们用一些阴影来让它更上一层楼。我们将使用对角十字图案和混合颜色来使我们的段落脱颖而出。
 
@@ -81,7 +81,7 @@ shading.BackgroundPatternColor = System.Drawing.Color.LightCoral;
 shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 ```
 
-在此步骤中，我们应用了斜十字纹理，以浅珊瑚色作为背景色，浅鲑鱼色作为前景色。这就像给您的段落穿上名牌服装一样！
+在此步骤中，我们应用了斜十字纹理，浅珊瑚色为背景色，浅鲑鱼色为前景色。这就像给您的段落穿上名牌服装一样！
 
 ## 步骤 5：向段落添加文本
 
@@ -115,7 +115,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ### 还有哪些其他阴影纹理可用？  
 您可以使用多种纹理，例如纯色、水平条纹、垂直条纹等。检查[Aspose 文档](https://reference.aspose.com/words/net/)以获取完整列表。
 
-### 我怎样才能改变边框颜色？  
+### 我如何改变边框颜色？  
 您可以使用设置边框颜色`Color`每个边框的属性。例如，`borders[BorderType.Left].Color = Color.Red;`.
 
 ### 是否可以对文本的特定部分应用边框和阴影？  

@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-这行代码创建一个新的`Document`对象并加载指定的文件。
+这行代码创建了一个新的`Document`对象并加载指定的文件。
 
 ## 步骤 3：配置图像保存选项
 

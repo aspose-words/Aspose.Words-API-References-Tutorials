@@ -23,7 +23,7 @@ url: /zh/java/document-security/securing-documents-passwords/
 
 ### 1.导入Aspose.Words库
 
-首先，您需要将 Aspose.Words 库导入到 Java 项目中。请确保您已将其添加为依赖项。
+首先，您需要将 Aspose.Words 库导入到 Java 项目中。请确保已将其添加为依赖项。
 
 ```java
 import com.aspose.words.*;

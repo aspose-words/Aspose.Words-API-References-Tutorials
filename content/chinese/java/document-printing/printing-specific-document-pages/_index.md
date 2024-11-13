@@ -10,7 +10,7 @@ url: /zh/java/document-printing/printing-specific-document-pages/
 
 ## 介绍
 
-打印文档的特定页面可能是各种应用程序中的常见要求。Aspose.Words for Java 通过提供一套全面的 Word 文档管理功能简化了此任务。在本教程中，我们将创建一个 Java 应用程序，该应用程序加载 Word 文档并仅打印所需的页面。
+打印文档的特定页面是各种应用程序中的常见要求。Aspose.Words for Java 通过提供一套全面的 Word 文档管理功能简化了此任务。在本教程中，我们将创建一个 Java 应用程序，该应用程序加载 Word 文档并仅打印所需的页面。
 
 ## 先决条件
 

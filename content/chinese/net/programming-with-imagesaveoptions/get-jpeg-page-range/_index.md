@@ -24,7 +24,7 @@ url: /zh/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 
 ## 导入命名空间
 
-要使用 Aspose.Words for .NET，您需要在代码开头导入必要的命名空间。这可确保您可以访问文档操作所需的所有类和方法。
+要使用 Aspose.Words for .NET，您需要在代码开头导入必要的命名空间。这可确保您能够访问文档操作所需的所有类和方法。
 
 ```csharp
 using Aspose.Words;

@@ -49,13 +49,13 @@ public void exportResources() throws Exception {
     saveOptions.setCssStyleSheetType(CssStyleSheetType.EXTERNAL);
     saveOptions.setExportFontResources(true);
     saveOptions.setResourceFolder("Your Directory Path" + "Resources");
-    saveOptions.setResourceFolderAlias("http://example.com/resources”);
+    saveOptions.setResourceFolderAlias("http://例如.com/resources”);
     doc.save("Your Directory Path" + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
 }
 ```
 
 ## 5. 将图元文件转换为 EMF 或 WMF
-这`convertMetafilesToEmfOrWmf`该方法允许您将文档中的元文件转换为 EMF 或 WMF 格式，确保兼容性和 HTML 中的流畅呈现。
+这`convertMetafilesToEmfOrWmf`该方法允许您将文档中的元文件转换为 EMF 或 WMF 格式，确保兼容性和 HTML 中的流畅渲染。
 
 ```java
 @Test
@@ -119,7 +119,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 ```
 
 ## 11. 结论
-在本教程中，我们探索了 Aspose.Words for Java 提供的高级 HTML 文档保存选项。这些选项使您可以对转换过程进行细粒度控制，从而可以创建与原始 Word 文档非常相似的 HTML 文档。
+在本教程中，我们探索了 Aspose.Words for Java 提供的高级 HTML 文档保存选项。这些选项使您可以对转换过程进行细粒度的控制，从而可以创建与原始 Word 文档非常相似的 HTML 文档。
 
 ## 12. 常见问题解答
 以下是有关使用 Aspose.Words for Java 和 HTML 文档保存选项的一些常见问题：
@@ -131,7 +131,7 @@ public void exportTextInputFormFieldAsText() throws Exception {
 是的，您可以通过修改 HTML 中使用的样式表或使用`addCssClassNamePrefix`方法为 CSS 类名添加前缀。
 
 ### Q3：有没有办法优化 HTML 输出以便在网页上显示？
-是的，您可以通过配置诸如将字体导出为 Base64 和将元文件转换为 SVG 等选项来优化 HTML 输出以在网页上显示。
+是的，您可以通过配置诸如将字体导出为 Base64 和将元文件转换为 SVG 等选项来优化 HTML 输出以用于网页显示。
 
 ### Q4：将复杂的 Word 文档转换为 HTML 时有什么限制吗？
 虽然 Aspose.Words for Java 提供了强大的转换功能，但布局复杂的复杂 Word 文档可能需要额外的后期处理才能实现所需的 HTML 输出。

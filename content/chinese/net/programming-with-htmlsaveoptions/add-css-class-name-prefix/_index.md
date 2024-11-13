@@ -37,7 +37,7 @@ using Aspose.Words.Saving;
 
 ### 步骤 1.1：创建新项目
 
-启动 Visual Studio 并创建一个新的控制台应用程序项目。将其命名为类似以下名称的朗朗上口的名字：`AsposeCssPrefixExample`.
+启动 Visual Studio 并创建一个新的控制台应用程序项目。将其命名为一些吸引人的名字，例如`AsposeCssPrefixExample`.
 
 ### 步骤1.2：添加Aspose.Words for .NET
 

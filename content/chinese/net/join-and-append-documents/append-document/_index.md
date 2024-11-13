@@ -63,7 +63,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-在此步骤中，我们使用`AppendDocument`方法合并两个文档。`ImportFormatMode.KeepSourceFormatting`参数确保源文档的格式得以保留。
+在此步骤中，我们使用`AppendDocument`方法来合并两个文档。`ImportFormatMode.KeepSourceFormatting`参数确保源文档的格式得以保留。
 
 ## 步骤 4：保存合并文档
 
@@ -87,7 +87,7 @@ Aspose.Words for .NET 是一个功能强大的库，允许开发人员以编程�
 
 ### 2. 我可以免费使用 Aspose.Words for .NET 吗？
 
-您可以使用以下方式尝试 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需长期使用，您需要购买许可证。
+您可以使用以下方式尝试 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需长期使用，则需要购买许可证。
 
 ### 3. 如何确保附加文档时保留格式？
 

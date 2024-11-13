@@ -29,7 +29,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/
 - 文档合并：探索将多个文档合并为一个整体的策略。
 - 文档转换：了解如何将文档转换为各种格式，例如 PDF 或 HTML。
 
-完成这些教程后，您将掌握使用 Aspose.Words 浏览、提取和操作文档结构和内容的坚实基础。通过详细的解释和源代码示例，您将能够高效、有效地处理与文档相关的任务。
+完成这些教程后，您将掌握使用 Aspose.Words 导航、提取和操作文档结构和内容的坚实基础。通过详细的解释和源代码示例，您将能够高效、有效地处理与文档相关的任务。
 
 ## 文档结构和内容操作教程
 ### [管理 Word 文档的结构和内容](./document-structure-content/)
@@ -37,7 +37,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/
 ### [利用 Word 文档中的注释功能](./document-comments/)
 了解如何使用 Aspose.Words for Python 在 Word 文档中使用注释功能。带有源代码的分步指南。增强协作并简化文档中的审阅。
 ### [处理 Word 文档中的字段和数据](./document-fields/)
-了解如何使用 Aspose.Words for Python 处理 Word 文档中的字段和数据。分步指南，其中包含动态内容、自动化等的代码示例。 
+了解如何使用 Aspose.Words for Python 处理 Word 文档中的字段和数据。包含动态内容、自动化等代码示例的分步指南。 
 ### [了解 Word 文档中的字体和文本样式](./document-fonts/)
 探索 Word 文档中的字体和文本样式世界。了解如何使用 Aspose.Words for Python 增强可读性和视觉吸引力。包含分步示例的综合指南。
 ### [探索 Word 文档中的脚注和尾注](./document-footnotes-endnotes/)
@@ -47,7 +47,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/
 ### [操作 Word 文档中的页眉和页脚](./document-headers-footers/)
 学习使用 Aspose.Words for Python 操作 Word 文档中的页眉和页脚。分步指南，包含自定义、添加、删除等源代码。立即增强您的文档格式！
 ### [管理 Word 文档中的连字和文本流](./document-hyphenation/)
-了解如何使用 Aspose.Words for Python 管理 Word 文档中的连字符和文本流。使用分步示例和源代码创建精美、易读的文档。 
+了解如何使用 Aspose.Words for Python 管理 Word 文档中的连字和文本流。使用分步示例和源代码创建精美、易读的文档。 
 ### [在 Word 文档中创建和管理列表](./document-lists/)
 了解如何使用 Aspose.Words Python API 在 Word 文档中创建和管理列表。分步指南，包含列表格式化、自定义、嵌套等的源代码。 
 ### [在 Word 文档中使用 Markdown 格式](./document-markdown/)

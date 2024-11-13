@@ -18,7 +18,7 @@ url: /zh/java/document-revision/comparing-document-versions/
 
 ## 加载文档
 
-要比较文档版本，首先需要加载要分析的文档。Aspose.Words for Java 强大的文档加载功能让这一过程变得简单。
+要比较文档版本，首先需要加载要分析的文档。Aspose.Words for Java 强大的文档加载功能让这一切变得简单。
 
 ```java
 //装入原始文档
@@ -30,7 +30,7 @@ Document revisedDocument = new Document("revised.docx");
 
 ## 比较文档版本
 
-现在我们已经加载了文档，让我们继续进行比较。 Aspose.Words for Java 提供了一种简单的方法。
+现在我们已经加载了文档，让我们继续进行比较。 Aspose.Words for Java 为此提供了一种简单的方法。
 
 ```java
 //比较文档

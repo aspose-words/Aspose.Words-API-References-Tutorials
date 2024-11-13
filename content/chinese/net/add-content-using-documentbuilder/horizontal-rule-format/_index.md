@@ -90,7 +90,7 @@ Aspose.Words for .NET 是一个功能强大的库，用于在.NET 应用程序�
 您可以从以下位置下载 Aspose.Words for .NET[这里](https://releases.aspose.com/words/net/).
 
 ### 我可以自定义 Aspose.Words 中水平规则的外观吗？
-是的，您可以使用 Aspose.Words 自定义水平规则的对齐、宽度、高度、颜色和阴影等各个方面。
+是的，您可以使用 Aspose.Words 自定义各个方面，例如对齐、宽度、高度、颜色和水平规则的阴影。
 
 ### Aspose.Words适合企业级文档处理吗？
 是的，Aspose.Words 因其强大的文档处理功能而广泛应用于企业环境。

@@ -13,9 +13,9 @@ url: /zh/net/programming-with-bookmarks/copy-bookmarked-text/
 
 ## 先决条件
 
-在深入研究之前，请确保您已准备好以下内容：
+在深入研究之前，请确保您已具备以下条件：
 
--  Aspose.Words for .NET 库：您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET 库：你可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 - 开发环境：Visual Studio 或任何其他.NET 开发环境。
 - C#基础知识：熟悉 C# 编程和 .NET 框架。
 

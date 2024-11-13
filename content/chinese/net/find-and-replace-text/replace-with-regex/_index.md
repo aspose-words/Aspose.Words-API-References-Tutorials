@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 代替`"YOUR DOCUMENT DIRECTORY"`与您的目录的实际路径一致。
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 接下来，我们将创建一个新文档和一个`DocumentBuilder`添加一些初始文本。
 

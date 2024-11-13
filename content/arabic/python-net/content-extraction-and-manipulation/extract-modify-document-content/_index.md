@@ -1,16 +1,16 @@
 ---
 title: استخراج وتعديل المحتوى في مستندات Word
 linktitle: استخراج وتعديل المحتوى في مستندات Word
-second_title: Aspose.Words Python إدارة المستندات API
-description: تعرف على كيفية استخراج المحتوى وتعديله في مستندات Word باستخدام Aspose.Words for Python. دليل خطوة بخطوة مع كود المصدر.
+second_title: Aspose.Words - واجهة برمجة تطبيقات إدارة المستندات باستخدام Python
+description: تعرف على كيفية استخراج المحتوى وتعديله في مستندات Word باستخدام Aspose.Words for Python. دليل خطوة بخطوة مع الكود المصدر.
 type: docs
 weight: 10
 url: /ar/python-net/content-extraction-and-manipulation/extract-modify-document-content/
 ---
 
-## مقدمة إلى Aspose.Words لبيثون
+## مقدمة إلى Aspose.Words للغة بايثون
 
-Aspose.Words هي مكتبة شائعة لمعالجة المستندات وإنشاءها توفر إمكانات واسعة النطاق للعمل مع مستندات Word برمجيًا. توفر واجهة برمجة تطبيقات Python الخاصة بها مجموعة واسعة من الوظائف لاستخراج المحتوى وتعديله ومعالجته داخل مستندات Word.
+Aspose.Words هي مكتبة شائعة لمعالجة المستندات وتوليدها وتوفر إمكانيات واسعة للعمل مع مستندات Word برمجيًا. توفر واجهة برمجة التطبيقات Python الخاصة بها مجموعة واسعة من الوظائف لاستخراج المحتوى وتعديله ومعالجته داخل مستندات Word.
 
 ## التثبيت والإعداد
 
@@ -20,9 +20,9 @@ Aspose.Words هي مكتبة شائعة لمعالجة المستندات وإن
 pip install aspose-words
 ```
 
-## تحميل مستندات الوورد
+## تحميل مستندات Word
 
-يعد تحميل مستند Word هو الخطوة الأولى نحو التعامل مع محتواه. يمكنك استخدام مقتطف الكود التالي لتحميل مستند:
+يعد تحميل مستند Word الخطوة الأولى نحو التعامل مع محتواه. يمكنك استخدام مقتطف التعليمات البرمجية التالي لتحميل مستند:
 
 ```python
 from asposewords import Document
@@ -32,7 +32,7 @@ doc = Document("path/to/your/document.docx")
 
 ## استخراج النص
 
-لاستخراج نص من المستند، يمكنك التكرار عبر الفقرات والتشغيل:
+لاستخراج النص من المستند، يمكنك التكرار عبر الفقرات والتشغيلات:
 
 ```python
 for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
@@ -42,7 +42,7 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
 
 ## تعديل النص
 
-يمكنك تعديل النص عن طريق ضبط نص التشغيل أو الفقرات مباشرة:
+يمكنك تعديل النص عن طريق ضبط نص التشغيلات أو الفقرات بشكل مباشر:
 
 ```python
 for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
@@ -52,7 +52,7 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
 
 ## العمل مع التنسيق
 
-يتيح لك Aspose.Words العمل باستخدام أنماط التنسيق:
+يتيح لك Aspose.Words العمل مع أنماط التنسيق:
 
 ```python
 run = doc.get_first_section().get_body().get_first_paragraph().get_runs().get(0)
@@ -68,7 +68,7 @@ run.get_font().set_color(255, 0, 0)
 doc.get_range().replace("old_text", "new_text", False, False)
 ```
 
-## إضافة وتعديل الصور
+## إضافة الصور وتعديلها
 
  يمكن إضافة الصور أو استبدالها باستخدام`insert_image` طريقة:
 
@@ -77,7 +77,7 @@ shape = doc.get_first_section().get_body().append_child(asposewords.Drawing.Shap
 shape.get_image_data().set_source("path/to/image.jpg")
 ```
 
-## حفظ الوثيقة المعدلة
+## حفظ المستند المعدل
 
 بعد إجراء التعديلات، احفظ المستند:
 
@@ -112,10 +112,10 @@ header.get_paragraphs().add("Header content")
 ```python
 run = doc.get_first_section().get_body().get_first_paragraph().get_runs().get(0)
 run.get_font().set_color(0, 0, 255)
-doc.get_hyperlinks().add(run, "https://www.example.com")
+doc.get_hyperlinks().add(run, "https://"www.example.com")
 ```
 
-## التحويل إلى صيغ أخرى
+## التحويل إلى تنسيقات أخرى
 
 يدعم Aspose.Words تحويل المستندات إلى تنسيقات مختلفة:
 
@@ -125,11 +125,11 @@ doc.save("path/to/converted/document.pdf", asposewords.SaveFormat.PDF)
 
 ## الميزات المتقدمة والأتمتة
 
-يقدم Aspose.Words المزيد من الميزات المتقدمة مثل دمج البريد ومقارنة المستندات والمزيد. أتمتة المهام المعقدة بسهولة.
+يوفر Aspose.Words ميزات أكثر تقدمًا مثل دمج البريد ومقارنة المستندات والمزيد. يمكنك أتمتة المهام المعقدة بسهولة.
 
 ## خاتمة
 
-Aspose.Words for Python هي مكتبة متعددة الاستخدامات تمكنك من التعامل مع مستندات Word وتعديلها بسهولة. سواء كنت بحاجة إلى استخراج نص أو استبدال المحتوى أو تنسيق المستندات، فإن واجهة برمجة التطبيقات هذه توفر الأدوات اللازمة.
+Aspose.Words for Python هي مكتبة متعددة الاستخدامات تتيح لك التعامل مع مستندات Word وتعديلها بسهولة. سواء كنت بحاجة إلى استخراج نص أو استبدال محتوى أو تنسيق مستندات، توفر لك واجهة برمجة التطبيقات هذه الأدوات اللازمة.
 
 ## الأسئلة الشائعة
 
@@ -139,16 +139,16 @@ Aspose.Words for Python هي مكتبة متعددة الاستخدامات تم
 
 ### هل يمكنني تعديل تنسيق النص باستخدام هذه المكتبة؟
 
-نعم، يمكنك تعديل تنسيق النص، مثل الخط الغامق واللون وحجم الخط، باستخدام Aspose.Words for Python API.
+نعم، يمكنك تعديل تنسيق النص، مثل الخط الغامق واللون وحجم الخط، باستخدام واجهة برمجة تطبيقات Aspose.Words لـ Python.
 
-### هل من الممكن استبدال نص معين داخل الوثيقة؟
+### هل من الممكن استبدال نص معين داخل المستند؟
 
- بالتأكيد، يمكنك استخدام`replace` طريقة لاستبدال نص معين داخل المستند.
+ بالتأكيد يمكنك استخدام`replace` طريقة لاستبدال نص محدد داخل المستند.
 
 ### هل يمكنني إضافة ارتباطات تشعبية إلى مستند Word الخاص بي؟
 
- بالتأكيد، يمكنك إضافة ارتباطات تشعبية إلى مستندك باستخدام ملف`insert_hyperlink` الطريقة المقدمة من Aspose.Words.
+ بالتأكيد، يمكنك إضافة ارتباطات تشعبية إلى مستندك باستخدام`insert_hyperlink` الطريقة المقدمة من قبل Aspose.Words.
 
-### ما هي التنسيقات الأخرى التي يمكنني تحويل مستندات Word الخاصة بي إليها؟
+### ما هي التنسيقات الأخرى التي يمكنني تحويل مستندات Word إليها؟
 
 يدعم Aspose.Words التحويل إلى تنسيقات مختلفة مثل PDF وHTML وEPUB والمزيد.

@@ -213,7 +213,7 @@ System.out.println("\nContents of the cell: ");
 System.out.println(table.getLastRow().getLastCell().getRange().getText());
 ```
 
-## 提取图像到文件
+## 将图像提取到文件
 
 ```java
 //用于将图像提取到文件的 Java 代码示例

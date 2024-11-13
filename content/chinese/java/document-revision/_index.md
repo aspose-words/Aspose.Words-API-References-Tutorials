@@ -35,5 +35,5 @@ url: /zh/java/document-revision/
 了解如何使用 Aspose.Words for Java 轻松管理文档更改。无缝接受和拒绝修订。
 ### [文档版本控制和历史记录](./document-version-control-history/)
 学习使用 Aspose.Words for Java 进行高效的文档版本控制。轻松管理变更、无缝协作和跟踪修订。
-### [文档协作与审查](./document-collaboration-review/)
+### [文档协作与审阅](./document-collaboration-review/)
 使用 Aspose.Words for Java 实现高效的文档协作和审阅。了解如何跟踪更改、共享文档和简化工作流程。

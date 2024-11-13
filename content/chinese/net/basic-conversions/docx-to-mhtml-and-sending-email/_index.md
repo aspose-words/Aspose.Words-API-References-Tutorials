@@ -15,7 +15,7 @@ url: /zh/net/basic-conversions/docx-to-mhtml-and-sending-email/
 
 在开始之前，请确保您已满足以下先决条件：
 
-1. Aspose.Words for .NET：从以下位置下载并安装 Aspose.Words for .NET 库：[Aspose 发布页面](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：从以下位置下载并安装 Aspose.Words for .NET 库：[Aspose 发布页面](https://releases.aspose.com/words/net/).
 2.  Aspose.Email for .NET：从以下位置下载并安装 Aspose.Email for .NET 库[Aspose 发布页面](https://releases.aspose.com/email/net/).
 3. .NET Framework：确保您的机器上安装了 .NET Framework。
 4. SMTP 服务器：您需要访问 SMTP 服务器才能发送电子邮件。
@@ -32,7 +32,7 @@ using Aspose.Email.Mime;
 using Aspose.Email.Clients.Smtp;
 ```
 
-让我们将这个过程分解为多个步骤，以确保您清楚地理解每个部分。
+我们将该过程分解为多个步骤，以确保您清楚地理解每个部分。
 
 ## 步骤 1：加载 DOCX 文档
 
@@ -95,7 +95,7 @@ client.Send(message);
 是的，Aspose.Words 与 .NET Core 兼容。您也可以在 .NET Core 应用程序中使用它。
 
 ### 我需要 Aspose.Words 和 Aspose.Email 的许可证吗？
-是的，这两个库都需要许可证。您可以从[Aspose 购买页面](https://purchase.aspose.com/temporary-license/)用于评估目的。
+是的，这两个库都需要许可证。你可以从[Aspose 购买页面](https://purchase.aspose.com/temporary-license/)用于评估目的。
 
 ### 在哪里可以找到更多文档？
 您可以找到 Aspose.Words 的详细文档[这里](https://reference.aspose.com/words/net/)以及 Aspose.Email[这里](https://reference.aspose.com/email/net/).

@@ -16,7 +16,7 @@ url: /zh/net/remove-content/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [删除 Word 文档中的分页符](./remove-page-breaks/) | 通过我们的分步指南学习如何使用 Aspose.Words for .NET 删除 Word 文档中的分页符。增强您的文档处理技能。 |
+| [删除 Word 文档中的分页符](./remove-page-breaks/) | 通过我们的分步指南学习如何使用 Aspose.Words for .NET 删除 Word 文档中的分页符。提高您的文档处理技能。 |
 | [删除 Word 文档中的分节符](./remove-section-breaks/) | 了解如何使用 Aspose.Words for .NET 删除 Word 文档中的分节符。此详细的分步指南可确保顺利进行文档管理和编辑。|
 | [删除 Word 文档中的页脚](./remove-footers/) | 通过本全面的分步指南了解如何使用 Aspose.Words for .NET 从 Word 文档中删除页脚。 |
 | [删除 Word 文档中的目录](./remove-table-of-contents/) | 了解如何使用 Aspose.Words for .NET 删除 Word 文档中的目录。 |

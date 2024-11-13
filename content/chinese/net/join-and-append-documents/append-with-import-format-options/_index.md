@@ -15,7 +15,7 @@ url: /zh/net/join-and-append-documents/append-with-import-format-options/
 
 在进入有趣的部分之前，让我们先确保您已准备好所需的一切。以下是一份快速检查清单：
 
-1.  Aspose.Words for .NET：请确保您已安装此库。您可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：确保已安装此库。你可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：任何与 .NET 兼容的环境，如 Visual Studio。
 3. C# 基础知识：您不需要成为一名巫师，但对 C# 有一点熟悉就会大有帮助。
 
@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## 步骤 1：设置文档目录
 
-每一次旅程都始于第一步，在这里，它指定了您的文档目录。可以将其视为在公路旅行前设置 GPS。
+每一次旅程都始于第一步，在这里，它指定了您的文档目录。可以将其视为在公路旅行前设置您的 GPS。
 
 ```csharp
 //文档目录的路径
@@ -102,5 +102,5 @@ Aspose.Words 专门用于 Word 文档。对于 PDF，您可能需要 Aspose.PDF�
 ### 如何处理文档中的图像？
 图像通常可以无缝处理，但要确保您的源文档和目标文档的格式正确。
 
-###ment 然后再保存？
+保存之前先###ment 吗？
 您可以将文档呈现为流或使用应用程序中的查看器来预览它。

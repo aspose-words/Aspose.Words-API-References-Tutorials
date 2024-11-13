@@ -9,7 +9,7 @@ url: /zh/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single
 ---
 ## 介绍
 
-在将 Word 文档转换为 HTML 时，您是否发现自己被散落在各处的 CSS 规则所困扰？别担心！今天，我们将深入研究 Aspose.Words for .NET 的一项简洁功能，该功能可让您在单个文件中编写所有 CSS 规则。这不仅可以整理您的代码，还可以让您的生活变得轻松很多。系好安全带，让我们开始这段更干净、更高效的 HTML 输出之旅吧！
+在将 Word 文档转换为 HTML 时，您是否发现自己被散落在各处的 CSS 规则所困扰？别担心！今天，我们将深入研究 Aspose.Words for .NET 的一项简洁功能，该功能可让您在一个文件中编写所有 CSS 规则。这不仅可以整理您的代码，还可以让您的生活变得轻松很多。系好安全带，让我们开始这段更干净、更高效的 HTML 输出之旅吧！
 
 ## 先决条件
 
@@ -80,7 +80,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 使用单个 CSS 文件可简化样式的管理和维护。它可让您的 HTML 更简洁、更高效。
 
 ### 如果需要，我可以分离字体 CSS 规则吗？
-是的，通过设置`SaveFontFaceCssSeparately`到`true`，您可以将字体样式 CSS 规则分离到不同的文件中。
+是的，通过设置`SaveFontFaceCssSeparately`到`true`，您可以将字体 CSS 规则分离到不同的文件中。
 
 ### Aspose.Words for .NET 可以免费使用吗？
  Aspose.Words 提供免费试用，您可以[点击此处下载](https://releases.aspose.com/)。如需继续使用，请考虑购买许可证[这里](https://purchase.aspose.com/buy).

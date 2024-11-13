@@ -38,23 +38,7 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
-## 步骤2：创建 DocumentBuilder 对象
-
-接下来，创建一个`DocumentBuilder`对象来方便文档操作。
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## 步骤 3：处理文档内容
-
-使用`DocumentBuilder`对象根据需要操作内容。例如，添加文本或格式。
-
-```csharp
-builder.Writeln("Insert your text or content manipulation code here!");
-```
-
-## 步骤 4：另存为 Markdown
+## 第 2 步：另存为 Markdown
 
 最后将修改后的文档保存为Markdown格式。
 

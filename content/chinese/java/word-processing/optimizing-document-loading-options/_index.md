@@ -110,7 +110,7 @@ Document document = new Document(txtFilePath, loadOptions);
 
 ### 常见问题解答
 
-#### 如何下载 Aspose.Words for Java？
+#### 如何下载适用于 Java 的 Aspose.Words？
 
 您可以从以下网站下载 Aspose.Words for Java：[下载 Aspose.Words for Java](https://releases.aspose.com/words/java/)
 
@@ -118,7 +118,7 @@ Document document = new Document(txtFilePath, loadOptions);
 
 Aspose.Words for Java 提供免费试用，但若要延长使用时间并获得完整功能，您可能需要购买许可证。请访问其网站了解定价详情。
 
-#### Aspose.Words for Java 支持哪些其他文档格式？
+#### Aspose.Words for Java 还支持哪些其他文档格式？
 
 Aspose.Words for Java 支持多种文档格式，包括 DOCX、PDF、ODT 等。查看其文档以获取完整列表。
 

@@ -1,6 +1,6 @@
 ---
-title: 定制文件印刷
-linktitle: 定制文件印刷
+title: 定制文件打印
+linktitle: 定制文件打印
 second_title: Aspose.Words Java 文档处理 API
 description: 了解如何使用 Aspose.Words for Java 轻松实现自定义文档打印。本分步指南涵盖了从设置到高级自定义的所有内容。
 type: docs
@@ -29,7 +29,7 @@ url: /zh/java/document-printing/customized-document-printing/
 让我们首先使用 Aspose.Words for Java 创建一个空白文档：
 
 ```java
-//Java 代码创建空白文档
+// Java 代码创建空白文档
 Document doc = new Document();
 ```
 
@@ -41,17 +41,6 @@ Document doc = new Document();
 //向文档添加内容的 Java 代码
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, Aspose.Words!");
-```
-
-## 自定义文档元素
-
-您可以自定义各种文档元素，例如字体、样式和格式。以下是更改字体大小的示例：
-
-```java
-//改变字体大小的Java代码
-Run run = (Run) doc.getChildNodes(NodeType.RUN, true).get(0);
-Font font = run.getFont();
-font.setSize(14);
 ```
 
 ## 打印文档

@@ -366,7 +366,7 @@ Aspose.Words for Java 是一款功能强大的工具，可帮助 Java 开发人�
 
    是的，Aspose.Words for Java 支持文档加密以保护敏感信息。
 
-### 是否有针对 Aspose.Words for Java 用户的社区论坛或支持？
+### 是否有一个社区论坛或为 Java 用户的 Aspose.Words 提供支持？
 
    是的，Aspose 提供社区论坛和全面支持来帮助用户解决疑问。
 

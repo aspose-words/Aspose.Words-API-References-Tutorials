@@ -12,7 +12,7 @@ url: /zh/java/document-manipulation/using-document-options-and-settings/
 
 在本综合指南中，我们将探讨如何利用 Aspose.Words for Java 的强大功能来处理文档选项和设置。无论您是经验丰富的开发人员还是刚刚起步，您都会找到有价值的见解和实用示例来增强您的文档处理任务。
 
-## 优化文档以提高兼容性
+## 优化文档的兼容性
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");

@@ -1,6 +1,6 @@
 ---
-title: 文档协作与审查
-linktitle: 文档协作与审查
+title: 文档协作与审阅
+linktitle: 文档协作与审阅
 second_title: Aspose.Words Java 文档处理 API
 description: 使用 Aspose.Words for Java 实现高效的文档协作和审阅。了解如何跟踪更改、共享文档和简化工作流程。
 type: docs

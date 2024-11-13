@@ -13,7 +13,7 @@ url: /zh/net/compare-documents/comparison-granularity/
 
 Aspose.Words for .NET 的比较粒度功能允许您在字符级别比较文档。这意味着将比较每个字符并相应地报告更改。
 
-## 步骤 2：设置环境
+## 第 2 步：设置环境
 
 开始之前，您需要设置开发环境以使用 Aspose.Words for .NET。确保您已安装 Aspose.Words 库并拥有合适的 C# 项目来嵌入代码。
 
@@ -62,7 +62,7 @@ builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOpti
 
 在本文中，我们探讨了 Aspose.Words for .NET 的比较粒度功能。此功能允许您在字符级别比较文档并报告更改。您可以使用这些知识在项目中执行详细的文档比较。
 
-### 使用 Aspose.Words for .NET 的比较粒度的示例源代码
+### 使用 Aspose.Words for .NET 进行比较粒度的示例源代码
 
 ```csharp
             
@@ -86,7 +86,7 @@ builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOpti
 
 #### 问：在 Aspose.Words for .NET 中使用比较粒度的目的是什么？
 
-答：Aspose.Words for .NET 中的比较粒度允许您在比较文档时指定详细程度。使用此功能，您可以比较不同级别的文档，例如字符级、单词级甚至块级。每个粒度级别在比较结果中提供不同级别的详细程度。
+答：Aspose.Words for .NET 中的比较粒度允许您在比较文档时指定详细程度。使用此功能，您可以在不同级别比较文档，例如字符级、单词级甚至块级。每个粒度级别在比较结果中提供不同的详细程度。
 
 #### 问：如何在 Aspose.Words for .NET 中使用比较粒度？
 

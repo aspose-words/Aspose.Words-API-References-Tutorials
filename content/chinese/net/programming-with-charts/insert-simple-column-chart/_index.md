@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ## 步骤 2：插入图表形状
 
 ```csharp
-//插入柱形图类型
+//插入柱状图类型图表形状
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ChartSeriesCollection seriesColl = chart.Series;

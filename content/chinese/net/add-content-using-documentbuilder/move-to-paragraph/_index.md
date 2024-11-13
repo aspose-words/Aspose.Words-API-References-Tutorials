@@ -44,7 +44,7 @@ Document doc = new Document("C:\\path\\to\\your\\Paragraphs.docx");
 
 确保更换`"C:\\path\\to\\your\\Paragraphs.docx"`使用您的 Word 文档的实际路径。
 
-## 步骤 2：初始化 DocumentBuilder
+## 第 2 步：初始化 DocumentBuilder
 
 接下来，我们将初始化一个`DocumentBuilder`对象。将其视为数字笔，可帮助您导航和修改文档。
 

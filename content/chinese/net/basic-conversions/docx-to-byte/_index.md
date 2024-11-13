@@ -13,7 +13,7 @@ url: /zh/net/basic-conversions/docx-to-byte/
 
 ## 先决条件
 
-在深入研究代码之前，请确保您已满足以下先决条件：
+在深入研究代码之前，请确保已满足以下先决条件：
 - 对 C# 和 .NET 框架有基本的了解。
 - 您的开发机器上安装了 Visual Studio。
 -  Aspose.Words for .NET 库。您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
@@ -56,7 +56,7 @@ Document docFromBytes = new Document(inStream);
 
 ## 结论
 
-总之，利用 Aspose.Words for .NET 将 Docx 文件转换为字节数组和反之亦然非常简单高效。此功能对于需要以字节格式操作和存储文档的应用程序非常有用。通过遵循上述步骤，您可以将此功能无缝集成到您的 .NET 项目中，轻松增强文档处理工作流程。
+总之，利用 Aspose.Words for .NET 将 Docx 文件转换为字节数组和反之亦然是简单而有效的。此功能对于需要以字节格式操作和存储文档的应用程序非常有用。通过遵循上述步骤，您可以将此功能无缝集成到您的 .NET 项目中，轻松增强文档处理工作流程。
 
 ## 常见问题解答
 

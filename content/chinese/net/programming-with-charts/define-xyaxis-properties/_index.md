@@ -109,7 +109,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 
 ## 结论
 
-一旦了解了所涉及的步骤，使用 Aspose.Words for .NET 在 Word 文档中创建和自定义图表就很简单了。本指南引导您完成在图表中定义 XY 轴属性的过程，从初始化文档到保存最终产品。凭借这些技能，您可以创建详细、专业的图表来增强您的文档。
+一旦您了解了所涉及的步骤，使用 Aspose.Words for .NET 在 Word 文档中创建和自定义图表就很简单了。本指南引导您完成在图表中定义 XY 轴属性的过程，从初始化文档到保存最终产品。凭借这些技能，您可以创建详细、专业的图表来增强您的文档。
 
 ## 常见问题解答
 

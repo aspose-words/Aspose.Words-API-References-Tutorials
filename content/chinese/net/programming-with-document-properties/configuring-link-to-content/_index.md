@@ -16,7 +16,7 @@ url: /zh/net/programming-with-document-properties/configuring-link-to-content/
 在深入了解分步指南之前，让我们确保您已准备好开始所需的一切：
 
 -  Aspose.Words for .NET：确保您拥有最新版本的 Aspose.Words for .NET。如果您还没有，可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
-- .NET Framework：确保您的机器上安装了.NET Framework。
+- .NET Framework：确保您的机器上安装了 .NET Framework。
 - 开发环境：Visual Studio 或任何其他支持.NET 开发的 IDE。
 
 ## 导入命名空间

@@ -9,7 +9,7 @@ url: /zh/net/programming-with-htmlsaveoptions/export-resources/
 ---
 ## 介绍
 
-嗨，技术爱好者们！如果您需要将 Word 文档转换为 HTML，那么您来对地方了。今天，我们将深入探索 Aspose.Words for .NET 的奇妙世界。这个功能强大的库使以编程方式处理 Word 文档变得轻而易举。在本教程中，我们将逐步介绍使用 Aspose.Words for .NET 将 Word 文档保存为 HTML 时导出字体和 CSS 等资源的步骤。系好安全带，开始一段有趣且内容丰富的旅程吧！
+嗨，技术爱好者们！如果您曾经需要将 Word 文档转换为 HTML，那么您来对地方了。今天，我们将深入探索 Aspose.Words for .NET 的奇妙世界。这个功能强大的库使以编程方式处理 Word 文档变得轻而易举。在本教程中，我们将逐步介绍使用 Aspose.Words for .NET 将 Word 文档保存为 HTML 时导出字体和 CSS 等资源的步骤。系好安全带，开始一段有趣且内容丰富的旅程吧！
 
 ## 先决条件
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOption
 您可以在`doc.Save`方法。例如，`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
 
 ### Aspose.Words 除了 HTML 之外还支持其他格式吗？
-是的，它支持多种格式，包括 PDF、DOCX、TXT 等。查看[文档](https://reference.aspose.com/words/net/)以获取完整列表。
+是的，它支持各种格式，包括 PDF、DOCX、TXT 等。查看[文档](https://reference.aspose.com/words/net/)以获取完整列表。
 
 ### 我可以在哪里获得更多支持和资源？
 如需更多帮助，请访问[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8)。您还可以在[Aspose 网站](https://reference.aspose.com/words/net/).

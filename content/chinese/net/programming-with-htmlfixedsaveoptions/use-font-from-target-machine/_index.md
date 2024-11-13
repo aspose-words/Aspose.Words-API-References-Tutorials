@@ -55,7 +55,7 @@ Document doc = new Document(dataDir + "Bullet points with alternative font.docx"
 
 ## 步骤 2：配置保存选项
 
-接下来，我们需要配置保存选项。这一步至关重要，因为它可以确保文档中使用的字体是目标机器的字体。
+接下来，我们需要配置保存选项。此步骤至关重要，因为它可确保文档中使用的字体是目标机器的字体。
 
 我们将创建一个实例`HtmlFixedSaveOptions`并设置`UseTargetMachineFonts`财产`true`.
 

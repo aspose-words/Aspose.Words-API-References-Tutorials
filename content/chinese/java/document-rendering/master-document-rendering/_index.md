@@ -14,7 +14,7 @@ url: /zh/java/document-rendering/master-document-rendering/
 
 文档渲染是将电子文档转换为可供用户查看、编辑或打印的视觉表示的过程。它涉及将文档的内容、布局和格式转换为合适的格式，例如 PDF、XPS 或图像，同时保留文档的原始结构和外观。在 Java 开发环境中，Aspose.Words 是一个功能强大的库，可让您处理各种文档格式并无缝地为用户呈现它们。
 
-文档渲染是处理大量文档的现代应用程序的重要组成部分。无论您是创建基于 Web 的文档编辑器、文档管理系统还是报告工具，掌握文档渲染都会提升用户体验并简化以文档为中心的流程。
+文档渲染是处理大量文档的现代应用程序的重要组成部分。无论您是创建基于 Web 的文档编辑器、文档管理系统还是报告工具，掌握文档渲染都会增强用户体验并简化以文档为中心的流程。
 
 ## Aspose.Words for Java 入门
 
@@ -138,7 +138,7 @@ doc.save("output.pdf", SaveFormat.PDF);
 //渲染为 XPS
 doc.save("output.xps", SaveFormat.XPS);
 
-//渲染为图像
+//渲染至图像
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
 saveOptions.setResolution(300);
 doc.save("output.png", saveOptions);
@@ -201,7 +201,7 @@ doc.save("output.png", saveOptions);
 为了进行更精细的控制，您可以呈现单个文档元素，如表格或图像。
 
 ```java
-//呈现特定表
+//渲染特定表
 int tableIndex = 1;
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
 saveOptions.setPageSet(new PageSet(tableIndex));

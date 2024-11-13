@@ -25,7 +25,7 @@ url: /zh/java/document-rendering/rendering-document-pages-images/
 让我们从创建一个新的 Java 项目开始。您可以使用自己喜欢的集成开发环境 (IDE) 或使用命令行工具构建项目。
 
 ```java
-//创建新项目的 Java 代码示例
+//用于创建新项目的 Java 代码示例
 public class DocumentToImageConversion {
     public static void main(String[] args) {
         //您的代码在此处

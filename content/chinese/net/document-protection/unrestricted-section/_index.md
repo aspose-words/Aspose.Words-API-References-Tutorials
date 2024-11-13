@@ -36,7 +36,7 @@ using Aspose.Words.Tables;
 
 ### 初始化您的文档目录
 
-首先，你需要设置文档目录的路径。这是保存 Word 文件的地方。
+首先，您需要设置文档目录的路径。这是您的 Word 文件保存的位置。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -55,7 +55,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 这`Document`类初始化一个新文档，并且`DocumentBuilder`帮助我们轻松地向文档添加内容。
 
-## 第 2 步：插入部分
+## 步骤 2：插入部分
 
 ### 添加不受保护的部分
 
@@ -88,7 +88,7 @@ builder.Writeln("Section 2. Protected.");
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 ```
 
-在这里，文档受密码保护，只有表单字段可以编辑。记得替换`"password"`输入您想要的密码。
+在这里，文档受密码保护，只有表单字段可以编辑。记得替换`"password"`使用您想要的密码。
 
 ### 取消保护特定部分
 
@@ -124,7 +124,7 @@ doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 
 ## 结论
 
-就这样！按照这些步骤，您已成功使用 Aspose.Words for .NET 创建了一个包含受保护和不受保护部分的 Word 文档。当您需要锁定文档的某些部分而保留其他部分可编辑时，此方法非常有用。
+就这样！按照这些步骤，您已成功使用 Aspose.Words for .NET 创建了一个包含受保护和不受保护部分的 Word 文档。当您需要锁定文档的某些部分而使其他部分可编辑时，此方法非常有用。
 
 ## 常见问题解答
 

@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
 
 就这样！通过遵循这些简单的步骤，您学会了如何使用 Aspose.Words for .NET 设置页面方向、调整边距和选择纸张尺寸。这些功能允许您以编程方式创建结构良好且专业格式的文档。
 
-无论您在处理小型项目还是处理大型文档，掌握这些基本设置都可以显著提高文档的呈现效果和可用性。深入了解[Aspose.Words 文档](https://reference.aspose.com/words/net/)获得更多高级功能和自定义选项。
+无论您在处理小型项目还是处理大型文档，掌握这些基本设置都可以显著增强文档的呈现效果和可用性。深入了解[Aspose.Words 文档](https://reference.aspose.com/words/net/)获得更多高级功能和自定义选项。
 
 ## 常见问题解答
 

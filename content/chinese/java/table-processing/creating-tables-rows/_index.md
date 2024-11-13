@@ -9,7 +9,7 @@ url: /zh/java/table-processing/creating-tables-rows/
 ---
 
 ## 介绍
-在文档中创建表格和行是文档处理的一个基本方面，而 Aspose.Words for Java 使这项任务比以往更加简单。在本分步指南中，我们将探讨如何利用 Aspose.Words for Java 在文档中创建表格和行。无论您是构建报告、生成发票还是创建任何需要结构化数据呈现的文档，本指南都能满足您的需求。
+在文档中创建表格和行是文档处理的一个基本方面，而 Aspose.Words for Java 使这项任务变得比以往更加简单。在本分步指南中，我们将探讨如何利用 Aspose.Words for Java 在文档中创建表格和行。无论您是构建报告、生成发票还是创建任何需要结构化数据呈现的文档，本指南都能满足您的需求。
 
 ## 设置舞台
 在深入讨论细节之前，让我们确保您已完成使用 Aspose.Words for Java 所需的设置。确保您已下载并安装了该库。如果尚未安装，您可以找到下载链接[这里](https://releases.aspose.com/words/java/).
@@ -74,7 +74,7 @@ table.setStyleIdentifier(StyleIdentifier.MEDIUM_GRID_1_ACCENT_1);
 处理变化的数据时，动态添加行是必不可少的。以下是如何将行插入表中：
 
 ```java
-//在特定位置插入新行（例如，第一行之后）
+//在特定位置插入新行（例如，在第一行之后）
 Row newRow = new Row(doc);
 table.getRows().insertAfter(newRow, table.getRows().get(0));
 ```

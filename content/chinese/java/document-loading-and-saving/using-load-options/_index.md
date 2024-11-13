@@ -10,7 +10,7 @@ url: /zh/java/document-loading-and-saving/using-load-options/
 
 ## Aspose.Words for Java 中加载选项的使用简介
 
-在本教程中，我们将探索如何使用 Aspose.Words for Java 中的加载选项。加载选项允许您自定义文档的加载和处理方式。我们将介绍各种场景，包括更新脏字段、加载加密文档、将形状转换为 Office Math、设置 MS Word 版本、指定临时文件夹、处理警告以及将元文件转换为 PNG。让我们一步一步地深入了解。
+在本教程中，我们将探索如何使用 Aspose.Words for Java 中的加载选项。加载选项允许您自定义文档的加载和处理方式。我们将介绍各种场景，包括更新脏字段、加载加密文档、将形状转换为 Office Math、设置 MS Word 版本、指定临时文件夹、处理警告以及将元文件转换为 PNG。让我们一步一步深入了解。
 
 ## 更新脏字段
 
@@ -36,7 +36,7 @@ public void loadEncryptedDocument() throws Exception {
 
 在这里，我们使用密码加载加密文档。`LoadOptions`构造函数接受文档密码，您还可以在保存文档时使用以下方法指定新密码`OdtSaveOptions`.
 
-## 将形状转换为 Office Math
+## 将形状转换为办公数学
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
@@ -206,7 +206,7 @@ public void loadChm() throws Exception {
 
 ### 如何指定用于文档加载的 MS Word 版本？
 
-使用`loadOptions.setMswVersion(MsWordVersion.WORD_2010)`指定用于加载文档的 MS Word 版本。
+使用`loadOptions.setMswVersion(MsWordVersion.WORD_2010)`指定用于文档加载的 MS Word 版本。
 
 ### 的目的是什么`setTempFolder` method in Load Options?
 

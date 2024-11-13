@@ -2,7 +2,7 @@
 title: 表格和格式
 linktitle: 表格和格式
 second_title: Aspose.Words Python 文档管理 API
-description: 深入了解 Aspose.Words 教程，了解 Python 和 .NET 应用程序中的表格和格式。学习如何创建、自定义和设计表格，以制作出具有视觉吸引力的文档。
+description: 深入了解 Aspose.Words 教程，了解如何在 Python 和 .NET 应用程序中设置表格和格式。学习如何创建、自定义和设计表格，以制作出具有视觉吸引力的文档。
 type: docs
 weight: 16
 url: /zh/python-net/tables-and-formatting/

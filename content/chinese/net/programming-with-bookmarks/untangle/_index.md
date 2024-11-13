@@ -32,8 +32,6 @@ using Aspose.Words.Tables;
 
 第一步是加载要处理的 Word 文档。此文档将包含您需要解开的书签。
 
-步骤 1 标题：加载文档
-
 ```csharp
 Document doc = new Document("path/to/your/document.docx");
 ```
@@ -43,8 +41,6 @@ Document doc = new Document("path/to/your/document.docx");
 ## 第 2 步：遍历书签
 
 接下来，我们需要遍历文档中的所有书签。这使我们能够访问每个书签及其属性。
-
-第 2 步标题：遍历书签
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -59,8 +55,6 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 对于每个书签，我们需要找到包含书签开始和结束的行。这对于确定书签是否跨越相邻行至关重要。
 
-步骤 3 标题：识别行
-
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
@@ -72,8 +66,6 @@ Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 
 在移动书签末端之前，我们需要确保书签的开始和结束位于相邻的行。此条件对于正确解开书签至关重要。
 
-步骤 4 标题：检查行相邻性
-
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
 {
@@ -83,11 +75,9 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 在这里，我们添加一个条件来检查是否找到了这两行以及它们是否相邻。`NextSibling`属性帮助我们验证相邻性。
 
-## 步骤 5：移动书签末尾
+## 步骤 5：移动书签结尾
 
 最后，如果条件满足，我们将书签结束节点移动到顶行最后一个单元格中最后一段的末尾。此步骤有效地解开了书签。
-
-步骤 5 标题：移动书签结尾
 
 ```csharp
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);

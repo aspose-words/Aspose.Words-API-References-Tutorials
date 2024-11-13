@@ -69,7 +69,7 @@ if (customDocumentProperties["Authorized"] != null) return;
 customDocumentProperties.Add("Authorized", true);
 ```
 
-此行添加一个名为“Authorized”的自定义属性，其值为`true`.简单又直接！
+此行添加一个名为“Authorized”的自定义属性，其值为`true`簡單又直接！
 
 ## 步骤 5：添加字符串属性
 
@@ -89,7 +89,7 @@ customDocumentProperties.Add("Authorized By", "John Smith");
 customDocumentProperties.Add("Authorized Date", DateTime.Today);
 ```
 
-此代码段添加了一个名为“授权日期”的属性，其值为当前日期。`DateTime.Today`属性自动获取今天的日期。
+此代码片段添加了一个名为“授权日期”的属性，其值为当前日期。`DateTime.Today`属性自动获取今天的日期。
 
 ## 步骤 7：添加修订号
 

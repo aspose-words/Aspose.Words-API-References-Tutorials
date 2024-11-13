@@ -50,18 +50,6 @@ Document doc = new Document("sample.docx");
 doc.save("output.pdf", SaveFormat.PDF);
 ```
 
-## 步骤 6：处理异常
-
-处理文档时，妥善处理异常至关重要。Aspose.Words for Java 提供异常处理机制，以确保您的应用程序顺利运行。
-
-```java
-try {
-    //在此执行文档转换
-} catch (Exception e) {
-    //处理异常
-}
-```
-
 ## 结论
 
 在本指南中，我们探讨了如何使用 Aspose.Words for Java 将文档转换为不同的格式。这个强大的 API 简化了文档转换过程，使 Java 开发人员可以使用它。现在，您可以轻松高效地在 Java 应用程序中转换文档。
@@ -82,7 +70,7 @@ Aspose.Words for Java 支持多种文档格式，包括 DOCX、PDF、HTML 等。
 
 ### 我可以将 Aspose.Words for Java 用于商业项目吗？
 
-是的，Aspose.Words for Java 既适用于个人项目，也适用于商业项目。您可以使用它来处理各种应用程序中的文档转换。
+是的，Aspose.Words for Java 适用于个人和商业项目。您可以使用它来处理各种应用程序中的文档转换。
 
 ### 我可以在哪里访问 Aspose.Words for Java 文档？
 

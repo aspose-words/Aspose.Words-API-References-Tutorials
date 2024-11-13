@@ -2,7 +2,7 @@
 title: 在 Aspose.Words for Java 中使用部分
 linktitle: 使用部分
 second_title: Aspose.Words Java 文档处理 API
-description: 探索 Aspose.Words for Java；关于使用部分的综合指南。使用代码示例添加、删除、附加、克隆部分。
+description: 探索 Aspose.Words for Java；有关使用部分的综合指南。使用代码示例添加、删除、附加、克隆部分。
 type: docs
 weight: 23
 url: /zh/java/using-document-elements/using-sections/

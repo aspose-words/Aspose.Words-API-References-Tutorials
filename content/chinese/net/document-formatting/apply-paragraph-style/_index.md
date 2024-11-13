@@ -2,7 +2,7 @@
 title: 在 Word 文档中应用段落样式
 linktitle: 在 Word 文档中应用段落样式
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中应用段落样式。按照我们的分步指南制作精美、专业的文档。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中应用段落样式。按照我们的分步指南，制作出精美、专业的文档。
 type: docs
 weight: 10
 url: /zh/net/document-formatting/apply-paragraph-style/
@@ -22,7 +22,7 @@ url: /zh/net/document-formatting/apply-paragraph-style/
 
 ## 导入命名空间
 
-在深入研究代码之前，让我们先导入必要的命名空间。这就像做饭前准备食材一样。
+在深入研究代码之前，让我们先导入必要的命名空间。这就像在做饭之前准备好食材一样。
 
 ```csharp
 using Aspose.Words;

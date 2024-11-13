@@ -13,7 +13,7 @@ url: /zh/net/join-and-append-documents/different-page-setup/
 
 ## 先决条件
 
-在我们开始之前，让我们确保您已拥有所需的一切：
+在我们开始之前，让我们确保您已准备好所需的一切：
 
 1.  Aspose.Words for .NET：确保您已安装 Aspose.Words for .NET。您可以[点击下载](https://releases.aspose.com/words/net/).
 2. .NET Framework：任何支持 Aspose.Words for .NET 的版本。
@@ -36,7 +36,7 @@ using Aspose.Words.Tables;
 
 ### 步骤 1.1：创建新项目
 
-启动 Visual Studio 并创建一个新的 C# 控制台应用程序。将其命名为一些有趣的名字，例如“DifferentPageSetupExample”。
+启动 Visual Studio 并创建一个新的 C# 控制台应用程序。将其命名为一些有趣的名称，例如“DifferentPageSetupExample”。
 
 ### 步骤1.2：添加Aspose.Words引用
 
@@ -69,7 +69,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-### 步骤 3.2：重新开始页码
+### 步骤 3.2：重新开始页码编号
 
 从源文档的开始处重新开始页码编号。
 

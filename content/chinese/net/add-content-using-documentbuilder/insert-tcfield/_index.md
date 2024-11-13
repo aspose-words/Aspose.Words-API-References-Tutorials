@@ -40,7 +40,7 @@ using Aspose.Words.Fields;
 Install-Package Aspose.Words
 ```
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 好的，让我们先创建一个新的 Word 文档。我们将使用`Document`和`DocumentBuilder`来自 Aspose.Words 的课程让事情顺利进行。
 
@@ -75,7 +75,7 @@ builder.InsertField("TC \"Entry Text\" \\f t");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-轰！您刚刚创建了一个带有 TC 字段的 Word 文档。这有多棒？
+轰！您刚刚创建了一个带有 TC 字段的 Word 文档。这有多棒啊？
 
 ## 结论
 

@@ -86,7 +86,7 @@ public class DocumentDecryptionExample {
 ## 常见问题解答
 
 ### 我如何更改加密算法？
-Aspose.Words for Java 使用默认加密算法。您无法直接通过 API 更改它。
+Aspose.Words for Java 使用默认加密算法。您无法通过 API 直接更改它。
 
 ### 如果我忘记了加密密码会发生什么？
 如果您忘记了加密密码，则无法恢复文档。请确保您记住密码或将其保存在安全的地方。

@@ -29,7 +29,7 @@ using Aspose.Words.Tables;
 using System;
 ```
 
-让我们将插入超链接的过程分解为多个步骤，以便于理解。
+让我们将插入超链接的过程分解为多个步骤，以便于遵循。
 
 ## 步骤 1：设置文档目录
 
@@ -41,9 +41,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 代替`"YOUR DOCUMENT DIRECTORY"`与您想要保存文档的实际路径。
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
-接下来我们创建一个新文档并初始化一个`DocumentBuilder`。 这`DocumentBuilder`该类提供将文本、图像、表格和其他内容插入文档的方法。
+接下来我们创建一个新文档并初始化一个`DocumentBuilder`。 这`DocumentBuilder`类提供将文本、图像、表格和其他内容插入文档的方法。
 
 ```csharp
 Document doc = new Document();
