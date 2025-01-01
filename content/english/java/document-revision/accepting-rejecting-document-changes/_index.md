@@ -44,10 +44,7 @@ Accepting changes is a critical step in finalizing a document. Aspose.Words for 
 
 ```java
 // Accept all revisions
-doc.acceptAllRevisions();
-
-// Accept a specific revision by index
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Rejecting Changes
@@ -56,10 +53,7 @@ In some cases, you may need to reject certain changes. Aspose.Words for Java pro
 
 ```java
 // Reject all revisions
-doc.rejectAllRevisions();
-
-// Reject a specific revision by index
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Saving the Document
