@@ -54,7 +54,7 @@ Sometimes, you may need to save each page of your document as an image. Aspose.W
 
 ```java
 // Java code to save a document as images
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Set the resolution (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

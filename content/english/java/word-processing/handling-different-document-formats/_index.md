@@ -37,13 +37,6 @@ One of the key strengths of Aspose.Words for Java is its ability to load various
 Document doc = new Document("sample.docx");
 ```
 
-### Loading a PDF Document
-
-```java
-// Load a PDF document
-Document doc = new Document("sample.pdf");
-```
-
 ## Modifying and Saving Documents
 
 Once you've loaded a document, you can perform a multitude of operations, from simple text replacement to complex formatting changes.
@@ -71,7 +64,7 @@ Aspose.Words for Java allows seamless conversion between different document form
 Document doc = new Document("sample.docx");
 
 // Save as PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Handling Images and Tables

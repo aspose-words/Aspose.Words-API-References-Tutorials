@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /java/word-processing/mastering-advanced-save-settings/
 ---
+
 Are you ready to take your document processing skills to the next level? In this comprehensive guide, we'll delve deep into mastering advanced save settings for documents using Aspose.Words for Java. Whether you're a seasoned developer or just getting started, we'll walk you through the intricacies of document manipulation with Aspose.Words for Java.
 
 ## Introduction
@@ -25,13 +26,13 @@ Learn how to specify the format and orientation of your documents. Whether it's 
 ```java
 // Set document format to DOCX
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
 // Set page orientation to Landscape
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## Controlling Page Margins
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 inch
 pageSetup.setRightMargin(72.0); // 1 inch
 pageSetup.setTopMargin(36.0); // 0.5 inch
 pageSetup.setBottomMargin(36.0); // 0.5 inch
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## Managing Headers and Footers
@@ -56,11 +57,11 @@ Headers and footers often contain critical information. Explore how to manage an
 ```java
 // Add a header to the first page
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## Embedding Fonts for Cross-Platform Viewing
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## Protecting Your Documents
@@ -85,7 +86,7 @@ Security matters, especially when dealing with sensitive documents. Learn how to
 // Protect the document with a password
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## Customizing Watermarks
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## Optimizing Document Size
@@ -111,7 +112,7 @@ Large document files can be unwieldy. Discover techniques to optimize document s
 // Optimize document size
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## Exporting to Different Formats
@@ -121,7 +122,7 @@ Sometimes, you need your document in various formats. Aspose.Words for Java make
 ```java
 // Export to PDF
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## Automating Document Generation
@@ -133,7 +134,7 @@ Automation is a game-changer for document generation. Learn how to automate the 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## Working with Document Metadata
@@ -143,9 +144,8 @@ Metadata contains valuable information about a document. We'll explore how to wo
 ```java
 // Access and modify document metadata
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## Handling Document Versions
@@ -153,14 +153,18 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 Document versioning is crucial in collaborative environments. Find out how to manage different versions of your documents effectively.
 
 ```java
-// Compare document versions
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
+
+// Comparing documents with revisions will throw an exception.
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
 ## Advanced Document Comparison
 
@@ -217,7 +221,7 @@ Aspose.Words for Java supports exporting documents to various formats, including
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Is Aspose.Words for Java suitable for batch document generation?
@@ -228,7 +232,7 @@ Yes, Aspose.Words for Java is well-suited for batch document generation, making 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### How can I compare two Word documents for differences?
