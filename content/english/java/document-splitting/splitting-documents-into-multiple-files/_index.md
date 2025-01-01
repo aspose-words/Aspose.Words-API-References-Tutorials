@@ -35,7 +35,7 @@ Next, you'll need to define the criteria for splitting the document. Common crit
 
 ```java
 // Split by page count
-Document[] splitDocuments = doc.splitIntoPages(5); // Split every 5 pages
+Document[] splitDocuments = doc.extractPages().
 ```
 
 ## Step 3: Save Split Documents
