@@ -182,25 +182,11 @@ In this example, we set the alignment of the paragraph to
 Creating lists with bullets or numbering is a common document formatting task. Aspose.Words for Java makes it straightforward. Here's how to create a bulleted list:
 
 ```java
-// Create a new document
-Document doc = new Document();
-
-// Create a list
-List list = new List(doc);
-
-// Add list items with bullets
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// Add the list to the document
-doc.getFirstSection().getBody().appendChild(list);
-
-// Save the document
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 In this code, we create a bulleted list with three items.
@@ -210,24 +196,21 @@ In this code, we create a bulleted list with three items.
 Hyperlinks are essential for adding interactivity to your documents. Aspose.Words for Java allows you to insert hyperlinks easily. Here's an example:
 
 ```java
-// Create a new document
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Create a paragraph
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// Create a hyperlink
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// Insert a hyperlink and emphasize it with custom formatting.
+// The hyperlink will be a clickable piece of text which will take us to the location specified in the URL.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", false);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// Add the paragraph to the document
-doc.getFirstSection().getBody().appendChild(para);
-
-// Save the document
-doc.save("HyperlinkDocument.docx");
+// Ctrl + left clicking the link in the text in Microsoft Word will take us to the URL via a new web browser window.
+doc.save("InsertHyperlink.docx");
 ```
 
 This code inserts a hyperlink to "https://www.example.com" with the text "Visit Example.com."
@@ -237,23 +220,7 @@ This code inserts a hyperlink to "https://www.example.com" with the text "Visit 
 Documents often require visual elements like images and shapes. Aspose.Words for Java enables you to insert images and shapes seamlessly. Here's how to add an image:
 
 ```java
-// Create a new document
-Document doc = new Document();
-
-// Create a paragraph
-Paragraph para = new Paragraph(doc);
-
-// Load an image from a file
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// Add the paragraph to the document
-doc.getFirstSection().getBody().appendChild(para);
-
-// Save the document
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 In this code, we load an image from a file and insert it into the document.
@@ -287,27 +254,20 @@ In this example, we set equal margins of 1 inch on all sides of the page.
 Headers and footers are essential for adding consistent information to each page of your document. Here's how to work with headers and footers:
 
 ```java
-// Create a new document
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Access the header and footer of the first section
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// Add content to the header
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// Add content to the footer
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// Add content to the document body
+// Add content to the document body.
 // ...
 
-// Save the document
+// Save the document.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ In this code, we add content to both the header and footer of the document.
 Tables are a powerful way to organize and present data in your documents. Aspose.Words for Java provides extensive support for working with tables. Here's an example of creating a table:
 
 ```java
-// Create a new document
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Create a table with 3 rows and 3 columns
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// Add content to the table cells
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-// Add the table to the document
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// Save the document
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// Changing the formatting will apply it to the current cell,
+// and any new cells that we create with the builder afterward.
+// This will not affect the cells that we have added previously.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// Increase row height to fit the vertical text.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 In this code, we create a simple table with three rows and three columns.
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // Save the document as a PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 This code snippet saves the document as a PDF file.
@@ -393,7 +372,7 @@ Yes, you can easily convert a document to PDF using Aspose.Words for Java. Here'
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### How do I format text as
