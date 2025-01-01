@@ -52,21 +52,12 @@ Here's a sample Java code snippet to set document permissions:
 // Load the document
 Document doc = new Document("sample.docx");
 
-// Define access control
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Apply document protection
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Save the document
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Frequently Asked Questions (FAQs)
+## FAQ's
 
-## How can I remove document protection?
+### How can I remove document protection?
 
 To remove document protection, simply open the protected document, and if it's password-protected, provide the correct password. Then, use Aspose.Words for Java to remove protection as follows:
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Can I set permissions for specific users?
+### Can I set permissions for specific users?
 
 Yes, Aspose.Words for Java allows you to set permissions for specific users or groups. You can define who can access and edit the document.
 
-## Is it possible to encrypt a document with multiple passwords?
+### Is it possible to encrypt a document with multiple passwords?
 
 No, Aspose.Words for Java supports single-password encryption. You can set a password to protect the document.
 
-## How can I check the permissions of a document?
+### How can I check the permissions of a document?
 
 You can use Aspose.Words for Java to check the permissions of a document by examining its protection settings and access control options.
 
-## Can I automate document permission management?
+### Can I automate document permission management?
 
 Absolutely! You can integrate Aspose.Words for Java into your applications to automate document permission management, making it a seamless part of your document workflow.
 
-## What if I forget the document password?
+### What if I forget the document password?
 
 If you forget the document password, there is no way to recover it. Make sure to keep a record of your passwords in a secure place.
 
