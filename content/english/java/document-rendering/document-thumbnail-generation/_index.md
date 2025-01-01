@@ -40,7 +40,7 @@ Now, let's dive into the process of generating thumbnails from the loaded docume
 ```java
 // Java code to generate a document thumbnail
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
