@@ -71,7 +71,7 @@ Once the document is loaded, the next step is to set up the options for saving t
 `ImageSaveOptions` is a class that allows you to specify how the document should be saved as an image.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 Explanation:

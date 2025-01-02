@@ -56,7 +56,7 @@ Next, convert the loaded Word document to PDF:
 
 ```java
 // Save the document as PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Step 4: Converting to Other Formats
@@ -67,21 +67,21 @@ Besides PDF, Aspose.Words for Java allows you to convert documents to various ot
 
 ```java
 // Save the document as RTF
-doc.save("output.rtf", SaveFormat.RTF);
+doc.save("output.rtf");
 ```
 
 ### Converting to HTML
 
 ```java
 // Save the document as HTML
-doc.save("output.html", SaveFormat.HTML);
+doc.save("output.html");
 ```
 
 ### Converting to EPUB
 
 ```java
 // Save the document as EPUB
-doc.save("output.epub", SaveFormat.EPUB);
+doc.save("output.epub");
 ```
 
 ## Tips for Effective Document Converting

@@ -47,7 +47,7 @@ Now, it's time to convert the loaded document to the chosen output format. Aspos
 
 ```java
 // Convert the document to PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Conclusion
