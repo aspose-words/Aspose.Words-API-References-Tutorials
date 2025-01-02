@@ -35,7 +35,7 @@ Next, you'll need to configure the PCL save options. These options specify the f
 ```java
 PclSaveOptions saveOptions = new PclSaveOptions();
 {
-	saveOptions.setSaveFormat(SaveFormat.PCL);
+	saveOptions.setSaveFormat();
 	saveOptions.setRasterizeTransformedElements(false);
 }
 ```
@@ -56,7 +56,7 @@ Replace `"YourPCLDocument.pcl"` with the desired name for your PCL file.
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
 PclSaveOptions saveOptions = new PclSaveOptions();
 {
-	saveOptions.setSaveFormat(SaveFormat.PCL); saveOptions.setRasterizeTransformedElements(false);
+	saveOptions.setSaveFormat(); saveOptions.setRasterizeTransformedElements(false);
 }
 doc.save("Your Directory Path" + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
