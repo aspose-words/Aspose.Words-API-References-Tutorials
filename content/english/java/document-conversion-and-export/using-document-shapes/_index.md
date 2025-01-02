@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);
