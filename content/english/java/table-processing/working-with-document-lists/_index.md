@@ -38,23 +38,11 @@ Here's a sample code snippet to get you started:
 // Import required packages
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Initialize a new Document
-        Document doc = new Document();
-
-        // Create a list
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Add list items
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Save the document
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Modifying a Document List
@@ -69,21 +57,18 @@ Once you have created a document list, you may need to modify it by adding, remo
 Here's a code snippet for modifying a document list:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Load an existing document
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Access the list
-        List list = doc.getLists().get(0);
-
-        // Add a new item
-        list.getListItems().add("New Item");
-
-        // Save the modified document
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Check if the paragraph is part of a list.
+    if (paragraph.isListItem()) {
+        // Update the last list paragraph.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Extracting Information from a Document List
@@ -97,23 +82,21 @@ In some cases, you may need to extract information from a document list, such as
 Here's a code snippet for extracting information from a document list:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Load the document
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Access the list
-        List list = doc.getLists().get(0);
-
-        // Iterate through list items and print them
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Frequently Asked Questions (FAQs)
+## Conclusion
+
+In this comprehensive guide, we've explored the world of working with document lists using Aspose.Words for Java. You've learned how to create, modify, and extract information from document lists, all with the power and flexibility of Aspose.Words for Java. Start implementing these techniques in your Java projects today and streamline your document automation tasks.
+
+
+## FAQ's
 
 ### How do I add bullet points to a document list?
 To add bullet points to a document list, use the appropriate ListTemplate when creating the list. For example, use `ListTemplate.BULLET_DEFAULT` instead of `ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ To convert a document list to PDF, simply load the document using Aspose.Words f
 
 ### Does Aspose.Words for Java support working with tables in documents?
 Yes, Aspose.Words for Java provides extensive support for working with tables, allowing you to create, modify, and extract tabular data effortlessly.
-
-## Conclusion
-
-In this comprehensive guide, we've explored the world of working with document lists using Aspose.Words for Java. You've learned how to create, modify, and extract information from document lists, all with the power and flexibility of Aspose.Words for Java. Start implementing these techniques in your Java projects today and streamline your document automation tasks.
