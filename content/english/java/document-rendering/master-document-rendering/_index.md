@@ -101,8 +101,6 @@ pageSetup.setOrientation(Orientation.LANDSCAPE);
 // Add headers and footers
 pageSetup.setHeaderDistance(20);
 pageSetup.setFooterDistance(10);
-pageSetup.setHeaderFooter(HeaderFooterType.HEADER_PRIMARY, new Paragraph(doc, "Header Text"));
-pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "Footer Text"));
 ```
 
 ### Headers and Footers
@@ -110,17 +108,17 @@ pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "F
 Headers and footers provide consistent information across document pages. You can add different content to primary, first-page, and even odd/even headers and footers.
 
 ```java
-// Adding content to primary header
-HeaderFooter primaryHeader = pageSetup.getHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
-Paragraph headerPara = new Paragraph(doc, "This is the header text.");
-primaryHeader.appendChild(headerPara);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Adding content to primary footer
-HeaderFooter primaryFooter = pageSetup.getHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-Paragraph footerPara = new Paragraph(doc, "Page number: ");
-FieldPage fieldPage = new FieldPage();
-footerPara.appendChild(fieldPage);
-primaryFooter.appendChild(footerPara);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
+
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
+
+doc.save("HeaderFooterDocument.docx");
 ```
 
 ## Rendering Documents
@@ -133,13 +131,13 @@ To render a document, you need to use the Document class's save method and speci
 
 ```java
 // Render to PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 
 // Render to XPS
-doc.save("output.xps", SaveFormat.XPS);
+doc.save("output.xps");
 
 // Render to images
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setResolution(300);
 doc.save("output.png", saveOptions);
 ```
@@ -161,7 +159,7 @@ When rendering documents to image formats, you can control the image quality to 
 
 ```java
 // Set image options
-ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageOptions = new ImageSaveOptions();
 imageOptions.setResolution(300);
 imageOptions.setPrettyFormat(true);
 doc.save("output.png", imageOptions);
@@ -179,7 +177,7 @@ You can render specific pages of a document, allowing you to display specific se
 // Render specific page range
 int startPage = 3;
 int endPage = 5;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(startPage, endPage));
 doc.save("output.png", saveOptions);
 ```
@@ -191,7 +189,7 @@ If you want to render only specific parts of a document, such as paragraphs or s
 ```java
 // Render specific paragraphs
 int[] paragraphIndices = {0, 2, 4};
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(paragraphIndices));
 doc.save("output.png", saveOptions);
 ```
@@ -203,7 +201,7 @@ For more granular control, you can render individual document elements like tabl
 ```java
 // Render specific table
 int tableIndex = 1;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(tableIndex));
 doc.save("output.png", saveOptions);
 ```

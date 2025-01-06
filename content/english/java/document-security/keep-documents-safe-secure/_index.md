@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Now that we have our document loaded, let's proceed to apply encryption to it. Aspose.Words for Java provides a straightforward way to set document encryption:
 
 ```java
-// Set a password to open the document
-doc.getWriteProtection().setPassword("yourPassword");
-
-// Set encryption algorithm (optional)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// Save the encrypted document
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. Protecting Specific Document Elements
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 Sometimes, you may only want to protect specific parts of your document, such as headers, footers, or certain paragraphs. Aspose.Words allows you to achieve this level of granularity in document protection:
 
 ```java
-// Protect a specific section (Read-only protection)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// Protect a specific paragraph (Allow only form fields to be edited)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// Save the protected document
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+// Editable ranges allow us to leave parts of protected documents open for editing.
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. Applying Digital Signatures
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 Adding digital signatures to your document can ensure its authenticity and integrity. Here's how you can apply a digital signature using Aspose.Words for Java:
 
 ```java
-// Load the certificate file
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// Sign the document with the certificate
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// Create a comment, date, and decryption password which will be applied with our new digital signature.
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// Save the signed document
-doc.save("path/to/signed/document.docx");
+// Set a local system filename for the unsigned input document, and an output filename for its new digitally signed copy.
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. Watermarking Your Documents
@@ -150,26 +156,8 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. Redacting Sensitive Information
 
-When sharing documents, you might want to permanently remove sensitive information to ensure it doesn't fall into the wrong hands. Aspose.Words for Java allows you to redact sensitive content:
-
-```java
-// Search for and redact sensitive information
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// Apply redactions
-doc.redact(options);
-
-// Save the redacted document
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. Converting Secure Documents to Other Formats
+## 10. Converting Secure Documents to Other Formats
 
 Aspose.Words for Java also enables you to convert your secured documents to various formats, such as PDF or HTML:
 
@@ -178,42 +166,29 @@ Aspose.Words for Java also enables you to convert your secured documents to vari
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // Convert to PDF
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // Convert to HTML
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. Best Practices for Document Security
-
-To ensure robust document security, follow these best practices:
-
-- Regularly update your security measures to stay ahead of potential threats.
-- Use strong passwords and encryption algorithms.
-- Limit access to sensitive documents on a need-to-know basis.
-- Train employees to recognize and respond to security risks.
-
-## 13. Testing Document Security
-
-After applying security measures, thoroughly test your documents to ensure that they remain secure under various scenarios. Attempt to bypass security controls to identify potential vulnerabilities.
-
-## 14. Conclusion
+## Conclusion
 
 In this step-by-step guide, we explored the importance of document security and how Aspose.Words for Java can help protect your documents from unauthorized access. By leveraging the library's features, such as password protection, encryption, digital signatures, watermarking, and redaction, you can ensure that your documents remain safe and secure.
 
-## FAQs
+## FAQ's
 
 ### Can I use Aspose.Words for Java in commercial projects?
-   Yes, Aspose.Words for Java can be used in commercial projects under the per-developer licensing model.
+Yes, Aspose.Words for Java can be used in commercial projects under the per-developer licensing model.
 
 ### Does Aspose.Words support other document formats besides Word?
-   Yes, Aspose.Words supports a wide range of formats, including PDF, HTML, EPUB, and more.
+Yes, Aspose.Words supports a wide range of formats, including PDF, HTML, EPUB, and more.
 
 ### Is it possible to add multiple digital signatures to a document?
-   Yes, Aspose.Words allows you to add multiple digital signatures to a document.
+Yes, Aspose.Words allows you to add multiple digital signatures to a document.
 
 ### Does Aspose.Words support document password recovery?
-   No, Aspose.Words does not provide password recovery features. Make sure to keep your passwords secure.
+No, Aspose.Words does not provide password recovery features. Make sure to keep your passwords secure.
 
 ### Can I customize the appearance of watermarks?
-   Yes, you can fully customize the appearance of watermarks, including text, font, color, size, and rotation.
+Yes, you can fully customize the appearance of watermarks, including text, font, color, size, and rotation.

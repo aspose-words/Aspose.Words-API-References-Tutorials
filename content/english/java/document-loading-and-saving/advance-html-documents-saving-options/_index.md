@@ -29,7 +29,7 @@ public void exportRoundtripInformation() throws Exception {
 With the `exportFontsAsBase64` method, you can export fonts used in the document as Base64-encoded data in the HTML. This ensures that the HTML representation retains the same font styles as the original Word document.
 
 ```java
-@Test
+
 public void exportFontsAsBase64() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -42,7 +42,7 @@ public void exportFontsAsBase64() throws Exception {
 The `exportResources` method allows you to specify the type of CSS stylesheet and export font resources. You can also set a resource folder and an alias for resources in the HTML.
 
 ```java
-@Test
+
 public void exportResources() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -58,9 +58,20 @@ public void exportResources() throws Exception {
 The `convertMetafilesToEmfOrWmf` method allows you to convert metafiles in the document to either EMF or WMF format, ensuring compatibility and smooth rendering in HTML.
 
 ```java
-@Test
+
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    // Code snippet not shown for brevity.
+
+	string dataDir = "Your Document Directory";
+    Document doc = new Document();
+	DocumentBuilder builder = new DocumentBuilder(doc);
+
+	builder.write("Here is an image as is: ");
+	builder.insertHtml(
+		"<img src=\"data:image/png;base64,\r\n                    iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP\r\n                    C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA\r\n                    AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J\r\n                    REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq\r\n                    ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0\r\n                    vr4MkhoXe0rZigAAAABJRU5ErkJggg==\" alt=\"Red dot\" />");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(); { saveOptions.setMetafileFormat(HtmlMetafileFormat.EMF_OR_WMF); }
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
 }
 ```
 
@@ -68,9 +79,19 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 Use the `convertMetafilesToSvg` method to convert metafiles to SVG format. This format is ideal for displaying vector graphics in HTML documents.
 
 ```java
-@Test
+
 public void convertMetafilesToSvg() throws Exception {
-    // Code snippet not shown for brevity.
+	string dataDir = "Your Document Directory";
+    Document doc = new Document();
+	DocumentBuilder builder = new DocumentBuilder(doc);
+	
+	builder.write("Here is an SVG image: ");
+	builder.insertHtml(
+		"<svg height='210' width='500'>\r\n                <polygon points='100,10 40,198 190,78 10,78 160,198' \r\n                    style='fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;' />\r\n            </svg> ");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(); { saveOptions.setMetafileFormat(HtmlMetafileFormat.SVG); }
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 }
 ```
 
@@ -78,7 +99,7 @@ public void convertMetafilesToSvg() throws Exception {
 With the `addCssClassNamePrefix` method, you can add a prefix to CSS class names in the exported HTML. This helps prevent conflicts with existing styles.
 
 ```java
-@Test
+
 public void addCssClassNamePrefix() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -92,9 +113,17 @@ public void addCssClassNamePrefix() throws Exception {
 The `exportCidUrlsForMhtmlResources` method is used when saving documents in MHTML format. It allows exporting Content-ID URLs for resources.
 
 ```java
-@Test
+
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    // Code snippet not shown for brevity.
+	string dataDir = "Your Document Directory";
+    Document doc = new Document(dataDir + "Content-ID.docx");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.MHTML);
+	{
+		saveOptions.setPrettyFormat(true); saveOptions.setExportCidUrlsForMhtmlResources(true);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
 }
 ```
 
@@ -102,9 +131,18 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 The `resolveFontNames` method helps resolve font names when saving documents in HTML format, ensuring consistent rendering across different platforms.
 
 ```java
-@Test
+
 public void resolveFontNames() throws Exception {
-    // Code snippet not shown for brevity.
+    
+	string dataDir = "Your Document Directory";
+	Document doc = new Document(dataDir + "Missing font.docx");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.HTML);
+	{
+		saveOptions.setPrettyFormat(true); saveOptions.setResolveFontNames(true);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 }
 ```
 
@@ -112,16 +150,34 @@ public void resolveFontNames() throws Exception {
 The `exportTextInputFormFieldAsText` method exports form fields as plain text in the HTML, making them easily readable and editable.
 
 ```java
-@Test
+
 public void exportTextInputFormFieldAsText() throws Exception {
-    // Code snippet not shown for brevity.
+    
+	string dataDir = "Your Document Directory";
+	Document doc = new Document(dataDir + "Rendering.docx");
+
+	String imagesDir = Path.combine(dataDir, "Images");
+
+	// The folder specified needs to exist and should be empty.
+	if (Directory.exists(imagesDir))
+		Directory.delete(imagesDir, true);
+
+	Directory.createDirectory(imagesDir);
+
+	// Set an option to export form fields as plain text, not as HTML input elements.
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.HTML);
+	{
+		saveOptions.setExportTextInputFormFieldAsText(true); saveOptions.setImagesFolder(imagesDir);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
 }
 ```
 
-## 11. Conclusion
+## Conclusion
 In this tutorial, we explored the advanced HTML document saving options provided by Aspose.Words for Java. These options give you fine-grained control over the conversion process, allowing you to create HTML documents that closely resemble the original Word documents.
 
-## 12. FAQs
+## FAQ's
 Here are some frequently asked questions about working with Aspose.Words for Java and HTML document saving options:
 
 ### Q1: How can I convert HTML back to Word format using Aspose.Words for Java?

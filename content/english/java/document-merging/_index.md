@@ -34,5 +34,3 @@ Learn how to join and append documents using Aspose.Words for Java. Step-by-step
 Learn how to compare documents for differences using Aspose.Words in Java. Our step-by-step guide ensures accurate document management.
 ### [Merging Documents with DocumentBuilder](./merging-documents-documentbuilder/)
 Learn how to manipulate Word documents with Aspose.Words for Java. Create, edit, merge, and convert documents programmatically in Java.
-### [Document Splitting and Extraction](./document-splitting-extraction/)
-Learn how to split and extract documents effortlessly using Aspose.Words for Java. Simplify your document processing tasks with step-by-step guidance.

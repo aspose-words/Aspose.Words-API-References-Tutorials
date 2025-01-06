@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -73,44 +76,7 @@ doc.getFirstSection().getBody().appendChild(table);
 Save the Word document to a desired location using the `save()` method.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Step 9: Complete the Code
-
-Here's the complete code for adding a table in Word using Aspose.Words for Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Step 5: Create a new Word document
-        Document doc = new Document();
-
-        // Step 6: Create a Table and Add Rows
-        Table table = new Table(doc);
-        int rowCount = 5; // Number of rows in the table
-        int columnCount = 3; // Number of columns in the table
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Step 7: Add the Table to the Document
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Step 8: Save the Document
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Conclusion

@@ -49,7 +49,7 @@ Rendering documents is essential when you need to convert them to different form
 
 ```java
 // Render the document to PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 You can replace `SaveFormat.PDF` with the desired format for rendering.

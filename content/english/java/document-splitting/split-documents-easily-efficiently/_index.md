@@ -35,15 +35,12 @@ One of the simplest ways to split a document is by individual pages. Each page i
 To split a document by page using Aspose.Words for Java, follow these steps:
 
 ```java
-// Java code to split a document by pages using Aspose.Words for Java
-Document doc = new Document("input.docx");
+Document doc = new Document("Your Directory Path" + "Big document.docx");
 int pageCount = doc.getPageCount();
-
-for (int i = 0; i < pageCount; i++) {
-    Document pageDoc = new Document();
-    pageDoc.getFirstSection().getBody().appendChild(
-            doc.getLastSection().getBody().getChildNodes().get(i).clone(true));
-    pageDoc.save("output_page_" + (i + 1) + ".docx");
+for (int page = 0; page < pageCount; page++)
+{
+    Document extractedPage = doc.extractPages(page, 1);
+    extractedPage.save("Your Directory Path" + "SplitDocument.PageByPage_" + (page + 1) + ".docx");
 }
 ```
 
@@ -110,49 +107,29 @@ for (int i = 0; i < doc.getSections().getCount(); i++) {
 }
 ```
 
-## 8. Advanced Document Splitting Techniques
-
-### 8.1 Splitting Specific Sections into Separate Documents
-
-In some cases, you may want to split only specific sections into separate documents. Aspose.Words for Java allows you to define custom criteria to determine which sections to split.
-
-## 8.2 Splitting Documents based on Custom Criteria
-
-You can implement your custom logic to split documents based on specific criteria, such as content, keywords, or metadata. This flexibility ensures that you can tailor the document splitting process to your unique requirements.
-
-## 9. Combining Split Documents
-
-Aspose.Words for Java also provides functionality to combine the split documents back into a single document. This feature is useful when you need to merge individual sections into a unified document.
-
-## 10. Performance Considerations
-
-When dealing with large documents, it's essential to consider performance optimizations. Aspose.Words
-
- for Java is designed to handle large files efficiently, but developers can further improve performance by following best practices.
-
-## 11. Conclusion
+## Conclusion
 
 In this guide, we have explored how to split documents easily and efficiently using Aspose.Words for Java. By dividing large documents into smaller, more manageable parts, developers can work with specific sections and simplify document processing tasks. Aspose.Words for Java offers various methods to split documents based on pages, paragraphs, headings, and sections, providing developers with the flexibility to tailor the splitting process to their specific needs.
 
-## 12. FAQs
+## FAQ's
 
-### Q1. Can Aspose.Words for Java split documents of different formats like DOC and DOCX?
+### Can Aspose.Words for Java split documents of different formats like DOC and DOCX?
 
 Yes, Aspose.Words for Java can split documents of various formats, including DOC and DOCX, among others.
 
-### Q2. Is Aspose.Words for Java compatible with different Java versions?
+### Is Aspose.Words for Java compatible with different Java versions?
 
 Yes, Aspose.Words for Java is compatible with multiple Java versions, ensuring seamless integration with your projects.
 
-### Q3. Can I use Aspose.Words for Java to split password-protected documents?
+### Can I use Aspose.Words for Java to split password-protected documents?
 
 Yes, Aspose.Words for Java supports splitting password-protected documents as long as you provide the correct password.
 
-### Q4. How can I get started with Aspose.Words for Java if I am new to the library?
+### How can I get started with Aspose.Words for Java if I am new to the library?
 
 You can start by exploring the [Aspose.Words for Java API Reference](https://reference.aspose.com/words/java/) and code examples provided by Aspose.Words for Java. The documentation contains detailed information about the library's features and how to use them effectively.
 
-### Q5. Is Aspose.Words for Java suitable for enterprise-level document processing?
+### Is Aspose.Words for Java suitable for enterprise-level document processing?
 
 Absolutely! Aspose.Words for Java is widely used in enterprise-level applications for various document processing tasks due to its robustness and extensive feature set.
 

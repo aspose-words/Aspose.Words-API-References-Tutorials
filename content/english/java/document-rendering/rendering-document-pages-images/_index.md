@@ -48,7 +48,7 @@ Aspose.Words provides various image save options to control the output format an
 
 ```java
 // Initialize image save options
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Step 4: Render Document Pages as Images

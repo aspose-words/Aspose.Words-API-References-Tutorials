@@ -43,7 +43,7 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.setConvertShapeToOfficeMath(true);
 
 Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 ```
 
 This code demonstrates how to convert shapes to Office Math objects during document loading. The `setConvertShapeToOfficeMath(true)` method enables this conversion.
@@ -136,7 +136,7 @@ public void convertShapeToOfficeMath() throws Exception {
 		loadOptions.setConvertShapeToOfficeMath(true);
 	}
 	Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 }
 @Test
 public void setMsWordVersion() throws Exception {

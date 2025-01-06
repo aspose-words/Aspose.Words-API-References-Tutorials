@@ -48,7 +48,7 @@ In this code, we create an HTML string and use `HtmlLoadOptions` to specify that
 Now that we have loaded the HTML into a `Document`, we can save it as a Word document. Let's save it in DOCX format:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 This code saves the `Document` as a DOCX file, which is a common format for Word documents.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Conclusion

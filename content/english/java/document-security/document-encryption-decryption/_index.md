@@ -45,7 +45,7 @@ public class DocumentEncryptionExample {
         doc.protect(ProtectionType.READ_ONLY, password);
         
         // Save the encrypted document
-        doc.save("encrypted_document.docx", SaveFormat.DOCX);
+        doc.save("encrypted_document.docx");
         
         System.out.println("Document encrypted successfully!");
     }
@@ -74,7 +74,7 @@ public class DocumentDecryptionExample {
         doc.unprotect(password);
         
         // Save the decrypted document
-        doc.save("decrypted_document.docx", SaveFormat.DOCX);
+        doc.save("decrypted_document.docx");
         
         System.out.println("Document decrypted successfully!");
     }
