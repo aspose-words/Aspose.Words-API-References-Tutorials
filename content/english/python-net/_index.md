@@ -28,8 +28,6 @@ Master document creation with Aspose.Words for Python. Create dynamic documents,
 Automate word processing tasks with Aspose.Words for Python. Streamline document management and boost efficiency in word automation.
 ### [Document Conversion](./document-conversion/)
 Efficiently convert documents between formats with Aspose.Words for Python. Streamline word document processing and simplify your document management tasks. 
-### [Document Protection](./document-protection/)
-Secure your documents with Aspose.Words for Python! Implement password encryption, user permissions, and digital signatures for robust document protection.
 ### [Document Structure and Content Manipulation](./document-structure-and-content-manipulation/)
 Explore Aspose.Words tutorials for Python and .NET, focusing on document structure and content manipulation. Learn how to navigate, extract, and modify document elements efficiently. Source code examples provided.
 ### [Content Extraction and Manipulation](./content-extraction-and-manipulation/)
