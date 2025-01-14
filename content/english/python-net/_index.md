@@ -38,7 +38,5 @@ Discover comprehensive tutorials on document combining and comparison using Aspo
 Explore the Aspose.Words tutorials on document splitting and formatting in Python and .NET. Learn to split and format documents efficiently, enhancing your document processing tasks. 
 ### [Document Options and Settings](./document-options-and-settings/)
 Explore Aspose.Words tutorials on document options and settings in Python and .NET. Learn to optimize document creation and formatting using step-by-step guidance and source code examples.
-### [Data Visualization and Formatting](./data-visualization-and-formatting/)
-Discover Aspose.Words tutorials on data visualization and formatting in Python and .NET. Learn to present data effectively, create stunning reports, and format documents programmatically.
 ### [Tables and Formatting](./tables-and-formatting/)
 Dive into Aspose.Words tutorials on tables and formatting in Python and .NET applications. Learn to create, customize, and style tables for visually compelling documents. 
