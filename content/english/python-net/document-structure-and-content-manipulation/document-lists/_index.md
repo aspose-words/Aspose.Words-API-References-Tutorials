@@ -69,11 +69,6 @@ doc.list_templates.add(list_template)
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
 
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
-
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]
 for text in list_item_texts:

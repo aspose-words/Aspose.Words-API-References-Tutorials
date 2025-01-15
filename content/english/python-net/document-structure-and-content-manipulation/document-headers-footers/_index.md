@@ -23,7 +23,7 @@ pip install aspose-words
 2. Importing the Module: Import the required module in your Python script.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Adding a Simple Header and Footer
@@ -33,30 +33,18 @@ To add a basic header and footer to your Word document, follow these steps:
 1. Creating a Document: Create a new Word document using Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2. Adding Header and Footer: Use the `sections` property of the document to access sections. Then, utilize the `headers_footers` property to add headers and footers.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Adding Content: Add content to the header and footer.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Saving the Document: Save the document with the header and footer.
+3. Saving the Document: Save the document with the header and footer.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Adding Tables: Incorporate tables for tabular information.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Dynamic Fields: Use dynamic fields for automatic data insertion.
+2. Dynamic Fields: Use dynamic fields for automatic data insertion.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -110,8 +90,6 @@ header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
 
-3. Customize as Needed: Customize each header and footer according to your requirements.
-
 ## Removing Headers and Footers
 
 To remove headers and footers from a Word document:
@@ -130,7 +108,7 @@ section.page_setup.different_first_page_header_footer = False
 section.page_setup.odd_and_even_pages_header_footer = False
 ```
 
-## FAQs
+## FAQ's
 
 ### How do I access header and footer content?
 

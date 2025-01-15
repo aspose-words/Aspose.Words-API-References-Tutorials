@@ -19,7 +19,7 @@ Document revisions involve tracking changes made to a document over time. This i
 Before we begin, make sure you have Aspose.Words for Python installed. You can download it from [here](https://releases.aspose.com/words/python/). Once installed, you can import the necessary modules in your Python script to get started.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Loading and Displaying a Document
@@ -27,7 +27,7 @@ import asposewords
 To work with a document, you first need to load it into your Python application. Use the following code snippet to load a document and display its content:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 When any changes are made to the document, Aspose.Words can automatically track them as revisions. For instance, if we want to replace a specific word, we can do so while keeping track of the change:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words allows you to compare two documents to visualize the differences between them:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 Collaborators can add comments and annotations to a document. You can programmatically manage these elements:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 You can customize how revisions appear in the document, such as changing the color of inserted and deleted text:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Saving and Sharing Documents
@@ -98,18 +98,11 @@ doc.save("final_document.docx")
 
 Share the final document with collaborators for further feedback.
 
-## Tips for Effective Collaboration
-
-1. Clearly label revisions with meaningful comments.
-2. Communicate revision guidelines to all collaborators.
-3. Regularly review and accept/reject revisions.
-4. Use Aspose.Words' comparison feature for comprehensive document analysis.
-
 ## Conclusion
 
 Aspose.Words for Python simplifies document revision and tracking, enhancing collaboration and ensuring document integrity. With its powerful features, you can streamline the process of reviewing, accepting, and managing changes in your documents.
 
-## FAQs
+## FAQ's
 
 ### How do I install Aspose.Words for Python?
 
