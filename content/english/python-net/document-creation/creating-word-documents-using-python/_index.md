@@ -28,10 +28,10 @@ To get started, you'll need to download and install the Aspose.Words for Python 
 With the library successfully installed, the next step is to initialize the Aspose.Words environment in your Python project. This initialization is crucial for effectively utilizing the library's functionality. The following code snippet demonstrates how to perform this initialization:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Initialize Aspose.Words environment
-asposewords.License().set_license('Aspose.Words.lic')
+aw.License().set_license('Aspose.Words.lic')
 
 # Rest of the code for document generation
 # ...
@@ -42,11 +42,11 @@ asposewords.License().set_license('Aspose.Words.lic')
 With the Aspose.Words environment set up, we can now proceed to create a blank Word document as our starting point. This document will serve as the foundation upon which we'll add content programmatically. The following code illustrates how to create a new blank document:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 def create_blank_document():
     # Create a new blank document
-    doc = asposewords.Document()
+    doc = aw.Document()
 
     # Save the document
     doc.save("output.docx")
@@ -57,7 +57,7 @@ def create_blank_document():
 The true power of Aspose.Words for Python lies in its ability to add rich content to the Word document. You can dynamically insert text, tables, images, and more. Below is an example of adding content to the previously created blank document:
 
 ```python
-import asposewords as aw
+import aspose.words as aw
 
 def test_create_and_add_paragraph_node(self):
 	doc = aw.Document()
@@ -71,17 +71,17 @@ def test_create_and_add_paragraph_node(self):
 To create professional-looking documents, you'll likely want to apply formatting and styling to the content you add. Aspose.Words for Python offers a wide range of formatting options, including font styles, colors, alignment, indentation, and more. Let's look at an example of applying formatting to a paragraph:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 def format_paragraph():
     # Load the document
-    doc = asposewords.Document("output.docx")
+    doc = aw.Document("output.docx")
 
     # Access the first paragraph of the document
     paragraph = doc.first_section.body.first_paragraph
 
     # Apply formatting to the paragraph
-    paragraph.alignment = asposewords.ParagraphAlignment.CENTER
+    paragraph.alignment = aw.ParagraphAlignment.CENTER
 
     # Save the updated document
     doc.save("output.docx")
@@ -92,7 +92,7 @@ def format_paragraph():
 Tables are commonly used in Word documents to organize data. With Aspose.Words for Python, you can easily create tables and populate them with content. Below is an example of adding a simple table to the document:
 
 ```python
-import asposewords as aw
+import aspose.words as aw
 
 def add_table_to_document():
     # Load the document
