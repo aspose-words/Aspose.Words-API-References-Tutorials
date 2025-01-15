@@ -50,8 +50,6 @@ Learn how to manage hyphenation and text flow in Word documents using Aspose.Wor
 Learn how to create and manage lists in Word documents using Aspose.Words Python API. Step-by-step guide with source code for list formatting, customization, nesting, and more. 
 ### [Utilizing Markdown Formatting in Word Documents](./document-markdown/)
 Learn how to integrate Markdown formatting into Word documents using Aspose.Words for Python. Step-by-step guide with code examples for dynamic and visually appealing content creation. 
-### [Understanding and Navigating Document Nodes](./document-nodes/)
-Learn to manipulate Word documents using Aspose.Words for Python. This step-by-step guide covers loading, formatting, tables, images, and more. Boost your document processing skills today!
 ### [Embedding OLE Objects and ActiveX Controls in Word Documents](./document-ole-objects-active-x/)
  Learn how to embed OLE objects and ActiveX controls in Word documents using Aspose.Words for Python. Create interactive and dynamic documents seamlessly.
 ### [Formatting Paragraphs and Text in Word Documents](./document-paragraphs/)
