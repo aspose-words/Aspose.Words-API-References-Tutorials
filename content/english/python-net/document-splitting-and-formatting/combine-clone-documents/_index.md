@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## Advanced Techniques
-
-### Replacing Text
-
-Aspose.Words allows you to find and replace text in documents easily:
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### Modifying Formatting
+## Modifying Formatting
 
 You can also modify formatting using Aspose.Words:
 

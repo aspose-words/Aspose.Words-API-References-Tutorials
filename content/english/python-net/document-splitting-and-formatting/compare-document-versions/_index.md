@@ -47,16 +47,6 @@ Compare the two loaded documents using the `Compare` method:
 comparison = doc1.compare(doc2, "Author Name", datetime.now())
 ```
 
-## Highlighting Changes
-
-To make the changes more visible, you can highlight them:
-
-```python
-highlighter = aw.markup.HighlightColor.GRAY
-for change in comparison.changes:
-    change.format_revision(highlighter)
-```
-
 ## Accepting or Rejecting Changes
 
 You can choose to accept or reject individual changes:
