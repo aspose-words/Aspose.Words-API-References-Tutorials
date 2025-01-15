@@ -34,7 +34,7 @@ pip install aspose-words
 3. Import the library in your Python script.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Creating a New Document
@@ -42,7 +42,7 @@ import aspose.words
 Let's start by creating a new document using Aspose.Words:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Adding Content to the Document
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 You can easily add content to the document using Aspose.Words:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ Styling and formatting play a crucial role in document presentation. Aspose.Word
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Inserting Web Extensions
-
-To insert a web extension into the document, follow these steps:
-
-1. Create the web extension using HTML, CSS, and JavaScript.
-2. Convert the web extension into a base64-encoded string.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Insert the web extension into the document:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Interacting with Web Extensions
@@ -98,7 +78,7 @@ Web extensions can dynamically modify document content. For instance, you can us
 After incorporating web extensions and making necessary modifications, you can save the document using various formats supported by Aspose.Words:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Tips for Performance Optimization
