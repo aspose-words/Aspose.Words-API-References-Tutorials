@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## Zastępowanie tekstu
-
-Czasami możesz chcieć zastąpić pewien tekst nową treścią. Oto przykład, jak to zrobić:
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## Usuwanie obrazów
 
 Jeśli musisz usunąć obrazy z dokumentu, możesz użyć podobnego podejścia. Najpierw zidentyfikuj obrazy, a następnie je usuń:
@@ -92,22 +79,6 @@ Usuwanie całych sekcji z dokumentu można wykonać w następujący sposób:
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## Znajdź i zamień za pomocą wyrażenia regularnego
-
-Wyrażenia regularne oferują skuteczne narzędzie do wyszukiwania i zastępowania treści:
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## Ekstrakcja określonej zawartości

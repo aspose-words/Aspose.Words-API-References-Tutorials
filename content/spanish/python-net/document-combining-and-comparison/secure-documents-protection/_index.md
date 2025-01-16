@@ -38,14 +38,6 @@ Puede agregar una contraseña a su documento para restringir el acceso:
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## Restringir los permisos de edición
-
-Para controlar quién puede realizar cambios en el documento, puede establecer permisos de edición:
-
-```python
-protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
-protection.set_editing_groups(["Editors"])
-```
 
 ## Cifrado del contenido de los documentos
 
@@ -60,8 +52,10 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 Añade una firma digital para garantizar la autenticidad del documento:
 
 ```python
-digital_signature = aw.digital_signatures.DigitalSignature(doc)
-digital_signature.sign("certificate.pfx", "signature_password")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
+			
+aw.digitalsignatures.DigitalSignatureUtil.sign(dst_document_path, dst_document_path, certificate_holder, sign_options)
 ```
 
 ## Marcas de agua para seguridad
@@ -71,15 +65,6 @@ Las marcas de agua pueden disuadir el uso compartido no autorizado:
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
-```
-
-## Redactar información confidencial
-
-Para eliminar información confidencial de forma permanente:
-
-```python
-redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
-doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
 ## Conclusión

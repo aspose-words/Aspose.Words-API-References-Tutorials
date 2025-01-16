@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // 개정 사항 추적 시작
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //추적 수정 사항이 있는 텍스트 삽입
+builder.Writeln("Inserted"); // 추적 수정 사항이 있는 텍스트 삽입
 doc.StopTrackRevisions();
 ```
 

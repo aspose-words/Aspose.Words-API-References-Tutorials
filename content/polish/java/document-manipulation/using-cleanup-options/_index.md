@@ -150,7 +150,7 @@ Opcje czyszczenia w Aspose.Words for Java to ustawienia, które pozwalają kontr
 
 ###  Jaki jest cel`REMOVE_UNUSED_REGIONS` cleanup option?
 
-Ten`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` opcja ta służy do usuwania obszarów w dokumencie, które nie mają odpowiadających im danych podczas procesu korespondencji seryjnej. Pomaga zachować porządek w dokumencie, usuwając nieużywane symbole zastępcze.
+ Ten`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` opcja ta służy do usuwania obszarów w dokumencie, które nie mają odpowiadających im danych podczas procesu korespondencji seryjnej. Pomaga zachować porządek w dokumencie, usuwając nieużywane symbole zastępcze.
 
 ### Czy mogę usunąć puste wiersze tabeli z dokumentu za pomocą Aspose.Words dla Java?
 
@@ -166,7 +166,7 @@ Ten`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` opcja ta służy do usuwania 
 
 ###  Jaka jest różnica między`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-Ten`REMOVE_EMPTY_FIELDS` opcja usuwa pola scalania, które nie zawierają danych lub są puste podczas procesu scalania korespondencji. Z drugiej strony,`REMOVE_UNUSED_FIELDS`opcja usuwa pola scalania, które nie są wypełnione danymi podczas scalania. Wybór między nimi zależy od tego, czy chcesz usunąć pola bez zawartości, czy te, które są nieużywane w konkretnej operacji scalania.
+ Ten`REMOVE_EMPTY_FIELDS` opcja usuwa pola scalania, które nie zawierają danych lub są puste podczas procesu scalania korespondencji. Z drugiej strony,`REMOVE_UNUSED_FIELDS`opcja usuwa pola scalania, które nie są wypełnione danymi podczas scalania. Wybór między nimi zależy od tego, czy chcesz usunąć pola bez zawartości, czy te, które są nieużywane w konkretnej operacji scalania.
 
 ### Jak mogę włączyć usuwanie akapitów zawierających znaki interpunkcyjne?
 

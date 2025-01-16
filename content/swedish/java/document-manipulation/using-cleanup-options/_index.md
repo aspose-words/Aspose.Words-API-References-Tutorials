@@ -150,7 +150,7 @@ Rensningsalternativ i Aspose.Words för Java är inställningar som låter dig s
 
 ###  Vad är syftet med`REMOVE_UNUSED_REGIONS` cleanup option?
 
-De`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` alternativet används för att ta bort regioner i ett dokument som inte har motsvarande data under kopplingsprocessen. Det hjälper till att hålla ditt dokument snyggt genom att ta bort oanvända platshållare.
+ De`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` alternativet används för att ta bort regioner i ett dokument som inte har motsvarande data under kopplingsprocessen. Det hjälper till att hålla ditt dokument snyggt genom att ta bort oanvända platshållare.
 
 ### Kan jag ta bort tomma tabellrader från ett dokument med Aspose.Words för Java?
 
@@ -166,7 +166,7 @@ De`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` alternativet används för att
 
 ###  Vad är skillnaden mellan`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-De`REMOVE_EMPTY_FIELDS` alternativet tar bort sammanslagningsfält som inte har några data eller är tomma under sammankopplingsprocessen. Å andra sidan`REMOVE_UNUSED_FIELDS`alternativet tar bort sammanslagningsfält som inte fylls i med data under sammanslagningen. Valet mellan dem beror på om du vill ta bort fält utan innehåll eller de som är oanvända i den specifika sammanfogningsoperationen.
+ De`REMOVE_EMPTY_FIELDS` alternativet tar bort sammanslagningsfält som inte har några data eller är tomma under sammankopplingsprocessen. Å andra sidan`REMOVE_UNUSED_FIELDS`alternativet tar bort sammanslagningsfält som inte fylls i med data under sammanslagningen. Valet mellan dem beror på om du vill ta bort fält utan innehåll eller de som är oanvända i den specifika sammanfogningsoperationen.
 
 ### Hur kan jag aktivera borttagning av stycken med skiljetecken?
 

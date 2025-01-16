@@ -52,7 +52,7 @@ Sekarang, mari kita atur opsi garis besarnya.
 
 ### Tetapkan Tingkat Garis Besar Judul
 
-Itu`HeadingsOutlineLevels` properti menentukan berapa banyak tingkat judul yang harus disertakan dalam kerangka PDF. Misalnya, jika Anda menyetelnya ke 3, maka kerangka PDF akan menyertakan hingga tiga tingkat judul.
+ Itu`HeadingsOutlineLevels` properti menentukan berapa banyak tingkat judul yang harus disertakan dalam kerangka PDF. Misalnya, jika Anda menyetelnya ke 3, maka kerangka PDF akan menyertakan hingga tiga tingkat judul.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Tetapkan Tingkat Garis Besar yang Diperluas
 
-Itu`ExpandedOutlineLevels`properti mengontrol berapa banyak tingkat kerangka yang harus diperluas secara default saat PDF dibuka. Mengaturnya ke 1 akan memperluas judul tingkat atas, sehingga memberikan tampilan yang jelas pada bagian utama.
+ Itu`ExpandedOutlineLevels`properti mengontrol berapa banyak tingkat kerangka yang harus diperluas secara default saat PDF dibuka. Mengaturnya ke 1 akan memperluas judul tingkat atas, sehingga memberikan tampilan yang jelas pada bagian utama.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

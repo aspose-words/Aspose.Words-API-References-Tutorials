@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Fusionner des documents
-
-Combiner des documents de manière transparente est une compétence précieuse. La navigation dans les documents nous aide à les fusionner efficacement :
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Fractionnement de documents
 
 Il peut arriver que nous ayons besoin de diviser un document en parties plus petites. La navigation dans le document nous aide à y parvenir :
@@ -117,8 +109,8 @@ Les en-têtes et les pieds de page nécessitent souvent un traitement distinct. 
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

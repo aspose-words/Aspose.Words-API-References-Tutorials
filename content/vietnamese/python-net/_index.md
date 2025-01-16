@@ -26,12 +26,8 @@ Làm chủ xử lý tài liệu Word bằng Aspose.Words cho Python. Hướng d�
 Làm chủ việc tạo tài liệu với Aspose.Words cho Python. Tạo tài liệu động, tùy chỉnh định dạng và hợp lý hóa quá trình xử lý tài liệu Word.
 ### [Tự động hóa từ](./word-automation/)
 Tự động hóa các tác vụ xử lý văn bản với Aspose.Words cho Python. Tối ưu hóa việc quản lý tài liệu và tăng hiệu quả trong tự động hóa văn bản.
-### [Trí thông minh tài liệu](./document-intelligence/)
-Mở khóa những thông tin chi tiết có giá trị từ tài liệu của bạn với Aspose.Words for Python's Document Intelligence. Tự động phân tích, trích xuất văn bản và phân loại.
 ### [Chuyển đổi tài liệu](./document-conversion/)
 Chuyển đổi tài liệu giữa các định dạng một cách hiệu quả với Aspose.Words for Python. Tối ưu hóa quá trình xử lý tài liệu Word và đơn giản hóa các tác vụ quản lý tài liệu của bạn. 
-### [Bảo vệ tài liệu](./document-protection/)
-Bảo mật tài liệu của bạn bằng Aspose.Words cho Python! Triển khai mã hóa mật khẩu, quyền người dùng và chữ ký số để bảo vệ tài liệu mạnh mẽ.
 ### [Cấu trúc tài liệu và thao tác nội dung](./document-structure-and-content-manipulation/)
 Khám phá hướng dẫn Aspose.Words cho Python và .NET, tập trung vào cấu trúc tài liệu và thao tác nội dung. Tìm hiểu cách điều hướng, trích xuất và sửa đổi các thành phần tài liệu một cách hiệu quả. Cung cấp ví dụ về mã nguồn.
 ### [Trích xuất và xử lý nội dung](./content-extraction-and-manipulation/)
@@ -42,7 +38,5 @@ Khám phá hướng dẫn toàn diện về kết hợp và so sánh tài liệu
 Khám phá hướng dẫn Aspose.Words về việc chia tách và định dạng tài liệu trong Python và .NET. Học cách chia tách và định dạng tài liệu hiệu quả, nâng cao các tác vụ xử lý tài liệu của bạn. 
 ### [Tùy chọn và cài đặt tài liệu](./document-options-and-settings/)
 Khám phá hướng dẫn Aspose.Words về các tùy chọn và cài đặt tài liệu trong Python và .NET. Tìm hiểu cách tối ưu hóa việc tạo và định dạng tài liệu bằng hướng dẫn từng bước và ví dụ về mã nguồn.
-### [Định dạng và trực quan hóa dữ liệu](./data-visualization-and-formatting/)
-Khám phá hướng dẫn Aspose.Words về trực quan hóa và định dạng dữ liệu trong Python và .NET. Học cách trình bày dữ liệu hiệu quả, tạo báo cáo ấn tượng và định dạng tài liệu theo chương trình.
 ### [Bảng và Định dạng](./tables-and-formatting/)
 Khám phá hướng dẫn về bảng và định dạng trong các ứng dụng Python và .NET của Aspose.Words. Học cách tạo, tùy chỉnh và định dạng bảng cho các tài liệu hấp dẫn về mặt hình ảnh. 

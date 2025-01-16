@@ -71,7 +71,7 @@ builder.Writeln("sad mad bad");
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-The`Replace`yöntem basittir. Bulunacak kelimeyi, değiştirme kelimesini ve bul-değiştir işlemi için seçenekleri belirtiriz.
+ The`Replace`yöntem basittir. Bulunacak kelimeyi, değiştirme kelimesini ve bul-değiştir işlemi için seçenekleri belirtiriz.
 
 ## Adım 5: Belgeyi Kaydedin
 

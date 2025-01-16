@@ -19,10 +19,10 @@ Sebelum kita masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
 Langkah pertama adalah memuat dokumen yang ingin Anda bagi dan format. Gunakan potongan kode berikut untuk melakukannya:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## Langkah 2: Membagi Dokumen menjadi Beberapa Bagian
@@ -41,10 +41,10 @@ Sekarang, katakanlah Anda ingin menerapkan format tertentu pada suatu bagian. Mi
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## Langkah 4: Simpan Dokumen
@@ -55,14 +55,20 @@ Setelah membagi dan memformat dokumen, saatnya menyimpan perubahan. Anda dapat m
 document.save("path/to/save/updated_document.docx")
 ```
 
-## Tanya Jawab Umum
+## Kesimpulan
+
+Aspose.Words untuk Python menyediakan seperangkat alat yang lengkap untuk membagi dan memformat dokumen secara efisien sesuai dengan kebutuhan Anda. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini dan memanfaatkan contoh kode sumber yang disediakan, Anda dapat mengelola dokumen Anda dengan lancar dan menyajikannya secara profesional.
+
+Dalam tutorial ini, kami telah membahas dasar-dasar pemisahan dokumen, pemformatan, dan memberikan solusi untuk pertanyaan umum. Sekarang giliran Anda untuk menjelajahi dan bereksperimen dengan kemampuan Aspose.Words untuk Python guna lebih meningkatkan alur kerja manajemen dokumen Anda.
+
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara membagi dokumen menjadi beberapa berkas?
 Anda dapat membagi dokumen menjadi beberapa berkas dengan mengulang-ulang bagian-bagiannya dan menyimpan setiap bagian sebagai dokumen terpisah. Berikut ini contohnya:
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ Ya, Anda dapat menerapkan format yang berbeda pada paragraf dalam satu bagian. U
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### Bagaimana cara mengubah gaya font untuk bagian tertentu?
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### Apakah mungkin untuk menghapus bagian tertentu dari dokumen?
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## Kesimpulan
-Aspose.Words untuk Python menyediakan seperangkat alat yang lengkap untuk membagi dan memformat dokumen secara efisien sesuai dengan kebutuhan Anda. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini dan memanfaatkan contoh kode sumber yang disediakan, Anda dapat mengelola dokumen Anda dengan lancar dan menyajikannya secara profesional.
-
-Dalam tutorial ini, kami telah membahas dasar-dasar pemisahan dokumen, pemformatan, dan memberikan solusi untuk pertanyaan umum. Sekarang giliran Anda untuk menjelajahi dan bereksperimen dengan kemampuan Aspose.Words untuk Python guna lebih meningkatkan alur kerja manajemen dokumen Anda.

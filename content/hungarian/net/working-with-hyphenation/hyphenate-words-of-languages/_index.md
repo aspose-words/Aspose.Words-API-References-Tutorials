@@ -16,7 +16,7 @@ Szia! Próbált már elolvasni egy dokumentumot hosszú, töretlen szavakkal, é
 Mielőtt elkezdenénk, győződjön meg arról, hogy rendelkezik a következőkkel:
 
 -  Az Aspose.Words for .NET telepítve van. Ha még nem, fogd meg[itt](https://releases.aspose.com/words/net/).
--  Az Aspose.Words érvényes licence. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+-  Az Aspose.Words érvényes licence. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
 - C# és .NET keretrendszer alapismeretei.
 - Szövegszerkesztő vagy IDE, például a Visual Studio.
 

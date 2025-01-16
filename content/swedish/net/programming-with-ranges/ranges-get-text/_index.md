@@ -67,7 +67,7 @@ Extrahera text
 string text = doc.Range.Text;
 ```
 
-De`Range.Text` egenskap ger dig all text som finns inom dokumentets räckvidd. Detta inkluderar text från alla avsnitt, sidhuvuden, sidfötter och huvudtexten.
+ De`Range.Text` egenskap ger dig all text som finns inom dokumentets räckvidd. Detta inkluderar text från alla avsnitt, sidhuvuden, sidfötter och huvudtexten.
 
 ## Steg 4: Visa den extraherade texten
 

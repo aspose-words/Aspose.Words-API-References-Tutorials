@@ -15,7 +15,7 @@ Günümüzün dijital çağında, belge boyutunu yönetmek hem performans hem de
 
 Eğitime başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olması gerekir. Bunu şuradan indirebilirsiniz:[Aspose web sitesi](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olması gerekir. Bunu şuradan indirebilirsiniz:[Aspose web sitesi](https://releases.aspose.com/words/net/).
 
 2. C# Temel Bilgisi: C# programlamaya aşinalık, bu eğitimde sunulan kod örneklerini anlamanıza yardımcı olacaktır.
 

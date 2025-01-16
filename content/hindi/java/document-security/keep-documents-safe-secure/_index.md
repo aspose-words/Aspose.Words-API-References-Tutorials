@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 अब जबकि हमारा दस्तावेज़ लोड हो गया है, तो चलिए उस पर एन्क्रिप्शन लागू करना शुरू करते हैं। Aspose.Words for Java दस्तावेज़ एन्क्रिप्शन सेट करने का एक सीधा तरीका प्रदान करता है:
 
 ```java
-// दस्तावेज़ खोलने के लिए पासवर्ड सेट करें
-doc.getWriteProtection().setPassword("yourPassword");
-
-// एन्क्रिप्शन एल्गोरिथ्म सेट करें (वैकल्पिक)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// एन्क्रिप्टेड दस्तावेज़ को सहेजें
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. विशिष्ट दस्तावेज़ तत्वों की सुरक्षा
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 कभी-कभी, आप अपने दस्तावेज़ के केवल विशिष्ट भागों, जैसे हेडर, फ़ुटर या कुछ पैराग्राफ़ को ही सुरक्षित रखना चाहते होंगे। Aspose.Words आपको दस्तावेज़ सुरक्षा में इस स्तर की विस्तृत जानकारी प्राप्त करने की अनुमति देता है:
 
 ```java
-// किसी विशिष्ट अनुभाग की सुरक्षा करें (केवल पढ़ने के लिए सुरक्षा)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// किसी विशिष्ट पैराग्राफ़ को सुरक्षित करें (केवल फ़ॉर्म फ़ील्ड को संपादित करने की अनुमति दें)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// संरक्षित दस्तावेज़ सहेजें
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//संपादन योग्य श्रेणियाँ हमें संरक्षित दस्तावेज़ों के कुछ हिस्सों को संपादन के लिए खुला छोड़ने की अनुमति देती हैं।
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. डिजिटल हस्ताक्षर का प्रयोग
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 अपने दस्तावेज़ में डिजिटल हस्ताक्षर जोड़ने से इसकी प्रामाणिकता और अखंडता सुनिश्चित हो सकती है। यहाँ बताया गया है कि आप Aspose.Words for Java का उपयोग करके डिजिटल हस्ताक्षर कैसे लागू कर सकते हैं:
 
 ```java
-// प्रमाणपत्र फ़ाइल लोड करें
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// प्रमाण पत्र के साथ दस्तावेज़ पर हस्ताक्षर करें
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// एक टिप्पणी, दिनांक और डिक्रिप्शन पासवर्ड बनाएं जो हमारे नए डिजिटल हस्ताक्षर के साथ लागू किया जाएगा।
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// हस्ताक्षरित दस्तावेज़ सहेजें
-doc.save("path/to/signed/document.docx");
+// अहस्ताक्षरित इनपुट दस्तावेज़ के लिए एक स्थानीय सिस्टम फ़ाइल नाम सेट करें, तथा इसकी नई डिजिटल हस्ताक्षरित प्रतिलिपि के लिए एक आउटपुट फ़ाइल नाम सेट करें।
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. अपने दस्तावेज़ों पर वॉटरमार्क लगाना
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. संवेदनशील जानकारी हटाना
 
-दस्तावेज़ साझा करते समय, आप संवेदनशील जानकारी को स्थायी रूप से हटाना चाह सकते हैं ताकि यह सुनिश्चित हो सके कि यह गलत हाथों में न जाए। Aspose.Words for Java आपको संवेदनशील सामग्री को संपादित करने की अनुमति देता है:
-
-```java
-// संवेदनशील जानकारी खोजें और संपादित करें
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// संशोधन लागू करें
-doc.redact(options);
-
-// संपादित दस्तावेज़ को सहेजें
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. सुरक्षित दस्तावेजों को अन्य प्रारूपों में परिवर्तित करना
+## 10. सुरक्षित दस्तावेज़ों को अन्य प्रारूपों में परिवर्तित करना
 
 Java के लिए Aspose.Words आपको अपने सुरक्षित दस्तावेज़ों को विभिन्न प्रारूपों में परिवर्तित करने में सक्षम बनाता है, जैसे कि PDF या HTML:
 
 ```java
-// सुरक्षित दस्तावेज़ लोड करें
+//सुरक्षित दस्तावेज़ लोड करें
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // पीडीएफ में कनवर्ट करें
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // HTML में कनवर्ट करें
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. दस्तावेज़ सुरक्षा के लिए सर्वोत्तम अभ्यास
-
-दस्तावेज़ की मज़बूत सुरक्षा सुनिश्चित करने के लिए, इन सर्वोत्तम प्रथाओं का पालन करें:
-
-- संभावित खतरों से बचने के लिए अपने सुरक्षा उपायों को नियमित रूप से अद्यतन करते रहें।
-- मजबूत पासवर्ड और एन्क्रिप्शन एल्गोरिदम का उपयोग करें।
-- संवेदनशील दस्तावेजों तक पहुंच को आवश्यकता के आधार पर सीमित करें।
-- कर्मचारियों को सुरक्षा जोखिमों को पहचानने और उनका जवाब देने के लिए प्रशिक्षित करें।
-
-## 13. दस्तावेज़ सुरक्षा का परीक्षण
-
-सुरक्षा उपाय लागू करने के बाद, अपने दस्तावेज़ों का अच्छी तरह से परीक्षण करें ताकि यह सुनिश्चित हो सके कि वे विभिन्न परिदृश्यों में सुरक्षित रहें। संभावित कमज़ोरियों की पहचान करने के लिए सुरक्षा नियंत्रणों को बायपास करने का प्रयास करें।
-
-## 14. निष्कर्ष
+## निष्कर्ष
 
 इस चरण-दर-चरण मार्गदर्शिका में, हमने दस्तावेज़ सुरक्षा के महत्व और कैसे Aspose.Words for Java आपके दस्तावेज़ों को अनधिकृत पहुँच से बचाने में मदद कर सकता है, इस पर चर्चा की। लाइब्रेरी की सुविधाओं, जैसे पासवर्ड सुरक्षा, एन्क्रिप्शन, डिजिटल हस्ताक्षर, वॉटरमार्किंग और रेडक्शन का लाभ उठाकर, आप यह सुनिश्चित कर सकते हैं कि आपके दस्तावेज़ सुरक्षित और संरक्षित रहें।
 
-## पूछे जाने वाले प्रश्न
+## अक्सर पूछे जाने वाले प्रश्न
 
 ### क्या मैं व्यावसायिक परियोजनाओं में Java के लिए Aspose.Words का उपयोग कर सकता हूँ?
-   हां, प्रति-डेवलपर लाइसेंसिंग मॉडल के तहत Java के लिए Aspose.Words का उपयोग वाणिज्यिक परियोजनाओं में किया जा सकता है।
+हां, प्रति-डेवलपर लाइसेंसिंग मॉडल के तहत Java के लिए Aspose.Words का उपयोग वाणिज्यिक परियोजनाओं में किया जा सकता है।
 
 ### क्या Aspose.Words Word के अलावा अन्य दस्तावेज़ प्रारूपों का समर्थन करता है?
-   हां, Aspose.Words पीडीएफ, HTML, EPUB, आदि सहित कई प्रारूपों का समर्थन करता है।
+हां, Aspose.Words पीडीएफ, HTML, EPUB, आदि सहित कई प्रारूपों का समर्थन करता है।
 
 ### क्या किसी दस्तावेज़ में एकाधिक डिजिटल हस्ताक्षर जोड़ना संभव है?
-   हां, Aspose.Words आपको एक दस्तावेज़ में एकाधिक डिजिटल हस्ताक्षर जोड़ने की अनुमति देता है।
+हां, Aspose.Words आपको एक दस्तावेज़ में एकाधिक डिजिटल हस्ताक्षर जोड़ने की अनुमति देता है।
 
 ### क्या Aspose.Words दस्तावेज़ पासवर्ड पुनर्प्राप्ति का समर्थन करता है?
-   नहीं, Aspose.Words पासवर्ड रिकवरी सुविधाएँ प्रदान नहीं करता है। अपने पासवर्ड सुरक्षित रखना सुनिश्चित करें।
+नहीं, Aspose.Words पासवर्ड रिकवरी सुविधाएँ प्रदान नहीं करता है। अपने पासवर्ड सुरक्षित रखना सुनिश्चित करें।
 
 ### क्या मैं वॉटरमार्क के स्वरूप को अनुकूलित कर सकता हूँ?
-   हां, आप टेक्स्ट, फ़ॉन्ट, रंग, आकार और रोटेशन सहित वॉटरमार्क की उपस्थिति को पूरी तरह से अनुकूलित कर सकते हैं।
+हां, आप टेक्स्ट, फ़ॉन्ट, रंग, आकार और रोटेशन सहित वॉटरमार्क की उपस्थिति को पूरी तरह से अनुकूलित कर सकते हैं।

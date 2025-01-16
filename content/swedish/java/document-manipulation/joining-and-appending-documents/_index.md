@@ -84,7 +84,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 builder.insertDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-## Behåller källnumrering
+## Att behålla källnumrering
 
 ```java
 ImportFormatOptions importFormatOptions = new ImportFormatOptions();
@@ -136,7 +136,7 @@ Aspose.Words för Java tillhandahåller flexibla och kraftfulla verktyg för att
 
 ### Hur kan jag hantera textrutor när jag lägger till dokument?
 
-Uppsättning`importFormatOptions.setIgnoreTextBoxes(false)` att inkludera textrutor under tillägg.
+Uppsättning`importFormatOptions.setIgnoreTextBoxes(false)` att inkludera textrutor när du lägger till.
 
 ### Vad händer om jag vill länka/ta bort länkhuvuden och sidfötter mellan dokument?
 

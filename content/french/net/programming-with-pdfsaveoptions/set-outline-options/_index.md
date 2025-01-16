@@ -52,7 +52,7 @@ Maintenant, définissons les options de contour.
 
 ### Définir les niveaux de plan des titres
 
-Le`HeadingsOutlineLevels` La propriété définit le nombre de niveaux de titres à inclure dans le plan PDF. Par exemple, si vous la définissez sur 3, elle inclura jusqu'à trois niveaux de titres dans le plan PDF.
+ Le`HeadingsOutlineLevels` La propriété définit le nombre de niveaux de titres à inclure dans le plan PDF. Par exemple, si vous la définissez sur 3, elle inclura jusqu'à trois niveaux de titres dans le plan PDF.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Définir des niveaux de contour étendus
 
-Le`ExpandedOutlineLevels`La propriété contrôle le nombre de niveaux du plan qui doivent être développés par défaut à l'ouverture du PDF. La définition de cette propriété sur 1 développera les titres de niveau supérieur, offrant ainsi une vue claire des sections principales.
+ Le`ExpandedOutlineLevels`La propriété contrôle le nombre de niveaux du plan qui doivent être développés par défaut à l'ouverture du PDF. La définition de cette propriété sur 1 développera les titres de niveau supérieur, offrant ainsi une vue claire des sections principales.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

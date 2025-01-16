@@ -167,58 +167,48 @@ public class DocumentMerger {
 
  Dengan menggunakan`ImportFormatMode.KEEP_DIFFERENT_STYLES`Aspose.Words mempertahankan gaya yang berbeda antara dokumen sumber dan tujuan, menyelesaikan konflik dengan baik.
 
-## 9. Praktik Terbaik untuk Penggabungan Dokumen
-
-- Selalu tangani pengecualian selama penggabungan dokumen untuk mencegah kesalahan yang tidak diharapkan.
-
-- Periksa pembaruan secara berkala dan manfaatkan versi terbaru Aspose.Words untuk Java untuk mendapatkan manfaat dari perbaikan bug dan fitur baru.
-
-- Uji penggabungan dokumen dengan berbagai jenis dan ukuran dokumen untuk memastikan kinerja yang optimal.
-
-- Pertimbangkan untuk menggunakan sistem kontrol versi untuk melacak perubahan selama operasi penggabungan dokumen.
-
-## 10. Kesimpulan
+## Kesimpulan
 
 Aspose.Words untuk Java memberdayakan pengembang Java dengan kemampuan untuk menggabungkan dokumen Word dengan mudah. Dengan mengikuti panduan langkah demi langkah dalam artikel ini, kini Anda dapat menggabungkan dokumen, menangani pemformatan, menyisipkan pemisah, dan mengelola konflik dengan mudah. Dengan Aspose.Words untuk Java, penggabungan dokumen menjadi proses yang lancar dan otomatis, sehingga menghemat waktu dan tenaga yang berharga.
 
-## 11. Tanya Jawab Umum 
+## Pertanyaan yang Sering Diajukan 
 
 ### Bisakah saya menggabungkan dokumen dengan format dan gaya yang berbeda?
 
-   Ya, Aspose.Words untuk Java menangani penggabungan dokumen dengan berbagai format dan gaya. Pustaka ini secara cerdas mengatasi konflik, sehingga Anda dapat menggabungkan dokumen dari berbagai sumber dengan mudah.
+Ya, Aspose.Words untuk Java menangani penggabungan dokumen dengan berbagai format dan gaya. Pustaka ini secara cerdas mengatasi konflik, sehingga Anda dapat menggabungkan dokumen dari berbagai sumber dengan mudah.
 
 ### Apakah Aspose.Words mendukung penggabungan dokumen besar secara efisien?
 
-   Aspose.Words untuk Java dirancang untuk menangani dokumen besar secara efisien. Aplikasi ini menggunakan algoritme yang dioptimalkan untuk penggabungan dokumen, memastikan kinerja tinggi bahkan dengan konten yang ekstensif.
+Aspose.Words untuk Java dirancang untuk menangani dokumen besar secara efisien. Aplikasi ini menggunakan algoritme yang dioptimalkan untuk penggabungan dokumen, memastikan kinerja tinggi bahkan dengan konten yang ekstensif.
 
 ### Bisakah saya menggabungkan dokumen yang dilindungi kata sandi menggunakan Aspose.Words untuk Java?
 
-   Ya, Aspose.Words untuk Java mendukung penggabungan dokumen yang dilindungi kata sandi. Pastikan Anda memberikan kata sandi yang benar untuk mengakses dan menggabungkan dokumen-dokumen ini.
+Ya, Aspose.Words untuk Java mendukung penggabungan dokumen yang dilindungi kata sandi. Pastikan Anda memberikan kata sandi yang benar untuk mengakses dan menggabungkan dokumen-dokumen ini.
 
 ### Apakah mungkin untuk menggabungkan bagian tertentu dari beberapa dokumen?
 
-   Ya, Aspose.Words memungkinkan Anda untuk menggabungkan bagian-bagian tertentu dari berbagai dokumen secara selektif. Ini memberi Anda kendali terperinci atas proses penggabungan.
+Ya, Aspose.Words memungkinkan Anda untuk menggabungkan bagian-bagian tertentu dari berbagai dokumen secara selektif. Ini memberi Anda kendali terperinci atas proses penggabungan.
 
 ### Dapatkah saya menggabungkan dokumen dengan perubahan dan komentar yang dilacak?
 
-    Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
+Tentu saja, Aspose.Words untuk Java dapat menangani penggabungan dokumen dengan perubahan dan komentar yang dilacak. Anda memiliki opsi untuk menyimpan atau menghapus revisi ini selama proses penggabungan.
 
 ### Apakah Aspose.Words mempertahankan format asli dokumen yang digabungkan?
 
-    Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
+Aspose.Words mempertahankan format dokumen sumber secara default. Namun, Anda dapat memilih mode format impor yang berbeda untuk menangani konflik dan mempertahankan konsistensi format.
 
 ### Bisakah saya menggabungkan dokumen dari format file non-Word, seperti PDF atau RTF?
 
-    Aspose.Words is primarily designed for working with Word documents. To merge documents from non-Word file formats, consider using the appropriate Aspose product for that specific format, such as Aspose.PDF or Aspose.RTF.
+Aspose.Words terutama dirancang untuk bekerja dengan dokumen Word. Untuk menggabungkan dokumen dari format file non-Word, pertimbangkan untuk menggunakan produk Aspose yang sesuai untuk format tertentu, seperti Aspose.PDF atau Aspose.RTF.
 
 ### Bagaimana saya dapat menangani versi dokumen selama penggabungan?
 
-    Document versioning during merging can be achieved by implementing proper version control practices in your application. Aspose.Words focuses on document content merging and doesn't directly manage versioning.
+Versi dokumen selama penggabungan dapat dicapai dengan menerapkan praktik kontrol versi yang tepat dalam aplikasi Anda. Aspose.Words berfokus pada penggabungan konten dokumen dan tidak secara langsung mengelola versi.
 
 ### Apakah Aspose.Words untuk Java kompatibel dengan Java 8 dan versi yang lebih baru?
 
-    Yes, Aspose.Words for Java is compatible with Java 8 and newer versions. It's always recommended to use the latest Java version for better performance and security.
+Ya, Aspose.Words untuk Java kompatibel dengan Java 8 dan versi yang lebih baru. Sebaiknya selalu gunakan versi Java terbaru untuk performa dan keamanan yang lebih baik.
 
 ### Apakah Aspose.Words mendukung penggabungan dokumen dari sumber jarak jauh seperti URL?
 
-    Yes, Aspose.Words for Java can load documents from various sources, including URLs, streams, and file paths. You can merge documents fetched from remote locations seamlessly.
+Ya, Aspose.Words untuk Java dapat memuat dokumen dari berbagai sumber, termasuk URL, aliran, dan jalur file. Anda dapat menggabungkan dokumen yang diambil dari lokasi jarak jauh dengan mudah.

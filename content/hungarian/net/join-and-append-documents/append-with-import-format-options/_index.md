@@ -1,6 +1,6 @@
 ---
-title: Hozzáfűzi az importálási formátumbeállításokkal
-linktitle: Hozzáfűzi az importálási formátumbeállításokkal
+title: Hozzáfűzi az importálási formátumbeállításokat
+linktitle: Hozzáfűzi az importálási formátumbeállításokat
 second_title: Aspose.Words Document Processing API
 description: Könnyedén hozzáfűzhet Word-dokumentumokat az Aspose.Words for .NET segítségével, karbantartva a formázást részletes, lépésről lépésre útmutatóval.
 type: docs

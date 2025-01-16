@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-Der`MetafileRenderingOptions` Klasse bietet Optionen für die Darstellung von Metadateien (wie WMF). Durch die Einstellung`ScaleWmfFontsToMetafileSize` Zu`false`, weisen Sie Aspose.Words an, Schriftarten nicht entsprechend der Metadateigröße zu skalieren, was zur Reduzierung der Gesamtgröße des PDF-Dokuments beitragen kann.
+ Der`MetafileRenderingOptions` Klasse bietet Optionen für die Darstellung von Metadateien (wie WMF). Durch die Einstellung`ScaleWmfFontsToMetafileSize` Zu`false`, weisen Sie Aspose.Words an, Schriftarten nicht entsprechend der Metadateigröße zu skalieren, was zur Reduzierung der Gesamtgröße des PDF-Dokuments beitragen kann.
 
 ## Schritt 3: PDF-Speicheroptionen festlegen
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-Der`PdfSaveOptions` Klasse können Sie verschiedene Einstellungen für das Speichern des Dokuments als PDF festlegen. Durch die Zuweisung der zuvor konfigurierten`MetafileRenderingOptions` zur`MetafileRenderingOptions` Eigentum von`PdfSaveOptions`stellen Sie sicher, dass das Dokument entsprechend den gewünschten Einstellungen für die Metadateidarstellung gespeichert wird.
+ Der`PdfSaveOptions` Klasse können Sie verschiedene Einstellungen für das Speichern des Dokuments als PDF festlegen. Durch die Zuweisung der zuvor konfigurierten`MetafileRenderingOptions` zur`MetafileRenderingOptions` Eigentum von`PdfSaveOptions`stellen Sie sicher, dass das Dokument entsprechend den gewünschten Einstellungen für die Metadateidarstellung gespeichert wird.
 
 ## Schritt 4: Speichern Sie das Dokument als PDF
 

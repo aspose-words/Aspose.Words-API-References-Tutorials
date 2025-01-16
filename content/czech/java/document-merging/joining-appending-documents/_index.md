@@ -1,6 +1,6 @@
 ---
-title: Připojování a připojování dokumentů
-linktitle: Připojování a připojování dokumentů
+title: Spojení a připojení dokumentů
+linktitle: Spojení a připojení dokumentů
 second_title: Aspose.Words Java Document Processing API
 description: Naučte se spojovat a připojovat dokumenty pomocí Aspose.Words for Java. Podrobný průvodce s příklady kódu pro efektivní manipulaci s dokumenty.
 type: docs
@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-The`ImportFormatMode.KEEP_SOURCE_FORMATTING` Tato volba zajišťuje zachování formátování zdrojových dokumentů.
+ The`ImportFormatMode.KEEP_SOURCE_FORMATTING` Tato volba zajišťuje zachování formátování zdrojových dokumentů.
 
 ## Krok 5: Uložení výsledku
 

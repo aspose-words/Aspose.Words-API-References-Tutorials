@@ -9,7 +9,7 @@ url: /sv/net/basic-conversions/docx-to-mhtml-and-sending-email/
 ---
 ## Introduktion
 
-I dagens digitala tidsålder är det en vanlig uppgift att konvertera dokument från ett format till ett annat och skicka dem via e-post. Den här artikeln går igenom processen att konvertera en DOCX-fil till MHTML-format och sedan skicka den som ett e-postmeddelande med Aspose.Words för .NET. Vi kommer att dela upp varje steg i en detaljerad, lätt att följa guide, så att du förstår processen från början till slut. Låt oss dyka in!
+dagens digitala tidsålder är det en vanlig uppgift att konvertera dokument från ett format till ett annat och skicka dem via e-post. Den här artikeln går igenom processen att konvertera en DOCX-fil till MHTML-format och sedan skicka den som ett e-postmeddelande med Aspose.Words för .NET. Vi kommer att dela upp varje steg i en detaljerad, lätt att följa guide, så att du förstår processen från början till slut. Låt oss dyka in!
 
 ## Förutsättningar
 
@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Steg 4: Skicka e-postmeddelandet
 
-Slutligen, skicka e-postmeddelandet med en SMTP-klient. Konfigurera SMTP-klienten med dina SMTP-serverdetaljer och använd`Send` sätt att skicka meddelandet.
+ Slutligen, skicka e-postmeddelandet med en SMTP-klient. Konfigurera SMTP-klienten med dina SMTP-serverdetaljer och använd`Send` sätt att skicka meddelandet.
 
 ```csharp
 // Skicka meddelandet med Aspose.Email.
@@ -95,7 +95,7 @@ Ja, Aspose.Words stöder olika format, och du kan konvertera dokument som DOC, D
 Ja, Aspose.Words är kompatibelt med .NET Core. Du kan också använda den i .NET Core-applikationer.
 
 ### Behöver jag en licens för Aspose.Words och Aspose.Email?
-Ja, båda biblioteken kräver licenser. Du kan få en tillfällig licens från[Aspose köpsida](https://purchase.aspose.com/temporary-license/) i utvärderingssyfte.
+ Ja, båda biblioteken kräver licenser. Du kan få en tillfällig licens från[Aspose köpsida](https://purchase.aspose.com/temporary-license/) i utvärderingssyfte.
 
 ### Var kan jag hitta mer dokumentation?
  Du kan hitta detaljerad dokumentation för Aspose.Words[här](https://reference.aspose.com/words/net/) och för Aspose.Email[här](https://reference.aspose.com/email/net/).

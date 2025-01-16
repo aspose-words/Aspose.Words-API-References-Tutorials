@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Buat batas yang lebih besar untuk sel pertama baris ini.
+// Buat batas yang lebih besar untuk sel pertama baris ini.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -169,7 +169,7 @@ Aspose.Words untuk Java adalah alat tangguh yang menawarkan fitur lengkap untuk 
 
 ### 1. Dapatkah saya menggunakan gaya tabel khusus yang tidak termasuk dalam opsi default?
 
-Ya, Anda dapat menentukan dan menerapkan gaya khusus ke tabel Anda menggunakan Aspose.Words untuk Java. Periksa[dokumentasi](https://reference.aspose.com/words/java/) untuk detail lebih lanjut tentang pembuatan gaya khusus.
+ Ya, Anda dapat menentukan dan menerapkan gaya khusus ke tabel Anda menggunakan Aspose.Words untuk Java. Periksa[dokumentasi](https://reference.aspose.com/words/java/) untuk detail lebih lanjut tentang pembuatan gaya khusus.
 
 ### 2. Bagaimana cara menerapkan pemformatan bersyarat pada tabel?
 

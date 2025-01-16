@@ -64,7 +64,7 @@ if (table.TextWrapping == TextWrapping.Around)
 }
 else
 {
-    // Om den inte är lindad, skaffa standardinriktningen
+    // Om den inte är inslagen, skaffa standardinriktningen
     Console.WriteLine(table.Alignment);
 }
 ```

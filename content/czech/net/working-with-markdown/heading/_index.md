@@ -90,4 +90,4 @@ Ano, Aspose.Words for .NET je optimalizován pro výkon a dokáže efektivně zp
 
 ### Kde najdu další dokumentaci a podporu?
 
- Pro podrobnou dokumentaci navštivte[zde](https://reference.aspose.com/words/net/) . Pro podporu, podívejte se na jejich[forum](https://forum.aspose.com/c/words/8).
+ Pro podrobnou dokumentaci navštivte[zde](https://reference.aspose.com/words/net/) . Pro podporu se podívejte na jejich[forum](https://forum.aspose.com/c/words/8).

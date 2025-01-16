@@ -49,7 +49,7 @@ doc.print("printerName");
 
 ```java
 // เรนเดอร์เอกสารเป็น PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  คุณสามารถแทนที่ได้`SaveFormat.PDF` ด้วยรูปแบบที่ต้องการให้แสดงผล

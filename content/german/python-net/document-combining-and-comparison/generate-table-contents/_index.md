@@ -19,10 +19,10 @@ Ein Inhaltsverzeichnis bietet eine Momentaufnahme der Struktur eines Dokuments u
 ## Laden eines Dokuments
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## Überschriften und Unterüberschriften definieren
@@ -31,25 +31,11 @@ Um ein Inhaltsverzeichnis zu erstellen, müssen Sie die Überschriften und Unter
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## Erstellen des Inhaltsverzeichnisses
-
-Nachdem wir nun unsere Überschriften und Unterüberschriften definiert haben, erstellen wir nun das Inhaltsverzeichnis selbst. Wir erstellen einen neuen Abschnitt am Anfang des Dokuments und füllen ihn mit dem entsprechenden Inhalt.
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## Anpassen des Inhaltsverzeichnisses
@@ -58,21 +44,10 @@ Sie können das Erscheinungsbild Ihres Inhaltsverzeichnisses anpassen, indem Sie
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## Hinzufügen von Hyperlinks
-
-Um das Inhaltsverzeichnis interaktiv zu gestalten, fügen Sie Hyperlinks hinzu, die es den Lesern ermöglichen, direkt zu den entsprechenden Abschnitten im Dokument zu springen.
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+``
 
 ## Gestaltung des Inhaltsverzeichnisses
 
@@ -81,16 +56,7 @@ Zum Gestalten des Inhaltsverzeichnisses gehört das Definieren geeigneter Absatz
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## Aktualisieren des Inhaltsverzeichnisses
-
-Wenn Sie Änderungen an der Struktur Ihres Dokuments vornehmen, können Sie das Inhaltsverzeichnis problemlos aktualisieren, um diese Änderungen widerzuspiegeln.
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## Automatisierung des Prozesses
@@ -101,27 +67,13 @@ Um Zeit zu sparen und Konsistenz sicherzustellen, können Sie ein Skript erstell
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## Umgang mit Seitenzahlen
-
-Sie können dem Inhaltsverzeichnis Seitenzahlen hinzufügen, um den Lesern mehr Kontext darüber zu geben, wo sie bestimmte Abschnitte finden.
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## Abschluss

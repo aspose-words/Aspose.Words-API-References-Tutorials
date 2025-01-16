@@ -38,23 +38,11 @@ Aspose.Words for Java एक मजबूत API है जो Java डेवल
 // आवश्यक पैकेज आयात करें
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // नया दस्तावेज़ आरंभ करें
-        Document doc = new Document();
-
-        // सूची बनाएं
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // सूची आइटम जोड़ें
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // दस्तावेज़ सहेजें
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## दस्तावेज़ सूची को संशोधित करना
@@ -69,21 +57,18 @@ public class DocumentListExample {
 दस्तावेज़ सूची को संशोधित करने के लिए यहां एक कोड स्निपेट दिया गया है:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // मौजूदा दस्तावेज़ लोड करें
-        Document doc = new Document("DocumentListExample.docx");
-
-        // सूची तक पहुंचें
-        List list = doc.getLists().get(0);
-
-        // नया आइटम जोड़ें
-        list.getListItems().add("New Item");
-
-        // संशोधित दस्तावेज़ सहेजें
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // जाँचें कि पैराग्राफ किसी सूची का हिस्सा है या नहीं।
+    if (paragraph.isListItem()) {
+        // अंतिम सूची पैराग्राफ को अद्यतन करें.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## दस्तावेज़ सूची से जानकारी निकालना
@@ -97,23 +82,21 @@ public class ModifyDocumentListExample {
 दस्तावेज़ सूची से जानकारी निकालने के लिए यहां एक कोड स्निपेट दिया गया है:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // दस्तावेज़ लोड करें
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // सूची तक पहुंचें
-        List list = doc.getLists().get(0);
-
-        // सूची आइटमों को पुनरावृत्त करें और उन्हें प्रिंट करें
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## अक्सर पूछे जाने वाले प्रश्न (एफएक्यू)
+## निष्कर्ष
+
+इस व्यापक गाइड में, हमने Aspose.Words for Java का उपयोग करके दस्तावेज़ सूचियों के साथ काम करने की दुनिया का पता लगाया है। आपने Aspose.Words for Java की शक्ति और लचीलेपन के साथ दस्तावेज़ सूचियों से जानकारी बनाना, संशोधित करना और निकालना सीखा है। आज ही अपने Java प्रोजेक्ट में इन तकनीकों को लागू करना शुरू करें और अपने दस्तावेज़ स्वचालन कार्यों को सुव्यवस्थित करें।
+
+
+## अक्सर पूछे जाने वाले प्रश्न
 
 ### मैं दस्तावेज़ सूची में बुलेट पॉइंट कैसे जोड़ूँ?
  दस्तावेज़ सूची में बुलेट पॉइंट जोड़ने के लिए, सूची बनाते समय उपयुक्त ListTemplate का उपयोग करें। उदाहरण के लिए, का उपयोग करें`ListTemplate.BULLET_DEFAULT` के बजाय`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ public class ExtractListItemsExample {
 
 ### क्या Java के लिए Aspose.Words दस्तावेज़ों में तालिकाओं के साथ काम करने का समर्थन करता है?
 हां, Java के लिए Aspose.Words तालिकाओं के साथ काम करने के लिए व्यापक समर्थन प्रदान करता है, जिससे आप आसानी से सारणीबद्ध डेटा बना सकते हैं, संशोधित कर सकते हैं और निकाल सकते हैं।
-
-## निष्कर्ष
-
-इस व्यापक गाइड में, हमने Aspose.Words for Java का उपयोग करके दस्तावेज़ सूचियों के साथ काम करने की दुनिया का पता लगाया है। आपने Aspose.Words for Java की शक्ति और लचीलेपन के साथ दस्तावेज़ सूचियों से जानकारी बनाना, संशोधित करना और निकालना सीखा है। आज ही अपने Java प्रोजेक्ट में इन तकनीकों को लागू करना शुरू करें और अपने दस्तावेज़ स्वचालन कार्यों को सुव्यवस्थित करें।

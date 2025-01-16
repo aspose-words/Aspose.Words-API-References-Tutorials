@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### ทำความเข้าใจ MoveToBookmark
 
-การ`MoveToBookmark`วิธีการนี้ช่วยให้คุณสามารถนำทางไปยังบุ๊กมาร์กที่ต้องการภายในเอกสารของคุณได้ ลายเซ็นของวิธีการคือ:
+ การ`MoveToBookmark`วิธีการนี้ช่วยให้คุณสามารถนำทางไปยังบุ๊กมาร์กที่ต้องการภายในเอกสารของคุณได้ ลายเซ็นของวิธีการคือ:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

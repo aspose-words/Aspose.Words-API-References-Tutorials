@@ -43,7 +43,7 @@ doc.startTrackRevisions("Author Name");
 
 ## 3. lépés: A változtatások áttekintése
 
-csapat tagjai áttekinthetik a dokumentumon végrehajtott módosításokat, és megjegyzéseket vagy javaslatokat tehetnek. Az Aspose.Words for Java lehetővé teszi ezeknek a megjegyzéseknek a programozott elérését és feldolgozását.
+A csapat tagjai áttekinthetik a dokumentumon végrehajtott módosításokat, és megjegyzéseket vagy javaslatokat tehetnek. Az Aspose.Words for Java lehetővé teszi ezeknek a megjegyzéseknek a programozott elérését és feldolgozását.
 
 ## Dokumentum áttekintése
 
@@ -70,11 +70,11 @@ A dokumentumok együttműködése és áttekintése a modern dokumentumkezelés 
 
 ### Nyomon követhetem a Word dokumentumok változásait az Aspose.Words for Java használatával?
 
-Igen, az Aspose.Words for Java lehetővé teszi a Word dokumentumok változásainak nyomon követését. Használhatja a`startTrackRevisions` módszer a változáskövetés engedélyezéséhez.
+ Igen, az Aspose.Words for Java lehetővé teszi a Word dokumentumok változásainak nyomon követését. Használhatja a`startTrackRevisions` módszer a változáskövetés engedélyezéséhez.
 
 ### Hogyan tekinthetem át a dokumentumon végrehajtott módosításokat?
 
-A dokumentumokon végrehajtott módosítások áttekintéséhez használhatja az Aspose.Words for Java szolgáltatásait a megjegyzések eléréséhez és feldolgozásához, valamint a módosítások elfogadásához vagy elutasításához.
+dokumentumokon végrehajtott módosítások áttekintéséhez használhatja az Aspose.Words for Java szolgáltatásait a megjegyzések eléréséhez és feldolgozásához, valamint a módosítások elfogadásához vagy elutasításához.
 
 ### Alkalmas az Aspose.Words for Java a közös dokumentumkezelésre?
 

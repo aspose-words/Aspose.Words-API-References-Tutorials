@@ -20,7 +20,7 @@ Aspose.Words voor Java is een krachtige bibliotheek voor documentverwerking waar
 
 ## 3. Uw ontwikkelomgeving instellen
 
-Zorg er om te beginnen voor dat u Aspose.Words voor Java in uw ontwikkelomgeving hebt geïnstalleerd. U kunt het downloaden van de[Aspose Downloads Pagina](https://releases.aspose.com/words/java/)Zodra het geïnstalleerd is, kunt u beginnen met coderen.
+ Zorg er om te beginnen voor dat u Aspose.Words voor Java in uw ontwikkelomgeving hebt geïnstalleerd. U kunt het downloaden van de[Aspose Downloads Pagina](https://releases.aspose.com/words/java/)Zodra het geïnstalleerd is, kunt u beginnen met coderen.
 
 ## 4. De licentie toepassen
 
@@ -48,7 +48,7 @@ Test na het toepassen van de licentie uw Aspose.Words-applicatie grondig om te v
 ## Volledige broncode
 ```java
         License license = new License();
-        //Met deze regel wordt geprobeerd een licentie in te stellen vanaf verschillende locaties ten opzichte van het uitvoerbare bestand en Aspose.Words.dll.
+        // Met deze regel wordt geprobeerd een licentie in te stellen vanaf verschillende locaties ten opzichte van het uitvoerbare bestand en Aspose.Words.dll.
         // Je kunt de extra overload ook gebruiken om een licentie van een stream te laden, dit is handig,
         // bijvoorbeeld wanneer de licentie is opgeslagen als een ingebedde bron.
         try

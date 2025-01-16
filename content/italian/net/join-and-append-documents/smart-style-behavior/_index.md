@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Spiegazione:
-IL`DocumentBuilder` è uno strumento utile che fornisce metodi per navigare e modificare il documento. Qui, lo stiamo collegando al nostro documento di destinazione.
+ IL`DocumentBuilder` è uno strumento utile che fornisce metodi per navigare e modificare il documento. Qui, lo stiamo collegando al nostro documento di destinazione.
 
 ## Passaggio 3: passare alla fine del documento e inserire un'interruzione di pagina
 

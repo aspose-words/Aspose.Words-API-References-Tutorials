@@ -53,13 +53,13 @@ Explication:
 Ensuite, nous devons définir un mot de passe pour la protection en écriture. Ce mot de passe peut contenir jusqu'à 15 caractères.
 
 ```csharp
-//Entrez un mot de passe contenant jusqu'à 15 caractères.
+// Entrez un mot de passe contenant jusqu'à 15 caractères.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Explication:
 
-- Le`SetPassword` la méthode est appelée sur le`WriteProtection` propriété du document.
+-  Le`SetPassword` la méthode est appelée sur le`WriteProtection` propriété du document.
 - Nous fournissons un mot de passe (« MyPassword » dans ce cas) qui sera nécessaire pour supprimer la protection.
 
 ## Étape 3 : Activer la recommandation en lecture seule
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Explication:
 
-- Le`ReadOnlyRecommended` la propriété est définie sur`true`.
+-  Le`ReadOnlyRecommended` la propriété est définie sur`true`.
 - Cela invitera les utilisateurs à ouvrir le document en mode lecture seule, bien qu'ils puissent choisir d'ignorer la recommandation.
 
 ## Étape 4 : appliquer la protection en lecture seule
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Explication:
 
-- Le`Protect` la méthode est appelée sur le document avec`ProtectionType.ReadOnly` comme argument.
+-  Le`Protect` la méthode est appelée sur le document avec`ProtectionType.ReadOnly` comme argument.
 - Cette méthode applique la protection en lecture seule, empêchant toute modification du document sans le mot de passe.
 
 ## Étape 5 : Enregistrer le document
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Explication:
 
-- Le`Save` la méthode est appelée sur le document, spécifiant le chemin et le nom du fichier.
+-  Le`Save` la méthode est appelée sur le document, spécifiant le chemin et le nom du fichier.
 - Le document est enregistré avec la protection en lecture seule en place.
 
 ## Conclusion

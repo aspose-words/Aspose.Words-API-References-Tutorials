@@ -13,11 +13,11 @@ Odemkněte sílu Aspose.Words for Java a zabezpečte své dokumenty hesly. V tom
 
 ## Zavedení
 
-dnešním digitálním světě je bezpečnost dat prvořadá. Ať už pracujete s důvěrnými obchodními dokumenty nebo osobními soubory, je zásadní zajistit, aby k vašim dokumentům měly přístup pouze oprávněné osoby. Tento podrobný průvodce vám ukáže, jak používat Aspose.Words pro Java k přidání robustní vrstvy zabezpečení do vašich dokumentů použitím hesel.
+V dnešním digitálním světě je bezpečnost dat prvořadá. Ať už pracujete s důvěrnými obchodními dokumenty nebo osobními soubory, je zásadní zajistit, aby k vašim dokumentům měly přístup pouze oprávněné osoby. Tento podrobný průvodce vám ukáže, jak používat Aspose.Words pro Java k přidání robustní vrstvy zabezpečení do vašich dokumentů použitím hesel.
 
 ## Nastavení Aspose.Words pro Java
 
- Než se ponoříme do zabezpečení dokumentů, ujistěte se, že máte Aspose.Words for Java nastaveno ve vašem prostředí Java. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
+Než se ponoříme do zabezpečení dokumentů, ujistěte se, že máte Aspose.Words for Java nastaveno ve vašem prostředí Java. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Zabezpečení dokumentů: Krok za krokem
 

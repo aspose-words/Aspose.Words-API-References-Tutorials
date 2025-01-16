@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### MoveToBookmark 이해
 
-그만큼`MoveToBookmark`method를 사용하면 문서 내의 특정 북마크로 이동할 수 있습니다. method signature는 다음과 같습니다.
+ 그만큼`MoveToBookmark`method를 사용하면 문서 내의 특정 북마크로 이동할 수 있습니다. method signature는 다음과 같습니다.
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

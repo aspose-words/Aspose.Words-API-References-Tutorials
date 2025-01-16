@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Etapa 3: Configurar as configurações de fonte
 
-Criar um novo`FontSettings` objeto e carregue as configurações de fallback de fonte de um arquivo XML. Este arquivo XML contém as regras para fallback de fonte.
+ Criar um novo`FontSettings` objeto e carregue as configurações de fallback de fonte de um arquivo XML. Este arquivo XML contém as regras para fallback de fonte.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

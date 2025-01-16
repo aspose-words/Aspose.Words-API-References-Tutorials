@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-IL`EvaluateCondition` il metodo restituisce un`FieldIfComparisonResult` enum che rappresenta il risultato della valutazione della condizione. Questo enum può avere valori come`True`, `False` , O`Unknown`.
+ IL`EvaluateCondition` il metodo restituisce un`FieldIfComparisonResult` enum che rappresenta il risultato della valutazione della condizione. Questo enum può avere valori come`True`, `False` , O`Unknown`.
 
 ## Passaggio 4: visualizzare il risultato
 
@@ -93,7 +93,7 @@ Un campo IF è un campo Word che consente di inserire una logica condizionale ne
  È possibile inserire un campo SE utilizzando`InsertField` metodo del`DocumentBuilder` classe, specificando la condizione che si desidera valutare.
 
 ###  Cosa fa?`EvaluateCondition` method do?
-IL`EvaluateCondition` Il metodo valuta la condizione specificata in un campo IF e restituisce il risultato, indicando se la condizione è vera o falsa.
+ IL`EvaluateCondition` Il metodo valuta la condizione specificata in un campo IF e restituisce il risultato, indicando se la condizione è vera o falsa.
 
 ### Posso utilizzare condizioni complesse con il campo SE?
 Sì, è possibile utilizzare condizioni complesse con il campo SE specificando espressioni e confronti diversi a seconda delle esigenze.

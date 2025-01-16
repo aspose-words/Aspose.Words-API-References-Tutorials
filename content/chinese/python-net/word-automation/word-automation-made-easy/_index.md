@@ -7,10 +7,9 @@ type: docs
 weight: 10
 url: /zh/python-net/word-automation/word-automation-made-easy/
 ---
-
 ## 介绍
 
-在当今快节奏的世界中，自动化任务已成为提高效率和生产力的必要条件。其中一项任务是 Word 自动化，我们可以通过编程创建、操作和处理 Word 文档。在本分步教程中，我们将探索如何使用 Aspose.Words for Python 轻松实现 Word 自动化，这是一个功能强大的库，可提供广泛的文字处理和文档操作功能。
+在当今快节奏的世界中，自动化任务已成为提高效率和生产力的必要条件。其中一项任务是 Word 自动化，我们可以在其中以编程方式创建、操作和处理 Word 文档。在本分步教程中，我们将探索如何使用 Aspose.Words for Python 轻松实现 Word 自动化，这是一个功能强大的库，可提供用于文字处理和文档操作的各种功能。
 
 ## 了解 Word 自动化
 
@@ -67,14 +66,27 @@ font.bold = True
 表格是 Word 文档中的一个重要元素，Aspose.Words 可以轻松使用表格。
 
 ```python
-# Add a table to the document
-table = doc.get_child_nodes(aw.NodeType.TABLE, True).add()
-
-# Add rows and cells to the table
-table.ensure_minimum()
-for row in table.rows:
-    for cell in row.cells:
-        cell.get_first_paragraph().get_runs().add("Cell Text")
+builder = aw.DocumentBuilder(doc=doc)
+table = builder.start_table()
+builder.insert_cell()
+builder.write('City')
+builder.insert_cell()
+builder.write('Country')
+builder.end_row()
+builder.insert_cell()
+builder.write('London')
+builder.insert_cell()
+builder.write('U.K.')
+builder.end_table()
+# Use the first row's "RowFormat" property to modify the formatting
+# of the contents of all cells in this row.
+row_format = table.first_row.row_format
+row_format.height = 25
+row_format.borders.get_by_border_type(aw.BorderType.BOTTOM).color = aspose.pydrawing.Color.red
+# Use the "CellFormat" property of the first cell in the last row to modify the formatting of that cell's contents.
+cell_format = table.last_row.first_cell.cell_format
+cell_format.width = 100
+cell_format.shading.background_pattern_color = aspose.pydrawing.Color.orange
 ```
 
 ## 插入图像和形状
@@ -107,7 +119,7 @@ section.page_setup.orientation = aw.Orientation.LANDSCAPE
 
 ```python
 # Save the document to a file
-doc.save("output.docx", aw.SaveFormat.DOCX)
+doc.save("output.docx")
 ```
 
 ## 高级 Word 自动化功能

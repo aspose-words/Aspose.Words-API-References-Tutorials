@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
-透過使用`StartTable`，我們告訴 Aspose.Words 我們將要建立一個表格。這`InsertCell`方法添加第一個單元格，並且`AutoFit`確保我們的列具有固定寬度。
+透過使用`StartTable` ，我們告訴 Aspose.Words 我們將要建立一個表格。這`InsertCell`方法添加第一個單元格，並且`AutoFit`確保我們的列具有固定寬度。
 
 ## 第 3 步：設定第一行的格式
 

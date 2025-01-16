@@ -73,7 +73,7 @@ Tento fragment kódu předpokládá, že chcete naklonovat první tabulku v doku
 Table tableClone = (Table) table.Clone(true);
 ```
 
-The`true` Parametr zajišťuje, že klon zahrnuje veškeré formátování a obsah z původní tabulky.
+ The`true` Parametr zajišťuje, že klon zahrnuje veškeré formátování a obsah z původní tabulky.
 
 ## Krok 5: Vložte klonovanou tabulku do dokumentu
 
@@ -115,7 +115,7 @@ Klonování tabulek v dokumentech aplikace Word pomocí Aspose.Words for .NET je
 Ano, můžete klonovat více tabulek procházením každé tabulky v dokumentu a použitím stejné klonovací logiky.
 
 ### Co když má tabulka sloučené buňky?
-The`Clone` metoda zachovává veškeré formátování, včetně sloučených buněk, čímž zajišťuje přesný duplikát tabulky.
+ The`Clone` metoda zachovává veškeré formátování, včetně sloučených buněk, čímž zajišťuje přesný duplikát tabulky.
 
 ### Jak naklonuji konkrétní tabulku podle názvu?
 Tabulky můžete identifikovat podle uživatelských vlastností nebo jedinečného obsahu a poté pomocí podobných kroků naklonovat požadovanou tabulku.

@@ -61,7 +61,7 @@ Sau khi tài liệu được tải, chúng ta có thể tiến hành xóa văn b
 2.  Xóa phạm vi: Sử dụng`Range.Delete` phương pháp xóa toàn bộ văn bản trong phần này.
 
 ```csharp
-//Xóa văn bản trong phần đầu tiên của tài liệu
+// Xóa văn bản trong phần đầu tiên của tài liệu
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Aspose.Words for .NET là một thư viện lớp để xử lý các tài liệ
 
 ### Tôi có thể xóa văn bản khỏi một đoạn văn cụ thể thay vì một phần không?
 
-Có, bạn có thể xóa văn bản khỏi một đoạn văn cụ thể bằng cách truy cập đoạn văn mong muốn và sử dụng`Range.Delete` phương pháp.
+ Có, bạn có thể xóa văn bản khỏi một đoạn văn cụ thể bằng cách truy cập đoạn văn mong muốn và sử dụng`Range.Delete` phương pháp.
 
 ### Có thể xóa văn bản có điều kiện không?
 

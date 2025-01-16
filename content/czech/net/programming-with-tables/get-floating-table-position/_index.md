@@ -13,7 +13,7 @@ Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes vás vezmeme 
 
 ## Předpoklady
 
-Než se vrhneme na zábavnou část, je třeba mít na paměti několik věcí:
+Než se pustíme do té zábavné části, je třeba mít na paměti několik věcí:
 
 1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si a nainstalujte Aspose.Words for .NET z[Aspose stránku vydání](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Ujistěte se, že máte nastavené vývojové prostředí .NET. Visual Studio je skvělá volba.

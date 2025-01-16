@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## 문서 병합
-
-문서를 매끄럽게 결합하는 것은 귀중한 기술입니다. 문서를 탐색하면 효율적으로 병합하는 데 도움이 됩니다.
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## 문서 분할
 
 때때로 문서를 더 작은 부분으로 나누어야 할 수도 있습니다. 문서를 탐색하면 이를 달성하는 데 도움이 됩니다.
@@ -117,8 +109,8 @@ for section in sections:
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

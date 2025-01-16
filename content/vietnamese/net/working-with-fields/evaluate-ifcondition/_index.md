@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-Các`EvaluateCondition` phương pháp trả về một`FieldIfComparisonResult` enum biểu diễn kết quả của đánh giá điều kiện. Enum này có thể có các giá trị như`True`, `False` , hoặc`Unknown`.
+ Các`EvaluateCondition` phương pháp trả về một`FieldIfComparisonResult` enum biểu diễn kết quả của đánh giá điều kiện. Enum này có thể có các giá trị như`True`, `False` , hoặc`Unknown`.
 
 ## Bước 4: Hiển thị kết quả
 
@@ -93,7 +93,7 @@ Trường IF là trường Word cho phép bạn chèn logic có điều kiện v
  Bạn có thể chèn một trường IF bằng cách sử dụng`InsertField` phương pháp của`DocumentBuilder` lớp, chỉ rõ điều kiện bạn muốn đánh giá.
 
 ###  Cái gì làm`EvaluateCondition` method do?
-Các`EvaluateCondition` phương pháp này đánh giá điều kiện được chỉ định trong trường IF và trả về kết quả, cho biết điều kiện là đúng hay sai.
+ Các`EvaluateCondition` phương pháp này đánh giá điều kiện được chỉ định trong trường IF và trả về kết quả, cho biết điều kiện là đúng hay sai.
 
 ### Tôi có thể sử dụng các điều kiện phức tạp với trường IF không?
 Có, bạn có thể sử dụng các điều kiện phức tạp với trường IF bằng cách chỉ định các biểu thức và so sánh khác nhau khi cần.

@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /vi/python-net/word-automation/word-automation-made-easy/
 ---
-
 ## Giới thiệu
 
 Trong thế giới phát triển nhanh chóng ngày nay, việc tự động hóa các tác vụ đã trở nên thiết yếu để cải thiện hiệu quả và năng suất. Một trong những tác vụ như vậy là Word Automation, nơi chúng ta có thể tạo, thao tác và xử lý các tài liệu Word theo chương trình. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách đạt được Word Automation dễ dàng bằng Aspose.Words for Python, một thư viện mạnh mẽ cung cấp nhiều tính năng để xử lý văn bản và thao tác tài liệu.
@@ -67,14 +66,27 @@ font.bold = True
 Bảng là thành phần quan trọng trong tài liệu Word và Aspose.Words giúp bạn làm việc với bảng một cách dễ dàng.
 
 ```python
-# Add a table to the document
-table = doc.get_child_nodes(aw.NodeType.TABLE, True).add()
-
-# Add rows and cells to the table
-table.ensure_minimum()
-for row in table.rows:
-    for cell in row.cells:
-        cell.get_first_paragraph().get_runs().add("Cell Text")
+builder = aw.DocumentBuilder(doc=doc)
+table = builder.start_table()
+builder.insert_cell()
+builder.write('City')
+builder.insert_cell()
+builder.write('Country')
+builder.end_row()
+builder.insert_cell()
+builder.write('London')
+builder.insert_cell()
+builder.write('U.K.')
+builder.end_table()
+# Use the first row's "RowFormat" property to modify the formatting
+# of the contents of all cells in this row.
+row_format = table.first_row.row_format
+row_format.height = 25
+row_format.borders.get_by_border_type(aw.BorderType.BOTTOM).color = aspose.pydrawing.Color.red
+# Use the "CellFormat" property of the first cell in the last row to modify the formatting of that cell's contents.
+cell_format = table.last_row.first_cell.cell_format
+cell_format.width = 100
+cell_format.shading.background_pattern_color = aspose.pydrawing.Color.orange
 ```
 
 ## Chèn hình ảnh và hình dạng
@@ -107,7 +119,7 @@ Sau khi hoàn tất việc chỉnh sửa tài liệu, chúng ta có thể lưu t
 
 ```python
 # Save the document to a file
-doc.save("output.docx", aw.SaveFormat.DOCX)
+doc.save("output.docx")
 ```
 
 ## Tính năng tự động hóa từ nâng cao

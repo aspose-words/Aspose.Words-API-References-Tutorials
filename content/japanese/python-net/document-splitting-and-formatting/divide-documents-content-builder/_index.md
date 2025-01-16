@@ -48,7 +48,7 @@ builder = aw.DocumentBuilder(doc)
 
 # Add a title
 builder.bold()
-builder.font.size = aw.units.point_to_twip(16)
+builder.font.size = 16
 builder.write("Document Precision with Content Builder\n\n")
 
 # Add an introduction
@@ -92,7 +92,7 @@ for section in sections:
 次のコマンドを使用してインストールできます:`pip install aspose-words`.
 
 ### どのような種類のセクション区切りが利用できますか?
-Aspose.Words for Python は、新しいページ、連続、さらにはページ区切りなど、さまざまなセクション区切りタイプを提供します。
+Aspose.Words for Python は、新しいページ、連続、さらにはページ区切りなど、さまざまなセクション区切りの種類を提供します。
 
 ### 各セクションの書式をカスタマイズできますか?
 はい、コンテンツ ビルダー モジュールを使用して、各セクションに異なる書式、スタイル、フォントを適用できます。

@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-Itu`Aspose.Words` namespace memberi Anda akses ke semua kelas dan metode yang diperlukan untuk memanipulasi dokumen Word, sementara`System` digunakan untuk fungsionalitas dasar seperti keluaran konsol.
+ Itu`Aspose.Words` namespace memberi Anda akses ke semua kelas dan metode yang diperlukan untuk memanipulasi dokumen Word, sementara`System` digunakan untuk fungsionalitas dasar seperti keluaran konsol.
 
 Mari kita uraikan proses mengekstrak nama bidang gabungan surat ke dalam panduan yang jelas langkah demi langkah.
 
@@ -73,7 +73,7 @@ Judul: Ekstrak Nama Bidang Gabungan Surat
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-Itu`GetFieldNames()`metode mengembalikan serangkaian string, yang masing-masing mewakili nama bidang gabungan surat yang ditemukan dalam dokumen. Ini adalah tempat penampung yang akan Anda lihat dalam dokumen Word Anda.
+ Itu`GetFieldNames()`metode mengembalikan serangkaian string, yang masing-masing mewakili nama bidang gabungan surat yang ditemukan dalam dokumen. Ini adalah tempat penampung yang akan Anda lihat dalam dokumen Word Anda.
 
 ## Langkah 4: Menampilkan Jumlah Bidang Gabungan
 

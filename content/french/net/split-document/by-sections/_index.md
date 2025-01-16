@@ -86,7 +86,7 @@ Enfin, nous enregistrons chaque nouveau document avec un nom unique. Cette étap
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-Le`Save` La méthode enregistre le nouveau document dans le répertoire spécifié avec un nom unique basé sur l'index de la section.
+ Le`Save` La méthode enregistre le nouveau document dans le répertoire spécifié avec un nom unique basé sur l'index de la section.
 
 ## Conclusion
 

@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## 텍스트 바꾸기
-
-때로는 특정 텍스트를 새 콘텐츠로 바꾸고 싶을 수도 있습니다. 다음은 이를 수행하는 방법의 예입니다.
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## 이미지 제거
 
 문서에서 이미지를 제거해야 하는 경우 비슷한 방법을 사용할 수 있습니다. 먼저 이미지를 식별한 다음 제거합니다.
@@ -92,22 +79,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## 정규 표현식으로 찾기 및 바꾸기
-
-정규 표현식은 콘텐츠를 찾고 바꾸는 강력한 방법을 제공합니다.
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## 특정 콘텐츠 추출

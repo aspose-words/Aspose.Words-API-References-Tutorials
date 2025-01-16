@@ -40,7 +40,7 @@ Először is állítsa be projektjét a Visual Studióban. Hozzon létre egy új
 Document doc = new Document();
 ```
 
-## 2. lépés: Módosítsa a tartalomjegyzék stílusát
+## 2. lépés: Módosítsa a TOC stílust
 
 Ezután módosítsuk a tartalomjegyzék (TOC) első szintjének stílusát.
 

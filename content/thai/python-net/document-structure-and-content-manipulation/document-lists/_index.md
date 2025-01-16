@@ -16,7 +16,7 @@ url: /th/python-net/document-structure-and-content-manipulation/document-lists/
 
 ## การจัดเตรียมสภาพแวดล้อม
 
-ก่อนที่เราจะลงลึกในการสร้างและจัดการรายการ โปรดตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งไลบรารี Aspose.Words สำหรับ Python แล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/python/) นอกจากนี้ โปรดดูเอกสาร API ได้ที่[ลิงค์นี้](https://reference.aspose.com/words/python-net/) เพื่อดูข้อมูลโดยละเอียด
+ ก่อนที่เราจะลงลึกในการสร้างและจัดการรายการ โปรดตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งไลบรารี Aspose.Words สำหรับ Python แล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/python/) นอกจากนี้ โปรดดูเอกสาร API ได้ที่[ลิงค์นี้](https://reference.aspose.com/words/python-net/) เพื่อดูข้อมูลโดยละเอียด
 
 ## การสร้างรายการแบบมีหัวข้อย่อย
 
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]

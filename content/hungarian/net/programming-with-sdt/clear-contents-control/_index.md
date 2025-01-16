@@ -104,7 +104,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való pro
 
 ### Mik azok a strukturált dokumentumcímkék?
 
-A strukturált dokumentumcímkék (SDT) olyan tartalomvezérlők a Word-dokumentumokban, amelyek bizonyos típusú tartalom helyőrzőiként működnek.
+A strukturált dokumentumcímkék (SDT) olyan tartalomvezérlők a Word-dokumentumokban, amelyek bizonyos típusú tartalmak helyőrzőiként működnek.
 
 ### Hol találom az Aspose.Words dokumentációját?
 

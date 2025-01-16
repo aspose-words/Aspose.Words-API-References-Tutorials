@@ -38,7 +38,7 @@ Ezután létrehozunk egy nyomtatási feladatot a betöltött dokumentumunk kinyo
 ```java
 // Hozzon létre egy nyomtatási feladatot a dokumentumunk nyomtatásához.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Inicializáljon egy attribútumkészletet a dokumentum oldalainak számával.
+// Inicializáljon egy attribútumkészletet a dokumentum oldalainak számával.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Adja át a nyomtató beállításait a többi paraméterrel együtt a nyomtatási dokumentumnak.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Hozzon létre egy nyomtatási feladatot a dokumentumunk nyomtatásához.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Inicializáljon egy attribútumkészletet a dokumentum oldalainak számával.
+// Inicializáljon egy attribútumkészletet a dokumentum oldalainak számával.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Adja át a nyomtató beállításait a többi paraméterrel együtt a nyomtatási dokumentumnak.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Az oldal kezdő és záró indexei az attribútumkészletben meghatározottak szerint.
+        //Az oldal kezdő és záró indexei az attribútumkészletben meghatározottak szerint.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Válassza ki az erre a papírlapra nyomtatandó utolsó oldal számát.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Lapozás a kiválasztott oldalakon a tárolt aktuális oldaltól a számítottig
+        // Lapozás a kiválasztott oldalakon a tárolt aktuális oldaltól a számítottig
         // utolsó oldal.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Számítsa ki az oszlop- és sorindexeket!
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // A hasznos visszatérési érték az a lépték, amelyen az oldal renderelésre került.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Rajzolja meg az oldalszegélyeket (az oldal bélyegképe kisebb lehet, mint a miniatűr
+                //Rajzolja meg az oldalszegélyeket (az oldal bélyegképe kisebb lehet, mint a miniatűr
                 // helyőrző mérete).
                 if (mPrintPageBorders) {
                     // Szerezze meg az oldal valódi 100%-os méretét pontokban.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Határozza meg az oszlopok és sorok számát a lapon a
-        //Fekvő tájolású papír.
+        // Fekvő tájolású papír.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ Gratulálok! Sikeresen kinyomtatott egy Word-dokumentumot az Aspose.Words for Ja
 
 ### 1. kérdés: Kinyomtathatok egy dokumentum bizonyos oldalait az Aspose.Words for Java használatával?
 
- Igen, dokumentum nyomtatásakor megadhatja az oldaltartományt. A kódpéldában használtuk`attributes.add(new PageRanges(1, doc.getPageCount()))` az összes oldal kinyomtatásához. Igény szerint módosíthatja az oldaltartományt.
+ Igen, dokumentum nyomtatásakor megadhatja az oldaltartományt. A kódpéldában használtuk`attributes.add(new PageRanges(1, doc.getPageCount()))`az összes oldal kinyomtatásához. Igény szerint módosíthatja az oldaltartományt.
 
 ### 2. kérdés: Az Aspose.Words for Java alkalmas kötegelt nyomtatásra?
 
@@ -196,7 +196,7 @@ Teljesen! Az Aspose.Words for Java kiválóan alkalmas kötegelt nyomtatási fel
 
 ### 3. kérdés: Hogyan kezelhetem a nyomtatási hibákat vagy kivételeket?
 
-nyomtatási folyamat során esetlegesen előforduló kivételeket kezelnie kell. A kivételek kezelésével kapcsolatos információkért tekintse meg az Aspose.Words for Java dokumentációját.
+A nyomtatási folyamat során esetlegesen előforduló kivételeket kezelnie kell. A kivételek kezelésével kapcsolatos információkért tekintse meg az Aspose.Words for Java dokumentációját.
 
 ### 4. kérdés: Testreszabhatom a nyomtatási beállításokat?
 

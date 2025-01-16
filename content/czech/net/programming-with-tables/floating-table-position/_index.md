@@ -15,7 +15,7 @@ Jste připraveni ponořit se do světa manipulace s pozicemi tabulek v dokumente
 
 Než se vydáme na tuto vzrušující cestu, ujistěte se, že máme vše, co potřebujeme:
 
-1. Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi. Pokud ne,[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi. Pokud ne,[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že vaše vývojové prostředí je nastaveno na .NET.
 3. Vývojové prostředí: Visual Studio nebo jakékoli preferované IDE.
 4. Dokument aplikace Word: Připravte si dokument aplikace Word, který obsahuje tabulku.
@@ -99,7 +99,7 @@ tady to máte! Právě jste zvládli, jak ovládat plovoucí pozici tabulek v do
 
 ### Jak zarovnám tabulku napravo od dokumentu?
 
- Chcete-li tabulku zarovnat doprava, můžete nastavit`HorizontalAlignment` vlastnost tabulky na`HorizontalAlignment.Right`.
+ Chcete-li tabulku zarovnat doprava, můžete nastavit`HorizontalAlignment` vlastnost stolu k`HorizontalAlignment.Right`.
 
 ### Je možné umístit více tabulek různě ve stejném dokumentu?
 

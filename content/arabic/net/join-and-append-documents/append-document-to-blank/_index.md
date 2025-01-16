@@ -122,7 +122,7 @@ using Aspose.Words;
 
 ### ماذا يحدث إذا كان المستند المصدر يحتوي على تنسيق مختلف؟
 
-ال`ImportFormatMode.KeepSourceFormatting` يضمن الحفاظ على تنسيق المستند المصدر عند إضافته.
+ ال`ImportFormatMode.KeepSourceFormatting` يضمن الحفاظ على تنسيق المستند المصدر عند إضافته.
 
 ### هل أحتاج إلى ترخيص لاستخدام Aspose.Words؟
 

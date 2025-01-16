@@ -60,7 +60,7 @@ try {
 ```
 
 Vysvětlení:
-- The`try-catch` blok zajišťuje, že všechny chyby, ke kterým dojde při načítání dokumentu, budou zachyceny a náležitě spravovány.
+-  The`try-catch`blok zajišťuje, že všechny chyby, ke kterým dojde při načítání dokumentu, budou zachyceny a náležitě spravovány.
 
 ## Krok 2: Inicializujte ImageSaveOptions
 
@@ -71,7 +71,7 @@ Po načtení dokumentu je dalším krokem nastavení možností pro uložení do
 `ImageSaveOptions` je třída, která umožňuje určit, jak se má dokument uložit jako obrázek.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 Vysvětlení:

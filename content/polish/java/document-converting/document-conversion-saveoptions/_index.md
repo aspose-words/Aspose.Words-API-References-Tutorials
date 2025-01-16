@@ -10,7 +10,7 @@ url: /pl/java/document-converting/document-conversion-saveoptions/
 
 ## Wstęp
 
-Jeśli kiedykolwiek musiałeś przekonwertować dokumenty do różnych formatów, wiesz, jak ważne jest posiadanie precyzyjnej kontroli nad procesem konwersji. Niezależnie od tego, czy chodzi o zwiększenie dostępności, zapewnienie zgodności z różnymi urządzeniami, czy po prostu poprawę czytelności, dokładna konwersja dokumentów może mieć ogromne znaczenie. W tym przewodniku zagłębimy się w konwersję dokumentów przy użyciu Aspose.Words for Java. Skupimy się konkretnie na konwersji dokumentu do formatu EPUB z niestandardowymi opcjami. Ta potężna funkcja pozwala Ci dostroić sposób zapisywania i dzielenia dokumentu, zapewniając, że spełnia on Twoje dokładne potrzeby.
+Jeśli kiedykolwiek musiałeś przekonwertować dokumenty do różnych formatów, wiesz, jak ważne jest posiadanie precyzyjnej kontroli nad procesem konwersji. Niezależnie od tego, czy chodzi o zwiększenie dostępności, zapewnienie zgodności z różnymi urządzeniami, czy po prostu poprawę czytelności, dokładna konwersja dokumentów może mieć ogromne znaczenie. W tym przewodniku zagłębimy się w konwersję dokumentów przy użyciu Aspose.Words for Java. Skupimy się konkretnie na konwersji dokumentu do formatu EPUB z niestandardowymi opcjami. Ta potężna funkcja pozwala na dokładne dostrojenie sposobu zapisywania i dzielenia dokumentu, zapewniając, że spełnia on Twoje dokładne potrzeby.
 
 ## Wymagania wstępne
 
@@ -49,7 +49,7 @@ Następnie skonfigurujesz opcje zapisywania dokumentu. Tutaj możesz określić 
 
 ```java
 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.setSaveFormat(SaveFormat.EPUB);
+saveOptions.setSaveFormat();
 saveOptions.setEncoding(StandardCharsets.UTF_8);
 ```
 

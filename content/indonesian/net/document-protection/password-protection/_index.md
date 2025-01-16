@@ -18,7 +18,7 @@ Sebelum kita menyelami seluk-beluk perlindungan kata sandi pada dokumen Word And
 1.  Aspose.Words untuk .NET: Pastikan Anda memiliki pustaka Aspose.Words untuk .NET. Anda dapat[unduh disini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan C# lainnya.
 3. Pengetahuan Dasar C#: Pemahaman mendasar tentang pemrograman C#.
-4. Lisensi Aspose: Dapatkan lisensi dari[Di Sini](https://purchase.aspose.com/buy) atau menggunakan[lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk evaluasi.
+4.  Lisensi Aspose: Dapatkan lisensi dari[Di Sini](https://purchase.aspose.com/buy) atau menggunakan[lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk evaluasi.
 
 ## Mengimpor Ruang Nama
 
@@ -64,7 +64,7 @@ Di sinilah keajaiban terjadi. Kami akan menerapkan perlindungan kata sandi pada 
 
 ### Pilih Jenis Perlindungan
 
- Aspose.Words menawarkan berbagai jenis perlindungan, seperti`NoProtection`, `ReadOnly`, `AllowOnlyComments` , Dan`AllowOnlyFormFields` Untuk contoh ini, kita akan menggunakan`NoProtection` tetapi dengan kata sandi, yang pada dasarnya berarti dokumen tersebut dapat diedit tetapi memerlukan kata sandi untuk menghilangkan perlindungan.
+ Aspose.Words menawarkan berbagai jenis perlindungan, seperti`NoProtection`, `ReadOnly`, `AllowOnlyComments` , Dan`AllowOnlyFormFields`Untuk contoh ini, kita akan menggunakan`NoProtection` tetapi dengan kata sandi, yang pada dasarnya berarti dokumen tersebut dapat diedit tetapi memerlukan kata sandi untuk menghilangkan perlindungan.
 
 ### Terapkan Perlindungan
 
@@ -94,7 +94,7 @@ Nah, itu dia! Anda telah berhasil menambahkan proteksi kata sandi ke dokumen Wor
 
 ### Dapatkah saya menggunakan jenis perlindungan yang berbeda dengan Aspose.Words?
 
- Ya, Aspose.Words mendukung berbagai jenis perlindungan, termasuk`ReadOnly`, `AllowOnlyComments` , Dan`AllowOnlyFormFields`.
+Ya, Aspose.Words mendukung berbagai jenis perlindungan, termasuk`ReadOnly`, `AllowOnlyComments` , Dan`AllowOnlyFormFields`.
 
 ### Bagaimana cara menghapus proteksi kata sandi dari sebuah dokumen?
 
@@ -110,4 +110,4 @@ Ya, Aspose.Words kompatibel dengan .NET Core, .NET Framework, dan platform .NET 
 
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words?
 
-Anda dapat menemukan dokumentasi lebih lanjut di[Halaman dokumentasi Aspose.Words](https://reference.aspose.com/words/net/).
+ Anda dapat menemukan dokumentasi lebih lanjut di[Halaman dokumentasi Aspose.Words](https://reference.aspose.com/words/net/).

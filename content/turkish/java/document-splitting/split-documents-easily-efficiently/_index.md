@@ -35,15 +35,12 @@ Bir belgeyi bölmenin en basit yollarından biri, tek tek sayfalara ayırmaktır
 Aspose.Words for Java kullanarak bir belgeyi sayfalara göre bölmek için şu adımları izleyin:
 
 ```java
-// Java için Aspose.Words kullanarak bir belgeyi sayfalara bölmek için Java kodu
-Document doc = new Document("input.docx");
+Document doc = new Document("Your Directory Path" + "Big document.docx");
 int pageCount = doc.getPageCount();
-
-for (int i = 0; i < pageCount; i++) {
-    Document pageDoc = new Document();
-    pageDoc.getFirstSection().getBody().appendChild(
-            doc.getLastSection().getBody().getChildNodes().get(i).clone(true));
-    pageDoc.save("output_page_" + (i + 1) + ".docx");
+for (int page = 0; page < pageCount; page++)
+{
+    Document extractedPage = doc.extractPages(page, 1);
+    extractedPage.save("Your Directory Path" + "SplitDocument.PageByPage_" + (page + 1) + ".docx");
 }
 ```
 
@@ -110,48 +107,28 @@ for (int i = 0; i < doc.getSections().getCount(); i++) {
 }
 ```
 
-## 8. Gelişmiş Belge Bölme Teknikleri
-
-### 8.1 Belirli Bölümleri Ayrı Belgelere Bölme
-
-Bazı durumlarda, yalnızca belirli bölümleri ayrı belgelere bölmek isteyebilirsiniz. Java için Aspose.Words, hangi bölümlerin bölüneceğini belirlemek için özel ölçütler tanımlamanıza olanak tanır.
-
-## 8.2 Özel Kriterlere Dayalı Belgeleri Bölme
-
-İçerik, anahtar kelimeler veya meta veriler gibi belirli ölçütlere göre belgeleri bölmek için özel mantığınızı uygulayabilirsiniz. Bu esneklik, belge bölme sürecini benzersiz gereksinimlerinize göre uyarlayabilmenizi sağlar.
-
-## 9. Bölünmüş Belgeleri Birleştirme
-
-Java için Aspose.Words ayrıca bölünmüş belgeleri tek bir belgede birleştirme işlevi de sağlar. Bu özellik, ayrı bölümleri birleşik bir belgede birleştirmeniz gerektiğinde kullanışlıdır.
-
-## 10. Performans Hususları
-
-Büyük belgelerle uğraşırken performans iyileştirmelerini göz önünde bulundurmak önemlidir. Aspose.Words
-
- Java büyük dosyaları verimli bir şekilde işlemek için tasarlanmıştır, ancak geliştiriciler en iyi uygulamaları izleyerek performansı daha da artırabilirler.
-
-## 11. Sonuç
+## Çözüm
 
 Bu kılavuzda, Aspose.Words for Java kullanarak belgeleri kolayca ve etkili bir şekilde nasıl böleceğinizi inceledik. Geliştiriciler, büyük belgeleri daha küçük, daha yönetilebilir parçalara bölerek belirli bölümlerle çalışabilir ve belge işleme görevlerini basitleştirebilir. Aspose.Words for Java, belgeleri sayfalara, paragraflara, başlıklara ve bölümlere göre bölmek için çeşitli yöntemler sunar ve geliştiricilere bölme sürecini kendi özel ihtiyaçlarına göre uyarlama esnekliği sağlar.
 
-## 12. SSS
+## SSS
 
-### S1. Aspose.Words for Java, DOC ve DOCX gibi farklı formatlardaki belgeleri bölebilir mi?
+### Aspose.Words for Java, DOC ve DOCX gibi farklı formatlardaki belgeleri bölebilir mi?
 
 Evet, Aspose.Words for Java, DOC ve DOCX dahil olmak üzere çeşitli formatlardaki belgeleri bölebilir.
 
-### S2. Aspose.Words for Java farklı Java sürümleriyle uyumlu mudur?
+### Aspose.Words for Java farklı Java sürümleriyle uyumlu mudur?
 
 Evet, Aspose.Words for Java, birden fazla Java sürümüyle uyumludur ve projelerinizle sorunsuz bir entegrasyon sağlar.
 
-### S3. Parola korumalı belgeleri bölmek için Aspose.Words for Java'yı kullanabilir miyim?
+### Parola korumalı belgeleri bölmek için Aspose.Words for Java'yı kullanabilir miyim?
 
 Evet, Aspose.Words for Java, doğru parolayı sağladığınız sürece parola korumalı belgelerin bölünmesini destekler.
 
-### S4. Kütüphaneye yeniysem Aspose.Words for Java'yı nasıl kullanmaya başlayabilirim?
+### Kütüphaneye yeniysem Aspose.Words for Java'yı nasıl kullanmaya başlayabilirim?
 
  Keşfetmeye başlayabilirsiniz[Aspose.Words for Java API Referansı](https://reference.aspose.com/words/java/) ve Aspose.Words for Java tarafından sağlanan kod örnekleri. Belgeler, kütüphanenin özellikleri ve bunların etkili bir şekilde nasıl kullanılacağı hakkında ayrıntılı bilgi içerir.
 
-### S5. Aspose.Words for Java kurumsal düzeyde belge işleme için uygun mudur?
+### Aspose.Words for Java kurumsal düzeyde belge işleme için uygun mudur?
 
 Kesinlikle! Aspose.Words for Java, sağlamlığı ve kapsamlı özellik seti nedeniyle çeşitli belge işleme görevleri için kurumsal düzeydeki uygulamalarda yaygın olarak kullanılır.

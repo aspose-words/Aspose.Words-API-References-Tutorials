@@ -129,4 +129,4 @@ Grâce à ces compétences, vous pouvez améliorer la présentation visuelle de 
  Absolument ! Vous pouvez utiliser n'importe quelle couleur disponible dans le`System.Drawing.Color` classe.
 
 ### Comment centrer la table horizontalement ?  
-Le`table.Alignment = TableAlignment.Center;` la ligne dans le code centre le tableau horizontalement sur la page.
+ Le`table.Alignment = TableAlignment.Center;` la ligne dans le code centre le tableau horizontalement sur la page.

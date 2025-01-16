@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-यह कोड पृष्ठ विराम के आधार पर दस्तावेज़ को विभाजित करता है और प्रत्येक पृष्ठ को संग्रहीत करता है`pages` सूची।
+ यह कोड पृष्ठ विराम के आधार पर दस्तावेज़ को विभाजित करता है और प्रत्येक पृष्ठ को संग्रहीत करता है`pages` सूची।
 
 ## HTML के रूप में सहेजना
 

@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Langkah 5: Masukkan Hyperlink
 
- Sekarang, kita masukkan hyperlink menggunakan`InsertHyperlink`metode. Metode ini mengambil tiga parameter: teks tampilan, URL, dan boolean yang menunjukkan apakah tautan harus diformat sebagai hyperlink.
+ Sekarang, kita masukkan hyperlink menggunakan`InsertHyperlink` metode. Metode ini mengambil tiga parameter: teks tampilan, URL, dan boolean yang menunjukkan apakah tautan harus diformat sebagai hyperlink.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", salah);
@@ -106,7 +106,7 @@ Memasukkan hyperlink ke dalam dokumen Word menggunakan Aspose.Words untuk .NET m
 
 ### Bisakah saya menyisipkan beberapa hyperlink dalam satu dokumen?
 
- Ya, Anda dapat memasukkan beberapa hyperlink dengan mengulangi`InsertHyperlink`metode untuk setiap tautan.
+ Ya, Anda dapat memasukkan beberapa hyperlink dengan mengulangi`InsertHyperlink` metode untuk setiap tautan.
 
 ### Bagaimana cara mengubah warna hyperlink?
 
@@ -118,7 +118,7 @@ Memasukkan hyperlink ke dalam dokumen Word menggunakan Aspose.Words untuk .NET m
 
 ### Apa yang terjadi jika URL tidak valid?
 
-Itu`InsertHyperlink` metode tidak memvalidasi URL, jadi penting untuk memastikan URL sudah benar sebelum memasukkannya.
+ Itu`InsertHyperlink` metode tidak memvalidasi URL, jadi penting untuk memastikan URL sudah benar sebelum memasukkannya.
 
 ### Apakah mungkin untuk menghapus hyperlink setelah disisipkan?
 

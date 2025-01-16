@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-O`dataDir` variável é um espaço reservado para o diretório onde você salvará seu arquivo Markdown. Certifique-se de substituir "YOUR DOCUMENT DIRECTORY" pelo caminho real.
+ O`dataDir` variável é um espaço reservado para o diretório onde você salvará seu arquivo Markdown. Certifique-se de substituir "YOUR DOCUMENT DIRECTORY" pelo caminho real.
 
 ## Etapa 2: Escrevendo texto regular
 

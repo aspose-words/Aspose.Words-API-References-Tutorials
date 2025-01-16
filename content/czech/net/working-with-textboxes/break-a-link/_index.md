@@ -100,7 +100,7 @@ Někdy může být textové pole součástí řetězce a další pole na něj od
 textBox.Previous?.BreakForwardLink();
 ```
 
-The`?.` operátor zajišťuje, že metoda je volána pouze tehdy, když`Previous` není null, což zabraňuje potenciálním chybám za běhu.
+ The`?.` operátor zajišťuje, že metoda je volána pouze tehdy, když`Previous` není null, což zabraňuje potenciálním chybám za běhu.
 
 ## Závěr
 

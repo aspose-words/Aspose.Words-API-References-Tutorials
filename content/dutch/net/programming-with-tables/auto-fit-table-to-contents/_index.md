@@ -9,7 +9,7 @@ url: /nl/net/programming-with-tables/auto-fit-table-to-contents/
 ---
 ## Invoering
 
-Heb je ooit moeite gehad met tabellen die eruit zagen alsof ze in je Word-document waren gepropt, waardoor de tekst te krap werd en de kolommen niet goed uitgelijnd waren? Dan ben je niet de enige! Het beheren van tabelopmaak kan een heel gedoe zijn, vooral als je met dynamische content werkt. Maar maak je geen zorgen; Aspose.Words voor .NET heeft je rug. In deze gids duiken we in de handige functie van het automatisch aanpassen van tabellen aan de inhoud. Deze functionaliteit zorgt ervoor dat je tabellen zich perfect aanpassen aan hun inhoud, waardoor je documenten er met minimale inspanning gepolijst en professioneel uitzien. Klaar om te beginnen? Laten we je tabellen harder voor je laten werken!
+Heb je ooit moeite gehad met tabellen die eruit zagen alsof ze in je Word-document waren gepropt, waardoor de tekst te krap werd en de kolommen niet goed uitgelijnd waren? Dan ben je niet de enige! Het beheren van tabelopmaak kan een heel gedoe zijn, vooral als je met dynamische content werkt. Maar maak je geen zorgen; Aspose.Words voor .NET heeft je rugdekking. In deze gids duiken we in de handige functie van het automatisch aanpassen van tabellen aan de inhoud. Deze functionaliteit zorgt ervoor dat je tabellen zich perfect aanpassen aan hun inhoud, waardoor je documenten er met minimale inspanning gepolijst en professioneel uitzien. Klaar om te beginnen? Laten we je tabellen harder voor je laten werken!
 
 ## Vereisten
 
@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-De`Aspose.Words` De naamruimte biedt de kernfunctionaliteit voor het verwerken van Word-documenten, terwijl`Aspose.Words.Tables` bevat de klassen die specifiek bedoeld zijn voor het werken met tabellen.
+ De`Aspose.Words` De naamruimte biedt de kernfunctionaliteit voor het verwerken van Word-documenten, terwijl`Aspose.Words.Tables` bevat de klassen die specifiek bedoeld zijn voor het werken met tabellen.
 
 ## Stap 1: Stel uw documentenmap in
 
@@ -88,7 +88,7 @@ Automatisch tabellen aanpassen aan de inhoud met Aspose.Words voor .NET is een e
 ## Veelgestelde vragen
 
 ### Kan ik alleen specifieke kolommen in een tabel automatisch laten aanpassen?
-De`AutoFit` methode is van toepassing op de gehele tabel. Als u specifieke kolommen moet aanpassen, moet u mogelijk de kolombreedtes handmatig instellen.
+ De`AutoFit` methode is van toepassing op de gehele tabel. Als u specifieke kolommen moet aanpassen, moet u mogelijk de kolombreedtes handmatig instellen.
 
 ### Wat als mijn document meerdere tabellen bevat?
  U kunt door alle tabellen in het document heen lussen met behulp van`doc.GetChildNodes(NodeType.Table, true)` en pas indien nodig automatisch aanpassen toe.

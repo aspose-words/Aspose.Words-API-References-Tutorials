@@ -7,91 +7,203 @@ type: docs
 weight: 11
 url: /zh-hant/java/table-processing/generate-table-from-datatable/
 ---
+## 介紹
 
-在本教程中，我們將示範如何使用 Aspose.Words for Java 從 DataTable 產生表。 DataTable是保存表格資料的基本資料結構，借助Aspose.Words強大的表格處理功能，我們可以輕鬆地在Word文件中建立格式良好的表格。按照下面的逐步指南產生表格並將其整合到您的文字處理應用程式中。
+從資料來源動態建立表格是許多應用程式中的常見任務。無論您是產生報告、發票還是資料摘要，能夠以程式設計方式使用資料填充表都可以節省您大量的時間和精力。在本教程中，我們將探討如何使用 Aspose.Words for Java 從 DataTable 產生表。我們將把流程分解為可管理的步驟，確保您清楚地了解每個部分。
 
-## 第 1 步：設定您的開發環境
+## 先決條件
 
-在我們開始之前，請確保您符合以下先決條件：
+在深入研究程式碼之前，讓我們確保您擁有開始使用所需的一切：
 
-- 您的系統上安裝了 Java 開發工具包 (JDK)。
-- 下載 Aspose.Words for Java 程式庫並在您的專案中引用。
+1.  Java 開發工具包 (JDK)：確保您的電腦上安裝了 JDK。您可以從[甲骨文網站](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+   
+2. Aspose.Words for Java：您將需要 Aspose.Words 函式庫。您可以從以下位置下載最新版本[Aspose 的發佈頁面](https://releases.aspose.com/words/java/).
 
-## 第 2 步：準備資料表
+3. IDE：像 IntelliJ IDEA 或 Eclipse 這樣的整合開發環境 (IDE) 將使編碼變得更加容易。
 
-首先，您需要準備包含所需資料的資料表。 DataTable 就像一個包含行和列的虛擬表。使用要在表中顯示的資料填充它。
+4. Java基礎知識：熟悉Java程式設計概念將有助於您更好地理解程式碼片段。
 
-```java
-//建立範例資料表並新增行和列
-DataTable dataTable = new DataTable(""Employees"");
-dataTable.getColumns().add(""ID"", Integer.class);
-dataTable.getColumns().add(""Name"", String.class);
-dataTable.getRows().add(101, ""John Doe"");
-dataTable.getRows().add(102, ""Jane Smith"");
-dataTable.getRows().add(103, ""Michael Johnson"");
-```
+5. 範例資料：在本教學中，我們將使用名為「List of people.xml」的 XML 檔案來模擬資料來源。您可以使用範例資料建立此文件以進行測試。
 
-## 第 3 步：產生表格並設定格式
+## 第 1 步：建立一個新文檔
 
-現在，我們將建立一個新文件並使用資料表中的資料產生表。我們還將應用格式設定來增強表格的外觀。
+首先，我們需要建立一個新文件來存放我們的表。這是我們工作的畫布。
 
 ```java
-//建立一個新文檔
 Document doc = new Document();
-
-//建立一個與 DataTable 具有相同列數的表
-Table table = doc.getFirstSection().getBody().appendTable();
-table.ensureMinimum();
-
-//新增帶有列名稱的標題行
-Row headerRow = table.getRows().get(0);
-for (DataColumn column : dataTable.getColumns()) {
-    Cell cell = headerRow.getCells().add(column.getColumnName());
-    cell.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
-}
-
-//將資料行新增至表中
-for (DataRow dataRow : dataTable.getRows()) {
-    Row newRow = table.getRows().add();
-    for (DataColumn column : dataTable.getColumns()) {
-        Cell cell = newRow.getCells().add(dataRow.get(column.getColumnName()).toString());
-    }
-}
 ```
 
-## 步驟 4：儲存文檔
+在這裡，我們實例化一個新的`Document`目的。這將作為我們建立表格的工作文件。
 
-最後，將文件與產生的表格儲存到您想要的位置。
+## 第2步：初始化DocumentBuilder
+
+接下來，我們將使用`DocumentBuilder`類，它使我們能夠更輕鬆地操作文件。
 
 ```java
-//儲存文件
-doc.save(""output.docx"");
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-透過執行這些步驟，您可以成功地從 DataTable 產生表格，並使用 Aspose.Words for Java 將其合併到您的文件處理應用程式中。這個功能豐富的庫簡化了表格處理和文字處理任務，讓您可以輕鬆建立專業且組織良好的文件。
+這`DocumentBuilder`物件提供了將表格、文字和其他元素插入文件中的方法。
+
+## 第 3 步：設定頁面方向
+
+由於我們希望表格很寬，因此我們將頁面方向設為橫向。
+
+```java
+doc.getFirstSection().getPageSetup().setOrientation(Orientation.LANDSCAPE);
+```
+
+這一步至關重要，因為它可以確保我們的表格很好地貼合在頁面上而不會被切斷。
+
+## 第 4 步：從 XML 載入數據
+
+現在，我們需要將 XML 檔案中的資料載入到`DataTable`。這就是我們的數據的來源。
+
+```java
+DataSet ds = new DataSet();
+ds.readXml(getMyDir() + "List of people.xml");
+DataTable dataTable = ds.getTables().get(0);
+```
+
+在這裡，我們讀取 XML 檔案並從資料集中檢索第一個表。這`DataTable`將保存我們想要在文件中顯示的資料。
+
+## 第 5 步：從 DataTable 匯入表
+
+現在是令人興奮的部分：將資料作為表格匯入到文件中。
+
+```java
+Table table = importTableFromDataTable(builder, dataTable, true);
+```
+
+我們呼叫該方法`importTableFromDataTable`，透過`DocumentBuilder`， 我們的`DataTable`，以及一個布林值來指示是否包含列標題。
+
+## 第 6 步：設定表格樣式
+
+一旦我們有了桌子，我們就可以應用一些樣式來使它看起來不錯。
+
+```java
+table.setStyleIdentifier(StyleIdentifier.MEDIUM_LIST_2_ACCENT_1);
+table.setStyleOptions(TableStyleOptions.FIRST_ROW | TableStyleOptions.ROW_BANDS | TableStyleOptions.LAST_COLUMN);
+```
+
+此程式碼將預先定義的樣式應用於表格，增強其視覺吸引力和可讀性。
+
+## 步驟7：刪除不需要的細胞
+
+如果您有任何不想顯示的列（例如圖像列），您可以輕鬆將其刪除。
+
+```java
+table.getFirstRow().getLastCell().removeAllChildren();
+```
+
+此步驟可確保我們的表格僅顯示相關資訊。
+
+## 第 8 步：儲存文檔
+
+最後，我們將文件與生成的表格一起儲存。
+
+```java
+doc.save(getArtifactsDir() + "WorkingWithTables.BuildTableFromDataTable.docx");
+```
+
+此行將文件保存在指定的目錄中，以便您查看結果。
+
+## importTableFromDataTable 方法
+
+讓我們仔細看看`importTableFromDataTable`方法。該方法負責創建表結構並用資料填充它。
+
+### 第 1 步：啟動表格
+
+首先，我們需要在文件中啟動一個新表。
+
+```java
+Table table = builder.startTable();
+```
+
+這會在我們的文件中初始化一個新表。
+
+### 第 2 步：新增列標題
+
+如果我們想包含列標題，我們檢查`importColumnHeadings`旗幟。
+
+```java
+if (importColumnHeadings) {
+    //儲存原始格式
+    boolean boldValue = builder.getFont().getBold();
+    int paragraphAlignmentValue = builder.getParagraphFormat().getAlignment();
+
+    //設定標題格式
+    builder.getFont().setBold(true);
+    builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
+
+    //插入列名稱
+    for (DataColumn column : dataTable.getColumns()) {
+        builder.insertCell();
+        builder.writeln(column.getColumnName());
+    }
+
+    builder.endRow();
+
+    //恢復原始格式
+    builder.getFont().setBold(boldValue);
+    builder.getParagraphFormat().setAlignment(paragraphAlignmentValue);
+}
+```
+
+此程式碼區塊格式化標題行並插入列名`DataTable`.
+
+### 第 3 步：用資料填入表
+
+現在，我們遍歷每一行`DataTable`將資料插入表中。
+
+```java
+for (DataRow dataRow : (Iterable<DataRow>) dataTable.getRows()) {
+    for (Object item : dataRow.getItemArray()) {
+        builder.insertCell();
+        switch (item.getClass().getName()) {
+            case "DateTime":
+                Date dateTime = (Date) item;
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMMM d, yyyy");
+                builder.write(simpleDateFormat.format(dateTime));
+                break;
+            default:
+                builder.write(item.toString());
+                break;
+        }
+    }
+    builder.endRow();
+}
+```
+
+在本節中，我們處理不同的資料類型，適當地格式化日期，同時將其他資料插入為文字。
+
+### 第四步：結束桌子
+
+最後，一旦插入所有數據，我們就完成了表格。
+
+```java
+builder.endTable();
+```
+
+這條線標誌著我們表格的結尾，允許`DocumentBuilder`知道我們已經完成了這一部分。
 
 ## 結論
 
-恭喜！您已經成功學習如何使用 Aspose.Words for Java 從 DataTable 產生表格。本逐步指南示範了準備 DataTable、在 Word 文件中建立和格式化表格以及儲存最終輸出的過程。 Aspose.Words for Java 提供了強大且靈活的表格處理 API，可以輕鬆管理表格資料並將其合併到您的文字處理專案中。
-
-透過利用 Aspose.Words 的功能，您可以處理複雜的表格結構、套用自訂格式並將表格無縫整合到文件中。無論您是產生報告、發票或任何其他需要表格表示的文檔，Aspose.Words 都能讓您輕鬆獲得專業結果。
-
-請隨意探索 Aspose.Words for Java 提供的更多功能和功能，以增強您的文件處理能力並簡化您的 Java 應用程式。
+現在你就擁有了！您已經成功學習如何使用 Aspose.Words for Java 從 DataTable 產生表格。透過執行以下步驟，您可以輕鬆地根據各種資料來源在文件中建立動態表格。無論您是產生報告還是發票，此方法都將簡化您的工作流程並增強文件建立流程。
 
 ## 常見問題解答
 
-### 1. 我可以產生包含合併儲存格或巢狀表格的表格嗎？
+### 什麼是 Java 版 Aspose.Words？
+Aspose.Words for Java 是一個功能強大的程式庫，用於以程式設計方式建立、操作和轉換 Word 文件。
 
-是的，使用 Aspose.Words for Java，您可以建立包含合併儲存格的表格，甚至可以互相巢狀表格。這允許您設計複雜的表格佈局並以各種格式表示資料。
+### 我可以免費使用 Aspose.Words 嗎？
+是的，Aspose 提供免費試用版。您可以從以下位置下載：[這裡](https://releases.aspose.com/).
 
-### 2. 如何自訂生成表的外觀？
+### 如何在 Aspose.Words 中設定表格樣式？
+您可以使用庫提供的預先定義樣式標識符和選項來套用樣式。
 
-Aspose.Words for Java 為表格、儲存格、行和列提供了多種格式設定選項。您可以設定字體樣式、背景顏色、邊框和對齊方式以獲得所需的表格外觀。
+### 我可以將哪些類型的資料插入表中？
+您可以插入各種資料類型，包括文字、數字和日期，並可以相應地設定格式。
 
-### 3.我可以將生成的表格匯出為不同的格式嗎？
-
-絕對地！ Aspose.Words for Java 支援將 Word 文件匯出為各種格式，包括 PDF、HTML、XPS 等。您可以使用提供的匯出選項輕鬆將產生的表格轉換為您所需的格式。
-
-### 4. Aspose.Words for Java適合大規模文件處理嗎？
-
-是的，Aspose.Words for Java 旨在高效處理小型和大型文件處理任務。其最佳化的處理引擎即使在處理大型文件和複雜的表結構時也能確保高效能和可靠的處理。
+### 我可以在哪裡獲得 Aspose.Words 的支援？
+您可以在以下位置找到支援並提出問題[Aspose論壇](https://forum.aspose.com/c/words/8/).

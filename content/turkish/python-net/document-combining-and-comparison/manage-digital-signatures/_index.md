@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /tr/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## Dijital İmzalara Giriş
 
 Dijital imzalar, el yazısı imzaların elektronik eşdeğerleri olarak hizmet eder. Elektronik belgelerin gerçekliğini, bütünlüğünü ve kaynağını doğrulamanın bir yolunu sağlarlar. Bir belge dijital olarak imzalandığında, belgenin içeriğine göre bir kriptografik karma oluşturulur. Bu karma daha sonra imzalayanın özel anahtarı kullanılarak şifrelenir ve dijital imza oluşturulur. Karşılık gelen genel anahtara sahip olan herkes imzayı doğrulayabilir ve belgenin gerçekliğini belirleyebilir.
@@ -25,7 +24,7 @@ Python için Aspose.Words'ü kullanarak dijital imzaları yönetmeye başlamak i
 2. Gerekli Modülleri İçeri Aktarın: Python betiğinize gerekli modülleri içe aktarın:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## Belgeleri Yükleme ve Erişim
@@ -33,7 +32,7 @@ Python için Aspose.Words'ü kullanarak dijital imzaları yönetmeye başlamak i
 Dijital imzaları eklemeden veya doğrulamadan önce, belgeyi Aspose.Words kullanarak yüklemeniz gerekir:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## Belgelere Dijital İmza Ekleme
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 Bir belgeye dijital imza eklemek için dijital sertifikaya ihtiyacınız olacak:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 Şimdi belgeyi imzalayın:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## Dijital İmzaların Doğrulanması
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## Dijital İmzaların Kaldırılması
-
-Bir belgeden dijital imzayı kaldırmak için:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## Belgenin Gerçekliğini Sağlama
-
-Dijital imzalar, belgenin kaynağını ve bütünlüğünü doğrulayarak belgenin gerçekliğini garanti eder. Kurcalamaya ve yetkisiz değişikliklere karşı koruma sağlar.
-
 ## Dijital İmza Görünümünün Özelleştirilmesi
 
 Dijital imzaların görünümünü özelleştirebilirsiniz:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## Çözüm

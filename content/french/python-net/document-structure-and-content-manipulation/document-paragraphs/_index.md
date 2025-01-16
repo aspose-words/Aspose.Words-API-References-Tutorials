@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## Formatage de texte de base
 
- La mise en forme du texte dans un document Word est essentielle pour mettre en valeur les points importants et améliorer la lisibilité. Aspose.Words vous permet d'appliquer diverses options de mise en forme, telles que**bold**, *italic*, soulignement et taille de police :
+La mise en forme du texte dans un document Word est essentielle pour mettre en valeur les points importants et améliorer la lisibilité. Aspose.Words vous permet d'appliquer diverses options de mise en forme, telles que le gras, l'italique, le soulignement et la taille de police :
 
 ```python
 # Apply basic text formatting
@@ -89,7 +89,7 @@ builder.writeln("Item B")
 
 ## Ajout d'hyperliens
 
-Les hyperliens améliorent l'interactivité des documents. Voici comment ajouter des hyperliens à votre document Word :
+Les hyperliens améliorent l'interactivité des documents. Voici comment vous pouvez ajouter des hyperliens à votre document Word :
 
 ```python
 # Add hyperlinks
@@ -172,8 +172,6 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 ## Conclusion
 
 Dans ce guide complet, nous avons exploré les capacités d'Aspose.Words pour Python dans la mise en forme de paragraphes et de texte dans des documents Word. En utilisant cette puissante bibliothèque, les développeurs peuvent automatiser de manière transparente la mise en forme des documents, garantissant ainsi une apparence professionnelle et soignée à leur contenu.
-
----
 
 ## FAQ
 

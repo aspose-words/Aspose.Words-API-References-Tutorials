@@ -7,11 +7,11 @@ type: docs
 weight: 12
 url: /pl/python-net/document-splitting-and-formatting/combine-clone-documents/
 ---
-W dzisiejszym szybko zmieniającym się cyfrowym świecie przetwarzanie dokumentów jest kluczowym aspektem wielu przepływów pracy w biznesie. Ponieważ organizacje radzą sobie z różnymi formatami dokumentów, scalanie i klonowanie dokumentów staje się koniecznością. Aspose.Words for Python zapewnia potężne i wszechstronne rozwiązanie do bezproblemowego wykonywania takich zadań. W tym artykule przyjrzymy się, jak używać Aspose.Words for Python do łączenia i klonowania dokumentów, co pozwoli Ci skutecznie usprawnić złożone przepływy pracy.
+dzisiejszym szybko zmieniającym się cyfrowym świecie przetwarzanie dokumentów jest kluczowym aspektem wielu przepływów pracy w biznesie. Ponieważ organizacje radzą sobie z różnymi formatami dokumentów, scalanie i klonowanie dokumentów staje się koniecznością. Aspose.Words for Python zapewnia potężne i wszechstronne rozwiązanie do bezproblemowego wykonywania takich zadań. W tym artykule przyjrzymy się, jak używać Aspose.Words for Python do łączenia i klonowania dokumentów, co pozwoli Ci skutecznie usprawnić złożone przepływy pracy.
 
 ## Instalowanie Aspose.Words
 
-Zanim zagłębimy się w szczegóły, musisz skonfigurować Aspose.Words dla Pythona. Możesz pobrać i zainstalować go, korzystając z poniższego łącza:[Pobierz Aspose.Words dla Pythona](https://releases.aspose.com/words/python/). 
+ Zanim zagłębimy się w szczegóły, musisz skonfigurować Aspose.Words dla Pythona. Możesz pobrać i zainstalować go, korzystając z poniższego łącza:[Pobierz Aspose.Words dla Pythona](https://releases.aspose.com/words/python/). 
 
 ## Łączenie dokumentów
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## Zaawansowane techniki
-
-### Zastępowanie tekstu
-
-Aspose.Words umożliwia łatwe wyszukiwanie i zamianę tekstu w dokumentach:
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### Modyfikowanie formatowania
+## Modyfikowanie formatowania
 
 Można również modyfikować formatowanie za pomocą Aspose.Words:
 
@@ -127,7 +108,7 @@ Tak, można wykonać płytki klon, aby skopiować wyłącznie strukturę dokumen
  Wykorzystaj`range.replace()` metodę wraz z odpowiednimi opcjami umożliwiającymi efektywne wyszukiwanie i zamianę tekstu.
 
 ### Czy Aspose.Words obsługuje modyfikowanie formatowania?
-Oczywiście, możesz modyfikować formatowanie za pomocą metod takich jak`run.font.size` I`run.font.bold`.
+ Oczywiście, możesz modyfikować formatowanie za pomocą metod takich jak`run.font.size` I`run.font.bold`.
 
 ### Gdzie mogę uzyskać dostęp do dokumentacji Aspose.Words?
  Pełną dokumentację można znaleźć pod adresem[Aspose.Words dla API Pythona](https://reference.aspose.com/words/python-net/).

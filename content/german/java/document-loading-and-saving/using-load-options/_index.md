@@ -43,7 +43,7 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.setConvertShapeToOfficeMath(true);
 
 Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 ```
 
  Dieser Code zeigt, wie Sie beim Laden von Dokumenten Formen in Office Math-Objekte konvertieren.`setConvertShapeToOfficeMath(true)`Methode ermöglicht diese Konvertierung.
@@ -136,7 +136,7 @@ public void convertShapeToOfficeMath() throws Exception {
 		loadOptions.setConvertShapeToOfficeMath(true);
 	}
 	Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 }
 @Test
 public void setMsWordVersion() throws Exception {
@@ -210,4 +210,4 @@ In diesem Tutorial haben wir uns mit verschiedenen Aspekten der Arbeit mit Ladeo
 
 ###  Was ist der Zweck der`setTempFolder` method in Load Options?
 
-Der`setTempFolder`Mit dieser Methode können Sie den Ordner angeben, in dem während der Dokumentverarbeitung temporäre Dateien gespeichert werden.
+ Der`setTempFolder`Mit dieser Methode können Sie den Ordner angeben, in dem während der Dokumentverarbeitung temporäre Dateien gespeichert werden.

@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Lettertypestijlen en -groottes toepassen
-
-Verbeter de leesbaarheid en visuele aantrekkingskracht van uw document door lettertypestijlen en -groottes toe te passen. Gebruik de volgende code om de lettertypestijl en -grootte van een alinea te wijzigen:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Opmaak van alinea's en koppen
+## Alinea's opmaken
 
 Om uw document effectief te structureren, is het formatteren van paragrafen en koppen cruciaal. Bereik dit met behulp van de onderstaande code:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Werken met lijsten en opsommingstekens
 
 Lijsten en bullet points organiseren content en zorgen voor duidelijkheid. Implementeer ze met Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Pagina-indeling en marges beheren
+## Pagina-indeling beheren
 
 Beheer de pagina-indeling en marges voor een optimale presentatie:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Stijlen en thema's toepassen

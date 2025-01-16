@@ -40,7 +40,7 @@ Med dessa namnrymder importerade är du redo att börja koda!
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-De`LoadOptions` klass låter dig anpassa hur dokument laddas. Här har vi precis börjat med det.
+ De`LoadOptions` klass låter dig anpassa hur dokument laddas. Här har vi precis börjat med det.
 
 ## Steg 2: Lägg till japanska som redigeringsspråk
 

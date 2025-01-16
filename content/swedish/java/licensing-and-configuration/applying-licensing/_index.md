@@ -8,7 +8,7 @@ weight: 10
 url: /sv/java/licensing-and-configuration/applying-licensing/
 ---
 
-den här handledningen går vi igenom processen för att ansöka om licenser för Aspose.Words för Java. Licensiering är avgörande för att låsa upp den fulla potentialen hos Aspose.Words och säkerställa att din applikation kan använda den utan några begränsningar. Vi förser dig med nödvändig källkod och guidar dig om hur du ställer in licensiering effektivt.
+I den här handledningen går vi igenom processen för att ansöka om licenser för Aspose.Words för Java. Licensiering är avgörande för att låsa upp den fulla potentialen hos Aspose.Words och säkerställa att din applikation kan använda den utan några begränsningar. Vi förser dig med nödvändig källkod och guidar dig om hur du ställer in licensiering effektivt.
 
 ## 1. Introduktion till licensiering i Aspose.Words för Java
 
@@ -20,7 +20,7 @@ Aspose.Words för Java är ett kraftfullt dokumentbehandlingsbibliotek som låte
 
 ## 3. Ställa in din utvecklingsmiljö
 
-För att börja, se till att du har Aspose.Words för Java installerat i din utvecklingsmiljö. Du kan ladda ner den från[Aspose Nedladdningssida](https://releases.aspose.com/words/java/). När det är installerat kan du börja koda.
+ För att börja, se till att du har Aspose.Words för Java installerat i din utvecklingsmiljö. Du kan ladda ner den från[Aspose Nedladdningssida](https://releases.aspose.com/words/java/). När det är installerat kan du börja koda.
 
 ## 4. Tillämpa licensen
 
@@ -48,7 +48,7 @@ Efter att ha ansökt licensen, testa din Aspose.Words-applikation noggrant för 
 ## Komplett källkod
 ```java
         License license = new License();
-        //Den här raden försöker ställa in en licens från flera platser i förhållande till den körbara filen och Aspose.Words.dll.
+        // Den här raden försöker ställa in en licens från flera platser i förhållande till den körbara filen och Aspose.Words.dll.
         // Du kan också använda den extra överbelastningen för att ladda en licens från en stream, detta är användbart,
         // till exempel när licensen lagras som en inbäddad resurs.
         try

@@ -76,7 +76,7 @@ Dane osobowe obejmują nazwiska autorów, właściwości dokumentu i inne metada
 
 ### Czy Aspose.Words dla .NET jest darmowy?
 
- Aspose.Words oferuje[bezpłatny okres próbny](https://releases.aspose.com/) więc możesz to przetestować, ale będziesz musiał kupić licencję, aby uzyskać pełną funkcjonalność. Sprawdź[wycena](https://purchase.aspose.com/buy) po więcej szczegółów.
+ Aspose.Words oferuje[bezpłatny okres próbny](https://releases.aspose.com/) więc możesz to przetestować, ale będziesz musiał kupić licencję, aby uzyskać pełną funkcjonalność. Sprawdź[wycena](https://purchase.aspose.com/buy) Aby uzyskać więcej szczegółów.
 
 ### Czy mogę używać Aspose.Words w innych formatach dokumentów?
 

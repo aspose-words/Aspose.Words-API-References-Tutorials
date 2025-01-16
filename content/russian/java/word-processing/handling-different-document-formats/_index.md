@@ -37,13 +37,6 @@ url: /ru/java/word-processing/handling-different-document-formats/
 Document doc = new Document("sample.docx");
 ```
 
-### Загрузка PDF-документа
-
-```java
-// Загрузить PDF-документ
-Document doc = new Document("sample.pdf");
-```
-
 ## Изменение и сохранение документов
 
 После загрузки документа вы можете выполнять множество операций: от простой замены текста до сложных изменений форматирования.
@@ -71,7 +64,7 @@ Aspose.Words for Java позволяет бесшовно конвертиров
 Document doc = new Document("sample.docx");
 
 // Сохранить как PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Обработка изображений и таблиц
@@ -81,7 +74,7 @@ doc.save("sample.pdf", SaveFormat.PDF);
 ### Добавление изображения в документ
 
 ```java
-// Загрузить документ
+//Загрузить документ
 Document doc = new Document("document.docx");
 
 // Вставить изображение

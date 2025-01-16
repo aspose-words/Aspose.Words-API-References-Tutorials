@@ -26,12 +26,8 @@ Aspose.Words for Python을 사용하여 워드 문서 처리를 마스터하세�
 Aspose.Words for Python으로 마스터 문서 생성. 동적 문서를 만들고, 서식을 사용자 지정하고, 워드 문서 처리를 간소화합니다.
 ### [단어 자동화](./word-automation/)
 Aspose.Words for Python으로 워드 프로세싱 작업을 자동화하세요. 문서 관리를 간소화하고 워드 자동화의 효율성을 높이세요.
-### [문서 인텔리전스](./document-intelligence/)
-Aspose.Words for Python의 Document Intelligence로 문서에서 귀중한 통찰력을 얻으세요. 분석, 텍스트 추출 및 분류를 자동화하세요.
 ### [문서 변환](./document-conversion/)
 Aspose.Words for Python으로 문서를 효율적으로 포맷 간에 변환하세요. 워드 문서 처리를 간소화하고 문서 관리 작업을 간소화하세요. 
-### [문서 보호](./document-protection/)
-Aspose.Words for Python으로 문서를 보호하세요! 강력한 문서 보호를 위해 비밀번호 암호화, 사용자 권한 및 디지털 서명을 구현하세요.
 ### [문서 구조 및 콘텐츠 조작](./document-structure-and-content-manipulation/)
 문서 구조와 콘텐츠 조작에 초점을 맞춘 Python 및 .NET용 Aspose.Words 튜토리얼을 살펴보세요. 문서 요소를 효율적으로 탐색, 추출 및 수정하는 방법을 알아보세요. 소스 코드 예제가 제공됩니다.
 ### [콘텐츠 추출 및 조작](./content-extraction-and-manipulation/)
@@ -42,7 +38,5 @@ Python 및 .NET용 Aspose.Words를 사용하여 문서 결합 및 비교에 대�
 Python 및 .NET에서 문서 분할 및 서식 지정에 대한 Aspose.Words 튜토리얼을 살펴보세요. 문서를 효율적으로 분할하고 서식 지정하는 방법을 배우고 문서 처리 작업을 향상시키세요. 
 ### [문서 옵션 및 설정](./document-options-and-settings/)
 Python 및 .NET에서 문서 옵션 및 설정에 대한 Aspose.Words 튜토리얼을 살펴보세요. 단계별 안내와 소스 코드 예제를 사용하여 문서 생성 및 서식을 최적화하는 방법을 알아보세요.
-### [데이터 시각화 및 포맷팅](./data-visualization-and-formatting/)
-Python 및 .NET에서 데이터 시각화 및 서식 지정에 대한 Aspose.Words 튜토리얼을 알아보세요. 데이터를 효과적으로 표현하고, 멋진 보고서를 만들고, 문서를 프로그래밍 방식으로 서식 지정하는 방법을 배우세요.
 ### [표와 서식](./tables-and-formatting/)
 Python 및 .NET 애플리케이션에서 표와 서식에 대한 Aspose.Words 튜토리얼을 살펴보세요. 시각적으로 매력적인 문서를 위해 표를 만들고, 사용자 지정하고, 스타일을 지정하는 방법을 알아보세요. 

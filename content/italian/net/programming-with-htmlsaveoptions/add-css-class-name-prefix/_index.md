@@ -117,7 +117,7 @@ Ed ecco fatto! Seguendo questi passaggi, hai aggiunto con successo un prefisso d
  Sì, puoi personalizzare il prefisso ogni volta che salvi un documento modificando il`CssClassNamePrefix` proprietà.
 
 ### Questo metodo supporta CSS in linea?
-IL`CssClassNamePrefix`proprietà funziona con CSS esterno. Per CSS inline, avrai bisogno di un approccio diverso.
+ IL`CssClassNamePrefix`proprietà funziona con CSS esterno. Per CSS inline, avrai bisogno di un approccio diverso.
 
 ### Come posso includere altre opzioni di salvataggio HTML?
  È possibile configurare varie proprietà di`HtmlSaveOptions` per personalizzare l'output HTML. Controlla il[documentazione](https://reference.aspose.com/words/net/) per maggiori dettagli.

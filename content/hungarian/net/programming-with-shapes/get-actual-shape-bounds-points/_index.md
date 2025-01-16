@@ -69,7 +69,7 @@ Console.Write("\nGets the actual bounds of the shape in points: ");
 Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
-A`GetShapeRenderer` metódus egy renderelőt biztosít az alakzathoz, és`BoundsInPoints` megadja a pontos méreteket.
+ A`GetShapeRenderer` metódus egy renderelőt biztosít az alakzathoz, és`BoundsInPoints` megadja a pontos méreteket.
 
 ## Következtetés
 

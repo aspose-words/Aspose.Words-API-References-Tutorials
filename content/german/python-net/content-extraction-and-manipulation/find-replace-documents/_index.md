@@ -18,7 +18,7 @@ Bevor wir uns in die fortgeschrittenen Techniken vertiefen, stellen Sie sicher, 
 
 1.  Python-Installation: Stellen Sie sicher, dass Python auf Ihrem System installiert ist. Sie können es herunterladen von[Hier](https://www.python.org/downloads/).
 
-2. Aspose.Words für Python: Sie müssen Aspose.Words für Python installiert haben. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/python/).
+2.  Aspose.Words für Python: Sie müssen Aspose.Words für Python installiert haben. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/python/).
 
 3. Dokumentvorbereitung: Halten Sie ein Word-Dokument bereit, in dem Sie Such- und Ersetzungsvorgänge durchführen möchten.
 
@@ -118,4 +118,4 @@ Ja, Sie können Platzhalter und reguläre Ausdrücke verwenden, um erweiterte Su
 
 ### Kann ich Text ersetzen und dabei die vorgenommenen Änderungen verfolgen?
 
- Ja, Sie können Änderungen verfolgen, indem Sie das`revision` Funktion von Aspose.Words. Sie ermöglicht es Ihnen, alle am Dokument vorgenommenen Änderungen zu verfolgen.
+ Ja, Sie können Änderungen verfolgen, indem Sie das`revision`Funktion von Aspose.Words. Sie ermöglicht es Ihnen, alle am Dokument vorgenommenen Änderungen zu verfolgen.

@@ -106,7 +106,7 @@ for (int i = 0; i < 9; i++) {
 ```
 
 ### Maak een opsommingslijst: 
-Laten we nu een opsommingslijst maken.
+Laten we nu een opsommingstekenlijst maken.
 
 ```java
 builder.getListFormat().setList(doc.getLists().add(ListTemplate.BULLET_DIAMONDS));

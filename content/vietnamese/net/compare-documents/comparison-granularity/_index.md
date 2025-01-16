@@ -56,7 +56,7 @@ Bây giờ chúng ta hãy so sánh các tài liệu bằng phương thức Compa
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-Các`Compare`Phương pháp này so sánh tài liệu A với tài liệu B và lưu các thay đổi vào tài liệu A. Bạn có thể chỉ định tên tác giả và ngày so sánh để tham khảo.
+ Các`Compare`Phương pháp này so sánh tài liệu A với tài liệu B và lưu các thay đổi vào tài liệu A. Bạn có thể chỉ định tên tác giả và ngày so sánh để tham khảo.
 
 ## Phần kết luận
 

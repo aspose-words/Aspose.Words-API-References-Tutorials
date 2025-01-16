@@ -10,7 +10,7 @@ url: /de/java/document-conversion-and-export/using-office-math-objects/
 
 ## Einführung in die Verwendung von Office Math-Objekten in Aspose.Words für Java
 
-Im Bereich der Dokumentverarbeitung in Java ist Aspose.Words ein zuverlässiges und leistungsstarkes Tool. Eine seiner weniger bekannten Besonderheiten ist die Fähigkeit, mit Office Math-Objekten zu arbeiten. In diesem umfassenden Handbuch erfahren Sie, wie Sie Office Math-Objekte in Aspose.Words für Java nutzen können, um mathematische Gleichungen in Ihren Dokumenten zu bearbeiten und anzuzeigen. 
+Im Bereich der Dokumentverarbeitung in Java ist Aspose.Words ein zuverlässiges und leistungsstarkes Tool. Eines seiner weniger bekannten Highlights ist die Möglichkeit, mit Office Math-Objekten zu arbeiten. In diesem umfassenden Handbuch erfahren Sie, wie Sie Office Math-Objekte in Aspose.Words für Java nutzen können, um mathematische Gleichungen in Ihren Dokumenten zu bearbeiten und anzuzeigen. 
 
 ## Voraussetzungen
 
@@ -90,7 +90,7 @@ Office Math-Objekte in Aspose.Words für Java ermöglichen Ihnen die Darstellung
 
 ### Kann ich Office Math-Formeln in meinem Dokument anders ausrichten?
 
- Ja, Sie können die Ausrichtung von Office Math-Gleichungen steuern. Verwenden Sie die`setJustification` Methode, um Ausrichtungsoptionen wie links, rechts oder zentriert anzugeben.
+ Ja, Sie können die Ausrichtung von Office Math-Gleichungen steuern. Verwenden Sie die`setJustification`Methode, um Ausrichtungsoptionen wie links, rechts oder zentriert anzugeben.
 
 ### Ist Aspose.Words für Java für die Verarbeitung komplexer mathematischer Dokumente geeignet?
 

@@ -19,7 +19,7 @@ url: /th/net/add-content-using-documentbuilder/build-table/
 - .NET Framework (4.0 หรือสูงกว่า)
 - Aspose.Words สำหรับไลบรารี .NET
 
- หากคุณยังไม่มี Aspose.Words คุณสามารถทำได้ง่ายๆ[ดาวน์โหลดได้ที่นี่](https://releases.aspose.com/words/net/) . คุณยังสามารถเริ่มต้นด้วย[ทดลองใช้งานฟรี](https://releases.aspose.com/) หากคุณต้องการลองสัมผัส สำหรับผู้ที่พร้อมจะเสี่ยง คุณสามารถ[ซื้อใบอนุญาต](https://purchase.aspose.com/buy) หรือหากคุณต้องการเวลาเพิ่มเติมเพื่อประเมิน ให้คว้า[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/).
+ หากคุณยังไม่มี Aspose.Words คุณสามารถทำได้ง่ายๆ[ดาวน์โหลดได้ที่นี่](https://releases.aspose.com/words/net/) . คุณยังสามารถเริ่มต้นด้วย[ทดลองใช้งานฟรี](https://releases.aspose.com/) หากคุณต้องการลองสัมผัส สำหรับผู้ที่พร้อมจะเสี่ยง คุณสามารถ[ซื้อใบอนุญาต](https://purchase.aspose.com/buy)หรือหากคุณต้องการเวลาเพิ่มเติมเพื่อประเมิน ให้คว้า[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/).
 
 ## นำเข้าเนมสเปซ
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- โดยการใช้`StartTable`เรากำลังแจ้ง Aspose.Words ว่าเรากำลังจะสร้างตาราง`InsertCell` วิธีการเพิ่มเซลล์แรกและ`AutoFit` ทำให้แน่ใจว่าคอลัมน์ของเรามีความกว้างคงที่
+ โดยการใช้`StartTable` เรากำลังแจ้ง Aspose.Words ว่าเรากำลังจะสร้างตาราง`InsertCell` วิธีการเพิ่มเซลล์แรกและ`AutoFit` ทำให้แน่ใจว่าคอลัมน์ของเรามีความกว้างคงที่
 
 ## ขั้นตอนที่ 3: จัดรูปแบบแถวแรก
 

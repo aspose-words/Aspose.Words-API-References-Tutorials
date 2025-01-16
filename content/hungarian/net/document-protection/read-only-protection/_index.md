@@ -9,7 +9,7 @@ url: /hu/net/document-protection/read-only-protection/
 ---
 ## Bevezetés
 
-A Word-dokumentumok kezelését illetően előfordulhat, hogy írásvédettvé kell tenni őket a tartalom védelme érdekében. Legyen szó fontos információk megosztásáról a véletlen szerkesztések kockázata nélkül, vagy a jogi dokumentumok integritásának biztosításáról, az írásvédett védelem értékes szolgáltatás. Ebben az oktatóanyagban megvizsgáljuk, hogyan valósíthat meg írásvédett védelmet egy Word-dokumentumban az Aspose.Words for .NET használatával. Minden lépésen részletesen, lebilincselő módon végigvezetjük Önt, így biztosítva, hogy könnyen követhesse a lépést.
+Word-dokumentumok kezelését illetően előfordulhat, hogy írásvédettvé kell tenni őket a tartalom védelme érdekében. Legyen szó fontos információk megosztásáról a véletlen szerkesztések kockázata nélkül, vagy a jogi dokumentumok integritásának biztosításáról, az írásvédett védelem értékes szolgáltatás. Ebben az oktatóanyagban megvizsgáljuk, hogyan valósíthat meg írásvédett védelmet egy Word-dokumentumban az Aspose.Words for .NET használatával. Minden lépésen részletesen, lebilincselő módon végigvezetjük Önt, így biztosítva, hogy könnyen követhesse a lépést.
 
 ## Előfeltételek
 
@@ -53,13 +53,13 @@ Magyarázat:
 Ezután be kell állítanunk egy jelszót az írásvédelemhez. Ez a jelszó legfeljebb 15 karakter hosszú lehet.
 
 ```csharp
-//Adjon meg egy legfeljebb 15 karakter hosszú jelszót.
+// Adjon meg egy legfeljebb 15 karakter hosszú jelszót.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Magyarázat:
 
-- A`SetPassword` módszert hívják a`WriteProtection` a dokumentum tulajdonsága.
+-  A`SetPassword` módszert hívják a`WriteProtection` a dokumentum tulajdonsága.
 - Megadunk egy jelszót (jelszó ebben az esetben), amely a védelem eltávolításához szükséges.
 
 ## 3. lépés: Engedélyezze a csak olvasható ajánlást
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Magyarázat:
 
-- A`ReadOnlyRecommended` tulajdonság értékre van állítva`true`.
+-  A`ReadOnlyRecommended` tulajdonság értékre van állítva`true`.
 - Ez arra kéri a felhasználókat, hogy csak olvasható módban nyissa meg a dokumentumot, bár dönthetnek úgy, hogy figyelmen kívül hagyják az ajánlást.
 
 ## 4. lépés: Alkalmazza az írásvédettséget
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Magyarázat:
 
-- A`Protect` metódust hívják meg a dokumentumon`ProtectionType.ReadOnly` mint az érv.
+-  A`Protect` metódust hívják meg a dokumentumon`ProtectionType.ReadOnly` mint az érv.
 - Ez a módszer az írásvédettséget kényszeríti ki, megakadályozva a dokumentum jelszó nélküli módosítását.
 
 ## 5. lépés: Mentse el a dokumentumot
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Magyarázat:
 
-- A`Save` metódus kerül meghívásra a dokumentumon, megadva a fájl elérési útját és nevét.
+-  A`Save` metódus kerül meghívásra a dokumentumon, megadva a fájl elérési útját és nevét.
 - A dokumentum mentése csak olvasható védelem mellett történik.
 
 ## Következtetés
@@ -116,7 +116,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 ### Eltávolíthatom az írásvédettséget egy dokumentumról?
  Igen, eltávolíthatja a csak olvasható védelmet a`Unprotect` módszert és a helyes jelszó megadását.
 
-### dokumentumban beállított jelszó titkosítva van?
+### A dokumentumban beállított jelszó titkosítva van?
 Igen, az Aspose.Words titkosítja a jelszót, hogy biztosítsa a védett dokumentum biztonságát.
 
 ### Alkalmazhatok más típusú védelmet az Aspose.Words for .NET használatával?

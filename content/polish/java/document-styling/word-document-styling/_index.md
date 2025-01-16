@@ -280,7 +280,7 @@ Aby podzielić dokument, możesz zapisać określone sekcje w osobnych dokumenta
 Aspose.Words for Java umożliwia konwersję dokumentów do różnych formatów, takich jak PDF, HTML i inne.
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Zaawansowane techniki stylizacji

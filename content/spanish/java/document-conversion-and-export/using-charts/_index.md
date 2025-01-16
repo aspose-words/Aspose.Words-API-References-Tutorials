@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Cambie el eje X para que sea una categoría en lugar de una fecha.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Medido en unidades de visualización del eje Y (centenas).
+xAxis.setCrossesAt(3.0); //Medido en unidades de visualización del eje Y (centenas).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ En este tutorial, hemos explorado cómo trabajar con gráficos utilizando Aspose
 
 ### ¿Cómo puedo formatear etiquetas de datos con formatos numéricos personalizados?
 
- Puede formatear las etiquetas de datos accediendo a`DataLabels` Propiedades de una serie y configuración del código de formato deseado mediante`getNumberFormat().setFormatCode()`.
+Puede formatear las etiquetas de datos accediendo a`DataLabels` Propiedades de una serie y configuración del código de formato deseado mediante`getNumberFormat().setFormatCode()`.
 
 ### ¿Cómo personalizo las propiedades del eje en un gráfico?
 
@@ -139,7 +139,7 @@ En este tutorial, hemos explorado cómo trabajar con gráficos utilizando Aspose
 
 ### ¿Cómo puedo crear otros tipos de gráficos como gráficos de dispersión o de área?
 
-Puede crear varios tipos de gráficos especificando los elementos apropiados.`ChartType` al insertar el gráfico utilizando`builder.insertChart(ChartType.TYPE, width, height)`.
+ Puede crear varios tipos de gráficos especificando los elementos apropiados.`ChartType` al insertar el gráfico utilizando`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### ¿Cómo puedo ocultar un eje de gráfico?
 

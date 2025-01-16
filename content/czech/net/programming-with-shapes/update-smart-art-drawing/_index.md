@@ -80,7 +80,7 @@ Identifikace tvarů Smart Art zajišťuje, že se pokusíte aktualizovat pouze g
 Nadpis: Aktualizujte grafiku Smart Art Graphics
 
 Vysvětlení:
-The`UpdateSmartArtDrawing` metoda obnoví grafiku Smart Art a zajistí, že bude odrážet jakékoli změny v datech nebo rozvržení dokumentu. Tato metoda musí být vyvolána u každého tvaru Smart Art identifikovaného v předchozím kroku.
+ The`UpdateSmartArtDrawing` metoda obnoví grafiku Smart Art a zajistí, že bude odrážet jakékoli změny v datech nebo rozvržení dokumentu. Tato metoda musí být vyvolána u každého tvaru Smart Art identifikovaného v předchozím kroku.
 
 ```csharp
 // Aktualizujte kresbu Smart Art pro každý tvar Smart Art

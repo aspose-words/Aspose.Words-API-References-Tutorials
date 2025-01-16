@@ -11,7 +11,7 @@ Günümüzün hızlı dijital dünyasında, belge işleme birçok iş akışın�
 
 ## Aspose.Words'ü yükleme
 
-Ayrıntılara dalmadan önce, Python için Aspose.Words'ü kurmanız gerekir. Aşağıdaki bağlantıyı kullanarak indirip yükleyebilirsiniz:[Python için Aspose.Words'ü indirin](https://releases.aspose.com/words/python/). 
+ Ayrıntılara dalmadan önce, Python için Aspose.Words'ü kurmanız gerekir. Aşağıdaki bağlantıyı kullanarak indirip yükleyebilirsiniz:[Python için Aspose.Words'ü indirin](https://releases.aspose.com/words/python/). 
 
 ## Belgeleri Birleştirme
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## İleri Teknikler
-
-### Metni Değiştirme
-
-Aspose.Words, belgelerdeki metinleri kolayca bulmanızı ve değiştirmenizi sağlar:
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### Biçimlendirmeyi Değiştirme
+## Biçimlendirmeyi Değiştirme
 
 Ayrıca Aspose.Words kullanarak biçimlendirmeyi değiştirebilirsiniz:
 
@@ -127,7 +108,7 @@ Evet, yalnızca belgenin yapısını kopyalayıp içeriğini kopyalamadan yüzey
  Kullanın`range.replace()` Metni etkili bir şekilde bulmak ve değiştirmek için uygun seçeneklerle birlikte yöntemi.
 
 ### Aspose.Words biçimlendirmeyi değiştirmeyi destekliyor mu?
-Kesinlikle, şu yöntemleri kullanarak biçimlendirmeyi değiştirebilirsiniz:`run.font.size` Ve`run.font.bold`.
+ Kesinlikle, şu yöntemleri kullanarak biçimlendirmeyi değiştirebilirsiniz:`run.font.size` Ve`run.font.bold`.
 
 ### Aspose.Words dokümanlarına nereden ulaşabilirim?
  Kapsamlı dokümanları şu adreste bulabilirsiniz:[Aspose.Words for Python API Referansı](https://reference.aspose.com/words/python-net/).

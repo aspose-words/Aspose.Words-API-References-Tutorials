@@ -30,7 +30,7 @@ Az Aspose.Words for Java használatának megkezdéséhez be kell állítania a f
 
 2. Adja hozzá az Aspose.Words JAR fájlokat a projekt osztályútvonalához.
 
-3. Importálja a szükséges Aspose.Words osztályokat a Java kódjába.
+3. Importálja a szükséges Aspose.Words osztályokat a Java kódba.
 
 ## Dokumentumok felosztása
 
@@ -80,7 +80,7 @@ Document doc = new Document("input.docx");
 // Hozzon létre egy képkivonatot
 ImageExtractor extractor = new ImageExtractor(doc);
 
-// Képek kibontása a dokumentumból
+//Képek kibontása a dokumentumból
 while (extractor.hasNext()) {
     extractor.getNextImage("output_" + extractor.getCurrentImageIndex() + ".png");
 }
@@ -109,7 +109,7 @@ Miután felosztotta és kibontotta a kívánt tartalmat, szükség szerint kombi
 
 ## Hibaesetek kezelése
 
-dokumentumokkal való munka során elengedhetetlen a hibaesetek kecses kezelése. Készüljön fel olyan helyzetekre, mint például hiányzó fájlok vagy váratlan dokumentumformátumok.
+A dokumentumokkal való munka során elengedhetetlen a hibaesetek kecses kezelése. Készüljön fel olyan helyzetekre, mint például hiányzó fájlok vagy váratlan dokumentumformátumok.
 
 ## Következtetés
 

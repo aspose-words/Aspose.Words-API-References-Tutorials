@@ -49,7 +49,7 @@ Belgeleri PDF, XPS veya resimler gibi farklı biçimlere dönüştürmeniz gerek
 
 ```java
 // Belgeyi PDF'ye dönüştür
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Değiştirebilirsin`SaveFormat.PDF` İstenilen formatta render edilebilir.

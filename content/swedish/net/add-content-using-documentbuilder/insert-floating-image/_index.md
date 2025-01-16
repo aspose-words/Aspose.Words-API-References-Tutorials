@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-De`Document` objektet representerar Word-dokumentet och`DocumentBuilder` hjälper till att lägga till innehåll till den.
+ De`Document` objektet representerar Word-dokumentet och`DocumentBuilder` hjälper till att lägga till innehåll till den.
 
 ## Steg 3: Definiera bildsökvägen
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 Så här betyder varje parameter:
-- `imagePath`Sökvägen till din bildfil.
+- `imagePath`: Sökvägen till din bildfil.
 - `RelativeHorizontalPosition.Margin`: Den horisontella positionen i förhållande till marginalen.
 - `100`: Den horisontella förskjutningen från marginalen (i punkter).
 - `RelativeVerticalPosition.Margin`: Den vertikala positionen i förhållande till marginalen.

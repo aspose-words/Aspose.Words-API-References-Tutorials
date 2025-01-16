@@ -35,7 +35,7 @@ Ezután konfigurálnia kell a PCL mentési beállításait. Ezek az opciók hat�
 ```java
 PclSaveOptions saveOptions = new PclSaveOptions();
 {
-	saveOptions.setSaveFormat(SaveFormat.PCL);
+	saveOptions.setSaveFormat();
 	saveOptions.setRasterizeTransformedElements(false);
 }
 ```
@@ -56,7 +56,7 @@ doc.save("Your Directory Path" + "YourPCLDocument.pcl", saveOptions);
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
 PclSaveOptions saveOptions = new PclSaveOptions();
 {
-	saveOptions.setSaveFormat(SaveFormat.PCL); saveOptions.setRasterizeTransformedElements(false);
+	saveOptions.setSaveFormat(); saveOptions.setRasterizeTransformedElements(false);
 }
 doc.save("Your Directory Path" + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```

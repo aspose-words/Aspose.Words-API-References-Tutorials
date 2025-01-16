@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /ko/python-net/word-automation/word-automation-made-easy/
 ---
-
 ## 소개
 
 오늘날의 빠르게 움직이는 세상에서 작업 자동화는 효율성과 생산성을 개선하는 데 필수적이 되었습니다. 그러한 작업 중 하나는 Word Automation으로, Word 문서를 프로그래밍 방식으로 만들고, 조작하고, 처리할 수 있습니다. 이 단계별 튜토리얼에서는 Aspose.Words for Python을 사용하여 Word Automation을 쉽게 달성하는 방법을 살펴보겠습니다. Aspose.Words for Python은 워드 프로세싱 및 문서 조작을 위한 광범위한 기능을 제공하는 강력한 라이브러리입니다.
@@ -67,14 +66,27 @@ font.bold = True
 표는 Word 문서의 중요한 요소이며, Aspose.Words를 사용하면 표를 쉽게 작업할 수 있습니다.
 
 ```python
-# Add a table to the document
-table = doc.get_child_nodes(aw.NodeType.TABLE, True).add()
-
-# Add rows and cells to the table
-table.ensure_minimum()
-for row in table.rows:
-    for cell in row.cells:
-        cell.get_first_paragraph().get_runs().add("Cell Text")
+builder = aw.DocumentBuilder(doc=doc)
+table = builder.start_table()
+builder.insert_cell()
+builder.write('City')
+builder.insert_cell()
+builder.write('Country')
+builder.end_row()
+builder.insert_cell()
+builder.write('London')
+builder.insert_cell()
+builder.write('U.K.')
+builder.end_table()
+# Use the first row's "RowFormat" property to modify the formatting
+# of the contents of all cells in this row.
+row_format = table.first_row.row_format
+row_format.height = 25
+row_format.borders.get_by_border_type(aw.BorderType.BOTTOM).color = aspose.pydrawing.Color.red
+# Use the "CellFormat" property of the first cell in the last row to modify the formatting of that cell's contents.
+cell_format = table.last_row.first_cell.cell_format
+cell_format.width = 100
+cell_format.shading.background_pattern_color = aspose.pydrawing.Color.orange
 ```
 
 ## 이미지 및 모양 삽입
@@ -107,7 +119,7 @@ section.page_setup.orientation = aw.Orientation.LANDSCAPE
 
 ```python
 # Save the document to a file
-doc.save("output.docx", aw.SaveFormat.DOCX)
+doc.save("output.docx")
 ```
 
 ## 고급 단어 자동화 기능

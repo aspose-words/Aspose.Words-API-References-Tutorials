@@ -44,7 +44,7 @@ using Aspose.Words.Tables;
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Der`DocumentBuilder` class ist Ihr Tor zum Erstellen und Anpassen Ihres Dokuments. Betrachten Sie es als Ihren Zauberstab zum Erstellen von Word-Dokumenten!
+ Der`DocumentBuilder` class ist Ihr Tor zum Erstellen und Anpassen Ihres Dokuments. Betrachten Sie es als Ihren Zauberstab zum Erstellen von Word-Dokumenten!
 
 ## Schritt 2: Fügen Sie ein Blockzitat hinzu
 

@@ -111,7 +111,7 @@ doc.save("document_without_watermark.docx");
 
 Sì, è possibile aggiungere più filigrane a un documento creando oggetti Forma aggiuntivi e posizionandoli come necessario.
 
-### Come faccio a modificare il formato della pagina in formato legale con orientamento orizzontale?
+### Come faccio a modificare le dimensioni della pagina in formato legale con orientamento orizzontale?
 
 Per impostare la dimensione della pagina su Legal in orientamento orizzontale, modificare la larghezza e l'altezza della pagina come segue:
 

@@ -87,7 +87,7 @@ header.appendChild(field);
 
 ### Làm thế nào để xóa phần đầu trang hoặc phần chân trang khỏi các phần cụ thể?
 
-Bạn có thể xóa tiêu đề hoặc chân trang khỏi các phần cụ thể bằng cách truy cập`HeaderFooter` đối tượng và đặt nội dung của chúng thành null. Ví dụ:
+ Bạn có thể xóa tiêu đề hoặc chân trang khỏi các phần cụ thể bằng cách truy cập`HeaderFooter` đối tượng và đặt nội dung của chúng thành null. Ví dụ:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Tôi có thể thêm các trường tùy chỉnh, chẳng hạn như tiêu đề tài liệu, vào đầu trang hoặc chân trang không?
 
-Có, bạn có thể thêm các trường tùy chỉnh vào tiêu đề hoặc chân trang. Tạo một`Run` phần tử và chèn nó vào nội dung đầu trang hoặc chân trang, cung cấp văn bản mong muốn. Tùy chỉnh định dạng khi cần thiết.
+ Có, bạn có thể thêm các trường tùy chỉnh vào tiêu đề hoặc chân trang. Tạo một`Run` phần tử và chèn nó vào nội dung đầu trang hoặc chân trang, cung cấp văn bản mong muốn. Tùy chỉnh định dạng khi cần thiết.
 
 ### Aspose.Words for Java có tương thích với các định dạng tài liệu khác nhau không?
 

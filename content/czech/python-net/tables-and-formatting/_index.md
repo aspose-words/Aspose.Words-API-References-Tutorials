@@ -19,7 +19,7 @@ Tabulky slouží jako mocné nástroje pro uspořádání a prezentaci informac�
 
 ## Co se naučíte
 
-V této sérii výukových programů se vydáte na cestu porozumění a využití tabulek a formátování v kontextu Aspose.Words. Tutoriály pokrývají širokou škálu témat, včetně:
+této sérii výukových programů se vydáte na cestu porozumění a využití tabulek a formátování v kontextu Aspose.Words. Tutoriály pokrývají širokou škálu témat, včetně:
 
 - Vytváření tabulek: Naučte se vytvářet tabulky od začátku nebo je vkládat do existujících dokumentů.
 - Přizpůsobení buňky: Ponořte se do formátování buněk, úpravy ohraničení, stínování a zarovnání.

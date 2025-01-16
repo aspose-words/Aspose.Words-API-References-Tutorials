@@ -45,7 +45,7 @@ Aspose.Words for .NET kullanarak bir Word belgesine köprü metinleri ekleme sü
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-The`DocumentBuilder` class, belgeyi oluşturmanıza ve değiştirmenize olanak tanıyan çok yönlü bir araçtır.
+ The`DocumentBuilder` class, belgeyi oluşturmanıza ve değiştirmenize olanak tanıyan çok yönlü bir araçtır.
 
 ## Adım 2: Köprü metni ekleyin
 

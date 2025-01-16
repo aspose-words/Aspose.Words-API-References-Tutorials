@@ -19,10 +19,10 @@ Mielőtt belevágnánk az oktatóanyagba, győződjön meg arról, hogy a követ
 Az első lépés a felosztani és formázni kívánt dokumentum betöltése. Ennek eléréséhez használja a következő kódrészletet:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## 2. lépés: Ossza fel a dokumentumot szakaszokra
@@ -41,10 +41,10 @@ Tegyük fel, hogy konkrét formázást szeretne alkalmazni egy szakaszra. Péld�
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## 4. lépés: Mentse el a dokumentumot
@@ -55,6 +55,12 @@ A dokumentum felosztása és formázása után ideje elmenteni a változtatások
 document.save("path/to/save/updated_document.docx")
 ```
 
+## Következtetés
+
+Az Aspose.Words for Python átfogó eszközkészletet biztosít a dokumentumok hatékony felosztásához és formázásához az Ön igényei szerint. Az ebben az oktatóanyagban vázolt lépések követésével és a mellékelt forráskód-példák felhasználásával zökkenőmentesen kezelheti dokumentumait és professzionálisan bemutathatja azokat.
+
+Ebben az oktatóanyagban bemutattuk a dokumentumok felosztásának és formázásának alapjait, és megoldásokat kínáltunk a gyakori kérdésekre. Most Önön a sor, hogy felfedezze és kísérletezzen az Aspose.Words for Python képességeivel, hogy tovább javítsa dokumentumkezelési munkafolyamatát.
+
 ## GYIK
 
 ### Hogyan oszthatok fel egy dokumentumot több fájlra?
@@ -62,7 +68,7 @@ Egy dokumentumot több fájlra is feloszthat úgy, hogy végignézi a szakaszoka
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ Igen, eltérő formázást alkalmazhat egy szakaszon belüli bekezdésekre. Ism�
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### Hogyan változtathatom meg egy adott szakasz betűstílusát?
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### Lehetséges-e eltávolítani egy adott részt a dokumentumból?
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## Következtetés
-Az Aspose.Words for Python átfogó eszközkészletet biztosít a dokumentumok hatékony felosztásához és formázásához az Ön igényei szerint. Az ebben az oktatóanyagban vázolt lépések követésével és a mellékelt forráskód-példák felhasználásával zökkenőmentesen kezelheti dokumentumait és professzionálisan bemutathatja azokat.
-
-Ebben az oktatóanyagban bemutattuk a dokumentumok felosztásának és formázásának alapjait, és megoldásokat kínáltunk a gyakori kérdésekre. Most Önön a sor, hogy felfedezze és kísérletezzen az Aspose.Words for Python képességeivel, hogy tovább javítsa dokumentumkezelési munkafolyamatát.

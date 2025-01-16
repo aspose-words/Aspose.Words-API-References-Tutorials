@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-The`InsertChart` method, parametre olarak grafik türünü, genişliğini ve yüksekliğini alır. Bu durumda, genişliği 432 ve yüksekliği 252 olan bir çizgi grafiği ekliyoruz.
+ The`InsertChart` method, parametre olarak grafik türünü, genişliğini ve yüksekliğini alır. Bu durumda, genişliği 432 ve yüksekliği 252 olan bir çizgi grafiği ekliyoruz.
 
 ## Adım 3: Grafik Serisine Erişim
 

@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## 替换文本
-
-有时，您可能想用新内容替换某些文本。以下是操作示例：
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## 删除图像
 
 如果需要从文档中删除图像，可以使用类似的方法。首先，识别图像，然后将其删除：
@@ -92,22 +79,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## 使用正则表达式查找和替换
-
-正则表达式提供了一种查找和替换内容的有效方法：
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## 提取特定内容

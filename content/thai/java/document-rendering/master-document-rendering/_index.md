@@ -101,8 +101,6 @@ pageSetup.setOrientation(Orientation.LANDSCAPE);
 // เพิ่มส่วนหัวและส่วนท้าย
 pageSetup.setHeaderDistance(20);
 pageSetup.setFooterDistance(10);
-pageSetup.setHeaderFooter(HeaderFooterType.HEADER_PRIMARY, new Paragraph(doc, "Header Text"));
-pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "Footer Text"));
 ```
 
 ### ส่วนหัวและส่วนท้าย
@@ -110,17 +108,17 @@ pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "F
 ส่วนหัวและส่วนท้ายให้ข้อมูลที่สอดคล้องกันในทุกหน้าเอกสาร คุณสามารถเพิ่มเนื้อหาที่แตกต่างกันลงในส่วนหัวและส่วนท้ายหลัก หน้าแรก และแม้แต่ส่วนหัวและส่วนท้ายคี่/คู่ก็ได้
 
 ```java
-// การเพิ่มเนื้อหาลงในส่วนหัวหลัก
-HeaderFooter primaryHeader = pageSetup.getHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
-Paragraph headerPara = new Paragraph(doc, "This is the header text.");
-primaryHeader.appendChild(headerPara);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// การเพิ่มเนื้อหาลงในส่วนท้ายหลัก
-HeaderFooter primaryFooter = pageSetup.getHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-Paragraph footerPara = new Paragraph(doc, "Page number: ");
-FieldPage fieldPage = new FieldPage();
-footerPara.appendChild(fieldPage);
-primaryFooter.appendChild(footerPara);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
+
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
+
+doc.save("HeaderFooterDocument.docx");
 ```
 
 ## การเรนเดอร์เอกสาร
@@ -133,13 +131,13 @@ primaryFooter.appendChild(footerPara);
 
 ```java
 // เรนเดอร์เป็น PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 
 // เรนเดอร์ไปยัง XPS
-doc.save("output.xps", SaveFormat.XPS);
+doc.save("output.xps");
 
 // เรนเดอร์เป็นรูปภาพ
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setResolution(300);
 doc.save("output.png", saveOptions);
 ```
@@ -161,7 +159,7 @@ doc.setFontSettings(fontSettings);
 
 ```java
 // ตั้งค่าตัวเลือกรูปภาพ
-ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageOptions = new ImageSaveOptions();
 imageOptions.setResolution(300);
 imageOptions.setPrettyFormat(true);
 doc.save("output.png", imageOptions);
@@ -179,7 +177,7 @@ Aspose.Words นำเสนอเทคนิคขั้นสูงในก�
 // เรนเดอร์ช่วงหน้าเฉพาะ
 int startPage = 3;
 int endPage = 5;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(startPage, endPage));
 doc.save("output.png", saveOptions);
 ```
@@ -191,7 +189,7 @@ doc.save("output.png", saveOptions);
 ```java
 // แสดงผลเฉพาะย่อหน้า
 int[] paragraphIndices = {0, 2, 4};
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(paragraphIndices));
 doc.save("output.png", saveOptions);
 ```
@@ -203,7 +201,7 @@ doc.save("output.png", saveOptions);
 ```java
 // เรนเดอร์ตารางเฉพาะ
 int tableIndex = 1;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(tableIndex));
 doc.save("output.png", saveOptions);
 ```
@@ -211,7 +209,7 @@ doc.save("output.png", saveOptions);
 
 ## บทสรุป
 
-การเชี่ยวชาญการเรนเดอร์เอกสารถือเป็นสิ่งสำคัญสำหรับการสร้างแอปพลิเคชันที่มีประสิทธิภาพซึ่งจัดการเอกสารได้อย่างมีประสิทธิภาพ ด้วย Aspose.Words สำหรับ Java คุณมีชุดเครื่องมืออันทรงพลังที่พร้อมใช้งานเพื่อจัดการและเรนเดอร์เอกสารอย่างราบรื่น ตลอดบทช่วยสอนนี้ เราได้ครอบคลุมพื้นฐานของการเรนเดอร์เอกสาร การทำงานกับเค้าโครงเอกสาร การเรนเดอร์เป็นรูปแบบเอาต์พุตต่างๆ และเทคนิคการเรนเดอร์ขั้นสูง ด้วยการใช้ API ที่ครอบคลุมของ Aspose.Words สำหรับ Java คุณสามารถสร้างแอปพลิเคชันที่เน้นเอกสารที่น่าสนใจซึ่งมอบประสบการณ์ผู้ใช้ที่เหนือกว่า
+การเชี่ยวชาญการเรนเดอร์เอกสารถือเป็นสิ่งสำคัญสำหรับการสร้างแอปพลิเคชันที่มีประสิทธิภาพซึ่งจัดการเอกสารได้อย่างมีประสิทธิภาพ ด้วย Aspose.Words สำหรับ Java คุณมีชุดเครื่องมืออันทรงพลังที่พร้อมใช้งานเพื่อจัดการและเรนเดอร์เอกสารอย่างราบรื่น ตลอดบทช่วยสอนนี้ เราได้ครอบคลุมพื้นฐานของการเรนเดอร์เอกสาร การทำงานกับเลย์เอาต์เอกสาร การเรนเดอร์เป็นรูปแบบเอาต์พุตต่างๆ และเทคนิคการเรนเดอร์ขั้นสูง ด้วยการใช้ API ที่ครอบคลุมของ Aspose.Words สำหรับ Java คุณสามารถสร้างแอปพลิเคชันที่เน้นเอกสารที่น่าสนใจซึ่งมอบประสบการณ์ผู้ใช้ที่เหนือกว่า
 
 ## คำถามที่พบบ่อย
 

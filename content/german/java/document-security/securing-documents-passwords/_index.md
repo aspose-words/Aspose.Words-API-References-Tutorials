@@ -17,7 +17,7 @@ In der heutigen digitalen Welt ist Datensicherheit von größter Bedeutung. Unab
 
 ## Einrichten von Aspose.Words für Java
 
- Bevor wir uns mit der Sicherung von Dokumenten befassen, stellen wir sicher, dass Sie Aspose.Words für Java in Ihrer Java-Umgebung eingerichtet haben. Wenn Sie dies noch nicht getan haben, können Sie es hier herunterladen:[Hier](https://releases.aspose.com/words/java/).
+Bevor wir uns mit der Sicherung von Dokumenten befassen, stellen wir sicher, dass Sie Aspose.Words für Java in Ihrer Java-Umgebung eingerichtet haben. Wenn Sie dies noch nicht getan haben, können Sie es hier herunterladen:[Hier](https://releases.aspose.com/words/java/).
 
 ## Dokumente sichern: Schritt für Schritt
 

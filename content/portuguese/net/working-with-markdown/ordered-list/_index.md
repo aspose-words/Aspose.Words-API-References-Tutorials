@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-O`ListIndent` O método recua a lista, criando uma sublista. Agora você está criando uma lista hierárquica, muito parecida com uma lista de tarefas aninhada.
+ O`ListIndent` O método recua a lista, criando uma sublista. Agora você está criando uma lista hierárquica, muito parecida com uma lista de tarefas aninhada.
 
 ## Conclusão
 

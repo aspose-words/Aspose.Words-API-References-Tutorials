@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Le`ListIndent` La méthode indente la liste, créant ainsi une sous-liste. Vous créez maintenant une liste hiérarchique, un peu comme une liste de tâches imbriquée.
+ Le`ListIndent` La méthode indente la liste, créant ainsi une sous-liste. Vous créez maintenant une liste hiérarchique, un peu comme une liste de tâches imbriquée.
 
 ## Conclusion
 

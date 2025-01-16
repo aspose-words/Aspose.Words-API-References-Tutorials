@@ -7,7 +7,6 @@ type: docs
 weight: 12
 url: /hu/java/document-rendering/rendering-shapes-graphics/
 ---
-
 ## Bevezetés
 
 Ebben a digitális korszakban a dokumentumoknak gyakran többnek kell lenniük, mint egyszerű szövegnek. A formák és grafikák hozzáadásával hatékonyabban közvetítheti az információkat, és vizuálisan vonzóvá teheti a dokumentumokat. Az Aspose.Words for Java egy hatékony Java API, amely lehetővé teszi a Word dokumentumok kezelését, beleértve az alakzatok és grafikák hozzáadását és testreszabását.

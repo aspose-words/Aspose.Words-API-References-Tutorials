@@ -15,7 +15,7 @@ Szia! Dolgozott már diagramokkal a dokumentumaiban, és azt kívánta, bárcsak
 
 Mielőtt elkezdenénk, győződjünk meg arról, hogy mindennel megvan, amire szüksége van. Íme egy gyors ellenőrző lista:
 
--  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 - .NET-keretrendszer: Győződjön meg arról, hogy kompatibilis .NET-keretrendszer van telepítve.
 - Fejlesztési környezet: Az olyan IDE, mint a Visual Studio, tökéletesen működik.
 - Alapvető C# ismerete: Ez segít követni a kódolási példákat.
@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-A`InsertChart` metódus meghatározott típusú (jelen esetben oszlop) és méretű diagramot szúr be a dokumentumba.
+ A`InsertChart` metódus meghatározott típusú (jelen esetben oszlop) és méretű diagramot szúr be a dokumentumba.
 
 ## 3. lépés: A diagramsorozat testreszabása
 
@@ -86,7 +86,7 @@ Végül formázzuk meg a számokat az Y tengelyen, hogy jobban olvashatóak legy
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-A`FormatCode` tulajdonság lehetővé teszi, hogy egyéni formátumot állítson be a tengelyen lévő számokhoz. Ebben a példában`#,##0`biztosítja, hogy a nagy számok ezres vesszővel együtt jelenjenek meg.
+ A`FormatCode` tulajdonság lehetővé teszi, hogy egyéni formátumot állítson be a tengelyen lévő számokhoz. Ebben a példában`#,##0`biztosítja, hogy a nagy számok ezres vesszővel együtt jelenjenek meg.
 
 ## 5. lépés: A dokumentum mentése
 

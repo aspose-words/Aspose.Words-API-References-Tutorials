@@ -78,7 +78,7 @@ chart.Series.Add("Aspose Series 1",
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // يتم قياسها بوحدات العرض لمحور Y (المئات).
+xAxis.CrossesAt = 3; //يتم قياسها بوحدات العرض لمحور Y (المئات).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

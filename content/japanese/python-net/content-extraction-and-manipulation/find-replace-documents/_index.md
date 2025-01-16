@@ -18,7 +18,7 @@ url: /ja/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 1.  Pythonのインストール: システムにPythonがインストールされていることを確認してください。以下からダウンロードできます。[ここ](https://www.python.org/downloads/).
 
-2. Aspose.Words for Python: Aspose.Words for Pythonがインストールされている必要があります。以下からダウンロードできます。[ここ](https://releases.aspose.com/words/python/).
+2.  Aspose.Words for Python: Aspose.Words for Pythonがインストールされている必要があります。以下からダウンロードできます。[ここ](https://releases.aspose.com/words/python/).
 
 3. ドキュメントの準備: 検索と置換の操作を実行する Word ドキュメントを準備します。
 
@@ -118,4 +118,4 @@ Word 文書を効率的に管理および操作するには、多くの場合、
 
 ### 変更内容を追跡しながらテキストを置き換えることはできますか?
 
-はい、変更を追跡するには、`revision` Aspose.Words の機能です。ドキュメントに加えられたすべての変更を追跡できます。
+はい、変更を追跡するには、`revision`Aspose.Words の機能です。ドキュメントに加えられたすべての変更を追跡できます。

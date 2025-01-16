@@ -53,13 +53,13 @@ builder.Write("Open document as read-only");
 다음으로, 쓰기 보호를 위한 비밀번호를 설정해야 합니다. 이 비밀번호는 최대 15자까지 가능합니다.
 
 ```csharp
-//최대 15자 길이의 비밀번호를 입력하세요.
+// 최대 15자 길이의 비밀번호를 입력하세요.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 설명:
 
-- 그만큼`SetPassword` 메서드가 호출됩니다`WriteProtection` 문서의 속성.
+-  그만큼`SetPassword` 메서드가 호출됩니다`WriteProtection` 문서의 속성.
 - 보호를 해제하려면 비밀번호(이 경우 "MyPassword")가 필요합니다.
 
 ## 3단계: 읽기 전용 권장 사항 활성화
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 설명:
 
-- 그만큼`ReadOnlyRecommended` 속성이 설정되었습니다`true`.
+-  그만큼`ReadOnlyRecommended` 속성이 설정되었습니다`true`.
 - 이렇게 하면 사용자에게 문서를 읽기 전용 모드로 열라는 메시지가 표시되지만, 사용자는 이 권장 사항을 무시할 수도 있습니다.
 
 ## 4단계: 읽기 전용 보호 적용
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 설명:
 
-- 그만큼`Protect` 문서에서 메서드가 호출됩니다.`ProtectionType.ReadOnly` 인수로서.
+-  그만큼`Protect` 문서에서 메서드가 호출됩니다.`ProtectionType.ReadOnly` 인수로서.
 - 이 방법은 읽기 전용 보호를 시행하여 암호 없이는 문서를 수정할 수 없도록 합니다.
 
 ## 5단계: 문서 저장
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 설명:
 
-- 그만큼`Save` 파일의 경로와 이름을 지정하여 문서에서 메서드를 호출합니다.
+-  그만큼`Save` 파일의 경로와 이름을 지정하여 문서에서 메서드를 호출합니다.
 - 문서는 읽기 전용 보호 기능이 적용된 상태로 저장됩니다.
 
 ## 결론

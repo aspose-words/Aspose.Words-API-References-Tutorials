@@ -15,7 +15,7 @@ I dessa handledningar kommer du att lära dig hur du använder LoadOptions för 
 | Titel | Beskrivning |
 | --- | --- |
 | [Uppdatera smutsiga fält i Word-dokument](./update-dirty-fields/) | Uppdatera enkelt smutsiga fält i dina Word-dokument med Aspose.Words för .NET med denna omfattande, steg-för-steg-guide. |
-| [Ladda krypterat i Word-dokument](./load-encrypted-document/) | Lär dig hur du laddar och sparar krypterade Word-dokument med Aspose.Words för .NET. Skydda dina dokument enkelt med nya lösenord. Steg-för-steg-guide ingår. |
+| [Ladda krypterat i Word-dokument](./load-encrypted-document/) | Lär dig hur du laddar och sparar krypterade Word-dokument med Aspose.Words för .NET. Säkra dina dokument enkelt med nya lösenord. Steg-för-steg-guide ingår. |
 | [Konvertera form till Office Math](./convert-shape-to-office-math/) | Lär dig hur du konverterar former till Office Math i Word-dokument med Aspose.Words för .NET med vår guide. Förbättra din dokumentformatering utan ansträngning. |
 | [Ställ in Ms Word-version](./set-ms-word-version/) | Lär dig hur du ställer in MS Word-versioner med Aspose.Words för .NET med vår detaljerade guide. Perfekt för utvecklare som vill effektivisera dokumenthantering. |
 | [Använd Temp-mappen i Word-dokument](./use-temp-folder/) | Lär dig hur du förbättrar prestandan för dina .NET-program genom att använda en tillfällig mapp när du laddar Word-dokument med Aspose.Words. |

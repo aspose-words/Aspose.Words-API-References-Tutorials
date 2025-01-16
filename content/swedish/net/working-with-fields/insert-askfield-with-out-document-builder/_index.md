@@ -114,7 +114,7 @@ Ett ASK-fält i Aspose.Words är ett fält som ber användaren om specifik inmat
 Ja, du kan infoga flera ASK-fält i ett dokument, vart och ett med unika uppmaningar och svar.
 
 ###  Vad är syftet med`PromptOnceOnMailMerge` property?
-De`PromptOnceOnMailMerge` egenskapen avgör om ASK-prompten endast visas en gång under en kopplingsoperation eller varje gång.
+ De`PromptOnceOnMailMerge` egenskapen avgör om ASK-prompten endast visas en gång under en kopplingsoperation eller varje gång.
 
 ### Behöver jag uppdatera fältet ASK efter att ha ställt in dess egenskaper?
 Ja, uppdatering av ASK-fältet säkerställer att alla egenskaper tillämpas korrekt och att fältet fungerar som förväntat.

@@ -78,7 +78,7 @@ Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 UTF-7(7비트 유니코드 변환 형식)은 일련의 ASCII 문자를 사용하여 유니코드 텍스트를 나타내도록 설계된 인코딩입니다.
 
 ### Aspose.Words에서 다른 인코딩을 사용할 수 있나요?
- 네, Aspose.Words는 UTF-8, UTF-16 등 다양한 인코딩을 지원합니다.`Encoding` 속성에`LoadOptions` 따라서.
+ 네, Aspose.Words는 UTF-8, UTF-16 등 다양한 인코딩을 지원합니다.`Encoding` 속성`LoadOptions` 따라서.
 
 ### Aspose.Words는 무료로 사용할 수 있나요?
  추정하다.Words는 다운로드할 수 있는 무료 평가판을 제공합니다.[여기](https://releases.aspose.com/) 전체 기능을 사용하려면 라이센스를 구매해야 합니다.[Aspose](https://purchase.aspose.com/buy).

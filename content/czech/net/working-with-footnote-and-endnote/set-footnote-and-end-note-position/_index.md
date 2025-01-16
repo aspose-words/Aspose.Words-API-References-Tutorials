@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- tomto kódu nahraďte`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou, kde se váš dokument nachází.
+ tomto kódu nahraďte`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kde se váš dokument nachází.
 
 ## Krok 2: Nastavte pozici poznámky pod čarou
 
@@ -93,4 +93,4 @@ Aspose.Words for .NET je navržen pro aplikace .NET, ale můžete jej použít s
 
 ### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?
 
- dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
+ K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).

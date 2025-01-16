@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 2: تحضير البث
 
-بعد ذلك، نحتاج إلى إعداد مجرى ذاكرة يحتوي على الملف الذي نريد تضمينه. في هذا المثال، سنقوم بتضمين عرض تقديمي من PowerPoint.
+بعد ذلك، نحتاج إلى إعداد مجرى ذاكرة يحتوي على الملف الذي نريد تضمينه. في هذا المثال، سنقوم بتضمين عرض تقديمي على PowerPoint.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_directory/Presentation.pptx")))

@@ -114,7 +114,7 @@ Az Aspose.Words ASK mezője egy olyan mező, amely a dokumentum megnyitásakor k
 Igen, egy dokumentumba több ASK mezőt is beilleszthet, amelyek mindegyike egyedi kérdésekkel és válaszokkal rendelkezik.
 
 ###  Mi a célja a`PromptOnceOnMailMerge` property?
-A`PromptOnceOnMailMerge` tulajdonság határozza meg, hogy az ASK prompt csak egyszer jelenik-e meg a körlevél-művelet során, vagy minden alkalommal.
+ A`PromptOnceOnMailMerge` tulajdonság határozza meg, hogy az ASK prompt csak egyszer jelenik-e meg a körlevél-művelet során, vagy minden alkalommal.
 
 ### Frissítenem kell az ASK mezőt a tulajdonságainak beállítása után?
 Igen, az ASK mező frissítése biztosítja, hogy minden tulajdonság megfelelően kerül alkalmazásra, és a mező a várt módon működik.

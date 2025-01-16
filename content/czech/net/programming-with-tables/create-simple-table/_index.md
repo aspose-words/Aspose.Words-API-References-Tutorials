@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Inicializujte Document a DocumentBuilder
 
- Dále inicializujeme novou instanci`Document` třída. Tato instance představuje náš dokument aplikace Word. Vytvoříme také instanci`DocumentBuilder` třídy, které nám pomohou sestavit obsah dokumentu.
+ Dále inicializujeme novou instanci`Document` třída. Tato instance představuje náš dokument aplikace Word. Vytvoříme také instanci`DocumentBuilder` třídy, která nám pomůže sestavit obsah dokumentu.
 
 ```csharp
 Document doc = new Document();
@@ -75,7 +75,7 @@ builder.Write("Row 1, Cell 2 Content.");
 
 ## Krok 6: Ukončete první řadu
 
- Abychom označili, že jsme dokončili stavbu první řady, zavoláme`EndRow` metoda. Tato metoda také spustí nový řádek.
+ Abychom označili, že jsme dokončili stavbu první řady, zavoláme`EndRow` metoda. Tato metoda také zahájí nový řádek.
 
 ```csharp
 builder.EndRow();

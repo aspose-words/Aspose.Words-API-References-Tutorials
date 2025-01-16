@@ -34,7 +34,7 @@ Ontgrendel de kracht van Aspose.Words voor Java bij het verwerken van diverse do
 ### [Optimaliseren van het laden van documenten met HTML-, RTF- en TXT-opties](./optimizing-document-loading-options/)
 Optimaliseer het laden van documenten met Aspose.Words voor Java. Verbeter de snelheid en efficiëntie van HTML-, RTF- en TXT-bestanden. Verbeter de gebruikerservaring vandaag nog!
 ### [Efficiënt opslaan van documenten met DOC-, HTML- en afbeeldingsopties](./efficient-document-saving-options/)
-Leer efficiënt documenten opslaan met Aspose.Words voor Java. Deze stapsgewijze handleiding behandelt DOC-, HTML- en afbeeldingsopties, waarmee u uw vaardigheden in documentbeheer verbetert.
+Leer efficiënt documenten opslaan met Aspose.Words voor Java. Deze stapsgewijze handleiding behandelt DOC-, HTML- en afbeeldingsopties, waarmee u uw vaardigheden in documentbeheer verbetert
 ### [Geavanceerde opslaginstellingen voor documenten onder de knie krijgen](./mastering-advanced-save-settings/)
 Beheers geavanceerde documentopslaginstellingen met Aspose.Words voor Java. Leer moeiteloos documentcreatie te formatteren, beschermen, optimaliseren en automatiseren.
 ### [Manipuleren van documentinhoud met opschonen, velden en XML-gegevens](./manipulating-document-content/)

@@ -14,7 +14,7 @@ url: /ru/java/document-conversion-and-export/using-document-shapes/
 
 ## Начало работы с формами документов
 
-Прежде чем перейти к коду, давайте настроим нашу среду. Убедитесь, что Aspose.Words for Java интегрирован в ваш проект. Если вы еще этого не сделали, вы можете загрузить его с веб-сайта Aspose[Загрузить Aspose.Words для Java](https://releases.aspose.com/words/java/)
+ Прежде чем перейти к коду, давайте настроим нашу среду. Убедитесь, что Aspose.Words for Java интегрирован в ваш проект. Если вы еще этого не сделали, вы можете загрузить его с веб-сайта Aspose[Загрузить Aspose.Words для Java](https://releases.aspose.com/words/java/)
 
 ## Добавление фигур в документы
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

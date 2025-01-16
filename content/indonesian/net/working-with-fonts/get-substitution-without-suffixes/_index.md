@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 Di kelas ini:
-- Itu`Warning`metode menangkap peringatan yang terkait dengan penggantian font.
-- Itu`FontWarnings` koleksi menyimpan peringatan ini untuk pemeriksaan atau pencatatan lebih lanjut.
+-  Itu`Warning`metode menangkap peringatan yang terkait dengan penggantian font.
+-  Itu`FontWarnings` koleksi menyimpan peringatan ini untuk pemeriksaan atau pencatatan lebih lanjut.
 
 ## Kesimpulan
 

@@ -44,7 +44,7 @@ Deze naamruimten geven u toegang tot de klassen en methoden die u nodig hebt om 
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-De`DocumentBuilder` class is uw toegangspoort tot het bouwen en aanpassen van uw document. Zie het als uw toverstaf voor het maken van Word-documenten!
+ De`DocumentBuilder` class is uw toegangspoort tot het bouwen en aanpassen van uw document. Zie het als uw toverstaf voor het maken van Word-documenten!
 
 ## Stap 2: Voeg een blokcitaat toe
 

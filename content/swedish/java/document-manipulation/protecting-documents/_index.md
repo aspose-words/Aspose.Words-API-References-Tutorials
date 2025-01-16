@@ -32,9 +32,9 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
-De`unprotect` metod tar bort allt skydd som tillämpas på dokumentet, vilket gör det tillgängligt utan lösenord.
+ De`unprotect` metod tar bort allt skydd som tillämpas på dokumentet, vilket gör det tillgängligt utan lösenord.
 
-## Kontrollerar dokumentskyddstyp
+## Kontrollera dokumentskyddstyp
 
 Du kanske vill bestämma vilken skyddstyp som tillämpas på ett dokument programmatiskt:
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
-De`getProtectionType` metod returnerar ett heltal som representerar skyddstypen som tillämpas på dokumentet.
+ De`getProtectionType` metod returnerar ett heltal som representerar skyddstypen som tillämpas på dokumentet.
 
 
 ## Slutsats

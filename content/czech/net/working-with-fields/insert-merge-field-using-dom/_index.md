@@ -34,7 +34,7 @@ Chcete-li používat Aspose.Words, musíte je přidat do svého projektu. To lze
 
 1. Otevřete Správce balíčků NuGet: Klikněte pravým tlačítkem na svůj projekt v Průzkumníku řešení a vyberte Spravovat balíčky NuGet.
 2. Hledat Aspose.Words: Ve Správci balíčků NuGet vyhledejte "Apose.Words".
-3. Instalace balíčku: Klepnutím na tlačítko Instalovat přidáte Aspose.Words do svého projektu.
+3. Instalace balíčku: Klepnutím na Instalovat přidáte Aspose.Words do svého projektu.
 
 ## Krok 3: Import jmenných prostorů
 

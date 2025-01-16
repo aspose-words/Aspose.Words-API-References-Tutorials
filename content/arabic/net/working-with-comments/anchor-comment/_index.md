@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 نعم، يمكنك إضافة تعليقات متعددة إلى نفس قسم النص عن طريق تحديد نطاقات تعليقات متعددة.
 
 ### هل استخدام Aspose.Words لـ .NET مجاني؟
-يقدم Aspose.Words for .NET نسخة تجريبية مجانية يمكنك تنزيلها[هنا](https://releases.aspose.com/) للحصول على الميزات الكاملة، يمكنك شراء ترخيص[هنا](https://purchase.aspose.com/buy).
+ يقدم Aspose.Words for .NET نسخة تجريبية مجانية يمكنك تنزيلها[هنا](https://releases.aspose.com/) للحصول على الميزات الكاملة، يمكنك شراء ترخيص[هنا](https://purchase.aspose.com/buy).
 
 ### هل يمكنني تخصيص مظهر التعليقات؟
 في حين يركز Aspose.Words على الوظيفة، فإن ظهور التعليقات في مستندات Word يتم التحكم فيه بشكل عام بواسطة Word نفسه.

@@ -19,10 +19,10 @@ Než se pustíme do výukového programu, ujistěte se, že máte splněny násl
 Prvním krokem je načtení dokumentu, který chcete rozdělit a naformátovat. K tomu použijte následující fragment kódu:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## Krok 2: Rozdělte dokument na sekce
@@ -41,10 +41,10 @@ Nyní řekněme, že chcete na sekci použít konkrétní formátování. Změň
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## Krok 4: Uložte dokument
@@ -55,14 +55,20 @@ Po rozdělení a formátování dokumentu je čas uložit změny. K uložení do
 document.save("path/to/save/updated_document.docx")
 ```
 
-## Nejčastější dotazy
+## Závěr
+
+Aspose.Words pro Python poskytuje komplexní sadu nástrojů pro efektivní rozdělení a formátování dokumentů podle vašich potřeb. Dodržováním kroků popsaných v tomto kurzu a využitím poskytnutých příkladů zdrojového kódu můžete bez problémů spravovat své dokumenty a prezentovat je profesionálně.
+
+V tomto tutoriálu jsme probrali základy rozdělování a formátování dokumentů a poskytli řešení běžných otázek. Nyní je řada na vás, abyste prozkoumali a experimentovali s možnostmi Aspose.Words pro Python, abyste dále vylepšili pracovní postup správy dokumentů.
+
+## FAQ
 
 ### Jak mohu rozdělit dokument do více souborů?
 Dokument můžete rozdělit do více souborů procházením sekcí a uložením každé sekce jako samostatný dokument. Zde je příklad:
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ Ano, na odstavce v rámci oddílu můžete použít různé formátování. Proc
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### Jak změním styl písma pro konkrétní sekci?
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### Je možné z dokumentu odstranit konkrétní sekci?
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## Závěr
-Aspose.Words pro Python poskytuje komplexní sadu nástrojů pro efektivní rozdělení a formátování dokumentů podle vašich potřeb. Dodržováním kroků popsaných v tomto kurzu a využitím poskytnutých příkladů zdrojového kódu můžete bez problémů spravovat své dokumenty a prezentovat je profesionálně.
-
-tomto tutoriálu jsme probrali základy rozdělování a formátování dokumentů a poskytli řešení běžných otázek. Nyní je řada na vás, abyste prozkoumali a experimentovali s možnostmi Aspose.Words pro Python, abyste dále vylepšili pracovní postup správy dokumentů.

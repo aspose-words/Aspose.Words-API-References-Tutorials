@@ -39,7 +39,7 @@ Visual Studio を開き、新しいコンソール アプリ (.NET Core) プロ�
 
 ### ステップ 1.2: Aspose.Words for .NET をインストールする
 
- Aspose.WordsはNuGetパッケージマネージャーからインストールできます。`Tools` ->`NuGet Package Manager` ->`Manage NuGet Packages for Solution`で、「Aspose.Words」を検索し、パッケージをインストールします。
+ Aspose.WordsはNuGetパッケージマネージャーからインストールできます。`Tools` ->`NuGet Package Manager` ->`Manage NuGet Packages for Solution`をクリックし、「Aspose.Words」を検索します。パッケージをインストールします。
 
 あるいは、NuGet パッケージ マネージャー コンソールを使用することもできます。
 

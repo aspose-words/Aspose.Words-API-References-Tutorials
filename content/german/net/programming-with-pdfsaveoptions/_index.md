@@ -2,7 +2,7 @@
 title: Textverarbeitung mit Pdfsaveoptions
 linktitle: Textverarbeitung mit Pdfsaveoptions
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Entdecken Sie die Textverarbeitung mit PDF-Speicheroptionen in Aspose.Words für .NET. Erfahren Sie anhand von Schritt-für-Schritt-Anleitungen und Beispielcode, wie Sie Word-Dokumente mit erweiterten Funktionen in PDF umwandeln.
+description: Entdecken Sie die Textverarbeitung mit PDF-Speicheroptionen in Aspose.Words für .NET. Erfahren Sie anhand von Schritt-für-Schritt-Tutorials und Beispielcode, wie Sie Word-Dokumente mit erweiterten Funktionen in PDF umwandeln.
 type: docs
 weight: 1680
 url: /de/net/programming-with-pdfsaveoptions/

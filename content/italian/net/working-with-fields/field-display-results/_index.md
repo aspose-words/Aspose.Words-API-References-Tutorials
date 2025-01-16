@@ -60,7 +60,7 @@ I campi nei documenti Word possono essere dinamici, il che significa che potrebb
 document.UpdateFields();
 ```
 
-IL`UpdateFields` il metodo scorre tutti i campi nel documento e li aggiorna con i dati più recenti. Questo passaggio è fondamentale se i tuoi campi dipendono da contenuti dinamici come date o calcoli.
+ IL`UpdateFields` il metodo scorre tutti i campi nel documento e li aggiorna con i dati più recenti. Questo passaggio è fondamentale se i tuoi campi dipendono da contenuti dinamici come date o calcoli.
 
 ## Passaggio 3: visualizzare i risultati del campo
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
-IL`DisplayResult` proprietà del`Field` La classe restituisce il valore formattato del campo. La`foreach` il ciclo esamina tutti i campi del documento e ne stampa i risultati.
+ IL`DisplayResult` proprietà del`Field` La classe restituisce il valore formattato del campo. La`foreach` il ciclo esamina tutti i campi del documento e ne stampa i risultati.
 
 ## Conclusione
 
@@ -97,4 +97,4 @@ Aggiornare e visualizzare i risultati dei campi nei documenti Word con Aspose.Wo
 campi che richiedono l'input dell'utente (come i campi dei moduli) dovranno essere compilati manualmente o tramite codice aggiuntivo.
 
 ### È possibile visualizzare i risultati dei campi in un formato diverso?  
-IL`DisplayResult` property fornisce l'output formattato. Se hai bisogno di un formato diverso, considera un'elaborazione aggiuntiva in base ai tuoi requisiti.
+ IL`DisplayResult` property fornisce l'output formattato. Se hai bisogno di un formato diverso, considera un'elaborazione aggiuntiva in base ai tuoi requisiti.

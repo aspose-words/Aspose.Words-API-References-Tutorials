@@ -14,7 +14,7 @@ url: /ar/python-net/document-combining-and-comparison/apply-styles-themes-docume
 
 ## إعداد البيئة
 
- قبل الخوض في التصميم، دعنا نعد بيئة التطوير الخاصة بنا. تأكد من تثبيت Aspose.Words for Python. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/python/).
+قبل الخوض في التصميم، دعنا نعد بيئة التطوير الخاصة بنا. تأكد من تثبيت Aspose.Words for Python. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/python/).
 
 ## تحميل المستندات وحفظها
 
@@ -51,30 +51,8 @@ font.style_identifier = StyleIdentifier.STRONG
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## تخصيص أنماط العناوين
-
-تضفي العناوين هيكلًا على المستندات. يمكنك تخصيص أنماط العناوين لتحسين التسلسل الهرمي وسهولة القراءة.
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## استخدام السمات للحصول على مظهر موحد
-
-توفر السمات مظهرًا متناسقًا. قم بتطبيق سمة على مستندك لإضفاء لمسة احترافية.
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## تعديل ألوان وخطوط السمة
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 قم بتخصيص السمات لتناسب احتياجاتك عن طريق ضبط ألوان السمات والخطوط.
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## إنشاء أنماطك الخاصة
-
-قم بتصميم أنماط مخصصة لعناصر المستندات الفريدة، مما يضمن إبراز هوية علامتك التجارية.
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## إدارة الأسلوب بناءً على أجزاء المستند
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 قم بتطبيق الأنماط بشكل مختلف على الرؤوس والتذييلات ومحتوى النص للحصول على مظهر أنيق.
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## التعامل مع الأنماط على مستوى المستند
-
-قم بتطبيق نمط على المستند بأكمله بسهولة.
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## مسح التنسيق والأنماط
-
-يمكنك إزالة الأنماط والتنسيقات بسهولة للبدء من جديد.
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## أمثلة عملية وحالات استخدام
-
-دعونا نستكشف السيناريوهات العملية حيث يمكن للأنماط والموضوعات تحويل المستندات.
-
-1. إنشاء التقارير ذات العلامة التجارية
-2. تصميم سيرة ذاتية مذهلة
-3. تنسيق الأوراق الأكاديمية
-
-## نصائح لتصفيف الشعر بفعالية
-
-- الحفاظ على اتساق الأساليب
-- استخدم السمات لإجراء تغييرات سريعة
-- تجربة خطوط وألوان مختلفة
 
 ## خاتمة
 
@@ -167,4 +109,4 @@ doc.range.clear_formatting()
 
 ### هل من الممكن مسح التنسيق من مستندي؟
 
- نعم، يمكنك بسهولة إزالة التنسيقات والأنماط باستخدام`clear_formatting()` الطريقة التي توفرها Aspose.Words لـ Python.
+نعم، يمكنك بسهولة إزالة التنسيقات والأنماط باستخدام`clear_formatting()` الطريقة التي توفرها Aspose.Words لـ Python.

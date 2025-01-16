@@ -80,7 +80,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-The`AppendDocument` metod iki parametre alır:
+ The`AppendDocument` metod iki parametre alır:
 1. Kaynak Belge: Eklemek istediğiniz belge.
 2.  İçe Aktarma Biçim Modu: Bu parametre biçimlendirmenin nasıl işleneceğini belirler. Burada, şunu kullanıyoruz`KeepSourceFormatting` kaynak belgenin biçimlendirmesini korumak için.
 

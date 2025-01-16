@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## 合并文档
-
-无缝合并文档是一项宝贵的技能。浏览文档有助于我们有效地合并它们：
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## 拆分文档
 
 有时，我们可能需要将文档拆分成较小的部分。浏览文档可帮助我们实现此目的：
@@ -117,8 +109,8 @@ for section in sections:
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

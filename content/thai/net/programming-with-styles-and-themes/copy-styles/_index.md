@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 ## คำถามที่พบบ่อย
 
 ###  จุดประสงค์ของการ`CopyStylesFromTemplate` method?  
-การ`CopyStylesFromTemplate` วิธีการคัดลอกรูปแบบจากเอกสารหนึ่งไปยังอีกเอกสารหนึ่ง ทำให้แน่ใจว่าเอกสารเป้าหมายจะสืบทอดการจัดรูปแบบของเอกสารต้นฉบับ
+ การ`CopyStylesFromTemplate` วิธีการคัดลอกรูปแบบจากเอกสารหนึ่งไปยังอีกเอกสารหนึ่ง ทำให้แน่ใจว่าเอกสารเป้าหมายจะสืบทอดการจัดรูปแบบของเอกสารต้นฉบับ
 
 ###  ฉันสามารถใช้`CopyStylesFromTemplate` with documents in different formats?  
  ไม่,`CopyStylesFromTemplate` วิธีนี้ใช้ได้กับเอกสารที่มีรูปแบบเดียวกันเท่านั้น โดยทั่วไปคือ DOCX
@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 เปิดเอกสารเป้าหมายและตรวจสอบการตั้งค่ารูปแบบ คุณควรเห็นรูปแบบจากเอกสารต้นฉบับที่นำไปใช้
 
 ### จะทำอย่างไรหากเอกสารเป้าหมายมีสไตล์อยู่แล้ว?  
-การ`CopyStylesFromTemplate` วิธีการนี้จะเขียนทับรูปแบบที่มีอยู่แล้วในเอกสารเป้าหมายด้วยรูปแบบจากเอกสารต้นฉบับ
+ การ`CopyStylesFromTemplate` วิธีการนี้จะเขียนทับรูปแบบที่มีอยู่แล้วในเอกสารเป้าหมายด้วยรูปแบบจากเอกสารต้นฉบับ
 
 ### Aspose.Words สำหรับ .NET ใช้ได้ฟรีหรือไม่?  
  Aspose.Words สำหรับ .NET เป็นผลิตภัณฑ์เชิงพาณิชย์ แต่คุณสามารถทดลองใช้งานฟรีได้จาก[Aspose.Words สำหรับทดลองใช้งาน .NET ฟรี](https://releases.aspose.com/).

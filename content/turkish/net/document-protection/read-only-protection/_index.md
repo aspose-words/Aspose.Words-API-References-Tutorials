@@ -53,13 +53,13 @@ Açıklama:
 Sonra, yazma koruması için bir parola ayarlamamız gerekiyor. Bu parola en fazla 15 karakter uzunluğunda olabilir.
 
 ```csharp
-//En fazla 15 karakter uzunluğunda bir şifre girin.
+// En fazla 15 karakter uzunluğunda bir şifre girin.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Açıklama:
 
-- The`SetPassword` yöntem çağrılır`WriteProtection` belgenin mülkiyeti.
+-  The`SetPassword` yöntem çağrılır`WriteProtection` belgenin mülkiyeti.
 - Korumayı kaldırmak için gerekli olacak bir şifre (bu durumda "MyPassword") sağlıyoruz.
 
 ## Adım 3: Salt Okunur Önerisini Etkinleştir
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Açıklama:
 
-- The`ReadOnlyRecommended` mülk ayarlandı`true`.
+-  The`ReadOnlyRecommended` mülk ayarlandı`true`.
 - Bu, kullanıcıların belgeyi salt okunur modunda açmasını isteyecektir; ancak kullanıcılar bu öneriyi görmezden gelmeyi seçebilirler.
 
 ## Adım 4: Salt Okunur Korumasını Uygula
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Açıklama:
 
-- The`Protect` yöntem belge üzerinde çağrılır`ProtectionType.ReadOnly` argüman olarak.
+-  The`Protect` yöntem belge üzerinde çağrılır`ProtectionType.ReadOnly` argüman olarak.
 - Bu yöntem, salt okunur korumasını zorunlu kılarak, parola olmadan belgede herhangi bir değişiklik yapılmasını engeller.
 
 ## Adım 5: Belgeyi Kaydedin
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Açıklama:
 
-- The`Save` metodu, dosyanın yolunu ve adını belirterek belge üzerinde çağrılır.
+-  The`Save` metodu, dosyanın yolunu ve adını belirterek belge üzerinde çağrılır.
 - Belge salt okunur koruması uygulanarak kaydedilir.
 
 ## Çözüm

@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Der`DocumentBuilder` ist eine Hilfsklasse, die den Prozess der Dokumenterstellung vereinfacht.
+ Der`DocumentBuilder` ist eine Hilfsklasse, die den Prozess der Dokumenterstellung vereinfacht.
 
 ## Schritt 3: Starten Sie die Tabelle
 

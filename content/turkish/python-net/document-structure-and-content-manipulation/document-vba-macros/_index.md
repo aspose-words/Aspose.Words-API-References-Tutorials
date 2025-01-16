@@ -20,7 +20,7 @@ Günümüzün dijital ortamında, Word belgelerini etkin bir şekilde yönetmek 
 Bu otomasyon yolculuğuna başlamak için Python için Aspose.Words'ün yüklü olması gerekir. Bunu şuradan indirebilirsiniz:[Aspose web sitesi](https://releases.aspose.com/words/python/). Kurulum tamamlandıktan sonra Python projenizi başlatabilir ve gerekli modülleri içe aktarabilirsiniz.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## VBA Makrolarını ve Rollerini Anlamak
@@ -46,7 +46,7 @@ Aspose.Words Python ile programatik olarak belge oluşturmak basitleştirilmişt
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ Aspose.Words Python ile entegre VBA makroları veri çıkarma ve düzenlemeye ka
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content

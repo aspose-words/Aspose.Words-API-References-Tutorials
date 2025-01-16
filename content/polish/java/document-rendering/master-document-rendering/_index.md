@@ -101,8 +101,6 @@ pageSetup.setOrientation(Orientation.LANDSCAPE);
 // Dodaj nagłówki i stopki
 pageSetup.setHeaderDistance(20);
 pageSetup.setFooterDistance(10);
-pageSetup.setHeaderFooter(HeaderFooterType.HEADER_PRIMARY, new Paragraph(doc, "Header Text"));
-pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "Footer Text"));
 ```
 
 ### Nagłówki i stopki
@@ -110,17 +108,17 @@ pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "F
 Nagłówki i stopki zapewniają spójne informacje na stronach dokumentu. Możesz dodać inną treść do nagłówków i stopek podstawowych, pierwszej strony oraz parzystych/nieparzystych.
 
 ```java
-// Dodawanie treści do nagłówka głównego
-HeaderFooter primaryHeader = pageSetup.getHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
-Paragraph headerPara = new Paragraph(doc, "This is the header text.");
-primaryHeader.appendChild(headerPara);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Dodawanie treści do stopki głównej
-HeaderFooter primaryFooter = pageSetup.getHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-Paragraph footerPara = new Paragraph(doc, "Page number: ");
-FieldPage fieldPage = new FieldPage();
-footerPara.appendChild(fieldPage);
-primaryFooter.appendChild(footerPara);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
+
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
+
+doc.save("HeaderFooterDocument.docx");
 ```
 
 ## Renderowanie dokumentów
@@ -133,13 +131,13 @@ Aby wygenerować dokument, należy użyć metody save klasy Document i określi�
 
 ```java
 // Renderuj do PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 
 // Renderowanie do XPS
-doc.save("output.xps", SaveFormat.XPS);
+doc.save("output.xps");
 
 // Renderuj do obrazów
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setResolution(300);
 doc.save("output.png", saveOptions);
 ```
@@ -161,7 +159,7 @@ Podczas renderowania dokumentów do formatów graficznych można kontrolować ja
 
 ```java
 // Ustaw opcje obrazu
-ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageOptions = new ImageSaveOptions();
 imageOptions.setResolution(300);
 imageOptions.setPrettyFormat(true);
 doc.save("output.png", imageOptions);
@@ -179,7 +177,7 @@ Można renderować określone strony dokumentu, co pozwala na wyświetlanie konk
 // Renderuj określony zakres stron
 int startPage = 3;
 int endPage = 5;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(startPage, endPage));
 doc.save("output.png", saveOptions);
 ```
@@ -191,7 +189,7 @@ Jeśli chcesz renderować tylko określone części dokumentu, np. akapity lub s
 ```java
 // Renderuj określone akapity
 int[] paragraphIndices = {0, 2, 4};
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(paragraphIndices));
 doc.save("output.png", saveOptions);
 ```
@@ -203,7 +201,7 @@ Aby uzyskać bardziej szczegółową kontrolę, możesz renderować poszczególn
 ```java
 // Renderuj określoną tabelę
 int tableIndex = 1;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(tableIndex));
 doc.save("output.png", saveOptions);
 ```

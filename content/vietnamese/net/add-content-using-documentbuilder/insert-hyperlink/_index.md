@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Bước 5: Chèn siêu liên kết
 
- Bây giờ, chúng ta chèn siêu liên kết bằng cách sử dụng`InsertHyperlink`phương pháp. Phương pháp này sử dụng ba tham số: văn bản hiển thị, URL và giá trị boolean cho biết liệu liên kết có được định dạng dưới dạng siêu liên kết hay không.
+ Bây giờ, chúng ta chèn siêu liên kết bằng cách sử dụng`InsertHyperlink` phương pháp. Phương pháp này sử dụng ba tham số: văn bản hiển thị, URL và giá trị boolean cho biết liệu liên kết có được định dạng dưới dạng siêu liên kết hay không.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", sai);
@@ -106,7 +106,7 @@ Chèn siêu liên kết vào tài liệu Word bằng Aspose.Words cho .NET rất
 
 ### Tôi có thể chèn nhiều siêu liên kết vào một tài liệu không?
 
- Có, bạn có thể chèn nhiều siêu liên kết bằng cách lặp lại`InsertHyperlink`phương pháp cho từng liên kết.
+ Có, bạn có thể chèn nhiều siêu liên kết bằng cách lặp lại`InsertHyperlink` phương pháp cho từng liên kết.
 
 ### Làm thế nào để thay đổi màu của siêu liên kết?
 
@@ -118,7 +118,7 @@ Chèn siêu liên kết vào tài liệu Word bằng Aspose.Words cho .NET rất
 
 ### Điều gì xảy ra nếu URL không hợp lệ?
 
-Các`InsertHyperlink` phương pháp này không xác thực URL, vì vậy điều quan trọng là phải đảm bảo URL chính xác trước khi chèn chúng.
+ Các`InsertHyperlink` phương pháp này không xác thực URL, vì vậy điều quan trọng là phải đảm bảo URL chính xác trước khi chèn chúng.
 
 ### Có thể xóa siêu liên kết sau khi đã chèn vào không?
 

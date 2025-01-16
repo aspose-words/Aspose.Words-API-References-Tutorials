@@ -16,7 +16,7 @@ Nếu bạn từng muốn bảo vệ một tài liệu Word nhưng vẫn cho ph�
 Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
 
 1.  Aspose.Words cho .NET: Nếu bạn chưa tải xuống, hãy tải xuống[đây](https://releases.aspose.com/words/net/).
-2.  Giấy phép Aspose hợp lệ: Bạn có thể nhận được giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
+2. Giấy phép Aspose hợp lệ: Bạn có thể nhận được giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Bất kỳ phiên bản gần đây nào cũng có thể hoạt động tốt.
 4. Kiến thức cơ bản về C# và .NET: Điều này sẽ giúp bạn theo dõi mã.
 

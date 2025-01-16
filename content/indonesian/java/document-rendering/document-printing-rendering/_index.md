@@ -49,7 +49,7 @@ Merender dokumen sangat penting saat Anda perlu mengonversinya ke berbagai forma
 
 ```java
 // Render dokumen ke PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Anda dapat mengganti`SaveFormat.PDF` dengan format yang diinginkan untuk rendering.

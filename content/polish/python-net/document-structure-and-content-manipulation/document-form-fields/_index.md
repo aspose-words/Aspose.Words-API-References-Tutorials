@@ -17,16 +17,16 @@ Pola formularza to interaktywne elementy w dokumencie, które umożliwiają uży
 
 Zanim zagłębimy się w tworzenie i opanujemy pola formularza, skonfigurujmy nasze środowisko i zapoznajmy się z Aspose.Words dla Pythona. Wykonaj poniższe kroki, aby rozpocząć:
 
-1. **Install Aspose.Words:** Zacznij od zainstalowania biblioteki Aspose.Words for Python za pomocą następującego polecenia pip:
+1. Zainstaluj Aspose.Words: Zacznij od zainstalowania biblioteki Aspose.Words dla języka Python za pomocą następującego polecenia pip:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Zaimportuj bibliotekę do skryptu Pythona, aby zacząć korzystać z jej funkcjonalności.
+2. Importowanie biblioteki: Zaimportuj bibliotekę do skryptu Pythona, aby zacząć korzystać z jej funkcjonalności.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Mając już wszystko skonfigurowane, możemy przejść do podstawowych zagadnień tworzenia i zarządzania polami formularzy.
@@ -41,7 +41,7 @@ Pola wprowadzania tekstu pozwalają użytkownikom na wprowadzanie tekstu. Aby ut
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Pola wyboru i przyciski radiowe
@@ -50,12 +50,12 @@ Pola wyboru i przyciski radiowe są używane do wielokrotnego wyboru. Oto jak mo
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Listy rozwijane
@@ -64,7 +64,7 @@ Listy rozwijane zapewniają wybór opcji dla użytkowników. Utwórz taką jak t
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Wybieracze dat
@@ -73,7 +73,7 @@ Selektory dat umożliwiają użytkownikom wygodne wybieranie dat. Oto jak je utw
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Ustawianie właściwości pól formularza
@@ -122,7 +122,7 @@ Pola wprowadzania tekstu są wszechstronne i powszechnie używane do przechwytyw
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Po utworzeniu pola możesz ustawić jego właściwości, takie jak nazwa, wartość domyślna i tekst zastępczy. Zobaczmy, jak to zrobić:
@@ -150,14 +150,14 @@ Aby utworzyć pole formularza z polem wyboru, użyj
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 W przypadku przycisków radiowych możesz je tworzyć, korzystając z typu kształtu OLE_OBJECT:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Po utworzeniu tych pól możesz dostosować ich właściwości, takie jak nazwa, domyślny wybór i tekst etykiety:
@@ -183,7 +183,7 @@ Listy rozwijane są przydatne w scenariuszach, w których użytkownicy muszą wy
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Po utworzeniu listy rozwijanej możesz określić listę opcji dostępnych dla użytkowników:
@@ -211,7 +211,7 @@ Selektory dat upraszczają proces przechwytywania dat od użytkowników. Zapewni
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Po utworzeniu selektora daty możesz ustawić jego właściwości, takie jak nazwę i domyślną datę:
@@ -228,13 +228,9 @@ Selektor dat usprawnia korzystanie z funkcji przechwytywania dat i gwarantuje do
 
 ## Wniosek
 
-Opanowanie pól formularzy i przechwytywania danych w dokumentach Word to cenna umiejętność, która pozwala tworzyć interaktywne i wydajne dokumenty do zbierania danych. Aspose.Words for Python zapewnia kompleksowy zestaw narzędzi do tworzenia, dostosowywania i wyodrębniania danych z pól formularzy. Od prostych pól wprowadzania tekstu po złożone obliczenia i formatowanie warunkowe — możliwości są ogromne.
-
 W tym przewodniku omówiliśmy podstawy pól formularzy, typy pól formularzy, ustawianie właściwości i dostosowywanie ich zachowania. Poruszyliśmy również najlepsze praktyki dotyczące projektowania formularzy i przedstawiliśmy informacje na temat optymalizacji formularzy dokumentów pod kątem wyszukiwarek.
 
-Wykorzystując moc Aspose.Words dla Pythona, możesz tworzyć dokumenty, które nie tylko skutecznie przechwytują dane, ale także zwiększają zaangażowanie użytkowników i usprawniają przepływy pracy przetwarzania danych. Teraz jesteś gotowy, aby rozpocząć podróż, aby stać się mistrzem pól formularzy i przechwytywania danych w dokumentach Word.
-
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak zainstalować Aspose.Words dla języka Python?
 

@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /ja/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## デジタル署名入門
 
 デジタル署名は、手書きの署名の電子版として機能します。デジタル署名は、電子文書の真正性、整合性、および出所を確認する手段を提供します。文書がデジタル署名されると、文書の内容に基づいて暗号化ハッシュが生成されます。次に、このハッシュが署名者の秘密鍵を使用して暗号化され、デジタル署名が作成されます。対応する公開鍵を持つ人なら誰でも、署名を検証して文書の真正性を確認できます。
@@ -25,7 +24,7 @@ Aspose.Words for Python を使用してデジタル署名の管理を開始す�
 2. 必要なモジュールをインポートする: Python スクリプトに必要なモジュールをインポートします。
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## ドキュメントの読み込みとアクセス
@@ -33,7 +32,7 @@ Aspose.Words for Python を使用してデジタル署名の管理を開始す�
 デジタル署名を追加または検証する前に、Aspose.Words を使用してドキュメントを読み込む必要があります。
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## 文書にデジタル署名を追加する
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 ドキュメントにデジタル署名を追加するには、デジタル証明書が必要です。
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 次に、文書に署名します。
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## デジタル署名の検証
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## デジタル署名の削除
-
-ドキュメントからデジタル署名を削除するには:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## 文書の真正性の確保
-
-デジタル署名は、文書のソースと整合性を確認して文書の真正性を保証します。また、改ざんや不正な変更から保護します。
-
 ## デジタル署名の外観をカスタマイズする
 
 デジタル署名の外観をカスタマイズできます。
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## 結論

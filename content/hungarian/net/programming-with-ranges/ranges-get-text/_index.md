@@ -54,7 +54,7 @@ Töltse be a dokumentumot
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Ebben a lépésben létrehoz egy új példányt a`Document` osztályt, és töltse be a Word dokumentumot. Győződjön meg arról, hogy a fájlnév és elérési út helyes.
+ Ebben a lépésben létrehoz egy új példányt a`Document` osztályt, és töltse be a Word dokumentumát. Győződjön meg arról, hogy a fájlnév és elérési út helyes.
 
 ## 3. lépés: Szöveg kibontása a dokumentumból
 
@@ -67,7 +67,7 @@ Szöveg kibontása
 string text = doc.Range.Text;
 ```
 
-A`Range.Text` tulajdonság megadja a dokumentum tartományán belüli összes szöveget. Ez magában foglalja az összes szakasz szövegét, fejlécet, láblécet és fő szövegrészt.
+ A`Range.Text` tulajdonság megadja a dokumentum tartományán belüli összes szöveget. Ez magában foglalja az összes szakasz szövegét, fejlécet, láblécet és fő szövegrészt.
 
 ## 4. lépés: Jelenítse meg a kivont szöveget
 

@@ -14,4 +14,4 @@ Az Aspose.Words for .NET oktatóanyagok értékes forrást biztosítanak a köny
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Raszterizálja az átalakított elemeket](./rasterize-transformed-elements/) | Ismerje meg, hogyan lehet raszterizálni átalakított elemeket Word-dokumentumok PCL-formátumba konvertálásakor az Aspose.Words for .NET használatával. Lépésről lépésre útmutató mellékelve. |
+| [Raszterizálja az átalakított elemeket](./rasterize-transformed-elements/) | Ismerje meg, hogyan raszterizálható az átalakított elemek Word-dokumentumok PCL formátumba konvertálásakor az Aspose.Words for .NET használatával. Lépésről lépésre útmutató mellékelve. |

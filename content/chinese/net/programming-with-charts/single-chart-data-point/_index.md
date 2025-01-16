@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-这`InsertChart`方法将图表类型、宽度和高度作为参数。在本例中，我们插入了一个宽度为 432、高度为 252 的折线图。
+这`InsertChart`方法将图表类型、宽度和高度作为参数。在本例中，我们插入一个宽度为 432、高度为 252 的折线图。
 
 ## 步骤 3：访问图表系列
 
@@ -118,7 +118,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartDataPoint.docx");
 
 ## 结论
 
-就这样！您已成功使用 Aspose.Words for .NET 自定义图表中的各个数据点。通过调整一些属性，您可以使图表更具信息量和视觉吸引力。因此，继续尝试不同的标记和大小，看看哪种最适合您的数据。
+就这样！您已成功使用 Aspose.Words for .NET 自定义图表中的各个数据点。通过调整一些属性，您可以使图表更具信息量和视觉吸引力。因此，请继续尝试不同的标记和大小，看看哪种最适合您的数据。
 
 ## 常见问题解答
 

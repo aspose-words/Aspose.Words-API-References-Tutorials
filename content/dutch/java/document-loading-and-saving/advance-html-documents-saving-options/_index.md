@@ -14,7 +14,7 @@ In deze tutorial verkennen we de geavanceerde HTML-documentopslagopties die Aspo
 Met Aspose.Words voor Java kunt u programmatisch met Word-documenten werken. In deze tutorial richten we ons op geavanceerde opties voor het opslaan van HTML-documenten, waarmee u kunt bepalen hoe Word-documenten worden omgezet naar HTML.
 
 ## 2. Exporteer retourinformatie
-De`exportRoundtripInformation` methode kunt u Word-documenten exporteren naar HTML terwijl roundtrip-informatie behouden blijft. Deze informatie kan handig zijn wanneer u HTML terug wilt converteren naar Word-formaat zonder dat u documentspecifieke details verliest.
+ De`exportRoundtripInformation` methode kunt u Word-documenten exporteren naar HTML terwijl roundtrip-informatie behouden blijft. Deze informatie kan handig zijn wanneer u HTML terug wilt converteren naar Word-formaat zonder dat u documentspecifieke details verliest.
 
 ```java
 public void exportRoundtripInformation() throws Exception {
@@ -29,7 +29,7 @@ public void exportRoundtripInformation() throws Exception {
  Met de`exportFontsAsBase64` methode, kunt u lettertypen die in het document worden gebruikt exporteren als Base64-gecodeerde gegevens in de HTML. Dit zorgt ervoor dat de HTML-weergave dezelfde lettertypestijlen behoudt als het originele Word-document.
 
 ```java
-@Test
+
 public void exportFontsAsBase64() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -39,10 +39,10 @@ public void exportFontsAsBase64() throws Exception {
 ```
 
 ## 4. Hulpbronnen exporteren
-De`exportResources` Met de methode kunt u het type CSS-stijlblad opgeven en lettertypebronnen exporteren. U kunt ook een bronmap en een alias voor bronnen in de HTML instellen.
+ De`exportResources` Met de methode kunt u het type CSS-stijlblad opgeven en lettertypebronnen exporteren. U kunt ook een bronmap en een alias voor bronnen in de HTML instellen.
 
 ```java
-@Test
+
 public void exportResources() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -55,12 +55,23 @@ public void exportResources() throws Exception {
 ```
 
 ## 5. Metafiles converteren naar EMF of WMF
-De`convertMetafilesToEmfOrWmf`Met deze methode kunt u metabestanden in het document converteren naar EMF- of WMF-indeling, waardoor compatibiliteit en soepele weergave in HTML worden gegarandeerd.
+ De`convertMetafilesToEmfOrWmf`Met deze methode kunt u metabestanden in het document converteren naar EMF- of WMF-indeling, waardoor compatibiliteit en soepele weergave in HTML worden gegarandeerd.
 
 ```java
-@Test
+
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    // Omwille van de beknoptheid wordt het codefragment niet weergegeven.
+
+	string dataDir = "Your Document Directory";
+    Document doc = new Document();
+	DocumentBuilder builder = new DocumentBuilder(doc);
+
+	builder.write("Here is an image as is: ");
+	builder.insertHtml(
+		"<img src=\"data:image/png;base64,\r\n                    iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP\r\n                    C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA\r\n                    AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J\r\n                    REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq\r\n                    ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0\r\n vr4MkhoXe0rZigAAAABJRU5ErkJggg==\" alt=\"Rode stip\" />");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(); { saveOptions.setMetafileFormat(HtmlMetafileFormat.EMF_OR_WMF); }
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
 }
 ```
 
@@ -68,9 +79,19 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
  Gebruik de`convertMetafilesToSvg` methode om metafiles naar SVG-formaat te converteren. Dit formaat is ideaal voor het weergeven van vectorafbeeldingen in HTML-documenten.
 
 ```java
-@Test
+
 public void convertMetafilesToSvg() throws Exception {
-    // Omwille van de beknoptheid wordt het codefragment niet weergegeven.
+	string dataDir = "Your Document Directory";
+    Document doc = new Document();
+	DocumentBuilder builder = new DocumentBuilder(doc);
+	
+	builder.write("Here is an SVG image: ");
+	builder.insertHtml(
+		"<svg height='210' width='500'>\r\n                <polygon points='100,10 40,198 190,78 10,78 160,198' \r\n                    style='fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;' />\r\n            </svg> ");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(); { saveOptions.setMetafileFormat(HtmlMetafileFormat.SVG); }
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 }
 ```
 
@@ -78,7 +99,7 @@ public void convertMetafilesToSvg() throws Exception {
  Met de`addCssClassNamePrefix` methode, kunt u een voorvoegsel toevoegen aan CSS-klassenamen in de geëxporteerde HTML. Dit helpt conflicten met bestaande stijlen te voorkomen.
 
 ```java
-@Test
+
 public void addCssClassNamePrefix() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -89,46 +110,81 @@ public void addCssClassNamePrefix() throws Exception {
 ```
 
 ## 8. Exporteer CID-URL's voor MHTML-bronnen
-De`exportCidUrlsForMhtmlResources` methode wordt gebruikt bij het opslaan van documenten in MHTML-formaat. Hiermee kunnen Content-ID URL's voor bronnen worden geëxporteerd.
+ De`exportCidUrlsForMhtmlResources` methode wordt gebruikt bij het opslaan van documenten in MHTML-formaat. Hiermee kunnen Content-ID URL's voor bronnen worden geëxporteerd.
 
 ```java
-@Test
+
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    // Omwille van de beknoptheid wordt het codefragment niet weergegeven.
+	string dataDir = "Your Document Directory";
+    Document doc = new Document(dataDir + "Content-ID.docx");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.MHTML);
+	{
+		saveOptions.setPrettyFormat(true); saveOptions.setExportCidUrlsForMhtmlResources(true);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
 }
 ```
 
 ## 9. Lettertypenamen oplossen
-De`resolveFontNames` Met deze methode kunt u lettertypenamen omzetten bij het opslaan van documenten in HTML-formaat, waardoor een consistente weergave op verschillende platforms wordt gegarandeerd.
+ De`resolveFontNames` Met deze methode kunt u lettertypenamen omzetten bij het opslaan van documenten in HTML-formaat, waardoor een consistente weergave op verschillende platforms wordt gegarandeerd.
 
 ```java
-@Test
+
 public void resolveFontNames() throws Exception {
-    // Omwille van de beknoptheid wordt het codefragment niet weergegeven.
+    
+	string dataDir = "Your Document Directory";
+	Document doc = new Document(dataDir + "Missing font.docx");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.HTML);
+	{
+		saveOptions.setPrettyFormat(true); saveOptions.setResolveFontNames(true);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 }
 ```
 
 ## 10. Exporteer tekstinvoerformulierveld als tekst
-De`exportTextInputFormFieldAsText` Met deze methode worden formuliervelden geëxporteerd als platte tekst in de HTML-code, waardoor ze gemakkelijk leesbaar en bewerkbaar zijn.
+ De`exportTextInputFormFieldAsText`Met deze methode worden formuliervelden geëxporteerd als platte tekst in de HTML-code, waardoor ze gemakkelijk leesbaar en bewerkbaar zijn.
 
 ```java
-@Test
+
 public void exportTextInputFormFieldAsText() throws Exception {
-    // Omwille van de beknoptheid wordt het codefragment niet weergegeven.
+    
+	string dataDir = "Your Document Directory";
+	Document doc = new Document(dataDir + "Rendering.docx");
+
+	String imagesDir = Path.combine(dataDir, "Images");
+
+	// De opgegeven map moet bestaan en mag leeg zijn.
+	if (Directory.exists(imagesDir))
+		Directory.delete(imagesDir, true);
+
+	Directory.createDirectory(imagesDir);
+
+	// Stel een optie in om formuliervelden te exporteren als platte tekst, niet als HTML-invoerelementen.
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.HTML);
+	{
+		saveOptions.setExportTextInputFormFieldAsText(true); saveOptions.setImagesFolder(imagesDir);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
 }
 ```
 
-## 11. Conclusie
+## Conclusie
 In deze tutorial hebben we de geavanceerde HTML-documentopslagopties van Aspose.Words voor Java onderzocht. Deze opties geven u nauwkeurige controle over het conversieproces, zodat u HTML-documenten kunt maken die sterk lijken op de originele Word-documenten.
 
-## 12. Veelgestelde vragen
+## Veelgestelde vragen
 Hier volgen enkele veelgestelde vragen over het werken met Aspose.Words voor Java- en HTML-documentopslagopties:
 
 ### V1: Hoe kan ik HTML terug converteren naar Word-formaat met Aspose.Words voor Java?
  Om HTML terug te converteren naar Word-formaat, kunt u de Aspose.Words API's gebruiken`load` Methode om het HTML-document te laden en vervolgens op te slaan in Word-formaat.
 
 ### V2: Kan ik de CSS-stijlen aanpassen bij het exporteren naar HTML?
- Ja, u kunt CSS-stijlen aanpassen door de stylesheets die in de HTML worden gebruikt te wijzigen of door de`addCssClassNamePrefix` Methode om een voorvoegsel toe te voegen aan CSS-klassenamen.
+Ja, u kunt CSS-stijlen aanpassen door de stylesheets die in de HTML worden gebruikt te wijzigen of door de`addCssClassNamePrefix` Methode om een voorvoegsel toe te voegen aan CSS-klassenamen.
 
 ### V3: Is er een manier om de HTML-uitvoer te optimaliseren voor weergave op internet?
 Ja, u kunt de HTML-uitvoer optimaliseren voor weergave op het web door opties te configureren zoals het exporteren van lettertypen als Base64 en het converteren van metabestanden naar SVG.

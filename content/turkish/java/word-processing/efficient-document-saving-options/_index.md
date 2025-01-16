@@ -54,7 +54,7 @@ Bazen, belgenizin her sayfasını bir resim olarak kaydetmeniz gerekebilir. Aspo
 
 ```java
 // Bir belgeyi resim olarak kaydetmek için Java kodu
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Çözünürlüğü (DPI) ayarlayın
 doc.save("output.png", imageSaveOptions);
 ```

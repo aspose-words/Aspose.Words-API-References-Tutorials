@@ -15,7 +15,7 @@ Ahoj! Jste připraveni ponořit se do fascinujícího světa manipulace s dokume
 
 Než si ušpiníme ruce, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Jakákoli verze, která podporuje Aspose.Words for .NET.
 3. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 4. Základní znalost C#: Jen základy pro pochopení syntaxe a struktury.

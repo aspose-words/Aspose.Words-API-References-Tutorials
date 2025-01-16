@@ -69,18 +69,18 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Nous créons un`FindReplaceOptions`objet et définition de l'alignement du paragraphe au centre.
+ Nous créons un`FindReplaceOptions` objet et définition de l'alignement du paragraphe au centre.
 
 ## Étape 4 : Remplacer le texte par des métacaractères
 
 C'est à cette étape que la magie opère ! Nous allons remplacer le mot « section » suivi d'un saut de paragraphe et ajouter un soulignement.
 
 ```csharp
-// Doublez chaque saut de paragraphe après le mot « section », ajoutez une sorte de soulignement et centrez-le.
+//Doublez chaque saut de paragraphe après le mot « section », ajoutez une sorte de soulignement et centrez-le.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 
-Dans ce code, nous remplaçons le texte « section » suivi d'un saut de paragraphe (`&p`) avec le même texte plus un soulignement, et en le centrant.
+Dans ce code, nous remplaçons le texte « section » suivi d'un saut de paragraphe (`&p`) avec le même texte plus un soulignement, et en le centrant.
 
 ## Étape 5 : Insérer des sauts de section
 

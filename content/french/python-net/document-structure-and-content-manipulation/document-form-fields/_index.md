@@ -17,16 +17,16 @@ Les champs de formulaire sont des éléments interactifs au sein d'un document q
 
 Avant de nous lancer dans la création et la maîtrise des champs de formulaire, configurons notre environnement et familiarisons-nous avec Aspose.Words pour Python. Suivez ces étapes pour commencer :
 
-1. **Install Aspose.Words:** Commencez par installer la bibliothèque Aspose.Words pour Python à l’aide de la commande pip suivante :
+1. Installer Aspose.Words : Commencez par installer la bibliothèque Aspose.Words pour Python à l’aide de la commande pip suivante :
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Importez la bibliothèque dans votre script Python pour commencer à utiliser ses fonctionnalités.
+2. Importez la bibliothèque : Importez la bibliothèque dans votre script Python pour commencer à utiliser ses fonctionnalités.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Une fois la configuration en place, passons aux concepts de base de la création et de la gestion des champs de formulaire.
@@ -41,7 +41,7 @@ Les champs de saisie de texte permettent aux utilisateurs de saisir du texte. Po
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Cases à cocher et boutons radio
@@ -50,12 +50,12 @@ Les cases à cocher et les boutons radio sont utilisés pour les sélections à 
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Listes déroulantes
@@ -64,7 +64,7 @@ Les listes déroulantes offrent une sélection d'options aux utilisateurs. Crée
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Sélecteurs de dates
@@ -73,7 +73,7 @@ Les sélecteurs de date permettent aux utilisateurs de sélectionner facilement 
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Définition des propriétés des champs de formulaire
@@ -122,7 +122,7 @@ Les champs de saisie de texte sont polyvalents et couramment utilisés pour capt
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Une fois le champ créé, vous pouvez définir ses propriétés, telles que le nom, la valeur par défaut et le texte d'espace réservé. Voyons comment procéder :
@@ -150,14 +150,14 @@ Pour créer un champ de formulaire de case à cocher, utilisez
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Pour les boutons radio, vous pouvez les créer en utilisant le type de forme OLE_OBJECT :
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Après avoir créé ces champs, vous pouvez personnaliser leurs propriétés, telles que le nom, la sélection par défaut et le texte de l'étiquette :
@@ -183,7 +183,7 @@ Les listes déroulantes sont utiles dans les scénarios où les utilisateurs doi
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Après avoir créé la liste déroulante, vous pouvez spécifier la liste des options disponibles pour les utilisateurs :
@@ -211,7 +211,7 @@ Les sélecteurs de date simplifient le processus de saisie des dates auprès des
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Après avoir créé le sélecteur de date, vous pouvez définir ses propriétés, telles que le nom et la date par défaut :
@@ -228,11 +228,7 @@ Les sélecteurs de dates améliorent l'expérience utilisateur lors de la captur
 
 ## Conclusion
 
-La maîtrise des champs de formulaire et de la capture de données dans les documents Word est une compétence précieuse qui vous permet de créer des documents interactifs et efficaces pour la collecte de données. Aspose.Words pour Python fournit un ensemble complet d'outils pour créer, personnaliser et extraire des données à partir de champs de formulaire. Des champs de saisie de texte simples aux calculs complexes et à la mise en forme conditionnelle, les possibilités sont vastes.
-
 Dans ce guide, nous avons exploré les principes fondamentaux des champs de formulaire, les types de champs de formulaire, la définition des propriétés et la personnalisation de leur comportement. Nous avons également abordé les meilleures pratiques en matière de conception de formulaires et proposé des informations sur l'optimisation des formulaires de documents pour les moteurs de recherche.
-
-En exploitant la puissance d'Aspose.Words pour Python, vous pouvez créer des documents qui non seulement capturent efficacement les données, mais améliorent également l'engagement des utilisateurs et rationalisent les flux de travail de traitement des données. Vous êtes désormais prêt à vous lancer dans votre parcours pour devenir un maître des champs de formulaire et de la capture de données dans les documents Word.
 
 ## FAQ
 

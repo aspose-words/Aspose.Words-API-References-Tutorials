@@ -9,7 +9,7 @@ url: /cs/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff
 ---
 ## Zavedení
 
-Přemýšleli jste někdy, jak ovládat práh pro binarizaci TIFF v dokumentech aplikace Word? Jste na správném místě! Tato příručka vás provede procesem krok za krokem pomocí Aspose.Words pro .NET. Ať už jste ostřílený vývojář nebo teprve začínáte, tento návod shledáte poutavým, snadno sledovatelným a plný všech podrobností, které potřebujete ke své práci. Jste připraveni se ponořit? Jdeme!
+Přemýšleli jste někdy, jak ovládat práh pro binarizaci TIFF v dokumentech aplikace Word? Jste na správném místě! Tato příručka vás provede procesem krok za krokem pomocí Aspose.Words pro .NET. Ať už jste ostřílený vývojář nebo teprve začínáte, tento návod shledáte poutavým, snadno sledovatelným a plný všech podrobností, které potřebujete ke své práci. Jste připraveni se ponořit? Jdeme na to!
 
 ## Předpoklady
 

@@ -45,7 +45,7 @@ using Aspose.Words.Tables;
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-ال`DocumentBuilder` الفئة عبارة عن أداة متعددة الاستخدامات تسمح لك بإنشاء المستند وتعديله.
+ ال`DocumentBuilder` الفئة عبارة عن أداة متعددة الاستخدامات تسمح لك بإنشاء المستند وتعديله.
 
 ## الخطوة 2: إدراج ارتباط تشعبي
 

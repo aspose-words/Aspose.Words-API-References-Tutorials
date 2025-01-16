@@ -23,7 +23,7 @@ pip install aspose-words
 2. Mengimpor Modul: Impor modul yang diperlukan dalam skrip Python Anda.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Menambahkan Header dan Footer Sederhana
@@ -33,30 +33,18 @@ Untuk menambahkan header dan footer dasar ke dokumen Word Anda, ikuti langkah-la
 1. Membuat Dokumen: Buat dokumen Word baru menggunakan Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Menambahkan Header dan Footer: Gunakan`sections` properti dokumen untuk mengakses bagian. Kemudian, gunakan`headers_footers` properti untuk menambahkan header dan footer.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Menambahkan Konten: Tambahkan konten ke header dan footer.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Menyimpan Dokumen: Simpan dokumen dengan header dan footer.
+3. Menyimpan Dokumen: Simpan dokumen dengan header dan footer.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Menambahkan Tabel: Gabungkan tabel untuk informasi tabular.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Bidang Dinamis: Gunakan bidang dinamis untuk penyisipan data otomatis.
+2. Bidang Dinamis: Gunakan bidang dinamis untuk penyisipan data otomatis.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -110,8 +90,6 @@ header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
 
-3. Sesuaikan Sesuai Kebutuhan: Sesuaikan setiap header dan footer menurut kebutuhan Anda.
-
 ## Menghapus Header dan Footer
 
 Untuk menghapus header dan footer dari dokumen Word:
@@ -130,7 +108,7 @@ section.page_setup.different_first_page_header_footer = False
 section.page_setup.odd_and_even_pages_header_footer = False
 ```
 
-## Tanya Jawab Umum
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara mengakses konten header dan footer?
 
@@ -150,4 +128,4 @@ Ya, Anda dapat menghapus konten header dan footer untuk menghapusnya secara efek
 
 ### Di mana saya dapat mempelajari lebih lanjut tentang Aspose.Words untuk Python?
 
-Untuk dokumentasi dan contoh yang lebih rinci, kunjungi[Referensi API Aspose.Words untuk Python](https://reference.aspose.com/words/python-net/).
+ Untuk dokumentasi dan contoh yang lebih rinci, kunjungi[Referensi API Aspose.Words untuk Python](https://reference.aspose.com/words/python-net/).

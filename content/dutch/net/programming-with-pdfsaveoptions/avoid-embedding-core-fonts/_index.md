@@ -64,7 +64,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Instelling`UseCoreFonts` naar`true` zorgt ervoor dat basislettertypen zoals Arial en Times New Roman niet in de PDF worden ingesloten, waardoor de bestandsgrootte aanzienlijk wordt verkleind.
+ Instelling`UseCoreFonts` naar`true` zorgt ervoor dat basislettertypen zoals Arial en Times New Roman niet in het PDF-bestand worden ingesloten, waardoor de bestandsgrootte aanzienlijk wordt verkleind.
 
 ## Stap 4: Sla het document op als PDF
 

@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /tr/java/word-processing/manipulating-document-content/
 ---
-
 ## giriiş
 
 Java programlama dünyasında, verimli belge yönetimi birçok uygulamanın önemli bir yönüdür. İster raporlar oluşturmak, ister sözleşmeleri yönetmek veya herhangi bir belgeyle ilgili görevle uğraşmak isteyin, Aspose.Words for Java araç setinizde bulundurmanız gereken güçlü bir araçtır. Bu kapsamlı kılavuzda, Aspose.Words for Java kullanarak belge içeriğini temizleme, alanlar ve XML verileriyle düzenlemenin inceliklerini inceleyeceğiz. Bu çok yönlü kütüphanede ustalaşmak için gereken bilgi ve becerileri size kazandırmak için adım adım talimatlar ve kaynak kodu örnekleri sunacağız.
@@ -50,7 +49,8 @@ Boş paragraflar can sıkıcı olabilir. Bunları şu kodu kullanarak kaldırın
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ Belgelerinizde gizli içerik bulunabilir ve bu da işleme sırasında sorunlara 
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 Bu adımları izleyerek belgenizin temiz ve sonraki işlemlere hazır olduğundan emin olabilirsiniz.
-
----
 
 ## Alanlarla Çalışma
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 Alanlar belgelerinize dinamik yetenekler ekleyerek kullanım alanlarını artırır.
 
----
-
-## XML Verilerini Dahil Etme
-
-XML verilerini belgelerinize entegre etmek, özellikle dinamik içerik oluşturmak için güçlü olabilir. Java için Aspose.Words bu süreci basitleştirir.
-
-### XML Verilerini Bağlama
-
-XML verilerini belgenize kolaylıkla bağlayın:
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://şemalar.örnek'");
-doc.save("document_with_xml_data.docx");
-```
-
-Bu kod, XML verilerini belgenizin belirli bölümlerine bağlayarak onu dinamik ve veri odaklı hale getirir.
-
-## Sıkça Sorulan Sorular (SSS)
-
-### Bir belgeden boş paragrafları nasıl kaldırabilirim?
-   
-   Bir belgeden boş paragrafları kaldırmak için paragraflar arasında gezinebilir ve metin içeriği olmayanları kaldırabilirsiniz. Bunu başarmanıza yardımcı olacak bir kod parçası:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### Bir belgedeki tüm alanları programatik olarak güncelleyebilir miyim?
-
-   Evet, Aspose.Words for Java kullanarak bir belgedeki tüm alanları programatik olarak güncelleyebilirsiniz. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### XML verilerini bir belgeye nasıl bağlarım?
-
-   XML verilerini bir belgeye bağlamak Aspose.Words for Java ile basittir. Bunu başarmak için XML eşlemelerini kullanabilirsiniz. İşte bir örnek:
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://şemalar.örnek'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### Belge içeriğinin temizlenmesinin önemi nedir?
-
-   Belgelerinizin gereksiz öğelerden arınmış olduğundan emin olmak için belge içeriğini temizlemek önemlidir, bu da okunabilirliği artırabilir ve dosya boyutunu azaltabilir. Ayrıca belge tutarlılığını korumaya yardımcı olur.
-
-### Kullanılmayan stilleri bir belgeden nasıl kaldırabilirim?
-
-   Kullanılmayan stilleri bir belgeden Aspose.Words for Java kullanarak kaldırabilirsiniz. İşte bir örnek:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### Aspose.Words for Java, XML verileriyle dinamik belgeler oluşturmak için uygun mudur?
-
-   Evet, Aspose.Words for Java, XML verileriyle dinamik belgeler oluşturmak için oldukça uygundur. XML verilerini şablonlara bağlamak ve kişiselleştirilmiş belgeler oluşturmak için sağlam özellikler sunar.
-
 ## Çözüm
 
 Bu kapsamlı kılavuzda, Aspose.Words for Java kullanarak temizleme, alanlar ve XML verileriyle belge içeriğini düzenleme dünyasını keşfettik. Belgeleri nasıl temizleyeceğinizi, alanlarla nasıl çalışacağınızı ve XML verilerini sorunsuz bir şekilde nasıl dahil edeceğinizi öğrendiniz. Bu beceriler, Java uygulamalarında belge yönetimiyle uğraşan herkes için paha biçilmezdir.
+
+## SSS
+
+### Bir belgeden boş paragrafları nasıl kaldırabilirim?
+   
+Bir belgeden boş paragrafları kaldırmak için paragraflar arasında gezinebilir ve metin içeriği olmayanları kaldırabilirsiniz. Bunu başarmanıza yardımcı olacak bir kod parçası:
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### Bir belgedeki tüm alanları programatik olarak güncelleyebilir miyim?
+
+Evet, Aspose.Words for Java kullanarak bir belgedeki tüm alanları programatik olarak güncelleyebilirsiniz. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### Belge içeriğinin temizlenmesinin önemi nedir?
+
+Belgelerinizin gereksiz öğelerden arınmış olduğundan emin olmak için belge içeriğini temizlemek önemlidir, bu da okunabilirliği artırabilir ve dosya boyutunu azaltabilir. Ayrıca belge tutarlılığını korumaya yardımcı olur.
+
+### Kullanılmayan stilleri bir belgeden nasıl kaldırabilirim?
+
+Kullanılmayan stilleri bir belgeden Aspose.Words for Java kullanarak kaldırabilirsiniz. İşte bir örnek:
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### Aspose.Words for Java, XML verileriyle dinamik belgeler oluşturmak için uygun mudur?
+
+Evet, Aspose.Words for Java, XML verileriyle dinamik belgeler oluşturmak için oldukça uygundur. XML verilerini şablonlara bağlamak ve kişiselleştirilmiş belgeler oluşturmak için sağlam özellikler sunar.

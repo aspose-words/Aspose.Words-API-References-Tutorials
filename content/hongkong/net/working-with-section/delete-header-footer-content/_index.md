@@ -16,7 +16,7 @@ url: /zh-hant/net/working-with-section/delete-header-footer-content/
 在我們深入研究程式碼之前，讓我們確保您擁有所需的一切：
 
 1.  Aspose.Words for .NET Library：下載最新版本[這裡](https://releases.aspose.com/words/net/).
-2. 開發環境：與 .NET 相容的 IDE，如 Visual Studio。
+2. 開發環境：與 .NET 相容的 IDE，例如 Visual Studio。
 3. C# 基礎知識：熟悉 C# 將有助於您跟進。
 4. 範例 Word 文件：準備好一個用於測試的 Word 文件。
 

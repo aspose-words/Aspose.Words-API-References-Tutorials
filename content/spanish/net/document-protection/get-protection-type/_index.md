@@ -1,6 +1,6 @@
 ---
-title: Obtener tipo de protección en un documento de Word
-linktitle: Obtener tipo de protección en un documento de Word
+title: Obtener tipo de protección en documento de Word
+linktitle: Obtener tipo de protección en documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
 description: Aprenda a comprobar el tipo de protección de los documentos de Word con Aspose.Words para .NET. Incluye una guía paso a paso, ejemplos de código y preguntas frecuentes.
 type: docs
@@ -15,7 +15,7 @@ url: /es/net/document-protection/get-protection-type/
 
 Antes de pasar a la parte de codificación, asegurémonos de que tienes todo lo que necesitas:
 
-1.  Biblioteca Aspose.Words para .NET: si aún no lo ha hecho, descargue e instale la[Biblioteca Aspose.Words para .NET](https://releases.aspose.com/words/net/).
+1. Biblioteca Aspose.Words para .NET: si aún no lo ha hecho, descargue e instale la[Biblioteca Aspose.Words para .NET](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: un IDE como Visual Studio.
 3. Conocimientos básicos de C#: la familiaridad con la programación en C# le ayudará a seguir adelante.
 
@@ -41,7 +41,7 @@ Lo primero es lo primero: configure su proyecto de C# en Visual Studio. A contin
 
 ## Paso 2: Cargue su documento
 
- Ahora que su proyecto está configurado, carguemos el documento de Word que desea verificar. Reemplace`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su documento.
+Ahora que su proyecto está configurado, carguemos el documento de Word que desea verificar. Reemplace`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su documento.
 
 ```csharp
 // Ruta al directorio de su documento
@@ -75,13 +75,13 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 Aspose.Words para .NET es una potente biblioteca que le permite crear, editar, convertir y manipular documentos de Word mediante programación.
 
 ### ¿Puedo utilizar Aspose.Words gratis?
- Puedes empezar con un[prueba gratis](https://releases.aspose.com/) , pero para obtener la funcionalidad completa, deberá comprar una licencia. Consulte la[Opciones de compra](https://purchase.aspose.com/buy).
+ Puedes empezar con un[prueba gratis](https://releases.aspose.com/) pero para obtener la funcionalidad completa, deberá comprar una licencia. Consulte la[Opciones de compra](https://purchase.aspose.com/buy).
 
 ### ¿Qué tipos de protección puede detectar Aspose.Words?
 Aspose.Words puede detectar varios tipos de protección, como NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments y AllowOnlyFormFields.
 
 ### ¿Cómo puedo obtener ayuda si encuentro problemas?
-Para cualquier problema, puede visitar el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) para pedir ayuda.
+ Para cualquier problema, puede visitar el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) para pedir ayuda.
 
 ### ¿Aspose.Words es compatible con .NET Core?
 Sí, Aspose.Words es compatible con .NET Framework y .NET Core.

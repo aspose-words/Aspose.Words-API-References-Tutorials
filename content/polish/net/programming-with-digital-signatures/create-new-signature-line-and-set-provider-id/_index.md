@@ -130,7 +130,7 @@ I masz to! Udało Ci się utworzyć nową linię podpisu i ustawić identyfikato
 ## Najczęściej zadawane pytania
 
 ### Czy mogę dostosować wygląd linii podpisu?
-Oczywiście! Możesz modyfikować różne opcje w`SignatureLineOptions` aby spełnić Twoje potrzeby.
+ Oczywiście! Możesz modyfikować różne opcje w`SignatureLineOptions`aby spełnić Twoje potrzeby.
 
 ### Co zrobić, jeśli nie mam certyfikatu PFX?
 Będziesz musiał uzyskać jeden od zaufanego urzędu certyfikacji. Jest on niezbędny do cyfrowego podpisywania dokumentów.

@@ -2,7 +2,7 @@
 title: 管理 Word 文档中的连字和文本流
 linktitle: 管理 Word 文档中的连字和文本流
 second_title: Aspose.Words Python 文档管理 API
-description: 了解如何使用 Aspose.Words for Python 管理 Word 文档中的连字和文本流。使用分步示例和源代码创建精美、易读的文档。
+description: 了解如何使用 Aspose.Words for Python 管理 Word 文档中的连字符和文本流。使用分步示例和源代码创建精美、易读的文档。
 type: docs
 weight: 17
 url: /zh/python-net/document-structure-and-content-manipulation/document-hyphenation/
@@ -13,7 +13,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/document-hyphena
 
 ### 什么是连字？
 
-连字是在行末断开单词以改善文本的外观和可读性的过程。它可以避免单词之间出现尴尬的空格和较大的间隙，从而在文档中创建更流畅的视觉流程。
+连字是在行末断开单词的过程，以改善文本的外观和可读性。它可以避免单词之间出现尴尬的间距和较大的间隙，从而在文档中创建更流畅的视觉流程。
 
 ### 连字的重要性
 

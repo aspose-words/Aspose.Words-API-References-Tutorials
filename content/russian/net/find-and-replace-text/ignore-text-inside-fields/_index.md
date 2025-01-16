@@ -31,7 +31,7 @@ using System.Text.RegularExpressions;
 
 ## Шаг 1: Создайте новый документ и конструктор
 
- Сначала инициализируйте новый документ Word и`DocumentBuilder`Цель: облегчить составление документа:
+ Сначала инициализируйте новый документ Word и`DocumentBuilder` Цель: облегчить составление документа:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);

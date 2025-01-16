@@ -18,7 +18,7 @@ I den här guiden kommer vi att utforska hur man redigerar känslig information 
 
 Innan vi börjar arbeta med Aspose.Words för Java måste vi ställa in vår utvecklingsmiljö. Följ dessa steg:
 
-1.  Ladda ner och installera Aspose.Words för Java: Besök[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) för att ladda ner den senaste versionen av Aspose.Words för Java.
+1.  Ladda ner och installera Aspose.Words för Java: Besök[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)för att ladda ner den senaste versionen av Aspose.Words för Java.
 
 2. Integrera Aspose.Words i ditt projekt: Lägg till Aspose.Words JAR-filer till ditt Java-projekt.
 

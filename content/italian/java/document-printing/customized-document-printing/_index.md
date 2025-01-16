@@ -58,7 +58,7 @@ Aspose.Words per Java offre opzioni di personalizzazione avanzate, tra cui intes
 
 ## Risoluzione dei problemi
 
-Hai riscontrato problemi? Consulta la documentazione di Aspose.Words per Java per suggerimenti sulla risoluzione dei problemi.
+Si verificano problemi? Per suggerimenti sulla risoluzione dei problemi, fare riferimento alla documentazione di Aspose.Words per Java.
 
 ## Conclusione
 

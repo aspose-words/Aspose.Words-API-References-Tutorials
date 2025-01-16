@@ -15,7 +15,7 @@ Ahoj, kolegové kodéři a nadšenci do automatizace dokumentů! Jste připraven
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi Aspose.Words for .NET. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí .NET, jako je Visual Studio, je nezbytné pro psaní a testování kódu.
 3. Základní znalost C#: Základní znalost C# vám pomůže sledovat úryvky kódu.
 4.  Ukázkový dokument Word: Mít a[Word dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) s připravenými existujícími makry VBA. Toto bude náš testovací předmět pro úpravu maker.

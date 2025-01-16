@@ -9,7 +9,7 @@ url: /hu/net/add-content-using-documentbuilder/insert-hyperlink/
 ---
 ## Bevezetés
 
-A Word dokumentumok létrehozása és kezelése sok alkalmazásban alapvető feladat. Legyen szó jelentéskészítésről, sablonok létrehozásáról vagy dokumentumkészítés automatizálásáról, az Aspose.Words for .NET robusztus megoldásokat kínál. Ma ugorjunk bele egy gyakorlati példába: hiperhivatkozások beszúrása Word-dokumentumba az Aspose.Words for .NET segítségével.
+Word dokumentumok létrehozása és kezelése sok alkalmazásban alapvető feladat. Legyen szó jelentéskészítésről, sablonok létrehozásáról vagy dokumentumkészítés automatizálásáról, az Aspose.Words for .NET robusztus megoldásokat kínál. Ma ugorjunk bele egy gyakorlati példába: hiperhivatkozások beszúrása Word-dokumentumba az Aspose.Words for .NET segítségével.
 
 ## Előfeltételek
 
@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. lépés: Írja meg a kezdő szöveget
 
- A`DocumentBuilder`, írunk néhány kezdő szöveget a dokumentumhoz. Ez beállítja a kontextust, ahol a hiperhivatkozásunk be lesz illesztve.
+ A`DocumentBuilder`, írunk néhány kezdő szöveget a dokumentumba. Ez beállítja a kontextust, ahol a hiperhivatkozásunk be lesz illesztve.
 
 ```csharp
 builder.Write("Please make sure to visit ");
@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## 5. lépés: Helyezze be a hiperhivatkozást
 
- Most beillesztjük a hiperhivatkozást a`InsertHyperlink`módszer. Ez a módszer három paramétert igényel: a megjelenített szöveget, az URL-t és egy logikai értéket, amely jelzi, hogy a hivatkozást hiperhivatkozásként kell-e formázni.
+ Most beillesztjük a hiperhivatkozást a`InsertHyperlink` módszer. Ez a módszer három paramétert igényel: a megjelenített szöveget, az URL-t és egy logikai értéket, amely jelzi, hogy a hivatkozást hiperhivatkozásként kell-e formázni.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
@@ -76,7 +76,7 @@ builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
 
 ## 6. lépés: Formázás törlése
 
-A hiperhivatkozás beillesztése után töröljük a formázást, hogy visszatérjünk az alapértelmezett szövegstílushoz. Ez biztosítja, hogy a későbbi szövegek ne örököljék a hiperhivatkozás stílusát.
+hiperhivatkozás beillesztése után töröljük a formázást, hogy visszatérjünk az alapértelmezett szövegstílushoz. Ez biztosítja, hogy a későbbi szövegek ne örököljék a hiperhivatkozás stílusát.
 
 ```csharp
 builder.Font.ClearFormatting();
@@ -106,7 +106,7 @@ A hiperhivatkozások beillesztése Word-dokumentumba az Aspose.Words for .NET ha
 
 ### Beszúrhatok több hiperhivatkozást egyetlen dokumentumba?
 
- Igen, több hiperhivatkozást is beszúrhat a következő megismétlésével`InsertHyperlink`módszer minden hivatkozáshoz.
+ Igen, több hiperhivatkozást is beszúrhat a következő megismétlésével`InsertHyperlink` módszer minden hivatkozáshoz.
 
 ### Hogyan változtathatom meg a hiperhivatkozás színét?
 
@@ -118,7 +118,7 @@ A hiperhivatkozások beillesztése Word-dokumentumba az Aspose.Words for .NET ha
 
 ### Mi történik, ha az URL érvénytelen?
 
-A`InsertHyperlink` metódus nem ellenőrzi az URL-eket, ezért fontos, hogy az URL-ek helyesek legyenek, mielőtt beillesztik őket.
+ A`InsertHyperlink` metódus nem ellenőrzi az URL-eket, ezért fontos, hogy az URL-ek helyesek legyenek, mielőtt beillesztik őket.
 
 ### Eltávolítható a hiperhivatkozás a beillesztés után?
 

@@ -54,7 +54,7 @@ doc.save("output.html", saveOptions);
 
 ```java
 //ドキュメントを画像として保存する Java コード
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); //解像度（DPI）を設定する
 doc.save("output.png", imageSaveOptions);
 ```

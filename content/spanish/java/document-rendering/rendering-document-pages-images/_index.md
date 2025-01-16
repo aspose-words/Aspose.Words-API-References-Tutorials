@@ -48,7 +48,7 @@ Aspose.Words ofrece varias opciones para guardar imágenes y controlar el format
 
 ```java
 // Inicializar las opciones de guardado de imagen
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Paso 4: Representar las páginas del documento como imágenes

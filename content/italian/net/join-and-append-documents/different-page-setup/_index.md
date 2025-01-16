@@ -36,7 +36,7 @@ Bene, andiamo al nocciolo della questione. Scomporremo l'intero processo in semp
 
 ### Passaggio 1.1: creare un nuovo progetto
 
-Avvia Visual Studio e crea una nuova applicazione console C#. Chiamala con un nome carino, come "DifferentPageSetupExample".
+Avvia Visual Studio e crea una nuova C# Console Application. Chiamala con un nome carino, come "DifferentPageSetupExample".
 
 ### Passaggio 1.2: aggiungere il riferimento Aspose.Words
 

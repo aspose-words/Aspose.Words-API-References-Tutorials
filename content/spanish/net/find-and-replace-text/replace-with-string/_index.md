@@ -71,7 +71,7 @@ Aquí es donde ocurre la verdadera acción. Vamos a buscar la palabra "triste" y
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-El`Replace`El método es sencillo. Especificamos la palabra que se va a buscar, la palabra de reemplazo y las opciones para la operación de búsqueda y reemplazo.
+ El`Replace`El método es sencillo. Especificamos la palabra que se va a buscar, la palabra de reemplazo y las opciones para la operación de búsqueda y reemplazo.
 
 ## Paso 5: Guardar el documento
 

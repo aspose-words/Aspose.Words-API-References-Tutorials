@@ -66,19 +66,17 @@ comment = doc.comments[0]
 comment.text = "Updated insight: " + comment.text
 
 # Resolve a comment
-comment.resolved = True
-```
+comments = doc.get_child_nodes(aw.NodeType.COMMENT, True)
 
-## 處理回覆和對話
+parent_comment = comments[0].as_comment()
+for child in parent_comment.replies:
+	child_comment = child.as_comment()
+	# Get comment parent and status.
+	print(child_comment.ancestor.id)
+	print(child_comment.done)
 
-評論可以成為對話的一部分，回覆可以增加討論的深度。 Aspose.Words for Python 讓您管理評論回覆：
-
-```python
-# Add a reply to a comment
-reply = aw.Comment(doc, "Alice", "I agree with John.")
-reply.parent_comment = comment
-reply.date_time = aw.DateTime.now()
-comment.replies.add(reply)
+	# And update comment Done mark.
+	child_comment.done = True
 ```
 
 ## 註解的格式和样式

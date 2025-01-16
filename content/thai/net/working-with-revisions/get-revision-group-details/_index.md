@@ -106,4 +106,4 @@ foreach (Revision revision in doc.Revisions)
  ใช่ Aspose.Words สำหรับ .NET ต้องมีใบอนุญาตจึงจะใช้งานได้เต็มรูปแบบ คุณสามารถซื้อได้[ที่นี่](https://purchase.aspose.com/buy) หรือรับใบอนุญาตชั่วคราว[ที่นี่](https://purchase.aspose.com/temporary-license/).
 
 ### ฉันสามารถหาเอกสารเพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ .NET ได้จากที่ใด
-เอกสารรายละเอียดมีให้[ที่นี่](https://reference.aspose.com/words/net/).
+ เอกสารรายละเอียดมีให้[ที่นี่](https://reference.aspose.com/words/net/).

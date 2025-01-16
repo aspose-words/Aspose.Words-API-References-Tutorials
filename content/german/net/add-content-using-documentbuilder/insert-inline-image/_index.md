@@ -76,7 +76,7 @@ Zusammenfassend lässt sich sagen, dass die Integration von Inline-Bildern in Wo
 Ja, Aspose.Words für .NET unterstützt das Einfügen von Bildern mit transparentem Hintergrund, wobei die Transparenz des Bildes im Dokument erhalten bleibt.
 
 ### Wie kann ich die Größe eines mit Aspose.Words für .NET eingefügten Inline-Bilds ändern?
- Sie können die Größe eines Bildes ändern, indem Sie die Breiten- und Höheneigenschaften des`Shape` Objekt zurückgegeben von`builder.InsertImage`.
+ Sie können die Größe eines Bildes ändern, indem Sie die Breite und Höhe des`Shape` Objekt zurückgegeben von`builder.InsertImage`.
 
 ### Ist es möglich, mit Aspose.Words für .NET ein Inline-Bild an einer bestimmten Stelle im Dokument zu positionieren?
  Ja, Sie können die Position eines Inline-Bildes über die Cursorposition des Dokument-Generators festlegen, bevor Sie`builder.InsertImage`.

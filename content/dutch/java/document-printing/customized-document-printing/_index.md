@@ -56,7 +56,7 @@ doc.print("printerName");
 
 Aspose.Words voor Java biedt geavanceerde aanpassingsopties, waaronder headers, footers en pagina-instellingen. Bekijk de API-documentatie voor meer details.
 
-## Problemen oplossen
+## Probleemoplossing
 
 Problemen? Raadpleeg de Aspose.Words voor Java-documentatie voor tips voor probleemoplossing.
 

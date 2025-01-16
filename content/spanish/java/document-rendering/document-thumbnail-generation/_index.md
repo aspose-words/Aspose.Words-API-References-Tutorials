@@ -40,7 +40,7 @@ Ahora, profundicemos en el proceso de generación de miniaturas a partir del doc
 ```java
 // Código Java para generar una miniatura de un documento
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ La generación de miniaturas de documentos mediante Aspose.Words para Java ofrec
 
 ### ¿Cómo instalo Aspose.Words para Java?
 
- Para instalar Aspose.Words para Java, visite la página de descarga[aquí](https://releases.aspose.com/words/java/) siga las instrucciones de instalación proporcionadas.
+Para instalar Aspose.Words para Java, visite la página de descarga[aquí](https://releases.aspose.com/words/java/) siga las instrucciones de instalación proporcionadas.
 
 ### ¿Puedo personalizar el tamaño de la miniatura generada?
 

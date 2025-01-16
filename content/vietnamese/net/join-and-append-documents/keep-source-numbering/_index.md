@@ -90,4 +90,4 @@ Aspose.Words hỗ trợ các phiên bản .NET Framework và .NET Core để tí
 Sử dụng khối try-catch để xử lý các ngoại lệ có thể xảy ra trong quá trình nhập.
 
 ### Tôi có thể tìm tài liệu chi tiết hơn về Aspose.Words cho .NET ở đâu?
- Ghé thăm[tài liệu](https://reference.aspose.com/words/net/)để có hướng dẫn toàn diện và tài liệu tham khảo API.
+ Ghé thăm[tài liệu](https://reference.aspose.com/words/net/) để có hướng dẫn toàn diện và tài liệu tham khảo API.

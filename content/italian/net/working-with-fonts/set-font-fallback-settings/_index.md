@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Passaggio 3: configurare le impostazioni del carattere
 
-Crea un nuovo`FontSettings` oggetto e carica le impostazioni di fallback del font da un file XML. Questo file XML contiene le regole per il fallback del font.
+ Crea un nuovo`FontSettings` oggetto e carica le impostazioni di fallback del font da un file XML. Questo file XML contiene le regole per il fallback del font.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

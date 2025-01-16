@@ -2,7 +2,7 @@
 title: 使用匯總選項
 linktitle: 使用匯總選項
 second_title: Aspose.Words 文件處理 API
-description: 學習使用 Aspose.Words for .NET 有效總結 Word 文檔，以及我們有關整合 AI 模型的逐步指南，以獲取快速見解。
+description: 透過我們有關整合 AI 模型的逐步指南來快速獲得見解，學習使用 Aspose.Words for .NET 有效總結 Word 文件。
 type: docs
 weight: 10
 url: /zh-hant/net/ai-powered-document-processing/working-with-summarize-options/

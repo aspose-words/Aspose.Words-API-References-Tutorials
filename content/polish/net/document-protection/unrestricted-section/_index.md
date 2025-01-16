@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Ten`Document` klasa inicjuje nowy dokument i`DocumentBuilder` pomaga nam łatwo dodawać treść do naszego dokumentu.
+ Ten`Document` klasa inicjuje nowy dokument i`DocumentBuilder` pomaga nam łatwo dodawać treść do naszego dokumentu.
 
 ## Krok 2: Wstawianie sekcji
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-Ten`InsertBreak` Metoda ta wstawia ciągły podział sekcji, umożliwiając nam zastosowanie różnych ustawień dla każdej sekcji.
+ Ten`InsertBreak` Metoda ta wstawia ciągły podział sekcji, umożliwiając nam zastosowanie różnych ustawień dla każdej sekcji.
 
 ## Krok 3: Zabezpiecz dokument
 
@@ -124,7 +124,7 @@ Ten krok zapewnia, że dokument zostanie poprawnie zapisany i będzie można go 
 
 ## Wniosek
 
-I masz! Postępując zgodnie z tymi krokami, udało Ci się utworzyć dokument Word z mieszanką chronionych i niechronionych sekcji przy użyciu Aspose.Words dla .NET. Ta metoda jest niezwykle przydatna, gdy musisz zablokować pewne części dokumentu, pozostawiając inne części edytowalne.
+masz! Postępując zgodnie z tymi krokami, udało Ci się utworzyć dokument Word z mieszanką chronionych i niechronionych sekcji przy użyciu Aspose.Words dla .NET. Ta metoda jest niezwykle przydatna, gdy musisz zablokować pewne części dokumentu, pozostawiając inne części edytowalne.
 
 ## Najczęściej zadawane pytania
 

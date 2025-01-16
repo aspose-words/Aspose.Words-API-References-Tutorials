@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-IL`InsertChart` prende il tipo di grafico, la larghezza e l'altezza come parametri. In questo caso, stiamo inserendo un grafico a linee con una larghezza di 432 e un'altezza di 252.
+ IL`InsertChart` prende il tipo di grafico, la larghezza e l'altezza come parametri. In questo caso, stiamo inserendo un grafico a linee con una larghezza di 432 e un'altezza di 252.
 
 ## Passaggio 3: accedere alla serie di grafici
 

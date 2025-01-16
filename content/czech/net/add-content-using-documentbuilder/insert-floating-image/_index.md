@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`Document` objekt představuje dokument aplikace Word a`DocumentBuilder` pomáhá při přidávání obsahu.
+ The`Document` objekt představuje dokument aplikace Word a`DocumentBuilder` pomáhá při přidávání obsahu.
 
 ## Krok 3: Definujte cestu obrázku
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 Každý parametr znamená:
-- `imagePath`Cesta k souboru obrázku.
+- `imagePath`: Cesta k souboru obrázku.
 - `RelativeHorizontalPosition.Margin`: Vodorovná poloha vzhledem k okraji.
 - `100`: Horizontální odsazení od okraje (v bodech).
 - `RelativeVerticalPosition.Margin`: Svislá poloha vzhledem k okraji.

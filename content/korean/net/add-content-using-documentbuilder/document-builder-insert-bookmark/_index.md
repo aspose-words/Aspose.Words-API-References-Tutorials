@@ -71,7 +71,7 @@ builder.StartBookmark("FineBookmark");
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-그만큼`Writeln` 이 방법은 지정된 텍스트로 된 새 문단을 문서에 추가합니다.
+ 그만큼`Writeln` 이 방법은 지정된 텍스트로 된 새 문단을 문서에 추가합니다.
 
 ## 5단계: 북마크 종료
 
@@ -81,7 +81,7 @@ builder.Writeln("This is just a fine bookmark.");
 builder.EndBookmark("FineBookmark");
 ```
 
-그만큼`EndBookmark` 이 방법은 앞서 시작했던 북마크를 완성합니다.
+ 그만큼`EndBookmark` 이 방법은 앞서 시작했던 북마크를 완성합니다.
 
 ## 6단계: 문서 저장
 

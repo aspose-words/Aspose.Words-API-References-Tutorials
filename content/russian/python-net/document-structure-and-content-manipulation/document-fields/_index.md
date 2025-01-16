@@ -23,7 +23,7 @@ url: /ru/python-net/document-structure-and-content-manipulation/document-fields/
  Чтобы вставить поле, вы можете использовать`FieldBuilder` класс. Например, чтобы вставить поле текущей даты:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Автоматизация создания документов с полями
-
-Поля необходимы для автоматизированной генерации документов. Вы можете заполнить поля данными из внешних источников:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Интеграция полей с источниками данных

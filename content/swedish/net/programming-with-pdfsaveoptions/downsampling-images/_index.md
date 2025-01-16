@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- det här steget laddar vi Word-dokumentet från den angivna katalogen. Se till att byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen där ditt dokument finns.
+ det här steget laddar vi Word-dokumentet från den angivna katalogen. Se till att byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument finns.
 
 ## Steg 2: Konfigurera nedsamplingsalternativ
 

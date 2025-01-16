@@ -9,7 +9,7 @@ url: /pl/net/programming-with-loadoptions/convert-shape-to-office-math/
 ---
 ## Wstęp
 
-W tym samouczku zagłębimy się w to, jak możesz konwertować kształty na Office Math w dokumentach Word za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy chcesz usprawnić przetwarzanie dokumentów, czy ulepszyć możliwości formatowania dokumentów, ten przewodnik przeprowadzi Cię przez cały proces krok po kroku. Pod koniec tego samouczka będziesz mieć jasne zrozumienie, jak wykorzystać Aspose.Words dla .NET, aby wydajnie wykonywać to zadanie.
+W tym samouczku zagłębimy się w to, jak możesz konwertować kształty na Office Math w dokumentach Word przy użyciu Aspose.Words dla .NET. Niezależnie od tego, czy chcesz usprawnić przetwarzanie dokumentów, czy ulepszyć możliwości formatowania dokumentów, ten przewodnik przeprowadzi Cię przez cały proces krok po kroku. Pod koniec tego samouczka będziesz mieć jasne zrozumienie, jak wykorzystać Aspose.Words dla .NET, aby wydajnie wykonywać to zadanie.
 
 ## Wymagania wstępne
 

@@ -18,7 +18,7 @@ Zanim zagłębimy się w szczegóły techniczne, upewnij się, że spełnione s�
 
 - Podstawowa znajomość programowania w języku Python.
 -  Dokumentacja API Aspose.Words dla języka Python (dostępna pod adresem[Tutaj](https://reference.aspose.com/words/python-net/).
-- Dostęp do biblioteki Aspose.Words dla języka Python (do pobrania z[Tutaj](https://releases.aspose.com/words/python/).
+-  Dostęp do biblioteki Aspose.Words dla języka Python (do pobrania z[Tutaj](https://releases.aspose.com/words/python/).
 
 ## Konfigurowanie Aspose.Words dla Pythona
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Zaimportuj bibliotekę do swojego skryptu Pythona.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Tworzenie nowego dokumentu
@@ -42,7 +42,7 @@ import aspose.words
 Zacznijmy od utworzenia nowego dokumentu przy użyciu Aspose.Words:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Dodawanie zawartości do dokumentu
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Możesz łatwo dodać treść do dokumentu za pomocą Aspose.Words:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ Stylizacja i formatowanie odgrywają kluczową rolę w prezentacji dokumentu. As
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Wstawianie rozszerzeń internetowych
-
-Aby wstawić rozszerzenie internetowe do dokumentu, wykonaj następujące kroki:
-
-1. Utwórz rozszerzenie internetowe korzystając z HTML, CSS i JavaScript.
-2. Konwertuj rozszerzenie internetowe na ciąg zakodowany w formacie base64.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Wstaw rozszerzenie internetowe do dokumentu:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Interakcja z rozszerzeniami internetowymi
@@ -98,7 +78,7 @@ Rozszerzenia internetowe mogą dynamicznie modyfikować zawartość dokumentu. N
 Po dodaniu rozszerzeń internetowych i wprowadzeniu niezbędnych modyfikacji możesz zapisać dokument w różnych formatach obsługiwanych przez Aspose.Words:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Wskazówki dotyczące optymalizacji wydajności
@@ -127,7 +107,7 @@ Aby utworzyć rozszerzenie sieciowe, musisz opracować zawartość rozszerzenia 
 
 Tak, rozszerzenia internetowe mogą być używane do dynamicznej modyfikacji zawartości dokumentu. Na przykład możesz użyć rozszerzenia do aktualizacji wykresów, wstawiania danych na żywo lub dodawania elementów interaktywnych.
 
-### jakich formatach mogę zapisać dokument?
+### W jakich formatach mogę zapisać dokument?
 
 Aspose.Words obsługuje różne formaty zapisywania dokumentów, w tym DOCX, PDF, HTML i inne. Możesz wybrać format, który najlepiej odpowiada Twoim wymaganiom.
 

@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## تعيين مولد الباركود
 
- قم بتعيين مولد الباركود المخصص باستخدام`FieldOptions` في هذا المثال، نفترض أنك قمت بتنفيذ`CustomBarcodeGenerator` فئة لتوليد الباركود. استبدل`CustomBarcodeGenerator` مع منطق إنشاء الباركود الفعلي الخاص بك:
+ قم بتعيين مولد الباركود المخصص باستخدام`FieldOptions` في هذا المثال، نفترض أنك قمت بتنفيذ`CustomBarcodeGenerator`فئة لتوليد الباركود. استبدل`CustomBarcodeGenerator` مع منطق إنشاء الباركود الفعلي الخاص بك:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
@@ -62,7 +62,7 @@ doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 
 ## خاتمة
 
-تهانينا! لقد نجحت في تعلم كيفية إنشاء صور باركود مخصصة باستخدام Aspose.Words for Java. تفتح هذه المكتبة متعددة الاستخدامات عالمًا من الإمكانيات لأتمتة المستندات ومعالجتها.
+تهانينا! لقد نجحت في تعلم كيفية إنشاء صور باركود مخصصة باستخدام Aspose.Words for Java. تفتح هذه المكتبة متعددة الاستخدامات عالمًا من الاحتمالات لأتمتة المستندات ومعالجتها.
 
 ## الأسئلة الشائعة
 

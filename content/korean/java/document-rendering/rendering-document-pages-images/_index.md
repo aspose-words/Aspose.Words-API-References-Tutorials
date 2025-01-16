@@ -48,7 +48,7 @@ Aspose.Words는 출력 형식과 품질을 제어하기 위한 다양한 이미�
 
 ```java
 // 이미지 저장 옵션 초기화
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## 4단계: 문서 페이지를 이미지로 렌더링

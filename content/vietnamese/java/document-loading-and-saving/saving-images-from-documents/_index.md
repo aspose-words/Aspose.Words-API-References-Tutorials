@@ -22,7 +22,7 @@ Trong hướng dẫn này, chúng ta sẽ khám phá cách lưu hình ảnh từ
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setTiffCompression(TiffCompression.CCITT_3);
 saveOptions.setImageColorMode(ImageColorMode.GRAYSCALE);
 saveOptions.setTiffBinarizationMethod(ImageBinarizationMethod.FLOYD_STEINBERG_DITHERING);
@@ -36,7 +36,7 @@ doc.save("Your Directory Path" + "ThresholdControlledImage.tiff", saveOptions);
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(new PageRange(0, 1)));
 saveOptions.setTiffCompression(TiffCompression.CCITT_4);
 saveOptions.setResolution(160f);
@@ -49,7 +49,7 @@ doc.save("Your Directory Path" + "SpecificPageMultipage.tiff", saveOptions);
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(1));
 saveOptions.setImageColorMode(ImageColorMode.BLACK_AND_WHITE);
 saveOptions.setPixelFormat(ImagePixelFormat.FORMAT_1_BPP_INDEXED);
@@ -62,7 +62,7 @@ doc.save("Your Directory Path" + "1BPPIndexed.png", saveOptions);
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
+ImageSaveOptions options = new ImageSaveOptions();
 options.setPageSet(new PageSet(0));
 options.setImageBrightness(0.3f);
 options.setImageContrast(0.7f);
@@ -76,7 +76,7 @@ Bạn có thể sử dụng lệnh gọi lại để tùy chỉnh việc lưu tr
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setPageSet(new PageSet(new PageRange(0, doc.getPageCount() - 1)));
 imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
 doc.save("Your Directory Path" + "PageSavingCallback.png", imageSaveOptions);
@@ -96,7 +96,7 @@ private static class HandlePageSavingCallback implements IPageSavingCallback {
 public void exposeThresholdControlForTiffBinarization() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+	ImageSaveOptions saveOptions = new ImageSaveOptions();
 	{
 		saveOptions.setTiffCompression(TiffCompression.CCITT_3);
 		saveOptions.setImageColorMode(ImageColorMode.GRAYSCALE);
@@ -110,7 +110,7 @@ public void getTiffPageRange() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
-	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+	ImageSaveOptions saveOptions = new ImageSaveOptions();
 	{
 		saveOptions.setPageSet(new PageSet(new PageRange(0, 1))); saveOptions.setTiffCompression(TiffCompression.CCITT_4); saveOptions.setResolution(160f);
 	}
@@ -120,7 +120,7 @@ public void getTiffPageRange() throws Exception
 public void format1BppIndexed() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+	ImageSaveOptions saveOptions = new ImageSaveOptions();
 	{
 		saveOptions.setPageSet(new PageSet(1));
 		saveOptions.setImageColorMode(ImageColorMode.BLACK_AND_WHITE);
@@ -132,7 +132,7 @@ public void format1BppIndexed() throws Exception
 public void getJpegPageRange() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
+	ImageSaveOptions options = new ImageSaveOptions();
 	// Đặt "PageSet" thành "0" để chỉ chuyển đổi trang đầu tiên của tài liệu.
 	options.setPageSet(new PageSet(0));
 	// Thay đổi độ sáng và độ tương phản của hình ảnh.
@@ -148,7 +148,7 @@ public void getJpegPageRange() throws Exception
 public static void pageSavingCallback() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+	ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 	{
 		imageSaveOptions.setPageSet(new PageSet(new PageRange(0, doc.getPageCount() - 1)));
 		imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
@@ -174,7 +174,7 @@ Bạn đã học cách lưu hình ảnh từ tài liệu bằng Aspose.Words for
  Bạn có thể thay đổi định dạng hình ảnh bằng cách chỉ định định dạng mong muốn trong`ImageSaveOptions` . Ví dụ, để lưu dưới dạng PNG, hãy sử dụng`SaveFormat.PNG` như được hiển thị trong mã:
 
 ```java
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 ```
 
 ### Tôi có thể tùy chỉnh cài đặt nén cho hình ảnh TIFF không?

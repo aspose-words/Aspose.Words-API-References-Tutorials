@@ -54,12 +54,13 @@ Możesz użyć Aspose.Words, aby zastosować kursywę do określonych fragmentó
 ```python
 # Import the required classes
 from aspose.words import Document, Font, Style
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply italic style
 font = run.font
@@ -76,12 +77,13 @@ Aby wyróżnić tekst, możesz dostosować kolor tła przebiegu. Oto jak to zrob
 ```python
 # Import the required classes
 from aspose.words import Document, Color
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply background color
 run.font.highlight_color = Color.YELLOW
@@ -97,15 +99,16 @@ Wyrównanie można ustawić za pomocą stylów. Oto przykład:
 ```python
 # Import the required classes
 from aspose.words import Document, ParagraphAlignment
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set alignment
-paragraph.paragraph_format.alignment = ParagraphAlignment.RIGHT
+paragraph.paragraph_format.alignment = aw.ParagraphAlignment.RIGHT
 
 # Save the modified document
 doc.save("modified_document.docx")
@@ -118,12 +121,13 @@ Stosowanie odpowiednich odstępów między wierszami zwiększa czytelność. Mo�
 ```python
 # Import the required classes
 from aspose.words import Document, LineSpacingRule
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set line spacing
 paragraph.paragraph_format.line_spacing_rule = LineSpacingRule.MULTIPLE
@@ -141,7 +145,7 @@ Aspose.Words for Python oferuje szeroki zakres opcji dla czcionek i stylów teks
 
 W dziedzinie tworzenia dokumentów czcionki i styl tekstu to potężne narzędzia do zwiększania atrakcyjności wizualnej i skutecznego przekazywania informacji. Rozumiejąc podstawy czcionek, stylów tekstu i wykorzystując narzędzia takie jak Aspose.Words for Python, możesz tworzyć profesjonalne dokumenty, które przyciągają i zatrzymują uwagę odbiorców.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak zmienić kolor czcionki za pomocą Aspose.Words dla Pythona?
 

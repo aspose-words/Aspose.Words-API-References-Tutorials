@@ -27,7 +27,7 @@ Vamos começar criando um documento Word que depois converteremos para o formato
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Inserir uma tabela com duas células
+// Inserir uma tabela com duas células
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// Defina o alinhamento do conteúdo da tabela como automático (determinado pelo primeiro parágrafo)
+//Defina o alinhamento do conteúdo da tabela como automático (determinado pelo primeiro parágrafo)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## Etapa 3: Manipulando imagens
 
-Para incluir imagens no seu documento Markdown, você precisa especificar a pasta onde as imagens estão localizadas. O Aspose.Words para Java permite que você defina a pasta de imagens no`MarkdownSaveOptions`.
+ Para incluir imagens no seu documento Markdown, você precisa especificar a pasta onde as imagens estão localizadas. O Aspose.Words para Java permite que você defina a pasta de imagens no`MarkdownSaveOptions`.
 
 Veja como definir a pasta de imagens e salvar o documento com imagens:
 

@@ -61,7 +61,7 @@ builder.Writeln("This is an H1 tag");
 
 ## Stap 4: Alineastijlen opnieuw instellen
 
-Nadat we de kop hebben toegevoegd, moeten we de stijlen opnieuw instellen om te voorkomen dat ze worden overgenomen in de volgende alinea.
+Nadat we de kop hebben toegevoegd, moeten we de opmaak opnieuw instellen om te voorkomen dat deze wordt overgenomen in de volgende alinea.
 
 ```csharp
 //Stel de stijlen van de vorige alinea opnieuw in, zodat stijlen tussen alinea's niet worden gecombineerd.

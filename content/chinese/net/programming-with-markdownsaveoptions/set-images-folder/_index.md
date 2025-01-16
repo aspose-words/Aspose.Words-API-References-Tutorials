@@ -46,7 +46,7 @@ using System.IO;
 Install-Package Aspose.Words
 ```
 
-## 第 2 步：编写导出为 Markdown 的代码
+## 步骤 2：编写导出为 Markdown 的代码
 
 现在，让我们编写代码来读取 Word 文档并将其保存为具有适当表格对齐的 Markdown 文件。
 
@@ -98,7 +98,7 @@ using (MemoryStream stream = new MemoryStream())
 
 是的，Aspose.Words for .NET 可以与任何与 .NET 兼容的语言一起使用，例如 VB.NET、F# 等。
 
-### 如何获得 Aspose.Words 的临时许可证？
+### 如何获取 Aspose.Words 的临时许可证？
 
 您可以获得临时驾照[这里](https://purchase.aspose.com/temporary-license/).
 

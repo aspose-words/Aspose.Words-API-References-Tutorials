@@ -27,7 +27,7 @@ url: /ja/java/document-loading-and-saving/saving-documents-as-markdown/
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//2つのセルを持つ表を挿入する
+// 2つのセルを持つ表を挿入する
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");

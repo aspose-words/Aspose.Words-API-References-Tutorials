@@ -38,23 +38,11 @@ Berikut ini contoh potongan kode untuk membantu Anda memulai:
 // Impor paket yang diperlukan
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Inisialisasi Dokumen baru
-        Document doc = new Document();
-
-        // Buat daftar
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Tambahkan item daftar
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Simpan dokumen
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Mengubah Daftar Dokumen
@@ -69,21 +57,18 @@ Setelah Anda membuat daftar dokumen, Anda mungkin perlu mengubahnya dengan menam
 Berikut cuplikan kode untuk memodifikasi daftar dokumen:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Memuat dokumen yang ada
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Akses daftarnya
-        List list = doc.getLists().get(0);
-
-        // Tambahkan item baru
-        list.getListItems().add("New Item");
-
-        // Simpan dokumen yang dimodifikasi
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Periksa apakah paragraf tersebut merupakan bagian dari daftar.
+    if (paragraph.isListItem()) {
+        // Perbarui paragraf daftar terakhir.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Mengekstrak Informasi dari Daftar Dokumen
@@ -97,23 +82,21 @@ Dalam beberapa kasus, Anda mungkin perlu mengekstrak informasi dari daftar dokum
 Berikut cuplikan kode untuk mengekstrak informasi dari daftar dokumen:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Muat dokumen
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Akses daftarnya
-        List list = doc.getLists().get(0);
-
-        // Ulangi melalui item daftar dan cetak
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Pertanyaan yang Sering Diajukan (FAQ)
+## Kesimpulan
+
+Dalam panduan lengkap ini, kami telah menjelajahi dunia kerja dengan daftar dokumen menggunakan Aspose.Words untuk Java. Anda telah mempelajari cara membuat, memodifikasi, dan mengekstrak informasi dari daftar dokumen, semuanya dengan kekuatan dan fleksibilitas Aspose.Words untuk Java. Mulailah menerapkan teknik ini dalam proyek Java Anda hari ini dan sederhanakan tugas otomatisasi dokumen Anda.
+
+
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menambahkan poin-poin penting ke daftar dokumen?
  Untuk menambahkan poin-poin penting ke daftar dokumen, gunakan ListTemplate yang sesuai saat membuat daftar. Misalnya, gunakan`ListTemplate.BULLET_DEFAULT` alih-alih`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ Untuk mengonversi daftar dokumen ke PDF, cukup muat dokumen menggunakan Aspose.W
 
 ### Apakah Aspose.Words untuk Java mendukung penggunaan tabel dalam dokumen?
 Ya, Aspose.Words untuk Java menyediakan dukungan luas untuk bekerja dengan tabel, memungkinkan Anda membuat, memodifikasi, dan mengekstrak data tabular dengan mudah.
-
-## Kesimpulan
-
-Dalam panduan lengkap ini, kami telah menjelajahi dunia kerja dengan daftar dokumen menggunakan Aspose.Words untuk Java. Anda telah mempelajari cara membuat, memodifikasi, dan mengekstrak informasi dari daftar dokumen, semuanya dengan kekuatan dan fleksibilitas Aspose.Words untuk Java. Mulailah menerapkan teknik ini dalam proyek Java Anda hari ini dan sederhanakan tugas otomatisasi dokumen Anda.

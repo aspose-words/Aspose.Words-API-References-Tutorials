@@ -18,4 +18,4 @@ Genom att använda Aspose.Words kan du effektivt automatisera Word-dokumentbehan
 | --- | --- |
 | [Upptäck numrering med blanksteg](./detect-numbering-with-whitespaces/) | Upptäck hur du använder Aspose.Words för .NET för att upptäcka numrering med blanktecken i klartextdokument och se till att dina listor känns igen korrekt. |
 | [Hantera utrymmesalternativ](./handle-spaces-options/) | Lär dig hur du hanterar inledande och efterföljande mellanslag i textdokument med Aspose.Words för .NET. Denna handledning ger en guide för att rensa upp textformatering. |
-| [Dokumenttextriktning](./document-text-direction/) | Lär dig hur du ställer in dokumenttextriktning i Word med Aspose.Words för .NET med denna steg-för-steg-guide. Perfekt för att hantera språk från höger till vänster. |
+| [Dokumenttextriktning](./document-text-direction/) | Lär dig hur du ställer in dokumenttextriktning i Word med Aspose.Words för .NET med denna steg-för-steg-guide. Perfekt för att hantera höger-till-vänster-språk. |

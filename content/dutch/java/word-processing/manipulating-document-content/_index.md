@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /nl/java/word-processing/manipulating-document-content/
 ---
-
 ## Invoering
 
 In de wereld van Java-programmering is efficiënt documentbeheer een cruciaal aspect van veel toepassingen. Of u nu werkt aan het genereren van rapporten, het verwerken van contracten of het afhandelen van een documentgerelateerde taak, Aspose.Words voor Java is een krachtige tool om in uw gereedschapskist te hebben. In deze uitgebreide gids duiken we in de complexiteit van het manipuleren van documentinhoud met opschoning, velden en XML-gegevens met behulp van Aspose.Words voor Java. We bieden stapsgewijze instructies samen met broncodevoorbeelden om u te voorzien van de kennis en vaardigheden die nodig zijn om deze veelzijdige bibliotheek onder de knie te krijgen.
@@ -50,7 +49,8 @@ Lege alinea's kunnen vervelend zijn. Verwijder ze met deze code:
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ Er kan verborgen content in uw documenten zitten, wat mogelijk problemen kan ver
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 Door deze stappen te volgen, zorgt u ervoor dat uw document schoon is en klaar voor verdere bewerking.
-
----
 
 ## Werken met velden
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 Velden voegen dynamische mogelijkheden toe aan uw documenten, waardoor ze nog bruikbaarder worden.
 
----
-
-## XML-gegevens opnemen
-
-Het integreren van XML-gegevens in uw documenten kan krachtig zijn, vooral voor het genereren van dynamische content. Aspose.Words voor Java vereenvoudigt dit proces.
-
-### XML-gegevens binden
-
-Koppel XML-gegevens eenvoudig aan uw document:
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://schema's.voorbeeld'");
-doc.save("document_with_xml_data.docx");
-```
-
-Deze code koppelt XML-gegevens aan specifieke delen van uw document, waardoor het dynamisch en gegevensgestuurd wordt.
-
-## Veelgestelde vragen (FAQ's)
-
-### Hoe verwijder ik lege alinea's uit een document?
-   
-   Om lege paragrafen uit een document te verwijderen, kunt u door de paragrafen itereren en de paragrafen verwijderen die geen tekstinhoud hebben. Hier is een codefragment om u hierbij te helpen:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### Kan ik alle velden in een document programmatisch bijwerken?
-
-   Ja, u kunt alle velden in een document programmatisch updaten met Aspose.Words voor Java. Dit is hoe u dat kunt doen:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### Hoe koppel ik XML-gegevens aan een document?
-
-   XML-gegevens aan een document binden is eenvoudig met Aspose.Words voor Java. U kunt XML-toewijzingen gebruiken om dit te bereiken. Hier is een voorbeeld:
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://schema's.voorbeeld'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### Waarom is het belangrijk om de inhoud van een document op te schonen?
-
-   Het opschonen van documentinhoud is belangrijk om ervoor te zorgen dat uw documenten vrij zijn van onnodige elementen, wat de leesbaarheid kan verbeteren en de bestandsgrootte kan verkleinen. Het helpt ook bij het behouden van de consistentie van het document.
-
-### Hoe kan ik ongebruikte stijlen uit een document verwijderen?
-
-   U kunt ongebruikte stijlen uit een document verwijderen met Aspose.Words voor Java. Hier is een voorbeeld:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### Is Aspose.Words voor Java geschikt voor het genereren van dynamische documenten met XML-gegevens?
-
-   Ja, Aspose.Words voor Java is zeer geschikt voor het genereren van dynamische documenten met XML-gegevens. Het biedt robuuste functies voor het binden van XML-gegevens aan sjablonen en het maken van gepersonaliseerde documenten.
-
 ## Conclusie
 
 In deze uitgebreide gids hebben we de wereld van het manipuleren van documentinhoud met opschoning, velden en XML-gegevens met Aspose.Words voor Java verkend. U hebt geleerd hoe u documenten opschoont, met velden werkt en XML-gegevens naadloos opneemt. Deze vaardigheden zijn van onschatbare waarde voor iedereen die te maken heeft met documentbeheer in Java-applicaties.
+
+## Veelgestelde vragen
+
+### Hoe verwijder ik lege alinea's uit een document?
+   
+Om lege paragrafen uit een document te verwijderen, kunt u door de paragrafen itereren en de paragrafen verwijderen die geen tekstinhoud hebben. Hier is een codefragment om u hierbij te helpen:
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### Kan ik alle velden in een document programmatisch bijwerken?
+
+Ja, u kunt alle velden in een document programmatisch updaten met Aspose.Words voor Java. Dit is hoe u dat kunt doen:
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### Waarom is het belangrijk om de inhoud van een document op te schonen?
+
+Het opschonen van documentinhoud is belangrijk om ervoor te zorgen dat uw documenten vrij zijn van onnodige elementen, wat de leesbaarheid kan verbeteren en de bestandsgrootte kan verkleinen. Het helpt ook bij het behouden van de consistentie van het document.
+
+### Hoe kan ik ongebruikte stijlen uit een document verwijderen?
+
+U kunt ongebruikte stijlen uit een document verwijderen met Aspose.Words voor Java. Hier is een voorbeeld:
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### Is Aspose.Words voor Java geschikt voor het genereren van dynamische documenten met XML-gegevens?
+
+Ja, Aspose.Words voor Java is zeer geschikt voor het genereren van dynamische documenten met XML-gegevens. Het biedt robuuste functies voor het binden van XML-gegevens aan sjablonen en het maken van gepersonaliseerde documenten.

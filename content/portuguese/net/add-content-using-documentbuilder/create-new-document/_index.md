@@ -55,7 +55,7 @@ Acabamos de criar um documento Word vazio. Muito legal, não?
 
 ### Inicializar DocumentBuilder
 
- Em seguida, precisamos adicionar algum conteúdo ao nosso documento. Para isso, usaremos`DocumentBuilder`É como se a nossa caneta escrevesse na tela.
+ Em seguida, precisamos adicionar algum conteúdo ao nosso documento. Para isso, usaremos`DocumentBuilder`. É como se a nossa caneta escrevesse na tela.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -89,7 +89,7 @@ Parabéns! Você deu seus primeiros passos no mundo da automação de documentos
 
 Claro! Você pode adicionar imagens, tabelas, cabeçalhos, rodapés e muito mais. Aspose.Words é uma biblioteca de automação de documentos completa.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?
+### Aspose.Words para .NET é compatível com o .NET Core?
 
 Sim, o Aspose.Words para .NET é compatível com .NET Core, .NET Standard e .NET Framework.
 

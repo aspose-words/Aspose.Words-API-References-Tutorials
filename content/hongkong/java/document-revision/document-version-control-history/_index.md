@@ -44,7 +44,7 @@ doc.startTrackRevisions();
 
 ## 第 4 步：更改文檔
 
-現在，您可以根據需要對文件進行更改。這些變更將由 Aspose.Words 追蹤。
+現在，您可以根據需要對文件進行更改。 Aspose.Words 將追蹤這些變更。
 
 ```java
 //進行文檔更改

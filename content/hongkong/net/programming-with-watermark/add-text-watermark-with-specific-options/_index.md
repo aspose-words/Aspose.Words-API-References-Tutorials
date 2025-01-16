@@ -57,7 +57,7 @@ TextWatermarkOptions options = new TextWatermarkOptions()
 ```
 
 以下是每個選項的作用：
-- `FontFamily`：指定水印文字的字體。
+- `FontFamily`：指定水印文字的字型。
 - `FontSize`：設定水印文字的大小。
 - `Color`：定義水印文字的顏色。
 - `Layout`：確定水印的方向（水平或對角線）。

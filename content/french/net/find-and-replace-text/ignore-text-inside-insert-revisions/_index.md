@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Commencer à suivre les révisions
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //Insérer du texte avec suivi des révisions
+builder.Writeln("Inserted"); // Insérer du texte avec suivi des révisions
 doc.StopTrackRevisions();
 ```
 

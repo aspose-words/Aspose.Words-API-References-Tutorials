@@ -93,7 +93,7 @@ A revíziócsoportok lekérése Word-dokumentumból az Aspose.Words for .NET has
 
 ### Milyen egyéb funkciókat kínál az Aspose.Words for .NET a változatok kezeléséhez?
 
- Az Aspose.Words for .NET olyan funkciókat kínál, mint a revíziók elfogadása vagy elutasítása, dokumentumok összehasonlítása stb. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) részletes információkért.
+ Az Aspose.Words for .NET olyan szolgáltatásokat kínál, mint a revíziók elfogadása vagy elutasítása, a dokumentumok összehasonlítása stb. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) részletes információkért.
 
 ### Kapható-e támogatás az Aspose.Words for .NET-hez?
 

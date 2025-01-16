@@ -60,7 +60,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.MoveToParagraph(2, 0);
 ```
 
-在此範例中，我們將移至第三段（因為索引是從零開始的）並移至該段落的開頭。
+在此範例中，我們將移至第三段（因為索引從零開始）並移至該段落的開頭。
 
 ## 第 4 步：為段落新增文本
 

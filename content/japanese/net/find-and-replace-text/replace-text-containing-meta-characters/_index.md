@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
-私たちは、`FindReplaceOptions`オブジェクトを作成し、段落の配置を中央に設定します。
+私たちは`FindReplaceOptions`オブジェクトを作成し、段落の配置を中央に設定します。
 
 ## ステップ4: テキストをメタ文字に置き換える
 
 このステップで魔法が起こります! 「セクション」という単語の後に段落区切りを置き換え、下線を追加します。
 
 ```csharp
-// 「section」という単語の後の各段落区切りを二重にし、下線のようなものを追加して中央に配置します。
+//「section」という単語の後の各段落区切りを二重にし、下線のようなものを追加して中央に配置します。
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

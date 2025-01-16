@@ -9,7 +9,7 @@ url: /hu/net/basic-conversions/txt-to-docx/
 ---
 ## Bevezetés
 
-A szövegfájlok Word dokumentumokká konvertálása általános követelmény a dokumentumfeldolgozó alkalmazásokban. Az Aspose.Words for .NET robusztus API-t biztosít, amely leegyszerűsíti ezt a feladatot, és hatékony eszközöket kínál a fejlesztőknek a dokumentumformátumok hatékony kezeléséhez és konvertálásához.
+szövegfájlok Word dokumentumokká konvertálása általános követelmény a dokumentumfeldolgozó alkalmazásokban. Az Aspose.Words for .NET robusztus API-t biztosít, amely leegyszerűsíti ezt a feladatot, és hatékony eszközöket kínál a fejlesztőknek a dokumentumformátumok hatékony kezeléséhez és konvertálásához.
 
 ## Előfeltételek
 

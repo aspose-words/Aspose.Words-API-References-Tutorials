@@ -71,7 +71,7 @@ Gdy zakładka jest już uruchomiona, możemy dodać do niej dowolną treść. W 
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-Ten`Writeln` Metoda dodaje do dokumentu nowy akapit zawierający określony tekst.
+ Ten`Writeln` Metoda dodaje do dokumentu nowy akapit zawierający określony tekst.
 
 ## Krok 5: Zakończ zakładkę
 
@@ -81,7 +81,7 @@ Po dodaniu naszej zawartości musimy zamknąć zakładkę. To informuje Aspose.W
 builder.EndBookmark("FineBookmark");
 ```
 
-Ten`EndBookmark` Metoda ta kończy zakładkę, którą rozpoczęliśmy wcześniej.
+ Ten`EndBookmark` Metoda ta kończy zakładkę, którą rozpoczęliśmy wcześniej.
 
 ## Krok 6: Zapisz dokument
 

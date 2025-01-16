@@ -19,7 +19,7 @@ Innan vi ger oss ut på vårt bordsbyggande äventyr, låt oss se till att vi ha
 - .NET Framework (4.0 eller högre)
 - Aspose.Words för .NET-bibliotek
 
- Om du inte har Aspose.Words ännu kan du enkelt[ladda ner den här](https://releases.aspose.com/words/net/) . Du kan också börja med en[gratis provperiod](https://releases.aspose.com/) om du vill testa vattnet. För de som är redo att ta steget kan du[köpa en licens](https://purchase.aspose.com/buy) , eller om du behöver mer tid att utvärdera, ta en[tillfällig licens](https://purchase.aspose.com/temporary-license/).
+ Om du inte har Aspose.Words ännu kan du enkelt[ladda ner den här](https://releases.aspose.com/words/net/) . Du kan också börja med en[gratis provperiod](https://releases.aspose.com/) om du vill testa vattnet. För de som är redo att ta steget kan du[köpa en licens](https://purchase.aspose.com/buy) eller om du behöver mer tid att utvärdera, ta en[tillfällig licens](https://purchase.aspose.com/temporary-license/).
 
 ## Importera namnområden
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Genom att använda`StartTable` säger vi till Aspose.Words att vi håller på att skapa en tabell. De`InsertCell` metod lägger till den första cellen, och`AutoFit` säkerställer att våra kolumner har fasta bredder.
+ Genom att använda`StartTable` , säger vi till Aspose.Words att vi håller på att skapa en tabell. De`InsertCell` metod lägger till den första cellen, och`AutoFit` säkerställer att våra kolumner har fasta bredder.
 
 ## Steg 3: Formatera den första raden
 
@@ -125,7 +125,7 @@ Kom ihåg att övning ger färdighet. Så tveka inte att experimentera med olika
 Aspose.Words för .NET är ett kraftfullt bibliotek för att arbeta med Word-dokument programmatiskt. Det låter dig skapa, redigera och manipulera dokument utan att behöva Microsoft Word.
 
 ### Hur installerar jag Aspose.Words för .NET?
- Du kan[ladda ner Aspose.Words för .NET här](https://releases.aspose.com/words/net/). Följ installationsinstruktionerna för att ställa in den i din utvecklingsmiljö.
+ Du kan[ladda ner Aspose.Words för .NET här](https://releases.aspose.com/words/net/)Följ installationsinstruktionerna för att ställa in den i din utvecklingsmiljö.
 
 ### Kan jag använda Aspose.Words gratis?
  Aspose.Words erbjuder en[gratis provperiod](https://releases.aspose.com/) så att du kan testa dess funktioner. För utökad användning kan du köpa en licens eller få en[tillfällig licens](https://purchase.aspose.com/temporary-license/).

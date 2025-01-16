@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 Bu sınıfta:
-- The`Warning`yöntem, yazı tipi değiştirmeyle ilgili uyarıları yakalar.
-- The`FontWarnings` koleksiyon bu uyarıları daha sonra incelenmek veya kaydedilmek üzere depolar.
+-  The`Warning`yöntem, yazı tipi değiştirmeyle ilgili uyarıları yakalar.
+-  The`FontWarnings` koleksiyon bu uyarıları daha sonra incelenmek veya kaydedilmek üzere depolar.
 
 ## Çözüm
 

@@ -27,7 +27,7 @@ Hãy bắt đầu bằng cách tạo một tài liệu Word mà sau này chúng 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Chèn một bảng có hai ô
+// Chèn một bảng có hai ô
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// Đặt căn chỉnh nội dung bảng thành tự động (xác định bởi đoạn đầu tiên)
+//Đặt căn chỉnh nội dung bảng thành tự động (xác định bởi đoạn đầu tiên)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## Bước 3: Xử lý hình ảnh
 
-Để bao gồm hình ảnh trong tài liệu Markdown của bạn, bạn cần chỉ định thư mục chứa hình ảnh. Aspose.Words for Java cho phép bạn đặt thư mục hình ảnh trong`MarkdownSaveOptions`.
+ Để bao gồm hình ảnh trong tài liệu Markdown của bạn, bạn cần chỉ định thư mục chứa hình ảnh. Aspose.Words for Java cho phép bạn đặt thư mục hình ảnh trong`MarkdownSaveOptions`.
 
 Sau đây là cách thiết lập thư mục hình ảnh và lưu tài liệu có hình ảnh:
 

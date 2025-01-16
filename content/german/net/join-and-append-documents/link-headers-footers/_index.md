@@ -92,4 +92,4 @@ Aspose.Words unterstützt verschiedene Versionen von .NET Framework und .NET Cor
 Ja, Sie können die Verknüpfung von Kopf- und Fußzeilen mithilfe der API-Methoden von Aspose.Words aufheben, um die Formatierung einzelner Dokumente wiederherzustellen.
 
 ### Wo finde ich ausführlichere Dokumentation zu Aspose.Words für .NET?
- Besuchen[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/)für umfassende Anleitungen und API-Referenzen.
+ Besuchen[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) für umfassende Anleitungen und API-Referenzen.

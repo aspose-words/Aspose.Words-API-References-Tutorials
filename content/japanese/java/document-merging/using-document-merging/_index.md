@@ -167,58 +167,48 @@ public class DocumentMerger {
 
 使用することで`ImportFormatMode.KEEP_DIFFERENT_STYLES`Aspose.Words は、ソース ドキュメントと宛先ドキュメント間で異なるスタイルを保持し、競合を適切に解決します。
 
-## 9. ドキュメント結合のベストプラクティス
-
-- 予期しないエラーを防ぐために、ドキュメントの結合中には常に例外を処理します。
-
-- 定期的に更新を確認し、最新バージョンの Aspose.Words for Java を活用して、バグ修正や新機能のメリットを享受してください。
-
-- さまざまなドキュメントの種類とサイズでドキュメントの結合をテストし、最適なパフォーマンスを確保します。
-
-- ドキュメントのマージ操作中に変更を追跡するには、バージョン管理システムの使用を検討してください。
-
-## 10. 結論
+## 結論
 
 Aspose.Words for Java は、Java 開発者が Word 文書を簡単に結合できるようにします。この記事のステップバイステップ ガイドに従うことで、文書の結合、書式設定の処理、改行の挿入、競合の管理を簡単に行うことができます。Aspose.Words for Java を使用すると、文書の結合がシームレスで自動化されたプロセスになり、貴重な時間と労力を節約できます。
 
-## 11. よくある質問 
+## よくある質問 
 
 ### 異なる形式やスタイルのドキュメントを結合できますか?
 
-   はい、Aspose.Words for Java はさまざまな形式やスタイルのドキュメントの結合を処理します。ライブラリは競合をインテリジェントに解決し、異なるソースからのドキュメントをシームレスに結合できるようにします。
+はい、Aspose.Words for Java はさまざまな形式やスタイルのドキュメントの結合を処理します。ライブラリは競合をインテリジェントに解決し、異なるソースからのドキュメントをシームレスに結合できるようにします。
 
 ### Aspose.Words は、大規模なドキュメントの効率的な結合をサポートしていますか?
 
-   Aspose.Words for Java は、大規模なドキュメントを効率的に処理できるように設計されています。ドキュメントの結合に最適化されたアルゴリズムを採用し、膨大なコンテンツでも高いパフォーマンスを保証します。
+Aspose.Words for Java は、大規模なドキュメントを効率的に処理できるように設計されています。ドキュメントの結合に最適化されたアルゴリズムを採用し、膨大なコンテンツでも高いパフォーマンスを保証します。
 
 ### Aspose.Words for Java を使用してパスワードで保護されたドキュメントを結合できますか?
 
-   はい、Aspose.Words for Java はパスワードで保護されたドキュメントの結合をサポートしています。これらのドキュメントにアクセスして結合するには、正しいパスワードを入力してください。
+はい、Aspose.Words for Java はパスワードで保護されたドキュメントの結合をサポートしています。これらのドキュメントにアクセスして結合するには、正しいパスワードを入力してください。
 
 ### 複数のドキュメントから特定のセクションを結合することは可能ですか?
 
-   はい、Aspose.Words では、異なるドキュメントから特定のセクションを選択して結合することができます。これにより、結合プロセスを細かく制御できます。
+はい、Aspose.Words では、異なるドキュメントから特定のセクションを選択して結合することができます。これにより、結合プロセスを細かく制御できます。
 
 ### 追跡された変更とコメントを含むドキュメントを結合できますか?
 
-    Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
+はい、Aspose.Words for Java は、変更履歴やコメントが記録されたドキュメントのマージを処理できます。マージ プロセス中に、これらのリビジョンを保持するか削除するかを選択できます。
 
 ### Aspose.Words は結合されたドキュメントの元の書式を保持しますか?
 
-    Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
+Aspose.Words は、デフォルトでソース ドキュメントの書式設定を保持します。ただし、競合を処理して書式設定の一貫性を維持するために、異なるインポート形式モードを選択できます。
 
 ### PDF や RTF など、Word 以外のファイル形式のドキュメントを結合できますか?
 
-    Aspose.Words is primarily designed for working with Word documents. To merge documents from non-Word file formats, consider using the appropriate Aspose product for that specific format, such as Aspose.PDF or Aspose.RTF.
+Aspose.Words は、主に Word 文書の操作用に設計されています。Word 以外のファイル形式の文書を結合するには、Aspose.PDF や Aspose.RTF など、その特定の形式に適した Aspose 製品の使用を検討してください。
 
 ### マージ中にドキュメントのバージョン管理をどのように処理すればよいですか?
 
-    Document versioning during merging can be achieved by implementing proper version control practices in your application. Aspose.Words focuses on document content merging and doesn't directly manage versioning.
+マージ中のドキュメントのバージョン管理は、アプリケーションに適切なバージョン管理プラクティスを実装することで実現できます。Aspose.Words はドキュメント コンテンツのマージに重点を置いており、バージョン管理を直接管理しません。
 
 ### Aspose.Words for Java は Java 8 以降のバージョンと互換性がありますか?
 
-    Yes, Aspose.Words for Java is compatible with Java 8 and newer versions. It's always recommended to use the latest Java version for better performance and security.
+はい、Aspose.Words for Java は Java 8 以降のバージョンと互換性があります。パフォーマンスとセキュリティを向上させるために、常に最新の Java バージョンを使用することをお勧めします。
 
 ### Aspose.Words は URL などのリモート ソースからのドキュメントのマージをサポートしていますか?
 
-    Yes, Aspose.Words for Java can load documents from various sources, including URLs, streams, and file paths. You can merge documents fetched from remote locations seamlessly.
+はい、Aspose.Words for Java は、URL、ストリーム、ファイル パスなど、さまざまなソースからドキュメントを読み込むことができます。リモートの場所から取得したドキュメントをシームレスにマージできます。

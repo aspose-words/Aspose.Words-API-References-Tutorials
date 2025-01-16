@@ -114,7 +114,7 @@ Trường ASK trong Aspose.Words là trường nhắc người dùng nhập thô
 Có, bạn có thể chèn nhiều trường ASK vào một tài liệu, mỗi trường có lời nhắc và phản hồi riêng.
 
 ###  Mục đích của việc này là gì?`PromptOnceOnMailMerge` property?
-Các`PromptOnceOnMailMerge` thuộc tính này xác định xem lời nhắc ASK chỉ xuất hiện một lần trong quá trình trộn thư hay xuất hiện mọi lúc.
+ Các`PromptOnceOnMailMerge` thuộc tính này xác định xem lời nhắc ASK chỉ xuất hiện một lần trong quá trình trộn thư hay xuất hiện mọi lúc.
 
 ### Tôi có cần cập nhật trường ASK sau khi thiết lập thuộc tính của nó không?
 Có, việc cập nhật trường ASK sẽ đảm bảo rằng tất cả các thuộc tính được áp dụng chính xác và trường hoạt động như mong đợi.

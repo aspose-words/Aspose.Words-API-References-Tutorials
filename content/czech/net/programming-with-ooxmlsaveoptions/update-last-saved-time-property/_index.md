@@ -15,7 +15,7 @@ Přemýšleli jste někdy, jak programově sledovat vlastnost posledního ulože
 
 Než se pustíme do podrobného průvodce, budete potřebovat několik věcí:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí jako Visual Studio.
 3. Základní znalost C#: Bude užitečné porozumět základům programování v C#.
 

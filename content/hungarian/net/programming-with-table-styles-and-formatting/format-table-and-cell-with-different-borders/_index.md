@@ -50,7 +50,7 @@ Table table = builder.StartTable();
 builder.InsertCell();
 ```
 
-## 3. lépés: Állítsa be a táblázat határait
+## 3. lépés: Állítsa be a táblázat szegélyeit
 
 Állítsa be a szegélyeket az egész táblázathoz. Ez a lépés biztosítja, hogy a táblázat minden cellájának konzisztens szegélystílusa legyen, hacsak nincs másképp megadva.
 
@@ -134,7 +134,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 ### Használhatok különböző szegélystílusokat minden cellához?
  Igen, az egyes cellákhoz különböző szegélystílusokat állíthat be a`CellFormat.Borders` ingatlan.
 
-### Hogyan távolíthatom el az összes szegélyt a táblázatból?
+### Hogyan távolíthatom el az összes szegélyt egy táblázatból?
  Az összes szegélyt eltávolíthatja a szegélystílus beállításával`LineStyle.None`.
 
 ### Lehetséges minden cellához különböző keretszínt beállítani?

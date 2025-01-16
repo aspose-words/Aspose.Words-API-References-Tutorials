@@ -105,8 +105,8 @@ Aspose.Words podporuje přidávání jednoho vodoznaku najednou. Chcete-li přid
 
 ### Mohu upravit polohu vodoznaku?
 
-The`WatermarkLayout`vlastnost určuje orientaci, ale přesné úpravy umístění nejsou podporovány přímo. Možná budete muset použít jiné techniky pro přesné umístění.
+ The`WatermarkLayout`vlastnost určuje orientaci, ale přesné úpravy umístění nejsou podporovány přímo. Možná budete muset použít jiné techniky pro přesné umístění.
 
 ### Co když potřebuji poloprůhledný vodoznak?
 
- Nastavte`IsSemitrasparent`majetek do`true` aby byl vodoznak poloprůhledný.
+ Nastavte`IsSemitrasparent`majetek do`true` aby byl váš vodoznak poloprůhledný.

@@ -20,7 +20,7 @@ url: /ar/python-net/document-structure-and-content-manipulation/document-vba-mac
 للبدء في رحلة الأتمتة هذه، تحتاج إلى تثبيت Aspose.Words for Python. يمكنك تنزيله من[موقع اسبوس](https://releases.aspose.com/words/python/)بمجرد التثبيت، يمكنك بدء مشروع Python الخاص بك واستيراد الوحدات النمطية الضرورية.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## فهم وحدات الماكرو VBA ودورها
@@ -46,7 +46,7 @@ End Sub
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content

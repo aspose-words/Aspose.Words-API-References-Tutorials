@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
  Да, вы можете загрузить бесплатную пробную версию с сайта[здесь](https://releases.aspose.com/).
 
 ### Где я могу найти документацию по Aspose.Words для .NET?
-Подробная документация доступна[здесь](https://reference.aspose.com/words/net/).
+ Подробная документация доступна[здесь](https://reference.aspose.com/words/net/).
 
 ### Как получить временную лицензию на Aspose.Words для .NET?
  Временные лицензии можно получить[здесь](https://purchase.aspose.com/temporary-license/).

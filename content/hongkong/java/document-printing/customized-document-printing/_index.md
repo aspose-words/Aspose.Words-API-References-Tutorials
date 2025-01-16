@@ -58,7 +58,7 @@ Aspose.Words for Java 提供進階自訂選項，包括頁首、頁尾和頁面�
 
 ## 故障排除
 
-遇到問題？如需故障排除提示，請參閱 Aspose.Words for Java 文件。
+遇到問題？請參閱 Aspose.Words for Java 文件以取得故障排除提示。
 
 ## 結論
 

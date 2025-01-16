@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## 高度なテクニック
-
-### テキストの置き換え
-
-Aspose.Words を使用すると、ドキュメント内のテキストを簡単に検索および置換できます。
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### 書式の変更
+## 書式の変更
 
 Aspose.Words を使用して書式を変更することもできます。
 

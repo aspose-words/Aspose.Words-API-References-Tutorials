@@ -34,7 +34,7 @@ doc.getSections().get(0).getRange().delete();
 
 ## Szöveg kinyerése egy dokumentumtartományból
 
-Egy másik értékes lehetőség a szöveg kinyerése egy dokumentumtartományból. A szöveg tartományon belüli megjelenítéséhez használja a következő kódot:
+Szöveg kinyerése egy dokumentumtartományból egy másik értékes lehetőség. A szöveg tartományon belüli megjelenítéséhez használja a következő kódot:
 
 ```java
 @Test

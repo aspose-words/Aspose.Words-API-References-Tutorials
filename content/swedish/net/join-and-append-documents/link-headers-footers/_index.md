@@ -92,4 +92,4 @@ Aspose.Words stöder olika versioner av .NET Framework och .NET Core, vilket sä
 Ja, du kan koppla bort sidhuvuden och sidfötter med Aspose.Words API-metoder för att återställa individuell dokumentformatering.
 
 ### Var kan jag hitta mer detaljerad dokumentation om Aspose.Words för .NET?
- Besök[Aspose.Words för .NET-dokumentation](https://reference.aspose.com/words/net/)för omfattande guider och API-referenser.
+ Besök[Aspose.Words för .NET-dokumentation](https://reference.aspose.com/words/net/) för omfattande guider och API-referenser.

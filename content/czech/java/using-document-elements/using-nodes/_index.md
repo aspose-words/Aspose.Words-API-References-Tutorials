@@ -118,6 +118,6 @@ Aspose.Words for Java je knihovna Java, která umožňuje vývojářům vytvář
  Můžete získat dočasnou licenci pro Aspose.Words for Java[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Q5. Kde najdu podporu pro Aspose.Words pro Java?
- Pro podporu a diskuze navštivte[Aspose.Words for Java forum](https://forum.aspose.com/).
+ Pro podporu a diskuse navštivte[Aspose.Words for Java forum](https://forum.aspose.com/).
 
 Začněte s Aspose.Words pro Java nyní a odemkněte plný potenciál zpracování dokumentů!

@@ -48,11 +48,11 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions();
 ```
 
-Låt oss nu ställa in konturalternativen. 
+Låt oss nu ställa in dispositionsalternativen. 
 
 ### Ställ in översiktsnivåer för rubriker
 
-De`HeadingsOutlineLevels` egenskapen definierar hur många nivåer av rubriker som ska inkluderas i PDF-översikten. Om du till exempel ställer in den på 3 kommer den att inkludera upp till tre nivåer av rubriker i PDF-konturen.
+ De`HeadingsOutlineLevels` egenskapen definierar hur många nivåer av rubriker som ska inkluderas i PDF-översikten. Om du till exempel ställer in den på 3 kommer den att inkludera upp till tre nivåer av rubriker i PDF-konturen.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Ställ in utökade konturnivåer
 
-De`ExpandedOutlineLevels`egenskapen styr hur många nivåer av dispositionen som ska utökas som standard när PDF-filen öppnas. Om du ställer in detta till 1 utökas rubrikerna på översta nivån, vilket ger en tydlig bild av huvudsektionerna.
+ De`ExpandedOutlineLevels`egenskapen styr hur många nivåer av dispositionen som ska utökas som standard när PDF-filen öppnas. Om du ställer in detta till 1 utökas rubrikerna på översta nivån, vilket ger en tydlig bild av huvudsektionerna.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

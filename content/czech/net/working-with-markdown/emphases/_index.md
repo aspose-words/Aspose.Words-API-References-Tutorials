@@ -15,7 +15,7 @@ Markdown je lehký značkovací jazyk, který můžete použít k přidání prv
 
 Než se pustíme do kódu, ujistěte se, že máme vše, co potřebujeme, abychom mohli začít:
 
-1.  Aspose.Words for .NET Library: Ujistěte se, že máte nainstalovanou nejnovější verzi Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Ujistěte se, že máte nainstalovanou nejnovější verzi Aspose.Words for .NET. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vhodné vývojové prostředí .NET, jako je Visual Studio.
 3. Základní znalost C#: Pochopení základů programování v C# bude prospěšné.
 4. Základy Markdown: Znalost syntaxe Markdown vám pomůže lépe porozumět kontextu.
@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`dataDir` proměnná je zástupný symbol pro adresář, kam uložíte soubor Markdown. Nezapomeňte nahradit „VÁŠ ADRESÁŘ DOKUMENTŮ“ skutečnou cestou.
+ The`dataDir` proměnná je zástupný symbol pro adresář, kam uložíte soubor Markdown. Nezapomeňte nahradit „VÁŠ ADRESÁŘ DOKUMENTŮ“ skutečnou cestou.
 
 ## Krok 2: Psaní běžného textu
 
@@ -54,7 +54,7 @@ builder.Write("You can write ");
 
 ## Krok 3: Přidání tučného textu
 
- Chcete-li do Markdown přidat tučný text, zalomte požadovaný text do dvojitých hvězdiček (``). V Aspose.Words pro .NET toho můžete dosáhnout nastavením`Bold` vlastnictví`Font` namítat proti`true`.
+ Chcete-li do Markdown přidat tučný text, zalomte požadovaný text do dvojitých hvězdiček (``). V Aspose.Words pro .NET toho můžete dosáhnout nastavením`Bold` vlastnictvím`Font` namítat proti`true`.
 
 ```csharp
 builder.Font.Bold = true;
@@ -67,7 +67,7 @@ Tento úryvek kódu nastaví text „tučný“ na tučný a poté se vrátí zp
 
 ## Krok 4: Přidání textu kurzívou
 
-Kurzíva v Markdown je zabalena do jednoduchých hvězdiček (`*` ). Podobně nastavte`Italic` vlastnictví`Font` namítat proti`true`.
+Kurzíva v Markdown je zabalena do jednoduchých hvězdiček (`*` ). Podobně nastavte`Italic` vlastnictvím`Font` namítat proti`true`.
 
 ```csharp
 builder.Font.Italic = true;

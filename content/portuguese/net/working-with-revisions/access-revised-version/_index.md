@@ -9,7 +9,7 @@ url: /pt/net/working-with-revisions/access-revised-version/
 ---
 ## Introdução
 
-Você já precisou acessar a versão revisada de um documento programaticamente? Não importa se você está trabalhando em projetos colaborativos ou simplesmente precisa gerenciar revisões de documentos, o Aspose.Words para .NET é sua ferramenta preferida. Este tutorial o guiará por todo o processo, desde a configuração do seu ambiente até o acesso e a exibição de revisões em um documento do Word. Então, vamos direto ao assunto!
+Você já precisou acessar a versão revisada de um documento programaticamente? Não importa se você está trabalhando em projetos colaborativos ou simplesmente precisa gerenciar revisões de documentos, o Aspose.Words for .NET é sua ferramenta preferida. Este tutorial o guiará por todo o processo, desde a configuração do seu ambiente até o acesso e a exibição de revisões em um documento do Word. Então, vamos direto ao assunto!
 
 ## Pré-requisitos
 

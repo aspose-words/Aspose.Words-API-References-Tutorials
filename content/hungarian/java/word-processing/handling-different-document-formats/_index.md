@@ -37,13 +37,6 @@ Az Aspose.Words for Java egyik legfontosabb erőssége a különféle dokumentum
 Document doc = new Document("sample.docx");
 ```
 
-### PDF dokumentum betöltése
-
-```java
-// Töltsön be egy PDF dokumentumot
-Document doc = new Document("sample.pdf");
-```
-
 ## Dokumentumok módosítása és mentése
 
 A dokumentum betöltése után számos műveletet hajthat végre az egyszerű szövegcserétől a bonyolult formázási módosításokig.
@@ -71,17 +64,17 @@ Az Aspose.Words for Java zökkenőmentes átalakítást tesz lehetővé a külö
 Document doc = new Document("sample.docx");
 
 // Mentés PDF-ként
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Képek és táblázatok kezelése
 
-képek és táblázatok beillesztése általános követelmény a dokumentumokkal való munka során. Az Aspose.Words ezeket a feladatokat is leegyszerűsíti.
+A képek és táblázatok beillesztése általános követelmény a dokumentumokkal való munka során. Az Aspose.Words ezeket a feladatokat is leegyszerűsíti.
 
 ### Kép hozzáadása a dokumentumhoz
 
 ```java
-// Töltsön be egy dokumentumot
+//Töltsön be egy dokumentumot
 Document doc = new Document("document.docx");
 
 // Illesszen be egy képet

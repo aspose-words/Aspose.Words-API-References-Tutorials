@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Crea bordes más grandes para la primera celda de esta fila.
+// Crea bordes más grandes para la primera celda de esta fila.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -169,7 +169,7 @@ Aspose.Words para Java es una herramienta robusta que ofrece amplias funciones p
 
 ### 1. ¿Puedo utilizar estilos de tabla personalizados que no estén incluidos en las opciones predeterminadas?
 
-Sí, puedes definir y aplicar estilos personalizados a tus tablas usando Aspose.Words para Java. Consulta la[documentación](https://reference.aspose.com/words/java/) para obtener más detalles sobre la creación de estilos personalizados.
+ Sí, puedes definir y aplicar estilos personalizados a tus tablas usando Aspose.Words para Java. Consulta la[documentación](https://reference.aspose.com/words/java/) para obtener más detalles sobre la creación de estilos personalizados.
 
 ### 2. ¿Cómo puedo aplicar formato condicional a las tablas?
 

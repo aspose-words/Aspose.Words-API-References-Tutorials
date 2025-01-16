@@ -23,7 +23,7 @@ Los campos son marcadores de posición en un documento que muestran datos de for
  Para insertar un campo, puede utilizar el`FieldBuilder` clase. Por ejemplo, para insertar un campo de fecha actual:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Automatizar la generación de documentos con campos
-
-Los campos son esenciales para la generación automática de documentos. Puede rellenarlos con datos de fuentes externas:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Integración de campos con fuentes de datos

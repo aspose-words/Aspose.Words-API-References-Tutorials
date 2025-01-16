@@ -45,9 +45,6 @@ from aspose.words import Section, Paragraph
 
 # Add a new section
 section = doc.sections.add()
-
-# Add a paragraph to the section
-paragraph = section.add_paragraph("Hello, Aspose.Words!")
 ```
 
 ## 處理文字內容
@@ -143,7 +140,7 @@ footer_paragraph = footer.append_paragraph("Footer text")
 from aspose.words import Hyperlink
 
 # Add a hyperlink
-hyperlink = paragraph.append_hyperlink("https://www.example.com”，“點擊此處”）
+hyperlink = paragraph.append_hyperlink("https://www.example.com”，“點擊這裡”）
 
 # Add a bookmark
 bookmark = paragraph.range.bookmarks.add("section1")
@@ -159,19 +156,6 @@ doc.save("output_document.docx")
 
 # Export to PDF
 doc.save("output_document.pdf", SaveFormat.PDF)
-```
-
-## 自動產生文檔
-
-Aspose.Words 擅長自動化文件產生工作流程：
-
-```python
-# Generate multiple documents
-for data in dataset:
-    new_doc = Document()
-    # Populate the document with data
-    # ...
-    new_doc.save(f"document_{data.id}.docx")
 ```
 
 ## 最佳實踐和技巧

@@ -40,8 +40,6 @@ Aspose.Words for Python を使用して Word 文書のコメント機能を活�
 Aspose.Words for Python を使用して Word 文書内のフィールドとデータを処理する方法を学びます。動的コンテンツ、自動化などのコード例を含むステップバイステップ ガイドです。 
 ### [Word 文書のフォントとテキスト スタイルを理解する](./document-fonts/)
 Word 文書のフォントとテキスト スタイルの世界を探索します。Aspose.Words for Python を使用して読みやすさと視覚的な魅力を高める方法を学びます。ステップバイステップの例を含む包括的なガイドです。
-### [Word 文書の脚注と文末脚注を調べる](./document-footnotes-endnotes/)
-Aspose.Words for Python を使用して、Word 文書で脚注と文末脚注を効果的に使用する方法を学びます。これらの要素をプログラムで追加、カスタマイズ、管理する方法を学びます。 
 ### [Word 文書のフォーム フィールドとデータ キャプチャをマスターする](./document-form-fields/)
 Aspose.Words for Python を使用して、Word 文書のフォーム フィールドを作成および管理する技術を習得します。データを効率的にキャプチャし、ユーザー エンゲージメントを強化する方法を学びます。 
 ### [Word 文書のヘッダーとフッターの操作](./document-headers-footers/)
@@ -52,8 +50,6 @@ Aspose.Words for Python を使用して、Word 文書のハイフネーション
 Aspose.Words Python API を使用して Word 文書のリストを作成し、管理する方法を学びます。リストの書式設定、カスタマイズ、ネストなどに関するソース コード付きのステップ バイ ステップ ガイドです。 
 ### [Word文書でマークダウン書式を活用する](./document-markdown/)
 Aspose.Words for Python を使用して、Markdown フォーマットを Word 文書に統合する方法を学びます。動的で視覚的に魅力的なコンテンツを作成するためのコード例を含むステップバイステップ ガイドです。 
-### [ドキュメントノードの理解とナビゲーション](./document-nodes/)
-Aspose.Words for Python を使用して Word ドキュメントを操作する方法を学びます。このステップ バイ ステップ ガイドでは、読み込み、書式設定、表、画像などについて説明します。今すぐドキュメント処理スキルを高めましょう。
 ### [Word 文書に OLE オブジェクトと ActiveX コントロールを埋め込む](./document-ole-objects-active-x/)
  Aspose.Words for Python を使用して Word 文書に OLE オブジェクトと ActiveX コントロールを埋め込む方法を学習します。インタラクティブで動的な文書をシームレスに作成します。
 ### [Word 文書の段落とテキストの書式設定](./document-paragraphs/)

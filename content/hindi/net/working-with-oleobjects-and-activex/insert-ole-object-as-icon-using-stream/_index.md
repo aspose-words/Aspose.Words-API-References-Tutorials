@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingSt
 हां, आप OLE द्वारा समर्थित किसी भी फ़ाइल प्रकार को एम्बेड कर सकते हैं, जिसमें Word, Excel, PowerPoint आदि शामिल हैं।
 
 ### क्या मुझे .NET के लिए Aspose.Words का उपयोग करने के लिए किसी विशेष लाइसेंस की आवश्यकता है?
- हां, .NET के लिए Aspose.Words को लाइसेंस की आवश्यकता है। आप एक प्राप्त कर सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/) या खरीदें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) परीक्षण के लिए.
+ हां, .NET के लिए Aspose.Words को लाइसेंस की आवश्यकता होती है। आप एक प्राप्त कर सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/) या खरीदें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) परीक्षण के लिए.
 
 ### क्या मैं OLE ऑब्जेक्ट के लिए प्रयुक्त आइकन को अनुकूलित कर सकता हूँ?
  बिल्कुल! आप आइकन के लिए किसी भी छवि फ़ाइल का उपयोग कर सकते हैं, इसके लिए आपको उसका पथ निर्दिष्ट करना होगा।`InsertOleObjectAsIcon` तरीका।

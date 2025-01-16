@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## 4단계: 이메일 보내기
 
-마지막으로 SMTP 클라이언트를 사용하여 이메일을 보냅니다. SMTP 서버 세부 정보로 SMTP 클라이언트를 구성하고 다음을 사용합니다.`Send` 메시지를 보내는 방법.
+ 마지막으로 SMTP 클라이언트를 사용하여 이메일을 보냅니다. SMTP 서버 세부 정보로 SMTP 클라이언트를 구성하고 다음을 사용합니다.`Send` 메시지를 보내는 방법.
 
 ```csharp
 // Aspose.Email을 사용하여 메시지를 보내세요.
@@ -95,7 +95,7 @@ client.Send(message);
 네, Aspose.Words는 .NET Core와 호환됩니다. .NET Core 애플리케이션에서도 사용할 수 있습니다.
 
 ### Aspose.Words와 Aspose.Email에 라이선스가 필요한가요?
-네, 두 도서관 모두 라이센스가 필요합니다. 임시 라이센스는 다음에서 받을 수 있습니다.[Aspose 구매 페이지](https://purchase.aspose.com/temporary-license/) 평가 목적으로.
+ 네, 두 도서관 모두 라이센스가 필요합니다. 임시 라이센스는 다음에서 받을 수 있습니다.[Aspose 구매 페이지](https://purchase.aspose.com/temporary-license/) 평가 목적으로.
 
 ### 더 많은 문서는 어디에서 찾을 수 있나요?
  Aspose.Words에 대한 자세한 문서를 찾을 수 있습니다.[여기](https://reference.aspose.com/words/net/) 그리고 Aspose.Email을 위해[여기](https://reference.aspose.com/email/net/).

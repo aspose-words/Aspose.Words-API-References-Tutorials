@@ -11,7 +11,7 @@ Oczywiście! Oto przewodnik krok po kroku, jak wykonać szyfrowanie i deszyfrowa
 
 # Szyfrowanie i deszyfrowanie dokumentów za pomocą Aspose.Words dla Java
 
-W tym samouczku pokażemy, jak szyfrować i odszyfrowywać dokumenty za pomocą Aspose.Words for Java. Szyfrowanie dokumentów zapewnia, że Twoje poufne dane pozostaną bezpieczne i będą dostępne tylko dla autoryzowanych użytkowników.
+tym samouczku pokażemy, jak szyfrować i odszyfrowywać dokumenty za pomocą Aspose.Words for Java. Szyfrowanie dokumentów zapewnia, że Twoje poufne dane pozostaną bezpieczne i będą dostępne tylko dla autoryzowanych użytkowników.
 
 ## Wymagania wstępne
 
@@ -45,7 +45,7 @@ public class DocumentEncryptionExample {
         doc.protect(ProtectionType.READ_ONLY, password);
         
         // Zapisz zaszyfrowany dokument
-        doc.save("encrypted_document.docx", SaveFormat.DOCX);
+        doc.save("encrypted_document.docx");
         
         System.out.println("Document encrypted successfully!");
     }
@@ -64,7 +64,7 @@ import com.aspose.words.SaveFormat;
 
 public class DocumentDecryptionExample {
     public static void main(String[] args) throws Exception {
-        // Załaduj zaszyfrowany dokument
+        //Załaduj zaszyfrowany dokument
         Document doc = new Document("encrypted_document.docx");
         
         // Podaj hasło do odszyfrowania
@@ -74,7 +74,7 @@ public class DocumentDecryptionExample {
         doc.unprotect(password);
         
         // Zapisz odszyfrowany dokument
-        doc.save("decrypted_document.docx", SaveFormat.DOCX);
+        doc.save("decrypted_document.docx");
         
         System.out.println("Document decrypted successfully!");
     }

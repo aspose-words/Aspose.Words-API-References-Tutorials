@@ -112,4 +112,4 @@ Hoàn toàn có thể! Bạn có thể tạo một tập lệnh để tự độ
 
 ### Tôi có thể nhận trợ giúp ở đâu nếu gặp vấn đề?
 
-Các[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) là nơi tuyệt vời để nhận trợ giúp và tìm giải pháp cho những vấn đề phổ biến.
+ Các[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) là nơi tuyệt vời để nhận trợ giúp và tìm giải pháp cho những vấn đề phổ biến.

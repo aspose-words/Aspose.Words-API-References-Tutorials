@@ -18,7 +18,7 @@ url: /th/python-net/document-options-and-settings/document-functionality-web-ext
 
 - ความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม Python
 -  เอกสารอ้างอิง API Aspose.Words สำหรับ Python (มีอยู่ที่[ที่นี่](https://reference.aspose.com/words/python-net/).
-- การเข้าถึงไลบรารี Aspose.Words สำหรับ Python (ดาวน์โหลดจาก[ที่นี่](https://releases.aspose.com/words/python/).
+-  การเข้าถึงไลบรารี Aspose.Words สำหรับ Python (ดาวน์โหลดจาก[ที่นี่](https://releases.aspose.com/words/python/).
 
 ## การตั้งค่า Aspose.Words สำหรับ Python
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. นำเข้าไลบรารีลงในสคริปต์ Python ของคุณ
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## การสร้างเอกสารใหม่
@@ -42,7 +42,7 @@ import aspose.words
 เริ่มต้นด้วยการสร้างเอกสารใหม่โดยใช้ Aspose.Words:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## การเพิ่มเนื้อหาลงในเอกสาร
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 คุณสามารถเพิ่มเนื้อหาลงในเอกสารได้อย่างง่ายดายโดยใช้ Aspose.Words:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ builder.writeln("Hello, world!")
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## การแทรกส่วนขยายเว็บไซต์
-
-หากต้องการแทรกส่วนขยายเว็บลงในเอกสาร ให้ทำตามขั้นตอนเหล่านี้:
-
-1. สร้างส่วนขยายเว็บไซต์โดยใช้ HTML, CSS และ JavaScript
-2. แปลงส่วนขยายเว็บให้เป็นสตริงที่เข้ารหัสแบบ Base64
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. แทรกส่วนขยายเว็บลงในเอกสาร:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## การโต้ตอบกับส่วนขยายเว็บ
@@ -98,7 +78,7 @@ builder.insert_node(extension_node)
 หลังจากรวมส่วนขยายเว็บและทำการปรับเปลี่ยนตามความจำเป็นแล้ว คุณสามารถบันทึกเอกสารโดยใช้รูปแบบต่างๆ ที่รองรับโดย Aspose.Words:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## เคล็ดลับสำหรับการเพิ่มประสิทธิภาพการทำงาน

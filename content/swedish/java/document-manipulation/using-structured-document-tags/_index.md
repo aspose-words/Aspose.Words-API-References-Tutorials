@@ -134,7 +134,7 @@ doc.getFirstSection().getBody().appendChild(sdtRichText);
 doc.save("RichTextDocument.docx");
 ```
 
-## Ställa in stilar för innehållskontroll
+## Ställa in innehållskontrollstilar
 
 Du kan använda stilar på innehållskontroller för att förbättra dokumentets visuella utseende. Låt oss se hur du ställer in stilen för en innehållskontroll.
 
@@ -151,7 +151,7 @@ doc.save("StyledDocument.docx");
 
 ## Bindning av en SDT till anpassade XML-data
 
-I vissa scenarier kan du behöva binda en SDT till anpassade XML-data för dynamisk innehållsgenerering. Låt oss utforska hur man uppnår detta.
+I vissa scenarier kan du behöva binda en SDT till anpassade XML-data för dynamisk innehållsgenerering. Låt oss undersöka hur man uppnår detta.
 
 ```java
 Document doc = new Document();

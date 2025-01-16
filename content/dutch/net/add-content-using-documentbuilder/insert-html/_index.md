@@ -15,7 +15,7 @@ Hallo, mede-coderingsenthousiasteling! Heb je je ooit afgevraagd hoe je HTML in 
 
 Voordat we in de stapsgewijze handleiding duiken, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben. Hier is een snelle checklist:
 
-1. Aspose.Words voor .NET-bibliotheek: Als u dat nog niet hebt gedaan, moet u de Aspose.Words voor .NET-bibliotheek downloaden. U kunt het krijgen[hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET-bibliotheek: Als u dat nog niet hebt gedaan, moet u de Aspose.Words voor .NET-bibliotheek downloaden. U kunt het krijgen[hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Zorg ervoor dat u een ontwikkelomgeving hebt ingesteld, zoals Visual Studio.
 3. .NET Framework: Zorg ervoor dat .NET Framework op uw computer is geïnstalleerd.
 4. Basiskennis van C#: Een beetje vertrouwdheid met C# is handig.
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Stap 3: Initialiseren van de DocumentBuilder
 
-Om HTML in te voegen, hebben we de hulp nodig van de`DocumentBuilder` klasse. Deze handige klasse maakt het eenvoudig om inhoud toe te voegen aan ons document.
+ Om HTML in te voegen, hebben we de hulp nodig van de`DocumentBuilder` klasse. Deze handige klasse maakt het eenvoudig om inhoud toe te voegen aan ons document.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -88,7 +88,7 @@ En daar heb je het! Je hebt zojuist HTML in een Word-document ingevoegd met Aspo
 
 Het invoegen van HTML in een Word-document was nog nooit zo eenvoudig, toch? Met Aspose.Words voor .NET kunt u de kracht van HTML naadloos combineren met de veelzijdigheid van Word-documenten. Of u nu automatisch rapporten genereert of prachtig opgemaakte documenten maakt, deze tool is uw go-to-oplossing.
 
-Als u vragen heeft of verdere hulp nodig heeft, aarzel dan niet om de[documentatie](https://reference.aspose.com/words/net/), [ondersteuningsforums](https://forum.aspose.com/c/words/8) , of koop een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) om het volledige potentieel van Aspose.Words voor .NET te benutten.
+ Als u vragen heeft of verdere hulp nodig heeft, aarzel dan niet om de[documentatie](https://reference.aspose.com/words/net/), [ondersteuningsforums](https://forum.aspose.com/c/words/8) , of koop een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) om het volledige potentieel van Aspose.Words voor .NET te benutten.
 
 Veel plezier met coderen!
 
@@ -107,4 +107,4 @@ Ja, nadat de HTML is ingevoegd, kunt u het document verder bewerken met behulp v
  Je kunt beginnen met een[gratis proefperiode](https://releases.aspose.com/) of verkrijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor alle functies.
 
 ### Waar kan ik meer tutorials en voorbeelden vinden?  
-De[documentatie](https://reference.aspose.com/words/net/) En[ondersteuningsforums](https://forum.aspose.com/c/words/8)zijn geweldige plekken om te beginnen met het zoeken naar meer gedetailleerde gidsen en ondersteuning van de community.
+ De[documentatie](https://reference.aspose.com/words/net/) En[ondersteuningsforums](https://forum.aspose.com/c/words/8) zijn geweldige plekken om te beginnen met het zoeken naar meer gedetailleerde gidsen en ondersteuning van de community.

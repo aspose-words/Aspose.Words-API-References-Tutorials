@@ -47,7 +47,7 @@ using Aspose.Words;
 
 ### 새 문서 만들기
 
- 주 프로그램 파일에서 새 인스턴스를 만드는 것으로 시작합니다.`Document`수업. 이게 우리의 빈 캔버스가 될 거야.
+ 주 프로그램 파일에서 새 인스턴스를 만드는 것으로 시작합니다.`Document` 수업. 이게 우리의 빈 캔버스가 될 거야.
 
 ```csharp
 Document doc = new Document();
@@ -113,7 +113,7 @@ Aspose.Words for .NET은 개발자가 C#을 사용하여 프로그래밍 방식�
 
 ### Aspose.Words for .NET을 시작하려면 어떻게 해야 하나요?
 
- 라이브러리를 다운로드하여 시작할 수 있습니다.[웹사이트](https://releases.aspose.com/words/net/) .NET 프로젝트에 추가하세요.
+라이브러리를 다운로드하여 시작할 수 있습니다.[웹사이트](https://releases.aspose.com/words/net/) .NET 프로젝트에 추가하세요.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
 
@@ -121,8 +121,8 @@ Aspose.Words for .NET은 개발자가 C#을 사용하여 프로그래밍 방식�
 
 ### Aspose.Words for .NET에 대한 추가 튜토리얼은 어디에서 찾을 수 있나요?
 
-그만큼[Aspose.Words 문서](https://reference.aspose.com/words/net/) 자세한 튜토리얼과 예제를 찾을 수 있는 좋은 곳입니다.
+ 그만큼[Aspose.Words 문서](https://reference.aspose.com/words/net/) 자세한 튜토리얼과 예제를 찾을 수 있는 좋은 곳입니다.
 
 ### 문제가 발생하면 어떻게 지원을 받을 수 있나요?
 
-방문하면 지원을 받을 수 있습니다.[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8).
+ 방문하면 지원을 받을 수 있습니다.[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8).

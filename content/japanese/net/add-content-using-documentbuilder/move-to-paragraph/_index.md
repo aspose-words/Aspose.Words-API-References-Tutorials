@@ -54,7 +54,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ステップ3: 目的の段落に移動する
 
-ここで魔法が起こります。`MoveToParagraph`メソッド。このメソッドは、段落のインデックスとその段落内の文字位置の 2 つのパラメータを取ります。
+ここで魔法が起こります。目的の段落に移動するには、`MoveToParagraph`メソッド。このメソッドは、段落のインデックスとその段落内の文字位置の 2 つのパラメータを取ります。
 
 ```csharp
 builder.MoveToParagraph(2, 0);
@@ -70,7 +70,7 @@ builder.MoveToParagraph(2, 0);
 builder.Writeln("This is the 3rd paragraph.");
 ```
 
-すると、特定の段落に移動し、そこにテキストが追加されました。
+すると、できた！特定の段落に移動し、そこにテキストを追加しました。
 
 ## 結論
 

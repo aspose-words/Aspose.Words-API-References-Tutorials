@@ -45,7 +45,7 @@ Repasemos el proceso de inserción de hipervínculos en un documento de Word con
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-El`DocumentBuilder` La clase es una herramienta versátil que permite construir y modificar el documento.
+ El`DocumentBuilder` La clase es una herramienta versátil que permite construir y modificar el documento.
 
 ## Paso 2: Insertar hipervínculo
 

@@ -54,7 +54,7 @@ Ibland kan du behöva spara varje sida i ditt dokument som en bild. Aspose.Words
 
 ```java
 // Java-kod för att spara ett dokument som bilder
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Ställ in upplösningen (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

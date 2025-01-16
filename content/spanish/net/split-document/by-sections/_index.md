@@ -86,7 +86,7 @@ Por último, guardamos cada documento nuevo con un nombre único. Este paso gara
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-El`Save` El método guarda el nuevo documento en el directorio especificado con un nombre único basado en el índice de la sección.
+ El`Save` El método guarda el nuevo documento en el directorio especificado con un nombre único basado en el índice de la sección.
 
 ## Conclusión
 

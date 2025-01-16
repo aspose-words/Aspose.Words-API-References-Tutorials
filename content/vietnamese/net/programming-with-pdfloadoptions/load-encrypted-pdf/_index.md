@@ -89,7 +89,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ## Phần kết luận
 
-Và bạn đã có nó! Tải PDF được mã hóa bằng Aspose.Words cho .NET không chỉ dễ dàng mà còn thực sự thú vị. Bằng cách làm theo các bước này, bạn đã mở khóa khả năng xử lý mã hóa PDF như một chuyên gia. Hãy nhớ rằng, chìa khóa để thành thạo bất kỳ công cụ nào là thực hành, vì vậy đừng ngần ngại thử nghiệm và khám phá.
+Và bạn đã có nó! Tải PDF được mã hóa bằng Aspose.Words cho .NET không chỉ dễ dàng mà còn cực kỳ thú vị. Bằng cách làm theo các bước này, bạn đã mở khóa khả năng xử lý mã hóa PDF như một chuyên gia. Hãy nhớ rằng, chìa khóa để thành thạo bất kỳ công cụ nào là thực hành, vì vậy đừng ngần ngại thử nghiệm và khám phá.
 
  Nếu bạn có bất kỳ câu hỏi nào hoặc cần hỗ trợ thêm,[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) Và[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) là những nơi tuyệt vời để bắt đầu.
 

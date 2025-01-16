@@ -59,7 +59,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
- บรรทัดนี้จะโหลดเอกสาร Word ชื่อ "VBA project.docm" จากไดเร็กทอรีที่คุณระบุลงใน`doc` วัตถุ.
+ บรรทัดนี้โหลดเอกสาร Word ชื่อ "VBA project.docm" จากไดเร็กทอรีที่คุณระบุลงใน`doc` วัตถุ.
 
 ## ขั้นตอนที่ 3: การเข้าถึงโครงการ VBA
 

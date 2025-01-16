@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## دمج المستندات
-
-إن دمج المستندات بسلاسة يعد مهارة قيمة. يساعدنا التنقل عبر المستندات على دمجها بكفاءة:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## تقسيم المستندات
 
 في بعض الأحيان، قد نحتاج إلى تقسيم المستند إلى أجزاء أصغر. يساعدنا التنقل عبر المستند في تحقيق ذلك:
@@ -117,8 +109,8 @@ for section in sections:
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

@@ -46,7 +46,7 @@ Install-Package Aspose.Words
 
 ## 2단계: 문서 디렉토리 정의
 
-문서 디렉토리 경로를 설정하세요. PDF 파일이 저장되는 곳입니다.
+문서 디렉토리 경로를 설정하세요. 여기가 PDF 파일이 저장되는 곳입니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

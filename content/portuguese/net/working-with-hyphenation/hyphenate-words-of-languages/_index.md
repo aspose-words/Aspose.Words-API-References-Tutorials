@@ -70,7 +70,7 @@ Você pode encontrar dicionários de hifenização online, geralmente fornecidos
 ### Posso usar o Aspose.Words para .NET sem uma licença?
  Sim, mas a versão sem licença terá limitações. É recomendável obter uma[licença temporária](https://purchase.aspose.com/temporary-license) para recursos completos.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?
+### Aspose.Words para .NET é compatível com o .NET Core?
 Sim, o Aspose.Words para .NET oferece suporte ao .NET Framework e ao .NET Core.
 
 ### Como lidar com vários idiomas em um único documento?

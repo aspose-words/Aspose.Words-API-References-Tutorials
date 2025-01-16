@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-그만큼`Document` 클래스는 새 문서를 초기화하고`DocumentBuilder` 문서에 쉽게 내용을 추가하는 데 도움이 됩니다.
+ 그만큼`Document` 클래스는 새 문서를 초기화하고`DocumentBuilder` 문서에 쉽게 내용을 추가하는 데 도움이 됩니다.
 
 ## 2단계: 섹션 삽입
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-그만큼`InsertBreak` 이 방법은 연속적인 섹션 나누기를 삽입하여 각 섹션마다 다른 설정을 할 수 있게 해줍니다.
+ 그만큼`InsertBreak` 이 방법은 연속적인 섹션 나누기를 삽입하여 각 섹션마다 다른 설정을 할 수 있게 해줍니다.
 
 ## 3단계: 문서 보호
 

@@ -9,7 +9,7 @@ url: /pl/net/compare-documents/compare-for-equal/
 ---
 ## Wstęp
 
-Podczas pracy z dokumentami Worda zapewnienie, że dwa dokumenty są identyczne, może być kluczowym zadaniem. Niezależnie od tego, czy porównujesz różne wersje umowy, sprawdzasz nieautoryzowane zmiany, czy weryfikujesz integralność dokumentu, posiadanie zautomatyzowanego sposobu porównywania dokumentów może zaoszczędzić dużo czasu i wysiłku. Aspose.Words dla .NET oferuje solidne rozwiązanie do porównywania dokumentów Worda i identyfikowania wszelkich różnic. W tym artykule przeprowadzimy Cię przez proces porównywania dwóch dokumentów Worda pod kątem równości przy użyciu Aspose.Words dla .NET. 
+Podczas pracy z dokumentami Worda zapewnienie, że dwa dokumenty są identyczne, może być kluczowym zadaniem. Niezależnie od tego, czy porównujesz różne wersje umowy, sprawdzasz nieautoryzowane zmiany, czy weryfikujesz integralność dokumentu, posiadanie zautomatyzowanego sposobu porównywania dokumentów może zaoszczędzić znaczną ilość czasu i wysiłku. Aspose.Words dla .NET oferuje solidne rozwiązanie do porównywania dokumentów Worda i identyfikowania wszelkich różnic. W tym artykule przeprowadzimy Cię przez proces porównywania dwóch dokumentów Worda pod kątem równości przy użyciu Aspose.Words dla .NET. 
 
 ## Wymagania wstępne
 

@@ -9,13 +9,13 @@ url: /ja/net/add-content-using-documentbuilder/insert-html/
 ---
 ## 導入
 
-こんにちは、コーディング愛好家の皆さん! Aspose.Words for .NET を使用して HTML を Word 文書に挿入する方法を考えたことはありませんか? 凝った書式設定を追加したい場合でも、単に文書作成プロセスを効率化したい場合でも、このチュートリアルは役に立ちます。このチュートリアルでは、Aspose.Words for .NET を使用して HTML を Word 文書に直接埋め込む方法について詳しく説明します。心配しないでください。シンプルで魅力的、そして本当に楽しい内容に仕上げます!
+こんにちは、コーディング愛好家の皆さん! Aspose.Words for .NET を使用して HTML を Word 文書に挿入する方法を考えたことはありませんか? 凝った書式設定を追加したい場合でも、単に文書作成プロセスを効率化したい場合でも、このチュートリアルは役に立ちます。このチュートリアルでは、Aspose.Words for .NET を使用して HTML を Word 文書に直接埋め込む方法について詳しく説明します。心配しないでください。シンプルで魅力的、そして実に楽しい内容に仕上げます!
 
 ## 前提条件
 
 ステップバイステップのガイドに進む前に、必要なものがすべて揃っていることを確認しましょう。簡単なチェックリストを以下に示します。
 
-1. Aspose.Words for .NETライブラリ:まだダウンロードしていない場合は、Aspose.Words for .NETライブラリをダウンロードする必要があります。[ここ](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NETライブラリ:まだダウンロードしていない場合は、Aspose.Words for .NETライブラリをダウンロードする必要があります。[ここ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio などの開発環境が設定されていることを確認します。
 3. .NET Framework: マシンに .NET Framework がインストールされていることを確認してください。
 4. 基本的な C# の知識: C# に少しでも精通していると、大いに役立ちます。
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## ステップ3: DocumentBuilderの初期化
 
-HTMLを挿入するには、`DocumentBuilder`クラス。この便利なクラスを使用すると、ドキュメントにコンテンツを簡単に追加できます。
+ HTMLを挿入するには、`DocumentBuilder`クラス。この便利なクラスを使用すると、ドキュメントにコンテンツを簡単に追加できます。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

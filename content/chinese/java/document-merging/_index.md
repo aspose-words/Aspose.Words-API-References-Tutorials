@@ -34,5 +34,3 @@ url: /zh/java/document-merging/
 了解如何使用 Java 中的 Aspose.Words 比较文档的差异。我们的分步指南可确保准确的文档管理。
 ### [使用 DocumentBuilder 合并文档](./merging-documents-documentbuilder/)
 了解如何使用 Aspose.Words for Java 操作 Word 文档。使用 Java 以编程方式创建、编辑、合并和转换文档。
-### [文档分割与提取](./document-splitting-extraction/)
-了解如何使用 Aspose.Words for Java 轻松拆分和提取文档。通过分步指导简化您的文档处理任务。

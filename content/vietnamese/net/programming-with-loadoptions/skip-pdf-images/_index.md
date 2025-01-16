@@ -91,7 +91,7 @@ Không, việc bỏ qua hình ảnh chỉ ảnh hưởng đến hình ảnh. Vă
 
 ### Tôi có thể sử dụng tính năng này với các định dạng tài liệu khác không?
 
-Các`SkipPdfImages` tùy chọn này dành riêng cho tài liệu PDF. Đối với các định dạng khác, có các tùy chọn và phương pháp khác nhau.
+ Các`SkipPdfImages` tùy chọn này dành riêng cho tài liệu PDF. Đối với các định dạng khác, có các tùy chọn và phương pháp khác nhau.
 
 ### Làm sao tôi có thể xác minh rằng hình ảnh đã bị bỏ qua?
 

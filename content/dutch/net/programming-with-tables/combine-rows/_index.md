@@ -112,4 +112,4 @@ Absoluut! Je kunt een script maken om dit proces voor meerdere documenten te aut
 
 ### Waar kan ik hulp krijgen als ik problemen ondervind?
 
-De[Aspose.Words ondersteuningsforum](https://forum.aspose.com/c/words/8) is een geweldige plek om hulp te krijgen en oplossingen te vinden voor veelvoorkomende problemen.
+ De[Aspose.Words ondersteuningsforum](https://forum.aspose.com/c/words/8) is een geweldige plek om hulp te krijgen en oplossingen te vinden voor veelvoorkomende problemen.

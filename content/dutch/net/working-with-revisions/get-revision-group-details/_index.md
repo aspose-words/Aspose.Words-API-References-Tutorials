@@ -106,4 +106,4 @@ Absoluut! Je kunt het gebruiken met elke .NET-taal, inclusief C#, VB.NET en ASP.
  Ja, Aspose.Words voor .NET vereist een licentie voor volledige functionaliteit. U kunt er een kopen[hier](https://purchase.aspose.com/buy) of een tijdelijke licentie krijgen[hier](https://purchase.aspose.com/temporary-license/).
 
 ### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
-Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).
+ Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).

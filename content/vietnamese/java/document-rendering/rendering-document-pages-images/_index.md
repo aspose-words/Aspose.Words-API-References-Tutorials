@@ -48,7 +48,7 @@ Aspose.Words cung cấp nhiều tùy chọn lưu hình ảnh khác nhau để ki
 
 ```java
 // Khởi tạo tùy chọn lưu hình ảnh
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Bước 4: Hiển thị các trang tài liệu dưới dạng hình ảnh

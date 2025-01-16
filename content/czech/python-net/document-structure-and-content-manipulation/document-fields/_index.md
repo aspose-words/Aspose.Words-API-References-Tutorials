@@ -23,7 +23,7 @@ Pole jsou zástupné symboly v dokumentu, které dynamicky zobrazují data. Moho
  Chcete-li vložit pole, můžete použít`FieldBuilder` třída. Chcete-li například vložit pole aktuálního data:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Automatizace generování dokumentů pomocí polí
-
-Pole jsou nezbytná pro automatizované generování dokumentů. Pole můžete naplnit daty z externích zdrojů:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Integrace polí se zdroji dat
@@ -111,7 +102,7 @@ doc.update_fields()
 
 Efektivní manipulace s poli a daty v dokumentech aplikace Word vám umožňuje vytvářet dynamické a automatizované dokumenty. Aspose.Words pro Python tento proces zjednodušuje a nabízí širokou škálu funkcí.
 
-## Nejčastější dotazy
+## FAQ
 
 ### Jak ručně aktualizuji hodnoty polí?
 

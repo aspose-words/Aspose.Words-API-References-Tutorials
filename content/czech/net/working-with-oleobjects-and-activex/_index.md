@@ -15,7 +15,7 @@ Tyto výukové programy vám poskytnou praktický a podrobný přístup ke zprac
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Vložit objekt OLE do dokumentu aplikace Word](./insert-ole-object/) | Naučte se vkládat objekty OLE do dokumentů aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Vylepšete své dokumenty pomocí vloženého obsahu. |
+| [Vložit objekt Ole do dokumentu aplikace Word](./insert-ole-object/) | Naučte se vkládat objekty OLE do dokumentů aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Vylepšete své dokumenty pomocí vloženého obsahu. |
 | [Vložit Ole Objekt Do Wordu S Balíčkem Ole](./insert-ole-object-with-ole-package/) | Naučte se vkládat objekty OLE do dokumentů aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce krok za krokem pro bezproblémové vkládání souborů. |
 | [Vložit OLE objekt do dokumentu aplikace Word jako ikonu](./insert-ole-object-as-icon/) | Naučte se vložit objekt OLE jako ikonu do dokumentů aplikace Word pomocí Aspose.Words for .NET. Vylepšete své dokumenty podle našeho podrobného průvodce. |
 | [Vložit OLE objekt jako ikonu pomocí proudu](./insert-ole-object-as-icon-using-stream/) | Naučte se, jak vložit objekt OLE jako ikonu pomocí streamu s Aspose.Words for .NET v tomto podrobném, podrobném tutoriálu. |

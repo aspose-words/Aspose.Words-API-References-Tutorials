@@ -15,7 +15,7 @@ Stalo se vám někdy, že jste potřebovali přesně řídit, kde se text objev�
 
 Než se ponoříme do matic a šroubů vertikálního kotvení, budete muset mít na svém místě několik věcí:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud ho ještě nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud ho ještě nemáte, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Visual Studio: Tento kurz předpokládá, že pro kódování používáte Visual Studio nebo jiné .NET IDE.
 3. Základní znalost C#: Znalost C# a .NET vám pomůže hladce pokračovat.
 

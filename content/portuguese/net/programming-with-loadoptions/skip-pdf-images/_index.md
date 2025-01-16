@@ -91,7 +91,7 @@ Não, pular imagens afeta apenas as imagens. O texto permanece intacto e totalme
 
 ### Posso usar esse recurso com outros formatos de documento?
 
-O`SkipPdfImages` opção é especificamente para documentos PDF. Para outros formatos, diferentes opções e métodos estão disponíveis.
+ O`SkipPdfImages` opção é especificamente para documentos PDF. Para outros formatos, diferentes opções e métodos estão disponíveis.
 
 ### Como posso verificar se as imagens foram ignoradas?
 

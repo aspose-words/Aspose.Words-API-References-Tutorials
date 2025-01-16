@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Các`Document` đối tượng là cốt lõi của Aspose.Words. Nó đại diện cho toàn bộ tài liệu Word.
+ Các`Document` đối tượng là cốt lõi của Aspose.Words. Nó đại diện cho toàn bộ tài liệu Word.
 
 ## Bước 2: Thêm văn bản vào tài liệu
 
@@ -50,7 +50,7 @@ Tiếp theo, hãy thêm một số văn bản vào tài liệu. Văn bản này 
 builder.Write("Jason give money to Paul.");
 ```
 
-Các`DocumentBuilder` lớp là một công cụ mạnh mẽ để thêm văn bản và các thành phần khác vào tài liệu của bạn.
+ Các`DocumentBuilder` lớp là một công cụ mạnh mẽ để thêm văn bản và các thành phần khác vào tài liệu của bạn.
 
 ## Bước 3: Xác định mẫu Regex
 
@@ -70,7 +70,7 @@ Aspose.Words cho phép bạn sử dụng các thay thế trong các thay thế c
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
-Các`FindReplaceOptions` Lớp này cung cấp nhiều tùy chọn khác nhau để tùy chỉnh hoạt động tìm kiếm và thay thế của bạn.
+ Các`FindReplaceOptions` Lớp này cung cấp nhiều tùy chọn khác nhau để tùy chỉnh hoạt động tìm kiếm và thay thế của bạn.
 
 ## Bước 5: Thực hiện thay thế
 

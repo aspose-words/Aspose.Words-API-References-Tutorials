@@ -94,4 +94,4 @@ Tak, możesz go używać z licencją tymczasową, którą możesz uzyskać[Tutaj
 Obsługuje szeroką gamę języków, w tym języki azjatyckie, takie jak chiński i japoński.
 
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację?
-Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
+ Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).

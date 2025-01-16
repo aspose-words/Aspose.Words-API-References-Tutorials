@@ -90,7 +90,7 @@ Um den Prozess weiter zu optimieren, können Sie die Zusammenführungs- und Anf�
 
 ## Abschluss
 
-Mit Aspose.Words für Python können Entwickler Dokumente mühelos zusammenführen und anhängen. Egal, ob Sie an Berichten, Büchern oder anderen dokumentenintensiven Projekten arbeiten, die robusten Funktionen der Bibliothek sorgen dafür, dass der Prozess sowohl effizient als auch zuverlässig ist.
+Mit Aspose.Words für Python können Entwickler mühelos Dokumente zusammenführen und anhängen. Egal, ob Sie an Berichten, Büchern oder anderen dokumentenintensiven Projekten arbeiten, die robusten Funktionen der Bibliothek sorgen dafür, dass der Prozess sowohl effizient als auch zuverlässig ist.
 
 ## Häufig gestellte Fragen
 

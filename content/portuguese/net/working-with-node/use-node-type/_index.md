@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Etapa 2: acesse a propriedade NodeType
 
-O`NodeType` property é um recurso fundamental no Aspose.Words. Ele permite que você identifique o tipo de nó com o qual está lidando. Para acessar essa propriedade, basta usar o seguinte código:
+ O`NodeType` property é um recurso fundamental no Aspose.Words. Ele permite que você identifique o tipo de nó com o qual está lidando. Para acessar essa propriedade, basta usar o seguinte código:
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -63,7 +63,7 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 ###  O que é o`NodeType` property in Aspose.Words?
 
-O`NodeType` propriedade identifica o tipo de nó dentro de um documento, como Documento, Seção, Parágrafo, Execução ou Tabela.
+ O`NodeType` propriedade identifica o tipo de nó dentro de um documento, como Documento, Seção, Parágrafo, Execução ou Tabela.
 
 ###  Como posso verificar o`NodeType` of a node?
 

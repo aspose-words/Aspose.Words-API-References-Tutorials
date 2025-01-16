@@ -38,23 +38,11 @@ Dokumentumlista létrehozásához kövesse az alábbi lépéseket:
 // Importálja a szükséges csomagokat
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Inicializáljon egy új dokumentumot
-        Document doc = new Document();
-
-        // Hozzon létre egy listát
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Listaelemek hozzáadása
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Mentse el a dokumentumot
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Dokumentumlista módosítása
@@ -69,21 +57,18 @@ Miután létrehozott egy dokumentumlistát, előfordulhat, hogy módosítania ke
 Íme egy kódrészlet a dokumentumlista módosításához:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Töltsön be egy meglévő dokumentumot
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Nyissa meg a listát
-        List list = doc.getLists().get(0);
-
-        // Új elem hozzáadása
-        list.getListItems().add("New Item");
-
-        // Mentse el a módosított dokumentumot
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Ellenőrizze, hogy a bekezdés egy lista része-e.
+    if (paragraph.isListItem()) {
+        // Frissítse az utolsó lista bekezdést.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Információk kinyerése dokumentumlistából
@@ -97,23 +82,21 @@ Bizonyos esetekben előfordulhat, hogy információkat kell kivonnia egy dokumen
 Íme egy kódrészlet az információk dokumentumlistából való kinyeréséhez:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Töltse be a dokumentumot
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Nyissa meg a listát
-        List list = doc.getLists().get(0);
-
-        // Ismételje meg a listaelemeket, és nyomtassa ki őket
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Gyakran Ismételt Kérdések (GYIK)
+## Következtetés
+
+Ebben az átfogó útmutatóban a dokumentumlisták Aspose.Words for Java használatával való munka világát fedeztük fel. Megtanulta, hogyan hozhat létre, módosíthat és nyerhet ki információkat dokumentumlistákból, mindezt az Aspose.Words for Java erejével és rugalmasságával. Kezdje el ezeket a technikákat Java-projektjeiben még ma, és egyszerűsítse dokumentumautomatizálási feladatait.
+
+
+## GYIK
 
 ### Hogyan adhatok felsoroláspontokat a dokumentumlistához?
  Ha felsorolásjeleket szeretne hozzáadni egy dokumentumlistához, használja a megfelelő Listtemplate-et a lista létrehozásakor. Például használja`ListTemplate.BULLET_DEFAULT` helyett`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ A dokumentumlista PDF formátumba konvertálásához egyszerűen töltse be a do
 
 ### Az Aspose.Words for Java támogatja a dokumentumokban lévő táblázatokkal való munkát?
 Igen, az Aspose.Words for Java kiterjedt támogatást nyújt a táblázatokkal való munkavégzéshez, lehetővé téve a táblázatos adatok könnyű létrehozását, módosítását és kibontását.
-
-## Következtetés
-
-Ebben az átfogó útmutatóban a dokumentumlisták Aspose.Words for Java használatával való munka világát fedeztük fel. Megtanulta, hogyan hozhat létre, módosíthat és nyerhet ki információkat dokumentumlistákból, mindezt az Aspose.Words for Java erejével és rugalmasságával. Kezdje el ezeket a technikákat Java-projektjeiben még ma, és egyszerűsítse dokumentumautomatizálási feladatait.

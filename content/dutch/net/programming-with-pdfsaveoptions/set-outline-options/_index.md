@@ -52,7 +52,7 @@ Laten we nu de omtrekopties instellen.
 
 ### Stel koppen in Overzichtsniveaus
 
-De`HeadingsOutlineLevels` eigenschap definieert hoeveel niveaus van koppen er in de PDF-schets moeten worden opgenomen. Als u het bijvoorbeeld instelt op 3, worden er maximaal drie niveaus van koppen in de PDF-schets opgenomen.
+ De`HeadingsOutlineLevels` eigenschap definieert hoeveel niveaus van koppen er in de PDF-schets moeten worden opgenomen. Als u het bijvoorbeeld instelt op 3, worden er maximaal drie niveaus van koppen in de PDF-schets opgenomen.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Uitgebreide overzichtsniveaus instellen
 
-De`ExpandedOutlineLevels`eigenschap bepaalt hoeveel niveaus van de outline standaard moeten worden uitgevouwen wanneer de PDF wordt geopend. Als u dit op 1 instelt, worden de koppen op het hoogste niveau uitgevouwen, waardoor de hoofdsecties duidelijk zichtbaar zijn.
+ De`ExpandedOutlineLevels`eigenschap bepaalt hoeveel niveaus van de outline standaard moeten worden uitgevouwen wanneer de PDF wordt geopend. Als u dit op 1 instelt, worden de koppen op het hoogste niveau uitgevouwen, waardoor de hoofdsecties duidelijk zichtbaar zijn.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

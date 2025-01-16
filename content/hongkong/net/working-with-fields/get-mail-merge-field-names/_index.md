@@ -86,7 +86,7 @@ string[] fieldNames = doc.MailMerge.GetFieldNames();
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
-此行程式碼列印出文件中郵件合併欄位的總數，幫助您驗證提取過程是否正常運作。
+這行程式碼列印出文件中郵件合併欄位的總數，幫助您驗證提取過程是否正常運作。
 
 ## 結論
 

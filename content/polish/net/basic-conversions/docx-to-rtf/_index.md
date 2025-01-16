@@ -32,7 +32,7 @@ using Aspose.Words;
 using System.IO;
 ```
 
-Ten`Aspose.Words` przestrzeń nazw zawiera podstawowe klasy do obsługi dokumentów Word, podczas gdy`System.IO` zapewnia funkcjonalność dla operacji na plikach.
+ Ten`Aspose.Words` przestrzeń nazw zawiera podstawowe klasy do obsługi dokumentów Word, podczas gdy`System.IO` zapewnia funkcjonalność dla operacji na plikach.
 
 Podzielmy proces konwersji pliku DOCX na format RTF na jasne, łatwe do opanowania kroki. Postępuj zgodnie z tymi instrukcjami, aby osiągnąć płynną konwersję.
 

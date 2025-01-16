@@ -45,7 +45,7 @@ Passiamo in rassegna il processo di inserimento di collegamenti ipertestuali in 
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-IL`DocumentBuilder` class è uno strumento versatile che consente di creare e modificare il documento.
+ IL`DocumentBuilder` class è uno strumento versatile che consente di creare e modificare il documento.
 
 ## Passaggio 2: Inserisci collegamento ipertestuale
 

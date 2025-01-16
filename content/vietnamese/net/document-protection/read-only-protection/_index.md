@@ -53,13 +53,13 @@ Giải thích:
 Tiếp theo, chúng ta cần đặt mật khẩu để bảo vệ ghi. Mật khẩu này có thể dài tới 15 ký tự.
 
 ```csharp
-//Nhập mật khẩu có độ dài tối đa 15 ký tự.
+// Nhập mật khẩu có độ dài tối đa 15 ký tự.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Giải thích:
 
-- Các`SetPassword` phương pháp được gọi là`WriteProtection` sở hữu của tài liệu.
+-  Các`SetPassword` phương pháp được gọi là`WriteProtection` sở hữu của tài liệu.
 - Chúng tôi cung cấp mật khẩu (trong trường hợp này là "MyPassword"), mật khẩu này sẽ được sử dụng để xóa bỏ chế độ bảo vệ.
 
 ## Bước 3: Bật Đề xuất Chỉ đọc
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Giải thích:
 
-- Các`ReadOnlyRecommended` thuộc tính được thiết lập thành`true`.
+-  Các`ReadOnlyRecommended` thuộc tính được thiết lập thành`true`.
 - Thao tác này sẽ nhắc người dùng mở tài liệu ở chế độ chỉ đọc, mặc dù họ có thể chọn bỏ qua khuyến nghị này.
 
 ## Bước 4: Áp dụng Bảo vệ Chỉ đọc
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Giải thích:
 
-- Các`Protect` phương pháp được gọi trên tài liệu với`ProtectionType.ReadOnly` như là một lập luận.
+-  Các`Protect` phương pháp được gọi trên tài liệu với`ProtectionType.ReadOnly` như là một lập luận.
 - Phương pháp này thực thi chế độ bảo vệ chỉ đọc, ngăn chặn mọi sửa đổi đối với tài liệu mà không có mật khẩu.
 
 ## Bước 5: Lưu tài liệu
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Giải thích:
 
-- Các`Save` phương thức được gọi trên tài liệu, chỉ định đường dẫn và tên của tệp.
+-  Các`Save` phương thức được gọi trên tài liệu, chỉ định đường dẫn và tên của tệp.
 - Tài liệu được lưu với chế độ bảo vệ chỉ đọc.
 
 ## Phần kết luận

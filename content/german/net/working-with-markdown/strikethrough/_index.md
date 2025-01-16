@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## Schritt 1: Initialisieren Sie den DocumentBuilder
 
-Der`DocumentBuilder` Die Klasse ist ein leistungsstarkes Tool in Aspose.Words, mit dem Sie Ihrem Dokument problemlos Inhalte hinzufügen können.
+ Der`DocumentBuilder` Die Klasse ist ein leistungsstarkes Tool in Aspose.Words, mit dem Sie Ihrem Dokument problemlos Inhalte hinzufügen können.
 
 ```csharp
 // Initialisieren Sie einen DocumentBuilder.

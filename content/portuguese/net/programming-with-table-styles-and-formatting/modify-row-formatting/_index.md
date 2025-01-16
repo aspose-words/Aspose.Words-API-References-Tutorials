@@ -61,7 +61,7 @@ Com a tabela agora acessível, o próximo passo é recuperar a primeira linha. E
 Row firstRow = table.FirstRow;
 ```
 
-O`FirstRow` property nos dá a primeira linha na tabela. Agora, estamos prontos para começar a modificar sua formatação.
+ O`FirstRow` property nos dá a primeira linha na tabela. Agora, estamos prontos para começar a modificar sua formatação.
 
 ## Etapa 4: Modificar bordas de linha
 

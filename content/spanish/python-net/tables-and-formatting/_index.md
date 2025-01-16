@@ -19,7 +19,7 @@ Las tablas son herramientas muy útiles para organizar y presentar información 
 
 ## Lo que aprenderás
 
-A lo largo de esta serie de tutoriales, se embarcará en un viaje de comprensión y utilización de tablas y formatos dentro del contexto de Aspose.Words. Los tutoriales cubren una amplia gama de temas, entre los que se incluyen:
+lo largo de esta serie de tutoriales, se embarcará en un viaje de comprensión y utilización de tablas y formatos dentro del contexto de Aspose.Words. Los tutoriales cubren una amplia gama de temas, entre los que se incluyen:
 
 - Creación de tablas: aprenda a crear tablas desde cero o insertarlas en documentos existentes.
 - Personalización de celdas: profundice en el formato de celdas, el ajuste de bordes, el sombreado y la alineación.

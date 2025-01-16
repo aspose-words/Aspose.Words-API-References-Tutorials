@@ -15,7 +15,7 @@ Hej där! Har du någonsin undrat hur man kontrollerar skyddstypen för dina Wor
 
 Innan vi går in i kodningsdelen, låt oss se till att du har allt du behöver:
 
-1.  Aspose.Words för .NET Library: Om du inte redan har gjort det, ladda ner och installera[Aspose.Words för .NET-bibliotek](https://releases.aspose.com/words/net/).
+1. Aspose.Words för .NET Library: Om du inte redan har gjort det, ladda ner och installera[Aspose.Words för .NET-bibliotek](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: En IDE som Visual Studio.
 3. Grundläggande kunskaper i C#: Bekantskap med C#-programmering hjälper dig att följa med.
 
@@ -41,7 +41,7 @@ Först till kvarn, ställ in ditt C#-projekt i Visual Studio. Så här gör du:
 
 ## Steg 2: Ladda ditt dokument
 
- Nu när ditt projekt är konfigurerat, låt oss ladda Word-dokumentet du vill kontrollera. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument.
+Nu när ditt projekt är konfigurerat, låt oss ladda Word-dokumentet du vill kontrollera. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument.
 
 ```csharp
 // Sökväg till din dokumentkatalog
@@ -75,13 +75,13 @@ Och där har du det! Du har framgångsrikt hämtat skyddstypen för ett Word-dok
 Aspose.Words för .NET är ett kraftfullt bibliotek som låter dig skapa, redigera, konvertera och manipulera Word-dokument programmatiskt.
 
 ### Kan jag använda Aspose.Words gratis?
- Du kan börja med en[gratis provperiod](https://releases.aspose.com/) , men för full funktionalitet måste du köpa en licens. Kolla in[köpoptioner](https://purchase.aspose.com/buy).
+ Du kan börja med en[gratis provperiod](https://releases.aspose.com/) men för full funktionalitet måste du köpa en licens. Kolla in[köpoptioner](https://purchase.aspose.com/buy).
 
 ### Vilka skyddstyper kan Aspose.Words upptäcka?
 Aspose.Words kan upptäcka olika skyddstyper som NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments och AllowOnlyFormFields.
 
 ### Hur kan jag få support om jag stöter på problem?
-För eventuella problem kan du besöka[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för hjälp.
+ För eventuella problem kan du besöka[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för hjälp.
 
 ### Är Aspose.Words kompatibelt med .NET Core?
 Ja, Aspose.Words är kompatibelt med både .NET Framework och .NET Core.

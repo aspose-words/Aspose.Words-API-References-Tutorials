@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Bước 3: Khởi tạo DocumentBuilder
 
-Các`DocumentBuilder` giống như cây cọ vẽ của bạn. Nó giúp bạn thêm nội dung vào tài liệu của mình. Hãy khởi tạo nó.
+ Các`DocumentBuilder` giống như cây cọ vẽ của bạn. Nó giúp bạn thêm nội dung vào tài liệu của mình. Hãy khởi tạo nó.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ Thật thú vị phải không? Với Aspose.Words for .NET, việc thao tác c�
 Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình. Nó hỗ trợ nhiều tính năng, từ tạo và chỉnh sửa tài liệu đến chuyển đổi giữa các định dạng khác nhau.
 
 ### Tôi có thể sử dụng Aspose.Words miễn phí không?
- Vâng, bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/) để khám phá các tính năng của nó. Để sử dụng lâu dài, bạn có thể[mua giấy phép](https://purchase.aspose.com/buy).
+Vâng, bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/) để khám phá các tính năng của nó. Để sử dụng lâu dài, bạn có thể[mua giấy phép](https://purchase.aspose.com/buy).
 
 ### Làm thế nào để tôi nhận được hỗ trợ cho Aspose.Words?
  Bạn có thể nhận được sự hỗ trợ từ[Diễn đàn cộng đồng Aspose](https://forum.aspose.com/c/words/8). Đây là nơi tuyệt vời để đặt câu hỏi và chia sẻ kinh nghiệm của bạn.

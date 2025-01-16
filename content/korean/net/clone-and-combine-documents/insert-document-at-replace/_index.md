@@ -165,7 +165,7 @@ Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 조작하�
  물론입니다! 무료 체험판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).
 
 ### Aspose.Words에 대한 지원을 받으려면 어떻게 해야 하나요?
-방문하면 지원을 받을 수 있습니다.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).
+ 방문하면 지원을 받을 수 있습니다.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).
 
 ### 삽입한 문서의 서식을 유지할 수 있나요?
  네,`NodeImporter` 클래스를 사용하면 한 문서에서 다른 문서로 노드를 가져올 때 서식을 처리하는 방법을 지정할 수 있습니다.

@@ -43,7 +43,7 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.setConvertShapeToOfficeMath(true);
 
 Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 ```
 
  يوضح هذا الكود كيفية تحويل الأشكال إلى كائنات Office Math أثناء تحميل المستند.`setConvertShapeToOfficeMath(true)`تمكن هذه الطريقة من التحويل.
@@ -136,7 +136,7 @@ public void convertShapeToOfficeMath() throws Exception {
 		loadOptions.setConvertShapeToOfficeMath(true);
 	}
 	Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 }
 @Test
 public void setMsWordVersion() throws Exception {
@@ -210,4 +210,4 @@ public void loadChm() throws Exception {
 
 ###  ما هو الغرض من ذلك؟`setTempFolder` method in Load Options?
 
-ال`setTempFolder`تسمح لك الطريقة بتحديد المجلد الذي سيتم تخزين الملفات المؤقتة فيه أثناء معالجة المستندات.
+ ال`setTempFolder`تسمح لك الطريقة بتحديد المجلد الذي سيتم تخزين الملفات المؤقتة فيه أثناء معالجة المستندات.

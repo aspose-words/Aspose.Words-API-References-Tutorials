@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントが保存されている実際のパスを入力します。
 
-## ステップ 2: ドキュメント方向設定を使用して TxtLoadOptions を作成する
+## ステップ 2: ドキュメント方向設定を含む TxtLoadOptions を作成する
 
 次に、インスタンスを作成する必要があります`TxtLoadOptions`そしてその`DocumentDirection`プロパティ。これは、ドキュメント内のテキストの方向をどのように処理するかを Aspose.Words に指示します。
 
@@ -58,7 +58,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDi
 Document doc = new Document(dataDir + "Hebrew text.txt", loadOptions);
 ```
 
-ここ、`"Hebrew text.txt"`テキスト ファイルの名前です。このファイルが指定したディレクトリに存在することを確認してください。
+ここ、`"Hebrew text.txt"`はテキスト ファイルの名前です。このファイルが指定したディレクトリに存在することを確認してください。
 
 ## ステップ4: 段落の双方向書式にアクセスして確認する
 

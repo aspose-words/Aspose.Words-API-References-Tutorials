@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-// Danh sách thứ tư, có khoảng trắng giữa số danh sách và nội dung mục danh sách,
+//Danh sách thứ tư, có khoảng trắng giữa số danh sách và nội dung mục danh sách,
 // sẽ chỉ được phát hiện dưới dạng danh sách nếu "DetectNumberingWithWhitespaces" trong đối tượng LoadOptions được đặt thành true,
 // để tránh các đoạn văn bắt đầu bằng số bị phát hiện nhầm là danh sách.
 TxtLoadOptions loadOptions = new TxtLoadOptions();
@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
-Trong ví dụ này, chúng tôi tải một tài liệu văn bản và cắt bớt khoảng cách đầu và cuối bằng cách sử dụng`TxtLeadingSpacesOptions.TRIM` Và`TxtTrailingSpacesOptions.TRIM`.
+ Trong ví dụ này, chúng tôi tải một tài liệu văn bản và cắt bớt khoảng cách đầu và cuối bằng cách sử dụng`TxtLeadingSpacesOptions.TRIM` Và`TxtTrailingSpacesOptions.TRIM`.
 
 ## Bước 3: Kiểm soát hướng văn bản
 
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-Mã này thiết lập hướng tài liệu để tự động phát hiện (`DocumentDirection.AUTO`) và tải một tài liệu văn bản bằng văn bản tiếng Do Thái. Bạn có thể điều chỉnh hướng tài liệu khi cần.
+Mã này thiết lập hướng tài liệu để tự động phát hiện (`DocumentDirection.AUTO`và tải một tài liệu văn bản bằng văn bản tiếng Do Thái. Bạn có thể điều chỉnh hướng tài liệu khi cần.
 
 ## Mã nguồn đầy đủ để tải tệp văn bản với Aspose.Words cho Java
 
@@ -179,7 +179,7 @@ Aspose.Words for Java là một thư viện xử lý tài liệu mạnh mẽ cho
 
 ### Tôi phải xử lý khoảng trắng trong tài liệu văn bản đã tải như thế nào?
 
- Bạn có thể kiểm soát cách xử lý khoảng cách đầu và cuối trong các tài liệu văn bản đã tải bằng cách sử dụng`TxtLoadOptions` . Các tùy chọn như`TxtLeadingSpacesOptions` Và`TxtTrailingSpacesOptions` cho phép bạn cắt hoặc giữ nguyên khoảng trống khi cần. Tham khảo phần "Xử lý tùy chọn khoảng trống" trong hướng dẫn này để biết ví dụ.
+ Bạn có thể kiểm soát cách xử lý khoảng cách đầu và cuối trong các tài liệu văn bản đã tải bằng cách sử dụng`TxtLoadOptions` . Các tùy chọn như`TxtLeadingSpacesOptions` Và`TxtTrailingSpacesOptions`cho phép bạn cắt hoặc giữ nguyên khoảng trống khi cần. Tham khảo phần "Xử lý tùy chọn khoảng trống" trong hướng dẫn này để biết ví dụ.
 
 ### Ý nghĩa của hướng văn bản trong Aspose.Words dành cho Java là gì?
 

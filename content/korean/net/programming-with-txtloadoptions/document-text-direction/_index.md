@@ -89,7 +89,7 @@ Aspose.Words for .NET을 사용하면 Word 문서에서 텍스트 방향을 설�
 
 ###  무엇입니까?`DocumentDirection` property used for?
 
-그만큼`DocumentDirection` 속성에`TxtLoadOptions` 문서의 텍스트 방향을 결정합니다. 다음으로 설정할 수 있습니다.`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , 또는`DocumentDirection.RightToLeft`.
+ 그만큼`DocumentDirection` 속성`TxtLoadOptions` 문서의 텍스트 방향을 결정합니다. 다음으로 설정할 수 있습니다.`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , 또는`DocumentDirection.RightToLeft`.
 
 ### 문서 전체가 아닌 특정 문단의 텍스트 방향을 설정할 수 있나요?
 

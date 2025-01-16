@@ -130,7 +130,7 @@ Nah, itu dia! Anda telah berhasil membuat baris tanda tangan baru dan menetapkan
 ## Pertanyaan yang Sering Diajukan
 
 ### Bisakah saya menyesuaikan tampilan baris tanda tangan?
-Tentu saja! Anda dapat mengubah berbagai opsi di`SignatureLineOptions` untuk memenuhi kebutuhan Anda.
+ Tentu saja! Anda dapat mengubah berbagai opsi di`SignatureLineOptions`untuk memenuhi kebutuhan Anda.
 
 ### Bagaimana jika saya tidak memiliki sertifikat PFX?
 Anda perlu memperolehnya dari otoritas sertifikat tepercaya. Sertifikat ini penting untuk menandatangani dokumen secara digital.

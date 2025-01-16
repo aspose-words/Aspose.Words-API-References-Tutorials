@@ -46,14 +46,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Adım 2: Yeni bir Belge ve DocumentBuilder Oluşturun
 
- Daha sonra yeni bir belge ve bir`DocumentBuilder` nesne.`DocumentBuilder` Belgeyi manipüle etmemizi sağlayan sihirli değneğimizdir.
+ Daha sonra yeni bir belge ve bir`DocumentBuilder` nesne.`DocumentBuilder` belgeyi manipüle etmemizi sağlayan sihirli değneğimizdir.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`Document` nesne tüm Word belgemizi temsil eder ve`DocumentBuilder` içerik eklememize ve biçimlendirmemize yardımcı olur.
+ The`Document` nesne tüm Word belgemizi temsil eder ve`DocumentBuilder` içerik eklememize ve biçimlendirmemize yardımcı olur.
 
 ## Adım 3: Paragraf Kenarlıklarını Tanımlayın
 

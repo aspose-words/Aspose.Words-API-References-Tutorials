@@ -54,7 +54,7 @@ Następnie musimy ustawić opcje zapisywania dokumentu. Tutaj określimy hasło 
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-Ten`OoxmlSaveOptions`Klasa pozwala nam określić różne opcje zapisywania plików DOCX. Tutaj ustawiamy`Password`nieruchomość do`"password"` . Możesz zastąpić`"password"` z dowolnym hasłem według własnego wyboru. To hasło będzie wymagane do otwarcia zaszyfrowanego pliku DOCX.
+ Ten`OoxmlSaveOptions`Klasa pozwala nam określić różne opcje zapisywania plików DOCX. Tutaj ustawiamy`Password`nieruchomość do`"password"` . Możesz zastąpić`"password"` z dowolnym hasłem według własnego wyboru. To hasło będzie wymagane do otwarcia zaszyfrowanego pliku DOCX.
 
 ## Krok 3: Zapisz zaszyfrowany dokument
 
@@ -65,7 +65,7 @@ Na koniec zapiszemy dokument, korzystając z opcji zapisu skonfigurowanych w pop
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-Ten`Save` metoda`Document` Klasa jest używana do zapisywania dokumentu. Podajemy ścieżkę i nazwę pliku dla zaszyfrowanego dokumentu, wraz z`saveOptions` skonfigurowaliśmy wcześniej. Dokument jest teraz zapisany jako zaszyfrowany plik DOCX.
+ Ten`Save` metoda`Document` Klasa jest używana do zapisywania dokumentu. Podajemy ścieżkę i nazwę pliku dla zaszyfrowanego dokumentu, wraz z`saveOptions` skonfigurowaliśmy wcześniej. Dokument jest teraz zapisany jako zaszyfrowany plik DOCX.
 
 ## Wniosek
 

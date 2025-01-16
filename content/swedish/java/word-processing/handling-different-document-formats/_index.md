@@ -37,13 +37,6 @@ En av de viktigaste styrkorna med Aspose.Words för Java är dess förmåga att 
 Document doc = new Document("sample.docx");
 ```
 
-### Laddar ett PDF-dokument
-
-```java
-// Ladda ett PDF-dokument
-Document doc = new Document("sample.pdf");
-```
-
 ## Ändra och spara dokument
 
 När du har laddat ett dokument kan du utföra en mängd åtgärder, från enkel textersättning till komplexa formateringsändringar.
@@ -71,7 +64,7 @@ Aspose.Words för Java möjliggör sömlös konvertering mellan olika dokumentfo
 Document doc = new Document("sample.docx");
 
 // Spara som PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Hantera bilder och tabeller
@@ -81,7 +74,7 @@ Att införliva bilder och tabeller är ett vanligt krav när man arbetar med dok
 ### Lägga till en bild i ett dokument
 
 ```java
-// Ladda ett dokument
+//Ladda ett dokument
 Document doc = new Document("document.docx");
 
 // Infoga en bild

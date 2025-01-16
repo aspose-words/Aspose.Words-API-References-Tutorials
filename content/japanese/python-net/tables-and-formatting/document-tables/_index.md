@@ -8,7 +8,7 @@ weight: 11
 url: /ja/python-net/tables-and-formatting/document-tables/
 ---
 
-表は、Word 文書内でデータを効果的に表示する上で重要な役割を果たします。表のレイアウトと書式設定を最適化することで、コンテンツの読みやすさと視覚的な魅力を高めることができます。レポート、ドキュメント、プレゼンテーションのいずれを作成する場合でも、表の最適化の技術を習得すると、作業の質を大幅に向上できます。この包括的なガイドでは、Aspose.Words for Python API を使用してデータ表示用に表を最適化する手順を詳しく説明します。
+表は、Word 文書内でデータを効果的に表示する上で重要な役割を果たします。表のレイアウトと書式設定を最適化することで、コンテンツの読みやすさと視覚的な魅力を高めることができます。レポート、ドキュメント、プレゼンテーションのいずれを作成する場合でも、表の最適化の技術を習得すると、作業の質を大幅に高めることができます。この包括的なガイドでは、Aspose.Words for Python API を使用してデータ表示用に表を最適化する手順を詳しく説明します。
 
 ## 導入：
 
@@ -50,7 +50,7 @@ url: /ja/python-net/tables-and-formatting/document-tables/
 
 ```python
 # Create a table with 3 rows and 4 columns
-table = doc.tables.add(3, 4)
+table = doc.get_child(aw.NodeType.TABLE, 0, True).as_table()
 
 # Set preferred width for the table
 table.preferred_width = doc.page_width
@@ -78,7 +78,7 @@ cell.cell_format.horizontal_merge = CellMerge.FIRST
 cell.cell_format.horizontal_merge = CellMerge.NONE
 ```
 
-## スタイルとカスタマイズ:
+## スタイリングとカスタマイズ:
 
 Aspose.Words には、表の外観を向上させるさまざまなスタイル設定オプションが用意されています。セルの背景色、テキストの配置、フォントの書式設定などを設定できます。
 

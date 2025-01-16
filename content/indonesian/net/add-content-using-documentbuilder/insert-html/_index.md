@@ -15,7 +15,7 @@ Hai, sesama penggemar kode! Pernahkah Anda bertanya-tanya bagaimana cara memasuk
 
 Sebelum kita menyelami panduan langkah demi langkah, mari kita pastikan kita memiliki semua yang kita butuhkan. Berikut ini daftar periksa singkatnya:
 
-1. Pustaka Aspose.Words untuk .NET: Jika Anda belum mengunduhnya, Anda perlu mengunduh pustaka Aspose.Words untuk .NET. Anda bisa mendapatkannya[Di Sini](https://releases.aspose.com/words/net/).
+1.  Pustaka Aspose.Words untuk .NET: Jika Anda belum mengunduhnya, Anda perlu mengunduh pustaka Aspose.Words untuk .NET. Anda bisa mendapatkannya[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Pastikan Anda telah menyiapkan lingkungan pengembangan, seperti Visual Studio.
 3. .NET Framework: Pastikan Anda telah menginstal .NET Framework di komputer Anda.
 4. Pengetahuan Dasar C#: Sedikit pengetahuan tentang C# akan sangat membantu.
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Langkah 3: Menginisialisasi DocumentBuilder
 
-Untuk memasukkan HTML, kita memerlukan bantuan`DocumentBuilder` Kelas praktis ini memudahkan penambahan konten ke dokumen kita.
+ Untuk memasukkan HTML, kita memerlukan bantuan`DocumentBuilder` Kelas praktis ini memudahkan penambahan konten ke dokumen kita.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -88,7 +88,7 @@ Nah, itu dia! Anda baru saja memasukkan HTML ke dalam dokumen Word menggunakan A
 
 Memasukkan HTML ke dalam dokumen Word tidak pernah semudah ini, bukan? Dengan Aspose.Words untuk .NET, Anda dapat memadukan kekuatan HTML dengan keserbagunaan dokumen Word dengan mudah. Baik Anda mengotomatiskan pembuatan laporan atau menyusun dokumen dengan format yang indah, alat ini adalah solusi yang tepat untuk Anda.
 
-Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, jangan ragu untuk memeriksa[dokumentasi](https://reference.aspose.com/words/net/), [forum dukungan](https://forum.aspose.com/c/words/8) , atau dapatkan sendiri[lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk membuka potensi penuh Aspose.Words untuk .NET.
+ Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, jangan ragu untuk memeriksa[dokumentasi](https://reference.aspose.com/words/net/), [forum dukungan](https://forum.aspose.com/c/words/8) , atau dapatkan sendiri[lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk membuka potensi penuh Aspose.Words untuk .NET.
 
 Selamat membuat kode!
 
@@ -107,4 +107,4 @@ Ya, setelah HTML dimasukkan, Anda dapat memanipulasi dokumen lebih lanjut menggu
  Anda bisa memulai dengan[uji coba gratis](https://releases.aspose.com/) atau mendapatkan[lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk fitur lengkap.
 
 ### Di mana saya dapat menemukan lebih banyak tutorial dan contoh?  
-Itu[dokumentasi](https://reference.aspose.com/words/net/) Dan[forum dukungan](https://forum.aspose.com/c/words/8)adalah tempat yang bagus untuk memulai untuk panduan yang lebih rinci dan dukungan komunitas.
+ Itu[dokumentasi](https://reference.aspose.com/words/net/) Dan[forum dukungan](https://forum.aspose.com/c/words/8) adalah tempat yang bagus untuk memulai untuk panduan yang lebih rinci dan dukungan komunitas.

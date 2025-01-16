@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Étape 3 : Configurer les paramètres de police
 
-Créer un nouveau`FontSettings` objet et chargez les paramètres de repli des polices à partir d'un fichier XML. Ce fichier XML contient les règles de repli des polices.
+ Créer un nouveau`FontSettings` objet et chargez les paramètres de repli des polices à partir d'un fichier XML. Ce fichier XML contient les règles de repli des polices.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

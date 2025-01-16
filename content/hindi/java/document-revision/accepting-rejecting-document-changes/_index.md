@@ -44,10 +44,7 @@ for (Revision revision : doc.getRevisions()) {
 
 ```java
 // सभी संशोधन स्वीकार करें
-doc.acceptAllRevisions();
-
-// अनुक्रमणिका द्वारा विशिष्ट संशोधन स्वीकार करें
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## परिवर्तनों को अस्वीकार करना
@@ -56,10 +53,7 @@ doc.acceptRevision(0);
 
 ```java
 // सभी संशोधन अस्वीकार करें
-doc.rejectAllRevisions();
-
-// अनुक्रमणिका द्वारा किसी विशिष्ट संशोधन को अस्वीकार करें
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## दस्तावेज़ को सहेजना

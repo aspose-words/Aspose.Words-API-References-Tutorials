@@ -19,11 +19,7 @@ Zanim zagłębimy się w osadzanie obiektów OLE i kontrolek ActiveX, upewnijmy 
 - Zainstalowano bibliotekę Aspose.Words dla języka Python
 - Podstawowe zrozumienie struktury dokumentu Word
 
-## Osadzanie obiektów OLE
-
-Obiekty OLE umożliwiają bezproblemową integrację plików zewnętrznych, takich jak arkusze kalkulacyjne lub prezentacje, z dokumentami Word. Wykonaj następujące kroki, aby osadzić obiekt OLE:
-
-### Krok 1: Dodawanie wymaganych bibliotek
+## Krok 1: Dodawanie wymaganych bibliotek
 
 Zacznij od zaimportowania niezbędnych modułów z biblioteki Aspose.Words i wszelkich innych zależności:
 
@@ -31,7 +27,7 @@ Zacznij od zaimportowania niezbędnych modułów z biblioteki Aspose.Words i wsz
 import aspose.words as aw
 ```
 
-### Krok 2: Tworzenie dokumentu Word
+## Krok 2: Tworzenie dokumentu Word
 
 Utwórz nowy dokument Word przy użyciu Aspose.Words dla języka Python:
 
@@ -39,42 +35,16 @@ Utwórz nowy dokument Word przy użyciu Aspose.Words dla języka Python:
 doc = aw.Document()
 ```
 
-### Krok 3: Wstawianie obiektu OLE
+## Krok 3: Wstawianie obiektu OLE
 
 Teraz możesz wstawić obiekt OLE do swojego dokumentu. Na przykład osadźmy arkusz kalkulacyjny programu Excel:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## Osadzanie kontrolek ActiveX
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", Prawda, Prawda, Brak)
 
-Kontrolki ActiveX zapewniają interaktywność Twoim dokumentom, umożliwiając użytkownikom interakcję z osadzoną zawartością. Wykonaj następujące kroki, aby osadzić kontrolkę ActiveX:
-
-### Krok 1: Dodawanie wymaganych bibliotek
-
-Podobnie jak w przypadku obiektów OLE, zacznij od zaimportowania niezbędnych modułów:
-
-```python
-import aspose.words as aw
-```
-
-### Krok 2: Tworzenie dokumentu Word
-
-Utwórz nowy dokument Word:
-
-```python
-doc = aw.Document()
-```
-
-### Krok 3: Wstawianie kontrolki ActiveX
-
-Załóżmy, że chcesz osadzić odtwarzacz multimedialny. Oto jak możesz to zrobić:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Zwiększanie interaktywności i funkcjonalności

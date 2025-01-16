@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <özet>
-/// Bir sayfa aralığının belgesini alır.
+//Bir sayfa aralığının belgesini alır.
 /// </özet>
-//<param name="başlangıçIndex">
+/// <param name="başlangıçIndex">
 /// Başlangıç sayfasının 1 tabanlı indeksi.
 /// </param>
 /// <param name="endIndex">

@@ -65,7 +65,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-Considérez cela comme une recherche dans une foule pour trouver vos amis. Ici, nous recherchons des paragraphes sous forme d'entrées TOC.
+Considérez cela comme une recherche dans une foule pour trouver vos amis. Ici, nous recherchons des paragraphes stylisés comme des entrées de table des matières.
 
 ## Étape 3 : modifier les taquets de tabulation
 

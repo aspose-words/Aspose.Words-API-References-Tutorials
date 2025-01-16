@@ -49,7 +49,7 @@ PDF, XPS 또는 이미지와 같은 다른 형식으로 변환해야 할 때 문
 
 ```java
 // 문서를 PDF로 렌더링합니다
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  교체할 수 있습니다`SaveFormat.PDF` 원하는 렌더링 형식으로.

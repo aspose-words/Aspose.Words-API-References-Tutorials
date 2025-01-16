@@ -105,4 +105,4 @@ Ano, můžete použít Aspose.Words k přidání anotací nebo vodoznaků do va�
 
 ### Jaké další formáty obrázků podporuje Aspose.Words pro .NET?
 
- Aspose.Words for .NET podporuje širokou škálu obrazových formátů, včetně PNG, JPEG, BMP a GIF. Požadovaný formát můžete zadat v`ImageSaveOptions`.
+ Aspose.Words for .NET podporuje širokou škálu obrazových formátů, včetně PNG, JPEG, BMP a GIF. Můžete zadat požadovaný formát v`ImageSaveOptions`.

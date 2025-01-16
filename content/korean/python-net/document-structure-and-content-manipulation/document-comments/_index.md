@@ -66,19 +66,17 @@ comment = doc.comments[0]
 comment.text = "Updated insight: " + comment.text
 
 # Resolve a comment
-comment.resolved = True
-```
+comments = doc.get_child_nodes(aw.NodeType.COMMENT, True)
 
-## 답변 및 대화 처리
+parent_comment = comments[0].as_comment()
+for child in parent_comment.replies:
+	child_comment = child.as_comment()
+	# Get comment parent and status.
+	print(child_comment.ancestor.id)
+	print(child_comment.done)
 
-댓글은 대화의 일부가 될 수 있으며, 답글은 토론에 깊이를 더합니다. Aspose.Words for Python을 사용하면 댓글 답글을 관리할 수 있습니다.
-
-```python
-# Add a reply to a comment
-reply = aw.Comment(doc, "Alice", "I agree with John.")
-reply.parent_comment = comment
-reply.date_time = aw.DateTime.now()
-comment.replies.add(reply)
+	# And update comment Done mark.
+	child_comment.done = True
 ```
 
 ## 주석 서식 및 스타일 지정

@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Kami sedang membuat sebuah`FindReplaceOptions`objek dan mengatur perataan paragraf ke tengah.
+ Kami sedang membuat sebuah`FindReplaceOptions` objek dan mengatur perataan paragraf ke tengah.
 
 ## Langkah 4: Ganti Teks dengan Karakter Meta
 
 Langkah ini adalah tempat keajaiban terjadi! Kita akan mengganti kata "bagian" diikuti dengan pemisah paragraf, dan menambahkan garis bawah.
 
 ```csharp
-// Gandakan setiap jeda paragraf setelah kata "bagian", tambahkan semacam garis bawah dan buat agar berada di tengah.
+//Gandakan setiap jeda paragraf setelah kata "bagian", tambahkan semacam garis bawah dan buat agar berada di tengah.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

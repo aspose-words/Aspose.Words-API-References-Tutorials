@@ -10,7 +10,7 @@ url: /zh-hant/net/programming-with-shapes/detect-smart-art-shape/
 
 ## 介紹
 
-嘿！您是否曾經需要以程式設計方式在 Word 文件中使用 SmartArt？無論您是要自動化報告、建立動態文檔，還是只是深入進行文檔處理，Aspose.Words for .NET 都能滿足您的需求。在本教學中，我們將探討如何使用 Aspose.Words for .NET 偵測 Word 文件中的 SmartArt 形狀。我們將在詳細且易於遵循的指南中分解每個步驟。閱讀本文後，您將能夠輕鬆識別任何 Word 文件中的 SmartArt 形狀！
+嘿！您是否曾經需要以程式設計方式在 Word 文件中使用 SmartArt？無論您是要自動化報告、建立動態文檔，還是只是深入文檔處理，Aspose.Words for .NET 都能滿足您的需求。在本教學中，我們將探討如何使用 Aspose.Words for .NET 偵測 Word 文件中的 SmartArt 形狀。我們將在詳細且易於遵循的指南中分解每個步驟。閱讀本文後，您將能夠輕鬆識別任何 Word 文件中的 SmartArt 形狀！
 
 ## 先決條件
 

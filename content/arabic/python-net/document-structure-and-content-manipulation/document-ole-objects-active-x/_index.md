@@ -19,11 +19,7 @@ url: /ar/python-net/document-structure-and-content-manipulation/document-ole-obj
 - تم تثبيت مكتبة Aspose.Words لـ Python
 - فهم أساسي لبنية مستند Word
 
-## تضمين كائنات OLE
-
-تتيح لك كائنات OLE دمج الملفات الخارجية، مثل جداول البيانات أو العروض التقديمية، في مستندات Word بسلاسة. اتبع الخطوات التالية لتضمين كائن OLE:
-
-### الخطوة 1: إضافة المكتبات المطلوبة
+## الخطوة 1: إضافة المكتبات المطلوبة
 
 ابدأ باستيراد الوحدات النمطية اللازمة من مكتبة Aspose.Words وأي تبعيات أخرى:
 
@@ -31,7 +27,7 @@ url: /ar/python-net/document-structure-and-content-manipulation/document-ole-obj
 import aspose.words as aw
 ```
 
-### الخطوة 2: إنشاء مستند Word
+## الخطوة 2: إنشاء مستند Word
 
 إنشاء مستند Word جديد باستخدام Aspose.Words لـ Python:
 
@@ -39,42 +35,16 @@ import aspose.words as aw
 doc = aw.Document()
 ```
 
-### الخطوة 3: إدراج كائن OLE
+## الخطوة 3: إدراج كائن OLE
 
 الآن، يمكنك إدراج كائن OLE في مستندك. على سبيل المثال، لنقم بتضمين جدول بيانات Excel:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## تضمين عناصر التحكم ActiveX
+builder.insert_ole_object("http://www.aspose.com، "htmlfile"، صحيح، صحيح، لا شيء)
 
-توفر عناصر التحكم ActiveX التفاعلية لمستنداتك، مما يسمح للمستخدمين بالتفاعل مع المحتوى المضمّن. اتبع الخطوات التالية لتضمين عنصر تحكم ActiveX:
-
-### الخطوة 1: إضافة المكتبات المطلوبة
-
-تمامًا كما هو الحال مع كائنات OLE، ابدأ باستيراد الوحدات النمطية الضرورية:
-
-```python
-import aspose.words as aw
-```
-
-### الخطوة 2: إنشاء مستند Word
-
-إنشاء مستند Word جديد:
-
-```python
-doc = aw.Document()
-```
-
-### الخطوة 3: إدراج عنصر تحكم ActiveX
-
-لنفترض أنك تريد تضمين مشغل الوسائط المتعددة. إليك كيفية القيام بذلك:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## تعزيز التفاعل والوظائف

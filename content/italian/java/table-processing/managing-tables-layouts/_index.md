@@ -110,7 +110,7 @@ Sì, puoi unire le celle di una tabella utilizzando Aspose.Words, come illustrat
  Nessun problema! Puoi facilmente dividere le celle unite in precedenza impostando la loro proprietà di unione orizzontale su`NONE`.
 
 ### Come posso aggiungere un'interruzione di pagina prima di una tabella?
- Per inserire un'interruzione di pagina prima di una tabella, modificare il carattere`PageBreakBefore` proprietà come dimostrato.
+Per inserire un'interruzione di pagina prima di una tabella, modificare il carattere`PageBreakBefore` proprietà come dimostrato.
 
 ### Aspose.Words è compatibile con diversi formati di documenti?
 Assolutamente! Aspose.Words per Java supporta vari formati di documenti, rendendolo una scelta versatile per la gestione dei documenti.

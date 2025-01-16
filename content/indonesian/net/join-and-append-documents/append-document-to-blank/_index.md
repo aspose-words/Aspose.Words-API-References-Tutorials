@@ -31,7 +31,7 @@ using Aspose.Words;
 
 ## Langkah 1: Siapkan Proyek Anda
 
-Untuk memulai, Anda perlu menyiapkan lingkungan proyek Anda. Ini melibatkan pembuatan proyek baru di Visual Studio dan pemasangan pustaka Aspose.Words for .NET.
+Untuk memulai, Anda perlu menyiapkan lingkungan proyek. Ini melibatkan pembuatan proyek baru di Visual Studio dan pemasangan pustaka Aspose.Words for .NET.
 
 ### Membuat Proyek Baru
 
@@ -122,7 +122,7 @@ Ya, Anda dapat menambahkan beberapa dokumen dengan memanggil perintah`AppendDocu
 
 ### Apa yang terjadi jika dokumen sumber memiliki format yang berbeda?
 
-Itu`ImportFormatMode.KeepSourceFormatting` memastikan format dokumen sumber dipertahankan saat ditambahkan.
+ Itu`ImportFormatMode.KeepSourceFormatting` memastikan format dokumen sumber dipertahankan saat ditambahkan.
 
 ### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words?
 

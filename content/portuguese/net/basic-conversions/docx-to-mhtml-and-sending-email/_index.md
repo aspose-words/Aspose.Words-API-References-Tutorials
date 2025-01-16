@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Etapa 4: Envie o e-mail
 
-Por fim, envie o e-mail usando um cliente SMTP. Configure o cliente SMTP com os detalhes do seu servidor SMTP e use o`Send` método para enviar a mensagem.
+ Por fim, envie o e-mail usando um cliente SMTP. Configure o cliente SMTP com os detalhes do seu servidor SMTP e use o`Send` método para enviar a mensagem.
 
 ```csharp
 // Envie a mensagem usando Aspose.Email.
@@ -95,7 +95,7 @@ Sim, o Aspose.Words suporta vários formatos, e você pode converter documentos 
 Sim, Aspose.Words é compatível com .NET Core. Você pode usá-lo em aplicativos .NET Core também.
 
 ### Preciso de uma licença para Aspose.Words e Aspose.Email?
-Sim, ambas as bibliotecas exigem licenças. Você pode obter uma licença temporária do[Aspose página de compra](https://purchase.aspose.com/temporary-license/) para fins de avaliação.
+ Sim, ambas as bibliotecas exigem licenças. Você pode obter uma licença temporária do[Aspose página de compra](https://purchase.aspose.com/temporary-license/) para fins de avaliação.
 
 ### Onde posso encontrar mais documentação?
  Você pode encontrar documentação detalhada para Aspose.Words[aqui](https://reference.aspose.com/words/net/) e para Aspose.Email[aqui](https://reference.aspose.com/email/net/).

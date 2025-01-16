@@ -14,7 +14,7 @@ url: /el/java/document-conversion-and-export/using-document-shapes/
 
 ## Ξεκινώντας με τα σχήματα εγγράφων
 
-Πριν μεταβούμε στον κώδικα, ας ρυθμίσουμε το περιβάλλον μας. Βεβαιωθείτε ότι έχετε ενσωματώσει το Aspose.Words for Java στο έργο σας. Εάν δεν το έχετε κάνει ήδη, μπορείτε να το κατεβάσετε από τον ιστότοπο του Aspose[Κατεβάστε το Aspose.Words για Java](https://releases.aspose.com/words/java/)
+ Πριν μεταβούμε στον κώδικα, ας ρυθμίσουμε το περιβάλλον μας. Βεβαιωθείτε ότι έχετε ενσωματώσει το Aspose.Words for Java στο έργο σας. Εάν δεν το έχετε κάνει ήδη, μπορείτε να το κατεβάσετε από τον ιστότοπο του Aspose[Κατεβάστε το Aspose.Words για Java](https://releases.aspose.com/words/java/)
 
 ## Προσθήκη σχημάτων σε έγγραφα
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

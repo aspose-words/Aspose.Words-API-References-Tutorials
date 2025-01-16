@@ -45,7 +45,7 @@ OfficeMath officeMath = (OfficeMath) doc.getChild(NodeType.OFFICE_MATH, 0, true)
 
 ### Définir le type d'affichage
 
- Vous pouvez contrôler la façon dont l'équation est affichée dans le document. Utilisez l'`setDisplayType` méthode permettant de spécifier si elle doit être affichée en ligne avec le texte ou sur sa ligne :
+ Vous pouvez contrôler la façon dont l'équation est affichée dans le document. Utilisez l'`setDisplayType` méthode pour spécifier si elle doit être affichée en ligne avec le texte ou sur sa ligne :
 
 ```java
 officeMath.setDisplayType(OfficeMathDisplayType.DISPLAY);
@@ -90,7 +90,7 @@ Les objets Office Math dans Aspose.Words pour Java vous permettent de représent
 
 ### Puis-je aligner différemment les équations Office Math dans mon document ?
 
- Oui, vous pouvez contrôler l'alignement des équations Office Math. Utilisez le`setJustification` méthode pour spécifier les options d'alignement telles que gauche, droite ou centre.
+ Oui, vous pouvez contrôler l'alignement des équations Office Math. Utilisez le`setJustification`méthode pour spécifier les options d'alignement telles que gauche, droite ou centre.
 
 ### Aspose.Words pour Java est-il adapté à la gestion de documents mathématiques complexes ?
 

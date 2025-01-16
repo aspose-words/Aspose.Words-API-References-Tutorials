@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-IL`InsertChart` Il metodo inserisce nel documento un grafico del tipo specificato (Colonna in questo caso) e delle dimensioni specificate.
+ IL`InsertChart` Il metodo inserisce nel documento un grafico del tipo specificato (Colonna in questo caso) e delle dimensioni specificate.
 
 ## Passaggio 3: personalizzazione della serie di grafici
 
@@ -86,7 +86,7 @@ Infine, formattiamo i numeri sull'asse Y per renderli più leggibili. È come da
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-IL`FormatCode` proprietà consente di impostare un formato personalizzato per i numeri sull'asse. In questo esempio,`#,##0`assicura che i numeri grandi vengano visualizzati con virgole per le migliaia.
+ IL`FormatCode` proprietà consente di impostare un formato personalizzato per i numeri sull'asse. In questo esempio,`#,##0`assicura che i numeri grandi vengano visualizzati con virgole per le migliaia.
 
 ## Passaggio 5: salvataggio del documento
 

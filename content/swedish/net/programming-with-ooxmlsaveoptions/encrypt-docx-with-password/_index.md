@@ -54,7 +54,7 @@ Därefter måste vi ställa in alternativen för att spara dokumentet. Det är h
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-De`OoxmlSaveOptions`klass tillåter oss att specificera olika alternativ för att spara DOCX-filer. Här ställer vi in`Password`egendom till`"password"` . Du kan byta ut`"password"` med valfritt lösenord. Detta lösenord kommer att krävas för att öppna den krypterade DOCX-filen.
+ De`OoxmlSaveOptions`klass tillåter oss att specificera olika alternativ för att spara DOCX-filer. Här ställer vi in`Password`egendom till`"password"` . Du kan byta ut`"password"` med valfritt lösenord. Detta lösenord kommer att krävas för att öppna den krypterade DOCX-filen.
 
 ## Steg 3: Spara det krypterade dokumentet
 
@@ -65,7 +65,7 @@ Slutligen kommer vi att spara dokumentet med hjälp av sparaalternativen som kon
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-De`Save` metod för`Document` klass används för att spara dokumentet. Vi tillhandahåller sökvägen och filnamnet för det krypterade dokumentet, tillsammans med`saveOptions` vi konfigurerade tidigare. Dokumentet sparas nu som en krypterad DOCX-fil.
+ De`Save` metod för`Document` klass används för att spara dokumentet. Vi tillhandahåller sökvägen och filnamnet för det krypterade dokumentet, tillsammans med`saveOptions` vi konfigurerade tidigare. Dokumentet sparas nu som en krypterad DOCX-fil.
 
 ## Slutsats
 

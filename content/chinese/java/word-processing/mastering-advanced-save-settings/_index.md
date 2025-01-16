@@ -7,7 +7,8 @@ type: docs
 weight: 13
 url: /zh/java/word-processing/mastering-advanced-save-settings/
 ---
-您准备好将您的文档处理技能提升到一个新的水平了吗？在本综合指南中，我们将深入研究如何使用 Aspose.Words for Java 掌握文档的高级保存设置。无论您是经验丰富的开发人员还是刚刚入门，我们都会带您了解使用 Aspose.Words for Java 进行文档操作的复杂性。
+
+您准备好将您的文档处理技能提升到新的水平了吗？在本综合指南中，我们将深入研究如何使用 Aspose.Words for Java 掌握文档的高级保存设置。无论您是经验丰富的开发人员还是刚刚入门，我们都会带您了解使用 Aspose.Words for Java 进行文档操作的复杂性。
 
 ## 介绍
 
@@ -25,13 +26,13 @@ Aspose.Words for Java 是一个功能强大的库，允许开发人员以编程�
 ```java
 //将文档格式设置为 DOCX
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
 //将页面方向设置为横向
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## 控制页边距
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 英寸
 pageSetup.setRightMargin(72.0); // 英寸
 pageSetup.setTopMargin(36.0); //0.5 英寸
 pageSetup.setBottomMargin(36.0); //0.5 英寸
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## 管理页眉和页脚
@@ -56,11 +57,11 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 ```java
 //在第一页添加页眉
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## 嵌入字体以实现跨平台查看
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## 保护您的文件
@@ -85,7 +86,7 @@ doc.save("embedded_fonts.docx", SaveFormat.DOCX);
 //使用密码保护文档
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## 自定义水印
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## 优化文档大小
@@ -111,7 +112,7 @@ doc.save("watermarked_document.docx", SaveFormat.DOCX);
 //优化文档大小
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## 导出为不同格式
@@ -121,7 +122,7 @@ doc.save("optimized_document.docx", SaveFormat.DOCX);
 ```java
 //导出为 PDF
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## 自动生成文档
@@ -133,7 +134,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## 使用文档元数据
@@ -143,9 +144,8 @@ doc.save("automated_document.docx", SaveFormat.DOCX);
 ```java
 //访问和修改文档元数据
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## 处理文档版本
@@ -153,18 +153,22 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 文档版本控制在协作环境中至关重要。了解如何有效地管理文档的不同版本。
 
 ```java
-//比较文档版本
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+//将文档与修订版本进行比较将会引发异常。
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## 高级文档比较
+
+使用 Aspose.Words for Java 提供的先进技术精确比较文档。
 
 ```java
 //高级文档比较
@@ -217,7 +221,7 @@ Aspose.Words for Java 支持将文档导出为各种格式，包括 PDF、HTML�
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Aspose.Words for Java 适合批量生成文档吗？
@@ -228,7 +232,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### 如何比较两个 Word 文档的差异？

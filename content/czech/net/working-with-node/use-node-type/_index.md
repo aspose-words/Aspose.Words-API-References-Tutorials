@@ -29,7 +29,7 @@ using Aspose.Words;
 using System;
 ```
 
- Pojďme si rozebrat proces použití`NodeType` vlastnost v Aspose.Words pro .NET do jednoduchých, zvládnutelných kroků.
+ Pojďme si rozebrat proces používání`NodeType` vlastnost v Aspose.Words pro .NET do jednoduchých, zvládnutelných kroků.
 
 ## Krok 1: Vytvořte nový dokument
 
@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Krok 2: Přístup k vlastnosti NodeType
 
-The`NodeType` vlastnost je základní funkcí v Aspose.Words. Umožňuje vám identifikovat typ uzlu, se kterým máte co do činění. Pro přístup k této vlastnosti jednoduše použijte následující kód:
+ The`NodeType` vlastnost je základní funkcí v Aspose.Words. Umožňuje vám identifikovat typ uzlu, se kterým máte co do činění. Pro přístup k této vlastnosti jednoduše použijte následující kód:
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -63,7 +63,7 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 ###  Co je`NodeType` property in Aspose.Words?
 
-The`NodeType` vlastnost identifikuje typ uzlu v dokumentu, jako je dokument, oddíl, odstavec, běh nebo tabulka.
+ The`NodeType` vlastnost identifikuje typ uzlu v dokumentu, jako je dokument, oddíl, odstavec, běh nebo tabulka.
 
 ###  Jak zkontroluji`NodeType` of a node?
 

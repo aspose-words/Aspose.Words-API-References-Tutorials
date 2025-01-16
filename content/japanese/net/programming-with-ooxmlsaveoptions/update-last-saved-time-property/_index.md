@@ -52,7 +52,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## ステップ3: 保存オプションを設定する
 
-さて、インスタンスを作成します`OoxmlSaveOptions`クラス。このクラスでは、ドキュメントをOffice Open XML (OOXML)形式で保存するためのオプションを指定できます。ここでは、`UpdateLastSavedTimeProperty`に`true`.
+さて、インスタンスを作成します`OoxmlSaveOptions`クラス。このクラスでは、Office Open XML (OOXML) 形式でドキュメントを保存するためのオプションを指定できます。ここでは、`UpdateLastSavedTimeProperty`に`true`.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
@@ -61,7 +61,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
 };
 ```
 
-これにより、Aspose.Words はドキュメントの最終保存時刻プロパティを更新します。
+これは、Aspose.Words にドキュメントの最終保存時刻プロパティを更新するように指示します。
 
 ## ステップ4: 更新したドキュメントを保存する
 

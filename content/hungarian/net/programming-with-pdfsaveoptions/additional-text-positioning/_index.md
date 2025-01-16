@@ -54,7 +54,7 @@ A projekt beállítása után a következő lépés a PDF-be konvertálni kívá
 
 ## 3. lépés: Konfigurálja a PDF mentési beállításokat
 
- A varázslat itt történik! Mi konfiguráljuk a`PdfSaveOptions` további szövegpozícionálás engedélyezésére.
+ A varázslat itt történik! Mi konfiguráljuk a`PdfSaveOptions` további szövegpozícionálás engedélyezéséhez.
 
 1.  PdfSaveOptions objektum létrehozása: Példányosítsa a`PdfSaveOptions` osztály.
     ```csharp

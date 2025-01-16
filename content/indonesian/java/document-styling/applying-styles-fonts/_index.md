@@ -16,7 +16,7 @@ Aspose.Words untuk Java adalah API berbasis Java yang memungkinkan pengembang un
 ## Menerapkan Gaya dan Font: Dasar-Dasar
 
 ### Memulai
- Untuk memulai, Anda perlu menyiapkan lingkungan pengembangan Java dan mengunduh pustaka Aspose.Words untuk Java. Anda dapat menemukan tautan unduhannya[Di Sini](https://releases.aspose.com/words/java/)Pastikan untuk menyertakan pustaka tersebut dalam proyek Anda.
+Untuk memulai, Anda perlu menyiapkan lingkungan pengembangan Java dan mengunduh pustaka Aspose.Words untuk Java. Anda dapat menemukan tautan unduhannya[Di Sini](https://releases.aspose.com/words/java/)Pastikan untuk menyertakan pustaka tersebut dalam proyek Anda.
 
 ### Membuat Dokumen
 Mari kita mulai dengan membuat dokumen baru menggunakan Aspose.Words untuk Java:
@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Gabungkan beberapa gaya untuk pemformatan dokumen yang rumit:
 
 ```java
-//Gabungkan gaya untuk tampilan yang unik
+// Gabungkan gaya untuk tampilan yang unik
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Aspose.Words untuk Java menyediakan kemampuan pemformatan bersyarat yang canggih
 Tentu saja! Aspose.Words untuk Java mendukung berbagai jenis font dan karakter dari berbagai bahasa dan skrip.
 
 ### Bagaimana cara menambahkan hyperlink ke teks dengan gaya tertentu?
- Untuk menambahkan hyperlink ke teks, gunakan`FieldHyperlink`kelas yang dikombinasikan dengan gaya untuk mencapai format yang diinginkan.
+ Untuk menambahkan hyperlink ke teks, gunakan`FieldHyperlink` kelas yang dikombinasikan dengan gaya untuk mencapai format yang diinginkan.
 
 ### Apakah ada batasan ukuran atau kompleksitas dokumen?
 Aspose.Words untuk Java dapat menangani dokumen dengan berbagai ukuran dan kompleksitas. Namun, dokumen yang sangat besar mungkin memerlukan sumber daya memori tambahan.

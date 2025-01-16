@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-Le`MetafileRenderingOptions` La classe fournit des options sur la manière dont les métafichiers (comme WMF) sont rendus. En définissant`ScaleWmfFontsToMetafileSize` à`false`, vous demandez à Aspose.Words de ne pas mettre à l'échelle les polices en fonction de la taille du métafichier, ce qui peut aider à réduire la taille globale du PDF.
+ Le`MetafileRenderingOptions` La classe fournit des options sur la manière dont les métafichiers (comme WMF) sont rendus. En définissant`ScaleWmfFontsToMetafileSize` à`false`, vous demandez à Aspose.Words de ne pas mettre à l'échelle les polices en fonction de la taille du métafichier, ce qui peut aider à réduire la taille globale du PDF.
 
 ## Étape 3 : définir les options d’enregistrement du PDF
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-Le`PdfSaveOptions` La classe vous permet de spécifier différents paramètres pour enregistrer le document au format PDF. En attribuant la classe précédemment configurée`MetafileRenderingOptions` au`MetafileRenderingOptions` propriété de`PdfSaveOptions`, vous vous assurez que le document est enregistré selon les paramètres de rendu de métafichier souhaités.
+ Le`PdfSaveOptions` La classe vous permet de spécifier différents paramètres pour enregistrer le document au format PDF. En attribuant la classe précédemment configurée`MetafileRenderingOptions` au`MetafileRenderingOptions` propriété de`PdfSaveOptions`, vous vous assurez que le document est enregistré selon les paramètres de rendu de métafichier souhaités.
 
 ## Étape 4 : Enregistrer le document au format PDF
 

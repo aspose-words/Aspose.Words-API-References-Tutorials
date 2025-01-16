@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Porozumění MoveToBookmark
 
-The`MoveToBookmark`umožňuje přejít na konkrétní záložku v dokumentu. Podpis metody je:
+ The`MoveToBookmark`umožňuje přejít na konkrétní záložku v dokumentu. Podpis metody je:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

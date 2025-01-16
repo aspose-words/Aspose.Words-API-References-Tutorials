@@ -78,7 +78,7 @@ chart.Series.Add("Aspose Series 1",
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // वाई अक्ष (सैकड़ों) की प्रदर्शन इकाइयों में मापा जाता है।
+xAxis.CrossesAt = 3; //वाई अक्ष (सैकड़ों) की प्रदर्शन इकाइयों में मापा जाता है।
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

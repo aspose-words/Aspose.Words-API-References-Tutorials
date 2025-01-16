@@ -38,23 +38,11 @@ Voici un exemple d'extrait de code pour vous aider à démarrer :
 // Importer les packages requis
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Initialiser un nouveau document
-        Document doc = new Document();
-
-        // Créer une liste
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Ajouter des éléments de liste
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Enregistrer le document
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Modification d'une liste de documents
@@ -69,21 +57,18 @@ Une fois que vous avez créé une liste de documents, vous devrez peut-être la 
 Voici un extrait de code pour modifier une liste de documents :
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Charger un document existant
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Accéder à la liste
-        List list = doc.getLists().get(0);
-
-        // Ajouter un nouvel élément
-        list.getListItems().add("New Item");
-
-        // Enregistrer le document modifié
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Vérifiez si le paragraphe fait partie d'une liste.
+    if (paragraph.isListItem()) {
+        // Mettre à jour le dernier paragraphe de la liste.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Extraction d'informations à partir d'une liste de documents
@@ -97,23 +82,21 @@ Dans certains cas, vous devrez peut-être extraire des informations d'une liste 
 Voici un extrait de code permettant d’extraire des informations d’une liste de documents :
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Charger le document
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Accéder à la liste
-        List list = doc.getLists().get(0);
-
-        // Parcourez les éléments de la liste et imprimez-les
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Questions fréquemment posées (FAQ)
+## Conclusion
+
+Dans ce guide complet, nous avons exploré le monde du travail avec les listes de documents à l'aide d'Aspose.Words pour Java. Vous avez appris à créer, modifier et extraire des informations à partir de listes de documents, le tout avec la puissance et la flexibilité d'Aspose.Words pour Java. Commencez dès aujourd'hui à implémenter ces techniques dans vos projets Java et rationalisez vos tâches d'automatisation de documents.
+
+
+## FAQ
 
 ### Comment ajouter des puces à une liste de documents ?
  Pour ajouter des puces à une liste de documents, utilisez le modèle de liste approprié lors de la création de la liste. Par exemple, utilisez`ListTemplate.BULLET_DEFAULT` au lieu de`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ Pour convertir une liste de documents en PDF, il suffit de charger le document �
 
 ### Aspose.Words pour Java prend-il en charge le travail avec des tableaux dans les documents ?
 Oui, Aspose.Words pour Java fournit une prise en charge étendue du travail avec des tableaux, vous permettant de créer, modifier et extraire des données tabulaires sans effort.
-
-## Conclusion
-
-Dans ce guide complet, nous avons exploré le monde du travail avec les listes de documents à l'aide d'Aspose.Words pour Java. Vous avez appris à créer, modifier et extraire des informations à partir de listes de documents, le tout avec la puissance et la flexibilité d'Aspose.Words pour Java. Commencez dès aujourd'hui à implémenter ces techniques dans vos projets Java et rationalisez vos tâches d'automatisation de documents.

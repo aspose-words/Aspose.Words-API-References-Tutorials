@@ -14,7 +14,7 @@ Styly a témata jsou zásadní pro zachování konzistence a estetiky napříč 
 
 ## Nastavení prostředí
 
- Než se vrhneme na styling, nastavíme naše vývojové prostředí. Ujistěte se, že máte nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/python/).
+Než se vrhneme na styling, nastavíme naše vývojové prostředí. Ujistěte se, že máte nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/python/).
 
 ## Načítání a ukládání dokumentů
 
@@ -51,30 +51,8 @@ Styly také ovlivňují formátování odstavce. Upravte zarovnání, rozestupy 
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## Přizpůsobení stylů nadpisů
-
-Nadpisy dávají dokumentům strukturu. Přizpůsobte styly nadpisů pro lepší hierarchii a čitelnost.
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## Použití motivů pro jednotný vzhled
-
-Motivy nabízejí konzistentní vzhled. Aplikujte na svůj dokument motiv pro profesionální vzhled.
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## Úprava barev a písem motivu
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 Přizpůsobte motivy svým potřebám úpravou barev motivů a písem.
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## Vytváření vlastních stylů
-
-Vytvářejte vlastní styly pro jedinečné prvky dokumentu, abyste zajistili, že identita vaší značky bude zářit.
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## Styl správy založený na částech dokumentu
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 Použijte styly odlišně na záhlaví, zápatí a obsah těla pro uhlazený vzhled.
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## Práce se styly pro celý dokument
-
-Jednoduše použijte styl na celý dokument.
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## Vymazání formátování a stylů
-
-Snadno odeberte styly a formátování a začněte znovu.
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## Praktické příklady a případy použití
-
-Pojďme prozkoumat praktické scénáře, kde mohou styly a motivy transformovat dokumenty.
-
-1. Vytváření značkových přehledů
-2. Navrhování úžasných životopisů
-3. Formátování akademických dokumentů
-
-## Tipy pro efektivní styling
-
-- Udržujte styly konzistentní
-- Používejte motivy pro rychlé změny
-- Experimentujte s různými fonty a barvami
 
 ## Závěr
 
@@ -167,4 +109,4 @@ Motivy poskytují soudržný vzhled a dojem tím, že seskupují styly dohromady
 
 ### Je možné z mého dokumentu odstranit formátování?
 
- Ano, formátování a styly můžete snadno odstranit pomocí`clear_formatting()` metoda poskytovaná Aspose.Words pro Python.
+Ano, formátování a styly můžete snadno odstranit pomocí`clear_formatting()` metoda poskytovaná Aspose.Words pro Python.

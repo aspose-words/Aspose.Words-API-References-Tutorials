@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-// Czwarta lista, z odstępem pomiędzy numerem listy a zawartością elementu listy,
+//Czwarta lista, z odstępem pomiędzy numerem listy a zawartością elementu listy,
 // zostanie wykryty jako lista tylko wtedy, gdy „DetectNumberingWithWhitespaces” w obiekcie LoadOptions zostanie ustawiony na true,
 // aby uniknąć sytuacji, w której akapity zaczynające się od liczb zostaną omyłkowo uznane za listy.
 TxtLoadOptions loadOptions = new TxtLoadOptions();
@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- tym przykładzie ładujemy dokument tekstowy i przycinamy spacje początkowe i końcowe za pomocą`TxtLeadingSpacesOptions.TRIM` I`TxtTrailingSpacesOptions.TRIM`.
+ W tym przykładzie ładujemy dokument tekstowy i przycinamy spacje początkowe i końcowe za pomocą`TxtLeadingSpacesOptions.TRIM` I`TxtTrailingSpacesOptions.TRIM`.
 
 ## Krok 3: Kontrola kierunku tekstu
 
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-Ten kod ustawia kierunek dokumentu na automatyczne wykrywanie (`DocumentDirection.AUTO`) i ładuje dokument tekstowy z tekstem hebrajskim. Możesz dostosować kierunek dokumentu według potrzeb.
+Ten kod ustawia kierunek dokumentu na automatyczne wykrywanie (`DocumentDirection.AUTO`i ładuje dokument tekstowy z tekstem hebrajskim. Możesz dostosować kierunek dokumentu według potrzeb.
 
 ## Kompletny kod źródłowy do ładowania plików tekstowych za pomocą Aspose.Words dla Java
 
@@ -179,7 +179,7 @@ Aby rozpocząć korzystanie z Aspose.Words dla Java, wykonaj następujące kroki
 
 ### Jak radzić sobie ze spacjami w załadowanych dokumentach tekstowych?
 
- Możesz kontrolować sposób obsługi spacji początkowych i końcowych w załadowanych dokumentach tekstowych za pomocą`TxtLoadOptions` Opcje takie jak`TxtLeadingSpacesOptions` I`TxtTrailingSpacesOptions` pozwalają przycinać lub zachowywać spacje w razie potrzeby. Przykład można znaleźć w sekcji „Opcje obsługi spacji” w tym przewodniku.
+ Możesz kontrolować sposób obsługi spacji początkowych i końcowych w załadowanych dokumentach tekstowych za pomocą`TxtLoadOptions` Opcje takie jak`TxtLeadingSpacesOptions` I`TxtTrailingSpacesOptions`pozwalają przycinać lub zachowywać spacje w razie potrzeby. Przykład można znaleźć w sekcji „Opcje obsługi spacji” w tym przewodniku.
 
 ### Jakie znaczenie ma kierunek tekstu w Aspose.Words dla Java?
 

@@ -47,7 +47,7 @@ Ouvrez votre environnement de développement (comme Visual Studio) et créez un 
 
 ### Créer un nouveau document
 
- Dans votre fichier de programme principal, commencez par créer une nouvelle instance du`Document`classe. Ce sera notre toile vierge.
+ Dans votre fichier de programme principal, commencez par créer une nouvelle instance du`Document` classe. Ce sera notre toile vierge.
 
 ```csharp
 Document doc = new Document();
@@ -113,7 +113,7 @@ Aspose.Words pour .NET est une bibliothèque puissante qui permet aux développe
 
 ### Comment démarrer avec Aspose.Words pour .NET ?
 
- Vous pouvez commencer par télécharger la bibliothèque à partir du[site web](https://releases.aspose.com/words/net/) et l'ajouter à votre projet .NET.
+Vous pouvez commencer par télécharger la bibliothèque à partir du[site web](https://releases.aspose.com/words/net/) et l'ajouter à votre projet .NET.
 
 ### Puis-je utiliser Aspose.Words gratuitement ?
 
@@ -121,8 +121,8 @@ Aspose.Words pour .NET est une bibliothèque puissante qui permet aux développe
 
 ### Où puis-je trouver plus de tutoriels sur Aspose.Words pour .NET ?
 
-Le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) est un excellent endroit pour trouver des tutoriels et des exemples détaillés.
+ Le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) est un excellent endroit pour trouver des tutoriels et des exemples détaillés.
 
 ### Comment puis-je obtenir de l'aide si je rencontre des problèmes ?
 
-Vous pouvez obtenir de l'aide en visitant le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8).
+ Vous pouvez obtenir de l'aide en visitant le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8).

@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### A MoveToBookmark megértése
 
-A`MoveToBookmark`módszer lehetővé teszi, hogy egy adott könyvjelzőhöz navigáljon a dokumentumban. A metódus aláírása a következő:
+ A`MoveToBookmark`módszer lehetővé teszi, hogy egy adott könyvjelzőhöz navigáljon a dokumentumban. A metódus aláírása a következő:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

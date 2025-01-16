@@ -56,7 +56,7 @@ Converteer vervolgens het geladen Word-document naar PDF:
 
 ```java
 // Sla het document op als PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Stap 4: Converteren naar andere formaten
@@ -67,21 +67,21 @@ Naast PDF kunt u met Aspose.Words voor Java documenten converteren naar verschil
 
 ```java
 // Sla het document op als RTF
-doc.save("output.rtf", SaveFormat.RTF);
+doc.save("output.rtf");
 ```
 
 ### Converteren naar HTML
 
 ```java
 // Sla het document op als HTML
-doc.save("output.html", SaveFormat.HTML);
+doc.save("output.html");
 ```
 
 ### Converteren naar EPUB
 
 ```java
 // Sla het document op als EPUB
-doc.save("output.epub", SaveFormat.EPUB);
+doc.save("output.epub");
 ```
 
 ## Tips voor effectieve documentconversie

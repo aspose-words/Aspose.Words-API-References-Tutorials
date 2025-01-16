@@ -23,7 +23,7 @@ pip install aspose-words
 2. Importera modulen: Importera den nödvändiga modulen i ditt Python-skript.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Lägga till en enkel sidhuvud och sidfot
@@ -33,30 +33,18 @@ För att lägga till en grundläggande sidhuvud och sidfot till ditt Word-dokume
 1. Skapa ett dokument: Skapa ett nytt Word-dokument med Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Lägga till sidhuvud och sidfot: Använd`sections` dokumentets egendom för att komma åt avsnitt. Använd sedan`headers_footers` egenskap för att lägga till sidhuvuden och sidfötter.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Lägga till innehåll: Lägg till innehåll i sidhuvudet och sidfoten.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Spara dokumentet: Spara dokumentet med sidhuvud och sidfot.
+3. Spara dokumentet: Spara dokumentet med sidhuvud och sidfot.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Lägga till tabeller: Inkludera tabeller för tabellinformation.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Dynamiska fält: Använd dynamiska fält för automatisk infogning av data.
+2. Dynamiska fält: Använd dynamiska fält för automatisk infogning av data.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -110,8 +90,6 @@ header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
 
-3. Anpassa efter behov: Anpassa varje sidhuvud och sidfot enligt dina krav.
-
 ## Ta bort sidhuvuden och sidfötter
 
 Så här tar du bort sidhuvuden och sidfötter från ett Word-dokument:
@@ -130,7 +108,7 @@ section.page_setup.different_first_page_header_footer = False
 section.page_setup.odd_and_even_pages_header_footer = False
 ```
 
-## Vanliga frågor
+## FAQ's
 
 ### Hur kommer jag åt sidhuvud och sidfotsinnehåll?
 
@@ -150,4 +128,4 @@ Ja, du kan rensa innehållet i sidhuvuden och sidfötter för att effektivt ta b
 
 ### Var kan jag lära mig mer om Aspose.Words för Python?
 
-För mer detaljerad dokumentation och exempel, besök[Aspose.Words för Python API Referens](https://reference.aspose.com/words/python-net/).
+ För mer detaljerad dokumentation och exempel, besök[Aspose.Words för Python API Referens](https://reference.aspose.com/words/python-net/).

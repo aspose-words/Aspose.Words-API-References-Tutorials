@@ -87,7 +87,7 @@ Creare e personalizzare tabelle in Aspose.Words per .NET è semplice una volta c
 ### È possibile aggiungere immagini alle celle di una tabella?
  Assolutamente! Puoi inserire immagini nelle celle usando il`DocumentBuilder.InsertImage` metodo.
 
-### Posso assegnare stili diversi alle singole celle?
+### Posso applicare stili diversi alle singole celle?
  Sì, puoi applicare stili diversi alle singole celle accedendovi tramite`Cells` raccolta di una riga.
 
 ### Come faccio a rimuovere i bordi dalla tabella?

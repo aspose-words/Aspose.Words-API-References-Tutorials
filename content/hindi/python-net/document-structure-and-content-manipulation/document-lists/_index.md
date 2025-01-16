@@ -16,7 +16,7 @@ url: /hi/python-net/document-structure-and-content-manipulation/document-lists/
 
 ## वातावरण की स्थापना
 
-इससे पहले कि हम सूचियाँ बनाना और प्रबंधित करना शुरू करें, सुनिश्चित करें कि आपके पास Aspose.Words for Python लाइब्रेरी स्थापित है। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/python/) इसके अतिरिक्त, API दस्तावेज़ देखें[इस लिंक](https://reference.aspose.com/words/python-net/) विस्तृत जानकारी के लिए.
+ इससे पहले कि हम सूचियाँ बनाना और प्रबंधित करना शुरू करें, सुनिश्चित करें कि आपके पास Aspose.Words for Python लाइब्रेरी स्थापित है। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/python/) इसके अतिरिक्त, API दस्तावेज़ देखें[इस लिंक](https://reference.aspose.com/words/python-net/) विस्तृत जानकारी के लिए.
 
 ## बुलेटेड सूचियाँ बनाना
 
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]

@@ -112,7 +112,7 @@ E é isso! Você copiou com sucesso o texto marcado de um documento do Word para
 Sim, você pode iterar por vários favoritos e usar o mesmo método para copiar cada um.
 
 ### O que acontece se o marcador não for encontrado?
-O`Range.Bookmarks` propriedade retornará`null`, portanto, certifique-se de lidar com esse caso para evitar exceções.
+ O`Range.Bookmarks` propriedade retornará`null`, portanto, certifique-se de lidar com esse caso para evitar exceções.
 
 ### Posso preservar a formatação do marcador original?
  Absolutamente! Usando`ImportFormatMode.KeepSourceFormatting` garante que a formatação original seja preservada.

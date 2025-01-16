@@ -57,7 +57,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Étape 4 : Gérer le paramètre LinkToPrevious
 
-Pour empêcher les en-têtes et les pieds de page de continuer dans le document de destination (`dstDoc` ), assurez-vous que le`LinkToPrevious` le paramètre pour les en-têtes et les pieds de page est défini sur`false`.
+Pour éviter que les en-têtes et les pieds de page ne continuent dans le document de destination (`dstDoc` ), assurez-vous que le`LinkToPrevious` le paramètre pour les en-têtes et les pieds de page est défini sur`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);

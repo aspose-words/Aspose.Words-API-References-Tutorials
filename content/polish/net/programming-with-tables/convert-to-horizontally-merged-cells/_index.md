@@ -9,7 +9,7 @@ url: /pl/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
 ## Wstęp
 
-Podczas pracy z tabelami w dokumentach Worda często trzeba zarządzać scalaniem komórek, aby uzyskać czystszy i bardziej uporządkowany układ. Aspose.Words dla .NET zapewnia potężny sposób na konwersję komórek scalonych pionowo na komórki scalone poziomo, zapewniając, że tabela wygląda dokładnie tak, jak chcesz. W tym samouczku przeprowadzimy Cię przez ten proces krok po kroku.
+Podczas pracy z tabelami w dokumentach Worda często trzeba zarządzać scalaniem komórek, aby uzyskać czystszy i bardziej uporządkowany układ. Aspose.Words dla .NET zapewnia potężny sposób na konwersję komórek scalonych pionowo na komórki scalone poziomo, zapewniając, że tabela wygląda dokładnie tak, jak chcesz. W tym samouczku przeprowadzimy Cię przez proces krok po kroku.
 
 ## Wymagania wstępne
 
@@ -80,4 +80,4 @@ Aspose.Words for .NET jest przeznaczony głównie dla języków .NET, takich jak
 Tak, Aspose.Words dla .NET pozwala na zastosowanie licencji zarówno z pliku, jak i strumienia. Więcej informacji można znaleźć w[dokumentacja](https://reference.aspose.com/words/net/).
 
 ### Jakie inne funkcje oferuje Aspose.Words dla .NET?  
- Aspose.Words dla .NET oferuje szeroki zakres funkcji, w tym generowanie dokumentów, manipulację, konwersję i renderowanie. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Aspose.Words dla .NET oferuje szeroki zakres funkcji, w tym generowanie dokumentów, manipulację, konwersję i renderowanie. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.

@@ -19,7 +19,7 @@ Trước khi bắt đầu cuộc phiêu lưu xây dựng bàn ăn, hãy đảm b
 - .NET Framework (4.0 trở lên)
 - Aspose.Words cho thư viện .NET
 
- Nếu bạn chưa có Aspose.Words, bạn có thể dễ dàng[tải xuống ở đây](https://releases.aspose.com/words/net/) . Bạn cũng có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/) nếu bạn muốn thử sức. Đối với những người sẵn sàng dấn thân, bạn có thể[mua giấy phép](https://purchase.aspose.com/buy) hoặc nếu bạn cần thêm thời gian để đánh giá, hãy lấy một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
+ Nếu bạn chưa có Aspose.Words, bạn có thể dễ dàng[tải xuống ở đây](https://releases.aspose.com/words/net/) . Bạn cũng có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/) nếu bạn muốn thử sức. Đối với những người sẵn sàng dấn thân, bạn có thể[mua giấy phép](https://purchase.aspose.com/buy)hoặc nếu bạn cần thêm thời gian để đánh giá, hãy lấy một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
 
 ## Nhập không gian tên
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Bằng cách sử dụng`StartTable` chúng tôi đang nói với Aspose.Words rằng chúng tôi sắp tạo một bảng.`InsertCell` phương pháp thêm ô đầu tiên và`AutoFit` đảm bảo các cột của chúng ta có chiều rộng cố định.
+ Bằng cách sử dụng`StartTable` , chúng tôi đang nói với Aspose.Words rằng chúng tôi sắp tạo một bảng.`InsertCell` phương pháp thêm ô đầu tiên và`AutoFit` đảm bảo các cột của chúng ta có chiều rộng cố định.
 
 ## Bước 3: Định dạng hàng đầu tiên
 
@@ -125,7 +125,7 @@ Hãy nhớ rằng, thực hành sẽ tạo nên sự hoàn hảo. Vì vậy, đ�
 Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình. Nó cho phép bạn tạo, chỉnh sửa và thao tác các tài liệu mà không cần Microsoft Word.
 
 ### Làm thế nào để cài đặt Aspose.Words cho .NET?
- Bạn có thể[tải xuống Aspose.Words cho .NET tại đây](https://releases.aspose.com/words/net/). Làm theo hướng dẫn cài đặt được cung cấp để thiết lập nó trong môi trường phát triển của bạn.
+ Bạn có thể[tải xuống Aspose.Words cho .NET tại đây](https://releases.aspose.com/words/net/)Làm theo hướng dẫn cài đặt được cung cấp để thiết lập nó trong môi trường phát triển của bạn.
 
 ### Tôi có thể sử dụng Aspose.Words miễn phí không?
  Aspose.Words cung cấp một[dùng thử miễn phí](https://releases.aspose.com/) để bạn có thể kiểm tra các tính năng của nó. Để sử dụng lâu dài, bạn có thể mua giấy phép hoặc nhận[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).

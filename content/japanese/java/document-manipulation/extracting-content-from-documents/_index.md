@@ -103,7 +103,7 @@ Run startRun = para.getRuns().get(1);
 Run endRun = para.getRuns().get(4);
 ArrayList<Node> extractedNodes = ExtractContentHelper.extractContent(startRun, endRun, true);
 Node node = (Node) extractedNodes.get(0);
-System.out.println(node.toString(SaveFormat.TEXT));
+System.out.println(node.toString());
 ```
 
 ## DocumentVisitor を使用したコンテンツの抽出
@@ -140,11 +140,11 @@ for (Field field : doc.getRange().getFields()) {
         FieldHyperlink hyperlink = (FieldHyperlink) field;
         if (hyperlink.getSubAddress() != null && hyperlink.getSubAddress().startsWith("_Toc")) {
             Paragraph tocItem = (Paragraph) field.getStart().getAncestor(NodeType.PARAGRAPH);
-            System.out.println(tocItem.toString(SaveFormat.TEXT).trim());
+            System.out.println(tocItem.toString().trim());
             System.out.println("------------------");
             Bookmark bm = doc.getRange().getBookmarks().get(hyperlink.getSubAddress());
             Paragraph pointer = (Paragraph) bm.getBookmarkStart().getAncestor(NodeType.PARAGRAPH);
-            System.out.println(pointer.toString(SaveFormat.TEXT));
+            System.out.println(pointer.toString());
         }
     }
 }
@@ -158,7 +158,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertField("MERGEFIELD Field");
 System.out.println("GetText() Result: " + doc.getText());
-System.out.println("ToString() Result: " + doc.toString(SaveFormat.TEXT));
+System.out.println("ToString() Result: " + doc.toString());
 ```
 
 ## スタイルに基づいてコンテンツを抽出する

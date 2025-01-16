@@ -15,7 +15,7 @@ Zapletli jste se někdy do sítě vlastních vlastností dokumentu v souborech a
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 3. Základní znalost C#: Znalost programování v C# je užitečná.
 

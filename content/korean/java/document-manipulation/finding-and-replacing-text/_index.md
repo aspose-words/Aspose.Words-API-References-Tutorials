@@ -355,4 +355,4 @@ Aspose.Words for Java는 Word 문서 내에서 텍스트를 찾고 바꾸기 위
 
 ### UseLegacyOrder 옵션은 무엇을 위한 것인가요?
 
-그만큼`UseLegacyOrder` 옵션으로`FindReplaceOptions` 찾기 및 바꾸기 작업을 수행할 때 레거시 순서를 사용할 수 있습니다. 이는 레거시 순서 동작이 필요한 특정 시나리오에서 유용할 수 있습니다.
+ 그만큼`UseLegacyOrder` 옵션으로`FindReplaceOptions` 찾기 및 바꾸기 작업을 수행할 때 레거시 순서를 사용할 수 있습니다. 이는 레거시 순서 동작이 필요한 특정 시나리오에서 유용할 수 있습니다.

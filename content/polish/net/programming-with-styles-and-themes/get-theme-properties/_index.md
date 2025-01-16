@@ -64,7 +64,7 @@ Motywy w dokumentach Word często zawierają ustawienia dla różnych typów czc
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
-Ten`MajorFonts` Właściwość zapewnia dostęp do głównych ustawień czcionek. W tym przykładzie pobieramy konkretnie czcionkę łacińską używaną w motywie. Możesz użyć podobnego kodu, aby uzyskać inne główne czcionki, takie jak czcionki East Asian lub Complex Script.
+ Ten`MajorFonts` Właściwość zapewnia dostęp do głównych ustawień czcionek. W tym przykładzie pobieramy konkretnie czcionkę łacińską używaną w motywie. Możesz użyć podobnego kodu, aby uzyskać inne główne czcionki, takie jak czcionki East Asian lub Complex Script.
 
 ## Krok 4: Pobierz czcionki drugorzędne
 
@@ -84,7 +84,7 @@ Motywy definiują również różne kolory używane dla akcentów w dokumencie. 
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
-Ten`Colors` własność`Theme` Klasa ta umożliwia pobieranie różnych akcentów kolorystycznych zdefiniowanych w motywie, co pozwala na zarządzanie i stosowanie spójnych schematów kolorów w dokumentach.
+ Ten`Colors` własność`Theme` Klasa ta umożliwia pobieranie różnych akcentów kolorystycznych zdefiniowanych w motywie, co pozwala na zarządzanie i stosowanie spójnych schematów kolorów w dokumentach.
 
 ## Wniosek
 

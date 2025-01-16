@@ -78,7 +78,7 @@ Ja, Aspose.Words voor .NET ondersteunt verschillende afbeeldingsformaten zoals P
  Ja, Aspose.Words voor .NET vereist een licentie. U kunt er een kopen[hier](https://purchase.aspose.com/buy) of een tijdelijke licentie krijgen[hier](https://purchase.aspose.com/temporary-license/).
 
 ### Kan ik ondersteuning krijgen als ik problemen ondervind?
- Absoluut! Aspose biedt uitgebreide ondersteuning via hun forums. U kunt toegang krijgen tot ondersteuning[hier](https://forum.aspose.com/c/words/8).
+ Absoluut! Aspose biedt uitgebreide ondersteuning via hun forums. U kunt ondersteuning krijgen[hier](https://forum.aspose.com/c/words/8).
 
 ### Zijn er specifieke systeemvereisten voor Aspose.Words voor .NET?
 Aspose.Words voor .NET is compatibel met .NET Framework, .NET Core en .NET Standard. Zorg ervoor dat uw ontwikkelomgeving aan deze vereisten voldoet.

@@ -16,7 +16,7 @@ Heb je je ooit afgevraagd hoe je de perfecte verhoudingen van afbeeldingen en vo
 Voordat we in de code duiken, leggen we eerst uit wat je nodig hebt om te beginnen:
 
 - Aspose.Words voor .NET-bibliotheek: U moet Aspose.Words voor .NET geïnstalleerd hebben. Als u dat nog niet hebt gedaan, kunt u[download het hier](https://releases.aspose.com/words/net/).
-- Ontwikkelomgeving: Zorg ervoor dat u een .NET-ontwikkelomgeving hebt ingesteld. Visual Studio is een populaire keuze.
+- Development Environment: Zorg ervoor dat u een .NET development environment hebt ingesteld. Visual Studio is een populaire keuze.
 - Basiskennis van C#: enige kennis van C#-programmering is nuttig.
 
 ## Naamruimten importeren

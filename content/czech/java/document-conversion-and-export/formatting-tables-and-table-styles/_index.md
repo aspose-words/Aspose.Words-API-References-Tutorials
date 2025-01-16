@@ -12,15 +12,15 @@ url: /cs/java/document-conversion-and-export/formatting-tables-and-table-styles/
 
 Pokud jde o formátování dokumentů, tabulky hrají klíčovou roli při organizování a přehledné prezentaci dat. Pokud pracujete s Java a Aspose.Words, máte k dispozici výkonné nástroje pro vytváření a formátování tabulek ve vašich dokumentech. Ať už navrhujete jednoduchou tabulku nebo používáte pokročilé styly, Aspose.Words for Java nabízí řadu funkcí, které vám pomohou dosáhnout profesionálně vypadajících výsledků.
 
-této příručce vás provedeme procesem formátování tabulek a použití stylů tabulek pomocí Aspose.Words for Java. Dozvíte se, jak nastavit ohraničení tabulky, použít stínování buněk a používat styly tabulek ke zlepšení vzhledu vašich dokumentů. Na konci budete mít dovednosti vytvářet dobře formátované tabulky, díky nimž vaše data vyniknou.
+V této příručce vás provedeme procesem formátování tabulek a použití stylů tabulek pomocí Aspose.Words for Java. Dozvíte se, jak nastavit ohraničení tabulky, použít stínování buněk a používat styly tabulek ke zlepšení vzhledu vašich dokumentů. Na konci budete mít dovednosti vytvářet dobře formátované tabulky, díky nimž vaše data vyniknou.
 
 ## Předpoklady
 
-Než začneme, je třeba mít připraveno několik věcí:
+Než začneme, je potřeba mít připraveno několik věcí:
 
 1. Java Development Kit (JDK): Ujistěte se, že máte nainstalovaný JDK 8 nebo novější. Aspose.Words for Java vyžaduje ke správnému fungování kompatibilní JDK.
 2. Integrované vývojové prostředí (IDE): IDE, jako je IntelliJ IDEA nebo Eclipse, vám pomůže spravovat vaše projekty Java a zefektivnit váš vývojový proces.
-3.  Aspose.Words for Java Library: Stáhněte si nejnovější verzi Aspose.Words for Java[zde](https://releases.aspose.com/words/java/) a zahrnout jej do svého projektu.
+3.  Aspose.Words for Java Library: Stáhněte si nejnovější verzi Aspose.Words for Java[zde](https://releases.aspose.com/words/java/) a zahrnout ji do svého projektu.
 4. Ukázkový kód: Budeme používat několik ukázkových úryvků kódu, takže se ujistěte, že máte základní znalosti o programování Java a o tom, jak integrovat knihovny do vašeho projektu.
 
 ## Importujte balíčky
@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Vytvořte větší ohraničení pro první buňku tohoto řádku.
+// Vytvořte větší ohraničení pro první buňku tohoto řádku.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -161,7 +161,7 @@ V tomto příkladu:
 
 ## Závěr
 
-A tady to máte! Úspěšně jste formátovali tabulky a aplikovali styly pomocí Aspose.Words for Java. Pomocí těchto technik můžete vytvořit stoly, které jsou nejen funkční, ale také vizuálně přitažlivé. Efektivní formátování tabulek může výrazně zlepšit čitelnost a profesionální vzhled vašich dokumentů.
+tady to máte! Úspěšně jste formátovali tabulky a aplikovali styly pomocí Aspose.Words for Java. Pomocí těchto technik můžete vytvořit stoly, které jsou nejen funkční, ale také vizuálně přitažlivé. Efektivní formátování tabulek může výrazně zlepšit čitelnost a profesionální vzhled vašich dokumentů.
 
 Aspose.Words for Java je robustní nástroj, který nabízí rozsáhlé funkce pro manipulaci s dokumenty. Zvládnutím formátování tabulek a stylů jste o krok blíže k využití plného výkonu této knihovny.
 
@@ -169,7 +169,7 @@ Aspose.Words for Java je robustní nástroj, který nabízí rozsáhlé funkce p
 
 ### 1. Mohu použít vlastní styly tabulek, které nejsou součástí výchozích možností?
 
-Ano, můžete definovat a aplikovat vlastní styly na vaše tabulky pomocí Aspose.Words for Java. Zkontrolujte[dokumentace](https://reference.aspose.com/words/java/) pro více podrobností o vytváření vlastních stylů.
+ Ano, pomocí Aspose.Words for Java můžete definovat a aplikovat vlastní styly na vaše tabulky. Zkontrolujte[dokumentace](https://reference.aspose.com/words/java/) pro více podrobností o vytváření vlastních stylů.
 
 ### 2. Jak mohu použít podmíněné formátování na tabulky?
 

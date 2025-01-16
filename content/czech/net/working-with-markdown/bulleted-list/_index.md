@@ -15,7 +15,7 @@ Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes si projdeme v
 
 Než se vrhneme na zábavu s kódováním, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ho ještě nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ho ještě nemáte, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí AC# jako Visual Studio.
 3. Základní znalosti C#: Základní znalost programování v C# vám pomůže pokračovat.
 
@@ -93,7 +93,7 @@ Nebojte se experimentovat s různými styly a formáty seznamů, aby vyhovovaly 
    Absolutně! Mezi formáty odrážek a čísel můžete přepínat pomocí`ApplyNumberDefault` a`ApplyBulletDefault` metody.
 
 ### Mohu upravit styl textu v položkách seznamu?
-    Ano, na text v položkách seznamu můžete použít různé styly, fonty a formátování pomocí`Font` vlastnictví`DocumentBuilder`.
+    Ano, na text v položkách seznamu můžete použít různé styly, fonty a formátování pomocí`Font` vlastnictvím`DocumentBuilder`.
 
 ### Jak mohu vytvořit vícesloupcový seznam s odrážkami?
    Formátování tabulky můžete použít k vytvoření vícesloupcových seznamů, kde každá buňka obsahuje samostatný seznam s odrážkami.

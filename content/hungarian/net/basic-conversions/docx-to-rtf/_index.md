@@ -32,7 +32,7 @@ using Aspose.Words;
 using System.IO;
 ```
 
-A`Aspose.Words` névtér tartalmazza a Word dokumentumok kezeléséhez szükséges alapvető osztályokat, míg`System.IO` funkcionalitást biztosít a fájlműveletekhez.
+ A`Aspose.Words` névtér tartalmazza a Word dokumentumok kezeléséhez szükséges alapvető osztályokat, míg`System.IO` funkcionalitást biztosít a fájlműveletekhez.
 
 Bontsuk le a DOCX fájl RTF formátumba konvertálásának folyamatát világos, kezelhető lépésekre. Kövesse ezeket az utasításokat a zökkenőmentes átalakítás érdekében.
 

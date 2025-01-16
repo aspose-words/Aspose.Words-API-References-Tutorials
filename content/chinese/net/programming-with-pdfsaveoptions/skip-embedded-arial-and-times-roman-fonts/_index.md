@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 是的，您可以配置保存选项以跳过嵌入其他字体（如果需要）。
 
 ### Aspose.Words for .NET 免费吗？
-Aspose.Words for .NET 提供免费试用版，您可以下载[这里](https://releases.aspose.com/)，但要获得完整访问权限，您需要购买许可证[这里](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET 提供免费试用版，您可以下载[这里](https://releases.aspose.com/)，但要获得完整访问权限，您需要购买许可证[这里](https://purchase.aspose.com/buy).
 
 ### 在哪里可以找到有关 Aspose.Words for .NET 的更多教程？
 您可以找到全面的文档和教程[这里](https://reference.aspose.com/words/net/).

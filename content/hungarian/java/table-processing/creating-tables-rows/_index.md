@@ -9,9 +9,9 @@ url: /hu/java/table-processing/creating-tables-rows/
 ---
 
 ## Bevezetés
-A táblák és sorok létrehozása a dokumentumokban a dokumentumfeldolgozás alapvető eleme, és az Aspose.Words for Java megkönnyíti ezt a feladatot, mint valaha. Ebben a lépésenkénti útmutatóban megvizsgáljuk, hogyan használhatja az Aspose.Words for Java-t táblák és sorok létrehozására a dokumentumokban. Akár jelentéseket készít, akár számlákat állít elő, vagy bármilyen olyan dokumentumot hoz létre, amely strukturált adatok megjelenítését igényli, ez az útmutató mindenre kiterjed.
+táblák és sorok létrehozása a dokumentumokban a dokumentumfeldolgozás alapvető eleme, és az Aspose.Words for Java megkönnyíti ezt a feladatot, mint valaha. Ebben a lépésenkénti útmutatóban megvizsgáljuk, hogyan használhatja az Aspose.Words for Java-t táblák és sorok létrehozására a dokumentumokban. Akár jelentéseket készít, akár számlákat állít elő, vagy bármilyen olyan dokumentumot hoz létre, amely strukturált adatok megjelenítését igényli, ez az útmutató mindenre kiterjed.
 
-## színpad beállítása
+## A színpad beállítása
  Mielőtt belemerülnénk a finom részletekbe, győződjünk meg arról, hogy rendelkezik az Aspose.Words for Java használatához szükséges beállításokkal. Győződjön meg arról, hogy letöltötte és telepítette a könyvtárat. Ha még nem tette meg, megtalálja a letöltési linket[itt](https://releases.aspose.com/words/java/).
 
 ## Épületasztalok

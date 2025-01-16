@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-// De vierde lijst, met spaties tussen het lijstnummer en de inhoud van het lijstitem,
+//De vierde lijst, met spaties tussen het lijstnummer en de inhoud van het lijstitem,
 // wordt alleen gedetecteerd als een lijst als "DetectNumberingWithWhitespaces" in een LoadOptions-object is ingesteld op true,
 // om te voorkomen dat alinea's die met getallen beginnen, ten onrechte als lijsten worden beschouwd.
 TxtLoadOptions loadOptions = new TxtLoadOptions();
@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
-In dit voorbeeld laden we een tekstdocument en verwijderen we voorloop- en volgspaties met behulp van`TxtLeadingSpacesOptions.TRIM` En`TxtTrailingSpacesOptions.TRIM`.
+ In dit voorbeeld laden we een tekstdocument en verwijderen we voorloop- en volgspaties met behulp van`TxtLeadingSpacesOptions.TRIM` En`TxtTrailingSpacesOptions.TRIM`.
 
 ## Stap 3: De tekstrichting bepalen
 
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-Deze code stelt de documentrichting in op automatische detectie (`DocumentDirection.AUTO`) en laadt een tekstdocument met Hebreeuwse tekst. U kunt de documentrichting naar wens aanpassen.
+Deze code stelt de documentrichting in op automatische detectie (`DocumentDirection.AUTO`en laadt een tekstdocument met Hebreeuwse tekst. U kunt de documentrichting naar wens aanpassen.
 
 ## Volledige broncode voor het laden van tekstbestanden met Aspose.Words voor Java
 
@@ -179,7 +179,7 @@ Volg deze stappen om aan de slag te gaan met Aspose.Words voor Java:
 
 ### Hoe ga ik om met spaties in geladen tekstdocumenten?
 
- U kunt bepalen hoe voorloop- en volgspaties worden verwerkt in geladen tekstdocumenten met behulp van`TxtLoadOptions` . Opties zoals`TxtLeadingSpacesOptions` En`TxtTrailingSpacesOptions` kunt u spaties indien nodig bijsnijden of behouden. Raadpleeg de sectie "Opties voor spaties verwerken" in deze handleiding voor een voorbeeld.
+ U kunt bepalen hoe voorloop- en volgspaties worden verwerkt in geladen tekstdocumenten met behulp van`TxtLoadOptions` . Opties zoals`TxtLeadingSpacesOptions` En`TxtTrailingSpacesOptions`kunt u spaties indien nodig bijsnijden of behouden. Raadpleeg de sectie "Opties voor spaties verwerken" in deze handleiding voor een voorbeeld.
 
 ### Wat is de betekenis van tekstrichting in Aspose.Words voor Java?
 

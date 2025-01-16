@@ -61,7 +61,7 @@ Le tableau étant désormais accessible, l'étape suivante consiste à récupér
 Row firstRow = table.FirstRow;
 ```
 
-Le`FirstRow` La propriété nous donne la première ligne du tableau. Nous sommes maintenant prêts à commencer à modifier sa mise en forme.
+ Le`FirstRow` La propriété nous donne la première ligne du tableau. Nous sommes maintenant prêts à commencer à modifier sa mise en forme.
 
 ## Étape 4 : modifier les bordures des lignes
 
@@ -95,7 +95,7 @@ firstRow.RowFormat.AllowBreakAcrossPages = true;
 
 ## Conclusion
 
-Et voilà ! Avec seulement quelques lignes de code, nous avons modifié la mise en forme des lignes dans un document Word à l'aide d'Aspose.Words pour .NET. Que vous ajustiez les bordures, modifiiez la hauteur des lignes ou veilliez à ce que les lignes soient réparties sur plusieurs pages, ces étapes constituent une base solide pour la personnalisation de vos tableaux. Continuez à expérimenter différents paramètres et voyez comment ils peuvent améliorer l'apparence et la fonctionnalité de vos documents.
+Et voilà ! Avec seulement quelques lignes de code, nous avons modifié la mise en forme des lignes dans un document Word à l'aide d'Aspose.Words pour .NET. Que vous ajustiez les bordures, modifiiez la hauteur des lignes ou assuriez que les lignes soient réparties sur plusieurs pages, ces étapes constituent une base solide pour la personnalisation de vos tableaux. Continuez à expérimenter différents paramètres et voyez comment ils peuvent améliorer l'apparence et la fonctionnalité de vos documents.
 
 ## FAQ
 

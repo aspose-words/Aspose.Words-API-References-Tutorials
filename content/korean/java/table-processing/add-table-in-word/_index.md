@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## 6단계: 테이블 만들기 및 행 추가
 
-새로운 것을 만드세요`Table` 객체를 선택하고 행과 열의 개수를 지정합니다.
+ 새로운 것을 만드세요`Table` 객체를 선택하고 행과 열의 개수를 지정합니다.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## 8단계: 문서 저장
 
- 원하는 위치에 Word 문서를 저장하려면 다음을 사용합니다.`save()` 방법.
+원하는 위치에 Word 문서를 저장하려면 다음을 사용합니다.`save()` 방법.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## 9단계: 코드 완성
-
-다음은 Java용 Aspose.Words를 사용하여 Word에 표를 추가하는 전체 코드입니다.
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // 5단계: 새 Word 문서 만들기
-        Document doc = new Document();
-
-        // 6단계: 테이블 만들기 및 행 추가
-        Table table = new Table(doc);
-        int rowCount = 5; // 표의 행 수
-        int columnCount = 3; // 표의 열 수
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // 7단계: 문서에 표 추가
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // 8단계: 문서 저장
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## 결론

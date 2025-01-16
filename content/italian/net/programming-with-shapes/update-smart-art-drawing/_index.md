@@ -80,7 +80,7 @@ L'identificazione delle forme Smart Art garantisce che si tenti di aggiornare so
 Titolo: Aggiorna la grafica Smart Art
 
 Spiegazione:
-IL`UpdateSmartArtDrawing` metodo aggiorna la grafica Smart Art, assicurandosi che rifletta qualsiasi modifica nei dati o nel layout del documento. Questo metodo deve essere chiamato su ogni forma Smart Art identificata nel passaggio precedente.
+ IL`UpdateSmartArtDrawing` metodo aggiorna la grafica Smart Art, assicurandosi che rifletta qualsiasi modifica nei dati o nel layout del documento. Questo metodo deve essere chiamato su ogni forma Smart Art identificata nel passaggio precedente.
 
 ```csharp
 // Aggiorna il disegno Smart Art per ogni forma Smart Art

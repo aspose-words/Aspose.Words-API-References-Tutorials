@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
-Itu`Styles` milik`Document` kelas memberi kita akses ke semua gaya yang tersedia dalam dokumen. Kami menggunakan`StyleIdentifier.Quote`untuk memilih gaya kutipan.
+ Itu`Styles` milik`Document` kelas memberi kita akses ke semua gaya yang tersedia dalam dokumen. Kami menggunakan`StyleIdentifier.Quote`untuk memilih gaya kutipan.
 
 ## Langkah 4: Terapkan Gaya ke Tag Dokumen Terstruktur
 

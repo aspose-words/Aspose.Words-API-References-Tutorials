@@ -15,7 +15,7 @@ Aspose.Words for .NET je výkonná knihovna pro programové zpracování dokumen
 
 Než se pustíme do kódu, ujistěte se, že máte vše nastaveno:
 
-1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose Releases Page](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose Releases Page](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí C#.
 3. Základní znalost C#: Pochopení základů programování v C# bude prospěšné.
 
@@ -39,7 +39,7 @@ Než začnete s dokumentem manipulovat, musíte definovat cestu k adresáři va�
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou, kam chcete dokumenty uložit.
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kam chcete dokumenty uložit.
 
 ## Krok 2: Vytvoření nového dokumentu
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## Krok 4: Nahrazení textu pomocí metaznaku konce odstavce
 
- Meta znaky mohou představovat různé prvky, jako jsou odstavce, tabulátory a zalomení řádků. Tady, používáme`&p` reprezentovat konec odstavce.
+Meta znaky mohou představovat různé prvky, jako jsou odstavce, tabulátory a zalomení řádků. Tady, používáme`&p` reprezentovat konec odstavce.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");

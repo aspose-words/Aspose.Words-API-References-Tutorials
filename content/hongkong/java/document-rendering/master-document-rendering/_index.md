@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/java/document-rendering/master-document-rendering/
 ---
 
-在這個全面的逐步教學中，我們將深入研究使用 Aspose.Words for Java 進行文件渲染和文字處理的世界。文件渲染是許多應用程式的重要方面，它允許使用者無縫地查看和操作文件。無論您正在開發內容管理系統、報告工具或任何以文件為中心的應用程序，了解文件呈現都是至關重要的。在本教學中，我們將為您提供掌握使用 Aspose.Words for Java 進行文件渲染所需的知識和原始碼。
+在這個全面的逐步教學中，我們將深入研究使用 Aspose.Words for Java 進行文件渲染和文字處理的世界。文件渲染是許多應用程式的重要方面，它允許使用者無縫地查看和操作文件。無論您正在開發內容管理系統、報告工具或任何以文件為中心的應用程序，了解文件呈現都是至關重要的。在本教程中，我們將為您提供使用 Aspose.Words for Java 掌握文件渲染所需的知識和原始程式碼。
 
 ## 文件渲染簡介
 
@@ -101,8 +101,6 @@ pageSetup.setOrientation(Orientation.LANDSCAPE);
 //新增頁首和頁尾
 pageSetup.setHeaderDistance(20);
 pageSetup.setFooterDistance(10);
-pageSetup.setHeaderFooter(HeaderFooterType.HEADER_PRIMARY, new Paragraph(doc, "Header Text"));
-pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "Footer Text"));
 ```
 
 ### 頁首和頁尾
@@ -110,17 +108,17 @@ pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "F
 頁首和頁尾在文件頁面之間提供一致的資訊。您可以將不同的內容新增至主頁、首頁以及偶數/偶數頁首和頁尾。
 
 ```java
-//將內容新增至主標題
-HeaderFooter primaryHeader = pageSetup.getHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
-Paragraph headerPara = new Paragraph(doc, "This is the header text.");
-primaryHeader.appendChild(headerPara);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-//將內容新增至主頁腳
-HeaderFooter primaryFooter = pageSetup.getHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-Paragraph footerPara = new Paragraph(doc, "Page number: ");
-FieldPage fieldPage = new FieldPage();
-footerPara.appendChild(fieldPage);
-primaryFooter.appendChild(footerPara);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
+
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
+
+doc.save("HeaderFooterDocument.docx");
 ```
 
 ## 渲染文檔
@@ -133,13 +131,13 @@ primaryFooter.appendChild(footerPara);
 
 ```java
 //渲染為 PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 
 //渲染至 XPS
-doc.save("output.xps", SaveFormat.XPS);
+doc.save("output.xps");
 
 //渲染為影像
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setResolution(300);
 doc.save("output.png", saveOptions);
 ```
@@ -161,7 +159,7 @@ doc.setFontSettings(fontSettings);
 
 ```java
 //設定圖像選項
-ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageOptions = new ImageSaveOptions();
 imageOptions.setResolution(300);
 imageOptions.setPrettyFormat(true);
 doc.save("output.png", imageOptions);
@@ -179,7 +177,7 @@ Aspose.Words 提供了渲染文件特定部分的高級技術，這對於大型�
 //渲染特定頁面範圍
 int startPage = 3;
 int endPage = 5;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(startPage, endPage));
 doc.save("output.png", saveOptions);
 ```
@@ -191,7 +189,7 @@ doc.save("output.png", saveOptions);
 ```java
 //渲染特定段落
 int[] paragraphIndices = {0, 2, 4};
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(paragraphIndices));
 doc.save("output.png", saveOptions);
 ```
@@ -203,7 +201,7 @@ doc.save("output.png", saveOptions);
 ```java
 //渲染特定表格
 int tableIndex = 1;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(tableIndex));
 doc.save("output.png", saveOptions);
 ```

@@ -78,7 +78,7 @@ Het implementeren van documentversiebeheer en -geschiedenis met Aspose.Words voo
 
 ### Hoe kan ik Aspose.Words voor Java installeren?
 
-kunt Aspose.Words voor Java downloaden van de website en de installatie-instructies in de documentatie volgen.
+U kunt Aspose.Words voor Java downloaden van de website en de installatie-instructies in de documentatie volgen.
 
 ### Kan ik het bijhouden van documentwijzigingen aanpassen?
 

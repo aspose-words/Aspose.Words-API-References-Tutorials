@@ -16,7 +16,7 @@ Listen gibt es in zwei Haupttypen: Aufzählungslisten und nummerierte Listen. Si
 
 ## Einrichten der Umgebung
 
-Bevor wir uns mit dem Erstellen und Verwalten von Listen befassen, stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für Python installiert haben. Sie können sie hier herunterladen:[Hier](https://releases.aspose.com/words/python/) . Weitere Informationen finden Sie in der API-Dokumentation unter[dieser Link](https://reference.aspose.com/words/python-net/) für detaillierte Informationen.
+ Bevor wir uns mit dem Erstellen und Verwalten von Listen befassen, stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für Python installiert haben. Sie können sie hier herunterladen:[Hier](https://releases.aspose.com/words/python/) . Weitere Informationen finden Sie in der API-Dokumentation unter[dieser Link](https://reference.aspose.com/words/python-net/) für detaillierte Informationen.
 
 ## Aufzählungslisten erstellen
 
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]

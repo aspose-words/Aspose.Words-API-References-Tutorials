@@ -26,12 +26,8 @@ Aspose.Words for Python を使用して Word ドキュメント処理をマス�
 Aspose.Words for Python でドキュメント作成をマスターしましょう。動的なドキュメントを作成し、書式をカスタマイズし、Word ドキュメントの処理を効率化します。
 ### [単語の自動化](./word-automation/)
 Aspose.Words for Python を使用してワード プロセッシング タスクを自動化します。ドキュメント管理を合理化し、ワード自動化の効率を高めます。
-### [ドキュメントインテリジェンス](./document-intelligence/)
-Aspose.Words for Python のドキュメント インテリジェンスを使用して、ドキュメントから貴重な洞察を引き出します。分析、テキスト抽出、分類を自動化します。
 ### [ドキュメント変換](./document-conversion/)
 Aspose.Words for Python を使用して、ドキュメントを効率的に形式変換します。Word ドキュメントの処理を効率化し、ドキュメント管理タスクを簡素化します。 
-### [文書保護](./document-protection/)
-Aspose.Words for Python でドキュメントを保護します。パスワード暗号化、ユーザー権限、デジタル署名を実装して、強力なドキュメント保護を実現します。
 ### [ドキュメント構造とコンテンツの操作](./document-structure-and-content-manipulation/)
 ドキュメント構造とコンテンツ操作に重点を置いた、Python および .NET 用の Aspose.Words チュートリアルをご覧ください。ドキュメント要素を効率的にナビゲート、抽出、変更する方法を学びます。ソース コードの例が提供されます。
 ### [コンテンツの抽出と操作](./content-extraction-and-manipulation/)
@@ -42,7 +38,5 @@ Aspose.Words for Python および .NET を使用したドキュメントの結�
 Python と .NET でのドキュメントの分割とフォーマットに関する Aspose.Words チュートリアルをご覧ください。ドキュメントを効率的に分割およびフォーマットする方法を学習し、ドキュメント処理タスクを強化します。 
 ### [ドキュメントのオプションと設定](./document-options-and-settings/)
 Python および .NET でのドキュメント オプションと設定に関する Aspose.Words チュートリアルをご覧ください。ステップ バイ ステップのガイダンスとソース コードの例を使用して、ドキュメントの作成と書式設定を最適化する方法を学習します。
-### [データの視覚化とフォーマット](./data-visualization-and-formatting/)
-Python と .NET でのデータの視覚化とフォーマットに関する Aspose.Words チュートリアルをご覧ください。データを効果的に提示し、魅力的なレポートを作成し、プログラムでドキュメントをフォーマットする方法を学びます。
 ### [表と書式設定](./tables-and-formatting/)
 Python および .NET アプリケーションでのテーブルと書式設定に関する Aspose.Words チュートリアルを詳しく見てみましょう。視覚的に魅力的なドキュメントを作成するためのテーブルの作成、カスタマイズ、スタイル設定を学習します。 

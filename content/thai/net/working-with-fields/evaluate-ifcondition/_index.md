@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-การ`EvaluateCondition` วิธีการส่งคืน a`FieldIfComparisonResult` ค่า enum ที่แสดงผลลัพธ์ของการประเมินเงื่อนไข ค่า enum นี้สามารถมีค่าได้ เช่น`True`, `False` , หรือ`Unknown`.
+ การ`EvaluateCondition` วิธีการส่งคืน a`FieldIfComparisonResult` ค่า enum ที่แสดงผลลัพธ์ของการประเมินเงื่อนไข ค่า enum นี้สามารถมีค่าได้ เช่น`True`, `False` , หรือ`Unknown`.
 
 ## ขั้นตอนที่ 4: แสดงผลลัพธ์
 
@@ -93,7 +93,7 @@ Console.WriteLine(actualResult);
  คุณสามารถแทรกฟิลด์ IF ได้โดยใช้`InsertField` วิธีการของ`DocumentBuilder` ชั้นเรียน โดยระบุเงื่อนไขที่ต้องการประเมิน
 
 ###  อะไร`EvaluateCondition` method do?
-การ`EvaluateCondition` วิธีการประเมินเงื่อนไขที่ระบุไว้ในฟิลด์ IF และส่งคืนผลลัพธ์โดยระบุว่าเงื่อนไขนั้นเป็นจริงหรือเท็จ
+ การ`EvaluateCondition` วิธีการประเมินเงื่อนไขที่ระบุไว้ในฟิลด์ IF และส่งคืนผลลัพธ์โดยระบุว่าเงื่อนไขนั้นเป็นจริงหรือเท็จ
 
 ### ฉันสามารถใช้เงื่อนไขที่ซับซ้อนกับฟิลด์ IF ได้หรือไม่
 ใช่ คุณสามารถใช้เงื่อนไขที่ซับซ้อนกับฟิลด์ IF ได้โดยการระบุนิพจน์และการเปรียบเทียบที่แตกต่างกันตามต้องการ

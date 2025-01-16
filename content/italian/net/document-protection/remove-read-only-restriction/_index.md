@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 L'impostazione di una password è facoltativa, ma può aggiungere un ulteriore livello di sicurezza al documento prima di modificarlo.
 
 ```csharp
-//Inserisci una password lunga al massimo 15 caratteri.
+// Inserisci una password lunga al massimo 15 caratteri.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Sì, l'impostazione di una password è facoltativa. Puoi rimuovere direttamente 
 
 ### Cosa succede se il documento ha già un tipo di protezione diverso?
 
-IL`doc.Protect(ProtectionType.NoProtection)` metodo garantisce che tutti i tipi di protezione vengano rimossi dal documento.
+ IL`doc.Protect(ProtectionType.NoProtection)` metodo garantisce che tutti i tipi di protezione vengano rimossi dal documento.
 
 ### Esiste un modo per sapere se un documento è di sola lettura prima di rimuovere la restrizione?
 

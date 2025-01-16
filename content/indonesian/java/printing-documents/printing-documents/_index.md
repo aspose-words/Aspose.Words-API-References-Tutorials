@@ -38,7 +38,7 @@ Selanjutnya, kita akan membuat pekerjaan cetak untuk mencetak dokumen yang telah
 ```java
 // Buat pekerjaan cetak untuk mencetak dokumen kita.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Inisialisasi set atribut dengan jumlah halaman dalam dokumen.
+// Inisialisasi set atribut dengan jumlah halaman dalam dokumen.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Teruskan pengaturan printer beserta parameter lainnya ke dokumen cetak.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Buat pekerjaan cetak untuk mencetak dokumen kita.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Inisialisasi set atribut dengan jumlah halaman dalam dokumen.
+// Inisialisasi set atribut dengan jumlah halaman dalam dokumen.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Teruskan pengaturan printer beserta parameter lainnya ke dokumen cetak.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Indeks awal dan akhir halaman sebagaimana ditetapkan dalam set atribut.
+        //Indeks awal dan akhir halaman sebagaimana ditetapkan dalam set atribut.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Pilih nomor halaman terakhir yang akan dicetak pada lembar kertas ini.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Ulangi halaman yang dipilih dari halaman saat ini yang disimpan ke halaman yang dihitung
+        // Ulangi halaman yang dipilih dari halaman saat ini yang disimpan ke halaman yang dihitung
         // halaman terakhir.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Hitung indeks kolom dan baris.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // Nilai balik yang berguna adalah skala di mana halaman tersebut ditampilkan.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Gambar batas halaman (gambar mini halaman bisa lebih kecil dari gambar mini
+                //Gambar batas halaman (gambar mini halaman bisa lebih kecil dari gambar mini
                 // ukuran tempat penampung).
                 if (mPrintPageBorders) {
                     // Dapatkan ukuran halaman sebenarnya 100% dalam poin.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Tentukan jumlah kolom dan baris pada lembar untuk
-        //Kertas berorientasi lanskap.
+        // Kertas berorientasi lanskap.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ Selamat! Anda telah berhasil mencetak dokumen Word menggunakan Aspose.Words untu
 
 ### Q1: Dapatkah saya mencetak halaman tertentu dari suatu dokumen menggunakan Aspose.Words untuk Java?
 
- Ya, Anda dapat menentukan rentang halaman saat mencetak dokumen. Dalam contoh kode, kami menggunakan`attributes.add(new PageRanges(1, doc.getPageCount()))` untuk mencetak semua halaman. Anda dapat menyesuaikan rentang halaman sesuai kebutuhan.
+ Ya, Anda dapat menentukan rentang halaman saat mencetak dokumen. Dalam contoh kode, kami menggunakan`attributes.add(new PageRanges(1, doc.getPageCount()))`untuk mencetak semua halaman. Anda dapat menyesuaikan rentang halaman sesuai kebutuhan.
 
 ### Q2: Apakah Aspose.Words untuk Java cocok untuk pencetakan batch?
 

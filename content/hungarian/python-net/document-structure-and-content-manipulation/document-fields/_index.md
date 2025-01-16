@@ -12,9 +12,9 @@ A Word-dokumentumok mezői és adatkezelése nagyban javíthatja a dokumentumok 
 
 ## Bevezetés
 
-A Microsoft Word dokumentumok gyakran dinamikus tartalmat igényelnek, például dátumokat, számításokat vagy külső forrásokból származó adatokat. Az Aspose.Words for Python hatékony módot biztosít ezekkel az elemekkel való programozott interakcióhoz.
+Microsoft Word dokumentumok gyakran dinamikus tartalmat igényelnek, például dátumokat, számításokat vagy külső forrásokból származó adatokat. Az Aspose.Words for Python hatékony módot biztosít ezekkel az elemekkel való programozott interakcióhoz.
 
-## Word dokumentummezőinek megértése
+## A Word dokumentummezőinek megértése
 
 A mezők olyan helyőrzők a dokumentumban, amelyek dinamikusan jelenítik meg az adatokat. Különféle célokra használhatók, például az aktuális dátum megjelenítésére, a tartalom kereszthivatkozására vagy számítások elvégzésére.
 
@@ -23,7 +23,7 @@ A mezők olyan helyőrzők a dokumentumban, amelyek dinamikusan jelenítik meg a
  Mező beszúrásához használhatja a`FieldBuilder` osztály. Például egy aktuális dátum mező beszúrásához:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -58,18 +58,9 @@ if field:
     field_result = field.result
 ```
 
-## Dokumentumgenerálás automatizálása mezőkkel
-
-A mezők elengedhetetlenek az automatikus dokumentumgeneráláshoz. A mezőket feltöltheti külső forrásból származó adatokkal:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
-```
-
 ## Mezők integrálása adatforrásokkal
 
-mezők külső adatforrásokhoz, például Excelhez kapcsolhatók. Ez lehetővé teszi a mezőértékek valós idejű frissítését, amikor az adatforrás megváltozik.
+A mezők külső adatforrásokhoz, például Excelhez kapcsolhatók. Ez lehetővé teszi a mezőértékek valós idejű frissítését, amikor az adatforrás megváltozik.
 
 ```python
 builder.insert_field('LINK Excel.Sheet "path_to_excel_file" "Sheet1!A1"')

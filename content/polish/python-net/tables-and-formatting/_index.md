@@ -19,7 +19,7 @@ Tabele są potężnymi narzędziami do organizowania i prezentowania informacji 
 
 ## Czego się nauczysz
 
-W tej serii samouczków wyruszysz w podróż zrozumienia i wykorzystania tabel i formatowania w kontekście Aspose.Words. Samouczki obejmują szeroki zakres tematów, w tym:
+tej serii samouczków wyruszysz w podróż zrozumienia i wykorzystania tabel i formatowania w kontekście Aspose.Words. Samouczki obejmują szeroki zakres tematów, w tym:
 
 - Tworzenie tabel: Dowiedz się, jak tworzyć tabele od podstaw lub wstawiać je do istniejących dokumentów.
 - Dostosowywanie komórek: zapoznaj się z formatowaniem komórek, dostosowywaniem obramowań, cieniowania i wyrównania.

@@ -20,10 +20,10 @@ Mielőtt belevágna a fejléc- és lábléckezelésbe, be kell állítania az As
 pip install aspose-words
 ```
 
-2. A modul importálása: Importálja a szükséges modult a Python-szkriptbe.
+2. modul importálása: Importálja a szükséges modult a Python-szkriptbe.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Egyszerű fejléc és lábléc hozzáadása
@@ -33,30 +33,18 @@ Ha alapvető fejlécet és láblécet szeretne hozzáadni a Word-dokumentumhoz, 
 1. Dokumentum létrehozása: Hozzon létre egy új Word-dokumentumot az Aspose.Words használatával.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Fejléc és lábléc hozzáadása: Használja a`sections` a dokumentum tulajdonsága a szakaszok eléréséhez. Ezután használja a`headers_footers` tulajdonság fejlécek és láblécek hozzáadásához.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Tartalom hozzáadása: Adjon hozzá tartalmat a fejléchez és a lábléchez.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. A dokumentum mentése: Mentse el a dokumentumot a fejléccel és a lábléccel együtt.
+3. A dokumentum mentése: Mentse el a dokumentumot a fejléccel és a lábléccel együtt.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Táblázatok hozzáadása: Táblázatok beépítése a táblázatos információkhoz.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Dinamikus mezők: Használjon dinamikus mezőket az automatikus adatbeszúráshoz.
+2. Dinamikus mezők: Használjon dinamikus mezőket az automatikus adatbeszúráshoz.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. Igény szerinti testreszabás: Az egyes fejléceket és lábléceket igényei szerint testreszabhatja.
 
 ## Fejlécek és láblécek eltávolítása
 
@@ -150,4 +128,4 @@ Igen, törölheti a fejlécek és láblécek tartalmát azok hatékony eltávol�
 
 ### Hol tudhatok meg többet az Aspose.Words for Pythonról?
 
-Részletesebb dokumentációért és példákért látogassa meg a[Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).
+ Részletesebb dokumentációért és példákért látogassa meg a[Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).

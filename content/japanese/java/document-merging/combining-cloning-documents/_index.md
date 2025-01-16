@@ -2,7 +2,7 @@
 title: ドキュメントの結合と複製
 linktitle: ドキュメントの結合と複製
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words を使用して、Java でドキュメントを簡単に結合および複製する方法を学びます。このステップ バイ ステップ ガイドでは、知っておく必要のあるすべての内容について説明します。
+description: Aspose.Words を使用して Java でドキュメントを簡単に結合および複製する方法を学びます。このステップ バイ ステップ ガイドでは、知っておく必要のあるすべての内容について説明します。
 type: docs
 weight: 10
 url: /ja/java/document-merging/combining-cloning-documents/

@@ -117,7 +117,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
  نعم، يمكنك تخصيص البادئة في كل مرة تحفظ فيها مستندًا عن طريق تغيير`CssClassNamePrefix` ملكية.
 
 ### هل تدعم هذه الطريقة CSS المضمنة؟
-ال`CssClassNamePrefix`تعمل الخاصية مع CSS خارجي. بالنسبة لـ CSS المضمن، ستحتاج إلى نهج مختلف.
+ ال`CssClassNamePrefix`تعمل الخاصية مع CSS خارجي. بالنسبة لـ CSS المضمن، ستحتاج إلى نهج مختلف.
 
 ### كيف يمكنني تضمين خيارات حفظ HTML الأخرى؟
  يمكنك تكوين خصائص مختلفة لـ`HtmlSaveOptions` لتخصيص مخرجات HTML الخاصة بك. تحقق من[التوثيق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.

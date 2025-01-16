@@ -27,7 +27,7 @@ url: /ko/java/document-loading-and-saving/saving-documents-as-markdown/
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//두 개의 셀이 있는 표 삽입
+// 두 개의 셀이 있는 표 삽입
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// 테이블 내용 정렬을 자동(첫 번째 문단에 의해 결정됨)으로 설정합니다.
+//테이블 내용 정렬을 자동(첫 번째 문단에 의해 결정됨)으로 설정합니다.
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## 3단계: 이미지 처리
 
-Markdown 문서에 이미지를 포함하려면 이미지가 있는 폴더를 지정해야 합니다. Aspose.Words for Java를 사용하면 이미지 폴더를 설정할 수 있습니다.`MarkdownSaveOptions`.
+ Markdown 문서에 이미지를 포함하려면 이미지가 있는 폴더를 지정해야 합니다. Aspose.Words for Java를 사용하면 이미지 폴더를 설정할 수 있습니다.`MarkdownSaveOptions`.
 
 이미지 폴더를 설정하고 이미지가 있는 문서를 저장하는 방법은 다음과 같습니다.
 

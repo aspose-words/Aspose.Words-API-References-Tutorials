@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- I det här steget skapar vi en instans av`Document` klass. Denna instans representerar Word-dokumentet. Vi skapar sedan en instans av`DocumentBuilder` klass, som tillhandahåller metoder för att infoga innehåll i dokumentet.
+ I det här steget skapar vi en instans av`Document` klass. Den här instansen representerar Word-dokumentet. Vi skapar sedan en instans av`DocumentBuilder` klass, som tillhandahåller metoder för att infoga innehåll i dokumentet.
 
 ## Steg 2: Definiera Combo Box-objekt
 

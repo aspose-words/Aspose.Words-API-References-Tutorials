@@ -59,7 +59,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
- บรรทัดนี้จะโหลดเอกสาร Word ชื่อ "VBA project.docm" จากไดเร็กทอรีที่คุณระบุลงใน`doc` วัตถุ.
+ บรรทัดนี้โหลดเอกสาร Word ชื่อ "VBA project.docm" จากไดเร็กทอรีที่คุณระบุลงใน`doc` วัตถุ.
 
 ## ขั้นตอนที่ 3: การเข้าถึงโครงการ VBA
 
@@ -93,7 +93,7 @@ foreach (VbaModule module in doc.VbaProject.Modules)
 }
 ```
 
-ในข้อความสั้นๆ นี้:
+ในสคริปท์นี้:
 - เราดำเนินการวนซ้ำผ่านแต่ละโมดูลในโครงการ VBA
 -  สำหรับแต่ละโมดูลเราจะพิมพ์`SourceCode` คุณสมบัติซึ่งมีโค้ดแมโคร VBA
 

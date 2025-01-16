@@ -202,7 +202,7 @@ builder.writeln("Data 2");
 
 ## 使用样式和模板
 
-### 1. 了解 Aspose.Words 中的样式
+### 1.了解 Aspose.Words 中的样式
 
 Aspose.Words 支持多种内置样式，您可以将其用于您的文档。
 
@@ -280,7 +280,7 @@ doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 Aspose.Words for Java 允许您将文档转换为各种格式，例如 PDF、HTML 等。
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## 高级造型技巧
@@ -366,7 +366,7 @@ Aspose.Words for Java 是一款功能强大的工具，可帮助 Java 开发人�
 
    是的，Aspose.Words for Java 支持文档加密以保护敏感信息。
 
-### 是否有一个社区论坛或为 Java 用户的 Aspose.Words 提供支持？
+### 是否有针对 Java 用户的 Aspose.Words 社区论坛或支持？
 
    是的，Aspose 提供社区论坛和全面支持来帮助用户解决疑问。
 

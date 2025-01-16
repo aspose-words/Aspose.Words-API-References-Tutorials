@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Passaggio 5: inserire il collegamento ipertestuale
 
- Ora inseriamo l'hyperlink utilizzando il`InsertHyperlink`metodo. Questo metodo accetta tre parametri: il testo visualizzato, l'URL e un valore booleano che indica se il collegamento deve essere formattato come collegamento ipertestuale.
+ Ora inseriamo l'hyperlink utilizzando il`InsertHyperlink` metodo. Questo metodo accetta tre parametri: il testo visualizzato, l'URL e un valore booleano che indica se il collegamento deve essere formattato come collegamento ipertestuale.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
@@ -106,7 +106,7 @@ Inserire collegamenti ipertestuali in un documento Word usando Aspose.Words per 
 
 ### Posso inserire più collegamenti ipertestuali in un singolo documento?
 
- Sì, puoi inserire più collegamenti ipertestuali ripetendo il`InsertHyperlink`metodo per ogni collegamento.
+ Sì, puoi inserire più collegamenti ipertestuali ripetendo il`InsertHyperlink` metodo per ogni collegamento.
 
 ### Come faccio a cambiare il colore del collegamento ipertestuale?
 
@@ -118,7 +118,7 @@ Inserire collegamenti ipertestuali in un documento Word usando Aspose.Words per 
 
 ### Cosa succede se l'URL non è valido?
 
-IL`InsertHyperlink` Il metodo non convalida gli URL, quindi è importante assicurarsi che gli URL siano corretti prima di inserirli.
+ IL`InsertHyperlink` Il metodo non convalida gli URL, quindi è importante assicurarsi che gli URL siano corretti prima di inserirli.
 
 ### È possibile rimuovere un collegamento ipertestuale dopo averlo inserito?
 

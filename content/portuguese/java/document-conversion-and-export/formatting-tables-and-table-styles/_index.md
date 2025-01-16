@@ -35,7 +35,7 @@ Esta instrução de importação fornece acesso a todas as classes essenciais ne
 
 ## Etapa 1: Formatando tabelas
 
-A formatação de tabelas no Aspose.Words para Java envolve definir bordas, sombrear células e aplicar várias opções de formatação. Veja como você pode fazer isso:
+formatação de tabelas no Aspose.Words para Java envolve definir bordas, sombrear células e aplicar várias opções de formatação. Veja como você pode fazer isso:
 
 ### Carregar o documento
 
@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Crie bordas maiores para a primeira célula desta linha.
+// Crie bordas maiores para a primeira célula desta linha.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -161,7 +161,7 @@ Neste exemplo:
 
 ## Conclusão
 
-E aí está! Você formatou tabelas e aplicou estilos com sucesso usando o Aspose.Words para Java. Com essas técnicas, você pode criar tabelas que não são apenas funcionais, mas também visualmente atraentes. Formatar tabelas de forma eficaz pode melhorar muito a legibilidade e a aparência profissional dos seus documentos.
+aí está! Você formatou tabelas e aplicou estilos com sucesso usando o Aspose.Words para Java. Com essas técnicas, você pode criar tabelas que não são apenas funcionais, mas também visualmente atraentes. Formatar tabelas de forma eficaz pode melhorar muito a legibilidade e a aparência profissional dos seus documentos.
 
 Aspose.Words para Java é uma ferramenta robusta que oferece recursos extensivos para manipulação de documentos. Ao dominar a formatação e os estilos de tabela, você está um passo mais perto de aproveitar todo o poder desta biblioteca.
 
@@ -169,11 +169,11 @@ Aspose.Words para Java é uma ferramenta robusta que oferece recursos extensivos
 
 ### 1. Posso usar estilos de tabela personalizados não incluídos nas opções padrão?
 
-Sim, você pode definir e aplicar estilos personalizados às suas tabelas usando Aspose.Words para Java. Verifique o[documentação](https://reference.aspose.com/words/java/) para mais detalhes sobre como criar estilos personalizados.
+ Sim, você pode definir e aplicar estilos personalizados às suas tabelas usando Aspose.Words para Java. Verifique o[documentação](https://reference.aspose.com/words/java/) para mais detalhes sobre como criar estilos personalizados.
 
 ### 2. Como posso aplicar formatação condicional a tabelas?
 
-O Aspose.Words para Java permite que você ajuste programaticamente a formatação de tabelas com base em condições. Isso pode ser feito verificando critérios específicos no seu código e aplicando a formatação de acordo.
+Aspose.Words para Java permite que você ajuste programaticamente a formatação de tabelas com base em condições. Isso pode ser feito verificando critérios específicos no seu código e aplicando a formatação de acordo.
 
 ### 3. Posso formatar células mescladas em uma tabela?
 

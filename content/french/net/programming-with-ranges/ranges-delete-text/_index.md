@@ -61,7 +61,7 @@ Une fois le document chargé, nous pouvons procéder à la suppression du texte 
 2.  Supprimer la plage : utilisez le`Range.Delete` méthode pour supprimer tout le texte dans cette section.
 
 ```csharp
-//Supprimer le texte de la première section du document
+// Supprimer le texte de la première section du document
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Aspose.Words for .NET est une bibliothèque de classes pour le traitement de doc
 
 ### Puis-je supprimer du texte d’un paragraphe spécifique au lieu d’une section ?
 
-Oui, vous pouvez supprimer du texte d'un paragraphe spécifique en accédant au paragraphe souhaité et en utilisant le`Range.Delete` méthode.
+ Oui, vous pouvez supprimer du texte d'un paragraphe spécifique en accédant au paragraphe souhaité et en utilisant le`Range.Delete` méthode.
 
 ### Est-il possible de supprimer du texte de manière conditionnelle ?
 

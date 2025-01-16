@@ -18,7 +18,7 @@ url: /el/java/using-document-elements/using-hyphenation/
 
 Πριν ξεκινήσουμε τη χρήση συλλαβισμού στο Aspose.Words για Java, πρέπει να ρυθμίσετε το περιβάλλον ανάπτυξής σας. Βεβαιωθείτε ότι έχετε τα εξής:
 
-- Εγκαταστάθηκε το Java Development Kit (JDK).
+- Εγκατεστημένο Java Development Kit (JDK).
 - Aspose.Words για βιβλιοθήκη Java
 - Ένα ενσωματωμένο περιβάλλον ανάπτυξης Java (IDE)
 

@@ -11,7 +11,7 @@ Dans le monde numérique en constante évolution d'aujourd'hui, le traitement de
 
 ## Installation d'Aspose.Words
 
-Avant de plonger dans les détails, vous devez configurer Aspose.Words pour Python. Vous pouvez le télécharger et l'installer en utilisant le lien suivant :[Télécharger Aspose.Words pour Python](https://releases.aspose.com/words/python/). 
+ Avant de plonger dans les détails, vous devez configurer Aspose.Words pour Python. Vous pouvez le télécharger et l'installer en utilisant le lien suivant :[Télécharger Aspose.Words pour Python](https://releases.aspose.com/words/python/). 
 
 ## Combiner des documents
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## Techniques avancées
-
-### Remplacement de texte
-
-Aspose.Words vous permet de rechercher et de remplacer facilement du texte dans des documents :
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### Modification de la mise en forme
+## Modification de la mise en forme
 
 Vous pouvez également modifier la mise en forme à l'aide d'Aspose.Words :
 
@@ -127,7 +108,7 @@ Oui, vous pouvez effectuer un clone superficiel pour copier uniquement la struct
  Utilisez le`range.replace()` méthode ainsi que les options appropriées pour rechercher et remplacer du texte efficacement.
 
 ### Aspose.Words prend-il en charge la modification du formatage ?
-Absolument, vous pouvez modifier la mise en forme en utilisant des méthodes telles que`run.font.size` et`run.font.bold`.
+ Absolument, vous pouvez modifier la mise en forme en utilisant des méthodes telles que`run.font.size` et`run.font.bold`.
 
 ### Où puis-je accéder à la documentation Aspose.Words ?
  Vous trouverez une documentation complète sur[Référence de l'API Aspose.Words pour Python](https://reference.aspose.com/words/python-net/).

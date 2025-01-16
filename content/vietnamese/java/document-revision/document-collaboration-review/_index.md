@@ -70,7 +70,7 @@ Hợp tác và xem xét tài liệu là những khía cạnh quan trọng của 
 
 ### Tôi có thể theo dõi những thay đổi trong tài liệu Word bằng Aspose.Words cho Java không?
 
-Có, Aspose.Words for Java cho phép bạn theo dõi những thay đổi trong tài liệu Word. Bạn có thể sử dụng`startTrackRevisions` phương pháp cho phép theo dõi thay đổi.
+ Có, Aspose.Words for Java cho phép bạn theo dõi những thay đổi trong tài liệu Word. Bạn có thể sử dụng`startTrackRevisions` phương pháp cho phép theo dõi thay đổi.
 
 ### Làm thế nào để tôi có thể xem lại những thay đổi đã thực hiện trong tài liệu?
 

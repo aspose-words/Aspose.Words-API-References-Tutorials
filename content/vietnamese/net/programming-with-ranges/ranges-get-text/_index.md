@@ -67,7 +67,7 @@ Trích xuất văn bản
 string text = doc.Range.Text;
 ```
 
-Các`Range.Text` thuộc tính cung cấp cho bạn tất cả văn bản có trong phạm vi của tài liệu. Bao gồm văn bản từ tất cả các phần, tiêu đề, chân trang và nội dung chính.
+ Các`Range.Text` thuộc tính cung cấp cho bạn tất cả văn bản có trong phạm vi của tài liệu. Bao gồm văn bản từ tất cả các phần, tiêu đề, chân trang và nội dung chính.
 
 ## Bước 4: Hiển thị văn bản đã trích xuất
 

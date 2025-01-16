@@ -34,5 +34,3 @@ Lär dig hur du går med i och lägger till dokument med Aspose.Words för Java.
 Lär dig hur du jämför dokument för skillnader med Aspose.Words i Java. Vår steg-för-steg-guide säkerställer korrekt dokumenthantering.
 ### [Sammanfoga dokument med DocumentBuilder](./merging-documents-documentbuilder/)
 Lär dig hur du manipulerar Word-dokument med Aspose.Words för Java. Skapa, redigera, slå samman och konvertera dokument programmatiskt i Java.
-### [Dokumentdelning och extrahering](./document-splitting-extraction/)
-Lär dig hur du delar upp och extraherar dokument utan ansträngning med Aspose.Words för Java. Förenkla dina dokumentbearbetningsuppgifter med steg-för-steg-vägledning.

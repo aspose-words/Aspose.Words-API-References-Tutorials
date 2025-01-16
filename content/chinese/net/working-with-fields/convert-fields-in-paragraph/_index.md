@@ -52,7 +52,7 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 ## 步骤 3：识别最后一段中的 IF 字段
 
-现在，我们将重点放在文档最后一段中的 IF 字段上。真正的魔力就在这里发生。
+现在，我们将重点关注文档最后一段中的 IF 字段。这就是真正的奇迹发生的地方。
 
 ```csharp
 //将文档最后一段中的 IF 字段转换为纯文本。

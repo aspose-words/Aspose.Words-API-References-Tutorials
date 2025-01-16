@@ -8,7 +8,7 @@ weight: 15
 url: /ja/java/document-loading-and-saving/saving-html-documents-with-fixed-layout/
 ---
 
-## Aspose.Words for Java で固定レイアウトの HTML ドキュメントを保存する方法の紹介
+## Aspose.Words for Java で固定レイアウトを使用して HTML ドキュメントを保存する方法の紹介
 
 この包括的なガイドでは、Aspose.Words for Java を使用して固定レイアウトで HTML ドキュメントを保存する手順を説明します。ステップバイステップの手順とコード例を使用して、これをシームレスに実現する方法を学びます。それでは、早速始めましょう。
 

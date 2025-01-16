@@ -9,7 +9,7 @@ url: /fr/net/working-with-fields/replace-hyperlinks/
 ---
 ## Introduction
 
-Dans le monde du développement .NET, la gestion et la manipulation de documents constituent une tâche cruciale, qui nécessite souvent une gestion efficace des hyperliens au sein des documents. Aspose.Words pour .NET offre de puissantes fonctionnalités permettant de remplacer de manière transparente les hyperliens, garantissant ainsi que vos documents sont liés de manière dynamique aux bonnes ressources. Ce didacticiel explique en détail comment vous pouvez y parvenir à l'aide d'Aspose.Words pour .NET, en vous guidant étape par étape tout au long du processus.
+Dans le monde du développement .NET, la gestion et la manipulation de documents sont des tâches cruciales, qui nécessitent souvent une gestion efficace des hyperliens au sein des documents. Aspose.Words pour .NET offre de puissantes fonctionnalités permettant de remplacer de manière transparente les hyperliens, garantissant ainsi que vos documents sont liés de manière dynamique aux bonnes ressources. Ce didacticiel explique en détail comment vous pouvez y parvenir à l'aide d'Aspose.Words pour .NET, en vous guidant étape par étape tout au long du processus.
 
 ## Prérequis
 
@@ -86,7 +86,7 @@ Oui, Aspose.Words prend en charge de manière transparente les structures comple
  Oui, vous pouvez télécharger une version d'essai gratuite à partir de[ici](https://releases.aspose.com/).
 
 ### Où puis-je trouver la documentation pour Aspose.Words pour .NET ?
-Une documentation détaillée est disponible[ici](https://reference.aspose.com/words/net/).
+ Une documentation détaillée est disponible[ici](https://reference.aspose.com/words/net/).
 
 ### Comment puis-je obtenir une licence temporaire pour Aspose.Words pour .NET ?
  Des licences temporaires peuvent être obtenues[ici](https://purchase.aspose.com/temporary-license/).

@@ -96,7 +96,7 @@ W tym przewodniku zbadaliśmy różne techniki dzielenia dokumentów w Aspose.Wo
 
 ### Jak mogę rozpocząć pracę z Aspose.Words dla Java?
 
- Rozpoczęcie pracy z Aspose.Words for Java jest proste. Możesz pobrać bibliotekę ze strony internetowej Aspose i postępować zgodnie z dokumentacją dotyczącą instrukcji instalacji i użytkowania. Odwiedź[Aspose.Words dla dokumentacji Java](https://reference.aspose.com/words/java/) po więcej szczegółów.
+ Rozpoczęcie pracy z Aspose.Words for Java jest proste. Możesz pobrać bibliotekę ze strony internetowej Aspose i postępować zgodnie z dokumentacją dotyczącą instrukcji instalacji i użytkowania. Odwiedź[Aspose.Words dla dokumentacji Java](https://reference.aspose.com/words/java/) Aby uzyskać więcej szczegółów.
 
 ### Jakie są główne cechy Aspose.Words dla Java?
 

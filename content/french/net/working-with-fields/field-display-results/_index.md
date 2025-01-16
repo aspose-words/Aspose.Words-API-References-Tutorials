@@ -60,7 +60,7 @@ Les champs des documents Word peuvent être dynamiques, ce qui signifie qu'ils n
 document.UpdateFields();
 ```
 
-Le`UpdateFields` La méthode parcourt tous les champs du document et les met à jour avec les données les plus récentes. Cette étape est cruciale si vos champs dépendent de contenu dynamique tel que des dates ou des calculs.
+ Le`UpdateFields` La méthode parcourt tous les champs du document et les met à jour avec les données les plus récentes. Cette étape est cruciale si vos champs dépendent de contenu dynamique tel que des dates ou des calculs.
 
 ## Étape 3 : Afficher les résultats du champ
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
-Le`DisplayResult` propriété de la`Field` La classe renvoie la valeur formatée du champ.`foreach` La boucle parcourt tous les champs du document et imprime leurs résultats.
+ Le`DisplayResult` propriété de la`Field` La classe renvoie la valeur formatée du champ.`foreach` La boucle parcourt tous les champs du document et imprime leurs résultats.
 
 ## Conclusion
 
@@ -97,4 +97,4 @@ Vous pouvez mettre à jour différents types de champs, notamment les champs de 
 Les champs nécessitant une saisie utilisateur (comme les champs de formulaire) devront être remplis manuellement ou via un code supplémentaire.
 
 ### Est-il possible d'afficher les résultats du terrain dans un format différent ?  
-Le`DisplayResult` La propriété fournit la sortie formatée. Si vous avez besoin d'un format différent, envisagez un traitement supplémentaire en fonction de vos besoins.
+ Le`DisplayResult` La propriété fournit la sortie formatée. Si vous avez besoin d'un format différent, envisagez un traitement supplémentaire en fonction de vos besoins.

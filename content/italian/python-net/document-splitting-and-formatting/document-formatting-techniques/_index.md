@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Applicazione di stili e dimensioni dei caratteri
-
-Migliora la leggibilità e l'attrattiva visiva del tuo documento applicando stili e dimensioni dei caratteri. Utilizza il seguente codice per modificare lo stile e la dimensione del carattere di un paragrafo:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Formattazione di paragrafi e titoli
+## Formattazione dei paragrafi
 
 Per strutturare efficacemente il tuo documento, formattare paragrafi e titoli è fondamentale. Ottieni questo risultato usando il codice seguente:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Lavorare con elenchi e punti elenco
 
 Elenchi e punti elenco organizzano i contenuti e forniscono chiarezza. Implementali usando Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Gestione del layout di pagina e dei margini
+## Gestione del layout di pagina
 
 Controlla il layout della pagina e i margini per una presentazione ottimale:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Applicazione di stili e temi

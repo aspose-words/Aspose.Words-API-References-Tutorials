@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Krok 3: Inicializujte DocumentBuilder
 
-The`DocumentBuilder` class je náš primární nástroj pro přidávání obsahu do dokumentu. Představte si to jako pero, které píše na plátno dokumentu aplikace Word.
+ The`DocumentBuilder` class je náš primární nástroj pro přidávání obsahu do dokumentu. Představte si to jako pero, které píše na plátno dokumentu aplikace Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

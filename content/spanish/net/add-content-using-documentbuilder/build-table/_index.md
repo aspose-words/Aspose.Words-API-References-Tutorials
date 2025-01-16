@@ -19,7 +19,7 @@ Antes de embarcarnos en nuestra aventura de construcción de mesas, asegurémono
 - .NET Framework (4.0 o superior)
 - Biblioteca Aspose.Words para .NET
 
- Si aún no tienes Aspose.Words, puedes hacerlo fácilmente[Descárgalo aquí](https://releases.aspose.com/words/net/) También puedes empezar con un[prueba gratis](https://releases.aspose.com/) Si quieres probar las aguas, para aquellos que estén listos para dar el paso, puedes[comprar una licencia](https://purchase.aspose.com/buy) , o si necesita más tiempo para evaluar, tome un[licencia temporal](https://purchase.aspose.com/temporary-license/).
+ Si aún no tienes Aspose.Words, puedes hacerlo fácilmente[Descárgalo aquí](https://releases.aspose.com/words/net/) También puedes empezar con un[prueba gratis](https://releases.aspose.com/) Si quieres probar las aguas, para aquellos que estén listos para dar el paso, puedes[comprar una licencia](https://purchase.aspose.com/buy) o si necesita más tiempo para evaluar, tome un[licencia temporal](https://purchase.aspose.com/temporary-license/).
 
 ## Importar espacios de nombres
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Mediante el uso`StartTable` le estamos diciendo a Aspose.Words que estamos a punto de crear una tabla.`InsertCell` El método agrega la primera celda y`AutoFit` garantiza que nuestras columnas tengan anchos fijos.
+ Mediante el uso`StartTable` , le estamos diciendo a Aspose.Words que estamos a punto de crear una tabla.`InsertCell` El método agrega la primera celda y`AutoFit` garantiza que nuestras columnas tengan anchos fijos.
 
 ## Paso 3: Formatear la primera fila
 

@@ -105,7 +105,7 @@ Az Aspose.Words egyszerre támogatja egy vízjel hozzáadását. Több vízjel h
 
 ### Beállíthatom a vízjel helyzetét?
 
-A`WatermarkLayout`tulajdonság határozza meg a tájolást, de a pontos pozicionálási beállítások közvetlenül nem támogatottak. Előfordulhat, hogy a pontos elhelyezéshez más technikákat kell alkalmaznia.
+ A`WatermarkLayout`tulajdonság határozza meg a tájolást, de a pontos pozicionálási beállítások közvetlenül nem támogatottak. Előfordulhat, hogy a pontos elhelyezéshez más technikákat kell alkalmaznia.
 
 ### Mi a teendő, ha félig átlátszó vízjelre van szükségem?
 

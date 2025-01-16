@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## 3단계: DocumentBuilder 초기화
 
-그만큼`DocumentBuilder` 는 페인트브러시와 같습니다. 문서에 콘텐츠를 추가하는 데 도움이 됩니다. 초기화해 보겠습니다.
+ 그만큼`DocumentBuilder` 는 페인트브러시와 같습니다. 문서에 콘텐츠를 추가하는 데 도움이 됩니다. 초기화해 보겠습니다.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 작업하기 위한 강력한 라이브러리입니다. 문서 만들기 및 편집부터 다양한 형식 간 변환까지 광범위한 기능을 지원합니다.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
- 네, 다음으로 시작할 수 있습니다.[무료 체험](https://releases.aspose.com/) 기능을 탐색하려면 장기 사용을 위해 다음을 수행할 수 있습니다.[라이센스를 구매하다](https://purchase.aspose.com/buy).
+네, 다음으로 시작할 수 있습니다.[무료 체험](https://releases.aspose.com/) 기능을 탐색하려면 장기 사용을 위해 다음을 수행할 수 있습니다.[라이센스를 구매하다](https://purchase.aspose.com/buy).
 
 ### Aspose.Words에 대한 지원을 받으려면 어떻게 해야 하나요?
  당신은에서 지원을 받을 수 있습니다[Aspose 커뮤니티 포럼](https://forum.aspose.com/c/words/8)질문을 하고 경험을 공유하기에 좋은 곳입니다.

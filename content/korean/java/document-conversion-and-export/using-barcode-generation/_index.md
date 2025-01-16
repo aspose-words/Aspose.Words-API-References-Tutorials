@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## 바코드 생성기 설정
 
- 사용자 정의 바코드 생성기를 설정하려면 다음을 사용하십시오.`FieldOptions` 클래스. 이 예에서 우리는 당신이 다음을 구현했다고 가정합니다.`CustomBarcodeGenerator` 바코드를 생성하는 클래스입니다. 바꾸기`CustomBarcodeGenerator` 실제 바코드 생성 논리와 함께:
+ 사용자 정의 바코드 생성기를 설정하려면 다음을 사용하십시오.`FieldOptions` 클래스. 이 예에서 우리는 당신이 다음을 구현했다고 가정합니다.`CustomBarcodeGenerator`바코드를 생성하는 클래스입니다. 바꾸기`CustomBarcodeGenerator` 실제 바코드 생성 논리와 함께:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

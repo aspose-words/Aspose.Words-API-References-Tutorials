@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-이 단계에서는 지정된 디렉토리에서 Word 문서를 로드합니다. 다음을 반드시 바꾸십시오.`"YOUR DOCUMENT DIRECTORY"`문서가 위치한 실제 경로를 사용합니다.
+이 단계에서는 지정된 디렉토리에서 Word 문서를 로드합니다. 다음을 반드시 바꾸십시오.`"YOUR DOCUMENT DIRECTORY"` 문서가 위치한 실제 경로를 사용합니다.
 
 ## 2단계: 다운샘플링 옵션 구성
 

@@ -133,7 +133,7 @@ Nyní, když jsme nastínili kroky, můžete implementovat každý krok ve svém
 
 ## Závěr
 
-V tomto komplexním průvodci jsme se zabývali procesem rozdělování dokumentů do HTML stránek pomocí Aspose.Words for Java. Dodržováním nastíněných kroků můžete efektivně převést dokumenty Wordu do formátu HTML, čímž se váš obsah stane přístupnějším na webu.
+V tomto komplexním průvodci jsme se zabývali procesem rozdělování dokumentů do HTML stránek pomocí Aspose.Words for Java. Dodržováním nastíněných kroků můžete efektivně převést dokumenty Wordu do formátu HTML, díky čemuž bude váš obsah na webu přístupnější.
 
 ## FAQ
 

@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-في هذا الكود، استبدل`"YOUR DOCUMENT DIRECTORY"`مع المسار الفعلي الذي يوجد به مستندك.
+في هذا الكود، استبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي الذي يوجد به مستندك.
 
 ## الخطوة 2: تعيين موضع الحاشية السفلية
 
@@ -93,4 +93,4 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
 
 ### أين يمكنني العثور على المزيد من الوثائق التفصيلية لـ Aspose.Words لـ .NET؟
 
-الوثائق التفصيلية متاحة[هنا](https://reference.aspose.com/words/net/).
+ الوثائق التفصيلية متاحة[هنا](https://reference.aspose.com/words/net/).

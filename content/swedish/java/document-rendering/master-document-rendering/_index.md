@@ -48,7 +48,7 @@ Document doc = new Document(stream);
 Document doc = new Document("https://example.com/document.docx");
 ```
 
-### Åtkomst till dokumentinnehåll
+### Få åtkomst till dokumentinnehåll
 
 När dokumentet har laddats kan du komma åt dess innehåll, stycken, tabeller, bilder och andra element med hjälp av Aspose.Words rika API.
 
@@ -101,8 +101,6 @@ pageSetup.setOrientation(Orientation.LANDSCAPE);
 // Lägg till sidhuvuden och sidfötter
 pageSetup.setHeaderDistance(20);
 pageSetup.setFooterDistance(10);
-pageSetup.setHeaderFooter(HeaderFooterType.HEADER_PRIMARY, new Paragraph(doc, "Header Text"));
-pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "Footer Text"));
 ```
 
 ### Sidhuvud och sidfötter
@@ -110,17 +108,17 @@ pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "F
 Sidhuvuden och sidfötter ger konsekvent information på alla dokumentsidor. Du kan lägga till olika innehåll till primär, första sida och till och med udda/jämna sidhuvuden och sidfötter.
 
 ```java
-// Lägger till innehåll i den primära rubriken
-HeaderFooter primaryHeader = pageSetup.getHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
-Paragraph headerPara = new Paragraph(doc, "This is the header text.");
-primaryHeader.appendChild(headerPara);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Lägger till innehåll i primär sidfot
-HeaderFooter primaryFooter = pageSetup.getHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-Paragraph footerPara = new Paragraph(doc, "Page number: ");
-FieldPage fieldPage = new FieldPage();
-footerPara.appendChild(fieldPage);
-primaryFooter.appendChild(footerPara);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
+
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
+
+doc.save("HeaderFooterDocument.docx");
 ```
 
 ## Återgivning av dokument
@@ -133,13 +131,13 @@ För att rendera ett dokument måste du använda dokumentklassens sparmetod och 
 
 ```java
 // Rendera till PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 
 // Rendera till XPS
-doc.save("output.xps", SaveFormat.XPS);
+doc.save("output.xps");
 
 // Återge till bilder
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setResolution(300);
 doc.save("output.png", saveOptions);
 ```
@@ -161,7 +159,7 @@ När du renderar dokument till bildformat kan du styra bildkvaliteten för att o
 
 ```java
 // Ställ in bildalternativ
-ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageOptions = new ImageSaveOptions();
 imageOptions.setResolution(300);
 imageOptions.setPrettyFormat(true);
 doc.save("output.png", imageOptions);
@@ -179,7 +177,7 @@ Du kan rendera specifika sidor i ett dokument, så att du kan visa specifika avs
 // Återge ett specifikt sidintervall
 int startPage = 3;
 int endPage = 5;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(startPage, endPage));
 doc.save("output.png", saveOptions);
 ```
@@ -191,7 +189,7 @@ Om du bara vill rendera specifika delar av ett dokument, såsom stycken eller av
 ```java
 // Gör specifika stycken
 int[] paragraphIndices = {0, 2, 4};
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(paragraphIndices));
 doc.save("output.png", saveOptions);
 ```
@@ -203,7 +201,7 @@ För mer detaljerad kontroll kan du rendera enskilda dokumentelement som tabelle
 ```java
 // Gör en specifik tabell
 int tableIndex = 1;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(tableIndex));
 doc.save("output.png", saveOptions);
 ```

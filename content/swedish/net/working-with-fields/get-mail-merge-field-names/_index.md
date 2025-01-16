@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-De`Aspose.Words` namnutrymme ger dig tillgång till alla klasser och metoder som behövs för att manipulera Word-dokument, medan`System` används för grundläggande funktioner som konsolutgång.
+ De`Aspose.Words` namnutrymme ger dig tillgång till alla klasser och metoder som behövs för att manipulera Word-dokument, medan`System` används för grundläggande funktioner som konsolutgång.
 
 Låt oss dela upp processen för att extrahera namn på kopplingsfält i en tydlig, steg-för-steg-guide.
 
@@ -73,7 +73,7 @@ Rubrik: Extrahera Mail Merge-fältnamn
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-De`GetFieldNames()`metod returnerar en array av strängar, som var och en representerar ett sammanslagningsfältnamn som finns i dokumentet. Det här är platshållarna du ser i ditt Word-dokument.
+ De`GetFieldNames()`metod returnerar en array av strängar, som var och en representerar ett sammanslagningsfältnamn som finns i dokumentet. Det här är platshållarna du ser i ditt Word-dokument.
 
 ## Steg 4: Visa antalet sammanslagningsfält
 

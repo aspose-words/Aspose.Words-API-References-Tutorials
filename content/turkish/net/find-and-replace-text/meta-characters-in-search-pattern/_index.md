@@ -15,7 +15,7 @@ Aspose.Words for .NET, Word belgelerini programatik olarak işlemek için güçl
 
 Koda geçmeden önce her şeyin ayarlandığından emin olalım:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olması gerekir. Bunu şuradan indirebilirsiniz:[Aspose Sürüm Sayfası](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olması gerekir. Bunu şuradan indirebilirsiniz:[Aspose Sürüm Sayfası](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio veya herhangi bir C# geliştirme ortamı.
 3. Temel C# Bilgisi: C# programlama temellerinin anlaşılması faydalı olacaktır.
 
@@ -39,7 +39,7 @@ Belgeyi düzenlemeye başlamadan önce, belge dizininize giden yolu tanımlaman�
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`Belgelerinizi kaydetmek istediğiniz gerçek yol ile.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgelerinizi kaydetmek istediğiniz gerçek yol ile.
 
 ## Adım 2: Yeni Bir Belge Oluşturma
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## Adım 4: Paragraf Sonu Meta Karakterini Kullanarak Metni Değiştirme
 
- Meta karakterler paragraflar, sekmeler ve satır sonları gibi çeşitli öğeleri temsil edebilir. Burada,`&p` Bir paragraf sonunu temsil etmek için.
+Meta karakterler paragraflar, sekmeler ve satır sonları gibi çeşitli öğeleri temsil edebilir. Burada,`&p` Bir paragraf sonunu temsil etmek için.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");

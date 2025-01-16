@@ -14,7 +14,7 @@ W tym samouczku przyjrzymy się zaawansowanym opcjom zapisywania dokumentów HTM
 Aspose.Words for Java pozwala programowo pracować z dokumentami Word. W tym samouczku skupimy się na zaawansowanych opcjach zapisywania dokumentów HTML, które umożliwiają kontrolowanie sposobu konwersji dokumentów Word na HTML.
 
 ## 2. Informacje o eksporcie w obie strony
-Ten`exportRoundtripInformation` Metoda ta pozwala eksportować dokumenty Word do HTML, zachowując jednocześnie informacje o obiegu zamkniętym. Informacje te mogą być przydatne, gdy chcesz przekonwertować HTML z powrotem do formatu Word bez utraty szczegółów specyficznych dla dokumentu.
+ Ten`exportRoundtripInformation` Metoda ta pozwala eksportować dokumenty Word do HTML, zachowując jednocześnie informacje o obiegu zamkniętym. Informacje te mogą być przydatne, gdy chcesz przekonwertować HTML z powrotem do formatu Word bez utraty szczegółów specyficznych dla dokumentu.
 
 ```java
 public void exportRoundtripInformation() throws Exception {
@@ -29,7 +29,7 @@ public void exportRoundtripInformation() throws Exception {
  Z`exportFontsAsBase64` metodą, możesz eksportować czcionki używane w dokumencie jako dane zakodowane w Base64 w HTML. Zapewnia to, że reprezentacja HTML zachowuje te same style czcionek, co oryginalny dokument Word.
 
 ```java
-@Test
+
 public void exportFontsAsBase64() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -39,10 +39,10 @@ public void exportFontsAsBase64() throws Exception {
 ```
 
 ## 4. Eksportuj zasoby
-Ten`exportResources` Metoda ta pozwala określić typ arkusza stylów CSS i eksportować zasoby czcionek. Można również ustawić folder zasobów i alias dla zasobów w HTML.
+ Ten`exportResources` Metoda ta pozwala określić typ arkusza stylów CSS i eksportować zasoby czcionek. Można również ustawić folder zasobów i alias dla zasobów w HTML.
 
 ```java
-@Test
+
 public void exportResources() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -55,12 +55,23 @@ public void exportResources() throws Exception {
 ```
 
 ## 5. Konwertuj metapliki do formatu EMF lub WMF
-Ten`convertMetafilesToEmfOrWmf`Metoda ta umożliwia konwersję metaplików w dokumencie do formatu EMF lub WMF, zapewniając zgodność i płynne renderowanie w formacie HTML.
+ Ten`convertMetafilesToEmfOrWmf`Metoda ta umożliwia konwersję metaplików w dokumencie do formatu EMF lub WMF, zapewniając zgodność i płynne renderowanie w formacie HTML.
 
 ```java
-@Test
+
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    // Fragment kodu nie został pokazany ze względu na zwięzłość.
+
+	string dataDir = "Your Document Directory";
+    Document doc = new Document();
+	DocumentBuilder builder = new DocumentBuilder(doc);
+
+	builder.write("Here is an image as is: ");
+	builder.insertHtml(
+		"<img src=\"data:image/png;base64,\r\n                    iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP\r\n                    C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA\r\n                    AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J\r\n                    REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq\r\n                    ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0\r\n vr4MkhoXe0rZigAAAABJRU5ErkJggg==\" alt=\"Czerwona kropka\" />");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(); { saveOptions.setMetafileFormat(HtmlMetafileFormat.EMF_OR_WMF); }
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
 }
 ```
 
@@ -68,9 +79,19 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
  Użyj`convertMetafilesToSvg` metoda konwersji metaplików do formatu SVG. Ten format jest idealny do wyświetlania grafiki wektorowej w dokumentach HTML.
 
 ```java
-@Test
+
 public void convertMetafilesToSvg() throws Exception {
-    // Fragment kodu nie został pokazany ze względu na zwięzłość.
+	string dataDir = "Your Document Directory";
+    Document doc = new Document();
+	DocumentBuilder builder = new DocumentBuilder(doc);
+	
+	builder.write("Here is an SVG image: ");
+	builder.insertHtml(
+		"<svg height='210' width='500'>\r\n                <polygon points='100,10 40,198 190,78 10,78 160,198' \r\n                    style='fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;' />\r\n            </svg> ");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(); { saveOptions.setMetafileFormat(HtmlMetafileFormat.SVG); }
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 }
 ```
 
@@ -78,7 +99,7 @@ public void convertMetafilesToSvg() throws Exception {
  Z`addCssClassNamePrefix` metodą, możesz dodać prefiks do nazw klas CSS w eksportowanym HTML. Pomaga to zapobiegać konfliktom z istniejącymi stylami.
 
 ```java
-@Test
+
 public void addCssClassNamePrefix() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -89,46 +110,81 @@ public void addCssClassNamePrefix() throws Exception {
 ```
 
 ## 8. Eksportuj adresy URL CID dla zasobów MHTML
-Ten`exportCidUrlsForMhtmlResources` Metoda jest używana podczas zapisywania dokumentów w formacie MHTML. Pozwala ona na eksportowanie adresów URL Content-ID dla zasobów.
+ Ten`exportCidUrlsForMhtmlResources` Metoda jest używana podczas zapisywania dokumentów w formacie MHTML. Pozwala ona na eksportowanie adresów URL Content-ID dla zasobów.
 
 ```java
-@Test
+
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    // Fragment kodu nie został pokazany ze względu na zwięzłość.
+	string dataDir = "Your Document Directory";
+    Document doc = new Document(dataDir + "Content-ID.docx");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.MHTML);
+	{
+		saveOptions.setPrettyFormat(true); saveOptions.setExportCidUrlsForMhtmlResources(true);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
 }
 ```
 
 ## 9. Rozwiąż nazwy czcionek
-Ten`resolveFontNames` Metoda ta pomaga rozpoznawać nazwy czcionek podczas zapisywania dokumentów w formacie HTML, zapewniając spójne renderowanie na różnych platformach.
+ Ten`resolveFontNames` Metoda ta pomaga rozpoznawać nazwy czcionek podczas zapisywania dokumentów w formacie HTML, zapewniając spójne renderowanie na różnych platformach.
 
 ```java
-@Test
+
 public void resolveFontNames() throws Exception {
-    // Fragment kodu nie został pokazany ze względu na zwięzłość.
+    
+	string dataDir = "Your Document Directory";
+	Document doc = new Document(dataDir + "Missing font.docx");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.HTML);
+	{
+		saveOptions.setPrettyFormat(true); saveOptions.setResolveFontNames(true);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 }
 ```
 
 ## 10. Eksportuj pole formularza wprowadzania tekstu jako tekst
-Ten`exportTextInputFormFieldAsText` Metoda eksportuje pola formularza jako zwykły tekst w formacie HTML, dzięki czemu można je łatwo odczytać i edytować.
+ Ten`exportTextInputFormFieldAsText`Metoda eksportuje pola formularza jako zwykły tekst w formacie HTML, dzięki czemu można je łatwo odczytać i edytować.
 
 ```java
-@Test
+
 public void exportTextInputFormFieldAsText() throws Exception {
-    // Fragment kodu nie został pokazany ze względu na zwięzłość.
+    
+	string dataDir = "Your Document Directory";
+	Document doc = new Document(dataDir + "Rendering.docx");
+
+	String imagesDir = Path.combine(dataDir, "Images");
+
+	// Podany folder musi istnieć i powinien być pusty.
+	if (Directory.exists(imagesDir))
+		Directory.delete(imagesDir, true);
+
+	Directory.createDirectory(imagesDir);
+
+	// Ustaw opcję eksportowania pól formularza jako zwykłego tekstu, a nie jako elementów wejściowych HTML.
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.HTML);
+	{
+		saveOptions.setExportTextInputFormFieldAsText(true); saveOptions.setImagesFolder(imagesDir);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
 }
 ```
 
-## 11. Wnioski
-tym samouczku przyjrzeliśmy się zaawansowanym opcjom zapisywania dokumentów HTML udostępnianym przez Aspose.Words dla Java. Opcje te dają Ci szczegółową kontrolę nad procesem konwersji, umożliwiając tworzenie dokumentów HTML, które ściśle przypominają oryginalne dokumenty Word.
+## Wniosek
+W tym samouczku przyjrzeliśmy się zaawansowanym opcjom zapisywania dokumentów HTML udostępnianym przez Aspose.Words dla Java. Opcje te dają Ci szczegółową kontrolę nad procesem konwersji, umożliwiając tworzenie dokumentów HTML, które ściśle przypominają oryginalne dokumenty Word.
 
-## 12. Najczęściej zadawane pytania
+## Najczęściej zadawane pytania
 Poniżej znajdują się najczęściej zadawane pytania dotyczące pracy z opcjami zapisywania dokumentów Java i HTML w Aspose.Words:
 
 ### P1: W jaki sposób mogę przekonwertować HTML z powrotem do formatu Word za pomocą Aspose.Words dla Java?
  Aby przekonwertować HTML z powrotem do formatu Word, możesz skorzystać z interfejsu API Aspose.Words`load` metoda ładowania dokumentu HTML i zapisywania go w formacie Word.
 
 ### P2: Czy mogę dostosować style CSS podczas eksportowania do HTML?
- Tak, możesz dostosować style CSS, modyfikując arkusze stylów używane w kodzie HTML lub korzystając z`addCssClassNamePrefix` metoda dodawania prefiksu do nazw klas CSS.
+Tak, możesz dostosować style CSS, modyfikując arkusze stylów używane w kodzie HTML lub korzystając z`addCssClassNamePrefix` metoda dodawania prefiksu do nazw klas CSS.
 
 ### P3: Czy istnieje sposób na optymalizację wyjścia HTML do wyświetlania w sieci?
 Tak, możesz zoptymalizować wyjście HTML do wyświetlania w Internecie, konfigurując opcje takie jak eksportowanie czcionek jako Base64 i konwersja metaplików do SVG.

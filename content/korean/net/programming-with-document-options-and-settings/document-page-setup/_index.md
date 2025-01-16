@@ -94,4 +94,4 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 중국어, 일본어 등 아시아 언어를 포함한 다양한 언어를 지원합니다.
 
 ### 더 자세한 문서는 어디에서 볼 수 있나요?
-자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
+ 자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).

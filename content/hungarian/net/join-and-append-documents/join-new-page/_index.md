@@ -31,7 +31,7 @@ Kövesse az alábbi lépéseket a dokumentumok összekapcsolásához és hozzáf
 
 ## 1. lépés: Állítsa be projektjét
 
-Kezdje egy új C# konzolalkalmazás létrehozásával a Visual Studióban. Telepítse az Aspose.Words NuGet csomagot a projektjébe.
+Kezdje egy új C# konzolalkalmazás létrehozásával a Visual Studióban. Telepítse az Aspose.Words NuGet csomagot a projektbe.
 
 ## 2. lépés: Töltse be a forrás és a cél dokumentumokat
 

@@ -17,16 +17,16 @@ campi modulo sono elementi interattivi all'interno di un documento che consenton
 
 Prima di addentrarci nella creazione e nella padronanza dei campi del modulo, impostiamo il nostro ambiente e prendiamo familiarità con Aspose.Words per Python. Segui questi passaggi per iniziare:
 
-1. **Install Aspose.Words:** Iniziamo installando la libreria Aspose.Words per Python utilizzando il seguente comando pip:
+1. Installa Aspose.Words: inizia installando la libreria Aspose.Words per Python utilizzando il seguente comando pip:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Importa la libreria nel tuo script Python per iniziare a utilizzare le sue funzionalità.
+2. Importa la libreria: importa la libreria nel tuo script Python per iniziare a utilizzare le sue funzionalità.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Una volta completata la configurazione, passiamo ai concetti fondamentali della creazione e della gestione dei campi dei moduli.
@@ -41,7 +41,7 @@ I campi di immissione testo consentono agli utenti di immettere testo. Per crear
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Caselle di controllo e pulsanti di scelta
@@ -50,12 +50,12 @@ Le caselle di controllo e i pulsanti di scelta sono usati per le selezioni a sce
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Elenchi a discesa
@@ -64,7 +64,7 @@ Gli elenchi a discesa forniscono una selezione di opzioni per gli utenti. Creane
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Selettori di date
@@ -73,7 +73,7 @@ I selettori di data consentono agli utenti di selezionare le date in modo pratic
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Impostazione delle proprietà dei campi del modulo
@@ -122,7 +122,7 @@ campi di immissione testo sono versatili e comunemente usati per catturare infor
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Una volta creato il campo, puoi impostarne le proprietà, come nome, valore predefinito e testo segnaposto. Vediamo come fare:
@@ -150,14 +150,14 @@ Per creare un campo modulo casella di controllo, utilizzare
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Per i pulsanti di scelta, puoi crearli utilizzando il tipo di forma OLE_OBJECT:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Dopo aver creato questi campi, puoi personalizzarne le proprietà, come il nome, la selezione predefinita e il testo dell'etichetta:
@@ -183,7 +183,7 @@ Gli elenchi a discesa sono utili per gli scenari in cui gli utenti devono scegli
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Dopo aver creato l'elenco a discesa, è possibile specificare l'elenco delle opzioni disponibili per gli utenti:
@@ -211,7 +211,7 @@ I selettori di date semplificano il processo di acquisizione delle date dagli ut
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Dopo aver creato il selettore data, puoi impostarne le proprietà, come il nome e la data predefinita:
@@ -228,11 +228,7 @@ I selettori di data migliorano l'esperienza utente durante l'acquisizione delle 
 
 ## Conclusione
 
-Padroneggiare i campi modulo e l'acquisizione dati nei documenti Word è un'abilità preziosa che ti consente di creare documenti interattivi ed efficienti per la raccolta dati. Aspose.Words per Python fornisce un set completo di strumenti per creare, personalizzare ed estrarre dati dai campi modulo. Dai semplici campi di immissione testo ai calcoli complessi e alla formattazione condizionale, le possibilità sono vaste.
-
 In questa guida abbiamo esplorato i fondamenti dei campi modulo, i tipi di campi modulo, l'impostazione delle proprietà e la personalizzazione del loro comportamento. Abbiamo anche toccato le best practice per la progettazione dei moduli e offerto spunti per ottimizzare i moduli dei documenti per i motori di ricerca.
-
-Sfruttando la potenza di Aspose.Words per Python, puoi creare documenti che non solo catturano i dati in modo efficace, ma migliorano anche il coinvolgimento degli utenti e semplificano i flussi di lavoro di elaborazione dei dati. Ora sei pronto per intraprendere il tuo viaggio per diventare un maestro dei campi modulo e dell'acquisizione dati nei documenti Word.
 
 ## Domande frequenti
 

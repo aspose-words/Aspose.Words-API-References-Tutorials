@@ -16,7 +16,7 @@ url: /hi/net/document-protection/unrestricted-editable-regions/
 शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
 
 1.  .NET के लिए Aspose.Words: यदि आपने अभी तक इसे डाउनलोड नहीं किया है, तो इसे डाउनलोड करें[यहाँ](https://releases.aspose.com/words/net/).
-2.  एक वैध Aspose लाइसेंस: आप एक अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
+2. एक वैध Aspose लाइसेंस: आप एक अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
 3. विजुअल स्टूडियो: कोई भी नवीनतम संस्करण ठीक काम करेगा।
 4. C# और .NET का बुनियादी ज्ञान: इससे आपको कोड का अनुसरण करने में मदद मिलेगी।
 

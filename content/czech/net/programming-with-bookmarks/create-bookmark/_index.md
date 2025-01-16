@@ -17,7 +17,7 @@ Než začneme, musíte mít následující:
 
 1.  Aspose.Words for .NET Library: Stáhněte a nainstalujte z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí .NET.
-3. Základní znalost C#: Pochopení základních pojmů programování v C#.
+3. Základní znalost C#: Pochopení základních konceptů programování v C#.
 
 ## Importovat jmenné prostory
 

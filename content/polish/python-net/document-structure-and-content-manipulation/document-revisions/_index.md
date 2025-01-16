@@ -16,10 +16,10 @@ Rewizje dokumentów obejmują śledzenie zmian wprowadzanych do dokumentu w czas
 
 ## Konfigurowanie Aspose.Words dla Pythona
 
- Zanim zaczniemy, upewnij się, że masz zainstalowany Aspose.Words dla Pythona. Możesz go pobrać ze strony[Tutaj](https://releases.aspose.com/words/python/). Po zainstalowaniu możesz zaimportować niezbędne moduły do skryptu Python, aby rozpocząć.
+Zanim zaczniemy, upewnij się, że masz zainstalowany Aspose.Words dla Pythona. Możesz go pobrać ze strony[Tutaj](https://releases.aspose.com/words/python/). Po zainstalowaniu możesz zaimportować niezbędne moduły do skryptu Python, aby rozpocząć.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Ładowanie i wyświetlanie dokumentu
@@ -27,7 +27,7 @@ import asposewords
 Aby pracować z dokumentem, musisz go najpierw załadować do swojej aplikacji Python. Użyj poniższego fragmentu kodu, aby załadować dokument i wyświetlić jego zawartość:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 Gdy w dokumencie zostaną wprowadzone jakiekolwiek zmiany, Aspose.Words może automatycznie śledzić je jako rewizje. Na przykład, jeśli chcemy zastąpić określone słowo, możemy to zrobić, śledząc zmianę:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words pozwala na porównanie dwóch dokumentów w celu zwizualizowania różnic między nimi:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 Współpracownicy mogą dodawać komentarze i adnotacje do dokumentu. Możesz programowo zarządzać tymi elementami:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 Możesz dostosować sposób wyświetlania poprawek w dokumencie, np. zmieniając kolor wstawianego i usuwanego tekstu:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Zapisywanie i udostępnianie dokumentów
@@ -98,18 +98,11 @@ doc.save("final_document.docx")
 
 Udostępnij końcowy dokument współpracownikom w celu uzyskania dalszych opinii.
 
-## Wskazówki dotyczące efektywnej współpracy
-
-1. Jasno oznaczaj zmiany, dodając znaczące komentarze.
-2. Przekaż wytyczne dotyczące rewizji wszystkim współpracownikom.
-3. Regularnie przeglądaj i akceptuj/odrzucaj poprawki.
-4. Użyj funkcji porównawczej Aspose.Words, aby uzyskać kompleksową analizę dokumentu.
-
 ## Wniosek
 
 Aspose.Words for Python upraszcza rewizję i śledzenie dokumentów, usprawniając współpracę i zapewniając integralność dokumentów. Dzięki jego potężnym funkcjom możesz usprawnić proces przeglądania, akceptowania i zarządzania zmianami w swoich dokumentach.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak zainstalować Aspose.Words dla języka Python?
 
@@ -129,4 +122,4 @@ Tak, historia rewizji jest zachowywana podczas konwersji dokumentu do innych for
 
 ### Jak mogę programowo akceptować lub odrzucać poprawki?
 
-Można przeglądać kolekcję wersji i programowo akceptować lub odrzucać każdą wersję, korzystając z funkcji API Aspose.Words.
+Można przeglądać kolekcję wersji i programowo akceptować lub odrzucać każdą wersję korzystając z funkcji API Aspose.Words.

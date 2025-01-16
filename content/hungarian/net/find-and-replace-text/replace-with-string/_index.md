@@ -71,7 +71,7 @@ Itt történik az igazi cselekmény. Meg fogjuk találni a „szomorú” szót,
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-A`Replace` módszer egyszerű. Megadjuk a keresendő szót, a helyettesítő szót, valamint a keresés és csere művelet opcióit.
+ A`Replace` módszer egyszerű. Megadjuk a keresendő szót, a helyettesítő szót, valamint a keresés és csere művelet opcióit.
 
 ## 5. lépés: Mentse el a dokumentumot
 

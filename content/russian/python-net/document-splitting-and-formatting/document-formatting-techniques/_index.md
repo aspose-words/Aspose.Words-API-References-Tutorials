@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Применение стилей и размеров шрифтов
-
-Улучшите читаемость и визуальную привлекательность вашего документа, применяя стили и размеры шрифтов. Используйте следующий код, чтобы изменить стиль и размер шрифта абзаца:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Форматирование абзацев и заголовков
+## Форматирование абзацев
 
 Для эффективной структуры документа форматирование абзацев и заголовков имеет решающее значение. Достигните этого с помощью кода ниже:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Работа со списками и маркерами
 
 Списки и маркеры организуют контент и обеспечивают ясность. Реализуйте их с помощью Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Управление макетом страницы и полями
+## Управление макетом страницы
 
 Контролируйте макет страницы и поля для оптимального представления:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Применение стилей и тем

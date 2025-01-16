@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ## 자주 묻는 질문
 
 ###  설정의 목적은 무엇입니까?`LocaleId`?
-그만큼`LocaleId` 날짜 및 기타 로캘에 따른 데이터의 형식이 지정되는 방식에 영향을 미치는 텍스트의 문화권 설정을 지정합니다.
+ 그만큼`LocaleId` 날짜 및 기타 로캘에 따른 데이터의 형식이 지정되는 방식에 영향을 미치는 텍스트의 문화권 설정을 지정합니다.
 
 ### 독일어 외에 다른 로케일을 사용할 수 있나요?
  네, 설정할 수 있습니다`LocaleId`유효한 로케일 식별자로. 예를 들어, 영어(미국)의 경우 1033.

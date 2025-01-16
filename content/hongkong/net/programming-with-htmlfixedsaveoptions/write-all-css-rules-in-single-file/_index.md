@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-s
 ---
 ## 介紹
 
-將 Word 文件轉換為 HTML 時，您是否曾發現自己陷入了散落各處的 CSS 規則網絡中？別擔心！今天，我們將深入研究 Aspose.Words for .NET 的一個巧妙功能，它允許您在單一檔案中編寫所有 CSS 規則。這不僅可以整理您的程式碼，還可以讓您的生活變得更加輕鬆。繫好安全帶，讓我們開始這段更乾淨、更有效率的 HTML 輸出之旅吧！
+將 Word 文件轉換為 HTML 時，您是否曾發現自己陷入了散落各處的 CSS 規則網絡中？不用擔心！今天，我們將深入研究 Aspose.Words for .NET 的一個巧妙功能，它允許您在單一檔案中編寫所有 CSS 規則。這不僅可以整理您的程式碼，還可以讓您的生活變得更加輕鬆。繫好安全帶，讓我們開始這段更乾淨、更有效率的 HTML 輸出之旅吧！
 
 ## 先決條件
 
@@ -88,5 +88,5 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 ### Aspose.Words for .NET 還可以轉換為哪些其他格式？
 Aspose.Words for .NET 支援各種格式，包括 PDF、TXT 以及 JPEG 和 PNG 等圖片格式。
 
-### 在哪裡可以找到更多關於 Aspose.Words for .NET 的資源？
+### 在哪裡可以找到更多有關 Aspose.Words for .NET 的資源？
 查看[文件](https://reference.aspose.com/words/net/)取得全面的指南和 API 參考。

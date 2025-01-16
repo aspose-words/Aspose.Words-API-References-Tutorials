@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Barkod Oluşturucuyu Ayarla
 
- Özel bir barkod oluşturucuyu kullanarak ayarlayın`FieldOptions` sınıf. Bu örnekte, bir`CustomBarcodeGenerator` barkodu oluşturmak için sınıf. Değiştir`CustomBarcodeGenerator` gerçek barkod oluşturma mantığınızla:
+ Özel bir barkod oluşturucuyu kullanarak ayarlayın`FieldOptions` sınıf. Bu örnekte, bir`CustomBarcodeGenerator`barkodu oluşturmak için sınıf. Değiştir`CustomBarcodeGenerator` gerçek barkod oluşturma mantığınızla:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

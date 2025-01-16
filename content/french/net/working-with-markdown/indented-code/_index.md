@@ -76,7 +76,7 @@ Ici, nous définissons le format de paragraphe sur notre style personnalisé et 
 
 ## Conclusion
 
-Et voilà, vous disposez d'un moyen simple et efficace d'ajouter et de mettre en forme des blocs de code en retrait dans vos documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez améliorer la lisibilité des extraits de code et ajouter une touche professionnelle à vos documents. Que vous prépariez des rapports techniques, de la documentation de code ou tout autre type de contenu nécessitant du code formaté, Aspose.Words fournit les outils dont vous avez besoin pour effectuer le travail efficacement.
+Et voilà, vous disposez d'un moyen simple mais efficace d'ajouter et de styliser des blocs de code en retrait dans vos documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez améliorer la lisibilité des extraits de code et ajouter une touche professionnelle à vos documents. Que vous prépariez des rapports techniques, de la documentation de code ou tout autre type de contenu nécessitant du code formaté, Aspose.Words fournit les outils dont vous avez besoin pour effectuer le travail efficacement.
 
 N'hésitez pas à expérimenter différents styles et paramètres pour adapter l'apparence de vos blocs de code à vos besoins. Bon codage !
 

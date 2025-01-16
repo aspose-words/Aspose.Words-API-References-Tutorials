@@ -20,7 +20,7 @@ Trong bối cảnh kỹ thuật số ngày nay, việc quản lý và xử lý t
 Để bắt đầu hành trình tự động hóa này, bạn cần cài đặt Aspose.Words for Python. Bạn có thể tải xuống từ[Trang web Aspose](https://releases.aspose.com/words/python/). Sau khi cài đặt, bạn có thể khởi tạo dự án Python và nhập các mô-đun cần thiết.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Hiểu về Macro VBA và Vai trò của chúng
@@ -46,7 +46,7 @@ Việc tạo tài liệu theo chương trình được đơn giản hóa với A
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ Macro VBA tích hợp với Aspose.Words Python mở ra cánh cửa cho việc t
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content

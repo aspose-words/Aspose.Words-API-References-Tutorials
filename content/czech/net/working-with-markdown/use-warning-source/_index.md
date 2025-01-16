@@ -16,7 +16,7 @@ Museli jste někdy spravovat a formátovat dokumenty programově? Pokud ano, pra
 Než se pustíme do toho natvrdo, ujistěte se, že máte připraveno následující:
 
 1. Visual Studio: Bude stačit jakákoli nejnovější verze.
-2.  Aspose.Words pro .NET: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+2.  Aspose.Words pro .NET: Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 3. Základní znalost C#: Znát svou cestu v C# vám pomůže hladce pokračovat.
 4.  Ukázkový soubor DOCX: V tomto tutoriálu použijeme soubor s názvem`Emphases markdown warning.docx`.
 

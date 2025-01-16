@@ -101,8 +101,6 @@ pageSetup.setOrientation(Orientation.LANDSCAPE);
 // Thêm tiêu đề và chân trang
 pageSetup.setHeaderDistance(20);
 pageSetup.setFooterDistance(10);
-pageSetup.setHeaderFooter(HeaderFooterType.HEADER_PRIMARY, new Paragraph(doc, "Header Text"));
-pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "Footer Text"));
 ```
 
 ### Tiêu đề và Chân trang
@@ -110,17 +108,17 @@ pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "F
 Tiêu đề và chân trang cung cấp thông tin nhất quán trên các trang tài liệu. Bạn có thể thêm nội dung khác nhau vào tiêu đề và chân trang chính, trang đầu tiên và thậm chí là tiêu đề và chân trang chẵn/lẻ.
 
 ```java
-// Thêm nội dung vào tiêu đề chính
-HeaderFooter primaryHeader = pageSetup.getHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
-Paragraph headerPara = new Paragraph(doc, "This is the header text.");
-primaryHeader.appendChild(headerPara);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Thêm nội dung vào chân trang chính
-HeaderFooter primaryFooter = pageSetup.getHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-Paragraph footerPara = new Paragraph(doc, "Page number: ");
-FieldPage fieldPage = new FieldPage();
-footerPara.appendChild(fieldPage);
-primaryFooter.appendChild(footerPara);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
+
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
+
+doc.save("HeaderFooterDocument.docx");
 ```
 
 ## Kết xuất tài liệu
@@ -133,13 +131,13 @@ Sau khi bạn đã xử lý và chỉnh sửa tài liệu, đã đến lúc chuy
 
 ```java
 // Kết xuất thành PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 
 // Kết xuất thành XPS
-doc.save("output.xps", SaveFormat.XPS);
+doc.save("output.xps");
 
 // Kết xuất thành hình ảnh
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setResolution(300);
 doc.save("output.png", saveOptions);
 ```
@@ -161,7 +159,7 @@ Khi chuyển đổi tài liệu sang định dạng hình ảnh, bạn có thể
 
 ```java
 // Thiết lập tùy chọn hình ảnh
-ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageOptions = new ImageSaveOptions();
 imageOptions.setResolution(300);
 imageOptions.setPrettyFormat(true);
 doc.save("output.png", imageOptions);
@@ -179,7 +177,7 @@ Bạn có thể hiển thị các trang cụ thể của tài liệu, cho phép 
 // Hiển thị phạm vi trang cụ thể
 int startPage = 3;
 int endPage = 5;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(startPage, endPage));
 doc.save("output.png", saveOptions);
 ```
@@ -191,7 +189,7 @@ Nếu bạn chỉ muốn hiển thị các phần cụ thể của tài liệu, 
 ```java
 // Hiển thị các đoạn văn cụ thể
 int[] paragraphIndices = {0, 2, 4};
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(paragraphIndices));
 doc.save("output.png", saveOptions);
 ```
@@ -203,7 +201,7 @@ doc.save("output.png", saveOptions);
 ```java
 // Hiển thị bảng cụ thể
 int tableIndex = 1;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(tableIndex));
 doc.save("output.png", saveOptions);
 ```

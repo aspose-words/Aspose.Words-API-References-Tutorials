@@ -83,7 +83,7 @@ Ve işte oldu! Aspose.Words for .NET'te alan güncelleme kültür kaynağını b
 ## SSS
 
 ###  Bu ayarın amacı nedir?`LocaleId`?
-The`LocaleId` Metnin kültür ayarlarını belirtir; bu ayarlar tarihlerin ve diğer yerel ayarlara duyarlı verilerin nasıl biçimlendirileceğini etkiler.
+ The`LocaleId` Metnin kültür ayarlarını belirtir; bu ayarlar tarihlerin ve diğer yerel ayarlara duyarlı verilerin nasıl biçimlendirileceğini etkiler.
 
 ### Almanca dışında farklı bir yerel ayar kullanabilir miyim?
  Evet, ayarlayabilirsiniz`LocaleId`herhangi bir geçerli yerel tanımlayıcıya. Örneğin, İngilizce (ABD) için 1033.

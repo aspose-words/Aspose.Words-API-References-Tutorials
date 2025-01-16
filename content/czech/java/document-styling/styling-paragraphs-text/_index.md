@@ -182,25 +182,11 @@ V tomto příkladu nastavíme zarovnání odstavce na
 Vytváření seznamů s odrážkami nebo číslováním je běžný úkol formátování dokumentu. Díky Aspose.Words pro Java je to jednoduché. Zde je návod, jak vytvořit seznam s odrážkami:
 
 ```java
-// Vytvořte nový dokument
-Document doc = new Document();
-
-// Vytvořte seznam
-List list = new List(doc);
-
-// Přidejte položky seznamu s odrážkami
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// Přidejte seznam do dokumentu
-doc.getFirstSection().getBody().appendChild(list);
-
-// Uložte dokument
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 V tomto kódu vytvoříme seznam s odrážkami se třemi položkami.
@@ -210,24 +196,21 @@ V tomto kódu vytvoříme seznam s odrážkami se třemi položkami.
 Hypertextové odkazy jsou nezbytné pro přidání interaktivity do vašich dokumentů. Aspose.Words pro Java vám umožňuje snadno vkládat hypertextové odkazy. Zde je příklad:
 
 ```java
-// Vytvořte nový dokument
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Vytvořte odstavec
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// Vytvořte hypertextový odkaz
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// Vložte hypertextový odkaz a zdůrazněte jej vlastním formátováním.
+// Hypertextový odkaz bude klikatelný kus textu, který nás zavede na místo uvedené v adrese URL.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", false);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// Přidejte odstavec do dokumentu
-doc.getFirstSection().getBody().appendChild(para);
-
-// Uložte dokument
-doc.save("HyperlinkDocument.docx");
+// Ctrl + kliknutí levým tlačítkem myši na odkaz v textu v aplikaci Microsoft Word nás přesměruje na adresu URL v novém okně webového prohlížeče.
+doc.save("InsertHyperlink.docx");
 ```
 
 Tento kód vloží hypertextový odkaz na „https://www.example.com“ s textem „Navštivte example.com“.
@@ -237,23 +220,7 @@ Tento kód vloží hypertextový odkaz na „https://www.example.com“ s textem
 Dokumenty často vyžadují vizuální prvky, jako jsou obrázky a tvary. Aspose.Words for Java umožňuje bezproblémové vkládání obrázků a tvarů. Postup přidání obrázku:
 
 ```java
-// Vytvořte nový dokument
-Document doc = new Document();
-
-// Vytvořte odstavec
-Paragraph para = new Paragraph(doc);
-
-// Načtěte obrázek ze souboru
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// Přidejte odstavec do dokumentu
-doc.getFirstSection().getBody().appendChild(para);
-
-// Uložte dokument
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 V tomto kódu načteme obrázek ze souboru a vložíme ho do dokumentu.
@@ -287,27 +254,20 @@ V tomto příkladu jsme nastavili stejné okraje 1 palec na všech stranách str
 Záhlaví a zápatí jsou zásadní pro přidávání konzistentních informací na každou stránku dokumentu. Zde je návod, jak pracovat se záhlavím a zápatím:
 
 ```java
-// Vytvořte nový dokument
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Přístup k záhlaví a zápatí první sekce
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// Přidejte obsah do záhlaví
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// Přidejte obsah do zápatí
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// Přidejte obsah do těla dokumentu
+// Přidejte obsah do těla dokumentu.
 // ...
 
-// Uložte dokument
+// Uložte dokument.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ V tomto kódu přidáváme obsah do záhlaví i zápatí dokumentu.
 Tabulky představují účinný způsob, jak organizovat a prezentovat data ve vašich dokumentech. Aspose.Words for Java poskytuje rozsáhlou podporu pro práci s tabulkami. Zde je příklad vytvoření tabulky:
 
 ```java
-// Vytvořte nový dokument
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Vytvořte tabulku se 3 řádky a 3 sloupci
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// Přidejte obsah do buněk tabulky
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//Přidejte tabulku do dokumentu
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// Uložte dokument
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// Změna formátování ji použije na aktuální buňku,
+// a všechny nové buňky, které následně vytvoříme pomocí stavitele.
+// To neovlivní buňky, které jsme přidali dříve.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// Zvětšete výšku řádku tak, aby odpovídala svislému textu.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 V tomto kódu vytvoříme jednoduchou tabulku se třemi řádky a třemi sloupci.
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // Uložte dokument jako PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 Tento fragment kódu uloží dokument jako soubor PDF.
@@ -393,7 +372,7 @@ Ano, můžete snadno převést dokument do PDF pomocí Aspose.Words for Java. Zd
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### Jak formátuji text jako
@@ -414,7 +393,7 @@ Nejnovější verzi Aspose.Words for Java najdete na webu Aspose nebo v úloži�
 Ano, Aspose.Words for Java je kompatibilní s Java 11 a novějšími verzemi.
 
 ### Jak mohu nastavit okraje stránky pro konkrétní části mého dokumentu?
-Okraje stránky pro konkrétní části dokumentu můžete nastavit pomocí`PageSetup` třída. Zde je příklad:
+ Okraje stránky pro konkrétní části dokumentu můžete nastavit pomocí`PageSetup` třída. Zde je příklad:
 
 ```java
 Section section = doc.getSections().get(0); // Získejte první sekci
@@ -427,6 +406,6 @@ pageSetup.setBottomMargin(72); // Spodní okraj v bodech
 
 ## Závěr
 
-V tomto komplexním průvodci jsme prozkoumali výkonné možnosti Aspose.Words for Java pro stylování odstavců a textu v dokumentech. Naučili jste se, jak vytvářet, formátovat a vylepšovat dokumenty programově, od základní manipulace s textem až po pokročilé funkce. Aspose.Words for Java umožňuje vývojářům efektivně automatizovat úlohy formátování dokumentů. Pokračujte v procvičování a experimentování s různými funkcemi, abyste se naučili stylování dokumentů pomocí Aspose.Words for Java.
+tomto komplexním průvodci jsme prozkoumali výkonné možnosti Aspose.Words for Java pro stylování odstavců a textu v dokumentech. Naučili jste se, jak vytvářet, formátovat a vylepšovat dokumenty programově, od základní manipulace s textem až po pokročilé funkce. Aspose.Words for Java umožňuje vývojářům efektivně automatizovat úlohy formátování dokumentů. Pokračujte v procvičování a experimentování s různými funkcemi, abyste se naučili stylování dokumentů pomocí Aspose.Words for Java.
 
 Nyní, když dobře rozumíte tomu, jak stylovat odstavce a text v dokumentech pomocí Aspose.Words for Java, jste připraveni vytvářet krásně formátované dokumenty přizpůsobené vašim konkrétním potřebám. Šťastné kódování!

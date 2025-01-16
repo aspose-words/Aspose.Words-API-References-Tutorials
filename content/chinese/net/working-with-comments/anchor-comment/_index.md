@@ -121,13 +121,13 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 ## 常见问题解答
 
 ### 在 Word 文档中使用锚注释的目的是什么？
-锚点评论用于突出显示和评论文本的特定部分，从而更容易提供反馈和协作处理文档。
+锚点注释用于突出显示和评论文本的特定部分，从而更容易提供反馈和协作处理文档。
 
 ### 我可以向同一文本部分添加多条评论吗？
 是的，您可以通过定义多个评论范围向同一文本部分添加多个评论。
 
 ### Aspose.Words for .NET 可以免费使用吗？
-Aspose.Words for .NET 提供免费试用版，您可以下载[这里](https://releases.aspose.com/) 。如需完整功能，您可以购买许可证[这里](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET 提供免费试用版，您可以下载[这里](https://releases.aspose.com/) 。如需完整功能，您可以购买许可证[这里](https://purchase.aspose.com/buy).
 
 ### 我可以自定义评论的外观吗？
 虽然 Aspose.Words 注重功能，但 Word 文档中注释的外观通常由 Word 本身控制。

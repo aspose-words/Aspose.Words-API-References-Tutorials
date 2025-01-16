@@ -61,7 +61,7 @@ Mając teraz dostęp do tabeli, następnym krokiem jest pobranie pierwszego wier
 Row firstRow = table.FirstRow;
 ```
 
-Ten`FirstRow` Właściwość daje nam pierwszy wiersz w tabeli. Teraz jesteśmy gotowi, aby rozpocząć modyfikowanie jego formatowania.
+ Ten`FirstRow` Właściwość daje nam pierwszy wiersz w tabeli. Teraz jesteśmy gotowi, aby rozpocząć modyfikowanie jego formatowania.
 
 ## Krok 4: Modyfikuj obramowania wierszy
 
@@ -71,7 +71,7 @@ Zacznijmy od modyfikacji obramowań pierwszego rzędu. Obramowania mogą znaczą
 firstRow.RowFormat.Borders.LineStyle = LineStyle.None;
 ```
 
- W tym wierszu kodu ustawiamy`LineStyle` granic do`None`, skutecznie usuwając wszelkie obramowania z pierwszego rzędu. Może to być przydatne, jeśli chcesz uzyskać czysty, bezobramkowy wygląd rzędu nagłówka.
+ W tym wierszu kodu ustawiamy`LineStyle` granic do`None`, skutecznie usuwając wszelkie obramowania z pierwszego rzędu. Może to być przydatne, jeśli chcesz uzyskać czysty, bezramkowy wygląd rzędu nagłówka.
 
 ## Krok 5: Dostosuj wysokość rzędu
 

@@ -89,7 +89,7 @@ Menetapkan arah teks dalam dokumen Word merupakan proses yang mudah dengan Aspos
 
 ###  Apakah yang`DocumentDirection` property used for?
 
-Itu`DocumentDirection` properti di`TxtLoadOptions` menentukan arah teks untuk dokumen. Dapat diatur ke`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , atau`DocumentDirection.RightToLeft`.
+ Itu`DocumentDirection` properti di`TxtLoadOptions` menentukan arah teks untuk dokumen. Dapat diatur ke`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , atau`DocumentDirection.RightToLeft`.
 
 ### Bisakah saya mengatur arah teks untuk paragraf tertentu, bukan keseluruhan dokumen?
 

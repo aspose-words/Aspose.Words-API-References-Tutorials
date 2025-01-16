@@ -17,16 +17,16 @@ Kolom formulir adalah elemen interaktif dalam dokumen yang memungkinkan pengguna
 
 Sebelum kita mempelajari cara membuat dan menguasai kolom formulir, mari kita siapkan lingkungan kita dan biasakan diri dengan Aspose.Words untuk Python. Ikuti langkah-langkah berikut untuk memulai:
 
-1. **Install Aspose.Words:** Mulailah dengan menginstal pustaka Aspose.Words untuk Python menggunakan perintah pip berikut:
+1. Instal Aspose.Words: Mulailah dengan menginstal Aspose.Words untuk pustaka Python menggunakan perintah pip berikut:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Impor pustaka dalam skrip Python Anda untuk mulai menggunakan fungsinya.
+2. Impor Pustaka: Impor pustaka dalam skrip Python Anda untuk mulai menggunakan fungsinya.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Setelah pengaturan selesai, mari lanjut ke konsep inti dalam membuat dan mengelola kolom formulir.
@@ -41,7 +41,7 @@ Kolom input teks memungkinkan pengguna memasukkan teks. Untuk membuat kolom inpu
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Kotak Centang dan Tombol Radio
@@ -50,12 +50,12 @@ Kotak centang dan tombol radio digunakan untuk pilihan ganda. Berikut cara membu
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Daftar Drop-Down
@@ -64,7 +64,7 @@ Daftar drop-down menyediakan pilihan bagi pengguna. Buat daftar seperti ini:
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Pemilih Tanggal
@@ -73,7 +73,7 @@ Pemilih tanggal memungkinkan pengguna memilih tanggal dengan mudah. Berikut cara
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Mengatur Properti Bidang Formulir
@@ -122,7 +122,7 @@ Kolom input teks bersifat serbaguna dan umum digunakan untuk menangkap informasi
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Setelah kolom dibuat, Anda dapat mengatur propertinya, seperti nama, nilai default, dan teks pengganti. Mari kita lihat cara melakukannya:
@@ -150,14 +150,14 @@ Untuk membuat bidang formulir kotak centang, gunakan
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Untuk tombol radio, Anda dapat membuatnya menggunakan tipe bentuk OLE_OBJECT:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Setelah membuat bidang ini, Anda dapat menyesuaikan propertinya, seperti nama, pilihan default, dan teks label:
@@ -183,7 +183,7 @@ Daftar drop-down berguna untuk skenario saat pengguna perlu memilih opsi dari da
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Setelah membuat daftar drop-down, Anda dapat menentukan daftar opsi yang tersedia bagi pengguna:
@@ -211,7 +211,7 @@ Pemilih tanggal menyederhanakan proses pengambilan tanggal dari pengguna. Pemili
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Setelah membuat pemilih tanggal, Anda dapat mengatur propertinya, seperti nama dan tanggal default:
@@ -228,13 +228,9 @@ Pemilih tanggal meningkatkan pengalaman pengguna saat mengambil tanggal dan mema
 
 ## Kesimpulan
 
-Menguasai bidang formulir dan pengambilan data dalam dokumen Word merupakan keterampilan berharga yang memberdayakan Anda untuk membuat dokumen yang interaktif dan efisien untuk pengumpulan data. Aspose.Words untuk Python menyediakan seperangkat alat yang lengkap untuk membuat, menyesuaikan, dan mengekstrak data dari bidang formulir. Dari bidang input teks sederhana hingga kalkulasi kompleks dan pemformatan bersyarat, kemungkinannya sangat luas.
-
 Dalam panduan ini, kami telah mempelajari dasar-dasar kolom formulir, jenis-jenis kolom formulir, pengaturan properti, dan penyesuaian perilakunya. Kami juga telah membahas praktik terbaik untuk desain formulir dan menawarkan wawasan tentang cara mengoptimalkan formulir dokumen untuk mesin pencari.
 
-Dengan memanfaatkan kekuatan Aspose.Words untuk Python, Anda dapat membuat dokumen yang tidak hanya menangkap data secara efektif tetapi juga meningkatkan keterlibatan pengguna dan menyederhanakan alur kerja pemrosesan data. Sekarang, Anda siap memulai perjalanan untuk menjadi ahli dalam bidang formulir dan penangkapan data dalam dokumen Word.
-
-## Tanya Jawab Umum
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menginstal Aspose.Words untuk Python?
 

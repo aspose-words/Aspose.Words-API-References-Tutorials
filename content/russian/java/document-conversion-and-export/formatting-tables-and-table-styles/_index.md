@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Создайте более крупные границы для первой ячейки этой строки.
+// Создайте более крупные границы для первой ячейки этой строки.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -169,7 +169,7 @@ Aspose.Words for Java — это надежный инструмент, кото
 
 ### 1. Могу ли я использовать пользовательские стили таблиц, не входящие в параметры по умолчанию?
 
-Да, вы можете определять и применять пользовательские стили к своим таблицам с помощью Aspose.Words for Java. Проверьте[документация](https://reference.aspose.com/words/java/) для получения более подробной информации о создании пользовательских стилей.
+ Да, вы можете определять и применять пользовательские стили к своим таблицам с помощью Aspose.Words for Java. Проверьте[документация](https://reference.aspose.com/words/java/) для получения более подробной информации о создании пользовательских стилей.
 
 ### 2. Как применить условное форматирование к таблицам?
 

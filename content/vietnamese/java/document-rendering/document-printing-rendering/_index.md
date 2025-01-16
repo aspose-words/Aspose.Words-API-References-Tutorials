@@ -49,7 +49,7 @@ Việc kết xuất tài liệu là điều cần thiết khi bạn cần chuy�
 
 ```java
 // Chuyển đổi tài liệu sang PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Bạn có thể thay thế`SaveFormat.PDF` với định dạng mong muốn để hiển thị.

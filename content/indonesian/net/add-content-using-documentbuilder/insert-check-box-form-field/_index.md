@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Langkah 3: Menginisialisasi Pembuat Dokumen
 
-Itu`DocumentBuilder` class adalah alat pilihan Anda untuk menambahkan konten ke dokumen. Anggap saja sebagai kuas dan palet Anda.
+ Itu`DocumentBuilder` class adalah alat pilihan Anda untuk menambahkan konten ke dokumen. Anggap saja sebagai kuas dan palet Anda.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

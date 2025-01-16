@@ -63,7 +63,7 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Steg 4: Skapa ett upprepande avsnitt
+## Steg 4: Skapa Repeterande avsnitt
 
  Skapa en`StructuredDocumentTag` (SDT) för det upprepande avsnittet och mappa det till XML-data:
 

@@ -71,7 +71,7 @@ Uma vez que o marcador é iniciado, podemos adicionar qualquer conteúdo que qui
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-O`Writeln` O método adiciona um novo parágrafo com o texto especificado ao documento.
+ O`Writeln` O método adiciona um novo parágrafo com o texto especificado ao documento.
 
 ## Etapa 5: Finalize o marcador
 
@@ -81,7 +81,7 @@ Após adicionar nosso conteúdo, precisamos fechar o marcador. Isso informa ao A
 builder.EndBookmark("FineBookmark");
 ```
 
-O`EndBookmark` O método completa o marcador que iniciamos anteriormente.
+ O`EndBookmark` O método completa o marcador que iniciamos anteriormente.
 
 ## Etapa 6: Salve o documento
 

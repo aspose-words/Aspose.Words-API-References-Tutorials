@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## पाठ बदलना
-
-कभी-कभी, आप कुछ टेक्स्ट को नई सामग्री से बदलना चाह सकते हैं। ऐसा कैसे करें, इसका एक उदाहरण यहां दिया गया है:
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## छवियाँ हटाना
 
 अगर आपको दस्तावेज़ से छवियाँ हटाने की ज़रूरत है, तो आप इसी तरह का तरीका अपना सकते हैं। सबसे पहले, छवियों की पहचान करें और फिर उन्हें हटाएँ:
@@ -92,22 +79,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## Regex के साथ खोजें और बदलें
-
-नियमित अभिव्यक्तियाँ सामग्री को खोजने और बदलने का एक शक्तिशाली तरीका प्रदान करती हैं:
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## विशिष्ट सामग्री निकालना

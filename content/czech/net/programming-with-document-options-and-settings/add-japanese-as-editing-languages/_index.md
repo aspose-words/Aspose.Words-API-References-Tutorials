@@ -1,6 +1,6 @@
 ---
-title: Přidat japonštinu jako jazyky úprav
-linktitle: Přidat japonštinu jako jazyky úprav
+title: Přidat japonštinu jako jazyky pro úpravy
+linktitle: Přidat japonštinu jako jazyky pro úpravy
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak přidat japonštinu jako jazyk pro úpravy do vašich dokumentů pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem.
 type: docs
@@ -40,7 +40,7 @@ S importovanými jmennými prostory jste připraveni začít kódovat!
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-The`LoadOptions` třída umožňuje přizpůsobit způsob načítání dokumentů. Tady s tím teprve začínáme.
+ The`LoadOptions` třída umožňuje přizpůsobit způsob načítání dokumentů. Tady s tím teprve začínáme.
 
 ## Krok 2: Přidejte japonštinu jako jazyk úprav
 

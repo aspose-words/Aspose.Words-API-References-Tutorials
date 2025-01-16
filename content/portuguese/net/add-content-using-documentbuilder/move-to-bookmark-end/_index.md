@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Compreendendo MoveToBookmark
 
-O`MoveToBookmark`método permite que você navegue para um marcador específico dentro do seu documento. A assinatura do método é:
+ O`MoveToBookmark`método permite que você navegue para um marcador específico dentro do seu documento. A assinatura do método é:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

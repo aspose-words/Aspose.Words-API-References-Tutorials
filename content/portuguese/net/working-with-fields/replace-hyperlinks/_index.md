@@ -86,7 +86,7 @@ Sim, o Aspose.Words suporta estruturas complexas como tabelas, imagens e hiperli
  Sim, você pode baixar uma versão de avaliação gratuita em[aqui](https://releases.aspose.com/).
 
 ### Onde posso encontrar documentação do Aspose.Words para .NET?
-Documentação detalhada está disponível[aqui](https://reference.aspose.com/words/net/).
+ Documentação detalhada está disponível[aqui](https://reference.aspose.com/words/net/).
 
 ### Como posso obter uma licença temporária para o Aspose.Words para .NET?
  Licenças temporárias podem ser obtidas[aqui](https://purchase.aspose.com/temporary-license/).

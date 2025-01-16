@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 Das Festlegen eines Kennworts ist optional, kann Ihrem Dokument jedoch zusätzliche Sicherheit verleihen, bevor Sie es ändern.
 
 ```csharp
-//Geben Sie ein maximal 15 Zeichen langes Passwort ein.
+// Geben Sie ein maximal 15 Zeichen langes Passwort ein.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Ja, das Festlegen eines Passworts ist optional. Sie können die Leseschutz-Empfe
 
 ### Was passiert, wenn das Dokument bereits über einen anderen Schutztyp verfügt?
 
-Der`doc.Protect(ProtectionType.NoProtection)` Methode stellt sicher, dass sämtliche Schutzarten aus dem Dokument entfernt werden.
+ Der`doc.Protect(ProtectionType.NoProtection)` Methode stellt sicher, dass sämtliche Schutzarten aus dem Dokument entfernt werden.
 
 ### Gibt es eine Möglichkeit, festzustellen, ob ein Dokument schreibgeschützt ist, bevor die Einschränkung aufgehoben wird?
 

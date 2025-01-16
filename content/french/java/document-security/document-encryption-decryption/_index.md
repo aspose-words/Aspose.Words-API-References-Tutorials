@@ -45,7 +45,7 @@ public class DocumentEncryptionExample {
         doc.protect(ProtectionType.READ_ONLY, password);
         
         // Sauvegarder le document crypté
-        doc.save("encrypted_document.docx", SaveFormat.DOCX);
+        doc.save("encrypted_document.docx");
         
         System.out.println("Document encrypted successfully!");
     }
@@ -64,7 +64,7 @@ import com.aspose.words.SaveFormat;
 
 public class DocumentDecryptionExample {
     public static void main(String[] args) throws Exception {
-        // Charger le document crypté
+        //Charger le document crypté
         Document doc = new Document("encrypted_document.docx");
         
         // Fournir le mot de passe pour le décryptage
@@ -74,7 +74,7 @@ public class DocumentDecryptionExample {
         doc.unprotect(password);
         
         // Sauvegarder le document décrypté
-        doc.save("decrypted_document.docx", SaveFormat.DOCX);
+        doc.save("decrypted_document.docx");
         
         System.out.println("Document decrypted successfully!");
     }

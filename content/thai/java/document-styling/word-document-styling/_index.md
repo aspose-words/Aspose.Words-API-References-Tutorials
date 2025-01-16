@@ -280,7 +280,7 @@ doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 Aspose.Words สำหรับ Java ช่วยให้คุณแปลงเอกสารเป็นรูปแบบต่างๆ เช่น PDF, HTML และอื่นๆ อีกมากมาย
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## เทคนิคการจัดแต่งทรงผมขั้นสูง

@@ -18,7 +18,7 @@ Niezależnie od tego, czy chcesz formatować tekst za pomocą różnych czcionek
 | Tytuł | Opis |
 | --- | --- |
 | [Formatowanie czcionki](./font-formatting/) | Dowiedz się, jak formatować czcionki w dokumentach Word za pomocą Aspose.Words for .NET, korzystając ze szczegółowego przewodnika krok po kroku. |
-| [Uzyskaj odstęp między wierszami czcionki](./get-font-line-spacing/) | Dowiedz się, jak uzyskać odstępy między wierszami czcionki za pomocą Aspose.Words dla .NET dzięki temu samouczkowi krok po kroku. Idealne dla programistów. |
+| [Uzyskaj odstęp między wierszami czcionki](./get-font-line-spacing/) | Dowiedz się, jak uzyskać odstęp między wierszami czcionki za pomocą Aspose.Words dla .NET dzięki temu samouczkowi krok po kroku. Idealne dla programistów. |
 | [Sprawdź efekt tekstowy DrawingML](./check-drawingml-text-effect/) | Dowiedz się, jak sprawdzić efekty tekstowe DrawingML w dokumentach Word za pomocą Aspose.Words dla .NET dzięki naszemu szczegółowemu przewodnikowi krok po kroku. Ulepszaj swoje dokumenty z łatwością. |
 | [Ustaw formatowanie czcionki](./set-font-formatting/) | Dowiedz się, jak ustawić formatowanie czcionki w dokumentach Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem krok po kroku, aby ulepszyć automatyzację dokumentów. |
 | [Ustaw znak podkreślenia czcionki](./set-font-emphasis-mark/) | Dowiedz się, jak ustawić znaki podkreślenia czcionki w dokumentach Word za pomocą Aspose.Words dla .NET dzięki temu szczegółowemu przewodnikowi krok po kroku. Idealne dla programistów .NET. |

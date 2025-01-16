@@ -49,7 +49,7 @@ doc.print("printerName");
 
 ```java
 //将文档渲染为 PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 您可以更换`SaveFormat.PDF`使用所需的渲染格式。

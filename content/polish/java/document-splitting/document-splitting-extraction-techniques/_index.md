@@ -80,7 +80,7 @@ Document doc = new Document("input.docx");
 // Utwórz ekstraktor obrazu
 ImageExtractor extractor = new ImageExtractor(doc);
 
-// Wyodrębnij obrazy z dokumentu
+//Wyodrębnij obrazy z dokumentu
 while (extractor.hasNext()) {
     extractor.getNextImage("output_" + extractor.getCurrentImageIndex() + ".png");
 }

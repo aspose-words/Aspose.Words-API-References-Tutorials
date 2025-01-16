@@ -18,7 +18,7 @@ Trước khi đi sâu vào cách bảo vệ tài liệu Word bằng mật khẩu
 1.  Aspose.Words cho .NET: Đảm bảo bạn có thư viện Aspose.Words cho .NET. Bạn có thể[tải xuống ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển C# nào khác.
 3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về lập trình C#.
-4. Giấy phép Aspose: Nhận giấy phép từ[đây](https://purchase.aspose.com/buy) hoặc sử dụng một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để đánh giá.
+4.  Giấy phép Aspose: Nhận giấy phép từ[đây](https://purchase.aspose.com/buy) hoặc sử dụng một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để đánh giá.
 
 ## Nhập không gian tên
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ### Chọn loại bảo vệ
 
- Aspose.Words cung cấp nhiều loại bảo vệ khác nhau, chẳng hạn như`NoProtection`, `ReadOnly`, `AllowOnlyComments` , Và`AllowOnlyFormFields` . Đối với ví dụ này, chúng ta sẽ sử dụng`NoProtection` nhưng phải có mật khẩu, về cơ bản có nghĩa là tài liệu có thể chỉnh sửa được nhưng cần có mật khẩu để xóa chế độ bảo vệ.
+ Aspose.Words cung cấp nhiều loại bảo vệ khác nhau, chẳng hạn như`NoProtection`, `ReadOnly`, `AllowOnlyComments` , Và`AllowOnlyFormFields` Đối với ví dụ này, chúng ta sẽ sử dụng`NoProtection` nhưng phải có mật khẩu, về cơ bản có nghĩa là tài liệu có thể chỉnh sửa được nhưng cần có mật khẩu để xóa chế độ bảo vệ.
 
 ### Áp dụng bảo vệ
 
@@ -94,7 +94,7 @@ Và thế là xong! Bạn đã thêm thành công bảo vệ bằng mật khẩu
 
 ### Tôi có thể sử dụng các loại bảo vệ khác nhau với Aspose.Words không?
 
- Có, Aspose.Words hỗ trợ nhiều loại bảo vệ khác nhau, bao gồm`ReadOnly`, `AllowOnlyComments` , Và`AllowOnlyFormFields`.
+Có, Aspose.Words hỗ trợ nhiều loại bảo vệ khác nhau, bao gồm`ReadOnly`, `AllowOnlyComments` , Và`AllowOnlyFormFields`.
 
 ### Làm thế nào để xóa mật khẩu bảo vệ khỏi tài liệu?
 
@@ -110,4 +110,4 @@ Có, Aspose.Words tương thích với .NET Core, .NET Framework và các nền 
 
 ### Tôi có thể tìm thêm tài liệu về Aspose.Words ở đâu?
 
-Bạn có thể tìm thêm tài liệu trên[Trang tài liệu Aspose.Words](https://reference.aspose.com/words/net/).
+ Bạn có thể tìm thêm tài liệu trên[Trang tài liệu Aspose.Words](https://reference.aspose.com/words/net/).

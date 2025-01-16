@@ -100,7 +100,7 @@ veces, un cuadro de texto puede ser parte de una cadena con otros cuadros vincul
 textBox.Previous?.BreakForwardLink();
 ```
 
-El`?.` El operador garantiza que el método solo se llame si`Previous` no es nulo, lo que evita posibles errores de ejecución.
+ El`?.` El operador garantiza que el método solo se llame si`Previous` no es nulo, lo que evita posibles errores de ejecución.
 
 ## Conclusión
 

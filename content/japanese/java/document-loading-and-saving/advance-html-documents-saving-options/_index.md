@@ -29,7 +29,7 @@ public void exportRoundtripInformation() throws Exception {
 と`exportFontsAsBase64`この方法を使用すると、文書で使用されているフォントを HTML 内の Base64 エンコード データとしてエクスポートできます。これにより、HTML 表現で元の Word 文書と同じフォント スタイルが保持されます。
 
 ```java
-@Test
+
 public void exportFontsAsBase64() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -42,7 +42,7 @@ public void exportFontsAsBase64() throws Exception {
 の`exportResources`メソッドを使用すると、CSS スタイルシートの種類を指定し、フォント リソースをエクスポートできます。また、HTML 内のリソース フォルダーとリソースのエイリアスを設定することもできます。
 
 ```java
-@Test
+
 public void exportResources() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -58,9 +58,20 @@ public void exportResources() throws Exception {
 の`convertMetafilesToEmfOrWmf`この方法を使用すると、ドキュメント内のメタファイルを EMF または WMF 形式に変換して、HTML での互換性とスムーズなレンダリングを確保できます。
 
 ```java
-@Test
+
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    //簡潔にするためにコード スニペットは表示されません。
+
+	string dataDir = "Your Document Directory";
+    Document doc = new Document();
+	DocumentBuilder builder = new DocumentBuilder(doc);
+
+	builder.write("Here is an image as is: ");
+	builder.insertHtml(
+		"<img src=\"data:image/png;base64,\r\n                    iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP\r\n                    C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA\r\n                    AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J\r\n                    REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq\r\n                    ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0\r\n vr4MkhoXe0rZigAAABJRU5ErkJggg==\" alt=\"赤い点\" />");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(); { saveOptions.setMetafileFormat(HtmlMetafileFormat.EMF_OR_WMF); }
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
 }
 ```
 
@@ -68,9 +79,19 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 使用`convertMetafilesToSvg`メタファイルを SVG 形式に変換する方法。この形式は、HTML ドキュメントでベクター グラフィックを表示するのに最適です。
 
 ```java
-@Test
+
 public void convertMetafilesToSvg() throws Exception {
-    //簡潔にするためにコード スニペットは表示されません。
+	string dataDir = "Your Document Directory";
+    Document doc = new Document();
+	DocumentBuilder builder = new DocumentBuilder(doc);
+	
+	builder.write("Here is an SVG image: ");
+	builder.insertHtml(
+		"<svg height='210' width='500'>\r\n                <polygon points='100,10 40,198 190,78 10,78 160,198' \r\n                    style='fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;' />\r\n            </svg> ");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(); { saveOptions.setMetafileFormat(HtmlMetafileFormat.SVG); }
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 }
 ```
 
@@ -78,7 +99,7 @@ public void convertMetafilesToSvg() throws Exception {
 と`addCssClassNamePrefix`メソッドを使用すると、エクスポートされた HTML 内の CSS クラス名にプレフィックスを追加できます。これにより、既存のスタイルとの競合を防ぐことができます。
 
 ```java
-@Test
+
 public void addCssClassNamePrefix() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -92,9 +113,17 @@ public void addCssClassNamePrefix() throws Exception {
 の`exportCidUrlsForMhtmlResources`このメソッドは、ドキュメントを MHTML 形式で保存するときに使用されます。これにより、リソースの Content-ID URL をエクスポートできます。
 
 ```java
-@Test
+
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    //簡潔にするためにコード スニペットは表示されません。
+	string dataDir = "Your Document Directory";
+    Document doc = new Document(dataDir + "Content-ID.docx");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.MHTML);
+	{
+		saveOptions.setPrettyFormat(true); saveOptions.setExportCidUrlsForMhtmlResources(true);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
 }
 ```
 
@@ -102,9 +131,18 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 の`resolveFontNames`このメソッドは、ドキュメントを HTML 形式で保存するときにフォント名を解決するのに役立ち、異なるプラットフォーム間で一貫したレンダリングを保証します。
 
 ```java
-@Test
+
 public void resolveFontNames() throws Exception {
-    //簡潔にするためにコード スニペットは表示されません。
+    
+	string dataDir = "Your Document Directory";
+	Document doc = new Document(dataDir + "Missing font.docx");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.HTML);
+	{
+		saveOptions.setPrettyFormat(true); saveOptions.setResolveFontNames(true);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 }
 ```
 
@@ -112,16 +150,34 @@ public void resolveFontNames() throws Exception {
 の`exportTextInputFormFieldAsText`このメソッドは、フォーム フィールドを HTML 内のプレーン テキストとしてエクスポートし、簡単に読み取りおよび編集できるようにします。
 
 ```java
-@Test
+
 public void exportTextInputFormFieldAsText() throws Exception {
-    //簡潔にするためにコード スニペットは表示されません。
+    
+	string dataDir = "Your Document Directory";
+	Document doc = new Document(dataDir + "Rendering.docx");
+
+	String imagesDir = Path.combine(dataDir, "Images");
+
+	//指定されたフォルダーは存在している必要があり、空である必要があります。
+	if (Directory.exists(imagesDir))
+		Directory.delete(imagesDir, true);
+
+	Directory.createDirectory(imagesDir);
+
+	//フォーム フィールドを HTML 入力要素ではなくプレーン テキストとしてエクスポートするオプションを設定します。
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.HTML);
+	{
+		saveOptions.setExportTextInputFormFieldAsText(true); saveOptions.setImagesFolder(imagesDir);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
 }
 ```
 
-## 11. 結論
+## 結論
 このチュートリアルでは、Aspose.Words for Java が提供する高度な HTML ドキュメント保存オプションについて説明しました。これらのオプションを使用すると、変換プロセスを細かく制御できるため、元の Word ドキュメントによく似た HTML ドキュメントを作成できます。
 
-## 12. よくある質問
+## よくある質問
 Aspose.Words for Java および HTML ドキュメント保存オプションの使用に関するよくある質問を次に示します。
 
 ### Q1: Aspose.Words for Java を使用して HTML を Word 形式に戻すにはどうすればよいですか?

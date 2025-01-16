@@ -45,11 +45,11 @@ doc.print("printerName");
 
 ## Dokumentumok renderelése
 
-A dokumentumok renderelése elengedhetetlen, ha különböző formátumokba, például PDF-be, XPS-be vagy képekbe kell konvertálnia őket. Az Aspose.Words for Java kiterjedt megjelenítési lehetőségeket kínál. A következőképpen tud dokumentumot PDF formátumba renderelni:
+A dokumentumok renderelése elengedhetetlen, ha különböző formátumokba, például PDF-be, XPS-be vagy képekbe kell konvertálnia őket. Az Aspose.Words for Java kiterjedt megjelenítési lehetőségeket kínál. A dokumentumot PDF formátumba a következőképpen lehet renderelni:
 
 ```java
 // Rendelje le a dokumentumot PDF formátumban
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Cserélheted`SaveFormat.PDF` a kívánt formátummal a megjelenítéshez.

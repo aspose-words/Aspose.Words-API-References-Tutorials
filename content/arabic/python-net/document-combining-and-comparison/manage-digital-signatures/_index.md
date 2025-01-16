@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /ar/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## مقدمة حول التوقيعات الرقمية
 
 تعمل التوقيعات الرقمية كمعادلات إلكترونية للتوقيعات المكتوبة بخط اليد. وهي توفر وسيلة للتحقق من صحة وسلامة وأصل المستندات الإلكترونية. عندما يتم التوقيع على مستند رقميًا، يتم إنشاء تجزئة تشفيرية بناءً على محتوى المستند. ثم يتم تشفير هذه التجزئة باستخدام المفتاح الخاص للموقّع، مما يؤدي إلى إنشاء التوقيع الرقمي. يمكن لأي شخص لديه المفتاح العام المقابل التحقق من التوقيع والتأكد من صحة المستند.
@@ -25,7 +24,7 @@ url: /ar/python-net/document-combining-and-comparison/manage-digital-signatures/
 2. استيراد الوحدات المطلوبة: استيراد الوحدات اللازمة في البرنامج النصي الخاص بـ Python:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## تحميل المستندات والوصول إليها
@@ -33,7 +32,7 @@ url: /ar/python-net/document-combining-and-comparison/manage-digital-signatures/
 قبل إضافة التوقيعات الرقمية أو التحقق منها، يجب عليك تحميل المستند باستخدام Aspose.Words:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## إضافة التوقيعات الرقمية إلى المستندات
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 لإضافة توقيع رقمي إلى مستند، ستحتاج إلى شهادة رقمية:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 الآن قم بتوقيع الوثيقة:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## التحقق من التوقيعات الرقمية
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## إزالة التوقيعات الرقمية
-
-لإزالة التوقيع الرقمي من مستند:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## ضمان صحة الوثيقة
-
-تضمن التوقيعات الرقمية صحة المستندات من خلال تأكيد مصدر المستند وسلامته. كما أنها تحمي من العبث والتعديلات غير المصرح بها.
-
 ## تخصيص مظهر التوقيع الرقمي
 
 يمكنك تخصيص مظهر التوقيعات الرقمية:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## خاتمة

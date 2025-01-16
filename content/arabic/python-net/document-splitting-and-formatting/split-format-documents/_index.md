@@ -19,10 +19,10 @@ url: /ar/python-net/document-splitting-and-formatting/split-format-documents/
 الخطوة الأولى هي تحميل المستند الذي تريد تقسيمه وتنسيقه. استخدم مقتطف التعليمات البرمجية التالي لتحقيق ذلك:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## الخطوة 2: تقسيم المستند إلى أقسام
@@ -41,10 +41,10 @@ sections = document.sections
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## الخطوة 4: حفظ المستند
@@ -55,6 +55,12 @@ section.page_setup.bottom_margin = asposewords.pt_to_px(1)
 document.save("path/to/save/updated_document.docx")
 ```
 
+## خاتمة
+
+يوفر Aspose.Words for Python مجموعة شاملة من الأدوات لتقسيم المستندات وتنسيقها بكفاءة وفقًا لاحتياجاتك. باتباع الخطوات الموضحة في هذا البرنامج التعليمي والاستفادة من أمثلة التعليمات البرمجية المصدرية المقدمة، يمكنك إدارة مستنداتك بسلاسة وتقديمها بشكل احترافي.
+
+في هذا البرنامج التعليمي، قمنا بتغطية أساسيات تقسيم المستندات وتنسيقها، كما قدمنا حلولاً للأسئلة الشائعة. والآن حان دورك لاستكشاف وتجربة إمكانيات Aspose.Words for Python لتحسين سير عمل إدارة المستندات لديك بشكل أكبر.
+
 ## الأسئلة الشائعة
 
 ### كيف يمكنني تقسيم مستند إلى ملفات متعددة؟
@@ -62,7 +68,7 @@ document.save("path/to/save/updated_document.docx")
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ for i, section in enumerate(sections):
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### كيف يمكنني تغيير نوع الخط لقسم معين؟
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### هل من الممكن إزالة قسم معين من المستند؟
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## خاتمة
-يوفر Aspose.Words for Python مجموعة شاملة من الأدوات لتقسيم المستندات وتنسيقها بكفاءة وفقًا لاحتياجاتك. باتباع الخطوات الموضحة في هذا البرنامج التعليمي والاستفادة من أمثلة التعليمات البرمجية المصدرية المقدمة، يمكنك إدارة مستنداتك بسلاسة وتقديمها بشكل احترافي.
-
-في هذا البرنامج التعليمي، قمنا بتغطية أساسيات تقسيم المستندات وتنسيقها، كما قدمنا حلولاً للأسئلة الشائعة. والآن حان دورك لاستكشاف وتجربة إمكانيات Aspose.Words for Python لتحسين سير عمل إدارة المستندات لديك بشكل أكبر.

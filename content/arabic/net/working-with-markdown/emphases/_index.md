@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-ال`dataDir` المتغير هو عنصر نائب للدليل الذي ستحفظ فيه ملف Markdown. تأكد من استبدال "YOUR DOCUMENT DIRECTORY" بالمسار الفعلي.
+ ال`dataDir` المتغير هو عنصر نائب للدليل الذي ستحفظ فيه ملف Markdown. تأكد من استبدال "YOUR DOCUMENT DIRECTORY" بالمسار الفعلي.
 
 ## الخطوة 2: كتابة نص عادي
 

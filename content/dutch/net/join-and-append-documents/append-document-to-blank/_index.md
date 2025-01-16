@@ -122,7 +122,7 @@ Ja, u kunt meerdere documenten toevoegen door herhaaldelijk de`AppendDocument` m
 
 ### Wat gebeurt er als het brondocument een andere opmaak heeft?
 
-De`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de opmaak van het brondocument behouden blijft wanneer het wordt toegevoegd.
+ De`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de opmaak van het brondocument behouden blijft wanneer het wordt toegevoegd.
 
 ### Heb ik een licentie nodig om Aspose.Words te gebruiken?
 

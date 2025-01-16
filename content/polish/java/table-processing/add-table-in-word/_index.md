@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Krok 6: Utwórz tabelę i dodaj wiersze
 
-Utwórz nowy`Table` obiekt i określ liczbę wierszy i kolumn.
+ Utwórz nowy`Table` obiekt i określ liczbę wierszy i kolumn.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Krok 8: Zapisz dokument
 
- Zapisz dokument Word w wybranej lokalizacji za pomocą`save()` metoda.
+Zapisz dokument Word w wybranej lokalizacji za pomocą`save()` metoda.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Krok 9: Uzupełnij kod
-
-Oto kompletny kod umożliwiający dodanie tabeli w programie Word przy użyciu Aspose.Words dla języka Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Krok 5: Utwórz nowy dokument Word
-        Document doc = new Document();
-
-        // Krok 6: Utwórz tabelę i dodaj wiersze
-        Table table = new Table(doc);
-        int rowCount = 5; // Liczba wierszy w tabeli
-        int columnCount = 3; // Liczba kolumn w tabeli
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Krok 7: Dodaj tabelę do dokumentu
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Krok 8: Zapisz dokument
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Wniosek

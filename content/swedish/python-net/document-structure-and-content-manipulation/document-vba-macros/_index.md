@@ -2,7 +2,7 @@
 title: Låsa upp avancerad automatisering med VBA-makron i Word-dokument
 linktitle: Låsa upp avancerad automatisering med VBA-makron i Word-dokument
 second_title: Aspose.Words Python Document Management API
-description: Lås upp avancerad automatisering i Word-dokument med Aspose.Words Python API och VBA-makron. Lär dig steg för steg med källkod och vanliga frågor. Förbättra produktiviteten nu. Åtkomst på [Länk].
+description: Lås upp avancerad automatisering i Word-dokument med Aspose.Words Python API och VBA-makron. Lär dig steg för steg med källkod och vanliga frågor. Öka produktiviteten nu. Åtkomst på [Länk].
 type: docs
 weight: 26
 url: /sv/python-net/document-structure-and-content-manipulation/document-vba-macros/
@@ -20,7 +20,7 @@ I dagens digitala landskap är det avgörande att hantera och bearbeta Word-doku
 För att ge dig ut på denna automatiseringsresa måste du ha Aspose.Words för Python installerat. Du kan ladda ner den från[Aspose hemsida](https://releases.aspose.com/words/python/). När det är installerat kan du starta ditt Python-projekt och importera de nödvändiga modulerna.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Förstå VBA-makron och deras roll
@@ -46,7 +46,7 @@ Att skapa dokument programmatiskt förenklas med Aspose.Words Python. Du kan ska
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ VBA-makron integrerade med Aspose.Words Python öppnar dörrar till dataextrakti
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content
@@ -114,7 +114,7 @@ Sammanslagningen av Aspose.Words för Python- och VBA-makron erbjuder en inkörs
 ## Vanliga frågor
 
 ### Hur installerar jag Aspose.Words för Python?
- Du kan ladda ner den senaste versionen av Aspose.Words for Python från[Aspose hemsida](https://releases.aspose.com/words/python/).
+ Du kan ladda ner den senaste versionen av Aspose.Words för Python från[Aspose hemsida](https://releases.aspose.com/words/python/).
 
 ### Kan jag använda VBA-makron med andra Microsoft Office-program?
 Ja, VBA-makron kan användas i olika Microsoft Office-program, inklusive Excel och PowerPoint.

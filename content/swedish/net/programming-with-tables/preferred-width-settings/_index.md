@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-De`PreferredWidth.Auto` inställningen tillåter den här cellen att expandera eller dra ihop sig baserat på det utrymme som finns kvar efter att de andra cellerna har tagits med i beräkningen. Detta säkerställer att bordslayouten ser balanserad och professionell ut.
+ De`PreferredWidth.Auto` inställningen tillåter den här cellen att expandera eller dra ihop sig baserat på det utrymme som finns kvar efter att de andra cellerna har tagits med i beräkningen. Detta säkerställer att bordslayouten ser balanserad och professionell ut.
 
 ## Steg 5: Slutför och spara dokumentet
 

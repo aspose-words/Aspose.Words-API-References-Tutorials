@@ -339,7 +339,7 @@ Aspose.Words for Java は、Word 文書内のテキストを検索および置�
 
 ### Aspose.Words for Java をダウンロードするにはどうすればいいですか?
 
- Aspose.Words for Javaは、次のウェブサイトからダウンロードできます。[このリンク](https://releases.aspose.com/words/java/).
+ Aspose.Words for Javaは、次のWebサイトからダウンロードできます。[このリンク](https://releases.aspose.com/words/java/).
 
 ### テキストの置換に正規表現を使用できますか?
 

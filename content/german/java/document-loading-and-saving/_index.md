@@ -51,7 +51,7 @@ Konfigurieren von RTF-Ladeoptionen in Aspose.Words für Java. Erfahren Sie, wie 
 ### [Laden von Textdateien mit Aspose.Words für Java](./loading-text-files/)
 Entfesseln Sie die Leistungsfähigkeit von Aspose.Words für Java. Erfahren Sie, wie Sie Textdokumente laden, Listen verwalten, Leerzeichen handhaben und die Textrichtung steuern.
 ### [Erweiterte Speicheroptionen mit Aspose.Words für Java](./advance-saving-options/)
-Erlernen Sie die erweiterte Dokumentbearbeitung mit Aspose.Words für Java. Verschlüsseln, Metadateien verarbeiten und mehr. Ihre Word-Dokumente, Ihre Art.
+Erlernen Sie die erweiterte Dokumentbearbeitung mit Aspose.Words für Java. Verschlüsseln, Metadateien verarbeiten und mehr. Ihre Word-Dokumente, auf Ihre Art.
 ### [Speichern von HTML-Dokumenten mit festem Layout in Aspose.Words für Java](./saving-html-documents-with-fixed-layout/)
 Erfahren Sie, wie Sie HTML-Dokumente mit festem Layout in Aspose.Words für Java speichern. Folgen Sie unserer Schritt-für-Schritt-Anleitung zur nahtlosen Dokumentformatierung.
 ### [Erweiterte Speicheroptionen für HTML-Dokumente mit Aspose.Words Java](./advance-html-documents-saving-options/)

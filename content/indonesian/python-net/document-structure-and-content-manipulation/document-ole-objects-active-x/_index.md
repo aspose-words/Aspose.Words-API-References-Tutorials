@@ -19,11 +19,7 @@ Sebelum kita mendalami penyematan objek OLE dan kontrol ActiveX, mari pastikan A
 - Pustaka Aspose.Words untuk Python telah terinstal
 - Pemahaman dasar tentang struktur dokumen Word
 
-## Menanamkan Objek OLE
-
-Objek OLE memungkinkan Anda untuk mengintegrasikan file eksternal, seperti lembar kerja atau presentasi, ke dalam dokumen Word Anda dengan mudah. Ikuti langkah-langkah berikut untuk menyematkan objek OLE:
-
-### Langkah 1: Menambahkan Pustaka yang Diperlukan
+## Langkah 1: Menambahkan Pustaka yang Diperlukan
 
 Mulailah dengan mengimpor modul yang diperlukan dari pustaka Aspose.Words dan dependensi lainnya:
 
@@ -31,7 +27,7 @@ Mulailah dengan mengimpor modul yang diperlukan dari pustaka Aspose.Words dan de
 import aspose.words as aw
 ```
 
-### Langkah 2: Membuat Dokumen Word
+## Langkah 2: Membuat Dokumen Word
 
 Buat dokumen Word baru menggunakan Aspose.Words untuk Python:
 
@@ -39,42 +35,16 @@ Buat dokumen Word baru menggunakan Aspose.Words untuk Python:
 doc = aw.Document()
 ```
 
-### Langkah 3: Memasukkan Objek OLE
+## Langkah 3: Memasukkan Objek OLE
 
 Sekarang, Anda dapat menyisipkan objek OLE ke dalam dokumen Anda. Misalnya, mari kita sisipkan lembar kerja Excel:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## Menanamkan Kontrol ActiveX
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", Benar, Benar, Tidak Ada)
 
-Kontrol ActiveX menghadirkan interaktivitas pada dokumen Anda, yang memungkinkan pengguna berinteraksi dengan konten yang disematkan. Ikuti langkah-langkah berikut untuk menyematkan kontrol ActiveX:
-
-### Langkah 1: Menambahkan Pustaka yang Diperlukan
-
-Sama seperti objek OLE, mulailah dengan mengimpor modul yang diperlukan:
-
-```python
-import aspose.words as aw
-```
-
-### Langkah 2: Membuat Dokumen Word
-
-Buat dokumen Word baru:
-
-```python
-doc = aw.Document()
-```
-
-### Langkah 3: Memasukkan Kontrol ActiveX
-
-Misalnya Anda ingin menyematkan pemutar multimedia. Berikut cara melakukannya:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Meningkatkan Interaktivitas dan Fungsionalitas

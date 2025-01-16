@@ -9,7 +9,7 @@ url: /pl/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 ## Wstęp
 
-Hej, mistrzowie dokumentów! Czy zdarzyło ci się kiedyś utknąć po kolana w kodzie, próbując rozgryźć, jak bezproblemowo wstawić jeden dokument Worda do drugiego? Nie martw się, ponieważ dziś zanurzymy się w świecie Aspose.Words dla .NET, aby ułatwić to zadanie. Przeprowadzimy Cię przez szczegółowy przewodnik krok po kroku, jak używać tej potężnej biblioteki do wstawiania dokumentów w określonych punktach podczas operacji znajdowania i zamieniania. Jesteś gotowy, aby zostać czarodziejem Aspose.Words? Zaczynajmy!
+Hej, mistrzowie dokumentów! Czy zdarzyło ci się kiedyś utknąć po kolana w kodzie, próbując rozgryźć, jak bezproblemowo wstawić jeden dokument Worda do drugiego? Nie martw się, ponieważ dziś zanurzamy się w świecie Aspose.Words dla .NET, aby ułatwić to zadanie. Przeprowadzimy Cię przez szczegółowy przewodnik krok po kroku, jak używać tej potężnej biblioteki do wstawiania dokumentów w określonych punktach podczas operacji znajdowania i zamieniania. Jesteś gotowy, aby zostać czarodziejem Aspose.Words? Zaczynajmy!
 
 ## Wymagania wstępne
 
@@ -165,7 +165,7 @@ Tak, można zmodyfikować procedurę obsługi wywołań zwrotnych, aby obsługiw
  Oczywiście! Możesz pobrać bezpłatną wersję próbną z[Tutaj](https://releases.aspose.com/).
 
 ### Jak uzyskać pomoc techniczną dotyczącą Aspose.Words?
-Możesz uzyskać pomoc odwiedzając stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Możesz uzyskać pomoc odwiedzając stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Czy mogę zachować formatowanie wstawionego dokumentu?
  Tak,`NodeImporter` Klasa ta umożliwia określenie sposobu obsługi formatowania podczas importowania węzłów z jednego dokumentu do drugiego.

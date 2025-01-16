@@ -40,7 +40,7 @@ public class DocumentExtractor {
 
 ### Lägga till Aspose.Words till ditt projekt
 
- För att lägga till Aspose.Words till ditt projekt, kopiera de nedladdade JAR-filerna till ditt projekts`lib` mapp och lägg till dem i din klassväg. Du är nu redo att dyka in i dokumentutvinningens värld!
+För att lägga till Aspose.Words till ditt projekt, kopiera de nedladdade JAR-filerna till ditt projekts`lib` mapp och lägg till dem i din klassväg. Du är nu redo att dyka in i dokumentutvinningens värld!
 
 ## Ladda och analysera dokument
 
@@ -64,7 +64,7 @@ DocumentVisitor visitor = new DocumentVisitor();
 // Gå igenom dokumentet
 doc.accept(visitor);
 
-//Extraherat innehåll är nu tillgängligt för besökaren
+// Extraherat innehåll är nu tillgängligt för besökaren
 String extractedText = visitor.getText();
 ```
 
@@ -90,7 +90,7 @@ String pageText = doc.extractText(pageInfo);
 För att extrahera innehåll från alla sidor kan du använda en enkel slinga:
 
 ```java
-// Få det totala antalet sidor i dokumentet
+//Få det totala antalet sidor i dokumentet
 int pageCount = doc.getPageCount();
 
 for (int i = 0; i < pageCount; i++) {
@@ -120,7 +120,7 @@ builder.write("This text is bold.");
 När du har extraherat och manipulerat innehållet kan du spara det i ett nytt dokument:
 
 ```java
-//Spara det extraherade innehållet i ett nytt dokument
+// Spara det extraherade innehållet i ett nytt dokument
 doc.save("extracted_content.docx");
 ```
 

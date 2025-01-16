@@ -18,7 +18,7 @@ Word 문서를 암호로 보호하는 세부적인 내용을 살펴보기 전에
 1.  Aspose.Words for .NET: Aspose.Words for .NET 라이브러리가 있는지 확인하세요.[여기서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 기타 C# 개발 환경.
 3. 기본 C# 지식: C# 프로그래밍에 대한 기본적인 이해.
-4. Aspose License: 라이센스를 받으세요[여기](https://purchase.aspose.com/buy) 또는 사용하세요[임시 면허](https://purchase.aspose.com/temporary-license/) 평가를 위해서.
+4.  Aspose License: 라이센스를 받으세요[여기](https://purchase.aspose.com/buy) 또는 사용하세요[임시 면허](https://purchase.aspose.com/temporary-license/) 평가를 위해서.
 
 ## 네임스페이스 가져오기
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ### 보호 유형 선택
 
- Aspose.Words는 다음과 같은 다양한 유형의 보호를 제공합니다.`NoProtection`, `ReadOnly`, `AllowOnlyComments` , 그리고`AllowOnlyFormFields` . 이 예에서는 다음을 사용합니다.`NoProtection` 하지만 비밀번호가 있어서 기본적으로 문서를 편집할 수는 있지만 보호를 해제하려면 비밀번호가 필요합니다.
+ Aspose.Words는 다음과 같은 다양한 유형의 보호를 제공합니다.`NoProtection`, `ReadOnly`, `AllowOnlyComments` , 그리고`AllowOnlyFormFields` 이 예에서는 다음을 사용합니다.`NoProtection` 하지만 비밀번호가 있어서 기본적으로 문서를 편집할 수는 있지만 보호를 해제하려면 비밀번호가 필요합니다.
 
 ### 보호 적용
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### Aspose.Words에서 다양한 유형의 보호 기능을 사용할 수 있나요?
 
- 예, Aspose.Words는 다음을 포함한 다양한 유형의 보호를 지원합니다.`ReadOnly`, `AllowOnlyComments` , 그리고`AllowOnlyFormFields`.
+예, Aspose.Words는 다음을 포함한 다양한 유형의 보호를 지원합니다.`ReadOnly`, `AllowOnlyComments` , 그리고`AllowOnlyFormFields`.
 
 ### 문서의 암호 보호를 해제하려면 어떻게 해야 하나요?
 
@@ -110,4 +110,4 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### Aspose.Words에 대한 더 많은 문서는 어디에서 찾을 수 있나요?
 
-더 많은 문서는 다음에서 찾을 수 있습니다.[Aspose.Words 문서 페이지](https://reference.aspose.com/words/net/).
+ 더 많은 문서는 다음에서 찾을 수 있습니다.[Aspose.Words 문서 페이지](https://reference.aspose.com/words/net/).

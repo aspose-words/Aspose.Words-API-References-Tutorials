@@ -66,19 +66,17 @@ comment = doc.comments[0]
 comment.text = "Updated insight: " + comment.text
 
 # Resolve a comment
-comment.resolved = True
-```
+comments = doc.get_child_nodes(aw.NodeType.COMMENT, True)
 
-## Χειρισμός απαντήσεων και συνομιλιών
+parent_comment = comments[0].as_comment()
+for child in parent_comment.replies:
+	child_comment = child.as_comment()
+	# Get comment parent and status.
+	print(child_comment.ancestor.id)
+	print(child_comment.done)
 
-Τα σχόλια μπορούν να αποτελούν μέρος των συνομιλιών, με τις απαντήσεις να προσθέτουν βάθος στις συζητήσεις. Το Aspose.Words for Python σάς επιτρέπει να διαχειρίζεστε απαντήσεις σχολίων:
-
-```python
-# Add a reply to a comment
-reply = aw.Comment(doc, "Alice", "I agree with John.")
-reply.parent_comment = comment
-reply.date_time = aw.DateTime.now()
-comment.replies.add(reply)
+	# And update comment Done mark.
+	child_comment.done = True
 ```
 
 ## Σχόλια μορφοποίησης και στυλ

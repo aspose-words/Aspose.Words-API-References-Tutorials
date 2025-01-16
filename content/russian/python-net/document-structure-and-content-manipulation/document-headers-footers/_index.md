@@ -23,7 +23,7 @@ pip install aspose-words
 2. Импорт модуля: импортируйте требуемый модуль в свой скрипт Python.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Добавление простого верхнего и нижнего колонтитула
@@ -33,30 +33,18 @@ import aspose.words
 1. Создание документа: создайте новый документ Word с помощью Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Добавление верхнего и нижнего колонтитула: используйте`sections` свойство документа для доступа к разделам. Затем используйте`headers_footers` свойство для добавления верхних и нижних колонтитулов.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Добавление контента: добавьте контент в верхний и нижний колонтитулы.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Сохранение документа: Сохраните документ с верхним и нижним колонтитулами.
+3. Сохранение документа: Сохраните документ с верхним и нижним колонтитулами.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Добавление таблиц: включение таблиц для табличной информации.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Динамические поля: используйте динамические поля для автоматической вставки данных.
+2. Динамические поля: используйте динамические поля для автоматической вставки данных.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. Настройте по мере необходимости: настройте каждый верхний и нижний колонтитул в соответствии с вашими требованиями.
 
 ## Удаление верхних и нижних колонтитулов
 
@@ -150,4 +128,4 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### Где я могу узнать больше об Aspose.Words для Python?
 
-Для получения более подробной документации и примеров посетите[Справочник API Aspose.Words для Python](https://reference.aspose.com/words/python-net/).
+ Для получения более подробной документации и примеров посетите[Справочник API Aspose.Words для Python](https://reference.aspose.com/words/python-net/).

@@ -61,7 +61,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 Row firstRow = table.FirstRow;
 ```
 
-ال`FirstRow` تمنحنا الخاصية الصف الأول في الجدول. الآن، نحن مستعدون لبدء تعديل تنسيقه.
+ ال`FirstRow` تمنحنا الخاصية الصف الأول في الجدول. الآن، نحن مستعدون لبدء تعديل تنسيقه.
 
 ## الخطوة 4: تعديل حدود الصفوف
 

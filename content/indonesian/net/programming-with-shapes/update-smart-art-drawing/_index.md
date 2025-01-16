@@ -80,7 +80,7 @@ Mengidentifikasi bentuk Seni Cerdas memastikan Anda hanya mencoba memperbarui gr
 Judul: Segarkan Grafik Seni Cerdas
 
 Penjelasan:
-Itu`UpdateSmartArtDrawing` Metode menyegarkan grafik Smart Art, memastikan bahwa grafik tersebut mencerminkan perubahan apa pun dalam data atau tata letak dokumen. Metode ini harus dipanggil pada setiap bentuk Smart Art yang diidentifikasi pada langkah sebelumnya.
+ Itu`UpdateSmartArtDrawing` Metode menyegarkan grafik Smart Art, memastikan bahwa grafik tersebut mencerminkan perubahan apa pun dalam data atau tata letak dokumen. Metode ini harus dipanggil pada setiap bentuk Smart Art yang diidentifikasi pada langkah sebelumnya.
 
 ```csharp
 // Perbarui gambar Seni Cerdas untuk setiap bentuk Seni Cerdas

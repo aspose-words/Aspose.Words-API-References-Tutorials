@@ -19,11 +19,7 @@ Antes de nos aprofundarmos na incorporação de objetos OLE e controles ActiveX,
 - Biblioteca Aspose.Words para Python instalada
 - Uma compreensão básica da estrutura do documento Word
 
-## Incorporando objetos OLE
-
-Objetos OLE permitem que você integre perfeitamente arquivos externos, como planilhas ou apresentações, em seus documentos do Word. Siga estas etapas para incorporar um objeto OLE:
-
-### Etapa 1: Adicionar bibliotecas necessárias
+## Etapa 1: Adicionar bibliotecas necessárias
 
 Comece importando os módulos necessários da biblioteca Aspose.Words e quaisquer outras dependências:
 
@@ -31,7 +27,7 @@ Comece importando os módulos necessários da biblioteca Aspose.Words e quaisque
 import aspose.words as aw
 ```
 
-### Etapa 2: Criando um documento do Word
+## Etapa 2: Criando um documento do Word
 
 Crie um novo documento do Word usando Aspose.Words para Python:
 
@@ -39,42 +35,16 @@ Crie um novo documento do Word usando Aspose.Words para Python:
 doc = aw.Document()
 ```
 
-### Etapa 3: Inserindo um objeto OLE
+## Etapa 3: Inserindo um objeto OLE
 
 Agora, você pode inserir um objeto OLE no seu documento. Por exemplo, vamos incorporar uma planilha do Excel:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## Incorporando controles ActiveX
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", Verdadeiro, Verdadeiro, Nenhum)
 
-Os controles ActiveX trazem interatividade aos seus documentos, permitindo que os usuários interajam com o conteúdo incorporado. Siga estas etapas para incorporar um controle ActiveX:
-
-### Etapa 1: Adicionar bibliotecas necessárias
-
-Assim como com objetos OLE, comece importando os módulos necessários:
-
-```python
-import aspose.words as aw
-```
-
-### Etapa 2: Criando um documento do Word
-
-Crie um novo documento do Word:
-
-```python
-doc = aw.Document()
-```
-
-### Etapa 3: Inserindo um controle ActiveX
-
-Digamos que você queira incorporar um player multimídia. Veja como você pode fazer isso:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Melhorando a interatividade e a funcionalidade

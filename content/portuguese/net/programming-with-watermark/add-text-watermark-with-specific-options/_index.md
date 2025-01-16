@@ -105,7 +105,7 @@ O Aspose.Words suporta adicionar uma marca d'água por vez. Para adicionar vári
 
 ### Posso ajustar a posição da marca d'água?
 
-O`WatermarkLayout`propriedade determina a orientação, mas ajustes de posicionamento precisos não são suportados diretamente. Talvez seja necessário usar outras técnicas para posicionamento exato.
+ O`WatermarkLayout`propriedade determina a orientação, mas ajustes de posicionamento precisos não são suportados diretamente. Talvez seja necessário usar outras técnicas para posicionamento exato.
 
 ### E se eu precisar de uma marca d'água semitransparente?
 

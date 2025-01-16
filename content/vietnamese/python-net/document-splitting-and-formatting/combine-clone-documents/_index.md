@@ -11,7 +11,7 @@ Trong thế giới kỹ thuật số phát triển nhanh như hiện nay, xử l
 
 ## Cài đặt Aspose.Words
 
-Trước khi đi sâu vào chi tiết, bạn cần thiết lập Aspose.Words cho Python. Bạn có thể tải xuống và cài đặt bằng liên kết sau:[Tải xuống Aspose.Words cho Python](https://releases.aspose.com/words/python/). 
+ Trước khi đi sâu vào chi tiết, bạn cần thiết lập Aspose.Words cho Python. Bạn có thể tải xuống và cài đặt bằng liên kết sau:[Tải xuống Aspose.Words cho Python](https://releases.aspose.com/words/python/). 
 
 ## Kết hợp tài liệu
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## Kỹ thuật tiên tiến
-
-### Thay thế văn bản
-
-Aspose.Words cho phép bạn tìm và thay thế văn bản trong tài liệu một cách dễ dàng:
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### Sửa đổi định dạng
+## Sửa đổi định dạng
 
 Bạn cũng có thể sửa đổi định dạng bằng Aspose.Words:
 
@@ -127,7 +108,7 @@ Có, bạn có thể thực hiện sao chép nông để chỉ sao chép cấu t
  Sử dụng`range.replace()` phương pháp cùng với các tùy chọn phù hợp để tìm và thay thế văn bản một cách hiệu quả.
 
 ### Aspose.Words có hỗ trợ chỉnh sửa định dạng không?
-Hoàn toàn có thể, bạn có thể sửa đổi định dạng bằng các phương pháp như`run.font.size` Và`run.font.bold`.
+ Hoàn toàn có thể, bạn có thể sửa đổi định dạng bằng các phương pháp như`run.font.size` Và`run.font.bold`.
 
 ### Tôi có thể truy cập tài liệu Aspose.Words ở đâu?
  Bạn có thể tìm thấy tài liệu toàn diện tại[Tài liệu tham khảo API Aspose.Words cho Python](https://reference.aspose.com/words/python-net/).

@@ -44,7 +44,7 @@ Bu ad alanları, Word belgelerini yönetmek için ihtiyaç duyacağınız sını
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-The`DocumentBuilder` class, belgenizi oluşturmanız ve özelleştirmeniz için bir geçittir. Bunu Word belgeleri oluşturmak için sihirli değneğiniz olarak düşünün!
+ The`DocumentBuilder` class, belgenizi oluşturmanız ve özelleştirmeniz için bir geçittir. Bunu Word belgeleri oluşturmak için sihirli değneğiniz olarak düşünün!
 
 ## Adım 2: Bir Alıntı Ekle
 

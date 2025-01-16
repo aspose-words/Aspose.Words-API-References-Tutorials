@@ -44,10 +44,7 @@ Chấp nhận thay đổi là bước quan trọng trong việc hoàn thiện m�
 
 ```java
 // Chấp nhận tất cả các bản sửa đổi
-doc.acceptAllRevisions();
-
-// Chấp nhận một bản sửa đổi cụ thể theo chỉ mục
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Từ chối thay đổi
@@ -56,10 +53,7 @@ Trong một số trường hợp, bạn có thể cần từ chối một số t
 
 ```java
 // Từ chối tất cả các bản sửa đổi
-doc.rejectAllRevisions();
-
-// Từ chối một bản sửa đổi cụ thể theo chỉ mục
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Lưu tài liệu

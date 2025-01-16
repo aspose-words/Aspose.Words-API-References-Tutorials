@@ -112,7 +112,7 @@ Ve işte bu kadar! Aspose.Words for .NET kullanarak yer imli metni bir Word belg
 Evet, birden fazla yer imi arasında dolaşabilir ve her birini kopyalamak için aynı yöntemi kullanabilirsiniz.
 
 ### Yer imi bulunamazsa ne olur?
-The`Range.Bookmarks` mülk geri dönecek`null`, bu nedenle istisnalardan kaçınmak için bu durumu ele aldığınızdan emin olun.
+ The`Range.Bookmarks` mülk geri dönecek`null`, bu nedenle istisnalardan kaçınmak için bu durumu ele aldığınızdan emin olun.
 
 ### Orijinal yer iminin biçimini koruyabilir miyim?
  Kesinlikle! Kullanarak`ImportFormatMode.KeepSourceFormatting` orijinal biçimlendirmenin korunmasını sağlar.

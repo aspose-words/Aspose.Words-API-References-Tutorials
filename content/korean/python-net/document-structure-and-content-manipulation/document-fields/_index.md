@@ -23,7 +23,7 @@ Microsoft Word 문서는 종종 날짜, 계산 또는 외부 소스의 데이터
  필드를 삽입하려면 다음을 사용할 수 있습니다.`FieldBuilder` 클래스. 예를 들어, 현재 날짜 필드를 삽입하려면:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## 필드를 사용하여 문서 생성 자동화
-
-필드는 자동화된 문서 생성에 필수적입니다. 외부 소스의 데이터로 필드를 채울 수 있습니다.
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## 데이터 소스와 필드 통합

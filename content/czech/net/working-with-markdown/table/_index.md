@@ -87,7 +87,7 @@ Vytváření a přizpůsobení tabulek v Aspose.Words pro .NET je jednoduché, j
 ### Je možné přidávat obrázky do buněk tabulky?
  Absolutně! Obrázky můžete vkládat do buněk pomocí`DocumentBuilder.InsertImage` metoda.
 
-### Mohu jednotlivé buňky stylovat jinak?
+### Mohu jednotlivé buňky různě stylovat?
  Ano, na jednotlivé buňky můžete použít různé styly tím, že k nim přistoupíte prostřednictvím`Cells` kolekce řady.
 
 ### Jak odstraním ohraničení z tabulky?

@@ -117,7 +117,7 @@ Và bạn đã có nó! Bằng cách làm theo các bước này, bạn đã th�
  Có, bạn có thể tùy chỉnh tiền tố mỗi lần bạn lưu tài liệu bằng cách thay đổi`CssClassNamePrefix` tài sản.
 
 ### Phương pháp này có hỗ trợ CSS nội tuyến không?
-Các`CssClassNamePrefix`thuộc tính này hoạt động với CSS bên ngoài. Đối với CSS nội tuyến, bạn sẽ cần một cách tiếp cận khác.
+ Các`CssClassNamePrefix`thuộc tính này hoạt động với CSS bên ngoài. Đối với CSS nội tuyến, bạn sẽ cần một cách tiếp cận khác.
 
 ### Làm thế nào tôi có thể thêm các tùy chọn lưu HTML khác?
  Bạn có thể cấu hình nhiều thuộc tính khác nhau của`HtmlSaveOptions` để tùy chỉnh đầu ra HTML của bạn. Kiểm tra[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.

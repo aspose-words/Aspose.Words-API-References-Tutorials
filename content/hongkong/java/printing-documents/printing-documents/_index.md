@@ -77,7 +77,7 @@ class MultipagePrintDocument implements Printable
     private final int mPagesPerSheet;
     private final boolean mPrintPageBorders;
     private final AttributeSet mAttributeSet;
-    /// <摘要>
+    //<摘要>
     //自訂PrintDocument 類別的建構子。
     // / </摘要>
     public MultipagePrintDocument(Document document, int pagesPerSheet, boolean printPageBorders,

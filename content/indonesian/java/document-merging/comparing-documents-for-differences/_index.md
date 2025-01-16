@@ -7,82 +7,151 @@ type: docs
 weight: 12
 url: /id/java/document-merging/comparing-documents-for-differences/
 ---
+## Perkenalan
 
-## Pengantar untuk Membandingkan Dokumen untuk Menemukan Perbedaan
-
-Dalam dunia manajemen dokumen yang terus berkembang, memastikan keakuratan dan konsistensi dokumen Anda adalah yang terpenting. Baik Anda menangani kontrak hukum, laporan keuangan, atau sekadar melacak revisi dalam dokumen Anda, kemampuan untuk membandingkan dokumen untuk mengetahui perbedaannya adalah fitur yang penting. Panduan langkah demi langkah ini akan memandu Anda melalui proses membandingkan dokumen untuk mengetahui perbedaannya menggunakan Aspose.Words untuk Java, API yang hebat untuk bekerja dengan dokumen Word.
+Pernahkah Anda bertanya-tanya bagaimana cara menemukan setiap perbedaan antara dua dokumen Word? Mungkin Anda sedang merevisi dokumen atau mencoba menemukan perubahan yang dibuat oleh kolaborator. Perbandingan manual bisa jadi membosankan dan rawan kesalahan, tetapi dengan Aspose.Words untuk Java, itu mudah! Pustaka ini memungkinkan Anda mengotomatiskan perbandingan dokumen, menyorot revisi, dan menggabungkan perubahan dengan mudah.
 
 ## Prasyarat
 
-Sebelum kita membahas detailnya, mari pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum masuk ke kode, pastikan Anda telah menyiapkan hal berikut:  
+1. Java Development Kit (JDK) terinstal di sistem Anda.  
+2.  Aspose.Words untuk pustaka Java. Anda dapat[unduh disini](https://releases.aspose.com/words/java/).  
+3. Lingkungan pengembangan seperti IntelliJ IDEA atau Eclipse.  
+4. Kemampuan dasar dalam pemrograman Java.  
+5.  Lisensi Aspose yang valid. Jika Anda belum memilikinya, dapatkan lisensi[lisensi sementara di sini](https://purchase.aspose.com/temporary-license/).
 
-- Pengetahuan dasar tentang pemrograman Java.
--  Pustaka Aspose.Words untuk Java telah terinstal. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/java/).
-- Lingkungan pengembangan terpadu (IDE) seperti IntelliJ IDEA atau Eclipse.
+## Paket Impor
 
-## Menyiapkan Proyek Java Anda
-
-Untuk memulai, buat proyek Java baru di IDE Anda dan tambahkan pustaka Aspose.Words ke dependensi proyek Anda.
-
-## Langkah 1: Muat Dokumen
-
-Langkah pertama dalam membandingkan dokumen adalah memuat dokumen yang ingin Anda bandingkan. Anda dapat menggunakan potongan kode berikut untuk memuat dua dokumen:
+Untuk menggunakan Aspose.Words, Anda perlu mengimpor kelas-kelas yang diperlukan. Berikut ini adalah impor yang diperlukan:
 
 ```java
-// Muat dokumen asli
-Document docOriginal = new Document("original_document.docx");
-
-// Muat dokumen yang dimodifikasi
-Document docModified = new Document("modified_document.docx");
+import com.aspose.words.*;
+import java.util.Date;
 ```
 
- Mengganti`"original_document.docx"` Dan`"modified_document.docx"` dengan jalur ke dokumen Anda sendiri.
+Pastikan paket-paket ini ditambahkan dengan benar ke dependensi proyek Anda.
 
-## Langkah 2: Bandingkan Dokumen
 
-Setelah Anda memuat dokumen, saatnya membandingkannya. Aspose.Words menyediakan metode yang mudah untuk membandingkan dokumen. Berikut cara melakukannya:
+Di bagian ini, kami akan menguraikan prosesnya menjadi beberapa langkah sederhana.
+
+
+## Langkah 1: Siapkan Dokumen Anda
+
+Untuk memulai, Anda memerlukan dua dokumen: satu yang mewakili dokumen asli dan satu lagi yang mewakili versi yang telah diedit. Berikut cara membuatnya:
 
 ```java
-// Bandingkan kedua dokumen tersebut
-DocumentComparer comparer = new DocumentComparer(docOriginal, docModified);
-comparer.compare();
+Document doc1 = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc1);
+builder.writeln("This is the original document.");
+
+Document doc2 = new Document();
+builder = new DocumentBuilder(doc2);
+builder.writeln("This is the edited document.");
 ```
 
-## Langkah 3: Simpan Hasil Perbandingan
+ Ini menciptakan dua dokumen dalam memori dengan konten dasar. Anda juga dapat memuat dokumen Word yang ada menggunakan`new Document("path/to/document.docx")`.
 
-Setelah membandingkan dokumen, Anda perlu menyimpan hasilnya. Aspose.Words memungkinkan Anda menyimpan hasil perbandingan sebagai dokumen baru. Berikut caranya:
+
+## Langkah 2: Periksa Revisi yang Ada
+
+Revisi dalam dokumen Word merupakan perubahan yang terlacak. Sebelum membandingkan, pastikan tidak ada dokumen yang memuat revisi yang sudah ada sebelumnya:
 
 ```java
-// Simpan hasil perbandingan
-comparer.save("comparison_result.docx");
+if (doc1.getRevisions().getCount() == 0 && doc2.getRevisions().getCount() == 0) {
+    System.out.println("No revisions found. Proceeding with comparison...");
+}
 ```
 
-## Langkah 4: Tinjau Perbedaannya
+Jika ada revisi, Anda mungkin ingin menerima atau menolaknya sebelum melanjutkan.
 
-Setelah hasil perbandingan tersimpan, Anda dapat meninjau perbedaan antara dokumen asli dan dokumen yang dimodifikasi. Buka "comparison_result.docx" untuk melihat perubahan yang disorot.
+
+## Langkah 3: Bandingkan Dokumen
+
+ Gunakan`compare` metode untuk menemukan perbedaan. Metode ini membandingkan dokumen target (`doc2`) dengan dokumen sumber (`doc1`):
+
+```java
+doc1.compare(doc2, "AuthorName", new Date());
+```
+
+Di Sini:
+- AuthorName adalah nama orang yang membuat perubahan.
+- Tanggal adalah stempel waktu perbandingan.
+
+
+## Langkah 4: Revisi Proses
+
+Setelah dibandingkan, Aspose.Words akan menghasilkan revisi pada dokumen sumber (`doc1`). Mari kita analisis revisi berikut:
+
+```java
+for (Revision r : doc1.getRevisions()) {
+    System.out.println("Revision type: " + r.getRevisionType());
+    System.out.println("Node type: " + r.getParentNode().getNodeType());
+    System.out.println("Changed text: " + r.getParentNode().getText());
+}
+```
+
+Putaran ini menyediakan informasi terperinci tentang setiap revisi, seperti jenis perubahan dan teks yang terpengaruh.
+
+
+## Langkah 5: Terima Semua Revisi
+
+Jika Anda menginginkan dokumen sumber (`doc1`) untuk mencocokkan dokumen target (`doc2`), terima semua revisi:
+
+```java
+doc1.getRevisions().acceptAll();
+```
+
+ Pembaruan ini`doc1` untuk mencerminkan semua perubahan yang dibuat di`doc2`.
+
+
+## Langkah 6: Simpan Dokumen yang Diperbarui
+
+Terakhir, simpan dokumen yang diperbarui ke disk:
+
+```java
+doc1.save("Document.Compare.docx");
+```
+
+Untuk mengonfirmasi perubahan, muat ulang dokumen dan verifikasi tidak ada revisi yang tersisa:
+
+```java
+doc1 = new Document("Document.Compare.docx");
+if (doc1.getRevisions().getCount() == 0) {
+    System.out.println("Documents are now identical.");
+}
+```
+
+
+## Langkah 7: Verifikasi Kesetaraan Dokumen
+
+Untuk memastikan dokumennya identik, bandingkan teksnya:
+
+```java
+if (doc1.getText().trim().equals(doc2.getText().trim())) {
+    System.out.println("Documents are equal.");
+}
+```
+
+Jika teksnya cocok, selamat—Anda telah berhasil membandingkan dan menyinkronkan dokumen!
+
 
 ## Kesimpulan
 
-Membandingkan perbedaan dokumen menggunakan Aspose.Words untuk Java adalah proses mudah yang dapat meningkatkan alur kerja manajemen dokumen Anda. Dengan API canggih ini, Anda dapat memastikan keakuratan dan konsistensi dokumen Anda dengan mudah.
+Membandingkan dokumen bukan lagi pekerjaan yang membosankan, berkat Aspose.Words untuk Java. Hanya dengan beberapa baris kode, Anda dapat menemukan perbedaan, memproses revisi, dan memastikan konsistensi dokumen. Baik Anda mengelola proyek penulisan kolaboratif atau mengaudit dokumen hukum, fitur ini akan mengubah segalanya.
 
 ## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara menginstal Aspose.Words untuk Java?
+### Dapatkah saya membandingkan dokumen dengan gambar dan tabel?  
+Ya, Aspose.Words mendukung perbandingan dokumen yang kompleks, termasuk dokumen yang berisi gambar, tabel, dan pemformatan.
 
- Untuk menginstal Aspose.Words untuk Java, kunjungi halaman unduhan[Di Sini](https://releases.aspose.com/words/java/)dan ikuti petunjuk instalasi yang disediakan.
+### Apakah saya memerlukan lisensi untuk menggunakan fitur ini?  
+ Ya, lisensi diperlukan untuk fungsionalitas penuh. Dapatkan lisensi[lisensi sementara di sini](https://purchase.aspose.com/temporary-license/).
 
-### Dapatkah saya membandingkan dokumen dengan format yang berbeda, seperti DOCX dan PDF?
+### Apa yang terjadi jika ada revisi yang sudah ada sebelumnya?  
+Anda harus menerima atau menolaknya sebelum membandingkan dokumen untuk menghindari konflik.
 
-Aspose.Words utamanya berfungsi dengan dokumen Word dalam format DOCX. Untuk membandingkan dokumen dalam format yang berbeda, Anda mungkin perlu mengonversinya ke format DOCX terlebih dahulu.
+### Bisakah saya menyorot revisi dalam dokumen?  
+Ya, Aspose.Words memungkinkan Anda menyesuaikan bagaimana revisi ditampilkan, seperti menyorot perubahan.
 
-### Apakah ada batasan ukuran dokumen saat menggunakan Aspose.Words?
-
-Aspose.Words dapat menangani dokumen besar secara efisien, tetapi penting untuk mempertimbangkan memori dan kinerja sistem Anda saat bekerja dengan file yang sangat besar.
-
-### Dapatkah saya menyesuaikan cara perbedaan disorot dalam hasil perbandingan?
-
-Ya, Aspose.Words memungkinkan Anda menyesuaikan tampilan perbedaan dalam dokumen hasil perbandingan, seperti menggunakan warna atau gaya yang berbeda untuk konten yang ditambahkan dan dihapus.
-
-### Apakah ada versi uji coba Aspose.Words yang tersedia untuk pengujian?
-
-Ya, Anda dapat meminta versi uji coba gratis Aspose.Words untuk Java dari situs web tersebut. Dengan demikian, Anda dapat menjelajahi fitur dan kemampuannya sebelum melakukan pembelian.
+### Apakah fitur ini tersedia dalam bahasa pemrograman lain?  
+Ya, Aspose.Words mendukung banyak bahasa, termasuk .NET dan Python.

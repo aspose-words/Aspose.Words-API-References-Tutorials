@@ -51,7 +51,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("sad mad bad");
 ```
 
-Burada yeni bir belge oluşturuyoruz ve ona "üzgün, çılgın, kötü" metnini ekliyoruz. Bu metin, regex değişimi için test verimiz olacak.
+Burada, yeni bir belge oluşturuyoruz ve ona "üzgün, çılgın, kötü" metnini ekliyoruz. Bu metin, regex değişimi için test verimiz olacak.
 
 ## Adım 3: Bul ve Değiştir Seçeneklerini Tanımlayın
 

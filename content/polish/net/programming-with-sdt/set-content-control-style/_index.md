@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
-Ten`Styles` własność`Document` Klasa daje nam dostęp do wszystkich stylów dostępnych w dokumencie. Używamy`StyleIdentifier.Quote`aby wybrać styl cytatu.
+ Ten`Styles` własność`Document` Klasa daje nam dostęp do wszystkich stylów dostępnych w dokumencie. Używamy`StyleIdentifier.Quote`aby wybrać styl cytatu.
 
 ## Krok 4: Zastosuj styl do znacznika dokumentu strukturalnego
 
@@ -103,4 +103,4 @@ Tak, możesz zapisać oryginalny styl przed wprowadzeniem zmian i zastosować go
 Oczywiście! Ta metoda działa dla różnych elementów dokumentu. Wystarczy dostosować kod, aby trafić do pożądanego elementu.
 
 ### Czy Aspose.Words obsługuje inne platformy poza .NET?  
-Tak, Aspose.Words jest dostępny dla Java, C++ i innych platformach. Sprawdź ich[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+Tak, Aspose.Words jest dostępny dla Java, C++ i innych platformach. Sprawdź ich[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.

@@ -15,7 +15,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ để xử lý các tài
 
 Trước khi tìm hiểu về mã, hãy đảm bảo bạn đã thiết lập mọi thứ:
 
-1.  Aspose.Words cho .NET: Bạn cần phải cài đặt Aspose.Words cho .NET. Bạn có thể tải xuống từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words cho .NET: Bạn cần phải cài đặt Aspose.Words cho .NET. Bạn có thể tải xuống từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển C# nào khác.
 3. Kiến thức cơ bản về C#: Hiểu biết về những điều cơ bản của lập trình C# sẽ rất có lợi.
 
@@ -39,7 +39,7 @@ Trước khi bắt đầu thao tác tài liệu, bạn cần xác định đư�
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế mà bạn muốn lưu tài liệu của mình.
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế mà bạn muốn lưu tài liệu của mình.
 
 ## Bước 2: Tạo một tài liệu mới
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## Bước 4: Thay thế văn bản bằng ký tự Meta ngắt đoạn
 
- Các ký tự meta có thể biểu diễn nhiều thành phần khác nhau như đoạn văn, tab và ngắt dòng. Ở đây, chúng tôi sử dụng`&p` để biểu diễn ngắt đoạn văn.
+Các ký tự meta có thể biểu diễn nhiều thành phần khác nhau như đoạn văn, tab và ngắt dòng. Ở đây, chúng tôi sử dụng`&p` để biểu diễn ngắt đoạn văn.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");

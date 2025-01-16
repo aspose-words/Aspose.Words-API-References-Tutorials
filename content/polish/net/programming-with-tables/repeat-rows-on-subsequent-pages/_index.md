@@ -118,4 +118,4 @@ masz to! Za pomocą zaledwie kilku linijek kodu możesz utworzyć dokument Word 
  Tak, możesz modyfikować istniejące tabele, uzyskując do nich dostęp za pomocą`Document` obiekt i stosując podobne formatowanie.
 
 ### Jakie inne opcje formatowania tabel są dostępne w Aspose.Words dla platformy .NET?
- Aspose.Words dla .NET oferuje szeroki zakres opcji formatowania tabeli, w tym scalanie komórek, ustawienia obramowania i wyrównywanie tabeli. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Aspose.Words dla .NET oferuje szeroki zakres opcji formatowania tabeli, w tym scalanie komórek, ustawienia obramowania i wyrównywanie tabeli. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.

@@ -29,7 +29,7 @@ Questo spazio dei nomi fornisce l'accesso all'API Aspose.Words, consentendo di l
 
 ## Passaggio 1: caricare il file DOC
 
-Inizia caricando il file DOC che vuoi convertire:
+Per prima cosa carica il file DOC che vuoi convertire:
 ```csharp
 // Percorso verso la directory dei documenti.
 string dataDir = "YOUR DOCUMENT DIRECTORY";

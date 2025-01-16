@@ -173,7 +173,7 @@ Aspose.Words fornisce un supporto completo per la gestione di tabelle ed elenchi
 
 ### 5.4 Esportazione e conversione dei documenti
 
-Aspose.Words supporta l'esportazione di documenti in diversi formati di file, tra cui PDF, HTML, TXT e altro. Inoltre, consente di convertire file tra vari formati di documento senza problemi.
+Aspose.Words supporta l'esportazione di documenti in diversi formati di file, tra cui PDF, HTML, TXT e altro. Inoltre, consente di convertire file tra vari formati di documenti senza problemi.
 
 ## Conclusione
 

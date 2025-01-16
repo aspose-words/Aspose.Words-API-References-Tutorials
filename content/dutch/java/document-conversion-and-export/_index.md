@@ -38,5 +38,5 @@ Ontgrendel de kracht van wiskundige vergelijkingen in documenten met Aspose.Word
 Ontgrendel de kracht van documentvormen in Aspose.Words voor Java. Leer visueel aantrekkelijke documenten te maken met stapsgewijze voorbeelden.
 ### [Watermerken gebruiken in documenten in Aspose.Words voor Java](./using-watermarks-to-documents/)
 Leer hoe u watermerken toevoegt aan documenten in Aspose.Words voor Java. Pas tekst- en afbeeldingswatermerken aan voor professioneel ogende documenten.
-### [Opmaaktabellen en tabelstijlen in Aspose.Words voor Java](./formatting-tables-and-table-styles/)
+### [Tabellen en tabelstijlen opmaken in Aspose.Words voor Java](./formatting-tables-and-table-styles/)
 Leer hoe u tabellen opmaakt en tabelstijlen toepast in Aspose.Words voor Java. Bekijk stapsgewijze handleidingen met broncode voor effectieve tabelopmaak. Verbeter de lay-out van uw document met Aspose.Words.

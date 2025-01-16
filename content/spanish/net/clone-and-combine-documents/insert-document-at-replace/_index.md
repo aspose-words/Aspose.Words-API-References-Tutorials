@@ -165,7 +165,7 @@ Sí, puede modificar el controlador de devolución de llamada para manejar múlt
  ¡Por supuesto! Puedes descargar una versión de prueba gratuita desde[aquí](https://releases.aspose.com/).
 
 ### ¿Cómo puedo obtener soporte para Aspose.Words?
-Puede obtener ayuda visitando el sitio[Foro Aspose.Words](https://forum.aspose.com/c/words/8).
+ Puede obtener ayuda visitando el sitio[Foro Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### ¿Puedo conservar el formato del documento insertado?
  Sí, el`NodeImporter` La clase le permite especificar cómo se maneja el formato al importar nodos de un documento a otro.

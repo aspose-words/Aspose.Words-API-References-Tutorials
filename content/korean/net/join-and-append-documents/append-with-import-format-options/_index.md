@@ -58,7 +58,7 @@ Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 
 ```csharp
 // 소스 문서와 대상 문서에서 번호가 충돌하는 경우 지정하십시오.
-// 그러면 소스 문서의 번호가 사용됩니다.
+// 그러면 원본 문서의 번호가 사용됩니다.
 ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 

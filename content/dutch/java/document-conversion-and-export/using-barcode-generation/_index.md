@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Barcodegenerator instellen
 
- Stel een aangepaste barcodegenerator in met behulp van de`FieldOptions` klasse. In dit voorbeeld gaan we ervan uit dat u een`CustomBarcodeGenerator` klasse om de barcode te genereren. Vervangen`CustomBarcodeGenerator` met uw werkelijke barcodegeneratielogica:
+ Stel een aangepaste barcodegenerator in met behulp van de`FieldOptions` klasse. In dit voorbeeld gaan we ervan uit dat u een`CustomBarcodeGenerator`klasse om de barcode te genereren. Vervangen`CustomBarcodeGenerator` met uw werkelijke barcodegeneratielogica:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

@@ -18,7 +18,7 @@ Voordat we dieper ingaan op het beveiligen van uw Word-documenten met een wachtw
 1.  Aspose.Words voor .NET: Zorg ervoor dat u de Aspose.Words voor .NET-bibliotheek hebt. U kunt[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere C#-ontwikkelomgeving.
 3. Basiskennis van C#: een fundamenteel begrip van C#-programmering.
-4. Aspose-licentie: ontvang een licentie van[hier](https://purchase.aspose.com/buy) of gebruik een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
+4.  Aspose-licentie: ontvang een licentie van[hier](https://purchase.aspose.com/buy) of gebruik een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
 
 ## Naamruimten importeren
 
@@ -64,7 +64,7 @@ Dit is waar de magie gebeurt. We passen wachtwoordbeveiliging toe op ons documen
 
 ### Kies beschermingstype
 
- Aspose.Words biedt verschillende soorten bescherming, zoals`NoProtection`, `ReadOnly`, `AllowOnlyComments` , En`AllowOnlyFormFields` Voor dit voorbeeld gebruiken we`NoProtection` maar dan met een wachtwoord, wat in feite betekent dat het document bewerkbaar is, maar dat een wachtwoord nodig is om de beveiliging te verwijderen.
+ Aspose.Words biedt verschillende soorten bescherming, zoals`NoProtection`, `ReadOnly`, `AllowOnlyComments` , En`AllowOnlyFormFields`Voor dit voorbeeld gebruiken we`NoProtection` maar dan met een wachtwoord, wat in feite betekent dat het document bewerkbaar is, maar dat een wachtwoord nodig is om de beveiliging te verwijderen.
 
 ### Bescherming toepassen
 
@@ -94,7 +94,7 @@ En daar heb je het! Je hebt succesvol wachtwoordbeveiliging toegevoegd aan je Wo
 
 ### Kan ik verschillende soorten beveiliging gebruiken met Aspose.Words?
 
- Ja, Aspose.Words ondersteunt verschillende soorten bescherming, waaronder`ReadOnly`, `AllowOnlyComments` , En`AllowOnlyFormFields`.
+Ja, Aspose.Words ondersteunt verschillende soorten bescherming, waaronder`ReadOnly`, `AllowOnlyComments` , En`AllowOnlyFormFields`.
 
 ### Hoe kan ik de wachtwoordbeveiliging van een document verwijderen?
 
@@ -110,4 +110,4 @@ Ja, Aspose.Words is compatibel met .NET Core, .NET Framework en andere .NET-plat
 
 ### Waar kan ik meer documentatie over Aspose.Words vinden?
 
-Meer documentatie vindt u op de[Aspose.Words documentatiepagina](https://reference.aspose.com/words/net/).
+ Meer documentatie vindt u op de[Aspose.Words documentatiepagina](https://reference.aspose.com/words/net/).

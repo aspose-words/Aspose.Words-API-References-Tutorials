@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-El`MetafileRenderingOptions` La clase proporciona opciones sobre cómo se representan los metarchivos (como WMF). Al configurar`ScaleWmfFontsToMetafileSize` a`false`, está indicando a Aspose.Words que no escale las fuentes según el tamaño del metarchivo, lo que puede ayudar a reducir el tamaño general del PDF.
+ El`MetafileRenderingOptions` La clase proporciona opciones sobre cómo se representan los metarchivos (como WMF). Al configurar`ScaleWmfFontsToMetafileSize` a`false`, está indicando a Aspose.Words que no escale las fuentes según el tamaño del metarchivo, lo que puede ayudar a reducir el tamaño general del PDF.
 
 ## Paso 3: Establecer las opciones para guardar el PDF
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-El`PdfSaveOptions` La clase permite especificar varias configuraciones para guardar el documento como PDF. Al asignar las opciones configuradas previamente`MetafileRenderingOptions` hacia`MetafileRenderingOptions` propiedad de`PdfSaveOptions`, se asegura de que el documento se guarde de acuerdo con la configuración de representación de metarchivo deseada.
+ El`PdfSaveOptions` La clase permite especificar varias configuraciones para guardar el documento como PDF. Al asignar las opciones configuradas previamente`MetafileRenderingOptions` hacia`MetafileRenderingOptions` propiedad de`PdfSaveOptions`, se asegura de que el documento se guarde de acuerdo con la configuración de representación de metarchivo deseada.
 
 ## Paso 4: Guardar el documento como PDF
 

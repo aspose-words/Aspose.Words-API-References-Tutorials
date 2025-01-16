@@ -114,7 +114,7 @@ Pole ASK v Aspose.Words je pole, které uživatele vyzve k zadání konkrétníh
 Ano, do dokumentu můžete vložit více polí ASK, každé s jedinečnými výzvami a odpověďmi.
 
 ###  Jaký je účel`PromptOnceOnMailMerge` property?
-The`PromptOnceOnMailMerge` vlastnost určuje, zda se výzva ASK zobrazí pouze jednou během operace hromadné korespondence nebo pokaždé.
+ The`PromptOnceOnMailMerge` vlastnost určuje, zda se výzva ASK zobrazí pouze jednou během operace hromadné korespondence nebo pokaždé.
 
 ### Musím aktualizovat pole ASK po nastavení jeho vlastností?
 Ano, aktualizace pole ASK zajistí, že všechny vlastnosti budou správně použity a pole bude fungovat podle očekávání.

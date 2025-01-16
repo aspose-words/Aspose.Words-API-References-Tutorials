@@ -12,7 +12,7 @@ url: /ja/java/using-document-elements/using-fields/
 
 ## 1. はじめに
 
-Aspose.Words for Java は、Java アプリケーションで Word 文書を扱うすべての人にとって不可欠なツールです。フィールドは、文書内に動的なデータを保存できるプレースホルダーです。このチュートリアルでは、フィールドを効果的に操作する方法を説明します。
+Aspose.Words for Java は、Java アプリケーションで Word 文書を扱う人にとって不可欠なツールです。フィールドは、文書内に動的なデータを保存できるプレースホルダーです。このチュートリアルでは、フィールドを効果的に操作する方法を説明します。
 
 ## 2. 環境の設定
 
@@ -89,7 +89,7 @@ HandleMergeField クラスのソースコード
 ```java
     private static class HandleMergeField implements IFieldMergingCallback
     {
-        /// <要約>
+        //<要約>
         //このハンドラは文書内の差し込み印刷フィールドごとに呼び出されます。
         //データ ソースで見つかったすべてのレコードに対して / を実行します。
         /// </要約>
@@ -241,7 +241,7 @@ HandleMergeField クラスのソースコード
         {
             //何もしないでください。
         }
-        /// <要約>
+        //<要約>
         /// これは、差し込み印刷エンジンがドキュメント内で Image:XXX 差し込み印刷フィールドに遭遇したときに呼び出されます。
         /// Image オブジェクト、ファイル名、または画像を含むストリームを返すことができます。
         /// </要約>
@@ -294,7 +294,7 @@ HandleMergeField クラスのソースコード
     }
     private static class HandleMergeFieldAlternatingRows implements IFieldMergingCallback
     {
-        /// <要約>
+        //<要約>
         /// ドキュメント内で検出されたすべての差し込みフィールドに対して呼び出されます。
         /// 差し込み印刷エンジンにデータを返すか、ドキュメントに対して他の処理を実行することができます。
         /// この場合はセルの書式を変更します。
@@ -325,14 +325,14 @@ HandleMergeField クラスのソースコード
         private DocumentBuilder mBuilder;
         private int mRowIdx;
     }
-    /// <要約>
+    //<要約>
     /// 値が奇数の場合は true を返し、偶数の場合は false を返します。
     /// </要約>
     private static boolean isOdd(int value)
     {
         return (value / 2 * 2) == value;
     }
-    /// <要約>
+    //<要約>
     /// DataTable を作成し、データを入力します。
     /// 実際には、この DataTable はデータベースから入力される必要があります。
     /// </要約>

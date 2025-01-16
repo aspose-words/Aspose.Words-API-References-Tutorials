@@ -15,7 +15,7 @@ url: /hi/net/programming-with-pdfsaveoptions/image-compression/
 
 ट्यूटोरियल में आगे बढ़ने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ मौजूद हैं:
 
-1.  Aspose.Words for .NET: आपके पास Aspose.Words for .NET इंस्टॉल होना चाहिए। आप इसे यहाँ से डाउनलोड कर सकते हैं[Aspose वेबसाइट](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: आपके पास Aspose.Words for .NET इंस्टॉल होना चाहिए। आप इसे यहाँ से डाउनलोड कर सकते हैं[Aspose वेबसाइट](https://releases.aspose.com/words/net/).
 
 2. C# का बुनियादी ज्ञान: C# प्रोग्रामिंग से परिचित होने से आपको इस ट्यूटोरियल में दिए गए कोड उदाहरणों को समझने में मदद मिलेगी।
 

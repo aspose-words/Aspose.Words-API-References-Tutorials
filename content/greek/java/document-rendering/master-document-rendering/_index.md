@@ -101,8 +101,6 @@ pageSetup.setOrientation(Orientation.LANDSCAPE);
 // Προσθέστε κεφαλίδες και υποσέλιδα
 pageSetup.setHeaderDistance(20);
 pageSetup.setFooterDistance(10);
-pageSetup.setHeaderFooter(HeaderFooterType.HEADER_PRIMARY, new Paragraph(doc, "Header Text"));
-pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "Footer Text"));
 ```
 
 ### Κεφαλίδες και υποσέλιδα
@@ -110,17 +108,17 @@ pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "F
 Οι κεφαλίδες και τα υποσέλιδα παρέχουν συνεπείς πληροφορίες σε όλες τις σελίδες του εγγράφου. Μπορείτε να προσθέσετε διαφορετικό περιεχόμενο σε πρωτεύουσες, πρώτης σελίδας και ζυγές κεφαλίδες και υποσέλιδα μονών/ζυγών.
 
 ```java
-// Προσθήκη περιεχομένου στην κύρια κεφαλίδα
-HeaderFooter primaryHeader = pageSetup.getHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
-Paragraph headerPara = new Paragraph(doc, "This is the header text.");
-primaryHeader.appendChild(headerPara);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Προσθήκη περιεχομένου στο κύριο υποσέλιδο
-HeaderFooter primaryFooter = pageSetup.getHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-Paragraph footerPara = new Paragraph(doc, "Page number: ");
-FieldPage fieldPage = new FieldPage();
-footerPara.appendChild(fieldPage);
-primaryFooter.appendChild(footerPara);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
+
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
+
+doc.save("HeaderFooterDocument.docx");
 ```
 
 ## Απόδοση Εγγράφων
@@ -133,13 +131,13 @@ primaryFooter.appendChild(footerPara);
 
 ```java
 // Απόδοση σε PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 
 // Απόδοση σε XPS
-doc.save("output.xps", SaveFormat.XPS);
+doc.save("output.xps");
 
 // Απόδοση σε εικόνες
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setResolution(300);
 doc.save("output.png", saveOptions);
 ```
@@ -161,7 +159,7 @@ doc.setFontSettings(fontSettings);
 
 ```java
 // Ορίστε επιλογές εικόνας
-ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageOptions = new ImageSaveOptions();
 imageOptions.setResolution(300);
 imageOptions.setPrettyFormat(true);
 doc.save("output.png", imageOptions);
@@ -176,10 +174,10 @@ doc.save("output.png", imageOptions);
 Μπορείτε να αποδώσετε συγκεκριμένες σελίδες ενός εγγράφου, επιτρέποντάς σας να εμφανίσετε συγκεκριμένες ενότητες ή να δημιουργήσετε προεπισκοπήσεις αποτελεσματικά.
 
 ```java
-// Απόδοση συγκεκριμένης περιοχής σελίδων
+// Απόδοση συγκεκριμένου εύρους σελίδων
 int startPage = 3;
 int endPage = 5;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(startPage, endPage));
 doc.save("output.png", saveOptions);
 ```
@@ -191,7 +189,7 @@ doc.save("output.png", saveOptions);
 ```java
 // Αποδώστε συγκεκριμένες παραγράφους
 int[] paragraphIndices = {0, 2, 4};
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(paragraphIndices));
 doc.save("output.png", saveOptions);
 ```
@@ -203,7 +201,7 @@ doc.save("output.png", saveOptions);
 ```java
 // Απόδοση συγκεκριμένου πίνακα
 int tableIndex = 1;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(tableIndex));
 doc.save("output.png", saveOptions);
 ```

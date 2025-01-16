@@ -84,7 +84,7 @@ masz! Właśnie dodałeś tytuł i opis do tabeli w dokumencie Word za pomocą A
 Tak, możesz powtórzyć ten proces dla każdej tabeli, którą chcesz zaktualizować.
 
 ### Jakie są praktyczne zastosowania tytułów i opisów tabel?
-Pomagają zapewnić kontekst, zwłaszcza w obszernych dokumentach zawierających wiele tabel.
+Pomagają zapewnić kontekst, zwłaszcza w przypadku obszernych dokumentów zawierających wiele tabel.
 
 ### Czy Aspose.Words dla .NET jest darmowy?
  Nie, ale możesz zacząć od[bezpłatny okres próbny](https://releases.aspose.com/).

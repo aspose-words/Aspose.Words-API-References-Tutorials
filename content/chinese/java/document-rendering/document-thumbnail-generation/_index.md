@@ -40,7 +40,7 @@ Document doc = new Document("sample.docx");
 ```java
 //生成文档缩略图的 Java 代码
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 

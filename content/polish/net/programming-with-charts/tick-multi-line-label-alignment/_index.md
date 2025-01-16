@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Krok 3: Użyj DocumentBuilder
 
-Ten`DocumentBuilder` Klasa w Aspose.Words jest potężnym narzędziem, które pomaga w konstruowaniu dokumentów. Użyjemy jej, aby wstawić wykres do naszego dokumentu.
+ Ten`DocumentBuilder` Klasa w Aspose.Words jest potężnym narzędziem, które pomaga w konstruowaniu dokumentów. Użyjemy jej, aby wstawić wykres do naszego dokumentu.
 
  Zainicjuj instancję`DocumentBuilder` klasy, przekazując obiekt dokumentu do jej konstruktora.
 

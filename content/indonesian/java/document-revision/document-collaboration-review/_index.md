@@ -70,7 +70,7 @@ Kolaborasi dan peninjauan dokumen merupakan aspek penting dari manajemen dokumen
 
 ### Dapatkah saya melacak perubahan dalam dokumen Word menggunakan Aspose.Words untuk Java?
 
-Ya, Aspose.Words untuk Java memungkinkan Anda melacak perubahan dalam dokumen Word. Anda dapat menggunakan`startTrackRevisions` metode untuk mengaktifkan pelacakan perubahan.
+ Ya, Aspose.Words untuk Java memungkinkan Anda melacak perubahan dalam dokumen Word. Anda dapat menggunakan`startTrackRevisions` metode untuk mengaktifkan pelacakan perubahan.
 
 ### Bagaimana saya dapat meninjau perubahan yang dibuat pada suatu dokumen?
 

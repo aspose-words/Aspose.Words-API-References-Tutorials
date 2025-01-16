@@ -80,7 +80,7 @@ Door Smart Art-vormen te identificeren, weet u zeker dat u alleen afbeeldingen b
 Kop: Smart Art Graphics vernieuwen
 
 Uitleg:
-De`UpdateSmartArtDrawing` methode vernieuwt de Smart Art-afbeelding, zodat deze alle wijzigingen in de gegevens of lay-out van het document weerspiegelt. Deze methode moet worden aangeroepen voor elke Smart Art-vorm die in de vorige stap is geïdentificeerd.
+ De`UpdateSmartArtDrawing` methode vernieuwt de Smart Art-afbeelding, zodat deze alle wijzigingen in de gegevens of lay-out van het document weerspiegelt. Deze methode moet worden aangeroepen voor elke Smart Art-vorm die in de vorige stap is geïdentificeerd.
 
 ```csharp
 // Smart Art-tekening voor elke Smart Art-vorm bijwerken

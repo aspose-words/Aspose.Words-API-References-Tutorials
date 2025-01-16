@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-Le`InsertChart` La méthode prend le type, la largeur et la hauteur du graphique comme paramètres. Dans ce cas, nous insérons un graphique en courbes avec une largeur de 432 et une hauteur de 252.
+ Le`InsertChart` La méthode prend le type, la largeur et la hauteur du graphique comme paramètres. Dans ce cas, nous insérons un graphique en courbes avec une largeur de 432 et une hauteur de 252.
 
 ## Étape 3 : Accéder à la série de graphiques
 

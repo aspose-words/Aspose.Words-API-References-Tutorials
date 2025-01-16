@@ -86,7 +86,7 @@ newDoc.Sections.Add(newSection);
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-그만큼`Save` 이 방법은 섹션 인덱스를 기반으로 고유한 이름으로 지정된 디렉토리에 새 문서를 저장합니다.
+ 그만큼`Save` 이 방법은 섹션 인덱스를 기반으로 고유한 이름으로 지정된 디렉토리에 새 문서를 저장합니다.
 
 ## 결론
 

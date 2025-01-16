@@ -16,7 +16,7 @@ Aspose.Words for Java, geliştiricilerin DOCX, DOC, RTF ve daha fazlası dahil o
 ## Stil ve Yazı Tiplerini Uygulama: Temeller
 
 ### Başlarken
- Başlamak için, Java geliştirme ortamınızı kurmanız ve Aspose.Words for Java kütüphanesini indirmeniz gerekir. İndirme bağlantısını bulabilirsiniz[Burada](https://releases.aspose.com/words/java/)Kütüphaneyi projenize dahil ettiğinizden emin olun.
+Başlamak için, Java geliştirme ortamınızı kurmanız ve Aspose.Words for Java kütüphanesini indirmeniz gerekir. İndirme bağlantısını bulabilirsiniz[Burada](https://releases.aspose.com/words/java/)Kütüphaneyi projenize dahil ettiğinizden emin olun.
 
 ### Bir Belge Oluşturma
 Aspose.Words for Java kullanarak yeni bir belge oluşturarak başlayalım:
@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Karmaşık belge biçimlendirmesi için birden fazla stili birleştirin:
 
 ```java
-//Benzersiz bir görünüm için stilleri birleştirin
+// Benzersiz bir görünüm için stilleri birleştirin
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Aspose.Words for Java güçlü koşullu biçimlendirme yetenekleri sağlar. Belg
 Kesinlikle! Aspose.Words for Java, çeşitli dillerden ve betiklerden geniş bir yelpazede yazı tiplerini ve karakterleri destekler.
 
 ### Belirli stillere sahip metinlere nasıl köprü metni ekleyebilirim?
- Metne köprü eklemek için şunu kullanın:`FieldHyperlink`İstenilen biçimlendirmeyi elde etmek için sınıf, stillerle birlikte kullanılır.
+ Metne köprü eklemek için şunu kullanın:`FieldHyperlink` İstenilen biçimlendirmeyi elde etmek için sınıf, stillerle birlikte kullanılır.
 
 ### Belgenin boyutu veya karmaşıklığı açısından herhangi bir sınırlama var mı?
 Java için Aspose.Words, farklı boyutlarda ve karmaşıklıktaki belgeleri işleyebilir. Ancak, aşırı büyük belgeler ek bellek kaynakları gerektirebilir.

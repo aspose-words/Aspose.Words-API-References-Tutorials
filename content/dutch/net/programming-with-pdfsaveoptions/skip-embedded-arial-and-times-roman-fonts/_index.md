@@ -81,7 +81,7 @@ Nee, dat zal het niet doen. Omdat Arial en Times Roman standaardlettertypen zijn
 Ja, u kunt de opslagopties zo configureren dat het insluiten van andere lettertypen indien nodig wordt overgeslagen.
 
 ### Is Aspose.Words voor .NET gratis?
-Aspose.Words voor .NET biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/) , maar voor volledige toegang moet u een licentie kopen[hier](https://purchase.aspose.com/buy).
+ Aspose.Words voor .NET biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/) , maar voor volledige toegang moet u een licentie kopen[hier](https://purchase.aspose.com/buy).
 
 ### Waar kan ik meer tutorials vinden over Aspose.Words voor .NET?
- U kunt uitgebreide documentatie en tutorials vinden[hier](https://reference.aspose.com/words/net/).
+ kunt uitgebreide documentatie en tutorials vinden[hier](https://reference.aspose.com/words/net/).

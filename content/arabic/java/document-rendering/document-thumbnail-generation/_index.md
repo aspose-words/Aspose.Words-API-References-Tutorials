@@ -40,7 +40,7 @@ Document doc = new Document("sample.docx");
 ```java
 // كود جافا لإنشاء صورة مصغرة للمستند
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ stream.writeTo(outputStream);
 
 ### كيف أقوم بتثبيت Aspose.Words لـ Java؟
 
- لتثبيت Aspose.Words لـ Java، قم بزيارة صفحة التنزيل[هنا](https://releases.aspose.com/words/java/)واتبع تعليمات التثبيت المقدمة.
+لتثبيت Aspose.Words لـ Java، قم بزيارة صفحة التنزيل[هنا](https://releases.aspose.com/words/java/)واتبع تعليمات التثبيت المقدمة.
 
 ### هل يمكنني تخصيص حجم الصورة المصغرة التي تم إنشاؤها؟
 

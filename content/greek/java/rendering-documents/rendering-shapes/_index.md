@@ -89,7 +89,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### Ε3: Υπάρχουν διαθέσιμες επιλογές αδειοδότησης για το Aspose.Words για Java;
 
- Ναι, μπορείτε να εξερευνήσετε τις επιλογές αδειοδότησης και να αγοράσετε Aspose.Words για Java στο[Aspose website](https://purchase.aspose.com/buy).
+Ναι, μπορείτε να εξερευνήσετε τις επιλογές αδειοδότησης και να αγοράσετε Aspose.Words για Java στο[Aspose website](https://purchase.aspose.com/buy).
 
 ### Ε4: Μπορώ να δοκιμάσω το Aspose.Words για Java πριν το αγοράσω;
 
@@ -97,6 +97,6 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### Ε5: Πού μπορώ να αναζητήσω υποστήριξη ή να κάνω ερωτήσεις σχετικά με το Aspose.Words για Java;
 
-Για οποιεσδήποτε ερωτήσεις ή υποστήριξη, επισκεφθείτε το[Aspose.Forum Words for Java](https://forum.aspose.com/).
+ Για οποιεσδήποτε ερωτήσεις ή υποστήριξη, επισκεφθείτε το[Aspose.Forum Words for Java](https://forum.aspose.com/).
 
 Τώρα που έχετε κατακτήσει την απόδοση σχημάτων με το Aspose.Words για Java, είστε έτοιμοι να απελευθερώσετε όλες τις δυνατότητες αυτού του ευέλικτου API στα έργα επεξεργασίας εγγράφων σας. Καλή κωδικοποίηση!

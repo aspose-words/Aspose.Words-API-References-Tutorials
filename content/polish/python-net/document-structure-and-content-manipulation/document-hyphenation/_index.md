@@ -126,4 +126,4 @@ Aby zapobiec powstawaniu wdów i sierot, skorzystaj z opcji udostępnionych prze
 
 ### Gdzie mogę uzyskać dostęp do dokumentacji Aspose.Words dla języka Python?
 
-Dokumentację API można uzyskać pod adresem[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+ Dokumentację API można uzyskać pod adresem[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

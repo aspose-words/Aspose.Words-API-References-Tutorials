@@ -84,7 +84,7 @@ Speichern Sie abschließend das geänderte Dokument. Dieser Schritt stellt siche
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-Und das war’s! Sie haben mit Aspose.Words für .NET erfolgreich Zeilen aus zwei Tabellen zu einer einzigen kombiniert.
+Und das war’s! Sie haben mit Aspose.Words für .NET erfolgreich Zeilen aus zwei Tabellen zu einer einzigen zusammengeführt.
 
 ## Abschluss
 
@@ -112,4 +112,4 @@ Auf jeden Fall! Sie können ein Skript erstellen, um diesen Vorgang für mehrere
 
 ### Wo bekomme ich Hilfe, wenn ich auf Probleme stoße?
 
-Der[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) ist ein großartiger Ort, um Hilfe zu erhalten und Lösungen für häufige Probleme zu finden.
+ Der[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) ist ein großartiger Ort, um Hilfe zu erhalten und Lösungen für häufige Probleme zu finden.

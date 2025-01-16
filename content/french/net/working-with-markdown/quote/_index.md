@@ -44,7 +44,7 @@ Ces espaces de noms vous donnent accès aux classes et méthodes dont vous aurez
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Le`DocumentBuilder` class est votre passerelle vers la création et la personnalisation de votre document. Considérez-le comme votre baguette magique pour créer des documents Word !
+ Le`DocumentBuilder` class est votre passerelle vers la création et la personnalisation de votre document. Considérez-le comme votre baguette magique pour créer des documents Word !
 
 ## Étape 2 : ajouter une citation
 

@@ -60,7 +60,7 @@ try {
 ```
 
 Wyjaśnienie:
-- Ten`try-catch` Blok zapewnia, że wszelkie błędy napotkane w trakcie ładowania dokumentu zostaną wychwycone i odpowiednio obsłużone.
+-  Ten`try-catch`Blok zapewnia, że wszelkie błędy napotkane w trakcie ładowania dokumentu zostaną wychwycone i odpowiednio obsłużone.
 
 ## Krok 2: Zainicjuj ImageSaveOptions
 
@@ -71,7 +71,7 @@ Po załadowaniu dokumentu kolejnym krokiem jest ustawienie opcji zapisania dokum
 `ImageSaveOptions` jest klasą umożliwiającą określenie sposobu zapisywania dokumentu jako obrazu.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 Wyjaśnienie:

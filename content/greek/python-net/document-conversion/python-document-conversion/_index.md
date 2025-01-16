@@ -105,8 +105,6 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 Το Aspose.Words σάς επιτρέπει να προσαρμόσετε την εμφάνιση των εγγράφων που έχουν μετατραπεί. Μπορείτε να εφαρμόσετε επιλογές μορφοποίησης όπως στυλ γραμματοσειράς, χρώματα, στοίχιση και απόσταση παραγράφων.
 
-#### Παράδειγμα:
-
 ```python
 # Python code for applying formatting during conversion
 import aspose.words as aw
@@ -128,8 +126,6 @@ doc.save("formatted_output.pdf", aw.SaveFormat.PDF)
 ### Χειρισμός εικόνων και πινάκων
 
 Το Aspose.Words σάς δίνει τη δυνατότητα να χειρίζεστε εικόνες και πίνακες κατά τη διάρκεια της διαδικασίας μετατροπής. Μπορείτε να εξαγάγετε εικόνες, να αλλάξετε το μέγεθός τους και να χειριστείτε πίνακες για να διατηρήσετε τη δομή του εγγράφου.
-
-#### Παράδειγμα:
 
 ```python
 # Python code for handling images and tables during conversion
@@ -156,8 +152,6 @@ doc.save("modified_output.pdf", aw.SaveFormat.PDF)
 
 Με το Aspose.Words, μπορείτε να εξασφαλίσετε συνεπή απόδοση γραμματοσειράς και να διαχειριστείτε τη διάταξη των εγγράφων που έχουν μετατραπεί. Αυτή η δυνατότητα είναι ιδιαίτερα χρήσιμη όταν διατηρείται η συνοχή των εγγράφων σε διαφορετικές μορφές.
 
-#### Παράδειγμα:
-
 ```python
 # Python code for managing fonts and layout during conversion
 import aspose.words as aw
@@ -178,8 +172,6 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ### Σύνταξη σεναρίων Python για αυτοματισμό
 
 Οι δυνατότητες δέσμης ενεργειών της Python την καθιστούν εξαιρετική επιλογή για την αυτοματοποίηση επαναλαμβανόμενων εργασιών. Μπορείτε να γράψετε σενάρια Python για να πραγματοποιήσετε μαζική μετατροπή εγγράφων, εξοικονομώντας χρόνο και προσπάθεια.
-
-#### Παράδειγμα:
 
 ```python
 # Python script for batch document conversion
@@ -205,11 +197,7 @@ for filename in input_files:
 
 ### Μαζική μετατροπή εγγράφων
 
-Με
-
- Συνδυάζοντας τη δύναμη των Python και Aspose.Words, μπορείτε να αυτοματοποιήσετε τη μαζική μετατροπή εγγράφων, βελτιώνοντας την παραγωγικότητα και την αποτελεσματικότητα.
-
-#### Παράδειγμα:
+Συνδυάζοντας τη δύναμη των Python και Aspose.Words, μπορείτε να αυτοματοποιήσετε τη μαζική μετατροπή εγγράφων, βελτιώνοντας την παραγωγικότητα και την αποτελεσματικότητα.
 
 ```python
 # Python script for batch document conversion using Aspose.Words
@@ -238,14 +226,6 @@ for filename in input_files:
     output_filename = filename.replace(file_ext, ".pdf" if file_ext == ".docx" else ".docx")
     doc.save(os.path.join(output_dir, output_filename))
 ```
-## Πλεονεκτήματα της χρήσης Aspose.Words για Python
-
-Το Aspose.Words για Python προσφέρει πολλά πλεονεκτήματα, όπως:
-
-- Ισχυρές δυνατότητες μετατροπής εγγράφων
-- Πλούσιο σύνολο δυνατοτήτων για χειρισμό εγγράφων
-- Εύκολη ενσωμάτωση με εφαρμογές Python
-- Συνεχής υποστήριξη και ενημερώσεις από μια ακμάζουσα κοινότητα
 
 ## Σύναψη
 

@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## استبدال النص
-
-في بعض الأحيان، قد ترغب في استبدال نص معين بمحتوى جديد. فيما يلي مثال لكيفية القيام بذلك:
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## إزالة الصور
 
 إذا كنت بحاجة إلى إزالة الصور من المستند، فيمكنك استخدام نهج مماثل. أولاً، حدد الصور ثم قم بإزالتها:
@@ -92,22 +79,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## البحث والاستبدال باستخدام Regex
-
-توفر التعبيرات العادية طريقة فعالة للعثور على المحتوى واستبداله:
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## استخراج محتوى محدد

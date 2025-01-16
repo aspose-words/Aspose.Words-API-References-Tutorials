@@ -48,7 +48,7 @@ Aspose.Words bietet verschiedene Bildspeicheroptionen zur Steuerung des Ausgabef
 
 ```java
 // Bildspeicheroptionen initialisieren
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Schritt 4: Dokumentseiten als Bilder rendern

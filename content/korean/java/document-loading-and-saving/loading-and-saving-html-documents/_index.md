@@ -1,5 +1,5 @@
 ---
-title: Aspose.Words for Java로 HTML 문서 로드 및 저장
+title: HTML 문서 로딩 및 저장
 linktitle: HTML 문서 로딩 및 저장
 second_title: Aspose.Words Java 문서 처리 API
 description: Aspose.Words for Java를 사용하여 Java에서 HTML 문서를 로드하고 저장하는 방법을 알아보세요. 원활한 문서 통합을 위한 코드 예제가 있는 단계별 가이드.
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  이제 HTML을 로드했습니다.`Document`, Word 문서로 저장할 수 있습니다. DOCX 형식으로 저장해 보겠습니다.
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  이 코드는 다음을 저장합니다.`Document` DOCX 파일은 Word 문서의 일반적인 형식입니다.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## 결론
@@ -95,4 +95,4 @@ Aspose.Words는 DOC, DOCX, RTF, HTML, PDF 등 다양한 문서 형식을 지원�
 
 ### Aspose.Words for Java에 대한 추가 문서와 예제는 어디에서 찾을 수 있나요?
 
- 자세한 문서, 코드 예제 및 튜토리얼은 Aspose.Words for Java 문서 웹사이트에서 찾을 수 있습니다.[Java 설명서를 위한 Aspose.Words](https://reference.aspose.com/words/java/).
+자세한 문서, 코드 예제 및 튜토리얼은 Aspose.Words for Java 문서 웹사이트에서 찾을 수 있습니다.[Java 설명서를 위한 Aspose.Words](https://reference.aspose.com/words/java/).

@@ -11,7 +11,7 @@ No mundo digital acelerado de hoje, o processamento de documentos é um aspecto 
 
 ## Instalando Aspose.Words
 
-Antes de mergulharmos nos detalhes, você precisa configurar o Aspose.Words para Python. Você pode baixá-lo e instalá-lo usando o seguinte link:[Baixe Aspose.Words para Python](https://releases.aspose.com/words/python/). 
+ Antes de mergulharmos nos detalhes, você precisa configurar o Aspose.Words para Python. Você pode baixá-lo e instalá-lo usando o seguinte link:[Baixe Aspose.Words para Python](https://releases.aspose.com/words/python/). 
 
 ## Combinando documentos
 
@@ -52,7 +52,7 @@ dst_doc.save("combined_document.docx")
 
 ## Documentos de clonagem
 
-A clonagem de documentos é frequentemente necessária quando você precisa reutilizar conteúdo, mantendo a estrutura original. O Aspose.Words oferece opções de clonagem profunda e superficial.
+clonagem de documentos é frequentemente necessária quando você precisa reutilizar conteúdo, mantendo a estrutura original. O Aspose.Words oferece opções de clonagem profunda e superficial.
 
 ### Clone profundo vs. clone raso
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## Técnicas Avançadas
-
-### Substituindo texto
-
-O Aspose.Words permite que você encontre e substitua texto em documentos facilmente:
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### Modificando a formatação
+## Modificando a formatação
 
 Você também pode modificar a formatação usando Aspose.Words:
 
@@ -127,7 +108,7 @@ Sim, você pode executar uma clonagem superficial para copiar apenas a estrutura
  Utilize o`range.replace()` método juntamente com as opções apropriadas para localizar e substituir texto de forma eficiente.
 
 ### O Aspose.Words suporta modificação de formatação?
-Claro, você pode modificar a formatação usando métodos como`run.font.size` e`run.font.bold`.
+ Claro, você pode modificar a formatação usando métodos como`run.font.size` e`run.font.bold`.
 
 ### Onde posso acessar a documentação do Aspose.Words?
  Você pode encontrar documentação abrangente em[Referência da API Aspose.Words para Python](https://reference.aspose.com/words/python-net/).

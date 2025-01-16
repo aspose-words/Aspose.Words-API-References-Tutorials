@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Schritt 3: Hinzufügen eines Überschrift-1-Tags
 
-Beginnen wir damit, unserem Dokument ein Überschriften-1-Tag hinzuzufügen. Dies wird unser Haupttitel.
+Beginnen wir damit, unserem Dokument ein Überschrift-1-Tag hinzuzufügen. Dies wird unser Haupttitel.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";

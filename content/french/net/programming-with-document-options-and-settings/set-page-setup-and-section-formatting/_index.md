@@ -21,7 +21,7 @@ Avant de plonger dans le code, voyons ce dont vous avez besoin pour commencer.
 
 ## Importer des espaces de noms
 
-Tout d’abord, assurez-vous que les espaces de noms nécessaires sont importés dans votre projet :
+Tout d’abord, assurez-vous que vous avez importé les espaces de noms nécessaires dans votre projet :
 
 ```csharp
 using System;

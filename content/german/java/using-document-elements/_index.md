@@ -24,7 +24,7 @@ Mit Aspose.Words für Java können Sie im Handumdrehen dynamische Dokumente erst
 
 ## Verbessern Sie Ihre Fähigkeiten zur Dokumentenverarbeitung
 
-In diesen Tutorials lernen Sie nicht nur die Grundlagen der Dokumentelementbearbeitung, sondern tauchen auch tief in fortgeschrittene Themen wie Stil, Dokumentschutz, Seriendruck und mehr ein. Mit den hier erworbenen Kenntnissen können Sie selbst die komplexesten Dokumentverarbeitungsaufgaben mit Leichtigkeit bewältigen.
+In diesen Tutorials lernen Sie nicht nur die Grundlagen der Dokumentelementbearbeitung kennen, sondern tauchen auch tief in fortgeschrittene Themen wie Stil, Dokumentschutz, Seriendruck und mehr ein. Mit den hier erworbenen Kenntnissen können Sie selbst die komplexesten Dokumentverarbeitungsaufgaben mit Leichtigkeit bewältigen.
 
 ## Legen Sie noch heute los
 

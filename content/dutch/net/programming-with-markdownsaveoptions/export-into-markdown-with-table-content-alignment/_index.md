@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Stap 4: Gebruik automatische uitlijning van tabelinhoud
 
-De`Auto`uitlijningsoptie neemt de uitlijning van de eerste alinea in de overeenkomstige tabelkolom. Dit kan handig zijn als u gemengde uitlijningen in één tabel hebt.
+ De`Auto`uitlijningsoptie neemt de uitlijning van de eerste alinea in de overeenkomstige tabelkolom. Dit kan handig zijn als u gemengde uitlijningen in één tabel hebt.
 
 ```csharp
 // Stel de uitlijning in op Automatisch.

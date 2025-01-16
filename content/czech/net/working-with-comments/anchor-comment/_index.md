@@ -70,7 +70,7 @@ para2.AppendChild(run4);
 doc.FirstSection.Body.AppendChild(para2);
 ```
 
- Zde vytvoříme dva odstavce s nějakým textem. Každý text je zapouzdřen v a`Run` objekt, který je poté přidán do odstavců.
+ Zde vytvoříme dva odstavce s nějakým textem. Každý text je zapouzdřen v a`Run` objekt, který se pak přidá do odstavců.
 
 ## Krok 3: Vytvořte komentář
 
@@ -127,7 +127,7 @@ Kotevní komentáře se používají ke zvýraznění a komentování konkrétn�
 Ano, do stejné textové části můžete přidat více komentářů definováním více rozsahů komentářů.
 
 ### Je Aspose.Words for .NET zdarma k použití?
-Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/) . Pro plné funkce si můžete zakoupit licenci[zde](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/) . Pro plné funkce si můžete zakoupit licenci[zde](https://purchase.aspose.com/buy).
 
 ### Mohu upravit vzhled komentářů?
 Zatímco Aspose.Words se zaměřuje na funkčnost, vzhled komentářů v dokumentech Wordu je obecně řízen samotným Wordem.

@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-The`Aspose.Words` jmenný prostor vám poskytuje přístup ke všem třídám a metodám potřebným k manipulaci s dokumenty Wordu`System` se používá pro základní funkce, jako je výstup konzoly.
+ The`Aspose.Words` jmenný prostor vám poskytuje přístup ke všem třídám a metodám potřebným k manipulaci s dokumenty Wordu`System` se používá pro základní funkce, jako je výstup konzoly.
 
 Pojďme si rozebrat proces extrahování názvů polí hromadné korespondence do jasného průvodce krok za krokem.
 
@@ -73,7 +73,7 @@ Nadpis: Výpis názvů polí hromadné korespondence
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-The`GetFieldNames()`metoda vrací pole řetězců, z nichž každý představuje název pole hromadné korespondence nalezený v dokumentu. Toto jsou zástupné symboly, které uvidíte v dokumentu aplikace Word.
+ The`GetFieldNames()`metoda vrací pole řetězců, z nichž každý představuje název pole hromadné korespondence nalezený v dokumentu. Toto jsou zástupné symboly, které uvidíte v dokumentu aplikace Word.
 
 ## Krok 4: Zobrazte počet slučovacích polí
 

@@ -23,7 +23,7 @@ Felder sind Platzhalter in einem Dokument, die Daten dynamisch anzeigen. Sie kö
  Um ein Feld einzufügen, können Sie das`FieldBuilder` Klasse. So fügen Sie beispielsweise ein aktuelles Datumsfeld ein:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Automatisieren der Dokumentgenerierung mit Feldern
-
-Felder sind für die automatische Dokumenterstellung unerlässlich. Sie können Felder mit Daten aus externen Quellen füllen:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Integrieren von Feldern mit Datenquellen
@@ -111,7 +102,7 @@ doc.update_fields()
 
 Durch die effektive Handhabung von Feldern und Daten in Word-Dokumenten können Sie dynamische und automatisierte Dokumente erstellen. Aspose.Words für Python vereinfacht diesen Prozess und bietet eine breite Palette an Funktionen.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Wie aktualisiere ich die Feldwerte manuell?
 

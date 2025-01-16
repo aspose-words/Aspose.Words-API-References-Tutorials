@@ -15,7 +15,7 @@ Aspose.Words for .NET 是一個功能強大的程式庫，用於以程式設計�
 
 在我們進入程式碼之前，讓我們確保您已完成所有設定：
 
-1.  Aspose.Words for .NET：您需要安裝 Aspose.Words for .NET。您可以從[Aspose 發佈頁面](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：您需要安裝 Aspose.Words for .NET。您可以從[Aspose 發佈頁面](https://releases.aspose.com/words/net/).
 2. 開發環境：Visual Studio 或任何其他 C# 開發環境。
 3. C# 基礎知識：了解 C# 程式設計基礎將是有益的。
 

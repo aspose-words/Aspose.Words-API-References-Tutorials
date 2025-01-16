@@ -101,7 +101,7 @@ Tím se sloučený dokument uloží do zadaného adresáře s názvem "JoinAndAp
 
 ## Závěr
 
-A tady to máte! Úspěšně jste sloučili dva dokumenty aplikace Word a ignorovali jste jejich záhlaví a zápatí pomocí Aspose.Words for .NET. Tato metoda je užitečná pro různé úlohy správy dokumentů, kde je klíčová údržba konkrétních částí dokumentu.
+A tady to máte! Úspěšně jste sloučili dva dokumenty aplikace Word a ignorovali jste jejich záhlaví a zápatí pomocí Aspose.Words for .NET. Tato metoda je užitečná pro různé úlohy správy dokumentů, kde je údržba konkrétních částí dokumentu zásadní.
 
 Práce s Aspose.Words pro .NET může výrazně zefektivnit vaše pracovní postupy při zpracování dokumentů. Pamatujte, že pokud se někdy zaseknete nebo budete potřebovat další informace, vždy se můžete podívat na[dokumentace](https://reference.aspose.com/words/net/).
 

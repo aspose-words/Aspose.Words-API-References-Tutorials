@@ -23,7 +23,7 @@ Velden zijn tijdelijke aanduidingen in een document die gegevens dynamisch weerg
  Om een veld in te voegen, kunt u de`FieldBuilder` klasse. Om bijvoorbeeld een veld voor de huidige datum in te voegen:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Automatiseren van documentgeneratie met velden
-
-Velden zijn essentieel voor geautomatiseerde documentgeneratie. U kunt velden vullen met gegevens uit externe bronnen:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Velden integreren met gegevensbronnen

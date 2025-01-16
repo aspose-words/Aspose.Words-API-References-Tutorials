@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-การ`PreferredWidth.Auto` การตั้งค่านี้จะช่วยให้เซลล์นี้ขยายหรือหดตัวตามพื้นที่ว่างที่เหลือหลังจากคำนวณเซลล์อื่นแล้ว ซึ่งจะทำให้เค้าโครงของตารางดูสมดุลและเป็นมืออาชีพ
+ การ`PreferredWidth.Auto` การตั้งค่านี้จะช่วยให้เซลล์นี้ขยายหรือหดตัวตามพื้นที่ว่างที่เหลือหลังจากคำนวณเซลล์อื่นแล้ว ซึ่งจะทำให้เค้าโครงของตารางดูสมดุลและเป็นมืออาชีพ
 
 ## ขั้นตอนที่ 5: สรุปและบันทึกเอกสาร
 

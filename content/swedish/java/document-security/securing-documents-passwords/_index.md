@@ -13,11 +13,11 @@ Lås upp kraften i Aspose.Words för Java för att skydda dina dokument med lös
 
 ## Introduktion
 
-dagens digitala värld är datasäkerhet av största vikt. Oavsett om du hanterar konfidentiella affärsdokument eller personliga filer, är det avgörande att se till att endast auktoriserade personer kan komma åt dina dokument. Denna steg-för-steg-guide visar dig hur du använder Aspose.Words för Java för att lägga till ett robust lager av säkerhet till dina dokument genom att använda lösenord.
+I dagens digitala värld är datasäkerhet av största vikt. Oavsett om du hanterar konfidentiella affärsdokument eller personliga filer, är det avgörande att se till att endast auktoriserade personer kan komma åt dina dokument. Denna steg-för-steg-guide visar dig hur du använder Aspose.Words för Java för att lägga till ett robust lager av säkerhet till dina dokument genom att använda lösenord.
 
 ## Ställa in Aspose.Words för Java
 
- Innan vi dyker in i att säkra dokument, låt oss se till att du har Aspose.Words för Java inställt i din Java-miljö. Om du inte redan har gjort det kan du ladda ner det från[här](https://releases.aspose.com/words/java/).
+Innan vi dyker in i att säkra dokument, låt oss se till att du har Aspose.Words för Java inställt i din Java-miljö. Om du inte redan har gjort det kan du ladda ner det från[här](https://releases.aspose.com/words/java/).
 
 ## Säkra dokument: Steg för steg
 
@@ -73,11 +73,11 @@ Aspose.Words för Java låter dig ställa in olika lösenord för olika delar av
 
 Nej, Aspose.Words för Java har ingen inbyggd funktion för att återställa glömda lösenord. Se till att komma ihåg ditt lösenord eller förvara det på en säker plats.
 
-### Finns det några begränsningar för lösenordsskydd i Aspose.Words för Java?
+### Finns det några begränsningar för lösenordsskyddet i Aspose.Words för Java?
 
 Medan Aspose.Words för Java erbjuder robust lösenordsskydd, är det viktigt att använda starka och unika lösenord för optimal säkerhet.
 
-### Kan jag automatisera processen för ansökan om lösenord?
+### Kan jag automatisera ansökningsprocessen för lösenord?
 
 Ja, du kan automatisera lösenordsansökningsprocessen med hjälp av skript eller ditt föredragna programmeringsspråk.
 

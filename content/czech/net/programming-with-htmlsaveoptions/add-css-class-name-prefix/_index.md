@@ -15,7 +15,7 @@ Vítejte! Pokud se ponoříte do světa Aspose.Words pro .NET, budete se těšit
 
 Než začneme, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET: Pokud jste jej ještě nenainstalovali,[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Pokud jste jej ještě nenainstalovali,[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné C# IDE.
 -  Dokument aplikace Word: Budeme používat dokument s názvem`Rendering.docx`. Umístěte jej do adresáře projektu.
 
@@ -117,10 +117,10 @@ A tady to máte! Pomocí těchto kroků jste úspěšně přidali předponu náz
  Ano, předponu můžete přizpůsobit pokaždé, když uložíte dokument změnou`CssClassNamePrefix` vlastnictví.
 
 ### Podporuje tato metoda inline CSS?
-The`CssClassNamePrefix`vlastnost pracuje s externím CSS. Pro inline CSS budete potřebovat jiný přístup.
+ The`CssClassNamePrefix`vlastnost pracuje s externím CSS. Pro inline CSS budete potřebovat jiný přístup.
 
 ### Jak mohu zahrnout další možnosti uložení HTML?
- Můžete nakonfigurovat různé vlastnosti`HtmlSaveOptions` k přizpůsobení výstupu HTML. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
+ Můžete nakonfigurovat různé vlastnosti`HtmlSaveOptions` pro přizpůsobení výstupu HTML. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 
 ### Je možné uložit HTML do streamu?
  Absolutně! Dokument můžete uložit do streamu předáním objektu stream do`Save` metoda.

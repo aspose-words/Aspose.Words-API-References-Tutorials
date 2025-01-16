@@ -91,7 +91,7 @@ Nein, das Überspringen von Bildern wirkt sich nur auf die Bilder aus. Der Text 
 
 ### Kann ich diese Funktion mit anderen Dokumentformaten verwenden?
 
-Der`SkipPdfImages` ist speziell für PDF-Dokumente. Für andere Formate stehen andere Optionen und Methoden zur Verfügung.
+ Der`SkipPdfImages` ist speziell für PDF-Dokumente. Für andere Formate stehen andere Optionen und Methoden zur Verfügung.
 
 ### Wie kann ich überprüfen, ob Bilder übersprungen wurden?
 

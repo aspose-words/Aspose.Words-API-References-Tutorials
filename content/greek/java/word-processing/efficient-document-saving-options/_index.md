@@ -54,7 +54,7 @@ doc.save("output.html", saveOptions);
 
 ```java
 // Κώδικας Java για να αποθηκεύσετε ένα έγγραφο ως εικόνες
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Ορίστε την ανάλυση (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

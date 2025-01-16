@@ -191,7 +191,7 @@ Aspose.Words 允许您处理文档中的多个部分。您可以为每个部分�
 ```	
 copyHeadersFootersFromPreviousSection 方法源代码
 ```java
-    /// <摘要>
+    //<摘要>
     //将页眉/页脚从前一节克隆并复制到指定节。
     /// </摘要>
     private void copyHeadersFootersFromPreviousSection(Section section)

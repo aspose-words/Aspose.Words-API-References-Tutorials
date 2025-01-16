@@ -17,7 +17,7 @@ In questi tutorial, gli sviluppatori esploreranno come sfruttare la potenza di A
 
 ## Aumentare l'efficienza della gestione dei documenti
 
-tutorial si concentrano sull'aumento dell'efficienza della gestione dei documenti con l'automazione delle parole Python. Gli sviluppatori acquisiranno conoscenze su come unire più documenti, estrarre dati e generare report a livello di programmazione. Automatizzando le attività di gestione dei documenti, gli sviluppatori possono migliorare la produttività e l'efficienza nei loro flussi di lavoro di elaborazione testi e documenti.
+I tutorial si concentrano sull'aumento dell'efficienza della gestione dei documenti con l'automazione delle parole Python. Gli sviluppatori acquisiranno conoscenze su come unire più documenti, estrarre dati e generare report a livello di programmazione. Automatizzando le attività di gestione dei documenti, gli sviluppatori possono migliorare la produttività e l'efficienza nei loro flussi di lavoro di elaborazione testi e documenti.
 
 ## Semplificazione dei flussi di lavoro di elaborazione testi
 

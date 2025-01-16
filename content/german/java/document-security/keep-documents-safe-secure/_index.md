@@ -12,7 +12,7 @@ In diesem digitalen Zeitalter, in dem Informationen der Schlüssel sind, ist die
 
 ## 1. Einleitung
 
-In dieser schnelllebigen digitalen Welt hat die Sicherheit elektronischer Dokumente für Privatpersonen und Unternehmen gleichermaßen höchste Priorität. Datenlecks und Cyberangriffe haben Bedenken hinsichtlich der Vertraulichkeit und Integrität vertraulicher Informationen geweckt. Aspose.Words für Java schafft hier Abhilfe, indem es umfassende Funktionen bietet, die sicherstellen, dass Ihre Dokumente vor unbefugtem Zugriff geschützt bleiben.
+In dieser schnelllebigen digitalen Welt hat die Sicherheit elektronischer Dokumente für Privatpersonen und Unternehmen gleichermaßen höchste Priorität. Datenlecks und Cyberangriffe haben Bedenken hinsichtlich der Vertraulichkeit und Integrität vertraulicher Informationen geweckt. Aspose.Words für Java schafft hier Abhilfe, indem es umfassende Funktionen bietet, die sicherstellen, dass Ihre Dokumente vor unbefugtem Zugriff geschützt sind.
 
 ## 2. Dokumentensicherheit verstehen
 
@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Nachdem wir nun unser Dokument geladen haben, können wir mit der Verschlüsselung fortfahren. Aspose.Words für Java bietet eine einfache Möglichkeit, die Dokumentverschlüsselung einzurichten:
 
 ```java
-// Legen Sie ein Passwort zum Öffnen des Dokuments fest
-doc.getWriteProtection().setPassword("yourPassword");
-
-// Verschlüsselungsalgorithmus festlegen (optional)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// Speichern Sie das verschlüsselte Dokument
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. Schutz bestimmter Dokumentelemente
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 Manchmal möchten Sie möglicherweise nur bestimmte Teile Ihres Dokuments schützen, z. B. Kopf- und Fußzeilen oder bestimmte Absätze. Mit Aspose.Words können Sie beim Dokumentschutz folgende Detailgenauigkeit erreichen:
 
 ```java
-// Einen bestimmten Abschnitt schützen (Nur-Lese-Schutz)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// Einen bestimmten Absatz schützen (nur die Bearbeitung von Formularfeldern zulassen)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// Speichern des geschützten Dokuments
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//Bearbeitbare Bereiche ermöglichen es uns, Teile geschützter Dokumente zur Bearbeitung offen zu lassen.
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. Digitale Signaturen anwenden
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 Durch das Hinzufügen digitaler Signaturen zu Ihrem Dokument können Sie dessen Authentizität und Integrität sicherstellen. So können Sie mit Aspose.Words für Java eine digitale Signatur anwenden:
 
 ```java
-// Laden Sie die Zertifikatsdatei
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// Unterschreiben Sie das Dokument mit dem Zertifikat
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// Erstellen Sie einen Kommentar, ein Datum und ein Entschlüsselungskennwort, die mit unserer neuen digitalen Signatur angewendet werden.
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// Unterschriebenes Dokument speichern
-doc.save("path/to/signed/document.docx");
+// Legen Sie einen lokalen Systemdateinamen für das unsignierte Eingabedokument und einen Ausgabedateinamen für die neue digital signierte Kopie fest.
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. Wasserzeichen in Ihren Dokumenten
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. Redigieren sensibler Informationen
 
-Beim Teilen von Dokumenten möchten Sie vertrauliche Informationen möglicherweise dauerhaft entfernen, um sicherzustellen, dass sie nicht in die falschen Hände geraten. Mit Aspose.Words für Java können Sie vertrauliche Inhalte schwärzen:
-
-```java
-// Suchen und Schwärzen vertraulicher Informationen
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// Schwärzungen anwenden
-doc.redact(options);
-
-// Speichern Sie das redigierte Dokument
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. Konvertieren sicherer Dokumente in andere Formate
+## 10. Konvertieren sicherer Dokumente in andere Formate
 
 Mit Aspose.Words für Java können Sie Ihre geschützten Dokumente auch in verschiedene Formate wie PDF oder HTML konvertieren:
 
 ```java
-// Laden Sie das geschützte Dokument
+//Laden Sie das geschützte Dokument
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // In PDF konvertieren
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // In HTML konvertieren
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. Best Practices für Dokumentensicherheit
-
-Um eine robuste Dokumentensicherheit zu gewährleisten, befolgen Sie diese Best Practices:
-
-- Aktualisieren Sie Ihre Sicherheitsmaßnahmen regelmäßig, um potenziellen Bedrohungen immer einen Schritt voraus zu sein.
-- Verwenden Sie sichere Passwörter und Verschlüsselungsalgorithmen.
-- Beschränken Sie den Zugriff auf vertrauliche Dokumente auf das „Need-to-know“-Prinzip.
-- Schulen Sie Ihre Mitarbeiter darin, Sicherheitsrisiken zu erkennen und darauf zu reagieren.
-
-## 13. Testen der Dokumentensicherheit
-
-Nachdem Sie Sicherheitsmaßnahmen angewendet haben, testen Sie Ihre Dokumente gründlich, um sicherzustellen, dass sie in verschiedenen Szenarien sicher bleiben. Versuchen Sie, Sicherheitskontrollen zu umgehen, um potenzielle Schwachstellen zu identifizieren.
-
-## 14. Fazit
+## Abschluss
 
 In dieser Schritt-für-Schritt-Anleitung haben wir die Bedeutung der Dokumentensicherheit untersucht und wie Aspose.Words für Java dazu beitragen kann, Ihre Dokumente vor unbefugtem Zugriff zu schützen. Indem Sie die Funktionen der Bibliothek wie Kennwortschutz, Verschlüsselung, digitale Signaturen, Wasserzeichen und Schwärzung nutzen, können Sie sicherstellen, dass Ihre Dokumente sicher und geschützt bleiben.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Kann ich Aspose.Words für Java in kommerziellen Projekten verwenden?
-   Ja, Aspose.Words für Java kann in kommerziellen Projekten im Rahmen des Pro-Entwickler-Lizenzmodells verwendet werden.
+Ja, Aspose.Words für Java kann in kommerziellen Projekten im Rahmen des Pro-Entwickler-Lizenzmodells verwendet werden.
 
 ### Unterstützt Aspose.Words außer Word auch andere Dokumentformate?
-   Ja, Aspose.Words unterstützt eine Vielzahl von Formaten, darunter PDF, HTML, EPUB und mehr.
+Ja, Aspose.Words unterstützt eine Vielzahl von Formaten, darunter PDF, HTML, EPUB und mehr.
 
 ### Ist es möglich, einem Dokument mehrere digitale Signaturen hinzuzufügen?
-   Ja, Aspose.Words ermöglicht Ihnen, einem Dokument mehrere digitale Signaturen hinzuzufügen.
+Ja, Aspose.Words ermöglicht Ihnen, einem Dokument mehrere digitale Signaturen hinzuzufügen.
 
 ### Unterstützt Aspose.Words die Wiederherstellung von Dokumentkennwörtern?
-   Nein, Aspose.Words bietet keine Funktionen zur Kennwortwiederherstellung. Achten Sie darauf, dass Ihre Kennwörter sicher aufbewahrt werden.
+Nein, Aspose.Words bietet keine Funktionen zur Kennwortwiederherstellung. Achten Sie darauf, dass Ihre Kennwörter sicher aufbewahrt werden.
 
 ### Kann ich das Erscheinungsbild von Wasserzeichen anpassen?
-   Ja, Sie können das Erscheinungsbild von Wasserzeichen einschließlich Text, Schriftart, Farbe, Größe und Drehung vollständig anpassen.
+Ja, Sie können das Erscheinungsbild von Wasserzeichen einschließlich Text, Schriftart, Farbe, Größe und Drehung vollständig anpassen.

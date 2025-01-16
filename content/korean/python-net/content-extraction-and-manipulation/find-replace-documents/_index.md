@@ -18,7 +18,7 @@ url: /ko/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 1.  Python 설치: Python이 시스템에 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[여기](https://www.python.org/downloads/).
 
-2. Aspose.Words for Python: Aspose.Words for Python을 설치해야 합니다. 여기에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/).
+2.  Aspose.Words for Python: Aspose.Words for Python을 설치해야 합니다. 여기에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/).
 
 3. 문서 준비: 찾기 및 바꾸기 작업을 수행할 Word 문서를 준비합니다.
 
@@ -118,4 +118,4 @@ Word 문서를 효율적으로 관리하고 조작하는 데는 종종 찾기 �
 
 ### 변경 사항을 추적하면서 텍스트를 바꿀 수 있습니까?
 
- 예, 다음을 사용하여 변경 사항을 추적할 수 있습니다.`revision` Aspose.Words의 기능입니다. 문서에 대한 모든 수정 사항을 추적할 수 있습니다.
+ 예, 다음을 사용하여 변경 사항을 추적할 수 있습니다.`revision`Aspose.Words의 기능입니다. 문서에 대한 모든 수정 사항을 추적할 수 있습니다.

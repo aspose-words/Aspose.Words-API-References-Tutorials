@@ -127,4 +127,4 @@ Oczywiście! Aspose.Words dla .NET pozwala manipulować szeroką gamą elementó
 
 ### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
 
-Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
+ Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).

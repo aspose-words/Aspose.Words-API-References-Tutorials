@@ -44,18 +44,6 @@ for paragraph in doc.get_child_nodes(doc.is_paragraph, True):
     text += paragraph.get_text()
 ```
 
-## 擷取影像
-
-若要從文件中提取圖像：
-
-```python
-for shape in doc.get_child_nodes(doc.is_shape, True):
-    if shape.has_image:
-        image = shape.image_data.to_bytes()
-        with open("image.png", "wb") as f:
-            f.write(image)
-```
-
 ## 管理格式
 
 在提取過程中保留格式：

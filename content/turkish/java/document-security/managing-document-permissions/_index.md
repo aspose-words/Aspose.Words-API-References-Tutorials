@@ -16,7 +16,7 @@ Günümüzün dijital dünyasında, belge yönetimi her organizasyonun iş akı�
 
 Belge izinlerini yönetmeye dalmadan önce, Aspose.Words for Java'yı ayarlayarak başlayalım. Başlamak için şu adımları izleyin:
 
-1.  Java için Aspose.Words'ü indirin: Ziyaret edin[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) Aspose.Words for Java'nın en son sürümünü indirmek için.
+1.  Java için Aspose.Words'ü indirin: Ziyaret edin[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)Aspose.Words for Java'nın en son sürümünü indirmek için.
 
 2. Java için Aspose.Words'ü yükleyin: Kütüphaneyi indirdikten sonra, Java geliştirme ortamınızda kurmak için kurulum talimatlarını izleyin.
 
@@ -52,21 +52,12 @@ Belge izinlerini ayarlamak için örnek bir Java kod parçası:
 // Belgeyi yükle
 Document doc = new Document("sample.docx");
 
-// Erişim kontrolünü tanımlayın
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Belge korumasını uygula
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Belgeyi kaydet
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Sıkça Sorulan Sorular (SSS)
+## SSS
 
-## Belge korumasını nasıl kaldırabilirim?
+### Belge korumasını nasıl kaldırabilirim?
 
 Belge korumasını kaldırmak için, korunan belgeyi açın ve parola korumalıysa doğru parolayı girin. Ardından, korumayı kaldırmak için Aspose.Words for Java'yı şu şekilde kullanın:
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Belirli kullanıcılar için izinler ayarlayabilir miyim?
+### Belirli kullanıcılar için izinler ayarlayabilir miyim?
 
 Evet, Aspose.Words for Java belirli kullanıcılar veya gruplar için izinler ayarlamanıza olanak tanır. Belgeye kimlerin erişebileceğini ve düzenleyebileceğini tanımlayabilirsiniz.
 
-## Bir belgeyi birden fazla parola ile şifrelemek mümkün müdür?
+### Bir belgeyi birden fazla parola ile şifrelemek mümkün müdür?
 
 Hayır, Aspose.Words for Java tek parolalı şifrelemeyi destekler. Belgeyi korumak için bir parola ayarlayabilirsiniz.
 
-## Bir belgenin izinlerini nasıl kontrol edebilirim?
+### Bir belgenin izinlerini nasıl kontrol edebilirim?
 
 Bir belgenin koruma ayarlarını ve erişim kontrol seçeneklerini inceleyerek izinlerini kontrol etmek için Aspose.Words for Java'yı kullanabilirsiniz.
 
-## Belge izin yönetimini otomatikleştirebilir miyim?
+### Belge izin yönetimini otomatikleştirebilir miyim?
 
 Kesinlikle! Aspose.Words for Java'yı belge izin yönetimini otomatikleştirmek için uygulamalarınıza entegre edebilir ve bunu belge iş akışınızın kusursuz bir parçası haline getirebilirsiniz.
 
-## Belge şifresini unutursam ne olur?
+### Belge şifresini unutursam ne olur?
 
 Belge şifrenizi unutursanız, onu kurtarmanın bir yolu yoktur. Şifrelerinizin kaydını güvenli bir yerde sakladığınızdan emin olun.
 

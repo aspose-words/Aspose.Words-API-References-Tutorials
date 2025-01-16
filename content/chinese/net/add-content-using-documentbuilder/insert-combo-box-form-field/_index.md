@@ -13,7 +13,7 @@ url: /zh/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 
 ## 先决条件
 
-在我们讨论细节之前，让我们先确保你已经准备好了一切。以下是一份快速检查清单，可帮助你做好准备：
+在讨论具体细节之前，让我们先确保你已经准备好了一切所需。以下是一份快速检查清单，可帮助你做好准备：
 
 1.  Aspose.Words for .NET：首先，您需要 Aspose.Words for .NET 库。如果您尚未下载，可以从[Aspose 下载页面](https://releases.aspose.com/words/net/).
 2. 开发环境：确保您已使用 Visual Studio 或任何其他支持 .NET 的 IDE 设置开发环境。
@@ -24,7 +24,7 @@ url: /zh/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 
 ## 导入命名空间
 
-在我们开始编写代码之前，导入必要的命名空间至关重要。这些命名空间包含使用 Aspose.Words 所需的类和方法。您可以按照以下方法操作：
+在我们开始编写代码之前，导入必要的命名空间至关重要。这些命名空间包含使用 Aspose.Words 所需的类和方法。您可以按照以下步骤操作：
 
 ```csharp
 using Aspose.Words;

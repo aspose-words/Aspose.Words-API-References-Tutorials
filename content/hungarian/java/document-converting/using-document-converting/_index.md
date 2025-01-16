@@ -56,7 +56,7 @@ Ezután konvertálja a betöltött Word dokumentumot PDF-be:
 
 ```java
 // Mentse el a dokumentumot PDF formátumban
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## 4. lépés: Konvertálás más formátumokra
@@ -67,21 +67,21 @@ A PDF mellett az Aspose.Words for Java lehetővé teszi a dokumentumok különf�
 
 ```java
 // Mentse el a dokumentumot RTF-ként
-doc.save("output.rtf", SaveFormat.RTF);
+doc.save("output.rtf");
 ```
 
 ### Konvertálás HTML-be
 
 ```java
 // Mentse el a dokumentumot HTML-ként
-doc.save("output.html", SaveFormat.HTML);
+doc.save("output.html");
 ```
 
 ### Konvertálás EPUB formátumba
 
 ```java
 // Mentse el a dokumentumot EPUB formátumban
-doc.save("output.epub", SaveFormat.EPUB);
+doc.save("output.epub");
 ```
 
 ## Tippek a hatékony dokumentum-konvertáláshoz

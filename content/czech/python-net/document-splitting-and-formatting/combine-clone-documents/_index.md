@@ -7,11 +7,11 @@ type: docs
 weight: 12
 url: /cs/python-net/document-splitting-and-formatting/combine-clone-documents/
 ---
-V dnešním uspěchaném digitálním světě je zpracování dokumentů zásadním aspektem mnoha obchodních pracovních postupů. Protože se organizace zabývají různými formáty dokumentů, stává se efektivní slučování a klonování dokumentů nutností. Aspose.Words pro Python poskytuje výkonné a všestranné řešení pro bezproblémové zpracování takových úkolů. V tomto článku prozkoumáme, jak používat Aspose.Words pro Python ke kombinování a klonování dokumentů, což vám umožní efektivně zefektivnit složité pracovní postupy.
+dnešním uspěchaném digitálním světě je zpracování dokumentů zásadním aspektem mnoha obchodních pracovních postupů. Protože se organizace zabývají různými formáty dokumentů, stává se efektivní slučování a klonování dokumentů nutností. Aspose.Words pro Python poskytuje výkonné a všestranné řešení pro bezproblémové zpracování takových úkolů. V tomto článku prozkoumáme, jak používat Aspose.Words pro Python ke kombinování a klonování dokumentů, což vám umožní efektivně zefektivnit složité pracovní postupy.
 
 ## Instalace Aspose.Words
 
-Než se ponoříme do podrobností, musíte nastavit Aspose.Words pro Python. Můžete si jej stáhnout a nainstalovat pomocí následujícího odkazu:[Stáhněte si Aspose.Words pro Python](https://releases.aspose.com/words/python/). 
+ Než se ponoříme do podrobností, musíte nastavit Aspose.Words pro Python. Můžete si jej stáhnout a nainstalovat pomocí následujícího odkazu:[Stáhněte si Aspose.Words pro Python](https://releases.aspose.com/words/python/). 
 
 ## Kombinování dokumentů
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## Pokročilé techniky
-
-### Nahrazení textu
-
-Aspose.Words vám umožňuje snadno najít a nahradit text v dokumentech:
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### Úprava formátování
+## Úprava formátování
 
 Můžete také upravit formátování pomocí Aspose.Words:
 
@@ -127,7 +108,7 @@ Ano, můžete provést mělký klon, abyste zkopírovali pouze strukturu dokumen
  Využijte`range.replace()` spolu s vhodnými možnostmi pro efektivní vyhledání a nahrazení textu.
 
 ### Podporuje Aspose.Words úpravu formátování?
-Rozhodně můžete upravit formátování pomocí metod jako`run.font.size` a`run.font.bold`.
+ Rozhodně můžete upravit formátování pomocí metod jako`run.font.size` a`run.font.bold`.
 
 ### Kde mohu získat přístup k dokumentaci Aspose.Words?
  Komplexní dokumentaci naleznete na[Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).

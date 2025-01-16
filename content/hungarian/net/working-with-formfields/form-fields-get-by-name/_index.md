@@ -9,7 +9,7 @@ url: /hu/net/working-with-formfields/form-fields-get-by-name/
 ---
 ## Bevezetés
 
-Belefáradt az űrlapmezők kézi szerkesztésébe a Word-dokumentumokban? Nos, ne aggódj tovább! Az Aspose.Words for .NET azért jött, hogy megmentse a helyzetet. Ez a nagy teljesítményű könyvtár lehetővé teszi az űrlapmezők kezelésének automatizálását, így sokkal könnyebbé téve az életét. Ma belemerülünk abba, hogyan lehet név szerint lekérni az űrlapmezőket az Aspose.Words for .NET használatával. Fogja meg tehát kedvenc italát, és induljon el ezen az úton, amellyel egyszerűsítheti dokumentumfeldolgozási feladatait!
+Belefáradt az űrlapmezők kézi szerkesztésébe a Word-dokumentumokban? Nos, ne aggódj tovább! Az Aspose.Words for .NET azért jött, hogy megmentse a helyzetet. Ez a hatékony könyvtár lehetővé teszi az űrlapmezők kezelésének automatizálását, így sokkal könnyebbé válik az élete. Ma azt vizsgáljuk meg, hogyan lehet név szerint lekérni az űrlapmezőket az Aspose.Words for .NET használatával. Fogja meg tehát kedvenc italát, és induljon el ezen az úton, hogy egyszerűsítse dokumentumfeldolgozási feladatait!
 
 ## Előfeltételek
 
@@ -17,7 +17,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy mindennel rende
 
 1.  Aspose.Words for .NET Library: Ha még nem tette meg, töltse le innen[itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Bármely .NET fejlesztői környezet, például a Visual Studio.
-3. Alapvető C# ismerete: A C# némi ismerete hasznos, de nem kötelező.
+3. Alapvető C# ismerete: A C# némi ismerete hasznos lesz, de nem kötelező.
 
 ## Névterek importálása
 
@@ -127,4 +127,4 @@ Teljesen! Az Aspose.Words for .NET lehetővé teszi a dokumentumelemek széles s
 
 ### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
 
- részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
+ A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).

@@ -56,7 +56,7 @@ Most hasonlítsuk össze a dokumentumokat a Dokumentum osztály Összehasonlít�
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-A`Compare`módszer összehasonlítja az A dokumentumot a B dokumentummal, és elmenti az A dokumentum módosításait. Referenciaként megadhatja a szerző nevét és az összehasonlítás dátumát.
+ A`Compare`módszer összehasonlítja az A dokumentumot a B dokumentummal, és elmenti az A dokumentum módosításait. Referenciaként megadhatja a szerző nevét és az összehasonlítás dátumát.
 
 ## Következtetés
 
@@ -100,9 +100,9 @@ V: Az Aspose.Words for .NET-ben a Comparison Granularity használatához kövess
 #### K: Milyen szintek érhetők el az Aspose.Words for .NET-ben az Összehasonlítási részletességnek?
 
 V: Az Aspose.Words for .NET három szintű összehasonlítási részletességet biztosít:
-- `Granularity.CharLevel`: Összehasonlítja a dokumentumokat karakter szinten.
+- `Granularity.CharLevel`: Összehasonlítja a dokumentumokat karakterszinten.
 - `Granularity.WordLevel`: A dokumentumokat szószinten hasonlítja össze.
-- `Granularity.BlockLevel`: A dokumentumokat blokkszinten hasonlítja össze.
+- `Granularity.BlockLevel`: A dokumentumokat blokk szinten hasonlítja össze.
 
 #### K: Hogyan értelmezhetem az összehasonlítási eredményeket karakterszintű részletességgel?
 

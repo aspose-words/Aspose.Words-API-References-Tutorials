@@ -1,6 +1,6 @@
 ---
-title: Munkavégzés a Google AI modellel
-linktitle: Munkavégzés a Google AI modellel
+title: Munka a Google AI-modellel
+linktitle: Munka a Google AI-modellel
 second_title: Aspose.Words Document Processing API
 description: Emelje fel a dokumentumfeldolgozást az Aspose.Words for .NET és a Google AI segítségével, hogy könnyedén készítsen tömör összefoglalókat.
 type: docs
@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-A`Document` Az Aspose.Words osztály lehetővé teszi Word fájlok betöltését a memóriába. Győződjön meg arról, hogy a fájlnevek egyeznek a könyvtárában lévő tényleges dokumentumokkal, különben a fájl nem található hibákat fog kapni!
+ A`Document` Az Aspose.Words osztály lehetővé teszi Word fájlok betöltését a memóriába. Győződjön meg arról, hogy a fájlnevek egyeznek a könyvtárában lévő tényleges dokumentumokkal, különben a fájl nem található hibákat fog kapni!
 
 ## 3. lépés: Az API-kulcs lekérése
 

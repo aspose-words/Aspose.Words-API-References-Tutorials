@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Utwórz nowy dokument
 
-Utwórz nowy`Document` obiekt, który będzie stanowił podstawę Twojego dokumentu Word.
+ Utwórz nowy`Document` obiekt, który będzie stanowił podstawę Twojego dokumentu Word.
 
 ```csharp
 Document doc = new Document();
@@ -93,7 +93,7 @@ Ten krok zapewnia uwzględnienie pola tekstu sformatowanego w treści dokumentu.
 
 ## Krok 6: Zapisz dokument
 
-Na koniec zapisz dokument w określonym katalogu.
+Na koniec zapisz dokument w podanym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");

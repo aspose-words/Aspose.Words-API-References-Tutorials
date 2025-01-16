@@ -53,7 +53,7 @@ doc.save("Output.docx");
 
 ### Giải thích:
 
-Các`save` phương pháp được gọi là`Document` đối tượng để lưu tập tin trong`.docx` định dạng. Đối số được cung cấp là đường dẫn tệp nơi tài liệu Word sẽ được lưu. Đây là bước cuối cùng trong quá trình chuyển đổi.
+ Các`save` phương pháp được gọi là`Document` đối tượng để lưu tập tin trong`.docx` định dạng. Đối số được cung cấp là đường dẫn tệp nơi tài liệu Word sẽ được lưu. Đây là bước cuối cùng trong quá trình chuyển đổi.
 
 ## Phần kết luận
 

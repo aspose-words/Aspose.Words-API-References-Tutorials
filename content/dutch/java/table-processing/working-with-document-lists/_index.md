@@ -38,23 +38,11 @@ Hier is een voorbeeldcodefragment om u op weg te helpen:
 // Importeer vereiste pakketten
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Een nieuw document initialiseren
-        Document doc = new Document();
-
-        // Maak een lijst
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Lijstitems toevoegen
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Sla het document op
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Een documentenlijst wijzigen
@@ -69,21 +57,18 @@ Nadat u een documentenlijst hebt gemaakt, moet u deze mogelijk aanpassen door it
 Hier is een codefragment voor het wijzigen van een documentenlijst:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Een bestaand document laden
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Toegang tot de lijst
-        List list = doc.getLists().get(0);
-
-        // Een nieuw item toevoegen
-        list.getListItems().add("New Item");
-
-        // Sla het gewijzigde document op
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Controleer of de alinea deel uitmaakt van een lijst.
+    if (paragraph.isListItem()) {
+        // Werk de laatste alinea van de lijst bij.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Informatie uit een documentenlijst extraheren
@@ -97,23 +82,21 @@ In sommige gevallen moet u mogelijk informatie uit een documentenlijst halen, zo
 Hier is een codefragment voor het extraheren van informatie uit een documentenlijst:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Laad het document
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Toegang tot de lijst
-        List list = doc.getLists().get(0);
-
-        // Door de lijst met items heen itereren en ze afdrukken
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Veelgestelde vragen (FAQ's)
+## Conclusie
+
+In deze uitgebreide gids hebben we de wereld van het werken met documentlijsten met Aspose.Words voor Java verkend. U hebt geleerd hoe u informatie uit documentlijsten kunt maken, wijzigen en extraheren, allemaal met de kracht en flexibiliteit van Aspose.Words voor Java. Begin vandaag nog met het implementeren van deze technieken in uw Java-projecten en stroomlijn uw taken voor documentautomatisering.
+
+
+## Veelgestelde vragen
 
 ### Hoe voeg ik opsommingstekens toe aan een documentenlijst?
  Om opsommingstekens toe te voegen aan een documentenlijst, gebruikt u de juiste ListTemplate bij het maken van de lijst. Gebruik bijvoorbeeld`ListTemplate.BULLET_DEFAULT` in plaats van`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ Om een documentenlijst naar PDF te converteren, laadt u het document eenvoudigwe
 
 ### Ondersteunt Aspose.Words voor Java het werken met tabellen in documenten?
 Ja, Aspose.Words voor Java biedt uitgebreide ondersteuning voor het werken met tabellen, zodat u moeiteloos tabelgegevens kunt maken, wijzigen en extraheren.
-
-## Conclusie
-
-In deze uitgebreide gids hebben we de wereld van het werken met documentlijsten met Aspose.Words voor Java verkend. U hebt geleerd hoe u informatie uit documentlijsten kunt maken, wijzigen en extraheren, allemaal met de kracht en flexibiliteit van Aspose.Words voor Java. Begin vandaag nog met het implementeren van deze technieken in uw Java-projecten en stroomlijn uw taken voor documentautomatisering.

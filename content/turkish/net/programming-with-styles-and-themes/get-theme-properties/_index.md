@@ -64,7 +64,7 @@ Word belgelerindeki temalar genellikle farklı yazı tipleri için ayarlar içer
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
-The`MajorFonts` özellik, ana yazı tipi ayarlarına erişim sağlar. Bu örnekte, temada kullanılan Latin yazı tipini özel olarak alıyoruz. Doğu Asya veya Karmaşık Yazı tipi gibi diğer ana yazı tiplerini almak için benzer kodu kullanabilirsiniz.
+ The`MajorFonts` özellik, ana yazı tipi ayarlarına erişim sağlar. Bu örnekte, temada kullanılan Latin yazı tipini özel olarak alıyoruz. Doğu Asya veya Karmaşık Yazı tipi gibi diğer ana yazı tiplerini almak için benzer kodu kullanabilirsiniz.
 
 ## Adım 4: Küçük Yazı Tiplerini Alın
 
@@ -84,7 +84,7 @@ Temalar ayrıca belgedeki vurgular için kullanılan çeşitli renkleri tanımla
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
-The`Colors` mülkiyeti`Theme` sınıf, temada tanımlanan farklı renk vurgularını almanızı sağlar ve belgelerinizde tutarlı renk şemalarını yönetmenize ve uygulamanıza olanak tanır.
+ The`Colors` mülkiyeti`Theme` sınıf, temada tanımlanan farklı renk vurgularını almanızı sağlar ve belgelerinizde tutarlı renk şemalarını yönetmenize ve uygulamanıza olanak tanır.
 
 ## Çözüm
 

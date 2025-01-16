@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
-The`Styles` mülkiyeti`Document` sınıf bize belgede bulunan tüm stillere erişim sağlar.`StyleIdentifier.Quote`alıntı stilini seçmek için.
+ The`Styles` mülkiyeti`Document` sınıf bize belgede bulunan tüm stillere erişim sağlar.`StyleIdentifier.Quote`alıntı stilini seçmek için.
 
 ## Adım 4: Stili Yapılandırılmış Belge Etiketine Uygulayın
 

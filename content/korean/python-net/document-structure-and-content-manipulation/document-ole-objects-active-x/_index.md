@@ -19,11 +19,7 @@ OLE 개체와 ActiveX 컨트롤을 내장하는 방법을 살펴보기 전에 �
 - Python 라이브러리용 Aspose.Words 설치됨
 - Word 문서 구조에 대한 기본적인 이해
 
-## OLE 개체 포함
-
-OLE 개체를 사용하면 스프레드시트나 프레젠테이션과 같은 외부 파일을 Word 문서에 원활하게 통합할 수 있습니다. 다음 단계에 따라 OLE 개체를 포함합니다.
-
-### 1단계: 필요한 라이브러리 추가
+## 1단계: 필요한 라이브러리 추가
 
 Aspose.Words 라이브러리에서 필요한 모듈과 기타 종속성을 가져오는 것으로 시작합니다.
 
@@ -31,7 +27,7 @@ Aspose.Words 라이브러리에서 필요한 모듈과 기타 종속성을 가�
 import aspose.words as aw
 ```
 
-### 2단계: Word 문서 만들기
+## 2단계: Word 문서 만들기
 
 Python용 Aspose.Words를 사용하여 새 Word 문서를 만듭니다.
 
@@ -39,42 +35,16 @@ Python용 Aspose.Words를 사용하여 새 Word 문서를 만듭니다.
 doc = aw.Document()
 ```
 
-### 3단계: OLE 개체 삽입
+## 3단계: OLE 개체 삽입
 
 이제 문서에 OLE 개체를 삽입할 수 있습니다. 예를 들어 Excel 스프레드시트를 임베드해 보겠습니다.
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## ActiveX 컨트롤 포함
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", True, True, None)
 
-ActiveX 컨트롤은 문서에 상호 작용을 제공하여 사용자가 포함된 콘텐츠와 상호 작용할 수 있도록 합니다. ActiveX 컨트롤을 포함하려면 다음 단계를 따르세요.
-
-### 1단계: 필요한 라이브러리 추가
-
-OLE 개체와 마찬가지로 먼저 필요한 모듈을 가져옵니다.
-
-```python
-import aspose.words as aw
-```
-
-### 2단계: Word 문서 만들기
-
-새 Word 문서를 만듭니다.
-
-```python
-doc = aw.Document()
-```
-
-### 3단계: ActiveX 컨트롤 삽입
-
-멀티미디어 플레이어를 내장하고 싶다고 가정해 보겠습니다. 다음과 같이 할 수 있습니다.
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## 상호 작용성과 기능 강화

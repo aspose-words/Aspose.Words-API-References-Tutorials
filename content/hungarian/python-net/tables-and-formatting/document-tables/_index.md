@@ -50,7 +50,7 @@ táblák az Aspose.Words Table osztályával készülnek. Táblázat létrehozá
 
 ```python
 # Create a table with 3 rows and 4 columns
-table = doc.tables.add(3, 4)
+table = doc.get_child(aw.NodeType.TABLE, 0, True).as_table()
 
 # Set preferred width for the table
 table.preferred_width = doc.page_width
@@ -80,7 +80,7 @@ cell.cell_format.horizontal_merge = CellMerge.NONE
 
 ## Stílus és testreszabás:
 
-Az Aspose.Words különféle stíluslehetőségeket kínál a táblázatok megjelenésének javítására. Beállíthatja a cella hátterének színét, a szöveg igazítását, a betűtípus formázását stb.
+Az Aspose.Words különféle stíluslehetőségeket kínál a táblázatok megjelenésének javítására. Beállíthatja a cella háttérszíneit, a szövegigazítást, a betűtípus formázását stb.
 
 ```python
 # Apply bold formatting to a cell's text

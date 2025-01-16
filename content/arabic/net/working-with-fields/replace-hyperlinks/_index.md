@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
  نعم، يمكنك تنزيل نسخة تجريبية مجانية من[هنا](https://releases.aspose.com/).
 
 ### أين يمكنني العثور على وثائق Aspose.Words لـ .NET؟
-الوثائق التفصيلية متاحة[هنا](https://reference.aspose.com/words/net/).
+ الوثائق التفصيلية متاحة[هنا](https://reference.aspose.com/words/net/).
 
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Words لـ .NET؟
  يمكن الحصول على تراخيص مؤقتة[هنا](https://purchase.aspose.com/temporary-license/).

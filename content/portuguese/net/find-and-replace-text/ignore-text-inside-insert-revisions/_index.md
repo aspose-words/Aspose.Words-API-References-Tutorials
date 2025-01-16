@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Comece a rastrear revisões
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //Inserir texto com revisões de rastreamento
+builder.Writeln("Inserted"); // Inserir texto com revisões de rastreamento
 doc.StopTrackRevisions();
 ```
 

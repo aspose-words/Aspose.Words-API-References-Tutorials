@@ -44,10 +44,7 @@ La aceptación de los cambios es un paso fundamental para finalizar un documento
 
 ```java
 // Aceptar todas las revisiones
-doc.acceptAllRevisions();
-
-// Aceptar una revisión específica por índice
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Rechazando los cambios
@@ -56,10 +53,7 @@ En algunos casos, es posible que deba rechazar determinados cambios. Aspose.Word
 
 ```java
 // Rechazar todas las revisiones
-doc.rejectAllRevisions();
-
-// Rechazar una revisión específica por índice
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Guardar el documento

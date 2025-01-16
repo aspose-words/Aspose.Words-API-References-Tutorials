@@ -31,7 +31,7 @@ using System.Text.RegularExpressions;
 
 ## الخطوة 1: إنشاء مستند ومنشئ جديد
 
- أولاً، قم بتشغيل مستند Word جديد و`DocumentBuilder`الهدف من تسهيل إنشاء الوثيقة:
+ أولاً، قم بتشغيل مستند Word جديد و`DocumentBuilder` الهدف من تسهيل إنشاء الوثيقة:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);

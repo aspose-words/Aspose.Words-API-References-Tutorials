@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-De`dataDir` variabele is een tijdelijke aanduiding voor de directory waar u uw Markdown-bestand opslaat. Zorg ervoor dat u "YOUR DOCUMENT DIRECTORY" vervangt door het werkelijke pad.
+ De`dataDir` variabele is een tijdelijke aanduiding voor de directory waar u uw Markdown-bestand opslaat. Zorg ervoor dat u "YOUR DOCUMENT DIRECTORY" vervangt door het werkelijke pad.
 
 ## Stap 2: Regelmatige tekst schrijven
 

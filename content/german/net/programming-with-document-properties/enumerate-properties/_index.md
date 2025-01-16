@@ -95,7 +95,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich sowohl integrierte als auch benutzerdefinierte Eigenschaften eines Word-Dokuments mit Aspose.Words für .NET aufgelistet. Dies ist nur die Spitze des Eisbergs, wenn es darum geht, was Sie mit Aspose.Words tun können. Egal, ob Sie die Dokumenterstellung automatisieren oder komplexe Dokumente bearbeiten, Aspose.Words bietet eine Vielzahl von Funktionen, die Ihnen das Leben leichter machen.
+Und da haben Sie es! Sie haben erfolgreich sowohl integrierte als auch benutzerdefinierte Eigenschaften eines Word-Dokuments mit Aspose.Words für .NET aufgelistet. Dies ist nur die Spitze des Eisbergs, wenn es darum geht, was Sie mit Aspose.Words tun können. Ob Sie die Dokumenterstellung automatisieren oder komplexe Dokumente bearbeiten, Aspose.Words bietet eine Vielzahl von Funktionen, die Ihnen das Leben leichter machen.
 
 ## Häufig gestellte Fragen
 

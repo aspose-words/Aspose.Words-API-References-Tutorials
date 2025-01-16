@@ -54,7 +54,7 @@ Někdy může být nutné uložit každou stránku dokumentu jako obrázek. Aspo
 
 ```java
 // Java kód pro uložení dokumentu jako obrázků
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Nastavte rozlišení (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

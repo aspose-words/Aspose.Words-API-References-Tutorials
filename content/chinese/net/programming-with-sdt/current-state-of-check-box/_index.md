@@ -36,7 +36,7 @@ using Aspose.Words.Markup;
 
 ## 步骤 1：设置文档路径
 
-首先，您需要指定 Word 文档的路径。这是 Aspose.Words 将查找文件以执行操作的地方。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档存储的实际路径。
+首先，您需要指定 Word 文档的路径。这是 Aspose.Words 将查找文件以执行操作的地方。替换`"YOUR DOCUMENT DIRECTORY"`使用存储文档的实际路径。
 
 ```csharp
 //文档目录的路径

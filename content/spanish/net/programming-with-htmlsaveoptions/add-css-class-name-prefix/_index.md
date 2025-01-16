@@ -117,7 +117,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
  Sí, puedes personalizar el prefijo cada vez que guardes un documento cambiando el`CssClassNamePrefix` propiedad.
 
 ### ¿Este método admite CSS en línea?
-El`CssClassNamePrefix`La propiedad funciona con CSS externo. Para CSS en línea, necesitarás un enfoque diferente.
+ El`CssClassNamePrefix`La propiedad funciona con CSS externo. Para CSS en línea, necesitarás un enfoque diferente.
 
 ### ¿Cómo puedo incluir otras opciones de guardado HTML?
  Puede configurar varias propiedades de`HtmlSaveOptions` Para personalizar la salida HTML, marque la casilla[documentación](https://reference.aspose.com/words/net/) Para más detalles.

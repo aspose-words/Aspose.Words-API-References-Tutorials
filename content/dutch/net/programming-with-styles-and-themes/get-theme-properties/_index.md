@@ -64,7 +64,7 @@ Thema's in Word-documenten bevatten vaak instellingen voor verschillende typen l
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
-De`MajorFonts` property biedt toegang tot de belangrijkste lettertype-instellingen. In dit voorbeeld halen we specifiek het Latijnse lettertype op dat in het thema wordt gebruikt. U kunt vergelijkbare code gebruiken om andere belangrijke lettertypen te krijgen, zoals Oost-Aziatische of Complex Script-lettertypen.
+ De`MajorFonts` property biedt toegang tot de belangrijkste lettertype-instellingen. In dit voorbeeld halen we specifiek het Latijnse lettertype op dat in het thema wordt gebruikt. U kunt vergelijkbare code gebruiken om andere belangrijke lettertypen te krijgen, zoals Oost-Aziatische of Complex Script-lettertypen.
 
 ## Stap 4: Kleine lettertypen ophalen
 
@@ -84,7 +84,7 @@ Thema's definiëren ook verschillende kleuren die worden gebruikt voor accenten 
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
-De`Colors` eigendom van de`Theme` Met de klasse kunt u verschillende kleuraccenten ophalen die in het thema zijn gedefinieerd. Zo kunt u consistente kleurenschema's in uw documenten beheren en toepassen.
+ De`Colors` eigendom van de`Theme` Met de klasse kunt u verschillende kleuraccenten ophalen die in het thema zijn gedefinieerd. Zo kunt u consistente kleurenschema's in uw documenten beheren en toepassen.
 
 ## Conclusie
 

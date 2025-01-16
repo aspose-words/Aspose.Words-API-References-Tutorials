@@ -27,7 +27,7 @@ url: /ar/java/document-loading-and-saving/saving-documents-as-markdown/
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//إدراج جدول يحتوي على خليتين
+// إدراج جدول يحتوي على خليتين
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// ضبط محاذاة محتوى الجدول إلى تلقائي (يتم تحديده من خلال الفقرة الأولى)
+//ضبط محاذاة محتوى الجدول إلى تلقائي (يتم تحديده من خلال الفقرة الأولى)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## الخطوة 3: التعامل مع الصور
 
-لتضمين الصور في مستند Markdown الخاص بك، تحتاج إلى تحديد المجلد الذي توجد به الصور. يتيح لك Aspose.Words for Java تعيين مجلد الصور في`MarkdownSaveOptions`.
+ لتضمين الصور في مستند Markdown الخاص بك، تحتاج إلى تحديد المجلد الذي توجد به الصور. يتيح لك Aspose.Words for Java تعيين مجلد الصور في`MarkdownSaveOptions`.
 
 إليك كيفية تعيين مجلد الصور وحفظ المستند بالصور:
 

@@ -75,7 +75,7 @@ Questo è il momento della verità, in cui il programma apre finalmente il docum
 
 ## Conclusione
 
-Ed ecco fatto! Hai configurato con successo le impostazioni dei font con opzioni di caricamento usando Aspose.Words per .NET. Potrebbe sembrare un piccolo dettaglio, ma ottenere i font giusti può fare un'enorme differenza nella leggibilità e professionalità dei tuoi documenti. Inoltre, ora hai un altro potente strumento nel tuo kit di sviluppo. Quindi vai avanti, provalo e guarda la differenza che fa nei tuoi documenti Word.
+Ed ecco fatto! Hai configurato con successo le impostazioni dei font con opzioni di caricamento usando Aspose.Words per .NET. Potrebbe sembrare un piccolo dettaglio, ma ottenere i font giusti può fare un'enorme differenza nella leggibilità e professionalità dei tuoi documenti. Inoltre, ora hai un altro potente strumento nel tuo kit di strumenti per sviluppatori. Quindi vai avanti, provalo e guarda la differenza che fa nei tuoi documenti Word.
 
 ## Domande frequenti
 

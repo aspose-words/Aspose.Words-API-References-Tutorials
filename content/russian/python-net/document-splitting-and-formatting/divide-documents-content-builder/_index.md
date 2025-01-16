@@ -48,7 +48,7 @@ builder = aw.DocumentBuilder(doc)
 
 # Add a title
 builder.bold()
-builder.font.size = aw.units.point_to_twip(16)
+builder.font.size = 16
 builder.write("Document Precision with Content Builder\n\n")
 
 # Add an introduction

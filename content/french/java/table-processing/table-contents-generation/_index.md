@@ -7,128 +7,137 @@ type: docs
 weight: 14
 url: /fr/java/table-processing/table-contents-generation/
 ---
-
-Êtes-vous prêt à vous lancer dans un voyage pour maîtriser la génération de tables des matières (TOC) à l'aide d'Aspose.Words pour Java ? Dans ce guide complet, nous explorerons l'art de créer des tables des matières dynamiques et visuellement attrayantes sans effort. Vous serez doté des connaissances et des compétences nécessaires pour implémenter cette fonctionnalité de manière transparente dans vos applications Java. Alors, allons-y !
-
 ## Introduction
 
-La table des matières (TOC) est un élément essentiel de tout document bien structuré. Elle fournit aux lecteurs une feuille de route leur permettant de naviguer facilement dans de longs documents. Aspose.Words pour Java est une API puissante qui simplifie la génération de tables des matières dans les applications Java. Dans ce guide étape par étape, nous aborderons tout ce que vous devez savoir pour créer des tables des matières de manière dynamique à l'aide d'Aspose.Words pour Java.
+Vous avez déjà eu du mal à créer une table des matières dynamique et professionnelle dans vos documents Word ? Ne cherchez plus ! Avec Aspose.Words pour Java, vous pouvez automatiser l'ensemble du processus, gagner du temps et garantir l'exactitude. Que vous créiez un rapport complet ou un article universitaire, ce didacticiel vous guidera dans la génération d'une table des matières par programmation avec Java. Vous êtes prêt à vous lancer ? Commençons !
 
-## Premiers pas avec Aspose.Words pour Java
+## Prérequis
 
-Avant de plonger dans les spécificités de la génération de TOC, configurons notre environnement et familiarisons-nous avec Aspose.Words pour Java.
+Avant de commencer à coder, assurez-vous de disposer des éléments suivants :
 
-### Configuration de votre environnement
+1.  Kit de développement Java (JDK) : installé sur votre système. Vous pouvez le télécharger à partir de[Site Web d'Oracle](https://www.oracle.com/java/technologies/javase-downloads.html).
+2.  Bibliothèque Aspose.Words pour Java : téléchargez la dernière version à partir du[page de sortie](https://releases.aspose.com/words/java/).
+3. Environnement de développement intégré (IDE) : tel que IntelliJ IDEA, Eclipse ou NetBeans.
+4.  Licence temporaire Aspose : pour éviter les limitations d'évaluation, obtenez une[permis temporaire](https://purchase.aspose.com/temporary-license/).
 
-Pour commencer, assurez-vous d'avoir installé Aspose.Words for Java. Vous pouvez le télécharger à partir du site Web[ici](https://releases.aspose.com/words/java/).
+## Paquets d'importation
 
-### Créer un nouveau projet Java
-
-Commencez par créer un nouveau projet Java dans votre environnement de développement intégré (IDE) préféré.
-
-### Ajout d'Aspose.Words pour Java à votre projet
-
-Ajoutez la bibliothèque Aspose.Words pour Java à votre projet en l'incluant dans vos dépendances.
-
-### Initialisation d'Aspose.Words
-
-Dans votre code Java, initialisez Aspose.Words pour commencer à travailler avec.
+Pour utiliser efficacement Aspose.Words pour Java, assurez-vous d'importer les classes requises. Voici les importations :
 
 ```java
-// Initialiser Aspose.Words
-com.aspose.words.Document doc = new com.aspose.words.Document();
+import com.aspose.words.*;
 ```
 
-## Comprendre la table des matières (TOC)
+Suivez ces étapes pour générer une table des matières dynamique dans votre document Word.
 
-Avant de nous lancer dans la génération de tables des matières, approfondissons notre compréhension de ce qu'elles sont et de leur fonctionnement.
+## Étape 1 : Initialiser le document et DocumentBuilder
 
-### Qu'est-ce qu'une table des matières ?
+ La première étape consiste à créer un nouveau document et à utiliser le`DocumentBuilder` classe pour le manipuler.
 
-Une table des matières est une liste qui apparaît au début d'un document et fournit des liens vers différentes sections ou chapitres du document. Elle constitue un outil de navigation utile pour les lecteurs.
-
-### Comment fonctionne la génération de table des matières ?
-
-La génération de tables des matières implique l'identification de titres ou de contenus spécifiques dans votre document et la création de liens vers ces sections. Aspose.Words pour Java simplifie ce processus en automatisant la génération de tables des matières en fonction de règles prédéfinies.
-
-## Générer une table des matières de base
-
-Maintenant que nous avons une base solide, générons une table des matières de base en utilisant Aspose.Words pour Java.
 
 ```java
-// Créer une nouvelle table des matières
-com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-tocField.update();
+string dataDir = "Your Document Directory";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Le code ci-dessus crée une table des matières de base dans votre document. Vous pouvez la personnaliser davantage en spécifiant les niveaux, la mise en forme, etc.
+- `Document`: Représente le document Word.
+- `DocumentBuilder`:Une classe d'aide qui permet une manipulation facile du document.
 
-## Personnalisation avancée de la table des matières
+## Étape 2 : Insérer la table des matières
 
-Aspose.Words pour Java propose de nombreuses options de personnalisation pour vos tables des matières. Explorons quelques fonctionnalités avancées :
+Maintenant, insérons la table des matières au début du document.
 
-### Personnalisation des styles de table des matières
-
-Vous pouvez définir vos styles de table des matières pour qu'ils correspondent à l'esthétique de votre document.
 
 ```java
-// Personnaliser les styles de table des matières
-com.aspose.words.Style tocStyle = doc.getStyles().add(StyleType.PARAGRAPH, "MyTOCStyle");
-tocStyle.getFont().setSize(16);
-tocStyle.getFont().setBold(true);
+builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+builder.insertBreak(BreakType.PAGE_BREAK);
 ```
 
-### Y compris les rubriques spécifiques
+- `insertTableOfContents`: Insère un champ TOC. Les paramètres spécifient :
+  - `\o "1-3"`:Inclure les titres des niveaux 1 à 3.
+  - `\h`:Créer des liens hypertexte vers les entrées.
+  - `\z`: Supprimer les numéros de page pour les documents Web.
+  - `\u`:Conserver les styles pour les hyperliens.
+- `insertBreak`: Ajoute un saut de page après la table des matières.
 
-Vous pouvez choisir les titres à inclure dans votre table des matières en spécifiant leurs niveaux de plan.
+## Étape 3 : ajouter des titres pour remplir la table des matières
+
+POUR remplir la table des matières, vous devez ajouter des paragraphes avec des styles de titre.
+
 
 ```java
-// Inclure uniquement des titres spécifiques
-tocField.setCode("TOC \\o \"1-3\" \\h \\z");
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 1");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_2);
+builder.writeln("Heading 1.1");
+builder.writeln("Heading 1.2");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 2");
 ```
 
-## Ajout de code source pour la génération de table des matières
+- `setStyleIdentifier` : Définit le style de paragraphe sur un niveau de titre spécifique (par exemple,`HEADING_1`, `HEADING_2`).
+- `writeln`: Ajoute du texte au document avec le style spécifié.
 
-Allons plus loin en intégrant le code source pour automatiser la génération de tables des matières dans vos applications Java.
+## Étape 4 : ajouter des titres imbriqués
+
+Pour démontrer les niveaux de table des matières, incluez des titres imbriqués.
+
 
 ```java
-// Automatiser la génération de tables des matières en Java
-public void generateTOC() {
-    com.aspose.words.Document doc = new com.aspose.words.Document();
-    com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-    tocField.update();
-    // Ajoutez plus de personnalisation ici
-}
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_3);
+builder.writeln("Heading 3.1.1");
+builder.writeln("Heading 3.1.2");
+builder.writeln("Heading 3.1.3");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_4);
+builder.writeln("Heading 3.1.3.1");
+builder.writeln("Heading 3.1.3.2");
 ```
 
-En encapsulant la génération de table des matières dans une méthode, vous pouvez facilement l'intégrer dans vos projets.
+- Ajoutez des titres de niveaux plus profonds pour afficher la hiérarchie dans la table des matières.
 
-## FAQ
+## Étape 5 : mettre à jour les champs de la table des matières
 
-### Comment puis-je mettre à jour une table des matières existante ?
+Le champ TOC doit être mis à jour pour afficher les derniers titres.
 
-Pour mettre à jour une table des matières existante dans votre document, faites simplement un clic droit dessus et sélectionnez « Mettre à jour le champ ». Aspose.Words pour Java actualisera la table des matières en fonction des modifications apportées aux titres de votre document.
 
-### Puis-je générer plusieurs tables des matières dans un seul document ?
+```java
+doc.updateFields();
+```
 
-Oui, vous pouvez générer plusieurs tables des matières dans un seul document. Utilisez des codes de champ différents pour chaque table des matières et personnalisez leurs paramètres selon vos besoins.
+- `updateFields`: Actualise tous les champs du document, garantissant que la table des matières reflète les titres ajoutés.
 
-### Aspose.Words pour Java est-il adapté aux petits et grands documents ?
+## Étape 6 : Enregistrer le document
 
-Absolument ! Aspose.Words pour Java est polyvalent et peut gérer des documents de différentes tailles, des petits rapports aux romans volumineux.
+Enfin, enregistrez le document au format souhaité.
 
-### Puis-je personnaliser l’apparence de mes entrées de table des matières ?
 
-Bien sûr ! Vous pouvez définir des styles personnalisés pour les entrées de table des matières afin qu'ils correspondent à la conception et au formatage de votre document.
+```java
+doc.save(dataDir + "DocumentBuilder.InsertToc.docx");
+```
 
-### Aspose.Words pour Java prend-il en charge les références croisées dans la table des matières ?
-
-Oui, vous pouvez créer des références croisées dans la table des matières pour créer des liens vers des sections ou des pages spécifiques de votre document.
-
-### Aspose.Words pour Java est-il adapté aux applications Web ?
-
-En effet, Aspose.Words pour Java peut être intégré de manière transparente dans des applications Web pour générer des tables des matières de manière dynamique.
+- `save` : Exporte le document vers un`.docx` fichier. Vous pouvez spécifier d'autres formats tels que`.pdf` ou`.txt` si besoin.
 
 ## Conclusion
 
-Dans ce guide complet, nous avons exploré l'art de la génération de tables des matières (TOC) à l'aide d'Aspose.Words pour Java. Vous avez appris à configurer votre environnement, à créer des tables des matières de base et avancées, et même à intégrer la génération de tables des matières dans vos projets Java avec le code source. Aspose.Words pour Java vous permet d'améliorer vos documents avec des tables des matières dynamiques et visuellement attrayantes. Maintenant, allez-y et appliquez ces connaissances pour créer des tables des matières époustouflantes dans vos applications Java. Bon codage !
+Félicitations ! Vous avez réussi à créer une table des matières dynamique dans un document Word à l'aide d'Aspose.Words pour Java. Avec seulement quelques lignes de code, vous avez automatisé une tâche qui pourrait autrement prendre des heures. Alors, quelle est la prochaine étape ? Essayez d'expérimenter différents styles et formats de titres pour adapter votre table des matières à des besoins spécifiques.
+
+## FAQ
+
+### Puis-je personnaliser davantage le format de la table des matières ?
+Absolument ! Vous pouvez ajuster les paramètres de la table des matières, comme l'inclusion de numéros de page, l'alignement du texte ou l'utilisation de styles de titre personnalisés.
+
+### Une licence est-elle obligatoire pour Aspose.Words pour Java ?
+ Oui, une licence est requise pour bénéficier de toutes les fonctionnalités. Vous pouvez commencer avec une[permis temporaire](https://purchase.aspose.com/temporary-license/).
+
+### Puis-je générer une table des matières pour un document existant ?
+ Oui ! Chargez le document dans un`Document` objet et suivez les mêmes étapes pour insérer et mettre à jour la table des matières.
+
+### Cela fonctionne-t-il pour les exportations PDF ?
+ Oui, la table des matières apparaîtra dans le PDF si vous enregistrez le document dans`.pdf` format.
+
+### Où puis-je trouver plus de documentation ?
+ Découvrez le[Documentation d'Aspose.Words pour Java](https://reference.aspose.com/words/java/) pour plus d'exemples et de détails.

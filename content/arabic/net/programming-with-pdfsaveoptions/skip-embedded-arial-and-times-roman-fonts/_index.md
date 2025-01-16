@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 نعم، يمكنك تكوين خيارات الحفظ لتخطي تضمين الخطوط الأخرى إذا لزم الأمر.
 
 ### هل Aspose.Words لـ .NET مجاني؟
-يقدم Aspose.Words for .NET نسخة تجريبية مجانية يمكنك تنزيلها[هنا](https://releases.aspose.com/) ولكن للحصول على الوصول الكامل، تحتاج إلى شراء ترخيص[هنا](https://purchase.aspose.com/buy).
+ يقدم Aspose.Words for .NET نسخة تجريبية مجانية يمكنك تنزيلها[هنا](https://releases.aspose.com/) ولكن للحصول على الوصول الكامل، تحتاج إلى شراء ترخيص[هنا](https://purchase.aspose.com/buy).
 
 ### أين يمكنني العثور على المزيد من الدروس التعليمية حول Aspose.Words لـ .NET؟
- يمكنك العثور على وثائق ودروس تعليمية شاملة[هنا](https://reference.aspose.com/words/net/).
+يمكنك العثور على وثائق ودروس تعليمية شاملة[هنا](https://reference.aspose.com/words/net/).

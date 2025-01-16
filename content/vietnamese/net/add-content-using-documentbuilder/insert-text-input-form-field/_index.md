@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Bước 3: Khởi tạo DocumentBuilder
 
-Các`DocumentBuilder` class là công cụ chính của chúng ta để thêm nội dung vào tài liệu. Hãy nghĩ về nó như một cây bút viết trên canvas tài liệu Word.
+ Các`DocumentBuilder` class là công cụ chính của chúng ta để thêm nội dung vào tài liệu. Hãy nghĩ về nó như một cây bút viết trên canvas tài liệu Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

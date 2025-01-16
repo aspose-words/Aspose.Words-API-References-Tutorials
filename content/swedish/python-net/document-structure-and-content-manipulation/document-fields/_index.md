@@ -23,7 +23,7 @@ Fält är platshållare i ett dokument som visar data dynamiskt. De kan använda
  För att infoga ett fält kan du använda`FieldBuilder` klass. Till exempel, för att infoga ett aktuellt datumfält:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Automatisera dokumentgenerering med fält
-
-Fält är viktiga för automatiserad dokumentgenerering. Du kan fylla i fält med data från externa källor:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Integrera fält med datakällor
@@ -111,7 +102,7 @@ doc.update_fields()
 
 Effektiv hantering av fält och data i Word-dokument ger dig möjlighet att skapa dynamiska och automatiserade dokument. Aspose.Words för Python förenklar denna process och erbjuder ett brett utbud av funktioner.
 
-## Vanliga frågor
+## FAQ's
 
 ### Hur uppdaterar jag fältvärdena manuellt?
 
@@ -135,4 +126,4 @@ Ja, fält kan kapslas inuti varandra för att skapa komplext dynamiskt innehåll
 
 ## Få tillgång till fler resurser
 
- För mer detaljerad information och kodexempel, besök[Aspose.Words för Python API-referens](https://reference.aspose.com/words/python-net/) . För att ladda ner den senaste versionen av biblioteket, besök[Aspose.Words för Python nedladdningssida](https://releases.aspose.com/words/python/).
+ För mer detaljerad information och kodexempel, besök[Aspose.Words för Python API referens](https://reference.aspose.com/words/python-net/) . För att ladda ner den senaste versionen av biblioteket, besök[Aspose.Words för Python nedladdningssida](https://releases.aspose.com/words/python/).

@@ -49,7 +49,7 @@ Em seguida, você configurará as opções de salvamento para o documento. É aq
 
 ```java
 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.setSaveFormat(SaveFormat.EPUB);
+saveOptions.setSaveFormat();
 saveOptions.setEncoding(StandardCharsets.UTF_8);
 ```
 

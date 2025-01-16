@@ -14,7 +14,7 @@ In deze uitgebreide gids duiken we in de wereld van documentvormen in Aspose.Wor
 
 ## Aan de slag met documentvormen
 
-Voordat we in de code duiken, gaan we onze omgeving instellen. Zorg ervoor dat je Aspose.Words voor Java in je project hebt geïntegreerd. Als je dat nog niet hebt gedaan, kun je het downloaden van de Aspose-website[Download Aspose.Words voor Java](https://releases.aspose.com/words/java/)
+ Voordat we in de code duiken, gaan we onze omgeving instellen. Zorg ervoor dat je Aspose.Words voor Java in je project hebt geïntegreerd. Als je dat nog niet hebt gedaan, kun je het downloaden van de Aspose-website[Download Aspose.Words voor Java](https://releases.aspose.com/words/java/)
 
 ## Vormen toevoegen aan documenten
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

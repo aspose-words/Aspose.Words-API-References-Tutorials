@@ -152,7 +152,7 @@ Ano, můžete klonovat více sekcí procházením kolekce sekcí a klonováním 
 
 ### Jak přizpůsobím klonovanou sekci?
 
- Klonovanou sekci můžete upravit úpravou jejích vlastností a obsahu po klonování. Použijte`Section` metody a vlastnosti třídy k provádění změn.
+ Klonovanou sekci můžete upravit úpravou jejích vlastností a obsahu po klonování. Použijte`Section` třídy a vlastnosti k provádění změn.
 
 ### Je Aspose.Words kompatibilní s různými verzemi Wordu?
 

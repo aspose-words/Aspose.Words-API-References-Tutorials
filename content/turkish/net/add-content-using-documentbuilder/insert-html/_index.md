@@ -15,7 +15,7 @@ Merhaba, kodlama meraklısı arkadaşım! Aspose.Words for .NET kullanarak bir W
 
 Adım adım kılavuza dalmadan önce, ihtiyacımız olan her şeye sahip olduğumuzdan emin olalım. İşte hızlı bir kontrol listesi:
 
-1. Aspose.Words for .NET Kütüphanesi: Henüz yapmadıysanız, Aspose.Words for .NET kütüphanesini indirmeniz gerekir. Bunu edinebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Kütüphanesi: Henüz yapmadıysanız, Aspose.Words for .NET kütüphanesini indirmeniz gerekir. Bunu edinebilirsiniz[Burada](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio gibi bir geliştirme ortamının kurulu olduğundan emin olun.
 3. .NET Framework: Bilgisayarınızda .NET Framework'ün yüklü olduğundan emin olun.
 4. Temel C# Bilgisi: C# ile ilgili biraz bilgi sahibi olmak çok işinize yarayacaktır.
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Adım 3: DocumentBuilder'ı Başlatma
 
-HTML eklemek için, aşağıdakilerin yardımına ihtiyacımız olacak:`DocumentBuilder` sınıf. Bu kullanışlı sınıf, belgemize içerik eklemeyi kolaylaştırır.
+ HTML eklemek için, aşağıdakilerin yardımına ihtiyacımız olacak:`DocumentBuilder` sınıf. Bu kullanışlı sınıf, belgemize içerik eklemeyi kolaylaştırır.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -88,7 +88,7 @@ Ve işte oldu! Aspose.Words for .NET kullanarak bir Word belgesine HTML ekledini
 
 HTML'yi bir Word belgesine eklemek hiç bu kadar kolay olmamıştı, değil mi? Aspose.Words for .NET ile HTML'nin gücünü Word belgelerinin çok yönlülüğüyle kusursuz bir şekilde harmanlayabilirsiniz. İster rapor oluşturmayı otomatikleştirin, ister güzel biçimlendirilmiş belgeler hazırlayın, bu araç sizin için vazgeçilmez bir çözümdür.
 
-Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, şuraya göz atmaktan çekinmeyin:[belgeleme](https://reference.aspose.com/words/net/), [destek forumları](https://forum.aspose.com/c/words/8) veya kendinize bir tane alın[geçici lisans](https://purchase.aspose.com/temporary-license/) Aspose.Words for .NET'in tüm potansiyelini ortaya çıkarmak için.
+ Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, şuraya göz atmaktan çekinmeyin:[belgeleme](https://reference.aspose.com/words/net/), [destek forumları](https://forum.aspose.com/c/words/8) veya kendinize bir tane alın[geçici lisans](https://purchase.aspose.com/temporary-license/) Aspose.Words for .NET'in tüm potansiyelini ortaya çıkarmak için.
 
 Keyifli kodlamalar!
 
@@ -107,4 +107,4 @@ Evet, HTML eklendikten sonra, Aspose.Words for .NET tarafından sağlanan çeşi
  Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) veya bir tane elde edin[geçici lisans](https://purchase.aspose.com/temporary-license/) Tüm özellikler için.
 
 ### Daha fazla öğretici ve örneği nerede bulabilirim?  
-The[belgeleme](https://reference.aspose.com/words/net/) Ve[destek forumları](https://forum.aspose.com/c/words/8)Daha detaylı kılavuzlar ve topluluk desteği için başlamak için harika yerlerdir.
+ The[belgeleme](https://reference.aspose.com/words/net/) Ve[destek forumları](https://forum.aspose.com/c/words/8) Daha detaylı kılavuzlar ve topluluk desteği için başlamak için harika yerlerdir.

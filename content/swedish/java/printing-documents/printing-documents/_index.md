@@ -38,7 +38,7 @@ Därefter skapar vi ett utskriftsjobb för att skriva ut vårt laddade dokument.
 ```java
 // Skapa ett utskriftsjobb att skriva ut vårt dokument med.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Initiera en attributuppsättning med antalet sidor i dokumentet.
+// Initiera en attributuppsättning med antalet sidor i dokumentet.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Skicka skrivarinställningarna tillsammans med de andra parametrarna till utskriftsdokumentet.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Skapa ett utskriftsjobb att skriva ut vårt dokument med.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Initiera en attributuppsättning med antalet sidor i dokumentet.
+// Initiera en attributuppsättning med antalet sidor i dokumentet.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Skicka skrivarinställningarna tillsammans med de andra parametrarna till utskriftsdokumentet.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Sidans start- och slutindex enligt definitionen i attributuppsättningen.
+        //Sidans start- och slutindex enligt definitionen i attributuppsättningen.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Välj numret på den sista sidan som ska skrivas ut på detta pappersark.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Gå igenom de valda sidorna från den lagrade aktuella sidan till den beräknade
+        // Gå igenom de valda sidorna från den lagrade aktuella sidan till den beräknade
         // sista sidan.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Beräkna kolumn- och radindex.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // Det användbara returvärdet är skalan där sidan renderades.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Rita sidkanterna (sidminiatyren kan vara mindre än miniatyren
+                //Rita sidkanterna (sidminiatyren kan vara mindre än miniatyren
                 // platshållarstorlek).
                 if (mPrintPageBorders) {
                     // Få sidans verkliga 100 % storlek i poäng.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Definiera antalet kolumner och rader på arket för
-        //Landskapsorienterat papper.
+        // Landskapsorienterat papper.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ Grattis! Du har framgångsrikt skrivit ut ett Word-dokument med Aspose.Words fö
 
 ### F1: Kan jag skriva ut specifika sidor i ett dokument med Aspose.Words för Java?
 
- Ja, du kan ange sidintervallet när du skriver ut ett dokument. I kodexemplet använde vi`attributes.add(new PageRanges(1, doc.getPageCount()))` för att skriva ut alla sidor. Du kan justera sidintervallet efter behov.
+ Ja, du kan ange sidintervallet när du skriver ut ett dokument. I kodexemplet använde vi`attributes.add(new PageRanges(1, doc.getPageCount()))`för att skriva ut alla sidor. Du kan justera sidintervallet efter behov.
 
 ### F2: Är Aspose.Words för Java lämplig för batchutskrift?
 

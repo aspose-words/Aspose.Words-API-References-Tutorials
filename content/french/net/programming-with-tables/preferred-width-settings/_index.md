@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-Le`PreferredWidth.Auto` Le paramètre permet à cette cellule de s'agrandir ou de se contracter en fonction de l'espace restant après la prise en compte des autres cellules. Cela garantit que la mise en page du tableau est équilibrée et professionnelle.
+ Le`PreferredWidth.Auto` Le paramètre permet à cette cellule de s'agrandir ou de se contracter en fonction de l'espace restant après la prise en compte des autres cellules. Cela garantit que la mise en page du tableau est équilibrée et professionnelle.
 
 ## Étape 5 : Finaliser et enregistrer le document
 

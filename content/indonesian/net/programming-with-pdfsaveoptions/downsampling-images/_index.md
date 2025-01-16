@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Pada langkah ini, kita memuat dokumen Word dari direktori yang ditentukan. Pastikan untuk mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya tempat dokumen Anda berada.
+Pada langkah ini, kita memuat dokumen Word dari direktori yang ditentukan. Pastikan untuk mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat dokumen Anda berada.
 
 ## Langkah 2: Konfigurasikan Opsi Downsampling
 

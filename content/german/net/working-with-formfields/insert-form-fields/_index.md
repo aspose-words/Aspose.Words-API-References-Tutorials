@@ -76,7 +76,7 @@ Diese Codezeile speichert das Dokument als „OutputDocument.docx“ im Verzeich
 
 Wenn Sie diese Schritte befolgen, haben Sie mithilfe von Aspose.Words für .NET erfolgreich ein Kombinationsfeld-Formularfeld in ein Word-Dokument eingefügt. Dieser Vorgang kann angepasst werden, um andere Arten von Formularfeldern einzuschließen und Ihre Dokumente interaktiv und benutzerfreundlich zu gestalten.
 
-Das Einfügen von Formularfeldern kann die Funktionalität Ihrer Word-Dokumente erheblich verbessern und ermöglicht dynamische Inhalte und Benutzerinteraktion. Aspose.Words für .NET macht diesen Prozess unkompliziert und effizient, sodass Sie problemlos professionelle Dokumente erstellen können.
+Das Einfügen von Formularfeldern kann die Funktionalität Ihrer Word-Dokumente erheblich verbessern und dynamische Inhalte und Benutzerinteraktionen ermöglichen. Aspose.Words für .NET macht diesen Prozess unkompliziert und effizient, sodass Sie problemlos professionelle Dokumente erstellen können.
 
 ## Häufig gestellte Fragen
 

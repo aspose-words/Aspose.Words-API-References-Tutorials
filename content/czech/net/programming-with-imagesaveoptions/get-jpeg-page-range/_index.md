@@ -15,7 +15,7 @@ Převod dokumentů aplikace Word na obrázky může být neuvěřitelně užite�
 
 Než začneme, budete potřebovat několik věcí:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Vývojové prostředí AC# jako Visual Studio.
 - Ukázkový dokument: Dokument aplikace Word pro práci. Pro tento výukový program můžete použít jakýkoli soubor .docx.
 - Základní znalost C#: Znalost programování v C#.
@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## Krok 1: Vložte svůj dokument
 
-Nejprve musíme načíst dokument aplikace Word, který chceme převést. Předpokládejme, že se náš dokument jmenuje`Rendering.docx` a je umístěn v adresáři určeném zástupným symbolem`YOUR DOCUMENT DIRECTORY`.
+Nejprve musíme načíst dokument aplikace Word, který chceme převést. Předpokládejme, že náš dokument je pojmenován`Rendering.docx` a je umístěn v adresáři určeném zástupným symbolem`YOUR DOCUMENT DIRECTORY`.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

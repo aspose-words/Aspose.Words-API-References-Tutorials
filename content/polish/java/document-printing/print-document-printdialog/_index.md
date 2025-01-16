@@ -65,7 +65,7 @@ Możesz dostosować ustawienia drukowania, aby spełnić swoje specyficzne wymag
 
 ## Wniosek
 
-W tym przewodniku sprawdziliśmy, jak drukować dokument za pomocą PrintDialog przy użyciu Aspose.Words dla Java. Ta biblioteka ułatwia manipulację dokumentami i drukowanie ich dla programistów Java, oszczędzając czas i wysiłek w zadaniach związanych z dokumentami.
+W tym przewodniku sprawdziliśmy, jak drukować dokument za pomocą PrintDialog przy użyciu Aspose.Words dla Java. Ta biblioteka ułatwia manipulację dokumentami i drukowanie ich programistom Java, oszczędzając czas i wysiłek w zadaniach związanych z dokumentami.
 
 ## Często zadawane pytania
 

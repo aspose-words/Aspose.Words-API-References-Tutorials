@@ -18,7 +18,7 @@ is_root: true
 | [OpenType 기능 활성화](./enable-opentype-features/) | Aspose.Words for .NET을 사용하여 Word 문서에서 OpenType 기능을 활성화하는 방법을 알아보세요. 이 튜토리얼은 OpenType 글꼴의 고급 기능을 활성화하는 단계를 안내합니다. |  
 | [주석이 있는 단어 처리](./working-with-comments/) | Aspose.Words for .NET을 사용하여 Word 문서의 주석 관리 기능을 살펴보세요. 단계별 튜토리얼을 사용하여 주석을 추가, 삭제, 검색 및 서식 지정하는 방법을 알아보세요. |  
 | [필드를 사용한 단어 처리](./working-with-fields/) | Aspose.Words for .NET을 사용하여 Word 문서의 필드를 처리하는 포괄적인 리소스입니다. 튜토리얼, 예제 및 자세한 설명. |  
-| [글꼴을 사용한 단어 처리](./working-with-fonts/) | 글꼴을 사용한 단어 처리 자습서에서는 Aspose.Words for .NET을 사용하여 Word에서 글꼴을 사용하는 방법을 알려줍니다. 서식 지정, 대체, 알림 등. |  
+| [글꼴을 사용한 단어 처리](./working-with-fonts/) | 글꼴을 사용한 단어 처리 튜토리얼은 Aspose.Words for .NET을 사용하여 Word에서 글꼴을 사용하는 방법을 알려줍니다. 서식 지정, 대체, 알림 등. |  
 | [각주 및 미주를 사용한 단어 처리](./working-with-footnote-and-endnote/) | Aspose.Words for .NET을 사용하여 Word 문서에서 각주와 미주를 사용하는 방법을 알아보세요. 자세한 튜토리얼과 실제 예제. |  
 | [FormFields를 사용한 단어 처리](./working-with-formfields/) | Aspose.Words for .NET을 사용하여 Word 문서의 폼 필드에서 작업하는 방법을 알아보세요. 코드 예제가 있는 자세한 튜토리얼. |  
 | [헤더와 푸터를 사용한 단어 처리](./working-with-headers-and-footers/) |Aspose.Words for .NET을 사용하여 Word 문서에서 머리글과 바닥글을 사용하는 방법을 알아보세요. 완전한 튜토리얼과 실제 예제. |  

@@ -15,7 +15,7 @@ url: /es/net/add-content-using-documentbuilder/insert-html/
 
 Antes de sumergirnos en la guía paso a paso, asegurémonos de que tenemos todo lo que necesitamos. Aquí tienes una lista de verificación rápida:
 
-1. Biblioteca Aspose.Words para .NET: si aún no lo ha hecho, deberá descargar la biblioteca Aspose.Words para .NET. Puede obtenerla[aquí](https://releases.aspose.com/words/net/).
+1.  Biblioteca Aspose.Words para .NET: si aún no lo ha hecho, deberá descargar la biblioteca Aspose.Words para .NET. Puede obtenerla[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: asegúrese de tener configurado un entorno de desarrollo, como Visual Studio.
 3. .NET Framework: asegúrese de tener el marco .NET instalado en su máquina.
 4. Conocimientos básicos de C#: un poco de familiaridad con C# será de gran ayuda.
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Paso 3: Inicialización de DocumentBuilder
 
-Para insertar HTML, necesitaremos la ayuda del`DocumentBuilder` Clase. Esta práctica clase facilita la adición de contenido a nuestro documento.
+ Para insertar HTML, necesitaremos la ayuda del`DocumentBuilder` Clase. Esta práctica clase facilita la adición de contenido a nuestro documento.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -88,7 +88,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 
 Insertar HTML en un documento de Word nunca ha sido tan fácil, ¿verdad? Con Aspose.Words para .NET, puede combinar a la perfección la potencia de HTML con la versatilidad de los documentos de Word. Ya sea que esté automatizando la generación de informes o creando documentos con un formato atractivo, esta herramienta es su solución ideal.
 
-Si tiene alguna pregunta o necesita más ayuda, no dude en consultar la[documentación](https://reference.aspose.com/words/net/), [foros de soporte](https://forum.aspose.com/c/words/8) , o consíguete uno[licencia temporal](https://purchase.aspose.com/temporary-license/) para desbloquear todo el potencial de Aspose.Words para .NET.
+ Si tiene alguna pregunta o necesita más ayuda, no dude en consultar la[documentación](https://reference.aspose.com/words/net/), [foros de soporte](https://forum.aspose.com/c/words/8) , o consíguete uno[licencia temporal](https://purchase.aspose.com/temporary-license/) para desbloquear todo el potencial de Aspose.Words para .NET.
 
 ¡Feliz codificación!
 
@@ -107,4 +107,4 @@ Sí, una vez insertado el HTML, puedes manipular aún más el documento utilizan
  Puedes empezar con un[prueba gratis](https://releases.aspose.com/) o obtener una[licencia temporal](https://purchase.aspose.com/temporary-license/) para funciones completas.
 
 ### ¿Dónde puedo encontrar más tutoriales y ejemplos?  
-El[documentación](https://reference.aspose.com/words/net/) y[foros de soporte](https://forum.aspose.com/c/words/8)Son excelentes lugares para comenzar a obtener guías más detalladas y apoyo de la comunidad.
+ El[documentación](https://reference.aspose.com/words/net/) y[foros de soporte](https://forum.aspose.com/c/words/8) Son excelentes lugares para comenzar a obtener guías más detalladas y apoyo de la comunidad.

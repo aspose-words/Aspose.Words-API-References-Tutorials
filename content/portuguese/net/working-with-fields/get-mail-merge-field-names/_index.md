@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-O`Aspose.Words` namespace dá acesso a todas as classes e métodos necessários para manipular documentos do Word, enquanto`System` é usado para funcionalidades básicas, como saída de console.
+ O`Aspose.Words` namespace dá acesso a todas as classes e métodos necessários para manipular documentos do Word, enquanto`System` é usado para funcionalidades básicas, como saída de console.
 
 Vamos dividir o processo de extração de nomes de campos de mala direta em um guia claro e passo a passo.
 
@@ -73,7 +73,7 @@ Título: Extrair nomes de campos de mala direta
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-O`GetFieldNames()` método retorna uma matriz de strings, cada uma representando um nome de campo de mala direta encontrado no documento. Esses são os placeholders que você verá no seu documento do Word.
+ O`GetFieldNames()` método retorna uma matriz de strings, cada uma representando um nome de campo de mala direta encontrado no documento. Esses são os placeholders que você verá no seu documento do Word.
 
 ## Etapa 4: Exibir o número de campos de mesclagem
 

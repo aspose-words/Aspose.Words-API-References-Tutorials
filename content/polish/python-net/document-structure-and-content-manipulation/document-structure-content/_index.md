@@ -12,7 +12,7 @@ dzisiejszej erze cyfrowej tworzenie i zarządzanie złożonymi dokumentami jest 
 
 ## Wprowadzenie do Aspose.Words Python
 
-Aspose.Words to kompleksowe API, które umożliwia programistom programistyczną pracę z dokumentami Word. Wersja Python tej biblioteki pozwala manipulować różnymi aspektami dokumentów Word, od podstawowych operacji tekstowych po zaawansowane formatowanie i dostosowywanie układu.
+Aspose.Words to kompleksowe API, które umożliwia programistom pracę z dokumentami Worda programowo. Wersja Pythona tej biblioteki pozwala manipulować różnymi aspektami dokumentów Worda, od podstawowych operacji tekstowych po zaawansowane formatowanie i dostosowywanie układu.
 
 ## Instalacja i konfiguracja
 
@@ -45,9 +45,6 @@ from aspose.words import Section, Paragraph
 
 # Add a new section
 section = doc.sections.add()
-
-# Add a paragraph to the section
-paragraph = section.add_paragraph("Hello, Aspose.Words!")
 ```
 
 ## Praca z treścią tekstową
@@ -161,19 +158,6 @@ doc.save("output_document.docx")
 doc.save("output_document.pdf", SaveFormat.PDF)
 ```
 
-## Automatyzacja generowania dokumentów
-
-Aspose.Words doskonale sprawdza się w automatyzacji przepływów pracy związanych z generowaniem dokumentów:
-
-```python
-# Generate multiple documents
-for data in dataset:
-    new_doc = Document()
-    # Populate the document with data
-    # ...
-    new_doc.save(f"document_{data.id}.docx")
-```
-
 ## Najlepsze praktyki i wskazówki
 
 - Utrzymuj porządek w kodzie, stosując funkcje do różnych zadań związanych z manipulacją dokumentami.
@@ -182,7 +166,7 @@ for data in dataset:
 
 ## Wniosek
 
-W tym artykule przyjrzeliśmy się możliwościom Aspose.Words Python w zakresie zarządzania strukturą i treścią dokumentów Word. Nauczyłeś się, jak zainstalować bibliotekę, tworzyć, formatować i modyfikować dokumenty, a także dodawać różne elementy, takie jak obrazy, tabele i hiperłącza. Wykorzystując moc Aspose.Words, możesz usprawnić zarządzanie dokumentami i zautomatyzować generowanie złożonych raportów, umów i nie tylko.
+W tym artykule przyjrzeliśmy się możliwościom Aspose.Words Python w zakresie zarządzania strukturą i treścią w dokumentach Word. Nauczyłeś się, jak zainstalować bibliotekę, tworzyć, formatować i modyfikować dokumenty, a także dodawać różne elementy, takie jak obrazy, tabele i hiperłącza. Wykorzystując moc Aspose.Words, możesz usprawnić zarządzanie dokumentami i zautomatyzować generowanie złożonych raportów, umów i nie tylko.
 
 ## Często zadawane pytania
 

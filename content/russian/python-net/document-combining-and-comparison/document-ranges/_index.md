@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Объединение документов
-
-Бесшовное объединение документов — ценный навык. Навигация по документам помогает нам эффективно объединять их:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Разделение документов
 
 Иногда нам может понадобиться разбить документ на более мелкие части. Навигация по документу помогает нам добиться этого:
@@ -117,8 +109,8 @@ for section in sections:
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

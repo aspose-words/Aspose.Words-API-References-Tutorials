@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Bước 2: Tạo một tài liệu mới
 
-Tạo một cái mới`Document` đối tượng sẽ đóng vai trò là nền tảng cho tài liệu Word của bạn.
+ Tạo một cái mới`Document` đối tượng sẽ đóng vai trò là nền tảng cho tài liệu Word của bạn.
 
 ```csharp
 Document doc = new Document();

@@ -16,10 +16,10 @@ Dokumentrevideringar innebär att man spårar ändringar som gjorts i ett dokume
 
 ## Ställa in Aspose.Words för Python
 
- Innan vi börjar, se till att du har Aspose.Words för Python installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/python/). När det är installerat kan du importera de nödvändiga modulerna i ditt Python-skript för att komma igång.
+Innan vi börjar, se till att du har Aspose.Words för Python installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/python/). När det är installerat kan du importera de nödvändiga modulerna i ditt Python-skript för att komma igång.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Ladda och visa ett dokument
@@ -27,7 +27,7 @@ import asposewords
 För att arbeta med ett dokument måste du först ladda det i din Python-applikation. Använd följande kodavsnitt för att ladda ett dokument och visa dess innehåll:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 När några ändringar görs i dokumentet kan Aspose.Words automatiskt spåra dem som revisioner. Om vi till exempel vill ersätta ett specifikt ord kan vi göra det samtidigt som vi håller reda på förändringen:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words låter dig jämföra två dokument för att visualisera skillnaderna mellan dem:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 Samarbetspartner kan lägga till kommentarer och kommentarer till ett dokument. Du kan hantera dessa element programmatiskt:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 Du kan anpassa hur revisioner visas i dokumentet, till exempel att ändra färgen på infogad och raderad text:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Spara och dela dokument
@@ -98,18 +98,11 @@ doc.save("final_document.docx")
 
 Dela det slutliga dokumentet med medarbetare för ytterligare feedback.
 
-## Tips för effektivt samarbete
-
-1. Märk revisioner tydligt med meningsfulla kommentarer.
-2. Kommunicera revisionsriktlinjer till alla medarbetare.
-3. Kontrollera regelbundet och acceptera/avvisa ändringar.
-4. Använd Aspose.Words jämförelsefunktion för omfattande dokumentanalys.
-
 ## Slutsats
 
 Aspose.Words för Python förenklar dokumentrevision och spårning, förbättrar samarbete och säkerställer dokumentintegritet. Med dess kraftfulla funktioner kan du effektivisera processen att granska, acceptera och hantera ändringar i dina dokument.
 
-## Vanliga frågor
+## FAQ's
 
 ### Hur installerar jag Aspose.Words för Python?
 

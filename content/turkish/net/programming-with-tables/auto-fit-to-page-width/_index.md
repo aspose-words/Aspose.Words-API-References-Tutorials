@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-The`Aspose.Words` namespace, Word belgelerini düzenlemek için çekirdek sınıfları içerirken`Aspose.Words.Tables` özellikle tabloların işlenmesi içindir.
+ The`Aspose.Words` namespace, Word belgelerini düzenlemek için çekirdek sınıfları içerirken`Aspose.Words.Tables` özellikle tabloların işlenmesi içindir.
 
 ## Adım 1: Belgenizi Ayarlayın
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- Bu adımda, belgenizin depolandığı yolu tanımlarsınız ve onu bir`Document` nesne. Değiştir`"YOUR DOCUMENT DIRECTORY"`Belgenizin bulunduğu gerçek yol ile.
+ Bu adımda, belgenizin depolandığı yolu tanımlarsınız ve onu bir`Document` nesne. Değiştir`"YOUR DOCUMENT DIRECTORY"` Belgenizin bulunduğu gerçek yol ile.
 
 ## Adım 2: Tabloya Erişim
 
@@ -68,7 +68,7 @@ Artık tablonuz olduğuna göre, otomatik sığdırma işlevini uygulayabilirsin
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-The`AutoFit` yöntem ile`AutoFitBehavior.AutoFitToWindow` tablo genişliğinin sayfanın tüm genişliğine uyacak şekilde ayarlanmasını sağlar.
+ The`AutoFit` yöntem ile`AutoFitBehavior.AutoFitToWindow` tablo genişliğinin sayfanın tüm genişliğine uyacak şekilde ayarlanmasını sağlar.
 
 ## Adım 4: Değiştirilen Belgeyi Kaydedin
 

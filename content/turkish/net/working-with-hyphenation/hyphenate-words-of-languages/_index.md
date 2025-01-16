@@ -9,7 +9,7 @@ url: /tr/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 ## giriiş
 
-Merhaba! Uzun, kesintisiz sözcükler içeren bir belgeyi okumayı denediniz ve beyninizin kasıldığını hissettiniz mi? Hepimiz bunu yaşadık. Ama tahmin edin ne oldu? Tireleme kurtarıcınızdır! .NET için Aspose.Words ile, dil kurallarına göre sözcükleri doğru şekilde tireleyerek belgelerinizin profesyonel görünmesini sağlayabilirsiniz. Bunu sorunsuz bir şekilde nasıl başarabileceğinize bir göz atalım.
+Merhaba! Uzun, kesintisiz sözcükler içeren bir belgeyi okumaya çalışıp beyninizin kasıldığını hissettiniz mi hiç? Hepimiz bunu yaşadık. Ama tahmin edin ne oldu? Tireleme kurtarıcınızdır! .NET için Aspose.Words ile, dil kurallarına göre sözcükleri doğru şekilde tireleyerek belgelerinizin profesyonel görünmesini sağlayabilirsiniz. Bunu sorunsuz bir şekilde nasıl başarabileceğinize bir göz atalım.
 
 ## Ön koşullar
 

@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-Kode ini membagi dokumen berdasarkan jeda halaman dan menyimpan setiap halaman di`pages` daftar.
+ Kode ini membagi dokumen berdasarkan jeda halaman dan menyimpan setiap halaman di`pages` daftar.
 
 ## Menyimpan sebagai HTML
 

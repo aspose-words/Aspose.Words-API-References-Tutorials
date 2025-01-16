@@ -16,10 +16,10 @@ url: /ar/python-net/document-structure-and-content-manipulation/document-revisio
 
 ## إعداد Aspose.Words لـ Python
 
- قبل أن نبدأ، تأكد من تثبيت Aspose.Words for Python. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/python/)بمجرد التثبيت، يمكنك استيراد الوحدات النمطية اللازمة في البرنامج النصي Python الخاص بك للبدء.
+قبل أن نبدأ، تأكد من تثبيت Aspose.Words for Python. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/python/)بمجرد التثبيت، يمكنك استيراد الوحدات النمطية اللازمة في البرنامج النصي Python الخاص بك للبدء.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## تحميل وعرض مستند
@@ -27,7 +27,7 @@ import asposewords
 للعمل مع مستند، تحتاج أولاً إلى تحميله في تطبيق Python الخاص بك. استخدم مقتطف التعليمات البرمجية التالي لتحميل مستند وعرض محتوياته:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 عند إجراء أي تغييرات على المستند، يمكن لبرنامج Aspose.Words تتبعها تلقائيًا باعتبارها مراجعات. على سبيل المثال، إذا أردنا استبدال كلمة معينة، فيمكننا القيام بذلك مع تتبع التغيير:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 يتيح لك Aspose.Words مقارنة مستندين لتوضيح الاختلافات بينهما:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 يمكن للمتعاونين إضافة تعليقات وتوضيحات إلى مستند. يمكنك إدارة هذه العناصر برمجيًا:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 يمكنك تخصيص كيفية ظهور المراجعات في المستند، مثل تغيير لون النص المدرج والمحذوف:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## حفظ المستندات ومشاركتها
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 شارك الوثيقة النهائية مع المتعاونين للحصول على المزيد من الملاحظات.
-
-## نصائح للتعاون الفعال
-
-1. قم بوضع علامة واضحة على المراجعات مع التعليقات ذات المغزى.
-2. قم بإبلاغ إرشادات المراجعة لجميع المتعاونين.
-3. مراجعة المراجعات وقبولها أو رفضها بشكل منتظم.
-4. استخدم ميزة المقارنة في Aspose.Words لإجراء تحليل شامل للمستندات.
 
 ## خاتمة
 

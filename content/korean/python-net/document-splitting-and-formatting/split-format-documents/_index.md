@@ -19,10 +19,10 @@ url: /ko/python-net/document-splitting-and-formatting/split-format-documents/
 첫 번째 단계는 분할하고 서식을 지정하려는 문서를 로드하는 것입니다. 다음 코드 조각을 사용하여 이를 달성합니다.
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## 2단계: 문서를 섹션으로 분할
@@ -41,10 +41,10 @@ sections = document.sections
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## 4단계: 문서 저장
@@ -55,6 +55,12 @@ section.page_setup.bottom_margin = asposewords.pt_to_px(1)
 document.save("path/to/save/updated_document.docx")
 ```
 
+## 결론
+
+Aspose.Words for Python은 필요에 따라 문서를 효율적으로 분할하고 서식을 지정하는 포괄적인 도구 세트를 제공합니다. 이 튜토리얼에 설명된 단계를 따르고 제공된 소스 코드 예제를 활용하면 문서를 원활하게 관리하고 전문적으로 표현할 수 있습니다.
+
+이 튜토리얼에서는 문서 분할, 서식 지정의 기본 사항을 다루었고 일반적인 질문에 대한 솔루션을 제공했습니다. 이제 Aspose.Words for Python의 기능을 탐색하고 실험하여 문서 관리 워크플로를 더욱 향상시킬 차례입니다.
+
 ## 자주 묻는 질문
 
 ### 문서를 여러 파일로 분할하려면 어떻게 해야 하나요?
@@ -62,7 +68,7 @@ document.save("path/to/save/updated_document.docx")
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ for i, section in enumerate(sections):
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### 특정 섹션의 글꼴 스타일을 변경하려면 어떻게 해야 하나요?
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### 문서의 특정 섹션을 제거할 수 있나요?
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## 결론
-Aspose.Words for Python은 필요에 따라 문서를 효율적으로 분할하고 서식을 지정하는 포괄적인 도구 세트를 제공합니다. 이 튜토리얼에 설명된 단계를 따르고 제공된 소스 코드 예제를 활용하면 문서를 원활하게 관리하고 전문적으로 표현할 수 있습니다.
-
-이 튜토리얼에서는 문서 분할, 서식 지정의 기본 사항을 다루었고 일반적인 질문에 대한 솔루션을 제공했습니다. 이제 Aspose.Words for Python의 기능을 탐색하고 실험하여 문서 관리 워크플로를 더욱 향상시킬 차례입니다.

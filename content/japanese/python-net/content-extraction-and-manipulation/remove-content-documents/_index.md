@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## テキストの置き換え
-
-場合によっては、特定のテキストを新しいコンテンツに置き換えたい場合があります。その方法の例を次に示します。
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## 画像の削除
 
 ドキュメントから画像を削除する必要がある場合は、同様の方法を使用できます。まず、画像を特定して削除します。
@@ -92,22 +79,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## 正規表現による検索と置換
-
-正規表現は、コンテンツを検索して置換するための強力な手段を提供します。
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## 特定のコンテンツの抽出

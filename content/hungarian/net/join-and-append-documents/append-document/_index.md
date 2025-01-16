@@ -57,7 +57,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. lépés: A forrásdokumentum hozzáfűzése a céldokumentumhoz
 
-Most jön az izgalmas rész – a forrásdokumentum hozzáfűzése a céldokumentumhoz, miközben az eredeti formázás sértetlen marad.
+Most jön az izgalmas rész – a forrásdokumentum hozzáfűzése a céldokumentumhoz, miközben az eredeti formázást érintetlenül kell hagyni.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -95,8 +95,8 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### 4. Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 
-Támogatást kaphat, ha ellátogat a[Aspose támogatási fórum](https://forum.aspose.com/c/words/8).
+ Támogatást kaphat, ha ellátogat a[Aspose támogatási fórum](https://forum.aspose.com/c/words/8).
 
 ### 5. Csatolhatok különböző formátumú dokumentumokat?
 
-Igen, az Aspose.Words különféle formátumokat támogat, és különféle formátumú dokumentumokat is csatolhat, például DOCX, DOC, RTF stb.
+Igen, az Aspose.Words különféle formátumokat támogat, és különböző formátumú dokumentumokat is csatolhat, például DOCX, DOC, RTF stb.

@@ -37,13 +37,6 @@ Aspose.Words for Java の主な強みの 1 つは、さまざまなドキュメ�
 Document doc = new Document("sample.docx");
 ```
 
-### PDF文書の読み込み
-
-```java
-//PDF文書を読み込む
-Document doc = new Document("sample.pdf");
-```
-
 ## ドキュメントの変更と保存
 
 ドキュメントを読み込むと、単純なテキストの置換から複雑な書式変更まで、さまざまな操作を実行できます。
@@ -71,7 +64,7 @@ Aspose.Words for Java を使用すると、さまざまなドキュメント形�
 Document doc = new Document("sample.docx");
 
 // PDFとして保存
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## 画像と表の取り扱い

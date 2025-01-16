@@ -69,7 +69,7 @@ Console.Write("\nGets the actual bounds of the shape in points: ");
 Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
-IL`GetShapeRenderer` il metodo fornisce un renderer per la forma e`BoundsInPoints` ci fornisce le dimensioni esatte.
+ IL`GetShapeRenderer` il metodo fornisce un renderer per la forma e`BoundsInPoints` ci fornisce le dimensioni esatte.
 
 ## Conclusione
 

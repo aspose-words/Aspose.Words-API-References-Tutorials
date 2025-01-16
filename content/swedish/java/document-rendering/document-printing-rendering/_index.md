@@ -49,7 +49,7 @@ Det är viktigt att rendera dokument när du behöver konvertera dem till olika 
 
 ```java
 // Gör dokumentet till PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Du kan byta ut`SaveFormat.PDF` med önskat format för rendering.

@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-ال`Document` يمثل الكائن مستند Word بأكمله، و`DocumentBuilder` يساعدنا على إضافة المحتوى وتنسيقه.
+ ال`Document` يمثل الكائن مستند Word بأكمله، و`DocumentBuilder` يساعدنا على إضافة المحتوى وتنسيقه.
 
 ## الخطوة 3: تحديد حدود الفقرة
 

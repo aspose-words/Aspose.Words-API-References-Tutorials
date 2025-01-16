@@ -67,7 +67,7 @@ Metni Çıkar
 string text = doc.Range.Text;
 ```
 
-The`Range.Text` property size belgenin aralığında bulunan tüm metni verir. Bu, tüm bölümlerden, üstbilgilerden, altbilgilerden ve ana gövdeden gelen metni içerir.
+ The`Range.Text` property size belgenin aralığında bulunan tüm metni verir. Bu, tüm bölümlerden, üstbilgilerden, altbilgilerden ve ana gövdeden gelen metni içerir.
 
 ## Adım 4: Çıkarılan Metni Görüntüle
 

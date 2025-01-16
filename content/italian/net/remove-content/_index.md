@@ -2,7 +2,7 @@
 title: Documento Word - Come rimuovere il contenuto
 linktitle: Rimuovi contenuto
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come rimuovere efficacemente il contenuto dai documenti Word usando Aspose.Words per .NET. Segui i tutorial passo dopo passo e usa esempi di codice C# per apprendere diverse tecniche di rimozione del contenuto.
+description: Scopri come rimuovere efficacemente i contenuti dai documenti Word usando Aspose.Words per .NET. Segui i tutorial passo dopo passo e usa esempi di codice C# per apprendere diverse tecniche di rimozione dei contenuti.
 type: docs
 weight: 1370
 url: /it/net/remove-content/

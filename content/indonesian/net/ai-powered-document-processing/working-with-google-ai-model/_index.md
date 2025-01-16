@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-Itu`Document` kelas dari Aspose.Words memungkinkan Anda memuat berkas Word ke dalam memori. Pastikan nama berkas sesuai dengan dokumen sebenarnya di direktori Anda, atau Anda akan mengalami galat berkas tidak ditemukan!
+ Itu`Document` kelas dari Aspose.Words memungkinkan Anda memuat berkas Word ke dalam memori. Pastikan nama berkas sesuai dengan dokumen sebenarnya di direktori Anda, atau Anda akan mengalami galat berkas tidak ditemukan!
 
 ## Langkah 3: Mengambil Kunci API
 

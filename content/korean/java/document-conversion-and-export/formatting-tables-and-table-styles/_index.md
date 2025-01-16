@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//이 행의 첫 번째 셀에 더 큰 테두리를 만듭니다.
+// 이 행의 첫 번째 셀에 더 큰 테두리를 만듭니다.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -169,7 +169,7 @@ Aspose.Words for Java는 문서 조작을 위한 광범위한 기능을 제공�
 
 ### 1. 기본 옵션에 포함되지 않은 사용자 정의 표 스타일을 사용할 수 있나요?
 
-네, Aspose.Words for Java를 사용하여 테이블에 사용자 정의 스타일을 정의하고 적용할 수 있습니다.[선적 서류 비치](https://reference.aspose.com/words/java/) 사용자 정의 스타일을 만드는 방법에 대한 자세한 내용은 다음을 참조하세요.
+ 네, Aspose.Words for Java를 사용하여 테이블에 사용자 정의 스타일을 정의하고 적용할 수 있습니다.[선적 서류 비치](https://reference.aspose.com/words/java/) 사용자 정의 스타일을 만드는 방법에 대한 자세한 내용은 다음을 참조하세요.
 
 ### 2. 표에 조건부 서식을 어떻게 적용할 수 있나요?
 

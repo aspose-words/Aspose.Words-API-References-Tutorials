@@ -24,7 +24,7 @@ Aspose.Words for .NET 教學將引導您了解應用程式中 Word 文件的文�
 | [新增導入格式選項](./append-with-import-format-options/) | 使用 Aspose.Words for .NET 輕鬆附加 Word 文檔，透過詳細的逐步指導維護格式。 |
 | [不同的頁面設定](./different-page-setup/) | 了解如何在使用 Aspose.Words for .NET 合併 Word 文件時設定不同的頁面配置。包括逐步指南。 |
 | [加入持續](./join-continuous/) | 了解如何使用 Aspose.Words for .NET 無縫連接兩個 Word 文件。請依照我們的逐步指南進行順利、有效率的文件合併。 |
-| [加入新頁面](./join-new-page/) | 了解如何使用 Aspose.Words for .NET 在 Word 中加入和附加文件。請按照我們的逐步指南進行高效率的文檔合併。 |
+| [加入新頁面](./join-new-page/) | 了解如何使用 Aspose.Words for .NET 在 Word 中加入和追加文件。請按照我們的逐步指南進行高效率的文檔合併。 |
 | [保持來源格式](./keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時保留格式。非常適合希望自動化文件組裝任務的開發人員。 |
 | [將桌子放在一起](./keep-source-together/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 防止表格跨頁面破壞。確保 Word 文件整潔、專業 |
 | [清單保留來源格式](./list-keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時保留格式。本教學提供無縫文件合併的逐步指導。 |

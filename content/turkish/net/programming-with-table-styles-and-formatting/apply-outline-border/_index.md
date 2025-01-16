@@ -129,4 +129,4 @@ Bu becerilerle tablolarınızın görsel sunumunu geliştirebilir, belgelerinizi
  Kesinlikle! Mevcut olan herhangi bir rengi kullanabilirsiniz.`System.Drawing.Color` sınıf.
 
 ### Tabloyu yatay olarak nasıl ortaya hizalarım?  
-The`table.Alignment = TableAlignment.Center;` Koddaki satır tabloyu sayfada yatay olarak ortalar.
+ The`table.Alignment = TableAlignment.Center;` Koddaki satır tabloyu sayfada yatay olarak ortalar.

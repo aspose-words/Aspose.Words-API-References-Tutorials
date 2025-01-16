@@ -82,5 +82,5 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 ### 有没有办法在保存之前预览图像？
 您需要单独实现预览机制，因为 Aspose.Words 不提供内置预览功能。
 
-### 如何获得 Aspose.Words 的临时许可证？
+### 如何获取 Aspose.Words 的临时许可证？
 您可以请求[此处为临时执照](https://purchase.aspose.com/temporary-license/).

@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Etapa 3: Inicializando o DocumentBuilder
 
-O`DocumentBuilder` é como seu pincel. Ele ajuda você a adicionar conteúdo ao seu documento. Vamos inicializá-lo.
+ O`DocumentBuilder` é como seu pincel. Ele ajuda você a adicionar conteúdo ao seu documento. Vamos inicializá-lo.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ Não foi divertido? Com o Aspose.Words para .NET, manipular documentos do Word �
 Aspose.Words for .NET é uma biblioteca poderosa para trabalhar com documentos do Word programaticamente. Ela suporta uma ampla gama de recursos, desde a criação e edição de documentos até a conversão entre diferentes formatos.
 
 ### Posso usar o Aspose.Words gratuitamente?
- Sim, você pode começar com um[teste gratuito](https://releases.aspose.com/) para explorar seus recursos. Para uso a longo prazo, você pode[comprar uma licença](https://purchase.aspose.com/buy).
+Sim, você pode começar com um[teste gratuito](https://releases.aspose.com/) para explorar seus recursos. Para uso a longo prazo, você pode[comprar uma licença](https://purchase.aspose.com/buy).
 
 ### Como obtenho suporte para o Aspose.Words?
  Você pode obter suporte do[Fórum da comunidade Aspose](https://forum.aspose.com/c/words/8). É um ótimo lugar para fazer perguntas e compartilhar suas experiências.

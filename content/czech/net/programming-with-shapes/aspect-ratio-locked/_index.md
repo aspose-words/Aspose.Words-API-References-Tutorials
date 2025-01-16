@@ -15,7 +15,7 @@ Přemýšleli jste někdy, jak zachovat dokonalé proporce obrázků a tvarů v 
 
 Než se ponoříme do kódu, pojďme si projít, co potřebujete, abyste mohli začít:
 
-- Aspose.Words for .NET Library: Musíte mít nainstalovanou Aspose.Words for .NET. Pokud jste to ještě neudělali, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET Library: Musíte mít nainstalovanou Aspose.Words for .NET. Pokud jste to ještě neudělali, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Ujistěte se, že máte nastavené vývojové prostředí .NET. Visual Studio je oblíbenou volbou.
 - Základní znalost C#: Určitá znalost programování v C# bude užitečná.
 

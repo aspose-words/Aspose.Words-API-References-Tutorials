@@ -32,7 +32,7 @@ using Aspose.Words;
 using System.IO;
 ```
 
-The`Aspose.Words` namespace, Word belgelerini işlemek için çekirdek sınıfları içerirken`System.IO` dosya işlemleri için işlevsellik sağlar.
+ The`Aspose.Words` namespace, Word belgelerini işlemek için çekirdek sınıfları içerirken`System.IO` dosya işlemleri için işlevsellik sağlar.
 
 Bir DOCX dosyasını RTF formatına dönüştürme sürecini açık, yönetilebilir adımlara bölelim. Dönüştürmeyi sorunsuz bir şekilde gerçekleştirmek için bu talimatları izleyin.
 

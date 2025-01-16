@@ -12,7 +12,7 @@ I campi e la manipolazione dei dati nei documenti Word possono migliorare notevo
 
 ## Introduzione
 
-I documenti Microsoft Word spesso richiedono contenuti dinamici come date, calcoli o dati da fonti esterne. Aspose.Words for Python fornisce un modo potente per interagire con questi elementi a livello di programmazione.
+documenti Microsoft Word spesso richiedono contenuti dinamici come date, calcoli o dati da fonti esterne. Aspose.Words for Python fornisce un modo potente per interagire con questi elementi a livello di programmazione.
 
 ## Informazioni sui campi del documento Word
 
@@ -23,7 +23,7 @@ I campi sono segnaposto in un documento che visualizzano i dati in modo dinamico
  Per inserire un campo, puoi utilizzare`FieldBuilder` classe. Ad esempio, per inserire un campo data corrente:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -58,18 +58,9 @@ if field:
     field_result = field.result
 ```
 
-## Automatizzare la generazione di documenti con i campi
-
-I campi sono essenziali per la generazione automatizzata di documenti. Puoi popolare i campi con dati provenienti da fonti esterne:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
-```
-
 ## Integrazione dei campi con le origini dati
 
-campi possono essere collegati a fonti di dati esterne come Excel. Ciò consente aggiornamenti in tempo reale dei valori dei campi quando cambia la fonte di dati.
+I campi possono essere collegati a fonti di dati esterne come Excel. Ciò consente aggiornamenti in tempo reale dei valori dei campi quando cambia la fonte di dati.
 
 ```python
 builder.insert_field('LINK Excel.Sheet "path_to_excel_file" "Sheet1!A1"')

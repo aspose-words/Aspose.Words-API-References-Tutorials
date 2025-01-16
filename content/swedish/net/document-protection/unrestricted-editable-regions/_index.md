@@ -16,7 +16,7 @@ Om du någonsin velat skydda ett Word-dokument men ändå tillåta att vissa del
 Innan vi börjar, se till att du har följande:
 
 1.  Aspose.Words för .NET: Ladda ner det om du inte redan har gjort det[här](https://releases.aspose.com/words/net/).
-2.  En giltig Aspose-licens: Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
+2. En giltig Aspose-licens: Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Alla nyare versioner borde fungera bra.
 4. Grundläggande kunskaper om C# och .NET: Detta hjälper dig att följa med i koden.
 

@@ -87,7 +87,7 @@ Um ein nahtloses Erlebnis beim Gestalten von Dokumentkopf- und -fußzeilen zu ge
 
 ### Wie kann ich Kopf- oder Fußzeilen aus bestimmten Abschnitten entfernen?
 
-Sie können Kopf- oder Fußzeilen aus bestimmten Abschnitten entfernen, indem Sie auf das`HeaderFooter` Objekte und deren Inhalt auf null setzen. Beispiel:
+ Sie können Kopf- oder Fußzeilen aus bestimmten Abschnitten entfernen, indem Sie auf das`HeaderFooter` Objekte und deren Inhalt auf null setzen. Beispiel:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Kann ich Kopf- oder Fußzeilen benutzerdefinierte Felder wie Dokumenttitel hinzufügen?
 
-Ja, Sie können benutzerdefinierte Felder zu Kopf- oder Fußzeilen hinzufügen. Erstellen Sie ein`Run` Element und fügen Sie es in den Kopf- oder Fußzeileninhalt ein. Geben Sie den gewünschten Text ein. Passen Sie die Formatierung nach Bedarf an.
+ Ja, Sie können benutzerdefinierte Felder zu Kopf- oder Fußzeilen hinzufügen. Erstellen Sie ein`Run` Element und fügen Sie es in den Kopf- oder Fußzeileninhalt ein. Geben Sie den gewünschten Text ein. Passen Sie die Formatierung nach Bedarf an.
 
 ### Ist Aspose.Words für Java mit verschiedenen Dokumentformaten kompatibel?
 

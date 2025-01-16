@@ -40,7 +40,7 @@ Avec ces espaces de noms importés, vous êtes prêt à commencer à coder !
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-Le`LoadOptions` La classe vous permet de personnaliser la manière dont les documents sont chargés. Ici, nous commençons tout juste à l'utiliser.
+ Le`LoadOptions` La classe vous permet de personnaliser la manière dont les documents sont chargés. Ici, nous commençons tout juste à l'utiliser.
 
 ## Étape 2 : ajouter le japonais comme langue d’édition
 

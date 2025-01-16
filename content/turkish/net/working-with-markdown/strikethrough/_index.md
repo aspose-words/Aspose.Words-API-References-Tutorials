@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## Adım 1: DocumentBuilder'ı başlatın
 
-The`DocumentBuilder` class, Aspose.Words'de belgenize kolaylıkla içerik eklemenizi sağlayan güçlü bir araçtır.
+ The`DocumentBuilder` class, Aspose.Words'de belgenize kolaylıkla içerik eklemenizi sağlayan güçlü bir araçtır.
 
 ```csharp
 // Bir DocumentBuilder başlatın.

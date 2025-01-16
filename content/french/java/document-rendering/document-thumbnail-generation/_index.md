@@ -40,7 +40,7 @@ Maintenant, plongeons dans le processus de génération de vignettes à partir d
 ```java
 // Code Java pour générer une miniature de document
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ La génération de miniatures de documents à l'aide d'Aspose.Words pour Java of
 
 ### Comment installer Aspose.Words pour Java ?
 
- Pour installer Aspose.Words pour Java, visitez la page de téléchargement[ici](https://releases.aspose.com/words/java/)et suivez les instructions d'installation fournies.
+Pour installer Aspose.Words pour Java, visitez la page de téléchargement[ici](https://releases.aspose.com/words/java/)et suivez les instructions d'installation fournies.
 
 ### Puis-je personnaliser la taille de la vignette générée ?
 

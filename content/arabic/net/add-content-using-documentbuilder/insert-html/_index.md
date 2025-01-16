@@ -15,7 +15,7 @@ url: /ar/net/add-content-using-documentbuilder/insert-html/
 
 قبل أن نتعمق في الدليل خطوة بخطوة، دعنا نتأكد من أننا حصلنا على كل ما نحتاجه. إليك قائمة مرجعية سريعة:
 
-1. مكتبة Aspose.Words for .NET: إذا لم تقم بتنزيلها بالفعل، فستحتاج إلى تنزيل مكتبة Aspose.Words for .NET. يمكنك الحصول عليها[هنا](https://releases.aspose.com/words/net/).
+1.  مكتبة Aspose.Words for .NET: إذا لم تقم بتنزيلها بالفعل، فستحتاج إلى تنزيل مكتبة Aspose.Words for .NET. يمكنك الحصول عليها[هنا](https://releases.aspose.com/words/net/).
 2. بيئة التطوير: تأكد من إعداد بيئة تطوير لديك، مثل Visual Studio.
 3. .NET Framework: تأكد من تثبيت .NET Framework على جهازك.
 4. المعرفة الأساسية بلغة C#: القليل من المعرفة بلغة C# سوف يساعدك كثيرًا.
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## الخطوة 3: تهيئة DocumentBuilder
 
-لإدراج HTML، سنحتاج إلى مساعدة`DocumentBuilder` هذه الفئة المفيدة تجعل من السهل إضافة المحتوى إلى مستندنا.
+ لإدراج HTML، سنحتاج إلى مساعدة`DocumentBuilder` هذه الفئة المفيدة تجعل من السهل إضافة المحتوى إلى مستندنا.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -88,7 +88,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 
 لم يكن إدراج HTML في مستند Word بهذه السهولة من قبل، أليس كذلك؟ باستخدام Aspose.Words for .NET، يمكنك المزج بسلاسة بين قوة HTML وتعدد استخدامات مستندات Word. سواء كنت تقوم بأتمتة إنشاء التقارير أو صياغة مستندات بتنسيق جميل، فإن هذه الأداة هي الحل الأمثل لك.
 
-إذا كان لديك أي أسئلة أو تحتاج إلى مزيد من المساعدة، فلا تتردد في الاطلاع على[التوثيق](https://reference.aspose.com/words/net/), [منتديات الدعم](https://forum.aspose.com/c/words/8) أو احصل على نفسك[رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) لإطلاق العنان للإمكانات الكاملة لـ Aspose.Words لـ .NET.
+ إذا كان لديك أي أسئلة أو تحتاج إلى مزيد من المساعدة، فلا تتردد في الاطلاع على[التوثيق](https://reference.aspose.com/words/net/), [منتديات الدعم](https://forum.aspose.com/c/words/8) أو احصل على نفسك[رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) لإطلاق العنان للإمكانات الكاملة لـ Aspose.Words لـ .NET.
 
 برمجة سعيدة!
 
@@ -107,4 +107,4 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
  يمكنك البدء بـ[نسخة تجريبية مجانية](https://releases.aspose.com/) أو الحصول على[رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) للحصول على الميزات الكاملة.
 
 ### أين يمكنني العثور على المزيد من الدروس والأمثلة؟  
-ال[التوثيق](https://reference.aspose.com/words/net/) و[منتديات الدعم](https://forum.aspose.com/c/words/8)تعتبر هذه أماكن رائعة للبدء في الحصول على أدلة أكثر تفصيلاً والحصول على دعم المجتمع.
+ ال[التوثيق](https://reference.aspose.com/words/net/) و[منتديات الدعم](https://forum.aspose.com/c/words/8) تعتبر هذه أماكن رائعة للبدء في الحصول على أدلة أكثر تفصيلاً والحصول على دعم المجتمع.

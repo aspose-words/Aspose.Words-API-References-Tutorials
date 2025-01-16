@@ -15,7 +15,7 @@ Aspose.Words for .NET は、Word ドキュメントをプログラムで処理�
 
 コードに進む前に、すべてが設定されていることを確認しましょう。
 
-1.  Aspose.Words for .NET: Aspose.Words for .NETがインストールされている必要があります。[Aspose リリース ページ](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Aspose.Words for .NETがインストールされている必要があります。[Aspose リリース ページ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio またはその他の C# 開発環境。
 3. C# の基礎知識: C# プログラミングの基礎を理解していると役立ちます。
 

@@ -40,8 +40,6 @@ Python için Aspose.Words'ü kullanarak Word Belgelerindeki yorum özelliklerini
 Python için Aspose.Words'ü kullanarak Word belgelerindeki alanları ve verileri nasıl işleyeceğinizi öğrenin. Dinamik içerik, otomasyon ve daha fazlası için kod örnekleriyle adım adım kılavuz. 
 ### [Word Belgelerinde Yazı Tiplerini ve Metin Stilini Anlama](./document-fonts/)
 Word belgelerinde yazı tipleri ve metin stilinin dünyasını keşfedin. Python için Aspose.Words'ü kullanarak okunabilirliği ve görsel çekiciliği nasıl artıracağınızı öğrenin. Adım adım örneklerle kapsamlı kılavuz.
-### [Word Belgelerinde Dipnot ve Son Notları Keşfetme](./document-footnotes-endnotes/)
-Python için Aspose.Words'ü kullanarak Word belgelerinde dipnot ve son notları etkili bir şekilde nasıl kullanacağınızı keşfedin. Bu öğeleri programatik olarak eklemeyi, özelleştirmeyi ve yönetmeyi öğrenin. 
 ### [Word Belgelerinde Form Alanları ve Veri Yakalama Konusunda Uzmanlaşma](./document-form-fields/)
 Aspose.Words for Python ile Word belgelerinde form alanları oluşturma ve yönetme sanatında ustalaşın. Verileri verimli bir şekilde yakalamayı ve kullanıcı etkileşimini geliştirmeyi öğrenin. 
 ### [Word Belgelerinde Başlık ve Alt Bilgileri Düzenleme](./document-headers-footers/)
@@ -52,8 +50,6 @@ Aspose.Words for Python kullanarak Word belgelerinde tireleme ve metin akışın
 Aspose.Words Python API'sini kullanarak Word belgelerinde listelerin nasıl oluşturulacağını ve yönetileceğini öğrenin. Liste biçimlendirme, özelleştirme, iç içe yerleştirme ve daha fazlası için kaynak kodlu adım adım kılavuz. 
 ### [Word Belgelerinde Markdown Biçimlendirmesini Kullanma](./document-markdown/)
 Python için Aspose.Words'ü kullanarak Markdown biçimlendirmesini Word belgelerine nasıl entegre edeceğinizi öğrenin. Dinamik ve görsel olarak çekici içerik oluşturma için kod örnekleriyle adım adım kılavuz. 
-### [Belge Düğümlerini Anlama ve Gezinme](./document-nodes/)
-Python için Aspose.Words kullanarak Word belgelerini düzenlemeyi öğrenin. Bu adım adım kılavuz yükleme, biçimlendirme, tablolar, resimler ve daha fazlasını kapsar. Belge işleme becerilerinizi bugün artırın!
 ### [Word Belgelerine OLE Nesneleri ve ActiveX Denetimleri Yerleştirme](./document-ole-objects-active-x/)
  Python için Aspose.Words'ü kullanarak Word belgelerine OLE nesnelerini ve ActiveX denetimlerini nasıl yerleştireceğinizi öğrenin. Etkileşimli ve dinamik belgeleri sorunsuz bir şekilde oluşturun.
 ### [Word Belgelerinde Paragraf ve Metin Biçimlendirme](./document-paragraphs/)
@@ -65,4 +61,4 @@ Aspose.Words for Python ile belge bölümlerini ve düzenlerini nasıl yönetece
 ### [Word Belgelerinde Metin Kutularıyla Görsel İçeriği Geliştirme](./document-textboxes/)
 Aspose.Words Python kullanarak belge görsellerini geliştirin! Word belgelerinde metin kutularının nasıl oluşturulacağını ve özelleştirileceğini adım adım öğrenin. İlgi çekici belgeler için içerik düzenini, biçimlendirmeyi ve stilini yükseltin.
 ### [Word Belgelerinde VBA Makrolarıyla Gelişmiş Otomasyonun Kilidini Açma](./document-vba-macros/)
-Aspose.Words Python API ve VBA makrolarını kullanarak Word belgelerinde gelişmiş otomasyonun kilidini açın. Kaynak kodu ve SSS ile adım adım öğrenin. Şimdi üretkenliği artırın. Erişim[Bağlantı].
+ Aspose.Words Python API ve VBA makrolarını kullanarak Word belgelerinde gelişmiş otomasyonun kilidini açın. Kaynak kodu ve SSS ile adım adım öğrenin. Şimdi üretkenliği artırın. Erişim[Bağlantı].

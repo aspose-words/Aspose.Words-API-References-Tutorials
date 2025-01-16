@@ -38,7 +38,7 @@ Tiếp theo, chúng ta sẽ tạo một lệnh in để in tài liệu đã tả
 ```java
 // Tạo lệnh in để in tài liệu của chúng ta.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Khởi tạo tập thuộc tính với số trang trong tài liệu.
+// Khởi tạo tập thuộc tính với số trang trong tài liệu.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Truyền cài đặt máy in cùng với các thông số khác vào tài liệu in.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Tạo lệnh in để in tài liệu của chúng ta.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Khởi tạo tập thuộc tính với số trang trong tài liệu.
+// Khởi tạo tập thuộc tính với số trang trong tài liệu.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Truyền cài đặt máy in cùng với các thông số khác vào tài liệu in.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Chỉ mục bắt đầu và kết thúc của trang được xác định trong tập thuộc tính.
+        //Chỉ mục bắt đầu và kết thúc của trang được xác định trong tập thuộc tính.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Chọn số trang cuối cùng sẽ được in trên tờ giấy này.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Lặp qua các trang đã chọn từ trang hiện tại được lưu trữ để tính toán
+        // Lặp qua các trang đã chọn từ trang hiện tại được lưu trữ để tính toán
         // trang cuối cùng.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Tính chỉ số cột và chỉ số hàng.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // Giá trị trả về hữu ích là tỷ lệ hiển thị của trang.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Vẽ đường viền trang (hình thu nhỏ của trang có thể nhỏ hơn hình thu nhỏ
+                //Vẽ đường viền trang (hình thu nhỏ của trang có thể nhỏ hơn hình thu nhỏ
                 // kích thước chỗ giữ chỗ).
                 if (mPrintPageBorders) {
                     // Nhận được kích thước thực 100% của trang theo điểm.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Xác định số lượng cột và hàng trên trang tính cho
-        //Giấy theo chiều ngang.
+        // Giấy theo chiều ngang.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ Xin chúc mừng! Bạn đã in thành công một tài liệu Word bằng Aspos
 
 ### Câu hỏi 1: Tôi có thể in các trang cụ thể của tài liệu bằng Aspose.Words cho Java không?
 
- Có, bạn có thể chỉ định phạm vi trang khi in tài liệu. Trong ví dụ mã, chúng tôi đã sử dụng`attributes.add(new PageRanges(1, doc.getPageCount()))` để in tất cả các trang. Bạn có thể điều chỉnh phạm vi trang khi cần.
+ Có, bạn có thể chỉ định phạm vi trang khi in tài liệu. Trong ví dụ mã, chúng tôi đã sử dụng`attributes.add(new PageRanges(1, doc.getPageCount()))`để in tất cả các trang. Bạn có thể điều chỉnh phạm vi trang khi cần.
 
 ### Câu hỏi 2: Aspose.Words cho Java có phù hợp để in hàng loạt không?
 

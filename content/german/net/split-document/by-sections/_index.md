@@ -86,7 +86,7 @@ Abschließend speichern wir jedes neue Dokument unter einem eindeutigen Namen. D
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-Der`Save` Die Methode speichert das neue Dokument im angegebenen Verzeichnis unter einem eindeutigen Namen basierend auf dem Abschnittsindex.
+ Der`Save` Die Methode speichert das neue Dokument im angegebenen Verzeichnis unter einem eindeutigen Namen basierend auf dem Abschnittsindex.
 
 ## Abschluss
 

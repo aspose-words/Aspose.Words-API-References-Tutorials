@@ -7,87 +7,99 @@ type: docs
 weight: 12
 url: /ja/java/document-splitting/document-page-separation/
 ---
+## 導入
 
-今日のデジタル時代では、ドキュメントの管理と操作は企業にとっても個人にとっても不可欠なタスクです。Aspose.Words for Java は、Java 開発者が Word ドキュメントをシームレスに操作するための強力なソリューションを提供します。一般的な要件の 1 つは、ドキュメント ページの分離です。これは、1 つのドキュメントを複数のページまたはセクションに分割することを意味します。このステップ バイ ステップ ガイドでは、Aspose.Words for Java を使用してドキュメント ページの分離を実現する方法について説明します。
+大きな Word 文書を苦労せずに個別のページに分割する方法を考えたことはありませんか? 大きなレポートや原稿があり、各ページを個別のファイルとして必要としていると想像してください。面倒に思えますか? もう面倒ではありません! Aspose.Words for Java を使用すると、このタスクをわずか数ステップで自動化できます。この記事では、プロセス全体をステップごとに説明します。では、コーヒーを 1 杯用意して、早速始めましょう!
 
-## 前提条件
 
-コードに進む前に、次の前提条件が満たされていることを確認してください。
+## 前提条件  
 
-- Java開発キット（JDK）がインストールされている
--  Aspose.Words for Javaライブラリ（以下からダウンロードできます）[ここ](https://releases.aspose.com/words/java/）)
-- 選択した統合開発環境 (IDE) (Eclipse、IntelliJ IDEA など)
+始める前に、すべてが整っていることを確認しましょう。  
 
-## Java プロジェクトの設定
+1.  Aspose.Words for Java: ライブラリをダウンロード[ここ](https://releases.aspose.com/words/java/).  
+2. Java 開発環境: 任意の Java IDE (IntelliJ IDEA、Eclipse など) をインストールし、Java が構成されていることを確認します。  
+3. 分割する文書: Word文書（例：`Big document.docx`）処理の準備ができました。  
+4.  Asposeライセンス（オプション）：全機能のロックを解除するには、ライセンスが必要になる場合があります。[一時ライセンス](https://purchase.aspose.com/temporary-license/)必要であれば。  
 
-1. 新しい Java プロジェクトを作成します。
 
-   まず、お好みの IDE で新しい Java プロジェクトを作成します。
+## パッケージのインポート  
 
-2. Aspose.Words ライブラリを追加します。
-
-   Aspose.Words for Java ライブラリをプロジェクトに追加します。これを行うには、プロジェクトのビルド パスに JAR ファイルを含めます。
-
-## ステップ1: ドキュメントを読み込む
-
-まず、ページに分割したいドキュメントを読み込む必要があります。手順は次のとおりです。
+まず、必要なパッケージを Java プロジェクトにインポートする必要があります。定型コードは次のとおりです。  
 
 ```java
-//ドキュメントを読み込む
-Document doc = new Document("path/to/your/document.docx");
-```
+import com.aspose.words.Document;
+import java.text.MessageFormat;
+import java.io.IOException;
+```  
 
-交換する`"path/to/your/document.docx"` Word 文書への実際のパスを入力します。
 
-## ステップ2: ドキュメントをページに分割する
+## ステップ1: ドキュメントを読み込む  
 
-次に、読み込まれたドキュメントを個別のページに分割してみましょう。Aspose.Words では、これを簡単に実現できます。
-
-```java
-//文書をページに分割する
-DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
-List<Document> pages = splitter.splitIntoPages();
-```
-
-の`pages`リストには、それぞれが元のドキュメントの 1 ページを表す個別のドキュメントが含まれるようになります。
-
-## ステップ3: ページを保存する
-
-プロセスを完了するには、各ページを個別のドキュメントとして保存します。
+まず、分割したい文書をロードしましょう。これは、ファイルの場所を指定して、`Document`クラス。  
 
 ```java
-for (int i = 0; i < pages.size(); i++) {
-    Document page = pages.get(i);
-    page.save("path/to/save/page_" + (i + 1) + ".docx");
+String dataDir = "Your/Document/Directory/";
+Document doc = new Document(dataDir + "Big document.docx");
+```  
+
+- 交換する`"Your/Document/Directory/"`ドキュメント ディレクトリへのパスを入力します。  
+- `"Big document.docx"`個別のページに分割するファイルです。  
+
+
+## ステップ2: 総ページ数を取得する  
+
+ドキュメントが読み込まれたら、そのドキュメントに含まれるページ数を決定する必要があります。これは、`getPageCount`方法。  
+
+```java
+int pageCount = doc.getPageCount();
+```  
+
+- `getPageCount` Word 文書の合計ページ数を取得します。  
+- 結果は`pageCount`さらなる処理のための変数。  
+
+
+## ステップ3: 各ページをループする  
+
+各ページを区切るには、ループを使用します。ロジックは次のとおりです。  
+
+```java
+for (int page = 0; page < pageCount; page++) {
+    //各ページを抽出して保存します。
+    Document extractedPage = doc.extractPages(page, 1);
+    extractedPage.save(dataDir + MessageFormat.format("SplitDocument.PageByPage_{0}.docx", page + 1));
 }
-```
+```  
 
-このコードスニペットは各ページを次のようなファイル名で保存します。`page_1.docx`, `page_2.docx`、 等々。
+1. ページをループする:  
+   - ループは`0`に`pageCount - 1`(Java ではゼロベースのインデックスが使用されます)。  
 
-## 結論
+2. ページを抽出:  
+   - の`extractPages`メソッドは現在のページを分離します（`page` ）を新しい`Document`物体。  
+   - 2番目のパラメータ`1`抽出するページ数を指定します。  
 
-このステップバイステップ ガイドでは、Aspose.Words for Java を使用してドキュメントを個別のページに分割する方法を学びました。これは、大きなドキュメントを扱う場合や、さらに処理するために特定のページを抽出する必要がある場合に非常に便利です。
+3. 各ページを保存:  
+   - の`save`メソッドは抽出されたページを新しいファイルに書き込みます。  
+   - `MessageFormat.format`各ファイルに動的に名前を付ける`SplitDocument.PageByPage_1.docx`, `SplitDocument.PageByPage_2.docx`、 等々。  
 
-Aspose.Words for Java を使用すると、Java 開発者にとってドキュメント操作が簡単になります。このチュートリアルでは、ページ分離タスクを効率的に実行するための強固な基盤が提供されます。
 
-## よくある質問
+## 結論  
 
-### ページ分離プロセスをカスタマイズするにはどうすればよいですか?
+大きな Word 文書からページを分割するのは、これまでになく簡単になりました。Aspose.Words for Java を使用すると、このタスクを数分で完了できます。レポート、契約書、電子書籍など、どのような管理でも、このソリューションは頼りになるツールです。今すぐ始めましょう。プロのように文書を分割しましょう。  
 
-ドキュメントを分割するためのページ区切りや特定の段落などのさまざまな基準を指定して、ページ分割プロセスをカスタマイズできます。
 
-### Aspose.Words は DOCX 以外のドキュメント形式もサポートしていますか?
+## よくある質問  
 
-はい、Aspose.Words は DOC、RTF、HTML など、さまざまなドキュメント形式をサポートしています。
+### Aspose.Words for Java とは何ですか?  
+これはWord文書をプログラム的に管理するための強力なライブラリです。詳細については、[ドキュメント](https://reference.aspose.com/words/java/).  
 
-### Aspose.Words for Java は無料で使用できますか?
+### ライセンスなしで Aspose.Words を使用できますか?  
+はい、ただし制限があります。完全な機能を利用するには、[無料トライアル](https://releases.aspose.com/)またはライセンスを購入する[ここ](https://purchase.aspose.com/buy).  
 
-Aspose.Words for Java は商用ライブラリですが、無料試用版も提供されています。価格の詳細とライセンス情報については、同社の Web サイトをご覧ください。
+### どのようなファイル形式がサポートされていますか?  
+ Aspose.WordsはDOCX、DOC、PDF、HTMLなどさまざまな形式をサポートしています。[ドキュメント](https://reference.aspose.com/words/java/)詳細については。  
 
-### 分離されたページを 1 つのドキュメントに結合し直すことはできますか?
+### ドキュメントに画像や表が含まれている場合はどうなりますか?  
+の`extractPages`この方法では、画像、表、書式設定など、すべてのコンテンツが保持されます。  
 
-はい、Aspose.Words for Java を使用して、分離されたページを 1 つのドキュメントに結合し直すことができます。結合手順については、ドキュメントを参照してください。
-
-### Aspose.Words のその他のリソースや例はどこで見つかりますか?
-
- Aspose.Words for Javaのドキュメントをご覧ください[ここ](https://reference.aspose.com/words/java/)詳細な例、API リファレンス、チュートリアルについては、こちらをご覧ください。
+### PDF などの他のファイルタイプを分割できますか?  
+いいえ、このチュートリアルは Word 文書に焦点を当てています。PDF 分割には Aspose.PDF を使用してください。  

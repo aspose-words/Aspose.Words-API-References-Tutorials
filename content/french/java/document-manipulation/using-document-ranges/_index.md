@@ -73,4 +73,4 @@ Absolument ! Les plages de documents sont pratiques pour extraire du texte de pa
 
 ### Où puis-je trouver la bibliothèque Aspose.Words pour Java ?
 
- Vous pouvez télécharger la bibliothèque Aspose.Words pour Java à partir du site Web d'Aspose[ici](https://releases.aspose.com/words/java/).
+ Vous pouvez télécharger la bibliothèque Aspose.Words pour Java à partir du site Web Aspose[ici](https://releases.aspose.com/words/java/).

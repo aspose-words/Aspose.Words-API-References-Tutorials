@@ -18,7 +18,7 @@ Ebben az útmutatóban megvizsgáljuk, hogyan lehet érzékeny információkat t
 
 Mielőtt elkezdenénk dolgozni az Aspose.Words for Java-val, be kell állítanunk a fejlesztői környezetünket. Kövesse az alábbi lépéseket:
 
-1.  Az Aspose.Words for Java letöltése és telepítése: Látogassa meg[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) az Aspose.Words for Java legújabb verziójának letöltéséhez.
+1.  Az Aspose.Words for Java letöltése és telepítése: Látogassa meg[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)az Aspose.Words for Java legújabb verziójának letöltéséhez.
 
 2. Az Aspose.Words integrálása a projektjébe: Adja hozzá az Aspose.Words JAR fájlokat a Java projekthez.
 

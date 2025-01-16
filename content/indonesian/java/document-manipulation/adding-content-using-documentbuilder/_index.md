@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Mulai tabel
+//Mulai tabel
 Table table = builder.startTable();
 
 // Sisipkan sel dan konten

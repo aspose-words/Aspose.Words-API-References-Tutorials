@@ -10,7 +10,7 @@ url: /sv/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 ## Introduktion till avancerade sök- och ersätt-tekniker i Word-dokument
 
-I dagens digitala värld är arbetet med dokument en grundläggande uppgift. Speciellt Word-dokument används i stor utsträckning för olika ändamål, från att skapa rapporter till att skriva viktiga brev. Ett vanligt krav när man arbetar med dokument är behovet av att hitta och ersätta specifik text eller formatering i hela dokumentet. Den här artikeln guidar dig genom avancerade sök- och ersättningstekniker i Word-dokument med Aspose.Words för Python API.
+dagens digitala värld är arbetet med dokument en grundläggande uppgift. Speciellt Word-dokument används i stor utsträckning för olika ändamål, från att skapa rapporter till att skriva viktiga brev. Ett vanligt krav när man arbetar med dokument är behovet av att hitta och ersätta specifik text eller formatering i hela dokumentet. Den här artikeln guidar dig genom avancerade sök- och ersättningstekniker i Word-dokument med Aspose.Words för Python API.
 
 ## Förutsättningar
 
@@ -18,7 +18,7 @@ Innan vi dyker in i de avancerade teknikerna, se till att du har följande föru
 
 1.  Python-installation: Se till att Python är installerat på ditt system. Du kan ladda ner den från[här](https://www.python.org/downloads/).
 
-2. Aspose.Words för Python: Du måste ha Aspose.Words för Python installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/python/).
+2.  Aspose.Words för Python: Du måste ha Aspose.Words för Python installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/python/).
 
 3. Dokumentförberedelse: Ha ett Word-dokument redo som du vill utföra sök- och ersättningsoperationer på.
 
@@ -118,4 +118,4 @@ Ja, du kan använda jokertecken och reguljära uttryck för att utföra avancera
 
 ### Kan jag ersätta text samtidigt som jag håller reda på de ändringar som gjorts?
 
- Ja, du kan spåra ändringar genom att använda`revision` funktion i Aspose.Words. Det låter dig hålla reda på alla ändringar som gjorts i dokumentet.
+ Ja, du kan spåra ändringar genom att använda`revision`funktion i Aspose.Words. Det låter dig hålla reda på alla ändringar som gjorts i dokumentet.

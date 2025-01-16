@@ -89,7 +89,7 @@ Ano, Aspose.Words for Java podporuje širokou škálu formátů dokumentů, vče
 
 ### Q3: Jsou k dispozici nějaké možnosti licencování pro Aspose.Words for Java?
 
- Ano, můžete prozkoumat možnosti licencování a zakoupit Aspose.Words for Java na[Aspose webové stránky](https://purchase.aspose.com/buy).
+Ano, můžete prozkoumat možnosti licencování a zakoupit Aspose.Words for Java na[Aspose webové stránky](https://purchase.aspose.com/buy).
 
 ### Q4: Mohu vyzkoušet Aspose.Words for Java před nákupem?
 
@@ -97,6 +97,6 @@ Ano, Aspose.Words for Java podporuje širokou škálu formátů dokumentů, vče
 
 ### Otázka 5: Kde mohu vyhledat podporu nebo se zeptat na otázky týkající se Aspose.Words for Java?
 
- případě jakýchkoli dotazů nebo podpory navštivte stránku[Aspose.Words for Java forum](https://forum.aspose.com/).
+ V případě jakýchkoli dotazů nebo podpory navštivte stránku[Aspose.Words for Java forum](https://forum.aspose.com/).
 
 Nyní, když jste zvládli vykreslování tvarů pomocí Aspose.Words for Java, jste připraveni využít plný potenciál tohoto všestranného rozhraní API ve svých projektech zpracování dokumentů. Šťastné kódování!

@@ -52,7 +52,7 @@ Most töltsük be azt a Word-dokumentumot, amelyet PDF-be szeretne konvertálni.
 
 ### Határozza meg a dokumentumkönyvtárat
 
-Először adja meg azt a könyvtárat, ahol a Word-dokumentum található.
+Először adja meg a könyvtárat, ahol a Word-dokumentum található.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

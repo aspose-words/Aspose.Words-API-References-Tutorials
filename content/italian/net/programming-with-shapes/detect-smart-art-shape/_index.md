@@ -98,7 +98,7 @@ Aspose.Words per .NET è una potente libreria che consente agli sviluppatori di 
 
 ### 4. Come posso ottenere supporto per Aspose.Words per .NET?
 
-Puoi ottenere supporto visitando il[Forum di supporto Aspose](https://forum.aspose.com/c/words/8).
+ Puoi ottenere supporto visitando il[Forum di supporto Aspose](https://forum.aspose.com/c/words/8).
 
 ### 5. Posso manipolare le forme SmartArt a livello di programmazione?
 

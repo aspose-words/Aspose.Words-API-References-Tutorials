@@ -105,8 +105,6 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 يتيح لك Aspose.Words تخصيص مظهر المستندات المحولة. يمكنك تطبيق خيارات التنسيق مثل أنماط الخطوط والألوان والمحاذاة والتباعد بين الفقرات.
 
-#### مثال:
-
 ```python
 # Python code for applying formatting during conversion
 import aspose.words as aw
@@ -128,8 +126,6 @@ doc.save("formatted_output.pdf", aw.SaveFormat.PDF)
 ### التعامل مع الصور والجداول
 
 يتيح لك Aspose.Words التعامل مع الصور والجداول أثناء عملية التحويل. يمكنك استخراج الصور وتغيير حجمها ومعالجة الجداول للحفاظ على بنية المستند.
-
-#### مثال:
 
 ```python
 # Python code for handling images and tables during conversion
@@ -156,8 +152,6 @@ doc.save("modified_output.pdf", aw.SaveFormat.PDF)
 
 باستخدام Aspose.Words، يمكنك ضمان عرض الخطوط بشكل متسق وإدارة تخطيط المستندات المحولة. تعد هذه الميزة مفيدة بشكل خاص عند الحفاظ على اتساق المستندات عبر التنسيقات المختلفة.
 
-#### مثال:
-
 ```python
 # Python code for managing fonts and layout during conversion
 import aspose.words as aw
@@ -178,8 +172,6 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ### كتابة نصوص Python للأتمتة
 
 تجعل قدرات البرمجة النصية في Python خيارًا ممتازًا لأتمتة المهام المتكررة. يمكنك كتابة نصوص Python لإجراء تحويل دفعي للمستندات، مما يوفر الوقت والجهد.
-
-#### مثال:
 
 ```python
 # Python script for batch document conversion
@@ -205,11 +197,7 @@ for filename in input_files:
 
 ### تحويل دفعات من المستندات
 
-بواسطة
-
- من خلال الجمع بين قوة Python وAspose.Words، يمكنك أتمتة التحويل الجماعي للمستندات، مما يعزز الإنتاجية والكفاءة.
-
-#### مثال:
+من خلال الجمع بين قوة Python وAspose.Words، يمكنك أتمتة التحويل الجماعي للمستندات، مما يعزز الإنتاجية والكفاءة.
 
 ```python
 # Python script for batch document conversion using Aspose.Words
@@ -238,14 +226,6 @@ for filename in input_files:
     output_filename = filename.replace(file_ext, ".pdf" if file_ext == ".docx" else ".docx")
     doc.save(os.path.join(output_dir, output_filename))
 ```
-## مزايا استخدام Aspose.Words لـ Python
-
-يوفر Aspose.Words for Python العديد من المزايا، بما في ذلك:
-
-- قدرات تحويل المستندات القوية
-- مجموعة غنية من الميزات لمعالجة المستندات
-- التكامل السهل مع تطبيقات Python
-- دعم مستمر وتحديثات من مجتمع مزدهر
 
 ## خاتمة
 

@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## Formato de texto básico
 
- Dar formato al texto dentro de un documento de Word es esencial para enfatizar puntos importantes y mejorar la legibilidad. Aspose.Words le permite aplicar varias opciones de formato, como**bold**, *italic*, subrayado y tamaño de fuente:
+Dar formato al texto de un documento de Word es fundamental para destacar puntos importantes y mejorar la legibilidad. Aspose.Words le permite aplicar varias opciones de formato, como negrita, cursiva, subrayado y tamaño de fuente:
 
 ```python
 # Apply basic text formatting
@@ -172,8 +172,6 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 ## Conclusión
 
 En esta guía completa, exploramos las capacidades de Aspose.Words para Python para dar formato a párrafos y texto dentro de documentos de Word. Al usar esta potente biblioteca, los desarrolladores pueden automatizar sin problemas el formato de los documentos, lo que garantiza una apariencia profesional y pulida para su contenido.
-
----
 
 ## Preguntas frecuentes
 

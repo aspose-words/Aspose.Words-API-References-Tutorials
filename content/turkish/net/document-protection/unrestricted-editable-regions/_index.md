@@ -16,7 +16,7 @@ Bir Word belgesini korumak ama yine de belirli kısımların düzenlenebilir olm
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 1.  Aspose.Words for .NET: Henüz yapmadıysanız indirin[Burada](https://releases.aspose.com/words/net/).
-2.  Geçerli bir Aspose lisansı: Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+2. Geçerli bir Aspose lisansı: Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Güncel herhangi bir sürüm sorunsuz çalışır.
 4. Temel C# ve .NET bilgisi: Bu, kodu takip etmenize yardımcı olacaktır.
 

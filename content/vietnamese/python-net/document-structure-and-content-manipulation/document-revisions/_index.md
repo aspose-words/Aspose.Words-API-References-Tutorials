@@ -16,10 +16,10 @@ Sửa đổi tài liệu liên quan đến việc theo dõi các thay đổi đ�
 
 ## Thiết lập Aspose.Words cho Python
 
- Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt Aspose.Words for Python. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/python/). Sau khi cài đặt, bạn có thể nhập các mô-đun cần thiết vào tập lệnh Python của mình để bắt đầu.
+Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt Aspose.Words for Python. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/python/). Sau khi cài đặt, bạn có thể nhập các mô-đun cần thiết vào tập lệnh Python của mình để bắt đầu.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Tải và Hiển thị Tài liệu
@@ -27,7 +27,7 @@ import asposewords
 Để làm việc với một tài liệu, trước tiên bạn cần tải nó vào ứng dụng Python của mình. Sử dụng đoạn mã sau để tải một tài liệu và hiển thị nội dung của nó:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 Khi có bất kỳ thay đổi nào được thực hiện đối với tài liệu, Aspose.Words có thể tự động theo dõi chúng dưới dạng bản sửa đổi. Ví dụ, nếu chúng ta muốn thay thế một từ cụ thể, chúng ta có thể thực hiện trong khi vẫn theo dõi thay đổi:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words cho phép bạn so sánh hai tài liệu để hình dung sự khác biệt giữa chúng:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 Người cộng tác có thể thêm bình luận và chú thích vào tài liệu. Bạn có thể quản lý các thành phần này theo chương trình:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 Bạn có thể tùy chỉnh cách hiển thị các bản sửa đổi trong tài liệu, chẳng hạn như thay đổi màu của văn bản đã chèn và đã xóa:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Lưu và chia sẻ tài liệu
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 Chia sẻ tài liệu cuối cùng với những người cộng tác để có thêm phản hồi.
-
-## Mẹo để hợp tác hiệu quả
-
-1. Ghi chú rõ ràng các bản sửa đổi bằng các bình luận có ý nghĩa.
-2. Truyền đạt hướng dẫn sửa đổi cho tất cả cộng tác viên.
-3. Thường xuyên xem xét và chấp nhận/từ chối các bản sửa đổi.
-4. Sử dụng tính năng so sánh của Aspose.Words để phân tích tài liệu toàn diện.
 
 ## Phần kết luận
 

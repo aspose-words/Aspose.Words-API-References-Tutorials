@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 在圖表中成功勾選了多行標籤對齊。透過執行這些步驟，您可以輕鬆自訂圖表以滿足您的特定需求。無論您是準備專業報告還是只是進行實驗，Aspose.Words for .NET 都提供了完成工作的靈活性和功能。快樂編碼！
+現在你就擁有了！您已使用 Aspose.Words for .NET 在圖表中成功勾選了多行標籤對齊。透過執行這些步驟，您可以輕鬆自訂圖表以滿足您的特定需求。無論您是準備專業報告還是只是進行實驗，Aspose.Words for .NET 都提供了完成工作的靈活性和強大功能。快樂編碼！
 
 ## 常見問題解答
 

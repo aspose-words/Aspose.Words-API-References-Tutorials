@@ -43,7 +43,7 @@ doc.startTrackRevisions("Author Name");
 
 ## Fase 3: revisione delle modifiche
 
-membri del team possono rivedere le modifiche apportate al documento e fornire commenti o suggerimenti. Aspose.Words for Java consente di accedere a livello di programmazione ed elaborare questi commenti.
+I membri del team possono rivedere le modifiche apportate al documento e fornire commenti o suggerimenti. Aspose.Words for Java consente di accedere a livello di programmazione ed elaborare questi commenti.
 
 ## Revisione del documento
 
@@ -70,7 +70,7 @@ La collaborazione e la revisione dei documenti sono aspetti critici della modern
 
 ### Posso tenere traccia delle modifiche nei documenti Word utilizzando Aspose.Words per Java?
 
-Sì, Aspose.Words per Java consente di tenere traccia delle modifiche nei documenti Word. È possibile utilizzare`startTrackRevisions` metodo per abilitare il monitoraggio delle modifiche.
+ Sì, Aspose.Words per Java consente di tenere traccia delle modifiche nei documenti Word. È possibile utilizzare`startTrackRevisions` metodo per abilitare il monitoraggio delle modifiche.
 
 ### Come posso rivedere le modifiche apportate a un documento?
 

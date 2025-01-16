@@ -44,10 +44,7 @@ for (Revision revision : doc.getRevisions()) {
 
 ```java
 // قبول كافة المراجعات
-doc.acceptAllRevisions();
-
-// قبول مراجعة محددة حسب الفهرس
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## رفض التغييرات
@@ -56,10 +53,7 @@ doc.acceptRevision(0);
 
 ```java
 // رفض كافة المراجعات
-doc.rejectAllRevisions();
-
-// رفض مراجعة محددة حسب الفهرس
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## حفظ المستند

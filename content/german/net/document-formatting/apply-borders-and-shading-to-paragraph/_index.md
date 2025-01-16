@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Der`Document` Objekt repräsentiert unser gesamtes Word-Dokument, und das`DocumentBuilder` hilft uns, Inhalte hinzuzufügen und zu formatieren.
+ Der`Document` Objekt repräsentiert unser gesamtes Word-Dokument, und das`DocumentBuilder` hilft uns, Inhalte hinzuzufügen und zu formatieren.
 
 ## Schritt 3: Absatzränder definieren
 

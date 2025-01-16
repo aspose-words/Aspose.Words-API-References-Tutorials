@@ -347,7 +347,7 @@ Ano, v Aspose.Words for Java můžete použít regulární výrazy pro nahrazen�
 
 ### Jak mohu při výměně ignorovat text uvnitř polí?
 
-Chcete-li ignorovat text uvnitř polí během nahrazování, můžete nastavit`IgnoreFields` vlastnictví`FindReplaceOptions` na`true`. To zajistí, že text v polích, jako jsou slučovací pole, bude vyloučen z nahrazování.
+Chcete-li ignorovat text uvnitř polí během nahrazování, můžete nastavit`IgnoreFields` vlastnictvím`FindReplaceOptions` na`true`. To zajistí, že text v polích, jako jsou slučovací pole, bude vyloučen z nahrazování.
 
 ### Mohu nahradit text uvnitř záhlaví a zápatí?
 
@@ -355,4 +355,4 @@ Chcete-li ignorovat text uvnitř polí během nahrazování, můžete nastavit`I
 
 ### K čemu slouží možnost UseLegacyOrder?
 
-The`UseLegacyOrder` možnost v`FindReplaceOptions` umožňuje použít starší pořadí při provádění operací hledání a nahrazování. To může být užitečné v určitých scénářích, kde je požadováno chování starší objednávky.
+ The`UseLegacyOrder` možnost v`FindReplaceOptions` umožňuje použít starší pořadí při provádění operací hledání a nahrazování. To může být užitečné v určitých scénářích, kde je požadováno chování starší objednávky.

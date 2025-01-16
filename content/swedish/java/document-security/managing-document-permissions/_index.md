@@ -16,7 +16,7 @@ dagens digitala värld är dokumenthantering en kritisk aspekt av varje organisa
 
 Innan vi dyker in i att hantera dokumentbehörigheter, låt oss börja med att ställa in Aspose.Words för Java. Följ dessa steg för att komma igång:
 
-1.  Ladda ner Aspose.Words för Java: Besök[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) för att ladda ner den senaste versionen av Aspose.Words för Java.
+1.  Ladda ner Aspose.Words för Java: Besök[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)för att ladda ner den senaste versionen av Aspose.Words för Java.
 
 2. Installera Aspose.Words för Java: Efter att ha laddat ner biblioteket, följ installationsinstruktionerna för att ställa in det i din Java-utvecklingsmiljö.
 
@@ -52,21 +52,12 @@ Här är ett exempel på Java-kodavsnitt för att ställa in dokumentbehörighet
 // Ladda dokumentet
 Document doc = new Document("sample.docx");
 
-// Definiera åtkomstkontroll
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Tillämpa dokumentskydd
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Spara dokumentet
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Vanliga frågor (FAQs)
+## FAQ's
 
-## Hur tar jag bort dokumentskyddet?
+### Hur tar jag bort dokumentskyddet?
 
 För att ta bort dokumentskyddet öppnar du helt enkelt det skyddade dokumentet och om det är lösenordsskyddat anger du rätt lösenord. Använd sedan Aspose.Words för Java för att ta bort skyddet enligt följande:
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Kan jag ställa in behörigheter för specifika användare?
+### Kan jag ställa in behörigheter för specifika användare?
 
 Ja, Aspose.Words för Java låter dig ställa in behörigheter för specifika användare eller grupper. Du kan definiera vem som kan komma åt och redigera dokumentet.
 
-## Är det möjligt att kryptera ett dokument med flera lösenord?
+### Är det möjligt att kryptera ett dokument med flera lösenord?
 
 Nej, Aspose.Words för Java stöder kryptering med ett lösenord. Du kan ställa in ett lösenord för att skydda dokumentet.
 
-## Hur kan jag kontrollera behörigheterna för ett dokument?
+### Hur kan jag kontrollera behörigheterna för ett dokument?
 
 Du kan använda Aspose.Words för Java för att kontrollera behörigheterna för ett dokument genom att undersöka dess skyddsinställningar och åtkomstkontrollalternativ.
 
-## Kan jag automatisera dokumentbehörighetshantering?
+### Kan jag automatisera dokumentbehörighetshantering?
 
 Absolut! Du kan integrera Aspose.Words för Java i dina applikationer för att automatisera dokumentbehörighetshantering, vilket gör det till en sömlös del av ditt dokumentarbetsflöde.
 
-## Vad händer om jag glömmer dokumentlösenordet?
+### Vad händer om jag glömmer dokumentlösenordet?
 
 Om du glömmer dokumentlösenordet finns det inget sätt att återställa det. Se till att förvara dina lösenord på en säker plats.
 

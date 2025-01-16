@@ -18,7 +18,7 @@ Antes de mergulharmos nas técnicas avançadas, certifique-se de ter os seguinte
 
 1.  Instalação do Python: Certifique-se de que o Python esteja instalado no seu sistema. Você pode baixá-lo em[aqui](https://www.python.org/downloads/).
 
-2. Aspose.Words para Python: Você precisa ter o Aspose.Words para Python instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/).
+2.  Aspose.Words para Python: Você precisa ter o Aspose.Words para Python instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/).
 
 3. Preparação do documento: tenha um documento do Word pronto no qual você deseja executar operações de localização e substituição.
 
@@ -118,4 +118,4 @@ Sim, você pode usar curingas e expressões regulares para executar operações 
 
 ### Posso substituir texto e ainda manter o controle das alterações feitas?
 
- Sim, você pode rastrear alterações usando o`revision` recurso do Aspose.Words. Ele permite que você acompanhe todas as modificações feitas no documento.
+ Sim, você pode rastrear alterações usando o`revision`recurso do Aspose.Words. Ele permite que você acompanhe todas as modificações feitas no documento.

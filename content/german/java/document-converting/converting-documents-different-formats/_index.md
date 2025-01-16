@@ -47,7 +47,7 @@ Jetzt ist es an der Zeit, das geladene Dokument in das gewählte Ausgabeformat z
 
 ```java
 // Konvertieren Sie das Dokument in PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Abschluss

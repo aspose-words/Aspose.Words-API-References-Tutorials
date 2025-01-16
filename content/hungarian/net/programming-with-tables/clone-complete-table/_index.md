@@ -73,7 +73,7 @@ Ez a kódrészlet feltételezi, hogy a dokumentum első tábláját szeretné kl
 Table tableClone = (Table) table.Clone(true);
 ```
 
-A`true` paraméter biztosítja, hogy a klón tartalmazza az eredeti tábla összes formázását és tartalmát.
+ A`true` paraméter biztosítja, hogy a klón tartalmazza az eredeti tábla összes formázását és tartalmát.
 
 ## 5. lépés: Helyezze be a klónozott táblázatot a dokumentumba
 
@@ -115,7 +115,7 @@ Word-dokumentumok táblázatainak klónozása az Aspose.Words for .NET használa
 Igen, több táblát is klónozhat úgy, hogy a dokumentumban minden egyes táblán végigfut, és ugyanazt a klónozási logikát alkalmazza.
 
 ### Mi van, ha a táblázat egyesített cellákat tartalmaz?
-A`Clone` metódus megőrzi az összes formázást, beleértve az egyesített cellákat is, így biztosítva a táblázat pontos másolatát.
+ A`Clone` metódus megőrzi az összes formázást, beleértve az egyesített cellákat is, így biztosítva a táblázat pontos másolatát.
 
 ### Hogyan klónozhatok egy adott táblát név szerint?
 A táblázatokat egyéni tulajdonságok vagy egyedi tartalom alapján azonosíthatja, majd hasonló lépésekkel klónozhatja a kívánt táblát.

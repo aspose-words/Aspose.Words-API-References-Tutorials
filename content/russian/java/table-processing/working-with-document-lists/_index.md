@@ -38,23 +38,11 @@ Aspose.Words для Java — это надежный API, который поз�
 // Импортировать необходимые пакеты
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Инициализировать новый документ
-        Document doc = new Document();
-
-        // Создать список
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Добавить элементы списка
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Сохранить документ
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Изменение списка документов
@@ -69,21 +57,18 @@ public class DocumentListExample {
 Вот фрагмент кода для изменения списка документов:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Загрузить существующий документ
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Доступ к списку
-        List list = doc.getLists().get(0);
-
-        // Добавить новый элемент
-        list.getListItems().add("New Item");
-
-        // Сохраните измененный документ.
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Проверьте, является ли абзац частью списка.
+    if (paragraph.isListItem()) {
+        // Обновите последний абзац списка.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Извлечение информации из списка документов
@@ -97,23 +82,21 @@ public class ModifyDocumentListExample {
 Вот фрагмент кода для извлечения информации из списка документов:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Загрузить документ
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Доступ к списку
-        List list = doc.getLists().get(0);
-
-        // Перебрать элементы списка и распечатать их
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Часто задаваемые вопросы (FAQ)
+## Заключение
+
+В этом всеобъемлющем руководстве мы изучили мир работы со списками документов с помощью Aspose.Words для Java. Вы узнали, как создавать, изменять и извлекать информацию из списков документов, и все это с помощью мощи и гибкости Aspose.Words для Java. Начните внедрять эти методы в свои проекты Java сегодня и оптимизируйте свои задачи по автоматизации документов.
+
+
+## Часто задаваемые вопросы
 
 ### Как добавить маркеры в список документов?
  Чтобы добавить маркеры в список документов, используйте соответствующий ListTemplate при создании списка. Например, используйте`ListTemplate.BULLET_DEFAULT` вместо`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ public class ExtractListItemsExample {
 
 ### Поддерживает ли Aspose.Words для Java работу с таблицами в документах?
 Да, Aspose.Words для Java обеспечивает расширенную поддержку работы с таблицами, позволяя вам без труда создавать, изменять и извлекать табличные данные.
-
-## Заключение
-
-В этом всеобъемлющем руководстве мы изучили мир работы со списками документов с помощью Aspose.Words для Java. Вы узнали, как создавать, изменять и извлекать информацию из списков документов, и все это с помощью мощи и гибкости Aspose.Words для Java. Начните внедрять эти методы в свои проекты Java сегодня и оптимизируйте свои задачи по автоматизации документов.

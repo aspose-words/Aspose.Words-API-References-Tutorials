@@ -130,7 +130,7 @@ Ed ecco fatto! Hai creato con successo una nuova riga di firma e impostato l'ID 
 ## Domande frequenti
 
 ### Posso personalizzare l'aspetto della riga della firma?
-Assolutamente! Puoi modificare varie opzioni in`SignatureLineOptions` per soddisfare le tue esigenze.
+ Assolutamente! Puoi modificare varie opzioni in`SignatureLineOptions`per soddisfare le tue esigenze.
 
 ### Cosa succede se non ho un certificato PFX?
 Dovrai ottenerne uno da un'autorità di certificazione attendibile. È essenziale per la firma digitale dei documenti.

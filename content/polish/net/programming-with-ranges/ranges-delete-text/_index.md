@@ -61,7 +61,7 @@ Po załadowaniu dokumentu możemy przystąpić do usuwania tekstu z określonego
 2.  Usuń zakres: Użyj`Range.Delete` metoda umożliwiająca usunięcie całego tekstu w tej sekcji.
 
 ```csharp
-//Usuń tekst w pierwszej sekcji dokumentu
+// Usuń tekst w pierwszej sekcji dokumentu
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Aspose.Words for .NET to biblioteka klas do przetwarzania dokumentów Word. Umo�
 
 ### Czy mogę usunąć tekst z konkretnego akapitu zamiast z całej sekcji?
 
-Tak, możesz usunąć tekst z określonego akapitu, uzyskując do niego dostęp i używając`Range.Delete` metoda.
+ Tak, możesz usunąć tekst z określonego akapitu, uzyskując do niego dostęp i używając`Range.Delete` metoda.
 
 ### Czy można warunkowo usunąć tekst?
 

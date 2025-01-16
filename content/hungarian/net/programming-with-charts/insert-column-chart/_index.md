@@ -50,7 +50,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 3. lépés: Adjon hozzá adatokat a diagramhoz
+## 3. lépés: Adatok hozzáadása a diagramhoz
 
  Adjon hozzá adatsorokat a diagramhoz a`Series` tulajdona a`Chart` objektum.
 

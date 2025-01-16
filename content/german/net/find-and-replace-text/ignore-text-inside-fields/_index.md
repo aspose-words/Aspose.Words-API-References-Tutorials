@@ -31,7 +31,7 @@ using System.Text.RegularExpressions;
 
 ## Schritt 1: Neues Dokument und Builder erstellen
 
- Initialisieren Sie zunächst ein neues Word-Dokument und ein`DocumentBuilder`Objekt zur Erleichterung der Dokumenterstellung:
+ Initialisieren Sie zunächst ein neues Word-Dokument und ein`DocumentBuilder` Objekt zur Erleichterung der Dokumenterstellung:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);

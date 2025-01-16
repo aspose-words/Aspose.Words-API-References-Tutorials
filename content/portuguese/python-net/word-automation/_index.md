@@ -9,7 +9,7 @@ url: /pt/python-net/word-automation/
 ---
 ## Tutoriais de automação de palavras usando Aspose.Words para Python
 
-automação de palavras é um divisor de águas no gerenciamento de documentos e no processamento de documentos de palavras. O Aspose.Words para Python oferece tutoriais abrangentes sobre automação de palavras, capacitando desenvolvedores a simplificar tarefas de criação, modificação e formatação de documentos programaticamente.
+A automação de palavras é um divisor de águas no gerenciamento de documentos e no processamento de documentos de palavras. O Aspose.Words para Python oferece tutoriais abrangentes sobre automação de palavras, capacitando desenvolvedores a simplificar tarefas de criação, modificação e formatação de documentos programaticamente.
 
 ## Dominando a automação de palavras em Python
 

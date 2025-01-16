@@ -19,7 +19,7 @@ url: /el/net/add-content-using-documentbuilder/build-table/
 - .NET Framework (4.0 ή νεότερη έκδοση)
 - Aspose.Words για βιβλιοθήκη .NET
 
- Εάν δεν έχετε ακόμα το Aspose.Words, μπορείτε εύκολα[κατεβάστε το εδώ](https://releases.aspose.com/words/net/) . Μπορείτε επίσης να ξεκινήσετε με ένα[δωρεάν δοκιμή](https://releases.aspose.com/) αν θέλετε να δοκιμάσετε τα νερά. Για όσους είναι έτοιμοι να κάνουν το βήμα, μπορείτε[αγοράστε μια άδεια](https://purchase.aspose.com/buy) , ή αν χρειάζεστε περισσότερο χρόνο για αξιολόγηση, πάρτε το α[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/).
+ Εάν δεν έχετε ακόμα το Aspose.Words, μπορείτε εύκολα[κατεβάστε το εδώ](https://releases.aspose.com/words/net/) . Μπορείτε επίσης να ξεκινήσετε με ένα[δωρεάν δοκιμή](https://releases.aspose.com/) αν θέλετε να δοκιμάσετε τα νερά. Για όσους είναι έτοιμοι να κάνουν το βήμα, μπορείτε[αγοράστε μια άδεια](https://purchase.aspose.com/buy) ή αν χρειάζεστε περισσότερο χρόνο για αξιολόγηση, πάρτε το α[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/).
 
 ## Εισαγωγή χώρων ονομάτων
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Με τη χρήση`StartTable` λέμε στο Aspose.Words ότι πρόκειται να δημιουργήσουμε έναν πίνακα. Ο`InsertCell` μέθοδος προσθέτει το πρώτο κελί και`AutoFit` διασφαλίζει ότι οι στήλες μας έχουν σταθερά πλάτη.
+ Με τη χρήση`StartTable` , λέμε στο Aspose.Words ότι πρόκειται να δημιουργήσουμε έναν πίνακα. Ο`InsertCell` μέθοδος προσθέτει το πρώτο κελί και`AutoFit` διασφαλίζει ότι οι στήλες μας έχουν σταθερά πλάτη.
 
 ## Βήμα 3: Μορφοποιήστε την πρώτη σειρά
 
@@ -125,7 +125,7 @@ doc.Save("YourDirectoryPath/AddContentUsingDocumentBuilder.BuildTable.docx");
 Το Aspose.Words for .NET είναι μια ισχυρή βιβλιοθήκη για την εργασία με έγγραφα του Word μέσω προγραμματισμού. Σας επιτρέπει να δημιουργείτε, να επεξεργάζεστε και να χειρίζεστε έγγραφα χωρίς να χρειάζεστε το Microsoft Word.
 
 ### Πώς μπορώ να εγκαταστήσω το Aspose.Words για .NET;
- Μπορείτε[κατεβάστε το Aspose.Words για .NET εδώ](https://releases.aspose.com/words/net/). Ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται για να το εγκαταστήσετε στο περιβάλλον ανάπτυξης σας.
+ Μπορείτε[κατεβάστε το Aspose.Words για .NET εδώ](https://releases.aspose.com/words/net/)Ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται για να το εγκαταστήσετε στο περιβάλλον ανάπτυξης σας.
 
 ### Μπορώ να χρησιμοποιήσω το Aspose.Words δωρεάν;
  Aspose.Words προσφέρει α[δωρεάν δοκιμή](https://releases.aspose.com/) ώστε να μπορείτε να δοκιμάσετε τα χαρακτηριστικά του. Για εκτεταμένη χρήση, μπορείτε να αγοράσετε μια άδεια ή να αποκτήσετε μια[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/).

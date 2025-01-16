@@ -9,7 +9,7 @@ url: /hu/net/working-with-section/delete-section/
 ---
 ## Bevezetés
 
-Tehát úgy döntött, hogy belemerül a dokumentumkezelés világába az Aspose.Words for .NET használatával. Fantasztikus választás! Az Aspose.Words egy nagy teljesítményű könyvtár a Word dokumentumokkal kapcsolatos összes dolog kezeléséhez. Legyen szó létrehozásról, módosításról vagy átalakításról, az Aspose.Words mindenre kiterjed. Ebben az útmutatóban végigvezetjük, hogyan törölhet szakaszt egy Word-dokumentumból. Készen állsz, hogy Aspose profi legyen? Kezdjük is!
+Tehát úgy döntött, hogy belemerül a dokumentumkezelés világába az Aspose.Words for .NET használatával. Fantasztikus választás! Az Aspose.Words egy nagy teljesítményű könyvtár a Word dokumentumokkal kapcsolatos összes dolog kezeléséhez. Legyen szó létrehozásról, módosításról vagy átalakításról, az Aspose.Words mindenre kiterjed. Ebben az útmutatóban végigvezetjük, hogyan törölhet szakaszt egy Word-dokumentumból. Készen állsz, hogy Aspose profi legyél? Kezdjük is!
 
 ## Előfeltételek
 

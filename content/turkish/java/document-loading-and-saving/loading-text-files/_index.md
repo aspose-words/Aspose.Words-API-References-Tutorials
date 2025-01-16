@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-// Dördüncü liste, liste numarası ile liste öğesi içerikleri arasında boşluk bulunan,
+//Dördüncü liste, liste numarası ile liste öğesi içerikleri arasında boşluk bulunan,
 // yalnızca bir LoadOptions nesnesindeki "DetectNumberingWithWhitespaces" true olarak ayarlandığında bir liste olarak algılanacaktır,
 // sayılarla başlayan paragrafların yanlışlıkla liste olarak algılanmasını önlemek için.
 TxtLoadOptions loadOptions = new TxtLoadOptions();
@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
-Bu örnekte, bir metin belgesi yüklüyoruz ve öndeki ve arkadaki boşlukları kullanarak kırpıyoruz`TxtLeadingSpacesOptions.TRIM` Ve`TxtTrailingSpacesOptions.TRIM`.
+ Bu örnekte, bir metin belgesi yüklüyoruz ve öndeki ve arkadaki boşlukları kullanarak kırpıyoruz`TxtLeadingSpacesOptions.TRIM` Ve`TxtTrailingSpacesOptions.TRIM`.
 
 ## Adım 3: Metin Yönünü Kontrol Etme
 
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-Bu kod belge yönünü otomatik algılamaya ayarlar (`DocumentDirection.AUTO`) ve İbranice metin içeren bir metin belgesi yükler. Belge yönünü gerektiği gibi ayarlayabilirsiniz.
+Bu kod belge yönünü otomatik algılamaya ayarlar (`DocumentDirection.AUTO`ve İbranice metin içeren bir metin belgesi yükler. Belge yönünü gerektiği gibi ayarlayabilirsiniz.
 
 ## Java için Aspose.Words ile Metin Dosyalarını Yüklemek İçin Tam Kaynak Kodu
 
@@ -179,7 +179,7 @@ Aspose.Words for Java'yı kullanmaya başlamak için şu adımları izleyin:
 
 ### Yüklenen metin belgelerindeki boşlukları nasıl hallederim?
 
- Yüklenen metin belgelerinde öndeki ve arkadaki boşlukların nasıl işleneceğini kontrol etmek için şunu kullanabilirsiniz:`TxtLoadOptions` . Gibi seçenekler`TxtLeadingSpacesOptions` Ve`TxtTrailingSpacesOptions` ihtiyaç duyduğunuzda alanları kırpmanıza veya korumanıza olanak tanır. Bir örnek için bu kılavuzdaki "Alanları Yönetme Seçenekleri" bölümüne bakın.
+ Yüklenen metin belgelerinde öndeki ve arkadaki boşlukların nasıl işleneceğini kontrol etmek için şunu kullanabilirsiniz:`TxtLoadOptions` . Gibi seçenekler`TxtLeadingSpacesOptions` Ve`TxtTrailingSpacesOptions`ihtiyaç duyduğunuzda alanları kırpmanıza veya korumanıza olanak tanır. Bir örnek için bu kılavuzdaki "Alanları Yönetme Seçenekleri" bölümüne bakın.
 
 ### Aspose.Words for Java'da metin yönünün önemi nedir?
 

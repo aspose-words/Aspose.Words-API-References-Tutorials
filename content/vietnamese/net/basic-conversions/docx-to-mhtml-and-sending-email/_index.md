@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Bước 4: Gửi Email
 
-Cuối cùng, gửi email bằng máy khách SMTP. Cấu hình máy khách SMTP với thông tin chi tiết về máy chủ SMTP của bạn và sử dụng`Send` phương pháp gửi tin nhắn.
+ Cuối cùng, gửi email bằng máy khách SMTP. Cấu hình máy khách SMTP với thông tin chi tiết về máy chủ SMTP của bạn và sử dụng`Send` phương pháp gửi tin nhắn.
 
 ```csharp
 // Gửi tin nhắn bằng Aspose.Email.
@@ -95,7 +95,7 @@ Có, Aspose.Words hỗ trợ nhiều định dạng khác nhau và bạn có th�
 Có, Aspose.Words tương thích với .NET Core. Bạn cũng có thể sử dụng nó trong các ứng dụng .NET Core.
 
 ### Tôi có cần giấy phép sử dụng Aspose.Words và Aspose.Email không?
-Có, cả hai thư viện đều yêu cầu giấy phép. Bạn có thể nhận được giấy phép tạm thời từ[Trang mua hàng Aspose](https://purchase.aspose.com/temporary-license/) cho mục đích đánh giá.
+ Có, cả hai thư viện đều yêu cầu giấy phép. Bạn có thể nhận được giấy phép tạm thời từ[Trang mua hàng Aspose](https://purchase.aspose.com/temporary-license/) cho mục đích đánh giá.
 
 ### Tôi có thể tìm thêm tài liệu ở đâu?
  Bạn có thể tìm thấy tài liệu chi tiết về Aspose.Words[đây](https://reference.aspose.com/words/net/) và cho Aspose.Email[đây](https://reference.aspose.com/email/net/).

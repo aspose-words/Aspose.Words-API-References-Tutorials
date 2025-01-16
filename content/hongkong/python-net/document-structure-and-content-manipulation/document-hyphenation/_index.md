@@ -21,7 +21,7 @@ url: /zh-hant/python-net/document-structure-and-content-manipulation/document-hy
 
 ## 控制連字符
 
-### 手動連字
+### 手動連字符
 
 在某些情況下，您可能需要手動控制單字的中斷位置以實現特定的設計或強調。這可以透過在所需的斷點處插入連字符來完成。
 

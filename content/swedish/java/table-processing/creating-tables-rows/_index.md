@@ -44,7 +44,7 @@ public class TableCreation {
 }
 ```
 
-I det här kodavsnittet skapar vi en enkel tabell med 3 rader och 3 kolumner och fyller varje cell med texten "Exempeltext."
+det här kodavsnittet skapar vi en enkel tabell med 3 rader och 3 kolumner och fyller varje cell med texten "Exempeltext."
 
 ### Lägga till rubriker i tabellen
 Att lägga till rubriker i din tabell är ofta nödvändigt för bättre organisation. Så här kan du uppnå det:

@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Ahora que hemos cargado nuestro documento, procedamos a aplicarle el cifrado. Aspose.Words para Java ofrece una forma sencilla de configurar el cifrado de documentos:
 
 ```java
-// Establecer una contraseña para abrir el documento
-doc.getWriteProtection().setPassword("yourPassword");
-
-// Establecer algoritmo de cifrado (opcional)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// Guardar el documento cifrado
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. Protección de elementos específicos del documento
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 En ocasiones, es posible que solo desee proteger partes específicas de su documento, como encabezados, pies de página o determinados párrafos. Aspose.Words le permite lograr este nivel de granularidad en la protección de documentos:
 
 ```java
-// Proteger una sección específica (Protección de solo lectura)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// Proteger un párrafo específico (Permitir que sólo se editen los campos del formulario)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// Guardar el documento protegido
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//Los rangos editables nos permiten dejar partes de documentos protegidos abiertas para su edición.
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. Aplicación de firmas digitales
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 Agregar firmas digitales a su documento puede garantizar su autenticidad e integridad. A continuación, le mostramos cómo aplicar una firma digital con Aspose.Words para Java:
 
 ```java
-// Cargar el archivo del certificado
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// Firmar el documento con el certificado
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// Crea un comentario, una fecha y una contraseña de descifrado que se aplicará con nuestra nueva firma digital.
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// Guardar el documento firmado
-doc.save("path/to/signed/document.docx");
+// Establezca un nombre de archivo de sistema local para el documento de entrada sin firmar y un nombre de archivo de salida para su nueva copia firmada digitalmente.
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. Cómo poner marcas de agua en sus documentos
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. Redacción de información confidencial
 
-Al compartir documentos, es posible que desee eliminar de forma permanente la información confidencial para asegurarse de que no caiga en manos equivocadas. Aspose.Words para Java le permite redactar contenido confidencial:
-
-```java
-// Buscar y redactar información confidencial
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// Aplicar redacciones
-doc.redact(options);
-
-// Guardar el documento redactado
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. Conversión de documentos seguros a otros formatos
+## 10. Conversión de documentos seguros a otros formatos
 
 Aspose.Words para Java también le permite convertir sus documentos protegidos a varios formatos, como PDF o HTML:
 
 ```java
-// Cargar el documento protegido
+//Cargar el documento protegido
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // Convertir a PDF
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // Convertir a HTML
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. Mejores prácticas para la seguridad de los documentos
-
-Para garantizar una seguridad sólida de los documentos, siga estas prácticas recomendadas:
-
-- Actualice periódicamente sus medidas de seguridad para mantenerse a la vanguardia de las amenazas potenciales.
-- Utilice contraseñas seguras y algoritmos de cifrado.
-- Limite el acceso a documentos confidenciales según la necesidad.
-- Capacitar a los empleados para reconocer y responder a los riesgos de seguridad.
-
-## 13. Prueba de seguridad de documentos
-
-Después de aplicar medidas de seguridad, pruebe exhaustivamente sus documentos para asegurarse de que permanezcan seguros en diversas situaciones. Intente eludir los controles de seguridad para identificar posibles vulnerabilidades.
-
-## 14. Conclusión
+## Conclusión
 
 En esta guía paso a paso, exploramos la importancia de la seguridad de los documentos y cómo Aspose.Words para Java puede ayudar a proteger sus documentos del acceso no autorizado. Al aprovechar las funciones de la biblioteca, como la protección con contraseña, el cifrado, las firmas digitales, las marcas de agua y la redacción, puede asegurarse de que sus documentos permanezcan seguros y protegidos.
 
 ## Preguntas frecuentes
 
 ### ¿Puedo utilizar Aspose.Words para Java en proyectos comerciales?
-   Sí, Aspose.Words para Java se puede utilizar en proyectos comerciales bajo el modelo de licencia por desarrollador.
+Sí, Aspose.Words para Java se puede utilizar en proyectos comerciales bajo el modelo de licencia por desarrollador.
 
 ### ¿Aspose.Words admite otros formatos de documentos además de Word?
-   Sí, Aspose.Words admite una amplia gama de formatos, incluidos PDF, HTML, EPUB y más.
+Sí, Aspose.Words admite una amplia gama de formatos, incluidos PDF, HTML, EPUB y más.
 
 ### ¿Es posible agregar múltiples firmas digitales a un documento?
-   Sí, Aspose.Words le permite agregar múltiples firmas digitales a un documento.
+Sí, Aspose.Words le permite agregar múltiples firmas digitales a un documento.
 
 ### ¿Aspose.Words admite la recuperación de contraseñas de documentos?
-   No, Aspose.Words no ofrece funciones de recuperación de contraseñas. Asegúrese de mantener sus contraseñas seguras.
+No, Aspose.Words no ofrece funciones de recuperación de contraseñas. Asegúrese de mantener sus contraseñas seguras.
 
 ### ¿Puedo personalizar la apariencia de las marcas de agua?
-   Sí, puedes personalizar completamente la apariencia de las marcas de agua, incluido el texto, la fuente, el color, el tamaño y la rotación.
+Sí, puedes personalizar completamente la apariencia de las marcas de agua, incluido el texto, la fuente, el color, el tamaño y la rotación.

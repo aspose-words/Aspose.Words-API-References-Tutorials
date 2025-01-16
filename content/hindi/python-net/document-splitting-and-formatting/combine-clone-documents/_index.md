@@ -11,7 +11,7 @@ url: /hi/python-net/document-splitting-and-formatting/combine-clone-documents/
 
 ## Aspose.Words स्थापित करना
 
-इससे पहले कि हम विवरण में उतरें, आपको Python के लिए Aspose.Words सेट अप करना होगा। आप इसे निम्न लिंक का उपयोग करके डाउनलोड और इंस्टॉल कर सकते हैं:[पायथन के लिए Aspose.Words डाउनलोड करें](https://releases.aspose.com/words/python/). 
+ इससे पहले कि हम विवरण में उतरें, आपको Python के लिए Aspose.Words सेट अप करना होगा। आप इसे निम्न लिंक का उपयोग करके डाउनलोड और इंस्टॉल कर सकते हैं:[पायथन के लिए Aspose.Words डाउनलोड करें](https://releases.aspose.com/words/python/). 
 
 ## दस्तावेज़ों का संयोजन
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## उन्नत तकनीकें
-
-### पाठ बदलना
-
-Aspose.Words आपको दस्तावेज़ों में आसानी से पाठ ढूंढने और बदलने की अनुमति देता है:
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### स्वरूपण संशोधित करना
+## स्वरूपण संशोधित करना
 
 आप Aspose.Words का उपयोग करके स्वरूपण को भी संशोधित कर सकते हैं:
 
@@ -127,7 +108,7 @@ Aspose.Words for Python एक बहुमुखी लाइब्रेरी
  उपयोग करें`range.replace()` पाठ को कुशलतापूर्वक खोजने और बदलने के लिए उपयुक्त विकल्पों के साथ विधि।
 
 ### क्या Aspose.Words स्वरूपण संशोधन का समर्थन करता है?
-बिल्कुल, आप इस तरह के तरीकों का उपयोग करके स्वरूपण को संशोधित कर सकते हैं`run.font.size` और`run.font.bold`.
+ बिल्कुल, आप इस तरह के तरीकों का उपयोग करके स्वरूपण को संशोधित कर सकते हैं`run.font.size` और`run.font.bold`.
 
 ### मैं Aspose.Words दस्तावेज़ कहाँ से प्राप्त कर सकता हूँ?
  आप यहां विस्तृत दस्तावेज पा सकते हैं[पायथन API संदर्भ के लिए Aspose.Words](https://reference.aspose.com/words/python-net/).

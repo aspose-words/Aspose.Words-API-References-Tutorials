@@ -44,10 +44,7 @@ for (Revision revision : doc.getRevisions()) {
 
 ```java
 // ยอมรับการแก้ไขทั้งหมด
-doc.acceptAllRevisions();
-
-// ยอมรับการแก้ไขเฉพาะตามดัชนี
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## การปฏิเสธการเปลี่ยนแปลง
@@ -56,10 +53,7 @@ doc.acceptRevision(0);
 
 ```java
 // ปฏิเสธการแก้ไขทั้งหมด
-doc.rejectAllRevisions();
-
-// ปฏิเสธการแก้ไขเฉพาะโดยดัชนี
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## การบันทึกเอกสาร

@@ -63,7 +63,7 @@ Body body = section.Body;
 TableCollection tables = body.Tables;
 ```
 
-## 第 5 步：遍歷表格
+## 第 5 步：迭代表
 
 我們有表格，但是如果我們想操縱它們怎麼辦？迭代是關鍵。讓我們循環遍歷每個表。
 

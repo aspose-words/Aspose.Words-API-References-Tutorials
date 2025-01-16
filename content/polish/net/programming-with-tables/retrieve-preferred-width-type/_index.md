@@ -69,7 +69,7 @@ Aby mieć pewność, że kolumny tabeli zostaną automatycznie dopasowane, nale�
 table.AllowAutoFit = true;
 ```
 
- Ustawienie`AllowAutoFit` Do`true` zapewnia, że kolumny tabeli zmieniają rozmiar na podstawie ich zawartości, nadając tabeli dynamiczny charakter.
+ Ustawienie`AllowAutoFit` Do`true` zapewnia, że kolumny tabeli zmieniają rozmiar na podstawie ich zawartości, nadając naszej tabeli dynamiczny charakter.
 
 ## Krok 5: Pobierz preferowany typ szerokości pierwszej komórki
 

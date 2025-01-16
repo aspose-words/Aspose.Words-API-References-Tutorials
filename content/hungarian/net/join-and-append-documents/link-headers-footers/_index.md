@@ -92,4 +92,4 @@ Az Aspose.Words támogatja a .NET-keretrendszer és a .NET Core különféle ver
 Igen, leválaszthatja a fejléceket és a lábléceket az Aspose.Words API metódusaival az egyedi dokumentumformázás visszaállításához.
 
 ### Hol találhatok részletesebb dokumentációt az Aspose.Words for .NET-ről?
- Látogatás[Aspose.Words a .NET-dokumentációhoz](https://reference.aspose.com/words/net/)átfogó útmutatókért és API-referenciákért.
+ Látogatás[Aspose.Words a .NET-dokumentációhoz](https://reference.aspose.com/words/net/) átfogó útmutatókért és API-referenciákért.

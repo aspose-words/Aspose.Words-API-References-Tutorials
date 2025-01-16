@@ -50,7 +50,7 @@ Le tabelle sono costruite usando la classe Table in Aspose.Words. Per creare una
 
 ```python
 # Create a table with 3 rows and 4 columns
-table = doc.tables.add(3, 4)
+table = doc.get_child(aw.NodeType.TABLE, 0, True).as_table()
 
 # Set preferred width for the table
 table.preferred_width = doc.page_width
@@ -104,7 +104,7 @@ table.description = "Figures are in USD."
 
 ## Design reattivo per tabelle:
 
-Nei documenti con layout variabili, il design della tabella responsive diventa cruciale. Regolare le larghezze delle colonne e le altezze delle celle in base allo spazio disponibile assicura che la tabella rimanga leggibile e visivamente accattivante.
+Nei documenti con layout variabili, il design reattivo della tabella diventa cruciale. Regolare le larghezze delle colonne e le altezze delle celle in base allo spazio disponibile assicura che la tabella rimanga leggibile e visivamente accattivante.
 
 ```python
 # Check available space and adjust column widths accordingly

@@ -64,7 +64,7 @@ Los temas de los documentos de Word suelen incluir configuraciones para distinto
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
-El`MajorFonts` La propiedad proporciona acceso a las principales configuraciones de fuentes. En este ejemplo, estamos recuperando específicamente la fuente latina utilizada en el tema. Puede usar un código similar para obtener otras fuentes importantes, como fuentes de escritura compleja o de Asia oriental.
+ El`MajorFonts` La propiedad proporciona acceso a las principales configuraciones de fuentes. En este ejemplo, estamos recuperando específicamente la fuente latina utilizada en el tema. Puede usar un código similar para obtener otras fuentes importantes, como fuentes de escritura compleja o de Asia oriental.
 
 ## Paso 4: Recuperar fuentes secundarias
 
@@ -84,7 +84,7 @@ Los temas también definen varios colores que se usan para los acentos en el doc
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
-El`Colors` propiedad de la`Theme` La clase le permite recuperar diferentes acentos de color definidos en el tema, lo que le permite administrar y aplicar esquemas de color consistentes en sus documentos.
+ El`Colors` propiedad de la`Theme` La clase le permite recuperar diferentes acentos de color definidos en el tema, lo que le permite administrar y aplicar esquemas de color consistentes en sus documentos.
 
 ## Conclusión
 

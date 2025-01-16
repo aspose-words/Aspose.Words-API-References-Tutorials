@@ -97,7 +97,7 @@ Na závěr, zvládnutí zalomení stránek a číslování v Aspose.Words pro .N
 
 ### Jak mohu upravit číslo úvodní stránky po restartu?
 
- I když poskytnutý kód zahájí číslování od 1, můžete si jej přizpůsobit. Využijte`PageNumber` vlastnictví`HeaderFooter` objekt v nové sekci. Nastavení této vlastnosti umožňuje definovat počáteční číslo stránky.
+ I když poskytnutý kód zahájí číslování od 1, můžete si jej přizpůsobit. Využijte`PageNumber` vlastnictvím`HeaderFooter` objekt v nové sekci. Nastavení této vlastnosti umožňuje definovat počáteční číslo stránky.
 
 ### Co se stane s existujícími čísly stránek ve zdrojovém dokumentu?
 
@@ -105,7 +105,7 @@ Stávající čísla stránek ve zdrojovém dokumentu zůstanou nedotčena. Pouz
 
 ### Mohu použít různé formáty číslování (např. římské číslice)?
 
- Absolutně! Aspose.Words nabízí rozsáhlou kontrolu nad formáty číslování stránek. Prozkoumat`NumberStyle` vlastnictví`HeaderFooter` objekt si můžete vybrat z různých stylů číslování, jako jsou římské číslice, písmena nebo vlastní formáty.
+ Absolutně! Aspose.Words nabízí rozsáhlou kontrolu nad formáty číslování stránek. Prozkoumat`NumberStyle` vlastnictvím`HeaderFooter` objekt si můžete vybrat z různých stylů číslování, jako jsou římské číslice, písmena nebo vlastní formáty.
 
 ### Kde najdu další zdroje nebo pomoc?
 

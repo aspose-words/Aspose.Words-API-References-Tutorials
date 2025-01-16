@@ -9,7 +9,7 @@ url: /nl/net/programming-with-shapes/add-corners-snipped/
 ---
 ## Invoering
 
-Aangepaste vormen toevoegen aan uw Word-documenten kan een leuke en visueel aantrekkelijke manier zijn om belangrijke informatie te benadrukken of een beetje flair toe te voegen aan uw content. In deze tutorial gaan we dieper in op hoe u "Corners Snipped"-vormen kunt invoegen in uw Word-documenten met behulp van Aspose.Words voor .NET. Deze gids leidt u door elke stap, zodat u moeiteloos deze vormen kunt toevoegen en uw documenten als een professional kunt aanpassen.
+Aangepaste vormen toevoegen aan uw Word-documenten kan een leuke en visueel aantrekkelijke manier zijn om belangrijke informatie te benadrukken of een beetje flair toe te voegen aan uw content. In deze tutorial duiken we in hoe u "Corners Snipped"-vormen kunt invoegen in uw Word-documenten met Aspose.Words voor .NET. Deze gids leidt u door elke stap, zodat u moeiteloos deze vormen kunt toevoegen en uw documenten als een professional kunt aanpassen.
 
 ## Vereisten
 

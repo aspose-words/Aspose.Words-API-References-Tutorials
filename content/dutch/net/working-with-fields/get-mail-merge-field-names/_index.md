@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-De`Aspose.Words` Met de naamruimte krijgt u toegang tot alle klassen en methoden die nodig zijn om Word-documenten te bewerken, terwijl`System` wordt gebruikt voor basisfunctionaliteit, zoals console-uitvoer.
+ De`Aspose.Words` Met de naamruimte krijgt u toegang tot alle klassen en methoden die nodig zijn om Word-documenten te bewerken, terwijl`System` wordt gebruikt voor basisfunctionaliteit, zoals console-uitvoer.
 
 Laten we het proces van het extraheren van veldnamen voor samenvoegbewerkingen opsplitsen in een duidelijke, stapsgewijze handleiding.
 
@@ -73,7 +73,7 @@ Kop: Veldnamen voor samenvoegbewerkingen extraheren
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-De`GetFieldNames()`methode retourneert een array van strings, die elk een mail merge veldnaam representeren die in het document is gevonden. Dit zijn de tijdelijke aanduidingen die u in uw Word-document ziet.
+ De`GetFieldNames()`methode retourneert een array van strings, die elk een mail merge veldnaam representeren die in het document is gevonden. Dit zijn de tijdelijke aanduidingen die u in uw Word-document ziet.
 
 ## Stap 4: Het aantal samenvoegvelden weergeven
 

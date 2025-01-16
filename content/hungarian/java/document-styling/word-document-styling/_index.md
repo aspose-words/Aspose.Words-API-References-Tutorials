@@ -280,7 +280,7 @@ Egy dokumentum felosztásához elmenthet bizonyos szakaszokat külön dokumentum
 Az Aspose.Words for Java lehetővé teszi a dokumentumok különféle formátumokba konvertálását, például PDF, HTML stb.
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Fejlett stílustechnikák
@@ -301,7 +301,7 @@ pageSetup.setTopMargin(50);
 
 ### 2. Fejlécek és láblécek használata
 
-A fejlécek és láblécek további információkat adhatnak a dokumentum oldalaihoz.
+fejlécek és láblécek további információkat adhatnak a dokumentum oldalaihoz.
 
 ```java
 builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
@@ -364,9 +364,9 @@ Az Aspose.Words for Java egy hatékony eszköz, amely felhatalmazza a Java fejle
 
 ### Az Aspose.Words for Java támogatja a dokumentumok titkosítását?
 
-   Igen, az Aspose.Words for Java támogatja a dokumentumtitkosítást a bizalmas információk védelme érdekében.
+   Igen, az Aspose.Words for Java támogatja a dokumentumtitkosítást az érzékeny információk védelme érdekében.
 
-### Elérhető közösségi fórum vagy támogatás az Aspose.Words for Java felhasználók számára?
+### Létezik közösségi fórum vagy támogatás az Aspose.Words for Java felhasználók számára?
 
    Igen, az Aspose közösségi fórumot és átfogó támogatást biztosít a felhasználók kérdéseinek megoldásához.
 

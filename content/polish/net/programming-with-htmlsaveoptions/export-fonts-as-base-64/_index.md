@@ -9,7 +9,7 @@ url: /pl/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 ## Wstęp
 
-Jeśli chodzi o programowe manipulowanie dokumentami Word, Aspose.Words dla .NET to potęga. Jedną z jego przydatnych funkcji jest eksportowanie czcionek jako Base64 w plikach HTML, co zapewnia osadzanie czcionek i ich prawidłowe wyświetlanie w różnych przeglądarkach i systemach. W tym samouczku zagłębimy się w to, jak to osiągnąć. Gotowy, aby uczynić czcionki dokumentów Word przyjaznymi dla sieci? Zaczynajmy!
+Jeśli chodzi o programowe manipulowanie dokumentami Worda, Aspose.Words dla .NET to potęga. Jedną z jego przydatnych funkcji jest eksportowanie czcionek jako Base64 w plikach HTML, co zapewnia osadzanie czcionek i ich prawidłowe wyświetlanie w różnych przeglądarkach i systemach. W tym samouczku zagłębimy się w to, jak to osiągnąć. Jesteś gotowy, aby uczynić czcionki dokumentów Worda przyjaznymi dla sieci? Zaczynajmy!
 
 ## Wymagania wstępne
 

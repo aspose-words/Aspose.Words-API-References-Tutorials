@@ -71,7 +71,7 @@ Hier gebeurt de echte actie. We gaan het woord "sad" vinden en vervangen door "b
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-De`Replace`methode is eenvoudig. We specificeren het te vinden woord, het vervangende woord en de opties voor de zoek-en-vervang-bewerking.
+ De`Replace`methode is eenvoudig. We specificeren het te vinden woord, het vervangende woord en de opties voor de zoek-en-vervang-bewerking.
 
 ## Stap 5: Sla het document op
 

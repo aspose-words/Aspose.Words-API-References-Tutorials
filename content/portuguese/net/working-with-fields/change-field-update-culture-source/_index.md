@@ -83,7 +83,7 @@ E aí está! Você alterou com sucesso a fonte de cultura de atualização de ca
 ## Perguntas frequentes
 
 ###  Qual é o propósito de definir o`LocaleId`?
-O`LocaleId` especifica as configurações de cultura para o texto, o que afeta como as datas e outros dados sensíveis à localidade são formatados.
+ O`LocaleId` especifica as configurações de cultura para o texto, o que afeta como as datas e outros dados sensíveis à localidade são formatados.
 
 ### Posso usar um idioma diferente do alemão?
  Sim, você pode definir o`LocaleId`para qualquer identificador de localidade válido. Por exemplo, 1033 para inglês (Estados Unidos).

@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Le`Aspose.Words` L'espace de noms fournit la fonctionnalité principale pour la gestion des documents Word, tandis que`Aspose.Words.Tables` inclut les classes spécifiquement destinées à travailler avec des tableaux.
+ Le`Aspose.Words` L'espace de noms fournit la fonctionnalité principale pour la gestion des documents Word, tandis que`Aspose.Words.Tables` inclut les classes spécifiquement destinées à travailler avec des tableaux.
 
 ## Étape 1 : Configurez votre répertoire de documents
 
@@ -88,7 +88,7 @@ L'ajustement automatique des tables au contenu à l'aide d'Aspose.Words pour .NE
 ## FAQ
 
 ### Puis-je ajuster automatiquement uniquement des colonnes spécifiques dans un tableau ?
-Le`AutoFit` La méthode s'applique à l'ensemble du tableau. Si vous devez ajuster des colonnes spécifiques, vous devrez peut-être définir manuellement la largeur des colonnes.
+ Le`AutoFit` La méthode s'applique à l'ensemble du tableau. Si vous devez ajuster des colonnes spécifiques, vous devrez peut-être définir manuellement la largeur des colonnes.
 
 ### Que faire si mon document contient plusieurs tableaux ?
  Vous pouvez parcourir tous les tableaux du document en utilisant`doc.GetChildNodes(NodeType.Table, true)` et appliquez l'ajustement automatique selon vos besoins.

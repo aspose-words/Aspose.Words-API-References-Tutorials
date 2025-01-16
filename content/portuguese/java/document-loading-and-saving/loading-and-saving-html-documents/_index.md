@@ -1,6 +1,6 @@
 ---
-title: Carregando e salvando documentos HTML com Aspose.Words para Java
-linktitle: Carregando e salvando documentos HTML com
+title: Carregando e salvando documentos HTML
+linktitle: Carregando e salvando documentos HTML
 second_title: API de processamento de documentos Java Aspose.Words
 description: Aprenda como carregar e salvar documentos HTML em Java usando Aspose.Words para Java. Guia passo a passo com exemplos de código para integração perfeita de documentos.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Agora que carregamos o HTML em um`Document`, podemos salvá-lo como um documento Word. Vamos salvá-lo no formato DOCX:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Este código salva o`Document` como um arquivo DOCX, que é um formato comum para documentos do Word.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Conclusão
@@ -79,7 +79,7 @@ Neste artigo, aprendemos como carregar e salvar documentos HTML usando Aspose.Wo
 
 ### Como instalo o Aspose.Words para Java?
 
- O Aspose.Words para Java pode ser baixado de[aqui](https://releases.aspose.com/words/java/). Siga as instruções de instalação fornecidas no site para configurá-lo em seu projeto Java.
+ O Aspose.Words para Java pode ser baixado de[aqui](https://releases.aspose.com/words/java/)Siga as instruções de instalação fornecidas no site para configurá-lo em seu projeto Java.
 
 ### Posso carregar documentos HTML complexos usando o Aspose.Words?
 
@@ -95,4 +95,4 @@ Absolutamente! Aspose.Words é uma solução robusta usada por empresas no mundo
 
 ### Onde posso encontrar mais documentação e exemplos do Aspose.Words para Java?
 
- Você pode encontrar documentação detalhada, exemplos de código e tutoriais no site de documentação do Aspose.Words para Java:[Aspose.Words para documentação Java](https://reference.aspose.com/words/java/).
+Você pode encontrar documentação detalhada, exemplos de código e tutoriais no site de documentação do Aspose.Words para Java:[Aspose.Words para documentação Java](https://reference.aspose.com/words/java/).

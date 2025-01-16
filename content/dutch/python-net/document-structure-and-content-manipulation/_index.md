@@ -39,9 +39,7 @@ Leer hoe u commentaarfuncties in Word-documenten kunt gebruiken met Aspose.Words
 ### [Omgaan met velden en gegevens in Word-documenten](./document-fields/)
 Leer hoe u velden en gegevens in Word-documenten verwerkt met Aspose.Words voor Python. Stapsgewijze handleiding met codevoorbeelden voor dynamische content, automatisering en meer. 
 ### [Begrijpen van lettertypen en tekstopmaak in Word-documenten](./document-fonts/)
-Ontdek de wereld van lettertypen en tekststijlen in Word-documenten. Leer hoe u de leesbaarheid en visuele aantrekkingskracht kunt verbeteren met Aspose.Words voor Python. Uitgebreide handleiding met stapsgewijze voorbeelden.
-### [Voetnoten en eindnoten in Word-documenten verkennen](./document-footnotes-endnotes/)
-Ontdek hoe u effectief voetnoten en eindnoten kunt gebruiken in Word-documenten met Aspose.Words voor Python. Leer hoe u deze elementen programmatisch kunt toevoegen, aanpassen en beheren. 
+Ontdek de wereld van lettertypen en tekststijlen in Word-documenten. Leer hoe u de leesbaarheid en visuele aantrekkingskracht kunt verbeteren met Aspose.Words voor Python. Uitgebreide gids met stapsgewijze voorbeelden.
 ### [Formuliervelden en gegevensregistratie in Word-documenten onder de knie krijgen](./document-form-fields/)
 Beheers de kunst van het maken en beheren van formuliervelden in Word-documenten met Aspose.Words voor Python. Leer hoe u efficiënt gegevens kunt vastleggen en de betrokkenheid van gebruikers kunt vergroten. 
 ### [Kop- en voetteksten in Word-documenten manipuleren](./document-headers-footers/)
@@ -52,8 +50,6 @@ Leer hoe u afbrekingen en tekststroom in Word-documenten beheert met Aspose.Word
 Leer hoe u lijsten in Word-documenten kunt maken en beheren met Aspose.Words Python API. Stapsgewijze handleiding met broncode voor lijstopmaak, aanpassing, nesting en meer. 
 ### [Markdown-opmaak gebruiken in Word-documenten](./document-markdown/)
 Leer hoe u Markdown-opmaak integreert in Word-documenten met Aspose.Words voor Python. Stapsgewijze handleiding met codevoorbeelden voor dynamische en visueel aantrekkelijke contentcreatie. 
-### [Documentknooppunten begrijpen en er doorheen navigeren](./document-nodes/)
-Leer Word-documenten te bewerken met Aspose.Words voor Python. Deze stapsgewijze handleiding behandelt laden, formatteren, tabellen, afbeeldingen en meer. Verbeter uw documentverwerkingsvaardigheden vandaag nog!
 ### [OLE-objecten en ActiveX-besturingselementen insluiten in Word-documenten](./document-ole-objects-active-x/)
  Leer hoe u OLE-objecten en ActiveX-besturingselementen in Word-documenten kunt insluiten met Aspose.Words voor Python. Maak naadloos interactieve en dynamische documenten.
 ### [Alinea's en tekst opmaken in Word-documenten](./document-paragraphs/)
@@ -65,4 +61,4 @@ Leer hoe u documentsecties en lay-outs beheert met Aspose.Words voor Python. Maa
 ### [Visuele inhoud verbeteren met tekstvakken in Word-documenten](./document-textboxes/)
 Verbeter documentvisuals met Aspose.Words Python! Leer stapsgewijs hoe u tekstvakken in Word-documenten kunt maken en aanpassen. Verbeter de lay-out, opmaak en styling van content voor boeiende documenten.
 ### [Geavanceerde automatisering ontgrendelen met VBA-macro's in Word-documenten](./document-vba-macros/)
-Ontgrendel geavanceerde automatisering in Word-documenten met Aspose.Words Python API en VBA-macro's. Leer stap voor stap met broncode en FAQ's. Verbeter nu de productiviteit. Toegang op[Link].
+ Ontgrendel geavanceerde automatisering in Word-documenten met Aspose.Words Python API en VBA-macro's. Leer stap voor stap met broncode en FAQ's. Verbeter nu de productiviteit. Toegang op[Link].

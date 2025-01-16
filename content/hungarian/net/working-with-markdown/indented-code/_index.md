@@ -48,7 +48,7 @@ Most pedig nézzük meg a behúzott kódblokk hozzáadásának és stílusának 
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Itt új dokumentumot hozunk létre, és használjuk`DocumentBuilder` tartalom hozzáadásának megkezdéséhez.
+Itt egy új dokumentumot hozunk létre, és használjuk`DocumentBuilder` tartalom hozzáadásának megkezdéséhez.
 
 ## 2. lépés: Határozza meg az egyéni stílust
 
@@ -89,7 +89,7 @@ Kísérletezzen bátran különböző stílusokkal és beállításokkal, hogy i
  Beállíthatja a`Font.Name` tulajdonság bármely tetszőleges egyszóközű betűtípushoz, például "Courier New" vagy "Consolas".
 
 ### Hozzáadható több kódblokk különböző stílusokkal?  
-Teljesen! Több stílust is definiálhat különböző néven, és szükség szerint alkalmazhatja azokat különböző kódblokkokra.
+Teljesen! Több stílust is meghatározhat különböző néven, és szükség szerint alkalmazhatja azokat különböző kódblokkokra.
 
 ### Alkalmazhatok más formázási beállításokat a kódblokkra?  
 Igen, testreszabhatja a stílust különféle formázási beállításokkal, beleértve a betűszínt, a háttérszínt és az igazítást.

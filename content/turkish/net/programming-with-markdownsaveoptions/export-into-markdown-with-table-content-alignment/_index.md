@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Adım 4: Otomatik Tablo İçeriği Hizalamasını Kullanın
 
-The`Auto`hizalama seçeneği, hizalamayı ilgili tablo sütunundaki ilk paragraftan alır. Bu, tek bir tabloda karışık hizalamalarınız olduğunda kullanışlı olabilir.
+ The`Auto`hizalama seçeneği, hizalamayı ilgili tablo sütunundaki ilk paragraftan alır. Bu, tek bir tabloda karışık hizalamalarınız olduğunda kullanışlı olabilir.
 
 ```csharp
 // Hizalamayı Otomatik olarak ayarlayın.

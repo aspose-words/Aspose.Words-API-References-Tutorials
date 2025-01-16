@@ -65,7 +65,7 @@ builder.Writeln("sad mad bad");
 
 ## 步骤 4：执行查找和替换操作
 
-真正的行动就在这里。我们要找到单词“sad”，并将其替换为“bad”。
+真正的动作就在这里。我们要找到单词“sad”，并将其替换为“bad”。
 
 ```csharp
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));

@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-// La cuarta lista, con espacios en blanco entre el número de lista y el contenido del elemento de la lista,
+//La cuarta lista, con espacios en blanco entre el número de lista y el contenido del elemento de la lista,
 // solo se detectará como una lista si "DetectNumberingWithWhitespaces" en un objeto LoadOptions está configurado como verdadero,
 // para evitar que los párrafos que comienzan con números se detecten erróneamente como listas.
 TxtLoadOptions loadOptions = new TxtLoadOptions();
@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
-En este ejemplo, cargamos un documento de texto y recortamos los espacios iniciales y finales utilizando`TxtLeadingSpacesOptions.TRIM` y`TxtTrailingSpacesOptions.TRIM`.
+ En este ejemplo, cargamos un documento de texto y recortamos los espacios iniciales y finales utilizando`TxtLeadingSpacesOptions.TRIM` y`TxtTrailingSpacesOptions.TRIM`.
 
 ## Paso 3: Controlar la dirección del texto
 
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-Este código establece la dirección del documento para detección automática (`DocumentDirection.AUTO`) y carga un documento de texto con texto en hebreo. Puede ajustar la dirección del documento según sea necesario.
+Este código establece la dirección del documento para detección automática (`DocumentDirection.AUTO`y carga un documento de texto con texto en hebreo. Puede ajustar la dirección del documento según sea necesario.
 
 ## Código fuente completo para cargar archivos de texto con Aspose.Words para Java
 
@@ -179,7 +179,7 @@ Para comenzar a utilizar Aspose.Words para Java, siga estos pasos:
 
 ### ¿Cómo manejo los espacios en los documentos de texto cargados?
 
- Puede controlar cómo se manejan los espacios iniciales y finales en los documentos de texto cargados utilizando`TxtLoadOptions` Opciones como`TxtLeadingSpacesOptions` y`TxtTrailingSpacesOptions` Le permiten recortar o conservar espacios según sea necesario. Consulte la sección "Opciones de manejo de espacios" de esta guía para ver un ejemplo.
+ Puede controlar cómo se manejan los espacios iniciales y finales en los documentos de texto cargados utilizando`TxtLoadOptions` Opciones como`TxtLeadingSpacesOptions` y`TxtTrailingSpacesOptions`Le permiten recortar o conservar espacios según sea necesario. Consulte la sección "Opciones de manejo de espacios" de esta guía para ver un ejemplo.
 
 ### ¿Cuál es la importancia de la dirección del texto en Aspose.Words para Java?
 

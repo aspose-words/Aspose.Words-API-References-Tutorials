@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-IL`Aspose.Words` namespace ti dà accesso a tutte le classi e ai metodi necessari per manipolare i documenti Word, mentre`System` viene utilizzato per funzionalità di base come l'output della console.
+ IL`Aspose.Words` namespace ti dà accesso a tutte le classi e ai metodi necessari per manipolare i documenti Word, mentre`System` viene utilizzato per funzionalità di base come l'output della console.
 
 Analizziamo nel dettaglio il processo di estrazione dei nomi dei campi di stampa unione in una guida chiara e dettagliata.
 
@@ -73,7 +73,7 @@ Titolo: Estrai nomi dei campi di unione di posta
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-IL`GetFieldNames()`restituisce un array di stringhe, ciascuna rappresentante un nome di campo di unione di posta trovato nel documento. Questi sono i segnaposto che vedrai nel tuo documento Word.
+ IL`GetFieldNames()`restituisce un array di stringhe, ciascuna rappresentante un nome di campo di unione di posta trovato nel documento. Questi sono i segnaposto che vedrai nel tuo documento Word.
 
 ## Passaggio 4: visualizzare il numero di campi di unione
 

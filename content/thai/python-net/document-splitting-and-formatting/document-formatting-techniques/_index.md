@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## การใช้รูปแบบและขนาดแบบอักษร
-
-เพิ่มความสามารถในการอ่านและความสวยงามของเอกสารของคุณด้วยการใช้รูปแบบและขนาดของแบบอักษร ใช้โค้ดต่อไปนี้เพื่อเปลี่ยนรูปแบบและขนาดของแบบอักษรของย่อหน้า:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## การจัดรูปแบบย่อหน้าและหัวเรื่อง
+## การจัดรูปแบบย่อหน้า
 
 การจัดรูปแบบย่อหน้าและหัวข้อเป็นสิ่งสำคัญในการจัดโครงสร้างเอกสารของคุณอย่างมีประสิทธิภาพ ทำได้โดยใช้โค้ดด้านล่าง:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## การทำงานกับรายการและจุดหัวข้อ
 
 รายการและจุดหัวข้อจัดระเบียบเนื้อหาและให้ความชัดเจน ใช้งานโดยใช้ Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## การจัดการเค้าโครงหน้าและระยะขอบ
+## การจัดการเค้าโครงหน้า
 
 ควบคุมเค้าโครงหน้าและระยะขอบเพื่อการนำเสนอที่เหมาะสมที่สุด:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## การใช้สไตล์และธีม

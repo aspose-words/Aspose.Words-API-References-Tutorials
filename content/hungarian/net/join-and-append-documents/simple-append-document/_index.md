@@ -80,7 +80,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-A`AppendDocument` A módszer két paramétert igényel:
+ A`AppendDocument` A módszer két paramétert igényel:
 1. Forrásdokumentum: A csatolni kívánt dokumentum.
 2.  Importálási formátum mód: Ez a paraméter határozza meg, hogyan kell kezelni a formázást. Itt használjuk`KeepSourceFormatting` hogy fenntartsák a forrásdokumentum formázását.
 

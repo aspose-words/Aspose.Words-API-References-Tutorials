@@ -1,6 +1,6 @@
 ---
-title: การโหลดและบันทึกเอกสาร HTML ด้วย Aspose.Words สำหรับ Java
-linktitle: การโหลดและบันทึกเอกสาร HTML ด้วย
+title: การโหลดและการบันทึกเอกสาร HTML
+linktitle: การโหลดและการบันทึกเอกสาร HTML
 second_title: API การประมวลผลเอกสาร Java ของ Aspose.Words
 description: เรียนรู้วิธีโหลดและบันทึกเอกสาร HTML ใน Java โดยใช้ Aspose.Words สำหรับ Java คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ดสำหรับการผสานรวมเอกสารอย่างราบรื่น
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  ตอนนี้เราได้โหลด HTML ลงใน`Document`เราสามารถบันทึกเป็นเอกสาร Word ได้ ให้บันทึกเป็นไฟล์ DOCX:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  รหัสนี้จะบันทึก`Document` เป็นไฟล์ DOCX ซึ่งเป็นรูปแบบทั่วไปของเอกสาร Word
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## บทสรุป
@@ -95,4 +95,4 @@ Aspose.Words รองรับรูปแบบเอกสารหลาก�
 
 ### ฉันสามารถหาเอกสารและตัวอย่างเพิ่มเติมสำหรับ Aspose.Words สำหรับ Java ได้ที่ไหน
 
- คุณสามารถค้นหาเอกสารโดยละเอียด ตัวอย่างโค้ด และบทช่วยสอนได้ที่เว็บไซต์เอกสาร Aspose.Words สำหรับ Java:[เอกสาร Aspose.Words สำหรับ Java](https://reference.aspose.com/words/java/).
+คุณสามารถค้นหาเอกสารโดยละเอียด ตัวอย่างโค้ด และบทช่วยสอนได้ที่เว็บไซต์เอกสาร Aspose.Words สำหรับ Java:[เอกสาร Aspose.Words สำหรับ Java](https://reference.aspose.com/words/java/).

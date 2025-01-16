@@ -15,7 +15,7 @@ Ahoj, tech nadšenci! Přistihli jste se někdy, že se škrábete na hlavě a p
 
 Než se po hlavě ponoříme do světa víceřádkového zarovnávání štítků, ujistěte se, že máte všechny své kachny v řadě. Zde je to, co budete potřebovat:
 
-1.  Aspose.Words pro .NET: Ujistěte se, že máte nejnovější verzi Aspose.Words pro .NET. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pro .NET: Ujistěte se, že máte nejnovější verzi Aspose.Words pro .NET. Pokud ne, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Prostředí .NET: Zajistěte, aby vaše vývojové prostředí bylo nastaveno na .NET.
 3. Základní znalost C#: Základní znalost C# tuto cestu usnadní.
 
@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Krok 3: Použijte DocumentBuilder
 
-The`DocumentBuilder` class v Aspose.Words je mocný nástroj, který pomáhá při vytváření dokumentů. Použijeme jej k vložení grafu do našeho dokumentu.
+ The`DocumentBuilder` class v Aspose.Words je mocný nástroj, který pomáhá při vytváření dokumentů. Použijeme jej k vložení grafu do našeho dokumentu.
 
  Inicializujte instanci souboru`DocumentBuilder` třídy, předá náš objekt dokumentu jeho konstruktoru.
 

@@ -45,7 +45,7 @@ Examinons le processus d'insertion d'hyperliens dans un document Word à l'aide 
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Le`DocumentBuilder` class est un outil polyvalent qui vous permet de construire et de modifier le document.
+ Le`DocumentBuilder` class est un outil polyvalent qui vous permet de construire et de modifier le document.
 
 ## Étape 2 : Insérer un lien hypertexte
 

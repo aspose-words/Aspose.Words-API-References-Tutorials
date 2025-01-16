@@ -63,7 +63,7 @@ La paginación garantiza que el contenido se divida en páginas de forma adecuad
 
 ### Saltos de línea y de página
 
-veces, necesitas más control sobre dónde se insertan los saltos de línea o de página. Aspose.Words ofrece opciones para insertar saltos de línea explícitos o forzar una nueva página cuando sea necesario.
+A veces, necesitas más control sobre dónde se insertan los saltos de línea o de página. Aspose.Words ofrece opciones para insertar saltos de línea explícitos o forzar una nueva página cuando sea necesario.
 
 ## Implementación de la separación de palabras con Aspose.Words para Python
 
@@ -126,4 +126,4 @@ Para evitar viudas y huérfanos, utilice las opciones proporcionadas por Aspose.
 
 ### ¿Dónde puedo acceder a la documentación de Aspose.Words para Python?
 
-Puede acceder a la documentación de la API en[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+ Puede acceder a la documentación de la API en[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

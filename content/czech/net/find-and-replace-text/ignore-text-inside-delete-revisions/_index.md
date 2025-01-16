@@ -9,7 +9,7 @@ url: /cs/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 ## Zavedení
 
-V oblasti vývoje .NET vyniká Aspose.Words jako robustní knihovna pro programovou práci s dokumenty Microsoft Word. Ať už jste zkušený vývojář nebo teprve začínáte, zvládnutí schopností Aspose.Words může výrazně zlepšit vaši schopnost efektivně manipulovat, vytvářet a spravovat dokumenty Word. Tento výukový program se ponoří do jedné z jeho výkonných funkcí: zpracování sledovaných revizí v dokumentech pomocí Aspose.Words for .NET.
+oblasti vývoje .NET vyniká Aspose.Words jako robustní knihovna pro programovou práci s dokumenty Microsoft Word. Ať už jste zkušený vývojář nebo teprve začínáte, zvládnutí schopností Aspose.Words může výrazně zlepšit vaši schopnost efektivně manipulovat, vytvářet a spravovat dokumenty Word. Tento výukový program se ponoří do jedné z jeho výkonných funkcí: zpracování sledovaných revizí v dokumentech pomocí Aspose.Words for .NET.
 
 ## Předpoklady
 
@@ -17,7 +17,7 @@ Než se ponoříte do tohoto tutoriálu, ujistěte se, že máte splněny násle
 - Základní znalost programovacího jazyka C#.
 - Visual Studio nainstalované ve vašem systému.
 -  Knihovna Aspose.Words for .NET integrovaná do vašeho projektu. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
-- Přístup k Aspose.Words pro .NET[dokumentace](https://reference.aspose.com/words/net/) pro referenci.
+-  Přístup k Aspose.Words pro .NET[dokumentace](https://reference.aspose.com/words/net/) pro referenci.
 
 ## Importovat jmenné prostory
 
@@ -84,4 +84,4 @@ Ano, můžete programově spravovat a vracet sledované revize pomocí Aspose.Wo
 Aspose.Words for .NET je optimalizován pro efektivní manipulaci s velkými dokumenty, včetně těch s rozsáhlými sledovanými revizemi.
 
 ### Kde najdu další zdroje a podporu pro Aspose.Words pro .NET?
-Můžete prozkoumat komplexní dokumentaci a získat podporu od komunity Aspose.Words for .NET na adrese[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Můžete prozkoumat komplexní dokumentaci a získat podporu od komunity Aspose.Words for .NET na adrese[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).

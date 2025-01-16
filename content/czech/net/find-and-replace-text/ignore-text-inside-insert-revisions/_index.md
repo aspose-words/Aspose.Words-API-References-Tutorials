@@ -9,7 +9,7 @@ url: /cs/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 ## Zavedení
 
-V tomto komplexním průvodci se ponoříme do používání Aspose.Words pro .NET k efektivní správě revizí dokumentů. Ať už jste vývojář nebo technický nadšenec, pochopení toho, jak ignorovat text uvnitř revizí vkládání, může zefektivnit vaše pracovní postupy zpracování dokumentů. Tento tutoriál vás vybaví nezbytnými dovednostmi, abyste mohli využívat výkonné funkce Aspose.Words pro bezproblémovou správu revizí dokumentů.
+tomto komplexním průvodci se ponoříme do používání Aspose.Words pro .NET k efektivní správě revizí dokumentů. Ať už jste vývojář nebo technický nadšenec, pochopení toho, jak ignorovat text uvnitř revizí vkládání, může zefektivnit vaše pracovní postupy zpracování dokumentů. Tento tutoriál vás vybaví nezbytnými dovednostmi, abyste mohli využívat výkonné funkce Aspose.Words pro bezproblémovou správu revizí dokumentů.
 
 ## Předpoklady
 
@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Začněte sledovat revize
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //Vložit text s revizemi sledování
+builder.Writeln("Inserted"); // Vložit text s revizemi sledování
 doc.StopTrackRevisions();
 ```
 

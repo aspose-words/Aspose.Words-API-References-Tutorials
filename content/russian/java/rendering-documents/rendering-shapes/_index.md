@@ -89,7 +89,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### В3: Существуют ли какие-либо варианты лицензирования Aspose.Words для Java?
 
- Да, вы можете изучить варианты лицензирования и приобрести Aspose.Words для Java на[Сайт Aspose](https://purchase.aspose.com/buy).
+Да, вы можете изучить варианты лицензирования и приобрести Aspose.Words для Java на[Сайт Aspose](https://purchase.aspose.com/buy).
 
 ### В4: Могу ли я попробовать Aspose.Words для Java перед покупкой?
 
@@ -97,6 +97,6 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### В5: Где я могу получить поддержку или задать вопросы по Aspose.Words для Java?
 
-Если у вас есть вопросы или вам нужна поддержка, посетите[Форум Aspose.Words для Java](https://forum.aspose.com/).
+ Если у вас есть вопросы или вам нужна поддержка, посетите[Форум Aspose.Words для Java](https://forum.aspose.com/).
 
 Теперь, когда вы освоили рендеринг фигур с помощью Aspose.Words для Java, вы готовы раскрыть весь потенциал этого универсального API в своих проектах по обработке документов. Удачного кодирования!

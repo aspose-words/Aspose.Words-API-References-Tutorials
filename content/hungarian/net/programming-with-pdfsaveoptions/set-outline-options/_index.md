@@ -15,7 +15,7 @@ Amikor dokumentumokkal dolgozik, különösen szakmai vagy tanulmányi célokra,
 
 Mielőtt elkezdené, néhány dolgot meg kell győződnie arról, hogy rendelkezik:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Ha nem, akkor lehet[töltse le a legújabb verziót innen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Ha nem, akkor megteheti[töltse le a legújabb verziót innen](https://releases.aspose.com/words/net/).
 2. .NET fejlesztői környezet: Szüksége lesz egy működő .NET fejlesztői környezetre, például a Visual Studiora.
 3. A C# alapvető ismerete: A C# programozási nyelv ismerete segít a könnyebb követésben.
 4. Word-dokumentum: Készítsen egy Word-dokumentumot, amelyet PDF-be konvertálhat.
@@ -52,7 +52,7 @@ Most állítsuk be a vázlatbeállításokat.
 
 ### Állítsa be a címsorok vázlatszintjeit
 
-A`HeadingsOutlineLevels` tulajdonság határozza meg, hogy hány szintű címsor szerepeljen a PDF-vázlatban. Ha például 3-ra állítja, akkor legfeljebb három szintű címsort fog tartalmazni a PDF-vázlatban.
+ A`HeadingsOutlineLevels` tulajdonság határozza meg, hogy hány szintű címsor szerepeljen a PDF-vázlatban. Ha például 3-ra állítja, akkor legfeljebb három szintű címsort fog tartalmazni a PDF-vázlatban.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Állítsa be a kiterjesztett körvonalszinteket
 
-A`ExpandedOutlineLevels` tulajdonság azt szabályozza, hogy a vázlat hány szintje legyen kibontva alapértelmezés szerint a PDF megnyitásakor. Ha ezt 1-re állítja, akkor a legfelső szintű címsorok kibővülnek, így áttekinthetőek lesznek a fő szakaszok.
+ A`ExpandedOutlineLevels` tulajdonság azt szabályozza, hogy a vázlat hány szintje legyen kibontva alapértelmezés szerint a PDF megnyitásakor. Ha ezt 1-re állítja, akkor a legfelső szintű címsorok kibővülnek, így áttekinthetőek lesznek a fő szakaszok.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

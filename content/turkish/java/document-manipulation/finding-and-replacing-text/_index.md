@@ -355,4 +355,4 @@ Değiştirme sırasında alanların içindeki metni yoksaymak için,`IgnoreField
 
 ### UseLegacyOrder seçeneği ne işe yarar?
 
-The`UseLegacyOrder` seçenek`FindReplaceOptions` bul ve değiştir işlemlerini gerçekleştirirken eski sırayı kullanmanıza olanak tanır. Bu, eski sıra davranışının istendiği belirli senaryolarda yararlı olabilir.
+ The`UseLegacyOrder` seçenek`FindReplaceOptions` bul ve değiştir işlemlerini gerçekleştirirken eski sırayı kullanmanıza olanak tanır. Bu, eski sıra davranışının istendiği belirli senaryolarda yararlı olabilir.

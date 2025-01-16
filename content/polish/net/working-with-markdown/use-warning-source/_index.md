@@ -88,7 +88,7 @@ Ten wiersz zapisuje dokument jako plik Markdown w określonym katalogu.
 
 ## Wniosek
 
- masz to! Właśnie nauczyłeś się, jak używać`WarningSource` klasa w Aspose.Words dla .NET do obsługi ostrzeżeń Markdown. Ten samouczek obejmował konfigurację projektu, ładowanie dokumentu, zbieranie i przetwarzanie ostrzeżeń oraz zapisywanie ostatecznego dokumentu. Dzięki tej wiedzy jesteś lepiej przygotowany do zarządzania przetwarzaniem dokumentów w swoich aplikacjach. Eksperymentuj i odkrywaj ogromne możliwości Aspose.Words dla .NET!
+ masz to! Właśnie nauczyłeś się, jak używać`WarningSource` klasa w Aspose.Words dla .NET do obsługi ostrzeżeń Markdown. Ten samouczek obejmował konfigurację projektu, ładowanie dokumentu, zbieranie i przetwarzanie ostrzeżeń oraz zapisywanie ostatecznego dokumentu. Dzięki tej wiedzy jesteś lepiej wyposażony do zarządzania przetwarzaniem dokumentów w swoich aplikacjach. Eksperymentuj i odkrywaj ogromne możliwości Aspose.Words dla .NET!
 
 ## Najczęściej zadawane pytania
 

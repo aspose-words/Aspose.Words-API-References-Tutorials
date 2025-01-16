@@ -80,7 +80,7 @@ Door de eigenschap van het laatst afgedrukte document bij te werken, kunt u het 
 Ja, met Aspose.Words voor .NET kunt u verschillende documenteigenschappen bijwerken, zoals auteur, titel, onderwerp en meer.
 
 ### Is Aspose.Words voor .NET gratis?
-Aspose.Words voor .NET biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/)Voor langdurig gebruik moet u een licentie aanschaffen.
+ Aspose.Words voor .NET biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/)Voor langdurig gebruik moet u een licentie aanschaffen.
 
 ### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
-Gedetailleerde documentatie vindt u op Aspose.Words voor .NET[hier](https://reference.aspose.com/words/net/).
+ Gedetailleerde documentatie vindt u op Aspose.Words voor .NET[hier](https://reference.aspose.com/words/net/).

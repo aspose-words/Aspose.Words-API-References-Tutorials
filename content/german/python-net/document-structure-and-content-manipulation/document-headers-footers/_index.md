@@ -23,7 +23,7 @@ pip install aspose-words
 2. Importieren des Moduls: Importieren Sie das erforderliche Modul in Ihr Python-Skript.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Hinzufügen einer einfachen Kopf- und Fußzeile
@@ -33,30 +33,18 @@ Um Ihrem Word-Dokument eine einfache Kopf- und Fußzeile hinzuzufügen, führen 
 1. Erstellen eines Dokuments: Erstellen Sie mit Aspose.Words ein neues Word-Dokument.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Hinzufügen von Kopf- und Fußzeilen: Verwenden Sie die`sections` Eigenschaft des Dokuments, um auf Abschnitte zuzugreifen. Verwenden Sie dann die`headers_footers` Eigenschaft zum Hinzufügen von Kopf- und Fußzeilen.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Inhalt hinzufügen: Fügen Sie der Kopf- und Fußzeile Inhalt hinzu.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Speichern des Dokuments: Speichern Sie das Dokument mit Kopf- und Fußzeile.
+3. Speichern des Dokuments: Speichern Sie das Dokument mit Kopf- und Fußzeile.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Tabellen hinzufügen: Integrieren Sie Tabellen für tabellarische Informationen.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Dynamische Felder: Verwenden Sie dynamische Felder zum automatischen Einfügen von Daten.
+2. Dynamische Felder: Verwenden Sie dynamische Felder zum automatischen Einfügen von Daten.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -110,8 +90,6 @@ header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
 
-3. Nach Bedarf anpassen: Passen Sie jede Kopf- und Fußzeile Ihren Anforderungen entsprechend an.
-
 ## Kopf- und Fußzeilen entfernen
 
 So entfernen Sie Kopf- und Fußzeilen aus einem Word-Dokument:
@@ -130,7 +108,7 @@ section.page_setup.different_first_page_header_footer = False
 section.page_setup.odd_and_even_pages_header_footer = False
 ```
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Wie greife ich auf Kopf- und Fußzeileninhalte zu?
 
@@ -150,4 +128,4 @@ Ja, Sie können den Inhalt von Kopf- und Fußzeilen löschen, um sie effektiv zu
 
 ### Wo kann ich mehr über Aspose.Words für Python erfahren?
 
-Ausführlichere Dokumentation und Beispiele finden Sie im[Aspose.Words für Python API-Referenz](https://reference.aspose.com/words/python-net/).
+ Ausführlichere Dokumentation und Beispiele finden Sie im[Aspose.Words für Python API-Referenz](https://reference.aspose.com/words/python-net/).

@@ -9,7 +9,7 @@ url: /pl/net/programming-with-htmlsaveoptions/export-resources/
 ---
 ## Wstęp
 
-Cześć, entuzjasto technologii! Jeśli kiedykolwiek musiałeś przekonwertować dokumenty Worda na HTML, jesteś we właściwym miejscu. Dzisiaj zanurzamy się w cudowny świat Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że programowa praca z dokumentami Worda staje się dziecinnie prosta. W tym samouczku przejdziemy przez kroki eksportowania zasobów, takich jak czcionki i CSS, podczas zapisywania dokumentu Worda jako HTML przy użyciu Aspose.Words dla .NET. Zapnij pasy i ruszaj na przyjemną, pouczającą przejażdżkę!
+Cześć, kolego entuzjasto technologii! Jeśli kiedykolwiek musiałeś przekonwertować dokumenty Worda na HTML, jesteś we właściwym miejscu. Dzisiaj zanurzamy się w cudowny świat Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że praca z dokumentami Worda programowo staje się dziecinnie prosta. W tym samouczku przeprowadzimy Cię przez kroki eksportowania zasobów, takich jak czcionki i CSS, podczas zapisywania dokumentu Worda jako HTML przy użyciu Aspose.Words dla .NET. Zapnij pasy i ruszaj na przyjemną, pouczającą przejażdżkę!
 
 ## Wymagania wstępne
 

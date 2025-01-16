@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
  Dans cet extrait, nous initialisons un nouveau`Document` et un`DocumentBuilder` . Le`DocumentBuilder` nous aide à ajouter des éléments à notre document.
 
-## Étape 2 : Définir les options de ligne de signature
+## Étape 2 : Définir les options de la ligne de signature
 
 Ensuite, nous définissons les options de notre ligne de signature. Cela inclut le nom du signataire, son titre, son adresse e-mail et d'autres détails.
 
@@ -130,7 +130,7 @@ Et voilà ! Vous avez réussi à créer une nouvelle ligne de signature et à d
 ## FAQ
 
 ### Puis-je personnaliser l’apparence de la ligne de signature ?
-Absolument ! Vous pouvez modifier diverses options dans le`SignatureLineOptions` pour répondre à vos besoins.
+ Absolument ! Vous pouvez modifier diverses options dans le`SignatureLineOptions`pour répondre à vos besoins.
 
 ### Que faire si je n'ai pas de certificat PFX ?
 Vous devrez en obtenir un auprès d'une autorité de certification de confiance. Il est indispensable pour signer numériquement des documents.

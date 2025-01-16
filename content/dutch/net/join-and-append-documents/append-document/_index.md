@@ -95,7 +95,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
 
 ### 4. Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 
- kunt ondersteuning krijgen door de[Aspose ondersteuningsforum](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen door de[Aspose ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
 ### 5. Kan ik documenten van verschillende formaten toevoegen?
 

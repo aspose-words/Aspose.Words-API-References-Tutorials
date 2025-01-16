@@ -15,7 +15,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek zur programmgesteuert
 
 Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles eingerichtet haben:
 
-1.  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Sie können es herunterladen von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Sie können es herunterladen von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere C#-Entwicklungsumgebung.
 3. Grundkenntnisse in C#: Kenntnisse der Grundlagen der C#-Programmierung sind von Vorteil.
 
@@ -39,7 +39,7 @@ Bevor Sie mit der Bearbeitung des Dokuments beginnen, müssen Sie den Pfad zu Ih
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Ersetzen`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad, in dem Sie Ihre Dokumente speichern möchten.
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad, in dem Sie Ihre Dokumente speichern möchten.
 
 ## Schritt 2: Neues Dokument erstellen
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## Schritt 4: Ersetzen von Text durch das Absatzumbruch-Metazeichen
 
- Metazeichen können verschiedene Elemente wie Absätze, Tabulatoren und Zeilenumbrüche darstellen. Hier verwenden wir`&p` um einen Absatzumbruch darzustellen.
+Metazeichen können verschiedene Elemente wie Absätze, Tabulatoren und Zeilenumbrüche darstellen. Hier verwenden wir`&p` um einen Absatzumbruch darzustellen.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");

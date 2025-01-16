@@ -15,7 +15,7 @@ Merhaba! Word belgelerinizin koruma türünü programatik olarak nasıl kontrol 
 
 Kodlama kısmına geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET Kütüphanesi: Henüz yapmadıysanız, indirin ve kurun[Aspose.Words for .NET kütüphanesi](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Kütüphanesi: Henüz yapmadıysanız, indirin ve kurun[Aspose.Words for .NET kütüphanesi](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio benzeri bir IDE.
 3. Temel C# Bilgisi: C# programlamaya aşina olmanız, takip etmenize yardımcı olacaktır.
 
@@ -41,7 +41,7 @@ Süreci basit, takip etmesi kolay adımlara bölelim. Her adım sizi görevin be
 
 ## Adım 2: Belgenizi Yükleyin
 
- Artık projeniz kurulduğuna göre, kontrol etmek istediğiniz Word belgesini yükleyelim. Değiştir`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolunu belirtin.
+Artık projeniz kurulduğuna göre, kontrol etmek istediğiniz Word belgesini yükleyelim. Değiştir`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolunu belirtin.
 
 ```csharp
 // Belge dizininize giden yol
@@ -75,13 +75,13 @@ Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinin kor
 Aspose.Words for .NET, Word belgelerini programlı bir şekilde oluşturmanıza, düzenlemenize, dönüştürmenize ve değiştirmenize olanak tanıyan güçlü bir kütüphanedir.
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
- Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) , ancak tam işlevsellik için bir lisans satın almanız gerekir. Şuraya göz atın:[satın alma seçenekleri](https://purchase.aspose.com/buy).
+ Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) ancak tam işlevsellik için bir lisans satın almanız gerekir. Şuraya göz atın:[satın alma seçenekleri](https://purchase.aspose.com/buy).
 
 ### Aspose.Words hangi koruma türlerini tespit edebilir?
 Aspose.Words, NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments ve AllowOnlyFormFields gibi çeşitli koruma türlerini algılayabilir.
 
 ### Sorun yaşarsam nasıl destek alabilirim?
-Herhangi bir sorun için şu adresi ziyaret edebilirsiniz:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) yardım için.
+ Herhangi bir sorun için şu adresi ziyaret edebilirsiniz:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) yardım için.
 
 ### Aspose.Words .NET Core ile uyumlu mu?
 Evet, Aspose.Words hem .NET Framework hem de .NET Core ile uyumludur.

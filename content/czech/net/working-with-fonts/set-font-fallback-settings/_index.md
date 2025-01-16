@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Nakonfigurujte nastavení písma
 
-Vytvořte nový`FontSettings` objekt a načtěte záložní nastavení písma ze souboru XML. Tento soubor XML obsahuje pravidla pro záložní písmo.
+ Vytvořte nový`FontSettings` objekt a načtěte záložní nastavení písma ze souboru XML. Tento soubor XML obsahuje pravidla pro záložní písmo.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

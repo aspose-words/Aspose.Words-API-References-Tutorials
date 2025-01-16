@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 Việc đặt mật khẩu là tùy chọn, nhưng nó có thể tăng thêm một lớp bảo mật cho tài liệu của bạn trước khi bạn chỉnh sửa.
 
 ```csharp
-//Nhập mật khẩu có độ dài tối đa 15 ký tự.
+// Nhập mật khẩu có độ dài tối đa 15 ký tự.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Có, việc đặt mật khẩu là tùy chọn. Bạn có thể trực tiếp x
 
 ### Điều gì xảy ra nếu tài liệu đã có loại bảo vệ khác?
 
-Các`doc.Protect(ProtectionType.NoProtection)` phương pháp này đảm bảo rằng mọi loại biện pháp bảo vệ đều được loại bỏ khỏi tài liệu.
+ Các`doc.Protect(ProtectionType.NoProtection)` phương pháp này đảm bảo rằng mọi loại biện pháp bảo vệ đều được loại bỏ khỏi tài liệu.
 
 ### Có cách nào để biết tài liệu có phải là chỉ đọc trước khi xóa hạn chế không?
 

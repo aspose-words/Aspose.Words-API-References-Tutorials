@@ -17,7 +17,7 @@ url: /ru/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 - Базовые знания языка программирования C#.
 - Visual Studio установлена в вашей системе.
 -  Библиотека Aspose.Words for .NET интегрирована в ваш проект. Вы можете скачать ее с[здесь](https://releases.aspose.com/words/net/).
-- Доступ к Aspose.Words для .NET[документация](https://reference.aspose.com/words/net/) для справки.
+-  Доступ к Aspose.Words для .NET[документация](https://reference.aspose.com/words/net/) для справки.
 
 ## Импорт пространств имен
 
@@ -84,4 +84,4 @@ Console.WriteLine(doc.GetText());
 Aspose.Words для .NET оптимизирован для эффективной обработки больших документов, в том числе с большим количеством отслеживаемых изменений.
 
 ### Где я могу найти дополнительные ресурсы и поддержку для Aspose.Words для .NET?
-Вы можете изучить подробную документацию и получить поддержку от сообщества Aspose.Words for .NET по адресу[Форум Aspose.Words](https://forum.aspose.com/c/words/8).
+ Вы можете изучить подробную документацию и получить поддержку от сообщества Aspose.Words for .NET по адресу[Форум Aspose.Words](https://forum.aspose.com/c/words/8).

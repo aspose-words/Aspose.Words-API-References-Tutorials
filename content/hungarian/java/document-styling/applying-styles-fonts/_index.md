@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /hu/java/document-styling/applying-styles-fonts/
 ---
-dokumentumfeldolgozás világában az Aspose.Words for Java a dokumentumok kezelésének és formázásának hatékony eszközeként tűnik ki. Ha egyedi stílusokkal és betűtípusokkal szeretne dokumentumokat létrehozni, akkor jó helyen jár. Ez az átfogó útmutató lépésről lépésre végigvezeti a folyamaton, forráskód-példákkal kiegészítve. A cikk végére birtokában lesz a megfelelő szakértelemnek ahhoz, hogy stílusokat és betűtípusokat könnyedén alkalmazzon dokumentumaihoz.
+A dokumentumfeldolgozás világában az Aspose.Words for Java a dokumentumok kezelésének és formázásának hatékony eszközeként tűnik ki. Ha egyedi stílusokkal és betűtípusokkal szeretne dokumentumokat létrehozni, akkor jó helyen jár. Ez az átfogó útmutató lépésről lépésre végigvezeti a folyamaton, forráskód-példákkal kiegészítve. A cikk végére birtokában lesz a megfelelő szakértelemnek ahhoz, hogy stílusokat és betűtípusokat könnyedén alkalmazzon dokumentumaihoz.
 
 ## Bevezetés
 
@@ -16,7 +16,7 @@ Az Aspose.Words for Java egy Java-alapú API, amely lehetővé teszi a fejleszt�
 ## Stílusok és betűtípusok alkalmazása: Az alapok
 
 ### Kezdő lépések
- A kezdéshez be kell állítania a Java fejlesztői környezetet, és le kell töltenie az Aspose.Words for Java könyvtárat. A letöltési linket megtalálod[itt](https://releases.aspose.com/words/java/). Ügyeljen arra, hogy a könyvtárat is tartalmazza a projektben.
+ kezdéshez be kell állítania a Java fejlesztői környezetet, és le kell töltenie az Aspose.Words for Java könyvtárat. A letöltési linket megtalálod[itt](https://releases.aspose.com/words/java/). Ügyeljen arra, hogy a könyvtárat is tartalmazza a projektben.
 
 ### Dokumentum létrehozása
 Kezdjük egy új dokumentum létrehozásával az Aspose.Words for Java használatával:
@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Több stílus kombinálása a bonyolult dokumentumformázás érdekében:
 
 ```java
-//Kombinálja a stílusokat az egyedi megjelenés érdekében
+// Kombinálja a stílusokat az egyedi megjelenés érdekében
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Az Aspose.Words for Java hatékony feltételes formázási lehetőségeket bizto
 Teljesen! Az Aspose.Words for Java a betűtípusok és karakterek széles skáláját támogatja különböző nyelvekből és szkriptekből.
 
 ### Hogyan adhatok hiperhivatkozásokat a szöveghez meghatározott stílusokkal?
- Ha hiperhivatkozásokat szeretne hozzáadni a szöveghez, használja a`FieldHyperlink`osztály stílusokkal kombinálva a kívánt formázás eléréséhez.
+ Ha hiperhivatkozásokat szeretne hozzáadni a szöveghez, használja a`FieldHyperlink` osztály stílusokkal kombinálva a kívánt formázás eléréséhez.
 
 ### Vannak-e korlátozások a dokumentum méretét vagy összetettségét illetően?
 Az Aspose.Words for Java különböző méretű és összetettségű dokumentumokat tud kezelni. A rendkívül nagy dokumentumok azonban további memóriaforrásokat igényelhetnek.

@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /id/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## Pengantar Tanda Tangan Digital
 
 Tanda tangan digital berfungsi sebagai padanan elektronik dari tanda tangan tulisan tangan. Tanda tangan digital menyediakan cara untuk memverifikasi keaslian, integritas, dan asal dokumen elektronik. Saat dokumen ditandatangani secara digital, hash kriptografi dibuat berdasarkan konten dokumen. Hash ini kemudian dienkripsi menggunakan kunci pribadi penanda tangan, yang menghasilkan tanda tangan digital. Siapa pun yang memiliki kunci publik terkait dapat memverifikasi tanda tangan dan memastikan keaslian dokumen.
@@ -25,7 +24,7 @@ Untuk memulai pengelolaan tanda tangan digital menggunakan Aspose.Words untuk Py
 2. Impor Modul yang Diperlukan: Impor modul yang diperlukan dalam skrip Python Anda:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## Memuat dan Mengakses Dokumen
@@ -33,7 +32,7 @@ Untuk memulai pengelolaan tanda tangan digital menggunakan Aspose.Words untuk Py
 Sebelum menambahkan atau memverifikasi tanda tangan digital, Anda perlu memuat dokumen menggunakan Aspose.Words:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## Menambahkan Tanda Tangan Digital ke Dokumen
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 Untuk menambahkan tanda tangan digital ke dokumen, Anda memerlukan sertifikat digital:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 Sekarang, tandatangani dokumennya:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## Memverifikasi Tanda Tangan Digital
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## Menghapus Tanda Tangan Digital
-
-Untuk menghapus tanda tangan digital dari dokumen:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## Memastikan Keaslian Dokumen
-
-Tanda tangan digital memastikan keaslian dokumen dengan mengonfirmasi sumber dan integritas dokumen. Tanda tangan digital melindungi dokumen dari manipulasi dan modifikasi yang tidak sah.
-
 ## Menyesuaikan Tampilan Tanda Tangan Digital
 
 Anda dapat menyesuaikan tampilan tanda tangan digital:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## Kesimpulan

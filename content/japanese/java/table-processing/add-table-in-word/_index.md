@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -73,44 +76,7 @@ doc.getFirstSection().getBody().appendChild(table);
 Word文書を目的の場所に保存するには、`save()`方法。
 
 ```java
-doc.save(""output.docx"");
-```
-
-## ステップ9: コードを完成させる
-
-Aspose.Words for Java を使用して Word に表を追加するための完全なコードは次のとおりです。
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        //ステップ5: 新しいWord文書を作成する
-        Document doc = new Document();
-
-        //ステップ6: テーブルを作成し、行を追加する
-        Table table = new Table(doc);
-        int rowCount = 5; //表の行数
-        int columnCount = 3; //表の列数
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        //ステップ7: ドキュメントに表を追加する
-        doc.getFirstSection().getBody().appendChild(table);
-
-        //ステップ8: ドキュメントを保存する
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## 結論

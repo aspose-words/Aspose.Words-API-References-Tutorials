@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
-그만큼`Styles` 의 속성`Document` 클래스는 문서에서 사용 가능한 모든 스타일을 사용할 수 있게 해줍니다. 우리는 다음을 사용합니다.`StyleIdentifier.Quote`견적 스타일을 선택하세요.
+ 그만큼`Styles` 의 속성`Document` 클래스는 문서에서 사용 가능한 모든 스타일을 사용할 수 있게 해줍니다. 우리는 다음을 사용합니다.`StyleIdentifier.Quote`견적 스타일을 선택하세요.
 
 ## 4단계: 구조화된 문서 태그에 스타일 적용
 

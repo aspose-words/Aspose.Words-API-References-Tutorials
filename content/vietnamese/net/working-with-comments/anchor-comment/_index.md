@@ -127,7 +127,7 @@ Bình luận neo được sử dụng để làm nổi bật và bình luận v�
 Có, bạn có thể thêm nhiều bình luận vào cùng một phần văn bản bằng cách xác định nhiều phạm vi bình luận.
 
 ### Aspose.Words cho .NET có miễn phí sử dụng không?
-Aspose.Words cho .NET cung cấp bản dùng thử miễn phí mà bạn có thể tải xuống[đây](https://releases.aspose.com/) . Để có đầy đủ tính năng, bạn có thể mua giấy phép[đây](https://purchase.aspose.com/buy).
+ Aspose.Words cho .NET cung cấp bản dùng thử miễn phí mà bạn có thể tải xuống[đây](https://releases.aspose.com/) . Để có đầy đủ tính năng, bạn có thể mua giấy phép[đây](https://purchase.aspose.com/buy).
 
 ### Tôi có thể tùy chỉnh giao diện của bình luận không?
 Trong khi Aspose.Words tập trung vào chức năng, thì giao diện của các bình luận trong tài liệu Word thường do chính Word kiểm soát.

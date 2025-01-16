@@ -129,4 +129,4 @@ Dengan keterampilan ini, Anda dapat menyempurnakan tampilan visual tabel Anda, m
  Tentu saja! Anda dapat menggunakan warna apa pun yang tersedia di`System.Drawing.Color` kelas.
 
 ### Bagaimana cara menyelaraskan tabel secara horizontal dan berpusat?  
-Itu`table.Alignment = TableAlignment.Center;` Baris dalam kode memusatkan tabel secara horizontal pada halaman.
+ Itu`table.Alignment = TableAlignment.Center;` Baris dalam kode memusatkan tabel secara horizontal pada halaman.

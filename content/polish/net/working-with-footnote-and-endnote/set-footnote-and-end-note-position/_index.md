@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- tym kodzie zamień`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką, gdzie znajduje się Twój dokument.
+ tym kodzie zamień`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, gdzie znajduje się Twój dokument.
 
 ## Krok 2: Ustaw pozycję przypisu
 
@@ -93,4 +93,4 @@ Aspose.Words for .NET jest przeznaczony dla aplikacji .NET, ale można go używa
 
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację Aspose.Words dla .NET?
 
-Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
+ Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).

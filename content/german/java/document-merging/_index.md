@@ -14,7 +14,7 @@ Tutorials zum Zusammenführen von Dokumenten mit Aspose.Words für Java bieten e
 
 ## Detaillierte Beschreibung der Dokumentzusammenführung
 
-In diesen Tutorials lernen Entwickler die Grundlagen der Dokumentzusammenführung kennen und verstehen ihre Bedeutung in Dokumentverarbeitungs-Workflows. Aspose.Words für Java bietet einen vielseitigen Satz von Tools zur Verarbeitung verschiedener Dateiformate, darunter DOCX, DOC, RTF und ODT, und gewährleistet so nahtlose Kompatibilität während des Zusammenführungsprozesses. Mit einem Schwerpunkt auf Effizienz und Genauigkeit behandeln die Tutorials den Umgang mit verschiedenen Szenarien, z. B. das Zusammenführen von Dokumenten mit unterschiedlicher Seitenausrichtung und das Beibehalten von Hyperlinks. Die Schritt-für-Schritt-Anleitungen und Codebeispiele erleichtern Entwicklern die Implementierung der Dokumentzusammenführungsfunktion in ihren Java-Anwendungen.
+In diesen Tutorials lernen Entwickler die Grundlagen der Dokumentzusammenführung kennen und verstehen ihre Bedeutung in Dokumentverarbeitungsabläufen. Aspose.Words für Java bietet einen vielseitigen Satz von Tools zur Verarbeitung verschiedener Dateiformate, darunter DOCX, DOC, RTF und ODT, und gewährleistet so nahtlose Kompatibilität während des Zusammenführungsprozesses. Mit Schwerpunkt auf Effizienz und Genauigkeit behandeln die Tutorials den Umgang mit verschiedenen Szenarien, z. B. das Zusammenführen von Dokumenten mit unterschiedlicher Seitenausrichtung und das Beibehalten von Hyperlinks. Die Schritt-für-Schritt-Anleitungen und Codebeispiele erleichtern Entwicklern die Implementierung der Dokumentzusammenführungsfunktion in ihren Java-Anwendungen.
 
 ## Fortgeschrittene Techniken für optimales Zusammenführen von Dokumenten
 
@@ -34,5 +34,3 @@ Erfahren Sie, wie Sie mit Aspose.Words für Java Dokumente zusammenfügen und an
 Erfahren Sie, wie Sie mit Aspose.Words in Java Dokumente auf Unterschiede prüfen. Unsere Schritt-für-Schritt-Anleitung sorgt für eine genaue Dokumentenverwaltung.
 ### [Zusammenführen von Dokumenten mit DocumentBuilder](./merging-documents-documentbuilder/)
 Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für Java bearbeiten. Erstellen, bearbeiten, zusammenführen und konvertieren Sie Dokumente programmgesteuert in Java.
-### [Dokumentenaufteilung und -extraktion](./document-splitting-extraction/)
-Erfahren Sie, wie Sie mit Aspose.Words für Java mühelos Dokumente aufteilen und extrahieren. Vereinfachen Sie Ihre Dokumentverarbeitungsaufgaben mit einer Schritt-für-Schritt-Anleitung.

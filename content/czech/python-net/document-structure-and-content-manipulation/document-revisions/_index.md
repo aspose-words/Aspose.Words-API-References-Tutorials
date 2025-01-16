@@ -16,18 +16,18 @@ Revize dokumentu zahrnují sledování změn provedených v dokumentu v průběh
 
 ## Nastavení Aspose.Words pro Python
 
- Než začneme, ujistěte se, že máte nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/python/). Po instalaci můžete do skriptu Python importovat potřebné moduly a začít.
+Než začneme, ujistěte se, že máte nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/python/). Po instalaci můžete do skriptu Python importovat potřebné moduly a začít.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
-## Načítání a zobrazení dokumentu
+## Načtení a zobrazení dokumentu
 
 Chcete-li pracovat s dokumentem, musíte jej nejprve načíst do aplikace Python. K načtení dokumentu a zobrazení jeho obsahu použijte následující fragment kódu:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 Když jsou v dokumentu provedeny jakékoli změny, Aspose.Words je může automaticky sledovat jako revize. Pokud například chceme nahradit konkrétní slovo, můžeme tak učinit a zároveň sledovat změnu:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words vám umožňuje porovnat dva dokumenty a vizualizovat rozdíly mezi nimi:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 Spolupracovníci mohou k dokumentu přidávat komentáře a anotace. Tyto prvky můžete spravovat programově:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 Můžete upravit, jak se revize v dokumentu zobrazí, například změnit barvu vloženého a odstraněného textu:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Ukládání a sdílení dokumentů
@@ -98,18 +98,11 @@ doc.save("final_document.docx")
 
 Sdílejte konečný dokument se spolupracovníky pro další zpětnou vazbu.
 
-## Tipy pro efektivní spolupráci
-
-1. Jasně označte revize smysluplnými komentáři.
-2. Sdělte pokyny k revizím všem spolupracovníkům.
-3. Pravidelně kontrolujte a přijímejte/odmítejte revize.
-4. Použijte funkci porovnání Aspose.Words pro komplexní analýzu dokumentů.
-
 ## Závěr
 
 Aspose.Words pro Python zjednodušuje revize a sledování dokumentů, zlepšuje spolupráci a zajišťuje integritu dokumentů. Díky jeho výkonným funkcím můžete zjednodušit proces kontroly, přijímání a správy změn ve vašich dokumentech.
 
-## Nejčastější dotazy
+## FAQ
 
 ### Jak nainstaluji Aspose.Words pro Python?
 

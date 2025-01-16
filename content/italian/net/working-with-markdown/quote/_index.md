@@ -2,7 +2,7 @@
 title: Citazione
 linktitle: Citazione
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come aggiungere virgolette e virgolette nidificate ai tuoi documenti Word usando Aspose.Words per .NET. Segui questa guida passo passo per padroneggiare la creazione di documenti.
+description: Scopri come aggiungere virgolette e virgolette annidate ai tuoi documenti Word usando Aspose.Words per .NET. Segui questa guida passo passo per padroneggiare la creazione di documenti.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/quote/
@@ -44,7 +44,7 @@ Questi namespace ti danno accesso alle classi e ai metodi di cui avrai bisogno p
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-IL`DocumentBuilder` class è il tuo gateway per creare e personalizzare il tuo documento. Consideralo come la tua bacchetta magica per creare documenti Word!
+ IL`DocumentBuilder` class è il tuo gateway per creare e personalizzare il tuo documento. Consideralo come la tua bacchetta magica per creare documenti Word!
 
 ## Passaggio 2: aggiungere un Blockquote
 

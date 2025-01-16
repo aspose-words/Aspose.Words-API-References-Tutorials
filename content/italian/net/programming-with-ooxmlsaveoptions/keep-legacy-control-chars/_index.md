@@ -9,7 +9,7 @@ url: /it/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
 ## Introduzione
 
-Ti sei mai chiesto perché quei caratteri di controllo strani e invisibili nei tuoi documenti Word sono così strani e invisibili? Sono come piccoli gremlin nascosti che possono rovinare formattazione e funzionalità. Fortunatamente, Aspose.Words per .NET fornisce una comoda funzionalità per mantenere intatti questi caratteri di controllo legacy quando si salvano i documenti. In questo tutorial, approfondiremo come gestire questi caratteri di controllo utilizzando Aspose.Words per .NET. Lo spiegheremo passo dopo passo, assicurandoti di comprendere ogni dettaglio lungo il percorso. Pronti per iniziare? Immergiamoci!
+Ti sei mai chiesto perché quei caratteri di controllo strani e invisibili nei tuoi documenti Word ti hanno lasciato perplesso? Sono come piccoli gremlin nascosti che possono rovinare formattazione e funzionalità. Fortunatamente, Aspose.Words per .NET fornisce una comoda funzionalità per mantenere intatti questi caratteri di controllo legacy quando si salvano i documenti. In questo tutorial, approfondiremo come gestire questi caratteri di controllo utilizzando Aspose.Words per .NET. Lo spiegheremo passo dopo passo, assicurandoti di cogliere ogni dettaglio lungo il percorso. Pronto per iniziare? Immergiamoci!
 
 ## Prerequisiti
 

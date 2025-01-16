@@ -81,7 +81,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 是的，`NodeImporter`類別支援匯入具有不同格式樣式的文件。
 
 ### 如果我的文件包含複雜的表格和圖像怎麼辦？
-Aspose.Words for .NET 在導入作業期間處理表格和圖像等複雜結構。
+Aspose.Words for .NET 在導入作業期間處理複雜的結構，例如表格和圖像。
 
 ### Aspose.Words 是否與所有版本的 .NET 相容？
 Aspose.Words 支援 .NET Framework 和 .NET Core 版本以實現無縫整合。

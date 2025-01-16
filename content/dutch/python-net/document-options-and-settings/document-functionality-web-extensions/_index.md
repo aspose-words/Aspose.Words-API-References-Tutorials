@@ -1,6 +1,6 @@
 ---
-title: Documentfunctionaliteit uitbreiden met webextensies
-linktitle: Documentfunctionaliteit uitbreiden met webextensies
+title: Uitbreiding van documentfunctionaliteit met webextensies
+linktitle: Uitbreiding van documentfunctionaliteit met webextensies
 second_title: Aspose.Words Python-API voor documentbeheer
 description: Leer hoe u de functionaliteit van documenten kunt uitbreiden met webextensies met Aspose.Words voor Python. Stapsgewijze handleiding met broncode voor naadloze integratie.
 type: docs
@@ -18,7 +18,7 @@ Voordat we ingaan op de technische details, moet u ervoor zorgen dat u aan de vo
 
 - Basiskennis van Python-programmering.
 -  Aspose.Words voor Python API-referentie (beschikbaar op[hier](https://reference.aspose.com/words/python-net/).
-- Toegang tot Aspose.Words voor Python-bibliotheek (downloaden van[hier](https://releases.aspose.com/words/python/).
+-  Toegang tot Aspose.Words voor Python-bibliotheek (downloaden van[hier](https://releases.aspose.com/words/python/).
 
 ## Aspose.Words instellen voor Python
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Importeer de bibliotheek in uw Python-script.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Een nieuw document maken
@@ -42,7 +42,7 @@ import aspose.words
 Laten we beginnen met het maken van een nieuw document met behulp van Aspose.Words:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Inhoud toevoegen aan het document
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Met Aspose.Words kunt u eenvoudig inhoud aan het document toevoegen:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,33 +61,13 @@ Styling en opmaak spelen een cruciale rol in de presentatie van documenten. Aspo
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Webextensies invoegen
-
-Om een webextensie in het document in te voegen, volgt u deze stappen:
-
-1. Maak de webextensie met HTML, CSS en JavaScript.
-2. Converteer de webextensie naar een base64-gecodeerde tekenreeks.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Voeg de webextensie in het document in:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Interactie met webextensies
 
-kunt met webextensies interacteren met behulp van het gebeurtenisverwerkingsmechanisme van Aspose.Words. Leg gebeurtenissen vast die worden geactiveerd door gebruikersinteracties en pas het gedrag van het document dienovereenkomstig aan.
+U kunt met webextensies interacteren met behulp van het gebeurtenisverwerkingsmechanisme van Aspose.Words. Leg gebeurtenissen vast die worden geactiveerd door gebruikersinteracties en pas het gedrag van het document dienovereenkomstig aan.
 
 ## Documentinhoud wijzigen met extensies
 
@@ -98,7 +78,7 @@ Webextensies kunnen de inhoud van documenten dynamisch wijzigen. U kunt bijvoorb
 Nadat u webextensies hebt geïntegreerd en de nodige wijzigingen hebt aangebracht, kunt u het document opslaan in verschillende formaten die door Aspose worden ondersteund. Woorden:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Tips voor prestatieoptimalisatie
@@ -121,7 +101,7 @@ In deze gids hebben we de kracht van Aspose.Words voor Python onderzocht bij het
 
 ### Hoe maak ik een webextensie?
 
-Om een webextensie te maken, moet u de inhoud van de extensie ontwikkelen met behulp van HTML, CSS en JavaScript. Daarna kunt u de extensie in uw document invoegen met behulp van de meegeleverde API.
+Om een webextensie te maken, moet u de inhoud van de extensie ontwikkelen met HTML, CSS en JavaScript. Daarna kunt u de extensie in uw document invoegen met behulp van de meegeleverde API.
 
 ### Kan ik de inhoud van een document dynamisch wijzigen met behulp van webextensies?
 

@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Langkah 3: Gunakan DocumentBuilder
 
-Itu`DocumentBuilder` Kelas di Aspose.Words adalah alat yang hebat yang membantu dalam menyusun dokumen. Kita akan menggunakannya untuk menyisipkan bagan ke dalam dokumen kita.
+ Itu`DocumentBuilder` Kelas di Aspose.Words adalah alat yang hebat yang membantu dalam menyusun dokumen. Kita akan menggunakannya untuk menyisipkan bagan ke dalam dokumen kita.
 
  Inisialisasi sebuah instance dari`DocumentBuilder` kelas, meneruskan objek dokumen kita ke konstruktornya.
 

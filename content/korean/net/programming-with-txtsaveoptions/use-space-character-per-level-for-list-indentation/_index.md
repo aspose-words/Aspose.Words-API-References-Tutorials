@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIn
 ## 자주 묻는 질문
 
 ### 공백 외에 다른 문자를 목록 들여쓰기에 사용할 수 있나요?
- 예, 목록 들여쓰기에 대해 다른 문자를 지정할 수 있습니다.`Character` 속성에`TxtSaveOptions`.
+ 예, 목록 들여쓰기에 대해 다른 문자를 지정할 수 있습니다.`Character` 속성`TxtSaveOptions`.
 
 ### 목록에 숫자 대신 글머리 기호를 적용하려면 어떻게 해야 하나요?
  사용`ListFormat.ApplyBulletDefault()` 대신에`ApplyNumberDefault()` 요점 목록을 만드세요.

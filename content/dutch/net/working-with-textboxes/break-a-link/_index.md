@@ -100,7 +100,7 @@ Soms kan een tekstvak deel uitmaken van een keten, met andere vakken die eraan z
 textBox.Previous?.BreakForwardLink();
 ```
 
-De`?.` operator zorgt ervoor dat de methode alleen wordt aangeroepen als`Previous` is niet null, waardoor mogelijke runtime-fouten worden voorkomen.
+ De`?.` operator zorgt ervoor dat de methode alleen wordt aangeroepen als`Previous` is niet null, waardoor mogelijke runtime-fouten worden voorkomen.
 
 ## Conclusie
 

@@ -22,7 +22,7 @@ Om afbeeldingen op te slaan in TIFF-formaat met drempelcontrole, volgt u deze st
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setTiffCompression(TiffCompression.CCITT_3);
 saveOptions.setImageColorMode(ImageColorMode.GRAYSCALE);
 saveOptions.setTiffBinarizationMethod(ImageBinarizationMethod.FLOYD_STEINBERG_DITHERING);
@@ -36,7 +36,7 @@ Om een specifieke pagina als een TIFF-bestand met meerdere pagina's op te slaan,
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(new PageRange(0, 1)));
 saveOptions.setTiffCompression(TiffCompression.CCITT_4);
 saveOptions.setResolution(160f);
@@ -49,7 +49,7 @@ Om afbeeldingen op te slaan als 1 BPP geïndexeerde PNG, volgt u deze stappen:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(1));
 saveOptions.setImageColorMode(ImageColorMode.BLACK_AND_WHITE);
 saveOptions.setPixelFormat(ImagePixelFormat.FORMAT_1_BPP_INDEXED);
@@ -62,7 +62,7 @@ Om een specifieke pagina als JPEG op te slaan met aanpassingsopties, gebruikt u 
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
+ImageSaveOptions options = new ImageSaveOptions();
 options.setPageSet(new PageSet(0));
 options.setImageBrightness(0.3f);
 options.setImageContrast(0.7f);
@@ -76,7 +76,7 @@ U kunt een callback gebruiken om het opslaan van pagina's aan te passen. Hier is
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setPageSet(new PageSet(new PageRange(0, doc.getPageCount() - 1)));
 imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
 doc.save("Your Directory Path" + "PageSavingCallback.png", imageSaveOptions);
@@ -96,7 +96,7 @@ private static class HandlePageSavingCallback implements IPageSavingCallback {
 public void exposeThresholdControlForTiffBinarization() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+	ImageSaveOptions saveOptions = new ImageSaveOptions();
 	{
 		saveOptions.setTiffCompression(TiffCompression.CCITT_3);
 		saveOptions.setImageColorMode(ImageColorMode.GRAYSCALE);
@@ -110,7 +110,7 @@ public void getTiffPageRange() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
-	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+	ImageSaveOptions saveOptions = new ImageSaveOptions();
 	{
 		saveOptions.setPageSet(new PageSet(new PageRange(0, 1))); saveOptions.setTiffCompression(TiffCompression.CCITT_4); saveOptions.setResolution(160f);
 	}
@@ -120,7 +120,7 @@ public void getTiffPageRange() throws Exception
 public void format1BppIndexed() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+	ImageSaveOptions saveOptions = new ImageSaveOptions();
 	{
 		saveOptions.setPageSet(new PageSet(1));
 		saveOptions.setImageColorMode(ImageColorMode.BLACK_AND_WHITE);
@@ -132,7 +132,7 @@ public void format1BppIndexed() throws Exception
 public void getJpegPageRange() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
+	ImageSaveOptions options = new ImageSaveOptions();
 	// Stel de "PageSet" in op "0" om alleen de eerste pagina van een document te converteren.
 	options.setPageSet(new PageSet(0));
 	// Wijzig de helderheid en het contrast van de afbeelding.
@@ -148,7 +148,7 @@ public void getJpegPageRange() throws Exception
 public static void pageSavingCallback() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+	ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 	{
 		imageSaveOptions.setPageSet(new PageSet(new PageRange(0, doc.getPageCount() - 1)));
 		imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
@@ -174,7 +174,7 @@ hebt geleerd hoe u afbeeldingen uit documenten kunt opslaan met Aspose.Words voo
  U kunt het afbeeldingsformaat wijzigen door het gewenste formaat in het veld op te geven.`ImageSaveOptions` Om bijvoorbeeld als PNG op te slaan, gebruikt u`SaveFormat.PNG` zoals weergegeven in de code:
 
 ```java
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 ```
 
 ### Kan ik de compressie-instellingen voor TIFF-afbeeldingen aanpassen?

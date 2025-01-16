@@ -150,7 +150,7 @@ Aspose.Words for Java'daki temizleme seçenekleri, posta birleştirme işlemi s�
 
 ###  Amacı nedir?`REMOVE_UNUSED_REGIONS` cleanup option?
 
-The`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` seçeneği, posta birleştirme işlemi sırasında karşılık gelen verisi olmayan bir belgedeki bölgeleri kaldırmak için kullanılır. Kullanılmayan yer tutuculardan kurtularak belgenizin düzenli kalmasına yardımcı olur.
+ The`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` seçeneği, posta birleştirme işlemi sırasında karşılık gelen verisi olmayan bir belgedeki bölgeleri kaldırmak için kullanılır. Kullanılmayan yer tutuculardan kurtularak belgenizin düzenli kalmasına yardımcı olur.
 
 ### Aspose.Words for Java kullanarak bir belgeden boş tablo satırlarını kaldırabilir miyim?
 
@@ -166,7 +166,7 @@ The`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` seçeneği, posta birleştirm
 
 ###  Aradaki fark nedir?`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-The`REMOVE_EMPTY_FIELDS` seçeneği, posta birleştirme işlemi sırasında veri içermeyen veya boş olan birleştirme alanlarını kaldırır. Öte yandan,`REMOVE_UNUSED_FIELDS`seçeneği birleştirme sırasında veriyle doldurulmayan birleştirme alanlarını kaldırır. Aralarındaki seçim, içeriği olmayan alanları mı yoksa belirli birleştirme işleminde kullanılmayan alanları mı kaldırmak istediğinize bağlıdır.
+ The`REMOVE_EMPTY_FIELDS` seçeneği, posta birleştirme işlemi sırasında veri içermeyen veya boş olan birleştirme alanlarını kaldırır. Öte yandan,`REMOVE_UNUSED_FIELDS`seçeneği birleştirme sırasında veriyle doldurulmayan birleştirme alanlarını kaldırır. Aralarındaki seçim, içeriği olmayan alanları mı yoksa belirli birleştirme işleminde kullanılmayan alanları mı kaldırmak istediğinize bağlıdır.
 
 ### Noktalama işaretlerinin bulunduğu paragrafların kaldırılmasını nasıl sağlayabilirim?
 

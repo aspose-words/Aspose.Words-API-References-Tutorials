@@ -12,7 +12,7 @@ url: /ja/python-net/document-structure-and-content-manipulation/document-paragra
 
 ## Python 用 Aspose.Words の紹介
 
-Aspose.Words for Python は、開発者が Python プログラミングを使用して Word 文書を操作できるようにする強力なライブラリです。Word 文書をプログラムで作成、編集、書式設定するための幅広い機能を提供し、文書操作を Python アプリケーションにシームレスに統合します。
+Aspose.Words for Python は、開発者が Python プログラミングを使用して Word 文書を操作できるようにする強力なライブラリです。プログラムで Word 文書を作成、編集、書式設定するための幅広い機能を提供し、文書操作を Python アプリケーションにシームレスに統合します。
 
 ## はじめに: Aspose.Words のインストール
 
@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## 基本的なテキスト書式設定
 
-Word文書内のテキストの書式設定は、重要な点を強調し、読みやすさを向上させるために不可欠です。Aspose.Wordsでは、次のようなさまざまな書式設定オプションを適用できます。**bold**, *italic*、下線、フォントサイズ:
+Word 文書内のテキストの書式設定は、重要な点を強調し、読みやすさを向上させるために不可欠です。Aspose.Words では、太字、斜体、下線、フォント サイズなど、さまざまな書式設定オプションを適用できます。
 
 ```python
 # Apply basic text formatting
@@ -172,8 +172,6 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 ## 結論
 
 この包括的なガイドでは、Word 文書内の段落とテキストをフォーマットする Aspose.Words for Python の機能について説明しました。この強力なライブラリを使用することで、開発者は文書のフォーマットをシームレスに自動化し、コンテンツのプロフェッショナルで洗練された外観を確保できます。
-
----
 
 ## よくある質問
 

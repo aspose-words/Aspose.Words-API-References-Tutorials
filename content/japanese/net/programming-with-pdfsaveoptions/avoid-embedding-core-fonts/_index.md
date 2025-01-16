@@ -9,7 +9,7 @@ url: /ja/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
 ## 導入
 
-PDF ファイルがなぜこんなに大きいのかと首をかしげたことはありませんか? そう思っているのはあなただけではありません。よくある原因の 1 つは、Arial や Times New Roman などのコア フォントを埋め込むことです。幸い、Aspose.Words for .NET にはこの問題に対処する優れた方法があります。このチュートリアルでは、これらのコア フォントを埋め込まないことで PDF ファイルのサイズを縮小する方法を紹介します。早速始めましょう!
+PDF ファイルがなぜこんなに大きいのかと首をかしげたことはありませんか? そう思っているのはあなただけではありません。よくある原因の 1 つは、Arial や Times New Roman などのコア フォントを埋め込むことです。幸い、Aspose.Words for .NET にはこの問題に対処する優れた方法があります。このチュートリアルでは、これらのコア フォントを埋め込まないようにして PDF ファイルのサイズを縮小する方法を紹介します。早速始めましょう!
 
 ## 前提条件
 
@@ -64,7 +64,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-設定`UseCoreFonts`に`true`Arial や Times New Roman などのコアフォントが PDF に埋め込まれないようにし、ファイル サイズを大幅に削減します。
+設定`UseCoreFonts`に`true`Arial や Times New Roman などのコアフォントが PDF に埋め込まれないようにすることで、ファイル サイズが大幅に削減されます。
 
 ## ステップ4: ドキュメントをPDFとして保存する
 

@@ -40,8 +40,6 @@ Aprenda a utilizar las funciones de comentarios en documentos de Word con Aspose
 Aprenda a manejar campos y datos en documentos de Word con Aspose.Words para Python. Guía paso a paso con ejemplos de código para contenido dinámico, automatización y más. 
 ### [Comprensión de las fuentes y el estilo de texto en documentos de Word](./document-fonts/)
 Explora el mundo de las fuentes y el estilo de texto en documentos de Word. Aprende a mejorar la legibilidad y el atractivo visual con Aspose.Words para Python. Guía completa con ejemplos paso a paso.
-### [Exploración de notas al pie y notas finales en documentos de Word](./document-footnotes-endnotes/)
-Descubra cómo usar notas al pie y notas finales de manera eficaz en documentos de Word con Aspose.Words para Python. Aprenda a agregar, personalizar y administrar estos elementos mediante programación. 
 ### [Dominar los campos de formulario y la captura de datos en documentos de Word](./document-form-fields/)
 Domine el arte de crear y administrar campos de formulario en documentos de Word con Aspose.Words para Python. Aprenda a capturar datos de manera eficiente y mejore la participación del usuario. 
 ### [Cómo manipular encabezados y pies de página en documentos de Word](./document-headers-footers/)
@@ -52,8 +50,6 @@ Aprenda a gestionar la separación de palabras y el flujo de texto en documentos
 Aprenda a crear y administrar listas en documentos de Word con la API de Python de Aspose.Words. Guía paso a paso con código fuente para formatear, personalizar, anidar y más listas. 
 ### [Cómo utilizar el formato Markdown en documentos de Word](./document-markdown/)
 Aprenda a integrar el formato Markdown en documentos de Word con Aspose.Words para Python. Guía paso a paso con ejemplos de código para la creación de contenido dinámico y visualmente atractivo. 
-### [Comprensión y navegación por los nodos de documentos](./document-nodes/)
-Aprenda a manipular documentos de Word con Aspose.Words para Python. Esta guía paso a paso cubre la carga, el formato, las tablas, las imágenes y más. ¡Mejore sus habilidades de procesamiento de documentos hoy mismo!
 ### [Incrustar objetos OLE y controles ActiveX en documentos de Word](./document-ole-objects-active-x/)
  Aprenda a incrustar objetos OLE y controles ActiveX en documentos de Word con Aspose.Words para Python. Cree documentos interactivos y dinámicos sin problemas.
 ### [Cómo dar formato a párrafos y textos en documentos de Word](./document-paragraphs/)
@@ -65,4 +61,4 @@ Aprenda a administrar secciones y diseños de documentos con Aspose.Words para P
 ### [Cómo mejorar el contenido visual con cuadros de texto en documentos de Word](./document-textboxes/)
 Mejore las imágenes de los documentos con Aspose.Words Python. Aprenda paso a paso cómo crear y personalizar cuadros de texto en documentos de Word. Mejore el diseño, el formato y el estilo del contenido para obtener documentos atractivos.
 ### [Cómo desbloquear la automatización avanzada con macros de VBA en documentos de Word](./document-vba-macros/)
-Desbloquee la automatización avanzada en documentos de Word con la API de Python de Aspose.Words y las macros de VBA. Aprenda paso a paso con el código fuente y las preguntas frecuentes. Mejore la productividad ahora. Acceda en[Enlace].
+ Desbloquee la automatización avanzada en documentos de Word con la API de Python de Aspose.Words y las macros de VBA. Aprenda paso a paso con el código fuente y las preguntas frecuentes. Mejore la productividad ahora. Acceda en[Enlace].

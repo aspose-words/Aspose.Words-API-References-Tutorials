@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-The`ImportFormatMode.KEEP_SOURCE_FORMATTING` seçeneği kaynak belgelerin biçimlendirmesinin korunmasını sağlar.
+ The`ImportFormatMode.KEEP_SOURCE_FORMATTING` seçeneği kaynak belgelerin biçimlendirmesinin korunmasını sağlar.
 
 ## Adım 5: Sonucun Kaydedilmesi
 

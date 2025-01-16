@@ -54,13 +54,13 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. lépés: DocumentBuilder objektum létrehozása
 
-A`DocumentBuilder` osztály egy hatékony eszköz az Aspose.Words könyvtárban. Segítségével navigálhatunk és kezelhetjük a dokumentumot.
+ A`DocumentBuilder` osztály egy hatékony eszköz az Aspose.Words könyvtárban. Segítségével navigálhatunk és kezelhetjük a dokumentumot.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
- Ebben a lépésben létrehoztunk egy`DocumentBuilder` objektum céldokumentumunkhoz. Ez segít abban, hogy tartalmat illesszünk be a dokumentumba.
+ Ebben a lépésben létrehoztunk egy`DocumentBuilder` objektum céldokumentumunkhoz. Ez segít nekünk tartalmat beilleszteni a dokumentumba.
 
 ## 4. lépés: Ugrás a dokumentum végére
 

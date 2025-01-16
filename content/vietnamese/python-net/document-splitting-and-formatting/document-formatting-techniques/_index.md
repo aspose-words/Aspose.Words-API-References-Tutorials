@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Áp dụng Kiểu và Kích thước Phông chữ
-
-Tăng cường khả năng đọc và tính hấp dẫn trực quan của tài liệu bằng cách áp dụng kiểu phông chữ và kích thước. Sử dụng mã sau để thay đổi kiểu phông chữ và kích thước của đoạn văn:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Định dạng đoạn văn và tiêu đề
+## Định dạng đoạn văn
 
 Để cấu trúc tài liệu của bạn hiệu quả, việc định dạng các đoạn văn và tiêu đề là rất quan trọng. Thực hiện điều này bằng cách sử dụng mã bên dưới:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Làm việc với danh sách và dấu đầu dòng
 
 Danh sách và dấu đầu dòng sắp xếp nội dung và cung cấp sự rõ ràng. Triển khai chúng bằng Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Quản lý Bố cục Trang và Lề
+## Quản lý bố cục trang
 
 Kiểm soát bố cục trang và lề để trình bày tối ưu:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Áp dụng các kiểu và chủ đề

@@ -15,7 +15,7 @@ Aspose.Words per .NET è una potente libreria per la gestione programmatica di d
 
 Prima di passare al codice, assicuriamoci di aver impostato tutto:
 
-1.  Aspose.Words per .NET: devi avere Aspose.Words per .NET installato. Puoi scaricarlo da[Pagina delle release di Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words per .NET: devi avere Aspose.Words per .NET installato. Puoi scaricarlo da[Pagina delle release di Aspose](https://releases.aspose.com/words/net/).
 2. Ambiente di sviluppo: Visual Studio o qualsiasi altro ambiente di sviluppo C#.
 3. Conoscenza di base di C#: sarà utile comprendere le basi della programmazione in C#.
 
@@ -39,7 +39,7 @@ Prima di iniziare a manipolare il documento, devi definire il percorso della dir
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo in cui desideri salvare i tuoi documenti.
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo in cui desideri salvare i tuoi documenti.
 
 ## Passaggio 2: creazione di un nuovo documento
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## Passaggio 4: sostituzione del testo utilizzando il carattere meta di interruzione di paragrafo
 
- I meta caratteri possono rappresentare vari elementi come paragrafi, tabulazioni e interruzioni di riga. Qui, usiamo`&p` per rappresentare un'interruzione di paragrafo.
+ meta caratteri possono rappresentare vari elementi come paragrafi, tabulazioni e interruzioni di riga. Qui, usiamo`&p` per rappresentare un'interruzione di paragrafo.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");
@@ -101,7 +101,7 @@ Congratulazioni! Hai manipolato con successo un documento Word usando metacaratt
 ## Domande frequenti
 
 ### Cosa sono i metacaratteri in Aspose.Words per .NET?
-I metacaratteri sono caratteri speciali utilizzati per rappresentare elementi come interruzioni di paragrafo, interruzioni di riga manuali, tabulazioni, ecc. nei modelli di ricerca.
+metacaratteri sono caratteri speciali utilizzati per rappresentare elementi come interruzioni di paragrafo, interruzioni di riga manuali, tabulazioni, ecc. nei modelli di ricerca.
 
 ### Come faccio a installare Aspose.Words per .NET?
  Puoi scaricarlo da[Pagina delle release di Aspose](https://releases.aspose.com/words/net/)Seguire le istruzioni di installazione fornite.

@@ -73,7 +73,7 @@ Dit codefragment gaat ervan uit dat u de eerste tabel in het document wilt klone
 Table tableClone = (Table) table.Clone(true);
 ```
 
-De`true` parameter zorgt ervoor dat de kloon alle opmaak en inhoud uit de originele tabel bevat.
+ De`true` parameter zorgt ervoor dat de kloon alle opmaak en inhoud uit de originele tabel bevat.
 
 ## Stap 5: De gekloonde tabel in het document invoegen
 
@@ -115,7 +115,7 @@ Het klonen van tabellen in Word-documenten met Aspose.Words voor .NET is een een
 Ja, u kunt meerdere tabellen klonen door door elke tabel in het document te itereren en dezelfde kloonlogica toe te passen.
 
 ### Wat als de tabel samengevoegde cellen bevat?
-De`Clone` methode behoudt alle opmaak, inclusief samengevoegde cellen, waardoor een exacte kopie van de tabel wordt gegarandeerd.
+ De`Clone` methode behoudt alle opmaak, inclusief samengevoegde cellen, waardoor een exacte kopie van de tabel wordt gegarandeerd.
 
 ### Hoe kloon ik een specifieke tabel op naam?
 U kunt tabellen identificeren aan de hand van aangepaste eigenschappen of unieke inhoud en vervolgens de gewenste tabel klonen met vergelijkbare stappen.

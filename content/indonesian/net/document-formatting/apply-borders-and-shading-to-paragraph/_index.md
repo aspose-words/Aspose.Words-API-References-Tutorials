@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Itu`Document` objek mewakili seluruh dokumen Word kita, dan`DocumentBuilder` membantu kami menambahkan dan memformat konten.
+ Itu`Document` objek mewakili seluruh dokumen Word kita, dan`DocumentBuilder` membantu kami menambahkan dan memformat konten.
 
 ## Langkah 3: Tentukan Batas Paragraf
 
@@ -72,7 +72,7 @@ Di sini, kami menetapkan jarak 20 poin antara teks dan batas. Batas di semua sis
 
 ## Langkah 4: Terapkan Bayangan pada Paragraf
 
-Batasan itu bagus, tetapi mari kita tingkatkan dengan sedikit bayangan. Kita akan menggunakan pola silang diagonal dengan campuran warna untuk membuat paragraf kita menonjol.
+Batasan itu bagus, tetapi mari kita tingkatkan dengan beberapa bayangan. Kita akan menggunakan pola silang diagonal dengan campuran warna untuk membuat paragraf kita menonjol.
 
 ```csharp
 Shading shading = builder.ParagraphFormat.Shading;

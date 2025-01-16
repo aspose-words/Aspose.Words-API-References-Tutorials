@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-Ten`InsertChart` Metoda wstawia do dokumentu wykres określonego typu (w tym przypadku kolumnowego) i wymiarów.
+ Ten`InsertChart` Metoda wstawia do dokumentu wykres określonego typu (w tym przypadku kolumnowego) i wymiarów.
 
 ## Krok 3: Dostosowywanie serii wykresów
 
@@ -86,7 +86,7 @@ Na koniec sformatujmy liczby na osi Y, aby były bardziej czytelne. To jak doko�
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-Ten`FormatCode` właściwość pozwala ustawić niestandardowy format liczb na osi. W tym przykładzie,`#,##0`zapewnia, że duże liczby będą wyświetlane z przecinkami w przypadku tysięcy.
+ Ten`FormatCode` właściwość pozwala ustawić niestandardowy format liczb na osi. W tym przykładzie,`#,##0`zapewnia, że duże liczby będą wyświetlane z przecinkami w przypadku tysięcy.
 
 ## Krok 5: Zapisywanie dokumentu
 

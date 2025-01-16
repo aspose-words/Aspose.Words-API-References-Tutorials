@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## Text ändern
-
-Sie können Text ändern, indem Sie den Text von Läufen oder Absätzen direkt festlegen:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## Arbeiten mit Formatierungen
 
 Aspose.Words ermöglicht Ihnen das Arbeiten mit Formatierungsstilen:

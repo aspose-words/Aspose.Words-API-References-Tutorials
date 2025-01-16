@@ -15,7 +15,7 @@ Hallo! Haben Sie sich schon einmal gefragt, wie Sie den Schutztyp Ihrer Word-Dok
 
 Bevor wir mit dem Codieren beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET-Bibliothek: Falls noch nicht geschehen, laden Sie die[Aspose.Words für .NET-Bibliothek](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET-Bibliothek: Falls noch nicht geschehen, laden Sie die[Aspose.Words für .NET-Bibliothek](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine IDE wie Visual Studio.
 3. Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen den Lernprozess.
 
@@ -41,7 +41,7 @@ Richten Sie zunächst Ihr C#-Projekt in Visual Studio ein. So geht's:
 
 ## Schritt 2: Laden Sie Ihr Dokument
 
- Nachdem Ihr Projekt nun eingerichtet ist, laden wir das Word-Dokument, das Sie überprüfen möchten. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokument.
+Nachdem Ihr Projekt nun eingerichtet ist, laden wir das Word-Dokument, das Sie überprüfen möchten. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokument.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
@@ -75,13 +75,13 @@ Und da haben Sie es! Sie haben den Schutztyp eines Word-Dokuments erfolgreich mi
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dokumente programmgesteuert erstellen, bearbeiten, konvertieren und bearbeiten können.
 
 ### Kann ich Aspose.Words kostenlos nutzen?
- Sie können beginnen mit einem[Kostenlose Testversion](https://releases.aspose.com/) , aber für die volle Funktionalität müssen Sie eine Lizenz erwerben. Schauen Sie sich die[Kaufoptionen](https://purchase.aspose.com/buy).
+ Sie können beginnen mit einem[Kostenlose Testversion](https://releases.aspose.com/) aber für die volle Funktionalität müssen Sie eine Lizenz erwerben. Schauen Sie sich die[Kaufoptionen](https://purchase.aspose.com/buy).
 
 ### Welche Schutzarten kann Aspose.Words erkennen?
 Aspose.Words kann verschiedene Schutztypen wie NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments und AllowOnlyFormFields erkennen.
 
 ### Wie erhalte ich Unterstützung, wenn Probleme auftreten?
-Bei Problemen können Sie die[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) um Hilfe.
+ Bei Problemen können Sie die[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) um Hilfe.
 
 ### Ist Aspose.Words mit .NET Core kompatibel?
 Ja, Aspose.Words ist sowohl mit .NET Framework als auch mit .NET Core kompatibel.

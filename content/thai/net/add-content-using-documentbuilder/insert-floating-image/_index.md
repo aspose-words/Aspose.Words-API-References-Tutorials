@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-การ`Document` วัตถุแสดงถึงเอกสาร Word และ`DocumentBuilder` ช่วยในการเพิ่มเนื้อหาให้กับมัน
+ การ`Document` วัตถุแสดงถึงเอกสาร Word และ`DocumentBuilder` ช่วยในการเพิ่มเนื้อหาให้กับมัน
 
 ## ขั้นตอนที่ 3: กำหนดเส้นทางของภาพ
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 นี่คือความหมายของแต่ละพารามิเตอร์:
-- `imagePath`เส้นทางไปยังไฟล์รูปภาพของคุณ
+- `imagePath`: เส้นทางไปยังไฟล์รูปภาพของคุณ
 - `RelativeHorizontalPosition.Margin`:ตำแหน่งแนวนอนเทียบกับระยะขอบ
 - `100`:ค่าออฟเซ็ตแนวนอนจากระยะขอบ (เป็นจุด)
 - `RelativeVerticalPosition.Margin`:ตำแหน่งแนวตั้งสัมพันธ์กับระยะขอบ

@@ -22,7 +22,7 @@ Avant de commencer, assurons-nous que nous avons tout ce dont nous avons besoin.
 
 ## Importer des espaces de noms
 
-Avant de nous plonger dans le code, importons les espaces de noms nécessaires. C'est comme si vous mettiez en place vos ingrédients avant de préparer un repas.
+Avant de nous plonger dans le code, importons les espaces de noms nécessaires. C'est comme si vous prépariez vos ingrédients avant de préparer un repas.
 
 ```csharp
 using Aspose.Words;

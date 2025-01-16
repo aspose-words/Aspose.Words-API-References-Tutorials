@@ -280,7 +280,7 @@ Chcete-li dokument rozdělit, můžete uložit určité části do samostatných
 Aspose.Words for Java umožňuje převádět dokumenty do různých formátů, jako jsou PDF, HTML a další.
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Pokročilé stylingové techniky

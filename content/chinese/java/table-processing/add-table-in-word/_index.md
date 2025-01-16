@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -73,44 +76,7 @@ doc.getFirstSection().getBody().appendChild(table);
 使用`save()`方法。
 
 ```java
-doc.save(""output.docx"");
-```
-
-## 步骤 9：完成代码
-
-以下是使用 Aspose.Words for Java 在 Word 中添加表格的完整代码：
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        //步骤 5：创建新的 Word 文档
-        Document doc = new Document();
-
-        //步骤 6：创建表并添加行
-        Table table = new Table(doc);
-        int rowCount = 5; //表中的行数
-        int columnCount = 3; //表中的列数
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        //步骤 7：将表格添加到文档
-        doc.getFirstSection().getBody().appendChild(table);
-
-        //步骤 8：保存文档
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## 结论

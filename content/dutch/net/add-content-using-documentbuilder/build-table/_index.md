@@ -19,7 +19,7 @@ Voordat we aan ons tafelbouwavontuur beginnen, moeten we ervoor zorgen dat we al
 - .NET Framework (4.0 of hoger)
 - Aspose.Words voor .NET-bibliotheek
 
- Als u Aspose.Words nog niet hebt, kunt u dit eenvoudig doen[download het hier](https://releases.aspose.com/words/net/) . Je kunt ook beginnen met een[gratis proefperiode](https://releases.aspose.com/) als je het water wilt testen. Voor degenen die klaar zijn om de sprong te wagen, kun je[een licentie kopen](https://purchase.aspose.com/buy) , of als u meer tijd nodig hebt om te evalueren, pak dan een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
+ Als u Aspose.Words nog niet hebt, kunt u dit eenvoudig doen[download het hier](https://releases.aspose.com/words/net/) . Je kunt ook beginnen met een[gratis proefperiode](https://releases.aspose.com/) als je het water wilt testen. Voor degenen die klaar zijn om de sprong te wagen, kun je[een licentie kopen](https://purchase.aspose.com/buy) of als u meer tijd nodig hebt om te evalueren, pak dan een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
 
 ## Naamruimten importeren
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Door gebruik te maken van`StartTable` vertellen we Aspose.Words dat we op het punt staan een tabel te maken. De`InsertCell` methode voegt de eerste cel toe, en`AutoFit` zorgt ervoor dat onze kolommen een vaste breedte hebben.
+ Door gebruik te maken van`StartTable` , vertellen we Aspose.Words dat we op het punt staan een tabel te maken. De`InsertCell` methode voegt de eerste cel toe, en`AutoFit` zorgt ervoor dat onze kolommen een vaste breedte hebben.
 
 ## Stap 3: Formatteer de eerste rij
 

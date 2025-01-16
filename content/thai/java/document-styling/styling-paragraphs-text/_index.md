@@ -182,25 +182,11 @@ doc.save("AlignmentAndSpacingDocument.docx");
 การสร้างรายการโดยใช้เครื่องหมายหัวข้อย่อยหรือการเรียงลำดับหมายเลขเป็นงานจัดรูปแบบเอกสารทั่วไป Aspose.Words สำหรับ Java จะทำให้เรื่องนี้ง่ายขึ้น ต่อไปนี้เป็นวิธีการสร้างรายการแบบมีเครื่องหมายหัวข้อย่อย:
 
 ```java
-// สร้างเอกสารใหม่
-Document doc = new Document();
-
-// สร้างรายการ
-List list = new List(doc);
-
-// เพิ่มรายการด้วยหัวข้อย่อย
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// เพิ่มรายการลงในเอกสาร
-doc.getFirstSection().getBody().appendChild(list);
-
-// บันทึกเอกสาร
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ในโค้ดนี้ เราสร้างรายการแบบมีหัวข้อย่อยที่มีสามรายการ
@@ -210,24 +196,21 @@ doc.save("BulletedListDocument.docx");
 ไฮเปอร์ลิงก์เป็นสิ่งสำคัญสำหรับการเพิ่มการโต้ตอบให้กับเอกสารของคุณ Aspose.Words สำหรับ Java ช่วยให้คุณแทรกไฮเปอร์ลิงก์ได้อย่างง่ายดาย นี่คือตัวอย่าง:
 
 ```java
-// สร้างเอกสารใหม่
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// สร้างย่อหน้า
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// สร้างไฮเปอร์ลิงก์
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// แทรกไฮเปอร์ลิงก์และเน้นให้โดดเด่นด้วยการจัดรูปแบบแบบกำหนดเอง
+// ไฮเปอร์ลิงก์จะเป็นข้อความที่คลิกได้ซึ่งจะนำเราไปยังตำแหน่งที่ระบุไว้ใน URL
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", เท็จ);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// เพิ่มย่อหน้าลงในเอกสาร
-doc.getFirstSection().getBody().appendChild(para);
-
-// บันทึกเอกสาร
-doc.save("HyperlinkDocument.docx");
+// กด Ctrl + คลิกซ้ายที่ลิงก์ในข้อความใน Microsoft Word จะนำเราไปยัง URL ผ่านหน้าต่างเว็บเบราว์เซอร์ใหม่
+doc.save("InsertHyperlink.docx");
 ```
 
 โค้ดนี้จะแทรกไฮเปอร์ลิงก์ไปยัง "https://www.example.com" พร้อมข้อความ "เยี่ยมชม Example.com"
@@ -237,23 +220,7 @@ doc.save("HyperlinkDocument.docx");
 เอกสารมักต้องการองค์ประกอบภาพ เช่น รูปภาพและรูปร่าง Aspose.Words สำหรับ Java ช่วยให้คุณแทรกรูปภาพและรูปร่างได้อย่างราบรื่น ต่อไปนี้เป็นวิธีการเพิ่มรูปภาพ:
 
 ```java
-// สร้างเอกสารใหม่
-Document doc = new Document();
-
-// สร้างย่อหน้า
-Paragraph para = new Paragraph(doc);
-
-// โหลดภาพจากไฟล์
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// เพิ่มย่อหน้าลงในเอกสาร
-doc.getFirstSection().getBody().appendChild(para);
-
-// บันทึกเอกสาร
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 ในโค้ดนี้เราโหลดรูปภาพจากไฟล์และแทรกเข้าไปในเอกสาร
@@ -287,22 +254,15 @@ doc.save("PageLayoutDocument.docx");
 ส่วนหัวและส่วนท้ายมีความสำคัญในการเพิ่มข้อมูลที่สอดคล้องกันในแต่ละหน้าของเอกสารของคุณ ต่อไปนี้เป็นวิธีการทำงานกับส่วนหัวและส่วนท้าย:
 
 ```java
-// สร้างเอกสารใหม่
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// เข้าถึงส่วนหัวและส่วนท้ายของส่วนแรก
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// เพิ่มเนื้อหาลงในส่วนหัว
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
-
-// เพิ่มเนื้อหาลงในส่วนท้าย
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
 // เพิ่มเนื้อหาลงในเนื้อหาของเอกสาร
 // -
@@ -318,26 +278,45 @@ doc.save("HeaderFooterDocument.docx");
 ตารางเป็นวิธีที่มีประสิทธิภาพในการจัดระเบียบและนำเสนอข้อมูลในเอกสารของคุณ Aspose.Words สำหรับ Java ให้การสนับสนุนอย่างครอบคลุมสำหรับการทำงานกับตาราง นี่คือตัวอย่างการสร้างตาราง:
 
 ```java
-// สร้างเอกสารใหม่
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// สร้างตารางที่มี 3 แถวและ 3 คอลัมน์
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// เพิ่มเนื้อหาลงในเซลล์ตาราง
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//เพิ่มตารางลงในเอกสาร
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// บันทึกเอกสาร
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// การเปลี่ยนการจัดรูปแบบจะนำไปใช้กับเซลล์ปัจจุบัน
+// และเซลล์ใหม่ใดๆ ที่เราสร้างด้วยตัวสร้างภายหลัง
+// สิ่งนี้จะไม่ส่งผลกระทบต่อเซลล์ที่เราเพิ่มไว้ก่อนหน้านี้
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// เพิ่มความสูงของแถวให้พอดีกับข้อความแนวตั้ง
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 ในโค้ดนี้ เราจะสร้างตารางง่ายๆ ที่มี 3 แถวและ 3 คอลัมน์
@@ -354,7 +333,7 @@ Document doc = new Document();
 // -
 
 // บันทึกเอกสารเป็น PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 โค้ดสั้นๆ นี้จะบันทึกเอกสารเป็นไฟล์ PDF
@@ -393,7 +372,7 @@ builder.insertBreak(BreakType.PAGE_BREAK);
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### ฉันจะจัดรูปแบบข้อความเป็น
@@ -414,7 +393,7 @@ run.getFont().setItalic(true);  // ทำให้ข้อความเป็
 ใช่ Aspose.Words สำหรับ Java สามารถใช้งานได้กับ Java 11 และเวอร์ชันใหม่กว่า
 
 ### ฉันจะตั้งค่าระยะขอบหน้าสำหรับส่วนเฉพาะของเอกสารได้อย่างไร
-คุณสามารถตั้งค่าระยะขอบหน้าสำหรับส่วนเฉพาะของเอกสารของคุณได้โดยใช้`PageSetup` ชั้นเรียน นี่คือตัวอย่าง:
+ คุณสามารถตั้งค่าระยะขอบหน้าสำหรับส่วนเฉพาะของเอกสารของคุณได้โดยใช้`PageSetup` ชั้นเรียน นี่คือตัวอย่าง:
 
 ```java
 Section section = doc.getSections().get(0); // รับส่วนแรก

@@ -48,7 +48,7 @@ Aspose.Words には、出力形式と品質を制御するためのさまざま�
 
 ```java
 //画像保存オプションを初期化する
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## ステップ4: ドキュメントページを画像としてレンダリングする

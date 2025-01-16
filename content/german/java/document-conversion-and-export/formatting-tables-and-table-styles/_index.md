@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Erstellen Sie größere Ränder für die erste Zelle dieser Zeile.
+// Erstellen Sie größere Ränder für die erste Zelle dieser Zeile.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -169,7 +169,7 @@ Aspose.Words für Java ist ein robustes Tool, das umfangreiche Funktionen zur Do
 
 ### 1. Kann ich benutzerdefinierte Tabellenstile verwenden, die nicht in den Standardoptionen enthalten sind?
 
-Ja, Sie können benutzerdefinierte Stile definieren und auf Ihre Tabellen anwenden, indem Sie Aspose.Words für Java verwenden. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/java/) für weitere Einzelheiten zum Erstellen benutzerdefinierter Stile.
+ Ja, Sie können benutzerdefinierte Stile definieren und auf Ihre Tabellen anwenden, indem Sie Aspose.Words für Java verwenden. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/java/) für weitere Einzelheiten zum Erstellen benutzerdefinierter Stile.
 
 ### 2. Wie kann ich eine bedingte Formatierung auf Tabellen anwenden?
 

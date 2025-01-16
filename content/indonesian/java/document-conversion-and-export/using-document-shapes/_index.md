@@ -14,7 +14,7 @@ Dalam panduan lengkap ini, kita akan menyelami dunia bentuk dokumen di Aspose.Wo
 
 ## Memulai dengan Bentuk Dokumen
 
-Sebelum kita mulai membuat kode, mari kita siapkan lingkungan kita. Pastikan Anda telah mengintegrasikan Aspose.Words untuk Java ke dalam proyek Anda. Jika belum, Anda dapat mengunduhnya dari situs web Aspose[Unduh Aspose.Words untuk Java](https://releases.aspose.com/words/java/)
+ Sebelum kita mulai membuat kode, mari kita siapkan lingkungan kita. Pastikan Anda telah mengintegrasikan Aspose.Words untuk Java ke dalam proyek Anda. Jika belum, Anda dapat mengunduhnya dari situs web Aspose[Unduh Aspose.Words untuk Java](https://releases.aspose.com/words/java/)
 
 ## Menambahkan Bentuk ke Dokumen
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

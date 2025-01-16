@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-ال`Document` الكائن هو جوهر Aspose.Words. فهو يمثل مستند Word بأكمله.
+ ال`Document` الكائن هو جوهر Aspose.Words. فهو يمثل مستند Word بأكمله.
 
 ## الخطوة 2: إضافة نص إلى المستند
 
@@ -50,7 +50,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Jason give money to Paul.");
 ```
 
-ال`DocumentBuilder` تعتبر الفئة أداة فعالة لإضافة النص وعناصر أخرى إلى مستندك.
+ ال`DocumentBuilder` تعتبر الفئة أداة فعالة لإضافة النص وعناصر أخرى إلى مستندك.
 
 ## الخطوة 3: تحديد نمط التعبيرات العادية
 
@@ -70,7 +70,7 @@ Regex regex = new Regex(@"([A-z]+) give money to ([A-z]+)");
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
-ال`FindReplaceOptions` توفر الفئة خيارات مختلفة لتخصيص عمليات البحث والاستبدال.
+ ال`FindReplaceOptions` توفر الفئة خيارات مختلفة لتخصيص عمليات البحث والاستبدال.
 
 ## الخطوة 5: قم بإجراء الاستبدال
 

@@ -80,7 +80,7 @@ Memperbarui properti cetakan terakhir membantu dalam melacak penggunaan dokumen,
 Ya, Aspose.Words untuk .NET memungkinkan Anda memperbarui berbagai properti dokumen, seperti penulis, judul, subjek, dan lainnya.
 
 ### Apakah Aspose.Words untuk .NET gratis?
-Aspose.Words untuk .NET menawarkan uji coba gratis yang dapat Anda unduh[Di Sini](https://releases.aspose.com/)Untuk penggunaan jangka panjang, Anda perlu membeli lisensi.
+ Aspose.Words untuk .NET menawarkan uji coba gratis yang dapat Anda unduh[Di Sini](https://releases.aspose.com/)Untuk penggunaan jangka panjang, Anda perlu membeli lisensi.
 
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
-Anda dapat menemukan dokumentasi terperinci di Aspose.Words untuk .NET[Di Sini](https://reference.aspose.com/words/net/).
+ Anda dapat menemukan dokumentasi terperinci di Aspose.Words untuk .NET[Di Sini](https://reference.aspose.com/words/net/).

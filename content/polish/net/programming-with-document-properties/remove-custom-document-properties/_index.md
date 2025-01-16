@@ -62,7 +62,7 @@ var customProperties = doc.CustomDocumentProperties;
 
 ### Krok 2.2: Usuń określoną właściwość
 
-Następnie usuń konkretną niestandardową właściwość według jej nazwy. W tym przykładzie usuwamy „Authorized Date”.
+Następnie usuń konkretną niestandardową właściwość według jej nazwy. W tym przykładzie usuwamy „Data autoryzacji”.
 
 ```csharp
 customProperties.Remove("Authorized Date");

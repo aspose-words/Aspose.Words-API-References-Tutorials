@@ -54,12 +54,13 @@ Sie können Aspose.Words verwenden, um bestimmte Textteile kursiv zu gestalten. 
 ```python
 # Import the required classes
 from aspose.words import Document, Font, Style
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply italic style
 font = run.font
@@ -76,12 +77,13 @@ Um Text hervorzuheben, können Sie die Hintergrundfarbe eines Laufs anpassen. So
 ```python
 # Import the required classes
 from aspose.words import Document, Color
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply background color
 run.font.highlight_color = Color.YELLOW
@@ -97,15 +99,16 @@ Die Ausrichtung kann mithilfe von Stilen festgelegt werden. Hier ist ein Beispie
 ```python
 # Import the required classes
 from aspose.words import Document, ParagraphAlignment
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set alignment
-paragraph.paragraph_format.alignment = ParagraphAlignment.RIGHT
+paragraph.paragraph_format.alignment = aw.ParagraphAlignment.RIGHT
 
 # Save the modified document
 doc.save("modified_document.docx")
@@ -118,12 +121,13 @@ Durch die Verwendung eines geeigneten Zeilenabstands wird die Lesbarkeit verbess
 ```python
 # Import the required classes
 from aspose.words import Document, LineSpacingRule
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set line spacing
 paragraph.paragraph_format.line_spacing_rule = LineSpacingRule.MULTIPLE
@@ -141,7 +145,7 @@ Aspose.Words für Python bietet eine breite Palette an Optionen für Schriftart 
 
 Beim Erstellen von Dokumenten sind Schriftarten und Textstile leistungsstarke Tools, um die visuelle Attraktivität zu steigern und Informationen effektiv zu vermitteln. Wenn Sie die Grundlagen von Schriftarten und Textstilen verstehen und Tools wie Aspose.Words für Python verwenden, können Sie professionelle Dokumente erstellen, die die Aufmerksamkeit Ihres Publikums fesseln und aufrechterhalten.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Wie ändere ich die Schriftfarbe mit Aspose.Words für Python?
 

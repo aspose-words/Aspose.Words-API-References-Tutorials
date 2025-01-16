@@ -90,4 +90,4 @@ Az Aspose.Words támogatja a .NET Framework és a .NET Core verziókat a zökken
 Használjon try-catch blokkokat az importálási folyamat során esetlegesen előforduló kivételek kezelésére.
 
 ### Hol találhatok részletesebb dokumentációt az Aspose.Words for .NET-ről?
- Látogassa meg a[dokumentáció](https://reference.aspose.com/words/net/)átfogó útmutatókért és API-referenciákért.
+ Látogassa meg a[dokumentáció](https://reference.aspose.com/words/net/) átfogó útmutatókért és API-referenciákért.

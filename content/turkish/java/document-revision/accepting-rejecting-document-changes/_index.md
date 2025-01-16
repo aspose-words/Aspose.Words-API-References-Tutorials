@@ -44,10 +44,7 @@ Değişiklikleri kabul etmek, bir belgeyi sonlandırmada kritik bir adımdır. A
 
 ```java
 // Tüm revizyonları kabul et
-doc.acceptAllRevisions();
-
-// Dizin tarafından belirli bir revizyonu kabul et
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Değişiklikleri Reddetme
@@ -56,10 +53,7 @@ Bazı durumlarda, belirli değişiklikleri reddetmeniz gerekebilir. Aspose.Words
 
 ```java
 // Tüm revizyonları reddet
-doc.rejectAllRevisions();
-
-// Dizin tarafından belirli bir revizyonu reddedin
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Belgeyi Kaydetme

@@ -18,7 +18,7 @@ Bevor wir uns mit den Einzelheiten des Kennwortschutzes Ihrer Word-Dokumente bef
 1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere C#-Entwicklungsumgebung.
 3. Grundlegende C#-Kenntnisse: Grundlegendes Verständnis der C#-Programmierung.
-4. Aspose-Lizenz: Erhalten Sie eine Lizenz von[Hier](https://purchase.aspose.com/buy) oder verwenden Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zur Auswertung.
+4.  Aspose-Lizenz: Erhalten Sie eine Lizenz von[Hier](https://purchase.aspose.com/buy) oder verwenden Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zur Auswertung.
 
 ## Namespaces importieren
 
@@ -64,7 +64,7 @@ Hier geschieht die Magie. Wir wenden einen Kennwortschutz auf unser Dokument an,
 
 ### Wählen Sie den Schutztyp
 
- Aspose.Words bietet verschiedene Arten von Schutz, wie zum Beispiel`NoProtection`, `ReadOnly`, `AllowOnlyComments` , Und`AllowOnlyFormFields` . Für dieses Beispiel verwenden wir`NoProtection` aber mit einem Kennwort, was im Wesentlichen bedeutet, dass das Dokument bearbeitet werden kann, aber ein Kennwort erforderlich ist, um den Schutz aufzuheben.
+ Aspose.Words bietet verschiedene Arten von Schutz, wie zum Beispiel`NoProtection`, `ReadOnly`, `AllowOnlyComments` , Und`AllowOnlyFormFields` Für dieses Beispiel verwenden wir`NoProtection` aber mit einem Kennwort, was im Wesentlichen bedeutet, dass das Dokument bearbeitet werden kann, aber ein Kennwort erforderlich ist, um den Schutz aufzuheben.
 
 ### Schutz anwenden
 
@@ -94,7 +94,7 @@ Und da haben Sie es! Sie haben Ihrem Word-Dokument mit Aspose.Words für .NET er
 
 ### Kann ich mit Aspose.Words verschiedene Arten des Schutzes verwenden?
 
- Ja, Aspose.Words unterstützt verschiedene Arten des Schutzes, darunter`ReadOnly`, `AllowOnlyComments` , Und`AllowOnlyFormFields`.
+Ja, Aspose.Words unterstützt verschiedene Arten des Schutzes, darunter`ReadOnly`, `AllowOnlyComments` , Und`AllowOnlyFormFields`.
 
 ### Wie kann ich den Passwortschutz von einem Dokument entfernen?
 
@@ -110,4 +110,4 @@ Ja, Aspose.Words ist mit .NET Core, .NET Framework und anderen .NET-Plattformen 
 
 ### Wo finde ich weitere Dokumentation zu Aspose.Words?
 
-Weitere Dokumentation finden Sie auf der[Aspose.Words-Dokumentationsseite](https://reference.aspose.com/words/net/).
+ Weitere Dokumentation finden Sie auf der[Aspose.Words-Dokumentationsseite](https://reference.aspose.com/words/net/).

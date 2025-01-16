@@ -89,7 +89,7 @@ Ja, Aspose.Words voor Java ondersteunt een breed scala aan documentformaten, waa
 
 ### V3: Zijn er licentieopties beschikbaar voor Aspose.Words voor Java?
 
- Ja, u kunt licentieopties verkennen en Aspose.Words voor Java kopen op de[Aspose-website](https://purchase.aspose.com/buy).
+Ja, u kunt licentieopties verkennen en Aspose.Words voor Java kopen op de[Aspose-website](https://purchase.aspose.com/buy).
 
 ### V4: Kan ik Aspose.Words voor Java uitproberen voordat ik het koop?
 
@@ -97,6 +97,6 @@ Ja, Aspose.Words voor Java ondersteunt een breed scala aan documentformaten, waa
 
 ### V5: Waar kan ik ondersteuning krijgen of vragen stellen over Aspose.Words voor Java?
 
-Voor vragen of ondersteuning kunt u terecht op de[Aspose.Words voor Java-forum](https://forum.aspose.com/).
+ Voor vragen of ondersteuning kunt u terecht op de[Aspose.Words voor Java-forum](https://forum.aspose.com/).
 
 Nu u het renderen van vormen met Aspose.Words voor Java onder de knie hebt, bent u klaar om het volledige potentieel van deze veelzijdige API te benutten in uw documentverwerkingsprojecten. Veel plezier met coderen!

@@ -7,69 +7,81 @@ type: docs
 weight: 10
 url: /ko/java/document-splitting/splitting-documents-into-multiple-files/
 ---
+## 소개
 
-Aspose.Words for Java를 사용하여 문서를 여러 파일로 분할하려고 하시나요? 당신은 올바른 곳에 있습니다! 이 포괄적인 가이드에서는 소스 코드 예제와 함께 전체 프로세스를 단계별로 안내해 드립니다. 이 기사를 마칠 때쯤이면 Aspose.Words for Java를 사용하여 문서를 효과적으로 분할하는 방법을 깊이 이해하게 될 것입니다. 시작해 볼까요.
+더 작고 관리하기 쉬운 파일로 나누어야 하는 거대한 Word 문서를 처리해야 했던 적이 있나요? 프로젝트의 섹션을 구성하든, 모듈식 문서를 만들든, 단순히 작업 공간을 정리하든, Word 문서를 분할하는 것은 생명의 은인이 될 수 있습니다. Aspose.Words for Java를 사용하면 이를 원활하게 처리할 수 있는 강력한 도구가 있습니다. Aspose.Words for Java를 사용하여 Word 문서를 여러 파일로 분할하는 방법에 대한 단계별 가이드를 살펴보겠습니다.
 
-## 기본 사항 이해
+## 필수 조건
+시작하기에 앞서 다음 사항을 준비하세요.
 
-기술적인 세부 사항을 살펴보기 전에 Aspose.Words for Java가 무엇인지 이해하는 것이 중요합니다. Microsoft Word가 필요 없이 Word 문서를 만들고, 조작하고, 처리할 수 있는 강력한 Java 라이브러리입니다. 따라서 문서 관련 작업을 자동화하는 데 매우 적합합니다.
+1.  Java용 Aspose.Words: 여기에서 다운로드하세요.[Aspose 릴리스 페이지](https://releases.aspose.com/words/java/).
+2. Java 개발 환경: IntelliJ IDEA, Eclipse, NetBeans와 같은 IDE.
+3. Java Runtime Environment(JRE): 설치되고 올바르게 구성되었는지 확인하세요.
+4.  Aspose.Words 라이센스: 임시 라이센스 받기[여기](https://purchase.aspose.com/temporary-license/) 또는 라이센스를 구매하세요[여기](https://purchase.aspose.com/buy).
+5. 입력 Word 문서: 분할하려는 여러 섹션이 있는 .docx 파일입니다.
 
-## 환경 설정하기
+## 패키지 가져오기
+Aspose.Words for Java를 사용하려면 관련 패키지를 프로젝트에 가져와야 합니다. Java 파일의 시작 부분에 다음 가져오기를 추가합니다.
 
- 시작하려면 Aspose.Words for Java가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/java/). 다운로드하고 설치하면 코딩을 시작할 준비가 된 것입니다.
+```java
+import com.aspose.words.*;
+import java.text.MessageFormat;
+import java.io.File;
+```
+
+이제 모든 준비가 끝났으니, 단계별 가이드를 살펴보겠습니다!
 
 ## 1단계: 문서 로드
-
-첫 번째 단계는 분할하려는 문서를 로드하는 것입니다. 시작하는 데 도움이 되는 코드 조각은 다음과 같습니다.
+ 첫 번째 단계는 분할하려는 Word 문서를 로드하는 것입니다. 다음을 사용하여 이를 수행해 보겠습니다.`Document` Aspose.Words의 클래스
 
 ```java
-// 문서를 로드합니다
-Document doc = new Document("your-document.docx");
+String dataDir = "Your Document Directory"; // 파일 경로로 바꾸세요
+Document doc = new Document(dataDir + "BigDocument.docx");
 ```
 
- 바꾸다`"your-document.docx"` 문서 파일의 경로를 포함합니다.
+- `dataDir`: 문서 디렉토리의 경로입니다.
+- `Document`: Word 파일을 프로그램에 로드하는 데 사용되는 클래스입니다.
 
-## 2단계: 분할 기준 정의
-
-다음으로, 문서를 분할하기 위한 기준을 정의해야 합니다. 일반적인 기준에는 특정 페이지 수, 섹션 나누기 또는 키워드 발생이 포함됩니다. 다음은 특정 페이지 수로 분할하는 예입니다.
-
-```java
-// 페이지 수로 분할
-Document[] splitDocuments = doc.splitIntoPages(5); // 5페이지마다 분할
-```
-
-## 3단계: 분할 문서 저장
-
-이제 문서를 분할했으니 분할된 부분을 별도의 파일로 저장하고 싶을 것입니다. 방법은 다음과 같습니다.
+## 2단계: 문서 섹션 반복
+문서를 분할하려면 섹션을 반복해야 합니다. 각 섹션은 별도의 문서로 추출됩니다.
 
 ```java
-for (int i = 0; i < splitDocuments.length; i++) {
-    splitDocuments[i].save("split-part-" + (i + 1) + ".docx");
+for (int i = 0; i < doc.getSections().getCount(); i++) {
+    // 문서를 섹션별로 분할
+    Section section = doc.getSections().get(i).deepClone();
+
+    Document newDoc = new Document();
+    newDoc.getSections().clear();
+
+    Section newSection = (Section) newDoc.importNode(section, true);
+    newDoc.getSections().add(newSection);
+
+    // 각 섹션을 별도의 문서로 저장하세요
+    newDoc.save(dataDir + MessageFormat.format("SplitDocument.BySections_{0}.docx", i));
 }
 ```
 
-이 코드는 분할된 각 부분을 "split-part-1.docx," "split-part-2.docx," 등의 파일 이름으로 저장합니다.
+- `doc.getSections().getCount()`: 문서의 총 섹션 수를 검색합니다.
+- `deepClone()`: 원본 문서를 수정하지 않기 위해 현재 섹션의 심층 복사본을 만듭니다.
+- `importNode(section, true)`: 섹션을 새 문서로 가져옵니다.
+- `save()`: 각각의 새 문서를 고유한 이름으로 저장합니다.
+
+## 결론
+이제 다 됐어요! Aspose.Words for Java를 사용하면 Word 문서를 여러 파일로 분할하는 것이 아주 쉽습니다. 문서를 관리하든 워크플로를 간소화하든 이 튜토리얼이 도와드립니다. 이제 프로젝트에 이를 구현하고 직접 마법을 체험할 차례입니다.
 
 ## 자주 묻는 질문
 
-### 특정 키워드로 문서를 분할하려면 어떻게 해야 하나요?
-문서를 키워드로 분할하려면 문서의 내용을 반복하면서 키워드를 찾을 수 있습니다. 키워드를 찾으면 새 문서를 만들고 그 지점까지의 내용을 추가합니다.
+### 섹션 대신 문단을 기준으로 문서를 나눌 수 있나요?
+ 예, 다음을 사용하여 문단을 반복할 수 있습니다.`Paragraph` 대신 수업`Sections`.
 
-### 문서를 PDF 파일로 분할할 수 있나요?
-네, 가능합니다. Aspose.Words for Java를 사용하여 문서를 분할한 후 Aspose.PDF for Java를 사용하여 각 부분을 PDF 파일로 저장할 수 있습니다.
+### Aspose.Words for Java는 무료인가요?
+ 아니요, 라이센스 제품이지만 무료로 사용해 볼 수 있습니다.[임시 면허](https://purchase.aspose.com/temporary-license/).
 
-### Aspose.Words for Java는 무료로 사용할 수 있나요?
-Aspose.Words for Java는 상업용 라이브러리이지만 무료 체험판을 제공합니다. 웹사이트에서 가격과 라이선스를 확인할 수 있습니다.
+### 분할된 파일을 저장하는 데 어떤 형식이 지원되나요?
+ Aspose.Words는 DOCX, PDF, HTML 등 다양한 형식을 지원합니다.[선적 서류 비치](https://reference.aspose.com/words/java/) 자세한 내용은.
 
-### 문서 서식이 복잡한 경우에는 어떻게 해야 하나요?
-Aspose.Words for Java는 표, 이미지 등을 포함한 복잡한 서식이 있는 문서를 처리할 수 있습니다. 분할하는 동안 원래 서식을 유지합니다.
+### 내 프로젝트에 Aspose.Words를 추가하려면 어떻게 해야 하나요?
+ 라이브러리를 다운로드하세요[여기](https://releases.aspose.com/words/java/) 프로젝트 종속성에 추가하세요.
 
-### 이 과정을 자동화할 수 있나요?
-네, Java 애플리케이션이나 워크플로에 통합하여 문서 분할 프로세스를 자동화할 수 있습니다.
-
-### 문서 크기에 제한이 있나요?
-Aspose.Words for Java는 다양한 크기의 문서를 처리할 수 있지만, 매우 큰 문서의 경우 추가 리소스가 필요할 수 있습니다.
-
-## 결론
-
-이 단계별 가이드에서는 Aspose.Words for Java를 사용하여 문서를 여러 파일로 분할하는 방법을 알아보았습니다. 제공된 코드 예제와 자주 묻는 질문에 대한 답변을 통해 문서 분할 작업을 효과적으로 처리할 준비가 되었습니다. Aspose.Words for Java는 프로세스를 간소화하고 다양한 분할 기준에 대한 유연성을 제공합니다. 즐거운 코딩 되세요!
+### 이 코드를 웹 애플리케이션에서 사용할 수 있나요?
+물론입니다! 파일 I/O 작업에 필요한 권한이 구성되었는지 확인하세요.

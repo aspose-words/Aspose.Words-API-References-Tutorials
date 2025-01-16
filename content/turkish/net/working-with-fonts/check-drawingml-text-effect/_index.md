@@ -54,7 +54,7 @@ Sonra, belgenin ilk paragrafındaki çalıştırma koleksiyonuna erişmemiz gere
 RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
 ```
 
-Bu kod satırı, belgenin ilk bölümündeki ilk paragraftan gelen çalıştırmaları alır.
+Bu kod satırı, belgenin ilk bölümündeki ilk paragraftaki çalıştırmaları alır.
 
 ## Adım 3: İlk Çalışmanın Yazı Tipini Alın
 

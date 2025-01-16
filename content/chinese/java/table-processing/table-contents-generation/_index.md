@@ -7,128 +7,137 @@ type: docs
 weight: 14
 url: /zh/java/table-processing/table-contents-generation/
 ---
-
-您准备好开始使用 Aspose.Words for Java 掌握目录 (TOC) 生成了吗？在本综合指南中，我们将探索轻松创建动态且具有视觉吸引力的目录的艺术。您将掌握在 Java 应用程序中无缝实现此功能所需的知识和技能。那么，让我们开始吧！
-
 ## 介绍
 
-目录 (TOC) 是任何结构良好的文档的重要组成部分。它为读者提供了路线图，使他们能够轻松浏览冗长的文档。Aspose.Words for Java 是一个功能强大的 API，可简化 Java 应用程序中的 TOC 生成。在本分步指南中，我们将介绍使用 Aspose.Words for Java 动态创建 TOC 所需的一切知识。
+是否曾经为在 Word 文档中创建动态且专业的目录 (TOC) 而苦恼？别再找了！使用 Aspose.Words for Java，您可以自动化整个过程，节省时间并确保准确性。无论您是构建综合报告还是学术论文，本教程都将引导您使用 Java 以编程方式生成目录。准备好了吗？让我们开始吧！
 
-## Aspose.Words for Java 入门
+## 先决条件
 
-在深入研究 TOC 生成的细节之前，让我们先设置一下环境并熟悉 Aspose.Words for Java。
+在开始编码之前，请确保您具有以下条件：
 
-### 设置你的环境
+1.  Java 开发工具包 (JDK)：安装在您的系统上。您可以从以下位置下载[Oracle 网站](https://www.oracle.com/java/technologies/javase-downloads.html).
+2. Aspose.Words for Java 库：从下载最新版本[发布页面](https://releases.aspose.com/words/java/).
+3. 集成开发环境 (IDE)：例如 IntelliJ IDEA、Eclipse 或 NetBeans。
+4.  Aspose 临时许可证：为避免评估限制，请获取[临时执照](https://purchase.aspose.com/temporary-license/).
 
-首先，请确保您已安装 Aspose.Words for Java。您可以从网站下载[这里](https://releases.aspose.com/words/java/).
+## 导入包
 
-### 创建新的 Java 项目
-
-首先在您最喜欢的集成开发环境 (IDE) 中创建一个新的 Java 项目。
-
-### 将 Aspose.Words for Java 添加到您的项目
-
-将 Aspose.Words for Java 库添加到您的依赖项中，以将其添加到您的项目中。
-
-### 初始化 Aspose.Words
-
-在您的 Java 代码中，初始化 Aspose.Words 以开始使用它。
+为了有效地使用 Aspose.Words for Java，请确保导入所需的类。以下是导入的内容：
 
 ```java
-//初始化 Aspose.Words
-com.aspose.words.Document doc = new com.aspose.words.Document();
+import com.aspose.words.*;
 ```
 
-## 了解目录 (TOC)
+按照以下步骤在 Word 文档中生成动态目录。
 
-在我们开始生成 TOC 之前，让我们先更深入地了解它们是什么以及它们如何工作。
+## 步骤 1：初始化 Document 和 DocumentBuilder
 
-### 什么是目录？
+第一步是创建一个新文档并使用`DocumentBuilder`类来操作它。
 
-目录是出现在文档开头的列表，提供文档中各个部分或章节的链接。它可作为读者的有用导航工具。
-
-### TOC 生成如何进行？
-
-TOC 生成涉及识别文档中的特定标题或内容并创建指向这些部分的链接。Aspose.Words for Java 通过基于预定义规则自动生成 TOC 来简化此过程。
-
-## 生成基本目录
-
-现在我们有了坚实的基础，让我们使用 Aspose.Words for Java 生成一个基本的目录。
 
 ```java
-//创建新的目录
-com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-tocField.update();
+string dataDir = "Your Document Directory";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-上述代码在您的文档中创建了一个基本目录。您可以通过指定级别、格式等进一步自定义它。
+- `Document`：代表Word文档。
+- `DocumentBuilder`：允许轻松操作文档的辅助类。
 
-## 高级目录定制
+## 第 2 步：插入目录
 
-Aspose.Words for Java 为您的目录提供了广泛的自定义选项。让我们探索一些高级功能：
+现在，让我们在文档的开头插入目录。
 
-### 自定义目录样式
-
-您可以定义目录样式来匹配文档的美观度。
 
 ```java
-//自定义目录样式
-com.aspose.words.Style tocStyle = doc.getStyles().add(StyleType.PARAGRAPH, "MyTOCStyle");
-tocStyle.getFont().setSize(16);
-tocStyle.getFont().setBold(true);
+builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+builder.insertBreak(BreakType.PAGE_BREAK);
 ```
 
-### 包括具体标题
+- `insertTableOfContents`：插入目录字段。参数指定：
+  - `\o "1-3"`：包括 1 至 3 级标题。
+  - `\h`：使条目成为超链接。
+  - `\z`：抑制网页文档的页码。
+  - `\u`：保留超链接的样式。
+- `insertBreak`：在目录后添加分页符。
 
-您可以通过指定大纲级别来选择要包含在目录中的标题。
+## 步骤 3：添加标题以填充目录
+
+要填充目录，您需要添加具有标题样式的段落。
+
 
 ```java
-//仅包含特定标题
-tocField.setCode("TOC \\o \"1-3\" \\h \\z");
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 1");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_2);
+builder.writeln("Heading 1.1");
+builder.writeln("Heading 1.2");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 2");
 ```
 
-## 添加用于生成目录的源代码
+- `setStyleIdentifier` ：将段落样式设置为特定标题级别（例如，`HEADING_1`, `HEADING_2`）。
+- `writeln`：使用指定的样式向文档添加文本。
 
-让我们更进一步，通过集成源代码来自动在 Java 应用程序中生成 TOC。
+## 步骤 4：添加嵌套标题
+
+为了展示目录级别，请包含嵌套标题。
+
 
 ```java
-//使用 Java 自动生成目录
-public void generateTOC() {
-    com.aspose.words.Document doc = new com.aspose.words.Document();
-    com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-    tocField.update();
-    //在此处添加更多自定义内容
-}
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_3);
+builder.writeln("Heading 3.1.1");
+builder.writeln("Heading 3.1.2");
+builder.writeln("Heading 3.1.3");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_4);
+builder.writeln("Heading 3.1.3.1");
+builder.writeln("Heading 3.1.3.2");
 ```
 
-通过将 TOC 生成封装在方法中，您可以轻松地将其合并到您的项目中。
+- 添加更深级别的标题以显示目录中的层次结构。
 
-## 常见问题解答
+## 步骤 5：更新目录字段
 
-### 如何更新现有的目录？
+必须更新 TOC 字段才能显示最新的标题。
 
-要更新文档中现有的目录，只需右键单击它并选择“更新字段”。 Aspose.Words for Java 将根据文档标题的任何更改刷新目录。
 
-### 我可以在一个文档中生成多个目录吗？
+```java
+doc.updateFields();
+```
 
-是的，您可以在一个文档中生成多个目录。每个目录使用不同的字段代码，并根据需要自定义其设置。
+- `updateFields`：刷新文档中的所有字段，确保目录反映添加的标题。
 
-### Aspose.Words for Java 是否适合小型和大型文档？
+## 步骤 6：保存文档
 
-当然！Aspose.Words for Java 功能多样，可以处理各种大小的文档，从小型报告到大型小说。
+最后，将文档保存为您想要的格式。
 
-### 我可以自定义目录条目的外观吗？
 
-当然可以！您可以定义目录条目的自定义样式，以匹配文档的设计和格式。
+```java
+doc.save(dataDir + "DocumentBuilder.InsertToc.docx");
+```
 
-### Aspose.Words for Java 是否支持目录内的交叉引用？
-
-是的，您可以在目录中创建交叉引用以链接到文档中的特定部分或页面。
-
-### Aspose.Words for Java 适合 Web 应用程序吗？
-
-事实上，Aspose.Words for Java 可以无缝集成到 Web 应用程序中以动态生成 TOC。
+- `save` ：将文档导出至`.docx`文件。您可以指定其他格式，例如`.pdf`或者`.txt`如果需要的话。
 
 ## 结论
 
-在本综合指南中，我们探索了使用 Aspose.Words for Java 生成目录 (TOC) 的技巧。您已经学习了如何设置环境、创建基本和高级目录，甚至将目录生成与源代码集成到 Java 项目中。Aspose.Words for Java 使您能够使用动态且具有视觉吸引力的目录来增强文档。现在，继续应用这些知识在您的 Java 应用程序中创建令人惊叹的目录。祝您编码愉快！
+恭喜！您已成功使用 Aspose.Words for Java 在 Word 文档中创建动态目录。只需几行代码，您就自动完成了原本需要数小时才能完成的任务。那么，下一步是什么？尝试使用不同的标题样式和格式，以根据特定需求定制您的目录。
+
+## 常见问题解答
+
+### 我可以进一步自定义 TOC 格式吗？
+当然可以！您可以调整目录参数，例如添加页码、对齐文本或使用自定义标题样式。
+
+### Aspose.Words for Java 是否必须有许可证？
+是的，需要许可证才能使用完整功能。你可以先从[临时执照](https://purchase.aspose.com/temporary-license/).
+
+### 我可以为现有文档生成目录吗？
+是！将文档装入`Document`对象并按照相同的步骤插入和更新目录。
+
+### 这对 PDF 导出有用吗？
+是的，如果您将文档保存为`.pdf`格式。
+
+### 在哪里可以找到更多文档？
+查看[Aspose.Words for Java 文档](https://reference.aspose.com/words/java/)了解更多示例和详细信息。

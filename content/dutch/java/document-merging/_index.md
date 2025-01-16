@@ -34,5 +34,3 @@ Leer hoe u documenten kunt samenvoegen en toevoegen met Aspose.Words voor Java. 
 Leer hoe u documenten kunt vergelijken op verschillen met Aspose.Words in Java. Onze stapsgewijze handleiding zorgt voor nauwkeurig documentbeheer.
 ### [Documenten samenvoegen met DocumentBuilder](./merging-documents-documentbuilder/)
 Leer hoe u Word-documenten kunt bewerken met Aspose.Words voor Java. Maak, bewerk, voeg samen en converteer documenten programmatisch in Java.
-### [Documenten splitsen en extraheren](./document-splitting-extraction/)
-Leer hoe u moeiteloos documenten kunt splitsen en extraheren met Aspose.Words voor Java. Vereenvoudig uw documentverwerkingstaken met stapsgewijze begeleiding.

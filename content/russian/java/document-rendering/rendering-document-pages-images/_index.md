@@ -48,7 +48,7 @@ Aspose.Words предоставляет различные параметры с
 
 ```java
 // Инициализировать параметры сохранения изображения
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Шаг 4: Преобразование страниц документа в изображения

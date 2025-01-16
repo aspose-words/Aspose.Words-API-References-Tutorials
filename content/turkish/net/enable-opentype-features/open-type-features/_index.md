@@ -56,7 +56,7 @@ Belge dizininize giden yolu tutacak bir dize değişkeni oluşturun. Word belgen
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`Belgenizin bulunduğu gerçek yol ile.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgenizin bulunduğu gerçek yol ile.
 
 ### Belgeyi Yükleme
 

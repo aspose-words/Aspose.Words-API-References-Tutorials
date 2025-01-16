@@ -2,7 +2,7 @@
 title: Listformatering på flera nivåer i Word-dokument
 linktitle: Listformatering på flera nivåer i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du bemästrar listformatering på flera nivåer i Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. Förbättra dokumentstrukturen utan ansträngning.
+description: Lär dig hur du behärskar listformatering på flera nivåer i Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. Förbättra dokumentstrukturen utan ansträngning.
 type: docs
 weight: 10
 url: /sv/net/document-formatting/multilevel-list-formatting/

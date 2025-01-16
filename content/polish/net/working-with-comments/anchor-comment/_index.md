@@ -127,7 +127,7 @@ Komentarze kotwiczące służą do wyróżniania i komentowania określonych fra
 Tak, możesz dodać wiele komentarzy do tej samej sekcji tekstowej, definiując wiele zakresów komentarzy.
 
 ### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
-Aspose.Words dla .NET oferuje bezpłatną wersję próbną, którą można pobrać[Tutaj](https://releases.aspose.com/) Aby uzyskać pełną funkcjonalność, możesz zakupić licencję[Tutaj](https://purchase.aspose.com/buy).
+ Aspose.Words dla .NET oferuje bezpłatną wersję próbną, którą można pobrać[Tutaj](https://releases.aspose.com/) Aby uzyskać pełną funkcjonalność, możesz zakupić licencję[Tutaj](https://purchase.aspose.com/buy).
 
 ### Czy mogę dostosować wygląd komentarzy?
 Podczas gdy Aspose.Words koncentruje się na funkcjonalności, wygląd komentarzy w dokumentach Worda jest generalnie kontrolowany przez sam Word.

@@ -83,7 +83,7 @@ Et voilà ! Vous avez modifié avec succès la source de culture de mise à jour
 ## FAQ
 
 ###  Quel est le but de définir le`LocaleId`?
-Le`LocaleId` spécifie les paramètres de culture pour le texte, ce qui affecte la manière dont les dates et autres données sensibles aux paramètres régionaux sont formatées.
+ Le`LocaleId` spécifie les paramètres de culture pour le texte, ce qui affecte la manière dont les dates et autres données sensibles aux paramètres régionaux sont formatées.
 
 ### Puis-je utiliser une langue autre que l'allemand ?
  Oui, vous pouvez définir le`LocaleId`à n'importe quel identifiant de paramètres régionaux valide. Par exemple, 1033 pour l'anglais (États-Unis).

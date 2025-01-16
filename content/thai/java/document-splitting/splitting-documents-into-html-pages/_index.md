@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-โค้ดนี้จะแบ่งเอกสารตามการแบ่งหน้าและจัดเก็บแต่ละหน้าใน`pages` รายการ.
+ โค้ดนี้จะแบ่งเอกสารตามการแบ่งหน้าและจัดเก็บแต่ละหน้าใน`pages` รายการ.
 
 ## บันทึกเป็น HTML
 

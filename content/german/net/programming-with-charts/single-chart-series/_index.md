@@ -112,7 +112,7 @@ Und da haben Sie es! Sie haben erfolgreich eine einzelne Diagrammreihe in einem 
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dokumente programmgesteuert erstellen, bearbeiten, konvertieren und bearbeiten können.
 
 ### Kann ich Aspose.Words kostenlos nutzen?
- Ja, Sie können beginnen mit einem[Kostenlose Testversion](https://releases.aspose.com/).
+Ja, Sie können beginnen mit einem[Kostenlose Testversion](https://releases.aspose.com/).
 
 ### Wie erhalte ich Support für Aspose.Words?
  Sie können Unterstützung von der Aspose-Community erhalten über deren[Forum](https://forum.aspose.com/c/words/8).

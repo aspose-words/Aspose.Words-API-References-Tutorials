@@ -40,7 +40,7 @@ url: /ja/java/document-security/keep-documents-safe-secure/
 ドキュメントのセキュリティについて説明を進める前に、まず Aspose.Words for Java について理解しましょう。これは、Java 開発者が Word ドキュメントをプログラムで作成、変更、変換できるようにする機能豊富なライブラリです。開始するには、次の手順を実行します。
 
 1. ### Aspose.Words for Java をダウンロード:
- 訪問する[Aspose.リリース](https://releases.aspose.com/words/java/)Aspose.Words for Java の最新バージョンをダウンロードしてください。
+ 訪問する[Aspose.リリース](https://releases.aspose.com/words/java/) Aspose.Words for Java の最新バージョンをダウンロードしてください。
 
 2. ### ライブラリをインストールします。
  ダウンロードが完了したら、インストール手順に従って、Java プロジェクトに Aspose.Words を設定します。
@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 ドキュメントが読み込まれたので、暗号化を適用してみましょう。Aspose.Words for Java では、ドキュメントの暗号化を設定する簡単な方法が提供されています。
 
 ```java
-//文書を開くためのパスワードを設定する
-doc.getWriteProtection().setPassword("yourPassword");
-
-//暗号化アルゴリズムを設定する（オプション）
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-//暗号化された文書を保存する
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. 特定の文書要素の保護
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 場合によっては、ヘッダー、フッター、特定の段落など、ドキュメントの特定の部分のみを保護したい場合があります。Aspose.Words を使用すると、ドキュメント保護においてこのレベルの細分性を実現できます。
 
 ```java
-//特定のセクションを保護する（読み取り専用保護）
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-//特定の段落を保護する（フォームフィールドのみ編集できるようにする）
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-//保護された文書を保存する
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//編集可能な範囲を使用すると、保護されたドキュメントの一部を編集用に開いたままにすることができます。
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. デジタル署名の適用
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 ドキュメントにデジタル署名を追加すると、その信頼性と整合性を確保できます。Aspose.Words for Java を使用してデジタル署名を適用する方法は次のとおりです。
 
 ```java
-//証明書ファイルを読み込む
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-//証明書で文書に署名する
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+//新しいデジタル署名に適用されるコメント、日付、復号化パスワードを作成します。
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-//署名した文書を保存する
-doc.save("path/to/signed/document.docx");
+//署名されていない入力ドキュメントのローカル システム ファイル名と、新しいデジタル署名されたコピーの出力ファイル名を設定します。
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. 文書に透かしを入れる
@@ -150,26 +156,8 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. 機密情報の編集
 
-ドキュメントを共有する場合、機密情報が悪意のある人物の手に渡らないように、機密情報を完全に削除したい場合があります。Aspose.Words for Java を使用すると、機密コンテンツを編集できます。
-
-```java
-//機密情報を検索して編集する
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-//墨消しを適用する
-doc.redact(options);
-
-//編集した文書を保存する
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. セキュア文書を他の形式に変換する
+## 10. セキュア文書を他の形式に変換する
 
 Aspose.Words for Java を使用すると、保護されたドキュメントを PDF や HTML などのさまざまな形式に変換することもできます。
 
@@ -178,42 +166,29 @@ Aspose.Words for Java を使用すると、保護されたドキュメントを 
 Document doc = new Document("path/to/your/secured/document.docx");
 
 //PDFに変換
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 //HTMLに変換
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. ドキュメントセキュリティのベストプラクティス
-
-強力なドキュメント セキュリティを確保するには、次のベスト プラクティスに従ってください。
-
-- 潜在的な脅威に先手を打つために、セキュリティ対策を定期的に更新してください。
-- 強力なパスワードと暗号化アルゴリズムを使用してください。
-- 機密文書へのアクセスを必要に応じて制限します。
-- セキュリティ リスクを認識して対応できるように従業員をトレーニングします。
-
-## 13. ドキュメントのセキュリティテスト
-
-セキュリティ対策を適用した後、ドキュメントを徹底的にテストして、さまざまなシナリオでドキュメントが安全であることを確認します。セキュリティ制御をバイパスして、潜在的な脆弱性を特定します。
-
-## 14. 結論
+## 結論
 
 このステップバイステップ ガイドでは、ドキュメント セキュリティの重要性と、Aspose.Words for Java が不正アクセスからドキュメントを保護する方法について説明しました。パスワード保護、暗号化、デジタル署名、透かし、編集などのライブラリの機能を活用することで、ドキュメントの安全性を確保できます。
 
 ## よくある質問
 
 ### Aspose.Words for Java を商用プロジェクトで使用できますか?
-   はい、Aspose.Words for Java は、開発者ごとのライセンス モデルに基づいて商用プロジェクトで使用できます。
+はい、Aspose.Words for Java は、開発者ごとのライセンス モデルに基づいて商用プロジェクトで使用できます。
 
 ### Aspose.Words は Word 以外のドキュメント形式もサポートしていますか?
-   はい、Aspose.Words は PDF、HTML、EPUB など、幅広い形式をサポートしています。
+はい、Aspose.Words は PDF、HTML、EPUB など、幅広い形式をサポートしています。
 
 ### 文書に複数のデジタル署名を追加することは可能ですか?
-   はい、Aspose.Words を使用すると、ドキュメントに複数のデジタル署名を追加できます。
+はい、Aspose.Words を使用すると、ドキュメントに複数のデジタル署名を追加できます。
 
 ### Aspose.Words はドキュメントのパスワード回復をサポートしていますか?
-   いいえ、Aspose.Words にはパスワード回復機能は用意されていません。パスワードは必ず安全に保管してください。
+いいえ、Aspose.Words にはパスワード回復機能は用意されていません。パスワードは必ず安全に保管してください。
 
 ### 透かしの外観をカスタマイズできますか?
-   はい、テキスト、フォント、色、サイズ、回転など、透かしの外観を完全にカスタマイズできます。
+はい、テキスト、フォント、色、サイズ、回転など、透かしの外観を完全にカスタマイズできます。

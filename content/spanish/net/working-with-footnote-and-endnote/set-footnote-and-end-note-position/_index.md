@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-En este código, reemplace`"YOUR DOCUMENT DIRECTORY"`con la ruta real donde se encuentra su documento.
+En este código, reemplace`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde se encuentra su documento.
 
 ## Paso 2: Establecer la posición de la nota al pie
 
@@ -93,4 +93,4 @@ Aspose.Words para .NET está diseñado para aplicaciones .NET, pero puede usarlo
 
 ### ¿Dónde puedo encontrar documentación más detallada sobre Aspose.Words para .NET?
 
-La documentación detallada está disponible[aquí](https://reference.aspose.com/words/net/).
+ La documentación detallada está disponible[aquí](https://reference.aspose.com/words/net/).

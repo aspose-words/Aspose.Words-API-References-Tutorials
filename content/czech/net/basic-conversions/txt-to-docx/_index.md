@@ -65,4 +65,4 @@ Ano, Aspose.Words podporuje různé .NET frameworky a zajišťuje kompatibilitu 
 Ano, můžete dávkově zpracovat více textových souborů pomocí rozhraní API Aspose.Words, abyste zefektivnili své úkoly převodu dokumentů.
 
 ### Kde najdu další zdroje a podporu pro Aspose.Words?
- Navštivte[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) a[fórum podpory](https://forum.aspose.com/c/words/8) pro další informace a pomoc.
+ Navštivte[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) a[fórum podpory](https://forum.aspose.com/c/words/8) pro více informací a pomoc.

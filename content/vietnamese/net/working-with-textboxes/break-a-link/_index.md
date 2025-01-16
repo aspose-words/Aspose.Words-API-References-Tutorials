@@ -100,7 +100,7 @@ textBox.Next = null;
 textBox.Previous?.BreakForwardLink();
 ```
 
-Các`?.` toán tử đảm bảo rằng phương thức chỉ được gọi nếu`Previous` không phải là null, ngăn ngừa các lỗi thời gian chạy tiềm ẩn.
+ Các`?.` toán tử đảm bảo rằng phương thức chỉ được gọi nếu`Previous` không phải là null, ngăn ngừa các lỗi thời gian chạy tiềm ẩn.
 
 ## Phần kết luận
 

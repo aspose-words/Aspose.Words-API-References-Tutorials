@@ -89,4 +89,4 @@ Tek bir CSS dosyası kullanmak stillerinizin yönetimini ve bakımını basitle�
 Aspose.Words for .NET, PDF, TXT ve JPEG ve PNG gibi resim formatları da dahil olmak üzere çeşitli formatları destekler.
 
 ### Aspose.Words for .NET hakkında daha fazla kaynağı nerede bulabilirim?
- Şuna bir göz atın:[belgeleme](https://reference.aspose.com/words/net/)kapsamlı kılavuzlar ve API referansları için.
+ Şuna bir göz atın:[belgeleme](https://reference.aspose.com/words/net/) kapsamlı kılavuzlar ve API referansları için.

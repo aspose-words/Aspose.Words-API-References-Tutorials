@@ -31,7 +31,7 @@ using System.Text.RegularExpressions;
 
 ## चरण 1: नया दस्तावेज़ और बिल्डर बनाएँ
 
- सबसे पहले, एक नया वर्ड दस्तावेज़ और एक प्रारंभ करें`DocumentBuilder`दस्तावेज़ निर्माण को सुविधाजनक बनाने के लिए उद्देश्य:
+ सबसे पहले, एक नया वर्ड दस्तावेज़ और एक प्रारंभ करें`DocumentBuilder` दस्तावेज़ निर्माण को सुविधाजनक बनाने के लिए उद्देश्य:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);

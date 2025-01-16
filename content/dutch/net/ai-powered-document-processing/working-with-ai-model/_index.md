@@ -125,7 +125,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars progra
 U kunt een API-sleutel verkrijgen van AI-providers zoals OpenAI of Google. Zorg ervoor dat u een account aanmaakt en hun instructies volgt om uw sleutel te genereren.
 
 ### Kan ik Aspose.Words gebruiken voor andere bestandsformaten?
-Ja! Aspose.Words ondersteunt verschillende bestandsformaten, waaronder DOCX, RTF en HTML, en biedt uitgebreide mogelijkheden die verder gaan dan alleen tekstdocumenten.
+Jazeker! Aspose.Words ondersteunt verschillende bestandsformaten, waaronder DOCX, RTF en HTML, en biedt uitgebreide mogelijkheden die verder gaan dan alleen tekstdocumenten.
 
 ### Bestaat er een gratis versie van Aspose.Words?
 Aspose biedt een gratis proefversie aan, waarmee u de functies kunt testen. U kunt het downloaden van hun site.

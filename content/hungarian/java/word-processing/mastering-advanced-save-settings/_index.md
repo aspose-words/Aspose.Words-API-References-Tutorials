@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /hu/java/word-processing/mastering-advanced-save-settings/
 ---
+
 Készen áll arra, hogy dokumentumfeldolgozási készségeit magasabb szintre emelje? Ebben az átfogó útmutatóban részletesen elsajátítjuk az Aspose.Words for Java használatával kapcsolatos dokumentumok speciális mentési beállításainak elsajátítását. Akár tapasztalt fejlesztő, akár csak most kezdi, végigvezetjük az Aspose.Words for Java dokumentumkezelés bonyolultságain.
 
 ## Bevezetés
@@ -25,13 +26,13 @@ Ismerje meg, hogyan adhatja meg a dokumentumok formátumát és tájolását. Le
 ```java
 // Állítsa be a dokumentum formátumát DOCX-re
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
-// Állítsa az oldal tájolását fekvőre
+//Állítsa az oldal tájolását fekvőre
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## Az oldalmargók szabályozása
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 hüvelyk
 pageSetup.setRightMargin(72.0); // 1 hüvelyk
 pageSetup.setTopMargin(36.0); // 0,5 hüvelyk
 pageSetup.setBottomMargin(36.0); // 0,5 hüvelyk
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## Fejlécek és láblécek kezelése
@@ -56,11 +57,11 @@ A fejlécek és láblécek gyakran kritikus információkat tartalmaznak. Fedezz
 ```java
 // Adjon hozzá egy fejlécet az első oldalhoz
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## Betűtípusok beágyazása a többplatformos megtekintéshez
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## A dokumentumok védelme
@@ -85,7 +86,7 @@ Biztonsági kérdések, különösen bizalmas dokumentumok kezelésekor. Ismerje
 // Védje a dokumentumot jelszóval
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## Vízjelek testreszabása
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## A dokumentum méretének optimalizálása
@@ -111,7 +112,7 @@ A nagy dokumentumfájlok nehézkesek lehetnek. Fedezze fel azokat a technikákat
 // Optimalizálja a dokumentum méretét
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## Exportálás különböző formátumokba
@@ -121,7 +122,7 @@ Néha különféle formátumú dokumentumokra van szüksége. Az Aspose.Words fo
 ```java
 // Exportálás PDF-be
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## Dokumentumgenerálás automatizálása
@@ -133,7 +134,7 @@ Az automatizálás a dokumentumgenerálás játékmódja. Ismerje meg, hogyan au
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## A dokumentum metaadatainak kezelése
@@ -143,28 +144,31 @@ A metaadatok értékes információkat tartalmaznak egy dokumentumról. Megvizsg
 ```java
 // A dokumentumok metaadatainak elérése és módosítása
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## Dokumentumverziók kezelése
 
-A dokumentumok verziószáma döntő fontosságú az együttműködési környezetekben. Ismerje meg, hogyan kezelheti hatékonyan a dokumentumok különböző verzióit.
+dokumentumok verziószáma döntő fontosságú az együttműködési környezetekben. Ismerje meg, hogyan kezelheti hatékonyan a dokumentumok különböző verzióit.
 
 ```java
-// Hasonlítsa össze a dokumentumok verzióit
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+// A dokumentumok és a revíziók összehasonlítása kivételt jelent.
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## Speciális dokumentum-összehasonlítás
+
+Hasonlítsa össze a dokumentumokat pontosan az Aspose.Words for Java fejlett technikáival.
 
 ```java
 // Speciális dokumentum-összehasonlítás
@@ -217,7 +221,7 @@ Az Aspose.Words for Java támogatja a dokumentumok exportálását különféle 
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Az Aspose.Words for Java alkalmas kötegelt dokumentumok generálására?
@@ -228,7 +232,7 @@ Igen, az Aspose.Words for Java kiválóan alkalmas kötegelt dokumentumok gener�
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### Hogyan hasonlíthatok össze két Word-dokumentumot a különbségek szempontjából?
@@ -243,6 +247,6 @@ doc1.compare(doc2, "comparison_result.docx");
 
 ## Következtetés
 
-dokumentumok speciális mentési beállításainak elsajátítása az Aspose.Words for Java használatával lehetőségek világát nyitja meg a dokumentumfeldolgozásban. Legyen szó a dokumentum méretének optimalizálásáról, az érzékeny információk védelméről vagy a dokumentumgenerálás automatizálásáról, az Aspose.Words for Java segítségével könnyedén elérheti céljait.
+A dokumentumok speciális mentési beállításainak elsajátítása az Aspose.Words for Java használatával lehetőségek világát nyitja meg a dokumentumfeldolgozásban. Legyen szó a dokumentum méretének optimalizálásáról, az érzékeny információk védelméről vagy a dokumentumgenerálás automatizálásáról, az Aspose.Words for Java segítségével könnyedén elérheti céljait.
 
 Ezzel a tudással felvértezve most új magasságokba emelheti dokumentumfeldolgozási készségeit. Használja ki az Aspose.Words for Java erejét, és készítsen olyan dokumentumokat, amelyek pontosan megfelelnek az Ön specifikációinak.

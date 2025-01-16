@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
-Các`Styles` tài sản của`Document` lớp cho chúng ta quyền truy cập vào tất cả các kiểu có sẵn trong tài liệu. Chúng tôi sử dụng`StyleIdentifier.Quote`để chọn kiểu trích dẫn.
+ Các`Styles` tài sản của`Document` lớp cho chúng ta quyền truy cập vào tất cả các kiểu có sẵn trong tài liệu. Chúng tôi sử dụng`StyleIdentifier.Quote`để chọn kiểu trích dẫn.
 
 ## Bước 4: Áp dụng Kiểu cho Thẻ Tài liệu có Cấu trúc
 

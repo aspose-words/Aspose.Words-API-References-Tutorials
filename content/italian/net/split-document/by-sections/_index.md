@@ -86,7 +86,7 @@ Infine, salviamo ogni nuovo documento con un nome univoco. Questo passaggio assi
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-IL`Save` salva il nuovo documento nella directory specificata con un nome univoco basato sull'indice della sezione.
+ IL`Save` salva il nuovo documento nella directory specificata con un nome univoco basato sull'indice della sezione.
 
 ## Conclusione
 

@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Str
 OOXML 호환을 통해 문서가 다양한 버전의 Microsoft Word와 호환되어 접근성과 일관성이 향상됩니다.
 
 ### 이 방법을 다른 규정 준수 수준에도 사용할 수 있나요?
-예, 다음을 변경하여 다양한 준수 수준을 설정할 수 있습니다.`OoxmlCompliance` 속성에`OoxmlSaveOptions`.
+예, 다음을 변경하여 다양한 준수 수준을 설정할 수 있습니다.`OoxmlCompliance` 속성`OoxmlSaveOptions`.
 
 ### 문서 경로가 올바르지 않으면 어떻게 되나요?
  문서 경로가 올바르지 않은 경우`Document` 생성자는 다음을 throw합니다.`FileNotFoundException`경로가 올바른지 확인하세요.

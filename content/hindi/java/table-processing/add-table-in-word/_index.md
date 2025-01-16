@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## चरण 6: एक तालिका बनाएं और पंक्तियाँ जोड़ें
 
-एक नया बनाएँ`Table` ऑब्जेक्ट पर क्लिक करें और पंक्तियों और स्तंभों की संख्या निर्दिष्ट करें।
+ एक नया बनाएँ`Table` ऑब्जेक्ट पर क्लिक करें और पंक्तियों और स्तंभों की संख्या निर्दिष्ट करें।
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## चरण 8: दस्तावेज़ सहेजें
 
- Word दस्तावेज़ को इच्छित स्थान पर सहेजें`save()` तरीका।
+Word दस्तावेज़ को इच्छित स्थान पर सहेजें`save()` तरीका।
 
 ```java
-doc.save(""output.docx"");
-```
-
-## चरण 9: कोड पूरा करें
-
-जावा के लिए Aspose.Words का उपयोग करके Word में तालिका जोड़ने के लिए पूरा कोड यहां दिया गया है:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // चरण 5: एक नया Word दस्तावेज़ बनाएँ
-        Document doc = new Document();
-
-        // चरण 6: एक तालिका बनाएं और पंक्तियाँ जोड़ें
-        Table table = new Table(doc);
-        int rowCount = 5; // तालिका में पंक्तियों की संख्या
-        int columnCount = 3; // तालिका में स्तंभों की संख्या
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // चरण 7: दस्तावेज़ में तालिका जोड़ें
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // चरण 8: दस्तावेज़ सहेजें
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## निष्कर्ष

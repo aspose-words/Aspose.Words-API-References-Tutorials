@@ -90,7 +90,7 @@ IAiModelText model = (IAiModelText)AiModel.Create(AiModelType.Gpt4OMini).WithApi
 
 - Assurez-vous que votre clé API est stockée en tant que variable d'environnement. C'est comme garder votre sauce secrète en sécurité !
 
-## Étape 4 : Générer un résumé pour le premier document
+## Étape 4 : générer un résumé pour le premier document
 
 Créons maintenant un résumé pour notre premier document. Nous allons également définir des paramètres pour définir la longueur du résumé.
 

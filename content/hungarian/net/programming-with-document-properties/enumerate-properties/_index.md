@@ -103,7 +103,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
  Igen, új egyéni tulajdonságokat adhat hozzá a`CustomDocumentProperties` gyűjtemény.
 
 ### Az Aspose.Words ingyenesen használható?
- Az Aspose.Words ajánlatok a[ingyenes próbaverzió](https://releases.aspose.com/) és különböző[vásárlási lehetőségek](https://purchase.aspose.com/buy).
+ Az Aspose.Words ajánlatok a[ingyenes próbaverzió](https://releases.aspose.com/) és más[vásárlási lehetőségek](https://purchase.aspose.com/buy).
 
 ### Hogyan kaphatok támogatást az Aspose.Words számára?
  Támogatást kaphat az Aspose közösségtől[itt](https://forum.aspose.com/c/words/8).

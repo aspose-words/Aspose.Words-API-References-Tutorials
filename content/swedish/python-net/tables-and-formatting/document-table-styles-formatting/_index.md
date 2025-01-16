@@ -23,7 +23,7 @@ Innan vi dyker in i detaljerna för dokumenttabellstilar och formatering, låt o
 2. Importera biblioteket: Importera Aspose.Words-biblioteket till ditt Python-skript med följande importsats:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. Ladda ett dokument: Ladda ett befintligt dokument eller skapa ett nytt med Aspose.Words API.
@@ -35,7 +35,7 @@ För att skapa och infoga tabeller i dokument med Aspose.Words för Python, föl
 1.  Skapa en tabell: Använd`DocumentBuilder` klass för att skapa en ny tabell och ange antalet rader och kolumner.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ För att skapa och infoga tabeller i dokument med Aspose.Words för Python, föl
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. Cellutfyllnad: Lägg till utfyllnad till celler för förbättrat avstånd.
@@ -80,32 +80,8 @@ För att skapa och infoga tabeller i dokument med Aspose.Words för Python, föl
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Styling tabeller med Aspose.Words
-
-Aspose.Words för Python tillhandahåller en rad stilalternativ för att göra dina bord visuellt tilltalande:
-
-1. Tabellstilar: Använd fördefinierade bordsstilar för att få ett professionellt utseende.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. Cellbakgrundsfärg: Ändra cellbakgrundsfärg för att markera specifika data.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. Teckensnittsformatering: Anpassa teckensnittsstil, storlek och färg för bättre läsbarhet.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## Sammanfoga och dela celler för komplexa layouter
@@ -115,30 +91,14 @@ Att skapa komplexa tabelllayouter kräver ofta sammanslagning och uppdelning av 
 1. Slå samman celler: Slå samman flera celler för att skapa en enda större cell.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. Dela celler: Dela celler tillbaka till sina individuella komponenter.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## Justera rad- och kolumnhöjder och -bredder
-
-Finjustera rad- och kolumndimensioner för en balanserad tabelllayout:
-
-1. Justera radhöjd: Ändra radhöjd baserat på innehåll.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. Justera kolumnbredd: Justera kolumnbredden automatiskt för att passa innehållet.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## Lägga till kanter och skuggning till tabeller
@@ -148,13 +108,13 @@ Förbättra tabellens utseende genom att lägga till kanter och skuggning:
 1. Kanter: Anpassa kanter för tabeller och celler.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. Skuggning: Applicera skuggning på celler för en visuellt tilltalande effekt.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## Arbeta med cellinnehåll och justering
@@ -171,7 +131,7 @@ Hantera cellinnehåll och justering effektivt för bättre läsbarhet:
 2. Textjustering: Justera celltext efter behov.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## Hantera tabellhuvuden och sidfötter
@@ -188,26 +148,10 @@ Inkludera sidhuvuden och sidfötter i dina tabeller för bättre sammanhang:
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## Automatisk justering av tabelllayout
-
-Se till att din tabelllayout justeras automatiskt baserat på innehåll:
-
-1. Autopassa till fönster: Låt tabellen passa inom sidbredden.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. Ändra storlek på celler automatiskt: Aktivera automatisk cellstorlek för att anpassa innehållet.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## Exportera tabeller till olika format
 
 När din tabell är klar kan du exportera den till olika format, som PDF eller DOCX:
@@ -215,26 +159,20 @@ När din tabell är klar kan du exportera den till olika format, som PDF eller D
 1. Spara som PDF: Spara dokumentet med tabellen som en PDF-fil.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. Spara som DOCX: Spara dokumentet som en DOCX-fil.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## Felsökning och tips för effektiv tabellhantering
-
-- Om tabeller verkar förvrängda, kontrollera efter felaktiga kolumnbredder eller radhöjder.
-- Testa tabellrendering i olika format för att säkerställa konsekvens.
-- För komplexa layouter, planera cellsammanslagning och -delning noggrant.
-
+	
 ## Slutsats
 
 Aspose.Words för Python erbjuder en omfattande verktygslåda för att skapa, utforma och formatera dokumenttabeller. Genom att följa stegen som beskrivs i den här artikeln kan du effektivt hantera tabeller i dina dokument, anpassa deras utseende och exportera dem till olika format. Utnyttja kraften i Aspose.Words för att förbättra dina dokumentpresentationer och ge tydlig, visuellt tilltalande information till dina läsare.
 
-## Vanliga frågor
+## FAQ's
 
 ### Hur installerar jag Aspose.Words för Python?
 

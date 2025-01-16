@@ -60,7 +60,7 @@ Teraz dodajmy bibliotekę Aspose.Words do naszego projektu.
     Document doc = new Document(dataDir + "Document.docx");
     ```
 
-Ten krok jest jak otwieranie książki. Po prostu mówimy naszemu programowi, gdzie znaleźć dokument, a następnie otwieramy go, aby móc zacząć z nim pracować.
+Ten krok jest jak otwieranie książki. Po prostu mówimy naszemu programowi, gdzie znaleźć dokument, a następnie otwieramy go, aby móc zacząć nad nim pracować.
 
 ## Krok 3: Wyodrębnianie zmiennych dokumentu
 

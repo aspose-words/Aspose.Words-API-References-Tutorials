@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
  हां, आप यहां से निःशुल्क परीक्षण डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/).
 
 ### मैं .NET के लिए Aspose.Words हेतु दस्तावेज़ कहां पा सकता हूं?
-विस्तृत दस्तावेज उपलब्ध है[यहाँ](https://reference.aspose.com/words/net/).
+ विस्तृत दस्तावेज उपलब्ध है[यहाँ](https://reference.aspose.com/words/net/).
 
 ### मैं .NET के लिए Aspose.Words हेतु अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूँ?
  अस्थायी लाइसेंस प्राप्त किये जा सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).

@@ -127,7 +127,7 @@ Genom att följa den här guiden bör du nu ha en gedigen förståelse för hur 
 
 ### 3. Är det möjligt att anpassa dialogrutan för förhandsgranskning?
 
- Medan`PrintPreviewDialog` ger grundläggande förhandsgranskningsfunktioner, du kan anpassa den genom att utöka eller ändra dialogens beteende genom ytterligare Java Swing-komponenter eller bibliotek.
+ Medan`PrintPreviewDialog` ger grundläggande förhandsgranskningsfunktioner, du kan anpassa den genom att utöka eller ändra dialogrutans beteende genom ytterligare Java Swing-komponenter eller bibliotek.
 
 ### 4. Kan jag spara utskriftsinställningar för framtida bruk?
 

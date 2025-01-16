@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <ringkasan>
-/// Mendapatkan dokumen dalam rentang halaman.
+//Mendapatkan dokumen dalam rentang halaman.
 /// </ringkasan>
-//<param nama="indeksawal">
+/// <param nama="indeksawal">
 /// 1-indeks berbasis halaman awal.
 /// </param>
 /// <param nama="indeksakhir">

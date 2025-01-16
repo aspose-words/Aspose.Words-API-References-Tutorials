@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 Ναι, μπορείτε να διαμορφώσετε τις επιλογές αποθήκευσης για να παραλείψετε την ενσωμάτωση άλλων γραμματοσειρών, εάν χρειάζεται.
 
 ### Είναι δωρεάν το Aspose.Words για .NET;
-Το Aspose.Words for .NET προσφέρει μια δωρεάν δοκιμή την οποία μπορείτε να κατεβάσετε[εδώ](https://releases.aspose.com/) , αλλά για πλήρη πρόσβαση, πρέπει να αγοράσετε μια άδεια[εδώ](https://purchase.aspose.com/buy).
+ Το Aspose.Words for .NET προσφέρει μια δωρεάν δοκιμή την οποία μπορείτε να κατεβάσετε[εδώ](https://releases.aspose.com/) , αλλά για πλήρη πρόσβαση, πρέπει να αγοράσετε μια άδεια[εδώ](https://purchase.aspose.com/buy).
 
 ### Πού μπορώ να βρω περισσότερα μαθήματα για το Aspose.Words για .NET;
- Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση και σεμινάρια[εδώ](https://reference.aspose.com/words/net/).
+Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση και σεμινάρια[εδώ](https://reference.aspose.com/words/net/).

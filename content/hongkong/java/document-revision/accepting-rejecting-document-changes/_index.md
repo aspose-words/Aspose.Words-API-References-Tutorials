@@ -44,10 +44,7 @@ for (Revision revision : doc.getRevisions()) {
 
 ```java
 //接受所有修改
-doc.acceptAllRevisions();
-
-//按索引接受特定修訂
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## 拒絕改變
@@ -56,10 +53,7 @@ doc.acceptRevision(0);
 
 ```java
 //拒絕所有修改
-doc.rejectAllRevisions();
-
-//按索引拒絕特定修訂
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## 儲存文件

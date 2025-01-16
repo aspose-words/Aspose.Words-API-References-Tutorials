@@ -47,7 +47,7 @@ Lassen Sie uns den Vorgang nun in leicht verständliche Schritte unterteilen. Am
 
 ### Neues Dokument erstellen
 
- Erstellen Sie in Ihrer Hauptprogrammdatei zunächst eine neue Instanz des`Document`Klasse. Dies wird unsere leere Leinwand sein.
+ Erstellen Sie in Ihrer Hauptprogrammdatei zunächst eine neue Instanz des`Document` Klasse. Dies wird unsere leere Leinwand sein.
 
 ```csharp
 Document doc = new Document();
@@ -113,7 +113,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern e
 
 ### Wie beginne ich mit Aspose.Words für .NET?
 
- Sie können beginnen, indem Sie die Bibliothek von der[Webseite](https://releases.aspose.com/words/net/) und fügen Sie es Ihrem .NET-Projekt hinzu.
+Sie können beginnen, indem Sie die Bibliothek von der[Webseite](https://releases.aspose.com/words/net/) und fügen Sie es Ihrem .NET-Projekt hinzu.
 
 ### Kann ich Aspose.Words kostenlos nutzen?
 
@@ -121,8 +121,8 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern e
 
 ### Wo finde ich weitere Tutorials zu Aspose.Words für .NET?
 
-Der[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) ist eine großartige Quelle für ausführliche Tutorials und Beispiele.
+ Der[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) ist eine großartige Quelle für ausführliche Tutorials und Beispiele.
 
 ### Wie erhalte ich Unterstützung, wenn Probleme auftreten?
 
-Sie erhalten Unterstützung durch den Besuch der[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8).
+ Sie erhalten Unterstützung durch den Besuch der[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8).

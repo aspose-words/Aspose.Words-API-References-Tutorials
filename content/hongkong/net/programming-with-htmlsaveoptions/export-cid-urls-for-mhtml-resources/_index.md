@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 是的，您需要授權才能使用 Aspose.Words for .NET。您可以獲得免費試用[這裡](https://releases.aspose.com/)或購買許可證[這裡](https://purchase.aspose.com/buy).
 
 ### 我可以針對多個文件自動執行此程序嗎？
-絕對地！您可以建立一個腳本來自動處理多個文件的流程，利用 Aspose.Words for .NET 的強大功能來有效率地處理批次作業。
+絕對地！您可以建立一個腳本來自動執行多個文件的流程，利用 Aspose.Words for .NET 的強大功能來有效率地處理批次作業。
 
 ### 如果遇到問題，我可以在哪裡獲得支援？
 如果您需要支持，請造訪 Aspose 支援論壇[這裡](https://forum.aspose.com/c/words/8)尋求社區和 Aspose 開發人員的協助。

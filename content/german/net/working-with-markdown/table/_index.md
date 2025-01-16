@@ -41,7 +41,7 @@ Dieser Schritt ist wie das Einrichten Ihres Arbeitsbereichs. Sie haben Ihr leere
 
 ## Schritt 2: Beginnen Sie mit dem Bau Ihres Tisches
 
-Nachdem wir nun unsere Werkzeuge haben, können wir mit dem Erstellen der Tabelle beginnen. Wir beginnen mit dem Einfügen der ersten Zelle der ersten Zeile.
+Jetzt, da wir unsere Werkzeuge haben, können wir mit dem Erstellen der Tabelle beginnen. Wir beginnen mit dem Einfügen der ersten Zelle der ersten Zeile.
 
 ```csharp
 // Fügen Sie die erste Zeile hinzu.

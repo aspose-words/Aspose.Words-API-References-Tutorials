@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /es/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## Introducción a las firmas digitales
 
 Las firmas digitales son el equivalente electrónico de las firmas manuscritas y permiten verificar la autenticidad, la integridad y el origen de los documentos electrónicos. Cuando se firma digitalmente un documento, se genera un hash criptográfico basado en el contenido del documento. Luego, este hash se cifra con la clave privada del firmante, lo que crea la firma digital. Cualquier persona que tenga la clave pública correspondiente puede verificar la firma y determinar la autenticidad del documento.
@@ -25,7 +24,7 @@ Para comenzar a administrar firmas digitales con Aspose.Words para Python, siga 
 2. Importe los módulos necesarios: Importe los módulos necesarios en su script de Python:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## Carga y acceso a documentos
@@ -33,7 +32,7 @@ Para comenzar a administrar firmas digitales con Aspose.Words para Python, siga 
 Antes de agregar o verificar firmas digitales, debe cargar el documento mediante Aspose.Words:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## Cómo agregar firmas digitales a los documentos
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 Para agregar una firma digital a un documento, necesitará un certificado digital:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 Ahora, firma el documento:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## Verificación de firmas digitales
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## Eliminación de firmas digitales
-
-Para eliminar una firma digital de un documento:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## Garantizar la autenticidad de los documentos
-
-Las firmas digitales garantizan la autenticidad de los documentos al confirmar su origen e integridad. Además, protegen contra la manipulación y las modificaciones no autorizadas.
-
 ## Personalización de la apariencia de la firma digital
 
 Puede personalizar la apariencia de las firmas digitales:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## Conclusión

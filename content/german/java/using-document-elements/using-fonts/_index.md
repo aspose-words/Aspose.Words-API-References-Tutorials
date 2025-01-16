@@ -90,4 +90,4 @@ A: Ja, Sie können benutzerdefinierte Schriftarten verwenden, indem Sie den Schr
  A: Sie können die`Font.setColor()` Methode zum Festlegen der Schriftfarbe.
 
 ### F: Gibt es Beschränkungen hinsichtlich der Anzahl der Schriftarten, die ich in einem Dokument verwenden kann?
-A: Aspose.Words für Java unterstützt eine breite Palette von Schriftarten und es gibt im Allgemeinen keine strengen Beschränkungen hinsichtlich der Anzahl der Schriftarten, die Sie in einem Dokument verwenden können.
+A: Aspose.Words für Java unterstützt eine große Bandbreite an Schriftarten und es gibt im Allgemeinen keine strengen Beschränkungen hinsichtlich der Anzahl der Schriftarten, die Sie in einem Dokument verwenden können.

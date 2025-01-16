@@ -95,7 +95,7 @@ Dithering Floyda-Steinberga pomaga rozłożyć błędy pikseli w taki sposób, a
 Tak, Aspose.Words obsługuje różne metody kompresji TIFF, takie jak LZW, CCITT4 i RLE.
 
 ### Czy Aspose.Words dla .NET jest darmowy?
-Aspose.Words for .NET jest biblioteką komercyjną, ale można uzyskać bezpłatną wersję próbną lub tymczasową licencję, aby zapoznać się z jej funkcjami.
+Aspose.Words dla platformy .NET jest biblioteką komercyjną, ale można uzyskać bezpłatną wersję próbną lub tymczasową licencję, aby zapoznać się z jej funkcjami.
 
 ### Gdzie mogę znaleźć więcej dokumentacji?
  Pełną dokumentację Aspose.Words dla .NET można znaleźć na stronie[Strona internetowa Aspose](https://reference.aspose.com/words/net/).

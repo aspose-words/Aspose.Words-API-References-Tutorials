@@ -107,5 +107,5 @@ Bez této volby by seznamy s mezerami mezi číslováním a textem nemusely být
 Tato specifická funkce je přizpůsobena pro Aspose.Words for .NET, navržená tak, aby zvládla zpracování dokumentů Word.
 
 ### Jak mohu získat dočasnou licenci pro Aspose.Words pro .NET?
- Dočasnou licenci můžete získat od[Přijměte dočasnou licenci](https://purchase.aspose.com/temporary-license/) strana.
+ Dočasnou licenci můžete získat od[Získejte dočasnou licenci](https://purchase.aspose.com/temporary-license/) strana.
 

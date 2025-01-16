@@ -54,12 +54,13 @@ Du kan använda Aspose.Words för att använda kursiv stil på specifika textdel
 ```python
 # Import the required classes
 from aspose.words import Document, Font, Style
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply italic style
 font = run.font
@@ -76,12 +77,13 @@ För att markera text kan du justera bakgrundsfärgen för en löprunda. Så hä
 ```python
 # Import the required classes
 from aspose.words import Document, Color
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply background color
 run.font.highlight_color = Color.YELLOW
@@ -97,15 +99,16 @@ Justering kan ställas in med hjälp av stilar. Här är ett exempel:
 ```python
 # Import the required classes
 from aspose.words import Document, ParagraphAlignment
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set alignment
-paragraph.paragraph_format.alignment = ParagraphAlignment.RIGHT
+paragraph.paragraph_format.alignment = aw.ParagraphAlignment.RIGHT
 
 # Save the modified document
 doc.save("modified_document.docx")
@@ -118,12 +121,13 @@ Genom att använda lämpligt radavstånd ökar läsbarheten. Du kan uppnå detta
 ```python
 # Import the required classes
 from aspose.words import Document, LineSpacingRule
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set line spacing
 paragraph.paragraph_format.line_spacing_rule = LineSpacingRule.MULTIPLE
@@ -141,7 +145,7 @@ Aspose.Words för Python ger ett brett utbud av alternativ för typsnitt och tex
 
 När det gäller skapande av dokument är typsnitt och textstil kraftfulla verktyg för att förbättra visuellt tilltalande och effektivt förmedla information. Genom att förstå grunderna för typsnitt, textstilar och använda verktyg som Aspose.Words för Python kan du skapa professionella dokument som fångar och behåller din publiks uppmärksamhet.
 
-## Vanliga frågor
+## FAQ's
 
 ### Hur ändrar jag teckensnittsfärgen med Aspose.Words för Python?
 

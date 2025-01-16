@@ -110,7 +110,7 @@ Ja, u kunt cellen in een tabel samenvoegen met behulp van Aspose.Words, zoals in
  Geen zorgen! U kunt eerder samengevoegde cellen eenvoudig splitsen door hun horizontale samenvoegingseigenschap in te stellen op`NONE`.
 
 ### Hoe kan ik een pagina-einde toevoegen vóór een tabel?
- Om een pagina-einde voor een tabel in te voegen, wijzigt u het lettertype`PageBreakBefore` eigendom zoals aangetoond.
+Om een pagina-einde voor een tabel in te voegen, wijzigt u het lettertype`PageBreakBefore` eigendom zoals aangetoond.
 
 ### Is Aspose.Words compatibel met verschillende documentformaten?
 Absoluut! Aspose.Words voor Java ondersteunt verschillende documentformaten, waardoor het een veelzijdige keuze is voor documentbeheer.

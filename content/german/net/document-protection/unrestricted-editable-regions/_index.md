@@ -16,7 +16,7 @@ Wenn Sie schon immer ein Word-Dokument schützen, aber dennoch bestimmte Teile e
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
 1.  Aspose.Words für .NET: Wenn Sie es noch nicht getan haben, laden Sie es herunter[Hier](https://releases.aspose.com/words/net/).
-2.  Eine gültige Aspose-Lizenz: Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
+2. Eine gültige Aspose-Lizenz: Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Jede aktuelle Version sollte einwandfrei funktionieren.
 4. Grundkenntnisse in C# und .NET: Diese helfen Ihnen dabei, dem Code zu folgen.
 

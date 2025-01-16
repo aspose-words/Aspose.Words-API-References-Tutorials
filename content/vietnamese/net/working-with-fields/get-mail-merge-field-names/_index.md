@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-Các`Aspose.Words` không gian tên cho phép bạn truy cập vào tất cả các lớp và phương thức cần thiết để thao tác với các tài liệu Word, trong khi`System` được sử dụng cho chức năng cơ bản như đầu ra giao diện điều khiển.
+ Các`Aspose.Words` không gian tên cho phép bạn truy cập vào tất cả các lớp và phương thức cần thiết để thao tác với các tài liệu Word, trong khi`System` được sử dụng cho chức năng cơ bản như đầu ra giao diện điều khiển.
 
 Chúng ta hãy cùng phân tích quy trình trích xuất tên trường trộn thư thành hướng dẫn từng bước rõ ràng.
 
@@ -73,7 +73,7 @@ Tiêu đề: Trích xuất tên trường trộn thư
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-Các`GetFieldNames()`phương thức trả về một mảng chuỗi, mỗi chuỗi đại diện cho một tên trường trộn thư được tìm thấy trong tài liệu. Đây là các chỗ giữ chỗ bạn sẽ thấy trong tài liệu Word của mình.
+ Các`GetFieldNames()`phương thức trả về một mảng chuỗi, mỗi chuỗi đại diện cho một tên trường trộn thư được tìm thấy trong tài liệu. Đây là các chỗ giữ chỗ bạn sẽ thấy trong tài liệu Word của mình.
 
 ## Bước 4: Hiển thị số lượng trường hợp nhất
 

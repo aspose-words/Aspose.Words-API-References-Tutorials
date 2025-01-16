@@ -18,7 +18,7 @@ url: /hi/net/document-protection/password-protection/
 1.  Aspose.Words for .NET: सुनिश्चित करें कि आपके पास Aspose.Words for .NET लाइब्रेरी है। आप ऐसा कर सकते हैं[यहाँ पर डाउनलोड करो](https://releases.aspose.com/words/net/).
 2. विकास वातावरण: विजुअल स्टूडियो या कोई अन्य C# विकास वातावरण।
 3. बुनियादी C# ज्ञान: C# प्रोग्रामिंग की मूलभूत समझ।
-4. Aspose लाइसेंस: यहाँ से लाइसेंस प्राप्त करें[यहाँ](https://purchase.aspose.com/buy) या का उपयोग करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन हेतु.
+4.  Aspose लाइसेंस: यहाँ से लाइसेंस प्राप्त करें[यहाँ](https://purchase.aspose.com/buy) या का उपयोग करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन हेतु.
 
 ## नामस्थान आयात करें
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ### सुरक्षा प्रकार चुनें
 
- Aspose.Words विभिन्न प्रकार की सुरक्षा प्रदान करता है, जैसे`NoProtection`, `ReadOnly`, `AllowOnlyComments` , और`AllowOnlyFormFields` इस उदाहरण के लिए, हम उपयोग करेंगे`NoProtection` लेकिन पासवर्ड के साथ, जिसका अनिवार्य रूप से अर्थ यह है कि दस्तावेज़ संपादन योग्य है लेकिन सुरक्षा हटाने के लिए पासवर्ड की आवश्यकता है।
+ Aspose.Words विभिन्न प्रकार की सुरक्षा प्रदान करता है, जैसे`NoProtection`, `ReadOnly`, `AllowOnlyComments` , और`AllowOnlyFormFields`इस उदाहरण के लिए, हम उपयोग करेंगे`NoProtection` लेकिन पासवर्ड के साथ, जिसका अनिवार्य रूप से अर्थ यह है कि दस्तावेज़ संपादन योग्य है लेकिन सुरक्षा हटाने के लिए पासवर्ड की आवश्यकता है।
 
 ### सुरक्षा लागू करें
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### क्या मैं Aspose.Words के साथ विभिन्न प्रकार की सुरक्षा का उपयोग कर सकता हूँ?
 
- हाँ, Aspose.Words विभिन्न प्रकार की सुरक्षा का समर्थन करता है, जिसमें शामिल हैं`ReadOnly`, `AllowOnlyComments` , और`AllowOnlyFormFields`.
+हाँ, Aspose.Words विभिन्न प्रकार की सुरक्षा का समर्थन करता है, जिसमें शामिल हैं`ReadOnly`, `AllowOnlyComments` , और`AllowOnlyFormFields`.
 
 ### मैं किसी दस्तावेज़ से पासवर्ड सुरक्षा कैसे हटा सकता हूँ?
 
@@ -110,4 +110,4 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### मैं Aspose.Words पर अधिक दस्तावेज़ कहां पा सकता हूं?
 
-आप अधिक दस्तावेज़ यहां पा सकते हैं[Aspose.Words दस्तावेज़ीकरण पृष्ठ](https://reference.aspose.com/words/net/).
+ आप अधिक दस्तावेज़ यहां पा सकते हैं[Aspose.Words दस्तावेज़ीकरण पृष्ठ](https://reference.aspose.com/words/net/).

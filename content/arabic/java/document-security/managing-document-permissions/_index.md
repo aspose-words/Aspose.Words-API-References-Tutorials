@@ -16,7 +16,7 @@ url: /ar/java/document-security/managing-document-permissions/
 
 قبل أن نتعمق في إدارة أذونات المستندات، فلنبدأ بإعداد Aspose.Words لـ Java. اتبع الخطوات التالية للبدء:
 
-1.  تنزيل Aspose.Words لـ Java: قم بزيارة[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/java/) لتنزيل الإصدار الأحدث من Aspose.Words لـ Java.
+1.  تنزيل Aspose.Words لـ Java: قم بزيارة[https://releases.aspose.com/words/Java/](https://releases.aspose.com/words/java/)لتنزيل الإصدار الأحدث من Aspose.Words لـ Java.
 
 2. تثبيت Aspose.Words لـ Java: بعد تنزيل المكتبة، اتبع تعليمات التثبيت لإعدادها في بيئة تطوير Java الخاصة بك.
 
@@ -52,21 +52,12 @@ url: /ar/java/document-security/managing-document-permissions/
 // تحميل المستند
 Document doc = new Document("sample.docx");
 
-// تعريف التحكم في الوصول
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// تطبيق حماية المستندات
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// حفظ المستند
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
 ## الأسئلة الشائعة
 
-## كيف يمكنني إزالة حماية المستند؟
+### كيف يمكنني إزالة حماية المستند؟
 
 لإزالة حماية المستند، ما عليك سوى فتح المستند المحمي، وإذا كان محميًا بكلمة مرور، فقم بتوفير كلمة المرور الصحيحة. ثم استخدم Aspose.Words for Java لإزالة الحماية على النحو التالي:
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## هل يمكنني تعيين أذونات لمستخدمين محددين؟
+### هل يمكنني تعيين أذونات لمستخدمين محددين؟
 
 نعم، يتيح لك Aspose.Words for Java تعيين أذونات لمستخدمين أو مجموعات محددة. يمكنك تحديد من يمكنه الوصول إلى المستند وتحريره.
 
-## هل من الممكن تشفير مستند بكلمات مرور متعددة؟
+### هل من الممكن تشفير مستند بكلمات مرور متعددة؟
 
 لا، يدعم Aspose.Words for Java التشفير بكلمة مرور واحدة. يمكنك تعيين كلمة مرور لحماية المستند.
 
-## كيف يمكنني التحقق من أذونات المستند؟
+### كيف يمكنني التحقق من أذونات المستند؟
 
 بإمكانك استخدام Aspose.Words for Java للتحقق من أذونات مستند من خلال فحص إعدادات الحماية وخيارات التحكم في الوصول.
 
-## هل يمكنني أتمتة إدارة أذونات المستندات؟
+### هل يمكنني أتمتة إدارة أذونات المستندات؟
 
 بالتأكيد! يمكنك دمج Aspose.Words for Java في تطبيقاتك لأتمتة إدارة أذونات المستندات، مما يجعلها جزءًا سلسًا من سير عمل المستندات لديك.
 
-## ماذا لو نسيت كلمة المرور للمستند؟
+### ماذا لو نسيت كلمة المرور للمستند؟
 
 إذا نسيت كلمة مرور المستند، فلا توجد طريقة لاستعادتها. تأكد من الاحتفاظ بسجل لكلمات المرور الخاصة بك في مكان آمن.
 

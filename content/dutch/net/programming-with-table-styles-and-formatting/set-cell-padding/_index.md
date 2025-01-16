@@ -9,7 +9,7 @@ url: /nl/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
 ## Invoering
 
-Heb je je ooit afgevraagd hoe je een beetje extra ruimte kunt toevoegen rond de tekst in een tabelcel in je Word-document? Nou, dan ben je hier aan het juiste adres! Deze tutorial leidt je door het proces van het instellen van celopvulling met Aspose.Words voor .NET. Of je nu je document er gepolijster uit wilt laten zien of gewoon je tabelgegevens wilt laten opvallen, het aanpassen van celopvulling is een eenvoudige maar krachtige tool. We zullen elke stap uitsplitsen om ervoor te zorgen dat je het gemakkelijk kunt volgen, zelfs als je nieuw bent met Aspose.Words voor .NET.
+Heb je je ooit afgevraagd hoe je een beetje extra ruimte kunt toevoegen rond de tekst in een tabelcel in je Word-document? Nou, dan ben je hier aan het juiste adres! Deze tutorial leidt je door het proces van het instellen van celopvulling met Aspose.Words voor .NET. Of je nu je document er gepolijster uit wilt laten zien of gewoon je tabelgegevens wilt laten opvallen, het aanpassen van celopvulling is een eenvoudige maar krachtige tool. We zullen elke stap opsplitsen om ervoor te zorgen dat je het gemakkelijk kunt volgen, zelfs als je nieuw bent met Aspose.Words voor .NET.
 
 ## Vereisten
 

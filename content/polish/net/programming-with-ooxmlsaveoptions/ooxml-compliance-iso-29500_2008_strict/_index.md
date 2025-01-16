@@ -54,7 +54,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Krok 3: Zoptymalizuj dokument dla programu Word 2016
 
-Aby zapewnić zgodność i optymalną wydajność, musimy zoptymalizować dokument pod kątem konkretnej wersji programu Word.
+Aby zagwarantować zgodność i optymalną wydajność, musimy zoptymalizować dokument pod kątem konkretnej wersji programu Word.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);

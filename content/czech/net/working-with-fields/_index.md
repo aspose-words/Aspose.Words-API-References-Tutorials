@@ -13,7 +13,7 @@ Toto je komplexní zdroj pro výuku, jak pracovat s poli v dokumentech aplikace 
 | Titul | Popis |
 | --- | --- |
 | [Kód pole](./field-code/) | Naučte se pracovat s kódy polí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tato příručka popisuje načítání dokumentů, přístup k polím a zpracování kódů polí. |
-| [Změnit pole Aktualizovat zdroj kultury](./change-field-update-culture-source/) | V této příručce se dozvíte, jak změnit zdroj kultury aktualizace pole v Aspose.Words for .NET. Snadno ovládejte formátování data na základě různých kultur.|
+| [Změnit pole Aktualizovat zdroj kultury](./change-field-update-culture-source/) | V této příručce se dozvíte, jak změnit zdroj kultury aktualizace pole v Aspose.Words pro .NET. Snadno ovládejte formátování data na základě různých kultur.|
 | [Zadejte národní prostředí na úrovni pole](./specify-locale-at-field-level/) | Zjistěte, jak určit národní prostředí pro pole v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho průvodce a snadno přizpůsobte formátování dokumentu. |
 | [Nahradit hypertextové odkazy](./replace-hyperlinks/) | Nahraďte hypertextové odkazy v dokumentech aplikace Word pomocí Aspose.Words for .NET. Podrobné pokyny pro nahrazení hypertextových odkazů. |
 | [Přejmenujte slučovací pole](./rename-merge-fields/) | Naučte se přejmenovat slučovací pole v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce krok za krokem pro snadnou manipulaci s dokumenty. |
@@ -27,7 +27,7 @@ Toto je komplexní zdroj pro výuku, jak pracovat s poli v dokumentech aplikace 
 | [Vložit pole](./insert-field/) | Naučte se vkládat pole do dokumentů aplikace Word pomocí Aspose.Words for .NET pomocí našeho podrobného průvodce krok za krokem. Ideální pro automatizaci dokumentů. |
 | [Vložit pole pomocí Tvůrce polí](./insert-field-using-field-builder/) | Naučte se vkládat dynamická pole do dokumentů aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Ideální pro vývojáře. |
 | [Vložit pole autora](./insert-author-field/) | Naučte se, jak vložit pole autora do dokumentu aplikace Word pomocí Aspose.Words for .NET pomocí našeho podrobného průvodce. Ideální pro automatizaci tvorby dokumentů. |
-| [Vložit ASKField s Out Document Builder](./insert-askfield-with-out-document-builder/) | Přečtěte si, jak vložit pole ASK bez použití Tvůrce dokumentů v Aspose.Words pro .NET. Chcete-li dynamicky vylepšit své dokumenty Word, postupujte podle tohoto průvodce. |
+| [Vložte ASKField s Out Document Builder](./insert-askfield-with-out-document-builder/) | Přečtěte si, jak vložit pole ASK bez použití Tvůrce dokumentů v Aspose.Words pro .NET. Chcete-li dynamicky vylepšit své dokumenty Word, postupujte podle tohoto průvodce. |
 | [Vložit pokročilé pole bez Tvůrce dokumentů](./insert-advance-field-with-out-document-builder/) | Naučte se, jak vložit pole zálohy bez použití DocumentBuilder v Aspose.Words for .NET. Postupujte podle této příručky a zdokonalte své dovednosti v oblasti zpracování dokumentů. |
 | [Získejte názvy polí hromadné korespondence](./get-mail-merge-field-names/) | Naučte se, jak extrahovat názvy polí hromadné korespondence z dokumentu aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. |
 | [Smazat pole](./delete-fields/) | Průvodce krok za krokem pro odstranění slučovacích polí v dokumentech aplikace Word pomocí Aspose.Words for .NET |

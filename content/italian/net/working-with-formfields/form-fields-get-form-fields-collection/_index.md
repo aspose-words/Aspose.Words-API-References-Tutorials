@@ -67,7 +67,7 @@ foreach (FormField formField in formFields)
 
 Spiegazione: In questo esempio, eseguiamo un ciclo su ogni campo del modulo nella raccolta. Se il campo del modulo è un input di testo (`FieldType.FieldFormTextInput`), cambiamo il suo valore in "Nuovo valore".
 
-## Passaggio 4: Salvare il documento modificato
+## Passaggio 4: salvare il documento modificato
 
 Dopo aver apportato le modifiche necessarie ai campi del modulo, il passaggio finale consiste nel salvare il documento modificato.
 

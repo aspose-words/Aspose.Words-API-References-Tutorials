@@ -44,10 +44,7 @@ L'accettazione delle modifiche è un passaggio fondamentale per la finalizzazion
 
 ```java
 // Accetta tutte le revisioni
-doc.acceptAllRevisions();
-
-// Accetta una revisione specifica tramite indice
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Rifiuto delle modifiche
@@ -56,10 +53,7 @@ In alcuni casi, potresti dover rifiutare alcune modifiche. Aspose.Words per Java
 
 ```java
 // Rifiuta tutte le revisioni
-doc.rejectAllRevisions();
-
-// Rifiuta una revisione specifica per indice
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Salvataggio del documento

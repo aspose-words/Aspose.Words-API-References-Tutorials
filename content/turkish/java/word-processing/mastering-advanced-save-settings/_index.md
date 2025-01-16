@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /tr/java/word-processing/mastering-advanced-save-settings/
 ---
+
 Belge işleme becerilerinizi bir üst seviyeye taşımaya hazır mısınız? Bu kapsamlı kılavuzda, Aspose.Words for Java kullanarak belgeler için gelişmiş kaydetme ayarlarında ustalaşmanın derinliklerine ineceğiz. İster deneyimli bir geliştirici olun, ister yeni başlıyor olun, Aspose.Words for Java ile belge düzenlemenin inceliklerini size anlatacağız.
 
 ## giriiş
@@ -25,13 +26,13 @@ Belgelerinizin biçimini ve yönünü nasıl belirleyeceğinizi öğrenin. İste
 ```java
 // Belge biçimini DOCX olarak ayarla
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
-// Sayfa yönlendirmesini Yatay olarak ayarla
+//Sayfa yönlendirmesini Yatay olarak ayarla
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## Sayfa Kenar Boşluklarını Kontrol Etme
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 inç
 pageSetup.setRightMargin(72.0); // 1 inç
 pageSetup.setTopMargin(36.0); // 0,5 inç
 pageSetup.setBottomMargin(36.0); // 0,5 inç
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## Başlıkları ve Altbilgileri Yönetme
@@ -56,11 +57,11 @@ Başlıklar ve altbilgiler genellikle kritik bilgiler içerir. Belgelerinizdeki 
 ```java
 // İlk sayfaya bir başlık ekleyin
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## Platformlar Arası Görüntüleme için Yazı Tiplerini Yerleştirme
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## Belgelerinizi Koruma
@@ -85,7 +86,7 @@ Güvenlik önemlidir, özellikle hassas belgelerle uğraşırken. Belgelerinizi 
 // Belgeyi bir parola ile koruyun
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## Filigranları Özelleştirme
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## Belge Boyutunu Optimize Etme
@@ -111,7 +112,7 @@ Büyük belge dosyaları kullanışsız olabilir. Kaliteyi düşürmeden belge b
 // Belge boyutunu optimize edin
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## Farklı Formatlara Aktarma
@@ -121,7 +122,7 @@ Bazen belgenizin çeşitli formatlarda olması gerekir. Aspose.Words for Java, P
 ```java
 // PDF'ye aktar
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## Belge Üretiminin Otomatikleştirilmesi
@@ -133,7 +134,7 @@ Otomasyon, belge oluşturmada oyunun kurallarını değiştirir. Aspose.Words fo
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## Belge Meta Verileri ile Çalışma
@@ -143,9 +144,8 @@ Meta veriler bir belge hakkında değerli bilgiler içerir. Belge meta verileriy
 ```java
 // Belge meta verilerine erişin ve bunları değiştirin
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## Belge Sürümlerinin İşlenmesi
@@ -153,18 +153,22 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 Belge sürümlemesi, işbirlikçi ortamlarda çok önemlidir. Belgelerinizin farklı sürümlerini etkili bir şekilde nasıl yöneteceğinizi öğrenin.
 
 ```java
-// Belge sürümlerini karşılaştırın
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+// Belgeleri revizyonlarla karşılaştırmak bir istisna oluşturacaktır.
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## Gelişmiş Belge Karşılaştırması
+
+Aspose.Words for Java'nın sunduğu gelişmiş teknikleri kullanarak belgeleri hassas bir şekilde karşılaştırın.
 
 ```java
 // Gelişmiş belge karşılaştırması
@@ -217,7 +221,7 @@ Aspose.Words for Java, PDF, HTML, DOCX ve daha fazlası dahil olmak üzere belge
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Aspose.Words for Java toplu belge oluşturmaya uygun mudur?
@@ -228,7 +232,7 @@ Evet, Aspose.Words for Java toplu belge üretimi için oldukça uygundur ve bu d
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### İki Word belgesini farklılıklar açısından nasıl karşılaştırabilirim?

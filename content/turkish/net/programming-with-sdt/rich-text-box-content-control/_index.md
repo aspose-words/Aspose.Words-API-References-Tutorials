@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Adım 2: Yeni Bir Belge Oluşturun
 
-Yeni bir tane oluştur`Document` Word belgenizin temelini oluşturacak nesne.
+ Yeni bir tane oluştur`Document` Word belgenizin temelini oluşturacak nesne.
 
 ```csharp
 Document doc = new Document();

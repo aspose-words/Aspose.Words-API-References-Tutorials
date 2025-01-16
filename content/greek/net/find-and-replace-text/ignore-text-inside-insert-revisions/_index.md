@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Έναρξη παρακολούθησης αναθεωρήσεων
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //Εισαγωγή κειμένου με παρακολούθηση αναθεωρήσεων
+builder.Writeln("Inserted"); // Εισαγωγή κειμένου με παρακολούθηση αναθεωρήσεων
 doc.StopTrackRevisions();
 ```
 

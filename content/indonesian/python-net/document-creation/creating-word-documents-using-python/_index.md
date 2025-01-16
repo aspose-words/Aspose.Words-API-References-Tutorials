@@ -7,10 +7,7 @@ type: docs
 weight: 10
 url: /id/python-net/document-creation/creating-word-documents-using-python/
 ---
-
-Dalam panduan lengkap ini, kita akan membahas proses pembuatan dokumen Microsoft Word menggunakan Python. Apakah Anda seorang pengembang Python berpengalaman atau pendatang baru, artikel ini bertujuan untuk membekali Anda dengan pengetahuan dan keterampilan yang diperlukan untuk membuat dokumen Word secara terprogram. Kami akan membahas cuplikan kode, pustaka, dan teknik penting untuk memberdayakan Anda dalam membuat dokumen Word yang dinamis dan disesuaikan secara efisien.
-
-## Pengantar Pembuatan Dokumen Word dengan Python
+## Perkenalan
 
 Mengotomatiskan pembuatan dokumen Word menggunakan Python dapat meningkatkan produktivitas secara signifikan dan menyederhanakan tugas pembuatan dokumen. Fleksibilitas Python dan ekosistem pustaka yang kaya menjadikannya pilihan yang sangat baik untuk tujuan ini. Dengan memanfaatkan kekuatan Python, Anda dapat mengotomatiskan proses pembuatan dokumen berulang dan menggabungkannya dengan lancar ke dalam aplikasi Python Anda.
 
@@ -24,17 +21,17 @@ Untuk mencapai tujuan kita dalam membuat dokumen Word menggunakan Python, kita m
 
 ## Menginstal Aspose.Words untuk Python
 
-Untuk memulai, Anda perlu mengunduh dan memasang pustaka Aspose.Words for Python. Anda dapat memperoleh berkas yang diperlukan dari Aspose.Releases (https://releases.aspose.com/words/python/). Setelah Anda mengunduh pustaka, ikuti petunjuk penginstalan khusus untuk sistem operasi Anda.
+ Untuk memulai, Anda perlu mengunduh dan memasang pustaka Aspose.Words for Python. Anda dapat memperoleh berkas yang diperlukan dari Aspose.Releases[Aspose.Kata Python](https://releases.aspose.com/words/python/)Setelah Anda mengunduh pustaka tersebut, ikuti petunjuk penginstalan yang sesuai dengan sistem operasi Anda.
 
 ## Menginisialisasi Lingkungan Aspose.Words
 
 Setelah pustaka berhasil diinstal, langkah berikutnya adalah menginisialisasi lingkungan Aspose.Words dalam proyek Python Anda. Inisialisasi ini penting untuk memanfaatkan fungsionalitas pustaka secara efektif. Cuplikan kode berikut menunjukkan cara melakukan inisialisasi ini:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Initialize Aspose.Words environment
-asposewords.License().set_license('Aspose.Words.lic')
+aw.License().set_license('Aspose.Words.lic')
 
 # Rest of the code for document generation
 # ...
@@ -45,11 +42,11 @@ asposewords.License().set_license('Aspose.Words.lic')
 Setelah lingkungan Aspose.Words disiapkan, kita sekarang dapat melanjutkan untuk membuat dokumen Word kosong sebagai titik awal. Dokumen ini akan berfungsi sebagai fondasi tempat kita akan menambahkan konten secara terprogram. Kode berikut mengilustrasikan cara membuat dokumen kosong baru:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 def create_blank_document():
     # Create a new blank document
-    doc = asposewords.Document()
+    doc = aw.Document()
 
     # Save the document
     doc.save("output.docx")
@@ -60,21 +57,13 @@ def create_blank_document():
 Kekuatan Aspose.Words untuk Python yang sesungguhnya terletak pada kemampuannya untuk menambahkan konten yang kaya ke dokumen Word. Anda dapat menyisipkan teks, tabel, gambar, dan lainnya secara dinamis. Berikut ini adalah contoh penambahan konten ke dokumen kosong yang telah dibuat sebelumnya:
 
 ```python
-import asposewords
+import aspose.words as aw
 
-def add_content_to_document():
-    # Load the previously created blank document
-    doc = asposewords.Document("output.docx")
-
-    # Access the main story of the document
-    story = doc.first_section.body
-
-    # Add a paragraph to the document
-    paragraph = story.add_paragraph()
-    paragraph.append_text("Hello, World!")
-
-    # Save the updated document
-    doc.save("output.docx")
+def test_create_and_add_paragraph_node(self):
+	doc = aw.Document()
+	para = aw.Paragraph(doc)
+	section = doc.last_section
+	section.body.append_child(para)
 ```
 
 ## Menggabungkan Pemformatan dan Gaya
@@ -82,17 +71,17 @@ def add_content_to_document():
 Untuk membuat dokumen yang tampak profesional, Anda mungkin ingin menerapkan pemformatan dan gaya pada konten yang Anda tambahkan. Aspose.Words untuk Python menawarkan berbagai pilihan pemformatan, termasuk gaya font, warna, perataan, indentasi, dan banyak lagi. Mari kita lihat contoh penerapan pemformatan pada paragraf:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 def format_paragraph():
     # Load the document
-    doc = asposewords.Document("output.docx")
+    doc = aw.Document("output.docx")
 
     # Access the first paragraph of the document
     paragraph = doc.first_section.body.first_paragraph
 
     # Apply formatting to the paragraph
-    paragraph.alignment = asposewords.ParagraphAlignment.CENTER
+    paragraph.alignment = aw.ParagraphAlignment.CENTER
 
     # Save the updated document
     doc.save("output.docx")
@@ -103,37 +92,35 @@ def format_paragraph():
 Tabel biasanya digunakan dalam dokumen Word untuk mengatur data. Dengan Aspose.Words untuk Python, Anda dapat dengan mudah membuat tabel dan mengisinya dengan konten. Berikut ini adalah contoh penambahan tabel sederhana ke dalam dokumen:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 def add_table_to_document():
     # Load the document
-    doc = asposewords.Document("output.docx")
-
-    # Access the main story of the document
-    story = doc.first_section.body
-
-    # Create a new table with 3 rows and 3 columns
-    table = story.add_table()
-    for row in range(3):
-        # Add a new row to the table
-        table_row = table.add_row()
-        for col in range(3):
-            # Add a new cell to the row
-            cell = table_row.cells[col]
-            # Add content to the cell
-            cell.append_paragraph().append_text(f"Row {row}, Col {col}")
-
-    # Save the updated document
-    doc.save("output.docx")
+    doc = aw.Document()
+	table = aw.tables.Table(doc)
+	doc.first_section.body.append_child(table)
+	# Tables contain rows, which contain cells, which may have paragraphs
+	# with typical elements such as runs, shapes, and even other tables.
+	# Calling the "EnsureMinimum" method on a table will ensure that
+	# the table has at least one row, cell, and paragraph.
+	first_row = aw.tables.Row(doc)
+	table.append_child(first_row)
+	first_cell = aw.tables.Cell(doc)
+	first_row.append_child(first_cell)
+	paragraph = aw.Paragraph(doc)
+	first_cell.append_child(paragraph)
+	# Add text to the first cell in the first row of the table.
+	run = aw.Run(doc=doc, text='Hello world!')
+	paragraph.append_child(run)
+	# Save the updated document
+	doc.save(file_name=ARTIFACTS_DIR + 'Table.CreateTable.docx')
 ```
 
 ## Kesimpulan
 
 Dalam panduan lengkap ini, kami telah menjajaki cara membuat dokumen MS Word menggunakan Python dengan bantuan pustaka Aspose.Words. Kami membahas berbagai aspek, termasuk menyiapkan lingkungan, membuat dokumen kosong, menambahkan konten, menerapkan pemformatan, dan menggabungkan tabel. Dengan mengikuti contoh dan memanfaatkan kemampuan pustaka Aspose.Words, kini Anda dapat membuat dokumen Word yang dinamis dan disesuaikan secara efisien dalam aplikasi Python Anda.
 
-Berbekal pengetahuan ini, kini Anda memiliki alat untuk mengotomatiskan pembuatan dokumen Word menggunakan Python, sehingga menghemat waktu dan tenaga yang berharga dalam prosesnya. Selamat membuat kode dan dokumen!
-
-## Pertanyaan yang Sering Diajukan (FAQ) 
+## Pertanyaan yang Sering Diajukan 
 
 ### 1. Apa itu Aspose.Words untuk Python, dan bagaimana ia membantu dalam pembuatan dokumen Word?
 
@@ -143,7 +130,7 @@ Aspose.Words untuk Python adalah pustaka canggih yang menyediakan API untuk beri
 
 Untuk menginstal Aspose.Words untuk Python, ikuti langkah-langkah berikut:
 
-1. Kunjungi Aspose.Releases (https://releases.aspose.com/words/python).
+1.  Kunjungi[Aspose.Rilis](https://releases.aspose.com/words/python).
 2. Unduh file pustaka yang kompatibel dengan versi Python dan sistem operasi Anda.
 3. Ikuti petunjuk instalasi yang disediakan di situs web.
 
@@ -162,39 +149,18 @@ Aspose.Words untuk Python menawarkan berbagai fitur, termasuk:
 
 Ya, Anda dapat membuat dokumen Word dari awal menggunakan Aspose.Words untuk Python. Pustaka ini memungkinkan Anda membuat dokumen kosong dan menambahkan konten ke dalamnya, seperti paragraf, tabel, dan gambar, untuk menghasilkan dokumen yang sepenuhnya disesuaikan.
 
-### 5. Bagaimana cara menambahkan teks dan paragraf ke dokumen Word menggunakan Aspose.Words untuk Python?
-
-Untuk menambahkan teks dan paragraf ke dokumen Word menggunakan Aspose.Words untuk Python, Anda dapat mengikuti langkah-langkah berikut:
-
-```python
-import asposewords
-
-# Create a new blank document
-doc = asposewords.Document()
-
-# Access the main body of the document
-body = doc.first_section.body
-
-# Add a paragraph to the document
-paragraph = body.add_paragraph()
-paragraph.append_text("This is a sample paragraph.")
-
-# Save the document
-doc.save("output.docx")
-```
-
-### 6. Apakah mungkin untuk memformat konten dalam dokumen Word, seperti mengubah gaya font atau menerapkan warna?
+### 5. Apakah mungkin untuk memformat konten dalam dokumen Word, seperti mengubah gaya font atau menerapkan warna?
 
 Ya, Aspose.Words untuk Python memungkinkan Anda memformat konten dalam dokumen Word. Anda dapat mengubah gaya font, menerapkan warna, mengatur perataan, menyesuaikan indentasi, dan banyak lagi. Pustaka ini menyediakan berbagai pilihan pemformatan untuk menyesuaikan tampilan dokumen.
 
-### 7. Dapatkah saya menyisipkan gambar ke dalam dokumen Word menggunakan Aspose.Words untuk Python?
+### 6. Dapatkah saya menyisipkan gambar ke dalam dokumen Word menggunakan Aspose.Words untuk Python?
 
 Tentu saja! Aspose.Words untuk Python mendukung penyisipan gambar ke dalam dokumen Word. Anda dapat menambahkan gambar dari berkas lokal atau dari memori, mengubah ukurannya, dan memposisikannya di dalam dokumen.
 
-### 8. Apakah Aspose.Words untuk Python mendukung gabungan surat untuk pembuatan dokumen yang dipersonalisasi?
+### 7. Apakah Aspose.Words untuk Python mendukung gabungan surat untuk pembuatan dokumen yang dipersonalisasi?
 
 Ya, Aspose.Words untuk Python mendukung fungsi gabungan surat. Fitur ini memungkinkan Anda membuat dokumen yang dipersonalisasi dengan menggabungkan data dari berbagai sumber data ke dalam templat yang telah ditetapkan sebelumnya. Anda dapat menggunakan kemampuan ini untuk membuat surat, kontrak, laporan, dan lain-lain yang disesuaikan.
 
-### 9. Apakah Aspose.Words untuk Python cocok untuk menghasilkan dokumen kompleks dengan banyak bagian dan tajuk?
+### 8. Apakah Aspose.Words untuk Python cocok untuk menghasilkan dokumen kompleks dengan banyak bagian dan tajuk?
 
 Ya, Aspose.Words untuk Python dirancang untuk menangani dokumen kompleks dengan beberapa bagian, header, footer, dan pengaturan halaman. Anda dapat membuat dan memodifikasi struktur dokumen secara terprogram sesuai kebutuhan.

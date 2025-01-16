@@ -86,7 +86,7 @@ Aspose.Words for .NET을 사용하여 문서의 하이퍼링크를 바꾸는 것
  네, 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).
 
 ### Aspose.Words for .NET에 대한 문서는 어디에서 찾을 수 있나요?
-자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
+ 자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words for .NET에 대한 임시 라이선스를 어떻게 받을 수 있나요?
  임시 면허를 취득할 수 있습니다[여기](https://purchase.aspose.com/temporary-license/).

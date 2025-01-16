@@ -47,7 +47,7 @@ Nyissa meg a fejlesztői környezetet (például a Visual Studio), és hozzon l�
 
 ### Hozzon létre egy új dokumentumot
 
- A fő programfájlban kezdje a fájl új példányának létrehozásával`Document`osztály. Ez lesz az üres vásznunk.
+ A fő programfájlban kezdje a fájl új példányának létrehozásával`Document` osztály. Ez lesz az üres vásznunk.
 
 ```csharp
 Document doc = new Document();
@@ -113,7 +113,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### Hogyan kezdhetem el az Aspose.Words for .NET használatát?
 
- Kezdheti a könyvtár letöltésével a[weboldal](https://releases.aspose.com/words/net/) és hozzá kell adni a .NET projekthez.
+Kezdheti a könyvtár letöltésével a[weboldal](https://releases.aspose.com/words/net/) és hozzá kell adni a .NET projekthez.
 
 ### Használhatom ingyenesen az Aspose.Words-t?
 
@@ -121,8 +121,8 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### Hol találok további oktatóanyagokat az Aspose.Words for .NET-hez?
 
-A[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) remek hely a részletes oktatóanyagok és példák megtalálásához.
+ A[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) remek hely a részletes oktatóanyagok és példák megtalálásához.
 
 ### Hogyan kaphatok támogatást, ha problémákba ütközöm?
 
-Támogatást kaphat, ha ellátogat a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8).
+ Támogatást kaphat, ha ellátogat a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8).

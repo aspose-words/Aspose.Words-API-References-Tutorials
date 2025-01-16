@@ -19,7 +19,7 @@ Mielőtt nekivágnánk az asztalépítési kalandunknak, győződjünk meg arró
 - .NET-keretrendszer (4.0 vagy újabb)
 - Aspose.Words a .NET könyvtárhoz
 
- Ha még nincs Aspose.Words, könnyen megteheti[töltse le itt](https://releases.aspose.com/words/net/) . Kezdheti a-val is[ingyenes próbaverzió](https://releases.aspose.com/) ha tesztelni akarja a vizeket. Azok számára, akik készen állnak a lépésre, megtehetik[vásároljon licencet](https://purchase.aspose.com/buy) , vagy ha több időre van szüksége az értékeléshez, ragadjon meg a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).
+ Ha még nincs Aspose.Words, könnyen megteheti[töltse le itt](https://releases.aspose.com/words/net/) . Kezdheti a-val is[ingyenes próbaverzió](https://releases.aspose.com/) ha tesztelni akarja a vizeket. Azok számára, akik készen állnak a lépésre, megtehetik[vásároljon licencet](https://purchase.aspose.com/buy) vagy ha több időre van szüksége az értékeléshez, ragadjon meg a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).
 
 ## Névterek importálása
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Használatával`StartTable` azt mondjuk Aspose-nak.Szavak, hogy egy táblázat létrehozására készülünk. A`InsertCell` metódus hozzáadja az első cellát, és`AutoFit` biztosítja, hogy oszlopaink fix szélességűek legyenek.
+ Használatával`StartTable` , azt mondjuk Aspose-nak.Szavak, hogy egy táblázat létrehozására készülünk. A`InsertCell` metódus hozzáadja az első cellát, és`AutoFit` biztosítja oszlopaink rögzített szélességét.
 
 ## 3. lépés: Formázza meg az első sort
 
@@ -125,7 +125,7 @@ Ne feledje, gyakorlat teszi a mestert. Tehát ne habozzon kísérletezni a kül�
 Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való programozott munkavégzéshez. Lehetővé teszi dokumentumok létrehozását, szerkesztését és kezelését Microsoft Word nélkül.
 
 ### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
- Megteheti[töltse le az Aspose.Words for .NET-et innen](https://releases.aspose.com/words/net/). Kövesse a mellékelt telepítési utasításokat a fejlesztői környezetben történő beállításához.
+ Megteheti[töltse le az Aspose.Words for .NET-et innen](https://releases.aspose.com/words/net/)Kövesse a mellékelt telepítési utasításokat a fejlesztői környezetben történő beállításához.
 
 ### Használhatom ingyenesen az Aspose.Words-t?
  Az Aspose.Words ajánlatok a[ingyenes próbaverzió](https://releases.aspose.com/) így tesztelheti a tulajdonságait. Hosszabb idejű használathoz licencet vásárolhat, vagy a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).

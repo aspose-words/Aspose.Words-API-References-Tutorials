@@ -16,7 +16,7 @@ dnešním digitálním světě je správa dokumentů kritickým aspektem pracovn
 
 Než se ponoříme do správy oprávnění k dokumentům, začněme nastavením Aspose.Words pro Javu. Chcete-li začít, postupujte takto:
 
-1.  Stáhněte si Aspose.Words pro Java: Navštivte[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) ke stažení nejnovější verze Aspose.Words for Java.
+1.  Stáhněte si Aspose.Words pro Java: Navštivte[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)ke stažení nejnovější verze Aspose.Words for Java.
 
 2. Instalace Aspose.Words for Java: Po stažení knihovny postupujte podle pokynů k instalaci a nastavte ji ve vývojovém prostředí Java.
 
@@ -52,21 +52,12 @@ Zde je ukázkový fragment kódu Java pro nastavení oprávnění dokumentu:
 // Vložte dokument
 Document doc = new Document("sample.docx");
 
-// Definujte řízení přístupu
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Použít ochranu dokumentu
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Uložte dokument
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Často kladené otázky (FAQ)
+## FAQ
 
-## Jak mohu odstranit ochranu dokumentů?
+### Jak mohu odstranit ochranu dokumentů?
 
 Chcete-li odstranit ochranu dokumentu, jednoduše otevřete chráněný dokument, a pokud je chráněn heslem, zadejte správné heslo. Poté pomocí Aspose.Words for Java odeberte ochranu následujícím způsobem:
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Mohu nastavit oprávnění pro konkrétní uživatele?
+### Mohu nastavit oprávnění pro konkrétní uživatele?
 
 Ano, Aspose.Words for Java umožňuje nastavit oprávnění pro konkrétní uživatele nebo skupiny. Můžete definovat, kdo může přistupovat k dokumentu a upravovat jej.
 
-## Je možné zašifrovat dokument více hesly?
+### Je možné zašifrovat dokument více hesly?
 
 Ne, Aspose.Words for Java podporuje šifrování jedním heslem. Pro ochranu dokumentu můžete nastavit heslo.
 
-## Jak mohu zkontrolovat oprávnění dokumentu?
+### Jak mohu zkontrolovat oprávnění dokumentu?
 
 Aspose.Words for Java můžete použít ke kontrole oprávnění dokumentu prozkoumáním jeho nastavení ochrany a možností řízení přístupu.
 
-## Mohu automatizovat správu oprávnění k dokumentům?
+### Mohu automatizovat správu oprávnění k dokumentům?
 
 Absolutně! Aspose.Words for Java můžete integrovat do svých aplikací a zautomatizovat tak správu oprávnění k dokumentům, díky čemuž se stane bezproblémovou součástí vašeho pracovního toku dokumentů.
 
-## Co když zapomenu heslo dokumentu?
+### Co když zapomenu heslo dokumentu?
 
 Pokud zapomenete heslo dokumentu, neexistuje způsob, jak jej obnovit. Nezapomeňte si uložit svá hesla na bezpečném místě.
 

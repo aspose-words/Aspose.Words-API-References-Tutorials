@@ -62,7 +62,7 @@ Untuk memastikan gambar diinterpolasi, Anda perlu mengonfigurasi`PdfSaveOptions`
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-Itu`InterpolateImages` properti diatur ke`true` untuk memastikan gambar dalam PDF Anda diinterpolasi, sehingga meningkatkan kualitasnya.
+ Itu`InterpolateImages` properti diatur ke`true` untuk memastikan gambar dalam PDF Anda diinterpolasi, sehingga meningkatkan kualitasnya.
 
 ## Langkah 4: Simpan Dokumen sebagai PDF
 

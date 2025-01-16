@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## フォントスタイルとサイズの適用
-
-フォント スタイルとサイズを適用して、ドキュメントの読みやすさと視覚的な魅力を高めます。段落のフォント スタイルとサイズを変更するには、次のコードを使用します。
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## 段落と見出しの書式設定
+## 段落の書式設定
 
 文書を効果的に構造化するには、段落と見出しの書式設定が重要です。以下のコードを使用してこれを実現します。
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## リストと箇条書きの操作
 
 リストと箇条書きはコンテンツを整理し、明確さを提供します。Aspose.Words を使用して実装します。
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## ページレイアウトと余白の管理
+## ページレイアウトの管理
 
 最適なプレゼンテーションのためにページレイアウトと余白を制御します。
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## スタイルとテーマの適用

@@ -90,7 +90,7 @@ builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
 builder.Writeln("Welcome to the new section!");
 ```
 
-- `builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));` flyttar markören till det nyligen tillagda avsnittet.
+- `builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));` flyttar markören till den nyligen tillagda sektionen.
 - `builder.Writeln("Welcome to the new section!");` lägger till ett stycke i det nya avsnittet.
 
 ## Steg 5: Spara dokumentet
@@ -125,7 +125,7 @@ Du kan anpassa layouten för ett avsnitt genom att ställa in egenskaper som sid
 
 ### Kan avsnitt kapslas i Word-dokument?
 
-Nej, avsnitt kan inte kapslas in i varandra. Du kan dock ha flera avsnitt efter varandra, var och en med sin egen distinkta layout och formatering.
+Nej, avsnitt kan inte kapslas inuti varandra. Du kan dock ha flera avsnitt efter varandra, var och en med sin egen distinkta layout och formatering.
 
 ### Var kan jag hitta fler resurser på Aspose.Words?
 

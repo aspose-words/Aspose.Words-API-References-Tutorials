@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /it/java/word-processing/manipulating-document-content/
 ---
-
 ## Introduzione
 
 Nel mondo della programmazione Java, la gestione efficiente dei documenti è un aspetto cruciale di molte applicazioni. Che tu stia lavorando alla generazione di report, alla gestione di contratti o a qualsiasi attività correlata ai documenti, Aspose.Words for Java è uno strumento potente da avere nel tuo kit di strumenti. In questa guida completa, approfondiremo le complessità della manipolazione del contenuto dei documenti con la pulizia, i campi e i dati XML utilizzando Aspose.Words for Java. Forniremo istruzioni dettagliate insieme ad esempi di codice sorgente per fornirti le conoscenze e le competenze necessarie per padroneggiare questa versatile libreria.
@@ -50,7 +49,8 @@ I paragrafi vuoti possono essere fastidiosi. Rimuovili usando questo codice:
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ Potrebbero esserci contenuti nascosti nei tuoi documenti, che potrebbero causare
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 Seguendo questi passaggi, puoi assicurarti che il tuo documento sia pulito e pronto per ulteriori manipolazioni.
-
----
 
 ## Lavorare con i campi
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 I campi aggiungono funzionalità dinamiche ai tuoi documenti, migliorandone l'utilità.
 
----
-
-## Incorporazione di dati XML
-
-Integrare i dati XML nei tuoi documenti può essere potente, specialmente per generare contenuti dinamici. Aspose.Words per Java semplifica questo processo.
-
-### Associazione dei dati XML
-
-Associa facilmente i dati XML al tuo documento:
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://schemi.esempio'");
-doc.save("document_with_xml_data.docx");
-```
-
-Questo codice associa i dati XML a parti specifiche del documento, rendendolo dinamico e basato sui dati.
-
-## Domande frequenti (FAQ)
-
-### Come faccio a rimuovere i paragrafi vuoti da un documento?
-   
-   Per rimuovere paragrafi vuoti da un documento, puoi scorrere i paragrafi e rimuovere quelli che non hanno contenuto di testo. Ecco un frammento di codice per aiutarti a raggiungere questo obiettivo:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### Posso aggiornare tutti i campi di un documento a livello di programmazione?
-
-   Sì, puoi aggiornare tutti i campi in un documento a livello di programmazione usando Aspose.Words per Java. Ecco come puoi farlo:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### Come posso associare dati XML a un documento?
-
-   Il binding dei dati XML a un documento è semplice con Aspose.Words per Java. Puoi usare i mapping XML per ottenere questo risultato. Ecco un esempio:
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://schemi.esempio'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### Quanto è importante ripulire il contenuto del documento?
-
-   La pulizia del contenuto del documento è importante per garantire che i documenti siano privi di elementi non necessari, il che può migliorare la leggibilità e ridurre le dimensioni del file. Aiuta anche a mantenere la coerenza del documento.
-
-### Come posso rimuovere gli stili inutilizzati da un documento?
-
-   Puoi rimuovere gli stili inutilizzati da un documento usando Aspose.Words per Java. Ecco un esempio:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### Aspose.Words per Java è adatto per generare documenti dinamici con dati XML?
-
-   Sì, Aspose.Words per Java è adatto per generare documenti dinamici con dati XML. Fornisce funzionalità robuste per associare dati XML a modelli e creare documenti personalizzati.
-
 ## Conclusione
 
 In questa guida completa, abbiamo esplorato il mondo della manipolazione del contenuto dei documenti con cleanup, campi e dati XML utilizzando Aspose.Words per Java. Hai imparato come pulire i documenti, lavorare con i campi e incorporare dati XML senza problemi. Queste competenze sono inestimabili per chiunque si occupi di gestione dei documenti nelle applicazioni Java.
+
+## Domande frequenti
+
+### Come faccio a rimuovere i paragrafi vuoti da un documento?
+   
+Per rimuovere paragrafi vuoti da un documento, puoi scorrere i paragrafi e rimuovere quelli che non hanno contenuto di testo. Ecco un frammento di codice per aiutarti a raggiungere questo obiettivo:
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### Posso aggiornare tutti i campi di un documento a livello di programmazione?
+
+Sì, puoi aggiornare tutti i campi in un documento a livello di programmazione usando Aspose.Words per Java. Ecco come puoi farlo:
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### Quanto è importante ripulire il contenuto del documento?
+
+La pulizia del contenuto del documento è importante per garantire che i documenti siano privi di elementi non necessari, il che può migliorare la leggibilità e ridurre le dimensioni del file. Aiuta anche a mantenere la coerenza del documento.
+
+### Come posso rimuovere gli stili inutilizzati da un documento?
+
+Puoi rimuovere gli stili inutilizzati da un documento usando Aspose.Words per Java. Ecco un esempio:
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### Aspose.Words per Java è adatto per generare documenti dinamici con dati XML?
+
+Sì, Aspose.Words per Java è adatto per generare documenti dinamici con dati XML. Fornisce funzionalità robuste per associare dati XML a modelli e creare documenti personalizzati.

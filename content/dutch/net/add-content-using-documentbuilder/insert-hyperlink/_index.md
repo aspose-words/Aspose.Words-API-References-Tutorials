@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Stap 5: De hyperlink invoegen
 
- Nu voegen we de hyperlink in met behulp van de`InsertHyperlink`methode. Deze methode neemt drie parameters: de weergavetekst, de URL en een boolean die aangeeft of de link moet worden opgemaakt als een hyperlink.
+ Nu voegen we de hyperlink in met behulp van de`InsertHyperlink` methode. Deze methode neemt drie parameters: de weergavetekst, de URL en een boolean die aangeeft of de link moet worden opgemaakt als een hyperlink.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", onwaar);
@@ -106,7 +106,7 @@ Het invoegen van hyperlinks in een Word-document met Aspose.Words voor .NET is e
 
 ### Kan ik meerdere hyperlinks in één document invoegen?
 
- Ja, u kunt meerdere hyperlinks invoegen door de`InsertHyperlink`Methode voor elke link.
+ Ja, u kunt meerdere hyperlinks invoegen door de`InsertHyperlink` Methode voor elke link.
 
 ### Hoe verander ik de kleur van de hyperlink?
 
@@ -118,7 +118,7 @@ Het invoegen van hyperlinks in een Word-document met Aspose.Words voor .NET is e
 
 ### Wat gebeurt er als de URL ongeldig is?
 
-De`InsertHyperlink` De methode valideert geen URL's. Daarom is het belangrijk om te controleren of de URL's correct zijn voordat u ze invoegt.
+ De`InsertHyperlink` De methode valideert geen URL's. Daarom is het belangrijk om te controleren of de URL's correct zijn voordat u ze invoegt.
 
 ### Is het mogelijk om een hyperlink te verwijderen nadat deze is ingevoegd?
 

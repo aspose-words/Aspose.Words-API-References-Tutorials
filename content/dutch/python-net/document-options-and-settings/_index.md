@@ -39,5 +39,5 @@ Leer geavanceerde technieken voor het samenvoegen en toevoegen van documenten me
 Leer hoe u Word-documenten efficiënt kunt manipuleren met Aspose.Words voor Python. Stapsgewijze handleiding met broncode.
 ### [Documenteigenschappen en metagegevensbeheer](./document-properties-metadata/)
 Leer hoe u documenteigenschappen en metadata beheert met Aspose.Words voor Python. Stapsgewijze handleiding met broncode.
-### [Documentfunctionaliteit uitbreiden met webextensies](./document-functionality-web-extensions/)
+### [Uitbreiding van documentfunctionaliteit met webextensies](./document-functionality-web-extensions/)
 Leer hoe u de functionaliteit van documenten kunt uitbreiden met webextensies met Aspose.Words voor Python. Stapsgewijze handleiding met broncode voor naadloze integratie.

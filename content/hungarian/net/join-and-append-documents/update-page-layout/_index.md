@@ -2,7 +2,7 @@
 title: Oldalelrendezés frissítése
 linktitle: Oldalelrendezés frissítése
 second_title: Aspose.Words Document Processing API
-description: Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan frissítheti az oldalelrendezéseket Word dokumentumokban az Aspose.Words for .NET használatával. Tökéletes dokumentumtervek módosításához.
+description: Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan frissítheti az oldalelrendezéseket Word dokumentumokban az Aspose.Words for .NET használatával. Tökéletes a dokumentumtervek módosításához.
 type: docs
 weight: 10
 url: /hu/net/join-and-append-documents/update-page-layout/

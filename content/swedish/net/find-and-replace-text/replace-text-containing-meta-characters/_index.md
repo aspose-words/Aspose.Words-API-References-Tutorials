@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Vi skapar en`FindReplaceOptions`objekt och ställ in styckejusteringen till mitten.
+ Vi skapar en`FindReplaceOptions` objekt och ställ in styckejusteringen till mitten.
 
 ## Steg 4: Ersätt text med metatecken
 
 Det här steget är där magin händer! Vi kommer att ersätta ordet "avsnitt" följt av en styckebrytning och lägga till en understrykning.
 
 ```csharp
-// Dubbla varje styckebrytning efter ordet "avsnitt", lägg till typ av understrykning och gör det centrerat.
+//Dubbla varje styckebrytning efter ordet "avsnitt", lägg till typ av understrykning och gör det centrerat.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

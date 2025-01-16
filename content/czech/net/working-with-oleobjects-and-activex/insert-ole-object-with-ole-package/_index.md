@@ -95,7 +95,7 @@ Ano, můžete vložit různé typy souborů, jako jsou listy aplikace Excel, sou
  Ano, potřebujete platnou licenci. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
 
 ### Jak mohu upravit zobrazovaný název objektu OLE?
- Můžete nastavit`DisplayName` vlastnictví`OlePackage` jej přizpůsobit.
+ Můžete nastavit`DisplayName` vlastnictvím`OlePackage` jej přizpůsobit.
 
 ### Je Aspose.Words kompatibilní s .NET Core?
 Ano, Aspose.Words podporuje jak .NET Framework, tak .NET Core.

@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Der`ListIndent` Methode rückt die Liste ein und erstellt eine Unterliste. Sie erstellen jetzt eine hierarchische Liste, ähnlich einer verschachtelten Aufgabenliste.
+ Der`ListIndent` Methode rückt die Liste ein und erstellt eine Unterliste. Sie erstellen jetzt eine hierarchische Liste, ähnlich einer verschachtelten Aufgabenliste.
 
 ## Abschluss
 

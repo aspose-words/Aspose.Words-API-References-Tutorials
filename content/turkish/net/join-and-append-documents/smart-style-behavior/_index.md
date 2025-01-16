@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Açıklama:
-The`DocumentBuilder` belgede gezinme ve değişiklik yapma yöntemleri sağlayan kullanışlı bir araçtır. Burada, onu hedef belgemize bağlıyoruz.
+ The`DocumentBuilder` belgede gezinme ve değişiklik yapma yöntemleri sağlayan kullanışlı bir araçtır. Burada, onu hedef belgemize bağlıyoruz.
 
 ## Adım 3: Belge Sonuna Geçin ve Sayfa Sonu Ekleyin
 

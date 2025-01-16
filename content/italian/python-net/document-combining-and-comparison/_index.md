@@ -30,12 +30,8 @@ Al termine di questi tutorial, sarai dotato delle competenze per combinare e con
 ## Tutorial sulla combinazione e il confronto dei documenti
 ### [Unire e confrontare documenti in Word](./merge-compare-documents/)
 Unisci e confronta documenti Word senza sforzo usando Aspose.Words per Python. Scopri come manipolare documenti, evidenziare differenze e automatizzare attività.
-### [Sfruttare la potenza dei segnalibri dei documenti](./document-bookmarks/)
-Scopri come sfruttare la potenza dei segnalibri dei documenti usando Aspose.Words per Python. Crea, gestisci e naviga tra i segnalibri con guide dettagliate ed esempi di codice.
 ### [Navigazione tra intervalli di documenti per una modifica di precisione](./document-ranges/)
 Scopri come navigare e modificare intervalli di documenti con precisione usando Aspose.Words per Python. Guida passo passo con codice sorgente per una manipolazione efficiente dei contenuti.
-### [Utilizzo di tag di documenti strutturati (SDT) per dati strutturati](./document-sdts/)
-Sblocca la potenza degli Structured Document Tag (SDT) per organizzare i contenuti. Scopri come usare Aspose.Words per Python per implementare gli SDT.
 ### [Applicazione di stili e temi per trasformare i documenti](./apply-styles-themes-documents/)
 Migliora l'estetica dei documenti con Aspose.Words per Python. Applica stili, temi e personalizzazioni senza sforzo.
 ### [Creazione di un indice completo per i documenti Word](./generate-table-contents/)

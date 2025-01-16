@@ -37,13 +37,6 @@ url: /el/java/word-processing/handling-different-document-formats/
 Document doc = new Document("sample.docx");
 ```
 
-### Φόρτωση εγγράφου PDF
-
-```java
-// Φορτώστε ένα έγγραφο PDF
-Document doc = new Document("sample.pdf");
-```
-
 ## Τροποποίηση και αποθήκευση εγγράφων
 
 Αφού φορτώσετε ένα έγγραφο, μπορείτε να εκτελέσετε πολλές λειτουργίες, από απλή αντικατάσταση κειμένου έως πολύπλοκες αλλαγές μορφοποίησης.
@@ -71,7 +64,7 @@ doc.save("modified.docx");
 Document doc = new Document("sample.docx");
 
 // Αποθήκευση ως PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Χειρισμός εικόνων και πινάκων
@@ -81,7 +74,7 @@ doc.save("sample.pdf", SaveFormat.PDF);
 ### Προσθήκη εικόνας σε έγγραφο
 
 ```java
-// Φορτώστε ένα έγγραφο
+//Φορτώστε ένα έγγραφο
 Document doc = new Document("document.docx");
 
 // Εισαγάγετε μια εικόνα

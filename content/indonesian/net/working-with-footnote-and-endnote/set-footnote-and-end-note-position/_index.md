@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-Dalam kode ini, ganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya tempat dokumen Anda berada.
+Dalam kode ini, ganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat dokumen Anda berada.
 
 ## Langkah 2: Mengatur Posisi Catatan Kaki
 
@@ -93,4 +93,4 @@ Aspose.Words untuk .NET dirancang untuk aplikasi .NET, tetapi Anda dapat menggun
 
 ### Di mana saya dapat menemukan dokumentasi yang lebih rinci untuk Aspose.Words untuk .NET?
 
-Dokumentasi terperinci tersedia[Di Sini](https://reference.aspose.com/words/net/).
+ Dokumentasi terperinci tersedia[Di Sini](https://reference.aspose.com/words/net/).

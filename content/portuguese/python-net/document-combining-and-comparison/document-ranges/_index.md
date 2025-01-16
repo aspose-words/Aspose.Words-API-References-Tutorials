@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Mesclando documentos
-
-Combinar documentos perfeitamente é uma habilidade valiosa. Navegar pelos documentos nos ajuda a mesclá-los de forma eficiente:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Dividindo Documentos
 
 Às vezes, podemos precisar dividir um documento em partes menores. Navegar pelo documento nos ajuda a conseguir isso:
@@ -117,8 +109,8 @@ Cabeçalhos e rodapés frequentemente requerem tratamento distinto. Navegar por 
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

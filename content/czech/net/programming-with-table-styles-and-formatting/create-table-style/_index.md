@@ -14,7 +14,7 @@ Zasekli jste se někdy při pokusu o stylování tabulek v dokumentech aplikace 
 ## Předpoklady
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
-- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí .NET.
 - Základní znalost C#: Určitá znalost programování v C# bude užitečná.
 

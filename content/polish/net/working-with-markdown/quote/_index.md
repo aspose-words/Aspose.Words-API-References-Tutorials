@@ -44,7 +44,7 @@ Te przestrzenie nazw dają dostęp do klas i metod, których będziesz potrzebow
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Ten`DocumentBuilder` class jest twoją bramą do budowania i dostosowywania twojego dokumentu. Pomyśl o tym jak o swojej magicznej różdżce do tworzenia dokumentów Word!
+ Ten`DocumentBuilder` class jest twoją bramą do budowania i dostosowywania twojego dokumentu. Pomyśl o tym jak o swojej magicznej różdżce do tworzenia dokumentów Word!
 
 ## Krok 2: Dodaj cytat blokowy
 

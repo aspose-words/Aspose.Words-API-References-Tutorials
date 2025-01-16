@@ -62,7 +62,7 @@ Görüntülerin interpole edildiğinden emin olmak için, şunu yapılandırman�
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-The`InterpolateImages` mülk ayarlandı`true` PDF'inizdeki görsellerin enterpole edilerek kalitesinin artırılmasını sağlamak.
+ The`InterpolateImages` mülk ayarlandı`true` PDF'inizdeki görsellerin enterpole edilerek kalitesinin artırılmasını sağlamak.
 
 ## Adım 4: Belgeyi PDF olarak kaydedin
 
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOption
 
 PDF belgelerindeki görüntüleri enterpolasyonlamak, çıktı dosyalarınızın kalitesini önemli ölçüde artırabilecek güçlü bir özelliktir. Yukarıda belirtilen adımları izleyerek, Word belgesinden oluşturulan herhangi bir PDF'de görüntülerinizin keskin ve profesyonel görünmesini sağlayabilirsiniz. .NET için Aspose.Words bu süreci basit hale getirerek, görüntü kalitesi sorunları hakkında endişelenmek yerine içeriğe odaklanmanızı sağlar.
 
-Daha fazla ayrıntıya ihtiyacınız varsa veya diğer özellikleri keşfetmek istiyorsanız, şuraya göz atın:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) veya[Ücretsiz deneme talebinde bulunun](https://releases.aspose.com/).
+Daha fazla ayrıntıya ihtiyacınız varsa veya diğer özellikleri keşfetmek istiyorsanız, şuraya göz atın:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) veya[ücretsiz deneme talebinde bulunun](https://releases.aspose.com/).
 
 ## SSS
 

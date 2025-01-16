@@ -27,7 +27,7 @@ Zacznijmy od utworzenia dokumentu Word, który później przekonwertujemy do for
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Wstaw tabelę z dwiema komórkami
+// Wstaw tabelę z dwiema komórkami
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// Ustaw wyrównanie zawartości tabeli na automatyczne (określone w pierwszym akapicie)
+//Ustaw wyrównanie zawartości tabeli na automatyczne (określone w pierwszym akapicie)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## Krok 3: Obsługa obrazów
 
-Aby uwzględnić obrazy w dokumencie Markdown, musisz określić folder, w którym znajdują się obrazy. Aspose.Words for Java pozwala ustawić folder obrazów w`MarkdownSaveOptions`.
+ Aby uwzględnić obrazy w dokumencie Markdown, musisz określić folder, w którym znajdują się obrazy. Aspose.Words for Java pozwala ustawić folder obrazów w`MarkdownSaveOptions`.
 
 Oto jak ustawić folder z obrazami i zapisać dokument z obrazami:
 

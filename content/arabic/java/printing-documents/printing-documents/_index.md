@@ -38,7 +38,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```java
 // قم بإنشاء مهمة طباعة لطباعة مستندنا بها.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//قم بتهيئة مجموعة السمات باستخدام عدد الصفحات الموجودة في المستند.
+// قم بتهيئة مجموعة السمات باستخدام عدد الصفحات الموجودة في المستند.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // قم بتمرير إعدادات الطابعة مع المعلمات الأخرى إلى مستند الطباعة.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // قم بإنشاء مهمة طباعة لطباعة مستندنا بها.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//قم بتهيئة مجموعة السمات باستخدام عدد الصفحات الموجودة في المستند.
+// قم بتهيئة مجموعة السمات باستخدام عدد الصفحات الموجودة في المستند.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // قم بتمرير إعدادات الطابعة مع المعلمات الأخرى إلى مستند الطباعة.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // مؤشرات بداية ونهاية الصفحة كما هو محدد في مجموعة السمات.
+        //مؤشرات بداية ونهاية الصفحة كما هو محدد في مجموعة السمات.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // قم باختيار رقم الصفحة الأخيرة التي سيتم طباعتها على هذه الورقة.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //قم بالتنقل عبر الصفحات المحددة من الصفحة الحالية المخزنة إلى الصفحة المحسوبة
+        // قم بالتنقل عبر الصفحات المحددة من الصفحة الحالية المخزنة إلى الصفحة المحسوبة
         // الصفحة الاخيرة
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // حساب مؤشرات العمود والصف.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // قيمة الإرجاع المفيدة هي المقياس الذي تم عرض الصفحة به.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // ارسم حدود الصفحة (يمكن أن تكون الصورة المصغرة للصفحة أصغر من الصورة المصغرة)
+                //ارسم حدود الصفحة (يمكن أن تكون الصورة المصغرة للصفحة أصغر من الصورة المصغرة)
                 // حجم العنصر النائب).
                 if (mPrintPageBorders) {
                     // احصل على الحجم الحقيقي للصفحة بنسبة 100٪ بالنقاط.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // قم بتحديد عدد الأعمدة والصفوف في الورقة
-        //ورق موجه للمناظر الطبيعية.
+        // ورق موجه للمناظر الطبيعية.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ class MultipagePrintDocument implements Printable
 
 ### س1: هل يمكنني طباعة صفحات محددة من مستند باستخدام Aspose.Words لـ Java؟
 
- نعم، يمكنك تحديد نطاق الصفحات عند طباعة مستند. في مثال الكود، استخدمنا`attributes.add(new PageRanges(1, doc.getPageCount()))` لطباعة كافة الصفحات. يمكنك تعديل نطاق الصفحات حسب الحاجة.
+ نعم، يمكنك تحديد نطاق الصفحات عند طباعة مستند. في مثال الكود، استخدمنا`attributes.add(new PageRanges(1, doc.getPageCount()))`لطباعة كافة الصفحات. يمكنك تعديل نطاق الصفحات حسب الحاجة.
 
 ### س2: هل Aspose.Words for Java مناسب للطباعة الدفعية؟
 

@@ -62,7 +62,7 @@ Aby zapewnić interpolację obrazów, należy skonfigurować`PdfSaveOptions`. Ta
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-Ten`InterpolateImages` właściwość jest ustawiona na`true` aby zapewnić interpolację obrazów w pliku PDF, co poprawi ich jakość.
+ Ten`InterpolateImages` właściwość jest ustawiona na`true` aby zapewnić interpolację obrazów w pliku PDF, co poprawi ich jakość.
 
 ## Krok 4: Zapisz dokument jako plik PDF
 

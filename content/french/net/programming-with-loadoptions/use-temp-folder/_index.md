@@ -35,7 +35,7 @@ Avant de commencer, vous devez disposer d'un répertoire dans lequel vos documen
 
 ## Étape 2 : Configuration des options de chargement
 
-Maintenant, configurons les options de chargement pour utiliser le dossier temporaire. Cela permet de gérer l'utilisation de la mémoire plus efficacement lorsque vous travaillez avec des documents volumineux.
+Maintenant, configurons les options de chargement pour utiliser le dossier temporaire. Cela permet de gérer plus efficacement l'utilisation de la mémoire lorsque vous travaillez avec des documents volumineux.
 
 ```csharp
 // Chemin vers votre répertoire de documents

@@ -45,7 +45,7 @@ Vamos percorrer o processo de inserção de hiperlinks em um documento do Word u
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-O`DocumentBuilder` class é uma ferramenta versátil que permite construir e modificar o documento.
+ O`DocumentBuilder` class é uma ferramenta versátil que permite construir e modificar o documento.
 
 ## Etapa 2: Inserir hiperlink
 

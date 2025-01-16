@@ -17,7 +17,7 @@ Než se pustíme do praktické části, ujistíme se, že jste připraveni na ú
 
 1. Základní znalost C# a .NET: Znalost programovacích konceptů vám pomůže lépe pochopit příklady.
    
-2.  Aspose.Words for .NET Library: Tato výkonná knihovna vám umožňuje bezproblémově vytvářet a manipulovat s dokumenty Wordu. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+2.  Aspose.Words for .NET Library: Tato výkonná knihovna vám umožňuje bezproblémově vytvářet a manipulovat s dokumenty Wordu. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 
 3. Klíč API pro model Google AI: Chcete-li používat modely AI, potřebujete klíč API pro ověřování. Uložte jej bezpečně do proměnných prostředí.
 
@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-The`Document` třída z Aspose.Words umožňuje načíst soubory Wordu do paměti. Ujistěte se, že názvy souborů odpovídají skutečným dokumentům ve vašem adresáři, jinak narazíte na chyby nenalezen soubor!
+ The`Document` třída z Aspose.Words umožňuje načíst soubory Wordu do paměti. Ujistěte se, že názvy souborů odpovídají skutečným dokumentům ve vašem adresáři, jinak narazíte na chyby nenalezen soubor!
 
 ## Krok 3: Načtení klíče API
 
@@ -86,7 +86,7 @@ IAiModelText model = (IAiModelText)AiModel.Create(AiModelType.Gpt4OMini).WithApi
 
 ## Krok 5: Shrnutí jednoho dokumentu
 
-Zaměřme se na shrnutí prvního dokumentu. Můžeme se rozhodnout pro krátké shrnutí zde.
+Zaměřme se na shrnutí prvního dokumentu. Zde si můžeme vybrat krátké shrnutí.
 
 ```csharp
 Document oneDocumentSummary = model.Summarize(firstDoc, new SummarizeOptions() { SummaryLength = SummaryLength.Short });

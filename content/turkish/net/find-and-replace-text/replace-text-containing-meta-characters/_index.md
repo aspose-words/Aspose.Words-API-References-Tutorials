@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Biz bir tane yaratıyoruz`FindReplaceOptions`nesne ve paragraf hizalamasını ortaya ayarlama.
+ Biz bir tane yaratıyoruz`FindReplaceOptions` nesne ve paragraf hizalamasını ortaya ayarlama.
 
 ## Adım 4: Metni Meta Karakterlerle Değiştirin
 
 Bu adım sihrin gerçekleştiği yerdir! "Bölüm" kelimesini bir paragraf sonuyla değiştireceğiz ve bir alt çizgi ekleyeceğiz.
 
 ```csharp
-// Her paragrafta "bölüm" kelimesinden sonra paragraf sonunu iki katına çıkarın, bir çeşit alt çizgi ekleyin ve ortalayın.
+//Her paragrafta "bölüm" kelimesinden sonra paragraf sonunu iki katına çıkarın, bir çeşit alt çizgi ekleyin ve ortalayın.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

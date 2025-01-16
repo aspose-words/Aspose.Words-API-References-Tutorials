@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-Der`EvaluateCondition` Methode gibt einen`FieldIfComparisonResult` Enumeration, die das Ergebnis der Bedingungsauswertung darstellt. Diese Enumeration kann Werte wie`True`, `False` , oder`Unknown`.
+ Der`EvaluateCondition` Methode gibt einen`FieldIfComparisonResult` Enumeration, die das Ergebnis der Bedingungsauswertung darstellt. Diese Enumeration kann Werte wie`True`, `False` , oder`Unknown`.
 
 ## Schritt 4: Ergebnis anzeigen
 
@@ -80,7 +80,7 @@ Console.WriteLine(actualResult);
 
 ## Abschluss
 
-Das Auswerten von IF-Bedingungen in Word-Dokumenten mit Aspose.Words für .NET ist eine leistungsstarke Möglichkeit, dynamische Inhalte basierend auf bestimmten Kriterien hinzuzufügen. In dieser Anleitung haben Sie gelernt, wie Sie ein Dokument erstellen, ein IF-Feld einfügen, dessen Bedingung auswerten und das Ergebnis anzeigen. Diese Funktion ist nützlich zum Erstellen personalisierter Berichte, Dokumente mit bedingtem Inhalt oder in jedem Szenario, in dem dynamischer Inhalt benötigt wird.
+Das Auswerten von IF-Bedingungen in Word-Dokumenten mit Aspose.Words für .NET ist eine leistungsstarke Möglichkeit, dynamische Inhalte basierend auf bestimmten Kriterien hinzuzufügen. In dieser Anleitung haben Sie gelernt, wie Sie ein Dokument erstellen, ein IF-Feld einfügen, dessen Bedingung auswerten und das Ergebnis anzeigen. Diese Funktion ist nützlich zum Erstellen personalisierter Berichte, Dokumente mit bedingtem Inhalt oder für jedes Szenario, in dem dynamischer Inhalt benötigt wird.
 
 Experimentieren Sie mit verschiedenen Bedingungen und Ausgaben, um vollständig zu verstehen, wie Sie WENN-Felder in Ihren Dokumenten nutzen können.
 
@@ -93,7 +93,7 @@ Ein WENN-Feld ist ein Word-Feld, mit dem Sie bedingte Logik in Ihr Dokument einf
  Sie können ein WENN-Feld einfügen mit dem`InsertField` Methode der`DocumentBuilder` Klasse und geben Sie die Bedingung an, die Sie auswerten möchten.
 
 ###  Was bedeutet`EvaluateCondition` method do?
-Der`EvaluateCondition` Die Methode wertet die in einem WENN-Feld angegebene Bedingung aus und gibt das Ergebnis zurück, das angibt, ob die Bedingung wahr oder falsch ist.
+ Der`EvaluateCondition` Die Methode wertet die in einem WENN-Feld angegebene Bedingung aus und gibt das Ergebnis zurück, das angibt, ob die Bedingung wahr oder falsch ist.
 
 ### Kann ich mit dem WENN-Feld komplexe Bedingungen verwenden?
 Ja, Sie können mit dem WENN-Feld komplexe Bedingungen verwenden, indem Sie nach Bedarf verschiedene Ausdrücke und Vergleiche angeben.

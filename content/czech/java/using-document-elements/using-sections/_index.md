@@ -30,7 +30,7 @@ public void addSection() throws Exception {
 }
 ```
 
-tomto fragmentu kódu vytvoříme nový dokument, přidáme do něj obsah a poté do dokumentu přidáme novou sekci.
+V tomto fragmentu kódu vytvoříme nový dokument, přidáme do něj obsah a poté do dokumentu přidáme novou sekci.
 
 ## Smazání sekce
 

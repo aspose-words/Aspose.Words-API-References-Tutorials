@@ -19,10 +19,10 @@ Una tabla de contenido proporciona una instantánea de la estructura de un docum
 ## Cargar un documento
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## Definición de títulos y subtítulos
@@ -31,25 +31,11 @@ Para generar una tabla de contenidos, debe definir los títulos y subtítulos de
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## Generando la tabla de contenidos
-
-Ahora que hemos definido los títulos y subtítulos, vamos a generar la tabla de contenidos propiamente dicha. Crearemos una nueva sección al principio del documento y la completaremos con el contenido adecuado.
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## Personalización de la tabla de contenidos
@@ -58,21 +44,10 @@ Puede personalizar la apariencia de su tabla de contenido ajustando las fuentes,
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## Agregar hipervínculos
-
-Para que la tabla de contenidos sea interactiva, agregue hipervínculos que permitan a los lectores saltar directamente a las secciones correspondientes en el documento.
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+"
 
 ## Dar estilo a la tabla de contenidos
 
@@ -81,16 +56,7 @@ Para darle estilo a la tabla de contenidos es necesario definir estilos de párr
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## Actualización del índice
-
-Si realiza cambios en la estructura de su documento, puede actualizar fácilmente la tabla de contenido para reflejar esos cambios.
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## Automatizando el proceso
@@ -101,27 +67,13 @@ Para ahorrar tiempo y garantizar la coherencia, considere crear un script que ge
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## Manejo de números de página
-
-Puede agregar números de página a la tabla de contenido para proporcionar a los lectores más contexto sobre dónde encontrar secciones específicas.
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## Conclusión

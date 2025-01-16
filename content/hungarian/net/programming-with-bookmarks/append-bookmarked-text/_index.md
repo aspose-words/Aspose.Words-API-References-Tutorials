@@ -15,7 +15,7 @@ Szia! Próbált már szöveget hozzáfűzni egy Word-dokumentum könyvjelzővel 
 
 Mielőtt elkezdenénk, győződjünk meg arról, hogy rendelkezik-e mindennel, amire szüksége van:
 
--  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 - Fejlesztői környezet: Bármely .NET fejlesztői környezet, például a Visual Studio.
 - Alapvető C# ismerete: Az alapvető C# programozási fogalmak megértése segít.
 - Word-dokumentum könyvjelzőkkel: Word-dokumentum könyvjelzőkkel, amelyekből szöveget fűzünk hozzá.

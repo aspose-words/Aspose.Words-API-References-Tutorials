@@ -95,7 +95,7 @@ Sim, você pode repetir o processo para mesclar vários documentos carregando do
 ### A formatação original será preservada?
  Sim, usando`ImportFormatMode.KeepSourceFormatting` garante que a formatação do documento de origem seja preservada.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?
+### Aspose.Words para .NET é compatível com o .NET Core?
 Sim, o Aspose.Words para .NET é compatível com o .NET Framework e o .NET Core.
 
 ### Posso mesclar documentos com configurações de página diferentes?

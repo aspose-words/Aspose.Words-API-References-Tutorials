@@ -15,7 +15,7 @@ Pokud jste někdy pracovali s dokumenty aplikace Word a potřebovali jste upravi
 
 Než se vrhneme na to, co je nutné s úpravou ovládacích prvků obsahu, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET Installed: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Installed: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ne, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 
 2. Základní znalost C#: Tento tutoriál předpokládá, že jste obeznámeni se základními koncepty programování v C#.
 

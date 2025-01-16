@@ -154,7 +154,7 @@ Le proprietà del documento svolgono un ruolo significativo nella gestione e nel
 
 ### Come posso rimuovere una specifica proprietà personalizzata di un documento?
 
- Per rimuovere una proprietà specifica del documento personalizzato, puoi utilizzare`remove` metodo sul`CustomDocumentProperties`raccolta, passando come parametro il nome della proprietà che si desidera rimuovere.
+ Per rimuovere una proprietà specifica del documento personalizzato, è possibile utilizzare`remove` metodo sul`CustomDocumentProperties`raccolta, passando come parametro il nome della proprietà che si desidera rimuovere.
 
 ### Qual è lo scopo del collegamento al contenuto di un documento?
 

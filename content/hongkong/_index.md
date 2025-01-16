@@ -54,7 +54,7 @@ is_root: true
 - [文件分割](./java/document-splitting/)
 - [文件修訂](./java/document-revision/)
 - [文件載入和儲存](./java/document-loading-and-saving/)
-- [文件處理](./java/document-manipulation/)
+- [文件操作](./java/document-manipulation/)
 - [文檔轉換和匯出](./java/document-conversion-and-export/)
 - [授權和配置](./java/licensing-and-configuration/)
 - [使用文檔元素](./java/using-document-elements/)
@@ -63,7 +63,7 @@ is_root: true
 
 ## Python 的 Aspose.Words 文件管理教學課程
 {{% alert color="primary" %}}
-這些教學課程提供如何以程式設計方式使用 Microsoft Word 文件的逐步指導，包括文件建立、操作以及加密和密碼保護等各種安全功能。借助該資源，開發人員可以使用 Aspose.Words 在其 Python 應用程式中有效地實現文件處理功能，從而提高工作效率並確保文件安全。 
+這些教學課程提供如何以程式設計方式使用 Microsoft Word 文件的逐步指導，包括文件建立、操作以及加密和密碼保護等各種安全功能。借助此資源，開發人員可以使用 Aspose.Words 在其 Python 應用程式中有效地實現文件處理功能，從而提高工作效率並確保文件安全。 
 {{% /alert %}}
 
 這些是一些有用資源的連結：

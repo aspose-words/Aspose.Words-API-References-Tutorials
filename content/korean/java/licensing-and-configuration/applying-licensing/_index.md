@@ -20,7 +20,7 @@ Aspose.Words for Java는 Word 문서를 프로그래밍 방식으로 만들고, 
 
 ## 3. 개발 환경 설정
 
-시작하려면 개발 환경에 Aspose.Words for Java가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[Aspose 다운로드 페이지](https://releases.aspose.com/words/java/)설치가 완료되면 코딩을 시작할 수 있습니다.
+ 시작하려면 개발 환경에 Aspose.Words for Java가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[Aspose 다운로드 페이지](https://releases.aspose.com/words/java/)설치가 완료되면 코딩을 시작할 수 있습니다.
 
 ## 4. 라이센스 적용
 
@@ -48,7 +48,7 @@ try {
 ## 완전한 소스 코드
 ```java
         License license = new License();
-        //이 줄은 실행 파일과 Aspose.Words.dll을 기준으로 여러 위치에서 라이선스를 설정하려고 시도합니다.
+        // 이 줄은 실행 파일과 Aspose.Words.dll을 기준으로 여러 위치에서 라이선스를 설정하려고 시도합니다.
         // 추가 오버로드를 사용하여 스트림에서 라이센스를 로드할 수도 있습니다. 이것은 유용합니다.
         // 예를 들어, 라이센스가 내장 리소스로 저장된 경우입니다.
         try

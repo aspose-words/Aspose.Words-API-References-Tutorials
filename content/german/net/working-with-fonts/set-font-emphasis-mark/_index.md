@@ -50,7 +50,7 @@ DocumentBuilder builder = new DocumentBuilder(document);
 Wenn der DocumentBuilder bereit ist, können Sie nun das Hervorhebungszeichen für die Schriftart festlegen. In diesem Beispiel verwenden wir das Hervorhebungszeichen „UnderSolidCircle“.
 
 ```csharp
-// Festlegen des Hervorhebungszeichens für die Schrift
+// Festlegen des Hervorhebungszeichens für die Schriftart
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
 
 // Schreiben Sie Text mit dem Hervorhebungszeichen

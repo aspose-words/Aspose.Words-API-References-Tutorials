@@ -9,7 +9,7 @@ url: /pl/net/programming-with-htmlsaveoptions/
 ---
 Aspose.Words for .NET to potężna biblioteka do manipulowania i generowania dokumentów Word w aplikacjach .NET. Samouczki na stronie referencyjnej Aspose.Words for .NET stanowią cenne źródło dla programistów, którzy chcą opanować tę bibliotekę i w pełni wykorzystać jej funkcjonalność.
 
-Samouczek „Words Processing with HtmlSaveOptions” koncentruje się na używaniu opcji zapisu HTML w Aspose.Words dla .NET. Ten samouczek prowadzi programistów przez różne opcje dostępne w celu dostosowania konwersji dokumentów Word do HTML. Szczegółowe przykłady kodu są podane w celu zademonstrowania użycia tych opcji i uzyskania pożądanych rezultatów konwersji.
+Samouczek „Words Processing with HtmlSaveOptions” koncentruje się na używaniu opcji zapisu HTML w Aspose.Words dla .NET. Ten samouczek prowadzi programistów przez różne opcje dostępne w celu dostosowania konwersji dokumentów Word do HTML. Szczegółowe przykłady kodu są podane w celu zademonstrowania użycia tych opcji i uzyskania pożądanych wyników konwersji.
 
 Niezależnie od tego, czy chcesz przekonwertować dokumenty Word na HTML w celu wyświetlania w sieci, osadzić zawartość HTML w dokumentach Word, czy dostosować renderowanie HTML, ten samouczek daje Ci wiedzę i umiejętności, aby to zrobić. Dzięki szczegółowym wyjaśnieniom i praktycznym przykładom będziesz w stanie w pełni wykorzystać funkcjonalności konwersji HTML Aspose.Words dla .NET w swoich projektach programistycznych.
 

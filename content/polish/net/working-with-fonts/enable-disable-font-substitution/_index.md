@@ -101,7 +101,7 @@ I masz to! Wykonując te kroki, możesz łatwo kontrolować podmianę czcionek w
 
 ### Co się stanie, jeśli określona domyślna czcionka nie będzie dostępna?
 
-Jeżeli domyślna czcionka nie jest dostępna, Aspose.Words użyje mechanizmu zapasowego w celu znalezienia odpowiedniej czcionki zamiennika.
+Jeśli domyślna czcionka nie jest dostępna, Aspose.Words użyje mechanizmu zapasowego w celu znalezienia odpowiedniej czcionki zamiennika.
 
 ### Czy mogę ponownie włączyć funkcję podstawiania czcionek po jej wyłączeniu?
 

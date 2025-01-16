@@ -15,7 +15,7 @@ Na era digital de hoje, gerenciar o tamanho do documento é crucial para o desem
 
 Antes de mergulhar no tutorial, certifique-se de ter os seguintes pré-requisitos em vigor:
 
-1.  Aspose.Words para .NET: Você precisa ter o Aspose.Words para .NET instalado. Você pode baixá-lo do[Site Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words para .NET: Você precisa ter o Aspose.Words para .NET instalado. Você pode baixá-lo do[Site Aspose](https://releases.aspose.com/words/net/).
 
 2. Conhecimento básico de C#: A familiaridade com a programação em C# ajudará você a entender os exemplos de código fornecidos neste tutorial.
 

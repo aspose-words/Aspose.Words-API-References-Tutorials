@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Aplicación de estilos y tamaños de fuente
-
-Mejore la legibilidad y el atractivo visual de su documento aplicando estilos y tamaños de fuente. Utilice el siguiente código para cambiar el estilo y el tamaño de fuente de un párrafo:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Formato de párrafos y títulos
+## Formato de párrafos
 
 Para estructurar el documento de forma eficaz, es fundamental dar formato a los párrafos y títulos. Para lograrlo, utilice el código que se muestra a continuación:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Cómo trabajar con listas y viñetas
 
 Las listas y viñetas organizan el contenido y aportan claridad. Implántalas con Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Administrar el diseño de la página y los márgenes
+## Administrar el diseño de la página
 
 Controle el diseño de la página y los márgenes para una presentación óptima:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Aplicación de estilos y temas

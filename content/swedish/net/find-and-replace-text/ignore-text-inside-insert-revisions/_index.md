@@ -9,7 +9,7 @@ url: /sv/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 ## Introduktion
 
-I den här omfattande guiden kommer vi att fördjupa oss i att använda Aspose.Words för .NET för att hantera dokumentrevisioner effektivt. Oavsett om du är en utvecklare eller en teknikentusiast, kan du effektivisera dina dokumentbearbetningsarbetsflöden om du förstår hur man ignorerar text i infogade ändringar. Denna handledning kommer att utrusta dig med nödvändiga färdigheter för att utnyttja Aspose.Words kraftfulla funktioner för att hantera dokumentrevideringar sömlöst.
+den här omfattande guiden kommer vi att fördjupa oss i att använda Aspose.Words för .NET för att hantera dokumentrevisioner effektivt. Oavsett om du är en utvecklare eller en teknikentusiast, kan du effektivisera dina dokumentbearbetningsarbetsflöden om du förstår hur man ignorerar text i infogade ändringar. Denna handledning kommer att utrusta dig med nödvändiga färdigheter för att utnyttja Aspose.Words kraftfulla funktioner för att hantera dokumentrevideringar sömlöst.
 
 ## Förutsättningar
 
@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Börja spåra revisioner
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //Infoga text med spårningsrevisioner
+builder.Writeln("Inserted"); // Infoga text med spårningsrevisioner
 doc.StopTrackRevisions();
 ```
 

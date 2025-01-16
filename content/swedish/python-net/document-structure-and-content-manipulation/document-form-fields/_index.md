@@ -17,16 +17,16 @@ Formulärfält är interaktiva element i ett dokument som tillåter användare a
 
 Innan vi fördjupar oss i att skapa och bemästra formulärfält, låt oss ställa in vår miljö och bekanta oss med Aspose.Words för Python. Följ dessa steg för att komma igång:
 
-1. **Install Aspose.Words:** Börja med att installera Aspose.Words for Python-biblioteket med följande pip-kommando:
+1. Installera Aspose.Words: Börja med att installera Aspose.Words for Python-biblioteket med följande pip-kommando:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Importera biblioteket i ditt Python-skript för att börja använda dess funktioner.
+2. Importera biblioteket: Importera biblioteket i ditt Python-skript för att börja använda dess funktioner.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Med inställningen på plats, låt oss gå vidare till kärnkoncepten för att skapa och hantera formulärfält.
@@ -41,7 +41,7 @@ Textinmatningsfält låter användare skriva in text. För att skapa ett textinm
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Kryssrutor och radioknappar
@@ -50,12 +50,12 @@ Kryssrutor och alternativknappar används för flervalsval. Så här kan du skap
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Nedrullningslistor
@@ -64,7 +64,7 @@ Rullgardinslistor ger ett urval av alternativ för användare. Skapa en sån hä
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Datumväljare
@@ -73,7 +73,7 @@ Datumväljare gör det möjligt för användare att välja datum bekvämt. Så h
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Ställa in egenskaper för formulärfält
@@ -122,7 +122,7 @@ Textinmatningsfält är mångsidiga och används ofta för att fånga textinform
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 När fältet har skapats kan du ställa in dess egenskaper, som namn, standardvärde och platshållartext. Låt oss se hur man gör det:
@@ -150,14 +150,14 @@ För att skapa ett kryssrutaformulär, använd
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 För alternativknappar kan du skapa dem med formtypen OLE_OBJECT:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 När du har skapat dessa fält kan du anpassa deras egenskaper, såsom namn, standardval och etiketttext:
@@ -183,7 +183,7 @@ Rullgardinslistor är användbara för scenarier där användare behöver välja
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 När du har skapat rullgardinslistan kan du ange listan över tillgängliga alternativ för användare:
@@ -211,7 +211,7 @@ Datumväljare förenklar processen att fånga datum från användare. De tillhan
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 När du har skapat datumväljaren kan du ställa in dess egenskaper, såsom namn och standarddatum:
@@ -228,13 +228,9 @@ Datumväljare förbättrar användarupplevelsen när de registrerar datum och s�
 
 ## Slutsats
 
-Att bemästra formulärfält och datafångst i Word-dokument är en värdefull färdighet som ger dig möjlighet att skapa interaktiva och effektiva dokument för datainsamling. Aspose.Words för Python tillhandahåller en omfattande uppsättning verktyg för att skapa, anpassa och extrahera data från formulärfält. Från enkla textinmatningsfält till komplexa beräkningar och villkorlig formatering, möjligheterna är enorma.
-
 I den här guiden har vi utforskat grunderna för formulärfält, typer av formulärfält, ställa in egenskaper och anpassa deras beteende. Vi har också berört bästa praxis för formulärdesign och erbjudit insikter om att optimera dokumentformulär för sökmotorer.
 
-Genom att utnyttja kraften i Aspose.Words för Python kan du skapa dokument som inte bara fångar data effektivt utan också förbättrar användarens engagemang och effektiviserar arbetsflöden för databearbetning. Nu är du redo att ge dig ut på din resa mot att bli en mästare på formulärfält och datainsamling i Word-dokument.
-
-## Vanliga frågor
+## FAQ's
 
 ### Hur installerar jag Aspose.Words för Python?
 

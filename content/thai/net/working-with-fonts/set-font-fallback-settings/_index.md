@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## ขั้นตอนที่ 3: กำหนดค่าการตั้งค่าแบบอักษร
 
-สร้างใหม่`FontSettings` วัตถุและโหลดการตั้งค่าแบบอักษรสำรองจากไฟล์ XML ไฟล์ XML นี้ประกอบด้วยกฎสำหรับแบบอักษรสำรอง
+ สร้างใหม่`FontSettings` วัตถุและโหลดการตั้งค่าแบบอักษรสำรองจากไฟล์ XML ไฟล์ XML นี้ประกอบด้วยกฎสำหรับแบบอักษรสำรอง
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

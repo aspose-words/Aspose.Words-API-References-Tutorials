@@ -78,7 +78,7 @@ Bây giờ là lúc xác định các thuộc tính cho trục X. Bao gồm thi�
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // Được đo theo đơn vị hiển thị của trục Y (hàng trăm).
+xAxis.CrossesAt = 3; //Được đo theo đơn vị hiển thị của trục Y (hàng trăm).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

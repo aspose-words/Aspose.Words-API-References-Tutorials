@@ -53,13 +53,13 @@ Spiegazione:
 Poi, dobbiamo impostare una password per la protezione da scrittura. Questa password può essere lunga fino a 15 caratteri.
 
 ```csharp
-//Inserisci una password lunga al massimo 15 caratteri.
+// Inserisci una password lunga al massimo 15 caratteri.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Spiegazione:
 
-- IL`SetPassword` il metodo viene chiamato su`WriteProtection` proprietà del documento.
+-  IL`SetPassword` il metodo viene chiamato su`WriteProtection` proprietà del documento.
 - Forniamo una password (in questo caso "MyPassword") che sarà necessaria per rimuovere la protezione.
 
 ## Passaggio 3: abilitare la raccomandazione di sola lettura
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Spiegazione:
 
-- IL`ReadOnlyRecommended` la proprietà è impostata su`true`.
+-  IL`ReadOnlyRecommended` la proprietà è impostata su`true`.
 - Questo richiederà agli utenti di aprire il documento in modalità di sola lettura, ma possono scegliere di ignorare il consiglio.
 
 ## Passaggio 4: applicare la protezione di sola lettura
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Spiegazione:
 
-- IL`Protect` il metodo viene chiamato sul documento con`ProtectionType.ReadOnly` come argomento.
+-  IL`Protect` il metodo viene chiamato sul documento con`ProtectionType.ReadOnly` come argomento.
 - Questo metodo applica la protezione di sola lettura, impedendo qualsiasi modifica al documento senza la password.
 
 ## Passaggio 5: Salvare il documento
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Spiegazione:
 
-- IL`Save` viene chiamato sul documento, specificando il percorso e il nome del file.
+-  IL`Save` viene chiamato sul documento, specificando il percorso e il nome del file.
 - Il documento viene salvato con la protezione di sola lettura.
 
 ## Conclusione

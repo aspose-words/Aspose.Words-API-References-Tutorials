@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Schritt 3: Schriftarteinstellungen konfigurieren
 
-Erstellen Sie ein neues`FontSettings` Objekt und laden Sie die Schriftart-Fallback-Einstellungen aus einer XML-Datei. Diese XML-Datei enthält die Regeln für den Schriftart-Fallback.
+ Erstellen Sie ein neues`FontSettings` Objekt und laden Sie die Schriftart-Fallback-Einstellungen aus einer XML-Datei. Diese XML-Datei enthält die Regeln für den Schriftart-Fallback.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

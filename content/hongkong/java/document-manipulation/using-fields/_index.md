@@ -75,7 +75,7 @@ doc.save("MergedDocumentWithImages.docx");
 
 ## 交替行格式
 
-您可以設定表格中交替行的格式。操作方法如下：
+您可以設定表中交替行的格式。操作方法如下：
 
 ```java
 Document doc = new Document("AlternatingRowsTemplate.docx");

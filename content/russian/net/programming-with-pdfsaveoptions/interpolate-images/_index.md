@@ -2,7 +2,7 @@
 title: Интерполяция изображений в PDF-документе
 linktitle: Интерполяция изображений в PDF-документе
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как интерполировать изображения в документе PDF с помощью Aspose.Words для .NET с помощью нашего пошагового руководства. Улучшите качество изображений в вашем PDF-файле легко.
+description: Узнайте, как интерполировать изображения в PDF-документе с помощью Aspose.Words для .NET с помощью нашего пошагового руководства. Улучшите качество изображений в PDF-файле легко.
 type: docs
 weight: 10
 url: /ru/net/programming-with-pdfsaveoptions/interpolate-images/
@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-The`InterpolateImages` свойство установлено на`true` чтобы гарантировать, что изображения в вашем PDF-файле интерполированы, что улучшает их качество.
+ The`InterpolateImages` свойство установлено на`true` чтобы гарантировать, что изображения в вашем PDF-файле интерполированы, что улучшает их качество.
 
 ## Шаг 4: Сохраните документ как PDF-файл.
 

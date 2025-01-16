@@ -89,7 +89,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### س3: هل هناك أي خيارات ترخيص متاحة لـ Aspose.Words لـ Java؟
 
- نعم، يمكنك استكشاف خيارات الترخيص وشراء Aspose.Words for Java على[موقع اسبوس](https://purchase.aspose.com/buy).
+نعم، يمكنك استكشاف خيارات الترخيص وشراء Aspose.Words for Java على[موقع اسبوس](https://purchase.aspose.com/buy).
 
 ### س4: هل يمكنني تجربة Aspose.Words لـ Java قبل الشراء؟
 
@@ -97,6 +97,6 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### س5: أين يمكنني الحصول على الدعم أو طرح الأسئلة حول Aspose.Words for Java؟
 
-لأي أسئلة أو دعم، قم بزيارة[منتدى Aspose.Words للغة Java](https://forum.aspose.com/).
+ لأي أسئلة أو دعم، قم بزيارة[منتدى Aspose.Words للغة Java](https://forum.aspose.com/).
 
 الآن بعد أن أتقنت عرض الأشكال باستخدام Aspose.Words for Java، فأنت جاهز لإطلاق العنان للإمكانات الكاملة لهذه الواجهة البرمجية متعددة الاستخدامات في مشاريع معالجة المستندات الخاصة بك. استمتع بالبرمجة!

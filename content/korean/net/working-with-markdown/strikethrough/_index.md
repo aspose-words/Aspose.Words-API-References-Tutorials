@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## 1단계: DocumentBuilder 초기화
 
-그만큼`DocumentBuilder` class는 Aspose.Words의 강력한 도구로, 이를 사용하면 문서에 손쉽게 콘텐츠를 추가할 수 있습니다.
+ 그만큼`DocumentBuilder` class는 Aspose.Words의 강력한 도구로, 이를 사용하면 문서에 손쉽게 콘텐츠를 추가할 수 있습니다.
 
 ```csharp
 // DocumentBuilder를 초기화합니다.

@@ -71,7 +71,7 @@ A könyvjelző elindítása után tetszőleges tartalmat adhatunk hozzá. Ebben 
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-A`Writeln` metódus hozzáad egy új bekezdést a megadott szöveggel a dokumentumhoz.
+ A`Writeln` metódus hozzáad egy új bekezdést a megadott szöveggel a dokumentumhoz.
 
 ## 5. lépés: Zárja be a könyvjelzőt
 
@@ -81,7 +81,7 @@ A tartalom hozzáadása után be kell zárnunk a könyvjelzőt. Ez jelzi az Aspo
 builder.EndBookmark("FineBookmark");
 ```
 
-A`EndBookmark` metódus befejezi a korábban elkezdett könyvjelzőt.
+ A`EndBookmark` metódus befejezi a korábban elkezdett könyvjelzőt.
 
 ## 6. lépés: Mentse el a dokumentumot
 

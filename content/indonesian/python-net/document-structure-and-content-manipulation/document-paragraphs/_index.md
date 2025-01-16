@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## Pemformatan Teks Dasar
 
- Memformat teks dalam dokumen Word sangat penting untuk menekankan poin-poin penting dan meningkatkan keterbacaan. Aspose.Words memungkinkan Anda menerapkan berbagai opsi pemformatan, seperti**bold**, *italic*, garis bawah, dan ukuran font:
+Memformat teks dalam dokumen Word sangat penting untuk menekankan poin-poin penting dan meningkatkan keterbacaan. Aspose.Words memungkinkan Anda menerapkan berbagai opsi pemformatan, seperti tebal, miring, garis bawah, dan ukuran font:
 
 ```python
 # Apply basic text formatting
@@ -173,9 +173,7 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 Dalam panduan lengkap ini, kami mengeksplorasi kemampuan Aspose.Words untuk Python dalam memformat paragraf dan teks dalam dokumen Word. Dengan menggunakan pustaka yang canggih ini, pengembang dapat mengotomatiskan pemformatan dokumen dengan mudah, memastikan tampilan konten yang profesional dan menawan.
 
----
-
-## Tanya Jawab Umum
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menginstal Aspose.Words untuk Python?
 Untuk menginstal Aspose.Words untuk Python, gunakan perintah berikut:

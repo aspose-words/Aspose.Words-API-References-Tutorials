@@ -32,7 +32,7 @@ using Aspose.Words;
 
 Docx 파일을 바이트 배열로 변환하려면 다음 단계를 따르세요.
 ```csharp
-//디스크 또는 스트림에서 Docx 파일을 로드합니다.
+// 디스크 또는 스트림에서 Docx 파일을 로드합니다.
 Document doc = new Document("input.docx");
 
 // 문서를 MemoryStream에 저장합니다.
@@ -64,13 +64,13 @@ Document docFromBytes = new Document(inStream);
  아니요, 프로덕션에서 Aspose.Words for .NET을 사용하려면 유효한 라이선스가 필요합니다. 임시 라이선스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET 설명서에 대해 더 자세히 알아볼 수 있는 방법은 무엇입니까?
- 설명서를 방문하세요[여기](https://reference.aspose.com/words/net/)포괄적인 가이드와 API 참조를 확인하세요.
+ 설명서를 방문하세요[여기](https://reference.aspose.com/words/net/) 포괄적인 가이드와 API 참조를 확인하세요.
 
 ### Aspose.Words는 대용량 Docx 파일을 처리하는 데 적합합니까?
 네, Aspose.Words for .NET은 대용량 문서를 처리하기 위한 효율적인 메모리 관리와 성능 최적화를 제공합니다.
 
 ### Aspose.Words for .NET에 대한 커뮤니티 지원은 어디서 받을 수 있나요?
- 커뮤니티 포럼에 참여하세요[여기](https://forum.aspose.com/c/words/8) 질문을 하고, 지식을 공유하고, 다른 사용자와 소통하세요.
+ 커뮤니티 포럼에 참여하세요[여기](https://forum.aspose.com/c/words/8)질문을 하고, 지식을 공유하고, 다른 사용자와 소통하세요.
 
 ### 구매하기 전에 Aspose.Words for .NET을 무료로 사용해 볼 수 있나요?
  네, 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/) 그 기능과 성능을 평가합니다.

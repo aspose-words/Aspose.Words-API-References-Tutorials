@@ -7,168 +7,142 @@ type: docs
 weight: 13
 url: /ko/java/table-processing/formatting-tables/
 ---
-
-Aspose.Words for Java를 사용하여 문서에서 표를 서식 지정하는 기술을 마스터하기 위한 여정을 시작할 준비가 되셨나요? 이 포괄적인 가이드에서는 문서 서식 지정의 세계를 깊이 파고들어 특히 표에 초점을 맞춥니다. Aspose.Words for Java는 문서에서 표를 손쉽게 만들고, 조작하고, 향상시킬 수 있는 강력한 도구입니다.
-
 ## 소개
 
-Aspose.Words for Java는 문서 처리의 다양한 측면을 다룰 수 있는 Java 라이브러리입니다. 보고서, 계약서 또는 표가 포함된 문서를 다루든 이 라이브러리는 신뢰할 수 있는 동반자가 될 수 있습니다. 광범위한 기능과 성능을 통해 정확하고 전문적인 문서 서식을 얻을 수 있습니다.
+Aspose.Words for Java를 사용하여 Word 문서에서 쉽게 표를 만들 준비가 되셨나요? 표는 데이터를 구성하는 데 필수적이며, 이 강력한 라이브러리를 사용하면 Word 문서에서 프로그래밍 방식으로 표를 만들고, 채우고, 심지어 중첩할 수 있습니다. 이 단계별 가이드에서는 표를 만들고, 셀을 병합하고, 중첩된 표를 추가하는 방법을 살펴보겠습니다.
 
-## Aspose.Words for Java 시작하기
+## 필수 조건
 
-표 서식의 세부 사항을 살펴보기에 앞서 개발 환경을 설정하고 Java용 Aspose.Words에 대해 알아보겠습니다.
+코딩을 시작하기 전에 다음 사항이 있는지 확인하세요.
 
-### 설치
+- 시스템에 Java Development Kit(JDK)가 설치되어 있어야 합니다.
+-  Java 라이브러리를 위한 Aspose.Words.[여기에서 다운로드하세요](https://releases.aspose.com/words/java/).
+- Java 프로그래밍에 대한 기본적인 이해.
+- IntelliJ IDEA, Eclipse 또는 기타 사용하기 편리한 IDE.
+-  에이[임시 면허](https://purchase.aspose.com/temporary-license/) Aspose.Words의 모든 기능을 활용하세요.
 
- 시작하려면 Aspose.Words for Java를 다운로드하여 설치해야 합니다. 다운로드 링크를 찾을 수 있습니다.[여기](https://releases.aspose.com/words/java/). 설치가 완료되면 이 라이브러리를 사용하여 프로그래밍 방식으로 문서 작업을 시작할 수 있습니다.
+## 패키지 가져오기
 
-### 프로젝트에 Aspose.Words for Java 추가
-
-Aspose.Words for Java를 다운로드한 후 라이브러리를 Java 프로젝트에 추가합니다. 프로젝트의 클래스 경로에 JAR 파일을 포함하면 됩니다.
-
-### Java용 Aspose.Words 초기화
-
-Aspose.Words for Java를 사용하려면 코드에서 초기화해야 합니다. 다음은 이를 수행하는 방법에 대한 간단한 예입니다.
+Aspose.Words for Java를 사용하려면 필요한 클래스와 패키지를 가져와야 합니다. 다음 가져오기를 Java 파일의 맨 위에 추가합니다.
 
 ```java
-import com.aspose.words.Document;
-
-public class TableFormattingExample {
-    public static void main(String[] args) {
-        // Java용 Aspose.Words 초기화
-        Document doc = new Document();
-        
-        // 여기에 코드를 입력하세요
-    }
-}
+import com.aspose.words.*;
 ```
 
-## 테이블 만들기 및 채우기
+따라하기 매우 쉬운 과정을 한 입 크기 단계로 나누어 보겠습니다.
 
-이제 환경을 설정했으니 문서에서 표를 만들고 채우는 방법을 알아보겠습니다.
+## 1단계: 문서 및 표 만들기
 
-### 테이블 생성
+가장 먼저 필요한 건 뭐예요? 작업할 문서!
 
- 문서에서 표를 만들려면 다음을 사용할 수 있습니다.`Table` Aspose.Words for Java의 클래스입니다. 기본 테이블을 만드는 방법은 다음과 같습니다.
+새 Word 문서와 표를 만드는 것으로 시작합니다. 표를 문서 본문에 추가합니다.
 
 ```java
+Document doc = new Document();
 Table table = new Table(doc);
+doc.getFirstSection().getBody().appendChild(table);
 ```
 
-### 행과 열 추가
+- `Document`: Word 문서를 나타냅니다.
+- `Table`: 빈 테이블을 만듭니다.
+- `appendChild`: 문서 본문에 표를 추가합니다.
 
-테이블을 유용하게 만들려면 행과 열을 추가해야 합니다. 방법은 다음과 같습니다.
+## 2단계: 표에 행과 셀 추가
+
+행과 셀이 없는 테이블? 바퀴 없는 차와 같죠! 고쳐보죠.
 
 ```java
-// 테이블에 행을 추가합니다
-Row row = table.getRows().add();
+Row firstRow = new Row(doc);
+table.appendChild(firstRow);
 
-// 행에 셀 추가
-Cell cell1 = row.getCells().add();
-cell1.getCellFormat().setPreferredWidth(100.0);
-
-Cell cell2 = row.getCells().add();
-cell2.getCellFormat().setPreferredWidth(200.0);
-
-// 표를 채우기 위한 코드는 여기에 있습니다.
+Cell firstCell = new Cell(doc);
+firstRow.appendChild(firstCell);
 ```
 
-## 표 서식 지정
+- `Row`표의 행을 나타냅니다.
+- `Cell`: 행의 셀을 나타냅니다.
+- `appendChild`: 표에 행과 셀을 추가합니다.
 
-서식 지정은 마법이 일어나는 곳입니다. Aspose.Words for Java는 표를 서식 지정하는 데 사용할 수 있는 다양한 옵션을 제공합니다. 몇 가지 일반적인 서식 지정 작업을 살펴보겠습니다.
+## 3단계: 셀에 텍스트 추가
 
-### 열 너비 조정
-
-열 너비를 제어하여 테이블이 시각적으로 매력적으로 보이도록 할 수 있습니다. 열 너비를 조정하는 방법은 다음과 같습니다.
+이제 우리 테이블에 조금 더 개성을 더할 시간입니다!
 
 ```java
-// 열에 대한 기본 너비 설정
-cell1.getCellFormat().setPreferredWidth(100.0);
+Paragraph paragraph = new Paragraph(doc);
+firstCell.appendChild(paragraph);
+
+Run run = new Run(doc, "Hello world!");
+paragraph.appendChild(run);
 ```
 
-### 테두리 적용
+- `Paragraph`: 셀에 문단을 추가합니다.
+- `Run`: 문단에 텍스트를 추가합니다.
 
-테이블에 테두리를 추가하면 가독성이 향상될 수 있습니다. 테두리 스타일도 사용자 정의할 수 있습니다.
+## 4단계: 표의 셀 병합
+
+셀을 결합하여 헤더나 스팬을 만들고 싶으신가요? 아주 간단합니다!
 
 ```java
-// 셀에 테두리 적용
-cell1.getCellFormat().getBorders().setLineStyle(LineStyle.SINGLE);
-cell1.getCellFormat().getBorders().setColor(Color.BLACK);
+DocumentBuilder builder = new DocumentBuilder(doc);
+
+builder.insertCell();
+builder.getCellFormat().setHorizontalMerge(CellMerge.FIRST);
+builder.write("Text in merged cells.");
+
+builder.insertCell();
+builder.getCellFormat().setHorizontalMerge(CellMerge.PREVIOUS);
+builder.endRow();
 ```
 
-### 셀 병합
+- `DocumentBuilder`: 문서 작성을 간소화합니다.
+- `setHorizontalMerge`: 셀을 수평으로 병합합니다.
+- `write`: 병합된 셀에 내용을 추가합니다.
 
-셀 병합은 헤더 셀을 만들거나 특정 목적을 위해 셀을 결합하려는 경우에 유용합니다.
+## 5단계: 중첩 테이블 추가
+
+레벨업할 준비가 되셨나요? 테이블 안에 테이블을 추가해 봅시다.
 
 ```java
-// 셀을 수평으로 병합
-table.mergeCells(cell1, cell2);
+builder.moveTo(table.getRows().get(0).getCells().get(0).getFirstParagraph());
+
+builder.startTable();
+builder.insertCell();
+builder.write("Hello world!");
+builder.endTable();
 ```
 
-## 고급 테이블 조작
+- `moveTo`: 커서를 문서의 특정 위치로 이동합니다.
+- `startTable`: 중첩된 테이블을 만들기 시작합니다.
+- `endTable`: 중첩된 테이블을 끝냅니다.
 
-Aspose.Words for Java는 복잡한 테이블 시나리오를 처리하기 위한 고급 기능을 제공합니다. 몇 가지를 살펴보겠습니다.
+## 결론
 
-### 중첩 테이블 추가
+축하합니다! Aspose.Words for Java를 사용하여 표를 만들고, 채우고, 스타일을 지정하는 방법을 배웠습니다. 텍스트 추가부터 셀 병합 및 표 중첩까지, 이제 Word 문서에서 데이터를 효과적으로 구조화하는 도구가 있습니다.
 
-때로는 셀 내에 중첩된 테이블을 추가해야 할 수도 있습니다. 다음과 같이 달성할 수 있습니다.
-
-```java
-// 중첩 테이블 만들기
-Table nestedTable = new Table(doc);
-Row nestedRow = nestedTable.getRows().add();
-Cell nestedCell = nestedRow.getCells().add();
-
-// 중첩된 테이블에 콘텐츠 추가
-nestedCell.getFirstParagraph().appendChild(new Run(doc, "Nested Table Content"));
-
-// 중첩된 테이블을 기본 테이블에 추가합니다.
-cell1.appendChild(nestedTable);
-```
-
-### 스타일리시한 테이블 스타일 추가
-
-Aspose.Words for Java는 문서에 전문적인 느낌을 줄 수 있는 다양한 표 스타일을 지원합니다.
-
-```java
-// 미리 정의된 테이블 스타일 적용
-table.setStyleIdentifier(StyleIdentifier.LIGHT_SHADING_ACCENT_1);
-```
-
-## 자주 묻는 질문(FAQ)
-
-### 표 셀의 배경색을 어떻게 바꿀 수 있나요?
-
- 다음을 사용하여 표 셀의 배경색을 변경할 수 있습니다.`Shading` 속성. 다음은 예입니다.
-
-```java
-cell1.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
-```
+## 자주 묻는 질문
 
 ### 표 셀에 하이퍼링크를 추가할 수 있나요?
 
 네, Aspose.Words for Java에서 테이블 셀에 하이퍼링크를 추가할 수 있습니다. 방법은 다음과 같습니다.
 
 ```java
-Run run = new Run(doc, "Click Here");
-run.getFont().setUnderline(Underline.SINGLE);
-run.getFont().setColor(Color.BLUE);
-run.getHyperlink().setAddress("https://www.example.com");
-cell1.getFirstParagraph().appendChild(run);
+builder.moveTo(table.getRows().get(0).getCells().get(0).getFirstParagraph());
+
+// 하이퍼링크를 삽입하고 사용자 지정 서식을 사용하여 강조합니다.
+// 하이퍼링크는 URL에 지정된 위치로 이동해주는 클릭 가능한 텍스트입니다.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", 거짓);
 ```
 
-### 표의 셀에 조건부 서식을 적용할 수 있나요?
+### Aspose.Words for Java를 무료로 사용할 수 있나요?  
+ 제한적으로 사용하거나 얻을 수 있습니다[무료 체험](https://releases.aspose.com/) 그 잠재력을 최대한 탐색해보세요.
 
-네, 특정 조건에 따라 셀에 조건부 서식을 적용할 수 있습니다. 이를 위해서는 데이터 값에 따라 셀 색상이나 텍스트를 변경하는 것과 같은 프로그래밍 로직을 사용해야 합니다.
+### 표에서 셀을 수직으로 병합하려면 어떻게 해야 하나요?  
+ 사용하세요`setVerticalMerge` 의 방법`CellFormat` 수평 병합과 유사한 클래스입니다.
 
-### PDF나 DOCX 등 다른 형식으로 표를 내보내려면 어떻게 해야 하나요?
+### 표 셀에 이미지를 추가할 수 있나요?  
+ 네, 사용할 수 있습니다`DocumentBuilder` 표 셀에 이미지를 삽입합니다.
 
- Aspose.Words for Java는 다양한 형식으로 내보내기 옵션을 제공합니다. 다음을 사용하여 문서를 PDF 또는 DOCX 파일로 저장할 수 있습니다.`Save` 방법. 다음은 예입니다.
-
-```java
-doc.save("output.pdf", SaveFormat.PDF);
-```
-
-## 결론
-
-이 포괄적인 가이드에서 우리는 Aspose.Words for Java를 사용하여 문서에서 표를 서식 지정하는 매혹적인 세계를 탐험했습니다. 강력한 기능과 유연성을 통해 문서 서식 지정 기술을 한 단계 업그레이드할 수 있습니다. 보고서, 프레젠테이션 또는 표가 포함된 문서를 만들 때 Aspose.Words for Java는 신뢰할 수 있는 동반자입니다. 그러니 Aspose.Words for Java로 문서 서식 지정의 잠재력을 최대한 활용하세요!
+### Aspose.Words for Java에 대한 추가 리소스는 어디에서 찾을 수 있나요?  
+ 확인하세요[선적 서류 비치](https://reference.aspose.com/words/java/) 또는[지원 포럼](https://forum.aspose.com/c/words/8/) 자세한 가이드는 여기를 참조하세요.

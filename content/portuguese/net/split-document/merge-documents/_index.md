@@ -107,7 +107,7 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite que desenvolvedores
 
 ### Como obtenho suporte para o Aspose.Words para .NET?
 
-Você pode obter suporte visitando o[Fórum de suporte Aspose](https://forum.aspose.com/c/words/8).
+ Você pode obter suporte visitando o[Fórum de suporte Aspose](https://forum.aspose.com/c/words/8).
 
 ### Posso mesclar outros formatos de arquivo com o Aspose.Words para .NET?
 

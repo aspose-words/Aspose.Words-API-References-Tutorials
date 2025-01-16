@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-ال`DocumentBuilder` هي فئة مساعدة تعمل على تبسيط عملية بناء المستندات.
+ ال`DocumentBuilder` هي فئة مساعدة تعمل على تبسيط عملية بناء المستندات.
 
 ## الخطوة 3: ابدأ الجدول
 

@@ -38,7 +38,7 @@ Ces espaces de noms donnent accès aux classes et méthodes nécessaires à la m
 
 ## Étape 1 : Créer un DocumentBuilder
 
-Le`DocumentBuilder` La classe vous aide à ajouter et à formater du contenu dans le document. En créant une`DocumentBuilder` objet, vous configurez un outil pour insérer et manipuler du texte.
+ Le`DocumentBuilder` La classe vous aide à ajouter et à formater du contenu dans le document. En créant une`DocumentBuilder` objet, vous configurez un outil pour insérer et manipuler du texte.
 
 ```csharp
 // Créez une instance DocumentBuilder pour travailler avec le document.

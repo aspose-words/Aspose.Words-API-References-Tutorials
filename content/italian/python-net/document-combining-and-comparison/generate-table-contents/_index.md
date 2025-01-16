@@ -19,10 +19,10 @@ Un indice fornisce un'istantanea della struttura di un documento, consentendo ai
 ## Caricamento di un documento
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## Definizione di titoli e sottotitoli
@@ -31,25 +31,11 @@ Per generare un indice, devi definire i titoli e i sottotitoli all'interno del t
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## Generazione dell'indice
-
-Ora che abbiamo definito i titoli e i sottotitoli, generiamo il sommario stesso. Creeremo una nuova sezione all'inizio del documento e la popoleremo con il contenuto appropriato.
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## Personalizzazione dell'indice
@@ -58,21 +44,10 @@ Puoi personalizzare l'aspetto del tuo indice regolando font, stili e formattazio
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## Aggiunta di collegamenti ipertestuali
-
-Per rendere interattivo l'indice, aggiungi collegamenti ipertestuali che consentano ai lettori di passare direttamente alle sezioni corrispondenti del documento.
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+``
 
 ## Stile dell'indice
 
@@ -81,16 +56,7 @@ Per definire lo stile del sommario è necessario definire gli stili di paragrafo
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## Aggiornamento dell'indice
-
-Se apporti modifiche alla struttura del documento, puoi facilmente aggiornare l'indice per riflettere tali modifiche.
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## Automatizzare il processo
@@ -101,27 +67,13 @@ Per risparmiare tempo e garantire coerenza, potresti provare a creare uno script
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## Gestione dei numeri di pagina
-
-È possibile aggiungere numeri di pagina all'indice per fornire ai lettori maggiori informazioni su dove trovare sezioni specifiche.
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## Conclusione

@@ -16,7 +16,7 @@ url: /el/net/document-protection/unrestricted-editable-regions/
 Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε τα εξής:
 
 1.  Aspose.Words για .NET: Εάν δεν το έχετε κάνει ήδη, κάντε λήψη του[εδώ](https://releases.aspose.com/words/net/).
-2.  Μια έγκυρη άδεια Aspose: Μπορείτε να λάβετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
+2. Μια έγκυρη άδεια Aspose: Μπορείτε να λάβετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Οποιαδήποτε πρόσφατη έκδοση θα πρέπει να λειτουργεί καλά.
 4. Βασικές γνώσεις C# και .NET: Αυτό θα σας βοηθήσει να ακολουθήσετε μαζί με τον κώδικα.
 

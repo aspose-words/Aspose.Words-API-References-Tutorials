@@ -106,4 +106,4 @@ Word 문서를 프로그래밍 방식으로 만들고, 편집하고, 변환하�
  네, Aspose.Words for .NET은 전체 기능을 사용하려면 라이선스가 필요합니다. 하나를 구매할 수 있습니다.[여기](https://purchase.aspose.com/buy) 또는 임시 면허를 받으세요[여기](https://purchase.aspose.com/temporary-license/).
 
 ### .NET용 Aspose.Words에 대한 추가 문서는 어디에서 찾을 수 있나요?
-자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
+ 자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).

@@ -73,7 +73,7 @@ Este código guarda el documento modificado con un nuevo nombre, conservando los
 ## Preguntas frecuentes
 
 ###  ¿Cuál es el propósito de la`CopyStylesFromTemplate` method?  
-El`CopyStylesFromTemplate` El método copia estilos de un documento a otro, garantizando que el documento de destino herede el formato del documento de origen.
+ El`CopyStylesFromTemplate` El método copia estilos de un documento a otro, garantizando que el documento de destino herede el formato del documento de origen.
 
 ###  ¿Puedo utilizar?`CopyStylesFromTemplate` with documents in different formats?  
  No, el`CopyStylesFromTemplate` El método sólo funciona con documentos en el mismo formato, normalmente DOCX.
@@ -82,7 +82,7 @@ El`CopyStylesFromTemplate` El método copia estilos de un documento a otro, gara
 Abra el documento de destino y verifique la configuración de estilos. Debería ver aplicados los estilos del documento de origen.
 
 ### ¿Qué pasa si el documento de destino ya tiene estilos?  
-El`CopyStylesFromTemplate` El método sobrescribirá los estilos existentes en el documento de destino con aquellos del documento de origen.
+ El`CopyStylesFromTemplate` El método sobrescribirá los estilos existentes en el documento de destino con aquellos del documento de origen.
 
 ### ¿Aspose.Words para .NET es de uso gratuito?  
  Aspose.Words para .NET es un producto comercial, pero puede obtener una prueba gratuita en[Prueba gratuita de Aspose.Words para .NET](https://releases.aspose.com/).

@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Stiamo creando un`FindReplaceOptions`oggetto e impostando l'allineamento del paragrafo al centro.
+ Stiamo creando un`FindReplaceOptions` oggetto e impostando l'allineamento del paragrafo al centro.
 
 ## Passaggio 4: sostituire il testo con i metacaratteri
 
 Questo è il passaggio in cui avviene la magia! Sostituiremo la parola "sezione" seguita da un'interruzione di paragrafo e aggiungeremo una sottolineatura.
 
 ```csharp
-// Raddoppia ogni interruzione di paragrafo dopo la parola "sezione", aggiungi una sorta di sottolineatura e centrala.
+//Raddoppia ogni interruzione di paragrafo dopo la parola "sezione", aggiungi una sorta di sottolineatura e centrala.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

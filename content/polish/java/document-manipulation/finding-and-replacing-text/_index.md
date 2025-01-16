@@ -171,7 +171,7 @@ Umożliwia to dokonywanie zamian tekstu, szczególnie w nagłówkach i stopkach.
 
 ## Wyświetlanie zmian w zamówieniach nagłówka i stopki
 
-Za pomocą Aspose.Words możesz wyświetlić zmiany w kolejności nagłówków i stopek w swoim dokumencie.
+Za pomocą Aspose.Words możesz pokazać zmiany w kolejności nagłówków i stopek w swoim dokumencie.
 
 ```java
 // Załaduj dokument
@@ -355,4 +355,4 @@ Aby zignorować tekst wewnątrz pól podczas zamiany, możesz ustawić`IgnoreFie
 
 ### Do czego służy opcja UseLegacyOrder?
 
-Ten`UseLegacyOrder` opcja w`FindReplaceOptions` pozwala na użycie starszej kolejności podczas wykonywania operacji wyszukiwania i zamiany. Może to być przydatne w pewnych scenariuszach, w których pożądane jest starsze zachowanie kolejności.
+ Ten`UseLegacyOrder` opcja w`FindReplaceOptions` pozwala na użycie starszej kolejności podczas wykonywania operacji wyszukiwania i zamiany. Może to być przydatne w pewnych scenariuszach, w których pożądane jest starsze zachowanie kolejności.

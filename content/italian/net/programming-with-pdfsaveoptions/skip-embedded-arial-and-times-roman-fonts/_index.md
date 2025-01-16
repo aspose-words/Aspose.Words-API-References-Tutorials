@@ -81,7 +81,7 @@ No, non lo farà. Poiché Arial e Times Roman sono font standard, l'aspetto rima
 Sì, puoi configurare le opzioni di salvataggio per saltare l'incorporamento di altri font, se necessario.
 
 ### Aspose.Words per .NET è gratuito?
-Aspose.Words per .NET offre una prova gratuita che puoi scaricare[Qui](https://releases.aspose.com/) , ma per l'accesso completo, è necessario acquistare una licenza[Qui](https://purchase.aspose.com/buy).
+ Aspose.Words per .NET offre una prova gratuita che puoi scaricare[Qui](https://releases.aspose.com/) , ma per l'accesso completo, è necessario acquistare una licenza[Qui](https://purchase.aspose.com/buy).
 
 ### Dove posso trovare altri tutorial su Aspose.Words per .NET?
- Puoi trovare documentazione e tutorial completi[Qui](https://reference.aspose.com/words/net/).
+Puoi trovare documentazione e tutorial completi[Qui](https://reference.aspose.com/words/net/).

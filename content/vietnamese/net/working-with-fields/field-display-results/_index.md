@@ -60,7 +60,7 @@ Các trường trong tài liệu Word có thể là động, nghĩa là chúng k
 document.UpdateFields();
 ```
 
-Các`UpdateFields` phương pháp lặp qua tất cả các trường trong tài liệu và cập nhật chúng bằng dữ liệu mới nhất. Bước này rất quan trọng nếu các trường của bạn phụ thuộc vào nội dung động như ngày tháng hoặc phép tính.
+ Các`UpdateFields` phương pháp lặp qua tất cả các trường trong tài liệu và cập nhật chúng bằng dữ liệu mới nhất. Bước này rất quan trọng nếu các trường của bạn phụ thuộc vào nội dung động như ngày tháng hoặc phép tính.
 
 ## Bước 3: Hiển thị kết quả trường
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
-Các`DisplayResult` tài sản của`Field` lớp trả về giá trị được định dạng của trường.`foreach` vòng lặp sẽ duyệt qua tất cả các trường trong tài liệu và in ra kết quả của chúng.
+ Các`DisplayResult` tài sản của`Field` lớp trả về giá trị được định dạng của trường.`foreach` vòng lặp sẽ duyệt qua tất cả các trường trong tài liệu và in ra kết quả của chúng.
 
 ## Phần kết luận
 
@@ -97,4 +97,4 @@ Bạn có thể cập nhật nhiều loại trường khác nhau, bao gồm trư
 Các trường yêu cầu người dùng nhập dữ liệu (như trường biểu mẫu) sẽ cần phải được điền thủ công hoặc thông qua mã bổ sung.
 
 ### Có thể hiển thị kết quả thực địa theo định dạng khác không?  
-Các`DisplayResult` thuộc tính cung cấp đầu ra được định dạng. Nếu bạn cần định dạng khác, hãy cân nhắc xử lý bổ sung dựa trên yêu cầu của bạn.
+ Các`DisplayResult` thuộc tính cung cấp đầu ra được định dạng. Nếu bạn cần định dạng khác, hãy cân nhắc xử lý bổ sung dựa trên yêu cầu của bạn.

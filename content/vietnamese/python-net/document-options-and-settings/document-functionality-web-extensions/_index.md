@@ -18,7 +18,7 @@ Trước khi đi sâu vào các chi tiết kỹ thuật, hãy đảm bảo bạn
 
 - Hiểu biết cơ bản về lập trình Python.
 -  Tài liệu tham khảo API Aspose.Words cho Python (có tại[đây](https://reference.aspose.com/words/python-net/).
-- Truy cập vào thư viện Aspose.Words cho Python (tải xuống từ[đây](https://releases.aspose.com/words/python/).
+-  Truy cập vào thư viện Aspose.Words cho Python (tải xuống từ[đây](https://releases.aspose.com/words/python/).
 
 ## Thiết lập Aspose.Words cho Python
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Nhập thư viện vào tập lệnh Python của bạn.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Tạo một tài liệu mới
@@ -42,7 +42,7 @@ import aspose.words
 Hãy bắt đầu bằng cách tạo một tài liệu mới bằng Aspose.Words:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Thêm Nội dung vào Tài liệu
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Bạn có thể dễ dàng thêm nội dung vào tài liệu bằng Aspose.Words:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ Kiểu dáng và định dạng đóng vai trò quan trọng trong việc trình
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Chèn tiện ích mở rộng web
-
-Để chèn phần mở rộng web vào tài liệu, hãy làm theo các bước sau:
-
-1. Tạo tiện ích mở rộng web bằng HTML, CSS và JavaScript.
-2. Chuyển đổi phần mở rộng web thành chuỗi được mã hóa base64.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Chèn phần mở rộng web vào tài liệu:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Tương tác với Tiện ích mở rộng Web
@@ -98,7 +78,7 @@ Tiện ích mở rộng web có thể sửa đổi nội dung tài liệu một 
 Sau khi kết hợp các tiện ích mở rộng web và thực hiện các sửa đổi cần thiết, bạn có thể lưu tài liệu bằng nhiều định dạng khác nhau được Aspose.Words hỗ trợ:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Mẹo để tối ưu hóa hiệu suất

@@ -54,7 +54,7 @@ Terkadang, Anda mungkin perlu menyimpan setiap halaman dokumen Anda sebagai gamb
 
 ```java
 // Kode Java untuk menyimpan dokumen sebagai gambar
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Mengatur resolusi (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

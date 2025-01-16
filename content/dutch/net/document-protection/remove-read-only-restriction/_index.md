@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 Het instellen van een wachtwoord is optioneel, maar het kan een extra beveiligingslaag aan uw document toevoegen voordat u het wijzigt.
 
 ```csharp
-//Voer een wachtwoord in dat maximaal 15 tekens lang is.
+// Voer een wachtwoord in dat maximaal 15 tekens lang is.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Ja, het instellen van een wachtwoord is optioneel. U kunt de read-only aanbeveli
 
 ### Wat gebeurt er als het document al een ander type bescherming heeft?
 
-De`doc.Protect(ProtectionType.NoProtection)` Deze methode zorgt ervoor dat alle soorten beveiligingen uit het document worden verwijderd.
+ De`doc.Protect(ProtectionType.NoProtection)` Deze methode zorgt ervoor dat alle soorten beveiligingen uit het document worden verwijderd.
 
 ### Is er een manier om te weten of een document alleen-lezen is voordat de beperking wordt opgeheven?
 

@@ -81,7 +81,7 @@ Zapisuje dokument z zastosowaną ochroną.
 
 ## Wniosek
 
-masz to! Właśnie nauczyłeś się, jak chronić dokument Worda, aby tylko pola formularza mogły być edytowane za pomocą Aspose.Words dla .NET. Jest to przydatna funkcja, gdy musisz upewnić się, że pewne części dokumentu pozostaną niezmienione, a jednocześnie umożliwisz wypełnienie określonych pól.
+I masz to! Właśnie nauczyłeś się, jak chronić dokument Worda, aby tylko pola formularza mogły być edytowane za pomocą Aspose.Words dla .NET. Jest to przydatna funkcja, gdy musisz upewnić się, że pewne części dokumentu pozostaną niezmienione, a jednocześnie umożliwisz wypełnienie określonych pól.
 
 ## Najczęściej zadawane pytania
 

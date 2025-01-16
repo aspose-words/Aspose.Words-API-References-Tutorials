@@ -72,14 +72,6 @@ Hasonlítsa össze a forrásdokumentumot a módosított dokumentummal:
 comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
 ```
 
-## A különbségek kiemelése
-
-Emelje ki a dokumentumok közötti különbségeket:
-
-```python
-comparison.highlight_changes()
-```
-
 ## Az összehasonlítás eredményének mentése
 
 Mentse el az összehasonlítás eredményét egy új fájlba:

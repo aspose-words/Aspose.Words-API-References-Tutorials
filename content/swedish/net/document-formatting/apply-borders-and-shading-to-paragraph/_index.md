@@ -9,7 +9,7 @@ url: /sv/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 ## Introduktion
 
-Hej, har du någonsin undrat hur du får dina Word-dokument att dyka upp med några snygga kanter och skuggningar? Tja, du är på rätt plats! Idag dyker vi in i Aspose.Words för .NET-världen för att förstärka våra stycken. Föreställ dig att ditt dokument ser lika elegant ut som en professionell designers arbete med bara några rader kod. Redo att komma igång? Låt oss gå!
+Hej, har du någonsin undrat hur du får dina Word-dokument att dyka upp med några snygga kanter och skuggningar? Nåväl, du är på rätt plats! Idag dyker vi in i Aspose.Words för .NET-världen för att förstärka våra stycken. Föreställ dig att ditt dokument ser lika elegant ut som en professionell designers arbete med bara några rader kod. Redo att börja? Låt oss gå!
 
 ## Förutsättningar
 
@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-De`Document` objekt representerar hela vårt Word-dokument, och`DocumentBuilder` hjälper oss att lägga till och formatera innehåll.
+ De`Document` objekt representerar hela vårt Word-dokument, och`DocumentBuilder` hjälper oss att lägga till och formatera innehåll.
 
 ## Steg 3: Definiera styckegränser
 

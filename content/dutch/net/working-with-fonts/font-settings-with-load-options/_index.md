@@ -17,7 +17,7 @@ Voordat we in de details duiken, willen we eerst controleren of je alles hebt wa
 
 1.  Aspose.Words voor .NET: Als u het nog niet hebt gedaan, download het dan[hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere .NET-compatibele IDE.
-3. Basiskennis van C#: Hiermee kunt u de codefragmenten beter volgen.
+3. Basiskennis van C#: Hiermee kunt u de codefragmenten volgen.
 
 Alles? Geweldig! Laten we nu verder gaan met het instellen van onze omgeving.
 

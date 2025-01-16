@@ -38,7 +38,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```java
 // สร้างงานพิมพ์เพื่อพิมพ์เอกสารของเรา
 PrinterJob pj = PrinterJob.getPrinterJob();
-//เริ่มต้นชุดแอตทริบิวต์ด้วยจำนวนหน้าในเอกสาร
+// เริ่มต้นชุดแอตทริบิวต์ด้วยจำนวนหน้าในเอกสาร
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // ส่งต่อการตั้งค่าเครื่องพิมพ์พร้อมกับพารามิเตอร์อื่น ๆ ไปยังเอกสารที่จะพิมพ์
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // สร้างงานพิมพ์เพื่อพิมพ์เอกสารของเรา
 PrinterJob pj = PrinterJob.getPrinterJob();
-//เริ่มต้นชุดแอตทริบิวต์ด้วยจำนวนหน้าในเอกสาร
+// เริ่มต้นชุดแอตทริบิวต์ด้วยจำนวนหน้าในเอกสาร
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // ส่งต่อการตั้งค่าเครื่องพิมพ์พร้อมกับพารามิเตอร์อื่น ๆ ไปยังเอกสารที่จะพิมพ์
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // ดัชนีเริ่มต้นและสิ้นสุดของหน้าตามที่กำหนดไว้ในชุดแอตทริบิวต์
+        //ดัชนีเริ่มต้นและสิ้นสุดของหน้าตามที่กำหนดไว้ในชุดแอตทริบิวต์
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // เลือกหมายเลขหน้าสุดท้ายที่ต้องการพิมพ์บนแผ่นกระดาษนี้
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //วนซ้ำผ่านหน้าที่เลือกจากหน้าปัจจุบันที่เก็บไว้ไปยังหน้าที่คำนวณ
+        // วนซ้ำผ่านหน้าที่เลือกจากหน้าปัจจุบันที่เก็บไว้ไปยังหน้าที่คำนวณ
         // หน้าสุดท้าย.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // คำนวณดัชนีคอลัมน์และแถว
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // ค่าผลตอบแทนที่มีประโยชน์คือมาตราส่วนที่แสดงผลหน้า
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // วาดเส้นขอบหน้า (ภาพขนาดย่อของหน้าอาจมีขนาดเล็กกว่าภาพขนาดย่อ)
+                //วาดเส้นขอบหน้า (ภาพขนาดย่อของหน้าอาจมีขนาดเล็กกว่าภาพขนาดย่อ)
                 // ขนาดตัวแทน)
                 if (mPrintPageBorders) {
                     // รับขนาดจริง 100% ของหน้าในหน่วยพอยต์
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // กำหนดจำนวนคอลัมน์และแถวบนแผ่นงานสำหรับ
-        //กระดาษแนวแนวนอน
+        // กระดาษแนวแนวนอน
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ class MultipagePrintDocument implements Printable
 
 ### คำถามที่ 1: ฉันสามารถพิมพ์หน้าเฉพาะของเอกสารโดยใช้ Aspose.Words สำหรับ Java ได้หรือไม่
 
- ใช่ คุณสามารถระบุช่วงหน้าเมื่อพิมพ์เอกสารได้ ในตัวอย่างโค้ด เราใช้`attributes.add(new PageRanges(1, doc.getPageCount()))` เพื่อพิมพ์หน้าทั้งหมด คุณสามารถปรับช่วงหน้าได้ตามต้องการ
+ ใช่ คุณสามารถระบุช่วงหน้าเมื่อพิมพ์เอกสารได้ ในตัวอย่างโค้ด เราใช้`attributes.add(new PageRanges(1, doc.getPageCount()))`เพื่อพิมพ์หน้าทั้งหมด คุณสามารถปรับช่วงหน้าได้ตามต้องการ
 
 ### คำถามที่ 2: Aspose.Words สำหรับ Java เหมาะสำหรับการพิมพ์แบบแบตช์หรือไม่
 

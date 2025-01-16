@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Informationen zu MoveToBookmark
 
-Der`MoveToBookmark`Mit dieser Methode können Sie zu einem bestimmten Lesezeichen in Ihrem Dokument navigieren. Die Methodensignatur lautet:
+ Der`MoveToBookmark`Mit dieser Methode können Sie zu einem bestimmten Lesezeichen in Ihrem Dokument navigieren. Die Methodensignatur lautet:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

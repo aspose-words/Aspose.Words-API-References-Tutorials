@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Itu`Aspose.Words` namespace berisi kelas inti untuk memanipulasi dokumen Word, sementara`Aspose.Words.Tables` khusus untuk menangani tabel.
+ Itu`Aspose.Words` namespace berisi kelas inti untuk memanipulasi dokumen Word, sementara`Aspose.Words.Tables` khusus untuk menangani tabel.
 
 ## Langkah 1: Siapkan Dokumen Anda
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- Pada langkah ini, Anda menentukan jalur tempat dokumen Anda disimpan dan memuatnya ke dalam`Document` objek. Ganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya tempat dokumen Anda berada.
+ Pada langkah ini, Anda menentukan jalur tempat dokumen Anda disimpan dan memuatnya ke dalam`Document` objek. Ganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat dokumen Anda berada.
 
 ## Langkah 2: Akses Tabel
 
@@ -68,7 +68,7 @@ Sekarang setelah Anda memiliki tabel, Anda dapat menerapkan fungsi penyesuaian o
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-Itu`AutoFit` metode dengan`AutoFitBehavior.AutoFitToWindow` memastikan lebar tabel disesuaikan agar sesuai dengan seluruh lebar halaman.
+ Itu`AutoFit` metode dengan`AutoFitBehavior.AutoFitToWindow` memastikan lebar tabel disesuaikan agar sesuai dengan seluruh lebar halaman.
 
 ## Langkah 4: Simpan Dokumen yang Dimodifikasi
 

@@ -1,6 +1,6 @@
 ---
-title: Aspose.Words for Java を使用した HTML ドキュメントの読み込みと保存
-linktitle: HTMLドキュメントの読み込みと保存
+title: HTML ドキュメントの読み込みと保存
+linktitle: HTML ドキュメントの読み込みと保存
 second_title: Aspose.Words Java ドキュメント処理 API
 description: Aspose.Words for Java を使用して、Java で HTML ドキュメントを読み込み、保存する方法を学びます。シームレスなドキュメント統合のためのコード例を含むステップバイステップ ガイド。
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
 HTMLを`Document`これを Word 文書として保存できます。DOCX 形式で保存してみましょう。
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 このコードは、`Document` Word 文書の一般的な形式である DOCX ファイルとして。
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## 結論

@@ -27,7 +27,7 @@ url: /hi/java/document-loading-and-saving/saving-documents-as-markdown/
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//दो कक्षों वाली तालिका सम्मिलित करें
+// दो कक्षों वाली तालिका सम्मिलित करें
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// तालिका सामग्री संरेखण को स्वचालित पर सेट करें (पहले पैराग्राफ द्वारा निर्धारित)
+//तालिका सामग्री संरेखण को स्वचालित पर सेट करें (पहले पैराग्राफ द्वारा निर्धारित)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## चरण 3: छवियों को संभालना
 
-अपने मार्कडाउन दस्तावेज़ में छवियों को शामिल करने के लिए, आपको उस फ़ोल्डर को निर्दिष्ट करना होगा जहाँ छवियाँ स्थित हैं। Aspose.Words for Java आपको छवियों के फ़ोल्डर को सेट करने की अनुमति देता है`MarkdownSaveOptions`.
+ अपने मार्कडाउन दस्तावेज़ में छवियों को शामिल करने के लिए, आपको उस फ़ोल्डर को निर्दिष्ट करना होगा जहाँ छवियाँ स्थित हैं। Aspose.Words for Java आपको छवियों के फ़ोल्डर को सेट करने की अनुमति देता है`MarkdownSaveOptions`.
 
 छवियाँ फ़ोल्डर सेट करने और दस्तावेज़ को छवियों के साथ सहेजने का तरीका यहां दिया गया है:
 

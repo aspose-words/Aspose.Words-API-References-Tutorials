@@ -90,7 +90,7 @@ Możesz zmienić domyślnie wybrany element, modyfikując trzeci parametr w`Inse
 
 ### Czy mogę dostosować wygląd pola kombi?
 
- Wygląd pól formularza można dostosować za pomocą różnych właściwości i metod w Aspose.Words. Zapoznaj się z[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Wygląd pól formularza można dostosować za pomocą różnych właściwości i metod w Aspose.Words. Zapoznaj się z[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### Czy można wstawiać inne typy pól formularza, na przykład pola tekstowe lub pola wyboru?
 

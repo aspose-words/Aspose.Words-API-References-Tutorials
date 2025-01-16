@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2단계: 새 문서 만들기
 
-새로운 것을 만드세요`Document` Word 문서의 기반이 될 개체입니다.
+ 새로운 것을 만드세요`Document` Word 문서의 기반이 될 개체입니다.
 
 ```csharp
 Document doc = new Document();

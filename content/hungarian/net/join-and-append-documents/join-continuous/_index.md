@@ -38,7 +38,7 @@ Először is be kell állítanunk a könyvtárat, ahol a dokumentumokat tárolju
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Cserélje ki`"YOUR DOCUMENT DIRECTORY"` azzal a tényleges elérési úttal, ahol a dokumentumokat tárolják.
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentumokat tárolják.
 
 ## 2. lépés: Töltse be a forrás- és céldokumentumot
 

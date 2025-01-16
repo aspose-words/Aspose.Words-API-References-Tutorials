@@ -81,7 +81,7 @@ document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 
 ## Következtetés
 
-És megvan! A betűk kiemelésének beállítása Word-dokumentumban az Aspose.Words for .NET használatával ilyen egyszerű. Csak néhány sornyi kóddal kiemelheti a szöveget, és professzionális hatást varázsolhat dokumentumaiba. Ne habozzon kísérletezni a különböző hangsúlyjelekkel és stílusokkal, hogy megfeleljen igényeinek.
+És megvan! A betűtípus-kiemelések beállítása Word-dokumentumban az Aspose.Words for .NET használatával ilyen egyszerű. Csak néhány sornyi kóddal kiemelheti a szöveget, és professzionális hatást varázsolhat dokumentumaiba. Ne habozzon kísérletezni a különböző hangsúlyjelekkel és stílusokkal, hogy megfeleljen igényeinek.
 
 ## GYIK
 

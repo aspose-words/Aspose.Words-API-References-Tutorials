@@ -49,7 +49,7 @@ doc.print("printerName");
 
 ```java
 // Сконвертировать документ в PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Вы можете заменить`SaveFormat.PDF` с желаемым форматом для рендеринга.

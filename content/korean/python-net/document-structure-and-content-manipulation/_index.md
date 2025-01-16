@@ -40,8 +40,6 @@ Aspose.Words for Python을 사용하여 Word 문서에서 주석 기능을 활�
 Aspose.Words for Python을 사용하여 Word 문서에서 필드와 데이터를 처리하는 방법을 알아보세요. 동적 콘텐츠, 자동화 등에 대한 코드 예제가 있는 단계별 가이드입니다. 
 ### [Word 문서의 글꼴 및 텍스트 스타일 이해](./document-fonts/)
 Word 문서에서 글꼴과 텍스트 스타일링의 세계를 탐험하세요. Aspose.Words for Python을 사용하여 가독성과 시각적 매력을 향상시키는 방법을 알아보세요. 단계별 예제가 있는 포괄적인 가이드입니다.
-### [Word 문서에서 각주와 미주 탐색](./document-footnotes-endnotes/)
-Aspose.Words for Python을 사용하여 Word 문서에서 각주와 미주를 효과적으로 사용하는 방법을 알아보세요. 이러한 요소를 프로그래밍 방식으로 추가, 사용자 지정 및 관리하는 방법을 알아보세요. 
 ### [Word 문서에서 폼 필드 및 데이터 캡처 마스터링](./document-form-fields/)
 Aspose.Words for Python을 사용하여 Word 문서에서 양식 필드를 만들고 관리하는 기술을 마스터하세요. 데이터를 효율적으로 수집하고 사용자 참여를 강화하는 방법을 배우세요. 
 ### [Word 문서에서 머리글 및 바닥글 조작](./document-headers-footers/)
@@ -52,8 +50,6 @@ Aspose.Words for Python을 사용하여 Word 문서에서 하이픈과 텍스트
 Aspose.Words Python API를 사용하여 Word 문서에서 목록을 만들고 관리하는 방법을 알아보세요. 목록 서식 지정, 사용자 지정, 중첩 등에 대한 소스 코드가 포함된 단계별 가이드입니다. 
 ### [Word 문서에서 마크다운 포맷 활용](./document-markdown/)
 Aspose.Words for Python을 사용하여 Markdown 서식을 Word 문서에 통합하는 방법을 알아보세요. 동적이고 시각적으로 매력적인 콘텐츠 생성을 위한 코드 예제가 포함된 단계별 가이드입니다. 
-### [문서 노드 이해 및 탐색](./document-nodes/)
-Aspose.Words for Python을 사용하여 Word 문서를 조작하는 방법을 배우세요. 이 단계별 가이드는 로딩, 서식 지정, 표, 이미지 등을 다룹니다. 오늘 문서 처리 기술을 향상시키세요!
 ### [Word 문서에 OLE 개체 및 ActiveX 컨트롤 포함](./document-ole-objects-active-x/)
  Aspose.Words for Python을 사용하여 Word 문서에 OLE 개체와 ActiveX 컨트롤을 임베드하는 방법을 알아보세요. 대화형 및 동적 문서를 매끄럽게 만듭니다.
 ### [Word 문서에서 문단 및 텍스트 서식 지정](./document-paragraphs/)
@@ -65,4 +61,4 @@ Aspose.Words for Python으로 문서 섹션과 레이아웃을 관리하는 방�
 ### [Word 문서의 텍스트 상자를 사용하여 시각적 콘텐츠 강화](./document-textboxes/)
 Aspose.Words Python을 사용하여 문서 비주얼을 향상시키세요! Word 문서에서 텍스트 상자를 만들고 사용자 지정하는 방법을 단계별로 알아보세요. 매력적인 문서를 위해 콘텐츠 레이아웃, 서식 및 스타일을 향상시키세요.
 ### [Word 문서에서 VBA 매크로를 사용하여 고급 자동화 잠금 해제](./document-vba-macros/)
-Aspose.Words Python API와 VBA 매크로를 사용하여 Word 문서에서 고급 자동화를 잠금 해제하세요. 소스 코드와 FAQ로 단계별로 학습하세요. 지금 생산성을 향상하세요. 액세스[링크].
+ Aspose.Words Python API와 VBA 매크로를 사용하여 Word 문서에서 고급 자동화를 잠금 해제하세요. 소스 코드와 FAQ로 단계별로 학습하세요. 지금 생산성을 향상하세요. 액세스[링크].

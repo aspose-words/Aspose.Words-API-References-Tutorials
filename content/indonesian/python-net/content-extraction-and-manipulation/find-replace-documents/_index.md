@@ -18,7 +18,7 @@ Sebelum kita menyelami teknik lanjutan, pastikan Anda memiliki prasyarat berikut
 
 1.  Instalasi Python: Pastikan Python telah terinstal di sistem Anda. Anda dapat mengunduhnya dari[Di Sini](https://www.python.org/downloads/).
 
-2. Aspose.Words untuk Python: Anda perlu menginstal Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/).
+2.  Aspose.Words untuk Python: Anda perlu menginstal Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/).
 
 3. Persiapan Dokumen: Siapkan dokumen Word yang ingin Anda lakukan operasi temukan dan ganti.
 
@@ -118,4 +118,4 @@ Ya, Anda dapat menggunakan karakter pengganti dan ekspresi reguler untuk melakuk
 
 ### Bisakah saya mengganti teks sambil melacak perubahan yang dibuat?
 
- Ya, Anda dapat melacak perubahan dengan menggunakan`revision` Fitur Aspose.Words. Fitur ini memungkinkan Anda untuk melacak semua modifikasi yang dilakukan pada dokumen.
+ Ya, Anda dapat melacak perubahan dengan menggunakan`revision`Fitur Aspose.Words. Fitur ini memungkinkan Anda untuk melacak semua modifikasi yang dilakukan pada dokumen.

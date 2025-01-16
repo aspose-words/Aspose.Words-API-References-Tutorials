@@ -15,7 +15,7 @@ Im heutigen digitalen Zeitalter ist die Verwaltung der Dokumentgröße sowohl f�
 
 Bevor Sie mit dem Lernprogramm beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-1.  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Sie können es herunterladen von der[Aspose-Website](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Sie können es herunterladen von der[Aspose-Website](https://releases.aspose.com/words/net/).
 
 2. Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung helfen Ihnen, die in diesem Tutorial bereitgestellten Codebeispiele zu verstehen.
 

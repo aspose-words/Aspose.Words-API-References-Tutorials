@@ -15,7 +15,7 @@ Ahoj, kolegové nadšenci do kódování! Přemýšleli jste někdy o tom, jak v
 
 Než se ponoříme do podrobného průvodce, ujistěte se, že máme vše, co potřebujeme. Zde je rychlý kontrolní seznam:
 
-1. Aspose.Words for .NET Library: Pokud jste tak dosud neučinili, budete si muset stáhnout knihovnu Aspose.Words for .NET. Můžete to získat[zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Pokud jste tak dosud neučinili, budete si muset stáhnout knihovnu Aspose.Words for .NET. Můžete to získat[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Ujistěte se, že máte nastavené vývojové prostředí, jako je Visual Studio.
 3. .NET Framework: Ujistěte se, že máte na svém počítači nainstalovaný .NET Framework.
 4. Základní znalost C#: Malá znalost C# bude dlouhá cesta.
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Krok 3: Inicializace DocumentBuilderu
 
- vložení HTML budeme potřebovat pomoc`DocumentBuilder` třída. Tato praktická třída usnadňuje přidávání obsahu do našeho dokumentu.
+ K vložení HTML budeme potřebovat pomoc`DocumentBuilder` třída. Tato praktická třída usnadňuje přidávání obsahu do našeho dokumentu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -88,7 +88,7 @@ A tady to máte! Právě jste vložili HTML do dokumentu aplikace Word pomocí A
 
 Vkládání HTML do dokumentu aplikace Word nebylo nikdy jednodušší, že? S Aspose.Words for .NET můžete plynule propojit sílu HTML s všestranností dokumentů aplikace Word. Ať už automatizujete generování sestav nebo vytváříte krásně formátované dokumenty, tento nástroj je vaším řešením.
 
-Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte se podívat na[dokumentace](https://reference.aspose.com/words/net/), [podpůrná fóra](https://forum.aspose.com/c/words/8) nebo si pořiďte a[dočasná licence](https://purchase.aspose.com/temporary-license/) odemknout plný potenciál Aspose.Words pro .NET.
+ Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte se podívat na[dokumentace](https://reference.aspose.com/words/net/), [podpůrná fóra](https://forum.aspose.com/c/words/8) nebo si pořiďte a[dočasná licence](https://purchase.aspose.com/temporary-license/) odemknout plný potenciál Aspose.Words pro .NET.
 
 Šťastné kódování!
 
@@ -107,4 +107,4 @@ Ano, jakmile je HTML vložen, můžete dále manipulovat s dokumentem pomocí r�
  Můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/) nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro plné funkce.
 
 ### Kde najdu další návody a příklady?  
-The[dokumentace](https://reference.aspose.com/words/net/) a[podpůrná fóra](https://forum.aspose.com/c/words/8)jsou skvělými místy, kde začít s podrobnějšími průvodci a podporou komunity.
+ The[dokumentace](https://reference.aspose.com/words/net/) a[podpůrná fóra](https://forum.aspose.com/c/words/8) jsou skvělými místy, kde začít s podrobnějšími průvodci a podporou komunity.

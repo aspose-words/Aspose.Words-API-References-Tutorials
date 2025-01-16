@@ -44,10 +44,7 @@ for (Revision revision : doc.getRevisions()) {
 
 ```java
 // Принять все изменения
-doc.acceptAllRevisions();
-
-// Принять определенную ревизию по индексу
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Отклонение изменений
@@ -56,10 +53,7 @@ doc.acceptRevision(0);
 
 ```java
 // Отклонить все изменения
-doc.rejectAllRevisions();
-
-// Отклонить конкретную ревизию по индексу
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Сохранение документа

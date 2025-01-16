@@ -54,7 +54,7 @@ doc.save("output.html", saveOptions);
 
 ```java
 // Код Java для сохранения документа в виде изображения
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Установите разрешение (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

@@ -16,10 +16,10 @@ Les révisions de documents impliquent le suivi des modifications apportées à 
 
 ## Configuration d'Aspose.Words pour Python
 
- Avant de commencer, assurez-vous que vous avez installé Aspose.Words pour Python. Vous pouvez le télécharger à partir de[ici](https://releases.aspose.com/words/python/). Une fois installé, vous pouvez importer les modules nécessaires dans votre script Python pour commencer.
+Avant de commencer, assurez-vous que vous avez installé Aspose.Words pour Python. Vous pouvez le télécharger à partir de[ici](https://releases.aspose.com/words/python/). Une fois installé, vous pouvez importer les modules nécessaires dans votre script Python pour commencer.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Chargement et affichage d'un document
@@ -27,7 +27,7 @@ import asposewords
 Pour travailler avec un document, vous devez d'abord le charger dans votre application Python. Utilisez l'extrait de code suivant pour charger un document et afficher son contenu :
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 Lorsque des modifications sont apportées au document, Aspose.Words peut les suivre automatiquement en tant que révisions. Par exemple, si nous voulons remplacer un mot spécifique, nous pouvons le faire tout en gardant une trace de la modification :
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words vous permet de comparer deux documents pour visualiser les différences entre eux :
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 Les collaborateurs peuvent ajouter des commentaires et des annotations à un document. Vous pouvez gérer ces éléments par programmation :
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 Vous pouvez personnaliser la manière dont les révisions apparaissent dans le document, par exemple en modifiant la couleur du texte inséré et supprimé :
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Sauvegarde et partage de documents
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 Partagez le document final avec vos collaborateurs pour obtenir des commentaires supplémentaires.
-
-## Conseils pour une collaboration efficace
-
-1. Étiquetez clairement les révisions avec des commentaires significatifs.
-2. Communiquer les directives de révision à tous les collaborateurs.
-3. Révisez et acceptez/rejetez régulièrement les révisions.
-4. Utilisez la fonction de comparaison d'Aspose.Words pour une analyse complète des documents.
 
 ## Conclusion
 

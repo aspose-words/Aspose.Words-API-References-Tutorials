@@ -69,7 +69,7 @@ Console.Write("\nGets the actual bounds of the shape in points: ");
 Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
-Itu`GetShapeRenderer` metode menyediakan perender untuk bentuk, dan`BoundsInPoints` memberi kita dimensi yang tepat.
+ Itu`GetShapeRenderer` metode menyediakan perender untuk bentuk, dan`BoundsInPoints` memberi kita dimensi yang tepat.
 
 ## Kesimpulan
 

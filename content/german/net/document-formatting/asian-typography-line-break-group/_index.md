@@ -67,7 +67,7 @@ format.WordWrap = true;
 
 ## Schritt 5: Hängende Interpunktion deaktivieren
 
-Hängende Satzzeichen können manchmal den Textfluss stören, insbesondere bei asiatischer Typografie. Wenn Sie sie deaktivieren, wird Ihr Dokument übersichtlicher.
+Hängende Satzzeichen können manchmal den Textfluss stören, insbesondere in der asiatischen Typografie. Wenn Sie sie deaktivieren, wird Ihr Dokument übersichtlicher.
 
 ```csharp
 format.HangingPunctuation = false;

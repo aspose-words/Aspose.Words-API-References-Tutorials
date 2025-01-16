@@ -1,6 +1,6 @@
 ---
-title: Memuat dan Menyimpan Dokumen HTML dengan Aspose.Words untuk Java
-linktitle: Memuat dan Menyimpan Dokumen HTML dengan
+title: Memuat dan Menyimpan Dokumen HTML
+linktitle: Memuat dan Menyimpan Dokumen HTML
 second_title: API Pemrosesan Dokumen Java Aspose.Words
 description: Pelajari cara memuat dan menyimpan dokumen HTML dalam Java menggunakan Aspose.Words untuk Java. Panduan langkah demi langkah dengan contoh kode untuk integrasi dokumen yang lancar.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Sekarang setelah kita memuat HTML ke dalam`Document`, kita dapat menyimpannya sebagai dokumen Word. Mari kita simpan dalam format DOCX:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Kode ini menyimpan`Document` sebagai berkas DOCX, yang merupakan format umum untuk dokumen Word.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Kesimpulan
@@ -95,4 +95,4 @@ Tentu saja! Aspose.Words adalah solusi tangguh yang digunakan oleh berbagai peru
 
 ### Di mana saya dapat menemukan lebih banyak dokumentasi dan contoh untuk Aspose.Words untuk Java?
 
- Anda dapat menemukan dokumentasi terperinci, contoh kode, dan tutorial di situs web dokumentasi Aspose.Words untuk Java:[Dokumentasi Aspose.Words untuk Java](https://reference.aspose.com/words/java/).
+Anda dapat menemukan dokumentasi terperinci, contoh kode, dan tutorial di situs web dokumentasi Aspose.Words untuk Java:[Dokumentasi Aspose.Words untuk Java](https://reference.aspose.com/words/java/).

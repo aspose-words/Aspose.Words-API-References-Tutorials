@@ -78,7 +78,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
-## Шаг 4: Проверка вывода
+## Шаг 4: Проверьте вывод
 
 И последнее, но не менее важное: всегда полезно проверить вывод. Откройте сохраненный HTML-файл и проверьте, правильно ли применены шрифты с целевой машины.
 

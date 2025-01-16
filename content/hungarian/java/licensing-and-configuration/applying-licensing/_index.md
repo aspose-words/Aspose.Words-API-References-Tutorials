@@ -20,7 +20,7 @@ Az Aspose.Words for Java egy hatékony dokumentumfeldolgozó könyvtár, amely l
 
 ## 3. Fejlesztői környezet beállítása
 
-Kezdésként győződjön meg arról, hogy az Aspose.Words for Java telepítve van a fejlesztői környezetében. Letöltheti a[Aspose letöltési oldal](https://releases.aspose.com/words/java/). A telepítés után elkezdheti a kódolást.
+ Kezdésként győződjön meg arról, hogy az Aspose.Words for Java telepítve van a fejlesztői környezetében. Letöltheti a[Aspose letöltési oldal](https://releases.aspose.com/words/java/). A telepítés után elkezdheti a kódolást.
 
 ## 4. A Licenc alkalmazása
 
@@ -48,7 +48,7 @@ A licenc alkalmazása után alaposan tesztelje az Aspose.Words alkalmazást, hog
 ## Teljes forráskód
 ```java
         License license = new License();
-        //Ez a sor több helyről próbál licencet beállítani a végrehajtható fájlhoz és az Aspose.Words.dll fájlhoz képest.
+        // Ez a sor több helyről próbál licencet beállítani a végrehajtható fájlhoz és az Aspose.Words.dll fájlhoz képest.
         // A további túlterhelést arra is használhatja, hogy licencet töltsön be egy adatfolyamból, ez hasznos,
         // például ha a licenc beágyazott erőforrásként van tárolva.
         try

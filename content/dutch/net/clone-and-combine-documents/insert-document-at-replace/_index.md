@@ -165,7 +165,7 @@ Ja, u kunt de callback-handler aanpassen om meerdere invoegingen te verwerken do
  Absoluut! U kunt een gratis proefversie downloaden van[hier](https://releases.aspose.com/).
 
 ### Hoe krijg ik ondersteuning voor Aspose.Words?
- kunt ondersteuning krijgen door de[Aspose.Words-forum](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen door de[Aspose.Words-forum](https://forum.aspose.com/c/words/8).
 
 ### Kan ik de opmaak van het ingevoegde document behouden?
  Ja, de`NodeImporter` Met de klasse kunt u opgeven hoe opmaak wordt verwerkt bij het importeren van knooppunten van het ene document naar het andere.

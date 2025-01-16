@@ -69,7 +69,7 @@ Manipulering av masterdokumentintervall i Aspose.Words för Java. Lär dig att t
 ### [Använda SDT (Structured Document Tags) i Aspose.Words för Java](./using-structured-document-tags/)
 Lär dig hur du använder Structured Document Tags (SDT) i Aspose.Words för Java med den här omfattande guiden. Skapa, modifiera och bind SDT till anpassade XML-data.
 ### [Använda stilar och teman i Aspose.Words för Java](./using-styles-and-themes/)
-Lär dig hur du förbättrar dokumentformateringen med Aspose.Words för Java. Utforska stilar, teman och mer i den här omfattande guiden med källkodsexempel.
+Lär dig hur du förbättrar dokumentformateringen med Aspose.Words för Java. Utforska stilar, teman och mer i den här omfattande guiden med exempel på källkod.
 ### [Generera innehållsförteckning i Aspose.Words för Java](./generating-table-of-contents/)
 Lär dig hur du genererar och anpassar innehållsförteckningen (TOC) med Aspose.Words för Java. Skapa organiserade och professionella dokument utan ansträngning.
 ### [Skydda dokument i Aspose.Words för Java](./protecting-documents/)
@@ -83,7 +83,7 @@ Lär dig hur du delar upp dokument i HTML-sidor med Aspose.Words för Java. Föl
 ### [Lägga till innehåll med DocumentBuilder i Aspose.Words för Java](./adding-content-using-documentbuilder/)
 Master Document Creation med Aspose.Words för Java. En steg-för-steg-guide för att lägga till text, tabeller, bilder och mer. Skapa fantastiska Word-dokument utan ansträngning.
 ### [Klona och kombinera dokument i Aspose.Words för Java](./cloning-and-combining-documents/)
-Lär dig att klona och kombinera dokument i Aspose.Words för Java. Steg-för-steg guide med exempel på källkod.
+Lär dig att klona och kombinera dokument i Aspose.Words för Java. Steg-för-steg-guide med exempel på källkod.
 ### [Jämföra dokument i Aspose.Words för Java](./comparing-documents/)
 Lär dig hur du jämför dokument i Aspose.Words för Java, ett kraftfullt Java-bibliotek för effektiv dokumentanalys. 
 ### [Formatera dokument i Aspose.Words för Java](./formatting-documents/)

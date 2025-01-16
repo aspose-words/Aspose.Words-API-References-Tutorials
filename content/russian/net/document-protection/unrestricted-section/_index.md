@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`Document` класс инициализирует новый документ, а`DocumentBuilder` помогает нам легко добавлять контент в наш документ.
+ The`Document` класс инициализирует новый документ, а`DocumentBuilder` помогает нам легко добавлять контент в наш документ.
 
 ## Шаг 2: Вставьте разделы
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-The`InsertBreak` метод вставляет непрерывный разрыв раздела, позволяя нам иметь разные настройки для каждого раздела.
+ The`InsertBreak` метод вставляет непрерывный разрыв раздела, позволяя нам иметь разные настройки для каждого раздела.
 
 ## Шаг 3: Защитите документ
 

@@ -117,7 +117,7 @@ Und da haben Sie es! Indem Sie diese Schritte befolgen, haben Sie Ihrer HTML-Aus
  Ja, Sie können das Präfix bei jedem Speichern eines Dokuments anpassen, indem Sie das`CssClassNamePrefix` Eigentum.
 
 ### Unterstützt diese Methode Inline-CSS?
-Der`CssClassNamePrefix`-Eigenschaft funktioniert mit externem CSS. Für Inline-CSS benötigen Sie einen anderen Ansatz.
+ Der`CssClassNamePrefix`-Eigenschaft funktioniert mit externem CSS. Für Inline-CSS benötigen Sie einen anderen Ansatz.
 
 ### Wie kann ich andere HTML-Speicheroptionen einbinden?
  Sie können verschiedene Eigenschaften von`HtmlSaveOptions` um Ihre HTML-Ausgabe anzupassen. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.

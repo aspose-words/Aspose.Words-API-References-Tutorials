@@ -2,7 +2,7 @@
 title: Insertar hipervínculo en un documento de Word
 linktitle: Insertar hipervínculo en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a insertar hipervínculos en documentos de Word con Aspose.Words para .NET con nuestra guía paso a paso. Perfecta para automatizar las tareas de creación de documentos.
+description: Aprenda a insertar hipervínculos en documentos de Word con Aspose.Words para .NET con nuestra guía paso a paso. Perfecta para automatizar sus tareas de creación de documentos.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-hyperlink/
@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Paso 5: Insertar el hipervínculo
 
- Ahora, insertamos el hipervínculo utilizando el`InsertHyperlink`método. Este método toma tres parámetros: el texto que se muestra, la URL y un valor booleano que indica si el enlace debe tener formato de hipervínculo.
+ Ahora, insertamos el hipervínculo utilizando el`InsertHyperlink` método. Este método toma tres parámetros: el texto que se muestra, la URL y un valor booleano que indica si el enlace debe tener formato de hipervínculo.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", falso);
@@ -106,7 +106,7 @@ Insertar hipervínculos en un documento de Word con Aspose.Words para .NET es se
 
 ### ¿Puedo insertar varios hipervínculos en un solo documento?
 
- Sí, puedes insertar varios hipervínculos repitiendo el`InsertHyperlink`método para cada enlace.
+ Sí, puedes insertar varios hipervínculos repitiendo el`InsertHyperlink` método para cada enlace.
 
 ### ¿Cómo cambio el color del hipervínculo?
 
@@ -118,7 +118,7 @@ Insertar hipervínculos en un documento de Word con Aspose.Words para .NET es se
 
 ### ¿Qué pasa si la URL no es válida?
 
-El`InsertHyperlink` El método no valida las URL, por lo que es importante asegurarse de que las URL sean correctas antes de insertarlas.
+ El`InsertHyperlink` El método no valida las URL, por lo que es importante asegurarse de que las URL sean correctas antes de insertarlas.
 
 ### ¿Es posible eliminar un hipervínculo después de haberlo insertado?
 

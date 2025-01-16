@@ -38,14 +38,6 @@ doc = aw.Document("document.docx")
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## संपादन अनुमतियों को प्रतिबंधित करना
-
-यह नियंत्रित करने के लिए कि दस्तावेज़ में कौन परिवर्तन कर सकता है, आप संपादन अनुमतियाँ सेट कर सकते हैं:
-
-```python
-protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
-protection.set_editing_groups(["Editors"])
-```
 
 ## दस्तावेज़ सामग्री को एन्क्रिप्ट करना
 
@@ -60,8 +52,10 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 दस्तावेज़ की प्रामाणिकता सुनिश्चित करने के लिए डिजिटल हस्ताक्षर जोड़ें:
 
 ```python
-digital_signature = aw.digital_signatures.DigitalSignature(doc)
-digital_signature.sign("certificate.pfx", "signature_password")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
+			
+aw.digitalsignatures.DigitalSignatureUtil.sign(dst_document_path, dst_document_path, certificate_holder, sign_options)
 ```
 
 ## सुरक्षा के लिए वॉटरमार्किंग
@@ -71,15 +65,6 @@ digital_signature.sign("certificate.pfx", "signature_password")
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
-```
-
-## संवेदनशील जानकारी हटाना
-
-संवेदनशील जानकारी को स्थायी रूप से हटाने के लिए:
-
-```python
-redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
-doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
 ## निष्कर्ष

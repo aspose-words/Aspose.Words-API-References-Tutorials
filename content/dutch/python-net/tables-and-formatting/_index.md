@@ -34,7 +34,7 @@ In deze tutorialserie gaat u op reis om tabellen en opmaak te begrijpen en te ge
 Aan het einde van deze tutorials bezit u de vaardigheden om dynamische en visueel aantrekkelijke tabellen te maken, waarmee u uw documenten verbetert met goed georganiseerde en geformatteerde content. Elke tutorial biedt duidelijke uitleg, praktische voorbeelden en broncodefragmenten om u door elke stap van het proces te leiden.
 
 ## Zelfstudies over tabellen en opmaak
-### [Watermerken maken en opmaken voor een esthetisch document](./manage-document-watermarks/)
+### [Watermerken maken en opmaken voor een esthetische documentweergave](./manage-document-watermarks/)
 Leer hoe u watermerken in documenten kunt maken en formatteren met Aspose.Words voor Python. Stapsgewijze handleiding met broncode voor het toevoegen van tekst- en afbeeldingswatermerken. Verbeter de esthetiek van uw document met deze tutorial.
 ### [Tabellen optimaliseren voor gegevenspresentatie in Word-documenten](./document-tables/)
 Leer hoe u tabellen optimaliseert voor gegevenspresentatie in Word-documenten met Aspose.Words voor Python. Verbeter de leesbaarheid en visuele aantrekkingskracht met stapsgewijze begeleiding en broncodevoorbeelden.

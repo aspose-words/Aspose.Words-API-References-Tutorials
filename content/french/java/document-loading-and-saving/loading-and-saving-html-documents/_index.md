@@ -1,6 +1,6 @@
 ---
-title: Chargement et enregistrement de documents HTML avec Aspose.Words pour Java
-linktitle: Chargement et enregistrement de documents HTML avec
+title: Chargement et enregistrement de documents HTML
+linktitle: Chargement et enregistrement de documents HTML
 second_title: API de traitement de documents Java Aspose.Words
 description: Découvrez comment charger et enregistrer des documents HTML en Java à l'aide d'Aspose.Words pour Java. Guide étape par étape avec des exemples de code pour une intégration transparente des documents.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Maintenant que nous avons chargé le HTML dans un`Document`, nous pouvons l'enregistrer en tant que document Word. Enregistrons-le au format DOCX :
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Ce code enregistre le`Document` sous forme de fichier DOCX, qui est un format courant pour les documents Word.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Conclusion
@@ -87,7 +87,7 @@ Oui, Aspose.Words pour Java est capable de gérer des documents HTML complexes. 
 
 ### Quels autres formats de documents Aspose.Words prend-il en charge ?
 
-Aspose.Words prend en charge une large gamme de formats de documents, notamment DOC, DOCX, RTF, HTML, PDF, etc. Il offre des capacités complètes de traitement de documents pour les applications Java.
+Aspose.Words prend en charge une large gamme de formats de documents, notamment DOC, DOCX, RTF, HTML, PDF, etc. Il offre des fonctionnalités complètes de traitement de documents pour les applications Java.
 
 ### Aspose.Words est-il adapté à la manipulation de documents au niveau de l’entreprise ?
 
@@ -95,4 +95,4 @@ Absolument ! Aspose.Words est une solution robuste utilisée par les entreprises
 
 ### Où puis-je trouver plus de documentation et d'exemples pour Aspose.Words pour Java ?
 
- Vous pouvez trouver une documentation détaillée, des exemples de code et des tutoriels sur le site Web de documentation Aspose.Words pour Java :[Documentation Aspose.Words pour Java](https://reference.aspose.com/words/java/).
+Vous pouvez trouver une documentation détaillée, des exemples de code et des tutoriels sur le site Web de documentation Aspose.Words pour Java :[Documentation Aspose.Words pour Java](https://reference.aspose.com/words/java/).

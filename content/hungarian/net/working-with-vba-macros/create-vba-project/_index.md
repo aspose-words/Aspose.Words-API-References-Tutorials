@@ -131,9 +131,9 @@ Az Aspose.Words for .NET egy átfogó könyvtár, amely lehetővé teszi a fejle
  Igen, kipróbálhatja az Aspose.Words-t a[ingyenes próbaverzió](https://releases.aspose.com/) vagy kap a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
 
 ### Hogyan adhatok VBA kódot egy Word dokumentumhoz?  
- VBA-kódot adhat hozzá az a`VbaModule` és annak beállítása`SourceCode` tulajdonságot a makrókóddal. Ezután adja hozzá a modult a sajátjához`VbaProject`.
+ VBA-kódot hozzáadhat a`VbaModule` és annak beállítása`SourceCode` tulajdonság a makrókóddal. Ezután adja hozzá a modult a sajátjához`VbaProject`.
 
-### Milyen típusú VBA modulokat hozhatok létre?  
+### Milyen típusú VBA-modulokat hozhatok létre?  
 A VBA-modulok különböző típusúak lehetnek, például eljárási modulok (függvényekhez és alegységekhez), osztálymodulok és felhasználói űrlapok. Ebben az oktatóanyagban létrehoztunk egy eljárási modult.
 
 ### Hol vásárolhatok Aspose.Words for .NET fájlt?  

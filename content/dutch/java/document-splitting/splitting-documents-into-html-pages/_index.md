@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-Deze code splitst het document op basis van pagina-einden en slaat elke pagina op in de`pages` lijst.
+ Deze code splitst het document op basis van pagina-einden en slaat elke pagina op in de`pages` lijst.
 
 ## Opslaan als HTML
 

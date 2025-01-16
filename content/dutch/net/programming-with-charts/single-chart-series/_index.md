@@ -112,7 +112,7 @@ En daar heb je het! Je hebt succesvol een enkele grafiekserie aangepast in een W
 Aspose.Words voor .NET is een krachtige bibliotheek waarmee u programmatisch Word-documenten kunt maken, bewerken, converteren en manipuleren.
 
 ### Kan ik Aspose.Words gratis gebruiken?
- Ja, je kunt beginnen met een[gratis proefperiode](https://releases.aspose.com/).
+Ja, je kunt beginnen met een[gratis proefperiode](https://releases.aspose.com/).
 
 ### Hoe krijg ik ondersteuning voor Aspose.Words?
  U kunt ondersteuning krijgen van de Aspose-community op hun[forum](https://forum.aspose.com/c/words/8).

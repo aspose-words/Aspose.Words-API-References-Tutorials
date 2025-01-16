@@ -14,7 +14,7 @@ url: /th/java/document-conversion-and-export/using-document-shapes/
 
 ## เริ่มต้นใช้งานรูปร่างเอกสาร
 
-ก่อนที่เราจะเริ่มต้นเขียนโค้ด เรามาตั้งค่าสภาพแวดล้อมกันก่อน ตรวจสอบให้แน่ใจว่าคุณได้รวม Aspose.Words สำหรับ Java ไว้ในโปรเจ็กต์ของคุณแล้ว หากคุณยังไม่ได้ทำ คุณสามารถดาวน์โหลดได้จากเว็บไซต์ของ Aspose[ดาวน์โหลด Aspose.Words สำหรับ Java](https://releases.aspose.com/words/java/)
+ ก่อนที่เราจะเริ่มต้นเขียนโค้ด เรามาตั้งค่าสภาพแวดล้อมกันก่อน ตรวจสอบให้แน่ใจว่าคุณได้รวม Aspose.Words สำหรับ Java ไว้ในโปรเจ็กต์ของคุณแล้ว หากคุณยังไม่ได้ทำ คุณสามารถดาวน์โหลดได้จากเว็บไซต์ของ Aspose[ดาวน์โหลด Aspose.Words สำหรับ Java](https://releases.aspose.com/words/java/)
 
 ## การเพิ่มรูปร่างลงในเอกสาร
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

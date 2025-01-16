@@ -87,7 +87,7 @@ Belge üstbilgilerini ve altbilgilerini biçimlendirirken kusursuz bir deneyim s
 
 ### Belirli bölümlerden üstbilgileri veya altbilgileri nasıl kaldırabilirim?
 
-Belirli bölümlerden üstbilgileri veya altbilgileri kaldırmak için şuraya erişebilirsiniz:`HeaderFooter` nesneleri ve içeriklerini null olarak ayarlama. Örneğin:
+ Belirli bölümlerden üstbilgileri veya altbilgileri kaldırmak için şuraya erişebilirsiniz:`HeaderFooter` nesneleri ve içeriklerini null olarak ayarlama. Örneğin:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Belge başlıkları gibi özel alanları üstbilgilere veya altbilgilere ekleyebilir miyim?
 
-Evet, başlıklara veya altbilgilere özel alanlar ekleyebilirsiniz. Bir`Run` öğesini seçin ve istediğiniz metni sağlayarak başlık veya altbilgi içeriğine ekleyin. Biçimlendirmeyi gerektiği gibi özelleştirin.
+ Evet, başlıklara veya altbilgilere özel alanlar ekleyebilirsiniz. Bir`Run` öğesini seçin ve istediğiniz metni sağlayarak başlık veya altbilgi içeriğine ekleyin. Biçimlendirmeyi gerektiği gibi özelleştirin.
 
 ### Aspose.Words for Java farklı belge formatlarıyla uyumlu mudur?
 

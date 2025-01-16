@@ -68,7 +68,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Krok 4: Zapisywanie zaszyfrowanego pliku PDF
 
-Po skonfigurowaniu szyfrowania nadszedł czas na zapisanie zaszyfrowanego pliku PDF.
+Po skonfigurowaniu szyfrowania czas zapisać zaszyfrowany plik PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", saveOptions);

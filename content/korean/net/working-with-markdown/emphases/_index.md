@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-그만큼`dataDir` 변수는 마크다운 파일을 저장할 디렉토리의 플레이스홀더입니다. "YOUR DOCUMENT DIRECTORY"를 실제 경로로 바꿔야 합니다.
+ 그만큼`dataDir` 변수는 마크다운 파일을 저장할 디렉토리의 플레이스홀더입니다. "YOUR DOCUMENT DIRECTORY"를 실제 경로로 바꿔야 합니다.
 
 ## 2단계: 일반 텍스트 쓰기
 

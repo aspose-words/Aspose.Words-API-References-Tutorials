@@ -10,7 +10,7 @@ url: /pl/net/working-with-section/sections-access-by-index/
 
 ## Wstęp
 
-Hej, czarodzieje dokumentów! 🧙‍♂️ Czy kiedykolwiek znalazłeś się w pułapce dokumentu Word z wieloma sekcjami, z których każda wymagała magicznego dotyku manipulacji? Nie obawiaj się, ponieważ dzisiaj zanurzamy się w czarującym świecie Aspose.Words dla .NET. Nauczymy się, jak uzyskiwać dostęp do sekcji w dokumencie Word i manipulować nimi, używając kilku prostych, ale skutecznych technik. Więc chwyć za różdżkę do kodowania i zaczynajmy!
+Hej, czarodzieje dokumentów! 🧙‍♂️ Czy kiedykolwiek zdarzyło Ci się utknąć w sieci dokumentu Word z wieloma sekcjami, z których każda wymagała magicznego dotyku manipulacji? Nie obawiaj się, ponieważ dziś zanurzamy się w czarującym świecie Aspose.Words dla .NET. Nauczymy się, jak uzyskiwać dostęp do sekcji w dokumencie Word i manipulować nimi, używając kilku prostych, ale skutecznych technik. Więc chwyć za różdżkę do kodowania i zaczynajmy!
 
 ## Wymagania wstępne
 

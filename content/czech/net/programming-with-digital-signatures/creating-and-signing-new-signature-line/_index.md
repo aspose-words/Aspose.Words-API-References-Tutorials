@@ -14,7 +14,7 @@ Ahoj! Takže máte dokument aplikace Word a musíte přidat řádek podpisu a po
 ## Předpoklady
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
-1.  Aspose.Words for .NET - Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET - Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Důrazně doporučujeme vývojové prostředí .NET – Visual Studio.
 3. Dokument k podpisu – vytvořte jednoduchý dokument aplikace Word nebo použijte existující.
 4.  Soubor certifikátu – je potřeba pro digitální podpisy. Můžete použít a`.pfx` soubor.

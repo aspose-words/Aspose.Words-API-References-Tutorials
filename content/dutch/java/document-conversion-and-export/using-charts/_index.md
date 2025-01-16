@@ -66,7 +66,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.InsertSimpleColumnChart.docx
 
 ## As-eigenschappen aanpassen
 
-kunt aseigenschappen aanpassen, zoals het astype wijzigen, maatstreepjes instellen, labels opmaken en meer. Hier is een voorbeeld van het definiëren van XY-aseigenschappen:
+U kunt aseigenschappen aanpassen, zoals het astype wijzigen, maatstreepjes instellen, labels opmaken en meer. Hier is een voorbeeld van het definiëren van XY-aseigenschappen:
 
 ```java
 Document doc = new Document();
@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Wijzig de X-as zodat deze een categorie weergeeft in plaats van een datum.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Gemeten in weergave-eenheden van de Y-as (honderden).
+xAxis.setCrossesAt(3.0); //Gemeten in weergave-eenheden van de Y-as (honderden).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ In deze tutorial hebben we onderzocht hoe u met diagrammen kunt werken met Aspos
 
 ### Hoe kan ik gegevenslabels opmaken met aangepaste getalnotaties?
 
- U kunt gegevenslabels opmaken door toegang te krijgen tot de`DataLabels` eigenschappen van een reeks en het instellen van de gewenste opmaakcode met behulp van`getNumberFormat().setFormatCode()`.
+ kunt gegevenslabels opmaken door toegang te krijgen tot de`DataLabels` eigenschappen van een reeks en het instellen van de gewenste opmaakcode met behulp van`getNumberFormat().setFormatCode()`.
 
 ### Hoe pas ik aseigenschappen in een grafiek aan?
 
@@ -139,7 +139,7 @@ In deze tutorial hebben we onderzocht hoe u met diagrammen kunt werken met Aspos
 
 ### Hoe kan ik andere soorten diagrammen maken, zoals spreidings- of vlakdiagrammen?
 
- kunt verschillende grafiektypen maken door de juiste`ChartType` bij het invoegen van de grafiek met behulp van`builder.insertChart(ChartType.TYPE, width, height)`.
+ U kunt verschillende grafiektypen maken door de juiste`ChartType` bij het invoegen van de grafiek met behulp van`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Hoe kan ik een grafiekas verbergen?
 

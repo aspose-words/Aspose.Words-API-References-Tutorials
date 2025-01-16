@@ -35,15 +35,12 @@ Een van de eenvoudigste manieren om een document te splitsen is door individuele
 Om een document per pagina te splitsen met Aspose.Words voor Java, volgt u deze stappen:
 
 ```java
-// Java-code om een document op te splitsen in pagina's met behulp van Aspose.Words voor Java
-Document doc = new Document("input.docx");
+Document doc = new Document("Your Directory Path" + "Big document.docx");
 int pageCount = doc.getPageCount();
-
-for (int i = 0; i < pageCount; i++) {
-    Document pageDoc = new Document();
-    pageDoc.getFirstSection().getBody().appendChild(
-            doc.getLastSection().getBody().getChildNodes().get(i).clone(true));
-    pageDoc.save("output_page_" + (i + 1) + ".docx");
+for (int page = 0; page < pageCount; page++)
+{
+    Document extractedPage = doc.extractPages(page, 1);
+    extractedPage.save("Your Directory Path" + "SplitDocument.PageByPage_" + (page + 1) + ".docx");
 }
 ```
 
@@ -110,48 +107,28 @@ for (int i = 0; i < doc.getSections().getCount(); i++) {
 }
 ```
 
-## 8. Geavanceerde technieken voor het splitsen van documenten
-
-### 8.1 Specifieke secties opsplitsen in afzonderlijke documenten
-
-In sommige gevallen wilt u wellicht alleen specifieke secties in afzonderlijke documenten splitsen. Met Aspose.Words voor Java kunt u aangepaste criteria definiëren om te bepalen welke secties u wilt splitsen.
-
-## 8.2 Documenten splitsen op basis van aangepaste criteria
-
-U kunt uw eigen logica implementeren om documenten te splitsen op basis van specifieke criteria, zoals inhoud, trefwoorden of metadata. Deze flexibiliteit zorgt ervoor dat u het proces voor het splitsen van documenten kunt aanpassen aan uw unieke vereisten.
-
-## 9. Gesplitste documenten combineren
-
-Aspose.Words voor Java biedt ook functionaliteit om de gesplitste documenten weer samen te voegen tot één document. Deze functie is handig wanneer u afzonderlijke secties moet samenvoegen tot één uniform document.
-
-## 10. Prestatieoverwegingen
-
-Bij het werken met grote documenten is het essentieel om prestatie-optimalisaties te overwegen. Aspose.Words
-
- voor Java is ontworpen om grote bestanden efficiënt te verwerken, maar ontwikkelaars kunnen de prestaties verder verbeteren door best practices te volgen.
-
-## 11. Conclusie
+## Conclusie
 
 In deze gids hebben we onderzocht hoe u documenten eenvoudig en efficiënt kunt splitsen met Aspose.Words voor Java. Door grote documenten op te splitsen in kleinere, beter beheersbare delen, kunnen ontwikkelaars met specifieke secties werken en documentverwerkingstaken vereenvoudigen. Aspose.Words voor Java biedt verschillende methoden om documenten te splitsen op basis van pagina's, paragrafen, koppen en secties, waardoor ontwikkelaars de flexibiliteit hebben om het splitsingsproces aan te passen aan hun specifieke behoeften.
 
-## 12. Veelgestelde vragen
+## Veelgestelde vragen
 
-### V1. Kan Aspose.Words voor Java documenten van verschillende formaten zoals DOC en DOCX splitsen?
+### Kan Aspose.Words voor Java documenten met verschillende formaten, zoals DOC en DOCX, splitsen?
 
 Ja, Aspose.Words voor Java kan documenten van verschillende formaten splitsen, waaronder DOC en DOCX.
 
-### V2. Is Aspose.Words voor Java compatibel met verschillende Java-versies?
+### Is Aspose.Words voor Java compatibel met verschillende Java-versies?
 
 Ja, Aspose.Words voor Java is compatibel met meerdere Java-versies, wat zorgt voor naadloze integratie met uw projecten.
 
-### V3. Kan ik Aspose.Words voor Java gebruiken om wachtwoordbeveiligde documenten te splitsen?
+### Kan ik Aspose.Words voor Java gebruiken om wachtwoordbeveiligde documenten te splitsen?
 
 Ja, Aspose.Words voor Java ondersteunt het splitsen van met een wachtwoord beveiligde documenten, zolang u het juiste wachtwoord opgeeft.
 
-### V4. Hoe kan ik aan de slag met Aspose.Words voor Java als ik nieuw ben in de bibliotheek?
+### Hoe kan ik aan de slag met Aspose.Words voor Java als ik nieuw ben in de bibliotheek?
 
  U kunt beginnen met het verkennen van de[Aspose.Words voor Java API-referentie](https://reference.aspose.com/words/java/) en codevoorbeelden geleverd door Aspose.Words voor Java. De documentatie bevat gedetailleerde informatie over de functies van de bibliotheek en hoe u deze effectief kunt gebruiken.
 
-### V5. Is Aspose.Words voor Java geschikt voor documentverwerking op ondernemingsniveau?
+### Is Aspose.Words voor Java geschikt voor documentverwerking op ondernemingsniveau?
 
 Absoluut! Aspose.Words voor Java wordt veel gebruikt in applicaties op ondernemingsniveau voor verschillende documentverwerkingstaken vanwege de robuustheid en uitgebreide functieset.

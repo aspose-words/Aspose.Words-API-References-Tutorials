@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Nu we alles hebben ingesteld, gaan we het proces voor het maken van een eenvoudige tabel in een Word-document verder uitsplitsen.
+Nu we alles hebben ingesteld, gaan we dieper in op het proces voor het maken van een eenvoudige tabel in een Word-document.
 
 ## Stap 1: Stel uw documentenmap in
 

@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // เปลี่ยนแกน X ให้เป็นหมวดหมู่แทนวันที่
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // วัดเป็นหน่วยแสดงผลของแกน Y (ร้อย)
+xAxis.setCrossesAt(3.0); //วัดเป็นหน่วยแสดงผลของแกน Y (ร้อย)
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### ฉันจะจัดรูปแบบป้ายข้อมูลด้วยรูปแบบตัวเลขแบบกำหนดเองได้อย่างไร
 
- คุณสามารถจัดรูปแบบป้ายข้อมูลโดยการเข้าถึง`DataLabels` คุณสมบัติของซีรีส์และการตั้งค่ารหัสรูปแบบที่ต้องการโดยใช้`getNumberFormat().setFormatCode()`.
+คุณสามารถจัดรูปแบบป้ายข้อมูลโดยการเข้าถึง`DataLabels` คุณสมบัติของซีรีส์และการตั้งค่ารหัสรูปแบบที่ต้องการโดยใช้`getNumberFormat().setFormatCode()`.
 
 ### ฉันจะปรับแต่งคุณสมบัติแกนในแผนภูมิได้อย่างไร
 
@@ -139,7 +139,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### ฉันจะสร้างแผนภูมิประเภทอื่น เช่น แผนภูมิกระจาย หรือแผนภูมิพื้นที่ ได้อย่างไร
 
-คุณสามารถสร้างแผนภูมิประเภทต่างๆ ได้โดยระบุประเภทที่เหมาะสม`ChartType` เมื่อแทรกแผนภูมิโดยใช้`builder.insertChart(ChartType.TYPE, width, height)`.
+ คุณสามารถสร้างแผนภูมิประเภทต่างๆ ได้โดยระบุประเภทที่เหมาะสม`ChartType` เมื่อแทรกแผนภูมิโดยใช้`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### ฉันจะซ่อนแกนแผนภูมิได้อย่างไร
 

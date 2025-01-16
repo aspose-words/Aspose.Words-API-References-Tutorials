@@ -19,11 +19,7 @@ url: /zh-hant/python-net/document-structure-and-content-manipulation/document-ol
 - Aspose.Words for Python 函式庫已安裝
 - 對Word文檔結構的基本了解
 
-## 嵌入 OLE 對象
-
-OLE 物件可讓您將外部文件（例如電子表格或簡報）無縫整合到 Word 文件中。請依照以下步驟嵌入 OLE 物件：
-
-### 第 1 步：新增所需的庫
+## 第 1 步：新增所需的庫
 
 首先從 Aspose.Words 庫和任何其他依賴項導入必要的模組：
 
@@ -31,7 +27,7 @@ OLE 物件可讓您將外部文件（例如電子表格或簡報）無縫整合�
 import aspose.words as aw
 ```
 
-### 第 2 步：建立 Word 文檔
+## 第 2 步：建立 Word 文檔
 
 使用 Aspose.Words for Python 建立一個新的 Word 文件：
 
@@ -39,42 +35,16 @@ import aspose.words as aw
 doc = aw.Document()
 ```
 
-### 步驟 3：插入 OLE 對象
+## 步驟 3：插入 OLE 對象
 
 現在，您可以將 OLE 物件插入文件中。例如，讓我們嵌入一個 Excel 電子表格：
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## 嵌入 ActiveX 控件
+builder.insert_ole_object("http://www.aspose.com”，“htmlfile”，正確，正確，無）
 
-ActiveX 控制項為您的文件帶來互動性，讓使用者與嵌入內容互動。請依照下列步驟嵌入 ActiveX 控制項：
-
-### 第 1 步：新增所需的庫
-
-就像 OLE 物件一樣，首先導入必要的模組：
-
-```python
-import aspose.words as aw
-```
-
-### 第 2 步：建立 Word 文檔
-
-建立一個新的Word文件：
-
-```python
-doc = aw.Document()
-```
-
-### 步驟 3：插入 ActiveX 控件
-
-假設您想嵌入多媒體播放器。您可以這樣做：
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## 增強互動性和功能性

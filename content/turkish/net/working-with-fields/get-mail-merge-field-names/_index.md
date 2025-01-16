@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-The`Aspose.Words` namespace, Word belgelerini yönetmek için gereken tüm sınıflara ve yöntemlere erişmenizi sağlarken`System` konsol çıktısı gibi temel işlevler için kullanılır.
+ The`Aspose.Words` namespace, Word belgelerini yönetmek için gereken tüm sınıflara ve yöntemlere erişmenizi sağlarken`System` konsol çıktısı gibi temel işlevler için kullanılır.
 
 Posta birleştirme alan adlarını çıkarma sürecini açık ve adım adım bir kılavuza dönüştürelim.
 
@@ -73,7 +73,7 @@ Başlık: Posta Birleştirme Alan Adlarını Çıkar
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-The`GetFieldNames()`yöntemi, her biri belgede bulunan bir posta birleştirme alanı adını temsil eden bir dizi dize döndürür. Bunlar, Word belgenizde göreceğiniz yer tutuculardır.
+ The`GetFieldNames()`yöntemi, her biri belgede bulunan bir posta birleştirme alanı adını temsil eden bir dizi dize döndürür. Bunlar, Word belgenizde göreceğiniz yer tutuculardır.
 
 ## Adım 4: Birleştirme Alanlarının Sayısını Göster
 

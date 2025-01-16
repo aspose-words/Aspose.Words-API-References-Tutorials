@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## चरण 3: फ़ॉन्ट सेटिंग कॉन्फ़िगर करें
 
-एक नया बनाएँ`FontSettings` ऑब्जेक्ट और XML फ़ाइल से फ़ॉन्ट फ़ॉलबैक सेटिंग लोड करें। इस XML फ़ाइल में फ़ॉन्ट फ़ॉलबैक के नियम शामिल हैं।
+ एक नया बनाएँ`FontSettings` ऑब्जेक्ट और XML फ़ाइल से फ़ॉन्ट फ़ॉलबैक सेटिंग लोड करें। इस XML फ़ाइल में फ़ॉन्ट फ़ॉलबैक के नियम शामिल हैं।
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

@@ -99,7 +99,7 @@ field.Update();
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-此行将保存已插入 ASK 字段的文档。现在，您的文档已配备动态 ASK 字段！
+此行保存了插入了 ASK 字段的文档。现在，您的文档已配备动态 ASK 字段！
 
 ## 结论
 

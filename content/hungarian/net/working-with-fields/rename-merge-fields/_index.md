@@ -31,7 +31,7 @@ using Aspose.Words.Fields;
 
 Rendben, most, hogy az alapokat kivettük az útból, térjünk rá a mókás részre! Kövesse ezeket a lépéseket a Word-dokumentumok egyesítési mezőinek átnevezéséhez.
 
-## 1. lépés: Hozd létre a dokumentumot, és szúrj be egyesítési mezőket
+## 1. lépés: Hozza létre a dokumentumot, és szúrjon be egyesítési mezőket
 
 A kezdéshez létre kell hoznunk egy új dokumentumot, és be kell szúrnunk néhány összevonási mezőt. Ez lesz a kiindulópontunk.
 

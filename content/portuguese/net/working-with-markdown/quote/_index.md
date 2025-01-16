@@ -44,7 +44,7 @@ Esses namespaces dão acesso às classes e métodos que você precisará para ma
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-O`DocumentBuilder` class é seu portal para construir e personalizar seu documento. Pense nele como sua varinha mágica para criar documentos do Word!
+ O`DocumentBuilder` class é seu portal para construir e personalizar seu documento. Pense nele como sua varinha mágica para criar documentos do Word!
 
 ## Etapa 2: Adicionar um Blockquote
 

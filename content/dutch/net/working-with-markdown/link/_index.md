@@ -45,7 +45,7 @@ Laten we het proces van het invoegen van hyperlinks in een Word-document met Asp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-De`DocumentBuilder` class is een veelzijdig hulpmiddel waarmee u het document kunt samenstellen en wijzigen.
+ De`DocumentBuilder` class is een veelzijdig hulpmiddel waarmee u het document kunt samenstellen en wijzigen.
 
 ## Stap 2: Hyperlink invoegen
 

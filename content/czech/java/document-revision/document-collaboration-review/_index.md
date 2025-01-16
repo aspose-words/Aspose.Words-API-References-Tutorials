@@ -70,7 +70,7 @@ Spolupráce a kontrola dokumentů jsou kritickými aspekty moderní správy doku
 
 ### Mohu sledovat změny v dokumentech aplikace Word pomocí Aspose.Words for Java?
 
-Ano, Aspose.Words for Java umožňuje sledovat změny v dokumentech aplikace Word. Můžete použít`startTrackRevisions` metoda umožňující sledování změn.
+ Ano, Aspose.Words for Java umožňuje sledovat změny v dokumentech aplikace Word. Můžete použít`startTrackRevisions` metoda umožňující sledování změn.
 
 ### Jak mohu zkontrolovat změny provedené v dokumentu?
 

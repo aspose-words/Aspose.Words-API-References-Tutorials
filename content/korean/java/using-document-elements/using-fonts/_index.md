@@ -71,7 +71,7 @@ public class FontFormattingDemo {
 
 축하합니다! Aspose.Words for Java에서 글꼴을 사용하는 방법을 배웠습니다. 이 지식을 통해 특정 요구 사항에 맞게 아름답게 포맷된 문서를 만들 수 있습니다.
 
- 아직 그렇지 않은 경우,[Aspose.Words for Java 다운로드](https://releases.aspose.com/words/java/) 지금 당장 문서 처리 능력을 향상시켜 보세요.
+ 아직 하지 않았다면,[Aspose.Words for Java 다운로드](https://releases.aspose.com/words/java/) 지금 당장 문서 처리 능력을 향상시켜 보세요.
 
  질문이나 도움이 필요하면 언제든지 문의하세요.[Aspose.Words 커뮤니티 포럼](https://forum.aspose.com/).
 

@@ -112,7 +112,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 Sí, puedes iterar a través de varios marcadores y utilizar el mismo método para copiar cada uno.
 
 ### ¿Qué pasa si no se encuentra el marcador?
-El`Range.Bookmarks` La propiedad regresará`null`, así que asegúrese de manejar este caso para evitar excepciones.
+ El`Range.Bookmarks` La propiedad regresará`null`, así que asegúrese de manejar este caso para evitar excepciones.
 
 ### ¿Puedo conservar el formato del marcador original?
  ¡Por supuesto! Utilizando`ImportFormatMode.KeepSourceFormatting` garantiza que se conserve el formato original.

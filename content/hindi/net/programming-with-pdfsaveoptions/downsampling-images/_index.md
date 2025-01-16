@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-इस चरण में, हम निर्दिष्ट निर्देशिका से Word दस्तावेज़ लोड कर रहे हैं।`"YOUR DOCUMENT DIRECTORY"`उस वास्तविक पथ के साथ जहां आपका दस्तावेज़ स्थित है.
+इस चरण में, हम निर्दिष्ट निर्देशिका से Word दस्तावेज़ लोड कर रहे हैं।`"YOUR DOCUMENT DIRECTORY"` उस वास्तविक पथ के साथ जहां आपका दस्तावेज़ स्थित है.
 
 ## चरण 2: डाउनसैंपलिंग विकल्प कॉन्फ़िगर करें
 

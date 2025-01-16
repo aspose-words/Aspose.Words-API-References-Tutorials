@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## Tekst vervangen
-
-Soms wil je bepaalde tekst vervangen door nieuwe content. Hier is een voorbeeld van hoe je dat doet:
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## Afbeeldingen verwijderen
 
 Als u afbeeldingen uit het document wilt verwijderen, kunt u een vergelijkbare aanpak gebruiken. Identificeer eerst de afbeeldingen en verwijder ze vervolgens:
@@ -86,7 +73,7 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 
 ## Secties verwijderen
 
-U kunt hele secties uit een document verwijderen op de volgende manier:
+kunt hele secties uit een document verwijderen op de volgende manier:
 
 ```python
 for section in doc.sections:
@@ -94,25 +81,9 @@ for section in doc.sections:
         doc.remove_child(section)
 ```
 
-## Zoeken en vervangen met Regex
-
-Reguliere expressies bieden een krachtige manier om inhoud te vinden en te vervangen:
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
-```
-
 ## Specifieke inhoud extraheren
 
-Soms moet u specifieke inhoud uit een document extraheren:
+Soms moet u specifieke inhoud uit een document halen:
 
 ```python
 target_section = doc.get_child_nodes(aw.NodeType.PARAGRAPH, True)[5:10]

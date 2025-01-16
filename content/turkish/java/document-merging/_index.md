@@ -34,5 +34,3 @@ Java için Aspose.Words'ü kullanarak belgeleri nasıl birleştireceğinizi ve e
 Java'da Aspose.Words kullanarak belgeleri farklılıklar açısından nasıl karşılaştıracağınızı öğrenin. Adım adım kılavuzumuz doğru belge yönetimini sağlar.
 ### [Belgeleri DocumentBuilder ile Birleştirme](./merging-documents-documentbuilder/)
 Aspose.Words for Java ile Word belgelerini nasıl düzenleyeceğinizi öğrenin. Java'da belgeleri programatik olarak oluşturun, düzenleyin, birleştirin ve dönüştürün.
-### [Belge Bölme ve Çıkarma](./document-splitting-extraction/)
-Aspose.Words for Java kullanarak belgeleri zahmetsizce nasıl böleceğinizi ve çıkaracağınızı öğrenin. Adım adım kılavuzla belge işleme görevlerinizi basitleştirin.

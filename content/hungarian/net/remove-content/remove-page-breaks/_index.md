@@ -2,7 +2,7 @@
 title: Oldaltörések eltávolítása a Word dokumentumból
 linktitle: Távolítsa el az oldaltöréseket
 second_title: Aspose.Words Document Processing API
-description: A lépésenkénti útmutatónkból megtudhatja, hogyan távolíthat el oldaltöréseket egy Word-dokumentumban az Aspose.Words for .NET használatával. Fejlessze dokumentumkezelési készségeit.
+description: A lépésenkénti útmutatónkból megtudhatja, hogyan távolíthat el oldaltöréseket egy Word-dokumentumban az Aspose.Words for .NET használatával. Növelje dokumentumkezelési készségeit.
 type: docs
 weight: 10
 url: /hu/net/remove-content/remove-page-breaks/

@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-A`Aspose.Words` A névtér hozzáférést biztosít a Word dokumentumok kezeléséhez szükséges összes osztályhoz és metódushoz`System` olyan alapvető funkciókhoz használják, mint a konzol kimenet.
+ A`Aspose.Words` A névtér hozzáférést biztosít a Word dokumentumok kezeléséhez szükséges összes osztályhoz és metódushoz`System` olyan alapvető funkciókhoz használják, mint a konzol kimenet.
 
 Bontsuk le a körlevél-mezőnevek kibontásának folyamatát egy világos, lépésenkénti útmutatóban.
 
@@ -69,11 +69,11 @@ Címsor: Körlevél-mezőnevek kibontása
  Most készen áll a dokumentumban található körlevél-mezők nevének lekérésére. Itt ragyog Aspose.Words – annak`MailMerge` osztály egyszerű módot biztosít a mezőnevek lekérésére.
 
 ```csharp
-// Egyesítési mezőnevek lekérése.
+// Az egyesítési mezők neveinek lekérése.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-A`GetFieldNames()`metódus karakterláncok tömbjét adja vissza, amelyek mindegyike a dokumentumban található körlevél-mezőnevet képviseli. Ezek azok a helyőrzők, amelyeket a Word-dokumentumban láthat.
+ A`GetFieldNames()`metódus karakterláncok tömbjét adja vissza, amelyek mindegyike a dokumentumban található körlevél-mezőnevet képviseli. Ezek azok a helyőrzők, amelyeket a Word-dokumentumban láthat.
 
 ## 4. lépés: Jelenítse meg az egyesítési mezők számát
 

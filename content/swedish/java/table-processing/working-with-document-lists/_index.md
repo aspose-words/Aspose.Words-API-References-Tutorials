@@ -38,23 +38,11 @@ Här är ett exempel på ett kodavsnitt för att komma igång:
 // Importera nödvändiga paket
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Initiera ett nytt dokument
-        Document doc = new Document();
-
-        // Skapa en lista
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Lägg till listobjekt
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Spara dokumentet
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Ändra en dokumentlista
@@ -69,21 +57,18 @@ När du har skapat en dokumentlista kan du behöva ändra den genom att lägga t
 Här är ett kodavsnitt för att ändra en dokumentlista:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Ladda ett befintligt dokument
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Gå till listan
-        List list = doc.getLists().get(0);
-
-        // Lägg till ett nytt objekt
-        list.getListItems().add("New Item");
-
-        // Spara det ändrade dokumentet
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Kontrollera om stycket är en del av en lista.
+    if (paragraph.isListItem()) {
+        // Uppdatera det sista liststycket.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Extrahera information från en dokumentlista
@@ -97,23 +82,21 @@ I vissa fall kan du behöva extrahera information från en dokumentlista, som at
 Här är ett kodavsnitt för att extrahera information från en dokumentlista:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Ladda dokumentet
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Gå till listan
-        List list = doc.getLists().get(0);
-
-        // Gå igenom listobjekt och skriv ut dem
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Vanliga frågor (FAQs)
+## Slutsats
+
+I den här omfattande guiden har vi utforskat världen av att arbeta med dokumentlistor med Aspose.Words för Java. Du har lärt dig hur du skapar, ändrar och extraherar information från dokumentlistor, allt med kraften och flexibiliteten hos Aspose.Words för Java. Börja implementera dessa tekniker i dina Java-projekt idag och effektivisera dina dokumentautomatiseringsuppgifter.
+
+
+## FAQ's
 
 ### Hur lägger jag till punktpunkter i en dokumentlista?
  För att lägga till punktpunkter till en dokumentlista, använd lämplig listmall när du skapar listan. Använd till exempel`ListTemplate.BULLET_DEFAULT` i stället för`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ För att konvertera en dokumentlista till PDF, ladda helt enkelt dokumentet med 
 
 ### Stöder Aspose.Words för Java arbete med tabeller i dokument?
 Ja, Aspose.Words för Java ger omfattande stöd för att arbeta med tabeller, så att du enkelt kan skapa, ändra och extrahera tabelldata.
-
-## Slutsats
-
-I den här omfattande guiden har vi utforskat världen av att arbeta med dokumentlistor med Aspose.Words för Java. Du har lärt dig hur du skapar, ändrar och extraherar information från dokumentlistor, allt med kraften och flexibiliteten hos Aspose.Words för Java. Börja implementera dessa tekniker i dina Java-projekt idag och effektivisera dina dokumentautomatiseringsuppgifter.

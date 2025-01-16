@@ -71,7 +71,7 @@ När bokmärket har startat kan vi lägga till allt innehåll vi gillar i det. I
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-De`Writeln` metod lägger till ett nytt stycke med den angivna texten i dokumentet.
+ De`Writeln` metod lägger till ett nytt stycke med den angivna texten i dokumentet.
 
 ## Steg 5: Avsluta bokmärket
 
@@ -81,7 +81,7 @@ När vi har lagt till vårt innehåll måste vi stänga bokmärket. Detta talar 
 builder.EndBookmark("FineBookmark");
 ```
 
-De`EndBookmark` metod slutför bokmärket som vi startade tidigare.
+ De`EndBookmark` metod slutför bokmärket som vi startade tidigare.
 
 ## Steg 6: Spara dokumentet
 

@@ -54,12 +54,13 @@ Pomocí Aspose.Words můžete použít kurzívu na určité části textu. Zde j
 ```python
 # Import the required classes
 from aspose.words import Document, Font, Style
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply italic style
 font = run.font
@@ -76,12 +77,13 @@ Chcete-li zvýraznit text, můžete upravit barvu pozadí běhu. Zde je návod, 
 ```python
 # Import the required classes
 from aspose.words import Document, Color
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply background color
 run.font.highlight_color = Color.YELLOW
@@ -97,15 +99,16 @@ Zarovnání lze nastavit pomocí stylů. Zde je příklad:
 ```python
 # Import the required classes
 from aspose.words import Document, ParagraphAlignment
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set alignment
-paragraph.paragraph_format.alignment = ParagraphAlignment.RIGHT
+paragraph.paragraph_format.alignment = aw.ParagraphAlignment.RIGHT
 
 # Save the modified document
 doc.save("modified_document.docx")
@@ -118,12 +121,13 @@ Použití vhodného řádkování zlepšuje čitelnost. Můžete toho dosáhnout
 ```python
 # Import the required classes
 from aspose.words import Document, LineSpacingRule
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set line spacing
 paragraph.paragraph_format.line_spacing_rule = LineSpacingRule.MULTIPLE
@@ -141,7 +145,7 @@ Aspose.Words pro Python poskytuje širokou škálu možností pro styl písma a 
 
 V oblasti tvorby dokumentů jsou písma a styly textu výkonnými nástroji pro zvýšení vizuální přitažlivosti a efektivní přenos informací. Pochopením základů písem, stylů textu a používáním nástrojů, jako je Aspose.Words pro Python, můžete vytvářet profesionální dokumenty, které zaujmou a udrží pozornost vašeho publika.
 
-## Nejčastější dotazy
+## FAQ
 
 ### Jak změním barvu písma pomocí Aspose.Words pro Python?
 
@@ -153,7 +157,7 @@ Ano, můžete použít více stylů na stejný text odpovídající úpravou vla
 
 ### Je možné upravit mezery mezi znaky?
 
-Ano, Aspose.Words vám umožňuje upravit mezery mezi znaky pomocí`kerning` vlastnictví`Font` třída.
+Ano, Aspose.Words vám umožňuje upravit mezery mezi znaky pomocí`kerning` vlastnictvím`Font` třída.
 
 ### Podporuje Aspose.Words import písem z externích zdrojů?
 

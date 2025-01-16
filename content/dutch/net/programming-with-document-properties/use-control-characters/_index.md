@@ -33,7 +33,7 @@ using Aspose.Words.Replacing;
 
 ### Een nieuw project maken
 
-Start uw Visual Studio en maak een nieuwe C# console-applicatie. Geef het een coole naam, zoals "WordAutomation."
+Start Visual Studio op en maak een nieuwe C# console-applicatie. Geef het een coole naam, zoals "WordAutomation."
 
 ### Installeer Aspose.Words via NuGet
 

@@ -37,13 +37,6 @@ Een van de belangrijkste sterke punten van Aspose.Words voor Java is de mogelijk
 Document doc = new Document("sample.docx");
 ```
 
-### Een PDF-document laden
-
-```java
-// Een PDF-document laden
-Document doc = new Document("sample.pdf");
-```
-
 ## Documenten wijzigen en opslaan
 
 Nadat u een document hebt geladen, kunt u een groot aantal bewerkingen uitvoeren, van het eenvoudig vervangen van tekst tot complexe opmaakwijzigingen.
@@ -71,7 +64,7 @@ Aspose.Words voor Java maakt naadloze conversie tussen verschillende documentfor
 Document doc = new Document("sample.docx");
 
 // Opslaan als PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Omgaan met afbeeldingen en tabellen
@@ -81,7 +74,7 @@ Het opnemen van afbeeldingen en tabellen is een veelvoorkomende vereiste bij het
 ### Een afbeelding toevoegen aan een document
 
 ```java
-// Een document laden
+//Een document laden
 Document doc = new Document("document.docx");
 
 // Een afbeelding invoegen

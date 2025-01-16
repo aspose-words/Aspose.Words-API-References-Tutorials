@@ -60,7 +60,7 @@ Aby byla zajištěna kompatibilita a optimální výkon, musíme optimalizovat d
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 ```
 
- Vysvětlení: Tento řádek volá`OptimizeFor` metoda na`CompatibilityOptions` vlastnictví`doc` objekt, upřesňující`MsWordVersion.Word2016` k optimalizaci dokumentu pro Microsoft Word 2016.
+ Vysvětlení: Tento řádek volá`OptimizeFor` metoda na`CompatibilityOptions` vlastnictvím`doc` objekt, upřesňující`MsWordVersion.Word2016` k optimalizaci dokumentu pro Microsoft Word 2016.
 
 ## Krok 4: Nastavte soulad OOXML na ISO 29500_2008_Strict
 

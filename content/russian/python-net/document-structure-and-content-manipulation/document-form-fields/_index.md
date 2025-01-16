@@ -17,16 +17,16 @@ url: /ru/python-net/document-structure-and-content-manipulation/document-form-fi
 
 Прежде чем мы погрузимся в создание и освоение полей формы, давайте настроим нашу среду и познакомимся с Aspose.Words для Python. Выполните следующие шаги, чтобы начать:
 
-1. **Install Aspose.Words:** Начните с установки библиотеки Aspose.Words для Python с помощью следующей команды pip:
+1. Установка Aspose.Words: Начните с установки библиотеки Aspose.Words для Python с помощью следующей команды pip:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Импортируйте библиотеку в свой скрипт Python, чтобы начать использовать ее функциональные возможности.
+2. Импортируйте библиотеку: импортируйте библиотеку в свой скрипт Python, чтобы начать использовать ее функциональные возможности.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 После настройки давайте перейдем к основным концепциям создания и управления полями формы.
@@ -41,7 +41,7 @@ url: /ru/python-net/document-structure-and-content-manipulation/document-form-fi
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Флажки и радиокнопки
@@ -50,12 +50,12 @@ text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeTyp
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Раскрывающиеся списки
@@ -64,7 +64,7 @@ radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OL
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Выбор даты
@@ -73,7 +73,7 @@ drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Настройка свойств полей формы
@@ -122,7 +122,7 @@ date_picker.text = "2023-08-31"
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 После создания поля вы можете задать его свойства, такие как имя, значение по умолчанию и текст-заполнитель. Давайте посмотрим, как это сделать:
@@ -150,14 +150,14 @@ text_input_field.placeholder_text = "Enter your full name"
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Для создания переключателей можно использовать тип фигуры OLE_OBJECT:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 После создания этих полей вы можете настроить их свойства, такие как имя, выбор по умолчанию и текст метки:
@@ -183,7 +183,7 @@ radio_button.text = "Male"
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 После создания раскрывающегося списка вы можете указать список опций, доступных пользователям:
@@ -211,7 +211,7 @@ drop_down.text = "USA"
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 После создания элемента выбора даты вы можете задать его свойства, такие как имя и дату по умолчанию:
@@ -228,11 +228,7 @@ date_picker.text = "2023-08-31"
 
 ## Заключение
 
-Освоение полей форм и сбора данных в документах Word — ценный навык, который позволяет вам создавать интерактивные и эффективные документы для сбора данных. Aspose.Words для Python предоставляет полный набор инструментов для создания, настройки и извлечения данных из полей форм. От простых полей ввода текста до сложных вычислений и условного форматирования — возможности огромны.
-
 В этом руководстве мы изучили основы полей форм, типы полей форм, установку свойств и настройку их поведения. Мы также коснулись лучших практик для дизайна форм и предложили идеи по оптимизации форм документов для поисковых систем.
-
-Используя возможности Aspose.Words для Python, вы можете создавать документы, которые не только эффективно собирают данные, но и повышают вовлеченность пользователей и оптимизируют рабочие процессы обработки данных. Теперь вы готовы отправиться в путь, чтобы стать мастером полей форм и сбора данных в документах Word.
 
 ## Часто задаваемые вопросы
 

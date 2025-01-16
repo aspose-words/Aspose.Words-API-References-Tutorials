@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## 修改文本
-
-您可以通过直接设置运行或段落的文本来修改文本：
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## 使用格式
 
 Aspose.Words 允许您使用格式样式：
@@ -62,7 +52,7 @@ run.get_font().set_color(255, 0, 0)
 
 ## 替换文本
 
-可以使用以下方法替换文本`replace`方法：
+可以使用以下方法替换文本：`replace`方法：
 
 ```python
 doc.get_range().replace("old_text", "new_text", False, False)

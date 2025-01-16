@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 Dans cette classe :
-- Le`Warning`la méthode capture les avertissements liés à la substitution de police.
-- Le`FontWarnings` la collection stocke ces avertissements pour une inspection ou une journalisation ultérieure.
+-  Le`Warning`la méthode capture les avertissements liés à la substitution de police.
+-  Le`FontWarnings` la collection stocke ces avertissements pour une inspection ou une journalisation ultérieure.
 
 ## Conclusion
 

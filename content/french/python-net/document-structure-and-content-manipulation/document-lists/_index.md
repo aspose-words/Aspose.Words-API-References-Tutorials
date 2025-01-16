@@ -16,7 +16,7 @@ Les listes se déclinent en deux types principaux : à puces et numérotées. El
 
 ## Configuration de l'environnement
 
-Avant de nous lancer dans la création et la gestion de listes, assurez-vous que la bibliothèque Aspose.Words pour Python est installée. Vous pouvez la télécharger à partir de[ici](https://releases.aspose.com/words/python/) . De plus, reportez-vous à la documentation de l'API à l'adresse[ce lien](https://reference.aspose.com/words/python-net/) pour des informations détaillées.
+ Avant de nous lancer dans la création et la gestion de listes, assurez-vous que la bibliothèque Aspose.Words pour Python est installée. Vous pouvez la télécharger à partir de[ici](https://releases.aspose.com/words/python/) . De plus, reportez-vous à la documentation de l'API à l'adresse[ce lien](https://reference.aspose.com/words/python-net/) pour des informations détaillées.
 
 ## Créer des listes à puces
 
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]

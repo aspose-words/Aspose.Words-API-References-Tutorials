@@ -1,16 +1,15 @@
 ---
-title: A digitális aláírások és a hitelesség kezelése
-linktitle: A digitális aláírások és a hitelesség kezelése
+title: digitális aláírások és a hitelesség kezelése
+linktitle: digitális aláírások és a hitelesség kezelése
 second_title: Aspose.Words Python Document Management API
 description: Ismerje meg a digitális aláírások kezelését és a dokumentumok hitelességének biztosítását az Aspose.Words for Python használatával. Lépésről lépésre útmutató forráskóddal.
 type: docs
 weight: 17
 url: /hu/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## Bevezetés a digitális aláírásokba
 
-digitális aláírások a kézzel írott aláírások elektronikus megfelelőiként szolgálnak. Módot biztosítanak az elektronikus dokumentumok hitelességének, integritásának és eredetének ellenőrzésére. Amikor egy dokumentumot digitálisan aláírnak, a dokumentum tartalma alapján kriptográfiai hash jön létre. Ezt a hash-t ezután az aláíró privát kulcsával titkosítják, létrehozva a digitális aláírást. Bárki, aki rendelkezik a megfelelő nyilvános kulccsal, ellenőrizheti az aláírást és meggyőződhet a dokumentum hitelességéről.
+A digitális aláírások a kézzel írott aláírások elektronikus megfelelőiként szolgálnak. Módot biztosítanak az elektronikus dokumentumok hitelességének, integritásának és eredetének ellenőrzésére. Amikor egy dokumentumot digitálisan aláírnak, a dokumentum tartalma alapján kriptográfiai hash jön létre. Ezt a hash-t ezután az aláíró privát kulcsával titkosítják, létrehozva a digitális aláírást. Bárki, aki rendelkezik a megfelelő nyilvános kulccsal, ellenőrizheti az aláírást és meggyőződhet a dokumentum hitelességéről.
 
 ## Az Aspose.Words beállítása a Python számára
 
@@ -25,7 +24,7 @@ A digitális aláírások Aspose.Words for Python használatával történő kez
 2. Importálja a szükséges modulokat: Importálja a szükséges modulokat a Python-szkriptbe:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## Dokumentumok betöltése és elérése
@@ -33,7 +32,7 @@ A digitális aláírások Aspose.Words for Python használatával történő kez
 A digitális aláírások hozzáadása vagy ellenőrzése előtt be kell töltenie a dokumentumot az Aspose.Words használatával:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## Digitális aláírás hozzáadása a dokumentumokhoz
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 Ha digitális aláírást szeretne hozzáadni egy dokumentumhoz, digitális tanúsítványra lesz szüksége:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 Most írja alá a dokumentumot:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## Digitális aláírások ellenőrzése
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## Digitális aláírások eltávolítása
-
-Digitális aláírás eltávolítása egy dokumentumból:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## A dokumentumok hitelességének biztosítása
-
-A digitális aláírás biztosítja a dokumentum hitelességét azáltal, hogy megerősíti a dokumentum forrását és integritását. Védelmet nyújtanak a manipuláció és a jogosulatlan módosítások ellen.
-
 ## A digitális aláírás megjelenésének testreszabása
 
 Testreszabhatja a digitális aláírások megjelenését:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## Következtetés

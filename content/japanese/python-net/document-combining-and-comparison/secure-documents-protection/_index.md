@@ -38,14 +38,6 @@ doc = aw.Document("document.docx")
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## 編集権限の制限
-
-ドキュメントを変更できるユーザーを制御するには、編集権限を設定します。
-
-```python
-protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
-protection.set_editing_groups(["Editors"])
-```
 
 ## 文書コンテンツの暗号化
 
@@ -60,8 +52,10 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 ドキュメントの信頼性を保証するためにデジタル署名を追加します。
 
 ```python
-digital_signature = aw.digital_signatures.DigitalSignature(doc)
-digital_signature.sign("certificate.pfx", "signature_password")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
+			
+aw.digitalsignatures.DigitalSignatureUtil.sign(dst_document_path, dst_document_path, certificate_holder, sign_options)
 ```
 
 ## セキュリティのための透かし
@@ -71,15 +65,6 @@ digital_signature.sign("certificate.pfx", "signature_password")
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
-```
-
-## 機密情報の編集
-
-機密情報を完全に削除するには:
-
-```python
-redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
-doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
 ## 結論
@@ -98,7 +83,7 @@ Aspose.Words for Python を使用すると、高度な技術を使用してド�
 
 ### Aspose.Words はどのような暗号化オプションを提供していますか?
 
-Aspose.Words は、ドキュメントの内容を保護するために AES_256 などの暗号化オプションを提供します。
+Aspose.Words は、ドキュメントのコンテンツを保護するために AES_256 などの暗号化オプションを提供します。
 
 ### デジタル署名は文書のセキュリティをどのように強化するのでしょうか?
 

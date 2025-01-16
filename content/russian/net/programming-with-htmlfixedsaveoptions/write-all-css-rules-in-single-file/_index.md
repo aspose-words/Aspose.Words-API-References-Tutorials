@@ -89,4 +89,4 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 Aspose.Words для .NET поддерживает различные форматы, включая PDF, TXT и форматы изображений, такие как JPEG и PNG.
 
 ### Где я могу найти больше ресурсов по Aspose.Words для .NET?
- Проверьте[документация](https://reference.aspose.com/words/net/)для получения подробных руководств и справок по API.
+ Проверьте[документация](https://reference.aspose.com/words/net/) для получения подробных руководств и справок по API.

@@ -55,7 +55,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
  Itt,`GetChild` metódus lekéri a dokumentum első táblázatát. A paraméterek`NodeType.Table, 0, true` győződjön meg arról, hogy a megfelelő csomóponttípust kapjuk.
 
-## 3. lépés: Igazítsa be a táblázatot
+## 3. lépés: Igazítsa a táblázatot
 
 Most igazítsuk középre a táblázatot az oldalon.
 
@@ -129,4 +129,4 @@ Ezekkel a készségekkel javíthatja a táblázatok vizuális megjelenését, í
  Teljesen! Bármilyen elérhető színt használhat`System.Drawing.Color` osztály.
 
 ### Hogyan igazíthatom vízszintesen középre a táblázatot?  
-A`table.Alignment = TableAlignment.Center;` sor a kódban vízszintesen középre helyezi a táblázatot az oldalon.
+ A`table.Alignment = TableAlignment.Center;` sor a kódban vízszintesen középre helyezi a táblázatot az oldalon.

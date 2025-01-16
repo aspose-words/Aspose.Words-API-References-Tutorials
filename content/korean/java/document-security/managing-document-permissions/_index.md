@@ -16,7 +16,7 @@ url: /ko/java/document-security/managing-document-permissions/
 
 문서 권한 관리에 들어가기 전에 Aspose.Words for Java를 설정하는 것으로 시작해 보겠습니다. 시작하려면 다음 단계를 따르세요.
 
-1.  Aspose.Words for Java 다운로드: 방문[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) Aspose.Words for Java의 최신 버전을 다운로드하세요.
+1.  Aspose.Words for Java 다운로드: 방문[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)Aspose.Words for Java의 최신 버전을 다운로드하세요.
 
 2. Java용 Aspose.Words 설치: 라이브러리를 다운로드한 후 설치 지침에 따라 Java 개발 환경에 설정합니다.
 
@@ -52,21 +52,12 @@ url: /ko/java/document-security/managing-document-permissions/
 // 문서를 로드합니다
 Document doc = new Document("sample.docx");
 
-// 접근 제어 정의
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// 문서 보호 적용
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// 문서를 저장하세요
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## 자주 묻는 질문(FAQ)
+## 자주 묻는 질문
 
-## 문서 보호를 어떻게 해제할 수 있나요?
+### 문서 보호를 어떻게 해제할 수 있나요?
 
 문서 보호를 제거하려면 보호된 문서를 열고 암호로 보호된 경우 올바른 암호를 입력하기만 하면 됩니다. 그런 다음 Aspose.Words for Java를 사용하여 다음과 같이 보호를 제거합니다.
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## 특정 사용자에게 권한을 설정할 수 있나요?
+### 특정 사용자에게 권한을 설정할 수 있나요?
 
 네, Aspose.Words for Java를 사용하면 특정 사용자나 그룹에 대한 권한을 설정할 수 있습니다. 누가 문서에 액세스하고 편집할 수 있는지 정의할 수 있습니다.
 
-## 여러 개의 비밀번호로 문서를 암호화하는 것이 가능할까?
+### 여러 개의 비밀번호로 문서를 암호화하는 것이 가능할까?
 
 아니요, Aspose.Words for Java는 단일 암호 암호화를 지원합니다. 문서를 보호하기 위해 암호를 설정할 수 있습니다.
 
-## 문서의 권한을 어떻게 확인할 수 있나요?
+### 문서의 권한을 어떻게 확인할 수 있나요?
 
 Aspose.Words for Java를 사용하면 보호 설정 및 액세스 제어 옵션을 검토하여 문서의 권한을 확인할 수 있습니다.
 
-## 문서 권한 관리를 자동화할 수 있나요?
+### 문서 권한 관리를 자동화할 수 있나요?
 
 물론입니다! Aspose.Words for Java를 애플리케이션에 통합하여 문서 권한 관리를 자동화하고 문서 워크플로의 원활한 일부가 되도록 할 수 있습니다.
 
-## 문서 비밀번호를 잊어버리면 어떻게 되나요?
+### 문서 비밀번호를 잊어버리면 어떻게 되나요?
 
 문서 비밀번호를 잊어버리면 복구할 방법이 없습니다. 안전한 곳에 비밀번호를 기록해 두십시오.
 

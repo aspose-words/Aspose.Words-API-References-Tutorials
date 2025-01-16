@@ -47,7 +47,7 @@ using Aspose.Words;
 
 ### Δημιουργήστε ένα νέο έγγραφο
 
- Στο κύριο αρχείο του προγράμματος, ξεκινήστε δημιουργώντας μια νέα παρουσία του`Document`τάξη. Αυτός θα είναι ο κενός καμβάς μας.
+ Στο κύριο αρχείο του προγράμματος, ξεκινήστε δημιουργώντας μια νέα παρουσία του`Document` τάξη. Αυτός θα είναι ο κενός καμβάς μας.
 
 ```csharp
 Document doc = new Document();
@@ -113,7 +113,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 
 ### Πώς μπορώ να ξεκινήσω με το Aspose.Words για .NET;
 
- Μπορείτε να ξεκινήσετε κάνοντας λήψη της βιβλιοθήκης από το[δικτυακός τόπος](https://releases.aspose.com/words/net/) και προσθέτοντάς το στο έργο σας .NET.
+Μπορείτε να ξεκινήσετε κάνοντας λήψη της βιβλιοθήκης από το[δικτυακός τόπος](https://releases.aspose.com/words/net/) και προσθέτοντάς το στο έργο σας .NET.
 
 ### Μπορώ να χρησιμοποιήσω το Aspose.Words δωρεάν;
 
@@ -121,8 +121,8 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 
 ### Πού μπορώ να βρω περισσότερα μαθήματα για το Aspose.Words για .NET;
 
-Ο[Aspose.Words τεκμηρίωση](https://reference.aspose.com/words/net/) είναι ένα εξαιρετικό μέρος για να βρείτε αναλυτικά μαθήματα και παραδείγματα.
+ Ο[Aspose.Words τεκμηρίωση](https://reference.aspose.com/words/net/) είναι ένα εξαιρετικό μέρος για να βρείτε αναλυτικά μαθήματα και παραδείγματα.
 
 ### Πώς μπορώ να λάβω υποστήριξη εάν αντιμετωπίσω προβλήματα;
 
-Μπορείτε να λάβετε υποστήριξη μεταβαίνοντας στο[Φόρουμ υποστήριξης Aspose.Words](https://forum.aspose.com/c/words/8).
+ Μπορείτε να λάβετε υποστήριξη μεταβαίνοντας στο[Φόρουμ υποστήριξης Aspose.Words](https://forum.aspose.com/c/words/8).

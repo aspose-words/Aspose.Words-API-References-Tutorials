@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /cs/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## Úvod do digitálních podpisů
 
 Digitální podpisy slouží jako elektronické ekvivalenty vlastnoručních podpisů. Poskytují způsob, jak ověřit pravost, integritu a původ elektronických dokumentů. Když je dokument digitálně podepsán, je na základě obsahu dokumentu vygenerován kryptografický hash. Tento hash je poté zašifrován pomocí soukromého klíče podepisujícího, čímž se vytvoří digitální podpis. Každý, kdo má odpovídající veřejný klíč, může ověřit podpis a zjistit pravost dokumentu.
@@ -25,7 +24,7 @@ Chcete-li začít se správou digitálních podpisů pomocí Aspose.Words pro Py
 2. Import požadovaných modulů: Importujte potřebné moduly do skriptu Python:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## Načítání a přístup k dokumentům
@@ -33,7 +32,7 @@ Chcete-li začít se správou digitálních podpisů pomocí Aspose.Words pro Py
 Před přidáním nebo ověřením digitálních podpisů musíte načíst dokument pomocí Aspose.Words:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## Přidávání digitálních podpisů do dokumentů
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 Chcete-li do dokumentu přidat digitální podpis, budete potřebovat digitální certifikát:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 Nyní podepište dokument:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## Ověřování digitálních podpisů
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## Odstranění digitálních podpisů
-
-Odebrání digitálního podpisu z dokumentu:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## Zajištění pravosti dokumentů
-
-Digitální podpisy zajišťují pravost dokumentu potvrzením zdroje a integrity dokumentu. Chrání před neoprávněnou manipulací a neoprávněnými úpravami.
-
 ## Přizpůsobení vzhledu digitálního podpisu
 
 Vzhled digitálních podpisů si můžete přizpůsobit:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## Závěr

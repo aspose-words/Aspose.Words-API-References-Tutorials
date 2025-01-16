@@ -40,7 +40,7 @@ using Aspose.Words.Loading;
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-그만큼`LoadOptions` 클래스를 사용하면 문서가 로드되는 방식을 사용자 정의할 수 있습니다. 여기서는 시작에 불과합니다.
+ 그만큼`LoadOptions` 클래스를 사용하면 문서가 로드되는 방식을 사용자 정의할 수 있습니다. 여기서는 시작에 불과합니다.
 
 ## 2단계: 편집 언어로 일본어 추가
 

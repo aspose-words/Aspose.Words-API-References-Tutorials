@@ -14,7 +14,7 @@ url: /hi/python-net/document-combining-and-comparison/apply-styles-themes-docume
 
 ## वातावरण की स्थापना
 
- स्टाइलिंग में गोता लगाने से पहले, आइए अपना डेवलपमेंट एनवायरनमेंट सेट करें। सुनिश्चित करें कि आपके पास Python के लिए Aspose.Words इंस्टॉल है। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/python/).
+स्टाइलिंग में गोता लगाने से पहले, आइए अपना डेवलपमेंट एनवायरनमेंट सेट करें। सुनिश्चित करें कि आपके पास Python के लिए Aspose.Words इंस्टॉल है। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/python/).
 
 ## दस्तावेज़ लोड करना और सहेजना
 
@@ -51,30 +51,8 @@ font.style_identifier = StyleIdentifier.STRONG
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## शीर्षक शैलियों को अनुकूलित करना
-
-शीर्षक दस्तावेज़ों को संरचना प्रदान करते हैं। बेहतर पदानुक्रम और पठनीयता के लिए शीर्षक शैलियों को अनुकूलित करें।
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## एकीकृत लुक के लिए थीम का उपयोग करना
-
-थीम एक सुसंगत उपस्थिति प्रदान करते हैं। पेशेवर स्पर्श के लिए अपने दस्तावेज़ पर थीम लागू करें।
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## थीम रंग और फ़ॉन्ट संशोधित करना
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 थीम के रंग और फ़ॉन्ट समायोजित करके अपनी आवश्यकताओं के अनुसार थीम तैयार करें।
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## अपनी खुद की शैलियाँ बनाना
-
-अद्वितीय दस्तावेज़ तत्वों के लिए कस्टम शैलियाँ तैयार करें, जिससे आपकी ब्रांड पहचान चमक सके।
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## दस्तावेज़ भागों के आधार पर शैली का प्रबंधन
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 एक चमकदार लुक के लिए हेडर, फुटर और मुख्य सामग्री पर अलग-अलग तरीके से शैलियाँ लागू करें।
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## दस्तावेज़-व्यापी शैलियों को संभालना
-
-संपूर्ण दस्तावेज़ पर आसानी से शैली लागू करें।
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## स्वरूपण और शैलियाँ साफ़ करना
-
-नए सिरे से शुरुआत करने के लिए आसानी से शैलियाँ और स्वरूपण हटाएँ।
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## व्यावहारिक उदाहरण और उपयोग के मामले
-
-आइए व्यावहारिक परिदृश्यों का पता लगाएं जहां शैलियाँ और थीम दस्तावेजों को बदल सकती हैं।
-
-1. ब्रांडेड रिपोर्ट बनाना
-2. शानदार रेज़्यूमे डिज़ाइन करना
-3. शैक्षणिक पत्रों का प्रारूपण
-
-## कुशल स्टाइलिंग के लिए सुझाव
-
-- शैलियाँ सुसंगत रखें
-- त्वरित बदलाव के लिए थीम का उपयोग करें
-- विभिन्न फ़ॉन्ट और रंगों के साथ प्रयोग करें
 
 ## निष्कर्ष
 
@@ -167,4 +109,4 @@ doc.range.clear_formatting()
 
 ### क्या मेरे दस्तावेज़ से फ़ॉर्मेटिंग साफ़ करना संभव है?
 
- हां, आप इसका उपयोग करके आसानी से स्वरूपण और शैलियों को हटा सकते हैं`clear_formatting()` पायथन के लिए Aspose.Words द्वारा प्रदान की गई विधि।
+हां, आप इसका उपयोग करके आसानी से स्वरूपण और शैलियों को हटा सकते हैं`clear_formatting()` पायथन के लिए Aspose.Words द्वारा प्रदान की गई विधि।

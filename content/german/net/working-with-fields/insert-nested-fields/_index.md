@@ -77,7 +77,7 @@ builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
 ```
 
-In diesem Schritt fügen wir zuerst das IF-Feld ein, gehen zu seinem Trennzeichen und fügen dann die Felder PAGE und NUMPAGES ein. Das IF-Feld prüft, ob die aktuelle Seitenzahl (PAGE) nicht der Gesamtseitenzahl (NUMPAGES) entspricht. Wenn dies zutrifft, wird „Siehe nächste Seite“ angezeigt, andernfalls „Letzte Seite“.
+In diesem Schritt fügen wir zuerst das IF-Feld ein, wechseln zu seinem Trennzeichen und fügen dann die Felder PAGE und NUMPAGES ein. Das IF-Feld prüft, ob die aktuelle Seitenzahl (PAGE) nicht der Gesamtseitenzahl (NUMPAGES) entspricht. Wenn dies zutrifft, wird „Siehe nächste Seite“ angezeigt, andernfalls „Letzte Seite“.
 
 ## Schritt 5: Aktualisieren Sie das Feld
 

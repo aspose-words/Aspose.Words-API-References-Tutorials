@@ -130,7 +130,7 @@ E aí está! Você criou com sucesso uma nova linha de assinatura e definiu o ID
 ## Perguntas frequentes
 
 ### Posso personalizar a aparência da linha de assinatura?
-Absolutamente! Você pode ajustar várias opções no`SignatureLineOptions` para atender às suas necessidades.
+ Absolutamente! Você pode ajustar várias opções no`SignatureLineOptions`para atender às suas necessidades.
 
 ### E se eu não tiver um certificado PFX?
 Você precisará obter um de uma autoridade de certificação confiável. É essencial para assinar documentos digitalmente.
@@ -138,7 +138,7 @@ Você precisará obter um de uma autoridade de certificação confiável. É ess
 ### Posso adicionar várias linhas de assinatura a um documento?
 Sim, você pode adicionar quantas linhas de assinatura forem necessárias, repetindo o processo de inserção com opções diferentes.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?
+### Aspose.Words para .NET é compatível com o .NET Core?
 Sim, o Aspose.Words para .NET oferece suporte ao .NET Core, o que o torna versátil para diferentes ambientes de desenvolvimento.
 
 ### Quão seguras são as assinaturas digitais?

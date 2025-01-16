@@ -47,7 +47,7 @@ Agora, é hora de converter o documento carregado para o formato de saída escol
 
 ```java
 // Converter o documento em PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Conclusão

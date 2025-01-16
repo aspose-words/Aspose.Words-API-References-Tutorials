@@ -14,7 +14,7 @@ Vill du förbättra dina färdigheter i dokumentformatering med Java? I den här
 
 Dokumentformatering spelar en avgörande roll för att skapa professionella dokument. Sidhuvuden och sidfötter är viktiga komponenter som ger ditt innehåll sammanhang och struktur. Med Aspose.Words för Java, ett kraftfullt API för dokumenthantering, kan du enkelt anpassa sidhuvuden och sidfötter för att möta dina specifika krav.
 
-den här guiden kommer vi att utforska olika aspekter av att utforma dokumenthuvuden och sidfötter med Aspose.Words för Java. Vi kommer att täcka allt från grundläggande formatering till avancerade tekniker, och vi kommer att ge dig praktiska kodexempel för att illustrera varje steg. I slutet av den här artikeln har du kunskapen och färdigheterna för att skapa snygga och visuellt tilltalande dokument.
+I den här guiden kommer vi att utforska olika aspekter av att utforma dokumenthuvuden och sidfötter med Aspose.Words för Java. Vi kommer att täcka allt från grundläggande formatering till avancerade tekniker, och vi kommer att ge dig praktiska kodexempel för att illustrera varje steg. I slutet av den här artikeln har du kunskapen och färdigheterna för att skapa snygga och visuellt tilltalande dokument.
 
 ## Styling av sidhuvuden och sidfötter
 
@@ -87,7 +87,7 @@ För att säkerställa en sömlös upplevelse när du formaterar sidhuvuden och 
 
 ### Hur kan jag ta bort sidhuvuden eller sidfötter från specifika avsnitt?
 
-Du kan ta bort sidhuvuden eller sidfötter från specifika avsnitt genom att gå till`HeaderFooter` objekt och ställer in deras innehåll till null. Till exempel:
+ Du kan ta bort sidhuvuden eller sidfötter från specifika avsnitt genom att gå till`HeaderFooter` objekt och ställer in deras innehåll till null. Till exempel:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Kan jag lägga till anpassade fält, som dokumenttitlar, i sidhuvuden eller sidfötter?
 
-Ja, du kan lägga till anpassade fält i sidhuvuden eller sidfötter. Skapa en`Run` element och infoga det i sidhuvudet eller sidfotens innehåll och tillhandahåller den önskade texten. Anpassa formateringen efter behov.
+ Ja, du kan lägga till anpassade fält i sidhuvuden eller sidfötter. Skapa en`Run` element och infoga det i sidhuvudet eller sidfotens innehåll och tillhandahåller den önskade texten. Anpassa formateringen efter behov.
 
 ### Är Aspose.Words for Java kompatibelt med olika dokumentformat?
 

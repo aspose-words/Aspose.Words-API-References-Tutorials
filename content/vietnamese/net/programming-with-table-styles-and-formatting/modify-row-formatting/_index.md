@@ -61,7 +61,7 @@ Bây giờ bảng đã có thể truy cập được, bước tiếp theo là l�
 Row firstRow = table.FirstRow;
 ```
 
-Các`FirstRow` thuộc tính cung cấp cho chúng ta hàng đầu tiên trong bảng. Bây giờ, chúng ta đã sẵn sàng để bắt đầu sửa đổi định dạng của nó.
+ Các`FirstRow` thuộc tính cung cấp cho chúng ta hàng đầu tiên trong bảng. Bây giờ, chúng ta đã sẵn sàng để bắt đầu sửa đổi định dạng của nó.
 
 ## Bước 4: Sửa đổi Đường viền Hàng
 

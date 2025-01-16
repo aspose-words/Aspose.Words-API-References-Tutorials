@@ -19,10 +19,10 @@ Daftar isi memberikan gambaran singkat tentang struktur dokumen, yang memungkink
 ## Memuat Dokumen
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## Mendefinisikan Judul dan Subjudul
@@ -31,25 +31,11 @@ Untuk membuat daftar isi, Anda perlu menentukan judul dan subjudul dalam dokumen
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## Membuat Daftar Isi
-
-Sekarang setelah kita menentukan judul dan subjudul, mari buat daftar isi itu sendiri. Kita akan membuat bagian baru di awal dokumen dan mengisinya dengan konten yang sesuai.
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## Menyesuaikan Daftar Isi
@@ -58,21 +44,10 @@ Anda dapat menyesuaikan tampilan daftar isi dengan menyesuaikan font, gaya, dan 
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## Menambahkan Hyperlink
-
-Untuk membuat daftar isi interaktif, tambahkan hyperlink yang memungkinkan pembaca untuk langsung melompat ke bagian terkait dalam dokumen.
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+" "Bahasa Indonesia"
 
 ## Menata Daftar Isi
 
@@ -81,16 +56,7 @@ Menata daftar isi melibatkan penentuan gaya paragraf yang tepat untuk judul, ent
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## Memperbarui Daftar Isi
-
-Jika Anda membuat perubahan pada struktur dokumen Anda, Anda dapat dengan mudah memperbarui daftar isi untuk mencerminkan perubahan tersebut.
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## Mengotomatiskan Proses
@@ -101,27 +67,13 @@ Untuk menghemat waktu dan memastikan konsistensi, pertimbangkan untuk membuat sk
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## Menangani Nomor Halaman
-
-Anda dapat menambahkan nomor halaman ke daftar isi untuk memberi pembaca lebih banyak konteks tentang di mana menemukan bagian tertentu.
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## Kesimpulan

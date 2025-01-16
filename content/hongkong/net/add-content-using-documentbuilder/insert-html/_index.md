@@ -15,7 +15,7 @@ url: /zh-hant/net/add-content-using-documentbuilder/insert-html/
 
 在我們深入了解逐步指南之前，讓我們確保我們已經擁有所需的一切。這是一個快速清單：
 
-1. Aspose.Words for .NET 函式庫：如果您還沒有下載，您需要下載 Aspose.Words for .NET 函式庫。你可以得到它[這裡](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET 函式庫：如果您還沒有下載，您需要下載 Aspose.Words for .NET 函式庫。你可以得到它[這裡](https://releases.aspose.com/words/net/).
 2. 開發環境：確保您已設定開發環境，例如 Visual Studio。
 3. .NET Framework：請確定您的電腦上安裝了 .NET Framework。
 4. 基本 C# 知識：稍微熟悉一下 C# 會有很大幫助。

@@ -45,7 +45,7 @@ Nézzük meg a hiperhivatkozások Word-dokumentumba való beszúrásának folyam
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-A`DocumentBuilder` osztály egy sokoldalú eszköz, amely lehetővé teszi a dokumentum létrehozását és módosítását.
+ A`DocumentBuilder` osztály egy sokoldalú eszköz, amely lehetővé teszi a dokumentum létrehozását és módosítását.
 
 ## 2. lépés: Szúrjon be hiperhivatkozást
 

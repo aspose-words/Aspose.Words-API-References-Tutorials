@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 各パラメータの意味は次のとおりです。
-- `imagePath`画像ファイルへのパス。
+- `imagePath`: 画像ファイルへのパス。
 - `RelativeHorizontalPosition.Margin`: 余白に対する水平位置。
 - `100`: 余白からの水平オフセット（ポイント単位）。
 - `RelativeVerticalPosition.Margin`: 余白に対する垂直位置。

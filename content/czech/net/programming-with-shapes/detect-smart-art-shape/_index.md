@@ -21,7 +21,7 @@ Než se ponoříme do podrobností, ujistěte se, že máte vše nastaveno:
 3. Visual Studio: Jakákoli nejnovější verze by měla fungovat, ale doporučujeme nejnovější verzi.
 4. .NET Framework: Ujistěte se, že je ve vašem systému nainstalováno.
 
-Jste připraveni začít? Děsivý! Pojďme rovnou do toho.
+Jste připraveni začít? Děsivý! Pojďme rovnou dovnitř.
 
 ## Importovat jmenné prostory
 
@@ -98,7 +98,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### 4. Jak získám podporu pro Aspose.Words for .NET?
 
-Podporu můžete získat návštěvou stránky[Aspose fórum podpory](https://forum.aspose.com/c/words/8).
+ Podporu můžete získat návštěvou stránky[Aspose fórum podpory](https://forum.aspose.com/c/words/8).
 
 ### 5. Mohu programově manipulovat s tvary SmartArt?
 

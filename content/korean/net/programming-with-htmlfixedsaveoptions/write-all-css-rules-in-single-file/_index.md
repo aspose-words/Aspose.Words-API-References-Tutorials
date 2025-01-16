@@ -83,10 +83,10 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
  네, 설정해서`SaveFontFaceCssSeparately` 에게`true`, 글꼴 CSS 규칙을 다른 파일에 분리할 수 있습니다.
 
 ### Aspose.Words for .NET은 무료로 사용할 수 있나요?
- Aspose.Words는 무료 체험판을 제공합니다.[여기서 다운로드하세요](https://releases.aspose.com/) . 계속 사용하려면 라이센스 구매를 고려하세요.[여기](https://purchase.aspose.com/buy).
+ Aspose.Words는 무료 체험판을 제공합니다.[여기에서 다운로드하세요](https://releases.aspose.com/) . 계속 사용하려면 라이센스 구매를 고려하세요.[여기](https://purchase.aspose.com/buy).
 
 ### Aspose.Words for .NET은 어떤 다른 형식으로 변환할 수 있나요?
 .NET용 Aspose.Words는 PDF, TXT와 JPEG, PNG와 같은 이미지 형식을 포함한 다양한 형식을 지원합니다.
 
 ### Aspose.Words for .NET에 대한 추가 리소스는 어디에서 찾을 수 있나요?
- 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/)포괄적인 가이드와 API 참조를 확인하세요.
+ 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 포괄적인 가이드와 API 참조를 확인하세요.

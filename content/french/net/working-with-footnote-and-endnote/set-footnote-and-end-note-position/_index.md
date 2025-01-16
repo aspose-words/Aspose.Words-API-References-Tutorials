@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-Dans ce code, remplacez`"YOUR DOCUMENT DIRECTORY"`avec le chemin réel où se trouve votre document.
+Dans ce code, remplacez`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où se trouve votre document.
 
 ## Étape 2 : définir la position de la note de bas de page
 
@@ -93,4 +93,4 @@ Aspose.Words pour .NET est conçu pour les applications .NET, mais vous pouvez l
 
 ### Où puis-je trouver une documentation plus détaillée sur Aspose.Words pour .NET ?
 
-Une documentation détaillée est disponible[ici](https://reference.aspose.com/words/net/).
+ Une documentation détaillée est disponible[ici](https://reference.aspose.com/words/net/).

@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Łączenie dokumentów
-
-Bezproblemowe łączenie dokumentów to cenna umiejętność. Nawigowanie po dokumentach pomaga nam je sprawnie łączyć:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Dzielenie dokumentów
 
 Czasami możemy potrzebować podzielić dokument na mniejsze części. Nawigacja po dokumencie pomaga nam to osiągnąć:
@@ -117,8 +109,8 @@ Nagłówki i stopki często wymagają odrębnego traktowania. Nawigowanie po tyc
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

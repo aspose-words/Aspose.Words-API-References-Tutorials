@@ -19,10 +19,10 @@ Een inhoudsopgave biedt een momentopname van de structuur van een document, waar
 ## Een document laden
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## Koppen en subkoppen definiëren
@@ -31,48 +31,23 @@ Om een inhoudsopgave te genereren, moet u de koppen en subkoppen in uw document 
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
 ```
 
-## De inhoudsopgave genereren
-
-Nu we onze koppen en subkoppen hebben gedefinieerd, gaan we de inhoudsopgave zelf genereren. We maken een nieuwe sectie aan het begin van het document en vullen deze met de juiste inhoud.
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
-```
-
 ## De inhoudsopgave aanpassen
 
-U kunt het uiterlijk van uw inhoudsopgave aanpassen door lettertypen, stijlen en opmaak aan te passen. Zorg ervoor dat u consistente opmaak gebruikt in uw hele document voor een gepolijste look.
+kunt het uiterlijk van uw inhoudsopgave aanpassen door lettertypen, stijlen en opmaak aan te passen. Zorg ervoor dat u consistente opmaak gebruikt in uw hele document voor een gepolijste look.
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## Hyperlinks toevoegen
-
-Om de inhoudsopgave interactief te maken, kunt u hyperlinks toevoegen waarmee lezers direct naar de overeenkomstige secties in het document kunnen springen.
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+``
 
 ## Stijl van de inhoudsopgave
 
@@ -81,16 +56,7 @@ Het opmaken van de inhoudsopgave omvat het definiëren van geschikte alineastijl
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## De inhoudsopgave bijwerken
-
-Als u wijzigingen aanbrengt in de structuur van uw document, kunt u de inhoudsopgave eenvoudig bijwerken om deze wijzigingen door te voeren.
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## Automatiseren van het proces
@@ -101,27 +67,13 @@ Om tijd te besparen en consistentie te waarborgen, kunt u overwegen een script t
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## Omgaan met paginanummers
-
-U kunt paginanummers aan de inhoudsopgave toevoegen om lezers meer context te geven over waar ze specifieke secties kunnen vinden.
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## Conclusie

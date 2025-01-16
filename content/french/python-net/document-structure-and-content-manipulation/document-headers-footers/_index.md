@@ -23,7 +23,7 @@ pip install aspose-words
 2. Importation du module : Importez le module requis dans votre script Python.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Ajout d'un en-tête et d'un pied de page simples
@@ -33,30 +33,18 @@ Pour ajouter un en-tête et un pied de page de base à votre document Word, suiv
 1. Création d'un document : Créez un nouveau document Word à l'aide d'Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Ajout d'un en-tête et d'un pied de page : utilisez le`sections` propriété du document pour accéder aux sections. Ensuite, utilisez la`headers_footers` propriété permettant d'ajouter des en-têtes et des pieds de page.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Ajout de contenu : ajoutez du contenu à l'en-tête et au pied de page.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Enregistrement du document : Enregistrez le document avec l'en-tête et le pied de page.
+3. Enregistrement du document : Enregistrez le document avec l'en-tête et le pied de page.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Ajout de tableaux : incorporez des tableaux pour obtenir des informations tabulaires.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Champs dynamiques : utilisez des champs dynamiques pour l'insertion automatique de données.
+2. Champs dynamiques : utilisez des champs dynamiques pour l'insertion automatique de données.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. Personnaliser selon vos besoins : personnalisez chaque en-tête et pied de page selon vos besoins.
 
 ## Suppression des en-têtes et des pieds de page
 
@@ -150,4 +128,4 @@ Oui, vous pouvez effacer le contenu des en-têtes et des pieds de page pour les 
 
 ### Où puis-je en savoir plus sur Aspose.Words pour Python ?
 
-Pour une documentation plus détaillée et des exemples, visitez le[Référence de l'API Aspose.Words pour Python](https://reference.aspose.com/words/python-net/).
+ Pour une documentation plus détaillée et des exemples, visitez le[Référence de l'API Aspose.Words pour Python](https://reference.aspose.com/words/python-net/).

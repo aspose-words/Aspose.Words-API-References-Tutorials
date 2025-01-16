@@ -65,7 +65,7 @@ fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Ari
 
 I det här exemplet använder vi Arial som standardteckensnitt.
 
-## Steg 5: Inaktivera teckensnittsinformationsersättning
+## Steg 5: Inaktivera Font Info Substitution
 
 För att inaktivera teckensnittsinformationsersättning, som hindrar systemet från att ersätta saknade teckensnitt med tillgängliga, använder du följande kod:
 

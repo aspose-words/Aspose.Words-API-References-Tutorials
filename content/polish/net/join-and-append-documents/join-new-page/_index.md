@@ -87,7 +87,7 @@ Tak, możesz dołączać wiele dokumentów sekwencyjnie, powtarzając operację 
 ### Jak poradzić sobie z konfliktami formatowania dokumentów podczas dołączania?
 Aspose.Words udostępnia różne tryby importowania umożliwiające obsługę konfliktów formatowania, takie jak zachowanie formatowania źródłowego lub użycie formatowania docelowego.
 
-### Czy Aspose.Words obsługuje dołączanie dokumentów w różnych językach lub z różnymi kodowaniami?
+### Czy Aspose.Words obsługuje dołączanie dokumentów w różnych językach i z różnymi kodowaniami?
 Tak, Aspose.Words obsługuje dołączanie dokumentów niezależnie od języka i kodowania, co zapewnia bezproblemową integrację.
 
 ### Czy można dołączać dokumenty zawierające makra lub pola formularzy?

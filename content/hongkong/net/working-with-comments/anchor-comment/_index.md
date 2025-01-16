@@ -17,7 +17,7 @@ url: /zh-hant/net/working-with-comments/anchor-comment/
 
 -  Aspose.Words for .NET：確保您已安裝 Aspose.Words 程式庫。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/net/).
 - 開發環境：任何 .NET 開發環境，例如 Visual Studio。
-- 對 C# 的基本了解：熟悉 C# 程式設計將幫助您輕鬆執行以下步驟。
+- 對 C# 的基本了解：熟悉 C# 程式設計將幫助您輕鬆遵循這些步驟。
 
 現在，讓我們深入了解為此任務所需匯入的命名空間。
 
@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 是的，您可以透過定義多個註解範圍來為同一文字部分新增多個註解。
 
 ### Aspose.Words for .NET 可以免費使用嗎？
-Aspose.Words for .NET 提供免費試用版，您可以下載[這裡](https://releases.aspose.com/) 。如需完整功能，您可以購買許可證[這裡](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET 提供免費試用版，您可以下載[這裡](https://releases.aspose.com/) 。如需完整功能，您可以購買許可證[這裡](https://purchase.aspose.com/buy).
 
 ### 我可以自訂評論的外觀嗎？
 雖然Aspose.Words注重功能，但Word文件中註解的外觀通常由Word本身控制。

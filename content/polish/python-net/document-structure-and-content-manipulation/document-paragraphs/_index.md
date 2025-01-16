@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## Podstawowe formatowanie tekstu
 
- Formatowanie tekstu w dokumencie Word jest niezbędne do podkreślenia ważnych punktów i poprawy czytelności. Aspose.Words umożliwia stosowanie różnych opcji formatowania, takich jak:**bold**, *italic*, podkreślenie i rozmiar czcionki:
+Formatowanie tekstu w dokumencie Word jest niezbędne do podkreślenia ważnych punktów i poprawy czytelności. Aspose.Words umożliwia stosowanie różnych opcji formatowania, takich jak pogrubienie, kursywa, podkreślenie i rozmiar czcionki:
 
 ```python
 # Apply basic text formatting
@@ -171,11 +171,9 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## Wniosek
 
-tym kompleksowym przewodniku zbadaliśmy możliwości Aspose.Words dla Pythona w zakresie formatowania akapitów i tekstu w dokumentach Word. Korzystając z tej potężnej biblioteki, programiści mogą bezproblemowo automatyzować formatowanie dokumentów, zapewniając profesjonalny i dopracowany wygląd swoich treści.
+tym kompleksowym przewodniku zbadaliśmy możliwości Aspose.Words for Python w zakresie formatowania akapitów i tekstu w dokumentach Word. Korzystając z tej potężnej biblioteki, programiści mogą bezproblemowo automatyzować formatowanie dokumentów, zapewniając profesjonalny i dopracowany wygląd swoich treści.
 
----
-
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak zainstalować Aspose.Words dla języka Python?
 Aby zainstalować Aspose.Words dla języka Python, użyj następującego polecenia:

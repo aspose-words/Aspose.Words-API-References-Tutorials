@@ -19,10 +19,10 @@ Mục lục cung cấp ảnh chụp nhanh về cấu trúc của tài liệu, ch
 ## Đang tải một tài liệu
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## Xác định Tiêu đề và Tiêu đề phụ
@@ -31,25 +31,11 @@ doc = asposewords.Document("your_document.docx")
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## Tạo Mục lục
-
-Bây giờ chúng ta đã xác định được tiêu đề và tiêu đề phụ, hãy tạo mục lục. Chúng ta sẽ tạo một phần mới ở đầu tài liệu và điền nội dung phù hợp vào đó.
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## Tùy chỉnh Mục lục
@@ -58,21 +44,10 @@ Bạn có thể tùy chỉnh giao diện của mục lục bằng cách điều 
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## Thêm siêu liên kết
-
-Để làm cho mục lục có tính tương tác, hãy thêm các siêu liên kết cho phép người đọc nhảy trực tiếp đến các phần tương ứng trong tài liệu.
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+``
 
 ## Định dạng mục lục
 
@@ -81,16 +56,7 @@ Việc định dạng mục lục bao gồm việc xác định kiểu đoạn v
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## Cập nhật Mục lục
-
-Nếu bạn thực hiện thay đổi đối với cấu trúc tài liệu, bạn có thể dễ dàng cập nhật mục lục để phản ánh những thay đổi đó.
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## Tự động hóa quy trình
@@ -101,27 +67,13 @@ doc.update_fields()
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## Xử lý số trang
-
-Bạn có thể thêm số trang vào mục lục để cung cấp cho người đọc nhiều thông tin hơn về vị trí tìm kiếm các phần cụ thể.
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## Phần kết luận

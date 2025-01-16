@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-Itu`PreferredWidth.Auto` pengaturan ini memungkinkan sel ini mengembang atau mengecil berdasarkan ruang yang tersisa setelah sel lainnya diperhitungkan. Ini memastikan tata letak tabel terlihat seimbang dan profesional.
+ Itu`PreferredWidth.Auto` pengaturan ini memungkinkan sel ini mengembang atau mengecil berdasarkan ruang yang tersisa setelah sel lainnya diperhitungkan. Ini memastikan tata letak tabel terlihat seimbang dan profesional.
 
 ## Langkah 5: Selesaikan dan Simpan Dokumen
 

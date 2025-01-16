@@ -37,13 +37,6 @@ Salah satu kekuatan utama Aspose.Words untuk Java adalah kemampuannya untuk memu
 Document doc = new Document("sample.docx");
 ```
 
-### Memuat Dokumen PDF
-
-```java
-// Memuat dokumen PDF
-Document doc = new Document("sample.pdf");
-```
-
 ## Memodifikasi dan Menyimpan Dokumen
 
 Setelah Anda memuat dokumen, Anda dapat melakukan banyak operasi, dari penggantian teks sederhana hingga perubahan format yang rumit.
@@ -71,7 +64,7 @@ Aspose.Words untuk Java memungkinkan konversi yang lancar antara berbagai format
 Document doc = new Document("sample.docx");
 
 // Simpan sebagai PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Penanganan Gambar dan Tabel
@@ -81,7 +74,7 @@ Memasukkan gambar dan tabel merupakan persyaratan umum saat bekerja dengan dokum
 ### Menambahkan Gambar ke Dokumen
 
 ```java
-// Memuat dokumen
+//Memuat dokumen
 Document doc = new Document("document.docx");
 
 // Sisipkan gambar

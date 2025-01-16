@@ -118,7 +118,7 @@ Aspose.Words for .NET एक लाइब्रेरी है जो आपक
  हां, आप इसका उपयोग कर सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/) या प्राप्त करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/).
 
 ### मैं .NET के लिए Aspose.Words हेतु दस्तावेज़ कहां पा सकता हूं?
-विस्तृत दस्तावेज उपलब्ध है[यहाँ](https://reference.aspose.com/words/net/).
+ विस्तृत दस्तावेज उपलब्ध है[यहाँ](https://reference.aspose.com/words/net/).
 
 ### मैं Aspose.Words के लिए समर्थन कैसे प्राप्त कर सकता हूं?
  आप यहां जा सकते हैं[सहयता मंच](https://forum.aspose.com/c/words/8) सहायता के लिए.

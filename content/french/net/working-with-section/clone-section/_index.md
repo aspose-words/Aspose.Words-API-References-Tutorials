@@ -10,7 +10,7 @@ url: /fr/net/working-with-section/clone-section/
 
 ## Introduction
 
-Salut à tous les codeurs ! 🚀 Vous êtes-vous déjà retrouvé plongé dans un projet de document Word, souhaitant pouvoir simplement cloner une section plutôt que de refaire tout ce travail acharné ? Eh bien, devinez quoi ? Avec Aspose.Words pour .NET, vous pouvez facilement cloner des sections dans vos documents Word. Ce tutoriel vous guidera pas à pas tout au long du processus, ce qui facilitera grandement la réplication de sections dans vos documents. Alors, allons-y et facilitons grandement vos tâches de manipulation de documents !
+Salut à tous les codeurs ! 🚀 Vous êtes-vous déjà retrouvé plongé dans un projet de document Word, souhaitant pouvoir simplement cloner une section plutôt que de refaire tout ce travail acharné ? Eh bien, devinez quoi ? Avec Aspose.Words pour .NET, vous pouvez facilement cloner des sections dans vos documents Word. Ce tutoriel vous guidera pas à pas tout au long du processus, ce qui facilitera grandement la réplication de sections dans vos documents. Alors, plongeons-nous directement dans le vif du sujet et facilitons grandement vos tâches de manipulation de documents !
 
 ## Prérequis
 

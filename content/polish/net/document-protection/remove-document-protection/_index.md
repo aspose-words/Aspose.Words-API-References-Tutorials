@@ -93,7 +93,7 @@ Spowoduje to zapisanie niezabezpieczonego dokumentu w określonym katalogu.
 
 ## Wniosek
 
-I masz! Usuwanie ochrony z dokumentu Word za pomocą Aspose.Words dla .NET jest proste. Niezależnie od tego, czy jest to dokument chroniony hasłem, czy nie, Aspose.Words zapewnia elastyczność w zarządzaniu ochroną dokumentu bez wysiłku. Teraz możesz odblokować swoje dokumenty i przejąć pełną kontrolę za pomocą zaledwie kilku linijek kodu.
+masz! Usuwanie ochrony z dokumentu Word za pomocą Aspose.Words dla .NET jest proste. Niezależnie od tego, czy jest to dokument chroniony hasłem, czy nie, Aspose.Words zapewnia elastyczność w zarządzaniu ochroną dokumentu bez wysiłku. Teraz możesz odblokować swoje dokumenty i przejąć pełną kontrolę za pomocą zaledwie kilku linijek kodu.
 
 ## Najczęściej zadawane pytania
 

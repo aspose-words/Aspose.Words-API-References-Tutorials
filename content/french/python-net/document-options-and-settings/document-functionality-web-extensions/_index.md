@@ -18,7 +18,7 @@ Avant de plonger dans les détails techniques, assurez-vous que vous disposez de
 
 - Compréhension de base de la programmation Python.
 -  Référence de l'API Aspose.Words pour Python (disponible sur[ici](https://reference.aspose.com/words/python-net/).
-- Accès à la bibliothèque Aspose.Words pour Python (téléchargement depuis[ici](https://releases.aspose.com/words/python/).
+-  Accès à la bibliothèque Aspose.Words pour Python (téléchargement depuis[ici](https://releases.aspose.com/words/python/).
 
 ## Configuration d'Aspose.Words pour Python
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Importez la bibliothèque dans votre script Python.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Créer un nouveau document
@@ -42,7 +42,7 @@ import aspose.words
 Commençons par créer un nouveau document en utilisant Aspose.Words :
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Ajout de contenu au document
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Vous pouvez facilement ajouter du contenu au document en utilisant Aspose.Words :
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ Le style et le formatage jouent un rôle crucial dans la présentation des docum
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Insertion d'extensions Web
-
-Pour insérer une extension Web dans le document, procédez comme suit :
-
-1. Créez l'extension Web en utilisant HTML, CSS et JavaScript.
-2. Convertissez l’extension Web en une chaîne codée en base64.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Insérer l'extension Web dans le document :
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Interagir avec les extensions Web
@@ -98,7 +78,7 @@ Les extensions Web peuvent modifier dynamiquement le contenu d'un document. Par 
 Après avoir incorporé les extensions Web et effectué les modifications nécessaires, vous pouvez enregistrer le document en utilisant différents formats pris en charge par Aspose.Words :
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Conseils pour l'optimisation des performances

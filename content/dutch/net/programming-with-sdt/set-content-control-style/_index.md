@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
-De`Styles` eigendom van de`Document` klasse geeft ons toegang tot alle stijlen die beschikbaar zijn in het document. We gebruiken de`StyleIdentifier.Quote`om de citaatstijl te selecteren.
+ De`Styles` eigendom van de`Document` klasse geeft ons toegang tot alle stijlen die beschikbaar zijn in het document. We gebruiken de`StyleIdentifier.Quote`om de citaatstijl te selecteren.
 
 ## Stap 4: Pas de stijl toe op de gestructureerde documenttag
 

@@ -27,7 +27,7 @@ url: /ru/java/document-loading-and-saving/saving-documents-as-markdown/
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Вставьте таблицу с двумя ячейками
+// Вставьте таблицу с двумя ячейками
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// Установите выравнивание содержимого таблицы на автоматическое (определяется первым абзацем)
+//Установите выравнивание содержимого таблицы на автоматическое (определяется первым абзацем)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## Шаг 3: Обработка изображений
 
-Чтобы включить изображения в документ Markdown, вам необходимо указать папку, в которой находятся изображения. Aspose.Words for Java позволяет вам задать папку с изображениями в`MarkdownSaveOptions`.
+ Чтобы включить изображения в документ Markdown, вам необходимо указать папку, в которой находятся изображения. Aspose.Words for Java позволяет вам задать папку с изображениями в`MarkdownSaveOptions`.
 
 Вот как задать папку для изображений и сохранить документ с изображениями:
 

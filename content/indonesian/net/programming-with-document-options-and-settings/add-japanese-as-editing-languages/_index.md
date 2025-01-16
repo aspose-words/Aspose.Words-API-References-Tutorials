@@ -40,7 +40,7 @@ Setelah namespace ini diimpor, Anda siap untuk memulai membuat kode!
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-Itu`LoadOptions` class memungkinkan Anda untuk menyesuaikan cara dokumen dimuat. Di sini, kita baru saja memulainya.
+ Itu`LoadOptions` class memungkinkan Anda untuk menyesuaikan cara dokumen dimuat. Di sini, kita baru saja memulainya.
 
 ## Langkah 2: Tambahkan Bahasa Jepang sebagai Bahasa Pengeditan
 

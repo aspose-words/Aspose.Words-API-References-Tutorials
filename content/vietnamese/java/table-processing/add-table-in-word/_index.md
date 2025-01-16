@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Bước 6: Tạo bảng và thêm hàng
 
-Tạo một cái mới`Table` đối tượng và chỉ định số hàng và số cột.
+ Tạo một cái mới`Table` đối tượng và chỉ định số hàng và số cột.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Bước 8: Lưu tài liệu
 
- Lưu tài liệu Word vào vị trí mong muốn bằng cách sử dụng`save()` phương pháp.
+Lưu tài liệu Word vào vị trí mong muốn bằng cách sử dụng`save()` phương pháp.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Bước 9: Hoàn thành mã
-
-Sau đây là mã đầy đủ để thêm bảng vào Word bằng Aspose.Words cho Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Bước 5: Tạo một tài liệu Word mới
-        Document doc = new Document();
-
-        // Bước 6: Tạo bảng và thêm hàng
-        Table table = new Table(doc);
-        int rowCount = 5; // Số lượng hàng trong bảng
-        int columnCount = 3; // Số lượng cột trong bảng
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Bước 7: Thêm Bảng vào Tài liệu
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Bước 8: Lưu tài liệu
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Phần kết luận

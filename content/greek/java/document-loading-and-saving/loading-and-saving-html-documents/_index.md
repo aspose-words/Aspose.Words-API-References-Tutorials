@@ -1,6 +1,6 @@
 ---
-title: Φόρτωση και αποθήκευση εγγράφων HTML με το Aspose.Words για Java
-linktitle: Φόρτωση και αποθήκευση εγγράφων HTML με
+title: Φόρτωση και αποθήκευση εγγράφων HTML
+linktitle: Φόρτωση και αποθήκευση εγγράφων HTML
 second_title: Aspose.Words Java Document Processing API
 description: Μάθετε πώς να φορτώνετε και να αποθηκεύετε έγγραφα HTML σε Java χρησιμοποιώντας το Aspose.Words για Java. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα για απρόσκοπτη ενσωμάτωση εγγράφων.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Τώρα που φορτώσαμε το HTML σε a`Document`, μπορούμε να το αποθηκεύσουμε ως έγγραφο του Word. Ας το αποθηκεύσουμε σε μορφή DOCX:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Αυτός ο κωδικός αποθηκεύει το`Document` ως αρχείο DOCX, το οποίο είναι μια κοινή μορφή για έγγραφα του Word.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Σύναψη
@@ -79,7 +79,7 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 ### Πώς μπορώ να εγκαταστήσω το Aspose.Words για Java;
 
- Το Aspose.Words για Java μπορεί να γίνει λήψη από[εδώ](https://releases.aspose.com/words/java/). Ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται στον ιστότοπο για να το ρυθμίσετε στο έργο σας Java.
+ Το Aspose.Words για Java μπορεί να γίνει λήψη από[εδώ](https://releases.aspose.com/words/java/)Ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται στον ιστότοπο για να το ρυθμίσετε στο έργο σας Java.
 
 ### Μπορώ να φορτώσω σύνθετα έγγραφα HTML χρησιμοποιώντας το Aspose.Words;
 
@@ -95,4 +95,4 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση και παραδείγματα για το Aspose.Words για Java;
 
- Μπορείτε να βρείτε λεπτομερή τεκμηρίωση, παραδείγματα κώδικα και εκπαιδευτικά προγράμματα στον ιστότοπο τεκμηρίωσης Aspose.Words for Java:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).
+Μπορείτε να βρείτε λεπτομερή τεκμηρίωση, παραδείγματα κώδικα και εκπαιδευτικά προγράμματα στον ιστότοπο τεκμηρίωσης Aspose.Words for Java:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).

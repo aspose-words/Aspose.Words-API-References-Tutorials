@@ -16,7 +16,7 @@ In der heutigen digitalen Welt ist die Dokumentenverwaltung ein entscheidender A
 
 Bevor wir uns mit der Verwaltung von Dokumentberechtigungen befassen, richten wir zunächst Aspose.Words für Java ein. Befolgen Sie diese Schritte, um loszulegen:
 
-1.  Laden Sie Aspose.Words für Java herunter: Besuchen Sie[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) um die neueste Version von Aspose.Words für Java herunterzuladen.
+1.  Laden Sie Aspose.Words für Java herunter: Besuchen Sie[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)um die neueste Version von Aspose.Words für Java herunterzuladen.
 
 2. Installieren Sie Aspose.Words für Java: Befolgen Sie nach dem Herunterladen der Bibliothek die Installationsanweisungen, um sie in Ihrer Java-Entwicklungsumgebung einzurichten.
 
@@ -52,21 +52,12 @@ Hier ist ein Beispiel für einen Java-Codeausschnitt zum Festlegen von Dokumentb
 // Laden Sie das Dokument
 Document doc = new Document("sample.docx");
 
-// Definieren Sie die Zugriffskontrolle
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Dokumentenschutz anwenden
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Speichern des Dokuments
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Häufig gestellte Fragen (FAQs)
+## Häufig gestellte Fragen
 
-## Wie kann ich den Dokumentenschutz aufheben?
+### Wie kann ich den Dokumentenschutz aufheben?
 
 Um den Dokumentschutz zu entfernen, öffnen Sie einfach das geschützte Dokument und geben Sie das richtige Passwort ein, wenn es kennwortgeschützt ist. Verwenden Sie dann Aspose.Words für Java, um den Schutz wie folgt zu entfernen:
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Kann ich Berechtigungen für bestimmte Benutzer festlegen?
+### Kann ich Berechtigungen für bestimmte Benutzer festlegen?
 
 Ja, mit Aspose.Words für Java können Sie Berechtigungen für bestimmte Benutzer oder Gruppen festlegen. Sie können festlegen, wer auf das Dokument zugreifen und es bearbeiten kann.
 
-## Ist es möglich, ein Dokument mit mehreren Passwörtern zu verschlüsseln?
+### Ist es möglich, ein Dokument mit mehreren Passwörtern zu verschlüsseln?
 
 Nein, Aspose.Words für Java unterstützt Einzelkennwortverschlüsselung. Sie können ein Kennwort festlegen, um das Dokument zu schützen.
 
-## Wie kann ich die Berechtigungen eines Dokuments überprüfen?
+### Wie kann ich die Berechtigungen eines Dokuments überprüfen?
 
 Sie können Aspose.Words für Java verwenden, um die Berechtigungen eines Dokuments zu überprüfen, indem Sie dessen Schutzeinstellungen und Zugriffskontrolloptionen untersuchen.
 
-## Kann ich die Dokumentberechtigungsverwaltung automatisieren?
+### Kann ich die Dokumentberechtigungsverwaltung automatisieren?
 
 Auf jeden Fall! Sie können Aspose.Words für Java in Ihre Anwendungen integrieren, um die Verwaltung der Dokumentberechtigungen zu automatisieren und sie so zu einem nahtlosen Bestandteil Ihres Dokumenten-Workflows zu machen.
 
-## Was passiert, wenn ich das Dokumentkennwort vergesse?
+### Was passiert, wenn ich das Dokumentkennwort vergesse?
 
 Wenn Sie das Dokumentkennwort vergessen, können Sie es nicht wiederherstellen. Bewahren Sie Ihre Kennwörter unbedingt an einem sicheren Ort auf.
 

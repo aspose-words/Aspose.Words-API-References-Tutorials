@@ -20,7 +20,7 @@ Aspose.Words für Java ist eine leistungsstarke Dokumentverarbeitungsbibliothek,
 
 ## 3. Einrichten Ihrer Entwicklungsumgebung
 
-Stellen Sie zunächst sicher, dass Aspose.Words für Java in Ihrer Entwicklungsumgebung installiert ist. Sie können es von der[Aspose Downloads Seite](https://releases.aspose.com/words/java/). Nach der Installation können Sie mit dem Codieren beginnen.
+ Stellen Sie zunächst sicher, dass Aspose.Words für Java in Ihrer Entwicklungsumgebung installiert ist. Sie können es von der[Aspose Downloads Seite](https://releases.aspose.com/words/java/). Nach der Installation können Sie mit dem Codieren beginnen.
 
 ## 4. Anwendung der Lizenz
 
@@ -48,7 +48,7 @@ Testen Sie Ihre Aspose.Words-Anwendung nach dem Anwenden der Lizenz gründlich, 
 ## Vollständiger Quellcode
 ```java
         License license = new License();
-        //Diese Zeile versucht, eine Lizenz von mehreren Standorten relativ zur ausführbaren Datei und Aspose.Words.dll festzulegen.
+        // Diese Zeile versucht, eine Lizenz von mehreren Standorten relativ zur ausführbaren Datei und Aspose.Words.dll festzulegen.
         // Sie können die zusätzliche Überladung auch verwenden, um eine Lizenz aus einem Stream zu laden. Dies ist nützlich,
         // beispielsweise wenn die Lizenz als eingebettete Ressource gespeichert ist.
         try

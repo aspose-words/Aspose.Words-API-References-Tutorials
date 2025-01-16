@@ -129,4 +129,4 @@ Với những kỹ năng này, bạn có thể cải thiện cách trình bày t
  Chắc chắn rồi! Bạn có thể sử dụng bất kỳ màu nào có sẵn trong`System.Drawing.Color` lớp học.
 
 ### Làm thế nào để căn giữa bảng theo chiều ngang?  
-Các`table.Alignment = TableAlignment.Center;` dòng trong mã sẽ căn giữa bảng theo chiều ngang trên trang.
+ Các`table.Alignment = TableAlignment.Center;` dòng trong mã sẽ căn giữa bảng theo chiều ngang trên trang.

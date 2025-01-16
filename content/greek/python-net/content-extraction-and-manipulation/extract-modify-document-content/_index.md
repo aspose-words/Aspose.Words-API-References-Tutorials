@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## Τροποποίηση κειμένου
-
-Μπορείτε να τροποποιήσετε το κείμενο ρυθμίζοντας απευθείας το κείμενο των σειρών ή των παραγράφων:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## Εργασία με Μορφοποίηση
 
 Το Aspose.Words σάς επιτρέπει να εργάζεστε με στυλ μορφοποίησης:

@@ -2,7 +2,7 @@
 title: 중첩 테이블
 linktitle: 중첩 테이블
 second_title: Aspose.Words 문서 처리 API
-description: Aspose.Words for .NET을 사용하여 Word 문서에서 중첩된 테이블을 만드는 방법을 가이드를 통해 알아보세요. 복잡한 문서 레이아웃을 프로그래밍 방식으로 생성하는 데 완벽합니다.
+description: Aspose.Words for .NET을 사용하여 Word 문서에서 중첩된 테이블을 만드는 방법을 가이드를 통해 알아보세요. 복잡한 문서 레이아웃을 프로그래밍 방식으로 생성하는 데 적합합니다.
 type: docs
 weight: 10
 url: /ko/net/programming-with-tables/nested-table/

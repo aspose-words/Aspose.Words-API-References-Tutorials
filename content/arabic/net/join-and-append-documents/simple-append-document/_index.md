@@ -80,7 +80,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-ال`AppendDocument` الطريقة تأخذ معامِلين:
+ ال`AppendDocument` الطريقة تأخذ معامِلين:
 1. المستند المصدر: المستند الذي تريد إضافته.
 2.  وضع تنسيق الاستيراد: تحدد هذه المعلمة كيفية التعامل مع التنسيق. هنا، نستخدم`KeepSourceFormatting` للحفاظ على تنسيق المستند المصدر.
 

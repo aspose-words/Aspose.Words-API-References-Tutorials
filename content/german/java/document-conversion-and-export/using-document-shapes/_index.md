@@ -14,7 +14,7 @@ In diesem umfassenden Leitfaden tauchen wir in die Welt der Dokumentformen in As
 
 ## Erste Schritte mit Dokumentformen
 
-Bevor wir uns in den Code stürzen, richten wir unsere Umgebung ein. Stellen Sie sicher, dass Sie Aspose.Words für Java in Ihr Projekt integriert haben. Falls noch nicht geschehen, können Sie es von der Aspose-Website herunterladen.[Laden Sie Aspose.Words für Java herunter](https://releases.aspose.com/words/java/)
+ Bevor wir uns in den Code stürzen, richten wir unsere Umgebung ein. Stellen Sie sicher, dass Sie Aspose.Words für Java in Ihr Projekt integriert haben. Falls noch nicht geschehen, können Sie es von der Aspose-Website herunterladen.[Laden Sie Aspose.Words für Java herunter](https://releases.aspose.com/words/java/)
 
 ## Hinzufügen von Formen zu Dokumenten
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

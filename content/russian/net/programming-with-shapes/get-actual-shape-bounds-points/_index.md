@@ -69,7 +69,7 @@ Console.Write("\nGets the actual bounds of the shape in points: ");
 Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
-The`GetShapeRenderer` метод предоставляет средство визуализации для формы, и`BoundsInPoints` дает нам точные размеры.
+ The`GetShapeRenderer` метод предоставляет средство визуализации для формы, и`BoundsInPoints` дает нам точные размеры.
 
 ## Заключение
 

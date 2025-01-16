@@ -100,7 +100,7 @@ Manchmal kann ein Textfeld Teil einer Kette sein, auf die andere Felder verweise
 textBox.Previous?.BreakForwardLink();
 ```
 
-Der`?.` Operator stellt sicher, dass die Methode nur aufgerufen wird, wenn`Previous` ist nicht null, wodurch potenzielle Laufzeitfehler vermieden werden.
+ Der`?.` Operator stellt sicher, dass die Methode nur aufgerufen wird, wenn`Previous` ist nicht null, wodurch potenzielle Laufzeitfehler vermieden werden.
 
 ## Abschluss
 

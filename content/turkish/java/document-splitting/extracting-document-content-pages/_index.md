@@ -40,7 +40,7 @@ public class DocumentExtractor {
 
 ### Aspose.Words'ü Projenize Ekleme
 
- Aspose.Words'ü projenize eklemek için, indirilen JAR dosyalarını projenizin klasörüne kopyalayın.`lib` klasöre ekleyin ve bunları sınıf yolunuza ekleyin. Artık belge çıkarma dünyasına dalmaya hazırsınız!
+Aspose.Words'ü projenize eklemek için, indirilen JAR dosyalarını projenizin klasörüne kopyalayın.`lib` klasöre ekleyin ve bunları sınıf yolunuza ekleyin. Artık belge çıkarma dünyasına dalmaya hazırsınız!
 
 ## Belgeleri Yükleme ve Ayrıştırma
 
@@ -64,7 +64,7 @@ DocumentVisitor visitor = new DocumentVisitor();
 // Belgeyi dolaş
 doc.accept(visitor);
 
-//Çıkarılan içerik artık ziyaretçide mevcut
+// Çıkarılan içerik artık ziyaretçide mevcut
 String extractedText = visitor.getText();
 ```
 
@@ -90,7 +90,7 @@ String pageText = doc.extractText(pageInfo);
 Tüm sayfalardan içerik çıkarmak için basit bir döngü kullanabilirsiniz:
 
 ```java
-// Belgedeki toplam sayfa sayısını alın
+//Belgedeki toplam sayfa sayısını alın
 int pageCount = doc.getPageCount();
 
 for (int i = 0; i < pageCount; i++) {
@@ -120,7 +120,7 @@ builder.write("This text is bold.");
 İçeriği çıkarıp düzenledikten sonra onu yeni bir belgeye kaydedebilirsiniz:
 
 ```java
-//Çıkarılan içeriği yeni bir belgeye kaydedin
+// Çıkarılan içeriği yeni bir belgeye kaydedin
 doc.save("extracted_content.docx");
 ```
 

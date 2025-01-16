@@ -7,168 +7,142 @@ type: docs
 weight: 13
 url: /ja/java/table-processing/formatting-tables/
 ---
-
-Aspose.Words for Java を使用してドキュメント内の表の書式設定の技術を習得する旅に出る準備はできていますか? この包括的なガイドでは、特に表に焦点を当てて、ドキュメントの書式設定の世界を深く掘り下げていきます。Aspose.Words for Java は、ドキュメント内の表を簡単に作成、操作、強化できる強力なツールです。
-
 ## 導入
 
-Aspose.Words for Java は、ドキュメント処理のさまざまな側面を操作できる Java ライブラリです。レポート、契約書、または表を含むドキュメントを扱う場合、このライブラリは信頼できるパートナーになります。豊富な機能と性能により、正確でプロフェッショナルなドキュメントの書式設定を実現できます。
+Aspose.Words for Java を使用して、Word 文書に簡単に表を作成する準備はできていますか? 表はデータの整理に不可欠です。この強力なライブラリを使用すると、プログラムで Word 文書に表を作成、入力、さらにはネストすることができます。このステップ バイ ステップ ガイドでは、表の作成、セルの結合、ネストされた表の追加方法について説明します。
 
-## Aspose.Words for Java を使い始める
+## 前提条件
 
-表の書式設定の詳細に入る前に、開発環境をセットアップして Aspose.Words for Java に慣れておきましょう。
+コーディングを開始する前に、次のものを用意してください。
 
-### インストール
+- システムに Java 開発キット (JDK) がインストールされています。
+-  Aspose.Words for Java ライブラリ。[ここからダウンロード](https://releases.aspose.com/words/java/).
+- Java プログラミングに関する基本的な理解。
+- IntelliJ IDEA、Eclipse、または使い慣れたその他の IDE。
+- あ[一時ライセンス](https://purchase.aspose.com/temporary-license/) Aspose.Words の全機能を利用できるようになります。
 
-まず、Aspose.Words for Javaをダウンロードしてインストールする必要があります。ダウンロードリンクは[ここ](https://releases.aspose.com/words/java/)インストールしたら、このライブラリを使用してプログラムでドキュメントを操作できるようになります。
+## パッケージのインポート
 
-### Aspose.Words for Java をプロジェクトに追加する
-
-Aspose.Words for Java をダウンロードしたら、ライブラリを Java プロジェクトに追加します。これを行うには、プロジェクトのクラスパスに JAR ファイルを含めます。
-
-### Aspose.Words for Java の初期化
-
-Aspose.Words for Java の使用を開始するには、コード内で初期化する必要があります。その方法の簡単な例を次に示します。
+Aspose.Words for Java を使用するには、必要なクラスとパッケージをインポートする必要があります。次のインポートを Java ファイルの先頭に追加します。
 
 ```java
-import com.aspose.words.Document;
-
-public class TableFormattingExample {
-    public static void main(String[] args) {
-        // Aspose.Words for Java を初期化する
-        Document doc = new Document();
-        
-        //ここにコードを入力してください
-    }
-}
+import com.aspose.words.*;
 ```
 
-## テーブルの作成とデータ入力
+簡単に実行できるように、プロセスを小さなステップに分割してみましょう。
 
-環境が設定されたので、ドキュメント内のテーブルの作成とデータ入力に取り掛かりましょう。
+## ステップ1: ドキュメントと表を作成する
 
-### テーブルの作成
+最初に必要なものは何でしょうか? 作業に使用するドキュメントです。
 
-文書内に表を作成するには、`Table` Aspose.Words for Java のクラス。基本的なテーブルを作成する方法は次のとおりです。
+まず、新しい Word 文書と表を作成します。文書の本文に表を追加します。
 
 ```java
+Document doc = new Document();
 Table table = new Table(doc);
+doc.getFirstSection().getBody().appendChild(table);
 ```
 
-### 行と列の追加
+- `Document`: Word 文書を表します。
+- `Table`: 空のテーブルを作成します。
+- `appendChild`: ドキュメントの本文に表を追加します。
 
-表を使いやすいものにするには、行と列を追加する必要があります。手順は次のとおりです。
+## ステップ2: 表に行とセルを追加する
+
+行とセルのないテーブルですか? それは車輪のない車のようなものです! これを修正しましょう。
 
 ```java
-//テーブルに行を追加する
-Row row = table.getRows().add();
+Row firstRow = new Row(doc);
+table.appendChild(firstRow);
 
-//行にセルを追加する
-Cell cell1 = row.getCells().add();
-cell1.getCellFormat().setPreferredWidth(100.0);
-
-Cell cell2 = row.getCells().add();
-cell2.getCellFormat().setPreferredWidth(200.0);
-
-//テーブルにデータを入力するコードはここに記述します
+Cell firstCell = new Cell(doc);
+firstRow.appendChild(firstCell);
 ```
 
-## 表の書式設定
+- `Row`テーブル内の行を表します。
+- `Cell`: 行内のセルを表します。
+- `appendChild`: 表に行とセルを追加します。
 
-書式設定は魔法が起こる場所です。Aspose.Words for Java には、表を書式設定するための豊富なオプションが用意されています。一般的な書式設定タスクをいくつか見てみましょう。
+## ステップ3: セルにテキストを追加する
 
-### 列幅の調整
-
-列の幅を制御して、テーブルの見た目を美しくすることができます。列の幅を調整する方法は次のとおりです。
+テーブルに個性を加える時間です!
 
 ```java
-//列の優先幅を設定する
-cell1.getCellFormat().setPreferredWidth(100.0);
+Paragraph paragraph = new Paragraph(doc);
+firstCell.appendChild(paragraph);
+
+Run run = new Run(doc, "Hello world!");
+paragraph.appendChild(run);
 ```
 
-### 境界線の適用
+- `Paragraph`: セルに段落を追加します。
+- `Run`: 段落にテキストを追加します。
 
-表に境界線を追加すると、読みやすさが向上します。境界線のスタイルもカスタマイズできます。
+## ステップ4: 表のセルを結合する
+
+セルを結合してヘッダーまたはスパンを作成したいですか? 簡単です!
 
 ```java
-//セルに境界線を適用する
-cell1.getCellFormat().getBorders().setLineStyle(LineStyle.SINGLE);
-cell1.getCellFormat().getBorders().setColor(Color.BLACK);
+DocumentBuilder builder = new DocumentBuilder(doc);
+
+builder.insertCell();
+builder.getCellFormat().setHorizontalMerge(CellMerge.FIRST);
+builder.write("Text in merged cells.");
+
+builder.insertCell();
+builder.getCellFormat().setHorizontalMerge(CellMerge.PREVIOUS);
+builder.endRow();
 ```
 
-### セルの結合
+- `DocumentBuilder`: ドキュメントの構築を簡素化します。
+- `setHorizontalMerge`: セルを水平方向に結合します。
+- `write`: 結合されたセルにコンテンツを追加します。
 
-セルの結合は、ヘッダー セルを作成したり、特定の目的のためにセルを結合したりする場合に便利です。
+## ステップ5: ネストされたテーブルを追加する
+
+レベルアップする準備はできましたか? テーブル内にテーブルを追加してみましょう。
 
 ```java
-//セルを水平に結合
-table.mergeCells(cell1, cell2);
+builder.moveTo(table.getRows().get(0).getCells().get(0).getFirstParagraph());
+
+builder.startTable();
+builder.insertCell();
+builder.write("Hello world!");
+builder.endTable();
 ```
 
-## 高度なテーブル操作
+- `moveTo`: カーソルをドキュメント内の特定の場所に移動します。
+- `startTable`: ネストされたテーブルの作成を開始します。
+- `endTable`: ネストされたテーブルを終了します。
 
-Aspose.Words for Java は、複雑なテーブル シナリオを処理するための高度な機能を提供します。そのいくつかを見てみましょう。
+## 結論
 
-### ネストされたテーブルの追加
+おめでとうございます。Aspose.Words for Java を使用してテーブルを作成、入力、およびスタイル設定する方法を学習しました。テキストの追加からセルの結合、テーブルのネストまで、Word 文書でデータを効果的に構造化するためのツールが手に入りました。
 
-場合によっては、セル内にネストされたテーブルを追加する必要があります。これは次のように実現できます。
-
-```java
-//ネストされたテーブルを作成する
-Table nestedTable = new Table(doc);
-Row nestedRow = nestedTable.getRows().add();
-Cell nestedCell = nestedRow.getCells().add();
-
-//ネストされたテーブルにコンテンツを追加する
-nestedCell.getFirstParagraph().appendChild(new Run(doc, "Nested Table Content"));
-
-//ネストされたテーブルをメインテーブルに追加する
-cell1.appendChild(nestedTable);
-```
-
-### スタイリッシュなテーブルスタイルの追加
-
-Aspose.Words for Java は、ドキュメントにプロフェッショナルな外観を与えるさまざまな表スタイルをサポートしています。
-
-```java
-//定義済みの表スタイルを適用する
-table.setStyleIdentifier(StyleIdentifier.LIGHT_SHADING_ACCENT_1);
-```
-
-## よくある質問（FAQ）
-
-### テーブルセルの背景色を変更するにはどうすればよいですか?
-
-表のセルの背景色を変更するには、`Shading`プロパティ。次に例を示します。
-
-```java
-cell1.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
-```
+## よくある質問
 
 ### 表のセルにハイパーリンクを追加することは可能ですか?
 
 はい、Aspose.Words for Java のテーブル セルにハイパーリンクを追加できます。手順は次のとおりです。
 
 ```java
-Run run = new Run(doc, "Click Here");
-run.getFont().setUnderline(Underline.SINGLE);
-run.getFont().setColor(Color.BLUE);
-run.getHyperlink().setAddress("https://www.example.com");
-cell1.getFirstParagraph().appendChild(run);
+builder.moveTo(table.getRows().get(0).getCells().get(0).getFirstParagraph());
+
+//ハイパーリンクを挿入し、カスタム書式で強調します。
+//ハイパーリンクはクリック可能なテキストであり、URL で指定された場所に移動します。
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", 偽);
 ```
 
-### 表内のセルに条件付き書式を適用できますか?
+### Aspose.Words for Java を無料で使用できますか?  
+制限付きで使用したり、[無料トライアル](https://releases.aspose.com/)その潜在能力を最大限に引き出すために。
 
-はい、特定の条件に基づいてセルに条件付き書式を適用できます。これを実現するには、データ値に基づいてセルの色やテキストを変更するなどのプログラミング ロジックを使用する必要があります。
+### 表内のセルを垂直に結合するにはどうすればいいですか?  
+使用`setVerticalMerge`方法の`CellFormat`水平マージに似たクラス。
 
-### テーブルを PDF や DOCX などの異なる形式でエクスポートするにはどうすればよいですか?
+### 表のセルに画像を追加できますか?  
+はい、`DocumentBuilder`表のセルに画像を挿入します。
 
- Aspose.Words for Javaには、さまざまな形式へのエクスポートオプションが用意されています。`Save`方法。次に例を示します。
-
-```java
-doc.save("output.pdf", SaveFormat.PDF);
-```
-
-## 結論
-
-この包括的なガイドでは、Aspose.Words for Java を使用してドキュメント内の表をフォーマットする魅力的な世界を探求しました。強力な機能と柔軟性により、ドキュメントのフォーマット スキルを次のレベルに引き上げることができます。レポート、プレゼンテーション、または表を含むドキュメントを作成する場合、Aspose.Words for Java は信頼できるパートナーです。さあ、Aspose.Words for Java を使用してドキュメントのフォーマットの可能性を最大限に引き出しましょう。
+### Aspose.Words for Java に関するその他のリソースはどこで見つかりますか?  
+チェックしてください[ドキュメント](https://reference.aspose.com/words/java/)または[サポートフォーラム](https://forum.aspose.com/c/words/8/)詳細なガイドについては。

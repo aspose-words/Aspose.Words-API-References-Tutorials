@@ -80,7 +80,7 @@ Az utolsó nyomtatott tulajdonság frissítése segít a dokumentumhasználat ny
 Igen, az Aspose.Words for .NET lehetővé teszi a dokumentum különféle tulajdonságainak frissítését, például szerző, cím, tárgy stb.
 
 ### Az Aspose.Words for .NET ingyenes?
-Az Aspose.Words for .NET ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/). Hosszabb használathoz licencet kell vásárolnia.
+ Az Aspose.Words for .NET ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/). Hosszabb használathoz licencet kell vásárolnia.
 
 ### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
-Részletes dokumentációt találhat az Aspose.Words for .NET webhelyen[itt](https://reference.aspose.com/words/net/).
+ Részletes dokumentációt találhat az Aspose.Words for .NET webhelyen[itt](https://reference.aspose.com/words/net/).

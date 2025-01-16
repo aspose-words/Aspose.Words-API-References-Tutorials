@@ -10,7 +10,7 @@ url: /pl/java/document-conversion-and-export/using-charts/
 
 ## Wprowadzenie do korzystania z wykresów w Aspose.Words dla Java
 
-W tym samouczku pokażemy, jak pracować z wykresami przy użyciu Aspose.Words for Java. Dowiesz się, jak tworzyć różne typy wykresów, dostosowywać właściwości osi, formatować etykiety danych i nie tylko. Zanurzmy się!
+tym samouczku pokażemy, jak pracować z wykresami przy użyciu Aspose.Words for Java. Dowiesz się, jak tworzyć różne typy wykresów, dostosowywać właściwości osi, formatować etykiety danych i nie tylko. Zanurzmy się!
 
 ## Tworzenie wykresu liniowego
 
@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Zmień oś X tak, aby przedstawiała kategorię zamiast daty.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Mierzone w jednostkach wyświetlanych na osi Y (setkach).
+xAxis.setCrossesAt(3.0); //Mierzone w jednostkach wyświetlanych na osi Y (setkach).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -121,7 +121,7 @@ Możesz dalej dostosowywać swoje wykresy, dostosowując granice, jednostki inte
 
 ## Wniosek
 
-tym samouczku przyjrzeliśmy się sposobowi pracy z wykresami przy użyciu Aspose.Words for Java. Nauczyłeś się, jak tworzyć różne typy wykresów, dostosowywać właściwości osi, formatować etykiety danych i nie tylko. Aspose.Words for Java udostępnia potężne narzędzia do dodawania wizualnych reprezentacji danych do dokumentów, ulepszając sposób prezentacji informacji.
+W tym samouczku przyjrzeliśmy się sposobowi pracy z wykresami przy użyciu Aspose.Words for Java. Nauczyłeś się, jak tworzyć różne typy wykresów, dostosowywać właściwości osi, formatować etykiety danych i nie tylko. Aspose.Words for Java udostępnia potężne narzędzia do dodawania wizualnych reprezentacji danych do dokumentów, ulepszając sposób prezentacji informacji.
 
 ## Najczęściej zadawane pytania
 
@@ -131,7 +131,7 @@ tym samouczku przyjrzeliśmy się sposobowi pracy z wykresami przy użyciu Aspos
 
 ### Jak mogę sformatować etykiety danych, używając niestandardowych formatów liczb?
 
- Możesz sformatować etykiety danych, uzyskując dostęp do`DataLabels` właściwości serii i ustawienie żądanego kodu formatu za pomocą`getNumberFormat().setFormatCode()`.
+Możesz sformatować etykiety danych, uzyskując dostęp do`DataLabels` właściwości serii i ustawienie żądanego kodu formatu za pomocą`getNumberFormat().setFormatCode()`.
 
 ### Jak dostosować właściwości osi na wykresie?
 
@@ -139,7 +139,7 @@ tym samouczku przyjrzeliśmy się sposobowi pracy z wykresami przy użyciu Aspos
 
 ### Jak mogę tworzyć inne typy wykresów, np. wykresy punktowe lub wykresy powierzchniowe?
 
-Możesz tworzyć różne typy wykresów, określając odpowiednie`ChartType` podczas wstawiania wykresu za pomocą`builder.insertChart(ChartType.TYPE, width, height)`.
+ Możesz tworzyć różne typy wykresów, określając odpowiednie`ChartType` podczas wstawiania wykresu za pomocą`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Jak mogę ukryć oś wykresu?
 

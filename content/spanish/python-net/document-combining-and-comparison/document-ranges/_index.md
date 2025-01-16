@@ -84,20 +84,12 @@ for run in doc.get_child_nodes(NodeType.RUN, True):
 
 ## Extrayendo contenido
 
-A veces necesitamos extraer contenido específico. Navegar por los rangos de contenido nos permite extraer precisamente lo que necesitamos:
+veces necesitamos extraer contenido específico. Navegar por los rangos de contenido nos permite extraer precisamente lo que necesitamos:
 
 ```python
 range = doc.range
 # Define your specific content range here
 extracted_text = range.text
-```
-
-## Fusión de documentos
-
-Combinar documentos sin problemas es una habilidad valiosa. Navegar por los documentos nos ayuda a combinarlos de manera eficiente:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
 ```
 
 ## División de documentos
@@ -117,8 +109,8 @@ Los encabezados y pies de página suelen requerir un tratamiento específico. Na
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

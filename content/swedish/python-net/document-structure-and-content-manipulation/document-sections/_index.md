@@ -99,4 +99,4 @@ Ja, Aspose.Words stöder olika Word-format, inklusive DOC, DOCX, RTF och mer.
  Du kan använda`Shape` klass för att lägga till bilder i sidhuvuden eller sidfötter. Se API-dokumentationen för detaljerad vägledning.
 
 ### Var kan jag ladda ner den senaste versionen av Aspose.Words för Python?
- Du kan ladda ner den senaste versionen av Aspose.Words for Python från[Aspose.Words släpper sida](https://releases.aspose.com/words/python/).
+ Du kan ladda ner den senaste versionen av Aspose.Words för Python från[Aspose.Words släpper sida](https://releases.aspose.com/words/python/).

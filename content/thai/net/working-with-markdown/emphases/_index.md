@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-การ`dataDir` ตัวแปรคือตัวแทนสำหรับไดเร็กทอรีที่คุณจะบันทึกไฟล์ Markdown ของคุณ อย่าลืมแทนที่ "YOUR DOCUMENT DIRECTORY" ด้วยเส้นทางจริง
+ การ`dataDir` ตัวแปรคือตัวแทนสำหรับไดเร็กทอรีที่คุณจะบันทึกไฟล์ Markdown ของคุณ อย่าลืมแทนที่ "YOUR DOCUMENT DIRECTORY" ด้วยเส้นทางจริง
 
 ## ขั้นตอนที่ 2: การเขียนข้อความปกติ
 

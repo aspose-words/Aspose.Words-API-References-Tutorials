@@ -2,7 +2,7 @@
 title: 加入新頁面
 linktitle: 加入新頁面
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 中加入和附加文件。請按照我們的逐步指南進行高效率的文檔合併。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 中加入和追加文件。請按照我們的逐步指南進行高效率的文檔合併。
 type: docs
 weight: 10
 url: /zh-hant/net/join-and-append-documents/join-new-page/

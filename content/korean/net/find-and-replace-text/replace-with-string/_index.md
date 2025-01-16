@@ -71,7 +71,7 @@ builder.Writeln("sad mad bad");
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-그만큼`Replace`방법은 간단합니다. 찾을 단어, 대체 단어, 찾기 및 바꾸기 작업에 대한 옵션을 지정합니다.
+ 그만큼`Replace`방법은 간단합니다. 찾을 단어, 대체 단어, 찾기 및 바꾸기 작업에 대한 옵션을 지정합니다.
 
 ## 5단계: 문서 저장
 

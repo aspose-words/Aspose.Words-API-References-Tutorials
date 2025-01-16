@@ -92,7 +92,7 @@ Aspose.Words supporta un'ampia gamma di formati, tra cui PDF, HTML, EPUB e altro
 ### È possibile rasterizzare solo elementi specifici nel documento?  
  Attualmente, il`RasterizeTransformedElements` l'opzione si applica a tutti gli elementi trasformati nel documento. Per un controllo più granulare, considera di elaborare gli elementi separatamente prima della conversione.
 
-### Come posso risolvere i problemi di conversione dei documenti?  
+### Come posso risolvere i problemi relativi alla conversione dei documenti?  
  Assicurati di avere l'ultima versione di Aspose.Words e controlla la documentazione per eventuali problemi di conversione specifici. Inoltre, il[forum di supporto](https://forum.aspose.com/c/words/8) è un ottimo posto per chiedere aiuto.
 
 ### Ci sono limitazioni alla versione di prova di Aspose.Words per .NET?  

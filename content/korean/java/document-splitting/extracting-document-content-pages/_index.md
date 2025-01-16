@@ -40,7 +40,7 @@ public class DocumentExtractor {
 
 ### 프로젝트에 Aspose.Words 추가하기
 
- 프로젝트에 Aspose.Words를 추가하려면 다운로드한 JAR 파일을 프로젝트의`lib` 폴더를 만들고 클래스 경로에 추가하세요. 이제 문서 추출의 세계로 뛰어들 준비가 되었습니다!
+프로젝트에 Aspose.Words를 추가하려면 다운로드한 JAR 파일을 프로젝트의`lib` 폴더를 만들고 클래스 경로에 추가하세요. 이제 문서 추출의 세계로 뛰어들 준비가 되었습니다!
 
 ## 문서 로딩 및 파싱
 
@@ -64,7 +64,7 @@ DocumentVisitor visitor = new DocumentVisitor();
 // 문서 탐색
 doc.accept(visitor);
 
-//추출된 컨텐츠는 이제 방문자에게 제공됩니다.
+// 추출된 컨텐츠는 이제 방문자에게 제공됩니다.
 String extractedText = visitor.getText();
 ```
 
@@ -90,7 +90,7 @@ String pageText = doc.extractText(pageInfo);
 모든 페이지에서 콘텐츠를 추출하려면 간단한 루프를 사용할 수 있습니다.
 
 ```java
-// 문서의 총 페이지 수를 가져옵니다.
+//문서의 총 페이지 수를 가져옵니다.
 int pageCount = doc.getPageCount();
 
 for (int i = 0; i < pageCount; i++) {
@@ -120,7 +120,7 @@ builder.write("This text is bold.");
 콘텐츠를 추출하고 조작한 후에는 새 문서에 저장할 수 있습니다.
 
 ```java
-//추출된 내용을 새 문서에 저장합니다.
+// 추출된 내용을 새 문서에 저장합니다.
 doc.save("extracted_content.docx");
 ```
 

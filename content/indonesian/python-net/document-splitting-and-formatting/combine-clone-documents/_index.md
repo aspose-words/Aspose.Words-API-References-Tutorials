@@ -11,7 +11,7 @@ Dalam dunia digital yang serba cepat saat ini, pemrosesan dokumen merupakan aspe
 
 ## Menginstal Aspose.Words
 
-Sebelum kita menyelami detailnya, Anda perlu menyiapkan Aspose.Words untuk Python. Anda dapat mengunduh dan menginstalnya menggunakan tautan berikut:[Unduh Aspose.Words untuk Python](https://releases.aspose.com/words/python/). 
+ Sebelum kita menyelami detailnya, Anda perlu menyiapkan Aspose.Words untuk Python. Anda dapat mengunduh dan menginstalnya menggunakan tautan berikut:[Unduh Aspose.Words untuk Python](https://releases.aspose.com/words/python/). 
 
 ## Menggabungkan Dokumen
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## Teknik Lanjutan
-
-### Mengganti Teks
-
-Aspose.Words memungkinkan Anda menemukan dan mengganti teks dalam dokumen dengan mudah:
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### Mengubah Pemformatan
+## Mengubah Pemformatan
 
 Anda juga dapat mengubah format menggunakan Aspose.Words:
 
@@ -127,7 +108,7 @@ Ya, Anda dapat melakukan klon dangkal untuk menyalin hanya struktur dokumen tanp
  Memanfaatkan`range.replace()` metode beserta pilihan yang tepat untuk menemukan dan mengganti teks secara efisien.
 
 ### Apakah Aspose.Words mendukung modifikasi format?
-Tentu saja, Anda dapat mengubah format menggunakan metode seperti`run.font.size` Dan`run.font.bold`.
+ Tentu saja, Anda dapat mengubah format menggunakan metode seperti`run.font.size` Dan`run.font.bold`.
 
 ### Di mana saya dapat mengakses dokumentasi Aspose.Words?
  Anda dapat menemukan dokumentasi lengkap di[Referensi API Aspose.Words untuk Python](https://reference.aspose.com/words/python-net/).

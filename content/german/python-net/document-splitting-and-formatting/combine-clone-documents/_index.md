@@ -11,7 +11,7 @@ In der heutigen schnelllebigen digitalen Welt ist die Dokumentenverarbeitung ein
 
 ## Aspose.Words installieren
 
-Bevor wir in die Details eintauchen, müssen Sie Aspose.Words für Python einrichten. Sie können es über den folgenden Link herunterladen und installieren:[Laden Sie Aspose.Words für Python herunter](https://releases.aspose.com/words/python/). 
+ Bevor wir in die Details eintauchen, müssen Sie Aspose.Words für Python einrichten. Sie können es über den folgenden Link herunterladen und installieren:[Laden Sie Aspose.Words für Python herunter](https://releases.aspose.com/words/python/). 
 
 ## Dokumente kombinieren
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## Fortgeschrittene Techniken
-
-### Text ersetzen
-
-Mit Aspose.Words können Sie Text in Dokumenten einfach suchen und ersetzen:
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### Formatierung ändern
+## Formatierung ändern
 
 Sie können die Formatierung auch mit Aspose.Words ändern:
 
@@ -127,7 +108,7 @@ Ja, Sie können einen oberflächlichen Klon durchführen, um nur die Struktur ei
  Nutzen Sie die`range.replace()` Methode zusammen mit den entsprechenden Optionen zum effizienten Suchen und Ersetzen von Text.
 
 ### Unterstützt Aspose.Words das Ändern der Formatierung?
-Natürlich können Sie die Formatierung mit Methoden wie`run.font.size` Und`run.font.bold`.
+ Natürlich können Sie die Formatierung mit Methoden wie`run.font.size` Und`run.font.bold`.
 
 ### Wo kann ich auf die Aspose.Words-Dokumentation zugreifen?
  Eine ausführliche Dokumentation finden Sie unter[Aspose.Words für Python API-Referenz](https://reference.aspose.com/words/python-net/).

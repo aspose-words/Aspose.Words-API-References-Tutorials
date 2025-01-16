@@ -37,13 +37,6 @@ Một trong những điểm mạnh chính của Aspose.Words for Java là khả 
 Document doc = new Document("sample.docx");
 ```
 
-### Tải một tài liệu PDF
-
-```java
-// Tải một tài liệu PDF
-Document doc = new Document("sample.pdf");
-```
-
 ## Sửa đổi và lưu tài liệu
 
 Sau khi tải tài liệu, bạn có thể thực hiện nhiều thao tác, từ thay thế văn bản đơn giản đến thay đổi định dạng phức tạp.
@@ -71,7 +64,7 @@ Aspose.Words for Java cho phép chuyển đổi liền mạch giữa các địn
 Document doc = new Document("sample.docx");
 
 // Lưu dưới dạng PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Xử lý hình ảnh và bảng
@@ -81,7 +74,7 @@ Việc kết hợp hình ảnh và bảng là yêu cầu chung khi làm việc v
 ### Thêm hình ảnh vào tài liệu
 
 ```java
-// Tải một tài liệu
+//Tải một tài liệu
 Document doc = new Document("document.docx");
 
 // Chèn một hình ảnh

@@ -50,7 +50,7 @@ Les tableaux sont construits à l'aide de la classe Table dans Aspose.Words. Pou
 
 ```python
 # Create a table with 3 rows and 4 columns
-table = doc.tables.add(3, 4)
+table = doc.get_child(aw.NodeType.TABLE, 0, True).as_table()
 
 # Set preferred width for the table
 table.preferred_width = doc.page_width
@@ -146,4 +146,4 @@ Absolument ! Aspose.Words offre une large gamme de fonctionnalités pour travail
 
 ### Puis-je appliquer différents styles à des cellules individuelles ?
 
-Oui, vous pouvez personnaliser les styles de cellule en ajustant la mise en forme des polices, les couleurs d'arrière-plan et l'alignement.
+Oui, vous pouvez personnaliser les styles de cellule en ajustant la mise en forme de la police, les couleurs d'arrière-plan et l'alignement.

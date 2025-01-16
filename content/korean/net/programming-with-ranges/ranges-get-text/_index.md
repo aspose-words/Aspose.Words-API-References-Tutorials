@@ -67,7 +67,7 @@ Document doc = new Document(dataDir + "Document.docx");
 string text = doc.Range.Text;
 ```
 
-그만큼`Range.Text` 속성은 문서 범위 내에 포함된 모든 텍스트를 제공합니다. 여기에는 모든 섹션, 헤더, 푸터 및 본문의 텍스트가 포함됩니다.
+ 그만큼`Range.Text` 속성은 문서 범위 내에 포함된 모든 텍스트를 제공합니다. 여기에는 모든 섹션, 헤더, 푸터 및 본문의 텍스트가 포함됩니다.
 
 ## 4단계: 추출된 텍스트 표시
 

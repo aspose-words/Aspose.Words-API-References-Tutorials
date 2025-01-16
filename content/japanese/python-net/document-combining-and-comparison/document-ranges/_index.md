@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## ドキュメントの結合
-
-ドキュメントをシームレスに結合することは貴重なスキルです。ドキュメント間を移動することで、ドキュメントを効率的に結合できます。
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## ドキュメントの分割
 
 場合によっては、ドキュメントを小さな部分に分割する必要があるかもしれません。ドキュメントをナビゲートすることで、これを実現できます。
@@ -117,8 +109,8 @@ for section in sections:
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

@@ -60,7 +60,7 @@ A Word dokumentumok mezői dinamikusak lehetnek, ami azt jelenti, hogy nem mindi
 document.UpdateFields();
 ```
 
-A`UpdateFields` A metódus a dokumentum összes mezőjét iterálja, és frissíti a legfrissebb adatokkal. Ez a lépés döntő fontosságú, ha a mezők dinamikus tartalomtól, például dátumoktól vagy számításoktól függenek.
+ A`UpdateFields` A metódus a dokumentum összes mezőjét iterálja, és frissíti a legfrissebb adatokkal. Ez a lépés döntő fontosságú, ha a mezők dinamikus tartalomtól, például dátumoktól vagy számításoktól függenek.
 
 ## 3. lépés: A mező eredményeinek megjelenítése
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
-A`DisplayResult` tulajdona a`Field` osztály a mező formázott értékét adja vissza. A`foreach` ciklus végigmegy a dokumentum összes mezőjén, és kinyomtatja az eredményeket.
+ A`DisplayResult` tulajdona a`Field` osztály a mező formázott értékét adja vissza. A`foreach` ciklus végigmegy a dokumentum összes mezőjén, és kinyomtatja az eredményeket.
 
 ## Következtetés
 
@@ -97,4 +97,4 @@ Különféle mezőtípusokat frissíthet, beleértve a dátummezőket, a dokumen
 felhasználói bevitelt igénylő mezőket (például az űrlapmezőket) manuálisan vagy további kóddal kell kitölteni.
 
 ### Lehetséges a mezőeredményeket más formátumban megjeleníteni?  
-A`DisplayResult` tulajdonság biztosítja a formázott kimenetet. Ha más formátumra van szüksége, fontolja meg a további feldolgozást az Ön igényei alapján.
+ A`DisplayResult` tulajdonság biztosítja a formázott kimenetet. Ha más formátumra van szüksége, fontolja meg a további feldolgozást az Ön igényei alapján.

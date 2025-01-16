@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## 2. lépés: Töltse be a dokumentumot
 
-Ezután töltsük be a Word dokumentumot a programunkba. Gondolj erre úgy, mint a kincsesláda kinyitására.
+Ezután töltsük be a Word dokumentumot a programunkba. Gondolj erre úgy, mint a kincsesládád kinyitására.
 
 ```csharp
 // Töltse be a dokumentumot.

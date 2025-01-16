@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-การ`DocumentBuilder` เป็นคลาสตัวช่วยที่ทำให้กระบวนการสร้างเอกสารง่ายขึ้น
+ การ`DocumentBuilder` เป็นคลาสตัวช่วยที่ทำให้กระบวนการสร้างเอกสารง่ายขึ้น
 
 ## ขั้นตอนที่ 3: เริ่มต้นตาราง
 

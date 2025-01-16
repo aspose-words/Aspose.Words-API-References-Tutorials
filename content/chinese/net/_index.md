@@ -38,7 +38,7 @@ is_root: true
 | [使用 Sdt 进行文字处理](./programming-with-sdt/) | 了解如何使用 Aspose.Words for .NET 中的结构化内容控件 (SDT) 进行编程。按照分步教程和 C# 中的示例代码来操作和自定义 Word 文档中的结构化内容控件。 |  
 | [使用样式和主题进行文字处理](./programming-with-styles-and-themes/) | 了解 Aspose.Words for .NET 中的编程样式和主题。通过分步教程和 C# 代码示例了解如何在 Word 文档中创建、应用和自定义样式和主题。 |  
 | [带目录的文字处理](./programming-with-table-of-content/) | 探索 Aspose.Words for .NET 中的 TOC 编程。通过分步教程和 C# 代码示例了解如何在 Word 文档中创建和操作目录。 |  
-| [文档保护](./document-protection/) | 了解如何使用 Aspose.Words for .NET 保护 Word 文档。本教程将指导您了解各种保护方法，例如锁定更改、密码保护、限制对文档元素的访问等等。 |  
+| [文档保护](./document-protection/) | 了解如何使用 Aspose.Words for .NET 保护 Word 文档。教程将指导您了解各种保护方法，例如锁定更改、密码保护、限制对文档元素的访问等等。 |  
 | [使用数字签名进行文字处理](./programming-with-digital-signatures/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中添加和管理数字签名。本教程将指导您完成生成数字签名并将其添加到文档的步骤。 |  
 | [分割文件](./split-document/) | 了解如何使用 Aspose.Words for .NET 有效地将 Word 文档拆分为单独的部分。按照分步教程并使用 C# 代码示例来学习不同的文档拆分技术。 |  
 | [使用 Documentbuilder 添加内容](./add-content-using-documentbuilder/) | 了解如何使用 DocumentBuilder 和 Aspose.Words for .NET 将内容添加到 Word 文档。带有详细代码示例的实践教程。 |  
@@ -50,7 +50,7 @@ is_root: true
 | [使用文档属性进行文字处理](./programming-with-document-properties/) | 了解如何使用 Aspose.Words for .NET 管理 Word 文档属性。本教程将引导您了解各种功能，例如读取和写入属性、自定义默认属性。 |  
 | [使用 Webextension 进行文字处理](./programming-with-webextension/) | 了解如何使用 Aspose.Words for .NET 开发 Word 文档的 Web 扩展。了解如何创建、修改和自定义 Web 扩展，并将其集成到您的 Word 文档中。 |  
 | [用图表处理文字](./programming-with-charts/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建、自定义和操作图形。教程提供分步说明和 C# 源代码来帮助您添加图表。 |  
-| [使用 Officemath 进行文字处理](./programming-with-officemath/) | 探索 Aspose.Words for .NET 中 Office Math 公式的文字处理。用于在 Word 文档中创建、编辑和格式化数学公式的分步教程和示例代码。 |  
+| [使用 Officemath 进行文字处理](./programming-with-officemath/) | 探索使用 Aspose.Words for .NET 中的 Office Math 公式进行文字处理。用于在 Word 文档中创建、编辑和格式化数学公式的分步教程和示例代码。 |  
 | [用形状处理文字](./programming-with-shapes/) | 探索 Aspose.Words for .NET 中的形状编程。通过分步教程和 C# 中的示例代码了解如何操作和自定义 Word 文档中的形状。 |  
 | [带水印的文字处理](./programming-with-watermark/) | 了解如何在 Aspose.Words for .NET 中使用水印进行编程。通过分步教程和示例 C# 代码了解如何添加文本或图像水印、自定义其外观、将其放置在页面上等。 |  
 | [使用表格样式和格式进行文字处理](./programming-with-table-styles-and-formatting/) | 了解如何在 Aspose.Words for .NET 中编程表格样式和格式。通过分步教程和 C# 中的示例代码了解如何应用预定义样式、自定义单元格格式、边框等。 |  

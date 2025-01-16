@@ -129,4 +129,4 @@ Con estas habilidades, puedes mejorar la presentación visual de tus tablas, hac
  ¡Por supuesto! Puedes utilizar cualquier color disponible en el`System.Drawing.Color` clase.
 
 ### ¿Cómo puedo centrar la tabla horizontalmente?  
-El`table.Alignment = TableAlignment.Center;` La línea en el código centra la tabla horizontalmente en la página.
+ El`table.Alignment = TableAlignment.Center;` La línea en el código centra la tabla horizontalmente en la página.

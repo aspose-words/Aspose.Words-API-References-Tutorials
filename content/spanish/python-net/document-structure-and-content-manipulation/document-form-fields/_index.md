@@ -17,16 +17,16 @@ Los campos de formulario son elementos interactivos dentro de un documento que p
 
 Antes de profundizar en la creación y el dominio de los campos de formulario, configuremos nuestro entorno y familiaricémonos con Aspose.Words para Python. Siga estos pasos para comenzar:
 
-1. **Install Aspose.Words:** Comience instalando la biblioteca Aspose.Words para Python usando el siguiente comando pip:
+1. Instalar Aspose.Words: comience instalando la biblioteca Aspose.Words para Python usando el siguiente comando pip:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Importa la biblioteca en tu script de Python para comenzar a utilizar sus funcionalidades.
+2. Importar la biblioteca: importa la biblioteca en tu script de Python para comenzar a utilizar sus funcionalidades.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Con la configuración establecida, procedamos a los conceptos básicos de creación y gestión de campos de formulario.
@@ -41,7 +41,7 @@ Los campos de entrada de texto permiten a los usuarios introducir texto. Para cr
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Casillas de verificación y botones de opción
@@ -50,12 +50,12 @@ Las casillas de verificación y los botones de opción se utilizan para seleccio
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Listas desplegables
@@ -64,7 +64,7 @@ Las listas desplegables ofrecen una selección de opciones para los usuarios. Cr
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Selectores de fecha
@@ -73,7 +73,7 @@ Los selectores de fechas permiten a los usuarios seleccionar fechas de forma có
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Configuración de propiedades de campos de formulario
@@ -122,7 +122,7 @@ Los campos de entrada de texto son versátiles y se utilizan habitualmente para 
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Una vez creado el campo, puedes configurar sus propiedades, como el nombre, el valor predeterminado y el texto del marcador de posición. Veamos cómo hacerlo:
@@ -150,14 +150,14 @@ Para crear un campo de formulario de casilla de verificación, utilice
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Para los botones de opción, puedes crearlos utilizando el tipo de forma OLE_OBJECT:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Después de crear estos campos, puede personalizar sus propiedades, como el nombre, la selección predeterminada y el texto de la etiqueta:
@@ -183,7 +183,7 @@ Las listas desplegables son útiles en situaciones en las que los usuarios neces
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Después de crear la lista desplegable, puede especificar la lista de opciones disponibles para los usuarios:
@@ -211,7 +211,7 @@ Los selectores de fechas simplifican el proceso de captura de fechas de los usua
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Después de crear el selector de fechas, puede configurar sus propiedades, como el nombre y la fecha predeterminada:
@@ -228,11 +228,7 @@ Los selectores de fechas mejoran la experiencia del usuario al capturar fechas y
 
 ## Conclusión
 
-Dominar los campos de formulario y la captura de datos en documentos de Word es una habilidad valiosa que le permitirá crear documentos interactivos y eficientes para la recopilación de datos. Aspose.Words para Python ofrece un conjunto completo de herramientas para crear, personalizar y extraer datos de campos de formulario. Desde campos de entrada de texto simples hasta cálculos complejos y formato condicional, las posibilidades son enormes.
-
 En esta guía, hemos explorado los aspectos básicos de los campos de formulario, los tipos de campos de formulario, la configuración de propiedades y la personalización de su comportamiento. También hemos abordado las prácticas recomendadas para el diseño de formularios y hemos ofrecido información sobre cómo optimizar los formularios de documentos para los motores de búsqueda.
-
-Al aprovechar el poder de Aspose.Words para Python, puede crear documentos que no solo capturen datos de manera eficaz, sino que también mejoren la participación del usuario y agilicen los flujos de trabajo de procesamiento de datos. Ahora, está listo para embarcarse en su viaje para convertirse en un maestro de los campos de formulario y la captura de datos en documentos de Word.
 
 ## Preguntas frecuentes
 

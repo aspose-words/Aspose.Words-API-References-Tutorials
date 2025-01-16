@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-그만큼`MetafileRenderingOptions` 클래스는 메타파일(예: WMF)이 렌더링되는 방법에 대한 옵션을 제공합니다. 설정하여`ScaleWmfFontsToMetafileSize` 에게`false`, Aspose.Words가 메타파일 크기에 따라 글꼴 크기를 조정하지 않도록 지시하고 있는데, 이는 전체 PDF 크기를 줄이는 데 도움이 될 수 있습니다.
+ 그만큼`MetafileRenderingOptions` 클래스는 메타파일(예: WMF)이 렌더링되는 방법에 대한 옵션을 제공합니다. 설정하여`ScaleWmfFontsToMetafileSize` 에게`false`, Aspose.Words가 메타파일 크기에 따라 글꼴 크기를 조정하지 않도록 지시하고 있는데, 이는 전체 PDF 크기를 줄이는 데 도움이 될 수 있습니다.
 
 ## 3단계: PDF 저장 옵션 설정
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-그만큼`PdfSaveOptions` 클래스를 사용하면 문서를 PDF로 저장하기 위한 다양한 설정을 지정할 수 있습니다. 이전에 구성된`MetafileRenderingOptions` 에게`MetafileRenderingOptions` 의 속성`PdfSaveOptions`, 원하는 메타파일 렌더링 설정에 따라 문서가 저장되었는지 확인하세요.
+ 그만큼`PdfSaveOptions` 클래스를 사용하면 문서를 PDF로 저장하기 위한 다양한 설정을 지정할 수 있습니다. 이전에 구성된`MetafileRenderingOptions` 에게`MetafileRenderingOptions` 의 속성`PdfSaveOptions`, 원하는 메타파일 렌더링 설정에 따라 문서가 저장되었는지 확인하세요.
 
 ## 4단계: 문서를 PDF로 저장
 

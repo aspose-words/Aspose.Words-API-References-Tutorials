@@ -53,13 +53,13 @@ Explicação:
 Em seguida, precisamos definir uma senha para proteção contra gravação. Essa senha pode ter até 15 caracteres.
 
 ```csharp
-//Digite uma senha com até 15 caracteres.
+// Digite uma senha com até 15 caracteres.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Explicação:
 
-- O`SetPassword` método é chamado no`WriteProtection` propriedade do documento.
+-  O`SetPassword` método é chamado no`WriteProtection` propriedade do documento.
 - Fornecemos uma senha ("MyPassword" neste caso) que será necessária para remover a proteção.
 
 ## Etapa 3: Habilitar recomendação somente leitura
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Explicação:
 
-- O`ReadOnlyRecommended` propriedade está definida para`true`.
+-  O`ReadOnlyRecommended` propriedade está definida para`true`.
 - Isso solicitará que os usuários abram o documento no modo somente leitura, embora eles possam optar por ignorar a recomendação.
 
 ## Etapa 4: aplicar proteção somente leitura
@@ -87,12 +87,12 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Explicação:
 
-- O`Protect` método é chamado no documento com`ProtectionType.ReadOnly` como argumento.
+-  O`Protect` método é chamado no documento com`ProtectionType.ReadOnly` como argumento.
 - Este método aplica a proteção somente leitura, impedindo qualquer modificação no documento sem a senha.
 
 ## Etapa 5: Salve o documento
 
-último passo é salvar o documento com as configurações de proteção aplicadas.
+O último passo é salvar o documento com as configurações de proteção aplicadas.
 
 ```csharp
 // Salve o documento protegido.
@@ -101,12 +101,12 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Explicação:
 
-- O`Save` O método é chamado no documento, especificando o caminho e o nome do arquivo.
+-  O`Save` O método é chamado no documento, especificando o caminho e o nome do arquivo.
 - O documento é salvo com a proteção somente leitura ativada.
 
 ## Conclusão
 
-E aí está! Você criou com sucesso um documento do Word protegido somente para leitura usando o Aspose.Words para .NET. Esse recurso garante que o conteúdo do seu documento permaneça intacto e inalterado, fornecendo uma camada extra de segurança. Não importa se você está compartilhando informações confidenciais ou documentos legais, a proteção somente para leitura é uma ferramenta essencial no seu arsenal de gerenciamento de documentos.
+aí está! Você criou com sucesso um documento do Word protegido somente para leitura usando o Aspose.Words para .NET. Esse recurso garante que o conteúdo do seu documento permaneça intacto e inalterado, fornecendo uma camada extra de segurança. Não importa se você está compartilhando informações confidenciais ou documentos legais, a proteção somente para leitura é uma ferramenta essencial no seu arsenal de gerenciamento de documentos.
 
 ## Perguntas frequentes
 
@@ -116,7 +116,7 @@ Aspose.Words para .NET é uma biblioteca poderosa que permite aos desenvolvedore
 ### Posso remover a proteção somente leitura de um documento?
  Sim, você pode remover a proteção somente leitura usando o`Unprotect` método e fornecendo a senha correta.
 
-### senha definida no documento está criptografada?
+### A senha definida no documento está criptografada?
 Sim, o Aspose.Words criptografa a senha para garantir a segurança do documento protegido.
 
 ### Posso aplicar outros tipos de proteção usando o Aspose.Words para .NET?

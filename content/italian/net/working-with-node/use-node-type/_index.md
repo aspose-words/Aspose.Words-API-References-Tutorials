@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Passaggio 2: accedere alla proprietà NodeType
 
-IL`NodeType` property è una caratteristica fondamentale in Aspose.Words. Ti consente di identificare il tipo di nodo con cui hai a che fare. Per accedere a questa proprietà, usa semplicemente il seguente codice:
+ IL`NodeType` property è una caratteristica fondamentale in Aspose.Words. Ti consente di identificare il tipo di nodo con cui hai a che fare. Per accedere a questa proprietà, usa semplicemente il seguente codice:
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -57,13 +57,13 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 ## Conclusione
 
- Padroneggiare il`NodeType`proprietà in Aspose.Words per .NET ti consente di manipolare ed elaborare i documenti in modo più efficace. Comprendendo e utilizzando diversi tipi di nodi, puoi adattare le tue attività di elaborazione dei documenti in base a esigenze specifiche. Sia che tu stia centrando paragrafi o contando tabelle, la`NodeType` la proprietà è il tuo strumento preferito.
+ Padroneggiare il`NodeType`proprietà in Aspose.Words per .NET ti consente di manipolare ed elaborare i documenti in modo più efficace. Comprendendo e utilizzando diversi tipi di nodi, puoi adattare le tue attività di elaborazione dei documenti in base a esigenze specifiche. Che tu stia centrando paragrafi o contando tabelle, la`NodeType` la proprietà è il tuo strumento preferito.
 
 ## Domande frequenti
 
 ###  Che cosa è il`NodeType` property in Aspose.Words?
 
-IL`NodeType` la proprietà identifica il tipo di nodo all'interno di un documento, ad esempio Documento, Sezione, Paragrafo, Esegui o Tabella.
+ IL`NodeType` la proprietà identifica il tipo di nodo all'interno di un documento, ad esempio Documento, Sezione, Paragrafo, Esegui o Tabella.
 
 ###  Come faccio a controllare il`NodeType` of a node?
 

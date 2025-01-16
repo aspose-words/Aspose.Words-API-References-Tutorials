@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Các`DocumentBuilder` là lớp trợ giúp giúp đơn giản hóa quá trình xây dựng tài liệu.
+ Các`DocumentBuilder` là lớp trợ giúp giúp đơn giản hóa quá trình xây dựng tài liệu.
 
 ## Bước 3: Bắt đầu bảng
 

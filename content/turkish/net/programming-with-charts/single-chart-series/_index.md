@@ -112,7 +112,7 @@ Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinde tek
 Aspose.Words for .NET, Word belgelerini programlı bir şekilde oluşturmanıza, düzenlemenize, dönüştürmenize ve değiştirmenize olanak tanıyan güçlü bir kütüphanedir.
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
- Evet, bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/).
+Evet, bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/).
 
 ### Aspose.Words için nasıl destek alabilirim?
  Aspose topluluğundan destek alabilirsiniz[forum](https://forum.aspose.com/c/words/8).

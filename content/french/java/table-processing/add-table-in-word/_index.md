@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Étape 6 : Créer un tableau et ajouter des lignes
 
-Créer un nouveau`Table` objet et spécifiez le nombre de lignes et de colonnes.
+ Créer un nouveau`Table` objet et spécifiez le nombre de lignes et de colonnes.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Étape 8 : Enregistrer le document
 
- Enregistrez le document Word à l'emplacement souhaité à l'aide du`save()` méthode.
+Enregistrez le document Word à l'emplacement souhaité à l'aide du`save()` méthode.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Étape 9 : Complétez le code
-
-Voici le code complet pour ajouter un tableau dans Word en utilisant Aspose.Words pour Java :
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Étape 5 : Créer un nouveau document Word
-        Document doc = new Document();
-
-        // Étape 6 : Créer un tableau et ajouter des lignes
-        Table table = new Table(doc);
-        int rowCount = 5; // Nombre de lignes dans le tableau
-        int columnCount = 3; // Nombre de colonnes dans le tableau
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Étape 7 : Ajouter le tableau au document
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Étape 8 : Enregistrer le document
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Conclusion

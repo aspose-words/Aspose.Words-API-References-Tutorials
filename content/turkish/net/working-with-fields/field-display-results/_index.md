@@ -60,7 +60,7 @@ Word belgelerindeki alanlar dinamik olabilir, yani her zaman en güncel verileri
 document.UpdateFields();
 ```
 
-The`UpdateFields` yöntem belgedeki tüm alanları yineler ve bunları en son verilerle günceller. Alanlarınız tarihler veya hesaplamalar gibi dinamik içeriklere bağlıysa bu adım çok önemlidir.
+ The`UpdateFields` yöntem belgedeki tüm alanları yineler ve bunları en son verilerle günceller. Alanlarınız tarihler veya hesaplamalar gibi dinamik içeriklere bağlıysa bu adım çok önemlidir.
 
 ## Adım 3: Alan Sonuçlarını Görüntüle
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
-The`DisplayResult` mülkiyeti`Field` sınıf, alanın biçimlendirilmiş değerini döndürür.`foreach` döngüsü belgedeki tüm alanları tarar ve sonuçlarını yazdırır.
+ The`DisplayResult` mülkiyeti`Field` sınıf, alanın biçimlendirilmiş değerini döndürür.`foreach` döngüsü belgedeki tüm alanları tarar ve sonuçlarını yazdırır.
 
 ## Çözüm
 
@@ -97,4 +97,4 @@ Tarih alanları, belge özellikleri ve formül alanları dahil olmak üzere çe�
 Kullanıcı girişi gerektiren alanların (form alanları gibi) manuel olarak veya ek kod aracılığıyla doldurulması gerekecektir.
 
 ### Saha sonuçlarını farklı bir formatta görüntülemek mümkün mü?  
-The`DisplayResult` özellik biçimlendirilmiş çıktıyı sağlar. Farklı bir biçime ihtiyacınız varsa, gereksinimlerinize göre ek işlemeyi göz önünde bulundurun.
+ The`DisplayResult` özellik biçimlendirilmiş çıktıyı sağlar. Farklı bir biçime ihtiyacınız varsa, gereksinimlerinize göre ek işlemeyi göz önünde bulundurun.

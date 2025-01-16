@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//إنشاء حدود أكبر للخلية الأولى من هذا الصف.
+// إنشاء حدود أكبر للخلية الأولى من هذا الصف.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -169,7 +169,7 @@ Aspose.Words for Java هي أداة قوية توفر ميزات شاملة لل
 
 ### 1. هل يمكنني استخدام أنماط الجدول المخصصة غير المضمنة في الخيارات الافتراضية؟
 
-نعم، يمكنك تحديد أنماط مخصصة وتطبيقها على جداولك باستخدام Aspose.Words for Java. تحقق من[التوثيق](https://reference.aspose.com/words/java/) لمزيد من التفاصيل حول إنشاء أنماط مخصصة.
+ نعم، يمكنك تحديد أنماط مخصصة وتطبيقها على جداولك باستخدام Aspose.Words for Java. تحقق من[التوثيق](https://reference.aspose.com/words/java/) لمزيد من التفاصيل حول إنشاء أنماط مخصصة.
 
 ### 2. كيف يمكنني تطبيق التنسيق الشرطي على الجداول؟
 

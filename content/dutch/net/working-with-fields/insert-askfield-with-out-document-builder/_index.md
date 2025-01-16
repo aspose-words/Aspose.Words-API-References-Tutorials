@@ -99,7 +99,7 @@ Laten we het document ten slotte opslaan in de door ons opgegeven directory:
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-Deze regel slaat het document op met het ingevoegde ASK-veld. En voilà: uw document is nu uitgerust met een dynamisch ASK-veld!
+Deze regel slaat het document op met het ingevoegde ASK-veld. En voilà: uw document is nu voorzien van een dynamisch ASK-veld!
 
 ## Conclusie
 
@@ -114,7 +114,7 @@ Een ASK-veld in Aspose.Words is een veld dat de gebruiker om specifieke invoer v
 Ja, u kunt meerdere ASK-velden in een document invoegen, elk met unieke prompts en reacties.
 
 ###  Wat is het doel van de`PromptOnceOnMailMerge` property?
-De`PromptOnceOnMailMerge` Deze eigenschap bepaalt of de ASK-prompt slechts één keer tijdens een samenvoegbewerking wordt weergegeven, of elke keer.
+ De`PromptOnceOnMailMerge` Deze eigenschap bepaalt of de ASK-prompt slechts één keer tijdens een samenvoegbewerking wordt weergegeven, of elke keer.
 
 ### Moet ik het ASK-veld bijwerken nadat ik de eigenschappen heb ingesteld?
 Ja, door het ASK-veld bij te werken, zorgt u ervoor dat alle eigenschappen correct worden toegepast en dat het veld functioneert zoals verwacht.

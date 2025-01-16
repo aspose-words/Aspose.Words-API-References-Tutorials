@@ -67,7 +67,7 @@ Bu kapsamlı kılavuzda, Aspose.Words for Java ile XML verilerinin nasıl etkili
 
 ### XML verilerimi posta birleştirme için nasıl hazırlayabilirim?
 
-Verilen örneklerde gösterildiği gibi XML verilerinizin gerekli yapıyı izlediğinden, tabloların ve ilişkilerin tanımlandığından emin olun.
+Verilen örneklerde gösterildiği gibi, XML verilerinizin gerekli yapıyı izlediğinden, tabloların ve ilişkilerin tanımlandığından emin olun.
 
 ### Posta birleştirme değerleri için kırpma davranışını özelleştirebilir miyim?
 

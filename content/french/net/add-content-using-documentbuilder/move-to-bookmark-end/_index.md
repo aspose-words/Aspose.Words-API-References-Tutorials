@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Comprendre MoveToBookmark
 
-Le`MoveToBookmark`La méthode vous permet de naviguer vers un signet spécifique dans votre document. La signature de la méthode est :
+ Le`MoveToBookmark`La méthode vous permet de naviguer vers un signet spécifique dans votre document. La signature de la méthode est :
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

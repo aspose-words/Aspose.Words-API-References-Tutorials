@@ -15,7 +15,7 @@ url: /zh/net/programming-with-pdfsaveoptions/image-compression/
 
 在深入学习本教程之前，请确保您已满足以下先决条件：
 
-1.  Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。您可以从[Aspose 网站](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。您可以从[Aspose 网站](https://releases.aspose.com/words/net/).
 
 2. C# 基础知识：熟悉 C# 编程将帮助您理解本教程中提供的代码示例。
 
@@ -124,7 +124,7 @@ Aspose.Words for .NET 提供`PdfSaveOptions`类，允许您设置各种图像压
 是的，Aspose.Words 支持 PDF/A 兼容性，允许您以符合档案和长期保存标准的格式保存文档。
 
 ### JPEG 质量对 PDF 文件大小有何影响？
-较高的 JPEG 质量设置可获得更好的图像质量，但文件大小较大，而较低的质量设置可减小文件大小，但可能会影响图像清晰度。
+较高的 JPEG 质量设置可获得较好的图像质量，但文件大小也较大；而较低的质量设置可减小文件大小，但可能会影响图像清晰度。
 
 ### 在哪里可以找到有关 Aspose.Words for .NET 的更多信息？
 您可以在其上了解有关 Aspose.Words for .NET 的更多信息[文档](https://reference.aspose.com/words/net/), [支持](https://forum.aspose.com/c/words/8)， 和[下载](https://releases.aspose.com/words/net/)页。

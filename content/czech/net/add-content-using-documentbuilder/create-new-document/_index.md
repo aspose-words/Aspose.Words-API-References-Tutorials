@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/add-content-using-documentbuilder/create-new-document/
 ---
 ## Zavedení
-Ponoříme se hluboko do světa Aspose.Words pro .NET, klenotu knihovny pro všechny vaše potřeby manipulace s dokumenty. Ať už generujete dynamické sestavy, automatizujete vytváření dokumentů nebo vás jen nebaví dělat opakující se úkoly ručně, Aspose.Words je tu, aby vám zachránila situaci. Vyhrňme si rukávy a ušpiněme si ruce vytvořením nového dokumentu aplikace Word od začátku pomocí tohoto mocného nástroje.
+Ponoříme se hluboko do světa Aspose.Words for .NET, klenotu knihovny pro všechny vaše potřeby manipulace s dokumenty. Ať už generujete dynamické sestavy, automatizujete vytváření dokumentů nebo vás jen nebaví dělat opakující se úkoly ručně, Aspose.Words je tu, aby vám zachránila situaci. Vyhrňme si rukávy a ušpiněme si ruce vytvořením nového dokumentu aplikace Word od začátku pomocí tohoto mocného nástroje.
 
 ## Předpoklady
 
@@ -55,7 +55,7 @@ Právě jsme vytvořili prázdný dokument aplikace Word. Docela cool, co?
 
 ### Inicializujte DocumentBuilder
 
- Dále musíme do našeho dokumentu přidat nějaký obsah. K tomu použijeme`DocumentBuilder`Je to jako naše pero, které píše na plátno.
+ Dále musíme do našeho dokumentu přidat nějaký obsah. K tomu použijeme`DocumentBuilder`. Je to jako naše pero, které píše na plátno.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -103,4 +103,4 @@ Můžete vytvářet a manipulovat s formáty DOC, DOCX, PDF, HTML a mnoha dalš�
 
 ### Kde najdu další dokumentaci a příklady?
 
- Podívejte se na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) pro další příklady a podrobné návody.
+ Podívejte se na[Aspose.Words pro .NET dokumentaci](https://reference.aspose.com/words/net/) pro další příklady a podrobné návody.

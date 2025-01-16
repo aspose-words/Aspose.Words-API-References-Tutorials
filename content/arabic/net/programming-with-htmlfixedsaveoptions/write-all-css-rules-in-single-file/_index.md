@@ -89,4 +89,4 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 يدعم Aspose.Words for .NET تنسيقات مختلفة بما في ذلك PDF وTXT وتنسيقات الصور مثل JPEG وPNG.
 
 ### أين يمكنني العثور على المزيد من الموارد حول Aspose.Words لـ .NET؟
- تحقق من[التوثيق](https://reference.aspose.com/words/net/)للحصول على أدلة شاملة ومراجع API.
+ تحقق من[التوثيق](https://reference.aspose.com/words/net/) للحصول على أدلة شاملة ومراجع API.

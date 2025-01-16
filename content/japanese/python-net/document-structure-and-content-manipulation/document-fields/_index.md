@@ -23,7 +23,7 @@ Microsoft Word ドキュメントでは、日付、計算、外部ソースか�
 フィールドを挿入するには、`FieldBuilder`クラス。たとえば、現在の日付フィールドを挿入するには、次のようにします。
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## フィールドを使用したドキュメント生成の自動化
-
-フィールドは、ドキュメントの自動生成に不可欠です。フィールドに外部ソースからのデータを取り込むことができます。
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## フィールドとデータソースの統合

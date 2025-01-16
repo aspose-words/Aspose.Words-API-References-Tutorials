@@ -118,7 +118,7 @@ Aspose.Words for .NET là thư viện cho phép bạn tạo, chỉnh sửa và c
  Có, bạn có thể sử dụng một[dùng thử miễn phí](https://releases.aspose.com/) hoặc nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
 
 ### Tôi có thể tìm tài liệu về Aspose.Words cho .NET ở đâu?
-Tài liệu chi tiết có sẵn[đây](https://reference.aspose.com/words/net/).
+ Tài liệu chi tiết có sẵn[đây](https://reference.aspose.com/words/net/).
 
 ### Tôi có thể nhận được hỗ trợ cho Aspose.Words như thế nào?
  Bạn có thể ghé thăm[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để được hỗ trợ.

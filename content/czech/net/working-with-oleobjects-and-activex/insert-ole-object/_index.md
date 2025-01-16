@@ -1,6 +1,6 @@
 ---
-title: Vložit objekt OLE do dokumentu aplikace Word
-linktitle: Vložit objekt OLE do dokumentu aplikace Word
+title: Vložit objekt Ole do dokumentu aplikace Word
+linktitle: Vložit objekt Ole do dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se vkládat objekty OLE do dokumentů aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Vylepšete své dokumenty pomocí vloženého obsahu.
 type: docs

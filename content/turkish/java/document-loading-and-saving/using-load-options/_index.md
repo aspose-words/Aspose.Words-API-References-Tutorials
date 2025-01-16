@@ -43,7 +43,7 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.setConvertShapeToOfficeMath(true);
 
 Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 ```
 
  Bu kod, belge yükleme sırasında şekillerin Office Math nesnelerine nasıl dönüştürüleceğini gösterir.`setConvertShapeToOfficeMath(true)`yöntem bu dönüşümü mümkün kılar.
@@ -136,7 +136,7 @@ public void convertShapeToOfficeMath() throws Exception {
 		loadOptions.setConvertShapeToOfficeMath(true);
 	}
 	Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 }
 @Test
 public void setMsWordVersion() throws Exception {
@@ -210,4 +210,4 @@ Bu eğitimde, Java için Aspose.Words'de Yükleme Seçenekleri ile çalışmanı
 
 ###  Amacı nedir?`setTempFolder` method in Load Options?
 
-The`setTempFolder`yöntemi, belge işleme sırasında geçici dosyaların depolanacağı klasörü belirtmenize olanak tanır.
+ The`setTempFolder`yöntemi, belge işleme sırasında geçici dosyaların depolanacağı klasörü belirtmenize olanak tanır.

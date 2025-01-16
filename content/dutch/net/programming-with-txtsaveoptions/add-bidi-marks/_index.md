@@ -15,7 +15,7 @@ In de wereld van documentverwerking kan bidirectionele (Bidi) tekst vaak lastig 
 
 Voordat we in de code duiken, moet u ervoor zorgen dat u het volgende heeft:
 
-1.  Aspose.Words voor .NET: U moet Aspose.Words voor .NET geïnstalleerd hebben. U kunt het downloaden van de[Aspose Downloads-pagina](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET: U moet Aspose.Words voor .NET geïnstalleerd hebben. U kunt het downloaden van de[Aspose Downloads-pagina](https://releases.aspose.com/words/net/).
 2. .NET Framework of .NET Core: Zorg ervoor dat u een compatibele .NET-omgeving hebt ingesteld om de voorbeelden uit te voeren.
 3. Basiskennis van C#: Kennis van de programmeertaal C# en basisbewerkingen in .NET.
 

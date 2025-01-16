@@ -8,7 +8,7 @@ weight: 10
 url: /nl/java/document-security/keep-documents-safe-secure/
 ---
 
-In dit digitale tijdperk, waarin informatie de sleutel is, is het van het grootste belang om uw documenten veilig en beveiligd te houden. Of het nu gaat om persoonlijke bestanden, zakelijke documenten of vertrouwelijke gegevens, het is cruciaal om ze te beschermen tegen ongeautoriseerde toegang en potentiële bedreigingen. In deze uitgebreide gids leiden we u door het proces van het beveiligen van uw documenten met Aspose.Words voor Java, een krachtige bibliotheek voor tekstverwerking en documentmanipulatie.
+In dit digitale tijdperk, waarin informatie de sleutel is, is het van het grootste belang om uw documenten veilig te houden. Of het nu gaat om persoonlijke bestanden, zakelijke documenten of vertrouwelijke gegevens, het is cruciaal om ze te beschermen tegen ongeautoriseerde toegang en potentiële bedreigingen. In deze uitgebreide gids leiden we u door het proces van het beveiligen van uw documenten met Aspose.Words voor Java, een krachtige bibliotheek voor tekstverwerking en documentmanipulatie.
 
 ## 1. Inleiding
 
@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Nu we ons document hebben geladen, gaan we encryptie toepassen. Aspose.Words voor Java biedt een eenvoudige manier om document encryptie in te stellen:
 
 ```java
-// Stel een wachtwoord in om het document te openen
-doc.getWriteProtection().setPassword("yourPassword");
-
-// Encryptie-algoritme instellen (optioneel)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// Het gecodeerde document opslaan
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. Specifieke documentelementen beschermen
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 Soms wilt u misschien alleen specifieke delen van uw document beschermen, zoals kopteksten, voetteksten of bepaalde alinea's. Met Aspose.Words kunt u dit niveau van granulariteit in documentbeveiliging bereiken:
 
 ```java
-// Een specifieke sectie beveiligen (alleen-lezenbeveiliging)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// Een specifieke alinea beveiligen (alleen formuliervelden bewerken)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// Bewaar het beveiligde document
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//Dankzij bewerkbare bereiken kunnen we delen van beveiligde documenten openlaten voor bewerking.
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. Digitale handtekeningen toepassen
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 Door digitale handtekeningen aan uw document toe te voegen, kunt u de authenticiteit en integriteit ervan garanderen. Hier leest u hoe u een digitale handtekening kunt toepassen met Aspose.Words voor Java:
 
 ```java
-// Laad het certificaatbestand
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// Onderteken het document met het certificaat
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// Maak een opmerking, datum en decoderingswachtwoord aan die worden toegepast met onze nieuwe digitale handtekening.
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// Sla het ondertekende document op
-doc.save("path/to/signed/document.docx");
+// Stel een lokale systeembestandsnaam in voor het niet-ondertekende invoerdocument en een uitvoerbestandsnaam voor de nieuwe digitaal ondertekende kopie.
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. Watermerken op uw documenten
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. Gevoelige informatie redigeren
 
-Wanneer u documenten deelt, wilt u mogelijk gevoelige informatie permanent verwijderen om te voorkomen dat deze in de verkeerde handen valt. Met Aspose.Words voor Java kunt u gevoelige inhoud redigeren:
-
-```java
-// Zoeken naar en redigeren van gevoelige informatie
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// Redacties toepassen
-doc.redact(options);
-
-// Bewaar het geredigeerde document
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. Beveiligde documenten converteren naar andere formaten
+## 10. Beveiligde documenten converteren naar andere formaten
 
 Met Aspose.Words voor Java kunt u uw beveiligde documenten ook converteren naar verschillende formaten, zoals PDF of HTML:
 
 ```java
-// Laad het beveiligde document
+//Laad het beveiligde document
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // Converteren naar PDF
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // Converteren naar HTML
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. Best practices voor documentbeveiliging
-
-Volg deze best practices om een robuuste documentbeveiliging te garanderen:
-
-- Werk uw beveiligingsmaatregelen regelmatig bij om potentiële bedreigingen voor te blijven.
-- Gebruik sterke wachtwoorden en encryptie-algoritmen.
-- Beperk de toegang tot gevoelige documenten tot personen die deze absoluut nodig hebben.
-- Train medewerkers om veiligheidsrisico's te herkennen en erop te reageren.
-
-## 13. Documentbeveiliging testen
-
-Nadat u beveiligingsmaatregelen hebt toegepast, test u uw documenten grondig om ervoor te zorgen dat ze veilig blijven onder verschillende scenario's. Probeer beveiligingscontroles te omzeilen om mogelijke kwetsbaarheden te identificeren.
-
-## 14. Conclusie
+## Conclusie
 
 In deze stapsgewijze handleiding hebben we het belang van documentbeveiliging onderzocht en hoe Aspose.Words voor Java u kan helpen uw documenten te beschermen tegen ongeautoriseerde toegang. Door de functies van de bibliotheek te benutten, zoals wachtwoordbeveiliging, encryptie, digitale handtekeningen, watermerken en redactie, kunt u ervoor zorgen dat uw documenten veilig en beveiligd blijven.
 
 ## Veelgestelde vragen
 
 ### Kan ik Aspose.Words voor Java gebruiken in commerciële projecten?
-   Ja, Aspose.Words voor Java kan worden gebruikt in commerciële projecten onder het licentiemodel per ontwikkelaar.
+Ja, Aspose.Words voor Java kan worden gebruikt in commerciële projecten onder het licentiemodel per ontwikkelaar.
 
 ### Ondersteunt Aspose.Words andere documentformaten dan Word?
-   Ja, Aspose.Words ondersteunt een breed scala aan formaten, waaronder PDF, HTML, EPUB en meer.
+Ja, Aspose.Words ondersteunt een breed scala aan formaten, waaronder PDF, HTML, EPUB en meer.
 
 ### Is het mogelijk om meerdere digitale handtekeningen aan een document toe te voegen?
-   Ja, met Aspose.Words kunt u meerdere digitale handtekeningen aan een document toevoegen.
+Ja, met Aspose.Words kunt u meerdere digitale handtekeningen aan een document toevoegen.
 
 ### Ondersteunt Aspose.Words het herstellen van wachtwoorden voor documenten?
-   Nee, Aspose.Words biedt geen wachtwoordherstelfuncties. Zorg ervoor dat u uw wachtwoorden veilig houdt.
+Nee, Aspose.Words biedt geen wachtwoordherstelfuncties. Zorg ervoor dat u uw wachtwoorden veilig houdt.
 
 ### Kan ik het uiterlijk van watermerken aanpassen?
-   Ja, u kunt het uiterlijk van watermerken volledig aanpassen, inclusief tekst, lettertype, kleur, grootte en rotatie.
+Ja, u kunt het uiterlijk van watermerken volledig aanpassen, inclusief tekst, lettertype, kleur, grootte en rotatie.

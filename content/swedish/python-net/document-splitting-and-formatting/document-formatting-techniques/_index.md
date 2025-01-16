@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Använda teckensnittsstilar och storlekar
-
-Förbättra ditt dokuments läsbarhet och visuella tilltalande genom att använda teckensnittsstilar och storlekar. Använd följande kod för att ändra teckensnitt och storlek på ett stycke:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Formatera stycken och rubriker
+## Formatera stycken
 
 För att strukturera ditt dokument effektivt är formatering av stycken och rubriker avgörande. Uppnå detta med koden nedan:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Arbeta med listor och punktpunkter
 
 Listor och punktpunkter organiserar innehållet och ger klarhet. Implementera dem med Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Hantera sidlayout och marginaler
+## Hantera sidlayout
 
 Kontrollera sidlayout och marginaler för optimal presentation:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Tillämpa stilar och teman

@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Bắt đầu một bảng
+//Bắt đầu một bảng
 Table table = builder.startTable();
 
 // Chèn ô và nội dung

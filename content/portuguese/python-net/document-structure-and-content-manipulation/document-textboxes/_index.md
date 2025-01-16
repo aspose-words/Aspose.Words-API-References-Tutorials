@@ -38,9 +38,15 @@ Vamos começar criando um novo documento do Word e adicionando uma caixa de text
 import aspose.words as aw
 
 doc = aw.Document()
-builder = aw.DocumentBuilder(doc)
-
-textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
+builder = aw.DocumentBuilder(doc=doc)
+textbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_BOX)
+textbox.width = 100
+textbox.height = 100
+textbox.text_box.layout_flow = aw.drawing.LayoutFlow.BOTTOM_TO_TOP
+textbox.append_child(aw.Paragraph(doc))
+builder.insert_node(textbox)
+builder.move_to(textbox.first_paragraph)
+builder.write('This text is flipped 90 degrees to the left.')
 ```
 
  Neste código, criamos um novo`Document` e um`DocumentBuilder` . O`insert_text_box` O método é usado para adicionar uma caixa de texto ao documento. Você pode personalizar o conteúdo, a posição e o tamanho da caixa de texto de acordo com seus requisitos.

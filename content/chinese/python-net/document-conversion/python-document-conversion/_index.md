@@ -105,8 +105,6 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 Aspose.Words 允许您自定义转换后的文档的外观。您可以应用字体样式、颜色、对齐方式和段落间距等格式选项。
 
-#### 例子：
-
 ```python
 # Python code for applying formatting during conversion
 import aspose.words as aw
@@ -128,8 +126,6 @@ doc.save("formatted_output.pdf", aw.SaveFormat.PDF)
 ### 处理图像和表格
 
 Aspose.Words 可让您在转换过程中处理图像和表格。您可以提取图像、调整其大小以及操作表格以维护文档的结构。
-
-#### 例子：
 
 ```python
 # Python code for handling images and tables during conversion
@@ -156,8 +152,6 @@ doc.save("modified_output.pdf", aw.SaveFormat.PDF)
 
 使用 Aspose.Words，您可以确保字体渲染的一致性并管理转换文档的布局。此功能在保持不同格式的文档一致性时特别有用。
 
-#### 例子：
-
 ```python
 # Python code for managing fonts and layout during conversion
 import aspose.words as aw
@@ -178,8 +172,6 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ### 编写自动化 Python 脚本
 
 Python 的脚本功能使其成为自动执行重复任务的绝佳选择。您可以编写 Python 脚本来执行批量文档转换，从而节省时间和精力。
-
-#### 例子：
 
 ```python
 # Python script for batch document conversion
@@ -205,11 +197,7 @@ for filename in input_files:
 
 ### 文档批量转换
 
-经过
-
- 结合Python和Aspose.Words的强大功能，您可以自动进行文档的批量转换，从而提高生产力和效率。
-
-#### 例子：
+通过结合 Python 和 Aspose.Words 的强大功能，您可以自动执行文档的批量转换，从而提高生产力和效率。
 
 ```python
 # Python script for batch document conversion using Aspose.Words
@@ -238,14 +226,6 @@ for filename in input_files:
     output_filename = filename.replace(file_ext, ".pdf" if file_ext == ".docx" else ".docx")
     doc.save(os.path.join(output_dir, output_filename))
 ```
-## 使用 Aspose.Words for Python 的优势
-
-Aspose.Words for Python 具有几个优点，包括：
-
-- 强大的文档转换功能
-- 丰富的文档操作功能
-- 轻松与 Python 应用程序集成
-- 来自蓬勃发展的社区的持续支持和更新
 
 ## 结论
 

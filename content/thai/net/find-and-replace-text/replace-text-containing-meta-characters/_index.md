@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- เรากำลังสร้าง`FindReplaceOptions`วัตถุและการตั้งค่าการจัดตำแหน่งย่อหน้าให้อยู่กึ่งกลาง
+ เรากำลังสร้าง`FindReplaceOptions` วัตถุและการตั้งค่าการจัดตำแหน่งย่อหน้าให้อยู่กึ่งกลาง
 
 ## ขั้นตอนที่ 4: แทนที่ข้อความด้วยอักขระ Meta
 
 ขั้นตอนนี้คือจุดที่เวทมนตร์เกิดขึ้น! เราจะแทนที่คำว่า "section" ตามด้วยการแบ่งย่อหน้า และเพิ่มขีดเส้นใต้
 
 ```csharp
-// แบ่งย่อหน้าสองครั้งหลังคำว่า "ส่วน" เพิ่มขีดเส้นใต้และจัดให้อยู่กึ่งกลาง
+//แบ่งย่อหน้าสองครั้งหลังคำว่า "ส่วน" เพิ่มขีดเส้นใต้และจัดให้อยู่กึ่งกลาง
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

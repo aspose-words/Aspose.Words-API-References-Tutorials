@@ -71,7 +71,7 @@ Una vez que se inicia el marcador, podemos agregar cualquier contenido que quera
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-El`Writeln` El método agrega un nuevo párrafo con el texto especificado al documento.
+ El`Writeln` El método agrega un nuevo párrafo con el texto especificado al documento.
 
 ## Paso 5: Finalizar el marcador
 
@@ -81,7 +81,7 @@ Después de agregar nuestro contenido, debemos cerrar el marcador. Esto le indic
 builder.EndBookmark("FineBookmark");
 ```
 
-El`EndBookmark` El método completa el marcador que comenzamos anteriormente.
+ El`EndBookmark` El método completa el marcador que comenzamos anteriormente.
 
 ## Paso 6: Guardar el documento
 

@@ -80,7 +80,7 @@ Document doc = new Document("input.docx");
 // สร้างโปรแกรมแยกภาพ
 ImageExtractor extractor = new ImageExtractor(doc);
 
-// ดึงภาพจากเอกสาร
+//ดึงภาพจากเอกสาร
 while (extractor.hasNext()) {
     extractor.getNextImage("output_" + extractor.getCurrentImageIndex() + ".png");
 }

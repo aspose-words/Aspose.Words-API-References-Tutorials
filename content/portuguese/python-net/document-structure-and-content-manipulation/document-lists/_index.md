@@ -16,7 +16,7 @@ As listas vêm em dois tipos principais: com marcadores e numeradas. Elas permit
 
 ## Configurando o ambiente
 
-Antes de mergulharmos na criação e gerenciamento de listas, certifique-se de ter a biblioteca Aspose.Words for Python instalada. Você pode baixá-la em[aqui](https://releases.aspose.com/words/python/) . Além disso, consulte a documentação da API em[este link](https://reference.aspose.com/words/python-net/) para informações detalhadas.
+ Antes de mergulharmos na criação e gerenciamento de listas, certifique-se de ter a biblioteca Aspose.Words for Python instalada. Você pode baixá-la em[aqui](https://releases.aspose.com/words/python/) . Além disso, consulte a documentação da API em[este link](https://reference.aspose.com/words/python-net/) para informações detalhadas.
 
 ## Criando listas com marcadores
 
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]

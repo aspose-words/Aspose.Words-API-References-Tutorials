@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Langkah 2: Mengakses Properti NodeType
 
-Itu`NodeType` properti adalah fitur mendasar dalam Aspose.Words. Fitur ini memungkinkan Anda mengidentifikasi jenis node yang Anda hadapi. Untuk mengakses properti ini, cukup gunakan kode berikut:
+ Itu`NodeType` properti adalah fitur mendasar dalam Aspose.Words. Fitur ini memungkinkan Anda mengidentifikasi jenis node yang Anda hadapi. Untuk mengakses properti ini, cukup gunakan kode berikut:
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -63,7 +63,7 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 ###  Apakah yang`NodeType` property in Aspose.Words?
 
-Itu`NodeType` properti mengidentifikasi jenis node dalam suatu dokumen, seperti Dokumen, Bagian, Paragraf, Jalankan, atau Tabel.
+ Itu`NodeType` properti mengidentifikasi jenis node dalam suatu dokumen, seperti Dokumen, Bagian, Paragraf, Jalankan, atau Tabel.
 
 ###  Bagaimana cara saya memeriksa`NodeType` of a node?
 

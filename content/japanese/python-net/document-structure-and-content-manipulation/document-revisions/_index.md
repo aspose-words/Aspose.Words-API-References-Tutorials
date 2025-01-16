@@ -19,7 +19,7 @@ url: /ja/python-net/document-structure-and-content-manipulation/document-revisio
 始める前に、Aspose.Words for Pythonがインストールされていることを確認してください。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/python/)インストールが完了したら、Python スクリプトに必要なモジュールをインポートして開始できます。
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## ドキュメントの読み込みと表示
@@ -27,7 +27,7 @@ import asposewords
 ドキュメントを操作するには、まずドキュメントを Python アプリケーションに読み込む必要があります。次のコード スニペットを使用してドキュメントを読み込み、その内容を表示します。
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 ドキュメントに変更が加えられると、Aspose.Words はそれをリビジョンとして自動的に追跡します。たとえば、特定の単語を置き換えたい場合、変更を追跡しながら置き換えることができます。
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words を使用すると、2 つのドキュメントを比較して、それらの違いを視覚化できます。
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 共同作業者はドキュメントにコメントや注釈を追加できます。これらの要素はプログラムで管理できます。
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 挿入されたテキストや削除されたテキストの色を変更するなど、ドキュメント内での変更履歴の表示方法をカスタマイズできます。
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## ドキュメントの保存と共有
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 さらなるフィードバックを得るために、最終ドキュメントを共同作業者と共有します。
-
-## 効果的なコラボレーションのためのヒント
-
-1. 意味のあるコメントを付けて、改訂版に明確なラベルを付けます。
-2. 改訂ガイドラインをすべての共同作業者に伝えます。
-3. 定期的に改訂版を確認し、承認または拒否します。
-4. 包括的なドキュメント分析には、Aspose.Words の比較機能を使用します。
 
 ## 結論
 

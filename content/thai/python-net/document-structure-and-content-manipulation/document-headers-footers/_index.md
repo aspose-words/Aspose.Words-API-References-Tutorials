@@ -23,7 +23,7 @@ pip install aspose-words
 2. การนำเข้าโมดูล: นำเข้าโมดูลที่ต้องการลงในสคริปต์ Python ของคุณ
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## การเพิ่มส่วนหัวและส่วนท้ายแบบง่าย
@@ -33,30 +33,18 @@ import aspose.words
 1. การสร้างเอกสาร: สร้างเอกสาร Word ใหม่โดยใช้ Aspose.Words
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  การเพิ่มส่วนหัวและส่วนท้าย: ใช้`sections` คุณสมบัติของเอกสารในการเข้าถึงส่วนต่างๆ จากนั้นใช้`headers_footers` คุณสมบัติในการเพิ่มส่วนหัวและส่วนท้าย
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. การเพิ่มเนื้อหา: เพิ่มเนื้อหาลงในส่วนหัวและส่วนท้าย
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. การบันทึกเอกสาร: บันทึกเอกสารโดยมีส่วนหัวและส่วนท้าย
+3. การบันทึกเอกสาร: บันทึกเอกสารโดยมีส่วนหัวและส่วนท้าย
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. การเพิ่มตาราง: รวมตารางสำหรับข้อมูลในรูปแบบตาราง
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. ฟิลด์ไดนามิก: ใช้ฟิลด์ไดนามิกสำหรับการแทรกข้อมูลอัตโนมัติ
+2. ฟิลด์ไดนามิก: ใช้ฟิลด์ไดนามิกสำหรับการแทรกข้อมูลอัตโนมัติ
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. ปรับแต่งตามต้องการ: ปรับแต่งส่วนหัวและส่วนท้ายแต่ละรายการตามความต้องการของคุณ
 
 ## การลบส่วนหัวและส่วนท้าย
 
@@ -150,4 +128,4 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### ฉันสามารถเรียนรู้เพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ Python ได้จากที่ใด
 
-สำหรับเอกสารและตัวอย่างโดยละเอียดเพิ่มเติม โปรดไปที่[เอกสารอ้างอิง API Aspose.Words สำหรับ Python](https://reference.aspose.com/words/python-net/).
+ สำหรับเอกสารและตัวอย่างโดยละเอียดเพิ่มเติม โปรดไปที่[เอกสารอ้างอิง API Aspose.Words สำหรับ Python](https://reference.aspose.com/words/python-net/).

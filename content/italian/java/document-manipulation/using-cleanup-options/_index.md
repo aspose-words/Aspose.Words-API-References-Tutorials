@@ -150,7 +150,7 @@ Le opzioni di pulizia in Aspose.Words per Java sono impostazioni che consentono 
 
 ###  Qual è lo scopo del`REMOVE_UNUSED_REGIONS` cleanup option?
 
-IL`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` l'opzione viene utilizzata per rimuovere le regioni in un documento che non hanno dati corrispondenti durante il processo di unione di posta. Aiuta a mantenere il documento ordinato eliminando i segnaposto inutilizzati.
+ IL`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` l'opzione viene utilizzata per rimuovere le regioni in un documento che non hanno dati corrispondenti durante il processo di unione di posta. Aiuta a mantenere il documento ordinato eliminando i segnaposto inutilizzati.
 
 ### Posso rimuovere le righe vuote di una tabella da un documento utilizzando Aspose.Words per Java?
 
@@ -166,7 +166,7 @@ IL`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` l'opzione viene utilizzata per
 
 ###  Qual è la differenza tra`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-IL`REMOVE_EMPTY_FIELDS` l'opzione rimuove i campi di unione che non hanno dati o sono vuoti durante il processo di unione di posta. D'altra parte, l'`REMOVE_UNUSED_FIELDS`l'opzione rimuove i campi di unione che non sono popolati con dati durante l'unione. La scelta tra di essi dipende se si desidera rimuovere i campi senza contenuto o quelli che non sono utilizzati nell'operazione di unione specifica.
+ IL`REMOVE_EMPTY_FIELDS` l'opzione rimuove i campi di unione che non hanno dati o sono vuoti durante il processo di unione di posta. D'altra parte, l'`REMOVE_UNUSED_FIELDS`l'opzione rimuove i campi di unione che non sono popolati con dati durante l'unione. La scelta tra di essi dipende se si desidera rimuovere i campi senza contenuto o quelli che non sono utilizzati nell'operazione di unione specifica.
 
 ### Come posso abilitare la rimozione dei paragrafi con segni di punteggiatura?
 

@@ -70,7 +70,7 @@ Documentsamenwerking en -review zijn cruciale aspecten van modern documentbeheer
 
 ### Kan ik wijzigingen in Word-documenten bijhouden met Aspose.Words voor Java?
 
-Ja, Aspose.Words voor Java stelt u in staat om wijzigingen in Word-documenten bij te houden. U kunt de`startTrackRevisions` Methode om het bijhouden van wijzigingen mogelijk te maken.
+ Ja, Aspose.Words voor Java stelt u in staat om wijzigingen in Word-documenten bij te houden. U kunt de`startTrackRevisions` Methode om het bijhouden van wijzigingen mogelijk te maken.
 
 ### Hoe kan ik wijzigingen in een document bekijken?
 

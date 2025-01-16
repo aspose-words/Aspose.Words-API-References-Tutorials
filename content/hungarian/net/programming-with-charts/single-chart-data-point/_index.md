@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-A`InsertChart` metódus a diagram típusát, szélességét és magasságát veszi paraméterként. Ebben az esetben egy 432 szélességű és 252 magasságú vonaldiagramot szúrunk be.
+ A`InsertChart` metódus a diagram típusát, szélességét és magasságát veszi paraméterként. Ebben az esetben egy 432 szélességű és 252 magasságú vonaldiagramot szúrunk be.
 
 ## 3. lépés: Access Chart Series
 
@@ -86,7 +86,7 @@ dataPoint00.Marker.Size = 15;
 
  Mert`dataPoint00`, egy robbanást állítunk be (kördiagramoknál hasznos), a jelölő szimbólumát körre változtatjuk, a jelölő méretét pedig 15-re.
 
-### 01. adatpont testreszabása
+### A 01. adatpont testreszabása
 
 ```csharp
 dataPoint01.Marker.Symbol = MarkerSymbol.Diamond;

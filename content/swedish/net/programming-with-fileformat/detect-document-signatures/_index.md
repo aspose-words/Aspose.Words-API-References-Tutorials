@@ -16,7 +16,7 @@ Att säkerställa integriteten och autenticiteten hos dina Word-dokument är avg
 Innan vi börjar, se till att du har följande på plats:
 
 -  Aspose.Words för .NET Library: Du kan ladda ner det från[Aspose releaser sida](https://releases.aspose.com/words/net/).
-- Utvecklingsmiljö: Se till att du har en .NET-utvecklingsmiljö inställd, som Visual Studio.
+- Utvecklingsmiljö: Se till att du har en .NET-utvecklingsmiljö inställd, till exempel Visual Studio.
 - Grundläggande förståelse för C#: Bekantskap med programmeringsspråket C# hjälper dig att följa med smidigt.
 
 ## Importera namnområden

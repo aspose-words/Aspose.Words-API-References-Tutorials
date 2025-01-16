@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Wir schaffen eine`FindReplaceOptions`Objekt und Einstellen der Absatzausrichtung auf zentriert.
+ Wir schaffen eine`FindReplaceOptions` Objekt und Einstellen der Absatzausrichtung auf zentriert.
 
 ## Schritt 4: Text durch Metazeichen ersetzen
 
 In diesem Schritt geschieht die Magie! Wir ersetzen das Wort „Abschnitt“ gefolgt durch einen Absatzumbruch und fügen eine Unterstreichung hinzu.
 
 ```csharp
-// Verdoppeln Sie jeden Absatzumbruch nach dem Wort „Abschnitt“, fügen Sie eine Art Unterstreichung hinzu und zentrieren Sie ihn.
+//Verdoppeln Sie jeden Absatzumbruch nach dem Wort „Abschnitt“, fügen Sie eine Art Unterstreichung hinzu und zentrieren Sie ihn.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

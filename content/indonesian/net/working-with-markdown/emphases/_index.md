@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Itu`dataDir` variabel adalah tempat penampung untuk direktori tempat Anda akan menyimpan berkas Markdown. Pastikan untuk mengganti "DIREKTORI DOKUMEN ANDA" dengan jalur yang sebenarnya.
+ Itu`dataDir` variabel adalah tempat penampung untuk direktori tempat Anda akan menyimpan berkas Markdown. Pastikan untuk mengganti "DIREKTORI DOKUMEN ANDA" dengan jalur yang sebenarnya.
 
 ## Langkah 2: Menulis Teks Biasa
 

@@ -13,7 +13,7 @@ Automatyzacja słów to przełom w zarządzaniu dokumentami i przetwarzaniu doku
 
 ## Opanowanie automatyzacji słów w Pythonie
 
-W tych samouczkach programiści dowiedzą się, jak wykorzystać moc Aspose.Words for Python do automatyzacji przetwarzania dokumentów Word. Naucz się tworzyć, edytować i dostosowywać dokumenty Word z łatwością. Samouczki obejmują podstawowe tematy, w tym wstawianie tekstu, obrazów, tabel i stosowanie formatowania, umożliwiając programistom automatyzację złożonych zadań zarządzania dokumentami.
+tych samouczkach programiści dowiedzą się, jak wykorzystać moc Aspose.Words for Python do automatyzacji przetwarzania dokumentów Word. Naucz się tworzyć, edytować i dostosowywać dokumenty Word z łatwością. Samouczki obejmują podstawowe tematy, w tym wstawianie tekstu, obrazów, tabel i stosowanie formatowania, umożliwiając programistom automatyzację złożonych zadań zarządzania dokumentami.
 
 ## Zwiększanie efektywności zarządzania dokumentami
 

@@ -53,7 +53,7 @@ Ezután hozzá kell férnie a dokumentumban lévő táblázathoz. Tekintsd ezt �
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-Itt a`GetChild` módszert a dokumentum első táblázatának beszerzéséhez. A`NodeType.Table` paraméter megadja, hogy egy táblázatot keresünk, és`0` az első táblázatot jelzi. A`true` paraméter biztosítja, hogy a keresés mély legyen, vagyis az összes gyermekcsomóponton keresztül néz.
+Itt a`GetChild` módszert a dokumentum első táblázatának beszerzéséhez. A`NodeType.Table` paraméter azt határozza meg, hogy táblázatot keresünk, és`0` az első táblázatot jelzi. A`true` paraméter biztosítja, hogy a keresés mély legyen, vagyis az összes gyermekcsomóponton keresztül néz.
 
 ## 3. lépés: Válassza ki az első cellát
 

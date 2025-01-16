@@ -23,7 +23,7 @@ pip install aspose-words
 2. 導入模組：在 Python 腳本中導入所需的模組。
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## 增加簡單的頁首和頁尾
@@ -33,30 +33,18 @@ import aspose.words
 1. 建立文件：使用 Aspose.Words 建立一個新的 Word 文件。
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2. 新增頁首和頁尾：使用`sections`文檔的屬性來存取部分。然後，利用`headers_footers`屬性來新增頁首和頁尾。
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. 新增內容：將內容新增至頁首和頁尾。
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. 儲存文件：儲存帶有頁首和頁尾的文件。
+3. 儲存文件：儲存帶有頁首和頁尾的文件。
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. 新增表格：合併表格以取得表格資訊。
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. 動態欄位：使用動態欄位自動插入資料。
+2. 動態欄位：使用動態欄位自動插入資料。
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. 根據需要自訂：根據您的要求自訂每個頁首和頁尾。
 
 ## 刪除頁首和頁尾
 

@@ -16,7 +16,7 @@ url: /zh-hant/net/working-with-fields/insert-toafield-without-document-builder/
 在深入學習本教程之前，我們先介紹一下您需要的基本知識：
 
 -  Aspose.Words for .NET：確保您安裝了最新版本。您可以從[阿斯普斯網站](https://releases.aspose.com/words/net/).
-- 開發環境：與 .NET 相容的 IDE，如 Visual Studio。
+- 開發環境：與 .NET 相容的 IDE，例如 Visual Studio。
 - 基本 C# 知識：了解基本 C# 文法和概念將會有所幫助。
 - 範例 Word 文件：在要插入 TOA 欄位的位置建立或準備好範例文件。
 

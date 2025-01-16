@@ -44,18 +44,6 @@ for paragraph in doc.get_child_nodes(doc.is_paragraph, True):
     text += paragraph.get_text()
 ```
 
-## Estrazione delle immagini
-
-Per estrarre le immagini dal documento:
-
-```python
-for shape in doc.get_child_nodes(doc.is_shape, True):
-    if shape.has_image:
-        image = shape.image_data.to_bytes()
-        with open("image.png", "wb") as f:
-            f.write(image)
-```
-
 ## Gestione della formattazione
 
 Mantenimento della formattazione durante l'estrazione:

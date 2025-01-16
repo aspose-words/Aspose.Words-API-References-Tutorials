@@ -8,7 +8,7 @@ weight: 10
 url: /cs/java/licensing-and-configuration/applying-licensing/
 ---
 
-tomto tutoriálu vás provedeme procesem použití licence na Aspose.Words for Java. Licencování je zásadní pro odemknutí plného potenciálu Aspose.Words a zajištění toho, že je vaše aplikace může používat bez jakýchkoli omezení. Poskytneme vám potřebný zdrojový kód a provedeme vás, jak efektivně nastavit licencování.
+V tomto tutoriálu vás provedeme procesem použití licence na Aspose.Words for Java. Licencování je zásadní pro odemknutí plného potenciálu Aspose.Words a zajištění toho, že je vaše aplikace může používat bez jakýchkoli omezení. Poskytneme vám potřebný zdrojový kód a provedeme vás, jak efektivně nastavit licencování.
 
 ## 1. Úvod do licencování v Aspose.Words for Java
 
@@ -20,7 +20,7 @@ Aspose.Words for Java je výkonná knihovna pro zpracování dokumentů, která 
 
 ## 3. Nastavení vašeho vývojového prostředí
 
-Nejprve se ujistěte, že máte ve svém vývojovém prostředí nainstalovanou aplikaci Aspose.Words for Java. Můžete si jej stáhnout z[Aspose Downloads Page](https://releases.aspose.com/words/java/). Po instalaci můžete začít kódovat.
+ Nejprve se ujistěte, že máte ve svém vývojovém prostředí nainstalovanou aplikaci Aspose.Words for Java. Můžete si jej stáhnout z[Aspose Downloads Page](https://releases.aspose.com/words/java/). Po instalaci můžete začít kódovat.
 
 ## 4. Uplatnění licence
 
@@ -48,7 +48,7 @@ Po použití licence důkladně otestujte aplikaci Aspose.Words, abyste se ujist
 ## Kompletní zdrojový kód
 ```java
         License license = new License();
-        //Tento řádek se pokouší nastavit licenci z několika umístění vzhledem ke spustitelnému souboru a Aspose.Words.dll.
+        // Tento řádek se pokouší nastavit licenci z několika umístění vzhledem ke spustitelnému souboru a Aspose.Words.dll.
         // Další přetížení můžete také použít k načtení licence ze streamu, to je užitečné,
         // například, když je licence uložena jako vložený zdroj.
         try

@@ -40,7 +40,7 @@ Document doc = new Document("sample.docx");
 ```java
 // โค้ด Java เพื่อสร้างภาพย่อของเอกสาร
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ stream.writeTo(outputStream);
 
 ### ฉันจะติดตั้ง Aspose.Words สำหรับ Java ได้อย่างไร?
 
- หากต้องการติดตั้ง Aspose.Words สำหรับ Java ให้ไปที่หน้าดาวน์โหลด[ที่นี่](https://releases.aspose.com/words/java/)และปฏิบัติตามคำแนะนำในการติดตั้งที่ให้ไว้
+หากต้องการติดตั้ง Aspose.Words สำหรับ Java ให้ไปที่หน้าดาวน์โหลด[ที่นี่](https://releases.aspose.com/words/java/)และปฏิบัติตามคำแนะนำในการติดตั้งที่ให้ไว้
 
 ### ฉันสามารถกำหนดขนาดของภาพขนาดย่อที่สร้างขึ้นได้หรือไม่
 

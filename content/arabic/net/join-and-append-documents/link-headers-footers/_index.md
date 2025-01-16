@@ -92,4 +92,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 نعم، يمكنك إلغاء ربط الرؤوس والتذييلات باستخدام طرق واجهة برمجة التطبيقات Aspose.Words لاستعادة تنسيق المستندات الفردية.
 
 ### أين يمكنني العثور على مزيد من الوثائق التفصيلية حول Aspose.Words لـ .NET؟
- يزور[توثيق Aspose.Words لـ .NET](https://reference.aspose.com/words/net/)للحصول على أدلة شاملة ومراجع API.
+ يزور[توثيق Aspose.Words لـ .NET](https://reference.aspose.com/words/net/) للحصول على أدلة شاملة ومراجع API.

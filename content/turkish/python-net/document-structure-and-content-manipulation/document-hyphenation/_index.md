@@ -126,4 +126,4 @@ Dul ve yetimleri önlemek için, sayfa sonlarını ve paragraf aralıklarını k
 
 ### Aspose.Words for Python belgelerine nereden ulaşabilirim?
 
-API dokümantasyonuna şu adresten ulaşabilirsiniz:[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+ API dokümantasyonuna şu adresten ulaşabilirsiniz:[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

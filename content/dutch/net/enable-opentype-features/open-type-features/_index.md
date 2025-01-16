@@ -56,7 +56,7 @@ Maak een stringvariabele om het pad naar uw documentdirectory vast te leggen. Di
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"`met het werkelijke pad waar uw document zich bevindt.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het werkelijke pad waar uw document zich bevindt.
 
 ### Het document laden
 

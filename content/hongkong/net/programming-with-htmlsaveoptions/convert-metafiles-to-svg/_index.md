@@ -42,7 +42,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-在這裡，我們初始化一個新文檔和一個文檔產生器。這`dataDir`變數會保存您將在其中儲存文件的文檔目錄的路徑。
+在這裡，我們初始化一個新文件和一個文檔產生器。這`dataDir`變數會保存您將在其中儲存文件的文檔目錄的路徑。
 
 ## 第 2 步：為文件新增文本
 

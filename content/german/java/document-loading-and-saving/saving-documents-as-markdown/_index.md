@@ -27,7 +27,7 @@ Beginnen wir mit der Erstellung eines Word-Dokuments, das wir später in das Mar
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Einfügen einer Tabelle mit zwei Zellen
+// Einfügen einer Tabelle mit zwei Zellen
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// Stellen Sie die Ausrichtung des Tabelleninhalts auf „Automatisch“ (wird durch den ersten Absatz bestimmt).
+//Stellen Sie die Ausrichtung des Tabelleninhalts auf „Automatisch“ (wird durch den ersten Absatz bestimmt).
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## Schritt 3: Umgang mit Bildern
 
-Um Bilder in Ihr Markdown-Dokument einzubinden, müssen Sie den Ordner angeben, in dem sich die Bilder befinden. Mit Aspose.Words für Java können Sie den Bilderordner im`MarkdownSaveOptions`.
+ Um Bilder in Ihr Markdown-Dokument einzubinden, müssen Sie den Ordner angeben, in dem sich die Bilder befinden. Mit Aspose.Words für Java können Sie den Bilderordner im`MarkdownSaveOptions`.
 
 So legen Sie den Bilderordner fest und speichern das Dokument mit Bildern:
 

@@ -53,13 +53,13 @@ Uitleg:
 Vervolgens moeten we een wachtwoord instellen voor schrijfbeveiliging. Dit wachtwoord kan maximaal 15 tekens lang zijn.
 
 ```csharp
-//Voer een wachtwoord in dat maximaal 15 tekens lang is.
+// Voer een wachtwoord in dat maximaal 15 tekens lang is.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Uitleg:
 
-- De`SetPassword` methode wordt aangeroepen op de`WriteProtection` eigendom van het document.
+-  De`SetPassword` methode wordt aangeroepen op de`WriteProtection` eigendom van het document.
 - Wij verstrekken een wachtwoord (in dit geval "MijnWachtwoord") dat nodig is om de beveiliging op te heffen.
 
 ## Stap 3: Alleen-lezen-aanbeveling inschakelen
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Uitleg:
 
-- De`ReadOnlyRecommended` eigenschap is ingesteld op`true`.
+-  De`ReadOnlyRecommended` eigenschap is ingesteld op`true`.
 - Gebruikers krijgen dan de opdracht het document in de alleen-lezenmodus te openen. Ze kunnen er echter ook voor kiezen om deze aanbeveling te negeren.
 
 ## Stap 4: Alleen-lezen-beveiliging toepassen
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Uitleg:
 
-- De`Protect` methode wordt aangeroepen op het document met`ProtectionType.ReadOnly` als argument.
+-  De`Protect` methode wordt aangeroepen op het document met`ProtectionType.ReadOnly` als argument.
 - Met deze methode wordt de alleen-lezenbeveiliging toegepast, waardoor wijzigingen in het document zonder wachtwoord worden voorkomen.
 
 ## Stap 5: Sla het document op
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Uitleg:
 
-- De`Save` De methode wordt aangeroepen op het document, waarbij het pad en de naam van het bestand worden opgegeven.
+-  De`Save` De methode wordt aangeroepen op het document, waarbij het pad en de naam van het bestand worden opgegeven.
 - Het document wordt opgeslagen met de alleen-lezenbeveiliging.
 
 ## Conclusie

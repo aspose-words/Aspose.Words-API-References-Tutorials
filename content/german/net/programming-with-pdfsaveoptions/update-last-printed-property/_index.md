@@ -80,7 +80,7 @@ Durch die Aktualisierung der Eigenschaft „Zuletzt gedruckt“ können Sie die 
 Ja, mit Aspose.Words für .NET können Sie verschiedene Dokumenteigenschaften wie Autor, Titel, Betreff und mehr aktualisieren.
 
 ### Ist Aspose.Words für .NET kostenlos?
-Aspose.Words für .NET bietet eine kostenlose Testversion, die Sie herunterladen können[Hier](https://releases.aspose.com/)Für eine erweiterte Nutzung müssen Sie eine Lizenz erwerben.
+ Aspose.Words für .NET bietet eine kostenlose Testversion, die Sie herunterladen können[Hier](https://releases.aspose.com/)Für eine erweiterte Nutzung müssen Sie eine Lizenz erwerben.
 
 ### Wo finde ich weitere Dokumentation zu Aspose.Words für .NET?
-Eine ausführliche Dokumentation finden Sie unter Aspose.Words für .NET[Hier](https://reference.aspose.com/words/net/).
+ Eine ausführliche Dokumentation finden Sie unter Aspose.Words für .NET[Hier](https://reference.aspose.com/words/net/).

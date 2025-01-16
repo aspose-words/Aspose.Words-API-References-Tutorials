@@ -9,7 +9,7 @@ url: /de/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
 ## Einführung
 
-Willkommen in der Welt der Dokumentenautomatisierung mit Aspose.Words für .NET! Haben Sie sich schon einmal gefragt, wie Sie während eines Seriendruckvorgangs Dokumente dynamisch in bestimmte Felder innerhalb eines Hauptdokuments einfügen können? Dann sind Sie hier richtig. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess des Einfügens von Dokumenten in Seriendruckfelder mit Aspose.Words für .NET. Es ist wie das Zusammensetzen eines Puzzles, bei dem jedes Teil perfekt an seinen Platz passt. Also, legen wir los!
+Willkommen in der Welt der Dokumentenautomatisierung mit Aspose.Words für .NET! Haben Sie sich schon einmal gefragt, wie Sie während eines Seriendruckvorgangs Dokumente dynamisch in bestimmte Felder innerhalb eines Hauptdokuments einfügen können? Dann sind Sie hier richtig. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess des Einfügens von Dokumenten in Seriendruckfelder mit Aspose.Words für .NET. Es ist wie das Zusammensetzen eines Puzzles, bei dem jedes Teil perfekt an seinen Platz passt. Also, tauchen wir ein!
 
 ## Voraussetzungen
 

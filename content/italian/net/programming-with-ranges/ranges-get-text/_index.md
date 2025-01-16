@@ -67,7 +67,7 @@ Estrarre il testo
 string text = doc.Range.Text;
 ```
 
-IL`Range.Text` property ti fornisce tutto il testo contenuto nell'intervallo del documento. Questo include il testo di tutte le sezioni, intestazioni, piè di pagina e corpo principale.
+ IL`Range.Text` property ti fornisce tutto il testo contenuto nell'intervallo del documento. Questo include il testo di tutte le sezioni, intestazioni, piè di pagina e corpo principale.
 
 ## Passaggio 4: visualizzare il testo estratto
 

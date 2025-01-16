@@ -91,7 +91,7 @@ Aprenda a arte de formatar documentos no Aspose.Words para Java com nosso guia a
 ### [Juntando e anexando documentos no Aspose.Words para Java](./joining-and-appending-documents/)
 Aprenda como unir e anexar documentos sem esforço usando Aspose.Words para Java. Preserve a formatação, gerencie cabeçalhos, rodapés e muito mais.
 ### [Usando opções e configurações de documento no Aspose.Words para Java](./using-document-options-and-settings/)
-Desbloqueie o poder do Aspose.Words para Java. Domine as opções e configurações do documento para um gerenciamento de documentos perfeito. Otimize, personalize e muito mais.
+Desbloqueie o poder do Aspose.Words para Java. Domine as opções e configurações do documento para gerenciamento de documentos sem interrupções. Otimize, personalize e muito mais.
 ### [Usando propriedades de documento em Aspose.Words para Java](./using-document-properties/)
 Otimize o gerenciamento de documentos com Aspose.Words para Java. Aprenda a trabalhar com propriedades de documentos, adicionar metadados personalizados e muito mais neste tutorial abrangente.
 ### [Usando extensões da Web no Aspose.Words para Java](./using-web-extensions/)

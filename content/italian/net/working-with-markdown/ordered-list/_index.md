@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-IL`ListIndent` metodo indentifica l'elenco, creando un sottoelenco. Ora stai creando un elenco gerarchico, molto simile a un elenco di cose da fare nidificato.
+ IL`ListIndent` metodo indentifica l'elenco, creando un sottoelenco. Ora stai creando un elenco gerarchico, molto simile a un elenco di cose da fare nidificato.
 
 ## Conclusione
 

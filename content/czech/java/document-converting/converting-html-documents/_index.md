@@ -53,7 +53,7 @@ doc.save("Output.docx");
 
 ### Vysvětlení:
 
-The`save` metoda je volána na`Document` objekt k uložení souboru do`.docx` formát. Zadaný argument je cesta k souboru, kam bude dokument aplikace Word uložen. Toto je poslední krok v procesu konverze.
+ The`save` metoda je volána na`Document` objekt k uložení souboru do`.docx` formát. Zadaný argument je cesta k souboru, kam bude dokument aplikace Word uložen. Toto je poslední krok v procesu konverze.
 
 ## Závěr
 

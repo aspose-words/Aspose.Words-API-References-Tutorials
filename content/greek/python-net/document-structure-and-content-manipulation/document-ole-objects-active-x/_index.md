@@ -19,11 +19,7 @@ url: /el/python-net/document-structure-and-content-manipulation/document-ole-obj
 - Εγκαταστάθηκε η βιβλιοθήκη Aspose.Words for Python
 - Βασική κατανόηση της δομής εγγράφων του Word
 
-## Ενσωμάτωση αντικειμένων OLE
-
-Τα αντικείμενα OLE σάς επιτρέπουν να ενσωματώνετε απρόσκοπτα εξωτερικά αρχεία, όπως υπολογιστικά φύλλα ή παρουσιάσεις, στα έγγραφά σας στο Word. Ακολουθήστε αυτά τα βήματα για να ενσωματώσετε ένα αντικείμενο OLE:
-
-### Βήμα 1: Προσθήκη Απαιτούμενων Βιβλιοθηκών
+## Βήμα 1: Προσθήκη Απαιτούμενων Βιβλιοθηκών
 
 Ξεκινήστε εισάγοντας τις απαραίτητες λειτουργικές μονάδες από τη βιβλιοθήκη Aspose.Words και οποιεσδήποτε άλλες εξαρτήσεις:
 
@@ -31,7 +27,7 @@ url: /el/python-net/document-structure-and-content-manipulation/document-ole-obj
 import aspose.words as aw
 ```
 
-### Βήμα 2: Δημιουργία εγγράφου Word
+## Βήμα 2: Δημιουργία εγγράφου Word
 
 Δημιουργήστε ένα νέο έγγραφο του Word χρησιμοποιώντας το Aspose.Words για Python:
 
@@ -39,42 +35,16 @@ import aspose.words as aw
 doc = aw.Document()
 ```
 
-### Βήμα 3: Εισαγωγή αντικειμένου OLE
+## Βήμα 3: Εισαγωγή αντικειμένου OLE
 
 Τώρα, μπορείτε να εισαγάγετε ένα αντικείμενο OLE στο έγγραφό σας. Για παράδειγμα, ας ενσωματώσουμε ένα υπολογιστικό φύλλο του Excel:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## Ενσωμάτωση στοιχείων ελέγχου ActiveX
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", True, True, None)
 
-Τα στοιχεία ελέγχου ActiveX προσφέρουν διαδραστικότητα στα έγγραφά σας, επιτρέποντας στους χρήστες να αλληλεπιδρούν με ενσωματωμένο περιεχόμενο. Ακολουθήστε αυτά τα βήματα για να ενσωματώσετε ένα στοιχείο ελέγχου ActiveX:
-
-### Βήμα 1: Προσθήκη Απαιτούμενων Βιβλιοθηκών
-
-Όπως και με τα αντικείμενα OLE, ξεκινήστε εισάγοντας τις απαραίτητες ενότητες:
-
-```python
-import aspose.words as aw
-```
-
-### Βήμα 2: Δημιουργία εγγράφου Word
-
-Δημιουργήστε ένα νέο έγγραφο του Word:
-
-```python
-doc = aw.Document()
-```
-
-### Βήμα 3: Εισαγωγή στοιχείου ελέγχου ActiveX
-
-Ας υποθέσουμε ότι θέλετε να ενσωματώσετε ένα πρόγραμμα αναπαραγωγής πολυμέσων. Δείτε πώς μπορείτε να το κάνετε:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Ενίσχυση της διαδραστικότητας και της λειτουργικότητας

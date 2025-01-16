@@ -38,7 +38,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```java
 // हमारे दस्तावेज़ को प्रिंट करने के लिए एक प्रिंट कार्य बनाएँ।
 PrinterJob pj = PrinterJob.getPrinterJob();
-//दस्तावेज़ में पृष्ठों की संख्या के साथ एक विशेषता सेट आरंभ करें।
+// दस्तावेज़ में पृष्ठों की संख्या के साथ एक विशेषता सेट आरंभ करें।
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // प्रिंटर सेटिंग्स को अन्य पैरामीटरों के साथ प्रिंट दस्तावेज़ में पास करें।
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // हमारे दस्तावेज़ को प्रिंट करने के लिए एक प्रिंट कार्य बनाएँ।
 PrinterJob pj = PrinterJob.getPrinterJob();
-//दस्तावेज़ में पृष्ठों की संख्या के साथ एक विशेषता सेट आरंभ करें।
+// दस्तावेज़ में पृष्ठों की संख्या के साथ एक विशेषता सेट आरंभ करें।
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // प्रिंटर सेटिंग्स को अन्य पैरामीटरों के साथ प्रिंट दस्तावेज़ में पास करें।
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // विशेषता सेट में परिभाषित पृष्ठ प्रारंभ और समाप्ति सूचकांक।
+        //विशेषता सेट में परिभाषित पृष्ठ प्रारंभ और समाप्ति सूचकांक।
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // इस कागज़ के शीट पर मुद्रित होने वाले अंतिम पृष्ठ की संख्या का चयन करें।
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //संग्रहीत वर्तमान पृष्ठ से परिकलित पृष्ठ तक चयनित पृष्ठों के माध्यम से लूप करें
+        // संग्रहीत वर्तमान पृष्ठ से परिकलित पृष्ठ तक चयनित पृष्ठों के माध्यम से लूप करें
         // अंतिम पृष्ठ.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // स्तंभ और पंक्ति सूचकांक की गणना करें.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // उपयोगी वापसी मान वह पैमाना है जिस पर पृष्ठ को प्रस्तुत किया गया था।
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // पृष्ठ की सीमाएँ बनाएँ (पृष्ठ का थंबनेल, थंबनेल से छोटा हो सकता है)
+                //पृष्ठ की सीमाएँ बनाएँ (पृष्ठ का थंबनेल, थंबनेल से छोटा हो सकता है)
                 // प्लेसहोल्डर आकार).
                 if (mPrintPageBorders) {
                     // पेज का वास्तविक 100% आकार पॉइंट्स में प्राप्त करें।
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // शीट पर कॉलम और पंक्तियों की संख्या निर्धारित करें
-        //परिदृश्य-उन्मुख कागज.
+        // परिदृश्य-उन्मुख कागज.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ class MultipagePrintDocument implements Printable
 
 ### प्रश्न 1: क्या मैं Java के लिए Aspose.Words का उपयोग करके किसी दस्तावेज़ के विशिष्ट पृष्ठों को प्रिंट कर सकता हूँ?
 
- हां, आप दस्तावेज़ प्रिंट करते समय पृष्ठ सीमा निर्दिष्ट कर सकते हैं। कोड उदाहरण में, हमने उपयोग किया`attributes.add(new PageRanges(1, doc.getPageCount()))` सभी पेज प्रिंट करने के लिए। आप आवश्यकतानुसार पेज रेंज समायोजित कर सकते हैं।
+ हां, आप दस्तावेज़ प्रिंट करते समय पृष्ठ सीमा निर्दिष्ट कर सकते हैं। कोड उदाहरण में, हमने उपयोग किया`attributes.add(new PageRanges(1, doc.getPageCount()))`सभी पेज प्रिंट करने के लिए। आप आवश्यकतानुसार पेज रेंज समायोजित कर सकते हैं।
 
 ### प्रश्न 2: क्या Aspose.Words for Java बैच प्रिंटिंग के लिए उपयुक्त है?
 

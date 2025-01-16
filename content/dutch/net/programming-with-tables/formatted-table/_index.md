@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-De`DocumentBuilder` is een hulpklasse die het proces van het maken van documenten vereenvoudigt.
+ De`DocumentBuilder` is een hulpklasse die het proces van het maken van documenten vereenvoudigt.
 
 ## Stap 3: Start de tafel
 

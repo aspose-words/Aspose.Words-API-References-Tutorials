@@ -1,6 +1,6 @@
 ---
-title: 使用 Aspose.Words for Java 加载和保存 HTML 文档
-linktitle: 使用以下方式加载和保存 HTML 文档
+title: 加载和保存 HTML 文档
+linktitle: 加载和保存 HTML 文档
 second_title: Aspose.Words Java 文档处理 API
 description: 了解如何使用 Aspose.Words for Java 在 Java 中加载和保存 HTML 文档。带有代码示例的分步指南，实现无缝文档集成。
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
 现在我们已经将 HTML 加载到`Document`，我们可以将其保存为Word文档。我们将其保存为DOCX格式：
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 此代码保存`Document`为 DOCX 文件，这是 Word 文档的常见格式。
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## 结论

@@ -90,7 +90,7 @@ Aspose.Words for Java'daki Office Math nesneleri, belgelerinizdeki matematiksel 
 
 ### Office Math denklemlerini belgem içinde farklı şekilde hizalayabilir miyim?
 
- Evet, Office Math denklemlerinin hizalamasını kontrol edebilirsiniz.`setJustification` Sol, sağ veya orta gibi hizalama seçeneklerini belirtme yöntemi.
+ Evet, Office Math denklemlerinin hizalamasını kontrol edebilirsiniz.`setJustification`Sol, sağ veya orta gibi hizalama seçeneklerini belirtme yöntemi.
 
 ### Aspose.Words for Java karmaşık matematiksel belgeleri işlemek için uygun mudur?
 

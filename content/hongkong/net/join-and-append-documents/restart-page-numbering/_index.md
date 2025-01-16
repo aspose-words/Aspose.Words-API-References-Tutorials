@@ -65,7 +65,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 ```
 
-## 第 4 步：附加來源文檔：
+## 第 4 步：附加來源文件：
 
 現在來源文件已準備好所需的分頁符號和編號配置，是時候將其整合到目標文件中了。
 

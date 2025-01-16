@@ -62,7 +62,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ### Cargar el documento
 
-A continuación, cargue el documento utilizando Aspose.Words.
+continuación, cargue el documento utilizando Aspose.Words.
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

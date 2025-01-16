@@ -18,7 +18,7 @@ url: /el/java/document-security/document-redaction-data-protection/
 
 Πριν ξεκινήσουμε να εργαζόμαστε με το Aspose.Words για Java, πρέπει να ρυθμίσουμε το περιβάλλον ανάπτυξης μας. Ακολουθήστε αυτά τα βήματα:
 
-1.  Λήψη και εγκατάσταση του Aspose.Words για Java: Επισκεφτείτε[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) για λήψη της πιο πρόσφατης έκδοσης του Aspose.Words για Java.
+1.  Λήψη και εγκατάσταση του Aspose.Words για Java: Επισκεφτείτε[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)για λήψη της πιο πρόσφατης έκδοσης του Aspose.Words για Java.
 
 2. Ενσωματώστε το Aspose.Words στο έργο σας: Προσθέστε τα αρχεία JAR Aspose.Words στο έργο σας Java.
 

@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Các`Document` đối tượng đại diện cho toàn bộ tài liệu Word của chúng tôi và`DocumentBuilder` giúp chúng tôi thêm và định dạng nội dung.
+ Các`Document` đối tượng đại diện cho toàn bộ tài liệu Word của chúng tôi và`DocumentBuilder` giúp chúng tôi thêm và định dạng nội dung.
 
 ## Bước 3: Xác định đường viền đoạn văn
 

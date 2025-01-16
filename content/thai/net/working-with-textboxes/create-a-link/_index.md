@@ -60,7 +60,7 @@ Shape shape1 = new Shape(doc, ShapeType.TextBox);
 Shape shape2 = new Shape(doc, ShapeType.TextBox);
 ```
 
-ในข้อความสั้นๆ นี้:
+ในสคริปท์นี้:
 - `ShapeType.TextBox` ระบุว่ารูปร่างที่เรากำลังสร้างนั้นเป็นกล่องข้อความ
 - `shape1` และ`shape2` เป็นกล่องข้อความสองกล่องของเรา
 

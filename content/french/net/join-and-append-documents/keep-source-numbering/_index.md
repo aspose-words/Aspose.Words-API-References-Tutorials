@@ -13,7 +13,7 @@ url: /fr/net/join-and-append-documents/keep-source-numbering/
 
 ## Prérequis
 
-Avant de commencer, assurez-vous d'avoir les éléments suivants :
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 - Visual Studio installé sur votre machine.
 -  Aspose.Words pour .NET est installé. Si ce n'est pas le cas, téléchargez-le à partir de[ici](https://releases.aspose.com/words/net/).
 - Connaissances de base de la programmation C# et .NET.
@@ -90,4 +90,4 @@ Aspose.Words prend en charge les versions .NET Framework et .NET Core pour une i
 Utilisez des blocs try-catch pour gérer les exceptions qui peuvent survenir pendant le processus d'importation.
 
 ### Où puis-je trouver une documentation plus détaillée sur Aspose.Words pour .NET ?
- Visitez le[documentation](https://reference.aspose.com/words/net/)pour des guides complets et des références API.
+ Visitez le[documentation](https://reference.aspose.com/words/net/) pour des guides complets et des références API.

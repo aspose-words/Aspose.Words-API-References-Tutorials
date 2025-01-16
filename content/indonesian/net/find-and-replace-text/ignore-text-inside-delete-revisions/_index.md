@@ -17,7 +17,7 @@ Sebelum menyelami tutorial ini, pastikan Anda memiliki prasyarat berikut:
 - Pengetahuan dasar tentang bahasa pemrograman C#.
 - Visual Studio terinstal di sistem Anda.
 -  Pustaka Aspose.Words untuk .NET terintegrasi ke dalam proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
-- Akses ke Aspose.Words untuk .NET[dokumentasi](https://reference.aspose.com/words/net/) untuk referensi.
+-  Akses ke Aspose.Words untuk .NET[dokumentasi](https://reference.aspose.com/words/net/) untuk referensi.
 
 ## Mengimpor Ruang Nama
 
@@ -84,4 +84,4 @@ Ya, Anda dapat mengelola dan mengembalikan revisi terlacak secara terprogram men
 Aspose.Words untuk .NET dioptimalkan untuk menangani dokumen besar secara efisien, termasuk dokumen dengan revisi terlacak yang ekstensif.
 
 ### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan untuk Aspose.Words untuk .NET?
-Anda dapat menjelajahi dokumentasi yang komprehensif dan mendapatkan dukungan dari komunitas Aspose.Words untuk .NET di[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Anda dapat menjelajahi dokumentasi yang komprehensif dan mendapatkan dukungan dari komunitas Aspose.Words untuk .NET di[Forum Aspose.Words](https://forum.aspose.com/c/words/8).

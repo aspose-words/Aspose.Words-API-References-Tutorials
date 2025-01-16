@@ -2,7 +2,7 @@
 title: Dokument anhängen
 linktitle: Dokument anhängen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie Word-Dokumente mit Aspose.Words für .NET anhängen. Perfekt für die Automatisierung Ihres Dokumenten-Workflows.
+description: Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Word-Dokumente anhängen. Perfekt für die Automatisierung Ihres Dokumenten-Workflows.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/append-document/
@@ -95,7 +95,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 
 ### 4. Wie erhalte ich Unterstützung für Aspose.Words für .NET?
 
-Sie erhalten Unterstützung durch den Besuch der[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
+ Sie erhalten Unterstützung durch den Besuch der[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
 
 ### 5. Kann ich Dokumente unterschiedlicher Formate anhängen?
 

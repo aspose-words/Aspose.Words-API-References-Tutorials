@@ -49,7 +49,7 @@ Renderowanie dokumentów jest niezbędne, gdy trzeba je przekonwertować do ró�
 
 ```java
 // Wyrenderuj dokument do formatu PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Możesz zastąpić`SaveFormat.PDF` z żądanym formatem renderowania.

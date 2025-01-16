@@ -23,7 +23,7 @@ pip install aspose-words
 2. मॉड्यूल आयात करना: अपनी पायथन स्क्रिप्ट में आवश्यक मॉड्यूल आयात करें।
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## एक सरल शीर्षलेख और पादलेख जोड़ना
@@ -33,30 +33,18 @@ import aspose.words
 1. दस्तावेज़ बनाना: Aspose.Words का उपयोग करके एक नया Word दस्तावेज़ बनाएँ।
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  शीर्षलेख और पादलेख जोड़ना: का उपयोग करें`sections` दस्तावेज़ की प्रॉपर्टी का उपयोग करके अनुभागों तक पहुँचें। फिर, इसका उपयोग करें`headers_footers` शीर्षलेख और पादलेख जोड़ने के लिए संपत्ति।
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. सामग्री जोड़ना: शीर्षलेख और पादलेख में सामग्री जोड़ें।
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. दस्तावेज़ को सहेजना: दस्तावेज़ को शीर्षलेख और पादलेख के साथ सहेजें।
+3. दस्तावेज़ को सहेजना: दस्तावेज़ को शीर्षलेख और पादलेख के साथ सहेजें।
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. तालिकाएँ जोड़ना: सारणीबद्ध जानकारी के लिए तालिकाएँ शामिल करें।
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. गतिशील फ़ील्ड: स्वचालित डेटा प्रविष्टि के लिए गतिशील फ़ील्ड का उपयोग करें।
+2. गतिशील फ़ील्ड: स्वचालित डेटा प्रविष्टि के लिए गतिशील फ़ील्ड का उपयोग करें।
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -110,8 +90,6 @@ header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
 
-3. आवश्यकतानुसार अनुकूलित करें: प्रत्येक शीर्षलेख और पादलेख को अपनी आवश्यकताओं के अनुसार अनुकूलित करें।
-
 ## हेडर और फ़ुटर हटाना
 
 किसी Word दस्तावेज़ से शीर्षलेख और पादलेख हटाने के लिए:
@@ -130,7 +108,7 @@ section.page_setup.different_first_page_header_footer = False
 section.page_setup.odd_and_even_pages_header_footer = False
 ```
 
-## पूछे जाने वाले प्रश्न
+## अक्सर पूछे जाने वाले प्रश्न
 
 ### मैं हेडर और फ़ुटर सामग्री तक कैसे पहुँच सकता हूँ?
 
@@ -150,4 +128,4 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### मैं Python के लिए Aspose.Words के बारे में और अधिक कहां से सीख सकता हूं?
 
-अधिक विस्तृत दस्तावेज़ीकरण और उदाहरणों के लिए, यहां जाएं[पायथन API संदर्भ के लिए Aspose.Words](https://reference.aspose.com/words/python-net/).
+ अधिक विस्तृत दस्तावेज़ीकरण और उदाहरणों के लिए, यहां जाएं[पायथन API संदर्भ के लिए Aspose.Words](https://reference.aspose.com/words/python-net/).

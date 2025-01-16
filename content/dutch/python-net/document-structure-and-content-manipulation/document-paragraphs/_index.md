@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## Basistekstopmaak
 
- Het opmaken van tekst in een Word-document is essentieel om belangrijke punten te benadrukken en de leesbaarheid te verbeteren. Met Aspose.Words kunt u verschillende opmaakopties toepassen, zoals**bold**, *italic*, onderstreping en lettergrootte:
+Het opmaken van tekst in een Word-document is essentieel om belangrijke punten te benadrukken en de leesbaarheid te verbeteren. Met Aspose.Words kunt u verschillende opmaakopties toepassen, zoals vet, cursief, onderstrepen en lettergrootte:
 
 ```python
 # Apply basic text formatting
@@ -172,8 +172,6 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 ## Conclusie
 
 In deze uitgebreide gids hebben we de mogelijkheden van Aspose.Words voor Python onderzocht bij het formatteren van alinea's en tekst in Word-documenten. Door deze krachtige bibliotheek te gebruiken, kunnen ontwikkelaars naadloos de documentopmaak automatiseren, wat zorgt voor een professionele en gepolijste uitstraling van hun content.
-
----
 
 ## Veelgestelde vragen
 

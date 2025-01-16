@@ -56,7 +56,7 @@ Laten we nu de documenten vergelijken met behulp van de Compare-methode van de D
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-De`Compare`methode vergelijkt document A met document B en slaat de wijzigingen op in document A. U kunt de naam van de auteur en de datum van vergelijking opgeven ter referentie.
+ De`Compare`methode vergelijkt document A met document B en slaat de wijzigingen op in document A. U kunt de naam van de auteur en de datum van vergelijking opgeven ter referentie.
 
 ## Conclusie
 

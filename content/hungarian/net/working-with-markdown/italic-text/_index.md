@@ -38,7 +38,7 @@ Ezek a névterek hozzáférést biztosítanak a dokumentumok kezeléséhez és a
 
 ## 1. lépés: Hozzon létre egy DocumentBuilder programot
 
-A`DocumentBuilder` osztály segít tartalmat hozzáadni és formázni a dokumentumban. Létrehozva a`DocumentBuilder` objektumot, akkor beállít egy eszközt a szöveg beszúrására és kezelésére.
+ A`DocumentBuilder` osztály segít tartalmat hozzáadni és formázni a dokumentumban. Létrehozva a`DocumentBuilder` objektumot, akkor beállít egy eszközt a szöveg beszúrására és kezelésére.
 
 ```csharp
 // Hozzon létre egy DocumentBuilder-példányt a dokumentummal való együttműködéshez.

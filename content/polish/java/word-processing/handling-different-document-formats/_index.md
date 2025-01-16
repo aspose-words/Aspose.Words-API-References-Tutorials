@@ -37,13 +37,6 @@ Jedną z głównych zalet Aspose.Words for Java jest możliwość łatwego łado
 Document doc = new Document("sample.docx");
 ```
 
-### Ładowanie dokumentu PDF
-
-```java
-// Załaduj dokument PDF
-Document doc = new Document("sample.pdf");
-```
-
 ## Modyfikowanie i zapisywanie dokumentów
 
 Po załadowaniu dokumentu możesz wykonać szereg operacji – od prostej zamiany tekstu po złożone zmiany formatowania.
@@ -71,7 +64,7 @@ Aspose.Words for Java umożliwia bezproblemową konwersję między różnymi for
 Document doc = new Document("sample.docx");
 
 // Zapisz jako PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Obsługa obrazów i tabel
@@ -81,7 +74,7 @@ Włączanie obrazów i tabel jest powszechnym wymogiem podczas pracy z dokumenta
 ### Dodawanie obrazu do dokumentu
 
 ```java
-// Załaduj dokument
+//Załaduj dokument
 Document doc = new Document("document.docx");
 
 // Wstaw obraz

@@ -80,7 +80,7 @@ Document doc = new Document("input.docx");
 // Tạo một trình trích xuất hình ảnh
 ImageExtractor extractor = new ImageExtractor(doc);
 
-// Trích xuất hình ảnh từ tài liệu
+//Trích xuất hình ảnh từ tài liệu
 while (extractor.hasNext()) {
     extractor.getNextImage("output_" + extractor.getCurrentImageIndex() + ".png");
 }

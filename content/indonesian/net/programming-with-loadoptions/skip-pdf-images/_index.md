@@ -91,7 +91,7 @@ Tidak, melewatkan gambar hanya akan memengaruhi gambar itu sendiri. Teks tetap u
 
 ### Dapatkah saya menggunakan fitur ini dengan format dokumen lain?
 
-Itu`SkipPdfImages` Opsi ini khusus untuk dokumen PDF. Untuk format lain, tersedia opsi dan metode yang berbeda.
+ Itu`SkipPdfImages` Opsi ini khusus untuk dokumen PDF. Untuk format lain, tersedia opsi dan metode yang berbeda.
 
 ### Bagaimana saya dapat memverifikasi bahwa gambar telah dilewati?
 

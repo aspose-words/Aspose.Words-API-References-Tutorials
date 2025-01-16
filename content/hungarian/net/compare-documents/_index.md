@@ -14,6 +14,6 @@ Dokumentumok összehasonlítása egy átfogó oktatóanyag a dokumentumok Aspose
 | Cím | Leírás |
 | --- | --- |
 | [Hasonlítsa össze az Equal In Word dokumentumot](./compare-for-equal/) | Ismerje meg, hogyan hasonlíthat össze két Word-dokumentumot az egyenlőség érdekében az Aspose.Words for .NET használatával. Kövesse ezt a lépésenkénti útmutatót, hogy biztosítsa a dokumentumok azonosságát. |
-| [Hasonlítsa össze a Word dokumentum beállításait](./compare-options/) | Részletes útmutatónkból megtudhatja, hogyan hasonlíthatja össze a Word dokumentumokat az Aspose.Words for .NET használatával. Gondoskodjon a dokumentumok konzisztenciájáról könnyedén. |
+| [Hasonlítsa össze a Word-dokumentum beállításait](./compare-options/) | Részletes útmutatónkból megtudhatja, hogyan hasonlíthatja össze a Word dokumentumokat az Aspose.Words for .NET használatával. Gondoskodjon a dokumentumok konzisztenciájáról könnyedén. |
 | [Összehasonlítási cél a Word dokumentumban](./comparison-target/) | Könnyedén összehasonlíthatja a Word-dokumentumokat az Aspose.Words for .NET használatával ezzel a részletes, lépésről-lépésre szóló útmutatóval. Takarítson meg időt és növelje a dokumentumok összehasonlításának pontosságát. |
 | [Összehasonlítás granulárisság Word dokumentumban](./comparison-granularity/) | Ismerje meg az Aspose.Words for .NET Word-dokumentumszolgáltatásának összehasonlítási részletességét, amely lehetővé teszi a dokumentumok karakterenkénti összehasonlítását, a végrehajtott változtatások jelentésével. |

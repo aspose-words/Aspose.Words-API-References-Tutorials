@@ -52,7 +52,7 @@ Agora, vamos definir as opções de estrutura de tópicos.
 
 ### Definir níveis de contorno de títulos
 
-O`HeadingsOutlineLevels` propriedade define quantos níveis de títulos devem ser incluídos no esboço do PDF. Por exemplo, se você defini-la como 3, ela incluirá até três níveis de títulos no esboço do PDF.
+ O`HeadingsOutlineLevels` propriedade define quantos níveis de títulos devem ser incluídos no esboço do PDF. Por exemplo, se você defini-la como 3, ela incluirá até três níveis de títulos no esboço do PDF.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Definir níveis de contorno expandidos
 
-O`ExpandedOutlineLevels`propriedade controla quantos níveis do esboço devem ser expandidos por padrão quando o PDF é aberto. Definir isso como 1 expandirá os títulos de nível superior, dando uma visão clara das seções principais.
+ O`ExpandedOutlineLevels`propriedade controla quantos níveis do esboço devem ser expandidos por padrão quando o PDF é aberto. Definir isso como 1 expandirá os títulos de nível superior, dando uma visão clara das seções principais.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

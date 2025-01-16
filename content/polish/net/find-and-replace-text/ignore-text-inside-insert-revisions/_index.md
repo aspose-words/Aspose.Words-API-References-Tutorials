@@ -9,7 +9,7 @@ url: /pl/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 ## Wstęp
 
-W tym kompleksowym przewodniku zagłębimy się w używanie Aspose.Words dla .NET do efektywnego zarządzania wersjami dokumentów. Niezależnie od tego, czy jesteś programistą, czy entuzjastą technologii, zrozumienie, jak ignorować tekst wewnątrz wstawianych wersji, może usprawnić przepływy pracy przetwarzania dokumentów. Ten samouczek wyposaży Cię w niezbędne umiejętności, aby wykorzystać potężne funkcje Aspose.Words do bezproblemowego zarządzania wersjami dokumentów.
+tym kompleksowym przewodniku zagłębimy się w używanie Aspose.Words dla .NET do efektywnego zarządzania wersjami dokumentów. Niezależnie od tego, czy jesteś programistą, czy entuzjastą technologii, zrozumienie, jak ignorować tekst wewnątrz wstawianych wersji, może usprawnić przepływy pracy przetwarzania dokumentów. Ten samouczek wyposaży Cię w niezbędne umiejętności, aby wykorzystać potężne funkcje Aspose.Words do bezproblemowego zarządzania wersjami dokumentów.
 
 ## Wymagania wstępne
 
@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Rozpocznij śledzenie rewizji
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //Wstaw tekst ze śledzeniem rewizji
+builder.Writeln("Inserted"); // Wstaw tekst ze śledzeniem rewizji
 doc.StopTrackRevisions();
 ```
 

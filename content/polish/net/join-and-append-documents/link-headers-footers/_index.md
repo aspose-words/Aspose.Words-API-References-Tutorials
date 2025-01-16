@@ -92,4 +92,4 @@ Aspose.Words obsługuje różne wersje .NET Framework i .NET Core, zapewniając 
 Tak, możesz rozłączyć nagłówki i stopki za pomocą metod API Aspose.Words, aby przywrócić formatowanie pojedynczego dokumentu.
 
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację dotyczącą Aspose.Words dla .NET?
- Odwiedzać[Dokumentacja Aspose.Words dla .NET](https://reference.aspose.com/words/net/)aby uzyskać kompleksowe przewodniki i odniesienia do API.
+ Odwiedzać[Dokumentacja Aspose.Words dla .NET](https://reference.aspose.com/words/net/) aby uzyskać kompleksowe przewodniki i odniesienia do API.

@@ -67,7 +67,7 @@ Extrahovat text
 string text = doc.Range.Text;
 ```
 
-The`Range.Text` vlastnost vám poskytne veškerý text obsažený v rozsahu dokumentu. To zahrnuje text ze všech sekcí, záhlaví, zápatí a hlavní tělo.
+ The`Range.Text` vlastnost vám poskytne veškerý text obsažený v rozsahu dokumentu. To zahrnuje text ze všech sekcí, záhlaví, zápatí a hlavní tělo.
 
 ## Krok 4: Zobrazte extrahovaný text
 

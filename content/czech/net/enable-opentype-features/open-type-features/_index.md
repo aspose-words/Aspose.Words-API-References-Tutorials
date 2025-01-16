@@ -56,7 +56,7 @@ Vytvořte řetězcovou proměnnou, která bude obsahovat cestu k adresáři vaš
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou, kde se váš dokument nachází.
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kde se váš dokument nachází.
 
 ### Načítání dokumentu
 
@@ -70,7 +70,7 @@ Tento řádek kódu otevře zadaný dokument, abychom s ním mohli manipulovat.
 
 ## Krok 3: Povolte funkce OpenType
 
- HarfBuzz je open-source nástroj pro tvarování textu, který bezproblémově spolupracuje s Aspose.Words. Abychom povolili funkce OpenType, musíme nastavit`TextShaperFactory` vlastnictví`LayoutOptions` objekt.
+ HarfBuzz je open-source nástroj pro tvarování textu, který bezproblémově spolupracuje s Aspose.Words. Abychom povolili funkce OpenType, musíme nastavit`TextShaperFactory` vlastnictvím`LayoutOptions` objekt.
 
 ```csharp
 doc.LayoutOptions.TextShaperFactory = HarfBuzzTextShaperFactory.Instance;

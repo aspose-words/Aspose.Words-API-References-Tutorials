@@ -16,7 +16,7 @@ Ahoj! Zapletli jste se někdy do složitosti formátování textu, zejména při
 
 Než si ušpiníme ruce kódem, ujistěte se, že máte vše, co potřebujete:
 
-1. Aspose.Words for .NET: Ujistěte se, že máte knihovnu. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte knihovnu. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. IDE: Vývojové prostředí jako Visual Studio.
 3. Základní znalost C#: Pochopení C# a .NET frameworku.
 4. Slovníky dělení slov: Slovníky dělení slov pro jazyky, které plánujete používat.

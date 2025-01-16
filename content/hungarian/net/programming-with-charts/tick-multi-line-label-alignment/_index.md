@@ -15,13 +15,13 @@ Sziasztok, a technika szerelmesei! Valaha azon kapta magát, hogy vakarja a fej�
 
 Mielőtt belemerülnénk a többsoros címkeigazítás világába, győződjünk meg arról, hogy az összes kacsa egy sorban van. Íme, amire szüksége lesz:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET legújabb verziójával rendelkezik. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET legújabb verziójával rendelkezik. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. .NET-környezet: Győződjön meg arról, hogy a fejlesztői környezet .NET-tel van beállítva.
 3. Alapvető C# ismerete: A C# alapvető ismerete simábbá teszi ezt az utat.
 
 ## Névterek importálása
 
-kódolás megkezdése előtt importáljuk a szükséges névtereket. Ez a lépés kulcsfontosságú, mivel lehetővé teszi számunkra, hogy zökkenőmentesen hozzáférjünk az Aspose.Words for .NET funkcióihoz.
+kódolás megkezdése előtt importáljuk a szükséges névtereket. Ez a lépés kulcsfontosságú, mivel lehetővé teszi számunkra az Aspose.Words for .NET funkcióinak zökkenőmentes elérését.
 
 ```csharp
 using System;
@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## 3. lépés: A DocumentBuilder használata
 
-A`DocumentBuilder` osztály az Aspose.Words-ben egy hatékony eszköz, amely segít a dokumentumok létrehozásában. Arra használjuk, hogy beszúrjunk egy diagramot a dokumentumunkba.
+ A`DocumentBuilder` osztály az Aspose.Words-ben egy hatékony eszköz, amely segít a dokumentumok létrehozásában. Arra használjuk, hogy beszúrjunk egy diagramot a dokumentumunkba.
 
  Inicializálja a`DocumentBuilder` osztályba, átadva a dokumentum objektumunkat a konstruktorának.
 

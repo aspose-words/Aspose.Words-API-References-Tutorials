@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Sekarang setelah dokumen kita dimuat, mari kita lanjutkan untuk menerapkan enkripsi pada dokumen tersebut. Aspose.Words untuk Java menyediakan cara mudah untuk mengatur enkripsi dokumen:
 
 ```java
-// Tetapkan kata sandi untuk membuka dokumen
-doc.getWriteProtection().setPassword("yourPassword");
-
-// Tetapkan algoritma enkripsi (opsional)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// Simpan dokumen terenkripsi
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. Melindungi Elemen Dokumen Tertentu
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 Terkadang, Anda mungkin hanya ingin melindungi bagian tertentu dari dokumen Anda, seperti header, footer, atau paragraf tertentu. Aspose.Words memungkinkan Anda mencapai tingkat ketelitian ini dalam perlindungan dokumen:
 
 ```java
-// Lindungi bagian tertentu (Perlindungan hanya baca)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// Lindungi paragraf tertentu (Izinkan hanya kolom formulir yang diedit)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// Simpan dokumen yang dilindungi
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//Rentang yang dapat diedit memungkinkan kita membiarkan bagian dokumen yang dilindungi terbuka untuk diedit.
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. Menerapkan Tanda Tangan Digital
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 Menambahkan tanda tangan digital ke dokumen Anda dapat memastikan keaslian dan integritasnya. Berikut cara menerapkan tanda tangan digital menggunakan Aspose.Words untuk Java:
 
 ```java
-// Muat file sertifikat
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// Tanda tangani dokumen dengan sertifikat
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// Buat komentar, tanggal, dan kata sandi dekripsi yang akan diterapkan dengan tanda tangan digital baru kami.
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// Simpan dokumen yang sudah ditandatangani
-doc.save("path/to/signed/document.docx");
+// Tetapkan nama file sistem lokal untuk dokumen masukan yang tidak ditandatangani, dan nama file keluaran untuk salinan baru yang ditandatangani secara digital.
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. Memberi Tanda Air pada Dokumen Anda
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. Menyunting Informasi Sensitif
 
-Saat berbagi dokumen, Anda mungkin ingin menghapus informasi sensitif secara permanen untuk memastikannya tidak jatuh ke tangan yang salah. Aspose.Words untuk Java memungkinkan Anda untuk menyunting konten sensitif:
-
-```java
-// Mencari dan menyunting informasi sensitif
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// Terapkan penyuntingan
-doc.redact(options);
-
-// Simpan dokumen yang telah disunting
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. Mengonversi Dokumen Aman ke Format Lain
+## 10. Mengonversi Dokumen Aman ke Format Lain
 
 Aspose.Words untuk Java juga memungkinkan Anda mengonversi dokumen aman Anda ke berbagai format, seperti PDF atau HTML:
 
 ```java
-// Muat dokumen yang diamankan
+//Muat dokumen yang diamankan
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // Konversi ke PDF
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // Konversi ke HTML
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. Praktik Terbaik untuk Keamanan Dokumen
-
-Untuk memastikan keamanan dokumen yang kuat, ikuti praktik terbaik berikut:
-
-- Perbarui langkah-langkah keamanan Anda secara berkala untuk menghadapi ancaman potensial.
-- Gunakan kata sandi dan algoritma enkripsi yang kuat.
-- Batasi akses ke dokumen sensitif berdasarkan kebutuhan.
-- Melatih karyawan untuk mengenali dan menanggapi risiko keamanan.
-
-## 13. Pengujian Keamanan Dokumen
-
-Setelah menerapkan langkah-langkah keamanan, uji dokumen Anda secara menyeluruh untuk memastikan bahwa dokumen tersebut tetap aman dalam berbagai skenario. Cobalah untuk melewati kontrol keamanan untuk mengidentifikasi potensi kerentanan.
-
-## 14. Kesimpulan
+## Kesimpulan
 
 Dalam panduan langkah demi langkah ini, kami membahas pentingnya keamanan dokumen dan bagaimana Aspose.Words untuk Java dapat membantu melindungi dokumen Anda dari akses yang tidak sah. Dengan memanfaatkan fitur-fitur pustaka, seperti perlindungan kata sandi, enkripsi, tanda tangan digital, pemberian tanda air, dan penyuntingan, Anda dapat memastikan bahwa dokumen Anda tetap aman dan terlindungi.
 
-## Tanya Jawab Umum
+## Pertanyaan yang Sering Diajukan
 
 ### Dapatkah saya menggunakan Aspose.Words untuk Java dalam proyek komersial?
-   Ya, Aspose.Words untuk Java dapat digunakan dalam proyek komersial di bawah model lisensi per-pengembang.
+Ya, Aspose.Words untuk Java dapat digunakan dalam proyek komersial di bawah model lisensi per-pengembang.
 
 ### Apakah Aspose.Words mendukung format dokumen lain selain Word?
-   Ya, Aspose.Words mendukung berbagai format, termasuk PDF, HTML, EPUB, dan banyak lagi.
+Ya, Aspose.Words mendukung berbagai format, termasuk PDF, HTML, EPUB, dan banyak lagi.
 
 ### Apakah mungkin untuk menambahkan beberapa tanda tangan digital ke suatu dokumen?
-   Ya, Aspose.Words memungkinkan Anda menambahkan beberapa tanda tangan digital ke sebuah dokumen.
+Ya, Aspose.Words memungkinkan Anda menambahkan beberapa tanda tangan digital ke sebuah dokumen.
 
 ### Apakah Aspose.Words mendukung pemulihan kata sandi dokumen?
-   Tidak, Aspose.Words tidak menyediakan fitur pemulihan kata sandi. Pastikan Anda menjaga keamanan kata sandi Anda.
+Tidak, Aspose.Words tidak menyediakan fitur pemulihan kata sandi. Pastikan Anda menjaga keamanan kata sandi Anda.
 
 ### Bisakah saya menyesuaikan tampilan tanda air?
-   Ya, Anda dapat sepenuhnya menyesuaikan tampilan tanda air, termasuk teks, font, warna, ukuran, dan rotasi.
+Ya, Anda dapat sepenuhnya menyesuaikan tampilan tanda air, termasuk teks, font, warna, ukuran, dan rotasi.

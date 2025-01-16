@@ -33,7 +33,7 @@ Teraz przeanalizujemy proces pogrubiania tekstu w dokumencie Word za pomocą Asp
 
 ## Krok 1: Zainicjuj DocumentBuilder
 
-Ten`DocumentBuilder` Klasa zapewnia szybki i łatwy sposób dodawania treści do dokumentu. Zainicjujmy ją.
+ Ten`DocumentBuilder` Klasa zapewnia szybki i łatwy sposób dodawania treści do dokumentu. Zainicjujmy ją.
 
 ```csharp
 // Użyj kreatora dokumentów, aby dodać treść do dokumentu.

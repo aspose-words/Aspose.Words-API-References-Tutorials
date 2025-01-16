@@ -68,7 +68,7 @@ Innan vi ändrar sidinställningarna är det viktigt att förstå att varje avsn
 
 ## Steg 4: Ändra sidinställningar i alla sektioner
 
-Låt oss nu ändra sidinställningarna för alla avsnitt i dokumentet. Specifikt kommer vi att ändra pappersstorleken för varje avsnitt till "Letter".
+Låt oss nu ändra sidinställningarna för alla avsnitt i dokumentet. Specifikt kommer vi att ändra pappersstorleken för varje avsnitt till "Brev".
 
 ```csharp
 foreach (Section section in doc)

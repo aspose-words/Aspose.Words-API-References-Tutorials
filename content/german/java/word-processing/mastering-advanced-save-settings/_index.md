@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /de/java/word-processing/mastering-advanced-save-settings/
 ---
+
 Sind Sie bereit, Ihre Fähigkeiten in der Dokumentenverarbeitung auf die nächste Stufe zu heben? In diesem umfassenden Handbuch werden wir uns eingehend mit der Beherrschung erweiterter Speichereinstellungen für Dokumente mit Aspose.Words für Java befassen. Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst anfangen, wir führen Sie durch die Feinheiten der Dokumentenbearbeitung mit Aspose.Words für Java.
 
 ## Einführung
@@ -25,13 +26,13 @@ Erfahren Sie, wie Sie das Format und die Ausrichtung Ihrer Dokumente festlegen. 
 ```java
 // Dokumentformat auf DOCX einstellen
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
-// Stellen Sie die Seitenausrichtung auf Querformat ein.
+//Stellen Sie die Seitenausrichtung auf Querformat ein.
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## Seitenränder steuern
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 Zoll
 pageSetup.setRightMargin(72.0); // 1 Zoll
 pageSetup.setTopMargin(36.0); // 0,5 Zoll
 pageSetup.setBottomMargin(36.0); // 0,5 Zoll
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## Kopf- und Fußzeilen verwalten
@@ -56,11 +57,11 @@ Kopf- und Fußzeilen enthalten oft wichtige Informationen. Erfahren Sie, wie Sie
 ```java
 // Fügen Sie der ersten Seite eine Kopfzeile hinzu
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## Einbetten von Schriftarten für die plattformübergreifende Anzeige
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## Schützen Sie Ihre Dokumente
@@ -85,7 +86,7 @@ Sicherheit ist wichtig, insbesondere beim Umgang mit vertraulichen Dokumenten. E
 // Schützen Sie das Dokument mit einem Passwort
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## Anpassen von Wasserzeichen
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## Optimieren der Dokumentgröße
@@ -111,7 +112,7 @@ Große Dokumentdateien können unhandlich sein. Entdecken Sie Techniken zur Opti
 // Optimieren der Dokumentgröße
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## Exportieren in verschiedene Formate
@@ -121,7 +122,7 @@ Manchmal benötigen Sie Ihr Dokument in verschiedenen Formaten. Aspose.Words fü
 ```java
 // Als PDF exportieren
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## Automatisierte Dokumenterstellung
@@ -133,7 +134,7 @@ Automatisierung verändert die Dokumenterstellung grundlegend. Erfahren Sie, wie
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## Arbeiten mit Dokumentmetadaten
@@ -143,9 +144,8 @@ Metadaten enthalten wertvolle Informationen zu einem Dokument. Wir erkunden, wie
 ```java
 // Zugreifen auf und Ändern von Dokumentmetadaten
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## Umgang mit Dokumentversionen
@@ -153,18 +153,22 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 Die Dokumentversionierung ist in kollaborativen Umgebungen von entscheidender Bedeutung. Erfahren Sie, wie Sie verschiedene Versionen Ihrer Dokumente effektiv verwalten.
 
 ```java
-// Vergleichen von Dokumentversionen
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+// Beim Vergleichen von Dokumenten mit Revisionen wird eine Ausnahme ausgelöst.
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## Erweiterter Dokumentenvergleich
+
+Vergleichen Sie Dokumente präzise mithilfe der erweiterten Techniken von Aspose.Words für Java.
 
 ```java
 // Erweiterter Dokumentenvergleich
@@ -217,7 +221,7 @@ Aspose.Words für Java unterstützt den Export von Dokumenten in verschiedene Fo
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Ist Aspose.Words für Java für die Stapeldokumenterstellung geeignet?
@@ -228,7 +232,7 @@ Ja, Aspose.Words für Java eignet sich gut für die Stapeldokumenterstellung und
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### Wie kann ich zwei Word-Dokumente auf Unterschiede vergleichen?

@@ -50,7 +50,7 @@ Tabellen worden geconstrueerd met behulp van de klasse Table in Aspose.Words. Om
 
 ```python
 # Create a table with 3 rows and 4 columns
-table = doc.tables.add(3, 4)
+table = doc.get_child(aw.NodeType.TABLE, 0, True).as_table()
 
 # Set preferred width for the table
 table.preferred_width = doc.page_width

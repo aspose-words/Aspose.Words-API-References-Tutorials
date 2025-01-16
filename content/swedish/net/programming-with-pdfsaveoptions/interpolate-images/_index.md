@@ -62,7 +62,7 @@ För att säkerställa att bilder interpoleras måste du konfigurera`PdfSaveOpti
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-De`InterpolateImages` egenskapen är inställd på`true` för att säkerställa att bilderna i din PDF interpoleras, vilket förbättrar deras kvalitet.
+ De`InterpolateImages` egenskapen är inställd på`true` för att säkerställa att bilderna i din PDF interpoleras, vilket förbättrar deras kvalitet.
 
 ## Steg 4: Spara dokumentet som en PDF
 

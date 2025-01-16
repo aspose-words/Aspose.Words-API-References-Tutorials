@@ -16,10 +16,10 @@ url: /hi/python-net/document-structure-and-content-manipulation/document-revisio
 
 ## पायथन के लिए Aspose.Words सेट अप करना
 
- शुरू करने से पहले, सुनिश्चित करें कि आपके पास Python के लिए Aspose.Words इंस्टॉल है। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/python/)एक बार इंस्टॉल हो जाने पर, आप आरंभ करने के लिए अपनी पायथन स्क्रिप्ट में आवश्यक मॉड्यूल आयात कर सकते हैं।
+शुरू करने से पहले, सुनिश्चित करें कि आपके पास Python के लिए Aspose.Words इंस्टॉल है। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/python/)एक बार इंस्टॉल हो जाने पर, आप आरंभ करने के लिए अपनी पायथन स्क्रिप्ट में आवश्यक मॉड्यूल आयात कर सकते हैं।
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## दस्तावेज़ लोड करना और प्रदर्शित करना
@@ -27,7 +27,7 @@ import asposewords
 किसी दस्तावेज़ के साथ काम करने के लिए, आपको सबसे पहले उसे अपने पायथन एप्लिकेशन में लोड करना होगा। दस्तावेज़ को लोड करने और उसकी सामग्री प्रदर्शित करने के लिए निम्न कोड स्निपेट का उपयोग करें:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 जब दस्तावेज़ में कोई भी परिवर्तन किया जाता है, तो Aspose.Words उन्हें संशोधन के रूप में स्वचालित रूप से ट्रैक कर सकता है। उदाहरण के लिए, यदि हम किसी विशिष्ट शब्द को बदलना चाहते हैं, तो हम परिवर्तन का ट्रैक रखते हुए ऐसा कर सकते हैं:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words आपको दो दस्तावेजों की तुलना करके उनके बीच अंतर देखने की सुविधा देता है:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 सहयोगी किसी दस्तावेज़ में टिप्पणियाँ और एनोटेशन जोड़ सकते हैं। आप इन तत्वों को प्रोग्रामेटिक रूप से प्रबंधित कर सकते हैं:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 आप दस्तावेज़ में संशोधनों के प्रदर्शित होने के तरीके को अनुकूलित कर सकते हैं, जैसे सम्मिलित और हटाए गए पाठ का रंग बदलना:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## दस्तावेज़ों को सहेजना और साझा करना
@@ -98,18 +98,11 @@ doc.save("final_document.docx")
 
 आगे की प्रतिक्रिया के लिए अंतिम दस्तावेज़ को सहयोगियों के साथ साझा करें।
 
-## प्रभावी सहयोग के लिए सुझाव
-
-1. संशोधनों को स्पष्ट रूप से सार्थक टिप्पणियों के साथ लेबल करें।
-2. सभी सहयोगियों को संशोधन संबंधी दिशानिर्देश बताएं।
-3. नियमित रूप से संशोधनों की समीक्षा करें और उन्हें स्वीकार/अस्वीकार करें।
-4. व्यापक दस्तावेज़ विश्लेषण के लिए Aspose.Words की तुलना सुविधा का उपयोग करें।
-
 ## निष्कर्ष
 
 Aspose.Words for Python दस्तावेज़ संशोधन और ट्रैकिंग को सरल बनाता है, सहयोग को बढ़ाता है और दस्तावेज़ अखंडता सुनिश्चित करता है। इसकी शक्तिशाली विशेषताओं के साथ, आप अपने दस्तावेज़ों में परिवर्तनों की समीक्षा, स्वीकृति और प्रबंधन की प्रक्रिया को सुव्यवस्थित कर सकते हैं।
 
-## पूछे जाने वाले प्रश्न
+## अक्सर पूछे जाने वाले प्रश्न
 
 ### मैं Python के लिए Aspose.Words कैसे स्थापित करूं?
 

@@ -182,25 +182,11 @@ doc.save("AlignmentAndSpacingDocument.docx");
 글머리 기호나 번호 매기기가 있는 목록을 만드는 것은 일반적인 문서 서식 작업입니다. Aspose.Words for Java는 이를 간단하게 만듭니다. 글머리 기호 목록을 만드는 방법은 다음과 같습니다.
 
 ```java
-// 새 문서 만들기
-Document doc = new Document();
-
-// 목록을 만드세요
-List list = new List(doc);
-
-// 글머리 기호가 있는 목록 항목 추가
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// 문서에 목록 추가
-doc.getFirstSection().getBody().appendChild(list);
-
-// 문서를 저장하세요
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 이 코드에서는 세 개의 항목으로 구성된 글머리 기호 목록을 만듭니다.
@@ -210,24 +196,21 @@ doc.save("BulletedListDocument.docx");
 하이퍼링크는 문서에 상호 작용을 추가하는 데 필수적입니다. Aspose.Words for Java를 사용하면 하이퍼링크를 쉽게 삽입할 수 있습니다. 다음은 예입니다.
 
 ```java
-// 새 문서 만들기
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// 문단을 만드세요
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// 하이퍼링크 만들기
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// 하이퍼링크를 삽입하고 사용자 지정 서식을 사용하여 강조합니다.
+// 하이퍼링크는 URL에 지정된 위치로 이동해주는 클릭 가능한 텍스트입니다.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", 거짓);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// 문서에 문단을 추가합니다
-doc.getFirstSection().getBody().appendChild(para);
-
-// 문서를 저장하세요
-doc.save("HyperlinkDocument.docx");
+// Microsoft Word에서 텍스트의 링크를 Ctrl 키를 누른 채 왼쪽 클릭하면 새 웹 브라우저 창을 통해 해당 URL로 이동합니다.
+doc.save("InsertHyperlink.docx");
 ```
 
 이 코드는 "Visit Example.com"이라는 텍스트와 함께 "https://www.example.com"에 대한 하이퍼링크를 삽입합니다.
@@ -237,23 +220,7 @@ doc.save("HyperlinkDocument.docx");
 문서에는 종종 이미지와 모양과 같은 시각적 요소가 필요합니다. Aspose.Words for Java를 사용하면 이미지와 모양을 원활하게 삽입할 수 있습니다. 이미지를 추가하는 방법은 다음과 같습니다.
 
 ```java
-// 새 문서 만들기
-Document doc = new Document();
-
-// 문단을 만드세요
-Paragraph para = new Paragraph(doc);
-
-// 파일에서 이미지 로드
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// 문서에 문단을 추가합니다
-doc.getFirstSection().getBody().appendChild(para);
-
-// 문서를 저장하세요
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 이 코드에서는 파일에서 이미지를 로드하여 문서에 삽입합니다.
@@ -287,27 +254,20 @@ doc.save("PageLayoutDocument.docx");
 머리글과 바닥글은 문서의 각 페이지에 일관된 정보를 추가하는 데 필수적입니다. 머리글과 바닥글을 사용하는 방법은 다음과 같습니다.
 
 ```java
-// 새 문서 만들기
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// 첫 번째 섹션의 헤더와 푸터에 접근합니다.
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// 헤더에 콘텐츠 추가
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// 푸터에 콘텐츠 추가
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// 문서 본문에 내용 추가
+// 문서 본문에 내용을 추가합니다.
 // ...
 
-// 문서를 저장하세요
+// 문서를 저장합니다.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ doc.save("HeaderFooterDocument.docx");
 표는 문서에서 데이터를 구성하고 표현하는 강력한 방법입니다. Aspose.Words for Java는 표 작업에 대한 광범위한 지원을 제공합니다. 다음은 표를 만드는 예입니다.
 
 ```java
-// 새 문서 만들기
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// 3행 3열의 표 만들기
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// 테이블 셀에 내용 추가
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//문서에 표 추가
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// 문서를 저장하세요
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// 서식을 변경하면 현재 셀에 적용됩니다.
+// 그리고 그 후에 빌더를 사용하여 만든 새로운 셀도 마찬가지입니다.
+// 이는 이전에 추가한 셀에는 영향을 미치지 않습니다.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// 세로 텍스트에 맞게 행 높이를 늘립니다.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 이 코드에서는 3개의 행과 3개의 열로 구성된 간단한 표를 만듭니다.
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // 문서를 PDF로 저장
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 이 코드 조각은 문서를 PDF 파일로 저장합니다.
@@ -393,7 +372,7 @@ builder.insertBreak(BreakType.PAGE_BREAK);
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### 텍스트를 어떻게 포맷합니까?
@@ -414,7 +393,7 @@ Java용 Aspose.Words의 최신 버전은 Aspose 웹사이트나 Maven 저장소�
 네, Aspose.Words for Java는 Java 11 이상 버전과 호환됩니다.
 
 ### 문서의 특정 섹션에 대한 페이지 여백을 어떻게 설정할 수 있나요?
-문서의 특정 섹션에 대한 페이지 여백을 설정할 수 있습니다.`PageSetup` 클래스. 다음은 예입니다.
+ 문서의 특정 섹션에 대한 페이지 여백을 설정할 수 있습니다.`PageSetup` 클래스. 다음은 예입니다.
 
 ```java
 Section section = doc.getSections().get(0); // 첫 번째 섹션을 받으세요

@@ -16,7 +16,7 @@ url: /ar/net/document-protection/unrestricted-editable-regions/
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
 1.  Aspose.Words for .NET: إذا لم تقم بتنزيله بالفعل، قم بتنزيله[هنا](https://releases.aspose.com/words/net/).
-2.  ترخيص Aspose صالح: يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
+2. ترخيص Aspose صالح: يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: أي إصدار حديث يجب أن يعمل بشكل جيد.
 4. المعرفة الأساسية بلغة C# و.NET: سوف تساعدك على متابعة الكود.
 

@@ -191,7 +191,7 @@ Aspose.Words 可讓您處理文件中的多個部分。您可以為每個部分�
 ```	
 copyHeadersFootersFromPreviousSection方法的原始碼
 ```java
-    /// <摘要>
+    //<摘要>
     //將頁首/頁尾從上一節複製並複製到指定節。
     /// </摘要>
     private void copyHeadersFootersFromPreviousSection(Section section)

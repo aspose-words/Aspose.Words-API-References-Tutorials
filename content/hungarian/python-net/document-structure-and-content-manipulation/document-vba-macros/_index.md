@@ -20,7 +20,7 @@ A mai digitális környezetben a Word-dokumentumok hatékony kezelése és feldo
 Az automatizálási út megkezdéséhez telepítenie kell az Aspose.Words for Python programot. Letöltheti a[Aspose honlapja](https://releases.aspose.com/words/python/). A telepítés után elindíthatja Python-projektjét, és importálhatja a szükséges modulokat.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## A VBA makrók és szerepük megértése
@@ -46,7 +46,7 @@ dokumentumok programozott létrehozása leegyszerűsödik az Aspose.Words Python
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ Az Aspose.Words Pythonnal integrált VBA makrók lehetőséget adnak az adatok k
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content

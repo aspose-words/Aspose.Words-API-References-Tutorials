@@ -15,7 +15,7 @@ Ahoj, kolego kodéru! Přemýšleli jste někdy, jak změnit způsob zobrazení 
 
 Než se po hlavě ponoříme do kódu, ujistěte se, že máme vše, co potřebujeme, abychom spolu s tímto tutoriálem dodrželi. Zde je rychlý kontrolní seznam:
 
-1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Na vašem počítači byste měli mít nainstalované IDE jako Visual Studio.
 3. Základní znalost C#: I když budeme mít věci jednoduché, základní znalost C# bude prospěšná.
 4. Ukázkový dokument aplikace Word: Připravte si ukázkový dokument aplikace Word. Pro tento tutoriál jej budeme označovat jako „Document.docx“.

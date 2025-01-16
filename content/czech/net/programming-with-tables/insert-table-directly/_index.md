@@ -54,7 +54,7 @@ Dále vytvoříme objekt tabulky. Zde definujeme strukturu naší tabulky.
 ```csharp
 // Začneme vytvořením objektu tabulky. Všimněte si, že musíme předat objekt dokumentu
 // ke konstruktoru každého uzlu. Je to proto, že každý uzel, který vytvoříme, musí patřit
-// na nějaký dokument.
+// k nějakému dokumentu.
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);
 ```

@@ -2,11 +2,12 @@
 title: ドキュメントの高度な保存設定をマスターする
 linktitle: ドキュメントの高度な保存設定をマスターする
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用して、高度なドキュメント保存設定を習得します。ドキュメントの作成を簡単にフォーマット、保護、最適化、自動化する方法を学びます。
+description: Aspose.Words for Java を使用して、高度なドキュメント保存設定を習得します。ドキュメントの書式設定、保護、最適化、および作成の自動化を簡単に行う方法を学習します。
 type: docs
 weight: 13
 url: /ja/java/word-processing/mastering-advanced-save-settings/
 ---
+
 ドキュメント処理スキルを次のレベルに引き上げる準備はできていますか? この包括的なガイドでは、Aspose.Words for Java を使用してドキュメントの高度な保存設定を習得する方法について詳しく説明します。熟練した開発者でも、初心者でも、Aspose.Words for Java を使用したドキュメント操作の複雑さを順を追って説明します。
 
 ## 導入
@@ -25,13 +26,13 @@ Aspose.Words for Java は、開発者が Word 文書をプログラムで操作�
 ```java
 //ドキュメント形式をDOCXに設定する
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
 //ページの向きを横向きに設定する
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## ページ余白の制御
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); //1インチ
 pageSetup.setRightMargin(72.0); //1インチ
 pageSetup.setTopMargin(36.0); //0.5インチ
 pageSetup.setBottomMargin(36.0); //0.5インチ
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## ヘッダーとフッターの管理
@@ -56,11 +57,11 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 ```java
 //最初のページにヘッダーを追加する
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## クロスプラットフォーム表示のためのフォントの埋め込み
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## ドキュメントの保護
@@ -85,7 +86,7 @@ doc.save("embedded_fonts.docx", SaveFormat.DOCX);
 //文書をパスワードで保護する
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## 透かしのカスタマイズ
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## ドキュメントサイズの最適化
@@ -111,7 +112,7 @@ doc.save("watermarked_document.docx", SaveFormat.DOCX);
 //ドキュメントサイズを最適化する
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## 異なる形式へのエクスポート
@@ -121,7 +122,7 @@ doc.save("optimized_document.docx", SaveFormat.DOCX);
 ```java
 // PDFにエクスポート
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## ドキュメント生成の自動化
@@ -133,7 +134,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## ドキュメントメタデータの操作
@@ -143,9 +144,8 @@ doc.save("automated_document.docx", SaveFormat.DOCX);
 ```java
 //ドキュメントのメタデータにアクセスして変更する
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## ドキュメントバージョンの処理
@@ -153,18 +153,22 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 共同作業環境では、ドキュメントのバージョン管理が重要です。ドキュメントのさまざまなバージョンを効果的に管理する方法を学びます。
 
 ```java
-//ドキュメントのバージョンを比較する
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+//改訂版のあるドキュメントを比較すると例外がスローされます。
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## 高度なドキュメント比較
+
+Aspose.Words for Java が提供する高度な技術を使用して、ドキュメントを正確に比較します。
 
 ```java
 //高度なドキュメント比較
@@ -217,7 +221,7 @@ Aspose.Words for Java は、PDF、HTML、DOCX など、さまざまな形式へ�
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Aspose.Words for Java はバッチ ドキュメント生成に適していますか?
@@ -228,7 +232,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### 2 つの Word 文書の違いを比較するにはどうすればよいでしょうか?

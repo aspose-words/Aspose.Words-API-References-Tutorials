@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Ten`Aspose.Words` przestrzeń nazw zawiera podstawowe klasy do manipulowania dokumentami Worda, podczas gdy`Aspose.Words.Tables` jest przeznaczony specjalnie do obsługi tabel.
+ Ten`Aspose.Words` przestrzeń nazw zawiera podstawowe klasy do manipulowania dokumentami Worda, podczas gdy`Aspose.Words.Tables` jest przeznaczony specjalnie do obsługi tabel.
 
 ## Krok 1: Skonfiguruj swój dokument
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- W tym kroku zdefiniujesz ścieżkę, w której przechowywany jest Twój dokument i załadujesz go do`Document` obiekt. Zastąp`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką, gdzie znajduje się Twój dokument.
+ W tym kroku zdefiniujesz ścieżkę, w której przechowywany jest Twój dokument i załadujesz go do`Document` obiekt. Zastąp`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, gdzie znajduje się Twój dokument.
 
 ## Krok 2: Uzyskaj dostęp do tabeli
 
@@ -68,7 +68,7 @@ Teraz, gdy masz już tabelę, możesz zastosować funkcję auto-dopasowania. Spo
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-Ten`AutoFit` metoda z`AutoFitBehavior.AutoFitToWindow` zapewnia dopasowanie szerokości tabeli do całej szerokości strony.
+ Ten`AutoFit` metoda z`AutoFitBehavior.AutoFitToWindow` zapewnia dopasowanie szerokości tabeli do całej szerokości strony.
 
 ## Krok 4: Zapisz zmodyfikowany dokument
 

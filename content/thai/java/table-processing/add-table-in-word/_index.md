@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## ขั้นตอนที่ 6: สร้างตารางและเพิ่มแถว
 
-สร้างใหม่`Table` วัตถุและระบุจำนวนแถวและคอลัมน์
+ สร้างใหม่`Table` วัตถุและระบุจำนวนแถวและคอลัมน์
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## ขั้นตอนที่ 8: บันทึกเอกสาร
 
- บันทึกเอกสาร Word ลงในตำแหน่งที่ต้องการโดยใช้`save()` วิธี.
+บันทึกเอกสาร Word ลงในตำแหน่งที่ต้องการโดยใช้`save()` วิธี.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## ขั้นตอนที่ 9: กรอกรหัสให้สมบูรณ์
-
-นี่คือโค้ดที่สมบูรณ์สำหรับการเพิ่มตารางใน Word โดยใช้ Aspose.Words สำหรับ Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // ขั้นตอนที่ 5: สร้างเอกสาร Word ใหม่
-        Document doc = new Document();
-
-        // ขั้นตอนที่ 6: สร้างตารางและเพิ่มแถว
-        Table table = new Table(doc);
-        int rowCount = 5; // จำนวนแถวในตาราง
-        int columnCount = 3; // จำนวนคอลัมน์ในตาราง
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // ขั้นตอนที่ 7: เพิ่มตารางลงในเอกสาร
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // ขั้นตอนที่ 8: บันทึกเอกสาร
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## บทสรุป

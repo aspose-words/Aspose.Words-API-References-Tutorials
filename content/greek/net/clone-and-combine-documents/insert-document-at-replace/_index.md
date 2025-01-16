@@ -165,7 +165,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
  Απολύτως! Μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμής από[εδώ](https://releases.aspose.com/).
 
 ### Πώς μπορώ να λάβω υποστήριξη για το Aspose.Words;
-Μπορείτε να λάβετε υποστήριξη μεταβαίνοντας στο[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8).
+ Μπορείτε να λάβετε υποστήριξη μεταβαίνοντας στο[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8).
 
 ### Μπορώ να διατηρήσω τη μορφοποίηση του εγγράφου που έχει εισαχθεί;
  Ναι, το`NodeImporter` class σάς επιτρέπει να καθορίσετε πώς γίνεται ο χειρισμός της μορφοποίησης κατά την εισαγωγή κόμβων από ένα έγγραφο σε άλλο.

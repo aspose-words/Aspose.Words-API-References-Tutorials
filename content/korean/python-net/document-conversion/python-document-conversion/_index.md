@@ -105,8 +105,6 @@ Aspose.Words for Python은 Word와 PDF 외에도 HTML, TXT, EPUB 등 다양한 �
 
 Aspose.Words를 사용하면 변환된 문서의 모양을 사용자 지정할 수 있습니다. 글꼴 스타일, 색상, 정렬 및 문단 간격과 같은 서식 옵션을 적용할 수 있습니다.
 
-#### 예:
-
 ```python
 # Python code for applying formatting during conversion
 import aspose.words as aw
@@ -128,8 +126,6 @@ doc.save("formatted_output.pdf", aw.SaveFormat.PDF)
 ### 이미지 및 테이블 처리
 
 Aspose.Words를 사용하면 변환 프로세스 중에 이미지와 표를 처리할 수 있습니다. 이미지를 추출하고, 크기를 조정하고, 표를 조작하여 문서의 구조를 유지할 수 있습니다.
-
-#### 예:
 
 ```python
 # Python code for handling images and tables during conversion
@@ -156,8 +152,6 @@ doc.save("modified_output.pdf", aw.SaveFormat.PDF)
 
 Aspose.Words를 사용하면 일관된 글꼴 렌더링을 보장하고 변환된 문서의 레이아웃을 관리할 수 있습니다. 이 기능은 특히 다양한 형식에서 문서 일관성을 유지할 때 유용합니다.
 
-#### 예:
-
 ```python
 # Python code for managing fonts and layout during conversion
 import aspose.words as aw
@@ -178,8 +172,6 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ### 자동화를 위한 Python 스크립트 작성
 
 Python의 스크립팅 기능은 반복적인 작업을 자동화하는 데 탁월한 선택입니다. Python 스크립트를 작성하여 일괄 문서 변환을 수행하여 시간과 노력을 절약할 수 있습니다.
-
-#### 예:
 
 ```python
 # Python script for batch document conversion
@@ -205,11 +197,7 @@ for filename in input_files:
 
 ### 문서 일괄 변환
 
-에 의해
-
- Python과 Aspose.Words의 힘을 결합하면 대량 문서 변환을 자동화하여 생산성과 효율성을 높일 수 있습니다.
-
-#### 예:
+Python과 Aspose.Words의 힘을 결합하면 대량 문서 변환을 자동화하여 생산성과 효율성을 높일 수 있습니다.
 
 ```python
 # Python script for batch document conversion using Aspose.Words
@@ -238,14 +226,6 @@ for filename in input_files:
     output_filename = filename.replace(file_ext, ".pdf" if file_ext == ".docx" else ".docx")
     doc.save(os.path.join(output_dir, output_filename))
 ```
-## Python에 Aspose.Words를 사용하는 장점
-
-Python용 Aspose.Words는 다음을 포함한 여러 가지 장점을 제공합니다.
-
-- 강력한 문서 변환 기능
-- 문서 조작을 위한 풍부한 기능 세트
-- Python 애플리케이션과의 쉬운 통합
-- 번영하는 커뮤니티의 지속적인 지원 및 업데이트
 
 ## 결론
 

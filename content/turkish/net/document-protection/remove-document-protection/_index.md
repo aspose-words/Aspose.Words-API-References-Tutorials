@@ -10,7 +10,7 @@ url: /tr/net/document-protection/remove-document-protection/
 
 ## giriiş
 
-Merhaba! Koruma ayarları yüzünden kendi Word belgenizin dışında kaldığınız oldu mu hiç? Yanlış anahtarla bir kapıyı açmaya çalışmak gibi—sinir bozucu, değil mi? Ama korkmayın! .NET için Aspose.Words ile Word belgelerinizden korumayı kolayca kaldırabilirsiniz. Bu eğitim, sizi adım adım süreçte yönlendirecek ve belgeleriniz üzerinde kısa sürede tam kontrole kavuşmanızı sağlayacaktır. Hadi başlayalım!
+Merhaba! Koruma ayarları yüzünden kendi Word belgenizin dışında kaldığınızı hiç fark ettiniz mi? Yanlış anahtarla bir kapıyı açmaya çalışmak gibi—sinir bozucu, değil mi? Ama korkmayın! .NET için Aspose.Words ile Word belgelerinizden korumayı kolayca kaldırabilirsiniz. Bu eğitim, sizi adım adım süreçte yönlendirecek ve belgeleriniz üzerinde kısa sürede tam kontrole kavuşmanızı sağlayacaktır. Hadi başlayalım!
 
 ## Ön koşullar
 

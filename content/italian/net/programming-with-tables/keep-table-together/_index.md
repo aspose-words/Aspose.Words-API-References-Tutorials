@@ -67,7 +67,7 @@ foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 
 ## Passaggio 4: Salvare il documento
 
-Infine, salviamo il documento aggiornato. Questo applicherà le nostre modifiche e assicurerà che la tabella rimanga unita su una pagina.
+Infine, salviamo il documento aggiornato. Questo applicherà le nostre modifiche e assicurerà che la tabella resti unita su una pagina.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");

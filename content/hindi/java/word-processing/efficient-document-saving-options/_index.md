@@ -54,7 +54,7 @@ doc.save("output.html", saveOptions);
 
 ```java
 // दस्तावेज़ को छवियों के रूप में सहेजने के लिए जावा कोड
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // रिज़ॉल्यूशन (DPI) सेट करें
 doc.save("output.png", imageSaveOptions);
 ```

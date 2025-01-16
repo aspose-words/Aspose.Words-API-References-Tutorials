@@ -107,5 +107,5 @@ Och där har du det! Du har framgångsrikt tillämpat radformatering på en tabe
 ### Kan jag lägga till kanter på raderna?  
  Absolut! Du kan lägga till ramar på rader genom att ställa in`Borders` egendom av`RowFormat`.
 
-### Hur tillämpar jag villkorlig formatering på rader?  
+### Hur använder jag villkorlig formatering på rader?  
 Du kan använda villkorlig logik i din kod för att tillämpa olika formatering baserat på specifika villkor.

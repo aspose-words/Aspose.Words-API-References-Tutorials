@@ -59,7 +59,7 @@ Aspose.Words podporuje širokou škálu formátů dokumentů včetně DOCX, DOC,
 Ano, Aspose.Words poskytuje robustní API pro manipulaci s tabulkami, obrázky, formátováním textu a dalšími v dokumentech.
 
 ### Kde najdu podrobnou dokumentaci k Aspose.Words pro .NET?
- dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
+ K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
 
 ### Jak mohu získat dočasnou licenci pro Aspose.Words pro .NET?
 Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).

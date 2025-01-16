@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-Các`InterpolateImages` thuộc tính được thiết lập thành`true` để đảm bảo rằng hình ảnh trong tệp PDF của bạn được nội suy, giúp cải thiện chất lượng hình ảnh.
+ Các`InterpolateImages` thuộc tính được thiết lập thành`true` để đảm bảo rằng hình ảnh trong tệp PDF của bạn được nội suy, giúp cải thiện chất lượng hình ảnh.
 
 ## Bước 4: Lưu tài liệu dưới dạng PDF
 

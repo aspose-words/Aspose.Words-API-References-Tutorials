@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Artık belgemiz yüklendiğine göre, ona şifreleme uygulamaya geçelim. Java için Aspose.Words, belge şifrelemesini ayarlamak için basit bir yol sağlar:
 
 ```java
-// Belgeyi açmak için bir parola ayarlayın
-doc.getWriteProtection().setPassword("yourPassword");
-
-// Şifreleme algoritmasını ayarlayın (isteğe bağlı)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// Şifrelenmiş belgeyi kaydet
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. Belirli Belge Öğelerinin Korunması
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 Bazen, yalnızca belgenizin belirli bölümlerini, örneğin üstbilgileri, altbilgileri veya belirli paragrafları korumak isteyebilirsiniz. Aspose.Words, belge korumasında bu düzeyde ayrıntıya ulaşmanızı sağlar:
 
 ```java
-// Belirli bir bölümü koru (Salt okunur koruma)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// Belirli bir paragrafı koru (Yalnızca form alanlarının düzenlenmesine izin ver)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// Korunan belgeyi kaydet
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//Düzenlenebilir aralıklar, korunan belgelerin bazı bölümlerini düzenlemeye açık bırakmamıza olanak tanır.
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. Dijital İmzaların Uygulanması
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 Belgenize dijital imzalar eklemek, onun gerçekliğini ve bütünlüğünü garanti edebilir. İşte Java için Aspose.Words kullanarak dijital imzayı nasıl uygulayabileceğiniz:
 
 ```java
-// Sertifika dosyasını yükleyin
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// Belgeyi sertifika ile imzalayın
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// Yeni dijital imzamızla uygulanacak bir yorum, tarih ve şifre çözme şifresi oluşturun.
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// İmzalanmış belgeyi kaydedin
-doc.save("path/to/signed/document.docx");
+// İmzalanmamış giriş belgesi için yerel bir sistem dosya adı ve yeni dijital olarak imzalanmış kopyası için bir çıktı dosya adı ayarlayın.
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. Belgelerinize Filigran Ekleme
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. Hassas Bilgilerin Sansürlenmesi
 
-Belgeleri paylaşırken, yanlış ellere geçmemesini sağlamak için hassas bilgileri kalıcı olarak kaldırmak isteyebilirsiniz. Java için Aspose.Words hassas içerikleri sansürlemenize olanak tanır:
-
-```java
-// Hassas bilgileri arayın ve düzenleyin
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// Düzenlemeleri uygula
-doc.redact(options);
-
-// Düzenlenmiş belgeyi kaydedin
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. Güvenli Belgeleri Diğer Biçimlere Dönüştürme
+## 10. Güvenli Belgeleri Diğer Biçimlere Dönüştürme
 
 Aspose.Words for Java ayrıca güvenli belgelerinizi PDF veya HTML gibi çeşitli biçimlere dönüştürmenize olanak tanır:
 
 ```java
-// Güvenli belgeyi yükleyin
+//Güvenli belgeyi yükleyin
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // PDF'ye dönüştür
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // HTML'ye dönüştür
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. Belge Güvenliği için En İyi Uygulamalar
-
-Sağlam bir belge güvenliğini sağlamak için şu en iyi uygulamaları izleyin:
-
-- Olası tehditlerin bir adım önünde olmak için güvenlik önlemlerinizi düzenli olarak güncelleyin.
-- Güçlü parolalar ve şifreleme algoritmaları kullanın.
-- Hassas belgelere erişimi yalnızca ihtiyaç duyulduğu ölçüde sınırlayın.
-- Çalışanlarınızı güvenlik risklerini tanımaları ve bunlara yanıt vermeleri konusunda eğitin.
-
-## 13. Belge Güvenliğinin Test Edilmesi
-
-Güvenlik önlemlerini uyguladıktan sonra, çeşitli senaryolarda güvenli kaldıklarından emin olmak için belgelerinizi kapsamlı bir şekilde test edin. Olası güvenlik açıklarını belirlemek için güvenlik kontrollerini aşmaya çalışın.
-
-## 14. Sonuç
+## Çözüm
 
 Bu adım adım kılavuzda, belge güvenliğinin önemini ve Aspose.Words for Java'nın belgelerinizi yetkisiz erişime karşı nasıl koruyabileceğini inceledik. Parola koruması, şifreleme, dijital imzalar, filigranlama ve sansürleme gibi kütüphanenin özelliklerini kullanarak belgelerinizin güvenli ve emniyette kalmasını sağlayabilirsiniz.
 
 ## SSS
 
 ### Aspose.Words for Java'yı ticari projelerde kullanabilir miyim?
-   Evet, Aspose.Words for Java, geliştirici başına lisanslama modeli kapsamında ticari projelerde kullanılabilir.
+Evet, Aspose.Words for Java, geliştirici başına lisanslama modeli kapsamında ticari projelerde kullanılabilir.
 
 ### Aspose.Words, Word dışında başka belge biçimlerini de destekliyor mu?
-   Evet, Aspose.Words PDF, HTML, EPUB ve daha fazlası dahil olmak üzere çok çeşitli formatları destekler.
+Evet, Aspose.Words PDF, HTML, EPUB ve daha fazlası dahil olmak üzere çok çeşitli formatları destekler.
 
 ### Bir belgeye birden fazla dijital imza eklemek mümkün müdür?
-   Evet, Aspose.Words bir belgeye birden fazla dijital imza eklemenize olanak tanır.
+Evet, Aspose.Words bir belgeye birden fazla dijital imza eklemenize olanak tanır.
 
 ### Aspose.Words belge şifre kurtarmayı destekliyor mu?
-   Hayır, Aspose.Words şifre kurtarma özellikleri sağlamaz. Şifrelerinizi güvende tuttuğunuzdan emin olun.
+Hayır, Aspose.Words şifre kurtarma özellikleri sağlamaz. Şifrelerinizi güvende tuttuğunuzdan emin olun.
 
 ### Filigranların görünümünü özelleştirebilir miyim?
-   Evet, filigranların görünümünü metin, yazı tipi, renk, boyut ve dönüş dahil olmak üzere tamamen özelleştirebilirsiniz.
+Evet, filigranların görünümünü metin, yazı tipi, renk, boyut ve dönüş dahil olmak üzere tamamen özelleştirebilirsiniz.

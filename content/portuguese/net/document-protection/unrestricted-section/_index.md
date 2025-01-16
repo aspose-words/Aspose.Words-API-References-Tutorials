@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-O`Document` classe inicializa um novo documento e o`DocumentBuilder` nos ajuda a adicionar conteúdo facilmente ao nosso documento.
+ O`Document` classe inicializa um novo documento e o`DocumentBuilder` nos ajuda a adicionar conteúdo facilmente ao nosso documento.
 
 ## Etapa 2: Inserir seções
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-O`InsertBreak` O método insere uma quebra de seção contínua, permitindo-nos ter configurações diferentes para cada seção.
+ O`InsertBreak` O método insere uma quebra de seção contínua, permitindo-nos ter configurações diferentes para cada seção.
 
 ## Etapa 3: Proteja o documento
 
@@ -124,7 +124,7 @@ Esta etapa garante que o documento seja salvo corretamente e possa ser recarrega
 
 ## Conclusão
 
-E aí está! Seguindo esses passos, você criou com sucesso um documento do Word com uma mistura de seções protegidas e desprotegidas usando o Aspose.Words para .NET. Esse método é incrivelmente útil quando você precisa bloquear certas partes de um documento enquanto deixa outras partes editáveis.
+aí está! Seguindo esses passos, você criou com sucesso um documento do Word com uma mistura de seções protegidas e desprotegidas usando o Aspose.Words para .NET. Esse método é incrivelmente útil quando você precisa bloquear certas partes de um documento enquanto deixa outras partes editáveis.
 
 ## Perguntas frequentes
 

@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Definir gerador de código de barras
 
- Defina um gerador de código de barras personalizado usando o`FieldOptions` classe. Neste exemplo, assumimos que você implementou uma`CustomBarcodeGenerator` classe para gerar o código de barras. Substituir`CustomBarcodeGenerator` com sua lógica de geração de código de barras real:
+ Defina um gerador de código de barras personalizado usando o`FieldOptions` classe. Neste exemplo, assumimos que você implementou uma`CustomBarcodeGenerator`classe para gerar o código de barras. Substituir`CustomBarcodeGenerator` com sua lógica de geração de código de barras real:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
@@ -74,7 +74,7 @@ Parabéns! Você aprendeu com sucesso como gerar imagens de código de barras pe
 
 Sim, você pode gerar códigos de barras a partir de dados de texto fornecendo o texto desejado como entrada para o gerador de código de barras.
 
-### O Aspose.Words para Java é adequado para processamento de documentos em larga escala?
+### Aspose.Words para Java é adequado para processamento de documentos em larga escala?
 
 Absolutamente! O Aspose.Words para Java foi projetado para lidar com processamento de documentos em larga escala de forma eficiente. É amplamente usado em aplicativos de nível empresarial.
 

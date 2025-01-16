@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Βήμα 6: Δημιουργήστε έναν πίνακα και προσθέστε σειρές
 
-Δημιουργήστε ένα νέο`Table` αντικείμενο και καθορίστε τον αριθμό των γραμμών και στηλών.
+ Δημιουργήστε ένα νέο`Table` αντικείμενο και καθορίστε τον αριθμό των γραμμών και στηλών.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Βήμα 8: Αποθηκεύστε το έγγραφο
 
- Αποθηκεύστε το έγγραφο του Word στην επιθυμητή θέση χρησιμοποιώντας το`save()` μέθοδος.
+Αποθηκεύστε το έγγραφο του Word στην επιθυμητή θέση χρησιμοποιώντας το`save()` μέθοδος.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Βήμα 9: Συμπληρώστε τον Κώδικα
-
-Ακολουθεί ο πλήρης κώδικας για την προσθήκη πίνακα στο Word χρησιμοποιώντας το Aspose.Words για Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Βήμα 5: Δημιουργήστε ένα νέο έγγραφο του Word
-        Document doc = new Document();
-
-        // Βήμα 6: Δημιουργήστε έναν πίνακα και προσθέστε σειρές
-        Table table = new Table(doc);
-        int rowCount = 5; // Αριθμός σειρών στον πίνακα
-        int columnCount = 3; // Αριθμός στηλών στον πίνακα
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Βήμα 7: Προσθέστε τον Πίνακα στο Έγγραφο
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Βήμα 8: Αποθηκεύστε το έγγραφο
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Σύναψη

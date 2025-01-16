@@ -16,10 +16,10 @@ Bei Dokumentrevisionen werden im Laufe der Zeit an einem Dokument vorgenommene �
 
 ## Einrichten von Aspose.Words für Python
 
- Bevor wir beginnen, stellen Sie sicher, dass Sie Aspose.Words für Python installiert haben. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/python/). Nach der Installation können Sie die erforderlichen Module in Ihr Python-Skript importieren, um loszulegen.
+Bevor wir beginnen, stellen Sie sicher, dass Sie Aspose.Words für Python installiert haben. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/python/). Nach der Installation können Sie die erforderlichen Module in Ihr Python-Skript importieren, um loszulegen.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Laden und Anzeigen eines Dokuments
@@ -27,7 +27,7 @@ import asposewords
 Um mit einem Dokument arbeiten zu können, müssen Sie es zunächst in Ihre Python-Anwendung laden. Verwenden Sie den folgenden Codeausschnitt, um ein Dokument zu laden und seinen Inhalt anzuzeigen:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 Wenn Änderungen am Dokument vorgenommen werden, kann Aspose.Words diese automatisch als Revisionen verfolgen. Wenn wir beispielsweise ein bestimmtes Wort ersetzen möchten, können wir dies tun und gleichzeitig die Änderung verfolgen:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Mit Aspose.Words können Sie zwei Dokumente vergleichen, um die Unterschiede zwischen ihnen zu visualisieren:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 Mitarbeiter können einem Dokument Kommentare und Anmerkungen hinzufügen. Sie können diese Elemente programmgesteuert verwalten:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 Sie können die Anzeige von Überarbeitungen im Dokument anpassen und beispielsweise die Farbe von eingefügtem und gelöschtem Text ändern:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Speichern und Freigeben von Dokumenten
@@ -98,18 +98,11 @@ doc.save("final_document.docx")
 
 Geben Sie das endgültige Dokument für weiteres Feedback an Mitarbeiter weiter.
 
-## Tipps für eine effektive Zusammenarbeit
-
-1. Kennzeichnen Sie Revisionen deutlich mit aussagekräftigen Kommentaren.
-2. Kommunizieren Sie die Revisionsrichtlinien an alle Mitarbeiter.
-3. Überprüfen und akzeptieren/ablehnen Sie Revisionen regelmäßig.
-4. Verwenden Sie die Vergleichsfunktion von Aspose.Words für eine umfassende Dokumentanalyse.
-
 ## Abschluss
 
 Aspose.Words für Python vereinfacht die Dokumentüberarbeitung und -verfolgung, verbessert die Zusammenarbeit und stellt die Dokumentintegrität sicher. Mit seinen leistungsstarken Funktionen können Sie den Prozess der Überprüfung, Annahme und Verwaltung von Änderungen in Ihren Dokumenten optimieren.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Wie installiere ich Aspose.Words für Python?
 
@@ -117,7 +110,7 @@ Aspose.Words für Python vereinfacht die Dokumentüberarbeitung und -verfolgung,
 
 ### Kann ich die Revisionsverfolgung für bestimmte Teile des Dokuments deaktivieren?
 
-Ja, Sie können die Revisionsverfolgung für bestimmte Abschnitte des Dokuments selektiv deaktivieren, indem Sie die`TrackRevisions` Eigenschaft für diese Abschnitte.
+Ja, Sie können die Revisionsverfolgung für bestimmte Abschnitte des Dokuments selektiv deaktivieren, indem Sie programmgesteuert die`TrackRevisions` Eigenschaft für diese Abschnitte.
 
 ### Ist es möglich, Änderungen mehrerer Mitwirkender zusammenzuführen?
 

@@ -56,7 +56,7 @@ CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.C
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-ال`Compare`تقوم الطريقة بمقارنة المستند A بالمستند B وحفظ التغييرات في المستند A. يمكنك تحديد اسم المؤلف وتاريخ المقارنة للرجوع إليها.
+ ال`Compare`تقوم الطريقة بمقارنة المستند A بالمستند B وحفظ التغييرات في المستند A. يمكنك تحديد اسم المؤلف وتاريخ المقارنة للرجوع إليها.
 
 ## خاتمة
 

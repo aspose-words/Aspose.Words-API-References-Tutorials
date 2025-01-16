@@ -9,7 +9,7 @@ url: /fr/net/working-with-vba-macros/modify-vba-macros/
 ---
 ## Introduction
 
-Bonjour à tous les codeurs et passionnés d'automatisation de documents ! Êtes-vous prêt à passer au niveau supérieur avec vos documents Word ? Aujourd'hui, nous plongeons dans le monde fascinant des macros VBA (Visual Basic for Applications) dans les documents Word. Plus précisément, nous découvrirons comment modifier les macros VBA existantes à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite l'automatisation des tâches, la personnalisation des documents et même la modification de ces macros embêtantes. Que vous cherchiez à mettre à jour vos macros ou que vous soyez simplement curieux de connaître le processus, ce tutoriel est fait pour vous. Alors, commençons !
+Bonjour à tous les codeurs et passionnés d'automatisation de documents ! Êtes-vous prêt à passer au niveau supérieur avec vos documents Word ? Aujourd'hui, nous plongeons dans le monde fascinant des macros VBA (Visual Basic for Applications) dans les documents Word. Plus précisément, nous allons découvrir comment modifier les macros VBA existantes à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite l'automatisation des tâches, la personnalisation des documents et même la modification de ces macros embêtantes. Que vous cherchiez à mettre à jour vos macros ou que vous soyez simplement curieux de connaître le processus, ce tutoriel est fait pour vous. Alors, commençons !
 
 ## Prérequis
 

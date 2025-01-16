@@ -16,7 +16,7 @@ mai digitális világban a dokumentumkezelés kritikus szempont minden szervezet
 
 Mielőtt belemerülnénk a dokumentumengedélyek kezelésébe, kezdjük az Aspose.Words for Java beállításával. A kezdéshez kövesse az alábbi lépéseket:
 
-1.  Az Aspose.Words for Java letöltése: Látogassa meg[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) az Aspose.Words for Java legújabb verziójának letöltéséhez.
+1.  Az Aspose.Words for Java letöltése: Látogassa meg[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)az Aspose.Words for Java legújabb verziójának letöltéséhez.
 
 2. Az Aspose.Words for Java telepítése: A könyvtár letöltése után kövesse a telepítési utasításokat a Java fejlesztői környezetben történő beállításához.
 
@@ -52,23 +52,14 @@ Most, hogy ismeri az alapokat, folytassa a dokumentumengedélyek beállításáv
 // Töltse be a dokumentumot
 Document doc = new Document("sample.docx");
 
-// Határozza meg a hozzáférés-szabályozást
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Alkalmazzon dokumentumvédelmet
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Mentse el a dokumentumot
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Gyakran Ismételt Kérdések (GYIK)
+## GYIK
 
-## Hogyan távolíthatom el a dokumentumvédelmet?
+### Hogyan távolíthatom el a dokumentumvédelmet?
 
-dokumentumvédelem eltávolításához egyszerűen nyissa meg a védett dokumentumot, és ha jelszóval védett, adja meg a megfelelő jelszót. Ezután az Aspose.Words for Java segítségével távolítsa el a védelmet az alábbiak szerint:
+A dokumentumvédelem eltávolításához egyszerűen nyissa meg a védett dokumentumot, és ha jelszóval védett, adja meg a megfelelő jelszót. Ezután az Aspose.Words for Java segítségével távolítsa el a védelmet az alábbiak szerint:
 
 ```java
 Document doc = new Document("protected_document.docx");
@@ -76,29 +67,29 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Beállíthatok engedélyeket adott felhasználók számára?
+### Beállíthatok engedélyeket adott felhasználók számára?
 
 Igen, az Aspose.Words for Java lehetővé teszi bizonyos felhasználók vagy csoportok engedélyeinek beállítását. Meghatározhatja, hogy ki férhet hozzá és szerkesztheti a dokumentumot.
 
-## Lehetséges egy dokumentumot több jelszóval titkosítani?
+### Lehetséges egy dokumentumot több jelszóval titkosítani?
 
 Nem, az Aspose.Words for Java támogatja az egyjelszavas titkosítást. A dokumentum védelméhez jelszót állíthat be.
 
-## Hogyan ellenőrizhetem egy dokumentum jogosultságait?
+### Hogyan ellenőrizhetem egy dokumentum jogosultságait?
 
 Az Aspose.Words for Java segítségével ellenőrizheti egy dokumentum engedélyeit a védelmi beállítások és a hozzáférés-vezérlési lehetőségek vizsgálatával.
 
-## Automatizálhatom a dokumentumengedély-kezelést?
+### Automatizálhatom a dokumentumengedély-kezelést?
 
 Teljesen! Az Aspose.Words for Java szoftvert integrálhatja alkalmazásaiba a dokumentumengedély-kezelés automatizálása érdekében, így a dokumentum-munkafolyamat zökkenőmentes részévé válik.
 
-## Mi a teendő, ha elfelejtem a dokumentum jelszavát?
+### Mi a teendő, ha elfelejtem a dokumentum jelszavát?
 
 Ha elfelejti a dokumentum jelszavát, nincs módja annak visszaállítására. Ügyeljen arra, hogy jelszavait biztonságos helyen rögzítse.
 
 ## Következtetés
 
-A dokumentumok engedélyeinek kezelése kulcsfontosságú a dokumentumok titkosságának és integritásának megőrzése szempontjából. Az Aspose.Words for Java hatékony eszközöket kínál ennek elérésére. Ebben az útmutatóban megvizsgáltuk, hogyan állíthatja be az Aspose.Words for Java programot, és hogyan kezelheti hatékonyan a dokumentumengedélyeket. A megfelelő tudással és eszközökkel átveheti az irányítást dokumentumai biztonsága felett, és gondoskodhat arról, hogy bizalmas adatai továbbra is védve maradjanak.
+dokumentumok engedélyeinek kezelése kulcsfontosságú a dokumentumok titkosságának és integritásának megőrzése szempontjából. Az Aspose.Words for Java hatékony eszközöket kínál ennek elérésére. Ebben az útmutatóban megvizsgáltuk, hogyan állíthatja be az Aspose.Words for Java programot, és hogyan kezelheti hatékonyan a dokumentumengedélyeket. A megfelelő tudással és eszközökkel átveheti az irányítást dokumentumai biztonsága felett, és gondoskodhat arról, hogy bizalmas adatai továbbra is védve maradjanak.
 
 Most, hogy alaposan ismeri a dokumentumengedélyek kezelését az Aspose.Words for Java használatával, itt az ideje, hogy ezt a tudást a gyakorlatba is átültesse. Fokozza dokumentumkezelési folyamatait, és óvja meg adatait könnyedén.
 

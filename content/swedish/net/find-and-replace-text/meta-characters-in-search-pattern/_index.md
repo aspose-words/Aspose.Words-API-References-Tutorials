@@ -15,7 +15,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek för att hantera Word-dokume
 
 Innan vi hoppar in i koden, låt oss se till att du har allt konfigurerat:
 
-1.  Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Du kan ladda ner den från[Aspose Releases Page](https://releases.aspose.com/words/net/).
+1. Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Du kan ladda ner den från[Aspose Releases Page](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: Visual Studio eller någon annan C#-utvecklingsmiljö.
 3. Grundläggande kunskaper om C#: Förståelse av C#-programmeringsgrunderna kommer att vara fördelaktigt.
 
@@ -39,7 +39,7 @@ Innan du börjar manipulera dokumentet måste du definiera sökvägen till din d
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Ersätta`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen där du vill spara dina dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara dina dokument.
 
 ## Steg 2: Skapa ett nytt dokument
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## Steg 4: Ersätt text med hjälp av metatecken för styckebrytning
 
- Metatecken kan representera olika element som stycken, tabbar och radbrytningar. Här använder vi`&p` för att representera en styckebrytning.
+Metatecken kan representera olika element som stycken, tabbar och radbrytningar. Här använder vi`&p` för att representera en styckebrytning.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");

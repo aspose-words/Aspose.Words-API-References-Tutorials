@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-The`MetafileRenderingOptions` класс предоставляет параметры для отображения метафайлов (например, WMF). Устанавливая`ScaleWmfFontsToMetafileSize` к`false`, вы указываете Aspose.Words не масштабировать шрифты в соответствии с размером метафайла, что может помочь уменьшить общий размер PDF-файла.
+ The`MetafileRenderingOptions` класс предоставляет параметры для отображения метафайлов (например, WMF). Устанавливая`ScaleWmfFontsToMetafileSize` к`false`, вы указываете Aspose.Words не масштабировать шрифты в соответствии с размером метафайла, что может помочь уменьшить общий размер PDF-файла.
 
 ## Шаг 3: Задайте параметры сохранения PDF-файла
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-The`PdfSaveOptions` класс позволяет указать различные настройки для сохранения документа в формате PDF. Назначая ранее настроенные`MetafileRenderingOptions` к`MetafileRenderingOptions` собственность`PdfSaveOptions`, вы гарантируете, что документ будет сохранен в соответствии с желаемыми настройками рендеринга метафайла.
+ The`PdfSaveOptions` класс позволяет указать различные настройки для сохранения документа в формате PDF. Назначая ранее настроенные`MetafileRenderingOptions` к`MetafileRenderingOptions` собственность`PdfSaveOptions`, вы гарантируете, что документ будет сохранен в соответствии с желаемыми настройками рендеринга метафайла.
 
 ## Шаг 4: Сохраните документ как PDF.
 

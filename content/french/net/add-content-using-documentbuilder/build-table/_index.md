@@ -19,7 +19,7 @@ Avant de nous lancer dans notre aventure de création de table, assurons-nous qu
 - .NET Framework (4.0 ou supérieur)
 - Bibliothèque Aspose.Words pour .NET
 
- Si vous n'avez pas encore Aspose.Words, vous pouvez facilement[téléchargez-le ici](https://releases.aspose.com/words/net/) . Vous pouvez également commencer par un[essai gratuit](https://releases.aspose.com/) si vous voulez tester les eaux. Pour ceux qui sont prêts à franchir le pas, vous pouvez[acheter une licence](https://purchase.aspose.com/buy) , ou si vous avez besoin de plus de temps pour évaluer, prenez un[permis temporaire](https://purchase.aspose.com/temporary-license/).
+ Si vous n'avez pas encore Aspose.Words, vous pouvez facilement[téléchargez-le ici](https://releases.aspose.com/words/net/) . Vous pouvez également commencer par un[essai gratuit](https://releases.aspose.com/) si vous voulez tester les eaux. Pour ceux qui sont prêts à franchir le pas, vous pouvez[acheter une licence](https://purchase.aspose.com/buy) ou si vous avez besoin de plus de temps pour évaluer, prenez un[permis temporaire](https://purchase.aspose.com/temporary-license/).
 
 ## Importer des espaces de noms
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- En utilisant`StartTable` nous indiquons à Aspose.Words que nous sommes sur le point de créer une table.`InsertCell` la méthode ajoute la première cellule et`AutoFit` garantit que nos colonnes ont des largeurs fixes.
+ En utilisant`StartTable` , nous indiquons à Aspose.Words que nous sommes sur le point de créer une table.`InsertCell` la méthode ajoute la première cellule et`AutoFit` garantit que nos colonnes ont des largeurs fixes.
 
 ## Étape 3 : formater la première ligne
 
@@ -111,7 +111,7 @@ Cette étape consiste à ajouter la touche finale à notre œuvre. La structure 
 doc.Save("YourDirectoryPath/AddContentUsingDocumentBuilder.BuildTable.docx");
 ```
 
-Considérez cela comme un encadrement de votre chef-d'œuvre et son exposition. Votre tableau fait désormais partie d'un document Word, prêt à être partagé et admiré.
+Considérez cela comme un encadrement de notre chef-d'œuvre et son exposition. Votre tableau fait désormais partie d'un document Word, prêt à être partagé et admiré.
 
 ## Conclusion
 

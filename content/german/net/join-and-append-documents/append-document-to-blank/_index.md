@@ -122,7 +122,7 @@ Ja, Sie können mehrere Dokumente anhängen, indem Sie den`AppendDocument` Metho
 
 ### Was passiert, wenn das Quelldokument eine andere Formatierung aufweist?
 
-Der`ImportFormatMode.KeepSourceFormatting` stellt sicher, dass die Formatierung des Quelldokuments beim Anhängen erhalten bleibt.
+ Der`ImportFormatMode.KeepSourceFormatting` stellt sicher, dass die Formatierung des Quelldokuments beim Anhängen erhalten bleibt.
 
 ### Benötige ich eine Lizenz, um Aspose.Words zu verwenden?
 

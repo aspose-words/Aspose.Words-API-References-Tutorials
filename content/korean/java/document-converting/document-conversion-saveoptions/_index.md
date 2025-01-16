@@ -49,7 +49,7 @@ Document doc = new Document("Rendering.docx");
 
 ```java
 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.setSaveFormat(SaveFormat.EPUB);
+saveOptions.setSaveFormat();
 saveOptions.setEncoding(StandardCharsets.UTF_8);
 ```
 

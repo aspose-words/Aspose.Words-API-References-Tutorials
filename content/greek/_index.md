@@ -68,7 +68,7 @@ is_root: true
 
 Αυτοί είναι σύνδεσμοι προς μερικούς χρήσιμους πόρους:
 - [Δημιουργία Εγγράφου](./python-net/document-creation/)  
-- [Αυτοματοποίηση λέξεων](./python-net/word-automation/)
-- [Ευφυΐα εγγράφων](./python-net/document-intelligence/)
+- [Αυτοματισμός Λέξεων](./python-net/word-automation/)
+- [Νοημοσύνη εγγράφων](./python-net/document-intelligence/)
 - [Μετατροπή εγγράφου](./python-net/document-conversion/)
 - [Προστασία εγγράφων](./python-net/document-protection/)

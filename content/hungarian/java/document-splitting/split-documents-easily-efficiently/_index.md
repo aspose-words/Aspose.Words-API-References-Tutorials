@@ -30,26 +30,23 @@ A dokumentum felosztása arra a folyamatra utal, amikor egy nagy dokumentumot me
 
 ## 4. Dokumentumok felosztása oldalak szerint
 
-dokumentum felosztásának egyik legegyszerűbb módja az egyes oldalak felosztása. Az eredeti dokumentum minden oldala külön aldokumentumként kerül mentésre. Ez a módszer különösen akkor hasznos, ha a dokumentumot fel kell osztani a nyomtatáshoz, archiváláshoz vagy az egyes részeknek a különböző címzettekhez való szétosztásához.
+A dokumentum felosztásának egyik legegyszerűbb módja az egyes oldalak felosztása. Az eredeti dokumentum minden oldala külön aldokumentumként kerül mentésre. Ez a módszer különösen akkor hasznos, ha a dokumentumot fel kell osztani a nyomtatáshoz, archiváláshoz vagy az egyes részeknek a különböző címzettekhez való szétosztásához.
 
 Ha egy dokumentumot oldalanként szeretne felosztani az Aspose.Words for Java használatával, kövesse az alábbi lépéseket:
 
 ```java
-// Java kód a dokumentum oldalakra való felosztásához az Aspose.Words for Java használatával
-Document doc = new Document("input.docx");
+Document doc = new Document("Your Directory Path" + "Big document.docx");
 int pageCount = doc.getPageCount();
-
-for (int i = 0; i < pageCount; i++) {
-    Document pageDoc = new Document();
-    pageDoc.getFirstSection().getBody().appendChild(
-            doc.getLastSection().getBody().getChildNodes().get(i).clone(true));
-    pageDoc.save("output_page_" + (i + 1) + ".docx");
+for (int page = 0; page < pageCount; page++)
+{
+    Document extractedPage = doc.extractPages(page, 1);
+    extractedPage.save("Your Directory Path" + "SplitDocument.PageByPage_" + (page + 1) + ".docx");
 }
 ```
 
 ## 5. Dokumentumok felosztása bekezdések szerint
 
-A dokumentumok bekezdések szerinti felosztása lehetővé teszi a dokumentum természetes szerkezete alapján történő felosztását. Minden bekezdés külön aldokumentumként kerül mentésre, ami megkönnyíti a tartalom kezelését és az egyes szakaszok szerkesztését anélkül, hogy ez befolyásolná a dokumentum többi részét.
+dokumentumok bekezdések szerinti felosztása lehetővé teszi a dokumentum természetes szerkezete alapján történő felosztását. Minden bekezdés külön aldokumentumként kerül mentésre, ami megkönnyíti a tartalom kezelését és az egyes szakaszok szerkesztését anélkül, hogy ez befolyásolná a dokumentum többi részét.
 
 Ha egy dokumentumot bekezdésekre szeretne felosztani az Aspose.Words for Java használatával, használja a következő kódot:
 
@@ -69,7 +66,7 @@ for (Paragraph paragraph : paragraphs) {
 
 ## 6. Dokumentumok felosztása címsorok szerint
 
-dokumentumok fejlécek szerinti felosztása egy fejlettebb megközelítés, amely lehetővé teszi aldokumentumok létrehozását a dokumentum hierarchikus szerkezete alapján. Az adott címsor alatti egyes szakaszok külön aldokumentumként kerülnek mentésre, megkönnyítve a navigációt és a dokumentum különböző részeivel való munkát.
+A dokumentumok fejlécek szerinti felosztása egy fejlettebb megközelítés, amely lehetővé teszi aldokumentumok létrehozását a dokumentum hierarchikus szerkezete alapján. Az adott címsor alatti egyes szakaszok külön aldokumentumként kerülnek mentésre, megkönnyítve a navigációt és a dokumentum különböző részeivel való munkát.
 
 Ha egy dokumentumot fejlécek szerint szeretne felosztani az Aspose.Words for Java használatával, kövesse az alábbi lépéseket:
 
@@ -95,7 +92,7 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ## 7. Dokumentumok felosztása szakaszok szerint
 
-A dokumentumok szakaszokra bontása lehetővé teszi a dokumentum logikai részei alapján történő felosztását. Minden szakasz külön aldokumentumként kerül mentésre, ami akkor hasznos, ha a dokumentum meghatározott fejezeteire vagy szegmenseire szeretne összpontosítani.
+dokumentumok szakaszokra bontása lehetővé teszi a dokumentum logikai részei alapján történő felosztását. Minden szakasz külön aldokumentumként kerül mentésre, ami akkor hasznos, ha a dokumentum meghatározott fejezeteire vagy szegmenseire szeretne összpontosítani.
 
 Ha egy dokumentumot szakaszokra szeretne felosztani az Aspose.Words for Java használatával, kövesse az alábbi lépéseket:
 
@@ -110,48 +107,28 @@ for (int i = 0; i < doc.getSections().getCount(); i++) {
 }
 ```
 
-## 8. Fejlett dokumentumfelosztási technikák
-
-### 8.1 Egyedi szakaszok felosztása külön dokumentumokra
-
-Bizonyos esetekben előfordulhat, hogy csak bizonyos szakaszokat kíván külön dokumentumokra felosztani. Az Aspose.Words for Java lehetővé teszi, hogy egyéni feltételeket határozzon meg a felosztandó szakaszok meghatározásához.
-
-## 8.2 Dokumentumok felosztása egyéni kritériumok alapján
-
-Egyéni logikáját megvalósíthatja a dokumentumok meghatározott kritériumok, például tartalom, kulcsszavak vagy metaadatok alapján történő felosztásához. Ez a rugalmasság biztosítja, hogy a dokumentumfelosztási folyamatot egyedi igényeihez igazíthassa.
-
-## 9. Felosztott dokumentumok kombinálása
-
-Az Aspose.Words for Java olyan funkciókat is biztosít, amelyek a felosztott dokumentumokat egyetlen dokumentummá egyesítik. Ez a funkció akkor hasznos, ha az egyes szakaszokat egységes dokumentummá kell egyesíteni.
-
-## 10. Teljesítményre vonatkozó szempontok
-
-Nagyméretű dokumentumok kezelésekor elengedhetetlen a teljesítmény optimalizálása. Aspose.Words
-
- A for Java-t a nagy fájlok hatékony kezelésére tervezték, de a fejlesztők tovább javíthatják a teljesítményt a bevált gyakorlatok követésével.
-
-## 11. Következtetés
+## Következtetés
 
 Ebben az útmutatóban megvizsgáltuk, hogyan lehet egyszerűen és hatékonyan felosztani dokumentumokat az Aspose.Words for Java használatával. A nagy dokumentumok kisebb, jobban kezelhető részekre osztásával a fejlesztők meghatározott részekkel dolgozhatnak, és leegyszerűsíthetik a dokumentumfeldolgozási feladatokat. Az Aspose.Words for Java különféle módszereket kínál a dokumentumok oldalak, bekezdések, címsorok és szakaszok alapján történő felosztására, így a fejlesztők rugalmasan hozzáigazíthatják a felosztási folyamatot sajátos igényeikhez.
 
-## 12. GYIK
+## GYIK
 
-### Q1. Az Aspose.Words for Java feloszthatja a különböző formátumú dokumentumokat, például DOC és DOCX?
+### Az Aspose.Words for Java feloszthatja a különböző formátumú dokumentumokat, például DOC és DOCX?
 
 Igen, az Aspose.Words for Java különféle formátumú dokumentumokat tud felosztani, többek között DOC-t és DOCX-et.
 
-### Q2. Az Aspose.Words for Java kompatibilis a különböző Java verziókkal?
+### Az Aspose.Words for Java kompatibilis a különböző Java verziókkal?
 
 Igen, az Aspose.Words for Java több Java-verzióval is kompatibilis, így zökkenőmentes integrációt biztosít a projektekkel.
 
-### Q3. Használhatom az Aspose.Words for Java szoftvert jelszóval védett dokumentumok felosztására?
+### Használhatom az Aspose.Words for Java szoftvert jelszóval védett dokumentumok felosztására?
 
 Igen, az Aspose.Words for Java támogatja a jelszóval védett dokumentumok felosztását, amennyiben megadja a helyes jelszót.
 
-### Q4. Hogyan kezdhetem el az Aspose.Words for Java használatát, ha új vagyok a könyvtárban?
+### Hogyan kezdhetem el az Aspose.Words for Java használatát, ha új vagyok a könyvtárban?
 
  Kezdheti azzal, hogy megvizsgálja a[Aspose.Words for Java API Reference](https://reference.aspose.com/words/java/) és az Aspose.Words for Java által biztosított kódpéldák. A dokumentáció részletes információkat tartalmaz a könyvtár szolgáltatásairól és azok hatékony használatáról.
 
-### Q5. Az Aspose.Words for Java alkalmas vállalati szintű dokumentumfeldolgozásra?
+### Az Aspose.Words for Java alkalmas vállalati szintű dokumentumfeldolgozásra?
 
 Teljesen! Az Aspose.Words for Java-t robusztusságának és kiterjedt szolgáltatáskészletének köszönhetően széles körben használják vállalati szintű alkalmazásokban különféle dokumentumfeldolgozási feladatokhoz.

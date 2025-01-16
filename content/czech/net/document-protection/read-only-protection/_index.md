@@ -53,18 +53,18 @@ Vysvětlení:
 Dále musíme nastavit heslo pro ochranu proti zápisu. Toto heslo může mít až 15 znaků.
 
 ```csharp
-//Zadejte heslo dlouhé až 15 znaků.
+// Zadejte heslo dlouhé až 15 znaků.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Vysvětlení:
 
-- The`SetPassword` metoda je volána na`WriteProtection` vlastnost dokumentu.
+-  The`SetPassword` metoda je volána na`WriteProtection` vlastnost dokumentu.
 - Poskytujeme heslo (v tomto případě „MyPassword“), které bude vyžadováno k odstranění ochrany.
 
 ## Krok 3: Povolte doporučení pouze pro čtení
 
-V tomto kroku dokument doporučujeme pouze pro čtení. To znamená, že když je dokument otevřen, vyzve uživatele, aby jej otevřel v režimu pouze pro čtení.
+tomto kroku dokument doporučujeme pouze pro čtení. To znamená, že když je dokument otevřen, vyzve uživatele, aby jej otevřel v režimu pouze pro čtení.
 
 ```csharp
 // Vytvořte dokument jako doporučený pouze pro čtení.
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Vysvětlení:
 
-- The`ReadOnlyRecommended` vlastnost je nastavena na`true`.
+-  The`ReadOnlyRecommended` vlastnost je nastavena na`true`.
 - To vyzve uživatele k otevření dokumentu v režimu pouze pro čtení, i když se mohou rozhodnout ignorovat doporučení.
 
 ## Krok 4: Použijte ochranu pouze pro čtení
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Vysvětlení:
 
-- The`Protect` metoda je volána na dokumentu s`ProtectionType.ReadOnly` jako argument.
+-  The`Protect` metoda je volána na dokumentu s`ProtectionType.ReadOnly` jako argument.
 - Tato metoda vynucuje ochranu pouze pro čtení a zabraňuje jakýmkoli úpravám dokumentu bez hesla.
 
 ## Krok 5: Uložte dokument
@@ -101,12 +101,12 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Vysvětlení:
 
-- The`Save` V dokumentu se zavolá metoda, která specifikuje cestu a název souboru.
+-  The`Save` V dokumentu se zavolá metoda, která specifikuje cestu a název souboru.
 - Dokument se uloží s nastavenou ochranou pouze pro čtení.
 
 ## Závěr
 
-A tady to máte! Úspěšně jste vytvořili dokument Word chráněný pouze pro čtení pomocí Aspose.Words for .NET. Tato funkce zajišťuje, že obsah vašeho dokumentu zůstane nedotčený a nezměněný, což poskytuje další vrstvu zabezpečení. Ať už sdílíte citlivé informace nebo právní dokumenty, ochrana pouze pro čtení je nezbytným nástrojem ve vašem arzenálu správy dokumentů.
+tady to máte! Úspěšně jste vytvořili dokument Word chráněný pouze pro čtení pomocí Aspose.Words for .NET. Tato funkce zajišťuje, že obsah vašeho dokumentu zůstane nedotčený a nezměněný, což poskytuje další vrstvu zabezpečení. Ať už sdílíte citlivé informace nebo právní dokumenty, ochrana pouze pro čtení je nezbytným nástrojem ve vašem arzenálu správy dokumentů.
 
 ## FAQ
 

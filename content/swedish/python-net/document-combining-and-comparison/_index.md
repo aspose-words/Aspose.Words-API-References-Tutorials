@@ -30,12 +30,8 @@ I slutet av dessa tutorials kommer du att vara utrustad med färdigheter att sö
 ## Handledning för dokumentkombination och jämförelse
 ### [Sammanfoga och jämföra dokument i Word](./merge-compare-documents/)
 Slå samman och jämför Word-dokument utan ansträngning med Aspose.Words för Python. Lär dig hur du manipulerar dokument, markerar skillnader och automatiserar uppgifter.
-### [Utnyttja kraften i dokumentbokmärken](./document-bookmarks/)
-Lär dig hur du utnyttjar kraften i dokumentbokmärken med Aspose.Words för Python. Skapa, hantera och navigera genom bokmärken med steg-för-steg-guider och kodexempel.
 ### [Navigera i dokumentområden för precisionsredigering](./document-ranges/)
 Lär dig hur du navigerar och redigerar dokumentområden med precision med Aspose.Words för Python. Steg-för-steg-guide med källkod för effektiv innehållsmanipulation.
-### [Använda SDT (Structured Document Tags) för strukturerad data](./document-sdts/)
-Lås upp kraften med SDT (Structured Document Tags) för att organisera innehåll. Lär dig hur du använder Aspose.Words för Python för att implementera SDT.
 ### [Tillämpa stilar och teman för att transformera dokument](./apply-styles-themes-documents/)
 Förbättra dokumentets estetik med Aspose.Words för Python. Använd stilar, teman och anpassningar utan ansträngning.
 ### [Skapa en omfattande innehållsförteckning för Word-dokument](./generate-table-contents/)

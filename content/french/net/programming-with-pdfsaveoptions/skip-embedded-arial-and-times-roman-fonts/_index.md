@@ -81,7 +81,7 @@ Non, ce ne sera pas le cas. Étant donné qu'Arial et Times Roman sont des polic
 Oui, vous pouvez configurer les options d'enregistrement pour ignorer l'intégration d'autres polices si nécessaire.
 
 ### Aspose.Words pour .NET est-il gratuit ?
-Aspose.Words pour .NET propose un essai gratuit que vous pouvez télécharger[ici](https://releases.aspose.com/) , mais pour un accès complet, vous devez acheter une licence[ici](https://purchase.aspose.com/buy).
+ Aspose.Words pour .NET propose un essai gratuit que vous pouvez télécharger[ici](https://releases.aspose.com/) , mais pour un accès complet, vous devez acheter une licence[ici](https://purchase.aspose.com/buy).
 
 ### Où puis-je trouver plus de tutoriels sur Aspose.Words pour .NET ?
- Vous pouvez trouver une documentation complète et des tutoriels[ici](https://reference.aspose.com/words/net/).
+Vous pouvez trouver une documentation complète et des tutoriels[ici](https://reference.aspose.com/words/net/).

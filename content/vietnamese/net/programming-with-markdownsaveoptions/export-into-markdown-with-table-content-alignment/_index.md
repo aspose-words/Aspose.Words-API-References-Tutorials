@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Bước 4: Sử dụng Tự động căn chỉnh nội dung bảng
 
-Các`Auto`tùy chọn căn chỉnh lấy căn chỉnh từ đoạn văn đầu tiên trong cột bảng tương ứng. Điều này có thể hữu ích khi bạn có các căn chỉnh hỗn hợp trong một bảng duy nhất.
+ Các`Auto`tùy chọn căn chỉnh lấy căn chỉnh từ đoạn văn đầu tiên trong cột bảng tương ứng. Điều này có thể hữu ích khi bạn có các căn chỉnh hỗn hợp trong một bảng duy nhất.
 
 ```csharp
 // Đặt căn chỉnh thành Tự động.

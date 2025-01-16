@@ -15,7 +15,7 @@ Ahoj, tech nadšenci a mágové s dokumenty! 🌟 Už jste někdy čelili výzv�
 
 Než se ponoříme do kouzla propojování textových polí, ujistěte se, že máte připraveno vše podstatné:
 
-1. Aspose.Words for .NET Library: Budete potřebovat nejnovější verzi Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Budete potřebovat nejnovější verzi Aspose.Words for .NET. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí .NET, jako je Visual Studio, je nezbytné pro psaní a testování vašeho kódu.
 3. Základní znalost C#: Základní znalost C# vám pomůže sledovat příklady kódu.
 4. Ukázkový dokument aplikace Word: I když to není pro tento výukový program nezbytně nutné, může být užitečné mít ukázkový dokument aplikace Word k testování propojených textových polí.
@@ -132,7 +132,7 @@ Ano, můžete propojit více textových polí v sekvenci. Jen se ujistěte, že 
 Text uvnitř každého textového pole můžete stylizovat stejně jako jakýkoli jiný text v dokumentu aplikace Word pomocí bohatých možností formátování Aspose.Words nebo uživatelského rozhraní aplikace Word.
 
 ### Je možné odpojit textová pole, jakmile jsou propojena?
- Ano, můžete odpojit textová pole nastavením`Next` vlastnictví`TextBox` namítat proti`null`.
+ Ano, můžete odpojit textová pole nastavením`Next` vlastnictvím`TextBox` namítat proti`null`.
 
 ### Kde najdu další návody na Aspose.Words pro .NET?
  Další návody a zdroje naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).

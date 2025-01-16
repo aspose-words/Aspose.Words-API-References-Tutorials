@@ -10,7 +10,7 @@ url: /hu/java/document-converting/converting-html-documents/
 
 ## Bevezetés
 
-Előfordult már, hogy egy HTML-fájlt Word-dokumentummá kell konvertálnia, de nem tudja, hol kezdje? Legyen szó kidolgozott jelentéskészítésről, tartalom könnyebben hozzáférhető formátumban való megosztásáról, vagy egyszerűen a webtartalom szerkezetének Word-fájlban való megőrzéséről, a HTML-nek Word-dokumentummá konvertálása rendkívül hasznos lehet. Ebben az útmutatóban megvizsgáljuk, hogyan hajthatja végre ezt a feladatot az Aspose.Words for Java segítségével, amely egy olyan hatékony könyvtár, amelyet különféle szövegszerkesztési feladatok programozott kezelésére terveztek. Lépésről lépésre végigjárjuk a folyamatot, így a végére alapos ismerete lesz az átalakítás zökkenőmentes végrehajtásáról.
+Előfordult már, hogy egy HTML-fájlt Word-dokumentummá kell konvertálnia, de nem tudja, hol kezdje? Legyen szó kidolgozott jelentéskészítésről, tartalom könnyebben hozzáférhető formátumban való megosztásáról, vagy egyszerűen a webtartalom szerkezetének Word-fájlban való megőrzéséről, a HTML-nek Word-dokumentummá konvertálása rendkívül hasznos lehet. Ebben az útmutatóban megvizsgáljuk, hogyan lehet ezt a feladatot végrehajtani az Aspose.Words for Java segítségével, amely egy olyan hatékony könyvtár, amelyet különféle szövegszerkesztési feladatok programozott kezelésére terveztek. Lépésről lépésre végigjárjuk a folyamatot, így a végére alapos ismerete lesz az átalakítás zökkenőmentes végrehajtásáról.
 
 ## Előfeltételek
 
@@ -41,7 +41,7 @@ Document doc = new Document("Input.html");
 
 ### Magyarázat:
 
- Itt, a`Document` osztályt használják a HTML fájl betöltésére. A konstruktor a HTML fájl elérési útját veszi argumentumként. A lépés befejezése után a HTML-tartalom készen áll a további feldolgozásra.
+ Itt, a`Document` osztályt használják a HTML fájl betöltésére. A konstruktor a HTML fájl elérési útját veszi argumentumként. Ha ez a lépés befejeződött, a HTML-tartalom készen áll a további feldolgozásra.
 
 ## 2. lépés: Mentse el a dokumentumot Word fájlként
 
@@ -53,7 +53,7 @@ doc.save("Output.docx");
 
 ### Magyarázat:
 
-A`save` módszert hívják a`Document` objektum a fájl mentéséhez a`.docx` formátum. A megadott argumentum a fájl elérési útja, ahová a Word-dokumentum mentésre kerül. Ez az átalakítási folyamat utolsó lépése.
+ A`save` módszert hívják a`Document` objektum a fájl mentéséhez a`.docx` formátum. A megadott argumentum a fájl elérési útja, ahová a Word-dokumentum mentésre kerül. Ez az átalakítási folyamat utolsó lépése.
 
 ## Következtetés
 

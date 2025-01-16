@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Steg 3: Initiera DocumentBuilder
 
-De`DocumentBuilder` är som din pensel. Det hjälper dig att lägga till innehåll i ditt dokument. Låt oss initiera det.
+ De`DocumentBuilder` är som din pensel. Det hjälper dig att lägga till innehåll i ditt dokument. Låt oss initiera det.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ Var inte det kul? Med Aspose.Words för .NET är det enkelt att manipulera Word-
 Aspose.Words för .NET är ett kraftfullt bibliotek för att arbeta med Word-dokument programmatiskt. Den stöder ett brett utbud av funktioner, från att skapa och redigera dokument till att konvertera mellan olika format.
 
 ### Kan jag använda Aspose.Words gratis?
- Ja, du kan börja med en[gratis provperiod](https://releases.aspose.com/) att utforska dess funktioner. För långvarig användning kan du[köpa en licens](https://purchase.aspose.com/buy).
+Ja, du kan börja med en[gratis provperiod](https://releases.aspose.com/) att utforska dess funktioner. För långvarig användning kan du[köpa en licens](https://purchase.aspose.com/buy).
 
 ### Hur får jag support för Aspose.Words?
  Du kan få stöd från[Aspose community forum](https://forum.aspose.com/c/words/8). Det är ett bra ställe att ställa frågor och dela med sig av dina erfarenheter.

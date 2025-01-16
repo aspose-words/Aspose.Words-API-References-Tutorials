@@ -22,7 +22,7 @@ Pour enregistrer des images au format TIFF avec contrôle de seuil, procédez co
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setTiffCompression(TiffCompression.CCITT_3);
 saveOptions.setImageColorMode(ImageColorMode.GRAYSCALE);
 saveOptions.setTiffBinarizationMethod(ImageBinarizationMethod.FLOYD_STEINBERG_DITHERING);
@@ -36,7 +36,7 @@ Pour enregistrer une page spécifique au format TIFF multipage, utilisez le code
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(new PageRange(0, 1)));
 saveOptions.setTiffCompression(TiffCompression.CCITT_4);
 saveOptions.setResolution(160f);
@@ -49,7 +49,7 @@ Pour enregistrer des images au format PNG indexé 1 BPP, procédez comme suit :
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(1));
 saveOptions.setImageColorMode(ImageColorMode.BLACK_AND_WHITE);
 saveOptions.setPixelFormat(ImagePixelFormat.FORMAT_1_BPP_INDEXED);
@@ -62,7 +62,7 @@ Pour enregistrer une page spécifique au format JPEG avec des options de personn
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
+ImageSaveOptions options = new ImageSaveOptions();
 options.setPageSet(new PageSet(0));
 options.setImageBrightness(0.3f);
 options.setImageContrast(0.7f);
@@ -76,7 +76,7 @@ Vous pouvez utiliser un rappel pour personnaliser l'enregistrement des pages. Vo
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setPageSet(new PageSet(new PageRange(0, doc.getPageCount() - 1)));
 imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
 doc.save("Your Directory Path" + "PageSavingCallback.png", imageSaveOptions);
@@ -96,7 +96,7 @@ private static class HandlePageSavingCallback implements IPageSavingCallback {
 public void exposeThresholdControlForTiffBinarization() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+	ImageSaveOptions saveOptions = new ImageSaveOptions();
 	{
 		saveOptions.setTiffCompression(TiffCompression.CCITT_3);
 		saveOptions.setImageColorMode(ImageColorMode.GRAYSCALE);
@@ -110,7 +110,7 @@ public void getTiffPageRange() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
-	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.TIFF);
+	ImageSaveOptions saveOptions = new ImageSaveOptions();
 	{
 		saveOptions.setPageSet(new PageSet(new PageRange(0, 1))); saveOptions.setTiffCompression(TiffCompression.CCITT_4); saveOptions.setResolution(160f);
 	}
@@ -120,7 +120,7 @@ public void getTiffPageRange() throws Exception
 public void format1BppIndexed() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+	ImageSaveOptions saveOptions = new ImageSaveOptions();
 	{
 		saveOptions.setPageSet(new PageSet(1));
 		saveOptions.setImageColorMode(ImageColorMode.BLACK_AND_WHITE);
@@ -132,7 +132,7 @@ public void format1BppIndexed() throws Exception
 public void getJpegPageRange() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
+	ImageSaveOptions options = new ImageSaveOptions();
 	// Réglez « PageSet » sur « 0 » pour convertir uniquement la première page d'un document.
 	options.setPageSet(new PageSet(0));
 	// Modifiez la luminosité et le contraste de l'image.
@@ -148,7 +148,7 @@ public void getJpegPageRange() throws Exception
 public static void pageSavingCallback() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
-	ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+	ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 	{
 		imageSaveOptions.setPageSet(new PageSet(new PageRange(0, doc.getPageCount() - 1)));
 		imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
@@ -174,7 +174,7 @@ Vous avez appris à enregistrer des images à partir de documents à l'aide d'As
  Vous pouvez modifier le format de l'image en spécifiant le format souhaité dans le`ImageSaveOptions` . Par exemple, pour enregistrer au format PNG, utilisez`SaveFormat.PNG` comme indiqué dans le code :
 
 ```java
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 ```
 
 ### Puis-je personnaliser les paramètres de compression pour les images TIFF ?

@@ -118,7 +118,7 @@ Aspose.Words for .NET은 .NET 프레임워크를 사용하여 프로그래밍 �
  네, 사용할 수 있습니다[무료 체험](https://releases.aspose.com/) 또는 얻을[임시 면허](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET에 대한 문서는 어디에서 찾을 수 있나요?
-자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
+ 자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words에 대한 지원을 어떻게 받을 수 있나요?
  방문할 수 있습니다[지원 포럼](https://forum.aspose.com/c/words/8) 도움이 필요하면.

@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-Questo codice divide il documento in base alle interruzioni di pagina e memorizza ogni pagina nel`pages` lista.
+ Questo codice divide il documento in base alle interruzioni di pagina e memorizza ogni pagina nel`pages` lista.
 
 ## Salvataggio come HTML
 

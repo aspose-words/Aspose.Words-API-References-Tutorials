@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /hu/java/word-processing/manipulating-document-content/
 ---
-
 ## Bevezetés
 
 Java programozás világában a hatékony dokumentumkezelés számos alkalmazás kulcsfontosságú szempontja. Függetlenül attól, hogy jelentések generálásával, szerződések kezelésével vagy bármilyen dokumentummal kapcsolatos feladattal foglalkozik, az Aspose.Words for Java hatékony eszköz az eszköztárban. Ebben az átfogó útmutatóban a dokumentumtartalom tisztítással, mezőkkel és XML-adatokkal történő manipulálásának bonyolultságába fogunk elmélyülni az Aspose.Words for Java használatával. Lépésről lépésre útmutatást adunk, valamint forráskód-példákat, hogy felruházza Önt a sokoldalú könyvtár elsajátításához szükséges ismeretekkel és készségekkel.
@@ -50,7 +49,8 @@ Az üres bekezdések kellemetlenséget okozhatnak. Távolítsa el őket ezzel a 
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ Rejtett tartalom lehet a dokumentumban, ami problémákat okozhat a feldolgozás
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 Az alábbi lépések követésével biztosíthatja, hogy a dokumentum tiszta és készen áll a további manipulációkra.
-
----
 
 ## Mezőkkel való munka
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 A mezők dinamikus képességeket adnak a dokumentumokhoz, javítva azok hasznosságát.
 
----
-
-## XML adatok beépítése
-
-Az XML adatok dokumentumaiba való integrálása hatékony lehet, különösen dinamikus tartalom generálásakor. Az Aspose.Words for Java leegyszerűsíti ezt a folyamatot.
-
-### XML adatok kötése
-
-Könnyen köthet XML adatokat a dokumentumhoz:
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://sémák.example'");
-doc.save("document_with_xml_data.docx");
-```
-
-Ez a kód az XML-adatokat a dokumentum bizonyos részeihez köti, dinamikussá és adatközpontúvá téve azt.
-
-## Gyakran Ismételt Kérdések (GYIK)
-
-### Hogyan távolíthatom el az üres bekezdéseket a dokumentumból?
-   
-   Az üres bekezdések dokumentumból való eltávolításához ismételheti a bekezdéseket, és eltávolíthatja azokat, amelyeknek nincs szöveges tartalma. Íme egy kódrészlet, amely segít ennek elérésében:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### Frissíthetem a dokumentum összes mezőjét programozottan?
-
-   Igen, programozottan frissítheti a dokumentum összes mezőjét az Aspose.Words for Java használatával. A következőképpen teheti meg:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### Hogyan köthetek XML adatokat egy dokumentumhoz?
-
-   Az Aspose.Words for Java segítségével az XML-adatok dokumentumhoz kötése egyszerű. Ennek eléréséhez XML-leképezéseket használhat. Íme egy példa:
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://sémák.example'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### Mi a jelentősége a dokumentumok tartalmának megtisztításának?
-
-   A dokumentum tartalmának megtisztítása fontos annak biztosítása érdekében, hogy a dokumentumok mentesek legyenek a felesleges elemektől, ami javíthatja az olvashatóságot és csökkentheti a fájlméretet. Segít a dokumentumok egységességének megőrzésében is.
-
-### Hogyan távolíthatom el a nem használt stílusokat a dokumentumból?
-
-   A fel nem használt stílusokat az Aspose.Words for Java segítségével eltávolíthatja a dokumentumból. Íme egy példa:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### Alkalmas az Aspose.Words for Java dinamikus dokumentumok XML adatokkal történő előállítására?
-
-   Igen, az Aspose.Words for Java kiválóan alkalmas dinamikus dokumentumok XML-adatokkal történő előállítására. Robusztus szolgáltatásokat nyújt az XML adatok sablonokhoz való kötéséhez és személyre szabott dokumentumok létrehozásához.
-
 ## Következtetés
 
 Ebben a kiterjedt útmutatóban a dokumentumtartalom tisztítással, mezőkkel és XML-adatokkal történő manipulálásának világát fedeztük fel az Aspose.Words for Java használatával. Megtanulta a dokumentumok tisztítását, a mezők kezelését és az XML-adatok zökkenőmentes beépítését. Ezek a készségek felbecsülhetetlen értékűek azok számára, akik Java alkalmazások dokumentumkezelésével foglalkoznak.
+
+## GYIK
+
+### Hogyan távolíthatom el az üres bekezdéseket a dokumentumból?
+   
+Az üres bekezdések dokumentumból való eltávolításához ismételheti a bekezdéseket, és eltávolíthatja azokat, amelyeknek nincs szöveges tartalma. Íme egy kódrészlet, amely segít ennek elérésében:
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### Frissíthetem a dokumentum összes mezőjét programozottan?
+
+Igen, programozottan frissítheti a dokumentum összes mezőjét az Aspose.Words for Java használatával. A következőképpen teheti meg:
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### Mi a jelentősége a dokumentumok tartalmának megtisztításának?
+
+A dokumentum tartalmának megtisztítása fontos annak biztosítása érdekében, hogy a dokumentumok mentesek legyenek a felesleges elemektől, ami javíthatja az olvashatóságot és csökkentheti a fájlméretet. Segít a dokumentumok egységességének megőrzésében is.
+
+### Hogyan távolíthatom el a nem használt stílusokat a dokumentumból?
+
+A fel nem használt stílusokat az Aspose.Words for Java segítségével eltávolíthatja a dokumentumból. Íme egy példa:
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### Alkalmas az Aspose.Words for Java dinamikus dokumentumok XML adatokkal történő előállítására?
+
+Igen, az Aspose.Words for Java kiválóan alkalmas dinamikus dokumentumok XML-adatokkal történő előállítására. Robusztus szolgáltatásokat nyújt az XML adatok sablonokhoz való kötéséhez és személyre szabott dokumentumok létrehozásához.

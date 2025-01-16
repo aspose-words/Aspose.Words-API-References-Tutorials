@@ -30,12 +30,8 @@ Na konci těchto výukových programů budete vybaveni dovednostmi pro bezprobl�
 ## Výukové programy pro kombinování a porovnávání dokumentů
 ### [Slučování a porovnávání dokumentů ve Wordu](./merge-compare-documents/)
 Slučujte a porovnávejte dokumenty aplikace Word bez námahy pomocí Aspose.Words pro Python. Naučte se manipulovat s dokumenty, zvýrazňovat rozdíly a automatizovat úkoly.
-### [Využití možností záložek dokumentu](./document-bookmarks/)
-Naučte se, jak využít sílu záložek dokumentu pomocí Aspose.Words pro Python. Vytvářejte, spravujte a procházejte záložky pomocí podrobných průvodců a příkladů kódu.
 ### [Navigace v rozsahu dokumentů pro přesné úpravy](./document-ranges/)
 Naučte se, jak přesně procházet a upravovat rozsahy dokumentů pomocí Aspose.Words pro Python. Podrobný průvodce se zdrojovým kódem pro efektivní manipulaci s obsahem.
-### [Využití značek strukturovaného dokumentu (SDT) pro strukturovaná data](./document-sdts/)
-Odemkněte sílu strukturovaných značek dokumentu (SDT) pro organizaci obsahu. Naučte se používat Aspose.Words pro Python k implementaci SDT.
 ### [Použití stylů a motivů pro transformaci dokumentů](./apply-styles-themes-documents/)
 Vylepšete estetiku dokumentu pomocí Aspose.Words pro Python. Aplikujte styly, motivy a přizpůsobení bez námahy.
 ### [Vytváření komplexního obsahu pro dokumenty aplikace Word](./generate-table-contents/)

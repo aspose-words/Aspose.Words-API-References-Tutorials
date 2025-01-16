@@ -67,7 +67,7 @@ Tekst extraheren
 string text = doc.Range.Text;
 ```
 
-De`Range.Text` property geeft u alle tekst binnen het bereik van het document. Dit omvat tekst uit alle secties, headers, footers en de hoofdtekst.
+ De`Range.Text` property geeft u alle tekst binnen het bereik van het document. Dit omvat tekst uit alle secties, headers, footers en de hoofdtekst.
 
 ## Stap 4: De geëxtraheerde tekst weergeven
 

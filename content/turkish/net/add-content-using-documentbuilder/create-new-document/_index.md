@@ -55,7 +55,7 @@ Az önce boş bir Word belgesi oluşturduk. Oldukça havalı, değil mi?
 
 ### DocumentBuilder'ı Başlat
 
- Sırada, belgemize biraz içerik eklememiz gerekiyor. Bunun için şunu kullanacağız:`DocumentBuilder`Tuvale yazan kalemimiz gibi.
+ Sırada, belgemize biraz içerik eklememiz gerekiyor. Bunun için şunu kullanacağız:`DocumentBuilder`. Tuvale yazan kalemimiz gibi.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

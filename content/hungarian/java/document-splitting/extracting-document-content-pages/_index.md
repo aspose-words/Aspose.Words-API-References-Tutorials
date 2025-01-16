@@ -40,7 +40,7 @@ public class DocumentExtractor {
 
 ### Az Aspose.Words hozzáadása projektjéhez
 
- Az Aspose.Words projekthez való hozzáadásához másolja a letöltött JAR fájlokat a projektjébe`lib` mappát, és adja hozzá őket az osztályútvonalhoz. Most már készen áll, hogy belemerüljön a dokumentumkinyerés világába!
+Az Aspose.Words projekthez való hozzáadásához másolja a letöltött JAR fájlokat a projektjébe`lib` mappát, és adja hozzá őket az osztályútvonalhoz. Most már készen áll, hogy belemerüljön a dokumentumkinyerés világába!
 
 ## Dokumentumok betöltése és elemzése
 
@@ -64,7 +64,7 @@ DocumentVisitor visitor = new DocumentVisitor();
 // Menjen át a dokumentumon
 doc.accept(visitor);
 
-// kivonatolt tartalom már elérhető a látogatóban
+// A kivonatolt tartalom már elérhető a látogatóban
 String extractedText = visitor.getText();
 ```
 
@@ -90,7 +90,7 @@ String pageText = doc.extractText(pageInfo);
 Ha az összes oldalról tartalmat szeretne kinyerni, használhat egy egyszerű ciklust:
 
 ```java
-// Nézze meg a dokumentum teljes oldalszámát
+//Nézze meg a dokumentum teljes oldalszámát
 int pageCount = doc.getPageCount();
 
 for (int i = 0; i < pageCount; i++) {
@@ -120,7 +120,7 @@ builder.write("This text is bold.");
 Miután kibontotta és manipulálta a tartalmat, elmentheti egy új dokumentumba:
 
 ```java
-//Mentse a kibontott tartalmat egy új dokumentumba
+// Mentse a kibontott tartalmat egy új dokumentumba
 doc.save("extracted_content.docx");
 ```
 

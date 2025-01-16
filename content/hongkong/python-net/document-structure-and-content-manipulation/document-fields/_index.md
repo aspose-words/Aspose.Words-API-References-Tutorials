@@ -23,7 +23,7 @@ Microsoft Word 文件通常需要動態內容，例如日期、計算或來自�
 要插入字段，您可以使用`FieldBuilder`班級。例如，要插入目前日期欄位：
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## 使用字段自動生成文檔
-
-欄位對於自動產生文件至關重要。您可以使用外部來源的資料填充欄位：
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## 將欄位與資料來源集成

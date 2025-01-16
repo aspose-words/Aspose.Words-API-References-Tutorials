@@ -127,4 +127,4 @@ Auf jeden Fall! Aspose.Words für .NET ermöglicht Ihnen die Bearbeitung einer V
 
 ### Wo finde ich weitere Dokumentation zu Aspose.Words für .NET?
 
-Detaillierte Dokumentation ist verfügbar[Hier](https://reference.aspose.com/words/net/).
+ Detaillierte Dokumentation ist verfügbar[Hier](https://reference.aspose.com/words/net/).

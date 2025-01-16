@@ -44,10 +44,7 @@ A módosítások elfogadása kritikus lépés a dokumentum véglegesítésében.
 
 ```java
 // Minden átdolgozást elfogad
-doc.acceptAllRevisions();
-
-// Adott revízió elfogadása index szerint
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Változások elutasítása
@@ -56,10 +53,7 @@ Egyes esetekben előfordulhat, hogy bizonyos változtatásokat el kell utasítan
 
 ```java
 // Minden átdolgozás elutasítása
-doc.rejectAllRevisions();
-
-// Egy adott revízió elutasítása index alapján
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## A dokumentum mentése
@@ -73,7 +67,7 @@ doc.save("document_with_accepted_changes.docx");
 
 ## A folyamat automatizálása
 
-folyamat további egyszerűsítéséhez automatizálhatja a változtatások elfogadását vagy elutasítását meghatározott kritériumok, például az ellenőrző megjegyzései vagy a revíziótípusok alapján. Ez hatékonyabb dokumentummunkafolyamatot biztosít.
+A folyamat további egyszerűsítéséhez automatizálhatja a változtatások elfogadását vagy elutasítását meghatározott kritériumok, például az ellenőrző megjegyzései vagy a revíziótípusok alapján. Ez hatékonyabb dokumentummunkafolyamatot biztosít.
 
 ## Következtetés
 

@@ -45,7 +45,7 @@ Chúng ta hãy cùng tìm hiểu quy trình chèn siêu liên kết vào tài li
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Các`DocumentBuilder` lớp là một công cụ đa năng cho phép bạn xây dựng và chỉnh sửa tài liệu.
+ Các`DocumentBuilder` lớp là một công cụ đa năng cho phép bạn xây dựng và chỉnh sửa tài liệu.
 
 ## Bước 2: Chèn siêu liên kết
 

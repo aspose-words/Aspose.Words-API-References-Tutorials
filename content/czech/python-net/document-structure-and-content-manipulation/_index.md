@@ -40,8 +40,6 @@ Naučte se používat funkce komentářů v dokumentech Word pomocí Aspose.Word
 Naučte se, jak zacházet s poli a daty v dokumentech aplikace Word pomocí Aspose.Words pro Python. Podrobný průvodce s příklady kódu pro dynamický obsah, automatizaci a další. 
 ### [Pochopení písem a stylů textu v dokumentech aplikace Word](./document-fonts/)
 Prozkoumejte svět písem a stylů textu v dokumentech aplikace Word. Naučte se, jak zlepšit čitelnost a vizuální přitažlivost pomocí Aspose.Words pro Python. Komplexní průvodce s příklady krok za krokem.
-### [Prozkoumání poznámek pod čarou a vysvětlivky v dokumentech aplikace Word](./document-footnotes-endnotes/)
-Prozkoumejte, jak efektivně používat poznámky pod čarou a vysvětlivky v dokumentech aplikace Word pomocí Aspose.Words pro Python. Naučte se tyto prvky přidávat, přizpůsobovat a spravovat programově. 
 ### [Zvládnutí polí formulářů a zachycování dat v dokumentech aplikace Word](./document-form-fields/)
 Osvojte si umění vytváření a správy polí formulářů v dokumentech aplikace Word pomocí Aspose.Words pro Python. Naučte se efektivně zaznamenávat data a zlepšit zapojení uživatelů. 
 ### [Manipulace se záhlavím a zápatím v dokumentech aplikace Word](./document-headers-footers/)
@@ -52,8 +50,6 @@ Naučte se, jak spravovat dělení slov a tok textu v dokumentech aplikace Word 
 Naučte se vytvářet a spravovat seznamy v dokumentech aplikace Word pomocí Aspose.Words Python API. Podrobný průvodce se zdrojovým kódem pro formátování seznamu, přizpůsobení, vnořování a další. 
 ### [Využití formátování Markdown v dokumentech aplikace Word](./document-markdown/)
 Naučte se, jak integrovat formátování Markdown do dokumentů aplikace Word pomocí Aspose.Words pro Python. Podrobný průvodce s příklady kódu pro dynamickou a vizuálně přitažlivou tvorbu obsahu. 
-### [Pochopení uzlů dokumentu a navigace](./document-nodes/)
-Naučte se manipulovat s dokumenty aplikace Word pomocí Aspose.Words pro Python. Tento podrobný průvodce pokrývá načítání, formátování, tabulky, obrázky a další. Zvyšte své dovednosti v oblasti zpracování dokumentů ještě dnes!
 ### [Vkládání objektů OLE a ovládacích prvků ActiveX do dokumentů aplikace Word](./document-ole-objects-active-x/)
  Naučte se vkládat objekty OLE a ovládací prvky ActiveX do dokumentů aplikace Word pomocí Aspose.Words pro Python. Bezproblémově vytvářejte interaktivní a dynamické dokumenty.
 ### [Formátování odstavců a textu v dokumentech aplikace Word](./document-paragraphs/)
@@ -63,6 +59,6 @@ Naučte se sledovat a kontrolovat revize dokumentů pomocí Aspose.Words pro Pyt
 ### [Správa oddílů a rozvržení dokumentu](./document-sections/)
 Naučte se spravovat sekce a rozvržení dokumentu pomocí Aspose.Words pro Python. Vytvářejte, upravujte sekce, přizpůsobujte rozvržení a další. Začněte hned! 
 ### [Vylepšení vizuálního obsahu pomocí textových polí v dokumentech aplikace Word](./document-textboxes/)
-Vylepšete vizuály dokumentů pomocí Aspose.Words Python! Naučte se krok za krokem vytvářet a přizpůsobovat textová pole v dokumentech aplikace Word. Vylepšete rozvržení obsahu, formátování a styl pro poutavé dokumenty.
+Vylepšete vizuály dokumentů pomocí Aspose.Words Python! Naučte se krok za krokem vytvářet a přizpůsobovat textová pole v dokumentech aplikace Word. Vylepšete rozvržení obsahu, formátování a styly pro poutavé dokumenty.
 ### [Odemknutí pokročilé automatizace pomocí maker VBA v dokumentech aplikace Word](./document-vba-macros/)
-Odemkněte pokročilou automatizaci v dokumentech aplikace Word pomocí maker Aspose.Words Python API a VBA. Naučte se krok za krokem se zdrojovým kódem a často kladenými dotazy. Zvyšte produktivitu nyní. Přístup na[Odkaz].
+ Odemkněte pokročilou automatizaci v dokumentech aplikace Word pomocí maker Aspose.Words Python API a VBA. Naučte se krok za krokem se zdrojovým kódem a často kladenými dotazy. Zvyšte produktivitu nyní. Přístup na[Odkaz].

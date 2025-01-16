@@ -84,20 +84,12 @@ for run in doc.get_child_nodes(NodeType.RUN, True):
 
 ## Estrazione del contenuto
 
-A volte abbiamo bisogno di estrarre contenuti specifici. La navigazione degli intervalli di contenuti ci consente di estrarre esattamente ciò di cui abbiamo bisogno:
+volte abbiamo bisogno di estrarre contenuti specifici. La navigazione degli intervalli di contenuti ci consente di estrarre esattamente ciò di cui abbiamo bisogno:
 
 ```python
 range = doc.range
 # Define your specific content range here
 extracted_text = range.text
-```
-
-## Unione di documenti
-
-Combinare documenti in modo fluido è un'abilità preziosa. Navigare tra i documenti ci aiuta a unirli in modo efficiente:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
 ```
 
 ## Dividere i documenti
@@ -117,8 +109,8 @@ Le intestazioni e i piè di pagina spesso richiedono un trattamento distinto. Na
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

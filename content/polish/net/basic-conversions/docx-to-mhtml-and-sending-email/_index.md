@@ -9,7 +9,7 @@ url: /pl/net/basic-conversions/docx-to-mhtml-and-sending-email/
 ---
 ## Wstęp
 
-W dzisiejszej erze cyfrowej konwersja dokumentów z jednego formatu na inny i wysyłanie ich pocztą elektroniczną to powszechne zadanie. Ten artykuł przeprowadzi Cię przez proces konwersji pliku DOCX do formatu MHTML, a następnie wysłania go jako wiadomości e-mail przy użyciu Aspose.Words dla .NET. Podzielimy każdy krok na szczegółowe, łatwe do naśladowania przewodniki, zapewniając, że zrozumiesz proces od początku do końca. Zanurzmy się!
+dzisiejszej erze cyfrowej konwersja dokumentów z jednego formatu na inny i wysyłanie ich pocztą elektroniczną to powszechne zadanie. Ten artykuł przeprowadzi Cię przez proces konwersji pliku DOCX do formatu MHTML, a następnie wysłania go jako wiadomości e-mail przy użyciu Aspose.Words dla .NET. Podzielimy każdy krok na szczegółowe, łatwe do naśladowania przewodniki, zapewniając, że zrozumiesz proces od początku do końca. Zanurzmy się!
 
 ## Wymagania wstępne
 
@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Krok 4: Wyślij e-mail
 
-Na koniec wyślij wiadomość e-mail za pomocą klienta SMTP. Skonfiguruj klienta SMTP za pomocą danych serwera SMTP i użyj`Send` metoda wysłania wiadomości.
+ Na koniec wyślij wiadomość e-mail za pomocą klienta SMTP. Skonfiguruj klienta SMTP za pomocą danych serwera SMTP i użyj`Send` metoda wysłania wiadomości.
 
 ```csharp
 // Wyślij wiadomość korzystając z Aspose.Email.
@@ -95,7 +95,7 @@ Tak, Aspose.Words obsługuje różne formaty, dzięki czemu można konwertować 
 Tak, Aspose.Words jest kompatybilny z .NET Core. Można go używać również w aplikacjach .NET Core.
 
 ### Czy potrzebuję licencji na Aspose.Words i Aspose.Email?
-Tak, obie biblioteki wymagają licencji. Możesz uzyskać tymczasową licencję od[Strona zakupu Aspose](https://purchase.aspose.com/temporary-license/) w celach ewaluacyjnych.
+ Tak, obie biblioteki wymagają licencji. Możesz uzyskać tymczasową licencję od[Strona zakupu Aspose](https://purchase.aspose.com/temporary-license/) w celach ewaluacyjnych.
 
 ### Gdzie mogę znaleźć więcej dokumentacji?
  Szczegółową dokumentację Aspose.Words można znaleźć[Tutaj](https://reference.aspose.com/words/net/) i dla Aspose.Email[Tutaj](https://reference.aspose.com/email/net/).

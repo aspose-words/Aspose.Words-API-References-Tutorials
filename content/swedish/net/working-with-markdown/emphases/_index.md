@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-De`dataDir` variabel är en platshållare för katalogen där du ska spara din Markdown-fil. Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen.
+ De`dataDir` variabel är en platshållare för katalogen där du ska spara din Markdown-fil. Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen.
 
 ## Steg 2: Skriva vanlig text
 

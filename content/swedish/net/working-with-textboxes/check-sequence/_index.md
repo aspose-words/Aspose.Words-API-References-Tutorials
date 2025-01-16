@@ -1,6 +1,6 @@
 ---
-title: Textbox Sequence Check i Word
-linktitle: Textbox Sequence Check i Word
+title: TextBox Sequence Check i Word
+linktitle: TextBox Sequence Check i Word
 second_title: Aspose.Words Document Processing API
 description: Upptäck hur du kontrollerar sekvensen av textrutor i Word-dokument med Aspose.Words för .NET. Följ vår detaljerade guide för att bemästra dokumentflödet!
 type: docs

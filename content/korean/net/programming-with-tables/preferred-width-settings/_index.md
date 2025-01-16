@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-그만큼`PreferredWidth.Auto` 이 설정은 다른 셀을 고려한 후 남은 공간에 따라 이 셀을 확장하거나 축소할 수 있도록 합니다. 이렇게 하면 테이블 레이아웃이 균형 잡히고 전문적으로 보입니다.
+ 그만큼`PreferredWidth.Auto` 이 설정은 다른 셀을 고려한 후 남은 공간에 따라 이 셀을 확장하거나 축소할 수 있도록 합니다. 이렇게 하면 테이블 레이아웃이 균형 잡히고 전문적으로 보입니다.
 
 ## 5단계: 문서 완성 및 저장
 

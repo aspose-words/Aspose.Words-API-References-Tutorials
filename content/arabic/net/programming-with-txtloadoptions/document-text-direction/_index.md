@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ###  ما هو`DocumentDirection` property used for?
 
-ال`DocumentDirection` الممتلكات في`TxtLoadOptions` يحدد اتجاه النص للمستند. ويمكن ضبطه على`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` ، أو`DocumentDirection.RightToLeft`.
+ ال`DocumentDirection` الممتلكات في`TxtLoadOptions` يحدد اتجاه النص للمستند. ويمكن ضبطه على`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` ، أو`DocumentDirection.RightToLeft`.
 
 ### هل يمكنني تحديد اتجاه النص لفقرات محددة بدلاً من المستند بأكمله؟
 

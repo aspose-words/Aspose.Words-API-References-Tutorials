@@ -1,6 +1,6 @@
 ---
-title: Docx 转换为 Rtf
-linktitle: Docx 转换为 Rtf
+title: 转换 Docx 为 Rtf
+linktitle: 转换 Docx 为 Rtf
 second_title: Aspose.Words 文档处理 API
 description: 通过我们的分步指南学习如何使用 Aspose.Words for .NET 将 DOCX 转换为 RTF。轻松转换，实现无缝文档处理。
 type: docs

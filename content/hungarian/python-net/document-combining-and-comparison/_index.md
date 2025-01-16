@@ -30,17 +30,13 @@ Ezeknek az oktatóanyagoknak a végére olyan készségekkel rendelkezik, amelye
 ## Dokumentumok kombinálása és összehasonlítása oktatóanyagok
 ### [Dokumentumok egyesítése és összehasonlítása a Wordben](./merge-compare-documents/)
 Egyesítse és hasonlítsa össze a Word dokumentumokat könnyedén az Aspose.Words for Python segítségével. Tanulja meg a dokumentumok kezelését, a különbségek kiemelését és a feladatok automatizálását.
-### [A dokumentum-könyvjelzők erejének kihasználása](./document-bookmarks/)
-Ismerje meg, hogyan használhatja ki a dokumentumkönyvjelzők erejét az Aspose.Words for Python használatával. Könyvjelzők létrehozása, kezelése és navigálása lépésenkénti útmutatókkal és kódpéldákkal.
 ### [Navigálás a dokumentumtartományokban a precíziós szerkesztéshez](./document-ranges/)
 Tanulja meg, hogyan navigálhat és szerkeszthet precízen dokumentumtartományokat az Aspose.Words for Python használatával. Lépésről lépésre útmutató forráskóddal a hatékony tartalomkezelés érdekében.
-### [Strukturált dokumentumcímkék (SDT) használata strukturált adatokhoz](./document-sdts/)
-Fedezze fel a strukturált dokumentumcímkék (SDT) erejét a tartalom rendszerezéséhez. Tanulja meg az Aspose.Words for Python használatát SDT-k megvalósítására.
 ### [Stílusok és témák alkalmazása a dokumentumok átalakításához](./apply-styles-themes-documents/)
 Fokozza a dokumentumok esztétikáját az Aspose.Words for Python segítségével. Könnyedén alkalmazhat stílusokat, témákat és testreszabásokat.
 ### [Átfogó tartalomjegyzék készítése Word dokumentumokhoz](./generate-table-contents/)
-Készítsen olvasóbarát tartalomjegyzéket az Aspose.Words for Python segítségével. Tanulja meg zökkenőmentesen létrehozni, testreszabni és frissíteni dokumentuma szerkezetét.
+Készítsen olvasóbarát tartalomjegyzéket az Aspose.Words for Python segítségével. Tanulja meg zökkenőmentesen létrehozni, testreszabni és frissíteni a dokumentum szerkezetét.
 ### [Dokumentumok védelme fejlett védelmi technikákkal](./secure-documents-protection/)
 Biztosítsa dokumentumait fejlett védelemmel az Aspose.Words for Python használatával. Ismerje meg, hogyan adhat hozzá jelszavakat, titkosíthat tartalmat, hogyan alkalmazhat digitális aláírásokat stb.
-### [A digitális aláírások és a hitelesség kezelése](./manage-digital-signatures/)
+### [digitális aláírások és a hitelesség kezelése](./manage-digital-signatures/)
 Ismerje meg a digitális aláírások kezelését és a dokumentumok hitelességének biztosítását az Aspose.Words for Python használatával. Lépésről lépésre útmutató forráskóddal.

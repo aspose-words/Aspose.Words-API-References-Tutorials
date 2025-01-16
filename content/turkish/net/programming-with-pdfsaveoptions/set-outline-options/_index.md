@@ -52,7 +52,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions();
 
 ### Başlık Anahat Düzeylerini Ayarla
 
-The`HeadingsOutlineLevels` özellik, PDF taslağına kaç düzeyde başlık eklenmesi gerektiğini tanımlar. Örneğin, 3 olarak ayarlarsanız, PDF taslağına en fazla üç düzeyde başlık eklenecektir.
+ The`HeadingsOutlineLevels` özellik, PDF taslağına kaç düzeyde başlık eklenmesi gerektiğini tanımlar. Örneğin, 3 olarak ayarlarsanız, PDF taslağına en fazla üç düzeyde başlık eklenecektir.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Genişletilmiş Anahat Düzeylerini Ayarla
 
-The`ExpandedOutlineLevels`özellik, PDF açıldığında varsayılan olarak anahattın kaç düzeyinin genişletileceğini kontrol eder. Bunu 1 olarak ayarlamak, üst düzey başlıkları genişleterek ana bölümlerin net bir görünümünü sağlar.
+ The`ExpandedOutlineLevels`özellik, PDF açıldığında varsayılan olarak anahattın kaç düzeyinin genişletileceğini kontrol eder. Bunu 1 olarak ayarlamak, üst düzey başlıkları genişleterek ana bölümlerin net bir görünümünü sağlar.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

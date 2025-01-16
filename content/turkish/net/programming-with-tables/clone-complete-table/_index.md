@@ -73,7 +73,7 @@ Bu kod parçacığı, belgedeki ilk tabloyu klonlamak istediğinizi varsayar. Bi
 Table tableClone = (Table) table.Clone(true);
 ```
 
-The`true` parametresi klonun orijinal tablodaki tüm biçimlendirmeyi ve içeriği içermesini sağlar.
+ The`true` parametresi klonun orijinal tablodaki tüm biçimlendirmeyi ve içeriği içermesini sağlar.
 
 ## Adım 5: Klonlanmış Tabloyu Belgeye Ekleyin
 
@@ -115,7 +115,7 @@ Aspose.Words for .NET kullanarak Word belgelerindeki tabloları klonlamak, belge
 Evet, belgedeki her tabloyu tek tek tarayarak ve aynı klonlama mantığını uygulayarak birden fazla tabloyu klonlayabilirsiniz.
 
 ### Tabloda birleştirilmiş hücreler varsa ne olur?
-The`Clone` yöntem, birleştirilmiş hücreler de dahil olmak üzere tüm biçimlendirmeyi koruyarak tablonun tam bir kopyasının oluşturulmasını sağlar.
+ The`Clone` yöntem, birleştirilmiş hücreler de dahil olmak üzere tüm biçimlendirmeyi koruyarak tablonun tam bir kopyasının oluşturulmasını sağlar.
 
 ### Belirli bir tabloyu adına göre nasıl klonlarım?
 Tabloları özel özelliklere veya benzersiz içeriğe göre tanımlayabilir ve ardından benzer adımları kullanarak istediğiniz tabloyu klonlayabilirsiniz.

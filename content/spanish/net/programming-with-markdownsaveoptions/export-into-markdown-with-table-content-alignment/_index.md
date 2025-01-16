@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Paso 4: Utilice la alineación automática del contenido de la tabla
 
-El`Auto`La opción de alineación toma la alineación del primer párrafo de la columna de la tabla correspondiente. Esto puede resultar útil cuando se tienen alineaciones mixtas en una sola tabla.
+ El`Auto`La opción de alineación toma la alineación del primer párrafo de la columna de la tabla correspondiente. Esto puede resultar útil cuando se tienen alineaciones mixtas en una sola tabla.
 
 ```csharp
 // Establecer la alineación en Automático.

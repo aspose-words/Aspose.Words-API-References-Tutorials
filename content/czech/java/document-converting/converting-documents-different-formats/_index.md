@@ -18,7 +18,7 @@ Než se ponoříme do podrobností o převodu dokumentů, začněme s Aspose.Wor
 
 ## Krok 1: Instalace
 
- Chcete-li začít, musíte si stáhnout a nainstalovat Aspose.Words for Java. Stáhnout si ho můžete z webu:[Stáhněte si Aspose.Words pro Java](https://releases.aspose.com/words/java/).
+ Chcete-li začít, musíte si stáhnout a nainstalovat Aspose.Words for Java. Můžete si jej stáhnout z webu:[Stáhněte si Aspose.Words pro Java](https://releases.aspose.com/words/java/).
 
 ## Krok 2: Nastavení vašeho projektu Java
 
@@ -47,7 +47,7 @@ Nyní je čas převést načtený dokument do zvoleného výstupního formátu. 
 
 ```java
 // Převeďte dokument do PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Závěr

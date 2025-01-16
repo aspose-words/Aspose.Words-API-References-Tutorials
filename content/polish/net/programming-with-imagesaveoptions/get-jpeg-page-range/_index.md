@@ -9,7 +9,7 @@ url: /pl/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 ---
 ## Wstęp
 
-Konwersja dokumentów Word na obrazy może być niezwykle użyteczna, niezależnie od tego, czy tworzysz miniatury, przeglądasz dokumenty online, czy udostępniasz treści w bardziej dostępnym formacie. Dzięki Aspose.Words dla .NET możesz łatwo konwertować określone strony dokumentów Word na format JPEG, dostosowując różne ustawienia, takie jak jasność, kontrast i rozdzielczość. Przyjrzyjmy się krok po kroku, jak to osiągnąć!
+Konwersja dokumentów Word na obrazy może być niezwykle przydatna, niezależnie od tego, czy tworzysz miniatury, przeglądasz dokumenty online, czy udostępniasz treści w bardziej dostępnym formacie. Dzięki Aspose.Words dla .NET możesz łatwo konwertować określone strony dokumentów Word na format JPEG, jednocześnie dostosowując różne ustawienia, takie jak jasność, kontrast i rozdzielczość. Przyjrzyjmy się krok po kroku, jak to osiągnąć!
 
 ## Wymagania wstępne
 

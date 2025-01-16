@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Sammanfoga dokument
-
-Att kombinera dokument sömlöst är en värdefull färdighet. Att navigera genom dokument hjälper oss att slå samman dem effektivt:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Dela upp dokument
 
 Ibland kan vi behöva dela upp ett dokument i mindre delar. Att navigera i dokumentet hjälper oss att uppnå detta:
@@ -117,8 +109,8 @@ Sidhuvuden och sidfötter kräver ofta distinkt behandling. Genom att navigera i
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

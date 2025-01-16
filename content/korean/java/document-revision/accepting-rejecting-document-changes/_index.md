@@ -44,10 +44,7 @@ for (Revision revision : doc.getRevisions()) {
 
 ```java
 // 모든 개정 사항 수락
-doc.acceptAllRevisions();
-
-// 인덱스로 특정 개정안 수락
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## 변경 사항 거부
@@ -56,10 +53,7 @@ doc.acceptRevision(0);
 
 ```java
 // 모든 수정 사항 거부
-doc.rejectAllRevisions();
-
-// 인덱스별로 특정 개정판 거부
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## 문서 저장

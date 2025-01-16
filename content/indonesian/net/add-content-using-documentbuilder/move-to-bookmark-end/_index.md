@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Memahami MoveToBookmark
 
-Itu`MoveToBookmark`metode ini memungkinkan Anda untuk menavigasi ke penanda tertentu dalam dokumen Anda. Tanda tangan metode ini adalah:
+ Itu`MoveToBookmark`metode ini memungkinkan Anda untuk menavigasi ke penanda tertentu dalam dokumen Anda. Tanda tangan metode ini adalah:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

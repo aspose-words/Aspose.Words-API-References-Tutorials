@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## Sostituzione del testo
-
-A volte, potresti voler sostituire un certo testo con un nuovo contenuto. Ecco un esempio di come farlo:
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## Rimozione delle immagini
 
 Se devi rimuovere immagini dal documento, puoi usare un approccio simile. Per prima cosa, identifica le immagini e poi rimuovile:
@@ -92,22 +79,6 @@ Per rimuovere intere sezioni da un documento, procedere come segue:
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## Trova e sostituisci con Regex
-
-Le espressioni regolari offrono un modo potente per trovare e sostituire i contenuti:
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## Estrazione di contenuti specifici

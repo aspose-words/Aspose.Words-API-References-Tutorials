@@ -30,7 +30,7 @@ using Aspose.Words.Drawing;
 using System;
 ```
 
-Laten we nu het proces van het invoegen van een eenvoudige kolomdiagram in een Word-document met Aspose.Words voor .NET eens bekijken. Volg deze stappen zorgvuldig om het gewenste resultaat te bereiken:
+Laten we nu het proces van het invoegen van een eenvoudige kolomdiagram in een Word-document met Aspose.Words voor .NET eens opsplitsen. Volg deze stappen zorgvuldig om het gewenste resultaat te bereiken:
 
 ## Stap 1: Initialiseer het document en DocumentBuilder
 

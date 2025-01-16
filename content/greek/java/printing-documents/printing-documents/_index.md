@@ -18,7 +18,7 @@ url: /el/java/printing-documents/printing-documents/
 
 Πριν βουτήξουμε στον κώδικα, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
-- Εγκαταστάθηκε το Java Development Kit (JDK).
+- Εγκατεστημένο Java Development Kit (JDK).
 - Η βιβλιοθήκη Aspose.Words for Java έγινε λήψη και προσθήκη στο έργο σας
 
 ## Φόρτωση του εγγράφου
@@ -38,7 +38,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```java
 // Δημιουργήστε μια εργασία εκτύπωσης για να εκτυπώσετε το έγγραφό μας.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Αρχικοποιήστε ένα σύνολο χαρακτηριστικών με τον αριθμό των σελίδων στο έγγραφο.
+// Αρχικοποιήστε ένα σύνολο χαρακτηριστικών με τον αριθμό των σελίδων στο έγγραφο.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Περάστε τις ρυθμίσεις του εκτυπωτή μαζί με τις άλλες παραμέτρους στο έγγραφο εκτύπωσης.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Δημιουργήστε μια εργασία εκτύπωσης για να εκτυπώσετε το έγγραφό μας.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Αρχικοποιήστε ένα σύνολο χαρακτηριστικών με τον αριθμό των σελίδων στο έγγραφο.
+// Αρχικοποιήστε ένα σύνολο χαρακτηριστικών με τον αριθμό των σελίδων στο έγγραφο.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Περάστε τις ρυθμίσεις του εκτυπωτή μαζί με τις άλλες παραμέτρους στο έγγραφο εκτύπωσης.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Οι δείκτες έναρξης και τέλους σελίδας όπως ορίζονται στο σύνολο χαρακτηριστικών.
+        //Οι δείκτες έναρξης και τέλους σελίδας όπως ορίζονται στο σύνολο χαρακτηριστικών.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Επιλέξτε τον αριθμό της τελευταίας σελίδας που θα εκτυπωθεί σε αυτό το φύλλο χαρτιού.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Κάντε βρόχο στις επιλεγμένες σελίδες από την αποθηκευμένη τρέχουσα σελίδα μέχρι τον υπολογισμό
+        // Κάντε βρόχο στις επιλεγμένες σελίδες από την αποθηκευμένη τρέχουσα σελίδα μέχρι τον υπολογισμό
         // τελευταία σελίδα.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Υπολογίστε τους δείκτες στηλών και σειρών.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // Η χρήσιμη επιστρεφόμενη τιμή είναι η κλίμακα στην οποία αποδόθηκε η σελίδα.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Σχεδιάστε τα περιγράμματα της σελίδας (η μικρογραφία της σελίδας μπορεί να είναι μικρότερη από τη μικρογραφία
+                //Σχεδιάστε τα περιγράμματα της σελίδας (η μικρογραφία της σελίδας μπορεί να είναι μικρότερη από τη μικρογραφία
                 // μέγεθος κράτησης θέσης).
                 if (mPrintPageBorders) {
                     // Αποκτήστε το πραγματικό 100% μέγεθος της σελίδας σε πόντους.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Καθορίστε τον αριθμό των στηλών και των γραμμών στο φύλλο για το
-        //Χαρτί προσανατολισμένο στο τοπίο.
+        // Χαρτί προσανατολισμένο στο τοπίο.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ class MultipagePrintDocument implements Printable
 
 ### Ε1: Μπορώ να εκτυπώσω συγκεκριμένες σελίδες ενός εγγράφου χρησιμοποιώντας το Aspose.Words για Java;
 
- Ναι, μπορείτε να καθορίσετε το εύρος σελίδων κατά την εκτύπωση ενός εγγράφου. Στο παράδειγμα κώδικα, χρησιμοποιήσαμε`attributes.add(new PageRanges(1, doc.getPageCount()))` για να εκτυπώσετε όλες τις σελίδες. Μπορείτε να προσαρμόσετε το εύρος σελίδων όπως απαιτείται.
+ Ναι, μπορείτε να καθορίσετε το εύρος σελίδων κατά την εκτύπωση ενός εγγράφου. Στο παράδειγμα κώδικα, χρησιμοποιήσαμε`attributes.add(new PageRanges(1, doc.getPageCount()))`για να εκτυπώσετε όλες τις σελίδες. Μπορείτε να προσαρμόσετε το εύρος σελίδων όπως απαιτείται.
 
 ### Ε2: Είναι το Aspose.Words για Java κατάλληλο για μαζική εκτύπωση;
 

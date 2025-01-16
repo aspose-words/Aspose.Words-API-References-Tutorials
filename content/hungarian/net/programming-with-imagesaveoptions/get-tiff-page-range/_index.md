@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOpti
 
 ### Hogyan tudom megváltoztatni a TIFF fájl felbontását?
 
- Egyszerűen állítsa be a`Resolution` ingatlan a`ImageSaveOptions` tiltakozik a kívánt értékre.
+ Egyszerűen állítsa be a`Resolution` ingatlan a`ImageSaveOptions` tiltakozzon a kívánt értékre.
 
 ### Lehetséges különböző tömörítési módszereket használni a TIFF fájlhoz?
 

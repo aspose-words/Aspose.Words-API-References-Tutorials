@@ -110,7 +110,7 @@ Ez a sor a módosított VBA makróval rendelkező dokumentumot "WorkingWithVba.M
 
 És megvan! Sikeresen módosította a VBA-makrókat egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez az oktatóanyag mindenre kiterjedt, a dokumentum betöltésétől és a VBA-projekt elérésétől a makrókód módosításáig és a módosított dokumentum mentéséig. Az Aspose.Words segítségével könnyedén automatizálhatja a feladatokat, testreszabhatja a dokumentumokat, és még VBA makróval is játszhat az igényeinek megfelelően.
 
- Ha még többet szeretne felfedezni, a[API dokumentáció](https://reference.aspose.com/words/net/) egy fantasztikus forrás. És ha valaha is gubancba ütközik, a[támogatási fórum](https://forum.aspose.com/c/words/8) mindig ott van, hogy segítsen.
+ Ha még többet szeretne felfedezni, a[API dokumentáció](https://reference.aspose.com/words/net/) egy fantasztikus forrás. És ha valaha is akadozik, a[támogatási fórum](https://forum.aspose.com/c/words/8) mindig ott van, hogy segítsen.
 
 Kellemes kódolást, és ne feledje, az ég szab határt a Word-dokumentumok automatizálásában!
 

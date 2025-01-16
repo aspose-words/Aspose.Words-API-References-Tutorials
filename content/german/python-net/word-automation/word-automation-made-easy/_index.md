@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /de/python-net/word-automation/word-automation-made-easy/
 ---
-
 ## Einführung
 
 In der schnelllebigen Welt von heute ist die Automatisierung von Aufgaben zur Verbesserung von Effizienz und Produktivität unverzichtbar geworden. Eine solche Aufgabe ist die Word-Automatisierung, mit der wir Word-Dokumente programmgesteuert erstellen, bearbeiten und verarbeiten können. In diesem Schritt-für-Schritt-Tutorial erfahren Sie, wie Sie die Word-Automatisierung ganz einfach mit Aspose.Words für Python erreichen können, einer leistungsstarken Bibliothek, die eine breite Palette von Funktionen für die Textverarbeitung und Dokumentbearbeitung bietet.
@@ -67,14 +66,27 @@ font.bold = True
 Tabellen sind ein entscheidendes Element in Word-Dokumenten und Aspose.Words erleichtert die Arbeit mit ihnen.
 
 ```python
-# Add a table to the document
-table = doc.get_child_nodes(aw.NodeType.TABLE, True).add()
-
-# Add rows and cells to the table
-table.ensure_minimum()
-for row in table.rows:
-    for cell in row.cells:
-        cell.get_first_paragraph().get_runs().add("Cell Text")
+builder = aw.DocumentBuilder(doc=doc)
+table = builder.start_table()
+builder.insert_cell()
+builder.write('City')
+builder.insert_cell()
+builder.write('Country')
+builder.end_row()
+builder.insert_cell()
+builder.write('London')
+builder.insert_cell()
+builder.write('U.K.')
+builder.end_table()
+# Use the first row's "RowFormat" property to modify the formatting
+# of the contents of all cells in this row.
+row_format = table.first_row.row_format
+row_format.height = 25
+row_format.borders.get_by_border_type(aw.BorderType.BOTTOM).color = aspose.pydrawing.Color.red
+# Use the "CellFormat" property of the first cell in the last row to modify the formatting of that cell's contents.
+cell_format = table.last_row.first_cell.cell_format
+cell_format.width = 100
+cell_format.shading.background_pattern_color = aspose.pydrawing.Color.orange
 ```
 
 ## Einfügen von Bildern und Formen
@@ -107,7 +119,7 @@ Wenn wir mit der Arbeit am Dokument fertig sind, können wir es in verschiedenen
 
 ```python
 # Save the document to a file
-doc.save("output.docx", aw.SaveFormat.DOCX)
+doc.save("output.docx")
 ```
 
 ## Erweiterte Funktionen zur Word-Automatisierung
@@ -122,7 +134,7 @@ Neben dem Erstellen und Formatieren von Dokumenten kann Aspose.Words Dokumentver
 
 Die Word-Automatisierung mit Aspose.Words für Python eröffnet eine Welt voller Möglichkeiten bei der Dokumenterstellung und -bearbeitung. Dieses Tutorial hat die grundlegenden Schritte für den Einstieg behandelt, aber es gibt noch viel mehr zu entdecken. Nutzen Sie die Leistungsfähigkeit der Word-Automatisierung und optimieren Sie Ihre Dokument-Workflows mit Leichtigkeit!
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Ist Aspose.Words mit anderen Plattformen wie Java oder .NET kompatibel?
 Ja, Aspose.Words ist für mehrere Plattformen verfügbar, darunter Java und .NET, sodass Entwickler es in ihrer bevorzugten Programmiersprache verwenden können.

@@ -21,7 +21,7 @@ Voordat we beginnen, zijn er een paar dingen die u moet regelen:
 1. Java Development Kit (JDK): Zorg ervoor dat u JDK 8 of later hebt geïnstalleerd. Aspose.Words voor Java vereist een compatibele JDK om correct te kunnen werken.
 2. Integrated Development Environment (IDE): Een IDE zoals IntelliJ IDEA of Eclipse helpt u bij het beheren van uw Java-projecten en het stroomlijnen van uw ontwikkelingsproces.
 3.  Aspose.Words voor Java-bibliotheek: download de nieuwste versie van Aspose.Words voor Java[hier](https://releases.aspose.com/words/java/) en neem het op in uw project.
-4. Voorbeeldcode: We gebruiken een aantal voorbeeldcodefragmenten, dus zorg ervoor dat u een basiskennis hebt van Java-programmering en weet hoe u bibliotheken in uw project kunt integreren.
+4. Voorbeeldcode: We gebruiken een aantal voorbeeldcodefragmenten, dus zorg ervoor dat u een basiskennis hebt van Java-programmering en hoe u bibliotheken in uw project kunt integreren.
 
 ## Pakketten importeren
 
@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Maak grotere randen voor de eerste cel van deze rij.
+// Maak grotere randen voor de eerste cel van deze rij.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -169,7 +169,7 @@ Aspose.Words voor Java is een robuuste tool die uitgebreide functies biedt voor 
 
 ### 1. Kan ik aangepaste tabelstijlen gebruiken die niet in de standaardopties zijn opgenomen?
 
-Ja, u kunt aangepaste stijlen definiëren en toepassen op uw tabellen met Aspose.Words voor Java. Controleer de[documentatie](https://reference.aspose.com/words/java/) voor meer informatie over het maken van aangepaste stijlen.
+ Ja, u kunt aangepaste stijlen definiëren en toepassen op uw tabellen met Aspose.Words voor Java. Controleer de[documentatie](https://reference.aspose.com/words/java/) voor meer informatie over het maken van aangepaste stijlen.
 
 ### 2. Hoe kan ik voorwaardelijke opmaak toepassen op tabellen?
 

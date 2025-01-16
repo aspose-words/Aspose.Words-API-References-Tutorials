@@ -10,7 +10,7 @@ url: /fr/net/find-and-replace-text/replace-with-string/
 
 ## Introduction
 
-Bonjour ! Vous êtes-vous déjà retrouvé plongé dans un document Word et avez-vous eu besoin de remplacer certains mots ou expressions ? Vous n'êtes pas seul. Qu'il s'agisse de mettre à jour des termes, de corriger des erreurs ou simplement d'améliorer votre contenu, il est essentiel de savoir comment rechercher et remplacer efficacement du texte dans un document. Aujourd'hui, nous plongeons dans le monde merveilleux d'Aspose.Words pour .NET pour vous montrer comment remplacer des chaînes dans vos documents Word comme un pro.
+Bonjour ! Vous êtes-vous déjà retrouvé plongé dans un document Word et avez-vous eu besoin de remplacer certains mots ou certaines phrases ? Vous n'êtes pas seul. Qu'il s'agisse de mettre à jour des termes, de corriger des erreurs ou simplement d'améliorer votre contenu, il est essentiel de savoir comment rechercher et remplacer efficacement du texte dans un document. Aujourd'hui, nous plongeons dans le monde merveilleux d'Aspose.Words pour .NET pour vous montrer comment remplacer des chaînes dans vos documents Word comme un pro.
 
 ## Prérequis
 
@@ -71,7 +71,7 @@ C'est ici que l'action se déroule réellement. Nous allons chercher le mot « t
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-Le`Replace`La méthode est simple. Nous spécifions le mot à rechercher, le mot de remplacement et les options pour l'opération de recherche et de remplacement.
+ Le`Replace`La méthode est simple. Nous spécifions le mot à rechercher, le mot de remplacement et les options pour l'opération de recherche et de remplacement.
 
 ## Étape 5 : Enregistrer le document
 

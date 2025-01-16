@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /sv/java/word-processing/manipulating-document-content/
 ---
-
 ## Introduktion
 
 en värld av Java-programmering är effektiv dokumenthantering en avgörande aspekt av många applikationer. Oavsett om du arbetar med att generera rapporter, hantera kontrakt eller hantera någon dokumentrelaterad uppgift, är Aspose.Words för Java ett kraftfullt verktyg att ha i din verktygslåda. I den här omfattande guiden kommer vi att fördjupa oss i krångligheterna med att manipulera dokumentinnehåll med rensning, fält och XML-data med Aspose.Words för Java. Vi kommer att tillhandahålla steg-för-steg-instruktioner tillsammans med källkodsexempel för att ge dig de kunskaper och färdigheter som behövs för att bemästra detta mångsidiga bibliotek.
@@ -50,7 +49,8 @@ Tomma stycken kan vara till besvär. Ta bort dem med den här koden:
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ Dolt innehåll kan finnas i dina dokument, vilket kan orsaka problem under bearb
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 Genom att följa dessa steg kan du se till att ditt dokument är rent och redo för vidare manipulation.
-
----
 
 ## Arbeta med Fields
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 Fält lägger till dynamiska funktioner till dina dokument, vilket förbättrar deras användbarhet.
 
----
-
-## Inkorporerar XML-data
-
-Att integrera XML-data i dina dokument kan vara kraftfullt, särskilt för att generera dynamiskt innehåll. Aspose.Words för Java förenklar denna process.
-
-### Bindande XML-data
-
-Bind enkelt XML-data till ditt dokument:
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://schemas.example'");
-doc.save("document_with_xml_data.docx");
-```
-
-Denna kod binder XML-data till specifika delar av ditt dokument, vilket gör det dynamiskt och datadrivet.
-
-## Vanliga frågor (FAQs)
-
-### Hur tar jag bort tomma stycken från ett dokument?
-   
-   För att ta bort tomma stycken från ett dokument kan du iterera genom styckena och ta bort de som inte har något textinnehåll. Här är ett kodavsnitt som hjälper dig att uppnå detta:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### Kan jag uppdatera alla fält i ett dokument programmatiskt?
-
-   Ja, du kan uppdatera alla fält i ett dokument programmatiskt med Aspose.Words för Java. Så här kan du göra det:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### Hur binder jag XML-data till ett dokument?
-
-   Att binda XML-data till ett dokument är enkelt med Aspose.Words för Java. Du kan använda XML-mappningar för att uppnå detta. Här är ett exempel:
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://schemas.example'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### Vad är vikten av att rensa upp dokumentinnehållet?
-
-   Att rensa upp dokumentinnehåll är viktigt för att säkerställa att dina dokument är fria från onödiga element, vilket kan förbättra läsbarheten och minska filstorleken. Det hjälper också till att upprätthålla dokumentkonsistens.
-
-### Hur kan jag ta bort oanvända stilar från ett dokument?
-
-   Du kan ta bort oanvända stilar från ett dokument med Aspose.Words för Java. Här är ett exempel:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### Är Aspose.Words för Java lämpligt för att generera dynamiska dokument med XML-data?
-
-   Ja, Aspose.Words för Java är väl lämpad för att generera dynamiska dokument med XML-data. Det ger robusta funktioner för att binda XML-data till mallar och skapa personliga dokument.
-
 ## Slutsats
 
 I den här omfattande guiden har vi utforskat världen av att manipulera dokumentinnehåll med rensning, fält och XML-data med Aspose.Words för Java. Du har lärt dig att rensa dokument, arbeta med fält och integrera XML-data sömlöst. Dessa färdigheter är ovärderliga för alla som sysslar med dokumenthantering i Java-applikationer.
+
+## FAQ's
+
+### Hur tar jag bort tomma stycken från ett dokument?
+   
+För att ta bort tomma stycken från ett dokument kan du iterera genom styckena och ta bort de som inte har något textinnehåll. Här är ett kodavsnitt som hjälper dig att uppnå detta:
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### Kan jag uppdatera alla fält i ett dokument programmatiskt?
+
+Ja, du kan uppdatera alla fält i ett dokument programmatiskt med Aspose.Words för Java. Så här kan du göra det:
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### Vad är vikten av att rensa upp dokumentinnehållet?
+
+Att rensa upp dokumentinnehåll är viktigt för att säkerställa att dina dokument är fria från onödiga element, vilket kan förbättra läsbarheten och minska filstorleken. Det hjälper också till att upprätthålla dokumentkonsistens.
+
+### Hur kan jag ta bort oanvända stilar från ett dokument?
+
+Du kan ta bort oanvända stilar från ett dokument med Aspose.Words för Java. Här är ett exempel:
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### Är Aspose.Words för Java lämpligt för att generera dynamiska dokument med XML-data?
+
+Ja, Aspose.Words för Java är väl lämpad för att generera dynamiska dokument med XML-data. Det ger robusta funktioner för att binda XML-data till mallar och skapa personliga dokument.

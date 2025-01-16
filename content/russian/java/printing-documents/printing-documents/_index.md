@@ -38,7 +38,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```java
 // Создайте задание на печать, чтобы распечатать наш документ.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Инициализируйте набор атрибутов с указанием количества страниц в документе.
+// Инициализируйте набор атрибутов с указанием количества страниц в документе.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Передайте настройки принтера вместе с другими параметрами в печатный документ.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Создайте задание на печать, чтобы распечатать наш документ.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Инициализируйте набор атрибутов с указанием количества страниц в документе.
+// Инициализируйте набор атрибутов с указанием количества страниц в документе.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Передайте настройки принтера вместе с другими параметрами в печатный документ.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Начальный и конечный индексы страницы, определенные в наборе атрибутов.
+        //Начальный и конечный индексы страницы, определенные в наборе атрибутов.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Выберите номер последней страницы, которая будет напечатана на этом листе бумаги.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Перебрать выбранные страницы от сохраненной текущей страницы до вычисленной
+        // Перебрать выбранные страницы от сохраненной текущей страницы до вычисленной
         // последняя страница.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Рассчитайте индексы столбцов и строк.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // Полезным возвращаемым значением является масштаб, в котором была отображена страница.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Нарисуйте границы страницы (миниатюра страницы может быть меньше миниатюры
+                //Нарисуйте границы страницы (миниатюра страницы может быть меньше миниатюры
                 // размер заполнителя).
                 if (mPrintPageBorders) {
                     // Получите реальный 100% размер страницы в пунктах.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Определите количество столбцов и строк на листе для
-        //Бумага альбомной ориентации.
+        // Бумага альбомной ориентации.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ class MultipagePrintDocument implements Printable
 
 ### В1: Могу ли я распечатать определенные страницы документа с помощью Aspose.Words для Java?
 
- Да, вы можете указать диапазон страниц при печати документа. В примере кода мы использовали`attributes.add(new PageRanges(1, doc.getPageCount()))` для печати всех страниц. Вы можете настроить диапазон страниц по мере необходимости.
+ Да, вы можете указать диапазон страниц при печати документа. В примере кода мы использовали`attributes.add(new PageRanges(1, doc.getPageCount()))`для печати всех страниц. Вы можете настроить диапазон страниц по мере необходимости.
 
 ### В2: Подходит ли Aspose.Words для Java для пакетной печати?
 

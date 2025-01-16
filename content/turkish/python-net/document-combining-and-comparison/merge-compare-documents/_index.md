@@ -72,14 +72,6 @@ Kaynak belgeyi değiştirilmiş belgeyle karşılaştırın:
 comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
 ```
 
-## Farklılıkları Vurgulamak
-
-Belgeler arasındaki farkları vurgulayın:
-
-```python
-comparison.highlight_changes()
-```
-
 ## Karşılaştırma Sonucunun Kaydedilmesi
 
 Karşılaştırma sonucunu yeni bir dosyaya kaydedin:

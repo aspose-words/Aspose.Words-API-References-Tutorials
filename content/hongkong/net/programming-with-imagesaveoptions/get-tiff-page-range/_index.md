@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOpti
 
 ### 我可以在 TIFF 檔案中包含註釋或浮水印嗎？
 
-是的，您可以使用 Aspose.Words 在將 Word 文件轉換為 TIFF 檔案之前新增註解或浮水印。
+是的，您可以在將 Word 文件轉換為 TIFF 檔案之前使用 Aspose.Words 新增註解或浮水印。
 
 ### Aspose.Words for .NET 支援哪些其他圖像格式？
 

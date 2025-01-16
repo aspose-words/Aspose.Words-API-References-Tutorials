@@ -26,7 +26,7 @@ url: /zh-hant/python-net/document-conversion/python-document-conversion/
 
 ### 什麼是 Aspose.Words？
 
-Aspose.Words 是一個強大的文件處理庫，可促進不同文件格式之間的無縫轉換。對於 Python 開發人員來說，Aspose.Words 提供了一個以程式設計方式處理 Word 文件的便利解決方案。
+Aspose.Words 是一個強大的文件處理庫，可促進不同文件格式之間的無縫轉換。對於 Python 開發人員來說，Aspose.Words 提供了一種以程式設計方式處理 Word 文件的便利解決方案。
 
 ### Aspose.Words for Python 的功能
 
@@ -36,7 +36,7 @@ Aspose.Words 提供了一組豐富的功能，包括：
 Aspose.Words 可讓您將 Word 文件轉換為各種格式，如 PDF、HTML、TXT、EPUB 等，確保相容性和可存取性。
 
 #### 文檔操作： 
-使用Aspose.Words，您可以透過新增或擷取內容輕鬆操作文檔，使其成為文檔處理的多功能工具。
+使用Aspose.Words，您可以透過新增或擷取內容輕鬆操作文檔，使其成為文件處理的多功能工具。
 
 #### 格式選項
 該庫為文字、表格、圖像和其他元素提供了廣泛的格式選項，使您可以保持轉換後文件的外觀。
@@ -105,8 +105,6 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 Aspose.Words 可讓您自訂轉換後文件的外觀。您可以套用字體樣式、顏色、對齊方式和段落間距等格式選項。
 
-#### 例子：
-
 ```python
 # Python code for applying formatting during conversion
 import aspose.words as aw
@@ -128,8 +126,6 @@ doc.save("formatted_output.pdf", aw.SaveFormat.PDF)
 ### 處理圖像和表格
 
 Aspose.Words 使您能夠在轉換過程中處理圖像和表格。您可以提取圖像、調整圖像大小以及操作表格來維護文件的結構。
-
-#### 例子：
 
 ```python
 # Python code for handling images and tables during conversion
@@ -156,8 +152,6 @@ doc.save("modified_output.pdf", aw.SaveFormat.PDF)
 
 使用Aspose.Words，您可以確保一致的字體渲染並管理轉換後文件的佈局。當保持不同格式的文件一致性時，此功能特別有用。
 
-#### 例子：
-
 ```python
 # Python code for managing fonts and layout during conversion
 import aspose.words as aw
@@ -178,8 +172,6 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ### 編寫自動化 Python 腳本
 
 Python 的腳本功能使其成為自動化重複任務的絕佳選擇。您可以編寫Python腳本來執行批次文件轉換，節省時間和精力。
-
-#### 例子：
 
 ```python
 # Python script for batch document conversion
@@ -205,11 +197,7 @@ for filename in input_files:
 
 ### 文件批量轉換
 
-經過
-
- 結合 Python 和 Aspose.Words 的強大功能，您可以自動執行文件的批量轉換，從而提高生產力和效率。
-
-#### 例子：
+透過結合 Python 和 Aspose.Words 的強大功能，您可以自動執行文件的批次轉換，從而提高生產力和效率。
 
 ```python
 # Python script for batch document conversion using Aspose.Words
@@ -238,14 +226,6 @@ for filename in input_files:
     output_filename = filename.replace(file_ext, ".pdf" if file_ext == ".docx" else ".docx")
     doc.save(os.path.join(output_dir, output_filename))
 ```
-## 使用 Aspose.Words for Python 的優點
-
-Aspose.Words for Python 具有多項優勢，包括：
-
-- 強大的文件轉換功能
-- 豐富的文件操作功能
-- 與 Python 應用程式輕鬆集成
-- 來自蓬勃發展的社區的持續支持和更新
 
 ## 結論
 

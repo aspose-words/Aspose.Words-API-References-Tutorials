@@ -90,7 +90,7 @@ Los objetos de Office Math en Aspose.Words para Java le permiten representar y m
 
 ### ¿Puedo alinear las ecuaciones de Office Math de forma diferente dentro de mi documento?
 
- Sí, puedes controlar la alineación de las ecuaciones de Office Math. Utiliza el`setJustification` método para especificar opciones de alineación como izquierda, derecha o centro.
+ Sí, puedes controlar la alineación de las ecuaciones de Office Math. Utiliza el`setJustification`método para especificar opciones de alineación como izquierda, derecha o centro.
 
 ### ¿Es Aspose.Words para Java adecuado para gestionar documentos matemáticos complejos?
 

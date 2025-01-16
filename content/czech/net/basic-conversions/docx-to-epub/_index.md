@@ -9,7 +9,7 @@ url: /cs/net/basic-conversions/docx-to-epub/
 ---
 ## Zavedení
 
-oblasti vývoje .NET je efektivní manipulace s dokumenty Wordu zásadní pro mnoho aplikací. Aspose.Words for .NET poskytuje výkonnou sadu nástrojů, která zjednodušuje úlohy zpracování dokumentů, včetně převodu souborů DOCX do formátu EPUB. Tento tutoriál vás provede nezbytnými kroky, jak toho dosáhnout pomocí Aspose.Words for .NET.
+V oblasti vývoje .NET je efektivní manipulace s dokumenty Wordu zásadní pro mnoho aplikací. Aspose.Words for .NET poskytuje výkonnou sadu nástrojů, která zjednodušuje úlohy zpracování dokumentů, včetně převodu souborů DOCX do formátu EPUB. Tento tutoriál vás provede nezbytnými kroky, jak toho dosáhnout pomocí Aspose.Words for .NET.
 
 ## Předpoklady
 
@@ -45,7 +45,7 @@ doc.Save(dataDir + "ConvertedDocument.epub", SaveFormat.Epub);
 
 ## Závěr
 
-tomto tutoriálu jsme prozkoumali, jak převést soubory DOCX do formátu EPUB pomocí Aspose.Words for .NET. Dodržováním těchto jednoduchých kroků můžete bez problémů integrovat možnosti převodu dokumentů do vašich aplikací .NET.
+V tomto tutoriálu jsme prozkoumali, jak převést soubory DOCX do formátu EPUB pomocí Aspose.Words for .NET. Dodržováním těchto jednoduchých kroků můžete bez problémů integrovat možnosti převodu dokumentů do vašich aplikací .NET.
 
 ## FAQ
 

@@ -47,16 +47,6 @@ doc2 = aw.Document(doc2_path)
 comparison = doc1.compare(doc2, "Author Name", datetime.now())
 ```
 
-## 변경 사항 강조
-
-변경 사항을 더 눈에 띄게 하려면 변경 사항을 강조 표시하세요.
-
-```python
-highlighter = aw.markup.HighlightColor.GRAY
-for change in comparison.changes:
-    change.format_revision(highlighter)
-```
-
 ## 변경 사항 수락 또는 거부
 
 개별 변경 사항을 수락하거나 거부할 수 있습니다.

@@ -167,58 +167,48 @@ public class DocumentMerger {
 
  En utilisant`ImportFormatMode.KEEP_DIFFERENT_STYLES`Aspose.Words conserve les styles différents entre les documents source et de destination, résolvant ainsi les conflits avec élégance.
 
-## 9. Bonnes pratiques pour la fusion de documents
-
-- Gérez toujours les exceptions lors de la fusion de documents pour éviter les erreurs inattendues.
-
-- Vérifiez régulièrement les mises à jour et utilisez la dernière version d'Aspose.Words pour Java pour bénéficier des corrections de bogues et des nouvelles fonctionnalités.
-
-- Testez la fusion de documents avec différents types et tailles de documents pour garantir des performances optimales.
-
-- Envisagez d’utiliser un système de contrôle de version pour suivre les modifications lors des opérations de fusion de documents.
-
-## 10. Conclusion
+## Conclusion
 
 Aspose.Words pour Java permet aux développeurs Java de fusionner des documents Word sans effort. En suivant le guide étape par étape de cet article, vous pouvez désormais fusionner des documents, gérer la mise en forme, insérer des sauts et gérer les conflits en toute simplicité. Avec Aspose.Words pour Java, la fusion de documents devient un processus transparent et automatisé, ce qui vous permet de gagner un temps et des efforts précieux.
 
-## 11. FAQ 
+## FAQ 
 
 ### Puis-je fusionner des documents avec différents formats et styles ?
 
-   Oui, Aspose.Words pour Java gère la fusion de documents avec différents formats et styles. La bibliothèque résout intelligemment les conflits, vous permettant de fusionner des documents provenant de différentes sources de manière transparente.
+Oui, Aspose.Words pour Java gère la fusion de documents de formats et de styles variés. La bibliothèque résout intelligemment les conflits, vous permettant de fusionner des documents provenant de différentes sources de manière transparente.
 
 ### Aspose.Words prend-il en charge la fusion efficace de documents volumineux ?
 
-   Aspose.Words pour Java est conçu pour gérer efficacement les documents volumineux. Il utilise des algorithmes optimisés pour la fusion de documents, garantissant des performances élevées même avec un contenu volumineux.
+Aspose.Words pour Java est conçu pour gérer efficacement les documents volumineux. Il utilise des algorithmes optimisés pour la fusion de documents, garantissant des performances élevées même avec un contenu volumineux.
 
 ### Puis-je fusionner des documents protégés par mot de passe à l’aide d’Aspose.Words pour Java ?
 
-   Oui, Aspose.Words pour Java prend en charge la fusion de documents protégés par mot de passe. Assurez-vous de fournir les mots de passe corrects pour accéder à ces documents et les fusionner.
+Oui, Aspose.Words pour Java prend en charge la fusion de documents protégés par mot de passe. Assurez-vous de fournir les mots de passe corrects pour accéder à ces documents et les fusionner.
 
 ### Est-il possible de fusionner des sections spécifiques de plusieurs documents ?
 
-   Oui, Aspose.Words vous permet de fusionner de manière sélective des sections spécifiques de différents documents. Cela vous donne un contrôle précis sur le processus de fusion.
+Oui, Aspose.Words vous permet de fusionner de manière sélective des sections spécifiques de différents documents. Cela vous donne un contrôle précis sur le processus de fusion.
 
 ### Puis-je fusionner des documents avec des modifications suivies et des commentaires ?
 
-    Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
+Absolument, Aspose.Words pour Java peut gérer la fusion de documents avec suivi des modifications et commentaires. Vous avez la possibilité de conserver ou de supprimer ces révisions pendant le processus de fusion.
 
 ### Aspose.Words préserve-t-il la mise en forme d'origine des documents fusionnés ?
 
-    Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
+Aspose.Words conserve par défaut la mise en forme des documents sources. Cependant, vous pouvez choisir différents modes de format d'importation pour gérer les conflits et maintenir la cohérence de la mise en forme.
 
 ### Puis-je fusionner des documents à partir de formats de fichiers non Word, tels que PDF ou RTF ?
 
-    Aspose.Words is primarily designed for working with Word documents. To merge documents from non-Word file formats, consider using the appropriate Aspose product for that specific format, such as Aspose.PDF or Aspose.RTF.
+Aspose.Words est principalement conçu pour travailler avec des documents Word. Pour fusionner des documents à partir de formats de fichiers non Word, pensez à utiliser le produit Aspose approprié pour ce format spécifique, tel que Aspose.PDF ou Aspose.RTF.
 
 ### Comment puis-je gérer le contrôle de version des documents lors de la fusion ?
 
-    Document versioning during merging can be achieved by implementing proper version control practices in your application. Aspose.Words focuses on document content merging and doesn't directly manage versioning.
+Le contrôle des versions des documents pendant la fusion peut être réalisé en mettant en œuvre des pratiques de contrôle des versions appropriées dans votre application. Aspose.Words se concentre sur la fusion du contenu des documents et ne gère pas directement le contrôle des versions.
 
 ### Aspose.Words pour Java est-il compatible avec Java 8 et les versions plus récentes ?
 
-    Yes, Aspose.Words for Java is compatible with Java 8 and newer versions. It's always recommended to use the latest Java version for better performance and security.
+Oui, Aspose.Words pour Java est compatible avec Java 8 et les versions plus récentes. Il est toujours recommandé d'utiliser la dernière version de Java pour de meilleures performances et une meilleure sécurité.
 
 ### Aspose.Words prend-il en charge la fusion de documents provenant de sources distantes telles que des URL ?
 
-    Yes, Aspose.Words for Java can load documents from various sources, including URLs, streams, and file paths. You can merge documents fetched from remote locations seamlessly.
+Oui, Aspose.Words pour Java peut charger des documents à partir de diverses sources, notamment des URL, des flux et des chemins de fichiers. Vous pouvez fusionner des documents récupérés à partir d'emplacements distants en toute transparence.

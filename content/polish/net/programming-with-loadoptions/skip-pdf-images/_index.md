@@ -91,7 +91,7 @@ Nie, pomijanie obrazów dotyczy tylko obrazów. Tekst pozostaje nienaruszony i w
 
 ### Czy mogę używać tej funkcji w przypadku innych formatów dokumentów?
 
-Ten`SkipPdfImages` opcja jest przeznaczona specjalnie dla dokumentów PDF. Dla innych formatów dostępne są różne opcje i metody.
+ Ten`SkipPdfImages` opcja jest przeznaczona specjalnie dla dokumentów PDF. Dla innych formatów dostępne są różne opcje i metody.
 
 ### Jak mogę sprawdzić, czy obrazy zostały pominięte?
 

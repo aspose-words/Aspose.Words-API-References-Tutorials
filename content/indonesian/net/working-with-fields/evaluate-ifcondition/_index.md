@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-Itu`EvaluateCondition` metode mengembalikan`FieldIfComparisonResult` enum yang mewakili hasil evaluasi kondisi. Enum ini dapat memiliki nilai seperti`True`, `False` , atau`Unknown`.
+ Itu`EvaluateCondition` metode mengembalikan`FieldIfComparisonResult` enum yang mewakili hasil evaluasi kondisi. Enum ini dapat memiliki nilai seperti`True`, `False` , atau`Unknown`.
 
 ## Langkah 4: Tampilkan Hasilnya
 
@@ -93,7 +93,7 @@ Kolom IF adalah kolom Word yang memungkinkan Anda memasukkan logika kondisional 
  Anda dapat memasukkan bidang IF menggunakan`InsertField` metode dari`DocumentBuilder` kelas, yang menentukan kondisi yang ingin Anda evaluasi.
 
 ###  Apa itu`EvaluateCondition` method do?
-Itu`EvaluateCondition` metode mengevaluasi kondisi yang ditetapkan dalam bidang IF dan mengembalikan hasilnya, yang menunjukkan apakah kondisi tersebut benar atau salah.
+ Itu`EvaluateCondition` metode mengevaluasi kondisi yang ditetapkan dalam bidang IF dan mengembalikan hasilnya, yang menunjukkan apakah kondisi tersebut benar atau salah.
 
 ### Dapatkah saya menggunakan kondisi kompleks dengan kolom IF?
 Ya, Anda dapat menggunakan kondisi kompleks dengan bidang IF dengan menentukan ekspresi dan perbandingan yang berbeda sesuai kebutuhan.

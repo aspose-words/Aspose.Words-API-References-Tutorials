@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 In deze klas:
-- De`Warning`methode vangt waarschuwingen op met betrekking tot lettertypevervanging.
-- De`FontWarnings` De verzameling slaat deze waarschuwingen op voor verdere inspectie of registratie.
+-  De`Warning`methode vangt waarschuwingen op met betrekking tot lettertypevervanging.
+-  De`FontWarnings` De verzameling slaat deze waarschuwingen op voor verdere inspectie of registratie.
 
 ## Conclusie
 

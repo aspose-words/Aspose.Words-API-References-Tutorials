@@ -54,12 +54,13 @@ Anda dapat menggunakan Aspose.Words untuk menerapkan huruf miring pada bagian te
 ```python
 # Import the required classes
 from aspose.words import Document, Font, Style
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply italic style
 font = run.font
@@ -76,12 +77,13 @@ Untuk menyorot teks, Anda dapat menyesuaikan warna latar belakang teks. Berikut 
 ```python
 # Import the required classes
 from aspose.words import Document, Color
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply background color
 run.font.highlight_color = Color.YELLOW
@@ -97,15 +99,16 @@ Penyelarasan dapat diatur menggunakan gaya. Berikut contohnya:
 ```python
 # Import the required classes
 from aspose.words import Document, ParagraphAlignment
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set alignment
-paragraph.paragraph_format.alignment = ParagraphAlignment.RIGHT
+paragraph.paragraph_format.alignment = aw.ParagraphAlignment.RIGHT
 
 # Save the modified document
 doc.save("modified_document.docx")
@@ -118,12 +121,13 @@ Menerapkan spasi baris yang tepat akan meningkatkan keterbacaan. Anda dapat menc
 ```python
 # Import the required classes
 from aspose.words import Document, LineSpacingRule
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set line spacing
 paragraph.paragraph_format.line_spacing_rule = LineSpacingRule.MULTIPLE
@@ -141,7 +145,7 @@ Aspose.Words untuk Python menyediakan berbagai pilihan untuk gaya font dan teks.
 
 Dalam bidang pembuatan dokumen, font dan gaya teks merupakan alat yang ampuh untuk meningkatkan daya tarik visual dan menyampaikan informasi secara efektif. Dengan memahami dasar-dasar font, gaya teks, dan memanfaatkan alat seperti Aspose.Words untuk Python, Anda dapat membuat dokumen profesional yang menarik dan mempertahankan perhatian audiens Anda.
 
-## Tanya Jawab Umum
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara mengubah warna font menggunakan Aspose.Words untuk Python?
 

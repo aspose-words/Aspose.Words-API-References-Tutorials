@@ -9,7 +9,7 @@ url: /fr/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 ---
 ## Introduction
 
-Vous avez déjà rencontré des problèmes de césure dans vos documents Word ? Eh bien, vous n'êtes pas seul. La césure peut faire ou défaire la lisibilité de votre texte, en particulier dans les langues avec des règles de césure complexes. N'ayez crainte ! Aspose.Words pour .NET vous aide. Ce didacticiel vous guidera tout au long du processus de chargement d'un dictionnaire de césure pour une langue spécifique, garantissant que vos documents ont un aspect soigné et professionnel. Plongeons-nous dans le vif du sujet !
+Vous avez déjà rencontré des problèmes de césure dans vos documents Word ? Eh bien, vous n'êtes pas seul. La césure peut faire ou défaire la lisibilité de votre texte, en particulier dans les langues avec des règles de césure complexes. N'ayez crainte ! Aspose.Words pour .NET vous aide. Ce didacticiel vous guidera tout au long du processus de chargement d'un dictionnaire de césure pour une langue spécifique, garantissant ainsi que vos documents soient soignés et professionnels. Plongeons-nous dans le vif du sujet !
 
 ## Prérequis
 

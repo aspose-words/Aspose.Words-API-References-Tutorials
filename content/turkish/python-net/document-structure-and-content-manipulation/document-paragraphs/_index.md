@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## Temel Metin Biçimlendirme
 
- Word belgesindeki metni biçimlendirmek, önemli noktaları vurgulamak ve okunabilirliği artırmak için önemlidir. Aspose.Words, aşağıdakiler gibi çeşitli biçimlendirme seçenekleri uygulamanıza olanak tanır:**bold**, *italic*, altı çizili ve yazı tipi boyutu:
+Word belgesindeki metni biçimlendirmek, önemli noktaları vurgulamak ve okunabilirliği artırmak için önemlidir. Aspose.Words, kalın, italik, altı çizili ve yazı tipi boyutu gibi çeşitli biçimlendirme seçenekleri uygulamanıza olanak tanır:
 
 ```python
 # Apply basic text formatting
@@ -172,8 +172,6 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 ## Çözüm
 
 Bu kapsamlı kılavuzda, Word belgelerindeki paragrafları ve metni biçimlendirmede Python için Aspose.Words'ün yeteneklerini inceledik. Geliştiriciler bu güçlü kütüphaneyi kullanarak belge biçimlendirmesini sorunsuz bir şekilde otomatikleştirebilir ve içerikleri için profesyonel ve cilalı bir görünüm sağlayabilirler.
-
----
 
 ## SSS
 

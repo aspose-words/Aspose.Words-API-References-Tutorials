@@ -40,7 +40,7 @@ Nyní se pojďme ponořit do procesu generování miniatur z načteného dokumen
 ```java
 // Java kód pro vygenerování miniatury dokumentu
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ Generování miniatur dokumentů pomocí Aspose.Words for Java nabízí bezprobl
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Chcete-li nainstalovat Aspose.Words for Java, navštivte stránku pro stahování[zde](https://releases.aspose.com/words/java/) postupujte podle dodaných pokynů k instalaci.
+Chcete-li nainstalovat Aspose.Words for Java, navštivte stránku pro stahování[zde](https://releases.aspose.com/words/java/) postupujte podle dodaných pokynů k instalaci.
 
 ### Mohu přizpůsobit velikost vygenerované miniatury?
 

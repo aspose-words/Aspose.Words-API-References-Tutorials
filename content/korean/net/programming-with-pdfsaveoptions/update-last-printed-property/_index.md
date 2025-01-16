@@ -80,7 +80,7 @@ Aspose.Words for .NET은 문서 작성, 수정, 변환, 인쇄를 포함한 .NET
 네, Aspose.Words for .NET을 사용하면 작성자, 제목, 주제 등 다양한 문서 속성을 업데이트할 수 있습니다.
 
 ### Aspose.Words for .NET은 무료인가요?
-Aspose.Words for .NET은 다운로드할 수 있는 무료 평가판을 제공합니다.[여기](https://releases.aspose.com/). 장기간 사용하려면 라이센스를 구매해야 합니다.
+ Aspose.Words for .NET은 다운로드할 수 있는 무료 평가판을 제공합니다.[여기](https://releases.aspose.com/). 장기간 사용하려면 라이센스를 구매해야 합니다.
 
 ### .NET용 Aspose.Words에 대한 추가 문서는 어디에서 찾을 수 있나요?
-Aspose.Words for .NET에 대한 자세한 설명서를 찾을 수 있습니다.[여기](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NET에 대한 자세한 설명서를 찾을 수 있습니다.[여기](https://reference.aspose.com/words/net/).

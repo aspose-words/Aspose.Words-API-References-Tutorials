@@ -8,7 +8,7 @@ weight: 14
 url: /zh/java/document-security/document-redaction-data-protection/
 ---
 
-在当今的数字时代，保护敏感信息和数据隐私至关重要。无论您处理的是法律文件、财务报告还是医疗记录，确保机密信息保持机密性都至关重要。本分步指南将引导您完成使用 Aspose.Words for Java 进行文档编辑和数据保护的过程，这是一个功能强大的 Java API，可让您轻松操作 Word 文档。
+在当今的数字时代，保护敏感信息和数据隐私至关重要。无论您处理的是法律文件、财务报告还是医疗记录，确保机密信息保持机密都至关重要。本分步指南将引导您完成使用 Aspose.Words for Java 进行文档编辑和数据保护的过程，这是一个功能强大的 Java API，可让您轻松操作 Word 文档。
 
 ## 介绍
 

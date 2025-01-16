@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Étape 5 : Insérer le lien hypertexte
 
- Maintenant, nous insérons le lien hypertexte en utilisant le`InsertHyperlink`méthode. Cette méthode prend trois paramètres : le texte d'affichage, l'URL et un booléen indiquant si le lien doit être formaté en tant qu'hyperlien.
+ Maintenant, nous insérons le lien hypertexte en utilisant le`InsertHyperlink` méthode. Cette méthode prend trois paramètres : le texte d'affichage, l'URL et un booléen indiquant si le lien doit être formaté en tant qu'hyperlien.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", faux);
@@ -106,7 +106,7 @@ L'insertion d'hyperliens dans un document Word à l'aide d'Aspose.Words pour .NE
 
 ### Puis-je insérer plusieurs hyperliens dans un seul document ?
 
- Oui, vous pouvez insérer plusieurs hyperliens en répétant le`InsertHyperlink`méthode pour chaque lien.
+ Oui, vous pouvez insérer plusieurs hyperliens en répétant le`InsertHyperlink` méthode pour chaque lien.
 
 ### Comment changer la couleur du lien hypertexte ?
 
@@ -118,7 +118,7 @@ L'insertion d'hyperliens dans un document Word à l'aide d'Aspose.Words pour .NE
 
 ### Que se passe-t-il si l’URL n’est pas valide ?
 
-Le`InsertHyperlink` La méthode ne valide pas les URL, il est donc important de s'assurer que les URL sont correctes avant de les insérer.
+ Le`InsertHyperlink` La méthode ne valide pas les URL, il est donc important de s'assurer que les URL sont correctes avant de les insérer.
 
 ### Est-il possible de supprimer un lien hypertexte après son insertion ?
 

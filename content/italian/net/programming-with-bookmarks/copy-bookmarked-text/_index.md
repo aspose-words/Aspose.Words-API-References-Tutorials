@@ -112,7 +112,7 @@ Ed ecco fatto! Hai copiato con successo il testo con segnalibro da un documento 
 Sì, puoi scorrere più segnalibri e utilizzare lo stesso metodo per copiarli tutti.
 
 ### Cosa succede se il segnalibro non viene trovato?
-IL`Range.Bookmarks` la proprietà tornerà`null`, quindi assicurati di gestire questo caso per evitare eccezioni.
+ IL`Range.Bookmarks` la proprietà tornerà`null`, quindi assicurati di gestire questo caso per evitare eccezioni.
 
 ### Posso mantenere la formattazione del segnalibro originale?
  Assolutamente! Utilizzando`ImportFormatMode.KeepSourceFormatting` garantisce che la formattazione originale venga preservata.

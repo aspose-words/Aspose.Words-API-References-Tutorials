@@ -22,7 +22,7 @@ Koda geçmeden önce ihtiyacınız olan tüm araçlara sahip olduğunuzdan emin 
 
 ## Ad Alanlarını İçe Aktar
 
-İlk önce, ad alanlarımızı ayarlayalım. Bunlar, Aspose.Words kütüphanesinden kullanacağımız sınıflara ve yöntemlere erişmek için gereklidir.
+İlk önce ilk şeyler, ad alanlarımızı ayarlayalım. Bunlar, Aspose.Words kütüphanesinden kullanacağımız sınıflara ve yöntemlere erişmek için gereklidir.
 
 ```csharp
 using Aspose.Words;

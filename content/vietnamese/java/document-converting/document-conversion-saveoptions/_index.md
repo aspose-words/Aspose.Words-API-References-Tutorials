@@ -49,7 +49,7 @@ Tiếp theo, bạn sẽ cấu hình các tùy chọn lưu cho tài liệu. Đây
 
 ```java
 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.setSaveFormat(SaveFormat.EPUB);
+saveOptions.setSaveFormat();
 saveOptions.setEncoding(StandardCharsets.UTF_8);
 ```
 

@@ -16,7 +16,7 @@ url: /ko/python-net/document-structure-and-content-manipulation/document-lists/
 
 ## 환경 설정하기
 
-목록을 만들고 관리하는 방법을 알아보기 전에 Aspose.Words for Python 라이브러리가 설치되어 있는지 확인하세요. 여기에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/) . 또한 API 설명서를 참조하세요.[이 링크](https://reference.aspose.com/words/python-net/) 자세한 내용은
+ 목록을 만들고 관리하는 방법을 알아보기 전에 Aspose.Words for Python 라이브러리가 설치되어 있는지 확인하세요. 여기에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/) . 또한 API 설명서를 참조하세요.[이 링크](https://reference.aspose.com/words/python-net/) 자세한 내용은
 
 ## 글머리 기호 목록 만들기
 
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]

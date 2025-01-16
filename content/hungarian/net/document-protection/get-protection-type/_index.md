@@ -15,13 +15,13 @@ Szia! Gondolkozott már azon, hogyan ellenőrizheti programozottan a Word-dokume
 
 Mielőtt belevágnánk a kódolási részbe, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
-1.  Aspose.Words for .NET Library: Ha még nem tette meg, töltse le és telepítse a[Aspose.Words a .NET könyvtárhoz](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Ha még nem tette meg, töltse le és telepítse a[Aspose.Words a .NET könyvtárhoz](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Egy IDE, mint a Visual Studio.
 3. Alapvető C# ismerete: A C# programozás ismerete segít a követésben.
 
 ## Névterek importálása
 
-kódolás megkezdése előtt importálnia kell a szükséges névtereket. Ez biztosítja, hogy hozzáférjen az Aspose.Words által biztosított összes osztályhoz és metódushoz.
+A kódolás megkezdése előtt importálnia kell a szükséges névtereket. Ez biztosítja, hogy hozzáférjen az Aspose.Words által biztosított összes osztályhoz és metódushoz.
 
 ```csharp
 using System;
@@ -41,7 +41,7 @@ Először is állítsa be C#-projektjét a Visual Studióban. Íme, hogyan:
 
 ## 2. lépés: Töltse be a dokumentumot
 
- Most, hogy a projekt be van állítva, töltsük be az ellenőrizni kívánt Word-dokumentumot. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentum tényleges elérési útjával.
+Most, hogy a projekt be van állítva, töltsük be az ellenőrizni kívánt Word-dokumentumot. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentum tényleges elérési útjával.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -75,13 +75,13 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi Word-dokumentumok programozott létrehozását, szerkesztését, konvertálását és kezelését.
 
 ### Használhatom ingyenesen az Aspose.Words-t?
- Kezdheti a[ingyenes próbaverzió](https://releases.aspose.com/) , de a teljes funkcionalitás érdekében licencet kell vásárolnia. Nézze meg a[vásárlási lehetőségek](https://purchase.aspose.com/buy).
+ Kezdheti a[ingyenes próbaverzió](https://releases.aspose.com/) de a teljes funkcionalitás érdekében licencet kell vásárolnia. Nézze meg a[vásárlási lehetőségek](https://purchase.aspose.com/buy).
 
 ### Milyen védelmi típusokat észlelhet az Aspose.Words?
 Az Aspose.Words különféle védelmi típusokat képes észlelni, mint például a NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments és AllowOnlyFormFields.
 
 ### Hogyan kaphatok támogatást, ha problémákba ütközöm?
-Bármilyen probléma esetén keresse fel a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.
+ Bármilyen probléma esetén keresse fel a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.
 
 ### Az Aspose.Words kompatibilis a .NET Core-al?
 Igen, az Aspose.Words a .NET-keretrendszerrel és a .NET Core-val is kompatibilis.

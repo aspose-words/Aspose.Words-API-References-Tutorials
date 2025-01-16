@@ -2,7 +2,7 @@
 title: استخدام بيانات XML في Aspose.Words للغة Java
 linktitle: استخدام بيانات XML
 second_title: واجهة برمجة تطبيقات معالجة المستندات في Java Aspose.Words
-description: اكتشف قوة Aspose.Words للغة Java. تعلَّم التعامل مع بيانات XML ودمج المراسلات وقواعد Mustache من خلال دروس تعليمية خطوة بخطوة.
+description: اكتشف قوة Aspose.Words للغة Java. تعلَّم كيفية التعامل مع بيانات XML ودمج المراسلات وقواعد Mustache من خلال دروس تعليمية خطوة بخطوة.
 type: docs
 weight: 12
 url: /ar/java/document-manipulation/using-xml-data/

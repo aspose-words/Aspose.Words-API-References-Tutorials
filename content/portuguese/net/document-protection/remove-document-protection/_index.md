@@ -93,7 +93,7 @@ Isso salvará seu documento desprotegido no diretório especificado.
 
 ## Conclusão
 
-E aí está! Remover a proteção de um documento do Word usando o Aspose.Words para .NET é moleza. Seja um documento protegido por senha ou não, o Aspose.Words fornece a flexibilidade para gerenciar a proteção de documentos sem esforço. Agora você pode desbloquear seus documentos e assumir o controle total com apenas algumas linhas de código.
+aí está! Remover a proteção de um documento do Word usando o Aspose.Words para .NET é moleza. Seja um documento protegido por senha ou não, o Aspose.Words fornece a flexibilidade para gerenciar a proteção de documentos sem esforço. Agora você pode desbloquear seus documentos e assumir o controle total com apenas algumas linhas de código.
 
 ## Perguntas frequentes
 
@@ -111,7 +111,7 @@ Sim, você pode percorrer uma lista de documentos e aplicar a mesma lógica de d
 
 ### Que outros tipos de proteção posso aplicar a um documento do Word?
 
-O Aspose.Words permite que você aplique diferentes tipos de proteção, como ReadOnly, AllowOnlyRevisions, AllowOnlyComments e AllowOnlyFormFields.
+Aspose.Words permite que você aplique diferentes tipos de proteção, como ReadOnly, AllowOnlyRevisions, AllowOnlyComments e AllowOnlyFormFields.
 
 ### Onde posso encontrar mais documentação sobre o Aspose.Words para .NET?
 

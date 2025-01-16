@@ -73,7 +73,7 @@ Et voilà ! La copie de styles entre documents Word à l'aide d'Aspose.Words pou
 ## FAQ
 
 ###  Quel est le but de la`CopyStylesFromTemplate` method?  
-Le`CopyStylesFromTemplate` La méthode copie les styles d'un document à un autre, garantissant que le document cible hérite de la mise en forme du document source.
+ Le`CopyStylesFromTemplate` La méthode copie les styles d'un document à un autre, garantissant que le document cible hérite de la mise en forme du document source.
 
 ###  Puis-je utiliser`CopyStylesFromTemplate` with documents in different formats?  
  Non, le`CopyStylesFromTemplate` La méthode fonctionne uniquement avec des documents au même format, généralement DOCX.
@@ -82,7 +82,7 @@ Le`CopyStylesFromTemplate` La méthode copie les styles d'un document à un autr
 Ouvrez le document cible et vérifiez les paramètres de style. Vous devriez voir les styles du document source appliqués.
 
 ### Que faire si le document cible possède déjà des styles ?  
-Le`CopyStylesFromTemplate` La méthode remplacera les styles existants dans le document cible par ceux du document source.
+ Le`CopyStylesFromTemplate` La méthode remplacera les styles existants dans le document cible par ceux du document source.
 
 ### L'utilisation d'Aspose.Words pour .NET est-elle gratuite ?  
  Aspose.Words pour .NET est un produit commercial, mais vous pouvez obtenir un essai gratuit sur[Essai gratuit d'Aspose.Words pour .NET](https://releases.aspose.com/).

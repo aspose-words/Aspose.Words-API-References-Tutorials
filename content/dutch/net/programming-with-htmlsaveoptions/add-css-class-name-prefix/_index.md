@@ -117,7 +117,7 @@ En daar heb je het! Door deze stappen te volgen, heb je met succes een CSS-klass
  Ja, u kunt het voorvoegsel aanpassen telkens wanneer u een document opslaat door de`CssClassNamePrefix` eigendom.
 
 ### Ondersteunt deze methode inline CSS?
-De`CssClassNamePrefix`property werkt met externe CSS. Voor inline CSS heb je een andere aanpak nodig.
+ De`CssClassNamePrefix`property werkt met externe CSS. Voor inline CSS heb je een andere aanpak nodig.
 
 ### Hoe kan ik andere HTML-opslagopties toevoegen?
  U kunt verschillende eigenschappen van`HtmlSaveOptions` om uw HTML-uitvoer aan te passen. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.

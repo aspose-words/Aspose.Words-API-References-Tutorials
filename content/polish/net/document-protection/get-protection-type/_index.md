@@ -15,7 +15,7 @@ Cześć! Czy kiedykolwiek zastanawiałeś się, jak programowo sprawdzić typ oc
 
 Zanim przejdziemy do kodowania, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Biblioteka Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj[Biblioteka Aspose.Words dla .NET](https://releases.aspose.com/words/net/).
+1. Biblioteka Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj[Biblioteka Aspose.Words dla .NET](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: IDE, np. Visual Studio.
 3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# ułatwi Ci zrozumienie tematu.
 
@@ -41,7 +41,7 @@ Po pierwsze, skonfiguruj swój projekt C# w Visual Studio. Oto jak to zrobić:
 
 ## Krok 2: Załaduj swój dokument
 
- Teraz, gdy Twój projekt jest skonfigurowany, załadujmy dokument Word, który chcesz sprawdzić. Zastąp`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do dokumentu.
+Teraz, gdy Twój projekt jest skonfigurowany, załadujmy dokument Word, który chcesz sprawdzić. Zastąp`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do dokumentu.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -75,13 +75,13 @@ I masz! Udało Ci się odzyskać typ ochrony dokumentu Word za pomocą Aspose.Wo
 Aspose.Words for .NET to zaawansowana biblioteka umożliwiająca programowe tworzenie, edycję, konwersję i manipulowanie dokumentami Word.
 
 ### Czy mogę używać Aspose.Words za darmo?
- Możesz zacząć od[bezpłatny okres próbny](https://releases.aspose.com/) , ale dla pełnej funkcjonalności, będziesz musiał kupić licencję. Sprawdź[opcje zakupu](https://purchase.aspose.com/buy).
+ Możesz zacząć od[bezpłatny okres próbny](https://releases.aspose.com/) ale dla pełnej funkcjonalności, będziesz musiał kupić licencję. Sprawdź[opcje zakupu](https://purchase.aspose.com/buy).
 
 ### Jakie typy zabezpieczeń może wykryć Aspose.Words?
 Aspose.Words potrafi wykrywać różne typy zabezpieczeń, takie jak NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments i AllowOnlyFormFields.
 
 ### Jak mogę uzyskać pomoc, jeśli napotkam problemy?
- przypadku jakichkolwiek problemów możesz odwiedzić stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) po pomoc.
+ W przypadku jakichkolwiek problemów możesz odwiedzić stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) po pomoc.
 
 ### Czy Aspose.Words jest kompatybilny z .NET Core?
 Tak, Aspose.Words jest kompatybilny zarówno z .NET Framework, jak i .NET Core.

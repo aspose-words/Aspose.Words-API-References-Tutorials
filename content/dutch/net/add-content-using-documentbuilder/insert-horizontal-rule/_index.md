@@ -47,7 +47,7 @@ Open uw ontwikkelomgeving (zoals Visual Studio) en maak een nieuw C#-project. Di
 
 ### Een nieuw document maken
 
- Begin in uw hoofdprogrammabestand met het maken van een nieuw exemplaar van de`Document`klas. Dit zal ons lege canvas zijn.
+ Begin in uw hoofdprogrammabestand met het maken van een nieuw exemplaar van de`Document` klas. Dit zal ons lege canvas zijn.
 
 ```csharp
 Document doc = new Document();
@@ -83,7 +83,7 @@ builder.InsertHorizontalRule();
 
 ### Definieer de opslagmap
 
-U hebt een directorypad nodig waar het document wordt opgeslagen. Dit kan elke directory op uw systeem zijn.
+hebt een directorypad nodig waar het document wordt opgeslagen. Dit kan elke directory op uw systeem zijn.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -113,7 +113,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars progra
 
 ### Hoe ga ik aan de slag met Aspose.Words voor .NET?
 
- U kunt beginnen door de bibliotheek te downloaden van de[website](https://releases.aspose.com/words/net/) en het toevoegen aan uw .NET-project.
+ kunt beginnen door de bibliotheek te downloaden van de[website](https://releases.aspose.com/words/net/) en het toevoegen aan uw .NET-project.
 
 ### Kan ik Aspose.Words gratis gebruiken?
 
@@ -121,8 +121,8 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars progra
 
 ### Waar kan ik meer tutorials vinden over Aspose.Words voor .NET?
 
-De[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) is een geweldige plek om gedetailleerde tutorials en voorbeelden te vinden.
+ De[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) is een geweldige plek om gedetailleerde tutorials en voorbeelden te vinden.
 
 ### Hoe kan ik ondersteuning krijgen als ik problemen ondervind?
 
- kunt ondersteuning krijgen door de[Aspose.Words ondersteuningsforum](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen door de[Aspose.Words ondersteuningsforum](https://forum.aspose.com/c/words/8).

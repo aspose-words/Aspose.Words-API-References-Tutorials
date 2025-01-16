@@ -17,7 +17,7 @@ In de digitale wereld van vandaag is gegevensbeveiliging van het grootste belang
 
 ## Aspose.Words voor Java instellen
 
- Voordat we in het beveiligen van documenten duiken, moeten we ervoor zorgen dat u Aspose.Words voor Java in uw Java-omgeving hebt ingesteld. Als u dat nog niet hebt gedaan, kunt u het downloaden van[hier](https://releases.aspose.com/words/java/).
+Voordat we in het beveiligen van documenten duiken, moeten we ervoor zorgen dat u Aspose.Words voor Java in uw Java-omgeving hebt ingesteld. Als u dat nog niet hebt gedaan, kunt u het downloaden van[hier](https://releases.aspose.com/words/java/).
 
 ## Documenten beveiligen: stap voor stap
 

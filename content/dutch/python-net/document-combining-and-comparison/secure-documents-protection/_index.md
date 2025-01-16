@@ -38,14 +38,6 @@ kunt een wachtwoord aan uw document toevoegen om de toegang te beperken:
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## Beperken van bewerkingsrechten
-
-Om te bepalen wie wijzigingen in het document mag aanbrengen, kunt u bewerkingsrechten instellen:
-
-```python
-protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
-protection.set_editing_groups(["Editors"])
-```
 
 ## Documentinhoud versleutelen
 
@@ -60,8 +52,10 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 Voeg een digitale handtekening toe om de authenticiteit van het document te garanderen:
 
 ```python
-digital_signature = aw.digital_signatures.DigitalSignature(doc)
-digital_signature.sign("certificate.pfx", "signature_password")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
+			
+aw.digitalsignatures.DigitalSignatureUtil.sign(dst_document_path, dst_document_path, certificate_holder, sign_options)
 ```
 
 ## Watermerken voor beveiliging
@@ -71,15 +65,6 @@ Watermerken kunnen ongeautoriseerd delen ontmoedigen:
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
-```
-
-## Gevoelige informatie redigeren
-
-Om gevoelige informatie permanent te verwijderen:
-
-```python
-redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
-doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
 ## Conclusie

@@ -80,7 +80,7 @@ foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
 العنوان: تحديث رسومات Smart Art
 
 توضيح:
-ال`UpdateSmartArtDrawing` تعمل الطريقة على تحديث رسم Smart Art، مما يضمن عكس أي تغييرات في بيانات المستند أو تخطيطه. يجب استدعاء هذه الطريقة على كل شكل Smart Art تم تحديده في الخطوة السابقة.
+ ال`UpdateSmartArtDrawing` تعمل الطريقة على تحديث رسم Smart Art، مما يضمن عكس أي تغييرات في بيانات المستند أو تخطيطه. يجب استدعاء هذه الطريقة على كل شكل Smart Art تم تحديده في الخطوة السابقة.
 
 ```csharp
 // تحديث رسم Smart Art لكل شكل من أشكال Smart Art

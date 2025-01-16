@@ -60,7 +60,7 @@ try {
 ```
 
 Uitleg:
-- De`try-catch` block zorgt ervoor dat eventuele fouten die optreden tijdens het laden van het document, worden opgemerkt en op de juiste manier worden beheerd.
+-  De`try-catch`block zorgt ervoor dat eventuele fouten die optreden tijdens het laden van het document, worden opgemerkt en op de juiste manier worden beheerd.
 
 ## Stap 2: Initialiseer ImageSaveOptions
 
@@ -71,7 +71,7 @@ Zodra het document is geladen, is de volgende stap het instellen van de opties v
 `ImageSaveOptions` is een klasse waarmee u kunt opgeven hoe het document als afbeelding moet worden opgeslagen.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 Uitleg:

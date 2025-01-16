@@ -18,7 +18,7 @@ När det gäller att skapa dokument spelar alternativ och inställningar en avg�
 
 ## Vad du kommer att lära dig
 
-Genom den här handledningsserien kommer vi att guida dig genom en rad dokumentalternativ och inställningar som är tillgängliga i Aspose.Words för både Python- och .NET-plattformar. Handledningarna täcker ett brett spektrum av ämnen, inklusive:
+Under den här handledningsserien kommer vi att guida dig genom en rad dokumentalternativ och inställningar som är tillgängliga i Aspose.Words för både Python- och .NET-plattformar. Handledningarna täcker ett brett spektrum av ämnen, inklusive:
 
 - Utskriftsformat: Lär dig hur du anpassar sidmått, marginaler, orientering och papperstyp.
 - Teckensnitt och textformatering: Utforska teckensnittsstilar, storlekar, färger och alternativ för textjustering.

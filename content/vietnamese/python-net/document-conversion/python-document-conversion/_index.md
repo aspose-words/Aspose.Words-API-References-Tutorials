@@ -105,8 +105,6 @@ Ngoài Word và PDF, Aspose.Words for Python còn hỗ trợ nhiều định d�
 
 Aspose.Words cho phép bạn tùy chỉnh giao diện của các tài liệu đã chuyển đổi. Bạn có thể áp dụng các tùy chọn định dạng như kiểu phông chữ, màu sắc, căn chỉnh và khoảng cách đoạn văn.
 
-#### Ví dụ:
-
 ```python
 # Python code for applying formatting during conversion
 import aspose.words as aw
@@ -128,8 +126,6 @@ doc.save("formatted_output.pdf", aw.SaveFormat.PDF)
 ### Xử lý hình ảnh và bảng
 
 Aspose.Words cho phép bạn xử lý hình ảnh và bảng trong quá trình chuyển đổi. Bạn có thể trích xuất hình ảnh, thay đổi kích thước và thao tác bảng để duy trì cấu trúc của tài liệu.
-
-#### Ví dụ:
 
 ```python
 # Python code for handling images and tables during conversion
@@ -156,8 +152,6 @@ doc.save("modified_output.pdf", aw.SaveFormat.PDF)
 
 Với Aspose.Words, bạn có thể đảm bảo hiển thị phông chữ nhất quán và quản lý bố cục của các tài liệu đã chuyển đổi. Tính năng này đặc biệt hữu ích khi duy trì tính nhất quán của tài liệu trên các định dạng khác nhau.
 
-#### Ví dụ:
-
 ```python
 # Python code for managing fonts and layout during conversion
 import aspose.words as aw
@@ -178,8 +172,6 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ### Viết tập lệnh Python cho tự động hóa
 
 Khả năng viết kịch bản của Python khiến nó trở thành lựa chọn tuyệt vời để tự động hóa các tác vụ lặp đi lặp lại. Bạn có thể viết các tập lệnh Python để thực hiện chuyển đổi tài liệu hàng loạt, tiết kiệm thời gian và công sức.
-
-#### Ví dụ:
 
 ```python
 # Python script for batch document conversion
@@ -205,11 +197,7 @@ for filename in input_files:
 
 ### Chuyển đổi hàng loạt tài liệu
 
-Qua
-
- kết hợp sức mạnh của Python và Aspose.Words, bạn có thể tự động chuyển đổi hàng loạt tài liệu, nâng cao năng suất và hiệu quả.
-
-#### Ví dụ:
+Bằng cách kết hợp sức mạnh của Python và Aspose.Words, bạn có thể tự động chuyển đổi hàng loạt tài liệu, nâng cao năng suất và hiệu quả.
 
 ```python
 # Python script for batch document conversion using Aspose.Words
@@ -238,14 +226,6 @@ for filename in input_files:
     output_filename = filename.replace(file_ext, ".pdf" if file_ext == ".docx" else ".docx")
     doc.save(os.path.join(output_dir, output_filename))
 ```
-## Ưu điểm của việc sử dụng Aspose.Words cho Python
-
-Aspose.Words for Python cung cấp một số lợi thế, bao gồm:
-
-- Khả năng chuyển đổi tài liệu mạnh mẽ
-- Bộ tính năng phong phú để thao tác tài liệu
-- Tích hợp dễ dàng với các ứng dụng Python
-- Hỗ trợ và cập nhật liên tục từ một cộng đồng đang phát triển mạnh mẽ
 
 ## Phần kết luận
 

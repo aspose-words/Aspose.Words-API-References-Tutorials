@@ -9,7 +9,7 @@ url: /sv/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certific
 ---
 ## Introduktion
 
-Har du någonsin undrat hur du säkrar dina PDF-dokument med en digital signatur? Tja, du är på rätt plats! Digitala signaturer är den moderna motsvarigheten till handskrivna signaturer, och erbjuder ett sätt att verifiera äktheten och integriteten hos digitala dokument. I den här handledningen visar vi dig hur du lägger till en digital signatur i en PDF med Aspose.Words för .NET. Vi kommer att täcka allt från att ställa in din miljö till att exekvera koden steg för steg. I slutet av den här guiden har du en digitalt signerad PDF som är säker och pålitlig.
+Har du någonsin undrat hur du säkrar dina PDF-dokument med en digital signatur? Nåväl, du är på rätt plats! Digitala signaturer är den moderna motsvarigheten till handskrivna signaturer, och erbjuder ett sätt att verifiera äktheten och integriteten hos digitala dokument. I den här handledningen visar vi dig hur du lägger till en digital signatur i en PDF med Aspose.Words för .NET. Vi kommer att täcka allt från att ställa in din miljö till att exekvera koden steg för steg. I slutet av den här guiden har du en digitalt signerad PDF som är säker och pålitlig.
 
 ## Förutsättningar
 

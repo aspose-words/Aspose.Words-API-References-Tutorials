@@ -34,7 +34,7 @@ pip install aspose-words
 3. 在 Python 脚本中导入该库。
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## 创建新文档
@@ -42,7 +42,7 @@ import aspose.words
 让我们首先使用 Aspose.Words 创建一个新文档：
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## 向文档添加内容
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 您可以使用 Aspose.Words 轻松地向文档添加内容：
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ builder.writeln("Hello, world!")
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## 插入 Web 扩展
-
-要将 Web 扩展插入文档，请按照以下步骤操作：
-
-1. 使用 HTML、CSS 和 JavaScript 创建 Web 扩展。
-2. 将 Web 扩展转换为 base64 编码的字符串。
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. 将 Web 扩展插入到文档中：
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## 与 Web 扩展交互
@@ -98,7 +78,7 @@ Web 扩展可以动态修改文档内容。例如，您可以使用 Web 扩展�
 合并 Web 扩展并进行必要的修改后，您可以使用 Aspose.Words 支持的各种格式保存文档：
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## 性能优化技巧

@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /cs/java/word-processing/manipulating-document-content/
 ---
-
 ## Zavedení
 
 Ve světě programování v jazyce Java je efektivní správa dokumentů klíčovým aspektem mnoha aplikací. Ať už pracujete na generování sestav, zpracovávání smluv nebo se zabýváte jakýmkoli úkolem souvisejícím s dokumenty, Aspose.Words for Java je výkonný nástroj, který můžete mít ve své sadě nástrojů. V tomto komplexním průvodci se ponoříme do složitosti manipulace s obsahem dokumentu pomocí čištění, polí a dat XML pomocí Aspose.Words for Java. Poskytneme vám podrobné pokyny spolu s příklady zdrojového kódu, které vám umožní získat znalosti a dovednosti potřebné k zvládnutí této všestranné knihovny.
@@ -50,7 +49,8 @@ Prázdné odstavce mohou být na obtíž. Odstraňte je pomocí tohoto kódu:
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ Ve vašich dokumentech může existovat skrytý obsah, který může způsobovat
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 Dodržením těchto kroků zajistíte, že váš dokument bude čistý a připravený k další manipulaci.
-
----
 
 ## Práce s poli
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 Pole přidávají vašim dokumentům dynamické schopnosti a zvyšují jejich užitečnost.
 
----
-
-## Začlenění dat XML
-
-Integrace dat XML do vašich dokumentů může být výkonná, zejména pro generování dynamického obsahu. Aspose.Words for Java tento proces zjednodušuje.
-
-### Vazba dat XML
-
-Snadno svažte data XML se svým dokumentem:
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://schémata.příklad'");
-doc.save("document_with_xml_data.docx");
-```
-
-Tento kód váže XML data na konkrétní části vašeho dokumentu, takže je dynamický a řízený daty.
-
-## Často kladené otázky (FAQ)
-
-### Jak odstraním prázdné odstavce z dokumentu?
-   
-   Chcete-li z dokumentu odstranit prázdné odstavce, můžete odstavce procházet a odstranit ty, které nemají žádný textový obsah. Zde je úryvek kódu, který vám toho pomůže:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### Mohu programově aktualizovat všechna pole v dokumentu?
-
-   Ano, všechna pole v dokumentu můžete aktualizovat programově pomocí Aspose.Words for Java. Můžete to udělat takto:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### Jak mohu svázat data XML s dokumentem?
-
-   Vazba dat XML k dokumentu je s Aspose.Words pro Java přímočará. K tomu můžete použít mapování XML. Zde je příklad:
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://schémata.příklad'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### Jaký je význam čištění obsahu dokumentu?
-
-   Vyčištění obsahu dokumentu je důležité, abyste zajistili, že vaše dokumenty nebudou obsahovat nepotřebné prvky, což může zlepšit čitelnost a snížit velikost souboru. Pomáhá také udržovat konzistenci dokumentu.
-
-### Jak mohu z dokumentu odstranit nepoužívané styly?
-
-   Nepoužité styly můžete z dokumentu odstranit pomocí Aspose.Words for Java. Zde je příklad:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### Je Aspose.Words for Java vhodný pro generování dynamických dokumentů s daty XML?
-
-   Ano, Aspose.Words for Java se dobře hodí pro generování dynamických dokumentů s daty XML. Poskytuje robustní funkce pro vazbu XML dat na šablony a vytváření personalizovaných dokumentů.
-
 ## Závěr
 
 V tomto rozsáhlém průvodci jsme prozkoumali svět manipulace s obsahem dokumentu pomocí čištění, polí a dat XML pomocí Aspose.Words for Java. Naučili jste se, jak čistit dokumenty, pracovat s poli a bezproblémově začlenit data XML. Tyto dovednosti jsou neocenitelné pro každého, kdo se zabývá správou dokumentů v aplikacích Java.
+
+## FAQ
+
+### Jak odstraním prázdné odstavce z dokumentu?
+   
+Chcete-li z dokumentu odstranit prázdné odstavce, můžete odstavce procházet a odstranit ty, které nemají žádný textový obsah. Zde je úryvek kódu, který vám toho pomůže:
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### Mohu programově aktualizovat všechna pole v dokumentu?
+
+Ano, všechna pole v dokumentu můžete aktualizovat programově pomocí Aspose.Words for Java. Můžete to udělat takto:
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### Jaký je význam čištění obsahu dokumentu?
+
+Vyčištění obsahu dokumentu je důležité, abyste zajistili, že vaše dokumenty nebudou obsahovat nepotřebné prvky, což může zlepšit čitelnost a snížit velikost souboru. Pomáhá také udržovat konzistenci dokumentu.
+
+### Jak mohu z dokumentu odstranit nepoužívané styly?
+
+Nepoužité styly můžete z dokumentu odstranit pomocí Aspose.Words for Java. Zde je příklad:
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### Je Aspose.Words for Java vhodný pro generování dynamických dokumentů s daty XML?
+
+Ano, Aspose.Words for Java se dobře hodí pro generování dynamických dokumentů s daty XML. Poskytuje robustní funkce pro vazbu XML dat na šablony a vytváření personalizovaných dokumentů.

@@ -53,13 +53,13 @@ Erläuterung:
 Als nächstes müssen wir ein Passwort für den Schreibschutz festlegen. Dieses Passwort kann maximal 15 Zeichen lang sein.
 
 ```csharp
-//Geben Sie ein maximal 15 Zeichen langes Passwort ein.
+// Geben Sie ein maximal 15 Zeichen langes Passwort ein.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Erläuterung:
 
-- Der`SetPassword` -Methode wird aufgerufen auf`WriteProtection` Eigenschaft des Dokuments.
+-  Der`SetPassword` -Methode wird aufgerufen auf`WriteProtection` Eigenschaft des Dokuments.
 - Wir stellen ein Passwort bereit (in diesem Fall „MyPassword“), das zum Aufheben des Schutzes erforderlich ist.
 
 ## Schritt 3: Schreibgeschützte Empfehlung aktivieren
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Erläuterung:
 
-- Der`ReadOnlyRecommended` Die Eigenschaft ist auf`true`.
+-  Der`ReadOnlyRecommended` Die Eigenschaft ist auf`true`.
 - Dadurch werden Benutzer aufgefordert, das Dokument im schreibgeschützten Modus zu öffnen. Sie können diese Empfehlung jedoch auch ignorieren.
 
 ## Schritt 4: Schreibschutz anwenden
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Erläuterung:
 
-- Der`Protect` -Methode wird für das Dokument aufgerufen mit`ProtectionType.ReadOnly` als Argument.
+-  Der`Protect` -Methode wird für das Dokument aufgerufen mit`ProtectionType.ReadOnly` als Argument.
 - Diese Methode erzwingt den Nur-Lese-Schutz und verhindert jegliche Änderungen am Dokument ohne Kennwort.
 
 ## Schritt 5: Speichern Sie das Dokument
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Erläuterung:
 
-- Der`Save` Die Methode wird für das Dokument aufgerufen und gibt den Pfad und den Namen der Datei an.
+-  Der`Save` Die Methode wird für das Dokument aufgerufen und gibt den Pfad und den Namen der Datei an.
 - Das Dokument wird mit aktiviertem Leseschutz gespeichert.
 
 ## Abschluss

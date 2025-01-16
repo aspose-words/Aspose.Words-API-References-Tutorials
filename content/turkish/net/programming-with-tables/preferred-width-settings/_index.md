@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-The`PreferredWidth.Auto` ayar, diğer hücreler hesaba katıldıktan sonra kalan boşluğa göre bu hücrenin genişlemesine veya daralmasına izin verir. Bu, tablo düzeninin dengeli ve profesyonel görünmesini sağlar.
+ The`PreferredWidth.Auto` ayar, diğer hücreler hesaba katıldıktan sonra kalan boşluğa göre bu hücrenin genişlemesine veya daralmasına izin verir. Bu, tablo düzeninin dengeli ve profesyonel görünmesini sağlar.
 
 ## Adım 5: Belgeyi Sonlandırın ve Kaydedin
 

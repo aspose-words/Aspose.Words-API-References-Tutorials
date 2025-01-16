@@ -7,168 +7,142 @@ type: docs
 weight: 13
 url: /pl/java/table-processing/formatting-tables/
 ---
-
-Czy jesteś gotowy wyruszyć w podróż, aby opanować sztukę formatowania tabel w dokumentach przy użyciu Aspose.Words for Java? W tym kompleksowym przewodniku zagłębimy się w świat formatowania dokumentów, skupiając się szczególnie na tabelach. Aspose.Words for Java to potężne narzędzie, które umożliwi Ci bezproblemowe tworzenie, manipulowanie i ulepszanie tabel w dokumentach.
-
 ## Wstęp
 
-Aspose.Words for Java to biblioteka Java, która umożliwia pracę z różnymi aspektami przetwarzania dokumentów. Niezależnie od tego, czy masz do czynienia z raportami, umowami czy jakimkolwiek dokumentem zawierającym tabele, ta biblioteka może być Twoim zaufanym towarzyszem. Dzięki jej rozbudowanym funkcjom i możliwościom możesz osiągnąć precyzyjne i profesjonalne formatowanie dokumentów.
+Czy jesteś gotowy, aby z łatwością tworzyć tabele w dokumentach Worda za pomocą Aspose.Words for Java? Tabele są niezbędne do organizowania danych, a dzięki tej potężnej bibliotece możesz programowo tworzyć, wypełniać, a nawet zagnieżdżać tabele w dokumentach Worda. W tym przewodniku krok po kroku pokażemy, jak tworzyć tabele, scalać komórki i dodawać zagnieżdżone tabele.
 
-## Pierwsze kroki z Aspose.Words dla Java
+## Wymagania wstępne
 
-Zanim zagłębimy się w szczegóły formatowania tabel, skonfigurujmy środowisko programistyczne i zapoznajmy się z Aspose.Words dla Java.
+Zanim zaczniesz kodować, upewnij się, że masz następujące rzeczy:
 
-### Instalacja
+- Java Development Kit (JDK) zainstalowany w Twoim systemie.
+-  Aspose.Words dla biblioteki Java.[Pobierz tutaj](https://releases.aspose.com/words/java/).
+- Podstawowa znajomość programowania w języku Java.
+- Środowisko IDE, takie jak IntelliJ IDEA, Eclipse lub inne, z którym czujesz się komfortowo.
+-  A[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) aby odblokować pełne możliwości Aspose.Words.
 
- Na początek musisz pobrać i zainstalować Aspose.Words dla Javy. Link do pobrania znajdziesz tutaj[Tutaj](https://releases.aspose.com/words/java/). Po zainstalowaniu możesz zacząć używać tej biblioteki do programowej pracy z dokumentami.
+## Importuj pakiety
 
-### Dodawanie Aspose.Words dla Java do projektu
-
-Po pobraniu Aspose.Words for Java dodaj bibliotekę do swojego projektu Java. Możesz to zrobić, umieszczając pliki JAR w ścieżce klas swojego projektu.
-
-### Inicjalizacja Aspose.Words dla Java
-
-Aby zacząć używać Aspose.Words dla Javy, musisz zainicjować go w swoim kodzie. Oto prosty przykład, jak to zrobić:
+Aby użyć Aspose.Words dla Java, musisz zaimportować wymagane klasy i pakiety. Dodaj te importy na górze pliku Java:
 
 ```java
-import com.aspose.words.Document;
-
-public class TableFormattingExample {
-    public static void main(String[] args) {
-        // Zainicjuj Aspose.Words dla Java
-        Document doc = new Document();
-        
-        // Twój kod wpisz tutaj
-    }
-}
+import com.aspose.words.*;
 ```
 
-## Tworzenie i wypełnianie tabel
+Podzielmy ten proces na mniejsze kroki, aby ułatwić jego śledzenie.
 
-Teraz, gdy skonfigurowaliśmy nasze środowisko, możemy zająć się tworzeniem i wypełnianiem tabel w dokumentach.
+## Krok 1: Utwórz dokument i tabelę
 
-### Tworzenie tabeli
+Czego potrzebujesz na początek? Dokumentu do pracy!
 
- Aby utworzyć tabelę w dokumencie, możesz użyć`Table` klasa z Aspose.Words dla Java. Oto jak możesz utworzyć podstawową tabelę:
+Zacznij od utworzenia nowego dokumentu Word i tabeli. Dołącz tabelę do treści dokumentu.
 
 ```java
+Document doc = new Document();
 Table table = new Table(doc);
+doc.getFirstSection().getBody().appendChild(table);
 ```
 
-### Dodawanie wierszy i kolumn
+- `Document`:Reprezentuje dokument Word.
+- `Table`: Tworzy pustą tabelę.
+- `appendChild`: Dodaje tabelę do treści dokumentu.
 
-Aby uczynić swoją tabelę użyteczną, musisz dodać wiersze i kolumny. Oto jak możesz to zrobić:
+## Krok 2: Dodaj wiersze i komórki do tabeli
+
+Tabela bez wierszy i komórek? To jak samochód bez kół! Naprawmy to.
 
 ```java
-// Dodaj wiersz do tabeli
-Row row = table.getRows().add();
+Row firstRow = new Row(doc);
+table.appendChild(firstRow);
 
-// Dodaj komórki do wiersza
-Cell cell1 = row.getCells().add();
-cell1.getCellFormat().setPreferredWidth(100.0);
-
-Cell cell2 = row.getCells().add();
-cell2.getCellFormat().setPreferredWidth(200.0);
-
-// Twój kod do wypełniania tabeli znajduje się tutaj
+Cell firstCell = new Cell(doc);
+firstRow.appendChild(firstCell);
 ```
 
-## Formatowanie tabel
+- `Row`:Reprezentuje wiersz w tabeli.
+- `Cell`:Reprezentuje komórkę w wierszu.
+- `appendChild`:Dodaje wiersze i komórki do tabeli.
 
-Formatowanie to miejsce, w którym dzieje się magia. Aspose.Words for Java oferuje mnóstwo opcji formatowania tabel. Przyjrzyjmy się kilku typowym zadaniom formatowania:
+## Krok 3: Dodaj tekst do komórki
 
-### Dostosowywanie szerokości kolumn
-
-Możesz kontrolować szerokość kolumn, aby upewnić się, że Twoja tabela wygląda atrakcyjnie wizualnie. Oto, jak możesz dostosować szerokości kolumn:
+Czas dodać naszemu stołowi odrobinę osobowości!
 
 ```java
-// Ustaw preferowaną szerokość kolumny
-cell1.getCellFormat().setPreferredWidth(100.0);
+Paragraph paragraph = new Paragraph(doc);
+firstCell.appendChild(paragraph);
+
+Run run = new Run(doc, "Hello world!");
+paragraph.appendChild(run);
 ```
 
-### Stosowanie obramowań
+- `Paragraph`: Dodaje akapit do komórki.
+- `Run`: Dodaje tekst do akapitu.
 
-Dodanie obramowań do tabeli może poprawić jej czytelność. Możesz również dostosować style obramowań:
+## Krok 4: Scalanie komórek w tabeli
+
+Chcesz połączyć komórki, aby utworzyć nagłówek lub rozpiętość? To pestka!
 
 ```java
-// Zastosuj obramowanie do komórki
-cell1.getCellFormat().getBorders().setLineStyle(LineStyle.SINGLE);
-cell1.getCellFormat().getBorders().setColor(Color.BLACK);
+DocumentBuilder builder = new DocumentBuilder(doc);
+
+builder.insertCell();
+builder.getCellFormat().setHorizontalMerge(CellMerge.FIRST);
+builder.write("Text in merged cells.");
+
+builder.insertCell();
+builder.getCellFormat().setHorizontalMerge(CellMerge.PREVIOUS);
+builder.endRow();
 ```
 
-### Łączenie komórek
+- `DocumentBuilder`:Uproszcza konstrukcję dokumentu.
+- `setHorizontalMerge`: Łączy komórki w poziomie.
+- `write`: Dodaje zawartość do scalonych komórek.
 
-Łączenie komórek jest przydatne, gdy chcesz utworzyć komórki nagłówkowe lub połączyć komórki w określonym celu:
+## Krok 5: Dodaj zagnieżdżone tabele
+
+Gotowy na wyższy poziom? Dodajmy tabelę w tabeli.
 
 ```java
-// Scal komórki poziomo
-table.mergeCells(cell1, cell2);
+builder.moveTo(table.getRows().get(0).getCells().get(0).getFirstParagraph());
+
+builder.startTable();
+builder.insertCell();
+builder.write("Hello world!");
+builder.endTable();
 ```
 
-## Zaawansowana manipulacja tabelą
+- `moveTo`: Przenosi kursor do określonego miejsca w dokumencie.
+- `startTable`:Rozpoczyna tworzenie tabeli zagnieżdżonej.
+- `endTable`: Kończy zagnieżdżoną tabelę.
 
-Aspose.Words for Java oferuje zaawansowane funkcje do obsługi złożonych scenariuszy tabel. Przyjrzyjmy się kilku z nich:
+## Wniosek
 
-### Dodawanie zagnieżdżonych tabel
+Gratulacje! Nauczyłeś się, jak tworzyć, wypełniać i stylizować tabele za pomocą Aspose.Words for Java. Od dodawania tekstu po scalanie komórek i zagnieżdżanie tabel, masz teraz narzędzia do efektywnego strukturowania danych w dokumentach Word.
 
-Czasami może być konieczne dodanie zagnieżdżonych tabel w komórce. Można to osiągnąć w następujący sposób:
-
-```java
-// Utwórz zagnieżdżoną tabelę
-Table nestedTable = new Table(doc);
-Row nestedRow = nestedTable.getRows().add();
-Cell nestedCell = nestedRow.getCells().add();
-
-// Dodaj zawartość do zagnieżdżonej tabeli
-nestedCell.getFirstParagraph().appendChild(new Run(doc, "Nested Table Content"));
-
-// Dodaj zagnieżdżoną tabelę do tabeli głównej
-cell1.appendChild(nestedTable);
-```
-
-### Dodawanie stylowych stylów tabeli
-
-Aspose.Words for Java obsługuje różne style tabel, które mogą nadać Twojemu dokumentowi profesjonalny wygląd:
-
-```java
-// Zastosuj wstępnie zdefiniowany styl tabeli
-table.setStyleIdentifier(StyleIdentifier.LIGHT_SHADING_ACCENT_1);
-```
-
-## Często zadawane pytania (FAQ)
-
-### Jak mogę zmienić kolor tła komórki tabeli?
-
- Możesz zmienić kolor tła komórki tabeli za pomocą`Shading` nieruchomość. Oto przykład:
-
-```java
-cell1.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
-```
+## Najczęściej zadawane pytania
 
 ### Czy można dodać hiperłącze do komórki tabeli?
 
 Tak, możesz dodać hiperłącza do komórek tabeli w Aspose.Words dla Java. Oto jak możesz to zrobić:
 
 ```java
-Run run = new Run(doc, "Click Here");
-run.getFont().setUnderline(Underline.SINGLE);
-run.getFont().setColor(Color.BLUE);
-run.getHyperlink().setAddress("https://www.example.com");
-cell1.getFirstParagraph().appendChild(run);
+builder.moveTo(table.getRows().get(0).getCells().get(0).getFirstParagraph());
+
+// Wstaw hiperłącze i podkreśl je, stosując niestandardowe formatowanie.
+// Hiperłącze będzie klikalnym fragmentem tekstu, który przeniesie nas do lokalizacji określonej w adresie URL.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", fałsz);
 ```
 
-### Czy mogę zastosować formatowanie warunkowe do komórek w tabeli?
+### Czy mogę używać Aspose.Words for Java za darmo?  
+ Można go używać z ograniczeniami lub uzyskać[bezpłatny okres próbny](https://releases.aspose.com/) aby w pełni wykorzystać jego potencjał.
 
-Tak, możesz stosować formatowanie warunkowe do komórek na podstawie określonych warunków. Aby to osiągnąć, musisz użyć logiki programowania, np. zmienić kolory komórek lub tekst na podstawie wartości danych.
+### Jak połączyć komórki w tabeli w pionie?  
+ Użyj`setVerticalMerge` metoda`CellFormat` klasa, podobna do scalania poziomego.
 
-### Jak mogę wyeksportować tabelę do innych formatów, np. PDF lub DOCX?
+### Czy mogę dodać obrazy do komórki tabeli?  
+ Tak, możesz użyć`DocumentBuilder` aby wstawić obrazy do komórek tabeli.
 
- Aspose.Words for Java zapewnia opcje eksportu do różnych formatów. Możesz zapisać swój dokument jako plik PDF lub DOCX, używając`Save` metoda. Oto przykład:
-
-```java
-doc.save("output.pdf", SaveFormat.PDF);
-```
-
-## Wniosek
-
-tym kompleksowym przewodniku zbadaliśmy fascynujący świat formatowania tabel w dokumentach za pomocą Aspose.Words for Java. Dzięki jego solidnym funkcjom i elastyczności możesz przenieść swoje umiejętności formatowania dokumentów na wyższy poziom. Niezależnie od tego, czy tworzysz raporty, prezentacje czy jakikolwiek dokument zawierający tabele, Aspose.Words for Java jest Twoim zaufanym towarzyszem. Więc śmiało, odblokuj pełny potencjał formatowania dokumentów za pomocą Aspose.Words for Java!
+### Gdzie mogę znaleźć więcej materiałów na temat Aspose.Words dla języka Java?  
+ Sprawdź[dokumentacja](https://reference.aspose.com/words/java/) lub[forum wsparcia](https://forum.aspose.com/c/words/8/) Aby uzyskać szczegółowe przewodniki.

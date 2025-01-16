@@ -23,7 +23,7 @@ url: /el/python-net/document-structure-and-content-manipulation/document-fields/
  Για να εισαγάγετε ένα πεδίο, μπορείτε να χρησιμοποιήσετε το`FieldBuilder` τάξη. Για παράδειγμα, για να εισαγάγετε ένα πεδίο τρέχουσας ημερομηνίας:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Αυτοματοποίηση δημιουργίας εγγράφων με πεδία
-
-Τα πεδία είναι απαραίτητα για την αυτοματοποιημένη δημιουργία εγγράφων. Μπορείτε να συμπληρώσετε πεδία με δεδομένα από εξωτερικές πηγές:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Ενοποίηση πεδίων με πηγές δεδομένων

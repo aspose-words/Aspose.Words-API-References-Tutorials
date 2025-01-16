@@ -72,14 +72,6 @@ Porovnejte zdrojový dokument s upraveným dokumentem:
 comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
 ```
 
-## Zvýraznění rozdílů
-
-Zdůrazněte rozdíly mezi dokumenty:
-
-```python
-comparison.highlight_changes()
-```
-
 ## Uložení výsledku porovnání
 
 Uložte výsledek porovnání do nového souboru:

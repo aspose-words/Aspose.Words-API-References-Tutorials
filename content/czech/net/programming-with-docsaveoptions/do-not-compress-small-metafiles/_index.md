@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
- Zde inicializujeme a`Document` předmět a použití`DocumentBuilder` k tomu přidat nějaký text. The`Writeln` metoda přidá do dokumentu řádek textu.
+ Zde inicializujeme a`Document` objekt a použití`DocumentBuilder` k tomu přidat nějaký text. The`Writeln` metoda přidá do dokumentu řádek textu.
 
 ## Krok 3: Nakonfigurujte možnosti uložení
 

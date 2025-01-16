@@ -71,7 +71,7 @@ Hier geschieht die eigentliche Aktion. Wir werden das Wort „traurig“ finden 
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-Der`Replace`Methode ist unkompliziert. Wir geben das zu suchende Wort, das Ersatzwort und die Optionen für die Such- und Ersetzungsoperation an.
+ Der`Replace`Methode ist unkompliziert. Wir geben das zu suchende Wort, das Ersatzwort und die Optionen für die Such- und Ersetzungsoperation an.
 
 ## Schritt 5: Speichern Sie das Dokument
 

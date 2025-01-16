@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-그만큼`Document` Aspose.Words의 클래스를 사용하면 Word 파일을 메모리에 로드할 수 있습니다. 파일 이름이 디렉토리의 실제 문서와 일치하는지 확인하세요. 그렇지 않으면 파일을 찾을 수 없음 오류가 발생합니다!
+ 그만큼`Document` Aspose.Words의 클래스를 사용하면 Word 파일을 메모리에 로드할 수 있습니다. 파일 이름이 디렉토리의 실제 문서와 일치하는지 확인하세요. 그렇지 않으면 파일을 찾을 수 없음 오류가 발생합니다!
 
 ## 3단계: API 키 검색
 

@@ -1,6 +1,6 @@
 ---
-title: 文件處理
-linktitle: 文件處理
+title: 文件操作
+linktitle: 文件操作
 second_title: Aspose.Words Java 文件處理 API
 description: 透過我們的綜合教程，了解如何使用 Aspose.Words for Java 有效地操作文件。立即提升您的 Java 文件處理技能！
 type: docs
@@ -41,7 +41,7 @@ Aspose.Words for Java 是一個功能強大且多功能的 API，允許開發人
 
 ## 哪裡可以找到 Aspose.Words Java 教學課程
 
-準備好開始您的文件操作之旅了嗎？您可以存取我們的教程和資源：[Aspose.Words API 文檔](https://reference.aspose.com/words/java/)。無論您是初學者還是經驗豐富的開發人員，我們的逐步教程都適合所有技能水平。
+準備好開始您的文件操作之旅了嗎？您可以存取我們的教學和資源：[Aspose.Words API 文檔](https://reference.aspose.com/words/java/)。無論您是初學者還是經驗豐富的開發人員，我們的逐步教程都適合所有技能水平。
 
 使用 Aspose.Words for Java 進行文件操作對於開發人員和企業來說是一項寶貴的技能。透過我們的教學課程和 Aspose.Words 的強大功能，您可以簡化與文件相關的任務、提高工作效率並輕鬆建立令人驚嘆的文件。
 
@@ -82,14 +82,14 @@ Aspose.Words for Java 是一個功能強大且多功能的 API，允許開發人
 了解如何使用 Aspose.Words for Java 將文件分割為 HTML 頁面。請按照我們的逐步指南進行無縫文件轉換。
 ### [在 Aspose.Words for Java 中使用 DocumentBuilder 新增內容](./adding-content-using-documentbuilder/)
 使用 Aspose.Words for Java 掌握文件建立。新增文字、表格、圖像等的逐步指南。輕鬆建立令人驚嘆的 Word 文件。
-### [在 Aspose.Words for Java 中複製和組合文檔](./cloning-and-combining-documents/)
-了解如何在 Aspose.Words for Java 中複製和合併文件。帶有原始程式碼範例的分步指南。
+### [在 Aspose.Words for Java 中複製和合併文檔](./cloning-and-combining-documents/)
+了解如何在 Aspose.Words for Java 中複製和組合文件。帶有原始程式碼範例的分步指南。
 ### [比較 Aspose.Words for Java 中的文檔](./comparing-documents/)
 了解如何在 Aspose.Words for Java 中比較文檔，這是一個用於高效文檔分析的強大 Java 庫。 
 ### [在 Aspose.Words for Java 中格式化文檔](./formatting-documents/)
 透過我們的綜合指南了解在 Aspose.Words for Java 中格式化文件的技巧。探索強大的功能並提高您的文件處理技能。
 ### [在 Aspose.Words for Java 中連接和附加文檔](./joining-and-appending-documents/)
-了解如何使用 Aspose.Words for Java 輕鬆加入和附加文件。保留格式、管理頁首頁尾等。
+了解如何使用 Aspose.Words for Java 輕鬆加入和追加文件。保留格式、管理頁首頁尾等。
 ### [在 Aspose.Words for Java 中使用文件選項和設置](./using-document-options-and-settings/)
 釋放 Aspose.Words for Java 的強大功能。無縫文件管理的主文件選項和設定。優化、客製化等等。
 ### [在 Aspose.Words for Java 中使用文件屬性](./using-document-properties/)

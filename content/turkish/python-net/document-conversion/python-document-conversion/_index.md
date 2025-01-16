@@ -105,8 +105,6 @@ Python için Aspose.Words, Word ve PDF'in yanı sıra HTML, TXT, EPUB ve daha fa
 
 Aspose.Words, dönüştürülen belgelerin görünümünü özelleştirmenize olanak tanır. Yazı tipi stilleri, renkler, hizalama ve paragraf aralığı gibi biçimlendirme seçenekleri uygulayabilirsiniz.
 
-#### Örnek:
-
 ```python
 # Python code for applying formatting during conversion
 import aspose.words as aw
@@ -128,8 +126,6 @@ doc.save("formatted_output.pdf", aw.SaveFormat.PDF)
 ### Görüntü ve Tabloların İşlenmesi
 
 Aspose.Words, dönüştürme işlemi sırasında resimleri ve tabloları işlemenize olanak tanır. Resimleri çıkarabilir, yeniden boyutlandırabilir ve belgenin yapısını korumak için tabloları düzenleyebilirsiniz.
-
-#### Örnek:
 
 ```python
 # Python code for handling images and tables during conversion
@@ -156,8 +152,6 @@ doc.save("modified_output.pdf", aw.SaveFormat.PDF)
 
 Aspose.Words ile tutarlı yazı tipi oluşturmayı sağlayabilir ve dönüştürülen belgelerin düzenini yönetebilirsiniz. Bu özellik, özellikle farklı biçimler arasında belge tutarlılığını korurken faydalıdır.
 
-#### Örnek:
-
 ```python
 # Python code for managing fonts and layout during conversion
 import aspose.words as aw
@@ -178,8 +172,6 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ### Otomasyon için Python Komut Dosyaları Yazma
 
 Python'un betikleme yetenekleri onu tekrarlayan görevleri otomatikleştirmek için mükemmel bir seçim haline getirir. Toplu belge dönüştürmeyi gerçekleştirmek için Python betikleri yazabilir, zamandan ve emekten tasarruf edebilirsiniz.
-
-#### Örnek:
 
 ```python
 # Python script for batch document conversion
@@ -205,11 +197,7 @@ for filename in input_files:
 
 ### Belgelerin Toplu Dönüştürülmesi
 
-İle
-
- Python ve Aspose.Words'ün gücünü birleştirerek, belgelerin toplu dönüşümünü otomatikleştirebilir, üretkenliği ve verimliliği artırabilirsiniz.
-
-#### Örnek:
+Python ve Aspose.Words'ün gücünü birleştirerek, belgelerin toplu dönüşümünü otomatikleştirebilir, üretkenliği ve verimliliği artırabilirsiniz.
 
 ```python
 # Python script for batch document conversion using Aspose.Words
@@ -238,14 +226,6 @@ for filename in input_files:
     output_filename = filename.replace(file_ext, ".pdf" if file_ext == ".docx" else ".docx")
     doc.save(os.path.join(output_dir, output_filename))
 ```
-## Python için Aspose.Words Kullanmanın Avantajları
-
-Python için Aspose.Words'ün sunduğu birçok avantajdan bazıları şunlardır:
-
-- Güçlü belge dönüştürme yetenekleri
-- Belge düzenleme için zengin özellik seti
-- Python uygulamalarıyla kolay entegrasyon
-- Gelişen bir topluluktan sürekli destek ve güncellemeler
 
 ## Çözüm
 

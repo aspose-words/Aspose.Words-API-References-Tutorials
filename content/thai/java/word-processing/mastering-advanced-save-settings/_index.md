@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /th/java/word-processing/mastering-advanced-save-settings/
 ---
+
 คุณพร้อมที่จะพัฒนาทักษะการประมวลผลเอกสารของคุณไปสู่อีกระดับหรือยัง ในคู่มือฉบับสมบูรณ์นี้ เราจะเจาะลึกถึงการตั้งค่าการบันทึกขั้นสูงสำหรับเอกสารโดยใช้ Aspose.Words for Java ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้น เราจะพาคุณผ่านความซับซ้อนของการจัดการเอกสารด้วย Aspose.Words for Java
 
 ## การแนะนำ
@@ -25,13 +26,13 @@ Aspose.Words สำหรับ Java เป็นไลบรารีที่�
 ```java
 // ตั้งค่ารูปแบบเอกสารเป็น DOCX
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
-// ตั้งค่าการวางแนวหน้าเป็นแนวนอน
+//ตั้งค่าการวางแนวหน้าเป็นแนวนอน
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## การควบคุมระยะขอบหน้า
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 นิ้ว
 pageSetup.setRightMargin(72.0); // 1 นิ้ว
 pageSetup.setTopMargin(36.0); // 0.5 นิ้ว
 pageSetup.setBottomMargin(36.0); // 0.5 นิ้ว
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## การจัดการส่วนหัวและส่วนท้าย
@@ -56,11 +57,11 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 ```java
 // เพิ่มส่วนหัวให้กับหน้าแรก
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## การฝังแบบอักษรสำหรับการดูข้ามแพลตฟอร์ม
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## การปกป้องเอกสารของคุณ
@@ -85,7 +86,7 @@ doc.save("embedded_fonts.docx", SaveFormat.DOCX);
 // ป้องกันเอกสารด้วยรหัสผ่าน
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## การปรับแต่งลายน้ำ
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## การปรับขนาดเอกสารให้เหมาะสม
@@ -111,7 +112,7 @@ doc.save("watermarked_document.docx", SaveFormat.DOCX);
 // ปรับขนาดเอกสารให้เหมาะสม
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## การส่งออกไปยังรูปแบบที่แตกต่างกัน
@@ -121,7 +122,7 @@ doc.save("optimized_document.docx", SaveFormat.DOCX);
 ```java
 // ส่งออกเป็น PDF
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## การสร้างเอกสารอัตโนมัติ
@@ -133,7 +134,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## การทำงานกับข้อมูลเมตาของเอกสาร
@@ -143,9 +144,8 @@ doc.save("automated_document.docx", SaveFormat.DOCX);
 ```java
 // การเข้าถึงและแก้ไขข้อมูลเมตาของเอกสาร
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## การจัดการเวอร์ชันเอกสาร
@@ -153,18 +153,22 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 การกำหนดเวอร์ชันเอกสารเป็นสิ่งสำคัญในสภาพแวดล้อมการทำงานร่วมกัน เรียนรู้วิธีการจัดการเวอร์ชันต่างๆ ของเอกสารอย่างมีประสิทธิภาพ
 
 ```java
-// เปรียบเทียบเวอร์ชันเอกสาร
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+// การเปรียบเทียบเอกสารที่มีการแก้ไขจะทำให้เกิดข้อยกเว้น
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## การเปรียบเทียบเอกสารขั้นสูง
+
+เปรียบเทียบเอกสารอย่างแม่นยำโดยใช้เทคนิคขั้นสูงที่จัดทำโดย Aspose.Words สำหรับ Java
 
 ```java
 // การเปรียบเทียบเอกสารขั้นสูง
@@ -217,7 +221,7 @@ Aspose.Words สำหรับ Java รองรับการส่งออ�
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Aspose.Words สำหรับ Java เหมาะสำหรับการสร้างเอกสารแบบแบตช์หรือไม่
@@ -228,7 +232,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### ฉันจะเปรียบเทียบเอกสาร Word สองฉบับเพื่อดูความแตกต่างได้อย่างไร

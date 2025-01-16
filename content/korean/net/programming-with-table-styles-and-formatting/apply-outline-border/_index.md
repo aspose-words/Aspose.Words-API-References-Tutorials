@@ -17,7 +17,7 @@ url: /ko/net/programming-with-table-styles-and-formatting/apply-outline-border/
 
 1.  Aspose.Words for .NET: Aspose.Words for .NET이 설치되어 있어야 합니다. 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 적합한 개발 환경.
-3. C#에 대한 기본 지식: C#에 대한 기본적인 이해는 튜토리얼을 따라가는 데 도움이 됩니다.
+3. C#에 대한 기본 지식: C#에 대한 기본적인 이해가 튜토리얼을 따라가는 데 도움이 됩니다.
 
 ## 네임스페이스 가져오기
 
@@ -129,4 +129,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx"
  물론입니다! 사용 가능한 모든 색상을 사용할 수 있습니다.`System.Drawing.Color` 수업.
 
 ### 표를 수평으로 가운데 정렬하려면 어떻게 해야 하나요?  
-그만큼`table.Alignment = TableAlignment.Center;` 코드의 줄은 표를 페이지의 수평 중앙에 배치합니다.
+ 그만큼`table.Alignment = TableAlignment.Center;` 코드의 줄은 표를 페이지의 수평 중앙에 배치합니다.

@@ -64,7 +64,7 @@ Les thèmes des documents Word incluent souvent des paramètres pour différents
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
-Le`MajorFonts` La propriété permet d'accéder aux principaux paramètres de police. Dans cet exemple, nous récupérons spécifiquement la police latine utilisée dans le thème. Vous pouvez utiliser un code similaire pour obtenir d'autres polices principales telles que les polices d'Asie de l'Est ou les polices Complex Script.
+ Le`MajorFonts` La propriété permet d'accéder aux principaux paramètres de police. Dans cet exemple, nous récupérons spécifiquement la police latine utilisée dans le thème. Vous pouvez utiliser un code similaire pour obtenir d'autres polices principales telles que les polices d'Asie de l'Est ou les polices Complex Script.
 
 ## Étape 4 : Récupérer les polices mineures
 
@@ -84,7 +84,7 @@ Les thèmes définissent également les différentes couleurs utilisées pour le
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
-Le`Colors` propriété de la`Theme` La classe vous permet de récupérer différents accents de couleur définis dans le thème, vous permettant de gérer et d'appliquer des schémas de couleurs cohérents dans vos documents.
+ Le`Colors` propriété de la`Theme` La classe vous permet de récupérer différents accents de couleur définis dans le thème, vous permettant de gérer et d'appliquer des schémas de couleurs cohérents dans vos documents.
 
 ## Conclusion
 

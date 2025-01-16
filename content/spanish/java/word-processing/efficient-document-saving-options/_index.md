@@ -54,7 +54,7 @@ veces, puede que necesites guardar cada página de tu documento como una imagen.
 
 ```java
 // Código Java para guardar un documento como imágenes
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Establecer la resolución (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

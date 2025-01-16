@@ -60,7 +60,7 @@ doc1.appendDocument(doc2, Document.ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 ## Steg 4: Spara det kombinerade dokumentet
 
-Slutligen, spara det kombinerade dokumentet till en fil.
+Spara slutligen det kombinerade dokumentet till en fil.
 
 ```java
 // Spara det kombinerade dokumentet

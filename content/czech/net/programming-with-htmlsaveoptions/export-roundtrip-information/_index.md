@@ -82,4 +82,4 @@ Ano, můžete jej používat s dočasnou licencí, kterou můžete získat[zde](
  Můžete získat podporu od komunity Aspose[zde](https://forum.aspose.com/c/words/8).
 
 ### Je možné zachovat formátování při převodu dokumentů Wordu do HTML?
-Ano, pomocí vlastnosti ExportRoundtripInformation v HtmlSaveOptions můžete během převodu zachovat veškeré formátování.
+Ano, pomocí vlastnosti ExportRoundtripInformation v HtmlSaveOptions můžete zachovat veškeré formátování během převodu.

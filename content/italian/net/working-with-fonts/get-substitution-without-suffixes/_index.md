@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 In questa classe:
-- IL`Warning`Il metodo cattura gli avvisi relativi alla sostituzione dei font.
-- IL`FontWarnings` la raccolta memorizza questi avvisi per ulteriori controlli o registrazioni.
+-  IL`Warning`Il metodo cattura gli avvisi relativi alla sostituzione dei font.
+-  IL`FontWarnings` la raccolta memorizza questi avvisi per ulteriori controlli o registrazioni.
 
 ## Conclusione
 

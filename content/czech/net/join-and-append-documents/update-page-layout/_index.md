@@ -15,7 +15,7 @@ Ahoj! Pokud jste někdy pracovali s dokumenty Wordu programově, víte, jak důl
 
 Než začneme, ujistěte se, že máte připraveno následující:
 
-1.  Aspose.Words for .NET: Tato knihovna je nezbytná pro programovou manipulaci s dokumenty Wordu. Pokud jste to ještě neudělali, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Tato knihovna je nezbytná pro programovou manipulaci s dokumenty Wordu. Pokud jste to ještě neudělali, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
    
 2. Visual Studio: K zápisu a spuštění kódu .NET budete potřebovat IDE. Visual Studio je oblíbenou volbou.
 

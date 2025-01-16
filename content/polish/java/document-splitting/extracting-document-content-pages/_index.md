@@ -40,7 +40,7 @@ public class DocumentExtractor {
 
 ### Dodawanie Aspose.Words do projektu
 
- Aby dodać Aspose.Words do swojego projektu, skopiuj pobrane pliki JAR do katalogu swojego projektu`lib` folder i dodaj je do swojej ścieżki klas. Teraz jesteś gotowy, aby zanurzyć się w świecie ekstrakcji dokumentów!
+Aby dodać Aspose.Words do swojego projektu, skopiuj pobrane pliki JAR do katalogu swojego projektu`lib` folder i dodaj je do swojej ścieżki klas. Teraz jesteś gotowy, aby zanurzyć się w świecie ekstrakcji dokumentów!
 
 ## Ładowanie i analizowanie dokumentów
 
@@ -64,7 +64,7 @@ DocumentVisitor visitor = new DocumentVisitor();
 // Przejrzyj dokument
 doc.accept(visitor);
 
-//Wyodrębniona treść jest teraz dostępna dla odwiedzających
+// Wyodrębniona treść jest teraz dostępna dla odwiedzających
 String extractedText = visitor.getText();
 ```
 
@@ -90,7 +90,7 @@ String pageText = doc.extractText(pageInfo);
 Aby wyodrębnić zawartość ze wszystkich stron, możesz użyć prostej pętli:
 
 ```java
-// Pobierz całkowitą liczbę stron w dokumencie
+//Pobierz całkowitą liczbę stron w dokumencie
 int pageCount = doc.getPageCount();
 
 for (int i = 0; i < pageCount; i++) {
@@ -120,7 +120,7 @@ builder.write("This text is bold.");
 Po wyodrębnieniu i zmodyfikowaniu zawartości możesz zapisać ją w nowym dokumencie:
 
 ```java
-//Zapisz wyodrębnioną zawartość w nowym dokumencie
+// Zapisz wyodrębnioną zawartość w nowym dokumencie
 doc.save("extracted_content.docx");
 ```
 

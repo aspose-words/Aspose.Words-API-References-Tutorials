@@ -112,4 +112,4 @@ Absolument ! Vous pouvez créer un script pour automatiser ce processus pour plu
 
 ### Où puis-je obtenir de l’aide si je rencontre des problèmes ?
 
-Le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) est un excellent endroit pour obtenir de l'aide et trouver des solutions aux problèmes courants.
+ Le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) est un excellent endroit pour obtenir de l'aide et trouver des solutions aux problèmes courants.

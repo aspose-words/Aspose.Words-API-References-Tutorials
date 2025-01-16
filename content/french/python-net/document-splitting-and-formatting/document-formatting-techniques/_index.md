@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Application des styles et des tailles de police
-
-Améliorez la lisibilité et l'attrait visuel de votre document en appliquant des styles et des tailles de police. Utilisez le code suivant pour modifier le style et la taille de police d'un paragraphe :
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Formatage des paragraphes et des titres
+## Formatage des paragraphes
 
 Pour structurer efficacement votre document, la mise en forme des paragraphes et des titres est essentielle. Réalisez-le en utilisant le code ci-dessous :
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Travailler avec des listes et des puces
 
 Les listes et les puces permettent d'organiser le contenu et d'apporter de la clarté. Mettez-les en œuvre à l'aide d'Aspose.Words :
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Gestion de la mise en page et des marges
+## Gestion de la mise en page
 
 Contrôlez la mise en page et les marges pour une présentation optimale :
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Application de styles et de thèmes

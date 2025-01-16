@@ -40,8 +40,6 @@ Pelajari cara memanfaatkan fitur komentar di Dokumen Word menggunakan Aspose.Wor
 Pelajari cara menangani kolom dan data dalam dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan contoh kode untuk konten dinamis, otomatisasi, dan banyak lagi. 
 ### [Memahami Font dan Gaya Teks dalam Dokumen Word](./document-fonts/)
 Jelajahi dunia font dan gaya teks dalam dokumen Word. Pelajari cara meningkatkan keterbacaan dan daya tarik visual menggunakan Aspose.Words untuk Python. Panduan lengkap dengan contoh langkah demi langkah.
-### [Menjelajahi Catatan Kaki dan Catatan Akhir dalam Dokumen Word](./document-footnotes-endnotes/)
-Jelajahi cara menggunakan catatan kaki dan catatan akhir secara efektif dalam dokumen Word menggunakan Aspose.Words untuk Python. Pelajari cara menambahkan, menyesuaikan, dan mengelola elemen-elemen ini secara terprogram. 
 ### [Menguasai Bidang Formulir dan Pengambilan Data dalam Dokumen Word](./document-form-fields/)
 Kuasai seni membuat dan mengelola kolom formulir di dokumen Word dengan Aspose.Words untuk Python. Pelajari cara mengambil data secara efisien dan meningkatkan keterlibatan pengguna. 
 ### [Memanipulasi Header dan Footer dalam Dokumen Word](./document-headers-footers/)
@@ -52,8 +50,6 @@ Pelajari cara mengelola pemenggalan kata dan alur teks dalam dokumen Word menggu
 Pelajari cara membuat dan mengelola daftar dalam dokumen Word menggunakan Aspose.Words Python API. Panduan langkah demi langkah dengan kode sumber untuk pemformatan daftar, penyesuaian, penyusunan, dan banyak lagi. 
 ### [Memanfaatkan Pemformatan Markdown dalam Dokumen Word](./document-markdown/)
 Pelajari cara mengintegrasikan format Markdown ke dalam dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan contoh kode untuk pembuatan konten yang dinamis dan menarik secara visual. 
-### [Memahami dan Menavigasi Node Dokumen](./document-nodes/)
-Pelajari cara memanipulasi dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah ini mencakup pemuatan, pemformatan, tabel, gambar, dan banyak lagi. Tingkatkan keterampilan pemrosesan dokumen Anda hari ini!
 ### [Menanamkan Objek OLE dan Kontrol ActiveX dalam Dokumen Word](./document-ole-objects-active-x/)
  Pelajari cara menyematkan objek OLE dan kontrol ActiveX dalam dokumen Word menggunakan Aspose.Words untuk Python. Buat dokumen interaktif dan dinamis dengan mudah.
 ### [Memformat Paragraf dan Teks dalam Dokumen Word](./document-paragraphs/)
@@ -65,4 +61,4 @@ Pelajari cara mengelola bagian dan tata letak dokumen dengan Aspose.Words untuk 
 ### [Meningkatkan Konten Visual dengan Kotak Teks di Dokumen Word](./document-textboxes/)
 Tingkatkan visual dokumen menggunakan Aspose.Words Python! Pelajari langkah demi langkah cara membuat dan menyesuaikan kotak teks dalam dokumen Word. Tingkatkan tata letak, pemformatan, dan gaya konten untuk dokumen yang menarik.
 ### [Membuka Kunci Otomatisasi Tingkat Lanjut dengan Makro VBA di Dokumen Word](./document-vba-macros/)
-Buka kunci otomatisasi tingkat lanjut dalam dokumen Word menggunakan API Python Aspose.Words dan makro VBA. Pelajari langkah demi langkah dengan kode sumber dan Tanya Jawab Umum. Tingkatkan produktivitas sekarang. Akses di[Link].
+ Buka kunci otomatisasi tingkat lanjut dalam dokumen Word menggunakan API Python Aspose.Words dan makro VBA. Pelajari langkah demi langkah dengan kode sumber dan Tanya Jawab Umum. Tingkatkan produktivitas sekarang. Akses di[Link].

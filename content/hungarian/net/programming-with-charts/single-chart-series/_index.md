@@ -112,7 +112,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi Word-dokumentumok programozott létrehozását, szerkesztését, konvertálását és kezelését.
 
 ### Használhatom ingyenesen az Aspose.Words-t?
- Igen, kezdheti a[ingyenes próbaverzió](https://releases.aspose.com/).
+Igen, kezdheti a[ingyenes próbaverzió](https://releases.aspose.com/).
 
 ### Hogyan kaphatok támogatást az Aspose.Words számára?
  Támogatást kaphat az Aspose közösségtől[fórum](https://forum.aspose.com/c/words/8).

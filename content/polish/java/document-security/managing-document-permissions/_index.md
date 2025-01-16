@@ -16,7 +16,7 @@ dzisiejszym cyfrowym świecie zarządzanie dokumentami jest krytycznym aspektem 
 
 Zanim przejdziemy do zarządzania uprawnieniami do dokumentów, zacznijmy od skonfigurowania Aspose.Words dla Java. Aby rozpocząć, wykonaj następujące kroki:
 
-1.  Pobierz Aspose.Words dla Java: Odwiedź[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) aby pobrać najnowszą wersję Aspose.Words dla Java.
+1.  Pobierz Aspose.Words dla Java: Odwiedź[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)aby pobrać najnowszą wersję Aspose.Words dla Java.
 
 2. Zainstaluj Aspose.Words dla Java: Po pobraniu biblioteki postępuj zgodnie z instrukcjami instalacji, aby skonfigurować ją w środowisku programistycznym Java.
 
@@ -52,21 +52,12 @@ Oto przykładowy fragment kodu Java umożliwiający ustawienie uprawnień dokume
 // Załaduj dokument
 Document doc = new Document("sample.docx");
 
-// Zdefiniuj kontrolę dostępu
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Zastosuj ochronę dokumentu
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Zapisz dokument
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Często zadawane pytania (FAQ)
+## Najczęściej zadawane pytania
 
-## Jak mogę usunąć ochronę dokumentu?
+### Jak mogę usunąć ochronę dokumentu?
 
 Aby usunąć ochronę dokumentu, po prostu otwórz chroniony dokument i jeśli jest chroniony hasłem, podaj prawidłowe hasło. Następnie użyj Aspose.Words for Java, aby usunąć ochronę w następujący sposób:
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Czy mogę ustawić uprawnienia dla konkretnych użytkowników?
+### Czy mogę ustawić uprawnienia dla konkretnych użytkowników?
 
 Tak, Aspose.Words for Java pozwala ustawić uprawnienia dla konkretnych użytkowników lub grup. Możesz zdefiniować, kto może uzyskać dostęp do dokumentu i go edytować.
 
-## Czy możliwe jest zaszyfrowanie dokumentu przy użyciu wielu haseł?
+### Czy możliwe jest zaszyfrowanie dokumentu przy użyciu wielu haseł?
 
 Nie, Aspose.Words for Java obsługuje szyfrowanie jednym hasłem. Możesz ustawić hasło, aby chronić dokument.
 
-## Jak mogę sprawdzić uprawnienia dokumentu?
+### Jak mogę sprawdzić uprawnienia dokumentu?
 
 Za pomocą Aspose.Words for Java można sprawdzić uprawnienia dokumentu, badając jego ustawienia ochrony i opcje kontroli dostępu.
 
-## Czy mogę zautomatyzować zarządzanie uprawnieniami dokumentów?
+### Czy mogę zautomatyzować zarządzanie uprawnieniami dokumentów?
 
 Oczywiście! Możesz zintegrować Aspose.Words for Java ze swoimi aplikacjami, aby zautomatyzować zarządzanie uprawnieniami do dokumentów, dzięki czemu stanie się ono bezproblemową częścią Twojego przepływu pracy nad dokumentami.
 
-## Co się stanie, jeśli zapomnę hasła do dokumentu?
+### Co się stanie, jeśli zapomnę hasła do dokumentu?
 
 Jeśli zapomnisz hasła do dokumentu, nie ma możliwości jego odzyskania. Upewnij się, że przechowujesz swoje hasła w bezpiecznym miejscu.
 

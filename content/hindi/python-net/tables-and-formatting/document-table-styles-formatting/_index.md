@@ -23,7 +23,7 @@ url: /hi/python-net/tables-and-formatting/document-table-styles-formatting/
 2. लाइब्रेरी आयात करें: निम्नलिखित आयात कथन का उपयोग करके Aspose.Words लाइब्रेरी को अपनी पायथन स्क्रिप्ट में आयात करें:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. दस्तावेज़ लोड करें: Aspose.Words API का उपयोग करके कोई मौजूदा दस्तावेज़ लोड करें या नया दस्तावेज़ बनाएँ।
@@ -35,7 +35,7 @@ url: /hi/python-net/tables-and-formatting/document-table-styles-formatting/
 1.  एक तालिका बनाएं: का उपयोग करें`DocumentBuilder` क्लास का उपयोग करके एक नई तालिका बनाएं और पंक्तियों और स्तंभों की संख्या निर्दिष्ट करें।
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ url: /hi/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. सेल पैडिंग: बेहतर स्पेसिंग के लिए सेल में पैडिंग जोड़ें।
@@ -80,32 +80,8 @@ url: /hi/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Aspose.Words के साथ टेबल्स को स्टाइल करना
-
-पायथन के लिए Aspose.Words आपकी तालिकाओं को दृष्टिगत रूप से आकर्षक बनाने के लिए अनेक स्टाइलिंग विकल्प प्रदान करता है:
-
-1. तालिका शैलियाँ: पेशेवर रूप प्राप्त करने के लिए पूर्वनिर्धारित तालिका शैलियाँ लागू करें।
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. सेल पृष्ठभूमि रंग: विशिष्ट डेटा को हाइलाइट करने के लिए सेल पृष्ठभूमि रंग बदलें।
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. फ़ॉन्ट स्वरूपण: बेहतर पठनीयता के लिए फ़ॉन्ट शैली, आकार और रंग को अनुकूलित करें।
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## जटिल लेआउट के लिए कोशिकाओं को मर्ज करना और विभाजित करना
@@ -115,30 +91,14 @@ url: /hi/python-net/tables-and-formatting/document-table-styles-formatting/
 1. कोशिकाओं को मर्ज करें: एकाधिक कोशिकाओं को मर्ज करके एक बड़ी एकल कोशिका बनाएं।
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. विभाजित कोशिकाएँ: कोशिकाओं को उनके अलग-अलग घटकों में विभाजित करें।
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## पंक्ति और स्तंभ की ऊंचाई और चौड़ाई समायोजित करना
-
-संतुलित तालिका लेआउट के लिए पंक्ति और स्तंभ आयामों को ठीक करें:
-
-1. पंक्ति की ऊंचाई समायोजित करें: सामग्री के आधार पर पंक्ति की ऊंचाई संशोधित करें।
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. कॉलम की चौड़ाई समायोजित करें: सामग्री को फिट करने के लिए कॉलम की चौड़ाई को स्वचालित रूप से समायोजित करें।
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## तालिकाओं में बॉर्डर और छायांकन जोड़ना
@@ -148,13 +108,13 @@ url: /hi/python-net/tables-and-formatting/document-table-styles-formatting/
 1. बॉर्डर: तालिकाओं और कक्षों के लिए बॉर्डर अनुकूलित करें.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. छायांकन: दृश्य रूप से आकर्षक प्रभाव के लिए कोशिकाओं पर छायांकन लागू करें।
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## सेल सामग्री और संरेखण के साथ कार्य करना
@@ -171,7 +131,7 @@ url: /hi/python-net/tables-and-formatting/document-table-styles-formatting/
 2. पाठ संरेखण: सेल पाठ को आवश्यकतानुसार संरेखित करें।
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## तालिका शीर्षलेख और पादलेख को संभालना
@@ -188,26 +148,10 @@ url: /hi/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## टेबल लेआउट को स्वचालित रूप से समायोजित करना
-
-सुनिश्चित करें कि आपकी तालिका लेआउट सामग्री के आधार पर स्वचालित रूप से समायोजित हो जाए:
-
-1. विंडो में स्वतः फ़िट: तालिका को पृष्ठ की चौड़ाई में फ़िट होने दें.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. कोशिकाओं का स्वतः आकार परिवर्तन: सामग्री को समायोजित करने के लिए कोशिकाओं का स्वतः आकार परिवर्तन सक्षम करें।
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## तालिकाओं को विभिन्न प्रारूपों में निर्यात करना
 
 एक बार आपकी तालिका तैयार हो जाए, तो आप इसे विभिन्न प्रारूपों में निर्यात कर सकते हैं, जैसे PDF या DOCX:
@@ -215,26 +159,20 @@ url: /hi/python-net/tables-and-formatting/document-table-styles-formatting/
 1. PDF के रूप में सहेजें: तालिका के साथ दस्तावेज़ को PDF फ़ाइल के रूप में सहेजें.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. DOCX के रूप में सहेजें: दस्तावेज़ को DOCX फ़ाइल के रूप में सहेजें.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## प्रभावी टेबल प्रबंधन के लिए समस्या निवारण और सुझाव
-
-- यदि तालिकाएं विकृत दिखाई देती हैं, तो गलत स्तंभ चौड़ाई या पंक्ति ऊंचाई की जांच करें।
-- एकरूपता सुनिश्चित करने के लिए विभिन्न प्रारूपों में तालिका रेंडरिंग का परीक्षण करें।
-- जटिल लेआउट के लिए, सेल विलय और विभाजन की योजना सावधानीपूर्वक बनाएं।
-
+	
 ## निष्कर्ष
 
 Aspose.Words for Python दस्तावेज़ तालिकाएँ बनाने, स्टाइल करने और फ़ॉर्मेट करने के लिए एक व्यापक टूलकिट प्रदान करता है। इस लेख में बताए गए चरणों का पालन करके, आप अपने दस्तावेज़ों में तालिकाओं को प्रभावी ढंग से प्रबंधित कर सकते हैं, उनकी उपस्थिति को अनुकूलित कर सकते हैं और उन्हें विभिन्न प्रारूपों में निर्यात कर सकते हैं। अपने दस्तावेज़ प्रस्तुतियों को बेहतर बनाने और अपने पाठकों को स्पष्ट, आकर्षक जानकारी प्रदान करने के लिए Aspose.Words की शक्ति का उपयोग करें।
 
-## पूछे जाने वाले प्रश्न
+## अक्सर पूछे जाने वाले प्रश्न
 
 ### मैं Python के लिए Aspose.Words कैसे स्थापित करूं?
 

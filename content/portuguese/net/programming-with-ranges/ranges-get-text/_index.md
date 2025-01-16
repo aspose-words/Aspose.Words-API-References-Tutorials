@@ -67,7 +67,7 @@ Extrair texto
 string text = doc.Range.Text;
 ```
 
-O`Range.Text` property fornece todo o texto contido dentro do intervalo do documento. Isso inclui texto de todas as seções, cabeçalhos, rodapés e corpo principal.
+ O`Range.Text` property fornece todo o texto contido dentro do intervalo do documento. Isso inclui texto de todas as seções, cabeçalhos, rodapés e corpo principal.
 
 ## Etapa 4: Exibir o texto extraído
 

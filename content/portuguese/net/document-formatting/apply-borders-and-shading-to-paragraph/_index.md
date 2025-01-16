@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-O`Document` objeto representa todo o nosso documento do Word e o`DocumentBuilder` nos ajuda a adicionar e formatar conteúdo.
+ O`Document` objeto representa todo o nosso documento do Word e o`DocumentBuilder` nos ajuda a adicionar e formatar conteúdo.
 
 ## Etapa 3: Definir bordas de parágrafo
 

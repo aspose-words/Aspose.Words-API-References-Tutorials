@@ -85,7 +85,7 @@ Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 Ujistěte se, že názvy dokumentů odpovídají těm, které chcete použít, jinak se dostanete do chyb!
 
-## Krok 3: Získejte svůj klíč API
+## Krok 3: Získejte svůj API klíč
 
 Nyní, když jsou vaše dokumenty načteny, je čas vytáhnout klíč OpenAI API. Načtete jej z proměnných prostředí, aby byl bezpečný:
 ```csharp

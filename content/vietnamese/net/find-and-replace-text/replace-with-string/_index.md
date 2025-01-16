@@ -71,7 +71,7 @@ Chúng tôi đã thêm một dòng văn bản đơn giản mà chúng tôi sẽ 
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-Các`Replace`Phương pháp này rất đơn giản. Chúng tôi chỉ định từ cần tìm, từ thay thế và các tùy chọn cho thao tác tìm và thay thế.
+ Các`Replace`Phương pháp này rất đơn giản. Chúng tôi chỉ định từ cần tìm, từ thay thế và các tùy chọn cho thao tác tìm và thay thế.
 
 ## Bước 5: Lưu tài liệu
 

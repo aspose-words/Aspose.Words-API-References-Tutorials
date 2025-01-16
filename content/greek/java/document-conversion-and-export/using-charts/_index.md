@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Αλλάξτε τον άξονα Χ ώστε να είναι κατηγορία αντί για ημερομηνία.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Μετράται σε μονάδες απεικόνισης του άξονα Υ (εκατοντάδες).
+xAxis.setCrossesAt(3.0); //Μετράται σε μονάδες απεικόνισης του άξονα Υ (εκατοντάδες).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### Πώς μπορώ να μορφοποιήσω ετικέτες δεδομένων με προσαρμοσμένες μορφές αριθμών;
 
- Μπορείτε να μορφοποιήσετε ετικέτες δεδομένων μεταβαίνοντας στο`DataLabels` ιδιότητες μιας σειράς και ορίζοντας τον επιθυμητό κωδικό μορφής χρησιμοποιώντας`getNumberFormat().setFormatCode()`.
+Μπορείτε να μορφοποιήσετε ετικέτες δεδομένων μεταβαίνοντας στο`DataLabels` ιδιότητες μιας σειράς και ορίζοντας τον επιθυμητό κωδικό μορφής χρησιμοποιώντας`getNumberFormat().setFormatCode()`.
 
 ### Πώς μπορώ να προσαρμόσω τις ιδιότητες άξονα σε ένα γράφημα;
 
@@ -139,7 +139,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### Πώς μπορώ να δημιουργήσω άλλους τύπους γραφημάτων, όπως γραφήματα διασποράς ή περιοχής;
 
-Μπορείτε να δημιουργήσετε διάφορους τύπους γραφημάτων καθορίζοντας τον κατάλληλο`ChartType` κατά την εισαγωγή του γραφήματος χρησιμοποιώντας`builder.insertChart(ChartType.TYPE, width, height)`.
+ Μπορείτε να δημιουργήσετε διάφορους τύπους γραφημάτων καθορίζοντας τον κατάλληλο`ChartType` κατά την εισαγωγή του γραφήματος χρησιμοποιώντας`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Πώς μπορώ να κρύψω έναν άξονα γραφήματος;
 

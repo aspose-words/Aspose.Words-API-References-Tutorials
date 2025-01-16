@@ -16,7 +16,7 @@ Aspose.Words para Java é uma API baseada em Java que capacita desenvolvedores a
 ## Aplicando estilos e fontes: o básico
 
 ### Começando
- Para começar, você precisará configurar seu ambiente de desenvolvimento Java e baixar a biblioteca Aspose.Words for Java. Você pode encontrar o link para download[aqui](https://releases.aspose.com/words/java/). Certifique-se de incluir a biblioteca em seu projeto.
+Para começar, você precisará configurar seu ambiente de desenvolvimento Java e baixar a biblioteca Aspose.Words for Java. Você pode encontrar o link para download[aqui](https://releases.aspose.com/words/java/). Certifique-se de incluir a biblioteca em seu projeto.
 
 ### Criando um documento
 Vamos começar criando um novo documento usando Aspose.Words para Java:
@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Combine vários estilos para formatação complexa de documentos:
 
 ```java
-//Combine estilos para um visual único
+// Combine estilos para um visual único
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ O Aspose.Words para Java fornece recursos poderosos de formatação condicional.
 Com certeza! O Aspose.Words para Java suporta uma ampla variedade de fontes e caracteres de várias linguagens e scripts.
 
 ### Como posso adicionar hiperlinks ao texto com estilos específicos?
- Para adicionar hiperlinks ao texto, use o`FieldHyperlink`classe em combinação com estilos para obter a formatação desejada.
+ Para adicionar hiperlinks ao texto, use o`FieldHyperlink` classe em combinação com estilos para obter a formatação desejada.
 
 ### Há alguma limitação quanto ao tamanho ou à complexidade do documento?
 O Aspose.Words para Java pode manipular documentos de tamanhos e complexidades variados. No entanto, documentos extremamente grandes podem exigir recursos de memória adicionais.

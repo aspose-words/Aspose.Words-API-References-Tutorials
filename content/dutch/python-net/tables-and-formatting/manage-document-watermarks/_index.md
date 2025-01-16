@@ -1,6 +1,6 @@
 ---
-title: Watermerken maken en opmaken voor een esthetisch document
-linktitle: Watermerken maken en opmaken voor een esthetisch document
+title: Watermerken maken en opmaken voor een esthetische documentweergave
+linktitle: Watermerken maken en opmaken voor een esthetische documentweergave
 second_title: Aspose.Words Python-API voor documentbeheer
 description: Leer hoe u watermerken in documenten kunt maken en formatteren met Aspose.Words voor Python. Stapsgewijze handleiding met broncode voor het toevoegen van tekst- en afbeeldingswatermerken. Verbeter de esthetiek van uw document met deze tutorial.
 type: docs

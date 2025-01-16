@@ -25,7 +25,7 @@ Mielőtt elkezdené a kódolást, győződjön meg arról, hogy a következő el
 Kezdjük egy új Java projekt létrehozásával. Használhatja kedvenc Integrált Fejlesztési Környezetét (IDE), vagy a projektet parancssori eszközökkel építheti fel.
 
 ```java
-// Java kód minta új projekt létrehozásához
+// Java-kód minta új projekt létrehozásához
 public class DocumentToImageConversion {
     public static void main(String[] args) {
         // A kódod ide kerül
@@ -48,7 +48,7 @@ Az Aspose.Words különféle képmentési lehetőségeket biztosít a kimeneti f
 
 ```java
 // A képmentési beállítások inicializálása
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## 4. lépés: Rendelje meg a dokumentumoldalakat képként

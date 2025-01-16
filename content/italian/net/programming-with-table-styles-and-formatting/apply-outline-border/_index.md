@@ -129,4 +129,4 @@ Con queste competenze, puoi migliorare la presentazione visiva delle tue tabelle
  Assolutamente! Puoi usare qualsiasi colore disponibile nel`System.Drawing.Color` classe.
 
 ### Come posso allineare al centro la tabella orizzontalmente?  
-IL`table.Alignment = TableAlignment.Center;` la riga nel codice centra la tabella orizzontalmente sulla pagina.
+ IL`table.Alignment = TableAlignment.Center;` la riga nel codice centra la tabella orizzontalmente sulla pagina.

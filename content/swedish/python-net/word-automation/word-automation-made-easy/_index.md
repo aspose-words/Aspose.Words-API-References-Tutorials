@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /sv/python-net/word-automation/word-automation-made-easy/
 ---
-
 ## Introduktion
 
 dagens snabba värld har automatisering av uppgifter blivit avgörande för att förbättra effektiviteten och produktiviteten. En sådan uppgift är Word Automation, där vi kan skapa, manipulera och bearbeta Word-dokument programmatiskt. I denna steg-för-steg-handledning kommer vi att utforska hur du enkelt kan uppnå Word Automation med Aspose.Words för Python, ett kraftfullt bibliotek som tillhandahåller ett brett utbud av funktioner för ordbehandling och dokumentmanipulation.
@@ -67,14 +66,27 @@ font.bold = True
 Tabeller är ett avgörande element i Word-dokument, och Aspose.Words gör det enkelt att arbeta med dem.
 
 ```python
-# Add a table to the document
-table = doc.get_child_nodes(aw.NodeType.TABLE, True).add()
-
-# Add rows and cells to the table
-table.ensure_minimum()
-for row in table.rows:
-    for cell in row.cells:
-        cell.get_first_paragraph().get_runs().add("Cell Text")
+builder = aw.DocumentBuilder(doc=doc)
+table = builder.start_table()
+builder.insert_cell()
+builder.write('City')
+builder.insert_cell()
+builder.write('Country')
+builder.end_row()
+builder.insert_cell()
+builder.write('London')
+builder.insert_cell()
+builder.write('U.K.')
+builder.end_table()
+# Use the first row's "RowFormat" property to modify the formatting
+# of the contents of all cells in this row.
+row_format = table.first_row.row_format
+row_format.height = 25
+row_format.borders.get_by_border_type(aw.BorderType.BOTTOM).color = aspose.pydrawing.Color.red
+# Use the "CellFormat" property of the first cell in the last row to modify the formatting of that cell's contents.
+cell_format = table.last_row.first_cell.cell_format
+cell_format.width = 100
+cell_format.shading.background_pattern_color = aspose.pydrawing.Color.orange
 ```
 
 ## Infoga bilder och former
@@ -107,12 +119,12 @@ När vi har arbetat klart med dokumentet kan vi spara det i olika format.
 
 ```python
 # Save the document to a file
-doc.save("output.docx", aw.SaveFormat.DOCX)
+doc.save("output.docx")
 ```
 
 ## Avancerade ordautomatiseringsfunktioner
 
-Aspose.Words tillhandahåller avancerade funktioner såsom sammankoppling av brev, dokumentkryptering och arbete med bokmärken, hyperlänkar och kommentarer.
+Aspose.Words tillhandahåller avancerade funktioner såsom sammanslagning, dokumentkryptering och arbete med bokmärken, hyperlänkar och kommentarer.
 
 ## Automatisera dokumenthantering
 
@@ -122,7 +134,7 @@ Förutom att skapa och formatera dokument kan Aspose.Words automatisera dokument
 
 Word Automation med Aspose.Words för Python öppnar upp en värld av möjligheter inom dokumentgenerering och manipulation. Den här handledningen har täckt de grundläggande stegen för att komma igång, men det finns så mycket mer att utforska. Omfamna kraften i Word Automation och effektivisera dina dokumentarbetsflöden med lätthet!
 
-## Vanliga frågor
+## FAQ's
 
 ### Är Aspose.Words kompatibel med andra plattformar som Java eller .NET?
 Ja, Aspose.Words är tillgängligt för flera plattformar, inklusive Java och .NET, vilket gör att utvecklare kan använda det på sitt föredragna programmeringsspråk.
@@ -130,8 +142,8 @@ Ja, Aspose.Words är tillgängligt för flera plattformar, inklusive Java och .N
 ### Kan jag konvertera Word-dokument till PDF med Aspose.Words?
 Absolut! Aspose.Words stöder olika format, inklusive DOCX till PDF-konvertering.
 
-### Är Aspose.Words lämpligt för att automatisera storskaliga dokumentbehandlingsuppgifter?
-Ja, Aspose.Words är designat för att hantera stora volymer dokumentbehandling effektivt.
+### Är Aspose.Words lämpligt för att automatisera storskaliga dokumentbearbetningsuppgifter?
+Ja, Aspose.Words är designat för att hantera stora volymer dokumentbearbetning effektivt.
 
 ### Stöder Aspose.Words molnbaserad dokumentmanipulation?
 Ja, Aspose.Words kan användas tillsammans med molnplattformar, vilket gör den idealisk för molnbaserade applikationer.

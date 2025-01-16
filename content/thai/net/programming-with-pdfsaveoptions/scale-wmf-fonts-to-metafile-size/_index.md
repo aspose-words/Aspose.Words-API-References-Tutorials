@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-การ`MetafileRenderingOptions` คลาสนี้มีตัวเลือกสำหรับวิธีการเรนเดอร์เมตาไฟล์ (เช่น WMF) โดยการตั้งค่า`ScaleWmfFontsToMetafileSize` ถึง`false`คุณกำลังสั่ง Aspose.Words ไม่ให้ปรับขนาดฟอนต์ตามขนาดเมตาไฟล์ ซึ่งจะช่วยลดขนาด PDF โดยรวมได้
+ การ`MetafileRenderingOptions` คลาสนี้มีตัวเลือกสำหรับวิธีการเรนเดอร์เมตาไฟล์ (เช่น WMF) โดยการตั้งค่า`ScaleWmfFontsToMetafileSize` ถึง`false`คุณกำลังสั่ง Aspose.Words ไม่ให้ปรับขนาดฟอนต์ตามขนาดเมตาไฟล์ ซึ่งจะช่วยลดขนาด PDF โดยรวมได้
 
 ## ขั้นตอนที่ 3: ตั้งค่าตัวเลือกการบันทึก PDF
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-การ`PdfSaveOptions` คลาสนี้ช่วยให้คุณระบุการตั้งค่าต่างๆ สำหรับการบันทึกเอกสารเป็น PDF โดยกำหนดค่าที่กำหนดค่าไว้ก่อนหน้านี้`MetafileRenderingOptions` ไปที่`MetafileRenderingOptions` ทรัพย์สินของ`PdfSaveOptions`คุณแน่ใจว่าเอกสารได้รับการบันทึกตามการตั้งค่าการเรนเดอร์เมตาไฟล์ที่คุณต้องการ
+ การ`PdfSaveOptions` คลาสนี้ช่วยให้คุณระบุการตั้งค่าต่างๆ สำหรับการบันทึกเอกสารเป็น PDF โดยกำหนดค่าที่กำหนดค่าไว้ก่อนหน้านี้`MetafileRenderingOptions` ไปที่`MetafileRenderingOptions` ทรัพย์สินของ`PdfSaveOptions`คุณแน่ใจว่าเอกสารได้รับการบันทึกตามการตั้งค่าการเรนเดอร์เมตาไฟล์ที่คุณต้องการ
 
 ## ขั้นตอนที่ 4: บันทึกเอกสารเป็น PDF
 

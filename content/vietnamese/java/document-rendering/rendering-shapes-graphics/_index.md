@@ -7,7 +7,6 @@ type: docs
 weight: 12
 url: /vi/java/document-rendering/rendering-shapes-graphics/
 ---
-
 ## Giới thiệu
 
 Trong kỷ nguyên số này, tài liệu thường cần nhiều hơn là chỉ là văn bản thuần túy. Thêm hình dạng và đồ họa có thể truyền tải thông tin hiệu quả hơn và làm cho tài liệu của bạn hấp dẫn về mặt thị giác. Aspose.Words for Java là một API Java mạnh mẽ cho phép bạn thao tác với tài liệu Word, bao gồm thêm và tùy chỉnh hình dạng và đồ họa.

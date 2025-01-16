@@ -56,7 +56,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## Krok 4: Otevřete a nastavte možnosti Endnote
 
- Chcete-li přizpůsobit možnosti koncových poznámek, musíme získat přístup k`EndnoteOptions` vlastnictví`Document` třída. Poté můžeme nastavit různé možnosti, jako je pravidlo restartu a pozice.
+ Chcete-li přizpůsobit možnosti koncových poznámek, musíme získat přístup k`EndnoteOptions` vlastnictvím`Document` třída. Poté můžeme nastavit různé možnosti, jako je pravidlo restartu a pozice.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -91,4 +91,4 @@ Vysvětlivky jsou odkazy nebo poznámky umístěné na konci oddílu nebo dokume
  Volby koncových poznámek, jako je číslování, umístění a pravidla restartování, můžete přizpůsobit pomocí`EndnoteOptions` třídy v Aspose.Words pro .NET.
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
- Podrobná dokumentace je k dispozici na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) strana.
+ Podrobná dokumentace je k dispozici na[Aspose.Words pro .NET dokumentaci](https://reference.aspose.com/words/net/) strana.

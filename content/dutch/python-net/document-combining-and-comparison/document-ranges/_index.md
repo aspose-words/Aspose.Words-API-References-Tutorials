@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Documenten samenvoegen
-
-Documenten naadloos combineren is een waardevolle vaardigheid. Door documenten te navigeren, kunnen we ze efficiënt samenvoegen:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Documenten splitsen
 
 Soms moeten we een document opsplitsen in kleinere delen. Navigeren door het document helpt ons dit te bereiken:
@@ -117,8 +109,8 @@ Kop- en voetteksten vereisen vaak een aparte behandeling. Door deze regio's te n
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

@@ -59,7 +59,7 @@ Aspose.Words stöder ett brett utbud av dokumentformat inklusive DOCX, DOC, PDF,
 Ja, Aspose.Words tillhandahåller robusta API:er för att manipulera tabeller, bilder, textformatering och mer i dokument.
 
 ### Var kan jag hitta detaljerad dokumentation för Aspose.Words för .NET?
-Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
+ Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
 
 ### Hur kan jag få en tillfällig licens för Aspose.Words för .NET?
 Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).

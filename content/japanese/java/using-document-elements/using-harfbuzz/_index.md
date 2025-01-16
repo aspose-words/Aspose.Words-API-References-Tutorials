@@ -35,7 +35,7 @@ String dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "SampleDocument.docx");
 ```
 
-## ステップ3: HarfBuzzでテキストシェーピングを構成する
+## ステップ 3: HarfBuzz でテキスト シェーピングを構成する
 
 HarfBuzz テキストシェーピングを有効にするには、ドキュメントのレイアウト オプションでテキスト シェーパー ファクトリを設定する必要があります。
 

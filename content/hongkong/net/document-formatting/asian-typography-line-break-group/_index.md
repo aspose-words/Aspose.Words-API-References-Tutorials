@@ -96,8 +96,8 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 ### 我可以將這些設定應用於多個段落嗎？
 是的，您可以循環瀏覽文件中的所有段落並根據需要套用這些設定。
 
-### 我需要使用 Visual Studio 來實現此目的嗎？
+### 我需要使用 Visual Studio 嗎？
 雖然建議使用 Visual Studio，但您可以使用任何支援 C# 和 .NET 的開發環境。
 
-### 在哪裡可以找到更多關於 Aspose.Words for .NET 的資源？
+### 在哪裡可以找到更多有關 Aspose.Words for .NET 的資源？
 您可以找到全面的文檔[這裡](https://reference.aspose.com/words/net/) ，對於任何疑問，支援論壇非常有幫助[這裡](https://forum.aspose.com/c/words/8).

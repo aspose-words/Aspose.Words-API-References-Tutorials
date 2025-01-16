@@ -18,7 +18,7 @@ url: /hi/python-net/document-options-and-settings/document-functionality-web-ext
 
 - पायथन प्रोग्रामिंग की बुनियादी समझ।
 -  पायथन एपीआई संदर्भ के लिए Aspose.Words (उपलब्ध)[यहाँ](https://reference.aspose.com/words/python-net/).
-- पायथन लाइब्रेरी के लिए Aspose.Words तक पहुंच (डाउनलोड करें)[यहाँ](https://releases.aspose.com/words/python/).
+-  पायथन लाइब्रेरी के लिए Aspose.Words तक पहुंच (डाउनलोड करें)[यहाँ](https://releases.aspose.com/words/python/).
 
 ## पायथन के लिए Aspose.Words सेट अप करना
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. अपनी पायथन स्क्रिप्ट में लाइब्रेरी आयात करें।
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## नया दस्तावेज़ बनाना
@@ -42,7 +42,7 @@ import aspose.words
 आइए Aspose.Words का उपयोग करके एक नया दस्तावेज़ बनाकर शुरुआत करें:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## दस्तावेज़ में सामग्री जोड़ना
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 आप Aspose.Words का उपयोग करके आसानी से दस्तावेज़ में सामग्री जोड़ सकते हैं:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ builder.writeln("Hello, world!")
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## वेब एक्सटेंशन सम्मिलित करना
-
-दस्तावेज़ में वेब एक्सटेंशन सम्मिलित करने के लिए, इन चरणों का पालन करें:
-
-1. HTML, CSS और JavaScript का उपयोग करके वेब एक्सटेंशन बनाएं।
-2. वेब एक्सटेंशन को बेस64-एन्कोडेड स्ट्रिंग में परिवर्तित करें।
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. दस्तावेज़ में वेब एक्सटेंशन डालें:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## वेब एक्सटेंशन के साथ इंटरैक्ट करना
@@ -98,7 +78,7 @@ builder.insert_node(extension_node)
 वेब एक्सटेंशन को शामिल करने और आवश्यक संशोधन करने के बाद, आप Aspose.Words द्वारा समर्थित विभिन्न प्रारूपों का उपयोग करके दस्तावेज़ को सहेज सकते हैं:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## प्रदर्शन अनुकूलन के लिए सुझाव

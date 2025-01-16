@@ -30,7 +30,7 @@ using Aspose.Words.Notes;
 
 ## 第 1 步：載入文檔
 
-首先，讓我們載入要設定尾註選項的文件。我們將使用`Document`Aspose.Words 庫中的類別來完成此任務。
+首先，讓我們載入要設定尾註選項的文件。我們將使用`Document`Aspose.Words 庫中的類別來完成此操作。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

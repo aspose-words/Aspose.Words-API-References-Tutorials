@@ -47,7 +47,7 @@ Documentmanipulatie met Aspose.Words voor Java is een waardevolle vaardigheid vo
 
 Begin vandaag nog met uw leertraject en ontdek de eindeloze mogelijkheden van documentmanipulatie met Aspose.Words voor Java.
 
-## Zelfstudies voor documentmanipulatie
+## Zelfstudies over documentmanipulatie
 ### [Opruimopties gebruiken in Aspose.Words voor Java](./using-cleanup-options/)
 Verbeter de duidelijkheid van documenten met Aspose.Words voor Java Cleanup Options. Leer hoe u lege alinea's, ongebruikte regio's en meer verwijdert.
 ### [Velden gebruiken in Aspose.Words voor Java](./using-fields/)

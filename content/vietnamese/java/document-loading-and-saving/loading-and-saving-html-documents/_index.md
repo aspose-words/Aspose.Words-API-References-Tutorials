@@ -1,6 +1,6 @@
 ---
-title: Tải và lưu tài liệu HTML với Aspose.Words cho Java
-linktitle: Tải và Lưu Tài liệu HTML với
+title: Tải và Lưu Tài liệu HTML
+linktitle: Tải và Lưu Tài liệu HTML
 second_title: API xử lý tài liệu Java Aspose.Words
 description: Tìm hiểu cách tải và lưu tài liệu HTML trong Java bằng Aspose.Words for Java. Hướng dẫn từng bước với các ví dụ mã để tích hợp tài liệu liền mạch.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Bây giờ chúng ta đã tải HTML vào một`Document`, chúng ta có thể lưu nó dưới dạng tài liệu Word. Hãy lưu nó ở định dạng DOCX:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Mã này lưu`Document` dưới dạng tệp DOCX, đây là định dạng phổ biến cho các tài liệu Word.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Phần kết luận
@@ -79,7 +79,7 @@ Trong bài viết này, chúng ta đã tìm hiểu cách tải và lưu tài li�
 
 ### Làm thế nào để cài đặt Aspose.Words cho Java?
 
- Aspose.Words cho Java có thể được tải xuống từ[đây](https://releases.aspose.com/words/java/). Thực hiện theo hướng dẫn cài đặt được cung cấp trên trang web để thiết lập nó vào dự án Java của bạn.
+ Aspose.Words cho Java có thể được tải xuống từ[đây](https://releases.aspose.com/words/java/)Thực hiện theo hướng dẫn cài đặt được cung cấp trên trang web để thiết lập nó vào dự án Java của bạn.
 
 ### Tôi có thể tải các tài liệu HTML phức tạp bằng Aspose.Words không?
 
@@ -95,4 +95,4 @@ Chắc chắn rồi! Aspose.Words là giải pháp mạnh mẽ được các doa
 
 ### Tôi có thể tìm thêm tài liệu và ví dụ về Aspose.Words cho Java ở đâu?
 
- Bạn có thể tìm thấy tài liệu chi tiết, ví dụ mã và hướng dẫn trên trang web tài liệu Aspose.Words for Java:[Tài liệu Aspose.Words cho Java](https://reference.aspose.com/words/java/).
+Bạn có thể tìm thấy tài liệu chi tiết, ví dụ mã và hướng dẫn trên trang web tài liệu Aspose.Words for Java:[Tài liệu Aspose.Words cho Java](https://reference.aspose.com/words/java/).

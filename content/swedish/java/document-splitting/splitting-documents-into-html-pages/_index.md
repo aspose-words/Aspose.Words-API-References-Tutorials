@@ -8,7 +8,7 @@ weight: 11
 url: /sv/java/document-splitting/splitting-documents-into-html-pages/
 ---
 
-den här omfattande guiden kommer vi att utforska hur man delar upp dokument i HTML-sidor med Aspose.Words för Java. Aspose.Words är ett kraftfullt Java API som låter utvecklare arbeta med Word-dokument programmatiskt. Vi kommer att gå igenom processen steg för steg och tillhandahålla källkodsexempel längs vägen.
+I den här omfattande guiden kommer vi att utforska hur man delar upp dokument i HTML-sidor med Aspose.Words för Java. Aspose.Words är ett kraftfullt Java API som låter utvecklare arbeta med Word-dokument programmatiskt. Vi kommer att gå igenom processen steg för steg och tillhandahålla källkodsexempel längs vägen.
 
 ## Förutsättningar
 
@@ -24,11 +24,11 @@ I dagens digitala värld är konvertering av Word-dokument till HTML-sidor ett v
 
 ## Att sätta upp projektet
 
-För att börja, skapa ett Java-projekt och lägg till Aspose.Words for Java-biblioteket till ditt projekts klassväg. Du kan göra detta genom att inkludera JAR-filerna du laddade ner tidigare.
+Börja med att skapa ett Java-projekt och lägga till Aspose.Words for Java-biblioteket till ditt projekts klassväg. Du kan göra detta genom att inkludera JAR-filerna du laddade ner tidigare.
 
 ## Laddar ett Word-dokument
 
-I din Java-kod måste du först ladda Word-dokumentet du vill dela. Här är ett exempel på hur man gör:
+din Java-kod måste du först ladda Word-dokumentet du vill dela. Här är ett exempel på hur man gör:
 
 ```java
 Document doc = new Document("your-document.docx");
@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-Denna kod delar upp dokumentet baserat på sidbrytningar och lagrar varje sida i`pages` lista.
+ Denna kod delar upp dokumentet baserat på sidbrytningar och lagrar varje sida i`pages` lista.
 
 ## Sparar som HTML
 

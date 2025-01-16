@@ -21,7 +21,7 @@ Mielőtt belevágnánk a kódolási részbe, győződjünk meg arról, hogy mind
 
 ## Névterek importálása
 
-kódolás megkezdése előtt importálnia kell a szükséges névtereket a C# projektbe. Íme, hogyan kell csinálni:
+A kódolás megkezdése előtt importálnia kell a szükséges névtereket a C# projektbe. Íme, hogyan kell csinálni:
 
 ```csharp
 using Aspose.Words;
@@ -61,7 +61,7 @@ A dokumentum betöltése után folytathatjuk a szöveg törlését egy adott tar
 2.  Tartomány törlése: Használja a`Range.Delete` metódussal törölheti az összes szöveget ebben a szakaszban.
 
 ```csharp
-//Törölje a szöveget a dokumentum első részében
+// Törölje a szöveget a dokumentum első részében
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Az Aspose.Words for .NET egy Word dokumentumok feldolgozására szolgáló oszt�
 
 ### Törölhetek szöveget egy adott bekezdésből a szakasz helyett?
 
-Igen, törölhet szöveget egy adott bekezdésből, ha eléri a kívánt bekezdést, és használja a`Range.Delete` módszer.
+ Igen, törölhet szöveget egy adott bekezdésből, ha eléri a kívánt bekezdést, és használja a`Range.Delete` módszer.
 
 ### Lehetséges a szöveg feltételes törlése?
 

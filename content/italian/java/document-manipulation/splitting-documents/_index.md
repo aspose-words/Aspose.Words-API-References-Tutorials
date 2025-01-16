@@ -26,7 +26,7 @@ doc.save("Your Directory Path" + "SplitDocument.ByHeadingsHtml.html", options);
 
 ## Suddivisione dei documenti per sezioni
 
-Un altro modo per dividere i documenti è per sezioni. Le sezioni in genere rappresentano parti diverse di un documento e la divisione per sezioni può essere utile per creare documenti più piccoli e gestibili.
+Un altro modo per dividere i documenti è per sezioni. Le sezioni rappresentano in genere parti diverse di un documento e la divisione per sezioni può essere utile per creare documenti più piccoli e gestibili.
 
 ```java
 // Codice Java per dividere un documento in sezioni utilizzando Aspose.Words per Java

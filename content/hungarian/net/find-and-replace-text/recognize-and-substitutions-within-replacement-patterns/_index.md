@@ -2,7 +2,7 @@
 title: Felismerés és helyettesítések a helyettesítési mintákon belül
 linktitle: Felismerés és helyettesítések a helyettesítési mintákon belül
 second_title: Aspose.Words Document Processing API
-description: Az Aspose.Words for .NET segítségével megtudhatja, hogyan lehet szöveget felismerni és helyettesíteni a helyettesítési mintákon belül. Útmutató lépésről lépésre részletes példákkal.
+description: Az Aspose.Words for .NET segítségével megtudhatja, hogyan lehet szöveget felismerni és helyettesíteni a helyettesítési mintákon belül. Lépésről lépésre útmutató részletes példákkal.
 type: docs
 weight: 10
 url: /hu/net/find-and-replace-text/recognize-and-substitutions-within-replacement-patterns/
@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-A`Document` objektum az Aspose.Words magja. A teljes Word dokumentumot képviseli.
+ A`Document` objektum az Aspose.Words magja. A teljes Word dokumentumot képviseli.
 
 ## 2. lépés: Szöveg hozzáadása a dokumentumhoz
 
@@ -50,7 +50,7 @@ Ezután adjunk hozzá szöveget a dokumentumhoz. Ez a szöveg lesz a csereművel
 builder.Write("Jason give money to Paul.");
 ```
 
-A`DocumentBuilder` osztály egy hatékony eszköz szöveg és egyéb elemek hozzáadásához a dokumentumhoz.
+ A`DocumentBuilder` osztály egy hatékony eszköz szöveg és egyéb elemek hozzáadásához a dokumentumhoz.
 
 ## 3. lépés: Határozza meg a Regex mintát
 
@@ -70,7 +70,7 @@ Az Aspose.Words lehetővé teszi a helyettesítések használatát a cserék sor
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
-A`FindReplaceOptions` osztály különféle lehetőségeket kínál a keresési és csereműveletek testreszabásához.
+ A`FindReplaceOptions` osztály különféle lehetőségeket kínál a keresési és csereműveletek testreszabásához.
 
 ## 5. lépés: Hajtsa végre a cserét
 

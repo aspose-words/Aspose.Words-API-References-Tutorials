@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## Szöveg módosítása
-
-A szöveget a futások vagy bekezdések szövegének közvetlen beállításával módosíthatja:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## Munka a formázással
 
 Az Aspose.Words lehetővé teszi a formázási stílusokkal való munkát:

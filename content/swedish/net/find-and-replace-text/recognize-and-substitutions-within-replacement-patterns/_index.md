@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-De`Document` objektet är kärnan i Aspose.Words. Det representerar hela Word-dokumentet.
+ De`Document` objektet är kärnan i Aspose.Words. Det representerar hela Word-dokumentet.
 
 ## Steg 2: Lägg till text i dokumentet
 
@@ -50,7 +50,7 @@ Låt oss sedan lägga till lite text i dokumentet. Denna text kommer att vara m�
 builder.Write("Jason give money to Paul.");
 ```
 
-De`DocumentBuilder` class är ett kraftfullt verktyg för att lägga till text och andra element i ditt dokument.
+ De`DocumentBuilder` class är ett kraftfullt verktyg för att lägga till text och andra element i ditt dokument.
 
 ## Steg 3: Definiera Regex-mönstret
 
@@ -70,7 +70,7 @@ Aspose.Words låter dig använda ersättningar i dina ersättare. Du måste stä
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
-De`FindReplaceOptions` class erbjuder olika alternativ för att anpassa dina sök- och ersättningsoperationer.
+ De`FindReplaceOptions` class erbjuder olika alternativ för att anpassa dina sök- och ersättningsoperationer.
 
 ## Steg 5: Utför bytet
 
@@ -108,7 +108,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek för att arbeta med Word-dok
 Ja, Aspose.Words stöder reguljära uttryck för sök- och ersätt-operationer, vilket möjliggör komplexa textmanipulationer.
 
 ### Vad är substitutionsmönster i regex?
- Substitutionsmönster, som`$1` och`$2`, hänvisar till fångade grupper i regexmatchningen. De används för att ordna om eller återanvända delar av den matchade texten i ersättningssträngen.
+ Substitutionsmönster, som`$1` och`$2`, hänvisar till fångade grupper i regex-matchningen. De används för att ordna om eller återanvända delar av den matchade texten i ersättningssträngen.
 
 ### Hur får jag support för Aspose.Words för .NET?
  Du kan få stöd från Asposes communityforum[här](https://forum.aspose.com/c/words/8).

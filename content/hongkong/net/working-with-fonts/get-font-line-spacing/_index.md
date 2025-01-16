@@ -2,7 +2,7 @@
 title: 取得字體行距
 linktitle: 取得字體行距
 second_title: Aspose.Words 文件處理 API
-description: 透過此逐步教學，了解如何使用 Aspose.Words for .NET 取得字體行距。非常適合開發人員。
+description: 透過此逐步教學，了解如何使用 Aspose.Words for .NET 取得字體行間距。非常適合開發人員。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/get-font-line-spacing/

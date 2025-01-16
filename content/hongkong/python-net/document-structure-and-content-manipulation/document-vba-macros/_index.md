@@ -20,7 +20,7 @@ url: /zh-hant/python-net/document-structure-and-content-manipulation/document-vb
 要開始這趟自動化之旅，您需要安裝 Aspose.Words for Python。您可以從[阿斯普斯網站](https://releases.aspose.com/words/python/)。安裝後，您可以啟動 Python 專案並匯入必要的模組。
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## 了解 VBA 巨集及其作用
@@ -46,7 +46,7 @@ End Sub
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ VBA 巨集與 Aspose.Words Python 集成，為資料提取和操作打開了大�
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content

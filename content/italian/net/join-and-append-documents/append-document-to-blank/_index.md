@@ -122,7 +122,7 @@ Sì, puoi allegare più documenti chiamando ripetutamente il`AppendDocument` met
 
 ### Cosa succede se il documento sorgente ha una formattazione diversa?
 
-IL`ImportFormatMode.KeepSourceFormatting` garantisce che la formattazione del documento sorgente venga mantenuta quando viene aggiunto.
+ IL`ImportFormatMode.KeepSourceFormatting` garantisce che la formattazione del documento sorgente venga mantenuta quando viene aggiunto.
 
 ### Ho bisogno di una licenza per utilizzare Aspose.Words?
 

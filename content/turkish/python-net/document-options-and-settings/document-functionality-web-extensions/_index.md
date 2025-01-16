@@ -18,7 +18,7 @@ Teknik detaylara dalmadan önce, aşağıdaki ön koşulların mevcut olduğunda
 
 - Python programlamanın temel bilgisi.
 -  Aspose.Words for Python API referansı (buradan edinilebilir)[Burada](https://reference.aspose.com/words/python-net/).
-- Aspose.Words for Python kütüphanesine erişim (indirme[Burada](https://releases.aspose.com/words/python/).
+-  Aspose.Words for Python kütüphanesine erişim (indirme[Burada](https://releases.aspose.com/words/python/).
 
 ## Python için Aspose.Words Kurulumu
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Kütüphaneyi Python betiğinize aktarın.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Yeni Bir Belge Oluşturma
@@ -42,7 +42,7 @@ import aspose.words
 Aspose.Words kullanarak yeni bir belge oluşturarak başlayalım:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Belgeye İçerik Ekleme
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Aspose.Words'ü kullanarak belgeye kolayca içerik ekleyebilirsiniz:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ Stil ve biçimlendirme, belge sunumunda önemli bir rol oynar. Aspose.Words, sti
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Web Uzantılarını Ekleme
-
-Belgeye bir web uzantısı eklemek için şu adımları izleyin:
-
-1. HTML, CSS ve JavaScript kullanarak web uzantısını oluşturun.
-2. Web uzantısını base64 kodlu bir dizeye dönüştürün.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Web uzantısını belgeye ekleyin:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Web Uzantılarıyla Etkileşim
@@ -98,7 +78,7 @@ Web uzantıları belge içeriğini dinamik olarak değiştirebilir. Örneğin, d
 Web uzantılarını ekledikten ve gerekli değişiklikleri yaptıktan sonra, belgeyi Aspose.Words tarafından desteklenen çeşitli biçimlerde kaydedebilirsiniz:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Performans Optimizasyonu için İpuçları

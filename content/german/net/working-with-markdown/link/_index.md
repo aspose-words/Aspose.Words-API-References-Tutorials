@@ -45,7 +45,7 @@ Lassen Sie uns den Prozess des Einfügens von Hyperlinks in ein Word-Dokument mi
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Der`DocumentBuilder` Klasse ist ein vielseitiges Tool, mit dem Sie das Dokument erstellen und ändern können.
+ Der`DocumentBuilder` Klasse ist ein vielseitiges Tool, mit dem Sie das Dokument erstellen und ändern können.
 
 ## Schritt 2: Hyperlink einfügen
 

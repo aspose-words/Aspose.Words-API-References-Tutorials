@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/java/document-styling/applying-styles-fonts/
 ---
-świecie przetwarzania dokumentów Aspose.Words for Java wyróżnia się jako potężne narzędzie do manipulowania dokumentami i formatowania ich. Jeśli chcesz tworzyć dokumenty z niestandardowymi stylami i czcionkami, trafiłeś we właściwe miejsce. Ten kompleksowy przewodnik przeprowadzi Cię przez proces krok po kroku, wraz z przykładami kodu źródłowego. Pod koniec tego artykułu będziesz mieć wiedzę, aby z łatwością stosować style i czcionki w swoich dokumentach.
+W świecie przetwarzania dokumentów Aspose.Words for Java wyróżnia się jako potężne narzędzie do manipulowania dokumentami i formatowania ich. Jeśli chcesz tworzyć dokumenty z niestandardowymi stylami i czcionkami, trafiłeś we właściwe miejsce. Ten kompleksowy przewodnik przeprowadzi Cię przez proces krok po kroku, wraz z przykładami kodu źródłowego. Pod koniec tego artykułu będziesz mieć wiedzę, aby z łatwością stosować style i czcionki w swoich dokumentach.
 
 ## Wstęp
 
@@ -16,7 +16,7 @@ Aspose.Words for Java to oparty na Javie interfejs API, który umożliwia progra
 ## Stosowanie stylów i czcionek: podstawy
 
 ### Pierwsze kroki
- Na początek musisz skonfigurować środowisko programistyczne Java i pobrać bibliotekę Aspose.Words for Java. Link do pobrania znajdziesz tutaj[Tutaj](https://releases.aspose.com/words/java/). Upewnij się, że biblioteka została uwzględniona w Twoim projekcie.
+Na początek musisz skonfigurować środowisko programistyczne Java i pobrać bibliotekę Aspose.Words for Java. Link do pobrania znajdziesz tutaj[Tutaj](https://releases.aspose.com/words/java/). Upewnij się, że biblioteka została uwzględniona w Twoim projekcie.
 
 ### Tworzenie dokumentu
 Zacznijmy od utworzenia nowego dokumentu przy użyciu Aspose.Words dla Java:
@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Łączenie wielu stylów w celu tworzenia skomplikowanego formatowania dokumentów:
 
 ```java
-//Łącz style, aby uzyskać niepowtarzalny wygląd
+// Łącz style, aby uzyskać niepowtarzalny wygląd
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Aspose.Words for Java zapewnia potężne możliwości formatowania warunkowego. 
 Oczywiście! Aspose.Words for Java obsługuje szeroki zakres czcionek i znaków z różnych języków i skryptów.
 
 ### Jak mogę dodać hiperłącza do tekstu przy użyciu określonych stylów?
- Aby dodać hiperłącza do tekstu, użyj`FieldHyperlink`klasę w połączeniu ze stylami w celu uzyskania pożądanego formatowania.
+ Aby dodać hiperłącza do tekstu, użyj`FieldHyperlink` klasę w połączeniu ze stylami w celu uzyskania pożądanego formatowania.
 
 ### Czy istnieją jakieś ograniczenia co do rozmiaru lub złożoności dokumentu?
 Aspose.Words for Java może obsługiwać dokumenty o różnych rozmiarach i złożoności. Jednak bardzo duże dokumenty mogą wymagać dodatkowych zasobów pamięci.

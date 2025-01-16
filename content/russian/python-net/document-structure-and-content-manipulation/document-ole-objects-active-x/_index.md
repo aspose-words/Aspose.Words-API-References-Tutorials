@@ -19,11 +19,7 @@ url: /ru/python-net/document-structure-and-content-manipulation/document-ole-obj
 - Установлена библиотека Aspose.Words для Python
 - Базовое понимание структуры документа Word
 
-## Внедрение объектов OLE
-
-Объекты OLE позволяют вам легко интегрировать внешние файлы, такие как электронные таблицы или презентации, в ваши документы Word. Выполните следующие шаги для внедрения объекта OLE:
-
-### Шаг 1: Добавление необходимых библиотек
+## Шаг 1: Добавление необходимых библиотек
 
 Начните с импорта необходимых модулей из библиотеки Aspose.Words и любых других зависимостей:
 
@@ -31,7 +27,7 @@ url: /ru/python-net/document-structure-and-content-manipulation/document-ole-obj
 import aspose.words as aw
 ```
 
-### Шаг 2: Создание документа Word
+## Шаг 2: Создание документа Word
 
 Создайте новый документ Word с помощью Aspose.Words для Python:
 
@@ -39,42 +35,16 @@ import aspose.words as aw
 doc = aw.Document()
 ```
 
-### Шаг 3: Вставка объекта OLE
+## Шаг 3: Вставка объекта OLE
 
 Теперь вы можете вставить объект OLE в ваш документ. Например, давайте встроим таблицу Excel:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## Встраивание элементов управления ActiveX
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", True, True, None)
 
-Элементы управления ActiveX привносят интерактивность в ваши документы, позволяя пользователям взаимодействовать с внедренным содержимым. Выполните следующие шаги для внедрения элемента управления ActiveX:
-
-### Шаг 1: Добавление необходимых библиотек
-
-Как и в случае с объектами OLE, начните с импорта необходимых модулей:
-
-```python
-import aspose.words as aw
-```
-
-### Шаг 2: Создание документа Word
-
-Создайте новый документ Word:
-
-```python
-doc = aw.Document()
-```
-
-### Шаг 3: Вставка элемента управления ActiveX
-
-Допустим, вы хотите встроить мультимедийный проигрыватель. Вот как это можно сделать:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Повышение интерактивности и функциональности

@@ -17,16 +17,16 @@ Formuliervelden zijn interactieve elementen in een document waarmee gebruikers g
 
 Voordat we ons verdiepen in het maken en beheersen van formuliervelden, stellen we eerst onze omgeving in en maken we kennis met Aspose.Words voor Python. Volg deze stappen om te beginnen:
 
-1. **Install Aspose.Words:** Begin met het installeren van de Aspose.Words voor Python-bibliotheek met behulp van de volgende pip-opdracht:
+1. Installeer Aspose.Words: Begin met het installeren van de Aspose.Words voor Python-bibliotheek met behulp van de volgende pip-opdracht:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Importeer de bibliotheek in uw Python-script om de functionaliteiten ervan te gaan gebruiken.
+2. Bibliotheek importeren: importeer de bibliotheek in uw Python-script om de functionaliteiten ervan te gaan gebruiken.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Nu alles is ingesteld, gaan we verder met de kernconcepten voor het maken en beheren van formuliervelden.
@@ -41,7 +41,7 @@ Tekstinvoervelden stellen gebruikers in staat om tekst in te voeren. Om een teks
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Selectievakjes en keuzerondjes
@@ -50,12 +50,12 @@ Selectievakjes en keuzerondjes worden gebruikt voor meerkeuzeselecties. Zo maakt
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Keuzelijsten
@@ -64,7 +64,7 @@ Dropdownlijsten bieden gebruikers een selectie aan opties. Maak er een zoals dez
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Datumkiezers
@@ -73,7 +73,7 @@ Met datumkiezers kunnen gebruikers gemakkelijk datums selecteren. Zo maakt u er 
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Eigenschappen van formuliervelden instellen
@@ -122,7 +122,7 @@ Tekstinvoervelden zijn veelzijdig en worden vaak gebruikt voor het vastleggen va
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Zodra het veld is gemaakt, kunt u de eigenschappen ervan instellen, zoals naam, standaardwaarde en tijdelijke tekst. Laten we eens kijken hoe u dat doet:
@@ -150,14 +150,14 @@ Om een selectievakjeformulierveld te maken, gebruikt u
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Voor keuzerondjes kunt u het vormtype OLE_OBJECT gebruiken:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Nadat u deze velden hebt gemaakt, kunt u hun eigenschappen aanpassen, zoals de naam, de standaardselectie en de labeltekst:
@@ -183,7 +183,7 @@ Dropdownlijsten zijn handig voor scenario's waarin gebruikers een optie moeten k
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Nadat u de vervolgkeuzelijst hebt gemaakt, kunt u de lijst met opties opgeven die beschikbaar zijn voor gebruikers:
@@ -211,7 +211,7 @@ Date pickers vereenvoudigen het proces van het vastleggen van data van gebruiker
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Nadat u de datumkiezer hebt gemaakt, kunt u de eigenschappen ervan instellen, zoals de naam en de standaarddatum:
@@ -228,11 +228,7 @@ Datumkiezers verbeteren de gebruikerservaring bij het vastleggen van datums en z
 
 ## Conclusie
 
-Het beheersen van formuliervelden en data capture in Word-documenten is een waardevolle vaardigheid die u in staat stelt om interactieve en efficiënte documenten voor dataverzameling te maken. Aspose.Words voor Python biedt een uitgebreide set tools voor het maken, aanpassen en extraheren van data uit formuliervelden. Van eenvoudige tekstinvoervelden tot complexe berekeningen en voorwaardelijke opmaak, de mogelijkheden zijn enorm.
-
 In deze gids hebben we de basisprincipes van formuliervelden, typen formuliervelden, het instellen van eigenschappen en het aanpassen van hun gedrag onderzocht. We hebben ook best practices voor formulierontwerp besproken en inzichten geboden in het optimaliseren van documentformulieren voor zoekmachines.
-
-Door de kracht van Aspose.Words voor Python te benutten, kunt u documenten maken die niet alleen effectief gegevens vastleggen, maar ook de betrokkenheid van gebruikers vergroten en workflows voor gegevensverwerking stroomlijnen. Nu bent u klaar om uw reis te beginnen om een meester te worden in formuliervelden en gegevensvastlegging in Word-documenten.
 
 ## Veelgestelde vragen
 

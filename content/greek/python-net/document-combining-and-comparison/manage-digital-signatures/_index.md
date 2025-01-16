@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /el/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## Εισαγωγή στις Ψηφιακές Υπογραφές
 
 Οι ψηφιακές υπογραφές χρησιμεύουν ως ηλεκτρονικά ισοδύναμα χειρόγραφων υπογραφών. Παρέχουν έναν τρόπο επαλήθευσης της γνησιότητας, της ακεραιότητας και της προέλευσης των ηλεκτρονικών εγγράφων. Όταν ένα έγγραφο υπογράφεται ψηφιακά, δημιουργείται ένας κρυπτογραφικός κατακερματισμός με βάση το περιεχόμενο του εγγράφου. Αυτός ο κατακερματισμός κρυπτογραφείται στη συνέχεια χρησιμοποιώντας το ιδιωτικό κλειδί του υπογράφοντος, δημιουργώντας την ψηφιακή υπογραφή. Οποιοσδήποτε έχει το αντίστοιχο δημόσιο κλειδί μπορεί να επαληθεύσει την υπογραφή και να εξακριβώσει τη γνησιότητα του εγγράφου.
@@ -25,7 +24,7 @@ url: /el/python-net/document-combining-and-comparison/manage-digital-signatures/
 2. Εισαγωγή των απαιτούμενων μονάδων: Εισαγάγετε τις απαραίτητες λειτουργικές μονάδες στο σενάριο Python σας:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## Φόρτωση και πρόσβαση σε έγγραφα
@@ -33,7 +32,7 @@ url: /el/python-net/document-combining-and-comparison/manage-digital-signatures/
 Πριν προσθέσετε ή επαληθεύσετε ψηφιακές υπογραφές, πρέπει να φορτώσετε το έγγραφο χρησιμοποιώντας το Aspose.Words:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## Προσθήκη ψηφιακών υπογραφών σε έγγραφα
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 Για να προσθέσετε μια ψηφιακή υπογραφή σε ένα έγγραφο, θα χρειαστείτε ένα ψηφιακό πιστοποιητικό:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 Τώρα, υπογράψτε το έγγραφο:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## Επαλήθευση Ψηφιακών Υπογραφών
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## Αφαίρεση ψηφιακών υπογραφών
-
-Για να αφαιρέσετε μια ψηφιακή υπογραφή από ένα έγγραφο:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## Διασφάλιση της γνησιότητας των εγγράφων
-
-Οι ψηφιακές υπογραφές διασφαλίζουν τη γνησιότητα του εγγράφου επιβεβαιώνοντας την πηγή και την ακεραιότητα του εγγράφου. Προστατεύουν από παραβιάσεις και μη εξουσιοδοτημένες τροποποιήσεις.
-
 ## Προσαρμογή της εμφάνισης ψηφιακής υπογραφής
 
 Μπορείτε να προσαρμόσετε την εμφάνιση των ψηφιακών υπογραφών:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## Σύναψη

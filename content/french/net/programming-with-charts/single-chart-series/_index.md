@@ -68,7 +68,7 @@ series1.Name = "Chart Series Name 2";
 
 ## Étape 5 : Lisser les lignes
 
-Vous souhaitez que ces lignes soient lisses et épurées ? Réalisons cela en utilisant les splines Catmull-Rom.
+Vous souhaitez que ces lignes soient lisses et épurées ? Réalisons cela en utilisant les splines Catmull-Rom.
 
 ```csharp
 series0.Smooth = true;
@@ -112,7 +112,7 @@ Et voilà ! Vous avez réussi à personnaliser une série de graphiques dans un 
 Aspose.Words pour .NET est une bibliothèque puissante qui vous permet de créer, modifier, convertir et manipuler des documents Word par programmation.
 
 ### Puis-je utiliser Aspose.Words gratuitement ?
- Oui, vous pouvez commencer avec un[essai gratuit](https://releases.aspose.com/).
+Oui, vous pouvez commencer avec un[essai gratuit](https://releases.aspose.com/).
 
 ### Comment puis-je obtenir de l'aide pour Aspose.Words ?
  Vous pouvez obtenir du soutien de la communauté Aspose sur leur[forum](https://forum.aspose.com/c/words/8).

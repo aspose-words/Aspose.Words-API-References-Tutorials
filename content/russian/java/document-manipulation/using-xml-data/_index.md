@@ -2,7 +2,7 @@
 title: Использование XML-данных в Aspose.Words для Java
 linktitle: Использование XML-данных
 second_title: API обработки документов Java Aspose.Words
-description: Откройте для себя мощь Aspose.Words для Java. Изучите обработку XML-данных, почтовые рассылки и синтаксис Mustache с помощью пошаговых руководств.
+description: Откройте для себя мощь Aspose.Words для Java. Изучите обработку XML-данных, Mail Merge и синтаксис Mustache с помощью пошаговых руководств.
 type: docs
 weight: 12
 url: /ru/java/document-manipulation/using-xml-data/
@@ -75,4 +75,4 @@ doc.save("Your Directory Path" + "MustacheSyntaxUsingDataSet.docx");
 
 ### Что такое синтаксис Mustache и когда его следует использовать?
 
- Синтаксис Mustache позволяет вам форматировать поля слияния почты более гибко. Используйте`doc.getMailMerge().setUseNonMergeFields(true)` для включения синтаксиса Mustache.
+ Синтаксис Mustache позволяет вам более гибко форматировать поля слияния. Используйте`doc.getMailMerge().setUseNonMergeFields(true)` для включения синтаксиса Mustache.

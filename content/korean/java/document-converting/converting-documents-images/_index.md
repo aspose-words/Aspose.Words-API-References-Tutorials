@@ -60,7 +60,7 @@ try {
 ```
 
 설명:
-- 그만큼`try-catch` 블록은 문서를 로드하는 동안 발생하는 모든 오류를 포착하여 적절히 관리합니다.
+-  그만큼`try-catch`블록은 문서를 로드하는 동안 발생하는 모든 오류를 포착하여 적절히 관리합니다.
 
 ## 2단계: ImageSaveOptions 초기화
 
@@ -71,7 +71,7 @@ try {
 `ImageSaveOptions` 문서를 이미지로 저장하는 방법을 지정할 수 있는 클래스입니다.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 설명:

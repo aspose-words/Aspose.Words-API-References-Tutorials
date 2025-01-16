@@ -2,7 +2,7 @@
 title: Sposta al paragrafo nel documento Word
 linktitle: Sposta al paragrafo nel documento Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Passa senza sforzo a un paragrafo specifico nei documenti Word usando Aspose.Words per .NET con questa guida completa. Perfetto per gli sviluppatori che vogliono semplificare i flussi di lavoro dei loro documenti.
+description: Passa senza sforzo a un paragrafo specifico nei documenti Word usando Aspose.Words per .NET con questa guida completa. Perfetta per gli sviluppatori che vogliono semplificare i flussi di lavoro dei loro documenti.
 type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/move-to-paragraph/

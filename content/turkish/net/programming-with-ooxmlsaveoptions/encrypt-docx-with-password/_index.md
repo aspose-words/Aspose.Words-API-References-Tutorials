@@ -54,7 +54,7 @@ Sonra, belgeyi kaydetmek için seçenekleri ayarlamamız gerekiyor. Burada şifr
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-The`OoxmlSaveOptions`sınıfı, DOCX dosyalarını kaydetmek için çeşitli seçenekler belirtmemize olanak tanır. Burada,`Password`mülk`"password"` . Değiştirebilirsiniz`"password"` seçtiğiniz herhangi bir şifre ile. Bu şifre şifrelenmiş DOCX dosyasını açmak için gerekli olacaktır.
+ The`OoxmlSaveOptions`sınıfı, DOCX dosyalarını kaydetmek için çeşitli seçenekler belirtmemize olanak tanır. Burada,`Password`mülk`"password"` . Değiştirebilirsiniz`"password"` seçtiğiniz herhangi bir şifre ile. Bu şifre şifrelenmiş DOCX dosyasını açmak için gerekli olacaktır.
 
 ## Adım 3: Şifrelenmiş Belgeyi Kaydedin
 
@@ -65,7 +65,7 @@ Son olarak, önceki adımda yapılandırdığımız kaydetme seçeneklerini kull
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-The`Save` yöntemi`Document` sınıf, belgeyi kaydetmek için kullanılır. Şifrelenmiş belge için yol ve dosya adını,`saveOptions` daha önce yapılandırdık. Belge artık şifrelenmiş bir DOCX dosyası olarak kaydedildi.
+ The`Save` yöntemi`Document` sınıf, belgeyi kaydetmek için kullanılır. Şifrelenmiş belge için yol ve dosya adını,`saveOptions` daha önce yapılandırdık. Belge artık şifrelenmiş bir DOCX dosyası olarak kaydedildi.
 
 ## Çözüm
 

@@ -30,7 +30,7 @@ Az Aspose.Words for Java használatához tartalmaznia kell az Aspose.Words JAR f
 
 ## Dokumentumok betöltése és kezelése
 
-Miután beállította az Aspose.Words for Java programot, megkezdheti a dokumentumok betöltését és kezelését. Az Aspose.Words különféle dokumentumformátumokat támogat, mint például a DOCX, DOC, RTF, HTML stb. Ezeket a dokumentumokat betöltheti a memóriába, és programozottan elérheti a tartalmukat.
+Miután beállította az Aspose.Words for Java programot, megkezdheti a dokumentumok betöltését és kezelését. Az Aspose.Words különféle dokumentumformátumokat támogat, például DOCX, DOC, RTF, HTML stb. Ezeket a dokumentumokat betöltheti a memóriába, és programozottan elérheti a tartalmukat.
 
 ### Különböző dokumentumformátumok betöltése
 
@@ -101,8 +101,6 @@ pageSetup.setOrientation(Orientation.LANDSCAPE);
 // Adjon hozzá fejlécet és láblécet
 pageSetup.setHeaderDistance(20);
 pageSetup.setFooterDistance(10);
-pageSetup.setHeaderFooter(HeaderFooterType.HEADER_PRIMARY, new Paragraph(doc, "Header Text"));
-pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "Footer Text"));
 ```
 
 ### Fejlécek és láblécek
@@ -110,17 +108,17 @@ pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "F
 A fejlécek és a láblécek egységes információkat nyújtanak a dokumentumoldalakon. Különböző tartalmakat adhat hozzá az elsődleges, az első oldali és a páratlan/páros fejlécekhez és láblécekhez.
 
 ```java
-// Tartalom hozzáadása az elsődleges fejléchez
-HeaderFooter primaryHeader = pageSetup.getHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
-Paragraph headerPara = new Paragraph(doc, "This is the header text.");
-primaryHeader.appendChild(headerPara);
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Tartalom hozzáadása az elsődleges lábléchez
-HeaderFooter primaryFooter = pageSetup.getHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-Paragraph footerPara = new Paragraph(doc, "Page number: ");
-FieldPage fieldPage = new FieldPage();
-footerPara.appendChild(fieldPage);
-primaryFooter.appendChild(footerPara);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
+
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
+
+doc.save("HeaderFooterDocument.docx");
 ```
 
 ## Dokumentumok renderelése
@@ -133,13 +131,13 @@ Egy dokumentum rendereléséhez a Dokumentum osztály mentési módszerét kell 
 
 ```java
 // Renderelés PDF-be
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 
 // Renderelés XPS-re
-doc.save("output.xps", SaveFormat.XPS);
+doc.save("output.xps");
 
 // Renderelés képekké
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setResolution(300);
 doc.save("output.png", saveOptions);
 ```
@@ -161,7 +159,7 @@ Amikor dokumentumokat képformátumba renderel, szabályozhatja a képminősége
 
 ```java
 // Állítsa be a képbeállításokat
-ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageOptions = new ImageSaveOptions();
 imageOptions.setResolution(300);
 imageOptions.setPrettyFormat(true);
 doc.save("output.png", imageOptions);
@@ -179,7 +177,7 @@ Megjelenítheti a dokumentum adott oldalait, lehetővé téve bizonyos szakaszok
 // Adott oldaltartomány megjelenítése
 int startPage = 3;
 int endPage = 5;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(startPage, endPage));
 doc.save("output.png", saveOptions);
 ```
@@ -191,7 +189,7 @@ Ha a dokumentumnak csak bizonyos részeit, például bekezdéseket vagy szakaszo
 ```java
 // Rendeljen meg konkrét bekezdéseket
 int[] paragraphIndices = {0, 2, 4};
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(paragraphIndices));
 doc.save("output.png", saveOptions);
 ```
@@ -203,7 +201,7 @@ A részletesebb szabályozás érdekében egyedi dokumentumelemeket, például t
 ```java
 // Rendereljen konkrét táblázatot
 int tableIndex = 1;
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions saveOptions = new ImageSaveOptions();
 saveOptions.setPageSet(new PageSet(tableIndex));
 doc.save("output.png", saveOptions);
 ```

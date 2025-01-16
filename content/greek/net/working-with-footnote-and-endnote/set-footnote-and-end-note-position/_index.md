@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-Σε αυτόν τον κωδικό, αντικαταστήστε`"YOUR DOCUMENT DIRECTORY"`με την πραγματική διαδρομή όπου βρίσκεται το έγγραφό σας.
+Σε αυτόν τον κωδικό, αντικαταστήστε`"YOUR DOCUMENT DIRECTORY"` με την πραγματική διαδρομή όπου βρίσκεται το έγγραφό σας.
 
 ## Βήμα 2: Ορισμός θέσης υποσημείωσης
 
@@ -93,4 +93,4 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
 
 ### Πού μπορώ να βρω πιο λεπτομερή τεκμηρίωση για το Aspose.Words για .NET;
 
-Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).
+ Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).

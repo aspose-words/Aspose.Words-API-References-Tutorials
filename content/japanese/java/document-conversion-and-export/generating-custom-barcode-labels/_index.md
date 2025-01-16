@@ -10,199 +10,172 @@ url: /ja/java/document-conversion-and-export/generating-custom-barcode-labels/
 
 ## Aspose.Words for Java でのカスタム バーコード ラベルの生成の概要
 
-この包括的なガイドでは、Aspose.Words for Java を使用してカスタム バーコード ラベルを生成するプロセスを詳しく説明します。Aspose.Words for Java は、開発者が Word 文書をプログラムで操作できるようにする強力な API です。その注目すべき機能の 1 つはバーコード ラベルを操作できることで、カスタマイズされたバーコード ソリューションを必要とする企業や組織にとって貴重なツールとなっています。
+在庫管理、チケット生成、ID カード作成など、現代のアプリケーションではバーコードが不可欠です。Aspose.Words for Java を使用すると、カスタム バーコード ラベルの作成が簡単になります。このステップ バイ ステップのチュートリアルでは、IBarcodeGenerator インターフェイスを使用してカスタム バーコード ラベルを生成する手順を説明します。準備はできましたか? さあ始めましょう!
+
 
 ## 前提条件
 
-カスタム バーコード ラベルの生成の詳細に入る前に、前提条件が満たされていることを確認しましょう。
+コーディングを始める前に、以下のものを用意してください。
 
-1. Java 開発環境: システムに Java と統合開発環境 (IDE) がインストールされていることを確認します。
+- Java 開発キット (JDK): バージョン 8 以上。
+-  Aspose.Words for Java ライブラリ:[ダウンロードはこちら](https://releases.aspose.com/words/java/).
+- Aspose.BarCode for Java ライブラリ:[ダウンロードはこちら](https://releases.aspose.com/).
+- 統合開発環境 (IDE): IntelliJ IDEA、Eclipse、または任意の IDE。
+- 一時ライセンス：取得[一時ライセンス](https://purchase.aspose.com/temporary-license/)無制限のアクセスが可能です。
 
-2.  Aspose.Words for Java: Aspose.Words for Javaをダウンロードしてインストールします。[ここ](https://releases.aspose.com/words/java/).
+## パッケージのインポート
 
-3. Java の基礎知識: カスタム バーコード ラベルを作成するために Java コードを記述するため、Java プログラミングの知識が役立ちます。
-
-## カスタムバーコードラベルの作成
-
-それでは、Aspose.Words for Java を使用してカスタム バーコード ラベルの作成を始めましょう。プロセスをステップに分割し、各ステップの Java コード スニペットを提供します。
-
-## バーコードの高さの設定
-
-まず、バーコードの高さを twip (1/1440 インチ) で設定する必要があります。次に、この値をミリメートル (mm) に変換します。これを実行するコードは次のとおりです。
+Aspose.Words および Aspose.BarCode ライブラリを使用します。次のパッケージをプロジェクトにインポートします。
 
 ```java
-	//入力値は1/1440インチ（twips）単位です
-	int heightInTwips = tryParseInt(heightInTwipsString);
-	if (heightInTwips == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect height - " + heightInTwipsString + ".");
-	//mmに変換
-	return (float) (heightInTwips * 25.4 / 1440.0);
+import com.aspose.barcode.generation.*;
+import com.aspose.words.BarcodeParameters;
+import com.aspose.words.IBarcodeGenerator;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 ```
 
-## バーコード画像の色変換
+これらのインポートにより、バーコード生成機能を活用し、それを Word 文書に統合できるようになります。
 
-次に、バーコード画像の色を Word から Aspose.BarCode に変換します。入力色は「0xRRGGBB」(16 進数) の形式にする必要があります。変換のコードは次のとおりです。
+このタスクを管理可能なステップに分割しましょう。
+
+## ステップ 1: バーコード操作用のユーティリティ クラスを作成する
+
+バーコード関連の操作を簡素化するために、色の変換やサイズの調整などの一般的なタスク用のヘルパー メソッドを備えたユーティリティ クラスを作成します。
+
+### コード：
 
 ```java
-/// <要約>
-/// バーコード画像の色を Word から Aspose.BarCode に変換します。
-/// </要約>
-/// <param name="入力カラー"></param>
-/// <戻り値></戻り値>
-private static Color convertColor(String inputColor) throws Exception {
-	//入力範囲は「0x000000」から「0xFFFFFF」までです。
-	int color = tryParseHex(inputColor.replace("0x", ""));
-	if (color == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect color - " + inputColor + ".");
-	return new Color((color >> 16), ((color & 0xFF00) >> 8), (color & 0xFF));
+class CustomBarcodeGeneratorUtils {
+    public static double twipsToPixels(String heightInTwips, double defVal) {
+        try {
+            int lVal = Integer.parseInt(heightInTwips);
+            return (lVal / 1440.0) * 96.0; //デフォルトのDPIが96であると仮定
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
+
+    public static Color convertColor(String inputColor, Color defVal) {
+        if (inputColor == null || inputColor.isEmpty()) return defVal;
+        try {
+            int color = Integer.parseInt(inputColor, 16);
+            return new Color((color & 0xFF), ((color >> 8) & 0xFF), ((color >> 16) & 0xFF));
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
 }
 ```
 
-## バーコードのスケール係数の変換
+### 説明：
 
-ここで、バーコードのスケーリング係数をパーセンテージから浮動小数点値に変換します。このスケーリング係数によってバーコードのサイズが決まります。変換のコードは次のとおりです。
+- `twipsToPixels`方法: twip (Word 文書で使用される) をピクセルに変換します。
+- `convertColor`方法: 16進数カラーコードを`Color`オブジェクト。
+
+## ステップ2: カスタムバーコードジェネレーターを実装する
+
+私たちは、`IBarcodeGenerator`バーコードを生成し、Aspose.Words と統合するためのインターフェイス。
+
+### コード：
 
 ```java
-/// <要約>
-/// バーコードのスケーリング係数をパーセントから浮動小数点数に変換します。
-/// </要約>
-/// <param name="スケーリング係数"></param>
-/// <戻り値></戻り値>
-private static float convertScalingFactor(String scalingFactor) throws Exception {
-	boolean isParsed = false;
-	int percent = tryParseInt(scalingFactor);
-	if (percent != Integer.MIN_VALUE && percent >= 10 && percent <= 10000)
-		isParsed = true;
-	if (!isParsed)
-		throw new Exception("Error! Incorrect scaling factor - " + scalingFactor + ".");
-	return percent / 100.0f;
+class CustomBarcodeGenerator implements IBarcodeGenerator {
+    public BufferedImage getBarcodeImage(BarcodeParameters parameters) {
+        try {
+            BarcodeGenerator gen = new BarcodeGenerator(
+                CustomBarcodeGeneratorUtils.getBarcodeEncodeType(parameters.getBarcodeType()),
+                parameters.getBarcodeValue()
+            );
+
+            gen.getParameters().getBarcode().setBarColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getForegroundColor(), Color.BLACK)
+            );
+            gen.getParameters().setBackColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getBackgroundColor(), Color.WHITE)
+            );
+
+            return gen.generateBarCodeImage();
+        } catch (Exception e) {
+            return new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB);
+        }
+    }
+
+    public BufferedImage getOldBarcodeImage(BarcodeParameters parameters) {
+        throw new UnsupportedOperationException();
+    }
 }
 ```
 
-## GetBarCodeImage() メソッドの実装
+### 説明：
 
-このステップでは、`getBarcodeImage`メソッドは、指定されたパラメータに基づいてバーコード イメージを生成します。さまざまなバーコード タイプを処理し、色を設定し、寸法を調整するなどします。このメソッドのコードは次のとおりです。
+- `getBarcodeImage`方法：
+  - 作成する`BarcodeGenerator`実例。
+  - バーコードの色、背景色を設定し、画像を生成します。
+
+## ステップ3: バーコードを生成してWord文書に追加する
+
+ここで、バーコード ジェネレーターを Word 文書に統合します。
+
+### コード：
 
 ```java
-/// <要約>
-/// IBarCodeGenerator インターフェイスの GetBarCodeImage() メソッドの実装。
-/// </要約>
-/// <param name="パラメータ"></param>
-/// <戻り値></戻り値>
-public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Exception {
-	//バーコードの種類と値が提供されているかどうかを確認します
-	if (parameters.getBarcodeType() == null || parameters.getBarcodeValue() == null)
-		return null;
-	
-	//バーコードの種類に基づいてBarcodeGeneratorを作成する
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR);
-	String type = parameters.getBarcodeType().toUpperCase();
-	switch (type)
-	{
-		case "QR":
-			generator = new BarcodeGenerator(EncodeTypes.QR);
-			break;
-		//他のバーコードタイプをここで処理します
-	}
-	
-	//バーコードテキストを設定する
-	generator.setCodeText(parameters.getBarcodeValue());
-	
-	//バーコードの色を設定する
-	if (parameters.getForegroundColor() != null)
-		generator.getParameters().getBarcode().setBarColor(convertColor(parameters.getForegroundColor()));
-	if (parameters.getBackgroundColor() != null)
-		generator.getParameters().setBackColor(convertColor(parameters.getBackgroundColor()));
-	
-	//シンボルの高さと寸法を設定する
-	if (parameters.getSymbolHeight() != null)
-	{
-		generator.getParameters().getImageHeight().setPixels(convertSymbolHeight(parameters.getSymbolHeight()));
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	//コードテキストの位置をカスタマイズする
-	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
-	if (parameters.getDisplayText())
-		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
-	
-	//QRコードの追加調整
-	final float SCALE = 2.4f; //Word バーコードを Aspose.BarCode に変換するための経験的スケーリング係数
-	float xdim = 1.0f;
-	if (generator.getBarcodeType().equals(EncodeTypes.QR))
-	{
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
-		generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageWidth().getInches() * SCALE);
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageWidth().getInches());
-		xdim = generator.getParameters().getImageHeight().getInches() / 25;
-		generator.getParameters().getBarcode().getXDimension().setInches(xdim);
-		generator.getParameters().getBarcode().getBarHeight().setInches(xdim);
-	}
-	
-	//スケーリング係数を適用する
-	if (parameters.getScalingFactor() != null)
-	{
-		float scalingFactor = convertScalingFactor(parameters.getScalingFactor());
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageHeight().getInches() * scalingFactor);
-		if (generator.getBarcodeType().equals(EncodeTypes.QR))
-		{
-			generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageHeight().getInches());
-			generator.getParameters().getBarcode().getXDimension().setInches(xdim * scalingFactor);
-			generator.getParameters().getBarcode().getBarHeight().setInches(xdim * scalingFactor);
-		}
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	//バーコード画像を生成して返す
-	return generator.generateBarCodeImage();
+import com.aspose.words.*;
+
+public class GenerateCustomBarcodeLabels {
+    public static void main(String[] args) throws Exception {
+        // Word文書を読み込むか作成する
+        Document doc = new Document();
+        DocumentBuilder builder = new DocumentBuilder(doc);
+
+        //カスタムバーコードジェネレーターを設定する
+        CustomBarcodeGenerator barcodeGenerator = new CustomBarcodeGenerator();
+        BarcodeParameters barcodeParameters = new BarcodeParameters();
+        barcodeParameters.setBarcodeType("QR");
+        barcodeParameters.setBarcodeValue("https://example.com");
+        barcodeParameters.setForegroundColor("000000");
+        barcodeParameters.setBackgroundColor("FFFFFF");
+
+        //バーコード画像を生成する
+        BufferedImage barcodeImage = barcodeGenerator.getBarcodeImage(barcodeParameters);
+
+        //Word文書にバーコード画像を挿入する
+        builder.insertImage(barcodeImage, 200, 200);
+
+        //文書を保存する
+        doc.save("CustomBarcodeLabels.docx");
+
+        System.out.println("Barcode labels generated successfully!");
+    }
 }
 ```
 
-## GetOldBarcodeImage() メソッドの実装
+### 説明：
 
-このステップでは、`getOldBarcodeImage`このメソッドは、旧式のバーコードのバーコード イメージを生成します。ここでは、POSTNET などの特定のバーコード タイプを処理します。このメソッドのコードは次のとおりです。
-
-```java
-/// <要約>
-/// IBarCodeGenerator インターフェイスの GetOldBarcodeImage() メソッドの実装。
-/// </要約>
-/// <param name="パラメータ"></param>
-/// <戻り値></戻り値>
-public BufferedImage getOldBarcodeImage(BarcodeParameters parameters)
-{
-	if (parameters.getPostalAddress() == null)
-		return null;
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.POSTNET);
-	{
-		generator.setCodeText(parameters.getPostalAddress());
-	}
-	//旧式のバーコードのハードコードタイプ
-	return generator.generateBarCodeImage();
-}
-```
+- ドキュメントの初期化: Word ドキュメントを作成または読み込みます。
+- バーコード パラメータ: バーコードの種類、値、および色を定義します。
+- 画像の挿入: 生成されたバーコード画像を Word 文書に追加します。
+- ドキュメントを保存: ファイルを希望の形式で保存します。
 
 ## 結論
 
-この記事では、Aspose.Words for Java を使用してカスタム バーコード ラベルを生成するプロセスについて説明しました。バーコードの高さの設定からバーコード生成メソッドの実装まで、重要な手順について説明しました。Aspose.Words for Java を使用すると、開発者は動的でカスタマイズされたバーコード ラベルを作成できるため、さまざまな業界にとって貴重なツールとなります。
+これらの手順に従うと、Aspose.Words for Java を使用して、Word 文書にカスタム バーコード ラベルをシームレスに生成して埋め込むことができます。このアプローチは柔軟性があり、さまざまなアプリケーションに合わせて調整できます。コーディングを楽しんでください。
+
 
 ## よくある質問
 
-### 生成されたバーコードのサイズを調整するにはどうすればよいですか?
+1. ライセンスなしで Aspose.Words for Java を使用できますか?
+はい、ただし制限があります。[一時ライセンス](https://purchase.aspose.com/temporary-license/)完全な機能を実現します。
 
-提供されているコード スニペットでバーコードのシンボルの高さとスケーリング係数を設定することで、生成されたバーコードのサイズを調整できます。これらのパラメータを使用すると、要件に応じてバーコードの寸法を制御できます。
+2. どのような種類のバーコードを生成できますか?
+Aspose.BarCodeはQR、Code 128、EAN-13など多くの種類をサポートしています。[ドキュメント](https://reference.aspose.com/words/java/)完全なリストについてはこちらをご覧ください。
 
-### バーコードの色を変えることはできますか？
+3. バーコードのサイズを変更するにはどうすればよいですか?
+調整する`XDimension`そして`BarHeight`パラメータ`BarcodeGenerator`設定。
 
-はい、コード内で前景色と背景色を指定することにより、バーコードの色を変更できます。このカスタマイズにより、バーコードの外観をドキュメントのデザインに合わせることができます。
+4. バーコードにカスタムフォントを使用できますか?
+はい、バーコードのテキストフォントをカスタマイズできます。`CodeTextParameters`財産。
 
-### Aspose.Words for Java ではどのバーコード タイプがサポートされていますか?
+5. Aspose.Words に関するサポートはどこで受けられますか?
+訪問する[サポートフォーラム](https://forum.aspose.com/c/words/8/)援助をお願いします。
 
-Aspose.Words for Java は、QR コード、CODE128、CODE39、EAN8、EAN13、UPCA、UPCE、ITF14 など、さまざまなバーコード タイプをサポートしています。アプリケーションのニーズに合ったバーコード タイプを選択できます。
-
-### 生成されたバーコードを Word 文書に統合するにはどうすればよいですか?
-
-生成されたバーコードを Word 文書に統合するには、Aspose.Words for Java の文書操作機能を使用できます。バーコード イメージを文書内の任意の場所に挿入できます。
-
-### さらにカスタマイズできるサンプルコードはありますか?
-
-はい、サンプル コード スニペットと追加のドキュメントは、Aspose.Words for Java のリファレンス サイトにあります。[Aspose.Words for Java API リファレンス](https://reference.aspose.com/words/java/).

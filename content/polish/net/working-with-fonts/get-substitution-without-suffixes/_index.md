@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 W tej klasie:
-- Ten`Warning`Metoda wychwytuje ostrzeżenia związane z podmianą czcionek.
-- Ten`FontWarnings` kolekcja przechowuje te ostrzeżenia w celu dalszej kontroli lub rejestrowania.
+-  Ten`Warning`Metoda wychwytuje ostrzeżenia związane z podmianą czcionek.
+-  Ten`FontWarnings` kolekcja przechowuje te ostrzeżenia w celu dalszej kontroli lub rejestrowania.
 
 ## Wniosek
 

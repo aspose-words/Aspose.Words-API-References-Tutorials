@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Neues Dokument erstellen
 
-Erstellen Sie ein neues`Document` Objekt, das als Grundlage für Ihr Word-Dokument dient.
+ Erstellen Sie ein neues`Document` Objekt, das als Grundlage für Ihr Word-Dokument dient.
 
 ```csharp
 Document doc = new Document();

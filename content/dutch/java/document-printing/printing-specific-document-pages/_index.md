@@ -53,7 +53,7 @@ public class PrintSpecificPages {
 }
 ```
 
-## Geef aan welke pagina's u wilt afdrukken
+## Geef de af te drukken pagina's op
 
  Laten we nu specificeren welke pagina's u wilt afdrukken. U kunt de`PageRange` klasse om het bereik van pagina's te definiëren dat u nodig hebt. Bijvoorbeeld, om pagina's 3 tot 5 af te drukken:
 

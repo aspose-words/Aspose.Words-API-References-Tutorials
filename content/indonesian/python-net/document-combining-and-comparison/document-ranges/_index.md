@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Menggabungkan Dokumen
-
-Menggabungkan dokumen dengan lancar merupakan keterampilan yang berharga. Menavigasi dokumen membantu kita menggabungkannya secara efisien:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Memisahkan Dokumen
 
 Terkadang, kita mungkin perlu membagi dokumen menjadi beberapa bagian yang lebih kecil. Menavigasi dokumen membantu kita mencapai hal ini:
@@ -117,8 +109,8 @@ Header dan footer sering kali memerlukan penanganan yang berbeda. Dengan menavig
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

@@ -44,7 +44,7 @@ using Aspose.Words.Tables;
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-그만큼`DocumentBuilder` 클래스는 문서를 만들고 사용자 정의하는 관문입니다. Word 문서를 만드는 마법의 지팡이라고 생각하세요!
+ 그만큼`DocumentBuilder` 클래스는 문서를 만들고 사용자 정의하는 관문입니다. Word 문서를 만드는 마법의 지팡이라고 생각하세요!
 
 ## 2단계: 인용문 추가
 

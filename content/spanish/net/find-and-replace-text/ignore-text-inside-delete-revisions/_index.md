@@ -17,7 +17,7 @@ Antes de sumergirse en este tutorial, asegúrese de tener los siguientes requisi
 - Conocimientos básicos del lenguaje de programación C#.
 - Visual Studio instalado en su sistema.
 -  Biblioteca Aspose.Words para .NET integrada en su proyecto. Puede descargarla desde[aquí](https://releases.aspose.com/words/net/).
-- Acceso a Aspose.Words para .NET[documentación](https://reference.aspose.com/words/net/) para referencia.
+-  Acceso a Aspose.Words para .NET[documentación](https://reference.aspose.com/words/net/) para referencia.
 
 ## Importar espacios de nombres
 
@@ -84,4 +84,4 @@ Sí, puede administrar y revertir mediante programación las revisiones rastread
 Aspose.Words para .NET está optimizado para manejar documentos grandes de manera eficiente, incluidos aquellos con extensas revisiones rastreadas.
 
 ### ¿Dónde puedo encontrar más recursos y soporte para Aspose.Words para .NET?
-Puede explorar la documentación completa y obtener soporte de la comunidad Aspose.Words para .NET en[Foro Aspose.Words](https://forum.aspose.com/c/words/8).
+ Puede explorar la documentación completa y obtener soporte de la comunidad Aspose.Words para .NET en[Foro Aspose.Words](https://forum.aspose.com/c/words/8).

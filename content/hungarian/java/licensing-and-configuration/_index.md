@@ -21,7 +21,7 @@ Amikor elindul az Aspose.Words for Java használatára, az első lépés a licen
 
 ## Konfigurációs beállítások
 
-Miután licencelte az Aspose.Words-t, ideje beállítani, hogy megfeleljen az Ön egyedi igényeinek. A konfigurációs beállítások lehetővé teszik az eszközkészlet viselkedésének testreszabását. Íme néhány fontos szempont, amelyet figyelembe kell venni:
+Miután licencelte az Aspose.Words-t, ideje beállítani azt, hogy megfeleljen az Ön egyedi igényeinek. A konfigurációs beállítások lehetővé teszik az eszközkészlet viselkedésének testreszabását. Íme néhány kulcsfontosságú szempont, amelyet figyelembe kell venni:
 
 1. Betűkészlet-konfiguráció: Győződjön meg arról, hogy az Aspose.Words felismeri a dokumentumokban használt betűtípusokat. Megadhatja a könyvtár által használandó betűtípus mappákat vagy egyedi betűtípus-fájlokat.
 

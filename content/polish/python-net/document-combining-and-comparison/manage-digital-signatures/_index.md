@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /pl/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## Wprowadzenie do podpisów cyfrowych
 
 Podpisy cyfrowe służą jako elektroniczne odpowiedniki podpisów odręcznych. Zapewniają sposób weryfikacji autentyczności, integralności i pochodzenia dokumentów elektronicznych. Gdy dokument jest podpisany cyfrowo, generowany jest skrót kryptograficzny na podstawie zawartości dokumentu. Ten skrót jest następnie szyfrowany przy użyciu klucza prywatnego sygnatariusza, tworząc podpis cyfrowy. Każdy, kto ma odpowiedni klucz publiczny, może zweryfikować podpis i ustalić autentyczność dokumentu.
@@ -25,7 +24,7 @@ Aby rozpocząć zarządzanie podpisami cyfrowymi za pomocą Aspose.Words dla ję
 2. Zaimportuj wymagane moduły: Zaimportuj niezbędne moduły do swojego skryptu Pythona:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## Ładowanie i dostęp do dokumentów
@@ -33,7 +32,7 @@ Aby rozpocząć zarządzanie podpisami cyfrowymi za pomocą Aspose.Words dla ję
 Przed dodaniem lub zweryfikowaniem podpisów cyfrowych należy załadować dokument za pomocą Aspose.Words:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## Dodawanie podpisów cyfrowych do dokumentów
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 Aby dodać podpis cyfrowy do dokumentu, potrzebny jest certyfikat cyfrowy:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 Teraz podpisz dokument:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## Weryfikacja podpisów cyfrowych
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## Usuwanie podpisów cyfrowych
-
-Aby usunąć podpis cyfrowy z dokumentu:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## Zapewnienie autentyczności dokumentów
-
-Podpisy cyfrowe zapewniają autentyczność dokumentu poprzez potwierdzenie źródła i integralności dokumentu. Chronią przed manipulacją i nieautoryzowanymi modyfikacjami.
-
 ## Dostosowywanie wyglądu podpisu cyfrowego
 
 Możesz dostosować wygląd podpisów cyfrowych:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## Wniosek

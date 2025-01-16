@@ -49,7 +49,7 @@ Renderizar documentos é essencial quando você precisa convertê-los para difer
 
 ```java
 // Renderizar o documento em PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Você pode substituir`SaveFormat.PDF` com o formato desejado para renderização.
@@ -80,7 +80,7 @@ Aspose.Words para Java é uma ferramenta poderosa para impressão e renderizaç�
 
  Para converter um documento em uma imagem, você pode usar o`save` método com`SaveFormat.PNG` ou outros formatos de imagem.
 
-### O Aspose.Words para Java é adequado para processamento de documentos em larga escala?
+### Aspose.Words para Java é adequado para processamento de documentos em larga escala?
 
 Sim, o Aspose.Words para Java foi projetado para processamento de documentos em pequena e grande escala, o que o torna uma escolha versátil para diversas aplicações.
 

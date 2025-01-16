@@ -89,7 +89,7 @@ doc.FontSettings = fontSettings;
 
 ## Krok 6: Uložte dokument
 
-Nakonec uložte dokument po použití nastavení písma a manipulaci s případnými náhradami písem. Uložte jej ve formátu, který si zvolíte; zde, uložíme jej jako PDF.
+Nakonec uložte dokument po použití nastavení písma a manipulaci s případnými náhradami písem. Uložte jej ve formátu dle vašeho výběru; zde, uložíme jej jako PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");

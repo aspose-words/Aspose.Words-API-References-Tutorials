@@ -89,7 +89,7 @@ Sim, o Aspose.Words para Java suporta uma ampla variedade de formatos de documen
 
 ### Q3: Há alguma opção de licenciamento disponível para o Aspose.Words para Java?
 
- Sim, você pode explorar opções de licenciamento e comprar o Aspose.Words para Java no[Site Aspose](https://purchase.aspose.com/buy).
+Sim, você pode explorar opções de licenciamento e comprar o Aspose.Words para Java no[Site Aspose](https://purchase.aspose.com/buy).
 
 ### P4: Posso testar o Aspose.Words para Java antes de comprar?
 
@@ -97,6 +97,6 @@ Sim, o Aspose.Words para Java suporta uma ampla variedade de formatos de documen
 
 ### P5: Onde posso buscar suporte ou tirar dúvidas sobre o Aspose.Words para Java?
 
-Para qualquer dúvida ou suporte, visite o[Fórum Aspose.Words para Java](https://forum.aspose.com/).
+ Para qualquer dúvida ou suporte, visite o[Fórum Aspose.Words para Java](https://forum.aspose.com/).
 
 Agora que você domina a renderização de formas com o Aspose.Words para Java, você está pronto para liberar todo o potencial desta API versátil em seus projetos de processamento de documentos. Boa codificação!

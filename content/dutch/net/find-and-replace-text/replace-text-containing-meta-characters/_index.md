@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Wij creëren een`FindReplaceOptions`object en stel de alinea-uitlijning in op gecentreerd.
+ Wij creëren een`FindReplaceOptions` object en stel de alinea-uitlijning in op gecentreerd.
 
 ## Stap 4: Vervang tekst door meta-tekens
 
 In deze stap gebeurt de magie! We gaan het woord "sectie" vervangen door een alinea-einde en een onderstreping toevoegen.
 
 ```csharp
-// Verdubbel elke alinea-einde na het woord "sectie", voeg een soort onderstreping toe en centreer het.
+//Verdubbel elke alinea-einde na het woord "sectie", voeg een soort onderstreping toe en centreer het.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## Định dạng văn bản cơ bản
 
- Định dạng văn bản trong tài liệu Word là điều cần thiết để nhấn mạnh các điểm quan trọng và cải thiện khả năng đọc. Aspose.Words cho phép bạn áp dụng nhiều tùy chọn định dạng khác nhau, chẳng hạn như**bold**, *italic*, gạch chân và kích thước phông chữ:
+Định dạng văn bản trong tài liệu Word là điều cần thiết để nhấn mạnh các điểm quan trọng và cải thiện khả năng đọc. Aspose.Words cho phép bạn áp dụng nhiều tùy chọn định dạng khác nhau, chẳng hạn như in đậm, in nghiêng, gạch chân và kích thước phông chữ:
 
 ```python
 # Apply basic text formatting
@@ -172,8 +172,6 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 ## Phần kết luận
 
 Trong hướng dẫn toàn diện này, chúng tôi đã khám phá khả năng của Aspose.Words for Python trong việc định dạng đoạn văn và văn bản trong tài liệu Word. Bằng cách sử dụng thư viện mạnh mẽ này, các nhà phát triển có thể tự động hóa định dạng tài liệu một cách liền mạch, đảm bảo giao diện chuyên nghiệp và bóng bẩy cho nội dung của họ.
-
----
 
 ## Câu hỏi thường gặp
 

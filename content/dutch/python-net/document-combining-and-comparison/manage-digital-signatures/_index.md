@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /nl/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## Inleiding tot digitale handtekeningen
 
 Digitale handtekeningen dienen als elektronische equivalenten van handgeschreven handtekeningen. Ze bieden een manier om de authenticiteit, integriteit en oorsprong van elektronische documenten te verifiëren. Wanneer een document digitaal wordt ondertekend, wordt een cryptografische hash gegenereerd op basis van de inhoud van het document. Deze hash wordt vervolgens gecodeerd met de privésleutel van de ondertekenaar, waardoor de digitale handtekening wordt gemaakt. Iedereen met de bijbehorende openbare sleutel kan de handtekening verifiëren en de authenticiteit van het document vaststellen.
@@ -25,7 +24,7 @@ Volg deze stappen om aan de slag te gaan met het beheren van digitale handtekeni
 2. Importeer de vereiste modules: Importeer de benodigde modules in uw Python-script:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## Documenten laden en openen
@@ -33,7 +32,7 @@ Volg deze stappen om aan de slag te gaan met het beheren van digitale handtekeni
 Voordat u digitale handtekeningen kunt toevoegen of verifiëren, moet u het document laden met Aspose.Words:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## Digitale handtekeningen toevoegen aan documenten
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 Om een digitale handtekening aan een document toe te voegen, hebt u een digitaal certificaat nodig:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 Onderteken nu het document:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## Digitale handtekeningen verifiëren
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## Digitale handtekeningen verwijderen
-
-Om een digitale handtekening uit een document te verwijderen:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## Zorgen voor de authenticiteit van documenten
-
-Digitale handtekeningen zorgen voor de authenticiteit van documenten door de bron en integriteit van het document te bevestigen. Ze beschermen tegen manipulatie en ongeautoriseerde wijzigingen.
-
 ## Het uiterlijk van de digitale handtekening aanpassen
 
 U kunt het uiterlijk van digitale handtekeningen aanpassen:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## Conclusie

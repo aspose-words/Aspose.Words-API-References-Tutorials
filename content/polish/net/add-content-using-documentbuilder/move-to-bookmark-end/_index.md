@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Zrozumienie MoveToBookmark
 
-Ten`MoveToBookmark`Metoda pozwala na przejście do konkretnej zakładki w dokumencie. Podpis metody to:
+ Ten`MoveToBookmark`Metoda pozwala na przejście do konkretnej zakładki w dokumencie. Podpis metody to:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);
@@ -138,7 +138,7 @@ Oto masz! Właśnie nauczyłeś się, jak przejść na koniec zakładki w dokume
 
 ### 3. Czy mogę wstawić inne typy treści na końcu zakładki?
 
- Tak, DocumentBuilder pozwala na wstawianie różnych typów treści, takich jak tabele, obrazy i inne. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Tak, DocumentBuilder pozwala na wstawianie różnych typów treści, takich jak tabele, obrazy i inne. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### 4. Jak uzyskać tymczasową licencję na Aspose.Words?
 

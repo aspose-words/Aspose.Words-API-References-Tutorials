@@ -53,7 +53,7 @@ doc.save("Output.docx");
 
 ### Uitleg:
 
-De`save` methode wordt aangeroepen op de`Document` object om het bestand op te slaan in de`.docx` formaat. Het opgegeven argument is het bestandspad waar het Word-document wordt opgeslagen. Dit is de laatste stap in het conversieproces.
+ De`save` methode wordt aangeroepen op de`Document` object om het bestand op te slaan in de`.docx` formaat. Het opgegeven argument is het bestandspad waar het Word-document wordt opgeslagen. Dit is de laatste stap in het conversieproces.
 
 ## Conclusie
 

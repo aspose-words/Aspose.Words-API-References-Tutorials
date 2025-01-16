@@ -15,7 +15,7 @@ url: /ar/net/document-protection/get-protection-type/
 
 قبل أن ننتقل إلى جزء الترميز، دعنا نتأكد من أن لديك كل ما تحتاجه:
 
-1.  Aspose.Words لمكتبة .NET: إذا لم تقم بذلك بالفعل، فقم بتنزيل وتثبيت[Aspose.Words لمكتبة .NET](https://releases.aspose.com/words/net/).
+1. Aspose.Words لمكتبة .NET: إذا لم تقم بذلك بالفعل، فقم بتنزيل وتثبيت[Aspose.Words لمكتبة .NET](https://releases.aspose.com/words/net/).
 2. بيئة التطوير: بيئة تطوير متكاملة مثل Visual Studio.
 3. المعرفة الأساسية بلغة C#: ستساعدك المعرفة ببرمجة C# على المتابعة.
 
@@ -41,7 +41,7 @@ using Aspose.Words;
 
 ## الخطوة 2: قم بتحميل مستندك
 
- الآن بعد إعداد مشروعك، دعنا نحمل مستند Word الذي تريد التحقق منه. استبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للمستند الخاص بك.
+الآن بعد إعداد مشروعك، دعنا نحمل مستند Word الذي تريد التحقق منه. استبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي للمستند الخاص بك.
 
 ```csharp
 // المسار إلى دليل المستند الخاص بك
@@ -75,13 +75,13 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 Aspose.Words for .NET عبارة عن مكتبة قوية تسمح لك بإنشاء مستندات Word وتحريرها وتحويلها ومعالجتها برمجيًا.
 
 ### هل يمكنني استخدام Aspose.Words مجانًا؟
- يمكنك البدء بـ[نسخة تجريبية مجانية](https://releases.aspose.com/) ولكن للحصول على الوظائف الكاملة، ستحتاج إلى شراء ترخيص. تحقق من[خيارات الشراء](https://purchase.aspose.com/buy).
+ يمكنك البدء بـ[نسخة تجريبية مجانية](https://releases.aspose.com/)ولكن للحصول على الوظائف الكاملة، ستحتاج إلى شراء ترخيص. تحقق من[خيارات الشراء](https://purchase.aspose.com/buy).
 
 ### ما هي أنواع الحماية التي يمكن لـ Aspose.Words اكتشافها؟
 يمكن لـ Aspose.Words اكتشاف أنواع الحماية المختلفة مثل NoProtection، وReadOnly، وAllowOnlyRevisions، وAllowOnlyComments، وAllowOnlyFormFields.
 
 ### كيف يمكنني الحصول على الدعم إذا واجهت مشاكل؟
-لأي مشكلة، يمكنك زيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) للحصول على المساعدة.
+ لأي مشكلة، يمكنك زيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) للحصول على المساعدة.
 
 ### هل Aspose.Words متوافق مع .NET Core؟
 نعم، Aspose.Words متوافق مع كل من .NET Framework و.NET Core.

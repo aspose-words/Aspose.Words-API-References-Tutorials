@@ -118,7 +118,7 @@ Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi Word-dokum
  Igen, használhatod a[ingyenes próbaverzió](https://releases.aspose.com/) vagy kap a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).
 
 ### Hol találom az Aspose.Words for .NET dokumentációját?
- részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
+ A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
 
 ### Hogyan kaphatok támogatást az Aspose.Words számára?
  Meglátogathatja a[támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.

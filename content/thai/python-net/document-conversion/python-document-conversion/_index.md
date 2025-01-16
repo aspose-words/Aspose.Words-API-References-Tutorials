@@ -105,8 +105,6 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 Aspose.Words ช่วยให้คุณสามารถปรับแต่งรูปลักษณ์ของเอกสารที่แปลงแล้วได้ คุณสามารถใช้ตัวเลือกการจัดรูปแบบต่างๆ เช่น แบบอักษร สี การจัดตำแหน่ง และระยะห่างระหว่างย่อหน้า
 
-#### ตัวอย่าง:
-
 ```python
 # Python code for applying formatting during conversion
 import aspose.words as aw
@@ -128,8 +126,6 @@ doc.save("formatted_output.pdf", aw.SaveFormat.PDF)
 ### การจัดการรูปภาพและตาราง
 
 Aspose.Words ช่วยให้คุณสามารถจัดการรูปภาพและตารางระหว่างกระบวนการแปลง คุณสามารถแยกรูปภาพ ปรับขนาด และจัดการตารางเพื่อรักษาโครงสร้างของเอกสารได้
-
-#### ตัวอย่าง:
 
 ```python
 # Python code for handling images and tables during conversion
@@ -156,8 +152,6 @@ doc.save("modified_output.pdf", aw.SaveFormat.PDF)
 
 ด้วย Aspose.Words คุณสามารถมั่นใจได้ว่าการแสดงผลแบบอักษรจะมีความสม่ำเสมอและจัดการเค้าโครงของเอกสารที่แปลงแล้วได้ ฟีเจอร์นี้มีประโยชน์อย่างยิ่งเมื่อต้องรักษาความสม่ำเสมอของเอกสารในรูปแบบต่างๆ
 
-#### ตัวอย่าง:
-
 ```python
 # Python code for managing fonts and layout during conversion
 import aspose.words as aw
@@ -178,8 +172,6 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ### การเขียนสคริปต์ Python สำหรับการทำงานอัตโนมัติ
 
 ความสามารถในการเขียนสคริปต์ของ Python ทำให้เป็นตัวเลือกที่ยอดเยี่ยมสำหรับการทำงานซ้ำๆ โดยอัตโนมัติ คุณสามารถเขียนสคริปต์ Python เพื่อดำเนินการแปลงเอกสารเป็นชุด ช่วยประหยัดเวลาและความพยายาม
-
-#### ตัวอย่าง:
 
 ```python
 # Python script for batch document conversion
@@ -205,11 +197,7 @@ for filename in input_files:
 
 ### การแปลงเอกสารแบบแบตช์
 
-โดย
-
- การรวมพลังของ Python และ Aspose.Words เข้าด้วยกัน คุณสามารถทำการแปลงเอกสารจำนวนมากโดยอัตโนมัติ ช่วยเพิ่มประสิทธิภาพและประสิทธิผล
-
-#### ตัวอย่าง:
+ด้วยการรวมพลังของ Python เข้ากับ Aspose.Words คุณสามารถทำการแปลงเอกสารจำนวนมากโดยอัตโนมัติ ช่วยเพิ่มประสิทธิภาพและประสิทธิผล
 
 ```python
 # Python script for batch document conversion using Aspose.Words
@@ -238,14 +226,6 @@ for filename in input_files:
     output_filename = filename.replace(file_ext, ".pdf" if file_ext == ".docx" else ".docx")
     doc.save(os.path.join(output_dir, output_filename))
 ```
-## ข้อดีของการใช้ Aspose.Words สำหรับ Python
-
-Aspose.Words สำหรับ Python มีข้อดีหลายประการ ได้แก่:
-
-- ความสามารถในการแปลงเอกสารที่แข็งแกร่ง
-- ชุดคุณสมบัติอันหลากหลายสำหรับการจัดการเอกสาร
-- การบูรณาการกับแอปพลิเคชัน Python ได้อย่างง่ายดาย
-- การสนับสนุนและการอัปเดตอย่างต่อเนื่องจากชุมชนที่เจริญรุ่งเรือง
 
 ## บทสรุป
 

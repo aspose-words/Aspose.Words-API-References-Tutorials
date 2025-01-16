@@ -46,7 +46,7 @@ Optimieren Sie Dokumentrevisionen mit Aspose.Words für Java! Verfolgen Sie Änd
 ### [Laden und Speichern von Dokumenten](./document-loading-and-saving/)
 Entdecken Sie mit unseren umfassenden Tutorials, wie Sie mit Aspose.Words für Java mühelos Dokumente laden und speichern können. Verbessern Sie noch heute Ihre Java-Dokumentenverwaltungsfähigkeiten!
 ### [Dokumentmanipulation](./document-manipulation/)
-Erfahren Sie in unseren umfassenden Tutorials, wie Sie mit Aspose.Words für Java Dokumente effizient bearbeiten. Verbessern Sie noch heute Ihre Java-Dokumentenverarbeitungsfähigkeiten!
+Erfahren Sie in unseren umfassenden Tutorials, wie Sie Dokumente mit Aspose.Words für Java effizient bearbeiten. Verbessern Sie noch heute Ihre Java-Dokumentenverarbeitungsfähigkeiten!
 ### [Dokumentkonvertierung und -export](./document-conversion-and-export/)
 Entdecken Sie in diesem umfassenden Handbuch die Leistungsfähigkeit von Aspose.Words für Java. Erfahren Sie, wie Sie Dokumente mühelos konvertieren und exportieren.
 ### [Lizenzierung und Konfiguration](./licensing-and-configuration/)

@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-Bu kodda şunu değiştirin:`"YOUR DOCUMENT DIRECTORY"`Belgenizin bulunduğu gerçek yol ile.
+Bu kodda şunu değiştirin:`"YOUR DOCUMENT DIRECTORY"` Belgenizin bulunduğu gerçek yol ile.
 
 ## Adım 2: Dipnot Pozisyonunu Ayarlayın
 
@@ -93,4 +93,4 @@ Aspose.Words for .NET, .NET uygulamaları için tasarlanmıştır, ancak C#, VB.
 
 ### Aspose.Words for .NET için daha detaylı dokümanları nerede bulabilirim?
 
-Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).
+ Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).

@@ -119,4 +119,4 @@ Java için Aspose.Words'deki koşullu alanlar, belirli ölçütlere göre içeri
 
 ### Aspose.Words for Java farklı Java IDE'leriyle uyumlu mudur?
 
-Evet, Aspose.Words for Java, Eclipse, IntelliJ IDEA ve NetBeans gibi çeşitli Java Entegre Geliştirme Ortamları (IDE'ler) ile uyumludur. Belge işleme görevlerinizi kolaylaştırmak için tercih ettiğiniz IDE'ye entegre edebilirsiniz.
+Evet, Aspose.Words for Java, Eclipse, IntelliJ IDEA ve NetBeans gibi çeşitli Java Entegre Geliştirme Ortamları (IDE'ler) ile uyumludur. Belge işleme görevlerinizi kolaylaştırmak için bunu tercih ettiğiniz IDE'ye entegre edebilirsiniz.

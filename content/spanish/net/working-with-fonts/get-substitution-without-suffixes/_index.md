@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 En esta clase:
-- El`Warning`El método captura advertencias relacionadas con la sustitución de fuentes.
-- El`FontWarnings` La colección almacena estas advertencias para su posterior inspección o registro.
+-  El`Warning`El método captura advertencias relacionadas con la sustitución de fuentes.
+-  El`FontWarnings` La colección almacena estas advertencias para su posterior inspección o registro.
 
 ## Conclusión
 

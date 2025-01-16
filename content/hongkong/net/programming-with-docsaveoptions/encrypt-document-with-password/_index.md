@@ -73,7 +73,7 @@ DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
 
 ## 步驟 4：儲存文檔
 
-最後，讓我們使用指定的選項來儲存文件。這就像將鎖定的日記存放在安全的地方一樣。
+最後，讓我們使用指定的選項來儲存文件。這就像將鎖好的日記存放在安全的地方一樣。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx", saveOptions);

@@ -66,7 +66,7 @@ Console.WriteLine(doc.PageCount);
 
 Tento krok zajistí, že váš dokument bude načten a zpracován pomocí měřené licence.
 
-## Krok 5: Řešení výjimek
+## Krok 5: Ošetřete výjimky
 
 Vždy je dobrým zvykem zvládnout jakékoli potenciální výjimky. Pojďme do našeho kódu přidat blok try-catch, abychom mohli elegantně zvládat chyby.
 

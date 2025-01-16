@@ -50,7 +50,7 @@ using Aspose.Words.Saving;
 
 ## ステップ2: ドキュメントを読み込む
 
-プロジェクトがセットアップされたので、結合する Word ドキュメントをロードしましょう。このチュートリアルでは、これらを「Document source.docx」と「Northwind traders.docx」と呼びます。
+プロジェクトがセットアップされたので、結合する Word 文書を読み込みます。このチュートリアルでは、これらを「Document source.docx」と「Northwind traders.docx」と呼びます。
 
 Aspose.Words を使用してロードする方法は次のとおりです。
 

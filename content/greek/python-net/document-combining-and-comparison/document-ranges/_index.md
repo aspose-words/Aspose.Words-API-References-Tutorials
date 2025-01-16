@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Συγχώνευση Εγγράφων
-
-Ο απρόσκοπτος συνδυασμός εγγράφων είναι μια πολύτιμη δεξιότητα. Η πλοήγηση στα έγγραφα μας βοηθά να τα συγχωνεύσουμε αποτελεσματικά:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Διαίρεση εγγράφων
 
 Μερικές φορές, μπορεί να χρειαστεί να χωρίσουμε ένα έγγραφο σε μικρότερα μέρη. Η πλοήγηση στο έγγραφο μας βοηθά να το πετύχουμε:
@@ -117,8 +109,8 @@ for section in sections:
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

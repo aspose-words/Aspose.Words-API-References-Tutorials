@@ -10,7 +10,7 @@ url: /pt/java/document-revision/document-version-control-history/
 
 ## Introdução
 
-controle de versão de documento eficaz garante que todas as partes interessadas estejam trabalhando com as informações mais recentes e precisas. Aspose.Words para Java é uma biblioteca versátil que capacita os desenvolvedores a criar, editar e gerenciar documentos com facilidade. Vamos mergulhar no processo passo a passo de implementação do controle de versão e do histórico de documentos.
+O controle de versão de documento eficaz garante que todas as partes interessadas estejam trabalhando com as informações mais recentes e precisas. Aspose.Words para Java é uma biblioteca versátil que capacita os desenvolvedores a criar, editar e gerenciar documentos com facilidade. Vamos mergulhar no processo passo a passo de implementação do controle de versão e do histórico de documentos.
 
 ## Pré-requisitos
 

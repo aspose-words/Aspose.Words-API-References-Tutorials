@@ -40,7 +40,7 @@ Sau khi nhập các không gian tên này, bạn đã sẵn sàng để bắt đ
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-Các`LoadOptions` lớp cho phép bạn tùy chỉnh cách tải tài liệu. Ở đây, chúng ta chỉ mới bắt đầu.
+ Các`LoadOptions` lớp cho phép bạn tùy chỉnh cách tải tài liệu. Ở đây, chúng ta chỉ mới bắt đầu.
 
 ## Bước 2: Thêm tiếng Nhật làm ngôn ngữ chỉnh sửa
 

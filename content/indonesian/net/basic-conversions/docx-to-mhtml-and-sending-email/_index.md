@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Langkah 4: Kirim Email
 
-Terakhir, kirim email menggunakan klien SMTP. Konfigurasikan klien SMTP dengan detail server SMTP Anda dan gunakan`Send` metode untuk mengirim pesan.
+ Terakhir, kirim email menggunakan klien SMTP. Konfigurasikan klien SMTP dengan detail server SMTP Anda dan gunakan`Send` metode untuk mengirim pesan.
 
 ```csharp
 // Kirim pesan menggunakan Aspose.Email.
@@ -95,7 +95,7 @@ Ya, Aspose.Words mendukung berbagai format, dan Anda dapat mengonversi dokumen s
 Ya, Aspose.Words kompatibel dengan .NET Core. Anda juga dapat menggunakannya dalam aplikasi .NET Core.
 
 ### Apakah saya memerlukan lisensi untuk Aspose.Words dan Aspose.Email?
-Ya, kedua perpustakaan tersebut memerlukan lisensi. Anda bisa mendapatkan lisensi sementara dari[Halaman pembelian Aspose](https://purchase.aspose.com/temporary-license/) untuk tujuan evaluasi.
+ Ya, kedua perpustakaan tersebut memerlukan lisensi. Anda bisa mendapatkan lisensi sementara dari[Halaman pembelian Aspose](https://purchase.aspose.com/temporary-license/) untuk tujuan evaluasi.
 
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut?
  Anda dapat menemukan dokumentasi terperinci untuk Aspose.Words[Di Sini](https://reference.aspose.com/words/net/) dan untuk Aspose.Email[Di Sini](https://reference.aspose.com/email/net/).

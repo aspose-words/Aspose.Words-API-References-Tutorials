@@ -14,7 +14,7 @@ Gaya dan tema berperan penting dalam menjaga konsistensi dan estetika di seluruh
 
 ## Menyiapkan Lingkungan
 
- Sebelum menyelami penataan gaya, mari kita siapkan lingkungan pengembangan kita. Pastikan Anda telah memasang Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/).
+Sebelum menyelami penataan gaya, mari kita siapkan lingkungan pengembangan kita. Pastikan Anda telah memasang Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/).
 
 ## Memuat dan Menyimpan Dokumen
 
@@ -51,30 +51,8 @@ Gaya juga memengaruhi format paragraf. Sesuaikan perataan, spasi, dan lainnya me
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## Menyesuaikan Gaya Judul
-
-Judul memberikan struktur pada dokumen. Sesuaikan gaya judul untuk hierarki dan keterbacaan yang lebih baik.
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## Menggunakan Tema untuk Tampilan Terpadu
-
-Tema menawarkan tampilan yang konsisten. Terapkan tema ke dokumen Anda untuk sentuhan profesional.
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## Mengubah Warna dan Font Tema
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 Sesuaikan tema dengan kebutuhan Anda dengan menyesuaikan warna dan font tema.
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## Menciptakan Gaya Anda Sendiri
-
-Buat gaya khusus untuk elemen dokumen yang unik, yang memastikan identitas merek Anda bersinar.
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## Mengelola Gaya Berdasarkan Bagian Dokumen
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 Terapkan gaya yang berbeda pada header, footer, dan konten isi untuk tampilan yang lebih menawan.
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## Menangani Gaya Seluruh Dokumen
-
-Terapkan gaya ke seluruh dokumen dengan mudah.
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## Menghapus Pemformatan dan Gaya
-
-Hapus gaya dan pemformatan dengan mudah untuk memulai yang baru.
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## Contoh Praktis dan Kasus Penggunaan
-
-Mari menjelajahi skenario praktis di mana gaya dan tema dapat mengubah dokumen.
-
-1. Membuat Laporan Bermerek
-2. Mendesain Resume yang Menakjubkan
-3. Memformat Makalah Akademik
-
-## Tips untuk Penataan yang Efisien
-
-- Jaga Gaya Tetap Konsisten
-- Gunakan Tema untuk Perubahan Cepat
-- Bereksperimen dengan Berbagai Font dan Warna
 
 ## Kesimpulan
 
@@ -167,4 +109,4 @@ Tema memberikan tampilan dan nuansa yang kohesif dengan mengelompokkan gaya bers
 
 ### Bisakah saya menghapus format dari dokumen saya?
 
- Ya, Anda dapat dengan mudah menghapus pemformatan dan gaya menggunakan`clear_formatting()` metode yang disediakan oleh Aspose.Words untuk Python.
+Ya, Anda dapat dengan mudah menghapus pemformatan dan gaya menggunakan`clear_formatting()` metode yang disediakan oleh Aspose.Words untuk Python.

@@ -17,7 +17,7 @@ Innan du dyker in i koden, se till att du har följande:
 
 1.  Aspose.Words för .NET Library: Du måste ha Aspose.Words-biblioteket installerat i ditt projekt. Om du inte har det ännu kan du ladda ner det från[Aspose.Words för .NET-versioner sida](https://releases.aspose.com/words/net/).
    
-2. Utvecklingsmiljö: Se till att du har en .NET-utvecklingsmiljö inställd, som Visual Studio.
+2. Utvecklingsmiljö: Se till att du har en .NET-utvecklingsmiljö inställd, till exempel Visual Studio.
 
 3. Grundläggande kunskaper: En grundläggande förståelse för C# och hur man använder bibliotek i .NET kommer att vara till hjälp.
 

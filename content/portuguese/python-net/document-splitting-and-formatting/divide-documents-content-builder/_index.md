@@ -8,7 +8,7 @@ weight: 11
 url: /pt/python-net/document-splitting-and-formatting/divide-documents-content-builder/
 ---
 
-O Aspose.Words para Python fornece uma API robusta para trabalhar com documentos do Word, permitindo que você execute várias tarefas de forma eficiente. Um recurso essencial é dividir documentos com o Content Builder, que ajuda a obter precisão e organização em seus documentos. Neste tutorial, exploraremos como usar o Aspose.Words para Python para dividir documentos usando o módulo Content Builder.
+Aspose.Words para Python fornece uma API robusta para trabalhar com documentos do Word, permitindo que você execute várias tarefas de forma eficiente. Um recurso essencial é dividir documentos com o Content Builder, que ajuda a obter precisão e organização em seus documentos. Neste tutorial, exploraremos como usar o Aspose.Words para Python para dividir documentos usando o módulo Content Builder.
 
 ## Introdução
 
@@ -41,14 +41,14 @@ doc = aw.Document()
 
 ## Adicionando conteúdo com o Content Builder
 
-O módulo Content Builder nos permite adicionar conteúdo ao documento de forma eficiente. Vamos adicionar um título e algum texto introdutório.
+módulo Content Builder nos permite adicionar conteúdo ao documento de forma eficiente. Vamos adicionar um título e algum texto introdutório.
 
 ```python
 builder = aw.DocumentBuilder(doc)
 
 # Add a title
 builder.bold()
-builder.font.size = aw.units.point_to_twip(16)
+builder.font.size = 16
 builder.write("Document Precision with Content Builder\n\n")
 
 # Add an introduction

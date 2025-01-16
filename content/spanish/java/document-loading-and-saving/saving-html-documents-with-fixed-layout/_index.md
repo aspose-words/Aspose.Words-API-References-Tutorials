@@ -1,5 +1,5 @@
 ---
-title: Cómo guardar documentos HTML con un diseño fijo en Aspose.Words para Java
+title: Cómo guardar documentos HTML con diseño fijo en Aspose.Words para Java
 linktitle: Cómo guardar documentos HTML con un diseño fijo
 second_title: API de procesamiento de documentos Java Aspose.Words
 description: Aprenda a guardar documentos HTML con un diseño fijo en Aspose.Words para Java. Siga nuestra guía paso a paso para lograr un formato de documento perfecto.

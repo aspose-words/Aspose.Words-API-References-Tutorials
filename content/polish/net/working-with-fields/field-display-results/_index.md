@@ -60,7 +60,7 @@ Pola w dokumentach Word mogą być dynamiczne, co oznacza, że nie zawsze mogą 
 document.UpdateFields();
 ```
 
-Ten`UpdateFields` Metoda iteruje przez wszystkie pola w dokumencie i aktualizuje je najnowszymi danymi. Ten krok jest kluczowy, jeśli Twoje pola zależą od dynamicznej zawartości, takiej jak daty lub obliczenia.
+ Ten`UpdateFields` Metoda iteruje przez wszystkie pola w dokumencie i aktualizuje je najnowszymi danymi. Ten krok jest kluczowy, jeśli Twoje pola zależą od dynamicznej zawartości, takiej jak daty lub obliczenia.
 
 ## Krok 3: Wyświetlanie wyników pól
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
-Ten`DisplayResult` własność`Field` Klasa zwraca sformatowaną wartość pola.`foreach` Pętla przechodzi przez wszystkie pola dokumentu i drukuje ich wyniki.
+ Ten`DisplayResult` własność`Field` Klasa zwraca sformatowaną wartość pola.`foreach` Pętla przechodzi przez wszystkie pola dokumentu i drukuje ich wyniki.
 
 ## Wniosek
 
@@ -97,4 +97,4 @@ Można aktualizować różne typy pól, w tym pola dat, właściwości dokumentu
 Pola wymagające podania danych przez użytkownika (np. pola formularzy) należy wypełnić ręcznie lub za pomocą dodatkowego kodu.
 
 ### Czy istnieje możliwość wyświetlania wyników pól w innym formacie?  
-Ten`DisplayResult` property zapewnia sformatowany wynik. Jeśli potrzebujesz innego formatu, rozważ dodatkowe przetwarzanie w oparciu o swoje wymagania.
+ Ten`DisplayResult` property zapewnia sformatowany wynik. Jeśli potrzebujesz innego formatu, rozważ dodatkowe przetwarzanie w oparciu o swoje wymagania.

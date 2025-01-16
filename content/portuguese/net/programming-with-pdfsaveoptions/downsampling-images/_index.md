@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Nesta etapa, estamos carregando o documento do Word do diretório especificado. Certifique-se de substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real onde seu documento está localizado.
+Nesta etapa, estamos carregando o documento do Word do diretório especificado. Certifique-se de substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real onde seu documento está localizado.
 
 ## Etapa 2: Configurar opções de redução de amostragem
 

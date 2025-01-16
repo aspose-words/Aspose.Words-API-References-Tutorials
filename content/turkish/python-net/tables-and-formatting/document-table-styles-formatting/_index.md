@@ -23,7 +23,7 @@ Belge tablo stilleri ve biçimlendirmesinin ayrıntılarına dalmadan önce, ger
 2. Kütüphaneyi İçe Aktar: Aşağıdaki içe aktarma ifadesini kullanarak Aspose.Words kütüphanesini Python betiğinize aktarın:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. Belge Yükle: Aspose.Words API'sini kullanarak mevcut bir belgeyi yükleyin veya yeni bir belge oluşturun.
@@ -35,7 +35,7 @@ Python için Aspose.Words'ü kullanarak belgelere tablo oluşturmak ve eklemek i
 1.  Bir Tablo Oluşturun: Şunu kullanın:`DocumentBuilder` Yeni bir tablo oluşturmak ve satır ve sütun sayılarını belirtmek için kullanılan sınıf.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ Python için Aspose.Words'ü kullanarak belgelere tablo oluşturmak ve eklemek i
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. Hücre Dolgusu: Hücreler arasındaki boşlukları iyileştirmek için hücrelere dolgu ekleyin.
@@ -80,32 +80,8 @@ Python için Aspose.Words'ü kullanarak belgelere tablo oluşturmak ve eklemek i
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Aspose.Words ile Tabloları Şekillendirme
-
-Python için Aspose.Words tablolarınızı görsel olarak çekici hale getirmek için çeşitli stil seçenekleri sunar:
-
-1. Tablo Stilleri: Profesyonel bir görünüm elde etmek için önceden tanımlanmış tablo stillerini uygulayın.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. Hücre Arkaplan Rengi: Belirli verileri vurgulamak için hücre arkaplan rengini değiştirin.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. Yazı Tipi Biçimlendirmesi: Daha iyi okunabilirlik için yazı tipi stilini, boyutunu ve rengini özelleştirin.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## Karmaşık Düzenler İçin Hücreleri Birleştirme ve Bölme
@@ -115,30 +91,14 @@ Karmaşık tablo düzenleri oluşturmak genellikle hücrelerin birleştirilmesin
 1. Hücreleri Birleştir: Birden fazla hücreyi birleştirerek tek ve daha büyük bir hücre oluşturun.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. Hücreleri Böl: Hücreleri ayrı bileşenlerine ayırır.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## Satır ve Sütun Yüksekliklerini ve Genişliklerini Ayarlama
-
-Dengeli bir tablo düzeni için satır ve sütun boyutlarını ince ayarlayın:
-
-1. Satır Yüksekliğini Ayarla: İçeriğe göre satır yüksekliğini değiştirin.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. Sütun Genişliğini Ayarla: İçeriğe uyacak şekilde sütun genişliğini otomatik olarak ayarlayın.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## Tablolara Kenarlık ve Gölgelendirme Ekleme
@@ -148,13 +108,13 @@ Tablo görünümünü kenarlıklar ve gölgelendirme ekleyerek geliştirin:
 1. Kenarlıklar: Tablolar ve hücreler için kenarlıkları özelleştirin.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. Gölgelendirme: Hücrelere görsel olarak çekici bir etki için gölgelendirme uygulayın.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## Hücre İçeriği ve Hizalama ile Çalışma
@@ -171,7 +131,7 @@ Daha iyi okunabilirlik için hücre içeriğini ve hizalamasını etkin bir şek
 2. Metin Hizalaması: Hücre metnini gerektiği gibi hizalayın.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## Tablo Başlıkları ve Altbilgilerinin İşlenmesi
@@ -188,26 +148,10 @@ Daha iyi bir bağlam için tablolarınıza üstbilgi ve altbilgi ekleyin:
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## Otomatik Olarak Masa Düzenini Ayarlama
-
-Tablo düzeninizin içeriğe göre otomatik olarak ayarlandığından emin olun:
-
-1. Pencereye Otomatik Sığdır: Tablonun sayfa genişliğine sığmasını sağlar.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. Hücreleri Otomatik Yeniden Boyutlandır: İçeriğe uyum sağlamak için hücrelerin otomatik yeniden boyutlandırılmasını etkinleştirin.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## Tabloları Farklı Biçimlere Aktarma
 
 Tablonuz hazır olduğunda, onu PDF veya DOCX gibi çeşitli formatlara aktarabilirsiniz:
@@ -215,21 +159,15 @@ Tablonuz hazır olduğunda, onu PDF veya DOCX gibi çeşitli formatlara aktarabi
 1. PDF olarak kaydet: Tabloyu içeren belgeyi PDF dosyası olarak kaydedin.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. DOCX Olarak Kaydet: Belgeyi DOCX dosyası olarak kaydedin.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## Sorun Giderme ve Etkili Tablo Yönetimi için İpuçları
-
-- Tablolar bozuk görünüyorsa, sütun genişliklerinin veya satır yüksekliklerinin yanlış olup olmadığını kontrol edin.
-- Tutarlılığı sağlamak için tablo oluşturmayı farklı formatlarda test edin.
-- Karmaşık düzenler için hücre birleştirme ve bölme işlemlerini dikkatli bir şekilde planlayın.
-
+	
 ## Çözüm
 
 Python için Aspose.Words, belge tabloları oluşturmak, biçimlendirmek ve biçimlendirmek için kapsamlı bir araç takımı sunar. Bu makalede özetlenen adımları izleyerek, belgelerinizdeki tabloları etkili bir şekilde yönetebilir, görünümlerini özelleştirebilir ve bunları çeşitli biçimlere aktarabilirsiniz. Belge sunumlarınızı geliştirmek ve okuyucularınıza net, görsel olarak çekici bilgiler sağlamak için Aspose.Words'ün gücünden yararlanın.

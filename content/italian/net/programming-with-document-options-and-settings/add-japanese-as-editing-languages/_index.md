@@ -40,7 +40,7 @@ Dopo aver importato questi namespace, sei pronto per iniziare a programmare!
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-IL`LoadOptions` class consente di personalizzare il modo in cui i documenti vengono caricati. Qui, stiamo solo iniziando.
+ IL`LoadOptions` class consente di personalizzare il modo in cui i documenti vengono caricati. Qui, stiamo solo iniziando.
 
 ## Passaggio 2: aggiungere il giapponese come lingua di modifica
 

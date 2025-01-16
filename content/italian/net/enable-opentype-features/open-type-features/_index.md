@@ -56,7 +56,7 @@ Crea una variabile stringa per contenere il percorso alla directory del tuo docu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo in cui si trova il documento.
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo in cui si trova il documento.
 
 ### Caricamento del documento
 

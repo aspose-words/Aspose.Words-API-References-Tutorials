@@ -71,7 +71,7 @@ try {
 `ImageSaveOptions`ドキュメントを画像として保存する方法を指定できるクラスです。
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 説明：

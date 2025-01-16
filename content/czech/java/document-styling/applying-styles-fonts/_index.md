@@ -16,7 +16,7 @@ Aspose.Words for Java je API založené na Javě, které umožňuje vývojářů
 ## Použití stylů a písem: Základy
 
 ### Začínáme
- Chcete-li začít, budete muset nastavit vývojové prostředí Java a stáhnout knihovnu Aspose.Words for Java. Odkaz ke stažení najdete[zde](https://releases.aspose.com/words/java/). Nezapomeňte knihovnu zahrnout do svého projektu.
+Chcete-li začít, budete muset nastavit vývojové prostředí Java a stáhnout knihovnu Aspose.Words for Java. Odkaz ke stažení najdete[zde](https://releases.aspose.com/words/java/). Nezapomeňte knihovnu zahrnout do svého projektu.
 
 ### Vytvoření dokumentu
 Začněme vytvořením nového dokumentu pomocí Aspose.Words for Java:
@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Kombinujte více stylů pro složité formátování dokumentu:
 
 ```java
-//Kombinujte styly pro jedinečný vzhled
+// Kombinujte styly pro jedinečný vzhled
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Aspose.Words for Java poskytuje výkonné možnosti podmíněného formátován�
 Absolutně! Aspose.Words for Java podporuje širokou škálu písem a znaků z různých jazyků a skriptů.
 
 ### Jak mohu přidat hypertextové odkazy do textu se specifickými styly?
- Chcete-li k textu přidat hypertextové odkazy, použijte`FieldHyperlink`třídy v kombinaci se styly k dosažení požadovaného formátování.
+ Chcete-li k textu přidat hypertextové odkazy, použijte`FieldHyperlink` třídy v kombinaci se styly k dosažení požadovaného formátování.
 
 ### Existují nějaká omezení velikosti nebo složitosti dokumentu?
 Aspose.Words for Java dokáže zpracovat dokumenty různých velikostí a složitosti. Extrémně velké dokumenty však mohou vyžadovat další paměťové prostředky.

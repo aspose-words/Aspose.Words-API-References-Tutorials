@@ -60,7 +60,7 @@ try {
 ```
 
 Giải thích:
-- Các`try-catch` khối đảm bảo rằng mọi lỗi gặp phải trong khi tải tài liệu đều được phát hiện và quản lý phù hợp.
+-  Các`try-catch`khối đảm bảo rằng mọi lỗi gặp phải trong khi tải tài liệu đều được phát hiện và quản lý phù hợp.
 
 ## Bước 2: Khởi tạo ImageSaveOptions
 
@@ -71,7 +71,7 @@ Sau khi tài liệu được tải, bước tiếp theo là thiết lập các t
 `ImageSaveOptions` là lớp cho phép bạn chỉ định cách lưu tài liệu dưới dạng hình ảnh.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 Giải thích:

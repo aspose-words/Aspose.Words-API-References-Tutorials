@@ -127,7 +127,7 @@ Comentários âncora são usados para destacar e comentar seções específicas 
 Sim, você pode adicionar vários comentários à mesma seção de texto definindo vários intervalos de comentários.
 
 ### O Aspose.Words para .NET é gratuito?
-Aspose.Words para .NET oferece um teste gratuito que você pode baixar[aqui](https://releases.aspose.com/) . Para obter todos os recursos, você pode comprar uma licença[aqui](https://purchase.aspose.com/buy).
+ Aspose.Words para .NET oferece um teste gratuito que você pode baixar[aqui](https://releases.aspose.com/) . Para obter todos os recursos, você pode comprar uma licença[aqui](https://purchase.aspose.com/buy).
 
 ### Posso personalizar a aparência dos comentários?
 Embora o Aspose.Words se concentre na funcionalidade, a aparência dos comentários em documentos do Word geralmente é controlada pelo próprio Word.

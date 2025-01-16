@@ -25,7 +25,7 @@ Words Processing with Markdown fornisce una risorsa completa per imparare a lavo
 | [Titolo del settext](./setext-heading/) | Scopri come utilizzare Aspose.Words per .NET per automatizzare la creazione e la formattazione di documenti Word con questo tutorial completo e dettagliato. |
 | [Codice indentato](./indented-code/) | Scopri come aggiungere e formattare blocchi di codice rientrati nei documenti Word utilizzando Aspose.Words per .NET con questo tutorial dettagliato e dettagliato. |
 | [Codice recintato](./fenced-code/) | Scopri come aggiungere codice recintato e stringhe informative ai documenti Word usando Aspose.Words per .NET. Guida passo passo inclusa. Migliora le tue competenze di formattazione dei documenti. |
-| [Citazione](./quote/) | Scopri come aggiungere virgolette e virgolette nidificate ai tuoi documenti Word usando Aspose.Words per .NET. Segui questa guida passo passo per padroneggiare la creazione di documenti. |
+| [Citazione](./quote/) | Scopri come aggiungere virgolette e virgolette annidate ai tuoi documenti Word usando Aspose.Words per .NET. Segui questa guida passo passo per padroneggiare la creazione di documenti. |
 | [Elenco puntato](./bulleted-list/) | Scopri come creare e personalizzare elenchi puntati nei documenti Word utilizzando Aspose.Words per .NET con questa guida dettagliata. |
 | [Elenco ordinato](./ordered-list/) | Scopri come creare elenchi ordinati nei documenti Word usando Aspose.Words per .NET con la nostra guida passo-passo. Perfetto per automatizzare la creazione di documenti. |
 | [Tavolo](./table/) | Scopri come creare e personalizzare tabelle in Aspose.Words per .NET con questa guida passo-passo. Perfetta per generare documenti strutturati e visivamente accattivanti. |

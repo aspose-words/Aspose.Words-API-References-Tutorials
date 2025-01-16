@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 In dieser Klasse:
-- Der`Warning`Methode erfasst Warnungen im Zusammenhang mit der Schriftartersetzung.
-- Der`FontWarnings` Die Sammlung speichert diese Warnungen zur weiteren Überprüfung oder Protokollierung.
+-  Der`Warning`Methode erfasst Warnungen im Zusammenhang mit der Schriftartersetzung.
+-  Der`FontWarnings` Die Sammlung speichert diese Warnungen zur weiteren Überprüfung oder Protokollierung.
 
 ## Abschluss
 

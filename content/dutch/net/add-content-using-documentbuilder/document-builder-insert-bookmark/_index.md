@@ -71,7 +71,7 @@ Zodra de bladwijzer is gestart, kunnen we er elke gewenste inhoud aan toevoegen.
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-De`Writeln` Met deze methode wordt een nieuwe alinea met de opgegeven tekst aan het document toegevoegd.
+ De`Writeln` Met deze methode wordt een nieuwe alinea met de opgegeven tekst aan het document toegevoegd.
 
 ## Stap 5: Beëindig de bladwijzer
 
@@ -81,7 +81,7 @@ Nadat we onze content hebben toegevoegd, moeten we de bladwijzer sluiten. Dit ve
 builder.EndBookmark("FineBookmark");
 ```
 
-De`EndBookmark` Met deze methode wordt de bladwijzer voltooid die we eerder zijn gestart.
+ De`EndBookmark` Met deze methode wordt de bladwijzer voltooid die we eerder zijn gestart.
 
 ## Stap 6: Sla het document op
 

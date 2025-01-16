@@ -159,7 +159,7 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ## Wniosek
 
- W tym artykule zbadaliśmy różne aspekty formatowania dokumentów w Aspose.Words for Java. Uzbrojony w te spostrzeżenia, możesz tworzyć pięknie sformatowane dokumenty dla swoich aplikacji Java. Pamiętaj, aby odwołać się do[Aspose.Words dla dokumentacji Java](https://reference.aspose.com/words/java/) w celu uzyskania bardziej szczegółowych wskazówek.
+ W tym artykule zbadaliśmy różne aspekty formatowania dokumentów w Aspose.Words for Java. Uzbrojony w te spostrzeżenia możesz tworzyć pięknie sformatowane dokumenty dla swoich aplikacji Java. Pamiętaj, aby odwołać się do[Aspose.Words dla dokumentacji Java](https://reference.aspose.com/words/java/) w celu uzyskania bardziej szczegółowych wskazówek.
 
 ## Najczęściej zadawane pytania
 

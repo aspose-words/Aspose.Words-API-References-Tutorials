@@ -45,7 +45,7 @@ Prześledźmy proces wstawiania hiperłączy do dokumentu Word przy użyciu Aspo
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Ten`DocumentBuilder` Klasa jest wszechstronnym narzędziem umożliwiającym tworzenie i modyfikowanie dokumentu.
+ Ten`DocumentBuilder` Klasa jest wszechstronnym narzędziem umożliwiającym tworzenie i modyfikowanie dokumentu.
 
 ## Krok 2: Wstaw hiperłącze
 

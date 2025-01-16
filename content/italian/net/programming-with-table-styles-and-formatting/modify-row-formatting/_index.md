@@ -61,7 +61,7 @@ Con la tabella ora accessibile, il passo successivo è recuperare la prima riga.
 Row firstRow = table.FirstRow;
 ```
 
-IL`FirstRow` proprietà ci fornisce la prima riga della tabella. Ora siamo pronti per iniziare a modificarne la formattazione.
+ IL`FirstRow` proprietà ci fornisce la prima riga della tabella. Ora siamo pronti per iniziare a modificarne la formattazione.
 
 ## Passaggio 4: modifica i bordi delle righe
 

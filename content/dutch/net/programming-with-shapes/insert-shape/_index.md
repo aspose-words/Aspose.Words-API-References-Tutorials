@@ -118,4 +118,4 @@ Je kunt de`ShapeType` in de`InsertShape` Methode om verschillende soorten vormen
  Gebruik de`RelativeHorizontalPosition` En`RelativeVerticalPosition` Eigenschappen om vormen te positioneren ten opzichte van andere elementen in het document.
 
 ### Kan ik meerdere vormen groeperen?
- Ja, Aspose.Words voor .NET stelt u in staat om vormen te groeperen met behulp van de`GroupShape` klas.
+ Ja, met Aspose.Words voor .NET kunt u vormen groeperen met behulp van de`GroupShape` klas.

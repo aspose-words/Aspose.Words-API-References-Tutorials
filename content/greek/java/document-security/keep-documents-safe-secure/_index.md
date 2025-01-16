@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Τώρα που έχουμε φορτώσει το έγγραφό μας, ας προχωρήσουμε στην εφαρμογή κρυπτογράφησης σε αυτό. Το Aspose.Words για Java παρέχει έναν απλό τρόπο για να ορίσετε την κρυπτογράφηση εγγράφων:
 
 ```java
-// Ορίστε έναν κωδικό πρόσβασης για να ανοίξετε το έγγραφο
-doc.getWriteProtection().setPassword("yourPassword");
-
-// Ορισμός αλγόριθμου κρυπτογράφησης (προαιρετικό)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// Αποθηκεύστε το κρυπτογραφημένο έγγραφο
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. Προστασία συγκεκριμένων στοιχείων εγγράφου
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 Μερικές φορές, μπορεί να θέλετε να προστατεύσετε μόνο συγκεκριμένα μέρη του εγγράφου σας, όπως κεφαλίδες, υποσέλιδα ή ορισμένες παραγράφους. Το Aspose.Words σάς επιτρέπει να επιτύχετε αυτό το επίπεδο ευαισθησίας στην προστασία εγγράφων:
 
 ```java
-// Προστασία συγκεκριμένης ενότητας (Προστασία μόνο για ανάγνωση)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// Προστασία μιας συγκεκριμένης παραγράφου (Να επιτρέπεται η επεξεργασία μόνο πεδίων φόρμας)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// Αποθηκεύστε το προστατευμένο έγγραφο
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//Οι επεξεργάσιμες περιοχές μας επιτρέπουν να αφήνουμε τμήματα προστατευμένων εγγράφων ανοιχτά για επεξεργασία.
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. Εφαρμογή Ψηφιακών Υπογραφών
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 Η προσθήκη ψηφιακών υπογραφών στο έγγραφό σας μπορεί να εξασφαλίσει τη γνησιότητα και την ακεραιότητά του. Δείτε πώς μπορείτε να εφαρμόσετε μια ψηφιακή υπογραφή χρησιμοποιώντας το Aspose.Words για Java:
 
 ```java
-// Φορτώστε το αρχείο πιστοποιητικού
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// Υπογράψτε το έγγραφο με το πιστοποιητικό
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// Δημιουργήστε ένα σχόλιο, μια ημερομηνία και έναν κωδικό αποκρυπτογράφησης που θα εφαρμοστεί με τη νέα ψηφιακή μας υπογραφή.
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// Αποθηκεύστε το υπογεγραμμένο έγγραφο
-doc.save("path/to/signed/document.docx");
+// Ορίστε ένα όνομα αρχείου τοπικού συστήματος για το μη υπογεγραμμένο έγγραφο εισόδου και ένα όνομα αρχείου εξόδου για το νέο ψηφιακά υπογεγραμμένο αντίγραφό του.
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. Υδατογράφημα των εγγράφων σας
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. Διόρθωση ευαίσθητων πληροφοριών
 
-Κατά την κοινή χρήση εγγράφων, μπορεί να θέλετε να αφαιρέσετε οριστικά ευαίσθητες πληροφορίες για να διασφαλίσετε ότι δεν θα πέσουν σε λάθος χέρια. Το Aspose.Words για Java σάς επιτρέπει να επεξεργαστείτε ευαίσθητο περιεχόμενο:
-
-```java
-// Αναζήτηση και διόρθωση ευαίσθητων πληροφοριών
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// Εφαρμόστε διορθώσεις
-doc.redact(options);
-
-// Αποθηκεύστε το διασκευασμένο έγγραφο
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. Μετατροπή ασφαλών εγγράφων σε άλλες μορφές
+## 10. Μετατροπή ασφαλών εγγράφων σε άλλες μορφές
 
 Το Aspose.Words για Java σάς δίνει επίσης τη δυνατότητα να μετατρέψετε τα ασφαλή έγγραφά σας σε διάφορες μορφές, όπως PDF ή HTML:
 
 ```java
-// Τοποθετήστε το ασφαλισμένο έγγραφο
+//Τοποθετήστε το ασφαλισμένο έγγραφο
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // Μετατροπή σε PDF
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // Μετατροπή σε HTML
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. Βέλτιστες πρακτικές για την ασφάλεια εγγράφων
-
-Για να διασφαλίσετε ισχυρή ασφάλεια εγγράφων, ακολουθήστε αυτές τις βέλτιστες πρακτικές:
-
-- Ενημερώνετε τακτικά τα μέτρα ασφαλείας σας για να είστε μπροστά από πιθανές απειλές.
-- Χρησιμοποιήστε ισχυρούς κωδικούς πρόσβασης και αλγόριθμους κρυπτογράφησης.
-- Περιορίστε την πρόσβαση σε ευαίσθητα έγγραφα με βάση την ανάγκη γνώσης.
-- Εκπαιδεύστε τους υπαλλήλους να αναγνωρίζουν και να ανταποκρίνονται σε κινδύνους ασφαλείας.
-
-## 13. Έλεγχος ασφάλειας εγγράφων
-
-Αφού εφαρμόσετε μέτρα ασφαλείας, ελέγξτε διεξοδικά τα έγγραφά σας για να βεβαιωθείτε ότι παραμένουν ασφαλή σε διάφορα σενάρια. Προσπαθήστε να παρακάμψετε τους ελέγχους ασφαλείας για τον εντοπισμό πιθανών τρωτών σημείων.
-
-## 14. Συμπέρασμα
+## Σύναψη
 
 Σε αυτόν τον αναλυτικό οδηγό, εξερευνήσαμε τη σημασία της ασφάλειας των εγγράφων και πώς το Aspose.Words για Java μπορεί να βοηθήσει στην προστασία των εγγράφων σας από μη εξουσιοδοτημένη πρόσβαση. Αξιοποιώντας τις δυνατότητες της βιβλιοθήκης, όπως προστασία με κωδικό πρόσβασης, κρυπτογράφηση, ψηφιακές υπογραφές, υδατοσήμανση και επεξεργασία, μπορείτε να διασφαλίσετε ότι τα έγγραφά σας παραμένουν ασφαλή και ασφαλή.
 
 ## Συχνές ερωτήσεις
 
 ### Μπορώ να χρησιμοποιήσω το Aspose.Words για Java σε εμπορικά έργα;
-   Ναι, το Aspose.Words για Java μπορεί να χρησιμοποιηθεί σε εμπορικά έργα στο πλαίσιο του μοντέλου αδειοδότησης ανά προγραμματιστή.
+Ναι, το Aspose.Words για Java μπορεί να χρησιμοποιηθεί σε εμπορικά έργα στο πλαίσιο του μοντέλου αδειοδότησης ανά προγραμματιστή.
 
 ### Το Aspose.Words υποστηρίζει άλλες μορφές εγγράφων εκτός από το Word;
-   Ναι, το Aspose.Words υποστηρίζει ένα ευρύ φάσμα μορφών, συμπεριλαμβανομένων των PDF, HTML, EPUB και άλλων.
+Ναι, το Aspose.Words υποστηρίζει ένα ευρύ φάσμα μορφών, συμπεριλαμβανομένων των PDF, HTML, EPUB και άλλων.
 
 ### Είναι δυνατή η προσθήκη πολλαπλών ψηφιακών υπογραφών σε ένα έγγραφο;
-   Ναι, το Aspose.Words σάς επιτρέπει να προσθέσετε πολλές ψηφιακές υπογραφές σε ένα έγγραφο.
+Ναι, το Aspose.Words σάς επιτρέπει να προσθέσετε πολλές ψηφιακές υπογραφές σε ένα έγγραφο.
 
 ### Το Aspose.Words υποστηρίζει την ανάκτηση κωδικού πρόσβασης εγγράφων;
-   Όχι, το Aspose.Words δεν παρέχει δυνατότητες ανάκτησης κωδικού πρόσβασης. Φροντίστε να διατηρείτε τους κωδικούς πρόσβασής σας ασφαλείς.
+Όχι, το Aspose.Words δεν παρέχει δυνατότητες ανάκτησης κωδικού πρόσβασης. Φροντίστε να διατηρείτε τους κωδικούς πρόσβασής σας ασφαλείς.
 
 ### Μπορώ να προσαρμόσω την εμφάνιση των υδατογραφημάτων;
-   Ναι, μπορείτε να προσαρμόσετε πλήρως την εμφάνιση των υδατογραφημάτων, συμπεριλαμβανομένου του κειμένου, της γραμματοσειράς, του χρώματος, του μεγέθους και της περιστροφής.
+Ναι, μπορείτε να προσαρμόσετε πλήρως την εμφάνιση των υδατογραφημάτων, συμπεριλαμβανομένου του κειμένου, της γραμματοσειράς, του χρώματος, του μεγέθους και της περιστροφής.

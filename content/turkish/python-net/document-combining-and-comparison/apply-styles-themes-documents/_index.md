@@ -14,7 +14,7 @@ Stiller ve temalar, belgeler arasında tutarlılık ve estetiğin korunmasında 
 
 ## Ortamın Kurulması
 
- Stile dalmadan önce, geliştirme ortamımızı ayarlayalım. Python için Aspose.Words'ün yüklü olduğundan emin olun. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/).
+Stile dalmadan önce, geliştirme ortamımızı ayarlayalım. Python için Aspose.Words'ün yüklü olduğundan emin olun. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/).
 
 ## Belgeleri Yükleme ve Kaydetme
 
@@ -51,30 +51,8 @@ Stiller paragraf biçimlendirmesini de etkiler. Stilleri kullanarak hizalamalar�
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## Başlık Stillerini Özelleştirme
-
-Başlıklar belgelere yapı kazandırır. Daha iyi hiyerarşi ve okunabilirlik için başlık stillerini özelleştirin.
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## Birleşik Bir Görünüm İçin Temaların Kullanımı
-
-Temalar tutarlı bir görünüm sunar. Profesyonel bir dokunuş için belgenize bir tema uygulayın.
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## Tema Renklerini ve Yazı Tiplerini Değiştirme
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 Tema renklerini ve yazı tiplerini ayarlayarak temaları ihtiyaçlarınıza göre uyarlayın.
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## Kendi Stilinizi Oluşturun
-
-Marka kimliğinizin parlamasını sağlamak için benzersiz belge öğeleri için özel stiller oluşturun.
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## Belge Parçalarına Dayalı Stil Yönetimi
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 Daha şık bir görünüm için başlıklara, alt bilgilere ve gövde içeriğine farklı stiller uygulayın.
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## Belge Genelindeki Stillerin İşlenmesi
-
-Bir stili tüm belgeye kolayca uygulayın.
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## Biçimlendirme ve Stilleri Temizleme
-
-Stilleri ve biçimlendirmeleri kolayca kaldırarak yeni bir başlangıç yapın.
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## Pratik Örnekler ve Kullanım Örnekleri
-
-Stillerin ve temaların belgeleri nasıl dönüştürebileceğine dair pratik senaryoları keşfedelim.
-
-1. Markalı Raporlar Oluşturma
-2. Çarpıcı Özgeçmişler Tasarlamak
-3. Akademik Makalelerin Biçimlendirilmesi
-
-## Etkili Şekillendirme İçin İpuçları
-
-- Stilleri Tutarlı Tutun
-- Hızlı Yenilemeler için Temaları Kullanın
-- Farklı Yazı Tipleri ve Renklerle Deneyler Yapın
 
 ## Çözüm
 
@@ -167,4 +109,4 @@ Temalar, stilleri bir araya getirerek tutarlı bir görünüm ve his sağlar ve 
 
 ### Belgemdeki biçimlendirmeyi temizlemem mümkün mü?
 
- Evet, biçimlendirmeyi ve stilleri kullanarak kolayca kaldırabilirsiniz.`clear_formatting()` Python için Aspose.Words tarafından sağlanan yöntem.
+Evet, biçimlendirmeyi ve stilleri kullanarak kolayca kaldırabilirsiniz.`clear_formatting()` Python için Aspose.Words tarafından sağlanan yöntem.

@@ -89,7 +89,7 @@ Ustawianie kierunku tekstu w dokumentach Word to prosty proces dzięki Aspose.Wo
 
 ###  Co to jest`DocumentDirection` property used for?
 
-Ten`DocumentDirection` nieruchomość w`TxtLoadOptions` określa kierunek tekstu w dokumencie. Można go ustawić na`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , Lub`DocumentDirection.RightToLeft`.
+ Ten`DocumentDirection` nieruchomość w`TxtLoadOptions` określa kierunek tekstu w dokumencie. Można go ustawić na`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , Lub`DocumentDirection.RightToLeft`.
 
 ### Czy mogę ustawić kierunek tekstu dla konkretnych akapitów, a nie dla całego dokumentu?
 

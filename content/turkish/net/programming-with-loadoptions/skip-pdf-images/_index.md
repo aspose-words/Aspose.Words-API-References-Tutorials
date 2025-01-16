@@ -91,7 +91,7 @@ Hayır, görselleri atlamak yalnızca görselleri etkiler. Metin bozulmadan ve t
 
 ### Bu özelliği diğer belge formatlarıyla da kullanabilir miyim?
 
-The`SkipPdfImages` seçeneği özellikle PDF belgeleri içindir. Diğer formatlar için farklı seçenekler ve yöntemler mevcuttur.
+ The`SkipPdfImages` seçeneği özellikle PDF belgeleri içindir. Diğer formatlar için farklı seçenekler ve yöntemler mevcuttur.
 
 ### Resimlerin atlandığını nasıl doğrulayabilirim?
 

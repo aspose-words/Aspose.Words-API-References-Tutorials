@@ -19,10 +19,10 @@ url: /hi/python-net/document-splitting-and-formatting/split-format-documents/
 पहला चरण उस दस्तावेज़ को लोड करना है जिसे आप विभाजित और फ़ॉर्मेट करना चाहते हैं। इसे प्राप्त करने के लिए निम्न कोड स्निपेट का उपयोग करें:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## चरण 2: दस्तावेज़ को अनुभागों में विभाजित करें
@@ -41,10 +41,10 @@ sections = document.sections
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## चरण 4: दस्तावेज़ सहेजें
@@ -55,14 +55,20 @@ section.page_setup.bottom_margin = asposewords.pt_to_px(1)
 document.save("path/to/save/updated_document.docx")
 ```
 
-## पूछे जाने वाले प्रश्न
+## निष्कर्ष
+
+Aspose.Words for Python आपके ज़रूरतों के हिसाब से दस्तावेज़ों को कुशलतापूर्वक विभाजित और फ़ॉर्मेट करने के लिए उपकरणों का एक व्यापक सेट प्रदान करता है। इस ट्यूटोरियल में बताए गए चरणों का पालन करके और दिए गए स्रोत कोड उदाहरणों का उपयोग करके, आप अपने दस्तावेज़ों को सहजता से प्रबंधित कर सकते हैं और उन्हें पेशेवर रूप से प्रस्तुत कर सकते हैं।
+
+इस ट्यूटोरियल में, हमने दस्तावेज़ विभाजन, स्वरूपण की मूल बातें कवर की हैं, और सामान्य प्रश्नों के समाधान प्रदान किए हैं। अब आपके दस्तावेज़ प्रबंधन वर्कफ़्लो को और बेहतर बनाने के लिए Aspose.Words for Python की क्षमताओं का पता लगाने और उनके साथ प्रयोग करने की बारी है।
+
+## अक्सर पूछे जाने वाले प्रश्न
 
 ### मैं किसी दस्तावेज़ को एकाधिक फ़ाइलों में कैसे विभाजित कर सकता हूँ?
 आप अनुभागों के माध्यम से पुनरावृत्ति करके और प्रत्येक अनुभाग को एक अलग दस्तावेज़ के रूप में सहेजकर दस्तावेज़ को कई फ़ाइलों में विभाजित कर सकते हैं। यहाँ एक उदाहरण दिया गया है:
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ for i, section in enumerate(sections):
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### मैं किसी विशिष्ट अनुभाग के लिए फ़ॉन्ट शैली कैसे बदलूं?
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### क्या दस्तावेज़ से किसी विशिष्ट अनुभाग को हटाना संभव है?
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## निष्कर्ष
-Aspose.Words for Python आपके ज़रूरतों के हिसाब से दस्तावेज़ों को कुशलतापूर्वक विभाजित और फ़ॉर्मेट करने के लिए उपकरणों का एक व्यापक सेट प्रदान करता है। इस ट्यूटोरियल में बताए गए चरणों का पालन करके और दिए गए स्रोत कोड उदाहरणों का उपयोग करके, आप अपने दस्तावेज़ों को सहजता से प्रबंधित कर सकते हैं और उन्हें पेशेवर रूप से प्रस्तुत कर सकते हैं।
-
-इस ट्यूटोरियल में, हमने दस्तावेज़ विभाजन, स्वरूपण की मूल बातें कवर की हैं, और सामान्य प्रश्नों के समाधान प्रदान किए हैं। अब आपके दस्तावेज़ प्रबंधन वर्कफ़्लो को और बेहतर बनाने के लिए Aspose.Words for Python की क्षमताओं का पता लगाने और उनके साथ प्रयोग करने की बारी है।

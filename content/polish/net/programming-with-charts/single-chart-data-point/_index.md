@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-Ten`InsertChart` Metoda przyjmuje typ wykresu, szerokość i wysokość jako parametry. W tym przypadku wstawiamy wykres liniowy o szerokości 432 i wysokości 252.
+ Ten`InsertChart` Metoda przyjmuje typ wykresu, szerokość i wysokość jako parametry. W tym przypadku wstawiamy wykres liniowy o szerokości 432 i wysokości 252.
 
 ## Krok 3: Dostęp do serii wykresów
 

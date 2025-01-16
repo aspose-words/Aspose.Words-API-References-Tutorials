@@ -41,7 +41,7 @@ using Aspose.Words.Fields;
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメント フォルダへの実際のパスを入力します。ここに新しいドキュメントが保存されます。
+交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメント フォルダーへの実際のパスを入力します。ここに新しいドキュメントが保存されます。
 
 ## ステップ2: ドキュメントとDocumentBuilderを作成する
 

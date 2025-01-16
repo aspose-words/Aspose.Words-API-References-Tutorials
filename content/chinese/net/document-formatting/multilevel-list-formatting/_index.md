@@ -52,7 +52,7 @@ builder.Writeln("Item 2");
 
 在这些行中，`ApplyNumberDefault`开始编号列表，然后`Writeln`将项目添加到列表中。
 
-## 步骤 3：缩进子层
+## 步骤 3：子层级缩进
 
 接下来，要在列表中创建子级别，请使用`ListIndent`方法。此方法缩进列表项，使其成为前一个项的子级。
 

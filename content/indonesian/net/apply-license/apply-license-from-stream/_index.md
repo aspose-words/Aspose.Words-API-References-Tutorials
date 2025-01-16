@@ -21,7 +21,7 @@ Sebelum kita mulai, mari pastikan Anda memiliki semua yang dibutuhkan:
 
 ## Mengimpor Ruang Nama
 
-Untuk memulainya, Anda perlu mengimpor namespace yang diperlukan. Ini akan memastikan Anda memiliki akses ke semua kelas dan metode yang diperlukan di Aspose.Words untuk .NET.
+Untuk memulai, Anda perlu mengimpor namespace yang diperlukan. Ini akan memastikan Anda memiliki akses ke semua kelas dan metode yang diperlukan di Aspose.Words untuk .NET.
 
 ```csharp
 using Aspose.Words;

@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-De`Aspose.Words` naamruimte bevat de kernklassen voor het manipuleren van Word-documenten, terwijl`Aspose.Words.Tables` is specifiek bedoeld voor het verwerken van tabellen.
+ De`Aspose.Words` naamruimte bevat de kernklassen voor het manipuleren van Word-documenten, terwijl`Aspose.Words.Tables` is specifiek bedoeld voor het verwerken van tabellen.
 
 ## Stap 1: Stel uw document in
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- In deze stap definieert u het pad waar uw document is opgeslagen en laadt u het in een`Document` object. Vervangen`"YOUR DOCUMENT DIRECTORY"`met het werkelijke pad waar uw document zich bevindt.
+ In deze stap definieert u het pad waar uw document is opgeslagen en laadt u het in een`Document` object. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het werkelijke pad waar uw document zich bevindt.
 
 ## Stap 2: Toegang tot de tabel
 
@@ -68,7 +68,7 @@ Nu u de tabel hebt, kunt u de auto-fit functionaliteit toepassen. Dit zal de tab
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-De`AutoFit` methode met`AutoFitBehavior.AutoFitToWindow` zorgt ervoor dat de tabelbreedte wordt aangepast aan de volledige breedte van de pagina.
+ De`AutoFit` methode met`AutoFitBehavior.AutoFitToWindow` zorgt ervoor dat de tabelbreedte wordt aangepast aan de volledige breedte van de pagina.
 
 ## Stap 4: Sla het gewijzigde document op
 

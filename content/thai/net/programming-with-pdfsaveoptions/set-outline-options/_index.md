@@ -52,7 +52,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions();
 
 ### กำหนดระดับโครงร่างหัวข้อ
 
-การ`HeadingsOutlineLevels` คุณสมบัติจะกำหนดว่าควรใส่หัวเรื่องกี่ระดับในโครงร่าง PDF ตัวอย่างเช่น หากคุณตั้งค่าเป็น 3 ระบบจะใส่หัวเรื่องได้สูงสุดสามระดับในโครงร่าง PDF
+ การ`HeadingsOutlineLevels` คุณสมบัติจะกำหนดว่าควรใส่หัวเรื่องกี่ระดับในโครงร่าง PDF ตัวอย่างเช่น หากคุณตั้งค่าเป็น 3 ระบบจะใส่หัวเรื่องได้สูงสุดสามระดับในโครงร่าง PDF
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### ตั้งค่าระดับเค้าร่างขยาย
 
-การ`ExpandedOutlineLevels`คุณสมบัติจะควบคุมจำนวนระดับของโครงร่างที่ควรขยายตามค่าเริ่มต้นเมื่อเปิด PDF การตั้งค่านี้เป็น 1 จะขยายหัวเรื่องระดับบนสุด ทำให้มองเห็นส่วนหลักได้ชัดเจน
+ การ`ExpandedOutlineLevels`คุณสมบัติจะควบคุมจำนวนระดับของโครงร่างที่ควรขยายตามค่าเริ่มต้นเมื่อเปิด PDF การตั้งค่านี้เป็น 1 จะขยายหัวเรื่องระดับบนสุด ทำให้มองเห็นส่วนหลักได้ชัดเจน
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

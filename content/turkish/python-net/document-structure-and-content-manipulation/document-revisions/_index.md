@@ -16,10 +16,10 @@ Belge revizyonları, zaman içinde bir belgede yapılan değişiklikleri izlemey
 
 ## Python için Aspose.Words Kurulumu
 
- Başlamadan önce, Python için Aspose.Words'ün yüklü olduğundan emin olun. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/)Kurulum tamamlandıktan sonra, başlamak için gerekli modülleri Python betiğinize aktarabilirsiniz.
+Başlamadan önce, Python için Aspose.Words'ün yüklü olduğundan emin olun. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/)Kurulum tamamlandıktan sonra, başlamak için gerekli modülleri Python betiğinize aktarabilirsiniz.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Bir Belgeyi Yükleme ve Görüntüleme
@@ -27,7 +27,7 @@ import asposewords
 Bir belgeyle çalışmak için önce onu Python uygulamanıza yüklemeniz gerekir. Bir belgeyi yüklemek ve içeriğini görüntülemek için aşağıdaki kod parçacığını kullanın:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 Belgede herhangi bir değişiklik yapıldığında, Aspose.Words bunları otomatik olarak revizyon olarak izleyebilir. Örneğin, belirli bir kelimeyi değiştirmek istiyorsak, değişikliği takip ederken bunu yapabiliriz:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words, iki belgeyi karşılaştırarak aralarındaki farkları görselleştirmenize olanak tanır:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 İşbirlikçiler bir belgeye yorumlar ve açıklamalar ekleyebilir. Bu öğeleri programatik olarak yönetebilirsiniz:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 Eklenen ve silinen metnin rengini değiştirmek gibi, düzeltmelerin belgede nasıl görüneceğini özelleştirebilirsiniz:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Belgeleri Kaydetme ve Paylaşma
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 Daha fazla geri bildirim almak için son belgeyi işbirlikçilerinizle paylaşın.
-
-## Etkili İşbirliği İçin İpuçları
-
-1. Düzeltmeleri anlamlı yorumlarla açıkça etiketleyin.
-2. Revizyon yönergelerini tüm işbirlikçilere iletin.
-3. Revizyonları düzenli olarak inceleyin ve kabul edin/reddedin.
-4. Kapsamlı belge analizi için Aspose.Words'ün karşılaştırma özelliğini kullanın.
 
 ## Çözüm
 

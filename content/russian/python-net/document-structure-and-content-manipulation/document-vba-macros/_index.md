@@ -20,7 +20,7 @@ url: /ru/python-net/document-structure-and-content-manipulation/document-vba-mac
 Чтобы приступить к этому пути автоматизации, вам необходимо установить Aspose.Words for Python. Вы можете загрузить его с[Сайт Aspose](https://releases.aspose.com/words/python/)После установки вы можете запустить свой проект Python и импортировать необходимые модули.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Понимание макросов VBA и их роли
@@ -46,7 +46,7 @@ End Sub
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content
@@ -91,7 +91,7 @@ End Sub
 
 ## Обработка ошибок и отладка
 
-Надежная автоматизация включает в себя надлежащую обработку ошибок и механизмы отладки. Благодаря объединенной мощи макросов Python и VBA Aspose.Words вы можете реализовать процедуры обнаружения ошибок и повысить стабильность рабочих процессов автоматизации.
+Надежная автоматизация включает в себя надлежащую обработку ошибок и механизмы отладки. Благодаря объединенной мощи макросов Aspose.Words Python и VBA вы можете реализовать процедуры обнаружения ошибок и повысить стабильность рабочих процессов автоматизации.
 
 ```vba
 Sub HandleErrors()

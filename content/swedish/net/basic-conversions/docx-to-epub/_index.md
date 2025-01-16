@@ -45,7 +45,7 @@ doc.Save(dataDir + "ConvertedDocument.epub", SaveFormat.Epub);
 
 ## Slutsats
 
-den här handledningen har vi utforskat hur man konverterar DOCX-filer till EPUB-format med Aspose.Words för .NET. Genom att följa dessa enkla steg kan du sömlöst integrera funktioner för dokumentkonvertering i dina .NET-applikationer.
+I den här handledningen har vi utforskat hur man konverterar DOCX-filer till EPUB-format med Aspose.Words för .NET. Genom att följa dessa enkla steg kan du sömlöst integrera funktioner för dokumentkonvertering i dina .NET-applikationer.
 
 ## FAQ's
 

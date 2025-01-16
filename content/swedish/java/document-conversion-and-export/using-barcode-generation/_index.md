@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Ställ in streckkodsgenerator
 
- Ställ in en anpassad streckkodsgenerator med hjälp av`FieldOptions` klass. I det här exemplet antar vi att du har implementerat en`CustomBarcodeGenerator` klass för att generera streckkoden. Ersätta`CustomBarcodeGenerator` med din faktiska streckkodsgenereringslogik:
+ Ställ in en anpassad streckkodsgenerator med hjälp av`FieldOptions` klass. I det här exemplet antar vi att du har implementerat en`CustomBarcodeGenerator`klass för att generera streckkoden. Ersätta`CustomBarcodeGenerator` med din faktiska streckkodsgenereringslogik:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
@@ -46,7 +46,7 @@ doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
 
 ## Spara dokumentet som PDF
 
- Slutligen, spara det ändrade dokumentet som en PDF eller i det format du föredrar. Ersätta`"WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf"` med önskad sökväg för utdatafil:
+ Slutligen, spara det ändrade dokumentet som en PDF eller i det format du föredrar. Ersätta`"WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf"` med din önskade sökväg för utdatafil:
 
 ```java
 doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");

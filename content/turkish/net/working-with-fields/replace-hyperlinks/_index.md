@@ -86,7 +86,7 @@ Evet, Aspose.Words tablolar, resimler ve köprü metinleri gibi karmaşık yapı
  Evet, ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/).
 
 ### Aspose.Words for .NET için dokümanları nerede bulabilirim?
-Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).
+ Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words for .NET için geçici lisanslamayı nasıl alabilirim?
  Geçici lisanslar alınabilir[Burada](https://purchase.aspose.com/temporary-license/).

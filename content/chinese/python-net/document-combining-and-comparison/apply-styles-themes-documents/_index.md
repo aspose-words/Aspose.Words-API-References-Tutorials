@@ -51,30 +51,8 @@ font.style_identifier = StyleIdentifier.STRONG
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## 自定义标题样式
-
-标题为文档提供结构。自定义标题样式以获得更好的层次结构和可读性。
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## 使用主题实现统一外观
-
-主题提供一致的外观。将主题应用到您的文档以获得专业的外观。
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## 修改主题颜色和字体
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 通过调整主题颜色和字体来定制适合您需要的主题。
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## 创建自己的风格
-
-为独特的文档元素制作自定义样式，确保您的品牌形象闪耀。
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## 根据文档部分管理样式
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 对页眉、页脚和正文内容应用不同的样式，以获得更美观的外观。
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## 处理文档范围的样式
-
-轻松地将样式应用于整个文档。
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## 清除格式和样式
-
-轻松删除样式和格式以重新开始。
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## 实际示例和用例
-
-让我们探索样式和主题可以转换文档的实际场景。
-
-1. 创建品牌报告
-2. 设计出色的简历
-3. 学术论文格式
-
-## 高效造型小贴士
-
-- 保持风格一致
-- 使用主题进行快速改造
-- 尝试不同的字体和颜色
 
 ## 结论
 

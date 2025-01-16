@@ -12,7 +12,7 @@ url: /zh-hant/java/document-manipulation/splitting-documents-into-pages/
 
 ## 一、簡介
 
-Aspose.Words for Java 是一個 Java 函式庫，可讓您以程式設計方式操作 Word 文件。一項常見任務是將文件拆分為單獨的頁面，這可用於多種目的，例如歸檔、列印或文件處理。
+Aspose.Words for Java 是一個 Java 函式庫，可讓您以程式設計方式操作 Word 文件。一項常見任務是將文件拆分為單獨的頁面，這可用於多種目的，例如存檔、列印或文件處理。
 
 ## 2. 前提條件
 
@@ -78,13 +78,13 @@ for (int page = 1; page <= doc.getPageCount(); page++) {
 ## DocumentPageSplitter原始碼
 
 ```java
-/// <摘要>
-//將一個文檔拆分為多個文檔，每頁一個。
+//<摘要>
+/// 將一個文檔拆分為多個文檔，每頁一個。
 /// </摘要>
 class DocumentPageSplitter
 {
 private PageNumberFinder pageNumberFinder;
-/// <摘要>
+//<摘要>
 /// 初始化 <see cref="DocumentPageSplitter"/> 類別的新實例。
 /// 此方法將文件拆分為多個部分，以便每個頁面在部分邊界處開始和結束。
 /// 建議事後不要修改該文件。
@@ -97,7 +97,7 @@ public DocumentPageSplitter(Document source) throws Exception
 private Document getDocument() {
 	return pageNumberFinder.getDocument();
 }
-/// <摘要>
+//<摘要>
 /// 取得頁面的文檔。
 /// </摘要>
 /// <參數名稱=“頁面索引”>
@@ -109,10 +109,10 @@ private Document getDocument() {
 public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
-/// <摘要>
-/// 取得文件的一個頁面範圍。
+//<摘要>
+//取得文件的一個頁面範圍。
 /// </摘要>
-//<參數名稱=“startIndex”>
+/// <參數名稱=“startIndex”>
 ///1 基於起始頁的索引。
 /// </參數>
 /// <參數名稱=“endIndex”>
@@ -130,7 +130,7 @@ public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exce
 	return result;
 }
 }
-/// <摘要>
+//<摘要>
 /// 提供提取在指定頁面上呈現的文檔節點的方法。
 /// </摘要>
 class PageNumberFinder
@@ -142,7 +142,7 @@ private Map<Node, Integer> nodeEndPageLookup = new HashMap<>();
 private LayoutCollector collector;
 //將頁碼對應到該頁面上找到的節點清單。
 private Map<Integer, ArrayList<Node>> reversePageLookup;
-/// <摘要>
+//<摘要>
 /// 初始化 <see cref="PageNumberFinder"/> 類別的新實例。
 /// </摘要>
 /// <param name="collector">具有文件佈局模型記錄的收集器實例。
@@ -154,7 +154,7 @@ public Document getDocument()
 {
 	return collector.getDocument();
 }
-/// <摘要>
+//<摘要>
 /// 檢索節點開始的頁面的從 1 開始的索引。
 /// </摘要>
 /// <參數名稱=“節點”>
@@ -168,7 +168,7 @@ public int getPage(Node node) throws Exception {
 		? nodeStartPageLookup.get(node)
 		: collector.getStartPageIndex(node);
 }
-/// <摘要>
+//<摘要>
 /// 檢索節點結束的頁面的從 1 開始的索引。
 /// </摘要>
 /// <參數名稱=“節點”>
@@ -182,7 +182,7 @@ public int getPageEnd(Node node) throws Exception {
 		? nodeEndPageLookup.get(node)
 		: collector.getEndPageIndex(node);
 }
-/// <摘要>
+//<摘要>
 //傳回指定節點跨越的頁數。如果該節點包含在一頁內，則傳回 1。
 /// </摘要>
 /// <參數名稱=“節點”>
@@ -194,7 +194,7 @@ public int getPageEnd(Node node) throws Exception {
 public int pageSpan(Node node) throws Exception {
 	return getPageEnd(node) - getPage(node) + 1;
 }
-/// <摘要>
+//<摘要>
 /// 傳回指定頁面上任何位置所包含的節點清單或與指定節點類型相符的頁面。
 /// </摘要>
 /// <參數名稱=“起始頁”>
@@ -240,7 +240,7 @@ public ArrayList<Node> retrieveAllNodesOnPages(int startPage, int endPage, /*Nod
 	}
 	return pageNodes;
 }
-/// <摘要>
+//<摘要>
 /// 將出現在兩個或多個頁面上的節點拆分為單獨的節點，以便它們仍然以相同的方式顯示
 //但不再出現在頁面上。
 /// </摘要>
@@ -257,7 +257,7 @@ public void splitNodesAcrossPages() throws Exception
 	//訪問任何可能跨頁面拆分的組合並將它們拆分為單獨的節點。
 	collector.getDocument().accept(new SectionSplitter(this));
 }
-/// <摘要>
+//<摘要>
 /// 這是由<see cref="SectionSplitter"/>呼叫來更新分割節點的頁碼。
 /// </摘要>
 /// <參數名稱=“節點”>
@@ -342,7 +342,7 @@ private static String[] reverseWord(String str) {
 	}
 	return reverseWord.split(" ");
 }
-/// <摘要>
+//<摘要>
 /// 將指定運行的文字拆分為兩個運行。
 /// 在指定的運行之後插入新的運行。
 /// </摘要>
@@ -372,7 +372,7 @@ public static PageNumberFinder create(Document document) throws Exception
 	return pageNumberFinder;
 }
 }
-/// <摘要>
+//<摘要>
 /// 將文件拆分為多個部分，以便每個頁面在部分邊界處開始和結束。
 /// </摘要>
 class SectionSplitter extends DocumentVisitor

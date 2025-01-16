@@ -7,90 +7,145 @@ type: docs
 weight: 13
 url: /tr/java/document-security/digital-signatures-in-documents/
 ---
+## giriiş
 
-Dijital imzalar, dijital belgelerin gerçekliğini ve bütünlüğünü sağlamada önemli bir rol oynar. Bir belgenin tahrif edilmediğini ve gerçekten belirtilen imzalayan tarafından oluşturulduğunu veya onaylandığını doğrulamanın bir yolunu sağlarlar. Bu adım adım kılavuzda, Aspose.Words for Java kullanarak belgelerde dijital imzaların nasıl uygulanacağını inceleyeceğiz. Ortamı kurmaktan belgelerinize dijital imzalar eklemeye kadar her şeyi ele alacağız. Başlayalım!
+Giderek dijitalleşen dünyamızda, güvenli ve doğrulanabilir belge imzalama ihtiyacı hiç bu kadar kritik olmamıştı. İster bir iş profesyoneli, ister bir hukuk uzmanı veya sadece sık sık belge gönderen biri olun, dijital imzaların nasıl uygulanacağını anlamak size zaman kazandırabilir ve evraklarınızın bütünlüğünü garanti edebilir. Bu eğitimde, dijital imzaları belgelere sorunsuz bir şekilde eklemek için Java için Aspose.Words'ü nasıl kullanacağınızı keşfedeceğiz. Dijital imzaların dünyasına dalmaya ve belge yönetiminizi yükseltmeye hazır olun!
 
 ## Ön koşullar
 
-Uygulamaya geçmeden önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
+Dijital imza eklemenin inceliklerine girmeden önce, başlamak için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
--  Aspose.Words for Java: Aspose.Words for Java'yı indirin ve yükleyin[Burada](https://releases.aspose.com/words/java/).
+1.  Java Geliştirme Kiti (JDK): Makinenizde JDK'nın yüklü olduğundan emin olun. Bunu şu adresten indirebilirsiniz:[Oracle web sitesi](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 
-## Projenizi Kurma
+2.  Java için Aspose.Words: Aspose.Words kütüphanesine ihtiyacınız olacak. Bunu şuradan indirebilirsiniz:[yayın sayfası](https://releases.aspose.com/words/java/).
 
-1. Tercih ettiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturun.
+3. Kod Düzenleyici: Java kodunuzu yazmak için istediğiniz herhangi bir kod düzenleyiciyi veya IDE'yi (örneğin IntelliJ IDEA, Eclipse veya NetBeans) kullanın.
 
-2. Sınıf yolunuza JAR dosyasını ekleyerek Aspose.Words for Java kütüphanesini projenize ekleyin.
+4.  Dijital Sertifika: Belgeleri imzalamak için PFX formatında bir dijital sertifikaya ihtiyacınız olacak. Eğer yoksa, geçici bir lisans oluşturabilirsiniz[Aspose'nin geçici lisans sayfası](https://purchase.aspose.com/temporary-license/).
 
-## Dijital İmza Ekleme
+5. Temel Java Bilgisi: Java programlamaya aşina olmanız, üzerinde çalışacağımız kod parçacıklarını anlamanıza yardımcı olacaktır.
 
-Şimdi bir belgeye dijital imza eklemeye geçelim:
+## Paketleri İçe Aktar
+
+Başlamak için, Aspose.Words kütüphanesinden gerekli paketleri içe aktarmamız gerekiyor. Java dosyanızda ihtiyacınız olacaklar şunlardır:
 
 ```java
-// Aspose.Words'ü Başlat
-com.aspose.words.Document doc = new com.aspose.words.Document("your_document.docx");
-
-// Bir DigitalSignature nesnesi oluşturun
-com.aspose.words.digitalSignatures.DigitalSignature digitalSignature = new com.aspose.words.digitalSignatures.DigitalSignature();
-
-// Sertifika yolunu ayarlayın
-digitalSignature.setCertificateFile("your_certificate.pfx");
-
-//Sertifika için parolayı ayarlayın
-digitalSignature.setPassword("your_password");
-
-// Belgeyi imzala
-doc.getDigitalSignatures().add(digitalSignature);
-
-// Belgeyi kaydet
-doc.save("signed_document.docx");
+import com.aspose.words.*;
+import java.util.Date;
+import java.util.UUID;
 ```
 
-## Dijital İmzanın Doğrulanması
+Bu içe aktarımlar, belgeleri oluşturmak ve düzenlemek ve dijital imzaları yönetmek için gereken sınıflara ve yöntemlere erişmenizi sağlayacaktır.
 
-Bir belgedeki dijital imzayı doğrulamak için şu adımları izleyin:
+Artık ön koşullarımızı tamamladığımıza ve gerekli paketleri içe aktardığımıza göre, dijital imza ekleme sürecini yönetilebilir adımlara bölelim.
+
+## Adım 1: Yeni Bir Belge Oluşturun
+
+Öncelikle imza satırımızı ekleyeceğimiz yeni bir belge oluşturmamız gerekiyor. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```java
-// İmzalanmış belgeyi yükleyin
-com.aspose.words.Document signedDoc = new com.aspose.words.Document("signed_document.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
-// Belgenin dijital olarak imzalanıp imzalanmadığını kontrol edin
-if (signedDoc.getDigitalSignatures().getCount() > 0) {
-    // Dijital imzayı doğrulayın
-    boolean isValid = signedDoc.getDigitalSignatures().get(0).isValid();
-    
-    if (isValid) {
-        System.out.println("Digital signature is valid.");
-    } else {
-        System.out.println("Digital signature is not valid.");
-    }
-} else {
-    System.out.println("Document is not digitally signed.");
+-  Yeni bir örnek oluşturuyoruz`Document` Word belgemizi temsil eden nesne.
+-  The`DocumentBuilder` belgelerimizi kolayca oluşturmamıza ve düzenlememize yardımcı olan güçlü bir araçtır.
+
+## Adım 2: İmza Satırı Seçeneklerini Yapılandırın
+
+Sonra, imza satırımız için seçenekleri ayarlayacağız. Burada kimin imzalayacağını, ünvanını ve diğer ilgili ayrıntıları tanımlayacaksınız.
+
+```java
+SignatureLineOptions signatureLineOptions = new SignatureLineOptions();
+{
+    signatureLineOptions.setSigner("yourname");
+    signatureLineOptions.setSignerTitle("Worker");
+    signatureLineOptions.setEmail("yourname@aspose.com");
+    signatureLineOptions.setShowDate(true);
+    signatureLineOptions.setDefaultInstructions(false);
+    signatureLineOptions.setInstructions("Please sign here.");
+    signatureLineOptions.setAllowComments(true);
 }
 ```
+ 
+-  Burada, bir örnek oluşturuyoruz`SignatureLineOptions` ve imzalayanın adı, ünvanı, e-postası ve talimatları gibi çeşitli parametreleri ayarlayın. Bu özelleştirme imza satırının açık ve bilgilendirici olmasını sağlar.
+
+## Adım 3: İmza Satırını Ekle
+
+Artık seçeneklerimizi ayarladığımıza göre, imza satırını belgeye eklemenin zamanı geldi.
+
+```java
+SignatureLine signatureLine = builder.insertSignatureLine(signatureLineOptions).getSignatureLine();
+signatureLine.setProviderId(UUID.fromString("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2"));
+```
+ 
+-  Biz kullanıyoruz`insertSignatureLine` yöntemi`DocumentBuilder` belgemize imza satırını eklemek için.`getSignatureLine()` metodu, daha sonra üzerinde değişiklik yapabileceğimiz oluşturulan imza satırını geri getirir.
+- Ayrıca imza satırı için imza sağlayıcısını tanımlamaya yardımcı olan benzersiz bir sağlayıcı kimliği belirledik.
+
+## Adım 4: Belgeyi Kaydedin
+
+Belgeyi imzalamadan önce istediğimiz yere kaydedelim.
+
+```java
+doc.save(getArtifactsDir() + "SignDocuments.SignatureLineProviderId.docx");
+```
+ 
+-  The`save` yöntem, eklenen imza satırıyla belgeyi kaydetmek için kullanılır. Değiştirdiğinizden emin olun`getArtifactsDir()` Belgenizi kaydetmek istediğiniz gerçek yol ile.
+
+## Adım 5: İmza Seçeneklerini Yapılandırın
+
+Şimdi, belgeyi imzalamak için seçenekleri ayarlayalım. Bu, hangi imza satırının imzalanacağını belirtmeyi ve yorumlar eklemeyi içerir.
+
+```java
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setSignatureLineId(signatureLine.getId());
+    signOptions.setProviderId(signatureLine.getProviderId());
+    signOptions.setComments("Document was signed by Aspose");
+    signOptions.setSignTime(new Date());
+}
+```
+ 
+-  Bir örnek oluşturuyoruz`SignOptions` ve imza satırı kimliği, sağlayıcı kimliği, yorumlar ve geçerli imzalama zamanıyla yapılandırın. Bu adım, imzanın daha önce oluşturduğumuz imza satırıyla doğru şekilde ilişkilendirildiğinden emin olmak için çok önemlidir.
+
+## Adım 6: Bir Sertifika Sahibi Oluşturun
+
+Belgeyi imzalamak için PFX dosyamızı kullanarak bir sertifika sahibi oluşturmamız gerekiyor.
+
+```java
+CertificateHolder certHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
+```
+ 
+-  The`CertificateHolder.create`method PFX dosyanızın yolunu ve şifresini alır. Bu nesne imzalama sürecini doğrulamak için kullanılacaktır.
+
+## Adım 7: Belgeyi İmzalayın
+
+Sonunda belgeyi imzalama zamanı geldi! Bunu nasıl yapabileceğinizi anlatalım:
+
+```java
+DigitalSignatureUtil.sign(getArtifactsDir() + "SignDocuments.SignatureLineProviderId.docx", 
+    getArtifactsDir() + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
+```
+ 
+-  The`DigitalSignatureUtil.sign` yöntem orijinal belge yolunu, imzalanmış belgenin yolunu, sertifika sahibini ve imzalama seçeneklerini alır. Bu yöntem dijital imzayı belgenize uygular.
 
 ## Çözüm
 
-Bu kılavuzda, Aspose.Words for Java kullanarak belgelerde dijital imzaların nasıl uygulanacağını öğrendik. Bu, dijital belgelerinizin gerçekliğini ve bütünlüğünü sağlamada önemli bir adımdır. Burada özetlenen adımları izleyerek, Java uygulamalarınızda dijital imzaları güvenle ekleyebilir ve doğrulayabilirsiniz.
+İşte karşınızda! Java için Aspose.Words kullanarak bir belgeye dijital imzayı başarıyla eklediniz. Bu işlem yalnızca belgelerinizin güvenliğini artırmakla kalmaz, aynı zamanda imzalama sürecini de basitleştirerek önemli evrak işlerini yönetmeyi kolaylaştırır. Dijital imzalarla çalışmaya devam ettikçe, iş akışınızı önemli ölçüde iyileştirebileceklerini ve gönül rahatlığı sağlayabileceklerini göreceksiniz. 
 
 ## SSS
 
 ### Dijital imza nedir?
+Dijital imza, bir belgenin gerçekliğini ve bütünlüğünü doğrulayan bir şifreleme tekniğidir.
 
-Dijital imza, dijital bir belgenin veya mesajın gerçekliğini ve bütünlüğünü doğrulayan bir şifreleme tekniğidir.
+### Dijital imza oluşturmak için özel bir yazılıma ihtiyacım var mı?
+Evet, dijital imzaları programlı bir şekilde oluşturmak ve yönetmek için Aspose.Words for Java gibi kütüphanelere ihtiyacınız var.
 
-### Dijital imzalar için kendinden imzalı sertifika kullanabilir miyim?
+### Belgeleri imzalamak için kendinden imzalı bir sertifika kullanabilir miyim?
+Evet, kendinden imzalı bir sertifika kullanabilirsiniz, ancak bu sertifika tüm alıcılar tarafından güvenilir olmayabilir.
 
-Evet, kendi kendine imzalanmış bir sertifika kullanabilirsiniz, ancak bu sertifika güvenilir bir Sertifika Yetkilisinden (CA) alınan sertifika ile aynı düzeyde güven sağlamayabilir.
+### İmzaladıktan sonra belgem güvende mi?
+Evet, dijital imzalar bir güvenlik katmanı sağlayarak belgenin imzalandıktan sonra değiştirilmediğini garanti altına alır.
 
-### Aspose.Words for Java diğer belge formatlarıyla uyumlu mudur?
-
-Evet, Aspose.Words for Java, DOCX, PDF, HTML ve daha fazlası dahil olmak üzere çeşitli belge biçimlerini destekler.
-
-### Belgeleri imzalamak için dijital sertifikayı nasıl alabilirim?
-
-Güvenilir bir Sertifika Yetkilisinden (CA) dijital sertifika alabilir veya OpenSSL gibi araçları kullanarak kendi kendinize imzalı bir sertifika oluşturabilirsiniz.
-
-### Dijital imzalar hukuken bağlayıcı mıdır?
-
-Birçok yargı alanında, dijital imzalar yasal olarak bağlayıcıdır ve el yazısıyla atılan imzalarla aynı ağırlığa sahiptir. Ancak, bölgenizdeki belirli yasal gereklilikler için hukuk uzmanlarına danışmanız önemlidir.
+### Aspose.Words hakkında daha fazla bilgiyi nereden edinebilirim?
+ Keşfedebilirsiniz[Aspose.Words belgeleri](https://reference.aspose.com/words/java/) Daha fazla ayrıntı ve gelişmiş özellikler için.

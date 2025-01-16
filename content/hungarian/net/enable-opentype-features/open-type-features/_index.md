@@ -56,7 +56,7 @@ Hozzon létre egy karakterlánc-változót, amely tartalmazza a dokumentumkönyv
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Cserélje ki`"YOUR DOCUMENT DIRECTORY"` tényleges elérési úttal, ahol a dokumentum található.
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentum található.
 
 ### A dokumentum betöltése
 
@@ -100,7 +100,7 @@ De ne állj meg itt! Fedezze fel az Aspose.Words további funkcióit, és nézze
 Az OpenType szolgáltatásai közé tartoznak a fejlett tipográfiai lehetőségek, mint például a ligatúrák, levágás és stilisztikai készletek, amelyek javítják a szöveg megjelenését a dokumentumokban.
 
 ### Miért használja a HarfBuzzt az Aspose.Words-szel?
-A HarfBuzz egy nyílt forráskódú szövegformáló motor, amely erőteljes támogatást nyújt az OpenType szolgáltatásokhoz, javítva a dokumentumok tipográfiai minőségét.
+HarfBuzz egy nyílt forráskódú szövegformáló motor, amely erőteljes támogatást nyújt az OpenType szolgáltatásokhoz, javítva a dokumentumok tipográfiai minőségét.
 
 ### Használhatok más szövegformáló motorokat az Aspose.Words-szel?
 Igen, az Aspose.Words különböző szövegformáló motorokat támogat. A HarfBuzz azonban erősen ajánlott az átfogó OpenType funkció támogatása miatt.

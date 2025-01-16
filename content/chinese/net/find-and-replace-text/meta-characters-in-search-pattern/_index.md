@@ -15,7 +15,7 @@ Aspose.Words for .NET 是一个功能强大的库，用于以编程方式处理 
 
 在我们进入代码之前，让我们确保您已完成所有设置：
 
-1.  Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。您可以从[Aspose 发布页面](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。您可以从[Aspose 发布页面](https://releases.aspose.com/words/net/).
 2. 开发环境：Visual Studio 或任何其他 C# 开发环境。
 3. C# 基础知识：了解 C# 编程基础知识将会很有帮助。
 

@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-De`InsertChart` methode neemt het grafiektype, de breedte en de hoogte als parameters. In dit geval voegen we een lijndiagram in met een breedte van 432 en een hoogte van 252.
+ De`InsertChart` methode neemt het grafiektype, de breedte en de hoogte als parameters. In dit geval voegen we een lijndiagram in met een breedte van 432 en een hoogte van 252.
 
 ## Stap 3: Toegang tot grafiekreeksen
 

@@ -86,7 +86,7 @@ W tym samouczku omówiliśmy, jak utworzyć i dostosować wykres liniowy w dokum
 
 ### Czy mogę użyć Aspose.Words dla .NET do tworzenia innych typów wykresów?
 
- Tak, Aspose.Words dla .NET obsługuje różne typy wykresów, w tym wykresy słupkowe, wykresy kołowe i inne. Możesz przejrzeć dokumentację[Tutaj](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Tak, Aspose.Words dla .NET obsługuje różne typy wykresów, w tym wykresy słupkowe, wykresy kołowe i inne. Możesz przejrzeć dokumentację[Tutaj](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### Jak mogę wypróbować Aspose.Words dla .NET przed zakupem?
 

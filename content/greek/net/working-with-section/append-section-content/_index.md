@@ -120,7 +120,7 @@ doc.Save("output.docx");
 
 ## 4. Πώς μπορώ να λάβω υποστήριξη για το Aspose.Words για .NET;
 
-Μπορείτε να λάβετε υποστήριξη μεταβαίνοντας στο[Aspose forum υποστήριξης](https://forum.aspose.com/c/words/8).
+ Μπορείτε να λάβετε υποστήριξη μεταβαίνοντας στο[Aspose forum υποστήριξης](https://forum.aspose.com/c/words/8).
 
 ## 5. Μπορώ να χειριστώ άλλους τύπους εγγράφων με το Aspose.Words για .NET;
 

@@ -47,7 +47,7 @@ Document doc = new Document("sample.docx");
 
 ```java
 //文書をPDFに変換する
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## 結論

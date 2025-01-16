@@ -85,4 +85,4 @@ Ano, Aspose.Words podporuje širokou škálu typů grafů včetně sloupcových 
 Data grafu můžete aktualizovat dynamicky pomocí volání API Aspose.Words.
 
 ### Kde mohu získat další pomoc nebo podporu pro Aspose.Words?
- Pro další pomoc navštivte stránku[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).
+ Pro další pomoc navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).

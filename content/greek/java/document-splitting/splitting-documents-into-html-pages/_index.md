@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-Αυτός ο κώδικας χωρίζει το έγγραφο με βάση αλλαγές σελίδας και αποθηκεύει κάθε σελίδα στο`pages` λίστα.
+ Αυτός ο κώδικας χωρίζει το έγγραφο με βάση αλλαγές σελίδας και αποθηκεύει κάθε σελίδα στο`pages` λίστα.
 
 ## Αποθήκευση ως HTML
 

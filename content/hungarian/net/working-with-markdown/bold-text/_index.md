@@ -33,7 +33,7 @@ Most bontsuk le a szöveg félkövérré tételét egy Word-dokumentumban az Asp
 
 ## 1. lépés: Inicializálja a DocumentBuilder programot
 
-A`DocumentBuilder` osztály gyors és egyszerű módja annak, hogy tartalmat adjon a dokumentumhoz. Inicializáljuk.
+ A`DocumentBuilder` osztály gyors és egyszerű módja annak, hogy tartalmat adjon a dokumentumhoz. Inicializáljuk.
 
 ```csharp
 // Használjon dokumentumkészítőt, hogy tartalmat adjon a dokumentumhoz.

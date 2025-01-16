@@ -38,23 +38,11 @@ Aspose.Words for Java は、Java 開発者がドキュメント処理のさま�
 //必要なパッケージをインポートする
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        //新しいドキュメントを初期化する
-        Document doc = new Document();
-
-        //リストを作成する
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        //リスト項目を追加する
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        //文書を保存する
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## ドキュメントリストの変更
@@ -69,21 +57,18 @@ public class DocumentListExample {
 ドキュメント リストを変更するためのコード スニペットを次に示します。
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        //既存のドキュメントを読み込む
-        Document doc = new Document("DocumentListExample.docx");
-
-        //リストにアクセスする
-        List list = doc.getLists().get(0);
-
-        //新しいアイテムを追加する
-        list.getListItems().add("New Item");
-
-        //変更したドキュメントを保存する
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    //段落がリストの一部であるかどうかを確認します。
+    if (paragraph.isListItem()) {
+        //リストの最後の段落を更新します。
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## ドキュメントリストから情報を抽出する
@@ -97,23 +82,21 @@ public class ModifyDocumentListExample {
 ドキュメント リストから情報を抽出するためのコード スニペットを次に示します。
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        //ドキュメントを読み込む
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        //リストにアクセスする
-        List list = doc.getLists().get(0);
-
-        //リスト項目を反復処理して印刷する
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## よくある質問（FAQ）
+## 結論
+
+この包括的なガイドでは、Aspose.Words for Java を使用してドキュメント リストを操作する世界について説明しました。Aspose.Words for Java のパワーと柔軟性を活用して、ドキュメント リストを作成、変更、および情報を抽出する方法を学びました。今すぐこれらのテクニックを Java プロジェクトに実装し、ドキュメント自動化タスクを効率化しましょう。
+
+
+## よくある質問
 
 ### ドキュメント リストに箇条書きを追加するにはどうすればよいですか?
 文書リストに箇条書きを追加するには、リストを作成するときに適切なリストテンプレートを使用します。たとえば、`ListTemplate.BULLET_DEFAULT`の代わりに`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ public class ExtractListItemsExample {
 
 ### Aspose.Words for Java はドキュメント内の表の操作をサポートしていますか?
 はい、Aspose.Words for Java はテーブルを操作するための広範なサポートを提供しており、表形式のデータを簡単に作成、変更、抽出できます。
-
-## 結論
-
-この包括的なガイドでは、Aspose.Words for Java を使用してドキュメント リストを操作する世界について説明しました。Aspose.Words for Java のパワーと柔軟性を活用して、ドキュメント リストを作成、変更、および情報を抽出する方法を学びました。今すぐこれらのテクニックを Java プロジェクトに実装し、ドキュメント自動化タスクを効率化しましょう。

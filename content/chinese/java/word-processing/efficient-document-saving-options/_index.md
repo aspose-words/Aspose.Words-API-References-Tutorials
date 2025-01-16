@@ -54,7 +54,7 @@ doc.save("output.html", saveOptions);
 
 ```java
 // Java 代码将文档保存为图像
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); //设置分辨率（DPI）
 doc.save("output.png", imageSaveOptions);
 ```

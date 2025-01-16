@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Estamos criando um`FindReplaceOptions`objeto e definindo o alinhamento do parágrafo para centralizado.
+ Estamos criando um`FindReplaceOptions` objeto e definindo o alinhamento do parágrafo para centralizado.
 
 ## Etapa 4: Substitua o texto por metacaracteres
 
 Este passo é onde a mágica acontece! Vamos substituir a palavra "seção" seguida por uma quebra de parágrafo e adicionar um sublinhado.
 
 ```csharp
-// Duplique cada quebra de parágrafo após a palavra "seção", adicione uma espécie de sublinhado e centralize-o.
+//Duplique cada quebra de parágrafo após a palavra "seção", adicione uma espécie de sublinhado e centralize-o.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

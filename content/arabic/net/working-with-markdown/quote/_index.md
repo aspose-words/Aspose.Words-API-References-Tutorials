@@ -44,7 +44,7 @@ using Aspose.Words.Tables;
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-ال`DocumentBuilder` الفصل الدراسي هو بوابتك لبناء مستندك وتخصيصه. فكر فيه باعتباره عصاك السحرية لإنشاء مستندات Word!
+ ال`DocumentBuilder` الفصل الدراسي هو بوابتك لبناء مستندك وتخصيصه. فكر فيه باعتباره عصاك السحرية لإنشاء مستندات Word!
 
 ## الخطوة 2: إضافة اقتباس
 

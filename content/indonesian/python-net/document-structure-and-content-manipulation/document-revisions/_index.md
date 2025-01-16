@@ -16,10 +16,10 @@ Revisi dokumen melibatkan pelacakan perubahan yang dibuat pada dokumen dari wakt
 
 ## Menyiapkan Aspose.Words untuk Python
 
- Sebelum kita mulai, pastikan Anda telah menginstal Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/)Setelah terinstal, Anda dapat mengimpor modul yang diperlukan ke skrip Python Anda untuk memulai.
+Sebelum kita mulai, pastikan Anda telah menginstal Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/)Setelah terinstal, Anda dapat mengimpor modul yang diperlukan ke skrip Python Anda untuk memulai.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Memuat dan Menampilkan Dokumen
@@ -27,7 +27,7 @@ import asposewords
 Untuk bekerja dengan sebuah dokumen, pertama-tama Anda perlu memuatnya ke dalam aplikasi Python Anda. Gunakan potongan kode berikut untuk memuat dokumen dan menampilkan isinya:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 Bila ada perubahan yang dibuat pada dokumen, Aspose.Words dapat melacaknya secara otomatis sebagai revisi. Misalnya, jika kita ingin mengganti kata tertentu, kita dapat melakukannya sambil melacak perubahannya:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words memungkinkan Anda membandingkan dua dokumen untuk memvisualisasikan perbedaan di antara keduanya:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 Kolaborator dapat menambahkan komentar dan anotasi ke dokumen. Anda dapat mengelola elemen-elemen ini secara terprogram:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 Anda dapat menyesuaikan bagaimana revisi muncul dalam dokumen, seperti mengubah warna teks yang dimasukkan dan dihapus:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Menyimpan dan Berbagi Dokumen
@@ -98,18 +98,11 @@ doc.save("final_document.docx")
 
 Bagikan dokumen akhir dengan kolaborator untuk mendapatkan masukan lebih lanjut.
 
-## Tips untuk Kolaborasi yang Efektif
-
-1. Beri label revisi dengan jelas dengan komentar yang bermakna.
-2. Komunikasikan pedoman revisi kepada semua kolaborator.
-3. Tinjau dan terima/tolak revisi secara berkala.
-4. Gunakan fitur perbandingan Aspose.Words untuk analisis dokumen yang komprehensif.
-
 ## Kesimpulan
 
 Aspose.Words untuk Python menyederhanakan revisi dan pelacakan dokumen, meningkatkan kolaborasi, dan memastikan integritas dokumen. Dengan fitur-fiturnya yang canggih, Anda dapat menyederhanakan proses peninjauan, penerimaan, dan pengelolaan perubahan dalam dokumen Anda.
 
-## Tanya Jawab Umum
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menginstal Aspose.Words untuk Python?
 

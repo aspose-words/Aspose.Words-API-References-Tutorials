@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <요약>
-/// 페이지 범위의 문서를 가져옵니다.
+//페이지 범위의 문서를 가져옵니다.
 /// </요약>
-//<param name="시작인덱스">
+/// <param name="시작인덱스">
 /// 시작 페이지의 1부터 시작하는 인덱스입니다.
 /// </param>
 /// <param name="endIndex">

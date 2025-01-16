@@ -22,7 +22,7 @@ Avant de passer aux choses sérieuses, assurez-vous d'avoir les éléments suiva
 
 ## Importer des espaces de noms
 
-Tout d’abord, nous devons importer les espaces de noms nécessaires. Ouvrez votre projet C# et ajoutez ces instructions using en haut de votre fichier :
+Tout d'abord, nous devons importer les espaces de noms nécessaires. Ouvrez votre projet C# et ajoutez ces instructions using en haut de votre fichier :
 
 ```csharp
 using System;
@@ -60,7 +60,7 @@ WarningInfoCollection warnings = new WarningInfoCollection();
 doc.WarningCallback = warnings;
 ```
 
- Nous créons un`WarningInfoCollection` objet et l'affecter au document`WarningCallback`. Cela collectera tous les avertissements qui apparaissent pendant le traitement.
+ Nous créons un`WarningInfoCollection` objet et l'affecter au document`WarningCallback`Cela collectera tous les avertissements qui apparaissent pendant le traitement.
 
 ## Étape 4 : Traitement des avertissements
 

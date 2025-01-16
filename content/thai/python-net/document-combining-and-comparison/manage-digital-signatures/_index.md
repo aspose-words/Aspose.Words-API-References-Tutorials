@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /th/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## บทนำเกี่ยวกับลายเซ็นดิจิทัล
 
 ลายเซ็นดิจิทัลทำหน้าที่เสมือนลายเซ็นที่เขียนด้วยลายมือในรูปแบบอิเล็กทรอนิกส์ โดยเป็นวิธีการตรวจสอบความถูกต้อง ความสมบูรณ์ และแหล่งที่มาของเอกสารอิเล็กทรอนิกส์ เมื่อลงนามในเอกสารในรูปแบบดิจิทัล ระบบจะสร้างแฮชการเข้ารหัสตามเนื้อหาของเอกสาร จากนั้นแฮชดังกล่าวจะถูกเข้ารหัสโดยใช้คีย์ส่วนตัวของผู้ลงนาม เพื่อสร้างลายเซ็นดิจิทัลขึ้น ใครก็ตามที่มีคีย์สาธารณะที่สอดคล้องกันสามารถตรวจสอบลายเซ็นและยืนยันความถูกต้องของเอกสารได้
@@ -25,7 +24,7 @@ url: /th/python-net/document-combining-and-comparison/manage-digital-signatures/
 2. นำเข้าโมดูลที่จำเป็น: นำเข้าโมดูลที่จำเป็นลงในสคริปต์ Python ของคุณ:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## การโหลดและการเข้าถึงเอกสาร
@@ -33,7 +32,7 @@ url: /th/python-net/document-combining-and-comparison/manage-digital-signatures/
 ก่อนที่จะเพิ่มหรือตรวจสอบลายเซ็นดิจิทัล คุณต้องโหลดเอกสารโดยใช้ Aspose.Words:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## การเพิ่มลายเซ็นดิจิทัลลงในเอกสาร
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 หากต้องการเพิ่มลายเซ็นดิจิทัลลงในเอกสาร คุณจะต้องมีใบรับรองดิจิทัล:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 ตอนนี้ลงนามในเอกสาร:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## การตรวจสอบลายเซ็นดิจิทัล
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## การลบลายเซ็นดิจิทัล
-
-การลบลายเซ็นดิจิทัลออกจากเอกสาร:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## การรับรองความถูกต้องของเอกสาร
-
-ลายเซ็นดิจิทัลช่วยรับรองความถูกต้องของเอกสารโดยยืนยันแหล่งที่มาและความสมบูรณ์ของเอกสาร ช่วยป้องกันการแก้ไขดัดแปลงโดยไม่ได้รับอนุญาต
-
 ## การปรับแต่งลักษณะที่ปรากฏของลายเซ็นดิจิทัล
 
 คุณสามารถปรับแต่งลักษณะที่ปรากฏของลายเซ็นดิจิทัลได้:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## บทสรุป

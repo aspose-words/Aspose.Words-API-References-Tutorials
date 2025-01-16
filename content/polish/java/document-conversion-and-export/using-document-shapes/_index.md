@@ -10,11 +10,11 @@ url: /pl/java/document-conversion-and-export/using-document-shapes/
 
 ## Wprowadzenie do korzystania z kształtów dokumentów w Aspose.Words dla Java
 
-W tym kompleksowym przewodniku zagłębimy się w świat kształtów dokumentów w Aspose.Words for Java. Kształty są niezbędnymi elementami, jeśli chodzi o tworzenie wizualnie atrakcyjnych i interaktywnych dokumentów. Niezależnie od tego, czy musisz dodać objaśnienia, przyciski, obrazy lub znaki wodne, Aspose.Words for Java zapewnia narzędzia, aby zrobić to wydajnie. Przyjrzyjmy się, jak używać tych kształtów krok po kroku na przykładach kodu źródłowego.
+tym kompleksowym przewodniku zagłębimy się w świat kształtów dokumentów w Aspose.Words for Java. Kształty są niezbędnymi elementami, jeśli chodzi o tworzenie wizualnie atrakcyjnych i interaktywnych dokumentów. Niezależnie od tego, czy musisz dodać objaśnienia, przyciski, obrazy lub znaki wodne, Aspose.Words for Java zapewnia narzędzia, aby zrobić to wydajnie. Przyjrzyjmy się, jak używać tych kształtów krok po kroku na przykładach kodu źródłowego.
 
 ## Rozpoczęcie pracy z kształtami dokumentów
 
-Zanim przejdziemy do kodu, skonfigurujmy nasze środowisko. Upewnij się, że masz Aspose.Words for Java zintegrowane z projektem. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać je ze strony internetowej Aspose[Pobierz Aspose.Words dla Java](https://releases.aspose.com/words/java/)
+ Zanim przejdziemy do kodu, skonfigurujmy nasze środowisko. Upewnij się, że masz Aspose.Words for Java zintegrowane z projektem. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać je ze strony internetowej Aspose[Pobierz Aspose.Words dla Java](https://releases.aspose.com/words/java/)
 
 ## Dodawanie kształtów do dokumentów
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);
@@ -162,7 +162,7 @@ for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true)) {
 
 ## Wniosek
 
-W tym przewodniku zbadaliśmy świat kształtów dokumentów w Aspose.Words for Java. Nauczyłeś się, jak dodawać różne kształty do dokumentów, manipulować ich właściwościami i pracować z kształtami SmartArt. Dzięki tej wiedzy możesz z łatwością tworzyć atrakcyjne wizualnie i interaktywne dokumenty.
+W tym przewodniku zbadaliśmy świat kształtów dokumentów w Aspose.Words for Java. Nauczyłeś się, jak dodawać różne kształty do dokumentów, manipulować ich właściwościami i pracować z kształtami SmartArt. Dzięki tej wiedzy możesz z łatwością tworzyć wizualnie atrakcyjne i interaktywne dokumenty.
 
 ## Najczęściej zadawane pytania
 

@@ -280,7 +280,7 @@ Untuk membagi dokumen, Anda dapat menyimpan bagian tertentu ke dokumen terpisah.
 Aspose.Words untuk Java memungkinkan Anda mengonversi dokumen ke berbagai format, seperti PDF, HTML, dan banyak lagi.
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Teknik Penataan Lanjutan

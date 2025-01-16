@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 ตอนนี้เราได้โหลดเอกสารแล้ว เรามาเริ่มใช้การเข้ารหัสกับเอกสารกันเลย Aspose.Words สำหรับ Java มีวิธีง่ายๆ ในการตั้งค่าการเข้ารหัสเอกสาร:
 
 ```java
-// ตั้งรหัสผ่านเพื่อเปิดเอกสาร
-doc.getWriteProtection().setPassword("yourPassword");
-
-// ตั้งค่าอัลกอริทึมการเข้ารหัส (ทางเลือก)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// บันทึกเอกสารที่เข้ารหัส
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. การปกป้ององค์ประกอบเอกสารเฉพาะ
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 บางครั้ง คุณอาจต้องการปกป้องเฉพาะบางส่วนของเอกสาร เช่น ส่วนหัว ส่วนท้าย หรือย่อหน้าบางส่วน Aspose.Words ช่วยให้คุณปกป้องเอกสารได้อย่างละเอียดในระดับนี้:
 
 ```java
-// การป้องกันเฉพาะส่วน (การป้องกันแบบอ่านอย่างเดียว)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// ปกป้องย่อหน้าเฉพาะ (อนุญาติให้แก้ไขเฉพาะช่องฟอร์มเท่านั้น)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// บันทึกเอกสารที่ได้รับการป้องกัน
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//ช่วงที่แก้ไขได้ช่วยให้เราสามารถปล่อยให้บางส่วนของเอกสารที่ได้รับการป้องกันเปิดอยู่เพื่อการแก้ไขได้
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. การใช้ลายเซ็นดิจิทัล
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 การเพิ่มลายเซ็นดิจิทัลลงในเอกสารของคุณจะช่วยรับรองความถูกต้องและความสมบูรณ์ของเอกสารได้ ต่อไปนี้คือวิธีนำลายเซ็นดิจิทัลไปใช้โดยใช้ Aspose.Words สำหรับ Java:
 
 ```java
-// โหลดไฟล์ใบรับรอง
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// ลงนามในเอกสารด้วยใบรับรอง
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// สร้างความคิดเห็น วันที่ และรหัสผ่านการถอดรหัส ซึ่งจะใช้กับลายเซ็นดิจิทัลใหม่ของเรา
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// บันทึกเอกสารที่ลงนามแล้ว
-doc.save("path/to/signed/document.docx");
+// ตั้งชื่อไฟล์ระบบท้องถิ่นสำหรับเอกสารอินพุตที่ไม่ได้ลงนาม และชื่อไฟล์เอาท์พุตสำหรับสำเนาที่ลงนามดิจิทัลฉบับใหม่
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. การใส่ลายน้ำในเอกสารของคุณ
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. การแก้ไขข้อมูลที่ละเอียดอ่อน
 
-เมื่อแชร์เอกสาร คุณอาจต้องการลบข้อมูลที่ละเอียดอ่อนอย่างถาวรเพื่อให้แน่ใจว่าข้อมูลเหล่านั้นจะไม่ตกไปอยู่ในมือของผู้ที่ไม่ควรได้ Aspose.Words สำหรับ Java ช่วยให้คุณแก้ไขเนื้อหาที่ละเอียดอ่อนได้:
-
-```java
-// ค้นหาและแก้ไขข้อมูลที่ละเอียดอ่อน
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// ใช้การแก้ไข
-doc.redact(options);
-
-// บันทึกเอกสารที่ถูกแก้ไข
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. การแปลงเอกสารที่ปลอดภัยเป็นรูปแบบอื่น
+## 10. การแปลงเอกสารที่ปลอดภัยเป็นรูปแบบอื่น
 
 Aspose.Words สำหรับ Java ยังช่วยให้คุณแปลงเอกสารที่ปลอดภัยของคุณเป็นรูปแบบต่างๆ เช่น PDF หรือ HTML:
 
 ```java
-// โหลดเอกสารที่ได้รับการรักษาความปลอดภัย
+//โหลดเอกสารที่ได้รับการรักษาความปลอดภัย
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // แปลงเป็น PDF
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // แปลงเป็น HTML
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. แนวทางปฏิบัติที่ดีที่สุดสำหรับการรักษาความปลอดภัยเอกสาร
-
-เพื่อให้แน่ใจว่าเอกสารมีความปลอดภัยแข็งแกร่ง โปรดปฏิบัติตามแนวทางปฏิบัติที่ดีที่สุดเหล่านี้:
-
-- อัปเดตมาตรการความปลอดภัยของคุณเป็นประจำเพื่อให้ก้าวล้ำหน้าภัยคุกคามที่อาจเกิดขึ้น
-- ใช้รหัสผ่านและอัลกอริทึมการเข้ารหัสที่แข็งแกร่ง
-- จำกัดการเข้าถึงเอกสารที่ละเอียดอ่อนตามความจำเป็นเท่านั้น
-- ฝึกอบรมพนักงานให้สามารถรับรู้และตอบสนองต่อความเสี่ยงด้านความปลอดภัย
-
-## 13. การทดสอบความปลอดภัยของเอกสาร
-
-หลังจากใช้มาตรการรักษาความปลอดภัยแล้ว ให้ทดสอบเอกสารของคุณอย่างละเอียดถี่ถ้วนเพื่อให้แน่ใจว่าเอกสารยังคงปลอดภัยภายใต้สถานการณ์ต่างๆ พยายามหลีกเลี่ยงการควบคุมความปลอดภัยเพื่อระบุช่องโหว่ที่อาจเกิดขึ้น
-
-## 14. บทสรุป
+## บทสรุป
 
 ในคู่มือทีละขั้นตอนนี้ เราได้สำรวจความสำคัญของการรักษาความปลอดภัยเอกสารและวิธีที่ Aspose.Words สำหรับ Java สามารถช่วยปกป้องเอกสารของคุณจากการเข้าถึงโดยไม่ได้รับอนุญาตได้ ด้วยการใช้ประโยชน์จากคุณลักษณะต่างๆ ของไลบรารี เช่น การป้องกันด้วยรหัสผ่าน การเข้ารหัส ลายเซ็นดิจิทัล ลายน้ำ และการแก้ไข คุณสามารถมั่นใจได้ว่าเอกสารของคุณจะปลอดภัย
 
 ## คำถามที่พบบ่อย
 
 ### ฉันสามารถใช้ Aspose.Words สำหรับ Java ในโปรเจ็กต์เชิงพาณิชย์ได้หรือไม่
-   ใช่ Aspose.Words สำหรับ Java สามารถใช้ในโปรเจ็กต์เชิงพาณิชย์ภายใต้รูปแบบการอนุญาตสิทธิ์แบบต่อผู้พัฒนาหนึ่งราย
+ใช่ Aspose.Words สำหรับ Java สามารถใช้ในโปรเจ็กต์เชิงพาณิชย์ภายใต้รูปแบบการอนุญาตสิทธิ์แบบต่อผู้พัฒนาหนึ่งราย
 
 ### Aspose.Words รองรับรูปแบบเอกสารอื่นนอกเหนือจาก Word หรือไม่
-   ใช่ Aspose.Words รองรับรูปแบบต่างๆ มากมาย รวมถึง PDF, HTML, EPUB และอื่นๆ อีกมากมาย
+ใช่ Aspose.Words รองรับรูปแบบต่างๆ มากมาย รวมถึง PDF, HTML, EPUB และอื่นๆ อีกมากมาย
 
 ### สามารถเพิ่มลายเซ็นดิจิทัลหลายรายการลงในเอกสารได้หรือไม่
-   ใช่ Aspose.Words ช่วยให้คุณสามารถเพิ่มลายเซ็นดิจิทัลหลายรายการลงในเอกสารได้
+ใช่ Aspose.Words ช่วยให้คุณสามารถเพิ่มลายเซ็นดิจิทัลหลายรายการลงในเอกสารได้
 
 ### Aspose.Words รองรับการกู้คืนรหัสผ่านเอกสารหรือไม่
-   ไม่ Aspose.Words ไม่มีฟีเจอร์การกู้คืนรหัสผ่าน โปรดเก็บรักษารหัสผ่านของคุณให้ปลอดภัย
+ไม่ Aspose.Words ไม่มีฟีเจอร์การกู้คืนรหัสผ่าน โปรดเก็บรักษารหัสผ่านของคุณให้ปลอดภัย
 
 ### ฉันสามารถปรับแต่งลักษณะที่ปรากฏของลายน้ำได้หรือไม่
-   ใช่ คุณสามารถปรับแต่งลักษณะที่ปรากฏของลายน้ำได้อย่างเต็มที่ รวมถึงข้อความ แบบอักษร สี ขนาด และการหมุน
+ใช่ คุณสามารถปรับแต่งลักษณะที่ปรากฏของลายน้ำได้อย่างเต็มที่ รวมถึงข้อความ แบบอักษร สี ขนาด และการหมุน

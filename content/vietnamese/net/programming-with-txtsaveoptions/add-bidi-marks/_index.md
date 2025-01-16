@@ -15,7 +15,7 @@ Trong thế giới xử lý tài liệu, văn bản hai chiều (Bidi) thường
 
 Trước khi tìm hiểu mã, hãy đảm bảo bạn có những điều sau:
 
-1.  Aspose.Words cho .NET: Bạn cần phải cài đặt Aspose.Words cho .NET. Bạn có thể tải xuống từ[Trang Tải xuống Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words cho .NET: Bạn cần phải cài đặt Aspose.Words cho .NET. Bạn có thể tải xuống từ[Trang Tải xuống Aspose](https://releases.aspose.com/words/net/).
 2. .NET Framework hoặc .NET Core: Đảm bảo rằng bạn đã thiết lập môi trường .NET tương thích để chạy các ví dụ.
 3. Kiến thức cơ bản về C#: Có hiểu biết về ngôn ngữ lập trình C# và các thao tác cơ bản trong .NET.
 

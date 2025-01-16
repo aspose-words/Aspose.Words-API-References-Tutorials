@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ###  Τι είναι το`DocumentDirection` property used for?
 
-Ο`DocumentDirection` ιδιοκτησία σε`TxtLoadOptions` καθορίζει την κατεύθυνση του κειμένου για το έγγραφο. Μπορεί να ρυθμιστεί σε`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , ή`DocumentDirection.RightToLeft`.
+ Ο`DocumentDirection` ιδιοκτησία σε`TxtLoadOptions` καθορίζει την κατεύθυνση του κειμένου για το έγγραφο. Μπορεί να ρυθμιστεί σε`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , ή`DocumentDirection.RightToLeft`.
 
 ### Μπορώ να ορίσω την κατεύθυνση κειμένου για συγκεκριμένες παραγράφους αντί για ολόκληρο το έγγραφο;
 

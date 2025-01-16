@@ -80,7 +80,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-การ`AppendDocument` วิธีนี้ใช้พารามิเตอร์สองตัว:
+ การ`AppendDocument` วิธีนี้ใช้พารามิเตอร์สองตัว:
 1. เอกสารต้นฉบับ: เอกสารที่คุณต้องการผนวก
 2.  โหมดรูปแบบการนำเข้า: พารามิเตอร์นี้กำหนดว่าควรจัดการการจัดรูปแบบอย่างไร ที่นี่เราจะใช้`KeepSourceFormatting` เพื่อรักษาการจัดรูปแบบของเอกสารต้นฉบับ
 

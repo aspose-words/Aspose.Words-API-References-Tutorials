@@ -15,7 +15,7 @@ url: /ko/net/programming-with-pdfsaveoptions/image-compression/
 
 튜토리얼을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET이 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Aspose.Words for .NET이 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
 
 2. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 이 튜토리얼에서 제공하는 코드 예제를 이해하는 데 도움이 됩니다.
 

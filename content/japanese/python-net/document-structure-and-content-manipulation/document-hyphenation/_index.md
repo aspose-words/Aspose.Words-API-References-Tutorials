@@ -7,7 +7,7 @@ type: docs
 weight: 17
 url: /ja/python-net/document-structure-and-content-manipulation/document-hyphenation/
 ---
-ハイフネーションとテキスト フローは、プロフェッショナルな外観と構造を備えた Word ドキュメントを作成する上で重要な要素です。レポート、プレゼンテーション、またはその他の種類のドキュメントを作成する場合でも、テキストがシームレスに流れ、ハイフネーションが適切に処理されるようにすることで、コンテンツの読みやすさと美しさを大幅に向上できます。この記事では、Aspose.Words for Python API を使用してハイフネーションとテキスト フローを効果的に管理する方法について説明します。ハイフネーションの理解からドキュメントでのプログラムによる実装まで、すべてをカバーします。
+ハイフネーションとテキスト フローは、プロフェッショナルな外観と構造を備えた Word ドキュメントを作成する上で重要な要素です。レポート、プレゼンテーション、またはその他の種類のドキュメントを作成する場合でも、テキストがシームレスに流れ、ハイフネーションが適切に処理されるようにすることで、コンテンツの読みやすさと美しさを大幅に向上できます。この記事では、Aspose.Words for Python API を使用してハイフネーションとテキスト フローを効果的に管理する方法について説明します。ハイフネーションの理解からドキュメントでのプログラムによる実装まで、すべてを網羅します。
 
 ## ハイフネーションを理解する
 
@@ -126,4 +126,4 @@ Aspose.Words for Python の行間隔設定を使用して、行間の間隔を�
 
 ### Aspose.Words for Python のドキュメントにはどこでアクセスできますか?
 
-APIドキュメントは以下からアクセスできます。[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+ APIドキュメントは以下からアクセスできます。[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

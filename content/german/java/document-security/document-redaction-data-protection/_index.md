@@ -18,7 +18,7 @@ In dieser Anleitung erfahren Sie, wie Sie mit Aspose.Words für Java vertraulich
 
 Bevor wir mit Aspose.Words für Java arbeiten, müssen wir unsere Entwicklungsumgebung einrichten. Folgen Sie diesen Schritten:
 
-1.  Laden Sie Aspose.Words für Java herunter und installieren Sie es: Besuchen Sie[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) um die neueste Version von Aspose.Words für Java herunterzuladen.
+1.  Laden Sie Aspose.Words für Java herunter und installieren Sie es: Besuchen Sie[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)um die neueste Version von Aspose.Words für Java herunterzuladen.
 
 2. Integrieren Sie Aspose.Words in Ihr Projekt: Fügen Sie die Aspose.Words JAR-Dateien zu Ihrem Java-Projekt hinzu.
 

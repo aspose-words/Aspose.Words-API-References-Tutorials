@@ -15,7 +15,7 @@ dnešním digitálním věku je správa velikosti dokumentu zásadní pro výkon
 
 Než se pustíte do výukového programu, ujistěte se, že máte splněny následující předpoklady:
 
-1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose webové stránky](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose webové stránky](https://releases.aspose.com/words/net/).
 
 2. Základní znalost C#: Znalost programování v C# vám pomůže pochopit příklady kódu uvedené v tomto tutoriálu.
 

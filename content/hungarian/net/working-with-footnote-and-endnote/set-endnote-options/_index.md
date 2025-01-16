@@ -9,7 +9,7 @@ url: /hu/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
 ## Bevezetés
 
-Szeretné javítani Word-dokumentumait a végjegyzetek hatékony kezelésével? Ne keressen tovább! Ebben az oktatóanyagban végigvezetjük az Aspose.Words for .NET használatával végjegyzetbeállítások beállításának folyamatán a Word dokumentumokban. Az útmutató végére profi lesz a végjegyzetek személyre szabásában a dokumentum igényeinek megfelelően.
+Szeretné javítani Word-dokumentumait a végjegyzetek hatékony kezelésével? Ne keressen tovább! Ebben az oktatóanyagban végigvezetjük az Aspose.Words for .NET használatával végjegyzetbeállítások beállításának folyamatán a Word dokumentumokban. Az útmutató végére profi lesz a végjegyzetek személyre szabásában, hogy azok megfeleljenek a dokumentum igényeinek.
 
 ## Előfeltételek
 

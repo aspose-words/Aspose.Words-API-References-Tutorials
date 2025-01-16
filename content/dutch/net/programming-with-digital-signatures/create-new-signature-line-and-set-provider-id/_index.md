@@ -130,7 +130,7 @@ En daar heb je het! Je hebt met succes een nieuwe handtekeningregel gemaakt en d
 ## Veelgestelde vragen
 
 ### Kan ik het uiterlijk van de handtekeningregel aanpassen?
-Absoluut! Je kunt verschillende opties aanpassen in de`SignatureLineOptions` afgestemd op uw behoeften.
+ Absoluut! Je kunt verschillende opties aanpassen in de`SignatureLineOptions`afgestemd op uw behoeften.
 
 ### Wat als ik geen PFX-certificaat heb?
 U moet er een verkrijgen van een vertrouwde certificeringsinstantie. Het is essentieel voor het digitaal ondertekenen van documenten.

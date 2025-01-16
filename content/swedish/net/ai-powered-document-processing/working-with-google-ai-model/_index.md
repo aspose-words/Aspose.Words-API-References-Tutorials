@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-De`Document` klass från Aspose.Words låter dig ladda Word-filer till minnet. Se till att filnamnen stämmer överens med de faktiska dokumenten i din katalog, annars kommer du att stöta på felmeddelanden som inte hittats!
+ De`Document` klass från Aspose.Words låter dig ladda Word-filer till minnet. Se till att filnamnen stämmer överens med de faktiska dokumenten i din katalog, annars kommer du att stöta på felmeddelanden som inte hittats!
 
 ## Steg 3: Hämta API-nyckeln
 

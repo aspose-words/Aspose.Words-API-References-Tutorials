@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-// 4番目のリストでは、リスト番号とリスト項目の内容の間に空白が入っています。
+//4番目のリストでは、リスト番号とリスト項目の内容の間に空白が入っています。
 // LoadOptionsオブジェクトの「DetectNumberingWithWhitespaces」がtrueに設定されている場合にのみリストとして検出されます。
 //数字で始まる段落が誤ってリストとして検出されるのを避けるためです。
 TxtLoadOptions loadOptions = new TxtLoadOptions();
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-このコードは、ドキュメントの方向を自動検出に設定します（`DocumentDirection.AUTO`) をクリックして、ヘブライ語のテキストを含むテキスト ドキュメントを読み込みます。必要に応じてドキュメントの方向を調整できます。
+このコードは、ドキュメントの方向を自動検出に設定します（`DocumentDirection.AUTO`をクリックして、ヘブライ語のテキストを含むテキスト ドキュメントを読み込みます。必要に応じてドキュメントの方向を調整できます。
 
 ## Aspose.Words for Java でテキスト ファイルを読み込むための完全なソース コード
 

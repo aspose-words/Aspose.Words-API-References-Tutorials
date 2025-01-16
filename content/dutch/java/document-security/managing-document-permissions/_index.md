@@ -16,7 +16,7 @@ In de digitale wereld van vandaag is documentbeheer een cruciaal aspect van de w
 
 Voordat we in het beheer van documentpermissies duiken, beginnen we met het instellen van Aspose.Words voor Java. Volg deze stappen om te beginnen:
 
-1.  Download Aspose.Words voor Java: Bezoek[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) om de nieuwste versie van Aspose.Words voor Java te downloaden.
+1.  Download Aspose.Words voor Java: Bezoek[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)om de nieuwste versie van Aspose.Words voor Java te downloaden.
 
 2. Installeer Aspose.Words voor Java: Nadat u de bibliotheek hebt gedownload, volgt u de installatie-instructies om deze in uw Java-ontwikkelomgeving te installeren.
 
@@ -52,21 +52,12 @@ Hier is een voorbeeld van een Java-codefragment om documentmachtigingen in te st
 // Laad het document
 Document doc = new Document("sample.docx");
 
-// Toegangscontrole definiëren
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Documentbeveiliging toepassen
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Sla het document op
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Veelgestelde vragen (FAQ's)
+## Veelgestelde vragen
 
-## Hoe kan ik de documentbeveiliging verwijderen?
+### Hoe kan ik de documentbeveiliging verwijderen?
 
 Om de documentbeveiliging te verwijderen, opent u het beveiligde document en als het met een wachtwoord is beveiligd, geeft u het juiste wachtwoord op. Gebruik vervolgens Aspose.Words voor Java om de beveiliging als volgt te verwijderen:
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Kan ik machtigingen instellen voor specifieke gebruikers?
+### Kan ik machtigingen instellen voor specifieke gebruikers?
 
 Ja, Aspose.Words voor Java stelt u in staat om machtigingen in te stellen voor specifieke gebruikers of groepen. U kunt definiëren wie toegang heeft tot het document en het kan bewerken.
 
-## Is het mogelijk om een document te versleutelen met meerdere wachtwoorden?
+### Is het mogelijk om een document te versleutelen met meerdere wachtwoorden?
 
 Nee, Aspose.Words voor Java ondersteunt encryptie met één wachtwoord. U kunt een wachtwoord instellen om het document te beschermen.
 
-## Hoe kan ik de rechten van een document controleren?
+### Hoe kan ik de rechten van een document controleren?
 
 U kunt Aspose.Words voor Java gebruiken om de machtigingen van een document te controleren door de beveiligingsinstellingen en opties voor toegangscontrole te onderzoeken.
 
-## Kan ik het beheer van documentmachtigingen automatiseren?
+### Kan ik het beheer van documentmachtigingen automatiseren?
 
 Absoluut! U kunt Aspose.Words voor Java integreren in uw applicaties om documentpermissiebeheer te automatiseren, waardoor het een naadloos onderdeel wordt van uw documentworkflow.
 
-## Wat moet ik doen als ik het wachtwoord van het document vergeet?
+### Wat moet ik doen als ik het wachtwoord van het document vergeet?
 
 Als u het wachtwoord van het document vergeet, is er geen manier om het te herstellen. Zorg ervoor dat u uw wachtwoorden op een veilige plek bewaart.
 

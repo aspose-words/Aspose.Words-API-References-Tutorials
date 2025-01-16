@@ -1,6 +1,6 @@
 ---
-title: Flytta till bokmärkesslut i Word-dokument
-linktitle: Flytta till bokmärkesslut i Word-dokument
+title: Flytta till bokmärke slut i Word-dokument
+linktitle: Flytta till bokmärke slut i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du flyttar till ett bokmärkesände i ett Word-dokument med Aspose.Words för .NET. Följ vår detaljerade, steg-för-steg-guide för exakt dokumenthantering.
 type: docs
@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Förstå MoveToBookmark
 
-De`MoveToBookmark`metoden låter dig navigera till ett specifikt bokmärke i ditt dokument. Metodsignaturen är:
+ De`MoveToBookmark`metoden låter dig navigera till ett specifikt bokmärke i ditt dokument. Metodsignaturen är:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

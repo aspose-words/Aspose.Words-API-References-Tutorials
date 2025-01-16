@@ -85,7 +85,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ### 什麼是 Aspose.Words for .NET？
 
-Aspose.Words for .NET 是一個強大的 .NET 文件操作庫，可讓開發人員以程式設計方式建立、修改和轉換 Word 文件。
+Aspose.Words for .NET 是一個用於文件操作的強大 .NET 函式庫，可讓開發人員以程式設計方式建立、修改和轉換 Word 文件。
 
 ### 我可以免費使用 Aspose.Words 嗎？
 

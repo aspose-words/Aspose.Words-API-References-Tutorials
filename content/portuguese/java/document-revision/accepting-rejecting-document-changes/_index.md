@@ -44,10 +44,7 @@ Aceitar alterações é uma etapa crítica na finalização de um documento. O A
 
 ```java
 // Aceitar todas as revisões
-doc.acceptAllRevisions();
-
-// Aceitar uma revisão específica por índice
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Rejeitando Mudanças
@@ -56,10 +53,7 @@ Em alguns casos, você pode precisar rejeitar certas alterações. O Aspose.Word
 
 ```java
 // Rejeitar todas as revisões
-doc.rejectAllRevisions();
-
-// Rejeitar uma revisão específica por índice
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Salvando o documento

@@ -54,7 +54,7 @@ Successivamente, dobbiamo accedere alla raccolta di run nel primo paragrafo del 
 RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
 ```
 
-Questa riga di codice recupera le esecuzioni dal primo paragrafo della prima sezione del documento.
+Questa riga di codice recupera le sequenze dal primo paragrafo della prima sezione del documento.
 
 ## Passaggio 3: Ottieni il font della prima esecuzione
 

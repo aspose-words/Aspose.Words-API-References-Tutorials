@@ -9,7 +9,7 @@ url: /pl/net/programming-with-ranges/ranges-get-text/
 ---
 ## Wstęp
 
-Czy kiedykolwiek musiałeś programowo wyodrębnić tekst z dokumentu Word? Niezależnie od tego, czy automatyzujesz przetwarzanie dokumentów, czy po prostu musisz pobrać określoną zawartość z pliku Word, Aspose.Words for .NET ma dla Ciebie rozwiązanie. Ta potężna biblioteka pozwala z łatwością manipulować dokumentami Word, zapewniając solidne narzędzia do wyodrębniania, edytowania i tworzenia zawartości. W tym samouczku przeprowadzimy Cię przez proces wyodrębniania tekstu z dokumentu Word za pomocą Aspose.Words for .NET, rozbijając go krok po kroku, aby zapewnić, że będziesz w stanie płynnie podążać za nim.
+Czy kiedykolwiek musiałeś programowo wyodrębnić tekst z dokumentu Word? Niezależnie od tego, czy automatyzujesz przetwarzanie dokumentów, czy po prostu musisz pobrać określoną zawartość z pliku Word, Aspose.Words for .NET ma dla Ciebie rozwiązanie. Ta potężna biblioteka pozwala z łatwością manipulować dokumentami Word, zapewniając solidne narzędzia do wyodrębniania, edytowania i tworzenia zawartości. W tym samouczku przeprowadzimy Cię przez proces wyodrębniania tekstu z dokumentu Word za pomocą Aspose.Words for .NET, rozbijając go krok po kroku, aby zapewnić, że będziesz w stanie płynnie podążać za procesem.
 
 ## Wymagania wstępne
 
@@ -67,7 +67,7 @@ Wyodrębnij tekst
 string text = doc.Range.Text;
 ```
 
-Ten`Range.Text` Właściwość ta daje Ci cały tekst zawarty w zakresie dokumentu. Obejmuje to tekst ze wszystkich sekcji, nagłówków, stopek i treści głównej.
+ Ten`Range.Text` Właściwość ta daje Ci cały tekst zawarty w zakresie dokumentu. Obejmuje to tekst ze wszystkich sekcji, nagłówków, stopek i treści głównej.
 
 ## Krok 4: Wyświetl wyodrębniony tekst
 

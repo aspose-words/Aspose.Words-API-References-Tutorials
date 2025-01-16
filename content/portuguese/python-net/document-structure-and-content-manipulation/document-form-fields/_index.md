@@ -17,16 +17,16 @@ Campos de formulário são elementos interativos dentro de um documento que perm
 
 Antes de nos aprofundarmos na criação e no domínio de campos de formulário, vamos configurar nosso ambiente e nos familiarizar com o Aspose.Words para Python. Siga estas etapas para começar:
 
-1. **Install Aspose.Words:** Comece instalando a biblioteca Aspose.Words para Python usando o seguinte comando pip:
+1. Instalar o Aspose.Words: Comece instalando a biblioteca Aspose.Words para Python usando o seguinte comando pip:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Importe a biblioteca no seu script Python para começar a usar suas funcionalidades.
+2. Importe a biblioteca: importe a biblioteca no seu script Python para começar a usar suas funcionalidades.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Com a configuração pronta, vamos prosseguir para os conceitos básicos de criação e gerenciamento de campos de formulário.
@@ -41,7 +41,7 @@ Campos de entrada de texto permitem que os usuários insiram texto. Para criar u
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Caixas de seleção e botões de opção
@@ -50,12 +50,12 @@ Caixas de seleção e botões de opção são usados para seleções de múltipl
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Listas suspensas
@@ -64,7 +64,7 @@ Listas suspensas fornecem uma seleção de opções para os usuários. Crie uma 
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Selecionadores de data
@@ -73,7 +73,7 @@ Os seletores de data permitem que os usuários selecionem datas convenientemente
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Definindo propriedades de campos de formulário
@@ -122,7 +122,7 @@ Campos de entrada de texto são versáteis e comumente usados para capturar info
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Depois que o campo for criado, você pode definir suas propriedades, como nome, valor padrão e texto de placeholder. Vamos ver como fazer isso:
@@ -150,14 +150,14 @@ Para criar um campo de formulário de caixa de seleção, use
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Para botões de opção, você pode criá-los usando o tipo de forma OLE_OBJECT:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Depois de criar esses campos, você pode personalizar suas propriedades, como o nome, a seleção padrão e o texto do rótulo:
@@ -183,7 +183,7 @@ Listas suspensas são úteis para cenários em que os usuários precisam escolhe
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Depois de criar a lista suspensa, você pode especificar a lista de opções disponíveis para os usuários:
@@ -211,7 +211,7 @@ Os seletores de data simplificam o processo de captura de datas dos usuários. E
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Depois de criar o seletor de data, você pode definir suas propriedades, como o nome e a data padrão:
@@ -228,11 +228,7 @@ Os seletores de data melhoram a experiência do usuário ao capturar datas e gar
 
 ## Conclusão
 
-Dominar campos de formulário e captura de dados em documentos do Word é uma habilidade valiosa que permite que você crie documentos interativos e eficientes para coleta de dados. O Aspose.Words para Python fornece um conjunto abrangente de ferramentas para criar, personalizar e extrair dados de campos de formulário. De campos de entrada de texto simples a cálculos complexos e formatação condicional, as possibilidades são vastas.
-
 Neste guia, exploramos os fundamentos dos campos de formulário, tipos de campos de formulário, configuração de propriedades e personalização de seu comportamento. Também abordamos as melhores práticas para design de formulário e oferecemos insights sobre otimização de formulários de documentos para mecanismos de busca.
-
-Ao aproveitar o poder do Aspose.Words para Python, você pode criar documentos que não apenas capturam dados de forma eficaz, mas também melhoram o engajamento do usuário e simplificam os fluxos de trabalho de processamento de dados. Agora, você está pronto para embarcar em sua jornada para se tornar um mestre em campos de formulário e captura de dados em documentos do Word.
 
 ## Perguntas frequentes
 

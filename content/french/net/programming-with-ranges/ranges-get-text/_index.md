@@ -67,7 +67,7 @@ Extraire le texte
 string text = doc.Range.Text;
 ```
 
-Le`Range.Text` La propriété vous donne tout le texte contenu dans la plage du document. Cela inclut le texte de toutes les sections, les en-têtes, les pieds de page et le corps principal.
+ Le`Range.Text` La propriété vous donne tout le texte contenu dans la plage du document. Cela inclut le texte de toutes les sections, les en-têtes, les pieds de page et le corps principal.
 
 ## Étape 4 : Afficher le texte extrait
 

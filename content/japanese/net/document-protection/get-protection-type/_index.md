@@ -15,7 +15,7 @@ url: /ja/net/document-protection/get-protection-type/
 
 コーディング部分に進む前に、必要なものがすべて揃っていることを確認しましょう。
 
-1.  Aspose.Words for .NETライブラリ:まだダウンロードしていない場合は、[Aspose.Words for .NET ライブラリ](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NETライブラリ:まだダウンロードしていない場合は、[Aspose.Words for .NET ライブラリ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio のような IDE。
 3. C# の基礎知識: C# プログラミングの知識があると、理解しやすくなります。
 

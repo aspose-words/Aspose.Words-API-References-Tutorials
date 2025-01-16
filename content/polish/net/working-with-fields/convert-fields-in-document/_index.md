@@ -77,7 +77,7 @@ Gratulacje! Udało Ci się przekonwertować pola w dokumencie Word za pomocą As
 ## Najczęściej zadawane pytania
 
 ### Czy mogę konwertować inne typy pól za pomocą Aspose.Words dla .NET?
- Tak, Aspose.Words dla .NET pozwala manipulować różnymi typami pól, nie tylko polami IF. Możesz eksplorować[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Tak, Aspose.Words dla .NET pozwala manipulować różnymi typami pól, nie tylko polami IF. Możesz eksplorować[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### Czym są pola IF w dokumentach Word?
 Pola IF to pola warunkowe, które wyświetlają tekst na podstawie określonych warunków. Są często używane do tworzenia dynamicznej zawartości w dokumentach Word.

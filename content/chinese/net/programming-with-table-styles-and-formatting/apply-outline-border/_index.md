@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-在此步骤中，我们使用`Document`来自 Aspose.Words 的类来加载现有文档。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档存储的实际路径。
+在此步骤中，我们使用`Document`来自 Aspose.Words 的类来加载现有文档。替换`"YOUR DOCUMENT DIRECTORY"`使用存储文档的实际路径。
 
 ## 第 2 步：访问表
 

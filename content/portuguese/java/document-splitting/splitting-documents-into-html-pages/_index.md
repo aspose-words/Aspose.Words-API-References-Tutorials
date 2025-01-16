@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-Este código divide o documento com base em quebras de página e armazena cada página no`pages` lista.
+ Este código divide o documento com base em quebras de página e armazena cada página no`pages` lista.
 
 ## Salvando como HTML
 

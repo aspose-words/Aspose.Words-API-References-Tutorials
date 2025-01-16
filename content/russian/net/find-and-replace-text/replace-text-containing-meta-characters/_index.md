@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Мы создаем`FindReplaceOptions`объект и установка выравнивания абзаца по центру.
+ Мы создаем`FindReplaceOptions` объект и установка выравнивания абзаца по центру.
 
 ## Шаг 4: Замените текст метасимволами
 
 На этом этапе происходит волшебство! Мы заменим слово «раздел» на разрыв абзаца и добавим подчеркивание.
 
 ```csharp
-// Сделайте двойной разрыв абзаца после слова «раздел», добавьте подчеркивание и выровняйте текст по центру.
+//Сделайте двойной разрыв абзаца после слова «раздел», добавьте подчеркивание и выровняйте текст по центру.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

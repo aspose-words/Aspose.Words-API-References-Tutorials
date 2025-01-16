@@ -86,7 +86,7 @@ Por fim, salvamos cada novo documento com um nome exclusivo. Esta etapa garante 
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-O`Save` O método salva o novo documento no diretório especificado com um nome exclusivo baseado no índice da seção.
+ O`Save` O método salva o novo documento no diretório especificado com um nome exclusivo baseado no índice da seção.
 
 ## Conclusão
 

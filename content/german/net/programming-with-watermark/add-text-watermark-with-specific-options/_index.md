@@ -105,7 +105,7 @@ Aspose.Words unterstützt das Hinzufügen jeweils eines Wasserzeichens. Um mehre
 
 ### Kann ich die Position des Wasserzeichens anpassen?
 
-Der`WatermarkLayout`-Eigenschaft bestimmt die Ausrichtung, aber genaue Positionierungsanpassungen werden nicht direkt unterstützt. Möglicherweise müssen Sie für eine genaue Platzierung andere Techniken verwenden.
+ Der`WatermarkLayout`-Eigenschaft bestimmt die Ausrichtung, aber genaue Positionierungsanpassungen werden nicht direkt unterstützt. Möglicherweise müssen Sie für eine genaue Platzierung andere Techniken verwenden.
 
 ### Was ist, wenn ich ein halbtransparentes Wasserzeichen benötige?
 

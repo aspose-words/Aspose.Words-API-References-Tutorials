@@ -2,7 +2,7 @@
 title: Efektywne zapisywanie dokumentów z opcjami DOC, HTML i obrazów
 linktitle: Efektywne zapisywanie dokumentów z opcjami DOC, HTML i obrazów
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Naucz się efektywnego zapisywania dokumentów za pomocą Aspose.Words dla Java. Ten przewodnik krok po kroku obejmuje opcje DOC, HTML i obrazów, zwiększając Twoje umiejętności zarządzania dokumentami.
+description: Poznaj efektywne zapisywanie dokumentów za pomocą Aspose.Words dla Java. Ten przewodnik krok po kroku obejmuje opcje DOC, HTML i obrazów, zwiększając Twoje umiejętności zarządzania dokumentami.
 type: docs
 weight: 12
 url: /pl/java/word-processing/efficient-document-saving-options/
@@ -54,7 +54,7 @@ Czasami może być konieczne zapisanie każdej strony dokumentu jako obrazu. Asp
 
 ```java
 // Kod Java umożliwiający zapisanie dokumentu jako obrazu
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Ustaw rozdzielczość (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

@@ -30,12 +30,8 @@ url: /ko/python-net/document-combining-and-comparison/
 ## 문서 결합 및 비교 튜토리얼
 ### [Word에서 문서 병합 및 비교](./merge-compare-documents/)
 Aspose.Words for Python을 사용하여 Word 문서를 손쉽게 병합하고 비교하세요. 문서를 조작하고, 차이점을 강조하고, 작업을 자동화하는 방법을 알아보세요.
-### [문서 북마크의 힘 활용](./document-bookmarks/)
-Aspose.Words for Python을 사용하여 문서 북마크의 힘을 활용하는 방법을 알아보세요. 단계별 가이드와 코드 예제를 통해 북마크를 만들고, 관리하고, 탐색하세요.
 ### [정밀 편집을 위한 문서 범위 탐색](./document-ranges/)
 Aspose.Words for Python을 사용하여 문서 범위를 정밀하게 탐색하고 편집하는 방법을 알아보세요. 효율적인 콘텐츠 조작을 위한 소스 코드가 포함된 단계별 가이드.
-### [구조화된 데이터에 대한 구조화된 문서 태그(SDT) 활용](./document-sdts/)
-콘텐츠를 구성하기 위한 구조화된 문서 태그(SDT)의 힘을 활용하세요. Aspose.Words for Python을 사용하여 SDT를 구현하는 방법을 알아보세요.
 ### [스타일 및 테마를 적용하여 문서 변환](./apply-styles-themes-documents/)
 Aspose.Words for Python으로 문서의 미학을 강화하세요. 스타일, 테마, 사용자 정의를 손쉽게 적용하세요.
 ### [Word 문서에 대한 포괄적인 목차 작성](./generate-table-contents/)

@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Ten`Document` obiekt reprezentuje cały nasz dokument Word, a`DocumentBuilder` pomaga nam dodawać i formatować treść.
+ Ten`Document` obiekt reprezentuje cały nasz dokument Word, a`DocumentBuilder` pomaga nam dodawać i formatować treść.
 
 ## Krok 3: Zdefiniuj obramowania akapitu
 

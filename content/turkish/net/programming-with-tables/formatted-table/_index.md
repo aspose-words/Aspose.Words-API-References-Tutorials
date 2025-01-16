@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`DocumentBuilder` belge oluşturma sürecini basitleştiren bir yardımcı sınıftır.
+ The`DocumentBuilder` belge oluşturma sürecini basitleştiren bir yardımcı sınıftır.
 
 ## Adım 3: Tabloyu Başlatın
 

@@ -127,7 +127,7 @@ Les commentaires d'ancrage sont utilisés pour mettre en évidence et commenter 
 Oui, vous pouvez ajouter plusieurs commentaires à la même section de texte en définissant plusieurs plages de commentaires.
 
 ### L'utilisation d'Aspose.Words pour .NET est-elle gratuite ?
-Aspose.Words pour .NET propose un essai gratuit que vous pouvez télécharger[ici](https://releases.aspose.com/) Pour bénéficier de toutes les fonctionnalités, vous pouvez acheter une licence[ici](https://purchase.aspose.com/buy).
+ Aspose.Words pour .NET propose un essai gratuit que vous pouvez télécharger[ici](https://releases.aspose.com/) Pour bénéficier de toutes les fonctionnalités, vous pouvez acheter une licence[ici](https://purchase.aspose.com/buy).
 
 ### Puis-je personnaliser l'apparence des commentaires ?
 Alors qu'Aspose.Words se concentre sur la fonctionnalité, l'apparence des commentaires dans les documents Word est généralement contrôlée par Word lui-même.

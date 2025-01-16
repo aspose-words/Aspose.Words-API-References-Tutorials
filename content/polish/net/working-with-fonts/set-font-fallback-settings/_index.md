@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Skonfiguruj ustawienia czcionek
 
-Utwórz nowy`FontSettings` obiekt i załaduj ustawienia zapasowe czcionek z pliku XML. Ten plik XML zawiera reguły zapasowe czcionek.
+ Utwórz nowy`FontSettings` obiekt i załaduj ustawienia zapasowe czcionek z pliku XML. Ten plik XML zawiera reguły zapasowe czcionek.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

@@ -71,7 +71,7 @@ Una volta avviato il segnalibro, possiamo aggiungere qualsiasi contenuto desider
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-IL`Writeln` aggiunge al documento un nuovo paragrafo con il testo specificato.
+ IL`Writeln` aggiunge al documento un nuovo paragrafo con il testo specificato.
 
 ## Passaggio 5: terminare il segnalibro
 
@@ -81,7 +81,7 @@ Dopo aver aggiunto il nostro contenuto, dobbiamo chiudere il segnalibro. Questo 
 builder.EndBookmark("FineBookmark");
 ```
 
-IL`EndBookmark` Il metodo completa il segnalibro che abbiamo iniziato in precedenza.
+ IL`EndBookmark` Il metodo completa il segnalibro che abbiamo iniziato in precedenza.
 
 ## Passaggio 6: Salvare il documento
 

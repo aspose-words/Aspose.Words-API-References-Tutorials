@@ -81,7 +81,7 @@ TextBox textBox2 = shape2.TextBox;
 
 ## Stap 4: Tekstvakken koppelen
 
- Het magische moment! Nu linken we`textBox1` naar`textBox2` Dit betekent dat wanneer tekst overloopt van`textBox1` , het zal doorgaan in`textBox2`.
+ Het magische moment! Nu linken we`textBox1` naar`textBox2` Dit betekent dat wanneer de tekst overloopt van`textBox1` , het zal doorgaan in`textBox2`.
 
 ### Linkgeldigheid controleren
 

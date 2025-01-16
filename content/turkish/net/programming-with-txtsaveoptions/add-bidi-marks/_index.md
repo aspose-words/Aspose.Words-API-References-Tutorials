@@ -15,7 +15,7 @@ Belge işleme dünyasında, çift yönlü (Bidi) metinleri yönetmek genellikle 
 
 Koda dalmadan önce aşağıdakilerin mevcut olduğundan emin olun:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olması gerekir. Bunu şuradan indirebilirsiniz:[Aspose İndirmeler sayfası](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olması gerekir. Bunu şuradan indirebilirsiniz:[Aspose İndirmeler sayfası](https://releases.aspose.com/words/net/).
 2. .NET Framework veya .NET Core: Örnekleri çalıştırmak için uyumlu bir .NET ortamınızın kurulu olduğundan emin olun.
 3. Temel C# Bilgisi: C# programlama dili ve .NET'teki temel işlemlere aşinalık.
 

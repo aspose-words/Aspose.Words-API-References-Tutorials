@@ -53,7 +53,7 @@ doc.save("Output.docx");
 
 ### Explicação:
 
-O`save` método é chamado no`Document` objeto para salvar o arquivo no`.docx` format. O argumento fornecido é o caminho do arquivo onde o documento do Word será salvo. Este é o passo final no processo de conversão.
+ O`save` método é chamado no`Document` objeto para salvar o arquivo no`.docx` format. O argumento fornecido é o caminho do arquivo onde o documento do Word será salvo. Este é o passo final no processo de conversão.
 
 ## Conclusão
 

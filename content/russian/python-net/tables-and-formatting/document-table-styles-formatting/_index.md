@@ -23,7 +23,7 @@ url: /ru/python-net/tables-and-formatting/document-table-styles-formatting/
 2. Импортируйте библиотеку: импортируйте библиотеку Aspose.Words в свой скрипт Python, используя следующий оператор импорта:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. Загрузите документ: загрузите существующий документ или создайте новый с помощью API Aspose.Words.
@@ -35,7 +35,7 @@ url: /ru/python-net/tables-and-formatting/document-table-styles-formatting/
 1.  Создайте таблицу: используйте`DocumentBuilder` класс для создания новой таблицы и указания количества строк и столбцов.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ url: /ru/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. Отступы ячеек: добавьте отступы к ячейкам для улучшения интервалов.
@@ -80,32 +80,8 @@ url: /ru/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Стилизация таблиц с помощью Aspose.Words
-
-Aspose.Words для Python предоставляет ряд вариантов оформления, которые сделают ваши таблицы визуально привлекательными:
-
-1. Стили таблиц: применяйте предопределенные стили таблиц, чтобы добиться профессионального вида.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. Цвет фона ячейки: измените цвет фона ячейки, чтобы выделить определенные данные.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. Форматирование шрифта: настройте стиль, размер и цвет шрифта для лучшей читабельности.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## Объединение и разделение ячеек для сложных макетов
@@ -115,30 +91,14 @@ Aspose.Words для Python предоставляет ряд вариантов 
 1. Объединить ячейки: объединить несколько ячеек, чтобы создать одну большую ячейку.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. Разделение ячеек: Разделение ячеек обратно на отдельные компоненты.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## Регулировка высоты и ширины строк и столбцов
-
-Точная настройка размеров строк и столбцов для сбалансированной компоновки таблицы:
-
-1. Настройте высоту строки: измените высоту строки в зависимости от содержимого.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. Настроить ширину столбца: автоматически настраивать ширину столбца в соответствии с содержимым.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## Добавление границ и затенения к таблицам
@@ -148,16 +108,16 @@ Aspose.Words для Python предоставляет ряд вариантов 
 1. Границы: настройте границы для таблиц и ячеек.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. Затенение: Примените затенение к ячейкам для создания визуально привлекательного эффекта.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
-## Работа с содержимым ячеек и выравнивание
+## Работа с содержимым ячеек и выравниванием
 
 Эффективно управляйте содержимым ячеек и выравниванием для лучшей читаемости:
 
@@ -171,7 +131,7 @@ Aspose.Words для Python предоставляет ряд вариантов 
 2. Выравнивание текста: выровняйте текст ячейки по мере необходимости.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## Обработка верхних и нижних колонтитулов таблиц
@@ -188,26 +148,10 @@ Aspose.Words для Python предоставляет ряд вариантов 
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## Автоматическая настройка макета таблицы
-
-Убедитесь, что макет вашей таблицы автоматически подстраивается под содержимое:
-
-1. Автоматически подгонять под размер окна: позволяет таблице подходить по ширине страницы.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. Автоматическое изменение размера ячеек: включите автоматическое изменение размера ячеек для размещения содержимого.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## Экспорт таблиц в различные форматы
 
 Когда таблица будет готова, вы можете экспортировать ее в различные форматы, такие как PDF или DOCX:
@@ -215,21 +159,15 @@ Aspose.Words для Python предоставляет ряд вариантов 
 1. Сохранить как PDF: сохранить документ с таблицей как файл PDF.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. Сохранить как DOCX: сохранить документ как файл DOCX.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## Устранение неполадок и советы по эффективному управлению таблицами
-
-- Если таблицы выглядят искаженными, проверьте правильность ширины столбцов или высоты строк.
-- Протестируйте отображение таблиц в разных форматах, чтобы убедиться в их согласованности.
-- Для сложных макетов тщательно планируйте объединение и разделение ячеек.
-
+	
 ## Заключение
 
 Aspose.Words для Python предлагает комплексный набор инструментов для создания, стилизации и форматирования таблиц документов. Выполняя шаги, описанные в этой статье, вы сможете эффективно управлять таблицами в своих документах, настраивать их внешний вид и экспортировать их в различные форматы. Используйте возможности Aspose.Words для улучшения презентаций документов и предоставления читателям четкой, визуально привлекательной информации.

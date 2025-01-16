@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Slučování dokumentů
-
-Plynulé kombinování dokumentů je cenná dovednost. Procházení dokumentů nám pomáhá je efektivně sloučit:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Rozdělení dokumentů
 
 Někdy můžeme potřebovat rozdělit dokument na menší části. Navigace v dokumentu nám pomáhá dosáhnout:
@@ -117,8 +109,8 @@ Záhlaví a zápatí často vyžadují odlišné zacházení. Procházení těch
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

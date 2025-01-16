@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## 合併文檔
-
-無縫組合文件是一項寶貴的技能。瀏覽文件可以幫助我們有效地合併它們：
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## 分割文檔
 
 有時，我們可能需要將文件分成更小的部分。瀏覽文件可以幫助我們實現這一目標：
@@ -117,8 +109,8 @@ for section in sections:
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Etapa 5: Insira o hiperlink
 
- Agora, inserimos o hiperlink usando o`InsertHyperlink`método. Este método recebe três parâmetros: o texto de exibição, a URL e um booleano indicando se o link deve ser formatado como um hyperlink.
+ Agora, inserimos o hiperlink usando o`InsertHyperlink` método. Este método recebe três parâmetros: o texto de exibição, a URL e um booleano indicando se o link deve ser formatado como um hyperlink.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", falso);
@@ -106,7 +106,7 @@ Inserir hiperlinks em um documento do Word usando o Aspose.Words para .NET é si
 
 ### Posso inserir vários hiperlinks em um único documento?
 
- Sim, você pode inserir vários hiperlinks repetindo o`InsertHyperlink`método para cada link.
+ Sim, você pode inserir vários hiperlinks repetindo o`InsertHyperlink` método para cada link.
 
 ### Como altero a cor do hiperlink?
 
@@ -118,7 +118,7 @@ Inserir hiperlinks em um documento do Word usando o Aspose.Words para .NET é si
 
 ### O que acontece se o URL for inválido?
 
-O`InsertHyperlink` O método não valida URLs, por isso é importante garantir que as URLs estejam corretas antes de inseri-las.
+ O`InsertHyperlink` O método não valida URLs, por isso é importante garantir que as URLs estejam corretas antes de inseri-las.
 
 ### É possível remover um hiperlink depois que ele foi inserido?
 

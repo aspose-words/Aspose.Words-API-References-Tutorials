@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-在此步驟中，您定義文件的儲存路徑並將其載入到`Document`目的。代替`"YOUR DOCUMENT DIRECTORY"`與您的文件所在的實際路徑。
+在此步驟中，您定義儲存文件的路徑並將其載入到`Document`目的。代替`"YOUR DOCUMENT DIRECTORY"`與您的文件所在的實際路徑。
 
 ## 第 2 步：訪問表
 

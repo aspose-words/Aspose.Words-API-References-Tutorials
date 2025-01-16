@@ -18,7 +18,7 @@ Innan vi dyker in i de tekniska detaljerna, se till att du har följande föruts
 
 - Grundläggande förståelse för Python-programmering.
 -  Aspose.Words för Python API-referens (tillgänglig på[här](https://reference.aspose.com/words/python-net/).
-- Tillgång till Aspose.Words för Python-biblioteket (ladda ner från[här](https://releases.aspose.com/words/python/).
+-  Tillgång till Aspose.Words för Python-biblioteket (ladda ner från[här](https://releases.aspose.com/words/python/).
 
 ## Ställa in Aspose.Words för Python
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Importera biblioteket i ditt Python-skript.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Skapa ett nytt dokument
@@ -42,7 +42,7 @@ import aspose.words
 Låt oss börja med att skapa ett nytt dokument med Aspose.Words:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Lägga till innehåll i dokumentet
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Du kan enkelt lägga till innehåll i dokumentet med Aspose.Words:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ Styling och formatering spelar en avgörande roll vid dokumentpresentation. Aspo
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Infoga webbtillägg
-
-För att infoga ett webbtillägg i dokumentet, följ dessa steg:
-
-1. Skapa webbtillägget med HTML, CSS och JavaScript.
-2. Konvertera webbtillägget till en base64-kodad sträng.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Infoga webbtillägget i dokumentet:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Interagera med webbtillägg
@@ -98,7 +78,7 @@ Webbtillägg kan dynamiskt ändra dokumentinnehåll. Du kan till exempel använd
 Efter att ha införlivat webbtillägg och gjort nödvändiga ändringar kan du spara dokumentet med olika format som stöds av Aspose.Words:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Tips för prestandaoptimering

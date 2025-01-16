@@ -32,7 +32,7 @@ Simpel toch? En nu gaan we door naar het spannende gedeelte: een document klonen
 
 ## Stap 1: Stel uw project in
 
-Allereerst moet u uw project in Visual Studio instellen. Als u al een project klaar hebt, kunt u deze stap overslaan. Als dat niet zo is, volgt u de volgende stappen:
+Allereerst moet u uw project in Visual Studio instellen. Als u al een project klaar hebt, kunt u deze stap overslaan. Als dat niet zo is, volgt u de onderstaande stappen:
 
 1. Open Visual Studio: start Visual Studio en maak een nieuw C# Console App-project.
 2.  Geef uw project een naam: Geef uw project een betekenisvolle naam. Iets als`CloneWordDocumentDemo` zal doen.

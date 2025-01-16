@@ -9,7 +9,7 @@ url: /hu/net/document-protection/remove-read-only-restriction/
 ---
 ## Bevezetés
 
-csak olvasható korlátozás eltávolítása egy Word-dokumentumból meglehetősen nehéz feladat lehet, ha nem ismeri a megfelelő eszközöket és módszereket. Szerencsére az Aspose.Words for .NET zökkenőmentes módot kínál ennek elérésére. Ebben az oktatóanyagban végigvezetjük a csak olvasható korlátozás megszüntetésének folyamatán egy Word-dokumentumból az Aspose.Words for .NET használatával.
+A csak olvasható korlátozás eltávolítása egy Word-dokumentumból meglehetősen nehéz feladat lehet, ha nem ismeri a megfelelő eszközöket és módszereket. Szerencsére az Aspose.Words for .NET zökkenőmentes módot kínál ennek elérésére. Ebben az oktatóanyagban végigvezetjük a csak olvasható korlátozás megszüntetésének folyamatán egy Word-dokumentumból az Aspose.Words for .NET használatával.
 
 ## Előfeltételek
 
@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 A jelszó megadása nem kötelező, de további biztonsági réteget adhat a dokumentumhoz, mielőtt módosítaná azt.
 
 ```csharp
-//Adjon meg egy legfeljebb 15 karakter hosszú jelszót.
+// Adjon meg egy legfeljebb 15 karakter hosszú jelszót.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Igen, a jelszó beállítása nem kötelező. Közvetlenül eltávolíthatja a c
 
 ### Mi történik, ha a dokumentum már rendelkezik más típusú védelemmel?
 
-A`doc.Protect(ProtectionType.NoProtection)` módszer biztosítja, hogy minden típusú védelem eltávolításra kerüljön a dokumentumról.
+ A`doc.Protect(ProtectionType.NoProtection)` módszer biztosítja, hogy minden típusú védelem eltávolításra kerüljön a dokumentumról.
 
 ### Van mód annak megállapítására, hogy egy dokumentum csak olvasható-e a korlátozás megszüntetése előtt?
 

@@ -19,10 +19,10 @@ url: /ja/python-net/document-splitting-and-formatting/split-format-documents/
 最初のステップは、分割してフォーマットするドキュメントを読み込むことです。これを実現するには、次のコード スニペットを使用します。
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## ステップ2: ドキュメントをセクションに分割する
@@ -41,10 +41,10 @@ sections = document.sections
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## ステップ4: ドキュメントを保存する
@@ -55,6 +55,12 @@ section.page_setup.bottom_margin = asposewords.pt_to_px(1)
 document.save("path/to/save/updated_document.docx")
 ```
 
+## 結論
+
+Aspose.Words for Python は、ニーズに応じてドキュメントを効率的に分割およびフォーマットするための包括的なツール セットを提供します。このチュートリアルで説明されている手順に従い、提供されているソース コード サンプルを利用することで、ドキュメントをシームレスに管理し、プロフェッショナルに提示することができます。
+
+このチュートリアルでは、ドキュメントの分割と書式設定の基本について説明し、よくある質問に対する解決策を示しました。次は、Aspose.Words for Python の機能を調べて実験し、ドキュメント管理ワークフローをさらに強化する番です。
+
 ## よくある質問
 
 ### ドキュメントを複数のファイルに分割するにはどうすればよいですか?
@@ -62,7 +68,7 @@ document.save("path/to/save/updated_document.docx")
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ for i, section in enumerate(sections):
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### 特定のセクションのフォント スタイルを変更するにはどうすればよいですか?
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### ドキュメントから特定のセクションを削除することは可能ですか?
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## 結論
-Aspose.Words for Python は、ニーズに応じてドキュメントを効率的に分割およびフォーマットするための包括的なツール セットを提供します。このチュートリアルで説明されている手順に従い、提供されているソース コード サンプルを利用することで、ドキュメントをシームレスに管理し、プロフェッショナルに提示することができます。
-
-このチュートリアルでは、ドキュメントの分割と書式設定の基本について説明し、よくある質問に対する解決策を示しました。次は、Aspose.Words for Python の機能を調べて実験し、ドキュメント管理ワークフローをさらに強化する番です。

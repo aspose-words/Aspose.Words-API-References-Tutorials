@@ -54,7 +54,7 @@ Vervolgens moeten we de opties voor het opslaan van het document instellen. Hier
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-De`OoxmlSaveOptions`klasse stelt ons in staat om verschillende opties voor het opslaan van DOCX-bestanden op te geven. Hier stellen we de`Password`eigendom van`"password"` . Je kunt vervangen`"password"` met een wachtwoord naar keuze. Dit wachtwoord is vereist om het gecodeerde DOCX-bestand te openen.
+ De`OoxmlSaveOptions`klasse stelt ons in staat om verschillende opties voor het opslaan van DOCX-bestanden op te geven. Hier stellen we de`Password`eigendom van`"password"` . Je kunt vervangen`"password"` met een wachtwoord naar keuze. Dit wachtwoord is vereist om het gecodeerde DOCX-bestand te openen.
 
 ## Stap 3: Sla het gecodeerde document op
 
@@ -65,7 +65,7 @@ Ten slotte slaan we het document op met behulp van de opslagopties die we in de 
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-De`Save` methode van de`Document` klasse wordt gebruikt om het document op te slaan. We geven het pad en de bestandsnaam voor het gecodeerde document, samen met de`saveOptions` we eerder hebben geconfigureerd. Het document is nu opgeslagen als een gecodeerd DOCX-bestand.
+ De`Save` methode van de`Document` klasse wordt gebruikt om het document op te slaan. We geven het pad en de bestandsnaam voor het gecodeerde document, samen met de`saveOptions` we eerder hebben geconfigureerd. Het document is nu opgeslagen als een gecodeerd DOCX-bestand.
 
 ## Conclusie
 

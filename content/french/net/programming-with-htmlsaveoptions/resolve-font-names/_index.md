@@ -52,7 +52,7 @@ Document doc = new Document(dataDir + "Missing font.docx");
 ```
 
 Explication:
- Nous créons un`Document` objet et chargez le document Word nommé « Police manquante.docx » à partir de notre`dataDir`.
+ Nous créons un`Document` objet et chargez le document Word nommé « Missing font.docx » à partir de notre`dataDir`.
 
 ## Étape 3 : Configuration des options d’enregistrement HTML
 

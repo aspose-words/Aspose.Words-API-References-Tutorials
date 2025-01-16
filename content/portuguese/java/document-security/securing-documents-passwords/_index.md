@@ -17,7 +17,7 @@ No mundo digital de hoje, a segurança de dados é primordial. Não importa se v
 
 ## Configurando Aspose.Words para Java
 
- Antes de mergulharmos na proteção de documentos, vamos garantir que você tenha o Aspose.Words para Java configurado em seu ambiente Java. Se você ainda não o fez, você pode baixá-lo em[aqui](https://releases.aspose.com/words/java/).
+Antes de mergulharmos na proteção de documentos, vamos garantir que você tenha o Aspose.Words para Java configurado em seu ambiente Java. Se você ainda não o fez, você pode baixá-lo em[aqui](https://releases.aspose.com/words/java/).
 
 ## Protegendo documentos: passo a passo
 
@@ -59,7 +59,7 @@ doc.save("path/to/your/secured/document.docx");
 
 ### Quão segura é a proteção por senha no Aspose.Words para Java?
 
-A proteção por senha no Aspose.Words para Java é altamente segura. Ele usa algoritmos de criptografia fortes para garantir que seus documentos permaneçam seguros contra acesso não autorizado.
+proteção por senha no Aspose.Words para Java é altamente segura. Ele usa algoritmos de criptografia fortes para garantir que seus documentos permaneçam seguros contra acesso não autorizado.
 
 ### Posso alterar ou remover a senha mais tarde?
 

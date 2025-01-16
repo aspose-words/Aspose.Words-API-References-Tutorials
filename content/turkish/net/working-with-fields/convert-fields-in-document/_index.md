@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for .NET kullanarak bir Word belgesindeki alanları başarıyla dönüştürdünüz. Bu kılavuzu izleyerek artık belgelerinizdeki alanları düzenleme ve dönüştürme bilgisine sahipsiniz ve belge işleme yeteneklerinizi geliştiriyorsunuz.
+Tebrikler! Aspose.Words for .NET kullanarak Word belgesindeki alanları başarıyla dönüştürdünüz. Bu kılavuzu izleyerek artık belgelerinizdeki alanları düzenleme ve dönüştürme bilgisine sahipsiniz ve belge işleme yeteneklerinizi geliştiriyorsunuz.
 
 ## SSS
 

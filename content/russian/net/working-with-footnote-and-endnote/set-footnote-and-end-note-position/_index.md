@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-В этом коде замените`"YOUR DOCUMENT DIRECTORY"`с фактическим путем расположения вашего документа.
+В этом коде замените`"YOUR DOCUMENT DIRECTORY"` с фактическим путем расположения вашего документа.
 
 ## Шаг 2: Установите положение сноски
 
@@ -93,4 +93,4 @@ Aspose.Words для .NET разработан для приложений .NET, 
 
 ### Где я могу найти более подробную документацию по Aspose.Words для .NET?
 
-Подробная документация доступна[здесь](https://reference.aspose.com/words/net/).
+ Подробная документация доступна[здесь](https://reference.aspose.com/words/net/).

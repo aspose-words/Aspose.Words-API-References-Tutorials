@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## الخطوة 2: إنشاء مستند جديد
 
-إنشاء جديد`Document` الكائن الذي سيكون بمثابة الأساس لمستند Word الخاص بك.
+ إنشاء جديد`Document` الكائن الذي سيكون بمثابة الأساس لمستند Word الخاص بك.
 
 ```csharp
 Document doc = new Document();

@@ -37,13 +37,6 @@ Aspose.Words for Java'nın en önemli güçlü yanlarından biri, çeşitli belg
 Document doc = new Document("sample.docx");
 ```
 
-### PDF Belgesi Yükleme
-
-```java
-// Bir PDF belgesi yükleyin
-Document doc = new Document("sample.pdf");
-```
-
 ## Belgeleri Değiştirme ve Kaydetme
 
 Bir belgeyi yükledikten sonra, basit metin değiştirmeden karmaşık biçimlendirme değişikliklerine kadar çok sayıda işlem gerçekleştirebilirsiniz.
@@ -71,7 +64,7 @@ Java için Aspose.Words farklı belge biçimleri arasında sorunsuz dönüşüme
 Document doc = new Document("sample.docx");
 
 // PDF olarak kaydet
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Görüntü ve Tabloların İşlenmesi
@@ -81,7 +74,7 @@ Belgelerle çalışırken resim ve tabloları dahil etmek yaygın bir gereklilik
 ### Bir Belgeye Resim Ekleme
 
 ```java
-// Bir belge yükleyin
+//Bir belge yükleyin
 Document doc = new Document("document.docx");
 
 // Bir resim ekle

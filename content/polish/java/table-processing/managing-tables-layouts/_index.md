@@ -10,7 +10,7 @@ url: /pl/java/table-processing/managing-tables-layouts/
 
 ## Wstęp
 
-Jeśli chodzi o pracę z dokumentami w Javie, Aspose.Words jest potężnym i wszechstronnym narzędziem. W tym kompleksowym przewodniku przeprowadzimy Cię przez proces zarządzania tabelami i układami w dokumentach przy użyciu Aspose.Words dla Javy. Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, znajdziesz cenne spostrzeżenia i praktyczne przykłady kodu źródłowego, które usprawnią Twoje zadania związane z zarządzaniem dokumentami.
+Jeśli chodzi o pracę z dokumentami w Javie, Aspose.Words jest potężnym i wszechstronnym narzędziem. W tym kompleksowym przewodniku przeprowadzimy Cię przez proces zarządzania tabelami i układami w dokumentach przy użyciu Aspose.Words dla Javy. Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, znajdziesz cenne spostrzeżenia i praktyczne przykłady kodu źródłowego, aby usprawnić zadania związane z zarządzaniem dokumentami.
 
 ## Zrozumienie znaczenia układu dokumentu
 
@@ -18,7 +18,7 @@ Zanim zagłębimy się w szczegóły techniczne, krótko omówmy, dlaczego zarz�
 
 ## Pierwsze kroki z Aspose.Words dla Java
 
- Aby rozpocząć naszą podróż, musisz mieć zainstalowany i skonfigurowany Aspose.Words for Java. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go ze strony internetowej Aspose[Tutaj](https://releases.aspose.com/words/java/). Po zainstalowaniu biblioteki możesz wykorzystać jej możliwości do efektywnego zarządzania tabelami i układami.
+ Aby rozpocząć naszą podróż, musisz mieć zainstalowany i skonfigurowany Aspose.Words for Java. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go ze strony internetowej Aspose[Tutaj](https://releases.aspose.com/words/java/)Po zainstalowaniu biblioteki możesz wykorzystać jej możliwości do efektywnego zarządzania tabelami i układami.
 
 ## Podstawowe zarządzanie tabelami
 
@@ -110,7 +110,7 @@ Tak, możesz scalać komórki w tabeli za pomocą Aspose.Words, jak pokazano w p
  Nie martw się! Możesz łatwo podzielić wcześniej połączone komórki, ustawiając ich właściwość scalania poziomego na`NONE`.
 
 ### Jak dodać podział strony przed tabelą?
- Aby wstawić podział strony przed tabelą, zmodyfikuj czcionkę`PageBreakBefore` nieruchomość jak pokazano.
+Aby wstawić podział strony przed tabelą, zmodyfikuj czcionkę`PageBreakBefore` nieruchomość jak pokazano.
 
 ### Czy Aspose.Words jest kompatybilny z różnymi formatami dokumentów?
 Oczywiście! Aspose.Words for Java obsługuje różne formaty dokumentów, co czyni go wszechstronnym wyborem do zarządzania dokumentami.
@@ -120,4 +120,4 @@ Oczywiście! Aspose.Words for Java obsługuje różne formaty dokumentów, co cz
 
 ## Wniosek
 
-tym kompleksowym przewodniku zbadaliśmy tajniki zarządzania tabelami i układami w dokumentach przy użyciu Aspose.Words for Java. Od podstawowego tworzenia tabel po zaawansowaną manipulację układem, masz teraz wiedzę i przykłady kodu źródłowego, aby zwiększyć możliwości przetwarzania dokumentów. Pamiętaj, że skuteczny układ dokumentu jest niezbędny do tworzenia profesjonalnie wyglądających dokumentów, a Aspose.Words zapewnia narzędzia, aby to osiągnąć.
+W tym kompleksowym przewodniku zbadaliśmy tajniki zarządzania tabelami i układami w dokumentach przy użyciu Aspose.Words for Java. Od podstawowego tworzenia tabel po zaawansowaną manipulację układem, masz teraz wiedzę i przykłady kodu źródłowego, aby zwiększyć możliwości przetwarzania dokumentów. Pamiętaj, że skuteczny układ dokumentu jest niezbędny do tworzenia profesjonalnie wyglądających dokumentów, a Aspose.Words zapewnia narzędzia, aby to osiągnąć.

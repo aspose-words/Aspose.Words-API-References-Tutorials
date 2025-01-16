@@ -150,7 +150,7 @@ Las opciones de limpieza en Aspose.Words para Java son configuraciones que le pe
 
 ###  ¿Cuál es el propósito de la`REMOVE_UNUSED_REGIONS` cleanup option?
 
-El`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Esta opción se utiliza para eliminar regiones de un documento que no tienen datos correspondientes durante el proceso de combinación de correspondencia. Ayuda a mantener el documento ordenado al eliminar los marcadores de posición no utilizados.
+ El`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Esta opción se utiliza para eliminar regiones de un documento que no tienen datos correspondientes durante el proceso de combinación de correspondencia. Ayuda a mantener el documento ordenado al eliminar los marcadores de posición no utilizados.
 
 ### ¿Puedo eliminar filas de tabla vacías de un documento usando Aspose.Words para Java?
 
@@ -166,7 +166,7 @@ El`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Esta opción se utiliza para e
 
 ###  ¿Cuál es la diferencia entre`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-El`REMOVE_EMPTY_FIELDS` La opción elimina los campos de combinación que no tienen datos o que están vacíos durante el proceso de combinación de correspondencia. Por otro lado, la opción`REMOVE_UNUSED_FIELDS`La opción elimina los campos de combinación que no se rellenan con datos durante la combinación. La elección entre ellos depende de si desea eliminar los campos sin contenido o aquellos que no se utilizan en la operación de combinación específica.
+ El`REMOVE_EMPTY_FIELDS` La opción elimina los campos de combinación que no tienen datos o que están vacíos durante el proceso de combinación de correspondencia. Por otro lado, la opción`REMOVE_UNUSED_FIELDS`La opción elimina los campos de combinación que no se rellenan con datos durante la combinación. La elección entre ellos depende de si desea eliminar los campos sin contenido o aquellos que no se utilizan en la operación de combinación específica.
 
 ### ¿Cómo puedo habilitar la eliminación de párrafos con signos de puntuación?
 

@@ -38,7 +38,7 @@ Vervolgens maken we een afdruktaak om ons geladen document af te drukken. Het on
 ```java
 // Maak een afdruktaak aan om ons document mee af te drukken.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Initialiseer een kenmerkenset met het aantal pagina's in het document.
+// Initialiseer een kenmerkenset met het aantal pagina's in het document.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Geef de printerinstellingen samen met de andere parameters door aan het afdrukdocument.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Maak een afdruktaak aan om ons document mee af te drukken.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Initialiseer een kenmerkenset met het aantal pagina's in het document.
+// Initialiseer een kenmerkenset met het aantal pagina's in het document.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Geef de printerinstellingen samen met de andere parameters door aan het afdrukdocument.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // De begin- en eindindexen van de pagina zoals gedefinieerd in de kenmerkenset.
+        //De begin- en eindindexen van de pagina zoals gedefinieerd in de kenmerkenset.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Selecteer het nummer van de laatste pagina die op dit vel papier moet worden afgedrukt.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Loop door de geselecteerde pagina's van de opgeslagen huidige pagina naar de berekende pagina
+        // Loop door de geselecteerde pagina's van de opgeslagen huidige pagina naar de berekende pagina
         // laatste pagina.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Bereken de kolom- en rij-indexen.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // De bruikbare retourwaarde is de schaal waarop de pagina is weergegeven.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Teken de paginaranden (de paginaminiatuur kan kleiner zijn dan de miniatuur)
+                //Teken de paginaranden (de paginaminiatuur kan kleiner zijn dan de miniatuur)
                 // tijdelijke aanduiding (grootte).
                 if (mPrintPageBorders) {
                     // Geef de werkelijke 100% grootte van de pagina weer in punten.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Definieer het aantal kolommen en rijen op het werkblad voor de
-        //Liggend papier.
+        // Liggend papier.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ Gefeliciteerd! U hebt met succes een Word-document afgedrukt met Aspose.Words vo
 
 ### V1: Kan ik specifieke pagina's van een document afdrukken met Aspose.Words voor Java?
 
- Ja, u kunt het paginabereik opgeven bij het afdrukken van een document. In het codevoorbeeld gebruikten we`attributes.add(new PageRanges(1, doc.getPageCount()))` om alle pagina's af te drukken. U kunt het paginabereik naar wens aanpassen.
+ Ja, u kunt het paginabereik opgeven bij het afdrukken van een document. In het codevoorbeeld gebruikten we`attributes.add(new PageRanges(1, doc.getPageCount()))`om alle pagina's af te drukken. U kunt het paginabereik naar wens aanpassen.
 
 ### V2: Is Aspose.Words voor Java geschikt voor batchafdrukken?
 
@@ -196,7 +196,7 @@ Absoluut! Aspose.Words voor Java is zeer geschikt voor batch-afdruktaken. U kunt
 
 ### V3: Hoe kan ik omgaan met drukfouten of uitzonderingen?
 
-moet alle mogelijke uitzonderingen afhandelen die tijdens het afdrukproces kunnen optreden. Raadpleeg de Aspose.Words for Java-documentatie voor informatie over het afhandelen van uitzonderingen.
+U moet alle mogelijke uitzonderingen afhandelen die tijdens het afdrukproces kunnen optreden. Raadpleeg de Aspose.Words for Java-documentatie voor informatie over het afhandelen van uitzonderingen.
 
 ### V4: Kan ik de afdrukinstellingen verder aanpassen?
 

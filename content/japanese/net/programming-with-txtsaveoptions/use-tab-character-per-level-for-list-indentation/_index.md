@@ -103,7 +103,7 @@ saveOptions.ListIndentation.Character = '\t';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-最後に、`Save`当社のカスタムメソッド`TxtSaveOptions`これにより、リストがインデント レベルのタブ文字とともに保存されるようになります。
+最後に、`Save`弊社のカスタムメソッド`TxtSaveOptions`これにより、リストがインデント レベル用のタブ文字とともに保存されます。
 
 ## 結論
 

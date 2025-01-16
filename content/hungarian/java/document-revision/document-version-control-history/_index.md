@@ -10,7 +10,7 @@ url: /hu/java/document-revision/document-version-control-history/
 
 ## Bevezetés
 
-hatékony dokumentumverzió-ellenőrzés biztosítja, hogy minden érdekelt fél a legfrissebb és legpontosabb információkkal dolgozzon. Az Aspose.Words for Java egy sokoldalú könyvtár, amely lehetővé teszi a fejlesztők számára a dokumentumok egyszerű létrehozását, szerkesztését és kezelését. Merüljünk el a verziókezelés és a dokumentumtörténet megvalósításának lépésről lépésre történő folyamatában.
+A hatékony dokumentumverzió-ellenőrzés biztosítja, hogy minden érdekelt fél a legfrissebb és legpontosabb információkkal dolgozzon. Az Aspose.Words for Java egy sokoldalú könyvtár, amely lehetővé teszi a fejlesztők számára a dokumentumok egyszerű létrehozását, szerkesztését és kezelését. Merüljünk el a verziókezelés és a dokumentumtörténet megvalósításának lépésről lépésre történő folyamatában.
 
 ## Előfeltételek
 

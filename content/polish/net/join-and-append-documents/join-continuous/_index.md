@@ -2,7 +2,7 @@
 title: Dołącz do Continuous
 linktitle: Dołącz do Continuous
 second_title: Aspose.Words API przetwarzania dokumentów
-description: Dowiedz się, jak bezproblemowo połączyć dwa dokumenty Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać płynne i wydajne scalanie dokumentów.
+description: Dowiedz się, jak płynnie połączyć dwa dokumenty Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby płynnie i wydajnie scalić dokumenty.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/join-continuous/

@@ -23,7 +23,7 @@ Pola to symbole zastępcze w dokumencie, które dynamicznie wyświetlają dane. 
  Aby wstawić pole, możesz użyć`FieldBuilder` klasa. Na przykład, aby wstawić pole bieżącej daty:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Automatyzacja generowania dokumentów za pomocą pól
-
-Pola są niezbędne do automatycznego generowania dokumentów. Możesz wypełniać pola danymi z zewnętrznych źródeł:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Integrowanie pól ze źródłami danych
@@ -111,7 +102,7 @@ doc.update_fields()
 
 Efektywne zarządzanie polami i danymi w dokumentach Word pozwala tworzyć dynamiczne i zautomatyzowane dokumenty. Aspose.Words for Python upraszcza ten proces, oferując szeroki zakres funkcji.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak ręcznie aktualizować wartości pól?
 

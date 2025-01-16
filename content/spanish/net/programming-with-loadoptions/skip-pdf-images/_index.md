@@ -91,7 +91,7 @@ No, la omisión de imágenes solo afecta a las imágenes. El texto permanece int
 
 ### ¿Puedo utilizar esta función con otros formatos de documentos?
 
-El`SkipPdfImages` Esta opción es específica para documentos PDF. Para otros formatos, hay diferentes opciones y métodos disponibles.
+ El`SkipPdfImages` Esta opción es específica para documentos PDF. Para otros formatos, hay diferentes opciones y métodos disponibles.
 
 ### ¿Cómo puedo verificar que se omitieron imágenes?
 

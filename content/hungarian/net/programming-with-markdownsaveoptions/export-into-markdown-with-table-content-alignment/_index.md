@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## 4. lépés: Használja az automatikus táblázattartalom-igazítást
 
-A`Auto`Az igazítás opció a megfelelő táblázatoszlop első bekezdéséből veszi az igazítást. Ez akkor lehet hasznos, ha vegyes igazításokat tartalmaz egyetlen táblázatban.
+ A`Auto`Az igazítás opció a megfelelő táblázatoszlop első bekezdéséből veszi az igazítást. Ez akkor lehet hasznos, ha vegyes igazításokat tartalmaz egyetlen táblázatban.
 
 ```csharp
 // Állítsa az igazítást Automatikusra.

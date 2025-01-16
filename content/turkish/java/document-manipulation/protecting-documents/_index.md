@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
-The`unprotect` yöntem, belgeye uygulanan tüm korumaları kaldırarak, belgeye parola olmadan erişilebilmesini sağlar.
+ The`unprotect` yöntem, belgeye uygulanan tüm korumaları kaldırarak, belgeye parola olmadan erişilebilmesini sağlar.
 
 ## Belge Koruma Türünü Kontrol Etme
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
-The`getProtectionType` yöntemi, belgeye uygulanan koruma türünü temsil eden bir tamsayı döndürür.
+ The`getProtectionType` yöntemi, belgeye uygulanan koruma türünü temsil eden bir tamsayı döndürür.
 
 
 ## Çözüm

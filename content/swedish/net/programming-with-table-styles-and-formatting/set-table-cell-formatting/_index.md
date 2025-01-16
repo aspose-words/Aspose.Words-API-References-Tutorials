@@ -62,7 +62,7 @@ Därefter infogar du en cell i tabellen. Det är här formateringsmagin händer.
 builder.InsertCell();
 ```
 
-## Steg 4: Öppna och ställ in egenskaper för cellformat
+## Steg 4: Öppna och ställ in cellformategenskaper
 
  När cellen har infogats kan du komma åt dess formategenskaper med hjälp av`CellFormat` egendom av`DocumentBuilder`. Här kan du ställa in olika formateringsalternativ som bredd och utfyllnad.
 

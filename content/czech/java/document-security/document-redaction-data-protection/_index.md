@@ -8,7 +8,7 @@ weight: 14
 url: /cs/java/document-security/document-redaction-data-protection/
 ---
 
-V dnešní digitální době je ochrana citlivých informací a soukromí dat prvořadá. Ať už pracujete s právními dokumenty, finančními zprávami nebo lékařskými záznamy, je zásadní zajistit, aby důvěrné informace zůstaly důvěrné. Tento podrobný průvodce vás provede procesem redakce dokumentů a ochrany dat pomocí Aspose.Words for Java, výkonného Java API, které vám umožňuje snadno manipulovat s dokumenty aplikace Word.
+V dnešní digitální době je ochrana citlivých informací a soukromí dat prvořadá. Ať už pracujete s právními dokumenty, finančními zprávami nebo lékařskými záznamy, je zásadní zajistit, aby důvěrné informace zůstaly důvěrné. Tento podrobný průvodce vás provede procesem redakce dokumentů a ochrany dat pomocí Aspose.Words for Java, výkonného Java API, které vám umožňuje snadno manipulovat s dokumenty Wordu.
 
 ## Zavedení
 
@@ -18,7 +18,7 @@ V této příručce prozkoumáme, jak redigovat citlivé informace z dokumentů 
 
 Než začneme pracovat s Aspose.Words for Java, musíme nastavit naše vývojové prostředí. Postupujte takto:
 
-1.  Stáhněte a nainstalujte Aspose.Words for Java: Navštivte[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) ke stažení nejnovější verze Aspose.Words for Java.
+1.  Stáhněte a nainstalujte Aspose.Words for Java: Navštivte[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)ke stažení nejnovější verze Aspose.Words for Java.
 
 2. Integrujte Aspose.Words do svého projektu: Přidejte soubory Aspose.Words JAR do svého projektu Java.
 

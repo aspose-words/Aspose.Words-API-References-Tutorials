@@ -56,7 +56,7 @@ Buat variabel string untuk menyimpan jalur ke direktori dokumen Anda. Di sinilah
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya tempat dokumen Anda berada.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat dokumen Anda berada.
 
 ### Memuat Dokumen
 

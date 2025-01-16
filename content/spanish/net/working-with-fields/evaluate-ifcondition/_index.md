@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-El`EvaluateCondition` El método devuelve un`FieldIfComparisonResult` Enumeración que representa el resultado de la evaluación de la condición. Esta enumeración puede tener valores como`True`, `False` , o`Unknown`.
+ El`EvaluateCondition` El método devuelve un`FieldIfComparisonResult` Enumeración que representa el resultado de la evaluación de la condición. Esta enumeración puede tener valores como`True`, `False` , o`Unknown`.
 
 ## Paso 4: Mostrar el resultado
 
@@ -93,7 +93,7 @@ Un campo IF es un campo de Word que permite insertar lógica condicional en el d
  Puede insertar un campo SI utilizando el`InsertField` método de la`DocumentBuilder` clase, especificando la condición que desea evaluar.
 
 ###  ¿Qué significa?`EvaluateCondition` method do?
-El`EvaluateCondition` El método evalúa la condición especificada en un campo IF y devuelve el resultado, indicando si la condición es verdadera o falsa.
+ El`EvaluateCondition` El método evalúa la condición especificada en un campo IF y devuelve el resultado, indicando si la condición es verdadera o falsa.
 
 ### ¿Puedo utilizar condiciones complejas con el campo SI?
 Sí, puede utilizar condiciones complejas con el campo SI especificando diferentes expresiones y comparaciones según sea necesario.

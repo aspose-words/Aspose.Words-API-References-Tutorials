@@ -15,7 +15,7 @@ Procházet se světem manipulace s dokumenty vám může někdy připadat jako b
 
 Než se vydáme na tuto cestu, shrňme si vše podstatné, co budete do začátku potřebovat.
 
-- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ne, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Vývojové prostředí kompatibilní s .NET, jako je Visual Studio.
 -  Ukázkový dokument: Dokument aplikace Word (např.`Paragraphs.docx`), který převedete do PDF.
 

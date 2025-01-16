@@ -15,7 +15,7 @@ url: /ru/net/programming-with-pdfsaveoptions/image-compression/
 
 Прежде чем приступить к изучению руководства, убедитесь, что выполнены следующие предварительные условия:
 
-1.  Aspose.Words for .NET: Вам необходимо установить Aspose.Words for .NET. Вы можете загрузить его с[Сайт Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Вам необходимо установить Aspose.Words for .NET. Вы можете загрузить его с[Сайт Aspose](https://releases.aspose.com/words/net/).
 
 2. Базовые знания C#: знакомство с программированием на C# поможет вам понять примеры кода, представленные в этом руководстве.
 

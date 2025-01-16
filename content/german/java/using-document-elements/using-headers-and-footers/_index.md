@@ -18,7 +18,7 @@ Aspose.Words ist eine leistungsstarke Java-API, mit der Sie Word-Dokumente progr
 
 ## 2. Einrichten Ihrer Java-Umgebung
 
- Bevor Sie Aspose.Words verwenden, stellen Sie sicher, dass Ihre Java-Entwicklungsumgebung richtig eingerichtet ist. Die erforderlichen Einrichtungsanweisungen finden Sie auf der Dokumentationsseite von Aspose.Words:[Aspose.Words Java-Dokumentation](https://reference.aspose.com/words/java/).
+ Bevor Sie Aspose.Words verwenden, stellen Sie sicher, dass Ihre Java-Entwicklungsumgebung richtig eingerichtet ist. Die erforderlichen Einrichtungsanweisungen finden Sie auf der Aspose.Words-Dokumentationsseite:[Aspose.Words Java-Dokumentation](https://reference.aspose.com/words/java/).
 
 ## 3. Neues Dokument erstellen
 

@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-De`Document` klasse van Aspose.Words kunt u Word-bestanden in het geheugen laden. Zorg ervoor dat de bestandsnamen overeenkomen met de werkelijke documenten in uw directory, anders krijgt u de foutmelding 'bestand niet gevonden'!
+ De`Document` klasse van Aspose.Words kunt u Word-bestanden in het geheugen laden. Zorg ervoor dat de bestandsnamen overeenkomen met de werkelijke documenten in uw directory, anders krijgt u de foutmelding 'bestand niet gevonden'!
 
 ## Stap 3: De API-sleutel ophalen
 

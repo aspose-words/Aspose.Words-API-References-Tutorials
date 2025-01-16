@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3단계: DocumentBuilder 객체 생성
 
-그만큼`DocumentBuilder` 클래스는 Aspose.Words 라이브러리의 강력한 도구입니다. 이를 통해 문서를 탐색하고 조작할 수 있습니다.
+ 그만큼`DocumentBuilder` 클래스는 Aspose.Words 라이브러리의 강력한 도구입니다. 이를 통해 문서를 탐색하고 조작할 수 있습니다.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);

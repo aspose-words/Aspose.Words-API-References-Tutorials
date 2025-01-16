@@ -38,7 +38,7 @@ using Aspose.Words.Fields;
 
 ## 步骤 1：设置文档和 DocumentBuilder
 
-首先，你需要创建一个新文档和一个`DocumentBuilder`对象。`DocumentBuilder`是一个方便的类，可以让您轻松地创建和修改 Word 文档。
+首先，你需要创建一个新文档和一个`DocumentBuilder`对象。`DocumentBuilder`是一个方便的类，允许您轻松地创建和修改 Word 文档。
 
 ```csharp
 //文档目录的路径。

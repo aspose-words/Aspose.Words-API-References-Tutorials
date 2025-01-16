@@ -53,13 +53,13 @@ Concluindo, o Aspose.Words para .NET capacita os desenvolvedores a converter sem
 ## Perguntas frequentes
 
 ### Quais formatos o Aspose.Words for .NET suporta para conversão de documentos?
-O Aspose.Words suporta uma ampla variedade de formatos de documentos, incluindo DOCX, DOC, PDF, HTML e Markdown.
+Aspose.Words suporta uma ampla variedade de formatos de documentos, incluindo DOCX, DOC, PDF, HTML e Markdown.
 
 ### O Aspose.Words pode lidar com estruturas de documentos complexas, como tabelas e imagens?
 Sim, o Aspose.Words fornece APIs robustas para manipular tabelas, imagens, formatação de texto e muito mais em documentos.
 
 ### Onde posso encontrar documentação detalhada do Aspose.Words para .NET?
-Documentação detalhada está disponível[aqui](https://reference.aspose.com/words/net/).
+ Documentação detalhada está disponível[aqui](https://reference.aspose.com/words/net/).
 
 ### Como posso obter uma licença temporária para o Aspose.Words para .NET?
 Você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).

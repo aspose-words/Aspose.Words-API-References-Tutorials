@@ -34,5 +34,3 @@ Tìm hiểu cách nối và thêm tài liệu bằng Aspose.Words cho Java. Hư�
 Tìm hiểu cách so sánh các tài liệu để tìm sự khác biệt bằng Aspose.Words trong Java. Hướng dẫn từng bước của chúng tôi đảm bảo quản lý tài liệu chính xác.
 ### [Hợp nhất tài liệu với DocumentBuilder](./merging-documents-documentbuilder/)
 Tìm hiểu cách thao tác các tài liệu Word với Aspose.Words for Java. Tạo, chỉnh sửa, hợp nhất và chuyển đổi tài liệu theo chương trình trong Java.
-### [Tách và trích xuất tài liệu](./document-splitting-extraction/)
-Tìm hiểu cách tách và trích xuất tài liệu dễ dàng bằng Aspose.Words for Java. Đơn giản hóa các tác vụ xử lý tài liệu của bạn với hướng dẫn từng bước.

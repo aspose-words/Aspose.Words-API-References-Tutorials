@@ -25,7 +25,7 @@ W tej serii samouczków zagłębisz się w zawiłości struktury dokumentu i man
 - Modyfikowanie treści: Dowiedz się, jak modyfikować tekst, wstawiać nowe elementy i usuwać niechcianą treść.
 - Praca ze stylami: poznaj techniki stosowania i dostosowywania stylów w celu uzyskania pożądanego formatowania dokumentu.
 - Obrazy i multimedia: Dowiedz się, jak wstawiać, zamieniać i manipulować obrazami oraz innymi multimediami w dokumentach.
-- Manipulowanie tabelami: Naucz się tworzyć, edytować i formatować tabele w celu efektywnego porządkowania informacji.
+- Manipulowanie tabelami: Naucz się tworzyć, edytować i formatować tabele, aby skutecznie organizować informacje.
 - Scalanie dokumentów: poznaj strategie scalania wielu dokumentów w spójną całość.
 - Konwersja dokumentów: Dowiedz się, jak konwertować dokumenty do różnych formatów, takich jak PDF lub HTML.
 
@@ -40,8 +40,6 @@ Dowiedz się, jak korzystać z funkcji komentarzy w dokumentach Worda, używają
 Dowiedz się, jak obsługiwać pola i dane w dokumentach Worda za pomocą Aspose.Words dla Pythona. Przewodnik krok po kroku z przykładami kodu dla dynamicznej zawartości, automatyzacji i nie tylko. 
 ### [Zrozumienie czcionek i stylu tekstu w dokumentach Word](./document-fonts/)
 Poznaj świat czcionek i stylów tekstu w dokumentach Word. Dowiedz się, jak zwiększyć czytelność i atrakcyjność wizualną za pomocą Aspose.Words for Python. Kompleksowy przewodnik z przykładami krok po kroku.
-### [Eksplorowanie przypisów dolnych i końcowych w dokumentach programu Word](./document-footnotes-endnotes/)
-Poznaj skuteczne sposoby korzystania z przypisów dolnych i końcowych w dokumentach Worda przy użyciu Aspose.Words for Python. Naucz się dodawać, dostosowywać i zarządzać tymi elementami programowo. 
 ### [Opanowanie pól formularzy i przechwytywania danych w dokumentach Word](./document-form-fields/)
 Opanuj sztukę tworzenia i zarządzania polami formularzy w dokumentach Word za pomocą Aspose.Words dla Pythona. Naucz się efektywnie przechwytywać dane i zwiększać zaangażowanie użytkowników. 
 ### [Manipulowanie nagłówkami i stopkami w dokumentach Word](./document-headers-footers/)
@@ -52,8 +50,6 @@ Dowiedz się, jak zarządzać dzieleniem wyrazów i przepływem tekstu w dokumen
 Dowiedz się, jak tworzyć i zarządzać listami w dokumentach Worda za pomocą Aspose.Words Python API. Przewodnik krok po kroku z kodem źródłowym do formatowania list, dostosowywania, zagnieżdżania i nie tylko. 
 ### [Wykorzystanie formatowania Markdown w dokumentach Word](./document-markdown/)
 Dowiedz się, jak zintegrować formatowanie Markdown z dokumentami Word za pomocą Aspose.Words dla Pythona. Przewodnik krok po kroku z przykładami kodu do dynamicznego i atrakcyjnego wizualnie tworzenia treści. 
-### [Zrozumienie i nawigacja po węzłach dokumentu](./document-nodes/)
-Naucz się manipulować dokumentami Worda za pomocą Aspose.Words dla Pythona. Ten przewodnik krok po kroku obejmuje ładowanie, formatowanie, tabele, obrazy i wiele więcej. Zwiększ swoje umiejętności przetwarzania dokumentów już dziś!
 ### [Osadzanie obiektów OLE i kontrolek ActiveX w dokumentach programu Word](./document-ole-objects-active-x/)
  Dowiedz się, jak osadzać obiekty OLE i kontrolki ActiveX w dokumentach Worda za pomocą Aspose.Words dla Pythona. Twórz interaktywne i dynamiczne dokumenty bezproblemowo.
 ### [Formatowanie akapitów i tekstu w dokumentach Word](./document-paragraphs/)
@@ -65,4 +61,4 @@ Dowiedz się, jak zarządzać sekcjami i układami dokumentów za pomocą Aspose
 ### [Ulepszanie zawartości wizualnej za pomocą pól tekstowych w dokumentach Word](./document-textboxes/)
 Ulepsz wizualizacje dokumentów za pomocą Aspose.Words Python! Dowiedz się krok po kroku, jak tworzyć i dostosowywać pola tekstowe w dokumentach Word. Podnieś układ treści, formatowanie i stylizację, aby uzyskać angażujące dokumenty.
 ### [Odblokowywanie zaawansowanej automatyzacji za pomocą makr VBA w dokumentach Word](./document-vba-macros/)
-Odblokuj zaawansowaną automatyzację w dokumentach Word za pomocą Aspose.Words Python API i makr VBA. Ucz się krok po kroku z kodem źródłowym i FAQ. Zwiększ produktywność już teraz. Dostęp na[Połączyć].
+ Odblokuj zaawansowaną automatyzację w dokumentach Word za pomocą Aspose.Words Python API i makr VBA. Ucz się krok po kroku z kodem źródłowym i FAQ. Zwiększ produktywność już teraz. Dostęp na[Połączyć].

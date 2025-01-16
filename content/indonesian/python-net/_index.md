@@ -26,12 +26,8 @@ Kuasai pemrosesan dokumen word menggunakan Aspose.Words untuk Python. Tutorial m
 Kuasai pembuatan dokumen dengan Aspose.Words untuk Python. Buat dokumen yang dinamis, sesuaikan format, dan sederhanakan pemrosesan dokumen word.
 ### [Otomatisasi Kata](./word-automation/)
 Otomatiskan tugas pemrosesan kata dengan Aspose.Words untuk Python. Sederhanakan pengelolaan dokumen dan tingkatkan efisiensi dalam otomatisasi kata.
-### [Kecerdasan Dokumen](./document-intelligence/)
-Dapatkan wawasan berharga dari dokumen Anda dengan Aspose.Words untuk Kecerdasan Dokumen Python. Otomatiskan analisis, ekstraksi teks, dan klasifikasi.
 ### [Konversi Dokumen](./document-conversion/)
 Konversi dokumen antarformat secara efisien dengan Aspose.Words untuk Python. Sederhanakan pemrosesan dokumen Word dan sederhanakan tugas manajemen dokumen Anda. 
-### [Perlindungan Dokumen](./document-protection/)
-Amankan dokumen Anda dengan Aspose.Words untuk Python! Terapkan enkripsi kata sandi, izin pengguna, dan tanda tangan digital untuk perlindungan dokumen yang kuat.
 ### [Struktur Dokumen dan Manipulasi Konten](./document-structure-and-content-manipulation/)
 Jelajahi tutorial Aspose.Words untuk Python dan .NET, dengan fokus pada struktur dokumen dan manipulasi konten. Pelajari cara menavigasi, mengekstrak, dan memodifikasi elemen dokumen secara efisien. Contoh kode sumber disediakan.
 ### [Ekstraksi dan Manipulasi Konten](./content-extraction-and-manipulation/)
@@ -42,7 +38,5 @@ Temukan tutorial lengkap tentang penggabungan dan perbandingan dokumen menggunak
 Jelajahi tutorial Aspose.Words tentang pemisahan dan pemformatan dokumen dalam Python dan .NET. Pelajari cara membagi dan memformat dokumen secara efisien, yang akan meningkatkan tugas pemrosesan dokumen Anda. 
 ### [Opsi dan Pengaturan Dokumen](./document-options-and-settings/)
 Jelajahi tutorial Aspose.Words tentang opsi dan pengaturan dokumen dalam Python dan .NET. Pelajari cara mengoptimalkan pembuatan dan pemformatan dokumen menggunakan panduan langkah demi langkah dan contoh kode sumber.
-### [Visualisasi dan Pemformatan Data](./data-visualization-and-formatting/)
-Temukan tutorial Aspose.Words tentang visualisasi dan pemformatan data dalam Python dan .NET. Pelajari cara menyajikan data secara efektif, membuat laporan yang memukau, dan memformat dokumen secara terprogram.
 ### [Tabel dan Pemformatan](./tables-and-formatting/)
 Pelajari tutorial Aspose.Words tentang tabel dan pemformatan dalam aplikasi Python dan .NET. Pelajari cara membuat, menyesuaikan, dan menata tabel untuk dokumen yang menarik secara visual. 

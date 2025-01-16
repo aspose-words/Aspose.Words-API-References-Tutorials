@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
-Itu`unprotect` metode ini menghapus perlindungan apa pun yang diterapkan pada dokumen, membuatnya dapat diakses tanpa kata sandi.
+ Itu`unprotect` metode ini menghapus perlindungan apa pun yang diterapkan pada dokumen, membuatnya dapat diakses tanpa kata sandi.
 
 ## Memeriksa Jenis Perlindungan Dokumen
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
-Itu`getProtectionType` metode mengembalikan integer yang mewakili jenis perlindungan yang diterapkan pada dokumen.
+ Itu`getProtectionType` metode mengembalikan integer yang mewakili jenis perlindungan yang diterapkan pada dokumen.
 
 
 ## Kesimpulan

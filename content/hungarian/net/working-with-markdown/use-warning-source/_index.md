@@ -99,7 +99,7 @@ Az Aspose.Words for .NET egy programkönyvtár a Word-dokumentumok programozott 
  Letöltheti a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/) és adja hozzá a Visual Studio projekthez.
 
 ### Mik azok a figyelmeztető források az Aspose.Words-ben?
- A figyelmeztető források jelzik a dokumentumfeldolgozás során keletkezett figyelmeztetések eredetét. Például,`WarningSource.Markdown` a Markdown feldolgozásával kapcsolatos figyelmeztetést jelez.
+ A figyelmeztető források jelzik a dokumentumfeldolgozás során keletkezett figyelmeztetések eredetét. Például,`WarningSource.Markdown` a Markdown feldolgozásával kapcsolatos figyelmeztetést jelzi.
 
 ### Testreszabhatom az Aspose.Words figyelmeztetések kezelését?
  Igen, testreszabhatja a figyelmeztetések kezelését a`IWarningCallback`felületet, és állítsa be a dokumentumhoz`WarningCallback` ingatlan.

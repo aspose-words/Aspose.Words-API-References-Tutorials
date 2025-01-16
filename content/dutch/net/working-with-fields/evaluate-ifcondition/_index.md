@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-De`EvaluateCondition` methode retourneert een`FieldIfComparisonResult` enum die het resultaat van de conditie-evaluatie weergeeft. Deze enum kan waarden hebben zoals`True`, `False` , of`Unknown`.
+ De`EvaluateCondition` methode retourneert een`FieldIfComparisonResult` enum die het resultaat van de conditie-evaluatie weergeeft. Deze enum kan waarden hebben zoals`True`, `False` , of`Unknown`.
 
 ## Stap 4: Toon het resultaat
 
@@ -93,7 +93,7 @@ Een IF-veld is een Word-veld waarmee u voorwaardelijke logica in uw document kun
  U kunt een ALS-veld invoegen met behulp van de`InsertField` methode van de`DocumentBuilder` klasse, waarbij u de voorwaarde specificeert die u wilt evalueren.
 
 ###  Wat betekent`EvaluateCondition` method do?
-De`EvaluateCondition` De methode evalueert de voorwaarde die is opgegeven in een IF-veld en retourneert het resultaat, waarbij wordt aangegeven of de voorwaarde waar of onwaar is.
+ De`EvaluateCondition` De methode evalueert de voorwaarde die is opgegeven in een IF-veld en retourneert het resultaat, waarbij wordt aangegeven of de voorwaarde waar of onwaar is.
 
 ### Kan ik complexe voorwaarden gebruiken met het ALS-veld?
 Ja, u kunt complexe voorwaarden gebruiken met het ALS-veld door indien nodig verschillende expressies en vergelijkingen op te geven.

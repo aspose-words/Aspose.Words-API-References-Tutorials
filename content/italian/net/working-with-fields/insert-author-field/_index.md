@@ -42,7 +42,7 @@ Per iniziare, dobbiamo impostare un nuovo progetto in Visual Studio. Se hai già
 1. Apri Visual Studio: avvia Visual Studio sul tuo computer.
 2. Crea nuovo progetto: clicca su "Crea un nuovo progetto".
 3. Seleziona il tipo di progetto: scegli "App console" con C# come linguaggio.
-4. Configura il tuo progetto: dai un nome al tuo progetto e scegli una posizione in cui salvarlo. Fai clic su "Crea".
+4. Configura il tuo progetto: assegna un nome al tuo progetto e scegli una posizione in cui salvarlo. Fai clic su "Crea".
 
 ### Installa Aspose.Words per .NET
 

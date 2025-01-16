@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Ten`Document` obiekt reprezentuje dokument Worda, a`DocumentBuilder` pomaga w dodawaniu do niego treści.
+ Ten`Document` obiekt reprezentuje dokument Worda, a`DocumentBuilder` pomaga w dodawaniu do niego treści.
 
 ## Krok 3: Zdefiniuj ścieżkę obrazu
 

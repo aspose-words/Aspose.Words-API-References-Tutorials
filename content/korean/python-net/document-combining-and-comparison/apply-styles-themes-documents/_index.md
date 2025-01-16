@@ -14,7 +14,7 @@ url: /ko/python-net/document-combining-and-comparison/apply-styles-themes-docume
 
 ## 환경 설정하기
 
- 스타일링에 들어가기 전에 개발 환경을 설정해 보겠습니다. Aspose.Words for Python이 설치되어 있는지 확인하세요. 여기에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/).
+스타일링에 들어가기 전에 개발 환경을 설정해 보겠습니다. Aspose.Words for Python이 설치되어 있는지 확인하세요. 여기에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/).
 
 ## 문서 로딩 및 저장
 
@@ -51,30 +51,8 @@ font.style_identifier = StyleIdentifier.STRONG
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## 제목 스타일 사용자 정의
-
-제목은 문서에 구조를 제공합니다. 더 나은 계층 구조와 가독성을 위해 제목 스타일을 사용자 정의합니다.
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## 통일된 모양을 위한 테마 사용
-
-테마는 일관된 모양을 제공합니다. 전문적인 느낌을 위해 문서에 테마를 적용하세요.
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## 테마 색상 및 글꼴 수정
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 테마 색상과 글꼴을 조정하여 필요에 맞게 테마를 맞춤 설정하세요.
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## 나만의 스타일 만들기
-
-고유한 문서 요소에 맞게 사용자 정의 스타일을 만들어 브랜드 정체성이 돋보이도록 하세요.
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## 문서 부분에 따른 스타일 관리
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 세련된 모습을 위해 헤더, 푸터 및 본문 콘텐츠에 스타일을 다르게 적용하세요.
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## 문서 전체 스타일 처리
-
-손쉽게 문서 전체에 스타일을 적용하세요.
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## 서식 및 스타일 지우기
-
-스타일과 서식을 쉽게 제거해 새롭게 시작할 수 있습니다.
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## 실제 예 및 사용 사례
-
-스타일과 테마가 문서를 변형할 수 있는 실제 시나리오를 살펴보겠습니다.
-
-1. 브랜드 보고서 만들기
-2. 멋진 이력서 디자인하기
-3. 학술 논문 포맷팅
-
-## 효율적인 스타일링을 위한 팁
-
-- 스타일 일관성 유지
-- 빠른 메이크오버를 위한 테마 사용
-- 다양한 글꼴과 색상으로 실험해보세요
 
 ## 결론
 
@@ -167,4 +109,4 @@ Aspose.Words for Python을 사용하여 스타일과 테마를 적용하면 시�
 
 ### 문서의 서식을 지울 수 있나요?
 
- 네, 다음을 사용하여 서식 및 스타일을 쉽게 제거할 수 있습니다.`clear_formatting()` Python을 위한 Aspose.Words가 제공하는 방법입니다.
+네, 다음을 사용하여 서식 및 스타일을 쉽게 제거할 수 있습니다.`clear_formatting()` Python을 위한 Aspose.Words가 제공하는 방법입니다.

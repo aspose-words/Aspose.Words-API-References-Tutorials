@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // संशोधनों पर नज़र रखना शुरू करें
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //ट्रैकिंग संशोधनों के साथ पाठ सम्मिलित करें
+builder.Writeln("Inserted"); // ट्रैकिंग संशोधनों के साथ पाठ सम्मिलित करें
 doc.StopTrackRevisions();
 ```
 

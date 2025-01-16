@@ -53,7 +53,7 @@ doc.save("Output.docx");
 
 ### Açıklama:
 
-The`save` yöntem çağrılır`Document` dosyayı kaydetmek için nesne`.docx` biçim. Sağlanan argüman, Word belgesinin kaydedileceği dosya yoludur. Bu, dönüştürme işleminin son adımıdır.
+ The`save` yöntem çağrılır`Document` dosyayı kaydetmek için nesne`.docx` biçim. Sağlanan argüman, Word belgesinin kaydedileceği dosya yoludur. Bu, dönüştürme işleminin son adımıdır.
 
 ## Çözüm
 

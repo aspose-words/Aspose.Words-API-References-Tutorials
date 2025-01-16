@@ -38,7 +38,7 @@ Questi namespace forniscono l'accesso alle classi e ai metodi necessari per mani
 
 ## Passaggio 1: creare un DocumentBuilder
 
-IL`DocumentBuilder` la classe ti aiuta ad aggiungere e formattare il contenuto nel documento. Creando un`DocumentBuilder` oggetto, stai configurando uno strumento per inserire e manipolare il testo.
+ IL`DocumentBuilder` la classe ti aiuta ad aggiungere e formattare il contenuto nel documento. Creando un`DocumentBuilder` oggetto, stai configurando uno strumento per inserire e manipolare il testo.
 
 ```csharp
 // Creare un'istanza di DocumentBuilder per lavorare con il documento.

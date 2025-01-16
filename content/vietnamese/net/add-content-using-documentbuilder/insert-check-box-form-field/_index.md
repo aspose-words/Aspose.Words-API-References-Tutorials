@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Bước 3: Khởi tạo Trình xây dựng tài liệu
 
-Các`DocumentBuilder` class là công cụ bạn lựa chọn để thêm nội dung vào tài liệu. Hãy coi nó như cọ vẽ và bảng màu của bạn.
+ Các`DocumentBuilder` class là công cụ bạn lựa chọn để thêm nội dung vào tài liệu. Hãy coi nó như cọ vẽ và bảng màu của bạn.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

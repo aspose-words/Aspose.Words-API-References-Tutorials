@@ -1,5 +1,5 @@
 ---
-title: 使用 Aspose.Words for Java 載入和儲存 HTML 文檔
+title: 載入並儲存 HTML 文檔
 linktitle: 載入並儲存 HTML 文檔
 second_title: Aspose.Words Java 文件處理 API
 description: 了解如何使用 Aspose.Words for Java 在 Java 中載入和儲存 HTML 文件。具有程式碼範例的逐步指南，可實現無縫文件整合。
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
 現在我們已經將 HTML 載入到`Document`，我們可以將其另存為Word文件。讓我們將其儲存為 DOCX 格式：
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 這段程式碼保存了`Document`DOCX 文件，這是 Word 文件的常見格式。
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## 結論

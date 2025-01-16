@@ -44,7 +44,7 @@ Estos espacios de nombres le brindan acceso a las clases y métodos que necesita
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-El`DocumentBuilder` La clase es tu puerta de entrada para crear y personalizar tu documento. ¡Piensa en ella como tu varita mágica para crear documentos de Word!
+ El`DocumentBuilder` La clase es tu puerta de entrada para crear y personalizar tu documento. ¡Piensa en ella como tu varita mágica para crear documentos de Word!
 
 ## Paso 2: Agregar una cita en bloque
 

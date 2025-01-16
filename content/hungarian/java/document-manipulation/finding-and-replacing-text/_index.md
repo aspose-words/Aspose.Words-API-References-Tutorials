@@ -355,4 +355,4 @@ Igen, használhat reguláris kifejezéseket a szöveg cseréjéhez az Aspose.Wor
 
 ### Mire jó a UseLegacyOrder opció?
 
-A`UseLegacyOrder` opció be`FindReplaceOptions` lehetővé teszi az örökölt sorrend használatát a keresési és csereműveletek végrehajtásakor. Ez hasznos lehet bizonyos forgatókönyvekben, amikor az örökölt rendelési viselkedés kívánatos.
+ A`UseLegacyOrder` opció be`FindReplaceOptions` lehetővé teszi az örökölt sorrend használatát a keresési és csereműveletek végrehajtásakor. Ez hasznos lehet bizonyos forgatókönyvekben, amikor az örökölt rendelési viselkedés kívánatos.

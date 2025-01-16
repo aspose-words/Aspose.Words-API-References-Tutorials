@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Stap 3: Configureer lettertype-instellingen
 
-Maak een nieuwe`FontSettings` object en laad de font fallback-instellingen van een XML-bestand. Dit XML-bestand bevat de regels voor font fallback.
+ Maak een nieuwe`FontSettings` object en laad de font fallback-instellingen van een XML-bestand. Dit XML-bestand bevat de regels voor font fallback.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

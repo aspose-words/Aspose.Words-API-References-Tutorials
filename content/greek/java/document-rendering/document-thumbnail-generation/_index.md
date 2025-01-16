@@ -40,7 +40,7 @@ Document doc = new Document("sample.docx");
 ```java
 // Κώδικας Java για τη δημιουργία μικρογραφίας εγγράφου
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ stream.writeTo(outputStream);
 
 ### Πώς μπορώ να εγκαταστήσω το Aspose.Words για Java;
 
- Για να εγκαταστήσετε το Aspose.Words για Java, επισκεφτείτε τη σελίδα λήψης[εδώ](https://releases.aspose.com/words/java/)και ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται.
+Για να εγκαταστήσετε το Aspose.Words για Java, επισκεφτείτε τη σελίδα λήψης[εδώ](https://releases.aspose.com/words/java/)και ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται.
 
 ### Μπορώ να προσαρμόσω το μέγεθος της μικρογραφίας που δημιουργήθηκε;
 

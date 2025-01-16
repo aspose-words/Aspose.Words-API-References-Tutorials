@@ -55,7 +55,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Passaggio 4: aggiungere il documento di origine utilizzando gli stili di destinazione
 
- Ora arriva la parte fondamentale: aggiungere il documento sorgente al documento di destinazione utilizzando gli stili del documento di destinazione.`AppendDocument` metodo del`Document` la classe ti consente di fare questo. La`ImportFormatMode.UseDestinationStyles` Il parametro garantisce che vengano utilizzati gli stili del documento di destinazione.
+ Ora arriva la parte fondamentale: aggiungere il documento sorgente al documento di destinazione utilizzando gli stili del documento di destinazione.`AppendDocument` metodo del`Document` la classe ti consente di fare questo. La`ImportFormatMode.UseDestinationStyles` parametro garantisce che vengano utilizzati gli stili del documento di destinazione.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);

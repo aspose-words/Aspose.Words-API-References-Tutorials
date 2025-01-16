@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 Menetapkan kata sandi bersifat opsional, tetapi dapat menambahkan lapisan keamanan ekstra ke dokumen Anda sebelum Anda mengubahnya.
 
 ```csharp
-//Masukkan kata sandi yang panjangnya hingga 15 karakter.
+// Masukkan kata sandi yang panjangnya hingga 15 karakter.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Ya, pengaturan kata sandi bersifat opsional. Anda dapat langsung menghapus rekom
 
 ### Apa yang terjadi jika dokumen tersebut sudah memiliki jenis perlindungan yang berbeda?
 
-Itu`doc.Protect(ProtectionType.NoProtection)` metode ini memastikan bahwa semua jenis perlindungan dihapus dari dokumen.
+ Itu`doc.Protect(ProtectionType.NoProtection)` metode ini memastikan bahwa semua jenis perlindungan dihapus dari dokumen.
 
 ### Apakah ada cara untuk mengetahui apakah suatu dokumen bersifat baca-saja sebelum menghapus batasannya?
 

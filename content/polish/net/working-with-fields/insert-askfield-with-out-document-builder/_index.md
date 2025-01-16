@@ -114,7 +114,7 @@ Pole ASK w Aspose.Words to pole, które wyświetla użytkownikowi monit o podani
 Tak, w jednym dokumencie można umieścić wiele pól ASK, każde z unikalnymi monitami i odpowiedziami.
 
 ###  Jaki jest cel`PromptOnceOnMailMerge` property?
-Ten`PromptOnceOnMailMerge` Właściwość ta określa, czy monit ASK pojawia się tylko raz podczas operacji korespondencji seryjnej, czy za każdym razem.
+ Ten`PromptOnceOnMailMerge` Właściwość ta określa, czy monit ASK pojawia się tylko raz podczas operacji korespondencji seryjnej, czy za każdym razem.
 
 ### Czy muszę aktualizować pole ASK po ustawieniu jego właściwości?
 Tak, aktualizacja pola ASK zapewnia, że wszystkie właściwości zostaną poprawnie zastosowane, a pole będzie działało zgodnie z oczekiwaniami.

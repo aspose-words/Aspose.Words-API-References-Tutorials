@@ -63,7 +63,7 @@ chart.Title.Overlay = false;
 
 ## Stap 4: Pas de positie van de legenda aan
 
-De legenda helpt u verschillende gegevensreeksen in uw grafiek te identificeren. U kunt de positie en overlay-instellingen als volgt aanpassen:
+De legenda helpt om verschillende datareeksen in uw diagram te identificeren. U kunt de positie en overlay-instellingen als volgt aanpassen:
 
 ```csharp
 chart.Legend.Position = LegendPosition.Left;

@@ -37,13 +37,6 @@ Uno dei punti di forza principali di Aspose.Words per Java è la sua capacità d
 Document doc = new Document("sample.docx");
 ```
 
-### Caricamento di un documento PDF
-
-```java
-// Carica un documento PDF
-Document doc = new Document("sample.pdf");
-```
-
 ## Modifica e salvataggio dei documenti
 
 Una volta caricato un documento, è possibile eseguire una moltitudine di operazioni, dalla semplice sostituzione del testo a complesse modifiche di formattazione.
@@ -71,7 +64,7 @@ Aspose.Words per Java consente una conversione fluida tra diversi formati di doc
 Document doc = new Document("sample.docx");
 
 // Salva come PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Gestione di immagini e tabelle
@@ -81,7 +74,7 @@ Incorporare immagini e tabelle è un requisito comune quando si lavora con i doc
 ### Aggiungere un'immagine a un documento
 
 ```java
-// Carica un documento
+//Carica un documento
 Document doc = new Document("document.docx");
 
 // Inserisci un'immagine

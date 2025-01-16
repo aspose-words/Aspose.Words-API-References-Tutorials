@@ -119,7 +119,7 @@ builder.Writeln("Cell #4");
 
 ## Krok 9: Zapisz dokument
 
-Na koniec zapisz dokument w określonym katalogu.
+Na koniec zapisz dokument w podanym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");

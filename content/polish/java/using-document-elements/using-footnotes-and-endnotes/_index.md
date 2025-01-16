@@ -16,7 +16,7 @@ Przypisy dolne i końcowe to adnotacje, które dostarczają informacji uzupełni
 
 ## 2. Konfigurowanie środowiska
 
-Zanim przejdziemy do pracy z przypisami dolnymi i końcowymi, musisz skonfigurować środowisko programistyczne. Upewnij się, że masz zainstalowany i skonfigurowany Aspose.Words for Java API w swoim projekcie.
+Zanim przejdziemy do pracy z przypisami dolnymi i końcowymi, musisz skonfigurować środowisko programistyczne. Upewnij się, że masz zainstalowany i skonfigurowany interfejs API Aspose.Words for Java w swoim projekcie.
 
 ## 3. Dodawanie przypisów do dokumentu
 

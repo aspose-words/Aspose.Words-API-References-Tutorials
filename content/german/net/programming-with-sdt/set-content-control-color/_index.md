@@ -53,7 +53,7 @@ Rufen Sie das Structured Document Tag (SDT) aus dem Dokument ab. In diesem Beisp
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
-## Schritt 4: SDT-Farbe festlegen
+## Schritt 4: Stellen Sie die SDT-Farbe ein
 
 Ändern Sie die Farbeigenschaft des SDT. Hier setzen wir die Farbe auf Rot:
 

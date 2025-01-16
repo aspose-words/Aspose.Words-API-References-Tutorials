@@ -38,7 +38,7 @@ Tyto jmenné prostory poskytují přístup ke třídám a metodám potřebným p
 
 ## Krok 1: Vytvořte DocumentBuilder
 
-The`DocumentBuilder` class vám pomáhá přidávat a formátovat obsah v dokumentu. Vytvořením a`DocumentBuilder` objekt, nastavujete nástroj pro vkládání a manipulaci s textem.
+ The`DocumentBuilder` class vám pomáhá přidávat a formátovat obsah v dokumentu. Vytvořením a`DocumentBuilder` objekt, nastavujete nástroj pro vkládání a manipulaci s textem.
 
 ```csharp
 // Pro práci s dokumentem vytvořte instanci DocumentBuilder.
@@ -49,7 +49,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Použijte formátování kurzívou
 
- Aby byl text kurzívou, musíte nastavit`Italic` vlastnictví`Font` namítat proti`true` . The`DocumentBuilder` umožňuje ovládat různé možnosti formátování, včetně kurzívy.
+ Aby byl text kurzívou, musíte nastavit`Italic` vlastnictvím`Font` namítat proti`true` . The`DocumentBuilder` umožňuje ovládat různé možnosti formátování, včetně kurzívy.
 
 ```csharp
 // Nastavte vlastnost Font Italic na true, aby byl text kurzívou.

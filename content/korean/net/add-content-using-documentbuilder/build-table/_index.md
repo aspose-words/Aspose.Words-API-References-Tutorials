@@ -19,7 +19,7 @@ url: /ko/net/add-content-using-documentbuilder/build-table/
 - .NET Framework(4.0 이상)
 - .NET 라이브러리를 위한 Aspose.Words
 
- 아직 Aspose.Words가 없다면 쉽게 사용할 수 있습니다.[여기서 다운로드하세요](https://releases.aspose.com/words/net/) . 또한 다음으로 시작할 수도 있습니다.[무료 체험](https://releases.aspose.com/) 물을 테스트하고 싶다면. 뛰어들 준비가 된 사람들을 위해, 당신은 할 수 있습니다[라이센스를 구매하다](https://purchase.aspose.com/buy) 또는 평가하는 데 더 많은 시간이 필요한 경우 다음을 수행하십시오.[임시 면허](https://purchase.aspose.com/temporary-license/).
+ 아직 Aspose.Words가 없다면 쉽게 사용할 수 있습니다.[여기서 다운로드하세요](https://releases.aspose.com/words/net/) . 또한 다음으로 시작할 수도 있습니다.[무료 체험](https://releases.aspose.com/) 물을 테스트하고 싶다면. 뛰어들 준비가 된 사람들을 위해, 당신은 할 수 있습니다[라이센스를 구매하다](https://purchase.aspose.com/buy)또는 평가하는 데 더 많은 시간이 필요한 경우 다음을 수행하십시오.[임시 면허](https://purchase.aspose.com/temporary-license/).
 
 ## 네임스페이스 가져오기
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- 사용하여`StartTable` 우리는 Aspose.Words에 테이블을 만들려고 한다는 것을 말하고 있습니다.`InsertCell` 이 방법은 첫 번째 셀을 추가하고`AutoFit` 열의 너비가 고정되도록 보장합니다.
+ 사용하여`StartTable` , 우리는 Aspose.Words에 테이블을 만들려고 한다는 것을 말하고 있습니다.`InsertCell` 이 방법은 첫 번째 셀을 추가하고`AutoFit` 열의 너비가 고정되도록 보장합니다.
 
 ## 3단계: 첫 번째 행 서식 지정
 

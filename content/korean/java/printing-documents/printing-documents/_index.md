@@ -38,7 +38,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```java
 // 문서를 인쇄할 인쇄 작업을 생성합니다.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//문서의 페이지 수로 속성 집합을 초기화합니다.
+// 문서의 페이지 수로 속성 집합을 초기화합니다.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // 다른 매개변수와 함께 프린터 설정을 인쇄 문서에 전달합니다.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // 문서를 인쇄할 인쇄 작업을 생성합니다.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//문서의 페이지 수로 속성 집합을 초기화합니다.
+// 문서의 페이지 수로 속성 집합을 초기화합니다.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // 다른 매개변수와 함께 프린터 설정을 인쇄 문서에 전달합니다.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // 속성 집합에 정의된 페이지 시작 및 종료 인덱스입니다.
+        //속성 집합에 정의된 페이지 시작 및 종료 인덱스입니다.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // 이 용지에 인쇄될 마지막 페이지 번호를 선택하세요.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //저장된 현재 페이지에서 계산된 페이지까지 선택한 페이지를 반복합니다.
+        // 저장된 현재 페이지에서 계산된 페이지까지 선택한 페이지를 반복합니다.
         // 마지막 페이지.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // 열과 행 인덱스를 계산합니다.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // 유용한 반환 값은 페이지가 렌더링된 크기입니다.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // 페이지 테두리를 그립니다(페이지 축소판은 축소판보다 작을 수 있음)
+                //페이지 테두리를 그립니다(페이지 축소판은 축소판보다 작을 수 있음)
                 // 플레이스홀더 크기).
                 if (mPrintPageBorders) {
                     // 페이지의 실제 100% 크기를 포인트로 확인하세요.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // 시트의 열과 행의 수를 정의합니다.
-        //가로형 용지.
+        // 가로형 용지.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ class MultipagePrintDocument implements Printable
 
 ### 질문 1: Aspose.Words for Java를 사용하여 문서의 특정 페이지를 인쇄할 수 있나요?
 
- 네, 문서를 인쇄할 때 페이지 범위를 지정할 수 있습니다. 코드 예제에서는 다음을 사용했습니다.`attributes.add(new PageRanges(1, doc.getPageCount()))` 모든 페이지를 인쇄합니다. 필요에 따라 페이지 범위를 조정할 수 있습니다.
+ 네, 문서를 인쇄할 때 페이지 범위를 지정할 수 있습니다. 코드 예제에서는 다음을 사용했습니다.`attributes.add(new PageRanges(1, doc.getPageCount()))`모든 페이지를 인쇄합니다. 필요에 따라 페이지 범위를 조정할 수 있습니다.
 
 ### 질문 2: Aspose.Words for Java는 일괄 인쇄에 적합합니까?
 

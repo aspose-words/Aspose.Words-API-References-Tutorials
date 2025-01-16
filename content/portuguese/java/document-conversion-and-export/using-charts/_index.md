@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Altere o eixo X para ser uma categoria em vez de uma data.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Medido em unidades de exibição do eixo Y (centenas).
+xAxis.setCrossesAt(3.0); //Medido em unidades de exibição do eixo Y (centenas).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ Neste tutorial, exploramos como trabalhar com gráficos usando o Aspose.Words pa
 
 ### Como posso formatar rótulos de dados com formatos numéricos personalizados?
 
- Você pode formatar rótulos de dados acessando o`DataLabels` propriedades de uma série e definindo o código de formato desejado usando`getNumberFormat().setFormatCode()`.
+Você pode formatar rótulos de dados acessando o`DataLabels` propriedades de uma série e definindo o código de formato desejado usando`getNumberFormat().setFormatCode()`.
 
 ### Como posso personalizar as propriedades do eixo em um gráfico?
 
@@ -139,7 +139,7 @@ Neste tutorial, exploramos como trabalhar com gráficos usando o Aspose.Words pa
 
 ### Como posso criar outros tipos de gráficos, como gráficos de dispersão ou de área?
 
-Você pode criar vários tipos de gráficos especificando o apropriado`ChartType` ao inserir o gráfico usando`builder.insertChart(ChartType.TYPE, width, height)`.
+ Você pode criar vários tipos de gráficos especificando o apropriado`ChartType` ao inserir o gráfico usando`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Como posso ocultar um eixo do gráfico?
 

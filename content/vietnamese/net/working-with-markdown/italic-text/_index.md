@@ -38,7 +38,7 @@ Các không gian tên này cung cấp quyền truy cập vào các lớp và ph�
 
 ## Bước 1: Tạo DocumentBuilder
 
-Các`DocumentBuilder` lớp giúp bạn thêm và định dạng nội dung trong tài liệu. Bằng cách tạo một`DocumentBuilder` đối tượng, bạn đang thiết lập một công cụ để chèn và thao tác văn bản.
+ Các`DocumentBuilder` lớp giúp bạn thêm và định dạng nội dung trong tài liệu. Bằng cách tạo một`DocumentBuilder` đối tượng, bạn đang thiết lập một công cụ để chèn và thao tác văn bản.
 
 ```csharp
 // Tạo một phiên bản DocumentBuilder để làm việc với tài liệu.

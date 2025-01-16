@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-그만큼`Aspose.Words` 네임스페이스에는 Word 문서를 조작하기 위한 핵심 클래스가 포함되어 있습니다.`Aspose.Words.Tables` 특별히 테이블을 다루는 데 사용됩니다.
+ 그만큼`Aspose.Words` 네임스페이스에는 Word 문서를 조작하기 위한 핵심 클래스가 포함되어 있습니다.`Aspose.Words.Tables` 특별히 테이블을 다루는 데 사용됩니다.
 
 ## 1단계: 문서 설정
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- 이 단계에서는 문서가 저장된 경로를 정의하고 이를 로드합니다.`Document` 객체. 바꾸기`"YOUR DOCUMENT DIRECTORY"`문서가 위치한 실제 경로를 사용합니다.
+ 이 단계에서는 문서가 저장된 경로를 정의하고 이를 로드합니다.`Document` 객체. 바꾸기`"YOUR DOCUMENT DIRECTORY"` 문서가 위치한 실제 경로를 사용합니다.
 
 ## 2단계: 테이블에 접근하기
 
@@ -68,7 +68,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-그만큼`AutoFit` 방법을 사용하여`AutoFitBehavior.AutoFitToWindow` 표 너비가 페이지 전체 너비에 맞게 조정되도록 합니다.
+ 그만큼`AutoFit` 방법을 사용하여`AutoFitBehavior.AutoFitToWindow` 표 너비가 페이지 전체 너비에 맞게 조정되도록 합니다.
 
 ## 4단계: 수정된 문서 저장
 

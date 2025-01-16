@@ -19,11 +19,7 @@ Než se ponoříme do vkládání objektů OLE a ovládacích prvků ActiveX, uj
 - Nainstalovaná knihovna Aspose.Words pro Python
 - Základní pochopení struktury dokumentu aplikace Word
 
-## Vkládání objektů OLE
-
-Objekty OLE umožňují bezproblémovou integraci externích souborů, jako jsou tabulky nebo prezentace, do dokumentů aplikace Word. Chcete-li vložit objekt OLE, postupujte takto:
-
-### Krok 1: Přidání požadovaných knihoven
+## Krok 1: Přidání požadovaných knihoven
 
 Začněte importem potřebných modulů z knihovny Aspose.Words a jakýchkoli dalších závislostí:
 
@@ -31,7 +27,7 @@ Začněte importem potřebných modulů z knihovny Aspose.Words a jakýchkoli da
 import aspose.words as aw
 ```
 
-### Krok 2: Vytvoření dokumentu aplikace Word
+## Krok 2: Vytvoření dokumentu aplikace Word
 
 Vytvořte nový dokument Word pomocí Aspose.Words pro Python:
 
@@ -39,42 +35,16 @@ Vytvořte nový dokument Word pomocí Aspose.Words pro Python:
 doc = aw.Document()
 ```
 
-### Krok 3: Vložení objektu OLE
+## Krok 3: Vložení objektu OLE
 
-Nyní můžete do dokumentu vložit objekt OLE. Vložme například excelovou tabulku:
-
-```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
-
-## Vkládání ovládacích prvků ActiveX
-
-Ovládací prvky ActiveX přinášejí do vašich dokumentů interaktivitu a umožňují uživatelům pracovat s vloženým obsahem. Chcete-li vložit ovládací prvek ActiveX, postupujte takto:
-
-### Krok 1: Přidání požadovaných knihoven
-
-Stejně jako u objektů OLE začněte importem potřebných modulů:
+Nyní můžete do dokumentu vložit objekt OLE. Například vložíme excelovou tabulku:
 
 ```python
-import aspose.words as aw
-```
+builder = aw.DocumentBuilder(doc)
 
-### Krok 2: Vytvoření dokumentu aplikace Word
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", True, True, None)
 
-Vytvořte nový dokument aplikace Word:
-
-```python
-doc = aw.Document()
-```
-
-### Krok 3: Vložení ovládacího prvku ActiveX
-
-Řekněme, že chcete vložit multimediální přehrávač. Můžete to udělat takto:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Zlepšení interaktivity a funkčnosti

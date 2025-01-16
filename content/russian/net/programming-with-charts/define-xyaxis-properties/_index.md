@@ -78,7 +78,7 @@ chart.Series.Add("Aspose Series 1",
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // Измеряется в единицах отображения оси Y (сотни).
+xAxis.CrossesAt = 3; //Измеряется в единицах отображения оси Y (сотни).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

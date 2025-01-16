@@ -34,5 +34,3 @@ Scopri come unire e aggiungere documenti usando Aspose.Words per Java. Guida pas
 Scopri come confrontare i documenti per le differenze usando Aspose.Words in Java. La nostra guida passo dopo passo assicura una gestione accurata dei documenti.
 ### [Unire documenti con DocumentBuilder](./merging-documents-documentbuilder/)
 Scopri come manipolare documenti Word con Aspose.Words per Java. Crea, modifica, unisci e converti documenti a livello di programmazione in Java.
-### [Suddivisione ed estrazione di documenti](./document-splitting-extraction/)
-Scopri come dividere ed estrarre documenti senza sforzo usando Aspose.Words per Java. Semplifica le tue attività di elaborazione dei documenti con una guida passo-passo.

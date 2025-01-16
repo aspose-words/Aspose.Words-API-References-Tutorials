@@ -54,7 +54,7 @@ Selanjutnya, kita perlu mengatur opsi untuk menyimpan dokumen. Di sinilah kita a
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-Itu`OoxmlSaveOptions`kelas memungkinkan kita untuk menentukan berbagai pilihan untuk menyimpan file DOCX. Di sini, kita mengatur`Password`properti untuk`"password"` Anda dapat mengganti`"password"` dengan kata sandi pilihan Anda. Kata sandi ini akan diperlukan untuk membuka berkas DOCX yang dienkripsi.
+ Itu`OoxmlSaveOptions`kelas memungkinkan kita untuk menentukan berbagai pilihan untuk menyimpan file DOCX. Di sini, kita mengatur`Password`properti untuk`"password"` Anda dapat mengganti`"password"` dengan kata sandi pilihan Anda. Kata sandi ini akan diperlukan untuk membuka berkas DOCX yang dienkripsi.
 
 ## Langkah 3: Simpan Dokumen Terenkripsi
 
@@ -65,7 +65,7 @@ Terakhir, kita akan menyimpan dokumen menggunakan opsi penyimpanan yang dikonfig
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-Itu`Save` metode dari`Document` kelas digunakan untuk menyimpan dokumen. Kami menyediakan jalur dan nama file untuk dokumen terenkripsi, beserta`saveOptions` yang telah kami konfigurasikan sebelumnya. Dokumen tersebut kini disimpan sebagai file DOCX terenkripsi.
+ Itu`Save` metode dari`Document` kelas digunakan untuk menyimpan dokumen. Kami menyediakan jalur dan nama file untuk dokumen terenkripsi, beserta`saveOptions` yang telah kami konfigurasikan sebelumnya. Dokumen tersebut kini disimpan sebagai file DOCX terenkripsi.
 
 ## Kesimpulan
 

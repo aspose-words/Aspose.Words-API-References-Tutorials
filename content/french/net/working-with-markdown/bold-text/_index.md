@@ -33,7 +33,7 @@ Maintenant, décomposons le processus de mise en gras du texte dans un document 
 
 ## Étape 1 : Initialiser DocumentBuilder
 
-Le`DocumentBuilder` La classe fournit un moyen rapide et simple d'ajouter du contenu à votre document. Initialisons-la.
+ Le`DocumentBuilder` La classe fournit un moyen rapide et simple d'ajouter du contenu à votre document. Initialisons-la.
 
 ```csharp
 // Utilisez un générateur de documents pour ajouter du contenu au document.

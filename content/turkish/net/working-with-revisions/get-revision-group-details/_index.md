@@ -106,4 +106,4 @@ Kesinlikle! C#, VB.NET ve ASP.NET dahil olmak üzere herhangi bir .NET diliyle k
  Evet, Aspose.Words for .NET tam işlevsellik için bir lisans gerektirir. Bir tane satın alabilirsiniz[Burada](https://purchase.aspose.com/buy) veya geçici bir lisans alın[Burada](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET hakkında daha fazla dokümanı nerede bulabilirim?
-Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).
+ Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).

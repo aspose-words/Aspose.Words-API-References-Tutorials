@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-การ`Document` วัตถุแสดงถึงเอกสาร Word ทั้งหมดของเราและ`DocumentBuilder` ช่วยเราเพิ่มและจัดรูปแบบเนื้อหา
+ การ`Document` วัตถุแสดงถึงเอกสาร Word ทั้งหมดของเราและ`DocumentBuilder` ช่วยเราเพิ่มและจัดรูปแบบเนื้อหา
 
 ## ขั้นตอนที่ 3: กำหนดขอบเขตย่อหน้า
 

@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ###  Что такое`DocumentDirection` property used for?
 
-The`DocumentDirection` недвижимость в`TxtLoadOptions` определяет направление текста для документа. Может быть установлено`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , или`DocumentDirection.RightToLeft`.
+ The`DocumentDirection` недвижимость в`TxtLoadOptions` определяет направление текста для документа. Может быть установлено`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , или`DocumentDirection.RightToLeft`.
 
 ### Можно ли задать направление текста для определенных абзацев, а не для всего документа?
 

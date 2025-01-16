@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 Att ställa in ett lösenord är valfritt, men det kan lägga till ett extra lager av säkerhet till ditt dokument innan du ändrar det.
 
 ```csharp
-//Ange ett lösenord som är upp till 15 tecken långt.
+// Ange ett lösenord som är upp till 15 tecken långt.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Ja, det är valfritt att ställa in ett lösenord. Du kan direkt ta bort skrivsk
 
 ### Vad händer om dokumentet redan har en annan typ av skydd?
 
-De`doc.Protect(ProtectionType.NoProtection)` metod säkerställer att alla typer av skydd tas bort från dokumentet.
+ De`doc.Protect(ProtectionType.NoProtection)` metod säkerställer att alla typer av skydd tas bort från dokumentet.
 
 ### Finns det något sätt att veta om ett dokument är skrivskyddat innan du tar bort begränsningen?
 

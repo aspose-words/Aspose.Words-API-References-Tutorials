@@ -102,7 +102,7 @@ Hier slaan we het document op als "output.docx". U kunt dit bestand openen in Mi
 
 ## Conclusie
 
-En daar heb je het! Je hebt succesvol secties in een Word-document bewerkt met Aspose.Words voor .NET. Deze tutorial behandelde de basis van het maken van een document, het toevoegen van secties en het bewerken van hun inhoud. Met Aspose.Words kun je veel complexere bewerkingen uitvoeren, dus aarzel niet om de[API-documentatie](https://reference.aspose.com/words/net/) voor meer geavanceerde functies.
+En daar heb je het! Je hebt succesvol secties in een Word-document bewerkt met Aspose.Words voor .NET. Deze tutorial behandelde de basisprincipes van het maken van een document, het toevoegen van secties en het bewerken van hun inhoud. Met Aspose.Words kun je veel complexere bewerkingen uitvoeren, dus aarzel niet om de[API-documentatie](https://reference.aspose.com/words/net/) voor meer geavanceerde functies.
 
 ## Veelgestelde vragen
 
@@ -120,7 +120,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars progra
 
 ## 4. Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 
- kunt ondersteuning krijgen door de[Aspose ondersteuningsforum](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen door de[Aspose ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
 ## 5. Kan ik andere typen documenten bewerken met Aspose.Words voor .NET?
 

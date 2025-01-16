@@ -92,4 +92,4 @@ Aspose.Words hỗ trợ nhiều phiên bản .NET Framework và .NET Core, đả
 Có, bạn có thể hủy liên kết đầu trang và chân trang bằng phương pháp API Aspose.Words để khôi phục định dạng riêng lẻ của tài liệu.
 
 ### Tôi có thể tìm tài liệu chi tiết hơn về Aspose.Words cho .NET ở đâu?
- Thăm nom[Aspose.Words cho Tài liệu .NET](https://reference.aspose.com/words/net/)để có hướng dẫn toàn diện và tài liệu tham khảo API.
+ Thăm nom[Aspose.Words cho Tài liệu .NET](https://reference.aspose.com/words/net/) để có hướng dẫn toàn diện và tài liệu tham khảo API.

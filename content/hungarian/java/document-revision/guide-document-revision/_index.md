@@ -11,7 +11,7 @@ url: /hu/java/document-revision/guide-document-revision/
 Napjaink felgyorsult világában a dokumentumkezelés és az együttműködés a különböző iparágak alapvető szempontjai. Legyen szó jogi szerződésről, műszaki jelentésről vagy tudományos dolgozatról, a revíziók hatékony nyomon követésének és kezelésének képessége kulcsfontosságú. Az Aspose.Words for Java hatékony megoldást kínál a dokumentumok revízióinak kezelésére, a változtatások elfogadására, a különböző revíziótípusok megértésére, valamint a szöveg- és dokumentumfeldolgozás kezelésére. Ebben az átfogó útmutatóban lépésről lépésre végigvezetjük az Aspose.Words for Java használatának folyamatán, amellyel hatékonyan kezelheti a dokumentumok módosításait.
 
 
-## A dokumentum átdolgozásának megértése
+## A dokumentum felülvizsgálatának megértése
 
 ### 1.1 Mi az a dokumentum-revízió?
 

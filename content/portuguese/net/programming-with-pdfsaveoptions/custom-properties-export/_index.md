@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveO
 
 ## Conclusão
 
-Exportar propriedades personalizadas em um documento PDF usando o Aspose.Words para .NET é um processo direto que pode melhorar muito seus recursos de gerenciamento de documentos. Seguindo essas etapas, você pode garantir que metadados críticos sejam preservados e acessíveis, melhorando a eficiência e a organização de seus documentos digitais.
+Exportar propriedades personalizadas em um documento PDF usando o Aspose.Words para .NET é um processo direto que pode melhorar muito seus recursos de gerenciamento de documentos. Ao seguir essas etapas, você pode garantir que metadados críticos sejam preservados e acessíveis, melhorando a eficiência e a organização de seus documentos digitais.
 
 ## Perguntas frequentes
 

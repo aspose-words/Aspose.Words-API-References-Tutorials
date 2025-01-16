@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Adım 4: E-postayı gönderin
 
-Son olarak, e-postayı bir SMTP istemcisi kullanarak gönderin. SMTP istemcisini SMTP sunucunuzun ayrıntılarıyla yapılandırın ve`Send` Mesajı gönderme yöntemi.
+ Son olarak, e-postayı bir SMTP istemcisi kullanarak gönderin. SMTP istemcisini SMTP sunucunuzun ayrıntılarıyla yapılandırın ve`Send` Mesajı gönderme yöntemi.
 
 ```csharp
 // Mesajı Aspose.Email kullanarak gönderin.
@@ -95,7 +95,7 @@ Evet, Aspose.Words çeşitli formatları destekler ve DOC, DOCX, RTF ve daha faz
 Evet, Aspose.Words .NET Core ile uyumludur. .NET Core uygulamalarında da kullanabilirsiniz.
 
 ### Aspose.Words ve Aspose.Email için lisansa ihtiyacım var mı?
-Evet, her iki kütüphane de lisans gerektirir. Geçici bir lisansı şuradan alabilirsiniz:[Aspose satın alma sayfası](https://purchase.aspose.com/temporary-license/) Değerlendirme amaçlı.
+ Evet, her iki kütüphane de lisans gerektirir. Geçici bir lisansı şuradan alabilirsiniz:[Aspose satın alma sayfası](https://purchase.aspose.com/temporary-license/) Değerlendirme amaçlı.
 
 ### Daha fazla dokümanı nerede bulabilirim?
  Aspose.Words için ayrıntılı dokümanları bulabilirsiniz[Burada](https://reference.aspose.com/words/net/) ve Aspose.Email için[Burada](https://reference.aspose.com/email/net/).

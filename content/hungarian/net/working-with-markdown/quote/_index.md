@@ -44,7 +44,7 @@ Ezek a névterek hozzáférést biztosítanak a Word-dokumentumok kezeléséhez 
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-A`DocumentBuilder` osztály az Ön átjárója a dokumentum elkészítéséhez és testreszabásához. Tekintsd ezt varázspálcádnak a Word-dokumentumok létrehozásához!
+ A`DocumentBuilder` osztály az Ön átjárója a dokumentum elkészítéséhez és testreszabásához. Tekintsd ezt varázspálcádnak a Word-dokumentumok létrehozásához!
 
 ## 2. lépés: Adjon hozzá egy blokk idézetet
 

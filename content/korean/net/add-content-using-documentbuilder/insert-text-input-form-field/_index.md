@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## 3단계: DocumentBuilder 초기화
 
-그만큼`DocumentBuilder` 클래스는 문서에 내용을 추가하는 데 사용되는 주요 도구입니다. Word 문서 캔버스에 글을 쓰는 펜이라고 생각하세요.
+ 그만큼`DocumentBuilder` 클래스는 문서에 내용을 추가하는 데 사용되는 주요 도구입니다. Word 문서 캔버스에 글을 쓰는 펜이라고 생각하세요.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

@@ -96,7 +96,7 @@ builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 
 ## Schritt 5: Am Raster ausrichten für Schriftarten aktivieren
 
-Darüber hinaus können Sie die Option „Am Raster ausrichten“ für Schriftarten innerhalb eines Absatzes aktivieren, um eine einheitliche Zeichenausrichtung beizubehalten.
+Darüber hinaus können Sie die Funktion „Am Raster ausrichten“ für Schriftarten innerhalb eines Absatzes aktivieren, um eine einheitliche Zeichenausrichtung beizubehalten.
 
 Festlegen der Schriftartausrichtung am Raster
 

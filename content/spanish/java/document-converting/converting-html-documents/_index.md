@@ -53,7 +53,7 @@ doc.save("Output.docx");
 
 ### Explicación:
 
-El`save` El método se llama en el`Document` objeto para guardar el archivo en el`.docx` Formato. El argumento proporcionado es la ruta del archivo donde se guardará el documento de Word. Este es el paso final del proceso de conversión.
+ El`save` El método se llama en el`Document` objeto para guardar el archivo en el`.docx` Formato. El argumento proporcionado es la ruta del archivo donde se guardará el documento de Word. Este es el paso final del proceso de conversión.
 
 ## Conclusión
 

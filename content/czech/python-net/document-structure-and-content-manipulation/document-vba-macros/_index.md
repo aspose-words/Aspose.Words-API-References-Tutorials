@@ -20,7 +20,7 @@ V dnešním digitálním prostředí je efektivní správa a zpracování dokume
 Chcete-li se vydat na tuto cestu automatizace, musíte mít nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[Aspose webové stránky](https://releases.aspose.com/words/python/). Po instalaci můžete zahájit svůj projekt Python a importovat potřebné moduly.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Pochopení maker VBA a jejich role
@@ -46,7 +46,7 @@ Programové vytváření dokumentů je zjednodušeno pomocí Aspose.Words Python
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ Makra VBA integrovaná s Aspose.Words Python otevírají dveře extrakci dat a m
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content

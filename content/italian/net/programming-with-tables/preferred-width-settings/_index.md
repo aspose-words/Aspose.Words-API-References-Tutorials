@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-IL`PreferredWidth.Auto` impostazione consente a questa cella di espandersi o contrarsi in base allo spazio rimasto dopo che le altre celle sono state contabilizzate. Ciò assicura che il layout della tabella appaia bilanciato e professionale.
+ IL`PreferredWidth.Auto` impostazione consente a questa cella di espandersi o contrarsi in base allo spazio rimasto dopo che le altre celle sono state contabilizzate. Ciò assicura che il layout della tabella appaia bilanciato e professionale.
 
 ## Passaggio 5: finalizzare e salvare il documento
 

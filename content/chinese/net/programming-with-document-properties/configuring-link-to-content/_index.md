@@ -86,7 +86,7 @@ string customPropertyValue = customProperty.Value.ToString();
 Aspose.Words for .NET 是一个功能强大的库，可用于以编程方式处理 Word 文档。它提供了用于创建、修改和转换 Word 文档的广泛功能。
 
 ### 如何安装 Aspose.Words for .NET？
-您可以从以下网址下载安装 Aspose.Words for .NET[这里](https://releases.aspose.com/words/net/)并将 DLL 添加到您的项目中。或者，您可以通过 Visual Studio 中的 NuGet 包管理器安装它。
+您可以从以下网址下载安装 Aspose.Words for .NET[这里](https://releases.aspose.com/words/net/)并将 DLL 添加到您的项目中。或者，您也可以通过 Visual Studio 中的 NuGet 包管理器安装它。
 
 ### 我可以在同一个文档中添加指向不同内容的多个链接吗？
 是的，您可以通过创建多个书签并将自定义属性链接到每个书签来添加指向同一文档中不同内容的多个链接。

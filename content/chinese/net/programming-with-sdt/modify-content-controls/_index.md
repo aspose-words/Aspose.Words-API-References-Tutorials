@@ -39,7 +39,7 @@ using Aspose.Words.Tables;
 
 ## 步骤 1：设置文档路径
 
-在进行任何更改之前，您需要指定文档的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档存储的实际路径。
+在进行任何更改之前，您需要指定文档的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用存储文档的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

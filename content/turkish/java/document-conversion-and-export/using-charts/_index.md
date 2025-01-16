@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // X eksenini tarih yerine kategori olarak değiştirin.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Y ekseninin (yüzlerce) gösterge birimleriyle ölçülmüştür.
+xAxis.setCrossesAt(3.0); // ekseninin (yüzlerce) gösterge birimleriyle ölçülmüştür.
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ Bu eğitimde, Aspose.Words for Java kullanarak grafiklerle nasıl çalışılaca
 
 ### Veri etiketlerini özel sayı biçimleriyle nasıl biçimlendirebilirim?
 
- Veri etiketlerini şuraya erişerek biçimlendirebilirsiniz:`DataLabels` bir serinin özelliklerini ve istenilen biçim kodunu kullanarak ayarlama`getNumberFormat().setFormatCode()`.
+Veri etiketlerini şuraya erişerek biçimlendirebilirsiniz:`DataLabels` bir serinin özelliklerini ve istenilen biçim kodunu kullanarak ayarlama`getNumberFormat().setFormatCode()`.
 
 ### Bir grafikteki eksen özelliklerini nasıl özelleştirebilirim?
 
@@ -139,7 +139,7 @@ Bu eğitimde, Aspose.Words for Java kullanarak grafiklerle nasıl çalışılaca
 
 ### Dağılım veya alan grafikleri gibi diğer grafik türlerini nasıl oluşturabilirim?
 
-Uygun olanı belirterek çeşitli grafik türleri oluşturabilirsiniz.`ChartType` kullanarak grafik eklerken`builder.insertChart(ChartType.TYPE, width, height)`.
+ Uygun olanı belirterek çeşitli grafik türleri oluşturabilirsiniz.`ChartType` kullanarak grafik eklerken`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Bir grafik eksenini nasıl gizleyebilirim?
 

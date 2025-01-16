@@ -40,7 +40,7 @@ public class DocumentExtractor {
 
 ### Menambahkan Aspose.Words ke Proyek Anda
 
- Untuk menambahkan Aspose.Words ke proyek Anda, salin file JAR yang diunduh ke direktori proyek Anda.`lib` folder dan menambahkannya ke classpath Anda. Anda sekarang siap untuk terjun ke dunia ekstraksi dokumen!
+Untuk menambahkan Aspose.Words ke proyek Anda, salin file JAR yang diunduh ke direktori proyek Anda.`lib` folder dan menambahkannya ke classpath Anda. Anda sekarang siap untuk terjun ke dunia ekstraksi dokumen!
 
 ## Memuat dan Mengurai Dokumen
 
@@ -64,7 +64,7 @@ DocumentVisitor visitor = new DocumentVisitor();
 // Melintasi dokumen
 doc.accept(visitor);
 
-//Konten yang diekstraksi sekarang tersedia di pengunjung
+// Konten yang diekstraksi sekarang tersedia di pengunjung
 String extractedText = visitor.getText();
 ```
 
@@ -90,7 +90,7 @@ String pageText = doc.extractText(pageInfo);
 Untuk mengekstrak konten dari semua halaman, Anda dapat menggunakan loop sederhana:
 
 ```java
-// Dapatkan jumlah total halaman dalam dokumen
+//Dapatkan jumlah total halaman dalam dokumen
 int pageCount = doc.getPageCount();
 
 for (int i = 0; i < pageCount; i++) {
@@ -120,7 +120,7 @@ builder.write("This text is bold.");
 Setelah Anda mengekstrak dan memanipulasi konten, Anda dapat menyimpannya ke dokumen baru:
 
 ```java
-//Simpan konten yang diekstraksi ke dokumen baru
+// Simpan konten yang diekstraksi ke dokumen baru
 doc.save("extracted_content.docx");
 ```
 

@@ -49,7 +49,7 @@ Vervolgens configureert u de opslagopties voor het document. Hier kunt u verschi
 
 ```java
 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.setSaveFormat(SaveFormat.EPUB);
+saveOptions.setSaveFormat();
 saveOptions.setEncoding(StandardCharsets.UTF_8);
 ```
 
@@ -97,7 +97,7 @@ doc.save("HtmlSaveOptions.Doc2EpubSaveOptions.epub", saveOptions);
 
 ## Conclusie
 
-En daar heb je het! Je hebt zojuist een DOCX-bestand omgezet in een EPUB-document met Aspose.Words voor Java. Deze gids behandelde alles, van het laden van je document tot het configureren van opslagopties en het splitsen van de uitvoer voor betere leesbaarheid. Met deze tools kun je ervoor zorgen dat je documenten niet alleen worden omgezet, maar ook worden geoptimaliseerd voor verschillende formaten en use cases.
+En daar heb je het! Je hebt zojuist een DOCX-bestand omgezet naar een EPUB-document met Aspose.Words voor Java. Deze gids behandelde alles, van het laden van je document tot het configureren van opslagopties en het splitsen van de uitvoer voor betere leesbaarheid. Met deze tools kun je ervoor zorgen dat je documenten niet alleen worden omgezet, maar ook worden geoptimaliseerd voor verschillende formaten en use cases.
 
 Aspose.Words voor Java is een robuuste tool die uitgebreide functionaliteit biedt die verder gaat dan simpele conversies. Ontdek de mogelijkheden ervan verder om documentverwerkingstaken te automatiseren en uw documentbeheerworkflows te verbeteren.
 

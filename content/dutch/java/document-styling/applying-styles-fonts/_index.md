@@ -16,7 +16,7 @@ Aspose.Words voor Java is een Java-gebaseerde API waarmee ontwikkelaars met vers
 ## Stijlen en lettertypen toepassen: de basis
 
 ### Aan de slag
- Om te beginnen moet u uw Java-ontwikkelomgeving instellen en de Aspose.Words for Java-bibliotheek downloaden. U kunt de downloadlink vinden[hier](https://releases.aspose.com/words/java/)Zorg ervoor dat u de bibliotheek in uw project opneemt.
+Om te beginnen moet u uw Java-ontwikkelomgeving instellen en de Aspose.Words for Java-bibliotheek downloaden. U kunt de downloadlink vinden[hier](https://releases.aspose.com/words/java/)Zorg ervoor dat u de bibliotheek in uw project opneemt.
 
 ### Een document maken
 Laten we beginnen met het maken van een nieuw document met Aspose.Words voor Java:
@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Combineer meerdere stijlen voor complexe documentopmaak:
 
 ```java
-//Combineer stijlen voor een unieke look
+// Combineer stijlen voor een unieke look
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Aspose.Words voor Java biedt krachtige voorwaardelijke opmaakmogelijkheden. U ku
 Absoluut! Aspose.Words voor Java ondersteunt een breed scala aan lettertypen en tekens uit verschillende talen en scripts.
 
 ### Hoe kan ik hyperlinks toevoegen aan tekst met specifieke stijlen?
- Om hyperlinks aan tekst toe te voegen, gebruikt u de`FieldHyperlink`klasse in combinatie met stijlen om de gewenste opmaak te bereiken.
+ Om hyperlinks aan tekst toe te voegen, gebruikt u de`FieldHyperlink` klasse in combinatie met stijlen om de gewenste opmaak te bereiken.
 
 ### Zijn er beperkingen wat betreft de documentgrootte of -complexiteit?
 Aspose.Words voor Java kan documenten van verschillende groottes en complexiteit verwerken. Extreem grote documenten kunnen echter extra geheugenbronnen vereisen.

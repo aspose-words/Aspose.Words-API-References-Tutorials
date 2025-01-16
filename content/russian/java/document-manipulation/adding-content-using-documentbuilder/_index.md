@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Начать таблицу
+//Начать таблицу
 Table table = builder.startTable();
 
 // Вставить ячейки и содержимое

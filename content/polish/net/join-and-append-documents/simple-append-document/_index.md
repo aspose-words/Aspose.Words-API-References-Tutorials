@@ -80,7 +80,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-Ten`AppendDocument` Metoda przyjmuje dwa parametry:
+ Ten`AppendDocument` Metoda przyjmuje dwa parametry:
 1. Dokument źródłowy: Dokument, który chcesz dołączyć.
 2.  Tryb formatu importu: Ten parametr dyktuje, jak formatowanie powinno być obsługiwane. Tutaj używamy`KeepSourceFormatting` aby zachować formatowanie dokumentu źródłowego.
 

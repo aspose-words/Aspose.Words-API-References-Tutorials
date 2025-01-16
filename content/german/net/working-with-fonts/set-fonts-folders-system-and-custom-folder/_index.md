@@ -79,7 +79,7 @@ fontSettings.SetFontsSources(updatedFontSources);
 
 ## Schritt 6: Schrifteinstellungen auf Dokument anwenden
 
- Wenden Sie abschließend die konfigurierten`FontSettings` zu Ihrem Dokument und speichern Sie es im gewünschten Format, beispielsweise PDF.
+ Zum Schluss wenden Sie die konfigurierten`FontSettings` zu Ihrem Dokument und speichern Sie es im gewünschten Format, beispielsweise PDF.
 
 ```csharp
 doc.FontSettings = fontSettings;

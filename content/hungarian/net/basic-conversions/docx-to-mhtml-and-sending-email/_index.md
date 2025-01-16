@@ -9,7 +9,7 @@ url: /hu/net/basic-conversions/docx-to-mhtml-and-sending-email/
 ---
 ## Bevezetés
 
-A mai digitális korban gyakori feladat a dokumentumok egyik formátumból a másikba konvertálása és e-mailben történő elküldése. Ez a cikk végigvezeti a DOCX-fájlok MHTML formátumba konvertálásának folyamatán, majd az Aspose.Words for .NET használatával e-mailben történő elküldésén. Az egyes lépéseket egy részletes, könnyen követhető útmutatóban részletezzük, biztosítva, hogy az elejétől a végéig megértse a folyamatot. Merüljünk el!
+mai digitális korban gyakori feladat a dokumentumok egyik formátumból a másikba konvertálása és e-mailben történő elküldése. Ez a cikk végigvezeti a DOCX-fájlok MHTML formátumba konvertálásának folyamatán, majd az Aspose.Words for .NET használatával e-mailben történő elküldésén. Az egyes lépéseket egy részletes, könnyen követhető útmutatóban részletezzük, biztosítva, hogy az elejétől a végéig megértse a folyamatot. Merüljünk el!
 
 ## Előfeltételek
 
@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## 4. lépés: Küldje el az e-mailt
 
-Végül küldje el az e-mailt egy SMTP-kliens segítségével. Konfigurálja az SMTP-klienst az SMTP-kiszolgáló adataival, és használja a`Send` az üzenet küldésének módja.
+ Végül küldje el az e-mailt egy SMTP-kliens segítségével. Konfigurálja az SMTP-klienst az SMTP-kiszolgáló adataival, és használja a`Send` az üzenet küldésének módja.
 
 ```csharp
 // Küldje el az üzenetet az Aspose.Email használatával.
@@ -95,7 +95,7 @@ Igen, az Aspose.Words különféle formátumokat támogat, és olyan dokumentumo
 Igen, az Aspose.Words kompatibilis a .NET Core-al. Használhatja .NET Core alkalmazásokban is.
 
 ### Szükségem van licencre az Aspose.Words és az Aspose.Email használatához?
-Igen, mindkét könyvtárhoz licenc szükséges. Ideiglenes jogosítványt kaphat a[Aspose vásárlási oldal](https://purchase.aspose.com/temporary-license/) értékelési célokra.
+ Igen, mindkét könyvtárhoz licenc szükséges. Ideiglenes jogosítványt kaphat a[Aspose vásárlási oldal](https://purchase.aspose.com/temporary-license/) értékelési célokra.
 
 ### Hol találok további dokumentációt?
  Az Aspose.Words részletes dokumentációja megtalálható[itt](https://reference.aspose.com/words/net/) és az Aspose.Email számára[itt](https://reference.aspose.com/email/net/).

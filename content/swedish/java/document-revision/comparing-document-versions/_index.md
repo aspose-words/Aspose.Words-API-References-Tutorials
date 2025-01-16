@@ -7,86 +7,117 @@ type: docs
 weight: 11
 url: /sv/java/document-revision/comparing-document-versions/
 ---
-
 ## Introduktion
 
-Dokumentjämförelse innebär att man analyserar två eller flera versioner av ett dokument för att identifiera skillnader och likheter. Aspose.Words för Java tillhandahåller verktygen för att utföra denna uppgift effektivt. I den här guiden går vi igenom hela processen, från att sätta upp din utvecklingsmiljö till att spara det jämförda dokumentet.
+När det gäller att arbeta med Word-dokument programmatiskt är det ett vanligt krav att jämföra två dokumentversioner. Oavsett om du spårar ändringar eller säkerställer konsekvens mellan utkast, gör Aspose.Words för Java denna process sömlös. I den här handledningen kommer vi att dyka in i hur man jämför två Word-dokument med Aspose.Words för Java, med steg-för-steg-vägledning, en samtalston och massor av detaljer för att hålla dig engagerad.
 
-## Konfigurera din utvecklingsmiljö
+## Förutsättningar
 
-Innan vi dyker in i dokumentjämförelse måste du ställa in din utvecklingsmiljö. Se till att du har Aspose.Words för Java installerat. Du kan ladda ner den från webbplatsen[här](https://releases.aspose.com/words/java/).
+Innan vi hoppar in i koden, låt oss se till att du har allt du behöver: 
 
-## Laddar dokument
+1. Java Development Kit (JDK): Se till att du har JDK 8 eller högre installerat på din maskin. 
+2.  Aspose.Words för Java: Ladda ner[senaste versionen här](https://releases.aspose.com/words/java/).  
+3. Integrated Development Environment (IDE): Använd valfri Java IDE du föredrar, till exempel IntelliJ IDEA eller Eclipse.
+4.  Aspose-licens: Du kan få en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för alla funktioner, eller utforska med den kostnadsfria provperioden.
 
-För att jämföra dokumentversioner måste du först ladda de dokument du vill analysera. Aspose.Words för Java gör detta enkelt med sina robusta dokumentladdningsmöjligheter.
 
-```java
-// Ladda originaldokumentet
-Document originalDocument = new Document("original.docx");
+## Importera paket
 
-// Ladda det reviderade dokumentet
-Document revisedDocument = new Document("revised.docx");
-```
-
-## Jämföra dokumentversioner
-
-Nu när vi har laddat våra dokument, låt oss fortsätta med jämförelsen. Aspose.Words för Java tillhandahåller en enkel metod för detta.
+För att använda Aspose.Words för Java i ditt projekt, måste du importera de nödvändiga paketen. Här är ett utdrag att inkludera i början av koden:
 
 ```java
-// Jämför dokumenten
-DocumentComparer comparer = new DocumentComparer(originalDocument, revisedDocument);
-comparer.compare();
+import com.aspose.words.*;
+import java.util.Date;
 ```
 
-## Identifiera förändringar
+Låt oss dela upp processen i hanterbara steg. Redo att dyka i? Låt oss gå!
 
-Efter jämförelsen är det viktigt att identifiera de ändringar som gjorts mellan de två dokumenten. Aspose.Words för Java hjälper oss att hämta denna information.
+## Steg 1: Konfigurera din projektmiljö
+
+Först och främst måste du ställa in ditt Java-projekt med Aspose.Words. Följ dessa steg: 
+
+1.  Lägg till Aspose.Words JAR-filen till ditt projekt. Om du använder Maven, inkludera helt enkelt följande beroende i din`pom.xml` fil:
+   ```xml
+   <dependency>
+       <groupId>com.aspose</groupId>
+       <artifactId>aspose-words</artifactId>
+       <version>Latest-Version</version>
+   </dependency>
+   ```
+    Ersätta`Latest-Version` med versionsnumret från[nedladdningssida](https://releases.aspose.com/words/java/).
+
+2. Öppna ditt projekt i din IDE och se till att Aspose.Words-biblioteket läggs till korrekt i klasssökvägen.
+
+
+## Steg 2: Ladda Word-dokumenten
+
+För att jämföra två Word-dokument måste du ladda dem i din applikation med hjälp av`Document` klass.
 
 ```java
-// Hämta listan över ändringar
-List<DocumentChange> changes = comparer.getChanges();
+String dataDir = "Your Document Directory";
+Document docA = new Document(dataDir + "DocumentA.doc");
+Document docB = new Document(dataDir + "DocumentB.doc");
 ```
 
-## Tillämpa ändringar
+- `dataDir`: Den här variabeln innehåller sökvägen till mappen som innehåller dina Word-dokument.
+- `DocumentA.doc` och`DocumentB.doc`: Ersätt dessa med namnen på dina faktiska filer.
 
-När du har identifierat ändringarna kan du välja att tillämpa dem selektivt eller alla på en gång på ett av dokumenten.
+
+## Steg 3: Jämför dokumenten
+
+ Nu ska vi använda`compare` metod tillhandahållen av Aspose.Words. Denna metod identifierar skillnader mellan två dokument.
 
 ```java
-// Tillämpa ändringar på originaldokumentet
-comparer.applyChangesToOriginalDocument();
+docA.compare(docB, "user", new Date());
 ```
 
-## Sparar det jämförda dokumentet
+- `docA.compare(docB, "user", new Date())` : Detta jämförs`docA` med`docB`. 
+- `"user"`: Denna sträng representerar namnet på författaren som gör ändringar. Du kan anpassa den efter behov.
+- `new Date()`: Ställer in datum och tid för jämförelsen.
 
-Efter att ha tillämpat ändringar är det dags att spara det jämförda dokumentet för vidare användning.
+## Steg 4: Kontrollera jämförelseresultaten
+
+ Efter att ha jämfört dokumenten kan du analysera skillnaderna med hjälp av`getRevisions` metod.
 
 ```java
-// Spara det jämförda dokumentet
-originalDocument.save("compared_document.docx");
+if (docA.getRevisions().getCount() == 0)
+    System.out.println("Documents are equal");
+else
+    System.out.println("Documents are not equal");
 ```
+
+- `getRevisions().getCount()`: Räknar antalet revisioner (skillnader) mellan dokumenten.
+- Beroende på antalet kommer konsolen att skriva ut om dokumenten är identiska eller inte.
+
+
+## Steg 5: Spara det jämförda dokumentet (valfritt)
+
+Om du vill spara det jämförda dokumentet med ändringarna kan du göra det enkelt.
+
+```java
+docA.save(dataDir + "ComparedDocument.docx");
+```
+
+-  De`save`metod skriver ändringarna till en ny fil och bevarar revisionerna.
+
 
 ## Slutsats
 
-Att jämföra dokumentversioner är en kritisk uppgift i många scenarier, och Aspose.Words för Java förenklar denna process. Med dess robusta API kan du effektivt ladda, jämföra, identifiera ändringar, tillämpa dem och spara det jämförda dokumentet. Den här guiden har gett en steg-för-steg-genomgång av hela processen.
+Att jämföra Word-dokument programmatiskt är en bris med Aspose.Words för Java. Genom att följa den här steg-för-steg-guiden har du lärt dig hur du ställer in din miljö, laddar dokument, utför jämförelser och tolkar resultaten. Oavsett om du är en utvecklare eller en nyfiken lärande, kan detta kraftfulla verktyg effektivisera ditt arbetsflöde.
 
 ## FAQ's
 
-### Hur exakt är Aspose.Words för Java när det gäller att identifiera förändringar?
+###  Vad är syftet med`compare` method in Aspose.Words?  
+ De`compare` metod identifierar skillnader mellan två Word-dokument och markerar dem som revisioner.
 
-Aspose.Words för Java är mycket exakt när det gäller att identifiera ändringar mellan dokumentversioner. Den använder avancerade algoritmer för att säkerställa precision.
+###  Kan jag jämföra dokument i andra format än`.doc` or `.docx`?  
+ Ja! Aspose.Words stöder olika format, inklusive`.rtf`, `.odt` , och`.txt`.
 
-### Kan jag anpassa hur ändringar tillämpas på dokumentet?
+### Hur kan jag ignorera specifika ändringar under jämförelse?  
+ Du kan anpassa jämförelsealternativen med hjälp av`CompareOptions` klass i Aspose.Words.
 
-Ja, du kan anpassa hur ändringar tillämpas enligt dina specifika krav.
+### Är Aspose.Words för Java gratis att använda?  
+ Nej, men du kan utforska det med en[gratis provperiod](https://releases.aspose.com/) eller begära en[tillfällig licens](https://purchase.aspose.com/temporary-license/).
 
-### Finns det en gräns för storleken på dokument som kan jämföras med Aspose.Words för Java?
-
-Aspose.Words för Java kan hantera dokument av varierande storlek, vilket gör det lämpligt för både små och storskaliga jämförelser.
-
-### Stöder Aspose.Words för Java andra dokumentformat förutom DOCX?
-
-Ja, Aspose.Words för Java stöder olika dokumentformat, inklusive DOC, RTF, HTML och mer.
-
-### Var kan jag komma åt Aspose.Words för Java-dokumentation?
-
- Du kan hitta omfattande dokumentation för Aspose.Words för Java på[här](https://reference.aspose.com/words/java/).
+### Vad händer med formateringsskillnader vid jämförelse?  
+Aspose.Words kan upptäcka och markera formateringsändringar som revisioner, beroende på dina inställningar.

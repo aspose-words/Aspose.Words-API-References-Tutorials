@@ -14,7 +14,7 @@ Les styles et les thèmes jouent un rôle essentiel dans le maintien de la cohé
 
 ## Configuration de l'environnement
 
- Avant de nous plonger dans le style, configurons notre environnement de développement. Assurez-vous d'avoir installé Aspose.Words pour Python. Vous pouvez le télécharger à partir de[ici](https://releases.aspose.com/words/python/).
+Avant de nous plonger dans le style, configurons notre environnement de développement. Assurez-vous d'avoir installé Aspose.Words pour Python. Vous pouvez le télécharger à partir de[ici](https://releases.aspose.com/words/python/).
 
 ## Chargement et enregistrement de documents
 
@@ -51,30 +51,8 @@ Les styles influencent également la mise en forme des paragraphes. Ajustez les 
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## Personnalisation des styles de titre
-
-Les titres structurent les documents. Personnalisez les styles de titres pour une meilleure hiérarchie et une meilleure lisibilité.
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## Utiliser des thèmes pour un look unifié
-
-Les thèmes offrent une apparence cohérente. Appliquez un thème à votre document pour lui donner une touche professionnelle.
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## Modification des couleurs et des polices du thème
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 Adaptez les thèmes à vos besoins en ajustant les couleurs et les polices des thèmes.
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## Créez vos propres styles
-
-Créez des styles personnalisés pour des éléments de document uniques, garantissant ainsi que l'identité de votre marque brille.
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## Gestion du style en fonction des parties du document
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 Appliquez des styles différents aux en-têtes, aux pieds de page et au contenu du corps pour un look soigné.
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## Gestion des styles à l'échelle du document
-
-Appliquez facilement un style à l’ensemble du document.
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## Effacement du formatage et des styles
-
-Supprimez facilement les styles et la mise en forme pour repartir à zéro.
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## Exemples pratiques et cas d'utilisation
-
-Explorons des scénarios pratiques où les styles et les thèmes peuvent transformer les documents.
-
-1. Créer des rapports de marque
-2. Concevoir des CV époustouflants
-3. Formatage des documents universitaires
-
-## Conseils pour un style efficace
-
-- Gardez les styles cohérents
-- Utilisez des thèmes pour des relookings rapides
-- Expérimentez avec différentes polices et couleurs
 
 ## Conclusion
 
@@ -167,4 +109,4 @@ Les thèmes offrent une apparence cohérente en regroupant les styles, ce qui do
 
 ### Est-il possible d’effacer la mise en forme de mon document ?
 
- Oui, vous pouvez facilement supprimer la mise en forme et les styles à l'aide de l'`clear_formatting()` méthode fournie par Aspose.Words pour Python.
+Oui, vous pouvez facilement supprimer la mise en forme et les styles à l'aide de l'`clear_formatting()` méthode fournie par Aspose.Words pour Python.

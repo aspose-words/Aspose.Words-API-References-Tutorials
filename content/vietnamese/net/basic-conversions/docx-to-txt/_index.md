@@ -27,7 +27,7 @@ Trước khi bắt đầu, hãy đảm bảo bạn đáp ứng đủ các điề
 using Aspose.Words;
 ```
 
-Chúng ta hãy chia nhỏ quá trình chuyển đổi thành các bước dễ quản lý để bạn có thể dễ dàng theo dõi.
+Hãy chia nhỏ quá trình chuyển đổi thành các bước dễ quản lý để bạn có thể dễ dàng theo dõi.
 
 ## Bước 1: Thiết lập dự án của bạn
 

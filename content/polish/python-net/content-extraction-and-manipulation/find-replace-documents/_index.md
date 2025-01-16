@@ -10,7 +10,7 @@ url: /pl/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 ## Wprowadzenie do zaawansowanych technik znajdowania i zamieniania w dokumentach Word
 
-W dzisiejszym cyfrowym świecie praca z dokumentami jest podstawowym zadaniem. Dokumenty Worda są szeroko wykorzystywane do różnych celów, od tworzenia raportów po pisanie ważnych listów. Jednym z powszechnych wymagań podczas pracy z dokumentami jest konieczność znalezienia i zastąpienia określonego tekstu lub formatowania w całym dokumencie. Ten artykuł przeprowadzi Cię przez zaawansowane techniki znajdowania i zastępowania w dokumentach Worda przy użyciu interfejsu API Aspose.Words for Python.
+dzisiejszym cyfrowym świecie praca z dokumentami jest podstawowym zadaniem. Dokumenty Worda są szeroko wykorzystywane do różnych celów, od tworzenia raportów po pisanie ważnych listów. Jednym z powszechnych wymagań podczas pracy z dokumentami jest konieczność znalezienia i zastąpienia określonego tekstu lub formatowania w całym dokumencie. Ten artykuł przeprowadzi Cię przez zaawansowane techniki znajdowania i zastępowania w dokumentach Worda przy użyciu interfejsu API Aspose.Words for Python.
 
 ## Wymagania wstępne
 
@@ -18,7 +18,7 @@ Zanim przejdziemy do zaawansowanych technik, upewnij się, że spełniasz nastę
 
 1.  Instalacja Pythona: Upewnij się, że Python jest zainstalowany w Twoim systemie. Możesz go pobrać z[Tutaj](https://www.python.org/downloads/).
 
-2. Aspose.Words dla Pythona: Musisz mieć zainstalowany Aspose.Words dla Pythona. Możesz go pobrać z[Tutaj](https://releases.aspose.com/words/python/).
+2.  Aspose.Words dla Pythona: Musisz mieć zainstalowany Aspose.Words dla Pythona. Możesz go pobrać z[Tutaj](https://releases.aspose.com/words/python/).
 
 3. Przygotowanie dokumentu: Przygotuj dokument Word, w którym chcesz wykonać operacje wyszukiwania i zamiany.
 
@@ -118,4 +118,4 @@ Tak, możesz używać symboli wieloznacznych i wyrażeń regularnych do wykonywa
 
 ### Czy mogę zamieniać tekst i jednocześnie śledzić wprowadzane zmiany?
 
- Tak, możesz śledzić zmiany za pomocą`revision` funkcja Aspose.Words. Pozwala śledzić wszystkie modyfikacje wprowadzone do dokumentu.
+ Tak, możesz śledzić zmiany za pomocą`revision`funkcja Aspose.Words. Pozwala śledzić wszystkie modyfikacje wprowadzone do dokumentu.

@@ -167,58 +167,48 @@ public class DocumentMerger {
 
 透過使用`ImportFormatMode.KEEP_DIFFERENT_STYLES`，Aspose.Words 保留來源文件和目標文件之間不同的樣式，優雅地解決衝突。
 
-## 9. 文件合併的最佳實踐
-
-- 在文件合併過程中始終處理異常，以防止意外錯誤。
-
-- 定期檢查更新並利用最新版本的 Aspose.Words for Java 來受益於錯誤修復和新功能。
-
-- 測試文件與各種文件類型和大小的合併，以確保最佳效能。
-
-- 考慮使用版本控制系統來追蹤文件合併操作期間的變更。
-
-## 10. 結論
+## 結論
 
 Aspose.Words for Java 讓 Java 開發人員能夠輕鬆合併 Word 文件。透過遵循本文中的逐步指南，現在可以輕鬆合併文件、處理格式、插入分隔符號和管理衝突。借助 Aspose.Words for Java，文件合併成為一個無縫且自動化的過程，節省了寶貴的時間和精力。
 
-## 11. 常見問題解答 
+## 常見問題解答 
 
 ### 我可以合併不同格式和樣式的文件嗎？
 
-   是的，Aspose.Words for Java 可以處理合併具有不同格式和樣式的文件。該庫可以智慧地解決衝突，使您能夠無縫合併來自不同來源的文件。
+是的，Aspose.Words for Java 可以處理合併具有不同格式和樣式的文件。該庫可以智慧地解決衝突，使您能夠無縫合併來自不同來源的文件。
 
 ### Aspose.Words是否支援高效合併大型文件？
 
-   Aspose.Words for Java 旨在高效處理大型文件。它採用優化的文檔合併演算法，即使內容豐富也能確保高效能。
+Aspose.Words for Java 旨在高效處理大型文件。它採用優化的文檔合併演算法，即使內容豐富也能確保高效能。
 
 ### 我可以使用 Aspose.Words for Java 合併受密碼保護的文件嗎？
 
-   是的，Aspose.Words for Java 支援合併受密碼保護的文件。確保您提供正確的密碼來存取和合併這些文件。
+是的，Aspose.Words for Java 支援合併受密碼保護的文件。確保您提供正確的密碼來存取和合併這些文件。
 
 ### 是否可以合併多個文件中的特定部分？
 
-   是的，Aspose.Words 允許您選擇性地合併不同文件中的特定部分。這使您可以對合併過程進行精細控制。
+是的，Aspose.Words 允許您選擇性地合併不同文件中的特定部分。這使您可以對合併過程進行精細控制。
 
 ### 我可以合併帶有追蹤更改和註釋的文檔嗎？
 
-    Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
+當然，Aspose.Words for Java 可以處理合併帶有追蹤更改和註解的文件。您可以選擇在合併過程中保留或刪除這些修訂。
 
 ### Aspose.Words 是否保留合併文件的原始格式？
 
-    Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
+Aspose.Words 預設保留來源文件的格式。但是，您可以選擇不同的匯入格式模式來處理衝突並保持格式一致性。
 
 ### 我可以合併非 Word 文件格式（例如 PDF 或 RTF）的文件嗎？
 
-    Aspose.Words is primarily designed for working with Word documents. To merge documents from non-Word file formats, consider using the appropriate Aspose product for that specific format, such as Aspose.PDF or Aspose.RTF.
+Aspose.Words 主要設計用於處理 Word 文件。若要合併非 Word 文件格式的文檔，請考慮使用適合該特定格式的 Aspose 產品，例如 Aspose.PDF 或 Aspose.RTF。
 
 ### 如何在合併過程中處理文件版本控制？
 
-    Document versioning during merging can be achieved by implementing proper version control practices in your application. Aspose.Words focuses on document content merging and doesn't directly manage versioning.
+合併期間的文件版本控制可以透過在應用程式中實施適當的版本控制實務來實現。 Aspose.Words專注於文件內容合併，並非直接管理版本控制。
 
-### Aspose.Words for Java 是否與 Java 8 及更高版本相容？
+### Aspose.Words for Java 與 Java 8 及更高版本相容嗎？
 
-    Yes, Aspose.Words for Java is compatible with Java 8 and newer versions. It's always recommended to use the latest Java version for better performance and security.
+是的，Aspose.Words for Java 與 Java 8 及更高版本相容。始終建議使用最新的 Java 版本以獲得更好的效能和安全性。
 
 ### Aspose.Words 是否支援合併來自遠端來源（如 URL）的文件？
 
-    Yes, Aspose.Words for Java can load documents from various sources, including URLs, streams, and file paths. You can merge documents fetched from remote locations seamlessly.
+是的，Aspose.Words for Java 可以從各種來源載入文檔，包括 URL、流和文件路徑。您可以無縫合併從遠端位置取得的文件。

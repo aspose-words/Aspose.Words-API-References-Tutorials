@@ -16,10 +16,10 @@ Documentrevisies omvatten het bijhouden van wijzigingen die in de loop van de ti
 
 ## Aspose.Words instellen voor Python
 
- Voordat we beginnen, zorg ervoor dat je Aspose.Words voor Python hebt geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/words/python/)Nadat u de modules hebt geïnstalleerd, kunt u ze importeren in uw Python-script om aan de slag te gaan.
+Voordat we beginnen, zorg ervoor dat je Aspose.Words voor Python hebt geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/words/python/)Nadat u de modules hebt geïnstalleerd, kunt u ze importeren in uw Python-script om aan de slag te gaan.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Een document laden en weergeven
@@ -27,7 +27,7 @@ import asposewords
 Om met een document te werken, moet u het eerst in uw Python-applicatie laden. Gebruik het volgende codefragment om een document te laden en de inhoud ervan weer te geven:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 Wanneer er wijzigingen in het document worden aangebracht, kan Aspose.Words deze automatisch bijhouden als revisies. Als we bijvoorbeeld een specifiek woord willen vervangen, kunnen we dat doen terwijl we de wijziging bijhouden:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Met Aspose.Words kunt u twee documenten vergelijken om de verschillen tussen de documenten te visualiseren:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,18 +74,18 @@ comparison.save("comparison_result.docx")
 Medewerkers kunnen opmerkingen en annotaties aan een document toevoegen. U kunt deze elementen programmatisch beheren:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
 ## Het uiterlijk van de revisie aanpassen
 
-kunt aanpassen hoe revisies in het document worden weergegeven, bijvoorbeeld door de kleur van ingevoegde en verwijderde tekst te wijzigen:
+U kunt aanpassen hoe revisies in het document worden weergegeven, bijvoorbeeld door de kleur van ingevoegde en verwijderde tekst te wijzigen:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Documenten opslaan en delen
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 Deel het definitieve document met medewerkers voor verdere feedback.
-
-## Tips voor effectieve samenwerking
-
-1. Geef revisies duidelijke labels met zinvolle opmerkingen.
-2. Communiceer revisierichtlijnen naar alle medewerkers.
-3. Controleer en accepteer/verwerp regelmatig revisies.
-4. Gebruik de vergelijkingsfunctie van Aspose.Words voor een uitgebreide documentanalyse.
 
 ## Conclusie
 

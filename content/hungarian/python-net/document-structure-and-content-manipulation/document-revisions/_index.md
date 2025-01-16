@@ -8,7 +8,7 @@ weight: 23
 url: /hu/python-net/document-structure-and-content-manipulation/document-revisions/
 ---
 
-dokumentumok felülvizsgálata és nyomon követése az együttműködésen alapuló munkakörnyezetek kulcsfontosságú szempontjai. Az Aspose.Words for Python hatékony eszközöket kínál a dokumentum-változatok hatékony nyomon követésére és áttekintésére. Ebben az átfogó útmutatóban lépésről lépésre megvizsgáljuk, hogyan érhetjük el ezt az Aspose.Words for Python használatával. Ennek az oktatóanyagnak a végére alapos ismerete lesz arról, hogyan integrálhatja a verziókövetési képességeket Python-alkalmazásaiba.
+A dokumentumok felülvizsgálata és nyomon követése az együttműködésen alapuló munkakörnyezetek kulcsfontosságú szempontjai. Az Aspose.Words for Python hatékony eszközöket kínál a dokumentum-változatok hatékony nyomon követésére és áttekintésére. Ebben az átfogó útmutatóban lépésről lépésre megvizsgáljuk, hogyan érhetjük el ezt az Aspose.Words for Python használatával. Ennek az oktatóanyagnak a végére alapos ismerete lesz arról, hogyan integrálhatja a verziókövetési képességeket Python-alkalmazásaiba.
 
 ## Bevezetés a dokumentum-revíziókba
 
@@ -16,10 +16,10 @@ A dokumentum-revíziók során nyomon követik a dokumentumban idővel végrehaj
 
 ## Az Aspose.Words beállítása a Python számára
 
- Mielőtt elkezdené, győződjön meg arról, hogy az Aspose.Words for Python telepítve van. Letöltheti innen[itt](https://releases.aspose.com/words/python/). A telepítés után a kezdéshez importálhatja a szükséges modulokat a Python-szkriptbe.
+Mielőtt elkezdené, győződjön meg arról, hogy az Aspose.Words for Python telepítve van. Letöltheti innen[itt](https://releases.aspose.com/words/python/). A telepítés után a kezdéshez importálhatja a szükséges modulokat a Python-szkriptbe.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Dokumentum betöltése és megjelenítése
@@ -27,7 +27,7 @@ import asposewords
 Ha dolgozni szeretne egy dokumentummal, először be kell töltenie azt a Python alkalmazásba. A dokumentum betöltéséhez és tartalmának megjelenítéséhez használja a következő kódrészletet:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 Ha bármilyen módosítás történik a dokumentumon, az Aspose.Words automatikusan nyomon tudja követni azokat revízióként. Például, ha egy adott szót le akarunk cserélni, ezt úgy tehetjük meg, hogy közben nyomon követjük a változást:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Az Aspose.Words lehetővé teszi két dokumentum összehasonlítását, hogy szemléltesse a köztük lévő különbségeket:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 Az együttműködők megjegyzéseket és megjegyzéseket fűzhetnek a dokumentumhoz. Ezeket az elemeket programozottan kezelheti:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 Testreszabhatja, hogy a változatok hogyan jelenjenek meg a dokumentumban, például módosíthatja a beszúrt és törölt szöveg színét:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Dokumentumok mentése és megosztása
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 További visszajelzésért ossza meg a végleges dokumentumot az együttműködőkkel.
-
-## Tippek a hatékony együttműködéshez
-
-1. Egyértelműen jelölje meg a módosításokat értelmes megjegyzésekkel.
-2. Közölje a felülvizsgálati irányelveket minden együttműködővel.
-3. Rendszeresen tekintse át és fogadja el/elutasítsa el a revíziókat.
-4. Használja az Aspose.Words összehasonlító funkcióját az átfogó dokumentumelemzéshez.
 
 ## Következtetés
 

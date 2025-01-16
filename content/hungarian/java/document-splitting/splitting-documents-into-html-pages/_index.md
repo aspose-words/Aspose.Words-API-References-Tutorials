@@ -20,7 +20,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a következő e
 
 ## Bevezetés
 
-A mai digitális világban általános követelmény a Word-dokumentumok HTML-oldalakká alakítása. Az Aspose.Words leegyszerűsíti ezt a feladatot azáltal, hogy egy Java API-t biztosít, amely lehetővé teszi, hogy a Word dokumentumokat könnyedén HTML-oldalakra bontsuk. Kezdjük.
+A mai digitális világban általános követelmény a Word-dokumentumok HTML-oldalakká alakítása. Az Aspose.Words leegyszerűsíti ezt a feladatot azáltal, hogy egy Java API-t biztosít, amely lehetővé teszi számunkra, hogy a Word dokumentumokat könnyedén HTML-oldalakra bontsuk. Kezdjük.
 
 ## A Projekt beállítása
 
@@ -28,7 +28,7 @@ Kezdésként hozzon létre egy Java-projektet, és adja hozzá az Aspose.Words f
 
 ## Word dokumentum betöltése
 
-A Java-kódban először be kell töltenie a felosztani kívánt Word-dokumentumot. Íme egy példa, hogyan kell csinálni:
+Java-kódban először be kell töltenie a felosztani kívánt Word-dokumentumot. Íme egy példa, hogyan kell csinálni:
 
 ```java
 Document doc = new Document("your-document.docx");
@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-Ez a kód oldaltörések alapján osztja fel a dokumentumot, és minden oldalt a`pages` lista.
+ Ez a kód oldaltörések alapján osztja fel a dokumentumot, és minden oldalt a`pages` lista.
 
 ## Mentés HTML-ként
 
@@ -81,7 +81,7 @@ Igen, testreszabhatja a felosztási feltételeket az Ön igényei szerint. Az As
 
 Igen, az Aspose.Words hatékonyan képes kezelni a nagyméretű dokumentumokat, így nagyszerű választás kiterjedt Word dokumentumok feldolgozásához.
 
-### Vissza tudom konvertálni a HTML oldalakat Word dokumentumokká?
+### Vissza tudom konvertálni a HTML-oldalakat Word dokumentumokká?
 
 Igen, szükség esetén az Aspose.Words használatával visszakonvertálhatja a HTML-oldalakat Word dokumentumokká.
 

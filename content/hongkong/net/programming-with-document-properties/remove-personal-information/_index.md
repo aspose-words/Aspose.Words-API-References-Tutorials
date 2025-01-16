@@ -84,7 +84,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ### 如果遇到問題，我該如何獲得支援？
 
-您可以造訪Aspose.Words[支援論壇](https://forum.aspose.com/c/words/8)尋求協助解決您可能遇到的任何問題或疑問。
+您可以造訪Aspose.Words[支援論壇](https://forum.aspose.com/c/words/8)尋求有關您可能遇到的任何問題或疑問的協助。
 
 ### Aspose.Words 還提供哪些功能？
 

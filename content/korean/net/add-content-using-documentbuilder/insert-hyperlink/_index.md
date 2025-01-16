@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## 5단계: 하이퍼링크 삽입
 
- 이제 우리는 다음을 사용하여 하이퍼링크를 삽입합니다.`InsertHyperlink`방법. 이 방법은 세 가지 매개변수를 사용합니다. 표시 텍스트, URL, 링크를 하이퍼링크로 포맷해야 하는지 여부를 나타내는 부울 값입니다.
+ 이제 우리는 다음을 사용하여 하이퍼링크를 삽입합니다.`InsertHyperlink` 방법. 이 방법은 세 가지 매개변수를 사용합니다. 표시 텍스트, URL, 링크를 하이퍼링크로 포맷해야 하는지 여부를 나타내는 부울 값입니다.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", 거짓);
@@ -106,7 +106,7 @@ Aspose.Words for .NET을 사용하여 Word 문서에 하이퍼링크를 삽입�
 
 ### 하나의 문서에 여러 개의 하이퍼링크를 삽입할 수 있나요?
 
- 네, 반복해서 여러 개의 하이퍼링크를 삽입할 수 있습니다.`InsertHyperlink`각 링크에 대한 방법입니다.
+ 네, 반복해서 여러 개의 하이퍼링크를 삽입할 수 있습니다.`InsertHyperlink` 각 링크에 대한 방법입니다.
 
 ### 하이퍼링크의 색상을 어떻게 바꾸나요?
 
@@ -118,7 +118,7 @@ Aspose.Words for .NET을 사용하여 Word 문서에 하이퍼링크를 삽입�
 
 ### URL이 유효하지 않으면 어떻게 되나요?
 
-그만큼`InsertHyperlink` 이 방법은 URL을 검증하지 않으므로 URL을 삽입하기 전에 URL이 올바른지 확인하는 것이 중요합니다.
+ 그만큼`InsertHyperlink` 이 방법은 URL을 검증하지 않으므로 URL을 삽입하기 전에 URL이 올바른지 확인하는 것이 중요합니다.
 
 ### 하이퍼링크를 삽입한 후에 제거할 수 있나요?
 

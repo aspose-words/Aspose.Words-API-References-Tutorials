@@ -23,7 +23,7 @@ pip install aspose-words
 2. Importowanie modułu: Zaimportuj wymagany moduł do skryptu Pythona.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Dodawanie prostego nagłówka i stopki
@@ -33,30 +33,18 @@ Aby dodać podstawowy nagłówek i stopkę do dokumentu Word, wykonaj następuj�
 1. Tworzenie dokumentu: Utwórz nowy dokument Word za pomocą Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Dodawanie nagłówka i stopki: Użyj`sections` właściwości dokumentu, aby uzyskać dostęp do sekcji. Następnie wykorzystaj`headers_footers` właściwość umożliwiająca dodanie nagłówków i stopek.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Dodawanie treści: Dodaj treść do nagłówka i stopki.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Zapisywanie dokumentu: Zapisz dokument z nagłówkiem i stopką.
+3. Zapisywanie dokumentu: Zapisz dokument z nagłówkiem i stopką.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Dodawanie tabel: Dodawanie tabel w celu uzyskania informacji tabelarycznych.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Pola dynamiczne: Użyj pól dynamicznych do automatycznego wstawiania danych.
+2. Pola dynamiczne: Użyj pól dynamicznych do automatycznego wstawiania danych.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -110,8 +90,6 @@ header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
 
-3. Dostosuj według potrzeb: Dostosuj każdy nagłówek i stopkę zgodnie ze swoimi wymaganiami.
-
 ## Usuwanie nagłówków i stopek
 
 Aby usunąć nagłówki i stopki z dokumentu Word:
@@ -130,7 +108,7 @@ section.page_setup.different_first_page_header_footer = False
 section.page_setup.odd_and_even_pages_header_footer = False
 ```
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak uzyskać dostęp do zawartości nagłówka i stopki?
 
@@ -150,4 +128,4 @@ Tak, możesz wyczyścić zawartość nagłówków i stopek, aby skutecznie je us
 
 ### Gdzie mogę dowiedzieć się więcej o Aspose.Words dla języka Python?
 
-Aby uzyskać bardziej szczegółową dokumentację i przykłady, odwiedź stronę[Aspose.Words dla API Pythona](https://reference.aspose.com/words/python-net/).
+ Aby uzyskać bardziej szczegółową dokumentację i przykłady, odwiedź stronę[Aspose.Words dla API Pythona](https://reference.aspose.com/words/python-net/).

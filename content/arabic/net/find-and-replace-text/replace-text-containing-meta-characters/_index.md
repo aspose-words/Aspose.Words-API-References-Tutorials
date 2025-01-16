@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- نحن نقوم بإنشاء`FindReplaceOptions`الكائن وتعيين محاذاة الفقرة إلى المركز.
+ نحن نقوم بإنشاء`FindReplaceOptions` الكائن وتعيين محاذاة الفقرة إلى المركز.
 
 ## الخطوة 4: استبدال النص بأحرف التعريف
 
 هذه هي الخطوة التي تحدث فيها السحر! سنستبدل كلمة "section" التي تليها فاصل فقرة، ونضيف خطًا تحتها.
 
 ```csharp
-// قم بمضاعفة كل فاصل فقرة بعد كلمة "قسم"، وأضف نوعًا من التسطير واجعله في المنتصف.
+//قم بمضاعفة كل فاصل فقرة بعد كلمة "قسم"، وأضف نوعًا من التسطير واجعله في المنتصف.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

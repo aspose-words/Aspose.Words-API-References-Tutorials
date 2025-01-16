@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Étape 3 : Initialiser DocumentBuilder
 
-Le`DocumentBuilder` class est notre outil principal pour ajouter du contenu au document. Considérez-le comme un stylo qui écrit sur la zone de travail du document Word.
+ Le`DocumentBuilder` class est notre outil principal pour ajouter du contenu au document. Considérez-le comme un stylo qui écrit sur la zone de travail du document Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

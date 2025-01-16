@@ -23,7 +23,7 @@ url: /ar/python-net/document-structure-and-content-manipulation/document-fields/
  لإدراج حقل، يمكنك استخدام`FieldBuilder` على سبيل المثال، لإدراج حقل التاريخ الحالي:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## أتمتة إنشاء المستندات باستخدام الحقول
-
-تُعد الحقول ضرورية لإنشاء المستندات تلقائيًا. يمكنك ملء الحقول بالبيانات من مصادر خارجية:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## دمج الحقول مع مصادر البيانات

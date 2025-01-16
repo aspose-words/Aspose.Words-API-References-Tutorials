@@ -71,7 +71,7 @@ Ecco dove avviene la vera azione. Troveremo la parola "triste" e la sostituiremo
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-IL`Replace`metodo è semplice. Specifichiamo la parola da trovare, la parola sostitutiva e le opzioni per l'operazione di ricerca e sostituzione.
+ IL`Replace`metodo è semplice. Specifichiamo la parola da trovare, la parola sostitutiva e le opzioni per l'operazione di ricerca e sostituzione.
 
 ## Passaggio 5: Salvare il documento
 
@@ -93,7 +93,7 @@ Ecco fatto! Con Aspose.Words per .NET, sostituire le stringhe in un documento Wo
 Sì, è possibile concatenare più operazioni di sostituzione o utilizzare espressioni regolari per abbinare e sostituire più modelli.
 
 ### Aspose.Words per .NET è gratuito?
- Aspose.Words per .NET è una libreria a pagamento, ma puoi ottenerne una[prova gratuita](https://releases.aspose.com/) per testarne le caratteristiche.
+ Aspose.Words per .NET è una libreria a pagamento, ma è possibile ottenerne una[prova gratuita](https://releases.aspose.com/) per testarne le caratteristiche.
 
 ### Posso sostituire il testo con contenuto formattato?
 Assolutamente! Aspose.Words ti consente di sostituire il testo con contenuti formattati, inclusi diversi font, colori e stili.

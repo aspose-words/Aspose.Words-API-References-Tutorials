@@ -37,13 +37,6 @@ url: /ar/java/word-processing/handling-different-document-formats/
 Document doc = new Document("sample.docx");
 ```
 
-### تحميل مستند PDF
-
-```java
-// تحميل مستند PDF
-Document doc = new Document("sample.pdf");
-```
-
 ## تعديل المستندات وحفظها
 
 بمجرد تحميل مستند، يمكنك إجراء العديد من العمليات، بدءًا من استبدال النص البسيط وحتى تغييرات التنسيق المعقدة.
@@ -71,7 +64,7 @@ doc.save("modified.docx");
 Document doc = new Document("sample.docx");
 
 // حفظ بصيغة PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## التعامل مع الصور والجداول
@@ -81,7 +74,7 @@ doc.save("sample.pdf", SaveFormat.PDF);
 ### إضافة صورة إلى مستند
 
 ```java
-// تحميل مستند
+//تحميل مستند
 Document doc = new Document("document.docx");
 
 // إدراج صورة

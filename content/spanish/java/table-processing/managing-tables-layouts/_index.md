@@ -110,7 +110,7 @@ Sí, puedes fusionar celdas en una tabla usando Aspose.Words, como se muestra en
  ¡No te preocupes! Puedes dividir fácilmente celdas fusionadas previamente configurando su propiedad de fusión horizontal en`NONE`.
 
 ### ¿Cómo puedo agregar un salto de página antes de una tabla?
- Para insertar un salto de página antes de una tabla, modifique la fuente.`PageBreakBefore` propiedad como se demuestra.
+Para insertar un salto de página antes de una tabla, modifique la fuente.`PageBreakBefore` propiedad como se demuestra.
 
 ### ¿Aspose.Words es compatible con diferentes formatos de documentos?
 ¡Por supuesto! Aspose.Words para Java admite varios formatos de documentos, lo que lo convierte en una opción versátil para la gestión de documentos.

@@ -2,7 +2,7 @@
 title: Raszterizálja az átalakított elemeket
 linktitle: Raszterizálja az átalakított elemeket
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan lehet raszterizálni átalakított elemeket Word-dokumentumok PCL-formátumba konvertálásakor az Aspose.Words for .NET használatával. Lépésről lépésre útmutató mellékelve.
+description: Ismerje meg, hogyan raszterizálható az átalakított elemek Word-dokumentumok PCL formátumba konvertálásakor az Aspose.Words for .NET használatával. Lépésről lépésre útmutató mellékelve.
 type: docs
 weight: 10
 url: /hu/net/programming-with-pclsaveoptions/rasterize-transformed-elements/

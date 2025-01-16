@@ -16,7 +16,7 @@ Dalam dunia digital saat ini, manajemen dokumen merupakan aspek penting dari alu
 
 Sebelum kita mulai mengelola izin dokumen, mari kita mulai dengan menyiapkan Aspose.Words untuk Java. Ikuti langkah-langkah berikut untuk memulai:
 
-1.  Unduh Aspose.Words untuk Java: Kunjungi[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) untuk mengunduh versi terbaru Aspose.Words untuk Java.
+1.  Unduh Aspose.Words untuk Java: Kunjungi[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)untuk mengunduh versi terbaru Aspose.Words untuk Java.
 
 2. Instal Aspose.Words untuk Java: Setelah mengunduh pustaka, ikuti petunjuk instalasi untuk mengaturnya di lingkungan pengembangan Java Anda.
 
@@ -52,21 +52,12 @@ Berikut contoh potongan kode Java untuk mengatur izin dokumen:
 // Muat dokumen
 Document doc = new Document("sample.docx");
 
-// Definisikan kontrol akses
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Terapkan perlindungan dokumen
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Simpan dokumen
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Pertanyaan yang Sering Diajukan (FAQ)
+## Pertanyaan yang Sering Diajukan
 
-## Bagaimana cara menghapus proteksi dokumen?
+### Bagaimana cara menghapus proteksi dokumen?
 
 Untuk menghapus proteksi dokumen, cukup buka dokumen yang diproteksi, dan jika dilindungi kata sandi, berikan kata sandi yang benar. Kemudian, gunakan Aspose.Words untuk Java untuk menghapus proteksi sebagai berikut:
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Bisakah saya mengatur izin untuk pengguna tertentu?
+### Bisakah saya mengatur izin untuk pengguna tertentu?
 
 Ya, Aspose.Words untuk Java memungkinkan Anda untuk mengatur izin bagi pengguna atau grup tertentu. Anda dapat menentukan siapa saja yang dapat mengakses dan mengedit dokumen.
 
-## Apakah mungkin untuk mengenkripsi dokumen dengan beberapa kata sandi?
+### Apakah mungkin untuk mengenkripsi dokumen dengan beberapa kata sandi?
 
 Tidak, Aspose.Words untuk Java mendukung enkripsi kata sandi tunggal. Anda dapat mengatur kata sandi untuk melindungi dokumen.
 
-## Bagaimana cara memeriksa izin suatu dokumen?
+### Bagaimana cara memeriksa izin suatu dokumen?
 
 Anda dapat menggunakan Aspose.Words untuk Java untuk memeriksa izin dokumen dengan memeriksa pengaturan proteksi dan opsi kontrol aksesnya.
 
-## Bisakah saya mengotomatiskan manajemen izin dokumen?
+### Bisakah saya mengotomatiskan manajemen izin dokumen?
 
 Tentu saja! Anda dapat mengintegrasikan Aspose.Words untuk Java ke dalam aplikasi Anda untuk mengotomatiskan pengelolaan izin dokumen, menjadikannya bagian yang lancar dari alur kerja dokumen Anda.
 
-## Bagaimana jika saya lupa kata sandi dokumen?
+### Bagaimana jika saya lupa kata sandi dokumen?
 
 Jika Anda lupa kata sandi dokumen, tidak ada cara untuk memulihkannya. Pastikan untuk menyimpan catatan kata sandi Anda di tempat yang aman.
 

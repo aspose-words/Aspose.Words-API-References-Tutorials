@@ -182,25 +182,11 @@ In dit voorbeeld stellen we de uitlijning van de alinea in op
 Lijsten maken met opsommingstekens of nummering is een veelvoorkomende taak in documentopmaak. Aspose.Words voor Java maakt het eenvoudig. Zo maakt u een lijst met opsommingstekens:
 
 ```java
-// Een nieuw document maken
-Document doc = new Document();
-
-// Maak een lijst
-List list = new List(doc);
-
-// Lijstitems met opsommingstekens toevoegen
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// Voeg de lijst toe aan het document
-doc.getFirstSection().getBody().appendChild(list);
-
-// Sla het document op
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 In deze code maken we een opsommingslijst met drie items.
@@ -210,24 +196,21 @@ In deze code maken we een opsommingslijst met drie items.
 Hyperlinks zijn essentieel om interactiviteit toe te voegen aan uw documenten. Aspose.Words voor Java stelt u in staat om eenvoudig hyperlinks in te voegen. Hier is een voorbeeld:
 
 ```java
-// Een nieuw document maken
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Een alinea maken
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// Een hyperlink maken
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.voorbeeld.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// Voeg een hyperlink in en benadruk deze met aangepaste opmaak.
+// De hyperlink is een aanklikbaar stukje tekst dat ons naar de in de URL aangegeven locatie brengt.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", onwaar);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// Voeg de alinea toe aan het document
-doc.getFirstSection().getBody().appendChild(para);
-
-// Sla het document op
-doc.save("HyperlinkDocument.docx");
+// Als u in Microsoft Word met Ctrl + linkermuisknop op de link in de tekst klikt, worden we via een nieuw webbrowservenster naar de URL geleid.
+doc.save("InsertHyperlink.docx");
 ```
 
 Deze code voegt een hyperlink in naar "https://www.example.com" met de tekst "Bezoek Example.com".
@@ -237,23 +220,7 @@ Deze code voegt een hyperlink in naar "https://www.example.com" met de tekst "Be
 Documenten vereisen vaak visuele elementen zoals afbeeldingen en vormen. Met Aspose.Words voor Java kunt u afbeeldingen en vormen naadloos invoegen. Zo voegt u een afbeelding toe:
 
 ```java
-// Een nieuw document maken
-Document doc = new Document();
-
-// Een alinea maken
-Paragraph para = new Paragraph(doc);
-
-// Een afbeelding laden vanuit een bestand
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// Voeg de alinea toe aan het document
-doc.getFirstSection().getBody().appendChild(para);
-
-// Sla het document op
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 In deze code laden we een afbeelding uit een bestand en voegen deze toe aan het document.
@@ -287,27 +254,20 @@ In dit voorbeeld stellen we gelijke marges van 1 inch in aan alle zijden van de 
 Kop- en voetteksten zijn essentieel voor het toevoegen van consistente informatie aan elke pagina van uw document. Zo werkt u met kop- en voetteksten:
 
 ```java
-// Een nieuw document maken
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Toegang tot de kop- en voettekst van het eerste gedeelte
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// Inhoud toevoegen aan de header
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// Voeg inhoud toe aan de voettekst
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// Inhoud toevoegen aan de documenttekst
+// Voeg inhoud toe aan de documenttekst.
 // ...
 
-// Sla het document op
+// Sla het document op.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ In deze code voegen we inhoud toe aan zowel de kop- als de voettekst van het doc
 Tabellen zijn een krachtige manier om gegevens in uw documenten te organiseren en presenteren. Aspose.Words voor Java biedt uitgebreide ondersteuning voor het werken met tabellen. Hier is een voorbeeld van het maken van een tabel:
 
 ```java
-// Een nieuw document maken
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Maak een tabel met 3 rijen en 3 kolommen
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// Inhoud toevoegen aan de tabelcellen
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//Voeg de tabel toe aan het document
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// Sla het document op
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// Als u de opmaak wijzigt, wordt deze toegepast op de huidige cel.
+// en alle nieuwe cellen die we daarna met de builder aanmaken.
+// Dit heeft geen invloed op de cellen die we eerder hebben toegevoegd.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// Verhoog de rijhoogte zodat de verticale tekst erin past.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 In deze code maken we een eenvoudige tabel met drie rijen en drie kolommen.
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // Sla het document op als PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 Met dit codefragment wordt het document opgeslagen als een PDF-bestand.
@@ -393,7 +372,7 @@ Ja, u kunt een document eenvoudig converteren naar PDF met Aspose.Words voor Jav
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### Hoe formatteer ik tekst als
@@ -414,7 +393,7 @@ U kunt de Aspose-website of de Maven-repository raadplegen voor de nieuwste vers
 Ja, Aspose.Words voor Java is compatibel met Java 11 en latere versies.
 
 ### Hoe kan ik paginamarges instellen voor specifieke secties van mijn document?
- kunt paginamarges voor specifieke secties van uw document instellen met behulp van de`PageSetup` klasse. Hier is een voorbeeld:
+ U kunt paginamarges voor specifieke secties van uw document instellen met behulp van de`PageSetup` klasse. Hier is een voorbeeld:
 
 ```java
 Section section = doc.getSections().get(0); // Ontvang het eerste gedeelte

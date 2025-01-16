@@ -59,7 +59,7 @@ Aspose.Words는 DOCX, DOC, PDF, HTML, Markdown을 포함한 다양한 문서 형
 네, Aspose.Words는 문서 내에서 표, 이미지, 텍스트 서식 등을 조작할 수 있는 강력한 API를 제공합니다.
 
 ### Aspose.Words for .NET에 대한 자세한 문서는 어디에서 찾을 수 있나요?
-자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
+ 자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words for .NET에 대한 임시 라이선스를 어떻게 받을 수 있나요?
 임시면허를 취득할 수 있습니다[여기](https://purchase.aspose.com/temporary-license/).

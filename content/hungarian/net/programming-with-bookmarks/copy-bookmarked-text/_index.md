@@ -112,7 +112,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 Igen, ismételhet több könyvjelzőt is, és ugyanazt a módszert használhatja mindegyik másolásához.
 
 ### Mi történik, ha a könyvjelző nem található?
-A`Range.Bookmarks` ingatlan visszakerül`null`, ezért mindenképpen kezelje ezt az esetet a kivételek elkerülése érdekében.
+ A`Range.Bookmarks` ingatlan visszakerül`null`, ezért mindenképpen kezelje ezt az esetet a kivételek elkerülése érdekében.
 
 ### Megőrizhetem az eredeti könyvjelző formázását?
  Teljesen! Használata`ImportFormatMode.KeepSourceFormatting` biztosítja az eredeti formázás megőrzését.

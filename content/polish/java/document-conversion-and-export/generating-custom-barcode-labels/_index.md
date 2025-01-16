@@ -10,199 +10,172 @@ url: /pl/java/document-conversion-and-export/generating-custom-barcode-labels/
 
 ## Wprowadzenie do generowania niestandardowych etykiet z kodem kreskowym w Aspose.Words dla Java
 
-W tym kompleksowym przewodniku zagłębimy się w proces generowania niestandardowych etykiet z kodem kreskowym przy użyciu Aspose.Words for Java. Aspose.Words for Java to potężne API, które pozwala programistom programowo manipulować dokumentami Word. Jedną z jego niezwykłych cech jest możliwość pracy z etykietami z kodem kreskowym, co czyni go cennym narzędziem dla firm i organizacji, które wymagają niestandardowych rozwiązań z kodem kreskowym.
+Kody kreskowe są niezbędne w nowoczesnych aplikacjach, niezależnie od tego, czy zarządzasz zapasami, generujesz bilety czy tworzysz karty identyfikacyjne. Dzięki Aspose.Words for Java tworzenie niestandardowych etykiet z kodem kreskowym staje się dziecinnie proste. Ten samouczek krok po kroku przeprowadzi Cię przez generowanie niestandardowych etykiet z kodem kreskowym przy użyciu interfejsu IBarcodeGenerator. Gotowy do zanurzenia się? Zaczynajmy!
+
 
 ## Wymagania wstępne
 
-Zanim zagłębimy się w szczegóły dotyczące generowania niestandardowych etykiet z kodem kreskowym, upewnijmy się, że spełniliśmy następujące wymagania:
+Zanim zaczniemy kodować, upewnij się, że masz następujące rzeczy:
 
-1. Środowisko programistyczne Java: Upewnij się, że w systemie zainstalowana jest Java i zintegrowane środowisko programistyczne (IDE).
+- Java Development Kit (JDK): wersja 8 lub nowsza.
+-  Aspose.Words dla biblioteki Java:[Pobierz tutaj](https://releases.aspose.com/words/java/).
+-  Biblioteka Aspose.BarCode dla Java:[Pobierz tutaj](https://releases.aspose.com/).
+- Zintegrowane środowisko programistyczne (IDE): IntelliJ IDEA, Eclipse lub dowolne preferowane środowisko IDE.
+-  Licencja tymczasowa: Uzyskaj[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla nieograniczonego dostępu.
 
-2.  Aspose.Words dla Java: Pobierz i zainstaluj Aspose.Words dla Java z[Tutaj](https://releases.aspose.com/words/java/).
+## Importuj pakiety
 
-3. Podstawowa znajomość języka Java: Znajomość programowania w języku Java będzie pomocna, ponieważ będziemy pisać kod Java służący do tworzenia niestandardowych etykiet z kodami kreskowymi.
-
-## Tworzenie niestandardowych etykiet z kodem kreskowym
-
-Teraz zacznijmy tworzyć niestandardowe etykiety z kodem kreskowym za pomocą Aspose.Words for Java. Podzielimy proces na kroki i podamy fragmenty kodu Java dla każdego kroku.
-
-## Ustawianie wysokości kodu kreskowego
-
-Na początek musimy ustawić wysokość naszego kodu kreskowego w twipach (1/1440 cala). Następnie przekonwertujemy tę wartość na milimetry (mm). Oto kod, który to umożliwia:
+Użyjemy bibliotek Aspose.Words i Aspose.BarCode. Zaimportuj następujące pakiety do swojego projektu:
 
 ```java
-	// Wartość wejściowa jest podana w 1/1440 cala (twipach)
-	int heightInTwips = tryParseInt(heightInTwipsString);
-	if (heightInTwips == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect height - " + heightInTwipsString + ".");
-	// Przelicz na mm
-	return (float) (heightInTwips * 25.4 / 1440.0);
+import com.aspose.barcode.generation.*;
+import com.aspose.words.BarcodeParameters;
+import com.aspose.words.IBarcodeGenerator;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 ```
 
-## Konwersja koloru obrazu kodu kreskowego
+Dzięki temu importowi możemy wykorzystać funkcje generowania kodów kreskowych i zintegrować je z dokumentami Word.
 
-Następnie przekonwertujemy kolor obrazu kodu kreskowego z Worda na Aspose.BarCode. Kolor wejściowy powinien być w formacie „0xRRGGBB” (szesnastkowy). Oto kod konwersji:
+Podzielmy to zadanie na łatwiejsze do wykonania kroki.
+
+## Krok 1: Utwórz klasę narzędziową dla operacji kodów kreskowych
+
+Aby uprościć operacje związane z kodami kreskowymi, utworzymy klasę narzędziową z metodami pomocniczymi do wykonywania typowych zadań, takich jak konwersja kolorów i zmiana rozmiaru.
+
+### Kod:
 
 ```java
-/// <podsumowanie>
-/// Konwertuje kolor obrazu kodu kreskowego z programu Word na Aspose.BarCode.
-/// </podsumowanie>
-/// <param name="inputColor"></param>
-/// <zwroty></zwroty>
-private static Color convertColor(String inputColor) throws Exception {
-	// Dane wejściowe powinny być od „0x000000” do „0xFFFFFF”
-	int color = tryParseHex(inputColor.replace("0x", ""));
-	if (color == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect color - " + inputColor + ".");
-	return new Color((color >> 16), ((color & 0xFF00) >> 8), (color & 0xFF));
+class CustomBarcodeGeneratorUtils {
+    public static double twipsToPixels(String heightInTwips, double defVal) {
+        try {
+            int lVal = Integer.parseInt(heightInTwips);
+            return (lVal / 1440.0) * 96.0; // Zakładając, że domyślne DPI wynosi 96
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
+
+    public static Color convertColor(String inputColor, Color defVal) {
+        if (inputColor == null || inputColor.isEmpty()) return defVal;
+        try {
+            int color = Integer.parseInt(inputColor, 16);
+            return new Color((color & 0xFF), ((color >> 8) & 0xFF), ((color >> 16) & 0xFF));
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
 }
 ```
 
-## Konwersja współczynnika skalowania kodu kreskowego
+### Wyjaśnienie:
 
-Teraz przekonwertujemy współczynnik skalowania kodu kreskowego z procentowego na wartość zmiennoprzecinkową. Ten współczynnik skalowania określa rozmiar kodu kreskowego. Oto kod konwersji:
+- `twipsToPixels` Metoda: Konwertuje twipy (używane w dokumentach Word) na piksele.
+- `convertColor` Metoda: Tłumaczy szesnastkowe kody kolorów na`Color` obiekty.
+
+## Krok 2: Implementacja generatora niestandardowych kodów kreskowych
+
+ Wdrożymy`IBarcodeGenerator` interfejs umożliwiający generowanie kodów kreskowych i integrowanie ich z Aspose.Words.
+
+### Kod:
 
 ```java
-/// <podsumowanie>
-/// Konwertuje współczynnik skalowania kodu kreskowego z procentowego na zmiennoprzecinkowy.
-/// </podsumowanie>
-/// <param name="współczynnik skalowania"></param>
-/// <zwroty></zwroty>
-private static float convertScalingFactor(String scalingFactor) throws Exception {
-	boolean isParsed = false;
-	int percent = tryParseInt(scalingFactor);
-	if (percent != Integer.MIN_VALUE && percent >= 10 && percent <= 10000)
-		isParsed = true;
-	if (!isParsed)
-		throw new Exception("Error! Incorrect scaling factor - " + scalingFactor + ".");
-	return percent / 100.0f;
+class CustomBarcodeGenerator implements IBarcodeGenerator {
+    public BufferedImage getBarcodeImage(BarcodeParameters parameters) {
+        try {
+            BarcodeGenerator gen = new BarcodeGenerator(
+                CustomBarcodeGeneratorUtils.getBarcodeEncodeType(parameters.getBarcodeType()),
+                parameters.getBarcodeValue()
+            );
+
+            gen.getParameters().getBarcode().setBarColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getForegroundColor(), Color.BLACK)
+            );
+            gen.getParameters().setBackColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getBackgroundColor(), Color.WHITE)
+            );
+
+            return gen.generateBarCodeImage();
+        } catch (Exception e) {
+            return new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB);
+        }
+    }
+
+    public BufferedImage getOldBarcodeImage(BarcodeParameters parameters) {
+        throw new UnsupportedOperationException();
+    }
 }
 ```
 
-## Implementacja metody GetBarCodeImage()
+### Wyjaśnienie:
 
- W tym kroku wdrożymy`getBarcodeImage`metoda, która generuje obraz kodu kreskowego na podstawie podanych parametrów. Będziemy obsługiwać różne typy kodów kreskowych, ustawiać kolory, dostosowywać wymiary i wiele więcej. Oto kod dla tej metody:
+- `getBarcodeImage` Metoda:
+  -  Tworzy`BarcodeGenerator` przykład.
+  - Ustawia kolor kodu kreskowego, kolor tła i generuje obraz.
+
+## Krok 3: Wygeneruj kod kreskowy i dodaj go do dokumentu Word
+
+Teraz zintegrujemy nasz generator kodów kreskowych z dokumentem Word.
+
+### Kod:
 
 ```java
-/// <podsumowanie>
-/// Implementacja metody GetBarCodeImage() dla interfejsu IBarCodeGenerator.
-/// </podsumowanie>
-/// <nazwa parametru="parametry"></parametr>
-/// <zwroty></zwroty>
-public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Exception {
-	// Sprawdź, czy podano typ i wartość kodu kreskowego
-	if (parameters.getBarcodeType() == null || parameters.getBarcodeValue() == null)
-		return null;
-	
-	// Utwórz generator kodów kreskowych na podstawie typu kodu kreskowego
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR);
-	String type = parameters.getBarcodeType().toUpperCase();
-	switch (type)
-	{
-		case "QR":
-			generator = new BarcodeGenerator(EncodeTypes.QR);
-			break;
-		// Tutaj obsługuj inne typy kodów kreskowych
-	}
-	
-	// Ustaw tekst kodu kreskowego
-	generator.setCodeText(parameters.getBarcodeValue());
-	
-	// Ustaw kolory kodu kreskowego
-	if (parameters.getForegroundColor() != null)
-		generator.getParameters().getBarcode().setBarColor(convertColor(parameters.getForegroundColor()));
-	if (parameters.getBackgroundColor() != null)
-		generator.getParameters().setBackColor(convertColor(parameters.getBackgroundColor()));
-	
-	// Ustaw wysokość i wymiary symbolu
-	if (parameters.getSymbolHeight() != null)
-	{
-		generator.getParameters().getImageHeight().setPixels(convertSymbolHeight(parameters.getSymbolHeight()));
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	// Dostosuj lokalizację tekstu kodu
-	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
-	if (parameters.getDisplayText())
-		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
-	
-	// Dodatkowe dostosowania dla kodów QR
-	final float SCALE = 2.4f; // Współczynnik skalowania empirycznego do konwersji kodu kreskowego Word na Aspose.BarCode
-	float xdim = 1.0f;
-	if (generator.getBarcodeType().equals(EncodeTypes.QR))
-	{
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
-		generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageWidth().getInches() * SCALE);
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageWidth().getInches());
-		xdim = generator.getParameters().getImageHeight().getInches() / 25;
-		generator.getParameters().getBarcode().getXDimension().setInches(xdim);
-		generator.getParameters().getBarcode().getBarHeight().setInches(xdim);
-	}
-	
-	// Zastosuj współczynnik skalowania
-	if (parameters.getScalingFactor() != null)
-	{
-		float scalingFactor = convertScalingFactor(parameters.getScalingFactor());
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageHeight().getInches() * scalingFactor);
-		if (generator.getBarcodeType().equals(EncodeTypes.QR))
-		{
-			generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageHeight().getInches());
-			generator.getParameters().getBarcode().getXDimension().setInches(xdim * scalingFactor);
-			generator.getParameters().getBarcode().getBarHeight().setInches(xdim * scalingFactor);
-		}
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	// Wygeneruj i zwróć obraz kodu kreskowego
-	return generator.generateBarCodeImage();
+import com.aspose.words.*;
+
+public class GenerateCustomBarcodeLabels {
+    public static void main(String[] args) throws Exception {
+        // Załaduj lub utwórz dokument Word
+        Document doc = new Document();
+        DocumentBuilder builder = new DocumentBuilder(doc);
+
+        // Skonfiguruj generator niestandardowych kodów kreskowych
+        CustomBarcodeGenerator barcodeGenerator = new CustomBarcodeGenerator();
+        BarcodeParameters barcodeParameters = new BarcodeParameters();
+        barcodeParameters.setBarcodeType("QR");
+        barcodeParameters.setBarcodeValue("https://przykład.com");
+        barcodeParameters.setForegroundColor("000000");
+        barcodeParameters.setBackgroundColor("FFFFFF");
+
+        // Generuj obraz kodu kreskowego
+        BufferedImage barcodeImage = barcodeGenerator.getBarcodeImage(barcodeParameters);
+
+        // Wstaw obraz kodu kreskowego do dokumentu Word
+        builder.insertImage(barcodeImage, 200, 200);
+
+        // Zapisz dokument
+        doc.save("CustomBarcodeLabels.docx");
+
+        System.out.println("Barcode labels generated successfully!");
+    }
 }
 ```
 
-## Implementacja metody GetOldBarcodeImage()
+### Wyjaśnienie:
 
- W tym kroku wdrożymy`getOldBarcodeImage`metoda, która generuje obrazy kodów kreskowych dla staromodnych kodów kreskowych. Tutaj zajmiemy się konkretnym typem kodu kreskowego, takim jak POSTNET. Oto kod dla tej metody:
-
-```java
-/// <podsumowanie>
-/// Implementacja metody GetOldBarcodeImage() dla interfejsu IBarCodeGenerator.
-/// </podsumowanie>
-/// <nazwa parametru="parametry"></parametr>
-/// <zwroty></zwroty>
-public BufferedImage getOldBarcodeImage(BarcodeParameters parameters)
-{
-	if (parameters.getPostalAddress() == null)
-		return null;
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.POSTNET);
-	{
-		generator.setCodeText(parameters.getPostalAddress());
-	}
-	// Typ kodu twardego dla staromodnego kodu kreskowego
-	return generator.generateBarCodeImage();
-}
-```
+- Inicjalizacja dokumentu: Utwórz lub wczytaj dokument Word.
+- Parametry kodu kreskowego: Zdefiniuj typ, wartość i kolory kodu kreskowego.
+- Wstawianie obrazu: Dodaj wygenerowany obraz kodu kreskowego do dokumentu Word.
+- Zapisz dokument: Zapisz plik w wybranym formacie.
 
 ## Wniosek
 
-W tym artykule zbadaliśmy proces generowania niestandardowych etykiet z kodem kreskowym przy użyciu Aspose.Words for Java. Omówiliśmy podstawowe kroki, od ustawiania wysokości kodu kreskowego po implementację metod generowania kodu kreskowego. Aspose.Words for Java umożliwia programistom tworzenie dynamicznych i niestandardowych etykiet z kodem kreskowym, co czyni go cennym narzędziem dla różnych branż.
+Wykonując te kroki, możesz bezproblemowo generować i osadzać niestandardowe etykiety z kodem kreskowym w dokumentach Word za pomocą Aspose.Words for Java. To podejście jest elastyczne i można je dostosować do różnych aplikacji. Miłego kodowania!
 
-## Najczęściej zadawane pytania
 
-### Jak mogę zmienić rozmiar generowanego kodu kreskowego?
+## Często zadawane pytania
 
-Możesz dostosować rozmiar wygenerowanego kodu kreskowego, ustawiając wysokość symbolu kodu kreskowego i współczynnik skalowania w dostarczonych fragmentach kodu. Te parametry pozwalają kontrolować wymiary kodu kreskowego zgodnie z Twoimi wymaganiami.
+1. Czy mogę używać Aspose.Words dla Java bez licencji?
+ Tak, ale będzie miał pewne ograniczenia. Uzyskaj[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla pełnej funkcjonalności.
 
-### Czy mogę zmienić kolory kodu kreskowego?
+2. Jakie rodzaje kodów kreskowych mogę generować?
+Aspose.BarCode obsługuje QR, Code 128, EAN-13 i wiele innych typów. Sprawdź[dokumentacja](https://reference.aspose.com/words/java/) Aby zobaczyć pełną listę.
 
-Tak, możesz zmienić kolory kodu kreskowego, określając kolory pierwszego planu i tła w kodzie. Ta personalizacja pozwala dopasować wygląd kodu kreskowego do projektu dokumentu.
+3. Jak mogę zmienić rozmiar kodu kreskowego?
+ Dostosuj`XDimension` I`BarHeight` parametry w`BarcodeGenerator` Ustawienia.
 
-### Jakie typy kodów kreskowych są obsługiwane przez Aspose.Words dla Java?
+4. Czy mogę używać niestandardowych czcionek dla kodów kreskowych?
+ Tak, możesz dostosować czcionki tekstu kodu kreskowego za pomocą`CodeTextParameters` nieruchomość.
 
-Aspose.Words for Java obsługuje różne typy kodów kreskowych, w tym kody QR, CODE128, CODE39, EAN8, EAN13, UPCA, UPCE, ITF14 i inne. Możesz wybrać typ kodu kreskowego, który odpowiada potrzebom Twojej aplikacji.
+5. Gdzie mogę uzyskać pomoc dotyczącą Aspose.Words?
+ Odwiedź[forum wsparcia](https://forum.aspose.com/c/words/8/) po pomoc.
 
-### Jak zintegrować wygenerowany kod kreskowy z dokumentem Word?
-
-Aby zintegrować wygenerowany kod kreskowy z dokumentem Word, możesz użyć możliwości manipulacji dokumentami Aspose.Words for Java. Możesz wstawić obraz kodu kreskowego do dokumentu w żądanym miejscu.
-
-### Czy jest dostępny przykładowy kod umożliwiający dalszą personalizację?
-
- Tak, przykładowe fragmenty kodu i dodatkową dokumentację można znaleźć na stronie referencyjnej Aspose.Words for Java:[Aspose.Words dla Java API Reference](https://reference.aspose.com/words/java/).

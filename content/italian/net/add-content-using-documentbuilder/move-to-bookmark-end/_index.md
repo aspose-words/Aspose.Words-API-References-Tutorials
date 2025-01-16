@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Informazioni su MoveToBookmark
 
-IL`MoveToBookmark`il metodo consente di navigare verso un segnalibro specifico all'interno del documento. La firma del metodo è:
+ IL`MoveToBookmark`il metodo consente di navigare verso un segnalibro specifico all'interno del documento. La firma del metodo è:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

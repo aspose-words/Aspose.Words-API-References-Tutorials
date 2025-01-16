@@ -10,7 +10,7 @@ url: /fr/java/document-converting/converting-documents-images/
 
 ## Introduction
 
-Aspose.Words for Java est une bibliothèque robuste conçue pour gérer et manipuler des documents Word dans des applications Java. Parmi ses nombreuses fonctionnalités, la possibilité de convertir des documents Word en images se distingue comme étant particulièrement utile. Que vous cherchiez à générer des aperçus de documents, à afficher du contenu sur le Web ou simplement à convertir un document en un format partageable, Aspose.Words for Java est là pour vous. Dans ce guide, nous vous guiderons tout au long du processus de conversion d'un document Word en image, étape par étape.
+Aspose.Words for Java est une bibliothèque robuste conçue pour gérer et manipuler des documents Word dans des applications Java. Parmi ses nombreuses fonctionnalités, la possibilité de convertir des documents Word en images se révèle particulièrement utile. Que vous cherchiez à générer des aperçus de documents, à afficher du contenu sur le Web ou simplement à convertir un document en un format partageable, Aspose.Words for Java est là pour vous. Dans ce guide, nous vous guiderons tout au long du processus de conversion d'un document Word en image, étape par étape.
 
 ## Prérequis
 
@@ -60,7 +60,7 @@ try {
 ```
 
 Explication:
-- Le`try-catch` Le bloc garantit que toutes les erreurs rencontrées lors du chargement du document sont détectées et gérées de manière appropriée.
+-  Le`try-catch`Le bloc garantit que toutes les erreurs rencontrées lors du chargement du document sont détectées et gérées de manière appropriée.
 
 ## Étape 2 : Initialiser ImageSaveOptions
 
@@ -71,7 +71,7 @@ Une fois le document chargé, l’étape suivante consiste à configurer les opt
 `ImageSaveOptions` est une classe qui vous permet de spécifier comment le document doit être enregistré en tant qu'image.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 Explication:

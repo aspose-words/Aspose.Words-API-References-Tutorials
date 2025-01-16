@@ -14,7 +14,7 @@ Estilos e temas são instrumentais para manter a consistência e a estética em 
 
 ## Configurando o ambiente
 
- Antes de mergulhar no estilo, vamos configurar nosso ambiente de desenvolvimento. Certifique-se de ter o Aspose.Words para Python instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/).
+Antes de mergulhar no estilo, vamos configurar nosso ambiente de desenvolvimento. Certifique-se de ter o Aspose.Words para Python instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/).
 
 ## Carregando e salvando documentos
 
@@ -51,30 +51,8 @@ Os estilos também influenciam a formatação de parágrafos. Ajuste alinhamento
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## Personalizando estilos de título
-
-Os títulos dão estrutura aos documentos. Personalize os estilos de título para melhor hierarquia e legibilidade.
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## Usando temas para uma aparência unificada
-
-Os temas oferecem uma aparência consistente. Aplique um tema ao seu documento para um toque profissional.
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## Modificando cores e fontes do tema
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 Adapte os temas às suas necessidades ajustando as cores e fontes do tema.
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## Criando seus próprios estilos
-
-Crie estilos personalizados para elementos de documentos exclusivos, garantindo que a identidade da sua marca brilhe.
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## Gerenciando Estilo Baseado em Partes do Documento
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 Aplique estilos diferentes aos cabeçalhos, rodapés e corpo do conteúdo para uma aparência refinada.
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## Manipulando estilos em todo o documento
-
-Aplique um estilo ao documento inteiro com facilidade.
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## Limpando formatação e estilos
-
-Remova facilmente estilos e formatações para começar do zero.
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## Exemplos práticos e casos de uso
-
-Vamos explorar cenários práticos onde estilos e temas podem transformar documentos.
-
-1. Criando relatórios de marca
-2. Criando currículos impressionantes
-3. Formatação de artigos acadêmicos
-
-## Dicas para um estilo eficiente
-
-- Mantenha os estilos consistentes
-- Use temas para transformações rápidas
-- Experimente com diferentes fontes e cores
 
 ## Conclusão
 
@@ -167,4 +109,4 @@ Os temas proporcionam uma aparência coesa ao agrupar estilos, resultando em uma
 
 ### É possível limpar a formatação do meu documento?
 
- Sim, você pode remover facilmente formatação e estilos usando o`clear_formatting()` método fornecido pelo Aspose.Words para Python.
+Sim, você pode remover facilmente formatação e estilos usando o`clear_formatting()` método fornecido pelo Aspose.Words para Python.

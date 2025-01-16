@@ -30,7 +30,7 @@ pip install aspose-words
 
 ## Word dokumentum betöltése
 
-Word-dokumentumokkal való munka megkezdéséhez be kell töltenie azt a Python-szkriptbe. A következőképpen teheti meg:
+A Word-dokumentumokkal való munka megkezdéséhez be kell töltenie azt a Python-szkriptbe. A következőképpen teheti meg:
 
 ```python
 import aspose.words as aw
@@ -49,19 +49,6 @@ replacement = ""
 for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if text_to_remove in paragraph.get_text():
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
-```
-
-## Szöveg cseréje
-
-Néha előfordulhat, hogy bizonyos szövegeket új tartalommal kell helyettesíteni. Íme egy példa, hogyan kell csinálni:
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
 ```
 
 ## Képek eltávolítása
@@ -86,28 +73,12 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 
 ## Szakaszok törlése
 
-A teljes szakaszok eltávolítása a dokumentumból a következőképpen történhet:
+teljes szakaszok eltávolítása a dokumentumból a következőképpen történhet:
 
 ```python
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## Keresse meg és cserélje le Regexre
-
-A reguláris kifejezések hatékony módot kínálnak a tartalom megtalálására és cseréjére:
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## Konkrét tartalom kinyerése

@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-The`Document` Aspose.Words'den gelen sınıf, Word dosyalarını belleğe yüklemenize olanak tanır. Dosya adlarının dizininizdeki gerçek belgelerle eşleştiğinden emin olun, aksi takdirde dosya bulunamadı hatalarıyla karşılaşırsınız!
+ The`Document` Aspose.Words'den gelen sınıf, Word dosyalarını belleğe yüklemenize olanak tanır. Dosya adlarının dizininizdeki gerçek belgelerle eşleştiğinden emin olun, aksi takdirde dosya bulunamadı hatalarıyla karşılaşırsınız!
 
 ## Adım 3: API Anahtarını Alma
 

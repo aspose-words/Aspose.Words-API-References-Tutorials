@@ -13,7 +13,7 @@ Ordautomation är en spelomvandlare inom dokumenthantering och orddokumentbehand
 
 ## Bemästra Python Word Automation
 
-I dessa handledningar kommer utvecklare att utforska hur man kan utnyttja kraften i Aspose.Words för Python för att automatisera bearbetning av orddokument. Lär dig att skapa, redigera och anpassa Word-dokument med lätthet. Handledningarna täcker viktiga ämnen, inklusive infogning av text, bilder, tabeller och tillämpning av formatering, vilket gör det möjligt för utvecklare att automatisera komplexa dokumenthanteringsuppgifter.
+dessa handledningar kommer utvecklare att utforska hur man kan utnyttja kraften i Aspose.Words för Python för att automatisera bearbetning av orddokument. Lär dig att skapa, redigera och anpassa Word-dokument med lätthet. Handledningarna täcker viktiga ämnen, inklusive infogning av text, bilder, tabeller och tillämpning av formatering, vilket gör det möjligt för utvecklare att automatisera komplexa dokumenthanteringsuppgifter.
 
 ## Öka effektiviteten i dokumenthanteringen
 

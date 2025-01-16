@@ -27,7 +27,7 @@ Začněme vytvořením dokumentu Word, který později převedeme do formátu Ma
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Vložte tabulku se dvěma buňkami
+// Vložte tabulku se dvěma buňkami
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// Nastavit zarovnání obsahu tabulky na automatické (určeno podle prvního odstavce)
+//Nastavit zarovnání obsahu tabulky na automatické (určeno podle prvního odstavce)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## Krok 3: Manipulace s obrázky
 
-Chcete-li do dokumentu Markdown zahrnout obrázky, musíte určit složku, kde jsou obrázky umístěny. Aspose.Words for Java umožňuje nastavit složku obrázků v`MarkdownSaveOptions`.
+ Chcete-li do dokumentu Markdown zahrnout obrázky, musíte určit složku, kde jsou obrázky umístěny. Aspose.Words for Java umožňuje nastavit složku obrázků v`MarkdownSaveOptions`.
 
 Zde je návod, jak nastavit složku obrázků a uložit dokument s obrázky:
 

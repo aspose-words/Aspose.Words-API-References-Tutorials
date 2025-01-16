@@ -150,7 +150,7 @@ Les options de nettoyage dans Aspose.Words pour Java sont des paramètres qui vo
 
 ###  Quel est le but de la`REMOVE_UNUSED_REGIONS` cleanup option?
 
-Le`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` L'option permet de supprimer les zones d'un document qui ne contiennent pas de données correspondantes pendant le processus de publipostage. Elle permet de garder votre document bien rangé en supprimant les espaces réservés inutilisés.
+ Le`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` L'option permet de supprimer les zones d'un document qui ne contiennent pas de données correspondantes pendant le processus de publipostage. Elle permet de garder votre document bien rangé en supprimant les espaces réservés inutilisés.
 
 ### Puis-je supprimer des lignes de tableau vides d'un document à l'aide d'Aspose.Words pour Java ?
 
@@ -166,7 +166,7 @@ Le`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` L'option permet de supprimer l
 
 ###  Quelle est la différence entre`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-Le`REMOVE_EMPTY_FIELDS` L'option supprime les champs de fusion qui ne contiennent pas de données ou qui sont vides pendant le processus de publipostage. D'autre part, l'option`REMOVE_UNUSED_FIELDS`L'option supprime les champs de fusion qui ne sont pas renseignés avec des données lors de la fusion. Le choix entre ces deux options dépend de si vous souhaitez supprimer les champs sans contenu ou ceux qui ne sont pas utilisés dans l'opération de fusion spécifique.
+ Le`REMOVE_EMPTY_FIELDS` L'option supprime les champs de fusion qui ne contiennent pas de données ou qui sont vides pendant le processus de publipostage. D'autre part, l'option`REMOVE_UNUSED_FIELDS`L'option supprime les champs de fusion qui ne sont pas renseignés avec des données lors de la fusion. Le choix entre ces deux options dépend de si vous souhaitez supprimer les champs sans contenu ou ceux qui ne sont pas utilisés dans l'opération de fusion spécifique.
 
 ### Comment puis-je activer la suppression des paragraphes avec des signes de ponctuation ?
 

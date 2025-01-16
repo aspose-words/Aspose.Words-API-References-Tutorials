@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Steg 6: Skapa en tabell och lägg till rader
 
-Skapa en ny`Table` objekt och ange antalet rader och kolumner.
+ Skapa en ny`Table` objekt och ange antalet rader och kolumner.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Steg 8: Spara dokumentet
 
- Spara Word-dokumentet på önskad plats med hjälp av`save()` metod.
+Spara Word-dokumentet på önskad plats med hjälp av`save()` metod.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Steg 9: Fyll i koden
-
-Här är den fullständiga koden för att lägga till en tabell i Word med Aspose.Words för Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Steg 5: Skapa ett nytt Word-dokument
-        Document doc = new Document();
-
-        // Steg 6: Skapa en tabell och lägg till rader
-        Table table = new Table(doc);
-        int rowCount = 5; // Antal rader i tabellen
-        int columnCount = 3; // Antal kolumner i tabellen
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Steg 7: Lägg till tabellen i dokumentet
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Steg 8: Spara dokumentet
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Slutsats

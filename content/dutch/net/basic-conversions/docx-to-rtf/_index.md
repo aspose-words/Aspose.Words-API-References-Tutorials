@@ -32,7 +32,7 @@ using Aspose.Words;
 using System.IO;
 ```
 
-De`Aspose.Words` naamruimte bevat de kernklassen voor het verwerken van Word-documenten, terwijl`System.IO` Biedt functionaliteit voor bestandsbewerkingen.
+ De`Aspose.Words` naamruimte bevat de kernklassen voor het verwerken van Word-documenten, terwijl`System.IO` Biedt functionaliteit voor bestandsbewerkingen.
 
 Laten we het proces van het converteren van een DOCX-bestand naar RTF-formaat opsplitsen in duidelijke, beheersbare stappen. Volg deze instructies om de conversie soepel te laten verlopen.
 

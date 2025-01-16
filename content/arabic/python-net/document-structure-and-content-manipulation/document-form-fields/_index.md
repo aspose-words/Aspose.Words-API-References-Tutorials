@@ -17,16 +17,16 @@ url: /ar/python-net/document-structure-and-content-manipulation/document-form-fi
 
 قبل أن نتعمق في إنشاء حقول النماذج وإتقانها، دعنا نعد بيئتنا ونتعرف على Aspose.Words for Python. اتبع الخطوات التالية للبدء:
 
-1. **Install Aspose.Words:** ابدأ بتثبيت مكتبة Aspose.Words لـ Python باستخدام الأمر pip التالي:
+1. تثبيت Aspose.Words: ابدأ بتثبيت مكتبة Aspose.Words لـ Python باستخدام أمر pip التالي:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** قم باستيراد المكتبة في البرنامج النصي Python الخاص بك لبدء استخدام وظائفها.
+2. استيراد المكتبة: قم باستيراد المكتبة في البرنامج النصي Python الخاص بك لبدء استخدام وظائفها.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 بعد إعداد كل شيء، دعنا ننتقل إلى المفاهيم الأساسية المتعلقة بإنشاء حقول النماذج وإدارتها.
@@ -41,7 +41,7 @@ url: /ar/python-net/document-structure-and-content-manipulation/document-form-fi
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### مربعات الاختيار وأزرار الاختيار
@@ -50,12 +50,12 @@ text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeTyp
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### القوائم المنسدلة
@@ -64,7 +64,7 @@ radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OL
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### اختيار التاريخ
@@ -73,7 +73,7 @@ drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## ضبط خصائص حقول النموذج
@@ -122,7 +122,7 @@ date_picker.text = "2023-08-31"
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 بمجرد إنشاء الحقل، يمكنك تعيين خصائصه، مثل الاسم والقيمة الافتراضية والنص المؤقت. دعنا نرى كيفية القيام بذلك:
@@ -150,14 +150,14 @@ text_input_field.placeholder_text = "Enter your full name"
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 بالنسبة لأزرار الاختيار، يمكنك إنشاؤها باستخدام نوع الشكل OLE_OBJECT:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 بعد إنشاء هذه الحقول، يمكنك تخصيص خصائصها، مثل الاسم والاختيار الافتراضي ونص التسمية:
@@ -183,7 +183,7 @@ radio_button.text = "Male"
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 بعد إنشاء القائمة المنسدلة، يمكنك تحديد قائمة الخيارات المتاحة للمستخدمين:
@@ -211,7 +211,7 @@ drop_down.text = "USA"
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 بعد إنشاء محدد التاريخ، يمكنك تعيين خصائصه، مثل الاسم والتاريخ الافتراضي:
@@ -228,11 +228,7 @@ date_picker.text = "2023-08-31"
 
 ## خاتمة
 
-إن إتقان حقول النماذج والتقاط البيانات في مستندات Word مهارة قيمة تمكنك من إنشاء مستندات تفاعلية وفعّالة لجمع البيانات. يوفر Aspose.Words for Python مجموعة شاملة من الأدوات لإنشاء البيانات وتخصيصها واستخراجها من حقول النماذج. من حقول إدخال النص البسيطة إلى الحسابات المعقدة والتنسيق الشرطي، فإن الاحتمالات هائلة.
-
 في هذا الدليل، استكشفنا أساسيات حقول النماذج وأنواع حقول النماذج وتعيين خصائصها وتخصيص سلوكها. كما تطرقنا إلى أفضل الممارسات لتصميم النماذج وعرضنا رؤى حول تحسين نماذج المستندات لمحركات البحث.
-
-من خلال الاستفادة من قوة Aspose.Words for Python، يمكنك إنشاء مستندات لا تلتقط البيانات بشكل فعال فحسب، بل تعمل أيضًا على تعزيز مشاركة المستخدم وتبسيط سير عمل معالجة البيانات. الآن، أنت مستعد لبدء رحلتك لتصبح خبيرًا في حقول النماذج والتقاط البيانات في مستندات Word.
 
 ## الأسئلة الشائعة
 

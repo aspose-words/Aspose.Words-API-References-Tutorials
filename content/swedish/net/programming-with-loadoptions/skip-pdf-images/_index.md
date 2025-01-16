@@ -91,7 +91,7 @@ Nej, att hoppa över bilder påverkar bara bilderna. Texten förblir intakt och 
 
 ### Kan jag använda den här funktionen med andra dokumentformat?
 
-De`SkipPdfImages` alternativet är specifikt för PDF-dokument. För andra format finns olika alternativ och metoder tillgängliga.
+ De`SkipPdfImages` alternativet är specifikt för PDF-dokument. För andra format finns olika alternativ och metoder tillgängliga.
 
 ### Hur kan jag verifiera att bilder hoppades över?
 
@@ -99,4 +99,4 @@ Du kan öppna utdatadokumentet i en ordbehandlare för att visuellt bekräfta fr
 
 ### Vad händer om PDF-filen inte har några bilder?
 
- Dokumentet laddas som vanligt, utan inverkan på processen. De`SkipPdfImages` alternativet har helt enkelt ingen effekt i det här fallet.
+ Dokumentet laddas som vanligt, utan inverkan på processen. De`SkipPdfImages` alternativet har helt enkelt ingen effekt i detta fall.

@@ -9,7 +9,7 @@ url: /pl/net/programming-with-tables/nested-table/
 ---
 ## Wstęp
 
-Czy kiedykolwiek potrzebowałeś programowo utworzyć zagnieżdżoną tabelę w dokumencie Word? Niezależnie od tego, czy generujesz raporty, faktury czy jakikolwiek dokument, który wymaga szczegółowej struktury tabelarycznej, Aspose.Words dla .NET może być Twoim najlepszym przyjacielem. W tym samouczku zagłębimy się w proces tworzenia zagnieżdżonych tabel w dokumentach Word przy użyciu Aspose.Words dla .NET. Omówimy wszystko, od wymagań wstępnych po ostateczną implementację kodu. Więc zaczynajmy!
+Czy kiedykolwiek potrzebowałeś programowo utworzyć zagnieżdżoną tabelę w dokumencie Word? Niezależnie od tego, czy generujesz raporty, faktury czy jakikolwiek dokument wymagający szczegółowej struktury tabelarycznej, Aspose.Words dla .NET może być Twoim najlepszym przyjacielem. W tym samouczku zagłębimy się w proces tworzenia zagnieżdżonych tabel w dokumentach Word przy użyciu Aspose.Words dla .NET. Omówimy wszystko, od wymagań wstępnych po ostateczną implementację kodu. Więc zaczynajmy!
 
 ## Wymagania wstępne
 
@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 
 ## Wniosek
 
-I masz! Udało Ci się utworzyć zagnieżdżoną tabelę w dokumencie Worda przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że manipulowanie dokumentami Worda jest niezwykle łatwe programowo. Niezależnie od tego, czy generujesz złożone raporty, czy proste tabele, Aspose.Words dla .NET ma dla Ciebie rozwiązanie.
+I masz! Udało Ci się utworzyć zagnieżdżoną tabelę w dokumencie Word przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że manipulowanie dokumentami Word jest niezwykle łatwe programowo. Niezależnie od tego, czy generujesz złożone raporty, czy proste tabele, Aspose.Words dla .NET ma dla Ciebie rozwiązanie.
 
 ## Najczęściej zadawane pytania
 

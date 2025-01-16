@@ -16,10 +16,10 @@ url: /th/python-net/document-structure-and-content-manipulation/document-revisio
 
 ## การตั้งค่า Aspose.Words สำหรับ Python
 
- ก่อนที่เราจะเริ่ม ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Aspose.Words สำหรับ Python แล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/python/)เมื่อติดตั้งแล้ว คุณสามารถนำเข้าโมดูลที่จำเป็นลงในสคริปต์ Python เพื่อเริ่มต้นใช้งาน
+ก่อนที่เราจะเริ่ม ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Aspose.Words สำหรับ Python แล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/python/)เมื่อติดตั้งแล้ว คุณสามารถนำเข้าโมดูลที่จำเป็นลงในสคริปต์ Python เพื่อเริ่มต้นใช้งาน
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## การโหลดและการแสดงเอกสาร
@@ -27,7 +27,7 @@ import asposewords
 หากต้องการทำงานกับเอกสาร คุณต้องโหลดเอกสารนั้นลงในแอปพลิเคชัน Python ก่อน ใช้โค้ดสั้นๆ ต่อไปนี้เพื่อโหลดเอกสารและแสดงเนื้อหา:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 เมื่อมีการเปลี่ยนแปลงใดๆ เกิดขึ้นกับเอกสาร Aspose.Words จะสามารถติดตามการเปลี่ยนแปลงดังกล่าวได้โดยอัตโนมัติ ตัวอย่างเช่น หากเราต้องการแทนที่คำใดคำหนึ่ง เราก็สามารถทำได้โดยที่ยังติดตามการเปลี่ยนแปลงนั้นได้:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words ช่วยให้คุณสามารถเปรียบเทียบเอกสารสองฉบับเพื่อแสดงความแตกต่างระหว่างเอกสารเหล่านั้น:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 ผู้ร่วมมือสามารถเพิ่มความคิดเห็นและคำอธิบายประกอบลงในเอกสารได้ คุณสามารถจัดการองค์ประกอบเหล่านี้โดยใช้โปรแกรมได้:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 คุณสามารถปรับแต่งวิธีการแก้ไขที่ปรากฏในเอกสารได้ เช่น เปลี่ยนสีของข้อความที่แทรกและลบ:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## การบันทึกและแบ่งปันเอกสาร
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 แบ่งปันเอกสารขั้นสุดท้ายกับผู้ร่วมงานเพื่อรับคำติชมเพิ่มเติม
-
-## เคล็ดลับเพื่อการทำงานร่วมกันอย่างมีประสิทธิผล
-
-1. ใส่ป้ายกำกับการแก้ไขอย่างชัดเจนด้วยความคิดเห็นที่มีความหมาย
-2. แจ้งแนวทางการแก้ไขให้ผู้ร่วมงานทุกคนทราบ
-3. ตรวจสอบและยอมรับ/ปฏิเสธการแก้ไขเป็นประจำ
-4. ใช้คุณลักษณะการเปรียบเทียบของ Aspose.Words เพื่อวิเคราะห์เอกสารอย่างครอบคลุม
 
 ## บทสรุป
 

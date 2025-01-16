@@ -44,10 +44,7 @@ Att acceptera ändringar är ett viktigt steg för att slutföra ett dokument. A
 
 ```java
 // Acceptera alla ändringar
-doc.acceptAllRevisions();
-
-// Acceptera en specifik revision efter index
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Avvisa ändringar
@@ -56,10 +53,7 @@ I vissa fall kan du behöva avvisa vissa ändringar. Aspose.Words för Java ger 
 
 ```java
 // Avvisa alla ändringar
-doc.rejectAllRevisions();
-
-// Avvisa en specifik revision efter index
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Sparar dokumentet

@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-그만큼`Aspose.Words` 네임스페이스를 사용하면 Word 문서를 조작하는 데 필요한 모든 클래스와 메서드에 액세스할 수 있습니다.`System` 콘솔 출력과 같은 기본 기능에 사용됩니다.
+ 그만큼`Aspose.Words` 네임스페이스를 사용하면 Word 문서를 조작하는 데 필요한 모든 클래스와 메서드에 액세스할 수 있습니다.`System` 콘솔 출력과 같은 기본 기능에 사용됩니다.
 
 메일 병합 필드 이름을 추출하는 과정을 명확한 단계별 가이드로 나누어 보겠습니다.
 
@@ -73,7 +73,7 @@ Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-그만큼`GetFieldNames()`메서드는 문자열 배열을 반환하는데, 각각은 문서에서 찾은 메일 병합 필드 이름을 나타냅니다. 이는 Word 문서에서 볼 수 있는 자리 표시자입니다.
+ 그만큼`GetFieldNames()`메서드는 문자열 배열을 반환하는데, 각각은 문서에서 찾은 메일 병합 필드 이름을 나타냅니다. 이는 Word 문서에서 볼 수 있는 자리 표시자입니다.
 
 ## 4단계: 병합 필드 수 표시
 

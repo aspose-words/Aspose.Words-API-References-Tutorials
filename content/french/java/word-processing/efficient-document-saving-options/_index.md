@@ -54,7 +54,7 @@ Parfois, vous devrez peut-être enregistrer chaque page de votre document sous f
 
 ```java
 // Code Java pour enregistrer un document sous forme d'images
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Définir la résolution (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

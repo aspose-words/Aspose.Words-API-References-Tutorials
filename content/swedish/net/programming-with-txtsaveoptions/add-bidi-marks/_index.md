@@ -15,7 +15,7 @@ I dokumentbehandlingens värld kan dubbelriktad (Bidi) text ofta vara lite knepi
 
 Innan vi dyker in i koden, se till att du har följande:
 
-1.  Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Du kan ladda ner den från[Aspose Nedladdningssida](https://releases.aspose.com/words/net/).
+1. Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Du kan ladda ner den från[Aspose Nedladdningssida](https://releases.aspose.com/words/net/).
 2. .NET Framework eller .NET Core: Se till att du har en kompatibel .NET-miljö inställd för att köra exemplen.
 3. Grundläggande kunskaper i C#: Bekantskap med programmeringsspråket C# och grundläggande funktioner i .NET.
 

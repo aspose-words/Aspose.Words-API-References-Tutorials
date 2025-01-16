@@ -9,7 +9,7 @@ url: /hu/python-net/word-automation/
 ---
 ## Word-automatizálási oktatóanyagok az Aspose.Words for Python használatával
 
-Word-automatizálás a dokumentumkezelés és a Word-dokumentum-feldolgozás játékmódja. Az Aspose.Words for Python átfogó oktatóanyagokat kínál a szóautomatizálásról, lehetővé téve a fejlesztők számára, hogy programozottan egyszerűsítsék a dokumentumok létrehozását, módosítását és formázását.
+A Word-automatizálás a dokumentumkezelés és a Word-dokumentum-feldolgozás játékmódja. Az Aspose.Words for Python átfogó oktatóanyagokat kínál a szóautomatizálásról, lehetővé téve a fejlesztők számára, hogy programozottan egyszerűsítsék a dokumentumok létrehozását, módosítását és formázását.
 
 ## A Python Word automatizálás elsajátítása
 

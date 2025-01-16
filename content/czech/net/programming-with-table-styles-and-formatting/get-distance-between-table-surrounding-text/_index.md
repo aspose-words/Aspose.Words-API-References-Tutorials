@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Krok 3: Načtení hodnot vzdálenosti
+## Krok 3: Načtěte hodnoty vzdálenosti
 
 Nyní, když máte tabulku, je čas získat hodnoty vzdálenosti. Tyto hodnoty představují prostor mezi tabulkou a okolním textem z každé strany: nahoře, dole, vlevo a vpravo.
 

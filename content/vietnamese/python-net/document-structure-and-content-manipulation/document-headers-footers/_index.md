@@ -23,7 +23,7 @@ pip install aspose-words
 2. Nhập mô-đun: Nhập mô-đun cần thiết vào tập lệnh Python của bạn.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Thêm một Header và Footer đơn giản
@@ -33,30 +33,18 @@ import aspose.words
 1. Tạo tài liệu: Tạo tài liệu Word mới bằng Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Thêm Header và Footer: Sử dụng`sections` thuộc tính của tài liệu để truy cập các phần. Sau đó, sử dụng`headers_footers` Thuộc tính để thêm tiêu đề và chân trang.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Thêm nội dung: Thêm nội dung vào đầu trang và chân trang.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Lưu tài liệu: Lưu tài liệu có phần đầu trang và phần chân trang.
+3. Lưu tài liệu: Lưu tài liệu có phần đầu trang và phần chân trang.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Thêm bảng: Thêm bảng để có thông tin dạng bảng.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Trường động: Sử dụng trường động để chèn dữ liệu tự động.
+2. Trường động: Sử dụng trường động để chèn dữ liệu tự động.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. Tùy chỉnh theo nhu cầu: Tùy chỉnh từng đầu trang và chân trang theo yêu cầu của bạn.
 
 ## Xóa Tiêu đề và Chân trang
 
@@ -150,4 +128,4 @@ Có, bạn có thể xóa nội dung của phần đầu trang và chân trang �
 
 ### Tôi có thể tìm hiểu thêm về Aspose.Words cho Python ở đâu?
 
-Để biết thêm tài liệu và ví dụ chi tiết, hãy truy cập[Tài liệu tham khảo API Aspose.Words cho Python](https://reference.aspose.com/words/python-net/).
+ Để biết thêm tài liệu và ví dụ chi tiết, hãy truy cập[Tài liệu tham khảo API Aspose.Words cho Python](https://reference.aspose.com/words/python-net/).

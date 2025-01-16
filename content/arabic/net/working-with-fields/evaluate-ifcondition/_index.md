@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-ال`EvaluateCondition` الطريقة تعيد`FieldIfComparisonResult` عدد يمثل نتيجة تقييم الشرط. يمكن أن يحتوي هذا العدد على قيم مثل`True`, `False` ، أو`Unknown`.
+ ال`EvaluateCondition` الطريقة تعيد`FieldIfComparisonResult` عدد يمثل نتيجة تقييم الشرط. يمكن أن يحتوي هذا العدد على قيم مثل`True`, `False` ، أو`Unknown`.
 
 ## الخطوة 4: عرض النتيجة
 
@@ -93,7 +93,7 @@ Console.WriteLine(actualResult);
  يمكنك إدراج حقل IF باستخدام`InsertField` طريقة`DocumentBuilder` الفئة، مع تحديد الشرط الذي تريد تقييمه.
 
 ###  ماذا يعني`EvaluateCondition` method do?
-ال`EvaluateCondition` تقوم الطريقة بتقييم الشرط المحدد في حقل IF وإرجاع النتيجة، مشيرة إلى ما إذا كان الشرط صحيحًا أم خطأ.
+ ال`EvaluateCondition` تقوم الطريقة بتقييم الشرط المحدد في حقل IF وإرجاع النتيجة، مشيرة إلى ما إذا كان الشرط صحيحًا أم خطأ.
 
 ### هل يمكنني استخدام الشروط المعقدة مع الحقل IF؟
 نعم، يمكنك استخدام الشروط المعقدة مع الحقل IF من خلال تحديد تعبيرات ومقارنات مختلفة حسب الحاجة.

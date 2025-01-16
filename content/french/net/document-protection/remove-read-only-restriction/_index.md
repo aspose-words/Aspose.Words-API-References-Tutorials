@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 La définition d’un mot de passe est facultative, mais elle peut ajouter une couche de sécurité supplémentaire à votre document avant de le modifier.
 
 ```csharp
-//Entrez un mot de passe contenant jusqu'à 15 caractères.
+// Entrez un mot de passe contenant jusqu'à 15 caractères.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Oui, la définition d'un mot de passe est facultative. Vous pouvez directement s
 
 ### Que se passe-t-il si le document dispose déjà d’un type de protection différent ?
 
-Le`doc.Protect(ProtectionType.NoProtection)` la méthode garantit que tous les types de protections sont supprimés du document.
+ Le`doc.Protect(ProtectionType.NoProtection)` la méthode garantit que tous les types de protections sont supprimés du document.
 
 ### Existe-t-il un moyen de savoir si un document est en lecture seule avant de supprimer la restriction ?
 

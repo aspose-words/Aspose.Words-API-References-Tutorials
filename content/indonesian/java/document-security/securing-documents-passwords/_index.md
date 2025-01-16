@@ -17,7 +17,7 @@ Di dunia digital saat ini, keamanan data adalah yang terpenting. Baik Anda menan
 
 ## Menyiapkan Aspose.Words untuk Java
 
- Sebelum kita menyelami pengamanan dokumen, mari pastikan bahwa Anda telah menyiapkan Aspose.Words untuk Java di lingkungan Java Anda. Jika Anda belum melakukannya, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
+Sebelum kita menyelami pengamanan dokumen, mari pastikan bahwa Anda telah menyiapkan Aspose.Words untuk Java di lingkungan Java Anda. Jika Anda belum melakukannya, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
 
 ## Mengamankan Dokumen: Langkah demi Langkah
 

@@ -9,7 +9,7 @@ url: /it/net/programming-with-bookmarks/create-bookmark/
 ---
 ## Introduzione
 
-Creare segnalibri in un documento Word può essere un punto di svolta, soprattutto quando si desidera navigare senza sforzo in documenti di grandi dimensioni. Oggi, illustreremo il processo di creazione di segnalibri utilizzando Aspose.Words per .NET. Questo tutorial ti guiderà passo dopo passo, assicurandoti di comprendere ogni parte del processo. Quindi, tuffiamoci subito!
+Creare segnalibri in un documento Word può essere un punto di svolta, soprattutto quando si desidera navigare senza sforzo in documenti di grandi dimensioni. Oggi, esamineremo il processo di creazione di segnalibri utilizzando Aspose.Words per .NET. Questo tutorial ti guiderà passo dopo passo, assicurandoti di comprendere ogni parte del processo. Quindi, tuffiamoci subito!
 
 ## Prerequisiti
 

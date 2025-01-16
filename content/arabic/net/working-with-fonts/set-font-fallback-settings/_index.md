@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## الخطوة 3: تكوين إعدادات الخط
 
-إنشاء جديد`FontSettings` قم بتحميل إعدادات الرجوع إلى الخط من ملف XML. يحتوي ملف XML هذا على قواعد الرجوع إلى الخط.
+ إنشاء جديد`FontSettings` قم بتحميل إعدادات الرجوع إلى الخط من ملف XML. يحتوي ملف XML هذا على قواعد الرجوع إلى الخط.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

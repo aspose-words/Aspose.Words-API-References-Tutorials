@@ -10,7 +10,7 @@ url: /nl/java/document-loading-and-saving/saving-documents-as-text-files/
 
 ## Inleiding tot het opslaan van documenten als tekstbestanden in Aspose.Words voor Java
 
-In deze tutorial gaan we onderzoeken hoe u documenten kunt opslaan als tekstbestanden met behulp van de Aspose.Words voor Java-bibliotheek. Aspose.Words is een krachtige Java API voor het werken met Word-documenten en biedt verschillende opties voor het opslaan van documenten in verschillende formaten, waaronder platte tekst. We zullen de stappen behandelen om dit te bereiken en onderweg voorbeeld-Java-code bieden.
+In deze tutorial gaan we onderzoeken hoe u documenten kunt opslaan als tekstbestanden met behulp van de Aspose.Words for Java-bibliotheek. Aspose.Words is een krachtige Java API voor het werken met Word-documenten en biedt verschillende opties voor het opslaan van documenten in verschillende formaten, waaronder platte tekst. We zullen de stappen behandelen om dit te bereiken en onderweg voorbeeld-Java-code bieden.
 
 ## Vereisten
 

@@ -19,11 +19,7 @@ Trước khi đi sâu vào việc nhúng các đối tượng OLE và điều kh
 - Đã cài đặt thư viện Aspose.Words cho Python
 - Hiểu biết cơ bản về cấu trúc tài liệu Word
 
-## Nhúng các đối tượng OLE
-
-Đối tượng OLE cho phép bạn tích hợp liền mạch các tệp bên ngoài, chẳng hạn như bảng tính hoặc bản trình bày, vào tài liệu Word của bạn. Thực hiện theo các bước sau để nhúng đối tượng OLE:
-
-### Bước 1: Thêm các thư viện cần thiết
+## Bước 1: Thêm các thư viện cần thiết
 
 Bắt đầu bằng cách nhập các mô-đun cần thiết từ thư viện Aspose.Words và bất kỳ phần phụ thuộc nào khác:
 
@@ -31,7 +27,7 @@ Bắt đầu bằng cách nhập các mô-đun cần thiết từ thư viện As
 import aspose.words as aw
 ```
 
-### Bước 2: Tạo một tài liệu Word
+## Bước 2: Tạo một tài liệu Word
 
 Tạo một tài liệu Word mới bằng Aspose.Words cho Python:
 
@@ -39,42 +35,16 @@ Tạo một tài liệu Word mới bằng Aspose.Words cho Python:
 doc = aw.Document()
 ```
 
-### Bước 3: Chèn một đối tượng OLE
+## Bước 3: Chèn một đối tượng OLE
 
 Bây giờ, bạn có thể chèn một đối tượng OLE vào tài liệu của mình. Ví dụ, hãy nhúng một bảng tính Excel:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## Nhúng điều khiển ActiveX
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", Đúng, Đúng, Không có)
 
-Điều khiển ActiveX mang lại tính tương tác cho tài liệu của bạn, cho phép người dùng tương tác với nội dung được nhúng. Thực hiện theo các bước sau để nhúng điều khiển ActiveX:
-
-### Bước 1: Thêm các thư viện cần thiết
-
-Giống như với các đối tượng OLE, hãy bắt đầu bằng cách nhập các mô-đun cần thiết:
-
-```python
-import aspose.words as aw
-```
-
-### Bước 2: Tạo một tài liệu Word
-
-Tạo một tài liệu Word mới:
-
-```python
-doc = aw.Document()
-```
-
-### Bước 3: Chèn một điều khiển ActiveX
-
-Giả sử bạn muốn nhúng trình phát đa phương tiện. Sau đây là cách bạn có thể thực hiện:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Tăng cường tính tương tác và chức năng

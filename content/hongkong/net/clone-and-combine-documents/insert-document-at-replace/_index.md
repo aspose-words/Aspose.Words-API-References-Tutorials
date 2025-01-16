@@ -17,7 +17,7 @@ url: /zh-hant/net/clone-and-combine-documents/insert-document-at-replace/
 
 -  Visual Studio：確保您的電腦上安裝了 Visual Studio。如果您還沒有，您可以從以下位置下載[這裡](https://visualstudio.microsoft.com/).
 - Aspose.Words for .NET：您需要 Aspose.Words 函式庫。您可以從[阿斯普斯網站](https://releases.aspose.com/words/net/).
-- 基本 C# 知識：對 C# 和 .NET 的基本了解將幫助您遵循本教學。
+- 基本 C# 知識：對 C# 和 .NET 的基本了解將幫助您學習本教學。
 
 好吧，拋開這些，讓我們開始寫一些程式碼吧！
 

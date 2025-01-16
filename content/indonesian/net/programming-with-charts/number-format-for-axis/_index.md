@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-Itu`InsertChart` metode menyisipkan bagan dengan jenis tertentu (Kolom dalam kasus ini) dan dimensi ke dalam dokumen.
+ Itu`InsertChart` metode menyisipkan bagan dengan jenis tertentu (Kolom dalam kasus ini) dan dimensi ke dalam dokumen.
 
 ## Langkah 3: Menyesuaikan Seri Bagan
 
@@ -86,7 +86,7 @@ Terakhir, mari kita format angka-angka pada sumbu Y agar lebih mudah dibaca. Ini
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-Itu`FormatCode` properti memungkinkan Anda untuk mengatur format khusus untuk angka pada sumbu. Dalam contoh ini,`#,##0`memastikan bahwa angka besar ditampilkan dengan koma untuk ribuan.
+ Itu`FormatCode` properti memungkinkan Anda untuk mengatur format khusus untuk angka pada sumbu. Dalam contoh ini,`#,##0`memastikan bahwa angka besar ditampilkan dengan koma untuk ribuan.
 
 ## Langkah 5: Menyimpan Dokumen
 

@@ -67,7 +67,7 @@ Ecco cosa sta succedendo:
 - `.Where(f => f.Type == FieldType.FieldTOC)`Questo filtra i campi per trovare solo quelli che sono TOC.
 - `.ToList().ForEach(f => f.Remove())`: Questo converte i campi filtrati in un elenco e ne rimuove uno alla volta.
 
-## Passaggio 4: Salvare il documento modificato
+## Passaggio 4: salvare il documento modificato
 
 Infine, dobbiamo salvare le nostre modifiche. Puoi salvare il documento con un nuovo nome per preservare il file originale.
 

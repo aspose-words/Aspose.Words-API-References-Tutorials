@@ -114,7 +114,7 @@ Kolom ASK di Aspose.Words adalah kolom yang meminta input spesifik kepada penggu
 Ya, Anda dapat menyisipkan beberapa kolom ASK dalam satu dokumen, masing-masing dengan perintah dan respons yang unik.
 
 ###  Apa tujuan dari`PromptOnceOnMailMerge` property?
-Itu`PromptOnceOnMailMerge` Properti menentukan apakah prompt ASK hanya muncul satu kali selama operasi gabungan surat atau setiap waktu.
+ Itu`PromptOnceOnMailMerge` Properti menentukan apakah prompt ASK hanya muncul satu kali selama operasi gabungan surat atau setiap waktu.
 
 ### Apakah saya perlu memperbarui bidang ASK setelah mengatur propertinya?
 Ya, memperbarui bidang ASK memastikan bahwa semua properti diterapkan dengan benar dan bidang berfungsi seperti yang diharapkan.

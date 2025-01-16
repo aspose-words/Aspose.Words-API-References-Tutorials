@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Bây giờ chúng ta đã tải xong tài liệu, hãy tiến hành áp dụng mã hóa cho nó. Aspose.Words for Java cung cấp một cách đơn giản để thiết lập mã hóa tài liệu:
 
 ```java
-// Đặt mật khẩu để mở tài liệu
-doc.getWriteProtection().setPassword("yourPassword");
-
-// Đặt thuật toán mã hóa (tùy chọn)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// Lưu tài liệu đã mã hóa
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. Bảo vệ các thành phần tài liệu cụ thể
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 Đôi khi, bạn chỉ muốn bảo vệ các phần cụ thể của tài liệu, chẳng hạn như tiêu đề, chân trang hoặc một số đoạn văn nhất định. Aspose.Words cho phép bạn đạt được mức độ chi tiết này trong bảo vệ tài liệu:
 
 ```java
-// Bảo vệ một phần cụ thể (Bảo vệ chỉ đọc)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// Bảo vệ một đoạn văn cụ thể (Chỉ cho phép chỉnh sửa các trường biểu mẫu)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// Lưu tài liệu được bảo vệ
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//Phạm vi có thể chỉnh sửa cho phép chúng ta để lại một số phần của tài liệu được bảo vệ để chỉnh sửa.
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. Áp dụng chữ ký số
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 Thêm chữ ký số vào tài liệu của bạn có thể đảm bảo tính xác thực và toàn vẹn của tài liệu. Sau đây là cách bạn có thể áp dụng chữ ký số bằng Aspose.Words cho Java:
 
 ```java
-// Tải tệp chứng chỉ
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// Ký vào tài liệu có chứng chỉ
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// Tạo bình luận, ngày tháng và mật khẩu giải mã sẽ được áp dụng với chữ ký số mới của chúng tôi.
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// Lưu tài liệu đã ký
-doc.save("path/to/signed/document.docx");
+// Đặt tên tệp hệ thống cục bộ cho tài liệu đầu vào chưa ký và tên tệp đầu ra cho bản sao mới được ký kỹ thuật số.
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. Đóng dấu bản quyền tài liệu của bạn
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. Biên tập thông tin nhạy cảm
 
-Khi chia sẻ tài liệu, bạn có thể muốn xóa vĩnh viễn thông tin nhạy cảm để đảm bảo thông tin đó không rơi vào tay kẻ xấu. Aspose.Words for Java cho phép bạn biên tập nội dung nhạy cảm:
-
-```java
-// Tìm kiếm và biên tập thông tin nhạy cảm
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// Áp dụng biên tập
-doc.redact(options);
-
-// Lưu tài liệu đã biên tập
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. Chuyển đổi các tài liệu an toàn sang các định dạng khác
+## 10. Chuyển đổi các tài liệu an toàn sang các định dạng khác
 
 Aspose.Words for Java cũng cho phép bạn chuyển đổi các tài liệu được bảo mật sang nhiều định dạng khác nhau, chẳng hạn như PDF hoặc HTML:
 
 ```java
-// Tải tài liệu được bảo mật
+//Tải tài liệu được bảo mật
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // Chuyển đổi sang PDF
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // Chuyển đổi sang HTML
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. Thực hành tốt nhất cho bảo mật tài liệu
-
-Để đảm bảo tính bảo mật của tài liệu, hãy làm theo các biện pháp tốt nhất sau:
-
-- Thường xuyên cập nhật các biện pháp bảo mật để phòng ngừa các mối đe dọa tiềm ẩn.
-- Sử dụng mật khẩu mạnh và thuật toán mã hóa.
-- Hạn chế quyền truy cập vào các tài liệu nhạy cảm khi cần thiết.
-- Đào tạo nhân viên cách nhận biết và ứng phó với rủi ro an ninh.
-
-## 13. Kiểm tra tính bảo mật của tài liệu
-
-Sau khi áp dụng các biện pháp bảo mật, hãy kiểm tra kỹ lưỡng các tài liệu của bạn để đảm bảo chúng vẫn an toàn trong nhiều tình huống khác nhau. Cố gắng bỏ qua các biện pháp kiểm soát bảo mật để xác định các lỗ hổng tiềm ẩn.
-
-## 14. Kết luận
+## Phần kết luận
 
 Trong hướng dẫn từng bước này, chúng tôi đã khám phá tầm quan trọng của bảo mật tài liệu và cách Aspose.Words for Java có thể giúp bảo vệ tài liệu của bạn khỏi truy cập trái phép. Bằng cách tận dụng các tính năng của thư viện, chẳng hạn như bảo vệ bằng mật khẩu, mã hóa, chữ ký số, hình mờ và biên tập, bạn có thể đảm bảo rằng tài liệu của mình vẫn an toàn và bảo mật.
 
 ## Câu hỏi thường gặp
 
 ### Tôi có thể sử dụng Aspose.Words cho Java trong các dự án thương mại không?
-   Có, Aspose.Words for Java có thể được sử dụng trong các dự án thương mại theo mô hình cấp phép cho mỗi nhà phát triển.
+Có, Aspose.Words for Java có thể được sử dụng trong các dự án thương mại theo mô hình cấp phép cho mỗi nhà phát triển.
 
 ### Aspose.Words có hỗ trợ các định dạng tài liệu khác ngoài Word không?
-   Có, Aspose.Words hỗ trợ nhiều định dạng, bao gồm PDF, HTML, EPUB, v.v.
+Có, Aspose.Words hỗ trợ nhiều định dạng, bao gồm PDF, HTML, EPUB, v.v.
 
 ### Có thể thêm nhiều chữ ký số vào một tài liệu không?
-   Có, Aspose.Words cho phép bạn thêm nhiều chữ ký số vào một tài liệu.
+Có, Aspose.Words cho phép bạn thêm nhiều chữ ký số vào một tài liệu.
 
 ### Aspose.Words có hỗ trợ khôi phục mật khẩu tài liệu không?
-   Không, Aspose.Words không cung cấp tính năng khôi phục mật khẩu. Hãy đảm bảo giữ an toàn cho mật khẩu của bạn.
+Không, Aspose.Words không cung cấp tính năng khôi phục mật khẩu. Hãy đảm bảo giữ an toàn cho mật khẩu của bạn.
 
 ### Tôi có thể tùy chỉnh giao diện của hình mờ không?
-   Có, bạn có thể tùy chỉnh hoàn toàn giao diện của hình mờ, bao gồm văn bản, phông chữ, màu sắc, kích thước và chế độ xoay.
+Có, bạn có thể tùy chỉnh hoàn toàn giao diện của hình mờ, bao gồm văn bản, phông chữ, màu sắc, kích thước và chế độ xoay.

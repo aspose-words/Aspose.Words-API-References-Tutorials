@@ -85,7 +85,7 @@ StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart
 
 现在，是时候将 XML 部分绑定到 SDT 了。通过设置 XML 映射，我们可以指定 XML 数据的哪一部分应显示在 SDT 中。
 
- XPath 指向我们要显示的 XML 部分中的特定元素。这里，我们指向第二个`<text>`元素内的`<root>`元素。
+ XPath 指向我们想要显示的 XML 部分中的特定元素。这里，我们指向第二个`<text>`元素内的`<root>`元素。
 
 ```csharp
 //为我们的 StructuredDocumentTag 设置映射

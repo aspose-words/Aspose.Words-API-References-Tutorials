@@ -13,11 +13,11 @@ Odblokuj moc Aspose.Words for Java, aby zabezpieczyć swoje dokumenty hasłami. 
 
 ## Wstęp
 
-dzisiejszym cyfrowym świecie bezpieczeństwo danych jest najważniejsze. Niezależnie od tego, czy obsługujesz poufne dokumenty biznesowe, czy pliki osobiste, zapewnienie, że tylko upoważnione osoby mogą uzyskać dostęp do Twoich dokumentów, jest kluczowe. Ten przewodnik krok po kroku pokaże Ci, jak używać Aspose.Words for Java, aby dodać solidną warstwę zabezpieczeń do Twoich dokumentów, stosując hasła.
+W dzisiejszym cyfrowym świecie bezpieczeństwo danych jest najważniejsze. Niezależnie od tego, czy obsługujesz poufne dokumenty biznesowe, czy pliki osobiste, zapewnienie, że tylko upoważnione osoby mogą uzyskać dostęp do Twoich dokumentów, jest kluczowe. Ten przewodnik krok po kroku pokaże Ci, jak używać Aspose.Words for Java, aby dodać solidną warstwę zabezpieczeń do Twoich dokumentów, stosując hasła.
 
 ## Konfigurowanie Aspose.Words dla Java
 
- Zanim przejdziemy do zabezpieczania dokumentów, upewnijmy się, że masz skonfigurowany Aspose.Words for Java w swoim środowisku Java. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go z[Tutaj](https://releases.aspose.com/words/java/).
+Zanim przejdziemy do zabezpieczania dokumentów, upewnijmy się, że masz skonfigurowany Aspose.Words for Java w swoim środowisku Java. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go z[Tutaj](https://releases.aspose.com/words/java/).
 
 ## Zabezpieczanie dokumentów: krok po kroku
 

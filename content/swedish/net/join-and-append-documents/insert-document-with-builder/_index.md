@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Steg 3: Skapa ett DocumentBuilder-objekt
 
-De`DocumentBuilder` class är ett kraftfullt verktyg i Aspose.Words-biblioteket. Det tillåter oss att navigera och manipulera dokumentet.
+ De`DocumentBuilder` class är ett kraftfullt verktyg i Aspose.Words-biblioteket. Det tillåter oss att navigera och manipulera dokumentet.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);

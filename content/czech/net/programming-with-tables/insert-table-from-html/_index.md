@@ -17,7 +17,7 @@ Než se pustíme do úplného vkládání tabulky z HTML, ujistěte se, že mát
 
 1.  Aspose.Words for .NET: Stáhněte si a nainstalujte knihovnu Aspose.Words for .NET z[stránka ke stažení](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Jakékoli vývojové prostředí kompatibilní s .NET, jako je Visual Studio.
-3. Základní znalost C#: Pochopení základních pojmů programování v C#.
+3. Základní znalost C#: Pochopení základních konceptů programování v C#.
 4. Kód tabulky HTML: Kód HTML pro tabulku, kterou chcete vložit.
 
 ## Importovat jmenné prostory

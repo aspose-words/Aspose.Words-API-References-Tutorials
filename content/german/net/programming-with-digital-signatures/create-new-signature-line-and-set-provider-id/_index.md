@@ -130,7 +130,7 @@ Und da haben Sie es! Sie haben erfolgreich eine neue Signaturzeile erstellt und 
 ## Häufig gestellte Fragen
 
 ### Kann ich das Erscheinungsbild der Signaturzeile anpassen?
-Auf jeden Fall! Sie können verschiedene Optionen im`SignatureLineOptions` um Ihren Bedürfnissen gerecht zu werden.
+ Auf jeden Fall! Sie können verschiedene Optionen im`SignatureLineOptions`um Ihren Bedürfnissen gerecht zu werden.
 
 ### Was ist, wenn ich kein PFX-Zertifikat habe?
 Sie müssen ein Zertifikat von einer vertrauenswürdigen Zertifizierungsstelle erhalten. Es ist für die digitale Signatur von Dokumenten unerlässlich.

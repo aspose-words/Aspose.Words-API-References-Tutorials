@@ -9,7 +9,7 @@ url: /de/net/programming-with-imagesaveoptions/get-tiff-page-range/
 ---
 ## Einführung
 
-Hallo liebe Entwicklerkollegen! Sind Sie es leid, bestimmte Seiten Ihrer Word-Dokumente mühsam in TIFF-Bilder umzuwandeln? Dann sind Sie hier richtig! Mit Aspose.Words für .NET können Sie bestimmte Seitenbereiche Ihrer Word-Dokumente mühelos in TIFF-Dateien umwandeln. Diese leistungsstarke Bibliothek vereinfacht die Aufgabe und bietet unzählige Anpassungsoptionen, die genau Ihren Anforderungen entsprechen. In diesem Tutorial werden wir den Prozess Schritt für Schritt durchgehen, um sicherzustellen, dass Sie diese Funktion beherrschen und nahtlos in Ihre Projekte integrieren können.
+Hallo liebe Entwicklerkollegen! Sind Sie es leid, bestimmte Seiten Ihrer Word-Dokumente mühsam in TIFF-Bilder umzuwandeln? Dann sind Sie hier richtig! Mit Aspose.Words für .NET können Sie bestimmte Seitenbereiche Ihrer Word-Dokumente mühelos in TIFF-Dateien umwandeln. Diese leistungsstarke Bibliothek vereinfacht die Aufgabe und bietet unzählige Anpassungsoptionen, die genau Ihren Anforderungen entsprechen. In diesem Tutorial werden wir den Prozess Schritt für Schritt durchgehen, damit Sie diese Funktion beherrschen und nahtlos in Ihre Projekte integrieren können.
 
 ## Voraussetzungen
 
@@ -89,7 +89,7 @@ Und da haben Sie es! Indem Sie diese einfachen Schritte befolgen, haben Sie erfo
 
 ### Kann ich mehrere Seitenbereiche in separate TIFF-Dateien konvertieren?
 
- Absolut! Sie können mehrere erstellen`ImageSaveOptions`Objekte mit unterschiedlichen`PageSet` Konfigurationen zum Konvertieren verschiedener Seitenbereiche in separate TIFF-Dateien.
+ Auf jeden Fall! Sie können mehrere erstellen`ImageSaveOptions`Objekte mit unterschiedlichen`PageSet` Konfigurationen zum Konvertieren verschiedener Seitenbereiche in separate TIFF-Dateien.
 
 ### Wie kann ich die Auflösung der TIFF-Datei ändern?
 

@@ -40,7 +40,7 @@ Document doc = new Document("sample.docx");
 ```java
 // Belge küçük resmi oluşturmak için Java kodu
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ Java için Aspose.Words kullanarak belge küçük resmi oluşturma, belgelerin g
 
 ### Java için Aspose.Words'ü nasıl yüklerim?
 
- Java için Aspose.Words'ü yüklemek için indirme sayfasını ziyaret edin[Burada](https://releases.aspose.com/words/java/)ve verilen kurulum talimatlarını izleyin.
+Java için Aspose.Words'ü yüklemek için indirme sayfasını ziyaret edin[Burada](https://releases.aspose.com/words/java/)ve verilen kurulum talimatlarını izleyin.
 
 ### Oluşturulan küçük resmin boyutunu özelleştirebilir miyim?
 

@@ -182,25 +182,11 @@ Dalam contoh ini, kami mengatur perataan paragraf menjadi
 Membuat daftar dengan poin-poin atau penomoran merupakan tugas pemformatan dokumen yang umum. Aspose.Words untuk Java mempermudahnya. Berikut cara membuat daftar poin-poin:
 
 ```java
-// Buat dokumen baru
-Document doc = new Document();
-
-// Buat daftar
-List list = new List(doc);
-
-// Tambahkan item daftar dengan poin
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// Tambahkan daftar ke dokumen
-doc.getFirstSection().getBody().appendChild(list);
-
-// Simpan dokumen
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 Dalam kode ini, kita membuat daftar berpoin dengan tiga item.
@@ -210,24 +196,21 @@ Dalam kode ini, kita membuat daftar berpoin dengan tiga item.
 Hyperlink sangat penting untuk menambahkan interaktivitas ke dokumen Anda. Aspose.Words untuk Java memungkinkan Anda memasukkan hyperlink dengan mudah. Berikut contohnya:
 
 ```java
-// Buat dokumen baru
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Membuat paragraf
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// Membuat hyperlink
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.contoh.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// Sisipkan hyperlink dan tekankan dengan format khusus.
+// Hyperlink akan berupa teks yang dapat diklik yang akan membawa kita ke lokasi yang ditentukan di URL.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", salah);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// Tambahkan paragraf ke dokumen
-doc.getFirstSection().getBody().appendChild(para);
-
-// Simpan dokumen
-doc.save("HyperlinkDocument.docx");
+// Ctrl + klik kiri tautan dalam teks di Microsoft Word akan membawa kita ke URL melalui jendela peramban web baru.
+doc.save("InsertHyperlink.docx");
 ```
 
 Kode ini menyisipkan hyperlink ke "https://www.example.com" dengan teks "Kunjungi Example.com."
@@ -237,23 +220,7 @@ Kode ini menyisipkan hyperlink ke "https://www.example.com" dengan teks "Kunjung
 Dokumen sering kali memerlukan elemen visual seperti gambar dan bentuk. Aspose.Words untuk Java memungkinkan Anda menyisipkan gambar dan bentuk dengan mudah. Berikut cara menambahkan gambar:
 
 ```java
-// Buat dokumen baru
-Document doc = new Document();
-
-// Membuat paragraf
-Paragraph para = new Paragraph(doc);
-
-// Memuat gambar dari sebuah file
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// Tambahkan paragraf ke dokumen
-doc.getFirstSection().getBody().appendChild(para);
-
-// Simpan dokumen
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 Dalam kode ini, kita memuat gambar dari suatu berkas dan memasukkannya ke dalam dokumen.
@@ -287,27 +254,20 @@ Dalam contoh ini, kami menetapkan margin yang sama yaitu 1 inci di semua sisi ha
 Header dan footer penting untuk menambahkan informasi yang konsisten ke setiap halaman dokumen Anda. Berikut cara menggunakan header dan footer:
 
 ```java
-// Buat dokumen baru
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Akses header dan footer bagian pertama
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// Tambahkan konten ke header
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// Tambahkan konten ke footer
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// Tambahkan konten ke badan dokumen
+// Tambahkan konten ke badan dokumen.
 // ...
 
-// Simpan dokumen
+// Simpan dokumen.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ Dalam kode ini, kita menambahkan konten ke header dan footer dokumen.
 Tabel merupakan cara yang ampuh untuk mengatur dan menyajikan data dalam dokumen Anda. Aspose.Words untuk Java menyediakan dukungan yang luas untuk bekerja dengan tabel. Berikut ini contoh pembuatan tabel:
 
 ```java
-// Buat dokumen baru
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Buat tabel dengan 3 baris dan 3 kolom
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// Tambahkan konten ke sel tabel
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//Tambahkan tabel ke dokumen
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// Simpan dokumen
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// Mengubah format akan menerapkannya ke sel saat ini,
+// dan sel baru apa pun yang kita buat dengan pembangun sesudahnya.
+// Ini tidak akan memengaruhi sel yang telah kita tambahkan sebelumnya.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// Tingkatkan tinggi baris agar sesuai dengan teks vertikal.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 Dalam kode ini, kita membuat tabel sederhana dengan tiga baris dan tiga kolom.
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // Simpan dokumen sebagai PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 Potongan kode ini menyimpan dokumen sebagai berkas PDF.
@@ -393,7 +372,7 @@ Ya, Anda dapat dengan mudah mengonversi dokumen ke PDF menggunakan Aspose.Words 
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### Bagaimana cara memformat teks sebagai
@@ -414,7 +393,7 @@ Anda dapat memeriksa situs web Aspose atau repositori Maven untuk versi terbaru 
 Ya, Aspose.Words untuk Java kompatibel dengan Java 11 dan versi yang lebih baru.
 
 ### Bagaimana cara mengatur margin halaman untuk bagian tertentu di dokumen saya?
-Anda dapat mengatur margin halaman untuk bagian tertentu dari dokumen Anda menggunakan`PageSetup` kelas. Berikut contohnya:
+ Anda dapat mengatur margin halaman untuk bagian tertentu dari dokumen Anda menggunakan`PageSetup` kelas. Berikut contohnya:
 
 ```java
 Section section = doc.getSections().get(0); // Dapatkan bagian pertama

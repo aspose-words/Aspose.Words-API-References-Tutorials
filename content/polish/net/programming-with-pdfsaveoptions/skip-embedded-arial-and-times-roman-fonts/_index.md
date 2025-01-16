@@ -67,7 +67,7 @@ To polecenie zapisuje dokument jako plik PDF o nazwie „OptimizedPDF.pdf” w o
 
 ## Wniosek
 
-I masz to! Właśnie nauczyłeś się, jak zoptymalizować rozmiar pliku PDF, pomijając osadzanie czcionek Arial i Times Roman za pomocą Aspose.Words dla .NET. Ta prosta poprawka może znacznie zmniejszyć rozmiary plików, ułatwiając ich udostępnianie i przechowywanie. To jak chodzenie na siłownię po pliki PDF, zrzucanie zbędnej wagi przy jednoczesnym zachowaniu wszystkich niezbędnych elementów.
+masz to! Właśnie nauczyłeś się, jak zoptymalizować rozmiar pliku PDF, pomijając osadzanie czcionek Arial i Times Roman za pomocą Aspose.Words dla .NET. Ta prosta poprawka może znacznie zmniejszyć rozmiary plików, ułatwiając ich udostępnianie i przechowywanie. To jak chodzenie na siłownię po pliki PDF, zrzucanie zbędnej wagi przy jednoczesnym zachowaniu wszystkich niezbędnych elementów.
 
 ## Najczęściej zadawane pytania
 
@@ -81,7 +81,7 @@ Nie, nie będzie. Ponieważ Arial i Times Roman są standardowymi czcionkami, wy
 Tak, możesz skonfigurować opcje zapisu tak, aby pominąć osadzanie innych czcionek, jeżeli zajdzie taka potrzeba.
 
 ### Czy Aspose.Words dla .NET jest darmowy?
-Aspose.Words dla .NET oferuje bezpłatną wersję próbną, którą można pobrać[Tutaj](https://releases.aspose.com/) ale aby uzyskać pełny dostęp, musisz kupić licencję[Tutaj](https://purchase.aspose.com/buy).
+ Aspose.Words dla .NET oferuje bezpłatną wersję próbną, którą można pobrać[Tutaj](https://releases.aspose.com/) ale aby uzyskać pełny dostęp, musisz kupić licencję[Tutaj](https://purchase.aspose.com/buy).
 
 ### Gdzie mogę znaleźć więcej samouczków dotyczących Aspose.Words dla .NET?
- Można znaleźć obszerną dokumentację i samouczki[Tutaj](https://reference.aspose.com/words/net/).
+Można znaleźć obszerną dokumentację i samouczki[Tutaj](https://reference.aspose.com/words/net/).

@@ -7,7 +7,6 @@ type: docs
 weight: 12
 url: /tr/java/document-rendering/rendering-shapes-graphics/
 ---
-
 ## giriiş
 
 Bu dijital çağda, belgelerin genellikle düz metinden daha fazlası olması gerekir. Şekiller ve grafikler eklemek, bilgileri daha etkili bir şekilde iletebilir ve belgelerinizi görsel olarak çekici hale getirebilir. Aspose.Words for Java, şekil ve grafikler ekleme ve özelleştirme dahil olmak üzere Word belgelerini düzenlemenize olanak tanıyan güçlü bir Java API'sidir.

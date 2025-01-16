@@ -38,7 +38,7 @@ Dále vytvoříme tiskovou úlohu pro tisk našeho načteného dokumentu. Níže
 ```java
 // Vytvořte tiskovou úlohu pro tisk našeho dokumentu.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Inicializujte sadu atributů s počtem stránek v dokumentu.
+// Inicializujte sadu atributů s počtem stránek v dokumentu.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Předejte nastavení tiskárny spolu s ostatními parametry do tiskového dokumentu.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Vytvořte tiskovou úlohu pro tisk našeho dokumentu.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Inicializujte sadu atributů s počtem stránek v dokumentu.
+// Inicializujte sadu atributů s počtem stránek v dokumentu.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Předejte nastavení tiskárny spolu s ostatními parametry do tiskového dokumentu.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Indexy začátku a konce stránky, jak jsou definovány v sadě atributů.
+        //Indexy začátku a konce stránky, jak jsou definovány v sadě atributů.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Vyberte číslo poslední stránky, která se má vytisknout na tento list papíru.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Procházejte vybrané stránky od uložené aktuální stránky k vypočtené
+        // Procházejte vybrané stránky od uložené aktuální stránky k vypočtené
         // poslední stránka.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Vypočítejte sloupcové a řádkové indexy.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // Užitečná návratová hodnota je měřítko, ve kterém byla stránka vykreslena.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Nakreslete okraje stránky (miniatura stránky může být menší než miniatura
+                //Nakreslete okraje stránky (miniatura stránky může být menší než miniatura
                 // velikost zástupného symbolu).
                 if (mPrintPageBorders) {
                     // Získejte skutečnou 100% velikost stránky v bodech.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Definujte počet sloupců a řádků na listu pro
-        //Papír orientovaný na šířku.
+        // Papír orientovaný na šířku.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ Gratuluji! Úspěšně jste vytiskli dokument aplikace Word pomocí Aspose.Words
 
 ### Q1: Mohu vytisknout konkrétní stránky dokumentu pomocí Aspose.Words for Java?
 
- Ano, při tisku dokumentu můžete určit rozsah stránek. V příkladu kódu jsme použili`attributes.add(new PageRanges(1, doc.getPageCount()))` vytisknout všechny stránky. Rozsah stránek můžete upravit podle potřeby.
+ Ano, při tisku dokumentu můžete určit rozsah stránek. V příkladu kódu jsme použili`attributes.add(new PageRanges(1, doc.getPageCount()))`vytisknout všechny stránky. Rozsah stránek můžete upravit podle potřeby.
 
 ### Q2: Je Aspose.Words for Java vhodný pro dávkový tisk?
 

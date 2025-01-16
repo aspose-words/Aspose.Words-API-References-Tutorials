@@ -22,7 +22,7 @@ Handledningarna täcker ett brett utbud av Aspose.Words-funktioner, från grundl
 Handledningarna fokuserar på praktisk implementering, så att du kan lära dig hur du använder Aspose.Words för att lösa verkliga dokumentbehandlingsproblem. Detta hjälper dig att snabbt komma igång och börja använda Aspose.Words för att automatisera dina dokumentbearbetningsuppgifter.
 ### Solid grund för robusta och skalbara dokumentbehandlingslösningar:
 Handledningarna ger en solid grund för att bygga robusta och skalbara dokumentbehandlingslösningar. Detta beror på att handledningarna täcker de grundläggande begreppen för dokumentbehandling, såsom tabellbehandling, dokumentsammanslagning och vattenmärkning.
-## Handledning för dokumentbearbetning
+## Handledning för dokumentbehandling
 ### [Ordbehandling](./word-processing/) 
 Lär dig ordbehandling med Aspose.Words för Java. Skapa, redigera och manipulera dokument programmatiskt. Förbättra dina färdigheter i dokumentbehandling idag.
 ### [Tabellbearbetning](./table-processing/)
@@ -40,7 +40,7 @@ Bemästra dokumentutskrift med Aspose.Words för Java! Automatisera utskriftsins
 ### [Dokumentsäkerhet](./document-security/)
 Förbättra dokumentsäkerheten med Aspose.Words för Java! Implementera skydd, kryptering och digitala signaturer för robust dataskydd. 
 ### [Dokumentdelning](./document-splitting/)
-Dela dokument med lätthet med Aspose.Words för Java! Dela upp stora filer effektivt baserat på sidintervall, antal stycken eller anpassade kriterier.
+Dela dokument enkelt med Aspose.Words för Java! Dela upp stora filer effektivt baserat på sidintervall, antal stycken eller anpassade kriterier.
 ### [Dokumentrevision](./document-revision/)
 Effektivisera dokumentrevisioner med Aspose.Words för Java! Spåra ändringar, hantera versionskontroll och automatisera revisionsuppgifter utan ansträngning. 
 ### [Laddar och sparar dokument](./document-loading-and-saving/)

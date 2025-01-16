@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Étape 4 : utiliser l'alignement automatique du contenu du tableau
 
-Le`Auto`L'option d'alignement reprend l'alignement du premier paragraphe de la colonne de tableau correspondante. Cela peut être pratique lorsque vous avez des alignements mixtes dans un seul tableau.
+ Le`Auto`L'option d'alignement reprend l'alignement du premier paragraphe de la colonne de tableau correspondante. Cela peut être pratique lorsque vous avez des alignements mixtes dans un seul tableau.
 
 ```csharp
 // Réglez l'alignement sur Auto.

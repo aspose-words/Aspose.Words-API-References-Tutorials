@@ -17,7 +17,7 @@ Zanim przejdziesz do samouczka dotyczącego konwersji pól w treści dokumentu z
 
 - Visual Studio: zainstalowany i skonfigurowany na potrzeby tworzenia oprogramowania .NET.
 -  Aspose.Words dla .NET: Pobrane i przywoływane w projekcie Visual Studio. Można je uzyskać z[Tutaj](https://releases.aspose.com/words/net/).
-- Podstawowa znajomość języka C#: Znajomość języka programowania C# umożliwiająca zrozumienie i modyfikację dostarczonych fragmentów kodu.
+- Podstawowa znajomość języka C#: Znajomość języka programowania C# umożliwiająca zrozumienie i modyfikację udostępnionych fragmentów kodu.
 
 ## Importuj przestrzenie nazw
 

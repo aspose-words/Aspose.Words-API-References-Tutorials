@@ -16,7 +16,7 @@ Pokud jste někdy chtěli chránit dokument aplikace Word, ale přesto povolit u
 Než začneme, ujistěte se, že máte následující:
 
 1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[zde](https://releases.aspose.com/words/net/).
-2.  Platná licence Aspose: Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
+2. Platná licence Aspose: Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Jakákoli nejnovější verze by měla fungovat dobře.
 4. Základní znalost C# a .NET: To vám pomůže sledovat kód.
 
@@ -112,7 +112,7 @@ Nakonec uložíme dokument s aplikovanou ochranou a upravitelnými oblastmi.
 
 ## Závěr
 
-tady to máte! Úspěšně jste vytvořili neomezené upravitelné oblasti v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato funkce je neuvěřitelně užitečná pro kolaborativní prostředí, kde určité části dokumentu musí zůstat nezměněny, zatímco jiné lze upravovat. 
+A tady to máte! Úspěšně jste vytvořili neomezené upravitelné oblasti v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato funkce je neuvěřitelně užitečná pro kolaborativní prostředí, kde určité části dokumentu musí zůstat nezměněny, zatímco jiné lze upravovat. 
 
  Experimentujte se složitějšími scénáři a různými úrovněmi ochrany, abyste z Aspose.Words vytěžili maximum. Pokud máte nějaké dotazy nebo narazíte na problémy, neváhejte se podívat na[dokumentace](https://reference.aspose.com/words/net/) nebo oslovit[podpora](https://forum.aspose.com/c/words/8).
 

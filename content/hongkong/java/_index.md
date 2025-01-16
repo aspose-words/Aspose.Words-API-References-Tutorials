@@ -10,7 +10,7 @@ is_root: true
 ## 使用 Aspose.Words For Java 進行文件處理
 文件處理對於個人和專業人士來說都是一項基本技能。然而，手動文件處理可能非常耗時且容易出錯。 Aspose.Words Java 文件處理教學提供了使用程式碼自動產生和管理文件的全面指南。
 
-這些教程涵蓋了廣泛的主題，從基本的表格處理到高級文件合併和浮水印。 Aspose.Words 教學課程專注於實際實施，使開發人員能夠有效率地簡化文件處理任務並提供客製化的解決方案。
+這些教程涵蓋了廣泛的主題，從基本的表格處理到高級文件合併和浮水印。 Aspose.Words 教學課程專注於實際實施，使開發人員能夠有效地簡化文件處理任務並提供客製化的解決方案。
 
 無論您是初學者還是經驗豐富的開發人員，Aspose.Words Java 文件處理教學課程都可以幫助您將文件處理技能提升到新的水平。
 
@@ -45,7 +45,7 @@ is_root: true
 使用 Aspose.Words for Java 簡化文件修訂！輕鬆追蹤變更、管理版本控制並自動執行修訂任務。 
 ### [文件載入和儲存](./document-loading-and-saving/)
 透過我們的綜合教學了解如何使用 Aspose.Words for Java 輕鬆載入和儲存文件。立即提升您的 Java 文件處理技能！
-### [文件處理](./document-manipulation/)
+### [文件操作](./document-manipulation/)
 透過我們的綜合教程，了解如何使用 Aspose.Words for Java 有效地操作文件。立即提升您的 Java 文件處理技能！
 ### [文檔轉換和匯出](./document-conversion-and-export/)
 在這份綜合指南中探索 Aspose.Words for Java 的強大功能。了解如何輕鬆轉換和匯出文件。

@@ -55,7 +55,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 
 ## 3단계: 문서를 PDF로 저장
 
- 마지막으로 다음을 사용하여 문서를 PDF로 저장합니다.`Save` 방법, 구성된 적용`PdfSaveOptions`.
+ 마지막으로 다음을 사용하여 문서를 PDF로 저장합니다.`Save` 방법, 구성된 것을 적용`PdfSaveOptions`.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions);

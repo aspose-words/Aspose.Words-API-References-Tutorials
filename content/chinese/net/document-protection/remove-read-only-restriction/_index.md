@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
-在此步骤中，替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档存储的实际路径。`"YourDocument.docx"`是要修改的文档的名称。
+在此步骤中，替换`"YOUR DOCUMENT DIRECTORY"`使用存储文档的实际路径。`"YourDocument.docx"`是要修改的文档的名称。
 
 ## 步骤 3：设置密码（可选）
 

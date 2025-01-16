@@ -44,18 +44,6 @@ for paragraph in doc.get_child_nodes(doc.is_paragraph, True):
     text += paragraph.get_text()
 ```
 
-## 이미지 추출
-
-문서에서 이미지를 추출하려면:
-
-```python
-for shape in doc.get_child_nodes(doc.is_shape, True):
-    if shape.has_image:
-        image = shape.image_data.to_bytes()
-        with open("image.png", "wb") as f:
-            f.write(image)
-```
-
 ## 서식 관리
 
 추출하는 동안 서식 유지:

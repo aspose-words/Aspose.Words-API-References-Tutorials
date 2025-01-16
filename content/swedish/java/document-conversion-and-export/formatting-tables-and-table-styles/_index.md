@@ -12,7 +12,7 @@ url: /sv/java/document-conversion-and-export/formatting-tables-and-table-styles/
 
 När det gäller dokumentformatering spelar tabeller en avgörande roll för att organisera och presentera data tydligt. Om du arbetar med Java och Aspose.Words har du kraftfulla verktyg till ditt förfogande för att skapa och formatera tabeller i dina dokument. Oavsett om du designar ett enkelt bord eller använder avancerade stilar, erbjuder Aspose.Words för Java en rad funktioner som hjälper dig att uppnå professionella resultat.
 
-den här guiden går vi igenom processen med att formatera tabeller och tillämpa tabellstilar med Aspose.Words för Java. Du lär dig hur du ställer in tabellkanter, tillämpar cellskuggning och använder tabellstilar för att förbättra utseendet på dina dokument. I slutet har du färdigheterna att skapa välformaterade tabeller som får dina data att sticka ut.
+I den här guiden går vi igenom processen med att formatera tabeller och tillämpa tabellstilar med Aspose.Words för Java. Du lär dig hur du ställer in tabellkanter, tillämpar cellskuggning och använder tabellstilar för att förbättra utseendet på dina dokument. I slutet har du färdigheterna att skapa välformaterade tabeller som får dina data att sticka ut.
 
 ## Förutsättningar
 
@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Skapa större ramar för den första cellen i denna rad.
+// Skapa större ramar för den första cellen i denna rad.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -169,7 +169,7 @@ Aspose.Words för Java är ett robust verktyg som erbjuder omfattande funktioner
 
 ### 1. Kan jag använda anpassade tabellstilar som inte ingår i standardalternativen?
 
-Ja, du kan definiera och tillämpa anpassade stilar på dina tabeller med Aspose.Words för Java. Kontrollera[dokumentation](https://reference.aspose.com/words/java/) för mer information om hur du skapar anpassade stilar.
+ Ja, du kan definiera och tillämpa anpassade stilar på dina tabeller med Aspose.Words för Java. Kontrollera[dokumentation](https://reference.aspose.com/words/java/) för mer information om hur du skapar anpassade stilar.
 
 ### 2. Hur kan jag tillämpa villkorlig formatering på tabeller?
 

@@ -78,13 +78,13 @@ for (int page = 1; page <= doc.getPageCount(); page++) {
 ## DocumentPageSplitter ソースコード
 
 ```java
-/// <要約>
-//ドキュメントをページごとに複数のドキュメントに分割します。
+//<要約>
+/// ドキュメントをページごとに複数のドキュメントに分割します。
 /// </要約>
 class DocumentPageSplitter
 {
 private PageNumberFinder pageNumberFinder;
-/// <要約>
+//<要約>
 /// <see cref="DocumentPageSplitter"/> クラスの新しいインスタンスを初期化します。
 /// この方法では、ドキュメントをセクションに分割し、各ページがセクション境界で始まり、セクション境界で終わるようにします。
 /// 後でドキュメントを変更しないことをお勧めします。
@@ -97,7 +97,7 @@ public DocumentPageSplitter(Document source) throws Exception
 private Document getDocument() {
 	return pageNumberFinder.getDocument();
 }
-/// <要約>
+//<要約>
 /// ページのドキュメントを取得します。
 /// </要約>
 /// <param name="ページインデックス">
@@ -109,10 +109,10 @@ private Document getDocument() {
 public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
-/// <要約>
-/// ページ範囲のドキュメントを取得します。
+//<要約>
+//ページ範囲のドキュメントを取得します。
 /// </要約>
-//<param name="開始インデックス">
+/// <param name="開始インデックス">
 /// スタートページの 1 から始まるインデックス。
 /// </パラメータ>
 /// <param name="endIndex">
@@ -130,7 +130,7 @@ public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exce
 	return result;
 }
 }
-/// <要約>
+//<要約>
 /// 指定されたページにレンダリングされるドキュメントのノードを抽出するためのメソッドを提供します。
 /// </要約>
 class PageNumberFinder
@@ -142,7 +142,7 @@ private Map<Node, Integer> nodeEndPageLookup = new HashMap<>();
 private LayoutCollector collector;
 //ページ番号をそのページで見つかったノードのリストにマップします。
 private Map<Integer, ArrayList<Node>> reversePageLookup;
-/// <要約>
+//<要約>
 /// <see cref="PageNumberFinder"/> クラスの新しいインスタンスを初期化します。
 /// </要約>
 /// <param name="collector">ドキュメントのレイアウト モデル レコードを持つコレクター インスタンス。</param>
@@ -154,7 +154,7 @@ public Document getDocument()
 {
 	return collector.getDocument();
 }
-/// <要約>
+//<要約>
 /// ノードが始まるページの 1 から始まるインデックスを取得します。
 /// </要約>
 /// <パラメータ名="ノード">
@@ -168,7 +168,7 @@ public int getPage(Node node) throws Exception {
 		? nodeStartPageLookup.get(node)
 		: collector.getStartPageIndex(node);
 }
-/// <要約>
+//<要約>
 /// ノードが終了するページの 1 から始まるインデックスを取得します。
 /// </要約>
 /// <パラメータ名="ノード">
@@ -182,7 +182,7 @@ public int getPageEnd(Node node) throws Exception {
 		? nodeEndPageLookup.get(node)
 		: collector.getEndPageIndex(node);
 }
-/// <要約>
+//<要約>
 //指定されたノードが何ページにわたっているかを返します。ノードが 1 ページ内に含まれている場合は 1 を返します。
 /// </要約>
 /// <パラメータ名="ノード">
@@ -194,7 +194,7 @@ public int getPageEnd(Node node) throws Exception {
 public int pageSpan(Node node) throws Exception {
 	return getPageEnd(node) - getPage(node) + 1;
 }
-/// <要約>
+//<要約>
 /// 指定されたページまたは指定されたノード タイプに一致するページの任意の場所に含まれるノードのリストを返します。
 /// </要約>
 /// <param name="スタートページ">
@@ -240,7 +240,7 @@ public ArrayList<Node> retrieveAllNodesOnPages(int startPage, int endPage, /*Nod
 	}
 	return pageNodes;
 }
-/// <要約>
+//<要約>
 /// 2ページ以上に表示されるノードを別々のノードに分割して、同じように表示されるようにします。
 /// はページ全体に表示されなくなりました。
 /// </要約>
@@ -257,7 +257,7 @@ public void splitNodesAcrossPages() throws Exception
 	//ページ間で分割されている可能性のある複合体にアクセスし、それらを個別のノードに分割します。
 	collector.getDocument().accept(new SectionSplitter(this));
 }
-/// <要約>
+//<要約>
 /// これは、分割ノードのページ番号を更新するために <see cref="SectionSplitter"/> によって呼び出されます。
 /// </要約>
 /// <パラメータ名="ノード">
@@ -342,7 +342,7 @@ private static String[] reverseWord(String str) {
 	}
 	return reverseWord.split(" ");
 }
-/// <要約>
+//<要約>
 /// 指定された実行のテキストを 2 つの実行に分割します。
 /// 指定された実行の直後に新しい実行を挿入します。
 /// </要約>
@@ -372,7 +372,7 @@ public static PageNumberFinder create(Document document) throws Exception
 	return pageNumberFinder;
 }
 }
-/// <要約>
+//<要約>
 /// 各ページがセクション境界で始まり、セクション境界で終わるように、ドキュメントを複数のセクションに分割します。
 /// </要約>
 class SectionSplitter extends DocumentVisitor

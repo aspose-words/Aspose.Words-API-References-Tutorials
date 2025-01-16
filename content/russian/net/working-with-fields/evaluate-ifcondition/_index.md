@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-The`EvaluateCondition` Метод возвращает`FieldIfComparisonResult` enum, представляющий результат оценки условия. Этот enum может иметь такие значения, как`True`, `False` , или`Unknown`.
+ The`EvaluateCondition` Метод возвращает`FieldIfComparisonResult` enum, представляющий результат оценки условия. Этот enum может иметь такие значения, как`True`, `False` , или`Unknown`.
 
 ## Шаг 4: Отображение результата
 
@@ -93,7 +93,7 @@ Console.WriteLine(actualResult);
  Вы можете вставить поле IF, используя`InsertField` Метод`DocumentBuilder` класс, указывающий условие, которое вы хотите оценить.
 
 ###  Что делает`EvaluateCondition` method do?
-The`EvaluateCondition` Метод оценивает условие, указанное в поле IF, и возвращает результат, указывающий, является ли условие истинным или ложным.
+ The`EvaluateCondition` Метод оценивает условие, указанное в поле IF, и возвращает результат, указывающий, является ли условие истинным или ложным.
 
 ### Могу ли я использовать сложные условия в поле IF?
 Да, вы можете использовать сложные условия с полем IF, указывая различные выражения и сравнения по мере необходимости.

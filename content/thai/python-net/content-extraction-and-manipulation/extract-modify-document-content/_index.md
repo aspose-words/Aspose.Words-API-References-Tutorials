@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## การแก้ไขข้อความ
-
-คุณสามารถปรับเปลี่ยนข้อความได้โดยตั้งค่าข้อความของการทำงานหรือย่อหน้าโดยตรง:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## การทำงานกับการจัดรูปแบบ
 
 Aspose.Words ช่วยให้คุณสามารถทำงานกับรูปแบบการจัดรูปแบบได้:

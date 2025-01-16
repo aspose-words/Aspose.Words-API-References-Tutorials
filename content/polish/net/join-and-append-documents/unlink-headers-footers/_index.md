@@ -57,7 +57,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Krok 4: Odłącz nagłówki i stopki
 
- Ten krok jest kluczowy. Aby odłączyć nagłówki i stopki dokumentu źródłowego od nagłówków i stopek dokumentu docelowego, należy użyć`LinkToPrevious` metoda. Ta metoda zapewnia, że nagłówki i stopki nie zostaną przeniesione do dołączonego dokumentu.
+ Ten krok jest kluczowy. Aby odłączyć nagłówki i stopki dokumentu źródłowego od nagłówków i stopek dokumentu docelowego, należy użyć`LinkToPrevious` Metoda. Ta metoda zapewnia, że nagłówki i stopki nie zostaną przeniesione do dołączonego dokumentu.
 
 ```csharp
 // Aby temu zapobiec, odłącz nagłówki i stopki w dokumencie źródłowym

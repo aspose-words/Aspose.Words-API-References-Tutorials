@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## Tekst wijzigen
-
-U kunt tekst wijzigen door de tekst van runs of alinea's rechtstreeks in te stellen:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## Werken met opmaak
 
 Met Aspose.Words kunt u met opmaakstijlen werken:

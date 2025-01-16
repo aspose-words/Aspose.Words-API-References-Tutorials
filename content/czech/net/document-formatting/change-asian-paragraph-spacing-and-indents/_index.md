@@ -15,7 +15,7 @@ Ahoj! Přemýšleli jste někdy nad tím, jak upravit mezery a odsazení v dokum
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete k dodržení:
 
-1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Pokud jste to ještě neudělali, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Pokud jste to ještě neudělali, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Potřebujete nastavit vývojové prostředí. Visual Studio je oblíbenou volbou pro vývoj .NET.
 3. Dokument Word: Připravte si dokument Word, se kterým si můžete hrát. Použijeme vzorový dokument s názvem "asijská typografie.docx".
 4. Základní znalost C#: Abyste mohli postupovat podle příkladů kódu, měli byste být obeznámeni s programováním C#.

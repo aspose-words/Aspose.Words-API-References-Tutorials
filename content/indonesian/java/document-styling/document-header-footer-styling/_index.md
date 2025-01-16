@@ -87,7 +87,7 @@ Untuk memastikan pengalaman yang lancar saat menata header dan footer dokumen, p
 
 ### Bagaimana cara menghapus header atau footer dari bagian tertentu?
 
-Anda dapat menghapus header atau footer dari bagian tertentu dengan mengakses`HeaderFooter` objek dan menyetel kontennya ke null. Misalnya:
+ Anda dapat menghapus header atau footer dari bagian tertentu dengan mengakses`HeaderFooter` objek dan menyetel kontennya ke null. Misalnya:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Dapatkah saya menambahkan bidang khusus, seperti judul dokumen, ke header atau footer?
 
-Ya, Anda dapat menambahkan kolom kustom ke header atau footer. Buat`Run` elemen dan masukkan ke dalam konten header atau footer, dengan menyediakan teks yang diinginkan. Sesuaikan format sesuai kebutuhan.
+ Ya, Anda dapat menambahkan kolom kustom ke header atau footer. Buat`Run` elemen dan masukkan ke dalam konten header atau footer, dengan menyediakan teks yang diinginkan. Sesuaikan format sesuai kebutuhan.
 
 ### Apakah Aspose.Words untuk Java kompatibel dengan berbagai format dokumen?
 

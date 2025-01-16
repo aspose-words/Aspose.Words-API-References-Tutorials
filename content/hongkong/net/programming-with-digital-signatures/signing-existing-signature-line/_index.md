@@ -2,7 +2,7 @@
 title: 在 Word 文件中簽署現有簽名行
 linktitle: 在 Word 文件中簽署現有簽名行
 second_title: Aspose.Words 文件處理 API
-description: 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中簽署現有簽名行。非常適合開發人員。
+description: 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 對 Word 文件中的現有簽名行進行簽署。非常適合開發人員。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-digital-signatures/signing-existing-signature-line/
@@ -102,7 +102,7 @@ Aspose.Words 支援各種影像格式，但使用增強型圖元檔案 (EMF) 可
 
 ### 如何獲得數位憑證？
 
-您可以在線上從各個提供者購買數位憑證。確保憑證為 PFX 格式並且您有密碼。
+您可以在線上從各個提供者購買數位憑證。確保憑證為 PFX 格式並且您擁有密碼。
 
 ### 在哪裡可以找到有關 Aspose.Words for .NET 的更多文件？
 

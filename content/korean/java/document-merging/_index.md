@@ -34,5 +34,3 @@ Aspose.Words for Java를 사용하여 문서를 결합하고 추가하는 방법
 Java에서 Aspose.Words를 사용하여 문서의 차이점을 비교하는 방법을 알아보세요. 단계별 가이드는 정확한 문서 관리를 보장합니다.
 ### [DocumentBuilder로 문서 병합](./merging-documents-documentbuilder/)
 Aspose.Words for Java로 Word 문서를 조작하는 방법을 알아보세요. Java에서 프로그래밍 방식으로 문서를 만들고, 편집하고, 병합하고, 변환하세요.
-### [문서 분할 및 추출](./document-splitting-extraction/)
-Aspose.Words for Java를 사용하여 문서를 손쉽게 분할하고 추출하는 방법을 알아보세요. 단계별 안내로 문서 처리 작업을 간소화하세요.

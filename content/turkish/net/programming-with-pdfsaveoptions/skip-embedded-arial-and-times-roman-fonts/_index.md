@@ -81,7 +81,7 @@ Hayır, olmaz. Arial ve Times Roman standart yazı tipleri olduğundan, görün�
 Evet, gerektiğinde diğer yazı tiplerinin gömülmesini atlayacak şekilde kaydetme seçeneklerini yapılandırabilirsiniz.
 
 ### Aspose.Words for .NET ücretsiz mi?
-Aspose.Words for .NET, indirebileceğiniz ücretsiz bir deneme sürümü sunuyor[Burada](https://releases.aspose.com/) , ancak tam erişim için bir lisans satın almanız gerekir[Burada](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET, indirebileceğiniz ücretsiz bir deneme sürümü sunuyor[Burada](https://releases.aspose.com/) , ancak tam erişim için bir lisans satın almanız gerekir[Burada](https://purchase.aspose.com/buy).
 
 ### Aspose.Words for .NET hakkında daha fazla öğreticiyi nerede bulabilirim?
- Kapsamlı dokümantasyon ve eğitimler bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+Kapsamlı dokümantasyon ve eğitimler bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

@@ -2,7 +2,7 @@
 title: Вставить диаграмму области в документ Word
 linktitle: Вставить диаграмму области в документ Word
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как вставить диаграмму с областями в документ с помощью Aspose.Words for .NET. Добавьте ряд данных и сохраните документ с диаграммой.
+description: Узнайте, как вставить диаграмму с областями в документ с помощью Aspose.Words for .NET. Добавьте данные серий и сохраните документ с диаграммой.
 type: docs
 weight: 10
 url: /ru/net/programming-with-charts/insert-area-chart/

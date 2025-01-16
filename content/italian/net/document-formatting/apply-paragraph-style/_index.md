@@ -92,7 +92,7 @@ Assolutamente! Puoi applicare stili diversi a paragrafi diversi per soddisfare l
 
 ### Come faccio a sapere quali identificatori di stile sono disponibili?
 
- È possibile fare riferimento alla documentazione di Aspose.Words per un elenco completo degli identificatori di stile[Qui](https://reference.aspose.com/words/net/).
+ Puoi fare riferimento alla documentazione di Aspose.Words per un elenco completo degli identificatori di stile[Qui](https://reference.aspose.com/words/net/).
 
 ### Posso usare Aspose.Words per .NET con altri linguaggi .NET?
 

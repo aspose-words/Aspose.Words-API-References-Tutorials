@@ -355,4 +355,4 @@ Om tekst in velden te negeren tijdens vervanging, kunt u de volgende instelling 
 
 ### Waarvoor dient de optie UseLegacyOrder?
 
-De`UseLegacyOrder` optie in`FindReplaceOptions` stelt u in staat om legacy order te gebruiken bij het uitvoeren van zoek- en vervangbewerkingen. Dit kan handig zijn in bepaalde scenario's waar legacy order-gedrag gewenst is.
+ De`UseLegacyOrder` optie in`FindReplaceOptions` stelt u in staat om legacy order te gebruiken bij het uitvoeren van zoek- en vervangbewerkingen. Dit kan handig zijn in bepaalde scenario's waar legacy order-gedrag gewenst is.

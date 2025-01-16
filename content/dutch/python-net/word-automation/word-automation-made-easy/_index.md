@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /nl/python-net/word-automation/word-automation-made-easy/
 ---
-
 ## Invoering
 
 In de snelle wereld van vandaag is het automatiseren van taken essentieel geworden om de efficiëntie en productiviteit te verbeteren. Een van die taken is Word Automation, waarmee we Word-documenten programmatisch kunnen maken, bewerken en verwerken. In deze stapsgewijze tutorial onderzoeken we hoe u Word Automation eenvoudig kunt bereiken met Aspose.Words voor Python, een krachtige bibliotheek die een breed scala aan functies biedt voor tekstverwerking en documentmanipulatie.
@@ -67,14 +66,27 @@ font.bold = True
 Tabellen zijn een belangrijk onderdeel van Word-documenten en Aspose.Words maakt het eenvoudig om ermee te werken.
 
 ```python
-# Add a table to the document
-table = doc.get_child_nodes(aw.NodeType.TABLE, True).add()
-
-# Add rows and cells to the table
-table.ensure_minimum()
-for row in table.rows:
-    for cell in row.cells:
-        cell.get_first_paragraph().get_runs().add("Cell Text")
+builder = aw.DocumentBuilder(doc=doc)
+table = builder.start_table()
+builder.insert_cell()
+builder.write('City')
+builder.insert_cell()
+builder.write('Country')
+builder.end_row()
+builder.insert_cell()
+builder.write('London')
+builder.insert_cell()
+builder.write('U.K.')
+builder.end_table()
+# Use the first row's "RowFormat" property to modify the formatting
+# of the contents of all cells in this row.
+row_format = table.first_row.row_format
+row_format.height = 25
+row_format.borders.get_by_border_type(aw.BorderType.BOTTOM).color = aspose.pydrawing.Color.red
+# Use the "CellFormat" property of the first cell in the last row to modify the formatting of that cell's contents.
+cell_format = table.last_row.first_cell.cell_format
+cell_format.width = 100
+cell_format.shading.background_pattern_color = aspose.pydrawing.Color.orange
 ```
 
 ## Afbeeldingen en vormen invoegen
@@ -107,7 +119,7 @@ Zodra we klaar zijn met het bewerken van het document, kunnen we het in verschil
 
 ```python
 # Save the document to a file
-doc.save("output.docx", aw.SaveFormat.DOCX)
+doc.save("output.docx")
 ```
 
 ## Geavanceerde functies voor woordautomatisering

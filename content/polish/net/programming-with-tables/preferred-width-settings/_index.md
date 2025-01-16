@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-Ten`PreferredWidth.Auto` ustawienie pozwala tej komórce rozszerzać się lub kurczyć w oparciu o przestrzeń pozostałą po uwzględnieniu innych komórek. Dzięki temu układ tabeli wygląda na zrównoważony i profesjonalny.
+ Ten`PreferredWidth.Auto` ustawienie pozwala tej komórce rozszerzać się lub kurczyć w oparciu o przestrzeń pozostałą po uwzględnieniu innych komórek. Dzięki temu układ tabeli wygląda na zrównoważony i profesjonalny.
 
 ## Krok 5: Zakończ i zapisz dokument
 

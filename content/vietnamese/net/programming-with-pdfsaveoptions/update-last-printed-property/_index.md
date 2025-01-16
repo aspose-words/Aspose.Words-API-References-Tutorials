@@ -80,7 +80,7 @@ Việc cập nhật thuộc tính in gần nhất giúp theo dõi việc sử d�
 Có, Aspose.Words for .NET cho phép bạn cập nhật nhiều thuộc tính khác nhau của tài liệu, chẳng hạn như tác giả, tiêu đề, chủ đề, v.v.
 
 ### Aspose.Words cho .NET có miễn phí không?
-Aspose.Words cho .NET cung cấp bản dùng thử miễn phí mà bạn có thể tải xuống[đây](https://releases.aspose.com/). Để sử dụng lâu dài, bạn sẽ cần phải mua giấy phép.
+ Aspose.Words cho .NET cung cấp bản dùng thử miễn phí mà bạn có thể tải xuống[đây](https://releases.aspose.com/). Để sử dụng lâu dài, bạn sẽ cần phải mua giấy phép.
 
 ### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
-Bạn có thể tìm thấy tài liệu chi tiết về Aspose.Words cho .NET[đây](https://reference.aspose.com/words/net/).
+ Bạn có thể tìm thấy tài liệu chi tiết về Aspose.Words cho .NET[đây](https://reference.aspose.com/words/net/).

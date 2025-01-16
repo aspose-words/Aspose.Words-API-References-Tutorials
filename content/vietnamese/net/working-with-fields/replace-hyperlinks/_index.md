@@ -86,7 +86,7 @@ Có, Aspose.Words hỗ trợ các cấu trúc phức tạp như bảng, hình �
  Có, bạn có thể tải xuống bản dùng thử miễn phí từ[đây](https://releases.aspose.com/).
 
 ### Tôi có thể tìm tài liệu về Aspose.Words cho .NET ở đâu?
-Tài liệu chi tiết có sẵn[đây](https://reference.aspose.com/words/net/).
+ Tài liệu chi tiết có sẵn[đây](https://reference.aspose.com/words/net/).
 
 ### Làm thế nào tôi có thể nhận được giấy phép tạm thời cho Aspose.Words dành cho .NET?
  Có thể xin được giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).

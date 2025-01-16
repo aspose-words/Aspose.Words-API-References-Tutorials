@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## 3단계: DocumentBuilder 사용
 
-그만큼`DocumentBuilder` Aspose.Words의 클래스는 문서 구성에 도움이 되는 강력한 도구입니다. 이를 사용하여 문서에 차트를 삽입합니다.
+ 그만큼`DocumentBuilder` Aspose.Words의 클래스는 문서 구성에 도움이 되는 강력한 도구입니다. 이를 사용하여 문서에 차트를 삽입합니다.
 
  인스턴스를 초기화합니다.`DocumentBuilder` 클래스에서 문서 객체를 생성자에 전달합니다.
 

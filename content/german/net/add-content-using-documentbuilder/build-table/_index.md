@@ -19,7 +19,7 @@ Bevor wir uns auf unser Tischbau-Abenteuer stürzen, sollten wir sicherstellen, 
 - .NET Framework (4.0 oder höher)
 - Aspose.Words für .NET-Bibliothek
 
- Wenn Sie Aspose.Words noch nicht haben, können Sie ganz einfach[Laden Sie es hier herunter](https://releases.aspose.com/words/net/) Sie können auch mit einem[Kostenlose Testversion](https://releases.aspose.com/) wenn Sie das Wasser testen möchten. Für diejenigen, die bereit sind, den Sprung zu wagen, können Sie[eine Lizenz kaufen](https://purchase.aspose.com/buy) oder wenn Sie mehr Zeit zur Auswertung benötigen, holen Sie sich ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
+ Wenn Sie Aspose.Words noch nicht haben, können Sie ganz einfach[Laden Sie es hier herunter](https://releases.aspose.com/words/net/) Sie können auch mit einem[Kostenlose Testversion](https://releases.aspose.com/) wenn Sie das Wasser testen möchten. Für diejenigen, die bereit sind, den Sprung zu wagen, können Sie[eine Lizenz kaufen](https://purchase.aspose.com/buy)oder wenn Sie mehr Zeit zur Auswertung benötigen, holen Sie sich ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
 
 ## Namespaces importieren
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Durch die Verwendung`StartTable`sagen wir Aspose.Words, dass wir dabei sind, eine Tabelle zu erstellen.`InsertCell` Methode fügt die erste Zelle hinzu und`AutoFit` stellt sicher, dass unsere Spalten eine feste Breite haben.
+ Durch die Verwendung`StartTable` sagen wir Aspose.Words, dass wir dabei sind, eine Tabelle zu erstellen.`InsertCell` Methode fügt die erste Zelle hinzu und`AutoFit` stellt sicher, dass unsere Spalten eine feste Breite haben.
 
 ## Schritt 3: Formatieren Sie die erste Zeile
 
@@ -70,7 +70,7 @@ builder.Write("This is row 1 cell 2");
 builder.EndRow();
 ```
 
-Stellen Sie sich das so vor, als würden Sie die Tischdecke aufdecken und das erste Geschirr aufstellen. Wir sorgen dafür, dass alles ordentlich und sauber aussieht.
+Stellen Sie sich das so vor, als würden Sie die Tischdecke aufstellen und das erste Geschirr aufstellen. Wir sorgen dafür, dass alles ordentlich und sauber aussieht.
 
 ## Schritt 4: Erstellen Sie die zweite Zeile mit benutzerdefinierter Formatierung
 
@@ -91,7 +91,7 @@ builder.Writeln("This is row 2 cell 2");
 builder.EndRow();
 ```
 
- Hier legen wir die Höhe der Reihe fest und sorgen dafür, dass sie fixiert bleibt mit`HeightRule.Exactly`. Durch die Änderungen der Textausrichtung fällt unsere Tabelle auf und erhält einen Hauch von Einzigartigkeit.
+ Hier legen wir die Höhe der Reihe fest und stellen sicher, dass sie fixiert bleibt mit`HeightRule.Exactly`. Durch die Änderungen der Textausrichtung fällt unsere Tabelle auf und erhält einen Hauch von Einzigartigkeit.
 
 ## Schritt 5: Beenden Sie die Tabelle
 
@@ -125,7 +125,7 @@ Denken Sie daran: Übung macht den Meister. Scheuen Sie sich also nicht, mit ver
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die programmgesteuerte Arbeit mit Word-Dokumenten. Sie können damit Dokumente erstellen, bearbeiten und manipulieren, ohne Microsoft Word zu benötigen.
 
 ### Wie installiere ich Aspose.Words für .NET?
- Du kannst[Laden Sie Aspose.Words für .NET hier herunter](https://releases.aspose.com/words/net/). Befolgen Sie die bereitgestellten Installationsanweisungen, um es in Ihrer Entwicklungsumgebung einzurichten.
+ Du kannst[Laden Sie Aspose.Words für .NET hier herunter](https://releases.aspose.com/words/net/)Befolgen Sie die bereitgestellten Installationsanweisungen, um es in Ihrer Entwicklungsumgebung einzurichten.
 
 ### Kann ich Aspose.Words kostenlos nutzen?
  Aspose.Words bietet eine[Kostenlose Testversion](https://releases.aspose.com/) damit Sie die Funktionen testen können. Für eine erweiterte Nutzung können Sie eine Lizenz erwerben oder eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).

@@ -86,7 +86,7 @@ Na koniec zapisujemy każdy nowy dokument pod unikalną nazwą. Ten krok zapewni
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-Ten`Save` Metoda zapisuje nowy dokument w określonym katalogu pod unikalną nazwą opartą na indeksie sekcji.
+ Ten`Save` Metoda zapisuje nowy dokument w określonym katalogu pod unikalną nazwą opartą na indeksie sekcji.
 
 ## Wniosek
 

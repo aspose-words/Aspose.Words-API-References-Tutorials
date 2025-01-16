@@ -40,7 +40,7 @@ Most merüljünk el a betöltött dokumentumból bélyegképek létrehozásának
 ```java
 // Java kód a dokumentum bélyegképének létrehozásához
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ Dokumentum miniatűrök létrehozása az Aspose.Words for Java használatával z
 
 ### Hogyan telepíthetem az Aspose.Words for Java programot?
 
- Az Aspose.Words for Java telepítéséhez látogasson el a letöltési oldalra[itt](https://releases.aspose.com/words/java/)és kövesse a mellékelt telepítési utasításokat.
+Az Aspose.Words for Java telepítéséhez látogasson el a letöltési oldalra[itt](https://releases.aspose.com/words/java/)és kövesse a mellékelt telepítési utasításokat.
 
 ### Testreszabhatom a generált bélyegkép méretét?
 

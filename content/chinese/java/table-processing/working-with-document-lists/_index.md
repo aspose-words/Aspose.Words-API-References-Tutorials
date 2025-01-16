@@ -38,23 +38,11 @@ Aspose.Words for Java 是一个强大的 API，它使 Java 开发人员能够处
 //导入所需的包
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        //初始化新文档
-        Document doc = new Document();
-
-        //创建列表
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        //添加列表项
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        //保存文档
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## 修改文档列表
@@ -69,21 +57,18 @@ public class DocumentListExample {
 以下是修改文档列表的代码片段：
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        //加载现有文档
-        Document doc = new Document("DocumentListExample.docx");
-
-        //访问列表
-        List list = doc.getLists().get(0);
-
-        //添加新项目
-        list.getListItems().add("New Item");
-
-        //保存修改后的文档
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    //检查该段落是否是列表的一部分。
+    if (paragraph.isListItem()) {
+        //更新最后一段列表。
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## 从文档列表中提取信息
@@ -97,23 +82,21 @@ public class ModifyDocumentListExample {
 以下是从文档列表提取信息的代码片段：
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        //加载文档
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        //访问列表
-        List list = doc.getLists().get(0);
-
-        //遍历列表项并打印它们
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## 常见问题 (FAQ)
+## 结论
+
+在本综合指南中，我们探索了使用 Aspose.Words for Java 处理文档列表的世界。您已经学会了如何创建、修改和提取文档列表中的信息，所有这些都借助 Aspose.Words for Java 的强大功能和灵活性。立即开始在您的 Java 项目中实施这些技术并简化您的文档自动化任务。
+
+
+## 常见问题解答
 
 ### 如何在文档列表中添加项目符号？
 要将项目符号添加到文档列表中，请在创建列表时使用适当的 ListTemplate。例如，使用`ListTemplate.BULLET_DEFAULT`而不是`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ public class ExtractListItemsExample {
 
 ### Aspose.Words for Java 是否支持处理文档中的表格？
 是的，Aspose.Words for Java 为处理表格提供了广泛的支持，使您可以轻松地创建、修改和提取表格数据。
-
-## 结论
-
-在本综合指南中，我们探索了使用 Aspose.Words for Java 处理文档列表的世界。您已经学会了如何创建、修改和提取文档列表中的信息，所有这些都借助 Aspose.Words for Java 的强大功能和灵活性。立即开始在您的 Java 项目中实施这些技术并简化您的文档自动化任务。

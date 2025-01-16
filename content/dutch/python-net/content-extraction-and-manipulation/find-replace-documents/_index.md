@@ -18,7 +18,7 @@ Voordat we ingaan op de geavanceerde technieken, moet u ervoor zorgen dat u aan 
 
 1.  Python-installatie: Zorg ervoor dat Python op uw systeem is geïnstalleerd. U kunt het downloaden van[hier](https://www.python.org/downloads/).
 
-2. Aspose.Words voor Python: U moet Aspose.Words voor Python geïnstalleerd hebben. U kunt het downloaden van[hier](https://releases.aspose.com/words/python/).
+2.  Aspose.Words voor Python: U moet Aspose.Words voor Python geïnstalleerd hebben. U kunt het downloaden van[hier](https://releases.aspose.com/words/python/).
 
 3. Documentvoorbereiding: Zorg dat u een Word-document bij de hand hebt waarop u zoek- en vervangbewerkingen wilt uitvoeren.
 
@@ -118,4 +118,4 @@ Ja, u kunt jokers en reguliere expressies gebruiken om geavanceerde zoek- en ver
 
 ### Kan ik tekst vervangen en tegelijkertijd de aangebrachte wijzigingen bijhouden?
 
- Ja, u kunt wijzigingen bijhouden met behulp van de`revision` kenmerk van Aspose.Words. Hiermee kunt u alle wijzigingen in het document bijhouden.
+ Ja, u kunt wijzigingen bijhouden met behulp van de`revision`kenmerk van Aspose.Words. Hiermee kunt u alle wijzigingen in het document bijhouden.

@@ -91,7 +91,7 @@ Non, le fait de sauter des images n'affecte que les images. Le texte reste intac
 
 ### Puis-je utiliser cette fonctionnalité avec d’autres formats de documents ?
 
-Le`SkipPdfImages` L'option est spécifiquement destinée aux documents PDF. Pour les autres formats, différentes options et méthodes sont disponibles.
+ Le`SkipPdfImages` L'option est spécifiquement destinée aux documents PDF. Pour les autres formats, différentes options et méthodes sont disponibles.
 
 ### Comment puis-je vérifier que des images ont été ignorées ?
 

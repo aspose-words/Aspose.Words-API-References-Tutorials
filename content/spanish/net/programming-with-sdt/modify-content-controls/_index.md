@@ -27,7 +27,7 @@ Antes de entrar en los detalles de la modificación de los controles de contenid
 
 ## Importar espacios de nombres
 
-Para comenzar a trabajar con Aspose.Words, debe importar los espacios de nombres correspondientes en su proyecto de C#. A continuación, le indicamos cómo hacerlo:
+Para comenzar a trabajar con Aspose.Words, debe importar los espacios de nombres correspondientes a su proyecto de C#. A continuación, le indicamos cómo hacerlo:
 
 ```csharp
 using Aspose.Words;

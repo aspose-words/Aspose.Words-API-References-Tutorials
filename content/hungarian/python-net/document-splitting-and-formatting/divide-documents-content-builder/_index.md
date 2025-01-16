@@ -41,14 +41,14 @@ doc = aw.Document()
 
 ## Tartalom hozzáadása a Content Builder segítségével
 
-A Content Builder modul lehetővé teszi számunkra, hogy hatékonyan adjunk tartalmat a dokumentumhoz. Adjunk hozzá egy címet és néhány bevezető szöveget.
+Content Builder modul lehetővé teszi számunkra, hogy hatékonyan adjunk tartalmat a dokumentumhoz. Adjunk hozzá egy címet és néhány bevezető szöveget.
 
 ```python
 builder = aw.DocumentBuilder(doc)
 
 # Add a title
 builder.bold()
-builder.font.size = aw.units.point_to_twip(16)
+builder.font.size = 16
 builder.write("Document Precision with Content Builder\n\n")
 
 # Add an introduction

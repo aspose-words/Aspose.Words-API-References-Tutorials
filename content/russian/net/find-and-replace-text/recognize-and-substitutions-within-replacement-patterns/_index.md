@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`Document` объект является ядром Aspose.Words. Он представляет собой весь документ Word.
+ The`Document` объект является ядром Aspose.Words. Он представляет собой весь документ Word.
 
 ## Шаг 2: Добавьте текст в документ
 
@@ -50,7 +50,7 @@ The`Document` объект является ядром Aspose.Words. Он пре
 builder.Write("Jason give money to Paul.");
 ```
 
-The`DocumentBuilder` класс — мощный инструмент для добавления текста и других элементов в ваш документ.
+ The`DocumentBuilder` класс — мощный инструмент для добавления текста и других элементов в ваш документ.
 
 ## Шаг 3: Определите шаблон регулярного выражения
 
@@ -70,7 +70,7 @@ Aspose.Words позволяет использовать подстановки 
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
-The`FindReplaceOptions` класс предоставляет различные возможности для настройки операций поиска и замены.
+ The`FindReplaceOptions` класс предоставляет различные возможности для настройки операций поиска и замены.
 
 ## Шаг 5: Выполните замену
 

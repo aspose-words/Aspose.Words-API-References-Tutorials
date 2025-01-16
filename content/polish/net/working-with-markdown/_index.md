@@ -2,7 +2,7 @@
 title: Przetwarzanie słów za pomocą Markdown
 linktitle: Przetwarzanie słów za pomocą Markdown
 second_title: Aspose.Words API przetwarzania dokumentów
-description: Dowiedz się, jak pracować ze składnią języka Markdown w dokumentach programu Word za pomocą pakietu Aspose.Words for .NET, korzystając z tych samouczków krok po kroku i przykładów praktycznych.
+description: Dowiedz się, jak pracować ze składnią Markdown w dokumentach programu Word za pomocą pakietu Aspose.Words dla platformy .NET, korzystając z tych samouczków krok po kroku i przykładów praktycznych.
 type: docs
 weight: 810
 url: /pl/net/working-with-markdown/

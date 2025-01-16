@@ -15,7 +15,7 @@ url: /ko/net/document-protection/get-protection-type/
 
 코딩 부분으로 넘어가기 전에 먼저 필요한 모든 것이 있는지 확인해 보겠습니다.
 
-1.  .NET 라이브러리용 Aspose.Words: 아직 다운로드하지 않았다면 다운로드하여 설치하세요.[.NET 라이브러리를 위한 Aspose.Words](https://releases.aspose.com/words/net/).
+1. .NET 라이브러리용 Aspose.Words: 아직 다운로드하지 않았다면 다운로드하여 설치하세요.[.NET 라이브러리를 위한 Aspose.Words](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 IDE.
 3. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 따라하는 데 도움이 됩니다.
 
@@ -41,7 +41,7 @@ using Aspose.Words;
 
 ## 2단계: 문서 로드
 
- 이제 프로젝트가 설정되었으므로 확인하려는 Word 문서를 로드해 보겠습니다. 바꾸기`"YOUR DOCUMENT DIRECTORY"` 문서의 실제 경로를 입력합니다.
+이제 프로젝트가 설정되었으므로 확인하려는 Word 문서를 로드해 보겠습니다. 바꾸기`"YOUR DOCUMENT DIRECTORY"` 문서의 실제 경로를 입력합니다.
 
 ```csharp
 // 문서 디렉토리 경로
@@ -75,13 +75,13 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 만들고, 편집하고, 변환하고, 조작할 수 있는 강력한 라이브러리입니다.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
- 당신은 시작할 수 있습니다[무료 체험](https://releases.aspose.com/) , 하지만 모든 기능을 사용하려면 라이센스를 구매해야 합니다.[구매 옵션](https://purchase.aspose.com/buy).
+ 당신은 시작할 수 있습니다[무료 체험](https://releases.aspose.com/) 하지만 모든 기능을 사용하려면 라이센스를 구매해야 합니다.[구매 옵션](https://purchase.aspose.com/buy).
 
 ### Aspose.Words는 어떤 보호 유형을 감지할 수 있나요?
 Aspose.Words는 NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments, AllowOnlyFormFields 등 다양한 보호 유형을 감지할 수 있습니다.
 
 ### 문제가 발생하면 어떻게 지원을 받을 수 있나요?
-문제가 있는 경우 다음을 방문할 수 있습니다.[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 요청하세요.
+ 문제가 있는 경우 다음을 방문할 수 있습니다.[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 요청하세요.
 
 ### Aspose.Words는 .NET Core와 호환됩니까?
 네, Aspose.Words는 .NET Framework와 .NET Core 모두와 호환됩니다.

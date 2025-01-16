@@ -19,11 +19,7 @@ url: /hi/python-net/document-structure-and-content-manipulation/document-ole-obj
 - पायथन लाइब्रेरी के लिए Aspose.Words स्थापित
 - वर्ड दस्तावेज़ संरचना की बुनियादी समझ
 
-## OLE ऑब्जेक्ट्स एम्बेड करना
-
-OLE ऑब्जेक्ट आपको बाहरी फ़ाइलों, जैसे स्प्रेडशीट या प्रेजेंटेशन, को अपने Word दस्तावेज़ों में सहजता से एकीकृत करने की अनुमति देते हैं। OLE ऑब्जेक्ट एम्बेड करने के लिए इन चरणों का पालन करें:
-
-### चरण 1: आवश्यक लाइब्रेरीज़ जोड़ना
+## चरण 1: आवश्यक लाइब्रेरीज़ जोड़ना
 
 Aspose.Words लाइब्रेरी और किसी भी अन्य निर्भरता से आवश्यक मॉड्यूल आयात करके शुरू करें:
 
@@ -31,7 +27,7 @@ Aspose.Words लाइब्रेरी और किसी भी अन्य
 import aspose.words as aw
 ```
 
-### चरण 2: वर्ड दस्तावेज़ बनाना
+## चरण 2: वर्ड दस्तावेज़ बनाना
 
 पायथन के लिए Aspose.Words का उपयोग करके एक नया Word दस्तावेज़ बनाएँ:
 
@@ -39,42 +35,16 @@ import aspose.words as aw
 doc = aw.Document()
 ```
 
-### चरण 3: OLE ऑब्जेक्ट सम्मिलित करना
+## चरण 3: OLE ऑब्जेक्ट सम्मिलित करना
 
 अब, आप अपने दस्तावेज़ में एक OLE ऑब्जेक्ट डाल सकते हैं। उदाहरण के लिए, आइए एक एक्सेल स्प्रेडशीट एम्बेड करें:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## ActiveX नियंत्रण एम्बेड करना
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", सत्य, सत्य, कोई नहीं)
 
-ActiveX नियंत्रण आपके दस्तावेज़ों में अन्तरक्रियाशीलता लाते हैं, जिससे उपयोगकर्ता एम्बेडेड सामग्री के साथ सहभागिता कर सकते हैं। ActiveX नियंत्रण एम्बेड करने के लिए इन चरणों का पालन करें:
-
-### चरण 1: आवश्यक लाइब्रेरीज़ जोड़ना
-
-OLE ऑब्जेक्ट्स की तरह, आवश्यक मॉड्यूल आयात करके प्रारंभ करें:
-
-```python
-import aspose.words as aw
-```
-
-### चरण 2: वर्ड दस्तावेज़ बनाना
-
-एक नया वर्ड दस्तावेज़ बनाएँ:
-
-```python
-doc = aw.Document()
-```
-
-### चरण 3: ActiveX नियंत्रण सम्मिलित करना
-
-मान लीजिए कि आप मल्टीमीडिया प्लेयर एम्बेड करना चाहते हैं। आप यह कैसे कर सकते हैं:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## अन्तरक्रियाशीलता और कार्यक्षमता में वृद्धि

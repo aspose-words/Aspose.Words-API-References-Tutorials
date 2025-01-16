@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## تطبيق أنماط وأحجام الخطوط
-
-قم بتعزيز قابلية قراءة مستندك وجاذبيته البصرية من خلال تطبيق أنماط وأحجام الخطوط. استخدم الكود التالي لتغيير نمط وحجم الخط في الفقرة:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## تنسيق الفقرات والعناوين
+## تنسيق الفقرات
 
 لتنظيم مستندك بشكل فعال، يعد تنسيق الفقرات والعناوين أمرًا بالغ الأهمية. يمكنك تحقيق ذلك باستخدام الكود أدناه:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## العمل مع القوائم والنقاط
 
 تنظم القوائم والنقاط المحتوى وتوفر الوضوح. قم بتنفيذها باستخدام Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## إدارة تخطيط الصفحة والهوامش
+## إدارة تخطيط الصفحة
 
 التحكم في تخطيط الصفحة والهوامش للحصول على عرض مثالي:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## تطبيق الأنماط والموضوعات

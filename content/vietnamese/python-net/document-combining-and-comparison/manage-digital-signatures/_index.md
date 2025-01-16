@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /vi/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## Giới thiệu về chữ ký số
 
 Chữ ký số đóng vai trò là tương đương điện tử của chữ ký viết tay. Chúng cung cấp một cách để xác minh tính xác thực, tính toàn vẹn và nguồn gốc của các tài liệu điện tử. Khi một tài liệu được ký số, một hàm băm mật mã được tạo ra dựa trên nội dung của tài liệu. Sau đó, hàm băm này được mã hóa bằng khóa riêng của người ký, tạo ra chữ ký số. Bất kỳ ai có khóa công khai tương ứng đều có thể xác minh chữ ký và xác định tính xác thực của tài liệu.
@@ -25,7 +24,7 @@ Chữ ký số đóng vai trò là tương đương điện tử của chữ ký
 2. Nhập các mô-đun cần thiết: Nhập các mô-đun cần thiết vào tập lệnh Python của bạn:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## Tải và Truy cập Tài liệu
@@ -33,7 +32,7 @@ Chữ ký số đóng vai trò là tương đương điện tử của chữ ký
 Trước khi thêm hoặc xác minh chữ ký số, bạn cần tải tài liệu bằng Aspose.Words:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## Thêm chữ ký số vào tài liệu
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 Để thêm chữ ký số vào tài liệu, bạn sẽ cần một chứng chỉ số:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 Bây giờ, hãy ký vào tài liệu:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## Xác minh chữ ký số
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## Xóa chữ ký số
-
-Để xóa chữ ký số khỏi tài liệu:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## Đảm bảo tính xác thực của tài liệu
-
-Chữ ký số đảm bảo tính xác thực của tài liệu bằng cách xác nhận nguồn gốc và tính toàn vẹn của tài liệu. Chúng bảo vệ chống lại sự giả mạo và sửa đổi trái phép.
-
 ## Tùy chỉnh giao diện chữ ký số
 
 Bạn có thể tùy chỉnh giao diện của chữ ký số:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## Phần kết luận

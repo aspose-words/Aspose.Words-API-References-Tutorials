@@ -14,7 +14,7 @@ Bu kapsamlı kılavuzda, Java için Aspose.Words'deki belge şekillerinin dünya
 
 ## Belge Şekillerine Başlarken
 
-Koda geçmeden önce ortamımızı ayarlayalım. Projenize Aspose.Words for Java'nın entegre olduğundan emin olun. Eğer henüz entegre etmediyseniz, Aspose web sitesinden indirebilirsiniz[Java için Aspose.Words'ü indirin](https://releases.aspose.com/words/java/)
+ Koda geçmeden önce ortamımızı ayarlayalım. Projenize Aspose.Words for Java'nın entegre olduğundan emin olun. Eğer henüz entegre etmediyseniz, Aspose web sitesinden indirebilirsiniz[Java için Aspose.Words'ü indirin](https://releases.aspose.com/words/java/)
 
 ## Belgelere Şekil Ekleme
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

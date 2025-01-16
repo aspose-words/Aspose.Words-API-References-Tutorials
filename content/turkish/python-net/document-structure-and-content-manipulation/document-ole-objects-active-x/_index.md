@@ -19,11 +19,7 @@ OLE nesnelerini ve ActiveX denetimlerini yerleştirmeye başlamadan önce, gerek
 - Python kütüphanesi için Aspose.Words yüklendi
 - Word belge yapısının temel bir anlayışı
 
-## OLE Nesnelerini Yerleştirme
-
-OLE nesneleri, elektronik tablolar veya sunular gibi harici dosyaları Word belgelerinize sorunsuz bir şekilde entegre etmenizi sağlar. Bir OLE nesnesini yerleştirmek için şu adımları izleyin:
-
-### Adım 1: Gerekli Kitaplıkları Ekleme
+## Adım 1: Gerekli Kitaplıkları Ekleme
 
 Öncelikle Aspose.Words kütüphanesinden ve diğer bağımlılıklardan gerekli modülleri içe aktarın:
 
@@ -31,7 +27,7 @@ OLE nesneleri, elektronik tablolar veya sunular gibi harici dosyaları Word belg
 import aspose.words as aw
 ```
 
-### Adım 2: Bir Word Belgesi Oluşturma
+## Adım 2: Bir Word Belgesi Oluşturma
 
 Python için Aspose.Words kullanarak yeni bir Word belgesi oluşturun:
 
@@ -39,42 +35,16 @@ Python için Aspose.Words kullanarak yeni bir Word belgesi oluşturun:
 doc = aw.Document()
 ```
 
-### Adım 3: Bir OLE Nesnesi Ekleme
+## Adım 3: Bir OLE Nesnesi Ekleme
 
 Şimdi, belgenize bir OLE nesnesi ekleyebilirsiniz. Örneğin, bir Excel elektronik tablosunu gömelim:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## ActiveX Denetimlerini Yerleştirme
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", Doğru, Doğru, Hiçbiri)
 
-ActiveX denetimleri belgelerinize etkileşim getirir ve kullanıcıların gömülü içerikle etkileşim kurmasına olanak tanır. Bir ActiveX denetimini gömmek için şu adımları izleyin:
-
-### Adım 1: Gerekli Kitaplıkları Ekleme
-
-Tıpkı OLE nesnelerinde olduğu gibi, gerekli modülleri içe aktararak başlayalım:
-
-```python
-import aspose.words as aw
-```
-
-### Adım 2: Bir Word Belgesi Oluşturma
-
-Yeni bir Word belgesi oluşturun:
-
-```python
-doc = aw.Document()
-```
-
-### Adım 3: ActiveX Denetimi Ekleme
-
-Diyelim ki bir multimedya oynatıcısını yerleştirmek istiyorsunuz. Bunu nasıl yapabileceğinizi anlatalım:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Etkileşim ve İşlevselliği Geliştirme

@@ -40,7 +40,7 @@ public class DocumentExtractor {
 
 ### Thêm Aspose.Words vào Dự án của bạn
 
- Để thêm Aspose.Words vào dự án của bạn, hãy sao chép các tệp JAR đã tải xuống vào thư mục dự án của bạn`lib` và thêm chúng vào classpath của bạn. Bây giờ bạn đã sẵn sàng để khám phá thế giới trích xuất tài liệu!
+Để thêm Aspose.Words vào dự án của bạn, hãy sao chép các tệp JAR đã tải xuống vào thư mục dự án của bạn`lib` và thêm chúng vào classpath của bạn. Bây giờ bạn đã sẵn sàng để khám phá thế giới trích xuất tài liệu!
 
 ## Tải và phân tích tài liệu
 
@@ -64,7 +64,7 @@ DocumentVisitor visitor = new DocumentVisitor();
 // Duyệt qua tài liệu
 doc.accept(visitor);
 
-//Nội dung được trích xuất hiện có sẵn trong trình duyệt của khách truy cập
+// Nội dung được trích xuất hiện có sẵn trong trình duyệt của khách truy cập
 String extractedText = visitor.getText();
 ```
 
@@ -90,7 +90,7 @@ String pageText = doc.extractText(pageInfo);
 Để trích xuất nội dung từ tất cả các trang, bạn có thể sử dụng vòng lặp đơn giản:
 
 ```java
-// Lấy tổng số trang trong tài liệu
+//Lấy tổng số trang trong tài liệu
 int pageCount = doc.getPageCount();
 
 for (int i = 0; i < pageCount; i++) {
@@ -120,7 +120,7 @@ builder.write("This text is bold.");
 Sau khi trích xuất và chỉnh sửa nội dung, bạn có thể lưu nội dung đó vào một tài liệu mới:
 
 ```java
-//Lưu nội dung đã trích xuất vào một tài liệu mới
+// Lưu nội dung đã trích xuất vào một tài liệu mới
 doc.save("extracted_content.docx");
 ```
 

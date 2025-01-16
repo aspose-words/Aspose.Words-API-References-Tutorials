@@ -15,7 +15,7 @@ Hej där, andra kodningsentusiast! Har du någonsin undrat hur man infogar HTML 
 
 Innan vi dyker in i steg-för-steg-guiden, låt oss se till att vi har allt vi behöver. Här är en snabb checklista:
 
-1. Aspose.Words for .NET Library: Om du inte redan har gjort det måste du ladda ner Aspose.Words for .NET-biblioteket. Du kan få det[här](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Om du inte redan har gjort det måste du ladda ner Aspose.Words for .NET-biblioteket. Du kan få det[här](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: Se till att du har en utvecklingsmiljö inställd, som Visual Studio.
 3. .NET Framework: Se till att du har .NET Framework installerat på din dator.
 4. Grundläggande C#-kunskap: En liten förtrogenhet med C# kommer att räcka långt.
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Steg 3: Initiera DocumentBuilder
 
-För att infoga HTML behöver vi hjälp av`DocumentBuilder` klass. Denna praktiska klass gör det enkelt att lägga till innehåll i vårt dokument.
+ För att infoga HTML behöver vi hjälp av`DocumentBuilder` klass. Denna praktiska klass gör det enkelt att lägga till innehåll i vårt dokument.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -88,7 +88,7 @@ Och där har du det! Du har precis infogat HTML i ett Word-dokument med Aspose.W
 
 Att infoga HTML i ett Word-dokument har aldrig varit lättare, eller hur? Med Aspose.Words för .NET kan du sömlöst blanda kraften i HTML med mångsidigheten hos Word-dokument. Oavsett om du automatiserar rapportgenerering eller skapar vackert formaterade dokument, är detta verktyg din bästa lösning.
 
-Om du har några frågor eller behöver mer hjälp, tveka inte att kolla in[dokumentation](https://reference.aspose.com/words/net/), [supportforum](https://forum.aspose.com/c/words/8) , eller skaffa dig en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för att låsa upp den fulla potentialen hos Aspose.Words för .NET.
+ Om du har några frågor eller behöver mer hjälp, tveka inte att kolla in[dokumentation](https://reference.aspose.com/words/net/), [supportforum](https://forum.aspose.com/c/words/8) , eller skaffa dig en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för att låsa upp den fulla potentialen hos Aspose.Words för .NET.
 
 Glad kodning!
 
@@ -107,4 +107,4 @@ Ja, när HTML-koden har infogats kan du manipulera dokumentet ytterligare med de
  Du kan börja med en[gratis provperiod](https://releases.aspose.com/) eller skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för alla funktioner.
 
 ### Var kan jag hitta fler handledningar och exempel?  
-De[dokumentation](https://reference.aspose.com/words/net/) och[supportforum](https://forum.aspose.com/c/words/8)är bra ställen att börja för mer detaljerade guider och stöd från samhället.
+ De[dokumentation](https://reference.aspose.com/words/net/) och[supportforum](https://forum.aspose.com/c/words/8) är bra ställen att börja för mer detaljerade guider och stöd från samhället.
