@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Etapa 4: use o alinhamento automático de conteúdo da tabela
 
-O`Auto` opção de alinhamento pega o alinhamento do primeiro parágrafo na coluna da tabela correspondente. Isso pode ser útil quando você tem alinhamentos mistos em uma única tabela.
+ O`Auto` opção de alinhamento pega o alinhamento do primeiro parágrafo na coluna da tabela correspondente. Isso pode ser útil quando você tem alinhamentos mistos em uma única tabela.
 
 ```csharp
 // Defina o alinhamento como Automático.

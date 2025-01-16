@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
-El`Styles` propiedad de la`Document` La clase nos da acceso a todos los estilos disponibles en el documento. Usamos el`StyleIdentifier.Quote`para seleccionar el estilo de cotización.
+ El`Styles` propiedad de la`Document` La clase nos da acceso a todos los estilos disponibles en el documento. Usamos el`StyleIdentifier.Quote`para seleccionar el estilo de cotización.
 
 ## Paso 4: Aplicar el estilo a la etiqueta del documento estructurado
 

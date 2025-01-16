@@ -7,128 +7,137 @@ type: docs
 weight: 14
 url: /cs/java/table-processing/table-contents-generation/
 ---
-
-Jste připraveni vydat se na cestu ke zvládnutí generování obsahu (TOC) pomocí Aspose.Words for Java? V tomto komplexním průvodci prozkoumáme umění vytvářet dynamické a vizuálně přitažlivé TOC bez námahy. Budete vybaveni znalostmi a dovednostmi potřebnými k bezproblémové implementaci této funkce do vašich aplikací Java. Takže, pojďme se rovnou ponořit!
-
 ## Zavedení
 
-Obsah (TOC) je nezbytnou součástí každého dobře strukturovaného dokumentu. Poskytuje čtenářům cestovní mapu, která jim umožňuje snadno procházet dlouhými dokumenty. Aspose.Words for Java je výkonné API, které zjednodušuje generování TOC v aplikacích Java. V tomto podrobném průvodci pokryjeme vše, co potřebujete vědět, abyste mohli dynamicky vytvářet obsahy pomocí Aspose.Words for Java.
+Měli jste někdy problémy s vytvořením dynamického a profesionálně vypadajícího obsahu (TOC) ve vašich dokumentech aplikace Word? Už nehledejte! S Aspose.Words for Java můžete automatizovat celý proces, čímž ušetříte čas a zajistíte přesnost. Ať už vytváříte komplexní zprávu nebo akademickou práci, tento tutoriál vás provede programovým generováním TOC pomocí Javy. Jste připraveni se ponořit? Začněme!
 
-## Začínáme s Aspose.Words pro Javu
+## Předpoklady
 
-Než se ponoříme do specifik generování TOC, nastavíme naše prostředí a seznámíme se s Aspose.Words for Java.
+Než začneme kódovat, ujistěte se, že máte následující:
 
-### Nastavení vašeho prostředí
+1.  Java Development Kit (JDK): Nainstalovaný ve vašem systému. Můžete si jej stáhnout z[Web společnosti Oracle](https://www.oracle.com/java/technologies/javase-downloads.html).
+2.  Aspose.Words for Java Library: Stáhněte si nejnovější verzi z[stránka vydání](https://releases.aspose.com/words/java/).
+3. Integrované vývojové prostředí (IDE): Například IntelliJ IDEA, Eclipse nebo NetBeans.
+4.  Aspose Temporary License: Abyste se vyhnuli omezením hodnocení, získejte a[dočasná licence](https://purchase.aspose.com/temporary-license/).
 
-Chcete-li začít, ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for Java. Můžete si jej stáhnout z webu[zde](https://releases.aspose.com/words/java/).
+## Importujte balíčky
 
-### Vytvoření nového projektu Java
-
-Začněte vytvořením nového projektu Java ve vašem oblíbeném integrovaném vývojovém prostředí (IDE).
-
-### Přidání Aspose.Words pro Java do vašeho projektu
-
-Přidejte knihovnu Aspose.Words for Java do svého projektu tím, že ji zahrnete do svých závislostí.
-
-### Inicializace Aspose.Words
-
-Ve svém kódu Java inicializujte Aspose.Words, abyste s ním mohli začít pracovat.
+Chcete-li používat Aspose.Words pro Java efektivně, ujistěte se, že importujete požadované třídy. Zde jsou dovozy:
 
 ```java
-// Inicializujte Aspose.Words
-com.aspose.words.Document doc = new com.aspose.words.Document();
+import com.aspose.words.*;
 ```
 
-## Porozumění obsahu (TOC)
+Chcete-li ve svém dokumentu aplikace Word vygenerovat dynamický obsah, postupujte podle těchto kroků.
 
-Než se vrhneme na generování TOC, pojďme hlouběji porozumět tomu, co jsou a jak fungují.
+## Krok 1: Inicializujte Document a DocumentBuilder
 
-### Co je obsah?
+ Prvním krokem je vytvoření nového dokumentu a použití`DocumentBuilder` třídy s ním manipulovat.
 
-Obsah je seznam, který se zobrazuje na začátku dokumentu a poskytuje odkazy na různé oddíly nebo kapitoly v dokumentu. Slouží jako užitečný navigační nástroj pro čtenáře.
-
-### Jak funguje generování TOC?
-
-Generování obsahu zahrnuje identifikaci konkrétních nadpisů nebo obsahu v dokumentu a vytváření odkazů na tyto sekce. Aspose.Words for Java tento proces zjednodušuje automatizací generování TOC na základě předem definovaných pravidel.
-
-## Generování základního obsahu
-
-Nyní, když máme pevný základ, pojďme vygenerovat základní TOC pomocí Aspose.Words for Java.
 
 ```java
-// Vytvořte nový obsah
-com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-tocField.update();
+string dataDir = "Your Document Directory";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Výše uvedený kód vytvoří základní TOC ve vašem dokumentu. Můžete jej dále přizpůsobit zadáním úrovní, formátování a dalších.
+- `Document`: Představuje dokument aplikace Word.
+- `DocumentBuilder`: Pomocná třída, která umožňuje snadnou manipulaci s dokumentem.
 
-## Pokročilé přizpůsobení obsahu
+## Krok 2: Vložte obsah
 
-Aspose.Words for Java nabízí rozsáhlé možnosti přizpůsobení pro vaše obsahy. Pojďme prozkoumat některé pokročilé funkce:
+Nyní vložíme TOC na začátek dokumentu.
 
-### Přizpůsobení stylů obsahu
-
-Styly obsahu můžete definovat tak, aby odpovídaly estetice vašeho dokumentu.
 
 ```java
-// Přizpůsobte styly obsahu
-com.aspose.words.Style tocStyle = doc.getStyles().add(StyleType.PARAGRAPH, "MyTOCStyle");
-tocStyle.getFont().setSize(16);
-tocStyle.getFont().setBold(true);
+builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+builder.insertBreak(BreakType.PAGE_BREAK);
 ```
 
-### Včetně konkrétních nadpisů
+- `insertTableOfContents`: Vloží pole TOC. Parametry specifikují:
+  - `\o "1-3"`: Zahrňte nadpisy úrovní 1 až 3.
+  - `\h`: Vytvořte položky jako hypertextové odkazy.
+  - `\z`: Potlačit čísla stránek pro webové dokumenty.
+  - `\u`: Zachovat styly pro hypertextové odkazy.
+- `insertBreak`: Přidá konec stránky za obsah.
 
-Můžete si vybrat, které nadpisy zahrnout do obsahu, zadáním jejich úrovní obrysu.
+## Krok 3: Přidejte nadpisy k vyplnění obsahu
+
+Abyste naplnili obsah, musíte přidat odstavce se styly nadpisů.
+
 
 ```java
-// Zahrňte pouze konkrétní nadpisy
-tocField.setCode("TOC \\o \"1-3\" \\h \\z");
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 1");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_2);
+builder.writeln("Heading 1.1");
+builder.writeln("Heading 1.2");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 2");
 ```
 
-## Přidání zdrojového kódu pro generování TOC
+- `setStyleIdentifier` : Nastaví styl odstavce na konkrétní úroveň nadpisu (např.`HEADING_1`, `HEADING_2`).
+- `writeln`: Přidá text do dokumentu se zadaným stylem.
 
-Pojďme to udělat o krok dále integrací zdrojového kódu pro automatizaci generování TOC ve vašich aplikacích Java.
+## Krok 4: Přidejte vnořené nadpisy
+
+Chcete-li předvést úrovně obsahu, zahrňte vnořené nadpisy.
+
 
 ```java
-// Automatizujte generování TOC v Javě
-public void generateTOC() {
-    com.aspose.words.Document doc = new com.aspose.words.Document();
-    com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-    tocField.update();
-    // Zde přidejte další přizpůsobení
-}
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_3);
+builder.writeln("Heading 3.1.1");
+builder.writeln("Heading 3.1.2");
+builder.writeln("Heading 3.1.3");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_4);
+builder.writeln("Heading 3.1.3.1");
+builder.writeln("Heading 3.1.3.2");
 ```
 
-Zapouzdřením generování TOC do metody ji můžete snadno začlenit do svých projektů.
+- Přidejte nadpisy hlubších úrovní, abyste zobrazili hierarchii v obsahu.
 
-## Nejčastější dotazy
+## Krok 5: Aktualizujte pole obsahu
 
-### Jak mohu aktualizovat stávající TOC?
+Pole TOC musí být aktualizováno, aby se zobrazily nejnovější nadpisy.
 
-Chcete-li aktualizovat stávající obsah v dokumentu, jednoduše na něj klikněte pravým tlačítkem a vyberte „Aktualizovat pole“. Aspose.Words for Java aktualizuje obsah na základě jakýchkoli změn v záhlaví vašeho dokumentu.
 
-### Mohu vygenerovat více TOC v jednom dokumentu?
+```java
+doc.updateFields();
+```
 
-Ano, můžete vygenerovat více TOC v jednom dokumentu. Pro každý obsah použijte různé kódy polí a upravte jejich nastavení podle potřeby.
+- `updateFields`: Obnoví všechna pole v dokumentu a zajistí, že TOC odráží přidané nadpisy.
 
-### Je Aspose.Words for Java vhodný pro malé i velké dokumenty?
+## Krok 6: Uložte dokument
 
-Absolutně! Aspose.Words for Java je všestranný a dokáže zpracovat dokumenty různých velikostí, od malých zpráv až po rozsáhlé romány.
+Nakonec uložte dokument do požadovaného formátu.
 
-### Mohu upravit vzhled svých položek TOC?
 
-Jistě! Můžete definovat vlastní styly pro položky obsahu, aby odpovídaly návrhu a formátování vašeho dokumentu.
+```java
+doc.save(dataDir + "DocumentBuilder.InsertToc.docx");
+```
 
-### Podporuje Aspose.Words for Java křížové odkazy v rámci obsahu?
-
-Ano, v rámci obsahu můžete vytvářet křížové odkazy, které odkazují na konkrétní sekce nebo stránky v dokumentu.
-
-### Je Aspose.Words for Java vhodný pro webové aplikace?
-
-Aspose.Words for Java lze skutečně bez problémů integrovat do webových aplikací a dynamicky generovat obsahy obsahu.
+- `save` : Exportuje dokument do a`.docx` soubor. Můžete zadat jiné formáty jako např`.pdf` nebo`.txt` v případě potřeby.
 
 ## Závěr
 
-tomto komplexním průvodci jsme prozkoumali umění generování obsahu (TOC) pomocí Aspose.Words for Java. Naučili jste se, jak nastavit své prostředí, vytvářet základní a pokročilé TOC a dokonce integrovat generování TOC do svých projektů Java se zdrojovým kódem. Aspose.Words for Java vám umožňuje vylepšit vaše dokumenty dynamickými a vizuálně přitažlivými obsahy. Nyní pokračujte a použijte tyto znalosti k vytvoření úžasných TOC ve vašich aplikacích Java. Šťastné kódování!
+Gratuluji! Úspěšně jste vytvořili dynamický obsah v dokumentu aplikace Word pomocí Aspose.Words for Java. Pomocí několika řádků kódu jste zautomatizovali úkol, který by jinak mohl trvat hodiny. Takže, co bude dál? Zkuste experimentovat s různými styly a formáty nadpisů, abyste přizpůsobili svůj obsah konkrétním potřebám.
+
+## FAQ
+
+### Mohu si formát TOC dále přizpůsobit?
+Absolutně! Můžete upravit parametry obsahu, jako je zahrnutí čísel stránek, zarovnání textu nebo použití vlastních stylů nadpisů.
+
+### Je licence pro Aspose.Words pro Java povinná?
+ Ano, pro plnou funkčnost je nutná licence. Můžete začít s a[dočasná licence](https://purchase.aspose.com/temporary-license/).
+
+### Mohu vygenerovat TOC pro existující dokument?
+ Ano! Vložte dokument do a`Document` objekt a postupujte podle stejných kroků pro vložení a aktualizaci obsahu.
+
+### Funguje to pro exporty PDF?
+ Ano, obsah se zobrazí v PDF, pokud dokument uložíte`.pdf` formát.
+
+### Kde najdu další dokumentaci?
+ Podívejte se na[Aspose.Words pro dokumentaci Java](https://reference.aspose.com/words/java/) pro více příkladů a podrobností.

@@ -106,4 +106,4 @@ foreach (Revision revision in doc.Revisions)
  Ναι, το Aspose.Words για .NET απαιτεί άδεια χρήσης για πλήρη λειτουργικότητα. Μπορείτε να αγοράσετε ένα[εδώ](https://purchase.aspose.com/buy) ή πάρτε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
 
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση για το Aspose.Words για .NET;
-Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).
+ Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).

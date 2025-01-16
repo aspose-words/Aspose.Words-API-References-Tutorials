@@ -118,7 +118,7 @@ Aspose.Words for .NET, .NET çerçevesini kullanarak Word belgelerini programlı
  Evet, kullanabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET için dokümanları nerede bulabilirim?
-Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).
+ Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words için nasıl destek alabilirim?
  Ziyaret edebilirsiniz[destek forumu](https://forum.aspose.com/c/words/8) yardım için.

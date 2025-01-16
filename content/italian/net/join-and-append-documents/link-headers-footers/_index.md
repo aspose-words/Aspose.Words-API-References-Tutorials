@@ -92,4 +92,4 @@ Aspose.Words supporta varie versioni di .NET Framework e .NET Core, garantendo l
 Sì, puoi scollegare intestazioni e piè di pagina utilizzando i metodi API di Aspose.Words per ripristinare la formattazione dei singoli documenti.
 
 ### Dove posso trovare una documentazione più dettagliata su Aspose.Words per .NET?
- Visita[Documentazione di Aspose.Words per .NET](https://reference.aspose.com/words/net/)per guide complete e riferimenti API.
+ Visita[Documentazione di Aspose.Words per .NET](https://reference.aspose.com/words/net/) per guide complete e riferimenti API.

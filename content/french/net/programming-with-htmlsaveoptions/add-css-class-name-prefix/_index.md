@@ -117,7 +117,7 @@ Et voilà ! En suivant ces étapes, vous avez ajouté avec succès un préfixe 
  Oui, vous pouvez personnaliser le préfixe à chaque fois que vous enregistrez un document en modifiant le`CssClassNamePrefix` propriété.
 
 ### Cette méthode prend-elle en charge le CSS en ligne ?
-Le`CssClassNamePrefix`La propriété fonctionne avec le CSS externe. Pour le CSS en ligne, vous aurez besoin d'une approche différente.
+ Le`CssClassNamePrefix`La propriété fonctionne avec le CSS externe. Pour le CSS en ligne, vous aurez besoin d'une approche différente.
 
 ### Comment puis-je inclure d’autres options de sauvegarde HTML ?
  Vous pouvez configurer diverses propriétés de`HtmlSaveOptions` pour personnaliser votre sortie HTML. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.

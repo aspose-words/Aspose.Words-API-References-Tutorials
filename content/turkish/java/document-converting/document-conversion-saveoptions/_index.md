@@ -49,7 +49,7 @@ Sonra, belge için kaydetme seçeneklerini yapılandıracaksınız. Burada, kodl
 
 ```java
 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.setSaveFormat(SaveFormat.EPUB);
+saveOptions.setSaveFormat();
 saveOptions.setEncoding(StandardCharsets.UTF_8);
 ```
 

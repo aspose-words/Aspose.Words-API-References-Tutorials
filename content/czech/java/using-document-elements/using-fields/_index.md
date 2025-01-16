@@ -239,7 +239,7 @@ Zdrojový kód třídy HandleMergeField
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Nedělat nic.
+            // Nedělejte nic.
         }
         /// <souhrn>
         /// Volá se, když stroj hromadné korespondence narazí v dokumentu na slučovací pole Obrázek:XXX.
@@ -320,7 +320,7 @@ Zdrojový kód třídy HandleMergeField
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Nedělat nic.
+            // Nedělejte nic.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

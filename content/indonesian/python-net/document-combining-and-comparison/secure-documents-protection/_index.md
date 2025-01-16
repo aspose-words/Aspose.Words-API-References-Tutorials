@@ -38,14 +38,6 @@ Anda dapat menambahkan kata sandi ke dokumen Anda untuk membatasi akses:
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## Membatasi Izin Pengeditan
-
-Untuk mengontrol siapa yang dapat membuat perubahan pada dokumen, Anda dapat mengatur izin pengeditan:
-
-```python
-protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
-protection.set_editing_groups(["Editors"])
-```
 
 ## Mengenkripsi Isi Dokumen
 
@@ -60,8 +52,10 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 Tambahkan tanda tangan digital untuk memastikan keaslian dokumen:
 
 ```python
-digital_signature = aw.digital_signatures.DigitalSignature(doc)
-digital_signature.sign("certificate.pfx", "signature_password")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
+			
+aw.digitalsignatures.DigitalSignatureUtil.sign(dst_document_path, dst_document_path, certificate_holder, sign_options)
 ```
 
 ## Penandaan Air untuk Keamanan
@@ -71,15 +65,6 @@ Tanda air dapat mencegah pembagian yang tidak sah:
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
-```
-
-## Menyunting Informasi Sensitif
-
-Untuk menghapus informasi sensitif secara permanen:
-
-```python
-redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
-doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
 ## Kesimpulan

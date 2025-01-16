@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Markup;
 ```
 
-Te przestrzenie nazw umożliwią Ci dostęp i pracę z interfejsem API Aspose.Words oraz obsługę strukturalnych znaczników dokumentu, w tym pól wyboru.
+Te przestrzenie nazw umożliwią Ci dostęp i pracę z API Aspose.Words oraz obsługę strukturalnych znaczników dokumentu, w tym pól wyboru.
 
 ## Krok 1: Konfigurowanie ścieżki dokumentu
 
@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Ładowanie dokumentu
 
- Następnie załaduj dokument Word do wystąpienia`Document` class. Ta klasa reprezentuje Twój dokument Word w kodzie i udostępnia różne metody manipulowania nim.
+ Następnie załaduj dokument Word do wystąpienia`Document` Klasa. Ta klasa reprezentuje Twój dokument Word w kodzie i udostępnia różne metody manipulowania nim.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

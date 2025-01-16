@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /ar/java/word-processing/manipulating-document-content/
 ---
-
 ## مقدمة
 
 في عالم برمجة Java، تعد إدارة المستندات الفعّالة جانبًا بالغ الأهمية للعديد من التطبيقات. سواء كنت تعمل على إنشاء التقارير أو التعامل مع العقود أو التعامل مع أي مهمة متعلقة بالمستندات، فإن Aspose.Words for Java هي أداة قوية يجب أن تكون ضمن مجموعة أدواتك. في هذا الدليل الشامل، سنتعمق في تعقيدات معالجة محتوى المستندات باستخدام التنظيف والحقول وبيانات XML باستخدام Aspose.Words for Java. سنقدم تعليمات خطوة بخطوة إلى جانب أمثلة التعليمات البرمجية المصدرية لتمكينك من المعرفة والمهارات اللازمة لإتقان هذه المكتبة متعددة الاستخدامات.
@@ -50,7 +49,8 @@ doc.save("cleaned_document.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ doc.save("document_without_empty_paragraphs.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 من خلال اتباع هذه الخطوات، يمكنك التأكد من أن مستندك نظيف وجاهز لمزيد من المعالجة.
-
----
 
 ## العمل مع الحقول
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 تضيف الحقول إمكانيات ديناميكية إلى مستنداتك، مما يعزز فائدتها.
 
----
+## خاتمة
 
-## دمج بيانات XML
-
-يمكن أن يكون دمج بيانات XML في مستنداتك أمرًا فعالًا، وخاصةً لإنشاء محتوى ديناميكي. يعمل Aspose.Words for Java على تبسيط هذه العملية.
-
-### ربط بيانات XML
-
-ربط بيانات XML بالمستند الخاص بك بسهولة:
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://"المخططات.مثال."
-doc.save("document_with_xml_data.docx");
-```
-
-يقوم هذا الكود بربط بيانات XML بأجزاء معينة من مستندك، مما يجعله ديناميكيًا وموجهًا بالبيانات.
+في هذا الدليل الشامل، استكشفنا عالم معالجة محتوى المستندات باستخدام التنظيف والحقول وبيانات XML باستخدام Aspose.Words for Java. لقد تعلمت كيفية تنظيف المستندات والعمل بالحقول ودمج بيانات XML بسلاسة. هذه المهارات لا تقدر بثمن لأي شخص يتعامل مع إدارة المستندات في تطبيقات Java.
 
 ## الأسئلة الشائعة
 
 ### كيف يمكنني إزالة الفقرات الفارغة من المستند؟
    
-   لإزالة الفقرات الفارغة من المستند، يمكنك تكرار الفقرات وإزالة تلك التي لا تحتوي على محتوى نصي. فيما يلي مقتطف من التعليمات البرمجية لمساعدتك في تحقيق ذلك:
+لإزالة الفقرات الفارغة من المستند، يمكنك تكرار الفقرات وإزالة تلك التي لا تحتوي على محتوى نصي. فيما يلي مقتطف من التعليمات البرمجية لمساعدتك في تحقيق ذلك:
 
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
 
 ### هل يمكنني تحديث كافة الحقول في مستند برمجيا؟
 
-   نعم، يمكنك تحديث جميع الحقول في مستند برمجيًا باستخدام Aspose.Words for Java. وإليك كيفية القيام بذلك:
+نعم، يمكنك تحديث جميع الحقول في مستند برمجيًا باستخدام Aspose.Words for Java. وإليك كيفية القيام بذلك:
 
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### كيف أقوم بربط بيانات XML بمستند؟
-
-   يعد ربط بيانات XML بمستند أمرًا بسيطًا باستخدام Aspose.Words for Java. يمكنك استخدام تعيينات XML لتحقيق ذلك. فيما يلي مثال:
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://"المخططات.مثال."
-   doc.save("document_with_xml_data.docx");
-   ```
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
 
 ### ما هي أهمية تنظيف محتوى المستند؟
 
-   يعد تنظيف محتوى المستند أمرًا مهمًا لضمان خلو مستنداتك من العناصر غير الضرورية، مما قد يحسن قابلية القراءة ويقلل من حجم الملف. كما يساعد ذلك في الحفاظ على اتساق المستند.
+يعد تنظيف محتوى المستند أمرًا مهمًا لضمان خلو مستنداتك من العناصر غير الضرورية، مما قد يحسن قابلية القراءة ويقلل من حجم الملف. كما يساعد ذلك في الحفاظ على اتساق المستند.
 
 ### كيف يمكنني إزالة الأنماط غير المستخدمة من مستند؟
 
-   يمكنك إزالة الأنماط غير المستخدمة من مستند باستخدام Aspose.Words for Java. فيما يلي مثال:
+يمكنك إزالة الأنماط غير المستخدمة من مستند باستخدام Aspose.Words for Java. فيما يلي مثال:
 
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
 
 ### هل Aspose.Words for Java مناسب لإنشاء مستندات ديناميكية باستخدام بيانات XML؟
 
-   نعم، يعد Aspose.Words for Java مناسبًا تمامًا لإنشاء مستندات ديناميكية باستخدام بيانات XML. فهو يوفر ميزات قوية لربط بيانات XML بالقوالب وإنشاء مستندات مخصصة.
-
-## خاتمة
-
-في هذا الدليل الشامل، استكشفنا عالم معالجة محتوى المستندات باستخدام التنظيف والحقول وبيانات XML باستخدام Aspose.Words for Java. لقد تعلمت كيفية تنظيف المستندات والعمل بالحقول ودمج بيانات XML بسلاسة. هذه المهارات لا تقدر بثمن لأي شخص يتعامل مع إدارة المستندات في تطبيقات Java.
+نعم، يعد Aspose.Words for Java مناسبًا تمامًا لإنشاء مستندات ديناميكية باستخدام بيانات XML. فهو يوفر ميزات قوية لربط بيانات XML بالقوالب وإنشاء مستندات مخصصة.

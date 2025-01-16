@@ -10,199 +10,172 @@ url: /tr/java/document-conversion-and-export/generating-custom-barcode-labels/
 
 ## Aspose.Words for Java'da Özel Barkod Etiketleri Oluşturmaya Giriş
 
-Bu kapsamlı kılavuzda, Aspose.Words for Java kullanarak özel barkod etiketleri oluşturma sürecini inceleyeceğiz. Aspose.Words for Java, geliştiricilerin Word belgelerini programatik olarak düzenlemelerine olanak tanıyan güçlü bir API'dir. Dikkat çekici özelliklerinden biri, barkod etiketleriyle çalışabilme yeteneğidir ve bu da onu özelleştirilmiş barkod çözümlerine ihtiyaç duyan işletmeler ve kuruluşlar için değerli bir araç haline getirir.
+Barkodlar, envanter yönetiyor, bilet üretiyor veya kimlik kartları oluşturuyor olun, modern uygulamalarda olmazsa olmazdır. Aspose.Words for Java ile özel barkod etiketleri oluşturmak çocuk oyuncağı haline gelir. Bu adım adım eğitim, IBarcodeGenerator arayüzünü kullanarak özel barkod etiketleri oluşturmanızda size rehberlik edecektir. Başlamaya hazır mısınız? Hadi başlayalım!
+
 
 ## Ön koşullar
 
-Özel barkod etiketlerinin oluşturulmasının ayrıntılarına dalmadan önce, ön koşulların yerinde olduğundan emin olalım:
+Kodlamaya başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-1. Java Geliştirme Ortamı: Sisteminizde Java ve Entegre Geliştirme Ortamı'nın (IDE) yüklü olduğundan emin olun.
+- Java Geliştirme Kiti (JDK): Sürüm 8 veya üzeri.
+-  Java Kütüphanesi için Aspose.Words:[Buradan indirin](https://releases.aspose.com/words/java/).
+-  Java için Aspose.BarCode Kütüphanesi:[Buradan indirin](https://releases.aspose.com/).
+- Entegre Geliştirme Ortamı (IDE): IntelliJ IDEA, Eclipse veya tercih ettiğiniz herhangi bir IDE.
+-  Geçici Lisans: Bir tane edinin[geçici lisans](https://purchase.aspose.com/temporary-license/) sınırsız erişim için.
 
-2.  Aspose.Words for Java: Aspose.Words for Java'yı indirin ve yükleyin[Burada](https://releases.aspose.com/words/java/).
+## Paketleri İçe Aktar
 
-3. Temel Java Bilgisi: Özel barkod etiketleri oluşturmak için Java kodu yazacağımızdan, Java programlamaya aşinalık faydalı olacaktır.
-
-## Özel Barkod Etiketleri Oluşturma
-
-Şimdi, Aspose.Words for Java kullanarak özel barkod etiketleri oluşturmaya başlayalım. Süreci adımlara böleceğiz ve her adım için Java kod parçacıkları sağlayacağız.
-
-## Barkod Yüksekliğini Ayarlama
-
-Başlamak için barkodumuzun yüksekliğini twip (1/1440 inç) cinsinden ayarlamamız gerekiyor. Daha sonra bu değeri milimetreye (mm) dönüştüreceğiz. Bunu başarmak için kod şu şekilde:
+Aspose.Words ve Aspose.BarCode kütüphanelerini kullanacağız. Aşağıdaki paketleri projenize aktarın:
 
 ```java
-	// Giriş değeri 1/1440 inç (twip) cinsindendir
-	int heightInTwips = tryParseInt(heightInTwipsString);
-	if (heightInTwips == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect height - " + heightInTwipsString + ".");
-	// mm'ye dönüştür
-	return (float) (heightInTwips * 25.4 / 1440.0);
+import com.aspose.barcode.generation.*;
+import com.aspose.words.BarcodeParameters;
+import com.aspose.words.IBarcodeGenerator;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 ```
 
-## Barkod Görüntü Rengini Dönüştürme
+Bu ithalatlar barkod oluşturma özelliğini kullanmamıza ve bunları Word dokümanlarına entegre etmemize olanak sağlıyor.
 
-Sonra, barkod görüntü rengini Word'den Aspose.BarCode'a dönüştüreceğiz. Giriş rengi "0xRRGGBB" (onaltılık) biçiminde olmalıdır. İşte dönüştürme için kod:
+Bu görevi yönetilebilir adımlara bölelim.
+
+## Adım 1: Barkod İşlemleri için Bir Yardımcı Sınıf Oluşturun
+
+Barkodla ilgili işlemleri basitleştirmek için, renk dönüştürme ve boyut ayarlama gibi yaygın görevler için yardımcı yöntemler içeren bir yardımcı sınıf oluşturacağız.
+
+### Kod:
 
 ```java
-/// <özet>
-/// Barkod görüntü rengini Word'den Aspose.BarCode'a dönüştürür.
-/// </özet>
-/// <param adı="inputColor"></param>
-/// <döndürür></döndürür>
-private static Color convertColor(String inputColor) throws Exception {
-	// Giriş "0x000000" ile "0xFFFFFF" arasında olmalıdır
-	int color = tryParseHex(inputColor.replace("0x", ""));
-	if (color == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect color - " + inputColor + ".");
-	return new Color((color >> 16), ((color & 0xFF00) >> 8), (color & 0xFF));
+class CustomBarcodeGeneratorUtils {
+    public static double twipsToPixels(String heightInTwips, double defVal) {
+        try {
+            int lVal = Integer.parseInt(heightInTwips);
+            return (lVal / 1440.0) * 96.0; // Varsayılan DPI'ın 96 olduğunu varsayarak
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
+
+    public static Color convertColor(String inputColor, Color defVal) {
+        if (inputColor == null || inputColor.isEmpty()) return defVal;
+        try {
+            int color = Integer.parseInt(inputColor, 16);
+            return new Color((color & 0xFF), ((color >> 8) & 0xFF), ((color >> 16) & 0xFF));
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
 }
 ```
 
-## Barkod Ölçekleme Faktörünü Dönüştürme
+### Açıklama:
 
-Şimdi barkod ölçekleme faktörünü yüzdeden kayan nokta değerine dönüştüreceğiz. Bu ölçekleme faktörü barkodun boyutunu belirler. İşte dönüştürme için kod:
+- `twipsToPixels` Yöntem: Twip'leri (Word belgelerinde kullanılır) piksellere dönüştürür.
+- `convertColor` Yöntem: Onaltılık renk kodlarını şu şekilde çevirir:`Color` nesneler.
+
+## Adım 2: Özel Barkod Oluşturucuyu Uygulayın
+
+ Biz uygulayacağız`IBarcodeGenerator` Barkod oluşturmak ve bunları Aspose.Words ile entegre etmek için arayüz.
+
+### Kod:
 
 ```java
-/// <özet>
-/// Barkod ölçekleme faktörünü yüzdeden kayan noktaya dönüştürür.
-/// </özet>
-/// <param name="ölçeklemeFaktörü"></param>
-/// <döndürür></döndürür>
-private static float convertScalingFactor(String scalingFactor) throws Exception {
-	boolean isParsed = false;
-	int percent = tryParseInt(scalingFactor);
-	if (percent != Integer.MIN_VALUE && percent >= 10 && percent <= 10000)
-		isParsed = true;
-	if (!isParsed)
-		throw new Exception("Error! Incorrect scaling factor - " + scalingFactor + ".");
-	return percent / 100.0f;
+class CustomBarcodeGenerator implements IBarcodeGenerator {
+    public BufferedImage getBarcodeImage(BarcodeParameters parameters) {
+        try {
+            BarcodeGenerator gen = new BarcodeGenerator(
+                CustomBarcodeGeneratorUtils.getBarcodeEncodeType(parameters.getBarcodeType()),
+                parameters.getBarcodeValue()
+            );
+
+            gen.getParameters().getBarcode().setBarColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getForegroundColor(), Color.BLACK)
+            );
+            gen.getParameters().setBackColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getBackgroundColor(), Color.WHITE)
+            );
+
+            return gen.generateBarCodeImage();
+        } catch (Exception e) {
+            return new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB);
+        }
+    }
+
+    public BufferedImage getOldBarcodeImage(BarcodeParameters parameters) {
+        throw new UnsupportedOperationException();
+    }
 }
 ```
 
-## GetBarCodeImage() Yönteminin Uygulanması
+### Açıklama:
 
- Bu adımda, şunu uygulayacağız:`getBarcodeImage`sağlanan parametrelere göre barkod görüntüsünü üreten yöntem. Farklı barkod türlerini ele alacağız, renkleri belirleyeceğiz, boyutları ayarlayacağız ve daha fazlasını yapacağız. İşte bu yöntemin kodu:
+- `getBarcodeImage` Yöntem:
+  -  Bir tane oluşturur`BarcodeGenerator` misal.
+  - Barkod rengini, arka plan rengini ayarlar ve görseli oluşturur.
+
+## Adım 3: Bir Barkod Oluşturun ve Bunu Bir Word Belgesine Ekleyin
+
+Şimdi barkod üretecimizi bir Word dokümanına entegre edeceğiz.
+
+### Kod:
 
 ```java
-/// <özet>
-/// IBarCodeGenerator arayüzü için GetBarCodeImage() metodunun uygulanması.
-/// </özet>
-/// <param name="parametreler"></param>
-/// <döndürür></döndürür>
-public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Exception {
-	// Barkod türü ve değerinin sağlanıp sağlanmadığını kontrol edin
-	if (parameters.getBarcodeType() == null || parameters.getBarcodeValue() == null)
-		return null;
-	
-	// Barkod türüne göre bir BarcodeGenerator oluşturun
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR);
-	String type = parameters.getBarcodeType().toUpperCase();
-	switch (type)
-	{
-		case "QR":
-			generator = new BarcodeGenerator(EncodeTypes.QR);
-			break;
-		// Diğer barkod türlerini burada işleyin
-	}
-	
-	// Barkod metnini ayarlayın
-	generator.setCodeText(parameters.getBarcodeValue());
-	
-	// Barkod renklerini ayarla
-	if (parameters.getForegroundColor() != null)
-		generator.getParameters().getBarcode().setBarColor(convertColor(parameters.getForegroundColor()));
-	if (parameters.getBackgroundColor() != null)
-		generator.getParameters().setBackColor(convertColor(parameters.getBackgroundColor()));
-	
-	// Sembol yüksekliğini ve boyutlarını ayarlayın
-	if (parameters.getSymbolHeight() != null)
-	{
-		generator.getParameters().getImageHeight().setPixels(convertSymbolHeight(parameters.getSymbolHeight()));
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	// Kod metin konumunu özelleştir
-	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
-	if (parameters.getDisplayText())
-		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
-	
-	// QR kodları için ek ayarlamalar
-	final float SCALE = 2.4f; // Word barkodunu Aspose.BarCode'a dönüştürmek için deneysel ölçekleme faktörü
-	float xdim = 1.0f;
-	if (generator.getBarcodeType().equals(EncodeTypes.QR))
-	{
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
-		generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageWidth().getInches() * SCALE);
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageWidth().getInches());
-		xdim = generator.getParameters().getImageHeight().getInches() / 25;
-		generator.getParameters().getBarcode().getXDimension().setInches(xdim);
-		generator.getParameters().getBarcode().getBarHeight().setInches(xdim);
-	}
-	
-	// Ölçekleme faktörünü uygula
-	if (parameters.getScalingFactor() != null)
-	{
-		float scalingFactor = convertScalingFactor(parameters.getScalingFactor());
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageHeight().getInches() * scalingFactor);
-		if (generator.getBarcodeType().equals(EncodeTypes.QR))
-		{
-			generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageHeight().getInches());
-			generator.getParameters().getBarcode().getXDimension().setInches(xdim * scalingFactor);
-			generator.getParameters().getBarcode().getBarHeight().setInches(xdim * scalingFactor);
-		}
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	// Barkod görüntüsünü oluştur ve döndür
-	return generator.generateBarCodeImage();
+import com.aspose.words.*;
+
+public class GenerateCustomBarcodeLabels {
+    public static void main(String[] args) throws Exception {
+        // Bir Word belgesi yükleyin veya oluşturun
+        Document doc = new Document();
+        DocumentBuilder builder = new DocumentBuilder(doc);
+
+        // Özel barkod oluşturucuyu ayarlayın
+        CustomBarcodeGenerator barcodeGenerator = new CustomBarcodeGenerator();
+        BarcodeParameters barcodeParameters = new BarcodeParameters();
+        barcodeParameters.setBarcodeType("QR");
+        barcodeParameters.setBarcodeValue("https://ornek.com");
+        barcodeParameters.setForegroundColor("000000");
+        barcodeParameters.setBackgroundColor("FFFFFF");
+
+        // Barkod görüntüsünü oluştur
+        BufferedImage barcodeImage = barcodeGenerator.getBarcodeImage(barcodeParameters);
+
+        // Barkod resmini Word belgesine ekle
+        builder.insertImage(barcodeImage, 200, 200);
+
+        // Belgeyi kaydet
+        doc.save("CustomBarcodeLabels.docx");
+
+        System.out.println("Barcode labels generated successfully!");
+    }
 }
 ```
 
-## GetOldBarcodeImage() Yönteminin Uygulanması
+### Açıklama:
 
- Bu adımda, şunu uygulayacağız:`getOldBarcodeImage`eski moda barkodlar için barkod görüntüleri üreten yöntem. Burada, POSTNET gibi belirli bir barkod türünü ele alacağız. İşte bu yöntem için kod:
-
-```java
-/// <özet>
-/// IBarCodeGenerator arayüzü için GetOldBarcodeImage() metodunun uygulanması.
-/// </özet>
-/// <param name="parametreler"></param>
-/// <döndürür></döndürür>
-public BufferedImage getOldBarcodeImage(BarcodeParameters parameters)
-{
-	if (parameters.getPostalAddress() == null)
-		return null;
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.POSTNET);
-	{
-		generator.setCodeText(parameters.getPostalAddress());
-	}
-	// Eski tip Barkod için Sabit Kod türü
-	return generator.generateBarCodeImage();
-}
-```
+- Belge Başlatma: Bir Word belgesi oluşturun veya yükleyin.
+- Barkod Parametreleri: Barkod türünü, değerini ve renklerini tanımlayın.
+- Resim Ekleme: Oluşturulan barkod resmini Word belgesine ekleyin.
+- Belgeyi Kaydet: Dosyayı istediğiniz formatta kaydedin.
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for Java kullanarak özel barkod etiketleri oluşturma sürecini inceledik. Barkod yüksekliğini ayarlamaktan barkod oluşturma yöntemlerini uygulamaya kadar temel adımları ele aldık. Aspose.Words for Java, geliştiricilerin dinamik ve özelleştirilmiş barkod etiketleri oluşturmasını sağlayarak onu çeşitli sektörler için değerli bir araç haline getirir.
+Bu adımları izleyerek, Aspose.Words for Java kullanarak Word belgelerine sorunsuz bir şekilde özel barkod etiketleri oluşturabilir ve yerleştirebilirsiniz. Bu yaklaşım esnektir ve çeşitli uygulamalara uyacak şekilde uyarlanabilir. İyi kodlamalar!
+
 
 ## SSS
 
-### Oluşturulan barkodun boyutunu nasıl ayarlayabilirim?
+1. Lisans olmadan Aspose.Words for Java'yı kullanabilir miyim?
+ Evet, ancak bazı sınırlamaları olacak. Bir tane edinin[geçici lisans](https://purchase.aspose.com/temporary-license/) tam işlevsellik için.
 
-Üretilen barkodun boyutunu, sağlanan kod parçacıklarında barkodun sembol yüksekliğini ve ölçekleme faktörünü ayarlayarak ayarlayabilirsiniz. Bu parametreler barkodun boyutlarını ihtiyaçlarınıza göre kontrol etmenizi sağlar.
+2. Hangi tür barkodları oluşturabilirim?
+Aspose.BarCode QR, Code 128, EAN-13 ve diğer birçok türü destekler. Kontrol edin[belgeleme](https://reference.aspose.com/words/java/) Tam liste için.
 
-### Barkodun renklerini değiştirebilir miyim?
+3. Barkod boyutunu nasıl değiştirebilirim?
+ Ayarla`XDimension` Ve`BarHeight` parametreler`BarcodeGenerator` Ayarlar.
 
-Evet, kodda ön plan ve arka plan renklerini belirterek barkodun renklerini değiştirebilirsiniz. Bu özelleştirme, barkodun görünümünü belgenizin tasarımıyla eşleştirmenize olanak tanır.
+4. Barkodlarda özel yazı tipleri kullanabilir miyim?
+ Evet, barkod metin yazı tiplerini şu şekilde özelleştirebilirsiniz:`CodeTextParameters` mülk.
 
-### Aspose.Words for Java hangi barkod tiplerini destekliyor?
+5. Aspose.Words konusunda nereden yardım alabilirim?
+ Ziyaret edin[destek forumu](https://forum.aspose.com/c/words/8/) yardım için.
 
-Java için Aspose.Words, QR kodları, CODE128, CODE39, EAN8, EAN13, UPCA, UPCE, ITF14 ve daha fazlası dahil olmak üzere çeşitli barkod türlerini destekler. Uygulamanızın ihtiyaçlarına uygun barkod türünü seçebilirsiniz.
-
-### Oluşturulan barkodu Word dokümanıma nasıl entegre edebilirim?
-
-Oluşturulan barkodu Word belgenize entegre etmek için Aspose.Words for Java'nın belge düzenleme yeteneklerini kullanabilirsiniz. Barkod görüntüsünü belgenize istediğiniz yere ekleyebilirsiniz.
-
-### Daha fazla özelleştirme için herhangi bir örnek kod var mı?
-
- Evet, Aspose.Words for Java'nın referans sitesinde örnek kod parçacıkları ve ek belgeler bulabilirsiniz:[Aspose.Words for Java API Referansı](https://reference.aspose.com/words/java/).

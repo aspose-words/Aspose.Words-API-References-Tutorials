@@ -56,7 +56,7 @@ CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.C
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-The`Compare`yöntem, belge A'yı belge B ile karşılaştırır ve değişiklikleri belge A'ya kaydeder. Referans için yazarın adını ve karşılaştırma tarihini belirtebilirsiniz.
+ The`Compare`yöntem, belge A'yı belge B ile karşılaştırır ve değişiklikleri belge A'ya kaydeder. Referans için yazarın adını ve karşılaştırma tarihini belirtebilirsiniz.
 
 ## Çözüm
 

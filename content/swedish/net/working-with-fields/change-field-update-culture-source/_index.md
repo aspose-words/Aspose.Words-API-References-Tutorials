@@ -70,7 +70,7 @@ doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011
 
 ## Steg 5: Spara dokumentet
 
-Slutligen sparar vi dokumentet i den angivna katalogen. Detta steg avslutar processen med att ändra källan för fältuppdateringskultur.
+Slutligen sparar vi dokumentet i den angivna katalogen. Detta steg avslutar processen med att ändra källan för fältuppdateringskulturen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
@@ -83,7 +83,7 @@ Och där har du det! Du har framgångsrikt ändrat fältuppdateringskulturkälla
 ## FAQ's
 
 ###  Vad är syftet med att ställa in`LocaleId`?
-De`LocaleId` anger kulturinställningarna för texten, vilket påverkar hur datum och andra lokalitetskänsliga data formateras.
+ De`LocaleId` anger kulturinställningarna för texten, vilket påverkar hur datum och andra lokalitetskänsliga data formateras.
 
 ### Kan jag använda en annan plats än tyska?
  Ja, du kan ställa in`LocaleId`till valfri giltig lokalidentifierare. Till exempel 1033 för engelska (USA).

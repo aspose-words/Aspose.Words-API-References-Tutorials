@@ -48,7 +48,7 @@ Aspose.Words menyediakan berbagai opsi penyimpanan gambar untuk mengontrol forma
 
 ```java
 // Inisialisasi opsi penyimpanan gambar
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Langkah 4: Render Halaman Dokumen sebagai Gambar

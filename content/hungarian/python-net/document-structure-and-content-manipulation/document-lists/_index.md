@@ -8,7 +8,7 @@ weight: 18
 url: /hu/python-net/document-structure-and-content-manipulation/document-lists/
 ---
 
-A listák számos dokumentum alapvető alkotóelemei, amelyek strukturált és szervezett módot biztosítanak az információk bemutatására. Az Aspose.Words for Python segítségével zökkenőmentesen hozhat létre és kezelhet listákat Word-dokumentumaiban. Ebben az oktatóanyagban végigvezetjük az Aspose.Words Python API-t használó listákkal való munka folyamatán.
+listák számos dokumentum alapvető alkotóelemei, amelyek strukturált és szervezett módot biztosítanak az információk bemutatására. Az Aspose.Words for Python segítségével zökkenőmentesen hozhat létre és kezelhet listákat Word-dokumentumaiban. Ebben az oktatóanyagban végigvezetjük az Aspose.Words Python API-t használó listákkal való munka folyamatán.
 
 ## Bevezetés a Word-dokumentumok listáiba
 
@@ -16,7 +16,7 @@ A listáknak két fő típusa van: felsorolásjeles és számozott. Lehetővé t
 
 ## A környezet beállítása
 
-Mielőtt belemerülnénk a listák létrehozásába és kezelésébe, győződjön meg arról, hogy telepítve van az Aspose.Words for Python könyvtár. Letöltheti innen[itt](https://releases.aspose.com/words/python/) . Ezenkívül tekintse meg az API dokumentációját a következő címen:[ezt a linket](https://reference.aspose.com/words/python-net/) részletes információkért.
+ Mielőtt belemerülnénk a listák létrehozásába és kezelésébe, győződjön meg arról, hogy telepítve van az Aspose.Words for Python könyvtár. Letöltheti innen[itt](https://releases.aspose.com/words/python/) . Ezenkívül tekintse meg az API dokumentációját a következő címen:[ezt a linket](https://reference.aspose.com/words/python-net/) részletes információkért.
 
 ## Felsorolásos listák létrehozása
 
@@ -52,7 +52,7 @@ for text in list_item_texts:
 
 ## Számozott listák készítése
 
-A számozott listák akkor megfelelőek, ha a tételek sorrendje számít. A következőképpen hozhat létre számozott listát az Aspose.Words Python használatával:
+számozott listák akkor megfelelőek, ha a tételek sorrendje számít. A következőképpen hozhat létre számozott listát az Aspose.Words Python használatával:
 
 ```python
 # Import the necessary classes
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]
@@ -106,7 +101,7 @@ A lista eltávolítása ugyanolyan fontos, mint egy lista létrehozása. A list�
 
 ## Dokumentumok mentése és exportálása
 
-A listák létrehozása és testreszabása után a dokumentumot különféle formátumokban mentheti, beleértve a DOCX és PDF formátumokat.
+listák létrehozása és testreszabása után a dokumentumot különféle formátumokban mentheti, beleértve a DOCX és PDF formátumokat.
 
 ## Következtetés
 

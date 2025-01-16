@@ -92,4 +92,4 @@ Aspose.Words ondersteunt verschillende versies van .NET Framework en .NET Core, 
 Ja, u kunt kop- en voetteksten loskoppelen met behulp van Aspose.Words API-methoden om de opmaak van afzonderlijke documenten te herstellen.
 
 ### Waar kan ik meer gedetailleerde documentatie vinden over Aspose.Words voor .NET?
- Bezoek[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/)voor uitgebreide handleidingen en API-referenties.
+ Bezoek[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/) voor uitgebreide handleidingen en API-referenties.

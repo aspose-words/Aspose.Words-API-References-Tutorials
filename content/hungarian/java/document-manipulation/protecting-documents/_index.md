@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
-A`unprotect` módszer eltávolít minden, a dokumentumra alkalmazott védelmet, így jelszó nélkül is elérhetővé válik.
+ A`unprotect` módszer eltávolít minden, a dokumentumra alkalmazott védelmet, így jelszó nélkül is elérhetővé válik.
 
 ## Dokumentumvédelmi típus ellenőrzése
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
-A`getProtectionType` metódus egy egész számot ad vissza, amely a dokumentumra alkalmazott védelmi típust reprezentálja.
+ A`getProtectionType` metódus egy egész számot ad vissza, amely a dokumentumra alkalmazott védelmi típust reprezentálja.
 
 
 ## Következtetés

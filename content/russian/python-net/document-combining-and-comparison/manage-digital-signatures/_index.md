@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /ru/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## Введение в цифровые подписи
 
 Цифровые подписи служат электронными эквивалентами рукописных подписей. Они предоставляют способ проверки подлинности, целостности и происхождения электронных документов. Когда документ подписан цифровой подписью, на основе его содержания генерируется криптографический хэш. Затем этот хэш шифруется с использованием закрытого ключа подписчика, создавая цифровую подпись. Любой, у кого есть соответствующий открытый ключ, может проверить подпись и убедиться в подлинности документа.
@@ -25,7 +24,7 @@ url: /ru/python-net/document-combining-and-comparison/manage-digital-signatures/
 2. Импортируйте необходимые модули: Импортируйте необходимые модули в свой скрипт Python:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## Загрузка и доступ к документам
@@ -33,7 +32,7 @@ url: /ru/python-net/document-combining-and-comparison/manage-digital-signatures/
 Перед добавлением или проверкой цифровых подписей необходимо загрузить документ с помощью Aspose.Words:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## Добавление цифровых подписей к документам
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 Чтобы добавить цифровую подпись к документу, вам понадобится цифровой сертификат:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 Теперь подпишите документ:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## Проверка цифровых подписей
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## Удаление цифровых подписей
-
-Чтобы удалить цифровую подпись из документа:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## Обеспечение подлинности документов
-
-Цифровые подписи обеспечивают подлинность документа, подтверждая его источник и целостность. Они защищают от подделки и несанкционированных изменений.
-
 ## Настройка внешнего вида цифровой подписи
 
 Вы можете настроить внешний вид цифровых подписей:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## Заключение

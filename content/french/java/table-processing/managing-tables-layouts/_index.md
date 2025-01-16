@@ -110,7 +110,7 @@ Oui, vous pouvez fusionner des cellules dans un tableau à l’aide d’Aspose.W
  Ne vous inquiétez pas ! Vous pouvez facilement diviser des cellules précédemment fusionnées en définissant leur propriété de fusion horizontale sur`NONE`.
 
 ### Comment puis-je ajouter un saut de page avant un tableau ?
- Pour insérer un saut de page avant un tableau, modifiez la police.`PageBreakBefore` propriété telle que démontrée.
+Pour insérer un saut de page avant un tableau, modifiez la police.`PageBreakBefore` propriété telle que démontrée.
 
 ### Aspose.Words est-il compatible avec différents formats de documents ?
 Absolument ! Aspose.Words pour Java prend en charge divers formats de documents, ce qui en fait un choix polyvalent pour la gestion de documents.

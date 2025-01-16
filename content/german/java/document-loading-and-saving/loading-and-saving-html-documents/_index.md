@@ -1,6 +1,6 @@
 ---
-title: Laden und Speichern von HTML-Dokumenten mit Aspose.Words für Java
-linktitle: Laden und Speichern von HTML-Dokumenten mit
+title: Laden und Speichern von HTML-Dokumenten
+linktitle: Laden und Speichern von HTML-Dokumenten
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
 description: Erfahren Sie, wie Sie mit Aspose.Words für Java HTML-Dokumente in Java laden und speichern. Schritt-für-Schritt-Anleitung mit Codebeispielen für eine nahtlose Dokumentintegration.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Nachdem wir nun das HTML in eine`Document`können wir es als Word-Dokument speichern. Speichern wir es im DOCX-Format:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Dieser Code speichert die`Document` als DOCX-Datei, ein gängiges Format für Word-Dokumente.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Abschluss
@@ -79,7 +79,7 @@ In diesem Artikel haben wir gelernt, wie man HTML-Dokumente mit Aspose.Words fü
 
 ### Wie installiere ich Aspose.Words für Java?
 
- Aspose.Words für Java kann heruntergeladen werden von[Hier](https://releases.aspose.com/words/java/). Befolgen Sie die Installationsanweisungen auf der Website, um es in Ihrem Java-Projekt einzurichten.
+ Aspose.Words für Java kann heruntergeladen werden von[Hier](https://releases.aspose.com/words/java/)Befolgen Sie die Installationsanweisungen auf der Website, um es in Ihrem Java-Projekt einzurichten.
 
 ### Kann ich mit Aspose.Words komplexe HTML-Dokumente laden?
 
@@ -95,4 +95,4 @@ Absolut! Aspose.Words ist eine robuste Lösung, die von Unternehmen weltweit zur
 
 ### Wo finde ich weitere Dokumentation und Beispiele für Aspose.Words für Java?
 
- Ausführliche Dokumentationen, Codebeispiele und Tutorials finden Sie auf der Dokumentationswebsite von Aspose.Words für Java:[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/).
+Ausführliche Dokumentationen, Codebeispiele und Tutorials finden Sie auf der Dokumentationswebsite von Aspose.Words für Java:[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/).

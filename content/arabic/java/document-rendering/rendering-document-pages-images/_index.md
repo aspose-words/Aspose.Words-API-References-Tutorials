@@ -48,7 +48,7 @@ Document doc = new Document("sample.docx");
 
 ```java
 // تهيئة خيارات حفظ الصورة
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## الخطوة 4: عرض صفحات المستند كصور

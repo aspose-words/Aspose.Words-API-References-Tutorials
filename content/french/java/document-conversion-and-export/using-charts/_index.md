@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Modifiez l'axe X pour qu'il soit une catégorie au lieu d'une date.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Mesuré en unités d'affichage de l'axe Y (centaines).
+xAxis.setCrossesAt(3.0); //Mesuré en unités d'affichage de l'axe Y (centaines).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ Dans ce didacticiel, nous avons découvert comment travailler avec des graphique
 
 ### Comment puis-je formater des étiquettes de données avec des formats numériques personnalisés ?
 
- Vous pouvez formater les étiquettes de données en accédant à l'`DataLabels` propriétés d'une série et définition du code de format souhaité à l'aide de`getNumberFormat().setFormatCode()`.
+Vous pouvez formater les étiquettes de données en accédant à l'`DataLabels` propriétés d'une série et définition du code de format souhaité à l'aide de`getNumberFormat().setFormatCode()`.
 
 ### Comment personnaliser les propriétés des axes dans un graphique ?
 
@@ -139,7 +139,7 @@ Dans ce didacticiel, nous avons découvert comment travailler avec des graphique
 
 ### Comment puis-je créer d’autres types de graphiques comme des graphiques en nuage de points ou en aires ?
 
-Vous pouvez créer différents types de graphiques en spécifiant les`ChartType` lors de l'insertion du graphique à l'aide de`builder.insertChart(ChartType.TYPE, width, height)`.
+ Vous pouvez créer différents types de graphiques en spécifiant les`ChartType` lors de l'insertion du graphique à l'aide de`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Comment puis-je masquer un axe de graphique ?
 

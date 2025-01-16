@@ -47,7 +47,7 @@ Bây giờ, đã đến lúc chuyển đổi tài liệu đã tải sang định
 
 ```java
 // Chuyển đổi tài liệu sang PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Phần kết luận

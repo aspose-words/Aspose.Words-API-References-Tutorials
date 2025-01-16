@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-O`Document` class do Aspose.Words permite que você carregue arquivos do Word na memória. Certifique-se de que os nomes dos arquivos correspondem aos documentos reais no seu diretório, ou você encontrará erros de arquivo não encontrado!
+ O`Document` class do Aspose.Words permite que você carregue arquivos do Word na memória. Certifique-se de que os nomes dos arquivos correspondem aos documentos reais no seu diretório, ou você encontrará erros de arquivo não encontrado!
 
 ## Etapa 3: Recuperando a chave da API
 

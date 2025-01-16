@@ -59,7 +59,7 @@ Aspose.Words obsługuje szeroką gamę formatów dokumentów, w tym DOCX, DOC, P
 Tak, Aspose.Words udostępnia rozbudowane interfejsy API umożliwiające manipulowanie tabelami, obrazami, formatowaniem tekstu i wieloma innymi elementami w dokumentach.
 
 ### Gdzie mogę znaleźć szczegółową dokumentację Aspose.Words dla .NET?
-Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
+ Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
 
 ### Jak mogę uzyskać tymczasową licencję na Aspose.Words dla .NET?
 Możesz uzyskać tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).

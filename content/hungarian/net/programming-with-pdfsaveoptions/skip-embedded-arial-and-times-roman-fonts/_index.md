@@ -81,7 +81,7 @@ Nem, nem fog. Mivel az Arial és a Times Roman szabványos betűtípusok, a megj
 Igen, beállíthatja a mentési beállításokat úgy, hogy szükség esetén kihagyja a többi betűtípus beágyazását.
 
 ### Az Aspose.Words for .NET ingyenes?
-Az Aspose.Words for .NET ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/) , de a teljes hozzáféréshez licencet kell vásárolnia[itt](https://purchase.aspose.com/buy).
+ Az Aspose.Words for .NET ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/) , de a teljes hozzáféréshez licencet kell vásárolnia[itt](https://purchase.aspose.com/buy).
 
 ### Hol találok további oktatóanyagokat az Aspose.Words for .NET-hez?
- Átfogó dokumentációt és oktatóanyagokat találhat[itt](https://reference.aspose.com/words/net/).
+Átfogó dokumentációt és oktatóanyagokat találhat[itt](https://reference.aspose.com/words/net/).

@@ -70,7 +70,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-これらの手順に従うことで、カスタム フォント設定が正常に構成され、その設定が適用されたドキュメントが保存されます。
+これらの手順に従うことで、カスタム フォント設定が正常に構成され、その設定が適用されたドキュメントが保存されました。
 
 ## 結論
 

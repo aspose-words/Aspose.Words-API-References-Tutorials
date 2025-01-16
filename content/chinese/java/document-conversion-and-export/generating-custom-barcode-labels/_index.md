@@ -10,199 +10,172 @@ url: /zh/java/document-conversion-and-export/generating-custom-barcode-labels/
 
 ## Aspose.Words for Java 中生成自定义条形码标签的简介
 
-在本综合指南中，我们将深入研究使用 Aspose.Words for Java 生成自定义条形码标签的过程。Aspose.Words for Java 是一个功能强大的 API，允许开发人员以编程方式操作 Word 文档。它的一个显著特点是能够处理条形码标签，使其成为需要定制条形码解决方案的企业和组织的宝贵工具。
+条形码在现代应用程序中必不可少，无论您是管理库存、生成票据还是制作身份证。使用 Aspose.Words for Java，创建自定义条形码标签变得轻而易举。本分步教程将指导您使用 IBarcodeGenerator 接口生成自定义条形码标签。准备好了吗？我们开始吧！
+
 
 ## 先决条件
 
-在深入了解生成自定义条形码标签的细节之前，让我们确保已满足先决条件：
+在开始编码之前，请确保您具有以下条件：
 
-1. Java 开发环境：确保您的系统上安装了 Java 和集成开发环境 (IDE)。
+- Java 开发工具包 (JDK)：版本 8 或更高版本。
+-  Aspose.Words for Java库：[点击此处下载](https://releases.aspose.com/words/java/).
+- Aspose.BarCode for Java库：[点击此处下载](https://releases.aspose.com/).
+- 集成开发环境 (IDE)：IntelliJ IDEA、Eclipse 或任何您喜欢的 IDE。
+- 临时执照：获取[临时执照](https://purchase.aspose.com/temporary-license/)以实现不受限制的访问。
 
-2.  Aspose.Words for Java：从以下网站下载并安装 Aspose.Words for Java[这里](https://releases.aspose.com/words/java/).
+## 导入包
 
-3. Java 基础知识：熟悉 Java 编程将会很有帮助，因为我们将编写 Java 代码来创建自定义条形码标签。
-
-## 创建自定义条形码标签
-
-现在，让我们开始使用 Aspose.Words for Java 创建自定义条形码标签。我们将把该过程分解为几个步骤，并为每个步骤提供 Java 代码片段。
-
-## 设置条形码高度
-
-首先，我们需要以缇（1/1440 英寸）为单位设置条形码的高度。然后我们将此值转换为毫米 (mm)。以下是实现此操作的代码：
+我们将使用 Aspose.Words 和 Aspose.BarCode 库。将以下包导入到您的项目中：
 
 ```java
-	//输入值为 1/1440 英寸（缇）
-	int heightInTwips = tryParseInt(heightInTwipsString);
-	if (heightInTwips == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect height - " + heightInTwipsString + ".");
-	//转换为毫米
-	return (float) (heightInTwips * 25.4 / 1440.0);
+import com.aspose.barcode.generation.*;
+import com.aspose.words.BarcodeParameters;
+import com.aspose.words.IBarcodeGenerator;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 ```
 
-## 转换条形码图像颜色
+这些导入使我们能够利用条形码生成功能并将其集成到 Word 文档中。
 
-接下来，我们将把条形码图像颜色从 Word 转换为 Aspose.BarCode。输入颜色应采用“0xRRGGBB”（十六进制）格式。以下是转换代码：
+让我们把这个任务分解成可管理的步骤。
+
+## 步骤 1：创建条形码操作实用程序类
+
+为了简化与条形码相关的操作，我们将创建一个实用程序类，其中包含用于执行颜色转换和尺寸调整等常见任务的辅助方法。
+
+### 代码：
 
 ```java
-/// <摘要>
-/// 将条形码图像颜色从 Word 转换为 Aspose.BarCode。
-/// </摘要>
-/// <param name="inputColor"></param>
-/// <返回值> </返回值>
-private static Color convertColor(String inputColor) throws Exception {
-	//输入应从“0x000000”到“0xFFFFFF”
-	int color = tryParseHex(inputColor.replace("0x", ""));
-	if (color == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect color - " + inputColor + ".");
-	return new Color((color >> 16), ((color & 0xFF00) >> 8), (color & 0xFF));
+class CustomBarcodeGeneratorUtils {
+    public static double twipsToPixels(String heightInTwips, double defVal) {
+        try {
+            int lVal = Integer.parseInt(heightInTwips);
+            return (lVal / 1440.0) * 96.0; //假设默认 DPI 为 96
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
+
+    public static Color convertColor(String inputColor, Color defVal) {
+        if (inputColor == null || inputColor.isEmpty()) return defVal;
+        try {
+            int color = Integer.parseInt(inputColor, 16);
+            return new Color((color & 0xFF), ((color >> 8) & 0xFF), ((color >> 16) & 0xFF));
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
 }
 ```
 
-## 转换条形码缩放因子
+### 解释：
 
-现在，我们将条形码缩放因子从百分比转换为浮点值。此缩放因子决定了条形码的大小。以下是转换代码：
+- `twipsToPixels`方法：将缇（用于 Word 文档）转换为像素。
+- `convertColor`方法：将十六进制颜色代码转换为`Color`对象。
+
+## 第 2 步：实现自定义条形码生成器
+
+我们将实施`IBarcodeGenerator`界面生成条形码并将其与 Aspose.Words 集成。
+
+### 代码：
 
 ```java
-/// <摘要>
-/// 将条形码缩放因子从百分比转换为浮点数。
-/// </摘要>
-/// <param name="scalingFactor"></param>
-/// <返回值> </返回值>
-private static float convertScalingFactor(String scalingFactor) throws Exception {
-	boolean isParsed = false;
-	int percent = tryParseInt(scalingFactor);
-	if (percent != Integer.MIN_VALUE && percent >= 10 && percent <= 10000)
-		isParsed = true;
-	if (!isParsed)
-		throw new Exception("Error! Incorrect scaling factor - " + scalingFactor + ".");
-	return percent / 100.0f;
+class CustomBarcodeGenerator implements IBarcodeGenerator {
+    public BufferedImage getBarcodeImage(BarcodeParameters parameters) {
+        try {
+            BarcodeGenerator gen = new BarcodeGenerator(
+                CustomBarcodeGeneratorUtils.getBarcodeEncodeType(parameters.getBarcodeType()),
+                parameters.getBarcodeValue()
+            );
+
+            gen.getParameters().getBarcode().setBarColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getForegroundColor(), Color.BLACK)
+            );
+            gen.getParameters().setBackColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getBackgroundColor(), Color.WHITE)
+            );
+
+            return gen.generateBarCodeImage();
+        } catch (Exception e) {
+            return new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB);
+        }
+    }
+
+    public BufferedImage getOldBarcodeImage(BarcodeParameters parameters) {
+        throw new UnsupportedOperationException();
+    }
 }
 ```
 
-## 实现 GetBarCodeImage() 方法
+### 解释：
 
-在此步骤中，我们将实现`getBarcodeImage`方法，该方法根据提供的参数生成条形码图像。我们将处理不同的条形码类型、设置颜色、调整尺寸等。以下是此方法的代码：
+- `getBarcodeImage`方法：
+  - 创建一个`BarcodeGenerator`实例。
+  - 设置条形码颜色、背景颜色并生成图像。
+
+## 步骤 3：生成条形码并将其添加到 Word 文档
+
+现在，我们将条形码生成器集成到 Word 文档中。
+
+### 代码：
 
 ```java
-/// <摘要>
-/// 实现 IBarCodeGenerator 接口的 GetBarCodeImage() 方法。
-/// </摘要>
-/// <param name="参数"></param>
-/// <返回值> </返回值>
-public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Exception {
-	//检查是否提供了条形码类型和值
-	if (parameters.getBarcodeType() == null || parameters.getBarcodeValue() == null)
-		return null;
-	
-	//根据条形码类型创建 BarcodeGenerator
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR);
-	String type = parameters.getBarcodeType().toUpperCase();
-	switch (type)
-	{
-		case "QR":
-			generator = new BarcodeGenerator(EncodeTypes.QR);
-			break;
-		//在此处理其他条形码类型
-	}
-	
-	//设置条形码文本
-	generator.setCodeText(parameters.getBarcodeValue());
-	
-	//设置条形码颜色
-	if (parameters.getForegroundColor() != null)
-		generator.getParameters().getBarcode().setBarColor(convertColor(parameters.getForegroundColor()));
-	if (parameters.getBackgroundColor() != null)
-		generator.getParameters().setBackColor(convertColor(parameters.getBackgroundColor()));
-	
-	//设置符号高度和尺寸
-	if (parameters.getSymbolHeight() != null)
-	{
-		generator.getParameters().getImageHeight().setPixels(convertSymbolHeight(parameters.getSymbolHeight()));
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	//自定义代码文本位置
-	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
-	if (parameters.getDisplayText())
-		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
-	
-	//对二维码的其他调整
-	final float SCALE = 2.4f; //将 Word 条形码转换为 Aspose.BarCode 的经验缩放因子
-	float xdim = 1.0f;
-	if (generator.getBarcodeType().equals(EncodeTypes.QR))
-	{
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
-		generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageWidth().getInches() * SCALE);
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageWidth().getInches());
-		xdim = generator.getParameters().getImageHeight().getInches() / 25;
-		generator.getParameters().getBarcode().getXDimension().setInches(xdim);
-		generator.getParameters().getBarcode().getBarHeight().setInches(xdim);
-	}
-	
-	//应用缩放因子
-	if (parameters.getScalingFactor() != null)
-	{
-		float scalingFactor = convertScalingFactor(parameters.getScalingFactor());
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageHeight().getInches() * scalingFactor);
-		if (generator.getBarcodeType().equals(EncodeTypes.QR))
-		{
-			generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageHeight().getInches());
-			generator.getParameters().getBarcode().getXDimension().setInches(xdim * scalingFactor);
-			generator.getParameters().getBarcode().getBarHeight().setInches(xdim * scalingFactor);
-		}
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	//生成并返回条形码图像
-	return generator.generateBarCodeImage();
+import com.aspose.words.*;
+
+public class GenerateCustomBarcodeLabels {
+    public static void main(String[] args) throws Exception {
+        //加载或创建 Word 文档
+        Document doc = new Document();
+        DocumentBuilder builder = new DocumentBuilder(doc);
+
+        //设置自定义条形码生成器
+        CustomBarcodeGenerator barcodeGenerator = new CustomBarcodeGenerator();
+        BarcodeParameters barcodeParameters = new BarcodeParameters();
+        barcodeParameters.setBarcodeType("QR");
+        barcodeParameters.setBarcodeValue("https://例如.com”);
+        barcodeParameters.setForegroundColor("000000");
+        barcodeParameters.setBackgroundColor("FFFFFF");
+
+        //生成条形码图像
+        BufferedImage barcodeImage = barcodeGenerator.getBarcodeImage(barcodeParameters);
+
+        //将条形码图像插入Word文档
+        builder.insertImage(barcodeImage, 200, 200);
+
+        //保存文档
+        doc.save("CustomBarcodeLabels.docx");
+
+        System.out.println("Barcode labels generated successfully!");
+    }
 }
 ```
 
-## 实现 GetOldBarcodeImage() 方法
+### 解释：
 
-在此步骤中，我们将实现`getOldBarcodeImage`方法，该方法为老式条形码生成条形码图像。在这里，我们将处理特定的条形码类型，例如 POSTNET。以下是此方法的代码：
-
-```java
-/// <摘要>
-/// 实现 IBarCodeGenerator 接口的 GetOldBarcodeImage() 方法。
-/// </摘要>
-/// <param name="参数"></param>
-/// <返回值> </返回值>
-public BufferedImage getOldBarcodeImage(BarcodeParameters parameters)
-{
-	if (parameters.getPostalAddress() == null)
-		return null;
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.POSTNET);
-	{
-		generator.setCodeText(parameters.getPostalAddress());
-	}
-	//老式条形码的硬编码类型
-	return generator.generateBarCodeImage();
-}
-```
+- 文档初始化：创建或加载Word文档。
+- 条形码参数：定义条形码类型、值和颜色。
+- 图像插入：将生成的条形码图像添加到Word文档中。
+- 保存文档：以所需的格式保存文件。
 
 ## 结论
 
-在本文中，我们探讨了使用 Aspose.Words for Java 生成自定义条形码标签的过程。我们介绍了基本步骤，从设置条形码高度到实现条形码生成方法。Aspose.Words for Java 使开发人员能够创建动态和自定义的条形码标签，使其成为各个行业的宝贵工具。
+通过遵循这些步骤，您可以使用 Aspose.Words for Java 无缝生成自定义条形码标签并将其嵌入 Word 文档中。这种方法非常灵活，可以根据各种应用程序进行定制。祝您编码愉快！
+
 
 ## 常见问题解答
 
-### 如何调整生成的条形码的大小？
+1. 我可以在没有许可证的情况下使用 Aspose.Words for Java 吗？
+是的，但会有一些限制。获得[临时执照](https://purchase.aspose.com/temporary-license/)以实现全部功能。
 
-您可以通过在提供的代码片段中设置条形码的符号高度和缩放因子来调整生成的条形码的大小。这些参数允许您根据需要控制条形码的尺寸。
+2. 我可以生成哪些类型的条形码？
+Aspose.BarCode 支持 QR、Code 128、EAN-13 和许多其他类型。检查[文档](https://reference.aspose.com/words/java/)以获取完整列表。
 
-### 我可以改变条形码的颜色吗？
+3. 如何更改条形码大小？
+调整`XDimension`和`BarHeight`参数`BarcodeGenerator`设置。
 
-是的，您可以通过指定代码中的前景色和背景色来更改条形码的颜色。此自定义功能可让您将条形码的外观与文档的设计相匹配。
+4. 我可以对条形码使用自定义字体吗？
+是的，您可以通过`CodeTextParameters`财产。
 
-### Aspose.Words for Java 支持哪些条形码类型？
+5. 在哪里可以获得有关 Aspose.Words 的帮助？
+访问[支持论坛](https://forum.aspose.com/c/words/8/)寻求帮助。
 
-Aspose.Words for Java 支持多种条形码类型，包括 QR 码、CODE128、CODE39、EAN8、EAN13、UPCA、UPCE、ITF14 等。您可以选择适合您应用程序需求的条形码类型。
-
-### 如何将生成的条形码集成到我的 Word 文档中？
-
-要将生成的条形码集成到您的 Word 文档中，您可以使用 Aspose.Words for Java 的文档操作功能。您可以将条形码图像插入到文档中的所需位置。
-
-### 是否有可供进一步定制的示例代码？
-
-是的，您可以在 Aspose.Words for Java 的参考网站上找到示例代码片段和其他文档：[Aspose.Words for Java API 参考](https://reference.aspose.com/words/java/).

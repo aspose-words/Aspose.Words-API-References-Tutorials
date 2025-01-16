@@ -15,7 +15,7 @@ url: /fr/net/programming-with-pdfsaveoptions/image-compression/
 
 Avant de plonger dans le didacticiel, assurez-vous de disposer des prérequis suivants :
 
-1.  Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Vous pouvez le télécharger à partir du[Site Web d'Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Vous pouvez le télécharger à partir du[Site Web d'Aspose](https://releases.aspose.com/words/net/).
 
 2. Connaissances de base de C# : une familiarité avec la programmation C# vous aidera à comprendre les exemples de code fournis dans ce didacticiel.
 

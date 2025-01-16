@@ -19,10 +19,10 @@ url: /th/python-net/document-splitting-and-formatting/split-format-documents/
 ขั้นตอนแรกคือโหลดเอกสารที่คุณต้องการแยกและจัดรูปแบบ ใช้โค้ดสั้นๆ ต่อไปนี้เพื่อดำเนินการนี้:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## ขั้นตอนที่ 2: แบ่งเอกสารเป็นส่วนๆ
@@ -41,10 +41,10 @@ sections = document.sections
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## ขั้นตอนที่ 4: บันทึกเอกสาร
@@ -55,6 +55,12 @@ section.page_setup.bottom_margin = asposewords.pt_to_px(1)
 document.save("path/to/save/updated_document.docx")
 ```
 
+## บทสรุป
+
+Aspose.Words for Python มอบชุดเครื่องมือที่ครอบคลุมเพื่อแยกและจัดรูปแบบเอกสารตามความต้องการของคุณอย่างมีประสิทธิภาพ โดยทำตามขั้นตอนที่ระบุไว้ในบทช่วยสอนนี้และใช้ตัวอย่างโค้ดต้นฉบับที่ให้มา คุณสามารถจัดการเอกสารของคุณได้อย่างราบรื่นและนำเสนออย่างมืออาชีพ
+
+ในบทช่วยสอนนี้ เราได้ครอบคลุมพื้นฐานของการแยกเอกสาร การจัดรูปแบบ และให้คำตอบสำหรับคำถามทั่วไป ตอนนี้ถึงคราวของคุณที่จะสำรวจและทดลองใช้ความสามารถของ Aspose.Words สำหรับ Python เพื่อปรับปรุงเวิร์กโฟลว์การจัดการเอกสารของคุณให้ดียิ่งขึ้น
+
 ## คำถามที่พบบ่อย
 
 ### ฉันจะแบ่งเอกสารออกเป็นหลายไฟล์ได้อย่างไร
@@ -62,7 +68,7 @@ document.save("path/to/save/updated_document.docx")
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ for i, section in enumerate(sections):
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### ฉันจะเปลี่ยนรูปแบบอักษรสำหรับส่วนที่เจาะจงได้อย่างไร
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### สามารถลบส่วนที่เจาะจงออกจากเอกสารได้หรือไม่
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## บทสรุป
-Aspose.Words for Python มอบชุดเครื่องมือที่ครอบคลุมเพื่อแยกและจัดรูปแบบเอกสารตามความต้องการของคุณอย่างมีประสิทธิภาพ โดยทำตามขั้นตอนที่ระบุไว้ในบทช่วยสอนนี้และใช้ตัวอย่างโค้ดต้นฉบับที่ให้มา คุณสามารถจัดการเอกสารของคุณได้อย่างราบรื่นและนำเสนออย่างมืออาชีพ
-
-ในบทช่วยสอนนี้ เราได้ครอบคลุมพื้นฐานของการแยกเอกสาร การจัดรูปแบบ และให้คำตอบสำหรับคำถามทั่วไป ตอนนี้ถึงคราวของคุณที่จะสำรวจและทดลองใช้ความสามารถของ Aspose.Words สำหรับ Python เพื่อปรับปรุงเวิร์กโฟลว์การจัดการเอกสารของคุณให้ดียิ่งขึ้น

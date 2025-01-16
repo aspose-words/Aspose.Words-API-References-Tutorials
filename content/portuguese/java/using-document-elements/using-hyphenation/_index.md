@@ -2,7 +2,7 @@
 title: Usando hifenização em Aspose.Words para Java
 linktitle: Usando Hifenização
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda como usar hifenização efetivamente no Aspose.Words para Java com este tutorial abrangente. Melhore a legibilidade do documento hoje mesmo!
+description: Aprenda a usar hifenização de forma eficaz no Aspose.Words para Java com este tutorial abrangente. Melhore a legibilidade do documento hoje mesmo!
 type: docs
 weight: 17
 url: /pt/java/using-document-elements/using-hyphenation/

@@ -91,6 +91,6 @@ Om alle antwoorden te verwijderen, moet u de lus doorlopen`Replies` verzameling 
 
  Ja, u kunt door de secties van het document navigeren en opmerkingen binnen elke sectie openen met behulp van de`GetChild` methode.
 
-### Ondersteunt Aspose.Words voor .NET andere functies voor opmerkingen?
+### Ondersteunt Aspose.Words voor .NET andere functies met betrekking tot opmerkingen?
 
 Ja, Aspose.Words voor .NET biedt uitgebreide ondersteuning voor diverse functies met betrekking tot opmerkingen, waaronder het toevoegen van nieuwe opmerkingen, het instellen van opmerkingseigenschappen en meer.

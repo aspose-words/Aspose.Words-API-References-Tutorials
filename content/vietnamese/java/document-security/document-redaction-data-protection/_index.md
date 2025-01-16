@@ -18,7 +18,7 @@ Trong hướng dẫn này, chúng ta sẽ khám phá cách biên tập thông ti
 
 Trước khi bắt đầu làm việc với Aspose.Words for Java, chúng ta cần thiết lập môi trường phát triển. Thực hiện theo các bước sau:
 
-1.  Tải xuống và cài đặt Aspose.Words cho Java: Truy cập[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) để tải xuống phiên bản mới nhất của Aspose.Words cho Java.
+1.  Tải xuống và cài đặt Aspose.Words cho Java: Truy cập[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)để tải xuống phiên bản mới nhất của Aspose.Words cho Java.
 
 2. Tích hợp Aspose.Words vào dự án của bạn: Thêm các tệp JAR Aspose.Words vào dự án Java của bạn.
 

@@ -1,6 +1,6 @@
 ---
-title: تحميل وحفظ مستندات HTML باستخدام Aspose.Words لـ Java
-linktitle: تحميل وحفظ مستندات HTML باستخدام
+title: تحميل وحفظ مستندات HTML
+linktitle: تحميل وحفظ مستندات HTML
 second_title: واجهة برمجة تطبيقات معالجة المستندات في Java Aspose.Words
 description: تعرف على كيفية تحميل مستندات HTML وحفظها في Java باستخدام Aspose.Words for Java. دليل خطوة بخطوة مع أمثلة التعليمات البرمجية لدمج المستندات بسلاسة.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  الآن بعد أن قمنا بتحميل HTML إلى`Document`يمكننا حفظه كمستند Word. لنحفظه بصيغة DOCX:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  هذا الكود يحفظ`Document` كملف DOCX، وهو تنسيق شائع لمستندات Word.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## خاتمة
@@ -95,4 +95,4 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 ### أين يمكنني العثور على مزيد من الوثائق والأمثلة لـ Aspose.Words for Java؟
 
- يمكنك العثور على وثائق مفصلة وأمثلة أكواد ودروس تعليمية على موقع الويب الخاص بوثائق Aspose.Words for Java:[توثيق Aspose.Words للغة Java](https://reference.aspose.com/words/java/).
+يمكنك العثور على وثائق مفصلة وأمثلة أكواد ودروس تعليمية على موقع الويب الخاص بوثائق Aspose.Words for Java:[توثيق Aspose.Words للغة Java](https://reference.aspose.com/words/java/).

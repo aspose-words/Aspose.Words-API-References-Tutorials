@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Der`Aspose.Words` Namespace enthält die Kernklassen zur Bearbeitung von Word-Dokumenten, während`Aspose.Words.Tables` ist speziell für die Handhabung von Tabellen.
+ Der`Aspose.Words` Namespace enthält die Kernklassen zur Bearbeitung von Word-Dokumenten, während`Aspose.Words.Tables` ist speziell für die Handhabung von Tabellen.
 
 ## Schritt 1: Richten Sie Ihr Dokument ein
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- In diesem Schritt definieren Sie den Pfad, in dem Ihr Dokument gespeichert ist und laden es in ein`Document` Objekt. Ersetzen`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad, in dem sich Ihr Dokument befindet.
+ In diesem Schritt definieren Sie den Pfad, in dem Ihr Dokument gespeichert ist und laden es in ein`Document` Objekt. Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad, in dem sich Ihr Dokument befindet.
 
 ## Schritt 2: Zugriff auf die Tabelle
 
@@ -68,7 +68,7 @@ Nachdem Sie nun die Tabelle erstellt haben, können Sie die Funktion „Automati
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-Der`AutoFit` Methode mit`AutoFitBehavior.AutoFitToWindow` sorgt dafür, dass die Tabellenbreite an die gesamte Seitenbreite angepasst wird.
+ Der`AutoFit` Methode mit`AutoFitBehavior.AutoFitToWindow` sorgt dafür, dass die Tabellenbreite an die gesamte Seitenbreite angepasst wird.
 
 ## Schritt 4: Speichern Sie das geänderte Dokument
 

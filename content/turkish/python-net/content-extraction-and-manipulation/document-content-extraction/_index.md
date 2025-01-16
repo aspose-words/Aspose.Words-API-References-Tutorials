@@ -44,18 +44,6 @@ for paragraph in doc.get_child_nodes(doc.is_paragraph, True):
     text += paragraph.get_text()
 ```
 
-## Görüntüleri Çıkarma
-
-Belgeden görselleri çıkarmak için:
-
-```python
-for shape in doc.get_child_nodes(doc.is_shape, True):
-    if shape.has_image:
-        image = shape.image_data.to_bytes()
-        with open("image.png", "wb") as f:
-            f.write(image)
-```
-
 ## Biçimlendirmeyi Yönetme
 
 Çıkarma sırasında biçimlendirmeyi koruma:
@@ -79,7 +67,7 @@ for table in doc.get_child_nodes(doc.is_table, True):
             print("Cell Text:", cell.get_text())
 ```
 
-## Hiper Bağlantılarla Çalışma
+## Hiperlinklerle Çalışma
 
 Köprü metinleri çıkarılıyor:
 

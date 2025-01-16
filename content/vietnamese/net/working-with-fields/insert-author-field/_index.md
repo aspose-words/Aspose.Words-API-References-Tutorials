@@ -48,7 +48,7 @@ Bây giờ chúng ta đã nhập không gian tên, hãy chuyển sang hướng d
 
 Tiếp theo, chúng ta cần cài đặt thư viện Aspose.Words. Bạn có thể thực hiện việc này thông qua NuGet Package Manager.
 
-1. Mở NuGet Package Manager: Nhấp chuột phải vào dự án của bạn trong Solution Explorer, sau đó nhấp vào "Manage NuGet Packages".
+1. Mở Trình quản lý gói NuGet: Nhấp chuột phải vào dự án của bạn trong Solution Explorer, sau đó nhấp vào "Quản lý gói NuGet".
 2. Tìm kiếm Aspose.Words: Trong tab Browse, hãy tìm kiếm "Aspose.Words".
 3. Cài đặt gói: Nhấp vào "Aspose.Words" rồi nhấp vào "Cài đặt".
 

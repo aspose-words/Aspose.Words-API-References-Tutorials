@@ -26,23 +26,17 @@ Aspose.Words Python 教程指导开发人员实现文档处理工作流程自动
 使用 Aspose.Words for Python 掌握文档创建。创建动态文档、自定义格式并简化文字文档处理。
 ### [文字自动化](./word-automation/)
 使用 Aspose.Words for Python 自动执行文字处理任务。简化文档管理并提高文字自动化效率。
-### [文档智能](./document-intelligence/)
-使用 Aspose.Words for Python 的文档智能从文档中获取有价值的见解。自动进行分析、文本提取和分类。
 ### [文档转换](./document-conversion/)
 使用 Aspose.Words for Python 高效地在格式之间转换文档。简化文字文档处理并简化文档管理任务。 
-### [文档保护](./document-protection/)
-使用 Aspose.Words for Python 保护您的文档！实施密码加密、用户权限和数字签名，以实现强大的文档保护。
 ### [文档结构和内容操作](./document-structure-and-content-manipulation/)
 探索 Python 和 .NET 的 Aspose.Words 教程，重点介绍文档结构和内容操作。了解如何有效地导航、提取和修改文档元素。提供源代码示例。
 ### [内容提取和操作](./content-extraction-and-manipulation/)
 通过 Aspose.Words 教程探索内容提取和操作的世界。了解如何使用 Python 和 .NET 高效地提取和操作内容，从而增强您的文档处理能力。
 ### [文档合并与比较](./document-combining-and-comparison/)
-发现使用 Aspose.Words for Python 和 .NET 进行文档合并和比较的全面教程。了解如何无缝合并和比较文档，增强您的文档处理工作流程。
+发现使用 Aspose.Words for Python 和 .NET 进行文档合并和比较的全面教程。了解如何无缝合并和比较文档，增强文档处理工作流程。
 ### [文档分割和格式化](./document-splitting-and-formatting/)
 探索 Aspose.Words 教程，了解如何使用 Python 和 .NET 进行文档拆分和格式化。学习如何高效地拆分和格式化文档，从而增强您的文档处理任务。 
 ### [文档选项和设置](./document-options-and-settings/)
 探索 Aspose.Words 教程，了解 Python 和 .NET 中的文档选项和设置。学习如何使用分步指导和源代码示例优化文档创建和格式化。
-### [数据可视化和格式化](./data-visualization-and-formatting/)
-了解 Aspose.Words 中有关 Python 和 .NET 数据可视化和格式化的教程。学习如何有效地呈现数据、创建出色的报告以及以编程方式格式化文档。
 ### [表格和格式](./tables-and-formatting/)
 深入了解 Aspose.Words 教程，了解如何在 Python 和 .NET 应用程序中设置表格和格式。学习如何创建、自定义和设计表格，以制作出具有视觉吸引力的文档。 

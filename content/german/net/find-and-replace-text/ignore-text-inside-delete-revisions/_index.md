@@ -17,7 +17,7 @@ Bevor Sie mit diesem Tutorial beginnen, stellen Sie sicher, dass die folgenden V
 - Grundkenntnisse der Programmiersprache C#.
 - Visual Studio ist auf Ihrem System installiert.
 -  Aspose.Words für .NET-Bibliothek in Ihr Projekt integriert. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/).
-- Zugriff auf Aspose.Words für .NET[Dokumentation](https://reference.aspose.com/words/net/) als Referenz.
+-  Zugriff auf Aspose.Words für .NET[Dokumentation](https://reference.aspose.com/words/net/) als Referenz.
 
 ## Namespaces importieren
 
@@ -84,4 +84,4 @@ Ja, Sie können verfolgte Revisionen mit Aspose.Words für .NET programmgesteuer
 Aspose.Words für .NET ist für die effiziente Handhabung großer Dokumente optimiert, einschließlich solcher mit umfangreichen nachverfolgten Revisionen.
 
 ### Wo finde ich weitere Ressourcen und Support für Aspose.Words für .NET?
-Sie können die umfassende Dokumentation erkunden und Unterstützung von der Aspose.Words für .NET-Community erhalten unter[Aspose.Words Forum](https://forum.aspose.com/c/words/8).
+ Sie können die umfassende Dokumentation erkunden und Unterstützung von der Aspose.Words für .NET-Community erhalten unter[Aspose.Words Forum](https://forum.aspose.com/c/words/8).

@@ -22,7 +22,7 @@ Prima di iniziare, assicurati di avere quanto segue:
 
 ## Importazione degli spazi dei nomi
 
-Per prima cosa è necessario importare gli spazi dei nomi necessari per accedere alle classi e ai metodi Aspose.Words.
+Per prima cosa, è necessario importare gli spazi dei nomi necessari per accedere alle classi e ai metodi Aspose.Words.
 
 ```csharp
 using Aspose.Words;

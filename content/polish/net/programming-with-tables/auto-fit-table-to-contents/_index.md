@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Ten`Aspose.Words` przestrzeń nazw zapewnia podstawową funkcjonalność do obsługi dokumentów Word, podczas gdy`Aspose.Words.Tables` zawiera klasy przeznaczone specjalnie do pracy z tabelami.
+ Ten`Aspose.Words` przestrzeń nazw zapewnia podstawową funkcjonalność do obsługi dokumentów Word, podczas gdy`Aspose.Words.Tables` zawiera klasy przeznaczone specjalnie do pracy z tabelami.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
 
@@ -79,7 +79,7 @@ Na koniec zapisz zmiany w nowym dokumencie:
 doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 ```
 
-Ten krok zapisuje zaktualizowany dokument pod nową nazwą, dzięki czemu nie nadpiszesz oryginalnego pliku. Jest to podobne do zapisywania nowej wersji dokumentu w celu zachowania oryginału podczas stosowania zmian.
+Ten krok zapisuje zaktualizowany dokument pod nową nazwą, dzięki czemu nie nadpiszesz oryginalnego pliku. Jest to podobne do zapisywania nowej wersji dokumentu, aby zachować oryginał podczas stosowania zmian.
 
 ## Wniosek
 
@@ -88,7 +88,7 @@ Automatyczne dopasowywanie tabel do zawartości za pomocą Aspose.Words dla .NET
 ## Najczęściej zadawane pytania
 
 ### Czy mogę automatycznie dopasować tylko określone kolumny w tabeli?
-Ten`AutoFit` Metoda ta dotyczy całej tabeli. Jeśli trzeba dostosować konkretne kolumny, może być konieczne ręczne ustawienie szerokości kolumn.
+ Ten`AutoFit` Metoda ta dotyczy całej tabeli. Jeśli trzeba dostosować konkretne kolumny, może być konieczne ręczne ustawienie szerokości kolumn.
 
 ### Co zrobić, jeśli mój dokument zawiera wiele tabel?
  Możesz przejść przez wszystkie tabele w dokumencie za pomocą pętli`doc.GetChildNodes(NodeType.Table, true)` i zastosuj automatyczne dopasowanie, jeśli zajdzie taka potrzeba.

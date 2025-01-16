@@ -15,7 +15,7 @@ Přemýšleli jste někdy nad tím, jak uložit dokument aplikace Word jako čer
 
 Než si ušpiníme ruce, je potřeba mít připraveno několik věcí:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí .NET: Visual Studio je dobrá volba, ale můžete použít jakékoli prostředí, které vám vyhovuje.
 - Základní znalost C#: Nebojte se, budeme to dělat jednoduše, ale trocha znalosti C# pomůže.
 - Dokument aplikace Word: Připravte si ukázkový dokument aplikace Word ke konverzi.
@@ -78,7 +78,7 @@ A tady to máte! Pomocí několika řádků kódu jste pomocí Aspose.Words for 
 
 ## FAQ
 
-### Co je to indexovaný obrázek 1Bpp?
+### Co je 1Bpp indexovaný obrázek?
 Indexovaný obrázek 1Bpp (1 bit na pixel) je formát černobílého obrázku, kde je každý pixel reprezentován jedním bitem, buď 0, nebo 1. Tento formát je vysoce prostorově nenáročný.
 
 ### Mohu převést více stránek dokumentu aplikace Word najednou?

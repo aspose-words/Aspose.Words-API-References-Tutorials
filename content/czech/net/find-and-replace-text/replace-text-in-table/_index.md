@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- Zde,`dataDir` je cesta, kde je vaše`Tables.docx` soubor se nachází. Nezapomeňte vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
+ Zde,`dataDir` je cesta, kde jsi`Tables.docx` soubor se nachází. Nezapomeňte vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
 
 ## Krok 2: Přístup k tabulce
 

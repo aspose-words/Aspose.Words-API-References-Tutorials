@@ -7,168 +7,142 @@ type: docs
 weight: 13
 url: /ar/java/table-processing/formatting-tables/
 ---
-
-هل أنت مستعد للانطلاق في رحلة لإتقان فن تنسيق الجداول في المستندات باستخدام Aspose.Words for Java؟ في هذا الدليل الشامل، سنخوض في عالم تنسيق المستندات، مع التركيز بشكل خاص على الجداول. Aspose.Words for Java هي أداة قوية ستمكنك من إنشاء الجداول في مستنداتك ومعالجتها وتحسينها دون عناء.
-
 ## مقدمة
 
-Aspose.Words for Java هي مكتبة Java تتيح لك العمل مع جوانب مختلفة من معالجة المستندات. سواء كنت تتعامل مع التقارير أو العقود أو أي مستند يتضمن جداول، يمكن أن تكون هذه المكتبة رفيقك الموثوق. بفضل ميزاتها وإمكانياتها الشاملة، يمكنك تحقيق تنسيق دقيق واحترافي للمستندات.
+هل أنت مستعد للبدء في إنشاء الجداول في مستندات Word بسهولة باستخدام Aspose.Words for Java؟ تعد الجداول ضرورية لتنظيم البيانات، وباستخدام هذه المكتبة القوية، يمكنك إنشاء الجداول وتعبئتها وحتى تضمينها في مستندات Word بطريقة برمجية. في هذا الدليل التفصيلي، سنستكشف كيفية إنشاء الجداول ودمج الخلايا وإضافة الجداول المتداخلة.
 
-## البدء باستخدام Aspose.Words للغة Java
+## المتطلبات الأساسية
 
-قبل أن نتعمق في تفاصيل تنسيق الجدول، دعونا نقوم بإعداد بيئة التطوير الخاصة بنا والتعرف على Aspose.Words لـ Java.
+قبل أن تبدأ في الترميز، تأكد من أن لديك ما يلي:
 
-### تثبيت
+- تم تثبيت Java Development Kit (JDK) على نظامك.
+-  Aspose.Words لمكتبة Java.[تحميله هنا](https://releases.aspose.com/words/java/).
+- فهم أساسي لبرمجة جافا.
+- بيئة تطوير متكاملة مثل IntelliJ IDEA، أو Eclipse، أو أي بيئة تطوير متكاملة أخرى تشعر بالراحة معها.
+-  أ[رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) لفتح إمكانيات Aspose.Words الكاملة.
 
- للبدء، ستحتاج إلى تنزيل وتثبيت Aspose.Words for Java. يمكنك العثور على رابط التنزيل[هنا](https://releases.aspose.com/words/java/)بمجرد التثبيت، يمكنك البدء في استخدام هذه المكتبة للعمل مع المستندات برمجيًا.
+## استيراد الحزم
 
-### إضافة Aspose.Words for Java إلى مشروعك
-
-بعد تنزيل Aspose.Words for Java، أضف المكتبة إلى مشروع Java الخاص بك. يمكنك القيام بذلك عن طريق تضمين ملفات JAR في مسار فئة المشروع الخاص بك.
-
-### تهيئة Aspose.Words لـ Java
-
-للبدء في استخدام Aspose.Words لـ Java، تحتاج إلى تهيئته في الكود الخاص بك. فيما يلي مثال بسيط لكيفية القيام بذلك:
+لاستخدام Aspose.Words لـ Java، تحتاج إلى استيراد الفئات والحزم المطلوبة. أضف هذه الواردات إلى أعلى ملف Java الخاص بك:
 
 ```java
-import com.aspose.words.Document;
-
-public class TableFormattingExample {
-    public static void main(String[] args) {
-        // تهيئة Aspose.Words لـ Java
-        Document doc = new Document();
-        
-        // الكود الخاص بك يذهب هنا
-    }
-}
+import com.aspose.words.*;
 ```
 
-## إنشاء الجداول وتعبئتها
+دعونا نقسم العملية إلى خطوات صغيرة الحجم لجعلها سهلة المتابعة للغاية.
 
-الآن بعد أن قمنا بإعداد بيئتنا، فلننتقل إلى إنشاء الجداول وتعبئتها في المستندات.
+## الخطوة 1: إنشاء مستند وجدول
 
-### إنشاء جدول
+ما هو أول شيء تحتاجه؟ وثيقة للعمل بها!
 
- لإنشاء جدول في مستندك، يمكنك استخدام`Table` فئة من Aspose.Words لـ Java. إليك كيفية إنشاء جدول أساسي:
+ابدأ بإنشاء مستند Word جديد وجدول. ألحق الجدول بنص المستند.
 
 ```java
+Document doc = new Document();
 Table table = new Table(doc);
+doc.getFirstSection().getBody().appendChild(table);
 ```
 
-### إضافة الصفوف والأعمدة
+- `Document`:يمثل مستند Word.
+- `Table`:إنشاء جدول فارغ.
+- `appendChild`:يضيف الجدول إلى نص المستند.
 
-لجعل جدولك مفيدًا، ستحتاج إلى إضافة صفوف وأعمدة. إليك كيفية القيام بذلك:
+## الخطوة 2: إضافة صفوف وخلايا إلى الجدول
+
+جدول بدون صفوف وخلايا؟ هذا مثل سيارة بدون عجلات! دعنا نصلح ذلك.
 
 ```java
-// إضافة صف إلى الجدول
-Row row = table.getRows().add();
+Row firstRow = new Row(doc);
+table.appendChild(firstRow);
 
-// إضافة خلايا إلى الصف
-Cell cell1 = row.getCells().add();
-cell1.getCellFormat().setPreferredWidth(100.0);
-
-Cell cell2 = row.getCells().add();
-cell2.getCellFormat().setPreferredWidth(200.0);
-
-// الكود الخاص بك لملء الجدول يذهب هنا
+Cell firstCell = new Cell(doc);
+firstRow.appendChild(firstCell);
 ```
 
-## تنسيق الجداول
+- `Row`:يمثل صفًا في الجدول.
+- `Cell`:يمثل خلية في الصف.
+- `appendChild`:إضافة صفوف وخلايا إلى الجدول.
 
-إن التنسيق هو المكان الذي تحدث فيه السحر. يوفر Aspose.Words for Java مجموعة كبيرة من الخيارات لتنسيق الجداول. دعنا نستكشف بعض مهام التنسيق الشائعة:
+## الخطوة 3: إضافة نص إلى خلية
 
-### ضبط عرض الأعمدة
-
-يمكنك التحكم في عرض الأعمدة لضمان أن يبدو جدولك جذابًا بصريًا. إليك كيفية ضبط عرض الأعمدة:
+حان الوقت لإضافة بعض الشخصية إلى طاولتنا!
 
 ```java
-// تعيين العرض المفضل للعمود
-cell1.getCellFormat().setPreferredWidth(100.0);
+Paragraph paragraph = new Paragraph(doc);
+firstCell.appendChild(paragraph);
+
+Run run = new Run(doc, "Hello world!");
+paragraph.appendChild(run);
 ```
 
-### تطبيق الحدود
+- `Paragraph`:إضافة فقرة إلى الخلية.
+- `Run`:يضيف النص إلى الفقرة.
 
-إن إضافة حدود إلى جدولك قد يعزز من قابلية قراءته. يمكنك أيضًا تخصيص أنماط الحدود:
+## الخطوة 4: دمج الخلايا في جدول
+
+هل تريد دمج الخلايا لإنشاء رأس أو نطاق؟ الأمر سهل للغاية!
 
 ```java
-// تطبيق حدود على خلية
-cell1.getCellFormat().getBorders().setLineStyle(LineStyle.SINGLE);
-cell1.getCellFormat().getBorders().setColor(Color.BLACK);
+DocumentBuilder builder = new DocumentBuilder(doc);
+
+builder.insertCell();
+builder.getCellFormat().setHorizontalMerge(CellMerge.FIRST);
+builder.write("Text in merged cells.");
+
+builder.insertCell();
+builder.getCellFormat().setHorizontalMerge(CellMerge.PREVIOUS);
+builder.endRow();
 ```
 
-### دمج الخلايا
+- `DocumentBuilder`:يبسط إنشاء المستندات.
+- `setHorizontalMerge`:دمج الخلايا أفقياً.
+- `write`:إضافة المحتوى إلى الخلايا المدمجة.
 
-يُعد دمج الخلايا مفيدًا عندما تريد إنشاء خلايا رأسية أو دمج الخلايا لغرض معين:
+## الخطوة 5: إضافة الجداول المتداخلة
+
+هل أنت مستعد للارتقاء إلى المستوى الأعلى؟ دعنا نضيف جدولاً داخل جدول.
 
 ```java
-// دمج الخلايا أفقيا
-table.mergeCells(cell1, cell2);
+builder.moveTo(table.getRows().get(0).getCells().get(0).getFirstParagraph());
+
+builder.startTable();
+builder.insertCell();
+builder.write("Hello world!");
+builder.endTable();
 ```
 
-## التعامل المتقدم مع الجداول
+- `moveTo`:نقل المؤشر إلى مكان محدد في المستند.
+- `startTable`:يبدأ إنشاء جدول متداخل.
+- `endTable`:ينتهي الجدول المتداخل.
 
-يوفر Aspose.Words for Java ميزات متقدمة للتعامل مع سيناريوهات الجداول المعقدة. دعنا نستكشف بعضًا منها:
+## خاتمة
 
-### إضافة الجداول المتداخلة
-
-في بعض الأحيان، قد تحتاج إلى إضافة جداول متداخلة داخل خلية. ويمكن تحقيق ذلك على النحو التالي:
-
-```java
-// إنشاء جدول متداخل
-Table nestedTable = new Table(doc);
-Row nestedRow = nestedTable.getRows().add();
-Cell nestedCell = nestedRow.getCells().add();
-
-// إضافة محتوى إلى الجدول المتداخل
-nestedCell.getFirstParagraph().appendChild(new Run(doc, "Nested Table Content"));
-
-// إضافة الجدول المتداخل إلى الجدول الرئيسي
-cell1.appendChild(nestedTable);
-```
-
-### إضافة أنماط أنيقة للجدول
-
-يدعم Aspose.Words for Java أنماط جدول مختلفة يمكنها أن تمنح مستندك مظهرًا احترافيًا:
-
-```java
-// تطبيق نمط جدول محدد مسبقًا
-table.setStyleIdentifier(StyleIdentifier.LIGHT_SHADING_ACCENT_1);
-```
+تهانينا! لقد تعلمت كيفية إنشاء الجداول وتعبئتها وتصميمها باستخدام Aspose.Words for Java. من إضافة نص إلى دمج الخلايا وتضمين الجداول، أصبح لديك الآن الأدوات اللازمة لتنظيم البيانات بشكل فعال في مستندات Word.
 
 ## الأسئلة الشائعة
-
-### كيف يمكنني تغيير لون الخلفية لخلية الجدول؟
-
- يمكنك تغيير لون الخلفية لخلية الجدول باستخدام`Shading` الممتلكات. فيما يلي مثال:
-
-```java
-cell1.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
-```
 
 ### هل من الممكن إضافة ارتباط تشعبي إلى خلية جدول؟
 
 نعم، يمكنك إضافة ارتباطات تشعبية إلى خلايا الجدول في Aspose.Words for Java. وإليك كيفية القيام بذلك:
 
 ```java
-Run run = new Run(doc, "Click Here");
-run.getFont().setUnderline(Underline.SINGLE);
-run.getFont().setColor(Color.BLUE);
-run.getHyperlink().setAddress("https://www.example.com");
-cell1.getFirstParagraph().appendChild(run);
+builder.moveTo(table.getRows().get(0).getCells().get(0).getFirstParagraph());
+
+// قم بإدراج ارتباط تشعبي وتأكيده باستخدام التنسيق المخصص.
+// سيكون الرابط التشعبي عبارة عن جزء نصي قابل للنقر يأخذنا إلى الموقع المحدد في عنوان URL.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com"، خطأ)؛
 ```
 
-### هل يمكنني تطبيق التنسيق الشرطي على الخلايا في جدول؟
+### هل يمكنني استخدام Aspose.Words لـ Java مجانًا؟  
+ يمكنك استخدامه مع القيود أو الحصول عليه[نسخة تجريبية مجانية](https://releases.aspose.com/) لاستكشاف إمكاناتها الكاملة.
 
-نعم، يمكنك تطبيق التنسيق الشرطي على الخلايا استنادًا إلى شروط محددة. ستحتاج إلى استخدام منطق البرمجة لتحقيق ذلك، مثل تغيير ألوان الخلايا أو النص استنادًا إلى قيم البيانات.
+### كيف أقوم بدمج الخلايا عموديا في جدول؟  
+ استخدم`setVerticalMerge` طريقة`CellFormat` فئة مشابهة للدمج الأفقي.
 
-### كيف يمكنني تصدير جدولي إلى تنسيقات مختلفة، مثل PDF أو DOCX؟
+### هل يمكنني إضافة صور إلى خلية الجدول؟  
+ نعم يمكنك استخدام`DocumentBuilder` لإدراج الصور في خلايا الجدول.
 
- يوفر Aspose.Words for Java خيارات التصدير إلى تنسيقات مختلفة. يمكنك حفظ مستندك كملف PDF أو DOCX باستخدام`Save` الطريقة. فيما يلي مثال:
-
-```java
-doc.save("output.pdf", SaveFormat.PDF);
-```
-
-## خاتمة
-
-في هذا الدليل الشامل، استكشفنا العالم الرائع لتنسيق الجداول في المستندات باستخدام Aspose.Words for Java. بفضل ميزاته القوية ومرونته، يمكنك رفع مهارات تنسيق المستندات إلى المستوى التالي. سواء كنت تقوم بإنشاء تقارير أو عروض تقديمية أو أي مستند يتضمن جداول، فإن Aspose.Words for Java هو رفيقك الموثوق. لذا، انطلق واكتشف الإمكانات الكاملة لتنسيق المستندات باستخدام Aspose.Words for Java!
+### أين يمكنني العثور على المزيد من الموارد حول Aspose.Words for Java؟  
+ التحقق من[التوثيق](https://reference.aspose.com/words/java/) أو ال[منتدى الدعم](https://forum.aspose.com/c/words/8/) للحصول على أدلة مفصلة.

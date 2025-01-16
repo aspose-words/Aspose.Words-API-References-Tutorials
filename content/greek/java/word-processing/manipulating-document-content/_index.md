@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /el/java/word-processing/manipulating-document-content/
 ---
-
 ## Εισαγωγή
 
 Στον κόσμο του προγραμματισμού Java, η αποτελεσματική διαχείριση εγγράφων είναι μια κρίσιμη πτυχή πολλών εφαρμογών. Είτε εργάζεστε στη δημιουργία αναφορών, στο χειρισμό συμβάσεων ή σε οποιαδήποτε εργασία που σχετίζεται με έγγραφα, το Aspose.Words για Java είναι ένα ισχυρό εργαλείο που μπορείτε να έχετε στην εργαλειοθήκη σας. Σε αυτόν τον περιεκτικό οδηγό, θα εμβαθύνουμε στις περιπλοκές του χειρισμού του περιεχομένου εγγράφων με εκκαθάριση, πεδία και δεδομένα XML χρησιμοποιώντας το Aspose.Words για Java. Θα παρέχουμε οδηγίες βήμα προς βήμα μαζί με παραδείγματα πηγαίου κώδικα για να σας εξουσιοδοτήσουμε με τις γνώσεις και τις δεξιότητες που απαιτούνται για να κυριαρχήσετε αυτήν την ευέλικτη βιβλιοθήκη.
@@ -50,7 +49,8 @@ doc.save("cleaned_document.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ doc.save("document_without_empty_paragraphs.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 Ακολουθώντας αυτά τα βήματα, μπορείτε να διασφαλίσετε ότι το έγγραφό σας είναι καθαρό και έτοιμο για περαιτέρω χειρισμό.
-
----
 
 ## Εργασία με πεδία
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 Τα πεδία προσθέτουν δυναμικές δυνατότητες στα έγγραφά σας, ενισχύοντας τη χρησιμότητά τους.
 
----
-
-## Ενσωμάτωση δεδομένων XML
-
-Η ενσωμάτωση δεδομένων XML στα έγγραφά σας μπορεί να είναι ισχυρή, ειδικά για τη δημιουργία δυναμικού περιεχομένου. Το Aspose.Words για Java απλοποιεί αυτή τη διαδικασία.
-
-### Δεσμευτικά δεδομένα XML
-
-Συνδέστε δεδομένα XML στο έγγραφό σας με ευκολία:
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://schemas.example'");
-doc.save("document_with_xml_data.docx");
-```
-
-Αυτός ο κώδικας δεσμεύει δεδομένα XML σε συγκεκριμένα μέρη του εγγράφου σας, καθιστώντας το δυναμικό και βασισμένο σε δεδομένα.
-
-## Συχνές Ερωτήσεις (FAQ)
-
-### Πώς μπορώ να αφαιρέσω κενές παραγράφους από ένα έγγραφο;
-   
-   Για να αφαιρέσετε κενές παραγράφους από ένα έγγραφο, μπορείτε να επαναλάβετε τις παραγράφους και να αφαιρέσετε εκείνες που δεν έχουν περιεχόμενο κειμένου. Ακολουθεί ένα απόσπασμα κώδικα που θα σας βοηθήσει να το πετύχετε:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### Μπορώ να ενημερώσω όλα τα πεδία ενός εγγράφου μέσω προγραμματισμού;
-
-   Ναι, μπορείτε να ενημερώσετε όλα τα πεδία ενός εγγράφου μέσω προγραμματισμού χρησιμοποιώντας το Aspose.Words για Java. Δείτε πώς μπορείτε να το κάνετε:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### Πώς συνδέω δεδομένα XML σε ένα έγγραφο;
-
-   Η σύνδεση δεδομένων XML σε ένα έγγραφο είναι απλή με το Aspose.Words για Java. Μπορείτε να χρησιμοποιήσετε αντιστοιχίσεις XML για να το πετύχετε. Εδώ είναι ένα παράδειγμα:
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://schemas.example'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### Ποια είναι η σημασία του καθαρισμού του περιεχομένου του εγγράφου;
-
-   Η εκκαθάριση του περιεχομένου του εγγράφου είναι σημαντική για να διασφαλιστεί ότι τα έγγραφά σας δεν περιέχουν περιττά στοιχεία, τα οποία μπορούν να βελτιώσουν την αναγνωσιμότητα και να μειώσουν το μέγεθος του αρχείου. Βοηθά επίσης στη διατήρηση της συνέπειας των εγγράφων.
-
-### Πώς μπορώ να αφαιρέσω αχρησιμοποίητα στυλ από ένα έγγραφο;
-
-   Μπορείτε να αφαιρέσετε αχρησιμοποίητα στυλ από ένα έγγραφο χρησιμοποιώντας το Aspose.Words για Java. Εδώ είναι ένα παράδειγμα:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### Είναι το Aspose.Words για Java κατάλληλο για τη δημιουργία δυναμικών εγγράφων με δεδομένα XML;
-
-   Ναι, το Aspose.Words για Java είναι κατάλληλο για τη δημιουργία δυναμικών εγγράφων με δεδομένα XML. Παρέχει ισχυρές δυνατότητες για τη σύνδεση δεδομένων XML σε πρότυπα και τη δημιουργία εξατομικευμένων εγγράφων.
-
 ## Σύναψη
 
 Σε αυτόν τον εκτενή οδηγό, εξερευνήσαμε τον κόσμο του χειρισμού περιεχομένου εγγράφων με εκκαθάριση, πεδία και δεδομένα XML χρησιμοποιώντας το Aspose.Words για Java. Έχετε μάθει πώς να καθαρίζετε έγγραφα, να εργάζεστε με πεδία και να ενσωματώνετε δεδομένα XML απρόσκοπτα. Αυτές οι δεξιότητες είναι ανεκτίμητες για όποιον ασχολείται με τη διαχείριση εγγράφων σε εφαρμογές Java.
+
+## Συχνές ερωτήσεις
+
+### Πώς μπορώ να αφαιρέσω κενές παραγράφους από ένα έγγραφο;
+   
+Για να αφαιρέσετε κενές παραγράφους από ένα έγγραφο, μπορείτε να επαναλάβετε τις παραγράφους και να αφαιρέσετε εκείνες που δεν έχουν περιεχόμενο κειμένου. Ακολουθεί ένα απόσπασμα κώδικα που θα σας βοηθήσει να το πετύχετε:
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### Μπορώ να ενημερώσω όλα τα πεδία ενός εγγράφου μέσω προγραμματισμού;
+
+Ναι, μπορείτε να ενημερώσετε όλα τα πεδία ενός εγγράφου μέσω προγραμματισμού χρησιμοποιώντας το Aspose.Words για Java. Δείτε πώς μπορείτε να το κάνετε:
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### Ποια είναι η σημασία του καθαρισμού του περιεχομένου του εγγράφου;
+
+Η εκκαθάριση του περιεχομένου του εγγράφου είναι σημαντική για να διασφαλιστεί ότι τα έγγραφά σας δεν περιέχουν περιττά στοιχεία, τα οποία μπορούν να βελτιώσουν την αναγνωσιμότητα και να μειώσουν το μέγεθος του αρχείου. Βοηθά επίσης στη διατήρηση της συνέπειας των εγγράφων.
+
+### Πώς μπορώ να αφαιρέσω αχρησιμοποίητα στυλ από ένα έγγραφο;
+
+Μπορείτε να αφαιρέσετε αχρησιμοποίητα στυλ από ένα έγγραφο χρησιμοποιώντας το Aspose.Words για Java. Εδώ είναι ένα παράδειγμα:
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### Είναι το Aspose.Words για Java κατάλληλο για τη δημιουργία δυναμικών εγγράφων με δεδομένα XML;
+
+Ναι, το Aspose.Words για Java είναι κατάλληλο για τη δημιουργία δυναμικών εγγράφων με δεδομένα XML. Παρέχει ισχυρές δυνατότητες για τη σύνδεση δεδομένων XML σε πρότυπα και τη δημιουργία εξατομικευμένων εγγράφων.

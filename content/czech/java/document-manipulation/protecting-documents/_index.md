@@ -12,7 +12,7 @@ url: /cs/java/document-manipulation/protecting-documents/
 
 Ochrana dokumentů je zásadní funkcí při práci s citlivými informacemi. Aspose.Words for Java poskytuje robustní možnosti pro ochranu vašich dokumentů před neoprávněným přístupem.
 
-## Ochrana dokumentů pomocí hesel
+## Ochrana dokumentů hesly
 
 Chcete-li chránit své dokumenty, můžete nastavit heslo. K dokumentu budou mít přístup pouze uživatelé, kteří znají heslo. Podívejme se, jak to udělat v kódu:
 
@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
-The`unprotect` metoda odstraní veškerou ochranu použitou na dokument a zpřístupní jej bez hesla.
+ The`unprotect` metoda odstraní veškerou ochranu použitou na dokument a zpřístupní jej bez hesla.
 
 ## Kontrola typu ochrany dokumentu
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
-The`getProtectionType` metoda vrací celé číslo představující typ ochrany použitý na dokument.
+ The`getProtectionType` metoda vrací celé číslo představující typ ochrany použitý na dokument.
 
 
 ## Závěr

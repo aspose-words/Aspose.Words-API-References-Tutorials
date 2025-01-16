@@ -15,7 +15,7 @@ dzisiejszej erze cyfrowej zarządzanie rozmiarem dokumentu ma kluczowe znaczenie
 
 Zanim przejdziesz do samouczka, upewnij się, że spełnione są następujące wymagania wstępne:
 
-1.  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Możesz go pobrać ze strony[Strona internetowa Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Możesz go pobrać ze strony[Strona internetowa Aspose](https://releases.aspose.com/words/net/).
 
 2. Podstawowa wiedza o języku C#: Znajomość programowania w języku C# pomoże Ci zrozumieć przykłady kodu przedstawione w tym samouczku.
 

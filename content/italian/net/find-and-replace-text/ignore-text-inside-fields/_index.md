@@ -31,7 +31,7 @@ using System.Text.RegularExpressions;
 
 ## Passaggio 1: creare un nuovo documento e un nuovo generatore
 
- Per prima cosa, inizializza un nuovo documento Word e un`DocumentBuilder`scopo di facilitare la costruzione del documento:
+ Per prima cosa, inizializza un nuovo documento Word e un`DocumentBuilder` scopo di facilitare la costruzione del documento:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);

@@ -16,7 +16,7 @@ Dobrý den, kolegové vývojáři! 👋 Měli jste někdy za úkol vytvořit dok
 
 Než se pustíme do kódu, pojďme si projít, co budete potřebovat:
 
-1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE kompatibilní s .NET, jako je Visual Studio, postačí.
 3. Základní znalost C#: Pochopení syntaxe C# vám pomůže hladce pokračovat.
 4. Ukázkový dokument Word: I když jej vytvoříme od začátku, mít vzorek může být užitečný pro účely testování.

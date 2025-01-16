@@ -18,7 +18,7 @@ Bevor wir uns in die technischen Details vertiefen, wollen wir kurz erläutern, 
 
 ## Erste Schritte mit Aspose.Words für Java
 
- Um unsere Reise zu beginnen, müssen Sie Aspose.Words für Java installiert und eingerichtet haben. Wenn Sie dies noch nicht getan haben, können Sie es von der Aspose-Website herunterladen.[Hier](https://releases.aspose.com/words/java/). Nachdem Sie die Bibliothek installiert haben, können Sie ihre Funktionen zum effektiven Verwalten von Tabellen und Layouts nutzen.
+ Um unsere Reise zu beginnen, müssen Sie Aspose.Words für Java installiert und eingerichtet haben. Wenn Sie dies noch nicht getan haben, können Sie es von der Aspose-Website herunterladen.[Hier](https://releases.aspose.com/words/java/)Nachdem Sie die Bibliothek installiert haben, können Sie ihre Funktionen zum effektiven Verwalten von Tabellen und Layouts nutzen.
 
 ## Grundlegende Tabellenverwaltung
 
@@ -110,7 +110,7 @@ Ja, Sie können Zellen in einer Tabelle mit Aspose.Words zusammenführen, wie im
  Keine Sorge! Sie können zuvor verbundene Zellen ganz einfach trennen, indem Sie deren horizontale Verbindungseigenschaft auf`NONE`.
 
 ### Wie kann ich vor einer Tabelle einen Seitenumbruch einfügen?
- Um einen Seitenumbruch vor einer Tabelle einzufügen, ändern Sie die Schriftart`PageBreakBefore` Eigentum wie nachgewiesen.
+Um einen Seitenumbruch vor einer Tabelle einzufügen, ändern Sie die Schriftart`PageBreakBefore` Eigentum wie nachgewiesen.
 
 ### Ist Aspose.Words mit verschiedenen Dokumentformaten kompatibel?
 Auf jeden Fall! Aspose.Words für Java unterstützt verschiedene Dokumentformate und ist somit eine vielseitige Wahl für die Dokumentenverwaltung.

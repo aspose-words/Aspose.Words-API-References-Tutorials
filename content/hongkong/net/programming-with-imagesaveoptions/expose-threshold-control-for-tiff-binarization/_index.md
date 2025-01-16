@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-imagesaveoptions/expose-threshold-control-for
 ---
 ## 介紹
 
-有沒有想過如何控制 Word 文件中 TIFF 二值化的閾值？您來對地方了！本指南將引導您使用 Aspose.Words for .NET 逐步完成流程。無論您是經驗豐富的開發人員還是剛入門，您都會發現本教學引人入勝、易於遵循，並且包含完成工作所需的所有詳細資訊。準備好潛入了嗎？我們走吧！
+有沒有想過如何控制 Word 文件中 TIFF 二值化的閾值？您來對地方了！本指南將引導您使用 Aspose.Words for .NET 逐步完成流程。無論您是經驗豐富的開發人員還是剛剛入門，您都會發現本教程引人入勝、易於遵循，並且包含完成工作所需的所有詳細資訊。準備好潛入了嗎？我們走吧！
 
 ## 先決條件
 

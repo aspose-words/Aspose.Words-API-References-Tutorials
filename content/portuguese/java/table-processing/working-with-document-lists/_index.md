@@ -38,23 +38,11 @@ Aqui está um trecho de código de exemplo para você começar:
 // Importar pacotes necessários
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Inicializar um novo documento
-        Document doc = new Document();
-
-        // Criar uma lista
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Adicionar itens de lista
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Salvar o documento
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Modificando uma lista de documentos
@@ -69,21 +57,18 @@ Depois de criar uma lista de documentos, você pode precisar modificá-la adicio
 Aqui está um trecho de código para modificar uma lista de documentos:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Carregar um documento existente
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Acesse a lista
-        List list = doc.getLists().get(0);
-
-        // Adicionar um novo item
-        list.getListItems().add("New Item");
-
-        // Salvar o documento modificado
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Verifique se o parágrafo faz parte de uma lista.
+    if (paragraph.isListItem()) {
+        // Atualize o último parágrafo da lista.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Extraindo informações de uma lista de documentos
@@ -97,23 +82,21 @@ Em alguns casos, você pode precisar extrair informações de uma lista de docum
 Aqui está um trecho de código para extrair informações de uma lista de documentos:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Carregue o documento
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Acesse a lista
-        List list = doc.getLists().get(0);
-
-        // Iterar pelos itens da lista e imprimi-los
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Perguntas Frequentes (FAQs)
+## Conclusão
+
+Neste guia abrangente, exploramos o mundo do trabalho com listas de documentos usando o Aspose.Words para Java. Você aprendeu como criar, modificar e extrair informações de listas de documentos, tudo com o poder e a flexibilidade do Aspose.Words para Java. Comece a implementar essas técnicas em seus projetos Java hoje mesmo e agilize suas tarefas de automação de documentos.
+
+
+## Perguntas frequentes
 
 ### Como adiciono marcadores a uma lista de documentos?
  Para adicionar marcadores a uma lista de documentos, use o ListTemplate apropriado ao criar a lista. Por exemplo, use`ListTemplate.BULLET_DEFAULT` em vez de`ListTemplate.NUMBER_DEFAULT`.
@@ -127,9 +110,5 @@ Absolutamente! O Aspose.Words para Java suporta uma ampla gama de formatos de do
 ### Como posso converter uma lista de documentos em PDF?
 Para converter uma lista de documentos para PDF, basta carregar o documento usando o Aspose.Words para Java e salvá-lo no formato PDF. É muito fácil!
 
-### Aspose.Words para Java oferece suporte para trabalhar com tabelas em documentos?
+### O Aspose.Words para Java oferece suporte para trabalhar com tabelas em documentos?
 Sim, o Aspose.Words para Java oferece amplo suporte para trabalhar com tabelas, permitindo que você crie, modifique e extraia dados tabulares sem esforço.
-
-## Conclusão
-
-Neste guia abrangente, exploramos o mundo do trabalho com listas de documentos usando o Aspose.Words para Java. Você aprendeu como criar, modificar e extrair informações de listas de documentos, tudo com o poder e a flexibilidade do Aspose.Words para Java. Comece a implementar essas técnicas em seus projetos Java hoje mesmo e agilize suas tarefas de automação de documentos.

@@ -109,4 +109,4 @@ dstDoc.Save(dataDir + "final_document.docx");
 
 ### 추가 자료나 지원은 어디에서 찾을 수 있나요?
 
- Aspose는 포괄적인 문서 포털을 제공합니다[문서 링크](https://reference.aspose.com/words/net/) 페이지 번호 매기기 기능과 기타 Aspose.Words 기능을 더 자세히 살펴보는 것입니다. 또한, 활성 포럼[지원 링크](https://forum.aspose.com/c/words/8) 개발자 커뮤니티와 소통하고 특정 과제에 대한 지원을 구할 수 있는 훌륭한 플랫폼입니다.
+ Aspose는 포괄적인 문서 포털을 제공합니다[문서 링크](https://reference.aspose.com/words/net/) 페이지 번호 매기기 기능과 기타 Aspose.Words 기능을 더 자세히 살펴보는 것입니다. 또한, 활성 포럼[지원 링크](https://forum.aspose.com/c/words/8) 개발자 커뮤니티와 소통하고 특정 과제에 대한 지원을 구할 수 있는 좋은 플랫폼입니다.

@@ -16,7 +16,7 @@ In questi tutorial, gli sviluppatori esploreranno la Python Document API fornita
 
 ## Semplificare l'elaborazione dei documenti Word
 
-tutorial si concentrano sulla semplificazione dell'elaborazione di documenti Word tramite Aspose.Words per Python. Gli sviluppatori impareranno come creare documenti dinamici con segnaposto, unire dati in modelli e generare report senza sforzo. Aspose.Words semplifica le attività di elaborazione di documenti complesse, rendendolo uno strumento inestimabile per gli sviluppatori Python.
+I tutorial si concentrano sulla semplificazione dell'elaborazione di documenti Word tramite Aspose.Words per Python. Gli sviluppatori impareranno come creare documenti dinamici con segnaposto, unire dati in modelli e generare report senza sforzo. Aspose.Words semplifica le attività di elaborazione di documenti complesse, rendendolo uno strumento inestimabile per gli sviluppatori Python.
 
 ## Migliorare i flussi di lavoro di elaborazione dei documenti
 

@@ -92,4 +92,4 @@ Aspose.Words prend en charge différentes versions de .NET Framework et .NET Cor
 Oui, vous pouvez dissocier les en-têtes et les pieds de page à l'aide des méthodes API Aspose.Words pour restaurer la mise en forme individuelle des documents.
 
 ### Où puis-je trouver une documentation plus détaillée sur Aspose.Words pour .NET ?
- Visite[Documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/)pour des guides complets et des références API.
+ Visite[Documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/) pour des guides complets et des références API.

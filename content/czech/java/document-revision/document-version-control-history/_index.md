@@ -35,7 +35,7 @@ Document doc = new Document("sample.docx");
 
 ## Krok 3: Sledujte změny
 
-Aspose.Words umožňuje povolit sledování změn v dokumentu, což bude zaznamenávat všechny úpravy provedené různými uživateli. Chcete-li povolit sledování změn, použijte následující kód:
+Aspose.Words vám umožňuje povolit sledování změn v dokumentu, což bude zaznamenávat všechny úpravy provedené různými uživateli. Chcete-li povolit sledování změn, použijte následující kód:
 
 ```java
 // Povolit změny stopy
@@ -72,7 +72,7 @@ doc.save("sample_v2.docx");
 
 ## Závěr
 
-Implementace správy verzí a historie dokumentů pomocí Aspose.Words pro Java je přímočará a vysoce efektivní. Zajišťuje, že vaše dokumenty jsou vždy aktuální, a můžete sledovat všechny změny provedené spolupracovníky. Začněte používat Aspose.Words for Java ještě dnes, abyste zefektivnili proces správy dokumentů.
+Implementace správy verzí a historie dokumentů pomocí Aspose.Words pro Java je přímočará a vysoce efektivní. Zajišťuje, že vaše dokumenty jsou vždy aktuální, a můžete sledovat všechny změny provedené spolupracovníky. Začněte používat Aspose.Words for Java ještě dnes, abyste zjednodušili proces správy dokumentů.
 
 ## FAQ
 

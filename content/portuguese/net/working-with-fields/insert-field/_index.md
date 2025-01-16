@@ -94,7 +94,7 @@ Absolutamente! O Aspose.Words suporta uma ampla gama de campos, incluindo MERGEF
 ### Como posso formatar os campos inseridos no meu documento?  
  Você pode usar chaves de campo para formatar os campos. Por exemplo,`\* MERGEFORMAT` mantém a formatação aplicada ao campo.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?  
+### Aspose.Words para .NET é compatível com o .NET Core?  
 Sim, o Aspose.Words para .NET é compatível com o .NET Framework e o .NET Core.
 
 ### Posso automatizar o processo de inserção de campos em massa?  

@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-ال`Document` تقوم الفئة بتهيئة مستند جديد، و`DocumentBuilder` يساعدنا على إضافة المحتوى إلى مستندنا بسهولة.
+ ال`Document` تقوم الفئة بتهيئة مستند جديد، و`DocumentBuilder` يساعدنا على إضافة المحتوى إلى مستندنا بسهولة.
 
 ## الخطوة 2: إدراج الأقسام
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-ال`InsertBreak` تقوم الطريقة بإدراج فاصل قسم مستمر، مما يسمح لنا بالحصول على إعدادات مختلفة لكل قسم.
+ ال`InsertBreak` تقوم الطريقة بإدراج فاصل قسم مستمر، مما يسمح لنا بالحصول على إعدادات مختلفة لكل قسم.
 
 ## الخطوة 3: حماية المستند
 

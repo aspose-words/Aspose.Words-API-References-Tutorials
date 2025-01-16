@@ -73,11 +73,11 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Ten`ListIndent` Metoda wcina listę, tworząc podlistę. Teraz tworzysz hierarchiczną listę, bardzo podobną do zagnieżdżonej listy zadań do wykonania.
+ Ten`ListIndent` Metoda wcina listę, tworząc podlistę. Teraz tworzysz hierarchiczną listę, bardzo podobną do zagnieżdżonej listy zadań do wykonania.
 
 ## Wniosek
 
-Tworzenie uporządkowanej listy w dokumencie Word programowo może wydawać się na początku zniechęcające, ale dzięki Aspose.Words dla .NET jest to bułka z masłem. Wykonując te proste kroki, możesz łatwo dodawać i zarządzać listami w swoich dokumentach. Niezależnie od tego, czy generujesz raporty, tworzysz ustrukturyzowane dokumenty, czy po prostu automatyzujesz swoje przepływy pracy, Aspose.Words dla .NET ma dla Ciebie rozwiązanie. Więc na co czekać? Zacznij kodować i zobacz, jak dzieje się magia!
+Tworzenie uporządkowanej listy w dokumencie Word programowo może wydawać się na początku zniechęcające, ale dzięki Aspose.Words dla .NET jest to bułka z masłem. Wykonując te proste kroki, możesz łatwo dodawać i zarządzać listami w swoich dokumentach. Niezależnie od tego, czy generujesz raporty, tworzysz ustrukturyzowane dokumenty, czy po prostu automatyzujesz swoje przepływy pracy, Aspose.Words dla .NET ma dla Ciebie rozwiązanie. Więc na co czekać? Zacznij kodować i zobacz, jak magia się rozwija!
 
 ## Najczęściej zadawane pytania
 

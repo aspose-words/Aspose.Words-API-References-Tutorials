@@ -106,7 +106,7 @@ Compressez les documents avant de les charger, réduisant ainsi la taille du fic
 
 ## Conclusion
 
-Dans cet article, nous avons exploré l'importance d'optimiser le chargement des documents et comment y parvenir à l'aide d'Aspose.Words pour Java. En suivant les bonnes pratiques et en exploitant les capacités de cette puissante API, vous pouvez garantir à vos utilisateurs un accès rapide à leurs documents.
+Dans cet article, nous avons exploré l'importance de l'optimisation du chargement des documents et comment y parvenir à l'aide d'Aspose.Words pour Java. En suivant les bonnes pratiques et en exploitant les capacités de cette puissante API, vous pouvez garantir à vos utilisateurs un accès rapide à leurs documents.
 
 ### FAQ
 

@@ -10,13 +10,13 @@ url: /cs/java/document-conversion-and-export/using-office-math-objects/
 
 ## Úvod do používání Office Math Objects v Aspose.Words pro Javu
 
-oblasti zpracování dokumentů v Javě je Aspose.Words spolehlivým a výkonným nástrojem. Jednou z jeho méně známých perliček je schopnost pracovat s objekty Office Math. V tomto komplexním průvodci se ponoříme do toho, jak využít objekty Office Math v Aspose.Words pro Java k manipulaci a zobrazování matematických rovnic ve vašich dokumentech. 
+V oblasti zpracování dokumentů v Javě je Aspose.Words spolehlivým a výkonným nástrojem. Jednou z jeho méně známých perliček je schopnost pracovat s objekty Office Math. V tomto komplexním průvodci se ponoříme do toho, jak využít objekty Office Math v Aspose.Words pro Java k manipulaci a zobrazování matematických rovnic ve vašich dokumentech. 
 
 ## Předpoklady
 
 Než se pustíme do spletitosti práce s Office Math v Aspose.Words pro Java, ujistěte se, že máte vše nastaveno. Ujistěte se, že máte:
 
-- Nainstalován Aspose.Words pro Java.
+- Nainstalovaný Aspose.Words pro Java.
 - Dokument obsahující rovnice Office Math (pro tuto příručku použijeme „OfficeMath.docx“).
 
 ## Porozumění matematickým objektům Office
@@ -80,7 +80,7 @@ doc.save("Your Directory Path" + "ModifiedOfficeMath.docx");
 
 ## Závěr
 
-této příručce jsme prozkoumali, jak používat objekty Office Math v Aspose.Words pro Java. Naučili jste se, jak načíst dokument, přistupovat k rovnicím Office Math a manipulovat s jejich zobrazením a formátováním. Tyto znalosti vám umožní vytvářet dokumenty s krásně vykresleným matematickým obsahem.
+V této příručce jsme prozkoumali, jak používat objekty Office Math v Aspose.Words pro Java. Naučili jste se, jak načíst dokument, přistupovat k rovnicím Office Math a manipulovat s jejich zobrazením a formátováním. Tyto znalosti vám umožní vytvářet dokumenty s krásně vykresleným matematickým obsahem.
 
 ## FAQ
 
@@ -90,7 +90,7 @@ Objekty Office Math v Aspose.Words pro Java vám umožňují reprezentovat a man
 
 ### Mohu v dokumentu zarovnat rovnice Office Math jinak?
 
- Ano, můžete ovládat zarovnání rovnic Office Math. Použijte`setJustification` metoda k určení možností zarovnání, jako je vlevo, vpravo nebo na střed.
+ Ano, můžete ovládat zarovnání rovnic Office Math. Použijte`setJustification`metoda k určení možností zarovnání, jako je vlevo, vpravo nebo na střed.
 
 ### Je Aspose.Words for Java vhodný pro zpracování složitých matematických dokumentů?
 

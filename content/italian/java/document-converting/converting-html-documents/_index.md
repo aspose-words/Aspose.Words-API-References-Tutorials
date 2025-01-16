@@ -53,7 +53,7 @@ doc.save("Output.docx");
 
 ### Spiegazione:
 
-IL`save` il metodo viene chiamato su`Document` oggetto per salvare il file in`.docx` format. L'argomento fornito è il percorso del file in cui verrà salvato il documento Word. Questo è il passaggio finale nel processo di conversione.
+ IL`save` il metodo viene chiamato su`Document` oggetto per salvare il file in`.docx` format. L'argomento fornito è il percorso del file in cui verrà salvato il documento Word. Questo è il passaggio finale del processo di conversione.
 
 ## Conclusione
 

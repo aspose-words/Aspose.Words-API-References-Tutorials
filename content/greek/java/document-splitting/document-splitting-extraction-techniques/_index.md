@@ -18,7 +18,7 @@ url: /el/java/document-splitting/document-splitting-extraction-techniques/
 
 Πριν βουτήξουμε στον κώδικα, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
-- Εγκαταστάθηκε το Java Development Kit (JDK).
+- Εγκατεστημένο Java Development Kit (JDK).
 - Η βιβλιοθήκη Aspose.Words for Java έγινε λήψη και προσθήκη στο έργο σας
 - Βασικές γνώσεις προγραμματισμού Java
 
@@ -80,7 +80,7 @@ Document doc = new Document("input.docx");
 // Δημιουργήστε έναν εξαγωγέα εικόνας
 ImageExtractor extractor = new ImageExtractor(doc);
 
-// Εξαγωγή εικόνων από το έγγραφο
+//Εξαγωγή εικόνων από το έγγραφο
 while (extractor.hasNext()) {
     extractor.getNextImage("output_" + extractor.getCurrentImageIndex() + ".png");
 }

@@ -60,7 +60,7 @@ try {
 ```
 
 Açıklama:
-- The`try-catch` blok, belge yüklenirken karşılaşılan hataların yakalanmasını ve uygun şekilde yönetilmesini sağlar.
+-  The`try-catch`blok, belge yüklenirken karşılaşılan hataların yakalanmasını ve uygun şekilde yönetilmesini sağlar.
 
 ## Adım 2: ImageSaveOptions'ı başlatın
 
@@ -71,7 +71,7 @@ Belge yüklendikten sonraki adım, belgeyi resim olarak kaydetme seçeneklerini 
 `ImageSaveOptions` Belgenin resim olarak nasıl kaydedileceğini belirtmenize olanak sağlayan bir sınıftır.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 Açıklama:

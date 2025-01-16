@@ -48,7 +48,7 @@ Aspose.Words提供了各種影像保存選項來控制輸出格式和品質。�
 
 ```java
 //初始化圖像保存選項
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## 步驟 4：將文件頁面渲染為影像

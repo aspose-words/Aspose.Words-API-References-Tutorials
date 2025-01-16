@@ -61,7 +61,7 @@ Tablo artık erişilebilir olduğuna göre, bir sonraki adım ilk satırı almak
 Row firstRow = table.FirstRow;
 ```
 
-The`FirstRow` property bize tablodaki ilk satırı verir. Şimdi, biçimlendirmesini değiştirmeye başlamaya hazırız.
+ The`FirstRow` property bize tablodaki ilk satırı verir. Şimdi, biçimlendirmesini değiştirmeye başlamaya hazırız.
 
 ## Adım 4: Satır Kenarlıklarını Değiştirin
 

@@ -15,7 +15,7 @@ Nell'era digitale odierna, la gestione delle dimensioni dei documenti è fondame
 
 Prima di immergerti nel tutorial, assicurati di avere i seguenti prerequisiti:
 
-1.  Aspose.Words per .NET: devi avere Aspose.Words per .NET installato. Puoi scaricarlo da[Sito web di Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words per .NET: devi avere Aspose.Words per .NET installato. Puoi scaricarlo da[Sito web di Aspose](https://releases.aspose.com/words/net/).
 
 2. Conoscenza di base di C#: la familiarità con la programmazione C# ti aiuterà a comprendere gli esempi di codice forniti in questo tutorial.
 
@@ -79,7 +79,7 @@ Salva il documento Word come PDF con le opzioni di compressione delle immagini c
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOptions);
 ```
 
- In questo esempio, il PDF di output è denominato`"WorkingWithPdfSaveOptions.PdfImageCompression.pdf"`Modificare il nome del file in base alle proprie esigenze.
+ In questo esempio, il PDF di output è denominato`"WorkingWithPdfSaveOptions.PdfImageCompression.pdf"`. Modificare il nome del file in base alle proprie esigenze.
 
 ## Passaggio 5: configurare la compressione avanzata con conformità PDF/A
 

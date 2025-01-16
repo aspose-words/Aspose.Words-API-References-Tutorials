@@ -73,7 +73,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 Table tableClone = (Table) table.Clone(true);
 ```
 
-Các`true` tham số đảm bảo rằng bản sao bao gồm tất cả định dạng và nội dung từ bảng gốc.
+ Các`true` tham số đảm bảo rằng bản sao bao gồm tất cả định dạng và nội dung từ bảng gốc.
 
 ## Bước 5: Chèn Bảng đã sao chép vào Tài liệu
 
@@ -115,7 +115,7 @@ Sao chép bảng trong tài liệu Word bằng Aspose.Words cho .NET là một q
 Có, bạn có thể sao chép nhiều bảng bằng cách lặp qua từng bảng trong tài liệu và áp dụng cùng một logic sao chép.
 
 ### Nếu bảng có các ô được hợp nhất thì sao?
-Các`Clone` phương pháp này giữ nguyên mọi định dạng, bao gồm cả các ô được hợp nhất, đảm bảo bản sao chính xác của bảng.
+ Các`Clone` phương pháp này giữ nguyên mọi định dạng, bao gồm cả các ô được hợp nhất, đảm bảo bản sao chính xác của bảng.
 
 ### Làm thế nào để sao chép một bảng cụ thể theo tên?
 Bạn có thể xác định bảng theo thuộc tính tùy chỉnh hoặc nội dung duy nhất, sau đó sao chép bảng mong muốn bằng các bước tương tự.

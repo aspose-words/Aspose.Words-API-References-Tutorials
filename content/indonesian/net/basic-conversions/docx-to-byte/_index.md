@@ -32,7 +32,7 @@ using Aspose.Words;
 
 Untuk mengonversi file Docx menjadi array byte, ikuti langkah-langkah berikut:
 ```csharp
-//Muat file Docx dari disk atau aliran
+// Muat file Docx dari disk atau aliran
 Document doc = new Document("input.docx");
 
 // Simpan dokumen ke MemoryStream
@@ -64,13 +64,13 @@ Kesimpulannya, memanfaatkan Aspose.Words untuk .NET guna mengonversi file Docx k
  Tidak, Anda memerlukan lisensi yang valid untuk menggunakan Aspose.Words for .NET dalam produksi. Anda dapat memperoleh lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
 
 ### Bagaimana saya dapat mempelajari lebih lanjut tentang dokumentasi Aspose.Words untuk .NET?
- Kunjungi dokumentasi[Di Sini](https://reference.aspose.com/words/net/)untuk panduan lengkap dan referensi API.
+ Kunjungi dokumentasi[Di Sini](https://reference.aspose.com/words/net/) untuk panduan lengkap dan referensi API.
 
 ### Apakah Aspose.Words cocok untuk menangani file Docx berukuran besar?
 Ya, Aspose.Words untuk .NET menyediakan manajemen memori yang efisien dan pengoptimalan kinerja untuk menangani dokumen besar.
 
 ### Di mana saya bisa mendapatkan dukungan komunitas untuk Aspose.Words for .NET?
- Bergabunglah dengan forum komunitas[Di Sini](https://forum.aspose.com/c/words/8) untuk mengajukan pertanyaan, berbagi pengetahuan, dan terhubung dengan pengguna lain.
+ Bergabunglah dengan forum komunitas[Di Sini](https://forum.aspose.com/c/words/8)untuk mengajukan pertanyaan, berbagi pengetahuan, dan terhubung dengan pengguna lain.
 
 ### Dapatkah saya mencoba Aspose.Words untuk .NET secara gratis sebelum membeli?
  Ya, Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/) untuk mengevaluasi fitur dan kemampuannya.

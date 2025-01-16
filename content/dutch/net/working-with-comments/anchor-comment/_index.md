@@ -39,7 +39,7 @@ Nu we de vereisten en naamruimten besproken hebben, kunnen we verder met het leu
 Laten we eerst een nieuw Word-document maken. Dit zal dienen als canvas voor onze opmerkingen.
 
 ```csharp
-// Definieer de map waar het document wordt opgeslagen
+// Definieer de directory waar het document wordt opgeslagen
 string dataDir = "YOUR DOCUMENT DIRECTORY";        
 
 // Maak een exemplaar van de Document-klasse
@@ -127,7 +127,7 @@ Ankeropmerkingen worden gebruikt om specifieke tekstgedeelten te markeren en van
 Ja, u kunt meerdere opmerkingen aan hetzelfde tekstgedeelte toevoegen door meerdere opmerkingbereiken te definiëren.
 
 ### Is Aspose.Words voor .NET gratis te gebruiken?
-Aspose.Words voor .NET biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/) Voor volledige functies kunt u een licentie kopen[hier](https://purchase.aspose.com/buy).
+ Aspose.Words voor .NET biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/) Voor volledige functies kunt u een licentie kopen[hier](https://purchase.aspose.com/buy).
 
 ### Kan ik het uiterlijk van de opmerkingen aanpassen?
 Terwijl Aspose.Words zich richt op functionaliteit, wordt de weergave van opmerkingen in Word-documenten over het algemeen door Word zelf bepaald.

@@ -81,7 +81,7 @@ Isso salva o documento com a proteção aplicada.
 
 ## Conclusão
 
-aí está! Você acabou de aprender como proteger um documento do Word para que apenas campos de formulário possam ser editados usando o Aspose.Words para .NET. Este é um recurso útil quando você precisa garantir que certas partes do seu documento permaneçam inalteradas, permitindo que campos específicos sejam preenchidos.
+E aí está! Você acabou de aprender como proteger um documento do Word para que apenas campos de formulário possam ser editados usando o Aspose.Words para .NET. Este é um recurso útil quando você precisa garantir que certas partes do seu documento permaneçam inalteradas, permitindo que campos específicos sejam preenchidos.
 
 ## Perguntas frequentes
 

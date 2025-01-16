@@ -15,7 +15,7 @@ Ahoj! Přemýšleli jste někdy, jak programově zkontrolovat typ ochrany vašic
 
 Než se pustíme do kódovací části, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Pokud jste tak ještě neučinili, stáhněte si a nainstalujte[Aspose.Words pro knihovnu .NET](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Pokud jste tak ještě neučinili, stáhněte si a nainstalujte[Aspose.Words pro knihovnu .NET](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE jako Visual Studio.
 3. Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
 
@@ -41,7 +41,7 @@ Nejprve si nastavte svůj projekt C# ve Visual Studiu. Zde je postup:
 
 ## Krok 2: Vložte svůj dokument
 
- Nyní, když je váš projekt nastaven, načteme dokument aplikace Word, který chcete zkontrolovat. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
+Nyní, když je váš projekt nastaven, načteme dokument aplikace Word, který chcete zkontrolovat. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
@@ -75,13 +75,13 @@ A tady to máte! Úspěšně jste získali typ ochrany dokumentu aplikace Word p
 Aspose.Words for .NET je výkonná knihovna, která umožňuje vytvářet, upravovat, převádět a manipulovat s dokumenty Wordu programově.
 
 ### Mohu používat Aspose.Words zdarma?
- Můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/) , ale pro plnou funkčnost si budete muset zakoupit licenci. Podívejte se na[možnosti nákupu](https://purchase.aspose.com/buy).
+ Můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/) ale pro plnou funkčnost si budete muset zakoupit licenci. Podívejte se na[možnosti nákupu](https://purchase.aspose.com/buy).
 
 ### Jaké typy ochrany může Aspose.Words detekovat?
 Aspose.Words dokáže detekovat různé typy ochrany, jako je NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments a AllowOnlyFormFields.
 
 ### Jak mohu získat podporu, pokud narazím na problémy?
- případě jakýchkoli problémů můžete navštívit[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
+ V případě jakýchkoli problémů můžete navštívit[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### Je Aspose.Words kompatibilní s .NET Core?
 Ano, Aspose.Words je kompatibilní s .NET Framework i .NET Core.

@@ -89,7 +89,7 @@ Thiết lập hướng văn bản trong tài liệu Word là một quá trình �
 
 ###  Cái gì là`DocumentDirection` property used for?
 
-Các`DocumentDirection` tài sản trong`TxtLoadOptions` xác định hướng văn bản cho tài liệu. Nó có thể được thiết lập thành`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , hoặc`DocumentDirection.RightToLeft`.
+ Các`DocumentDirection` tài sản trong`TxtLoadOptions` xác định hướng văn bản cho tài liệu. Nó có thể được thiết lập thành`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , hoặc`DocumentDirection.RightToLeft`.
 
 ### Tôi có thể thiết lập hướng văn bản cho các đoạn văn cụ thể thay vì toàn bộ tài liệu không?
 

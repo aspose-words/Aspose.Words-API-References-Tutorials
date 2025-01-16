@@ -18,7 +18,7 @@ url: /ar/net/document-protection/password-protection/
 1.  Aspose.Words for .NET: تأكد من أن لديك مكتبة Aspose.Words for .NET. يمكنك[تحميله هنا](https://releases.aspose.com/words/net/).
 2. بيئة التطوير: Visual Studio أو أي بيئة تطوير C# أخرى.
 3. المعرفة الأساسية بلغة C#: فهم أساسي لبرمجة C#.
-4. ترخيص Aspose: احصل على ترخيص من[هنا](https://purchase.aspose.com/buy) أو استخدم[رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) للتقييم.
+4.  ترخيص Aspose: احصل على ترخيص من[هنا](https://purchase.aspose.com/buy) أو استخدم[رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) للتقييم.
 
 ## استيراد مساحات الأسماء
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ### اختر نوع الحماية
 
- يوفر Aspose.Words أنواعًا مختلفة من الحماية، مثل`NoProtection`, `ReadOnly`, `AllowOnlyComments` ، و`AllowOnlyFormFields` في هذا المثال، سوف نستخدم`NoProtection` ولكن بكلمة مرور، مما يعني أساسًا أن المستند قابل للتحرير ولكنه يتطلب كلمة مرور لإزالة الحماية.
+ يوفر Aspose.Words أنواعًا مختلفة من الحماية، مثل`NoProtection`, `ReadOnly`, `AllowOnlyComments` ، و`AllowOnlyFormFields`في هذا المثال، سوف نستخدم`NoProtection` ولكن بكلمة مرور، مما يعني أساسًا أن المستند قابل للتحرير ولكنه يتطلب كلمة مرور لإزالة الحماية.
 
 ### تطبيق الحماية
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### هل يمكنني استخدام أنواع مختلفة من الحماية مع Aspose.Words؟
 
- نعم، يدعم Aspose.Words أنواعًا مختلفة من الحماية، بما في ذلك`ReadOnly`, `AllowOnlyComments` ، و`AllowOnlyFormFields`.
+نعم، يدعم Aspose.Words أنواعًا مختلفة من الحماية، بما في ذلك`ReadOnly`, `AllowOnlyComments` ، و`AllowOnlyFormFields`.
 
 ### كيف يمكنني إزالة حماية كلمة المرور من مستند؟
 
@@ -110,4 +110,4 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Words؟
 
-يمكنك العثور على مزيد من الوثائق على[صفحة توثيق Aspose.Words](https://reference.aspose.com/words/net/).
+ يمكنك العثور على مزيد من الوثائق على[صفحة توثيق Aspose.Words](https://reference.aspose.com/words/net/).

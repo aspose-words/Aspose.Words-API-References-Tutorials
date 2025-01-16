@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Stap 6: Maak een tabel en voeg rijen toe
 
-Maak een nieuwe`Table` object en geef het aantal rijen en kolommen op.
+ Maak een nieuwe`Table` object en geef het aantal rijen en kolommen op.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Stap 8: Sla het document op
 
- Sla het Word-document op de gewenste locatie op met behulp van de`save()` methode.
+Sla het Word-document op de gewenste locatie op met behulp van de`save()` methode.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Stap 9: Vul de code in
-
-Hier is de volledige code voor het toevoegen van een tabel in Word met behulp van Aspose.Words voor Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Stap 5: Maak een nieuw Word-document
-        Document doc = new Document();
-
-        // Stap 6: Maak een tabel en voeg rijen toe
-        Table table = new Table(doc);
-        int rowCount = 5; // Aantal rijen in de tabel
-        int columnCount = 3; // Aantal kolommen in de tabel
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Stap 7: Voeg de tabel toe aan het document
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Stap 8: Sla het document op
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Conclusie

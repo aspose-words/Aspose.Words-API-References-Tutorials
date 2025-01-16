@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- 우리는 만들고 있어요`FindReplaceOptions`객체를 선택하고 문단 정렬을 가운데로 설정합니다.
+ 우리는 만들고 있어요`FindReplaceOptions` 객체를 선택하고 문단 정렬을 가운데로 설정합니다.
 
 ## 4단계: 텍스트를 메타 문자로 바꾸기
 
 이 단계에서 마법이 일어납니다! "섹션"이라는 단어를 문단 구분으로 바꾸고 밑줄을 긋습니다.
 
 ```csharp
-// "섹션"이라는 단어 뒤에 각 문단을 두 번씩 나누고 밑줄을 긋고 가운데 정렬합니다.
+//"섹션"이라는 단어 뒤에 각 문단을 두 번씩 나누고 밑줄을 긋고 가운데 정렬합니다.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

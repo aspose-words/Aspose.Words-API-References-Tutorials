@@ -38,7 +38,7 @@ Deze naamruimten bieden toegang tot de klassen en methoden die nodig zijn voor h
 
 ## Stap 1: Maak een DocumentBuilder
 
-De`DocumentBuilder` klasse helpt u bij het toevoegen en formatteren van inhoud in het document. Door een`DocumentBuilder` object, stelt u een hulpmiddel in om tekst in te voegen en te bewerken.
+ De`DocumentBuilder` klasse helpt u bij het toevoegen en formatteren van inhoud in het document. Door een`DocumentBuilder` object, stelt u een hulpmiddel in om tekst in te voegen en te bewerken.
 
 ```csharp
 // Maak een DocumentBuilder-exemplaar om met het document te werken.

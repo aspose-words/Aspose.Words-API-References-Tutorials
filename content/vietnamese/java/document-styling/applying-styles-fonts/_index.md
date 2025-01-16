@@ -16,7 +16,7 @@ Aspose.Words for Java là một API dựa trên Java cho phép các nhà phát t
 ## Áp dụng Kiểu và Phông chữ: Những điều cơ bản
 
 ### Bắt đầu
- Để bắt đầu, bạn sẽ cần thiết lập môi trường phát triển Java và tải xuống thư viện Aspose.Words cho Java. Bạn có thể tìm thấy liên kết tải xuống[đây](https://releases.aspose.com/words/java/). Hãy chắc chắn rằng bạn đã đưa thư viện vào dự án của mình.
+Để bắt đầu, bạn sẽ cần thiết lập môi trường phát triển Java và tải xuống thư viện Aspose.Words cho Java. Bạn có thể tìm thấy liên kết tải xuống[đây](https://releases.aspose.com/words/java/). Hãy chắc chắn rằng bạn đã đưa thư viện vào dự án của mình.
 
 ### Tạo một tài liệu
 Hãy bắt đầu bằng cách tạo một tài liệu mới bằng Aspose.Words cho Java:
@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Kết hợp nhiều kiểu để định dạng tài liệu phức tạp:
 
 ```java
-//Kết hợp các phong cách để có diện mạo độc đáo
+// Kết hợp các phong cách để có diện mạo độc đáo
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Aspose.Words for Java cung cấp khả năng định dạng có điều kiện m
 Hoàn toàn có thể! Aspose.Words for Java hỗ trợ nhiều loại phông chữ và ký tự từ nhiều ngôn ngữ và tập lệnh khác nhau.
 
 ### Làm thế nào để thêm siêu liên kết vào văn bản với các kiểu cụ thể?
- Để thêm siêu liên kết vào văn bản, hãy sử dụng`FieldHyperlink`lớp kết hợp với các kiểu để đạt được định dạng mong muốn.
+ Để thêm siêu liên kết vào văn bản, hãy sử dụng`FieldHyperlink` lớp kết hợp với các kiểu để đạt được định dạng mong muốn.
 
 ### Có bất kỳ giới hạn nào về kích thước hoặc độ phức tạp của tài liệu không?
 Aspose.Words for Java có thể xử lý các tài liệu có kích thước và độ phức tạp khác nhau. Tuy nhiên, các tài liệu cực lớn có thể yêu cầu thêm tài nguyên bộ nhớ.

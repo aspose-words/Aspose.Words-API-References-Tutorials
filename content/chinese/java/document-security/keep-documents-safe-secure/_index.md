@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 现在我们已经加载了文档，让我们继续对其进行加密。 Aspose.Words for Java 提供了一种设置文档加密的简单方法：
 
 ```java
-//设置打开文档的密码
-doc.getWriteProtection().setPassword("yourPassword");
-
-//设置加密算法（可选）
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-//保存加密文档
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. 保护特定文档元素
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 有时，您可能只想保护文档的特定部分，例如页眉、页脚或某些段落。 Aspose.Words 允许您在文档保护中实现这种粒度级别：
 
 ```java
-//保护特定部分（只读保护）
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-//保护特定段落（仅允许编辑表单字段）
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-//保存受保护的文档
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//可编辑范围允许我们将受保护文档的部分内容保留为开放状态以供编辑。
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. 应用数字签名
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 向文档添加数字签名可以确保其真实性和完整性。以下是使用 Aspose.Words for Java 应用数字签名的方法：
 
 ```java
-//加载证书文件
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-//使用证书签署文件
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+//创建评论、日期和解密密码，将与我们的新数字签名一起使用。
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-//保存已签名的文档
-doc.save("path/to/signed/document.docx");
+//为未签名的输入文档设置本地系统文件名，并为其新的数字签名副本设置输出文件名。
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. 给文档添加水印
@@ -150,26 +156,8 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. 编辑敏感信息
 
-共享文档时，您可能希望永久删除敏感信息，以确保其不会落入坏人之手。 Aspose.Words for Java 允许您删除敏感内容：
-
-```java
-//搜索并编辑敏感信息
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-//应用修订
-doc.redact(options);
-
-//保存编辑后的文档
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. 将安全文档转换为其他格式
+## 10. 将安全文档转换为其他格式
 
 Aspose.Words for Java 还允许您将安全文档转换为各种格式，例如 PDF 或 HTML：
 
@@ -178,42 +166,29 @@ Aspose.Words for Java 还允许您将安全文档转换为各种格式，例如 
 Document doc = new Document("path/to/your/secured/document.docx");
 
 //转换为 PDF
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 //转换为 HTML
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. 文档安全最佳实践
+## 结论
 
-为了确保文档的安全性，请遵循以下最佳做法：
-
-- 定期更新您的安全措施，以防范潜在威胁。
-- 使用强密码和加密算法。
-- 根据需要知道的原则限制对敏感文件的访问。
-- 培训员工识别和应对安全风险。
-
-## 13. 测试文档安全性
-
-采取安全措施后，请彻底测试您的文档，以确保它们在各种情况下都是安全的。尝试绕过安全控制来识别潜在的漏洞。
-
-## 14. 结论
-
-在本分步指南中，我们探讨了文档安全的重要性以及 Aspose.Words for Java 如何帮助保护您的文档免受未经授权的访问。通过利用该库的功能（例如密码保护、加密、数字签名、水印和修订），您可以确保您的文档保持安全。
+在本分步指南中，我们探讨了文档安全的重要性以及 Aspose.Words for Java 如何帮助保护您的文档免遭未经授权的访问。通过利用该库的功能（例如密码保护、加密、数字签名、水印和修订），您可以确保您的文档保持安全。
 
 ## 常见问题解答
 
 ### 我可以在商业项目中使用 Aspose.Words for Java 吗？
-   是的，Aspose.Words for Java 可以在每个开发人员许可模式下用于商业项目。
+是的，Aspose.Words for Java 可以在每个开发人员许可模式下用于商业项目。
 
 ### Aspose.Words 除了 Word 之外还支持其他文档格式吗？
-   是的，Aspose.Words 支持多种格式，包括 PDF、HTML、EPUB 等。
+是的，Aspose.Words 支持多种格式，包括 PDF、HTML、EPUB 等。
 
 ### 是否可以在文档中添加多个数字签名？
-   是的，Aspose.Words 允许您向文档添加多个数字签名。
+是的，Aspose.Words 允许您向文档添加多个数字签名。
 
 ### Aspose.Words 支持文档密码恢复吗？
-   不，Aspose.Words 不提供密码恢复功能。请确保您的密码安全。
+不，Aspose.Words 不提供密码恢复功能。请确保您的密码安全。
 
 ### 我可以自定义水印的外观吗？
-   是的，您可以完全自定义水印的外观，包括文本、字体、颜色、大小和旋转。
+是的，您可以完全自定义水印的外观，包括文本、字体、颜色、大小和旋转。

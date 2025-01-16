@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Langkah 6: Buat Tabel dan Tambahkan Baris
 
-Buat yang baru`Table` objek dan tentukan jumlah baris dan kolom.
+ Buat yang baru`Table` objek dan tentukan jumlah baris dan kolom.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Langkah 8: Simpan Dokumen
 
- Simpan dokumen Word ke lokasi yang diinginkan menggunakan`save()` metode.
+Simpan dokumen Word ke lokasi yang diinginkan menggunakan`save()` metode.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Langkah 9: Lengkapi Kode
-
-Berikut kode lengkap untuk menambahkan tabel di Word menggunakan Aspose.Words untuk Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Langkah 5: Buat dokumen Word baru
-        Document doc = new Document();
-
-        // Langkah 6: Buat Tabel dan Tambahkan Baris
-        Table table = new Table(doc);
-        int rowCount = 5; // Jumlah baris dalam tabel
-        int columnCount = 3; // Jumlah kolom dalam tabel
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Langkah 7: Tambahkan Tabel ke Dokumen
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Langkah 8: Simpan Dokumen
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Kesimpulan

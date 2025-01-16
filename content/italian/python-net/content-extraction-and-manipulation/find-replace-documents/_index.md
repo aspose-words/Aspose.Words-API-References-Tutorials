@@ -18,7 +18,7 @@ Prima di addentrarci nelle tecniche avanzate, assicurati di disporre dei seguent
 
 1.  Installazione Python: assicurati che Python sia installato sul tuo sistema. Puoi scaricarlo da[Qui](https://www.python.org/downloads/).
 
-2. Aspose.Words per Python: devi avere Aspose.Words per Python installato. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/python/).
+2.  Aspose.Words per Python: devi avere Aspose.Words per Python installato. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/python/).
 
 3. Preparazione del documento: avere pronto un documento Word su cui si desidera eseguire le operazioni di ricerca e sostituzione.
 
@@ -118,4 +118,4 @@ Sì, è possibile utilizzare caratteri jolly ed espressioni regolari per eseguir
 
 ### Posso sostituire il testo tenendo traccia delle modifiche apportate?
 
- Sì, puoi tenere traccia delle modifiche utilizzando`revision` caratteristica di Aspose.Words. Permette di tenere traccia di tutte le modifiche apportate al documento.
+ Sì, puoi tenere traccia delle modifiche utilizzando`revision`caratteristica di Aspose.Words. Permette di tenere traccia di tutte le modifiche apportate al documento.

@@ -7,7 +7,7 @@ type: docs
 weight: 13
 url: /cs/python-net/document-splitting-and-formatting/compare-document-versions/
 ---
-V dnešním rychle se rozvíjejícím světě společné tvorby dokumentů je pro zajištění přesnosti a předcházení chybám nezbytné udržovat správnou správu verzí. Jedním mocným nástrojem, který může pomoci v tomto procesu, je Aspose.Words pro Python, API určené k manipulaci a programové správě dokumentů Wordu. Tento článek vás provede procesem porovnávání verzí dokumentů pomocí Aspose.Words pro Python, což vám umožní implementovat efektivní kontrolu revizí ve vašich projektech.
+dnešním rychle se rozvíjejícím světě společné tvorby dokumentů je pro zajištění přesnosti a předcházení chybám nezbytné udržovat správnou správu verzí. Jedním mocným nástrojem, který může pomoci v tomto procesu, je Aspose.Words pro Python, API určené k manipulaci a programové správě dokumentů Wordu. Tento článek vás provede procesem porovnávání verzí dokumentů pomocí Aspose.Words pro Python, což vám umožní implementovat efektivní kontrolu revizí ve vašich projektech.
 
 ## Zavedení
 
@@ -45,16 +45,6 @@ doc2 = aw.Document(doc2_path)
 
 ```python
 comparison = doc1.compare(doc2, "Author Name", datetime.now())
-```
-
-## Zvýraznění změn
-
-Chcete-li, aby byly změny viditelnější, můžete je zvýraznit:
-
-```python
-highlighter = aw.markup.HighlightColor.GRAY
-for change in comparison.changes:
-    change.format_revision(highlighter)
 ```
 
 ## Přijetí nebo odmítnutí změn

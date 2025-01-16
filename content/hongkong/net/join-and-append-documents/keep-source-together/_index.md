@@ -34,7 +34,7 @@ url: /zh-hant/net/join-and-append-documents/keep-source-together/
 
 ### 臨時許可證（可選）
 
-雖然 Aspose.Words 提供免費試用版，但您可能會想要使用[臨時執照](https://purchase.aspose.com/temporary-license/)充分發揮圖書館的潛能。
+雖然 Aspose.Words 提供免費試用版，但您可能會想要使用[臨時執照](https://purchase.aspose.com/temporary-license/)釋放圖書館的全部潛能。
 
 ## 導入包
 

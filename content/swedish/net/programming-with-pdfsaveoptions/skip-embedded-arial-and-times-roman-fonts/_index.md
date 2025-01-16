@@ -2,7 +2,7 @@
 title: Optimera PDF-storlek med Skip Embedded Arial och Times Roman-teckensnitt
 linktitle: Optimera PDF-storlek med Skip Embedded Arial och Times Roman-teckensnitt
 second_title: Aspose.Words Document Processing API
-description: Optimera PDF-storleken genom att hoppa över inbäddade Arial- och Times Roman-teckensnitt med Aspose.Words för .NET. Följ den här steg-för-steg-guiden för att effektivisera dina PDF-filer.
+description: Optimera PDF-storleken genom att hoppa över inbäddade Arial- och Times Roman-teckensnitt med Aspose.Words för .NET. Följ denna steg-för-steg-guide för att effektivisera dina PDF-filer.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
@@ -81,7 +81,7 @@ Nej, det kommer det inte. Eftersom Arial och Times Roman är standardteckensnitt
 Ja, du kan konfigurera sparalternativen för att hoppa över att bädda in andra teckensnitt om det behövs.
 
 ### Är Aspose.Words för .NET gratis?
-Aspose.Words för .NET erbjuder en gratis testversion som du kan ladda ner[här](https://releases.aspose.com/) , men för full åtkomst måste du köpa en licens[här](https://purchase.aspose.com/buy).
+ Aspose.Words för .NET erbjuder en gratis testversion som du kan ladda ner[här](https://releases.aspose.com/) , men för full åtkomst måste du köpa en licens[här](https://purchase.aspose.com/buy).
 
 ### Var kan jag hitta fler handledningar om Aspose.Words för .NET?
- Du kan hitta omfattande dokumentation och handledning[här](https://reference.aspose.com/words/net/).
+Du kan hitta omfattande dokumentation och handledning[här](https://reference.aspose.com/words/net/).

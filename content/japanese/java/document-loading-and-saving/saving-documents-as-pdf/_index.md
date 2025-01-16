@@ -151,11 +151,11 @@ doc.save("output.pdf", saveOptions);
 
 ### Aspose.Words for Java での画像圧縮の目的は何ですか?
 
-画像圧縮では、生成されたPDF内の画像の品質とサイズを制御できます。画像圧縮モードは、以下を使用して設定できます。`setImageCompression`で`PdfSaveOptions`.
+画像圧縮を使用すると、生成されたPDF内の画像の品質とサイズを制御できます。画像圧縮モードは、以下を使用して設定できます。`setImageCompression`で`PdfSaveOptions`.
 
 ### PDF の「最終印刷」プロパティを更新するにはどうすればよいですか?
 
- PDFの「最終印刷」プロパティを更新するには、次のように設定します。`setUpdateLastPrintedProperty`に`true`で`PdfSaveOptions`これにより、PDF メタデータに最終印刷日付が反映されます。
+ PDFの「最終印刷」プロパティを更新するには、次のように設定します。`setUpdateLastPrintedProperty`に`true`で`PdfSaveOptions`これにより、PDF メタデータに最終印刷日が反映されます。
 
 ### PDF に変換するときに画像の品質を向上させるにはどうすればよいですか?
 

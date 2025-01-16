@@ -56,7 +56,7 @@ Tạo một biến chuỗi để giữ đường dẫn đến thư mục tài li
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ.
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ.
 
 ### Đang tải tài liệu
 

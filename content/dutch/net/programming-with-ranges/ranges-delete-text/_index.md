@@ -61,7 +61,7 @@ Zodra het document is geladen, kunnen we doorgaan met het verwijderen van tekst 
 2.  Verwijder het bereik: Gebruik de`Range.Delete` Methode om alle tekst in deze sectie te verwijderen.
 
 ```csharp
-//Verwijder de tekst in het eerste gedeelte van het document
+// Verwijder de tekst in het eerste gedeelte van het document
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Aspose.Words voor .NET is een klassenbibliotheek voor het verwerken van Word-doc
 
 ### Kan ik tekst uit een specifieke alinea verwijderen in plaats van uit een sectie?
 
-Ja, u kunt tekst uit een specifieke alinea verwijderen door naar de gewenste alinea te gaan en de`Range.Delete` methode.
+ Ja, u kunt tekst uit een specifieke alinea verwijderen door naar de gewenste alinea te gaan en de`Range.Delete` methode.
 
 ### Is het mogelijk om tekst voorwaardelijk te verwijderen?
 

@@ -23,7 +23,7 @@ pip install aspose-words
 2. Importazione del modulo: importa il modulo richiesto nello script Python.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Aggiungere un'intestazione e un piè di pagina semplici
@@ -33,30 +33,18 @@ Per aggiungere un'intestazione e un piè di pagina di base al documento Word, se
 1. Creazione di un documento: creare un nuovo documento Word utilizzando Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Aggiungere intestazione e piè di pagina: utilizzare`sections` proprietà del documento per accedere alle sezioni. Quindi, utilizzare il`headers_footers` proprietà per aggiungere intestazioni e piè di pagina.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Aggiunta di contenuto: aggiungere contenuto all'intestazione e al piè di pagina.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Salvataggio del documento: salva il documento con intestazione e piè di pagina.
+3. Salvataggio del documento: salva il documento con intestazione e piè di pagina.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Aggiunta di tabelle: incorporare tabelle per informazioni tabellari.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Campi dinamici: utilizza campi dinamici per l'inserimento automatico dei dati.
+2. Campi dinamici: utilizza campi dinamici per l'inserimento automatico dei dati.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. Personalizza in base alle tue esigenze: personalizza ogni intestazione e piè di pagina in base alle tue esigenze.
 
 ## Rimozione di intestazioni e piè di pagina
 
@@ -150,4 +128,4 @@ Sì, puoi cancellare il contenuto di intestazioni e piè di pagina per rimuoverl
 
 ### Dove posso trovare maggiori informazioni su Aspose.Words per Python?
 
-Per documentazione più dettagliata ed esempi, visitare il[Riferimento API Aspose.Words per Python](https://reference.aspose.com/words/python-net/).
+ Per documentazione più dettagliata ed esempi, visitare il[Riferimento API Aspose.Words per Python](https://reference.aspose.com/words/python-net/).

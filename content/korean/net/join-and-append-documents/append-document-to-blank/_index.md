@@ -122,7 +122,7 @@ Aspose.Words for .NET으로 문서를 추가하는 것은 단계를 알고 나�
 
 ### 원본 문서의 서식이 다르면 어떻게 되나요?
 
-그만큼`ImportFormatMode.KeepSourceFormatting` 추가 시 소스 문서의 서식이 유지되도록 합니다.
+ 그만큼`ImportFormatMode.KeepSourceFormatting` 추가 시 소스 문서의 서식이 유지되도록 합니다.
 
 ### Aspose.Words를 사용하려면 라이센스가 필요한가요?
 

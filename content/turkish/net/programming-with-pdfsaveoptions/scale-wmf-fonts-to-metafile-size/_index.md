@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-The`MetafileRenderingOptions` sınıf, meta dosyalarının (WMF gibi) nasıl işleneceğine ilişkin seçenekler sağlar. Ayarlayarak`ScaleWmfFontsToMetafileSize` ile`false`, Aspose.Words'e meta dosya boyutuna göre yazı tiplerini ölçeklememesi talimatını veriyorsunuz; bu, genel PDF boyutunu azaltmaya yardımcı olabilir.
+ The`MetafileRenderingOptions` sınıf, meta dosyalarının (WMF gibi) nasıl işleneceğine ilişkin seçenekler sağlar. Ayarlayarak`ScaleWmfFontsToMetafileSize` ile`false`, Aspose.Words'e meta dosya boyutuna göre yazı tiplerini ölçeklememesi talimatını veriyorsunuz; bu, genel PDF boyutunu azaltmaya yardımcı olabilir.
 
 ## Adım 3: PDF Kaydetme Seçeneklerini Ayarlayın
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-The`PdfSaveOptions` sınıf, belgeyi PDF olarak kaydetmek için çeşitli ayarları belirtmenize olanak tanır. Önceden yapılandırılmış ayarları atayarak`MetafileRenderingOptions` için`MetafileRenderingOptions` mülkiyeti`PdfSaveOptions`, belgenin istediğiniz meta dosyası oluşturma ayarlarına göre kaydedilmesini sağlarsınız.
+ The`PdfSaveOptions` sınıf, belgeyi PDF olarak kaydetmek için çeşitli ayarları belirtmenize olanak tanır. Önceden yapılandırılmış ayarları atayarak`MetafileRenderingOptions` için`MetafileRenderingOptions` mülkiyeti`PdfSaveOptions`, belgenin istediğiniz meta dosyası oluşturma ayarlarına göre kaydedilmesini sağlarsınız.
 
 ## Adım 4: Belgeyi PDF olarak kaydedin
 

@@ -87,11 +87,11 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
 ### Ez a funkció befolyásolja a PDF szövegét?
 
-Nem, a képek átugrása csak a képeket érinti. A szöveg érintetlen és teljes mértékben hozzáférhető marad.
+Nem, a képek átugrása csak a képeket érinti. A szöveg érintetlen marad és teljes mértékben hozzáférhető.
 
 ### Használhatom ezt a funkciót más dokumentumformátumokkal?
 
-A`SkipPdfImages` Az opció kifejezetten PDF dokumentumokhoz használható. Más formátumokhoz különböző lehetőségek és módszerek állnak rendelkezésre.
+ A`SkipPdfImages` Az opció kifejezetten PDF dokumentumokhoz használható. Más formátumokhoz különböző lehetőségek és módszerek állnak rendelkezésre.
 
 ### Hogyan ellenőrizhetem, hogy a képek kimaradtak-e?
 

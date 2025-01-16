@@ -19,7 +19,7 @@ Antes de embarcarmos em nossa aventura de construção de mesas, vamos garantir 
 - .NET Framework (4.0 ou superior)
 - Biblioteca Aspose.Words para .NET
 
- Se você ainda não tem o Aspose.Words, você pode facilmente[baixe aqui](https://releases.aspose.com/words/net/) . Você também pode começar com um[teste gratuito](https://releases.aspose.com/) se você quiser testar as águas. Para aqueles que estão prontos para dar o mergulho, você pode[comprar uma licença](https://purchase.aspose.com/buy) , ou se precisar de mais tempo para avaliar, pegue um[licença temporária](https://purchase.aspose.com/temporary-license/).
+ Se você ainda não tem o Aspose.Words, você pode facilmente[baixe aqui](https://releases.aspose.com/words/net/) . Você também pode começar com um[teste gratuito](https://releases.aspose.com/) se você quiser testar as águas. Para aqueles que estão prontos para dar o mergulho, você pode[comprar uma licença](https://purchase.aspose.com/buy) ou se precisar de mais tempo para avaliar, pegue um[licença temporária](https://purchase.aspose.com/temporary-license/).
 
 ## Importar namespaces
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Ao usar`StartTable` estamos dizendo ao Aspose.Words que estamos prestes a criar uma tabela. O`InsertCell` método adiciona a primeira célula e`AutoFit` garante que nossas colunas tenham larguras fixas.
+ Ao usar`StartTable` , estamos dizendo ao Aspose.Words que estamos prestes a criar uma tabela. O`InsertCell` método adiciona a primeira célula e`AutoFit` garante que nossas colunas tenham larguras fixas.
 
 ## Etapa 3: formate a primeira linha
 
@@ -125,7 +125,7 @@ Lembre-se, a prática leva à perfeição. Então, não hesite em experimentar d
 Aspose.Words for .NET é uma biblioteca poderosa para trabalhar com documentos do Word programaticamente. Ela permite que você crie, edite e manipule documentos sem precisar do Microsoft Word.
 
 ### Como instalo o Aspose.Words para .NET?
- Você pode[baixe Aspose.Words para .NET aqui](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas para configurá-lo em seu ambiente de desenvolvimento.
+ Você pode[baixe Aspose.Words para .NET aqui](https://releases.aspose.com/words/net/)Siga as instruções de instalação fornecidas para configurá-lo em seu ambiente de desenvolvimento.
 
 ### Posso usar o Aspose.Words gratuitamente?
  Aspose.Words oferece uma[teste gratuito](https://releases.aspose.com/) para que você possa testar seus recursos. Para uso prolongado, você pode comprar uma licença ou obter uma[licença temporária](https://purchase.aspose.com/temporary-license/).

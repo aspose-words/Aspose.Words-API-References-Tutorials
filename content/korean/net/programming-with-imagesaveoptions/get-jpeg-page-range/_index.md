@@ -71,10 +71,10 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 ## 자주 묻는 질문
 
 ### 한 번에 여러 페이지를 변환할 수 있나요?
- 예, 다음을 사용하여 페이지 범위를 지정할 수 있습니다.`PageSet` 속성에`ImageSaveOptions`.
+ 예, 다음을 사용하여 페이지 범위를 지정할 수 있습니다.`PageSet` 속성`ImageSaveOptions`.
 
 ### 이미지 품질은 어떻게 조절하나요?
- JPEG의 품질은 다음을 사용하여 조정할 수 있습니다.`JpegQuality` 속성에`ImageSaveOptions`.
+ JPEG의 품질은 다음을 사용하여 조정할 수 있습니다.`JpegQuality` 속성`ImageSaveOptions`.
 
 ### 다른 이미지 형식으로 저장할 수 있나요?
  네, Aspose.Words는 PNG, BMP, TIFF와 같은 다양한 이미지 형식을 지원합니다. 변경`SaveFormat` ~에`ImageSaveOptions` 따라서.

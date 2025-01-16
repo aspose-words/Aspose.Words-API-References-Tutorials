@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
-그만큼`unprotect` 이 방법은 문서에 적용된 모든 보호 기능을 제거하여 암호 없이도 문서에 액세스할 수 있도록 합니다.
+ 그만큼`unprotect` 이 방법은 문서에 적용된 모든 보호 기능을 제거하여 암호 없이도 문서에 액세스할 수 있도록 합니다.
 
 ## 문서 보호 유형 확인
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
-그만큼`getProtectionType` 이 메서드는 문서에 적용된 보호 유형을 나타내는 정수를 반환합니다.
+ 그만큼`getProtectionType` 이 메서드는 문서에 적용된 보호 유형을 나타내는 정수를 반환합니다.
 
 
 ## 결론

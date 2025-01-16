@@ -90,4 +90,4 @@ Aspose.Words는 원활한 통합을 위해 .NET Framework와 .NET Core 버전을
 가져오기 프로세스 중에 발생할 수 있는 예외를 처리하려면 try-catch 블록을 사용합니다.
 
 ### Aspose.Words for .NET에 대한 더 자세한 문서는 어디에서 찾을 수 있나요?
- 방문하세요[선적 서류 비치](https://reference.aspose.com/words/net/)포괄적인 가이드와 API 참조를 확인하세요.
+ 방문하세요[선적 서류 비치](https://reference.aspose.com/words/net/) 포괄적인 가이드와 API 참조를 확인하세요.

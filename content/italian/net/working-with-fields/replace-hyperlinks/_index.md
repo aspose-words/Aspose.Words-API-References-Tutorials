@@ -86,7 +86,7 @@ Sì, Aspose.Words supporta senza problemi strutture complesse come tabelle, imma
  Sì, puoi scaricare una versione di prova gratuita da[Qui](https://releases.aspose.com/).
 
 ### Dove posso trovare la documentazione per Aspose.Words per .NET?
-È disponibile la documentazione dettagliata[Qui](https://reference.aspose.com/words/net/).
+ È disponibile la documentazione dettagliata[Qui](https://reference.aspose.com/words/net/).
 
 ### Come posso ottenere una licenza temporanea per Aspose.Words per .NET?
  È possibile ottenere licenze temporanee[Qui](https://purchase.aspose.com/temporary-license/).

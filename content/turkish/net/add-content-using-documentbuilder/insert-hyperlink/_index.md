@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Adım 5: Köprü metnini ekleyin
 
- Şimdi, köprü metnini kullanarak ekliyoruz`InsertHyperlink`yöntem. Bu yöntem üç parametre alır: görüntüleme metni, URL ve bağlantının köprü metni olarak biçimlendirilip biçimlendirilmeyeceğini belirten bir Boole değeri.
+ Şimdi, köprü metnini kullanarak ekliyoruz`InsertHyperlink` yöntem. Bu yöntem üç parametre alır: görüntüleme metni, URL ve bağlantının köprü metni olarak biçimlendirilip biçimlendirilmeyeceğini belirten bir Boole değeri.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", yanlış);
@@ -106,7 +106,7 @@ Aspose.Words for .NET kullanarak bir Word belgesine köprüler eklemek, adımlar
 
 ### Tek bir belgeye birden fazla köprü metni ekleyebilir miyim?
 
- Evet, tekrarlayarak birden fazla köprü metni ekleyebilirsiniz.`InsertHyperlink`Her bağlantı için bir yöntem.
+ Evet, tekrarlayarak birden fazla köprü metni ekleyebilirsiniz.`InsertHyperlink` Her bağlantı için bir yöntem.
 
 ### Köprü metninin rengini nasıl değiştirebilirim?
 
@@ -118,7 +118,7 @@ Aspose.Words for .NET kullanarak bir Word belgesine köprüler eklemek, adımlar
 
 ### URL geçersizse ne olur?
 
-The`InsertHyperlink` yöntemi URL'leri doğrulamaz, bu yüzden eklemeden önce URL'lerin doğru olduğundan emin olmak önemlidir.
+ The`InsertHyperlink` yöntemi URL'leri doğrulamaz, bu yüzden eklemeden önce URL'lerin doğru olduğundan emin olmak önemlidir.
 
 ### Eklenen bir köprü metnini kaldırmak mümkün müdür?
 

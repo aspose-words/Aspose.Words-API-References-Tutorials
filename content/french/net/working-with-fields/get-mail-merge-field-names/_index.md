@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-Le`Aspose.Words` L'espace de noms vous donne accès à toutes les classes et méthodes nécessaires pour manipuler les documents Word, tandis que`System` est utilisé pour les fonctionnalités de base comme la sortie de la console.
+ Le`Aspose.Words` L'espace de noms vous donne accès à toutes les classes et méthodes nécessaires pour manipuler les documents Word, tandis que`System` est utilisé pour les fonctionnalités de base comme la sortie de la console.
 
 Décomposons le processus d'extraction des noms de champs de publipostage dans un guide clair, étape par étape.
 
@@ -73,7 +73,7 @@ Rubrique : Extraire les noms des champs de publipostage
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-Le`GetFieldNames()`La méthode renvoie un tableau de chaînes, chacune représentant un nom de champ de publipostage trouvé dans le document. Il s'agit des espaces réservés que vous verrez dans votre document Word.
+ Le`GetFieldNames()`La méthode renvoie un tableau de chaînes, chacune représentant un nom de champ de publipostage trouvé dans le document. Il s'agit des espaces réservés que vous verrez dans votre document Word.
 
 ## Étape 4 : Afficher le nombre de champs de fusion
 

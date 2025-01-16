@@ -89,4 +89,4 @@ Sử dụng một tệp CSS duy nhất giúp đơn giản hóa việc quản lý
 Aspose.Words for .NET hỗ trợ nhiều định dạng khác nhau bao gồm PDF, TXT và các định dạng hình ảnh như JPEG và PNG.
 
 ### Tôi có thể tìm thêm tài nguyên về Aspose.Words cho .NET ở đâu?
- Kiểm tra các[tài liệu](https://reference.aspose.com/words/net/)để có hướng dẫn toàn diện và tài liệu tham khảo API.
+ Kiểm tra các[tài liệu](https://reference.aspose.com/words/net/) để có hướng dẫn toàn diện và tài liệu tham khảo API.

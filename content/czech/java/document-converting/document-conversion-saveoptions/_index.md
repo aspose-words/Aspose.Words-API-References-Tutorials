@@ -49,7 +49,7 @@ Dále nakonfigurujete možnosti uložení dokumentu. Zde můžete zadat různá 
 
 ```java
 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.setSaveFormat(SaveFormat.EPUB);
+saveOptions.setSaveFormat();
 saveOptions.setEncoding(StandardCharsets.UTF_8);
 ```
 

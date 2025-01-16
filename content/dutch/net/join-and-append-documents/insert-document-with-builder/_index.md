@@ -21,7 +21,7 @@ Voordat we beginnen, willen we er zeker van zijn dat u alles heeft wat u nodig h
 
 ## Naamruimten importeren
 
-Allereerst moet u de benodigde naamruimten importeren om toegang te krijgen tot de functionaliteiten van de Aspose.Words-bibliotheek. Dit is hoe u dat kunt doen:
+Allereerst moet u de benodigde naamruimten importeren om toegang te krijgen tot de Aspose.Words-bibliotheekfunctionaliteiten. Dit is hoe u dat kunt doen:
 
 ```csharp
 using Aspose.Words;
@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Stap 3: Een DocumentBuilder-object maken
 
-De`DocumentBuilder` class is een krachtige tool in de Aspose.Words-bibliotheek. Hiermee kunnen we door het document navigeren en het manipuleren.
+ De`DocumentBuilder` class is een krachtige tool in de Aspose.Words-bibliotheek. Hiermee kunnen we door het document navigeren en het manipuleren.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);

@@ -10,199 +10,172 @@ url: /ar/java/document-conversion-and-export/generating-custom-barcode-labels/
 
 ## مقدمة حول إنشاء ملصقات الباركود المخصصة في Aspose.Words لـ Java
 
-في هذا الدليل الشامل، سنتعمق في عملية إنشاء ملصقات الباركود المخصصة باستخدام Aspose.Words for Java. Aspose.Words for Java عبارة عن واجهة برمجة تطبيقات قوية تتيح للمطورين التعامل مع مستندات Word برمجيًا. إحدى ميزاتها الرائعة هي القدرة على العمل مع ملصقات الباركود، مما يجعلها أداة قيمة للشركات والمؤسسات التي تتطلب حلول باركود مخصصة.
+تُعد الرموز الشريطية ضرورية في التطبيقات الحديثة، سواء كنت تدير المخزون أو تنشئ التذاكر أو تنشئ بطاقات الهوية. مع Aspose.Words for Java، يصبح إنشاء ملصقات الرموز الشريطية المخصصة أمرًا سهلاً. سيرشدك هذا البرنامج التعليمي خطوة بخطوة خلال إنشاء ملصقات الرموز الشريطية المخصصة باستخدام واجهة IBarcodeGenerator. هل أنت مستعد للبدء؟ هيا بنا!
+
 
 ## المتطلبات الأساسية
 
-قبل أن نتعمق في تفاصيل إنشاء ملصقات الباركود المخصصة، دعونا نتأكد من أن لدينا المتطلبات الأساسية:
+قبل أن نبدأ في الترميز، تأكد من أن لديك ما يلي:
 
-1. بيئة تطوير Java: تأكد من تثبيت Java وبيئة التطوير المتكاملة (IDE) على نظامك.
+- مجموعة تطوير Java (JDK): الإصدار 8 أو أعلى.
+-  Aspose.Words لمكتبة Java:[تحميل هنا](https://releases.aspose.com/words/java/).
+-  Aspose.BarCode لمكتبة Java:[تحميل هنا](https://releases.aspose.com/).
+- بيئة التطوير المتكاملة (IDE): IntelliJ IDEA، أو Eclipse، أو أي بيئة تطوير متكاملة تفضلها.
+-  رخصة مؤقتة: الحصول على[رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) للوصول غير المقيد.
 
-2.  Aspose.Words for Java: قم بتنزيل Aspose.Words for Java وتثبيته من[هنا](https://releases.aspose.com/words/java/).
+## استيراد الحزم
 
-3. المعرفة الأساسية بلغة Java: ستكون المعرفة ببرمجة Java مفيدة لأننا سنكتب كود Java لإنشاء ملصقات الباركود المخصصة.
-
-## إنشاء ملصقات الباركود المخصصة
-
-الآن، لنبدأ في إنشاء ملصقات باركود مخصصة باستخدام Aspose.Words for Java. سنقسم العملية إلى خطوات ونوفر مقتطفات من أكواد Java لكل خطوة.
-
-## ضبط ارتفاع الباركود
-
-للبدء، نحتاج إلى ضبط ارتفاع الرمز الشريطي الخاص بنا بوحدة التويب (1/1440 بوصة). ثم سنحول هذه القيمة إلى ملليمتر (مم). إليك الكود اللازم لإنجاز هذه المهمة:
+سنستخدم مكتبات Aspose.Words وAspose.BarCode. قم باستيراد الحزم التالية إلى مشروعك:
 
 ```java
-	// قيمة الإدخال هي 1/1440 بوصة (تويب)
-	int heightInTwips = tryParseInt(heightInTwipsString);
-	if (heightInTwips == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect height - " + heightInTwipsString + ".");
-	// تحويل إلى مم
-	return (float) (heightInTwips * 25.4 / 1440.0);
+import com.aspose.barcode.generation.*;
+import com.aspose.words.BarcodeParameters;
+import com.aspose.words.IBarcodeGenerator;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 ```
 
-## تحويل لون صورة الباركود
+تسمح لنا هذه الواردات بالاستفادة من ميزات إنشاء الباركود ودمجها في مستندات Word.
 
-بعد ذلك، سنقوم بتحويل لون صورة الرمز الشريطي من Word إلى Aspose.BarCode. يجب أن يكون لون الإدخال بالتنسيق "0xRRGGBB" (ست عشري). إليك الكود الخاص بالتحويل:
+دعونا نقسم هذه المهمة إلى خطوات قابلة للإدارة.
+
+## الخطوة 1: إنشاء فئة أدوات مساعدة لعمليات الباركود
+
+لتبسيط العمليات المتعلقة بالرمز الشريطي، سننشئ فئة أدوات مساعدة تحتوي على طرق مساعدة للمهام الشائعة مثل تحويل اللون وتعديل الحجم.
+
+### شفرة:
 
 ```java
-/// <ملخص>
-/// تحويل لون صورة الباركود من Word إلى Aspose.BarCode.
-/// </ملخص>
-/// <param name="inputColor"></param>
-/// <returns></returns>
-private static Color convertColor(String inputColor) throws Exception {
-	// يجب أن يكون الإدخال من "0x000000" إلى "0xFFFFFF"
-	int color = tryParseHex(inputColor.replace("0x", ""));
-	if (color == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect color - " + inputColor + ".");
-	return new Color((color >> 16), ((color & 0xFF00) >> 8), (color & 0xFF));
+class CustomBarcodeGeneratorUtils {
+    public static double twipsToPixels(String heightInTwips, double defVal) {
+        try {
+            int lVal = Integer.parseInt(heightInTwips);
+            return (lVal / 1440.0) * 96.0; // بافتراض أن DPI الافتراضي هو 96
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
+
+    public static Color convertColor(String inputColor, Color defVal) {
+        if (inputColor == null || inputColor.isEmpty()) return defVal;
+        try {
+            int color = Integer.parseInt(inputColor, 16);
+            return new Color((color & 0xFF), ((color >> 8) & 0xFF), ((color >> 16) & 0xFF));
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
 }
 ```
 
-## تحويل عامل مقياس الباركود
+### توضيح:
 
-الآن، سنحول عامل مقياس الرمز الشريطي من نسبة مئوية إلى قيمة عائمة. يحدد عامل المقياس هذا حجم الرمز الشريطي. إليك الكود المستخدم في عملية التحويل:
+- `twipsToPixels` الطريقة: تحويل التويب (المستخدم في مستندات Word) إلى بكسل.
+- `convertColor` الطريقة: ترجمة أكواد الألوان السداسية عشرية إلى`Color` أشياء.
+
+## الخطوة 2: تنفيذ مولد الباركود المخصص
+
+ سوف نقوم بتنفيذ`IBarcodeGenerator` واجهة لإنشاء الباركودات ودمجها مع Aspose.Words.
+
+### شفرة:
 
 ```java
-/// <ملخص>
-/// تحويل عامل مقياس الرمز الشريطي من النسبة المئوية إلى عدد عشري.
-/// </ملخص>
-/// <param name="عامل التحجيم"></param>
-/// <returns></returns>
-private static float convertScalingFactor(String scalingFactor) throws Exception {
-	boolean isParsed = false;
-	int percent = tryParseInt(scalingFactor);
-	if (percent != Integer.MIN_VALUE && percent >= 10 && percent <= 10000)
-		isParsed = true;
-	if (!isParsed)
-		throw new Exception("Error! Incorrect scaling factor - " + scalingFactor + ".");
-	return percent / 100.0f;
+class CustomBarcodeGenerator implements IBarcodeGenerator {
+    public BufferedImage getBarcodeImage(BarcodeParameters parameters) {
+        try {
+            BarcodeGenerator gen = new BarcodeGenerator(
+                CustomBarcodeGeneratorUtils.getBarcodeEncodeType(parameters.getBarcodeType()),
+                parameters.getBarcodeValue()
+            );
+
+            gen.getParameters().getBarcode().setBarColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getForegroundColor(), Color.BLACK)
+            );
+            gen.getParameters().setBackColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getBackgroundColor(), Color.WHITE)
+            );
+
+            return gen.generateBarCodeImage();
+        } catch (Exception e) {
+            return new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB);
+        }
+    }
+
+    public BufferedImage getOldBarcodeImage(BarcodeParameters parameters) {
+        throw new UnsupportedOperationException();
+    }
 }
 ```
 
-## تنفيذ طريقة GetBarCodeImage()
+### توضيح:
 
- في هذه الخطوة، سوف نقوم بتنفيذ`getBarcodeImage`الطريقة التي تولد صورة الباركود بناءً على المعلمات المقدمة. سنتعامل مع أنواع مختلفة من الباركود، ونحدد الألوان، ونضبط الأبعاد، والمزيد. إليك الكود الخاص بهذه الطريقة:
+- `getBarcodeImage` طريقة:
+  -  ينشئ`BarcodeGenerator` مثال.
+  - تعيين لون الباركود ولون الخلفية وإنشاء الصورة.
+
+## الخطوة 3: إنشاء رمز شريطي وإضافته إلى مستند Word
+
+الآن، سنقوم بدمج مولد الباركود الخاص بنا في مستند Word.
+
+### شفرة:
 
 ```java
-/// <ملخص>
-/// تنفيذ طريقة GetBarCodeImage() لواجهة IBarCodeGenerator.
-/// </ملخص>
-/// <param name="المعلمات"></param>
-/// <returns></returns>
-public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Exception {
-	// تحقق مما إذا كان نوع الباركود والقيمة متوفرين
-	if (parameters.getBarcodeType() == null || parameters.getBarcodeValue() == null)
-		return null;
-	
-	// إنشاء BarcodeGenerator بناءً على نوع الباركود
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR);
-	String type = parameters.getBarcodeType().toUpperCase();
-	switch (type)
-	{
-		case "QR":
-			generator = new BarcodeGenerator(EncodeTypes.QR);
-			break;
-		// يمكنك التعامل مع أنواع أخرى من الباركود هنا
-	}
-	
-	// تعيين نص الباركود
-	generator.setCodeText(parameters.getBarcodeValue());
-	
-	// تعيين ألوان الباركود
-	if (parameters.getForegroundColor() != null)
-		generator.getParameters().getBarcode().setBarColor(convertColor(parameters.getForegroundColor()));
-	if (parameters.getBackgroundColor() != null)
-		generator.getParameters().setBackColor(convertColor(parameters.getBackgroundColor()));
-	
-	// تعيين ارتفاع الرمز وأبعاده
-	if (parameters.getSymbolHeight() != null)
-	{
-		generator.getParameters().getImageHeight().setPixels(convertSymbolHeight(parameters.getSymbolHeight()));
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	// تخصيص موقع نص الكود
-	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
-	if (parameters.getDisplayText())
-		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
-	
-	// تعديلات إضافية لرموز الاستجابة السريعة (QR codes)
-	final float SCALE = 2.4f; // عامل القياس التجريبي لتحويل باركود Word إلى Aspose.BarCode
-	float xdim = 1.0f;
-	if (generator.getBarcodeType().equals(EncodeTypes.QR))
-	{
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
-		generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageWidth().getInches() * SCALE);
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageWidth().getInches());
-		xdim = generator.getParameters().getImageHeight().getInches() / 25;
-		generator.getParameters().getBarcode().getXDimension().setInches(xdim);
-		generator.getParameters().getBarcode().getBarHeight().setInches(xdim);
-	}
-	
-	// تطبيق عامل القياس
-	if (parameters.getScalingFactor() != null)
-	{
-		float scalingFactor = convertScalingFactor(parameters.getScalingFactor());
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageHeight().getInches() * scalingFactor);
-		if (generator.getBarcodeType().equals(EncodeTypes.QR))
-		{
-			generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageHeight().getInches());
-			generator.getParameters().getBarcode().getXDimension().setInches(xdim * scalingFactor);
-			generator.getParameters().getBarcode().getBarHeight().setInches(xdim * scalingFactor);
-		}
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	// إنشاء وإرجاع صورة الباركود
-	return generator.generateBarCodeImage();
+import com.aspose.words.*;
+
+public class GenerateCustomBarcodeLabels {
+    public static void main(String[] args) throws Exception {
+        // تحميل أو إنشاء مستند Word
+        Document doc = new Document();
+        DocumentBuilder builder = new DocumentBuilder(doc);
+
+        // إعداد مولد الباركود المخصص
+        CustomBarcodeGenerator barcodeGenerator = new CustomBarcodeGenerator();
+        BarcodeParameters barcodeParameters = new BarcodeParameters();
+        barcodeParameters.setBarcodeType("QR");
+        barcodeParameters.setBarcodeValue("https://example.com");
+        barcodeParameters.setForegroundColor("000000");
+        barcodeParameters.setBackgroundColor("FFFFFF");
+
+        // إنشاء صورة الباركود
+        BufferedImage barcodeImage = barcodeGenerator.getBarcodeImage(barcodeParameters);
+
+        // إدراج صورة الباركود في مستند Word
+        builder.insertImage(barcodeImage, 200, 200);
+
+        // حفظ المستند
+        doc.save("CustomBarcodeLabels.docx");
+
+        System.out.println("Barcode labels generated successfully!");
+    }
 }
 ```
 
-## تنفيذ طريقة GetOldBarcodeImage()
+### توضيح:
 
- في هذه الخطوة، سوف نقوم بتنفيذ`getOldBarcodeImage`الطريقة التي تولد صور الباركود للرموز الشريطية القديمة. هنا، سنتعامل مع نوع معين من الباركود، مثل POSTNET. إليك الكود الخاص بهذه الطريقة:
-
-```java
-/// <ملخص>
-/// تنفيذ طريقة GetOldBarcodeImage() لواجهة IBarCodeGenerator.
-/// </ملخص>
-/// <param name="المعلمات"></param>
-/// <returns></returns>
-public BufferedImage getOldBarcodeImage(BarcodeParameters parameters)
-{
-	if (parameters.getPostalAddress() == null)
-		return null;
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.POSTNET);
-	{
-		generator.setCodeText(parameters.getPostalAddress());
-	}
-	// نوع الكود الثابت للباركود القديم
-	return generator.generateBarCodeImage();
-}
-```
+- تهيئة المستند: إنشاء مستند Word أو تحميله.
+- معلمات الباركود: تحديد نوع الباركود والقيمة والألوان.
+- إدراج الصورة: قم بإضافة صورة الباركود المُنشأة إلى مستند Word.
+- حفظ المستند: احفظ الملف بالتنسيق المطلوب.
 
 ## خاتمة
 
-في هذه المقالة، استكشفنا عملية إنشاء ملصقات باركود مخصصة باستخدام Aspose.Words for Java. لقد قمنا بتغطية الخطوات الأساسية، من ضبط ارتفاع الباركود إلى تنفيذ أساليب إنشاء الباركود. يتيح Aspose.Words for Java للمطورين إنشاء ملصقات باركود ديناميكية ومخصصة، مما يجعله أداة قيمة لمختلف الصناعات.
+باتباع هذه الخطوات، يمكنك إنشاء ملصقات باركود مخصصة وتضمينها في مستندات Word باستخدام Aspose.Words for Java. هذا النهج مرن ويمكن تخصيصه ليناسب التطبيقات المختلفة. استمتع بالبرمجة!
+
 
 ## الأسئلة الشائعة
 
-### كيف يمكنني تعديل حجم الباركود الذي تم إنشاؤه؟
+1. هل يمكنني استخدام Aspose.Words لـ Java بدون ترخيص؟
+ نعم، ولكن سيكون هناك بعض القيود. احصل على[رخصة مؤقتة](https://purchase.aspose.com/temporary-license/) للحصول على وظائف كاملة.
 
-يمكنك ضبط حجم الرمز الشريطي الناتج عن طريق ضبط ارتفاع رمز الرمز الشريطي وعامل القياس في مقتطفات التعليمات البرمجية المقدمة. تتيح لك هذه المعلمات التحكم في أبعاد الرمز الشريطي وفقًا لمتطلباتك.
+2. ما هي أنواع الباركود التي يمكنني توليدها؟
+يدعم Aspose.BarCode QR وCode 128 وEAN-13 والعديد من الأنواع الأخرى. تحقق من[التوثيق](https://reference.aspose.com/words/java/) للحصول على القائمة الكاملة.
 
-### هل يمكنني تغيير ألوان الباركود؟
+3. كيف يمكنني تغيير حجم الباركود؟
+ ضبط`XDimension` و`BarHeight` المعلمات في`BarcodeGenerator` إعدادات.
 
-نعم، يمكنك تغيير ألوان الباركود من خلال تحديد ألوان المقدمة والخلفية في الكود. يتيح لك هذا التخصيص مطابقة مظهر الباركود مع تصميم مستندك.
+4. هل يمكنني استخدام الخطوط المخصصة للرموز الشريطية؟
+ نعم، يمكنك تخصيص خطوط نص الباركود من خلال`CodeTextParameters` ملكية.
 
-### ما هي أنواع الباركود التي يدعمها Aspose.Words لـ Java؟
+5. أين يمكنني الحصول على المساعدة مع Aspose.Words؟
+ قم بزيارة[منتدى الدعم](https://forum.aspose.com/c/words/8/) للحصول على المساعدة.
 
-يدعم Aspose.Words for Java أنواعًا مختلفة من الرموز الشريطية، بما في ذلك رموز QR وCODE128 وCODE39 وEAN8 وEAN13 وUPCA وUPCE وITF14 والمزيد. يمكنك اختيار نوع الرمز الشريطي الذي يناسب احتياجات تطبيقك.
-
-### كيف يمكنني دمج الباركود الناتج في مستند Word الخاص بي؟
-
-لدمج الرمز الشريطي الناتج في مستند Word الخاص بك، يمكنك استخدام Aspose.Words لإمكانات معالجة المستندات في Java. يمكنك إدراج صورة الرمز الشريطي في مستندك في الموقع المطلوب.
-
-### هل هناك أي رمز عينة متاح لمزيد من التخصيص؟
-
- نعم، يمكنك العثور على مقتطفات التعليمات البرمجية النموذجية والوثائق الإضافية على موقع مرجع Aspose.Words for Java:[مرجع API لـ Aspose.Words لـ Java](https://reference.aspose.com/words/java/).

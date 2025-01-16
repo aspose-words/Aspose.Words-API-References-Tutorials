@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Passaggio 3: Inizializzazione di DocumentBuilder
 
-IL`DocumentBuilder` è come il tuo pennello. Ti aiuta ad aggiungere contenuti al tuo documento. Inizializziamolo.
+ IL`DocumentBuilder` è come il tuo pennello. Ti aiuta ad aggiungere contenuti al tuo documento. Inizializziamolo.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -110,7 +110,7 @@ Ed ecco fatto! Hai creato con successo un documento Word e inserito interruzioni
 
 ## Conclusione
 
-Non è stato divertente? Con Aspose.Words per .NET, manipolare i documenti Word è un gioco da ragazzi. Che tu stia aggiungendo semplici interruzioni di pagina o eseguendo complesse automazioni di documenti, questa libreria ti rende la vita molto più semplice. Quindi, vai avanti ed esplora di più ciò che Aspose.Words può fare. Le possibilità sono infinite!
+Non è stato divertente? Con Aspose.Words per .NET, manipolare i documenti Word è un gioco da ragazzi. Che tu stia aggiungendo semplici interruzioni di pagina o eseguendo complesse automazioni di documenti, questa libreria ti rende la vita molto più semplice. Quindi, vai avanti ed esplora di più su cosa Aspose.Words può fare. Le possibilità sono infinite!
 
 ## Domande frequenti
 
@@ -118,7 +118,7 @@ Non è stato divertente? Con Aspose.Words per .NET, manipolare i documenti Word 
 Aspose.Words per .NET è una potente libreria per lavorare con i documenti Word a livello di programmazione. Supporta un'ampia gamma di funzionalità, dalla creazione e modifica di documenti alla conversione tra diversi formati.
 
 ### Posso usare Aspose.Words gratuitamente?
- Sì, puoi iniziare con un[prova gratuita](https://releases.aspose.com/) per esplorarne le caratteristiche. Per un uso a lungo termine, puoi[acquistare una licenza](https://purchase.aspose.com/buy).
+Sì, puoi iniziare con un[prova gratuita](https://releases.aspose.com/) per esplorarne le caratteristiche. Per un uso a lungo termine, puoi[acquistare una licenza](https://purchase.aspose.com/buy).
 
 ### Come posso ottenere supporto per Aspose.Words?
  Puoi ottenere supporto da[Forum della comunità Aspose](https://forum.aspose.com/c/words/8)È un ottimo posto per porre domande e condividere le proprie esperienze.

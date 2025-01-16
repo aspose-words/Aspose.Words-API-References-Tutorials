@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Nyní, když máme načtený náš dokument, přistoupíme k použití šifrování. Aspose.Words for Java poskytuje přímý způsob, jak nastavit šifrování dokumentů:
 
 ```java
-// Nastavte heslo pro otevření dokumentu
-doc.getWriteProtection().setPassword("yourPassword");
-
-// Nastavit šifrovací algoritmus (volitelné)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// Uložte zašifrovaný dokument
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. Ochrana konkrétních prvků dokumentu
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 Někdy můžete chtít chránit pouze určité části dokumentu, jako jsou záhlaví, zápatí nebo určité odstavce. Aspose.Words vám umožňuje dosáhnout této úrovně granularity v ochraně dokumentů:
 
 ```java
-// Chránit konkrétní sekci (ochrana pouze pro čtení)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// Ochrana konkrétního odstavce (umožňuje upravovat pouze pole formuláře)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// Uložte chráněný dokument
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//Upravitelné rozsahy nám umožňují ponechat části chráněných dokumentů otevřené pro úpravy.
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. Použití digitálních podpisů
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 Přidáním digitálních podpisů do vašeho dokumentu můžete zajistit jeho pravost a integritu. Zde je návod, jak můžete použít digitální podpis pomocí Aspose.Words pro Java:
 
 ```java
-// Načtěte soubor certifikátu
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// Podepište dokument certifikátem
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// Vytvořte komentář, datum a heslo pro dešifrování, které bude použito s naším novým digitálním podpisem.
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// Uložte podepsaný dokument
-doc.save("path/to/signed/document.docx");
+// Nastavte název lokálního systému pro nepodepsaný vstupní dokument a výstupní název souboru pro jeho novou digitálně podepsanou kopii.
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. Vodoznak vašich dokumentů
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. Úprava citlivých informací
 
-Při sdílení dokumentů můžete chtít trvale odstranit citlivé informace, abyste zajistili, že se nedostanou do nesprávných rukou. Aspose.Words for Java vám umožňuje redigovat citlivý obsah:
-
-```java
-// Vyhledávejte a upravujte citlivé informace
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// Použít redakce
-doc.redact(options);
-
-// Uložte redigovaný dokument
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. Převod zabezpečených dokumentů na jiné formáty
+## 10. Převod zabezpečených dokumentů na jiné formáty
 
 Aspose.Words for Java vám také umožňuje převádět vaše zabezpečené dokumenty do různých formátů, jako je PDF nebo HTML:
 
 ```java
-// Vložte zabezpečený dokument
+//Vložte zabezpečený dokument
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // Převést do PDF
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // Převést do HTML
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. Nejlepší postupy pro zabezpečení dokumentů
-
-Chcete-li zajistit robustní zabezpečení dokumentů, dodržujte tyto doporučené postupy:
-
-- Pravidelně aktualizujte svá bezpečnostní opatření, abyste měli náskok před potenciálními hrozbami.
-- Používejte silná hesla a šifrovací algoritmy.
-- Omezte přístup k citlivým dokumentům na základě potřeby vědět.
-- Vyškolte zaměstnance, aby rozpoznali bezpečnostní rizika a reagovali na ně.
-
-## 13. Testování bezpečnosti dokumentů
-
-Po použití bezpečnostních opatření důkladně otestujte své dokumenty, abyste se ujistili, že zůstanou bezpečné v různých scénářích. Pokuste se obejít bezpečnostní kontroly a identifikovat potenciální zranitelnosti.
-
-## 14. Závěr
+## Závěr
 
 V tomto podrobném průvodci jsme prozkoumali důležitost zabezpečení dokumentů a jak Aspose.Words for Java může pomoci chránit vaše dokumenty před neoprávněným přístupem. Využitím funkcí knihovny, jako je ochrana heslem, šifrování, digitální podpisy, vodoznaky a redakce, můžete zajistit, že vaše dokumenty zůstanou v bezpečí.
 
-## Nejčastější dotazy
+## FAQ
 
 ### Mohu používat Aspose.Words for Java v komerčních projektech?
-   Ano, Aspose.Words for Java lze použít v komerčních projektech v rámci licenčního modelu pro jednotlivé vývojáře.
+Ano, Aspose.Words for Java lze použít v komerčních projektech v rámci licenčního modelu pro jednotlivé vývojáře.
 
 ### Podporuje Aspose.Words jiné formáty dokumentů kromě Wordu?
-   Ano, Aspose.Words podporuje širokou škálu formátů, včetně PDF, HTML, EPUB a dalších.
+Ano, Aspose.Words podporuje širokou škálu formátů, včetně PDF, HTML, EPUB a dalších.
 
 ### Je možné do dokumentu přidat více digitálních podpisů?
-   Ano, Aspose.Words vám umožňuje přidat do dokumentu více digitálních podpisů.
+Ano, Aspose.Words vám umožňuje přidat do dokumentu více digitálních podpisů.
 
 ### Podporuje Aspose.Words obnovení hesla dokumentu?
-   Ne, Aspose.Words neposkytuje funkce pro obnovu hesla. Ujistěte se, že máte svá hesla v bezpečí.
+Ne, Aspose.Words neposkytuje funkce pro obnovu hesla. Ujistěte se, že máte svá hesla v bezpečí.
 
 ### Mohu upravit vzhled vodoznaků?
-   Ano, můžete si plně přizpůsobit vzhled vodoznaků, včetně textu, písma, barvy, velikosti a otočení.
+Ano, můžete si plně přizpůsobit vzhled vodoznaků, včetně textu, písma, barvy, velikosti a otočení.

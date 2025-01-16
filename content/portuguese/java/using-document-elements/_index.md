@@ -50,7 +50,7 @@ Aprenda a usar o HarfBuzz para modelagem avançada de texto no Aspose.Words para
 ### [Usando cabeçalhos e rodapés no Aspose.Words para Java](./using-headers-and-footers/)
 Aprenda passo a passo como usar cabeçalhos e rodapés no Aspose.Words para Java. Crie documentos profissionais sem esforço.
 ### [Usando hifenização em Aspose.Words para Java](./using-hyphenation/)
-Aprenda como usar hifenização efetivamente no Aspose.Words para Java com este tutorial abrangente. Melhore a legibilidade do documento hoje mesmo!
+Aprenda a usar hifenização de forma eficaz no Aspose.Words para Java com este tutorial abrangente. Melhore a legibilidade do documento hoje mesmo!
 ### [Usando listas em Aspose.Words para Java](./using-lists/)
 Aprenda a usar listas no Aspose.Words para Java com este tutorial passo a passo. Organize e formate seus documentos de forma eficaz.
 ### [Usando Markdown em Aspose.Words para Java](./using-markdown/)

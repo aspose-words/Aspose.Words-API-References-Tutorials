@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // 날짜 대신 범주로 X축을 변경하세요.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Y축의 표시 단위(백)로 측정됩니다.
+xAxis.setCrossesAt(3.0); //Y축의 표시 단위(백)로 측정됩니다.
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### 사용자 지정 숫자 서식을 사용하여 데이터 레이블을 어떻게 서식 지정할 수 있나요?
 
- 데이터 레이블을 서식 지정하려면 다음을 수행하세요.`DataLabels` 시리즈의 속성 및 원하는 형식 코드 설정`getNumberFormat().setFormatCode()`.
+데이터 레이블을 서식 지정하려면 다음을 수행하세요.`DataLabels` 시리즈의 속성 및 원하는 형식 코드 설정`getNumberFormat().setFormatCode()`.
 
 ### 차트의 축 속성을 사용자 지정하려면 어떻게 해야 하나요?
 
@@ -139,7 +139,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### 산점형 차트나 영역형 차트 등 다른 유형의 차트는 어떻게 만들 수 있나요?
 
-적절한 차트 유형을 지정하여 다양한 차트 유형을 만들 수 있습니다.`ChartType` 차트를 삽입할 때`builder.insertChart(ChartType.TYPE, width, height)`.
+ 적절한 차트 유형을 지정하여 다양한 차트 유형을 만들 수 있습니다.`ChartType` 차트를 삽입할 때`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### 차트 축을 숨기려면 어떻게 해야 하나요?
 

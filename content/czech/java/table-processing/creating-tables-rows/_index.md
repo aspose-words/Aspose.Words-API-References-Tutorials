@@ -16,7 +16,7 @@ Vytváření tabulek a řádků v dokumentech je základním aspektem zpracován
 
 ## Stavební stoly
 ### Vytvoření tabulky
-Pro začátek vytvořte v dokumentu tabulku. Zde je jednoduchý úryvek kódu, který vám pomůže:
+Začněme vytvořením tabulky v dokumentu. Zde je jednoduchý úryvek kódu, který vám pomůže:
 
 ```java
 // Importujte potřebné třídy
@@ -44,7 +44,7 @@ public class TableCreation {
 }
 ```
 
-V tomto fragmentu kódu vytvoříme jednoduchou tabulku se 3 řádky a 3 sloupci a každou buňku naplníme textem „Ukázkový text“.
+tomto fragmentu kódu vytvoříme jednoduchou tabulku se 3 řádky a 3 sloupci a každou buňku naplníme textem „Ukázkový text“.
 
 ### Přidání záhlaví do tabulky
 Přidání záhlaví do tabulky je často nezbytné pro lepší organizaci. Zde je návod, jak toho můžete dosáhnout:

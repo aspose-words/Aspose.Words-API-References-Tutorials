@@ -94,7 +94,7 @@ Lazy loading é uma estratégia em que você carrega apenas as partes essenciais
 
 ### 2. Cache
 
-O armazenamento em cache de documentos analisados pode eliminar a necessidade de análises repetidas, reduzindo o tempo de carregamento de documentos acessados com frequência.
+armazenamento em cache de documentos analisados pode eliminar a necessidade de análises repetidas, reduzindo o tempo de carregamento de documentos acessados com frequência.
 
 ### 3. Multithreading
 
@@ -120,7 +120,7 @@ O Aspose.Words para Java oferece um teste gratuito, mas para uso estendido e fun
 
 #### Quais outros formatos de documento o Aspose.Words para Java suporta?
 
-O Aspose.Words para Java suporta uma ampla gama de formatos de documentos, incluindo DOCX, PDF, ODT e mais. Verifique a documentação para uma lista abrangente.
+Aspose.Words para Java suporta uma ampla gama de formatos de documentos, incluindo DOCX, PDF, ODT e mais. Verifique a documentação para uma lista abrangente.
 
 #### Existe uma comunidade ou fórum de suporte para o Aspose.Words para Java?
 

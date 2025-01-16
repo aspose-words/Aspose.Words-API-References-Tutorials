@@ -86,7 +86,7 @@ Ja, Aspose.Words ondersteunt naadloos complexe structuren zoals tabellen, afbeel
  Ja, u kunt een gratis proefversie downloaden van[hier](https://releases.aspose.com/).
 
 ### Waar kan ik documentatie vinden voor Aspose.Words voor .NET?
-Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).
+ Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).
 
 ### Hoe kan ik een tijdelijke licentie voor Aspose.Words voor .NET krijgen?
  Tijdelijke vergunningen kunnen worden verkregen[hier](https://purchase.aspose.com/temporary-license/).

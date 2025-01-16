@@ -19,10 +19,10 @@ Voordat we met de tutorial beginnen, moet u ervoor zorgen dat u aan de volgende 
 De eerste stap is het laden van het document dat u wilt splitsen en formatteren. Gebruik het volgende codefragment om dit te bereiken:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## Stap 2: Splits het document in secties
@@ -41,10 +41,10 @@ Stel dat u specifieke opmaak wilt toepassen op een sectie. Laten we bijvoorbeeld
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## Stap 4: Sla het document op
@@ -55,6 +55,12 @@ Nadat u het document hebt gesplitst en geformatteerd, is het tijd om de wijzigin
 document.save("path/to/save/updated_document.docx")
 ```
 
+## Conclusie
+
+Aspose.Words voor Python biedt een uitgebreide set tools om documenten efficiënt te splitsen en te formatteren volgens uw behoeften. Door de stappen te volgen die in deze tutorial worden beschreven en de meegeleverde broncodevoorbeelden te gebruiken, kunt u uw documenten naadloos beheren en ze professioneel presenteren.
+
+In deze tutorial hebben we de basis van het splitsen en formatteren van documenten behandeld en oplossingen geboden voor veelvoorkomende vragen. Nu is het jouw beurt om de mogelijkheden van Aspose.Words voor Python te verkennen en ermee te experimenteren om je documentbeheerworkflow verder te verbeteren.
+
 ## Veelgestelde vragen
 
 ### Hoe kan ik een document in meerdere bestanden splitsen?
@@ -62,7 +68,7 @@ U kunt een document in meerdere bestanden splitsen door door de secties te itere
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ Ja, u kunt verschillende opmaak toepassen op paragrafen binnen een sectie. Loop 
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### Hoe verander ik het lettertype voor een specifieke sectie?
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### Is het mogelijk om een specifiek gedeelte uit het document te verwijderen?
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## Conclusie
-Aspose.Words voor Python biedt een uitgebreide set tools om documenten efficiënt te splitsen en te formatteren volgens uw behoeften. Door de stappen te volgen die in deze tutorial worden beschreven en de meegeleverde broncodevoorbeelden te gebruiken, kunt u uw documenten naadloos beheren en ze professioneel presenteren.
-
-In deze tutorial hebben we de basis van het splitsen en formatteren van documenten behandeld en oplossingen geboden voor veelvoorkomende vragen. Nu is het jouw beurt om de mogelijkheden van Aspose.Words voor Python te verkennen en ermee te experimenteren om je documentbeheerworkflow verder te verbeteren.

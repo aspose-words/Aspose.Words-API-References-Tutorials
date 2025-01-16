@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Itu`Document` objek mewakili dokumen Word, dan`DocumentBuilder` membantu dalam menambahkan konten ke dalamnya.
+ Itu`Document` objek mewakili dokumen Word, dan`DocumentBuilder` membantu dalam menambahkan konten ke dalamnya.
 
 ## Langkah 3: Tentukan Jalur Gambar
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 Berikut ini arti setiap parameter:
-- `imagePath`Jalur ke berkas gambar Anda.
+- `imagePath`: Jalur ke berkas gambar Anda.
 - `RelativeHorizontalPosition.Margin`: Posisi horizontal relatif terhadap margin.
 - `100`: Jarak horizontal dari margin (dalam poin).
 - `RelativeVerticalPosition.Margin`: Posisi vertikal relatif terhadap margin.

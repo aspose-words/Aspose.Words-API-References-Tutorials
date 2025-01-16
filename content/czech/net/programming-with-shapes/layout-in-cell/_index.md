@@ -15,7 +15,7 @@ Pokud jste někdy chtěli doladit rozložení buněk tabulky v dokumentech Wordu
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud ne, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Budete potřebovat vývojové prostředí nastavené s .NET. Visual Studio je skvělá volba, pokud hledáte doporučení.
 3. Základní znalost C#: I když vysvětlím každý krok, základní znalost C# vám pomůže snáze pokračovat.
 4.  Adresář dokumentů: Připravte si cestu k adresáři, kam budete dokumenty ukládat. Budeme to označovat jako`YOUR DOCUMENT DIRECTORY`.
@@ -140,7 +140,7 @@ A tady to máte! Úspěšně jste vytvořili dokument aplikace Word s přizpůso
 ### Je možné pro vodoznak použít místo textu obrázek?
  Absolutně! Můžete vytvořit a`Shape` s typem`ShapeType.Image` a nastavte jeho obrázek pomocí`ImageData.SetImage` metoda.
 
-### Mohu vytvořit tabulky s různou výškou řádků?
+### Mohu vytvářet tabulky s různou výškou řádků?
 Ano, můžete nastavit různé výšky pro každý řádek změnou`RowFormat.Height` vlastnost před vložením buněk do tohoto řádku.
 
 ### Jak odstraním vodoznak z dokumentu?

@@ -49,7 +49,7 @@ Vykreslování dokumentů je nezbytné, když je potřebujete převést do různ
 
 ```java
 // Vykreslete dokument do PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Můžete vyměnit`SaveFormat.PDF` s požadovaným formátem pro vykreslení.
@@ -78,7 +78,7 @@ Aspose.Words for Java je výkonný nástroj pro tisk a vykreslování dokumentů
 
 ### Jak mohu převést dokument na obrázek?
 
- Chcete-li převést dokument na obrázek, můžete použít`save` metoda s`SaveFormat.PNG` nebo jiné formáty obrázků.
+ Chcete-li převést dokument na obrázek, můžete použít`save` metoda s`SaveFormat.PNG` nebo jiné obrazové formáty.
 
 ### Je Aspose.Words for Java vhodný pro rozsáhlé zpracování dokumentů?
 

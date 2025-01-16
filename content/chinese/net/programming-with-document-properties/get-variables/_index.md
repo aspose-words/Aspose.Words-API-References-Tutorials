@@ -105,7 +105,7 @@ using Aspose.Words;
 ### 我可以将 Aspose.Words for .NET 与其他编程语言一起使用吗？
 是的，Aspose.Words 支持多种语言，但在本教程中，我们重点介绍 C#。
 
-### 如何获得 Aspose.Words 的临时许可证？
+### 如何获取 Aspose.Words 的临时许可证？
 您可以从[这里](https://purchase.aspose.com/temporary-license/).
 
 ### 有没有办法用 Aspose.Words 处理其他文档格式？

@@ -23,7 +23,7 @@ pip install aspose-words
 2. Import modulu: Importujte požadovaný modul do skriptu Python.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Přidání jednoduchého záhlaví a zápatí
@@ -33,30 +33,18 @@ Chcete-li do dokumentu aplikace Word přidat základní záhlaví a zápatí, po
 1. Vytvoření dokumentu: Vytvořte nový dokument aplikace Word pomocí Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Přidání záhlaví a zápatí: Použijte`sections` vlastnost dokumentu pro přístup k sekcím. Poté použijte`headers_footers` vlastnost pro přidání záhlaví a zápatí.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Přidání obsahu: Přidejte obsah do záhlaví a zápatí.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Uložení dokumentu: Uložte dokument se záhlavím a zápatím.
+3. Uložení dokumentu: Uložte dokument se záhlavím a zápatím.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Přidávání tabulek: Zahrňte tabulky pro tabulkové informace.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Dynamická pole: Použijte dynamická pole pro automatické vkládání dat.
+2. Dynamická pole: Použijte dynamická pole pro automatické vkládání dat.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -110,8 +90,6 @@ header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
 
-3. Přizpůsobit podle potřeby: Upravte každé záhlaví a zápatí podle svých požadavků.
-
 ## Odebrání záhlaví a zápatí
 
 Postup odstranění záhlaví a zápatí z dokumentu aplikace Word:
@@ -130,7 +108,7 @@ section.page_setup.different_first_page_header_footer = False
 section.page_setup.odd_and_even_pages_header_footer = False
 ```
 
-## Nejčastější dotazy
+## FAQ
 
 ### Jak získám přístup k obsahu záhlaví a zápatí?
 
@@ -150,4 +128,4 @@ Ano, můžete vymazat obsah záhlaví a zápatí a efektivně je odstranit.
 
 ### Kde se mohu dozvědět více o Aspose.Words pro Python?
 
-Pro podrobnější dokumentaci a příklady navštivte[Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).
+ Pro podrobnější dokumentaci a příklady navštivte[Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).

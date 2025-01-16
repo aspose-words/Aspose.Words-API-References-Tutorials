@@ -30,12 +30,8 @@ Trong suốt loạt bài hướng dẫn này, chúng tôi sẽ đề cập đế
 ## Hướng dẫn kết hợp và so sánh tài liệu
 ### [Hợp nhất và so sánh các tài liệu trong Word](./merge-compare-documents/)
 Hợp nhất và so sánh các tài liệu Word một cách dễ dàng bằng Aspose.Words for Python. Tìm hiểu cách thao tác tài liệu, làm nổi bật sự khác biệt và tự động hóa các tác vụ.
-### [Khai thác sức mạnh của dấu trang tài liệu](./document-bookmarks/)
-Tìm hiểu cách khai thác sức mạnh của dấu trang tài liệu bằng Aspose.Words for Python. Tạo, quản lý và điều hướng qua các dấu trang với hướng dẫn từng bước và ví dụ về mã.
 ### [Điều hướng các phạm vi tài liệu để chỉnh sửa chính xác](./document-ranges/)
 Tìm hiểu cách điều hướng và chỉnh sửa phạm vi tài liệu một cách chính xác bằng Aspose.Words cho Python. Hướng dẫn từng bước với mã nguồn để thao tác nội dung hiệu quả.
-### [Sử dụng Thẻ Tài liệu có Cấu trúc (SDT) cho Dữ liệu có Cấu trúc](./document-sdts/)
-Mở khóa sức mạnh của Thẻ tài liệu có cấu trúc (SDT) để sắp xếp nội dung. Tìm hiểu cách sử dụng Aspose.Words cho Python để triển khai SDT.
 ### [Áp dụng Styles và Themes để chuyển đổi tài liệu](./apply-styles-themes-documents/)
 Nâng cao tính thẩm mỹ của tài liệu với Aspose.Words for Python. Áp dụng các kiểu, chủ đề và tùy chỉnh dễ dàng.
 ### [Tạo mục lục toàn diện cho tài liệu Word](./generate-table-contents/)

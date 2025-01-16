@@ -62,7 +62,7 @@ Para garantizar que las imágenes se interpolen, debe configurar el`PdfSaveOptio
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-El`InterpolateImages` La propiedad está configurada en`true` para garantizar que las imágenes en su PDF estén interpoladas, mejorando su calidad.
+ El`InterpolateImages` La propiedad está configurada en`true` para garantizar que las imágenes en su PDF estén interpoladas, mejorando su calidad.
 
 ## Paso 4: Guarde el documento como PDF
 

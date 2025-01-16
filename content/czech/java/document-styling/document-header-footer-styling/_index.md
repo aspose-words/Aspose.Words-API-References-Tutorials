@@ -14,7 +14,7 @@ Chcete zlepšit své dovednosti ve formátování dokumentů pomocí Java? V tom
 
 Formátování dokumentů hraje klíčovou roli při vytváření profesionálně vypadajících dokumentů. Záhlaví a zápatí jsou základní komponenty, které poskytují kontext a strukturu vašemu obsahu. Pomocí Aspose.Words for Java, výkonného rozhraní API pro manipulaci s dokumenty, můžete snadno přizpůsobit záhlaví a zápatí tak, aby vyhovovaly vašim specifickým požadavkům.
 
-této příručce prozkoumáme různé aspekty stylování záhlaví a zápatí dokumentů pomocí Aspose.Words pro Java. Pokryjeme vše od základního formátování po pokročilé techniky a poskytneme vám praktické příklady kódu, které ilustrují každý krok. Na konci tohoto článku budete mít znalosti a dovednosti k vytváření vyleštěných a vizuálně přitažlivých dokumentů.
+V této příručce prozkoumáme různé aspekty stylování záhlaví a zápatí dokumentů pomocí Aspose.Words pro Java. Pokryjeme vše od základního formátování po pokročilé techniky a poskytneme vám praktické příklady kódu, které ilustrují každý krok. Na konci tohoto článku budete mít znalosti a dovednosti k vytváření vyleštěných a vizuálně přitažlivých dokumentů.
 
 ## Styling záhlaví a zápatí
 
@@ -87,7 +87,7 @@ Chcete-li zajistit bezproblémovou úpravu stylů záhlaví a zápatí dokument�
 
 ### Jak mohu odstranit záhlaví nebo zápatí z konkrétních sekcí?
 
-Záhlaví nebo zápatí můžete odstranit z konkrétních sekcí přístupem k`HeaderFooter` objektů a nastavení jejich obsahu na hodnotu null. Například:
+ Záhlaví nebo zápatí můžete odstranit z konkrétních sekcí přístupem k`HeaderFooter` objektů a nastavení jejich obsahu na hodnotu null. Například:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Mohu přidat vlastní pole, jako jsou názvy dokumentů, do záhlaví nebo zápatí?
 
-Ano, do záhlaví nebo zápatí můžete přidat vlastní pole. Vytvořte a`Run` a vložte jej do obsahu záhlaví nebo zápatí, přičemž poskytne požadovaný text. Upravte formátování podle potřeby.
+ Ano, do záhlaví nebo zápatí můžete přidat vlastní pole. Vytvořte a`Run` a vložte jej do obsahu záhlaví nebo zápatí, přičemž poskytne požadovaný text. Upravte formátování podle potřeby.
 
 ### Je Aspose.Words for Java kompatibilní s různými formáty dokumentů?
 

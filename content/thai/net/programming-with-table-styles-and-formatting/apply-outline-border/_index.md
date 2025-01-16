@@ -129,4 +129,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx"
  แน่นอน! คุณสามารถใช้สีใดก็ได้ที่มีใน`System.Drawing.Color` ระดับ.
 
 ### ฉันจะจัดตำแหน่งตารางให้กึ่งกลางในแนวนอนได้อย่างไร?  
-การ`table.Alignment = TableAlignment.Center;` บรรทัดในโค้ดจะจัดตารางให้อยู่กึ่งกลางแนวนอนบนหน้า
+ การ`table.Alignment = TableAlignment.Center;` บรรทัดในโค้ดจะจัดตารางให้อยู่กึ่งกลางแนวนอนบนหน้า

@@ -73,7 +73,7 @@ Bu kod, orijinal dosyalarınızı koruyarak, değiştirilen belgeyi yeni bir adl
 ## SSS
 
 ###  Amacı nedir?`CopyStylesFromTemplate` method?  
-The`CopyStylesFromTemplate` yöntem, stilleri bir belgeden diğerine kopyalar ve böylece hedef belgenin kaynak belgenin biçimlendirmesini devralmasını sağlar.
+ The`CopyStylesFromTemplate` yöntem, stilleri bir belgeden diğerine kopyalar ve böylece hedef belgenin kaynak belgenin biçimlendirmesini devralmasını sağlar.
 
 ###  Kullanabilir miyim?`CopyStylesFromTemplate` with documents in different formats?  
  Hayır,`CopyStylesFromTemplate` Bu yöntem yalnızca aynı formattaki, genellikle DOCX formatındaki belgelerle çalışır.
@@ -82,7 +82,7 @@ The`CopyStylesFromTemplate` yöntem, stilleri bir belgeden diğerine kopyalar ve
 Hedef belgeyi açın ve stil ayarlarını kontrol edin. Kaynak belgedeki stillerin uygulandığını görmelisiniz.
 
 ### Hedef belgede zaten stiller varsa ne olur?  
-The`CopyStylesFromTemplate` yöntem, hedef belgedeki mevcut stilleri kaynak belgedekilerle değiştirecektir.
+ The`CopyStylesFromTemplate` yöntem, hedef belgedeki mevcut stilleri kaynak belgedekilerle değiştirecektir.
 
 ### Aspose.Words for .NET'i kullanmak ücretsiz mi?  
  Aspose.Words for .NET ticari bir üründür, ancak ücretsiz deneme sürümünü şu adresten edinebilirsiniz:[Aspose.Words for .NET Ücretsiz Deneme](https://releases.aspose.com/).

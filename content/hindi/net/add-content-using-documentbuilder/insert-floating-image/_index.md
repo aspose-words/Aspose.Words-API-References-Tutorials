@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 प्रत्येक पैरामीटर का अर्थ इस प्रकार है:
-- `imagePath`आपकी छवि फ़ाइल का पथ.
+- `imagePath`: आपकी छवि फ़ाइल का पथ.
 - `RelativeHorizontalPosition.Margin`: मार्जिन के सापेक्ष क्षैतिज स्थिति.
 - `100`: मार्जिन से क्षैतिज ऑफसेट (बिंदुओं में).
 - `RelativeVerticalPosition.Margin`: मार्जिन के सापेक्ष ऊर्ध्वाधर स्थिति.

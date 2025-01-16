@@ -19,11 +19,7 @@ Mielőtt belemerülnénk az OLE-objektumok és ActiveX-vezérlők beágyazásáb
 - Aspose.Words for Python könyvtár telepítve
 - A Word dokumentumszerkezetének alapvető ismerete
 
-## OLE objektumok beágyazása
-
-Az OLE-objektumok lehetővé teszik külső fájlok, például táblázatok vagy prezentációk zökkenőmentes integrálását Word-dokumentumaiba. OLE objektum beágyazásához kövesse az alábbi lépéseket:
-
-### 1. lépés: Szükséges könyvtárak hozzáadása
+## 1. lépés: Szükséges könyvtárak hozzáadása
 
 Kezdje azzal, hogy importálja a szükséges modulokat az Aspose.Words könyvtárból és minden egyéb függőséget:
 
@@ -31,7 +27,7 @@ Kezdje azzal, hogy importálja a szükséges modulokat az Aspose.Words könyvtá
 import aspose.words as aw
 ```
 
-### 2. lépés: Word-dokumentum létrehozása
+## 2. lépés: Word-dokumentum létrehozása
 
 Hozzon létre egy új Word-dokumentumot az Aspose.Words for Python használatával:
 
@@ -39,42 +35,16 @@ Hozzon létre egy új Word-dokumentumot az Aspose.Words for Python használatáv
 doc = aw.Document()
 ```
 
-### 3. lépés: OLE objektum beszúrása
+## 3. lépés: OLE objektum beszúrása
 
 Most beszúrhat egy OLE objektumot a dokumentumba. Például ágyazjunk be egy Excel-táblázatot:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## ActiveX-vezérlők beágyazása
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", igaz, igaz, nincs)
 
-Az ActiveX-vezérlők interaktivitást biztosítanak a dokumentumokban, lehetővé téve a felhasználók számára a beágyazott tartalommal való interakciót. ActiveX-vezérlő beágyazásához kövesse az alábbi lépéseket:
-
-### 1. lépés: Szükséges könyvtárak hozzáadása
-
-Csakúgy, mint az OLE objektumoknál, kezdje a szükséges modulok importálásával:
-
-```python
-import aspose.words as aw
-```
-
-### 2. lépés: Word-dokumentum létrehozása
-
-Hozzon létre egy új Word dokumentumot:
-
-```python
-doc = aw.Document()
-```
-
-### 3. lépés: ActiveX-vezérlő beillesztése
-
-Tegyük fel, hogy egy multimédiás lejátszót szeretne beágyazni. A következőképpen teheti meg:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Az interaktivitás és a funkcionalitás javítása

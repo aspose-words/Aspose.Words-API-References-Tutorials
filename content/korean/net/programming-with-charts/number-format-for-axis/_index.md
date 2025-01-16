@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-그만큼`InsertChart` 이 방법은 지정된 유형(이 경우 열)과 크기의 차트를 문서에 삽입합니다.
+ 그만큼`InsertChart` 이 방법은 지정된 유형(이 경우 열)과 크기의 차트를 문서에 삽입합니다.
 
 ## 3단계: 차트 시리즈 사용자 지정
 
@@ -86,7 +86,7 @@ chart.Series.Add("Aspose Series 1",
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-그만큼`FormatCode` 속성을 사용하면 축의 숫자에 대한 사용자 정의 형식을 설정할 수 있습니다. 이 예에서,`#,##0`큰 숫자가 천 단위일 경우 쉼표로 표시합니다.
+ 그만큼`FormatCode` 속성을 사용하면 축의 숫자에 대한 사용자 정의 형식을 설정할 수 있습니다. 이 예에서,`#,##0`큰 숫자가 천 단위일 경우 쉼표로 표시합니다.
 
 ## 5단계: 문서 저장
 

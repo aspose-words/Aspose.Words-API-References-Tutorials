@@ -56,7 +56,7 @@ Berikutnya, konversi dokumen Word yang dimuat ke PDF:
 
 ```java
 // Simpan dokumen sebagai PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Langkah 4: Mengonversi ke Format Lain
@@ -67,21 +67,21 @@ Selain PDF, Aspose.Words untuk Java memungkinkan Anda mengonversi dokumen ke ber
 
 ```java
 // Simpan dokumen sebagai RTF
-doc.save("output.rtf", SaveFormat.RTF);
+doc.save("output.rtf");
 ```
 
 ### Mengonversi ke HTML
 
 ```java
 // Simpan dokumen sebagai HTML
-doc.save("output.html", SaveFormat.HTML);
+doc.save("output.html");
 ```
 
 ### Mengonversi ke EPUB
 
 ```java
 // Simpan dokumen sebagai EPUB
-doc.save("output.epub", SaveFormat.EPUB);
+doc.save("output.epub");
 ```
 
 ## Tips untuk Konversi Dokumen yang Efektif

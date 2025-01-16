@@ -86,7 +86,7 @@ Ano, Aspose.Words bezproblémově podporuje složité struktury, jako jsou tabul
  Ano, můžete si stáhnout bezplatnou zkušební verzi z[zde](https://releases.aspose.com/).
 
 ### Kde najdu dokumentaci k Aspose.Words pro .NET?
- dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
+ K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
 
 ### Jak mohu získat dočasné licencování pro Aspose.Words pro .NET?
  Lze získat dočasné licence[zde](https://purchase.aspose.com/temporary-license/).

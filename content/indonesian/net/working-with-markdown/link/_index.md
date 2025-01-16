@@ -45,7 +45,7 @@ Mari kita telusuri proses penyisipan hyperlink ke dalam dokumen Word menggunakan
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Itu`DocumentBuilder` kelas adalah alat serbaguna yang memungkinkan Anda membuat dan memodifikasi dokumen.
+ Itu`DocumentBuilder` kelas adalah alat serbaguna yang memungkinkan Anda membuat dan memodifikasi dokumen.
 
 ## Langkah 2: Masukkan Hyperlink
 

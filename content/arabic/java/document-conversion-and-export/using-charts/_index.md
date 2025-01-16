@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // تغيير المحور X ليكون فئة بدلاً من التاريخ.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // يتم قياسها بوحدات العرض لمحور Y (المئات).
+xAxis.setCrossesAt(3.0); //يتم قياسها بوحدات العرض لمحور Y (المئات).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### كيف يمكنني تنسيق تسميات البيانات باستخدام تنسيقات الأرقام المخصصة؟
 
- يمكنك تنسيق تسميات البيانات عن طريق الوصول إلى`DataLabels` خصائص السلسلة وتعيين كود التنسيق المطلوب باستخدام`getNumberFormat().setFormatCode()`.
+يمكنك تنسيق تسميات البيانات عن طريق الوصول إلى`DataLabels` خصائص السلسلة وتعيين كود التنسيق المطلوب باستخدام`getNumberFormat().setFormatCode()`.
 
 ### كيف أقوم بتخصيص خصائص المحور في الرسم البياني؟
 
@@ -139,7 +139,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### كيف يمكنني إنشاء أنواع أخرى من الرسوم البيانية مثل الرسوم البيانية المنتشرة أو الرسوم البيانية المساحية؟
 
-يمكنك إنشاء أنواع مختلفة من المخططات من خلال تحديد النوع المناسب`ChartType` عند إدخال الرسم البياني باستخدام`builder.insertChart(ChartType.TYPE, width, height)`.
+ يمكنك إنشاء أنواع مختلفة من المخططات من خلال تحديد النوع المناسب`ChartType` عند إدخال الرسم البياني باستخدام`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### كيف يمكنني إخفاء محور الرسم البياني؟
 

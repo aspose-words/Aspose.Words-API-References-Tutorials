@@ -49,7 +49,7 @@ La representación de documentos es esencial cuando se necesitan convertirlos a 
 
 ```java
 // Convertir el documento en PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Puedes reemplazar`SaveFormat.PDF` con el formato deseado para renderizar.

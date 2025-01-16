@@ -31,7 +31,7 @@ url: /zh-hant/python-net/document-structure-and-content-manipulation/
 
 學完這些教學課程後，您將在使用 Aspose.Words 導航、擷取和操作文件結構和內容方面打下堅實的基礎。透過詳細的解釋和原始程式碼範例，您將能夠有效地處理與文件相關的任務。
 
-## 文檔結構和內容操作教程
+## 文件結構和內容操作教學課程
 ### [管理 Word 文件中的結構和內容](./document-structure-content/)
 了解如何使用 Aspose.Words for Python 高效管理 Word 文件。本逐步指南涵蓋文件結構、文字操作、格式、圖像、表格等。 
 ### [在Word文件中使用註解功能](./document-comments/)
@@ -40,8 +40,6 @@ url: /zh-hant/python-net/document-structure-and-content-manipulation/
 了解如何使用 Aspose.Words for Python 處理 Word 文件中的欄位和資料。包含動態內容、自動化等程式碼範例的逐步指南。 
 ### [了解 Word 文件中的字體和文字樣式](./document-fonts/)
 探索 Word 文件中的字體和文字樣式世界。了解如何使用 Aspose.Words for Python 增強可讀性和視覺吸引力。帶有逐步範例的綜合指南。
-### [探索 Word 文件中的註腳和尾註](./document-footnotes-endnotes/)
-探索如何使用 Aspose.Words for Python 在 Word 文件中有效使用腳註和尾註。學習以程式設計方式新增、自訂和管理這些元素。 
 ### [掌握 Word 文件中的表單欄位和資料捕獲](./document-form-fields/)
 掌握使用 Aspose.Words for Python 在 Word 文件中建立和管理表單欄位的藝術。學習有效捕獲數據並增強用戶參與度。 
 ### [操作 Word 文件中的頁首和頁尾](./document-headers-footers/)
@@ -52,8 +50,6 @@ url: /zh-hant/python-net/document-structure-and-content-manipulation/
 了解如何使用 Aspose.Words Python API 建立和管理 Word 文件中的清單。包含清單格式、自訂、嵌套等原始程式碼的逐步指南。 
 ### [在 Word 文件中使用 Markdown 格式](./document-markdown/)
 了解如何使用 Aspose.Words for Python 將 Markdown 格式整合到 Word 文件中。包含程式碼範例的逐步指南，用於建立動態且具有視覺吸引力的內容。 
-### [理解和導航文件節點](./document-nodes/)
-學習使用 Aspose.Words for Python 操作 Word 文件。本逐步指南涵蓋載入、格式化、表格、圖像等內容。立即提升您的文件處理技能！
 ### [在 Word 文件中嵌入 OLE 物件和 ActiveX 控制項](./document-ole-objects-active-x/)
  了解如何使用 Aspose.Words for Python 在 Word 文件中嵌入 OLE 物件和 ActiveX 控制項。無縫建立互動式動態文件。
 ### [設定 Word 文件中段落和文字的格式](./document-paragraphs/)

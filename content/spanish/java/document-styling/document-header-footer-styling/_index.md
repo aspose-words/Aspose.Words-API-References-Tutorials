@@ -87,7 +87,7 @@ Para garantizar una experiencia fluida al diseñar encabezados y pies de página
 
 ### ¿Cómo puedo eliminar encabezados o pies de página de secciones específicas?
 
-Puede eliminar encabezados o pies de página de secciones específicas accediendo a la`HeaderFooter` objetos y establecer su contenido como nulo. Por ejemplo:
+ Puede eliminar encabezados o pies de página de secciones específicas accediendo a la`HeaderFooter` objetos y establecer su contenido como nulo. Por ejemplo:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### ¿Puedo agregar campos personalizados, como títulos de documentos, a los encabezados o pies de página?
 
-Sí, puedes agregar campos personalizados a los encabezados o pies de página. Crea un`Run` Elemento e insértelo en el contenido del encabezado o pie de página, proporcionando el texto deseado. Personalice el formato según sea necesario.
+ Sí, puedes agregar campos personalizados a los encabezados o pies de página. Crea un`Run` Elemento e insértelo en el contenido del encabezado o pie de página, proporcionando el texto deseado. Personalice el formato según sea necesario.
 
 ### ¿Aspose.Words para Java es compatible con diferentes formatos de documentos?
 

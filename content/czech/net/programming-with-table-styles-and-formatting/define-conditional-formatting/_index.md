@@ -15,7 +15,7 @@ Podmíněné formátování vám umožňuje použít specifické formátování 
 
 Než začneme, ujistěte se, že máte následující:
 
-1. Aspose.Words for .NET: Potřebujete knihovnu Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Potřebujete knihovnu Aspose.Words for .NET. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vhodné vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Užitečná bude znalost programování v C#.
 4. Dokument aplikace Word: Dokument aplikace Word, ve kterém chcete použít podmíněné formátování.

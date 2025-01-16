@@ -14,7 +14,7 @@ Stilar och teman är avgörande för att upprätthålla konsekvens och estetik �
 
 ## Ställa in miljön
 
- Innan vi går in i styling, låt oss ställa in vår utvecklingsmiljö. Se till att du har Aspose.Words för Python installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/python/).
+Innan vi går in i styling, låt oss ställa in vår utvecklingsmiljö. Se till att du har Aspose.Words för Python installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/python/).
 
 ## Ladda och spara dokument
 
@@ -51,30 +51,8 @@ Stilar påverkar också styckeformateringen. Justera justeringar, avstånd och m
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## Anpassa rubrikstilar
-
-Rubriker ger struktur åt dokument. Anpassa rubrikstilar för bättre hierarki och läsbarhet.
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## Använda teman för ett enhetligt utseende
-
-Teman ger ett konsekvent utseende. Applicera ett tema på ditt dokument för en professionell touch.
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## Ändra temafärger och teckensnitt
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 Skräddarsy teman efter dina behov genom att justera temafärger och teckensnitt.
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## Skapa dina egna stilar
-
-Skapa anpassade stilar för unika dokumentelement och se till att din varumärkesidentitet lyser.
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## Hantera stil baserat på dokumentdelar
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 Använd stilar annorlunda på sidhuvuden, sidfötter och kroppsinnehåll för en polerad look.
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## Hantera stilar för hela dokument
-
-Applicera en stil på hela dokumentet med lätthet.
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## Rensa formatering och stilar
-
-Ta enkelt bort stilar och formatering för att börja om.
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## Praktiska exempel och användningsfall
-
-Låt oss utforska praktiska scenarier där stilar och teman kan förvandla dokument.
-
-1. Skapa varumärkesrapporter
-2. Designa fantastiska CV
-3. Formatera akademiska uppsatser
-
-## Tips för effektiv styling
-
-- Håll stilar konsekventa
-- Använd teman för snabba makeovers
-- Experimentera med olika teckensnitt och färger
 
 ## Slutsats
 
@@ -167,4 +109,4 @@ Teman ger ett sammanhängande utseende och känsla genom att gruppera stilar til
 
 ### Är det möjligt att rensa formatering från mitt dokument?
 
- Ja, du kan enkelt ta bort formatering och stilar med hjälp av`clear_formatting()` metod tillhandahållen av Aspose.Words för Python.
+Ja, du kan enkelt ta bort formatering och stilar med hjälp av`clear_formatting()` metod tillhandahållen av Aspose.Words för Python.

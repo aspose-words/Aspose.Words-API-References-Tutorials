@@ -1,5 +1,5 @@
 ---
-title: Aspose.Words for Java ile HTML Belgelerini Yükleme ve Kaydetme
+title: HTML Belgelerini Yükleme ve Kaydetme
 linktitle: HTML Belgelerini Yükleme ve Kaydetme
 second_title: Aspose.Words Java Belge İşleme API'si
 description: Aspose.Words for Java kullanarak HTML belgelerinin Java'ya nasıl yükleneceğini ve kaydedileceğini öğrenin. Sorunsuz belge entegrasyonu için kod örnekleriyle adım adım kılavuz.
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Artık HTML'yi bir dosyaya yüklediğimize göre`Document`, bunu bir Word belgesi olarak kaydedebiliriz. DOCX formatında kaydedelim:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Bu kod şunu kaydeder:`Document` Word belgeleri için yaygın bir format olan DOCX dosyası olarak.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Çözüm
@@ -79,7 +79,7 @@ Bu makalede, Aspose.Words for Java kullanarak HTML belgelerinin nasıl yüklenip
 
 ### Java için Aspose.Words'ü nasıl yüklerim?
 
- Java için Aspose.Words şu adresten indirilebilir:[Burada](https://releases.aspose.com/words/java/). Java projenize kurmak için web sitesinde verilen kurulum talimatlarını izleyin.
+ Java için Aspose.Words şu adresten indirilebilir:[Burada](https://releases.aspose.com/words/java/)Java projenize kurmak için web sitesinde verilen kurulum talimatlarını izleyin.
 
 ### Aspose.Words kullanarak karmaşık HTML belgelerini yükleyebilir miyim?
 
@@ -95,4 +95,4 @@ Kesinlikle! Aspose.Words, dünya çapındaki işletmeler tarafından belge otoma
 
 ### Aspose.Words for Java için daha fazla doküman ve örneği nerede bulabilirim?
 
- Aspose.Words for Java dokümantasyon web sitesinde ayrıntılı dokümanlar, kod örnekleri ve eğitimler bulabilirsiniz:[Java Belgeleri için Aspose.Words](https://reference.aspose.com/words/java/).
+Aspose.Words for Java dokümantasyon web sitesinde ayrıntılı dokümanlar, kod örnekleri ve eğitimler bulabilirsiniz:[Java Belgeleri için Aspose.Words](https://reference.aspose.com/words/java/).

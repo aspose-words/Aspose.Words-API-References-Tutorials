@@ -2,7 +2,7 @@
 title: Többszintű listaformázás Word dokumentumban
 linktitle: Többszintű listaformázás Word dokumentumban
 second_title: Aspose.Words Document Processing API
-description: Lépésről lépésre szóló útmutatónkból megtudhatja, hogyan sajátíthatja el a többszintű listaformázást Word-dokumentumokban az Aspose.Words for .NET használatával. Fokozatmentesen javíthatja a dokumentum szerkezetét.
+description: A lépésenkénti útmutatónkból megtudhatja, hogyan sajátíthatja el a többszintű listaformázást Word-dokumentumokban az Aspose.Words for .NET használatával. Fokozatmentesen javíthatja a dokumentum szerkezetét.
 type: docs
 weight: 10
 url: /hu/net/document-formatting/multilevel-list-formatting/
@@ -50,7 +50,7 @@ builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 ```
 
- Ezekben a sorokban`ApplyNumberDefault` elindítja a számozott listát, és`Writeln` elemeket ad hozzá a listához.
+ Ezekben a sorokban,`ApplyNumberDefault` elindítja a számozott listát, és`Writeln` elemeket ad hozzá a listához.
 
 ## 3. lépés: Behúzás az alszintekhez
 

@@ -47,7 +47,7 @@ Ora è il momento di convertire il documento caricato nel formato di output scel
 
 ```java
 // Convertire il documento in PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Conclusione

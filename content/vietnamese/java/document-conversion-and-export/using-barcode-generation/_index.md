@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Đặt máy phát mã vạch
 
- Thiết lập trình tạo mã vạch tùy chỉnh bằng cách sử dụng`FieldOptions` lớp. Trong ví dụ này, chúng tôi giả sử bạn đã triển khai một`CustomBarcodeGenerator` lớp để tạo mã vạch. Thay thế`CustomBarcodeGenerator` với logic tạo mã vạch thực tế của bạn:
+ Thiết lập trình tạo mã vạch tùy chỉnh bằng cách sử dụng`FieldOptions` lớp. Trong ví dụ này, chúng tôi giả sử bạn đã triển khai một`CustomBarcodeGenerator`lớp để tạo mã vạch. Thay thế`CustomBarcodeGenerator` với logic tạo mã vạch thực tế của bạn:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

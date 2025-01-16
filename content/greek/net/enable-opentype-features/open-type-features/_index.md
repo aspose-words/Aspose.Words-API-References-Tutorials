@@ -56,7 +56,7 @@ using Aspose.Words.Shaping.HarfBuzz;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"`με την πραγματική διαδρομή όπου βρίσκεται το έγγραφό σας.
+ Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"` με την πραγματική διαδρομή όπου βρίσκεται το έγγραφό σας.
 
 ### Φόρτωση του εγγράφου
 

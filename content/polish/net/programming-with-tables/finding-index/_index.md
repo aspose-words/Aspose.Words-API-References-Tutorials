@@ -21,7 +21,7 @@ Zanim przejdziemy do konkretów, upewnijmy się, że masz wszystko, czego potrze
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu C#. Dzięki temu masz dostęp do klas i metod udostępnianych przez Aspose.Words.
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw w swoim projekcie C#. Dzięki temu masz dostęp do klas i metod udostępnianych przez Aspose.Words.
 
 ```csharp
 using Aspose.Words;

@@ -105,7 +105,7 @@ I masz to! Właśnie zautomatyzowałeś proces wyszukiwania i zastępowania teks
  Tak, możesz. Po prostu zadzwoń`Replace` metodę dla każdego tekstu, który chcesz zastąpić.
 
 ### Czy Aspose.Words dla .NET jest darmowy?
-Aspose.Words dla .NET oferuje bezpłatną wersję próbną, ale aby uzyskać pełną funkcjonalność, musisz kupić licencję. Sprawdź ich[wycena](https://purchase.aspose.com/buy) po więcej szczegółów.
+Aspose.Words dla .NET oferuje bezpłatną wersję próbną, ale aby uzyskać pełną funkcjonalność, musisz kupić licencję. Sprawdź ich[wycena](https://purchase.aspose.com/buy) Aby uzyskać więcej szczegółów.
 
 ### Czy mogę zastąpić tekst formatowaniem?
  Oczywiście! Możesz zamienić tekst i zastosować formatowanie za pomocą`FindReplaceOptions` klasa.

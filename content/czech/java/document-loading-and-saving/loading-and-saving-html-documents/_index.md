@@ -1,6 +1,6 @@
 ---
-title: Načítání a ukládání dokumentů HTML pomocí Aspose.Words pro Javu
-linktitle: Načítání a ukládání dokumentů HTML pomocí
+title: Načítání a ukládání HTML dokumentů
+linktitle: Načítání a ukládání HTML dokumentů
 second_title: Aspose.Words Java Document Processing API
 description: Naučte se načítat a ukládat HTML dokumenty v Javě pomocí Aspose.Words for Java. Podrobný průvodce s příklady kódu pro bezproblémovou integraci dokumentů.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Nyní, když jsme načetli HTML do a`Document`, můžeme jej uložit jako dokument aplikace Word. Uložme to ve formátu DOCX:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Tento kód uloží`Document` jako soubor DOCX, což je běžný formát pro dokumenty aplikace Word.
@@ -68,18 +68,18 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Závěr
 
-tomto článku jsme se naučili, jak načíst a uložit HTML dokumenty pomocí Aspose.Words for Java. Tato knihovna poskytuje pohodlný způsob práce s různými formáty dokumentů, což z ní činí cenný nástroj pro manipulaci s dokumenty v aplikacích Java.
+V tomto článku jsme se naučili, jak načíst a uložit HTML dokumenty pomocí Aspose.Words for Java. Tato knihovna poskytuje pohodlný způsob práce s různými formáty dokumentů, což z ní činí cenný nástroj pro manipulaci s dokumenty v aplikacích Java.
 
 ## FAQ
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Aspose.Words for Java lze stáhnout z[zde](https://releases.aspose.com/words/java/). Postupujte podle pokynů k instalaci uvedených na webu a nastavte jej ve svém projektu Java.
+ Aspose.Words for Java lze stáhnout z[zde](https://releases.aspose.com/words/java/)Postupujte podle pokynů k instalaci uvedených na webu a nastavte jej ve svém projektu Java.
 
 ### Mohu načíst složité HTML dokumenty pomocí Aspose.Words?
 
@@ -95,4 +95,4 @@ Absolutně! Aspose.Words je robustní řešení používané podniky po celém s
 
 ### Kde najdu další dokumentaci a příklady pro Aspose.Words pro Java?
 
- Podrobnou dokumentaci, příklady kódu a výukové programy naleznete na webu dokumentace Aspose.Words for Java:[Aspose.Words pro dokumentaci Java](https://reference.aspose.com/words/java/).
+Podrobnou dokumentaci, příklady kódu a výukové programy naleznete na webu dokumentace Aspose.Words for Java:[Aspose.Words pro dokumentaci Java](https://reference.aspose.com/words/java/).

@@ -78,13 +78,13 @@ for (int page = 1; page <= doc.getPageCount(); page++) {
 ## DocumentPageSplitter 源代码
 
 ```java
-/// <摘要>
-//将一个文档拆分为多个文档，每页一个。
+//<摘要>
+/// 将一个文档拆分为多个文档，每页一个。
 /// </摘要>
 class DocumentPageSplitter
 {
 private PageNumberFinder pageNumberFinder;
-/// <摘要>
+//<摘要>
 /// 初始化 <see cref="DocumentPageSplitter"/> 类的新实例。
 /// 此方法将文档分成几个部分，以便每个页面都以部分边界开始和结束。
 /// 建议之后不要修改该文档。
@@ -97,20 +97,20 @@ public DocumentPageSplitter(Document source) throws Exception
 private Document getDocument() {
 	return pageNumberFinder.getDocument();
 }
-/// <摘要>
+//<摘要>
 /// 获取某一页的文档。
 /// </摘要>
 ///<param name="pageIndex">
 /// 1 为基础的页面索引。
 /// </param>
 /// <返回>
-/// <see cref="Document"/>。
+/// <see cref="文档"/>。
 /// </返回>
 public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
-/// <摘要>
-/// 获取某个页面范围的文档。
+//<摘要>
+//获取某个页面范围的文档。
 /// </摘要>
 ///<param name="startIndex">
 /// 1 为基础的起始页索引。
@@ -119,7 +119,7 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 /// 结束页的基于 1 的索引。
 /// </param>
 /// <返回>
-/// <see cref="Document"/>。
+/// <see cref="文档"/>。
 /// </返回>
 public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exception {
 	Document result = (Document) getDocument().deepClone(false);
@@ -130,7 +130,7 @@ public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exce
 	return result;
 }
 }
-/// <摘要>
+//<摘要>
 /// 提供提取在指定页面上呈现的文档节点的方法。
 /// </摘要>
 class PageNumberFinder
@@ -142,7 +142,7 @@ private Map<Node, Integer> nodeEndPageLookup = new HashMap<>();
 private LayoutCollector collector;
 //将页码映射到该页面上找到的节点列表。
 private Map<Integer, ArrayList<Node>> reversePageLookup;
-/// <摘要>
+//<摘要>
 /// 初始化 <see cref="PageNumberFinder"/> 类的新实例。
 /// </摘要>
 /// <param name="collector">具有文档布局模型记录的收集器实例。</param>
@@ -154,7 +154,7 @@ public Document getDocument()
 {
 	return collector.getDocument();
 }
-/// <摘要>
+//<摘要>
 /// 检索节点开始的页面的基于 1 的索引。
 /// </摘要>
 ///<param name="节点">
@@ -168,7 +168,7 @@ public int getPage(Node node) throws Exception {
 		? nodeStartPageLookup.get(node)
 		: collector.getStartPageIndex(node);
 }
-/// <摘要>
+//<摘要>
 /// 检索节点结束的页面的基于 1 的索引。
 /// </摘要>
 ///<param name="节点">
@@ -182,7 +182,7 @@ public int getPageEnd(Node node) throws Exception {
 		? nodeEndPageLookup.get(node)
 		: collector.getEndPageIndex(node);
 }
-/// <摘要>
+//<摘要>
 //返回指定节点跨越的页面数。如果节点包含在一页内，则返回 1。
 /// </摘要>
 ///<param name="节点">
@@ -194,7 +194,7 @@ public int getPageEnd(Node node) throws Exception {
 public int pageSpan(Node node) throws Exception {
 	return getPageEnd(node) - getPage(node) + 1;
 }
-/// <摘要>
+//<摘要>
 /// 返回包含在指定页面或与指定节点类型匹配的页面上任何位置的节点列表。
 /// </摘要>
 ///<param name="startPage">
@@ -240,7 +240,7 @@ public ArrayList<Node> retrieveAllNodesOnPages(int startPage, int endPage, /*Nod
 	}
 	return pageNodes;
 }
-/// <摘要>
+//<摘要>
 /// 将出现在两个或更多页面上的节点拆分为单独的节点，以便它们仍然以相同的方式出现
 ///但不再出现在页面上。
 /// </摘要>
@@ -257,7 +257,7 @@ public void splitNodesAcrossPages() throws Exception
 	//访问可能跨页面拆分的任何复合体并将它们拆分为单独的节点。
 	collector.getDocument().accept(new SectionSplitter(this));
 }
-/// <摘要>
+//<摘要>
 /// 这由 <see cref="SectionSplitter"/> 调用，以更新分割节点的页码。
 /// </摘要>
 ///<param name="节点">
@@ -342,7 +342,7 @@ private static String[] reverseWord(String str) {
 	}
 	return reverseWord.split(" ");
 }
-/// <摘要>
+//<摘要>
 /// 将指定运行的文本拆分为两个运行。
 /// 在指定运行之后插入新的运行。
 /// </摘要>
@@ -372,7 +372,7 @@ public static PageNumberFinder create(Document document) throws Exception
 	return pageNumberFinder;
 }
 }
-/// <摘要>
+//<摘要>
 /// 将文档分成多个部分，以便每页以部分边界开始和结束。
 /// </摘要>
 class SectionSplitter extends DocumentVisitor

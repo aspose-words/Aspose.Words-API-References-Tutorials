@@ -51,7 +51,7 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 在這裡，我們使用的是`foreach`循環遍歷文檔範圍中的每個書籤。這個循環將使我們能夠單獨處理每個書籤。
 
-## 步驟 3：識別書籤開始行和結束行
+## 步驟 3：辨識書籤開始行和結束行
 
 對於每個書籤，我們需要找到包含書籤開頭和結尾的行。這對於確定書籤是否跨越相鄰行至關重要。
 
@@ -77,7 +77,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 ## 第5步：行動書籤末端
 
-最後，如果滿足條件，我們將書籤結束節點移到頂行最後一個單元格中最後一段的末尾。此步驟有效解開書籤。
+最後，如果滿足條件，我們將書籤結束節點移到頂行最後一個單元格中最後一段的末尾。此步驟有效地解開了書籤。
 
 ```csharp
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);

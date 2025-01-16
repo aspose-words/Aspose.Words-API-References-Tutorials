@@ -38,9 +38,15 @@ Commençons par créer un nouveau document Word et y ajouter une zone de texte. 
 import aspose.words as aw
 
 doc = aw.Document()
-builder = aw.DocumentBuilder(doc)
-
-textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
+builder = aw.DocumentBuilder(doc=doc)
+textbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_BOX)
+textbox.width = 100
+textbox.height = 100
+textbox.text_box.layout_flow = aw.drawing.LayoutFlow.BOTTOM_TO_TOP
+textbox.append_child(aw.Paragraph(doc))
+builder.insert_node(textbox)
+builder.move_to(textbox.first_paragraph)
+builder.write('This text is flipped 90 degrees to the left.')
 ```
 
  Dans ce code, nous créons un nouveau`Document` et un`DocumentBuilder` . Le`insert_text_box` La méthode permet d'ajouter une zone de texte au document. Vous pouvez personnaliser le contenu, la position et la taille de la zone de texte en fonction de vos besoins.

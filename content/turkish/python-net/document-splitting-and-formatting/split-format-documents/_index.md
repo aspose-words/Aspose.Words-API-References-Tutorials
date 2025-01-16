@@ -19,10 +19,10 @@ Eğitime başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin
 İlk adım, bölmek ve biçimlendirmek istediğiniz belgeyi yüklemektir. Bunu başarmak için aşağıdaki kod parçacığını kullanın:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## Adım 2: Belgeyi Bölümlere Böl
@@ -41,10 +41,10 @@ sections = document.sections
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## Adım 4: Belgeyi Kaydedin
@@ -55,6 +55,12 @@ Belgeyi bölüp biçimlendirdikten sonra, değişiklikleri kaydetme zamanı geld
 document.save("path/to/save/updated_document.docx")
 ```
 
+## Çözüm
+
+Python için Aspose.Words, belgeleri ihtiyaçlarınıza göre verimli bir şekilde bölmek ve biçimlendirmek için kapsamlı bir araç seti sunar. Bu eğitimde özetlenen adımları izleyerek ve sağlanan kaynak kodu örneklerini kullanarak, belgelerinizi sorunsuz bir şekilde yönetebilir ve profesyonelce sunabilirsiniz.
+
+Bu eğitimde, belge bölme, biçimlendirme temellerini ele aldık ve yaygın sorulara çözümler sunduk. Şimdi, belge yönetimi iş akışınızı daha da geliştirmek için Aspose.Words for Python'ın yeteneklerini keşfetme ve deneme sırası sizde.
+
 ## SSS
 
 ### Bir belgeyi birden fazla dosyaya nasıl bölebilirim?
@@ -62,7 +68,7 @@ Bölümler arasında gezinerek ve her bölümü ayrı bir belge olarak kaydedere
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ Evet, bir bölümdeki paragraflara farklı biçimlendirmeler uygulayabilirsiniz.
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### Belirli bir bölümün yazı tipini nasıl değiştirebilirim?
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### Belgeden belirli bir bölümü kaldırmak mümkün müdür?
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## Çözüm
-Python için Aspose.Words, belgeleri ihtiyaçlarınıza göre verimli bir şekilde bölmek ve biçimlendirmek için kapsamlı bir araç seti sunar. Bu eğitimde özetlenen adımları izleyerek ve sağlanan kaynak kodu örneklerini kullanarak, belgelerinizi sorunsuz bir şekilde yönetebilir ve profesyonelce sunabilirsiniz.
-
-Bu eğitimde, belge bölme, biçimlendirme temellerini ele aldık ve yaygın sorulara çözümler sunduk. Şimdi, belge yönetimi iş akışınızı daha da geliştirmek için Aspose.Words for Python'ın yeteneklerini keşfetme ve deneme sırası sizde.

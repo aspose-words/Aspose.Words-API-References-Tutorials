@@ -93,7 +93,7 @@ Aí está! Você carregou com sucesso um intervalo específico de páginas de um
 ### Posso carregar vários intervalos de páginas de uma só vez?
 O Aspose.Words permite que você especifique um único intervalo de páginas por vez. Para carregar vários intervalos, você precisaria carregá-los separadamente e então combiná-los.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?
+### Aspose.Words para .NET é compatível com o .NET Core?
 Sim, o Aspose.Words para .NET é totalmente compatível com o .NET Core, o que o torna versátil para vários tipos de projetos.
 
 ### Como posso lidar com arquivos PDF grandes de forma eficiente?

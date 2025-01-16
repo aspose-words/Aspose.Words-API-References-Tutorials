@@ -87,11 +87,11 @@ Správa písem ve vašich dokumentech se může zdát jako skličující úkol, 
 
 ## FAQ
 
-### Mohu pro složky písem použít síťové cesty?
+### Mohu použít síťové cesty pro složky písem?
 Ano, pro složky písem můžete použít síťové cesty. Jen se ujistěte, že cesty jsou přístupné z vaší aplikace.
 
 ### Co se stane, když v zadaných složkách chybí písmo?
-Pokud písmo chybí, Aspose.Words se vrátí k výchozímu zadanému písmu nebo použije náhradní písmo.
+Pokud písmo chybí, Aspose.Words přejde zpět na zadané výchozí písmo nebo použije náhradní písmo.
 
 ### Mohu přidat složky písem bez přepsání systémových písem?
  Absolutně! Použití`FontSettings.GetFontSources` k načtení existujících zdrojů a jejich zkombinování s vašimi vlastními složkami pomocí`FontSettings.SetFontSources`.

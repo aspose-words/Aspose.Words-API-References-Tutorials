@@ -57,7 +57,7 @@ builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 
 ## 步骤 3：定义符合法规要求的保存选项
 
-在保存文档之前，我们需要定义保存选项以确保文档符合特定标准。我们将使用`OoxmlSaveOptions`为此课程。
+在保存文档之前，我们需要定义保存选项，以确保文档符合特定标准。我们将使用`OoxmlSaveOptions`为此课程。
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)

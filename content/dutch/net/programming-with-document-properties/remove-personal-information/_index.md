@@ -66,7 +66,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ## Conclusie
 
-En daar heb je het! In slechts een paar eenvoudige stappen hebben we persoonlijke informatie uit een document verwijderd met Aspose.Words voor .NET. Dit is slechts het topje van de ijsberg als het gaat om wat je met deze krachtige bibliotheek kunt doen. Of je nu rapporten automatiseert, grote hoeveelheden documenten beheert of je workflow gewoon wat soepeler maakt, Aspose.Words heeft het allemaal.
+En daar heb je het! In slechts een paar eenvoudige stappen hebben we persoonlijke informatie uit een document verwijderd met Aspose.Words voor .NET. Dit is slechts het topje van de ijsberg als het gaat om wat je met deze krachtige bibliotheek kunt doen. Of je nu rapporten automatiseert, grote volumes documenten beheert of je workflow gewoon wat soepeler maakt, Aspose.Words heeft het allemaal.
 
 ## Veelgestelde vragen
 

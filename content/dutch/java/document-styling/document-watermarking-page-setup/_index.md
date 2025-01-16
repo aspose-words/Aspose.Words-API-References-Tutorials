@@ -43,7 +43,7 @@ doc.save("document_with_watermark.docx");
 
 ### Watermerken aanpassen
 
-U kunt watermerken verder aanpassen door het lettertype, de grootte, de kleur en de rotatie aan te passen. Deze flexibiliteit zorgt ervoor dat uw watermerk naadloos aansluit bij de stijl van uw document.
+kunt watermerken verder aanpassen door het lettertype, de grootte, de kleur en de rotatie aan te passen. Deze flexibiliteit zorgt ervoor dat uw watermerk naadloos aansluit bij de stijl van uw document.
 
 ## Pagina-instelling
 

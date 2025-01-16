@@ -56,7 +56,7 @@ Aspose.Words를 활용하려면 프로젝트에 추가해야 합니다. NuGet �
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서가 위치한 실제 경로를 사용합니다.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서가 위치한 실제 경로를 사용합니다.
 
 ### 문서 로딩
 
@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 
 ## 결론
 
-이제 아시죠! Aspose.Words for .NET을 사용하여 Word 문서에서 OpenType 기능을 성공적으로 활성화했습니다. 이러한 단계를 따르면 고급 타이포그래픽 기능을 잠금 해제하여 문서가 전문적이고 세련되게 보이도록 할 수 있습니다.
+이제 Aspose.Words for .NET을 사용하여 Word 문서에서 OpenType 기능을 성공적으로 활성화했습니다. 이러한 단계를 따르면 고급 인쇄 기능을 잠금 해제하여 문서가 전문적이고 세련되게 보이도록 할 수 있습니다.
 
 하지만 여기서 멈추지 마세요! Aspose.Words의 더 많은 기능을 살펴보고 문서를 더욱 향상시킬 수 있는 방법을 알아보세요. 기억하세요, 연습하면 완벽해지므로 계속 실험하고 배우세요.
 

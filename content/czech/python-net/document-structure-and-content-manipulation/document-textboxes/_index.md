@@ -2,7 +2,7 @@
 title: Vylepšení vizuálního obsahu pomocí textových polí v dokumentech aplikace Word
 linktitle: Vylepšení vizuálního obsahu pomocí textových polí v dokumentech aplikace Word
 second_title: Aspose.Words Python Document Management API
-description: Vylepšete vizuály dokumentů pomocí Aspose.Words Python! Naučte se krok za krokem vytvářet a přizpůsobovat textová pole v dokumentech aplikace Word. Vylepšete rozvržení obsahu, formátování a styl pro poutavé dokumenty.
+description: Vylepšete vizuály dokumentů pomocí Aspose.Words Python! Naučte se krok za krokem vytvářet a přizpůsobovat textová pole v dokumentech aplikace Word. Vylepšete rozvržení obsahu, formátování a styly pro poutavé dokumenty.
 type: docs
 weight: 25
 url: /cs/python-net/document-structure-and-content-manipulation/document-textboxes/
@@ -38,9 +38,15 @@ Začněme vytvořením nového dokumentu aplikace Word a přidáním textového 
 import aspose.words as aw
 
 doc = aw.Document()
-builder = aw.DocumentBuilder(doc)
-
-textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
+builder = aw.DocumentBuilder(doc=doc)
+textbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_BOX)
+textbox.width = 100
+textbox.height = 100
+textbox.text_box.layout_flow = aw.drawing.LayoutFlow.BOTTOM_TO_TOP
+textbox.append_child(aw.Paragraph(doc))
+builder.insert_node(textbox)
+builder.move_to(textbox.first_paragraph)
+builder.write('This text is flipped 90 degrees to the left.')
 ```
 
  V tomto kódu vytvoříme nový`Document` a a`DocumentBuilder` . The`insert_text_box` metoda se používá k přidání textového pole do dokumentu. Obsah, umístění a velikost textového pole si můžete přizpůsobit podle svých požadavků.

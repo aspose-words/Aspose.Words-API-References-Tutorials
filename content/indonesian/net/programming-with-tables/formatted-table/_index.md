@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Itu`DocumentBuilder` adalah kelas pembantu yang menyederhanakan proses pembuatan dokumen.
+ Itu`DocumentBuilder` adalah kelas pembantu yang menyederhanakan proses pembuatan dokumen.
 
 ## Langkah 3: Mulai Tabel
 

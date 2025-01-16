@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## Krok 1: Inicializujte DocumentBuilder
 
-The`DocumentBuilder` class je výkonný nástroj v Aspose.Words, který vám umožňuje snadno přidávat obsah do vašeho dokumentu.
+ The`DocumentBuilder` class je výkonný nástroj v Aspose.Words, který vám umožňuje snadno přidávat obsah do vašeho dokumentu.
 
 ```csharp
 // Inicializujte DocumentBuilder.
@@ -41,7 +41,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Nastavte vlastnost přeškrtnutí
 
-Nyní aplikujme vlastnost přeškrtnutí na náš text. To zahrnuje nastavení`StrikeThrough` vlastnictví`Font` namítat proti`true`.
+Nyní aplikujme vlastnost přeškrtnutí na náš text. To zahrnuje nastavení`StrikeThrough` vlastnictvím`Font` namítat proti`true`.
 
 ```csharp
 // Proveďte přeškrtnutí textu.
@@ -67,7 +67,7 @@ A tady to máte! Úspěšně jste do textu přidali přeškrtnuté formátován�
 Aspose.Words for .NET je výkonná knihovna pro zpracování dokumentů, která umožňuje vývojářům vytvářet, manipulovat a převádět dokumenty aplikace Word programově.
 
 ### Mohu použít Aspose.Words pro .NET v komerčním projektu?
- Ano, Aspose.Words pro .NET můžete používat v komerčních projektech. Možnosti nákupu naleznete na[koupit stránku](https://purchase.aspose.com/buy).
+ Ano, Aspose.Words pro .NET můžete používat v komerčních projektech. Pro možnosti nákupu navštivte[koupit stránku](https://purchase.aspose.com/buy).
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
  Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).

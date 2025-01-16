@@ -182,25 +182,11 @@ doc.save("AlignmentAndSpacingDocument.docx");
 箇条書きや番号付けによるリストの作成は、ドキュメントの書式設定でよく行われる作業です。Aspose.Words for Java を使用すると、簡単に作成できます。箇条書きリストの作成方法は次のとおりです。
 
 ```java
-//新しいドキュメントを作成する
-Document doc = new Document();
-
-//リストを作成する
-List list = new List(doc);
-
-//箇条書きでリスト項目を追加する
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-//ドキュメントにリストを追加する
-doc.getFirstSection().getBody().appendChild(list);
-
-//文書を保存する
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 このコードでは、3 つの項目を含む箇条書きリストを作成します。
@@ -210,24 +196,21 @@ doc.save("BulletedListDocument.docx");
 ハイパーリンクは、ドキュメントにインタラクティブ性を加えるために不可欠です。Aspose.Words for Java を使用すると、ハイパーリンクを簡単に挿入できます。次に例を示します。
 
 ```java
-//新しいドキュメントを作成する
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-//段落を作成する
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-//ハイパーリンクを作成する
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+//ハイパーリンクを挿入し、カスタム書式で強調します。
+//ハイパーリンクはクリック可能なテキストであり、URL で指定された場所に移動します。
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", 偽);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-//文書に段落を追加する
-doc.getFirstSection().getBody().appendChild(para);
-
-//文書を保存する
-doc.save("HyperlinkDocument.docx");
+// Microsoft Word のテキスト内のリンクを Ctrl キーを押しながら左クリックすると、新しい Web ブラウザー ウィンドウを介して URL に移動します。
+doc.save("InsertHyperlink.docx");
 ```
 
 このコードは、「Visit Example.com」というテキストを含む「https://www.example.com」へのハイパーリンクを挿入します。
@@ -237,23 +220,7 @@ doc.save("HyperlinkDocument.docx");
 ドキュメントには、画像や図形などの視覚的な要素が必要になることがよくあります。Aspose.Words for Java を使用すると、画像や図形をシームレスに挿入できます。画像を追加する方法は次のとおりです。
 
 ```java
-//新しいドキュメントを作成する
-Document doc = new Document();
-
-//段落を作成する
-Paragraph para = new Paragraph(doc);
-
-//ファイルから画像を読み込む
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-//文書に段落を追加する
-doc.getFirstSection().getBody().appendChild(para);
-
-//文書を保存する
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 このコードでは、ファイルから画像を読み込み、ドキュメントに挿入します。
@@ -287,27 +254,20 @@ doc.save("PageLayoutDocument.docx");
 ヘッダーとフッターは、ドキュメントの各ページに一貫した情報を追加するために不可欠です。ヘッダーとフッターの操作方法は次のとおりです。
 
 ```java
-//新しいドキュメントを作成する
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-//最初のセクションのヘッダーとフッターにアクセスする
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-//ヘッダーにコンテンツを追加する
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-//フッターにコンテンツを追加する
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-//文書本文にコンテンツを追加する
+//ドキュメント本文にコンテンツを追加します。
 //...
 
-//文書を保存する
+//ドキュメントを保存します。
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ doc.save("HeaderFooterDocument.docx");
 テーブルは、ドキュメント内のデータを整理して表示するための強力な方法です。Aspose.Words for Java は、テーブルを操作するための広範なサポートを提供します。テーブルを作成する例を次に示します。
 
 ```java
-//新しいドキュメントを作成する
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// 3行3列の表を作成する
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-//表のセルにコンテンツを追加する
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//ドキュメントに表を追加する
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-//文書を保存する
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+//書式を変更すると現在のセルに適用されます。
+//その後ビルダーで作成した新しいセルも含まれます。
+//これは、以前に追加したセルには影響しません。
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+//縦書きテキストに合わせて行の高さを増やします。
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 このコードでは、3 行 3 列の単純なテーブルを作成します。
@@ -354,7 +333,7 @@ Document doc = new Document();
 //...
 
 //文書をPDFとして保存する
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 このコード スニペットはドキュメントを PDF ファイルとして保存します。
@@ -393,7 +372,7 @@ builder.insertBreak(BreakType.PAGE_BREAK);
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### テキストを次のようにフォーマットするには

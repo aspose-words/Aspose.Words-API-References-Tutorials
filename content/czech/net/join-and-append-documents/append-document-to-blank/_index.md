@@ -122,7 +122,7 @@ Ano, můžete připojit více dokumentů opakovaným voláním`AppendDocument` m
 
 ### Co se stane, když má zdrojový dokument jiné formátování?
 
-The`ImportFormatMode.KeepSourceFormatting` zajišťuje, že formátování zdrojového dokumentu je po připojení zachováno.
+ The`ImportFormatMode.KeepSourceFormatting` zajišťuje, že formátování zdrojového dokumentu je po připojení zachováno.
 
 ### Potřebuji licenci k používání Aspose.Words?
 

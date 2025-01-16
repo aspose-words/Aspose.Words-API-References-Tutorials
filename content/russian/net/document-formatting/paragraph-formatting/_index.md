@@ -49,7 +49,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Шаг 2: Установка формата абзаца
 
-Теперь перейдем к форматированию. Вот тут-то и начинается настоящее волшебство.
+Теперь перейдем к форматированию. Вот тут-то и начинается настоящая магия.
 
 ```csharp
 ParagraphFormat paragraphFormat = builder.ParagraphFormat;

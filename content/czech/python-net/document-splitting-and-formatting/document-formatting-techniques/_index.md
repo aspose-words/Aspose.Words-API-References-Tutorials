@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Použití stylů a velikostí písma
-
-Vylepšete čitelnost a vizuální přitažlivost svého dokumentu použitím stylů a velikostí písem. Ke změně stylu písma a velikosti odstavce použijte následující kód:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Formátování odstavců a nadpisů
+## Formátování odstavců
 
 Pro efektivní strukturování dokumentu je zásadní formátování odstavců a nadpisů. Dosáhněte toho pomocí níže uvedeného kódu:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Práce se seznamy a odrážkami
 
 Seznamy a odrážky organizují obsah a poskytují přehlednost. Implementujte je pomocí Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Správa rozvržení stránky a okrajů
+## Správa rozvržení stránky
 
 Ovládejte rozvržení stránky a okraje pro optimální prezentaci:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Použití stylů a motivů

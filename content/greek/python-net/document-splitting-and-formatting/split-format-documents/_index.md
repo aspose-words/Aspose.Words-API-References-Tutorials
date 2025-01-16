@@ -19,10 +19,10 @@ url: /el/python-net/document-splitting-and-formatting/split-format-documents/
 Το πρώτο βήμα είναι να φορτώσετε το έγγραφο που θέλετε να χωρίσετε και να μορφοποιήσετε. Χρησιμοποιήστε το ακόλουθο απόσπασμα κώδικα για να το πετύχετε:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## Βήμα 2: Διαχωρίστε το έγγραφο σε ενότητες
@@ -41,10 +41,10 @@ sections = document.sections
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## Βήμα 4: Αποθηκεύστε το έγγραφο
@@ -55,6 +55,12 @@ section.page_setup.bottom_margin = asposewords.pt_to_px(1)
 document.save("path/to/save/updated_document.docx")
 ```
 
+## Σύναψη
+
+Το Aspose.Words for Python παρέχει ένα ολοκληρωμένο σύνολο εργαλείων για τον αποτελεσματικό διαχωρισμό και διαμόρφωση εγγράφων σύμφωνα με τις ανάγκες σας. Ακολουθώντας τα βήματα που περιγράφονται σε αυτό το σεμινάριο και χρησιμοποιώντας τα παρεχόμενα παραδείγματα πηγαίου κώδικα, μπορείτε να διαχειριστείτε απρόσκοπτα τα έγγραφά σας και να τα παρουσιάσετε επαγγελματικά.
+
+Σε αυτό το σεμινάριο, καλύψαμε τις βασικές αρχές του διαχωρισμού, της μορφοποίησης εγγράφων και παρέχουμε λύσεις σε συνήθεις ερωτήσεις. Τώρα είναι η σειρά σας να εξερευνήσετε και να πειραματιστείτε με τις δυνατότητες του Aspose.Words για Python για να βελτιώσετε περαιτέρω τη ροή εργασιών διαχείρισης εγγράφων σας.
+
 ## Συχνές ερωτήσεις
 
 ### Πώς μπορώ να χωρίσω ένα έγγραφο σε πολλά αρχεία;
@@ -62,7 +68,7 @@ document.save("path/to/save/updated_document.docx")
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ for i, section in enumerate(sections):
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### Πώς μπορώ να αλλάξω το στυλ γραμματοσειράς για μια συγκεκριμένη ενότητα;
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### Είναι δυνατή η κατάργηση μιας συγκεκριμένης ενότητας από το έγγραφο;
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## Σύναψη
-Το Aspose.Words for Python παρέχει ένα ολοκληρωμένο σύνολο εργαλείων για τον αποτελεσματικό διαχωρισμό και διαμόρφωση εγγράφων σύμφωνα με τις ανάγκες σας. Ακολουθώντας τα βήματα που περιγράφονται σε αυτό το σεμινάριο και χρησιμοποιώντας τα παρεχόμενα παραδείγματα πηγαίου κώδικα, μπορείτε να διαχειριστείτε απρόσκοπτα τα έγγραφά σας και να τα παρουσιάσετε επαγγελματικά.
-
-Σε αυτό το σεμινάριο, καλύψαμε τις βασικές αρχές του διαχωρισμού, της μορφοποίησης εγγράφων και παρέχουμε λύσεις σε συνήθεις ερωτήσεις. Τώρα είναι η σειρά σας να εξερευνήσετε και να πειραματιστείτε με τις δυνατότητες του Aspose.Words για Python για να βελτιώσετε περαιτέρω τη ροή εργασιών διαχείρισης εγγράφων σας.

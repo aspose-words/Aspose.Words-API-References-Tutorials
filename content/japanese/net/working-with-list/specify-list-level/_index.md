@@ -74,7 +74,7 @@ for (int i = 0; i < 9; i++)
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## ステップ 5: 箇条書きリストに複数のレベルを適用する
+## ステップ5: 箇条書きリストに複数のレベルを適用する
 
 番号付きリストと同様に、箇条書きリストにも複数のレベルを適用します。
 

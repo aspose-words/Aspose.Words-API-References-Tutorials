@@ -7,168 +7,142 @@ type: docs
 weight: 13
 url: /id/java/table-processing/formatting-tables/
 ---
-
-Apakah Anda siap untuk memulai perjalanan untuk menguasai seni memformat tabel dalam dokumen menggunakan Aspose.Words untuk Java? Dalam panduan komprehensif ini, kita akan menyelami lebih dalam dunia pemformatan dokumen, khususnya berfokus pada tabel. Aspose.Words untuk Java adalah alat hebat yang akan memungkinkan Anda membuat, memanipulasi, dan menyempurnakan tabel dalam dokumen Anda dengan mudah.
-
 ## Perkenalan
 
-Aspose.Words untuk Java adalah pustaka Java yang memungkinkan Anda bekerja dengan berbagai aspek pemrosesan dokumen. Baik Anda menangani laporan, kontrak, atau dokumen apa pun yang melibatkan tabel, pustaka ini dapat menjadi teman tepercaya Anda. Dengan fitur dan kemampuannya yang luas, Anda dapat mencapai pemformatan dokumen yang tepat dan profesional.
+Apakah Anda siap untuk mulai membuat tabel dalam dokumen Word dengan mudah menggunakan Aspose.Words untuk Java? Tabel sangat penting untuk mengatur data, dan dengan pustaka yang canggih ini, Anda dapat membuat, mengisi, dan bahkan menumpuk tabel secara terprogram dalam dokumen Word Anda. Dalam panduan langkah demi langkah ini, kita akan mempelajari cara membuat tabel, menggabungkan sel, dan menambahkan tabel bertumpuk.
 
-## Memulai dengan Aspose.Words untuk Java
+## Prasyarat
 
-Sebelum kita menyelami seluk-beluk pemformatan tabel, mari kita siapkan lingkungan pengembangan kita dan berkenalan dengan Aspose.Words untuk Java.
+Sebelum Anda memulai pengkodean, pastikan Anda memiliki hal berikut:
 
-### Instalasi
+- Java Development Kit (JDK) terinstal di sistem Anda.
+-  Aspose.Words untuk pustaka Java.[Unduh di sini](https://releases.aspose.com/words/java/).
+- Pemahaman dasar tentang pemrograman Java.
+- IDE seperti IntelliJ IDEA, Eclipse, atau lainnya yang Anda sukai.
+-  A[lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk membuka kemampuan penuh Aspose.Words.
 
- Untuk memulai, Anda perlu mengunduh dan menginstal Aspose.Words untuk Java. Anda dapat menemukan tautan unduhannya[Di Sini](https://releases.aspose.com/words/java/)Setelah terinstal, Anda dapat mulai menggunakan pustaka ini untuk bekerja dengan dokumen secara terprogram.
+## Paket Impor
 
-### Menambahkan Aspose.Words untuk Java ke Proyek Anda
-
-Setelah mengunduh Aspose.Words untuk Java, tambahkan pustaka tersebut ke proyek Java Anda. Anda dapat melakukannya dengan menyertakan file JAR di classpath proyek Anda.
-
-### Menginisialisasi Aspose.Words untuk Java
-
-Untuk mulai menggunakan Aspose.Words untuk Java, Anda perlu menginisialisasinya dalam kode Anda. Berikut ini contoh sederhana tentang cara melakukannya:
+Untuk menggunakan Aspose.Words untuk Java, Anda perlu mengimpor kelas dan paket yang diperlukan. Tambahkan impor ini ke bagian atas berkas Java Anda:
 
 ```java
-import com.aspose.words.Document;
-
-public class TableFormattingExample {
-    public static void main(String[] args) {
-        // Inisialisasi Aspose.Words untuk Java
-        Document doc = new Document();
-        
-        // Kode Anda ada di sini
-    }
-}
+import com.aspose.words.*;
 ```
 
-## Membuat dan Mengisi Tabel
+Mari kita bagi proses ini menjadi beberapa langkah kecil agar sangat mudah diikuti.
 
-Sekarang setelah kita menyiapkan lingkungan kita, mari kita mulai membuat dan mengisi tabel dalam dokumen.
+## Langkah 1: Buat Dokumen dan Tabel
 
-### Membuat Tabel
+Apa hal pertama yang Anda butuhkan? Sebuah dokumen untuk dikerjakan!
 
- Untuk membuat tabel di dokumen Anda, Anda dapat menggunakan`Table` kelas dari Aspose.Words untuk Java. Berikut cara membuat tabel dasar:
+Mulailah dengan membuat dokumen Word baru dan tabel. Tambahkan tabel ke isi dokumen.
 
 ```java
+Document doc = new Document();
 Table table = new Table(doc);
+doc.getFirstSection().getBody().appendChild(table);
 ```
 
-### Menambahkan Baris dan Kolom
+- `Document`: Mewakili dokumen Word.
+- `Table`: Membuat tabel kosong.
+- `appendChild`: Menambahkan tabel ke badan dokumen.
 
-Agar tabel Anda berguna, Anda perlu menambahkan baris dan kolom. Berikut cara melakukannya:
+## Langkah 2: Tambahkan Baris dan Sel ke Tabel
+
+Tabel tanpa baris dan sel? Itu seperti mobil tanpa roda! Mari kita perbaiki.
 
 ```java
-// Tambahkan baris ke tabel
-Row row = table.getRows().add();
+Row firstRow = new Row(doc);
+table.appendChild(firstRow);
 
-// Tambahkan sel ke baris
-Cell cell1 = row.getCells().add();
-cell1.getCellFormat().setPreferredWidth(100.0);
-
-Cell cell2 = row.getCells().add();
-cell2.getCellFormat().setPreferredWidth(200.0);
-
-// Kode Anda untuk mengisi tabel ada di sini
+Cell firstCell = new Cell(doc);
+firstRow.appendChild(firstCell);
 ```
 
-## Memformat Tabel
+- `Row`Mewakili baris dalam tabel.
+- `Cell`: Mewakili sel dalam baris.
+- `appendChild`: Menambahkan baris dan sel ke tabel.
 
-Pemformatan adalah tempat keajaiban terjadi. Aspose.Words untuk Java menyediakan banyak pilihan untuk memformat tabel Anda. Mari kita bahas beberapa tugas pemformatan umum:
+## Langkah 3: Menambahkan Teks ke Sel
 
-### Menyesuaikan Lebar Kolom
-
-Anda dapat mengontrol lebar kolom untuk memastikan tabel Anda terlihat menarik secara visual. Berikut cara menyesuaikan lebar kolom:
+Saatnya menambahkan sedikit kepribadian ke meja kita!
 
 ```java
-// Tetapkan lebar yang diinginkan untuk kolom
-cell1.getCellFormat().setPreferredWidth(100.0);
+Paragraph paragraph = new Paragraph(doc);
+firstCell.appendChild(paragraph);
+
+Run run = new Run(doc, "Hello world!");
+paragraph.appendChild(run);
 ```
 
-### Menerapkan Batasan
+- `Paragraph`: Menambahkan paragraf ke sel.
+- `Run`: Menambahkan teks ke paragraf.
 
-Menambahkan batas pada tabel dapat meningkatkan keterbacaannya. Anda juga dapat menyesuaikan gaya batas:
+## Langkah 4: Gabungkan Sel dalam Tabel
+
+Ingin menggabungkan sel untuk membuat header atau span? Mudah sekali!
 
 ```java
-// Terapkan batas ke sel
-cell1.getCellFormat().getBorders().setLineStyle(LineStyle.SINGLE);
-cell1.getCellFormat().getBorders().setColor(Color.BLACK);
+DocumentBuilder builder = new DocumentBuilder(doc);
+
+builder.insertCell();
+builder.getCellFormat().setHorizontalMerge(CellMerge.FIRST);
+builder.write("Text in merged cells.");
+
+builder.insertCell();
+builder.getCellFormat().setHorizontalMerge(CellMerge.PREVIOUS);
+builder.endRow();
 ```
 
-### Menggabungkan Sel
+- `DocumentBuilder`: Menyederhanakan konstruksi dokumen.
+- `setHorizontalMerge`: Menggabungkan sel secara horizontal.
+- `write`: Menambahkan konten ke sel yang digabungkan.
 
-Penggabungan sel berguna saat Anda ingin membuat sel header atau menggabungkan sel untuk tujuan tertentu:
+## Langkah 5: Tambahkan Tabel Bersarang
+
+Siap untuk naik level? Mari tambahkan tabel di dalam tabel.
 
 ```java
-// Gabungkan sel secara horizontal
-table.mergeCells(cell1, cell2);
+builder.moveTo(table.getRows().get(0).getCells().get(0).getFirstParagraph());
+
+builder.startTable();
+builder.insertCell();
+builder.write("Hello world!");
+builder.endTable();
 ```
 
-## Manipulasi Tabel Lanjutan
+- `moveTo`: Memindahkan kursor ke lokasi tertentu dalam dokumen.
+- `startTable`: Mulai membuat tabel bersarang.
+- `endTable`: Mengakhiri tabel bersarang.
 
-Aspose.Words untuk Java menyediakan fitur-fitur canggih untuk menangani skenario tabel yang rumit. Mari kita bahas beberapa di antaranya:
+## Kesimpulan
 
-### Menambahkan Tabel Bersarang
+Selamat! Anda telah mempelajari cara membuat, mengisi, dan menata tabel menggunakan Aspose.Words untuk Java. Mulai dari menambahkan teks hingga menggabungkan sel dan menyusun tabel, kini Anda memiliki alat untuk menyusun data secara efektif dalam dokumen Word.
 
-Terkadang, Anda mungkin perlu menambahkan tabel bersarang di dalam sel. Hal ini dapat dilakukan dengan cara berikut:
-
-```java
-// Buat tabel bersarang
-Table nestedTable = new Table(doc);
-Row nestedRow = nestedTable.getRows().add();
-Cell nestedCell = nestedRow.getCells().add();
-
-// Tambahkan konten ke tabel bersarang
-nestedCell.getFirstParagraph().appendChild(new Run(doc, "Nested Table Content"));
-
-// Tambahkan tabel bersarang ke tabel utama
-cell1.appendChild(nestedTable);
-```
-
-### Menambahkan Gaya Tabel yang Bergaya
-
-Aspose.Words untuk Java mendukung berbagai gaya tabel yang dapat memberikan dokumen Anda tampilan profesional:
-
-```java
-// Terapkan gaya tabel yang telah ditentukan sebelumnya
-table.setStyleIdentifier(StyleIdentifier.LIGHT_SHADING_ACCENT_1);
-```
-
-## Pertanyaan yang Sering Diajukan (FAQ)
-
-### Bagaimana cara mengubah warna latar belakang sel tabel?
-
- Anda dapat mengubah warna latar belakang sel tabel menggunakan`Shading` properti. Berikut contohnya:
-
-```java
-cell1.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
-```
+## Pertanyaan yang Sering Diajukan
 
 ### Apakah mungkin untuk menambahkan hyperlink ke sel tabel?
 
 Ya, Anda dapat menambahkan hyperlink ke sel tabel di Aspose.Words untuk Java. Berikut cara melakukannya:
 
 ```java
-Run run = new Run(doc, "Click Here");
-run.getFont().setUnderline(Underline.SINGLE);
-run.getFont().setColor(Color.BLUE);
-run.getHyperlink().setAddress("https://www.contoh.com");
-cell1.getFirstParagraph().appendChild(run);
+builder.moveTo(table.getRows().get(0).getCells().get(0).getFirstParagraph());
+
+// Sisipkan hyperlink dan tekankan dengan format khusus.
+// Hyperlink akan berupa teks yang dapat diklik yang akan membawa kita ke lokasi yang ditentukan di URL.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", salah);
 ```
 
-### Bisakah saya menerapkan pemformatan bersyarat ke sel dalam tabel?
+### Dapatkah saya menggunakan Aspose.Words untuk Java secara gratis?  
+ Anda dapat menggunakannya dengan batasan atau mendapatkan[uji coba gratis](https://releases.aspose.com/) untuk mengeksplorasi potensi penuhnya.
 
-Ya, Anda dapat menerapkan pemformatan bersyarat ke sel berdasarkan kondisi tertentu. Anda perlu menggunakan logika pemrograman untuk mencapainya, seperti mengubah warna sel atau teks berdasarkan nilai data.
+### Bagaimana cara menggabungkan sel secara vertikal dalam tabel?  
+ Gunakan`setVerticalMerge` metode dari`CellFormat` kelas, mirip dengan penggabungan horizontal.
 
-### Bagaimana cara mengekspor tabel saya ke format lain, seperti PDF atau DOCX?
+### Bisakah saya menambahkan gambar ke sel tabel?  
+ Ya, Anda bisa menggunakan`DocumentBuilder` untuk menyisipkan gambar ke dalam sel tabel.
 
- Aspose.Words untuk Java menyediakan opsi ekspor ke berbagai format. Anda dapat menyimpan dokumen Anda sebagai file PDF atau DOCX menggunakan`Save` metode. Berikut contohnya:
-
-```java
-doc.save("output.pdf", SaveFormat.PDF);
-```
-
-## Kesimpulan
-
-Dalam panduan lengkap ini, kami telah menjelajahi dunia pemformatan tabel yang menarik dalam dokumen menggunakan Aspose.Words untuk Java. Dengan fitur-fiturnya yang tangguh dan fleksibilitasnya, Anda dapat meningkatkan keterampilan pemformatan dokumen Anda ke tingkat berikutnya. Baik Anda membuat laporan, presentasi, atau dokumen apa pun yang melibatkan tabel, Aspose.Words untuk Java adalah teman tepercaya Anda. Jadi, lanjutkan dan manfaatkan sepenuhnya potensi pemformatan dokumen dengan Aspose.Words untuk Java!
+### Di mana saya dapat menemukan lebih banyak sumber daya tentang Aspose.Words untuk Java?  
+ Periksa[dokumentasi](https://reference.aspose.com/words/java/) atau[forum dukungan](https://forum.aspose.com/c/words/8/) untuk panduan terperinci.

@@ -67,7 +67,7 @@ Extraer texto
 string text = doc.Range.Text;
 ```
 
-El`Range.Text` La propiedad le proporciona todo el texto contenido dentro del rango del documento. Esto incluye el texto de todas las secciones, encabezados, pies de página y cuerpo principal.
+ El`Range.Text` La propiedad le proporciona todo el texto contenido dentro del rango del documento. Esto incluye el texto de todas las secciones, encabezados, pies de página y cuerpo principal.
 
 ## Paso 4: Mostrar el texto extraído
 

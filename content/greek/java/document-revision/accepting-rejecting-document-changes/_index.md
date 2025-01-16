@@ -44,10 +44,7 @@ for (Revision revision : doc.getRevisions()) {
 
 ```java
 // Αποδοχή όλων των αναθεωρήσεων
-doc.acceptAllRevisions();
-
-// Αποδεχτείτε μια συγκεκριμένη αναθεώρηση ανά ευρετήριο
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Απόρριψη Αλλαγών
@@ -56,10 +53,7 @@ doc.acceptRevision(0);
 
 ```java
 // Απόρριψη όλων των αναθεωρήσεων
-doc.rejectAllRevisions();
-
-// Απορρίψτε μια συγκεκριμένη αναθεώρηση κατά ευρετήριο
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Αποθήκευση του Εγγράφου

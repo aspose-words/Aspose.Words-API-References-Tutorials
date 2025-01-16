@@ -61,7 +61,7 @@ Sobald das Dokument geladen ist, können wir mit dem Löschen von Text aus einem
 2.  Löschen des Bereichs: Verwenden Sie die`Range.Delete` Methode, um den gesamten Text in diesem Abschnitt zu löschen.
 
 ```csharp
-//Löschen Sie den Text im ersten Abschnitt des Dokuments
+// Löschen Sie den Text im ersten Abschnitt des Dokuments
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Aspose.Words für .NET ist eine Klassenbibliothek zur Verarbeitung von Word-Doku
 
 ### Kann ich Text aus einem bestimmten Absatz statt aus einem Abschnitt löschen?
 
-Ja, Sie können Text aus einem bestimmten Absatz löschen, indem Sie auf den gewünschten Absatz zugreifen und die`Range.Delete` Verfahren.
+ Ja, Sie können Text aus einem bestimmten Absatz löschen, indem Sie auf den gewünschten Absatz zugreifen und die`Range.Delete` Verfahren.
 
 ### Ist es möglich, Text bedingt zu löschen?
 

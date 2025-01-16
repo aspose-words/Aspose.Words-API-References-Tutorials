@@ -139,7 +139,7 @@ Oczywiście! Możesz obrócić znak wodny tekstu, ustawiając właściwość ką
 
 ### Czy mogę zabezpieczyć znak wodny przed edycją lub usunięciem?
 
-Mimo że znaków wodnych nie można w pełni chronić, można uczynić je bardziej odpornymi na manipulację, dostosowując ich przezroczystość i umiejscowienie.
+Mimo że znaków wodnych nie można w pełni chronić, można uczynić je bardziej odpornymi na manipulacje, dostosowując ich przezroczystość i umiejscowienie.
 
 ### Czy Aspose.Words for Python jest odpowiedni zarówno dla systemów Windows, jak i Linux?
 

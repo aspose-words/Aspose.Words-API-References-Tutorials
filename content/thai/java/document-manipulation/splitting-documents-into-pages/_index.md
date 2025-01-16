@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <สรุป>
-/// รับเอกสารของช่วงหน้า
+//รับเอกสารของช่วงหน้า
 /// </สรุป>
-//<param name="ดัชนีเริ่มต้น">
+/// <param name="ดัชนีเริ่มต้น">
 /// ดัชนีที่ 1 ของหน้าเริ่มต้น
 /// </พารามิเตอร์>
 /// <param name="endIndex">

@@ -83,7 +83,7 @@ Ed ecco fatto! Hai modificato con successo la sorgente della cultura di aggiorna
 ## Domande frequenti
 
 ###  Qual è lo scopo dell'impostazione del`LocaleId`?
-IL`LocaleId` specifica le impostazioni culturali per il testo, che influiscono sul modo in cui vengono formattate le date e altri dati sensibili locali.
+ IL`LocaleId` specifica le impostazioni culturali per il testo, che influiscono sul modo in cui vengono formattate le date e altri dati sensibili locali.
 
 ### Posso usare una lingua diversa dal tedesco?
  Sì, puoi impostare il`LocaleId` qualsiasi identificatore locale valido. Ad esempio, 1033 per inglese (Stati Uniti).

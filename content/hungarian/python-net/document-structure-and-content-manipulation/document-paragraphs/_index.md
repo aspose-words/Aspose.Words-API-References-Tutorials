@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## Alapvető szövegformázás
 
- A Word-dokumentumban lévő szöveg formázása elengedhetetlen a fontos pontok kiemeléséhez és az olvashatóság javításához. Az Aspose.Words különféle formázási lehetőségek alkalmazását teszi lehetővé, mint pl**bold**, *italic*, aláhúzás és betűméret:
+A Word-dokumentumban lévő szöveg formázása elengedhetetlen a fontos pontok kiemeléséhez és az olvashatóság javításához. Az Aspose.Words különféle formázási beállításokat tesz lehetővé, például félkövér, dőlt, aláhúzott és betűméretet:
 
 ```python
 # Apply basic text formatting
@@ -172,8 +172,6 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 ## Következtetés
 
 Ebben az átfogó útmutatóban feltártuk az Aspose.Words for Python képességeit a bekezdések és szövegek formázására a Word dokumentumokon belül. Ennek a nagy teljesítményű könyvtárnak a használatával a fejlesztők zökkenőmentesen automatizálhatják a dokumentumformázást, professzionális és letisztult megjelenést biztosítva tartalmaik számára.
-
----
 
 ## GYIK
 

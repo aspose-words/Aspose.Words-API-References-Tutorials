@@ -16,7 +16,7 @@ url: /ja/java/document-security/managing-document-permissions/
 
 ドキュメントの権限管理に進む前に、まず Aspose.Words for Java の設定から始めましょう。開始するには、次の手順に従ってください。
 
-1.  Aspose.Words for Javaをダウンロード:[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) Aspose.Words for Java の最新バージョンをダウンロードします。
+1.  Aspose.Words for Javaをダウンロード:[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)Aspose.Words for Java の最新バージョンをダウンロードします。
 
 2. Aspose.Words for Java をインストールします。ライブラリをダウンロードした後、インストール手順に従って Java 開発環境でセットアップします。
 
@@ -52,21 +52,12 @@ Aspose.Words for Java が起動して実行できるようになったので、�
 //ドキュメントを読み込む
 Document doc = new Document("sample.docx");
 
-//アクセス制御を定義する
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-//ドキュメント保護を適用する
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-//文書を保存する
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## よくある質問（FAQ）
+## よくある質問
 
-## ドキュメントの保護を解除するにはどうすればいいですか?
+### ドキュメントの保護を解除するにはどうすればいいですか?
 
 ドキュメントの保護を解除するには、保護されたドキュメントを開き、パスワードで保護されている場合は正しいパスワードを入力します。次に、Aspose.Words for Java を使用して、次のように保護を解除します。
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## 特定のユーザーに権限を設定できますか?
+### 特定のユーザーに権限を設定できますか?
 
 はい、Aspose.Words for Java では、特定のユーザーまたはグループに権限を設定できます。ドキュメントにアクセスして編集できるユーザーを定義できます。
 
-## 複数のパスワードで文書を暗号化することは可能ですか?
+### 複数のパスワードで文書を暗号化することは可能ですか?
 
 いいえ、Aspose.Words for Java は単一パスワード暗号化をサポートしています。ドキュメントを保護するためにパスワードを設定できます。
 
-## ドキュメントの権限を確認するにはどうすればよいですか?
+### ドキュメントの権限を確認するにはどうすればよいですか?
 
 Aspose.Words for Java を使用すると、保護設定とアクセス制御オプションを調べて、ドキュメントの権限を確認できます。
 
-## ドキュメントの権限管理を自動化できますか?
+### ドキュメントの権限管理を自動化できますか?
 
 もちろんです! Aspose.Words for Java をアプリケーションに統合してドキュメントの権限管理を自動化し、ドキュメント ワークフローにシームレスに組み込むことができます。
 
-## ドキュメントのパスワードを忘れた場合はどうすればよいですか?
+### ドキュメントのパスワードを忘れた場合はどうすればよいですか?
 
 ドキュメントのパスワードを忘れた場合、回復する方法はありません。パスワードの記録を安全な場所に保管してください。
 

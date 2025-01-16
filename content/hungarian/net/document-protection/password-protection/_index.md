@@ -13,12 +13,12 @@ Szia! Gondolkozott már azon, hogyan védheti meg Word-dokumentumait a nem kív�
 
 ## Előfeltételek
 
-Mielőtt belevetnénk magunkat a Word-dokumentumok jelszóval való védelmének ügyébe, néhány dologra szüksége lesz:
+Mielőtt belemerülnénk a Word-dokumentumok jelszavas védelmének aprólékos dolgaiba, néhány dologra lesz szüksége:
 
 1.  Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Visual Studio vagy bármely más C# fejlesztői környezet.
 3. Alapvető C# ismeretek: A C# programozás alapvető ismerete.
-4. Aspose Licenc: Szerezzen licencet a következőtől[itt](https://purchase.aspose.com/buy) vagy használja a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
+4.  Aspose License: Szerezzen licencet a következőtől[itt](https://purchase.aspose.com/buy) vagy használja a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
 
 ## Névterek importálása
 
@@ -62,9 +62,9 @@ Document doc = new Document();
 
 Itt történik a varázslat. Jelszavas védelmet alkalmazunk dokumentumunkra, hogy megakadályozzuk az illetéktelen hozzáférést.
 
-### Válassza ki a Védelem típusát
+### Válassza a Védelem típusát
 
- Az Aspose.Words különféle típusú védelmet kínál, mint pl`NoProtection`, `ReadOnly`, `AllowOnlyComments` , és`AllowOnlyFormFields` . Ehhez a példához használjuk`NoProtection` de jelszóval, ami lényegében azt jelenti, hogy a dokumentum szerkeszthető, de jelszó szükséges a védelem eltávolításához.
+ Az Aspose.Words különféle típusú védelmet kínál, mint pl`NoProtection`, `ReadOnly`, `AllowOnlyComments` , és`AllowOnlyFormFields` Ebben a példában használjuk`NoProtection` de jelszóval, ami lényegében azt jelenti, hogy a dokumentum szerkeszthető, de jelszó szükséges a védelem eltávolításához.
 
 ### Védelem alkalmazása
 
@@ -88,13 +88,13 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ## Következtetés
 
-És megvan! Sikeresen hozzáadta a jelszavas védelmet Word-dokumentumához az Aspose.Words for .NET segítségével. Olyan ez, mintha digitális zárral védené a legfontosabb dokumentumait, így biztonságban vannak a kíváncsi szemek elől. Akár érzékeny információkat véd, akár csak egy további biztonsági réteget szeretne hozzáadni, az Aspose.Words ezt egyszerűvé és hatékonysá teszi. Boldog kódolást!
+És megvan! Sikeresen hozzáadta a jelszavas védelmet Word-dokumentumához az Aspose.Words for .NET használatával. Olyan ez, mintha digitális zárral védené a legfontosabb dokumentumait, így biztonságban vannak a kíváncsi szemek elől. Akár érzékeny információkat véd, akár csak egy további biztonsági réteget szeretne hozzáadni, az Aspose.Words ezt egyszerűvé és hatékonysá teszi. Boldog kódolást!
 
 ## GYIK
 
 ### Használhatok különböző típusú védelmet az Aspose.Words segítségével?
 
- Igen, az Aspose.Words különféle típusú védelmet támogat, beleértve`ReadOnly`, `AllowOnlyComments` , és`AllowOnlyFormFields`.
+Igen, az Aspose.Words különféle típusú védelmet támogat, beleértve`ReadOnly`, `AllowOnlyComments` , és`AllowOnlyFormFields`.
 
 ### Hogyan távolíthatom el a jelszavas védelmet egy dokumentumról?
 
@@ -110,4 +110,4 @@ Igen, az Aspose.Words kompatibilis a .NET Core, a .NET Framework és más .NET p
 
 ### Hol találok további dokumentációt az Aspose.Wordsről?
 
-További dokumentációt találhat a[Aspose.Words dokumentációs oldal](https://reference.aspose.com/words/net/).
+ További dokumentációt találhat a[Aspose.Words dokumentációs oldal](https://reference.aspose.com/words/net/).

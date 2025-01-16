@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 Nesta aula:
-- O`Warning` método captura avisos relacionados à substituição de fontes.
-- O`FontWarnings` a coleção armazena esses avisos para inspeção ou registro posterior.
+-  O`Warning` método captura avisos relacionados à substituição de fontes.
+-  O`FontWarnings` a coleção armazena esses avisos para inspeção ou registro posterior.
 
 ## Conclusão
 

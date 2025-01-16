@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Paso 3: Utilizar DocumentBuilder
 
-El`DocumentBuilder` La clase de Aspose.Words es una herramienta poderosa que ayuda a crear documentos. La usaremos para insertar un gráfico en nuestro documento.
+ El`DocumentBuilder` La clase de Aspose.Words es una herramienta poderosa que ayuda a crear documentos. La usaremos para insertar un gráfico en nuestro documento.
 
  Inicializar una instancia de la`DocumentBuilder` clase, pasando nuestro objeto de documento a su constructor.
 

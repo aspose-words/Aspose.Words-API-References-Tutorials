@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Itu`Aspose.Words` namespace menyediakan fungsionalitas inti untuk menangani dokumen Word, sementara`Aspose.Words.Tables` termasuk kelas-kelas khusus untuk bekerja dengan tabel.
+ Itu`Aspose.Words` namespace menyediakan fungsionalitas inti untuk menangani dokumen Word, sementara`Aspose.Words.Tables` termasuk kelas-kelas khusus untuk bekerja dengan tabel.
 
 ## Langkah 1: Siapkan Direktori Dokumen Anda
 
@@ -88,7 +88,7 @@ Menyesuaikan tabel secara otomatis dengan konten menggunakan Aspose.Words untuk 
 ## Pertanyaan yang Sering Diajukan
 
 ### Bisakah saya secara otomatis menyesuaikan hanya kolom tertentu dalam suatu tabel?
-Itu`AutoFit` metode ini berlaku untuk seluruh tabel. Jika Anda perlu menyesuaikan kolom tertentu, Anda mungkin perlu mengatur lebar kolom secara manual.
+ Itu`AutoFit` metode ini berlaku untuk seluruh tabel. Jika Anda perlu menyesuaikan kolom tertentu, Anda mungkin perlu mengatur lebar kolom secara manual.
 
 ### Bagaimana jika dokumen saya berisi beberapa tabel?
  Anda dapat mengulang semua tabel dalam dokumen menggunakan`doc.GetChildNodes(NodeType.Table, true)` dan terapkan penyesuaian otomatis bila diperlukan.

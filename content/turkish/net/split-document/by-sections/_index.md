@@ -86,7 +86,7 @@ Son olarak, her yeni belgeyi benzersiz bir adla kaydederiz. Bu adım, her bölü
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-The`Save` yöntemi, yeni belgeyi bölüm dizinine dayalı benzersiz bir adla belirtilen dizine kaydeder.
+ The`Save` yöntemi, yeni belgeyi bölüm dizinine dayalı benzersiz bir adla belirtilen dizine kaydeder.
 
 ## Çözüm
 

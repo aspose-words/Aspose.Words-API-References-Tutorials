@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
-The`Styles` собственность`Document` класс дает нам доступ ко всем стилям, доступным в документе. Мы используем`StyleIdentifier.Quote`для выбора стиля цитаты.
+ The`Styles` собственность`Document` класс дает нам доступ ко всем стилям, доступным в документе. Мы используем`StyleIdentifier.Quote`для выбора стиля цитаты.
 
 ## Шаг 4: Примените стиль к тегу структурированного документа
 

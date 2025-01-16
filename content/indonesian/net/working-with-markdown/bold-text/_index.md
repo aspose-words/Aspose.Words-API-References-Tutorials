@@ -33,7 +33,7 @@ Sekarang, mari kita uraikan proses menebalkan teks dalam dokumen Word menggunaka
 
 ## Langkah 1: Inisialisasi DocumentBuilder
 
-Itu`DocumentBuilder` class menyediakan cara cepat dan mudah untuk menambahkan konten ke dokumen Anda. Mari kita inisialisasi.
+ Itu`DocumentBuilder` class menyediakan cara cepat dan mudah untuk menambahkan konten ke dokumen Anda. Mari kita inisialisasi.
 
 ```csharp
 // Gunakan pembuat dokumen untuk menambahkan konten ke dokumen.

@@ -44,10 +44,7 @@ Wijzigingen accepteren is een cruciale stap in het finaliseren van een document.
 
 ```java
 // Accepteer alle revisies
-doc.acceptAllRevisions();
-
-// Een specifieke revisie accepteren door index
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Wijzigingen afwijzen
@@ -56,10 +53,7 @@ In sommige gevallen moet u bepaalde wijzigingen afwijzen. Aspose.Words voor Java
 
 ```java
 // Alle revisies afwijzen
-doc.rejectAllRevisions();
-
-// Een specifieke revisie per index afwijzen
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Het document opslaan

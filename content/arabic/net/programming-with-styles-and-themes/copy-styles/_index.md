@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 ## الأسئلة الشائعة
 
 ###  ما هو الغرض من ذلك؟`CopyStylesFromTemplate` method?  
-ال`CopyStylesFromTemplate` تقوم الطريقة بنسخ الأنماط من مستند إلى آخر، مما يضمن أن المستند المستهدف يرث تنسيق المستند المصدر.
+ ال`CopyStylesFromTemplate` تقوم الطريقة بنسخ الأنماط من مستند إلى آخر، مما يضمن أن المستند المستهدف يرث تنسيق المستند المصدر.
 
 ###  هل يمكنني استخدام`CopyStylesFromTemplate` with documents in different formats?  
  لا، ال`CopyStylesFromTemplate` تعمل الطريقة فقط مع المستندات بنفس التنسيق، عادةً DOCX.
@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 افتح المستند المستهدف وتحقق من إعدادات النمط. يجب أن ترى الأنماط المطبقة من المستند المصدر.
 
 ### ماذا لو كانت الوثيقة المستهدفة تحتوي بالفعل على أنماط؟  
-ال`CopyStylesFromTemplate` ستقوم الطريقة باستبدال الأنماط الموجودة في المستند المستهدف بتلك الموجودة في المستند المصدر.
+ ال`CopyStylesFromTemplate` ستقوم الطريقة باستبدال الأنماط الموجودة في المستند المستهدف بتلك الموجودة في المستند المصدر.
 
 ### هل استخدام Aspose.Words لـ .NET مجاني؟  
  Aspose.Words for .NET هو منتج تجاري، ولكن يمكنك الحصول على نسخة تجريبية مجانية من[نسخة تجريبية مجانية من Aspose.Words لـ .NET](https://releases.aspose.com/).

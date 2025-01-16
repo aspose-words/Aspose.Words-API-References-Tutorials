@@ -7,7 +7,7 @@ type: docs
 weight: 14
 url: /hu/python-net/document-splitting-and-formatting/document-formatting-techniques/
 ---
-A dokumentumok formázása kulcsfontosságú szerepet játszik a tartalom vizuális hatású bemutatásában. A programozás területén az Aspose.Words for Python hatékony eszköz a dokumentumformázási technikák elsajátítására. Akár jelentéseket készít, akár számlákat állít elő, vagy prospektusokat tervez, az Aspose.Words lehetővé teszi a dokumentumok programozott kezelését. Ez a cikk végigvezeti Önt az Aspose.Words for Python használatával különféle dokumentumformázási technikákon, így biztosítva, hogy a tartalom stílusa és megjelenítése tekintetében kitűnjön.
+dokumentumok formázása kulcsfontosságú szerepet játszik a tartalom vizuális hatású bemutatásában. A programozás területén az Aspose.Words for Python hatékony eszköz a dokumentumformázási technikák elsajátítására. Akár jelentéseket készít, akár számlákat állít elő, vagy prospektusokat tervez, az Aspose.Words lehetővé teszi a dokumentumok programozott kezelését. Ez a cikk végigvezeti Önt az Aspose.Words for Python használatával különféle dokumentumformázási technikákon, így biztosítva, hogy a tartalom stílusa és megjelenítése tekintetében kitűnjön.
 
 ## Az Aspose.Words for Python bemutatása
 
@@ -35,32 +35,18 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Betűstílusok és -méretek alkalmazása
-
-Fokozza dokumentuma olvashatóságát és vizuális vonzerejét betűstílusok és -méretek alkalmazásával. A következő kóddal módosíthatja a bekezdés betűstílusát és méretét:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Bekezdések és címsorok formázása
+## Bekezdések formázása
 
 A dokumentum hatékony felépítéséhez elengedhetetlen a bekezdések és címsorok formázása. Ezt az alábbi kóddal érheti el:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Listák és felsoroláspontok használata
 
-listák és a felsoroláspontok rendszerezik a tartalmat és egyértelműséget biztosítanak. Valósítsa meg őket az Aspose.Words használatával:
+A listák és a felsoroláspontok rendszerezik a tartalmat és egyértelműséget biztosítanak. Valósítsa meg őket az Aspose.Words használatával:
 
 ```python
 list = builder.list_format
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Oldalelrendezés és margók kezelése
+## Oldalelrendezés kezelése
 
 Az oldalelrendezés és a margók szabályozása az optimális megjelenítés érdekében:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Stílusok és témák alkalmazása
@@ -149,7 +134,7 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## Következtetés
 
-dokumentumformázási technikák elsajátítása az Aspose.Words for Python segítségével lehetővé teszi, hogy tetszetős és jól strukturált dokumentumokat készítsen programozottan. A betűstílusoktól a táblázatokig, a fejlécektől a hiperhivatkozásokig a könyvtár átfogó eszközkészletet kínál a tartalom vizuális hatásának fokozására.
+A dokumentumformázási technikák elsajátítása az Aspose.Words for Python segítségével lehetővé teszi, hogy tetszetős és jól strukturált dokumentumokat készítsen programozottan. A betűstílusoktól a táblázatokig, a fejlécektől a hiperhivatkozásokig a könyvtár átfogó eszközkészletet kínál a tartalom vizuális hatásának fokozására.
 
 ## GYIK
 

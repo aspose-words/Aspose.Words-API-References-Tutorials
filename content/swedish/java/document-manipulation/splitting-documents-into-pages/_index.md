@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <sammanfattning>
-/// Hämtar dokumentet för ett sidintervall.
+//Hämtar dokumentet för ett sidintervall.
 /// </summary>
-//<param name="startIndex">
+/// <param name="startIndex">
 /// 1-baserat index för startsidan.
 /// </param>
 /// <param name="endIndex">

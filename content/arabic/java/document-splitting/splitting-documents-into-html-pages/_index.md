@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-يقوم هذا الكود بتقسيم المستند بناءً على فواصل الصفحات ويخزن كل صفحة في`pages` قائمة.
+ يقوم هذا الكود بتقسيم المستند بناءً على فواصل الصفحات ويخزن كل صفحة في`pages` قائمة.
 
 ## الحفظ بصيغة HTML
 

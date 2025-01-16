@@ -15,7 +15,7 @@ Ahoj! Přemýšleli jste někdy o tom, jak zajistit, aby vaše dokumenty Word by
 
 Než si ušpiníme ruce, ujistěte se, že máme vše, co potřebujeme:
 
-1.  Aspose.Words pro .NET: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pro .NET: Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE, které podporuje .NET.
 3. Základní znalost C#: Nemusíte být kouzelník, ale znalost C# vám pomůže.
 

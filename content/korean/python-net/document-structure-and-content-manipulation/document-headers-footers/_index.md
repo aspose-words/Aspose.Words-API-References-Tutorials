@@ -23,7 +23,7 @@ pip install aspose-words
 2. 모듈 가져오기: Python 스크립트에서 필요한 모듈을 가져옵니다.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## 간단한 헤더와 푸터 추가
@@ -33,30 +33,18 @@ Word 문서에 기본 머리글과 바닥글을 추가하려면 다음 단계를
 1. 문서 만들기: Aspose.Words를 사용하여 새 Word 문서를 만듭니다.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  헤더 및 푸터 추가: 다음을 사용하세요.`sections` 문서의 속성을 사용하여 섹션에 액세스합니다. 그런 다음,`headers_footers` 머리글과 바닥글을 추가하는 속성입니다.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. 콘텐츠 추가: 헤더와 푸터에 콘텐츠를 추가합니다.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. 문서 저장: 머리글과 바닥글을 포함하여 문서를 저장합니다.
+3. 문서 저장: 머리글과 바닥글을 포함하여 문서를 저장합니다.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. 표 추가: 표 형식의 정보를 제공하기 위해 표를 통합합니다.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. 동적 필드: 자동 데이터 삽입을 위해 동적 필드를 사용합니다.
+2. 동적 필드: 자동 데이터 삽입을 위해 동적 필드를 사용합니다.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. 필요에 따라 사용자 정의: 요구 사항에 따라 각 머리글과 바닥글을 사용자 정의합니다.
 
 ## 헤더 및 푸터 제거
 
@@ -150,4 +128,4 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### Python용 Aspose.Words에 대한 자세한 내용은 어디에서 볼 수 있나요?
 
-더 자세한 설명서와 예를 보려면 다음을 방문하세요.[Python API 참조를 위한 Aspose.Words](https://reference.aspose.com/words/python-net/).
+ 더 자세한 설명서와 예를 보려면 다음을 방문하세요.[Python API 참조를 위한 Aspose.Words](https://reference.aspose.com/words/python-net/).

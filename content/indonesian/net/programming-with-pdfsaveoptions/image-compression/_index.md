@@ -15,7 +15,7 @@ Di era digital saat ini, mengelola ukuran dokumen sangat penting untuk kinerja d
 
 Sebelum memulai tutorial, pastikan Anda memiliki prasyarat berikut:
 
-1.  Aspose.Words untuk .NET: Anda perlu menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Situs web Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words untuk .NET: Anda perlu menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Situs web Aspose](https://releases.aspose.com/words/net/).
 
 2. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membantu Anda memahami contoh kode yang disediakan dalam tutorial ini.
 

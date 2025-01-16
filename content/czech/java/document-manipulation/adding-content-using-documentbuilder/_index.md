@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Založte stůl
+//Založte stůl
 Table table = builder.startTable();
 
 // Vložte buňky a obsah

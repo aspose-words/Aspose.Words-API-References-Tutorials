@@ -16,7 +16,7 @@ V těchto kurzech vývojáři prozkoumají Python Document API poskytované Aspo
 
 ## Zjednodušení zpracování textových dokumentů
 
-Tutoriály se zaměřují na zjednodušení zpracování textových dokumentů pomocí Aspose.Words pro Python. Vývojáři se naučí, jak vytvářet dynamické dokumenty se zástupnými symboly, slučovat data do šablon a bez námahy generovat sestavy. Aspose.Words zjednodušuje složité úlohy zpracování dokumentů, což z něj činí neocenitelný nástroj pro vývojáře Pythonu.
+Tutoriály se zaměřují na zjednodušení zpracování textových dokumentů pomocí Aspose.Words pro Python. Vývojáři se naučí, jak vytvářet dynamické dokumenty se zástupnými symboly, slučovat data do šablon a generovat sestavy bez námahy. Aspose.Words zjednodušuje složité úlohy zpracování dokumentů, což z něj činí neocenitelný nástroj pro vývojáře Pythonu.
 
 ## Vylepšete pracovní postupy zpracování dokumentů
 

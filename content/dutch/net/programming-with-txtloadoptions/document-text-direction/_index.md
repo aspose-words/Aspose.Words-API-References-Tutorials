@@ -89,7 +89,7 @@ Het instellen van de tekstrichting in Word-documenten is een eenvoudig proces me
 
 ###  Wat is de`DocumentDirection` property used for?
 
-De`DocumentDirection` eigendom in`TxtLoadOptions` bepaalt de tekstrichting voor het document. Het kan worden ingesteld op`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , of`DocumentDirection.RightToLeft`.
+ De`DocumentDirection` eigendom in`TxtLoadOptions` bepaalt de tekstrichting voor het document. Het kan worden ingesteld op`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , of`DocumentDirection.RightToLeft`.
 
 ### Kan ik de tekstrichting voor specifieke alinea's instellen in plaats van voor het hele document?
 

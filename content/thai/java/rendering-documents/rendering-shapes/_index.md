@@ -89,7 +89,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### คำถามที่ 3: มีตัวเลือกการออกใบอนุญาตใดๆ สำหรับ Aspose.Words สำหรับ Java หรือไม่
 
- ใช่ คุณสามารถสำรวจตัวเลือกการอนุญาตสิทธิ์และซื้อ Aspose.Words สำหรับ Java ได้[เว็บไซต์อาโพส](https://purchase.aspose.com/buy).
+ใช่ คุณสามารถสำรวจตัวเลือกการอนุญาตสิทธิ์และซื้อ Aspose.Words สำหรับ Java ได้[เว็บไซต์อาโพส](https://purchase.aspose.com/buy).
 
 ### คำถามที่ 4: ฉันสามารถทดลองใช้ Aspose.Words สำหรับ Java ก่อนซื้อได้หรือไม่
 
@@ -97,6 +97,6 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### คำถามที่ 5: ฉันสามารถขอความช่วยเหลือหรือถามคำถามเกี่ยวกับ Aspose.Words สำหรับ Java ได้ที่ไหน
 
-หากมีคำถามหรือต้องการความช่วยเหลือ โปรดไปที่[ฟอรั่ม Aspose.Words สำหรับ Java](https://forum.aspose.com/).
+ หากมีคำถามหรือต้องการความช่วยเหลือ โปรดไปที่[ฟอรั่ม Aspose.Words สำหรับ Java](https://forum.aspose.com/).
 
 ตอนนี้คุณได้เชี่ยวชาญการเรนเดอร์รูปร่างด้วย Aspose.Words สำหรับ Java แล้ว คุณก็พร้อมที่จะปลดปล่อยศักยภาพทั้งหมดของ API อเนกประสงค์นี้ในโครงการประมวลผลเอกสารของคุณแล้ว ขอให้สนุกกับการเขียนโค้ด!

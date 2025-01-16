@@ -10,11 +10,11 @@ url: /ko/java/document-conversion-and-export/using-document-shapes/
 
 ## Aspose.Words for Java에서 문서 모양 사용 소개
 
-이 포괄적인 가이드에서는 Aspose.Words for Java에서 문서 모양의 세계를 탐구해 보겠습니다. 모양은 시각적으로 매력적이고 대화형 문서를 만드는 데 필수적인 요소입니다. 콜아웃, 버튼, 이미지 또는 워터마크를 추가해야 하는지 여부에 관계없이 Aspose.Words for Java는 효율적으로 이를 수행할 수 있는 도구를 제공합니다. 소스 코드 예제를 통해 이러한 모양을 단계별로 사용하는 방법을 살펴보겠습니다.
+이 포괄적인 가이드에서는 Aspose.Words for Java에서 문서 모양의 세계를 탐구해 보겠습니다. 모양은 시각적으로 매력적이고 대화형 문서를 만드는 데 필수적인 요소입니다. 콜아웃, 버튼, 이미지 또는 워터마크를 추가해야 하는지 여부에 관계없이 Aspose.Words for Java는 이를 효율적으로 수행할 수 있는 도구를 제공합니다. 소스 코드 예제를 통해 이러한 모양을 단계별로 사용하는 방법을 살펴보겠습니다.
 
 ## 문서 모양 시작하기
 
-코드로 넘어가기 전에 환경을 설정해 보겠습니다. Aspose.Words for Java가 프로젝트에 통합되어 있는지 확인하세요. 아직 통합되어 있지 않다면 Aspose 웹사이트에서 다운로드할 수 있습니다.[Aspose.Words for Java 다운로드](https://releases.aspose.com/words/java/)
+ 코드로 넘어가기 전에 환경을 설정해 보겠습니다. Aspose.Words for Java가 프로젝트에 통합되어 있는지 확인하세요. 아직 통합되어 있지 않다면 Aspose 웹사이트에서 다운로드할 수 있습니다.[Aspose.Words for Java 다운로드](https://releases.aspose.com/words/java/)
 
 ## 문서에 모양 추가
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

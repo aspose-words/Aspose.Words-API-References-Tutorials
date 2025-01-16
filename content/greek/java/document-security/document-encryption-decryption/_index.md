@@ -45,7 +45,7 @@ public class DocumentEncryptionExample {
         doc.protect(ProtectionType.READ_ONLY, password);
         
         // Αποθηκεύστε το κρυπτογραφημένο έγγραφο
-        doc.save("encrypted_document.docx", SaveFormat.DOCX);
+        doc.save("encrypted_document.docx");
         
         System.out.println("Document encrypted successfully!");
     }
@@ -64,7 +64,7 @@ import com.aspose.words.SaveFormat;
 
 public class DocumentDecryptionExample {
     public static void main(String[] args) throws Exception {
-        // Φορτώστε το κρυπτογραφημένο έγγραφο
+        //Φορτώστε το κρυπτογραφημένο έγγραφο
         Document doc = new Document("encrypted_document.docx");
         
         // Δώστε τον κωδικό πρόσβασης για αποκρυπτογράφηση
@@ -74,7 +74,7 @@ public class DocumentDecryptionExample {
         doc.unprotect(password);
         
         // Αποθηκεύστε το αποκρυπτογραφημένο έγγραφο
-        doc.save("decrypted_document.docx", SaveFormat.DOCX);
+        doc.save("decrypted_document.docx");
         
         System.out.println("Document decrypted successfully!");
     }

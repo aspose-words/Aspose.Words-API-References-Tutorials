@@ -26,7 +26,7 @@ Tauchen Sie also in die oben aufgeführten Tutorials ein und schöpfen Sie das v
  Weitere Informationen finden Sie im[Aspose.Words für Java API-Dokumentation](https://reference.aspose.com/words/java/) , und laden Sie es zunächst herunter von[Hier](https://releases.aspose.com/words/java/) Wenn Sie Fragen haben oder Hilfe benötigen, wenden Sie sich bitte an unseren[Support-Forum](https://forum.aspose.com/).
 
 ## Tutorials zur Dokumentkonvertierung und zum Export
-### [Generieren von benutzerdefinierten Barcode-Etiketten in Aspose.Words für Java](./generating-custom-barcode-labels/)
+### [Generieren benutzerdefinierter Barcode-Etiketten in Aspose.Words für Java](./generating-custom-barcode-labels/)
 Generieren Sie benutzerdefinierte Barcode-Etiketten in Aspose.Words für Java. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie mit Aspose.Words für Java personalisierte Barcode-Lösungen erstellen.
 ### [Verwenden der Barcode-Generierung in Aspose.Words für Java](./using-barcode-generation/)
 Erfahren Sie, wie Sie mit Aspose.Words für Java benutzerdefinierte Barcodes in Java generieren. Schritt-für-Schritt-Anleitung mit Quellcode zur Barcode-Generierung. Verbessern Sie die Dokumentenautomatisierung mit Aspose.Words.

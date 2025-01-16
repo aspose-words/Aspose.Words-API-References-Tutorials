@@ -44,7 +44,7 @@ using Aspose.Words.Tables;
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-The`DocumentBuilder` class — это ваш шлюз для создания и настройки вашего документа. Думайте о нем как о волшебной палочке для создания документов Word!
+ The`DocumentBuilder` class — это ваш шлюз для создания и настройки вашего документа. Думайте о нем как о волшебной палочке для создания документов Word!
 
 ## Шаг 2: Добавьте цитату
 

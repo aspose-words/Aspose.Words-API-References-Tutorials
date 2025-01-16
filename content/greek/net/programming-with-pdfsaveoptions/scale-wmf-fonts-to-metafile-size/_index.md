@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-Ο`MetafileRenderingOptions` Η class παρέχει επιλογές για τον τρόπο απόδοσης των μετα-αρχείων (όπως το WMF). Με ρύθμιση`ScaleWmfFontsToMetafileSize` να`false`, δίνετε εντολή στο Aspose.Words να μην κλιμακώνει τις γραμματοσειρές σύμφωνα με το μέγεθος του μετα-αρχείου, κάτι που μπορεί να βοηθήσει στη μείωση του συνολικού μεγέθους PDF.
+ Ο`MetafileRenderingOptions` Η class παρέχει επιλογές για τον τρόπο απόδοσης των μετα-αρχείων (όπως το WMF). Με ρύθμιση`ScaleWmfFontsToMetafileSize` να`false`, δίνετε εντολή στο Aspose.Words να μην κλιμακώνει τις γραμματοσειρές σύμφωνα με το μέγεθος του μετα-αρχείου, κάτι που μπορεί να βοηθήσει στη μείωση του συνολικού μεγέθους PDF.
 
 ## Βήμα 3: Ορίστε τις επιλογές αποθήκευσης PDF
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-Ο`PdfSaveOptions` class σάς επιτρέπει να καθορίσετε διάφορες ρυθμίσεις για την αποθήκευση του εγγράφου ως PDF. Εκχωρώντας τα προηγουμένως διαμορφωμένα`MetafileRenderingOptions` στο`MetafileRenderingOptions` ιδιοκτησία του`PdfSaveOptions`, διασφαλίζετε ότι το έγγραφο αποθηκεύεται σύμφωνα με τις επιθυμητές ρυθμίσεις απόδοσης μετα-αρχείων.
+ Ο`PdfSaveOptions` class σάς επιτρέπει να καθορίσετε διάφορες ρυθμίσεις για την αποθήκευση του εγγράφου ως PDF. Εκχωρώντας τα προηγουμένως διαμορφωμένα`MetafileRenderingOptions` στο`MetafileRenderingOptions` ιδιοκτησία του`PdfSaveOptions`, διασφαλίζετε ότι το έγγραφο αποθηκεύεται σύμφωνα με τις επιθυμητές ρυθμίσεις απόδοσης μετα-αρχείων.
 
 ## Βήμα 4: Αποθηκεύστε το Έγγραφο ως PDF
 

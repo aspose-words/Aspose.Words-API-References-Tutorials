@@ -54,7 +54,7 @@ Néha előfordulhat, hogy a dokumentum minden oldalát képként kell mentenie. 
 
 ```java
 // Java kód a dokumentum képként történő mentéséhez
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Állítsa be a felbontást (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

@@ -86,7 +86,7 @@ public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool is
 }
 ```
 
-### 方法细目
+### 方法详解
 
 - 书签检索：`Bookmark bm = doc.Range.Bookmarks[bookmarkName];`获取书签。
 - 节点遍历：我们遍历书签内的节点。

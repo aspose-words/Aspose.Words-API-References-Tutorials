@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-Mã này chia tài liệu dựa trên ngắt trang và lưu trữ từng trang trong`pages` danh sách.
+ Mã này chia tài liệu dựa trên ngắt trang và lưu trữ từng trang trong`pages` danh sách.
 
 ## Lưu dưới dạng HTML
 

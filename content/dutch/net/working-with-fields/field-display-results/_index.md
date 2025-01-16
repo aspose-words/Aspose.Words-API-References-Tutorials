@@ -60,7 +60,7 @@ Velden in Word-documenten kunnen dynamisch zijn, wat betekent dat ze niet altijd
 document.UpdateFields();
 ```
 
-De`UpdateFields` methode itereert door alle velden in het document en werkt ze bij met de nieuwste gegevens. Deze stap is cruciaal als uw velden afhankelijk zijn van dynamische inhoud zoals datums of berekeningen.
+ De`UpdateFields` methode itereert door alle velden in het document en werkt ze bij met de nieuwste gegevens. Deze stap is cruciaal als uw velden afhankelijk zijn van dynamische inhoud zoals datums of berekeningen.
 
 ## Stap 3: Veldresultaten weergeven
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
-De`DisplayResult` eigendom van de`Field` klasse retourneert de geformatteerde waarde van het veld. De`foreach` loop doorloopt alle velden in het document en drukt de resultaten af.
+ De`DisplayResult` eigendom van de`Field` klasse retourneert de geformatteerde waarde van het veld. De`foreach` loop doorloopt alle velden in het document en drukt de resultaten af.
 
 ## Conclusie
 
@@ -97,4 +97,4 @@ U kunt verschillende veldtypen bijwerken, waaronder datumvelden, documenteigensc
 Velden waarvoor invoer door de gebruiker vereist is (zoals formuliervelden) moeten handmatig of via aanvullende code worden ingevuld.
 
 ### Is het mogelijk om veldresultaten in een ander formaat weer te geven?  
-De`DisplayResult` property biedt de geformatteerde uitvoer. Als u een ander formaat nodig hebt, overweeg dan aanvullende verwerking op basis van uw vereisten.
+ De`DisplayResult` property biedt de geformatteerde uitvoer. Als u een ander formaat nodig hebt, overweeg dan aanvullende verwerking op basis van uw vereisten.

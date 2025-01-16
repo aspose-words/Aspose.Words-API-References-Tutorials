@@ -16,7 +16,7 @@ Word 문서를 보호하면서도 특정 부분을 편집 가능하게 하고 �
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
 1.  .NET용 Aspose.Words: 아직 다운로드하지 않았다면 지금 다운로드하세요.[여기](https://releases.aspose.com/words/net/).
-2.  유효한 Aspose 라이센스: 임시 라이센스를 받을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
+2. 유효한 Aspose 라이센스: 임시 라이센스를 받을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: 최신 버전이라면 아무거나 잘 작동할 겁니다.
 4. C#과 .NET에 대한 기본 지식: 이는 코드를 따라가는 데 도움이 됩니다.
 

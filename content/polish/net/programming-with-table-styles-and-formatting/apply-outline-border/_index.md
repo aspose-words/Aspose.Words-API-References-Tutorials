@@ -129,4 +129,4 @@ Dzięki tym umiejętnościom możesz ulepszyć prezentację wizualną swoich tab
  Oczywiście! Możesz użyć dowolnego koloru dostępnego w`System.Drawing.Color` klasa.
 
 ### Jak wyrównać tabelę do środka w poziomie?  
-Ten`table.Alignment = TableAlignment.Center;` Linia w kodzie centruje tabelę poziomo na stronie.
+ Ten`table.Alignment = TableAlignment.Center;` Linia w kodzie centruje tabelę poziomo na stronie.

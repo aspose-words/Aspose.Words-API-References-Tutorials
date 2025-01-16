@@ -56,7 +56,7 @@ Daha sonra yüklenen Word belgesini PDF'e dönüştürün:
 
 ```java
 // Belgeyi PDF olarak kaydedin
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Adım 4: Diğer Formatlara Dönüştürme
@@ -67,21 +67,21 @@ PDF'nin yanı sıra, Aspose.Words for Java belgeleri çeşitli diğer biçimlere
 
 ```java
 // Belgeyi RTF olarak kaydedin
-doc.save("output.rtf", SaveFormat.RTF);
+doc.save("output.rtf");
 ```
 
 ### HTML'ye dönüştürme
 
 ```java
 // Belgeyi HTML olarak kaydedin
-doc.save("output.html", SaveFormat.HTML);
+doc.save("output.html");
 ```
 
 ### EPUB'a dönüştürme
 
 ```java
 // Belgeyi EPUB olarak kaydet
-doc.save("output.epub", SaveFormat.EPUB);
+doc.save("output.epub");
 ```
 
 ## Etkili Belge Dönüştürme İpuçları

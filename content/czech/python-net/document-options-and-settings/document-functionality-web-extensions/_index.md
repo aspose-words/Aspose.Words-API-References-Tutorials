@@ -18,7 +18,7 @@ Než se ponoříme do technických detailů, ujistěte se, že máte splněny n�
 
 - Základní znalost programování v Pythonu.
 -  Aspose.Words for Python API reference (k dispozici na[zde](https://reference.aspose.com/words/python-net/).
-- Přístup ke knihovně Aspose.Words pro Python (stáhnout z[zde](https://releases.aspose.com/words/python/).
+-  Přístup ke knihovně Aspose.Words pro Python (stáhnout z[zde](https://releases.aspose.com/words/python/).
 
 ## Nastavení Aspose.Words pro Python
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Importujte knihovnu do svého skriptu Python.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Vytvoření nového dokumentu
@@ -42,7 +42,7 @@ import aspose.words
 Začněme vytvořením nového dokumentu pomocí Aspose.Words:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Přidání obsahu do dokumentu
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Obsah do dokumentu můžete snadno přidat pomocí Aspose.Words:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,33 +61,13 @@ Styl a formátování hrají při prezentaci dokumentu zásadní roli. Aspose.Wo
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Vkládání webových rozšíření
-
-Chcete-li do dokumentu vložit webové rozšíření, postupujte takto:
-
-1. Vytvořte webové rozšíření pomocí HTML, CSS a JavaScriptu.
-2. Převeďte webové rozšíření na řetězec zakódovaný v base64.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Vložte webové rozšíření do dokumentu:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Interakce s webovými rozšířeními
 
-webovými rozšířeními můžete komunikovat pomocí mechanismu zpracování událostí Aspose.Words. Zachyťte události spouštěné interakcemi uživatele a přizpůsobte chování dokumentu podle toho.
+S webovými rozšířeními můžete komunikovat pomocí mechanismu zpracování událostí Aspose.Words. Zachyťte události spouštěné interakcemi uživatele a přizpůsobte chování dokumentu podle toho.
 
 ## Úprava obsahu dokumentu pomocí rozšíření
 
@@ -98,7 +78,7 @@ Webová rozšíření mohou dynamicky upravovat obsah dokumentu. Pomocí webové
 Po začlenění webových rozšíření a provedení nezbytných úprav můžete dokument uložit pomocí různých formátů podporovaných Aspose.Words:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Tipy pro optimalizaci výkonu
@@ -127,7 +107,7 @@ Chcete-li vytvořit webové rozšíření, musíte vyvinout obsah rozšíření 
 
 Ano, webová rozšíření lze použít k dynamické úpravě obsahu dokumentu. Můžete například použít rozšíření k aktualizaci grafů, vkládání živých dat nebo přidávání interaktivních prvků.
 
-### jakých formátech mohu dokument uložit?
+### V jakých formátech mohu dokument uložit?
 
 Aspose.Words podporuje různé formáty pro ukládání dokumentů, včetně DOCX, PDF, HTML a dalších. Můžete si vybrat formát, který nejlépe vyhovuje vašim požadavkům.
 

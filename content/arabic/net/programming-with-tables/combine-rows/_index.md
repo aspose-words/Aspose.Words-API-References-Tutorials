@@ -112,4 +112,4 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 
 ### أين يمكنني الحصول على المساعدة إذا واجهت مشاكل؟
 
-ال[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) يعد مكانًا رائعًا للحصول على المساعدة والعثور على حلول للمشاكل الشائعة.
+ ال[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) يعد مكانًا رائعًا للحصول على المساعدة والعثور على حلول للمشاكل الشائعة.

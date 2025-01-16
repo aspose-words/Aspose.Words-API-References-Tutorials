@@ -1,6 +1,6 @@
 ---
-title: Загрузка и сохранение HTML-документов с помощью Aspose.Words для Java
-linktitle: Загрузка и сохранение HTML-документов с помощью
+title: Загрузка и сохранение HTML-документов
+linktitle: Загрузка и сохранение HTML-документов
 second_title: API обработки документов Java Aspose.Words
 description: Узнайте, как загружать и сохранять HTML-документы в Java с помощью Aspose.Words для Java. Пошаговое руководство с примерами кода для бесшовной интеграции документов.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Теперь, когда мы загрузили HTML в`Document`, мы можем сохранить его как документ Word. Давайте сохраним его в формате DOCX:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Этот код сохраняет`Document` как файл DOCX, который является распространенным форматом для документов Word.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Заключение
@@ -79,7 +79,7 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 ### Как установить Aspose.Words для Java?
 
- Aspose.Words для Java можно загрузить с сайта[здесь](https://releases.aspose.com/words/java/). Следуйте инструкциям по установке, представленным на веб-сайте, чтобы настроить его в своем проекте Java.
+ Aspose.Words для Java можно загрузить с сайта[здесь](https://releases.aspose.com/words/java/)Следуйте инструкциям по установке, представленным на веб-сайте, чтобы настроить его в своем проекте Java.
 
 ### Могу ли я загружать сложные HTML-документы с помощью Aspose.Words?
 
@@ -95,4 +95,4 @@ Aspose.Words поддерживает широкий спектр формато
 
 ### Где я могу найти дополнительную документацию и примеры для Aspose.Words для Java?
 
- Подробную документацию, примеры кода и учебные пособия можно найти на веб-сайте документации Aspose.Words for Java:[Документация Aspose.Words для Java](https://reference.aspose.com/words/java/).
+Подробную документацию, примеры кода и учебные пособия можно найти на веб-сайте документации Aspose.Words for Java:[Документация Aspose.Words для Java](https://reference.aspose.com/words/java/).

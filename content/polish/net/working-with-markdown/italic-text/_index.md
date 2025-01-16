@@ -38,7 +38,7 @@ Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulow
 
 ## Krok 1: Utwórz DocumentBuilder
 
-Ten`DocumentBuilder` Klasa pomaga dodawać i formatować zawartość w dokumencie. Tworząc`DocumentBuilder` obiekt, konfigurujesz narzędzie do wstawiania i manipulowania tekstem.
+ Ten`DocumentBuilder` Klasa pomaga dodawać i formatować zawartość w dokumencie. Tworząc`DocumentBuilder` obiekt, konfigurujesz narzędzie do wstawiania i manipulowania tekstem.
 
 ```csharp
 // Utwórz instancję DocumentBuilder, aby pracować z dokumentem.

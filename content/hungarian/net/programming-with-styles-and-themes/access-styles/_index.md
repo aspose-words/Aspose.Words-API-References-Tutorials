@@ -17,7 +17,7 @@ Mielőtt belevágnánk, győződjön meg arról, hogy rendelkezik a következők
 
 1.  Aspose.Words for .NET: Ezt a könyvtárat telepítenie kell a .NET-környezetbe. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. A .NET alapszintű ismerete: A C# vagy más .NET nyelv ismerete segít megérteni a megadott kódrészleteket.
-3. Fejlesztői környezet: Győződjön meg arról, hogy rendelkezik egy olyan IDE-vel, mint a Visual Studio, amely be van állítva a .NET kód írására és végrehajtására.
+3. Fejlesztői környezet: Győződjön meg arról, hogy a Visual Studio-hoz hasonló IDE van beállítva a .NET kód írására és végrehajtására.
 
 ## Névterek importálása
 

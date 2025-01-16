@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Starta ett bord
+//Starta ett bord
 Table table = builder.startTable();
 
 // Infoga celler och innehåll

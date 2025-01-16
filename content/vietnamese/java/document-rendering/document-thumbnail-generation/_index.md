@@ -40,7 +40,7 @@ Bây giờ, chúng ta hãy tìm hiểu sâu hơn về quá trình tạo hình th
 ```java
 // Mã Java để tạo hình thu nhỏ của tài liệu
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ Tạo hình thu nhỏ tài liệu bằng Aspose.Words for Java cung cấp một 
 
 ### Làm thế nào để cài đặt Aspose.Words cho Java?
 
- Để cài đặt Aspose.Words cho Java, hãy truy cập trang tải xuống[đây](https://releases.aspose.com/words/java/)và làm theo hướng dẫn cài đặt được cung cấp.
+Để cài đặt Aspose.Words cho Java, hãy truy cập trang tải xuống[đây](https://releases.aspose.com/words/java/)và làm theo hướng dẫn cài đặt được cung cấp.
 
 ### Tôi có thể tùy chỉnh kích thước của hình thu nhỏ được tạo ra không?
 

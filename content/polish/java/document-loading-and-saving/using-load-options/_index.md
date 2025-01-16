@@ -10,7 +10,7 @@ url: /pl/java/document-loading-and-saving/using-load-options/
 
 ## Wprowadzenie do pracy z opcjami ładowania w Aspose.Words dla języka Java
 
-tym samouczku pokażemy, jak pracować z opcjami ładowania w Aspose.Words dla Java. Opcje ładowania pozwalają dostosować sposób ładowania i przetwarzania dokumentów. Omówimy różne scenariusze, w tym aktualizowanie brudnych pól, ładowanie zaszyfrowanych dokumentów, konwertowanie kształtów do Office Math, ustawianie wersji MS Word, określanie tymczasowego folderu, obsługę ostrzeżeń i konwertowanie metaplików do PNG. Zanurzmy się w tym krok po kroku.
+tym samouczku pokażemy, jak pracować z opcjami ładowania w Aspose.Words dla Java. Opcje ładowania pozwalają dostosować sposób ładowania i przetwarzania dokumentów. Omówimy różne scenariusze, w tym aktualizowanie brudnych pól, ładowanie zaszyfrowanych dokumentów, konwertowanie kształtów do Office Math, ustawianie wersji MS Word, określanie tymczasowego folderu, obsługę ostrzeżeń i konwertowanie metaplików do PNG. Przyjrzyjmy się temu krok po kroku.
 
 ## Aktualizacja Dirty Fields
 
@@ -43,7 +43,7 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.setConvertShapeToOfficeMath(true);
 
 Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 ```
 
  Ten kod pokazuje, jak konwertować kształty na obiekty Office Math podczas ładowania dokumentu.`setConvertShapeToOfficeMath(true)`Metoda ta umożliwia taką konwersję.
@@ -136,7 +136,7 @@ public void convertShapeToOfficeMath() throws Exception {
 		loadOptions.setConvertShapeToOfficeMath(true);
 	}
 	Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 }
 @Test
 public void setMsWordVersion() throws Exception {
@@ -192,7 +192,7 @@ public void loadChm() throws Exception {
 
 ## Wniosek
 
-W tym samouczku zagłębiliśmy się w różne aspekty pracy z opcjami ładowania w Aspose.Words for Java. Opcje ładowania odgrywają kluczową rolę w dostosowywaniu sposobu ładowania i przetwarzania dokumentów, umożliwiając dostosowanie przetwarzania dokumentów do konkretnych potrzeb. Podsumujmy kluczowe punkty omówione w tym przewodniku:
+W tym samouczku zagłębiliśmy się w różne aspekty pracy z opcjami ładowania w Aspose.Words for Java. Opcje ładowania odgrywają kluczową rolę w dostosowywaniu sposobu ładowania i przetwarzania dokumentów, umożliwiając dostosowanie przetwarzania dokumentów do Twoich konkretnych potrzeb. Podsumujmy kluczowe punkty omówione w tym przewodniku:
 
 ## Najczęściej zadawane pytania
 
@@ -210,4 +210,4 @@ W tym samouczku zagłębiliśmy się w różne aspekty pracy z opcjami ładowani
 
 ###  Jaki jest cel`setTempFolder` method in Load Options?
 
-Ten`setTempFolder`Metoda ta pozwala na określenie folderu, w którym przechowywane są pliki tymczasowe podczas przetwarzania dokumentów.
+ Ten`setTempFolder`Metoda ta pozwala na określenie folderu, w którym przechowywane są pliki tymczasowe podczas przetwarzania dokumentów.

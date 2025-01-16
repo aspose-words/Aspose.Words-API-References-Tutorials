@@ -54,7 +54,7 @@ doc.print("printerName");
 
 ## Pokročilé přizpůsobení
 
-Aspose.Words for Java nabízí pokročilé možnosti přizpůsobení, včetně záhlaví, zápatí a nastavení stránky. Další podrobnosti najdete v dokumentaci API.
+Aspose.Words for Java nabízí pokročilé možnosti přizpůsobení, včetně záhlaví, zápatí a nastavení stránky. Další podrobnosti najdete v dokumentaci k rozhraní API.
 
 ## Odstraňování problémů
 

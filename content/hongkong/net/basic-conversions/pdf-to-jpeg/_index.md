@@ -54,7 +54,7 @@ Install-Package Aspose.Words
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2. 載入 PDF：使用`Document`來自 Aspose.Words 的類別來載入 PDF。
+2. 載入 PDF：使用`Document`Aspose.Words 中的類別來載入 PDF。
 
     ```csharp
     Document doc = new Document(dataDir + "Pdf Document.pdf");

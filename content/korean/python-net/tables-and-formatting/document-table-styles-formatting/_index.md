@@ -23,7 +23,7 @@ url: /ko/python-net/tables-and-formatting/document-table-styles-formatting/
 2. 라이브러리 가져오기: 다음 가져오기 문을 사용하여 Aspose.Words 라이브러리를 Python 스크립트로 가져옵니다.
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. 문서 로드: Aspose.Words API를 사용하여 기존 문서를 로드하거나 새 문서를 만듭니다.
@@ -35,7 +35,7 @@ Python용 Aspose.Words를 사용하여 문서에 표를 만들고 삽입하려�
 1.  테이블 만들기: 사용`DocumentBuilder` 새로운 표를 만들고 행과 열의 개수를 지정하는 클래스입니다.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ Python용 Aspose.Words를 사용하여 문서에 표를 만들고 삽입하려�
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. 셀 패딩: 셀에 패딩을 추가하여 간격을 개선합니다.
@@ -80,32 +80,8 @@ Python용 Aspose.Words를 사용하여 문서에 표를 만들고 삽입하려�
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Aspose.Words로 테이블 스타일링
-
-Python용 Aspose.Words는 표를 시각적으로 매력적으로 만들기 위한 다양한 스타일 옵션을 제공합니다.
-
-1. 표 스타일: 미리 정의된 표 스타일을 적용해 전문적인 모습을 연출하세요.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. 셀 배경색: 셀 배경색을 변경하여 특정 데이터를 강조 표시합니다.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. 글꼴 서식: 가독성을 높이기 위해 글꼴 스타일, 크기, 색상을 사용자 정의하세요.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## 복잡한 레이아웃을 위한 셀 병합 및 분할
@@ -115,30 +91,14 @@ Python용 Aspose.Words는 표를 시각적으로 매력적으로 만들기 위�
 1. 셀 병합: 여러 셀을 병합하여 하나의 큰 셀을 만듭니다.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. 세포 분할: 세포를 개별 구성 요소로 다시 분할합니다.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## 행 및 열 높이와 너비 조정
-
-균형 잡힌 표 레이아웃을 위해 행과 열 크기를 미세 조정하세요.
-
-1. 행 높이 조정: 콘텐츠에 따라 행 높이를 수정합니다.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. 열 너비 조정: 콘텐츠에 맞게 열 너비를 자동으로 조정합니다.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## 테이블에 테두리와 음영 추가
@@ -148,13 +108,13 @@ Python용 Aspose.Words는 표를 시각적으로 매력적으로 만들기 위�
 1. 테두리: 표와 셀의 테두리를 사용자 지정합니다.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. 음영: 시각적으로 매력적인 효과를 위해 셀에 음영을 적용합니다.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## 셀 내용 및 정렬 작업
@@ -171,7 +131,7 @@ Python용 Aspose.Words는 표를 시각적으로 매력적으로 만들기 위�
 2. 텍스트 정렬: 필요에 따라 셀 텍스트를 정렬합니다.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## 테이블 헤더 및 푸터 처리
@@ -188,26 +148,10 @@ Python용 Aspose.Words는 표를 시각적으로 매력적으로 만들기 위�
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## 테이블 레이아웃 자동 조정
-
-콘텐츠에 따라 테이블 레이아웃이 자동으로 조정되는지 확인하세요.
-
-1. 창에 자동 맞춤: 표가 페이지 너비에 맞게 조정됩니다.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. 셀 크기 자동 조정: 콘텐츠에 맞게 셀 크기를 자동 조정합니다.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## 테이블을 다른 형식으로 내보내기
 
 테이블이 준비되면 PDF나 DOCX 등 다양한 형식으로 내보낼 수 있습니다.
@@ -215,21 +159,15 @@ Python용 Aspose.Words는 표를 시각적으로 매력적으로 만들기 위�
 1. PDF로 저장: 표가 포함된 문서를 PDF 파일로 저장합니다.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. DOCX로 저장: 문서를 DOCX 파일로 저장합니다.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## 문제 해결 및 효과적인 테이블 관리를 위한 팁
-
-- 표가 왜곡되어 보이는 경우, 열 너비나 행 높이가 올바르지 않은지 확인하세요.
-- 일관성을 보장하기 위해 다양한 형식으로 테이블 렌더링을 테스트합니다.
-- 복잡한 레이아웃의 경우 셀 병합 및 분할을 신중하게 계획하세요.
-
+	
 ## 결론
 
 Aspose.Words for Python은 문서 표를 만들고, 스타일링하고, 서식을 지정하는 포괄적인 툴킷을 제공합니다. 이 문서에 설명된 단계를 따르면 문서의 표를 효과적으로 관리하고, 모양을 사용자 지정하고, 다양한 형식으로 내보낼 수 있습니다. Aspose.Words의 힘을 활용하여 문서 프레젠테이션을 향상시키고 독자에게 명확하고 시각적으로 매력적인 정보를 제공하세요.

@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Bir tablo başlat
+//Bir tablo başlat
 Table table = builder.startTable();
 
 // Hücreleri ve içeriği ekle

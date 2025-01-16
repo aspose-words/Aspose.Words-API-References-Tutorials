@@ -7,82 +7,151 @@ type: docs
 weight: 12
 url: /nl/java/document-merging/comparing-documents-for-differences/
 ---
+## Invoering
 
-## Inleiding tot het vergelijken van documenten op verschillen
-
-In de steeds veranderende wereld van documentbeheer is het van het grootste belang om de nauwkeurigheid en consistentie van uw documenten te waarborgen. Of u nu te maken hebt met juridische contracten, financiële rapporten of gewoon revisies in uw documenten bijhoudt, de mogelijkheid om documenten te vergelijken op verschillen is een cruciale functie. Deze stapsgewijze handleiding leidt u door het proces van het vergelijken van documenten op verschillen met behulp van Aspose.Words voor Java, een krachtige API voor het werken met Word-documenten.
+Heb je je ooit afgevraagd hoe je elk verschil tussen twee Word-documenten kunt vinden? Misschien ben je een document aan het herzien of probeer je wijzigingen te vinden die door een medewerker zijn aangebracht. Handmatige vergelijkingen kunnen vervelend en foutgevoelig zijn, maar met Aspose.Words voor Java is het een fluitje van een cent! Met deze bibliotheek kun je documentvergelijkingen automatiseren, revisies markeren en wijzigingen moeiteloos samenvoegen.
 
 ## Vereisten
 
-Voordat we in de details duiken, willen we er zeker van zijn dat u alles heeft wat u nodig hebt:
+Zorg ervoor dat u het volgende bij de hand hebt voordat u aan de code begint:  
+1. Java Development Kit (JDK) op uw systeem geïnstalleerd.  
+2.  Aspose.Words voor Java-bibliotheek. U kunt[download het hier](https://releases.aspose.com/words/java/).  
+3. Een ontwikkelomgeving zoals IntelliJ IDEA of Eclipse.  
+4. Basiskennis van Java-programmering.  
+5.  Een geldige Aspose-licentie. Als u die niet hebt, haal er dan een[tijdelijke licentie hier](https://purchase.aspose.com/temporary-license/).
 
-- Basiskennis van Java-programmering.
--  Aspose.Words voor Java-bibliotheek geïnstalleerd. U kunt het downloaden[hier](https://releases.aspose.com/words/java/).
-- Een geïntegreerde ontwikkelomgeving (IDE) zoals IntelliJ IDEA of Eclipse.
+## Pakketten importeren
 
-## Uw Java-project instellen
-
-Om te beginnen maakt u een nieuw Java-project in uw IDE en voegt u de Aspose.Words-bibliotheek toe aan uw projectafhankelijkheden.
-
-## Stap 1: Laad de documenten
-
-De eerste stap bij het vergelijken van documenten is het laden van de documenten die u wilt vergelijken. U kunt het volgende codefragment gebruiken om twee documenten te laden:
+Om Aspose.Words te gebruiken, moet u de benodigde klassen importeren. Hieronder staan de vereiste imports:
 
 ```java
-// Laad het originele document
-Document docOriginal = new Document("original_document.docx");
-
-// Laad het gewijzigde document
-Document docModified = new Document("modified_document.docx");
+import com.aspose.words.*;
+import java.util.Date;
 ```
 
- Vervangen`"original_document.docx"` En`"modified_document.docx"` met de paden naar uw eigen documenten.
+Zorg ervoor dat deze pakketten correct aan uw projectafhankelijkheden zijn toegevoegd.
 
-## Stap 2: Documenten vergelijken
 
-Nu u de documenten hebt geladen, is het tijd om ze te vergelijken. Aspose.Words biedt een handige methode om documenten te vergelijken. Dit is hoe u dat kunt doen:
+In dit gedeelte leggen we het proces uit in eenvoudige stappen.
+
+
+## Stap 1: Stel uw documenten in
+
+Om te beginnen heb je twee documenten nodig: een die het origineel vertegenwoordigt en de andere die de bewerkte versie vertegenwoordigt. Zo maak je ze:
 
 ```java
-// Vergelijk de twee documenten
-DocumentComparer comparer = new DocumentComparer(docOriginal, docModified);
-comparer.compare();
+Document doc1 = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc1);
+builder.writeln("This is the original document.");
+
+Document doc2 = new Document();
+builder = new DocumentBuilder(doc2);
+builder.writeln("This is the edited document.");
 ```
 
-## Stap 3: Sla het vergelijkingsresultaat op
+ Dit creëert twee documenten in het geheugen met basisinhoud. U kunt ook bestaande Word-documenten laden met`new Document("path/to/document.docx")`.
 
-Nadat u de documenten hebt vergeleken, wilt u het resultaat opslaan. Met Aspose.Words kunt u het vergelijkingsresultaat opslaan als een nieuw document. Dit doet u als volgt:
+
+## Stap 2: Controleer op bestaande revisies
+
+Revisies in Word-documenten vertegenwoordigen bijgehouden wijzigingen. Controleer voor het vergelijken of geen van beide documenten reeds bestaande revisies bevat:
 
 ```java
-// Vergelijkingsresultaat opslaan
-comparer.save("comparison_result.docx");
+if (doc1.getRevisions().getCount() == 0 && doc2.getRevisions().getCount() == 0) {
+    System.out.println("No revisions found. Proceeding with comparison...");
+}
 ```
 
-## Stap 4: Bekijk de verschillen
+Als er revisies zijn, kunt u deze het beste accepteren of afwijzen voordat u verdergaat.
 
-Nu u het vergelijkingsresultaat hebt opgeslagen, kunt u de verschillen tussen het originele en aangepaste document bekijken. Open "comparison_result.docx" om de wijzigingen gemarkeerd te zien.
+
+## Stap 3: Vergelijk de documenten
+
+ Gebruik de`compare` methode om verschillen te vinden. Deze methode vergelijkt het doeldocument (`doc2`) met het bron document (`doc1`):
+
+```java
+doc1.compare(doc2, "AuthorName", new Date());
+```
+
+Hier:
+- AuteurNaam is de naam van de persoon die de wijzigingen aanbrengt.
+- Datum is het tijdstempel van de vergelijking.
+
+
+## Stap 4: Procesrevisies
+
+Nadat ze zijn vergeleken, genereert Aspose.Words revisies in het brondocument (`doc1`Laten we deze revisies eens analyseren:
+
+```java
+for (Revision r : doc1.getRevisions()) {
+    System.out.println("Revision type: " + r.getRevisionType());
+    System.out.println("Node type: " + r.getParentNode().getNodeType());
+    System.out.println("Changed text: " + r.getParentNode().getText());
+}
+```
+
+Deze lus biedt gedetailleerde informatie over elke revisie, zoals het type wijziging en de betreffende tekst.
+
+
+## Stap 5: Accepteer alle revisies
+
+Als u het bron document wilt (`doc1`) om het doeldocument te matchen (`doc2`), accepteer alle revisies:
+
+```java
+doc1.getRevisions().acceptAll();
+```
+
+ Deze update`doc1` om alle wijzigingen weer te geven die zijn aangebracht in`doc2`.
+
+
+## Stap 6: Sla het bijgewerkte document op
+
+Sla ten slotte het bijgewerkte document op schijf op:
+
+```java
+doc1.save("Document.Compare.docx");
+```
+
+Om de wijzigingen te bevestigen, laadt u het document opnieuw en controleert u of er geen resterende revisies zijn:
+
+```java
+doc1 = new Document("Document.Compare.docx");
+if (doc1.getRevisions().getCount() == 0) {
+    System.out.println("Documents are now identical.");
+}
+```
+
+
+## Stap 7: Controleer de gelijkheid van het document
+
+Om er zeker van te zijn dat de documenten identiek zijn, vergelijkt u de tekst:
+
+```java
+if (doc1.getText().trim().equals(doc2.getText().trim())) {
+    System.out.println("Documents are equal.");
+}
+```
+
+Als de teksten overeenkomen, gefeliciteerd: u hebt de documenten succesvol vergeleken en gesynchroniseerd!
+
 
 ## Conclusie
 
-Documenten vergelijken op verschillen met Aspose.Words voor Java is een eenvoudig proces dat uw documentbeheerworkflow aanzienlijk kan verbeteren. Met deze krachtige API kunt u de nauwkeurigheid en consistentie van uw documenten eenvoudig garanderen.
+Documenten vergelijken is niet langer een klusje, dankzij Aspose.Words voor Java. Met slechts een paar regels code kunt u verschillen lokaliseren, revisies verwerken en zorgen voor consistentie in documenten. Of u nu een gezamenlijk schrijfproject beheert of juridische documenten controleert, deze functie is een game-changer.
 
 ## Veelgestelde vragen
 
-### Hoe installeer ik Aspose.Words voor Java?
+### Kan ik documenten vergelijken met afbeeldingen en tabellen?  
+Ja, Aspose.Words ondersteunt het vergelijken van complexe documenten, inclusief documenten met afbeeldingen, tabellen en opmaak.
 
- Om Aspose.Words voor Java te installeren, gaat u naar de downloadpagina[hier](https://releases.aspose.com/words/java/)en volg de meegeleverde installatie-instructies.
+### Heb ik een licentie nodig om deze functie te gebruiken?  
+ Ja, voor volledige functionaliteit is een licentie vereist. Koop een[tijdelijke licentie hier](https://purchase.aspose.com/temporary-license/).
 
-### Kan ik documenten met verschillende formaten, zoals DOCX en PDF, vergelijken?
+### Wat gebeurt er als er reeds bestaande revisies zijn?  
+U moet ze accepteren of afwijzen voordat u documenten gaat vergelijken, om conflicten te voorkomen.
 
-Aspose.Words werkt voornamelijk met Word-documenten in DOCX-formaat. Om documenten in verschillende formaten te vergelijken, moet u ze mogelijk eerst converteren naar DOCX-formaat.
+### Kan ik de revisies in het document markeren?  
+Ja, met Aspose.Words kunt u aanpassen hoe revisies worden weergegeven. U kunt bijvoorbeeld wijzigingen markeren.
 
-### Zijn er beperkingen aan de documentgrootte bij het gebruik van Aspose.Words?
-
-Aspose.Words kan grote documenten efficiënt verwerken, maar bij het werken met extreem grote bestanden is het belangrijk om rekening te houden met het geheugen en de prestaties van uw systeem.
-
-### Kan ik de manier waarop verschillen in het vergelijkingsresultaat worden gemarkeerd, aanpassen?
-
-Ja, met Aspose.Words kunt u de weergave van verschillen in het vergelijkingsresultaatdocument aanpassen, bijvoorbeeld door verschillende kleuren of stijlen te gebruiken voor toegevoegde en verwijderde inhoud.
-
-### Is er een proefversie van Aspose.Words beschikbaar om te testen?
-
-Ja, u kunt een gratis proefversie van Aspose.Words voor Java aanvragen via de website. Zo kunt u de functies en mogelijkheden verkennen voordat u een aankoop doet.
+### Is deze functie beschikbaar in andere programmeertalen?  
+Ja, Aspose.Words ondersteunt meerdere talen, waaronder .NET en Python.

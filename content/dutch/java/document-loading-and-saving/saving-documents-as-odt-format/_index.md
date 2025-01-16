@@ -20,7 +20,7 @@ Voordat we beginnen, moet u ervoor zorgen dat aan de volgende voorwaarden is vol
 
 2.  Aspose.Words voor Java: Download en installeer de Aspose.Words voor Java-bibliotheek. U kunt de downloadlink vinden[hier](https://releases.aspose.com/words/java/).
 
-3. Voorbeeld document: Zorg dat u een voorbeeld van een Word-document (bijvoorbeeld 'Document.docx') hebt dat u naar ODT-formaat wilt converteren.
+3. Voorbeelddocument: Zorg dat u een voorbeeld van een Word-document (bijvoorbeeld 'Document.docx') hebt dat u naar ODT-formaat wilt converteren.
 
 ## Stap 1: Laad het document
 

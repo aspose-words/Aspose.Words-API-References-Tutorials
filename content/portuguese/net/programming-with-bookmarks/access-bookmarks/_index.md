@@ -129,5 +129,5 @@ Sim, mas você precisará fornecer a senha ao carregar o documento usando o Aspo
 ### Posso excluir um favorito usando o Aspose.Words para .NET?
  Sim, você pode remover um marcador ligando para o`Remove` método no objeto de marcador.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?
+### Aspose.Words para .NET é compatível com o .NET Core?
 Sim, o Aspose.Words para .NET é compatível com o .NET Core.

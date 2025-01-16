@@ -16,11 +16,11 @@ Als u ooit een Word-document wilde beveiligen, maar toch bepaalde delen bewerkba
 Voordat we beginnen, zorg ervoor dat u het volgende heeft:
 
 1.  Aspose.Words voor .NET: Als u het nog niet hebt gedaan, download het dan[hier](https://releases.aspose.com/words/net/).
-2.  Een geldige Aspose-licentie: U kunt een tijdelijke licentie krijgen[hier](https://purchase.aspose.com/temporary-license/).
+2. Een geldige Aspose-licentie: U kunt een tijdelijke licentie krijgen[hier](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Elke recente versie zou prima moeten werken.
 4. Basiskennis van C# en .NET: Hiermee kunt u de code volgen.
 
-Nu je er helemaal klaar voor bent, kunnen we beginnen met het leukste gedeelte!
+Nu je alles hebt ingesteld, kunnen we beginnen met het leukste gedeelte!
 
 ## Naamruimten importeren
 
@@ -45,7 +45,7 @@ Laten we eerst een nieuw C#-project in Visual Studio maken.
 
 Laten we nu het document laden dat u wilt beveiligen. Zorg ervoor dat u een Word-document gereed hebt in uw directory.
 
-1. Stel de documentmap in: definieer het pad naar uw documentmap.
+1. Stel de documentenmap in: definieer het pad naar uw documentenmap.
    ```csharp
    string dataDir = "YOUR DOCUMENT DIRECTORY";
    ```

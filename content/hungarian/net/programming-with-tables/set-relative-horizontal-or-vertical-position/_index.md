@@ -91,7 +91,7 @@ Ez a parancs új néven menti a módosított dokumentumot, biztosítva, hogy ne 
 Igen, az Aspose.Words lehetővé teszi a táblázatok különböző elemekhez, például margókhoz, oldalakhoz, oszlopokhoz és egyebekhez való viszonyítását.
 
 ### Szükségem van licencre az Aspose.Words for .NET használatához?  
- Igen, vásárolhat licencet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+ Igen, vásárolhat licencet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?  
  Teljesen! Letölthet egy ingyenes próbaverziót[itt](https://releases.aspose.com/).

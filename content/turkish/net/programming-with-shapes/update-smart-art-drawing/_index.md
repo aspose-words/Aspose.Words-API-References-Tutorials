@@ -80,7 +80,7 @@ Akıllı Sanat şekillerini tanımlamak, yalnızca gerçekten buna ihtiyaç duya
 Başlık: Akıllı Sanat Grafiklerini Yenile
 
 Açıklama:
-The`UpdateSmartArtDrawing` yöntem, Akıllı Sanat grafiğini yeniler ve belgenin verilerindeki veya düzenindeki herhangi bir değişikliği yansıttığından emin olur. Bu yöntem, önceki adımda tanımlanan her Akıllı Sanat şekli için çağrılmalıdır.
+ The`UpdateSmartArtDrawing` yöntem, Akıllı Sanat grafiğini yeniler ve belgenin verilerindeki veya düzenindeki herhangi bir değişikliği yansıttığından emin olur. Bu yöntem, önceki adımda tanımlanan her Akıllı Sanat şekli için çağrılmalıdır.
 
 ```csharp
 // Her Akıllı Sanat şekli için Akıllı Sanat çizimini güncelle

@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
 ### 이 기능을 다른 문서 형식에도 사용할 수 있나요?
 
-그만큼`SkipPdfImages` 옵션은 PDF 문서에 특화되어 있습니다. 다른 형식의 경우, 다양한 옵션과 방법을 사용할 수 있습니다.
+ 그만큼`SkipPdfImages` 옵션은 PDF 문서에 특화되어 있습니다. 다른 형식의 경우, 다양한 옵션과 방법을 사용할 수 있습니다.
 
 ### 이미지가 건너뛰어졌는지 어떻게 확인할 수 있나요?
 

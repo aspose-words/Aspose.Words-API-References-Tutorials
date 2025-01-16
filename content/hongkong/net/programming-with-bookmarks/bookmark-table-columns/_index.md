@@ -42,7 +42,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 步驟 2：啟動表格並插入第一個儲存格
 
-開始建立表格並插入我們將開始新增書籤的第一個儲存格。
+開始建立一個表格並插入我們將開始新增書籤的第一個儲存格。
 
 ```csharp
 builder.StartTable();

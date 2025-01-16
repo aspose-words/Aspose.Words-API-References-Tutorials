@@ -32,7 +32,7 @@ using Aspose.Words;
 using System.IO;
 ```
 
-El`Aspose.Words` El espacio de nombres contiene las clases principales para manejar documentos de Word, mientras que`System.IO` Proporciona funcionalidad para operaciones con archivos.
+ El`Aspose.Words` El espacio de nombres contiene las clases principales para manejar documentos de Word, mientras que`System.IO` Proporciona funcionalidad para operaciones con archivos.
 
 Vamos a desglosar el proceso de conversión de un archivo DOCX a formato RTF en pasos claros y manejables. Siga estas instrucciones para lograr una conversión sin problemas.
 

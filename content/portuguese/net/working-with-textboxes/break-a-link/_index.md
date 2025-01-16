@@ -100,7 +100,7 @@ textBox.Next = null;
 textBox.Previous?.BreakForwardLink();
 ```
 
-O`?.` operador garante que o método só será chamado se`Previous` não é nulo, evitando possíveis erros de tempo de execução.
+ O`?.` operador garante que o método só será chamado se`Previous` não é nulo, evitando possíveis erros de tempo de execução.
 
 ## Conclusão
 

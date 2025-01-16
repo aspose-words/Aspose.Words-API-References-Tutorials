@@ -20,7 +20,7 @@ url: /zh-hant/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 - Word 文件：本教學將使用 Word 文件（例如「Rendering.docx」）。
 - 基本 C# 知識：對 C# 的基本了解將幫助您跟進。
 
-好了，既然一切都準備好了，那就讓我們進入正題吧！
+好了，一切準備就緒，讓我們進入正題吧！
 
 ## 導入命名空間
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", save
 ### 為什麼我應該避免在 PDF 中嵌入核心字體？
 避免嵌入核心字體可以減小檔案大小，從而更容易共享和儲存。
 
-### 如果沒有嵌入核心字體，我仍然可以正確查看 PDF 嗎？
+### 在沒有嵌入核心字體的情況下我仍然可以正確查看 PDF 嗎？
 是的，Arial 和 Times New Roman 等核心字體通常在大多數系統上可用。
 
 ### 如果我需要嵌入自訂字體怎麼辦？

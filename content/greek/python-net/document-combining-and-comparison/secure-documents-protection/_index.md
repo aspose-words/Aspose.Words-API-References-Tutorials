@@ -38,14 +38,6 @@ doc = aw.Document("document.docx")
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## Περιορισμός αδειών επεξεργασίας
-
-Για να ελέγξετε ποιος μπορεί να κάνει αλλαγές στο έγγραφο, μπορείτε να ορίσετε δικαιώματα επεξεργασίας:
-
-```python
-protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
-protection.set_editing_groups(["Editors"])
-```
 
 ## Κρυπτογράφηση περιεχομένων εγγράφων
 
@@ -60,8 +52,10 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 Προσθέστε μια ψηφιακή υπογραφή για να διασφαλίσετε την αυθεντικότητα του εγγράφου:
 
 ```python
-digital_signature = aw.digital_signatures.DigitalSignature(doc)
-digital_signature.sign("certificate.pfx", "signature_password")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
+			
+aw.digitalsignatures.DigitalSignatureUtil.sign(dst_document_path, dst_document_path, certificate_holder, sign_options)
 ```
 
 ## Υδατογράφημα για ασφάλεια
@@ -71,15 +65,6 @@ digital_signature.sign("certificate.pfx", "signature_password")
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
-```
-
-## Διόρθωση ευαίσθητων πληροφοριών
-
-Για να αφαιρέσετε μόνιμα ευαίσθητες πληροφορίες:
-
-```python
-redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
-doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
 ## Σύναψη

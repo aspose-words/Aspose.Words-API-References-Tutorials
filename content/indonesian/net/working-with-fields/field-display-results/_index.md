@@ -60,7 +60,7 @@ Kolom dalam dokumen Word bersifat dinamis, artinya kolom tersebut mungkin tidak 
 document.UpdateFields();
 ```
 
-Itu`UpdateFields` Metode ini mengulang semua kolom dalam dokumen dan memperbaruinya dengan data terbaru. Langkah ini penting jika kolom Anda bergantung pada konten dinamis seperti tanggal atau perhitungan.
+ Itu`UpdateFields` Metode ini mengulang semua kolom dalam dokumen dan memperbaruinya dengan data terbaru. Langkah ini penting jika kolom Anda bergantung pada konten dinamis seperti tanggal atau perhitungan.
 
 ## Langkah 3: Menampilkan Hasil Lapangan
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
-Itu`DisplayResult` milik`Field` kelas mengembalikan nilai yang diformat dari bidang tersebut.`foreach` loop menelusuri semua bidang dalam dokumen dan mencetak hasilnya.
+ Itu`DisplayResult` milik`Field` kelas mengembalikan nilai yang diformat dari bidang tersebut.`foreach` loop menelusuri semua bidang dalam dokumen dan mencetak hasilnya.
 
 ## Kesimpulan
 
@@ -97,4 +97,4 @@ Anda dapat memperbarui berbagai jenis bidang, termasuk bidang tanggal, properti 
 Kolom yang memerlukan masukan pengguna (seperti kolom formulir) perlu diisi secara manual atau melalui kode tambahan.
 
 ### Apakah mungkin untuk menampilkan hasil lapangan dalam format yang berbeda?  
-Itu`DisplayResult` properti menyediakan output yang diformat. Jika Anda memerlukan format yang berbeda, pertimbangkan pemrosesan tambahan berdasarkan kebutuhan Anda.
+ Itu`DisplayResult` properti menyediakan output yang diformat. Jika Anda memerlukan format yang berbeda, pertimbangkan pemrosesan tambahan berdasarkan kebutuhan Anda.

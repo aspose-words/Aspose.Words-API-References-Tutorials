@@ -9,7 +9,7 @@ url: /pl/net/working-with-comments/add-remove-comment-reply/
 ---
 ## Wstęp
 
-Praca z komentarzami i ich odpowiedziami w dokumentach Word może znacznie usprawnić proces przeglądu dokumentów. Dzięki Aspose.Words dla .NET możesz zautomatyzować te zadania, dzięki czemu Twój przepływ pracy będzie bardziej wydajny i usprawniony. Ten samouczek przeprowadzi Cię przez dodawanie i usuwanie odpowiedzi na komentarze, zapewniając przewodnik krok po kroku, jak opanować tę funkcję.
+Praca z komentarzami i ich odpowiedziami w dokumentach Word może znacznie usprawnić proces przeglądu dokumentów. Dzięki Aspose.Words for .NET możesz zautomatyzować te zadania, dzięki czemu Twój przepływ pracy będzie bardziej wydajny i usprawniony. Ten samouczek przeprowadzi Cię przez dodawanie i usuwanie odpowiedzi na komentarze, zapewniając przewodnik krok po kroku, jak opanować tę funkcję.
 
 ## Wymagania wstępne
 

@@ -54,7 +54,7 @@ Document doc = new Document(dataDir + "Document.docx");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-การ`OoxmlSaveOptions`คลาสนี้ช่วยให้เราสามารถระบุตัวเลือกต่างๆ สำหรับการบันทึกไฟล์ DOCX ได้ ที่นี่ เราจะตั้งค่า`Password`ทรัพย์สินที่จะ`"password"` . คุณสามารถแทนที่`"password"` ด้วยรหัสผ่านใดๆ ก็ได้ตามต้องการ รหัสผ่านนี้จำเป็นสำหรับการเปิดไฟล์ DOCX ที่เข้ารหัส
+ การ`OoxmlSaveOptions`คลาสนี้ช่วยให้เราสามารถระบุตัวเลือกต่างๆ สำหรับการบันทึกไฟล์ DOCX ได้ ที่นี่ เราจะตั้งค่า`Password`ทรัพย์สินที่จะ`"password"` . คุณสามารถแทนที่`"password"` ด้วยรหัสผ่านใดๆ ก็ได้ตามต้องการ รหัสผ่านนี้จำเป็นสำหรับการเปิดไฟล์ DOCX ที่เข้ารหัส
 
 ## ขั้นตอนที่ 3: บันทึกเอกสารที่เข้ารหัส
 
@@ -65,7 +65,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-การ`Save` วิธีการของ`Document` คลาสนี้ใช้เพื่อบันทึกเอกสาร เราระบุเส้นทางและชื่อไฟล์สำหรับเอกสารที่เข้ารหัสพร้อมกับ`saveOptions` เราได้กำหนดค่าไว้ก่อนหน้านี้แล้ว ตอนนี้เอกสารจะถูกบันทึกเป็นไฟล์ DOCX ที่เข้ารหัสแล้ว
+ การ`Save` วิธีการของ`Document` คลาสนี้ใช้เพื่อบันทึกเอกสาร เราระบุเส้นทางและชื่อไฟล์สำหรับเอกสารที่เข้ารหัสพร้อมกับ`saveOptions` เราได้กำหนดค่าไว้ก่อนหน้านี้แล้ว ตอนนี้เอกสารจะถูกบันทึกเป็นไฟล์ DOCX ที่เข้ารหัสแล้ว
 
 ## บทสรุป
 

@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Förklaring:
-De`DocumentBuilder` är ett praktiskt verktyg som tillhandahåller metoder för att navigera och ändra dokumentet. Här knyter vi det till vårt destinationsdokument.
+ De`DocumentBuilder` är ett praktiskt verktyg som tillhandahåller metoder för att navigera och ändra dokumentet. Här knyter vi det till vårt destinationsdokument.
 
 ## Steg 3: Flytta till dokumentslut och infoga en sidbrytning
 

@@ -44,10 +44,7 @@ Akceptowanie zmian jest krytycznym krokiem w finalizowaniu dokumentu. Aspose.Wor
 
 ```java
 // Zaakceptuj wszystkie poprawki
-doc.acceptAllRevisions();
-
-// Zaakceptuj konkretną rewizję według indeksu
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Odrzucanie zmian
@@ -56,10 +53,7 @@ W niektórych przypadkach może być konieczne odrzucenie pewnych zmian. Aspose.
 
 ```java
 // Odrzuć wszystkie poprawki
-doc.rejectAllRevisions();
-
-// Odrzuć konkretną rewizję według indeksu
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Zapisywanie dokumentu
@@ -73,7 +67,7 @@ doc.save("document_with_accepted_changes.docx");
 
 ## Automatyzacja procesu
 
-Aby jeszcze bardziej usprawnić proces, możesz zautomatyzować akceptację lub odrzucenie zmian na podstawie określonych kryteriów, takich jak komentarze recenzentów lub typy rewizji. Zapewnia to bardziej wydajny przepływ dokumentów.
+Aby jeszcze bardziej usprawnić proces, możesz zautomatyzować akceptację lub odrzucenie zmian na podstawie określonych kryteriów, takich jak komentarze recenzentów lub rodzaje rewizji. Zapewnia to bardziej wydajny przepływ dokumentów.
 
 ## Wniosek
 

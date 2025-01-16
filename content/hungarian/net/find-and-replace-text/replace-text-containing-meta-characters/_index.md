@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Létrehozunk a`FindReplaceOptions`objektumot, és állítsa a bekezdés igazítását középre.
+ Létrehozunk a`FindReplaceOptions` objektumot, és állítsa a bekezdés igazítását középre.
 
 ## 4. lépés: Cserélje ki a szöveget metakarakterekre
 
 Ez a lépés az, ahol a varázslat megtörténik! Cseréljük a "szakasz" szót, majd egy bekezdéstörést, és adjunk hozzá egy aláhúzást.
 
 ```csharp
-// Kétszer minden bekezdéstörést a "szakasz" szó után, adjon hozzá egyfajta aláhúzást, és tegye középre.
+//Kétszer minden bekezdéstörést a "szakasz" szó után, adjon hozzá egyfajta aláhúzást, és tegye középre.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

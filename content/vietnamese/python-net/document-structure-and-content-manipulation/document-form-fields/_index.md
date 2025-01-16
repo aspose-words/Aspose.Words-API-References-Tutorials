@@ -17,16 +17,16 @@ Trường biểu mẫu là các thành phần tương tác trong tài liệu cho
 
 Trước khi đi sâu vào việc tạo và làm chủ các trường biểu mẫu, hãy thiết lập môi trường của chúng ta và làm quen với Aspose.Words cho Python. Thực hiện theo các bước sau để bắt đầu:
 
-1. **Install Aspose.Words:** Bắt đầu bằng cách cài đặt thư viện Aspose.Words cho Python bằng lệnh pip sau:
+1. Cài đặt Aspose.Words: Bắt đầu bằng cách cài đặt thư viện Aspose.Words cho Python bằng lệnh pip sau:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Nhập thư viện vào tập lệnh Python của bạn để bắt đầu sử dụng các chức năng của nó.
+2. Nhập thư viện: Nhập thư viện vào tập lệnh Python của bạn để bắt đầu sử dụng các chức năng của nó.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Sau khi thiết lập xong, chúng ta hãy tiến hành tìm hiểu các khái niệm cốt lõi về việc tạo và quản lý các trường biểu mẫu.
@@ -41,7 +41,7 @@ Các trường nhập văn bản cho phép người dùng nhập văn bản. Đ�
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Hộp kiểm và nút radio
@@ -50,12 +50,12 @@ Hộp kiểm và nút radio được sử dụng cho các lựa chọn nhiều l
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Danh sách thả xuống
@@ -64,7 +64,7 @@ Danh sách thả xuống cung cấp nhiều lựa chọn cho người dùng. T�
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Người chọn ngày
@@ -73,7 +73,7 @@ Bộ chọn ngày cho phép người dùng chọn ngày một cách thuận ti�
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Thiết lập Thuộc tính của Trường Biểu mẫu
@@ -122,7 +122,7 @@ Các trường nhập văn bản rất linh hoạt và thường được sử d
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Sau khi trường được tạo, bạn có thể thiết lập các thuộc tính của trường, chẳng hạn như tên, giá trị mặc định và văn bản giữ chỗ. Hãy xem cách thực hiện:
@@ -150,14 +150,14 @@ Hộp kiểm và nút radio lý tưởng cho các tình huống yêu cầu lựa
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Đối với các nút radio, bạn có thể tạo chúng bằng cách sử dụng kiểu hình dạng OLE_OBJECT:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Sau khi tạo các trường này, bạn có thể tùy chỉnh các thuộc tính của chúng, chẳng hạn như tên, lựa chọn mặc định và văn bản nhãn:
@@ -183,7 +183,7 @@ Danh sách thả xuống hữu ích cho các tình huống mà người dùng c�
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Sau khi tạo danh sách thả xuống, bạn có thể chỉ định danh sách các tùy chọn có sẵn cho người dùng:
@@ -211,7 +211,7 @@ Bộ chọn ngày đơn giản hóa quá trình thu thập ngày từ người d
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Sau khi tạo bộ chọn ngày, bạn có thể thiết lập các thuộc tính của nó, chẳng hạn như tên và ngày mặc định:
@@ -228,11 +228,7 @@ Công cụ chọn ngày giúp nâng cao trải nghiệm của người dùng khi
 
 ## Phần kết luận
 
-Nắm vững các trường biểu mẫu và thu thập dữ liệu trong tài liệu Word là một kỹ năng có giá trị giúp bạn tạo ra các tài liệu tương tác và hiệu quả để thu thập dữ liệu. Aspose.Words for Python cung cấp một bộ công cụ toàn diện để tạo, tùy chỉnh và trích xuất dữ liệu từ các trường biểu mẫu. Từ các trường nhập văn bản đơn giản đến các phép tính phức tạp và định dạng có điều kiện, khả năng là rất lớn.
-
 Trong hướng dẫn này, chúng tôi đã khám phá những điều cơ bản về trường biểu mẫu, các loại trường biểu mẫu, thiết lập thuộc tính và tùy chỉnh hành vi của chúng. Chúng tôi cũng đã đề cập đến các phương pháp hay nhất để thiết kế biểu mẫu và cung cấp thông tin chi tiết về cách tối ưu hóa biểu mẫu tài liệu cho công cụ tìm kiếm.
-
-Bằng cách khai thác sức mạnh của Aspose.Words for Python, bạn có thể tạo các tài liệu không chỉ thu thập dữ liệu hiệu quả mà còn tăng cường sự tham gia của người dùng và hợp lý hóa quy trình xử lý dữ liệu. Bây giờ, bạn đã sẵn sàng bắt đầu hành trình trở thành bậc thầy về trường biểu mẫu và thu thập dữ liệu trong tài liệu Word.
 
 ## Câu hỏi thường gặp
 

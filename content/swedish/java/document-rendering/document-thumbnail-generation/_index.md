@@ -40,7 +40,7 @@ Låt oss nu dyka in i processen att generera miniatyrer från det laddade dokume
 ```java
 // Java-kod för att generera en dokumentminiatyr
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ Generering av dokumentminiatyrer med Aspose.Words för Java erbjuder ett sömlö
 
 ### Hur installerar jag Aspose.Words för Java?
 
- För att installera Aspose.Words för Java, besök nedladdningssidan[här](https://releases.aspose.com/words/java/)och följ installationsanvisningarna.
+För att installera Aspose.Words för Java, besök nedladdningssidan[här](https://releases.aspose.com/words/java/)och följ installationsanvisningarna.
 
 ### Kan jag anpassa storleken på den genererade miniatyrbilden?
 

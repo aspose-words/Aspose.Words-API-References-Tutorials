@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-El`InsertChart` El método inserta un gráfico del tipo especificado (Columna en este caso) y dimensiones en el documento.
+ El`InsertChart` El método inserta un gráfico del tipo especificado (Columna en este caso) y dimensiones en el documento.
 
 ## Paso 3: Personalización de la serie de gráficos
 
@@ -86,7 +86,7 @@ Por último, formateemos los números del eje Y para que sean más legibles. Est
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-El`FormatCode` La propiedad le permite establecer un formato personalizado para los números en el eje. En este ejemplo,`#,##0`garantiza que los números grandes se muestren con comas para los miles.
+ El`FormatCode` La propiedad le permite establecer un formato personalizado para los números en el eje. En este ejemplo,`#,##0`garantiza que los números grandes se muestren con comas para los miles.
 
 ## Paso 5: Guardar el documento
 

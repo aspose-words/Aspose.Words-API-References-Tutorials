@@ -91,7 +91,7 @@ Ta linijka kodu ukrywa oś Y, przez co staje się ona niewidoczna na wykresie.
 
 ## Krok 6: Zapisz dokument
 
-Na koniec zapisz dokument w określonym katalogu.
+Na koniec zapisz dokument w podanym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");

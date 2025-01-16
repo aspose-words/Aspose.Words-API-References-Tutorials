@@ -135,7 +135,7 @@ Możesz używać Aspose.Words bezpłatnie z[licencja tymczasowa](https://purchas
  Możesz uzyskać wsparcie poprzez[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Czy mogę dodać inne rodzaje wykresów?
- Tak, Aspose.Words obsługuje różne typy wykresów, takie jak wykresy słupkowe, liniowe i kolumnowe. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Tak, Aspose.Words obsługuje różne typy wykresów, takie jak wykresy słupkowe, liniowe i kolumnowe. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### Czy Aspose.Words jest kompatybilny z .NET Core?
  Tak, Aspose.Words jest kompatybilny z .NET Core. Więcej informacji znajdziesz w[dokumentacja](https://reference.aspose.com/words/net/).

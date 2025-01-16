@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-O`Document` objeto representa o documento do Word e o`DocumentBuilder` ajuda a adicionar conteúdo a ele.
+ O`Document` objeto representa o documento do Word e o`DocumentBuilder` ajuda a adicionar conteúdo a ele.
 
 ## Etapa 3: Defina o caminho da imagem
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 Veja o que cada parâmetro significa:
-- `imagePath`O caminho para seu arquivo de imagem.
+- `imagePath`: O caminho para seu arquivo de imagem.
 - `RelativeHorizontalPosition.Margin`: A posição horizontal em relação à margem.
 - `100`: O deslocamento horizontal da margem (em pontos).
 - `RelativeVerticalPosition.Margin`: A posição vertical relativa à margem.

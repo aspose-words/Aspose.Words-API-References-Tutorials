@@ -12,9 +12,9 @@ url: /hu/python-net/document-options-and-settings/
 
 Üdvözöljük az Aspose.Words oktatóanyagok világában, ahol a dokumentumbeállítások és -beállítások birodalmába merülünk. Ez a sorozat célja, hogy a fejlesztőket olyan készségekkel ruházza fel, amelyek segítségével kiaknázhatják az Aspose.Words erejét a dokumentumok hatékony létrehozásához, formázásához és testreszabásához. Akár szöveges dokumentumokkal, jelentésekkel vagy más szöveges tartalommal dolgozik, a dokumentumbeállítások és -beállítások bonyolult megértése elengedhetetlen a professzionális minőségű kimenetek előállításához.
 
-## A dokumentum opciók és beállítások jelentősége
+## dokumentum opciók és beállítások jelentősége
 
-dokumentumkészítés területén az opciók és beállítások kulcsszerepet játszanak a tartalom megjelenésének, szerkezetének és viselkedésének személyre szabásában. Az oldalelrendezéstől a betűstílusokig, a fejlécektől és láblécektől a bekezdésformázásig minden szempont hozzájárul a dokumentumok általános olvashatóságához és vizuális vonzerejéhez. A megfelelően konfigurált opciók és beállítások biztosítják a következetességet, a szabványoknak való megfelelést és a szervezet márkaépítési irányelveivel való összhangot. Akár jogi dokumentumokat, üzleti jelentéseket vagy oktatási anyagokat készít, ezeknek a beállításoknak az elsajátítása elengedhetetlen.
+A dokumentumkészítés területén az opciók és beállítások kulcsszerepet játszanak a tartalom megjelenésének, szerkezetének és viselkedésének személyre szabásában. Az oldalelrendezéstől a betűstílusokig, a fejlécektől és láblécektől a bekezdésformázásig minden szempont hozzájárul a dokumentumok általános olvashatóságához és vizuális vonzerejéhez. A megfelelően konfigurált opciók és beállítások biztosítják a következetességet, a szabványoknak való megfelelést és a szervezet márkaépítési irányelveivel való összhangot. Akár jogi dokumentumokat, üzleti jelentéseket vagy oktatási anyagokat készít, ezeknek a beállításoknak az elsajátítása elengedhetetlen.
 
 ## Mit fogsz tanulni
 
@@ -22,7 +22,7 @@ Ebben az oktatóanyag-sorozatban végigvezetjük Önt az Aspose.Words-ben Python
 
 - Oldalbeállítás: Ismerje meg, hogyan szabhatja testre az oldalméreteket, a margókat, a tájolást és a papírtípust.
 - Betűtípus és szöveg formázása: Fedezze fel a betűstílusokat, -méreteket, -színeket és a szövegigazítási lehetőségeket.
-- Bekezdés- és sorköz: Ismerje meg a bekezdésköz, a sormagasság és a behúzás beállításának technikáit.
+- Bekezdés- és sorköz: Ismerje meg a bekezdéstávolság, a sormagasság és a behúzás beállításának technikáit.
 - Fejlécek és láblécek: Sajátítsa el a fejlécek és láblécek létrehozását és testreszabását a következetes márkaépítés érdekében.
 - Táblázat kialakítása: Ismerje meg a táblázatok létrehozását, a cellák formázását és a szegélyek beállítását a strukturált tartalomhoz.
 - Stílusok és témák: Fedezze fel az előre meghatározott stílusokat és témákat az egységes dokumentumterv fenntartása érdekében.

@@ -15,7 +15,7 @@ Už vás nebaví zabývat se gigantickými dokumenty Wordu, které jsou noční 
 
 Než se ponoříme do toho nejnutnějšího, ujistěte se, že máme vše, co potřebujeme k práci s Aspose.Words pro .NET:
 
-1.  Aspose.Words for .NET Library: Musíte mít tuto knihovnu. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Musíte mít tuto knihovnu. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 3. Základní porozumění C#: Pokud jste zde, hádám, že jste s C# již spokojeni.
 
@@ -86,7 +86,7 @@ Nakonec každý nový dokument uložíme s jedinečným názvem. Tento krok zaji
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-The`Save` metoda uloží nový dokument do zadaného adresáře s jedinečným názvem na základě indexu sekce.
+ The`Save` metoda uloží nový dokument do zadaného adresáře s jedinečným názvem na základě indexu sekce.
 
 ## Závěr
 

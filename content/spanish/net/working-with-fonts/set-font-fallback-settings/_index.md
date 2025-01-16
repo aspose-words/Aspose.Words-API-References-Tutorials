@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Paso 3: Configurar los ajustes de fuente
 
-Crear uno nuevo`FontSettings` objeto y cargar la configuración de reserva de fuentes desde un archivo XML. Este archivo XML contiene las reglas para la reserva de fuentes.
+ Crear uno nuevo`FontSettings` objeto y cargar la configuración de reserva de fuentes desde un archivo XML. Este archivo XML contiene las reglas para la reserva de fuentes.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

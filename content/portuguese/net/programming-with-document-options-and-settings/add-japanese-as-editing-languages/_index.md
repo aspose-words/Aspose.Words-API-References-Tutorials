@@ -40,7 +40,7 @@ Com esses namespaces importados, você está pronto para começar a codificar!
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-O`LoadOptions` class permite que você personalize como os documentos são carregados. Aqui, estamos apenas começando com isso.
+ O`LoadOptions` class permite que você personalize como os documentos são carregados. Aqui, estamos apenas começando com isso.
 
 ## Etapa 2: adicione japonês como idioma de edição
 

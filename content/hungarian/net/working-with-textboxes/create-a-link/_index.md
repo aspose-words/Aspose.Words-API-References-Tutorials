@@ -45,7 +45,7 @@ Először is hozzunk létre egy új Word-dokumentumot. Ez a dokumentum vászonk�
 Document doc = new Document();
 ```
 
-Ez a sor inicializál egy új, üres Word-dokumentumot, amely készen áll arra, hogy hozzáadjunk némi tartalmat.
+Ez a sor inicializál egy új, üres Word-dokumentumot, amely készen áll a tartalom hozzáadására.
 
 ## 2. lépés: Szövegdobozok hozzáadása
 
@@ -116,7 +116,7 @@ Ez a dokumentumot "LinkedTextBoxes.docx" fájlnéven menti. Most már megnyithat
 
 És megvan! 🎉 Sikeresen hozott létre és csatolt szövegdobozokat egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez az oktatóanyag végigvezeti Önt a környezet beállításán, a szövegdobozok létrehozásán és összekapcsolásán, valamint a dokumentum mentésén. Ezekkel a készségekkel bővítheti Word-dokumentumait dinamikus tartalomfolyamatokkal, és interaktívabbá és felhasználóbarátabbá teheti dokumentumait.
 
- A részletesebb információkért és a speciális funkciókért feltétlenül nézze meg a[Aspose.Words API dokumentáció](https://reference.aspose.com/words/net/) Ha bármilyen kérdése van, vagy problémákba ütközik, a[támogatási fórum](https://forum.aspose.com/c/words/8) egy nagyszerű erőforrás.
+ A részletesebb információkért és a speciális funkciókért feltétlenül nézze meg a[Aspose.Words API dokumentáció](https://reference.aspose.com/words/net/) Ha bármilyen kérdése van, vagy problémákba ütközik, a[támogatási fórum](https://forum.aspose.com/c/words/8) nagyszerű erőforrás.
 
 Jó kódolást, és a szövegdobozok mindig tökéletesen kapcsolódnak egymáshoz! 🚀
 

@@ -127,7 +127,7 @@ Komentar jangkar digunakan untuk menyorot dan mengomentari bagian teks tertentu,
 Ya, Anda dapat menambahkan beberapa komentar ke bagian teks yang sama dengan menentukan beberapa rentang komentar.
 
 ### Apakah Aspose.Words untuk .NET gratis untuk digunakan?
-Aspose.Words untuk .NET menawarkan uji coba gratis yang dapat Anda unduh[Di Sini](https://releases.aspose.com/) Untuk fitur lengkap, Anda dapat membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
+ Aspose.Words untuk .NET menawarkan uji coba gratis yang dapat Anda unduh[Di Sini](https://releases.aspose.com/) Untuk fitur lengkap, Anda dapat membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
 
 ### Bisakah saya menyesuaikan tampilan komentar?
 Sementara Aspose.Words berfokus pada fungsionalitas, kemunculan komentar dalam dokumen Word secara umum dikontrol oleh Word itu sendiri.

@@ -9,7 +9,7 @@ url: /sv/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
 ## Introduktion
 
-Har du någonsin undrat hur man lägger till lite extra utrymme runt texten i en tabellcell i ditt Word-dokument? Tja, du är på rätt plats! Denna handledning kommer att leda dig genom processen att ställa in cellutfyllnad med Aspose.Words för .NET. Oavsett om du vill få ditt dokument att se mer polerat ut eller bara vill få dina tabelldata att sticka ut, är justering av cellutfyllnad ett enkelt men kraftfullt verktyg. Vi kommer att dela upp varje steg för att säkerställa att du enkelt kan följa med, även om du är ny på Aspose.Words för .NET.
+Har du någonsin undrat hur man lägger till lite extra utrymme runt texten i en tabellcell i ditt Word-dokument? Nåväl, du är på rätt plats! Denna handledning kommer att leda dig genom processen att ställa in cellutfyllnad med Aspose.Words för .NET. Oavsett om du vill få ditt dokument att se mer polerat ut eller bara vill få dina tabelldata att sticka ut, är justering av cellutfyllnad ett enkelt men kraftfullt verktyg. Vi kommer att dela upp varje steg för att säkerställa att du enkelt kan följa med, även om du är ny på Aspose.Words för .NET.
 
 ## Förutsättningar
 

@@ -113,7 +113,7 @@ doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ###  我可以免费使用 Aspose.Words 吗？
  Aspose.Words 提供免费试用版，您可以下载[这里](https://releases.aspose.com/)。如需长期使用，则需要购买许可证。
 
-###  如何获得 Aspose.Words 的临时许可证？
+###  如何获取 Aspose.Words 的临时许可证？
 您可以从 Aspose 网站获取临时许可证[这里](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words 支持哪些版本的.NET？

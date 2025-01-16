@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 ## 자주 묻는 질문
 
 ###  의 목적은 무엇입니까?`CopyStylesFromTemplate` method?  
-그만큼`CopyStylesFromTemplate` 이 방법은 한 문서의 스타일을 다른 문서로 복사하여 대상 문서가 소스 문서의 서식을 상속받도록 합니다.
+ 그만큼`CopyStylesFromTemplate` 이 방법은 한 문서의 스타일을 다른 문서로 복사하여 대상 문서가 소스 문서의 서식을 상속받도록 합니다.
 
 ###  사용할 수 있나요?`CopyStylesFromTemplate` with documents in different formats?  
  아니,`CopyStylesFromTemplate` 이 방법은 일반적으로 DOCX인 동일한 형식의 문서에만 적용됩니다.
@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 대상 문서를 열고 스타일 설정을 확인합니다. 소스 문서의 스타일이 적용된 것을 볼 수 있습니다.
 
 ### 대상 문서에 이미 스타일이 있는 경우는 어떻게 되나요?  
-그만큼`CopyStylesFromTemplate` 이 방법은 소스 문서의 스타일을 대상 문서의 기존 스타일로 덮어씁니다.
+ 그만큼`CopyStylesFromTemplate` 이 방법은 소스 문서의 스타일을 대상 문서의 기존 스타일로 덮어씁니다.
 
 ### Aspose.Words for .NET은 무료로 사용할 수 있나요?  
  Aspose.Words for .NET은 상업용 제품이지만 다음에서 무료 평가판을 받을 수 있습니다.[Aspose.Words for .NET 무료 평가판](https://releases.aspose.com/).

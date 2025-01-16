@@ -20,7 +20,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/document-vba-mac
 要开始这一自动化之旅，您需要安装 Aspose.Words for Python。您可以从[Aspose 网站](https://releases.aspose.com/words/python/)。安装完成后，您可以启动您的 Python 项目并导入必要的模块。
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## 了解 VBA 宏及其作用
@@ -46,7 +46,7 @@ End Sub
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content

@@ -24,7 +24,7 @@ Avant de nous plonger dans l'utilisation de la césure dans Aspose.Words pour Ja
 
 ## 3. Enregistrement des dictionnaires de césure
 
-Aspose.Words vous permet d'enregistrer des dictionnaires de césure pour différentes langues. Cette étape est essentielle pour garantir que les règles de césure sont appliquées correctement. Voici comment procéder :
+Aspose.Words vous permet d'enregistrer des dictionnaires de césure pour différentes langues. Cette étape est essentielle pour garantir que les règles de césure sont correctement appliquées. Voici comment procéder :
 
 ```java
 Document doc = new Document(dataDir + "German text.docx");

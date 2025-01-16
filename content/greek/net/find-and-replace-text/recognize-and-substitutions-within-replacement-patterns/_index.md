@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Ο`Document` αντικείμενο είναι ο πυρήνας του Aspose.Λέξεις. Αντιπροσωπεύει ολόκληρο το έγγραφο του Word.
+ Ο`Document` αντικείμενο είναι ο πυρήνας του Aspose.Λέξεις. Αντιπροσωπεύει ολόκληρο το έγγραφο του Word.
 
 ## Βήμα 2: Προσθήκη κειμένου στο έγγραφο
 
@@ -50,7 +50,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Jason give money to Paul.");
 ```
 
-Ο`DocumentBuilder` Το class είναι ένα ισχυρό εργαλείο για την προσθήκη κειμένου και άλλων στοιχείων στο έγγραφό σας.
+ Ο`DocumentBuilder` Το class είναι ένα ισχυρό εργαλείο για την προσθήκη κειμένου και άλλων στοιχείων στο έγγραφό σας.
 
 ## Βήμα 3: Καθορίστε το μοτίβο Regex
 
@@ -70,7 +70,7 @@ Regex regex = new Regex(@"([A-z]+) give money to ([A-z]+)");
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
-Ο`FindReplaceOptions` Η class παρέχει διάφορες επιλογές για την προσαρμογή των λειτουργιών εύρεσης και αντικατάστασης.
+ Ο`FindReplaceOptions` Η class παρέχει διάφορες επιλογές για την προσαρμογή των λειτουργιών εύρεσης και αντικατάστασης.
 
 ## Βήμα 5: Εκτελέστε την Αντικατάσταση
 

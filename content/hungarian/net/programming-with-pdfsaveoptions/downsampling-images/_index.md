@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Ebben a lépésben a Word dokumentumot töltjük be a megadott könyvtárból. Ügyeljen arra, hogy cserélje ki`"YOUR DOCUMENT DIRECTORY"` tényleges elérési úttal, ahol a dokumentum található.
+Ebben a lépésben a Word dokumentumot töltjük be a megadott könyvtárból. Ügyeljen arra, hogy cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentum található.
 
 ## 2. lépés: Állítsa be a mintavételezési beállításokat
 
@@ -78,7 +78,7 @@ Ebben az utolsó lépésben a dokumentumot PDF formátumban mentjük ugyanabba a
 A mintavételezés a képek felbontásának csökkentését jelenti, ami segít csökkenteni az ezeket a képeket tartalmazó dokumentumok fájlméretét.
 
 ### A mintavételezés befolyásolja a képek minőségét?
-Igen, a mintavételezés csökkenti a képminőséget. A hatás azonban a felbontás csökkenés mértékétől függ. Ez egy kompromisszum a fájl mérete és a képminőség között.
+Igen, a mintavételezés csökkenti a képminőséget. A hatás azonban a felbontás csökkenésének mértékétől függ. Ez egy kompromisszum a fájl mérete és a képminőség között.
 
 ### Kiválaszthatom, hogy mely képeket vegyem le?
  Igen, a`ResolutionThreshold`, szabályozhatja, hogy mely képekről kerüljön mintavételezésre az eredeti felbontás alapján.

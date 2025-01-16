@@ -23,7 +23,7 @@ pip install aspose-words
 2. استيراد الوحدة: قم باستيراد الوحدة المطلوبة في البرنامج النصي Python الخاص بك.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## إضافة رأس وتذييل بسيطين
@@ -33,30 +33,18 @@ import aspose.words
 1. إنشاء مستند: قم بإنشاء مستند Word جديد باستخدام Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  إضافة الرأس والتذييل: استخدم`sections` خاصية المستند للوصول إلى الأقسام. ثم استخدم`headers_footers` خاصية لإضافة الرؤوس والتذييلات.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. إضافة المحتوى: إضافة المحتوى إلى الرأس والتذييل.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. حفظ المستند: احفظ المستند مع الرأس والتذييل.
+3. حفظ المستند: احفظ المستند مع الرأس والتذييل.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. إضافة الجداول: دمج الجداول للحصول على معلومات جدولية.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. الحقول الديناميكية: استخدم الحقول الديناميكية لإدراج البيانات تلقائيًا.
+2. الحقول الديناميكية: استخدم الحقول الديناميكية لإدراج البيانات تلقائيًا.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. التخصيص حسب الحاجة: قم بتخصيص كل رأس وتذييل وفقًا لمتطلباتك.
 
 ## إزالة الرؤوس والتذييلات
 
@@ -150,4 +128,4 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### أين يمكنني معرفة المزيد عن Aspose.Words لـ Python؟
 
-لمزيد من التفاصيل والتوثيق والأمثلة، قم بزيارة[مرجع API لـ Aspose.Words لـ Python](https://reference.aspose.com/words/python-net/).
+ لمزيد من التفاصيل والتوثيق والأمثلة، قم بزيارة[مرجع API لـ Aspose.Words لـ Python](https://reference.aspose.com/words/python-net/).

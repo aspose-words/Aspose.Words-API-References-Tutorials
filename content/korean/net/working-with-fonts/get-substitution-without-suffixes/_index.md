@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 이 수업에서는:
-- 그만큼`Warning`이 방법은 글꼴 대체와 관련된 경고를 캡처합니다.
-- 그만큼`FontWarnings` 컬렉션은 이러한 경고를 추가 검사 또는 로깅을 위해 저장합니다.
+-  그만큼`Warning`이 방법은 글꼴 대체와 관련된 경고를 캡처합니다.
+-  그만큼`FontWarnings` 컬렉션은 이러한 경고를 추가 검사 또는 로깅을 위해 저장합니다.
 
 ## 결론
 

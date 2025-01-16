@@ -16,7 +16,7 @@ Se hai mai voluto proteggere un documento Word ma consentire comunque la modific
 Prima di iniziare, assicurati di avere quanto segue:
 
 1.  Aspose.Words per .NET: se non lo hai ancora fatto, scaricalo[Qui](https://releases.aspose.com/words/net/).
-2.  Una licenza Aspose valida: puoi ottenere una licenza temporanea[Qui](https://purchase.aspose.com/temporary-license/).
+2. Una licenza Aspose valida: puoi ottenere una licenza temporanea[Qui](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: qualsiasi versione recente dovrebbe funzionare correttamente.
 4. Conoscenza di base di C# e .NET: ti aiuterà a seguire il codice.
 

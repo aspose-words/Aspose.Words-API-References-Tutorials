@@ -130,7 +130,7 @@ Ve işte oldu! Aspose.Words for .NET kullanarak Word belgesinde yeni bir imza sa
 ## SSS
 
 ### İmza satırının görünümünü özelleştirebilir miyim?
-Kesinlikle! Çeşitli seçenekleri ayarlayabilirsiniz`SignatureLineOptions` İhtiyaçlarınıza uygun.
+ Kesinlikle! Çeşitli seçenekleri ayarlayabilirsiniz`SignatureLineOptions`İhtiyaçlarınıza uygun.
 
 ### PFX sertifikam yoksa ne olur?
 Güvenilir bir sertifika yetkilisinden bir tane edinmeniz gerekecek. Belgeleri dijital olarak imzalamak için gereklidir.

@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-De`MetafileRenderingOptions` klasse biedt opties voor hoe metafiles (zoals WMF) worden gerenderd. Door in te stellen`ScaleWmfFontsToMetafileSize` naar`false`, geeft u Aspose.Words de opdracht om lettertypen niet te schalen op basis van de metabestandsgrootte. Dit kan helpen om de algehele PDF-grootte te verkleinen.
+ De`MetafileRenderingOptions` klasse biedt opties voor hoe metafiles (zoals WMF) worden gerenderd. Door in te stellen`ScaleWmfFontsToMetafileSize` naar`false`, geeft u Aspose.Words de opdracht om lettertypen niet te schalen op basis van de metabestandsgrootte. Dit kan helpen om de algehele PDF-grootte te verkleinen.
 
 ## Stap 3: PDF-opslagopties instellen
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-De`PdfSaveOptions` klasse kunt u verschillende instellingen opgeven voor het opslaan van het document als een PDF. Door de eerder geconfigureerde`MetafileRenderingOptions` naar de`MetafileRenderingOptions` eigendom van`PdfSaveOptions`, zorgt u ervoor dat het document wordt opgeslagen volgens de door u gewenste instellingen voor metabestandrendering.
+ De`PdfSaveOptions` klasse kunt u verschillende instellingen opgeven voor het opslaan van het document als een PDF. Door de eerder geconfigureerde`MetafileRenderingOptions` naar de`MetafileRenderingOptions` eigendom van`PdfSaveOptions`, zorgt u ervoor dat het document wordt opgeslagen volgens de door u gewenste instellingen voor metabestandrendering.
 
 ## Stap 4: Sla het document op als PDF
 

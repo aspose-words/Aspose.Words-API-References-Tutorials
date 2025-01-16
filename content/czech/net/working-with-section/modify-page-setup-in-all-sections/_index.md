@@ -16,7 +16,7 @@ Ahoj! Pokud jste někdy potřebovali upravit nastavení stránky ve více část
 Než se ponoříme dovnitř, ujistěte se, že máme vše, co potřebujeme:
 
 1. Základní znalost C#: Je nutná znalost syntaxe a konceptů C#.
-2.  Aspose.Words pro .NET: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) Pokud to jen zkoušíte, a[zkušební verze zdarma](https://releases.aspose.com/) je k dispozici.
+2.  Aspose.Words pro .NET: Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/) Pokud to jen zkoušíte, a[zkušební verze zdarma](https://releases.aspose.com/) je k dispozici.
 3. Visual Studio: Každá nejnovější verze by měla fungovat, ale pro nejlepší zážitek se doporučuje nejnovější.
 4. .NET Framework: Ujistěte se, že jej máte nainstalovaný v systému.
 

@@ -47,7 +47,7 @@ Il est maintenant temps de convertir le document chargé au format de sortie cho
 
 ```java
 // Convertir le document en PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Conclusion

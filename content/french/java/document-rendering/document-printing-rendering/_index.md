@@ -49,7 +49,7 @@ Le rendu des documents est essentiel lorsque vous devez les convertir en différ
 
 ```java
 // Rendre le document au format PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Vous pouvez remplacer`SaveFormat.PDF` avec le format souhaité pour le rendu.

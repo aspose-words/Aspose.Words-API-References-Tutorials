@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Indíts el egy asztalt
+//Indíts el egy asztalt
 Table table = builder.startTable();
 
 // Cellák és tartalom beszúrása

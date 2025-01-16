@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-De`DocumentBuilder` är en hjälparklass som förenklar processen att bygga dokument.
+ De`DocumentBuilder` är en hjälparklass som förenklar processen att bygga dokument.
 
 ## Steg 3: Starta tabellen
 

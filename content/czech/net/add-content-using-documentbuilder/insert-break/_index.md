@@ -15,7 +15,7 @@ Ahoj! Jste připraveni ponořit se do světa Aspose.Words pro .NET? Tato výkonn
 
 Než se pustíme do kódu, ujistěte se, že máme vše, co potřebujeme:
 
-1.  Aspose.Words for .NET Library: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) . Pokud jste v Aspose noví, možná budete chtít začít s a[zkušební verze zdarma](https://releases.aspose.com/).
+1.  Aspose.Words for .NET Library: Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/) . Pokud jste v Aspose noví, možná budete chtít začít s a[zkušební verze zdarma](https://releases.aspose.com/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 3. .NET Framework: Ujistěte se, že máte nainstalované rozhraní .NET Framework.
 4. Základní znalost C#: Tento tutoriál předpokládá, že jste obeznámeni s programováním v C#.
@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Krok 3: Inicializace DocumentBuilderu
 
-The`DocumentBuilder` je jako váš štětec. Pomůže vám přidat obsah do vašeho dokumentu. Pojďme to inicializovat.
+ The`DocumentBuilder` je jako váš štětec. Pomůže vám přidat obsah do vašeho dokumentu. Pojďme to inicializovat.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ Nebyla to legrace? S Aspose.Words pro .NET je manipulace s dokumenty Word hračk
 Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty Wordu. Podporuje širokou škálu funkcí, od vytváření a úprav dokumentů až po převod mezi různými formáty.
 
 ### Mohu používat Aspose.Words zdarma?
- Ano, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/) prozkoumat jeho vlastnosti. Pro dlouhodobé užívání můžete[zakoupit licenci](https://purchase.aspose.com/buy).
+Ano, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/) prozkoumat jeho vlastnosti. Pro dlouhodobé užívání můžete[zakoupit licenci](https://purchase.aspose.com/buy).
 
 ### Jak získám podporu pro Aspose.Words?
  Můžete získat podporu od[Aspose komunitní fórum](https://forum.aspose.com/c/words/8). Je to skvělé místo, kde můžete klást otázky a sdílet své zkušenosti.

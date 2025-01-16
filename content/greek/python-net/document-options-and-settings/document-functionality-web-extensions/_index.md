@@ -18,7 +18,7 @@ url: /el/python-net/document-options-and-settings/document-functionality-web-ext
 
 - Βασική κατανόηση προγραμματισμού Python.
 -  Aspose.Words for Python API αναφοράς (διαθέσιμο στο[εδώ](https://reference.aspose.com/words/python-net/).
-- Πρόσβαση στη βιβλιοθήκη Aspose.Words for Python (λήψη από[εδώ](https://releases.aspose.com/words/python/).
+-  Πρόσβαση στη βιβλιοθήκη Aspose.Words for Python (λήψη από[εδώ](https://releases.aspose.com/words/python/).
 
 ## Ρύθμιση Aspose.Words για Python
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Εισαγάγετε τη βιβλιοθήκη στο σενάριο Python σας.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Δημιουργία νέου εγγράφου
@@ -42,7 +42,7 @@ import aspose.words
 Ας ξεκινήσουμε δημιουργώντας ένα νέο έγγραφο χρησιμοποιώντας το Aspose.Words:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Προσθήκη περιεχομένου στο έγγραφο
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Μπορείτε εύκολα να προσθέσετε περιεχόμενο στο έγγραφο χρησιμοποιώντας το Aspose.Words:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ builder.writeln("Hello, world!")
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Εισαγωγή επεκτάσεων Ιστού
-
-Για να εισαγάγετε μια επέκταση ιστού στο έγγραφο, ακολουθήστε τα εξής βήματα:
-
-1. Δημιουργήστε την επέκταση ιστού χρησιμοποιώντας HTML, CSS και JavaScript.
-2. Μετατρέψτε την επέκταση ιστού σε συμβολοσειρά με κωδικοποίηση base64.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Εισαγάγετε την επέκταση ιστού στο έγγραφο:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Αλληλεπίδραση με Επεκτάσεις Ιστού
@@ -98,7 +78,7 @@ builder.insert_node(extension_node)
 Αφού ενσωματώσετε επεκτάσεις ιστού και κάνετε τις απαραίτητες τροποποιήσεις, μπορείτε να αποθηκεύσετε το έγγραφο χρησιμοποιώντας διάφορες μορφές που υποστηρίζονται από το Aspose.Words:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Συμβουλές για βελτιστοποίηση απόδοσης

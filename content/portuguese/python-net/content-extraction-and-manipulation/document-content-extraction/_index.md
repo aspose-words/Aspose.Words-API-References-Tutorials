@@ -44,18 +44,6 @@ for paragraph in doc.get_child_nodes(doc.is_paragraph, True):
     text += paragraph.get_text()
 ```
 
-## Extraindo Imagens
-
-Para extrair imagens do documento:
-
-```python
-for shape in doc.get_child_nodes(doc.is_shape, True):
-    if shape.has_image:
-        image = shape.image_data.to_bytes()
-        with open("image.png", "wb") as f:
-            f.write(image)
-```
-
 ## Gerenciando formatação
 
 Preservando a formatação durante a extração:
@@ -103,7 +91,7 @@ for section in doc.sections:
 
 ## Conclusão
 
-A extração eficiente de conteúdo de documentos do Word é possível com o Aspose.Words para Python. Esta biblioteca poderosa simplifica o processo de trabalho com conteúdo textual e visual, permitindo que os desenvolvedores extraiam, manipulem e analisem dados de documentos do Word perfeitamente.
+extração eficiente de conteúdo de documentos do Word é possível com o Aspose.Words para Python. Esta biblioteca poderosa simplifica o processo de trabalho com conteúdo textual e visual, permitindo que os desenvolvedores extraiam, manipulem e analisem dados de documentos do Word perfeitamente.
 
 ## Perguntas frequentes
 

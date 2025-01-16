@@ -35,15 +35,12 @@ L'une des méthodes les plus simples pour diviser un document consiste à le div
 Pour diviser un document par page à l'aide d'Aspose.Words pour Java, procédez comme suit :
 
 ```java
-// Code Java pour diviser un document en pages en utilisant Aspose.Words pour Java
-Document doc = new Document("input.docx");
+Document doc = new Document("Your Directory Path" + "Big document.docx");
 int pageCount = doc.getPageCount();
-
-for (int i = 0; i < pageCount; i++) {
-    Document pageDoc = new Document();
-    pageDoc.getFirstSection().getBody().appendChild(
-            doc.getLastSection().getBody().getChildNodes().get(i).clone(true));
-    pageDoc.save("output_page_" + (i + 1) + ".docx");
+for (int page = 0; page < pageCount; page++)
+{
+    Document extractedPage = doc.extractPages(page, 1);
+    extractedPage.save("Your Directory Path" + "SplitDocument.PageByPage_" + (page + 1) + ".docx");
 }
 ```
 
@@ -110,48 +107,28 @@ for (int i = 0; i < doc.getSections().getCount(); i++) {
 }
 ```
 
-## 8. Techniques avancées de fractionnement de documents
-
-### 8.1 Division de sections spécifiques en documents distincts
-
-Dans certains cas, vous souhaiterez peut-être diviser uniquement des sections spécifiques en documents distincts. Aspose.Words pour Java vous permet de définir des critères personnalisés pour déterminer les sections à diviser.
-
-## 8.2 Fractionnement de documents en fonction de critères personnalisés
-
-Vous pouvez mettre en œuvre votre logique personnalisée pour fractionner des documents en fonction de critères spécifiques, tels que le contenu, les mots-clés ou les métadonnées. Cette flexibilité vous permet d'adapter le processus de fractionnement des documents à vos besoins spécifiques.
-
-## 9. Combinaison de documents séparés
-
-Aspose.Words pour Java propose également une fonctionnalité permettant de combiner les documents séparés en un seul document. Cette fonctionnalité est utile lorsque vous devez fusionner des sections individuelles en un document unifié.
-
-## 10. Considérations relatives aux performances
-
-Lorsque vous traitez des documents volumineux, il est essentiel de prendre en compte les optimisations de performances. Aspose.Words
-
- Java est conçu pour gérer efficacement les fichiers volumineux, mais les développeurs peuvent encore améliorer les performances en suivant les meilleures pratiques.
-
-## 11. Conclusion
+## Conclusion
 
 Dans ce guide, nous avons exploré comment diviser des documents facilement et efficacement à l'aide d'Aspose.Words pour Java. En divisant les documents volumineux en parties plus petites et plus faciles à gérer, les développeurs peuvent travailler avec des sections spécifiques et simplifier les tâches de traitement des documents. Aspose.Words pour Java propose différentes méthodes pour diviser des documents en fonction des pages, des paragraphes, des titres et des sections, offrant aux développeurs la flexibilité nécessaire pour adapter le processus de division à leurs besoins spécifiques.
 
-## 12. FAQ
+## FAQ
 
-### Q1. Aspose.Words pour Java peut-il diviser des documents de différents formats comme DOC et DOCX ?
+### Aspose.Words pour Java peut-il diviser des documents de différents formats comme DOC et DOCX ?
 
 Oui, Aspose.Words pour Java peut diviser des documents de différents formats, notamment DOC et DOCX, entre autres.
 
-### Q2. Aspose.Words pour Java est-il compatible avec différentes versions de Java ?
+### Aspose.Words pour Java est-il compatible avec différentes versions de Java ?
 
 Oui, Aspose.Words pour Java est compatible avec plusieurs versions de Java, garantissant une intégration transparente avec vos projets.
 
-### Q3. Puis-je utiliser Aspose.Words pour Java pour diviser des documents protégés par mot de passe ?
+### Puis-je utiliser Aspose.Words pour Java pour diviser des documents protégés par mot de passe ?
 
 Oui, Aspose.Words pour Java prend en charge le fractionnement des documents protégés par mot de passe à condition que vous fournissiez le mot de passe correct.
 
-### Q4. Comment puis-je démarrer avec Aspose.Words pour Java si je suis nouveau dans la bibliothèque ?
+### Comment puis-je démarrer avec Aspose.Words pour Java si je suis nouveau dans la bibliothèque ?
 
  Vous pouvez commencer par explorer le[Référence de l'API Aspose.Words pour Java](https://reference.aspose.com/words/java/) et des exemples de code fournis par Aspose.Words pour Java. La documentation contient des informations détaillées sur les fonctionnalités de la bibliothèque et sur la manière de les utiliser efficacement.
 
-### Q5. Aspose.Words pour Java est-il adapté au traitement de documents au niveau de l'entreprise ?
+### Aspose.Words pour Java est-il adapté au traitement de documents au niveau de l’entreprise ?
 
 Absolument ! Aspose.Words pour Java est largement utilisé dans les applications d'entreprise pour diverses tâches de traitement de documents en raison de sa robustesse et de son vaste ensemble de fonctionnalités.

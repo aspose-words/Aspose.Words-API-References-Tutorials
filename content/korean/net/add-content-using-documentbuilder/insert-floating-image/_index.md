@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-그만큼`Document` 개체는 Word 문서를 나타내며`DocumentBuilder` 콘텐츠를 추가하는 데 도움이 됩니다.
+ 그만큼`Document` 개체는 Word 문서를 나타내며`DocumentBuilder` 콘텐츠를 추가하는 데 도움이 됩니다.
 
 ## 3단계: 이미지 경로 정의
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 각 매개변수의 의미는 다음과 같습니다.
-- `imagePath`이미지 파일의 경로입니다.
+- `imagePath`: 이미지 파일의 경로입니다.
 - `RelativeHorizontalPosition.Margin`: 여백을 기준으로 한 수평 위치입니다.
 - `100`: 여백으로부터의 수평 오프셋(포인트).
 - `RelativeVerticalPosition.Margin`: 여백을 기준으로 한 수직 위치입니다.

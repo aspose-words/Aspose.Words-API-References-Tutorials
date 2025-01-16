@@ -77,8 +77,8 @@ Aspose.Words ofrece un amplio control sobre el formato y el diseño de la págin
 
 ```python
 section = doc.sections[0]
-section.page_setup.left_margin = aw.convert_util.inch_to_point(1)
-section.page_setup.right_margin = aw.convert_util.inch_to_point(1)
+section.page_setup.left_margin = aw.ConvertUtil.inch_to_point(1)
+section.page_setup.right_margin = aw.ConvertUtil.inch_to_point(1)
 ```
 
 ## Guardar el documento

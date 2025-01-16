@@ -19,7 +19,7 @@ url: /hi/net/add-content-using-documentbuilder/build-table/
 - .NET फ्रेमवर्क (4.0 या उच्चतर)
 - .NET लाइब्रेरी के लिए Aspose.Words
 
- यदि आपके पास अभी तक Aspose.Words नहीं है, तो आप आसानी से कर सकते हैं[यहाँ पर डाउनलोड करो](https://releases.aspose.com/words/net/) . आप एक से भी शुरुआत कर सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/) अगर आप पानी का परीक्षण करना चाहते हैं। जो लोग डुबकी लगाने के लिए तैयार हैं, वे कर सकते हैं[लाइसेंस खरीदें](https://purchase.aspose.com/buy) , या यदि आपको मूल्यांकन के लिए अधिक समय चाहिए, तो एक लें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/).
+ यदि आपके पास अभी तक Aspose.Words नहीं है, तो आप आसानी से कर सकते हैं[यहाँ पर डाउनलोड करो](https://releases.aspose.com/words/net/) . आप एक से भी शुरुआत कर सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/) अगर आप पानी का परीक्षण करना चाहते हैं। जो लोग डुबकी लगाने के लिए तैयार हैं, वे कर सकते हैं[लाइसेंस खरीदें](https://purchase.aspose.com/buy) या यदि आपको मूल्यांकन के लिए अधिक समय चाहिए, तो एक लें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/).
 
 ## नामस्थान आयात करें
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- का उपयोग करके`StartTable` हम Aspose.Words को बता रहे हैं कि हम एक तालिका बनाने वाले हैं।`InsertCell` विधि पहले सेल को जोड़ती है, और`AutoFit` यह सुनिश्चित करता है कि हमारे स्तंभों की चौड़ाई निश्चित हो।
+ का उपयोग करके`StartTable` , हम Aspose.Words को बता रहे हैं कि हम एक तालिका बनाने वाले हैं।`InsertCell` विधि पहले सेल को जोड़ती है, और`AutoFit` यह सुनिश्चित करता है कि हमारे स्तंभों की चौड़ाई निश्चित हो।
 
 ## चरण 3: पहली पंक्ति को प्रारूपित करें
 

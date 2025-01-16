@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-ال`InterpolateImages` تم تعيين الخاصية إلى`true` للتأكد من أن الصور الموجودة في ملف PDF الخاص بك تمت معالجتها وتحسين جودتها.
+ ال`InterpolateImages` تم تعيين الخاصية إلى`true` للتأكد من أن الصور الموجودة في ملف PDF الخاص بك تمت معالجتها وتحسين جودتها.
 
 ## الخطوة 4: احفظ المستند بتنسيق PDF
 

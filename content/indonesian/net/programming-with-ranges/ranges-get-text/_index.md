@@ -67,7 +67,7 @@ Ekstrak Teks
 string text = doc.Range.Text;
 ```
 
-Itu`Range.Text` properti memberi Anda semua teks yang terdapat dalam rentang dokumen. Ini termasuk teks dari semua bagian, header, footer, dan badan utama.
+ Itu`Range.Text` properti memberi Anda semua teks yang terdapat dalam rentang dokumen. Ini termasuk teks dari semua bagian, header, footer, dan badan utama.
 
 ## Langkah 4: Menampilkan Teks yang Diekstrak
 

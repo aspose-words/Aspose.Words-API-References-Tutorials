@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-ال`Document` يمثل الكائن مستند Word، و`DocumentBuilder` يساعد في إضافة المحتوى إليه.
+ ال`Document` يمثل الكائن مستند Word، و`DocumentBuilder` يساعد في إضافة المحتوى إليه.
 
 ## الخطوة 3: تحديد مسار الصورة
 

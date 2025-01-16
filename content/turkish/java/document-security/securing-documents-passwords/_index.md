@@ -17,7 +17,7 @@ Günümüzün dijital dünyasında, veri güvenliği en önemli unsurdur. Gizli 
 
 ## Java için Aspose.Words Kurulumu
 
- Belgeleri güvence altına almaya dalmadan önce, Java ortamınızda Aspose.Words for Java'nın kurulu olduğundan emin olalım. Henüz yapmadıysanız, şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
+Belgeleri güvence altına almaya dalmadan önce, Java ortamınızda Aspose.Words for Java'nın kurulu olduğundan emin olalım. Henüz yapmadıysanız, şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
 
 ## Belgelerin Güvence Altına Alınması: Adım Adım
 

@@ -81,7 +81,7 @@ Nyní povolme mezery mezi buňkami pro tabulku.
 
 ### Krok 4.1: Povolte mezery mezi buňkami
 
- Nastavte`AllowCellSpacing` vlastnost tabulky na`true`.
+ Nastavte`AllowCellSpacing` vlastnost stolu k`true`.
 
 ```csharp
 table.AllowCellSpacing = true;

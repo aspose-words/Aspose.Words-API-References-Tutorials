@@ -44,7 +44,7 @@ Ruang nama ini memberi Anda akses ke kelas dan metode yang Anda perlukan untuk m
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Itu`DocumentBuilder` Kelas adalah gerbang Anda untuk membangun dan menyesuaikan dokumen Anda. Anggap saja sebagai tongkat ajaib untuk membuat dokumen Word!
+ Itu`DocumentBuilder` Kelas adalah gerbang Anda untuk membangun dan menyesuaikan dokumen Anda. Anggap saja sebagai tongkat ajaib untuk membuat dokumen Word!
 
 ## Langkah 2: Tambahkan Blockquote
 

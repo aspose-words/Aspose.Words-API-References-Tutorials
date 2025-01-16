@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Các`Document` đối tượng đại diện cho tài liệu Word và`DocumentBuilder` giúp thêm nội dung vào đó.
+ Các`Document` đối tượng đại diện cho tài liệu Word và`DocumentBuilder` giúp thêm nội dung vào đó.
 
 ## Bước 3: Xác định đường dẫn hình ảnh
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 Sau đây là ý nghĩa của từng tham số:
-- `imagePath`Đường dẫn đến tệp hình ảnh của bạn.
+- `imagePath`: Đường dẫn đến tệp hình ảnh của bạn.
 - `RelativeHorizontalPosition.Margin`: Vị trí theo chiều ngang so với lề.
 - `100`: Độ lệch theo chiều ngang so với lề (tính bằng điểm).
 - `RelativeVerticalPosition.Margin`: Vị trí thẳng đứng so với lề.

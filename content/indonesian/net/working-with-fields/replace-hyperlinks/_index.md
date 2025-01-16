@@ -86,7 +86,7 @@ Ya, Aspose.Words mendukung struktur kompleks seperti tabel, gambar, dan hyperlin
  Ya, Anda dapat mengunduh uji coba gratis dari[Di Sini](https://releases.aspose.com/).
 
 ### Di mana saya dapat menemukan dokumentasi untuk Aspose.Words untuk .NET?
-Dokumentasi terperinci tersedia[Di Sini](https://reference.aspose.com/words/net/).
+ Dokumentasi terperinci tersedia[Di Sini](https://reference.aspose.com/words/net/).
 
 ### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
  Lisensi sementara dapat diperoleh[Di Sini](https://purchase.aspose.com/temporary-license/).

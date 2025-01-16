@@ -38,9 +38,15 @@ Zacznijmy od utworzenia nowego dokumentu Word i dodania do niego pola tekstowego
 import aspose.words as aw
 
 doc = aw.Document()
-builder = aw.DocumentBuilder(doc)
-
-textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
+builder = aw.DocumentBuilder(doc=doc)
+textbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_BOX)
+textbox.width = 100
+textbox.height = 100
+textbox.text_box.layout_flow = aw.drawing.LayoutFlow.BOTTOM_TO_TOP
+textbox.append_child(aw.Paragraph(doc))
+builder.insert_node(textbox)
+builder.move_to(textbox.first_paragraph)
+builder.write('This text is flipped 90 degrees to the left.')
 ```
 
  W tym kodzie tworzymy nowy`Document` i`DocumentBuilder` . Ten`insert_text_box` Metoda ta służy do dodawania pola tekstowego do dokumentu. Możesz dostosować zawartość, położenie i rozmiar pola tekstowego zgodnie ze swoimi wymaganiami.

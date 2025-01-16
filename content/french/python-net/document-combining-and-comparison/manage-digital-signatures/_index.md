@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /fr/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## Introduction aux signatures numériques
 
 Les signatures numériques sont l'équivalent électronique des signatures manuscrites. Elles permettent de vérifier l'authenticité, l'intégrité et l'origine des documents électroniques. Lorsqu'un document est signé numériquement, un hachage cryptographique est généré en fonction du contenu du document. Ce hachage est ensuite chiffré à l'aide de la clé privée du signataire, créant ainsi la signature numérique. Toute personne disposant de la clé publique correspondante peut vérifier la signature et s'assurer de l'authenticité du document.
@@ -25,7 +24,7 @@ Pour commencer à gérer les signatures numériques à l’aide d’Aspose.Words
 2. Importez les modules requis : Importez les modules nécessaires dans votre script Python :
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## Chargement et accès aux documents
@@ -33,7 +32,7 @@ Pour commencer à gérer les signatures numériques à l’aide d’Aspose.Words
 Avant d'ajouter ou de vérifier les signatures numériques, vous devez charger le document à l'aide d'Aspose.Words :
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## Ajout de signatures numériques aux documents
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 Pour ajouter une signature numérique à un document, vous aurez besoin d'un certificat numérique :
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 Maintenant, signez le document :
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## Vérification des signatures numériques
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## Suppression des signatures numériques
-
-Pour supprimer une signature numérique d’un document :
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## Assurer l'authenticité des documents
-
-Les signatures numériques garantissent l'authenticité des documents en confirmant leur source et leur intégrité. Elles protègent contre toute altération ou modification non autorisée.
-
 ## Personnalisation de l'apparence de la signature numérique
 
 Vous pouvez personnaliser l’apparence des signatures numériques :
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## Conclusion

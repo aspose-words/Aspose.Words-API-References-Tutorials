@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Βήμα 3: Αρχικοποιήστε το DocumentBuilder
 
-Ο`DocumentBuilder` Η class είναι το κύριο εργαλείο μας για την προσθήκη περιεχομένου στο έγγραφο. Σκεφτείτε το σαν ένα στυλό που γράφει στον καμβά εγγράφων του Word.
+ Ο`DocumentBuilder` Η class είναι το κύριο εργαλείο μας για την προσθήκη περιεχομένου στο έγγραφο. Σκεφτείτε το σαν ένα στυλό που γράφει στον καμβά εγγράφων του Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

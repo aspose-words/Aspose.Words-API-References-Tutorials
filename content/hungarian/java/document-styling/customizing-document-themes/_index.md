@@ -10,7 +10,7 @@ url: /hu/java/document-styling/customizing-document-themes/
 
 ## Bevezetés
 
-dokumentumtémák testreszabása a Java alkalmazások dokumentumfeldolgozásának döntő része. Az Aspose.Words for Java segítségével ezt könnyen elérheti. Ebben az átfogó útmutatóban lépésről lépésre végigvezetjük a dokumentumtémák testreszabásának folyamatán, forráskód-példákat és értékes betekintést nyújtva az út során. Akár kezdő, akár tapasztalt fejlesztő, ez az útmutató segít elsajátítani a dokumentumtémák Aspose.Words for Java használatával testreszabásának művészetét.
+A dokumentumtémák testreszabása a Java alkalmazások dokumentumfeldolgozásának döntő része. Az Aspose.Words for Java segítségével ezt könnyen elérheti. Ebben az átfogó útmutatóban lépésről lépésre végigvezetjük a dokumentumtémák testreszabásának folyamatán, forráskód-példákat és értékes betekintést nyújtva az út során. Akár kezdő, akár tapasztalt fejlesztő, ez az útmutató segít elsajátítani a dokumentumtémák Aspose.Words for Java használatával testreszabásának művészetét.
 
 ## Kezdő lépések
 
@@ -30,7 +30,7 @@ Most, hogy a környezet készen áll, folytassuk a dokumentumtémák testreszab�
 
 ### A dokumentumtémák megértése
 
-A dokumentumtémák határozzák meg a dokumentum általános megjelenését és hangulatát, beleértve a betűtípusokat, színeket és stílusokat. Az Aspose.Words for Java hatékony eszközkészletet biztosít ezeknek a témáknak az Ön igényei szerint testreszabásához.
+A dokumentumtémák határozzák meg a dokumentum általános megjelenését és hangulatát, beleértve a betűtípusokat, színeket és stílusokat. Az Aspose.Words for Java hatékony eszközkészletet kínál ezeknek a témáknak az Ön igényei szerint testreszabásához.
 
 ### Téma alkalmazása
 

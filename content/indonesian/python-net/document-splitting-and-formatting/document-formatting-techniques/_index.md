@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Menerapkan Gaya dan Ukuran Font
-
-Tingkatkan keterbacaan dan daya tarik visual dokumen Anda dengan menerapkan gaya dan ukuran font. Gunakan kode berikut untuk mengubah gaya dan ukuran font paragraf:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Memformat Paragraf dan Judul
+## Memformat Paragraf
 
 Untuk menyusun dokumen Anda secara efektif, pemformatan paragraf dan judul sangatlah penting. Lakukan ini dengan menggunakan kode di bawah ini:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Bekerja dengan Daftar dan Poin-poin
 
 Daftar dan poin-poin penting mengatur konten dan memberikan kejelasan. Terapkan menggunakan Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Mengelola Tata Letak dan Margin Halaman
+## Mengelola Tata Letak Halaman
 
 Kontrol tata letak halaman dan margin untuk presentasi yang optimal:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Menerapkan Gaya dan Tema

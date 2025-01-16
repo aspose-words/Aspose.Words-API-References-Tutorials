@@ -67,7 +67,7 @@ builder.InsertCell();
  Μόλις εισαχθεί το κελί, μπορείτε να αποκτήσετε πρόσβαση στις ιδιότητες μορφής του χρησιμοποιώντας το`CellFormat` ιδιοκτησία του`DocumentBuilder`. Εδώ, μπορείτε να ορίσετε διάφορες επιλογές μορφοποίησης, όπως το πλάτος και το padding.
 
 ```csharp
-// Πρόσβαση και ορισμός ιδιοτήτων μορφής κελιού
+// Πρόσβαση και ρύθμιση ιδιοτήτων μορφής κελιού
 CellFormat cellFormat = builder.CellFormat;
 cellFormat.Width = 250;
 cellFormat.LeftPadding = 30;

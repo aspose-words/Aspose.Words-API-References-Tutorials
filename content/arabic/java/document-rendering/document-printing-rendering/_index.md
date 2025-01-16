@@ -49,7 +49,7 @@ doc.print("printerName");
 
 ```java
 // تحويل المستند إلى PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  يمكنك استبدال`SaveFormat.PDF` مع التنسيق المطلوب للتقديم.

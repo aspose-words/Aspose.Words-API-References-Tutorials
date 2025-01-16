@@ -9,7 +9,7 @@ url: /cs/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 ## Zavedení
 
-Ahoj, přemýšleli jste někdy nad tím, jak docílit toho, aby vaše dokumenty ve Wordu vynikly efektními okraji a stínováním? Tak to jste na správném místě! Dnes se ponoříme do světa Aspose.Words for .NET, abychom oživili naše odstavce. Představte si, že váš dokument vypadá stejně elegantně jako práce profesionálního návrháře s pouhými několika řádky kódu. Jste připraveni začít? Jdeme!
+Ahoj, přemýšleli jste někdy nad tím, jak docílit toho, aby vaše dokumenty ve Wordu vynikly efektními okraji a stínováním? Tak to jste na správném místě! Dnes se ponoříme do světa Aspose.Words for .NET, abychom oživili naše odstavce. Představte si, že váš dokument vypadá stejně elegantně jako práce profesionálního návrháře s pouhými několika řádky kódu. Jste připraveni začít? Jdeme na to!
 
 ## Předpoklady
 
@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using System.Drawing;
 ```
 
-Nyní si tento proces rozdělíme na malé kroky. Každý krok bude mít nadpis a podrobné vysvětlení. Připraveni? Jdeme!
+Nyní si tento proces rozdělíme na malé kroky. Každý krok bude mít nadpis a podrobné vysvětlení. Připraveni? Jdeme na to!
 
 ## Krok 1: Nastavte adresář dokumentů
 
@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`Document` objekt představuje celý náš dokument aplikace Word a`DocumentBuilder` nám pomáhá přidávat a formátovat obsah.
+ The`Document` objekt představuje celý náš dokument aplikace Word a`DocumentBuilder` nám pomáhá přidávat a formátovat obsah.
 
 ## Krok 3: Definujte ohraničení odstavců
 
@@ -109,7 +109,7 @@ A tady to máte! Pomocí několika řádků kódu jsme přeměnili prostý odsta
 
 ## FAQ
 
-### Mohu použít různé styly čar pro každé ohraničení?  
+### Mohu pro každé ohraničení použít různé styly čar?  
  Absolutně! Aspose.Words for .NET vám umožňuje přizpůsobit každý okraj individuálně. Stačí nastavit`LineStyle` pro každý typ ohraničení, jak je uvedeno v průvodci.
 
 ### Jaké další stínovací textury jsou k dispozici?  

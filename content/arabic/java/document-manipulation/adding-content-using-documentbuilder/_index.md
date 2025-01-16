@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// ابدأ جدولاً
+//ابدأ جدولاً
 Table table = builder.startTable();
 
 // إدراج الخلايا والمحتوى

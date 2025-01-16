@@ -112,4 +112,4 @@ Teljesen! Létrehozhat egy szkriptet a folyamat automatizálásához több dokum
 
 ### Hol kaphatok segítséget, ha problémákat tapasztalok?
 
-A[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) egy nagyszerű hely, ahol segítséget kaphat, és megoldást találhat a gyakori problémákra.
+ A[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) egy nagyszerű hely, ahol segítséget kaphat, és megoldást találhat a gyakori problémákra.

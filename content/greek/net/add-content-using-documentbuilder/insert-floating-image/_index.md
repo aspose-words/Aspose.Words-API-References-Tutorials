@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Ο`Document` αντικείμενο αντιπροσωπεύει το έγγραφο του Word και το`DocumentBuilder` βοηθά στην προσθήκη περιεχομένου σε αυτό.
+ Ο`Document` αντικείμενο αντιπροσωπεύει το έγγραφο του Word και το`DocumentBuilder` βοηθά στην προσθήκη περιεχομένου σε αυτό.
 
 ## Βήμα 3: Καθορίστε τη διαδρομή εικόνας
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 Δείτε τι σημαίνει κάθε παράμετρος:
-- `imagePath`Η διαδρομή προς το αρχείο εικόνας σας.
+- `imagePath`: Η διαδρομή προς το αρχείο εικόνας σας.
 - `RelativeHorizontalPosition.Margin`: Η οριζόντια θέση σε σχέση με το περιθώριο.
 - `100`: Η οριζόντια μετατόπιση από το περιθώριο (σε πόντους).
 - `RelativeVerticalPosition.Margin`: Η κατακόρυφη θέση σε σχέση με το περιθώριο.

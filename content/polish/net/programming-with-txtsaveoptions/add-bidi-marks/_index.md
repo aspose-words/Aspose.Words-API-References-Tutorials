@@ -9,13 +9,13 @@ url: /pl/net/programming-with-txtsaveoptions/add-bidi-marks/
 ---
 ## Wstęp
 
-W świecie przetwarzania dokumentów tekst dwukierunkowy (Bidi) często może być nieco trudny w zarządzaniu. Dotyczy to zwłaszcza języków, które mają różne kierunki tekstu, takich jak arabski lub hebrajski. Na szczęście Aspose.Words dla .NET ułatwia obsługę takich scenariuszy. W tym samouczku pokażemy, jak dodawać znaczniki Bidi do dokumentu Word za pomocą Aspose.Words dla .NET.
+W świecie przetwarzania dokumentów tekst dwukierunkowy (Bidi) może być często nieco trudny w zarządzaniu. Dotyczy to zwłaszcza języków, które mają różne kierunki tekstu, takich jak arabski lub hebrajski. Na szczęście Aspose.Words dla .NET ułatwia obsługę takich scenariuszy. W tym samouczku pokażemy, jak dodawać znaczniki Bidi do dokumentu Word za pomocą Aspose.Words dla .NET.
 
 ## Wymagania wstępne
 
 Zanim zagłębimy się w kod, upewnij się, że masz następujące elementy:
 
-1.  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Możesz go pobrać ze strony[Strona pobierania Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Możesz go pobrać ze strony[Strona pobierania Aspose](https://releases.aspose.com/words/net/).
 2. .NET Framework lub .NET Core: Upewnij się, że masz skonfigurowane zgodne środowisko .NET do uruchomienia przykładów.
 3. Podstawowa znajomość języka C#: Znajomość języka programowania C# i podstawowych operacji w środowisku .NET.
 

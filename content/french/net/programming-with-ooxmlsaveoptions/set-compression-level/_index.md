@@ -9,7 +9,7 @@ url: /fr/net/programming-with-ooxmlsaveoptions/set-compression-level/
 ---
 ## Introduction
 
-Prêt à plonger dans le monde de la compression de documents avec Aspose.Words pour .NET ? Que vous cherchiez à optimiser le stockage de vos documents ou à accélérer le temps de traitement, la définition du niveau de compression peut faire une énorme différence. Dans ce didacticiel, nous allons vous expliquer comment définir le niveau de compression d'un document Word à l'aide d'Aspose.Words pour .NET. À la fin de ce guide, vous serez un pro de la création de documents plus concis et plus efficaces.
+Prêt à plonger dans le monde de la compression de documents avec Aspose.Words pour .NET ? Que vous cherchiez à optimiser le stockage de vos documents ou à accélérer le temps de traitement, la définition du niveau de compression peut faire une énorme différence. Dans ce didacticiel, nous allons parcourir le processus de définition du niveau de compression d'un document Word à l'aide d'Aspose.Words pour .NET. À la fin de ce guide, vous serez un pro pour rendre vos documents plus légers et plus efficaces.
 
 ## Prérequis
 
@@ -21,7 +21,7 @@ Avant de passer aux choses sérieuses, assurons-nous que vous disposez de tout c
 
 3. Connaissances de base de C# : Une connaissance de la programmation C# est essentielle pour suivre ce guide.
 
-4. Exemple de document : préparez un document Word (par exemple, « Document.docx ») dans votre répertoire de projet.
+4. Exemple de document : préparez un document Word (par exemple, « Document.docx ») dans le répertoire de votre projet.
 
 ## Importer des espaces de noms
 

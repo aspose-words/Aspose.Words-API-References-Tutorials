@@ -134,7 +134,7 @@ doc.getFirstSection().getPageSetup().setPageStartingNumber(5);
 
 ### Hur centrerar jag text i sidhuvudet eller sidfoten?
 
-Du kan centrera text i sidhuvudet eller sidfoten genom att använda metoden setAlignment på objektet Paragraph i sidhuvudet eller sidfoten.
+Du kan centrera text i sidhuvudet eller sidfoten genom att använda setAlignment-metoden på Paragraph-objektet i sidhuvudet eller sidfoten.
 
 ## Slutsats
 

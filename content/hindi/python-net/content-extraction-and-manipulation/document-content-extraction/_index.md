@@ -44,18 +44,6 @@ for paragraph in doc.get_child_nodes(doc.is_paragraph, True):
     text += paragraph.get_text()
 ```
 
-## छवियाँ निकालना
-
-दस्तावेज़ से छवियाँ निकालने के लिए:
-
-```python
-for shape in doc.get_child_nodes(doc.is_shape, True):
-    if shape.has_image:
-        image = shape.image_data.to_bytes()
-        with open("image.png", "wb") as f:
-            f.write(image)
-```
-
 ## स्वरूपण प्रबंधित करना
 
 निष्कर्षण के दौरान स्वरूपण को संरक्षित रखना:

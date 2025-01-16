@@ -38,14 +38,6 @@ doc = aw.Document("document.docx")
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## 편집 권한 제한
-
-문서를 변경할 수 있는 사람을 제어하려면 편집 권한을 설정할 수 있습니다.
-
-```python
-protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
-protection.set_editing_groups(["Editors"])
-```
 
 ## 문서 내용 암호화
 
@@ -60,8 +52,10 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 문서의 진위성을 확인하려면 디지털 서명을 추가하세요.
 
 ```python
-digital_signature = aw.digital_signatures.DigitalSignature(doc)
-digital_signature.sign("certificate.pfx", "signature_password")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
+			
+aw.digitalsignatures.DigitalSignatureUtil.sign(dst_document_path, dst_document_path, certificate_holder, sign_options)
 ```
 
 ## 보안을 위한 워터마킹
@@ -71,15 +65,6 @@ digital_signature.sign("certificate.pfx", "signature_password")
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
-```
-
-## 민감한 정보 삭제
-
-민감한 정보를 영구적으로 제거하려면:
-
-```python
-redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
-doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
 ## 결론

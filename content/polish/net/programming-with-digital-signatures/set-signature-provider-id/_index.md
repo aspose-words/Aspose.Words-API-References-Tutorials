@@ -25,7 +25,7 @@ A teraz przejdźmy do akcji!
 
 ## Importuj przestrzenie nazw
 
-Przede wszystkim upewnij się, że w projekcie uwzględniono niezbędne przestrzenie nazw. Jest to niezbędne do uzyskania dostępu do biblioteki Aspose.Words i powiązanych klas.
+Przede wszystkim upewnij się, że uwzględniłeś niezbędne przestrzenie nazw w swoim projekcie. Jest to niezbędne do uzyskania dostępu do biblioteki Aspose.Words i powiązanych klas.
 
 ```csharp
 using Aspose.Words;

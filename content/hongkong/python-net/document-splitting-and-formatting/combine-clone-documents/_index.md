@@ -7,7 +7,7 @@ type: docs
 weight: 12
 url: /zh-hant/python-net/document-splitting-and-formatting/combine-clone-documents/
 ---
-在當今快節奏的數位世界中，文件處理是許多業務工作流程的重要方面。隨著組織處理不同的文件格式，有效地合併和複製文件變得必要。 Aspose.Words for Python 提供了一個強大且多功能的解決方案來無縫處理此類任務。在本文中，我們將探討如何使用 Aspose.Words for Python 來組合和複製文檔，使您能夠有效地簡化複雜的工作流程。
+在當今快節奏的數位世界中，文件處理是許多業務工作流程的重要方面。隨著組織處理不同的文件格式，有效地合併和複製文件變得必要。 Aspose.Words for Python 提供了一個強大且多功能的解決方案來無縫處理此類任務。在本文中，我們將探討如何使用 Aspose.Words for Python 來合併和複製文檔，使您能夠有效地簡化複雜的工作流程。
 
 ## 安裝 Aspose.Words
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## 先進技術
-
-### 替換文字
-
-Aspose.Words 可讓您輕鬆尋找和取代文件中的文字：
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### 修改格式
+## 修改格式
 
 您也可以使用 Aspose.Words 修改格式：
 

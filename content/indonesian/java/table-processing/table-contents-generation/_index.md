@@ -7,128 +7,137 @@ type: docs
 weight: 14
 url: /id/java/table-processing/table-contents-generation/
 ---
-
-Apakah Anda siap untuk memulai perjalanan untuk menguasai pembuatan Daftar Isi (TOC) menggunakan Aspose.Words untuk Java? Dalam panduan komprehensif ini, kita akan menjelajahi seni membuat TOC yang dinamis dan menarik secara visual dengan mudah. Anda akan dibekali dengan pengetahuan dan keterampilan yang dibutuhkan untuk mengimplementasikan fitur ini dengan lancar di aplikasi Java Anda. Jadi, mari kita langsung mulai!
-
 ## Perkenalan
 
-Daftar Isi (TOC) merupakan komponen penting dari setiap dokumen yang terstruktur dengan baik. Daftar ini menyediakan peta jalan bagi para pembaca, yang memungkinkan mereka menelusuri dokumen yang panjang dengan mudah. Aspose.Words untuk Java merupakan API canggih yang menyederhanakan pembuatan TOC dalam aplikasi Java. Dalam panduan langkah demi langkah ini, kami akan membahas semua hal yang perlu Anda ketahui untuk membuat TOC secara dinamis menggunakan Aspose.Words untuk Java.
+Pernahkah Anda kesulitan membuat Daftar Isi (TOC) yang dinamis dan tampak profesional dalam dokumen Word Anda? Tidak perlu mencari lebih jauh! Dengan Aspose.Words untuk Java, Anda dapat mengotomatiskan seluruh proses, menghemat waktu, dan memastikan keakuratan. Baik Anda sedang membuat laporan komprehensif atau makalah akademis, tutorial ini akan memandu Anda membuat TOC secara terprogram dengan Java. Siap untuk mencobanya? Mari kita mulai!
 
-## Memulai dengan Aspose.Words untuk Java
+## Prasyarat
 
-Sebelum kita membahas secara spesifik mengenai pembuatan TOC, mari kita siapkan lingkungan kita dan biasakan diri dengan Aspose.Words untuk Java.
+Sebelum kita memulai pengkodean, pastikan Anda memiliki hal berikut:
 
-### Menyiapkan Lingkungan Anda
+1.  Java Development Kit (JDK): Terpasang di sistem Anda. Anda dapat mengunduhnya dari[Situs web Oracle](https://www.oracle.com/java/technologies/javase-downloads.html).
+2.  Aspose.Words untuk Perpustakaan Java: Unduh versi terbaru dari[halaman rilis](https://releases.aspose.com/words/java/).
+3. Lingkungan Pengembangan Terpadu (IDE): Seperti IntelliJ IDEA, Eclipse, atau NetBeans.
+4.  Aspose Lisensi Sementara: Untuk menghindari batasan evaluasi, dapatkan[lisensi sementara](https://purchase.aspose.com/temporary-license/).
 
-Untuk memulai, pastikan Anda telah menginstal Aspose.Words untuk Java. Anda dapat mengunduhnya dari situs web[Di Sini](https://releases.aspose.com/words/java/).
+## Paket Impor
 
-### Membuat Proyek Java Baru
-
-Mulailah dengan membuat proyek Java baru di Lingkungan Pengembangan Terpadu (IDE) favorit Anda.
-
-### Menambahkan Aspose.Words untuk Java ke Proyek Anda
-
-Tambahkan pustaka Aspose.Words untuk Java ke proyek Anda dengan memasukkannya ke dalam dependensi Anda.
-
-### Menginisialisasi Aspose.Words
-
-Dalam kode Java Anda, inisialisasi Aspose.Words untuk mulai bekerja dengannya.
+Untuk menggunakan Aspose.Words for Java secara efektif, pastikan Anda mengimpor kelas yang diperlukan. Berikut ini adalah kelas yang diimpor:
 
 ```java
-// Inisialisasi Aspose.Words
-com.aspose.words.Document doc = new com.aspose.words.Document();
+import com.aspose.words.*;
 ```
 
-## Memahami Daftar Isi (TOC)
+Ikuti langkah-langkah ini untuk membuat Daftar Isi dinamis pada dokumen Word Anda.
 
-Sebelum kita mulai membuat Daftar Isi, mari kita pahami lebih dalam apa itu Daftar Isi dan bagaimana cara kerjanya.
+## Langkah 1: Inisialisasi Dokumen dan DocumentBuilder
 
-### Apa itu Daftar Isi?
+ Langkah pertama adalah membuat dokumen baru dan menggunakan`DocumentBuilder` kelas untuk memanipulasinya.
 
-Daftar Isi adalah daftar yang muncul di awal dokumen dan menyediakan tautan ke berbagai bagian atau bab dalam dokumen tersebut. Daftar ini berfungsi sebagai alat navigasi yang berguna bagi pembaca.
-
-### Bagaimana Cara Kerja Pembuatan Daftar Isi?
-
-Pembuatan TOC melibatkan identifikasi judul atau konten tertentu dalam dokumen Anda dan pembuatan tautan ke bagian tersebut. Aspose.Words untuk Java menyederhanakan proses ini dengan mengotomatiskan pembuatan TOC berdasarkan aturan yang telah ditetapkan sebelumnya.
-
-## Membuat Daftar Isi Dasar
-
-Sekarang setelah kita punya dasar yang kuat, mari buat TOC dasar menggunakan Aspose.Words untuk Java.
 
 ```java
-// Buat Daftar Isi baru
-com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-tocField.update();
+string dataDir = "Your Document Directory";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Kode di atas membuat TOC dasar dalam dokumen Anda. Anda dapat menyesuaikannya lebih lanjut dengan menentukan level, format, dan lainnya.
+- `Document`: Mewakili dokumen Word.
+- `DocumentBuilder`: Kelas pembantu yang memungkinkan manipulasi dokumen dengan mudah.
 
-## Kustomisasi Daftar Isi Lanjutan
+## Langkah 2: Masukkan Daftar Isi
 
-Aspose.Words untuk Java menawarkan opsi penyesuaian yang luas untuk TOC Anda. Mari kita jelajahi beberapa fitur lanjutan:
+Sekarang, mari masukkan TOC di awal dokumen.
 
-### Menyesuaikan Gaya Daftar Isi
-
-Anda dapat menentukan gaya Daftar Isi agar sesuai dengan estetika dokumen Anda.
 
 ```java
-// Sesuaikan gaya TOC
-com.aspose.words.Style tocStyle = doc.getStyles().add(StyleType.PARAGRAPH, "MyTOCStyle");
-tocStyle.getFont().setSize(16);
-tocStyle.getFont().setBold(true);
+builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+builder.insertBreak(BreakType.PAGE_BREAK);
 ```
 
-### Termasuk Judul Spesifik
+- `insertTableOfContents`: Menyisipkan kolom TOC. Parameter menentukan:
+  - `\o "1-3"`: Sertakan judul level 1 hingga 3.
+  - `\h`: Buat entri hyperlink.
+  - `\z`: Menekan nomor halaman untuk dokumen web.
+  - `\u`: Pertahankan gaya untuk hyperlink.
+- `insertBreak`: Menambahkan jeda halaman setelah Daftar Isi.
 
-Anda dapat memilih judul mana yang akan disertakan dalam Daftar Isi Anda dengan menentukan tingkat kerangkanya.
+## Langkah 3: Tambahkan Judul untuk Mengisi Daftar Isi
+
+UNTUK mengisi Daftar Isi, Anda perlu menambahkan paragraf dengan gaya judul.
+
 
 ```java
-// Sertakan hanya judul tertentu
-tocField.setCode("TOC \\o \"1-3\" \\h \\z");
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 1");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_2);
+builder.writeln("Heading 1.1");
+builder.writeln("Heading 1.2");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 2");
 ```
 
-## Menambahkan Kode Sumber untuk Pembuatan Daftar Isi
+- `setStyleIdentifier` : Mengatur gaya paragraf ke tingkat judul tertentu (misalnya,`HEADING_1`, `HEADING_2`).
+- `writeln`: Menambahkan teks ke dokumen dengan gaya yang ditentukan.
 
-Mari melangkah lebih jauh dengan mengintegrasikan kode sumber untuk mengotomatiskan pembuatan TOC di aplikasi Java Anda.
+## Langkah 4: Tambahkan Judul Bersarang
+
+Untuk menunjukkan tingkat Daftar Isi, sertakan judul bertingkat.
+
 
 ```java
-// Otomatisasi pembuatan TOC di Java
-public void generateTOC() {
-    com.aspose.words.Document doc = new com.aspose.words.Document();
-    com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-    tocField.update();
-    // Tambahkan lebih banyak penyesuaian di sini
-}
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_3);
+builder.writeln("Heading 3.1.1");
+builder.writeln("Heading 3.1.2");
+builder.writeln("Heading 3.1.3");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_4);
+builder.writeln("Heading 3.1.3.1");
+builder.writeln("Heading 3.1.3.2");
 ```
 
-Dengan merangkum pembuatan TOC dalam suatu metode, Anda dapat dengan mudah memasukkannya ke dalam proyek Anda.
+- Tambahkan judul pada tingkat yang lebih dalam untuk menunjukkan hierarki dalam Daftar Isi.
 
-## Tanya Jawab Umum
+## Langkah 5: Perbarui Bidang Daftar Isi
 
-### Bagaimana cara memperbarui Daftar Isi yang ada?
+Kolom TOC harus diperbarui untuk menampilkan judul terkini.
 
-Untuk memperbarui TOC yang ada di dokumen Anda, cukup klik kanan pada TOC tersebut dan pilih "Perbarui Kolom." Aspose.Words untuk Java akan menyegarkan TOC berdasarkan perubahan pada judul dokumen Anda.
 
-### Bisakah saya membuat beberapa TOC dalam satu dokumen?
+```java
+doc.updateFields();
+```
 
-Ya, Anda dapat membuat beberapa TOC dalam satu dokumen. Gunakan kode bidang yang berbeda untuk setiap TOC, dan sesuaikan pengaturannya sesuai kebutuhan.
+- `updateFields`: Menyegarkan semua bidang dalam dokumen, memastikan TOC mencerminkan judul yang ditambahkan.
 
-### Apakah Aspose.Words untuk Java cocok untuk dokumen kecil dan besar?
+## Langkah 6: Simpan Dokumen
 
-Tentu saja! Aspose.Words untuk Java bersifat serbaguna dan dapat menangani dokumen dengan berbagai ukuran, mulai dari laporan kecil hingga novel yang panjang.
+Terakhir, simpan dokumen ke format yang Anda inginkan.
 
-### Bisakah saya menyesuaikan tampilan entri Daftar Isi saya?
 
-Tentu saja! Anda dapat menentukan gaya khusus untuk entri Daftar Isi agar sesuai dengan desain dan format dokumen Anda.
+```java
+doc.save(dataDir + "DocumentBuilder.InsertToc.docx");
+```
 
-### Apakah Aspose.Words untuk Java mendukung referensi silang dalam TOC?
-
-Ya, Anda dapat membuat referensi silang dalam Daftar Isi untuk menautkan ke bagian atau halaman tertentu dalam dokumen Anda.
-
-### Apakah Aspose.Words untuk Java cocok untuk aplikasi web?
-
-Memang, Aspose.Words untuk Java dapat diintegrasikan secara mulus ke dalam aplikasi web untuk menghasilkan TOC secara dinamis.
+- `save` : Mengekspor dokumen ke`.docx` file. Anda dapat menentukan format lain seperti`.pdf` atau`.txt` jika diperlukan.
 
 ## Kesimpulan
 
-Dalam panduan lengkap ini, kami telah menjelajahi seni pembuatan Daftar Isi (TOC) menggunakan Aspose.Words untuk Java. Anda telah mempelajari cara menyiapkan lingkungan, membuat TOC dasar dan lanjutan, dan bahkan mengintegrasikan pembuatan TOC ke dalam proyek Java Anda dengan kode sumber. Aspose.Words untuk Java memberdayakan Anda untuk menyempurnakan dokumen Anda dengan TOC yang dinamis dan menarik secara visual. Sekarang, lanjutkan dan terapkan pengetahuan ini untuk membuat TOC yang menakjubkan dalam aplikasi Java Anda. Selamat membuat kode!
+Selamat! Anda telah berhasil membuat Daftar Isi dinamis dalam dokumen Word menggunakan Aspose.Words untuk Java. Hanya dengan beberapa baris kode, Anda telah mengotomatiskan tugas yang seharusnya memakan waktu berjam-jam. Jadi, apa selanjutnya? Cobalah bereksperimen dengan berbagai gaya dan format judul untuk menyesuaikan Daftar Isi dengan kebutuhan spesifik.
+
+## Pertanyaan yang Sering Diajukan
+
+### Bisakah saya menyesuaikan format TOC lebih lanjut?
+Tentu saja! Anda dapat menyesuaikan parameter TOC seperti menyertakan nomor halaman, menyelaraskan teks, atau menggunakan gaya judul khusus.
+
+### Apakah lisensi wajib untuk Aspose.Words untuk Java?
+ Ya, lisensi diperlukan untuk fungsionalitas penuh. Anda dapat memulai dengan[lisensi sementara](https://purchase.aspose.com/temporary-license/).
+
+### Bisakah saya membuat TOC untuk dokumen yang sudah ada?
+ Ya! Muat dokumen ke dalam`Document` objek dan ikuti langkah yang sama untuk memasukkan dan memperbarui TOC.
+
+### Apakah ini berfungsi untuk ekspor PDF?
+ Ya, TOC akan muncul dalam PDF jika Anda menyimpan dokumen di`.pdf` format.
+
+### Di mana saya dapat menemukan dokumentasi lebih lanjut?
+ Lihat di sini[Dokumentasi Aspose.Words untuk Java](https://reference.aspose.com/words/java/) untuk contoh dan detail lebih lanjut.

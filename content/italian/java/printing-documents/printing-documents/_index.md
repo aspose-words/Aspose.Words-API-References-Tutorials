@@ -38,7 +38,7 @@ Successivamente, creeremo un processo di stampa per stampare il nostro documento
 ```java
 // Creiamo un processo di stampa per stampare il nostro documento.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Inizializza un set di attributi con il numero di pagine del documento.
+// Inizializza un set di attributi con il numero di pagine del documento.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Passare le impostazioni della stampante insieme agli altri parametri al documento di stampa.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Creiamo un processo di stampa per stampare il nostro documento.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Inizializza un set di attributi con il numero di pagine del documento.
+// Inizializza un set di attributi con il numero di pagine del documento.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Passare le impostazioni della stampante insieme agli altri parametri al documento di stampa.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Indici di inizio e fine pagina come definiti nel set di attributi.
+        //Indici di inizio e fine pagina come definiti nel set di attributi.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Seleziona il numero dell'ultima pagina da stampare su questo foglio di carta.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Passa attraverso le pagine selezionate dalla pagina corrente memorizzata a quella calcolata
+        // Passa attraverso le pagine selezionate dalla pagina corrente memorizzata a quella calcolata
         // ultima pagina.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Calcola gli indici di colonna e di riga.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // Il valore utile restituito è la scala in cui è stata renderizzata la pagina.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Disegna i bordi della pagina (la miniatura della pagina potrebbe essere più piccola della miniatura
+                //Disegna i bordi della pagina (la miniatura della pagina potrebbe essere più piccola della miniatura
                 // dimensione segnaposto).
                 if (mPrintPageBorders) {
                     // Ottieni la dimensione effettiva del 100% della pagina in punti.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Definire il numero di colonne e righe sul foglio per l'
-        //Carta con orientamento orizzontale.
+        // Carta con orientamento orizzontale.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ Congratulazioni! Hai stampato con successo un documento Word usando Aspose.Words
 
 ### D1: Posso stampare pagine specifiche di un documento utilizzando Aspose.Words per Java?
 
- Sì, puoi specificare l'intervallo di pagine quando stampi un documento. Nell'esempio di codice, abbiamo usato`attributes.add(new PageRanges(1, doc.getPageCount()))` per stampare tutte le pagine. Puoi regolare l'intervallo di pagine come necessario.
+ Sì, puoi specificare l'intervallo di pagine quando stampi un documento. Nell'esempio di codice, abbiamo usato`attributes.add(new PageRanges(1, doc.getPageCount()))`per stampare tutte le pagine. Puoi regolare l'intervallo di pagine come necessario.
 
 ### D2: Aspose.Words per Java è adatto alla stampa in batch?
 

@@ -92,4 +92,4 @@ Aspose.Words podporuje různé verze .NET Framework a .NET Core, což zajišťuj
 Ano, můžete odpojit záhlaví a zápatí pomocí metod API Aspose.Words a obnovit formátování jednotlivých dokumentů.
 
 ### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?
- Návštěva[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/)pro komplexní průvodce a reference API.
+ Návštěva[Aspose.Words pro .NET dokumentaci](https://reference.aspose.com/words/net/) pro komplexní průvodce a reference API.

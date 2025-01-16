@@ -15,7 +15,7 @@ Dobrý den, průvodci s dokumenty Word! Přemýšleli jste někdy o tom, co se d
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Knihovna Aspose.Words pro .NET: Chcete-li pracovat s dokumenty aplikace Word, budete potřebovat nejnovější verzi Aspose.Words pro .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Knihovna Aspose.Words pro .NET: Chcete-li pracovat s dokumenty aplikace Word, budete potřebovat nejnovější verzi Aspose.Words pro .NET. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí .NET, jako je Visual Studio, je nezbytné pro psaní a testování kódu.
 3. Základní znalost C#: Základní znalost C# vám pomůže procházet úryvky kódu a koncepty.
 4.  Ukázkový dokument Word: Mít a[Word dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) s připravenými makry VBA. Toto bude náš zdroj pro čtení maker.
@@ -130,7 +130,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 Makra VBA můžete číst z libovolného dokumentu aplikace Word, který obsahuje projekt VBA. Dokument musí být ve formátu s podporou maker (.docm).
 
 ### Jak upravím makra VBA po jejich přečtení?  
- Po přečtení maker můžete upravit`SourceCode` vlastnictví`VbaModule` objekt. Poté dokument uložte, abyste použili změny.
+ Po přečtení maker můžete upravit`SourceCode` vlastnictvím`VbaModule` objekt. Poté dokument uložte, abyste použili změny.
 
 ### Je Aspose.Words for .NET kompatibilní se všemi verzemi Wordu?  
 Aspose.Words for .NET je kompatibilní se širokou škálou verzí aplikace Word, což zajišťuje bezproblémovou funkčnost vašich dokumentů na různých platformách.

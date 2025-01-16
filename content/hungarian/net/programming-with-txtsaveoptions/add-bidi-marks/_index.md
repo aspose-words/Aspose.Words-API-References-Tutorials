@@ -15,7 +15,7 @@ A dokumentumfeldolgozás világában a kétirányú (Bidi) szöveg kezelése gya
 
 Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-1.  Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Letöltheti a[Aspose Letöltések oldal](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Letöltheti a[Aspose Letöltések oldal](https://releases.aspose.com/words/net/).
 2. .NET Framework vagy .NET Core: Győződjön meg arról, hogy a példák futtatásához kompatibilis .NET-környezet van beállítva.
 3. Alapszintű C# ismerete: C# programozási nyelv és alapvető műveletek ismerete .NET-ben.
 

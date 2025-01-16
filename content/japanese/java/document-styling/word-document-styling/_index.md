@@ -154,7 +154,7 @@ font.setEmboss(true);
 
 ## リストと表の扱い
 
-### 1. 番号付きリストと箇条書きリストを作成する
+### 1. 番号付きリストと箇条書きリストの作成
 
 ドキュメント内にリストを作成するには、DocumentBuilder と組み合わせて ListFormat クラスを使用します。
 
@@ -280,7 +280,7 @@ doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 Aspose.Words for Java を使用すると、ドキュメントを PDF、HTML などのさまざまな形式に変換できます。
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## 高度なスタイリングテクニック

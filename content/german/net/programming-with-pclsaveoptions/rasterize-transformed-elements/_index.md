@@ -56,7 +56,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
  Um das Dokument in das PCL-Format zu konvertieren, müssen Sie die Speicheroptionen konfigurieren. Dazu gehört das Festlegen der`SaveFormat` Zu`Pcl` und angeben, ob transformierte Elemente gerastert werden sollen.
 
 ```csharp
-//Konfigurieren von Sicherungsoptionen für die Konvertierung in das PCL-Format
+//Konfigurieren Sie Sicherungsoptionen für die Konvertierung in das PCL-Format
 PclSaveOptions saveOptions = new PclSaveOptions
 {
     SaveFormat = SaveFormat.Pcl,

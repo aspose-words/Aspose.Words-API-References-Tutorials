@@ -17,16 +17,16 @@ url: /zh-hant/python-net/document-structure-and-content-manipulation/document-fo
 
 在我們深入研究創建和掌握表單欄位之前，讓我們先設定環境並熟悉 Aspose.Words for Python。請依照以下步驟開始：
 
-1. **Install Aspose.Words:**首先使用以下 pip 指令安裝 Aspose.Words for Python 函式庫：
+1. 安裝 Aspose.Words：首先使用以下 pip 指令安裝 Aspose.Words for Python 函式庫：
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:**在 Python 腳本中匯入該程式庫以開始使用其功能。
+2. 導入庫：在 Python 腳本中導入庫以開始使用其功能。
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 設定到位後，讓我們繼續討論建立和管理表單欄位的核心概念。
@@ -41,7 +41,7 @@ url: /zh-hant/python-net/document-structure-and-content-manipulation/document-fo
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### 複選框和單選按鈕
@@ -50,12 +50,12 @@ text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeTyp
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### 下拉清單
@@ -64,7 +64,7 @@ radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OL
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### 日期選擇器
@@ -73,7 +73,7 @@ drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## 設定表單欄位的屬性
@@ -122,7 +122,7 @@ date_picker.text = "2023-08-31"
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 建立欄位後，您可以設定其屬性，例如名稱、預設值和占位符文字。讓我們看看如何做到這一點：
@@ -150,14 +150,14 @@ text_input_field.placeholder_text = "Enter your full name"
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 對於單選按鈕，您可以使用 OLE_OBJECT 形狀類型建立它們：
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 建立這些欄位後，您可以自訂它們的屬性，例如名稱、預設選擇和標籤文字：
@@ -183,7 +183,7 @@ radio_button.text = "Male"
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 建立下拉清單後，您可以指定使用者可用的選項清單：
@@ -211,7 +211,7 @@ drop_down.text = "USA"
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 建立日期選擇器後，您可以設定其屬性，例如名稱和預設日期：
@@ -228,11 +228,7 @@ date_picker.text = "2023-08-31"
 
 ## 結論
 
-掌握 Word 文件中的表單欄位和資料擷取是一項寶貴的技能，可讓您建立互動式且高效的資料收集文件。 Aspose.Words for Python 提供了一套全面的工具，用於從表單欄位建立、自訂和提取資料。從簡單的文字輸入欄位到複雜的計算和條件格式，可能性是巨大的。
-
 在本指南中，我們探討了表單欄位的基礎知識、表單欄位的類型、設定屬性以及自訂其行為。我們還討論了表單設計的最佳實踐，並提供了有關優化搜尋引擎文件表單的見解。
-
-透過利用 Aspose.Words for Python 的強大功能，您可以建立不僅可以有效擷取數據，還可以增強使用者參與度並簡化資料處理工作流程的文件。現在，您已準備好踏上成為 Word 文件中表單欄位和資料擷取大師的旅程。
 
 ## 常見問題解答
 

@@ -14,7 +14,7 @@ Szia kódolótárs! Ha Word-dokumentumokkal dolgozik .NET-ben, valószínűleg t
 ## Előfeltételek
 
 Mielőtt belemerülnénk a finom részletekbe, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
--  Aspose.Words for .NET: Győződjön meg arról, hogy a könyvtár telepítve van. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Győződjön meg arról, hogy a könyvtár telepítve van. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 - Fejlesztői környezet: Visual Studio vagy bármely más .NET-kompatibilis IDE.
 - C# alapismeretek: Kényelmesnek kell lennie a C# programozásban.
 - Fonts mappa: Az egyéni betűtípusokat tartalmazó könyvtár.
@@ -79,7 +79,7 @@ Ez a sor PDF-ként menti a dokumentumot az alkalmazott egyéni betűtípusokkal.
 ## GYIK
 
 ### Beállíthatok több betűtípus mappát?
- Igen, több betűtípusmappát is beállíthat a segítségével`SetFontsFolders` metódus, amely mappa útvonalak tömbjét fogadja el.
+ Igen, több betűtípusmappát is beállíthat a segítségével`SetFontsFolders` metódus, amely mappaútvonalak tömbjét fogadja el.
 
 ### Milyen fájlformátumokat támogat az Aspose.Words a dokumentumok mentéséhez?
 Az Aspose.Words különféle formátumokat támogat, beleértve a DOCX, PDF, HTML, EPUB és egyebeket.

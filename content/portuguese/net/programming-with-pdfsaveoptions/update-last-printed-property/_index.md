@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 
 ## Conclusão
 
-E aí está! Seguindo essas etapas, você pode facilmente atualizar a última propriedade impressa em um documento PDF usando o Aspose.Words para .NET. Este método garante que seu processo de gerenciamento de documentos permaneça eficiente e atualizado. Experimente e veja como ele simplifica seu fluxo de trabalho.
+aí está! Seguindo essas etapas, você pode facilmente atualizar a última propriedade impressa em um documento PDF usando o Aspose.Words para .NET. Este método garante que seu processo de gerenciamento de documentos permaneça eficiente e atualizado. Experimente e veja como ele simplifica seu fluxo de trabalho.
 
 ## Perguntas frequentes
 
@@ -80,7 +80,7 @@ Atualizar a última propriedade impressa ajuda a rastrear o uso do documento, es
 Sim, o Aspose.Words para .NET permite que você atualize várias propriedades do documento, como autor, título, assunto e muito mais.
 
 ### O Aspose.Words para .NET é gratuito?
-Aspose.Words para .NET oferece um teste gratuito que você pode baixar[aqui](https://releases.aspose.com/). Para uso prolongado, você precisará adquirir uma licença.
+ Aspose.Words para .NET oferece um teste gratuito que você pode baixar[aqui](https://releases.aspose.com/). Para uso prolongado, você precisará adquirir uma licença.
 
 ### Onde posso encontrar mais documentação sobre o Aspose.Words para .NET?
-Você pode encontrar documentação detalhada em Aspose.Words para .NET[aqui](https://reference.aspose.com/words/net/).
+ Você pode encontrar documentação detalhada em Aspose.Words para .NET[aqui](https://reference.aspose.com/words/net/).

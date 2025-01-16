@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## Αντικατάσταση κειμένου
-
-Μερικές φορές, μπορεί να θέλετε να αντικαταστήσετε συγκεκριμένο κείμενο με νέο περιεχόμενο. Ακολουθεί ένα παράδειγμα για το πώς να το κάνετε:
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## Αφαίρεση εικόνων
 
 Εάν πρέπει να αφαιρέσετε εικόνες από το έγγραφο, μπορείτε να χρησιμοποιήσετε μια παρόμοια προσέγγιση. Πρώτα, αναγνωρίστε τις εικόνες και, στη συνέχεια, αφαιρέστε τις:
@@ -92,22 +79,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## Εύρεση και αντικατάσταση με Regex
-
-Οι τυπικές εκφράσεις προσφέρουν έναν ισχυρό τρόπο εύρεσης και αντικατάστασης περιεχομένου:
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## Εξαγωγή Συγκεκριμένου Περιεχομένου

@@ -14,7 +14,7 @@ Czy chcesz poprawić swoje umiejętności formatowania dokumentów za pomocą Ja
 
 Formatowanie dokumentów odgrywa kluczową rolę w tworzeniu profesjonalnie wyglądających dokumentów. Nagłówki i stopki to niezbędne komponenty, które zapewniają kontekst i strukturę treści. Dzięki Aspose.Words for Java, potężnemu API do manipulacji dokumentami, możesz łatwo dostosować nagłówki i stopki, aby spełnić swoje specyficzne wymagania.
 
-tym przewodniku przyjrzymy się różnym aspektom stylizacji nagłówków i stopek dokumentów przy użyciu Aspose.Words for Java. Omówimy wszystko, od podstawowego formatowania po zaawansowane techniki, i przedstawimy praktyczne przykłady kodu, aby zilustrować każdy krok. Pod koniec tego artykułu będziesz mieć wiedzę i umiejętności, aby tworzyć dopracowane i wizualnie atrakcyjne dokumenty.
+W tym przewodniku przyjrzymy się różnym aspektom stylizacji nagłówków i stopek dokumentów przy użyciu Aspose.Words for Java. Omówimy wszystko, od podstawowego formatowania po zaawansowane techniki, i przedstawimy praktyczne przykłady kodu, aby zilustrować każdy krok. Pod koniec tego artykułu będziesz mieć wiedzę i umiejętności, aby tworzyć dopracowane i wizualnie atrakcyjne dokumenty.
 
 ## Stylizowanie nagłówków i stopek
 
@@ -87,7 +87,7 @@ Aby zapewnić bezproblemową pracę podczas stylizacji nagłówków i stopek dok
 
 ### Jak mogę usunąć nagłówki i stopki z określonych sekcji?
 
-Możesz usunąć nagłówki lub stopki z określonych sekcji, uzyskując dostęp do`HeaderFooter` obiekty i ustawianie ich zawartości na null. Na przykład:
+ Możesz usunąć nagłówki lub stopki z określonych sekcji, uzyskując dostęp do`HeaderFooter` obiekty i ustawianie ich zawartości na null. Na przykład:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Czy mogę dodać pola niestandardowe, np. tytuły dokumentów, do nagłówków lub stopek?
 
-Tak, możesz dodać pola niestandardowe do nagłówków lub stopek. Utwórz`Run` element i wstaw go do treści nagłówka lub stopki, podając żądany tekst. Dostosuj formatowanie według potrzeb.
+ Tak, możesz dodać pola niestandardowe do nagłówków lub stopek. Utwórz`Run` element i wstaw go do treści nagłówka lub stopki, podając żądany tekst. Dostosuj formatowanie według potrzeb.
 
 ### Czy Aspose.Words dla Java jest kompatybilny z różnymi formatami dokumentów?
 

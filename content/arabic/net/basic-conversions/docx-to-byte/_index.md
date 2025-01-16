@@ -32,7 +32,7 @@ using Aspose.Words;
 
 لتحويل ملف Docx إلى مصفوفة بايت، اتبع الخطوات التالية:
 ```csharp
-//قم بتحميل ملف Docx من القرص أو الدفق
+// قم بتحميل ملف Docx من القرص أو الدفق
 Document doc = new Document("input.docx");
 
 // حفظ المستند في MemoryStream
@@ -64,13 +64,13 @@ Document docFromBytes = new Document(inStream);
  لا، أنت بحاجة إلى ترخيص صالح لاستخدام Aspose.Words لـ .NET في الإنتاج. يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
 
 ### كيف يمكنني معرفة المزيد حول توثيق Aspose.Words لـ .NET؟
- قم بزيارة الوثائق[هنا](https://reference.aspose.com/words/net/)للحصول على أدلة شاملة ومراجع API.
+ قم بزيارة الوثائق[هنا](https://reference.aspose.com/words/net/) للحصول على أدلة شاملة ومراجع API.
 
 ### هل برنامج Aspose.Words مناسب للتعامل مع ملفات Docx الكبيرة؟
 نعم، يوفر Aspose.Words for .NET إدارة فعالة للذاكرة وتحسينات الأداء للتعامل مع المستندات الكبيرة.
 
 ### أين يمكنني الحصول على دعم المجتمع لـ Aspose.Words لـ .NET؟
- انضم إلى منتدى المجتمع[هنا](https://forum.aspose.com/c/words/8) لطرح الأسئلة ومشاركة المعرفة والتواصل مع المستخدمين الآخرين.
+ انضم إلى منتدى المجتمع[هنا](https://forum.aspose.com/c/words/8)لطرح الأسئلة ومشاركة المعرفة والتواصل مع المستخدمين الآخرين.
 
 ### هل يمكنني تجربة Aspose.Words for .NET مجانًا قبل الشراء؟
  نعم، يمكنك تنزيل نسخة تجريبية مجانية[هنا](https://releases.aspose.com/) لتقييم مميزاته وقدراته.

@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 
 您可以透過存取圖表的屬性並設定樣式、顏色等來自訂外觀。
 
-### 是否可以將多個系列添加到圖表中？
+### 是否可以為圖表添加多個系列？
 
 絕對地！您可以透過呼叫將多個系列新增到圖表中`Series.Add`使用不同的數據多次方法。
 

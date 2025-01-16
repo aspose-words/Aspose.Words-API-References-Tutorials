@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-De`ListIndent` metoden drar in listan och skapar en underlista. Du skapar nu en hierarkisk lista, ungefär som en kapslad att-göra-lista.
+ De`ListIndent` metoden drar in listan och skapar en underlista. Du skapar nu en hierarkisk lista, ungefär som en kapslad att-göra-lista.
 
 ## Slutsats
 

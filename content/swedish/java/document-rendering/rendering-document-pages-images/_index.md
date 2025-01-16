@@ -48,7 +48,7 @@ Aspose.Words tillhandahåller olika bildsparalternativ för att styra utdataform
 
 ```java
 // Initiera bildsparalternativ
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Steg 4: Gör dokumentsidor som bilder

@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## الخطوة 3: تهيئة DocumentBuilder
 
-ال`DocumentBuilder` تُعد الفئة أداة أساسية لإضافة المحتوى إلى المستند. يمكنك اعتبارها بمثابة قلم يكتب على لوحة مستند Word.
+ ال`DocumentBuilder` تُعد الفئة أداة أساسية لإضافة المحتوى إلى المستند. يمكنك اعتبارها بمثابة قلم يكتب على لوحة مستند Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

@@ -61,7 +61,7 @@ Setelah tabel dapat diakses, langkah berikutnya adalah mengambil baris pertama. 
 Row firstRow = table.FirstRow;
 ```
 
-Itu`FirstRow` properti memberi kita baris pertama dalam tabel. Sekarang, kita siap untuk mulai mengubah formatnya.
+ Itu`FirstRow` properti memberi kita baris pertama dalam tabel. Sekarang, kita siap untuk mulai mengubah formatnya.
 
 ## Langkah 4: Ubah Batas Baris
 

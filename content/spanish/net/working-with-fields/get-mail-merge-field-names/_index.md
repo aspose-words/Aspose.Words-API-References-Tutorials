@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-El`Aspose.Words` El espacio de nombres le brinda acceso a todas las clases y métodos necesarios para manipular documentos de Word, mientras que`System` Se utiliza para funciones básicas como la salida de consola.
+ El`Aspose.Words` El espacio de nombres le brinda acceso a todas las clases y métodos necesarios para manipular documentos de Word, mientras que`System` Se utiliza para funciones básicas como la salida de consola.
 
 Desglosemos el proceso de extracción de nombres de campos de combinación de correspondencia en una guía clara, paso a paso.
 
@@ -73,7 +73,7 @@ Encabezado: Extraer nombres de campos de combinación de correspondencia
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-El`GetFieldNames()`El método devuelve una matriz de cadenas, cada una de las cuales representa el nombre de un campo de combinación de correspondencia que se encuentra en el documento. Estos son los marcadores de posición que verá en su documento de Word.
+ El`GetFieldNames()`El método devuelve una matriz de cadenas, cada una de las cuales representa el nombre de un campo de combinación de correspondencia que se encuentra en el documento. Estos son los marcadores de posición que verá en su documento de Word.
 
 ## Paso 4: Mostrar el número de campos de combinación
 

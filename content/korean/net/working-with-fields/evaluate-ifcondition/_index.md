@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-그만큼`EvaluateCondition` 메서드는 다음을 반환합니다.`FieldIfComparisonResult` 조건 평가 결과를 나타내는 열거형입니다. 이 열거형은 다음과 같은 값을 가질 수 있습니다.`True`, `False` , 또는`Unknown`.
+ 그만큼`EvaluateCondition` 메서드는 다음을 반환합니다.`FieldIfComparisonResult` 조건 평가 결과를 나타내는 열거형입니다. 이 열거형은 다음과 같은 값을 가질 수 있습니다.`True`, `False` , 또는`Unknown`.
 
 ## 4단계: 결과 표시
 
@@ -93,7 +93,7 @@ IF 필드는 문서에 조건 논리를 삽입할 수 있는 Word 필드입니�
  다음을 사용하여 IF 필드를 삽입할 수 있습니다.`InsertField` 의 방법`DocumentBuilder` 평가하려는 조건을 지정하는 클래스입니다.
 
 ###  무엇을`EvaluateCondition` method do?
-그만큼`EvaluateCondition` 이 메서드는 IF 필드에 지정된 조건을 평가하고 조건이 참인지 거짓인지를 나타내는 결과를 반환합니다.
+ 그만큼`EvaluateCondition` 이 메서드는 IF 필드에 지정된 조건을 평가하고 조건이 참인지 거짓인지를 나타내는 결과를 반환합니다.
 
 ### IF 필드에 복잡한 조건을 사용할 수 있나요?
 네, 필요에 따라 다양한 표현식과 비교를 지정하여 IF 필드에 복잡한 조건을 사용할 수 있습니다.

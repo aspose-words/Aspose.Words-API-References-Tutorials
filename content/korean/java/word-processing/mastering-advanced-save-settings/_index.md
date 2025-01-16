@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /ko/java/word-processing/mastering-advanced-save-settings/
 ---
+
 문서 처리 기술을 한 단계 업그레이드할 준비가 되셨나요? 이 포괄적인 가이드에서는 Aspose.Words for Java를 사용하여 문서의 고급 저장 설정을 마스터하는 방법을 자세히 설명합니다. 노련한 개발자이든 방금 시작한 개발자이든 Aspose.Words for Java를 사용하여 문서 조작의 복잡한 내용을 안내해 드립니다.
 
 ## 소개
@@ -25,13 +26,13 @@ Aspose.Words for Java는 개발자가 Word 문서를 프로그래밍 방식으�
 ```java
 // 문서 형식을 DOCX로 설정하세요
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
-// 페이지 방향을 가로로 설정하세요
+//페이지 방향을 가로로 설정하세요
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## 페이지 여백 제어
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 인치
 pageSetup.setRightMargin(72.0); // 1 인치
 pageSetup.setTopMargin(36.0); // 0.5 인치
 pageSetup.setBottomMargin(36.0); // 0.5 인치
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## 헤더와 푸터 관리
@@ -56,11 +57,11 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 ```java
 // 첫 번째 페이지에 헤더 추가
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## 크로스 플랫폼 보기를 위한 글꼴 임베딩
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## 문서 보호
@@ -85,7 +86,7 @@ doc.save("embedded_fonts.docx", SaveFormat.DOCX);
 // 비밀번호로 문서를 보호하세요
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## 워터마크 사용자 정의
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## 문서 크기 최적화
@@ -111,7 +112,7 @@ doc.save("watermarked_document.docx", SaveFormat.DOCX);
 // 문서 크기 최적화
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## 다양한 형식으로 내보내기
@@ -121,7 +122,7 @@ doc.save("optimized_document.docx", SaveFormat.DOCX);
 ```java
 // PDF로 내보내기
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## 문서 생성 자동화
@@ -133,7 +134,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## 문서 메타데이터 작업
@@ -143,9 +144,8 @@ doc.save("automated_document.docx", SaveFormat.DOCX);
 ```java
 // 문서 메타데이터에 액세스하고 수정합니다.
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## 문서 버전 처리
@@ -153,18 +153,22 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 협업 환경에서는 문서 버전 관리가 중요합니다. 문서의 다양한 버전을 효과적으로 관리하는 방법을 알아보세요.
 
 ```java
-// 문서 버전 비교
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+// 수정 사항이 있는 문서를 비교하면 예외가 발생합니다.
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## 고급 문서 비교
+
+Aspose.Words for Java가 제공하는 고급 기술을 사용하여 문서를 정확하게 비교합니다.
 
 ```java
 // 고급 문서 비교
@@ -217,7 +221,7 @@ Aspose.Words for Java는 PDF, HTML, DOCX 등 다양한 형식으로 문서를 �
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Java용 Aspose.Words는 일괄 문서 생성에 적합합니까?
@@ -228,7 +232,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### 두 Word 문서의 차이점을 비교하려면 어떻게 해야 하나요?

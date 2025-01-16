@@ -8,7 +8,7 @@ weight: 10
 url: /fr/java/document-styling/word-document-styling/
 ---
 
-Si vous cherchez à améliorer l'apparence visuelle de vos documents et à créer des résultats élégants et professionnels à l'aide d'Aspose.Words pour Java, vous êtes au bon endroit. Dans ce guide étape par étape, nous explorerons le processus de mise en forme et de traitement des documents à l'aide d'Aspose.Words pour Java. Que vous soyez un développeur Java chevronné ou que vous débutiez, vous trouverez ce guide utile pour transformer vos documents en œuvres d'art bien formatées et esthétiques.
+Si vous souhaitez améliorer l'apparence visuelle de vos documents et créer des résultats élégants et professionnels à l'aide d'Aspose.Words pour Java, vous êtes au bon endroit. Dans ce guide étape par étape, nous explorerons le processus de mise en forme et de traitement des documents à l'aide d'Aspose.Words pour Java. Que vous soyez un développeur Java chevronné ou que vous débutiez, vous trouverez ce guide utile pour transformer vos documents en œuvres d'art bien formatées et esthétiques.
 
 ## Introduction
 
@@ -280,7 +280,7 @@ Pour diviser un document, vous pouvez enregistrer des sections spécifiques dans
 Aspose.Words pour Java vous permet de convertir des documents en différents formats, tels que PDF, HTML, etc.
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Techniques de coiffure avancées

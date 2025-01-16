@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## Formattazione di base del testo
 
- La formattazione del testo in un documento Word è essenziale per enfatizzare i punti importanti e migliorare la leggibilità. Aspose.Words consente di applicare varie opzioni di formattazione, come**bold**, *italic*, sottolineato e dimensione del carattere:
+La formattazione del testo in un documento Word è essenziale per enfatizzare i punti importanti e migliorare la leggibilità. Aspose.Words consente di applicare varie opzioni di formattazione, come grassetto, corsivo, sottolineato e dimensione del carattere:
 
 ```python
 # Apply basic text formatting
@@ -172,8 +172,6 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 ## Conclusione
 
 In questa guida completa, abbiamo esplorato le capacità di Aspose.Words per Python nella formattazione di paragrafi e testo nei documenti Word. Utilizzando questa potente libreria, gli sviluppatori possono automatizzare senza problemi la formattazione dei documenti, garantendo un aspetto professionale e raffinato per i loro contenuti.
-
----
 
 ## Domande frequenti
 

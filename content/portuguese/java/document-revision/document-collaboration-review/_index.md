@@ -70,7 +70,7 @@ A colaboração e revisão de documentos são aspectos críticos do gerenciament
 
 ### Posso rastrear alterações em documentos do Word usando o Aspose.Words para Java?
 
-Sim, o Aspose.Words para Java permite que você rastreie alterações em documentos do Word. Você pode usar o`startTrackRevisions` método para habilitar o rastreamento de alterações.
+ Sim, o Aspose.Words para Java permite que você rastreie alterações em documentos do Word. Você pode usar o`startTrackRevisions` método para habilitar o rastreamento de alterações.
 
 ### Como posso revisar as alterações feitas em um documento?
 

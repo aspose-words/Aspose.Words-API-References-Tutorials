@@ -16,7 +16,7 @@ Ha valaha is meg akart védeni egy Word-dokumentumot, de mégis lehetővé tette
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
 
 1.  Aspose.Words for .NET: Ha még nem tette meg, töltse le[itt](https://releases.aspose.com/words/net/).
-2.  Érvényes Aspose licenc: Kaphat ideiglenes licencet[itt](https://purchase.aspose.com/temporary-license/).
+2. Érvényes Aspose licenc: Kaphat ideiglenes licencet[itt](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Bármelyik legújabb verziónak jól kell működnie.
 4. C# és .NET alapismeretek: Ez segít követni a kódot.
 
@@ -35,7 +35,7 @@ using Aspose.Words.Editing;
 
 Először is hozzunk létre egy új C#-projektet a Visual Studióban.
 
-1. Visual Studio megnyitása: Kezdje a Visual Studio megnyitásával és egy új konzolalkalmazás-projekt létrehozásával.
+1. A Visual Studio megnyitása: Kezdje a Visual Studio megnyitásával és egy új konzolalkalmazás-projekt létrehozásával.
 2. Az Aspose.Words telepítése: Az Aspose.Words telepítéséhez használja a NuGet Package Managert. Ezt a következő parancs futtatásával teheti meg a Package Manager konzolon:
    ```sh
    Install-Package Aspose.Words

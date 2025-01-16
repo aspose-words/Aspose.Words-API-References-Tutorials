@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-De`PreferredWidth.Auto` instelling laat deze cel uitzetten of inkrimpen op basis van de ruimte die overblijft nadat de andere cellen zijn meegerekend. Dit zorgt ervoor dat de tabelindeling er evenwichtig en professioneel uitziet.
+ De`PreferredWidth.Auto` instelling laat deze cel uitzetten of inkrimpen op basis van de ruimte die overblijft nadat de andere cellen zijn meegerekend. Dit zorgt ervoor dat de tabelindeling er evenwichtig en professioneel uitziet.
 
 ## Stap 5: Het document afronden en opslaan
 

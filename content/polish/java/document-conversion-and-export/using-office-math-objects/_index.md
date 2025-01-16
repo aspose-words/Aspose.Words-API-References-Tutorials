@@ -10,7 +10,7 @@ url: /pl/java/document-conversion-and-export/using-office-math-objects/
 
 ## Wprowadzenie do korzystania z obiektów Office Math w Aspose.Words dla Java
 
-dziedzinie przetwarzania dokumentów w Javie Aspose.Words jest niezawodnym i potężnym narzędziem. Jednym z jego mniej znanych klejnotów jest możliwość pracy z obiektami Office Math. W tym kompleksowym przewodniku zagłębimy się w to, jak wykorzystać obiekty Office Math w Aspose.Words dla Javy do manipulowania i wyświetlania równań matematycznych w dokumentach. 
+W dziedzinie przetwarzania dokumentów w Javie Aspose.Words jest niezawodnym i potężnym narzędziem. Jednym z jego mniej znanych klejnotów jest możliwość pracy z obiektami Office Math. W tym kompleksowym przewodniku zagłębimy się w to, jak wykorzystać obiekty Office Math w Aspose.Words dla Javy do manipulowania i wyświetlania równań matematycznych w dokumentach. 
 
 ## Wymagania wstępne
 
@@ -21,7 +21,7 @@ Zanim przejdziemy do zawiłości pracy z Office Math w Aspose.Words for Java, up
 
 ## Zrozumienie obiektów matematycznych w biurze
 
-Obiekty Office Math służą do reprezentowania równań matematycznych w dokumencie. Aspose.Words for Java zapewnia solidne wsparcie dla Office Math, umożliwiając kontrolowanie ich wyświetlania i formatowania. 
+Obiekty Office Math służą do reprezentowania równań matematycznych w dokumencie. Aspose.Words for Java zapewnia solidne wsparcie dla Office Math, umożliwiając sterowanie ich wyświetlaniem i formatowaniem. 
 
 ## Przewodnik krok po kroku
 
@@ -45,7 +45,7 @@ OfficeMath officeMath = (OfficeMath) doc.getChild(NodeType.OFFICE_MATH, 0, true)
 
 ### Ustaw typ wyświetlania
 
- Możesz kontrolować sposób wyświetlania równania w dokumencie. Użyj`setDisplayType` metoda określająca, czy ma być wyświetlany w tekście czy w jego wierszu:
+ Możesz kontrolować sposób wyświetlania równania w dokumencie. Użyj`setDisplayType` metoda określająca, czy ma być wyświetlany w linii z tekstem czy w jego wierszu:
 
 ```java
 officeMath.setDisplayType(OfficeMathDisplayType.DISPLAY);
@@ -67,7 +67,7 @@ Na koniec zapisz dokument ze zmodyfikowanym równaniem Office Math:
 doc.save("Your Directory Path" + "ModifiedOfficeMath.docx");
 ```
 
-## Kompletny kod źródłowy do wykorzystania obiektów Office Math w Aspose.Words dla Java
+## Kompletny kod źródłowy do wykorzystania obiektów matematycznych pakietu Office w Aspose.Words dla języka Java
 
 ```java
         Document doc = new Document("Your Directory Path" + "Office math.docx");
@@ -80,7 +80,7 @@ doc.save("Your Directory Path" + "ModifiedOfficeMath.docx");
 
 ## Wniosek
 
-tym przewodniku przyjrzeliśmy się sposobowi wykorzystania obiektów Office Math w Aspose.Words for Java. Nauczyłeś się, jak ładować dokument, uzyskiwać dostęp do równań Office Math oraz manipulować ich wyświetlaniem i formatowaniem. Ta wiedza pozwoli Ci tworzyć dokumenty z pięknie renderowaną treścią matematyczną.
+W tym przewodniku przyjrzeliśmy się sposobowi wykorzystania obiektów Office Math w Aspose.Words for Java. Nauczyłeś się, jak ładować dokument, uzyskiwać dostęp do równań Office Math oraz manipulować ich wyświetlaniem i formatowaniem. Ta wiedza pozwoli Ci tworzyć dokumenty z pięknie renderowaną treścią matematyczną.
 
 ## Najczęściej zadawane pytania
 
@@ -90,7 +90,7 @@ Obiekty Office Math w Aspose.Words dla Java umożliwiają reprezentację i manip
 
 ### Czy mogę inaczej uporządkować równania programu Office Math w moim dokumencie?
 
- Tak, możesz kontrolować wyrównanie równań Office Math. Użyj`setJustification` metoda umożliwiająca określenie opcji wyrównania, takich jak wyrównanie do lewej, do prawej lub do środka.
+ Tak, możesz kontrolować wyrównanie równań Office Math. Użyj`setJustification`metoda umożliwiająca określenie opcji wyrównania, takich jak wyrównanie do lewej, do prawej lub do środka.
 
 ### Czy Aspose.Words for Java nadaje się do obsługi złożonych dokumentów matematycznych?
 

@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-Trong mã này, thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ.
+Trong mã này, thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ.
 
 ## Bước 2: Đặt vị trí chú thích
 
@@ -93,4 +93,4 @@ Aspose.Words for .NET được thiết kế cho các ứng dụng .NET, nhưng b
 
 ### Tôi có thể tìm tài liệu chi tiết hơn về Aspose.Words cho .NET ở đâu?
 
-Tài liệu chi tiết có sẵn[đây](https://reference.aspose.com/words/net/).
+ Tài liệu chi tiết có sẵn[đây](https://reference.aspose.com/words/net/).

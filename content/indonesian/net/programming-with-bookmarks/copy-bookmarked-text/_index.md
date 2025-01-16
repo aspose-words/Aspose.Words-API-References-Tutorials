@@ -112,7 +112,7 @@ Selesai! Anda telah berhasil menyalin teks yang ditandai dari satu dokumen Word 
 Ya, Anda dapat mengulangi beberapa penanda dan menggunakan metode yang sama untuk menyalin masing-masing penanda.
 
 ### Apa yang terjadi jika penanda buku tidak ditemukan?
-Itu`Range.Bookmarks` properti akan kembali`null`, jadi pastikan Anda menangani kasus ini untuk menghindari pengecualian.
+ Itu`Range.Bookmarks` properti akan kembali`null`, jadi pastikan Anda menangani kasus ini untuk menghindari pengecualian.
 
 ### Bisakah saya mempertahankan format penanda buku asli?
  Tentu saja! Menggunakan`ImportFormatMode.KeepSourceFormatting` memastikan format asli dipertahankan.

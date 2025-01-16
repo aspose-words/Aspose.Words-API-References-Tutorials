@@ -89,7 +89,7 @@ Gratulacje! Udało Ci się wstawić wykres bąbelkowy do dokumentu Word za pomoc
 
 ### Czy mogę dostosować wygląd wykresu bąbelkowego?
 
- Oczywiście! Aspose.Words dla .NET oferuje szeroki zakres opcji dostosowywania, od kolorów i etykiet po formatowanie serii danych. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Oczywiście! Aspose.Words dla .NET oferuje szeroki zakres opcji dostosowywania, od kolorów i etykiet po formatowanie serii danych. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### Czy można dodać wiele wykresów do jednego dokumentu?
 

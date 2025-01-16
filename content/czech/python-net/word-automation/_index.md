@@ -13,7 +13,7 @@ Automatizace aplikace Word je zásadní změnou ve správě dokumentů a zpracov
 
 ## Zvládnutí automatizace Python Word
 
-V těchto výukových programech vývojáři prozkoumají, jak využít sílu Aspose.Words pro Python k automatizaci zpracování textových dokumentů. Naučte se snadno vytvářet, upravovat a přizpůsobovat dokumenty aplikace Word. Výukové programy pokrývají základní témata, včetně vkládání textu, obrázků, tabulek a použití formátování, což umožňuje vývojářům automatizovat složité úlohy správy dokumentů.
+těchto výukových programech vývojáři prozkoumají, jak využít sílu Aspose.Words pro Python k automatizaci zpracování textových dokumentů. Naučte se snadno vytvářet, upravovat a přizpůsobovat dokumenty aplikace Word. Výukové programy pokrývají základní témata, včetně vkládání textu, obrázků, tabulek a použití formátování, což umožňuje vývojářům automatizovat složité úlohy správy dokumentů.
 
 ## Zvýšení efektivity správy dokumentů
 

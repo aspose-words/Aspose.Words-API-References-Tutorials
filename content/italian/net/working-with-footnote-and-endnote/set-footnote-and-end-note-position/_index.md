@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-In questo codice, sostituisci`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo in cui si trova il documento.
+In questo codice, sostituisci`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo in cui si trova il documento.
 
 ## Passaggio 2: imposta la posizione della nota a piè di pagina
 
@@ -93,4 +93,4 @@ Aspose.Words per .NET è progettato per le applicazioni .NET, ma è possibile ut
 
 ### Dove posso trovare una documentazione più dettagliata per Aspose.Words per .NET?
 
-È disponibile la documentazione dettagliata[Qui](https://reference.aspose.com/words/net/).
+ È disponibile la documentazione dettagliata[Qui](https://reference.aspose.com/words/net/).

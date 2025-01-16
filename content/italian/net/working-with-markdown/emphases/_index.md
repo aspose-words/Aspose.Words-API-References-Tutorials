@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-IL`dataDir` variabile è un segnaposto per la directory in cui salverai il tuo file Markdown. Assicurati di sostituire "YOUR DOCUMENT DIRECTORY" con il percorso effettivo.
+ IL`dataDir` variabile è un segnaposto per la directory in cui salverai il tuo file Markdown. Assicurati di sostituire "YOUR DOCUMENT DIRECTORY" con il percorso effettivo.
 
 ## Fase 2: Scrittura di testo normale
 

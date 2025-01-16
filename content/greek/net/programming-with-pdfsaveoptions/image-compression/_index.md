@@ -15,7 +15,7 @@ url: /el/net/programming-with-pdfsaveoptions/image-compression/
 
 Πριν βουτήξετε στο σεμινάριο, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
-1.  Aspose.Words για .NET: Πρέπει να έχετε εγκατεστημένο το Aspose.Words για .NET. Μπορείτε να το κατεβάσετε από το[Aspose website](https://releases.aspose.com/words/net/).
+1. Aspose.Words για .NET: Πρέπει να έχετε εγκατεστημένο το Aspose.Words για .NET. Μπορείτε να το κατεβάσετε από το[Aspose website](https://releases.aspose.com/words/net/).
 
 2. Βασικές γνώσεις C#: Η εξοικείωση με τον προγραμματισμό C# θα σας βοηθήσει να κατανοήσετε τα παραδείγματα κώδικα που παρέχονται σε αυτό το σεμινάριο.
 

@@ -56,7 +56,7 @@ Document doc = new Document("input.docx");
 
 ```java
 // Сохранить документ как PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Шаг 4: Конвертация в другие форматы
@@ -67,21 +67,21 @@ doc.save("output.pdf", SaveFormat.PDF);
 
 ```java
 // Сохраните документ как RTF
-doc.save("output.rtf", SaveFormat.RTF);
+doc.save("output.rtf");
 ```
 
 ### Преобразование в HTML
 
 ```java
 // Сохранить документ как HTML
-doc.save("output.html", SaveFormat.HTML);
+doc.save("output.html");
 ```
 
 ### Конвертация в EPUB
 
 ```java
 // Сохраните документ как EPUB
-doc.save("output.epub", SaveFormat.EPUB);
+doc.save("output.epub");
 ```
 
 ## Советы по эффективному преобразованию документов

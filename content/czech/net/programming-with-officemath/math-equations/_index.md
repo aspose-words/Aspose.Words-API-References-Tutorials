@@ -15,7 +15,7 @@ Jste připraveni ponořit se do světa matematických rovnic v dokumentech aplik
 
 Než se pustíme do podrobných detailů, ujistěte se, že máte vše, co potřebujete, abyste spolu s tímto tutoriálem dodrželi:
 
-1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud ho ještě nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud ho ještě nemáte, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Visual Studio: Bude fungovat jakákoli verze sady Visual Studio, ale ujistěte se, že je nainstalována a připravena k použití.
 3. Základní znalost C#: Měli byste být spokojeni se základním programováním v C#. Nebojte se; uděláme věci jednoduché!
 4. Dokument aplikace Word: Mějte dokument aplikace Word s několika matematickými rovnicemi. S těmi budeme pracovat v našich příkladech.

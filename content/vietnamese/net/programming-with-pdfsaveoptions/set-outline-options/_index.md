@@ -52,7 +52,7 @@ Bây giờ, chúng ta hãy thiết lập các tùy chọn phác thảo.
 
 ### Đặt Tiêu đề Phác thảo Mức độ
 
-Các`HeadingsOutlineLevels` Thuộc tính này xác định số cấp độ tiêu đề cần đưa vào phác thảo PDF. Ví dụ, nếu bạn đặt thành 3, nó sẽ bao gồm tối đa ba cấp độ tiêu đề trong phác thảo PDF.
+ Các`HeadingsOutlineLevels` Thuộc tính này xác định số cấp độ tiêu đề cần đưa vào phác thảo PDF. Ví dụ, nếu bạn đặt thành 3, nó sẽ bao gồm tối đa ba cấp độ tiêu đề trong phác thảo PDF.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Thiết lập mức phác thảo mở rộng
 
-Các`ExpandedOutlineLevels`thuộc tính kiểm soát số lượng cấp độ của phác thảo sẽ được mở rộng theo mặc định khi PDF được mở. Đặt thành 1 sẽ mở rộng các tiêu đề cấp cao nhất, cung cấp chế độ xem rõ ràng các phần chính.
+ Các`ExpandedOutlineLevels`thuộc tính kiểm soát số lượng cấp độ của phác thảo sẽ được mở rộng theo mặc định khi PDF được mở. Đặt thành 1 sẽ mở rộng các tiêu đề cấp cao nhất, cung cấp chế độ xem rõ ràng các phần chính.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

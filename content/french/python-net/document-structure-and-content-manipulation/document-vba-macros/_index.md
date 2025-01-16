@@ -20,7 +20,7 @@ Dans le paysage numérique actuel, la gestion et le traitement efficaces des doc
 Pour vous lancer dans ce voyage d'automatisation, vous devez avoir installé Aspose.Words pour Python. Vous pouvez le télécharger à partir du[Site Web d'Aspose](https://releases.aspose.com/words/python/). Une fois installé, vous pouvez lancer votre projet Python et importer les modules nécessaires.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Comprendre les macros VBA et leur rôle
@@ -46,7 +46,7 @@ La création de documents par programmation est simplifiée avec Aspose.Words Py
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ Les macros VBA intégrées à Aspose.Words Python ouvrent la voie à l'extractio
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content

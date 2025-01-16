@@ -72,14 +72,6 @@ modified_doc = Document("modified_document.docx")
 comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
 ```
 
-## Подчеркивая различия
-
-Выделите различия между документами:
-
-```python
-comparison.highlight_changes()
-```
-
 ## Сохранение результата сравнения
 
 Сохраните результат сравнения в новый файл:

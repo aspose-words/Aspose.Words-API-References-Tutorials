@@ -78,7 +78,7 @@ Ahora es el momento de definir las propiedades del eje X. Esto incluye configura
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // Medido en unidades de visualización del eje Y (centenas).
+xAxis.CrossesAt = 3; //Medido en unidades de visualización del eje Y (centenas).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

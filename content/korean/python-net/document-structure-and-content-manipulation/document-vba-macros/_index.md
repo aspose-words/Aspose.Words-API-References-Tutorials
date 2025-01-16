@@ -20,7 +20,7 @@ url: /ko/python-net/document-structure-and-content-manipulation/document-vba-mac
 이 자동화 여정을 시작하려면 Aspose.Words for Python이 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/python/). 설치가 완료되면 Python 프로젝트를 시작하고 필요한 모듈을 가져올 수 있습니다.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## VBA 매크로와 그 역할 이해
@@ -46,7 +46,7 @@ Aspose.Words Python을 사용하면 프로그래밍 방식으로 문서를 만�
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ Aspose.Words Python과 통합된 VBA 매크로는 데이터 추출 및 조작에
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content

@@ -14,7 +14,7 @@ En esta guía completa, profundizaremos en el mundo de las formas de documentos 
 
 ## Introducción a las formas de documentos
 
-Antes de comenzar con el código, configuremos nuestro entorno. Asegúrese de tener Aspose.Words para Java integrado en su proyecto. Si aún no lo ha hecho, puede descargarlo desde el sitio web de Aspose.[Descargar Aspose.Words para Java](https://releases.aspose.com/words/java/)
+ Antes de comenzar con el código, configuremos nuestro entorno. Asegúrese de tener Aspose.Words para Java integrado en su proyecto. Si aún no lo ha hecho, puede descargarlo desde el sitio web de Aspose.[Descargar Aspose.Words para Java](https://releases.aspose.com/words/java/)
 
 ## Cómo agregar formas a los documentos
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

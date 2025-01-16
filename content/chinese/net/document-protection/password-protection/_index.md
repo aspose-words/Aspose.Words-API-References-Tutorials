@@ -18,7 +18,7 @@ url: /zh/net/document-protection/password-protection/
 1.  Aspose.Words for .NET：确保您拥有 Aspose.Words for .NET 库。您可以[点击下载](https://releases.aspose.com/words/net/).
 2. 开发环境：Visual Studio 或任何其他 C# 开发环境。
 3. 基本 C# 知识：对 C# 编程的基本了解。
-4. Aspose 许可证：从以下位置获取许可证[这里](https://purchase.aspose.com/buy)或使用[临时执照](https://purchase.aspose.com/temporary-license/)进行评估。
+4.  Aspose 许可证：从以下位置获取许可证[这里](https://purchase.aspose.com/buy)或使用[临时执照](https://purchase.aspose.com/temporary-license/)进行评估。
 
 ## 导入命名空间
 

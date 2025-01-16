@@ -35,15 +35,12 @@ Aspose.Words for Java는 개발자가 Word 문서를 손쉽게 만들고, 수정
 Aspose.Words for Java를 사용하여 문서를 페이지별로 분할하려면 다음 단계를 따르세요.
 
 ```java
-// Aspose.Words for Java를 사용하여 문서를 페이지별로 분할하는 Java 코드
-Document doc = new Document("input.docx");
+Document doc = new Document("Your Directory Path" + "Big document.docx");
 int pageCount = doc.getPageCount();
-
-for (int i = 0; i < pageCount; i++) {
-    Document pageDoc = new Document();
-    pageDoc.getFirstSection().getBody().appendChild(
-            doc.getLastSection().getBody().getChildNodes().get(i).clone(true));
-    pageDoc.save("output_page_" + (i + 1) + ".docx");
+for (int page = 0; page < pageCount; page++)
+{
+    Document extractedPage = doc.extractPages(page, 1);
+    extractedPage.save("Your Directory Path" + "SplitDocument.PageByPage_" + (page + 1) + ".docx");
 }
 ```
 
@@ -110,48 +107,28 @@ for (int i = 0; i < doc.getSections().getCount(); i++) {
 }
 ```
 
-## 8. 고급 문서 분할 기술
-
-### 8.1 특정 섹션을 별도의 문서로 분할
-
-어떤 경우에는 특정 섹션만 별도의 문서로 분할하고 싶을 수 있습니다. Aspose.Words for Java를 사용하면 분할할 섹션을 결정하기 위한 사용자 지정 기준을 정의할 수 있습니다.
-
-## 8.2 사용자 정의 기준에 따른 문서 분할
-
-콘텐츠, 키워드 또는 메타데이터와 같은 특정 기준에 따라 문서를 분할하기 위한 사용자 지정 논리를 구현할 수 있습니다. 이러한 유연성 덕분에 고유한 요구 사항에 맞게 문서 분할 프로세스를 조정할 수 있습니다.
-
-## 9. 분할 문서 결합
-
-Aspose.Words for Java는 또한 분할된 문서를 다시 단일 문서로 결합하는 기능을 제공합니다. 이 기능은 개별 섹션을 통합된 문서로 병합해야 할 때 유용합니다.
-
-## 10. 성능 고려 사항
-
-대용량 문서를 다룰 때는 성능 최적화를 고려하는 것이 필수적입니다. Aspose.Words
-
- Java는 대용량 파일을 효율적으로 처리하도록 설계되었지만, 개발자는 모범 사례를 따르면 성능을 더욱 향상시킬 수 있습니다.
-
-## 11. 결론
+## 결론
 
 이 가이드에서는 Aspose.Words for Java를 사용하여 문서를 쉽고 효율적으로 분할하는 방법을 살펴보았습니다. 큰 문서를 더 작고 관리하기 쉬운 부분으로 나누면 개발자는 특정 섹션으로 작업하고 문서 처리 작업을 간소화할 수 있습니다. Aspose.Words for Java는 페이지, 단락, 제목 및 섹션을 기준으로 문서를 분할하는 다양한 방법을 제공하여 개발자가 분할 프로세스를 특정 요구 사항에 맞게 조정할 수 있는 유연성을 제공합니다.
 
-## 12. 자주 묻는 질문
+## 자주 묻는 질문
 
-### Q1. Aspose.Words for Java는 DOC와 DOCX와 같은 서로 다른 형식의 문서를 분할할 수 있습니까?
+### Aspose.Words for Java는 DOC, DOCX 등 서로 다른 형식의 문서를 분할할 수 있나요?
 
 네, Aspose.Words for Java를 사용하면 DOC, DOCX 등을 비롯한 다양한 형식의 문서를 분할할 수 있습니다.
 
-### Q2. Aspose.Words for Java는 다른 Java 버전과 호환되나요?
+### Aspose.Words for Java는 다른 Java 버전과 호환됩니까?
 
 네, Aspose.Words for Java는 여러 Java 버전과 호환되어 프로젝트와 원활하게 통합됩니다.
 
-### Q3. Aspose.Words for Java를 사용하여 암호로 보호된 문서를 분할할 수 있나요?
+### Aspose.Words for Java를 사용하여 암호로 보호된 문서를 분할할 수 있나요?
 
 네, Aspose.Words for Java는 올바른 비밀번호를 제공하는 한 암호로 보호된 문서를 분할하는 것을 지원합니다.
 
-### Q4. 라이브러리를 처음 사용하는 경우 Aspose.Words for Java를 어떻게 시작할 수 있습니까?
+### Aspose.Words for Java를 처음 사용하는 경우 어떻게 시작해야 합니까?
 
  탐색을 시작할 수 있습니다[Java API 참조를 위한 Aspose.Words](https://reference.aspose.com/words/java/) 그리고 Aspose.Words for Java에서 제공하는 코드 예제. 설명서에는 라이브러리의 기능과 효과적으로 사용하는 방법에 대한 자세한 정보가 들어 있습니다.
 
-### Q5. Aspose.Words for Java는 엔터프라이즈 레벨 문서 처리에 적합합니까?
+### Aspose.Words for Java는 기업 수준의 문서 처리에 적합합니까?
 
 물론입니다! Aspose.Words for Java는 견고성과 광범위한 기능 세트로 인해 다양한 문서 처리 작업을 위한 엔터프라이즈 수준 애플리케이션에서 널리 사용됩니다.

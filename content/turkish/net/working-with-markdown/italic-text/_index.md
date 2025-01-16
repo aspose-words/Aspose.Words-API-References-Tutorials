@@ -38,7 +38,7 @@ Bu ad alanları, italik metin de dahil olmak üzere çeşitli biçimleri uygulam
 
 ## Adım 1: Bir DocumentBuilder Oluşturun
 
-The`DocumentBuilder` sınıf, belgeye içerik eklemenize ve biçimlendirmenize yardımcı olur. Bir`DocumentBuilder` nesne, metin eklemek ve düzenlemek için bir araç ayarlıyorsunuz.
+ The`DocumentBuilder` sınıf, belgeye içerik eklemenize ve biçimlendirmenize yardımcı olur. Bir`DocumentBuilder` nesne, metin eklemek ve düzenlemek için bir araç ayarlıyorsunuz.
 
 ```csharp
 // Belgeyle çalışmak için bir DocumentBuilder örneği oluşturun.

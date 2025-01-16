@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-在這裡，我們定義用於保存文件的目錄路徑，並初始化一個新文件以及文件產生器。
+在這裡，我們定義用於保存文件的目錄路徑，並初始化一個新文件以及文件建構器。
 
 ## 第 2 步：新增部分
 

@@ -39,7 +39,7 @@ doc.save(outPath + "WorkingWithHyphenation.HyphenateWordsOfLanguages.pdf");
 
 Nu u de woordenboeken hebt geregistreerd, is het tijd om afbrekingen toe te passen op uw documenten. Aspose.Words maakt dit proces eenvoudig en zorgt ervoor dat uw documenten er gepolijst en professioneel uitzien.
 
-## 5. Afbreekwoordenboeken laden
+## 5. Laden van afbreekwoordenboeken
 
 In sommige gevallen moet u mogelijk dynamisch afbreekwoordenboeken laden. Hiermee kunt u zich aanpassen aan verschillende taalvereisten. Zo laadt u een afbreekwoordenboek voor een specifieke taal:
 

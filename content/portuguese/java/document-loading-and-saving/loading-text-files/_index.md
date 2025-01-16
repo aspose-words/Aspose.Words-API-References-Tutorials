@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-// A quarta lista, com espaço em branco entre o número da lista e o conteúdo do item da lista,
+// quarta lista, com espaço em branco entre o número da lista e o conteúdo do item da lista,
 // só será detectado como uma lista se "DetectNumberingWithWhitespaces" em um objeto LoadOptions for definido como verdadeiro,
 // para evitar que parágrafos que começam com números sejam erroneamente detectados como listas.
 TxtLoadOptions loadOptions = new TxtLoadOptions();
@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
-Neste exemplo, carregamos um documento de texto e cortamos os espaços iniciais e finais usando`TxtLeadingSpacesOptions.TRIM` e`TxtTrailingSpacesOptions.TRIM`.
+ Neste exemplo, carregamos um documento de texto e cortamos os espaços iniciais e finais usando`TxtLeadingSpacesOptions.TRIM` e`TxtTrailingSpacesOptions.TRIM`.
 
 ## Etapa 3: Controlando a direção do texto
 
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-Este código define a direção do documento para detecção automática (`DocumentDirection.AUTO`) e carrega um documento de texto com texto em hebraico. Você pode ajustar a direção do documento conforme necessário.
+Este código define a direção do documento para detecção automática (`DocumentDirection.AUTO`e carrega um documento de texto com texto em hebraico. Você pode ajustar a direção do documento conforme necessário.
 
 ## Código fonte completo para carregar arquivos de texto com Aspose.Words para Java
 
@@ -179,11 +179,11 @@ Para começar a usar o Aspose.Words para Java, siga estas etapas:
 
 ### Como lidar com espaços em documentos de texto carregados?
 
- Você pode controlar como os espaços iniciais e finais são tratados em documentos de texto carregados usando`TxtLoadOptions` . Opções como`TxtLeadingSpacesOptions` e`TxtTrailingSpacesOptions` permitem que você corte ou preserve espaços conforme necessário. Consulte a seção "Opções de tratamento de espaços" neste guia para ver um exemplo.
+ Você pode controlar como os espaços iniciais e finais são tratados em documentos de texto carregados usando`TxtLoadOptions` . Opções como`TxtLeadingSpacesOptions` e`TxtTrailingSpacesOptions`permitem que você corte ou preserve espaços conforme necessário. Consulte a seção "Opções de tratamento de espaços" neste guia para ver um exemplo.
 
 ### Qual é o significado da direção do texto no Aspose.Words para Java?
 
-direção do texto é essencial para documentos que contêm scripts ou idiomas mistos, como hebraico ou árabe. O Aspose.Words para Java fornece opções para especificar a direção do texto, garantindo a renderização e a formatação adequadas do texto nesses idiomas. A seção "Controlando a direção do texto" neste guia demonstra como definir a direção do texto.
+A direção do texto é essencial para documentos que contêm scripts ou idiomas mistos, como hebraico ou árabe. O Aspose.Words para Java fornece opções para especificar a direção do texto, garantindo a renderização e a formatação adequadas do texto nesses idiomas. A seção "Controlando a direção do texto" neste guia demonstra como definir a direção do texto.
 
 ### Onde posso encontrar mais recursos e suporte para o Aspose.Words para Java?
 

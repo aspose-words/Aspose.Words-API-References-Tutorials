@@ -17,7 +17,7 @@ url: /el/java/document-security/securing-documents-passwords/
 
 ## Ρύθμιση του Aspose.Words για Java
 
- Προτού ασχοληθούμε με την ασφάλεια εγγράφων, ας βεβαιωθούμε ότι έχετε ρυθμίσει το Aspose.Words για Java στο περιβάλλον Java σας. Εάν δεν το έχετε κάνει ήδη, μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/java/).
+Προτού ασχοληθούμε με την ασφάλεια εγγράφων, ας βεβαιωθούμε ότι έχετε ρυθμίσει το Aspose.Words για Java στο περιβάλλον Java σας. Εάν δεν το έχετε κάνει ήδη, μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/java/).
 
 ## Ασφάλιση εγγράφων: Βήμα προς βήμα
 

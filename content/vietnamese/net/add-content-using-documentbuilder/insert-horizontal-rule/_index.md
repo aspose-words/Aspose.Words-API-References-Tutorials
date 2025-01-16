@@ -47,7 +47,7 @@ Mở môi trường phát triển của bạn (như Visual Studio) và tạo m�
 
 ### Tạo một tài liệu mới
 
- Trong tệp chương trình chính của bạn, hãy bắt đầu bằng cách tạo một phiên bản mới của`Document`lớp học. Đây sẽ là trang giấy trắng của chúng ta.
+ Trong tệp chương trình chính của bạn, hãy bắt đầu bằng cách tạo một phiên bản mới của`Document` lớp học. Đây sẽ là trang giấy trắng của chúng ta.
 
 ```csharp
 Document doc = new Document();
@@ -113,7 +113,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ### Làm thế nào để bắt đầu sử dụng Aspose.Words cho .NET?
 
- Bạn có thể bắt đầu bằng cách tải xuống thư viện từ[trang web](https://releases.aspose.com/words/net/) và thêm nó vào dự án .NET của bạn.
+Bạn có thể bắt đầu bằng cách tải xuống thư viện từ[trang web](https://releases.aspose.com/words/net/) và thêm nó vào dự án .NET của bạn.
 
 ### Tôi có thể sử dụng Aspose.Words miễn phí không?
 
@@ -121,8 +121,8 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ### Tôi có thể tìm thêm hướng dẫn về Aspose.Words cho .NET ở đâu?
 
-Các[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) là nơi tuyệt vời để tìm hướng dẫn và ví dụ chi tiết.
+ Các[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) là nơi tuyệt vời để tìm hướng dẫn và ví dụ chi tiết.
 
 ### Tôi có thể nhận được hỗ trợ như thế nào nếu gặp vấn đề?
 
-Bạn có thể nhận được hỗ trợ bằng cách truy cập[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8).
+ Bạn có thể nhận được hỗ trợ bằng cách truy cập[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8).

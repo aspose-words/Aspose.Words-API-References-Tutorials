@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Bắt đầu theo dõi các bản sửa đổi
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //Chèn văn bản có theo dõi sửa đổi
+builder.Writeln("Inserted"); // Chèn văn bản có theo dõi sửa đổi
 doc.StopTrackRevisions();
 ```
 

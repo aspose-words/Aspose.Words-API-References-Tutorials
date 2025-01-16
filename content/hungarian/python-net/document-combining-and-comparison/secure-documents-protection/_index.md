@@ -38,14 +38,6 @@ hozzáférés korlátozásához jelszót adhat a dokumentumhoz:
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## Szerkesztési engedélyek korlátozása
-
-A szerkesztési engedélyek megadásával szabályozhatja, hogy ki módosíthatja a dokumentumot:
-
-```python
-protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
-protection.set_editing_groups(["Editors"])
-```
 
 ## A dokumentum tartalmának titkosítása
 
@@ -60,8 +52,10 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 Adjon hozzá digitális aláírást a dokumentum hitelességének biztosításához:
 
 ```python
-digital_signature = aw.digital_signatures.DigitalSignature(doc)
-digital_signature.sign("certificate.pfx", "signature_password")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
+			
+aw.digitalsignatures.DigitalSignatureUtil.sign(dst_document_path, dst_document_path, certificate_holder, sign_options)
 ```
 
 ## Vízjel a biztonság érdekében
@@ -71,15 +65,6 @@ A vízjelek megakadályozhatják a jogosulatlan megosztást:
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
-```
-
-## Érzékeny információk törlése
-
-Az érzékeny adatok végleges eltávolítása:
-
-```python
-redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
-doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
 ## Következtetés
@@ -102,7 +87,7 @@ Az Aspose.Words olyan titkosítási lehetőségeket kínál, mint az AES_256 a d
 
 ### Hogyan javítja a digitális aláírás a dokumentumok biztonságát?
 
-A digitális aláírások biztosítják a dokumentumok hitelességét és integritását, megnehezítve a jogosulatlan felek számára a tartalom manipulálását.
+digitális aláírások biztosítják a dokumentumok hitelességét és integritását, megnehezítve a jogosulatlan felek számára a tartalom manipulálását.
 
 ### Hogyan távolíthatok el véglegesen bizalmas információkat egy dokumentumból?
 

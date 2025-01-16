@@ -21,7 +21,7 @@ Ami a dokumentumfeldolgozást illeti, az Aspose.Words for .NET egy olyan erőmű
 
 ## OpenAI a dokumentum-összesítéshez
 
- Álmodozott már arról, hogy hosszú dokumentumait rövid, áttekinthető összefoglalókká alakítja? A[Nyílt mesterséges intelligencia modellel dolgozni](./working-with-open-ai-model/) a tutorial a válaszod! Lehetővé teszi az OpenAI modellek gyakorlati felhasználását az összegzési feladatokhoz. Titkos fegyverének tekintheti a dokumentumfeldolgozás világában – amely nemcsak időt takarít meg, hanem azt is biztosítja, hogy soha ne maradjon le a kritikus információkról.
+ Álmodozott már arról, hogy hosszú dokumentumait rövid, áttekinthető összefoglalókká alakítsa? A[Nyílt mesterséges intelligencia modellel dolgozni](./working-with-open-ai-model/) a tutorial a válaszod! Lehetővé teszi az OpenAI modellek gyakorlati felhasználását az összegzési feladatokhoz. Titkos fegyverének tekintheti a dokumentumfeldolgozás világában – amely nemcsak időt takarít meg, hanem azt is biztosítja, hogy soha ne maradjon le a kritikus információkról.
 
 ## Összegzési technikák elsajátítása
 

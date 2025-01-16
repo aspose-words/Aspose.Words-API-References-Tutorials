@@ -53,18 +53,18 @@ Wyjaśnienie:
 Następnie musimy ustawić hasło do ochrony przed zapisem. Hasło to może mieć długość do 15 znaków.
 
 ```csharp
-//Wprowadź hasło składające się z maksymalnie 15 znaków.
+// Wprowadź hasło składające się z maksymalnie 15 znaków.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Wyjaśnienie:
 
-- Ten`SetPassword` metoda jest wywoływana na`WriteProtection` własność dokumentu.
+-  Ten`SetPassword` metoda jest wywoływana na`WriteProtection` własność dokumentu.
 - Podajemy hasło (w tym przypadku „MojeHasło”), które będzie wymagane do usunięcia zabezpieczenia.
 
 ## Krok 3: Włącz rekomendację tylko do odczytu
 
-W tym kroku zalecamy, aby dokument był tylko do odczytu. Oznacza to, że po otwarciu dokumentu zostanie wyświetlony monit o otwarcie go w trybie tylko do odczytu.
+tym kroku zalecamy, aby dokument był tylko do odczytu. Oznacza to, że po otwarciu dokumentu zostanie wyświetlony monit o otwarcie go w trybie tylko do odczytu.
 
 ```csharp
 // Zaleca się, aby dokument był dostępny tylko do odczytu.
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Wyjaśnienie:
 
-- Ten`ReadOnlyRecommended` właściwość jest ustawiona na`true`.
+-  Ten`ReadOnlyRecommended` właściwość jest ustawiona na`true`.
 - Spowoduje to, że użytkownicy zostaną poproszeni o otwarcie dokumentu w trybie tylko do odczytu, chociaż mogą zignorować to zalecenie.
 
 ## Krok 4: Zastosuj ochronę tylko do odczytu
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Wyjaśnienie:
 
-- Ten`Protect` metoda jest wywoływana w dokumencie z`ProtectionType.ReadOnly` jako argument.
+-  Ten`Protect` metoda jest wywoływana w dokumencie z`ProtectionType.ReadOnly` jako argument.
 - Ta metoda wymusza ochronę „tylko do odczytu”, uniemożliwiając jakąkolwiek modyfikację dokumentu bez podania hasła.
 
 ## Krok 5: Zapisz dokument
@@ -101,12 +101,12 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Wyjaśnienie:
 
-- Ten`Save` Metoda ta jest wywoływana w dokumencie, podając ścieżkę i nazwę pliku.
+-  Ten`Save` Metoda ta jest wywoływana w dokumencie, podając ścieżkę i nazwę pliku.
 - Dokument zostanie zapisany z włączonym zabezpieczeniem „tylko do odczytu”.
 
 ## Wniosek
 
-I masz! Udało Ci się utworzyć dokument Word chroniony tylko do odczytu przy użyciu Aspose.Words dla .NET. Ta funkcja zapewnia, że zawartość dokumentu pozostanie nienaruszona i niezmieniona, zapewniając dodatkową warstwę bezpieczeństwa. Niezależnie od tego, czy udostępniasz poufne informacje, czy dokumenty prawne, ochrona tylko do odczytu jest niezbędnym narzędziem w Twoim arsenale zarządzania dokumentami.
+masz! Udało Ci się utworzyć dokument Word chroniony tylko do odczytu przy użyciu Aspose.Words dla .NET. Ta funkcja zapewnia, że zawartość dokumentu pozostanie nienaruszona i niezmieniona, zapewniając dodatkową warstwę bezpieczeństwa. Niezależnie od tego, czy udostępniasz poufne informacje, czy dokumenty prawne, ochrona tylko do odczytu jest niezbędnym narzędziem w Twoim arsenale zarządzania dokumentami.
 
 ## Najczęściej zadawane pytania
 

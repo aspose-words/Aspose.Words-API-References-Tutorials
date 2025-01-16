@@ -46,7 +46,7 @@ Itt létrehozunk egy új dokumentumot, és inicializálunk egy DocumentBuilder o
 
 ## 2. lépés: Az első cella beszúrása
 
-Most illesszük be az első cellát a táblázatunkba, és állítsuk be a függőleges egyesítést az egyesített tartomány első cellájára.
+Most illesszük be a táblázat első celláját, és állítsuk be a függőleges összevonását az egyesített tartomány első cellájára.
 
 ```csharp
 builder.InsertCell();

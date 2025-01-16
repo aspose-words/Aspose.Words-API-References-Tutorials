@@ -100,7 +100,7 @@ Terkadang, kotak teks mungkin merupakan bagian dari rantai, dengan kotak lain ya
 textBox.Previous?.BreakForwardLink();
 ```
 
-Itu`?.` operator memastikan bahwa metode hanya dipanggil jika`Previous` tidak null, mencegah potensi kesalahan runtime.
+ Itu`?.` operator memastikan bahwa metode hanya dipanggil jika`Previous` tidak null, mencegah potensi kesalahan runtime.
 
 ## Kesimpulan
 

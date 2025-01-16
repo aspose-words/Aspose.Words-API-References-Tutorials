@@ -52,7 +52,7 @@ Ahora, configuremos las opciones de esquema.
 
 ### Establecer niveles de esquema de encabezados
 
-El`HeadingsOutlineLevels` La propiedad define cuántos niveles de encabezados se deben incluir en el esquema del PDF. Por ejemplo, si la establece en 3, incluirá hasta tres niveles de encabezados en el esquema del PDF.
+ El`HeadingsOutlineLevels` La propiedad define cuántos niveles de encabezados se deben incluir en el esquema del PDF. Por ejemplo, si la establece en 3, incluirá hasta tres niveles de encabezados en el esquema del PDF.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Establecer niveles de esquema ampliados
 
-El`ExpandedOutlineLevels`La propiedad controla cuántos niveles del esquema se deben expandir de forma predeterminada cuando se abre el PDF. Si se establece en 1, se expandirán los encabezados de nivel superior, lo que dará una vista clara de las secciones principales.
+ El`ExpandedOutlineLevels`La propiedad controla cuántos niveles del esquema se deben expandir de forma predeterminada cuando se abre el PDF. Si se establece en 1, se expandirán los encabezados de nivel superior, lo que dará una vista clara de las secciones principales.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

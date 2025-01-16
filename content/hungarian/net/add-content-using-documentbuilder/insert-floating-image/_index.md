@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-A`Document` objektum képviseli a Word dokumentumot, és a`DocumentBuilder` segít tartalmat adni hozzá.
+ A`Document` objektum képviseli a Word dokumentumot, és a`DocumentBuilder` segít tartalmat adni hozzá.
 
 ## 3. lépés: Határozza meg a kép elérési útját
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 Az egyes paraméterek jelentése:
-- `imagePath`A képfájl elérési útja.
+- `imagePath`: A képfájl elérési útja.
 - `RelativeHorizontalPosition.Margin`: A margóhoz viszonyított vízszintes helyzet.
 - `100`: Vízszintes eltolás a margótól (pontokban).
 - `RelativeVerticalPosition.Margin`: A margóhoz viszonyított függőleges helyzet.

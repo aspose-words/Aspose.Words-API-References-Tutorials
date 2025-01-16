@@ -77,7 +77,7 @@ ChartSeries series0 = shape.Chart.Series[0];
 
 ## 4. lépés: Az adatcímkék testreszabása
 
-Az adatcímkék testreszabhatók különböző információk megjelenítéséhez. A címkéket úgy konfiguráljuk, hogy a jelmagyarázat kulcsát, a sorozat nevét és értékét mutassák, miközben elrejti a kategória nevét és százalékát.
+Az adatcímkék testreszabhatók különféle információk megjelenítéséhez. A címkéket úgy konfiguráljuk, hogy a jelmagyarázat kulcsát, a sorozat nevét és értékét mutassák, miközben elrejtik a kategória nevét és százalékát.
 
 ```csharp
 ChartDataLabelCollection labels = series0.DataLabels;

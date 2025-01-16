@@ -62,7 +62,7 @@ builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;
 builder.Write("Hello");
 ```
 
-ในข้อความสั้นๆ นี้:
+ในสคริปท์นี้:
 - `builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;` กำหนดรูปแบบของย่อหน้าเป็น "ชื่อเรื่อง"
 - `builder.Write("Hello");` เขียนข้อความ "สวัสดี" ลงในย่อหน้าที่จัดรูปแบบ
 

@@ -35,7 +35,7 @@ doc.save("Your Directory Path" + "BasicMailMerge.docx");
 
 ### 2. Kapslad brevkoppling
 
-För kapslade sammanslagningar använder du följande kod:
+För kapslade sammanslagningar, använd följande kod:
 
 ```java
 DataSet pizzaDs = new DataSet();

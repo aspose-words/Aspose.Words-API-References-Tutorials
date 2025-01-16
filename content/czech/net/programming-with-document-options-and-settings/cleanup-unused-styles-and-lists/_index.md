@@ -90,7 +90,7 @@ A tady to máte! Úspěšně jste vyčistili svůj dokument aplikace Word odstra
 Aspose.Words for .NET je výkonná knihovna, která umožňuje vytvářet, upravovat a převádět dokumenty aplikace Word programově pomocí C#.
 
 ### Mohu odstranit nepoužívané styly i seznamy současně?
-Ano, můžete nastavit obojí`UnusedLists` a`UnusedStyles` na`true` v`CleanupOptions` k odstranění obojího.
+Ano, můžete nastavit obojí`UnusedLists` a`UnusedStyles` na`true` v`CleanupOptions` odstranit obojí.
 
 ### Je možné čištění vrátit zpět?
 Ne, jakmile je čištění dokončeno a dokument je uložen, nelze změny vrátit zpět. Vždy mějte zálohu původního dokumentu.

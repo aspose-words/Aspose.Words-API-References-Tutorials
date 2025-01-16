@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 การตั้งรหัสผ่านเป็นทางเลือก แต่สามารถเพิ่มระดับความปลอดภัยให้กับเอกสารของคุณก่อนที่คุณจะแก้ไข
 
 ```csharp
-//กรอกรหัสผ่านที่มีความยาวไม่เกิน 15 ตัวอักษร
+// กรอกรหัสผ่านที่มีความยาวไม่เกิน 15 ตัวอักษร
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ### จะเกิดอะไรขึ้นหากเอกสารมีการป้องกันประเภทอื่นอยู่แล้ว?
 
-การ`doc.Protect(ProtectionType.NoProtection)` วิธีการนี้รับรองว่าการป้องกันทุกประเภทจะถูกลบออกจากเอกสาร
+ การ`doc.Protect(ProtectionType.NoProtection)` วิธีการนี้รับรองว่าการป้องกันทุกประเภทจะถูกลบออกจากเอกสาร
 
 ### มีวิธีทราบหรือไม่ว่าเอกสารเป็นแบบอ่านอย่างเดียวก่อนที่จะลบข้อจำกัด?
 

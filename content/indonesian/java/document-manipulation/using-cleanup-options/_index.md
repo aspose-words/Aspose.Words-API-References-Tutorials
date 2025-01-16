@@ -150,7 +150,7 @@ Opsi pembersihan di Aspose.Words untuk Java adalah pengaturan yang memungkinkan 
 
 ###  Apa tujuan dari`REMOVE_UNUSED_REGIONS` cleanup option?
 
-Itu`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Opsi ini digunakan untuk menghapus area dalam dokumen yang tidak memiliki data terkait selama proses penggabungan surat. Opsi ini membantu menjaga dokumen Anda tetap rapi dengan membuang placeholder yang tidak digunakan.
+ Itu`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Opsi ini digunakan untuk menghapus area dalam dokumen yang tidak memiliki data terkait selama proses penggabungan surat. Opsi ini membantu menjaga dokumen Anda tetap rapi dengan membuang placeholder yang tidak digunakan.
 
 ### Bisakah saya menghapus baris tabel kosong dari dokumen menggunakan Aspose.Words untuk Java?
 
@@ -166,7 +166,7 @@ Itu`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Opsi ini digunakan untuk meng
 
 ###  Apa perbedaan antara`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-Itu`REMOVE_EMPTY_FIELDS` opsi menghapus bidang gabungan yang tidak memiliki data atau kosong selama proses gabungan surat. Di sisi lain,`REMOVE_UNUSED_FIELDS`Opsi menghapus bidang gabungan yang tidak diisi dengan data selama penggabungan. Pilihan di antara keduanya bergantung pada apakah Anda ingin menghapus bidang tanpa konten atau bidang yang tidak digunakan dalam operasi penggabungan tertentu.
+ Itu`REMOVE_EMPTY_FIELDS` opsi menghapus bidang gabungan yang tidak memiliki data atau kosong selama proses gabungan surat. Di sisi lain,`REMOVE_UNUSED_FIELDS`Opsi menghapus bidang gabungan yang tidak diisi dengan data selama penggabungan. Pilihan di antara keduanya bergantung pada apakah Anda ingin menghapus bidang tanpa konten atau bidang yang tidak digunakan dalam operasi penggabungan tertentu.
 
 ### Bagaimana cara mengaktifkan penghapusan paragraf dengan tanda baca?
 

@@ -19,7 +19,7 @@ Masa inşa etme maceramıza başlamadan önce, tüm işlerin yolunda olduğundan
 - .NET Framework (4.0 veya üzeri)
 - Aspose.Words for .NET kütüphanesi
 
- Eğer henüz Aspose.Words'ünüz yoksa, kolayca yapabilirsiniz[buradan indirin](https://releases.aspose.com/words/net/) . Ayrıca bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) suları test etmek istiyorsanız. Dalmaya hazır olanlar için,[lisans satın al](https://purchase.aspose.com/buy) veya değerlendirmek için daha fazla zamana ihtiyacınız varsa, bir tane alın[geçici lisans](https://purchase.aspose.com/temporary-license/).
+ Eğer henüz Aspose.Words'ünüz yoksa, kolayca yapabilirsiniz[buradan indirin](https://releases.aspose.com/words/net/) . Ayrıca bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) suları test etmek istiyorsanız. Dalmaya hazır olanlar için,[lisans satın al](https://purchase.aspose.com/buy)veya değerlendirmek için daha fazla zamana ihtiyacınız varsa, bir tane alın[geçici lisans](https://purchase.aspose.com/temporary-license/).
 
 ## Ad Alanlarını İçe Aktar
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Kullanarak`StartTable` Aspose.Words'e bir tablo oluşturmak üzere olduğumuzu söylüyoruz.`InsertCell` yöntem ilk hücreyi ekler ve`AutoFit` sütunlarımızın sabit genişliklere sahip olmasını sağlar.
+ Kullanarak`StartTable` , Aspose.Words'e bir tablo oluşturmak üzere olduğumuzu söylüyoruz.`InsertCell` yöntem ilk hücreyi ekler ve`AutoFit` sütunlarımızın sabit genişliklere sahip olmasını sağlar.
 
 ## Adım 3: İlk Satırı Biçimlendirin
 

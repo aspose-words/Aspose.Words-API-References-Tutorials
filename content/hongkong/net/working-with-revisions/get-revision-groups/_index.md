@@ -55,7 +55,7 @@ foreach (RevisionGroup group in doc.Revisions.Groups)
 
 ## 第 3 步：迭代修訂組
 
-在此步驟中，您將迭代每個修訂組以檢索詳細信息，例如修訂作者、修訂類型以及與每個修訂相關的文字。
+在此步驟中，您將迭代每個修訂組以檢索詳細信息，例如修訂作者、修訂類型以及與每個修訂關聯的文本。
 
 ```csharp
 foreach (RevisionGroup group in doc.Revisions.Groups)

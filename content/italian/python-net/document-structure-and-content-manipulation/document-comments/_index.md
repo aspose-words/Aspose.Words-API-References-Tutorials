@@ -8,7 +8,7 @@ weight: 11
 url: /it/python-net/document-structure-and-content-manipulation/document-comments/
 ---
 
-I commenti svolgono un ruolo cruciale nella collaborazione e revisione dei documenti, consentendo a più persone di condividere i propri pensieri e suggerimenti all'interno di un documento Word. Aspose.Words for Python fornisce una potente API che consente agli sviluppatori di lavorare senza sforzo con i commenti nei documenti Word. In questo articolo, esploreremo come utilizzare le funzionalità di commento nei documenti Word utilizzando Aspose.Words for Python.
+commenti svolgono un ruolo cruciale nella collaborazione e revisione dei documenti, consentendo a più persone di condividere i propri pensieri e suggerimenti all'interno di un documento Word. Aspose.Words for Python fornisce una potente API che consente agli sviluppatori di lavorare senza sforzo con i commenti nei documenti Word. In questo articolo, esploreremo come utilizzare le funzionalità di commento nei documenti Word utilizzando Aspose.Words for Python.
 
 ## Introduzione
 
@@ -58,7 +58,7 @@ for comment in doc.comments:
 
 ## Modifica e risoluzione dei commenti
 
-commenti sono spesso soggetti a modifiche. Aspose.Words per Python consente di modificare i commenti esistenti e contrassegnarli come risolti:
+I commenti sono spesso soggetti a modifiche. Aspose.Words per Python consente di modificare i commenti esistenti e contrassegnarli come risolti:
 
 ```python
 # Modify a comment's text
@@ -66,19 +66,17 @@ comment = doc.comments[0]
 comment.text = "Updated insight: " + comment.text
 
 # Resolve a comment
-comment.resolved = True
-```
+comments = doc.get_child_nodes(aw.NodeType.COMMENT, True)
 
-## Gestione delle risposte e delle conversazioni
+parent_comment = comments[0].as_comment()
+for child in parent_comment.replies:
+	child_comment = child.as_comment()
+	# Get comment parent and status.
+	print(child_comment.ancestor.id)
+	print(child_comment.done)
 
-I commenti possono far parte delle conversazioni, con le risposte che aggiungono profondità alle discussioni. Aspose.Words for Python ti consente di gestire le risposte ai commenti:
-
-```python
-# Add a reply to a comment
-reply = aw.Comment(doc, "Alice", "I agree with John.")
-reply.parent_comment = comment
-reply.date_time = aw.DateTime.now()
-comment.replies.add(reply)
+	# And update comment Done mark.
+	child_comment.done = True
 ```
 
 ## Formattazione e stile dei commenti
@@ -117,7 +115,7 @@ doc.import_comments("comments.xml")
 ## Buone pratiche per l'utilizzo dei commenti
 
 - Utilizza i commenti per fornire contesto, spiegazioni e suggerimenti.
-- I commenti devono essere concisi e pertinenti al contenuto.
+- commenti devono essere concisi e pertinenti al contenuto.
 - Risolvere i commenti quando i relativi punti sono stati affrontati.
 - Utilizzare le risposte per promuovere discussioni approfondite.
 

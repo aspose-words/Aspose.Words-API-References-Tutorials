@@ -89,7 +89,7 @@ Evet, Aspose.Words for Java, DOCX, PDF, HTML ve daha fazlası dahil olmak üzere
 
 ### S3: Aspose.Words for Java için herhangi bir lisanslama seçeneği mevcut mu?
 
- Evet, lisanslama seçeneklerini inceleyebilir ve Aspose.Words for Java'yı satın alabilirsiniz.[Aspose web sitesi](https://purchase.aspose.com/buy).
+Evet, lisanslama seçeneklerini inceleyebilir ve Aspose.Words for Java'yı satın alabilirsiniz.[Aspose web sitesi](https://purchase.aspose.com/buy).
 
 ### S4: Satın almadan önce Aspose.Words for Java'yı deneyebilir miyim?
 
@@ -97,6 +97,6 @@ Evet, Aspose.Words for Java, DOCX, PDF, HTML ve daha fazlası dahil olmak üzere
 
 ### S5: Aspose.Words for Java hakkında nereden destek alabilir veya soru sorabilirim?
 
-Herhangi bir soru veya destek için şu adresi ziyaret edin:[Aspose.Words for Java forumu](https://forum.aspose.com/).
+ Herhangi bir soru veya destek için şu adresi ziyaret edin:[Aspose.Words for Java forumu](https://forum.aspose.com/).
 
 Artık Aspose.Words for Java ile şekillerin işlenmesinde ustalaştığınıza göre, belge işleme projelerinizde bu çok yönlü API'nin tüm potansiyelini ortaya çıkarmaya hazırsınız. İyi kodlamalar!

@@ -90,7 +90,7 @@ Office Math-objecten in Aspose.Words voor Java stellen u in staat wiskundige ver
 
 ### Kan ik Office Math-vergelijkingen anders uitlijnen in mijn document?
 
- Ja, u kunt de uitlijning van Office Math-vergelijkingen regelen. Gebruik de`setJustification` Methode om uitlijningsopties op te geven, zoals links, rechts of gecentreerd.
+ Ja, u kunt de uitlijning van Office Math-vergelijkingen regelen. Gebruik de`setJustification`Methode om uitlijningsopties op te geven, zoals links, rechts of gecentreerd.
 
 ### Is Aspose.Words voor Java geschikt voor het verwerken van complexe wiskundige documenten?
 

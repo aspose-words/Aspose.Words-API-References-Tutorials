@@ -33,7 +33,7 @@ Analizziamo ora il processo per rendere il testo in grassetto in un documento Wo
 
 ## Passaggio 1: inizializzare DocumentBuilder
 
-IL`DocumentBuilder` class fornisce un modo rapido e semplice per aggiungere contenuti al tuo documento. Inizializziamolo.
+ IL`DocumentBuilder` class fornisce un modo rapido e semplice per aggiungere contenuti al tuo documento. Inizializziamolo.
 
 ```csharp
 // Utilizzare un generatore di documenti per aggiungere contenuti al documento.

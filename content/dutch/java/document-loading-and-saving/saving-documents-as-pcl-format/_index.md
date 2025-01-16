@@ -10,7 +10,7 @@ url: /nl/java/document-loading-and-saving/saving-documents-as-pcl-format/
 
 ## Inleiding tot het opslaan van documenten als PCL-formaat in Aspose.Words voor Java
 
-Op het gebied van documentmanipulatie onderscheidt Aspose.Words voor Java zich als een krachtige tool. Hiermee kunt u verschillende bewerkingen op Word-documenten programmatisch uitvoeren, waaronder het opslaan van documenten in verschillende formaten. Een van die formaten is PCL (Printer Command Language), dat veel wordt gebruikt voor het afdrukken van documenten op laserprinters. In deze uitgebreide gids leiden we u door het proces van het opslaan van documenten in PCL-formaat met Aspose.Words voor Java.
+Op het gebied van documentmanipulatie onderscheidt Aspose.Words voor Java zich als een krachtige tool. Hiermee kunt u verschillende bewerkingen op Word-documenten programmatisch uitvoeren, waaronder het opslaan van documenten in verschillende formaten. Een van die formaten is PCL (Printer Command Language), dat veel wordt gebruikt voor het afdrukken van documenten op laserprinters. In deze uitgebreide gids leiden we u door het proces van het opslaan van documenten in PCL-formaat met behulp van Aspose.Words voor Java.
 
 ## Vereisten
 
@@ -35,7 +35,7 @@ Vervolgens moet u de PCL-opslagopties configureren. Deze opties specificeren de 
 ```java
 PclSaveOptions saveOptions = new PclSaveOptions();
 {
-	saveOptions.setSaveFormat(SaveFormat.PCL);
+	saveOptions.setSaveFormat();
 	saveOptions.setRasterizeTransformedElements(false);
 }
 ```
@@ -56,7 +56,7 @@ doc.save("Your Directory Path" + "YourPCLDocument.pcl", saveOptions);
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
 PclSaveOptions saveOptions = new PclSaveOptions();
 {
-	saveOptions.setSaveFormat(SaveFormat.PCL); saveOptions.setRasterizeTransformedElements(false);
+	saveOptions.setSaveFormat(); saveOptions.setRasterizeTransformedElements(false);
 }
 doc.save("Your Directory Path" + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```

@@ -89,7 +89,7 @@ Word belgelerinde metin yönünü ayarlamak, Aspose.Words for .NET ile basit bir
 
 ###  Nedir?`DocumentDirection` property used for?
 
-The`DocumentDirection` mülk`TxtLoadOptions` belge için metin yönünü belirler. Şu şekilde ayarlanabilir`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , veya`DocumentDirection.RightToLeft`.
+ The`DocumentDirection` mülk`TxtLoadOptions` belge için metin yönünü belirler. Şu şekilde ayarlanabilir`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , veya`DocumentDirection.RightToLeft`.
 
 ### Tüm belge yerine belirli paragraflar için metin yönünü ayarlayabilir miyim?
 

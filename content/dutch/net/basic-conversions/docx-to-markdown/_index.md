@@ -59,7 +59,7 @@ Aspose.Words ondersteunt een breed scala aan documentformaten, waaronder DOCX, D
 Ja, Aspose.Words biedt robuuste API's voor het bewerken van tabellen, afbeeldingen, tekstopmaak en meer in documenten.
 
 ### Waar kan ik gedetailleerde documentatie vinden voor Aspose.Words voor .NET?
-Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).
+ Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).
 
 ### Hoe kan ik een tijdelijke licentie voor Aspose.Words voor .NET krijgen?
  kunt een tijdelijke licentie verkrijgen[hier](https://purchase.aspose.com/temporary-license/).

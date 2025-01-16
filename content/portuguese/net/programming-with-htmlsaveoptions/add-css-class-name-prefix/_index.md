@@ -117,7 +117,7 @@ E aí está! Seguindo esses passos, você adicionou com sucesso um prefixo de no
  Sim, você pode personalizar o prefixo sempre que salvar um documento, alterando o`CssClassNamePrefix` propriedade.
 
 ### Este método suporta CSS embutido?
-O`CssClassNamePrefix`property funciona com CSS externo. Para CSS inline, você precisará de uma abordagem diferente.
+ O`CssClassNamePrefix`property funciona com CSS externo. Para CSS inline, você precisará de uma abordagem diferente.
 
 ### Como posso incluir outras opções de salvamento em HTML?
  Você pode configurar várias propriedades de`HtmlSaveOptions` para personalizar sua saída HTML. Verifique o[documentação](https://reference.aspose.com/words/net/) para mais detalhes.

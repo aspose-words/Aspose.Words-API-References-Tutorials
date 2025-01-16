@@ -32,7 +32,7 @@ using Aspose.Words;
 
 Pour convertir un fichier Docx en un tableau d'octets, suivez ces étapes :
 ```csharp
-//Charger le fichier Docx à partir du disque ou du flux
+// Charger le fichier Docx à partir du disque ou du flux
 Document doc = new Document("input.docx");
 
 // Enregistrer le document dans un MemoryStream
@@ -64,13 +64,13 @@ En conclusion, l'utilisation d'Aspose.Words pour .NET pour convertir des fichier
  Non, vous avez besoin d'une licence valide pour utiliser Aspose.Words for .NET en production. Vous pouvez obtenir une licence temporaire[ici](https://purchase.aspose.com/temporary-license/).
 
 ### Comment puis-je en savoir plus sur la documentation Aspose.Words pour .NET ?
- Visitez la documentation[ici](https://reference.aspose.com/words/net/)pour des guides complets et des références API.
+ Visitez la documentation[ici](https://reference.aspose.com/words/net/) pour des guides complets et des références API.
 
 ### Aspose.Words est-il adapté à la gestion de fichiers Docx volumineux ?
 Oui, Aspose.Words pour .NET fournit une gestion efficace de la mémoire et des optimisations des performances pour la gestion de documents volumineux.
 
 ### Où puis-je obtenir du support communautaire pour Aspose.Words pour .NET ?
- Rejoignez le forum communautaire[ici](https://forum.aspose.com/c/words/8) pour poser des questions, partager des connaissances et se connecter avec d'autres utilisateurs.
+ Rejoignez le forum communautaire[ici](https://forum.aspose.com/c/words/8)pour poser des questions, partager des connaissances et se connecter avec d'autres utilisateurs.
 
 ### Puis-je essayer Aspose.Words pour .NET gratuitement avant de l'acheter ?
  Oui, vous pouvez télécharger une version d'essai gratuite[ici](https://releases.aspose.com/) pour évaluer ses caractéristiques et ses capacités.

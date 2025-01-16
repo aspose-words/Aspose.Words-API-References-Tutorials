@@ -109,7 +109,7 @@ W tym samouczku omówiliśmy podstawowe aspekty pracy z węzłami w Aspose.Words
 Aspose.Words for Java to biblioteka Java umożliwiająca programistom programistyczne tworzenie, modyfikowanie i konwertowanie dokumentów Word.
 
 ### P2. Jak mogę zainstalować Aspose.Words dla Java?
- Możesz pobrać i zainstalować Aspose.Words dla Java ze strony[Tutaj](https://releases.aspose.com/words/java/).
+ Możesz pobrać i zainstalować Aspose.Words dla Javy ze strony[Tutaj](https://releases.aspose.com/words/java/).
 
 ### P3. Czy jest dostępna bezpłatna wersja próbna?
  Tak, możesz otrzymać bezpłatną wersję próbną Aspose.Words dla Javy[Tutaj](https://releases.aspose.com/).

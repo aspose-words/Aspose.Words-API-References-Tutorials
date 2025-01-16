@@ -118,7 +118,7 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
  Ναι, μπορείτε να χρησιμοποιήσετε ένα[δωρεάν δοκιμή](https://releases.aspose.com/) ή πάρτε ένα[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/).
 
 ### Πού μπορώ να βρω τεκμηρίωση για το Aspose.Words για .NET;
-Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).
+ Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).
 
 ### Πώς μπορώ να λάβω υποστήριξη για το Aspose.Words;
  Μπορείτε να επισκεφθείτε το[φόρουμ υποστήριξης](https://forum.aspose.com/c/words/8) για βοήθεια.

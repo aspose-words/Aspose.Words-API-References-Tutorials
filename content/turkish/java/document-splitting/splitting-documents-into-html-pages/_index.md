@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-Bu kod, belgeyi sayfa sonlarına göre böler ve her sayfayı şurada depolar:`pages` liste.
+ Bu kod, belgeyi sayfa sonlarına göre böler ve her sayfayı şurada depolar:`pages` liste.
 
 ## HTML olarak kaydetme
 

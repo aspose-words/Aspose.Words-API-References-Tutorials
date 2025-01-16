@@ -82,7 +82,7 @@ Gratulacje! Udało Ci się przekonwertować metapliki do PNG w dokumencie Word p
 ## Często zadawane pytania
 
 ### Czy oprócz metaplików mogę konwertować inne typy plików do formatu PNG?
- Aspose.Words dla .NET zapewnia szerokie wsparcie dla różnych formatów plików. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Aspose.Words dla .NET zapewnia szerokie wsparcie dla różnych formatów plików. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### Czy istnieje sposób na przetwarzanie wsadowe wielu dokumentów?
 Tak, można przeglądać katalog dokumentów i stosować te same opcje ładowania do każdego pliku.

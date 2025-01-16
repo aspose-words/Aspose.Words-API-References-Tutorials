@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Krok 5: Wstaw hiperłącze
 
- Teraz wstawiamy hiperłącze za pomocą`InsertHyperlink`Metoda. Ta metoda przyjmuje trzy parametry: tekst wyświetlany, adres URL i wartość logiczną wskazującą, czy link powinien być sformatowany jako hiperłącze.
+ Teraz wstawiamy hiperłącze za pomocą`InsertHyperlink` Metoda. Ta metoda przyjmuje trzy parametry: tekst wyświetlany, adres URL i wartość logiczną wskazującą, czy link powinien być sformatowany jako hiperłącze.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", fałsz);
@@ -106,7 +106,7 @@ Wstawianie hiperłączy do dokumentu Word przy użyciu Aspose.Words dla .NET jes
 
 ### Czy mogę wstawić wiele hiperłączy w jednym dokumencie?
 
- Tak, możesz wstawiać wiele hiperłączy, powtarzając`InsertHyperlink`metoda dla każdego łącza.
+ Tak, możesz wstawiać wiele hiperłączy, powtarzając`InsertHyperlink` metoda dla każdego łącza.
 
 ### Jak zmienić kolor hiperłącza?
 
@@ -118,7 +118,7 @@ Wstawianie hiperłączy do dokumentu Word przy użyciu Aspose.Words dla .NET jes
 
 ### Co się stanie, jeśli adres URL będzie nieprawidłowy?
 
-Ten`InsertHyperlink` Metoda ta nie weryfikuje adresów URL, dlatego ważne jest, aby upewnić się, że adresy URL są poprawne przed ich wstawieniem.
+ Ten`InsertHyperlink` Metoda ta nie weryfikuje adresów URL, dlatego ważne jest, aby upewnić się, że adresy URL są poprawne przed ich wstawieniem.
 
 ### Czy można usunąć hiperłącze po jego wstawieniu?
 

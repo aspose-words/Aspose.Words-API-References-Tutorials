@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## ขั้นตอนที่ 4: ส่งอีเมล
 
-สุดท้ายให้ส่งอีเมลโดยใช้ไคลเอนต์ SMTP กำหนดค่าไคลเอนต์ SMTP ด้วยรายละเอียดเซิร์ฟเวอร์ SMTP ของคุณและใช้`Send` วิธีการส่งข้อความ
+ สุดท้ายให้ส่งอีเมลโดยใช้ไคลเอนต์ SMTP กำหนดค่าไคลเอนต์ SMTP ด้วยรายละเอียดเซิร์ฟเวอร์ SMTP ของคุณและใช้`Send` วิธีการส่งข้อความ
 
 ```csharp
 // ส่งข้อความโดยใช้ Aspose.Email
@@ -95,7 +95,7 @@ client.Send(message);
 ใช่ Aspose.Words เข้ากันได้กับ .NET Core และคุณสามารถใช้ในแอปพลิเคชัน .NET Core ได้เช่นกัน
 
 ### ฉันต้องมีใบอนุญาตสำหรับ Aspose.Words และ Aspose.Email หรือไม่?
-ใช่ ทั้งสองห้องสมุดต้องมีใบอนุญาต คุณสามารถขอใบอนุญาตชั่วคราวได้จาก[หน้าสั่งซื้อ Aspose](https://purchase.aspose.com/temporary-license/) เพื่อวัตถุประสงค์ในการประเมินผล
+ ใช่ ทั้งสองห้องสมุดต้องมีใบอนุญาต คุณสามารถขอใบอนุญาตชั่วคราวได้จาก[หน้าสั่งซื้อ Aspose](https://purchase.aspose.com/temporary-license/) เพื่อวัตถุประสงค์ในการประเมินผล
 
 ### ฉันสามารถหาเอกสารเพิ่มเติมได้ที่ไหน
  คุณสามารถค้นหาเอกสารรายละเอียดสำหรับ Aspose.Words ได้[ที่นี่](https://reference.aspose.com/words/net/) และสำหรับ Aspose.อีเมล[ที่นี่](https://reference.aspose.com/email/net/).

@@ -40,7 +40,7 @@ using Aspose.Words.Loading;
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-El`LoadOptions` La clase te permite personalizar cómo se cargan los documentos. Aquí, recién comenzamos.
+ El`LoadOptions` La clase te permite personalizar cómo se cargan los documentos. Aquí, recién comenzamos.
 
 ## Paso 2: Agrega japonés como idioma de edición
 

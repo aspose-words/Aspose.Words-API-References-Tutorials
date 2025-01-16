@@ -8,7 +8,7 @@ weight: 10
 url: /pl/java/licensing-and-configuration/applying-licensing/
 ---
 
-tym samouczku przeprowadzimy Cię przez proces stosowania licencji dla Aspose.Words dla Java. Licencjonowanie jest niezbędne, aby odblokować pełny potencjał Aspose.Words i upewnić się, że Twoja aplikacja może go używać bez żadnych ograniczeń. Dostarczymy Ci niezbędny kod źródłowy i poprowadzimy Cię, jak skutecznie skonfigurować licencjonowanie.
+W tym samouczku przeprowadzimy Cię przez proces stosowania licencji dla Aspose.Words dla Java. Licencjonowanie jest niezbędne, aby odblokować pełny potencjał Aspose.Words i upewnić się, że Twoja aplikacja może go używać bez żadnych ograniczeń. Dostarczymy Ci niezbędny kod źródłowy i poprowadzimy Cię, jak skutecznie skonfigurować licencjonowanie.
 
 ## 1. Wprowadzenie do licencjonowania w Aspose.Words dla Java
 
@@ -20,7 +20,7 @@ Aspose.Words for Java to potężna biblioteka do przetwarzania dokumentów, któ
 
 ## 3. Konfigurowanie środowiska programistycznego
 
-Na początek upewnij się, że masz zainstalowany Aspose.Words for Java w swoim środowisku programistycznym. Możesz go pobrać ze strony[Strona pobierania Aspose](https://releases.aspose.com/words/java/). Po zainstalowaniu możesz rozpocząć kodowanie.
+ Na początek upewnij się, że masz zainstalowany Aspose.Words for Java w swoim środowisku programistycznym. Możesz go pobrać ze strony[Strona pobierania Aspose](https://releases.aspose.com/words/java/). Po zainstalowaniu możesz rozpocząć kodowanie.
 
 ## 4. Zastosowanie licencji
 
@@ -48,7 +48,7 @@ Po zastosowaniu licencji przetestuj dokładnie swoją aplikację Aspose.Words, a
 ## Kompletny kod źródłowy
 ```java
         License license = new License();
-        //Ta linia próbuje ustawić licencję z kilku lokalizacji względem pliku wykonywalnego i Aspose.Words.dll.
+        // Ta linia próbuje ustawić licencję z kilku lokalizacji względem pliku wykonywalnego i Aspose.Words.dll.
         // Można również użyć dodatkowego przeciążenia, aby załadować licencję ze strumienia, jest to przydatne,
         // na przykład, gdy licencja jest przechowywana jako zasób osadzony.
         try

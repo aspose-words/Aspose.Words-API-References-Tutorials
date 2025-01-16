@@ -9,7 +9,7 @@ url: /sv/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using
 ---
 ## Introduktion
 
-den här handledningen dyker vi in i en supercool funktion i Aspose.Words för .NET: infoga ett OLE-objekt (Object Linking and Embedding) som en ikon med hjälp av en ström. Oavsett om du bäddar in en PowerPoint-presentation, ett Excel-kalkylblad eller någon annan typ av fil kommer den här guiden att visa dig exakt hur du gör det. Redo att komma igång? Låt oss gå!
+den här handledningen dyker vi in i en supercool funktion i Aspose.Words för .NET: infoga ett OLE-objekt (Object Linking and Embedding) som en ikon med hjälp av en ström. Oavsett om du bäddar in en PowerPoint-presentation, ett Excel-kalkylblad eller någon annan typ av fil kommer den här guiden att visa dig exakt hur du gör det. Redo att börja? Låt oss gå!
 
 ## Förutsättningar
 

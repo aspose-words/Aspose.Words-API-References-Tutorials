@@ -9,7 +9,7 @@ url: /nl/net/working-with-markdown/image/
 ---
 ## Invoering
 
-Bent u klaar om de wereld van Aspose.Words voor .NET in te duiken? Vandaag gaan we onderzoeken hoe u afbeeldingen aan uw documenten kunt toevoegen. Of u nu werkt aan een rapport, een brochure of gewoon een eenvoudig document opfleurt, het toevoegen van afbeeldingen kan een groot verschil maken. Dus laten we beginnen!
+Bent u klaar om de wereld van Aspose.Words voor .NET in te duiken? Vandaag gaan we onderzoeken hoe u afbeeldingen aan uw documenten kunt toevoegen. Of u nu aan een rapport, een brochure of gewoon een eenvoudig document opfleurt, het toevoegen van afbeeldingen kan een groot verschil maken. Dus laten we beginnen!
 
 ## Vereisten
 

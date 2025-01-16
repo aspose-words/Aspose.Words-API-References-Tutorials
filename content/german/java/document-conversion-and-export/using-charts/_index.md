@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Ändern Sie die X-Achse so, dass sie eine Kategorie statt einem Datum anzeigt.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Gemessen in Anzeigeeinheiten der Y-Achse (Hunderter).
+xAxis.setCrossesAt(3.0); //Gemessen in Anzeigeeinheiten der Y-Achse (Hunderter).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ In diesem Tutorial haben wir untersucht, wie Sie mit Diagrammen unter Verwendung
 
 ### Wie kann ich Datenbeschriftungen mit benutzerdefinierten Zahlenformaten formatieren?
 
- Sie können Datenbeschriftungen formatieren, indem Sie auf das`DataLabels` Eigenschaften einer Serie und Festlegen des gewünschten Formatcodes mit`getNumberFormat().setFormatCode()`.
+Sie können Datenbeschriftungen formatieren, indem Sie auf das`DataLabels` Eigenschaften einer Serie und Festlegen des gewünschten Formatcodes mit`getNumberFormat().setFormatCode()`.
 
 ### Wie passe ich Achseneigenschaften in einem Diagramm an?
 
@@ -139,7 +139,7 @@ In diesem Tutorial haben wir untersucht, wie Sie mit Diagrammen unter Verwendung
 
 ### Wie kann ich andere Diagrammtypen wie Streu- oder Flächendiagramme erstellen?
 
-Sie können verschiedene Diagrammtypen erstellen, indem Sie die entsprechenden`ChartType` beim Einfügen des Diagramms mit`builder.insertChart(ChartType.TYPE, width, height)`.
+ Sie können verschiedene Diagrammtypen erstellen, indem Sie die entsprechenden`ChartType` beim Einfügen des Diagramms mit`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Wie kann ich eine Diagrammachse ausblenden?
 

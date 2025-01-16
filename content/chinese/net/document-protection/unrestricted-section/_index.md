@@ -22,7 +22,7 @@ url: /zh/net/document-protection/unrestricted-section/
 
 ## 导入命名空间
 
-在开始编码之前，请确保已在 C# 项目中导入必要的命名空间：
+在开始编码之前，请确保已在 C# 项目中导入了必要的命名空间：
 
 ```csharp
 using System;

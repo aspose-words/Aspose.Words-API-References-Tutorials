@@ -2,7 +2,7 @@
 title: 設定字體資料夾多個資料夾
 linktitle: 設定字體資料夾多個資料夾
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中設定多個字體資料夾。本逐步指南可確保您的文件使用您需要的確切字體。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中設定多個字體資料夾。本逐步指南可確保您的文件使用您所需的確切字體。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/set-fonts-folders-multiple-folders/

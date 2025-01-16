@@ -141,7 +141,7 @@ doc.save(output_path)
 
 Хотя водяные знаки невозможно полностью защитить, вы можете сделать их более устойчивыми к подделке, отрегулировав их прозрачность и размещение.
 
-### Подходит ли Aspose.Words для Python для Windows и Linux?
+### Подходит ли Aspose.Words for Python для Windows и Linux?
 
 Да, Aspose.Words для Python совместим со средами Windows и Linux.
 

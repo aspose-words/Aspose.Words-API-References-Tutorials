@@ -117,10 +117,10 @@ I masz! Postępując zgodnie z tymi krokami, pomyślnie dodałeś prefiks nazwy 
  Tak, możesz dostosować prefiks za każdym razem, gdy zapisujesz dokument, zmieniając`CssClassNamePrefix` nieruchomość.
 
 ### Czy ta metoda obsługuje inline CSS?
-Ten`CssClassNamePrefix`Właściwość działa z zewnętrznym CSS. W przypadku inline CSS będziesz potrzebować innego podejścia.
+ Ten`CssClassNamePrefix`Właściwość działa z zewnętrznym CSS. W przypadku inline CSS będziesz potrzebować innego podejścia.
 
 ### Jak mogę dodać inne opcje zapisu HTML?
- Możesz skonfigurować różne właściwości`HtmlSaveOptions` aby dostosować wyjście HTML. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Możesz skonfigurować różne właściwości`HtmlSaveOptions` aby dostosować wyjście HTML. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### Czy można zapisać kod HTML do strumienia?
  Oczywiście! Możesz zapisać dokument do strumienia, przekazując obiekt strumienia do`Save` metoda.

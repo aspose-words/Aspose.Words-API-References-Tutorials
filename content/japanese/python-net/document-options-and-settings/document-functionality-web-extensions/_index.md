@@ -18,7 +18,7 @@ Web 拡張機能は、現代のドキュメント管理システムに不可欠�
 
 - Python プログラミングの基本的な理解。
 -  Aspose.Words for Python APIリファレンス（以下から入手可能）[ここ](https://reference.aspose.com/words/python-net/).
-- Aspose.Words for Pythonライブラリへのアクセス（ダウンロードはこちら）[ここ](https://releases.aspose.com/words/python/).
+-  Aspose.Words for Pythonライブラリへのアクセス（ダウンロードはこちら）[ここ](https://releases.aspose.com/words/python/).
 
 ## Python 用 Aspose.Words の設定
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Python スクリプトにライブラリをインポートします。
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## 新しいドキュメントを作成する
@@ -42,7 +42,7 @@ import aspose.words
 まず、Aspose.Words を使用して新しいドキュメントを作成しましょう。
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## ドキュメントにコンテンツを追加する
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Aspose.Words を使用すると、ドキュメントにコンテンツを簡単に追加できます。
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ builder.writeln("Hello, world!")
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Web拡張機能の挿入
-
-ドキュメントに Web 拡張機能を挿入するには、次の手順に従います。
-
-1. HTML、CSS、JavaScript を使用して Web 拡張機能を作成します。
-2. Web 拡張機能を base64 でエンコードされた文字列に変換します。
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. ドキュメントに Web 拡張機能を挿入します。
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Web拡張機能とのやり取り
@@ -98,7 +78,7 @@ Web 拡張機能は、ドキュメントのコンテンツを動的に変更で�
 Web 拡張機能を組み込み、必要な変更を加えた後、Aspose.Words でサポートされているさまざまな形式を使用してドキュメントを保存できます。
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## パフォーマンス最適化のヒント

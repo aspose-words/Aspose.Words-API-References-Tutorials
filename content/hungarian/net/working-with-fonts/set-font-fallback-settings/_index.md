@@ -1,6 +1,6 @@
 ---
-title: Állítsa be a tartalék betűkészlet-beállításokat
-linktitle: Állítsa be a tartalék betűkészlet-beállításokat
+title: Állítsa be a Font Backback beállításokat
+linktitle: Állítsa be a Font Backback beállításokat
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan állíthatja be a tartalék betűkészlet-beállításokat az Aspose.Words for .NET-ben. Ez az átfogó útmutató biztosítja, hogy a dokumentumokban szereplő összes karakter helyesen jelenjen meg.
 type: docs
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3. lépés: Konfigurálja a betűtípus-beállításokat
 
-Hozzon létre egy újat`FontSettings` objektumot, és töltse be a tartalék font-beállításokat egy XML-fájlból. Ez az XML-fájl tartalmazza a tartalék betűkészlet szabályait.
+ Hozzon létre egy újat`FontSettings` objektumot, és töltse be a tartalék font-beállításokat egy XML-fájlból. Ez az XML-fájl tartalmazza a tartalék betűkészlet szabályait.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

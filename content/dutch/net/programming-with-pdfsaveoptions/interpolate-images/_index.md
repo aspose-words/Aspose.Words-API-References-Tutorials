@@ -62,7 +62,7 @@ Om ervoor te zorgen dat afbeeldingen worden geïnterpoleerd, moet u de volgende 
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-De`InterpolateImages` eigenschap is ingesteld op`true` om ervoor te zorgen dat de afbeeldingen in uw PDF worden geïnterpoleerd, waardoor de kwaliteit ervan wordt verbeterd.
+ De`InterpolateImages` eigenschap is ingesteld op`true` om ervoor te zorgen dat de afbeeldingen in uw PDF worden geïnterpoleerd, waardoor de kwaliteit ervan wordt verbeterd.
 
 ## Stap 4: Sla het document op als PDF
 

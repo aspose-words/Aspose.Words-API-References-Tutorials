@@ -56,7 +56,7 @@ using Aspose.Words.Shaping.HarfBuzz;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- แทนที่`"YOUR DOCUMENT DIRECTORY"`ด้วยเส้นทางจริงที่เอกสารของคุณตั้งอยู่
+ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงที่เอกสารของคุณตั้งอยู่
 
 ### การโหลดเอกสาร
 

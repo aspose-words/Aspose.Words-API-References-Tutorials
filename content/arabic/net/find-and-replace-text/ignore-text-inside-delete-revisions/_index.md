@@ -17,7 +17,7 @@ url: /ar/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 - المعرفة الأساسية للغة البرمجة C#.
 - تم تثبيت Visual Studio على نظامك.
 -  تم دمج مكتبة Aspose.Words for .NET في مشروعك. يمكنك تنزيلها من[هنا](https://releases.aspose.com/words/net/).
-- الوصول إلى Aspose.Words لـ .NET[التوثيق](https://reference.aspose.com/words/net/) للمرجع.
+-  الوصول إلى Aspose.Words لـ .NET[التوثيق](https://reference.aspose.com/words/net/) للمرجع.
 
 ## استيراد مساحات الأسماء
 
@@ -84,4 +84,4 @@ Console.WriteLine(doc.GetText());
 تم تحسين Aspose.Words for .NET للتعامل مع المستندات الكبيرة بكفاءة، بما في ذلك المستندات التي تحتوي على مراجعات متعقبة مكثفة.
 
 ### أين يمكنني العثور على المزيد من الموارد والدعم لـ Aspose.Words لـ .NET؟
-يمكنك استكشاف الوثائق الشاملة والحصول على الدعم من مجتمع Aspose.Words for .NET على[منتدى Aspose.Words](https://forum.aspose.com/c/words/8).
+ يمكنك استكشاف الوثائق الشاملة والحصول على الدعم من مجتمع Aspose.Words for .NET على[منتدى Aspose.Words](https://forum.aspose.com/c/words/8).

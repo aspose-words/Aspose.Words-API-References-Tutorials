@@ -19,10 +19,10 @@ url: /ja/python-net/document-combining-and-comparison/generate-table-contents/
 ## ドキュメントの読み込み
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## 見出しと小見出しの定義
@@ -31,25 +31,11 @@ doc = asposewords.Document("your_document.docx")
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## 目次の生成
-
-見出しとサブ見出しを定義したので、目次自体を生成してみましょう。ドキュメントの先頭に新しいセクションを作成し、適切なコンテンツを入力します。
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## 目次のカスタマイズ
@@ -58,21 +44,10 @@ toc_title.paragraph_format.style_name = "Table of Contents Title"
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## ハイパーリンクの追加
-
-目次をインタラクティブにするには、読者がドキュメント内の対応するセクションに直接ジャンプできるハイパーリンクを追加します。
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+「
 
 ## 目次のスタイル設定
 
@@ -81,16 +56,7 @@ for heading in headings:
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## 目次の更新
-
-ドキュメントの構造を変更した場合は、目次を簡単に更新してその変更を反映できます。
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## プロセスの自動化
@@ -101,27 +67,13 @@ doc.update_fields()
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## ページ番号の扱い
-
-目次にページ番号を追加して、読者に特定のセクションがどこにあるかについての詳しいコンテキストを提供することができます。
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## 結論

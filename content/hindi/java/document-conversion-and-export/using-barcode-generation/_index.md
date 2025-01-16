@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## बारकोड जनरेटर सेट करें
 
- का उपयोग करके एक कस्टम बारकोड जनरेटर सेट करें`FieldOptions` इस उदाहरण में, हम मानते हैं कि आपने एक क्लास लागू किया है।`CustomBarcodeGenerator` बारकोड जनरेट करने के लिए क्लास। बदलें`CustomBarcodeGenerator` आपके वास्तविक बारकोड पीढ़ी तर्क के साथ:
+ का उपयोग करके एक कस्टम बारकोड जनरेटर सेट करें`FieldOptions` इस उदाहरण में, हम मानते हैं कि आपने एक क्लास लागू किया है।`CustomBarcodeGenerator`बारकोड जनरेट करने के लिए क्लास। बदलें`CustomBarcodeGenerator` आपके वास्तविक बारकोड पीढ़ी तर्क के साथ:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

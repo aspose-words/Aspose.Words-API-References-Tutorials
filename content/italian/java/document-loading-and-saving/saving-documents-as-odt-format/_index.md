@@ -85,4 +85,4 @@ Sì, è possibile automatizzare la conversione di più documenti nel formato ODT
 
 ### Aspose.Words per Java è compatibile con le ultime versioni di Java?
 
-Aspose.Words for Java viene aggiornato regolarmente per supportare le ultime versioni di Java, assicurando compatibilità e miglioramenti delle prestazioni. Assicurati di controllare i requisiti di sistema nella documentazione per le informazioni più recenti.
+Aspose.Words for Java viene aggiornato regolarmente per supportare le ultime versioni di Java, garantendo compatibilità e miglioramenti delle prestazioni. Assicurati di controllare i requisiti di sistema nella documentazione per le informazioni più recenti.

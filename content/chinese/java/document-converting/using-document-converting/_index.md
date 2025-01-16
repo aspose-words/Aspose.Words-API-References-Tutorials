@@ -56,7 +56,7 @@ Document doc = new Document("input.docx");
 
 ```java
 //将文档保存为 PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## 步骤 4：转换为其他格式
@@ -67,21 +67,21 @@ doc.save("output.pdf", SaveFormat.PDF);
 
 ```java
 //将文档保存为 RTF
-doc.save("output.rtf", SaveFormat.RTF);
+doc.save("output.rtf");
 ```
 
 ### 转换为 HTML
 
 ```java
 //将文档保存为 HTML
-doc.save("output.html", SaveFormat.HTML);
+doc.save("output.html");
 ```
 
 ### 转换为 EPUB
 
 ```java
 //将文档另存为 EPUB
-doc.save("output.epub", SaveFormat.EPUB);
+doc.save("output.epub");
 ```
 
 ## 有效文档转换的技巧

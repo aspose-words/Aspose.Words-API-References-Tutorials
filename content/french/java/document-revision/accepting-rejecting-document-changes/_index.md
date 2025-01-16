@@ -44,10 +44,7 @@ L'acceptation des modifications est une étape cruciale dans la finalisation d'u
 
 ```java
 // Accepter toutes les révisions
-doc.acceptAllRevisions();
-
-// Accepter une révision spécifique par index
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Rejeter les changements
@@ -56,10 +53,7 @@ Dans certains cas, vous devrez peut-être rejeter certaines modifications. Aspos
 
 ```java
 // Rejeter toutes les révisions
-doc.rejectAllRevisions();
-
-// Rejeter une révision spécifique par index
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Sauvegarde du document

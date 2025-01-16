@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 Ebben az osztályban:
-- A`Warning`metódus rögzíti a betűtípus-cserével kapcsolatos figyelmeztetéseket.
-- A`FontWarnings` A gyűjtemény ezeket a figyelmeztetéseket tárolja további ellenőrzés vagy naplózás céljából.
+-  A`Warning`metódus rögzíti a betűtípus-cserével kapcsolatos figyelmeztetéseket.
+-  A`FontWarnings` A gyűjtemény ezeket a figyelmeztetéseket tárolja további ellenőrzés vagy naplózás céljából.
 
 ## Következtetés
 
@@ -118,6 +118,6 @@ Most már elsajátította a betűtípusok utótagok nélküli helyettesítésén
 
  Támogatásért keresse fel a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8).
 
-### Lehetséges ideiglenes licenc vásárlása?
+### Lehetséges ideiglenes licencet vásárolni?
 
  Igen, ideiglenes engedélyt kaphat a[ideiglenes licenc oldal](https://purchase.aspose.com/temporary-license/).

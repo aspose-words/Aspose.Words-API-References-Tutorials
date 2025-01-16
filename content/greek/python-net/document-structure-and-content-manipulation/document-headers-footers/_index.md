@@ -23,7 +23,7 @@ pip install aspose-words
 2. Εισαγωγή της μονάδας: Εισαγάγετε την απαιτούμενη ενότητα στο σενάριο Python σας.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Προσθήκη απλής κεφαλίδας και υποσέλιδου
@@ -33,30 +33,18 @@ import aspose.words
 1. Δημιουργία εγγράφου: Δημιουργήστε ένα νέο έγγραφο του Word χρησιμοποιώντας το Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Προσθήκη κεφαλίδας και υποσέλιδου: Χρησιμοποιήστε το`sections` ιδιοκτησία του εγγράφου για πρόσβαση σε ενότητες. Στη συνέχεια, χρησιμοποιήστε το`headers_footers` ιδιότητα για προσθήκη κεφαλίδων και υποσέλιδων.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Προσθήκη περιεχομένου: Προσθέστε περιεχόμενο στην κεφαλίδα και το υποσέλιδο.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Αποθήκευση του εγγράφου: Αποθηκεύστε το έγγραφο με την κεφαλίδα και το υποσέλιδο.
+3. Αποθήκευση του εγγράφου: Αποθηκεύστε το έγγραφο με την κεφαλίδα και το υποσέλιδο.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Προσθήκη πινάκων: Ενσωματώστε πίνακες για πληροφορίες πινάκων.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Δυναμικά πεδία: Χρησιμοποιήστε δυναμικά πεδία για αυτόματη εισαγωγή δεδομένων.
+2. Δυναμικά πεδία: Χρησιμοποιήστε δυναμικά πεδία για αυτόματη εισαγωγή δεδομένων.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. Προσαρμογή όπως απαιτείται: Προσαρμόστε κάθε κεφαλίδα και υποσέλιδο σύμφωνα με τις απαιτήσεις σας.
 
 ## Αφαίρεση κεφαλίδων και υποσέλιδων
 
@@ -150,4 +128,4 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### Πού μπορώ να μάθω περισσότερα για το Aspose.Words for Python;
 
-Για πιο λεπτομερή τεκμηρίωση και παραδείγματα, επισκεφθείτε το[Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).
+ Για πιο λεπτομερή τεκμηρίωση και παραδείγματα, επισκεφθείτε το[Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).

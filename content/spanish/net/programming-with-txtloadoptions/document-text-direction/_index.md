@@ -89,7 +89,7 @@ Establecer la dirección del texto en documentos de Word es un proceso sencillo 
 
 ###  ¿Qué es el?`DocumentDirection` property used for?
 
-El`DocumentDirection` propiedad en`TxtLoadOptions` determina la dirección del texto del documento. Se puede configurar para`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , o`DocumentDirection.RightToLeft`.
+ El`DocumentDirection` propiedad en`TxtLoadOptions` determina la dirección del texto del documento. Se puede configurar para`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , o`DocumentDirection.RightToLeft`.
 
 ### ¿Puedo establecer la dirección del texto para párrafos específicos en lugar de para todo el documento?
 

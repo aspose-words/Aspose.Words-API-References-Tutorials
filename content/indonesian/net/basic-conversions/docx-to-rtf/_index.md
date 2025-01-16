@@ -32,7 +32,7 @@ using Aspose.Words;
 using System.IO;
 ```
 
-Itu`Aspose.Words` namespace berisi kelas inti untuk menangani dokumen Word, sementara`System.IO` menyediakan fungsionalitas untuk operasi berkas.
+ Itu`Aspose.Words` namespace berisi kelas inti untuk menangani dokumen Word, sementara`System.IO` menyediakan fungsionalitas untuk operasi berkas.
 
 Mari kita uraikan proses konversi file DOCX ke format RTF menjadi langkah-langkah yang jelas dan mudah dikelola. Ikuti petunjuk berikut untuk mencapai konversi dengan lancar.
 

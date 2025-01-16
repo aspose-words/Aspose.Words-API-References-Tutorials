@@ -18,7 +18,7 @@ url: /th/net/document-protection/password-protection/
 1.  Aspose.Words สำหรับ .NET: ตรวจสอบให้แน่ใจว่าคุณมีไลบรารี Aspose.Words สำหรับ .NET คุณสามารถ[ดาวน์โหลดได้ที่นี่](https://releases.aspose.com/words/net/).
 2. สภาพแวดล้อมการพัฒนา: Visual Studio หรือสภาพแวดล้อมการพัฒนา C# อื่นๆ
 3. ความรู้พื้นฐานเกี่ยวกับ C#: ความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม C#
-4. ใบอนุญาต Aspose: รับใบอนุญาตจาก[ที่นี่](https://purchase.aspose.com/buy) หรือใช้[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) เพื่อการประเมินผล
+4.  ใบอนุญาต Aspose: รับใบอนุญาตจาก[ที่นี่](https://purchase.aspose.com/buy) หรือใช้[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) เพื่อการประเมินผล
 
 ## นำเข้าเนมสเปซ
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ### เลือกประเภทการป้องกัน
 
- Aspose.Words นำเสนอการป้องกันหลายประเภท เช่น`NoProtection`, `ReadOnly`, `AllowOnlyComments` , และ`AllowOnlyFormFields` . สำหรับตัวอย่างนี้เราจะใช้`NoProtection` แต่ด้วยรหัสผ่าน ซึ่งในทางปฏิบัติหมายความว่าเอกสารนั้นสามารถแก้ไขได้ แต่ต้องใช้รหัสผ่านเพื่อยกเลิกการป้องกัน
+ Aspose.Words นำเสนอการป้องกันหลายประเภท เช่น`NoProtection`, `ReadOnly`, `AllowOnlyComments` , และ`AllowOnlyFormFields` สำหรับตัวอย่างนี้เราจะใช้`NoProtection` แต่ด้วยรหัสผ่าน ซึ่งในทางปฏิบัติหมายความว่าเอกสารนั้นสามารถแก้ไขได้ แต่ต้องใช้รหัสผ่านเพื่อยกเลิกการป้องกัน
 
 ### ใช้การป้องกัน
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### ฉันสามารถใช้การป้องกันประเภทต่างๆ กับ Aspose.Words ได้หรือไม่
 
- ใช่ Aspose.Words รองรับการป้องกันหลายประเภท รวมถึง`ReadOnly`, `AllowOnlyComments` , และ`AllowOnlyFormFields`.
+ใช่ Aspose.Words รองรับการป้องกันหลายประเภท รวมถึง`ReadOnly`, `AllowOnlyComments` , และ`AllowOnlyFormFields`.
 
 ### ฉันจะลบการป้องกันด้วยรหัสผ่านออกจากเอกสารได้อย่างไร
 
@@ -110,4 +110,4 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### ฉันสามารถหาเอกสารเพิ่มเติมเกี่ยวกับ Aspose.Words ได้จากที่ใด
 
-คุณสามารถค้นหาเอกสารเพิ่มเติมได้ที่[หน้าเอกสาร Aspose.Words](https://reference.aspose.com/words/net/).
+ คุณสามารถค้นหาเอกสารเพิ่มเติมได้ที่[หน้าเอกสาร Aspose.Words](https://reference.aspose.com/words/net/).

@@ -112,7 +112,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 Aspose.Words สำหรับ .NET เป็นไลบรารีอันทรงพลังที่ช่วยให้คุณสร้าง แก้ไข แปลง และจัดการเอกสาร Word ผ่านโปรแกรมได้
 
 ### ฉันสามารถใช้ Aspose.Words ได้ฟรีหรือไม่?
- ใช่ คุณสามารถเริ่มต้นด้วย[ทดลองใช้งานฟรี](https://releases.aspose.com/).
+ใช่ คุณสามารถเริ่มต้นด้วย[ทดลองใช้งานฟรี](https://releases.aspose.com/).
 
 ### ฉันจะได้รับการสนับสนุนสำหรับ Aspose.Words ได้อย่างไร
  คุณสามารถรับการสนับสนุนจากชุมชน Aspose ได้ที่[ฟอรั่ม](https://forum.aspose.com/c/words/8).

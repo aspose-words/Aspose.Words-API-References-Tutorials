@@ -105,8 +105,6 @@ Outre Word et PDF, Aspose.Words pour Python prend en charge divers formats de do
 
 Aspose.Words vous permet de personnaliser l'apparence des documents convertis. Vous pouvez appliquer des options de formatage telles que les styles de police, les couleurs, l'alignement et l'espacement des paragraphes.
 
-#### Exemple:
-
 ```python
 # Python code for applying formatting during conversion
 import aspose.words as aw
@@ -128,8 +126,6 @@ doc.save("formatted_output.pdf", aw.SaveFormat.PDF)
 ### Gestion des images et des tableaux
 
 Aspose.Words vous permet de gérer les images et les tableaux pendant le processus de conversion. Vous pouvez extraire les images, les redimensionner et manipuler les tableaux pour conserver la structure du document.
-
-#### Exemple:
 
 ```python
 # Python code for handling images and tables during conversion
@@ -156,8 +152,6 @@ doc.save("modified_output.pdf", aw.SaveFormat.PDF)
 
 Avec Aspose.Words, vous pouvez garantir un rendu cohérent des polices et gérer la mise en page des documents convertis. Cette fonctionnalité est particulièrement utile pour maintenir la cohérence des documents entre différents formats.
 
-#### Exemple:
-
 ```python
 # Python code for managing fonts and layout during conversion
 import aspose.words as aw
@@ -178,8 +172,6 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ### Écriture de scripts Python pour l'automatisation
 
 Les capacités de script de Python en font un excellent choix pour automatiser les tâches répétitives. Vous pouvez écrire des scripts Python pour effectuer une conversion de documents par lots, ce qui vous fait gagner du temps et des efforts.
-
-#### Exemple:
 
 ```python
 # Python script for batch document conversion
@@ -205,11 +197,7 @@ for filename in input_files:
 
 ### Conversion par lots de documents
 
-Par
-
- en combinant la puissance de Python et d'Aspose.Words, vous pouvez automatiser la conversion en masse de documents, améliorant ainsi la productivité et l'efficacité.
-
-#### Exemple:
+En combinant la puissance de Python et d'Aspose.Words, vous pouvez automatiser la conversion en masse de documents, améliorant ainsi la productivité et l'efficacité.
 
 ```python
 # Python script for batch document conversion using Aspose.Words
@@ -238,18 +226,10 @@ for filename in input_files:
     output_filename = filename.replace(file_ext, ".pdf" if file_ext == ".docx" else ".docx")
     doc.save(os.path.join(output_dir, output_filename))
 ```
-## Avantages de l'utilisation d'Aspose.Words pour Python
-
-Aspose.Words pour Python offre plusieurs avantages, notamment :
-
-- Capacités robustes de conversion de documents
-- Riche ensemble de fonctionnalités pour la manipulation de documents
-- Intégration facile avec les applications Python
-- Un soutien continu et des mises à jour d'une communauté florissante
 
 ## Conclusion
 
-La conversion de documents joue un rôle essentiel dans la simplification des échanges d'informations et l'amélioration de la collaboration. Python, avec sa simplicité et sa polyvalence, devient un atout précieux dans ce processus. Aspose.Words pour Python renforce encore davantage les capacités des développeurs grâce à ses riches fonctionnalités, faisant de la conversion de documents un jeu d'enfant.
+La conversion de documents joue un rôle essentiel dans la simplification de l'échange d'informations et l'amélioration de la collaboration. Python, avec sa simplicité et sa polyvalence, devient un atout précieux dans ce processus. Aspose.Words pour Python renforce encore davantage les capacités des développeurs grâce à ses riches fonctionnalités, faisant de la conversion de documents un jeu d'enfant.
 
 ## FAQ
 

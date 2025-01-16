@@ -16,7 +16,7 @@ Jika Anda pernah ingin melindungi dokumen Word tetapi masih mengizinkan bagian t
 Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
 1.  Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduh[Di Sini](https://releases.aspose.com/words/net/).
-2.  Lisensi Aspose yang valid: Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
+2. Lisensi Aspose yang valid: Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Versi terbaru apa pun seharusnya berfungsi dengan baik.
 4. Pengetahuan dasar tentang C# dan .NET: Ini akan membantu Anda mengikuti kode.
 

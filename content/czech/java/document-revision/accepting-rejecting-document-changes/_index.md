@@ -44,10 +44,7 @@ Přijetí změn je kritickým krokem při finalizaci dokumentu. Aspose.Words pro
 
 ```java
 // Přijměte všechny revize
-doc.acceptAllRevisions();
-
-// Přijměte konkrétní revizi podle indexu
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Odmítnutí změn
@@ -56,10 +53,7 @@ V některých případech může být nutné odmítnout určité změny. Aspose.
 
 ```java
 // Odmítnout všechny revize
-doc.rejectAllRevisions();
-
-// Odmítnout konkrétní revizi podle indexu
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Uložení dokumentu

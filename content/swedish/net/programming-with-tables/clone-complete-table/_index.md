@@ -73,7 +73,7 @@ Det här kodavsnittet förutsätter att du vill klona den första tabellen i dok
 Table tableClone = (Table) table.Clone(true);
 ```
 
-De`true` parametern säkerställer att klonen inkluderar all formatering och innehåll från den ursprungliga tabellen.
+ De`true` parametern säkerställer att klonen inkluderar all formatering och innehåll från den ursprungliga tabellen.
 
 ## Steg 5: Infoga den klonade tabellen i dokumentet
 
@@ -115,7 +115,7 @@ Att klona tabeller i Word-dokument med Aspose.Words för .NET är en enkel proce
 Ja, du kan klona flera tabeller genom att iterera genom varje tabell i dokumentet och använda samma kloningslogik.
 
 ### Vad händer om tabellen har sammanslagna celler?
-De`Clone` Metoden bevarar all formatering, inklusive sammanslagna celler, vilket säkerställer en exakt dubblett av tabellen.
+ De`Clone` Metoden bevarar all formatering, inklusive sammanslagna celler, vilket säkerställer en exakt dubblett av tabellen.
 
 ### Hur klona jag en specifik tabell efter namn?
 Du kan identifiera tabeller genom anpassade egenskaper eller unikt innehåll och sedan klona den önskade tabellen med liknande steg.

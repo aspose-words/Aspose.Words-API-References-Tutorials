@@ -32,18 +32,24 @@ pip install aspose-words
 
 ## Lägga till textrutor i ett Word-dokument
 
-Låt oss börja med att skapa ett nytt Word-dokument och lägga till en textruta till det. Här är ett exempel på ett kodavsnitt för att uppnå detta:
+Låt oss börja med att skapa ett nytt Word-dokument och lägga till en textruta i det. Här är ett exempel på ett kodavsnitt för att uppnå detta:
 
 ```python
 import aspose.words as aw
 
 doc = aw.Document()
-builder = aw.DocumentBuilder(doc)
-
-textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
+builder = aw.DocumentBuilder(doc=doc)
+textbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_BOX)
+textbox.width = 100
+textbox.height = 100
+textbox.text_box.layout_flow = aw.drawing.LayoutFlow.BOTTOM_TO_TOP
+textbox.append_child(aw.Paragraph(doc))
+builder.insert_node(textbox)
+builder.move_to(textbox.first_paragraph)
+builder.write('This text is flipped 90 degrees to the left.')
 ```
 
- I den här koden skapar vi en ny`Document` och a`DocumentBuilder` . De`insert_text_box` metod används för att lägga till en textruta i dokumentet. Du kan anpassa innehållet, positionen och storleken på textrutan enligt dina krav.
+ I den här koden skapar vi en ny`Document` och a`DocumentBuilder` . De`insert_text_box` metod används för att lägga till en textruta i dokumentet. Du kan anpassa textrutans innehåll, position och storlek enligt dina krav.
 
 ## Formatera textrutor
 

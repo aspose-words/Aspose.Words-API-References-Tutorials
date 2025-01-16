@@ -15,7 +15,7 @@ A dokumentummanipuláció világában eligazodni olykor olyan érzés lehet, min
 
 Mielőtt nekivágnánk ennek az utazásnak, gyűjtsük össze az induláshoz szükséges összes lényeges dolgot.
 
-- Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 - Fejlesztői környezet: .NET-kompatibilis fejlesztői környezet, például a Visual Studio.
 -  Mintadokumentum: Word dokumentum (pl.`Paragraphs.docx`), amelyet PDF formátumba konvertál.
 

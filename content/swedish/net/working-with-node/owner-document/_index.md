@@ -9,7 +9,7 @@ url: /sv/net/working-with-node/owner-document/
 ---
 ## Introduktion
 
-Har du någonsin kliat dig i huvudet och försökt förstå hur man arbetar med dokument i Aspose.Words för .NET? Tja, du är på rätt plats! I den här handledningen kommer vi att dyka djupt in i konceptet "Ägardokumentet" och hur det spelar en avgörande roll för att hantera noder i ett dokument. Vi går igenom ett praktiskt exempel och delar upp det i små steg för att göra allt kristallklart. I slutet av den här guiden kommer du att vara ett proffs på att manipulera dokument med Aspose.Words för .NET.
+Har du någonsin kliat dig i huvudet och försökt förstå hur man arbetar med dokument i Aspose.Words för .NET? Nåväl, du är på rätt plats! I den här handledningen kommer vi att dyka djupt in i konceptet "Ägardokumentet" och hur det spelar en avgörande roll för att hantera noder i ett dokument. Vi går igenom ett praktiskt exempel och delar upp det i små steg för att göra allt kristallklart. I slutet av den här guiden kommer du att vara ett proffs på att manipulera dokument med Aspose.Words för .NET.
 
 ## Förutsättningar
 

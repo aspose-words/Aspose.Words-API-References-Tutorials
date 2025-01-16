@@ -8,7 +8,7 @@ weight: 21
 url: /th/python-net/document-structure-and-content-manipulation/document-ole-objects-active-x/
 ---
 
-ในยุคดิจิทัลทุกวันนี้ การสร้างเอกสารที่มีเนื้อหาสมบูรณ์และโต้ตอบได้ถือเป็นสิ่งสำคัญสำหรับการสื่อสารที่มีประสิทธิภาพ Aspose.Words for Python มอบชุดเครื่องมืออันทรงพลังที่ช่วยให้คุณฝังวัตถุ OLE (Object Linking and Embedding) และตัวควบคุม ActiveX ลงในเอกสาร Word ของคุณได้โดยตรง ฟีเจอร์นี้เปิดโลกแห่งความเป็นไปได้ ช่วยให้คุณสร้างเอกสารที่มีสเปรดชีต แผนภูมิ มัลติมีเดีย และอื่นๆ ที่ผสานรวมเข้าด้วยกันได้ ในบทช่วยสอนนี้ เราจะแนะนำคุณเกี่ยวกับกระบวนการฝังวัตถุ OLE และตัวควบคุม ActiveX โดยใช้ Aspose.Words for Python
+ในยุคดิจิทัลทุกวันนี้ การสร้างเอกสารที่มีเนื้อหาสมบูรณ์และโต้ตอบได้ถือเป็นสิ่งสำคัญสำหรับการสื่อสารที่มีประสิทธิภาพ Aspose.Words สำหรับ Python มอบชุดเครื่องมืออันทรงพลังที่ช่วยให้คุณฝังวัตถุ OLE (Object Linking and Embedding) และตัวควบคุม ActiveX ลงในเอกสาร Word ของคุณได้โดยตรง ฟีเจอร์นี้เปิดโลกแห่งความเป็นไปได้ ช่วยให้คุณสร้างเอกสารที่มีสเปรดชีต แผนภูมิ มัลติมีเดีย และอื่นๆ ที่ผสานรวมเข้าด้วยกันได้ ในบทช่วยสอนนี้ เราจะแนะนำคุณเกี่ยวกับกระบวนการฝังวัตถุ OLE และตัวควบคุม ActiveX โดยใช้ Aspose.Words สำหรับ Python
 
 
 ## เริ่มต้นใช้งาน Aspose.Words สำหรับ Python
@@ -19,11 +19,7 @@ url: /th/python-net/document-structure-and-content-manipulation/document-ole-obj
 - ติดตั้งไลบรารี Aspose.Words สำหรับ Python แล้ว
 - ความเข้าใจพื้นฐานเกี่ยวกับโครงสร้างเอกสาร Word
 
-## การฝังวัตถุ OLE
-
-วัตถุ OLE ช่วยให้คุณผสานรวมไฟล์ภายนอก เช่น สเปรดชีตหรือการนำเสนอ ลงในเอกสาร Word ของคุณได้อย่างราบรื่น ทำตามขั้นตอนเหล่านี้เพื่อฝังวัตถุ OLE:
-
-### ขั้นตอนที่ 1: การเพิ่มไลบรารีที่จำเป็น
+## ขั้นตอนที่ 1: การเพิ่มไลบรารีที่จำเป็น
 
 เริ่มต้นด้วยการนำเข้าโมดูลที่จำเป็นจากไลบรารี Aspose.Words และสิ่งที่ต้องมีอื่นๆ:
 
@@ -31,7 +27,7 @@ url: /th/python-net/document-structure-and-content-manipulation/document-ole-obj
 import aspose.words as aw
 ```
 
-### ขั้นตอนที่ 2: การสร้างเอกสาร Word
+## ขั้นตอนที่ 2: การสร้างเอกสาร Word
 
 สร้างเอกสาร Word ใหม่โดยใช้ Aspose.Words สำหรับ Python:
 
@@ -39,42 +35,16 @@ import aspose.words as aw
 doc = aw.Document()
 ```
 
-### ขั้นตอนที่ 3: การแทรกวัตถุ OLE
+## ขั้นตอนที่ 3: การแทรกวัตถุ OLE
 
 ตอนนี้ คุณสามารถแทรกวัตถุ OLE ลงในเอกสารของคุณได้ ตัวอย่างเช่น ลองฝังสเปรดชีต Excel:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## การฝังตัวควบคุม ActiveX
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", True, True, None)
 
-ตัวควบคุม ActiveX ช่วยให้เอกสารของคุณมีปฏิสัมพันธ์ได้ ช่วยให้ผู้ใช้โต้ตอบกับเนื้อหาที่ฝังไว้ได้ ทำตามขั้นตอนเหล่านี้เพื่อฝังตัวควบคุม ActiveX:
-
-### ขั้นตอนที่ 1: การเพิ่มไลบรารีที่จำเป็น
-
-เช่นเดียวกับวัตถุ OLE เริ่มต้นด้วยการนำเข้าโมดูลที่จำเป็น:
-
-```python
-import aspose.words as aw
-```
-
-### ขั้นตอนที่ 2: การสร้างเอกสาร Word
-
-สร้างเอกสาร Word ใหม่:
-
-```python
-doc = aw.Document()
-```
-
-### ขั้นตอนที่ 3: การแทรกตัวควบคุม ActiveX
-
-สมมติว่าคุณต้องการฝังเครื่องเล่นมัลติมีเดีย คุณสามารถทำได้ดังนี้:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## การเพิ่มการโต้ตอบและการทำงาน

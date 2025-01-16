@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## ขั้นตอนที่ 3: การสร้างวัตถุ DocumentBuilder
 
-การ`DocumentBuilder` คลาสเป็นเครื่องมืออันทรงพลังในไลบรารี Aspose.Words ซึ่งช่วยให้เราสามารถนำทางและจัดการเอกสารได้
+ การ`DocumentBuilder` คลาสเป็นเครื่องมืออันทรงพลังในไลบรารี Aspose.Words ซึ่งช่วยให้เราสามารถนำทางและจัดการเอกสารได้
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);

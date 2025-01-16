@@ -35,14 +35,14 @@ Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 ```java
 PclSaveOptions saveOptions = new PclSaveOptions();
 {
-	saveOptions.setSaveFormat(SaveFormat.PCL);
+	saveOptions.setSaveFormat();
 	saveOptions.setRasterizeTransformedElements(false);
 }
 ```
 
 ## Βήμα 3: Αποθηκεύστε το έγγραφο ως PCL
 
-Τώρα που έχετε φορτώσει το έγγραφό σας και ρυθμίσατε τις επιλογές αποθήκευσης PCL, ήρθε η ώρα να αποθηκεύσετε το έγγραφο ως αρχείο PCL. Χρησιμοποιήστε τον ακόλουθο κώδικα:
+Τώρα που έχετε φορτώσει το έγγραφό σας και ρυθμίσατε τις επιλογές αποθήκευσης PCL, ήρθε η ώρα να αποθηκεύσετε το έγγραφο ως αρχείο PCL. Χρησιμοποιήστε τον παρακάτω κώδικα:
 
 ```java
 doc.save("Your Directory Path" + "YourPCLDocument.pcl", saveOptions);
@@ -56,7 +56,7 @@ doc.save("Your Directory Path" + "YourPCLDocument.pcl", saveOptions);
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
 PclSaveOptions saveOptions = new PclSaveOptions();
 {
-	saveOptions.setSaveFormat(SaveFormat.PCL); saveOptions.setRasterizeTransformedElements(false);
+	saveOptions.setSaveFormat(); saveOptions.setRasterizeTransformedElements(false);
 }
 doc.save("Your Directory Path" + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```

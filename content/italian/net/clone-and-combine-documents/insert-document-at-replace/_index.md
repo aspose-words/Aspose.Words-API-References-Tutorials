@@ -165,7 +165,7 @@ Sì, è possibile modificare il gestore di callback per gestire più inserimenti
  Assolutamente! Puoi scaricare una prova gratuita da[Qui](https://releases.aspose.com/).
 
 ### Come posso ottenere supporto per Aspose.Words?
-Puoi ottenere supporto visitando il[Forum di Aspose.Words](https://forum.aspose.com/c/words/8).
+ Puoi ottenere supporto visitando il[Forum di Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Posso mantenere la formattazione del documento inserito?
  Sì, il`NodeImporter` La classe consente di specificare come gestire la formattazione durante l'importazione di nodi da un documento a un altro.

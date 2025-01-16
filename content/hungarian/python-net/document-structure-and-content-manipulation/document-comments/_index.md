@@ -8,7 +8,7 @@ weight: 11
 url: /hu/python-net/document-structure-and-content-manipulation/document-comments/
 ---
 
-A megjegyzések döntő szerepet játszanak a dokumentumok együttműködésében és áttekintésében, így több személy is megoszthatja gondolatait és javaslatait egy Word-dokumentumban. Az Aspose.Words for Python hatékony API-t biztosít, amely lehetővé teszi a fejlesztők számára, hogy könnyedén dolgozhassanak a Word-dokumentumok megjegyzéseivel. Ebben a cikkben azt fogjuk megvizsgálni, hogyan használhatjuk a Word-dokumentumok megjegyzés funkcióit az Aspose.Words for Python használatával.
+megjegyzések döntő szerepet játszanak a dokumentumok együttműködésében és áttekintésében, így több személy is megoszthatja gondolatait és javaslatait egy Word-dokumentumban. Az Aspose.Words for Python hatékony API-t biztosít, amely lehetővé teszi a fejlesztők számára, hogy könnyedén dolgozhassanak a Word-dokumentumok megjegyzéseivel. Ebben a cikkben azt fogjuk megvizsgálni, hogyan használhatjuk a Word-dokumentumok megjegyzés funkcióit az Aspose.Words for Python használatával.
 
 ## Bevezetés
 
@@ -58,7 +58,7 @@ for comment in doc.comments:
 
 ## Megjegyzések módosítása és feloldása
 
-megjegyzések gyakran változhatnak. Az Aspose.Words for Python lehetővé teszi a meglévő megjegyzések módosítását és megoldottként való megjelölését:
+A megjegyzések gyakran változhatnak. Az Aspose.Words for Python lehetővé teszi a meglévő megjegyzések módosítását és megoldottként való megjelölését:
 
 ```python
 # Modify a comment's text
@@ -66,19 +66,17 @@ comment = doc.comments[0]
 comment.text = "Updated insight: " + comment.text
 
 # Resolve a comment
-comment.resolved = True
-```
+comments = doc.get_child_nodes(aw.NodeType.COMMENT, True)
 
-## Válaszok és beszélgetések kezelése
+parent_comment = comments[0].as_comment()
+for child in parent_comment.replies:
+	child_comment = child.as_comment()
+	# Get comment parent and status.
+	print(child_comment.ancestor.id)
+	print(child_comment.done)
 
-A megjegyzések a beszélgetések részét képezhetik, a válaszok pedig mélyítik a beszélgetést. Az Aspose.Words for Python segítségével kezelheti a megjegyzésekre adott válaszokat:
-
-```python
-# Add a reply to a comment
-reply = aw.Comment(doc, "Alice", "I agree with John.")
-reply.parent_comment = comment
-reply.date_time = aw.DateTime.now()
-comment.replies.add(reply)
+	# And update comment Done mark.
+	child_comment.done = True
 ```
 
 ## Formázási és stílusjegyek
@@ -117,7 +115,7 @@ doc.import_comments("comments.xml")
 ## A megjegyzések használatának bevált gyakorlatai
 
 - A megjegyzések segítségével szövegkörnyezetet, magyarázatokat és javaslatokat adjon meg.
-- A megjegyzések legyenek tömörek és relevánsak a tartalomhoz.
+- megjegyzések legyenek tömörek és relevánsak a tartalomhoz.
 - A megjegyzéseket akkor oldja meg, ha már foglalkozott velük.
 - Használja fel a válaszokat a részletes viták elősegítésére.
 

@@ -61,7 +61,7 @@ Belge yüklendikten sonra, belirli bir aralıktaki metni silmeye geçebiliriz; b
 2.  Aralığı Sil: Şunu kullanın:`Range.Delete` Bu bölümdeki tüm metni silme yöntemi.
 
 ```csharp
-//Belgenin ilk bölümündeki metni silin
+// Belgenin ilk bölümündeki metni silin
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Aspose.Words for .NET, Word belgelerini işlemek için bir sınıf kütüphanesi
 
 ### Belirli bir paragraftan bir bölüm yerine metni silebilir miyim?
 
-Evet, istediğiniz paragrafa erişip, öğesini kullanarak belirli bir paragraftan metni silebilirsiniz.`Range.Delete` yöntem.
+ Evet, istediğiniz paragrafa erişip, öğesini kullanarak belirli bir paragraftan metni silebilirsiniz.`Range.Delete` yöntem.
 
 ### Metni koşullu olarak silmek mümkün müdür?
 

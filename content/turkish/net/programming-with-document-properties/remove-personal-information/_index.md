@@ -9,7 +9,7 @@ url: /tr/net/programming-with-document-properties/remove-personal-information/
 ---
 ## giriiş
 
-Merhaba! Hiç kendinizi belge yönetimi görevlerinde boğulurken buldunuz mu? Hepimiz bunu yaşadık. İster sözleşmelerle, raporlarla veya sadece günlük evrak işleriyle uğraşıyor olun, süreci basitleştiren bir araca sahip olmak hayat kurtarıcıdır. .NET için Aspose.Words'ü deneyin. Bu mücevher kütüphane, belge oluşturma, düzenleme ve dönüştürmeyi bir profesyonel gibi otomatikleştirmenizi sağlar. Bugün, sizi süper kullanışlı bir özellikten geçireceğiz: bir belgeden kişisel bilgileri kaldırma. Hadi başlayalım!
+Merhaba! Hiç kendinizi belge yönetimi görevlerinde boğulurken buldunuz mu? Hepimiz bunu yaşadık. İster sözleşmelerle, raporlarla veya sadece günlük evrak işleriyle uğraşıyor olun, süreci basitleştiren bir araca sahip olmak hayat kurtarıcıdır. .NET için Aspose.Words'ü deneyin. Bu mücevher kütüphane, belge oluşturma, düzenleme ve dönüştürmeyi bir profesyonel gibi otomatikleştirmenizi sağlar. Bugün, sizi süper kullanışlı bir özellikte gezdireceğiz: bir belgeden kişisel bilgileri kaldırma. Hadi başlayalım!
 
 ## Ön koşullar
 

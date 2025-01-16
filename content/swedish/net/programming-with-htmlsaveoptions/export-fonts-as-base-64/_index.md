@@ -117,4 +117,4 @@ Absolut! Aspose.Words för .NET låter dig bädda in olika resurser, inklusive b
 Inga problem! Aspose.Words för .NET kommer att bädda in alla typsnitt som används i ditt dokument som Base64 i den resulterande HTML-filen.
 
 ### Är Aspose.Words för .NET gratis att använda?
- Aspose.Words för .NET är ett kommersiellt bibliotek. Du kan dock ladda ner en gratis provversion från[Aspose släpper](https://releases.aspose.com/) sida.
+ Aspose.Words för .NET är ett kommersiellt bibliotek. Du kan dock ladda ner en gratis testversion från[Aspose släpper](https://releases.aspose.com/) sida.

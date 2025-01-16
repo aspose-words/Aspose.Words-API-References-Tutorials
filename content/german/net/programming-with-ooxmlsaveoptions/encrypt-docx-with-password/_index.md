@@ -54,7 +54,7 @@ Als nächstes müssen wir die Optionen zum Speichern des Dokuments einrichten. H
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-Der`OoxmlSaveOptions`Klasse können wir verschiedene Optionen zum Speichern von DOCX-Dateien angeben. Hier setzen wir die`Password`Eigentum an`"password"` . Sie können ersetzen`"password"` mit einem beliebigen Passwort Ihrer Wahl. Dieses Passwort wird zum Öffnen der verschlüsselten DOCX-Datei benötigt.
+ Der`OoxmlSaveOptions`Klasse können wir verschiedene Optionen zum Speichern von DOCX-Dateien angeben. Hier setzen wir die`Password`Eigentum an`"password"` . Sie können ersetzen`"password"` mit einem beliebigen Passwort Ihrer Wahl. Dieses Passwort wird zum Öffnen der verschlüsselten DOCX-Datei benötigt.
 
 ## Schritt 3: Speichern Sie das verschlüsselte Dokument
 
@@ -65,7 +65,7 @@ Abschließend speichern wir das Dokument mit den im vorherigen Schritt konfiguri
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-Der`Save` Methode der`Document` Klasse wird zum Speichern des Dokuments verwendet. Wir geben den Pfad und den Dateinamen für das verschlüsselte Dokument an, zusammen mit der`saveOptions` wir zuvor konfiguriert haben. Das Dokument wird nun als verschlüsselte DOCX-Datei gespeichert.
+ Der`Save` Methode der`Document` Klasse wird zum Speichern des Dokuments verwendet. Wir geben den Pfad und den Dateinamen für das verschlüsselte Dokument an, zusammen mit der`saveOptions` wir zuvor konfiguriert haben. Das Dokument wird nun als verschlüsselte DOCX-Datei gespeichert.
 
 ## Abschluss
 

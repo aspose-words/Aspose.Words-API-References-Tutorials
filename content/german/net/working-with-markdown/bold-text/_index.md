@@ -33,7 +33,7 @@ Lassen Sie uns nun den Vorgang der Fettdarstellung von Text in einem Word-Dokume
 
 ## Schritt 1: DocumentBuilder initialisieren
 
-Der`DocumentBuilder` Klasse bietet eine schnelle und einfache Möglichkeit, Ihrem Dokument Inhalt hinzuzufügen. Lassen Sie uns sie initialisieren.
+ Der`DocumentBuilder` Klasse bietet eine schnelle und einfache Möglichkeit, Ihrem Dokument Inhalt hinzuzufügen. Lassen Sie uns sie initialisieren.
 
 ```csharp
 // Verwenden Sie einen Dokument-Generator, um dem Dokument Inhalt hinzuzufügen.

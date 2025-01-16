@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Hợp nhất tài liệu
-
-Kết hợp tài liệu một cách liền mạch là một kỹ năng có giá trị. Điều hướng qua các tài liệu giúp chúng ta kết hợp chúng một cách hiệu quả:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Chia tách tài liệu
 
 Đôi khi, chúng ta có thể cần chia một tài liệu thành các phần nhỏ hơn. Điều hướng tài liệu giúp chúng ta thực hiện điều này:
@@ -117,8 +109,8 @@ Tiêu đề và chân trang thường cần được xử lý riêng biệt. Vi�
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 Nastavení hesla je volitelné, ale může přidat další vrstvu zabezpečení vašeho dokumentu, než jej upravíte.
 
 ```csharp
-//Zadejte heslo dlouhé až 15 znaků.
+// Zadejte heslo dlouhé až 15 znaků.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Ano, nastavení hesla je volitelné. Doporučení pouze pro čtení můžete př
 
 ### Co se stane, když dokument již má jiný typ ochrany?
 
-The`doc.Protect(ProtectionType.NoProtection)` metoda zajišťuje, že z dokumentu budou odstraněny všechny typy ochran.
+ The`doc.Protect(ProtectionType.NoProtection)` metoda zajišťuje, že z dokumentu budou odstraněny všechny typy ochran.
 
 ### Existuje způsob, jak zjistit, zda je dokument pouze pro čtení před odstraněním omezení?
 

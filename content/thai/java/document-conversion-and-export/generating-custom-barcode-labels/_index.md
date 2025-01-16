@@ -10,199 +10,172 @@ url: /th/java/document-conversion-and-export/generating-custom-barcode-labels/
 
 ## บทนำสู่การสร้างฉลากบาร์โค้ดแบบกำหนดเองใน Aspose.Words สำหรับ Java
 
-ในคู่มือฉบับสมบูรณ์นี้ เราจะเจาะลึกกระบวนการสร้างฉลากบาร์โค้ดแบบกำหนดเองโดยใช้ Aspose.Words สำหรับ Java Aspose.Words สำหรับ Java เป็น API ที่มีประสิทธิภาพที่ช่วยให้ผู้พัฒนาสามารถจัดการเอกสาร Word ได้ด้วยโปรแกรม คุณลักษณะที่โดดเด่นอย่างหนึ่งคือความสามารถในการทำงานกับฉลากบาร์โค้ด ทำให้เป็นเครื่องมือที่มีประโยชน์สำหรับธุรกิจและองค์กรที่ต้องการโซลูชันบาร์โค้ดแบบกำหนดเอง
+บาร์โค้ดมีความจำเป็นในแอปพลิเคชันสมัยใหม่ ไม่ว่าคุณจะจัดการสินค้าคงคลัง สร้างตั๋ว หรือสร้างบัตรประจำตัว ด้วย Aspose.Words สำหรับ Java การสร้างฉลากบาร์โค้ดแบบกำหนดเองจะกลายเป็นเรื่องง่ายดาย บทช่วยสอนทีละขั้นตอนนี้จะแนะนำคุณตลอดกระบวนการสร้างฉลากบาร์โค้ดแบบกำหนดเองโดยใช้อินเทอร์เฟซ IBarcodeGenerator พร้อมแล้วหรือยัง? มาเริ่มกันเลย!
+
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่เราจะเจาะลึกรายละเอียดของการสร้างฉลากบาร์โค้ดที่กำหนดเอง เรามาแน่ใจก่อนว่าเรามีข้อกำหนดเบื้องต้นแล้ว:
+ก่อนที่เราจะเริ่มเขียนโค้ด ให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
 
-1. สภาพแวดล้อมการพัฒนา Java: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Java และสภาพแวดล้อมการพัฒนาแบบบูรณาการ (IDE) ไว้ในระบบของคุณแล้ว
+- Java Development Kit (JDK): เวอร์ชัน 8 ขึ้นไป
+-  Aspose.Words สำหรับไลบรารี Java:[ดาวน์โหลดที่นี่](https://releases.aspose.com/words/java/).
+-  Aspose.BarCode สำหรับไลบรารี Java:[ดาวน์โหลดที่นี่](https://releases.aspose.com/).
+- สภาพแวดล้อมการพัฒนาแบบบูรณาการ (IDE): IntelliJ IDEA, Eclipse หรือ IDE ใด ๆ ที่คุณต้องการ
+-  ใบอนุญาตชั่วคราว: การขอรับใบอนุญาต[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) เพื่อการเข้าถึงแบบไม่มีข้อจำกัด
 
-2.  Aspose.Words สำหรับ Java: ดาวน์โหลดและติดตั้ง Aspose.Words สำหรับ Java จาก[ที่นี่](https://releases.aspose.com/words/java/).
+## แพ็คเกจนำเข้า
 
-3. ความรู้พื้นฐานเกี่ยวกับ Java: ความคุ้นเคยกับการเขียนโปรแกรม Java จะเป็นประโยชน์เนื่องจากเราจะเขียนโค้ด Java เพื่อสร้างฉลากบาร์โค้ดแบบกำหนดเอง
-
-## การสร้างฉลากบาร์โค้ดแบบกำหนดเอง
-
-ตอนนี้เรามาเริ่มสร้างฉลากบาร์โค้ดแบบกำหนดเองโดยใช้ Aspose.Words สำหรับ Java กัน เราจะแบ่งกระบวนการออกเป็นขั้นตอนต่างๆ และให้ตัวอย่างโค้ด Java สำหรับแต่ละขั้นตอน
-
-## การตั้งค่าความสูงของบาร์โค้ด
-
-ในการเริ่มต้น เราต้องกำหนดความสูงของบาร์โค้ดเป็นหน่วยสองหน่วย (1/1440 นิ้ว) จากนั้นเราจะแปลงค่าดังกล่าวเป็นมิลลิเมตร (mm) นี่คือโค้ดสำหรับทำสิ่งนี้:
+เราจะใช้ไลบรารี Aspose.Words และ Aspose.BarCode นำแพ็คเกจต่อไปนี้เข้าสู่โปรเจ็กต์ของคุณ:
 
 ```java
-	// ค่าอินพุตเป็น 1/1440 นิ้ว (สองนิ้ว)
-	int heightInTwips = tryParseInt(heightInTwipsString);
-	if (heightInTwips == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect height - " + heightInTwipsString + ".");
-	// แปลงเป็นมิลลิเมตร
-	return (float) (heightInTwips * 25.4 / 1440.0);
+import com.aspose.barcode.generation.*;
+import com.aspose.words.BarcodeParameters;
+import com.aspose.words.IBarcodeGenerator;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 ```
 
-## การแปลงสีภาพบาร์โค้ด
+การนำเข้าเหล่านี้ช่วยให้เราสามารถใช้คุณลักษณะการสร้างบาร์โค้ดและรวมเข้ากับเอกสาร Word ได้
 
-ต่อไปเราจะแปลงสีของภาพบาร์โค้ดจาก Word เป็น Aspose.BarCode สีที่ป้อนควรอยู่ในรูปแบบ "0xRRGGBB" (เลขฐานสิบหก) นี่คือโค้ดสำหรับการแปลง:
+มาแบ่งงานนี้เป็นขั้นตอนที่สามารถจัดการได้
+
+## ขั้นตอนที่ 1: สร้างคลาสยูทิลิตี้สำหรับการดำเนินการบาร์โค้ด
+
+เพื่อลดความซับซ้อนของการดำเนินการที่เกี่ยวข้องกับบาร์โค้ด เราจะสร้างคลาสยูทิลิตี้ที่มีวิธีตัวช่วยสำหรับงานทั่วไปเช่นการแปลงสีและการปรับขนาด
+
+### รหัส:
 
 ```java
-/// <สรุป>
-/// แปลงสีภาพบาร์โค้ดจาก Word เป็น Aspose.BarCode
-/// </สรุป>
-/// <param name="inputColor"></param>
-/// <กลับ></กลับ>
-private static Color convertColor(String inputColor) throws Exception {
-	// อินพุตควรเป็นตั้งแต่ "0x000000" ถึง "0xFFFFFF"
-	int color = tryParseHex(inputColor.replace("0x", ""));
-	if (color == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect color - " + inputColor + ".");
-	return new Color((color >> 16), ((color & 0xFF00) >> 8), (color & 0xFF));
+class CustomBarcodeGeneratorUtils {
+    public static double twipsToPixels(String heightInTwips, double defVal) {
+        try {
+            int lVal = Integer.parseInt(heightInTwips);
+            return (lVal / 1440.0) * 96.0; // โดยถือว่า DPI เริ่มต้นคือ 96
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
+
+    public static Color convertColor(String inputColor, Color defVal) {
+        if (inputColor == null || inputColor.isEmpty()) return defVal;
+        try {
+            int color = Integer.parseInt(inputColor, 16);
+            return new Color((color & 0xFF), ((color >> 8) & 0xFF), ((color >> 16) & 0xFF));
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
 }
 ```
 
-## ปัจจัยการแปลงมาตราส่วนของบาร์โค้ด
+### คำอธิบาย:
 
-ตอนนี้เราจะแปลงค่ามาตราส่วนของบาร์โค้ดจากเปอร์เซ็นต์เป็นค่าทศนิยม ค่ามาตราส่วนนี้จะกำหนดขนาดของบาร์โค้ด นี่คือโค้ดสำหรับการแปลง:
+- `twipsToPixels` วิธีการ: แปลง twips (ใช้ในเอกสาร Word) ให้เป็นพิกเซล
+- `convertColor` วิธีการ: แปลรหัสสีเลขฐานสิบหกเป็น`Color` วัตถุ
+
+## ขั้นตอนที่ 2: นำเครื่องสร้างบาร์โค้ดแบบกำหนดเองมาใช้
+
+ เราจะดำเนินการตาม`IBarcodeGenerator` อินเทอร์เฟซสำหรับสร้างบาร์โค้ดและรวมเข้ากับ Aspose.Words
+
+### รหัส:
 
 ```java
-/// <สรุป>
-/// แปลงค่ามาตราส่วนของบาร์โค้ดจากเปอร์เซ็นต์เป็นหน่วยลอยตัว
-/// </สรุป>
-/// <param name="ปัจจัยการปรับขนาด"></param>
-/// <กลับ></กลับ>
-private static float convertScalingFactor(String scalingFactor) throws Exception {
-	boolean isParsed = false;
-	int percent = tryParseInt(scalingFactor);
-	if (percent != Integer.MIN_VALUE && percent >= 10 && percent <= 10000)
-		isParsed = true;
-	if (!isParsed)
-		throw new Exception("Error! Incorrect scaling factor - " + scalingFactor + ".");
-	return percent / 100.0f;
+class CustomBarcodeGenerator implements IBarcodeGenerator {
+    public BufferedImage getBarcodeImage(BarcodeParameters parameters) {
+        try {
+            BarcodeGenerator gen = new BarcodeGenerator(
+                CustomBarcodeGeneratorUtils.getBarcodeEncodeType(parameters.getBarcodeType()),
+                parameters.getBarcodeValue()
+            );
+
+            gen.getParameters().getBarcode().setBarColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getForegroundColor(), Color.BLACK)
+            );
+            gen.getParameters().setBackColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getBackgroundColor(), Color.WHITE)
+            );
+
+            return gen.generateBarCodeImage();
+        } catch (Exception e) {
+            return new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB);
+        }
+    }
+
+    public BufferedImage getOldBarcodeImage(BarcodeParameters parameters) {
+        throw new UnsupportedOperationException();
+    }
 }
 ```
 
-## การใช้งานเมธอด GetBarCodeImage()
+### คำอธิบาย:
 
- ในขั้นตอนนี้เราจะดำเนินการ`getBarcodeImage`วิธีการนี้จะสร้างภาพบาร์โค้ดตามพารามิเตอร์ที่ให้มา เราจะจัดการกับบาร์โค้ดประเภทต่างๆ ตั้งค่าสี ปรับขนาด และอื่นๆ อีกมากมาย นี่คือโค้ดสำหรับวิธีการนี้:
+- `getBarcodeImage` วิธี:
+  -  สร้าง`BarcodeGenerator` ตัวอย่าง.
+  - กำหนดสีบาร์โค้ด, สีพื้นหลัง และสร้างภาพ
+
+## ขั้นตอนที่ 3: สร้างบาร์โค้ดและเพิ่มลงในเอกสาร Word
+
+ตอนนี้เราจะรวมเครื่องสร้างบาร์โค้ดลงในเอกสาร Word
+
+### รหัส:
 
 ```java
-/// <สรุป>
-/// การใช้งานของวิธี GetBarCodeImage() สำหรับอินเทอร์เฟซ IBarCodeGenerator
-/// </สรุป>
-/// <param name="พารามิเตอร์"></param>
-/// <กลับ></กลับ>
-public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Exception {
-	// ตรวจสอบว่ามีการให้ประเภทและค่าของบาร์โค้ดไว้หรือไม่
-	if (parameters.getBarcodeType() == null || parameters.getBarcodeValue() == null)
-		return null;
-	
-	// สร้าง BarcodeGenerator โดยอิงตามประเภทบาร์โค้ด
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR);
-	String type = parameters.getBarcodeType().toUpperCase();
-	switch (type)
-	{
-		case "QR":
-			generator = new BarcodeGenerator(EncodeTypes.QR);
-			break;
-		// จัดการประเภทบาร์โค้ดอื่น ๆ ที่นี่
-	}
-	
-	// ตั้งค่าข้อความบาร์โค้ด
-	generator.setCodeText(parameters.getBarcodeValue());
-	
-	// ตั้งค่าสีบาร์โค้ด
-	if (parameters.getForegroundColor() != null)
-		generator.getParameters().getBarcode().setBarColor(convertColor(parameters.getForegroundColor()));
-	if (parameters.getBackgroundColor() != null)
-		generator.getParameters().setBackColor(convertColor(parameters.getBackgroundColor()));
-	
-	// ตั้งค่าความสูงและขนาดของสัญลักษณ์
-	if (parameters.getSymbolHeight() != null)
-	{
-		generator.getParameters().getImageHeight().setPixels(convertSymbolHeight(parameters.getSymbolHeight()));
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	// ปรับแต่งตำแหน่งข้อความโค้ด
-	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
-	if (parameters.getDisplayText())
-		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
-	
-	// การปรับปรุงเพิ่มเติมสำหรับรหัส QR
-	final float SCALE = 2.4f; // ปัจจัยการปรับขนาดเชิงประจักษ์สำหรับการแปลงบาร์โค้ด Word เป็น Aspose.BarCode
-	float xdim = 1.0f;
-	if (generator.getBarcodeType().equals(EncodeTypes.QR))
-	{
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
-		generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageWidth().getInches() * SCALE);
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageWidth().getInches());
-		xdim = generator.getParameters().getImageHeight().getInches() / 25;
-		generator.getParameters().getBarcode().getXDimension().setInches(xdim);
-		generator.getParameters().getBarcode().getBarHeight().setInches(xdim);
-	}
-	
-	// ใช้ปัจจัยการปรับขนาด
-	if (parameters.getScalingFactor() != null)
-	{
-		float scalingFactor = convertScalingFactor(parameters.getScalingFactor());
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageHeight().getInches() * scalingFactor);
-		if (generator.getBarcodeType().equals(EncodeTypes.QR))
-		{
-			generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageHeight().getInches());
-			generator.getParameters().getBarcode().getXDimension().setInches(xdim * scalingFactor);
-			generator.getParameters().getBarcode().getBarHeight().setInches(xdim * scalingFactor);
-		}
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	// สร้างและส่งคืนภาพบาร์โค้ด
-	return generator.generateBarCodeImage();
+import com.aspose.words.*;
+
+public class GenerateCustomBarcodeLabels {
+    public static void main(String[] args) throws Exception {
+        // โหลดหรือสร้างเอกสาร Word
+        Document doc = new Document();
+        DocumentBuilder builder = new DocumentBuilder(doc);
+
+        // ตั้งค่าเครื่องสร้างบาร์โค้ดแบบกำหนดเอง
+        CustomBarcodeGenerator barcodeGenerator = new CustomBarcodeGenerator();
+        BarcodeParameters barcodeParameters = new BarcodeParameters();
+        barcodeParameters.setBarcodeType("QR");
+        barcodeParameters.setBarcodeValue("https://ตัวอย่าง.com");
+        barcodeParameters.setForegroundColor("000000");
+        barcodeParameters.setBackgroundColor("FFFFFF");
+
+        // สร้างภาพบาร์โค้ด
+        BufferedImage barcodeImage = barcodeGenerator.getBarcodeImage(barcodeParameters);
+
+        // แทรกภาพบาร์โค้ดลงในเอกสาร Word
+        builder.insertImage(barcodeImage, 200, 200);
+
+        // บันทึกเอกสาร
+        doc.save("CustomBarcodeLabels.docx");
+
+        System.out.println("Barcode labels generated successfully!");
+    }
 }
 ```
 
-## การใช้งานวิธี GetOldBarcodeImage()
+### คำอธิบาย:
 
- ในขั้นตอนนี้เราจะดำเนินการ`getOldBarcodeImage`วิธีการนี้จะสร้างภาพบาร์โค้ดสำหรับบาร์โค้ดแบบเก่า ในที่นี้ เราจะจัดการกับบาร์โค้ดประเภทเฉพาะ เช่น POSTNET นี่คือโค้ดสำหรับวิธีการนี้:
-
-```java
-/// <สรุป>
-/// การใช้งานวิธี GetOldBarcodeImage() สำหรับอินเทอร์เฟซ IBarCodeGenerator
-/// </สรุป>
-/// <param name="พารามิเตอร์"></param>
-/// <กลับ></กลับ>
-public BufferedImage getOldBarcodeImage(BarcodeParameters parameters)
-{
-	if (parameters.getPostalAddress() == null)
-		return null;
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.POSTNET);
-	{
-		generator.setCodeText(parameters.getPostalAddress());
-	}
-	// ประเภทฮาร์ดโค้ดสำหรับบาร์โค้ดแบบเก่า
-	return generator.generateBarCodeImage();
-}
-```
+- การเริ่มต้นเอกสาร: สร้างหรือโหลดเอกสาร Word
+- พารามิเตอร์บาร์โค้ด: กำหนดประเภทบาร์โค้ด ค่าและสี
+- การแทรกภาพ: เพิ่มภาพบาร์โค้ดที่สร้างขึ้นลงในเอกสาร Word
+- บันทึกเอกสาร: บันทึกไฟล์ในรูปแบบที่ต้องการ
 
 ## บทสรุป
 
-ในบทความนี้ เราได้สำรวจกระบวนการสร้างฉลากบาร์โค้ดแบบกำหนดเองโดยใช้ Aspose.Words สำหรับ Java เราได้ครอบคลุมขั้นตอนสำคัญต่างๆ ตั้งแต่การกำหนดความสูงของบาร์โค้ดไปจนถึงการใช้เมธอดในการสร้างบาร์โค้ด Aspose.Words สำหรับ Java ช่วยให้ผู้พัฒนาสามารถสร้างฉลากบาร์โค้ดแบบไดนามิกและแบบกำหนดเองได้ ทำให้เป็นเครื่องมือที่มีประโยชน์สำหรับอุตสาหกรรมต่างๆ
+หากทำตามขั้นตอนเหล่านี้ คุณก็สามารถสร้างและฝังฉลากบาร์โค้ดแบบกำหนดเองในเอกสาร Word ได้อย่างราบรื่นโดยใช้ Aspose.Words สำหรับ Java แนวทางนี้มีความยืดหยุ่นและสามารถปรับแต่งให้เหมาะกับแอปพลิเคชันต่างๆ ได้ ขอให้สนุกกับการเขียนโค้ด!
+
 
 ## คำถามที่พบบ่อย
 
-### ฉันจะปรับขนาดบาร์โค้ดที่สร้างขึ้นได้อย่างไร
+1. ฉันสามารถใช้ Aspose.Words สำหรับ Java โดยไม่ต้องมีใบอนุญาตได้หรือไม่?
+ ใช่ แต่จะมีข้อจำกัดบางประการ รับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) เพื่อการใช้งานที่ครบครัน
 
-คุณสามารถปรับขนาดของบาร์โค้ดที่สร้างขึ้นได้โดยตั้งค่าความสูงของสัญลักษณ์บาร์โค้ดและปัจจัยการปรับมาตราส่วนในสไนปเป็ตโค้ดที่ให้มา พารามิเตอร์เหล่านี้ช่วยให้คุณควบคุมขนาดของบาร์โค้ดได้ตามความต้องการของคุณ
+2. ฉันสามารถสร้างบาร์โค้ดประเภทใดได้บ้าง
+Aspose.BarCode รองรับ QR, Code 128, EAN-13 และประเภทอื่นๆ อีกมากมาย ตรวจสอบ[เอกสารประกอบ](https://reference.aspose.com/words/java/) สำหรับรายการที่สมบูรณ์
 
-### ฉันสามารถเปลี่ยนสีบาร์โค้ดได้หรือไม่?
+3. ฉันจะเปลี่ยนขนาดบาร์โค้ดได้อย่างไร?
+ ปรับแต่ง`XDimension` และ`BarHeight` พารามิเตอร์ใน`BarcodeGenerator` การตั้งค่า.
 
-ใช่ คุณสามารถเปลี่ยนสีของบาร์โค้ดได้โดยระบุสีพื้นหน้าและพื้นหลังในรหัส การปรับแต่งนี้ช่วยให้คุณจับคู่รูปลักษณ์ของบาร์โค้ดกับการออกแบบเอกสารของคุณได้
+4. ฉันสามารถใช้แบบอักษรที่กำหนดเองสำหรับบาร์โค้ดได้หรือไม่
+ ใช่ คุณสามารถปรับแต่งแบบอักษรข้อความบาร์โค้ดได้ผ่านทาง`CodeTextParameters` คุณสมบัติ.
 
-### Aspose.Words สำหรับ Java รองรับประเภทบาร์โค้ดใดบ้าง
+5. ฉันจะได้รับความช่วยเหลือเกี่ยวกับ Aspose.Words ได้ที่ไหน
+ เยี่ยมชม[ฟอรั่มสนับสนุน](https://forum.aspose.com/c/words/8/) เพื่อขอความช่วยเหลือ
 
-Aspose.Words สำหรับ Java รองรับบาร์โค้ดหลายประเภท เช่น รหัส QR, CODE128, CODE39, EAN8, EAN13, UPCA, UPCE, ITF14 และอื่นๆ คุณสามารถเลือกประเภทบาร์โค้ดที่เหมาะกับความต้องการของแอปพลิเคชันของคุณได้
-
-### ฉันจะรวมบาร์โค้ดที่สร้างขึ้นลงในเอกสาร Word ของฉันได้อย่างไร
-
-หากต้องการรวมบาร์โค้ดที่สร้างขึ้นลงในเอกสาร Word ของคุณ คุณสามารถใช้ความสามารถในการจัดการเอกสารของ Aspose.Words สำหรับ Java คุณสามารถแทรกภาพบาร์โค้ดลงในเอกสารของคุณที่ตำแหน่งที่ต้องการได้
-
-### มีโค้ดตัวอย่างสำหรับปรับแต่งเพิ่มเติมหรือไม่
-
- ใช่ คุณสามารถค้นหาตัวอย่างโค้ดและเอกสารเพิ่มเติมได้จากไซต์อ้างอิง Aspose.Words สำหรับ Java:[เอกสารอ้างอิง API Aspose.Words สำหรับ Java](https://reference.aspose.com/words/java/).

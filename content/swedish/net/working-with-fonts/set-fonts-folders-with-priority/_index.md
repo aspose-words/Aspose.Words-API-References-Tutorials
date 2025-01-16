@@ -1,6 +1,6 @@
 ---
-title: Ställ in teckensnittsmappar med prioritet
-linktitle: Ställ in teckensnittsmappar med prioritet
+title: Ställ in typsnittsmappar med prioritet
+linktitle: Ställ in typsnittsmappar med prioritet
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ställer in teckensnittsmappar med prioritet i Word-dokument med Aspose.Words för .NET. Vår guide säkerställer att dina dokument återges perfekt varje gång.
 type: docs
@@ -9,7 +9,7 @@ url: /sv/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
 ## Introduktion
 
-I en värld av dokumentmanipulation kan inställning av anpassade typsnittsmappar göra en värld av skillnad för att säkerställa att dina dokument återges perfekt, oavsett var de visas. Idag ska vi dyka in i hur du kan ställa in typsnittsmappar med prioritet i dina Word-dokument med Aspose.Words för .NET. Den här omfattande guiden leder dig genom varje steg, vilket gör processen så smidig som möjligt.
+I en värld av dokumentmanipulation kan inställning av anpassade typsnittsmappar göra en värld av skillnad för att säkerställa att dina dokument återges perfekt, oavsett var de visas. Idag ska vi dyka in i hur du kan ställa in typsnittsmappar med prioritet i dina Word-dokument med Aspose.Words för .NET. Denna omfattande guide kommer att leda dig genom varje steg, vilket gör processen så smidig som möjligt.
 
 ## Förutsättningar
 

@@ -52,7 +52,7 @@ Apprenez étape par étape à utiliser les en-têtes et les pieds de page dans A
 ### [Utilisation de la césure dans Aspose.Words pour Java](./using-hyphenation/)
 Apprenez à utiliser efficacement la césure dans Aspose.Words pour Java avec ce didacticiel complet. Améliorez la lisibilité de vos documents dès aujourd'hui !
 ### [Utilisation des listes dans Aspose.Words pour Java](./using-lists/)
-Apprenez à utiliser les listes dans Aspose.Words pour Java avec ce didacticiel étape par étape. Organisez et formatez vos documents efficacement.
+Apprenez à utiliser les listes dans Aspose.Words pour Java avec ce didacticiel étape par étape. Organisez et formatez efficacement vos documents.
 ### [Utilisation de Markdown dans Aspose.Words pour Java](./using-markdown/)
 Apprenez à utiliser Markdown dans Aspose.Words pour Java avec ce didacticiel étape par étape. Créez, stylisez et enregistrez des documents Markdown sans effort.
 ### [Utilisation des nœuds dans Aspose.Words pour Java](./using-nodes/)

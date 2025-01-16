@@ -17,7 +17,7 @@ Avant de plonger dans le code, assurons-nous que vous disposez de tout ce dont v
 
 1. Connaissances de base de C# : vous devez être à l’aise avec la programmation C#.
 2. Visual Studio installé : assurez-vous que Visual Studio ou tout autre IDE C# est installé sur votre ordinateur.
-3.  Aspose.Words pour .NET : Téléchargez et installez la dernière version d'Aspose.Words pour .NET à partir du[Communiqués de presse](https://releases.aspose.com/words/net/).
+3.  Aspose.Words pour .NET : téléchargez et installez la dernière version d'Aspose.Words pour .NET à partir du[Communiqués de presse](https://releases.aspose.com/words/net/).
 4.  Licence valide : Si vous n'avez pas de licence, vous pouvez en obtenir une[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
 
 ## Étape 1 : Configurez votre projet

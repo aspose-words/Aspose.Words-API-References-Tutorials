@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## テキストの変更
-
-実行または段落のテキストを直接設定することで、テキストを変更できます。
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## 書式設定の操作
 
 Aspose.Words では、書式設定スタイルを操作できます。

@@ -280,7 +280,7 @@ Bir belgeyi bölmek için, belirli bölümleri ayrı belgelere kaydedebilirsiniz
 Aspose.Words for Java, belgeleri PDF, HTML ve daha fazlası gibi çeşitli biçimlere dönüştürmenize olanak tanır.
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Gelişmiş Şekillendirme Teknikleri

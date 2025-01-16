@@ -20,7 +20,7 @@ Java için Aspose.Words, Word belgelerini programatik olarak oluşturmanıza, d�
 
 ## 3. Geliştirme Ortamınızı Kurma
 
-Başlamak için, geliştirme ortamınızda Aspose.Words for Java'nın yüklü olduğundan emin olun. Bunu şuradan indirebilirsiniz:[Aspose İndirme Sayfası](https://releases.aspose.com/words/java/). Kurulum tamamlandıktan sonra kodlamaya başlayabilirsiniz.
+ Başlamak için, geliştirme ortamınızda Aspose.Words for Java'nın yüklü olduğundan emin olun. Bunu şuradan indirebilirsiniz:[Aspose İndirme Sayfası](https://releases.aspose.com/words/java/). Kurulum tamamlandıktan sonra kodlamaya başlayabilirsiniz.
 
 ## 4. Lisansın Uygulanması
 
@@ -48,7 +48,7 @@ Lisansı uyguladıktan sonra, tüm özelliklerin beklendiği gibi çalıştığ�
 ## Tam Kaynak Kodu
 ```java
         License license = new License();
-        //Bu satır, yürütülebilir dosyaya ve Aspose.Words.dll'ye göre çeşitli konumlardan bir lisans ayarlamayı dener.
+        // Bu satır, yürütülebilir dosyaya ve Aspose.Words.dll'ye göre çeşitli konumlardan bir lisans ayarlamayı dener.
         // Ayrıca, bir akıştan lisans yüklemek için ek aşırı yüklemeyi de kullanabilirsiniz, bu yararlıdır.
         // örneğin, lisans gömülü bir kaynak olarak depolandığında.
         try

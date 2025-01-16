@@ -36,7 +36,7 @@ Aspose.Words nabízí bohatou sadu funkcí, včetně:
 Aspose.Words umožňuje převádět dokumenty aplikace Word do různých formátů, jako jsou PDF, HTML, TXT, EPUB a další, a zajistit tak kompatibilitu a dostupnost.
 
 #### Manipulace s dokumenty: 
-Aspose.Words můžete snadno manipulovat s dokumenty přidáváním nebo extrahováním obsahu, což z něj činí všestranný nástroj pro zpracování dokumentů.
+S Aspose.Words můžete snadno manipulovat s dokumenty přidáváním nebo extrahováním obsahu, což z něj činí všestranný nástroj pro zpracování dokumentů.
 
 #### Možnosti formátování
 Knihovna poskytuje rozsáhlé možnosti formátování textu, tabulek, obrázků a dalších prvků, což vám umožňuje zachovat vzhled převedených dokumentů.
@@ -105,8 +105,6 @@ Kromě Wordu a PDF podporuje Aspose.Words pro Python různé formáty dokumentů
 
 Aspose.Words umožňuje přizpůsobit vzhled převedených dokumentů. Můžete použít možnosti formátování, jako jsou styly písma, barvy, zarovnání a mezery mezi odstavci.
 
-#### Příklad:
-
 ```python
 # Python code for applying formatting during conversion
 import aspose.words as aw
@@ -128,8 +126,6 @@ doc.save("formatted_output.pdf", aw.SaveFormat.PDF)
 ### Manipulace s obrázky a tabulkami
 
 Aspose.Words vám umožňuje pracovat s obrázky a tabulkami během procesu převodu. Můžete extrahovat obrázky, měnit jejich velikost a manipulovat s tabulkami, abyste zachovali strukturu dokumentu.
-
-#### Příklad:
 
 ```python
 # Python code for handling images and tables during conversion
@@ -154,9 +150,7 @@ doc.save("modified_output.pdf", aw.SaveFormat.PDF)
 
 ### Správa písem a rozvržení
 
-Aspose.Words můžete zajistit konzistentní vykreslování písem a spravovat rozvržení převedených dokumentů. Tato funkce je užitečná zejména při zachování konzistence dokumentů v různých formátech.
-
-#### Příklad:
+S Aspose.Words můžete zajistit konzistentní vykreslování písem a spravovat rozvržení převedených dokumentů. Tato funkce je užitečná zejména při zachování konzistence dokumentů v různých formátech.
 
 ```python
 # Python code for managing fonts and layout during conversion
@@ -178,8 +172,6 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ### Psaní skriptů Python pro automatizaci
 
 Skriptovací schopnosti Pythonu z něj dělají vynikající volbu pro automatizaci opakujících se úloh. Můžete psát skripty Python pro provádění dávkové konverze dokumentů, což šetří čas a úsilí.
-
-#### Příklad:
 
 ```python
 # Python script for batch document conversion
@@ -205,11 +197,7 @@ for filename in input_files:
 
 ### Dávková konverze dokumentů
 
-Podle
-
- spojením výkonu Pythonu a Aspose.Words můžete automatizovat hromadnou konverzi dokumentů, zvýšit produktivitu a efektivitu.
-
-#### Příklad:
+Spojením výkonu Pythonu a Aspose.Words můžete automatizovat hromadnou konverzi dokumentů, zvýšit produktivitu a efektivitu.
 
 ```python
 # Python script for batch document conversion using Aspose.Words
@@ -238,20 +226,12 @@ for filename in input_files:
     output_filename = filename.replace(file_ext, ".pdf" if file_ext == ".docx" else ".docx")
     doc.save(os.path.join(output_dir, output_filename))
 ```
-## Výhody použití Aspose.Words pro Python
-
-Aspose.Words pro Python nabízí několik výhod, včetně:
-
-- Robustní možnosti konverze dokumentů
-- Bohatá sada funkcí pro manipulaci s dokumenty
-- Snadná integrace s aplikacemi Pythonu
-- Neustálá podpora a aktualizace od prosperující komunity
 
 ## Závěr
 
 Konverze dokumentů hraje zásadní roli při zjednodušení výměny informací a zlepšení spolupráce. Python se díky své jednoduchosti a všestrannosti stává v tomto procesu cenným aktivem. Aspose.Words pro Python dále poskytuje vývojářům bohaté funkce, díky nimž je převod dokumentů hračkou.
 
-## Nejčastější dotazy
+## FAQ
 
 ### Je Aspose.Words kompatibilní se všemi verzemi Pythonu?
 

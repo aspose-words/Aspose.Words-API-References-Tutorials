@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Adım 3: Yazı Tipi Ayarlarını Yapılandırın
 
-Yeni bir tane oluştur`FontSettings` nesne ve yazı tipi geri dönüş ayarlarını bir XML dosyasından yükleyin. Bu XML dosyası yazı tipi geri dönüşü için kuralları içerir.
+ Yeni bir tane oluştur`FontSettings` nesne ve yazı tipi geri dönüş ayarlarını bir XML dosyasından yükleyin. Bu XML dosyası yazı tipi geri dönüşü için kuralları içerir.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

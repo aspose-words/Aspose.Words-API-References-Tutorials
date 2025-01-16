@@ -71,7 +71,7 @@ Di sinilah aksi sesungguhnya terjadi. Kita akan menemukan kata "sedih" dan mengg
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-Itu`Replace`Metodenya mudah. Kami menentukan kata yang akan dicari, kata pengganti, dan opsi untuk operasi cari-dan-ganti.
+ Itu`Replace`Metodenya mudah. Kami menentukan kata yang akan dicari, kata pengganti, dan opsi untuk operasi cari-dan-ganti.
 
 ## Langkah 5: Simpan Dokumen
 

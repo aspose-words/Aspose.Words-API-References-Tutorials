@@ -15,7 +15,7 @@ Grafy jsou mocným nástrojem pro vizualizaci dat. Když potřebujete vytvořit 
 
 Než se ponoříte do kódování, musíte mít splněno několik předpokladů:
 
-1. Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Potřebujete integrované vývojové prostředí (IDE), jako je Visual Studio.
 3. .NET Framework: Ujistěte se, že je vaše vývojové prostředí nastaveno pro vývoj .NET.
 4. Základní znalost C#: Tato příručka předpokládá, že máte základní znalosti o programování v C#.
@@ -78,7 +78,7 @@ Nyní je čas definovat vlastnosti pro osu X. To zahrnuje nastavení typu katego
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // Měřeno v zobrazovacích jednotkách osy Y (stovky).
+xAxis.CrossesAt = 3; //Měřeno v zobrazovacích jednotkách osy Y (stovky).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

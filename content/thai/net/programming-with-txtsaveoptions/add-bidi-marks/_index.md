@@ -15,7 +15,7 @@ url: /th/net/programming-with-txtsaveoptions/add-bidi-marks/
 
 ก่อนที่จะเจาะลึกโค้ด ให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
 
-1.  Aspose.Words สำหรับ .NET: คุณต้องติดตั้ง Aspose.Words สำหรับ .NET คุณสามารถดาวน์โหลดได้จาก[หน้าดาวน์โหลด Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words สำหรับ .NET: คุณต้องติดตั้ง Aspose.Words สำหรับ .NET คุณสามารถดาวน์โหลดได้จาก[หน้าดาวน์โหลด Aspose](https://releases.aspose.com/words/net/).
 2. .NET Framework หรือ .NET Core: ให้แน่ใจว่าคุณมีการตั้งค่าสภาพแวดล้อม .NET ที่เข้ากันได้เพื่อรันตัวอย่าง
 3. ความรู้พื้นฐานเกี่ยวกับ C#: ความคุ้นเคยกับภาษาการเขียนโปรแกรม C# และการดำเนินการพื้นฐานใน .NET
 

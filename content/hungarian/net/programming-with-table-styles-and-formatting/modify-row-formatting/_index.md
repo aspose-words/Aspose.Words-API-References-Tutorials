@@ -32,7 +32,7 @@ using Aspose.Words.Tables;
 
 ## 1. lépés: Töltse be a dokumentumot
 
-Először is be kell töltenünk a Word dokumentumot, amellyel dolgozni fogunk. Itt ragyog az Aspose.Words, amely lehetővé teszi a Word-dokumentumok egyszerű programozását.
+Először is be kell töltenünk a Word dokumentumot, amellyel dolgozni fogunk. Itt ragyog az Aspose.Words, amely lehetővé teszi a Word-dokumentumok egyszerű, programozott kezelését.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -61,7 +61,7 @@ Miután a táblázat már elérhető, a következő lépés az első sor lekér�
 Row firstRow = table.FirstRow;
 ```
 
-A`FirstRow` tulajdonság adja nekünk a táblázat első sorát. Most készen állunk a formázás módosításának megkezdésére.
+ A`FirstRow` tulajdonság adja nekünk a táblázat első sorát. Most készen állunk a formázás módosításának megkezdésére.
 
 ## 4. lépés: Módosítsa a sorhatárokat
 

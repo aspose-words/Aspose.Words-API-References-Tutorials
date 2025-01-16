@@ -62,7 +62,7 @@ builder.InsertCell();
 builder.Writeln("Outer Table Cell 2");
 ```
 
-### Schritt 2.3: Äußere Tabelle beenden
+### Schritt 2.3: Beenden der äußeren Tabelle
 
 Das Beenden der Tabelle an dieser Stelle ist wichtig, da wir so die verschachtelte Tabelle innerhalb der ersten Zelle beginnen können.
 

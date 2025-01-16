@@ -13,7 +13,7 @@ Heb je je ooit overweldigd gevoeld door de repetitieve taken die bij het maken e
 
 ## Vereisten
 
-Voordat we in de spannende wereld van Aspose.Words voor .NET duiken, zijn er een paar dingen die u moet regelen:
+Voordat we in de opwindende wereld van Aspose.Words voor .NET duiken, zijn er een paar dingen die u moet regelen:
 
 1.  Visual Studio: Zorg ervoor dat Visual Studio op uw machine is geïnstalleerd. Als u het nog niet hebt, kunt u het downloaden van[hier](https://visualstudio.microsoft.com/downloads/).
 2.  Aspose.Words voor .NET: U hebt de Aspose.Words-bibliotheek nodig. U kunt deze downloaden van de[downloadpagina](https://releases.aspose.com/words/net/).

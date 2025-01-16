@@ -92,4 +92,4 @@ Aspose.Words는 다양한 버전의 .NET Framework와 .NET Core를 지원하여 
 네, Aspose.Words API 메서드를 사용하여 머리글과 바닥글의 연결을 해제하고 개별 문서 서식을 복원할 수 있습니다.
 
 ### Aspose.Words for .NET에 대한 더 자세한 문서는 어디에서 찾을 수 있나요?
- 방문하다[.NET 설명서를 위한 Aspose.Words](https://reference.aspose.com/words/net/)포괄적인 가이드와 API 참조를 확인하세요.
+ 방문하다[.NET 설명서를 위한 Aspose.Words](https://reference.aspose.com/words/net/) 포괄적인 가이드와 API 참조를 확인하세요.

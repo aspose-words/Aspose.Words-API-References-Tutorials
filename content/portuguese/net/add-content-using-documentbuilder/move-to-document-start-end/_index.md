@@ -80,7 +80,7 @@ Claro! Embora este guia use C#, você pode usar Aspose.Words para .NET com qualq
 ### Preciso de uma licença para usar o Aspose.Words para .NET?  
  Sim, mas você pode começar com um[teste gratuito](https://releases.aspose.com/) ou pegue um[licença temporária](https://purchase.aspose.com/temporary-license/).
 
-### O Aspose.Words para .NET é compatível com o .NET Core?  
+### Aspose.Words para .NET é compatível com o .NET Core?  
 Sim, o Aspose.Words para .NET oferece suporte ao .NET Framework e ao .NET Core.
 
 ### Onde posso encontrar mais tutoriais sobre Aspose.Words para .NET?  

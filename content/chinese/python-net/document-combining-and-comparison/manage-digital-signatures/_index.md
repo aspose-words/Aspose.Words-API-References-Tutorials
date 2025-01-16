@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /zh/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## 数字签名简介
 
 数字签名相当于手写签名的电子版本。它们提供了一种验证电子文档真实性、完整性和来源的方法。对文档进行数字签名时，会根据文档内容生成加密哈希。然后使用签名者的私钥加密此哈希，从而创建数字签名。任何拥有相应公钥的人都可以验证签名并确定文档的真实性。
@@ -25,7 +24,7 @@ url: /zh/python-net/document-combining-and-comparison/manage-digital-signatures/
 2. 导入所需模块：在 Python 脚本中导入必要的模块：
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## 加载和访问文档
@@ -33,7 +32,7 @@ url: /zh/python-net/document-combining-and-comparison/manage-digital-signatures/
 在添加或验证数字签名之前，您需要使用 Aspose.Words 加载文档：
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## 向文档添加数字签名
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 要向文档添加数字签名，您需要一个数字证书：
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 现在，签署文件：
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## 验证数字签名
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## 删除数字签名
-
-要从文档中删除数字签名：
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## 确保文件真实性
-
-数字签名通过确认文档的来源和完整性来确保文档的真实性。它们可防止篡改和未经授权的修改。
-
 ## 自定义数字签名的外观
 
 您可以自定义数字签名的外观：
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## 结论

@@ -45,9 +45,6 @@ from aspose.words import Section, Paragraph
 
 # Add a new section
 section = doc.sections.add()
-
-# Add a paragraph to the section
-paragraph = section.add_paragraph("Hello, Aspose.Words!")
 ```
 
 ## 使用文本内容
@@ -159,19 +156,6 @@ doc.save("output_document.docx")
 
 # Export to PDF
 doc.save("output_document.pdf", SaveFormat.PDF)
-```
-
-## 自动生成文档
-
-Aspose.Words 在自动化文档生成工作流程方面表现出色：
-
-```python
-# Generate multiple documents
-for data in dataset:
-    new_doc = Document()
-    # Populate the document with data
-    # ...
-    new_doc.save(f"document_{data.id}.docx")
 ```
 
 ## 最佳实践和技巧

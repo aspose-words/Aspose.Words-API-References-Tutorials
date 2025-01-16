@@ -70,7 +70,7 @@ Die Zusammenarbeit und Überprüfung von Dokumenten sind wichtige Aspekte des mo
 
 ### Kann ich mit Aspose.Words für Java Änderungen in Word-Dokumenten verfolgen?
 
-Ja, Aspose.Words für Java ermöglicht es Ihnen, Änderungen in Word-Dokumenten zu verfolgen. Sie können die`startTrackRevisions` Methode, um die Änderungsverfolgung zu aktivieren.
+ Ja, Aspose.Words für Java ermöglicht es Ihnen, Änderungen in Word-Dokumenten zu verfolgen. Sie können die`startTrackRevisions` Methode, um die Änderungsverfolgung zu aktivieren.
 
 ### Wie kann ich an einem Dokument vorgenommene Änderungen überprüfen?
 

@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Steg 5: Infoga hyperlänken
 
- Nu infogar vi hyperlänken med hjälp av`InsertHyperlink`metod. Den här metoden tar tre parametrar: visningstexten, URL:en och en boolean som anger om länken ska formateras som en hyperlänk.
+ Nu infogar vi hyperlänken med hjälp av`InsertHyperlink` metod. Den här metoden tar tre parametrar: visningstexten, URL:en och en boolean som anger om länken ska formateras som en hyperlänk.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
@@ -106,7 +106,7 @@ Att infoga hyperlänkar i ett Word-dokument med Aspose.Words för .NET är enkel
 
 ### Kan jag infoga flera hyperlänkar i ett enda dokument?
 
- Ja, du kan infoga flera hyperlänkar genom att upprepa`InsertHyperlink`metod för varje länk.
+ Ja, du kan infoga flera hyperlänkar genom att upprepa`InsertHyperlink` metod för varje länk.
 
 ### Hur ändrar jag färgen på hyperlänken?
 
@@ -118,7 +118,7 @@ Att infoga hyperlänkar i ett Word-dokument med Aspose.Words för .NET är enkel
 
 ### Vad händer om webbadressen är ogiltig?
 
-De`InsertHyperlink` metoden validerar inte webbadresser, så det är viktigt att se till att webbadresserna är korrekta innan du infogar dem.
+ De`InsertHyperlink` metoden validerar inte webbadresser, så det är viktigt att se till att webbadresserna är korrekta innan du infogar dem.
 
 ### Är det möjligt att ta bort en hyperlänk efter att den har infogats?
 

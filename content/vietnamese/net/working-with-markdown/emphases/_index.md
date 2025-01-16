@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Các`dataDir` biến là trình giữ chỗ cho thư mục nơi bạn sẽ lưu tệp Markdown của mình. Đảm bảo thay thế "YOUR DOCUMENT DIRECTORY" bằng đường dẫn thực tế.
+ Các`dataDir` biến là trình giữ chỗ cho thư mục nơi bạn sẽ lưu tệp Markdown của mình. Đảm bảo thay thế "YOUR DOCUMENT DIRECTORY" bằng đường dẫn thực tế.
 
 ## Bước 2: Viết văn bản thường
 

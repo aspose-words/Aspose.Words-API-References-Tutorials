@@ -45,7 +45,7 @@ using Aspose.Words.Tables;
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-การ`DocumentBuilder` class เป็นเครื่องมืออเนกประสงค์ที่ช่วยให้คุณสามารถสร้างและปรับเปลี่ยนเอกสารได้
+ การ`DocumentBuilder` class เป็นเครื่องมืออเนกประสงค์ที่ช่วยให้คุณสามารถสร้างและปรับเปลี่ยนเอกสารได้
 
 ## ขั้นตอนที่ 2: แทรกไฮเปอร์ลิงก์
 

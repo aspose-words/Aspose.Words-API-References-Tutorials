@@ -2,7 +2,7 @@
 title: 断开 Word 文档中的前向链接
 linktitle: 断开 Word 文档中的前向链接
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 断开 Word 文档文本框中的前向链接。按照我们的指南，获得更顺畅的文档管理体验。
+description: 了解如何使用 Aspose.Words for .NET 断开 Word 文档文本框中的正向链接。按照我们的指南，获得更顺畅的文档管理体验。
 type: docs
 weight: 10
 url: /zh/net/working-with-textboxes/break-a-link/

@@ -13,7 +13,7 @@ url: /ja/net/working-with-fields/
 | タイトル | 説明 |
 | --- | --- |
 | [フィールドコード](./field-code/) | Aspose.Words for .NET を使用して Word 文書内のフィールド コードを操作する方法を学習します。このガイドでは、文書の読み込み、フィールドへのアクセス、フィールド コードの処理について説明します。 |
-| [フィールドの変更 カルチャーソースの更新](./change-field-update-culture-source/) | このガイドでは、Aspose.Words for .NET でフィールド更新カルチャ ソースを変更する方法を学習します。さまざまなカルチャに基づいて日付の書式を簡単に制御します。|
+| [フィールドの変更 カルチャーソースの更新](./change-field-update-culture-source/) | このガイドでは、Aspose.Words for .NET でフィールド更新カルチャ ソースを変更する方法を説明します。さまざまなカルチャに基づいて日付の書式を簡単に制御します。|
 | [フィールドレベルでロケールを指定する](./specify-locale-at-field-level/) | Aspose.Words for .NET を使用して Word 文書内のフィールドのロケールを指定する方法を学びます。ガイドに従って、文書の書式設定を簡単にカスタマイズします。 |
 | [ハイパーリンクを置き換える](./replace-hyperlinks/) | Aspose.Words for .NET を使用して Word 文書内のハイパーリンクを置き換えます。ハイパーリンクを置き換える手順を説明します。 |
 | [差し込みフィールドの名前を変更する](./rename-merge-fields/) | Aspose.Words for .NET を使用して Word 文書内の結合フィールドの名前を変更する方法を学びます。詳細なステップバイステップのガイドに従って、文書を簡単に操作します。 |

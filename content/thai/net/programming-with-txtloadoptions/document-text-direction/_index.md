@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ###  อะไรคือ`DocumentDirection` property used for?
 
-การ`DocumentDirection` ทรัพย์สินใน`TxtLoadOptions` กำหนดทิศทางข้อความสำหรับเอกสาร สามารถตั้งค่าได้`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , หรือ`DocumentDirection.RightToLeft`.
+ การ`DocumentDirection` ทรัพย์สินใน`TxtLoadOptions` กำหนดทิศทางข้อความสำหรับเอกสาร สามารถตั้งค่าได้`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , หรือ`DocumentDirection.RightToLeft`.
 
 ### ฉันสามารถกำหนดทิศทางข้อความสำหรับย่อหน้าเฉพาะแทนทั้งเอกสารได้ไหม
 

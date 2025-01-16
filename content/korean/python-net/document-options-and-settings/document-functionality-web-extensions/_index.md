@@ -18,7 +18,7 @@ url: /ko/python-net/document-options-and-settings/document-functionality-web-ext
 
 - Python 프로그래밍에 대한 기본적인 이해.
 -  Python API 참조를 위한 Aspose.Words(다음에서 사용 가능)[여기](https://reference.aspose.com/words/python-net/).
-- Python 라이브러리용 Aspose.Words에 액세스(다운로드)[여기](https://releases.aspose.com/words/python/).
+-  Python 라이브러리용 Aspose.Words에 액세스(다운로드)[여기](https://releases.aspose.com/words/python/).
 
 ## Python용 Aspose.Words 설정
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Python 스크립트로 라이브러리를 가져옵니다.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## 새 문서 만들기
@@ -42,7 +42,7 @@ import aspose.words
 Aspose.Words를 사용하여 새 문서를 만드는 것으로 시작해 보겠습니다.
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## 문서에 내용 추가
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Aspose.Words를 사용하면 문서에 쉽게 콘텐츠를 추가할 수 있습니다.
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ builder.writeln("Hello, world!")
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## 웹 확장 삽입
-
-문서에 웹 확장을 삽입하려면 다음 단계를 따르세요.
-
-1. HTML, CSS, JavaScript를 사용하여 웹 확장 프로그램을 만듭니다.
-2. 웹 확장 프로그램을 base64로 인코딩된 문자열로 변환합니다.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. 문서에 웹 확장 프로그램을 삽입합니다.
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## 웹 확장 프로그램과 상호 작용
@@ -98,7 +78,7 @@ Aspose.Words의 이벤트 처리 메커니즘을 사용하여 웹 확장 프로�
 웹 확장 기능을 통합하고 필요한 수정을 한 후 Aspose.Words에서 지원하는 다양한 형식을 사용하여 문서를 저장할 수 있습니다.
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## 성능 최적화를 위한 팁

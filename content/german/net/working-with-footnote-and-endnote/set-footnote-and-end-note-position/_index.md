@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-Ersetzen Sie in diesem Code`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad, in dem sich Ihr Dokument befindet.
+Ersetzen Sie in diesem Code`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad, in dem sich Ihr Dokument befindet.
 
 ## Schritt 2: Fußnotenposition festlegen
 
@@ -93,4 +93,4 @@ Aspose.Words für .NET ist für .NET-Anwendungen konzipiert, Sie können es aber
 
 ### Wo finde ich ausführlichere Dokumentation für Aspose.Words für .NET?
 
-Detaillierte Dokumentation ist verfügbar[Hier](https://reference.aspose.com/words/net/).
+ Detaillierte Dokumentation ist verfügbar[Hier](https://reference.aspose.com/words/net/).

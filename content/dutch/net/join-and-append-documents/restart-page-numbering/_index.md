@@ -37,7 +37,7 @@ Laten we nu eens kijken naar de praktische stappen voor het opnieuw starten van 
 
 Definieer een tekenreeksvariabele`dataDir` om het pad naar uw documentdirectory op te slaan. Vervang "UW DOCUMENTDIRECTORY" door de werkelijke locatie.
 
- Maak er twee`Document` objecten met behulp van de`Aspose.Words.Document` constructor. De eerste (`srcDoc`) bevat het brondocument met de inhoud die moet worden toegevoegd. De tweede (`dstDoc`) vertegenwoordigt het doeldocument waarin we de broninhoud integreren met een nieuwe paginanummering.
+ Maak er twee`Document` objecten met behulp van de`Aspose.Words.Document` constructor. De eerste (`srcDoc`) bevat het brondocument met de inhoud die moet worden toegevoegd. De tweede (`dstDoc`) vertegenwoordigt het doeldocument waar we de broninhoud integreren met een nieuwe paginanummering.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Vervang door uw eigen directory

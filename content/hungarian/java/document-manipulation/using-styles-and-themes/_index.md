@@ -82,7 +82,7 @@ public void setThemeProperties() throws Exception
 
 Ezek a részletek bemutatják, hogyan lehet lekérni és módosítani a téma tulajdonságait, például a betűtípusokat és a színeket.
 
-## Stíluselválasztók beillesztése
+## Stíluselválasztók beszúrása
 
 A stíluselválasztók hasznosak különböző stílusok egyetlen bekezdésen belüli alkalmazásakor. Íme egy példa a stíluselválasztók beszúrására:
 

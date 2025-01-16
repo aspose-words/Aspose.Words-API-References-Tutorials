@@ -40,7 +40,7 @@ Bu ad alanlarını içe aktardıktan sonra kodlamaya başlamaya hazırsınız!
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-The`LoadOptions` sınıfı, belgelerin nasıl yükleneceğini özelleştirmenize olanak tanır. Burada, buna daha yeni başlıyoruz.
+ The`LoadOptions` sınıfı, belgelerin nasıl yükleneceğini özelleştirmenize olanak tanır. Burada, buna daha yeni başlıyoruz.
 
 ## Adım 2: Düzenleme Dili olarak Japoncayı ekleyin
 

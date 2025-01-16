@@ -86,7 +86,7 @@ Az alábbi lépések követésével biztosíthatja, hogy a Word-dokumentumokban 
 
 ### Miért használjam a "Ne tömörítsen kis metafájlokat" funkciót?
 
-Ennek a funkciónak a használata segít megőrizni a dokumentumokban lévő kis metafájlok minőségét és részletességét, ami elengedhetetlen a professzionális és jó minőségű kimenetekhez.
+Ennek a funkciónak a használata segít megőrizni a dokumentumokban lévő kis metafájlok minőségét és részletességét, ami kulcsfontosságú a professzionális és jó minőségű kimenetekhez.
 
 ### Használhatom ezt a funkciót más fájlformátumokkal?
 

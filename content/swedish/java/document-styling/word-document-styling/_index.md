@@ -280,7 +280,7 @@ För att dela ett dokument kan du spara specifika avsnitt till separata dokument
 Aspose.Words för Java låter dig konvertera dokument till olika format, som PDF, HTML och mer.
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Avancerade stylingtekniker

@@ -53,7 +53,7 @@ doc.save("Output.docx");
 
 ### Penjelasan:
 
-Itu`save` metode dipanggil pada`Document` objek untuk menyimpan file di`.docx` format. Argumen yang diberikan adalah jalur berkas tempat dokumen Word akan disimpan. Ini adalah langkah terakhir dalam proses konversi.
+ Itu`save` metode dipanggil pada`Document` objek untuk menyimpan file di`.docx` format. Argumen yang diberikan adalah jalur berkas tempat dokumen Word akan disimpan. Ini adalah langkah terakhir dalam proses konversi.
 
 ## Kesimpulan
 

@@ -58,7 +58,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 A Word-dokumentumok mezői olyanok, mint a helyőrzők vagy dinamikus elemek, amelyek adatokat jeleníthetnek meg, számításokat végezhetnek, vagy akár műveleteket is indíthatnak. Ebben a példában egy "NINCS" mezőt szúrunk be. Ez a fajta mező nem jelenít meg semmit, de demonstrációs célokra hasznos.
 
 ```csharp
-// Írja be a NINCS mezőt.
+// Illessze be a NINCS mezőt.
 FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, false);
 ```
 

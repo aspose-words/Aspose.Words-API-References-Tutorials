@@ -32,7 +32,7 @@ using Aspose.Words;
 using System.IO;
 ```
 
-Der`Aspose.Words` Namespace enthält die Kernklassen für die Handhabung von Word-Dokumenten, während`System.IO` bietet Funktionalität für Dateioperationen.
+ Der`Aspose.Words` Namespace enthält die Kernklassen für die Handhabung von Word-Dokumenten, während`System.IO` bietet Funktionalität für Dateioperationen.
 
 Lassen Sie uns den Prozess der Konvertierung einer DOCX-Datei in das RTF-Format in klare, überschaubare Schritte aufschlüsseln. Befolgen Sie diese Anweisungen, um die Konvertierung reibungslos durchzuführen.
 
@@ -86,7 +86,7 @@ In diesem Schritt:
 
 ## Abschluss
 
-Herzlichen Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET eine DOCX-Datei in das RTF-Format konvertieren. Indem Sie diese einfachen Schritte befolgen, können Sie diese Funktionalität jetzt in Ihre eigenen Anwendungen integrieren und Dokumentkonvertierungen problemlos automatisieren. Denken Sie daran, dass Aspose.Words über die Formatkonvertierung hinaus eine Reihe von Funktionen bietet. Sehen Sie sich also die Dokumentation an, um weitere Möglichkeiten zur Handhabung Ihrer Dokumente zu entdecken.
+Herzlichen Glückwunsch! Sie haben erfolgreich gelernt, wie Sie eine DOCX-Datei mit Aspose.Words für .NET in das RTF-Format konvertieren. Indem Sie diese einfachen Schritte befolgen, können Sie diese Funktionalität jetzt in Ihre eigenen Anwendungen integrieren und Dokumentkonvertierungen problemlos automatisieren. Denken Sie daran, dass Aspose.Words über die Formatkonvertierung hinaus eine Reihe von Funktionen bietet. Sehen Sie sich also die Dokumentation an, um weitere Möglichkeiten zur Handhabung Ihrer Dokumente zu entdecken.
 
 ## Häufig gestellte Fragen
 

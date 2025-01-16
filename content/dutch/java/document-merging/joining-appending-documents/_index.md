@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-De`ImportFormatMode.KEEP_SOURCE_FORMATTING` Met deze optie wordt ervoor gezorgd dat de opmaak van de brondocumenten behouden blijft.
+ De`ImportFormatMode.KEEP_SOURCE_FORMATTING` Met deze optie wordt ervoor gezorgd dat de opmaak van de brondocumenten behouden blijft.
 
 ## Stap 5: Het resultaat opslaan
 

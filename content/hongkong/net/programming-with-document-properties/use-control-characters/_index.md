@@ -113,7 +113,7 @@ Aspose.Words for .NET 是一個函式庫，可讓開發人員以程式設計方�
 它支援多種格式，包括.doc、.docx、.pdf、.html 等。
 
 ### 我需要了解 C# 才能使用 Aspose.Words 嗎？
-C# 的基礎知識很有幫助，但該程式庫的設計宗旨是對各個層級的開發人員都友善。
+C# 的基礎知識很有幫助，但該程式庫的設計目標是對各個層級的開發人員都友善。
 
 ### 我可以在哪裡找到更多資訊或獲得支援？
 查看[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或訪問[支援論壇](https://forum.aspose.com/c/words/8).

@@ -167,58 +167,48 @@ public class DocumentMerger {
 
  Bằng cách sử dụng`ImportFormatMode.KEEP_DIFFERENT_STYLES`Aspose.Words giữ nguyên các kiểu khác nhau giữa tài liệu nguồn và tài liệu đích, giải quyết xung đột một cách khéo léo.
 
-## 9. Thực hành tốt nhất để hợp nhất tài liệu
-
-- Luôn xử lý các trường hợp ngoại lệ trong quá trình hợp nhất tài liệu để tránh các lỗi không mong muốn.
-
-- Kiểm tra các bản cập nhật thường xuyên và sử dụng phiên bản mới nhất của Aspose.Words for Java để được hưởng lợi từ các bản sửa lỗi và tính năng mới.
-
-- Kiểm tra việc hợp nhất tài liệu với nhiều loại và kích cỡ tài liệu khác nhau để đảm bảo hiệu suất tối ưu.
-
-- Hãy cân nhắc sử dụng hệ thống kiểm soát phiên bản để theo dõi những thay đổi trong quá trình hợp nhất tài liệu.
-
-## 10. Kết luận
+## Phần kết luận
 
 Aspose.Words for Java trao quyền cho các nhà phát triển Java khả năng hợp nhất các tài liệu Word một cách dễ dàng. Bằng cách làm theo hướng dẫn từng bước trong bài viết này, giờ đây bạn có thể hợp nhất các tài liệu, xử lý định dạng, chèn ngắt và quản lý xung đột một cách dễ dàng. Với Aspose.Words for Java, việc hợp nhất tài liệu trở thành một quy trình liền mạch và tự động, giúp tiết kiệm thời gian và công sức quý báu.
 
-## 11. Câu hỏi thường gặp 
+## Câu hỏi thường gặp 
 
 ### Tôi có thể ghép các tài liệu có định dạng và kiểu khác nhau không?
 
-   Có, Aspose.Words for Java xử lý việc hợp nhất các tài liệu với nhiều định dạng và phong cách khác nhau. Thư viện giải quyết xung đột một cách thông minh, cho phép bạn hợp nhất các tài liệu từ nhiều nguồn khác nhau một cách liền mạch.
+Có, Aspose.Words for Java xử lý việc hợp nhất các tài liệu với nhiều định dạng và phong cách khác nhau. Thư viện giải quyết xung đột một cách thông minh, cho phép bạn hợp nhất các tài liệu từ nhiều nguồn khác nhau một cách liền mạch.
 
 ### Aspose.Words có hỗ trợ việc ghép các tài liệu lớn một cách hiệu quả không?
 
-   Aspose.Words for Java được thiết kế để xử lý hiệu quả các tài liệu lớn. Nó sử dụng các thuật toán được tối ưu hóa để hợp nhất tài liệu, đảm bảo hiệu suất cao ngay cả với nội dung rộng lớn.
+Aspose.Words for Java được thiết kế để xử lý hiệu quả các tài liệu lớn. Nó sử dụng các thuật toán được tối ưu hóa để hợp nhất tài liệu, đảm bảo hiệu suất cao ngay cả với nội dung rộng lớn.
 
 ### Tôi có thể hợp nhất các tài liệu được bảo vệ bằng mật khẩu bằng Aspose.Words cho Java không?
 
-   Có, Aspose.Words for Java hỗ trợ hợp nhất các tài liệu được bảo vệ bằng mật khẩu. Đảm bảo rằng bạn cung cấp đúng mật khẩu để truy cập và hợp nhất các tài liệu này.
+Có, Aspose.Words for Java hỗ trợ hợp nhất các tài liệu được bảo vệ bằng mật khẩu. Đảm bảo rằng bạn cung cấp đúng mật khẩu để truy cập và hợp nhất các tài liệu này.
 
 ### Có thể hợp nhất các phần cụ thể từ nhiều tài liệu không?
 
-   Có, Aspose.Words cho phép bạn chọn lọc hợp nhất các phần cụ thể từ các tài liệu khác nhau. Điều này giúp bạn kiểm soát chi tiết quá trình hợp nhất.
+Có, Aspose.Words cho phép bạn chọn lọc hợp nhất các phần cụ thể từ các tài liệu khác nhau. Điều này giúp bạn kiểm soát chi tiết quá trình hợp nhất.
 
 ### Tôi có thể hợp nhất các tài liệu có theo dõi thay đổi và bình luận không?
 
-    Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
+Chắc chắn rồi, Aspose.Words for Java có thể xử lý việc hợp nhất các tài liệu có các thay đổi và bình luận được theo dõi. Bạn có tùy chọn giữ nguyên hoặc xóa các bản sửa đổi này trong quá trình hợp nhất.
 
 ### Aspose.Words có giữ nguyên định dạng gốc của các tài liệu đã hợp nhất không?
 
-    Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
+Aspose.Words giữ nguyên định dạng của tài liệu nguồn theo mặc định. Tuy nhiên, bạn có thể chọn các chế độ định dạng nhập khác nhau để xử lý xung đột và duy trì tính nhất quán về định dạng.
 
 ### Tôi có thể ghép tài liệu từ các định dạng tệp không phải Word như PDF hoặc RTF không?
 
-    Aspose.Words is primarily designed for working with Word documents. To merge documents from non-Word file formats, consider using the appropriate Aspose product for that specific format, such as Aspose.PDF or Aspose.RTF.
+Aspose.Words chủ yếu được thiết kế để làm việc với các tài liệu Word. Để hợp nhất các tài liệu từ các định dạng tệp không phải Word, hãy cân nhắc sử dụng sản phẩm Aspose phù hợp cho định dạng cụ thể đó, chẳng hạn như Aspose.PDF hoặc Aspose.RTF.
 
 ### Tôi có thể xử lý phiên bản tài liệu trong quá trình hợp nhất như thế nào?
 
-    Document versioning during merging can be achieved by implementing proper version control practices in your application. Aspose.Words focuses on document content merging and doesn't directly manage versioning.
+Có thể thực hiện phiên bản tài liệu trong quá trình hợp nhất bằng cách triển khai các biện pháp kiểm soát phiên bản phù hợp trong ứng dụng của bạn. Aspose.Words tập trung vào việc hợp nhất nội dung tài liệu và không trực tiếp quản lý phiên bản.
 
 ### Aspose.Words for Java có tương thích với Java 8 và các phiên bản mới hơn không?
 
-    Yes, Aspose.Words for Java is compatible with Java 8 and newer versions. It's always recommended to use the latest Java version for better performance and security.
+Có, Aspose.Words for Java tương thích với Java 8 và các phiên bản mới hơn. Luôn khuyến nghị sử dụng phiên bản Java mới nhất để có hiệu suất và bảo mật tốt hơn.
 
 ### Aspose.Words có hỗ trợ việc ghép tài liệu từ các nguồn từ xa như URL không?
 
-    Yes, Aspose.Words for Java can load documents from various sources, including URLs, streams, and file paths. You can merge documents fetched from remote locations seamlessly.
+Có, Aspose.Words for Java có thể tải tài liệu từ nhiều nguồn khác nhau, bao gồm URL, luồng và đường dẫn tệp. Bạn có thể hợp nhất tài liệu được lấy từ các vị trí từ xa một cách liền mạch.

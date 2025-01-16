@@ -165,7 +165,7 @@ Evet, bir belge koleksiyonu üzerinde yineleme yaparak birden fazla eklemeyi iş
  Kesinlikle! Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).
 
 ### Aspose.Words için nasıl destek alabilirim?
-Destek almak için şu adresi ziyaret edebilirsiniz:[Aspose.Words forumu](https://forum.aspose.com/c/words/8).
+ Destek almak için şu adresi ziyaret edebilirsiniz:[Aspose.Words forumu](https://forum.aspose.com/c/words/8).
 
 ### Eklediğim belgenin formatını koruyabilir miyim?
  Evet,`NodeImporter` sınıfı, düğümleri bir belgeden diğerine aktarırken biçimlendirmenin nasıl işleneceğini belirtmenize olanak tanır.

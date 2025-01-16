@@ -93,7 +93,7 @@ Tím se váš nechráněný dokument uloží do určeného adresáře.
 
 ## Závěr
 
-A tady to máte! Odstranění ochrany z dokumentu aplikace Word pomocí Aspose.Words pro .NET je hračka. Ať už se jedná o dokument chráněný heslem nebo ne, Aspose.Words vám poskytuje flexibilitu pro snadnou správu ochrany dokumentů. Nyní můžete odemknout své dokumenty a převzít plnou kontrolu pomocí pouhých několika řádků kódu.
+tady to máte! Odstranění ochrany z dokumentu aplikace Word pomocí Aspose.Words pro .NET je hračka. Ať už se jedná o dokument chráněný heslem nebo ne, Aspose.Words vám poskytuje flexibilitu pro snadnou správu ochrany dokumentů. Nyní můžete odemknout své dokumenty a převzít plnou kontrolu pomocí pouhých několika řádků kódu.
 
 ## FAQ
 

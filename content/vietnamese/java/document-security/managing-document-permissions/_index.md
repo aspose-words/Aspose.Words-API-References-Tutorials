@@ -16,7 +16,7 @@ Trong thế giới số ngày nay, quản lý tài liệu là một khía cạnh
 
 Trước khi đi sâu vào quản lý quyền tài liệu, hãy bắt đầu bằng cách thiết lập Aspose.Words cho Java. Thực hiện theo các bước sau để bắt đầu:
 
-1.  Tải xuống Aspose.Words cho Java: Truy cập[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) để tải xuống phiên bản mới nhất của Aspose.Words cho Java.
+1.  Tải xuống Aspose.Words cho Java: Truy cập[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)để tải xuống phiên bản mới nhất của Aspose.Words cho Java.
 
 2. Cài đặt Aspose.Words cho Java: Sau khi tải xuống thư viện, hãy làm theo hướng dẫn cài đặt để thiết lập thư viện trong môi trường phát triển Java của bạn.
 
@@ -52,21 +52,12 @@ Sau đây là đoạn mã Java mẫu để thiết lập quyền cho tài liệu
 // Tải tài liệu
 Document doc = new Document("sample.docx");
 
-// Xác định kiểm soát truy cập
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Áp dụng bảo vệ tài liệu
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Lưu tài liệu
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Những câu hỏi thường gặp (FAQ)
+## Câu hỏi thường gặp
 
-## Làm thế nào để tôi có thể xóa chế độ bảo vệ tài liệu?
+### Làm thế nào để tôi có thể xóa chế độ bảo vệ tài liệu?
 
 Để xóa bảo vệ tài liệu, chỉ cần mở tài liệu được bảo vệ và nếu được bảo vệ bằng mật khẩu, hãy cung cấp mật khẩu chính xác. Sau đó, sử dụng Aspose.Words for Java để xóa bảo vệ như sau:
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Tôi có thể thiết lập quyền cho người dùng cụ thể không?
+### Tôi có thể thiết lập quyền cho người dùng cụ thể không?
 
 Có, Aspose.Words for Java cho phép bạn thiết lập quyền cho người dùng hoặc nhóm cụ thể. Bạn có thể xác định ai có thể truy cập và chỉnh sửa tài liệu.
 
-## Có thể mã hóa một tài liệu bằng nhiều mật khẩu không?
+### Có thể mã hóa một tài liệu bằng nhiều mật khẩu không?
 
 Không, Aspose.Words for Java hỗ trợ mã hóa mật khẩu đơn. Bạn có thể đặt mật khẩu để bảo vệ tài liệu.
 
-## Làm thế nào để kiểm tra quyền của một tài liệu?
+### Làm thế nào để kiểm tra quyền của một tài liệu?
 
 Bạn có thể sử dụng Aspose.Words cho Java để kiểm tra quyền của tài liệu bằng cách kiểm tra cài đặt bảo vệ và tùy chọn kiểm soát truy cập.
 
-## Tôi có thể tự động hóa việc quản lý quyền cấp phép tài liệu không?
+### Tôi có thể tự động hóa việc quản lý quyền cấp phép tài liệu không?
 
 Hoàn toàn có thể! Bạn có thể tích hợp Aspose.Words for Java vào các ứng dụng của mình để tự động hóa việc quản lý quyền tài liệu, biến nó thành một phần liền mạch trong quy trình làm việc tài liệu của bạn.
 
-## Tôi phải làm sao nếu quên mật khẩu tài liệu?
+### Tôi phải làm sao nếu quên mật khẩu tài liệu?
 
 Nếu bạn quên mật khẩu tài liệu, sẽ không có cách nào để khôi phục lại. Hãy đảm bảo lưu giữ hồ sơ mật khẩu của bạn ở nơi an toàn.
 

@@ -118,7 +118,7 @@ Aspose.Words for .NET to biblioteka umożliwiająca programowe tworzenie, modyfi
  Tak, możesz użyć[bezpłatny okres próbny](https://releases.aspose.com/) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
 
 ### Gdzie mogę znaleźć dokumentację Aspose.Words dla .NET?
-Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
+ Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
 
 ### Jak mogę uzyskać pomoc dotyczącą Aspose.Words?
  Możesz odwiedzić[forum wsparcia](https://forum.aspose.com/c/words/8) po pomoc.

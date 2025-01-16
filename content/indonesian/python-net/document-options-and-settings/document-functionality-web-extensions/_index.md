@@ -18,7 +18,7 @@ Sebelum kita menyelami detail teknisnya, pastikan Anda memiliki prasyarat beriku
 
 - Pemahaman dasar tentang pemrograman Python.
 -  Aspose.Words untuk referensi API Python (tersedia di[Di Sini](https://reference.aspose.com/words/python-net/).
-- Akses ke Aspose.Words untuk pustaka Python (unduh dari[Di Sini](https://releases.aspose.com/words/python/).
+-  Akses ke Aspose.Words untuk pustaka Python (unduh dari[Di Sini](https://releases.aspose.com/words/python/).
 
 ## Menyiapkan Aspose.Words untuk Python
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Impor pustaka dalam skrip Python Anda.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Membuat Dokumen Baru
@@ -42,7 +42,7 @@ import aspose.words
 Mari kita mulai dengan membuat dokumen baru menggunakan Aspose.Words:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Menambahkan Konten ke Dokumen
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Anda dapat dengan mudah menambahkan konten ke dokumen menggunakan Aspose.Words:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ Penataan gaya dan pemformatan memainkan peran penting dalam penyajian dokumen. A
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Memasukkan Ekstensi Web
-
-Untuk memasukkan ekstensi web ke dalam dokumen, ikuti langkah-langkah berikut:
-
-1. Buat ekstensi web menggunakan HTML, CSS, dan JavaScript.
-2. Ubah ekstensi web menjadi string berkode base64.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Masukkan ekstensi web ke dalam dokumen:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Berinteraksi dengan Ekstensi Web
@@ -98,7 +78,7 @@ Ekstensi web dapat mengubah konten dokumen secara dinamis. Misalnya, Anda dapat 
 Setelah menggabungkan ekstensi web dan membuat modifikasi yang diperlukan, Anda dapat menyimpan dokumen menggunakan berbagai format yang didukung oleh Aspose.Words:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Tips untuk Optimasi Performa

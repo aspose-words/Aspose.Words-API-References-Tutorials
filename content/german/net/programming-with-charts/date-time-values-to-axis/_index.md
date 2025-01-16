@@ -33,7 +33,7 @@ using Aspose.Words.Drawing.Charts;
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
-Zuerst müssen Sie das Verzeichnis definieren, in dem Ihr Dokument gespeichert wird. Dies ist wichtig, um Ihre Dateien zu organisieren und sicherzustellen, dass Ihr Code korrekt ausgeführt wird.
+Zuerst müssen Sie das Verzeichnis definieren, in dem Ihr Dokument gespeichert wird. Dies ist wichtig für die Organisation Ihrer Dateien und stellt sicher, dass Ihr Code korrekt ausgeführt wird.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

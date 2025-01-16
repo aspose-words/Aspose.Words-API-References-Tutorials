@@ -80,7 +80,7 @@ Att uppdatera den senast utskrivna egenskapen hjälper till att spåra dokumenta
 Ja, Aspose.Words för .NET låter dig uppdatera olika dokumentegenskaper, såsom författare, titel, ämne och mer.
 
 ### Är Aspose.Words för .NET gratis?
-Aspose.Words för .NET erbjuder en gratis testversion som du kan ladda ner[här](https://releases.aspose.com/). För utökad användning skulle du behöva köpa en licens.
+ Aspose.Words för .NET erbjuder en gratis testversion som du kan ladda ner[här](https://releases.aspose.com/). För utökad användning skulle du behöva köpa en licens.
 
 ### Var kan jag hitta mer dokumentation om Aspose.Words för .NET?
-Du kan hitta detaljerad dokumentation om Aspose.Words för .NET[här](https://reference.aspose.com/words/net/).
+ Du kan hitta detaljerad dokumentation om Aspose.Words för .NET[här](https://reference.aspose.com/words/net/).

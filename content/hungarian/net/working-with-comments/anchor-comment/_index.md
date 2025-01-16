@@ -9,7 +9,7 @@ url: /hu/net/working-with-comments/anchor-comment/
 ---
 ## Bevezetés
 
-Előfordult már, hogy olyan helyzetbe került, amikor programozottan megjegyzéseket kellett fűznie egy Word-dokumentum adott szövegrészeihez? Képzelje el, hogy egy dokumentumon dolgozik együtt a csapatával, és bizonyos részeket megjegyzésekkel kell kiemelnie, hogy mások áttekinthessék. Ebben az oktatóanyagban részletesen bemutatjuk, hogyan illeszthetünk be horgonyzó megjegyzéseket Word-dokumentumokhoz az Aspose.Words for .NET használatával. A folyamatot egyszerű lépésekre bontjuk, így Ön könnyen követheti és megvalósíthatja projektjeit.
+Előfordult már, hogy olyan helyzetbe került, amikor programozottan megjegyzéseket kellett fűznie egy Word-dokumentum bizonyos szövegrészeihez? Képzelje el, hogy egy dokumentumon dolgozik együtt a csapatával, és bizonyos részeket megjegyzésekkel kell kiemelnie, hogy mások áttekinthessék. Ebben az oktatóanyagban részletesen bemutatjuk, hogyan illeszthetünk be horgonyzó megjegyzéseket Word-dokumentumokhoz az Aspose.Words for .NET használatával. A folyamatot egyszerű lépésekre bontjuk, így Ön könnyen követheti és megvalósíthatja projektjeit.
 
 ## Előfeltételek
 
@@ -127,7 +127,7 @@ A horgony megjegyzések a szöveg bizonyos szakaszainak kiemelésére és megjeg
 Igen, több megjegyzés tartomány megadásával ugyanahhoz a szövegrészhez több megjegyzést is hozzáadhat.
 
 ### Ingyenesen használható az Aspose.Words for .NET?
-Az Aspose.Words for .NET ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/) . A teljes funkciókhoz licencet vásárolhat[itt](https://purchase.aspose.com/buy).
+ Az Aspose.Words for .NET ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/) . A teljes funkciókhoz licencet vásárolhat[itt](https://purchase.aspose.com/buy).
 
 ### Testreszabhatom a megjegyzések megjelenését?
 Míg az Aspose.Words a funkcionalitásra összpontosít, a megjegyzések megjelenését a Word dokumentumokban általában maga a Word szabályozza.

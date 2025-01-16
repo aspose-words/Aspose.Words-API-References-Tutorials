@@ -38,7 +38,7 @@ Sonra, yüklenen belgemizi yazdırmak için bir yazdırma işi oluşturacağız.
 ```java
 // Belgemizi yazdırmak için bir yazdırma işi oluşturun.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Belgedeki sayfa sayısıyla bir öznitelik kümesi başlatın.
+// Belgedeki sayfa sayısıyla bir öznitelik kümesi başlatın.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Yazıcı ayarlarını diğer parametrelerle birlikte yazdırma belgesine aktarın.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Belgemizi yazdırmak için bir yazdırma işi oluşturun.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Belgedeki sayfa sayısıyla bir öznitelik kümesi başlatın.
+// Belgedeki sayfa sayısıyla bir öznitelik kümesi başlatın.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Yazıcı ayarlarını diğer parametrelerle birlikte yazdırma belgesine aktarın.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Öznitelik kümesinde tanımlanan sayfa başlangıç ve bitiş dizinleri.
+        //Öznitelik kümesinde tanımlanan sayfa başlangıç ve bitiş dizinleri.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Bu kağıt parçasına yazdırılacak son sayfanın numarasını seçin.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Hesaplanana kadar saklanan geçerli sayfadan seçili sayfalar arasında döngü yapın
+        // Hesaplanana kadar saklanan geçerli sayfadan seçili sayfalar arasında döngü yapın
         // Son sayfa.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Sütun ve satır indekslerini hesaplayın.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // Yararlı dönüş değeri, sayfanın işlendiği ölçektir.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Sayfa kenarlıklarını çizin (sayfa küçük resmi küçük resimden daha küçük olabilir)
+                //Sayfa kenarlıklarını çizin (sayfa küçük resmi küçük resimden daha küçük olabilir)
                 // yer tutucu boyutu).
                 if (mPrintPageBorders) {
                     // Sayfanın gerçek %100 boyutunu puan olarak alın.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Sayfadaki sütun ve satır sayısını tanımlayın
-        //Manzara odaklı kağıt.
+        // Manzara odaklı kağıt.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ Tebrikler! Java için Aspose.Words kullanarak bir Word belgesini başarıyla yaz
 
 ### S1: Aspose.Words for Java kullanarak bir belgenin belirli sayfalarını yazdırabilir miyim?
 
- Evet, bir belgeyi yazdırırken sayfa aralığını belirtebilirsiniz. Kod örneğinde, şunu kullandık:`attributes.add(new PageRanges(1, doc.getPageCount()))` tüm sayfaları yazdırmak için. Sayfa aralığını ihtiyacınıza göre ayarlayabilirsiniz.
+ Evet, bir belgeyi yazdırırken sayfa aralığını belirtebilirsiniz. Kod örneğinde, şunu kullandık:`attributes.add(new PageRanges(1, doc.getPageCount()))`tüm sayfaları yazdırmak için. Sayfa aralığını ihtiyacınıza göre ayarlayabilirsiniz.
 
 ### S2: Aspose.Words for Java toplu yazdırma için uygun mudur?
 

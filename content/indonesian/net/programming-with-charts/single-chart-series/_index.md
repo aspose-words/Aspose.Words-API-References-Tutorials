@@ -112,7 +112,7 @@ Nah, itu dia! Anda telah berhasil menyesuaikan satu rangkaian bagan dalam dokume
 Aspose.Words untuk .NET adalah pustaka hebat yang memungkinkan Anda membuat, mengedit, mengonversi, dan memanipulasi dokumen Word secara terprogram.
 
 ### Dapatkah saya menggunakan Aspose.Words secara gratis?
- Ya, Anda bisa memulai dengan[uji coba gratis](https://releases.aspose.com/).
+Ya, Anda bisa memulai dengan[uji coba gratis](https://releases.aspose.com/).
 
 ### Bagaimana cara mendapatkan dukungan untuk Aspose.Words?
  Anda bisa mendapatkan dukungan dari komunitas Aspose di[forum](https://forum.aspose.com/c/words/8).

@@ -44,7 +44,7 @@ public class TableCreation {
 }
 ```
 
-W tym fragmencie kodu tworzymy prostą tabelę z 3 wierszami i 3 kolumnami i wypełniamy każdą komórkę tekstem „Przykładowy tekst”.
+tym fragmencie kodu tworzymy prostą tabelę z 3 wierszami i 3 kolumnami i wypełniamy każdą komórkę tekstem „Przykładowy tekst”.
 
 ### Dodawanie nagłówków do tabeli
 Dodawanie nagłówków do tabeli jest często konieczne dla lepszej organizacji. Oto, jak możesz to osiągnąć:

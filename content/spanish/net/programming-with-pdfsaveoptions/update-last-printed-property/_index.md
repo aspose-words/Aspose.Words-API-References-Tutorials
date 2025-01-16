@@ -80,7 +80,7 @@ Actualizar la última propiedad impresa ayuda a realizar el seguimiento del uso 
 Sí, Aspose.Words para .NET le permite actualizar varias propiedades del documento, como autor, título, asunto y más.
 
 ### ¿Aspose.Words para .NET es gratuito?
-Aspose.Words para .NET ofrece una prueba gratuita que puedes descargar[aquí](https://releases.aspose.com/)Para un uso prolongado, necesitarás comprar una licencia.
+ Aspose.Words para .NET ofrece una prueba gratuita que puedes descargar[aquí](https://releases.aspose.com/)Para un uso prolongado, necesitarás comprar una licencia.
 
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Words para .NET?
-Puede encontrar documentación detallada sobre Aspose.Words para .NET[aquí](https://reference.aspose.com/words/net/).
+ Puede encontrar documentación detallada sobre Aspose.Words para .NET[aquí](https://reference.aspose.com/words/net/).

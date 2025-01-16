@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Các`Aspose.Words` không gian tên chứa các lớp cốt lõi để thao tác các tài liệu Word, trong khi`Aspose.Words.Tables` chuyên dùng để xử lý bảng.
+ Các`Aspose.Words` không gian tên chứa các lớp cốt lõi để thao tác các tài liệu Word, trong khi`Aspose.Words.Tables` chuyên dùng để xử lý bảng.
 
 ## Bước 1: Thiết lập tài liệu của bạn
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- Trong bước này, bạn xác định đường dẫn nơi tài liệu của bạn được lưu trữ và tải nó vào một`Document` đối tượng. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ.
+ Trong bước này, bạn xác định đường dẫn nơi tài liệu của bạn được lưu trữ và tải nó vào một`Document` đối tượng. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ.
 
 ## Bước 2: Truy cập Bảng
 
@@ -68,7 +68,7 @@ Bây giờ bạn đã có bảng, bạn có thể áp dụng chức năng tự �
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-Các`AutoFit` phương pháp với`AutoFitBehavior.AutoFitToWindow` đảm bảo chiều rộng của bảng được điều chỉnh để vừa với toàn bộ chiều rộng của trang.
+ Các`AutoFit` phương pháp với`AutoFitBehavior.AutoFitToWindow` đảm bảo chiều rộng của bảng được điều chỉnh để vừa với toàn bộ chiều rộng của trang.
 
 ## Bước 4: Lưu tài liệu đã sửa đổi
 

@@ -122,7 +122,7 @@ Oui, vous pouvez ajouter plusieurs documents en appelant plusieurs fois le`Appen
 
 ### Que se passe-t-il si le document source a un formatage différent ?
 
-Le`ImportFormatMode.KeepSourceFormatting` garantit que la mise en forme du document source est préservée lors de son ajout.
+ Le`ImportFormatMode.KeepSourceFormatting` garantit que la mise en forme du document source est préservée lors de son ajout.
 
 ### Ai-je besoin d'une licence pour utiliser Aspose.Words ?
 

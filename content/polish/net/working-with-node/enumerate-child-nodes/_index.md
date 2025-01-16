@@ -50,7 +50,7 @@ Następnie musimy uzyskać dostęp do konkretnego akapitu w dokumencie. Dla upro
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
-Ten kod pobiera pierwszy węzeł akapitu w dokumencie. Jeśli Twój dokument ma konkretne akapity, które chcesz wybrać, dostosuj odpowiednio indeks.
+Ten kod pobiera pierwszy węzeł akapitu w dokumencie. Jeśli Twój dokument ma konkretne akapity, które chcesz wybrać, dostosuj indeks odpowiednio.
 
 ## Krok 3: Pobierz węzły podrzędne
 

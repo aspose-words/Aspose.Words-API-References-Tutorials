@@ -9,7 +9,7 @@ url: /fr/net/working-with-markdown/emphases/
 ---
 ## Introduction
 
-Markdown est un langage de balisage léger que vous pouvez utiliser pour ajouter des éléments de mise en forme à des documents texte en clair. Dans ce guide, nous allons plonger dans les détails de l'utilisation d'Aspose.Words pour .NET pour créer des fichiers Markdown avec du texte mis en valeur, comme les styles gras et italique. Que vous rédigiez une documentation, un article de blog ou tout autre texte nécessitant un peu de style, ce didacticiel vous guidera à travers chaque étape du processus.
+Markdown est un langage de balisage léger que vous pouvez utiliser pour ajouter des éléments de mise en forme à des documents texte en clair. Dans ce guide, nous allons nous plonger dans les détails de l'utilisation d'Aspose.Words pour .NET pour créer des fichiers Markdown avec du texte mis en valeur, comme les styles gras et italique. Que vous rédigiez une documentation, un article de blog ou tout autre texte nécessitant un peu de style, ce didacticiel vous guidera à travers chaque étape du processus.
 
 ## Prérequis
 
@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Le`dataDir` variable est un espace réservé pour le répertoire dans lequel vous allez enregistrer votre fichier Markdown. Assurez-vous de remplacer « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin réel.
+ Le`dataDir` variable est un espace réservé pour le répertoire dans lequel vous allez enregistrer votre fichier Markdown. Assurez-vous de remplacer « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin réel.
 
 ## Étape 2 : Rédiger un texte normal
 

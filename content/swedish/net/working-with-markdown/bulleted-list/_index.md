@@ -64,7 +64,7 @@ builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 ```
 
-## Steg 5: Lägg till underartiklar
+## Steg 5: Lägg till underordnade objekt
 
 För att göra saker mer intressanta, låt oss lägga till några underobjekt under "Artikel 2". Detta hjälper till att organisera underpunkter.
 
@@ -72,7 +72,7 @@ För att göra saker mer intressanta, låt oss lägga till några underobjekt un
 builder.ListFormat.ListIndent();
 builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
-builder.ListFormat.ListOutdent(); // Återgå till huvudlistans nivå
+builder.ListFormat.ListOutdent(); // Återgå till huvudlistnivån
 ```
 
 ## Slutsats

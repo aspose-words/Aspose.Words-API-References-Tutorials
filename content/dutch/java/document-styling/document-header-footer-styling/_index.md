@@ -87,7 +87,7 @@ Om een naadloze ervaring te garanderen bij het opmaken van documentkopteksten en
 
 ### Hoe kan ik kop- of voetteksten uit specifieke secties verwijderen?
 
- kunt kop- of voetteksten uit specifieke secties verwijderen door de`HeaderFooter` objecten en hun inhoud op null zetten. Bijvoorbeeld:
+ U kunt kop- of voetteksten uit specifieke secties verwijderen door de`HeaderFooter` objecten en hun inhoud op null zetten. Bijvoorbeeld:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Kan ik aangepaste velden, zoals documenttitels, toevoegen aan kop- of voetteksten?
 
-Ja, u kunt aangepaste velden toevoegen aan kop- of voetteksten. Maak een`Run` element en voeg het in de header- of footerinhoud in, met de gewenste tekst. Pas de opmaak indien nodig aan.
+ Ja, u kunt aangepaste velden toevoegen aan kop- of voetteksten. Maak een`Run` element en voeg het in de header- of footerinhoud in, met de gewenste tekst. Pas de opmaak indien nodig aan.
 
 ### Is Aspose.Words voor Java compatibel met verschillende documentformaten?
 

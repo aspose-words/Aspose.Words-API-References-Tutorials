@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-此代码将文档方向设置为自动检测（`DocumentDirection.AUTO`) 并加载包含希伯来语文本的文本文档。您可以根据需要调整文档方向。
+此代码将文档方向设置为自动检测（`DocumentDirection.AUTO`并加载包含希伯来语文本的文本文档。您可以根据需要调整文档方向。
 
 ## 使用 Aspose.Words for Java 加载文本文件的完整源代码
 

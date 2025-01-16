@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-A`DocumentBuilder` egy segítő osztály, amely leegyszerűsíti az építési dokumentumok elkészítésének folyamatát.
+ A`DocumentBuilder` egy segítő osztály, amely leegyszerűsíti az építési dokumentumok elkészítésének folyamatát.
 
 ## 3. lépés: Indítsa el a táblázatot
 

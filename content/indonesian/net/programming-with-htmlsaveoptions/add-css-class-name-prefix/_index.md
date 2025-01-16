@@ -117,7 +117,7 @@ Nah, itu dia! Dengan mengikuti langkah-langkah ini, Anda telah berhasil menambah
  Ya, Anda dapat menyesuaikan awalan setiap kali Anda menyimpan dokumen dengan mengubah`CssClassNamePrefix` milik.
 
 ### Apakah metode ini mendukung CSS sebaris?
-Itu`CssClassNamePrefix`properti bekerja dengan CSS eksternal. Untuk CSS sebaris, Anda memerlukan pendekatan yang berbeda.
+ Itu`CssClassNamePrefix`properti bekerja dengan CSS eksternal. Untuk CSS sebaris, Anda memerlukan pendekatan yang berbeda.
 
 ### Bagaimana saya bisa menyertakan opsi penyimpanan HTML lainnya?
  Anda dapat mengonfigurasi berbagai properti`HtmlSaveOptions` untuk menyesuaikan keluaran HTML Anda. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.

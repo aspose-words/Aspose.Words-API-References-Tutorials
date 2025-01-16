@@ -167,58 +167,48 @@ public class DocumentMerger {
 
  Za pomocą`ImportFormatMode.KEEP_DIFFERENT_STYLES`Aspose.Words zachowuje style, które różnią się w dokumencie źródłowym i docelowym, rozwiązując konflikty w sposób płynny.
 
-## 9. Najlepsze praktyki dotyczące scalania dokumentów
-
-- Zawsze obsługuj wyjątki podczas scalania dokumentów, aby zapobiec nieoczekiwanym błędom.
-
-- Regularnie sprawdzaj dostępność aktualizacji i korzystaj z najnowszej wersji Aspose.Words for Java, aby korzystać z poprawek błędów i nowych funkcji.
-
-- Przetestuj scalanie dokumentów o różnych typach i rozmiarach, aby zapewnić optymalną wydajność.
-
-- Warto rozważyć użycie systemu kontroli wersji, aby śledzić zmiany podczas operacji scalania dokumentów.
-
-## 10. Wnioski
+## Wniosek
 
 Aspose.Words for Java daje programistom Java możliwość bezproblemowego scalania dokumentów Word. Postępując zgodnie z przewodnikiem krok po kroku w tym artykule, możesz teraz łatwo scalać dokumenty, obsługiwać formatowanie, wstawiać podziały i zarządzać konfliktami. Dzięki Aspose.Words for Java scalanie dokumentów staje się płynnym i zautomatyzowanym procesem, oszczędzając cenny czas i wysiłek.
 
-## 11. Najczęściej zadawane pytania 
+## Najczęściej zadawane pytania 
 
 ### Czy mogę scalać dokumenty o różnych formatach i stylach?
 
-   Tak, Aspose.Words for Java obsługuje scalanie dokumentów o różnych formatach i stylach. Biblioteka inteligentnie rozwiązuje konflikty, umożliwiając bezproblemowe scalanie dokumentów z różnych źródeł.
+Tak, Aspose.Words for Java obsługuje scalanie dokumentów o różnych formatach i stylach. Biblioteka inteligentnie rozwiązuje konflikty, umożliwiając bezproblemowe scalanie dokumentów z różnych źródeł.
 
 ### Czy Aspose.Words umożliwia wydajne scalanie dużych dokumentów?
 
-   Aspose.Words for Java jest zaprojektowany do wydajnego obsługiwania dużych dokumentów. Wykorzystuje zoptymalizowane algorytmy do scalania dokumentów, zapewniając wysoką wydajność nawet przy rozległej zawartości.
+Aspose.Words for Java jest zaprojektowany do wydajnego obsługiwania dużych dokumentów. Wykorzystuje zoptymalizowane algorytmy do scalania dokumentów, zapewniając wysoką wydajność nawet przy rozległej zawartości.
 
 ### Czy mogę scalać dokumenty chronione hasłem za pomocą Aspose.Words dla Java?
 
-   Tak, Aspose.Words for Java obsługuje scalanie dokumentów chronionych hasłem. Upewnij się, że podajesz prawidłowe hasła, aby uzyskać dostęp do tych dokumentów i je scalić.
+Tak, Aspose.Words for Java obsługuje scalanie dokumentów chronionych hasłem. Upewnij się, że podajesz prawidłowe hasła, aby uzyskać dostęp do tych dokumentów i je scalić.
 
 ### Czy można połączyć określone sekcje z wielu dokumentów?
 
-   Tak, Aspose.Words pozwala na selektywne scalanie określonych sekcji z różnych dokumentów. Daje to szczegółową kontrolę nad procesem scalania.
+Tak, Aspose.Words pozwala na selektywne scalanie określonych sekcji z różnych dokumentów. Daje to szczegółową kontrolę nad procesem scalania.
 
 ### Czy mogę scalić dokumenty ze śledzonymi zmianami i komentarzami?
 
-    Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
+Oczywiście, Aspose.Words for Java może obsługiwać scalanie dokumentów ze śledzonymi zmianami i komentarzami. Masz możliwość zachowania lub usunięcia tych rewizji podczas procesu scalania.
 
 ### Czy Aspose.Words zachowuje oryginalne formatowanie scalonych dokumentów?
 
-    Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
+Aspose.Words domyślnie zachowuje formatowanie dokumentów źródłowych. Możesz jednak wybrać różne tryby formatowania importu, aby poradzić sobie z konfliktami i zachować spójność formatowania.
 
 ### Czy mogę scalać dokumenty z plików w formatach innych niż Word, na przykład PDF lub RTF?
 
-    Aspose.Words is primarily designed for working with Word documents. To merge documents from non-Word file formats, consider using the appropriate Aspose product for that specific format, such as Aspose.PDF or Aspose.RTF.
+Aspose.Words jest przeznaczony głównie do pracy z dokumentami Word. Aby scalić dokumenty z formatów plików innych niż Word, rozważ użycie odpowiedniego produktu Aspose dla tego konkretnego formatu, takiego jak Aspose.PDF lub Aspose.RTF.
 
 ### Jak mogę obsługiwać wersjonowanie dokumentów podczas scalania?
 
-    Document versioning during merging can be achieved by implementing proper version control practices in your application. Aspose.Words focuses on document content merging and doesn't directly manage versioning.
+Wersjonowanie dokumentów podczas scalania można osiągnąć, wdrażając odpowiednie praktyki kontroli wersji w swojej aplikacji. Aspose.Words koncentruje się na scalaniu treści dokumentów i nie zarządza bezpośrednio wersjonowaniem.
 
 ### Czy Aspose.Words for Java jest kompatybilny z Java 8 i nowszymi wersjami?
 
-    Yes, Aspose.Words for Java is compatible with Java 8 and newer versions. It's always recommended to use the latest Java version for better performance and security.
+Tak, Aspose.Words for Java jest kompatybilny z Java 8 i nowszymi wersjami. Zawsze zaleca się używanie najnowszej wersji Java dla lepszej wydajności i bezpieczeństwa.
 
 ### Czy Aspose.Words obsługuje scalanie dokumentów ze zdalnych źródeł, takich jak adresy URL?
 
-    Yes, Aspose.Words for Java can load documents from various sources, including URLs, streams, and file paths. You can merge documents fetched from remote locations seamlessly.
+Tak, Aspose.Words for Java może ładować dokumenty z różnych źródeł, w tym adresów URL, strumieni i ścieżek plików. Możesz bezproblemowo łączyć dokumenty pobrane ze zdalnych lokalizacji.

@@ -9,7 +9,7 @@ url: /fr/net/programming-with-document-options-and-settings/view-options/
 ---
 ## Introduction
 
-Bonjour à tous les codeurs ! Vous êtes-vous déjà demandé comment modifier la façon dont vous visualisez vos documents Word à l'aide d'Aspose.Words pour .NET ? Que vous souhaitiez passer à un autre type d'affichage ou effectuer un zoom avant et arrière pour obtenir l'aspect parfait de votre document, vous êtes au bon endroit. Aujourd'hui, nous plongeons dans le monde d'Aspose.Words pour .NET, en nous concentrant plus particulièrement sur la manipulation des options d'affichage. Nous allons tout décomposer en étapes simples et digestes, afin que vous deveniez un expert en un rien de temps. Prêt ? Commençons !
+Bonjour à tous les codeurs ! Vous êtes-vous déjà demandé comment modifier la façon dont vous visualisez vos documents Word à l'aide d'Aspose.Words pour .NET ? Que vous souhaitiez passer à un autre type d'affichage ou effectuer un zoom avant et arrière pour obtenir un aperçu parfait de votre document, vous êtes au bon endroit. Aujourd'hui, nous plongeons dans le monde d'Aspose.Words pour .NET, en nous concentrant plus particulièrement sur la manipulation des options d'affichage. Nous allons tout décomposer en étapes simples et digestes, afin que vous deveniez un expert en un rien de temps. Prêt ? Commençons !
 
 ## Prérequis
 

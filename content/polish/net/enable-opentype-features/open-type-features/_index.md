@@ -56,7 +56,7 @@ Utwórz zmienną typu string, aby zachować ścieżkę do katalogu dokumentu. To
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką, gdzie znajduje się Twój dokument.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, gdzie znajduje się Twój dokument.
 
 ### Ładowanie dokumentu
 

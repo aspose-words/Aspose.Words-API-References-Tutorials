@@ -89,7 +89,7 @@ HandleMergeField類別的原始碼
 ```java
     private static class HandleMergeField implements IFieldMergingCallback
     {
-        /// <摘要>
+        //<摘要>
         //為文件中找到的每個郵件合併欄位呼叫此處理程序，
         /// 對於在資料來源中找到的每筆記錄。
         /// </摘要>
@@ -241,7 +241,7 @@ HandleMergeField類別的原始碼
         {
             //什麼也不做。
         }
-        /// <摘要>
+        //<摘要>
         /// 當郵件合併引擎遇到文件中的 Image:XXX 合併欄位時呼叫此函數。
         /// 您有機會傳回一個 Image 物件、檔案名稱或包含該影像的串流。
         /// </摘要>
@@ -294,7 +294,7 @@ HandleMergeField類別的原始碼
     }
     private static class HandleMergeFieldAlternatingRows implements IFieldMergingCallback
     {
-        /// <摘要>
+        //<摘要>
         /// 為文件中遇到的每個合併欄位呼叫。
         /// 我們可以將一些資料傳回郵件合併引擎，或對文件執行其他操作。
         /// 在本例中我們修改儲存格格式。
@@ -325,14 +325,14 @@ HandleMergeField類別的原始碼
         private DocumentBuilder mBuilder;
         private int mRowIdx;
     }
-    /// <摘要>
+    //<摘要>
     /// 如果值為奇數則傳回 true；如果該值是偶數，則為 false。
     /// </摘要>
     private static boolean isOdd(int value)
     {
         return (value / 2 * 2) == value;
     }
-    /// <摘要>
+    //<摘要>
     /// 建立DataTable並用資料填充它。
     /// 在現實生活中，這個資料表應該從資料庫中填入。
     /// </摘要>

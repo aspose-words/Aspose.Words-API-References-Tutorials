@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Adım 3: DocumentBuilder'ı kullanın
 
-The`DocumentBuilder` Aspose.Words'deki sınıf, belgeler oluşturmaya yardımcı olan güçlü bir araçtır. Bunu, belgemize bir grafik eklemek için kullanacağız.
+ The`DocumentBuilder` Aspose.Words'deki sınıf, belgeler oluşturmaya yardımcı olan güçlü bir araçtır. Bunu, belgemize bir grafik eklemek için kullanacağız.
 
  Bir örneğini başlatın`DocumentBuilder` sınıfı, belge nesnemizi onun kurucusuna geçiriyoruz.
 

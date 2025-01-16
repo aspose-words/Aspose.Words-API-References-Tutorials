@@ -71,7 +71,7 @@ if (sdt.SdtType == SdtType.PlainText)
 }
 ```
 
- Erläuterung: Hier`RemoveAllChildren()`löscht den bestehenden Inhalt des SDT. Anschließend erstellen wir ein neues`Paragraph` Und`Run` Objekt, um den neuen Text einzufügen.
+ Erläuterung: Hier`RemoveAllChildren()`löscht den vorhandenen Inhalt des SDT. Anschließend erstellen wir ein neues`Paragraph` Und`Run` Objekt, um den neuen Text einzufügen.
 
 ## Schritt 4: Dropdown-Liste SDTs ändern
 

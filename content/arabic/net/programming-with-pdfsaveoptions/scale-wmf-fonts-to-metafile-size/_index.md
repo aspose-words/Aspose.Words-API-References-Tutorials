@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-ال`MetafileRenderingOptions` توفر الفئة خيارات لكيفية عرض الملفات التعريفية (مثل WMF). من خلال ضبط`ScaleWmfFontsToMetafileSize` ل`false`، فأنت تطلب من Aspose.Words عدم تغيير حجم الخطوط وفقًا لحجم الملف التعريفي، وهو ما قد يساعد في تقليل الحجم الإجمالي لملف PDF.
+ ال`MetafileRenderingOptions` توفر الفئة خيارات لكيفية عرض الملفات التعريفية (مثل WMF). من خلال ضبط`ScaleWmfFontsToMetafileSize` ل`false`، فأنت تطلب من Aspose.Words عدم تغيير حجم الخطوط وفقًا لحجم الملف التعريفي، وهو ما قد يساعد في تقليل الحجم الإجمالي لملف PDF.
 
 ## الخطوة 3: تعيين خيارات حفظ PDF
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-ال`PdfSaveOptions` تتيح لك الفئة تحديد إعدادات مختلفة لحفظ المستند بتنسيق PDF. من خلال تعيين الإعدادات التي تم تكوينها مسبقًا`MetafileRenderingOptions` الى`MetafileRenderingOptions` ممتلكات`PdfSaveOptions`، تأكد من حفظ المستند وفقًا لإعدادات عرض الملف التعريفي المطلوبة.
+ ال`PdfSaveOptions` تتيح لك الفئة تحديد إعدادات مختلفة لحفظ المستند بتنسيق PDF. من خلال تعيين الإعدادات التي تم تكوينها مسبقًا`MetafileRenderingOptions` الى`MetafileRenderingOptions` ممتلكات`PdfSaveOptions`، تأكد من حفظ المستند وفقًا لإعدادات عرض الملف التعريفي المطلوبة.
 
 ## الخطوة 4: حفظ المستند بصيغة PDF
 

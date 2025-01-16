@@ -61,7 +61,7 @@ Jakmile je dokument načten, můžeme přistoupit k odstranění textu z určit�
 2.  Smazat rozsah: Použijte`Range.Delete` metoda k odstranění veškerého textu v této sekci.
 
 ```csharp
-//Odstraňte text v první části dokumentu
+// Odstraňte text v první části dokumentu
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Aspose.Words for .NET je knihovna tříd pro zpracování dokumentů aplikace Wo
 
 ### Mohu smazat text z určitého odstavce místo z oddílu?
 
-Ano, text z určitého odstavce můžete odstranit tak, že otevřete požadovaný odstavec a použijete`Range.Delete` metoda.
+ Ano, text z určitého odstavce můžete odstranit tak, že otevřete požadovaný odstavec a použijete`Range.Delete` metoda.
 
 ### Je možné smazat text podmíněně?
 

@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Các`ListIndent` phương pháp thụt lề danh sách, tạo ra một danh sách con. Bây giờ bạn đang tạo một danh sách phân cấp, khá giống với danh sách việc cần làm lồng nhau.
+ Các`ListIndent` phương pháp thụt lề danh sách, tạo ra một danh sách con. Bây giờ bạn đang tạo một danh sách phân cấp, khá giống với danh sách việc cần làm lồng nhau.
 
 ## Phần kết luận
 

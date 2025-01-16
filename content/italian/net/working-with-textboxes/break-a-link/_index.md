@@ -100,7 +100,7 @@ volte, una casella di testo potrebbe essere parte di una catena, con altre casel
 textBox.Previous?.BreakForwardLink();
 ```
 
-IL`?.` L'operatore assicura che il metodo venga chiamato solo se`Previous` non è nullo, impedendo potenziali errori di runtime.
+ IL`?.` L'operatore assicura che il metodo venga chiamato solo se`Previous` non è nullo, impedendo potenziali errori di runtime.
 
 ## Conclusione
 

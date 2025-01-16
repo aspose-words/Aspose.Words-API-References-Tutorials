@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Drawing.Charts;
 ```
 
-Suddivideremo il processo in semplici passaggi, ognuno dei quali si concentrerà su una parte specifica della definizione delle proprietà degli assi XY in un grafico.
+Suddivideremo il processo in semplici passaggi, ognuno dei quali si concentrerà su una parte specifica della definizione delle proprietà dell'asse XY in un grafico.
 
 ## Passaggio 1: inizializzare il documento e DocumentBuilder
 
@@ -78,7 +78,7 @@ Ora è il momento di definire le proprietà per l'asse X. Ciò include l'imposta
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // Misurato in unità di visualizzazione dell'asse Y (centinaia).
+xAxis.CrossesAt = 3; //Misurato in unità di visualizzazione dell'asse Y (centinaia).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

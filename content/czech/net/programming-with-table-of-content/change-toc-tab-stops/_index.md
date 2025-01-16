@@ -15,7 +15,7 @@ Přemýšleli jste někdy, jak oživit obsah (TOC) v dokumentech aplikace Word? 
 
 Než začneme, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words pro .NET: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pro .NET: Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli IDE kompatibilní s C#.
 3. Dokument aplikace Word: Konkrétně takový, který obsahuje TOC.
 

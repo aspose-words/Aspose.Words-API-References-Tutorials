@@ -17,16 +17,16 @@ url: /ja/python-net/document-structure-and-content-manipulation/document-form-fi
 
 フォーム フィールドの作成と習得に進む前に、環境を設定して Aspose.Words for Python に慣れておきましょう。開始するには、次の手順に従ってください。
 
-1. **Install Aspose.Words:**まず、次の pip コマンドを使用して Aspose.Words for Python ライブラリをインストールします。
+1. Aspose.Words をインストールします。まず、次の pip コマンドを使用して Aspose.Words for Python ライブラリをインストールします。
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:**ライブラリを Python スクリプトにインポートして、その機能の使用を開始します。
+2. ライブラリをインポートする: Python スクリプトにライブラリをインポートして、その機能の使用を開始します。
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 セットアップが完了したら、フォーム フィールドの作成と管理のコア概念に進みましょう。
@@ -41,7 +41,7 @@ url: /ja/python-net/document-structure-and-content-manipulation/document-form-fi
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### チェックボックスとラジオボタン
@@ -50,12 +50,12 @@ text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeTyp
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### ドロップダウンリスト
@@ -64,7 +64,7 @@ radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OL
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### 日付ピッカー
@@ -73,7 +73,7 @@ drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## フォームフィールドのプロパティの設定
@@ -122,7 +122,7 @@ date_picker.text = "2023-08-31"
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 フィールドを作成したら、名前、デフォルト値、プレースホルダー テキストなどのプロパティを設定できます。その方法を見てみましょう。
@@ -150,14 +150,14 @@ text_input_field.placeholder_text = "Enter your full name"
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ラジオ ボタンの場合は、OLE_OBJECT シェイプ タイプを使用して作成できます。
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 これらのフィールドを作成した後、名前、デフォルトの選択、ラベル テキストなどのプロパティをカスタマイズできます。
@@ -183,7 +183,7 @@ radio_button.text = "Male"
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ドロップダウン リストを作成したら、ユーザーが利用できるオプションのリストを指定できます。
@@ -211,7 +211,7 @@ drop_down.text = "USA"
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 日付ピッカーを作成したら、名前やデフォルトの日付などのプロパティを設定できます。
@@ -228,11 +228,7 @@ date_picker.text = "2023-08-31"
 
 ## 結論
 
-Word 文書のフォーム フィールドとデータ キャプチャをマスターすることは、データ収集用のインタラクティブで効率的な文書を作成できるようになる貴重なスキルです。Aspose.Words for Python は、フォーム フィールドからデータを作成、カスタマイズ、および抽出するための包括的なツール セットを提供します。単純なテキスト入力フィールドから複雑な計算や条件付き書式設定まで、可能性は無限大です。
-
 このガイドでは、フォーム フィールドの基礎、フォーム フィールドの種類、プロパティの設定、動作のカスタマイズについて説明しました。また、フォーム設計のベスト プラクティスについても触れ、検索エンジン向けにドキュメント フォームを最適化する方法についても説明しました。
-
-Aspose.Words for Python のパワーを活用することで、データを効果的にキャプチャするだけでなく、ユーザー エンゲージメントを強化し、データ処理ワークフローを合理化するドキュメントを作成できます。これで、Word ドキュメントのフォーム フィールドとデータ キャプチャのマスターになるための旅を始める準備が整いました。
 
 ## よくある質問
 

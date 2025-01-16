@@ -90,4 +90,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 استخدم كتل try-catch للتعامل مع الاستثناءات التي قد تحدث أثناء عملية الاستيراد.
 
 ### أين يمكنني العثور على مزيد من الوثائق التفصيلية حول Aspose.Words لـ .NET؟
- قم بزيارة[التوثيق](https://reference.aspose.com/words/net/)للحصول على أدلة شاملة ومراجع API.
+ قم بزيارة[التوثيق](https://reference.aspose.com/words/net/) للحصول على أدلة شاملة ومراجع API.

@@ -14,7 +14,7 @@ url: /th/java/document-loading-and-saving/determining-document-format/
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่เราจะเริ่มต้น ให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นดังต่อไปนี้:
+ก่อนที่เราจะเริ่ม ให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นดังต่อไปนี้:
 
 - [Aspose.คำศัพท์สำหรับภาษา Java](https://releases.aspose.com/words/java/)
 - ติดตั้ง Java Development Kit (JDK) บนระบบของคุณ

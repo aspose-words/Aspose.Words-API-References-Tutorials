@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Dans cette étape, nous chargeons le document Word à partir du répertoire spécifié. Assurez-vous de remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin réel où se trouve votre document.
+Dans cette étape, nous chargeons le document Word à partir du répertoire spécifié. Assurez-vous de remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où se trouve votre document.
 
 ## Étape 2 : Configurer les options de sous-échantillonnage
 

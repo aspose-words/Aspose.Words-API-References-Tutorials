@@ -82,7 +82,7 @@ doc.save("modified-document.docx");
 
 Detta är användbart när du vill utesluta att text i fält, till exempel sammanslagningsfält, ersätts.
 
-## Ignorera text inuti Ta bort revisioner
+## Ignorera text inuti Ta bort versioner
 
 Du kan konfigurera Aspose.Words att ignorera text i raderingsversioner under sök- och ersättningsoperationer.
 
@@ -169,7 +169,7 @@ doc.save("modified-document.docx");
 
 Detta gör att du kan utföra textersättningar specifikt i sidhuvuden och sidfötter.
 
-## Visar ändringar för sidhuvuds- och sidfotsordningar
+## Visar ändringar för sidhuvuds- och sidfotsbeställningar
 
 Du kan använda Aspose.Words för att visa ändringar för sidhuvuden och sidfötter i ditt dokument.
 
@@ -355,4 +355,4 @@ För att ignorera text i fält under ersättning, kan du ställa in`IgnoreFields
 
 ### Vad är alternativet UseLegacyOrder till för?
 
-De`UseLegacyOrder` alternativ i`FindReplaceOptions` låter dig använda äldre ordning när du utför sök- och ersätt-operationer. Detta kan vara användbart i vissa scenarier där äldre orderbeteende önskas.
+ De`UseLegacyOrder` alternativ i`FindReplaceOptions` låter dig använda äldre ordning när du utför sök- och ersätt-operationer. Detta kan vara användbart i vissa scenarier där äldre orderbeteende önskas.

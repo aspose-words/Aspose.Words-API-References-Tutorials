@@ -118,7 +118,7 @@ Aspose.Words para .NET es una biblioteca que le permite crear, modificar y conve
  Sí, puedes utilizar un[prueba gratis](https://releases.aspose.com/) o conseguir uno[licencia temporal](https://purchase.aspose.com/temporary-license/).
 
 ### ¿Dónde puedo encontrar documentación de Aspose.Words para .NET?
-La documentación detallada está disponible[aquí](https://reference.aspose.com/words/net/).
+ La documentación detallada está disponible[aquí](https://reference.aspose.com/words/net/).
 
 ### ¿Cómo puedo obtener soporte para Aspose.Words?
  Puedes visitar el[foro de soporte](https://forum.aspose.com/c/words/8) para solicitar ayuda.

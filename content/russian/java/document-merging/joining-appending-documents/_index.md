@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-The`ImportFormatMode.KEEP_SOURCE_FORMATTING` опция гарантирует сохранение форматирования исходных документов.
+ The`ImportFormatMode.KEEP_SOURCE_FORMATTING` опция гарантирует сохранение форматирования исходных документов.
 
 ## Шаг 5: Сохранение результата
 

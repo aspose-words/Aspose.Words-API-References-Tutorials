@@ -115,7 +115,7 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 string outPath = "Your Output Directory";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-// قم بتحديد نمط "العنوان 1" للفقرة.
+// حدد نمط "العنوان 1" للفقرة.
 builder.getParagraphFormat().setStyleName("Heading 1");
 builder.writeln("Heading 1");
 //إعادة تعيين الأنماط من الفقرة السابقة لعدم دمج الأنماط بين الفقرات.

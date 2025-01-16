@@ -16,7 +16,7 @@ Genom att följa steg-för-steg-instruktionerna och kodexemplen i självstudiern
 
 Här är några av fördelarna med att använda Aspose.Words för Java för tabellbehandling:
 
-* Omfattande uppsättning API:er för tabellbehandling
+* Omfattande uppsättning API:er för tabellbearbetning
 * Fördjupade handledningar och dokumentation
 * Lättanvända API:er
 * Stöd för ett brett utbud av dokumentformat

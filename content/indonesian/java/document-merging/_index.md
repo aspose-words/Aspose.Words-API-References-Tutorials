@@ -34,5 +34,3 @@ Pelajari cara menggabungkan dan menambahkan dokumen menggunakan Aspose.Words unt
 Pelajari cara membandingkan dokumen untuk mengetahui perbedaannya menggunakan Aspose.Words di Java. Panduan langkah demi langkah kami memastikan manajemen dokumen yang akurat.
 ### [Menggabungkan Dokumen dengan DocumentBuilder](./merging-documents-documentbuilder/)
 Pelajari cara memanipulasi dokumen Word dengan Aspose.Words untuk Java. Buat, edit, gabungkan, dan konversi dokumen secara terprogram dalam Java.
-### [Pemisahan dan Ekstraksi Dokumen](./document-splitting-extraction/)
-Pelajari cara membagi dan mengekstrak dokumen dengan mudah menggunakan Aspose.Words untuk Java. Sederhanakan tugas pemrosesan dokumen Anda dengan panduan langkah demi langkah.

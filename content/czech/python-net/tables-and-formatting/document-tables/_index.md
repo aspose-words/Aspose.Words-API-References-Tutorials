@@ -12,7 +12,7 @@ Tabulky hrají klíčovou roli při efektivní prezentaci dat v dokumentech apli
 
 ## Zavedení:
 
-Tabulky jsou základním nástrojem pro prezentaci strukturovaných dat v dokumentech aplikace Word. Umožňují nám organizovat informace do řádků a sloupců, díky čemuž jsou komplexní datové sady dostupnější a srozumitelnější. Vytvoření esteticky příjemné a snadno ovladatelné tabulky však vyžaduje pečlivé zvážení různých faktorů, jako je formátování, rozvržení a design. V tomto článku prozkoumáme, jak optimalizovat tabulky pomocí Aspose.Words pro Python k vytvoření vizuálně přitažlivých a funkčních datových prezentací.
+Tabulky jsou základním nástrojem pro prezentaci strukturovaných dat v dokumentech aplikace Word. Umožňují nám organizovat informace do řádků a sloupců, díky čemuž jsou komplexní datové sady dostupnější a srozumitelnější. Vytvoření esteticky příjemné a snadno ovladatelné tabulky však vyžaduje pečlivé zvážení různých faktorů, jako je formátování, rozvržení a design. V tomto článku prozkoumáme, jak optimalizovat tabulky pomocí Aspose.Words pro Python a vytvářet vizuálně přitažlivé a funkční datové prezentace.
 
 ## Důležitost optimalizace tabulky:
 
@@ -50,7 +50,7 @@ Tabulky jsou konstruovány pomocí třídy Table v Aspose.Words. Chcete-li vytvo
 
 ```python
 # Create a table with 3 rows and 4 columns
-table = doc.tables.add(3, 4)
+table = doc.get_child(aw.NodeType.TABLE, 0, True).as_table()
 
 # Set preferred width for the table
 table.preferred_width = doc.page_width

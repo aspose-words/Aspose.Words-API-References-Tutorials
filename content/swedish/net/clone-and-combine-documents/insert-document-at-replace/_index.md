@@ -104,7 +104,7 @@ private class InsertDocumentAtReplaceHandler : IReplacingCallback
 
 Här laddar vi dokumentet som ska infogas och anropar sedan en hjälpmetod för att utföra infogningen.
 
-## Steg 6: Definiera metoden för att infoga dokument
+## Steg 6: Definiera metoden Infoga dokument
 
 Den sista biten i vårt pussel är metoden som faktiskt infogar dokumentet på den angivna platsen.
 
@@ -165,7 +165,7 @@ Ja, du kan modifiera återuppringningshanteraren för att hantera flera infognin
  Absolut! Du kan ladda ner en gratis testversion från[här](https://releases.aspose.com/).
 
 ### Hur får jag support för Aspose.Words?
-Du kan få stöd genom att besöka[Aspose.Words forum](https://forum.aspose.com/c/words/8).
+ Du kan få stöd genom att besöka[Aspose.Words forum](https://forum.aspose.com/c/words/8).
 
 ### Kan jag behålla formateringen av det infogade dokumentet?
  Ja, den`NodeImporter` class låter dig ange hur formatering ska hanteras när du importerar noder från ett dokument till ett annat.

@@ -7,90 +7,145 @@ type: docs
 weight: 13
 url: /zh-hant/java/document-security/digital-signatures-in-documents/
 ---
+## 介紹
 
-數位簽章在確保數位文件的真實性和完整性方面發揮著至關重要的作用。它們提供了一種方法來驗證文件未被篡改並且確實是由指定簽署者創建或批准的。在本逐步指南中，我們將探討如何使用 Aspose.Words for Java 在文件中實作數位簽章。我們將涵蓋從設定環境到向文件添加數位簽名的所有內容。讓我們開始吧！
+在我們日益數位化的世界中，對安全且可驗證的文件簽名的需求從未如此迫切。無論您是商務專業人士、法律專家，還是經常發送文件的人，了解如何實施數位簽章都可以節省您的時間並確保文書工作的完整性。在本教學中，我們將探討如何使用 Aspose.Words for Java 為文件無縫添加數位簽章。準備好進入數位簽章的世界並提升您的文件管理！
 
 ## 先決條件
 
-在我們深入實施之前，請確保您具備以下先決條件：
+在我們開始討論添加數位簽名的細節之前，讓我們確保您擁有開始所需的一切：
 
--  Aspose.Words for Java：從下列位置下載並安裝 Aspose.Words for Java：[這裡](https://releases.aspose.com/words/java/).
+1.  Java 開發工具包 (JDK)：確保您的電腦上安裝了 JDK。您可以從[甲骨文網站](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 
-## 設定您的項目
+2. Aspose.Words for Java：您需要 Aspose.Words 函式庫。您可以從[發布頁面](https://releases.aspose.com/words/java/).
 
-1. 在您首選的整合開發環境 (IDE) 中建立一個新的 Java 專案。
+3. 程式碼編輯器：使用您選擇的任何程式碼編輯器或 IDE（例如 IntelliJ IDEA、Eclipse 或 NetBeans）來編寫 Java 程式碼。
 
-2. 透過將 JAR 檔案包含在類別路徑中，將 Aspose.Words for Java 庫新增到您的專案中。
+4. 數位憑證：要簽署文檔，您需要 PFX 格式的數位憑證。如果沒有，您可以建立臨時許可證[Aspose的臨時許可證頁面](https://purchase.aspose.com/temporary-license/).
 
-## 新增數位簽名
+5. 基本 Java 知識：熟悉 Java 程式設計將幫助您理解我們將使用的程式碼片段。
 
-現在，讓我們繼續為文件添加數位簽章：
+## 導入包
+
+首先，我們需要從 Aspose.Words 函式庫匯入必要的套件。以下是您的 Java 檔案中所需的內容：
 
 ```java
-//初始化 Aspose.Words
-com.aspose.words.Document doc = new com.aspose.words.Document("your_document.docx");
-
-//建立數位簽章對象
-com.aspose.words.digitalSignatures.DigitalSignature digitalSignature = new com.aspose.words.digitalSignatures.DigitalSignature();
-
-//設定證書路徑
-digitalSignature.setCertificateFile("your_certificate.pfx");
-
-//設定證書的密碼
-digitalSignature.setPassword("your_password");
-
-//簽署文件
-doc.getDigitalSignatures().add(digitalSignature);
-
-//儲存文件
-doc.save("signed_document.docx");
+import com.aspose.words.*;
+import java.util.Date;
+import java.util.UUID;
 ```
 
-## 驗證數位簽名
+這些匯入將允許您存取建立和操作文件以及處理數位簽章所需的類別和方法。
 
-若要驗證文件中的數位簽名，請依照下列步驟操作：
+現在我們已經整理了先決條件並導入了必要的包，讓我們將添加數位簽章的過程分解為可管理的步驟。
+
+## 第 1 步：建立一個新文檔
+
+首先，我們需要建立一個新文檔，在其中插入簽名行。操作方法如下：
 
 ```java
-//載入已簽署的文檔
-com.aspose.words.Document signedDoc = new com.aspose.words.Document("signed_document.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
-//檢查文件是否經過數位簽名
-if (signedDoc.getDigitalSignatures().getCount() > 0) {
-    //驗證數位簽名
-    boolean isValid = signedDoc.getDigitalSignatures().get(0).isValid();
-    
-    if (isValid) {
-        System.out.println("Digital signature is valid.");
-    } else {
-        System.out.println("Digital signature is not valid.");
-    }
-} else {
-    System.out.println("Document is not digitally signed.");
+- 我們實例化一個新的`Document`對象，它代表我們的Word文檔。
+- 這`DocumentBuilder`是一個強大的工具，可以幫助我們輕鬆建立和操作我們的文件。
+
+## 步驟 2：配置簽名行選項
+
+接下來，我們將為簽名行設定選項。您可以在此處定義簽署者、其頭銜和其他相關詳細資訊。
+
+```java
+SignatureLineOptions signatureLineOptions = new SignatureLineOptions();
+{
+    signatureLineOptions.setSigner("yourname");
+    signatureLineOptions.setSignerTitle("Worker");
+    signatureLineOptions.setEmail("yourname@aspose.com");
+    signatureLineOptions.setShowDate(true);
+    signatureLineOptions.setDefaultInstructions(false);
+    signatureLineOptions.setInstructions("Please sign here.");
+    signatureLineOptions.setAllowComments(true);
 }
 ```
+ 
+- 在這裡，我們建立一個實例`SignatureLineOptions`並設定各種參數，例如簽名者的姓名、職位、電子郵件和說明。此客製化可確保簽名行清晰且資訊豐富。
+
+## 第 3 步：插入簽名行
+
+現在我們已經設定了選項，是時候將簽名行插入到文件中了。
+
+```java
+SignatureLine signatureLine = builder.insertSignatureLine(signatureLineOptions).getSignatureLine();
+signatureLine.setProviderId(UUID.fromString("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2"));
+```
+ 
+- 我們使用`insertSignatureLine`的方法`DocumentBuilder`將簽名行新增到我們的文件中。這`getSignatureLine()`方法檢索已建立的簽名行，我們可以進一步操作它。
+- 我們還為簽名行設定了唯一的提供者 ID，這有助於識別簽名提供者。
+
+## 步驟 4：儲存文檔
+
+在簽署文件之前，讓我們將其保存到我們想要的位置。
+
+```java
+doc.save(getArtifactsDir() + "SignDocuments.SignatureLineProviderId.docx");
+```
+ 
+- 這`save`方法用於保存具有插入簽名行的文件。確保更換`getArtifactsDir()`與您要儲存文件的實際路徑。
+
+## 第 5 步：配置簽名選項
+
+現在，讓我們設定用於簽署文件的選項。這包括指定要簽署的簽名行和新增註解。
+
+```java
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setSignatureLineId(signatureLine.getId());
+    signOptions.setProviderId(signatureLine.getProviderId());
+    signOptions.setComments("Document was signed by Aspose");
+    signOptions.setSignTime(new Date());
+}
+```
+ 
+- 我們建立一個實例`SignOptions`並配置簽名行 ID、提供者 ID、註解和當前簽名時間。此步驟對於確保簽名與我們先前建立的簽名行正確關聯至關重要。
+
+## 第 6 步：建立證書持有者
+
+要簽署文檔，我們需要使用 PFX 文件建立證書持有者。
+
+```java
+CertificateHolder certHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
+```
+ 
+- 這`CertificateHolder.create`方法取得 PFX 檔案的路徑及其密碼。該物件將用於驗證簽名過程。
+
+## 第 7 步：簽署文件
+
+終於到了簽署文件的時候了！您可以這樣做：
+
+```java
+DigitalSignatureUtil.sign(getArtifactsDir() + "SignDocuments.SignatureLineProviderId.docx", 
+    getArtifactsDir() + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
+```
+ 
+- 這`DigitalSignatureUtil.sign`方法採用原始文件路徑、簽署文件的路徑、憑證持有者和簽章選項。此方法將數位簽章套用至您的文件。
 
 ## 結論
 
-在本指南中，我們學習如何使用 Aspose.Words for Java 在文件中實作數位簽章。這是確保數位文件真實性和完整性的關鍵一步。透過遵循此處概述的步驟，您可以放心地在 Java 應用程式中新增和驗證數位簽章。
+現在你就擁有了！您已使用 Aspose.Words for Java 成功新增數位簽章。此過程不僅增強了文件的安全性，還簡化了簽名過程，使管理重要的文書工作變得更加容易。當您繼續使用數位簽章時，您會發現它們可以顯著改善您的工作流程並讓您高枕無憂。 
 
 ## 常見問題解答
 
 ### 什麼是數位簽章？
+數位簽章是一種驗證文件真實性和完整性的加密技術。
 
-數位簽章是一種驗證數位文件或訊息的真實性和完整性的加密技術。
+### 我需要特殊的軟體來創建數位簽章嗎？
+是的，您需要像 Aspose.Words for Java 這樣的函式庫來以程式設計方式建立和管理數位簽章。
 
-### 我可以使用自簽名憑證進行數位簽章嗎？
+### 我可以使用自簽名憑證來簽署文件嗎？
+是的，您可以使用自簽名證書，但它可能不會被所有收件者信任。
 
-是的，您可以使用自簽名證書，但它可能無法提供與受信任的證書頒發機構 (CA) 頒發的證書相同的信任等級。
+### 簽名後我的文件安全嗎？
+是的，數位簽章提供了一層安全保障，確保文件在簽名後不會被更改。
 
-### Aspose.Words for Java 與其他文件格式相容嗎？
-
-是的，Aspose.Words for Java 支援各種文件格式，包括 DOCX、PDF、HTML 等。
-
-### 如何取得用於簽署文件的數位憑證？
-
-您可以從受信任的憑證授權單位 (CA) 取得數位證書，或使用 OpenSSL 等工具建立自簽名憑證。
-
-### 數位簽章具有法律約束力嗎？
-
-在許多司法管轄區，數位簽名具有法律約束力，並且與手寫簽名具有相同的效力。但是，有必要諮詢法律專家以了解您所在地區的特定法律要求。
+### 在哪裡可以了解有關 Aspose.Words 的更多資訊？
+您可以探索[Aspose.Words 文檔](https://reference.aspose.com/words/java/)了解更多詳細資訊和進階功能。

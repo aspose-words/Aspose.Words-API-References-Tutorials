@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-Ten`EvaluateCondition` metoda zwraca`FieldIfComparisonResult` enum, które reprezentuje wynik oceny warunku. To enum może mieć wartości takie jak`True`, `False` , Lub`Unknown`.
+ Ten`EvaluateCondition` metoda zwraca`FieldIfComparisonResult` enum, które reprezentuje wynik oceny warunku. To enum może mieć wartości takie jak`True`, `False` , Lub`Unknown`.
 
 ## Krok 4: Wyświetl wynik
 
@@ -80,7 +80,7 @@ Console.WriteLine(actualResult);
 
 ## Wniosek
 
-Ocena warunków IF w dokumentach Word przy użyciu Aspose.Words for .NET to potężny sposób dodawania dynamicznej zawartości na podstawie określonych kryteriów. Postępując zgodnie z tym przewodnikiem, nauczyłeś się, jak utworzyć dokument, wstawić pole IF, ocenić jego warunek i wyświetlić wynik. Ta funkcjonalność jest przydatna do generowania spersonalizowanych raportów, dokumentów z warunkową zawartością lub dowolnego scenariusza, w którym potrzebna jest dynamiczna zawartość.
+Ocena warunków IF w dokumentach Word przy użyciu Aspose.Words for .NET to potężny sposób dodawania dynamicznej zawartości na podstawie określonych kryteriów. Postępując zgodnie z tym przewodnikiem, nauczyłeś się, jak utworzyć dokument, wstawić pole IF, ocenić jego warunek i wyświetlić wynik. Ta funkcjonalność jest przydatna do generowania spersonalizowanych raportów, dokumentów z zawartością warunkową lub dowolnego scenariusza, w którym potrzebna jest dynamiczna zawartość.
 
 Możesz swobodnie eksperymentować z różnymi warunkami i wynikami, aby w pełni zrozumieć, jak wykorzystać pola IF w swoich dokumentach.
 
@@ -93,7 +93,7 @@ Pole IF to pole Word, które umożliwia wstawianie logiki warunkowej do dokument
  Możesz wstawić pole JEŻELI za pomocą`InsertField` metoda`DocumentBuilder` klasę, określając warunek, który chcesz ocenić.
 
 ###  Co robi`EvaluateCondition` method do?
-Ten`EvaluateCondition` Metoda ocenia warunek określony w polu IF i zwraca wynik, wskazujący, czy warunek jest prawdziwy, czy fałszywy.
+ Ten`EvaluateCondition` Metoda ocenia warunek określony w polu IF i zwraca wynik, wskazujący, czy warunek jest prawdziwy, czy fałszywy.
 
 ### Czy mogę używać złożonych warunków w polu JEŻELI?
 Tak, możesz używać złożonych warunków z polem JEŻELI, określając różne wyrażenia i porównania według potrzeb.

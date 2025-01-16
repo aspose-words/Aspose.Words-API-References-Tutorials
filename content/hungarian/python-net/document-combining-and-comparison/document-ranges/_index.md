@@ -22,7 +22,7 @@ Mielőtt belemerülnénk a gyakorlati megvalósításba, győződjön meg arról
 
 ## Az Aspose.Words for Python telepítése
 
-A kezdéshez telepítenie kell az Aspose.Words for Python könyvtárat. Ezt a következő pip paranccsal teheti meg:
+kezdéshez telepítenie kell az Aspose.Words for Python könyvtárat. Ezt a következő pip paranccsal teheti meg:
 
 ```python
 pip install aspose-words
@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Dokumentumok egyesítése
-
-dokumentumok zökkenőmentes kombinálása értékes készség. A dokumentumok közötti navigáció segít hatékonyan egyesíteni őket:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Dokumentumok felosztása
 
 Időnként előfordulhat, hogy egy dokumentumot kisebb részekre kell osztanunk. A dokumentumban való navigálás segít a következő elérésében:
@@ -117,8 +109,8 @@ A fejlécek és a láblécek gyakran külön kezelést igényelnek. Az ezekben a
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

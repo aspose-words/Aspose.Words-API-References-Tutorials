@@ -30,12 +30,8 @@ Pod koniec tych samouczków będziesz wyposażony w umiejętności płynnego ł�
 ## Samouczki dotyczące łączenia i porównywania dokumentów
 ### [Łączenie i porównywanie dokumentów w programie Word](./merge-compare-documents/)
 Łącz i porównuj dokumenty Word bez wysiłku, korzystając z Aspose.Words dla Pythona. Dowiedz się, jak manipulować dokumentami, wyróżniać różnice i automatyzować zadania.
-### [Wykorzystanie mocy zakładek dokumentów](./document-bookmarks/)
-Dowiedz się, jak wykorzystać moc zakładek dokumentów za pomocą Aspose.Words for Python. Twórz, zarządzaj i nawiguj po zakładkach dzięki przewodnikom krok po kroku i przykładom kodu.
 ### [Nawigowanie po zakresach dokumentów w celu precyzyjnej edycji](./document-ranges/)
 Dowiedz się, jak precyzyjnie nawigować i edytować zakresy dokumentów za pomocą Aspose.Words dla Pythona. Przewodnik krok po kroku z kodem źródłowym do wydajnej manipulacji treścią.
-### [Wykorzystanie ustrukturyzowanych znaczników dokumentów (SDT) w przypadku ustrukturyzowanych danych](./document-sdts/)
-Odblokuj moc znaczników dokumentu strukturalnego (SDT) do organizowania treści. Dowiedz się, jak używać Aspose.Words dla Pythona do implementacji SDT.
 ### [Stosowanie stylów i motywów do przekształcania dokumentów](./apply-styles-themes-documents/)
 Ulepsz estetykę dokumentu dzięki Aspose.Words dla Pythona. Stosuj style, motywy i dostosowania bez wysiłku.
 ### [Tworzenie kompleksowego spisu treści dla dokumentów Word](./generate-table-contents/)

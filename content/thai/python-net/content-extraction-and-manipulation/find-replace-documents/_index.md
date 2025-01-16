@@ -18,7 +18,7 @@ url: /th/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 1.  การติดตั้ง Python: ตรวจสอบให้แน่ใจว่าได้ติดตั้ง Python ไว้ในระบบของคุณแล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://www.python.org/downloads/).
 
-2. Aspose.Words สำหรับ Python: คุณต้องติดตั้ง Aspose.Words สำหรับ Python คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/python/).
+2.  Aspose.Words สำหรับ Python: คุณต้องติดตั้ง Aspose.Words สำหรับ Python คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/python/).
 
 3. การเตรียมเอกสาร: เตรียมเอกสาร Word ที่คุณต้องการดำเนินการค้นหาและแทนที่ไว้
 
@@ -118,4 +118,4 @@ doc.save("path/to/save/document.docx")
 
 ### ฉันสามารถแทนที่ข้อความในขณะที่ติดตามการเปลี่ยนแปลงที่เกิดขึ้นได้หรือไม่
 
- ใช่ คุณสามารถติดตามการเปลี่ยนแปลงได้โดยใช้`revision` คุณสมบัติของ Aspose.Words ช่วยให้คุณสามารถติดตามการเปลี่ยนแปลงทั้งหมดที่เกิดขึ้นกับเอกสารได้
+ ใช่ คุณสามารถติดตามการเปลี่ยนแปลงได้โดยใช้`revision`คุณสมบัติของ Aspose.Words ช่วยให้คุณสามารถติดตามการเปลี่ยนแปลงทั้งหมดที่เกิดขึ้นกับเอกสารได้

@@ -52,14 +52,14 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Steg 3: Lägga till en Rubrik 1-tagg
 
-Låt oss börja med att lägga till en Rubrik 1-tagg i vårt dokument. Detta blir vår huvudtitel.
+Låt oss börja med att lägga till en Rubrik 1-tagg i vårt dokument. Det här blir vår huvudtitel.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
 builder.Writeln("This is an H1 tag");
 ```
 
-## Steg 4: Återställ styckestilar
+## Steg 4: Återställ styckeformat
 
 Efter att ha lagt till vår rubrik måste vi återställa stilarna för att säkerställa att de inte överförs till nästa stycke.
 

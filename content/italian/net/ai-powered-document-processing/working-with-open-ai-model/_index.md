@@ -137,7 +137,7 @@ Aspose.Words per .NET è una potente libreria che consente agli sviluppatori di 
 Sì, è necessario disporre di una chiave API OpenAI valida per accedere alle funzionalità di riepilogo utilizzando i relativi modelli.
 
 ### Posso riassumere più documenti contemporaneamente?  
-Assolutamente! Puoi riassumere più documenti in una singola chiamata, il che è ideale per report estesi.
+Assolutamente! Puoi riassumere più documenti in una singola chiamata, il che è l'ideale per report estesi.
 
 ### Come faccio a installare Aspose.Words?  
 È possibile installarlo tramite NuGet Package Manager in Visual Studio cercando "Aspose.Words".

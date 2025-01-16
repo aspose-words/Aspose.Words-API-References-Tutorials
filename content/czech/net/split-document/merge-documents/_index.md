@@ -107,7 +107,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### Jak získám podporu pro Aspose.Words for .NET?
 
-Podporu můžete získat návštěvou stránky[Aspose fórum podpory](https://forum.aspose.com/c/words/8).
+ Podporu můžete získat návštěvou stránky[Aspose fórum podpory](https://forum.aspose.com/c/words/8).
 
 ### Mohu sloučit jiné formáty souborů s Aspose.Words pro .NET?
 

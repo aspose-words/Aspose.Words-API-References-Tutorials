@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-Der`Aspose.Words` Namespace gibt Ihnen Zugriff auf alle Klassen und Methoden, die Sie zur Bearbeitung von Word-Dokumenten benötigen, während`System` wird für grundlegende Funktionen wie die Konsolenausgabe verwendet.
+ Der`Aspose.Words` Namespace gibt Ihnen Zugriff auf alle Klassen und Methoden, die Sie zur Bearbeitung von Word-Dokumenten benötigen, während`System` wird für grundlegende Funktionen wie die Konsolenausgabe verwendet.
 
 Lassen Sie uns den Vorgang des Extrahierens von Serienbrief-Feldnamen in eine klare Schritt-für-Schritt-Anleitung aufschlüsseln.
 
@@ -73,7 +73,7 @@ Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-Der`GetFieldNames()`Die Methode gibt ein Array von Zeichenfolgen zurück, von denen jede den Namen eines Seriendruckfelds darstellt, das im Dokument gefunden wurde. Dies sind die Platzhalter, die Sie in Ihrem Word-Dokument sehen werden.
+ Der`GetFieldNames()`Die Methode gibt ein Array von Zeichenfolgen zurück, von denen jede den Namen eines Seriendruckfelds darstellt, das im Dokument gefunden wurde. Dies sind die Platzhalter, die Sie in Ihrem Word-Dokument sehen werden.
 
 ## Schritt 4: Anzahl der Seriendruckfelder anzeigen
 

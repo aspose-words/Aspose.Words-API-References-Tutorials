@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Etapa 3: Inicializando o Document Builder
 
-O`DocumentBuilder` class é sua ferramenta de escolha para adicionar conteúdo ao documento. Pense nela como seu pincel e paleta.
+ O`DocumentBuilder` class é sua ferramenta de escolha para adicionar conteúdo ao documento. Pense nela como seu pincel e paleta.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

@@ -61,7 +61,7 @@ När dokumentet har laddats kan vi fortsätta att ta bort text från ett specifi
 2.  Ta bort intervallet: Använd`Range.Delete` metod för att ta bort all text i detta avsnitt.
 
 ```csharp
-//Ta bort texten i den första delen av dokumentet
+// Ta bort texten i den första delen av dokumentet
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Aspose.Words för .NET är ett klassbibliotek för bearbetning av Word-dokument.
 
 ### Kan jag ta bort text från ett specifikt stycke istället för ett avsnitt?
 
-Ja, du kan ta bort text från ett specifikt stycke genom att gå till önskat stycke och använda`Range.Delete` metod.
+ Ja, du kan ta bort text från ett specifikt stycke genom att gå till önskat stycke och använda`Range.Delete` metod.
 
 ### Är det möjligt att radera text villkorligt?
 

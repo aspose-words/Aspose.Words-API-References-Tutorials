@@ -15,7 +15,7 @@ Převod dokumentů Wordu do PDF je běžným požadavkem v různých oblastech, 
 
 Než začneme, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE, které podporuje vývoj .NET.
 3. Základní znalost C#: Pochopení základů vám pomůže sledovat úryvky kódu.
 

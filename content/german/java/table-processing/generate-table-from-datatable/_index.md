@@ -7,91 +7,203 @@ type: docs
 weight: 11
 url: /de/java/table-processing/generate-table-from-datatable/
 ---
+## Einführung
 
-In diesem Tutorial zeigen wir, wie man mit Aspose.Words für Java eine Tabelle aus einer DataTable generiert. Die DataTable ist eine grundlegende Datenstruktur, die tabellarische Daten enthält, und mit den leistungsstarken Tabellenverarbeitungsfunktionen von Aspose.Words können wir problemlos eine gut formatierte Tabelle in einem Word-Dokument erstellen. Folgen Sie der nachstehenden Schritt-für-Schritt-Anleitung, um eine Tabelle zu generieren und sie in Ihre Textverarbeitungsanwendung zu integrieren.
+Das dynamische Erstellen von Tabellen aus Datenquellen ist in vielen Anwendungen eine gängige Aufgabe. Egal, ob Sie Berichte, Rechnungen oder Datenzusammenfassungen erstellen, die Möglichkeit, eine Tabelle programmgesteuert mit Daten zu füllen, kann Ihnen viel Zeit und Mühe sparen. In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für Java eine Tabelle aus einer DataTable erstellen. Wir unterteilen den Prozess in überschaubare Schritte, damit Sie jeden Teil klar verstehen.
 
-## Schritt 1: Einrichten Ihrer Entwicklungsumgebung
+## Voraussetzungen
 
-Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
+Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie zum Einstieg benötigen:
 
-- Auf Ihrem System ist Java Development Kit (JDK) installiert.
-- Aspose.Words für die Java-Bibliothek heruntergeladen und in Ihrem Projekt referenziert.
+1.  Java Development Kit (JDK): Stellen Sie sicher, dass JDK auf Ihrem Rechner installiert ist. Sie können es von der[Oracle-Website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+   
+2.  Aspose.Words für Java: Sie benötigen die Aspose.Words-Bibliothek. Sie können die neueste Version herunterladen von[Aspose's Veröffentlichungsseite](https://releases.aspose.com/words/java/).
 
-## Schritt 2: Bereiten Sie Ihre DataTable vor
+3. IDE: Eine integrierte Entwicklungsumgebung (IDE) wie IntelliJ IDEA oder Eclipse erleichtert die Codierung.
 
-Zuerst müssen Sie Ihre DataTable mit den erforderlichen Daten vorbereiten. Eine DataTable ist wie eine virtuelle Tabelle mit Zeilen und Spalten. Füllen Sie sie mit den Daten, die Sie in der Tabelle anzeigen möchten.
+4. Grundkenntnisse in Java: Die Vertrautheit mit Java-Programmierkonzepten hilft Ihnen, die Codeausschnitte besser zu verstehen.
 
-```java
-// Erstellen Sie eine Beispiel-DataTable und fügen Sie Zeilen und Spalten hinzu
-DataTable dataTable = new DataTable(""Employees"");
-dataTable.getColumns().add(""ID"", Integer.class);
-dataTable.getColumns().add(""Name"", String.class);
-dataTable.getRows().add(101, ""John Doe"");
-dataTable.getRows().add(102, ""Jane Smith"");
-dataTable.getRows().add(103, ""Michael Johnson"");
-```
+5. Beispieldaten: Für dieses Tutorial verwenden wir eine XML-Datei namens „List of people.xml“, um eine Datenquelle zu simulieren. Sie können diese Datei mit Beispieldaten zum Testen erstellen.
 
-## Schritt 3: Tabelle erstellen und formatieren
+## Schritt 1: Neues Dokument erstellen
 
-Jetzt erstellen wir ein neues Dokument und generieren die Tabelle mit den Daten aus der DataTable. Wir wenden auch Formatierungen an, um das Erscheinungsbild der Tabelle zu verbessern.
+Zuerst müssen wir ein neues Dokument erstellen, in dem unsere Tabelle gespeichert wird. Dies ist die Leinwand für unsere Arbeit.
 
 ```java
-// Neues Dokument erstellen
 Document doc = new Document();
-
-// Erstellen Sie eine Tabelle mit der gleichen Anzahl von Spalten wie die DataTable
-Table table = doc.getFirstSection().getBody().appendTable();
-table.ensureMinimum();
-
-// Fügen Sie die Kopfzeile mit Spaltennamen hinzu
-Row headerRow = table.getRows().get(0);
-for (DataColumn column : dataTable.getColumns()) {
-    Cell cell = headerRow.getCells().add(column.getColumnName());
-    cell.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
-}
-
-// Datenzeilen zur Tabelle hinzufügen
-for (DataRow dataRow : dataTable.getRows()) {
-    Row newRow = table.getRows().add();
-    for (DataColumn column : dataTable.getColumns()) {
-        Cell cell = newRow.getCells().add(dataRow.get(column.getColumnName()).toString());
-    }
-}
 ```
 
-## Schritt 4: Speichern Sie das Dokument
+ Hier instantiieren wir ein neues`Document` Objekt. Dies dient uns als Arbeitsdokument, in dem wir unsere Tabelle erstellen.
 
-Speichern Sie abschließend das Dokument mit der generierten Tabelle am gewünschten Speicherort.
+## Schritt 2: DocumentBuilder initialisieren
+
+ Als nächstes verwenden wir die`DocumentBuilder` Klasse, die es uns ermöglicht, das Dokument einfacher zu bearbeiten.
 
 ```java
-// Speichern des Dokuments
-doc.save(""output.docx"");
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Wenn Sie diese Schritte befolgen, können Sie erfolgreich eine Tabelle aus einer DataTable generieren und sie mit Aspose.Words für Java in Ihre Dokumentverarbeitungsanwendung integrieren. Diese funktionsreiche Bibliothek vereinfacht Tabellenverarbeitungs- und Textverarbeitungsaufgaben und ermöglicht Ihnen die mühelose Erstellung professioneller und gut organisierter Dokumente.
+ Der`DocumentBuilder` Das Objekt bietet Methoden zum Einfügen von Tabellen, Text und anderen Elementen in das Dokument.
+
+## Schritt 3: Seitenausrichtung festlegen
+
+Da unsere Tabelle voraussichtlich breit sein wird, stellen wir die Seitenausrichtung auf Querformat ein.
+
+```java
+doc.getFirstSection().getPageSetup().setOrientation(Orientation.LANDSCAPE);
+```
+
+Dieser Schritt ist wichtig, da er gewährleistet, dass unsere Tabelle gut auf die Seite passt, ohne abgeschnitten zu werden.
+
+## Schritt 4: Daten aus XML laden
+
+ Nun müssen wir unsere Daten aus der XML-Datei in ein`DataTable`. Hierher stammen unsere Daten.
+
+```java
+DataSet ds = new DataSet();
+ds.readXml(getMyDir() + "List of people.xml");
+DataTable dataTable = ds.getTables().get(0);
+```
+
+ Hier lesen wir die XML-Datei und holen die erste Tabelle aus dem Datensatz.`DataTable` enthält die Daten, die wir in unserem Dokument anzeigen möchten.
+
+## Schritt 5: Importieren Sie die Tabelle aus DataTable
+
+Jetzt kommt der spannende Teil: das Importieren unserer Daten in das Dokument als Tabelle.
+
+```java
+Table table = importTableFromDataTable(builder, dataTable, true);
+```
+
+ Wir nennen die Methode`importTableFromDataTable` , vorbei an der`DocumentBuilder` , unser`DataTable`und ein Boolescher Wert, der angibt, ob Spaltenüberschriften eingeschlossen werden sollen.
+
+## Schritt 6: Gestalten Sie die Tabelle
+
+Sobald wir unsere Tabelle haben, können wir sie mit etwas Stil versehen, damit sie gut aussieht.
+
+```java
+table.setStyleIdentifier(StyleIdentifier.MEDIUM_LIST_2_ACCENT_1);
+table.setStyleOptions(TableStyleOptions.FIRST_ROW | TableStyleOptions.ROW_BANDS | TableStyleOptions.LAST_COLUMN);
+```
+
+Dieser Code wendet einen vordefinierten Stil auf die Tabelle an und verbessert so ihre optische Attraktivität und Lesbarkeit.
+
+## Schritt 7: Unerwünschte Zellen entfernen
+
+Wenn Sie Spalten haben, die Sie nicht anzeigen möchten, z. B. eine Bildspalte, können Sie diese einfach entfernen.
+
+```java
+table.getFirstRow().getLastCell().removeAllChildren();
+```
+
+Dieser Schritt stellt sicher, dass in unserer Tabelle nur die relevanten Informationen angezeigt werden.
+
+## Schritt 8: Speichern Sie das Dokument
+
+Abschließend speichern wir unser Dokument mit der generierten Tabelle.
+
+```java
+doc.save(getArtifactsDir() + "WorkingWithTables.BuildTableFromDataTable.docx");
+```
+
+Diese Zeile speichert das Dokument im angegebenen Verzeichnis und ermöglicht Ihnen, die Ergebnisse zu überprüfen.
+
+## Die Methode importTableFromDataTable
+
+ Schauen wir uns die`importTableFromDataTable` -Methode. Diese Methode ist für das Erstellen und Auffüllen der Tabellenstruktur mit Daten verantwortlich.
+
+### Schritt 1: Starten Sie die Tabelle
+
+Zuerst müssen wir im Dokument eine neue Tabelle beginnen.
+
+```java
+Table table = builder.startTable();
+```
+
+Dadurch wird eine neue Tabelle in unserem Dokument initialisiert.
+
+### Schritt 2: Spaltenüberschriften hinzufügen
+
+ Wenn wir Spaltenüberschriften einbinden möchten, aktivieren wir das Kontrollkästchen`importColumnHeadings` Flagge.
+
+```java
+if (importColumnHeadings) {
+    // Ursprüngliche Formatierung speichern
+    boolean boldValue = builder.getFont().getBold();
+    int paragraphAlignmentValue = builder.getParagraphFormat().getAlignment();
+
+    // Überschriftenformatierung festlegen
+    builder.getFont().setBold(true);
+    builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
+
+    // Spaltennamen einfügen
+    for (DataColumn column : dataTable.getColumns()) {
+        builder.insertCell();
+        builder.writeln(column.getColumnName());
+    }
+
+    builder.endRow();
+
+    // Wiederherstellen der ursprünglichen Formatierung
+    builder.getFont().setBold(boldValue);
+    builder.getParagraphFormat().setAlignment(paragraphAlignmentValue);
+}
+```
+
+ Dieser Codeblock formatiert die Überschriftenzeile und fügt die Namen der Spalten aus dem`DataTable`.
+
+### Schritt 3: Füllen Sie die Tabelle mit Daten
+
+ Nun durchlaufen wir jede Zeile des`DataTable` um Daten in die Tabelle einzufügen.
+
+```java
+for (DataRow dataRow : (Iterable<DataRow>) dataTable.getRows()) {
+    for (Object item : dataRow.getItemArray()) {
+        builder.insertCell();
+        switch (item.getClass().getName()) {
+            case "DateTime":
+                Date dateTime = (Date) item;
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMMM d, yyyy");
+                builder.write(simpleDateFormat.format(dateTime));
+                break;
+            default:
+                builder.write(item.toString());
+                break;
+        }
+    }
+    builder.endRow();
+}
+```
+
+In diesem Abschnitt behandeln wir verschiedene Datentypen, formatieren Daten entsprechend und fügen andere Daten als Text ein.
+
+### Schritt 4: Beenden Sie die Tabelle
+
+Zum Schluss schließen wir die Tabelle ab, nachdem alle Daten eingefügt wurden.
+
+```java
+builder.endTable();
+```
+
+ Diese Zeile markiert das Ende unserer Tabelle und ermöglicht den`DocumentBuilder` um zu wissen, dass wir mit diesem Abschnitt fertig sind.
 
 ## Abschluss
 
-Herzlichen Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für Java eine Tabelle aus einer DataTable generieren. Diese Schritt-für-Schritt-Anleitung zeigt, wie Sie eine DataTable vorbereiten, eine Tabelle in einem Word-Dokument erstellen und formatieren und die endgültige Ausgabe speichern. Aspose.Words für Java bietet eine leistungsstarke und flexible API für die Tabellenverarbeitung, mit der Sie tabellarische Daten einfach verwalten und in Ihre Textverarbeitungsprojekte integrieren können.
+Und da haben Sie es! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für Java eine Tabelle aus einer DataTable generieren. Indem Sie diese Schritte befolgen, können Sie ganz einfach dynamische Tabellen in Ihren Dokumenten basierend auf verschiedenen Datenquellen erstellen. Egal, ob Sie Berichte oder Rechnungen erstellen, diese Methode rationalisiert Ihren Arbeitsablauf und verbessert Ihren Dokumenterstellungsprozess.
 
-Indem Sie die Funktionen von Aspose.Words nutzen, können Sie komplexe Tabellenstrukturen verarbeiten, benutzerdefinierte Formatierungen anwenden und Tabellen nahtlos in Ihre Dokumente integrieren. Egal, ob Sie Berichte, Rechnungen oder andere Dokumente erstellen, die eine tabellarische Darstellung erfordern, mit Aspose.Words können Sie mühelos professionelle Ergebnisse erzielen.
+## Häufig gestellte Fragen
 
-Entdecken Sie weitere Features und Funktionen von Aspose.Words für Java, um Ihre Dokumentverarbeitungsfunktionen zu verbessern und Ihre Java-Anwendungen zu optimieren.
+### Was ist Aspose.Words für Java?
+Aspose.Words für Java ist eine leistungsstarke Bibliothek zum programmgesteuerten Erstellen, Bearbeiten und Konvertieren von Word-Dokumenten.
 
-## FAQs
+### Kann ich Aspose.Words kostenlos nutzen?
+ Ja, Aspose bietet eine kostenlose Testversion an. Sie können sie hier herunterladen:[Hier](https://releases.aspose.com/).
 
-### 1. Kann ich Tabellen mit verbundenen Zellen oder verschachtelte Tabellen erstellen?
+### Wie formatiere ich Tabellen in Aspose.Words?
+Sie können Stile mithilfe vordefinierter Stilkennungen und Optionen anwenden, die von der Bibliothek bereitgestellt werden.
 
-Ja, mit Aspose.Words für Java können Sie Tabellen mit verbundenen Zellen erstellen oder sogar Tabellen ineinander verschachteln. Auf diese Weise können Sie komplexe Tabellenlayouts entwerfen und Daten in verschiedenen Formaten darstellen.
+### Welche Arten von Daten kann ich in Tabellen einfügen?
+Sie können verschiedene Datentypen einfügen, darunter Text, Zahlen und Daten, die entsprechend formatiert werden können.
 
-### 2. Wie kann ich das Erscheinungsbild der generierten Tabelle anpassen?
-
-Aspose.Words für Java bietet eine breite Palette an Formatierungsoptionen für Tabellen, Zellen, Zeilen und Spalten. Sie können Schriftarten, Hintergrundfarben, Rahmen und Ausrichtung festlegen, um das gewünschte Erscheinungsbild Ihrer Tabelle zu erreichen.
-
-### 3. Kann ich die generierte Tabelle in andere Formate exportieren?
-
-Absolut! Aspose.Words für Java unterstützt den Export von Word-Dokumenten in verschiedene Formate, darunter PDF, HTML, XPS und mehr. Sie können die generierte Tabelle mit den bereitgestellten Exportoptionen problemlos in das gewünschte Format konvertieren.
-
-### 4. Ist Aspose.Words für Java für die Verarbeitung umfangreicher Dokumente geeignet?
-
-Ja, Aspose.Words für Java ist darauf ausgelegt, sowohl kleine als auch große Dokumentverarbeitungsaufgaben effizient zu bewältigen. Seine optimierte Verarbeitungs-Engine gewährleistet hohe Leistung und zuverlässige Verarbeitung auch bei großen Dokumenten und komplexen Tabellenstrukturen.
+### Wo erhalte ich Support für Aspose.Words?
+ Sie finden Unterstützung und können Fragen stellen auf der[Aspose-Forum](https://forum.aspose.com/c/words/8/).

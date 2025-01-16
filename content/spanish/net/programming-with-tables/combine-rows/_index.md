@@ -112,4 +112,4 @@ Sí, puedes combinar varias tablas repitiendo los pasos para cada tabla adiciona
 
 ### ¿Dónde puedo obtener ayuda si tengo problemas?
 
-El[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) Es un gran lugar para obtener ayuda y encontrar soluciones a problemas comunes.
+ El[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) Es un gran lugar para obtener ayuda y encontrar soluciones a problemas comunes.

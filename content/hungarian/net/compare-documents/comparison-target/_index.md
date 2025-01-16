@@ -16,7 +16,7 @@ Szia! Volt már olyan, hogy egy Word-dokumentum két verzióját hasonlította �
 Mielőtt belevágnánk az apróságokba, győződjünk meg arról, hogy mindennel rendelkezünk, ami az induláshoz szükséges:
 
 1.  Aspose.Words for .NET: Szüksége van erre a könyvtárra. Ha még nincs meg, vedd meg onnan[itt](https://releases.aspose.com/words/net/).
-2.  Licenc: Az Aspose.Words teljes potenciáljának kiaknázásához érvényes licencre lesz szüksége. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+2.  Licenc: Az Aspose.Words teljes potenciáljának kiaknázásához érvényes licencre lesz szüksége. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
 3. Fejlesztői környezet: Visual Studio vagy bármely más .NET-kompatibilis IDE.
 4. Alapvető C# ismerete: Ne aggódjon, nem kell profinak lenned, elég egy kis alapismeret.
 

@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3단계: 글꼴 설정 구성
 
-새로운 것을 만드세요`FontSettings` 객체를 만들고 XML 파일에서 글꼴 폴백 설정을 로드합니다. 이 XML 파일에는 글꼴 폴백 규칙이 들어 있습니다.
+ 새로운 것을 만드세요`FontSettings` 객체를 만들고 XML 파일에서 글꼴 폴백 설정을 로드합니다. 이 XML 파일에는 글꼴 폴백 규칙이 들어 있습니다.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

@@ -15,7 +15,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár Word dokumentumok programozott
 
 Mielőtt belevágnánk a kódba, győződjön meg arról, hogy mindent beállított:
 
-1.  Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Letöltheti a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Letöltheti a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Visual Studio vagy bármely más C# fejlesztői környezet.
 3. Alapvető C# ismerete: Előnyt jelent a C# programozás alapjainak megértése.
 
@@ -39,7 +39,7 @@ Mielőtt elkezdené a dokumentum kezelését, meg kell határoznia a dokumentumk
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Cserélje ki`"YOUR DOCUMENT DIRECTORY"`azzal a tényleges elérési úttal, ahová a dokumentumokat menteni szeretné.
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` azzal a tényleges elérési úttal, ahová a dokumentumokat menteni szeretné.
 
 ## 2. lépés: Új dokumentum létrehozása
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## 4. lépés: Szöveg cseréje bekezdéstörés metakarakter használatával
 
- A metakarakterek különféle elemeket, például bekezdéseket, tabulátorokat és sortöréseket képviselhetnek. Itt használjuk`&p` bekezdéstörést ábrázolni.
+ metakarakterek különféle elemeket, például bekezdéseket, tabulátorokat és sortöréseket képviselhetnek. Itt használjuk`&p` bekezdéstörést ábrázolni.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");
@@ -101,7 +101,7 @@ Gratulálok! Sikeresen manipulált egy Word-dokumentumot metakarakterek használ
 ## GYIK
 
 ### Mik azok a metakarakterek az Aspose.Words for .NET-ben?
-A metakarakterek olyan speciális karakterek, amelyek olyan elemeket jelölnek, mint a bekezdéstörés, kézi sortörés, tabulátor stb. a keresési mintákban.
+metakarakterek olyan speciális karakterek, amelyek olyan elemeket jelölnek, mint a bekezdéstörés, kézi sortörés, tabulátor stb. a keresési mintákban.
 
 ### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
  Letöltheti a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/). Kövesse a mellékelt telepítési utasításokat.

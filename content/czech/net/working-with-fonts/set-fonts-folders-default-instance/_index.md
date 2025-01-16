@@ -14,7 +14,7 @@ Ahoj, kolego kodéru! Pokud pracujete s dokumenty Wordu v .NET, pravděpodobně 
 ## Předpoklady
 
 Než se ponoříme do hrubších detailů, ujistěte se, že máte vše, co potřebujete:
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu. Pokud ne, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 - Základní znalost C#: Měli byste být spokojeni s programováním v C#.
 - Složka písem: Adresář obsahující vaše vlastní písma.

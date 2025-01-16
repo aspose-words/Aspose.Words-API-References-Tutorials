@@ -10,7 +10,7 @@ url: /hu/java/document-conversion-and-export/using-office-math-objects/
 
 ## Bevezetés az Office matematikai objektumok használatába az Aspose.Words for Java programban
 
-Java dokumentumfeldolgozás területén az Aspose.Words megbízható és hatékony eszköz. Egyik kevésbé ismert gyöngyszeme az Office Math objektumokkal való munkavégzés képessége. Ebben az átfogó útmutatóban megvizsgáljuk, hogyan használhatjuk ki az Office Math objektumokat az Aspose.Words for Java-ban a matematikai egyenletek manipulálására és megjelenítésére a dokumentumokban. 
+A Java dokumentumfeldolgozás területén az Aspose.Words megbízható és hatékony eszköz. Egyik kevésbé ismert gyöngyszeme az Office Math objektumokkal való munkavégzés képessége. Ebben az átfogó útmutatóban megvizsgáljuk, hogyan használhatjuk ki az Office Math objektumokat az Aspose.Words for Java-ban a matematikai egyenletek manipulálására és megjelenítésére a dokumentumokban. 
 
 ## Előfeltételek
 
@@ -90,7 +90,7 @@ Az Aspose.Words for Java Office Math objektumai lehetővé teszik matematikai eg
 
 ### Igazíthatom másképp az Office Math egyenleteit a dokumentumon belül?
 
- Igen, szabályozhatja az Office Math egyenletek igazítását. Használja a`setJustification` módszer az igazítási beállítások megadására, például balra, jobbra vagy középre.
+ Igen, szabályozhatja az Office Math egyenletek igazítását. Használja a`setJustification`módszer az igazítási beállítások megadására, például balra, jobbra vagy középre.
 
 ### Az Aspose.Words for Java alkalmas összetett matematikai dokumentumok kezelésére?
 

@@ -15,7 +15,7 @@ Ahoj! Takže jste pracovali s dokumenty Word a potřebujete způsob, jak rychle 
 
 Než se po hlavě ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Toto je magický nástroj, který budeme používat. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) nebo chytit a[zkušební verze zdarma](https://releases.aspose.com/).
+1.  Aspose.Words for .NET: Toto je magický nástroj, který budeme používat. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/) nebo chytit a[zkušební verze zdarma](https://releases.aspose.com/).
 2. Vývojové prostředí .NET: Visual Studio je dobrá volba.
 3. Základní znalost C#: Nebojte se, nemusíte být kouzelník, ale trocha znalosti vám hodně pomůže.
 

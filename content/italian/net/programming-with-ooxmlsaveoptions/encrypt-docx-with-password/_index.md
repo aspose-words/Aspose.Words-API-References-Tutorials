@@ -54,7 +54,7 @@ Poi, dobbiamo impostare le opzioni per salvare il documento. Qui è dove specifi
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-IL`OoxmlSaveOptions`classe ci consente di specificare varie opzioni per salvare i file DOCX. Qui, impostiamo la`Password`proprietà a`"password"` Puoi sostituire`"password"` con qualsiasi password di tua scelta. Questa password sarà richiesta per aprire il file DOCX criptato.
+ IL`OoxmlSaveOptions`classe ci consente di specificare varie opzioni per salvare i file DOCX. Qui, impostiamo la`Password`proprietà a`"password"` Puoi sostituire`"password"` con qualsiasi password di tua scelta. Questa password sarà richiesta per aprire il file DOCX criptato.
 
 ## Passaggio 3: Salvare il documento crittografato
 
@@ -65,7 +65,7 @@ Infine, salveremo il documento utilizzando le opzioni di salvataggio configurate
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-IL`Save` metodo del`Document` classe viene utilizzata per salvare il documento. Forniamo il percorso e il nome del file per il documento crittografato, insieme a`saveOptions` che abbiamo configurato in precedenza. Il documento è ora salvato come file DOCX crittografato.
+ IL`Save` metodo del`Document` classe viene utilizzata per salvare il documento. Forniamo il percorso e il nome del file per il documento crittografato, insieme a`saveOptions` che abbiamo configurato in precedenza. Il documento è ora salvato come file DOCX crittografato.
 
 ## Conclusione
 

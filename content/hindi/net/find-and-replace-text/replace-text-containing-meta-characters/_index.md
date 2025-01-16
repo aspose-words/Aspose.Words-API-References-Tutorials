@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- हम एक बना रहे हैं`FindReplaceOptions`ऑब्जेक्ट और पैराग्राफ संरेखण को केंद्र में सेट करना।
+ हम एक बना रहे हैं`FindReplaceOptions` ऑब्जेक्ट और पैराग्राफ संरेखण को केंद्र में सेट करना।
 
 ## चरण 4: टेक्स्ट को मेटा कैरेक्टर से बदलें
 
 इस चरण में जादू होता है! हम "सेक्शन" शब्द के स्थान पर पैराग्राफ ब्रेक लगाएंगे और एक रेखांकन जोड़ेंगे।
 
 ```csharp
-// प्रत्येक पैराग्राफ में "सेक्शन" शब्द के बाद दोहरा ब्रेक लगाएं, रेखांकन जोड़ें और उसे केन्द्र में रखें।
+//प्रत्येक पैराग्राफ में "सेक्शन" शब्द के बाद दोहरा ब्रेक लगाएं, रेखांकन जोड़ें और उसे केन्द्र में रखें।
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

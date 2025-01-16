@@ -15,7 +15,7 @@ In het digitale tijdperk van vandaag is het beheren van de documentgrootte cruci
 
 Voordat u met de tutorial begint, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
 
-1.  Aspose.Words voor .NET: U moet Aspose.Words voor .NET geïnstalleerd hebben. U kunt het downloaden van de[Aspose-website](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET: U moet Aspose.Words voor .NET geïnstalleerd hebben. U kunt het downloaden van de[Aspose-website](https://releases.aspose.com/words/net/).
 
 2. Basiskennis van C#: Kennis van C#-programmering helpt u de codevoorbeelden in deze tutorial te begrijpen.
 

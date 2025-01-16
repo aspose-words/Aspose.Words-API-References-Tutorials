@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 Definir uma senha é opcional, mas pode adicionar uma camada extra de segurança ao seu documento antes de você modificá-lo.
 
 ```csharp
-//Digite uma senha com até 15 caracteres.
+// Digite uma senha com até 15 caracteres.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -99,9 +99,9 @@ Não importa se você está trabalhando em um projeto pequeno ou lidando com vá
 
 Sim, definir uma senha é opcional. Você pode remover diretamente a recomendação somente leitura e não aplicar nenhuma proteção.
 
-### que acontece se o documento já tiver um tipo diferente de proteção?
+### O que acontece se o documento já tiver um tipo diferente de proteção?
 
-O`doc.Protect(ProtectionType.NoProtection)` O método garante que todos os tipos de proteção sejam removidos do documento.
+ O`doc.Protect(ProtectionType.NoProtection)` O método garante que todos os tipos de proteção sejam removidos do documento.
 
 ### Existe uma maneira de saber se um documento é somente leitura antes de remover a restrição?
 
@@ -111,6 +111,6 @@ O`doc.Protect(ProtectionType.NoProtection)` O método garante que todos os tipos
 
 Sim, você pode percorrer vários documentos e aplicar o mesmo método a cada um para remover as restrições de somente leitura.
 
-### E se o documento estiver protegido por senha e eu não souber a senha?
+### se o documento estiver protegido por senha e eu não souber a senha?
 
 Infelizmente, você precisa saber a senha para remover quaisquer restrições. Sem a senha, você não poderá modificar as configurações de proteção.

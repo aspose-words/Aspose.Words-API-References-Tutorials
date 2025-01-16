@@ -61,7 +61,7 @@ Deze kleine maar cruciale stap helpt de PDF-bestandsgrootte aanzienlijk te verkl
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions);
 ```
 
- Deze code genereert een PDF-bestand met de naam`WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf` in de opgegeven map, waarbij alleen de benodigde lettertype-subsets zijn ingesloten.
+ Deze code genereert een PDF-bestand met de naam`WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf` in de opgegeven map, waarbij alleen de benodigde lettertypesubsets zijn ingesloten.
 
 ## Conclusie
 

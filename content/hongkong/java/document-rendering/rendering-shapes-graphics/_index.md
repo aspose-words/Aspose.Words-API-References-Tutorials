@@ -7,7 +7,6 @@ type: docs
 weight: 12
 url: /zh-hant/java/document-rendering/rendering-shapes-graphics/
 ---
-
 ## 介紹
 
 在這個數位時代，文件通常需要的不僅僅是純文字。添加形狀和圖形可以更有效地傳達訊息，並使您的文件在視覺上更具吸引力。 Aspose.Words for Java 是一個功能強大的 Java API，可讓您操作 Word 文檔，包括新增和自訂形狀和圖形。

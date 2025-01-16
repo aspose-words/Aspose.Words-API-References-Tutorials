@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Revizyonları izlemeye başla
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //İzleme revizyonları olan metni ekle
+builder.Writeln("Inserted"); // İzleme revizyonları olan metni ekle
 doc.StopTrackRevisions();
 ```
 

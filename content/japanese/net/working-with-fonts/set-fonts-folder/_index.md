@@ -2,7 +2,7 @@
 title: フォントフォルダの設定
 linktitle: フォントフォルダの設定
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET でカスタム フォント フォルダーを設定し、フォントが失われることなく Word 文書が正しくレンダリングされるようにする方法を学習します。
+description: Aspose.Words for .NET でカスタム フォント フォルダーを設定し、Word 文書がフォント不足なく正しくレンダリングされるようにする方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/set-fonts-folder/

@@ -48,7 +48,7 @@ Document doc = new Document("sample.docx");
 
 ```java
 // Αρχικοποιήστε τις επιλογές αποθήκευσης εικόνας
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Βήμα 4: Απόδοση σελίδων εγγράφων ως εικόνες

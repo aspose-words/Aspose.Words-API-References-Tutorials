@@ -20,7 +20,7 @@ In het digitale landschap van vandaag de dag is het beheren en verwerken van Wor
 Om deze automatiseringsreis te beginnen, moet u Aspose.Words voor Python geïnstalleerd hebben. U kunt het downloaden van de[Aspose-website](https://releases.aspose.com/words/python/)Nadat u het hebt geïnstalleerd, kunt u uw Python-project starten en de benodigde modules importeren.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## VBA-macro's en hun rol begrijpen
@@ -46,7 +46,7 @@ Documenten programmatisch maken is vereenvoudigd met Aspose.Words Python. U kunt
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ VBA-macro's geïntegreerd met Aspose.Words Python openen deuren naar data-extrac
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content
@@ -126,4 +126,4 @@ Hoewel VBA-macro's de automatisering kunnen verbeteren, kunnen ze ook beveiligin
 Absoluut! Met Aspose.Words Python en VBA-macro's kunt u het maken en vullen van documenten automatiseren met behulp van gegevens uit externe bronnen, databases of API's.
 
 ### Waar kan ik meer bronnen en voorbeelden vinden voor Aspose.Words Python?
- U kunt een uitgebreide verzameling bronnen, tutorials en voorbeelden op de[Aspose.Words Python API-referenties](https://reference.aspose.com/words/python-net/) pagina.
+ U kunt een uitgebreide verzameling bronnen, tutorials en voorbeelden verkennen op de[Aspose.Words Python API-referenties](https://reference.aspose.com/words/python-net/) pagina.

@@ -107,7 +107,7 @@ Na koniec zapisz dokument w wybranym katalogu.
 doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 ```
 
-Dzięki temu Twój dokument zostanie zapisany w pięknym formacie z listami wielopoziomowymi.
+Dzięki temu możesz zapisać swój pięknie sformatowany dokument z listami wielopoziomowymi.
 
 ## Wniosek
 

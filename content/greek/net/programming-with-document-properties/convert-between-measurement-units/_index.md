@@ -2,7 +2,7 @@
 title: Μετατροπή μεταξύ μονάδων μέτρησης
 linktitle: Μετατροπή μεταξύ μονάδων μέτρησης
 second_title: Aspose.Words Document Processing API
-description: Μάθετε πώς να μετατρέπετε μονάδες μέτρησης στο Aspose.Words για .NET. Ακολουθήστε τον βήμα προς βήμα οδηγό μας για να ορίσετε τα περιθώρια, τις κεφαλίδες και τα υποσέλιδα εγγράφων σε ίντσες και σημεία.
+description: Μάθετε πώς να μετατρέπετε μονάδες μέτρησης στο Aspose.Words για .NET. Ακολουθήστε τον αναλυτικό οδηγό μας για να ορίσετε τα περιθώρια, τις κεφαλίδες και τα υποσέλιδα εγγράφων σε ίντσες και σημεία.
 type: docs
 weight: 10
 url: /el/net/programming-with-document-properties/convert-between-measurement-units/

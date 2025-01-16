@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## 应用字体样式和大小
-
-通过应用字体样式和大小来增强文档的可读性和视觉吸引力。使用以下代码可更改段落的字体样式和大小：
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## 格式化段落和标题
+## 段落格式
 
 为了有效地组织文档，格式化段落和标题至关重要。使用以下代码实现此目的：
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## 使用列表和项目符号
 
 列表和项目符号可以组织内容并提供清晰度。使用 Aspose.Words 实现它们：
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## 管理页面布局和边距
+## 管理页面布局
 
 控制页面布局和边距以实现最佳呈现效果：
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## 应用样式和主题

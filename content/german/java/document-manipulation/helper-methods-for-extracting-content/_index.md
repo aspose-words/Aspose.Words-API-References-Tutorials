@@ -39,7 +39,7 @@ Mit dieser Methode können Sie Absätze mit einem bestimmten Stil in Ihrem Word-
 
 ```java
 public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node endNode, boolean isInclusive) {
-    // Überprüfen Sie zunächst, ob die an diese Methode übergebenen Knoten gültig sind.
+    // Überprüfen Sie zunächst, ob die an diese Methode übergebenen Knoten zur Verwendung gültig sind.
     verifyParameterNodes(startNode, endNode);
     
     // Erstellen Sie eine Liste zum Speichern der extrahierten Knoten.

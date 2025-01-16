@@ -182,25 +182,11 @@ doc.save("AlignmentAndSpacingDocument.docx");
 बुलेट या नंबरिंग के साथ सूचियाँ बनाना एक सामान्य दस्तावेज़ स्वरूपण कार्य है। जावा के लिए Aspose.Words इसे सरल बनाता है। बुलेटेड सूची बनाने का तरीका यहाँ बताया गया है:
 
 ```java
-// नया दस्तावेज़ बनाएँ
-Document doc = new Document();
-
-// सूची बनाएं
-List list = new List(doc);
-
-// बुलेट के साथ सूची आइटम जोड़ें
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// सूची को दस्तावेज़ में जोड़ें
-doc.getFirstSection().getBody().appendChild(list);
-
-// दस्तावेज़ सहेजें
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 इस कोड में, हम तीन आइटमों वाली बुलेटेड सूची बनाते हैं।
@@ -210,24 +196,21 @@ doc.save("BulletedListDocument.docx");
 हाइपरलिंक आपके दस्तावेज़ों में अन्तरक्रियाशीलता जोड़ने के लिए आवश्यक हैं। Aspose.Words for Java आपको हाइपरलिंक आसानी से डालने की अनुमति देता है। यहाँ एक उदाहरण दिया गया है:
 
 ```java
-// नया दस्तावेज़ बनाएँ
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// एक पैराग्राफ़ बनाएँ
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// हाइपरलिंक बनाएं
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// एक हाइपरलिंक डालें और उसे कस्टम फ़ॉर्मेटिंग के साथ ज़ोर दें।
+// हाइपरलिंक एक क्लिक करने योग्य पाठ होगा जो हमें URL में निर्दिष्ट स्थान पर ले जाएगा।
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", गलत);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// दस्तावेज़ में पैराग्राफ़ जोड़ें
-doc.getFirstSection().getBody().appendChild(para);
-
-// दस्तावेज़ सहेजें
-doc.save("HyperlinkDocument.docx");
+// माइक्रोसॉफ्ट वर्ड में टेक्स्ट में दिए गए लिंक पर Ctrl + बायाँ-क्लिक करने से हम एक नए वेब ब्राउज़र विंडो के माध्यम से URL पर पहुँच जाएँगे।
+doc.save("InsertHyperlink.docx");
 ```
 
 यह कोड "Visit Example.com" पाठ के साथ "https://www.example.com" के लिए एक हाइपरलिंक सम्मिलित करता है।
@@ -237,23 +220,7 @@ doc.save("HyperlinkDocument.docx");
 दस्तावेज़ों में अक्सर छवियों और आकृतियों जैसे दृश्य तत्वों की आवश्यकता होती है। Aspose.Words for Java आपको छवियों और आकृतियों को सहजता से सम्मिलित करने में सक्षम बनाता है। यहाँ बताया गया है कि छवि कैसे जोड़ें:
 
 ```java
-// नया दस्तावेज़ बनाएँ
-Document doc = new Document();
-
-// एक पैराग्राफ़ बनाएँ
-Paragraph para = new Paragraph(doc);
-
-// किसी फ़ाइल से छवि लोड करें
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// दस्तावेज़ में पैराग्राफ़ जोड़ें
-doc.getFirstSection().getBody().appendChild(para);
-
-// दस्तावेज़ सहेजें
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 इस कोड में, हम एक फ़ाइल से एक छवि लोड करते हैं और इसे दस्तावेज़ में सम्मिलित करते हैं।
@@ -287,27 +254,20 @@ doc.save("PageLayoutDocument.docx");
 हेडर और फ़ुटर आपके दस्तावेज़ के प्रत्येक पृष्ठ पर सुसंगत जानकारी जोड़ने के लिए आवश्यक हैं। हेडर और फ़ुटर के साथ काम करने का तरीका यहां बताया गया है:
 
 ```java
-// नया दस्तावेज़ बनाएँ
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// पहले अनुभाग के शीर्षलेख और पादलेख तक पहुँचें
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// हेडर में सामग्री जोड़ें
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// फ़ुटर में सामग्री जोड़ें
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// दस्तावेज़ मुख्य भाग में सामग्री जोड़ें
+// दस्तावेज़ मुख्य भाग में सामग्री जोड़ें.
 // ...
 
-// दस्तावेज़ सहेजें
+// दस्तावेज़ सहेजें.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ doc.save("HeaderFooterDocument.docx");
 टेबल आपके दस्तावेज़ों में डेटा को व्यवस्थित करने और प्रस्तुत करने का एक शक्तिशाली तरीका है। जावा के लिए Aspose.Words टेबल के साथ काम करने के लिए व्यापक समर्थन प्रदान करता है। यहाँ टेबल बनाने का एक उदाहरण दिया गया है:
 
 ```java
-// नया दस्तावेज़ बनाएँ
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// 3 पंक्तियों और 3 स्तंभों वाली एक तालिका बनाएं
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// तालिका कक्षों में सामग्री जोड़ें
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//दस्तावेज़ में तालिका जोड़ें
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// दस्तावेज़ सहेजें
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// स्वरूपण बदलने से यह वर्तमान सेल पर लागू हो जाएगा,
+// और कोई भी नई कोशिकाएँ जो हम बाद में बिल्डर के साथ बनाते हैं।
+// इससे उन कोशिकाओं पर कोई प्रभाव नहीं पड़ेगा जिन्हें हमने पहले जोड़ा है।
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// ऊर्ध्वाधर पाठ को फिट करने के लिए पंक्ति की ऊंचाई बढ़ाएँ.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 इस कोड में, हम तीन पंक्तियों और तीन स्तंभों वाली एक सरल तालिका बनाते हैं।
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // दस्तावेज़ को PDF के रूप में सहेजें
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 यह कोड स्निपेट दस्तावेज़ को PDF फ़ाइल के रूप में सहेजता है।
@@ -393,7 +372,7 @@ builder.insertBreak(BreakType.PAGE_BREAK);
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### मैं टेक्स्ट को किस प्रकार फ़ॉर्मेट करूँ?
@@ -414,7 +393,7 @@ run.getFont().setItalic(true);  // पाठ को इटैलिक बना
 हां, Aspose.Words for Java, Java 11 और बाद के संस्करणों के साथ संगत है।
 
 ### मैं अपने दस्तावेज़ के विशिष्ट अनुभागों के लिए पृष्ठ मार्जिन कैसे निर्धारित कर सकता हूँ?
-आप अपने दस्तावेज़ के विशिष्ट अनुभागों के लिए पृष्ठ मार्जिन सेट कर सकते हैं`PageSetup` क्लास। यहाँ एक उदाहरण है:
+ आप अपने दस्तावेज़ के विशिष्ट अनुभागों के लिए पृष्ठ मार्जिन सेट कर सकते हैं`PageSetup` क्लास। यहाँ एक उदाहरण है:
 
 ```java
 Section section = doc.getSections().get(0); // पहला भाग प्राप्त करें

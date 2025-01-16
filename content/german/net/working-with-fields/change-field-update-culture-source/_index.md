@@ -83,7 +83,7 @@ Und da haben Sie es! Sie haben die Kulturquelle für die Feldaktualisierung in A
 ## Häufig gestellte Fragen
 
 ###  Was ist der Zweck der Festlegung der`LocaleId`?
-Der`LocaleId` Gibt die Kultureinstellungen für den Text an, die sich auf die Formatierung von Datumsangaben und anderen gebietsschemaabhängigen Daten auswirken.
+ Der`LocaleId` Gibt die Kultureinstellungen für den Text an, die sich auf die Formatierung von Datumsangaben und anderen gebietsschemaabhängigen Daten auswirken.
 
 ### Kann ich ein anderes Gebietsschema als Deutsch verwenden?
  Ja, Sie können die`LocaleId`zu jedem gültigen Gebietsschemabezeichner. Zum Beispiel 1033 für Englisch (USA).

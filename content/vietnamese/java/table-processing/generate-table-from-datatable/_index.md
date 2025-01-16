@@ -7,91 +7,203 @@ type: docs
 weight: 11
 url: /vi/java/table-processing/generate-table-from-datatable/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ trình bày cách tạo bảng từ DataTable bằng Aspose.Words for Java. DataTable là một cấu trúc dữ liệu cơ bản chứa dữ liệu dạng bảng và với các tính năng xử lý bảng mạnh mẽ của Aspose.Words, chúng ta có thể dễ dàng tạo một bảng được định dạng tốt trong tài liệu Word. Làm theo hướng dẫn từng bước bên dưới để tạo bảng và tích hợp bảng đó vào ứng dụng xử lý văn bản của bạn.
+Tạo bảng động từ các nguồn dữ liệu là một tác vụ phổ biến trong nhiều ứng dụng. Cho dù bạn đang tạo báo cáo, hóa đơn hay tóm tắt dữ liệu, khả năng điền dữ liệu vào bảng theo chương trình có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức. Trong hướng dẫn này, chúng ta sẽ khám phá cách tạo bảng từ DataTable bằng Aspose.Words for Java. Chúng ta sẽ chia nhỏ quy trình thành các bước dễ quản lý, đảm bảo bạn hiểu rõ từng phần.
 
-## Bước 1: Thiết lập môi trường phát triển của bạn
+## Điều kiện tiên quyết
 
-Trước khi bắt đầu, hãy đảm bảo bạn đáp ứng các điều kiện tiên quyết sau:
+Trước khi tìm hiểu về mã, hãy đảm bảo rằng bạn có mọi thứ cần thiết để bắt đầu:
 
-- Bộ công cụ phát triển Java (JDK) được cài đặt trên hệ thống của bạn.
-- Thư viện Aspose.Words cho Java đã được tải xuống và tham chiếu trong dự án của bạn.
+1.  Java Development Kit (JDK): Đảm bảo bạn đã cài đặt JDK trên máy của mình. Bạn có thể tải xuống từ[Trang web của Oracle](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+   
+2.  Aspose.Words cho Java: Bạn sẽ cần thư viện Aspose.Words. Bạn có thể tải xuống phiên bản mới nhất từ[Trang phát hành của Aspose](https://releases.aspose.com/words/java/).
 
-## Bước 2: Chuẩn bị DataTable của bạn
+3. IDE: Môi trường phát triển tích hợp (IDE) như IntelliJ IDEA hoặc Eclipse sẽ giúp việc viết mã dễ dàng hơn.
 
-Đầu tiên, bạn cần chuẩn bị DataTable với dữ liệu cần thiết. DataTable giống như một bảng ảo chứa các hàng và cột. Điền dữ liệu bạn muốn hiển thị trong bảng vào đó.
+4. Kiến thức cơ bản về Java: Sự quen thuộc với các khái niệm lập trình Java sẽ giúp bạn hiểu các đoạn mã tốt hơn.
 
-```java
-// Tạo một DataTable mẫu và thêm các hàng và cột
-DataTable dataTable = new DataTable(""Employees"");
-dataTable.getColumns().add(""ID"", Integer.class);
-dataTable.getColumns().add(""Name"", String.class);
-dataTable.getRows().add(101, ""John Doe"");
-dataTable.getRows().add(102, ""Jane Smith"");
-dataTable.getRows().add(103, ""Michael Johnson"");
-```
+5. Dữ liệu mẫu: Đối với hướng dẫn này, chúng tôi sẽ sử dụng tệp XML có tên "Danh sách people.xml" để mô phỏng nguồn dữ liệu. Bạn có thể tạo tệp này với dữ liệu mẫu để thử nghiệm.
 
-## Bước 3: Tạo và định dạng bảng
+## Bước 1: Tạo một tài liệu mới
 
-Bây giờ, chúng ta sẽ tạo một tài liệu mới và tạo bảng bằng cách sử dụng dữ liệu từ DataTable. Chúng ta cũng sẽ áp dụng định dạng để cải thiện giao diện của bảng.
+Đầu tiên, chúng ta cần tạo một tài liệu mới nơi bảng của chúng ta sẽ nằm. Đây là canvas cho công việc của chúng ta.
 
 ```java
-// Tạo một tài liệu mới
 Document doc = new Document();
-
-// Tạo một Bảng có cùng số cột với DataTable
-Table table = doc.getFirstSection().getBody().appendTable();
-table.ensureMinimum();
-
-// Thêm hàng tiêu đề với tên cột
-Row headerRow = table.getRows().get(0);
-for (DataColumn column : dataTable.getColumns()) {
-    Cell cell = headerRow.getCells().add(column.getColumnName());
-    cell.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
-}
-
-// Thêm hàng dữ liệu vào bảng
-for (DataRow dataRow : dataTable.getRows()) {
-    Row newRow = table.getRows().add();
-    for (DataColumn column : dataTable.getColumns()) {
-        Cell cell = newRow.getCells().add(dataRow.get(column.getColumnName()).toString());
-    }
-}
 ```
 
-## Bước 4: Lưu tài liệu
+ Ở đây, chúng ta khởi tạo một cái mới`Document` đối tượng. Đây sẽ là tài liệu làm việc để chúng ta xây dựng bảng.
 
-Cuối cùng, lưu tài liệu có bảng đã tạo vào vị trí mong muốn.
+## Bước 2: Khởi tạo DocumentBuilder
+
+ Tiếp theo, chúng ta sẽ sử dụng`DocumentBuilder` lớp cho phép chúng ta thao tác tài liệu dễ dàng hơn.
 
 ```java
-// Lưu tài liệu
-doc.save(""output.docx"");
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Bằng cách làm theo các bước này, bạn có thể tạo thành công một bảng từ DataTable và kết hợp nó vào ứng dụng xử lý tài liệu của mình bằng Aspose.Words for Java. Thư viện giàu tính năng này đơn giản hóa các tác vụ xử lý bảng và xử lý văn bản, cho phép bạn tạo các tài liệu chuyên nghiệp và được tổ chức tốt một cách dễ dàng.
+ Các`DocumentBuilder` đối tượng cung cấp các phương thức để chèn bảng, văn bản và các thành phần khác vào tài liệu.
+
+## Bước 3: Thiết lập hướng trang
+
+Vì chúng ta muốn bảng có chiều rộng nên chúng ta sẽ đặt hướng trang theo chiều ngang.
+
+```java
+doc.getFirstSection().getPageSetup().setOrientation(Orientation.LANDSCAPE);
+```
+
+Bước này rất quan trọng vì nó đảm bảo bảng của chúng ta vừa khít trên trang mà không bị cắt mất.
+
+## Bước 4: Tải dữ liệu từ XML
+
+ Bây giờ, chúng ta cần tải dữ liệu của mình từ tệp XML vào một`DataTable`. Đây là nguồn dữ liệu của chúng tôi.
+
+```java
+DataSet ds = new DataSet();
+ds.readXml(getMyDir() + "List of people.xml");
+DataTable dataTable = ds.getTables().get(0);
+```
+
+ Ở đây, chúng tôi đọc tệp XML và lấy bảng đầu tiên từ tập dữ liệu. Điều này`DataTable` sẽ lưu trữ dữ liệu chúng ta muốn hiển thị trong tài liệu.
+
+## Bước 5: Nhập Bảng từ DataTable
+
+Bây giờ đến phần thú vị: nhập dữ liệu vào tài liệu dưới dạng bảng.
+
+```java
+Table table = importTableFromDataTable(builder, dataTable, true);
+```
+
+ Chúng tôi gọi phương pháp này`importTableFromDataTable` , vượt qua`DocumentBuilder` , của chúng tôi`DataTable`và một giá trị boolean để chỉ ra liệu có nên bao gồm tiêu đề cột hay không.
+
+## Bước 6: Tạo kiểu cho bảng
+
+Khi đã có bảng, chúng ta có thể áp dụng một số kiểu dáng để làm cho nó trông đẹp mắt.
+
+```java
+table.setStyleIdentifier(StyleIdentifier.MEDIUM_LIST_2_ACCENT_1);
+table.setStyleOptions(TableStyleOptions.FIRST_ROW | TableStyleOptions.ROW_BANDS | TableStyleOptions.LAST_COLUMN);
+```
+
+Mã này áp dụng kiểu được xác định trước cho bảng, tăng cường tính hấp dẫn về mặt thị giác và khả năng đọc của bảng.
+
+## Bước 7: Loại bỏ các tế bào không mong muốn
+
+Nếu bạn có bất kỳ cột nào không muốn hiển thị, chẳng hạn như cột hình ảnh, bạn có thể dễ dàng xóa cột đó.
+
+```java
+table.getFirstRow().getLastCell().removeAllChildren();
+```
+
+Bước này đảm bảo rằng bảng của chúng ta chỉ hiển thị thông tin có liên quan.
+
+## Bước 8: Lưu tài liệu
+
+Cuối cùng, chúng ta lưu tài liệu với bảng đã tạo.
+
+```java
+doc.save(getArtifactsDir() + "WorkingWithTables.BuildTableFromDataTable.docx");
+```
+
+Dòng này lưu tài liệu vào thư mục đã chỉ định, cho phép bạn xem lại kết quả.
+
+## Phương pháp importTableFromDataTable
+
+ Chúng ta hãy xem xét kỹ hơn`importTableFromDataTable` phương pháp. Phương pháp này chịu trách nhiệm tạo cấu trúc bảng và điền dữ liệu vào đó.
+
+### Bước 1: Bắt đầu bảng
+
+Đầu tiên, chúng ta cần tạo một bảng mới trong tài liệu.
+
+```java
+Table table = builder.startTable();
+```
+
+Thao tác này sẽ khởi tạo một bảng mới trong tài liệu của chúng ta.
+
+### Bước 2: Thêm Tiêu đề Cột
+
+ Nếu chúng ta muốn bao gồm các tiêu đề cột, chúng ta kiểm tra`importColumnHeadings` lá cờ.
+
+```java
+if (importColumnHeadings) {
+    // Lưu trữ định dạng gốc
+    boolean boldValue = builder.getFont().getBold();
+    int paragraphAlignmentValue = builder.getParagraphFormat().getAlignment();
+
+    // Đặt định dạng tiêu đề
+    builder.getFont().setBold(true);
+    builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
+
+    // Chèn tên cột
+    for (DataColumn column : dataTable.getColumns()) {
+        builder.insertCell();
+        builder.writeln(column.getColumnName());
+    }
+
+    builder.endRow();
+
+    // Khôi phục định dạng ban đầu
+    builder.getFont().setBold(boldValue);
+    builder.getParagraphFormat().setAlignment(paragraphAlignmentValue);
+}
+```
+
+ Khối mã này định dạng hàng tiêu đề và chèn tên của các cột từ`DataTable`.
+
+### Bước 3: Điền dữ liệu vào bảng
+
+ Bây giờ, chúng ta lặp qua từng hàng của`DataTable` để chèn dữ liệu vào bảng.
+
+```java
+for (DataRow dataRow : (Iterable<DataRow>) dataTable.getRows()) {
+    for (Object item : dataRow.getItemArray()) {
+        builder.insertCell();
+        switch (item.getClass().getName()) {
+            case "DateTime":
+                Date dateTime = (Date) item;
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMMM d, yyyy");
+                builder.write(simpleDateFormat.format(dateTime));
+                break;
+            default:
+                builder.write(item.toString());
+                break;
+        }
+    }
+    builder.endRow();
+}
+```
+
+Trong phần này, chúng ta sẽ xử lý các kiểu dữ liệu khác nhau, định dạng ngày tháng một cách phù hợp trong khi chèn dữ liệu khác dưới dạng văn bản.
+
+### Bước 4: Kết thúc bảng
+
+Cuối cùng, chúng ta hoàn thiện bảng sau khi đã chèn đầy đủ dữ liệu.
+
+```java
+builder.endTable();
+```
+
+ Dòng này đánh dấu phần cuối của bảng của chúng tôi, cho phép`DocumentBuilder` để biết rằng chúng ta đã hoàn thành phần này.
 
 ## Phần kết luận
 
-Xin chúc mừng! Bạn đã học thành công cách tạo bảng từ DataTable bằng Aspose.Words for Java. Hướng dẫn từng bước này trình bày quy trình chuẩn bị DataTable, tạo và định dạng bảng trong tài liệu Word và lưu kết quả cuối cùng. Aspose.Words for Java cung cấp API mạnh mẽ và linh hoạt để xử lý bảng, giúp bạn dễ dàng quản lý dữ liệu dạng bảng và kết hợp dữ liệu đó vào các dự án xử lý văn bản của mình.
-
-Bằng cách tận dụng các khả năng của Aspose.Words, bạn có thể xử lý các cấu trúc bảng phức tạp, áp dụng định dạng tùy chỉnh và tích hợp các bảng vào tài liệu của mình một cách liền mạch. Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ tài liệu nào khác yêu cầu biểu diễn dạng bảng, Aspose.Words đều giúp bạn dễ dàng đạt được kết quả chuyên nghiệp.
-
-Hãy thoải mái khám phá thêm nhiều tính năng và chức năng khác do Aspose.Words for Java cung cấp để nâng cao khả năng xử lý tài liệu và hợp lý hóa các ứng dụng Java của bạn.
+Và bạn đã có nó! Bạn đã học thành công cách tạo bảng từ DataTable bằng Aspose.Words for Java. Bằng cách làm theo các bước này, bạn có thể dễ dàng tạo các bảng động trong tài liệu của mình dựa trên nhiều nguồn dữ liệu khác nhau. Cho dù bạn đang tạo báo cáo hay hóa đơn, phương pháp này sẽ hợp lý hóa quy trình làm việc của bạn và cải thiện quy trình tạo tài liệu của bạn.
 
 ## Câu hỏi thường gặp
 
-### 1. Tôi có thể tạo bảng bằng các ô được hợp nhất hoặc các bảng lồng nhau không?
+### Aspose.Words dành cho Java là gì?
+Aspose.Words for Java là một thư viện mạnh mẽ để tạo, xử lý và chuyển đổi các tài liệu Word theo cách lập trình.
 
-Có, với Aspose.Words for Java, bạn có thể tạo bảng với các ô được hợp nhất hoặc thậm chí lồng các bảng vào nhau. Điều này cho phép bạn thiết kế các bố cục bảng phức tạp và biểu diễn dữ liệu ở nhiều định dạng khác nhau.
+### Tôi có thể sử dụng Aspose.Words miễn phí không?
+ Có, Aspose cung cấp phiên bản dùng thử miễn phí. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/).
 
-### 2. Làm thế nào để tùy chỉnh giao diện của bảng được tạo?
+### Làm thế nào để định dạng bảng trong Aspose.Words?
+Bạn có thể áp dụng các kiểu bằng cách sử dụng các tùy chọn và mã định danh kiểu được xác định trước do thư viện cung cấp.
 
-Aspose.Words for Java cung cấp nhiều tùy chọn định dạng cho bảng, ô, hàng và cột. Bạn có thể thiết lập kiểu phông chữ, màu nền, đường viền và căn chỉnh để đạt được giao diện mong muốn cho bảng của mình.
+### Tôi có thể chèn những loại dữ liệu nào vào bảng?
+Bạn có thể chèn nhiều kiểu dữ liệu khác nhau, bao gồm văn bản, số và ngày tháng, có thể định dạng theo ý muốn.
 
-### 3. Tôi có thể xuất bảng đã tạo sang các định dạng khác không?
-
-Chắc chắn rồi! Aspose.Words for Java hỗ trợ xuất tài liệu Word sang nhiều định dạng khác nhau, bao gồm PDF, HTML, XPS, v.v. Bạn có thể dễ dàng chuyển đổi bảng đã tạo sang định dạng mong muốn bằng các tùy chọn xuất được cung cấp.
-
-### 4. Aspose.Words for Java có phù hợp để xử lý tài liệu quy mô lớn không?
-
-Có, Aspose.Words for Java được thiết kế để xử lý hiệu quả cả các tác vụ xử lý tài liệu quy mô nhỏ và lớn. Công cụ xử lý được tối ưu hóa của nó đảm bảo hiệu suất cao và xử lý đáng tin cậy ngay cả với các tài liệu lớn và cấu trúc bảng phức tạp.
+### Tôi có thể nhận hỗ trợ cho Aspose.Words ở đâu?
+ Bạn có thể tìm thấy sự hỗ trợ và đặt câu hỏi trên[Diễn đàn Aspose](https://forum.aspose.com/c/words/8/).

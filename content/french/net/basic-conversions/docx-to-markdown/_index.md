@@ -59,7 +59,7 @@ Aspose.Words prend en charge une large gamme de formats de documents, notamment 
 Oui, Aspose.Words fournit des API robustes pour manipuler des tableaux, des images, la mise en forme du texte et bien plus encore dans les documents.
 
 ### Où puis-je trouver une documentation détaillée sur Aspose.Words pour .NET ?
-Une documentation détaillée est disponible[ici](https://reference.aspose.com/words/net/).
+ Une documentation détaillée est disponible[ici](https://reference.aspose.com/words/net/).
 
 ### Comment puis-je obtenir une licence temporaire pour Aspose.Words pour .NET ?
 Vous pouvez obtenir un permis temporaire[ici](https://purchase.aspose.com/temporary-license/).

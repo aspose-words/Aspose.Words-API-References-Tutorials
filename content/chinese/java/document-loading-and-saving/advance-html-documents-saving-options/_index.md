@@ -29,7 +29,7 @@ public void exportRoundtripInformation() throws Exception {
 随着`exportFontsAsBase64`方法，您可以将文档中使用的字体导出为 HTML 中的 Base64 编码数据。这可确保 HTML 表示保留与原始 Word 文档相同的字体样式。
 
 ```java
-@Test
+
 public void exportFontsAsBase64() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -42,7 +42,7 @@ public void exportFontsAsBase64() throws Exception {
 这`exportResources`方法允许您指定 CSS 样式表的类型并导出字体资源。您还可以在 HTML 中设置资源文件夹和资源别名。
 
 ```java
-@Test
+
 public void exportResources() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -58,9 +58,20 @@ public void exportResources() throws Exception {
 这`convertMetafilesToEmfOrWmf`该方法允许您将文档中的元文件转换为 EMF 或 WMF 格式，确保兼容性和 HTML 中的流畅渲染。
 
 ```java
-@Test
+
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    //为简洁起见，未显示代码片段。
+
+	string dataDir = "Your Document Directory";
+    Document doc = new Document();
+	DocumentBuilder builder = new DocumentBuilder(doc);
+
+	builder.write("Here is an image as is: ");
+	builder.insertHtml(
+		"<img src=\"data:image/png;base64,\r\n                    iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP\r\n                    C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA\r\n                    AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J\r\n                    REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq\r\n                    ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0\r\n vr4MkhoXe0rZigAAAABJRU5ErkJggg==\" alt=\"红点\" />");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(); { saveOptions.setMetafileFormat(HtmlMetafileFormat.EMF_OR_WMF); }
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
 }
 ```
 
@@ -68,9 +79,19 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 使用`convertMetafilesToSvg`将元文件转换为 SVG 格式的方法。此格式非常适合在 HTML 文档中显示矢量图形。
 
 ```java
-@Test
+
 public void convertMetafilesToSvg() throws Exception {
-    //为简洁起见，未显示代码片段。
+	string dataDir = "Your Document Directory";
+    Document doc = new Document();
+	DocumentBuilder builder = new DocumentBuilder(doc);
+	
+	builder.write("Here is an SVG image: ");
+	builder.insertHtml(
+		"<svg height='210' width='500'>\r\n                <polygon points='100,10 40,198 190,78 10,78 160,198' \r\n                    style='fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;' />\r\n            </svg> ");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(); { saveOptions.setMetafileFormat(HtmlMetafileFormat.SVG); }
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 }
 ```
 
@@ -78,7 +99,7 @@ public void convertMetafilesToSvg() throws Exception {
 随着`addCssClassNamePrefix`方法，您可以在导出的 HTML 中为 CSS 类名添加前缀。这有助于防止与现有样式发生冲突。
 
 ```java
-@Test
+
 public void addCssClassNamePrefix() throws Exception {
     Document doc = new Document("Your Directory Path" + "Rendering.docx");
     HtmlSaveOptions saveOptions = new HtmlSaveOptions();
@@ -92,9 +113,17 @@ public void addCssClassNamePrefix() throws Exception {
 这`exportCidUrlsForMhtmlResources`方法用于将文档保存为 MHTML 格式。它允许导出资源的 Content-ID URL。
 
 ```java
-@Test
+
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    //为简洁起见，未显示代码片段。
+	string dataDir = "Your Document Directory";
+    Document doc = new Document(dataDir + "Content-ID.docx");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.MHTML);
+	{
+		saveOptions.setPrettyFormat(true); saveOptions.setExportCidUrlsForMhtmlResources(true);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
 }
 ```
 
@@ -102,9 +131,18 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 这`resolveFontNames`方法有助于在以 HTML 格式保存文档时解析字体名称，确保在不同平台上的一致渲染。
 
 ```java
-@Test
+
 public void resolveFontNames() throws Exception {
-    //为简洁起见，未显示代码片段。
+    
+	string dataDir = "Your Document Directory";
+	Document doc = new Document(dataDir + "Missing font.docx");
+
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.HTML);
+	{
+		saveOptions.setPrettyFormat(true); saveOptions.setResolveFontNames(true);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 }
 ```
 
@@ -112,16 +150,34 @@ public void resolveFontNames() throws Exception {
 这`exportTextInputFormFieldAsText`方法将表单字段导出为 HTML 中的纯文本，使其易于阅读和编辑。
 
 ```java
-@Test
+
 public void exportTextInputFormFieldAsText() throws Exception {
-    //为简洁起见，未显示代码片段。
+    
+	string dataDir = "Your Document Directory";
+	Document doc = new Document(dataDir + "Rendering.docx");
+
+	String imagesDir = Path.combine(dataDir, "Images");
+
+	//指定的文件夹必须存在并且为空。
+	if (Directory.exists(imagesDir))
+		Directory.delete(imagesDir, true);
+
+	Directory.createDirectory(imagesDir);
+
+	//设置一个选项将表单字段导出为纯文本，而不是 HTML 输入元素。
+	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.HTML);
+	{
+		saveOptions.setExportTextInputFormFieldAsText(true); saveOptions.setImagesFolder(imagesDir);
+	}
+
+	doc.save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
 }
 ```
 
-## 11. 结论
+## 结论
 在本教程中，我们探索了 Aspose.Words for Java 提供的高级 HTML 文档保存选项。这些选项使您可以对转换过程进行细粒度的控制，从而可以创建与原始 Word 文档非常相似的 HTML 文档。
 
-## 12. 常见问题解答
+## 常见问题解答
 以下是有关使用 Aspose.Words for Java 和 HTML 文档保存选项的一些常见问题：
 
 ### 问题 1：如何使用 Aspose.Words for Java 将 HTML 转换回 Word 格式？

@@ -15,7 +15,7 @@ Ahoj! Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes se bude
 
 Než se pustíme do toho, je několik věcí, které musíte mít na svém místě:
 
-1. Knihovna Aspose.Words for .NET: Pokud jste tak ještě neučinili, stáhněte si knihovnu Aspose.Words for .NET. Můžeš to chytit[zde](https://releases.aspose.com/words/net/).
+1. Knihovna Aspose.Words for .NET: Pokud jste tak ještě neučinili, stáhněte si knihovnu Aspose.Words for .NET. Můžete to chytit[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Ujistěte se, že máte nastavené vhodné vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Základní znalost programování v C# bude přínosem.
 

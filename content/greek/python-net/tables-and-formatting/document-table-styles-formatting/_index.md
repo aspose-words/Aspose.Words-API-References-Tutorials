@@ -23,7 +23,7 @@ url: /el/python-net/tables-and-formatting/document-table-styles-formatting/
 2. Εισαγωγή της βιβλιοθήκης: Εισαγάγετε τη βιβλιοθήκη Aspose.Words στο σενάριο Python χρησιμοποιώντας την ακόλουθη δήλωση εισαγωγής:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. Φόρτωση εγγράφου: Φορτώστε ένα υπάρχον έγγραφο ή δημιουργήστε ένα νέο χρησιμοποιώντας το Aspose.Words API.
@@ -35,7 +35,7 @@ url: /el/python-net/tables-and-formatting/document-table-styles-formatting/
 1.  Δημιουργία πίνακα: Χρησιμοποιήστε το`DocumentBuilder` class για να δημιουργήσετε έναν νέο πίνακα και να καθορίσετε τον αριθμό των γραμμών και στηλών.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ url: /el/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. Επένδυση κελιών: Προσθέστε γέμιση στα κελιά για βελτιωμένη απόσταση.
@@ -80,32 +80,8 @@ url: /el/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Τραπέζια στυλ με Aspose.Words
-
-Το Aspose.Words for Python παρέχει μια σειρά επιλογών στυλ για να κάνετε τα τραπέζια σας οπτικά ελκυστικά:
-
-1. Στυλ τραπεζιού: Εφαρμόστε προκαθορισμένα στυλ τραπεζιού για να επιτύχετε μια επαγγελματική εμφάνιση.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. Χρώμα φόντου κελιού: Αλλάξτε το χρώμα φόντου κελιού για να επισημάνετε συγκεκριμένα δεδομένα.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. Μορφοποίηση γραμματοσειράς: Προσαρμόστε το στυλ, το μέγεθος και το χρώμα γραμματοσειράς για καλύτερη αναγνωσιμότητα.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## Συγχώνευση και διαίρεση κελιών για σύνθετες διατάξεις
@@ -115,30 +91,14 @@ url: /el/python-net/tables-and-formatting/document-table-styles-formatting/
 1. Συγχώνευση κελιών: Συγχώνευση πολλαπλών κελιών για να δημιουργήσετε ένα μόνο μεγαλύτερο κελί.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. Split Cells: Διαχωρίστε τα κελιά ξανά στα επιμέρους συστατικά τους.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## Προσαρμογή ύψης και πλάτης σειρών και στηλών
-
-Βελτιστοποιήστε τις διαστάσεις γραμμής και στήλης για μια ισορροπημένη διάταξη πίνακα:
-
-1. Προσαρμογή ύψους σειράς: Τροποποιήστε το ύψος της σειράς με βάση το περιεχόμενο.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. Προσαρμογή πλάτους στήλης: Προσαρμόστε αυτόματα το πλάτος της στήλης για να ταιριάζει στο περιεχόμενο.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## Προσθήκη περιγραμμάτων και σκίασης σε πίνακες
@@ -148,13 +108,13 @@ url: /el/python-net/tables-and-formatting/document-table-styles-formatting/
 1. Περιγράμματα: Προσαρμόστε τα περιγράμματα για πίνακες και κελιά.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. Σκίαση: Εφαρμόστε σκίαση στα κελιά για ένα οπτικά ελκυστικό αποτέλεσμα.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## Εργασία με περιεχόμενο κυψέλης και ευθυγράμμιση
@@ -171,7 +131,7 @@ url: /el/python-net/tables-and-formatting/document-table-styles-formatting/
 2. Ευθυγράμμιση κειμένου: Ευθυγραμμίστε το κείμενο κελιού όπως απαιτείται.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## Χειρισμός κεφαλίδων και υποσέλιδων πίνακα
@@ -188,26 +148,10 @@ url: /el/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## Αυτόματη προσαρμογή διάταξης πίνακα
-
-Βεβαιωθείτε ότι η διάταξη του πίνακα προσαρμόζεται αυτόματα με βάση το περιεχόμενο:
-
-1. Αυτόματη προσαρμογή στο παράθυρο: Επιτρέψτε στον πίνακα να χωράει στο πλάτος της σελίδας.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. Αυτόματη αλλαγή μεγέθους κελιών: Ενεργοποιήστε την αυτόματη αλλαγή μεγέθους κελιών για την προσαρμογή περιεχομένου.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## Εξαγωγή πινάκων σε διαφορετικές μορφές
 
 Μόλις το τραπέζι σας είναι έτοιμο, μπορείτε να το εξαγάγετε σε διάφορες μορφές, όπως PDF ή DOCX:
@@ -215,21 +159,15 @@ url: /el/python-net/tables-and-formatting/document-table-styles-formatting/
 1. Αποθήκευση ως PDF: Αποθηκεύστε το έγγραφο με τον πίνακα ως αρχείο PDF.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. Αποθήκευση ως DOCX: Αποθηκεύστε το έγγραφο ως αρχείο DOCX.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## Αντιμετώπιση προβλημάτων και συμβουλές για αποτελεσματική διαχείριση πίνακα
-
-- Εάν οι πίνακες εμφανίζονται παραμορφωμένοι, ελέγξτε για εσφαλμένα πλάτη στηλών ή ύψη σειρών.
-- Δοκιμή απόδοσης πίνακα σε διαφορετικές μορφές για να διασφαλιστεί η συνέπεια.
-- Για πολύπλοκες διατάξεις, σχεδιάστε προσεκτικά τη συγχώνευση και τον διαχωρισμό κελιών.
-
+	
 ## Σύναψη
 
 Το Aspose.Words for Python προσφέρει μια ολοκληρωμένη εργαλειοθήκη για τη δημιουργία, το στυλ και τη μορφοποίηση πινάκων εγγράφων. Ακολουθώντας τα βήματα που περιγράφονται σε αυτό το άρθρο, μπορείτε να διαχειριστείτε αποτελεσματικά τους πίνακες στα έγγραφά σας, να προσαρμόσετε την εμφάνισή τους και να τους εξαγάγετε σε διάφορες μορφές. Αξιοποιήστε τη δύναμη του Aspose.Words για να βελτιώσετε τις παρουσιάσεις των εγγράφων σας και να παρέχετε σαφείς, οπτικά ελκυστικές πληροφορίες στους αναγνώστες σας.

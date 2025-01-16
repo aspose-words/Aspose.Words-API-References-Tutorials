@@ -14,7 +14,7 @@ Vítejte ve světě výukových programů Aspose.Words, kde se ponoříme do obl
 
 ## Význam možností a nastavení dokumentu
 
-oblasti vytváření dokumentů hrají možnosti a nastavení klíčovou roli při přizpůsobování vzhledu, struktury a chování vašeho obsahu. Od rozvržení stránky po styly písem, od záhlaví a zápatí po formátování odstavců, každý aspekt přispívá k celkové čitelnosti a vizuální přitažlivosti vašich dokumentů. Správně nakonfigurované možnosti a nastavení zajišťují konzistenci, shodu se standardy a soulad s pokyny pro branding vaší organizace. Ať už vytváříte právní dokumenty, obchodní zprávy nebo vzdělávací materiály, zvládnutí těchto nastavení je zásadní.
+V oblasti vytváření dokumentů hrají možnosti a nastavení klíčovou roli při přizpůsobování vzhledu, struktury a chování vašeho obsahu. Od rozvržení stránky po styly písem, od záhlaví a zápatí po formátování odstavců, každý aspekt přispívá k celkové čitelnosti a vizuální přitažlivosti vašich dokumentů. Správně nakonfigurované možnosti a nastavení zajišťují konzistenci, shodu se standardy a soulad s pokyny pro branding vaší organizace. Ať už vytváříte právní dokumenty, obchodní zprávy nebo vzdělávací materiály, zvládnutí těchto nastavení je zásadní.
 
 ## Co se naučíte
 
@@ -32,7 +32,7 @@ V této sérii výukových programů vás provedeme řadou možností a nastaven
 
 Na konci této série budete mít dovednosti vytvářet dobře strukturované, vizuálně přitažlivé dokumenty s přizpůsobeným nastavením, které odpovídá vašim konkrétním požadavkům.
 
-## Výukové programy pro možnosti a nastavení dokumentu
+## Výukové programy Možnosti a nastavení dokumentu
 ### [Pokročilé techniky spojování a připojování dokumentů](./join-append-documents/)
 Naučte se pokročilé techniky pro slučování a připojování dokumentů pomocí Aspose.Words v Pythonu. Podrobný průvodce s příklady kódu.
 ### [Jemné doladění možností dokumentu a nastavení pro efektivitu](./manage-document-options-settings/)

@@ -47,7 +47,7 @@ Buka lingkungan pengembangan Anda (seperti Visual Studio) dan buat proyek C# bar
 
 ### Buat Dokumen Baru
 
- Dalam file program utama Anda, mulailah dengan membuat instance baru dari`Document`kelas. Ini akan menjadi kanvas kosong kita.
+ Dalam file program utama Anda, mulailah dengan membuat instance baru dari`Document` kelas. Ini akan menjadi kanvas kosong kita.
 
 ```csharp
 Document doc = new Document();
@@ -113,7 +113,7 @@ Aspose.Words untuk .NET adalah pustaka hebat yang memungkinkan pengembang untuk 
 
 ### Bagaimana cara memulai dengan Aspose.Words untuk .NET?
 
- Anda dapat memulai dengan mengunduh perpustakaan dari[situs web](https://releases.aspose.com/words/net/) dan menambahkannya ke proyek .NET Anda.
+Anda dapat memulai dengan mengunduh perpustakaan dari[situs web](https://releases.aspose.com/words/net/) dan menambahkannya ke proyek .NET Anda.
 
 ### Dapatkah saya menggunakan Aspose.Words secara gratis?
 
@@ -121,8 +121,8 @@ Aspose.Words untuk .NET adalah pustaka hebat yang memungkinkan pengembang untuk 
 
 ### Di mana saya dapat menemukan lebih banyak tutorial tentang Aspose.Words untuk .NET?
 
-Itu[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) adalah tempat yang bagus untuk menemukan tutorial dan contoh terperinci.
+ Itu[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) adalah tempat yang bagus untuk menemukan tutorial dan contoh terperinci.
 
 ### Bagaimana saya bisa mendapatkan dukungan jika saya mengalami masalah?
 
-Anda bisa mendapatkan dukungan dengan mengunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).
+ Anda bisa mendapatkan dukungan dengan mengunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).

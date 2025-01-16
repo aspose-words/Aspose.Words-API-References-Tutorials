@@ -26,12 +26,8 @@ Opanuj przetwarzanie dokumentów Word za pomocą Aspose.Words dla Pythona. Samou
 Opanuj tworzenie dokumentów za pomocą Aspose.Words dla Pythona. Twórz dynamiczne dokumenty, dostosowuj formatowanie i usprawniaj przetwarzanie dokumentów Word.
 ### [Automatyzacja słów](./word-automation/)
 Zautomatyzuj zadania przetwarzania tekstu za pomocą Aspose.Words dla Pythona. Usprawnij zarządzanie dokumentami i zwiększ wydajność automatyzacji tekstu.
-### [Inteligencja dokumentów](./document-intelligence/)
-Odblokuj cenne spostrzeżenia z dokumentów dzięki Aspose.Words for Python's Document Intelligence. Zautomatyzuj analizę, ekstrakcję tekstu i klasyfikację.
 ### [Konwersja dokumentów](./document-conversion/)
 Skutecznie konwertuj dokumenty między formatami za pomocą Aspose.Words for Python. Usprawnij przetwarzanie dokumentów Word i uprość zadania związane z zarządzaniem dokumentami. 
-### [Ochrona dokumentów](./document-protection/)
-Zabezpiecz swoje dokumenty za pomocą Aspose.Words for Python! Wdróż szyfrowanie haseł, uprawnienia użytkowników i podpisy cyfrowe, aby zapewnić solidną ochronę dokumentów.
 ### [Struktura dokumentu i manipulacja treścią](./document-structure-and-content-manipulation/)
 Poznaj samouczki Aspose.Words dla Pythona i .NET, skupiające się na strukturze dokumentu i manipulacji treścią. Dowiedz się, jak sprawnie poruszać się, wyodrębniać i modyfikować elementy dokumentu. Dostarczono przykłady kodu źródłowego.
 ### [Ekstrakcja i manipulacja treścią](./content-extraction-and-manipulation/)
@@ -42,7 +38,5 @@ Odkryj kompleksowe samouczki dotyczące łączenia i porównywania dokumentów z
 Poznaj samouczki Aspose.Words dotyczące dzielenia i formatowania dokumentów w Pythonie i .NET. Naucz się dzielić i formatować dokumenty wydajnie, usprawniając zadania przetwarzania dokumentów. 
 ### [Opcje i ustawienia dokumentu](./document-options-and-settings/)
 Przeglądaj samouczki Aspose.Words dotyczące opcji i ustawień dokumentów w Pythonie i .NET. Naucz się optymalizować tworzenie i formatowanie dokumentów, korzystając z instrukcji krok po kroku i przykładów kodu źródłowego.
-### [Wizualizacja i formatowanie danych](./data-visualization-and-formatting/)
-Odkryj samouczki Aspose.Words dotyczące wizualizacji i formatowania danych w Pythonie i .NET. Naucz się skutecznie prezentować dane, tworzyć oszałamiające raporty i formatować dokumenty programowo.
 ### [Tabele i formatowanie](./tables-and-formatting/)
 Zanurz się w samouczkach Aspose.Words dotyczących tabel i formatowania w aplikacjach Python i .NET. Naucz się tworzyć, dostosowywać i stylizować tabele, aby uzyskać wizualnie atrakcyjne dokumenty. 

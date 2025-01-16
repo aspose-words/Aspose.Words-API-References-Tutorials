@@ -16,7 +16,7 @@ Jeśli kiedykolwiek chciałeś chronić dokument Worda, ale nadal pozwolić na e
 Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
 1.  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz[Tutaj](https://releases.aspose.com/words/net/).
-2.  Ważna licencja Aspose: Możesz uzyskać tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
+2. Ważna licencja Aspose: Możesz uzyskać tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Każda nowsza wersja powinna działać prawidłowo.
 4. Podstawowa znajomość języków C# i .NET. Ułatwi Ci to śledzenie kodu.
 
@@ -112,7 +112,7 @@ Na koniec zapiszemy dokument z zastosowaną ochroną i obszarami edytowalnymi.
 
 ## Wniosek
 
-masz! Udało Ci się utworzyć nieograniczone obszary edytowalne w dokumencie Word przy użyciu Aspose.Words dla .NET. Ta funkcja jest niezwykle przydatna w środowiskach współpracy, w których pewne części dokumentu muszą pozostać niezmienione, a inne można edytować. 
+I masz! Udało Ci się utworzyć nieograniczone obszary edytowalne w dokumencie Word przy użyciu Aspose.Words dla .NET. Ta funkcja jest niezwykle przydatna w środowiskach współpracy, w których pewne części dokumentu muszą pozostać niezmienione, a inne można edytować. 
 
  Eksperymentuj z bardziej złożonymi scenariuszami i różnymi poziomami ochrony, aby w pełni wykorzystać Aspose.Words. Jeśli masz jakieś pytania lub napotkasz problemy, nie wahaj się sprawdzić[dokumentacja](https://reference.aspose.com/words/net/) lub skontaktuj się z[wsparcie](https://forum.aspose.com/c/words/8).
 

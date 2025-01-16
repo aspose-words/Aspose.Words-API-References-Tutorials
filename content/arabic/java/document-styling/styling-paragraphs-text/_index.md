@@ -182,25 +182,11 @@ doc.save("AlignmentAndSpacingDocument.docx");
 إن إنشاء قوائم تحتوي على نقاط أو أرقام هو مهمة شائعة في تنسيق المستندات. يجعل Aspose.Words for Java هذه المهمة سهلة وبسيطة. إليك كيفية إنشاء قائمة نقطية:
 
 ```java
-// إنشاء مستند جديد
-Document doc = new Document();
-
-// إنشاء قائمة
-List list = new List(doc);
-
-// إضافة عناصر القائمة باستخدام النقاط
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// أضف القائمة إلى المستند
-doc.getFirstSection().getBody().appendChild(list);
-
-// حفظ المستند
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 في هذا الكود نقوم بإنشاء قائمة نقطية تحتوي على ثلاثة عناصر.
@@ -210,24 +196,21 @@ doc.save("BulletedListDocument.docx");
 تعتبر الارتباطات التشعبية ضرورية لإضافة التفاعل إلى مستنداتك. يتيح لك برنامج Aspose.Words for Java إدراج الارتباطات التشعبية بسهولة. فيما يلي مثال:
 
 ```java
-// إنشاء مستند جديد
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// إنشاء فقرة
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// إنشاء ارتباط تشعبي
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// قم بإدراج ارتباط تشعبي وتأكيده باستخدام التنسيق المخصص.
+// سيكون الرابط التشعبي عبارة عن جزء نصي قابل للنقر يأخذنا إلى الموقع المحدد في عنوان URL.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com"، خطأ)؛
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// أضف الفقرة إلى المستند
-doc.getFirstSection().getBody().appendChild(para);
-
-// حفظ المستند
-doc.save("HyperlinkDocument.docx");
+// الضغط على Ctrl + النقر بزر الماوس الأيسر على الرابط الموجود في النص في Microsoft Word سيأخذنا إلى عنوان URL عبر نافذة متصفح ويب جديدة.
+doc.save("InsertHyperlink.docx");
 ```
 
 يقوم هذا الكود بإدراج ارتباط تشعبي إلى "https://www.example.com" مع النص "زيارة Example.com".
@@ -237,23 +220,7 @@ doc.save("HyperlinkDocument.docx");
 تتطلب المستندات غالبًا عناصر مرئية مثل الصور والأشكال. يتيح لك Aspose.Words for Java إدراج الصور والأشكال بسلاسة. وإليك كيفية إضافة صورة:
 
 ```java
-// إنشاء مستند جديد
-Document doc = new Document();
-
-// إنشاء فقرة
-Paragraph para = new Paragraph(doc);
-
-// تحميل صورة من ملف
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// أضف الفقرة إلى المستند
-doc.getFirstSection().getBody().appendChild(para);
-
-// حفظ المستند
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 في هذا الكود نقوم بتحميل صورة من ملف وإدراجها في المستند.
@@ -287,27 +254,20 @@ doc.save("PageLayoutDocument.docx");
 تعد الرؤوس والتذييلات ضرورية لإضافة معلومات متسقة إلى كل صفحة من المستند. فيما يلي كيفية العمل مع الرؤوس والتذييلات:
 
 ```java
-// إنشاء مستند جديد
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// الوصول إلى رأس وتذييل القسم الأول
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// إضافة محتوى إلى العنوان
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// إضافة محتوى إلى التذييل
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// إضافة محتوى إلى نص المستند
+// إضافة المحتوى إلى نص المستند.
 // ...
 
-// حفظ المستند
+// احفظ المستند.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ doc.save("HeaderFooterDocument.docx");
 تُعد الجداول وسيلة فعّالة لتنظيم البيانات وتقديمها في مستنداتك. يوفر برنامج Aspose.Words for Java دعمًا واسع النطاق للعمل مع الجداول. فيما يلي مثال لإنشاء جدول:
 
 ```java
-// إنشاء مستند جديد
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// إنشاء جدول يحتوي على 3 صفوف و3 أعمدة
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// إضافة محتوى إلى خلايا الجدول
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//أضف الجدول إلى المستند
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// حفظ المستند
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// سيؤدي تغيير التنسيق إلى تطبيقه على الخلية الحالية،
+// وأي خلايا جديدة نقوم بإنشائها باستخدام الباني بعد ذلك.
+// لن يؤثر هذا على الخلايا التي أضفناها مسبقًا.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// قم بزيادة ارتفاع الصف ليتناسب مع النص الرأسي.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 في هذا الكود نقوم بإنشاء جدول بسيط يحتوي على ثلاثة صفوف وثلاثة أعمدة.
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // حفظ المستند بصيغة PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 يقوم مقتطف التعليمات البرمجية هذا بحفظ المستند كملف PDF.
@@ -393,7 +372,7 @@ builder.insertBreak(BreakType.PAGE_BREAK);
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### كيف أقوم بتنسيق النص كـ
@@ -414,7 +393,7 @@ run.getFont().setItalic(true);  // جعل النص مائلا
 نعم، Aspose.Words for Java متوافق مع Java 11 والإصدارات الأحدث.
 
 ### كيف يمكنني تعيين هوامش الصفحة لأقسام محددة من مستندي؟
-يمكنك تعيين هوامش الصفحات لأقسام محددة من مستندك باستخدام`PageSetup` الصف. فيما يلي مثال:
+ يمكنك تعيين هوامش الصفحات لأقسام محددة من مستندك باستخدام`PageSetup` الصف. فيما يلي مثال:
 
 ```java
 Section section = doc.getSections().get(0); // احصل على القسم الأول

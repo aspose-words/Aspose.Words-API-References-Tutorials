@@ -52,7 +52,7 @@ Ora impostiamo le opzioni del contorno.
 
 ### Imposta livelli struttura titoli
 
-IL`HeadingsOutlineLevels` proprietà definisce quanti livelli di titoli devono essere inclusi nello schema PDF. Ad esempio, se lo imposti a 3, includerà fino a tre livelli di titoli nello schema PDF.
+ IL`HeadingsOutlineLevels` proprietà definisce quanti livelli di titoli devono essere inclusi nello schema PDF. Ad esempio, se lo imposti a 3, includerà fino a tre livelli di titoli nello schema PDF.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Imposta livelli di struttura espansa
 
-IL`ExpandedOutlineLevels`proprietà controlla quanti livelli della struttura devono essere espansi di default quando si apre il PDF. Impostando questo su 1 si espanderanno le intestazioni di livello superiore, dando una chiara visione delle sezioni principali.
+ IL`ExpandedOutlineLevels`proprietà controlla quanti livelli della struttura devono essere espansi di default quando si apre il PDF. Impostando questo su 1 si espanderanno le intestazioni di livello superiore, dando una chiara visione delle sezioni principali.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

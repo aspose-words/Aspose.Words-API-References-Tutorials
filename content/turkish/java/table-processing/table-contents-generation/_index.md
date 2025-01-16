@@ -7,128 +7,137 @@ type: docs
 weight: 14
 url: /tr/java/table-processing/table-contents-generation/
 ---
-
-Java için Aspose.Words kullanarak İçindekiler Tablosu (TOC) oluşturmada ustalaşmak için bir yolculuğa çıkmaya hazır mısınız? Bu kapsamlı kılavuzda, dinamik ve görsel olarak çekici TOC'leri zahmetsizce oluşturma sanatını keşfedeceğiz. Bu özelliği Java uygulamalarınızda sorunsuz bir şekilde uygulamak için gereken bilgi ve becerilere sahip olacaksınız. Hadi, hemen başlayalım!
-
 ## giriiş
 
-İçindekiler Tablosu (TOC), iyi yapılandırılmış herhangi bir belgenin temel bir bileşenidir. Okuyuculara bir yol haritası sunarak uzun belgelerde kolayca gezinmelerini sağlar. Aspose.Words for Java, Java uygulamalarında TOC oluşturmayı basitleştiren güçlü bir API'dir. Bu adım adım kılavuzda, Aspose.Words for Java kullanarak dinamik olarak TOC oluşturmak için bilmeniz gereken her şeyi ele alacağız.
+Word belgelerinizde dinamik ve profesyonel görünümlü bir İçindekiler Tablosu (TOC) oluşturmakta hiç zorluk çektiniz mi? Başka yere bakmayın! Aspose.Words for Java ile tüm süreci otomatikleştirebilir, zamandan tasarruf edebilir ve doğruluğu garantileyebilirsiniz. Kapsamlı bir rapor veya akademik bir makale oluşturuyor olun, bu eğitim size Java ile programatik olarak bir TOC oluşturma konusunda yol gösterecektir. Başlamaya hazır mısınız? Hadi başlayalım!
 
-## Java için Aspose.Words'e Başlarken
+## Ön koşullar
 
-İçindekiler oluşturmanın ayrıntılarına dalmadan önce, ortamımızı ayarlayalım ve Java için Aspose.Words'ü tanıyalım.
+Kodlamaya başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-### Ortamınızı Kurma
+1.  Java Geliştirme Kiti (JDK): Sisteminize kuruludur. Buradan indirebilirsiniz[Oracle'ın web sitesi](https://www.oracle.com/java/technologies/javase-downloads.html).
+2.  Aspose.Words for Java Kütüphanesi: En son sürümü şu adresten indirin:[yayın sayfası](https://releases.aspose.com/words/java/).
+3. Entegre Geliştirme Ortamı (IDE): IntelliJ IDEA, Eclipse veya NetBeans gibi.
+4.  Geçici Lisans Aspose: Değerlendirme sınırlamalarından kaçınmak için,[geçici lisans](https://purchase.aspose.com/temporary-license/).
 
-Başlamak için Aspose.Words for Java'nın yüklü olduğundan emin olun. Bunu web sitesinden indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+## Paketleri İçe Aktar
 
-### Yeni Bir Java Projesi Oluşturma
-
-En sevdiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturarak başlayın.
-
-### Projenize Aspose.Words for Java'yı Ekleme
-
-Aspose.Words for Java kütüphanesini bağımlılıklarınıza ekleyerek projenize ekleyin.
-
-### Aspose.Words başlatılıyor
-
-Java kodunuzda Aspose.Words'ü başlatarak çalışmaya başlayabilirsiniz.
+Aspose.Words for Java'yı etkili bir şekilde kullanmak için, gerekli sınıfları içe aktardığınızdan emin olun. İşte içe aktarımlar:
 
 ```java
-// Aspose.Words'ü Başlat
-com.aspose.words.Document doc = new com.aspose.words.Document();
+import com.aspose.words.*;
 ```
 
-## İçindekiler Tablosunu (TOC) Anlamak
+Word belgenizde dinamik İçindekiler tablosu oluşturmak için şu adımları izleyin.
 
-İçindekiler tablosu oluşturmaya başlamadan önce, bunların ne olduğu ve nasıl çalıştığı konusunda daha derin bir anlayışa sahip olalım.
+## Adım 1: Belgeyi ve Belge Oluşturucuyu Başlatın
 
-### İçindekiler Nedir?
+ İlk adım yeni bir belge oluşturmak ve kullanmaktır`DocumentBuilder` onu manipüle etmek için sınıf.
 
-İçindekiler Tablosu, bir belgenin başında görünen ve belge içindeki çeşitli bölümlere veya bölümlere bağlantılar sağlayan bir listedir. Okuyucular için yararlı bir gezinme aracı görevi görür.
-
-### İçindekiler Oluşturma Nasıl Çalışır?
-
-İçindekiler oluşturma, belgenizdeki belirli başlıkları veya içeriği tanımlamayı ve bu bölümlere bağlantılar oluşturmayı içerir. Aspose.Words for Java, önceden tanımlanmış kurallara dayalı İçindekiler oluşturmayı otomatikleştirerek bu süreci basitleştirir.
-
-## Temel İçindekiler Tablosu Oluşturma
-
-Artık sağlam bir temele sahip olduğumuza göre, Aspose.Words for Java'yı kullanarak basit bir İçindekiler tablosu oluşturalım.
 
 ```java
-// Yeni bir İçindekiler Tablosu Oluştur
-com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-tocField.update();
+string dataDir = "Your Document Directory";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Yukarıdaki kod belgenizde temel bir TOC oluşturur. Seviyeleri, biçimlendirmeyi ve daha fazlasını belirterek daha da özelleştirebilirsiniz.
+- `Document`: Word belgesini temsil eder.
+- `DocumentBuilder`: Belgenin kolayca düzenlenmesini sağlayan yardımcı sınıf.
 
-## Gelişmiş İçindekiler Özelleştirmesi
+## Adım 2: İçindekiler Tablosunu Ekleyin
 
-Java için Aspose.Words, TOC'larınız için kapsamlı özelleştirme seçenekleri sunar. Bazı gelişmiş özellikleri inceleyelim:
+Şimdi İçindekiler bölümünü belgenin başına ekleyelim.
 
-### İçindekiler Stillerini Özelleştirme
-
-İçindekiler stillerinizi belgenizin estetiğine uyacak şekilde tanımlayabilirsiniz.
 
 ```java
-// İçindekiler stillerini özelleştir
-com.aspose.words.Style tocStyle = doc.getStyles().add(StyleType.PARAGRAPH, "MyTOCStyle");
-tocStyle.getFont().setSize(16);
-tocStyle.getFont().setBold(true);
+builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+builder.insertBreak(BreakType.PAGE_BREAK);
 ```
 
-### Belirli Başlıkları Dahil Etmek
+- `insertTableOfContents`: İçindekiler alanı ekler. Parametreler şunları belirtir:
+  - `\o "1-3"`: 1. seviyeden 3. seviyeye kadar olan başlıkları ekleyin.
+  - `\h`: Girişlere köprü metni ekleyin.
+  - `\z`: Web belgelerinde sayfa numaralarını gizle.
+  - `\u`: Köprü metinlerinin stillerini koru.
+- `insertBreak`: İçindekiler tablosundan sonra sayfa sonu ekler.
 
-İçindekiler tablonuzda hangi başlıkların yer alacağını, ana hat düzeylerini belirterek seçebilirsiniz.
+## Adım 3: İçindekiler Tablosunu Doldurmak İçin Başlıklar Ekleyin
+
+İçindekiler tablosunu doldurmak için başlık stilleri içeren paragraflar eklemeniz gerekir.
+
 
 ```java
-// Yalnızca belirli başlıkları ekleyin
-tocField.setCode("TOC \\o \"1-3\" \\h \\z");
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 1");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_2);
+builder.writeln("Heading 1.1");
+builder.writeln("Heading 1.2");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 2");
 ```
 
-## İçindekiler Oluşturma için Kaynak Kodunun Eklenmesi
+- `setStyleIdentifier` : Paragraf stilini belirli bir başlık düzeyine ayarlar (örneğin,`HEADING_1`, `HEADING_2`).
+- `writeln`:Belgeye belirtilen stilde metin ekler.
 
-Java uygulamalarınızda TOC üretimini otomatikleştirmek için kaynak kodunu entegre ederek bunu bir adım öteye taşıyalım.
+## Adım 4: İç İçe Başlıklar Ekleyin
+
+İçindekiler düzeylerini göstermek için iç içe başlıklar ekleyin.
+
 
 ```java
-// Java'da TOC oluşturmayı otomatikleştirin
-public void generateTOC() {
-    com.aspose.words.Document doc = new com.aspose.words.Document();
-    com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-    tocField.update();
-    // Daha fazla özelleştirmeyi buraya ekleyin
-}
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_3);
+builder.writeln("Heading 3.1.1");
+builder.writeln("Heading 3.1.2");
+builder.writeln("Heading 3.1.3");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_4);
+builder.writeln("Heading 3.1.3.1");
+builder.writeln("Heading 3.1.3.2");
 ```
 
-İçindekiler (TOC) üretimini bir metot içerisine yerleştirerek projelerinize kolaylıkla dahil edebilirsiniz.
+- İçindekiler tablosunda hiyerarşiyi göstermek için daha derin düzeylerde başlıklar ekleyin.
 
-## SSS
+## Adım 5: İçindekiler Alanlarını Güncelleyin
 
-### Mevcut bir İçindekiler tablosunu nasıl güncelleyebilirim?
+En son başlıkların görüntülenebilmesi için İçindekiler alanının güncellenmesi gerekmektedir.
 
-Belgenizdeki mevcut bir İçindekiler tablosunu güncellemek için, üzerine sağ tıklayın ve "Alanı Güncelle"yi seçin. Aspose.Words for Java, belgenizin başlıklarındaki değişikliklere göre İçindekiler tablosunu yenileyecektir.
 
-### Tek bir belgede birden fazla İçindekiler tablosu oluşturabilir miyim?
+```java
+doc.updateFields();
+```
 
-Evet, tek bir belgede birden fazla TOC üretebilirsiniz. Her TOC için farklı alan kodları kullanın ve ayarlarını gerektiği gibi özelleştirin.
+- `updateFields`: Belgedeki tüm alanları yeniler ve İçindekiler tablosunun eklenen başlıkları yansıtmasını sağlar.
 
-### Aspose.Words for Java hem küçük hem de büyük belgeler için uygun mudur?
+## Adım 6: Belgeyi Kaydedin
 
-Kesinlikle! Aspose.Words for Java çok yönlüdür ve küçük raporlardan kapsamlı romanlara kadar çeşitli boyutlardaki belgeleri işleyebilir.
+Son olarak belgeyi istediğiniz formatta kaydedin.
 
-### İçindekiler girişlerimin görünümünü özelleştirebilir miyim?
 
-Elbette! İçindekiler girişleri için belgenizin tasarımına ve biçimlendirmesine uyacak şekilde özel stiller tanımlayabilirsiniz.
+```java
+doc.save(dataDir + "DocumentBuilder.InsertToc.docx");
+```
 
-### Aspose.Words for Java, İçindekiler tablosunda çapraz referansları destekliyor mu?
-
-Evet, belgenizdeki belirli bölümlere veya sayfalara bağlantı vermek için İçindekiler tablosunda çapraz referanslar oluşturabilirsiniz.
-
-### Aspose.Words for Java web uygulamaları için uygun mudur?
-
-Aspose.Words for Java, dinamik olarak İçindekiler tablosu oluşturmak için web uygulamalarına sorunsuz bir şekilde entegre edilebilir.
+- `save` : Belgeyi bir`.docx` dosya. Diğer biçimleri de belirtebilirsiniz.`.pdf` veya`.txt` eğer gerekirse.
 
 ## Çözüm
 
-Bu kapsamlı kılavuzda, Java için Aspose.Words kullanarak İçindekiler Tablosu (TOC) oluşturma sanatını inceledik. Ortamınızı nasıl kuracağınızı, temel ve gelişmiş TOC'ler nasıl oluşturacağınızı ve hatta kaynak koduyla Java projelerinize TOC oluşturmayı öğrendiniz. Java için Aspose.Words, belgelerinizi dinamik ve görsel olarak çekici TOC'lerle geliştirmenize olanak tanır. Şimdi, devam edin ve bu bilgiyi Java uygulamalarınızda çarpıcı TOC'ler oluşturmak için kullanın. İyi kodlamalar!
+Tebrikler! Java için Aspose.Words kullanarak bir Word belgesinde dinamik bir İçindekiler Tablosu oluşturmayı başardınız. Sadece birkaç satır kodla, aksi takdirde saatler sürebilecek bir görevi otomatikleştirdiniz. Peki, sırada ne var? İçindekiler Tablonuzu belirli ihtiyaçlara göre uyarlamak için farklı başlık stilleri ve biçimleri denemeyi deneyin.
+
+## SSS
+
+### İçindekiler formatını daha fazla özelleştirebilir miyim?
+Kesinlikle! Sayfa numaraları ekleme, metni hizalama veya özel başlık stilleri kullanma gibi İçindekiler parametrelerini ayarlayabilirsiniz.
+
+### Aspose.Words for Java için lisans zorunlu mudur?
+ Evet, tam işlevsellik için bir lisans gereklidir. Bir lisansla başlayabilirsiniz[geçici lisans](https://purchase.aspose.com/temporary-license/).
+
+### Mevcut bir belge için İçindekiler tablosu oluşturabilir miyim?
+ Evet! Belgeyi bir`Document` nesneyi seçin ve İçindekiler tablosunu eklemek ve güncellemek için aynı adımları izleyin.
+
+### Bu PDF çıktıları için de işe yarar mı?
+ Evet, belgeyi PDF'e kaydederseniz İçindekiler tablosu PDF'de görünecektir.`.pdf` Biçim.
+
+### Daha fazla dokümanı nerede bulabilirim?
+ Şuna bir göz atın:[Java için Aspose.Words belgeleri](https://reference.aspose.com/words/java/) Daha fazla örnek ve ayrıntı için.

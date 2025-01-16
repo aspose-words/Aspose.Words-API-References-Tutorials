@@ -9,7 +9,7 @@ url: /nl/net/working-with-section/modify-page-setup-in-all-sections/
 ---
 ## Invoering
 
-Hallo! Als je ooit pagina-instellingen in meerdere secties in een Word-document hebt moeten wijzigen, ben je hier aan het juiste adres. In deze tutorial begeleid ik je door het proces met Aspose.Words voor .NET. Met deze krachtige bibliotheek kun je bijna elk aspect van Word-documenten programmatisch beheren, waardoor het een go-to-tool is voor ontwikkelaars. Pak dus een kop koffie en laten we beginnen met deze stapsgewijze reis naar het onder de knie krijgen van pagina-instellingen!
+Hallo! Als je ooit pagina-instellingen in meerdere secties in een Word-document hebt moeten wijzigen, ben je hier aan het juiste adres. In deze tutorial begeleid ik je door het proces met Aspose.Words voor .NET. Met deze krachtige bibliotheek kun je bijna elk aspect van Word-documenten programmatisch beheren, waardoor het een go-to-tool is voor ontwikkelaars. Pak dus een kop koffie en laten we beginnen met deze stapsgewijze reis om pagina-instellingen te wijzigen!
 
 ## Vereisten
 
@@ -89,7 +89,7 @@ Met deze regel code wordt het document opgeslagen in de opgegeven map met een du
 
 ## Conclusie
 
- En daar heb je het! Je hebt de pagina-instelling voor alle secties in een Word-document succesvol gewijzigd met Aspose.Words voor .NET. Deze tutorial heeft je door het proces van het maken van een document, het toevoegen van secties en het uniform aanpassen van hun pagina-instellingen geleid. Aspose.Words biedt een uitgebreide set functies, dus voel je vrij om de[API-documentatie](https://reference.aspose.com/words/net/) voor meer geavanceerde mogelijkheden.
+ En daar heb je het! Je hebt de pagina-instelling voor alle secties in een Word-document succesvol aangepast met Aspose.Words voor .NET. Deze tutorial heeft je door het proces van het maken van een document, het toevoegen van secties en het uniform aanpassen van hun pagina-instellingen geleid. Aspose.Words biedt een uitgebreide set functies, dus voel je vrij om de[API-documentatie](https://reference.aspose.com/words/net/) voor meer geavanceerde mogelijkheden.
 
 ## Veelgestelde vragen
 

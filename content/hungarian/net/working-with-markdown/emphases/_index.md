@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-A`dataDir` változó annak a könyvtárnak a helyőrzője, ahová a Markdown fájlt menteni fogja. Ügyeljen arra, hogy a „DOKUMENTUMKÖNYVTÁR” szöveget a tényleges elérési útra cserélje.
+ A`dataDir` változó annak a könyvtárnak a helyőrzője, ahová a Markdown fájlt menteni fogja. Ügyeljen arra, hogy a „DOKUMENTUMKÖNYVTÁR” szöveget a tényleges elérési útra cserélje.
 
 ## 2. lépés: Normál szöveg írása
 

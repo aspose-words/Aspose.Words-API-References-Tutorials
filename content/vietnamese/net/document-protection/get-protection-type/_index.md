@@ -15,7 +15,7 @@ Xin chào! Bạn đã bao giờ tự hỏi làm thế nào để kiểm tra lo�
 
 Trước khi bắt đầu phần mã hóa, hãy đảm bảo rằng bạn có mọi thứ cần thiết:
 
-1.  Aspose.Words cho Thư viện .NET: Nếu bạn chưa tải xuống và cài đặt, hãy tải xuống và cài đặt[Aspose.Words cho thư viện .NET](https://releases.aspose.com/words/net/).
+1. Aspose.Words cho Thư viện .NET: Nếu bạn chưa tải xuống và cài đặt, hãy tải xuống và cài đặt[Aspose.Words cho thư viện .NET](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Một IDE như Visual Studio.
 3. Kiến thức cơ bản về C#: Sự quen thuộc với lập trình C# sẽ giúp bạn theo dõi.
 
@@ -41,7 +41,7 @@ Trước tiên, hãy thiết lập dự án C# của bạn trong Visual Studio. 
 
 ## Bước 2: Tải tài liệu của bạn
 
- Bây giờ dự án của bạn đã được thiết lập, hãy tải tài liệu Word mà bạn muốn kiểm tra. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến tài liệu của bạn.
+Bây giờ dự án của bạn đã được thiết lập, hãy tải tài liệu Word mà bạn muốn kiểm tra. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến tài liệu của bạn.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
@@ -75,13 +75,13 @@ Và bạn đã có nó! Bạn đã lấy thành công loại bảo vệ của m�
 Aspose.Words for .NET là một thư viện mạnh mẽ cho phép bạn tạo, chỉnh sửa, chuyển đổi và thao tác các tài liệu Word theo cách lập trình.
 
 ### Tôi có thể sử dụng Aspose.Words miễn phí không?
- Bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/) , nhưng để có đầy đủ chức năng, bạn sẽ cần phải mua giấy phép. Kiểm tra[tùy chọn mua hàng](https://purchase.aspose.com/buy).
+ Bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/) nhưng để có đầy đủ chức năng, bạn sẽ cần phải mua giấy phép. Kiểm tra[tùy chọn mua hàng](https://purchase.aspose.com/buy).
 
 ### Aspose.Words có thể phát hiện những loại bảo vệ nào?
 Aspose.Words có thể phát hiện nhiều loại bảo vệ khác nhau như NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments và AllowOnlyFormFields.
 
 ### Tôi có thể nhận được hỗ trợ như thế nào nếu gặp vấn đề?
-Đối với bất kỳ vấn đề nào, bạn có thể truy cập[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được giúp đỡ.
+ Đối với bất kỳ vấn đề nào, bạn có thể truy cập[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được giúp đỡ.
 
 ### Aspose.Words có tương thích với .NET Core không?
 Có, Aspose.Words tương thích với cả .NET Framework và .NET Core.

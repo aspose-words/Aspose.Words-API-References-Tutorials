@@ -59,7 +59,7 @@ Az Aspose.Words a dokumentumformátumok széles skáláját támogatja, beleért
 Igen, az Aspose.Words robusztus API-kat biztosít a dokumentumokon belüli táblázatok, képek, szövegformázás és egyebek kezeléséhez.
 
 ### Hol találom az Aspose.Words for .NET részletes dokumentációját?
- részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
+ A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
 
 ### Hogyan szerezhetek ideiglenes licencet az Aspose.Words for .NET-hez?
 Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).

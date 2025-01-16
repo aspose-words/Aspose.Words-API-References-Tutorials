@@ -114,7 +114,7 @@ Un champ ASK dans Aspose.Words est un champ qui invite l'utilisateur à effectue
 Oui, vous pouvez insérer plusieurs champs ASK dans un document, chacun avec des invites et des réponses uniques.
 
 ###  Quel est le but de la`PromptOnceOnMailMerge` property?
-Le`PromptOnceOnMailMerge` la propriété détermine si l'invite ASK apparaît une seule fois lors d'une opération de publipostage ou à chaque fois.
+ Le`PromptOnceOnMailMerge` la propriété détermine si l'invite ASK apparaît une seule fois lors d'une opération de publipostage ou à chaque fois.
 
 ### Dois-je mettre à jour le champ ASK après avoir défini ses propriétés ?
 Oui, la mise à jour du champ ASK garantit que toutes les propriétés sont correctement appliquées et que le champ fonctionne comme prévu.

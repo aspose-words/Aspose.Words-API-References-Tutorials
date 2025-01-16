@@ -35,15 +35,12 @@ Salah satu cara paling mudah untuk membagi dokumen adalah dengan membagi halaman
 Untuk membagi dokumen berdasarkan halaman menggunakan Aspose.Words untuk Java, ikuti langkah-langkah berikut:
 
 ```java
-// Kode Java untuk membagi dokumen berdasarkan halaman menggunakan Aspose.Words untuk Java
-Document doc = new Document("input.docx");
+Document doc = new Document("Your Directory Path" + "Big document.docx");
 int pageCount = doc.getPageCount();
-
-for (int i = 0; i < pageCount; i++) {
-    Document pageDoc = new Document();
-    pageDoc.getFirstSection().getBody().appendChild(
-            doc.getLastSection().getBody().getChildNodes().get(i).clone(true));
-    pageDoc.save("output_page_" + (i + 1) + ".docx");
+for (int page = 0; page < pageCount; page++)
+{
+    Document extractedPage = doc.extractPages(page, 1);
+    extractedPage.save("Your Directory Path" + "SplitDocument.PageByPage_" + (page + 1) + ".docx");
 }
 ```
 
@@ -110,48 +107,28 @@ for (int i = 0; i < doc.getSections().getCount(); i++) {
 }
 ```
 
-## 8. Teknik Pemisahan Dokumen Tingkat Lanjut
-
-### 8.1 Membagi Bagian Tertentu ke dalam Dokumen Terpisah
-
-Dalam beberapa kasus, Anda mungkin ingin membagi hanya bagian-bagian tertentu ke dalam dokumen-dokumen terpisah. Aspose.Words untuk Java memungkinkan Anda untuk menentukan kriteria khusus guna menentukan bagian mana yang akan dibagi.
-
-## 8.2 Membagi Dokumen Berdasarkan Kriteria Kustom
-
-Anda dapat menerapkan logika kustom untuk membagi dokumen berdasarkan kriteria tertentu, seperti konten, kata kunci, atau metadata. Fleksibilitas ini memastikan bahwa Anda dapat menyesuaikan proses pemisahan dokumen dengan kebutuhan unik Anda.
-
-## 9. Menggabungkan Dokumen Terpisah
-
-Aspose.Words untuk Java juga menyediakan fungsionalitas untuk menggabungkan kembali dokumen yang dipisah menjadi satu dokumen. Fitur ini berguna saat Anda perlu menggabungkan bagian-bagian individual menjadi satu dokumen terpadu.
-
-## 10. Pertimbangan Kinerja
-
-Saat menangani dokumen besar, penting untuk mempertimbangkan pengoptimalan kinerja. Aspose.Words
-
- untuk Java dirancang untuk menangani berkas besar secara efisien, tetapi pengembang dapat lebih meningkatkan kinerja dengan mengikuti praktik terbaik.
-
-## 11. Kesimpulan
+## Kesimpulan
 
 Dalam panduan ini, kami telah menjajaki cara membagi dokumen dengan mudah dan efisien menggunakan Aspose.Words untuk Java. Dengan membagi dokumen besar menjadi bagian-bagian yang lebih kecil dan lebih mudah dikelola, pengembang dapat bekerja dengan bagian-bagian tertentu dan menyederhanakan tugas pemrosesan dokumen. Aspose.Words untuk Java menawarkan berbagai metode untuk membagi dokumen berdasarkan halaman, paragraf, judul, dan bagian, yang memberikan fleksibilitas kepada pengembang untuk menyesuaikan proses pemisahan dengan kebutuhan spesifik mereka.
 
-## 12. Tanya Jawab Umum
+## Pertanyaan yang Sering Diajukan
 
-### Q1. Bisakah Aspose.Words untuk Java membagi dokumen dengan format berbeda seperti DOC dan DOCX?
+### Bisakah Aspose.Words untuk Java membagi dokumen dengan format berbeda seperti DOC dan DOCX?
 
 Ya, Aspose.Words untuk Java dapat membagi dokumen berbagai format, termasuk DOC dan DOCX, antara lain.
 
-### Q2. Apakah Aspose.Words untuk Java kompatibel dengan versi Java yang berbeda?
+### Apakah Aspose.Words untuk Java kompatibel dengan versi Java yang berbeda?
 
 Ya, Aspose.Words untuk Java kompatibel dengan berbagai versi Java, memastikan integrasi yang mulus dengan proyek Anda.
 
-### Q3. Dapatkah saya menggunakan Aspose.Words untuk Java untuk membagi dokumen yang dilindungi kata sandi?
+### Dapatkah saya menggunakan Aspose.Words untuk Java untuk membagi dokumen yang dilindungi kata sandi?
 
 Ya, Aspose.Words untuk Java mendukung pemisahan dokumen yang dilindungi kata sandi selama Anda memberikan kata sandi yang benar.
 
-### Q4. Bagaimana cara memulai Aspose.Words untuk Java jika saya baru menggunakan pustaka ini?
+### Bagaimana saya dapat memulai dengan Aspose.Words untuk Java jika saya baru menggunakan pustaka tersebut?
 
  Anda dapat memulai dengan menjelajahi[Referensi API Aspose.Words untuk Java](https://reference.aspose.com/words/java/) dan contoh kode yang disediakan oleh Aspose.Words untuk Java. Dokumentasi berisi informasi terperinci tentang fitur pustaka dan cara menggunakannya secara efektif.
 
-### Q5. Apakah Aspose.Words untuk Java cocok untuk pemrosesan dokumen tingkat perusahaan?
+### Apakah Aspose.Words untuk Java cocok untuk pemrosesan dokumen tingkat perusahaan?
 
 Tentu saja! Aspose.Words untuk Java digunakan secara luas dalam aplikasi tingkat perusahaan untuk berbagai tugas pemrosesan dokumen karena ketangguhannya dan rangkaian fiturnya yang luas.

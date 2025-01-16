@@ -73,7 +73,7 @@ A tady to máte! Kopírování stylů mezi dokumenty aplikace Word pomocí Aspos
 ## FAQ
 
 ###  Jaký je účel`CopyStylesFromTemplate` method?  
-The`CopyStylesFromTemplate` metoda zkopíruje styly z jednoho dokumentu do druhého a zajistí, že cílový dokument zdědí formátování zdrojového dokumentu.
+ The`CopyStylesFromTemplate` metoda zkopíruje styly z jednoho dokumentu do druhého a zajistí, že cílový dokument zdědí formátování zdrojového dokumentu.
 
 ###  Mohu použít`CopyStylesFromTemplate` with documents in different formats?  
  Ne,`CopyStylesFromTemplate` metoda funguje pouze s dokumenty ve stejném formátu, obvykle DOCX.
@@ -82,7 +82,7 @@ The`CopyStylesFromTemplate` metoda zkopíruje styly z jednoho dokumentu do druh�
 Otevřete cílový dokument a zkontrolujte nastavení stylu. Měli byste vidět použité styly ze zdrojového dokumentu.
 
 ### Co když cílový dokument již má styly?  
-The`CopyStylesFromTemplate` metoda přepíše existující styly v cílovém dokumentu styly ze zdrojového dokumentu.
+ The`CopyStylesFromTemplate` metoda přepíše existující styly v cílovém dokumentu styly ze zdrojového dokumentu.
 
 ### Je Aspose.Words for .NET zdarma k použití?  
  Aspose.Words for .NET je komerční produkt, ale můžete získat bezplatnou zkušební verzi[Bezplatná zkušební verze Aspose.Words for .NET](https://releases.aspose.com/).

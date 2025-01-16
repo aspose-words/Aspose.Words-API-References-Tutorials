@@ -98,7 +98,7 @@ multiDocumentSummary.Save(ArtifactsDir + "AI.AiSummarize.Multi.docx");
 
 A tady to máte! Úspěšně jste shrnuli jeden nebo dva dokumenty pomocí Aspose.Words pro .NET. Kroky, kterými jsme prošli, mohou být přizpůsobeny pro větší projekty nebo dokonce automatizovány pro různé úlohy zpracování dokumentů. Pamatujte, že sumarizace vám může výrazně ušetřit čas a námahu a přitom zachovat podstatu vašich dokumentů. 
 
-Chcete si pohrát s kódem? Pokračujte! Krása této technologie spočívá v tom, že ji můžete vyladit tak, aby vyhovovala vašim potřebám. Nezapomeňte, další zdroje a dokumentaci najdete na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) a pokud narazíte na nějaké problémy,[Aspose fórum podpory](https://forum.aspose.com/c/words/8/) je vzdáleno pouhé kliknutí.
+Chcete si pohrát s kódem? Jděte do toho! Krása této technologie spočívá v tom, že ji můžete vyladit tak, aby vyhovovala vašim potřebám. Nezapomeňte, další zdroje a dokumentaci najdete na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) a pokud narazíte na nějaké problémy,[Aspose fórum podpory](https://forum.aspose.com/c/words/8/) je vzdáleno pouhé kliknutí.
 
 ## FAQ
 

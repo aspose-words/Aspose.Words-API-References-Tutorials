@@ -8,7 +8,7 @@ weight: 10
 url: /ja/python-net/tables-and-formatting/manage-document-watermarks/
 ---
 
-透かしは、文書内で控えめながらもインパクトのある要素として機能し、プロフェッショナリズムと美観を高めます。Aspose.Words for Python を使用すると、透かしを簡単に作成して書式設定し、文書の視覚的な魅力を高めることができます。このチュートリアルでは、Aspose.Words for Python API を使用して文書に透かしを追加する手順を順を追って説明します。
+透かしは、ドキュメント内で控えめながらもインパクトのある要素として機能し、プロフェッショナリズムと美観を高めます。Aspose.Words for Python を使用すると、透かしを簡単に作成して書式設定し、ドキュメントの視覚的な魅力を高めることができます。このチュートリアルでは、Aspose.Words for Python API を使用してドキュメントに透かしを追加する手順を順を追って説明します。
 
 ## 文書の透かしの概要
 

@@ -10,7 +10,7 @@ url: /pl/java/document-conversion-and-export/using-barcode-generation/
 
 ## Wprowadzenie do korzystania z generowania kodów kreskowych w Aspose.Words dla Java
 
-W dziedzinie przetwarzania dokumentów i automatyzacji Aspose.Words for Java jest wszechstronną i potężną biblioteką. Ten artykuł przeprowadzi Cię przez proces generowania kodów kreskowych przy użyciu Aspose.Words for Java. Przeanalizujemy, jak krok po kroku włączyć generowanie kodów kreskowych do aplikacji Java. Więc zanurzmy się w to!
+dziedzinie przetwarzania dokumentów i automatyzacji Aspose.Words for Java jest wszechstronną i potężną biblioteką. Ten artykuł przeprowadzi Cię przez proces generowania kodów kreskowych przy użyciu Aspose.Words for Java. Przeanalizujemy, jak krok po kroku włączyć generowanie kodów kreskowych do aplikacji Java. Więc zanurzmy się w to!
 
 ## Wymagania wstępne
 
@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Ustaw generator kodów kreskowych
 
- Ustaw niestandardowy generator kodów kreskowych za pomocą`FieldOptions` klasa. W tym przykładzie zakładamy, że zaimplementowałeś`CustomBarcodeGenerator` klasa do generowania kodu kreskowego. Zastąp`CustomBarcodeGenerator` z Twoją aktualną logiką generowania kodów kreskowych:
+ Ustaw niestandardowy generator kodów kreskowych za pomocą`FieldOptions` klasa. W tym przykładzie zakładamy, że zaimplementowałeś`CustomBarcodeGenerator`klasa do generowania kodu kreskowego. Zastąp`CustomBarcodeGenerator` z Twoją aktualną logiką generowania kodów kreskowych:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

@@ -66,7 +66,7 @@ TextBox textBox = shape.TextBox;
 
 Most jön a döntő rész: az előre irányuló kapcsolatok megszakítása. A szövegmezőkben lévő továbbítási hivatkozások diktálhatják a tartalom áramlását egyik mezőből a másikba. Néha el kell vágnia ezeket a linkeket a tartalom átszervezéséhez vagy szerkesztéséhez.
 
-### Az előre irányuló kapcsolat megszakítása
+### Az előremutató link megszakítása
 
  A továbbító hivatkozás megszakításához használhatja a`BreakForwardLink` módszer. Íme a kód:
 
@@ -100,11 +100,11 @@ Néha egy szövegdoboz egy lánc része lehet, és más mezők hivatkoznak rá. 
 textBox.Previous?.BreakForwardLink();
 ```
 
-A`?.` operátor biztosítja, hogy a metódus csak akkor kerüljön meghívásra, ha`Previous` nem nulla, megelőzve a lehetséges futásidejű hibákat.
+ A`?.` operátor biztosítja, hogy a metódus csak akkor kerüljön meghívásra, ha`Previous` nem nulla, megelőzve a lehetséges futásidejű hibákat.
 
 ## Következtetés
 
-És megvan! 🎉 Sikeresen megtanulta, hogyan bonthat tovább linkeket a szövegdobozokban az Aspose.Words for .NET használatával. Függetlenül attól, hogy megtisztít egy dokumentumot, előkészíti egy új formátumra, vagy csak kísérletezik, ezek a lépések segítenek a szövegdobozok precíz kezelésében. A kapcsolatok feltörése olyan, mint egy csomó kibogozása – néha szükséges a dolgok rendben tartásához. 
+És megvan! 🎉 Sikeresen megtanulta, hogyan bonthat tovább linkeket a szövegmezőkben az Aspose.Words for .NET használatával. Függetlenül attól, hogy megtisztít egy dokumentumot, előkészíti egy új formátumra, vagy csak kísérletezik, ezek a lépések segítenek a szövegdobozok precíz kezelésében. A kapcsolatok feltörése olyan, mint egy csomó kibogozása – néha szükséges a dolgok rendben tartásához. 
 
  Ha többet szeretne megtudni arról, mire képes az Aspose.Words, az övék[dokumentáció](https://reference.aspose.com/words/net/) információ kincsesbánya. Kellemes kódolást, és dokumentumai mindig legyenek jól rendszerezve!
 

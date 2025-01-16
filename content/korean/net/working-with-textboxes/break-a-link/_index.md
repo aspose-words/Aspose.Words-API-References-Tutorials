@@ -100,7 +100,7 @@ textBox.Next = null;
 textBox.Previous?.BreakForwardLink();
 ```
 
-그만큼`?.` 연산자는 메서드가 다음과 같은 경우에만 호출되도록 보장합니다.`Previous` null이 아니므로 잠재적인 런타임 오류를 방지할 수 있습니다.
+ 그만큼`?.` 연산자는 메서드가 다음과 같은 경우에만 호출되도록 보장합니다.`Previous` null이 아니므로 잠재적인 런타임 오류를 방지할 수 있습니다.
 
 ## 결론
 

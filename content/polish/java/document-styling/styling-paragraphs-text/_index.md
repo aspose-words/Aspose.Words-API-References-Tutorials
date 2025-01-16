@@ -182,25 +182,11 @@ W tym przykładzie ustawiliśmy wyrównanie akapitu na
 Tworzenie list z punktami lub numeracją jest powszechnym zadaniem formatowania dokumentów. Aspose.Words dla Java ułatwia to zadanie. Oto jak utworzyć listę punktowaną:
 
 ```java
-// Utwórz nowy dokument
-Document doc = new Document();
-
-// Utwórz listę
-List list = new List(doc);
-
-// Dodaj elementy listy z punktami
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// Dodaj listę do dokumentu
-doc.getFirstSection().getBody().appendChild(list);
-
-// Zapisz dokument
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 W tym kodzie tworzymy listę wypunktowaną zawierającą trzy elementy.
@@ -210,24 +196,21 @@ W tym kodzie tworzymy listę wypunktowaną zawierającą trzy elementy.
 Hiperłącza są niezbędne do dodawania interaktywności do dokumentów. Aspose.Words for Java pozwala na łatwe wstawianie hiperłączy. Oto przykład:
 
 ```java
-// Utwórz nowy dokument
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Utwórz akapit
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// Utwórz hiperłącze
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// Wstaw hiperłącze i podkreśl je, stosując niestandardowe formatowanie.
+// Hiperłącze będzie klikalnym fragmentem tekstu, który przeniesie nas do lokalizacji określonej w adresie URL.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", fałsz);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// Dodaj akapit do dokumentu
-doc.getFirstSection().getBody().appendChild(para);
-
-// Zapisz dokument
-doc.save("HyperlinkDocument.docx");
+// Kombinacja klawiszy Ctrl + lewy przycisk myszy na linku w tekście w programie Microsoft Word przeniesie nas do adresu URL poprzez nowe okno przeglądarki internetowej.
+doc.save("InsertHyperlink.docx");
 ```
 
 Ten kod wstawia hiperłącze do „https://www.example.com” z tekstem „Odwiedź Example.com”.
@@ -237,23 +220,7 @@ Ten kod wstawia hiperłącze do „https://www.example.com” z tekstem „Odwie
 Dokumenty często wymagają elementów wizualnych, takich jak obrazy i kształty. Aspose.Words for Java umożliwia bezproblemowe wstawianie obrazów i kształtów. Oto jak dodać obraz:
 
 ```java
-// Utwórz nowy dokument
-Document doc = new Document();
-
-// Utwórz akapit
-Paragraph para = new Paragraph(doc);
-
-// Załaduj obraz z pliku
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// Dodaj akapit do dokumentu
-doc.getFirstSection().getBody().appendChild(para);
-
-// Zapisz dokument
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 W tym kodzie ładujemy obraz z pliku i wstawiamy go do dokumentu.
@@ -287,27 +254,20 @@ W tym przykładzie ustawiliśmy równe marginesy 1 cala po każdej stronie stron
 Nagłówki i stopki są niezbędne do dodawania spójnych informacji do każdej strony dokumentu. Oto jak pracować z nagłówkami i stopkami:
 
 ```java
-// Utwórz nowy dokument
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Uzyskaj dostęp do nagłówka i stopki pierwszej sekcji
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// Dodaj treść do nagłówka
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// Dodaj treść do stopki
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// Dodaj treść do treści dokumentu
+// Dodaj treść do treści dokumentu.
 // ...
 
-// Zapisz dokument
+// Zapisz dokument.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ W tym kodzie dodajemy treść zarówno do nagłówka, jak i stopki dokumentu.
 Tabele to potężny sposób na organizowanie i prezentowanie danych w dokumentach. Aspose.Words for Java zapewnia rozbudowane wsparcie dla pracy z tabelami. Oto przykład tworzenia tabeli:
 
 ```java
-// Utwórz nowy dokument
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Utwórz tabelę z 3 wierszami i 3 kolumnami
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// Dodaj zawartość do komórek tabeli
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//Dodaj tabelę do dokumentu
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// Zapisz dokument
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// Zmiana formatowania spowoduje jego zastosowanie do bieżącej komórki,
+// i wszystkie nowe komórki, które później utworzymy za pomocą konstruktora.
+// Nie będzie to miało wpływu na komórki, które dodaliśmy wcześniej.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// Zwiększ wysokość wiersza, aby dopasować go do tekstu pionowego.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 W tym kodzie tworzymy prostą tabelę z trzema wierszami i trzema kolumnami.
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // Zapisz dokument jako PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 Ten fragment kodu zapisuje dokument jako plik PDF.
@@ -393,7 +372,7 @@ Tak, możesz łatwo przekonwertować dokument do PDF za pomocą Aspose.Words dla
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### Jak sformatować tekst jako
@@ -414,7 +393,7 @@ Najnowszą wersję Aspose.Words dla Javy można znaleźć na stronie internetowe
 Tak, Aspose.Words for Java jest kompatybilny z Java 11 i nowszymi wersjami.
 
 ### Jak mogę ustawić marginesy strony dla określonych sekcji dokumentu?
-Możesz ustawić marginesy strony dla określonych sekcji dokumentu za pomocą`PageSetup` klasa. Oto przykład:
+ Możesz ustawić marginesy strony dla określonych sekcji dokumentu za pomocą`PageSetup` klasa. Oto przykład:
 
 ```java
 Section section = doc.getSections().get(0); // Pobierz pierwszą sekcję
@@ -427,6 +406,6 @@ pageSetup.setBottomMargin(72); // Dolny margines w punktach
 
 ## Wniosek
 
-W tym kompleksowym przewodniku zbadaliśmy potężne możliwości Aspose.Words for Java do stylizowania akapitów i tekstu w dokumentach. Nauczyłeś się, jak programowo tworzyć, formatować i ulepszać dokumenty, od podstawowej manipulacji tekstem po zaawansowane funkcje. Aspose.Words for Java umożliwia programistom wydajną automatyzację zadań formatowania dokumentów. Ćwicz i eksperymentuj z różnymi funkcjami, aby stać się biegłym w stylizowaniu dokumentów za pomocą Aspose.Words for Java.
+tym kompleksowym przewodniku zbadaliśmy potężne możliwości Aspose.Words for Java do stylizowania akapitów i tekstu w dokumentach. Nauczyłeś się, jak programowo tworzyć, formatować i ulepszać dokumenty, od podstawowej manipulacji tekstem po zaawansowane funkcje. Aspose.Words for Java umożliwia programistom wydajną automatyzację zadań formatowania dokumentów. Ćwicz i eksperymentuj z różnymi funkcjami, aby stać się biegłym w stylizowaniu dokumentów za pomocą Aspose.Words for Java.
 
 Teraz, gdy masz solidne zrozumienie tego, jak stylizować akapity i tekst w dokumentach za pomocą Aspose.Words for Java, jesteś gotowy, aby tworzyć pięknie sformatowane dokumenty dostosowane do Twoich konkretnych potrzeb. Miłego kodowania!

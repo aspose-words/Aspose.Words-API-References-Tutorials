@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /el/java/word-processing/mastering-advanced-save-settings/
 ---
+
 Είστε έτοιμοι να ανεβάσετε τις δεξιότητές σας στην επεξεργασία εγγράφων στο επόμενο επίπεδο; Σε αυτόν τον περιεκτικό οδηγό, θα εμβαθύνουμε στον έλεγχο των σύνθετων ρυθμίσεων αποθήκευσης για έγγραφα χρησιμοποιώντας το Aspose.Words για Java. Είτε είστε έμπειρος προγραμματιστής είτε μόλις ξεκινάτε, θα σας καθοδηγήσουμε στις περιπλοκές του χειρισμού εγγράφων με το Aspose.Words για Java.
 
 ## Εισαγωγή
@@ -25,13 +26,13 @@ url: /el/java/word-processing/mastering-advanced-save-settings/
 ```java
 // Ορίστε τη μορφή εγγράφου σε DOCX
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
-// Ορίστε τον προσανατολισμό της σελίδας σε Οριζόντιο
+//Ορίστε τον προσανατολισμό της σελίδας σε Οριζόντιο
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## Έλεγχος περιθωρίων σελίδας
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 ίντσα
 pageSetup.setRightMargin(72.0); // 1 ίντσα
 pageSetup.setTopMargin(36.0); // 0,5 ίντσας
 pageSetup.setBottomMargin(36.0); // 0,5 ίντσας
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## Διαχείριση κεφαλίδων και υποσέλιδων
@@ -56,11 +57,11 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 ```java
 // Προσθέστε μια κεφαλίδα στην πρώτη σελίδα
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## Ενσωμάτωση γραμματοσειρών για προβολή μεταξύ πλατφορμών
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## Προστασία των εγγράφων σας
@@ -85,7 +86,7 @@ doc.save("embedded_fonts.docx", SaveFormat.DOCX);
 // Προστατέψτε το έγγραφο με κωδικό πρόσβασης
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## Προσαρμογή υδατογραφημάτων
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## Βελτιστοποίηση μεγέθους εγγράφου
@@ -111,7 +112,7 @@ doc.save("watermarked_document.docx", SaveFormat.DOCX);
 // Βελτιστοποιήστε το μέγεθος του εγγράφου
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## Εξαγωγή σε διαφορετικές μορφές
@@ -121,7 +122,7 @@ doc.save("optimized_document.docx", SaveFormat.DOCX);
 ```java
 // Εξαγωγή σε PDF
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## Αυτοματοποίηση δημιουργίας εγγράφων
@@ -133,7 +134,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## Εργασία με Μεταδεδομένα Εγγράφου
@@ -143,9 +144,8 @@ doc.save("automated_document.docx", SaveFormat.DOCX);
 ```java
 // Πρόσβαση και τροποποίηση μεταδεδομένων εγγράφου
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## Χειρισμός εκδόσεων εγγράφων
@@ -153,18 +153,22 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 Η έκδοση εγγράφων είναι ζωτικής σημασίας σε περιβάλλοντα συνεργασίας. Μάθετε πώς να διαχειρίζεστε αποτελεσματικά διαφορετικές εκδόσεις των εγγράφων σας.
 
 ```java
-// Συγκρίνετε εκδόσεις εγγράφων
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+// Η σύγκριση εγγράφων με αναθεωρήσεις θα δημιουργήσει μια εξαίρεση.
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## Σύνθετη σύγκριση εγγράφων
+
+Συγκρίνετε έγγραφα με ακρίβεια χρησιμοποιώντας προηγμένες τεχνικές που παρέχονται από το Aspose.Words για Java.
 
 ```java
 // Προηγμένη σύγκριση εγγράφων
@@ -217,7 +221,7 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Είναι το Aspose.Words για Java κατάλληλο για μαζική δημιουργία εγγράφων;
@@ -228,7 +232,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### Πώς μπορώ να συγκρίνω δύο έγγραφα του Word για διαφορές;

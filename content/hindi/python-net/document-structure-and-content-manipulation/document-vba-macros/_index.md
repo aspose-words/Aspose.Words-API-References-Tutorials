@@ -20,7 +20,7 @@ url: /hi/python-net/document-structure-and-content-manipulation/document-vba-mac
 इस स्वचालन यात्रा को शुरू करने के लिए, आपके पास Python के लिए Aspose.Words इंस्टॉल होना चाहिए। आप इसे यहाँ से डाउनलोड कर सकते हैं[Aspose वेबसाइट](https://releases.aspose.com/words/python/)एक बार इंस्टॉल हो जाने पर, आप अपना पायथन प्रोजेक्ट आरंभ कर सकते हैं और आवश्यक मॉड्यूल आयात कर सकते हैं।
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## VBA मैक्रोज़ और उनकी भूमिका को समझना
@@ -46,7 +46,7 @@ Aspose.Words Python के साथ प्रोग्रामेटिक र
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ Aspose.Words Python के साथ एकीकृत VBA मैक्रो�
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content

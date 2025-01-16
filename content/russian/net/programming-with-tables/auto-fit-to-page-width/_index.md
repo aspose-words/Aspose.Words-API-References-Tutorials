@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-The`Aspose.Words` Пространство имен содержит основные классы для работы с документами Word, в то время как`Aspose.Words.Tables` специально предназначен для работы с таблицами.
+ The`Aspose.Words` Пространство имен содержит основные классы для работы с документами Word, в то время как`Aspose.Words.Tables` специально предназначен для работы с таблицами.
 
 ## Шаг 1: Настройте свой документ
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- На этом этапе вы определяете путь, где хранится ваш документ, и загружаете его в`Document` объект. Заменить`"YOUR DOCUMENT DIRECTORY"`с фактическим путем расположения вашего документа.
+ На этом этапе вы определяете путь, где хранится ваш документ, и загружаете его в`Document` объект. Заменить`"YOUR DOCUMENT DIRECTORY"` с фактическим путем расположения вашего документа.
 
 ## Шаг 2: Доступ к таблице
 
@@ -68,7 +68,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-The`AutoFit` метод с`AutoFitBehavior.AutoFitToWindow` обеспечивает настройку ширины таблицы по всей ширине страницы.
+ The`AutoFit` метод с`AutoFitBehavior.AutoFitToWindow` обеспечивает настройку ширины таблицы по всей ширине страницы.
 
 ## Шаг 4: Сохраните измененный документ.
 

@@ -74,7 +74,7 @@ builder.Writeln("This is the 3rd paragraph.");
 
 ## Conclusión
 
-¡Y ya está! Pasar a un párrafo específico en un documento de Word con Aspose.Words para .NET es muy fácil. Con solo unas pocas líneas de código, puede automatizar el proceso de edición de documentos y ahorrar mucho tiempo. Así, la próxima vez que necesite navegar por un documento de forma programática, sabrá exactamente qué hacer.
+¡Y ya está! Pasar a un párrafo específico en un documento de Word con Aspose.Words para .NET es muy fácil. Con solo unas pocas líneas de código, puede automatizar el proceso de edición de documentos y ahorrar mucho tiempo. Así, la próxima vez que necesite navegar por un documento de forma programada, sabrá exactamente qué hacer.
 
 ## Preguntas frecuentes
 

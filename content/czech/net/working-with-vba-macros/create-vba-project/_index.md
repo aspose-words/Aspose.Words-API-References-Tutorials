@@ -16,7 +16,7 @@ Ahoj, tech nadšenci! Jste připraveni prozkoumat fascinující svět VBA (Visua
 
 Než začneme kódovat, ujistěte se, že máte vše, co potřebujete k dodržení:
 
-1.  Aspose.Words for .NET Library: Budete potřebovat nejnovější verzi Aspose.Words for .NET. Pokud jste to ještě neudělali, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Budete potřebovat nejnovější verzi Aspose.Words for .NET. Pokud jste to ještě neudělali, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí .NET, jako je Visual Studio, bude nezbytné pro psaní a testování vašeho kódu.
 3. Základní znalost C#: Základní znalost C# nám pomůže při procházení kódu.
 4. Ukázkový adresář dokumentů: Připravte si adresář, kam budete ukládat své dokumenty aplikace Word. Tady se děje kouzlo!

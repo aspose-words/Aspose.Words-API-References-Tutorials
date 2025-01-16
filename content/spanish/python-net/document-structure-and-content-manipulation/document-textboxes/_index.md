@@ -38,9 +38,15 @@ Comencemos creando un nuevo documento de Word y agregándole un cuadro de texto.
 import aspose.words as aw
 
 doc = aw.Document()
-builder = aw.DocumentBuilder(doc)
-
-textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
+builder = aw.DocumentBuilder(doc=doc)
+textbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_BOX)
+textbox.width = 100
+textbox.height = 100
+textbox.text_box.layout_flow = aw.drawing.LayoutFlow.BOTTOM_TO_TOP
+textbox.append_child(aw.Paragraph(doc))
+builder.insert_node(textbox)
+builder.move_to(textbox.first_paragraph)
+builder.write('This text is flipped 90 degrees to the left.')
 ```
 
  En este código, creamos un nuevo`Document` y un`DocumentBuilder` . El`insert_text_box` El método se utiliza para agregar un cuadro de texto al documento. Puede personalizar el contenido, la posición y el tamaño del cuadro de texto según sus requisitos.

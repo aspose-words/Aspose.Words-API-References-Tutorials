@@ -19,10 +19,10 @@ url: /ko/python-net/document-combining-and-comparison/generate-table-contents/
 ## 문서 로딩
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## 제목과 부제목 정의
@@ -31,25 +31,11 @@ doc = asposewords.Document("your_document.docx")
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## 목차 생성
-
-이제 제목과 부제목이 정의되었으니 목차 자체를 생성해 보겠습니다. 문서 시작 부분에 새 섹션을 만들고 적절한 콘텐츠로 채웁니다.
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## 목차 사용자 지정
@@ -58,21 +44,10 @@ toc_title.paragraph_format.style_name = "Table of Contents Title"
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## 하이퍼링크 추가
-
-목차를 대화형으로 만들려면 독자가 문서의 해당 섹션으로 바로 이동할 수 있도록 하이퍼링크를 추가하세요.
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+``
 
 ## 목차 스타일링
 
@@ -81,16 +56,7 @@ for heading in headings:
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## 목차 업데이트
-
-문서 구조를 변경하면 목차를 쉽게 업데이트하여 변경 사항을 반영할 수 있습니다.
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## 프로세스 자동화
@@ -101,27 +67,13 @@ doc.update_fields()
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## 페이지 번호 처리
-
-목차에 페이지 번호를 추가하면 독자에게 특정 섹션을 어디에서 찾을 수 있는지에 대한 맥락을 더 자세히 제공할 수 있습니다.
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## 결론

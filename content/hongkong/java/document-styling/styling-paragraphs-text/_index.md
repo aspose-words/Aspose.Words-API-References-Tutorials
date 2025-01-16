@@ -35,7 +35,7 @@ doc.save("NewDocument.docx");
 
 ## 新增段落並設定其格式
 
-段落是任何文件的構建塊。您可以新增段落並根據需要設定它們的格式。以下是新增段落並設定其對齊方式的範例：
+段落是任何文件的構建塊。您可以根據需要添加段落並設定它們的格式。以下是新增段落並設定其對齊方式的範例：
 
 ```java
 //建立一個新文檔
@@ -182,25 +182,11 @@ doc.save("AlignmentAndSpacingDocument.docx");
 建立帶有項目符號或編號的清單是一項常見的文件格式化任務。 Aspose.Words for Java 使其變得簡單明了。建立項目符號清單的方法如下：
 
 ```java
-//建立一個新文檔
-Document doc = new Document();
-
-//創建一個列表
-List list = new List(doc);
-
-//新增帶有項目符號的列表項
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-//將清單新增至文件中
-doc.getFirstSection().getBody().appendChild(list);
-
-//儲存文件
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 在此程式碼中，我們建立一個包含三個項目的項目符號清單。
@@ -210,24 +196,21 @@ doc.save("BulletedListDocument.docx");
 超連結對於向文件添加互動性至關重要。 Aspose.Words for Java 可讓您輕鬆插入超連結。這是一個例子：
 
 ```java
-//建立一個新文檔
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-//創建一個段落
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-//建立超連結
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+//插入超連結並使用自訂格式強調它。
+//超連結將是一段可點擊的文本，它將帶我們到 URL 中指定的位置。
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", false);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-//將段落新增到文件中
-doc.getFirstSection().getBody().appendChild(para);
-
-//儲存文件
-doc.save("HyperlinkDocument.docx");
+// Ctrl + 左鍵點擊 Microsoft Word 中文字中的連結將透過新的 Web 瀏覽器視窗前往 URL。
+doc.save("InsertHyperlink.docx");
 ```
 
 此程式碼插入一個指向“https://www.example.com”的超鏈接，其中包含文字“Visit Example.com”。
@@ -237,23 +220,7 @@ doc.save("HyperlinkDocument.docx");
 文件通常需要圖像和形狀等視覺元素。 Aspose.Words for Java 讓您能夠無縫插入圖像和形狀。新增影像的方法如下：
 
 ```java
-//建立一個新文檔
-Document doc = new Document();
-
-//創建一個段落
-Paragraph para = new Paragraph(doc);
-
-//從檔案載入圖片
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-//將段落新增到文件中
-doc.getFirstSection().getBody().appendChild(para);
-
-//儲存文件
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 在此程式碼中，我們從文件載入圖像並將其插入到文件中。
@@ -274,7 +241,7 @@ pageSetup.setTopMargin(72);    // 1吋（72點）
 pageSetup.setBottomMargin(72); // 1吋（72點）
 
 //為文件添加內容
-//……
+//…
 
 //儲存文件
 doc.save("PageLayoutDocument.docx");
@@ -287,27 +254,20 @@ doc.save("PageLayoutDocument.docx");
 頁首和頁尾對於在文件的每一頁添加一致的資訊至關重要。以下是如何使用頁首和頁尾：
 
 ```java
-//建立一個新文檔
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-//訪問第一部分的頁首和頁尾
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-//新增內容到標題
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-//將內容新增至頁尾
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
+//將內容新增至文件正文。
+//…
 
-//將內容新增至文件正文
-//……
-
-//儲存文件
+//儲存文檔。
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ doc.save("HeaderFooterDocument.docx");
 表格是組織和呈現文件中資料的有效方式。 Aspose.Words for Java 為處理表格提供了廣泛的支援。這是創建表格的範例：
 
 ```java
-//建立一個新文檔
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-//建立一個 3 行 3 列的表
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-//將內容新增至表格儲存格
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//將表格新增至文件中
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-//儲存文件
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+//更改格式會將其套用到目前儲存格，
+//以及我們隨後使用建構器建立的任何新單元格。
+//這不會影響我們之前新增的單元格。
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+//增加行高以適合垂直文字。
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 在此程式碼中，我們建立一個包含三行三列的簡單表。
@@ -351,10 +330,10 @@ doc.save("TableDocument.docx");
 Document doc = new Document();
 
 //為文件添加內容
-//……
+//…
 
 //將文件另存為 PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 此程式碼片段將文件另存為 PDF 文件。
@@ -393,7 +372,7 @@ builder.insertBreak(BreakType.PAGE_BREAK);
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### 如何將文字格式設定為

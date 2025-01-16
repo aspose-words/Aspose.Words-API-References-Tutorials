@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Krok 4: Użyj automatycznego wyrównywania zawartości tabeli
 
-Ten`Auto`opcja alignment pobiera wyrównanie z pierwszego akapitu w odpowiedniej kolumnie tabeli. Może to być przydatne, gdy masz mieszane wyrównania w jednej tabeli.
+ Ten`Auto`opcja alignment pobiera wyrównanie z pierwszego akapitu w odpowiedniej kolumnie tabeli. Może to być przydatne, gdy masz mieszane wyrównania w jednej tabeli.
 
 ```csharp
 // Ustaw wyrównanie na Auto.

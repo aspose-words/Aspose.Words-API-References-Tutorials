@@ -280,7 +280,7 @@ doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 يتيح لك Aspose.Words for Java تحويل المستندات إلى تنسيقات مختلفة، مثل PDF وHTML والمزيد.
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## تقنيات التصفيف المتقدمة

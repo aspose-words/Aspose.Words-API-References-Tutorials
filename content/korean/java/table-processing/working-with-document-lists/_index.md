@@ -38,23 +38,11 @@ Aspose.Words for Java는 Java 개발자가 문서 처리의 다양한 측면을 
 // 필요한 패키지를 가져옵니다
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // 새 문서 초기화
-        Document doc = new Document();
-
-        // 목록을 만드세요
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // 목록 항목 추가
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // 문서를 저장하세요
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## 문서 목록 수정
@@ -69,21 +57,18 @@ public class DocumentListExample {
 문서 목록을 수정하기 위한 코드 조각은 다음과 같습니다.
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // 기존 문서 로드
-        Document doc = new Document("DocumentListExample.docx");
-
-        // 목록에 접근하세요
-        List list = doc.getLists().get(0);
-
-        // 새로운 항목 추가
-        list.getListItems().add("New Item");
-
-        // 수정된 문서를 저장합니다
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // 해당 문단이 목록의 일부인지 확인하세요.
+    if (paragraph.isListItem()) {
+        // 마지막 목록 문단을 업데이트합니다.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## 문서 목록에서 정보 추출
@@ -97,23 +82,21 @@ public class ModifyDocumentListExample {
 문서 목록에서 정보를 추출하는 코드 조각은 다음과 같습니다.
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // 문서를 로드합니다
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // 목록에 접근하세요
-        List list = doc.getLists().get(0);
-
-        // 목록 항목을 반복하고 인쇄합니다.
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## 자주 묻는 질문(FAQ)
+## 결론
+
+이 포괄적인 가이드에서 우리는 Aspose.Words for Java를 사용하여 문서 목록을 다루는 세계를 탐험했습니다. Aspose.Words for Java의 강력함과 유연성을 모두 활용하여 문서 목록을 만들고, 수정하고, 추출하는 방법을 배웠습니다. 오늘 Java 프로젝트에서 이러한 기술을 구현하고 문서 자동화 작업을 간소화하세요.
+
+
+## 자주 묻는 질문
 
 ### 문서 목록에 글머리 기호를 추가하려면 어떻게 해야 하나요?
  문서 목록에 글머리 기호를 추가하려면 목록을 만들 때 적절한 ListTemplate을 사용합니다. 예를 들어 다음을 사용합니다.`ListTemplate.BULLET_DEFAULT` 대신에`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ public class ExtractListItemsExample {
 
 ### Aspose.Words for Java는 문서에서 표 작업을 지원합니까?
 네, Aspose.Words for Java는 표 작업에 대한 광범위한 지원을 제공하여 손쉽게 표 형식의 데이터를 만들고, 수정하고, 추출할 수 있습니다.
-
-## 결론
-
-이 포괄적인 가이드에서 우리는 Aspose.Words for Java를 사용하여 문서 목록을 다루는 세계를 탐험했습니다. Aspose.Words for Java의 강력함과 유연성을 모두 활용하여 문서 목록을 만들고, 수정하고, 추출하는 방법을 배웠습니다. 오늘 Java 프로젝트에서 이러한 기술을 구현하고 문서 자동화 작업을 간소화하세요.

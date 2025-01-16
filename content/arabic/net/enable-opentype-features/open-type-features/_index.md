@@ -56,7 +56,7 @@ using Aspose.Words.Shaping.HarfBuzz;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"`مع المسار الفعلي الذي يوجد به مستندك.
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي الذي يوجد به مستندك.
 
 ### تحميل المستند
 

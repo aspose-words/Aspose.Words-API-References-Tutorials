@@ -16,7 +16,7 @@ Se você sempre quis proteger um documento do Word, mas ainda permitir que certa
 Antes de começar, certifique-se de ter o seguinte:
 
 1.  Aspose.Words para .NET: Se você ainda não fez, baixe-o[aqui](https://releases.aspose.com/words/net/).
-2.  Uma licença Aspose válida: Você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
+2. Uma licença Aspose válida: Você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Qualquer versão recente deve funcionar bem.
 4. Conhecimento básico de C# e .NET: Isso ajudará você a acompanhar o código.
 
@@ -112,7 +112,7 @@ Por fim, vamos salvar o documento com a proteção aplicada e as regiões editá
 
 ## Conclusão
 
-aí está! Você criou com sucesso regiões editáveis irrestritas em um documento do Word usando o Aspose.Words para .NET. Esse recurso é incrivelmente útil para ambientes colaborativos onde certas partes de um documento precisam permanecer inalteradas enquanto outras podem ser editadas. 
+E aí está! Você criou com sucesso regiões editáveis irrestritas em um documento do Word usando o Aspose.Words para .NET. Esse recurso é incrivelmente útil para ambientes colaborativos onde certas partes de um documento precisam permanecer inalteradas enquanto outras podem ser editadas. 
 
  Experimente cenários mais complexos e diferentes níveis de proteção para obter o máximo do Aspose.Words. Se você tiver alguma dúvida ou tiver problemas, não hesite em verificar o[documentação](https://reference.aspose.com/words/net/) ou entre em contato com[apoiar](https://forum.aspose.com/c/words/8).
 

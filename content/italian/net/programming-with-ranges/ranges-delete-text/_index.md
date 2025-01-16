@@ -61,16 +61,16 @@ Una volta caricato il documento, possiamo procedere all'eliminazione del testo d
 2.  Elimina l'intervallo: usa il`Range.Delete` metodo per eliminare tutto il testo all'interno di questa sezione.
 
 ```csharp
-//Elimina il testo nella prima sezione del documento
+// Elimina il testo nella prima sezione del documento
 doc.Sections[0].Range.Delete();
 ```
 
-## Passaggio 4: Salvare il documento modificato
+## Passaggio 4: salvare il documento modificato
 
 Dopo aver apportato le modifiche, è necessario salvare il documento modificato.
 
 1. Salva con un nuovo nome: salva il documento con un nuovo nome per preservare il file originale.
-2. Specificare il percorso: assicurarsi di specificare il percorso e il nome file corretti.
+2. Specifica il percorso: assicurati di specificare il percorso e il nome file corretti.
 
 ```csharp
 // Salvare il documento modificato
@@ -89,7 +89,7 @@ Aspose.Words per .NET è una libreria di classi per l'elaborazione di documenti 
 
 ### Posso eliminare il testo da un paragrafo specifico invece che da una sezione?
 
-Sì, puoi eliminare il testo da un paragrafo specifico accedendo al paragrafo desiderato e utilizzando`Range.Delete` metodo.
+ Sì, puoi eliminare il testo da un paragrafo specifico accedendo al paragrafo desiderato e utilizzando`Range.Delete` metodo.
 
 ### È possibile eliminare il testo in modo condizionale?
 

@@ -112,4 +112,4 @@ Kesinlikle! Bu süreci birden fazla belge için otomatikleştirmek üzere bir be
 
 ### Sorunla karşılaşırsam nereden yardım alabilirim?
 
-The[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) Yardım almak ve yaygın sorunlara çözüm bulmak için harika bir yerdir.
+ The[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) Yardım almak ve yaygın sorunlara çözüm bulmak için harika bir yerdir.

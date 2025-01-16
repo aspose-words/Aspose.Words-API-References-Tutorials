@@ -61,7 +61,7 @@ Depois que o documento for carregado, podemos prosseguir para excluir o texto de
 2.  Excluir o intervalo: Use o`Range.Delete` método para excluir todo o texto dentro desta seção.
 
 ```csharp
-//Exclua o texto da primeira seção do documento
+// Exclua o texto da primeira seção do documento
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Aspose.Words for .NET é uma biblioteca de classes para processamento de documen
 
 ### Posso excluir texto de um parágrafo específico em vez de uma seção?
 
-Sim, você pode excluir texto de um parágrafo específico acessando o parágrafo desejado e usando o`Range.Delete` método.
+ Sim, você pode excluir texto de um parágrafo específico acessando o parágrafo desejado e usando o`Range.Delete` método.
 
 ### É possível excluir texto condicionalmente?
 

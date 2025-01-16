@@ -18,7 +18,7 @@ Trước khi đi sâu vào các chi tiết kỹ thuật, chúng ta hãy cùng t�
 
 ## Bắt đầu với Aspose.Words cho Java
 
- Để bắt đầu hành trình của chúng ta, bạn cần cài đặt và thiết lập Aspose.Words for Java. Nếu bạn chưa thực hiện, bạn có thể tải xuống từ trang web Aspose[đây](https://releases.aspose.com/words/java/). Sau khi cài đặt thư viện, bạn đã sẵn sàng khai thác khả năng quản lý bảng và bố cục hiệu quả của thư viện.
+ Để bắt đầu hành trình của chúng ta, bạn cần cài đặt và thiết lập Aspose.Words for Java. Nếu bạn chưa thực hiện, bạn có thể tải xuống từ trang web Aspose[đây](https://releases.aspose.com/words/java/)Sau khi cài đặt thư viện, bạn đã sẵn sàng khai thác khả năng quản lý bảng và bố cục hiệu quả của thư viện.
 
 ## Quản lý bảng cơ bản
 
@@ -110,7 +110,7 @@ Có, bạn có thể nhập các ô trong bảng bằng Aspose.Words, như đư�
  Đừng lo lắng! Bạn có thể dễ dàng tách các ô đã được hợp nhất trước đó bằng cách đặt thuộc tính hợp nhất theo chiều ngang của chúng thành`NONE`.
 
 ### Làm thế nào để thêm ngắt trang trước bảng?
- Để chèn ngắt trang trước bảng, hãy sửa đổi phông chữ`PageBreakBefore` tài sản như đã chứng minh.
+Để chèn ngắt trang trước bảng, hãy sửa đổi phông chữ`PageBreakBefore` tài sản như đã chứng minh.
 
 ### Aspose.Words có tương thích với các định dạng tài liệu khác nhau không?
 Chắc chắn rồi! Aspose.Words for Java hỗ trợ nhiều định dạng tài liệu khác nhau, khiến nó trở thành lựa chọn linh hoạt cho việc quản lý tài liệu.

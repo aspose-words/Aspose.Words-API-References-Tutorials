@@ -80,7 +80,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-Các`AppendDocument` phương pháp này có hai tham số:
+ Các`AppendDocument` phương pháp này có hai tham số:
 1. Tài liệu nguồn: Tài liệu bạn muốn thêm vào.
 2.  Chế độ định dạng nhập: Tham số này chỉ định cách định dạng nên được xử lý. Ở đây, chúng tôi đang sử dụng`KeepSourceFormatting` để duy trì định dạng của tài liệu nguồn.
 

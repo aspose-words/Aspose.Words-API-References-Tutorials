@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Start een tabel
+//Start een tabel
 Table table = builder.startTable();
 
 // Cellen en inhoud invoegen
@@ -146,7 +146,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Voeg een inhoudsopgave in
+// Inhoudsopgave invoegen
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
 // Documentinhoud toevoegen

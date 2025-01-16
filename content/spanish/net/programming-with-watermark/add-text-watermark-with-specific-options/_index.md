@@ -105,7 +105,7 @@ Aspose.Words permite agregar una marca de agua a la vez. Para agregar varias mar
 
 ### ¿Puedo ajustar la posición de la marca de agua?
 
-El`WatermarkLayout`La propiedad determina la orientación, pero no se admiten ajustes de posicionamiento precisos de forma directa. Es posible que deba utilizar otras técnicas para lograr una ubicación exacta.
+ El`WatermarkLayout`La propiedad determina la orientación, pero no se admiten ajustes de posicionamiento precisos de forma directa. Es posible que deba utilizar otras técnicas para lograr una ubicación exacta.
 
 ### ¿Qué pasa si necesito una marca de agua semitransparente?
 

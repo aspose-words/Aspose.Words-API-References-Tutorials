@@ -112,7 +112,7 @@ E aí está! Você personalizou com sucesso uma única série de gráficos em um
 Aspose.Words para .NET é uma biblioteca poderosa que permite criar, editar, converter e manipular documentos do Word programaticamente.
 
 ### Posso usar o Aspose.Words gratuitamente?
- Sim, você pode começar com um[teste gratuito](https://releases.aspose.com/).
+Sim, você pode começar com um[teste gratuito](https://releases.aspose.com/).
 
 ### Como obtenho suporte para o Aspose.Words?
  Você pode obter suporte da comunidade Aspose em seu[fórum](https://forum.aspose.com/c/words/8).

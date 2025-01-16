@@ -49,7 +49,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Därefter infogar vi några celler i vårt dokument och ställer in deras justering. Detta är avgörande för att säkerställa att Markdown-exporten behåller korrekt justering.
 
 ```csharp
-// Infoga en cell och ställ in justering till höger.
+// Infoga en cell och ställ in justeringen till höger.
 builder.InsertCell();
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 builder.Write("Cell1");
@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Steg 4: Använd automatisk justering av tabellinnehåll
 
-De`Auto`alignment alternativet tar justeringen från första stycket i motsvarande tabellkolumn. Detta kan vara praktiskt när du har blandade justeringar i en enda tabell.
+ De`Auto`alignment alternativet tar justeringen från första stycket i motsvarande tabellkolumn. Detta kan vara praktiskt när du har blandade justeringar i en enda tabell.
 
 ```csharp
 // Ställ in justering på Auto.

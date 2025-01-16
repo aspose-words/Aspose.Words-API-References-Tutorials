@@ -7,7 +7,6 @@ type: docs
 weight: 17
 url: /hi/python-net/document-combining-and-comparison/manage-digital-signatures/
 ---
-
 ## डिजिटल हस्ताक्षर का परिचय
 
 डिजिटल हस्ताक्षर हस्तलिखित हस्ताक्षरों के इलेक्ट्रॉनिक समकक्ष के रूप में कार्य करते हैं। वे इलेक्ट्रॉनिक दस्तावेजों की प्रामाणिकता, अखंडता और उत्पत्ति को सत्यापित करने का एक तरीका प्रदान करते हैं। जब कोई दस्तावेज़ डिजिटल रूप से हस्ताक्षरित होता है, तो दस्तावेज़ की सामग्री के आधार पर एक क्रिप्टोग्राफ़िक हैश उत्पन्न होता है। इस हैश को तब हस्ताक्षरकर्ता की निजी कुंजी का उपयोग करके एन्क्रिप्ट किया जाता है, जिससे डिजिटल हस्ताक्षर बनता है। संबंधित सार्वजनिक कुंजी वाला कोई भी व्यक्ति हस्ताक्षर को सत्यापित कर सकता है और दस्तावेज़ की प्रामाणिकता का पता लगा सकता है।
@@ -25,7 +24,7 @@ url: /hi/python-net/document-combining-and-comparison/manage-digital-signatures/
 2. आवश्यक मॉड्यूल आयात करें: अपनी पायथन स्क्रिप्ट में आवश्यक मॉड्यूल आयात करें:
    
    ```python
-   import asposewords
+   import aspose.words as aw
    ```
 
 ## दस्तावेज़ लोड करना और उन तक पहुँचना
@@ -33,7 +32,7 @@ url: /hi/python-net/document-combining-and-comparison/manage-digital-signatures/
 डिजिटल हस्ताक्षर जोड़ने या सत्यापित करने से पहले, आपको Aspose.Words का उपयोग करके दस्तावेज़ लोड करना होगा:
 
 ```python
-document = asposewords.Document("document.docx")
+document = aw.Document("document.docx")
 ```
 
 ## दस्तावेज़ों में डिजिटल हस्ताक्षर जोड़ना
@@ -41,16 +40,14 @@ document = asposewords.Document("document.docx")
 किसी दस्तावेज़ में डिजिटल हस्ताक्षर जोड़ने के लिए, आपको डिजिटल प्रमाणपत्र की आवश्यकता होगी:
 
 ```python
-certificate = asposewords.Certificate("certificate.pfx", "password")
+certificate_holder = aw.digitalsignatures.CertificateHolder.create("certificate.pfx", "password")
 ```
 
 अब, दस्तावेज़ पर हस्ताक्षर करें:
 
 ```python
-digital_signature = asposewords.DigitalSignature()
-digital_signature.certificate = certificate
-document.digital_signatures.add(digital_signature)
-document.save("signed_document.docx")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
 ```
 
 ## डिजिटल हस्ताक्षरों का सत्यापन
@@ -65,26 +62,14 @@ for signature in document.digital_signatures:
         print("Signature is invalid.")
 ```
 
-## डिजिटल हस्ताक्षर हटाना
-
-किसी दस्तावेज़ से डिजिटल हस्ताक्षर हटाने के लिए:
-
-```python
-document.digital_signatures.clear()
-document.save("unsigned_document.docx")
-```
-
-## दस्तावेज़ की प्रामाणिकता सुनिश्चित करना
-
-डिजिटल हस्ताक्षर दस्तावेज़ के स्रोत और अखंडता की पुष्टि करके दस्तावेज़ की प्रामाणिकता सुनिश्चित करते हैं। वे छेड़छाड़ और अनधिकृत संशोधनों से सुरक्षा प्रदान करते हैं।
-
 ## डिजिटल हस्ताक्षर के स्वरूप को अनुकूलित करना
 
 आप डिजिटल हस्ताक्षरों के स्वरूप को अनुकूलित कर सकते हैं:
 
 ```python
-digital_signature.options.comments = "Approved by John Doe"
-digital_signature.options.sign_date_time = datetime.now()
+sign_options = aw.digitalsignatures.SignOptions()
+sign_options.comments = 'Comment'
+sign_options.sign_time = datetime.datetime.now()
 ```
 
 ## निष्कर्ष

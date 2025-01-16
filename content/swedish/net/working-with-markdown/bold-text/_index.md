@@ -33,7 +33,7 @@ Låt oss nu bryta ner processen att göra text fetstil i ett Word-dokument med A
 
 ## Steg 1: Initiera DocumentBuilder
 
-De`DocumentBuilder` klass ger ett snabbt och enkelt sätt att lägga till innehåll i ditt dokument. Låt oss initiera det.
+ De`DocumentBuilder` klass ger ett snabbt och enkelt sätt att lägga till innehåll i ditt dokument. Låt oss initiera det.
 
 ```csharp
 // Använd en dokumentbyggare för att lägga till innehåll i dokumentet.

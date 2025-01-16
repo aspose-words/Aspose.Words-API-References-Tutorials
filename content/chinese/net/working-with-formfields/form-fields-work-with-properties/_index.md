@@ -53,7 +53,7 @@ Install-Package Aspose.Words
 
 ### 步骤2.1：指定文档目录
 
-设置文档目录的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档存储的实际路径。
+设置文档目录的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用存储文档的实际路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

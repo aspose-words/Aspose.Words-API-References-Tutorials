@@ -71,7 +71,7 @@ builder.StartBookmark("FineBookmark");
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-The`Writeln` метод добавляет в документ новый абзац с указанным текстом.
+ The`Writeln` метод добавляет в документ новый абзац с указанным текстом.
 
 ## Шаг 5: Завершите закладку
 
@@ -81,7 +81,7 @@ The`Writeln` метод добавляет в документ новый абз
 builder.EndBookmark("FineBookmark");
 ```
 
-The`EndBookmark` метод завершает закладку, которую мы начали ранее.
+ The`EndBookmark` метод завершает закладку, которую мы начали ранее.
 
 ## Шаг 6: Сохраните документ
 

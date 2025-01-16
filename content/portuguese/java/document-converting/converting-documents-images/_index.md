@@ -60,7 +60,7 @@ try {
 ```
 
 Explicação:
-- O`try-catch` O bloco garante que quaisquer erros encontrados durante o carregamento do documento sejam detectados e gerenciados adequadamente.
+-  O`try-catch` bloco garante que quaisquer erros encontrados durante o carregamento do documento sejam detectados e gerenciados adequadamente.
 
 ## Etapa 2: inicializar ImageSaveOptions
 
@@ -71,7 +71,7 @@ Depois que o documento for carregado, o próximo passo é configurar as opções
 `ImageSaveOptions` é uma classe que permite especificar como o documento deve ser salvo como uma imagem.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 Explicação:

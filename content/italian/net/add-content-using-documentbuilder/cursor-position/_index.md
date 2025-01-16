@@ -9,7 +9,7 @@ url: /it/net/add-content-using-documentbuilder/cursor-position/
 ---
 ## Introduzione
 
-Ciao, colleghi programmatori! Vi siete mai trovati immersi in un progetto, alle prese con documenti Word nelle vostre applicazioni .NET? Non siete soli. Ci siamo passati tutti, grattandoci la testa, cercando di capire come manipolare i file Word senza perdere la testa. Oggi ci immergiamo nel mondo di Aspose.Words per .NET, una fantastica libreria che semplifica la gestione dei documenti Word a livello di programmazione. Analizzeremo come gestire la posizione del cursore in un documento Word utilizzando questo fantastico strumento. Quindi, prendete il vostro caffè e iniziamo a programmare!
+Ciao, colleghi programmatori! Vi siete mai trovati immersi in un progetto, alle prese con documenti Word nelle vostre applicazioni .NET? Non siete soli. Ci siamo passati tutti, a grattarci la testa, cercando di capire come manipolare i file Word senza perdere la testa. Oggi ci immergiamo nel mondo di Aspose.Words per .NET, una fantastica libreria che semplifica la gestione dei documenti Word a livello di programmazione. Analizzeremo come gestire la posizione del cursore in un documento Word utilizzando questo fantastico strumento. Quindi, prendete il vostro caffè e iniziamo a programmare!
 
 ## Prerequisiti
 

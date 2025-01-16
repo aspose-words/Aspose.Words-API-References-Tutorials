@@ -59,7 +59,7 @@ ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
 
  Hier,`PageSet` specificeert het bereik van de pagina's die moeten worden opgeslagen, en`PageSavingCallback` verwijst naar onze aangepaste callbackklasse.
 
-## Stap 4: Implementeer de paginabesparende callback
+## Stap 4: Implementeer de pagina-opslag-callback
 
 Laten we nu de callbackklasse implementeren die regelt hoe elke pagina wordt opgeslagen.
 

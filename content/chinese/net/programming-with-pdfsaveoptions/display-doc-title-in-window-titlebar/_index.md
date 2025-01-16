@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-在此步骤中，指定文档的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档存储的实际路径。
+在此步骤中，指定文档的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用存储文档的实际路径。
 
 ## 步骤 2：配置 PDF 保存选项
 

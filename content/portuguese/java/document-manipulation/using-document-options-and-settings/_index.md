@@ -2,7 +2,7 @@
 title: Usando opções e configurações de documento no Aspose.Words para Java
 linktitle: Usando opções e configurações de documentos
 second_title: API de processamento de documentos Java Aspose.Words
-description: Desbloqueie o poder do Aspose.Words para Java. Domine as opções e configurações do documento para um gerenciamento de documentos perfeito. Otimize, personalize e muito mais.
+description: Desbloqueie o poder do Aspose.Words para Java. Domine as opções e configurações do documento para gerenciamento de documentos sem interrupções. Otimize, personalize e muito mais.
 type: docs
 weight: 31
 url: /pt/java/document-manipulation/using-document-options-and-settings/

@@ -15,7 +15,7 @@ Ve světě zpracování dokumentů může být správa obousměrného (Bidi) tex
 
 Než se ponoříme do kódu, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[Stránka Aspose Downloads](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[Stránka Aspose Downloads](https://releases.aspose.com/words/net/).
 2. .NET Framework nebo .NET Core: Ujistěte se, že máte pro spouštění příkladů nastaveno kompatibilní prostředí .NET.
 3. Základní znalost C#: Znalost programovacího jazyka C# a základních operací v .NET.
 

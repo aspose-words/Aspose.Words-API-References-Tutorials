@@ -21,7 +21,7 @@ Az oktatóanyagok az Aspose.Words funkcióinak széles skáláját fedik le, az 
 ### Fókuszban a gyakorlati megvalósítás: 
 Az oktatóanyagok a gyakorlati megvalósításra összpontosítanak, így megtanulhatod, hogyan kell az Aspose.Words-t használni valós dokumentumfeldolgozási problémák megoldására. Ez segít abban, hogy gyorsan felgyorsuljon, és elkezdhesse az Aspose.Words használatát a dokumentumfeldolgozási feladatok automatizálására.
 ### Szilárd alap a robusztus és méretezhető dokumentumfeldolgozási megoldásokhoz:
-Az oktatóanyagok szilárd alapot biztosítanak a robusztus és méretezhető dokumentumfeldolgozási megoldások kidolgozásához. Az oktatóanyagok ugyanis lefedik a dokumentumfeldolgozás alapvető fogalmait, mint például a táblázatfeldolgozás, a dokumentumok egyesítése és a vízjelezés.
+Az oktatóanyagok szilárd alapot biztosítanak a robusztus és méretezhető dokumentumfeldolgozási megoldások kiépítéséhez. Az oktatóanyagok ugyanis lefedik a dokumentumfeldolgozás alapvető fogalmait, mint például a táblázatfeldolgozás, a dokumentumok egyesítése és a vízjelezés.
 ## Dokumentumfeldolgozási oktatóanyagok
 ### [Szövegszerkesztés](./word-processing/) 
 Tanuljon szövegszerkesztést az Aspose.Words for Java segítségével. Dokumentumokat hozhat létre, szerkeszthet és kezelhet programozottan. Fejlessze dokumentumfeldolgozási készségeit még ma.

@@ -15,7 +15,7 @@ Creare tabelle con bordi personalizzati in un documento Word può rendere il tuo
 
 Prima di immergerti nel tutorial, assicurati di avere i seguenti prerequisiti:
 
-1.  Aspose.Words per la libreria .NET: Scarica e installa il[Aspose.Words per .NET](https://releases.aspose.com/words/net/) biblioteca.
+1.  Aspose.Words per la libreria .NET: Scarica e installa[Aspose.Words per .NET](https://releases.aspose.com/words/net/) biblioteca.
 2. Ambiente di sviluppo: assicurati di avere un ambiente di sviluppo come Visual Studio configurato sul tuo computer.
 3. Conoscenza di base di C#: sarà utile avere familiarità con il linguaggio di programmazione C#.
 4. Directory dei documenti: directory in cui verranno archiviati i documenti di input e output.

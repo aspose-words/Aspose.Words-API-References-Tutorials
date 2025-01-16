@@ -20,7 +20,7 @@ W dzisiejszym cyfrowym krajobrazie zarządzanie i przetwarzanie dokumentów Word
 Aby rozpocząć tę podróż automatyzacji, musisz mieć zainstalowany Aspose.Words dla Pythona. Możesz go pobrać ze strony[Strona internetowa Aspose](https://releases.aspose.com/words/python/). Po zainstalowaniu możesz zainicjować swój projekt Python i zaimportować niezbędne moduły.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Zrozumienie makr VBA i ich roli
@@ -46,7 +46,7 @@ Tworzenie dokumentów programowo jest uproszczone dzięki Aspose.Words Python. M
 
 ```python
 # Create a new document
-document = aspose.words.Document()
+document = aw.Document()
 # Add a paragraph
 paragraph = document.sections[0].body.add_paragraph("Hello, Aspose!")
 ```
@@ -57,7 +57,7 @@ Makra VBA zintegrowane z Aspose.Words Python otwierają drzwi do ekstrakcji i ma
 
 ```vba
 Sub ExtractData()
-    Dim doc As New Aspose.Words.Document
+    Dim doc As New aw.Document
     Dim content As String
     content = doc.Range.Text
     ' Process extracted content

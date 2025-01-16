@@ -49,7 +49,7 @@ doc.print("printerName");
 
 ```java
 //ドキュメントをPDFに変換する
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 置き換えることができます`SaveFormat.PDF`レンダリングに必要な形式で。

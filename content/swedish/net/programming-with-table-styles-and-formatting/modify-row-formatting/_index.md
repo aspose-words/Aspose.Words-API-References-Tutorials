@@ -61,7 +61,7 @@ När tabellen nu är tillgänglig är nästa steg att hämta den första raden. 
 Row firstRow = table.FirstRow;
 ```
 
-De`FirstRow` egenskapen ger oss den första raden i tabellen. Nu är vi redo att börja ändra dess formatering.
+ De`FirstRow` egenskapen ger oss den första raden i tabellen. Nu är vi redo att börja ändra dess formatering.
 
 ## Steg 4: Ändra radgränser
 

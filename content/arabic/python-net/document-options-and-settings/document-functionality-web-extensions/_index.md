@@ -18,7 +18,7 @@ url: /ar/python-net/document-options-and-settings/document-functionality-web-ext
 
 - فهم أساسي لبرمجة بايثون.
 -  مرجع API لـ Aspose.Words لـ Python (متاح على[هنا](https://reference.aspose.com/words/python-net/).
-- الوصول إلى مكتبة Aspose.Words لـ Python (التنزيل من[هنا](https://releases.aspose.com/words/python/).
+-  الوصول إلى مكتبة Aspose.Words لـ Python (التنزيل من[هنا](https://releases.aspose.com/words/python/).
 
 ## إعداد Aspose.Words لـ Python
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. استيراد المكتبة في البرنامج النصي Python الخاص بك.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## إنشاء مستند جديد
@@ -42,7 +42,7 @@ import aspose.words
 لنبدأ بإنشاء مستند جديد باستخدام Aspose.Words:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## إضافة محتوى إلى المستند
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 يمكنك بسهولة إضافة محتوى إلى المستند باستخدام Aspose.Words:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ builder.writeln("Hello, world!")
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## إدراج ملحقات الويب
-
-لإدراج ملحق ويب في المستند، اتبع الخطوات التالية:
-
-1. إنشاء امتداد الويب باستخدام HTML وCSS وJavaScript.
-2. تحويل ملحق الويب إلى سلسلة مشفرة بتنسيق base64.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. أدخل ملحق الويب في المستند:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## التفاعل مع ملحقات الويب
@@ -98,7 +78,7 @@ builder.insert_node(extension_node)
 بعد دمج ملحقات الويب وإجراء التعديلات اللازمة، يمكنك حفظ المستند باستخدام التنسيقات المختلفة التي يدعمها Aspose.Words:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## نصائح لتحسين الأداء

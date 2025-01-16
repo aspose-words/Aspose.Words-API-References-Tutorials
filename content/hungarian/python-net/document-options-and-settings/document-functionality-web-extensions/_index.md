@@ -18,7 +18,7 @@ Mielőtt belemerülnénk a műszaki részletekbe, győződjön meg arról, hogy 
 
 - A Python programozás alapjai.
 -  Aspose.Words for Python API hivatkozás (elérhető a következő címen:[itt](https://reference.aspose.com/words/python-net/).
-- Hozzáférés az Aspose.Words for Python könyvtárhoz (letöltés innen:[itt](https://releases.aspose.com/words/python/).
+-  Hozzáférés az Aspose.Words for Python könyvtárhoz (letöltés innen:[itt](https://releases.aspose.com/words/python/).
 
 ## Az Aspose.Words beállítása a Python számára
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Importálja a könyvtárat a Python-szkriptbe.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Új dokumentum létrehozása
@@ -42,7 +42,7 @@ import aspose.words
 Kezdjük egy új dokumentum létrehozásával az Aspose.Words használatával:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Tartalom hozzáadása a dokumentumhoz
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Könnyen hozzáadhat tartalmat a dokumentumhoz az Aspose.Words használatával:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ A stílus és a formázás döntő szerepet játszik a dokumentumok bemutatásá
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Webbővítmények beillesztése
-
-Ha webbővítményt szeretne beilleszteni a dokumentumba, kövesse az alábbi lépéseket:
-
-1. Hozza létre a webbővítményt HTML, CSS és JavaScript használatával.
-2. A webbővítmény konvertálása base64 kódolású karaktersorozattá.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Illessze be a webbővítményt a dokumentumba:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Interakció a webbővítményekkel
@@ -98,12 +78,12 @@ A webbővítmények dinamikusan módosíthatják a dokumentum tartalmát. Haszn�
 A webbővítmények beépítése és a szükséges módosítások elvégzése után a dokumentumot az Aspose.Words által támogatott különféle formátumokkal mentheti:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Tippek a teljesítmény optimalizálásához
 
-A webbővítmények használatakor az optimális teljesítmény biztosítása érdekében vegye figyelembe a következő tippeket:
+webbővítmények használatakor az optimális teljesítmény biztosítása érdekében vegye figyelembe a következő tippeket:
 
 - Minimalizálja a külső erőforrásigényeket.
 - Használjon aszinkron betöltést összetett bővítményekhez.

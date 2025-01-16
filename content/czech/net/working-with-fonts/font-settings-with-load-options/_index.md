@@ -55,7 +55,7 @@ Je to jako nastavit pravidla pro to, jak se má náš dokument načítat.
 
 ## Krok 3: Nakonfigurujte nastavení písma
 
- Nyní nakonfigurujeme nastavení písma. Vytvoříme instanci`FontSettings`třídu a přiřaďte ji k našim možnostem zatížení. Tento krok je zásadní, protože určuje, jak se v našem dokumentu zachází s písmy.
+ Nyní nakonfigurujeme nastavení písma. Vytvoříme instanci`FontSettings`třídy a přiřaďte ji k našim možnostem zatížení. Tento krok je zásadní, protože určuje, jak se v našem dokumentu zachází s písmy.
 
 ```csharp
 loadOptions.FontSettings = new FontSettings();
@@ -86,7 +86,7 @@ Konfigurace nastavení písem zajistí, že si vaše dokumenty zachovají konzis
  Ano, můžete použít vlastní písma zadáním jejich cest v`FontSettings` třída.
 
 ### Co se stane, když písmo použité v dokumentu není k dispozici?
-Aspose.Words nahradí chybějící písmo podobným písmem dostupným ve vašem systému, ale konfigurace nastavení písma může pomoci tento proces řídit efektivněji.
+Aspose.Words nahradí chybějící písmo podobným písmem dostupným ve vašem systému, ale konfigurace nastavení písma může pomoci řídit tento proces efektivněji.
 
 ### Je Aspose.Words for .NET kompatibilní se všemi verzemi dokumentů aplikace Word?
 Ano, Aspose.Words for .NET podporuje širokou škálu formátů dokumentů Word, včetně DOC, DOCX a dalších.

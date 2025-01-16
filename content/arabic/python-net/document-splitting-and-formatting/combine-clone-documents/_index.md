@@ -11,7 +11,7 @@ url: /ar/python-net/document-splitting-and-formatting/combine-clone-documents/
 
 ## تثبيت Aspose.Words
 
-قبل أن نتعمق في التفاصيل، عليك إعداد Aspose.Words للغة Python. يمكنك تنزيله وتثبيته باستخدام الرابط التالي:[تنزيل Aspose.Words لـ Python](https://releases.aspose.com/words/python/). 
+ قبل أن نتعمق في التفاصيل، عليك إعداد Aspose.Words للغة Python. يمكنك تنزيله وتثبيته باستخدام الرابط التالي:[تنزيل Aspose.Words لـ Python](https://releases.aspose.com/words/python/). 
 
 ## دمج المستندات
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## التقنيات المتقدمة
-
-### استبدال النص
-
-يتيح لك Aspose.Words العثور على نص واستبداله في المستندات بسهولة:
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### تعديل التنسيق
+## تعديل التنسيق
 
 يمكنك أيضًا تعديل التنسيق باستخدام Aspose.Words:
 
@@ -127,7 +108,7 @@ Aspose.Words for Python هي مكتبة متعددة الاستخدامات تت
  استخدم`range.replace()` الطريقة مع الخيارات المناسبة للعثور على النص واستبداله بكفاءة.
 
 ### هل يدعم Aspose.Words تعديل التنسيق؟
-بالتأكيد، يمكنك تعديل التنسيق باستخدام طرق مثل`run.font.size` و`run.font.bold`.
+ بالتأكيد، يمكنك تعديل التنسيق باستخدام طرق مثل`run.font.size` و`run.font.bold`.
 
 ### أين يمكنني الوصول إلى وثائق Aspose.Words؟
  يمكنك العثور على وثائق شاملة في[مرجع API لـ Aspose.Words لـ Python](https://reference.aspose.com/words/python-net/).

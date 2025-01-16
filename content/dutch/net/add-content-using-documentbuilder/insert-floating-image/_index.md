@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-De`Document` object vertegenwoordigt het Word-document en de`DocumentBuilder` helpt bij het toevoegen van inhoud.
+ De`Document` object vertegenwoordigt het Word-document en de`DocumentBuilder` helpt bij het toevoegen van inhoud.
 
 ## Stap 3: Definieer het afbeeldingspad
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 Dit is wat elke parameter betekent:
-- `imagePath`Het pad naar uw afbeeldingsbestand.
+- `imagePath`: Het pad naar uw afbeeldingsbestand.
 - `RelativeHorizontalPosition.Margin`: De horizontale positie ten opzichte van de marge.
 - `100`: De horizontale offset vanaf de marge (in punten).
 - `RelativeVerticalPosition.Margin`: De verticale positie ten opzichte van de marge.

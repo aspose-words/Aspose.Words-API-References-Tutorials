@@ -15,7 +15,7 @@ Ve světě manipulace s dokumenty může nastavení vlastních složek písem zn
 
 Než začneme, ujistěte se, že máme vše, co potřebujeme. Zde je rychlý kontrolní seznam:
 
--  Aspose.Words for .NET: Tuto knihovnu musíte mít nainstalovanou. Pokud ho ještě nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Tuto knihovnu musíte mít nainstalovanou. Pokud ho ještě nemáte, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Ujistěte se, že máte funkční vývojové prostředí .NET, jako je Visual Studio.
 -  Adresář dokumentů: Ujistěte se, že máte adresář pro své dokumenty. Pro naše příklady použijeme`"YOUR DOCUMENT DIRECTORY"` jako zástupný symbol pro tuto cestu.
 

@@ -130,7 +130,7 @@ Esto firma el documento y lo guarda como un archivo nuevo.
 ## Preguntas frecuentes
 
 ### ¿Puedo personalizar la apariencia de la línea de firma?
-¡Por supuesto! Puedes modificar varias opciones en el`SignatureLineOptions` para adaptarse a sus necesidades.
+ ¡Por supuesto! Puedes modificar varias opciones en el`SignatureLineOptions`para adaptarse a sus necesidades.
 
 ### ¿Qué pasa si no tengo un certificado PFX?
 Necesitará obtener uno de una autoridad de certificación de confianza. Es esencial para firmar documentos digitalmente.

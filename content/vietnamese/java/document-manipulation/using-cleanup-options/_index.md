@@ -150,7 +150,7 @@ Tùy chọn dọn dẹp trong Aspose.Words for Java là các thiết lập cho p
 
 ###  Mục đích của việc này là gì?`REMOVE_UNUSED_REGIONS` cleanup option?
 
-Các`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Tùy chọn này được sử dụng để xóa các vùng trong tài liệu không có dữ liệu tương ứng trong quá trình trộn thư. Nó giúp giữ cho tài liệu của bạn gọn gàng bằng cách loại bỏ các chỗ giữ chỗ không sử dụng.
+ Các`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Tùy chọn này được sử dụng để xóa các vùng trong tài liệu không có dữ liệu tương ứng trong quá trình trộn thư. Nó giúp giữ cho tài liệu của bạn gọn gàng bằng cách loại bỏ các chỗ giữ chỗ không sử dụng.
 
 ### Tôi có thể xóa các hàng bảng trống khỏi tài liệu bằng Aspose.Words cho Java không?
 
@@ -166,7 +166,7 @@ Các`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Tùy chọn này được s�
 
 ###  Sự khác biệt giữa là gì?`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-Các`REMOVE_EMPTY_FIELDS` tùy chọn xóa các trường hợp nhất không có dữ liệu hoặc trống trong quá trình hợp nhất thư. Mặt khác,`REMOVE_UNUSED_FIELDS`Tùy chọn này xóa các trường hợp hợp nhất không được điền dữ liệu trong quá trình hợp nhất. Lựa chọn giữa chúng phụ thuộc vào việc bạn muốn xóa các trường không có nội dung hay các trường không được sử dụng trong thao tác hợp nhất cụ thể.
+ Các`REMOVE_EMPTY_FIELDS` tùy chọn xóa các trường hợp nhất không có dữ liệu hoặc trống trong quá trình hợp nhất thư. Mặt khác,`REMOVE_UNUSED_FIELDS`Tùy chọn này xóa các trường hợp hợp nhất không được điền dữ liệu trong quá trình hợp nhất. Lựa chọn giữa chúng phụ thuộc vào việc bạn muốn xóa các trường không có nội dung hay các trường không được sử dụng trong thao tác hợp nhất cụ thể.
 
 ### Làm thế nào tôi có thể bật tính năng xóa đoạn văn có dấu chấm câu?
 

@@ -38,23 +38,11 @@ Oto przykładowy fragment kodu, który pomoże Ci zacząć:
 // Importuj wymagane pakiety
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Zainicjuj nowy dokument
-        Document doc = new Document();
-
-        // Utwórz listę
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Dodaj elementy listy
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Zapisz dokument
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Modyfikowanie listy dokumentów
@@ -69,21 +57,18 @@ Po utworzeniu listy dokumentów może być konieczne jej zmodyfikowanie poprzez 
 Oto fragment kodu umożliwiający modyfikację listy dokumentów:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Załaduj istniejący dokument
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Uzyskaj dostęp do listy
-        List list = doc.getLists().get(0);
-
-        // Dodaj nowy element
-        list.getListItems().add("New Item");
-
-        // Zapisz zmodyfikowany dokument
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Sprawdź, czy akapit jest częścią listy.
+    if (paragraph.isListItem()) {
+        // Zaktualizuj ostatni akapit listy.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Wyodrębnianie informacji z listy dokumentów
@@ -97,23 +82,21 @@ W niektórych przypadkach może być konieczne wyodrębnienie informacji z listy
 Oto fragment kodu umożliwiający wyodrębnienie informacji z listy dokumentów:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Załaduj dokument
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Uzyskaj dostęp do listy
-        List list = doc.getLists().get(0);
-
-        // Przejrzyj elementy listy i wydrukuj je
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Często zadawane pytania (FAQ)
+## Wniosek
+
+W tym kompleksowym przewodniku zbadaliśmy świat pracy z listami dokumentów przy użyciu Aspose.Words for Java. Nauczyłeś się, jak tworzyć, modyfikować i wyodrębniać informacje z list dokumentów, wszystko z mocą i elastycznością Aspose.Words for Java. Zacznij wdrażać te techniki w swoich projektach Java już dziś i usprawnij zadania automatyzacji dokumentów.
+
+
+## Najczęściej zadawane pytania
 
 ### Jak dodać punkty wypunktowane do listy dokumentu?
  Aby dodać punkty wypunktowania do listy dokumentów, użyj odpowiedniego ListTemplate podczas tworzenia listy. Na przykład użyj`ListTemplate.BULLET_DEFAULT` zamiast`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ Aby przekonwertować listę dokumentów do formatu PDF, po prostu załaduj dokum
 
 ### Czy Aspose.Words for Java obsługuje pracę z tabelami w dokumentach?
 Tak, Aspose.Words for Java oferuje rozbudowane wsparcie dla pracy z tabelami, umożliwiając bezproblemowe tworzenie, modyfikowanie i wyodrębnianie danych tabelarycznych.
-
-## Wniosek
-
-W tym kompleksowym przewodniku zbadaliśmy świat pracy z listami dokumentów przy użyciu Aspose.Words for Java. Nauczyłeś się, jak tworzyć, modyfikować i wyodrębniać informacje z list dokumentów, wszystko z mocą i elastycznością Aspose.Words for Java. Zacznij wdrażać te techniki w swoich projektach Java już dziś i usprawnij zadania automatyzacji dokumentów.

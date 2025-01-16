@@ -9,7 +9,7 @@ url: /hu/net/find-and-replace-text/replace-text-in-footer/
 ---
 ## Bevezetés
 
-Szia! Készen áll arra, hogy belemerüljön a dokumentumkezelés világába az Aspose.Words for .NET használatával? Ma egy érdekes feladattal fogunk foglalkozni: szöveg cseréjével egy Word-dokumentum láblécében. Ez az oktatóanyag lépésről lépésre végigvezeti Önt a teljes folyamaton. Akár tapasztalt fejlesztő, akár csak kezdő, ezt az útmutatót hasznosnak és könnyen követhetőnek fogja találni. Kezdjük tehát a láblécek szövegcseréjének elsajátítását az Aspose.Words for .NET segítségével!
+Szia! Készen áll arra, hogy belemerüljön a dokumentumkezelés világába az Aspose.Words for .NET használatával? Ma egy érdekes feladattal fogunk foglalkozni: szöveg cseréjével egy Word-dokumentum láblécében. Ez az oktatóanyag lépésről lépésre végigvezeti Önt a teljes folyamaton. Akár tapasztalt fejlesztő, akár csak kezdő, ezt az útmutatót hasznosnak és könnyen követhetőnek fogja találni. Kezdjük tehát a láblécekben található szövegcsere elsajátítását az Aspose.Words for .NET segítségével!
 
 ## Előfeltételek
 

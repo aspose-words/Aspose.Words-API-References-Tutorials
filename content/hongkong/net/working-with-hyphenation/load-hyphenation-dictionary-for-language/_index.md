@@ -100,7 +100,7 @@ doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 
 ### 我可以將此方法用於其他語言嗎？
 
-是的，您可以透過指定正確的語言代碼和字典檔案來註冊各種語言的連字符詞典。
+是的，您可以透過指定正確的語言代碼和字典檔案來註冊各種語言的連字字典。
 
 ### Aspose.Words 可以儲存為哪些文件格式？
 

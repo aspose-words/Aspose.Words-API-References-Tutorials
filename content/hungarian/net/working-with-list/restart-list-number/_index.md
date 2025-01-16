@@ -112,7 +112,7 @@ Teljesen! Az Aspose.Words különféle listasablonokat kínál, például golyó
 
 ### Bármely számnál újraindíthatom a számozást?
 
- Igen, a kezdő számot tetszőleges egész számra állíthatja a gombbal`StartAt` a listaszint tulajdonsága.
+ Igen, a kezdő számot tetszőleges egész számra állíthatja a gombbal`StartAt` listaszint tulajdonsága.
 
 ### Lehetséges-e különböző formázás a különböző listaszintekhez?
 

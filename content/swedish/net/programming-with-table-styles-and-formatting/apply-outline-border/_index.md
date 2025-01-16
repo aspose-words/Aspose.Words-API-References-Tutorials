@@ -100,7 +100,7 @@ table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 
 ## Steg 7: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet.
+Spara slutligen det ändrade dokumentet.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
@@ -129,4 +129,4 @@ Med dessa färdigheter kan du förbättra den visuella presentationen av dina ta
  Absolut! Du kan använda vilken färg som helst i`System.Drawing.Color` klass.
 
 ### Hur centrerar jag bordet horisontellt?  
-De`table.Alignment = TableAlignment.Center;` raden i koden centrerar tabellen horisontellt på sidan.
+ De`table.Alignment = TableAlignment.Center;` raden i koden centrerar tabellen horisontellt på sidan.

@@ -91,7 +91,7 @@ Nee, het overslaan van afbeeldingen heeft alleen invloed op de afbeeldingen. De 
 
 ### Kan ik deze functie gebruiken met andere documentformaten?
 
-De`SkipPdfImages` optie is specifiek voor PDF-documenten. Voor andere formaten zijn verschillende opties en methoden beschikbaar.
+ De`SkipPdfImages` optie is specifiek voor PDF-documenten. Voor andere formaten zijn verschillende opties en methoden beschikbaar.
 
 ### Hoe kan ik controleren of afbeeldingen zijn overgeslagen?
 

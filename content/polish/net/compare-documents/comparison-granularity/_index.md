@@ -56,7 +56,7 @@ Teraz porównajmy dokumenty używając metody Compare klasy Document. Zmiany zos
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-Ten`Compare`Metoda porównuje dokument A z dokumentem B i zapisuje zmiany w dokumencie A. Można określić nazwisko autora i datę porównania w celach informacyjnych.
+ Ten`Compare`Metoda porównuje dokument A z dokumentem B i zapisuje zmiany w dokumencie A. Można określić nazwisko autora i datę porównania w celach informacyjnych.
 
 ## Wniosek
 

@@ -47,7 +47,7 @@ Låt oss nu dela upp processen i lätta att följa steg. I slutet av den här gu
 
 ### Skapa ett nytt dokument
 
- I din huvudprogramfil börjar du med att skapa en ny instans av`Document`klass. Detta kommer att bli vår tomma duk.
+ I din huvudprogramfil börjar du med att skapa en ny instans av`Document` klass. Detta kommer att bli vår tomma duk.
 
 ```csharp
 Document doc = new Document();
@@ -113,7 +113,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ### Hur kommer jag igång med Aspose.Words för .NET?
 
- Du kan komma igång genom att ladda ner biblioteket från[webbplats](https://releases.aspose.com/words/net/) och lägga till det i ditt .NET-projekt.
+Du kan komma igång genom att ladda ner biblioteket från[webbplats](https://releases.aspose.com/words/net/) och lägga till det i ditt .NET-projekt.
 
 ### Kan jag använda Aspose.Words gratis?
 
@@ -121,8 +121,8 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ### Var kan jag hitta fler handledningar om Aspose.Words för .NET?
 
-De[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) är ett bra ställe att hitta detaljerade tutorials och exempel.
+ De[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) är ett bra ställe att hitta detaljerade tutorials och exempel.
 
 ### Hur kan jag få support om jag stöter på problem?
 
-Du kan få stöd genom att besöka[Aspose.Words supportforum](https://forum.aspose.com/c/words/8).
+ Du kan få stöd genom att besöka[Aspose.Words supportforum](https://forum.aspose.com/c/words/8).

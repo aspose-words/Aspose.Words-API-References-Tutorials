@@ -89,7 +89,7 @@ Tutaj dodajemy tekst do dokumentu i wstawiamy podział strony, aby utworzyć dru
 
 ## Krok 5: Zapisz dokument
 
-Na koniec zapisz dokument w określonym katalogu.
+Na koniec zapisz dokument w podanym katalogu.
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");

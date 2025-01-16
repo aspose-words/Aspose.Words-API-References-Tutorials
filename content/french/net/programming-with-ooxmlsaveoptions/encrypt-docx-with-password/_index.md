@@ -54,7 +54,7 @@ Ensuite, nous devons configurer les options d'enregistrement du document. C'est 
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-Le`OoxmlSaveOptions`La classe nous permet de spécifier diverses options pour enregistrer les fichiers DOCX. Ici, nous définissons la classe`Password`propriété à`"password"` . Vous pouvez remplacer`"password"` avec le mot de passe de votre choix. Ce mot de passe sera nécessaire pour ouvrir le fichier DOCX crypté.
+ Le`OoxmlSaveOptions`La classe nous permet de spécifier diverses options pour enregistrer les fichiers DOCX. Ici, nous définissons la classe`Password`propriété à`"password"` . Vous pouvez remplacer`"password"` avec le mot de passe de votre choix. Ce mot de passe sera nécessaire pour ouvrir le fichier DOCX crypté.
 
 ## Étape 3 : Enregistrer le document crypté
 
@@ -65,7 +65,7 @@ Enfin, nous allons enregistrer le document en utilisant les options d’enregist
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-Le`Save` méthode de la`Document` La classe est utilisée pour enregistrer le document. Nous fournissons le chemin et le nom de fichier du document chiffré, ainsi que le`saveOptions` nous avons configuré précédemment. Le document est maintenant enregistré sous forme de fichier DOCX crypté.
+ Le`Save` méthode de la`Document` La classe est utilisée pour enregistrer le document. Nous fournissons le chemin et le nom de fichier du document chiffré, ainsi que le`saveOptions` nous avons configuré précédemment. Le document est maintenant enregistré sous forme de fichier DOCX crypté.
 
 ## Conclusion
 

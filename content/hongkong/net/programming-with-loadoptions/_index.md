@@ -23,4 +23,4 @@ Aspose.Words for .NET 教學課程為希望掌握使用 LoadOptions 進行文字
 | [在 Word 文件中載入編碼](./load-with-encoding/) | 了解如何使用 Aspose.Words for .NET 載入具有特定編碼的 Word 文件。附有詳細說明的分步指南。 |
 | [跳過 Pdf 影像](./skip-pdf-images/) | 了解如何使用 Aspose.Words for .NET 載入 PDF 文件時跳過圖片。請按照此逐步指南進行無縫文字擷取。 |
 | [將圖元檔轉換為 Png](./convert-metafiles-to-png/) | 透過此逐步教學課程，使用 Aspose.Words for .NET 將 Word 文件中的圖元檔案輕鬆轉換為 PNG。簡化您的文件管理。 |
-| [在Word文檔中載入Chm文件](./load-chm/) | 透過此逐步教學課程，使用 Aspose.Words for .NET 將 CHM 檔案輕鬆載入到 Word 文件中。非常適合整合您的技術文件。 |
+| [在Word文檔中載入Chm文件](./load-chm/) | 透過此逐步教學課程，使用 Aspose.Words for .NET 輕鬆將 CHM 檔案載入到 Word 文件中。非常適合整合您的技術文件。 |

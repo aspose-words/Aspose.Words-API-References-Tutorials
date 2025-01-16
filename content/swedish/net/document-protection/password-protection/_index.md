@@ -18,7 +18,7 @@ Innan vi dyker in i det tråkiga med att lösenordsskydda dina Word-dokument, fi
 1.  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket. Du kan[ladda ner den här](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: Visual Studio eller någon annan C#-utvecklingsmiljö.
 3. Grundläggande C#-kunskap: En grundläggande förståelse för C#-programmering.
-4. Aspose-licens: Få en licens från[här](https://purchase.aspose.com/buy) eller använd en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för utvärdering.
+4.  Aspose-licens: Få en licens från[här](https://purchase.aspose.com/buy) eller använd en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för utvärdering.
 
 ## Importera namnområden
 
@@ -64,7 +64,7 @@ Det är här magin händer. Vi kommer att tillämpa lösenordsskydd på vårt do
 
 ### Välj Skyddstyp
 
- Aspose.Words erbjuder olika typer av skydd, som t.ex`NoProtection`, `ReadOnly`, `AllowOnlyComments` , och`AllowOnlyFormFields` . För det här exemplet kommer vi att använda`NoProtection` men med ett lösenord, vilket i huvudsak betyder att dokumentet är redigerbart men kräver ett lösenord för att ta bort skyddet.
+ Aspose.Words erbjuder olika typer av skydd, som t.ex`NoProtection`, `ReadOnly`, `AllowOnlyComments` , och`AllowOnlyFormFields` För det här exemplet kommer vi att använda`NoProtection` men med ett lösenord, vilket i huvudsak betyder att dokumentet är redigerbart men kräver ett lösenord för att ta bort skyddet.
 
 ### Applicera skydd
 
@@ -94,7 +94,7 @@ Och där har du det! Du har framgångsrikt lagt till lösenordsskydd till ditt W
 
 ### Kan jag använda olika typer av skydd med Aspose.Words?
 
- Ja, Aspose.Words stöder olika typer av skydd, inklusive`ReadOnly`, `AllowOnlyComments` , och`AllowOnlyFormFields`.
+Ja, Aspose.Words stöder olika typer av skydd, inklusive`ReadOnly`, `AllowOnlyComments` , och`AllowOnlyFormFields`.
 
 ### Hur kan jag ta bort lösenordsskyddet från ett dokument?
 
@@ -110,4 +110,4 @@ Ja, Aspose.Words är kompatibelt med .NET Core, .NET Framework och andra .NET-pl
 
 ### Var kan jag hitta mer dokumentation om Aspose.Words?
 
-Du kan hitta mer dokumentation på[Aspose.Words dokumentationssida](https://reference.aspose.com/words/net/).
+ Du kan hitta mer dokumentation på[Aspose.Words dokumentationssida](https://reference.aspose.com/words/net/).

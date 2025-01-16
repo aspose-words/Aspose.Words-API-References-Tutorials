@@ -47,16 +47,6 @@ doc2 = aw.Document(doc2_path)
 comparison = doc1.compare(doc2, "Author Name", datetime.now())
 ```
 
-## Mise en évidence des changements
-
-Pour rendre les modifications plus visibles, vous pouvez les mettre en surbrillance :
-
-```python
-highlighter = aw.markup.HighlightColor.GRAY
-for change in comparison.changes:
-    change.format_revision(highlighter)
-```
-
 ## Accepter ou rejeter les modifications
 
 Vous pouvez choisir d'accepter ou de rejeter des modifications individuelles :

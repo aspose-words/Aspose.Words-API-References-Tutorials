@@ -71,7 +71,7 @@ Tutaj dzieje się prawdziwa akcja. Znajdziemy słowo „smutny” i zastąpimy j
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-Ten`Replace`Metoda jest prosta. Określamy słowo do znalezienia, słowo zastępcze i opcje operacji znajdowania i zamiany.
+ Ten`Replace`Metoda jest prosta. Określamy słowo do znalezienia, słowo zastępcze i opcje operacji znajdowania i zamiany.
 
 ## Krok 5: Zapisz dokument
 

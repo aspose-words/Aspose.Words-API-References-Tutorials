@@ -81,7 +81,7 @@ Không, sẽ không. Vì Arial và Times Roman là phông chữ chuẩn nên gia
 Có, bạn có thể cấu hình tùy chọn lưu để bỏ qua việc nhúng các phông chữ khác nếu cần.
 
 ### Aspose.Words cho .NET có miễn phí không?
-Aspose.Words cho .NET cung cấp bản dùng thử miễn phí mà bạn có thể tải xuống[đây](https://releases.aspose.com/) , nhưng để có quyền truy cập đầy đủ, bạn cần phải mua giấy phép[đây](https://purchase.aspose.com/buy).
+ Aspose.Words cho .NET cung cấp bản dùng thử miễn phí mà bạn có thể tải xuống[đây](https://releases.aspose.com/) , nhưng để có quyền truy cập đầy đủ, bạn cần phải mua giấy phép[đây](https://purchase.aspose.com/buy).
 
 ### Tôi có thể tìm thêm hướng dẫn về Aspose.Words cho .NET ở đâu?
- Bạn có thể tìm thấy tài liệu và hướng dẫn toàn diện[đây](https://reference.aspose.com/words/net/).
+Bạn có thể tìm thấy tài liệu và hướng dẫn toàn diện[đây](https://reference.aspose.com/words/net/).

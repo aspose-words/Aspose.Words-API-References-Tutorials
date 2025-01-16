@@ -118,7 +118,7 @@ tym przewodniku omówiono podstawy pracy ze stylami i motywami w Aspose.Words fo
 
 ### Jak mogę pobrać właściwości motywu w Aspose.Words dla Java?
 
-Właściwości motywu można pobrać, uzyskując dostęp do obiektu motywu i jego właściwości.
+Właściwości motywu można pobrać poprzez dostęp do obiektu motywu i jego właściwości.
 
 ### Jak mogę ustawić właściwości motywu, takie jak czcionki i kolory?
 

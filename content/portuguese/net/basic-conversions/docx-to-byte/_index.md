@@ -32,7 +32,7 @@ using Aspose.Words;
 
 Para converter um arquivo Docx em uma matriz de bytes, siga estas etapas:
 ```csharp
-//Carregue o arquivo Docx do disco ou fluxo
+// Carregue o arquivo Docx do disco ou fluxo
 Document doc = new Document("input.docx");
 
 // Salvar o documento em um MemoryStream
@@ -64,13 +64,13 @@ Concluindo, aproveitar o Aspose.Words para .NET para converter arquivos Docx em 
  Não, você precisa de uma licença válida para usar o Aspose.Words para .NET em produção. Você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
 
 ### Como posso aprender mais sobre a documentação do Aspose.Words para .NET?
- Visite a documentação[aqui](https://reference.aspose.com/words/net/)para guias abrangentes e referências de API.
+ Visite a documentação[aqui](https://reference.aspose.com/words/net/) para guias abrangentes e referências de API.
 
 ### O Aspose.Words é adequado para lidar com grandes arquivos Docx?
 Sim, o Aspose.Words para .NET fornece gerenciamento de memória eficiente e otimizações de desempenho para lidar com documentos grandes.
 
 ### Onde posso obter suporte da comunidade para o Aspose.Words para .NET?
- Participe do fórum da comunidade[aqui](https://forum.aspose.com/c/words/8) para fazer perguntas, compartilhar conhecimento e se conectar com outros usuários.
+ Participe do fórum da comunidade[aqui](https://forum.aspose.com/c/words/8)para fazer perguntas, compartilhar conhecimento e se conectar com outros usuários.
 
 ### Posso testar o Aspose.Words para .NET gratuitamente antes de comprar?
  Sim, você pode baixar uma versão de teste gratuita[aqui](https://releases.aspose.com/) para avaliar suas características e capacidades.

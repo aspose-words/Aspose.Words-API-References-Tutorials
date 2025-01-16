@@ -2,7 +2,7 @@
 title: Dokumenttextriktning
 linktitle: Dokumenttextriktning
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du ställer in dokumenttextriktning i Word med Aspose.Words för .NET med denna steg-för-steg-guide. Perfekt för att hantera språk från höger till vänster.
+description: Lär dig hur du ställer in dokumenttextriktning i Word med Aspose.Words för .NET med denna steg-för-steg-guide. Perfekt för att hantera höger-till-vänster-språk.
 type: docs
 weight: 10
 url: /sv/net/programming-with-txtloadoptions/document-text-direction/
@@ -89,7 +89,7 @@ Att ställa in textriktningen i Word-dokument är en enkel process med Aspose.Wo
 
 ###  Vad är`DocumentDirection` property used for?
 
-De`DocumentDirection` fastighet i`TxtLoadOptions` bestämmer textriktningen för dokumentet. Den kan ställas in på`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , eller`DocumentDirection.RightToLeft`.
+ De`DocumentDirection` fastighet i`TxtLoadOptions` bestämmer textriktningen för dokumentet. Den kan ställas in på`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , eller`DocumentDirection.RightToLeft`.
 
 ### Kan jag ställa in textriktningen för specifika stycken istället för hela dokumentet?
 

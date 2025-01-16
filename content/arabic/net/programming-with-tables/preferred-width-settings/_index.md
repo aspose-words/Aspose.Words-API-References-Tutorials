@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-ال`PreferredWidth.Auto` يتيح الإعداد لهذه الخلية التمدد أو الانكماش بناءً على المساحة المتبقية بعد احتساب الخلايا الأخرى. وهذا يضمن أن يبدو تخطيط الجدول متوازنًا واحترافيًا.
+ ال`PreferredWidth.Auto` يتيح الإعداد لهذه الخلية التمدد أو الانكماش بناءً على المساحة المتبقية بعد احتساب الخلايا الأخرى. وهذا يضمن أن يبدو تخطيط الجدول متوازنًا واحترافيًا.
 
 ## الخطوة 5: الانتهاء من المستند وحفظه
 

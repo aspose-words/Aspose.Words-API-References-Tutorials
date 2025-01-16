@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ### 是否可以在气球中仅显示特定类型的修订？
 当然可以。您可以配置 Aspose.Words 以在提示框中仅显示某些类型的修订，例如删除或格式更改。
 
-### 如何获得 Aspose.Words 的临时许可证？
+### 如何获取 Aspose.Words 的临时许可证？
 您可以获得临时驾照[这里](https://purchase.aspose.com/temporary-license/).
 
 ### 我可以将 Aspose.Words for .NET 与其他编程语言一起使用吗？

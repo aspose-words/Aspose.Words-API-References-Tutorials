@@ -60,7 +60,7 @@ try {
 ```
 
 คำอธิบาย:
-- การ`try-catch` บล็อกช่วยให้แน่ใจว่าข้อผิดพลาดใดๆ ที่พบขณะโหลดเอกสารจะถูกตรวจพบและจัดการอย่างเหมาะสม
+-  การ`try-catch`บล็อกช่วยให้แน่ใจว่าข้อผิดพลาดใดๆ ที่พบขณะโหลดเอกสารจะถูกตรวจพบและจัดการอย่างเหมาะสม
 
 ## ขั้นตอนที่ 2: เริ่มต้น ImageSaveOptions
 
@@ -71,7 +71,7 @@ try {
 `ImageSaveOptions` เป็นคลาสที่ให้คุณกำหนดได้ว่าควรจะบันทึกเอกสารเป็นรูปภาพอย่างไร
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 คำอธิบาย:

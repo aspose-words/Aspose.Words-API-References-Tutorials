@@ -18,7 +18,7 @@ Trước khi tìm hiểu sâu hơn về các kỹ thuật nâng cao, hãy đảm
 
 1.  Cài đặt Python: Đảm bảo Python được cài đặt trên hệ thống của bạn. Bạn có thể tải xuống từ[đây](https://www.python.org/downloads/).
 
-2. Aspose.Words cho Python: Bạn cần cài đặt Aspose.Words cho Python. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/python/).
+2.  Aspose.Words cho Python: Bạn cần cài đặt Aspose.Words cho Python. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/python/).
 
 3. Chuẩn bị tài liệu: Chuẩn bị một tài liệu Word mà bạn muốn thực hiện thao tác tìm kiếm và thay thế.
 
@@ -118,4 +118,4 @@ Có, bạn có thể sử dụng ký tự đại diện và biểu thức chính
 
 ### Tôi có thể thay thế văn bản trong khi vẫn theo dõi những thay đổi đã thực hiện không?
 
- Có, bạn có thể theo dõi những thay đổi bằng cách sử dụng`revision` Tính năng của Aspose.Words. Cho phép bạn theo dõi mọi sửa đổi được thực hiện trên tài liệu.
+ Có, bạn có thể theo dõi những thay đổi bằng cách sử dụng`revision`Tính năng của Aspose.Words. Cho phép bạn theo dõi mọi sửa đổi được thực hiện trên tài liệu.

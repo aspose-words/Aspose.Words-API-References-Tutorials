@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /hi/java/word-processing/manipulating-document-content/
 ---
-
 ## परिचय
 
 जावा प्रोग्रामिंग की दुनिया में, कुशल दस्तावेज़ प्रबंधन कई अनुप्रयोगों का एक महत्वपूर्ण पहलू है। चाहे आप रिपोर्ट बनाने, अनुबंधों को संभालने या किसी भी दस्तावेज़ से संबंधित कार्य से निपटने पर काम कर रहे हों, जावा के लिए Aspose.Words आपके टूलकिट में एक शक्तिशाली उपकरण है। इस व्यापक गाइड में, हम जावा के लिए Aspose.Words का उपयोग करके क्लीनअप, फ़ील्ड और XML डेटा के साथ दस्तावेज़ सामग्री में हेरफेर करने की पेचीदगियों में तल्लीन होंगे। हम आपको इस बहुमुखी लाइब्रेरी में महारत हासिल करने के लिए आवश्यक ज्ञान और कौशल के साथ सशक्त बनाने के लिए स्रोत कोड उदाहरणों के साथ चरण-दर-चरण निर्देश प्रदान करेंगे।
@@ -50,7 +49,8 @@ doc.save("cleaned_document.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ doc.save("document_without_empty_paragraphs.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 इन चरणों का पालन करके, आप सुनिश्चित कर सकते हैं कि आपका दस्तावेज़ साफ़ है और आगे के हेरफेर के लिए तैयार है।
-
----
 
 ## फ़ील्ड्स के साथ कार्य करना
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 फ़ील्ड आपके दस्तावेज़ों में गतिशील क्षमताएं जोड़ते हैं, जिससे उनकी उपयोगिता बढ़ जाती है।
 
----
-
-## XML डेटा को शामिल करना
-
-अपने दस्तावेज़ों में XML डेटा को एकीकृत करना शक्तिशाली हो सकता है, खासकर गतिशील सामग्री बनाने के लिए। Java के लिए Aspose.Words इस प्रक्रिया को सरल बनाता है।
-
-### XML डेटा बाइंडिंग
-
-XML डेटा को आसानी से अपने दस्तावेज़ से जोड़ें:
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://स्कीमा.उदाहरण'");
-doc.save("document_with_xml_data.docx");
-```
-
-यह कोड XML डेटा को आपके दस्तावेज़ के विशिष्ट भागों से जोड़ता है, जिससे यह गतिशील और डेटा-संचालित हो जाता है।
-
-## अक्सर पूछे जाने वाले प्रश्न (एफएक्यू)
-
-### मैं किसी दस्तावेज़ से खाली पैराग्राफ़ कैसे हटाऊँ?
-   
-   किसी दस्तावेज़ से खाली पैराग्राफ़ हटाने के लिए, आप पैराग्राफ़ को फिर से दोहरा सकते हैं और उन पैराग्राफ़ को हटा सकते हैं जिनमें कोई टेक्स्ट सामग्री नहीं है। इसे प्राप्त करने में आपकी सहायता के लिए यहाँ एक कोड स्निपेट दिया गया है:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### क्या मैं किसी दस्तावेज़ में सभी फ़ील्ड को प्रोग्रामेटिक रूप से अपडेट कर सकता हूँ?
-
-   हां, आप Aspose.Words for Java का उपयोग करके प्रोग्रामेटिक रूप से दस्तावेज़ में सभी फ़ील्ड अपडेट कर सकते हैं। यहां बताया गया है कि आप यह कैसे कर सकते हैं:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### मैं XML डेटा को दस्तावेज़ से कैसे बाँधूँ?
-
-   Aspose.Words for Java के साथ XML डेटा को दस्तावेज़ में बाँधना बहुत आसान है। आप इसे प्राप्त करने के लिए XML मैपिंग का उपयोग कर सकते हैं। यहाँ एक उदाहरण दिया गया है:
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://स्कीमा.उदाहरण'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### दस्तावेज़ की सामग्री को साफ़ करने का क्या महत्व है?
-
-   दस्तावेज़ सामग्री को साफ़ करना यह सुनिश्चित करने के लिए महत्वपूर्ण है कि आपके दस्तावेज़ अनावश्यक तत्वों से मुक्त हों, जिससे पठनीयता में सुधार हो सकता है और फ़ाइल का आकार कम हो सकता है। यह दस्तावेज़ की स्थिरता बनाए रखने में भी मदद करता है।
-
-### मैं किसी दस्तावेज़ से अप्रयुक्त शैलियों को कैसे हटा सकता हूँ?
-
-   आप Aspose.Words for Java का उपयोग करके किसी दस्तावेज़ से अप्रयुक्त शैलियों को हटा सकते हैं। यहाँ एक उदाहरण दिया गया है:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### क्या Java के लिए Aspose.Words XML डेटा के साथ गतिशील दस्तावेज़ बनाने के लिए उपयुक्त है?
-
-   हां, जावा के लिए Aspose.Words XML डेटा के साथ गतिशील दस्तावेज़ बनाने के लिए उपयुक्त है। यह XML डेटा को टेम्प्लेट में बांधने और वैयक्तिकृत दस्तावेज़ बनाने के लिए मजबूत सुविधाएँ प्रदान करता है।
-
 ## निष्कर्ष
 
 इस विस्तृत गाइड में, हमने Java के लिए Aspose.Words का उपयोग करके क्लीनअप, फ़ील्ड और XML डेटा के साथ दस्तावेज़ सामग्री में हेरफेर करने की दुनिया का पता लगाया है। आपने सीखा है कि दस्तावेज़ों को कैसे साफ़ किया जाए, फ़ील्ड के साथ काम किया जाए और XML डेटा को सहजता से शामिल किया जाए। ये कौशल Java अनुप्रयोगों में दस्तावेज़ प्रबंधन से निपटने वाले किसी भी व्यक्ति के लिए अमूल्य हैं।
+
+## अक्सर पूछे जाने वाले प्रश्न
+
+### मैं किसी दस्तावेज़ से खाली पैराग्राफ़ कैसे हटाऊँ?
+   
+किसी दस्तावेज़ से खाली पैराग्राफ़ हटाने के लिए, आप पैराग्राफ़ को फिर से दोहरा सकते हैं और उन पैराग्राफ़ को हटा सकते हैं जिनमें कोई टेक्स्ट सामग्री नहीं है। इसे प्राप्त करने में आपकी सहायता के लिए यहाँ एक कोड स्निपेट दिया गया है:
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### क्या मैं किसी दस्तावेज़ में सभी फ़ील्ड को प्रोग्रामेटिक रूप से अपडेट कर सकता हूँ?
+
+हां, आप Aspose.Words for Java का उपयोग करके प्रोग्रामेटिक रूप से दस्तावेज़ में सभी फ़ील्ड अपडेट कर सकते हैं। यहां बताया गया है कि आप यह कैसे कर सकते हैं:
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### दस्तावेज़ की सामग्री को साफ़ करने का क्या महत्व है?
+
+दस्तावेज़ सामग्री को साफ़ करना यह सुनिश्चित करने के लिए महत्वपूर्ण है कि आपके दस्तावेज़ अनावश्यक तत्वों से मुक्त हों, जिससे पठनीयता में सुधार हो सकता है और फ़ाइल का आकार कम हो सकता है। यह दस्तावेज़ की स्थिरता बनाए रखने में भी मदद करता है।
+
+### मैं किसी दस्तावेज़ से अप्रयुक्त शैलियों को कैसे हटा सकता हूँ?
+
+आप Aspose.Words for Java का उपयोग करके किसी दस्तावेज़ से अप्रयुक्त शैलियों को हटा सकते हैं। यहाँ एक उदाहरण दिया गया है:
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### क्या Java के लिए Aspose.Words XML डेटा के साथ गतिशील दस्तावेज़ बनाने के लिए उपयुक्त है?
+
+हां, जावा के लिए Aspose.Words XML डेटा के साथ गतिशील दस्तावेज़ बनाने के लिए उपयुक्त है। यह XML डेटा को टेम्प्लेट में बांधने और वैयक्तिकृत दस्तावेज़ बनाने के लिए मजबूत सुविधाएँ प्रदान करता है।

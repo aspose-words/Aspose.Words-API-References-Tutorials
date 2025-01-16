@@ -78,7 +78,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 ```csharp
 public class HandleDocumentWarnings : IWarningCallback
 {
-    /// <摘要>
+    //<摘要>
     //當文件處理過程中出現潛在問題時，就會呼叫此方法。
     /// </摘要>
     public void Warning(WarningInfo info)

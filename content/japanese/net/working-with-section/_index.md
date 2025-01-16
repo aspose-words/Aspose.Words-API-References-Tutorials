@@ -19,7 +19,7 @@ url: /ja/net/working-with-section/
 | タイトル | 説明 |
 | --- | --- |
 | [セクションを追加](./add-section/) | Aspose.Words for .NET を使用して Word 文書にセクションを追加する方法を学びます。このガイドでは、文書の作成からセクションの追加と管理まですべてをカバーしています。 |
-| [セクションを削除](./delete-section/) | Aspose.Words for .NET でドキュメント操作をマスターします。いくつかの簡単な手順で Word ドキュメントからセクションを削除する方法を学びます。 |
+| [セクションを削除](./delete-section/) | Aspose.Words for .NET でドキュメント操作をマスターしましょう。いくつかの簡単な手順で Word ドキュメントからセクションを削除する方法を学びます。 |
 | [すべてのセクションを削除](./delete-all-sections/) | このわかりやすいステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内のすべてのセクションを削除する方法を学習します。 |
 | [セクションの単語コンテンツを追加](./append-section-content/) | このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書の特定のセクションに Word コンテンツを追加する方法を学習します。  |
 | [クローンセクション](./clone-section/) | Aspose.Words for .NET を使用して Word 文書のセクションを複製する方法を学びます。このガイドでは、効率的な文書操作の手順を段階的に説明します。 |

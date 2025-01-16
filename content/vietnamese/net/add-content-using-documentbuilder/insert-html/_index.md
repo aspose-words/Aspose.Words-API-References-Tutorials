@@ -15,7 +15,7 @@ Xin chào, những người đam mê lập trình! Bạn đã bao giờ tự h�
 
 Trước khi đi sâu vào hướng dẫn từng bước, hãy đảm bảo rằng chúng ta có mọi thứ cần thiết. Sau đây là danh sách kiểm tra nhanh:
 
-1. Aspose.Words cho Thư viện .NET: Nếu bạn chưa tải xuống, bạn sẽ cần tải xuống thư viện Aspose.Words cho .NET. Bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words cho Thư viện .NET: Nếu bạn chưa tải xuống, bạn sẽ cần tải xuống thư viện Aspose.Words cho .NET. Bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Đảm bảo bạn đã thiết lập môi trường phát triển, như Visual Studio.
 3. .NET Framework: Đảm bảo rằng bạn đã cài đặt .NET Framework trên máy của mình.
 4. Kiến thức cơ bản về C#: Một chút quen thuộc với C# sẽ có ích rất nhiều.
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Bước 3: Khởi tạo DocumentBuilder
 
-Để chèn HTML, chúng ta sẽ cần sự trợ giúp của`DocumentBuilder` lớp. Lớp tiện dụng này giúp chúng ta dễ dàng thêm nội dung vào tài liệu.
+ Để chèn HTML, chúng ta sẽ cần sự trợ giúp của`DocumentBuilder` lớp. Lớp tiện dụng này giúp chúng ta dễ dàng thêm nội dung vào tài liệu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -88,7 +88,7 @@ Và bạn đã có nó rồi! Bạn vừa chèn HTML vào tài liệu Word bằn
 
 Chèn HTML vào tài liệu Word chưa bao giờ dễ dàng đến thế, phải không? Với Aspose.Words for .NET, bạn có thể kết hợp liền mạch sức mạnh của HTML với tính linh hoạt của tài liệu Word. Cho dù bạn đang tự động tạo báo cáo hay tạo tài liệu có định dạng đẹp mắt, công cụ này là giải pháp dành cho bạn.
 
-Nếu bạn có bất kỳ câu hỏi nào hoặc cần hỗ trợ thêm, đừng ngần ngại kiểm tra[tài liệu](https://reference.aspose.com/words/net/), [diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) , hoặc lấy cho mình một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để khai thác toàn bộ tiềm năng của Aspose.Words cho .NET.
+ Nếu bạn có bất kỳ câu hỏi nào hoặc cần hỗ trợ thêm, đừng ngần ngại kiểm tra[tài liệu](https://reference.aspose.com/words/net/), [diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) , hoặc lấy cho mình một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để khai thác toàn bộ tiềm năng của Aspose.Words cho .NET.
 
 Chúc bạn viết mã vui vẻ!
 
@@ -107,4 +107,4 @@ Có, sau khi chèn HTML, bạn có thể tiếp tục thao tác với tài liệ
  Bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/) hoặc có được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để có đầy đủ tính năng.
 
 ### Tôi có thể tìm thêm hướng dẫn và ví dụ ở đâu?  
-Các[tài liệu](https://reference.aspose.com/words/net/) Và[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8)là nơi tuyệt vời để bắt đầu tìm kiếm hướng dẫn chi tiết hơn và nhận được sự hỗ trợ của cộng đồng.
+ Các[tài liệu](https://reference.aspose.com/words/net/) Và[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) là nơi tuyệt vời để bắt đầu tìm kiếm hướng dẫn chi tiết hơn và nhận được sự hỗ trợ của cộng đồng.

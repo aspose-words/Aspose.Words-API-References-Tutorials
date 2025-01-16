@@ -16,7 +16,7 @@ Prima di addentrarci nei tutorial, è essenziale comprendere il concetto di elem
 
 ## Accesso e manipolazione degli elementi del documento
 
-Una delle competenze principali che acquisirai tramite questi tutorial è la capacità di accedere e manipolare gli elementi del documento. Aspose.Words per Java fornisce un ricco set di API che ti consentono di navigare, modificare ed estrarre informazioni dai tuoi documenti a livello di programmazione. Che tu debba trovare e sostituire testo, inserire tabelle o aggiornare intestazioni e piè di pagina, questi tutorial ti copriranno le spalle.
+Una delle competenze principali che acquisirai tramite questi tutorial è la capacità di accedere e manipolare gli elementi del documento. Aspose.Words per Java fornisce un ricco set di API che ti consentono di navigare, modificare ed estrarre informazioni dai tuoi documenti a livello di programmazione. Che tu debba trovare e sostituire testo, inserire tabelle o aggiornare intestazioni e piè di pagina, questi tutorial ti coprono.
 
 ## Creazione di documenti dinamici
 

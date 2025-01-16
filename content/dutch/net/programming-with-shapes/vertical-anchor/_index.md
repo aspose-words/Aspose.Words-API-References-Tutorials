@@ -56,7 +56,7 @@ Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
 
 ## Stap 3: Plaats het verticale anker
 
-Hier gebeurt de magie! U kunt de verticale uitlijning van de tekst in het tekstvak instellen. Dit bepaalt of de tekst aan de bovenkant, het midden of de onderkant van het tekstvak wordt verankerd.
+Hier gebeurt de magie! U kunt de verticale uitlijning van de tekst in het tekstvak instellen. Dit bepaalt of de tekst aan de boven-, midden- of onderkant van het tekstvak wordt verankerd.
 
 ```csharp
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;

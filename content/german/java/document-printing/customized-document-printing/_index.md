@@ -22,7 +22,7 @@ Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfü
 
 ## Einrichten von Aspose.Words für Java
 
- Laden Sie zunächst die Aspose.Words für Java-Bibliothek herunter von[Hier](https://releases.aspose.com/words/java/)Befolgen Sie die Installationsanweisungen, um es in Ihr Java-Projekt zu integrieren.
+ Laden Sie zunächst die Aspose.Words für Java-Bibliothek herunter von[Hier](https://releases.aspose.com/words/java/). Befolgen Sie die Installationsanweisungen, um es in Ihr Java-Projekt zu integrieren.
 
 ## Erstellen eines leeren Dokuments
 

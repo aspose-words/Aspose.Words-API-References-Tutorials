@@ -91,7 +91,7 @@ No, saltare le immagini influisce solo sulle immagini. Il testo rimane intatto e
 
 ### Posso utilizzare questa funzionalità con altri formati di documenti?
 
-IL`SkipPdfImages` opzione è specifica per i documenti PDF. Per altri formati, sono disponibili opzioni e metodi diversi.
+ IL`SkipPdfImages` opzione è specifica per i documenti PDF. Per altri formati, sono disponibili opzioni e metodi diversi.
 
 ### Come posso verificare che le immagini siano state saltate?
 

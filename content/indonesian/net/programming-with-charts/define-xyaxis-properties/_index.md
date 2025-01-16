@@ -78,7 +78,7 @@ Sekarang, saatnya menentukan properti untuk sumbu X. Ini termasuk pengaturan jen
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // Diukur dalam satuan tampilan sumbu Y (ratusan).
+xAxis.CrossesAt = 3; //Diukur dalam satuan tampilan sumbu Y (ratusan).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

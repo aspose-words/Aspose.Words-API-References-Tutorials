@@ -80,7 +80,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-그만큼`AppendDocument` 이 방법은 두 개의 매개변수를 사용합니다.
+ 그만큼`AppendDocument` 이 방법은 두 개의 매개변수를 사용합니다.
 1. 원본 문서: 추가하려는 문서입니다.
 2.  가져오기 형식 모드: 이 매개변수는 형식 지정을 처리하는 방법을 지시합니다. 여기서는 다음을 사용합니다.`KeepSourceFormatting` 소스 문서의 형식을 유지합니다.
 

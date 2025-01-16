@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`dataDir` değişken, Markdown dosyanızı kaydedeceğiniz dizin için bir yer tutucudur. "YOUR DOCUMENT DIRECTORY" ifadesini gerçek yol ile değiştirdiğinizden emin olun.
+ The`dataDir` değişken, Markdown dosyanızı kaydedeceğiniz dizin için bir yer tutucudur. "YOUR DOCUMENT DIRECTORY" ifadesini gerçek yol ile değiştirdiğinizden emin olun.
 
 ## Adım 2: Normal Metin Yazımı
 
@@ -96,7 +96,7 @@ Bu kod parçası "BoldItalic" yazı tipine hem kalın hem de italik stillerinin 
 
 ## Adım 6: Belgeyi Markdown Olarak Kaydetme
 
-Tüm vurgulanan metni ekledikten sonra, belgeyi Markdown dosyası olarak kaydetme zamanı geldi.
+Tüm vurgulanan metni ekledikten sonra, belgeyi Markdown dosyası olarak kaydetmenin zamanı geldi.
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");

@@ -15,7 +15,7 @@ Jste připraveni ponořit se do světa stylů dokumentů ve Wordu? Ať už vytv�
 
 Než do toho skočíme, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET: Tuto knihovnu musíte mít nainstalovanou ve svém prostředí .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Tuto knihovnu musíte mít nainstalovanou ve svém prostředí .NET. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Základní znalost .NET: Znalost jazyka C# nebo jiného jazyka .NET vám pomůže porozumět poskytnutým úryvkům kódu.
 3. Vývojové prostředí: Ujistěte se, že máte IDE jako Visual Studio nastavené pro psaní a spouštění kódu .NET.
 

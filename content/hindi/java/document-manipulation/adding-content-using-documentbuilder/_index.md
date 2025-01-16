@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// तालिका प्रारंभ करें
+//तालिका प्रारंभ करें
 Table table = builder.startTable();
 
 // कक्ष और सामग्री सम्मिलित करें

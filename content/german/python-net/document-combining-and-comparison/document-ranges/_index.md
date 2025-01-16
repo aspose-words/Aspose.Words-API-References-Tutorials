@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Zusammenführen von Dokumenten
-
-Das nahtlose Zusammenführen von Dokumenten ist eine wertvolle Fähigkeit. Das Navigieren durch Dokumente hilft uns, diese effizient zusammenzuführen:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Aufteilen von Dokumenten
 
 Manchmal müssen wir ein Dokument in kleinere Teile aufteilen. Die Navigation im Dokument hilft uns dabei:
@@ -117,8 +109,8 @@ Kopf- und Fußzeilen erfordern oft eine unterschiedliche Behandlung. Durch die N
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

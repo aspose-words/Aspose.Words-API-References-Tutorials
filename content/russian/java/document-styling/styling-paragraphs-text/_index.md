@@ -182,25 +182,11 @@ doc.save("AlignmentAndSpacingDocument.docx");
 Создание списков с маркерами или нумерацией — это распространенная задача форматирования документов. Aspose.Words для Java упрощает ее. Вот как создать маркированный список:
 
 ```java
-// Создать новый документ
-Document doc = new Document();
-
-// Создать список
-List list = new List(doc);
-
-// Добавить элементы списка с маркерами
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// Добавить список в документ
-doc.getFirstSection().getBody().appendChild(list);
-
-// Сохранить документ
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 В этом коде мы создаем маркированный список из трех элементов.
@@ -210,24 +196,21 @@ doc.save("BulletedListDocument.docx");
 Гиперссылки необходимы для добавления интерактивности в ваши документы. Aspose.Words for Java позволяет вам легко вставлять гиперссылки. Вот пример:
 
 ```java
-// Создать новый документ
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Создать абзац
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// Создать гиперссылку
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// Вставьте гиперссылку и выделите ее с помощью пользовательского форматирования.
+// Гиперссылка будет представлять собой фрагмент текста, нажав на который, мы перейдем по адресу, указанному в URL.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", ложь);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// Добавить абзац в документ
-doc.getFirstSection().getBody().appendChild(para);
-
-// Сохранить документ
-doc.save("HyperlinkDocument.docx");
+// Ctrl + щелчок левой кнопкой мыши по ссылке в тексте в Microsoft Word перенаправит нас на URL-адрес через новое окно веб-браузера.
+doc.save("InsertHyperlink.docx");
 ```
 
 Этот код вставляет гиперссылку на «https://www.example.com» с текстом «Посетить Example.com».
@@ -237,23 +220,7 @@ doc.save("HyperlinkDocument.docx");
 Документы часто требуют визуальных элементов, таких как изображения и фигуры. Aspose.Words для Java позволяет вам вставлять изображения и фигуры без проблем. Вот как добавить изображение:
 
 ```java
-// Создать новый документ
-Document doc = new Document();
-
-// Создать абзац
-Paragraph para = new Paragraph(doc);
-
-// Загрузить изображение из файла
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// Добавить абзац в документ
-doc.getFirstSection().getBody().appendChild(para);
-
-// Сохранить документ
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 В этом коде мы загружаем изображение из файла и вставляем его в документ.
@@ -287,27 +254,20 @@ doc.save("PageLayoutDocument.docx");
 Верхние и нижние колонтитулы необходимы для добавления единообразной информации на каждую страницу документа. Вот как работать с верхними и нижними колонтитулами:
 
 ```java
-// Создать новый документ
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Доступ к верхнему и нижнему колонтитулу первого раздела
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// Добавить содержимое в заголовок
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// Добавить содержимое в нижний колонтитул
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// Добавить содержимое в текст документа
+// Добавьте содержимое в текст документа.
 // ...
 
-// Сохранить документ
+// Сохраните документ.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ doc.save("HeaderFooterDocument.docx");
 Таблицы — это мощный способ организации и представления данных в документах. Aspose.Words для Java обеспечивает обширную поддержку работы с таблицами. Вот пример создания таблицы:
 
 ```java
-// Создать новый документ
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Создайте таблицу с 3 строками и 3 столбцами.
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// Добавить содержимое в ячейки таблицы
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//Добавить таблицу в документ
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// Сохранить документ
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// Изменение форматирования применится к текущей ячейке,
+// и любые новые ячейки, которые мы создадим с помощью конструктора впоследствии.
+// Это не повлияет на ячейки, которые мы добавили ранее.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// Увеличьте высоту строки, чтобы вместить вертикальный текст.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 В этом коде мы создаем простую таблицу с тремя строками и тремя столбцами.
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // Сохранить документ как PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 Этот фрагмент кода сохраняет документ как PDF-файл.
@@ -393,7 +372,7 @@ builder.insertBreak(BreakType.PAGE_BREAK);
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### Как отформатировать текст как
@@ -414,7 +393,7 @@ run.getFont().setItalic(true);  // Сделать текст курсивом
 Да, Aspose.Words для Java совместим с Java 11 и более поздними версиями.
 
 ### Как установить поля страницы для определенных разделов документа?
-Вы можете установить поля страницы для определенных разделов вашего документа с помощью`PageSetup` класс. Вот пример:
+ Вы можете установить поля страницы для определенных разделов вашего документа с помощью`PageSetup` класс. Вот пример:
 
 ```java
 Section section = doc.getSections().get(0); // Получить первый раздел

@@ -19,10 +19,10 @@ url: /zh/python-net/document-splitting-and-formatting/split-format-documents/
 第一步是加载要拆分和格式化的文档。使用以下代码片段来实现此目的：
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## 第 2 步：将文档拆分成几个部分
@@ -41,10 +41,10 @@ sections = document.sections
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## 步骤 4：保存文档
@@ -55,6 +55,12 @@ section.page_setup.bottom_margin = asposewords.pt_to_px(1)
 document.save("path/to/save/updated_document.docx")
 ```
 
+## 结论
+
+Aspose.Words for Python 提供了一套全面的工具，可根据您的需要高效地拆分和格式化文档。通过遵循本教程中概述的步骤并利用提供的源代码示例，您可以无缝地管理您的文档并以专业的方式呈现它们。
+
+在本教程中，我们介绍了文档拆分、格式化的基础知识，并提供了常见问题的解决方案。现在轮到您探索和试验 Aspose.Words for Python 的功能，以进一步增强您的文档管理工作流程。
+
 ## 常见问题解答
 
 ### 如何将一个文档拆分为多个文件？
@@ -62,7 +68,7 @@ document.save("path/to/save/updated_document.docx")
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ for i, section in enumerate(sections):
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### 如何更改特定部分字体样式？
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### 是否可以从文档中删除特定部分？
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## 结论
-Aspose.Words for Python 提供了一套全面的工具，可根据您的需要高效地拆分和格式化文档。通过遵循本教程中概述的步骤并利用提供的源代码示例，您可以无缝地管理您的文档并以专业的方式呈现它们。
-
-在本教程中，我们介绍了文档拆分、格式化的基础知识，并提供了常见问题的解决方案。现在轮到您探索和试验 Aspose.Words for Python 的功能，以进一步增强您的文档管理工作流程。

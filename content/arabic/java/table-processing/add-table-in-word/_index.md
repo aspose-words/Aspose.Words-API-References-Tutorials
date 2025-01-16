@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## الخطوة 6: إنشاء جدول وإضافة صفوف
 
-إنشاء جديد`Table` الكائن وتحديد عدد الصفوف والأعمدة.
+ إنشاء جديد`Table` الكائن وتحديد عدد الصفوف والأعمدة.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## الخطوة 8: حفظ المستند
 
- احفظ مستند Word في الموقع المطلوب باستخدام`save()` طريقة.
+احفظ مستند Word في الموقع المطلوب باستخدام`save()` طريقة.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## الخطوة 9: أكمل الكود
-
-فيما يلي الكود الكامل لإضافة جدول في Word باستخدام Aspose.Words لـ Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // الخطوة 5: إنشاء مستند Word جديد
-        Document doc = new Document();
-
-        // الخطوة 6: إنشاء جدول وإضافة صفوف
-        Table table = new Table(doc);
-        int rowCount = 5; // عدد الصفوف في الجدول
-        int columnCount = 3; // عدد الاعمدة في الجدول
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // الخطوة 7: إضافة الجدول إلى المستند
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // الخطوة 8: حفظ المستند
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## خاتمة

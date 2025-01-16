@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-O`Aspose.Words` namespace fornece a funcionalidade principal para manipular documentos do Word, enquanto`Aspose.Words.Tables` inclui classes específicas para trabalhar com tabelas.
+ O`Aspose.Words` namespace fornece a funcionalidade principal para manipular documentos do Word, enquanto`Aspose.Words.Tables` inclui classes específicas para trabalhar com tabelas.
 
 ## Etapa 1: configure seu diretório de documentos
 
@@ -88,7 +88,7 @@ Ajustar tabelas automaticamente ao conteúdo usando o Aspose.Words para .NET é 
 ## Perguntas frequentes
 
 ### Posso ajustar automaticamente apenas colunas específicas em uma tabela?
-O`AutoFit` O método se aplica à tabela inteira. Se você precisar ajustar colunas específicas, pode ser necessário definir manualmente as larguras das colunas.
+ O`AutoFit` O método se aplica à tabela inteira. Se você precisar ajustar colunas específicas, pode ser necessário definir manualmente as larguras das colunas.
 
 ### E se meu documento contiver várias tabelas?
  Você pode percorrer todas as tabelas do documento usando`doc.GetChildNodes(NodeType.Table, true)` e aplique o ajuste automático conforme necessário.

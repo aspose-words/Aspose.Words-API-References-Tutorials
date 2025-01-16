@@ -9,7 +9,7 @@ url: /it/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## Introduzione
 
-Se stai cercando di migliorare le tue capacità di automazione dei documenti, allora sei pronto per una sorpresa. Questo tutorial ti guiderà attraverso il processo di aggiunta di segnalibri alle colonne di tabella in un documento Word utilizzando Aspose.Words per .NET. Pronti a tuffarvi? Cominciamo!
+Se stai cercando di migliorare le tue capacità di automazione dei documenti, allora sei pronto per una sorpresa. Questo tutorial ti guiderà attraverso il processo di aggiunta di segnalibri alle colonne di tabella in un documento Word utilizzando Aspose.Words per .NET. Pronti a tuffarcisi? Cominciamo!
 
 ## Prerequisiti
 

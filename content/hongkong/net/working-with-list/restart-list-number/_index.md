@@ -9,7 +9,7 @@ url: /zh-hant/net/working-with-list/restart-list-number/
 ---
 ## 介紹
 
-您是否希望掌握使用 Aspose.Words for .NET 在 Word 文件中進行清單操作的技巧？嗯，您來對地方了！在本教程中，我們將深入探討重新啟動清單編號，這是一個很棒的功能，可以將您的文件自動化技能提升到一個新的水平。繫好安全帶，讓我們開始吧！
+您是否希望掌握使用 Aspose.Words for .NET 在 Word 文件中進行清單操作的藝術？嗯，您來對地方了！在本教程中，我們將深入探討重新啟動清單編號，這是一個很棒的功能，可以將您的文件自動化技能提升到一個新的水平。繫好安全帶，讓我們開始吧！
 
 ## 先決條件
 
@@ -98,7 +98,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 ## 結論
 
-使用 Aspose.Words for .NET 重新啟動 Word 文件中的清單編號非常簡單且非常有用。無論您是產生報告、建立結構化文檔，還是只是需要更好地控制列表，這種技術都能滿足您的需求。
+使用 Aspose.Words for .NET 重新啟動 Word 文件中的清單編號非常簡單且非常有用。無論您是要產生報告、建立結構化文檔，還是只是需要更好地控制列表，這種技術都能滿足您的需求。
 
 ## 常見問題解答
 

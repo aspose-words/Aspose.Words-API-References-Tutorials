@@ -107,7 +107,7 @@ Aspose.Words for .NET to potężna biblioteka, która umożliwia programistom pr
 
 ### Jak uzyskać pomoc techniczną dotyczącą Aspose.Words dla platformy .NET?
 
-Możesz uzyskać pomoc odwiedzając stronę[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8).
+ Możesz uzyskać pomoc odwiedzając stronę[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8).
 
 ### Czy mogę scalić inne formaty plików z Aspose.Words dla .NET?
 

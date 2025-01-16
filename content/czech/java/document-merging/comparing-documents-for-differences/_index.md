@@ -7,82 +7,151 @@ type: docs
 weight: 12
 url: /cs/java/document-merging/comparing-documents-for-differences/
 ---
+## Zavedení
 
-## Úvod do porovnávání rozdílů dokumentů
-
-neustále se vyvíjejícím světě správy dokumentů je prvořadé zajistit přesnost a konzistenci vašich dokumentů. Bez ohledu na to, zda se zabýváte právními smlouvami, finančními zprávami nebo jednoduše sledujete revize ve svých dokumentech, schopnost porovnávat dokumenty s ohledem na rozdíly je zásadní funkcí. Tento podrobný průvodce vás provede procesem porovnávání rozdílů mezi dokumenty pomocí Aspose.Words for Java, výkonného rozhraní API pro práci s dokumenty aplikace Word.
+Přemýšleli jste někdy, jak rozpoznat každý jednotlivý rozdíl mezi dvěma dokumenty aplikace Word? Možná revidujete dokument nebo se snažíte najít změny provedené spolupracovníkem. Ruční porovnávání může být zdlouhavé a náchylné k chybám, ale s Aspose.Words pro Java je to hračka! Tato knihovna umožňuje automatizovat porovnání dokumentů, zvýrazňovat revize a slučovat změny bez námahy.
 
 ## Předpoklady
 
-Než se ponoříme do podrobností, ujistěte se, že máte vše, co potřebujete:
+Než skočíte do kódu, ujistěte se, že máte připraveno následující:  
+1. Java Development Kit (JDK) nainstalovaný ve vašem systému.  
+2.  Aspose.Words pro knihovnu Java. Můžete[stáhněte si to zde](https://releases.aspose.com/words/java/).  
+3. Vývojové prostředí jako IntelliJ IDEA nebo Eclipse.  
+4. Základní znalost programování v Javě.  
+5.  Platná licence Aspose. Pokud žádný nemáte, pořiďte si a[dočasná licence zde](https://purchase.aspose.com/temporary-license/).
 
-- Základní znalost programování v Javě.
--  Nainstalovaná knihovna Aspose.Words for Java. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/java/).
-- Integrované vývojové prostředí (IDE) jako IntelliJ IDEA nebo Eclipse.
+## Importujte balíčky
 
-## Nastavení vašeho projektu Java
-
-Chcete-li začít, vytvořte nový projekt Java ve svém IDE a přidejte knihovnu Aspose.Words do závislostí projektu.
-
-## Krok 1: Vložte dokumenty
-
-Prvním krokem při porovnávání dokumentů je načtení dokumentů, které chcete porovnat. Následující fragment kódu můžete použít k načtení dvou dokumentů:
+Chcete-li používat Aspose.Words, musíte importovat potřebné třídy. Níže jsou uvedeny požadované importy:
 
 ```java
-// Vložte originální dokument
-Document docOriginal = new Document("original_document.docx");
-
-// Načtěte upravený dokument
-Document docModified = new Document("modified_document.docx");
+import com.aspose.words.*;
+import java.util.Date;
 ```
 
- Nahradit`"original_document.docx"` a`"modified_document.docx"` s cestami k vašim vlastním dokumentům.
+Ujistěte se, že jsou tyto balíčky správně přidány do závislostí vašeho projektu.
 
-## Krok 2: Porovnejte dokumenty
 
-Nyní, když jste načetli dokumenty, je čas je porovnat. Aspose.Words poskytuje pohodlnou metodu pro porovnávání dokumentů. Můžete to udělat takto:
+V této části rozdělíme proces do jednoduchých kroků.
+
+
+## Krok 1: Nastavte své dokumenty
+
+Chcete-li začít, potřebujete dva dokumenty: jeden představuje originál a druhý představuje upravenou verzi. Takto je vytvoříte:
 
 ```java
-// Porovnejte oba dokumenty
-DocumentComparer comparer = new DocumentComparer(docOriginal, docModified);
-comparer.compare();
+Document doc1 = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc1);
+builder.writeln("This is the original document.");
+
+Document doc2 = new Document();
+builder = new DocumentBuilder(doc2);
+builder.writeln("This is the edited document.");
 ```
 
-## Krok 3: Uložte výsledek porovnání
+ Tím se v paměti vytvoří dva dokumenty se základním obsahem. Můžete také načíst existující dokumenty aplikace Word pomocí`new Document("path/to/document.docx")`.
 
-Po porovnání dokumentů budete chtít výsledek uložit. Aspose.Words umožňuje uložit výsledek porovnání jako nový dokument. Zde je postup:
+
+## Krok 2: Zkontrolujte existující revize
+
+Revize v dokumentech aplikace Word představují sledované změny. Před porovnáním se ujistěte, že žádný dokument neobsahuje již existující revize:
 
 ```java
-// Uložte výsledek porovnání
-comparer.save("comparison_result.docx");
+if (doc1.getRevisions().getCount() == 0 && doc2.getRevisions().getCount() == 0) {
+    System.out.println("No revisions found. Proceeding with comparison...");
+}
 ```
 
-## Krok 4: Zkontrolujte rozdíly
+Pokud existují revize, můžete je před pokračováním přijmout nebo odmítnout.
 
-Nyní, když máte uložený výsledek porovnání, můžete zkontrolovat rozdíly mezi původními a upravenými dokumenty. Otevřete soubor „comparison_result.docx“, abyste viděli zvýrazněné změny.
+
+## Krok 3: Porovnejte dokumenty
+
+ Použijte`compare` způsob, jak najít rozdíly. Tato metoda porovnává cílový dokument (`doc2`) se zdrojovým dokumentem (`doc1`):
+
+```java
+doc1.compare(doc2, "AuthorName", new Date());
+```
+
+Zde:
+- AuthorName je jméno osoby, která provádí změny.
+- Datum je časové razítko porovnání.
+
+
+## Krok 4: Revize procesu
+
+Po porovnání Aspose.Words vygeneruje revize ve zdrojovém dokumentu (`doc1`). Pojďme analyzovat tyto revize:
+
+```java
+for (Revision r : doc1.getRevisions()) {
+    System.out.println("Revision type: " + r.getRevisionType());
+    System.out.println("Node type: " + r.getParentNode().getNodeType());
+    System.out.println("Changed text: " + r.getParentNode().getText());
+}
+```
+
+Tato smyčka poskytuje podrobné informace o každé revizi, jako je typ změny a dotčený text.
+
+
+## Krok 5: Přijměte všechny revize
+
+Pokud chcete zdrojový dokument (`doc1`), aby odpovídal cílovému dokumentu (`doc2`), přijměte všechny revize:
+
+```java
+doc1.getRevisions().acceptAll();
+```
+
+ Toto se aktualizuje`doc1` odrážet všechny provedené změny`doc2`.
+
+
+## Krok 6: Uložte aktualizovaný dokument
+
+Nakonec uložte aktualizovaný dokument na disk:
+
+```java
+doc1.save("Document.Compare.docx");
+```
+
+Chcete-li potvrdit změny, znovu načtěte dokument a ověřte, že nezbývají žádné revize:
+
+```java
+doc1 = new Document("Document.Compare.docx");
+if (doc1.getRevisions().getCount() == 0) {
+    System.out.println("Documents are now identical.");
+}
+```
+
+
+## Krok 7: Ověřte rovnost dokumentu
+
+Aby byly dokumenty totožné, porovnejte jejich text:
+
+```java
+if (doc1.getText().trim().equals(doc2.getText().trim())) {
+    System.out.println("Documents are equal.");
+}
+```
+
+Pokud se texty shodují, gratulujeme – úspěšně jste porovnali a synchronizovali dokumenty!
+
 
 ## Závěr
 
-Porovnání rozdílů mezi dokumenty pomocí Aspose.Words for Java je jednoduchý proces, který může výrazně zlepšit váš pracovní postup správy dokumentů. Pomocí tohoto výkonného rozhraní API můžete snadno zajistit přesnost a konzistenci svých dokumentů.
+Díky Aspose.Words pro Javu již není porovnávání dokumentů žádná fuška. Pomocí několika řádků kódu můžete přesně určit rozdíly, zpracovat revize a zajistit konzistenci dokumentu. Ať už řídíte projekt společného psaní nebo kontrolujete právní dokumenty, tato funkce změní hru.
 
 ## FAQ
 
-### Jak nainstaluji Aspose.Words for Java?
+### Mohu porovnávat dokumenty s obrázky a tabulkami?  
+Ano, Aspose.Words podporuje porovnávání složitých dokumentů, včetně těch s obrázky, tabulkami a formátováním.
 
- Chcete-li nainstalovat Aspose.Words for Java, navštivte stránku pro stahování[zde](https://releases.aspose.com/words/java/) postupujte podle dodaných pokynů k instalaci.
+### Potřebuji k používání této funkce licenci?  
+ Ano, pro plnou funkčnost je nutná licence. Získejte a[dočasná licence zde](https://purchase.aspose.com/temporary-license/).
 
-### Mohu porovnávat dokumenty s různými formáty, jako jsou DOCX a PDF?
+### Co se stane, pokud existují již existující revize?  
+Před porovnáváním dokumentů je musíte přijmout nebo odmítnout, abyste předešli konfliktům.
 
-Aspose.Words primárně pracuje s dokumenty Wordu ve formátu DOCX. Chcete-li porovnat dokumenty v různých formátech, možná je budete muset nejprve převést do formátu DOCX.
+### Mohu zvýraznit revize v dokumentu?  
+Ano, Aspose.Words vám umožňuje přizpůsobit způsob zobrazení revizí, například zvýraznění změn.
 
-### Existují nějaká omezení velikosti dokumentu při použití Aspose.Words?
-
-Aspose.Words dokáže efektivně zpracovat velké dokumenty, ale při práci s extrémně velkými soubory je nezbytné vzít v úvahu paměť a výkon vašeho systému.
-
-### Mohu přizpůsobit způsob, jakým jsou rozdíly zvýrazněny ve výsledku porovnání?
-
-Ano, Aspose.Words vám umožňuje přizpůsobit vzhled rozdílů v dokumentu s výsledky porovnání, jako je použití různých barev nebo stylů pro přidaný a odstraněný obsah.
-
-### Je k dispozici zkušební verze Aspose.Words pro testování?
-
-Ano, na webu si můžete vyžádat bezplatnou zkušební verzi Aspose.Words for Java. To vám umožní prozkoumat jeho funkce a možnosti před nákupem.
+### Je tato funkce dostupná v jiných programovacích jazycích?  
+Ano, Aspose.Words podporuje více jazyků, včetně .NET a Pythonu.

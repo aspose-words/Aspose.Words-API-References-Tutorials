@@ -88,7 +88,7 @@ Tak, możesz programowo dostosować różne aspekty wykresu, takie jak kolory, c
 Oczywiście! Aspose.Words dla .NET obsługuje szeroki zakres typów wykresów i opcji dostosowywania do tworzenia złożonych wykresów.
 
 ### Czy Aspose.Words dla .NET obsługuje eksportowanie wykresów do innych formatów, takich jak PDF?
-Tak, możesz bez problemu eksportować dokumenty zawierające wykresy do różnych formatów, w tym do PDF.
+Tak, możesz bezproblemowo eksportować dokumenty zawierające wykresy do różnych formatów, w tym do PDF.
 
 ### Czy mogę zintegrować dane ze źródeł zewnętrznych z tymi wykresami?
 Tak, Aspose.Words for .NET pozwala na dynamiczne wypełnianie wykresów danymi z zewnętrznych źródeł, takich jak bazy danych lub interfejsy API.

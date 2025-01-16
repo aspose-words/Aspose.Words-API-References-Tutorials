@@ -92,4 +92,4 @@ Aspose.Words, .NET Framework ve .NET Core'un çeşitli sürümlerini destekleyer
 Evet, Aspose.Words API yöntemlerini kullanarak başlık ve altbilgilerin bağlantısını kaldırabilir ve bireysel belge biçimlendirmesini geri yükleyebilirsiniz.
 
 ### Aspose.Words for .NET hakkında daha detaylı dokümanları nerede bulabilirim?
- Ziyaret etmek[Aspose.Words .NET Belgeleri için](https://reference.aspose.com/words/net/)kapsamlı kılavuzlar ve API referansları için.
+ Ziyaret etmek[Aspose.Words .NET Belgeleri için](https://reference.aspose.com/words/net/) kapsamlı kılavuzlar ve API referansları için.

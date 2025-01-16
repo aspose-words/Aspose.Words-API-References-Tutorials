@@ -14,7 +14,7 @@ Ebben az átfogó útmutatóban elmélyülünk az Aspose.Words for Java dokument
 
 ## Ismerkedés a dokumentumalakzatokkal
 
-Mielőtt belevágnánk a kódba, állítsuk be a környezetünket. Győződjön meg arról, hogy az Aspose.Words for Java integrálva van a projektjébe. Ha még nem tette meg, letöltheti az Aspose webhelyéről[Töltse le az Aspose.Words for Java programot](https://releases.aspose.com/words/java/)
+ Mielőtt belevágnánk a kódba, állítsuk be a környezetünket. Győződjön meg arról, hogy az Aspose.Words for Java integrálva van a projektjébe. Ha még nem tette meg, letöltheti az Aspose webhelyéről[Töltse le az Aspose.Words for Java programot](https://releases.aspose.com/words/java/)
 
 ## Alakzatok hozzáadása a dokumentumokhoz
 
@@ -52,7 +52,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AddGroupShape.docx");
 
 ### Szövegdoboz alakzat beszúrása
 
- Szövegdoboz alakzat beszúrásához használhatja a`insertShape` az alábbi példában bemutatott módszer:
+ Szövegdoboz alakzat beszúrásához használhatja a`insertShape` módszer az alábbi példában látható módon:
 
 ```java
 Document doc = new Document();
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);
@@ -176,7 +176,7 @@ Az Aspose.Words for Java egy Java-könyvtár, amely lehetővé teszi a fejleszt�
 
 ### Milyen előnyei vannak a dokumentumformák használatának?
 
-dokumentumformák vizuális elemeket és interaktivitást adnak a dokumentumokhoz, így vonzóbbá és informatívabbá teszik azokat. Az alakzatokkal kiemeléseket, gombokat, képeket, vízjeleket és egyebeket hozhat létre, javítva az általános felhasználói élményt.
+A dokumentumformák vizuális elemeket és interaktivitást adnak a dokumentumokhoz, így vonzóbbá és informatívabbá teszik azokat. Az alakzatokkal kiemeléseket, gombokat, képeket, vízjeleket és egyebeket hozhat létre, javítva az általános felhasználói élményt.
 
 ### Testreszabhatom az alakzatok megjelenését?
 

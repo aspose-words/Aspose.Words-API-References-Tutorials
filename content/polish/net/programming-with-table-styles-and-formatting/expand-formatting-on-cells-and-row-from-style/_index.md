@@ -2,7 +2,7 @@
 title: Rozszerz formatowanie komórek i wierszy ze stylu
 linktitle: Rozszerz formatowanie komórek i wierszy ze stylu
 second_title: Aspose.Words API przetwarzania dokumentów
-description: Dowiedz się, jak rozszerzyć formatowanie komórek i wierszy ze stylów w dokumentach Word za pomocą Aspose.Words dla .NET. Zawiera przewodnik krok po kroku.
+description: Dowiedz się, jak rozszerzyć formatowanie komórek i wierszy ze stylów w dokumentach Worda przy użyciu Aspose.Words dla .NET. Zawiera przewodnik krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-table-styles-and-formatting/expand-formatting-on-cells-and-row-from-style/
@@ -18,7 +18,7 @@ Zanim przejdziemy do szczegółów, upewnij się, że masz zapewnione następuj�
 -  Aspose.Words dla .NET: Można go pobrać[Tutaj](https://releases.aspose.com/words/net/).
 - Visual Studio: Działa każda nowsza wersja.
 - Podstawowa znajomość języka C#: Znajomość programowania w języku C# jest niezbędna.
-- Przykładowy dokument: Przygotuj dokument Word zawierający tabelę lub możesz wykorzystać tabelę podaną w przykładowym kodzie.
+- Przykładowy dokument: Przygotuj dokument Word zawierający tabelę lub wykorzystaj tabelę podaną w przykładowym kodzie.
 
 ## Importuj przestrzenie nazw
 
@@ -73,7 +73,7 @@ Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 
 ## Krok 5: Rozwiń style tabeli
 
- Tutaj dzieje się magia. Nazwiemy to`ExpandTableStylesToDirectFormatting` metoda pozwalająca zastosować style tabeli bezpośrednio do komórek.
+ Tutaj dzieje się magia. Nazwiemy`ExpandTableStylesToDirectFormatting` metoda pozwalająca zastosować style tabeli bezpośrednio do komórek.
 
 ```csharp
 // Rozszerz style tabeli o bezpośrednie formatowanie.

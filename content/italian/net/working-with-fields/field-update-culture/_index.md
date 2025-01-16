@@ -34,7 +34,7 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Ora che è tutto pronto, scomponiamo il processo di configurazione della cultura di aggiornamento sul campo in passaggi gestibili.
+Ora che hai completato la configurazione, scomponiamo il processo di configurazione della cultura di aggiornamento sul campo in passaggi gestibili.
 
 ## Passaggio 1: imposta il documento e DocumentBuilder
 

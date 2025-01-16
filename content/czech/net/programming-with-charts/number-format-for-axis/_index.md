@@ -15,7 +15,7 @@ Ahoj! Pracovali jste někdy s grafy ve svých dokumentech a přáli si, abyste m
 
 Než začneme, ujistěte se, že máte vše, co potřebujete. Zde je rychlý kontrolní seznam:
 
--  Aspose.Words for .NET: Ujistěte se, že jej máte nainstalovaný. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že jej máte nainstalovaný. Pokud ne, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - .NET Framework: Ujistěte se, že máte nainstalovaný kompatibilní .NET Framework.
 - Vývojové prostředí: IDE jako Visual Studio bude fungovat perfektně.
 - Základní znalost C#: To vám pomůže sledovat příklady kódování.
@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-The`InsertChart` metoda vloží do dokumentu tabulku zadaného typu (v tomto případě sloupec) a rozměrů.
+ The`InsertChart` metoda vloží do dokumentu tabulku zadaného typu (v tomto případě sloupec) a rozměrů.
 
 ## Krok 3: Přizpůsobení řady grafů
 
@@ -86,7 +86,7 @@ Nakonec zformátujme čísla na ose Y, aby byla čitelnější. Je to jako dodě
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-The`FormatCode` vlastnost umožňuje nastavit vlastní formát čísel na ose. V tomto příkladu`#,##0`zajišťuje, že se velká čísla zobrazují s čárkami za tisíce.
+ The`FormatCode` vlastnost umožňuje nastavit vlastní formát čísel na ose. V tomto příkladu`#,##0`zajišťuje, že se velká čísla zobrazují s čárkami za tisíce.
 
 ## Krok 5: Uložení dokumentu
 

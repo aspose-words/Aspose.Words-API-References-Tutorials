@@ -27,7 +27,7 @@ Mari kita mulai dengan membuat dokumen Word yang nantinya akan kita ubah ke form
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Sisipkan tabel dengan dua sel
+// Sisipkan tabel dengan dua sel
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// Atur perataan konten tabel ke otomatis (ditentukan oleh paragraf pertama)
+//Atur perataan konten tabel ke otomatis (ditentukan oleh paragraf pertama)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## Langkah 3: Menangani Gambar
 
-Untuk memasukkan gambar ke dalam dokumen Markdown Anda, Anda perlu menentukan folder tempat gambar tersebut berada. Aspose.Words untuk Java memungkinkan Anda untuk mengatur folder gambar di`MarkdownSaveOptions`.
+ Untuk memasukkan gambar ke dalam dokumen Markdown Anda, Anda perlu menentukan folder tempat gambar tersebut berada. Aspose.Words untuk Java memungkinkan Anda untuk mengatur folder gambar di`MarkdownSaveOptions`.
 
 Berikut cara mengatur folder gambar dan menyimpan dokumen dengan gambar:
 

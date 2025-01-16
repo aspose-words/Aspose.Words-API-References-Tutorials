@@ -80,7 +80,7 @@ Document doc = new Document("input.docx");
 // 이미지 추출기 만들기
 ImageExtractor extractor = new ImageExtractor(doc);
 
-// 문서에서 이미지 추출
+//문서에서 이미지 추출
 while (extractor.hasNext()) {
     extractor.getNextImage("output_" + extractor.getCurrentImageIndex() + ".png");
 }

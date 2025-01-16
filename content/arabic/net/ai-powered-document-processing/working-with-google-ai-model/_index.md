@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-ال`Document` تتيح لك الفئة من Aspose.Words تحميل ملفات Word إلى الذاكرة. تأكد من أن أسماء الملفات تتطابق مع المستندات الفعلية الموجودة في الدليل، وإلا فستواجه أخطاء عدم العثور على الملف!
+ ال`Document` تتيح لك الفئة من Aspose.Words تحميل ملفات Word إلى الذاكرة. تأكد من أن أسماء الملفات تتطابق مع المستندات الفعلية الموجودة في الدليل، وإلا فستواجه أخطاء عدم العثور على الملف!
 
 ## الخطوة 3: استرداد مفتاح API
 

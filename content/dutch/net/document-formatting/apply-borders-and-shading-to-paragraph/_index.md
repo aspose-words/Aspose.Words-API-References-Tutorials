@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-De`Document` object vertegenwoordigt ons hele Word-document en de`DocumentBuilder` helpt ons inhoud toe te voegen en op te maken.
+ De`Document` object vertegenwoordigt ons hele Word-document en de`DocumentBuilder` helpt ons inhoud toe te voegen en op te maken.
 
 ## Stap 3: Definieer alinearanden
 

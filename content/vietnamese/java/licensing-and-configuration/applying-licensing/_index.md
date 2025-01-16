@@ -20,7 +20,7 @@ Aspose.Words for Java là một thư viện xử lý tài liệu mạnh mẽ cho
 
 ## 3. Thiết lập môi trường phát triển của bạn
 
-Để bắt đầu, hãy đảm bảo bạn đã cài đặt Aspose.Words for Java trong môi trường phát triển của mình. Bạn có thể tải xuống từ[Trang Tải xuống Aspose](https://releases.aspose.com/words/java/). Sau khi cài đặt, bạn có thể bắt đầu viết mã.
+ Để bắt đầu, hãy đảm bảo bạn đã cài đặt Aspose.Words for Java trong môi trường phát triển của mình. Bạn có thể tải xuống từ[Trang Tải xuống Aspose](https://releases.aspose.com/words/java/). Sau khi cài đặt, bạn có thể bắt đầu viết mã.
 
 ## 4. Áp dụng Giấy phép
 
@@ -48,7 +48,7 @@ Sau khi áp dụng giấy phép, hãy kiểm tra kỹ ứng dụng Aspose.Words 
 ## Mã nguồn đầy đủ
 ```java
         License license = new License();
-        //Dòng này cố gắng thiết lập giấy phép từ nhiều vị trí liên quan đến tệp thực thi và Aspose.Words.dll.
+        // Dòng này cố gắng thiết lập giấy phép từ nhiều vị trí liên quan đến tệp thực thi và Aspose.Words.dll.
         // Bạn cũng có thể sử dụng quá tải bổ sung để tải giấy phép từ một luồng, điều này rất hữu ích,
         // ví dụ, khi giấy phép được lưu trữ dưới dạng tài nguyên nhúng.
         try

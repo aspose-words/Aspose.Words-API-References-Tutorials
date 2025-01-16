@@ -9,7 +9,7 @@ url: /hu/net/programming-with-digital-signatures/creating-and-signing-new-signat
 ---
 ## Bevezetés
 
-Szia! Tehát van egy Word-dokumentuma, és hozzá kell adnia egy aláírási sort, majd digitálisan alá kell írnia. Trükkösnek hangzik? Egyáltalán nem! Az Aspose.Words for .NET-nek köszönhetően ezt zökkenőmentesen elérheti néhány sornyi kóddal. Ebben az oktatóanyagban végigvezetjük a teljes folyamaton, a környezet beállításától a dokumentum csillogó új aláírással történő mentéséig. Kész? Merüljünk el!
+Szia! Tehát van egy Word-dokumentuma, és hozzá kell adnia egy aláírási sort, majd digitálisan alá kell írnia. Trükkösnek hangzik? Egyáltalán nem! Az Aspose.Words for .NET-nek köszönhetően ezt zökkenőmentesen elérheti néhány sornyi kóddal. Ebben az oktatóanyagban végigvezetjük a teljes folyamaton a környezet beállításától a dokumentum csillogó új aláírással történő mentéséig. Kész? Merüljünk el!
 
 ## Előfeltételek
 

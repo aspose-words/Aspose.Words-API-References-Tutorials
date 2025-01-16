@@ -32,7 +32,7 @@ using Aspose.Words;
 
 Để chuyển đổi tệp Docx thành mảng byte, hãy làm theo các bước sau:
 ```csharp
-//Tải tệp Docx từ đĩa hoặc luồng
+// Tải tệp Docx từ đĩa hoặc luồng
 Document doc = new Document("input.docx");
 
 // Lưu tài liệu vào MemoryStream
@@ -64,13 +64,13 @@ Tóm lại, việc tận dụng Aspose.Words cho .NET để chuyển đổi các
  Không, bạn cần có giấy phép hợp lệ để sử dụng Aspose.Words cho .NET trong sản xuất. Bạn có thể xin giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
 
 ### Làm thế nào tôi có thể tìm hiểu thêm về tài liệu Aspose.Words cho .NET?
- Truy cập tài liệu[đây](https://reference.aspose.com/words/net/)để có hướng dẫn toàn diện và tài liệu tham khảo API.
+ Truy cập tài liệu[đây](https://reference.aspose.com/words/net/) để có hướng dẫn toàn diện và tài liệu tham khảo API.
 
 ### Aspose.Words có phù hợp để xử lý các tệp Docx lớn không?
 Có, Aspose.Words for .NET cung cấp khả năng quản lý bộ nhớ hiệu quả và tối ưu hóa hiệu suất để xử lý các tài liệu lớn.
 
 ### Tôi có thể nhận được sự hỗ trợ từ cộng đồng cho Aspose.Words dành cho .NET ở đâu?
- Tham gia diễn đàn cộng đồng[đây](https://forum.aspose.com/c/words/8) để đặt câu hỏi, chia sẻ kiến thức và kết nối với người dùng khác.
+ Tham gia diễn đàn cộng đồng[đây](https://forum.aspose.com/c/words/8)để đặt câu hỏi, chia sẻ kiến thức và kết nối với người dùng khác.
 
 ### Tôi có thể dùng thử Aspose.Words cho .NET miễn phí trước khi mua không?
  Có, bạn có thể tải xuống bản dùng thử miễn phí[đây](https://releases.aspose.com/) để đánh giá các tính năng và khả năng của nó.

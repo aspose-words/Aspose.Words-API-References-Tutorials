@@ -52,7 +52,7 @@ Document doc = new Document(dataDir + "Revisions.docx");
 
 ## 第 3 步：更新清單標籤
 
-如果您的文件包含列表，則更新列表標籤很重要。這可確保所有清單項目的編號和格式正確。
+如果您的文件包含列表，則更新列表標籤非常重要。這可確保所有清單項目的編號和格式正確。
 
 ```csharp
 doc.UpdateListLabels();

@@ -56,7 +56,7 @@ using Aspose.Words.Shaping.HarfBuzz;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем расположения вашего документа.
+ Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем расположения вашего документа.
 
 ### Загрузка документа
 

@@ -91,7 +91,7 @@ A imagem será redimensionada proporcionalmente, mantendo sua proporção origin
 ### Posso aplicar isso a outras formas além de imagens?
 Absolutamente! O recurso de bloqueio de proporção de aspecto pode ser aplicado a qualquer forma, incluindo retângulos, círculos e muito mais.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?
+### Aspose.Words para .NET é compatível com o .NET Core?
 Sim, o Aspose.Words para .NET oferece suporte ao .NET Framework e ao .NET Core.
 
 ### Onde posso encontrar mais documentação sobre o Aspose.Words para .NET?

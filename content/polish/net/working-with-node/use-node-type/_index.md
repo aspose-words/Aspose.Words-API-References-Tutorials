@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Krok 2: Uzyskaj dostęp do właściwości NodeType
 
-Ten`NodeType` property jest podstawową cechą Aspose.Words. Pozwala ona na identyfikację typu węzła, z którym masz do czynienia. Aby uzyskać dostęp do tej właściwości, po prostu użyj następującego kodu:
+ Ten`NodeType` property jest podstawową cechą Aspose.Words. Pozwala ona na identyfikację typu węzła, z którym masz do czynienia. Aby uzyskać dostęp do tej właściwości, po prostu użyj następującego kodu:
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -63,7 +63,7 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 ###  Co to jest`NodeType` property in Aspose.Words?
 
-Ten`NodeType` Właściwość identyfikuje typ węzła w dokumencie, taki jak Dokument, Sekcja, Akapit, Cykl lub Tabela.
+ Ten`NodeType` Właściwość identyfikuje typ węzła w dokumencie, taki jak Dokument, Sekcja, Akapit, Cykl lub Tabela.
 
 ###  Jak sprawdzić`NodeType` of a node?
 

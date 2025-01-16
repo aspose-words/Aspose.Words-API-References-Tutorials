@@ -7,128 +7,137 @@ type: docs
 weight: 14
 url: /vi/java/table-processing/table-contents-generation/
 ---
-
-Bạn đã sẵn sàng bắt đầu hành trình làm chủ việc tạo Mục lục (TOC) bằng Aspose.Words for Java chưa? Trong hướng dẫn toàn diện này, chúng ta sẽ khám phá nghệ thuật tạo Mục lục động và hấp dẫn về mặt hình ảnh một cách dễ dàng. Bạn sẽ được trang bị kiến thức và kỹ năng cần thiết để triển khai tính năng này một cách liền mạch trong các ứng dụng Java của mình. Vậy, hãy cùng bắt đầu ngay thôi!
-
 ## Giới thiệu
 
-Mục lục (TOC) là thành phần thiết yếu của bất kỳ tài liệu có cấu trúc tốt nào. Nó cung cấp cho người đọc một lộ trình, cho phép họ dễ dàng điều hướng qua các tài liệu dài. Aspose.Words for Java là một API mạnh mẽ giúp đơn giản hóa việc tạo mục lục trong các ứng dụng Java. Trong hướng dẫn từng bước này, chúng tôi sẽ đề cập đến mọi thứ bạn cần biết để tạo mục lục động bằng Aspose.Words for Java.
+Bạn đã bao giờ gặp khó khăn khi tạo Mục lục (TOC) động và chuyên nghiệp trong tài liệu Word của mình chưa? Không cần tìm đâu xa! Với Aspose.Words for Java, bạn có thể tự động hóa toàn bộ quy trình, tiết kiệm thời gian và đảm bảo độ chính xác. Cho dù bạn đang xây dựng một báo cáo toàn diện hay một bài báo học thuật, hướng dẫn này sẽ hướng dẫn bạn cách tạo Mục lục theo chương trình với Java. Sẵn sàng để bắt đầu chưa? Hãy bắt đầu thôi!
 
-## Bắt đầu với Aspose.Words cho Java
+## Điều kiện tiên quyết
 
-Trước khi đi sâu vào chi tiết về việc tạo mục lục, chúng ta hãy thiết lập môi trường và làm quen với Aspose.Words cho Java.
+Trước khi bắt đầu viết mã, hãy đảm bảo bạn có những điều sau:
 
-### Thiết lập môi trường của bạn
+1.  Java Development Kit (JDK): Đã cài đặt trên hệ thống của bạn. Bạn có thể tải xuống từ[Trang web của Oracle](https://www.oracle.com/java/technologies/javase-downloads.html).
+2.  Aspose.Words cho Thư viện Java: Tải xuống phiên bản mới nhất từ[trang phát hành](https://releases.aspose.com/words/java/).
+3. Môi trường phát triển tích hợp (IDE): Chẳng hạn như IntelliJ IDEA, Eclipse hoặc NetBeans.
+4.  Giấy phép tạm thời Aspose: Để tránh những hạn chế về đánh giá, hãy lấy[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
 
-Để bắt đầu, hãy đảm bảo bạn đã cài đặt Aspose.Words for Java. Bạn có thể tải xuống từ trang web[đây](https://releases.aspose.com/words/java/).
+## Nhập gói
 
-### Tạo một dự án Java mới
-
-Bắt đầu bằng cách tạo một dự án Java mới trong Môi trường phát triển tích hợp (IDE) yêu thích của bạn.
-
-### Thêm Aspose.Words cho Java vào Dự án của bạn
-
-Thêm thư viện Aspose.Words cho Java vào dự án của bạn bằng cách đưa nó vào phần phụ thuộc.
-
-### Khởi tạo Aspose.Words
-
-Trong mã Java của bạn, hãy khởi tạo Aspose.Words để bắt đầu làm việc với nó.
+Để sử dụng Aspose.Words for Java hiệu quả, hãy đảm bảo bạn nhập các lớp cần thiết. Sau đây là các lớp nhập:
 
 ```java
-// Khởi tạo Aspose.Words
-com.aspose.words.Document doc = new com.aspose.words.Document();
+import com.aspose.words.*;
 ```
 
-## Hiểu về Mục lục (TOC)
+Thực hiện theo các bước sau để tạo mục lục động trong tài liệu Word của bạn.
 
-Trước khi tìm hiểu cách tạo TOC, chúng ta hãy tìm hiểu sâu hơn về chúng và cách chúng hoạt động.
+## Bước 1: Khởi tạo Document và DocumentBuilder
 
-### Mục lục là gì?
+ Bước đầu tiên là tạo một tài liệu mới và sử dụng`DocumentBuilder` lớp để thao tác nó.
 
-Mục lục là danh sách xuất hiện ở đầu tài liệu và cung cấp liên kết đến các phần hoặc chương khác nhau trong tài liệu. Mục lục đóng vai trò là công cụ điều hướng hữu ích cho người đọc.
-
-### Quá trình tạo TOC diễn ra như thế nào?
-
-Việc tạo TOC liên quan đến việc xác định các tiêu đề hoặc nội dung cụ thể trong tài liệu của bạn và tạo liên kết đến các phần đó. Aspose.Words for Java đơn giản hóa quy trình này bằng cách tự động tạo TOC dựa trên các quy tắc được xác định trước.
-
-## Tạo Mục lục Cơ bản
-
-Bây giờ chúng ta đã có nền tảng vững chắc, hãy tạo mục lục cơ bản bằng Aspose.Words cho Java.
 
 ```java
-// Tạo một Mục lục mới
-com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-tocField.update();
+string dataDir = "Your Document Directory";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Mã ở trên tạo ra một TOC cơ bản trong tài liệu của bạn. Bạn có thể tùy chỉnh thêm bằng cách chỉ định các cấp độ, định dạng và nhiều hơn nữa.
+- `Document`: Biểu thị tài liệu Word.
+- `DocumentBuilder`: Một lớp trợ giúp cho phép thao tác tài liệu dễ dàng.
 
-## Tùy chỉnh TOC nâng cao
+## Bước 2: Chèn Mục lục
 
-Aspose.Words for Java cung cấp nhiều tùy chọn tùy chỉnh cho TOC của bạn. Hãy cùng khám phá một số tính năng nâng cao:
+Bây giờ, chúng ta hãy chèn Mục lục vào đầu tài liệu.
 
-### Tùy chỉnh Kiểu Mục lục
-
-Bạn có thể xác định kiểu mục lục sao cho phù hợp với tính thẩm mỹ của tài liệu.
 
 ```java
-// Tùy chỉnh kiểu TOC
-com.aspose.words.Style tocStyle = doc.getStyles().add(StyleType.PARAGRAPH, "MyTOCStyle");
-tocStyle.getFont().setSize(16);
-tocStyle.getFont().setBold(true);
+builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+builder.insertBreak(BreakType.PAGE_BREAK);
 ```
 
-### Bao gồm các tiêu đề cụ thể
+- `insertTableOfContents`: Chèn một trường TOC. Các tham số chỉ định:
+  - `\o "1-3"`: Bao gồm các tiêu đề từ cấp độ 1 đến 3.
+  - `\h`: Tạo siêu liên kết cho mục nhập.
+  - `\z`: Bỏ số trang cho các tài liệu web.
+  - `\u`: Giữ nguyên kiểu cho siêu liên kết.
+- `insertBreak`: Thêm ngắt trang sau mục lục.
 
-Bạn có thể chọn tiêu đề nào sẽ đưa vào Mục lục bằng cách chỉ định mức độ phác thảo của tiêu đề đó.
+## Bước 3: Thêm Tiêu đề để Điền vào Mục lục
+
+Để điền mục lục, bạn cần thêm các đoạn văn có kiểu tiêu đề.
+
 
 ```java
-// Chỉ bao gồm các tiêu đề cụ thể
-tocField.setCode("TOC \\o \"1-3\" \\h \\z");
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 1");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_2);
+builder.writeln("Heading 1.1");
+builder.writeln("Heading 1.2");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 2");
 ```
 
-## Thêm mã nguồn để tạo mục lục
+- `setStyleIdentifier` : Đặt kiểu đoạn văn thành một mức tiêu đề cụ thể (ví dụ:`HEADING_1`, `HEADING_2`).
+- `writeln`: Thêm văn bản vào tài liệu theo kiểu đã chỉ định.
 
-Hãy tiến thêm một bước nữa bằng cách tích hợp mã nguồn để tự động tạo mục lục trong các ứng dụng Java của bạn.
+## Bước 4: Thêm Tiêu đề lồng nhau
+
+Để thể hiện mức độ mục lục, hãy bao gồm các tiêu đề lồng nhau.
+
 
 ```java
-// Tự động tạo TOC trong Java
-public void generateTOC() {
-    com.aspose.words.Document doc = new com.aspose.words.Document();
-    com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-    tocField.update();
-    // Thêm tùy chỉnh ở đây
-}
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_3);
+builder.writeln("Heading 3.1.1");
+builder.writeln("Heading 3.1.2");
+builder.writeln("Heading 3.1.3");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_4);
+builder.writeln("Heading 3.1.3.1");
+builder.writeln("Heading 3.1.3.2");
 ```
 
-Bằng cách gói gọn việc tạo mục lục trong một phương pháp, bạn có thể dễ dàng kết hợp nó vào các dự án của mình.
+- Thêm tiêu đề ở mức độ sâu hơn để hiển thị thứ bậc trong Mục lục.
 
-## Câu hỏi thường gặp
+## Bước 5: Cập nhật các trường mục lục
 
-### Làm thế nào để tôi có thể cập nhật mục lục hiện có?
+Trường TOC phải được cập nhật để hiển thị các tiêu đề mới nhất.
 
-Để cập nhật mục lục hiện có trong tài liệu của bạn, chỉ cần nhấp chuột phải vào mục lục đó và chọn "Cập nhật trường". Aspose.Words for Java sẽ làm mới mục lục dựa trên bất kỳ thay đổi nào trong tiêu đề tài liệu của bạn.
 
-### Tôi có thể tạo nhiều mục lục trong một tài liệu không?
+```java
+doc.updateFields();
+```
 
-Có, bạn có thể tạo nhiều mục lục trong một tài liệu. Sử dụng các mã trường khác nhau cho mỗi mục lục và tùy chỉnh cài đặt của chúng khi cần.
+- `updateFields`: Làm mới tất cả các trường trong tài liệu, đảm bảo mục lục phản ánh các tiêu đề đã thêm.
 
-### Aspose.Words for Java có phù hợp với cả tài liệu nhỏ và lớn không?
+## Bước 6: Lưu tài liệu
 
-Chắc chắn rồi! Aspose.Words for Java rất linh hoạt và có thể xử lý các tài liệu có kích thước khác nhau, từ các báo cáo nhỏ đến các tiểu thuyết dài.
+Cuối cùng, lưu tài liệu theo định dạng mong muốn.
 
-### Tôi có thể tùy chỉnh giao diện mục lục của mình không?
 
-Chắc chắn rồi! Bạn có thể xác định kiểu tùy chỉnh cho mục lục để phù hợp với thiết kế và định dạng của tài liệu.
+```java
+doc.save(dataDir + "DocumentBuilder.InsertToc.docx");
+```
 
-### Aspose.Words for Java có hỗ trợ tham chiếu chéo trong Mục lục không?
-
-Có, bạn có thể tạo tham chiếu chéo trong Mục lục để liên kết đến các phần hoặc trang cụ thể trong tài liệu của mình.
-
-### Aspose.Words for Java có phù hợp cho ứng dụng web không?
-
-Thật vậy, Aspose.Words for Java có thể được tích hợp liền mạch vào các ứng dụng web để tạo mục lục một cách linh hoạt.
+- `save` : Xuất tài liệu sang`.docx` tập tin. Bạn có thể chỉ định các định dạng khác như`.pdf` hoặc`.txt` nếu cần.
 
 ## Phần kết luận
 
-Trong hướng dẫn toàn diện này, chúng tôi đã khám phá nghệ thuật tạo Mục lục (TOC) bằng Aspose.Words for Java. Bạn đã học cách thiết lập môi trường, tạo Mục lục cơ bản và nâng cao, thậm chí tích hợp tạo Mục lục vào các dự án Java của bạn bằng mã nguồn. Aspose.Words for Java cho phép bạn nâng cao tài liệu của mình bằng Mục lục động và hấp dẫn về mặt hình ảnh. Bây giờ, hãy tiếp tục và áp dụng kiến thức này để tạo Mục lục tuyệt đẹp trong các ứng dụng Java của bạn. Chúc bạn viết mã vui vẻ!
+Xin chúc mừng! Bạn đã tạo thành công Mục lục động trong tài liệu Word bằng Aspose.Words for Java. Chỉ với một vài dòng mã, bạn đã tự động hóa một tác vụ mà nếu không thì có thể mất hàng giờ. Vậy, tiếp theo là gì? Hãy thử nghiệm với các kiểu tiêu đề và định dạng khác nhau để điều chỉnh Mục lục của bạn theo nhu cầu cụ thể.
+
+## Câu hỏi thường gặp
+
+### Tôi có thể tùy chỉnh thêm định dạng mục lục không?
+Chắc chắn rồi! Bạn có thể điều chỉnh các thông số mục lục như bao gồm số trang, căn chỉnh văn bản hoặc sử dụng kiểu tiêu đề tùy chỉnh.
+
+### Có bắt buộc phải có giấy phép cho Aspose.Words dành cho Java không?
+ Có, cần có giấy phép để có đầy đủ chức năng. Bạn có thể bắt đầu bằng[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
+
+### Tôi có thể tạo mục lục cho một tài liệu hiện có không?
+ Vâng! Tải tài liệu vào một`Document` đối tượng và làm theo các bước tương tự để chèn và cập nhật Mục lục.
+
+### Cách này có áp dụng được với file xuất PDF không?
+ Có, TOC sẽ xuất hiện trong PDF nếu bạn lưu tài liệu ở định dạng`.pdf` định dạng.
+
+### Tôi có thể tìm thêm tài liệu ở đâu?
+ Kiểm tra các[Tài liệu Aspose.Words cho Java](https://reference.aspose.com/words/java/) để biết thêm ví dụ và thông tin chi tiết.

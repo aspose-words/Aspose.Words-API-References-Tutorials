@@ -38,23 +38,11 @@ Hier ist ein Beispielcode-Schnipsel, um Ihnen den Einstieg zu erleichtern:
 // Importieren Sie erforderliche Pakete
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Initialisieren eines neuen Dokuments
-        Document doc = new Document();
-
-        // Erstellen einer Liste
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Listenelemente hinzufügen
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Speichern des Dokuments
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Ändern einer Dokumentliste
@@ -69,21 +57,18 @@ Nachdem Sie eine Dokumentliste erstellt haben, müssen Sie diese möglicherweise
 Hier ist ein Code-Schnipsel zum Ändern einer Dokumentliste:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Laden eines vorhandenen Dokuments
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Zugriff auf die Liste
-        List list = doc.getLists().get(0);
-
-        // Neues Element hinzufügen
-        list.getListItems().add("New Item");
-
-        // Speichern des geänderten Dokuments
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Überprüfen Sie, ob der Absatz Teil einer Liste ist.
+    if (paragraph.isListItem()) {
+        // Aktualisieren Sie den letzten Listenabsatz.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Extrahieren von Informationen aus einer Dokumentliste
@@ -97,23 +82,21 @@ In manchen Fällen müssen Sie möglicherweise Informationen aus einer Dokumentl
 Hier ist ein Codeausschnitt zum Extrahieren von Informationen aus einer Dokumentliste:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Laden Sie das Dokument
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Zugriff auf die Liste
-        List list = doc.getLists().get(0);
-
-        // Durchlaufen Sie die Listenelemente und drucken Sie sie aus
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Häufig gestellte Fragen (FAQs)
+## Abschluss
+
+In diesem umfassenden Handbuch haben wir die Welt der Arbeit mit Dokumentlisten mithilfe von Aspose.Words für Java erkundet. Sie haben gelernt, wie Sie Dokumentlisten erstellen, ändern und Informationen daraus extrahieren – und das alles mit der Leistungsfähigkeit und Flexibilität von Aspose.Words für Java. Beginnen Sie noch heute mit der Implementierung dieser Techniken in Ihren Java-Projekten und optimieren Sie Ihre Aufgaben zur Dokumentautomatisierung.
+
+
+## Häufig gestellte Fragen
 
 ### Wie füge ich einer Dokumentliste Aufzählungspunkte hinzu?
  Um einer Dokumentliste Aufzählungspunkte hinzuzufügen, verwenden Sie beim Erstellen der Liste die entsprechende ListTemplate. Verwenden Sie beispielsweise`ListTemplate.BULLET_DEFAULT` anstatt`ListTemplate.NUMBER_DEFAULT`.
@@ -122,14 +105,10 @@ public class ExtractListItemsExample {
 Ja, Sie können die Formatierung von Listenelementen, einschließlich Schriftart, Größe, Farbe und mehr, mit den Formatierungsfunktionen von Aspose.Words für Java anpassen.
 
 ### Ist Aspose.Words für Java mit verschiedenen Dokumentformaten kompatibel?
-Auf jeden Fall! Aspose.Words für Java unterstützt eine Vielzahl von Dokumentformaten, darunter DOCX, PDF, HTML und mehr.
+Absolut! Aspose.Words für Java unterstützt eine Vielzahl von Dokumentformaten, darunter DOCX, PDF, HTML und mehr.
 
 ### Wie kann ich eine Dokumentliste in PDF konvertieren?
 Um eine Dokumentliste in PDF zu konvertieren, laden Sie das Dokument einfach mit Aspose.Words für Java und speichern Sie es im PDF-Format. So einfach geht das!
 
 ### Unterstützt Aspose.Words für Java die Arbeit mit Tabellen in Dokumenten?
 Ja, Aspose.Words für Java bietet umfassende Unterstützung für die Arbeit mit Tabellen, sodass Sie mühelos tabellarische Daten erstellen, ändern und extrahieren können.
-
-## Abschluss
-
-In diesem umfassenden Handbuch haben wir die Welt der Arbeit mit Dokumentlisten mithilfe von Aspose.Words für Java erkundet. Sie haben gelernt, wie Sie Dokumentlisten erstellen, ändern und Informationen daraus extrahieren – und das alles mit der Leistungsfähigkeit und Flexibilität von Aspose.Words für Java. Beginnen Sie noch heute mit der Implementierung dieser Techniken in Ihren Java-Projekten und optimieren Sie Ihre Aufgaben zur Dokumentautomatisierung.

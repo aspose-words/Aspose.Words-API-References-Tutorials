@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## 高级技术
-
-### 替换文本
-
-Aspose.Words 允许您轻松地查找和替换文档中的文本：
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### 修改格式
+## 修改格式
 
 您还可以使用 Aspose.Words 修改格式：
 

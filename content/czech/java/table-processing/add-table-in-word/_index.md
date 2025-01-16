@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Krok 6: Vytvořte tabulku a přidejte řádky
 
-Vytvořte nový`Table` objekt a zadejte počet řádků a sloupců.
+ Vytvořte nový`Table` objekt a zadejte počet řádků a sloupců.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Krok 8: Uložte dokument
 
- Uložte dokument aplikace Word do požadovaného umístění pomocí`save()` metoda.
+Uložte dokument aplikace Word do požadovaného umístění pomocí`save()` metoda.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Krok 9: Vyplňte kód
-
-Zde je úplný kód pro přidání tabulky ve Wordu pomocí Aspose.Words pro Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Krok 5: Vytvořte nový dokument aplikace Word
-        Document doc = new Document();
-
-        // Krok 6: Vytvořte tabulku a přidejte řádky
-        Table table = new Table(doc);
-        int rowCount = 5; // Počet řádků v tabulce
-        int columnCount = 3; // Počet sloupců v tabulce
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Krok 7: Přidejte tabulku do dokumentu
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Krok 8: Uložte dokument
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Závěr

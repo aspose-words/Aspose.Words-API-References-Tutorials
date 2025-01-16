@@ -61,7 +61,7 @@ Setelah dokumen dimuat, kita dapat melanjutkan untuk menghapus teks dari rentang
 2.  Hapus Rentang: Gunakan`Range.Delete` metode untuk menghapus semua teks dalam bagian ini.
 
 ```csharp
-//Hapus teks di bagian pertama dokumen
+// Hapus teks di bagian pertama dokumen
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Aspose.Words untuk .NET adalah pustaka kelas untuk memproses dokumen Word. Pusta
 
 ### Bisakah saya menghapus teks dari paragraf tertentu dan bukan dari suatu bagian?
 
-Ya, Anda dapat menghapus teks dari paragraf tertentu dengan mengakses paragraf yang diinginkan dan menggunakan`Range.Delete` metode.
+ Ya, Anda dapat menghapus teks dari paragraf tertentu dengan mengakses paragraf yang diinginkan dan menggunakan`Range.Delete` metode.
 
 ### Apakah mungkin untuk menghapus teks secara bersyarat?
 

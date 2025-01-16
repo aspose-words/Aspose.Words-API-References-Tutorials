@@ -94,11 +94,11 @@ Aspose.Words for .NET to potężna biblioteka, która umożliwia programistom pr
 
 ### 3. Jak wykryć inne typy kształtów w dokumencie?
 
- Możesz zmodyfikować zapytanie LINQ, aby sprawdzić inne właściwości lub typy kształtów. Zapoznaj się z[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Możesz zmodyfikować zapytanie LINQ, aby sprawdzić inne właściwości lub typy kształtów. Zapoznaj się z[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### 4. Jak uzyskać pomoc techniczną dotyczącą Aspose.Words dla .NET?
 
-Możesz uzyskać pomoc odwiedzając stronę[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8).
+ Możesz uzyskać pomoc odwiedzając stronę[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8).
 
 ### 5. Czy mogę programowo manipulować kształtami SmartArt?
 

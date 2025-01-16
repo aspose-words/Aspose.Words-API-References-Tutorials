@@ -15,7 +15,7 @@ url: /zh-hant/net/working-with-headers-and-footers/copy-headers-footers-from-pre
 
 在我們深入學習本教學之前，請確保您具備以下條件：
 
--  Aspose.Words for .NET：從以下位置下載並安裝：[下載連結](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：從以下位置下載並安裝它：[下載連結](https://releases.aspose.com/words/net/).
 - 開發環境：例如 Visual Studio，用於編寫和執行 C# 程式碼。
 - C#基礎：熟悉C#程式設計和.NET框架。
 - 範例文件：使用現有文件或建立新文檔，如本教學所示。

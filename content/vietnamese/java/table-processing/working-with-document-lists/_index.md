@@ -38,23 +38,11 @@ Sau đây là đoạn mã mẫu để bạn bắt đầu:
 // Nhập các gói cần thiết
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Khởi tạo một Tài liệu mới
-        Document doc = new Document();
-
-        // Tạo danh sách
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Thêm mục danh sách
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Lưu tài liệu
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Sửa đổi danh sách tài liệu
@@ -69,21 +57,18 @@ Sau khi tạo danh sách tài liệu, bạn có thể cần sửa đổi danh s�
 Sau đây là đoạn mã để sửa đổi danh sách tài liệu:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Tải một tài liệu hiện có
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Truy cập danh sách
-        List list = doc.getLists().get(0);
-
-        // Thêm một mục mới
-        list.getListItems().add("New Item");
-
-        // Lưu tài liệu đã sửa đổi
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Kiểm tra xem đoạn văn có phải là một phần của danh sách không.
+    if (paragraph.isListItem()) {
+        // Cập nhật đoạn danh sách cuối cùng.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Trích xuất thông tin từ danh sách tài liệu
@@ -97,23 +82,21 @@ Trong một số trường hợp, bạn có thể cần trích xuất thông tin
 Sau đây là đoạn mã để trích xuất thông tin từ danh sách tài liệu:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Tải tài liệu
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Truy cập danh sách
-        List list = doc.getLists().get(0);
-
-        // Lặp lại các mục danh sách và in chúng
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Những câu hỏi thường gặp (FAQ)
+## Phần kết luận
+
+Trong hướng dẫn toàn diện này, chúng tôi đã khám phá thế giới làm việc với danh sách tài liệu bằng Aspose.Words for Java. Bạn đã học cách tạo, sửa đổi và trích xuất thông tin từ danh sách tài liệu, tất cả đều có sức mạnh và tính linh hoạt của Aspose.Words for Java. Bắt đầu triển khai các kỹ thuật này trong các dự án Java của bạn ngay hôm nay và hợp lý hóa các tác vụ tự động hóa tài liệu của bạn.
+
+
+## Câu hỏi thường gặp
 
 ### Làm thế nào để thêm dấu đầu dòng vào danh sách tài liệu?
  Để thêm dấu đầu dòng vào danh sách tài liệu, hãy sử dụng ListTemplate thích hợp khi tạo danh sách. Ví dụ: sử dụng`ListTemplate.BULLET_DEFAULT` thay vì`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ Chắc chắn rồi! Aspose.Words for Java hỗ trợ nhiều định dạng tà
 
 ### Aspose.Words for Java có hỗ trợ làm việc với bảng trong tài liệu không?
 Có, Aspose.Words for Java cung cấp hỗ trợ toàn diện cho việc làm việc với bảng, cho phép bạn tạo, sửa đổi và trích xuất dữ liệu bảng một cách dễ dàng.
-
-## Phần kết luận
-
-Trong hướng dẫn toàn diện này, chúng tôi đã khám phá thế giới làm việc với danh sách tài liệu bằng Aspose.Words for Java. Bạn đã học cách tạo, sửa đổi và trích xuất thông tin từ danh sách tài liệu, tất cả đều có sức mạnh và tính linh hoạt của Aspose.Words for Java. Bắt đầu triển khai các kỹ thuật này trong các dự án Java của bạn ngay hôm nay và hợp lý hóa các tác vụ tự động hóa tài liệu của bạn.

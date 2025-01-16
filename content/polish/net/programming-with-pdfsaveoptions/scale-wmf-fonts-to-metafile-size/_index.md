@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-Ten`MetafileRenderingOptions` Klasa udostępnia opcje dotyczące sposobu renderowania metaplików (takich jak WMF). Poprzez ustawienie`ScaleWmfFontsToMetafileSize` Do`false`, wydajesz Aspose.Words polecenie, aby nie skalował czcionek zgodnie z rozmiarem metapliku, co może pomóc w zmniejszeniu całkowitego rozmiaru pliku PDF.
+ Ten`MetafileRenderingOptions` Klasa udostępnia opcje dotyczące sposobu renderowania metaplików (takich jak WMF). Poprzez ustawienie`ScaleWmfFontsToMetafileSize` Do`false`, wydajesz Aspose.Words polecenie, aby nie skalował czcionek zgodnie z rozmiarem metapliku, co może pomóc w zmniejszeniu całkowitego rozmiaru pliku PDF.
 
 ## Krok 3: Ustaw opcje zapisywania pliku PDF
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-Ten`PdfSaveOptions` Klasa pozwala określić różne ustawienia zapisywania dokumentu jako PDF. Przypisując wcześniej skonfigurowane`MetafileRenderingOptions` do`MetafileRenderingOptions` własność`PdfSaveOptions`, upewniasz się, że dokument jest zapisywany zgodnie z wybranymi przez Ciebie ustawieniami renderowania metapliku.
+ Ten`PdfSaveOptions` Klasa pozwala określić różne ustawienia zapisywania dokumentu jako PDF. Przypisując wcześniej skonfigurowane`MetafileRenderingOptions` do`MetafileRenderingOptions` własność`PdfSaveOptions`, upewniasz się, że dokument jest zapisywany zgodnie z wybranymi przez Ciebie ustawieniami renderowania metapliku.
 
 ## Krok 4: Zapisz dokument jako PDF
 

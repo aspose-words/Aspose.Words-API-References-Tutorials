@@ -1,6 +1,6 @@
 ---
 title: Versleuteld laden in Word-document
-linktitle: Gecodeerd document laden in Word-document
+linktitle: Versleuteld document laden in Word-document
 second_title: Aspose.Words API voor documentverwerking
 description: Leer hoe u versleutelde Word-documenten kunt laden en opslaan met Aspose.Words voor .NET. Beveilig uw documenten eenvoudig met nieuwe wachtwoorden. Inclusief stapsgewijze handleiding.
 type: docs
@@ -57,7 +57,7 @@ Door de stappen in deze tutorial te volgen, kunt u eenvoudig gecodeerde Word-doc
 ## Veelgestelde vragen
 
 ### Kan ik Aspose.Words gebruiken om andere bestandsformaten te laden en op te slaan?
-Ja, Aspose.Words ondersteunt een breed scala aan bestandsindelingen, waaronder DOC, DOCX, PDF, HTML en meer.
+Ja, Aspose.Words ondersteunt een breed scala aan bestandsformaten, waaronder DOC, DOCX, PDF, HTML en meer.
 
 ### Wat moet ik doen als ik het wachtwoord van een versleuteld document vergeet?
 Helaas, als u het wachtwoord vergeet, kunt u het document niet laden. Zorg ervoor dat u wachtwoorden veilig opslaat.

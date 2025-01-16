@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-그만큼`ImportFormatMode.KEEP_SOURCE_FORMATTING` 이 옵션을 사용하면 소스 문서의 서식이 보존됩니다.
+ 그만큼`ImportFormatMode.KEEP_SOURCE_FORMATTING` 이 옵션을 사용하면 소스 문서의 서식이 보존됩니다.
 
 ## 5단계: 결과 저장
 

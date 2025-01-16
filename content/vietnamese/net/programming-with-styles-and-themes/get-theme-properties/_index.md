@@ -64,7 +64,7 @@ Chủ đề trong tài liệu Word thường bao gồm các thiết lập cho c�
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
-Các`MajorFonts` thuộc tính cung cấp quyền truy cập vào các cài đặt phông chữ chính. Trong ví dụ này, chúng tôi đang truy xuất cụ thể phông chữ Latin được sử dụng trong chủ đề. Bạn có thể sử dụng mã tương tự để lấy các phông chữ chính khác như phông chữ East Asian hoặc Complex Script.
+ Các`MajorFonts` thuộc tính cung cấp quyền truy cập vào các cài đặt phông chữ chính. Trong ví dụ này, chúng tôi đang truy xuất cụ thể phông chữ Latin được sử dụng trong chủ đề. Bạn có thể sử dụng mã tương tự để lấy các phông chữ chính khác như phông chữ East Asian hoặc Complex Script.
 
 ## Bước 4: Lấy lại phông chữ phụ
 
@@ -84,7 +84,7 @@ Themes cũng xác định nhiều màu khác nhau được sử dụng cho các 
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
-Các`Colors` tài sản của`Theme` lớp này cho phép bạn lấy các điểm nhấn màu khác nhau được xác định trong chủ đề, cho phép bạn quản lý và áp dụng các bảng màu nhất quán trong tài liệu của mình.
+ Các`Colors` tài sản của`Theme` lớp này cho phép bạn lấy các điểm nhấn màu khác nhau được xác định trong chủ đề, cho phép bạn quản lý và áp dụng các bảng màu nhất quán trong tài liệu của mình.
 
 ## Phần kết luận
 

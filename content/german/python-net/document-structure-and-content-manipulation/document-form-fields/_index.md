@@ -17,16 +17,16 @@ Formularfelder sind interaktive Elemente in einem Dokument, die es Benutzern erm
 
 Bevor wir uns mit der Erstellung und Beherrschung von Formularfeldern befassen, richten wir unsere Umgebung ein und machen uns mit Aspose.Words für Python vertraut. Befolgen Sie diese Schritte, um loszulegen:
 
-1. **Install Aspose.Words:** Beginnen Sie mit der Installation der Bibliothek Aspose.Words für Python mit dem folgenden Pip-Befehl:
+1. Installieren Sie Aspose.Words: Beginnen Sie mit der Installation der Bibliothek Aspose.Words für Python mit dem folgenden Pip-Befehl:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Importieren Sie die Bibliothek in Ihr Python-Skript, um ihre Funktionen zu nutzen.
+2. Importieren Sie die Bibliothek: Importieren Sie die Bibliothek in Ihr Python-Skript, um ihre Funktionen zu nutzen.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Nachdem die Einrichtung abgeschlossen ist, fahren wir mit den Kernkonzepten des Erstellens und Verwaltens von Formularfeldern fort.
@@ -41,7 +41,7 @@ Texteingabefelder ermöglichen Benutzern die Eingabe von Text. Um ein Texteingab
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Kontrollkästchen und Optionsfelder
@@ -50,12 +50,12 @@ Kontrollkästchen und Optionsfelder werden für Multiple-Choice-Auswahlen verwen
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Dropdown-Listen
@@ -64,7 +64,7 @@ Dropdown-Listen bieten Benutzern eine Auswahl an Optionen. Erstellen Sie eine wi
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Datumsauswahl
@@ -73,7 +73,7 @@ Mit Datumsauswahlen können Benutzer bequem Daten auswählen. So erstellen Sie e
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Festlegen der Eigenschaften von Formularfeldern
@@ -122,7 +122,7 @@ Texteingabefelder sind vielseitig und werden häufig zum Erfassen von Textinform
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Sobald das Feld erstellt ist, können Sie seine Eigenschaften festlegen, z. B. Name, Standardwert und Platzhaltertext. Sehen wir uns an, wie das geht:
@@ -150,14 +150,14 @@ Um ein Kontrollkästchen-Formularfeld zu erstellen, verwenden Sie
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Optionsfelder können Sie mit dem Formtyp OLE_OBJECT erstellen:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Nachdem Sie diese Felder erstellt haben, können Sie ihre Eigenschaften wie Name, Standardauswahl und Beschriftungstext anpassen:
@@ -183,7 +183,7 @@ Dropdownlisten sind nützlich für Szenarien, in denen Benutzer eine Option aus 
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Nachdem Sie die Dropdown-Liste erstellt haben, können Sie die Liste der den Benutzern zur Verfügung stehenden Optionen angeben:
@@ -211,7 +211,7 @@ Datumsauswahlen vereinfachen die Erfassung von Daten von Benutzern. Sie bieten e
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Nachdem Sie die Datumsauswahl erstellt haben, können Sie ihre Eigenschaften festlegen, beispielsweise den Namen und das Standarddatum:
@@ -228,13 +228,9 @@ Datumsauswahl verbessert die Benutzererfahrung bei der Erfassung von Daten und g
 
 ## Abschluss
 
-Die Beherrschung von Formularfeldern und Datenerfassung in Word-Dokumenten ist eine wertvolle Fähigkeit, die Sie in die Lage versetzt, interaktive und effiziente Dokumente zur Datenerfassung zu erstellen. Aspose.Words für Python bietet einen umfassenden Satz von Tools zum Erstellen, Anpassen und Extrahieren von Daten aus Formularfeldern. Von einfachen Texteingabefeldern bis hin zu komplexen Berechnungen und bedingter Formatierung sind die Möglichkeiten zahlreich.
-
 In diesem Handbuch haben wir die Grundlagen von Formularfeldern, Formularfeldtypen, das Festlegen von Eigenschaften und das Anpassen ihres Verhaltens untersucht. Wir haben auch Best Practices für die Formulargestaltung angesprochen und Einblicke in die Optimierung von Dokumentformularen für Suchmaschinen gegeben.
 
-Indem Sie die Leistungsfähigkeit von Aspose.Words für Python nutzen, können Sie Dokumente erstellen, die nicht nur Daten effektiv erfassen, sondern auch die Benutzereinbindung verbessern und Datenverarbeitungsabläufe optimieren. Jetzt sind Sie bereit, sich auf den Weg zu machen, um ein Meister der Formularfelder und der Datenerfassung in Word-Dokumenten zu werden.
-
-## FAQs
+## Häufig gestellte Fragen
 
 ### Wie installiere ich Aspose.Words für Python?
 

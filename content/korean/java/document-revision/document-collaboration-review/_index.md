@@ -70,7 +70,7 @@ doc.acceptAllRevisions();
 
 ### Aspose.Words for Java를 사용하여 Word 문서의 변경 사항을 추적할 수 있나요?
 
-네, Aspose.Words for Java를 사용하면 Word 문서의 변경 사항을 추적할 수 있습니다. 다음을 사용할 수 있습니다.`startTrackRevisions` 변경 내용 추적을 활성화하는 방법입니다.
+ 네, Aspose.Words for Java를 사용하면 Word 문서의 변경 사항을 추적할 수 있습니다. 다음을 사용할 수 있습니다.`startTrackRevisions` 변경 내용 추적을 활성화하는 방법입니다.
 
 ### 문서의 변경 사항을 어떻게 검토할 수 있나요?
 

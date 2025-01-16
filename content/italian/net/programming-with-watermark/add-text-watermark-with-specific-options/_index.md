@@ -105,7 +105,7 @@ Aspose.Words supporta l'aggiunta di una filigrana alla volta. Per aggiungere pi�
 
 ### Posso modificare la posizione della filigrana?
 
-IL`WatermarkLayout`proprietà determina l'orientamento, ma le regolazioni precise del posizionamento non sono supportate direttamente. Potresti dover usare altre tecniche per un posizionamento esatto.
+ IL`WatermarkLayout`proprietà determina l'orientamento, ma le regolazioni precise del posizionamento non sono supportate direttamente. Potresti dover usare altre tecniche per un posizionamento esatto.
 
 ### Cosa succede se ho bisogno di una filigrana semitrasparente?
 

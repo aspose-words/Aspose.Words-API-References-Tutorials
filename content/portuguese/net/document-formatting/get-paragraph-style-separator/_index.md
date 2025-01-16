@@ -92,7 +92,7 @@ Um separador de estilo de parágrafo é um marcador especial usado em documentos
 ### Posso modificar o separador de estilo usando o Aspose.Words para .NET?
 Embora você possa identificar separadores de estilo, modificá-los diretamente não é suportado. No entanto, você pode manipular o conteúdo ao redor.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?
+### Aspose.Words para .NET é compatível com o .NET Core?
 Sim, o Aspose.Words para .NET é compatível com o .NET Framework e o .NET Core.
 
 ### Onde posso obter suporte para o Aspose.Words?

@@ -2,7 +2,7 @@
 title: Rozmotat v dokumentu Word
 linktitle: Rozmotat v dokumentu Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Zvládněte rozmotávání záložek v dokumentech aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro .NET vývojáře.
+description: Zvládněte rozmotávání záložek v dokumentech Word pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro .NET vývojáře.
 type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/untangle/
@@ -15,7 +15,7 @@ Procházení dokumentu aplikace Word pomocí programu může být trochu jako hl
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Budete potřebovat knihovnu Aspose.Words for .NET. Pokud ji nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Budete potřebovat knihovnu Aspose.Words for .NET. Pokud ji nemáte, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí .NET, jako je Visual Studio.
 3. Základní znalost C#: Pochopení základů C# vám pomůže sledovat úryvky kódu a vysvětlení.
 

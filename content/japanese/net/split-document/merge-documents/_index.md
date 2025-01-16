@@ -64,7 +64,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "Aspose.Words" 
 Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, saveOptions, MergeFormatMode.KeepSourceFormatting);
 ```
 
-このコード スニペットは、パスワード保護を使用してドキュメントを結合し、最終ドキュメントのセキュリティを確保します。
+このコード スニペットは、パスワード保護を使用してドキュメントを結合し、最終的なドキュメントのセキュリティを確保します。
 
 ## ステップ4: 結合してPDFとして保存する
 

@@ -38,9 +38,15 @@ Iniziamo creando un nuovo documento Word e aggiungendovi una casella di testo. E
 import aspose.words as aw
 
 doc = aw.Document()
-builder = aw.DocumentBuilder(doc)
-
-textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
+builder = aw.DocumentBuilder(doc=doc)
+textbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_BOX)
+textbox.width = 100
+textbox.height = 100
+textbox.text_box.layout_flow = aw.drawing.LayoutFlow.BOTTOM_TO_TOP
+textbox.append_child(aw.Paragraph(doc))
+builder.insert_node(textbox)
+builder.move_to(textbox.first_paragraph)
+builder.write('This text is flipped 90 degrees to the left.')
 ```
 
  In questo codice, creiamo un nuovo`Document` e un`DocumentBuilder` . IL`insert_text_box` Il metodo viene utilizzato per aggiungere una casella di testo al documento. Puoi personalizzare il contenuto, la posizione e le dimensioni della casella di testo in base alle tue esigenze.

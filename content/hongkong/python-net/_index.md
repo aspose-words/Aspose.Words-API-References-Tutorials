@@ -26,12 +26,8 @@ Aspose.Words for Python 提供了一系列教學課程，幫助開發人員進�
 使用 Aspose.Words for Python 掌握文件建立。建立動態文件、自訂格式並簡化 Word 文件處理。
 ### [文字自動化](./word-automation/)
 使用 Aspose.Words for Python 自動執行文字處理任務。簡化文件管理並提高文字自動化的效率。
-### [文檔智能](./document-intelligence/)
-使用 Aspose.Words for Python 的文件智慧從文件中釋放有價值的見解。自動分析、文字擷取和分類。
 ### [文件轉換](./document-conversion/)
 使用 Aspose.Words for Python 在不同格式之間有效率地轉換文件。簡化 Word 文件處理並簡化您的文件管理任務。 
-### [文件保護](./document-protection/)
-使用 Aspose.Words for Python 保護您的文件！實施密碼加密、使用者權限和數位簽章以實現強大的文件保護。
 ### [文檔結構和內容操作](./document-structure-and-content-manipulation/)
 探索適用於 Python 和 .NET 的 Aspose.Words 教程，重點是文件結構和內容操作。了解如何有效地導航、提取和修改文件元素。提供原始碼範例。
 ### [內容提取和操作](./content-extraction-and-manipulation/)
@@ -42,7 +38,5 @@ Aspose.Words for Python 提供了一系列教學課程，幫助開發人員進�
 探索 Python 和 .NET 中文件分割和格式設定的 Aspose.Words 教學。學習有效地分割和格式化文檔，從而增強您的文檔處理任務。 
 ### [文件選項和設置](./document-options-and-settings/)
 探索 Python 和 .NET 中文件選項和設定的 Aspose.Words 教學。了解使用逐步指南和原始程式碼範例來最佳化文件建立和格式設定。
-### [數據可視化和格式化](./data-visualization-and-formatting/)
-探索 Python 和 .NET 中的資料視覺化和格式設定的 Aspose.Words 教學。學習如何有效地呈現數據、創建令人驚嘆的報告以及以程式設計方式格式化文件。
 ### [表格和格式](./tables-and-formatting/)
 深入了解 Python 和 .NET 應用程式中的表格和格式設定的 Aspose.Words 教學。學習為具有視覺吸引力的文件建立、自訂表格並設定表格樣式。 

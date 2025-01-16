@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## الخطوة 3: تهيئة DocumentBuilder
 
-ال`DocumentBuilder` إنه مثل فرشاة الرسم الخاصة بك. فهو يساعدك على إضافة محتوى إلى مستندك. دعنا نبدأ في تشغيله.
+ ال`DocumentBuilder` إنه مثل فرشاة الرسم الخاصة بك. فهو يساعدك على إضافة محتوى إلى مستندك. دعنا نبدأ في تشغيله.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 Aspose.Words for .NET هي مكتبة قوية للعمل مع مستندات Word برمجيًا. وهي تدعم مجموعة واسعة من الميزات، بدءًا من إنشاء المستندات وتحريرها وحتى التحويل بين التنسيقات المختلفة.
 
 ### هل يمكنني استخدام Aspose.Words مجانًا؟
- نعم يمكنك البدء بـ[نسخة تجريبية مجانية](https://releases.aspose.com/) لاستكشاف ميزاته. للاستخدام طويل الأمد، يمكنك[شراء ترخيص](https://purchase.aspose.com/buy).
+نعم يمكنك البدء بـ[نسخة تجريبية مجانية](https://releases.aspose.com/) لاستكشاف ميزاته. للاستخدام طويل الأمد، يمكنك[شراء ترخيص](https://purchase.aspose.com/buy).
 
 ### كيف أحصل على الدعم لـ Aspose.Words؟
  يمكنك الحصول على الدعم من[منتدى مجتمع Aspose](https://forum.aspose.com/c/words/8)إنه مكان رائع لطرح الأسئلة ومشاركة تجاربك.

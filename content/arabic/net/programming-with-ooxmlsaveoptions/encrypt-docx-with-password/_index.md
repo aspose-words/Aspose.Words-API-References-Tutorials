@@ -54,7 +54,7 @@ Document doc = new Document(dataDir + "Document.docx");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-ال`OoxmlSaveOptions`تسمح لنا الفئة بتحديد خيارات مختلفة لحفظ ملفات DOCX. هنا، نقوم بتعيين`Password`الممتلكات ل`"password"` .يمكنك استبدال`"password"` بأي كلمة مرور من اختيارك. ستكون هذه الكلمة المرورية مطلوبة لفتح ملف DOCX المشفر.
+ ال`OoxmlSaveOptions`تسمح لنا الفئة بتحديد خيارات مختلفة لحفظ ملفات DOCX. هنا، نقوم بتعيين`Password`الممتلكات ل`"password"` .يمكنك استبدال`"password"` بأي كلمة مرور من اختيارك. ستكون هذه الكلمة المرورية مطلوبة لفتح ملف DOCX المشفر.
 
 ## الخطوة 3: احفظ المستند المشفر
 
@@ -65,7 +65,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-ال`Save` طريقة`Document` يتم استخدام الفئة لحفظ المستند. نوفر المسار واسم الملف للمستند المشفر، بالإضافة إلى`saveOptions` لقد قمنا بتكوينه مسبقًا. يتم الآن حفظ المستند كملف DOCX مشفر.
+ ال`Save` طريقة`Document` يتم استخدام الفئة لحفظ المستند. نوفر المسار واسم الملف للمستند المشفر، بالإضافة إلى`saveOptions` لقد قمنا بتكوينه مسبقًا. يتم الآن حفظ المستند كملف DOCX مشفر.
 
 ## خاتمة
 

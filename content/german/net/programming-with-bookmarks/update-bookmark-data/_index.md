@@ -29,11 +29,11 @@ using Aspose.Words;
 
  Diese Linie bringt die`Aspose.Words` Namespace in Ihren Code und gewährt Ihnen Zugriff auf die Klassen und Funktionen, die Sie für die Arbeit mit Word-Dokumenten benötigen.
 
-Kommen wir nun zum Kern der Sache: dem Aktualisieren vorhandener Lesezeichendaten in einem Word-Dokument. Hier ist eine Aufschlüsselung des Vorgangs in klaren, schrittweisen Anweisungen:
+Kommen wir nun zum Kern der Sache: dem Aktualisieren vorhandener Lesezeichendaten in einem Word-Dokument. Hier finden Sie eine Aufschlüsselung des Vorgangs in klaren, schrittweisen Anweisungen:
 
 ## Schritt 1: Dokument laden
 
- Stellen Sie sich Ihr Word-Dokument als eine Schatztruhe vor, die überquillt von Inhalten. Um auf die Geheimnisse (oder Lesezeichen in diesem Fall) zuzugreifen, müssen wir sie öffnen. Aspose.Words bietet die`Document` Klasse, die diese Aufgabe übernimmt. Hier ist der Code:
+ Stellen Sie sich Ihr Word-Dokument als eine Schatztruhe vor, die überquillt von Inhalten. Um auf die Geheimnisse (oder in diesem Fall Lesezeichen) zuzugreifen, müssen wir sie öffnen. Aspose.Words bietet die`Document` Klasse, die diese Aufgabe übernimmt. Hier ist der Code:
 
 ```csharp
 // Definieren Sie den Pfad zu Ihrem Dokument

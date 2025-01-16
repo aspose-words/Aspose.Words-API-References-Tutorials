@@ -23,7 +23,7 @@ Microsoft Word 文档通常需要动态内容，例如日期、计算或来自�
 要插入字段，您可以使用`FieldBuilder`类。例如，要插入当前日期字段：
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## 使用字段自动生成文档
-
-字段对于自动生成文档至关重要。您可以使用来自外部源的数据填充字段：
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## 将字段与数据源集成

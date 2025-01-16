@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Der`Document` Klasse initialisiert ein neues Dokument und die`DocumentBuilder` hilft uns, unserem Dokument einfach Inhalte hinzuzufügen.
+ Der`Document` Klasse initialisiert ein neues Dokument und die`DocumentBuilder` hilft uns, unserem Dokument einfach Inhalte hinzuzufügen.
 
 ## Schritt 2: Abschnitte einfügen
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-Der`InsertBreak` Methode fügt einen fortlaufenden Abschnittsumbruch ein, sodass wir für jeden Abschnitt unterschiedliche Einstellungen vornehmen können.
+ Der`InsertBreak` Methode fügt einen fortlaufenden Abschnittsumbruch ein, sodass wir für jeden Abschnitt unterschiedliche Einstellungen vornehmen können.
 
 ## Schritt 3: Schützen Sie das Dokument
 

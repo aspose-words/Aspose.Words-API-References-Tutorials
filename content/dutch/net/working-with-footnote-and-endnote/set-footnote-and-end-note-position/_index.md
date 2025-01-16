@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-Vervang in deze code`"YOUR DOCUMENT DIRECTORY"`met het werkelijke pad waar uw document zich bevindt.
+Vervang in deze code`"YOUR DOCUMENT DIRECTORY"` met het werkelijke pad waar uw document zich bevindt.
 
 ## Stap 2: Stel de positie van de voetnoot in
 
@@ -93,4 +93,4 @@ Aspose.Words voor .NET is ontworpen voor .NET-toepassingen, maar u kunt het gebr
 
 ### Waar kan ik meer gedetailleerde documentatie vinden voor Aspose.Words voor .NET?
 
-Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).
+ Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).

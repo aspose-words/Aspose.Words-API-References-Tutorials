@@ -8,7 +8,7 @@ weight: 10
 url: /pt/java/table-processing/add-table-in-word/
 ---
 
-O Microsoft Word é uma ferramenta poderosa de processamento de texto que permite aos usuários criar e formatar documentos com facilidade. As tabelas são um recurso fundamental dos documentos do Word, permitindo que os usuários organizem e apresentem dados de forma estruturada. Neste tutorial passo a passo, nós o guiaremos pelo processo de adição de tabelas no Word usando a biblioteca Aspose.Words para Java. Aspose.Words é uma API Java robusta que oferece várias funcionalidades para processamento de documentos, tornando-a uma excelente escolha para desenvolvedores. Vamos começar com este tutorial e explorar como adicionar tabelas no Word de forma eficiente.
+Microsoft Word é uma ferramenta poderosa de processamento de texto que permite aos usuários criar e formatar documentos com facilidade. As tabelas são um recurso fundamental dos documentos do Word, permitindo que os usuários organizem e apresentem dados de forma estruturada. Neste tutorial passo a passo, nós o guiaremos pelo processo de adição de tabelas no Word usando a biblioteca Aspose.Words para Java. Aspose.Words é uma API Java robusta que oferece várias funcionalidades para processamento de documentos, tornando-a uma excelente escolha para desenvolvedores. Vamos começar com este tutorial e explorar como adicionar tabelas no Word de forma eficiente.
 
 
 ## Etapa 1: Configurar o ambiente de desenvolvimento
@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Etapa 6: Crie uma tabela e adicione linhas
 
-Criar um novo`Table` objeto e especifique o número de linhas e colunas.
+ Criar um novo`Table` objeto e especifique o número de linhas e colunas.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Etapa 8: Salve o documento
 
- Salve o documento do Word no local desejado usando o`save()` método.
+Salve o documento do Word no local desejado usando o`save()` método.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Etapa 9: Complete o código
-
-Aqui está o código completo para adicionar uma tabela no Word usando Aspose.Words para Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Etapa 5: Crie um novo documento do Word
-        Document doc = new Document();
-
-        // Etapa 6: Crie uma tabela e adicione linhas
-        Table table = new Table(doc);
-        int rowCount = 5; // Número de linhas na tabela
-        int columnCount = 3; // Número de colunas na tabela
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Etapa 7: Adicione a tabela ao documento
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Etapa 8: Salve o documento
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Conclusão

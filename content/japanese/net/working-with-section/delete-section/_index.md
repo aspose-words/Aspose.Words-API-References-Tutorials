@@ -2,7 +2,7 @@
 title: セクションを削除
 linktitle: セクションを削除
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET でドキュメント操作をマスターします。いくつかの簡単な手順で Word ドキュメントからセクションを削除する方法を学びます。
+description: Aspose.Words for .NET でドキュメント操作をマスターしましょう。いくつかの簡単な手順で Word ドキュメントからセクションを削除する方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/working-with-section/delete-section/

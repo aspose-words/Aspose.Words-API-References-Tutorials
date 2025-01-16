@@ -83,7 +83,7 @@ Nah, itu dia! Anda telah berhasil mengubah sumber budaya pembaruan bidang di Asp
 ## Pertanyaan yang Sering Diajukan
 
 ###  Apa tujuan pengaturan`LocaleId`?
-Itu`LocaleId` menentukan pengaturan budaya untuk teks, yang memengaruhi bagaimana tanggal dan data sensitif lokal lainnya diformat.
+ Itu`LocaleId` menentukan pengaturan budaya untuk teks, yang memengaruhi bagaimana tanggal dan data sensitif lokal lainnya diformat.
 
 ### Bisakah saya menggunakan bahasa lain selain bahasa Jerman?
  Ya, Anda dapat mengaturnya`LocaleId`ke pengenal lokal yang valid. Misalnya, 1033 untuk Bahasa Inggris (Amerika Serikat).

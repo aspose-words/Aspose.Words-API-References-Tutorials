@@ -98,7 +98,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### 4. Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 
-Támogatást kaphat, ha ellátogat a[Aspose támogatási fórum](https://forum.aspose.com/c/words/8).
+ Támogatást kaphat, ha ellátogat a[Aspose támogatási fórum](https://forum.aspose.com/c/words/8).
 
 ### 5. Manipulálhatom a SmartArt alakzatokat programozottan?
 

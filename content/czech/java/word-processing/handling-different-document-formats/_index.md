@@ -37,13 +37,6 @@ Jednou z klíčových silných stránek Aspose.Words for Java je jeho schopnost 
 Document doc = new Document("sample.docx");
 ```
 
-### Načítání dokumentu PDF
-
-```java
-// Načtěte dokument PDF
-Document doc = new Document("sample.pdf");
-```
-
 ## Úprava a ukládání dokumentů
 
 Po načtení dokumentu můžete provádět řadu operací, od jednoduchého nahrazování textu až po složité změny formátování.
@@ -71,7 +64,7 @@ Aspose.Words for Java umožňuje bezproblémovou konverzi mezi různými formát
 Document doc = new Document("sample.docx");
 
 // Uložit jako PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## Manipulace s obrázky a tabulkami
@@ -81,7 +74,7 @@ Začlenění obrázků a tabulek je běžným požadavkem při práci s dokument
 ### Přidání obrázku do dokumentu
 
 ```java
-// Vložte dokument
+//Vložte dokument
 Document doc = new Document("document.docx");
 
 // Vložte obrázek

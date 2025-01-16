@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <podsumowanie>
-/// Pobiera dokument z zakresu stron.
+//Pobiera dokument z zakresu stron.
 /// </podsumowanie>
-//<nazwa parametru="indeks początkowy">
+/// <nazwa parametru="indeks początkowy">
 /// 1-indeks strony startowej.
 /// </parametr>
 /// <nazwa parametru="endIndex">

@@ -107,7 +107,7 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ### Πώς μπορώ να λάβω υποστήριξη για το Aspose.Words για .NET;
 
-Μπορείτε να λάβετε υποστήριξη μεταβαίνοντας στο[Aspose forum υποστήριξης](https://forum.aspose.com/c/words/8).
+ Μπορείτε να λάβετε υποστήριξη μεταβαίνοντας στο[Aspose forum υποστήριξης](https://forum.aspose.com/c/words/8).
 
 ### Μπορώ να συγχωνεύσω άλλες μορφές αρχείων με το Aspose.Words για .NET;
 

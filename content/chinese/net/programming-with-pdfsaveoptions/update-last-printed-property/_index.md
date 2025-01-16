@@ -80,7 +80,7 @@ Aspose.Words for .NET 是一个强大的库，用于.NET 应用程序中的文�
 是的，Aspose.Words for .NET 允许您更新各种文档属性，例如作者、标题、主题等。
 
 ### Aspose.Words for .NET 免费吗？
-Aspose.Words for .NET 提供免费试用版，您可以下载[这里](https://releases.aspose.com/)。如需延长使用时间，您需要购买许可证。
+ Aspose.Words for .NET 提供免费试用版，您可以下载[这里](https://releases.aspose.com/)。如需延长使用时间，您需要购买许可证。
 
 ### 在哪里可以找到有关 Aspose.Words for .NET 的更多文档？
 您可以找到有关 Aspose.Words for .NET 的详细文档[这里](https://reference.aspose.com/words/net/).

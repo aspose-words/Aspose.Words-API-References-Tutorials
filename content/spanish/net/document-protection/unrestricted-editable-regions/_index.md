@@ -16,7 +16,7 @@ Si alguna vez ha deseado proteger un documento de Word pero permitir que ciertas
 Antes de comenzar, asegúrese de tener lo siguiente:
 
 1.  Aspose.Words para .NET: Si aún no lo has hecho, descárgalo[aquí](https://releases.aspose.com/words/net/).
-2.  Una licencia Aspose válida: Puede obtener una licencia temporal[aquí](https://purchase.aspose.com/temporary-license/).
+2. Una licencia Aspose válida: Puede obtener una licencia temporal[aquí](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: cualquier versión reciente debería funcionar bien.
 4. Conocimientos básicos de C# y .NET: esto le ayudará a seguir el código.
 
@@ -56,7 +56,7 @@ Ahora, carguemos el documento que desea proteger. Asegúrese de tener un documen
 
 ## Paso 3: Proteger el documento
 
-A continuación, configuraremos el documento como de solo lectura. Esto garantizará que no se puedan realizar cambios sin la contraseña.
+continuación, configuraremos el documento como de solo lectura. Esto garantizará que no se puedan realizar cambios sin la contraseña.
 
 1.  Inicializar DocumentBuilder: crear una instancia de`DocumentBuilder` para realizar cambios en el documento.
    ```csharp

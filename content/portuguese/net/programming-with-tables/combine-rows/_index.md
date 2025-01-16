@@ -112,4 +112,4 @@ Absolutamente! Você pode criar um script para automatizar esse processo para v�
 
 ### Onde posso obter ajuda se tiver problemas?
 
-O[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8) é um ótimo lugar para obter ajuda e encontrar soluções para problemas comuns.
+ O[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8) é um ótimo lugar para obter ajuda e encontrar soluções para problemas comuns.

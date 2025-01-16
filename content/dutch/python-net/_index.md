@@ -26,12 +26,8 @@ Word-documentverwerking onder de knie met Aspose.Words voor Python. Tutorials bi
 Beheers documentcreatie met Aspose.Words voor Python. Creëer dynamische documenten, pas opmaak aan en stroomlijn de verwerking van Word-documenten.
 ### [Woordautomatisering](./word-automation/)
 Automatiseer tekstverwerkingstaken met Aspose.Words voor Python. Stroomlijn documentbeheer en verhoog de efficiëntie van tekstautomatisering.
-### [Documentintelligentie](./document-intelligence/)
-Haal waardevolle inzichten uit uw documenten met Aspose.Words voor Python's Document Intelligence. Automatiseer analyse, tekstextractie en classificatie.
 ### [Documentconversie](./document-conversion/)
 Converteer documenten efficiënt tussen formaten met Aspose.Words voor Python. Stroomlijn de verwerking van Word-documenten en vereenvoudig uw documentbeheertaken. 
-### [Documentbeveiliging](./document-protection/)
-Beveilig uw documenten met Aspose.Words voor Python! Implementeer wachtwoordversleuteling, gebruikersmachtigingen en digitale handtekeningen voor robuuste documentbeveiliging.
 ### [Documentstructuur en inhoudsmanipulatie](./document-structure-and-content-manipulation/)
 Ontdek Aspose.Words tutorials voor Python en .NET, met de focus op documentstructuur en contentmanipulatie. Leer hoe u efficiënt door documentelementen navigeert, deze extraheert en wijzigt. Broncodevoorbeelden worden meegeleverd.
 ### [Inhoudsextractie en -manipulatie](./content-extraction-and-manipulation/)
@@ -42,7 +38,5 @@ Ontdek uitgebreide tutorials over het combineren en vergelijken van documenten m
 Ontdek de Aspose.Words tutorials over het splitsen en formatteren van documenten in Python en .NET. Leer hoe u documenten efficiënt kunt splitsen en formatteren, en verbeter uw documentverwerkingstaken. 
 ### [Documentopties en -instellingen](./document-options-and-settings/)
 Ontdek Aspose.Words-zelfstudies over documentopties en -instellingen in Python en .NET. Leer hoe u documentcreatie en -opmaak optimaliseert met behulp van stapsgewijze begeleiding en broncodevoorbeelden.
-### [Gegevensvisualisatie en -opmaak](./data-visualization-and-formatting/)
-Ontdek Aspose.Words tutorials over datavisualisatie en -formattering in Python en .NET. Leer hoe u data effectief kunt presenteren, verbluffende rapporten kunt maken en documenten programmatisch kunt formatteren.
 ### [Tabellen en opmaak](./tables-and-formatting/)
 Duik in Aspose.Words tutorials over tabellen en opmaak in Python en .NET-applicaties. Leer hoe u tabellen kunt maken, aanpassen en stylen voor visueel aantrekkelijke documenten. 

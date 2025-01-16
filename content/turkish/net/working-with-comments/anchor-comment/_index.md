@@ -127,7 +127,7 @@ Bağlantı yorumları, metnin belirli bölümlerini vurgulamak ve bu bölümler 
 Evet, birden fazla yorum aralığı tanımlayarak aynı metin bölümüne birden fazla yorum ekleyebilirsiniz.
 
 ### Aspose.Words for .NET'i kullanmak ücretsiz mi?
-Aspose.Words for .NET, indirebileceğiniz ücretsiz bir deneme sürümü sunuyor[Burada](https://releases.aspose.com/) . Tüm özellikler için bir lisans satın alabilirsiniz[Burada](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET, indirebileceğiniz ücretsiz bir deneme sürümü sunuyor[Burada](https://releases.aspose.com/) . Tüm özellikler için bir lisans satın alabilirsiniz[Burada](https://purchase.aspose.com/buy).
 
 ### Yorumların görünümünü özelleştirebilir miyim?
 Aspose.Words işlevselliğe odaklanırken, Word belgelerindeki yorumların görünümü genellikle Word tarafından kontrol edilir.

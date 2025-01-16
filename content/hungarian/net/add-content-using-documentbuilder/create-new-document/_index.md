@@ -49,13 +49,13 @@ Most pedig hozzunk létre egy új dokumentumot. Gondoljon erre úgy, mint egy ü
 Document doc = new Document();
 ```
 
-Most hoztunk létre egy üres Word-dokumentumot. Nagyon klassz, mi?
+Most hoztunk létre egy üres Word-dokumentumot. Elég menő, mi?
 
 ## 3. lépés: Tartalom hozzáadása a DocumentBuilder segítségével
 
 ### Inicializálja a DocumentBuilder programot
 
- Következő lépésként hozzá kell adnunk némi tartalmat a dokumentumunkhoz. Ehhez használjuk`DocumentBuilder`Olyan, mint a tollunk, amely a vászonra ír.
+ Következő lépésként hozzá kell adnunk némi tartalmat a dokumentumunkhoz. Ehhez használjuk`DocumentBuilder`. Olyan, mint a tollunk, amely a vászonra ír.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

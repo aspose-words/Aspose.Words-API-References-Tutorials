@@ -95,7 +95,7 @@ Aspose.Words for .NET هي مكتبة قوية تتيح للمطورين إنش�
 
 ### 4. كيف أحصل على الدعم لـ Aspose.Words لـ .NET؟
 
-يمكنك الحصول على الدعم من خلال زيارة[منتدى دعم Aspose](https://forum.aspose.com/c/words/8).
+ يمكنك الحصول على الدعم من خلال زيارة[منتدى دعم Aspose](https://forum.aspose.com/c/words/8).
 
 ### 5. هل يمكنني إضافة مستندات بتنسيقات مختلفة؟
 

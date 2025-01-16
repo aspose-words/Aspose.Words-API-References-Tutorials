@@ -16,10 +16,10 @@ url: /el/python-net/document-structure-and-content-manipulation/document-revisio
 
 ## Ρύθμιση Aspose.Words για Python
 
- Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε εγκαταστήσει το Aspose.Words for Python. Μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/python/). Μόλις εγκατασταθεί, μπορείτε να εισαγάγετε τις απαραίτητες λειτουργικές μονάδες στο σενάριο Python για να ξεκινήσετε.
+Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε εγκαταστήσει το Aspose.Words for Python. Μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/python/). Μόλις εγκατασταθεί, μπορείτε να εισαγάγετε τις απαραίτητες λειτουργικές μονάδες στο σενάριο Python για να ξεκινήσετε.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Φόρτωση και εμφάνιση εγγράφου
@@ -27,7 +27,7 @@ import asposewords
 Για να εργαστείτε με ένα έγγραφο, πρέπει πρώτα να το φορτώσετε στην εφαρμογή Python. Χρησιμοποιήστε το ακόλουθο απόσπασμα κώδικα για να φορτώσετε ένα έγγραφο και να εμφανίσετε το περιεχόμενό του:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 Όταν γίνονται οποιεσδήποτε αλλαγές στο έγγραφο, το Aspose.Words μπορεί να τις παρακολουθεί αυτόματα ως αναθεωρήσεις. Για παράδειγμα, αν θέλουμε να αντικαταστήσουμε μια συγκεκριμένη λέξη, μπορούμε να το κάνουμε ενώ παρακολουθούμε την αλλαγή:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Το Aspose.Words σάς επιτρέπει να συγκρίνετε δύο έγγραφα για να οπτικοποιήσετε τις διαφορές μεταξύ τους:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 Οι συνεργάτες μπορούν να προσθέτουν σχόλια και σχολιασμούς σε ένα έγγραφο. Μπορείτε να διαχειριστείτε μέσω προγραμματισμού αυτά τα στοιχεία:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 Μπορείτε να προσαρμόσετε τον τρόπο εμφάνισης των αναθεωρήσεων στο έγγραφο, όπως αλλαγή του χρώματος του εισαγόμενου και του διαγραμμένου κειμένου:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Αποθήκευση και κοινή χρήση εγγράφων
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 Μοιραστείτε το τελικό έγγραφο με τους συνεργάτες για περαιτέρω σχόλια.
-
-## Συμβουλές για αποτελεσματική συνεργασία
-
-1. Επισημάνετε ξεκάθαρα τις αναθεωρήσεις με ουσιαστικά σχόλια.
-2. Κοινοποιήστε τις οδηγίες αναθεώρησης σε όλους τους συνεργάτες.
-3. Ελέγχετε τακτικά και αποδέχεστε/απορρίπτετε αναθεωρήσεις.
-4. Χρησιμοποιήστε τη δυνατότητα σύγκρισης του Aspose.Words για ολοκληρωμένη ανάλυση εγγράφων.
 
 ## Σύναψη
 

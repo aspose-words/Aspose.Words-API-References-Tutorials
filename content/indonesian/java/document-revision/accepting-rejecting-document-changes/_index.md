@@ -44,10 +44,7 @@ Menerima perubahan merupakan langkah penting dalam menyelesaikan dokumen. Aspose
 
 ```java
 // Terima semua revisi
-doc.acceptAllRevisions();
-
-// Terima revisi tertentu berdasarkan indeks
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Menolak Perubahan
@@ -56,10 +53,7 @@ Dalam beberapa kasus, Anda mungkin perlu menolak perubahan tertentu. Aspose.Word
 
 ```java
 // Tolak semua revisi
-doc.rejectAllRevisions();
-
-// Tolak revisi tertentu berdasarkan indeks
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Menyimpan Dokumen

@@ -130,7 +130,7 @@ Ez aláírja a dokumentumot, és új fájlként menti.
 ## GYIK
 
 ### Testreszabhatom az aláírássor megjelenését?
-Teljesen! Különféle lehetőségeket módosíthat a`SignatureLineOptions` hogy megfeleljen az Ön igényeinek.
+ Teljesen! Különféle lehetőségeket módosíthat a`SignatureLineOptions`hogy megfeleljen az Ön igényeinek.
 
 ### Mi a teendő, ha nincs PFX tanúsítványom?
 Be kell szereznie egyet egy megbízható tanúsító hatóságtól. Ez elengedhetetlen a dokumentumok digitális aláírásához.

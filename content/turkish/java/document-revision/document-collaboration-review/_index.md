@@ -70,7 +70,7 @@ Belge işbirliği ve incelemesi, modern belge yönetiminin kritik yönleridir. A
 
 ### Aspose.Words for Java'yı kullanarak Word belgelerindeki değişiklikleri takip edebilir miyim?
 
-Evet, Java için Aspose.Words, Word belgelerindeki değişiklikleri izlemenize olanak tanır.`startTrackRevisions` değişiklik izlemeyi etkinleştirme yöntemi.
+ Evet, Java için Aspose.Words, Word belgelerindeki değişiklikleri izlemenize olanak tanır.`startTrackRevisions` değişiklik izlemeyi etkinleştirme yöntemi.
 
 ### Bir belgede yapılan değişiklikleri nasıl inceleyebilirim?
 

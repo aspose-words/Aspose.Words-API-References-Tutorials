@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-The`InsertChart` metoda bere jako parametry typ grafu, šířku a výšku. V tomto případě vkládáme spojnicový graf o šířce 432 a výšce 252.
+ The`InsertChart` metoda bere jako parametry typ grafu, šířku a výšku. V tomto případě vkládáme spojnicový graf o šířce 432 a výšce 252.
 
 ## Krok 3: Přístup k řadě grafů
 

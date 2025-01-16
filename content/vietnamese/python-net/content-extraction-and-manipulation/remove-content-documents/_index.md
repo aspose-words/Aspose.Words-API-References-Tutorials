@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## Thay thế văn bản
-
-Đôi khi, bạn có thể muốn thay thế một số văn bản bằng nội dung mới. Sau đây là ví dụ về cách thực hiện:
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## Xóa hình ảnh
 
 Nếu bạn cần xóa hình ảnh khỏi tài liệu, bạn có thể sử dụng cách tiếp cận tương tự. Trước tiên, xác định hình ảnh và sau đó xóa chúng:
@@ -92,22 +79,6 @@ Có thể xóa toàn bộ các phần khỏi tài liệu như sau:
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## Tìm và Thay thế bằng Regex
-
-Biểu thức chính quy cung cấp một cách hiệu quả để tìm và thay thế nội dung:
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## Trích xuất nội dung cụ thể

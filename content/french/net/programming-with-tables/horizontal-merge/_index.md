@@ -2,14 +2,14 @@
 title: Fusion horizontale
 linktitle: Fusion horizontale
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment fusionner horizontalement des cellules dans un document Word à l'aide d'Aspose.Words pour .NET avec ce didacticiel détaillé étape par étape.
+description: Découvrez comment fusionner horizontalement des cellules dans un document Word à l'aide d'Aspose.Words pour .NET avec ce didacticiel détaillé, étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/horizontal-merge/
 ---
 ## Introduction
 
-Bonjour ! Vous êtes prêt à plonger dans le monde d'Aspose.Words pour .NET ? Aujourd'hui, nous allons aborder une fonctionnalité très utile : la fusion horizontale dans les tableaux. Cela peut sembler un peu technique, mais ne vous inquiétez pas, je suis là pour vous aider. À la fin de ce tutoriel, vous serez un pro de la fusion de cellules dans vos documents Word par programmation. Alors, retroussons nos manches et commençons !
+Bonjour ! Vous êtes prêt à plonger dans le monde d'Aspose.Words pour .NET ? Aujourd'hui, nous allons aborder une fonctionnalité très utile : la fusion horizontale dans les tableaux. Cela peut sembler un peu technique, mais ne vous inquiétez pas, je suis là pour vous. À la fin de ce tutoriel, vous serez un pro de la fusion de cellules dans vos documents Word par programmation. Alors, retroussons nos manches et commençons !
 
 ## Prérequis
 

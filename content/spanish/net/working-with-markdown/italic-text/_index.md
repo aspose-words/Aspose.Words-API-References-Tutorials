@@ -38,7 +38,7 @@ Estos espacios de nombres proporcionan acceso a las clases y métodos necesarios
 
 ## Paso 1: Crear un DocumentBuilder
 
-El`DocumentBuilder` La clase te ayuda a agregar y dar formato al contenido del documento. Al crear una`DocumentBuilder` objeto, estás configurando una herramienta para insertar y manipular texto.
+ El`DocumentBuilder` La clase te ayuda a agregar y dar formato al contenido del documento. Al crear una`DocumentBuilder` objeto, estás configurando una herramienta para insertar y manipular texto.
 
 ```csharp
 // Cree una instancia de DocumentBuilder para trabajar con el documento.

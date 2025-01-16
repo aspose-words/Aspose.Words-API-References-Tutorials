@@ -105,7 +105,7 @@ Aspose.Words mendukung penambahan satu tanda air dalam satu waktu. Untuk menamba
 
 ### Bisakah saya menyesuaikan posisi tanda air?
 
-Itu`WatermarkLayout`properti menentukan orientasi, tetapi penyesuaian posisi yang tepat tidak didukung secara langsung. Anda mungkin perlu menggunakan teknik lain untuk penempatan yang tepat.
+ Itu`WatermarkLayout`properti menentukan orientasi, tetapi penyesuaian posisi yang tepat tidak didukung secara langsung. Anda mungkin perlu menggunakan teknik lain untuk penempatan yang tepat.
 
 ### Bagaimana jika saya membutuhkan tanda air semi-transparan?
 

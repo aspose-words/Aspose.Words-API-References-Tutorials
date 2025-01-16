@@ -78,7 +78,7 @@ Most itt az ideje, hogy meghatározzuk az X tengely tulajdonságait. Ez magában
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // Az Y tengely kijelzési egységeiben mérve (száz).
+xAxis.CrossesAt = 3; //Az Y tengely kijelzési egységeiben mérve (száz).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

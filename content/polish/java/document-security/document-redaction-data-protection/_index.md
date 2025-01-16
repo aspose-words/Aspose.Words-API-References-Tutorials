@@ -18,7 +18,7 @@ W tym przewodniku pokażemy, jak usuwać poufne informacje z dokumentów Word i 
 
 Zanim zaczniemy pracę z Aspose.Words dla Java, musimy skonfigurować nasze środowisko programistyczne. Wykonaj następujące kroki:
 
-1.  Pobierz i zainstaluj Aspose.Words dla Java: Odwiedź[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) aby pobrać najnowszą wersję Aspose.Words dla Java.
+1.  Pobierz i zainstaluj Aspose.Words dla Java: Odwiedź[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)aby pobrać najnowszą wersję Aspose.Words dla Java.
 
 2. Zintegruj Aspose.Words ze swoim projektem: Dodaj pliki JAR Aspose.Words do swojego projektu Java.
 

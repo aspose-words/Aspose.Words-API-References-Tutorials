@@ -18,7 +18,7 @@ Než se ponoříme do technických detailů, pojďme stručně prozkoumat, proč
 
 ## Začínáme s Aspose.Words pro Javu
 
- Chcete-li začít naši cestu, musíte mít nainstalovanou a nastavenou aplikaci Aspose.Words for Java. Pokud jste to ještě neudělali, můžete si jej stáhnout z webu Aspose[zde](https://releases.aspose.com/words/java/). Jakmile knihovnu nainstalujete, jste připraveni využít její schopnosti pro efektivní správu tabulek a rozvržení.
+ Chcete-li začít naši cestu, musíte mít nainstalovanou a nastavenou aplikaci Aspose.Words for Java. Pokud jste to ještě neudělali, můžete si jej stáhnout z webu Aspose[zde](https://releases.aspose.com/words/java/)Jakmile knihovnu nainstalujete, jste připraveni využít její schopnosti pro efektivní správu tabulek a rozvržení.
 
 ## Základní správa tabulek
 
@@ -110,7 +110,7 @@ Ano, buňky v tabulce můžete sloučit pomocí Aspose.Words, jak je ukázáno v
  Žádný strach! Dříve sloučené buňky můžete snadno rozdělit nastavením jejich vlastnosti horizontálního sloučení na`NONE`.
 
 ### Jak mohu přidat konec stránky před tabulku?
- Chcete-li vložit konec stránky před tabulku, upravte písmo`PageBreakBefore` majetek, jak bylo prokázáno.
+Chcete-li vložit konec stránky před tabulku, upravte písmo`PageBreakBefore` majetek, jak bylo prokázáno.
 
 ### Je Aspose.Words kompatibilní s různými formáty dokumentů?
 Absolutně! Aspose.Words for Java podporuje různé formáty dokumentů, což z něj činí všestrannou volbu pro správu dokumentů.
@@ -120,4 +120,4 @@ Absolutně! Aspose.Words for Java podporuje různé formáty dokumentů, což z 
 
 ## Závěr
 
-tomto komplexním průvodci jsme prozkoumali výhody a nevýhody správy tabulek a rozvržení v dokumentech pomocí Aspose.Words for Java. Od základního vytváření tabulek až po pokročilou manipulaci s rozvržením, nyní máte znalosti a příklady zdrojového kódu, které rozšíří možnosti zpracování dokumentů. Pamatujte, že efektivní rozvržení dokumentu je nezbytné pro vytváření profesionálně vypadajících dokumentů a Aspose.Words vám poskytuje nástroje, jak toho dosáhnout.
+V tomto komplexním průvodci jsme prozkoumali výhody a nevýhody správy tabulek a rozvržení v dokumentech pomocí Aspose.Words for Java. Od základního vytváření tabulek až po pokročilou manipulaci s rozvržením, nyní máte znalosti a příklady zdrojového kódu, které rozšíří možnosti zpracování dokumentů. Pamatujte, že efektivní rozvržení dokumentu je nezbytné pro vytváření profesionálně vypadajících dokumentů a Aspose.Words vám poskytuje nástroje, jak toho dosáhnout.

@@ -16,7 +16,7 @@ Listy występują w dwóch podstawowych typach: punktowane i numerowane. Umożli
 
 ## Konfigurowanie środowiska
 
-Zanim przejdziemy do tworzenia i zarządzania listami, upewnij się, że masz zainstalowaną bibliotekę Aspose.Words for Python. Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/python/) . Dodatkowo zapoznaj się z dokumentacją API na stronie[ten link](https://reference.aspose.com/words/python-net/) Aby uzyskać szczegółowe informacje.
+ Zanim przejdziemy do tworzenia i zarządzania listami, upewnij się, że masz zainstalowaną bibliotekę Aspose.Words for Python. Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/python/) . Dodatkowo zapoznaj się z dokumentacją API na stronie[ten link](https://reference.aspose.com/words/python-net/) Aby uzyskać szczegółowe informacje.
 
 ## Tworzenie list wypunktowanych
 
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]

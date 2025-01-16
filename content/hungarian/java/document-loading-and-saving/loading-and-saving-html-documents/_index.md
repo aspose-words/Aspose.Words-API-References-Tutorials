@@ -1,6 +1,6 @@
 ---
-title: HTML dokumentumok betöltése és mentése az Aspose.Words for Java segítségével
-linktitle: HTML dokumentumok betöltése és mentése ezzel
+title: HTML dokumentumok betöltése és mentése
+linktitle: HTML dokumentumok betöltése és mentése
 second_title: Aspose.Words Java Document Processing API
 description: Ismerje meg, hogyan tölthet be és menthet HTML dokumentumokat Java nyelven az Aspose.Words for Java segítségével. Lépésről lépésre útmutató kódpéldákkal a zökkenőmentes dokumentumintegráció érdekében.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Most, hogy betöltöttük a HTML-t a`Document`, elmenthetjük Word dokumentumként. Mentsük el DOCX formátumban:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Ez a kód elmenti a`Document` DOCX fájlként, amely a Word dokumentumok általános formátuma.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Következtetés
@@ -79,7 +79,7 @@ Ebben a cikkben megtanultuk, hogyan tölthet be és menthet HTML-dokumentumokat 
 
 ### Hogyan telepíthetem az Aspose.Words for Java programot?
 
- Az Aspose.Words for Java letölthető innen[itt](https://releases.aspose.com/words/java/). Kövesse a webhelyen található telepítési utasításokat a Java projektben való beállításához.
+ Az Aspose.Words for Java letölthető innen[itt](https://releases.aspose.com/words/java/)Kövesse a webhelyen található telepítési utasításokat a Java projektben való beállításához.
 
 ### Betölthetek összetett HTML dokumentumokat az Aspose.Words használatával?
 
@@ -95,4 +95,4 @@ Teljesen! Az Aspose.Words egy robusztus megoldás, amelyet a vállalatok világs
 
 ### Hol találok további dokumentációt és példákat az Aspose.Words for Java-hoz?
 
- Részletes dokumentációt, kódpéldákat és oktatóanyagokat találhat az Aspose.Words for Java dokumentációs webhelyén:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).
+Részletes dokumentációt, kódpéldákat és oktatóanyagokat találhat az Aspose.Words for Java dokumentációs webhelyén:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).

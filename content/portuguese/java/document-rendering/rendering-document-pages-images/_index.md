@@ -48,7 +48,7 @@ O Aspose.Words fornece várias opções de salvamento de imagem para controlar o
 
 ```java
 // Inicializar opções de salvamento de imagem
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Etapa 4: renderizar páginas do documento como imagens

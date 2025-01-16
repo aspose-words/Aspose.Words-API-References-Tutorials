@@ -9,7 +9,7 @@ url: /it/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
 ## Introduzione
 
-Ciao, amico programmatore! Se ti è mai capitato di lottare con problemi di font quando hai salvato documenti Word in formato HTML, non sei il solo. I font possono essere difficili, ma non preoccuparti; ci penso io. Oggi, ci immergiamo in come risolvere i nomi dei font nei tuoi documenti Word usando Aspose.Words per .NET. Questa guida ti guiderà passo dopo passo nel processo, assicurandoti che i tuoi font abbiano un aspetto perfetto nel formato HTML.
+Ciao, amico programmatore! Se ti sei mai trovato a lottare con problemi di font quando hai salvato documenti Word in formato HTML, non sei il solo. I font possono essere difficili, ma non preoccuparti; ci penso io. Oggi, ci immergiamo in come risolvere i nomi dei font nei tuoi documenti Word usando Aspose.Words per .NET. Questa guida ti guiderà passo dopo passo nel processo, assicurandoti che i tuoi font abbiano un aspetto perfetto nel formato HTML.
 
 ## Prerequisiti
 

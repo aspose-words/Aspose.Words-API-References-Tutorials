@@ -120,7 +120,7 @@ Aspose.Words for .NET은 개발자가 Word 문서를 프로그래밍 방식으�
 
 ## 4. Aspose.Words for .NET에 대한 지원을 받으려면 어떻게 해야 하나요?
 
-방문하면 지원을 받을 수 있습니다.[Aspose 지원 포럼](https://forum.aspose.com/c/words/8).
+ 방문하면 지원을 받을 수 있습니다.[Aspose 지원 포럼](https://forum.aspose.com/c/words/8).
 
 ## 5. Aspose.Words for .NET으로 다른 유형의 문서를 조작할 수 있나요?
 

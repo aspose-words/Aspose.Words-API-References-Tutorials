@@ -9,7 +9,7 @@ url: /hu/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
 ## Bevezetés
 
-Üdvözöljük ebben az átfogó útmutatóban, amely arról szól, hogyan engedélyezheti a cellatávolságot egy táblázatban az Aspose.Words for .NET használatával! Ha valaha is dolgozott már táblázatokkal Word-dokumentumokban, tudja, hogy a szóközök nagy változást hozhat az olvashatóságban és az esztétikumban. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a cellatávolság engedélyezésének folyamatán a táblázatokban. A környezet beállításától a kód írásáig és az alkalmazás futtatásáig mindenre kiterjedünk. Szóval, csattal, és merüljünk el az Aspose.Words for .NET világában!
+Üdvözöljük ebben az átfogó útmutatóban, amely arról szól, hogyan engedélyezheti a cellatávolságot egy táblázatban az Aspose.Words for .NET használatával! Ha valaha is dolgozott már táblázatokkal Word-dokumentumokban, tudja, hogy a szóközök nagy változást hozhatnak az olvashatóságban és az esztétikumban. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a cellatávolság engedélyezésének folyamatán a táblázatokban. A környezet beállításától a kód írásáig és az alkalmazás futtatásáig mindenre kiterjedünk. Szóval, csattal, és merüljünk el az Aspose.Words for .NET világában!
 
 ## Előfeltételek
 

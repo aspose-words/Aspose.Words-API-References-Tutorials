@@ -17,7 +17,7 @@ url: /zh-hant/net/working-with-section/copy-section/
 在我們深入討論之前，請確保您已進行以下設定：
 
 1.  Aspose.Words for .NET Library：下載最新版本[這裡](https://releases.aspose.com/words/net/).
-2. 開發環境：與 .NET 相容的 IDE，如 Visual Studio。
+2. 開發環境：與 .NET 相容的 IDE，例如 Visual Studio。
 3. C# 基礎知識：熟悉 C# 將有助於您跟進。
 4. 範例 Word 文件：本教學將使用兩個範例文件。
 

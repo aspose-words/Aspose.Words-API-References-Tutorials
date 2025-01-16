@@ -53,7 +53,7 @@ doc.save("Output.docx");
 
 ### Wyjaśnienie:
 
-Ten`save` metoda jest wywoływana na`Document` obiekt do zapisania pliku w`.docx` format. Podany argument jest ścieżką do pliku, w którym zostanie zapisany dokument Word. Jest to ostatni krok w procesie konwersji.
+ Ten`save` metoda jest wywoływana na`Document` obiekt do zapisania pliku w`.docx` format. Podany argument jest ścieżką do pliku, w którym zostanie zapisany dokument Word. Jest to ostatni krok w procesie konwersji.
 
 ## Wniosek
 

@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`Document` sınıf yeni bir belge başlatır ve`DocumentBuilder` belgelerimize kolayca içerik eklememize yardımcı olur.
+ The`Document` sınıf yeni bir belge başlatır ve`DocumentBuilder` belgelerimize kolayca içerik eklememize yardımcı olur.
 
 ## Adım 2: Bölümleri Ekle
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-The`InsertBreak` yöntemi, her bölüm için farklı ayarlar yapmamıza olanak tanıyan sürekli bir bölüm sonu ekler.
+ The`InsertBreak` yöntemi, her bölüm için farklı ayarlar yapmamıza olanak tanıyan sürekli bir bölüm sonu ekler.
 
 ## Adım 3: Belgeyi Koruyun
 

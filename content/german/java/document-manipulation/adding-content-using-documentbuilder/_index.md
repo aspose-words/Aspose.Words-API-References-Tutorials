@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Einen Tisch starten
+//Einen Tisch starten
 Table table = builder.startTable();
 
 // Zellen und Inhalt einfügen

@@ -15,7 +15,7 @@ Ahoj! Zkoušeli jste někdy přidat text z části označené záložkou v dokum
 
 Než začneme, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Ujistěte se, že jej máte nainstalovaný. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že jej máte nainstalovaný. Pokud ne, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Jakékoli vývojové prostředí .NET, jako je Visual Studio.
 - Základní znalost C#: Pomůže vám pochopení základních pojmů programování v C#.
 - Dokument aplikace Word se záložkami: Dokument aplikace Word s nastavenými záložkami, které použijeme k připojení textu.

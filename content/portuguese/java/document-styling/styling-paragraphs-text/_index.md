@@ -182,25 +182,11 @@ Neste exemplo, definimos o alinhamento do parágrafo para
 Criar listas com marcadores ou numeração é uma tarefa comum de formatação de documentos. O Aspose.Words para Java torna isso simples. Veja como criar uma lista com marcadores:
 
 ```java
-// Criar um novo documento
-Document doc = new Document();
-
-// Criar uma lista
-List list = new List(doc);
-
-// Adicionar itens de lista com marcadores
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// Adicione a lista ao documento
-doc.getFirstSection().getBody().appendChild(list);
-
-// Salvar o documento
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 Neste código, criamos uma lista com marcadores com três itens.
@@ -210,24 +196,21 @@ Neste código, criamos uma lista com marcadores com três itens.
 Os hiperlinks são essenciais para adicionar interatividade aos seus documentos. O Aspose.Words para Java permite que você insira hiperlinks facilmente. Aqui está um exemplo:
 
 ```java
-// Criar um novo documento
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Crie um parágrafo
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// Criar um hiperlink
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.exemplo.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// Insira um hiperlink e enfatize-o com formatação personalizada.
+// O hiperlink será um pedaço de texto clicável que nos levará ao local especificado na URL.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", falso);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// Adicione o parágrafo ao documento
-doc.getFirstSection().getBody().appendChild(para);
-
-// Salvar o documento
-doc.save("HyperlinkDocument.docx");
+// Ctrl + clique com o botão esquerdo no link no texto no Microsoft Word nos levará ao URL por meio de uma nova janela do navegador da Web.
+doc.save("InsertHyperlink.docx");
 ```
 
 Este código insere um hiperlink para "https://www.example.com" com o texto "Visite Example.com".
@@ -237,23 +220,7 @@ Este código insere um hiperlink para "https://www.example.com" com o texto "Vis
 Os documentos geralmente exigem elementos visuais como imagens e formas. O Aspose.Words para Java permite que você insira imagens e formas perfeitamente. Veja como adicionar uma imagem:
 
 ```java
-// Criar um novo documento
-Document doc = new Document();
-
-// Crie um parágrafo
-Paragraph para = new Paragraph(doc);
-
-// Carregar uma imagem de um arquivo
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// Adicione o parágrafo ao documento
-doc.getFirstSection().getBody().appendChild(para);
-
-// Salvar o documento
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 Neste código, carregamos uma imagem de um arquivo e a inserimos no documento.
@@ -287,27 +254,20 @@ Neste exemplo, definimos margens iguais de 1 polegada em todos os lados da pági
 Cabeçalhos e rodapés são essenciais para adicionar informações consistentes a cada página do seu documento. Veja como trabalhar com cabeçalhos e rodapés:
 
 ```java
-// Criar um novo documento
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Acesse o cabeçalho e rodapé da primeira seção
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// Adicionar conteúdo ao cabeçalho
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// Adicionar conteúdo ao rodapé
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// Adicionar conteúdo ao corpo do documento
+// Adicione conteúdo ao corpo do documento.
 // ...
 
-// Salvar o documento
+// Salve o documento.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ Neste código, adicionamos conteúdo ao cabeçalho e ao rodapé do documento.
 Tabelas são uma maneira poderosa de organizar e apresentar dados em seus documentos. O Aspose.Words para Java fornece amplo suporte para trabalhar com tabelas. Aqui está um exemplo de criação de uma tabela:
 
 ```java
-// Criar um novo documento
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Crie uma tabela com 3 linhas e 3 colunas
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// Adicionar conteúdo às células da tabela
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//Adicione a tabela ao documento
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// Salvar o documento
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// Alterar a formatação a aplicará à célula atual,
+// e quaisquer novas células que criarmos com o construtor posteriormente.
+// Isso não afetará as células que adicionamos anteriormente.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// Aumente a altura da linha para ajustar o texto vertical.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 Neste código, criamos uma tabela simples com três linhas e três colunas.
@@ -354,14 +333,14 @@ Document doc = new Document();
 // ...
 
 // Salvar o documento como PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 Este trecho de código salva o documento como um arquivo PDF.
 
 ## Recursos avançados
 
-O Aspose.Words para Java oferece recursos avançados para manipulação complexa de documentos. Isso inclui mala direta, comparação de documentos e muito mais. Explore a documentação para obter orientação aprofundada sobre esses tópicos avançados.
+Aspose.Words para Java oferece recursos avançados para manipulação complexa de documentos. Isso inclui mala direta, comparação de documentos e muito mais. Explore a documentação para obter orientação aprofundada sobre esses tópicos avançados.
 
 ## Dicas e Melhores Práticas
 
@@ -393,7 +372,7 @@ Sim, você pode facilmente converter um documento para PDF usando Aspose.Words p
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### Como faço para formatar texto como
@@ -414,7 +393,7 @@ Você pode verificar o site do Aspose ou o repositório Maven para obter a vers�
 Sim, o Aspose.Words para Java é compatível com Java 11 e versões posteriores.
 
 ### Como posso definir margens de página para seções específicas do meu documento?
-Você pode definir margens de página para seções específicas do seu documento usando o`PageSetup` classe. Aqui está um exemplo:
+ Você pode definir margens de página para seções específicas do seu documento usando o`PageSetup` classe. Aqui está um exemplo:
 
 ```java
 Section section = doc.getSections().get(0); // Pegue a primeira seção

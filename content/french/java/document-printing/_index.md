@@ -29,7 +29,7 @@ Apprenez à automatiser l'impression de documents à l'aide d'Aspose.Words pour 
 ### [Impression de documents avec mise en page](./printing-documents-page-setup/)
 Découvrez comment imprimer des documents avec une mise en page précise à l'aide d'Aspose.Words pour Java. Personnalisez les mises en page, le format du papier et bien plus encore.
 ### [Impression de documents personnalisés](./customized-document-printing/)
-Découvrez comment réaliser des impressions de documents personnalisés sans effort avec Aspose.Words pour Java. Ce guide étape par étape couvre tout, de la configuration à la personnalisation avancée.
+Découvrez comment réaliser des impressions de documents personnalisées sans effort avec Aspose.Words pour Java. Ce guide étape par étape couvre tout, de la configuration à la personnalisation avancée.
 ### [Impression de pages de documents spécifiques](./printing-specific-document-pages/)
 Découvrez comment imprimer des pages spécifiques à partir de documents Word à l'aide d'Aspose.Words pour Java. Guide étape par étape pour les développeurs Java.
 ### [Imprimer un document avec PrintDialog](./print-document-printdialog/)

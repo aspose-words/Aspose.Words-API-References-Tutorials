@@ -165,7 +165,7 @@ Ano, obslužnou rutinu zpětného volání můžete upravit tak, aby zvládla v�
  Absolutně! Bezplatnou zkušební verzi si můžete stáhnout z[zde](https://releases.aspose.com/).
 
 ### Jak získám podporu pro Aspose.Words?
-Podporu můžete získat návštěvou stránky[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Podporu můžete získat návštěvou stránky[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Mohu zachovat formátování vloženého dokumentu?
  Ano,`NodeImporter` třída umožňuje určit, jak se bude pracovat s formátováním při importu uzlů z jednoho dokumentu do druhého.

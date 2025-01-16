@@ -17,16 +17,16 @@ Form alanları, kullanıcıların veri girmesine, seçimler yapmasına ve belgen
 
 Form alanları oluşturmaya ve bunlarda uzmanlaşmaya başlamadan önce, ortamımızı ayarlayalım ve Python için Aspose.Words'e aşina olalım. Başlamak için şu adımları izleyin:
 
-1. **Install Aspose.Words:** Aşağıdaki pip komutunu kullanarak Aspose.Words for Python kütüphanesini yükleyerek başlayın:
+1. Aspose.Words'ü yükleyin: Aşağıdaki pip komutunu kullanarak Aspose.Words for Python kütüphanesini yükleyerek başlayın:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** İşlevlerini kullanmaya başlamak için kütüphaneyi Python betiğinize aktarın.
+2. Kütüphaneyi İçe Aktarın: İşlevlerini kullanmaya başlamak için kütüphaneyi Python betiğinize aktarın.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Kurulum tamamlandıktan sonra, form alanlarının oluşturulması ve yönetilmesinin temel kavramlarına geçelim.
@@ -41,7 +41,7 @@ Metin giriş alanları kullanıcıların metin girmesine izin verir. Bir metin g
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Onay Kutuları ve Radyo Düğmeleri
@@ -50,12 +50,12 @@ Onay kutuları ve radyo düğmeleri çoktan seçmeli seçimler için kullanılı
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Açılır Listeler
@@ -64,7 +64,7 @@ Açılır listeler kullanıcılara çeşitli seçenekler sunar. Şu şekilde bir
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Tarih Seçiciler
@@ -73,7 +73,7 @@ Tarih seçiciler kullanıcıların tarihleri rahatça seçmesini sağlar. İşte
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Form Alanlarının Özelliklerini Ayarlama
@@ -122,7 +122,7 @@ Metin giriş alanları çok yönlüdür ve genellikle metinsel bilgileri yakalam
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Alan oluşturulduktan sonra, ad, varsayılan değer ve yer tutucu metin gibi özelliklerini ayarlayabilirsiniz. Bunu nasıl yapacağınızı görelim:
@@ -150,14 +150,14 @@ Bir onay kutusu form alanı oluşturmak için şunu kullanın:
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Radyo düğmeleri için bunları OLE_OBJECT şekil türünü kullanarak oluşturabilirsiniz:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Bu alanları oluşturduktan sonra ad, varsayılan seçim ve etiket metni gibi özelliklerini özelleştirebilirsiniz:
@@ -183,7 +183,7 @@ Açılır listeler, kullanıcıların önceden tanımlanmış bir listeden bir s
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Açılır listeyi oluşturduktan sonra kullanıcılara sunulacak seçeneklerin listesini belirleyebilirsiniz:
@@ -211,7 +211,7 @@ Tarih seçiciler, kullanıcılardan tarih yakalama sürecini basitleştirir. Tar
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Tarih seçiciyi oluşturduktan sonra, adı ve varsayılan tarih gibi özelliklerini ayarlayabilirsiniz:
@@ -228,11 +228,7 @@ Tarih seçiciler, tarihleri yakalarken kullanıcı deneyimini iyileştirir ve do
 
 ## Çözüm
 
-Word belgelerinde form alanları ve veri yakalama konusunda uzmanlaşmak, veri toplama için etkileşimli ve etkili belgeler oluşturmanızı sağlayan değerli bir beceridir. Aspose.Words for Python, form alanlarından veri oluşturmak, özelleştirmek ve çıkarmak için kapsamlı bir araç seti sunar. Basit metin giriş alanlarından karmaşık hesaplamalara ve koşullu biçimlendirmeye kadar olanaklar çok geniştir.
-
 Bu kılavuzda, form alanlarının temellerini, form alanı türlerini, özellikleri ayarlamayı ve davranışlarını özelleştirmeyi inceledik. Ayrıca, form tasarımı için en iyi uygulamalara değindik ve belge formlarını arama motorları için optimize etme konusunda fikirler sunduk.
-
-Python için Aspose.Words'ün gücünden yararlanarak, yalnızca verileri etkili bir şekilde yakalayan değil, aynı zamanda kullanıcı etkileşimini artıran ve veri işleme iş akışlarını kolaylaştıran belgeler oluşturabilirsiniz. Artık, Word belgelerinde form alanları ve veri yakalama konusunda uzman olma yolculuğunuza başlamaya hazırsınız.
 
 ## SSS
 

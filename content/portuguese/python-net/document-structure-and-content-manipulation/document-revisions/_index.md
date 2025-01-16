@@ -8,7 +8,7 @@ weight: 23
 url: /pt/python-net/document-structure-and-content-manipulation/document-revisions/
 ---
 
-revisão e o rastreamento de documentos são aspectos cruciais de ambientes de trabalho colaborativos. O Aspose.Words para Python fornece ferramentas poderosas para facilitar o rastreamento e a revisão eficientes de revisões de documentos. Neste guia abrangente, exploraremos como fazer isso usando o Aspose.Words para Python passo a passo. Ao final deste tutorial, você terá uma compreensão sólida de como integrar recursos de rastreamento de revisão em seus aplicativos Python.
+A revisão e o rastreamento de documentos são aspectos cruciais de ambientes de trabalho colaborativos. O Aspose.Words para Python fornece ferramentas poderosas para facilitar o rastreamento e a revisão eficientes de revisões de documentos. Neste guia abrangente, exploraremos como fazer isso usando o Aspose.Words para Python passo a passo. Ao final deste tutorial, você terá uma compreensão sólida de como integrar recursos de rastreamento de revisão em seus aplicativos Python.
 
 ## Introdução às revisões de documentos
 
@@ -16,10 +16,10 @@ Revisões de documentos envolvem o rastreamento de alterações feitas em um doc
 
 ## Configurando Aspose.Words para Python
 
- Antes de começar, certifique-se de ter o Aspose.Words para Python instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/). Após a instalação, você pode importar os módulos necessários no seu script Python para começar.
+Antes de começar, certifique-se de ter o Aspose.Words para Python instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/). Após a instalação, você pode importar os módulos necessários no seu script Python para começar.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## Carregando e exibindo um documento
@@ -27,7 +27,7 @@ import asposewords
 Para trabalhar com um documento, primeiro você precisa carregá-lo em seu aplicativo Python. Use o seguinte trecho de código para carregar um documento e exibir seu conteúdo:
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 Quando quaisquer alterações são feitas no documento, o Aspose.Words pode rastreá-las automaticamente como revisões. Por exemplo, se quisermos substituir uma palavra específica, podemos fazer isso enquanto mantemos o controle da alteração:
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 O Aspose.Words permite que você compare dois documentos para visualizar as diferenças entre eles:
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 Os colaboradores podem adicionar comentários e anotações a um documento. Você pode gerenciar programaticamente estes elementos:
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 Você pode personalizar como as revisões aparecem no documento, como alterar a cor do texto inserido e excluído:
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## Salvando e compartilhando documentos
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 Compartilhe o documento final com os colaboradores para obter mais feedback.
-
-## Dicas para uma colaboração eficaz
-
-1. Identifique claramente as revisões com comentários significativos.
-2. Comunique as diretrizes de revisão a todos os colaboradores.
-3. Revise regularmente e aceite/rejeite revisões.
-4. Use o recurso de comparação do Aspose.Words para uma análise abrangente de documentos.
 
 ## Conclusão
 

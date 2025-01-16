@@ -18,7 +18,7 @@ url: /el/net/document-protection/password-protection/
 1.  Aspose.Words για .NET: Βεβαιωθείτε ότι έχετε τη βιβλιοθήκη Aspose.Words για .NET. Μπορείτε[κατεβάστε το εδώ](https://releases.aspose.com/words/net/).
 2. Περιβάλλον ανάπτυξης: Visual Studio ή οποιοδήποτε άλλο περιβάλλον ανάπτυξης C#.
 3. Βασικές γνώσεις C#: Θεμελιώδης κατανόηση του προγραμματισμού C#.
-4. Aspose License: Λάβετε άδεια από[εδώ](https://purchase.aspose.com/buy) ή χρησιμοποιήστε α[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/) για αξιολόγηση.
+4.  Aspose License: Λάβετε άδεια από[εδώ](https://purchase.aspose.com/buy) ή χρησιμοποιήστε α[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/) για αξιολόγηση.
 
 ## Εισαγωγή χώρων ονομάτων
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ### Επιλέξτε Τύπος προστασίας
 
- Το Aspose.Words προσφέρει διαφορετικούς τύπους προστασίας, όπως π.χ`NoProtection`, `ReadOnly`, `AllowOnlyComments` , και`AllowOnlyFormFields` . Για αυτό το παράδειγμα, θα χρησιμοποιήσουμε`NoProtection` αλλά με κωδικό πρόσβασης, που ουσιαστικά σημαίνει ότι το έγγραφο είναι επεξεργάσιμο, αλλά απαιτεί κωδικό πρόσβασης για την κατάργηση της προστασίας.
+ Το Aspose.Words προσφέρει διαφορετικούς τύπους προστασίας, όπως π.χ`NoProtection`, `ReadOnly`, `AllowOnlyComments` , και`AllowOnlyFormFields` Για αυτό το παράδειγμα, θα χρησιμοποιήσουμε`NoProtection` αλλά με κωδικό πρόσβασης, που ουσιαστικά σημαίνει ότι το έγγραφο είναι επεξεργάσιμο, αλλά απαιτεί κωδικό πρόσβασης για την κατάργηση της προστασίας.
 
 ### Εφαρμόστε προστασία
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### Μπορώ να χρησιμοποιήσω διαφορετικούς τύπους προστασίας με το Aspose.Words;
 
- Ναι, το Aspose.Words υποστηρίζει διάφορους τύπους προστασίας, μεταξύ των οποίων`ReadOnly`, `AllowOnlyComments` , και`AllowOnlyFormFields`.
+Ναι, το Aspose.Words υποστηρίζει διάφορους τύπους προστασίας, μεταξύ των οποίων`ReadOnly`, `AllowOnlyComments` , και`AllowOnlyFormFields`.
 
 ### Πώς μπορώ να αφαιρέσω την προστασία με κωδικό πρόσβασης από ένα έγγραφο;
 
@@ -110,4 +110,4 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση για το Aspose.Words;
 
-Μπορείτε να βρείτε περισσότερα έγγραφα σχετικά με το[Σελίδα τεκμηρίωσης Aspose.Words](https://reference.aspose.com/words/net/).
+ Μπορείτε να βρείτε περισσότερα έγγραφα σχετικά με το[Σελίδα τεκμηρίωσης Aspose.Words](https://reference.aspose.com/words/net/).

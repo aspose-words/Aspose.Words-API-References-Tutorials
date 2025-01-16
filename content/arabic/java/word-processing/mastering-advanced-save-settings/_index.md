@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /ar/java/word-processing/mastering-advanced-save-settings/
 ---
+
 هل أنت مستعد لرفع مهارات معالجة المستندات لديك إلى المستوى التالي؟ في هذا الدليل الشامل، سنخوض بعمق في إتقان إعدادات الحفظ المتقدمة للمستندات باستخدام Aspose.Words for Java. سواء كنت مطورًا متمرسًا أو بدأت للتو، فسنقوم بإرشادك خلال تعقيدات معالجة المستندات باستخدام Aspose.Words for Java.
 
 ## مقدمة
@@ -25,13 +26,13 @@ Aspose.Words for Java هي مكتبة قوية تتيح للمطورين الع�
 ```java
 // تعيين تنسيق المستند إلى DOCX
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
-// تعيين اتجاه الصفحة إلى أفقي
+//تعيين اتجاه الصفحة إلى أفقي
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## التحكم في هوامش الصفحة
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 بوصة
 pageSetup.setRightMargin(72.0); // 1 بوصة
 pageSetup.setTopMargin(36.0); // 0.5 بوصة
 pageSetup.setBottomMargin(36.0); // 0.5 بوصة
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## إدارة الرؤوس والتذييلات
@@ -56,11 +57,11 @@ doc.save("custom_margins.docx", SaveFormat.DOCX);
 ```java
 // إضافة رأس الصفحة إلى الصفحة الأولى
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## تضمين الخطوط لعرضها عبر الأنظمة الأساسية
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## حماية مستنداتك
@@ -85,7 +86,7 @@ doc.save("embedded_fonts.docx", SaveFormat.DOCX);
 // حماية المستند بكلمة مرور
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## تخصيص العلامات المائية
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## تحسين حجم المستند
@@ -111,7 +112,7 @@ doc.save("watermarked_document.docx", SaveFormat.DOCX);
 // تحسين حجم المستند
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## التصدير إلى تنسيقات مختلفة
@@ -121,7 +122,7 @@ doc.save("optimized_document.docx", SaveFormat.DOCX);
 ```java
 // تصدير إلى PDF
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## أتمتة إنشاء المستندات
@@ -133,7 +134,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## العمل مع بيانات التعريف الخاصة بالمستندات
@@ -143,9 +144,8 @@ doc.save("automated_document.docx", SaveFormat.DOCX);
 ```java
 // الوصول إلى بيانات التعريف الخاصة بالمستندات وتعديلها
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## التعامل مع إصدارات المستندات
@@ -153,18 +153,22 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 يعد إصدار المستندات أمرًا بالغ الأهمية في البيئات التعاونية. اكتشف كيفية إدارة إصدارات مختلفة من مستنداتك بفعالية.
 
 ```java
-// مقارنة إصدارات المستندات
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+// إن مقارنة المستندات بالمراجعات من شأنها أن تؤدي إلى حدوث استثناء.
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## مقارنة المستندات المتقدمة
+
+قم بمقارنة المستندات بدقة باستخدام التقنيات المتقدمة التي يوفرها Aspose.Words لـ Java.
 
 ```java
 // مقارنة المستندات المتقدمة
@@ -217,7 +221,7 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### هل Aspose.Words for Java مناسب لإنشاء مستندات دفعية؟
@@ -228,7 +232,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### كيف يمكنني مقارنة مستندين Word لمعرفة الاختلافات؟

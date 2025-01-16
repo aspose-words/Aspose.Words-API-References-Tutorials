@@ -72,14 +72,6 @@ Vergleichen Sie das Quelldokument mit dem geänderten Dokument:
 comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
 ```
 
-## Unterschiede hervorheben
-
-Heben Sie die Unterschiede zwischen den Dokumenten hervor:
-
-```python
-comparison.highlight_changes()
-```
-
 ## Speichern des Vergleichsergebnisses
 
 Speichern Sie das Vergleichsergebnis in einer neuen Datei:
@@ -105,7 +97,7 @@ pip install aspose-words
 
 Ja, Aspose.Words verarbeitet komplexe Formatierungen und Stile beim Dokumentvergleich und gewährleistet so genaue Ergebnisse.
 
-### Ist Aspose.Words für die automatische Dokumenterstellung geeignet?
+### Ist Aspose.Words zur automatischen Dokumenterstellung geeignet?
 
 Auf jeden Fall! Aspose.Words ermöglicht die automatische Dokumenterstellung und -bearbeitung und ist somit eine ausgezeichnete Wahl für verschiedene Anwendungen.
 

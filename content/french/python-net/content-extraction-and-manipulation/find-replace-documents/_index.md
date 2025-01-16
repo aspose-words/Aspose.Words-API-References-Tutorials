@@ -18,7 +18,7 @@ Avant de plonger dans les techniques avancées, assurez-vous de disposer des pr�
 
 1.  Installation de Python : Assurez-vous que Python est installé sur votre système. Vous pouvez le télécharger à partir de[ici](https://www.python.org/downloads/).
 
-2. Aspose.Words pour Python : vous devez avoir installé Aspose.Words pour Python. Vous pouvez le télécharger à partir de[ici](https://releases.aspose.com/words/python/).
+2.  Aspose.Words pour Python : vous devez avoir installé Aspose.Words pour Python. Vous pouvez le télécharger à partir de[ici](https://releases.aspose.com/words/python/).
 
 3. Préparation du document : Préparez un document Word sur lequel vous souhaitez effectuer des opérations de recherche et de remplacement.
 
@@ -118,4 +118,4 @@ Oui, vous pouvez utiliser des caractères génériques et des expressions régul
 
 ### Puis-je remplacer du texte tout en gardant une trace des modifications apportées ?
 
- Oui, vous pouvez suivre les modifications en utilisant le`revision` fonctionnalité d'Aspose.Words. Elle permet de garder une trace de toutes les modifications apportées au document.
+ Oui, vous pouvez suivre les modifications en utilisant le`revision`fonctionnalité d'Aspose.Words. Elle permet de garder une trace de toutes les modifications apportées au document.

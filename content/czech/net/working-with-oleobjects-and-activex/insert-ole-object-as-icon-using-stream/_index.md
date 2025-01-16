@@ -9,7 +9,7 @@ url: /cs/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using
 ---
 ## Zavedení
 
-tomto tutoriálu se ponoříme do super skvělé funkce Aspose.Words pro .NET: vložení objektu OLE (Object Linking and Embedding) jako ikony pomocí streamu. Ať už vkládáte powerpointovou prezentaci, excelovou tabulku nebo jakýkoli jiný typ souboru, tato příručka vám přesně ukáže, jak na to. Jste připraveni začít? Jdeme!
+tomto tutoriálu se ponoříme do super skvělé funkce Aspose.Words pro .NET: vložení objektu OLE (Object Linking and Embedding) jako ikony pomocí streamu. Ať už vkládáte powerpointovou prezentaci, excelovou tabulku nebo jakýkoli jiný typ souboru, tato příručka vám přesně ukáže, jak na to. Jste připraveni začít? Jdeme na to!
 
 ## Předpoklady
 

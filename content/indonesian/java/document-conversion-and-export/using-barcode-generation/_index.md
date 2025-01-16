@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Atur Generator Kode Batang
 
- Tetapkan generator kode batang khusus menggunakan`FieldOptions` kelas. Dalam contoh ini, kami berasumsi Anda telah menerapkan`CustomBarcodeGenerator` kelas untuk menghasilkan kode batang. Ganti`CustomBarcodeGenerator` dengan logika pembuatan kode batang Anda yang sebenarnya:
+ Tetapkan generator kode batang khusus menggunakan`FieldOptions` kelas. Dalam contoh ini, kami berasumsi Anda telah menerapkan`CustomBarcodeGenerator`kelas untuk menghasilkan kode batang. Ganti`CustomBarcodeGenerator` dengan logika pembuatan kode batang Anda yang sebenarnya:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

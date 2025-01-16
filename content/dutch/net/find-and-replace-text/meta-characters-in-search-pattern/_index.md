@@ -15,7 +15,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch verw
 
 Voordat we met de code beginnen, willen we ervoor zorgen dat alles is ingesteld:
 
-1.  Aspose.Words voor .NET: U moet Aspose.Words voor .NET geïnstalleerd hebben. U kunt het downloaden van de[Aspose Releases-pagina](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET: U moet Aspose.Words voor .NET geïnstalleerd hebben. U kunt het downloaden van de[Aspose Releases-pagina](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere C#-ontwikkelomgeving.
 3. Basiskennis van C#: Kennis van de basisprincipes van C#-programmering is nuttig.
 
@@ -39,7 +39,7 @@ Voordat u begint met het manipuleren van het document, moet u het pad naar uw do
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"`met het daadwerkelijke pad waar u uw documenten wilt opslaan.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar u uw documenten wilt opslaan.
 
 ## Stap 2: Een nieuw document maken
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## Stap 4: Tekst vervangen met behulp van het meta-teken voor alinea-einden
 
- Meta-tekens kunnen verschillende elementen vertegenwoordigen, zoals alinea's, tabs en regeleinden. Hier gebruiken we`&p` om een alinea-einde weer te geven.
+Meta-tekens kunnen verschillende elementen vertegenwoordigen, zoals alinea's, tabs en regeleinden. Hier gebruiken we`&p` om een alinea-einde weer te geven.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");

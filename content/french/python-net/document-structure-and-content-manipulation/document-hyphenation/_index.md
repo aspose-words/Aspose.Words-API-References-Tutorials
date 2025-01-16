@@ -126,4 +126,4 @@ Pour éviter les veuves et les orphelins, utilisez les options fournies par Aspo
 
 ### Où puis-je accéder à la documentation Aspose.Words pour Python ?
 
-Vous pouvez accéder à la documentation de l'API à l'adresse[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+ Vous pouvez accéder à la documentation de l'API à l'adresse[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

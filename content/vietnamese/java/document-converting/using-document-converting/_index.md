@@ -56,7 +56,7 @@ Tiếp theo, chuyển đổi tài liệu Word đã tải sang PDF:
 
 ```java
 // Lưu tài liệu dưới dạng PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Bước 4: Chuyển đổi sang các định dạng khác
@@ -67,21 +67,21 @@ Bên cạnh PDF, Aspose.Words for Java cho phép bạn chuyển đổi tài li�
 
 ```java
 // Lưu tài liệu dưới dạng RTF
-doc.save("output.rtf", SaveFormat.RTF);
+doc.save("output.rtf");
 ```
 
 ### Chuyển đổi sang HTML
 
 ```java
 // Lưu tài liệu dưới dạng HTML
-doc.save("output.html", SaveFormat.HTML);
+doc.save("output.html");
 ```
 
 ### Chuyển đổi sang EPUB
 
 ```java
 // Lưu tài liệu dưới dạng EPUB
-doc.save("output.epub", SaveFormat.EPUB);
+doc.save("output.epub");
 ```
 
 ## Mẹo chuyển đổi tài liệu hiệu quả

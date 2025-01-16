@@ -38,7 +38,7 @@ Ruang nama ini menyediakan akses ke kelas dan metode yang diperlukan untuk meman
 
 ## Langkah 1: Buat DocumentBuilder
 
-Itu`DocumentBuilder` kelas membantu Anda menambahkan dan memformat konten dalam dokumen. Dengan membuat`DocumentBuilder` objek, Anda sedang menyiapkan alat untuk menyisipkan dan memanipulasi teks.
+ Itu`DocumentBuilder` kelas membantu Anda menambahkan dan memformat konten dalam dokumen. Dengan membuat`DocumentBuilder` objek, Anda sedang menyiapkan alat untuk menyisipkan dan memanipulasi teks.
 
 ```csharp
 // Buat instance DocumentBuilder untuk bekerja dengan dokumen tersebut.

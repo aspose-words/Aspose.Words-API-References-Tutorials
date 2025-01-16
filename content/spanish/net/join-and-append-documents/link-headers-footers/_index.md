@@ -92,4 +92,4 @@ Aspose.Words admite varias versiones de .NET Framework y .NET Core, lo que garan
 Sí, puede desvincular encabezados y pies de página utilizando los métodos de API de Aspose.Words para restaurar el formato de documentos individuales.
 
 ### ¿Dónde puedo encontrar documentación más detallada sobre Aspose.Words para .NET?
- Visita[Documentación de Aspose.Words para .NET](https://reference.aspose.com/words/net/)para guías completas y referencias API.
+ Visita[Documentación de Aspose.Words para .NET](https://reference.aspose.com/words/net/) para guías completas y referencias API.

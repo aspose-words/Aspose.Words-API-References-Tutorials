@@ -21,7 +21,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a következő e
 
 ## 1. lépés: A Java projekt beállítása
 
-kezdéshez hozzon létre egy új Java-projektet a kívánt integrált fejlesztési környezetben (IDE). Ügyeljen arra, hogy az Aspose.Words könyvtárat tartalmazza a projekt függőségei között.
+A kezdéshez hozzon létre egy új Java-projektet a kívánt integrált fejlesztési környezetben (IDE). Ügyeljen arra, hogy az Aspose.Words könyvtárat tartalmazza a projekt függőségei között.
 
 ## 2. lépés: Az Aspose.Words inicializálása
 
@@ -39,7 +39,7 @@ public class DocumentJoiner {
 }
 ```
 
- Győződjön meg róla, hogy cseréli`"Aspose.Words.Java.lic"` a licencfájl elérési útjával.
+ Győződjön meg róla, hogy kicserélte`"Aspose.Words.Java.lic"` a licencfájl elérési útjával.
 
 ## 3. lépés: Dokumentumok betöltése
 
@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-A`ImportFormatMode.KEEP_SOURCE_FORMATTING` opció biztosítja a forrásdokumentumok formázásának megőrzését.
+ A`ImportFormatMode.KEEP_SOURCE_FORMATTING` opció biztosítja a forrásdokumentumok formázásának megőrzését.
 
 ## 5. lépés: Az eredmény mentése
 

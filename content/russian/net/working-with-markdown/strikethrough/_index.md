@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## Шаг 1: Инициализация DocumentBuilder
 
-The`DocumentBuilder` класс — это мощный инструмент в Aspose.Words, позволяющий с легкостью добавлять контент в документ.
+ The`DocumentBuilder` класс — это мощный инструмент в Aspose.Words, позволяющий с легкостью добавлять контент в документ.
 
 ```csharp
 // Инициализируйте DocumentBuilder.

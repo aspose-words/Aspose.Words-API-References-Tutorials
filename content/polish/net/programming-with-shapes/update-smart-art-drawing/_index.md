@@ -80,7 +80,7 @@ Rozpoznawanie kształtów Smart Art daje pewność, że aktualizujesz tylko te e
 Nagłówek: Odśwież grafikę Smart Art
 
 Wyjaśnienie:
-Ten`UpdateSmartArtDrawing` Metoda odświeża grafikę Smart Art, zapewniając, że odzwierciedla ona wszelkie zmiany w danych lub układzie dokumentu. Ta metoda musi zostać wywołana dla każdego kształtu Smart Art zidentyfikowanego w poprzednim kroku.
+ Ten`UpdateSmartArtDrawing` Metoda odświeża grafikę Smart Art, zapewniając, że odzwierciedla ona wszelkie zmiany w danych lub układzie dokumentu. Ta metoda musi zostać wywołana dla każdego kształtu Smart Art zidentyfikowanego w poprzednim kroku.
 
 ```csharp
 // Aktualizuj rysunek Smart Art dla każdego kształtu Smart Art

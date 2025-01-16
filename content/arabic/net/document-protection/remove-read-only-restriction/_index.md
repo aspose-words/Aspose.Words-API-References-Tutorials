@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 يعد تعيين كلمة مرور أمرًا اختياريًا، ولكنه قد يضيف طبقة إضافية من الأمان إلى مستندك قبل تعديله.
 
 ```csharp
-//أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
+// أدخل كلمة مرور يصل طولها إلى 15 حرفًا.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ### ماذا يحدث إذا كانت الوثيقة تحتوي بالفعل على نوع مختلف من الحماية؟
 
-ال`doc.Protect(ProtectionType.NoProtection)` تضمن الطريقة إزالة جميع أنواع الحماية من المستند.
+ ال`doc.Protect(ProtectionType.NoProtection)` تضمن الطريقة إزالة جميع أنواع الحماية من المستند.
 
 ### هل هناك طريقة لمعرفة ما إذا كان المستند للقراءة فقط قبل إزالة القيد؟
 

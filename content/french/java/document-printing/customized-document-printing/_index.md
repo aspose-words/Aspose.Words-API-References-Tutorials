@@ -2,7 +2,7 @@
 title: Impression de documents personnalisés
 linktitle: Impression de documents personnalisés
 second_title: API de traitement de documents Java Aspose.Words
-description: Découvrez comment réaliser des impressions de documents personnalisés sans effort avec Aspose.Words pour Java. Ce guide étape par étape couvre tout, de la configuration à la personnalisation avancée.
+description: Découvrez comment réaliser des impressions de documents personnalisées sans effort avec Aspose.Words pour Java. Ce guide étape par étape couvre tout, de la configuration à la personnalisation avancée.
 type: docs
 weight: 12
 url: /fr/java/document-printing/customized-document-printing/

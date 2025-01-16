@@ -45,7 +45,7 @@ Document doc = new Document("Input.html");
 
 ## Steg 2: Spara dokumentet som en Word-fil
 
- Efter att ha laddat in HTML-filen i`Document` objekt, är nästa steg att spara det som ett Word-dokument. Det är här den faktiska konverteringen sker.
+ Efter att ha laddat HTML-filen i`Document` objekt, är nästa steg att spara det som ett Word-dokument. Det är här den faktiska konverteringen sker.
 
 ```java
 doc.save("Output.docx");
@@ -53,7 +53,7 @@ doc.save("Output.docx");
 
 ### Förklaring:
 
-De`save` metod kallas på`Document` objekt för att spara filen i`.docx` formatera. Argumentet som tillhandahålls är filsökvägen där Word-dokumentet kommer att sparas. Detta är det sista steget i konverteringsprocessen.
+ De`save` metod kallas på`Document` objekt för att spara filen i`.docx` formatera. Argumentet som tillhandahålls är filsökvägen där Word-dokumentet kommer att sparas. Detta är det sista steget i konverteringsprocessen.
 
 ## Slutsats
 

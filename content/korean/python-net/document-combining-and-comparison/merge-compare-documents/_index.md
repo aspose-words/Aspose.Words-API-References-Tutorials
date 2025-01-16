@@ -72,14 +72,6 @@ modified_doc = Document("modified_document.docx")
 comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
 ```
 
-## 차이점 강조
-
-문서 간 차이점을 강조하세요:
-
-```python
-comparison.highlight_changes()
-```
-
 ## 비교 결과 저장
 
 비교 결과를 새 파일에 저장합니다.

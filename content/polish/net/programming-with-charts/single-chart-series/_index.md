@@ -112,7 +112,7 @@ I masz! Udało Ci się dostosować pojedynczą serię wykresów w dokumencie Wor
 Aspose.Words for .NET to zaawansowana biblioteka umożliwiająca programowe tworzenie, edycję, konwersję i manipulowanie dokumentami Word.
 
 ### Czy mogę używać Aspose.Words za darmo?
- Tak, możesz zacząć od[bezpłatny okres próbny](https://releases.aspose.com/).
+Tak, możesz zacząć od[bezpłatny okres próbny](https://releases.aspose.com/).
 
 ### Jak uzyskać pomoc techniczną dotyczącą Aspose.Words?
  Możesz uzyskać wsparcie od społeczności Aspose na ich stronie[forum](https://forum.aspose.com/c/words/8).

@@ -9,7 +9,7 @@ url: /pl/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 ## Wstęp
 
-W dziedzinie rozwoju .NET, Aspose.Words wyróżnia się jako solidna biblioteka do pracy z dokumentami Microsoft Word programowo. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, opanowanie możliwości Aspose.Words może znacznie zwiększyć Twoją zdolność do wydajnego manipulowania, tworzenia i zarządzania dokumentami Word. Ten samouczek zagłębia się w jedną z jego potężnych funkcji: obsługę śledzonych rewizji w dokumentach przy użyciu Aspose.Words dla .NET.
+dziedzinie rozwoju .NET, Aspose.Words wyróżnia się jako solidna biblioteka do pracy z dokumentami Microsoft Word programowo. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, opanowanie możliwości Aspose.Words może znacznie zwiększyć Twoją zdolność do wydajnego manipulowania, tworzenia i zarządzania dokumentami Word. Ten samouczek zagłębia się w jedną z jego potężnych funkcji: obsługę śledzonych rewizji w dokumentach przy użyciu Aspose.Words dla .NET.
 
 ## Wymagania wstępne
 
@@ -17,7 +17,7 @@ Zanim przejdziesz do tego samouczka, upewnij się, że spełnione są następuj�
 - Podstawowa znajomość języka programowania C#.
 - Program Visual Studio zainstalowany w systemie.
 -  Biblioteka Aspose.Words dla .NET zintegrowana z Twoim projektem. Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-- Dostęp do Aspose.Words dla .NET[dokumentacja](https://reference.aspose.com/words/net/) w celach informacyjnych.
+-  Dostęp do Aspose.Words dla .NET[dokumentacja](https://reference.aspose.com/words/net/) w celach informacyjnych.
 
 ## Importuj przestrzenie nazw
 
@@ -84,4 +84,4 @@ Tak, możesz programowo zarządzać śledzonymi wersjami i przywracać je do pie
 Rozwiązanie Aspose.Words for .NET zostało zoptymalizowane pod kątem wydajnej obsługi obszernych dokumentów, w tym dokumentów z wieloma śledzonymi rewizjami.
 
 ### Gdzie mogę znaleźć więcej materiałów i pomocy dla Aspose.Words dla .NET?
-Możesz zapoznać się z kompleksową dokumentacją i uzyskać pomoc od społeczności Aspose.Words for .NET pod adresem[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Możesz zapoznać się z kompleksową dokumentacją i uzyskać pomoc od społeczności Aspose.Words for .NET pod adresem[Forum Aspose.Words](https://forum.aspose.com/c/words/8).

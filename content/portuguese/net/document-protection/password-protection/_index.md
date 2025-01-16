@@ -18,7 +18,7 @@ Antes de nos aprofundarmos nos detalhes da proteção de senha dos seus document
 1.  Aspose.Words para .NET: Certifique-se de ter a biblioteca Aspose.Words para .NET. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro ambiente de desenvolvimento C#.
 3. Conhecimento básico de C#: Uma compreensão fundamental da programação em C#.
-4. Licença Aspose: Obtenha uma licença em[aqui](https://purchase.aspose.com/buy) ou use um[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
+4.  Licença Aspose: Obtenha uma licença em[aqui](https://purchase.aspose.com/buy) ou use um[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
 
 ## Importar namespaces
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ### Escolha o tipo de proteção
 
- O Aspose.Words oferece diferentes tipos de proteção, como`NoProtection`, `ReadOnly`, `AllowOnlyComments` , e`AllowOnlyFormFields` . Para este exemplo, usaremos`NoProtection` mas com uma senha, o que essencialmente significa que o documento é editável, mas requer uma senha para remover a proteção.
+ O Aspose.Words oferece diferentes tipos de proteção, como`NoProtection`, `ReadOnly`, `AllowOnlyComments` , e`AllowOnlyFormFields` Para este exemplo, usaremos`NoProtection` mas com uma senha, o que essencialmente significa que o documento é editável, mas requer uma senha para remover a proteção.
 
 ### Aplicar proteção
 
@@ -88,13 +88,13 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ## Conclusão
 
-aí está! Você adicionou com sucesso proteção por senha ao seu documento do Word usando o Aspose.Words para .NET. É como ter uma trava digital nos seus documentos mais importantes, garantindo que eles estejam protegidos de olhares curiosos. Não importa se você está protegendo informações confidenciais ou apenas quer adicionar uma camada extra de segurança, o Aspose.Words torna isso simples e eficiente. Boa codificação!
+E aí está! Você adicionou com sucesso proteção por senha ao seu documento do Word usando o Aspose.Words para .NET. É como ter uma trava digital nos seus documentos mais importantes, garantindo que eles estejam protegidos de olhares curiosos. Não importa se você está protegendo informações confidenciais ou apenas quer adicionar uma camada extra de segurança, o Aspose.Words torna isso simples e eficiente. Boa codificação!
 
 ## Perguntas frequentes
 
 ### Posso usar diferentes tipos de proteção com o Aspose.Words?
 
- Sim, o Aspose.Words oferece suporte a vários tipos de proteção, incluindo`ReadOnly`, `AllowOnlyComments` , e`AllowOnlyFormFields`.
+Sim, o Aspose.Words oferece suporte a vários tipos de proteção, incluindo`ReadOnly`, `AllowOnlyComments` , e`AllowOnlyFormFields`.
 
 ### Como posso remover a proteção por senha de um documento?
 
@@ -110,4 +110,4 @@ Sim, o Aspose.Words é compatível com .NET Core, .NET Framework e outras plataf
 
 ### Onde posso encontrar mais documentação sobre o Aspose.Words?
 
-Você pode encontrar mais documentação em[Página de documentação do Aspose.Words](https://reference.aspose.com/words/net/).
+ Você pode encontrar mais documentação em[Página de documentação do Aspose.Words](https://reference.aspose.com/words/net/).

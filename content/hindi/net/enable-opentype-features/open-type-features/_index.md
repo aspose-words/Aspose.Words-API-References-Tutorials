@@ -56,7 +56,7 @@ Aspose.Words का उपयोग करने के लिए, आपको 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"`उस वास्तविक पथ के साथ जहां आपका दस्तावेज़ स्थित है.
+ प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` उस वास्तविक पथ के साथ जहां आपका दस्तावेज़ स्थित है.
 
 ### दस्तावेज़ लोड करना
 

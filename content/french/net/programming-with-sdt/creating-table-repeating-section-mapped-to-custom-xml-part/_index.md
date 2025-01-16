@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 
 ## Conclusion
 
-En suivant ces étapes, vous avez réussi à créer un tableau avec une section répétitive mappée à une partie XML personnalisée à l'aide d'Aspose.Words pour .NET. Cela permet de générer du contenu dynamique basé sur des données structurées, ce qui rend la création de documents plus flexible et plus puissante.
+En suivant ces étapes, vous avez réussi à créer un tableau avec une section répétitive mappée sur une partie XML personnalisée à l'aide d'Aspose.Words pour .NET. Cela permet de générer du contenu dynamique basé sur des données structurées, ce qui rend la création de documents plus flexible et plus puissante.
 
 ## FAQ
 

@@ -89,7 +89,7 @@ Aspose.Words for .NET to zaawansowana biblioteka do pracy z dokumentami Word w a
 Tak, Aspose.Words pozwala na dzielenie dokumentów według różnych kryteriów, takich jak sekcje, strony i inne.
 
 ### Czy Aspose.Words jest darmowe?
- Aspose.Words oferuje bezpłatną wersję próbną, ale aby uzyskać pełne funkcje, musisz kupić licencję. Sprawdź ich[kup stronę](https://purchase.aspose.com/buy) po więcej szczegółów.
+ Aspose.Words oferuje bezpłatną wersję próbną, ale aby uzyskać pełne funkcje, musisz kupić licencję. Sprawdź ich[kup stronę](https://purchase.aspose.com/buy) Aby uzyskać więcej szczegółów.
 
 ### Gdzie mogę znaleźć dokumentację?
  Dostępna jest kompleksowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).

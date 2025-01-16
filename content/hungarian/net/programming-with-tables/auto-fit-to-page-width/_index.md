@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-A`Aspose.Words` névtér tartalmazza a Word dokumentumok kezeléséhez szükséges alapvető osztályokat, míg`Aspose.Words.Tables` kifejezetten asztalok kezelésére szolgál.
+ A`Aspose.Words` névtér tartalmazza a Word dokumentumok kezeléséhez szükséges alapvető osztályokat, míg`Aspose.Words.Tables` kifejezetten asztalok kezelésére szolgál.
 
 ## 1. lépés: Állítsa be a dokumentumot
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- Ebben a lépésben határozza meg a dokumentum tárolási útvonalát, és töltse be a`Document` objektum. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` tényleges elérési úttal, ahol a dokumentum található.
+ Ebben a lépésben határozza meg a dokumentum tárolási útvonalát, és töltse be a`Document` objektum. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentum található.
 
 ## 2. lépés: Nyissa meg a táblázatot
 
@@ -68,7 +68,7 @@ Most, hogy megvan a táblázat, alkalmazhatja az automatikus illesztés funkció
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-A`AutoFit` módszerrel`AutoFitBehavior.AutoFitToWindow` biztosítja, hogy a táblázat szélessége az oldal teljes szélességéhez illeszkedjen.
+ A`AutoFit` módszerrel`AutoFitBehavior.AutoFitToWindow` biztosítja, hogy a táblázat szélessége az oldal teljes szélességéhez illeszkedjen.
 
 ## 4. lépés: Mentse el a módosított dokumentumot
 

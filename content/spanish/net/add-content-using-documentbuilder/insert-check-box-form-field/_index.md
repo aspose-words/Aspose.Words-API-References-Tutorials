@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Paso 3: Inicialización del generador de documentos
 
-El`DocumentBuilder` La clase es la herramienta que eliges para agregar contenido al documento. Piensa en ella como si fuera tu pincel y tu paleta.
+ El`DocumentBuilder` La clase es la herramienta que eliges para agregar contenido al documento. Piensa en ella como si fuera tu pincel y tu paleta.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

@@ -127,7 +127,7 @@ Los comentarios de anclaje se utilizan para resaltar y comentar secciones espec�
 Sí, puedes agregar varios comentarios a la misma sección de texto definiendo múltiples rangos de comentarios.
 
 ### ¿Aspose.Words para .NET es de uso gratuito?
-Aspose.Words para .NET ofrece una prueba gratuita que puedes descargar[aquí](https://releases.aspose.com/) Para obtener todas las funciones, puede comprar una licencia.[aquí](https://purchase.aspose.com/buy).
+ Aspose.Words para .NET ofrece una prueba gratuita que puedes descargar[aquí](https://releases.aspose.com/) Para obtener todas las funciones, puede comprar una licencia.[aquí](https://purchase.aspose.com/buy).
 
 ### ¿Puedo personalizar la apariencia de los comentarios?
 Si bien Aspose.Words se centra en la funcionalidad, la apariencia de los comentarios en los documentos de Word generalmente está controlada por el propio Word.

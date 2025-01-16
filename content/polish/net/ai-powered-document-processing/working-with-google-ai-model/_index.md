@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-Ten`Document` Klasa z Aspose.Words pozwala na załadowanie plików Word do pamięci. Upewnij się, że nazwy plików odpowiadają rzeczywistym dokumentom w Twoim katalogu, w przeciwnym razie wystąpią błędy file not found!
+ Ten`Document` Klasa z Aspose.Words pozwala na załadowanie plików Word do pamięci. Upewnij się, że nazwy plików odpowiadają rzeczywistym dokumentom w Twoim katalogu, w przeciwnym razie wystąpią błędy file not found!
 
 ## Krok 3: Pobieranie klucza API
 

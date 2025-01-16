@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 네, 여러 개의 댓글 범위를 정의하여 동일한 텍스트 섹션에 여러 개의 댓글을 추가할 수 있습니다.
 
 ### Aspose.Words for .NET은 무료로 사용할 수 있나요?
-Aspose.Words for .NET은 다운로드할 수 있는 무료 평가판을 제공합니다.[여기](https://releases.aspose.com/) . 전체 기능을 사용하려면 라이센스를 구매해야 합니다.[여기](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET은 다운로드할 수 있는 무료 평가판을 제공합니다.[여기](https://releases.aspose.com/) . 전체 기능을 사용하려면 라이센스를 구매해야 합니다.[여기](https://purchase.aspose.com/buy).
 
 ### 댓글의 모양을 사용자 지정할 수 있나요?
 Aspose.Words는 기능에 초점을 두는 반면, Word 문서에 표시되는 주석의 모양은 일반적으로 Word 자체에서 제어됩니다.

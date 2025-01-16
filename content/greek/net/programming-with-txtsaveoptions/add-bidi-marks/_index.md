@@ -15,7 +15,7 @@ url: /el/net/programming-with-txtsaveoptions/add-bidi-marks/
 
 Πριν βουτήξουμε στον κώδικα, βεβαιωθείτε ότι έχετε τα εξής:
 
-1.  Aspose.Words για .NET: Πρέπει να έχετε εγκατεστημένο το Aspose.Words για .NET. Μπορείτε να το κατεβάσετε από το[Aspose σελίδα Λήψεις](https://releases.aspose.com/words/net/).
+1. Aspose.Words για .NET: Πρέπει να έχετε εγκατεστημένο το Aspose.Words για .NET. Μπορείτε να το κατεβάσετε από το[Aspose σελίδα Λήψεις](https://releases.aspose.com/words/net/).
 2. .NET Framework ή .NET Core: Βεβαιωθείτε ότι έχετε ρυθμίσει ένα συμβατό περιβάλλον .NET για την εκτέλεση των παραδειγμάτων.
 3. Βασικές γνώσεις C#: Εξοικείωση με τη γλώσσα προγραμματισμού C# και βασικές λειτουργίες στο .NET.
 

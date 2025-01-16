@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 Itt történik a varázslat. Beállítjuk a dokumentum tömörítési szintjét.
 
- Hozzon létre egy példányt a`OoxmlSaveOptions` és állítsa be a tömörítési szintet. A`CompressionLevel` tulajdonság különböző szintekre állítható, mint pl`Normal`, `Maximum`, `Fast` , és`SuperFast` . Ehhez a példához használjuk`SuperFast`.
+ Hozzon létre egy példányt a`OoxmlSaveOptions` és állítsa be a tömörítési szintet. A`CompressionLevel` tulajdonság különböző szintekre állítható, mint pl`Normal`, `Maximum`, `Fast` , és`SuperFast` . Ebben a példában használjuk`SuperFast`.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
@@ -101,7 +101,7 @@ Az alkalmazás futtatása után navigáljon a megadott könyvtárba, és ellenő
 
 És megvan! Sikeresen beállította egy Word-dokumentum tömörítési szintjét az Aspose.Words for .NET használatával. Ez jelentősen csökkentheti a fájl méretét és javíthatja a teljesítményt nagy dokumentumokkal való munka során. Ne felejtsen el felfedezni más tömörítési szinteket is, hogy megtalálja az igényeinek megfelelő legjobb egyensúlyt a fájlméret és a teljesítmény között.
 
-Ha bármilyen kérdése van, vagy bármilyen problémába ütközik, nézze meg a[Aspose.Words Dokumentáció](https://reference.aspose.com/words/net/) vagy nyúljanak hozzájuk[Támogatási fórum](https://forum.aspose.com/c/words/8).
+Ha bármilyen kérdése van, vagy bármilyen problémába ütközik, nézze meg a[Aspose.Words Dokumentáció](https://reference.aspose.com/words/net/) vagy nyúljon hozzájuk[Támogatási fórum](https://forum.aspose.com/c/words/8).
 
 ## GYIK
 

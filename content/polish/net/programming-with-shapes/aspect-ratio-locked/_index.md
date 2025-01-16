@@ -9,7 +9,7 @@ url: /pl/net/programming-with-shapes/aspect-ratio-locked/
 ---
 ## Wstęp
 
-Czy kiedykolwiek zastanawiałeś się, jak zachować idealne proporcje obrazów i kształtów w dokumentach Word? Czasami musisz upewnić się, że obrazy i kształty nie zostaną zniekształcone podczas zmiany rozmiaru. W tym miejscu przydaje się blokowanie współczynnika proporcji. W tym samouczku pokażemy, jak ustawić współczynnik proporcji kształtów w dokumentach Word za pomocą Aspose.Words dla .NET. Podzielimy to na łatwe do wykonania kroki, upewniając się, że możesz zastosować te umiejętności w swoich projektach z pewnością siebie.
+Czy kiedykolwiek zastanawiałeś się, jak zachować idealne proporcje obrazów i kształtów w dokumentach Word? Czasami musisz upewnić się, że obrazy i kształty nie zostaną zniekształcone podczas zmiany rozmiaru. W tym miejscu przydaje się blokowanie współczynnika proporcji. W tym samouczku przyjrzymy się, jak ustawić współczynnik proporcji kształtów w dokumentach Word za pomocą Aspose.Words dla .NET. Podzielimy to na łatwe do wykonania kroki, upewniając się, że możesz zastosować te umiejętności w swoich projektach z pewnością siebie.
 
 ## Wymagania wstępne
 

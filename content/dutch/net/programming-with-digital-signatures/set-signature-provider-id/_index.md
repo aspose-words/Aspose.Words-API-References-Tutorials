@@ -89,7 +89,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
     dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
 ```
 
- Hiermee ondertekent u uw document en slaat u het op als een nieuw bestand,`Digitally signed.docx`.
+ Hiermee ondertekent u uw document en slaat u het op als een nieuw bestand.`Digitally signed.docx`.
 
 ## Conclusie
 

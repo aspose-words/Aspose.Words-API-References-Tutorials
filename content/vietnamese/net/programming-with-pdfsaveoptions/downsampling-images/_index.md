@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Trong bước này, chúng tôi đang tải tài liệu Word từ thư mục đã chỉ định. Hãy đảm bảo thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ.
+Trong bước này, chúng tôi đang tải tài liệu Word từ thư mục đã chỉ định. Hãy đảm bảo thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ.
 
 ## Bước 2: Cấu hình Tùy chọn Giảm mẫu
 

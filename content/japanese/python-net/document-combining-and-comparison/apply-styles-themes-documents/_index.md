@@ -51,30 +51,8 @@ font.style_identifier = StyleIdentifier.STRONG
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## 見出しスタイルのカスタマイズ
-
-見出しはドキュメントに構造を与えます。見出しスタイルをカスタマイズして、階層構造と読みやすさを向上させます。
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## 統一感のある外観を実現するテーマの使用
-
-テーマは一貫した外観を提供します。ドキュメントにテーマを適用してプロフェッショナルな雰囲気を演出します。
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## テーマの色とフォントを変更する
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 テーマの色とフォントを調整して、ニーズに合わせてテーマをカスタマイズします。
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## 独自のスタイルを作成する
-
-独自のドキュメント要素にカスタム スタイルを作成し、ブランド アイデンティティを際立たせます。
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## ドキュメントパーツに基づいたスタイルの管理
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 ヘッダー、フッター、本文コンテンツにそれぞれ異なるスタイルを適用して、洗練された外観を実現します。
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## ドキュメント全体のスタイルの処理
-
-ドキュメント全体にスタイルを簡単に適用します。
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## 書式とスタイルのクリア
-
-スタイルと書式設定を簡単に削除して、新しく始めることができます。
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## 実例とユースケース
-
-スタイルとテーマによってドキュメントを変換できる実用的なシナリオを見てみましょう。
-
-1. ブランドレポートの作成
-2. 魅力的な履歴書のデザイン
-3. 学術論文のフォーマット
-
-## 効率的なスタイリングのヒント
-
-- スタイルの一貫性を保つ
-- テーマを使って簡単にイメージチェンジ
-- さまざまなフォントと色を試してみる
 
 ## 結論
 

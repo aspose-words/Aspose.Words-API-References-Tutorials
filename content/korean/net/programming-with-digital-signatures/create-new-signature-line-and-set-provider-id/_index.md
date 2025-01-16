@@ -130,7 +130,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx"
 ## 자주 묻는 질문
 
 ### 서명란의 모양을 사용자 지정할 수 있나요?
-물론입니다! 다양한 옵션을 조정할 수 있습니다.`SignatureLineOptions` 귀하의 필요에 맞게.
+ 물론입니다! 다양한 옵션을 조정할 수 있습니다.`SignatureLineOptions`귀하의 필요에 맞게.
 
 ### PFX 인증서가 없으면 어떻게 하나요?
 신뢰할 수 있는 인증 기관에서 하나를 얻어야 합니다. 문서에 디지털 서명하는 데 필수적입니다.

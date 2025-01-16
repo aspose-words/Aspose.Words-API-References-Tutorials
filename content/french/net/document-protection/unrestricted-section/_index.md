@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Le`Document` la classe initialise un nouveau document et le`DocumentBuilder` nous aide à ajouter facilement du contenu à notre document.
+ Le`Document` la classe initialise un nouveau document et le`DocumentBuilder` nous aide à ajouter facilement du contenu à notre document.
 
 ## Étape 2 : Insérer des sections
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-Le`InsertBreak` La méthode insère un saut de section continu, nous permettant d'avoir des paramètres différents pour chaque section.
+ Le`InsertBreak` La méthode insère un saut de section continu, nous permettant d'avoir des paramètres différents pour chaque section.
 
 ## Étape 3 : Protégez le document
 

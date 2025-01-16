@@ -71,7 +71,7 @@ try {
 `ImageSaveOptions`是一個類，允許您指定如何將文件另存為圖像。
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 解釋：

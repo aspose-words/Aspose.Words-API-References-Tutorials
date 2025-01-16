@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
  Ναι, μπορείτε να κάνετε λήψη μιας δωρεάν δοκιμής από[εδώ](https://releases.aspose.com/).
 
 ### Πού μπορώ να βρω τεκμηρίωση για το Aspose.Words για .NET;
-Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).
+ Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).
 
 ### Πώς μπορώ να λάβω προσωρινή άδεια χρήσης για το Aspose.Words για .NET;
  Μπορούν να ληφθούν προσωρινές άδειες[εδώ](https://purchase.aspose.com/temporary-license/).

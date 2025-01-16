@@ -61,7 +61,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ### 2.2. lépés: Töltse be a dokumentumot
 
-Töltse be Word dokumentumát az Aspose.Words Document objektumba.
+Töltse be a Word-dokumentumot az Aspose.Words Document objektumba.
 
 ```csharp
 Document doc = new Document(dataDir + "Form fields.docx");

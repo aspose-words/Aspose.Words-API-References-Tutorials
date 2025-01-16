@@ -23,7 +23,7 @@ Voordat we dieper ingaan op de details van documenttabelstijlen en -opmaak, moet
 2. Importeer de bibliotheek: importeer de Aspose.Words-bibliotheek in uw Python-script met behulp van de volgende import-instructie:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. Document laden: laad een bestaand document of maak een nieuw document met behulp van de Aspose.Words API.
@@ -35,7 +35,7 @@ Volg deze stappen om tabellen te maken en in documenten in te voegen met Aspose.
 1.  Een tabel maken: gebruik de`DocumentBuilder` klasse om een nieuwe tabel te maken en het aantal rijen en kolommen op te geven.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,10 +65,10 @@ Volg deze stappen om tabellen te maken en in documenten in te voegen met Aspose.
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
-2. Celopvulling: Voeg opvulling toe aan cellen voor een betere spatie.
+2. Celopvulling: Voeg opvulling toe aan cellen voor verbeterde spaties.
 
     ```python
     for row in table.rows:
@@ -80,32 +80,8 @@ Volg deze stappen om tabellen te maken en in documenten in te voegen met Aspose.
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Stijltabellen met Aspose.Words
-
-Aspose.Words voor Python biedt een scala aan stylingopties om uw tabellen visueel aantrekkelijk te maken:
-
-1. Tabelstijlen: Pas vooraf gedefinieerde tabelstijlen toe om een professionele uitstraling te creëren.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. Achtergrondkleur van cellen: Wijzig de achtergrondkleur van cellen om specifieke gegevens te markeren.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. Lettertypeopmaak: pas het lettertype, de lettergrootte en de kleur aan voor een betere leesbaarheid.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## Cellen samenvoegen en splitsen voor complexe lay-outs
@@ -115,30 +91,14 @@ Bij het maken van complexe tabelindelingen is het vaak nodig om cellen samen te 
 1. Cellen samenvoegen: meerdere cellen samenvoegen tot één grotere cel.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. Cellen splitsen: Splits cellen terug in hun individuele componenten.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## Rij- en kolomhoogtes en -breedtes aanpassen
-
-Pas de rij- en kolomafmetingen nauwkeurig aan voor een evenwichtige tabelindeling:
-
-1. Rijhoogte aanpassen: Pas de rijhoogte aan op basis van de inhoud.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. Kolombreedte aanpassen: Pas de kolombreedte automatisch aan zodat de inhoud past.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## Randen en schaduwen toevoegen aan tabellen
@@ -148,13 +108,13 @@ Verbeter het uiterlijk van de tabel door randen en schaduw toe te voegen:
 1. Randen: Pas randen voor tabellen en cellen aan.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. Schaduw: Pas schaduw toe op cellen voor een visueel aantrekkelijk effect.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## Werken met celinhoud en uitlijning
@@ -171,7 +131,7 @@ Beheer de celinhoud en -uitlijning efficiënt voor een betere leesbaarheid:
 2. Tekstuitlijning: Lijn celtekst uit zoals nodig.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## Omgaan met tabelkopteksten en -voetteksten
@@ -188,26 +148,10 @@ Voeg kop- en voetteksten toe aan uw tabellen voor een betere context:
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## Automatisch aanpassen van de tabelindeling
-
-Zorg ervoor dat de indeling van uw tabel automatisch wordt aangepast op basis van de inhoud:
-
-1. Automatisch aanpassen aan venster: Zorg dat de tabel binnen de paginabreedte past.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. Automatisch formaat van cellen aanpassen: Schakel automatisch formaataanpassing van cellen in om ruimte te creëren voor de inhoud.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## Tabellen exporteren naar verschillende formaten
 
 Zodra uw tabel klaar is, kunt u deze exporteren naar verschillende formaten, zoals PDF of DOCX:
@@ -215,21 +159,15 @@ Zodra uw tabel klaar is, kunt u deze exporteren naar verschillende formaten, zoa
 1. Opslaan als PDF: Sla het document met de tabel op als een PDF-bestand.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. Opslaan als DOCX: Sla het document op als een DOCX-bestand.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## Problemen oplossen en tips voor effectief tabelbeheer
-
-- Als tabellen vervormd lijken, controleer dan of de kolombreedtes of rijhoogtes onjuist zijn.
-- Test de tabelweergave in verschillende formaten om consistentie te garanderen.
-- Bij complexe lay-outs moet u het samenvoegen en splitsen van cellen zorgvuldig plannen.
-
+	
 ## Conclusie
 
 Aspose.Words voor Python biedt een uitgebreide toolkit voor het maken, stylen en formatteren van documenttabellen. Door de stappen in dit artikel te volgen, kunt u tabellen in uw documenten effectief beheren, hun uiterlijk aanpassen en ze exporteren naar verschillende formaten. Benut de kracht van Aspose.Words om uw documentpresentaties te verbeteren en uw lezers duidelijke, visueel aantrekkelijke informatie te bieden.

@@ -280,7 +280,7 @@ doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 Aspose.Words для Java позволяет конвертировать документы в различные форматы, такие как PDF, HTML и другие.
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Продвинутые методы укладки

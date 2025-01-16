@@ -105,7 +105,7 @@ Aspose.Words prend en charge l'ajout d'un filigrane à la fois. Pour ajouter plu
 
 ### Puis-je ajuster la position du filigrane ?
 
-Le`WatermarkLayout`La propriété détermine l'orientation, mais les ajustements de positionnement précis ne sont pas pris en charge directement. Vous devrez peut-être utiliser d'autres techniques pour un placement exact.
+ Le`WatermarkLayout`La propriété détermine l'orientation, mais les ajustements de positionnement précis ne sont pas pris en charge directement. Vous devrez peut-être utiliser d'autres techniques pour un placement exact.
 
 ### Que faire si j’ai besoin d’un filigrane semi-transparent ?
 

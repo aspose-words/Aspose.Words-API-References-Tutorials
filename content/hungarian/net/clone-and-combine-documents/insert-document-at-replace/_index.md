@@ -165,7 +165,7 @@ Igen, módosíthatja a visszahíváskezelőt úgy, hogy több beszúrást is kez
  Teljesen! Ingyenes próbaverziót letölthet a webhelyről[itt](https://releases.aspose.com/).
 
 ### Hogyan kaphatok támogatást az Aspose.Words számára?
-Támogatást kaphat, ha ellátogat a[Aspose.Words fórum](https://forum.aspose.com/c/words/8).
+ Támogatást kaphat, ha ellátogat a[Aspose.Words fórum](https://forum.aspose.com/c/words/8).
 
 ### Megtarthatom a beillesztett dokumentum formázását?
  Igen, a`NodeImporter` osztály lehetővé teszi annak megadását, hogy a formázás hogyan legyen kezelve csomópontok importálásakor egyik dokumentumból a másikba.

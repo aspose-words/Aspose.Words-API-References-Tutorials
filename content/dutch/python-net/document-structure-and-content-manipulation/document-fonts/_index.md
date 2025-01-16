@@ -2,7 +2,7 @@
 title: Begrijpen van lettertypen en tekstopmaak in Word-documenten
 linktitle: Begrijpen van lettertypen en tekstopmaak in Word-documenten
 second_title: Aspose.Words Python-API voor documentbeheer
-description: Ontdek de wereld van lettertypen en tekststijlen in Word-documenten. Leer hoe u de leesbaarheid en visuele aantrekkingskracht kunt verbeteren met Aspose.Words voor Python. Uitgebreide handleiding met stapsgewijze voorbeelden.
+description: Ontdek de wereld van lettertypen en tekststijlen in Word-documenten. Leer hoe u de leesbaarheid en visuele aantrekkingskracht kunt verbeteren met Aspose.Words voor Python. Uitgebreide gids met stapsgewijze voorbeelden.
 type: docs
 weight: 13
 url: /nl/python-net/document-structure-and-content-manipulation/document-fonts/
@@ -54,12 +54,13 @@ U kunt Aspose.Words gebruiken om cursief toe te passen op specifieke tekstgedeel
 ```python
 # Import the required classes
 from aspose.words import Document, Font, Style
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply italic style
 font = run.font
@@ -76,12 +77,13 @@ Om tekst te markeren, kunt u de achtergrondkleur van een run aanpassen. Hier lee
 ```python
 # Import the required classes
 from aspose.words import Document, Color
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply background color
 run.font.highlight_color = Color.YELLOW
@@ -97,15 +99,16 @@ Uitlijning kan worden ingesteld met behulp van stijlen. Hier is een voorbeeld:
 ```python
 # Import the required classes
 from aspose.words import Document, ParagraphAlignment
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set alignment
-paragraph.paragraph_format.alignment = ParagraphAlignment.RIGHT
+paragraph.paragraph_format.alignment = aw.ParagraphAlignment.RIGHT
 
 # Save the modified document
 doc.save("modified_document.docx")
@@ -118,12 +121,13 @@ Het toepassen van de juiste regelafstand verbetert de leesbaarheid. U kunt dit b
 ```python
 # Import the required classes
 from aspose.words import Document, LineSpacingRule
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set line spacing
 paragraph.paragraph_format.line_spacing_rule = LineSpacingRule.MULTIPLE

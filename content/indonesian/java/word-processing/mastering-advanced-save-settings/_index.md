@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /id/java/word-processing/mastering-advanced-save-settings/
 ---
+
 Apakah Anda siap untuk meningkatkan keterampilan pemrosesan dokumen Anda ke tingkat berikutnya? Dalam panduan lengkap ini, kami akan membahas secara mendalam tentang penguasaan pengaturan penyimpanan lanjutan untuk dokumen menggunakan Aspose.Words untuk Java. Baik Anda seorang pengembang berpengalaman atau baru memulai, kami akan memandu Anda melalui seluk-beluk manipulasi dokumen dengan Aspose.Words untuk Java.
 
 ## Perkenalan
@@ -25,13 +26,13 @@ Pelajari cara menentukan format dan orientasi dokumen Anda. Baik itu surat stand
 ```java
 // Atur format dokumen ke DOCX
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
-// Atur orientasi halaman ke Lanskap
+//Atur orientasi halaman ke Lanskap
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## Mengontrol Margin Halaman
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 inci
 pageSetup.setRightMargin(72.0); // 1 inci
 pageSetup.setTopMargin(36.0); // 0,5 inci
 pageSetup.setBottomMargin(36.0); // 0,5 inci
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## Mengelola Header dan Footer
@@ -56,11 +57,11 @@ Header dan footer sering kali berisi informasi penting. Pelajari cara mengelola 
 ```java
 // Tambahkan header ke halaman pertama
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## Menanamkan Font untuk Tampilan Lintas Platform
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## Melindungi Dokumen Anda
@@ -85,7 +86,7 @@ Keamanan itu penting, terutama saat menangani dokumen sensitif. Pelajari cara me
 // Lindungi dokumen dengan kata sandi
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## Menyesuaikan Tanda Air
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## Mengoptimalkan Ukuran Dokumen
@@ -111,7 +112,7 @@ Berkas dokumen berukuran besar bisa jadi sulit diatur. Temukan teknik untuk meng
 // Optimalkan ukuran dokumen
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## Mengekspor ke Format Berbeda
@@ -121,7 +122,7 @@ Terkadang, Anda memerlukan dokumen dalam berbagai format. Aspose.Words untuk Jav
 ```java
 // Ekspor ke PDF
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## Mengotomatiskan Pembuatan Dokumen
@@ -133,7 +134,7 @@ Otomatisasi merupakan pengubah permainan untuk pembuatan dokumen. Pelajari cara 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## Bekerja dengan Metadata Dokumen
@@ -143,9 +144,8 @@ Metadata berisi informasi berharga tentang suatu dokumen. Kita akan membahas car
 ```java
 // Akses dan modifikasi metadata dokumen
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## Menangani Versi Dokumen
@@ -153,18 +153,22 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 Pembagian versi dokumen sangat penting dalam lingkungan kolaboratif. Cari tahu cara mengelola berbagai versi dokumen Anda secara efektif.
 
 ```java
-// Bandingkan versi dokumen
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+// Membandingkan dokumen dengan revisi akan menimbulkan pengecualian.
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## Perbandingan Dokumen Lanjutan
+
+Bandingkan dokumen dengan tepat menggunakan teknik canggih yang disediakan oleh Aspose.Words untuk Java.
 
 ```java
 // Perbandingan dokumen tingkat lanjut
@@ -217,7 +221,7 @@ Aspose.Words untuk Java mendukung ekspor dokumen ke berbagai format, termasuk PD
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Apakah Aspose.Words untuk Java cocok untuk pembuatan dokumen batch?
@@ -228,7 +232,7 @@ Ya, Aspose.Words untuk Java sangat cocok untuk pembuatan dokumen batch, membuatn
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### Bagaimana cara membandingkan dua dokumen Word untuk mengetahui perbedaannya?

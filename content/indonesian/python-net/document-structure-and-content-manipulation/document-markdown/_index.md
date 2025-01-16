@@ -77,8 +77,8 @@ Aspose.Words menawarkan kontrol yang luas atas tata letak dan pemformatan halama
 
 ```python
 section = doc.sections[0]
-section.page_setup.left_margin = aw.convert_util.inch_to_point(1)
-section.page_setup.right_margin = aw.convert_util.inch_to_point(1)
+section.page_setup.left_margin = aw.ConvertUtil.inch_to_point(1)
+section.page_setup.right_margin = aw.ConvertUtil.inch_to_point(1)
 ```
 
 ## Menyimpan Dokumen

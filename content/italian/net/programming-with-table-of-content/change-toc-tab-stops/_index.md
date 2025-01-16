@@ -88,7 +88,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 
 È come regolare i mobili del tuo soggiorno finché non ti sembrano perfetti. Stiamo modificando quei fermi di tabulazione per renderli perfetti.
 
-## Passaggio 4: Salvare il documento modificato
+## Passaggio 4: salvare il documento modificato
 
 Perché? Per assicurarti che tutto il tuo duro lavoro venga salvato e possa essere visualizzato o condiviso.
 

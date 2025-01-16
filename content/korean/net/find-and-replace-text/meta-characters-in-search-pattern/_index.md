@@ -15,7 +15,7 @@ Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 처리하�
 
 코드로 넘어가기 전에 모든 것이 설정되어 있는지 확인해 보겠습니다.
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET이 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Aspose.Words for .NET이 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 기타 C# 개발 환경.
 3. C#에 대한 기본 지식: C# 프로그래밍의 기본을 이해하는 것이 유익합니다.
 
@@ -39,7 +39,7 @@ using Aspose.Words.Replacing;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서를 저장하려는 실제 경로를 선택하세요.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서를 저장하려는 실제 경로를 선택하세요.
 
 ## 2단계: 새 문서 만들기
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## 4단계: 문단 나누기 메타 문자를 사용하여 텍스트 바꾸기
 
- 메타 문자는 문단, 탭, 줄 바꿈과 같은 다양한 요소를 나타낼 수 있습니다. 여기서는 다음을 사용합니다.`&p` 문단 구분을 나타냅니다.
+메타 문자는 문단, 탭, 줄 바꿈과 같은 다양한 요소를 나타낼 수 있습니다. 여기서는 다음을 사용합니다.`&p` 문단 구분을 나타냅니다.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");

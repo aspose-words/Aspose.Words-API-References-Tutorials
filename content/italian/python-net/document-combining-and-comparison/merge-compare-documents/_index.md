@@ -49,7 +49,7 @@ doc1.append_document(doc2, DocumentImportFormatMode.KEEP_SOURCE_FORMATTING)
 
 ## Salvataggio del documento unito
 
-Salvare il documento unito in un nuovo file:
+Salva il documento unito in un nuovo file:
 
 ```python
 doc1.save("merged_document.docx")
@@ -70,14 +70,6 @@ Confronta il documento sorgente con il documento modificato:
 
 ```python
 comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
-```
-
-## Evidenziare le differenze
-
-Evidenzia le differenze tra i documenti:
-
-```python
-comparison.highlight_changes()
 ```
 
 ## Salvataggio del risultato del confronto

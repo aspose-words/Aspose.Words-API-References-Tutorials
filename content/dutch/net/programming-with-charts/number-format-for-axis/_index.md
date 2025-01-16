@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-De`InsertChart` Met deze methode wordt een grafiek van het opgegeven type (in dit geval Kolom) en de opgegeven afmetingen in het document ingevoegd.
+ De`InsertChart` Met deze methode wordt een grafiek van het opgegeven type (in dit geval Kolom) en de opgegeven afmetingen in het document ingevoegd.
 
 ## Stap 3: De grafiekserie aanpassen
 
@@ -74,7 +74,7 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
 ```
 
- Hier voegen we een nieuwe serie toe genaamd "Aspose Series 1" met vijf datapunten. De`Series.Clear` Deze methode zorgt ervoor dat alle reeds bestaande gegevens worden verwijderd voordat onze nieuwe reeks wordt toegevoegd.
+ Hier voegen we een nieuwe serie toe genaamd "Aspose Series 1" met vijf datapunten.`Series.Clear` Deze methode zorgt ervoor dat alle reeds bestaande gegevens worden verwijderd voordat onze nieuwe reeks wordt toegevoegd.
 
 ## Stap 4: De asnummers opmaken
 
@@ -86,7 +86,7 @@ Laten we tot slot de getallen op de Y-as formatteren om ze leesbaarder te maken.
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-De`FormatCode` eigenschap kunt u een aangepaste notatie voor de getallen op de as instellen. In dit voorbeeld,`#,##0`zorgt ervoor dat grote getallen worden weergegeven met komma's in plaats van duizenden.
+ De`FormatCode` eigenschap kunt u een aangepaste notatie voor de getallen op de as instellen. In dit voorbeeld,`#,##0`zorgt ervoor dat grote getallen worden weergegeven met komma's in plaats van duizenden.
 
 ## Stap 5: Het document opslaan
 

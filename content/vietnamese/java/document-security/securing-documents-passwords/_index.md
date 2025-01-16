@@ -17,7 +17,7 @@ Trong thế giới kỹ thuật số ngày nay, bảo mật dữ liệu là tố
 
 ## Thiết lập Aspose.Words cho Java
 
- Trước khi chúng ta đi sâu vào việc bảo mật tài liệu, hãy đảm bảo rằng bạn đã thiết lập Aspose.Words for Java trong môi trường Java của mình. Nếu bạn chưa thực hiện, bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/java/).
+Trước khi chúng ta đi sâu vào việc bảo mật tài liệu, hãy đảm bảo rằng bạn đã thiết lập Aspose.Words for Java trong môi trường Java của mình. Nếu bạn chưa thực hiện, bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/java/).
 
 ## Bảo mật tài liệu: từng bước
 

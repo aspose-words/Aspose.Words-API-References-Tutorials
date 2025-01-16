@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Bước 2: Truy cập Thuộc tính NodeType
 
-Các`NodeType` thuộc tính là một tính năng cơ bản trong Aspose.Words. Nó cho phép bạn xác định loại nút bạn đang xử lý. Để truy cập thuộc tính này, chỉ cần sử dụng mã sau:
+ Các`NodeType` thuộc tính là một tính năng cơ bản trong Aspose.Words. Nó cho phép bạn xác định loại nút bạn đang xử lý. Để truy cập thuộc tính này, chỉ cần sử dụng mã sau:
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -63,7 +63,7 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 ###  Cái gì là`NodeType` property in Aspose.Words?
 
-Các`NodeType` thuộc tính xác định loại nút trong tài liệu, chẳng hạn như Tài liệu, Phần, Đoạn văn, Chuỗi hoặc Bảng.
+ Các`NodeType` thuộc tính xác định loại nút trong tài liệu, chẳng hạn như Tài liệu, Phần, Đoạn văn, Chuỗi hoặc Bảng.
 
 ###  Làm thế nào để tôi kiểm tra`NodeType` of a node?
 

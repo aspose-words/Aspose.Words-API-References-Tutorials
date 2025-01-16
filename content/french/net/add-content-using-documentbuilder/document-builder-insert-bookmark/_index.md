@@ -71,7 +71,7 @@ Une fois le marque-page lancé, nous pouvons y ajouter le contenu que nous souha
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-Le`Writeln` la méthode ajoute un nouveau paragraphe avec le texte spécifié au document.
+ Le`Writeln` la méthode ajoute un nouveau paragraphe avec le texte spécifié au document.
 
 ## Étape 5 : Terminer le signet
 
@@ -81,7 +81,7 @@ Après avoir ajouté notre contenu, nous devons fermer le signet. Cela indique �
 builder.EndBookmark("FineBookmark");
 ```
 
-Le`EndBookmark` La méthode complète le signet que nous avons commencé plus tôt.
+ Le`EndBookmark` La méthode complète le signet que nous avons commencé plus tôt.
 
 ## Étape 6 : Enregistrer le document
 

@@ -117,7 +117,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
  예, 문서를 저장할 때마다 접두사를 사용자 정의할 수 있습니다.`CssClassNamePrefix` 재산.
 
 ### 이 방법은 인라인 CSS를 지원합니까?
-그만큼`CssClassNamePrefix`속성은 외부 CSS와 함께 작동합니다. 인라인 CSS의 경우 다른 접근 방식이 필요합니다.
+ 그만큼`CssClassNamePrefix`속성은 외부 CSS와 함께 작동합니다. 인라인 CSS의 경우 다른 접근 방식이 필요합니다.
 
 ### 다른 HTML 저장 옵션을 어떻게 포함할 수 있나요?
  다양한 속성을 구성할 수 있습니다.`HtmlSaveOptions` HTML 출력을 사용자 정의하려면 다음을 확인하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은.

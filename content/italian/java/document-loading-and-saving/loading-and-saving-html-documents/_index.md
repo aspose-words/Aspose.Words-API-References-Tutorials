@@ -1,6 +1,6 @@
 ---
-title: Caricamento e salvataggio di documenti HTML con Aspose.Words per Java
-linktitle: Caricamento e salvataggio di documenti HTML con
+title: Caricamento e salvataggio di documenti HTML
+linktitle: Caricamento e salvataggio di documenti HTML
 second_title: API di elaborazione dei documenti Java Aspose.Words
 description: Scopri come caricare e salvare documenti HTML in Java usando Aspose.Words per Java. Guida passo passo con esempi di codice per un'integrazione fluida dei documenti.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Ora che abbiamo caricato l'HTML in un`Document`, possiamo salvarlo come documento Word. Salviamolo in formato DOCX:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Questo codice salva il`Document` come file DOCX, un formato comune per i documenti Word.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Conclusione
@@ -95,4 +95,4 @@ Assolutamente! Aspose.Words è una soluzione robusta utilizzata dalle aziende di
 
 ### Dove posso trovare ulteriore documentazione ed esempi per Aspose.Words per Java?
 
- È possibile trovare documentazione dettagliata, esempi di codice e tutorial sul sito web della documentazione di Aspose.Words per Java:[Documentazione di Aspose.Words per Java](https://reference.aspose.com/words/java/).
+È possibile trovare documentazione dettagliata, esempi di codice e tutorial sul sito web della documentazione di Aspose.Words per Java:[Documentazione di Aspose.Words per Java](https://reference.aspose.com/words/java/).

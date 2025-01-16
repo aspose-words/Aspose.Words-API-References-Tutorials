@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Ο`DocumentBuilder` είναι μια βοηθητική κλάση που απλοποιεί τη διαδικασία δημιουργίας εγγράφων.
+ Ο`DocumentBuilder` είναι μια βοηθητική κλάση που απλοποιεί τη διαδικασία δημιουργίας εγγράφων.
 
 ## Βήμα 3: Ξεκινήστε τον πίνακα
 
@@ -113,7 +113,7 @@ builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
 ```
 
-## Βήμα 8: Εισαγάγετε τις γραμμές σώματος
+## Βήμα 8: Εισαγάγετε γραμμές σώματος
 
 Εισαγάγετε τις γραμμές του σώματος με περιεχόμενο:
 

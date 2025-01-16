@@ -2,7 +2,7 @@
 title: Ta bort och förfina innehåll i Word-dokument
 linktitle: Ta bort och förfina innehåll i Word-dokument
 second_title: Aspose.Words Python Document Management API
-description: Lär dig hur du effektivt tar bort och förfinar innehåll i Word-dokument med Aspose.Words för Python. Steg-för-steg guide med exempel på källkod.
+description: Lär dig hur du effektivt tar bort och förfinar innehåll i Word-dokument med Aspose.Words för Python. Steg-för-steg-guide med exempel på källkod.
 type: docs
 weight: 13
 url: /sv/python-net/content-extraction-and-manipulation/remove-content-documents/
@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## Ersätter text
-
-Ibland kanske du vill ersätta viss text med nytt innehåll. Här är ett exempel på hur man gör:
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## Ta bort bilder
 
 Om du behöver ta bort bilder från dokumentet kan du använda ett liknande tillvägagångssätt. Identifiera först bilderna och ta sedan bort dem:
@@ -92,22 +79,6 @@ Att ta bort hela avsnitt från ett dokument kan göras så här:
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## Hitta och ersätt med Regex
-
-Reguljära uttryck erbjuder ett kraftfullt sätt att hitta och ersätta innehåll:
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## Extrahera specifikt innehåll

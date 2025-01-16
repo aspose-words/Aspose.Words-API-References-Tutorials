@@ -77,7 +77,7 @@ options.setTarget(ComparisonTargetType.NEW);
 docA.compare(docB, "user", new Date(), options);
 ```
 
-## Jämförelsegranularitet
+## Jämförelsens granularitet
 
 Du kan kontrollera granulariteten i jämförelsen, från teckennivå till ordnivå.
 

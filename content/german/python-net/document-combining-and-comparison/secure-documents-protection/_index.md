@@ -38,14 +38,6 @@ Sie können Ihrem Dokument ein Kennwort hinzufügen, um den Zugriff einzuschrän
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## Einschränken der Bearbeitungsberechtigungen
-
-Um zu steuern, wer Änderungen am Dokument vornehmen kann, können Sie Bearbeitungsberechtigungen festlegen:
-
-```python
-protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
-protection.set_editing_groups(["Editors"])
-```
 
 ## Dokumentinhalte verschlüsseln
 
@@ -60,8 +52,10 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 Fügen Sie eine digitale Signatur hinzu, um die Authentizität des Dokuments sicherzustellen:
 
 ```python
-digital_signature = aw.digital_signatures.DigitalSignature(doc)
-digital_signature.sign("certificate.pfx", "signature_password")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
+			
+aw.digitalsignatures.DigitalSignatureUtil.sign(dst_document_path, dst_document_path, certificate_holder, sign_options)
 ```
 
 ## Wasserzeichen für mehr Sicherheit
@@ -71,15 +65,6 @@ Wasserzeichen können eine unbefugte Weitergabe verhindern:
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
-```
-
-## Redigieren vertraulicher Informationen
-
-So entfernen Sie vertrauliche Informationen dauerhaft:
-
-```python
-redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
-doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
 ## Abschluss

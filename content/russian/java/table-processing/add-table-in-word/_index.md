@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Шаг 6: Создайте таблицу и добавьте строки
 
-Создать новый`Table` объект и укажите количество строк и столбцов.
+ Создать новый`Table` объект и укажите количество строк и столбцов.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Шаг 8: Сохраните документ.
 
- Сохраните документ Word в нужном месте с помощью`save()` метод.
+Сохраните документ Word в нужном месте с помощью`save()` метод.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Шаг 9: Заполните код
-
-Вот полный код для добавления таблицы в Word с помощью Aspose.Words для Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Шаг 5: Создайте новый документ Word.
-        Document doc = new Document();
-
-        // Шаг 6: Создайте таблицу и добавьте строки
-        Table table = new Table(doc);
-        int rowCount = 5; // Количество строк в таблице
-        int columnCount = 3; // Количество столбцов в таблице
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Шаг 7: Добавьте таблицу в документ
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Шаг 8: Сохраните документ.
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Заключение

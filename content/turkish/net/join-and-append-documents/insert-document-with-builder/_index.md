@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Adım 3: Bir DocumentBuilder Nesnesi Oluşturma
 
-The`DocumentBuilder` class, Aspose.Words kütüphanesinde güçlü bir araçtır. Belgede gezinmemizi ve değişiklik yapmamızı sağlar.
+ The`DocumentBuilder` class, Aspose.Words kütüphanesinde güçlü bir araçtır. Belgede gezinmemizi ve değişiklik yapmamızı sağlar.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);

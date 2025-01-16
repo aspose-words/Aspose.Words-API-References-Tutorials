@@ -116,7 +116,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
 
 Ez a módszer lehetővé teszi a tartalom kinyerését két megadott csomópont között, legyenek azok bekezdések, táblázatok vagy bármely más blokkszintű elem. Különféle forgatókönyveket kezel, beleértve a soron belüli jelölőket, mezőket és könyvjelzőket.
 
-## Segítő 3. módszer: Új dokumentum létrehozása
+## Segítő 3. módszer: Új dokumentum generálása
 
 ```java
 public static Document generateDocument(Document srcDoc, ArrayList<Node> nodes) throws Exception {

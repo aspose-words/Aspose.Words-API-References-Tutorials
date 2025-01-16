@@ -355,4 +355,4 @@ Có, bạn có thể sử dụng biểu thức chính quy để thay thế văn 
 
 ### Tùy chọn UseLegacyOrder có tác dụng gì?
 
-Các`UseLegacyOrder` tùy chọn trong`FindReplaceOptions` cho phép bạn sử dụng thứ tự cũ khi thực hiện các thao tác tìm và thay thế. Điều này có thể hữu ích trong một số trường hợp nhất định khi mong muốn hành vi thứ tự cũ.
+ Các`UseLegacyOrder` tùy chọn trong`FindReplaceOptions` cho phép bạn sử dụng thứ tự cũ khi thực hiện các thao tác tìm và thay thế. Điều này có thể hữu ích trong một số trường hợp nhất định khi mong muốn hành vi thứ tự cũ.

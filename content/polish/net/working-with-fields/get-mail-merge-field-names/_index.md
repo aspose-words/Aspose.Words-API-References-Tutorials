@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
-Ten`Aspose.Words` przestrzeń nazw zapewnia dostęp do wszystkich klas i metod potrzebnych do manipulowania dokumentami programu Word, podczas gdy`System` służy do podstawowej funkcjonalności, np. wyprowadzania danych na konsolę.
+ Ten`Aspose.Words` przestrzeń nazw zapewnia dostęp do wszystkich klas i metod potrzebnych do manipulowania dokumentami programu Word, podczas gdy`System` służy do podstawowej funkcjonalności, np. wyprowadzania danych na konsolę.
 
 Przedstawimy proces wyodrębniania nazw pól korespondencji seryjnej w przejrzystym przewodniku krok po kroku.
 
@@ -73,7 +73,7 @@ Nagłówek: Wyodrębnij nazwy pól korespondencji seryjnej
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
-Ten`GetFieldNames()`Metoda zwraca tablicę ciągów, z których każdy reprezentuje nazwę pola korespondencji seryjnej znalezioną w dokumencie. Są to symbole zastępcze, które zobaczysz w dokumencie Word.
+ Ten`GetFieldNames()`Metoda zwraca tablicę ciągów, z których każdy reprezentuje nazwę pola korespondencji seryjnej znalezioną w dokumencie. Są to symbole zastępcze, które zobaczysz w dokumencie Word.
 
 ## Krok 4: Wyświetl liczbę pól scalania
 

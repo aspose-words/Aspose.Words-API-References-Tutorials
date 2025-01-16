@@ -252,7 +252,7 @@ doc.save("modified-document.docx");
 
 在此示例中，我们使用正则表达式模式来查找和替换文档中的文本。
 
-## 识别并替换替换模式
+## 识别和替换模式中的替换
 
 您可以使用 Aspose.Words for Java 识别替换模式并在其中进行替换。
 

@@ -24,9 +24,9 @@ I tutorial si concentrano sull'implementazione pratica, così puoi imparare a us
 I tutorial forniscono una solida base per la creazione di soluzioni di elaborazione dei documenti robuste e scalabili. Questo perché i tutorial coprono i concetti essenziali dell'elaborazione dei documenti, come l'elaborazione delle tabelle, l'unione dei documenti e la filigrana.
 ## Tutorial sull'elaborazione dei documenti
 ### [Elaborazione testi](./word-processing/) 
-Impara l'elaborazione di testi con Aspose.Words per Java. Crea, modifica e manipola i documenti in modo programmatico. Migliora le tue competenze di elaborazione dei documenti oggi stesso.
+Impara l'elaborazione di testi con Aspose.Words per Java. Crea, modifica e manipola i documenti in modo programmatico. Migliora le tue capacità di elaborazione dei documenti oggi stesso.
 ### [Elaborazione della tabella](./table-processing/)
-Scopri la potente API di elaborazione delle tabelle per sviluppatori Java che utilizzano Aspose.Word per Java. Crea, manipola e formatta tabelle nei documenti Word. Migliora le tue applicazioni di elaborazione dei documenti oggi stesso.
+Scopri la potente API di elaborazione tabelle per sviluppatori Java che utilizzano Aspose.Word per Java. Crea, manipola e formatta tabelle nei documenti Word. Migliora le tue applicazioni di elaborazione documenti oggi stesso.
 ### [Stile del documento](./document-styling/)
 Padroneggia lo stile dei documenti con i tutorial di Aspose.Words per Java. Impara tecniche di formattazione avanzate per documenti visivamente accattivanti ed efficienti. 
 ### [Unione di documenti](./document-merging/)

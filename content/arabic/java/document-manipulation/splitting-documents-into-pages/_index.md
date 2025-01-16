@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <ملخص>
-/// يحصل على مستند نطاق الصفحات.
+//يحصل على مستند نطاق الصفحات.
 /// </ملخص>
-//<param name="startIndex">
+/// <param name="startIndex">
 /// 1-فهرس يعتمد على صفحة البداية.
 /// </param>
 /// <param name="endIndex">

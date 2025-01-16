@@ -54,7 +54,7 @@ doc.save("output.html", saveOptions);
 
 ```java
 // Código Java para salvar um documento como imagens
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Defina a resolução (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

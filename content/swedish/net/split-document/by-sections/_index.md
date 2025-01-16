@@ -86,7 +86,7 @@ Slutligen sparar vi varje nytt dokument med ett unikt namn. Detta steg säkerst�
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-De`Save` metod sparar det nya dokumentet i den angivna katalogen med ett unikt namn baserat på sektionsindex.
+ De`Save` metod sparar det nya dokumentet i den angivna katalogen med ett unikt namn baserat på sektionsindex.
 
 ## Slutsats
 

@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-IL`DocumentBuilder` è una classe helper che semplifica il processo di creazione dei documenti.
+ IL`DocumentBuilder` è una classe helper che semplifica il processo di creazione dei documenti.
 
 ## Passaggio 3: avviare la tabella
 
@@ -168,7 +168,7 @@ Aspose.Words per .NET è una potente libreria per creare, modificare e convertir
 Sì, puoi applicare formattazioni diverse, compresi i colori, a righe o celle diverse.
 
 ### Aspose.Words per .NET è gratuito?
- Aspose.Words per .NET è una libreria a pagamento, ma puoi ottenerne una[prova gratuita](https://releases.aspose.com/).
+ Aspose.Words per .NET è una libreria a pagamento, ma è possibile ottenerne una[prova gratuita](https://releases.aspose.com/).
 
 ### Come posso ottenere supporto per Aspose.Words per .NET?
  Puoi ottenere supporto da[Forum della comunità Aspose](https://forum.aspose.com/c/words/8).

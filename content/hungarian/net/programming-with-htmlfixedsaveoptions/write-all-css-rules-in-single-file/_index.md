@@ -89,4 +89,4 @@ Egyetlen CSS-fájl használata leegyszerűsíti a stílusok kezelését és karb
 Az Aspose.Words for .NET különféle formátumokat támogat, beleértve a PDF, TXT és képformátumokat, például JPEG és PNG.
 
 ### Hol találok további forrásokat az Aspose.Words for .NET webhelyen?
- Nézze meg a[dokumentáció](https://reference.aspose.com/words/net/)átfogó útmutatókért és API-referenciákért.
+ Nézze meg a[dokumentáció](https://reference.aspose.com/words/net/) átfogó útmutatókért és API-referenciákért.

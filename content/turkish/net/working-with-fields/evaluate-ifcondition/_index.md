@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-The`EvaluateCondition` yöntem bir döndürür`FieldIfComparisonResult` koşul değerlendirmesinin sonucunu temsil eden enum. Bu enum şu değerlere sahip olabilir:`True`, `False` , veya`Unknown`.
+ The`EvaluateCondition` yöntem bir döndürür`FieldIfComparisonResult` koşul değerlendirmesinin sonucunu temsil eden enum. Bu enum şu değerlere sahip olabilir:`True`, `False` , veya`Unknown`.
 
 ## Adım 4: Sonucu Göster
 
@@ -93,7 +93,7 @@ IF alanı, belgenize koşullu mantık eklemenize olanak tanıyan bir Word alanı
  Bir IF alanını kullanarak ekleyebilirsiniz.`InsertField` yöntemi`DocumentBuilder` Değerlendirmek istediğiniz koşulu belirten sınıf.
 
 ###  Ne yapar?`EvaluateCondition` method do?
-The`EvaluateCondition` yöntemi, IF alanında belirtilen koşulu değerlendirir ve koşulun doğru mu yoksa yanlış mı olduğunu gösteren sonucu döndürür.
+ The`EvaluateCondition` yöntemi, IF alanında belirtilen koşulu değerlendirir ve koşulun doğru mu yoksa yanlış mı olduğunu gösteren sonucu döndürür.
 
 ### IF alanıyla karmaşık koşullar kullanabilir miyim?
 Evet, ihtiyacınıza göre farklı ifadeler ve karşılaştırmalar belirleyerek IF alanıyla karmaşık koşullar kullanabilirsiniz.

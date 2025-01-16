@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 Most, hogy a dokumentumunk betöltődött, folytassuk a titkosítás alkalmazását. Az Aspose.Words for Java egyszerű módot kínál a dokumentumtitkosítás beállítására:
 
 ```java
-// Állítson be jelszót a dokumentum megnyitásához
-doc.getWriteProtection().setPassword("yourPassword");
-
-// Titkosítási algoritmus beállítása (opcionális)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// Mentse el a titkosított dokumentumot
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. Specifikus dokumentumelemek védelme
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 Néha előfordulhat, hogy csak a dokumentum bizonyos részeit szeretné védeni, például fejléceket, lábléceket vagy bizonyos bekezdéseket. Az Aspose.Words lehetővé teszi a dokumentumvédelem ilyen szintű részletességének elérését:
 
 ```java
-// Egy adott szakasz védelme (csak olvasható védelem)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// Adott bekezdés védelme (Csak az űrlapmezők szerkesztése)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// Mentse el a védett dokumentumot
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+// szerkeszthető tartományok lehetővé teszik, hogy a védett dokumentumok egyes részeit nyitva hagyjuk szerkesztésre.
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. Digitális aláírások alkalmazása
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 Ha digitális aláírást ad a dokumentumhoz, biztosíthatja annak hitelességét és integritását. A következőképpen alkalmazhat digitális aláírást az Aspose.Words for Java használatával:
 
 ```java
-// Töltse be a tanúsítványfájlt
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// Írja alá a dokumentumot a tanúsítvánnyal
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// Hozzon létre egy megjegyzést, dátumot és visszafejtési jelszót, amelyet az új digitális aláírásunkkal alkalmazunk.
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// Mentse el az aláírt dokumentumot
-doc.save("path/to/signed/document.docx");
+// Állítson be egy helyi rendszerfájlnevet az aláíratlan bemeneti dokumentumhoz, és egy kimeneti fájlnevet az új, digitálisan aláírt másolathoz.
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. Vízjelekkel ellátva a dokumentumokat
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. Érzékeny információk szerkesztése
 
-Dokumentumok megosztásakor érdemes lehet véglegesen eltávolítani a bizalmas információkat, hogy azok ne kerüljenek rossz kezekbe. Az Aspose.Words for Java lehetővé teszi az érzékeny tartalmak törlését:
-
-```java
-// Érzékeny információk keresése és törlése
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// Alkalmazzon módosításokat
-doc.redact(options);
-
-// Mentse el a szerkesztett dokumentumot
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. Biztonságos dokumentumok konvertálása más formátumokba
+## 10. Biztonságos dokumentumok konvertálása más formátumokba
 
 Az Aspose.Words for Java lehetővé teszi a védett dokumentumok különböző formátumokba, például PDF- vagy HTML-formátumba konvertálását is:
 
 ```java
-// Töltse be a védett dokumentumot
+//Töltse be a védett dokumentumot
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // Konvertálás PDF-be
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // Konvertálás HTML-be
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. A dokumentumbiztonság legjobb gyakorlatai
-
-A megbízható dokumentumbiztonság érdekében kövesse az alábbi bevált módszereket:
-
-- Rendszeresen frissítse biztonsági intézkedéseit, hogy megelőzze a potenciális fenyegetéseket.
-- Használjon erős jelszavakat és titkosítási algoritmusokat.
-- Korlátozza a hozzáférést a bizalmas dokumentumokhoz a szükséges ismeretek alapján.
-- Tanítsa meg az alkalmazottakat a biztonsági kockázatok felismerésére és reagálására.
-
-## 13. Dokumentumbiztonság tesztelése
-
-biztonsági intézkedések alkalmazása után alaposan tesztelje le dokumentumait, hogy megbizonyosodjon arról, hogy a különféle forgatókönyvek esetén is biztonságosak maradnak. Próbálja meg megkerülni a biztonsági ellenőrzéseket a lehetséges sebezhetőségek azonosítása érdekében.
-
-## 14. Következtetés
+## Következtetés
 
 Ebben a lépésenkénti útmutatóban megvizsgáltuk a dokumentumbiztonság fontosságát, és azt, hogy az Aspose.Words for Java hogyan védheti meg dokumentumait az illetéktelen hozzáféréstől. A könyvtár funkcióinak, például a jelszavas védelemnek, a titkosításnak, a digitális aláírásnak, a vízjelnek és a szerkesztésnek a kihasználásával gondoskodhat arról, hogy dokumentumai biztonságban maradjanak.
 
 ## GYIK
 
 ### Használhatom az Aspose.Words for Java-t kereskedelmi projektekben?
-   Igen, az Aspose.Words for Java használható kereskedelmi projektekben a fejlesztőnkénti licencelési modell szerint.
+Igen, az Aspose.Words for Java használható kereskedelmi projektekben a fejlesztőnkénti licencelési modell szerint.
 
 ### Az Aspose.Words a Word mellett más dokumentumformátumokat is támogat?
-   Igen, az Aspose.Words formátumok széles skáláját támogatja, beleértve a PDF, HTML, EPUB stb.
+Igen, az Aspose.Words formátumok széles skáláját támogatja, beleértve a PDF, HTML, EPUB stb.
 
 ### Hozzáadható több digitális aláírás egy dokumentumhoz?
-   Igen, az Aspose.Words lehetővé teszi több digitális aláírás hozzáadását egy dokumentumhoz.
+Igen, az Aspose.Words lehetővé teszi több digitális aláírás hozzáadását egy dokumentumhoz.
 
 ### Az Aspose.Words támogatja a dokumentumok jelszavának helyreállítását?
-   Nem, az Aspose.Words nem biztosít jelszó-helyreállítási funkciókat. Győződjön meg arról, hogy jelszavait biztonságban tartja.
+Nem, az Aspose.Words nem biztosít jelszó-helyreállítási funkciókat. Győződjön meg arról, hogy jelszavait biztonságban tartja.
 
 ### Testreszabhatom a vízjelek megjelenését?
-   Igen, teljesen testreszabhatja a vízjelek megjelenését, beleértve a szöveget, a betűtípust, a színt, a méretet és az elforgatást.
+Igen, teljesen testreszabhatja a vízjelek megjelenését, beleértve a szöveget, a betűtípust, a színt, a méretet és az elforgatást.

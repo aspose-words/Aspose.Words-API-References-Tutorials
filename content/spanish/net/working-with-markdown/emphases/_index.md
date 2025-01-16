@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-El`dataDir` La variable es un marcador de posición para el directorio donde guardará su archivo Markdown. Asegúrese de reemplazar "DIRECTORIO DE SU DOCUMENTO" con la ruta real.
+ El`dataDir` La variable es un marcador de posición para el directorio donde guardará su archivo Markdown. Asegúrese de reemplazar "DIRECTORIO DE SU DOCUMENTO" con la ruta real.
 
 ## Paso 2: Escribir texto regular
 

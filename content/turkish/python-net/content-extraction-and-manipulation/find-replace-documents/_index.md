@@ -18,7 +18,7 @@ Gelişmiş tekniklere dalmadan önce, aşağıdaki ön koşulların mevcut oldu�
 
 1.  Python Kurulumu: Python'un sisteminize kurulu olduğundan emin olun. Python'u şu adresten indirebilirsiniz:[Burada](https://www.python.org/downloads/).
 
-2. Python için Aspose.Words: Python için Aspose.Words'ün yüklü olması gerekir. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/).
+2.  Python için Aspose.Words: Python için Aspose.Words'ün yüklü olması gerekir. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/).
 
 3. Belge Hazırlığı: Üzerinde bul ve değiştir işlemlerini yapacağınız bir Word belgesi hazır bulundurun.
 
@@ -118,4 +118,4 @@ Evet, gelişmiş bul ve değiştir işlemlerini gerçekleştirmek için joker ka
 
 ### Yapılan değişiklikleri takip ederken metni değiştirebilir miyim?
 
- Evet, değişiklikleri kullanarak takip edebilirsiniz.`revision` Aspose.Words'ün özelliği. Belgede yapılan tüm değişiklikleri takip etmenizi sağlar.
+ Evet, değişiklikleri kullanarak takip edebilirsiniz.`revision`Aspose.Words'ün özelliği. Belgede yapılan tüm değişiklikleri takip etmenizi sağlar.

@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-In deze stap laden we het Word-document vanuit de opgegeven directory. Zorg ervoor dat u`"YOUR DOCUMENT DIRECTORY"`met het werkelijke pad waar uw document zich bevindt.
+In deze stap laden we het Word-document vanuit de opgegeven directory. Zorg ervoor dat u`"YOUR DOCUMENT DIRECTORY"` met het werkelijke pad waar uw document zich bevindt.
 
 ## Stap 2: Downsamplingopties configureren
 

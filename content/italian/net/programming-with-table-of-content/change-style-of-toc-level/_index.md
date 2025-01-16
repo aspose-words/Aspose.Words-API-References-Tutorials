@@ -74,7 +74,7 @@ Aspose.Words per .NET è una libreria di classi per creare, modificare e convert
 Sì, puoi modificare vari stili all'interno del sommario accedendo a diversi livelli e proprietà di stile.
 
 ### Aspose.Words per .NET è gratuito?
- Aspose.Words per .NET è una libreria a pagamento, ma puoi ottenerne una[prova gratuita](https://releases.aspose.com/) o un[licenza temporanea](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words per .NET è una libreria a pagamento, ma è possibile ottenerne una[prova gratuita](https://releases.aspose.com/) o un[licenza temporanea](https://purchase.aspose.com/temporary-license/).
 
 ### Devo installare Microsoft Word per utilizzare Aspose.Words per .NET?
 No, Aspose.Words per .NET non richiede che Microsoft Word sia installato sul computer.

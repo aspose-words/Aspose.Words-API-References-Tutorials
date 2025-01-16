@@ -16,7 +16,7 @@ Aspose.Words for Java는 개발자가 DOCX, DOC, RTF 등 다양한 문서 형식
 ## 스타일 및 글꼴 적용: 기본 사항
 
 ### 시작하기
- 시작하려면 Java 개발 환경을 설정하고 Aspose.Words for Java 라이브러리를 다운로드해야 합니다. 다운로드 링크를 찾을 수 있습니다.[여기](https://releases.aspose.com/words/java/)프로젝트에 라이브러리를 포함해야 합니다.
+시작하려면 Java 개발 환경을 설정하고 Aspose.Words for Java 라이브러리를 다운로드해야 합니다. 다운로드 링크를 찾을 수 있습니다.[여기](https://releases.aspose.com/words/java/)프로젝트에 라이브러리를 포함해야 합니다.
 
 ### 문서 만들기
 Aspose.Words for Java를 사용하여 새 문서를 만드는 것으로 시작해 보겠습니다.
@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 복잡한 문서 서식을 위해 여러 스타일을 결합하세요.
 
 ```java
-//독특한 모습을 위해 스타일을 결합하세요
+// 독특한 모습을 위해 스타일을 결합하세요
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Aspose.Words for Java는 강력한 조건부 서식 기능을 제공합니다. �
 물론입니다! Aspose.Words for Java는 다양한 언어와 스크립트의 광범위한 글꼴과 문자를 지원합니다.
 
 ### 특정 스타일을 사용하여 텍스트에 하이퍼링크를 추가하려면 어떻게 해야 하나요?
- 텍스트에 하이퍼링크를 추가하려면 다음을 사용하세요.`FieldHyperlink`원하는 형식을 얻기 위해 스타일과 클래스를 결합합니다.
+ 텍스트에 하이퍼링크를 추가하려면 다음을 사용하세요.`FieldHyperlink` 원하는 형식을 얻기 위해 스타일과 클래스를 결합합니다.
 
 ### 문서 크기나 복잡성에 제한이 있나요?
 Aspose.Words for Java는 다양한 크기와 복잡성의 문서를 처리할 수 있습니다. 그러나 매우 큰 문서는 추가 메모리 리소스가 필요할 수 있습니다.

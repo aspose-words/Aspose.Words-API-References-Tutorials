@@ -117,7 +117,7 @@ Ve işte oldu! Bu adımları izleyerek, .NET için Aspose.Words kullanarak HTML 
  Evet, bir belgeyi her kaydettiğinizde öneki değiştirerek özelleştirebilirsiniz.`CssClassNamePrefix` mülk.
 
 ### Bu yöntem satır içi CSS'i destekliyor mu?
-The`CssClassNamePrefix`özellik harici CSS ile çalışır. Satır içi CSS için farklı bir yaklaşıma ihtiyacınız olacak.
+ The`CssClassNamePrefix`özellik harici CSS ile çalışır. Satır içi CSS için farklı bir yaklaşıma ihtiyacınız olacak.
 
 ### Diğer HTML kaydetme seçeneklerini nasıl ekleyebilirim?
  Çeşitli özelliklerini yapılandırabilirsiniz`HtmlSaveOptions` HTML çıktınızı özelleştirmek için. Kontrol edin[belgeleme](https://reference.aspose.com/words/net/) Daha detaylı bilgi için.

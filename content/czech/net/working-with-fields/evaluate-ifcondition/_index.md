@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-The`EvaluateCondition` metoda vrací a`FieldIfComparisonResult` enum, které představuje výsledek vyhodnocení stavu. Tento výčet může mít hodnoty jako`True`, `False` nebo`Unknown`.
+ The`EvaluateCondition` metoda vrací a`FieldIfComparisonResult` enum, které představuje výsledek vyhodnocení stavu. Tento výčet může mít hodnoty jako`True`, `False` nebo`Unknown`.
 
 ## Krok 4: Zobrazte výsledek
 
@@ -93,7 +93,7 @@ Pole IF je pole aplikace Word, které umožňuje vložit do dokumentu podmíněn
  Pole IF můžete vložit pomocí`InsertField` metoda`DocumentBuilder` třídy s uvedením podmínky, kterou chcete vyhodnotit.
 
 ###  Co dělá`EvaluateCondition` method do?
-The`EvaluateCondition` metoda vyhodnotí podmínku zadanou v poli IF a vrátí výsledek s uvedením, zda je podmínka pravdivá nebo nepravdivá.
+ The`EvaluateCondition` metoda vyhodnotí podmínku zadanou v poli IF a vrátí výsledek s uvedením, zda je podmínka pravdivá nebo nepravdivá.
 
 ### Mohu použít složité podmínky s polem IF?
 Ano, s polem IF můžete použít složité podmínky zadáním různých výrazů a srovnání podle potřeby.

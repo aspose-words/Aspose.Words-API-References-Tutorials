@@ -45,11 +45,11 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-Stel je voor dat je Word-document een canvas is en je tabel een kunstwerk erop. Ons doel is om dit kunstwerk precies op de gewenste plek op het canvas te plaatsen.
+Stel je voor dat je Word-document een canvas is en je tabel een kunstwerk erop. Ons doel is om deze kunst precies op de gewenste plek op het canvas te plaatsen.
 
 ## Stap 2: Toegang tot de tabel
 
-Vervolgens moeten we toegang krijgen tot de tabel in het document. Normaal gesproken werkt u met de eerste tabel in de body van het document.
+Vervolgens moeten we de tabel in het document benaderen. Normaal gesproken werkt u met de eerste tabel in de body van het document.
 
 ```csharp
 Table table = doc.FirstSection.Body.Tables[0];

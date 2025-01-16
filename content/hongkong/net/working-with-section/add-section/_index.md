@@ -23,7 +23,7 @@ url: /zh-hant/net/working-with-section/add-section/
 
 ## 導入命名空間
 
-首先，我們需要導入必要的名稱空間。這些對於存取 Aspose.Words 提供的類別和方法至關重要。
+首先，我們需要導入必要的命名空間。這些對於存取 Aspose.Words 提供的類別和方法至關重要。
 
 ```csharp
 using Aspose.Words;

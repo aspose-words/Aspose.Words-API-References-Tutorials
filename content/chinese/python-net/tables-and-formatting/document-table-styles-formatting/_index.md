@@ -23,7 +23,7 @@ url: /zh/python-net/tables-and-formatting/document-table-styles-formatting/
 2. 导入库：使用以下导入语句将 Aspose.Words 库导入到您的 Python 脚本中：
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. 加载文档：加载现有文档或使用 Aspose.Words API 创建新文档。
@@ -35,7 +35,7 @@ url: /zh/python-net/tables-and-formatting/document-table-styles-formatting/
 1. 创建表：使用`DocumentBuilder`类来创建一个新表并指定行数和列数。
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ url: /zh/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. 单元格填充：向单元格添加填充以改善间距。
@@ -80,32 +80,8 @@ url: /zh/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## 使用 Aspose.Words 设置表格样式
-
-Aspose.Words for Python提供了一系列样式选项，使您的表格更具视觉吸引力：
-
-1. 表格样式：应用预定义的表格样式以获得专业外观。
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. 单元格背景颜色：更改单元格背景颜色以突出显示特定数据。
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. 字体格式：自定义字体样式、大小和颜色以提高可读性。
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## 合并和拆分复杂布局的单元格
@@ -115,30 +91,14 @@ Aspose.Words for Python提供了一系列样式选项，使您的表格更具视
 1. 合并单元格：合并多个单元格以创建一个更大的单元格。
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. 分裂细胞：将细胞分裂回其各自的组成部分。
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## 调整行和列的高度和宽度
-
-微调行和列的尺寸以实现平衡的表格布局：
-
-1. 调整行高：根据内容修改行高。
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. 调整列宽：自动调整列宽以适合内容。
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## 为表格添加边框和底纹
@@ -148,13 +108,13 @@ Aspose.Words for Python提供了一系列样式选项，使您的表格更具视
 1. 边框：自定义表格和单元格的边框。
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. 阴影：对单元格应用阴影以获得视觉效果。
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## 使用单元格内容和对齐
@@ -171,7 +131,7 @@ Aspose.Words for Python提供了一系列样式选项，使您的表格更具视
 2. 文本对齐：根据需要对齐单元格文本。
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## 处理表头和表尾
@@ -188,26 +148,10 @@ Aspose.Words for Python提供了一系列样式选项，使您的表格更具视
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## 自动调整表格布局
-
-确保您的表格布局根据内容自动调整：
-
-1. 自动适合窗口：允许表格适合页面宽度。
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. 自动调整单元格大小：启用自动调整单元格大小以适应内容。
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## 将表格导出为不同格式
 
 表格准备好后，您可以将其导出为各种格式，例如 PDF 或 DOCX：
@@ -215,21 +159,15 @@ Aspose.Words for Python提供了一系列样式选项，使您的表格更具视
 1. 另存为 PDF：将包含表格的文档保存为 PDF 文件。
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. 另存为 DOCX：将文档保存为 DOCX 文件。
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## 故障排除和有效餐桌管理的技巧
-
-- 如果表格出现扭曲，请检查列宽或行高是否不正确。
-- 测试不同格式的表格渲染以确保一致性。
-- 对于复杂的布局，请仔细规划单元的合并和拆分。
-
+	
 ## 结论
 
 Aspose.Words for Python 提供了一套全面的工具包，用于创建、设计和格式化文档表。按照本文概述的步骤，您可以有效地管理文档中的表格、自定义其外观并将其导出为各种格式。利用 Aspose.Words 的强大功能来增强您的文档演示效果，并为您的读者提供清晰、视觉上有吸引力的信息。

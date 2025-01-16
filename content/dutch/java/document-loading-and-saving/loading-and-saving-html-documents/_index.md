@@ -1,6 +1,6 @@
 ---
-title: HTML-documenten laden en opslaan met Aspose.Words voor Java
-linktitle: HTML-documenten laden en opslaan met
+title: HTML-documenten laden en opslaan
+linktitle: HTML-documenten laden en opslaan
 second_title: Aspose.Words Java Documentverwerkings-API
 description: Leer hoe u HTML-documenten in Java laadt en opslaat met Aspose.Words voor Java. Stapsgewijze handleiding met codevoorbeelden voor naadloze documentintegratie.
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  Nu we de HTML in een bestand hebben geladen,`Document`, kunnen we het opslaan als een Word-document. Laten we het opslaan in DOCX-formaat:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  Deze code slaat de`Document` als DOCX-bestand, een veelgebruikt formaat voor Word-documenten.
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## Conclusie
@@ -95,4 +95,4 @@ Absoluut! Aspose.Words is een robuuste oplossing die wereldwijd door bedrijven w
 
 ### Waar kan ik meer documentatie en voorbeelden vinden voor Aspose.Words voor Java?
 
- Gedetailleerde documentatie, codevoorbeelden en tutorials vindt u op de Aspose.Words voor Java-documentatiewebsite:[Aspose.Words voor Java-documentatie](https://reference.aspose.com/words/java/).
+Gedetailleerde documentatie, codevoorbeelden en tutorials vindt u op de Aspose.Words voor Java-documentatiewebsite:[Aspose.Words voor Java-documentatie](https://reference.aspose.com/words/java/).

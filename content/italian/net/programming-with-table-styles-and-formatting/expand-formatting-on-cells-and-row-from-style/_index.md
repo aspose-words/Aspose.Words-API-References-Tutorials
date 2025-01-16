@@ -35,7 +35,7 @@ Ora scomponiamo il processo in passaggi semplici e facili da seguire.
 
 ## Passaggio 1: carica il documento
 
-In questa fase caricheremo il documento Word contenente la tabella che desideri formattare. 
+In questa fase caricheremo il documento Word che contiene la tabella che desideri formattare. 
 
 ```csharp
 // Percorso alla directory del documento

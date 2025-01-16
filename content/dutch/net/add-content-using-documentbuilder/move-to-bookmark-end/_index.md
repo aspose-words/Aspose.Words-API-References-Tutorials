@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### MoveToBookmark begrijpen
 
-De`MoveToBookmark`Met de methode kunt u naar een specifieke bladwijzer in uw document navigeren. De methodehandtekening is:
+ De`MoveToBookmark`Met de methode kunt u naar een specifieke bladwijzer in uw document navigeren. De methodehandtekening is:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

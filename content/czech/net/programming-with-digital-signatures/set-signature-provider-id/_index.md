@@ -15,7 +15,7 @@ Ahoj! Takže máte tento úžasný dokument aplikace Word, který potřebuje dig
 
 Než začneme, ujistěte se, že máte následující:
 
-1. Aspose.Words for .NET Library: Pokud jste to ještě neudělali,[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Pokud jste to ještě neudělali,[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli IDE kompatibilní s C#.
 3. Dokument aplikace Word: Dokument s řádkem podpisu (`Signature line.docx`).
 4.  Digitální certifikát: A`.pfx` soubor certifikátu (např.`morzal.pfx`).
@@ -101,7 +101,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ID poskytovatele podpisu jednoznačně identifikuje poskytovatele digitálního podpisu a zajišťuje autentičnost a bezpečnost.
 
-### Mohu k podpisu použít jakýkoli soubor .pfx?
+### Mohu pro podepisování použít jakýkoli soubor .pfx?
 
 Ano, pokud se jedná o platný digitální certifikát. Ujistěte se, že máte správné heslo, pokud je chráněno.
 

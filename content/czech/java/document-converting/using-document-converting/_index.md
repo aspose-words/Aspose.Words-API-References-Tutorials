@@ -56,7 +56,7 @@ Dále převeďte načtený dokument aplikace Word do formátu PDF:
 
 ```java
 // Uložte dokument jako PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Krok 4: Převod do jiných formátů
@@ -67,21 +67,21 @@ Kromě PDF vám Aspose.Words for Java umožňuje převádět dokumenty do různ�
 
 ```java
 // Uložte dokument jako RTF
-doc.save("output.rtf", SaveFormat.RTF);
+doc.save("output.rtf");
 ```
 
 ### Převod do HTML
 
 ```java
 // Uložte dokument jako HTML
-doc.save("output.html", SaveFormat.HTML);
+doc.save("output.html");
 ```
 
 ### Převod do EPUB
 
 ```java
 // Uložte dokument jako EPUB
-doc.save("output.epub", SaveFormat.EPUB);
+doc.save("output.epub");
 ```
 
 ## Tipy pro efektivní převod dokumentů

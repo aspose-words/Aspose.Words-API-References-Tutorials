@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-في هذه الخطوة، نقوم بتحميل مستند Word من الدليل المحدد. تأكد من استبدال`"YOUR DOCUMENT DIRECTORY"`مع المسار الفعلي الذي يوجد به مستندك.
+في هذه الخطوة، نقوم بتحميل مستند Word من الدليل المحدد. تأكد من استبدال`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي الذي يوجد به مستندك.
 
 ## الخطوة 2: تكوين خيارات تقليل العينة
 

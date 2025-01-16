@@ -70,7 +70,7 @@ Dokumentsamarbete och granskning är kritiska aspekter av modern dokumenthanteri
 
 ### Kan jag spåra ändringar i Word-dokument med Aspose.Words för Java?
 
-Ja, Aspose.Words för Java låter dig spåra ändringar i Word-dokument. Du kan använda`startTrackRevisions` metod för att aktivera ändringsspårning.
+ Ja, Aspose.Words för Java låter dig spåra ändringar i Word-dokument. Du kan använda`startTrackRevisions` metod för att aktivera ändringsspårning.
 
 ### Hur kan jag granska ändringar som gjorts i ett dokument?
 

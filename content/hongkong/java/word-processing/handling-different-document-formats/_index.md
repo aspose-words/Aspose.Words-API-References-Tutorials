@@ -37,13 +37,6 @@ Aspose.Words for Java 的主要優勢之一是它能夠輕鬆載入各種文件�
 Document doc = new Document("sample.docx");
 ```
 
-### 載入 PDF 文件
-
-```java
-//載入 PDF 文件
-Document doc = new Document("sample.pdf");
-```
-
 ## 修改和儲存文檔
 
 載入文件後，您可以執行多種操作，從簡單的文字替換到複雜的格式變更。
@@ -71,7 +64,7 @@ Aspose.Words for Java 允許不同文件格式之間的無縫轉換。將 Word �
 Document doc = new Document("sample.docx");
 
 //另存為 PDF
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## 處理圖像和表格

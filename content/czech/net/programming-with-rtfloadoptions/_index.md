@@ -16,4 +16,4 @@ Sledováním výukových programů Aspose.Words for .NET budete schopni důkladn
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Rozpoznat text UTF-8](./recognize-utf8-text/) | Naučte se, jak rozpoznat text UTF-8 v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. |
+| [Rozpoznat text Utf-8](./recognize-utf8-text/) | Naučte se, jak rozpoznat text UTF-8 v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. |

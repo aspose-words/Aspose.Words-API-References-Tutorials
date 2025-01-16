@@ -32,7 +32,7 @@ using Aspose.Words.Tables;
 
 ## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
 
- Kezdésként létrehozunk egy új Word-dokumentumot, és inicializáljuk a`DocumentBuilder` objektumot, amely segít a táblázat elkészítésében.
+ Kezdésként létrehozunk egy új Word-dokumentumot, és inicializáljuk a`DocumentBuilder` objektum, amely segít a táblázat megalkotásában.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja

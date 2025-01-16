@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 3: Einen Tisch starten
 
-Erstellen Sie nun mit dem DocumentBuilder eine Tabelle. Fügen Sie die erste Zeile mit den beiden Zellen „Name“ und „Wert“ ein.
+Erstellen Sie nun mit dem DocumentBuilder eine Tabelle. Fügen Sie die erste Zeile mit zwei Zellen ein: „Name“ und „Wert“.
 
 ```csharp
 Table table = builder.StartTable();

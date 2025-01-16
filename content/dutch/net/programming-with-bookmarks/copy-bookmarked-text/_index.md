@@ -112,7 +112,7 @@ En dat is alles! U hebt met succes bladwijzertekst van het ene Word-document naa
 Ja, u kunt door meerdere bladwijzers bladeren en dezelfde methode gebruiken om elke bladwijzer te kopiëren.
 
 ### Wat gebeurt er als de bladwijzer niet wordt gevonden?
-De`Range.Bookmarks` eigendom zal terugkeren`null`Zorg er dus voor dat u dit geval zo behandelt dat er geen uitzonderingen ontstaan.
+ De`Range.Bookmarks` eigendom zal terugkeren`null`Zorg er dus voor dat u dit geval zo behandelt dat er geen uitzonderingen ontstaan.
 
 ### Kan ik de opmaak van de originele bladwijzer behouden?
  Absoluut! Gebruik`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de originele opmaak behouden blijft.

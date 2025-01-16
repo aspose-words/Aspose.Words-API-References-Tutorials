@@ -127,7 +127,7 @@ I commenti di ancoraggio vengono utilizzati per evidenziare e commentare sezioni
 Sì, puoi aggiungere più commenti alla stessa sezione di testo definendo più intervalli di commenti.
 
 ### Aspose.Words per .NET è gratuito?
-Aspose.Words per .NET offre una prova gratuita che puoi scaricare[Qui](https://releases.aspose.com/) Per le funzionalità complete, puoi acquistare una licenza[Qui](https://purchase.aspose.com/buy).
+ Aspose.Words per .NET offre una prova gratuita che puoi scaricare[Qui](https://releases.aspose.com/) Per le funzionalità complete, puoi acquistare una licenza[Qui](https://purchase.aspose.com/buy).
 
 ### Posso personalizzare l'aspetto dei commenti?
 Sebbene Aspose.Words si concentri sulla funzionalità, l'aspetto dei commenti nei documenti Word è generalmente controllato da Word stesso.

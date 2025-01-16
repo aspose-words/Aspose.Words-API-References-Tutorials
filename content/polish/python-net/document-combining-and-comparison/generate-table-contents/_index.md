@@ -19,10 +19,10 @@ Spis treści zapewnia migawkę struktury dokumentu, umożliwiając czytelnikom �
 ## Ładowanie dokumentu
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## Definiowanie nagłówków i podnagłówków
@@ -31,25 +31,11 @@ Aby wygenerować spis treści, musisz zdefiniować nagłówki i podnagłówki w 
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## Generowanie spisu treści
-
-Teraz, gdy mamy już zdefiniowane nagłówki i podnagłówki, wygenerujmy sam spis treści. Utworzymy nową sekcję na początku dokumentu i wypełnimy ją odpowiednią treścią.
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## Dostosowywanie spisu treści
@@ -58,21 +44,10 @@ Możesz dostosować wygląd spisu treści, dostosowując czcionki, style i forma
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## Dodawanie hiperłączy
-
-Aby spis treści był interaktywny, dodaj hiperłącza pozwalające czytelnikom przejść bezpośrednio do odpowiednich sekcji dokumentu.
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+``
 
 ## Stylizowanie spisu treści
 
@@ -81,16 +56,7 @@ Stylizowanie spisu treści polega na zdefiniowaniu odpowiednich stylów akapitó
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## Aktualizacja spisu treści
-
-Jeśli wprowadzisz zmiany w strukturze dokumentu, możesz łatwo zaktualizować spis treści, aby odzwierciedlić te zmiany.
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## Automatyzacja procesu
@@ -101,27 +67,13 @@ Aby zaoszczędzić czas i zapewnić spójność, warto utworzyć skrypt, który 
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## Obsługa numerów stron
-
-Do spisu treści możesz dodać numery stron, aby czytelnicy wiedzieli, gdzie znaleźć konkretne sekcje.
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## Wniosek

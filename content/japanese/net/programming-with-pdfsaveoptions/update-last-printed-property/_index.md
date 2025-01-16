@@ -80,7 +80,7 @@ Aspose.Words for .NET は、ドキュメントの作成、変更、変換、印�
 はい、Aspose.Words for .NET を使用すると、作成者、タイトル、件名など、さまざまなドキュメント プロパティを更新できます。
 
 ### Aspose.Words for .NET は無料ですか?
-Aspose.Words for .NETは無料トライアルを提供しており、ダウンロードすることができます。[ここ](https://releases.aspose.com/)延長使用にはライセンスを購入する必要があります。
+ Aspose.Words for .NETは無料トライアルを提供しており、ダウンロードすることができます。[ここ](https://releases.aspose.com/)延長使用にはライセンスを購入する必要があります。
 
 ### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
-Aspose.Words for .NETの詳細なドキュメントをご覧ください。[ここ](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NETの詳細なドキュメントをご覧ください。[ここ](https://reference.aspose.com/words/net/).

@@ -86,7 +86,7 @@ Cuối cùng, chúng tôi lưu mỗi tài liệu mới với một tên duy nh�
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-Các`Save` phương pháp này lưu tài liệu mới trong thư mục được chỉ định với tên duy nhất dựa trên chỉ mục phần.
+ Các`Save` phương pháp này lưu tài liệu mới trong thư mục được chỉ định với tên duy nhất dựa trên chỉ mục phần.
 
 ## Phần kết luận
 

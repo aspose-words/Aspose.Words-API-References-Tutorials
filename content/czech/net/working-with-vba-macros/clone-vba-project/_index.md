@@ -16,7 +16,7 @@ Dobrý den, kolegové vývojáři! Už jste se někdy zapletli do složitosti pr
 
 Než začneme, ujistěte se, že máte vše seřazeno:
 
-1.  Aspose.Words for .NET Library: Budete potřebovat nejnovější verzi Aspose.Words for .NET. Pokud jste to ještě neudělali, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Budete potřebovat nejnovější verzi Aspose.Words for .NET. Pokud jste to ještě neudělali, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí .NET, jako je Visual Studio, bude nezbytné pro psaní a testování vašeho kódu.
 3. Základní znalost C#: Základní znalost C# vám pomůže sledovat úryvky kódu.
 4.  Ukázkový dokument Word: Mít a[Word dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) obsahující projekt VBA připravený k práci. Můžete si vytvořit vlastní nebo použít existující.

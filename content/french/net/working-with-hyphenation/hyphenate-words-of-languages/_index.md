@@ -57,7 +57,7 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 
 ## Conclusion
 
-Et voilà ! Avec seulement quelques lignes de code, vous pouvez améliorer considérablement la lisibilité de vos documents en coupant les mots selon des règles spécifiques à la langue. Aspose.Words pour .NET rend ce processus simple et efficace. Alors, allez-y et offrez à vos lecteurs une expérience de lecture plus fluide !
+Et voilà ! Avec seulement quelques lignes de code, vous pouvez améliorer considérablement la lisibilité de vos documents en coupant les mots selon des règles spécifiques à la langue. Aspose.Words pour .NET rend ce processus simple et efficace. Alors, n'hésitez plus et offrez à vos lecteurs une expérience de lecture plus fluide !
 
 ## FAQ
 

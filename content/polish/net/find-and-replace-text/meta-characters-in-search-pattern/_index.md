@@ -15,7 +15,7 @@ Aspose.Words for .NET to potężna biblioteka do obsługi dokumentów Word progr
 
 Zanim przejdziemy do kodu, upewnijmy się, że wszystko jest skonfigurowane:
 
-1.  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Możesz go pobrać ze strony[Strona wydań Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Możesz go pobrać ze strony[Strona wydań Aspose](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub inne środowisko programistyczne C#.
 3. Podstawowa znajomość języka C#: Znajomość podstaw programowania w języku C# będzie przydatna.
 
@@ -39,7 +39,7 @@ Zanim zaczniesz manipulować dokumentem, musisz zdefiniować ścieżkę do katal
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką, pod którą chcesz zapisać swoje dokumenty.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, pod którą chcesz zapisać swoje dokumenty.
 
 ## Krok 2: Tworzenie nowego dokumentu
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## Krok 4: Zastępowanie tekstu za pomocą znaku meta podziału akapitu
 
- Znaki meta mogą reprezentować różne elementy, takie jak akapity, tabulatory i podziały wierszy. Tutaj używamy`&p` aby reprezentować podział akapitu.
+Znaki meta mogą reprezentować różne elementy, takie jak akapity, tabulatory i podziały wierszy. Tutaj używamy`&p` aby reprezentować podział akapitu.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");
@@ -78,7 +78,7 @@ builder.InsertBreak(BreakType.PageBreak);
 builder.Writeln("This is Line 2");
 ```
 
-## Krok 6: Zastępowanie tekstu za pomocą ręcznego znaku meta podziału wiersza
+## Krok 6: Zastępowanie tekstu za pomocą ręcznego znaku podziału wiersza
 
  Teraz użyjemy`&m` znak meta oznaczający ręczny podział wiersza i odpowiednią zamianę tekstu.
 
@@ -88,7 +88,7 @@ doc.Range.Replace("This is Line 1&mThis is Line 2", "Page break is replaced with
 
 ## Krok 7: Zapisywanie dokumentu
 
-Na koniec zapisz dokument w określonym katalogu.
+Na koniec zapisz dokument w podanym katalogu.
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.MetaCharactersInSearchPattern.docx");

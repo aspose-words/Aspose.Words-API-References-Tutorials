@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## الخطوة 3: إنشاء كائن DocumentBuilder
 
-ال`DocumentBuilder` class هي أداة قوية في مكتبة Aspose.Words. وهي تسمح لنا بالتنقل في المستند والتلاعب به.
+ ال`DocumentBuilder` class هي أداة قوية في مكتبة Aspose.Words. وهي تسمح لنا بالتنقل في المستند والتلاعب به.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);

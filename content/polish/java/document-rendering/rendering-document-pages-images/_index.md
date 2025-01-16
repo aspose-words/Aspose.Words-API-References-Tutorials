@@ -48,7 +48,7 @@ Aspose.Words oferuje różne opcje zapisu obrazu, aby kontrolować format wyjśc
 
 ```java
 // Zainicjuj opcje zapisywania obrazu
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Krok 4: Renderuj strony dokumentu jako obrazy

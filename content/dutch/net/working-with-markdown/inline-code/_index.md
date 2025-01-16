@@ -9,7 +9,7 @@ url: /nl/net/working-with-markdown/inline-code/
 ---
 ## Invoering
 
-Als u bezig bent met het genereren of bewerken van Word-documenten via een programma, moet u mogelijk tekst opmaken zodat deze op code lijkt. Of het nu gaat om documentatie of codefragmenten in een rapport, Aspose.Words voor .NET biedt een robuuste manier om tekststijlen te verwerken. In deze tutorial richten we ons op het toepassen van inline codestijlen op tekst met behulp van Aspose.Words. We onderzoeken hoe u aangepaste stijlen voor enkele en meervoudige backticks definieert en gebruikt, zodat uw codesegmenten duidelijk opvallen in uw documenten.
+Als u bezig bent met het genereren of bewerken van Word-documenten via een programma, moet u mogelijk tekst opmaken zodat deze op code lijkt. Of het nu gaat om documentatie of codefragmenten in een rapport, Aspose.Words voor .NET biedt een robuuste manier om tekststijlen te verwerken. In deze tutorial richten we ons op het toepassen van inline-codestijlen op tekst met behulp van Aspose.Words. We onderzoeken hoe u aangepaste stijlen voor enkele en meervoudige backticks definieert en gebruikt, zodat uw codesegmenten duidelijk opvallen in uw documenten.
 
 ## Vereisten
 
@@ -93,7 +93,7 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 
 ## Conclusie
 
-Tekst opmaken als inline code in Word-documenten met Aspose.Words voor .NET is eenvoudig als u de stappen kent. Door aangepaste stijlen te definiëren en toe te passen met enkele of meerdere backticks, kunt u uw codefragmenten duidelijk laten opvallen. Deze methode is met name handig voor technische documentatie of elk document waarbij leesbaarheid van de code essentieel is.
+Het opmaken van tekst als inline code in Word-documenten met Aspose.Words voor .NET is eenvoudig als u de stappen kent. Door aangepaste stijlen te definiëren en toe te passen met enkele of meerdere backticks, kunt u uw codefragmenten duidelijk laten opvallen. Deze methode is met name handig voor technische documentatie of elk document waarbij leesbaarheid van de code essentieel is.
 
 Experimenteer gerust met verschillende stijlen en opmaakopties om het beste bij uw behoeften te passen. Aspose.Words biedt uitgebreide flexibiliteit, waardoor u het uiterlijk van uw document in hoge mate kunt aanpassen.
 

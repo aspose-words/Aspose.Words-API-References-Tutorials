@@ -110,7 +110,7 @@ Ya, Anda dapat menggabungkan sel dalam tabel menggunakan Aspose.Words, seperti y
  Jangan khawatir! Anda dapat dengan mudah membagi sel yang sebelumnya digabungkan dengan mengatur properti penggabungan horizontalnya ke`NONE`.
 
 ### Bagaimana cara menambahkan jeda halaman sebelum tabel?
- Untuk menyisipkan jeda halaman sebelum tabel, ubah fontnya`PageBreakBefore` properti seperti yang ditunjukkan.
+Untuk menyisipkan jeda halaman sebelum tabel, ubah fontnya`PageBreakBefore` properti seperti yang ditunjukkan.
 
 ### Apakah Aspose.Words kompatibel dengan berbagai format dokumen?
 Tentu saja! Aspose.Words untuk Java mendukung berbagai format dokumen, menjadikannya pilihan serbaguna untuk manajemen dokumen.

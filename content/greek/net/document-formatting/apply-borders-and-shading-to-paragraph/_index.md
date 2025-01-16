@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Ο`Document` αντικείμενο αντιπροσωπεύει ολόκληρο το έγγραφο Word μας και το`DocumentBuilder` μας βοηθά να προσθέσουμε και να μορφοποιήσουμε περιεχόμενο.
+ Ο`Document` αντικείμενο αντιπροσωπεύει ολόκληρο το έγγραφο Word μας και το`DocumentBuilder` μας βοηθά να προσθέσουμε και να μορφοποιήσουμε περιεχόμενο.
 
 ## Βήμα 3: Ορίστε τα όρια παραγράφου
 

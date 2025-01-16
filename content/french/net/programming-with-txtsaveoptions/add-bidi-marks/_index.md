@@ -15,7 +15,7 @@ Dans le monde du traitement de documents, le texte bidirectionnel (Bidi) peut so
 
 Avant de plonger dans le code, assurez-vous de disposer des éléments suivants :
 
-1.  Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Vous pouvez le télécharger à partir du[Page de téléchargement d'Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Vous pouvez le télécharger à partir du[Page de téléchargement d'Aspose](https://releases.aspose.com/words/net/).
 2. .NET Framework ou .NET Core : assurez-vous que vous disposez d’un environnement .NET compatible configuré pour exécuter les exemples.
 3. Connaissances de base de C# : Familiarité avec le langage de programmation C# et les opérations de base dans .NET.
 

@@ -15,7 +15,7 @@ dagens digitala tidsålder är hantering av dokumentstorlek avgörande för båd
 
 Innan du dyker in i handledningen, se till att du har följande förutsättningar på plats:
 
-1.  Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Du kan ladda ner den från[Aspose hemsida](https://releases.aspose.com/words/net/).
+1. Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Du kan ladda ner den från[Aspose hemsida](https://releases.aspose.com/words/net/).
 
 2. Grundläggande kunskaper i C#: Bekantskap med C#-programmering hjälper dig att förstå kodexemplen som ges i denna handledning.
 

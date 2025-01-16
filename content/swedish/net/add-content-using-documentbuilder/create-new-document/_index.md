@@ -55,7 +55,7 @@ Vi har precis skapat ett tomt Word-dokument. Ganska coolt va?
 
 ### Initiera DocumentBuilder
 
- Därefter måste vi lägga till lite innehåll i vårt dokument. För detta kommer vi att använda`DocumentBuilder`Det är som vår penna som skriver på duken.
+ Därefter måste vi lägga till lite innehåll i vårt dokument. För detta kommer vi att använda`DocumentBuilder`. Det är som vår penna som skriver på duken.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

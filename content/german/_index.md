@@ -63,7 +63,7 @@ Dies sind Links zu einigen nützlichen Ressourcen:
 
 ## Aspose.Words-Dokumentenverwaltungs-Tutorials für Python
 {{% alert color="primary" %}}
-Diese Tutorials bieten eine Schritt-für-Schritt-Anleitung zum programmgesteuerten Arbeiten mit Microsoft Word-Dokumenten, einschließlich Dokumenterstellung, Bearbeitung und verschiedenen Sicherheitsfunktionen wie Verschlüsselung und Kennwortschutz. Mithilfe dieser Ressource können Entwickler mithilfe von Aspose.Words Dokumentverarbeitungsfunktionen effizient in ihre Python-Anwendungen implementieren, wodurch die Produktivität gesteigert und die Dokumentsicherheit gewährleistet wird. 
+Diese Tutorials bieten eine Schritt-für-Schritt-Anleitung zum programmgesteuerten Arbeiten mit Microsoft Word-Dokumenten, einschließlich Dokumenterstellung, -bearbeitung und verschiedenen Sicherheitsfunktionen wie Verschlüsselung und Kennwortschutz. Mithilfe dieser Ressource können Entwickler mithilfe von Aspose.Words Dokumentverarbeitungsfunktionen effizient in ihre Python-Anwendungen implementieren, wodurch die Produktivität gesteigert und die Dokumentsicherheit gewährleistet wird. 
 {{% /alert %}}
 
 Dies sind Links zu einigen nützlichen Ressourcen:

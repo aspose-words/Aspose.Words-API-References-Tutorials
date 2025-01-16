@@ -150,7 +150,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
 //新增文件內容
-//……
+//…
 
 //更新目錄
 doc.updateFields();
@@ -253,7 +253,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
 //新增文件內容
-//……
+//…
 
 //更新目錄
 doc.updateFields();

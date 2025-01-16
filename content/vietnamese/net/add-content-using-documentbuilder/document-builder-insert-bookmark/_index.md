@@ -71,7 +71,7 @@ Sau khi bắt đầu đánh dấu, chúng ta có thể thêm bất kỳ nội du
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-Các`Writeln` phương pháp này thêm một đoạn văn mới với văn bản được chỉ định vào tài liệu.
+ Các`Writeln` phương pháp này thêm một đoạn văn mới với văn bản được chỉ định vào tài liệu.
 
 ## Bước 5: Kết thúc Bookmark
 
@@ -81,7 +81,7 @@ Sau khi thêm nội dung, chúng ta cần đóng dấu trang. Điều này cho A
 builder.EndBookmark("FineBookmark");
 ```
 
-Các`EndBookmark` phương pháp này hoàn thành dấu trang mà chúng ta đã bắt đầu trước đó.
+ Các`EndBookmark` phương pháp này hoàn thành dấu trang mà chúng ta đã bắt đầu trước đó.
 
 ## Bước 6: Lưu tài liệu
 

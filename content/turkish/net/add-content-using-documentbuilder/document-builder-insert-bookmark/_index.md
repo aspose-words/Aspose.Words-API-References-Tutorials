@@ -71,7 +71,7 @@ Yer imi başlatıldığında, içine istediğimiz herhangi bir içeriği ekleyeb
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-The`Writeln` method belirtilen metinle belgeye yeni bir paragraf ekler.
+ The`Writeln` method belirtilen metinle belgeye yeni bir paragraf ekler.
 
 ## Adım 5: Yer İşaretini Sonlandır
 
@@ -81,7 +81,7 @@ The`Writeln` method belirtilen metinle belgeye yeni bir paragraf ekler.
 builder.EndBookmark("FineBookmark");
 ```
 
-The`EndBookmark` metodu daha önce başladığımız yer imini tamamlar.
+ The`EndBookmark` metodu daha önce başladığımız yer imini tamamlar.
 
 ## Adım 6: Belgeyi Kaydedin
 

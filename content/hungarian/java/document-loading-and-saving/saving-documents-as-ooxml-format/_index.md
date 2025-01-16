@@ -61,7 +61,7 @@ doc.save("ComplianceDoc.docx", saveOptions);
 
 ## Utolsó megtakarított idő tulajdonság frissítése
 
-Mentéskor választhatja a dokumentum "Utolsó megtakarított idő" tulajdonságának frissítését. Íme, hogyan:
+Mentéskor választhatja a dokumentum "Utolsó mentett idő" tulajdonságának frissítését. Íme, hogyan:
 
 ```java
 import com.aspose.words.Document;
@@ -80,7 +80,7 @@ doc.save("UpdatedLastSavedTime.docx", saveOptions);
 
 ## Az örökölt vezérlőkarakterek megtartása
 
-Ha a dokumentum örökölt vezérlőkaraktereket tartalmaz, dönthet úgy, hogy megtartja azokat a mentés során. Íme, hogyan:
+Ha a dokumentum örökölt vezérlőkaraktereket tartalmaz, dönthet úgy, hogy megtartja őket a mentés során. Íme, hogyan:
 
 ```java
 import com.aspose.words.Document;
@@ -91,7 +91,7 @@ import com.aspose.words.SaveFormat;
 Document doc = new Document("LegacyControlChars.doc");
 
 // Hozzon létre OoxmlSaveOptions-t a FLAT_OPC formátummal, és engedélyezze a régi vezérlőkarakterek megtartását
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setKeepLegacyControlChars(true);
 
 // Mentse el a dokumentumot örökölt vezérlőkarakterekkel
@@ -148,7 +148,7 @@ public void updateLastSavedTimeProperty() throws Exception
 public void keepLegacyControlChars() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Legacy control character.doc");
-	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC); { saveOptions.setKeepLegacyControlChars(true); }
+	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(); { saveOptions.setKeepLegacyControlChars(true); }
 	doc.save("Your Directory Path" + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
 }
 @Test

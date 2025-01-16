@@ -14,9 +14,9 @@ Handledningen täcker olika aspekter som formatering av text, stycken, tabeller,
 | Titel | Beskrivning |
 | --- | --- |
 | [Utrymmet mellan asiatisk och latinsk text i Word-dokument](./space-between-asian-and-latin-text/) | Lär dig hur du automatiskt justerar utrymmet mellan asiatisk och latinsk text i Word-dokument med Aspose.Words för .NET med vår detaljerade, steg-för-steg-guide. |
-| [Asiatisk typografi linjebrytning grupp i Word-dokument](./asian-typography-line-break-group/) | Bemästra radbrytningar i asiatisk typografi i Word-dokument med Aspose.Words för .NET. Den här guiden ger en steg-för-steg handledning för exakt formatering. |
+| [Asiatisk Typografi Linjebrytning Grupp I Word-dokument](./asian-typography-line-break-group/) | Bemästra radbrytningar i asiatisk typografi i Word-dokument med Aspose.Words för .NET. Den här guiden ger en steg-för-steg handledning för exakt formatering. |
 | [Styckeformatering i Word-dokument](./paragraph-formatting/) | Lär dig hur du enkelt formaterar stycken i Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. |
-| [Listformatering på flera nivåer i Word-dokument](./multilevel-list-formatting/) | Lär dig hur du bemästrar listformatering på flera nivåer i Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. Förbättra dokumentstrukturen utan ansträngning. |
+| [Listformatering på flera nivåer i Word-dokument](./multilevel-list-formatting/) | Lär dig hur du behärskar listformatering på flera nivåer i Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. Förbättra dokumentstrukturen utan ansträngning. |
 | [Använd styckeformat i Word-dokument](./apply-paragraph-style/) | Lär dig hur du använder styckestilar i ett Word-dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för ett snyggt, professionellt dokument. |
 | [Tillämpa kanter och skuggning på stycke i Word-dokument](./apply-borders-and-shading-to-paragraph/) | Använd kanter och skuggning på stycken i Word-dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för att förbättra din dokumentformatering. |
 | [Ändra asiatiskt styckeavstånd och indrag i Word-dokument](./change-asian-paragraph-spacing-and-indents/) | Lär dig hur du ändrar asiatiskt styckeavstånd och indrag i Word-dokument med Aspose.Words för .NET med denna omfattande, steg-för-steg-guide. |

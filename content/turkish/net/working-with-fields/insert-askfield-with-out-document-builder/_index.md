@@ -114,7 +114,7 @@ Aspose.Words'deki ASK alanı, belge açıldığında kullanıcıdan belirli bir 
 Evet, bir belgeye her biri benzersiz istemler ve yanıtlar içeren birden fazla ASK alanı ekleyebilirsiniz.
 
 ###  Amacı nedir?`PromptOnceOnMailMerge` property?
-The`PromptOnceOnMailMerge` özellik, ASK isteminin bir posta birleştirme işlemi sırasında yalnızca bir kez mi yoksa her seferinde mi görüneceğini belirler.
+ The`PromptOnceOnMailMerge` özellik, ASK isteminin bir posta birleştirme işlemi sırasında yalnızca bir kez mi yoksa her seferinde mi görüneceğini belirler.
 
 ### ASK alanının özelliklerini ayarladıktan sonra güncellemem gerekir mi?
 Evet, ASK alanının güncellenmesi tüm özelliklerin doğru şekilde uygulanmasını ve alanın beklendiği gibi çalışmasını sağlar.

@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Langkah 4: Gunakan Penyelarasan Konten Tabel Otomatis
 
-Itu`Auto`Opsi penyelarasan mengambil penyelarasan dari paragraf pertama di kolom tabel terkait. Ini berguna saat Anda memiliki penyelarasan campuran dalam satu tabel.
+ Itu`Auto`Opsi penyelarasan mengambil penyelarasan dari paragraf pertama di kolom tabel terkait. Ini berguna saat Anda memiliki penyelarasan campuran dalam satu tabel.
 
 ```csharp
 // Atur perataan ke Otomatis.

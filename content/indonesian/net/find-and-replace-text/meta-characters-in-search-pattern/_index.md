@@ -15,7 +15,7 @@ Aspose.Words untuk .NET adalah pustaka yang hebat untuk menangani dokumen Word s
 
 Sebelum kita masuk ke kode, mari pastikan Anda telah menyiapkan semuanya:
 
-1.  Aspose.Words untuk .NET: Anda perlu menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Halaman Rilis Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words untuk .NET: Anda perlu menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Halaman Rilis Aspose](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan C# lainnya.
 3. Pengetahuan Dasar C#: Pemahaman tentang dasar-dasar pemrograman C# akan bermanfaat.
 
@@ -39,7 +39,7 @@ Sebelum Anda mulai memanipulasi dokumen, Anda perlu menentukan jalur ke direktor
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen Anda.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen Anda.
 
 ## Langkah 2: Membuat Dokumen Baru
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## Langkah 4: Mengganti Teks Menggunakan Karakter Meta Pemisah Paragraf
 
- Karakter meta dapat mewakili berbagai elemen seperti paragraf, tab, dan jeda baris. Di sini, kami menggunakan`&p` untuk mewakili pemisah paragraf.
+Karakter meta dapat mewakili berbagai elemen seperti paragraf, tab, dan jeda baris. Di sini, kami menggunakan`&p` untuk mewakili pemisah paragraf.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");

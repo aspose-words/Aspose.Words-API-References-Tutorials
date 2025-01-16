@@ -100,7 +100,7 @@ Bazen bir metin kutusu, diğer kutuların ona bağlandığı bir zincirin parça
 textBox.Previous?.BreakForwardLink();
 ```
 
-The`?.` operatör, yöntemin yalnızca aşağıdaki durumlarda çağrılmasını sağlar:`Previous` null olmadığından olası çalışma zamanı hataları önlenir.
+ The`?.` operatör, yöntemin yalnızca aşağıdaki durumlarda çağrılmasını sağlar:`Previous` null olmadığından olası çalışma zamanı hataları önlenir.
 
 ## Çözüm
 

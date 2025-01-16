@@ -12,7 +12,7 @@ url: /pl/java/document-conversion-and-export/formatting-tables-and-table-styles/
 
 Jeśli chodzi o formatowanie dokumentów, tabele odgrywają kluczową rolę w organizowaniu i prezentowaniu danych w sposób przejrzysty. Jeśli pracujesz z Javą i Aspose.Words, masz do dyspozycji potężne narzędzia do tworzenia i formatowania tabel w dokumentach. Niezależnie od tego, czy projektujesz prostą tabelę, czy stosujesz zaawansowane style, Aspose.Words dla Javy oferuje szereg funkcji, które pomogą Ci osiągnąć profesjonalnie wyglądające rezultaty.
 
-tym przewodniku przeprowadzimy Cię przez proces formatowania tabel i stosowania stylów tabel przy użyciu Aspose.Words for Java. Nauczysz się, jak ustawiać obramowania tabel, stosować cieniowanie komórek i używać stylów tabel, aby poprawić wygląd dokumentów. Na koniec będziesz mieć umiejętności tworzenia dobrze sformatowanych tabel, które wyróżnią Twoje dane.
+W tym przewodniku przeprowadzimy Cię przez proces formatowania tabel i stosowania stylów tabel przy użyciu Aspose.Words for Java. Nauczysz się, jak ustawiać obramowania tabel, stosować cieniowanie komórek i używać stylów tabel, aby poprawić wygląd dokumentów. Na koniec będziesz mieć umiejętności tworzenia dobrze sformatowanych tabel, które wyróżnią Twoje dane.
 
 ## Wymagania wstępne
 
@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Utwórz większe obramowanie dla pierwszej komórki tego wiersza.
+// Utwórz większe obramowanie dla pierwszej komórki tego wiersza.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -161,7 +161,7 @@ W tym przykładzie:
 
 ## Wniosek
 
-I masz to! Udało Ci się sformatować tabele i zastosować style za pomocą Aspose.Words for Java. Dzięki tym technikom możesz tworzyć tabele, które są nie tylko funkcjonalne, ale również atrakcyjne wizualnie. Skuteczne formatowanie tabel może znacznie poprawić czytelność i profesjonalny wygląd Twoich dokumentów.
+masz to! Udało Ci się sformatować tabele i zastosować style za pomocą Aspose.Words for Java. Dzięki tym technikom możesz tworzyć tabele, które są nie tylko funkcjonalne, ale również atrakcyjne wizualnie. Skuteczne formatowanie tabel może znacznie poprawić czytelność i profesjonalny wygląd Twoich dokumentów.
 
 Aspose.Words for Java to solidne narzędzie oferujące rozbudowane funkcje do manipulacji dokumentami. Opanowując formatowanie tabel i style, jesteś o krok bliżej wykorzystania pełnej mocy tej biblioteki.
 
@@ -169,7 +169,7 @@ Aspose.Words for Java to solidne narzędzie oferujące rozbudowane funkcje do ma
 
 ### 1. Czy mogę używać niestandardowych stylów tabeli, które nie są zawarte w opcjach domyślnych?
 
-Tak, możesz definiować i stosować niestandardowe style do swoich tabel za pomocą Aspose.Words dla Java. Sprawdź[dokumentacja](https://reference.aspose.com/words/java/) aby uzyskać więcej szczegółów na temat tworzenia niestandardowych stylów.
+ Tak, możesz definiować i stosować niestandardowe style do swoich tabel za pomocą Aspose.Words dla Java. Sprawdź[dokumentacja](https://reference.aspose.com/words/java/) aby uzyskać więcej szczegółów na temat tworzenia niestandardowych stylów.
 
 ### 2. Jak mogę zastosować formatowanie warunkowe do tabel?
 

@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-Neste código, substitua`"YOUR DOCUMENT DIRECTORY"`com o caminho real onde seu documento está localizado.
+Neste código, substitua`"YOUR DOCUMENT DIRECTORY"` com o caminho real onde seu documento está localizado.
 
 ## Etapa 2: definir a posição da nota de rodapé
 
@@ -93,4 +93,4 @@ O Aspose.Words para .NET foi projetado para aplicativos .NET, mas você pode us�
 
 ### Onde posso encontrar documentação mais detalhada do Aspose.Words para .NET?
 
-Documentação detalhada está disponível[aqui](https://reference.aspose.com/words/net/).
+ Documentação detalhada está disponível[aqui](https://reference.aspose.com/words/net/).

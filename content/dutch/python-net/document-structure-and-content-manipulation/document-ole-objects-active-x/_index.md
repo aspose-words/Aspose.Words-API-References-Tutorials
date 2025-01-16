@@ -19,11 +19,7 @@ Voordat we ingaan op het insluiten van OLE-objecten en ActiveX-besturingselement
 - Aspose.Words voor Python-bibliotheek geïnstalleerd
 - Een basiskennis van de structuur van Word-documenten
 
-## OLE-objecten insluiten
-
-Met OLE-objecten kunt u externe bestanden, zoals spreadsheets of presentaties, naadloos integreren in uw Word-documenten. Volg deze stappen om een OLE-object in te sluiten:
-
-### Stap 1: Vereiste bibliotheken toevoegen
+## Stap 1: Vereiste bibliotheken toevoegen
 
 Begin met het importeren van de benodigde modules uit de Aspose.Words-bibliotheek en eventuele andere afhankelijkheden:
 
@@ -31,7 +27,7 @@ Begin met het importeren van de benodigde modules uit de Aspose.Words-bibliothee
 import aspose.words as aw
 ```
 
-### Stap 2: Een Word-document maken
+## Stap 2: Een Word-document maken
 
 Maak een nieuw Word-document met Aspose.Words voor Python:
 
@@ -39,42 +35,16 @@ Maak een nieuw Word-document met Aspose.Words voor Python:
 doc = aw.Document()
 ```
 
-### Stap 3: Een OLE-object invoegen
+## Stap 3: Een OLE-object invoegen
 
 Nu kunt u een OLE-object in uw document invoegen. Laten we bijvoorbeeld een Excel-spreadsheet insluiten:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## ActiveX-besturingselementen insluiten
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", Waar, Waar, Geen)
 
-ActiveX-besturingselementen brengen interactiviteit in uw documenten, waardoor gebruikers kunnen interacteren met ingesloten content. Volg deze stappen om een ActiveX-besturingselement in te sluiten:
-
-### Stap 1: Vereiste bibliotheken toevoegen
-
-Net als bij OLE-objecten begint u met het importeren van de benodigde modules:
-
-```python
-import aspose.words as aw
-```
-
-### Stap 2: Een Word-document maken
-
-Maak een nieuw Word-document:
-
-```python
-doc = aw.Document()
-```
-
-### Stap 3: Een ActiveX-besturingselement invoegen
-
-Stel dat u een multimediaspeler wilt insluiten. Zo doet u dat:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Interactiviteit en functionaliteit verbeteren

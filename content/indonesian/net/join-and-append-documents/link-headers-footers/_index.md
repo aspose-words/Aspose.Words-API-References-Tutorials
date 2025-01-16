@@ -92,4 +92,4 @@ Aspose.Words mendukung berbagai versi .NET Framework dan .NET Core, memastikan k
 Ya, Anda dapat menghapus tautan header dan footer menggunakan metode API Aspose.Words untuk memulihkan format dokumen individual.
 
 ### Di mana saya dapat menemukan dokumentasi yang lebih rinci tentang Aspose.Words untuk .NET?
- Mengunjungi[Dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/)untuk panduan lengkap dan referensi API.
+ Mengunjungi[Dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/) untuk panduan lengkap dan referensi API.

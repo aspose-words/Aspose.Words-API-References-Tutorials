@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Replacing;
 ```
 
-Nyní si tento proces rozdělíme na stravitelné kroky. Připraveni? Jdeme!
+Nyní si tento proces rozdělíme na stravitelné kroky. Připraveni? Jdeme na to!
 
 ## Krok 1: Nastavte své prostředí
 
@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Vytváříme a`FindReplaceOptions`objektu a nastavením zarovnání odstavce na střed.
+ Vytváříme a`FindReplaceOptions` objektu a nastavením zarovnání odstavce na střed.
 
 ## Krok 4: Nahraďte text metaznaky
 
 V tomto kroku se stane kouzlo! Nahradíme slovo „sekce“ následované zalomením odstavce a přidáme podtržení.
 
 ```csharp
-// Zdvojnásobte každý konec odstavce za slovem „sekce“, přidejte druh podtržení a nastavte jej na střed.
+//Zdvojnásobte každý konec odstavce za slovem „sekce“, přidejte druh podtržení a nastavte jej na střed.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

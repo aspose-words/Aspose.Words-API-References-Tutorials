@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`DocumentBuilder` — вспомогательный класс, упрощающий процесс создания документов.
+ The`DocumentBuilder` — вспомогательный класс, упрощающий процесс создания документов.
 
 ## Шаг 3: Начните таблицу
 

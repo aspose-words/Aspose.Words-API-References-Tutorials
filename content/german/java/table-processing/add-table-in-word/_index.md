@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Schritt 6: Erstellen Sie eine Tabelle und fügen Sie Zeilen hinzu
 
-Erstellen Sie ein neues`Table` Objekt und geben Sie die Anzahl der Zeilen und Spalten an.
+ Erstellen Sie ein neues`Table` Objekt und geben Sie die Anzahl der Zeilen und Spalten an.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Schritt 8: Speichern Sie das Dokument
 
- Speichern Sie das Word-Dokument am gewünschten Ort mit dem`save()` Verfahren.
+Speichern Sie das Word-Dokument am gewünschten Ort mit dem`save()` Verfahren.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Schritt 9: Vervollständigen Sie den Code
-
-Hier ist der vollständige Code zum Hinzufügen einer Tabelle in Word mit Aspose.Words für Java:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Schritt 5: Neues Word-Dokument erstellen
-        Document doc = new Document();
-
-        // Schritt 6: Erstellen Sie eine Tabelle und fügen Sie Zeilen hinzu
-        Table table = new Table(doc);
-        int rowCount = 5; // Anzahl der Zeilen in der Tabelle
-        int columnCount = 3; // Anzahl der Spalten in der Tabelle
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Schritt 7: Fügen Sie die Tabelle zum Dokument hinzu
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Schritt 8: Speichern Sie das Dokument
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Abschluss
@@ -131,7 +97,7 @@ Auf jeden Fall! Aspose.Words bietet umfassende Unterstützung für die Konvertie
 
 ### F3: Ist Aspose.Words für die Dokumentenverarbeitung auf Unternehmensebene geeignet?
 
-Tatsächlich ist Aspose.Words eine unternehmenstaugliche Lösung, der Tausende Entwickler weltweit aufgrund ihrer Zuverlässigkeit und Robustheit bei der Dokumentenverarbeitung vertrauen.
+Tatsächlich ist Aspose.Words eine unternehmenstaugliche Lösung, der Tausende Entwickler weltweit aufgrund ihrer Zuverlässigkeit und Robustheit bei der Dokumentverarbeitung vertrauen.
 
 ### F4: Kann ich den Tabellenzellen eine benutzerdefinierte Formatierung zuweisen?
 

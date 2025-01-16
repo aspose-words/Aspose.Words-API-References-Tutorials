@@ -114,7 +114,7 @@ Un campo ASK en Aspose.Words es un campo que solicita al usuario una entrada esp
 Sí, puedes insertar varios campos ASK en un documento, cada uno con indicaciones y respuestas únicas.
 
 ###  ¿Cuál es el propósito de la`PromptOnceOnMailMerge` property?
-El`PromptOnceOnMailMerge` La propiedad determina si el mensaje ASK aparece solo una vez durante una operación de combinación de correspondencia o cada vez.
+ El`PromptOnceOnMailMerge` La propiedad determina si el mensaje ASK aparece solo una vez durante una operación de combinación de correspondencia o cada vez.
 
 ### ¿Necesito actualizar el campo ASK después de configurar sus propiedades?
 Sí, actualizar el campo ASK garantiza que todas las propiedades se apliquen correctamente y que el campo funcione como se espera.

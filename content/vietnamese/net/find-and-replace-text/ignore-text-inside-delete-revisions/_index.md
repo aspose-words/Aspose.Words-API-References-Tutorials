@@ -17,7 +17,7 @@ Trước khi bắt đầu hướng dẫn này, hãy đảm bảo bạn đã đá
 - Kiến thức cơ bản về ngôn ngữ lập trình C#.
 - Visual Studio được cài đặt trên hệ thống của bạn.
 -  Aspose.Words cho thư viện .NET được tích hợp vào dự án của bạn. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
-- Truy cập vào Aspose.Words cho .NET[tài liệu](https://reference.aspose.com/words/net/) để tham khảo.
+-  Truy cập vào Aspose.Words cho .NET[tài liệu](https://reference.aspose.com/words/net/) để tham khảo.
 
 ## Nhập không gian tên
 
@@ -84,4 +84,4 @@ Có, bạn có thể quản lý và khôi phục các bản sửa đổi đã th
 Aspose.Words cho .NET được tối ưu hóa để xử lý hiệu quả các tài liệu lớn, bao gồm cả những tài liệu có nhiều bản sửa đổi được theo dõi.
 
 ### Tôi có thể tìm thêm tài nguyên và hỗ trợ cho Aspose.Words dành cho .NET ở đâu?
-Bạn có thể khám phá tài liệu toàn diện và nhận hỗ trợ từ cộng đồng Aspose.Words cho .NET tại[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8).
+ Bạn có thể khám phá tài liệu toàn diện và nhận hỗ trợ từ cộng đồng Aspose.Words cho .NET tại[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8).

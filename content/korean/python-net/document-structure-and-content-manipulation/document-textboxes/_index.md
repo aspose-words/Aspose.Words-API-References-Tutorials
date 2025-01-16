@@ -38,9 +38,15 @@ pip install aspose-words
 import aspose.words as aw
 
 doc = aw.Document()
-builder = aw.DocumentBuilder(doc)
-
-textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
+builder = aw.DocumentBuilder(doc=doc)
+textbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_BOX)
+textbox.width = 100
+textbox.height = 100
+textbox.text_box.layout_flow = aw.drawing.LayoutFlow.BOTTOM_TO_TOP
+textbox.append_child(aw.Paragraph(doc))
+builder.insert_node(textbox)
+builder.move_to(textbox.first_paragraph)
+builder.write('This text is flipped 90 degrees to the left.')
 ```
 
  이 코드에서 우리는 새로운 것을 생성합니다`Document` 그리고`DocumentBuilder` . 그`insert_text_box` 방법은 문서에 텍스트 상자를 추가하는 데 사용됩니다. 요구 사항에 따라 텍스트 상자의 내용, 위치 및 크기를 사용자 정의할 수 있습니다.

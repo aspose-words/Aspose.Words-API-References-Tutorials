@@ -9,7 +9,7 @@ url: /sv/net/find-and-replace-text/ignore-text-inside-fields/
 ---
 ## Introduktion
 
-I den här handledningen kommer vi att fördjupa oss i att manipulera text i fält i Word-dokument med Aspose.Words för .NET. Aspose.Words tillhandahåller robusta funktioner för dokumentbehandling, vilket gör att utvecklare kan automatisera uppgifter effektivt. Här kommer vi att fokusera på att ignorera text i fält, ett vanligt krav i scenarier för dokumentautomatisering.
+den här handledningen kommer vi att fördjupa oss i att manipulera text i fält i Word-dokument med Aspose.Words för .NET. Aspose.Words tillhandahåller robusta funktioner för dokumentbehandling, vilket gör att utvecklare kan automatisera uppgifter effektivt. Här kommer vi att fokusera på att ignorera text i fält, ett vanligt krav i scenarier för dokumentautomatisering.
 
 ## Förutsättningar
 
@@ -31,7 +31,7 @@ using System.Text.RegularExpressions;
 
 ## Steg 1: Skapa ett nytt dokument och byggare
 
- Initiera först ett nytt Word-dokument och ett`DocumentBuilder`objekt för att underlätta dokumentkonstruktion:
+ Initiera först ett nytt Word-dokument och ett`DocumentBuilder` objekt för att underlätta dokumentkonstruktion:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);

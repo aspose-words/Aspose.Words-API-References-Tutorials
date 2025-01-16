@@ -19,7 +19,7 @@ url: /ar/net/add-content-using-documentbuilder/build-table/
 - إطار عمل .NET (4.0 أو أعلى)
 - Aspose.Words لمكتبة .NET
 
- إذا لم يكن لديك Aspose.Words حتى الآن، فيمكنك بسهولة[تحميله هنا](https://releases.aspose.com/words/net/) يمكنك أيضًا البدء بـ[نسخة تجريبية مجانية](https://releases.aspose.com/) إذا كنت تريد اختبار المياه. بالنسبة لأولئك المستعدين للمغامرة، يمكنك[شراء ترخيص](https://purchase.aspose.com/buy) أو إذا كنت بحاجة إلى مزيد من الوقت للتقييم، فاحصل على[رخصة مؤقتة](https://purchase.aspose.com/temporary-license/).
+ إذا لم يكن لديك Aspose.Words حتى الآن، فيمكنك بسهولة[تحميله هنا](https://releases.aspose.com/words/net/) يمكنك أيضًا البدء بـ[نسخة تجريبية مجانية](https://releases.aspose.com/) إذا كنت تريد اختبار المياه. بالنسبة لأولئك المستعدين للمغامرة، يمكنك[شراء ترخيص](https://purchase.aspose.com/buy)أو إذا كنت بحاجة إلى مزيد من الوقت للتقييم، فاحصل على[رخصة مؤقتة](https://purchase.aspose.com/temporary-license/).
 
 ## استيراد مساحات الأسماء
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- عن طريق استخدام`StartTable`، نحن نخبر Aspose.Words بأننا على وشك إنشاء جدول.`InsertCell` تضيف الطريقة الخلية الأولى، و`AutoFit` يضمن أن أعمدتنا لها عرض ثابت.
+ عن طريق استخدام`StartTable` ، نحن نخبر Aspose.Words بأننا على وشك إنشاء جدول.`InsertCell` تضيف الطريقة الخلية الأولى، و`AutoFit` يضمن أن أعمدتنا لها عرض ثابت.
 
 ## الخطوة 3: تنسيق الصف الأول
 

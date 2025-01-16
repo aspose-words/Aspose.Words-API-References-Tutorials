@@ -38,7 +38,7 @@ using Aspose.Words.Drawing;
 
 ## الخطوة 1: إنشاء DocumentBuilder
 
-ال`DocumentBuilder` تساعدك الفئة على إضافة المحتوى وتنسيقه في المستند. من خلال إنشاء`DocumentBuilder` الكائن، فأنت تقوم بإعداد أداة لإدراج النص ومعالجته.
+ ال`DocumentBuilder` تساعدك الفئة على إضافة المحتوى وتنسيقه في المستند. من خلال إنشاء`DocumentBuilder` الكائن، فأنت تقوم بإعداد أداة لإدراج النص ومعالجته.
 
 ```csharp
 // قم بإنشاء مثيل DocumentBuilder للعمل مع المستند.

@@ -8,7 +8,7 @@ weight: 1640
 url: /zh/net/programming-with-markdownsaveoptions/
 ---
 
-使用 MarkdownSaveOptions 进行文字处理是一项深入的资源，可指导您使用适用于 .NET 的 Aspose.Words 库通过 MarkdownSaveOptions 进行文字处理。教程为您提供分步说明、完整的源代码和实际示例，帮助您理解和使用 MarkdownSaveOptions 将 Word 文档导出为 Markdown 格式。您将学习如何自定义导出选项，例如管理图像、对齐表格内容、转换样式等。对于希望使用适用于 .NET 的 Aspose.Words 将 Markdown 导出功能集成到其应用程序中的开发人员来说，此资源必不可少。
+使用 MarkdownSaveOptions 进行文字处理是一项深入的资源，可指导您使用适用于 .NET 的 Aspose.Words 库通过 MarkdownSaveOptions 进行文字处理。本教程为您提供分步说明、完整的源代码和实际示例，帮助您理解和使用 MarkdownSaveOptions 将 Word 文档导出为 Markdown 格式。您将学习如何自定义导出选项，例如管理图像、对齐表格内容、转换样式等。对于希望使用适用于 .NET 的 Aspose.Words 将 Markdown 导出功能集成到其应用程序中的开发人员来说，此资源必不可少。
 
  ## 教程
 | 标题 | 描述 |

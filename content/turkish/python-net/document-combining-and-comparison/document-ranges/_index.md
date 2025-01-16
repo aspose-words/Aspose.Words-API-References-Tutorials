@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Belgeleri Birleştirme
-
-Belgeleri sorunsuz bir şekilde birleştirmek değerli bir beceridir. Belgeler arasında gezinmek onları verimli bir şekilde birleştirmemize yardımcı olur:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Belgeleri Bölme
 
 Bazen bir belgeyi daha küçük parçalara bölmemiz gerekebilir. Belgede gezinmek bunu başarmamıza yardımcı olur:
@@ -117,8 +109,8 @@ Başlıklar ve altbilgiler genellikle ayrı bir işlem gerektirir. Bu bölgelerd
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

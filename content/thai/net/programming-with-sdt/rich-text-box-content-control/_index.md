@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ขั้นตอนที่ 2: สร้างเอกสารใหม่
 
-สร้างใหม่`Document` วัตถุซึ่งจะทำหน้าที่เป็นรากฐานให้เอกสาร Word ของคุณ
+ สร้างใหม่`Document` วัตถุซึ่งจะทำหน้าที่เป็นรากฐานให้เอกสาร Word ของคุณ
 
 ```csharp
 Document doc = new Document();

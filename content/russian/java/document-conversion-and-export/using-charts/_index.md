@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Измените ось X так, чтобы вместо даты отображалась категория.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Измеряется в единицах отображения оси Y (сотни).
+xAxis.setCrossesAt(3.0); //Измеряется в единицах отображения оси Y (сотни).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### Как отформатировать метки данных с помощью пользовательских числовых форматов?
 
- Вы можете форматировать метки данных, перейдя к`DataLabels` свойства серии и установка нужного формата кода с помощью`getNumberFormat().setFormatCode()`.
+Вы можете форматировать метки данных, перейдя к`DataLabels` свойства серии и установка нужного формата кода с помощью`getNumberFormat().setFormatCode()`.
 
 ### Как настроить свойства осей на диаграмме?
 
@@ -139,7 +139,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### Как создать другие типы диаграмм, например, точечные или площадные диаграммы?
 
-Вы можете создавать различные типы диаграмм, указав соответствующие`ChartType` при вставке диаграммы с помощью`builder.insertChart(ChartType.TYPE, width, height)`.
+ Вы можете создавать различные типы диаграмм, указав соответствующие`ChartType` при вставке диаграммы с помощью`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Как скрыть ось диаграммы?
 

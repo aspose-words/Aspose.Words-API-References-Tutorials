@@ -1,6 +1,6 @@
 ---
-title: Конвертировать Docx-файл в Markdown
-linktitle: Конвертировать Docx-файл в Markdown
+title: Конвертировать файл Docx в Markdown
+linktitle: Конвертировать файл Docx в Markdown
 second_title: API обработки документов Aspose.Words
 description: Узнайте, как преобразовать файлы DOCX в Markdown с помощью Aspose.Words для .NET. Следуйте нашему подробному руководству для бесшовной интеграции в ваши приложения .NET.
 type: docs
@@ -59,7 +59,7 @@ Aspose.Words поддерживает широкий спектр формато
 Да, Aspose.Words предоставляет надежные API для работы с таблицами, изображениями, форматированием текста и другими функциями в документах.
 
 ### Где я могу найти подробную документацию по Aspose.Words для .NET?
-Подробная документация доступна[здесь](https://reference.aspose.com/words/net/).
+ Подробная документация доступна[здесь](https://reference.aspose.com/words/net/).
 
 ### Как получить временную лицензию на Aspose.Words для .NET?
 Вы можете получить временную лицензию[здесь](https://purchase.aspose.com/temporary-license/).

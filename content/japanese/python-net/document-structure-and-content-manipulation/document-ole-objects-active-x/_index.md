@@ -19,11 +19,7 @@ OLE オブジェクトと ActiveX コントロールの埋め込みについて�
 - Aspose.Words for Python ライブラリがインストールされている
 - Word文書の構造に関する基本的な理解
 
-## OLE オブジェクトの埋め込み
-
-OLE オブジェクトを使用すると、スプレッドシートやプレゼンテーションなどの外部ファイルを Word 文書にシームレスに統合できます。OLE オブジェクトを埋め込むには、次の手順に従います。
-
-### ステップ1: 必要なライブラリの追加
+## ステップ1: 必要なライブラリの追加
 
 まず、Aspose.Words ライブラリから必要なモジュールとその他の依存関係をインポートします。
 
@@ -31,7 +27,7 @@ OLE オブジェクトを使用すると、スプレッドシートやプレゼ�
 import aspose.words as aw
 ```
 
-### ステップ2: Word文書を作成する
+## ステップ2: Word文書を作成する
 
 Aspose.Words for Python を使用して新しい Word 文書を作成します。
 
@@ -39,42 +35,16 @@ Aspose.Words for Python を使用して新しい Word 文書を作成します�
 doc = aw.Document()
 ```
 
-### ステップ3: OLEオブジェクトの挿入
+## ステップ3: OLEオブジェクトの挿入
 
 これで、ドキュメントに OLE オブジェクトを挿入できるようになりました。たとえば、Excel スプレッドシートを埋め込んでみましょう。
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## ActiveX コントロールの埋め込み
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", True, True, None)
 
-ActiveX コントロールはドキュメントにインタラクティブ性をもたらし、ユーザーが埋め込まれたコンテンツを操作できるようにします。ActiveX コントロールを埋め込むには、次の手順に従います。
-
-### ステップ1: 必要なライブラリの追加
-
-OLE オブジェクトの場合と同様に、まず必要なモジュールをインポートします。
-
-```python
-import aspose.words as aw
-```
-
-### ステップ2: Word文書を作成する
-
-新しい Word 文書を作成します。
-
-```python
-doc = aw.Document()
-```
-
-### ステップ3: ActiveXコントロールの挿入
-
-マルチメディア プレーヤーを埋め込みたいとします。その方法は次のとおりです。
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## インタラクティブ性と機能性の向上

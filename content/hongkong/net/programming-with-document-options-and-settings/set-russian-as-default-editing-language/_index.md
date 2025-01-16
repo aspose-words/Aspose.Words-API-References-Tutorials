@@ -46,7 +46,7 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
 ```
 
-在此步驟中，您將建立一個實例`LoadOptions`並設置其`DefaultEditingLanguage`財產給`EditingLanguage.Russian`。這告訴 Aspose.Words 在載入帶有這些選項的文件時將俄語視為預設編輯語言。
+在此步驟中，您將建立一個實例`LoadOptions`並設定其`DefaultEditingLanguage`財產給`EditingLanguage.Russian`。這告訴 Aspose.Words 在載入帶有這些選項的文件時將俄語視為預設編輯語言。
 
 ## 第 2 步：載入文檔
 

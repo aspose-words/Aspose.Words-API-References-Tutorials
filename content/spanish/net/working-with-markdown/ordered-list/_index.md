@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-El`ListIndent` El método sangra la lista y crea una sublista. Ahora estás creando una lista jerárquica, muy similar a una lista de tareas pendientes anidada.
+ El`ListIndent` El método sangra la lista y crea una sublista. Ahora estás creando una lista jerárquica, muy similar a una lista de tareas pendientes anidada.
 
 ## Conclusión
 

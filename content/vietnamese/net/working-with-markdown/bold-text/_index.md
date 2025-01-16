@@ -33,7 +33,7 @@ Bây giờ, chúng ta hãy cùng tìm hiểu quy trình in đậm văn bản tro
 
 ## Bước 1: Khởi tạo DocumentBuilder
 
-Các`DocumentBuilder` Lớp cung cấp một cách nhanh chóng và dễ dàng để thêm nội dung vào tài liệu của bạn. Hãy khởi tạo nó.
+ Các`DocumentBuilder` Lớp cung cấp một cách nhanh chóng và dễ dàng để thêm nội dung vào tài liệu của bạn. Hãy khởi tạo nó.
 
 ```csharp
 // Sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu.

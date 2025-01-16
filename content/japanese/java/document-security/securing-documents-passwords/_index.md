@@ -59,7 +59,7 @@ doc.save("path/to/your/secured/document.docx");
 
 ### Aspose.Words for Java のパスワード保護はどの程度安全ですか?
 
-Aspose.Words for Java のパスワード保護は極めて安全です。強力な暗号化アルゴリズムを使用して、ドキュメントを不正アクセスから保護します。
+Aspose.Words for Java のパスワード保護は極めて安全です。強力な暗号化アルゴリズムを使用して、ドキュメントが不正アクセスから保護されるようにします。
 
 ### パスワードを後で変更または削除できますか?
 

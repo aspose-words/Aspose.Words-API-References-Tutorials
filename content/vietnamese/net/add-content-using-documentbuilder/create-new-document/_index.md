@@ -55,7 +55,7 @@ Chúng ta vừa tạo một tài liệu Word trống. Thật tuyệt phải khô
 
 ### Khởi tạo DocumentBuilder
 
- Tiếp theo, chúng ta cần thêm một số nội dung vào tài liệu của mình. Đối với điều này, chúng ta sẽ sử dụng`DocumentBuilder`Giống như cây bút của chúng ta viết trên vải vậy.
+ Tiếp theo, chúng ta cần thêm một số nội dung vào tài liệu của mình. Đối với điều này, chúng ta sẽ sử dụng`DocumentBuilder`. Giống như cây bút của chúng ta viết trên vải vậy.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

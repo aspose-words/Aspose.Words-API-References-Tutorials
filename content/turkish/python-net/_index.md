@@ -26,12 +26,8 @@ Python için Aspose.Words kullanarak kelime belgesi işlemede ustalaşın. Eğit
 Aspose.Words for Python ile belge oluşturmada ustalaşın. Dinamik belgeler oluşturun, biçimlendirmeyi özelleştirin ve word belge işlemeyi kolaylaştırın.
 ### [Kelime Otomasyonu](./word-automation/)
 Aspose.Words for Python ile kelime işleme görevlerini otomatikleştirin. Belge yönetimini kolaylaştırın ve kelime otomasyonunda verimliliği artırın.
-### [Belge Zekası](./document-intelligence/)
-Aspose.Words for Python'ın Belge Zekası ile belgelerinizden değerli içgörüler elde edin. Analizi, metin çıkarmayı ve sınıflandırmayı otomatikleştirin.
 ### [Belge Dönüştürme](./document-conversion/)
 Aspose.Words for Python ile belgeleri formatlar arasında etkili bir şekilde dönüştürün. Word belge işlemeyi kolaylaştırın ve belge yönetimi görevlerinizi basitleştirin. 
-### [Belge Koruması](./document-protection/)
-Belgelerinizi Python için Aspose.Words ile güvenceye alın! Güçlü belge koruması için parola şifrelemesi, kullanıcı izinleri ve dijital imzalar uygulayın.
 ### [Belge Yapısı ve İçerik Düzenlemesi](./document-structure-and-content-manipulation/)
 Python ve .NET için Aspose.Words eğitimlerini keşfedin, belge yapısı ve içerik düzenlemesine odaklanın. Belge öğelerinde gezinmeyi, bunları çıkarmayı ve düzenlemeyi verimli bir şekilde öğrenin. Kaynak kod örnekleri sağlanmıştır.
 ### [İçerik Çıkarımı ve İşleme](./content-extraction-and-manipulation/)
@@ -42,7 +38,5 @@ Python ve .NET için Aspose.Words kullanarak belge birleştirme ve karşılaşt�
 Python ve .NET'te belge bölme ve biçimlendirmeyle ilgili Aspose.Words eğitimlerini keşfedin. Belgeleri verimli bir şekilde bölmeyi ve biçimlendirmeyi öğrenin, belge işleme görevlerinizi geliştirin. 
 ### [Belge Seçenekleri ve Ayarları](./document-options-and-settings/)
 Python ve .NET'te belge seçenekleri ve ayarları hakkında Aspose.Words eğitimlerini keşfedin. Adım adım rehberlik ve kaynak kodu örneklerini kullanarak belge oluşturma ve biçimlendirmeyi optimize etmeyi öğrenin.
-### [Veri Görselleştirme ve Biçimlendirme](./data-visualization-and-formatting/)
-Python ve .NET'te veri görselleştirme ve biçimlendirme üzerine Aspose.Words eğitimlerini keşfedin. Verileri etkili bir şekilde sunmayı, çarpıcı raporlar oluşturmayı ve belgeleri programatik olarak biçimlendirmeyi öğrenin.
 ### [Tablolar ve Biçimlendirme](./tables-and-formatting/)
 Python ve .NET uygulamalarında tablolar ve biçimlendirme hakkında Aspose.Words eğitimlerine dalın. Görsel olarak ilgi çekici belgeler için tablolar oluşturmayı, özelleştirmeyi ve biçimlendirmeyi öğrenin. 

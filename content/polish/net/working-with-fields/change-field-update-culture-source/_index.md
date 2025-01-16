@@ -83,7 +83,7 @@ I masz! Udało Ci się zmienić źródło kultury aktualizacji pola w Aspose.Wor
 ## Najczęściej zadawane pytania
 
 ###  Jaki jest cel ustawienia`LocaleId`?
-Ten`LocaleId` określa ustawienia kulturowe tekstu, które mają wpływ na sposób formatowania dat i innych danych zależnych od ustawień regionalnych.
+ Ten`LocaleId` określa ustawienia kulturowe tekstu, które mają wpływ na sposób formatowania dat i innych danych zależnych od ustawień regionalnych.
 
 ### Czy mogę użyć innego ustawienia regionalnego niż niemiecki?
  Tak, możesz ustawić`LocaleId`do dowolnego prawidłowego identyfikatora lokalizacji. Na przykład 1033 dla języka angielskiego (Stany Zjednoczone).

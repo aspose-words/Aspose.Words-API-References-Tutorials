@@ -49,7 +49,7 @@ Po načtení dokumentu je dalším krokem přístup ke kolekci polí formuláře
 FormFieldCollection formFields = doc.Range.FormFields;
 ```
 
- Vysvětlení: The`FormFields` vlastnictví`Range` objekt vám umožňuje přístup k polím formuláře v dokumentu. Tuto kolekci skladujeme v a`formFields` proměnnou pro další manipulaci.
+ Vysvětlení: The`FormFields` vlastnictvím`Range` objekt vám umožňuje přístup k polím formuláře v dokumentu. Tuto kolekci skladujeme v a`formFields` proměnnou pro další manipulaci.
 
 ## Krok 3: Manipulujte s poli formuláře
 

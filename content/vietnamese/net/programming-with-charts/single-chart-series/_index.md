@@ -112,7 +112,7 @@ Và bạn đã có nó! Bạn đã tùy chỉnh thành công một loạt biểu
 Aspose.Words for .NET là một thư viện mạnh mẽ cho phép bạn tạo, chỉnh sửa, chuyển đổi và thao tác các tài liệu Word theo cách lập trình.
 
 ### Tôi có thể sử dụng Aspose.Words miễn phí không?
- Vâng, bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/).
+Vâng, bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/).
 
 ### Làm thế nào để tôi nhận được hỗ trợ cho Aspose.Words?
  Bạn có thể nhận được sự hỗ trợ từ cộng đồng Aspose trên[diễn đàn](https://forum.aspose.com/c/words/8).

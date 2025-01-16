@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 第 2 步：开始创建表格
 
-接下来，您将开始创建表。`DocumentBuilder`类提供了一种插入和格式化表格的直接方法。
+接下来，您将开始创建表。`DocumentBuilder`类提供了一种插入和格式化表格的简单方法。
 
 ```csharp
 Table table = builder.StartTable();

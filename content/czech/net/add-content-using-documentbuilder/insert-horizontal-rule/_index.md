@@ -15,7 +15,7 @@ Ahoj, kolegové vývojáři! Ocitli jste se někdy po kolena v projektu dokument
 
 Než se ponoříme do toho nejnutnějšího, ujistěte se, že máte vše, co potřebujete, abyste mohli začít. Zde je rychlý kontrolní seznam:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Jakékoli IDE, které podporuje .NET, jako je Visual Studio.
 3. Základní znalost C#: Díky znalosti programování v C# bude tento tutoriál plynulejší.
 4. Adresář dokumentů: Budete potřebovat adresář, kam můžete ukládat dokumenty aplikace Word.
@@ -47,7 +47,7 @@ Otevřete vývojové prostředí (například Visual Studio) a vytvořte nový p
 
 ### Vytvořit nový dokument
 
- V hlavním souboru programu začněte vytvořením nové instance souboru`Document`třída. Toto bude naše prázdné plátno.
+ V hlavním souboru programu začněte vytvořením nové instance souboru`Document` třída. Toto bude naše prázdné plátno.
 
 ```csharp
 Document doc = new Document();
@@ -113,7 +113,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### Jak mohu začít s Aspose.Words pro .NET?
 
- Můžete začít stažením knihovny z[webové stránky](https://releases.aspose.com/words/net/) a přidejte jej do svého projektu .NET.
+Můžete začít stažením knihovny z[webové stránky](https://releases.aspose.com/words/net/) a přidejte jej do svého projektu .NET.
 
 ### Mohu používat Aspose.Words zdarma?
 
@@ -121,8 +121,8 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### Kde najdu další návody na Aspose.Words pro .NET?
 
-The[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) je skvělé místo, kde najdete podrobné návody a příklady.
+ The[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) je skvělé místo, kde najdete podrobné návody a příklady.
 
 ### Jak mohu získat podporu, pokud narazím na problémy?
 
-Podporu můžete získat návštěvou stránky[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).
+ Podporu můžete získat návštěvou stránky[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).

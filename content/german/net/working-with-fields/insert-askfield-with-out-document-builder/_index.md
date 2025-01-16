@@ -9,7 +9,7 @@ url: /de/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
 ## Einführung
 
-Möchten Sie die Dokumentenautomatisierung mit Aspose.Words für .NET meistern? Dann sind Sie hier genau richtig! Heute zeigen wir Ihnen, wie Sie ein ASK-Feld einfügen, ohne einen Dokument-Builder zu verwenden. Dies ist eine praktische Funktion, wenn Sie möchten, dass Ihr Dokument Benutzer zu bestimmten Eingaben auffordert, wodurch Ihre Word-Dokumente interaktiver und dynamischer werden. Lassen Sie uns also loslegen und Ihre Dokumente intelligenter machen!
+Möchten Sie die Dokumentenautomatisierung mit Aspose.Words für .NET meistern? Dann sind Sie hier genau richtig! Heute zeigen wir Ihnen, wie Sie ein ASK-Feld einfügen, ohne einen Dokumentgenerator zu verwenden. Dies ist eine praktische Funktion, wenn Sie möchten, dass Ihr Dokument Benutzer zu bestimmten Eingaben auffordert, wodurch Ihre Word-Dokumente interaktiver und dynamischer werden. Lassen Sie uns also loslegen und Ihre Dokumente intelligenter machen!
 
 ## Voraussetzungen
 
@@ -114,7 +114,7 @@ Ein ASK-Feld in Aspose.Words ist ein Feld, das den Benutzer beim Öffnen des Dok
 Ja, Sie können mehrere ASK-Felder in ein Dokument einfügen, jedes mit einzigartigen Eingabeaufforderungen und Antworten.
 
 ###  Was ist der Zweck der`PromptOnceOnMailMerge` property?
-Der`PromptOnceOnMailMerge` Die Eigenschaft legt fest, ob die ASK-Eingabeaufforderung während eines Serienbriefvorgangs nur einmal oder jedes Mal angezeigt wird.
+ Der`PromptOnceOnMailMerge` Die Eigenschaft legt fest, ob die ASK-Eingabeaufforderung während eines Serienbriefvorgangs nur einmal oder jedes Mal angezeigt wird.
 
 ### Muss ich das ASK-Feld aktualisieren, nachdem ich seine Eigenschaften festgelegt habe?
 Ja, durch die Aktualisierung des ASK-Felds wird sichergestellt, dass alle Eigenschaften korrekt angewendet werden und das Feld wie erwartet funktioniert.

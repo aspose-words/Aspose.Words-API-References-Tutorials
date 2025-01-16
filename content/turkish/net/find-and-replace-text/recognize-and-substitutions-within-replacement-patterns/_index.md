@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`Document` nesne Aspose.Words'ün çekirdeğidir. Tüm Word belgesini temsil eder.
+ The`Document` nesne Aspose.Words'ün çekirdeğidir. Tüm Word belgesini temsil eder.
 
 ## Adım 2: Belgeye Metin Ekleyin
 
@@ -50,7 +50,7 @@ The`Document` nesne Aspose.Words'ün çekirdeğidir. Tüm Word belgesini temsil 
 builder.Write("Jason give money to Paul.");
 ```
 
-The`DocumentBuilder` class, belgenize metin ve diğer öğeleri eklemek için güçlü bir araçtır.
+ The`DocumentBuilder` class, belgenize metin ve diğer öğeleri eklemek için güçlü bir araçtır.
 
 ## Adım 3: Regex Desenini Tanımlayın
 
@@ -70,7 +70,7 @@ Aspose.Words, yer değiştirmelerinizde yer değiştirmeler kullanmanıza olanak
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
-The`FindReplaceOptions` sınıfı, bul ve değiştir işlemlerinizi özelleştirmek için çeşitli seçenekler sunar.
+ The`FindReplaceOptions` sınıfı, bul ve değiştir işlemlerinizi özelleştirmek için çeşitli seçenekler sunar.
 
 ## Adım 5: Değiştirmeyi Gerçekleştirin
 

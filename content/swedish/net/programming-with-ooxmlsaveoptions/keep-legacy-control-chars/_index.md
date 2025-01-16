@@ -9,7 +9,7 @@ url: /sv/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
 ## Introduktion
 
-Har du någonsin varit förbryllad över de konstiga, osynliga kontrolltecken i dina Word-dokument? De är som små, dolda gremlins som kan förstöra formatering och funktionalitet. Lyckligtvis tillhandahåller Aspose.Words för .NET en praktisk funktion för att hålla dessa äldre kontrolltecken intakta när du sparar dokument. I den här handledningen kommer vi att dyka djupt in i hur man hanterar dessa kontrolltecken med Aspose.Words för .NET. Vi delar upp det steg-för-steg, så att du förstår varje detalj på vägen. Redo att komma igång? Låt oss dyka in!
+Har du någonsin varit förbryllad över de konstiga, osynliga kontrolltecken i dina Word-dokument? De är som små, dolda gremlins som kan förstöra formatering och funktionalitet. Lyckligtvis tillhandahåller Aspose.Words för .NET en praktisk funktion för att hålla dessa äldre kontrolltecken intakta när du sparar dokument. I den här handledningen kommer vi att dyka djupt in i hur man hanterar dessa kontrolltecken med Aspose.Words för .NET. Vi delar upp det steg-för-steg, så att du förstår varje detalj på vägen. Redo att börja? Låt oss dyka in!
 
 ## Förutsättningar
 

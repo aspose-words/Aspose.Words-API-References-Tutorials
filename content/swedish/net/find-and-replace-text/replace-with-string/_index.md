@@ -71,7 +71,7 @@ Det är här den verkliga handlingen sker. Vi ska hitta ordet "tråkigt" och ers
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-De`Replace`metoden är okomplicerad. Vi anger ordet att hitta, ersättningsordet och alternativen för sök-och-ersätt-operationen.
+ De`Replace`metoden är okomplicerad. Vi anger ordet att hitta, ersättningsordet och alternativen för sök-och-ersätt-operationen.
 
 ## Steg 5: Spara dokumentet
 

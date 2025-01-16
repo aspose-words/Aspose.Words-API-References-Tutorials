@@ -112,4 +112,4 @@ Tentu saja! Anda dapat membuat skrip untuk mengotomatiskan proses ini untuk bebe
 
 ### Di mana saya bisa mendapatkan bantuan jika saya menghadapi masalah?
 
-Itu[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) adalah tempat yang bagus untuk mendapatkan bantuan dan menemukan solusi untuk masalah umum.
+ Itu[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) adalah tempat yang bagus untuk mendapatkan bantuan dan menemukan solusi untuk masalah umum.

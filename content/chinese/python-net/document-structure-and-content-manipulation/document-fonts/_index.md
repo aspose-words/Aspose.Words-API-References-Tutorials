@@ -37,7 +37,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/document-fonts/
 
 ## 对齐和行距
 
-文本对齐会影响文档的美观度。将文本左对齐、右对齐、居中对齐或两端对齐，以获得美观的外观。适当的行距可提高可读性并防止文本显得拥挤。
+文本对齐会影响文档的美观度。左对齐、右对齐、居中对齐或两端对齐可使文本看起来更美观。适当的行距可提高可读性，避免文本显得拥挤。
 
 ## 创建标题和副标题
 
@@ -54,12 +54,13 @@ Aspose.Words for Python 是一款功能强大的工具，可用于以编程方�
 ```python
 # Import the required classes
 from aspose.words import Document, Font, Style
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply italic style
 font = run.font
@@ -76,12 +77,13 @@ doc.save("modified_document.docx")
 ```python
 # Import the required classes
 from aspose.words import Document, Color
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply background color
 run.font.highlight_color = Color.YELLOW
@@ -92,20 +94,21 @@ doc.save("modified_document.docx")
 
 ### 调整文本对齐
 
-可以使用样式来设置对齐方式。以下是示例：
+可以使用样式设置对齐方式。以下是示例：
 
 ```python
 # Import the required classes
 from aspose.words import Document, ParagraphAlignment
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set alignment
-paragraph.paragraph_format.alignment = ParagraphAlignment.RIGHT
+paragraph.paragraph_format.alignment = aw.ParagraphAlignment.RIGHT
 
 # Save the modified document
 doc.save("modified_document.docx")
@@ -118,12 +121,13 @@ doc.save("modified_document.docx")
 ```python
 # Import the required classes
 from aspose.words import Document, LineSpacingRule
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set line spacing
 paragraph.paragraph_format.line_spacing_rule = LineSpacingRule.MULTIPLE

@@ -20,7 +20,7 @@ Aspose.Words untuk Java adalah pustaka pemrosesan dokumen canggih yang memungkin
 
 ## 3. Menyiapkan Lingkungan Pengembangan Anda
 
-Untuk memulai, pastikan Anda telah menginstal Aspose.Words untuk Java di lingkungan pengembangan Anda. Anda dapat mengunduhnya dari[Halaman Unduhan Aspose](https://releases.aspose.com/words/java/)Setelah terinstal, Anda dapat mulai membuat kode.
+ Untuk memulai, pastikan Anda telah menginstal Aspose.Words untuk Java di lingkungan pengembangan Anda. Anda dapat mengunduhnya dari[Halaman Unduhan Aspose](https://releases.aspose.com/words/java/)Setelah terinstal, Anda dapat mulai membuat kode.
 
 ## 4. Menerapkan Lisensi
 
@@ -48,7 +48,7 @@ Setelah menerapkan lisensi, uji aplikasi Aspose.Words Anda secara menyeluruh unt
 ## Kode Sumber Lengkap
 ```java
         License license = new License();
-        //Baris ini mencoba menetapkan lisensi dari beberapa lokasi relatif terhadap file yang dapat dieksekusi dan Aspose.Words.dll.
+        // Baris ini mencoba menetapkan lisensi dari beberapa lokasi relatif terhadap file yang dapat dieksekusi dan Aspose.Words.dll.
         // Anda juga dapat menggunakan kelebihan beban tambahan untuk memuat lisensi dari aliran, ini berguna,
         // misalnya, ketika lisensi disimpan sebagai sumber daya tertanam.
         try

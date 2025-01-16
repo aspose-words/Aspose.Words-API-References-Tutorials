@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-그만큼`DocumentBuilder` 문서 작성 과정을 단순화하는 도우미 클래스입니다.
+ 그만큼`DocumentBuilder` 문서 작성 과정을 단순화하는 도우미 클래스입니다.
 
 ## 3단계: 테이블 시작
 
@@ -157,7 +157,7 @@ doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 
 ## 결론
 
-이제 다 됐습니다! 다음 단계를 따르면 Aspose.Words for .NET을 사용하여 Word 문서에서 잘 포맷된 표를 만들 수 있습니다. 이 강력한 라이브러리를 사용하면 Word 문서를 프로그래밍 방식으로 쉽게 조작하여 시간과 노력을 절약할 수 있습니다.
+이제 다 됐어요! 다음 단계를 따르면 Aspose.Words for .NET을 사용하여 Word 문서에서 잘 포맷된 표를 만들 수 있습니다. 이 강력한 라이브러리를 사용하면 Word 문서를 프로그래밍 방식으로 쉽게 조작할 수 있어 시간과 노력을 절약할 수 있습니다.
 
 ## 자주 묻는 질문
 

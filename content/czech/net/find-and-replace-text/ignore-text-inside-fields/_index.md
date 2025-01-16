@@ -9,7 +9,7 @@ url: /cs/net/find-and-replace-text/ignore-text-inside-fields/
 ---
 ## Zavedení
 
-V tomto tutoriálu se ponoříme do manipulace s textem uvnitř polí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Aspose.Words poskytuje robustní funkce pro zpracování dokumentů, což umožňuje vývojářům efektivně automatizovat úkoly. Zde se zaměříme na ignorování textu uvnitř polí, což je běžný požadavek ve scénářích automatizace dokumentů.
+tomto tutoriálu se ponoříme do manipulace s textem uvnitř polí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Aspose.Words poskytuje robustní funkce pro zpracování dokumentů, což umožňuje vývojářům efektivně automatizovat úkoly. Zde se zaměříme na ignorování textu uvnitř polí, což je běžný požadavek ve scénářích automatizace dokumentů.
 
 ## Předpoklady
 
@@ -31,7 +31,7 @@ using System.Text.RegularExpressions;
 
 ## Krok 1: Vytvořte nový dokument a tvůrce
 
- Nejprve inicializujte nový dokument aplikace Word a a`DocumentBuilder`objekt pro usnadnění konstrukce dokumentu:
+ Nejprve inicializujte nový dokument aplikace Word a a`DocumentBuilder` objekt pro usnadnění konstrukce dokumentu:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);

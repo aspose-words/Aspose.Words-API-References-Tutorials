@@ -15,7 +15,7 @@ Trong thời đại kỹ thuật số ngày nay, việc quản lý kích thướ
 
 Trước khi bắt đầu hướng dẫn, hãy đảm bảo bạn đã đáp ứng đủ các điều kiện tiên quyết sau:
 
-1.  Aspose.Words cho .NET: Bạn cần phải cài đặt Aspose.Words cho .NET. Bạn có thể tải xuống từ[Trang web Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words cho .NET: Bạn cần phải cài đặt Aspose.Words cho .NET. Bạn có thể tải xuống từ[Trang web Aspose](https://releases.aspose.com/words/net/).
 
 2. Kiến thức cơ bản về C#: Sự quen thuộc với lập trình C# sẽ giúp bạn hiểu các ví dụ mã được cung cấp trong hướng dẫn này.
 

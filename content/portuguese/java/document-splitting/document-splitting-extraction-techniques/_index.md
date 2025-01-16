@@ -8,7 +8,7 @@ weight: 14
 url: /pt/java/document-splitting/document-splitting-extraction-techniques/
 ---
 
-No mundo da manipulação e extração de documentos, o Aspose.Words para Java se destaca como uma ferramenta poderosa. Este guia abrangente o levará pelas etapas essenciais de divisão e extração de documentos com o Aspose.Words para Java. Seja você um desenvolvedor experiente ou apenas começando com esta biblioteca, este guia passo a passo com exemplos de código-fonte o ajudará a dominar a arte da manipulação de documentos.
+No mundo da manipulação e extração de documentos, o Aspose.Words para Java se destaca como uma ferramenta poderosa. Este guia abrangente o levará pelas etapas essenciais de divisão e extração de documentos com o Aspose.Words para Java. Seja você um desenvolvedor experiente ou esteja apenas começando com esta biblioteca, este guia passo a passo com exemplos de código-fonte o ajudará a dominar a arte da manipulação de documentos.
 
 ## Introdução
 
@@ -80,7 +80,7 @@ Document doc = new Document("input.docx");
 // Crie um extrator de imagens
 ImageExtractor extractor = new ImageExtractor(doc);
 
-// Extrair imagens do documento
+//Extrair imagens do documento
 while (extractor.hasNext()) {
     extractor.getNextImage("output_" + extractor.getCurrentImageIndex() + ".png");
 }

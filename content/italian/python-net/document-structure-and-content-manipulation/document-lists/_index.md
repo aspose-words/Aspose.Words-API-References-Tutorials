@@ -16,7 +16,7 @@ Gli elenchi sono di due tipi principali: puntati e numerati. Ti consentono di pr
 
 ## Impostazione dell'ambiente
 
-Prima di immergerci nella creazione e gestione di elenchi, assicurati di avere installata la libreria Aspose.Words for Python. Puoi scaricarla da[Qui](https://releases.aspose.com/words/python/) . Inoltre, fare riferimento alla documentazione API all'indirizzo[questo collegamento](https://reference.aspose.com/words/python-net/) per informazioni dettagliate.
+ Prima di immergerci nella creazione e gestione di elenchi, assicurati di avere installata la libreria Aspose.Words for Python. Puoi scaricarla da[Qui](https://releases.aspose.com/words/python/) . Inoltre, fare riferimento alla documentazione API all'indirizzo[questo collegamento](https://reference.aspose.com/words/python-net/) per informazioni dettagliate.
 
 ## Creazione di elenchi puntati
 
@@ -69,11 +69,6 @@ doc.list_templates.add(list_template)
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
 
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
-
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]
 for text in list_item_texts:
@@ -86,7 +81,7 @@ for text in list_item_texts:
 
 ## Personalizzazione della formattazione dell'elenco
 
-Puoi personalizzare ulteriormente l'aspetto degli elenchi modificando le opzioni di formattazione, come gli stili dei punti elenco, i formati di numerazione e l'allineamento.
+Puoi personalizzare ulteriormente l'aspetto dei tuoi elenchi modificando le opzioni di formattazione, come gli stili dei punti elenco, i formati di numerazione e l'allineamento.
 
 ## Gestione dei livelli di elenco
 
@@ -102,7 +97,7 @@ Se si desidera convertire del testo esistente in elenchi, Aspose.Words Python fo
 
 ## Rimozione degli elenchi
 
-Rimuovere un elenco è importante quanto crearne uno. Puoi rimuovere gli elenchi in modo programmatico usando l'API.
+Rimuovere un elenco è importante quanto crearne uno. Puoi rimuovere gli elenchi a livello di programmazione usando l'API.
 
 ## Salvataggio ed esportazione di documenti
 

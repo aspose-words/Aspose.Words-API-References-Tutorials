@@ -71,7 +71,7 @@ builder.StartBookmark("FineBookmark");
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-ال`Writeln` تضيف الطريقة فقرة جديدة بالنص المحدد إلى المستند.
+ ال`Writeln` تضيف الطريقة فقرة جديدة بالنص المحدد إلى المستند.
 
 ## الخطوة 5: إنهاء الإشارة المرجعية
 
@@ -81,7 +81,7 @@ builder.Writeln("This is just a fine bookmark.");
 builder.EndBookmark("FineBookmark");
 ```
 
-ال`EndBookmark` تكمل الطريقة الإشارة المرجعية التي بدأناها سابقًا.
+ ال`EndBookmark` تكمل الطريقة الإشارة المرجعية التي بدأناها سابقًا.
 
 ## الخطوة 6: حفظ المستند
 

@@ -15,7 +15,7 @@ Dalam dunia pemrosesan dokumen, teks dua arah (Bidi) sering kali agak sulit dike
 
 Sebelum kita masuk ke kode, pastikan Anda memiliki yang berikut ini:
 
-1.  Aspose.Words untuk .NET: Anda perlu menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Halaman Unduhan Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words untuk .NET: Anda perlu menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Halaman Unduhan Aspose](https://releases.aspose.com/words/net/).
 2. .NET Framework atau .NET Core: Pastikan Anda telah menyiapkan lingkungan .NET yang kompatibel untuk menjalankan contoh tersebut.
 3. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# dan operasi dasar di .NET.
 

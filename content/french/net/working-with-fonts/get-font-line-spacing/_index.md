@@ -71,7 +71,7 @@ Pour obtenir l'espacement des lignes, nous devons accéder à l'objet de police 
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 ```
 
-## Étape 6 : Obtenez l'espacement des lignes
+## Étape 6 : Obtenir l'espacement des lignes
 
 Enfin, nous récupérons l’espacement des lignes de l’objet de police et l’imprimons sur la console.
 

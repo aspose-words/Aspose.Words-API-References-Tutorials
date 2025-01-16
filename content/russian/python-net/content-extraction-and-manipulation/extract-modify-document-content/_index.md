@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## Изменение текста
-
-Вы можете изменять текст, напрямую задавая текст разделов или абзацев:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## Работа с форматированием
 
 Aspose.Words позволяет работать со стилями форматирования:

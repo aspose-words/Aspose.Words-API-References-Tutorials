@@ -23,7 +23,7 @@ Antes de profundizar en los detalles de los estilos y formatos de tablas de docu
 2. Importe la biblioteca: importe la biblioteca Aspose.Words en su script de Python utilizando la siguiente declaración de importación:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. Cargar un documento: cargue un documento existente o cree uno nuevo utilizando la API Aspose.Words.
@@ -35,7 +35,7 @@ Para crear e insertar tablas en documentos usando Aspose.Words para Python, siga
 1.  Crear una tabla: utilice el`DocumentBuilder` clase para crear una nueva tabla y especificar el número de filas y columnas.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ Para crear e insertar tablas en documentos usando Aspose.Words para Python, siga
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. Relleno de celdas: agregue relleno a las celdas para mejorar el espaciado.
@@ -80,32 +80,8 @@ Para crear e insertar tablas en documentos usando Aspose.Words para Python, siga
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Cómo diseñar tablas con Aspose.Words
-
-Aspose.Words para Python ofrece una variedad de opciones de estilo para que sus tablas sean visualmente atractivas:
-
-1. Estilos de tabla: aplique estilos de tabla predefinidos para lograr una apariencia profesional.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. Color de fondo de la celda: cambia el color de fondo de la celda para resaltar datos específicos.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. Formato de fuente: personalice el estilo, el tamaño y el color de la fuente para una mejor legibilidad.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## Cómo fusionar y dividir celdas para diseños complejos
@@ -115,30 +91,14 @@ La creación de diseños de tablas complejos a menudo requiere fusionar y dividi
 1. Fusionar celdas: fusiona varias celdas para crear una sola celda más grande.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. Dividir celdas: divide las celdas nuevamente en sus componentes individuales.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## Ajuste de alturas y anchos de filas y columnas
-
-Ajuste las dimensiones de filas y columnas para lograr un diseño de tabla equilibrado:
-
-1. Ajustar la altura de la fila: modifica la altura de la fila según el contenido.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. Ajustar ancho de columna: ajusta automáticamente el ancho de la columna para adaptarse al contenido.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## Cómo agregar bordes y sombreado a las tablas
@@ -148,13 +108,13 @@ Mejore la apariencia de la tabla agregando bordes y sombreado:
 1. Bordes: personaliza los bordes de las tablas y celdas.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. Sombreado: aplique sombreado a las celdas para obtener un efecto visualmente atractivo.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## Cómo trabajar con contenido y alineación de celdas
@@ -171,7 +131,7 @@ Administre de manera eficiente el contenido y la alineación de las celdas para 
 2. Alineación de texto: alinee el texto de la celda según sea necesario.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## Manejo de encabezados y pies de tabla
@@ -188,26 +148,10 @@ Incorpore encabezados y pies de página en sus tablas para un mejor contexto:
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## Ajuste automático del diseño de la mesa
-
-Asegúrese de que el diseño de su tabla se ajuste automáticamente en función del contenido:
-
-1. Ajuste automático a la ventana: permite que la tabla se ajuste al ancho de la página.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. Cambio de tamaño automático de celdas: habilite el cambio de tamaño automático de celdas para adaptarse al contenido.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## Exportación de tablas a diferentes formatos
 
 Una vez que tu tabla esté lista, puedes exportarla a varios formatos, como PDF o DOCX:
@@ -215,21 +159,15 @@ Una vez que tu tabla esté lista, puedes exportarla a varios formatos, como PDF 
 1. Guardar como PDF: guarda el documento con la tabla como un archivo PDF.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. Guardar como DOCX: guarda el documento como un archivo DOCX.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## Solución de problemas y consejos para una gestión eficaz de las mesas
-
-- Si las tablas aparecen distorsionadas, verifique que el ancho de las columnas o la altura de las filas no sean correctos.
-- Pruebe la representación de la tabla en diferentes formatos para garantizar la coherencia.
-- Para diseños complejos, planifique cuidadosamente la fusión y división de celdas.
-
+	
 ## Conclusión
 
 Aspose.Words para Python ofrece un conjunto de herramientas completo para crear, diseñar y formatear tablas de documentos. Si sigue los pasos que se describen en este artículo, podrá administrar de manera eficaz las tablas de sus documentos, personalizar su apariencia y exportarlas a varios formatos. Aproveche el poder de Aspose.Words para mejorar las presentaciones de sus documentos y brindar información clara y visualmente atractiva a sus lectores.

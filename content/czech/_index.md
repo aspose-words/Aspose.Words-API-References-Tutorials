@@ -23,7 +23,7 @@ Zde jsou odkazy na některé užitečné zdroje:
 - [Práce s FormFields](./net/working-with-formfields/)   
 - [Práce se záhlavím a zápatím](./net/working-with-headers-and-footers/)   
 - [Práce s dělením slov](./net/working-with-hyphenation/)   
-- [Práce se seznamem](./net/working-with-list/)   
+- [Práce se Seznamem](./net/working-with-list/)   
 - [Práce s Markdown](./net/working-with-markdown/)   
 - [Práce s Node](./net/working-with-node/)   
 - [Práce s revizemi](./net/working-with-revisions/)   

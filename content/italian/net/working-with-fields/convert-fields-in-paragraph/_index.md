@@ -62,7 +62,7 @@ doc.FirstSection.Body.LastParagraph.Range.Fields
      .ForEach(f => f.Unlink());
 ```
 
-## Passaggio 4: Salvare il documento modificato
+## Passaggio 4: salvare il documento modificato
 
 Infine, salva il documento appena modificato. È qui che puoi ammirare il tuo lavoro e vedere i risultati della tua magia.
 

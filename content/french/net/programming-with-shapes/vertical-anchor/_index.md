@@ -9,7 +9,7 @@ url: /fr/net/programming-with-shapes/vertical-anchor/
 ---
 ## Introduction
 
-Avez-vous déjà eu besoin de contrôler exactement où le texte apparaît dans une zone de texte dans un document Word ? Vous souhaitez peut-être que votre texte soit ancré en haut, au milieu ou en bas de la zone de texte ? Si tel est le cas, vous êtes au bon endroit ! Dans ce didacticiel, nous allons découvrir comment utiliser Aspose.Words pour .NET pour définir l'ancrage vertical des zones de texte dans les documents Word. Considérez l'ancrage vertical comme la baguette magique qui positionne votre texte précisément là où vous le souhaitez dans son conteneur. Prêt à vous lancer ? Commençons !
+Avez-vous déjà eu besoin de contrôler exactement où le texte apparaît dans une zone de texte dans un document Word ? Peut-être souhaitez-vous que votre texte soit ancré en haut, au milieu ou en bas de la zone de texte ? Si tel est le cas, vous êtes au bon endroit ! Dans ce didacticiel, nous allons découvrir comment utiliser Aspose.Words pour .NET pour définir l'ancrage vertical des zones de texte dans les documents Word. Considérez l'ancrage vertical comme la baguette magique qui positionne votre texte précisément là où vous le souhaitez dans son conteneur. Prêt à vous lancer ? Commençons !
 
 ## Prérequis
 

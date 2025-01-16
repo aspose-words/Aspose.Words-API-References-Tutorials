@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Vysvětlení:
-The`DocumentBuilder` je užitečný nástroj, který poskytuje metody pro navigaci a úpravu dokumentu. Tady to spojujeme s naším cílovým dokumentem.
+ The`DocumentBuilder` je užitečný nástroj, který poskytuje metody pro navigaci a úpravu dokumentu. Tady to spojujeme s naším cílovým dokumentem.
 
 ## Krok 3: Přejděte na konec dokumentu a vložte konec stránky
 

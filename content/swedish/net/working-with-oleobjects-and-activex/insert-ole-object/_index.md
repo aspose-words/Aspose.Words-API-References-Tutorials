@@ -49,7 +49,7 @@ builder.InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
 
 ## Steg 3: Spara dokumentet
 
-Slutligen, spara ditt dokument på en angiven sökväg. Se till att vägen är korrekt och tillgänglig.
+Slutligen, spara ditt dokument på en angiven sökväg. Se till att sökvägen är korrekt och tillgänglig.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

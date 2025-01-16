@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-De`EvaluateCondition` metod returnerar en`FieldIfComparisonResult` enum som representerar resultatet av tillståndsutvärderingen. Denna uppräkning kan ha värden som`True`, `False` , eller`Unknown`.
+ De`EvaluateCondition` metod returnerar en`FieldIfComparisonResult` enum som representerar resultatet av tillståndsutvärderingen. Denna uppräkning kan ha värden som`True`, `False` , eller`Unknown`.
 
 ## Steg 4: Visa resultatet
 
@@ -93,7 +93,7 @@ Ett IF-fält är ett Word-fält som låter dig infoga villkorlig logik i ditt do
  Du kan infoga ett IF-fält med hjälp av`InsertField` metod för`DocumentBuilder` klass och anger det tillstånd du vill utvärdera.
 
 ###  Vad gör`EvaluateCondition` method do?
-De`EvaluateCondition` metoden utvärderar villkoret som anges i ett IF-fält och returnerar resultatet, vilket anger om villkoret är sant eller falskt.
+ De`EvaluateCondition` metoden utvärderar villkoret som anges i ett IF-fält och returnerar resultatet, vilket anger om villkoret är sant eller falskt.
 
 ### Kan jag använda komplexa villkor med IF-fältet?
 Ja, du kan använda komplexa villkor med IF-fältet genom att specificera olika uttryck och jämförelser efter behov.

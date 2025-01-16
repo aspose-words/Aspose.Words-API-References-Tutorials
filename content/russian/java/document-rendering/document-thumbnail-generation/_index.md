@@ -40,7 +40,7 @@ Document doc = new Document("sample.docx");
 ```java
 // Код Java для создания миниатюры документа
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ stream.writeTo(outputStream);
 
 ### Как установить Aspose.Words для Java?
 
- Чтобы установить Aspose.Words для Java, посетите страницу загрузки[здесь](https://releases.aspose.com/words/java/)и следуйте предоставленным инструкциям по установке.
+Чтобы установить Aspose.Words для Java, посетите страницу загрузки[здесь](https://releases.aspose.com/words/java/)и следуйте предоставленным инструкциям по установке.
 
 ### Могу ли я настроить размер создаваемой миниатюры?
 

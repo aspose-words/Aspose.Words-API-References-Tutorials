@@ -130,7 +130,7 @@ Và bạn đã có nó! Bạn đã tạo thành công một dòng chữ ký mớ
 ## Câu hỏi thường gặp
 
 ### Tôi có thể tùy chỉnh giao diện của dòng chữ ký không?
-Chắc chắn rồi! Bạn có thể điều chỉnh nhiều tùy chọn khác nhau trong`SignatureLineOptions` để phù hợp với nhu cầu của bạn.
+ Chắc chắn rồi! Bạn có thể điều chỉnh nhiều tùy chọn khác nhau trong`SignatureLineOptions`để phù hợp với nhu cầu của bạn.
 
 ### Nếu tôi không có chứng chỉ PFX thì sao?
 Bạn sẽ cần phải có được một chứng chỉ từ một cơ quan cấp chứng chỉ đáng tin cậy. Chứng chỉ này rất cần thiết để ký tài liệu kỹ thuật số.

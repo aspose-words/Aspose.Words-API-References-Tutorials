@@ -76,7 +76,7 @@ internal class ResourceSteamFontSource : StreamFontSource
 
 ## Krok 5: Uložte dokument
 
-Po použití nastavení písma nakonec dokument uložte. Uložte jej ve formátu dle vašeho výběru; zde, uložíme jej jako PDF.
+Po použití nastavení písma nakonec dokument uložte. Uložte jej ve formátu, který si zvolíte; zde, uložíme jej jako PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");

@@ -16,7 +16,7 @@ url: /ru/python-net/document-structure-and-content-manipulation/document-lists/
 
 ## Настройка окружающей среды
 
-Прежде чем погрузиться в создание и управление списками, убедитесь, что у вас установлена библиотека Aspose.Words for Python. Вы можете загрузить ее с[здесь](https://releases.aspose.com/words/python/) . Кроме того, обратитесь к документации API по адресу[эта ссылка](https://reference.aspose.com/words/python-net/) для получения подробной информации.
+ Прежде чем погрузиться в создание и управление списками, убедитесь, что у вас установлена библиотека Aspose.Words for Python. Вы можете загрузить ее с[здесь](https://releases.aspose.com/words/python/) . Кроме того, обратитесь к документации API по адресу[эта ссылка](https://reference.aspose.com/words/python-net/) для получения подробной информации.
 
 ## Создание маркированных списков
 
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]

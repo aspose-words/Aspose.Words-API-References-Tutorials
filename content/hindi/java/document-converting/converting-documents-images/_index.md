@@ -71,7 +71,7 @@ try {
 `ImageSaveOptions` एक वर्ग है जो आपको यह निर्दिष्ट करने की अनुमति देता है कि दस्तावेज़ को छवि के रूप में कैसे सहेजा जाना चाहिए।
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 स्पष्टीकरण:

@@ -27,7 +27,7 @@ Daha sonra Markdown formatına dönüştüreceğimiz bir Word belgesi oluşturar
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//İki hücreli bir tablo ekle
+// İki hücreli bir tablo ekle
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// Tablo içerik hizalamasını otomatik olarak ayarlayın (ilk paragraf tarafından belirlenir)
+//Tablo içerik hizalamasını otomatik olarak ayarlayın (ilk paragraf tarafından belirlenir)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## Adım 3: Görüntülerin İşlenmesi
 
-Markdown belgenize resimler eklemek için resimlerin bulunduğu klasörü belirtmeniz gerekir. Java için Aspose.Words, resimler klasörünü`MarkdownSaveOptions`.
+ Markdown belgenize resimler eklemek için resimlerin bulunduğu klasörü belirtmeniz gerekir. Java için Aspose.Words, resimler klasörünü`MarkdownSaveOptions`.
 
 İşte images klasörünü nasıl ayarlayacağınız ve belgeyi images ile nasıl kaydedeceğiniz:
 

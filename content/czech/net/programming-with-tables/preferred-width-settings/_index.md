@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-The`PreferredWidth.Auto` nastavení umožňuje, aby se tato buňka roztahovala nebo smršťovala na základě prostoru, který zbyde po započtení ostatních buněk. To zajišťuje, že rozložení stolu vypadá vyváženě a profesionálně.
+ The`PreferredWidth.Auto` nastavení umožňuje, aby se tato buňka roztahovala nebo smršťovala na základě prostoru, který zbyde po započtení ostatních buněk. To zajišťuje, že rozložení stolu vypadá vyváženě a profesionálně.
 
 ## Krok 5: Dokončete a uložte dokument
 

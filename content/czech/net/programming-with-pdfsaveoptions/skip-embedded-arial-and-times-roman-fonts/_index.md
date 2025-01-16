@@ -67,7 +67,7 @@ Tento příkaz uloží váš dokument jako PDF s názvem "OptimizedPDF.pdf" do z
 
 ## Závěr
 
-A tady to máte! Právě jste se naučili, jak optimalizovat velikost souboru PDF přeskočením vkládání písem Arial a Times Roman pomocí Aspose.Words pro .NET. Tato jednoduchá úprava může výrazně zmenšit velikost souborů, což usnadňuje jejich sdílení a ukládání. Je to jako jít do posilovny pro soubory PDF, shodit zbytečnou váhu a přitom zachovat všechny náležitosti nedotčené.
+tady to máte! Právě jste se naučili, jak optimalizovat velikost souboru PDF přeskočením vkládání písem Arial a Times Roman pomocí Aspose.Words pro .NET. Tato jednoduchá úprava může výrazně zmenšit velikost souborů, což usnadňuje jejich sdílení a ukládání. Je to jako jít do posilovny pro soubory PDF, shodit zbytečnou váhu a přitom zachovat všechny náležitosti nedotčené.
 
 ## FAQ
 
@@ -81,7 +81,7 @@ Ne, nebude. Vzhledem k tomu, že Arial a Times Roman jsou standardní písma, z�
 Ano, můžete nakonfigurovat možnosti uložení tak, aby se v případě potřeby vynechalo vkládání jiných písem.
 
 ### Je Aspose.Words for .NET zdarma?
-Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/) , ale pro plný přístup je potřeba zakoupit licenci[zde](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/) , ale pro plný přístup je potřeba zakoupit licenci[zde](https://purchase.aspose.com/buy).
 
 ### Kde najdu další návody na Aspose.Words pro .NET?
- Můžete najít komplexní dokumentaci a návody[zde](https://reference.aspose.com/words/net/).
+Můžete najít komplexní dokumentaci a návody[zde](https://reference.aspose.com/words/net/).

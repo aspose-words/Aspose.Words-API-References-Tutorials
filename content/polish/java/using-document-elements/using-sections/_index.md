@@ -30,7 +30,7 @@ public void addSection() throws Exception {
 }
 ```
 
-tym fragmencie kodu tworzymy nowy dokument, dodajemy do niego treść, a następnie dodajemy do dokumentu nową sekcję.
+W tym fragmencie kodu tworzymy nowy dokument, dodajemy do niego treść, a następnie dodajemy do dokumentu nową sekcję.
 
 ## Usuwanie sekcji
 

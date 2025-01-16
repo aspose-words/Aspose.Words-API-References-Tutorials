@@ -23,7 +23,7 @@ Megvan minden? Nagy! Térjünk át projektünk felállítására.
 
 ## Névterek importálása
 
-Mielőtt elkezdené, importálnia kell a szükséges névtereket. Gondoljon a névterekre, mint a barkácsprojektjéhez szükséges eszközkészletre.
+Mielőtt elkezdenénk, importálnia kell a szükséges névtereket. Gondoljon a névterekre, mint a barkácsprojektjéhez szükséges eszközkészletre.
 
 ```csharp
 using Aspose.Words;

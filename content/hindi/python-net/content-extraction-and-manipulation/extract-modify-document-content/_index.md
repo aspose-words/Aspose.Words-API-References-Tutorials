@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## पाठ संशोधित करना
-
-आप सीधे रन या पैराग्राफ का पाठ सेट करके पाठ को संशोधित कर सकते हैं:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## फ़ॉर्मेटिंग के साथ कार्य करना
 
 Aspose.Words आपको स्वरूपण शैलियों के साथ काम करने की अनुमति देता है:

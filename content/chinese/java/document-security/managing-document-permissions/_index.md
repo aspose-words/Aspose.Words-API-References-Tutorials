@@ -52,21 +52,12 @@ url: /zh/java/document-security/managing-document-permissions/
 //加载文档
 Document doc = new Document("sample.docx");
 
-//定义访问控制
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-//应用文档保护
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-//保存文档
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## 常见问题 (FAQ)
+## 常见问题解答
 
-## 我如何取消文档保护？
+### 我如何取消文档保护？
 
 要删除文档保护，只需打开受保护的文档，如果它受密码保护，请提供正确的密码。然后，使用 Aspose.Words for Java 删除保护，如下所示：
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## 我可以为特定用户设置权限吗？
+### 我可以为特定用户设置权限吗？
 
 是的，Aspose.Words for Java 允许您为特定用户或组设置权限。您可以定义谁可以访问和编辑文档。
 
-## 可以使用多个密码加密文档吗？
+### 可以使用多个密码加密文档吗？
 
 不是，Aspose.Words for Java 支持单密码加密。您可以设置密码来保护文档。
 
-## 如何检查文档的权限？
+### 如何检查文档的权限？
 
 您可以使用 Aspose.Words for Java 通过检查文档的保护设置和访问控制选项来检查文档的权限。
 
-## 我可以自动化文档权限管理吗？
+### 我可以自动化文档权限管理吗？
 
 当然！您可以将 Aspose.Words for Java 集成到您的应用程序中，以自动化文档权限管理，使其成为文档工作流程的无缝组成部分。
 
-## 忘记文档密码怎么办？
+### 忘记文档密码怎么办？
 
 如果您忘记了文档密码，则无法恢复。请务必将密码记录保存在安全的地方。
 

@@ -110,7 +110,7 @@ Evet, kılavuzda gösterildiği gibi Aspose.Words'ü kullanarak bir tablodaki h�
  Endişelenmeyin! Daha önce birleştirilmiş hücreleri yatay birleştirme özelliğini ayarlayarak kolayca bölebilirsiniz.`NONE`.
 
 ### Bir tablodan önce sayfa sonu nasıl ekleyebilirim?
- Bir tablodan önce sayfa sonu eklemek için yazı tipini değiştirin`PageBreakBefore` gösterildiği gibi mülk.
+Bir tablodan önce sayfa sonu eklemek için yazı tipini değiştirin`PageBreakBefore` gösterildiği gibi mülk.
 
 ### Aspose.Words farklı belge formatlarıyla uyumlu mudur?
 Kesinlikle! Aspose.Words for Java çeşitli belge biçimlerini destekler ve bu da onu belge yönetimi için çok yönlü bir seçenek haline getirir.

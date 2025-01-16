@@ -60,7 +60,7 @@ try {
 ```
 
 Penjelasan:
-- Itu`try-catch` Blok ini memastikan bahwa kesalahan apa pun yang ditemukan saat memuat dokumen terdeteksi dan dikelola dengan tepat.
+-  Itu`try-catch`Blok ini memastikan bahwa kesalahan apa pun yang ditemukan saat memuat dokumen terdeteksi dan dikelola dengan tepat.
 
 ## Langkah 2: Inisialisasi ImageSaveOptions
 
@@ -71,7 +71,7 @@ Setelah dokumen dimuat, langkah berikutnya adalah mengatur opsi untuk menyimpan 
 `ImageSaveOptions` adalah kelas yang memungkinkan Anda menentukan bagaimana dokumen harus disimpan sebagai gambar.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 Penjelasan:

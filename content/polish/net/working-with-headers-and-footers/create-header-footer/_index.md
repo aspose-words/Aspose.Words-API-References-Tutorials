@@ -165,7 +165,7 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 ## Wniosek
 
-Wykonując te kroki, możesz skutecznie dodawać i dostosowywać nagłówki i stopki w dokumentach Word za pomocą Aspose.Words dla .NET. To poprawia wygląd i profesjonalizm dokumentu, czyniąc go bardziej czytelnym i angażującym.
+Wykonując te kroki, możesz skutecznie dodawać i dostosowywać nagłówki i stopki w dokumentach Word za pomocą Aspose.Words dla .NET. Poprawia to wygląd i profesjonalizm dokumentu, czyniąc go bardziej czytelnym i angażującym.
 
 ## Najczęściej zadawane pytania
 

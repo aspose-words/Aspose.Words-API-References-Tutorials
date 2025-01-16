@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## Modificar texto
-
-Puedes modificar el texto configurando directamente el texto de las líneas o párrafos:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## Trabajar con formato
 
 Aspose.Words le permite trabajar con estilos de formato:

@@ -33,7 +33,7 @@ Laten we nu eens kijken hoe u tekst in een Word-document vetgedrukt kunt maken m
 
 ## Stap 1: DocumentBuilder initialiseren
 
-De`DocumentBuilder` klasse biedt een snelle en eenvoudige manier om inhoud toe te voegen aan uw document. Laten we het initialiseren.
+ De`DocumentBuilder` klasse biedt een snelle en eenvoudige manier om inhoud toe te voegen aan uw document. Laten we het initialiseren.
 
 ```csharp
 // Gebruik een documentbouwer om inhoud aan het document toe te voegen.

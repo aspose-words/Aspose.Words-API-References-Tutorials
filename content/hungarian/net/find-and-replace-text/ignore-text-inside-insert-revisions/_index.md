@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Kezdje el a revíziók követését
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //Szöveg beszúrása nyomon követési változatokkal
+builder.Writeln("Inserted"); // Szöveg beszúrása nyomon követési változatokkal
 doc.StopTrackRevisions();
 ```
 
@@ -83,7 +83,7 @@ Az Aspose.Words for .NET segítségével a szöveg figyelmen kívül hagyásána
  A változatok követésének megkezdéséhez használja a`doc.StartTrackRevisions(author, date)` módszer.
 
 ### Milyen előnyökkel jár a beszúrt szöveg figyelmen kívül hagyása a dokumentum-változatoknál?
-beszúrt szöveg figyelmen kívül hagyása segít az alapvető tartalomra összpontosítani, miközben hatékonyan kezeli a dokumentummódosításokat.
+A beszúrt szöveg figyelmen kívül hagyása segít az alapvető tartalomra összpontosítani, miközben hatékonyan kezeli a dokumentummódosításokat.
 
 ### Visszaállíthatom a figyelmen kívül hagyott beszúrt szöveget az eredetire az Aspose.Words for .NET-ben?
 Igen, visszaállíthatja a figyelmen kívül hagyott beszúrt szöveget a megfelelő FindReplaceOptions beállítások segítségével.

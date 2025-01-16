@@ -33,7 +33,7 @@ Ahora, analicemos el proceso de poner texto en negrita en un documento de Word u
 
 ## Paso 1: Inicializar DocumentBuilder
 
-El`DocumentBuilder` La clase proporciona una forma rápida y sencilla de agregar contenido a su documento. Vamos a inicializarla.
+ El`DocumentBuilder` La clase proporciona una forma rápida y sencilla de agregar contenido a su documento. Vamos a inicializarla.
 
 ```csharp
 // Utilice un generador de documentos para agregar contenido al documento.

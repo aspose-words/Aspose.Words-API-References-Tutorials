@@ -92,4 +92,4 @@ Aspose.Words for .NET to potężna biblioteka do programowej pracy z dokumentami
  Pełną dokumentację Aspose.Words dla .NET można uzyskać pod adresem[ten link](https://reference.aspose.com/words/net/).
 
 ### Gdzie mogę uzyskać pomoc techniczną dotyczącą Aspose.Words dla .NET?
- Jeśli potrzebujesz wsparcia, możesz odwiedzić forum Aspose.Words pod adresem[ten link](https://forum.aspose.com/c/words/8).
+ Aby uzyskać pomoc, możesz odwiedzić forum Aspose.Words pod adresem[ten link](https://forum.aspose.com/c/words/8).

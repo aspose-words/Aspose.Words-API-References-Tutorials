@@ -129,4 +129,4 @@ Mit diesen Fähigkeiten können Sie die visuelle Darstellung Ihrer Tabellen verb
  Absolut! Sie können jede Farbe verwenden, die im`System.Drawing.Color` Klasse.
 
 ### Wie zentriere ich die Tabelle horizontal?  
-Der`table.Alignment = TableAlignment.Center;` Zeile im Code zentriert die Tabelle horizontal auf der Seite.
+ Der`table.Alignment = TableAlignment.Center;` Zeile im Code zentriert die Tabelle horizontal auf der Seite.

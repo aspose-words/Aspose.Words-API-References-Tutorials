@@ -15,7 +15,7 @@ Chcete zvládnout umění manipulace se seznamy v dokumentech aplikace Word pomo
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste jej ještě nenainstalovali, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste jej ještě nenainstalovali, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Ujistěte se, že máte vhodné vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Základní znalost C# vám pomůže postupovat společně s výukovým programem.
 

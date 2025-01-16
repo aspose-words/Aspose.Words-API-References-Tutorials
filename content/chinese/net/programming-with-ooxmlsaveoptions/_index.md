@@ -11,7 +11,7 @@ Aspose.Words for .NET 教程“使用 OOXMLSaveOptions 进行文字处理”提�
 
 本教程还为您提供了实际的代码示例，以说明如何使用 OOXMLSaveOptions 的各种功能。您将学习如何在创建或编辑 Word 文档时指定保存选项，使用的方法包括`CompatibilityOptions`, `ImageCompression`， 和`ExportFontResources`。本教程将帮助您了解这些选项如何影响输出格式并为您的项目选择适当的设置。
 
-无论您想创建与旧版 Word 兼容的文档、通过压缩图像减小文件大小还是嵌入特定字体，Aspose.Words for .NET 教程中有关使用 OOXMLSaveOptions 进行文字处理的教程都会引导您完成所有必要的步骤。您将能够充分利用 OOXML 的保存功能并创建专业且优化的 Word 文档。
+无论您想创建与旧版 Word 兼容的文档、通过压缩图像减小文件大小还是嵌入特定字体，Aspose.Words for .NET 教程中的使用 OOXMLSaveOptions 进行文字处理都会引导您完成所有必要的步骤。您将能够充分利用 OOXML 的保存功能并创建专业且优化的 Word 文档。
 
  ## 教程
 | 标题 | 描述 |

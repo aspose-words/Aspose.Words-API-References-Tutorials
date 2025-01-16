@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Estamos creando una`FindReplaceOptions`objeto y establecer la alineación del párrafo al centro.
+ Estamos creando una`FindReplaceOptions` objeto y establecer la alineación del párrafo al centro.
 
 ## Paso 4: Reemplazar texto con metacaracteres
 
 ¡En este paso es donde ocurre la magia! Reemplazaremos la palabra "sección" seguida de un salto de párrafo y agregaremos un subrayado.
 
 ```csharp
-// Duplique cada salto de párrafo después de la palabra "sección", agregue una especie de subrayado y céntrelo.
+//Duplique cada salto de párrafo después de la palabra "sección", agregue una especie de subrayado y céntrelo.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

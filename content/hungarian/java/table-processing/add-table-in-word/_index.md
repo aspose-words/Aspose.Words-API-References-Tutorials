@@ -8,7 +8,7 @@ weight: 10
 url: /hu/java/table-processing/add-table-in-word/
 ---
 
-A Microsoft Word egy hatékony szövegszerkesztő eszköz, amellyel a felhasználók könnyedén hozhatnak létre és formázhatnak dokumentumokat. A táblázatok a Word-dokumentumok alapvető jellemzői, amelyek lehetővé teszik a felhasználók számára az adatok strukturált rendszerezését és bemutatását. Ebben a lépésről lépésre bemutatott oktatóanyagban végigvezetjük a táblák hozzáadásának folyamatán a Wordben az Aspose.Words for Java könyvtár használatával. Az Aspose.Words egy robusztus Java API, amely különféle funkciókat kínál a dokumentumfeldolgozáshoz, így kiváló választás a fejlesztők számára. Kezdjük ezzel az oktatóanyaggal, és fedezzük fel, hogyan lehet hatékonyan hozzáadni táblázatokat a Wordben.
+Microsoft Word egy hatékony szövegszerkesztő eszköz, amellyel a felhasználók könnyedén hozhatnak létre és formázhatnak dokumentumokat. A táblázatok a Word-dokumentumok alapvető jellemzői, amelyek lehetővé teszik a felhasználók számára az adatok strukturált rendszerezését és bemutatását. Ebben a lépésről lépésre bemutatott oktatóanyagban végigvezetjük a táblák hozzáadásának folyamatán a Wordben az Aspose.Words for Java könyvtár használatával. Az Aspose.Words egy robusztus Java API, amely különféle funkciókat kínál a dokumentumfeldolgozáshoz, így kiváló választás a fejlesztők számára. Kezdjük ezzel az oktatóanyaggal, és fedezzük fel, hogyan lehet hatékonyan hozzáadni táblázatokat a Wordben.
 
 
 ## 1. lépés: A fejlesztői környezet beállítása
@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## 6. lépés: Hozzon létre egy táblázatot és adjon hozzá sorokat
 
-Hozzon létre egy újat`Table` objektumot, és adja meg a sorok és oszlopok számát.
+ Hozzon létre egy újat`Table` objektumot, és adja meg a sorok és oszlopok számát.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,54 +73,17 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## 8. lépés: Mentse el a dokumentumot
 
- Mentse a Word dokumentumot a kívánt helyre a segítségével`save()` módszer.
+Mentse a Word dokumentumot a kívánt helyre a segítségével`save()` módszer.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## 9. lépés: Töltse ki a kódot
-
-Íme a teljes kód egy táblázat hozzáadásához a Wordben az Aspose.Words for Java használatával:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // 5. lépés: Hozzon létre egy új Word-dokumentumot
-        Document doc = new Document();
-
-        // 6. lépés: Hozzon létre egy táblázatot és adjon hozzá sorokat
-        Table table = new Table(doc);
-        int rowCount = 5; // A táblázat sorainak száma
-        int columnCount = 3; // A táblázat oszlopainak száma
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // 7. lépés: Adja hozzá a táblázatot a dokumentumhoz
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // 8. lépés: Mentse el a dokumentumot
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Következtetés
 
 Gratulálok! Sikeresen hozzáadott egy táblázatot egy Word-dokumentumhoz az Aspose.Words for Java használatával. Az Aspose.Words robusztus és hatékony API-t biztosít a Word-dokumentumokkal való munkavégzéshez, megkönnyítve a dokumentumokon belüli táblázatok és egyéb elemek létrehozását, kezelését és testreszabását.
 
-lépésenkénti útmutató követésével megtanulta, hogyan kell beállítani a fejlesztői környezetet, létrehozni egy új Word-dokumentumot, hozzáadni egy táblázatot sorokkal és oszlopokkal, és elmenteni a dokumentumot. Nyugodtan fedezze fel az Aspose.Words további funkcióit, hogy tovább javítsa dokumentumfeldolgozási feladatait.
+A lépésenkénti útmutató követésével megtanulta, hogyan kell beállítani a fejlesztői környezetet, létrehozni egy új Word-dokumentumot, hozzáadni egy táblázatot sorokkal és oszlopokkal, és elmenteni a dokumentumot. Nyugodtan fedezze fel az Aspose.Words további funkcióit, hogy tovább javítsa dokumentumfeldolgozási feladatait.
 
 ## Gyakran Ismételt Kérdések (GYIK)
 

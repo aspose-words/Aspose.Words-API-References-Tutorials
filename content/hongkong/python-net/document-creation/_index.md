@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/python-net/document-creation/
 ---
 
-文件建立是文字處理和文件處理的一個基本面向。 Aspose.Words for Python 提供有關文件建立的全面教程，使開發人員能夠以程式設計方式高效產生專業文件。
+文件建立是文字處理和文件處理的一個基本面向。 Aspose.Words for Python 提供了有關文件建立的全面教程，使開發人員能夠以程式設計方式高效產生專業文件。
 
 ## 利用 Python 文件 API
 

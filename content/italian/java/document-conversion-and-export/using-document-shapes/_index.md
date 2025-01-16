@@ -10,11 +10,11 @@ url: /it/java/document-conversion-and-export/using-document-shapes/
 
 ## Introduzione all'utilizzo delle forme del documento in Aspose.Words per Java
 
-In questa guida completa, ci addentreremo nel mondo delle forme dei documenti in Aspose.Words per Java. Le forme sono elementi essenziali quando si tratta di creare documenti visivamente accattivanti e interattivi. Che tu debba aggiungere callout, pulsanti, immagini o filigrane, Aspose.Words per Java fornisce gli strumenti per farlo in modo efficiente. Esploriamo come utilizzare queste forme passo dopo passo con esempi di codice sorgente.
+In questa guida completa, ci addentreremo nel mondo delle forme dei documenti in Aspose.Words per Java. Le forme sono elementi essenziali quando si tratta di creare documenti visivamente accattivanti e interattivi. Che tu debba aggiungere callout, pulsanti, immagini o filigrane, Aspose.Words per Java fornisce gli strumenti per farlo in modo efficiente. Esploriamo come usare queste forme passo dopo passo con esempi di codice sorgente.
 
 ## Introduzione alle forme dei documenti
 
-Prima di buttarci nel codice, impostiamo il nostro ambiente. Assicurati di avere Aspose.Words for Java integrato nel tuo progetto. Se non lo hai già fatto, puoi scaricarlo dal sito web di Aspose[Scarica Aspose.Words per Java](https://releases.aspose.com/words/java/)
+ Prima di buttarci nel codice, impostiamo il nostro ambiente. Assicurati di avere Aspose.Words for Java integrato nel tuo progetto. Se non lo hai già fatto, puoi scaricarlo dal sito web di Aspose[Scarica Aspose.Words per Java](https://releases.aspose.com/words/java/)
 
 ## Aggiungere forme ai documenti
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

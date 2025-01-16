@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-ในขั้นตอนนี้ เราจะโหลดเอกสาร Word จากไดเร็กทอรีที่ระบุ อย่าลืมแทนที่`"YOUR DOCUMENT DIRECTORY"`ด้วยเส้นทางจริงที่เอกสารของคุณตั้งอยู่
+ในขั้นตอนนี้ เราจะโหลดเอกสาร Word จากไดเร็กทอรีที่ระบุ อย่าลืมแทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงที่เอกสารของคุณตั้งอยู่
 
 ## ขั้นตอนที่ 2: กำหนดค่าตัวเลือกการดาวน์แซมพลิง
 

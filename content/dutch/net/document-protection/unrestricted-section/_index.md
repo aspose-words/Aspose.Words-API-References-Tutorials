@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-De`Document` klasse initialiseert een nieuw document en de`DocumentBuilder` helpt ons om eenvoudig inhoud aan ons document toe te voegen.
+ De`Document` klasse initialiseert een nieuw document en de`DocumentBuilder` helpt ons om eenvoudig inhoud aan ons document toe te voegen.
 
 ## Stap 2: Secties invoegen
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-De`InsertBreak` Met deze methode wordt een doorlopende sectie-einde ingevoegd, waardoor we voor elke sectie verschillende instellingen kunnen gebruiken.
+ De`InsertBreak` Met deze methode wordt een doorlopende sectie-einde ingevoegd, waardoor we voor elke sectie verschillende instellingen kunnen gebruiken.
 
 ## Stap 3: Bescherm het document
 

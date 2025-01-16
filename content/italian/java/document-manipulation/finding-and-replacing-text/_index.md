@@ -355,4 +355,4 @@ Per ignorare il testo all'interno dei campi durante la sostituzione, è possibil
 
 ### A cosa serve l'opzione UseLegacyOrder?
 
-IL`UseLegacyOrder` opzione in`FindReplaceOptions` consente di usare l'ordine legacy quando si eseguono operazioni di ricerca e sostituzione. Ciò può essere utile in determinati scenari in cui è desiderato il comportamento dell'ordine legacy.
+ IL`UseLegacyOrder` opzione in`FindReplaceOptions` consente di usare l'ordine legacy quando si eseguono operazioni di ricerca e sostituzione. Ciò può essere utile in determinati scenari in cui è desiderato il comportamento dell'ordine legacy.

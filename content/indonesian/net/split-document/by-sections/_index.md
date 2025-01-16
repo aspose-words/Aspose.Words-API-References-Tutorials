@@ -86,7 +86,7 @@ Terakhir, kami menyimpan setiap dokumen baru dengan nama yang unik. Langkah ini 
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-Itu`Save` metode menyimpan dokumen baru dalam direktori yang ditentukan dengan nama unik berdasarkan indeks bagian.
+ Itu`Save` metode menyimpan dokumen baru dalam direktori yang ditentukan dengan nama unik berdasarkan indeks bagian.
 
 ## Kesimpulan
 

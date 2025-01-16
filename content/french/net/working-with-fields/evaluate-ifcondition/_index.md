@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
-Le`EvaluateCondition` la méthode renvoie un`FieldIfComparisonResult` énumération qui représente le résultat de l'évaluation de la condition. Cette énumération peut avoir des valeurs telles que`True`, `False` , ou`Unknown`.
+ Le`EvaluateCondition` la méthode renvoie un`FieldIfComparisonResult` énumération qui représente le résultat de l'évaluation de la condition. Cette énumération peut avoir des valeurs telles que`True`, `False` , ou`Unknown`.
 
 ## Étape 4 : Afficher le résultat
 
@@ -93,7 +93,7 @@ Un champ IF est un champ Word qui vous permet d'insérer une logique conditionne
  Vous pouvez insérer un champ IF en utilisant le`InsertField` méthode de la`DocumentBuilder` classe, spécifiant la condition que vous souhaitez évaluer.
 
 ###  Qu'est-ce que`EvaluateCondition` method do?
-Le`EvaluateCondition` La méthode évalue la condition spécifiée dans un champ IF et renvoie le résultat, indiquant si la condition est vraie ou fausse.
+ Le`EvaluateCondition` La méthode évalue la condition spécifiée dans un champ IF et renvoie le résultat, indiquant si la condition est vraie ou fausse.
 
 ### Puis-je utiliser des conditions complexes avec le champ SI ?
 Oui, vous pouvez utiliser des conditions complexes avec le champ SI en spécifiant différentes expressions et comparaisons selon vos besoins.

@@ -96,7 +96,7 @@ Lidar com comentários em documentos do Word não precisa ser uma tarefa manual.
 ### Posso automatizar outras tarefas relacionadas a comentários com o Aspose.Words para .NET?  
 Sim, você pode automatizar várias tarefas, como adicionar, excluir e modificar comentários.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?  
+### Aspose.Words para .NET é compatível com o .NET Core?  
 Sim, o Aspose.Words para .NET oferece suporte ao .NET Framework e ao .NET Core.
 
 ### Como posso obter uma avaliação gratuita do Aspose.Words para .NET?  

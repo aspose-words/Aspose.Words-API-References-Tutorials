@@ -71,7 +71,7 @@ Setelah penanda buku dimulai, kita dapat menambahkan konten apa pun yang kita su
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-Itu`Writeln` metode menambahkan paragraf baru dengan teks yang ditentukan ke dokumen.
+ Itu`Writeln` metode menambahkan paragraf baru dengan teks yang ditentukan ke dokumen.
 
 ## Langkah 5: Akhiri Bookmark
 
@@ -81,7 +81,7 @@ Setelah menambahkan konten, kita perlu menutup bookmark. Ini memberi tahu Aspose
 builder.EndBookmark("FineBookmark");
 ```
 
-Itu`EndBookmark` metode melengkapi penanda yang kita mulai sebelumnya.
+ Itu`EndBookmark` metode melengkapi penanda yang kita mulai sebelumnya.
 
 ## Langkah 6: Simpan Dokumen
 

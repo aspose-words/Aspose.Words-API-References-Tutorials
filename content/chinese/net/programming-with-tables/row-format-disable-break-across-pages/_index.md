@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 是的，此方法适用于包含合并单元格的表格。属性`AllowBreakAcrossPages`适用于整行，无论单元格是否合并。
 
 ### 如果表嵌套在另一个表中，这种方法是否有效？  
-是的，您可以用同样的方式访问和修改嵌套表。确保您通过索引或其他属性正确引用嵌套表。
+是的，您可以用同样的方式访问和修改嵌套表。确保您通过其索引或其他属性正确引用嵌套表。
 
 ### 如何检查某一行是否允许跨页分行？  
 您可以通过访问`AllowBreakAcrossPages`的财产`RowFormat`并检查其价值。

@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <Zusammenfassung>
-/// Ruft das Dokument eines Seitenbereichs ab.
+//Ruft das Dokument eines Seitenbereichs ab.
 /// </summary>
-//<param name="startIndex">
+/// <param name="startIndex">
 /// 1-basierter Index der Startseite.
 /// </param>
 /// <param name="endIndex">

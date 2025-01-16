@@ -91,7 +91,7 @@ import com.aspose.words.SaveFormat;
 Document doc = new Document("LegacyControlChars.doc");
 
 // FLAT_OPC प्रारूप के साथ OoxmlSaveOptions बनाएं और विरासत नियंत्रण वर्णों को रखने में सक्षम करें
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setKeepLegacyControlChars(true);
 
 // दस्तावेज़ को लीगेसी नियंत्रण वर्णों के साथ सहेजें
@@ -148,7 +148,7 @@ public void updateLastSavedTimeProperty() throws Exception
 public void keepLegacyControlChars() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Legacy control character.doc");
-	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC); { saveOptions.setKeepLegacyControlChars(true); }
+	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(); { saveOptions.setKeepLegacyControlChars(true); }
 	doc.save("Your Directory Path" + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
 }
 @Test

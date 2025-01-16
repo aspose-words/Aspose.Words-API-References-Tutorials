@@ -70,7 +70,7 @@ doc.acceptAllRevisions();
 
 ### هل يمكنني تتبع التغييرات في مستندات Word باستخدام Aspose.Words لـ Java؟
 
-نعم، يتيح لك Aspose.Words for Java تتبع التغييرات في مستندات Word. يمكنك استخدام`startTrackRevisions` طريقة لتمكين تتبع التغييرات.
+ نعم، يتيح لك Aspose.Words for Java تتبع التغييرات في مستندات Word. يمكنك استخدام`startTrackRevisions` طريقة لتمكين تتبع التغييرات.
 
 ### كيف يمكنني مراجعة التغييرات التي أجريتها على مستند؟
 

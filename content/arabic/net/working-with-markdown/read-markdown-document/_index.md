@@ -33,7 +33,7 @@ using Aspose.Words.Markdown;
 
 ## الخطوة 1: تحميل مستند Markdown
 
- للبدء، نحتاج إلى تحميل مستند Markdown الخاص بنا إلى Aspose.Words`Document` هذا الكائن سيسمح لنا بالتعامل مع المحتوى برمجيًا.
+ للبدء، نحتاج إلى تحميل مستند Markdown الخاص بنا إلى Aspose.Words`Document` الكائن. سيسمح لنا هذا الكائن بالتعامل مع المحتوى برمجيًا.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

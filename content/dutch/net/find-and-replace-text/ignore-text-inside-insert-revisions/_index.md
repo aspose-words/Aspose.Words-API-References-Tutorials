@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Begin met het bijhouden van revisies
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //Tekst invoegen met het bijhouden van revisies
+builder.Writeln("Inserted"); // Tekst invoegen met het bijhouden van revisies
 doc.StopTrackRevisions();
 ```
 

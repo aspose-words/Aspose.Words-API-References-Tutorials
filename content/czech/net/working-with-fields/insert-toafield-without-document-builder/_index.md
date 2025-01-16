@@ -9,7 +9,7 @@ url: /cs/net/working-with-fields/insert-toafield-without-document-builder/
 ---
 ## Zavedení
 
-Vytvoření pole tabulky oprávnění (TOA) v dokumentu aplikace Word může připadat jako poskládání složité hádanky. S pomocí Aspose.Words pro .NET se však proces stává hladkým a přímočarým. V tomto článku vás provedeme kroky k vložení pole TOA bez použití nástroje pro tvorbu dokumentů, což vám usnadní správu citací a právních odkazů v dokumentech aplikace Word.
+Vytvoření pole tabulky oprávnění (TOA) v dokumentu aplikace Word může připadat jako poskládání složitého puzzle. S pomocí Aspose.Words pro .NET se však proces stává hladkým a přímočarým. V tomto článku vás provedeme kroky k vložení pole TOA bez použití nástroje pro tvorbu dokumentů, což vám usnadní správu citací a právních odkazů v dokumentech aplikace Word.
 
 ## Předpoklady
 

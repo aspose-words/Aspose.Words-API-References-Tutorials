@@ -98,4 +98,4 @@ Oczywiście! Aspose.Words dla .NET obsługuje szeroki zakres elementów HTML, um
 Aspose.Words for .NET automatycznie obsługuje duże tabele, zapewniając ich prawidłowy podział na wiele stron w dokumencie Word.
 
 ### Czy mogę używać Aspose.Words dla .NET w aplikacji internetowej?
-Tak, Aspose.Words for .NET można używać zarówno w aplikacjach desktopowych, jak i internetowych, co czyni je wszechstronnym narzędziem do manipulowania dokumentami.
+Tak, Aspose.Words for .NET można używać zarówno w aplikacjach komputerowych, jak i internetowych, co czyni je wszechstronnym narzędziem do manipulowania dokumentami.

@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ### 步驟1.2：載入文檔
 
-現在，讓我們將該文件載入到我們的程式碼中。這就是 Aspose.Words for .NET 發揮作用的地方。
+現在，讓我們將文件載入到我們的程式碼中。這就是 Aspose.Words for .NET 發揮作用的地方。
 
 ```csharp
 Document doc = new Document(dataDir + "Properties.docx");

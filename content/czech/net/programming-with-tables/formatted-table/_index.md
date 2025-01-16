@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`DocumentBuilder` je pomocná třída, která zjednodušuje proces vytváření dokumentů.
+ The`DocumentBuilder` je pomocná třída, která zjednodušuje proces vytváření dokumentů.
 
 ## Krok 3: Spusťte tabulku
 

@@ -17,16 +17,16 @@ url: /ko/python-net/document-structure-and-content-manipulation/document-form-fi
 
 폼 필드를 만들고 마스터하기 전에 환경을 설정하고 Python용 Aspose.Words에 익숙해지도록 합시다. 시작하려면 다음 단계를 따르세요.
 
-1. **Install Aspose.Words:** 다음 pip 명령을 사용하여 Python 라이브러리용 Aspose.Words를 설치하여 시작하세요.
+1. Aspose.Words 설치: 다음 pip 명령을 사용하여 Python 라이브러리용 Aspose.Words를 설치하여 시작합니다.
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** 라이브러리를 Python 스크립트로 가져와서 기능을 사용해 보세요.
+2. 라이브러리 가져오기: Python 스크립트에서 라이브러리를 가져와서 기능을 사용해 보세요.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 설정이 완료되었으니, 이제 양식 필드를 만들고 관리하는 핵심 개념으로 넘어가겠습니다.
@@ -41,7 +41,7 @@ url: /ko/python-net/document-structure-and-content-manipulation/document-form-fi
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### 체크박스와 라디오 버튼
@@ -50,12 +50,12 @@ text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeTyp
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### 드롭다운 목록
@@ -64,7 +64,7 @@ radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OL
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### 날짜 선택기
@@ -73,7 +73,7 @@ drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## 폼 필드의 속성 설정
@@ -122,7 +122,7 @@ date_picker.text = "2023-08-31"
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 필드가 생성되면 이름, 기본값, 플레이스홀더 텍스트와 같은 속성을 설정할 수 있습니다. 그 방법을 살펴보겠습니다.
@@ -150,14 +150,14 @@ text_input_field.placeholder_text = "Enter your full name"
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 라디오 버튼의 경우 OLE_OBJECT 모양 유형을 사용하여 생성할 수 있습니다.
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 이러한 필드를 만든 후에는 이름, 기본 선택 및 레이블 텍스트와 같은 속성을 사용자 정의할 수 있습니다.
@@ -183,7 +183,7 @@ radio_button.text = "Male"
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 드롭다운 목록을 만든 후에는 사용자에게 제공되는 옵션 목록을 지정할 수 있습니다.
@@ -211,7 +211,7 @@ drop_down.text = "USA"
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 날짜 선택기를 만든 후에는 이름 및 기본 날짜와 같은 속성을 설정할 수 있습니다.
@@ -228,11 +228,7 @@ date_picker.text = "2023-08-31"
 
 ## 결론
 
-Word 문서에서 폼 필드와 데이터 캡처를 마스터하는 것은 데이터 수집을 위한 대화형이고 효율적인 문서를 만드는 데 도움이 되는 귀중한 기술입니다. Aspose.Words for Python은 폼 필드에서 데이터를 만들고, 사용자 지정하고, 추출하기 위한 포괄적인 도구 세트를 제공합니다. 간단한 텍스트 입력 필드에서 복잡한 계산 및 조건부 서식에 이르기까지 가능성은 방대합니다.
-
 이 가이드에서는 폼 필드의 기본 사항, 폼 필드 유형, 속성 설정 및 동작 사용자 지정을 살펴보았습니다. 또한 폼 디자인 모범 사례에 대해 살펴보고 검색 엔진을 위한 문서 폼 최적화에 대한 통찰력을 제공했습니다.
-
-Aspose.Words for Python의 힘을 활용하면 데이터를 효과적으로 캡처할 뿐만 아니라 사용자 참여를 강화하고 데이터 처리 워크플로를 간소화하는 문서를 만들 수 있습니다. 이제 Word 문서에서 양식 필드와 데이터 캡처의 마스터가 되기 위한 여정을 시작할 준비가 되었습니다.
 
 ## 자주 묻는 질문
 

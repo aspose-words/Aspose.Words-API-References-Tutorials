@@ -81,7 +81,7 @@ Tidak, tidak akan. Karena Arial dan Times Roman adalah font standar, tampilannya
 Ya, Anda dapat mengonfigurasi opsi penyimpanan untuk melewati penyematan font lain jika diperlukan.
 
 ### Apakah Aspose.Words untuk .NET gratis?
-Aspose.Words untuk .NET menawarkan uji coba gratis yang dapat Anda unduh[Di Sini](https://releases.aspose.com/) , tetapi untuk akses penuh, Anda perlu membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
+ Aspose.Words untuk .NET menawarkan uji coba gratis yang dapat Anda unduh[Di Sini](https://releases.aspose.com/) , tetapi untuk akses penuh, Anda perlu membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
 
 ### Di mana saya dapat menemukan lebih banyak tutorial tentang Aspose.Words untuk .NET?
- Anda dapat menemukan dokumentasi dan tutorial yang lengkap[Di Sini](https://reference.aspose.com/words/net/).
+Anda dapat menemukan dokumentasi dan tutorial yang lengkap[Di Sini](https://reference.aspose.com/words/net/).

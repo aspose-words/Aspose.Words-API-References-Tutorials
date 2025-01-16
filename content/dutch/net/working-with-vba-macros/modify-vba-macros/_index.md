@@ -89,7 +89,7 @@ project.Modules[0].SourceCode = newSourceCode;
 ```
 
 In deze regels:
-- We definiëren een nieuwe macrobroncode als een constante string. Deze code toont een berichtvenster met de tekst "Broncode gewijzigd!"
+- We definiëren een nieuwe macrobroncode als een constante string. Deze code toont een berichtvenster met de tekst: "Broncode gewijzigd!"
 -  Vervolgens stellen we de`SourceCode` eigenschap van de eerste module in het project aan de nieuwe code toe.
 
 ## Stap 5: Het gewijzigde document opslaan

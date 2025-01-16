@@ -104,7 +104,7 @@ Tak, Aspose.Words for .NET obsługuje różne formaty dokumentów i można skonf
 Jeśli maszyna docelowa nie ma wymaganych czcionek, dokument może nie renderować się zgodnie z oczekiwaniami. Zawsze dobrym pomysłem jest osadzanie czcionek, gdy jest to konieczne.
 
 ### Jak osadzać czcionki w dokumencie?
- Osadzanie czcionek można wykonać za pomocą`FontSettings` klasa w Aspose.Words dla .NET. Zapoznaj się z[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Osadzanie czcionek można wykonać za pomocą`FontSettings` klasa w Aspose.Words dla .NET. Zapoznaj się z[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### Czy istnieje możliwość podglądu dokumentu przed zapisaniem?
  Tak, możesz użyć`DocumentRenderer` klasa do podglądu dokumentu przed zapisaniem. Sprawdź Aspose.Words dla .NET[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej informacji.

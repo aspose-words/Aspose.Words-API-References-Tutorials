@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Itu`Document` kelas menginisialisasi dokumen baru, dan`DocumentBuilder` membantu kita dengan mudah menambahkan konten ke dokumen kita.
+ Itu`Document` kelas menginisialisasi dokumen baru, dan`DocumentBuilder` membantu kita dengan mudah menambahkan konten ke dokumen kita.
 
 ## Langkah 2: Masukkan Bagian
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-Itu`InsertBreak` metode menyisipkan pemisah bagian berkelanjutan, yang memungkinkan kita memiliki pengaturan berbeda untuk setiap bagian.
+ Itu`InsertBreak` metode menyisipkan pemisah bagian berkelanjutan, yang memungkinkan kita memiliki pengaturan berbeda untuk setiap bagian.
 
 ## Langkah 3: Lindungi Dokumen
 

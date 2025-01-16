@@ -44,7 +44,7 @@ Document doc = new Document(dataDir + "ProtectedDocument.docx");
 
 在这里，我们指定包含文档的目录的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档目录的实际路径。
 
-## 第 2 步：无需密码即可删除保护
+## 步骤 2：无需密码即可删除保护
 
 有时，文档没有密码保护。在这种情况下，我们可以用一行代码简单地删除保护。
 

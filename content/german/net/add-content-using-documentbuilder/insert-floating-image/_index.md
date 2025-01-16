@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Der`Document` Objekt stellt das Word-Dokument dar, und das`DocumentBuilder` hilft beim Hinzufügen von Inhalten.
+ Der`Document` Objekt stellt das Word-Dokument dar, und das`DocumentBuilder` hilft beim Hinzufügen von Inhalten.
 
 ## Schritt 3: Definieren Sie den Bildpfad
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 Dies bedeutet jeder Parameter:
-- `imagePath`Der Pfad zu Ihrer Bilddatei.
+- `imagePath`: Der Pfad zu Ihrer Bilddatei.
 - `RelativeHorizontalPosition.Margin`: Die horizontale Position relativ zum Rand.
 - `100`: Der horizontale Versatz vom Rand (in Punkten).
 - `RelativeVerticalPosition.Margin`: Die vertikale Position relativ zum Rand.

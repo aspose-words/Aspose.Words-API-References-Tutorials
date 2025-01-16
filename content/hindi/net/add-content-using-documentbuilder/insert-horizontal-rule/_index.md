@@ -47,7 +47,7 @@ using Aspose.Words;
 
 ### नया दस्तावेज़ बनाएँ
 
- अपनी मुख्य प्रोग्राम फ़ाइल में, एक नया उदाहरण बनाकर शुरू करें`Document`यह हमारा खाली कैनवास होगा।
+ अपनी मुख्य प्रोग्राम फ़ाइल में, एक नया उदाहरण बनाकर शुरू करें`Document` यह हमारा खाली कैनवास होगा।
 
 ```csharp
 Document doc = new Document();
@@ -113,7 +113,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 
 ### मैं .NET के लिए Aspose.Words कैसे शुरू करूं?
 
- आप लाइब्रेरी को डाउनलोड करके शुरुआत कर सकते हैं[वेबसाइट](https://releases.aspose.com/words/net/) और इसे अपने .NET प्रोजेक्ट में जोड़ें।
+आप लाइब्रेरी को डाउनलोड करके शुरुआत कर सकते हैं[वेबसाइट](https://releases.aspose.com/words/net/) और इसे अपने .NET प्रोजेक्ट में जोड़ें।
 
 ### क्या मैं Aspose.Words का निःशुल्क उपयोग कर सकता हूँ?
 
@@ -125,4 +125,4 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 
 ### यदि मुझे कोई समस्या आती है तो मैं सहायता कैसे प्राप्त कर सकता हूँ?
 
-आप यहां जाकर सहायता प्राप्त कर सकते हैं[Aspose.Words समर्थन मंच](https://forum.aspose.com/c/words/8).
+ आप यहां जाकर सहायता प्राप्त कर सकते हैं[Aspose.Words समर्थन मंच](https://forum.aspose.com/c/words/8).

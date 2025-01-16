@@ -10,199 +10,172 @@ url: /pt/java/document-conversion-and-export/generating-custom-barcode-labels/
 
 ## Introdução à geração de etiquetas de código de barras personalizadas no Aspose.Words para Java
 
-Neste guia abrangente, vamos nos aprofundar no processo de geração de etiquetas de código de barras personalizadas usando o Aspose.Words para Java. O Aspose.Words para Java é uma API poderosa que permite que os desenvolvedores manipulem documentos do Word programaticamente. Um de seus recursos notáveis é a capacidade de trabalhar com etiquetas de código de barras, tornando-o uma ferramenta valiosa para empresas e organizações que exigem soluções de código de barras personalizadas.
+Códigos de barras são essenciais em aplicativos modernos, seja gerenciando inventário, gerando tickets ou criando cartões de identificação. Com o Aspose.Words para Java, criar etiquetas de código de barras personalizadas se torna moleza. Este tutorial passo a passo guiará você pela geração de etiquetas de código de barras personalizadas usando a interface IBarcodeGenerator. Pronto para mergulhar? Vamos lá!
+
 
 ## Pré-requisitos
 
-Antes de nos aprofundarmos nos detalhes da geração de etiquetas de código de barras personalizadas, vamos garantir que temos os pré-requisitos em vigor:
+Antes de começar a codificar, certifique-se de ter o seguinte:
 
-1. Ambiente de desenvolvimento Java: certifique-se de ter o Java e um Ambiente de Desenvolvimento Integrado (IDE) instalados no seu sistema.
+- Java Development Kit (JDK): Versão 8 ou superior.
+-  Aspose.Words para biblioteca Java:[Baixe aqui](https://releases.aspose.com/words/java/).
+-  Biblioteca Aspose.BarCode para Java:[Baixe aqui](https://releases.aspose.com/).
+- Ambiente de Desenvolvimento Integrado (IDE): IntelliJ IDEA, Eclipse ou qualquer IDE de sua preferência.
+-  Licença temporária: Obtenha uma[licença temporária](https://purchase.aspose.com/temporary-license/) para acesso irrestrito.
 
-2.  Aspose.Words para Java: Baixe e instale o Aspose.Words para Java em[aqui](https://releases.aspose.com/words/java/).
+## Pacotes de importação
 
-3. Conhecimento básico de Java: familiaridade com programação Java será útil, pois escreveremos código Java para criar etiquetas de código de barras personalizadas.
-
-## Criação de etiquetas de código de barras personalizadas
-
-Agora, vamos começar a criar etiquetas de código de barras personalizadas usando Aspose.Words para Java. Vamos dividir o processo em etapas e fornecer trechos de código Java para cada etapa.
-
-## Definindo a altura do código de barras
-
-Para começar, precisamos definir a altura do nosso código de barras em twips (1/1440 polegadas). Então, converteremos esse valor para milímetros (mm). Aqui está o código para fazer isso:
+Usaremos as bibliotecas Aspose.Words e Aspose.BarCode. Importe os seguintes pacotes para seu projeto:
 
 ```java
-	// O valor de entrada está em 1/1440 polegadas (twips)
-	int heightInTwips = tryParseInt(heightInTwipsString);
-	if (heightInTwips == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect height - " + heightInTwipsString + ".");
-	// Converter para mm
-	return (float) (heightInTwips * 25.4 / 1440.0);
+import com.aspose.barcode.generation.*;
+import com.aspose.words.BarcodeParameters;
+import com.aspose.words.IBarcodeGenerator;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 ```
 
-## Convertendo a cor da imagem do código de barras
+Essas importações nos permitem utilizar recursos de geração de código de barras e integrá-los em documentos do Word.
 
-Em seguida, converteremos a cor da imagem do código de barras do Word para Aspose.BarCode. A cor de entrada deve estar no formato "0xRRGGBB" (hexadecimal). Aqui está o código para a conversão:
+Vamos dividir essa tarefa em etapas gerenciáveis.
+
+## Etapa 1: Crie uma classe de utilitário para operações de código de barras
+
+Para simplificar as operações relacionadas a códigos de barras, criaremos uma classe utilitária com métodos auxiliares para tarefas comuns, como conversão de cores e ajuste de tamanho.
+
+### Código:
 
 ```java
-/// <resumo>
-/// Converte a cor da imagem do código de barras do Word para Aspose.BarCode.
-/// </resumo>
-/// <param nome="inputColor"></param>
-/// <retorna></retorna>
-private static Color convertColor(String inputColor) throws Exception {
-	// A entrada deve ser de "0x000000" a "0xFFFFFF"
-	int color = tryParseHex(inputColor.replace("0x", ""));
-	if (color == Integer.MIN_VALUE)
-		throw new Exception("Error! Incorrect color - " + inputColor + ".");
-	return new Color((color >> 16), ((color & 0xFF00) >> 8), (color & 0xFF));
+class CustomBarcodeGeneratorUtils {
+    public static double twipsToPixels(String heightInTwips, double defVal) {
+        try {
+            int lVal = Integer.parseInt(heightInTwips);
+            return (lVal / 1440.0) * 96.0; // Supondo que o DPI padrão seja 96
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
+
+    public static Color convertColor(String inputColor, Color defVal) {
+        if (inputColor == null || inputColor.isEmpty()) return defVal;
+        try {
+            int color = Integer.parseInt(inputColor, 16);
+            return new Color((color & 0xFF), ((color >> 8) & 0xFF), ((color >> 16) & 0xFF));
+        } catch (Exception e) {
+            return defVal;
+        }
+    }
 }
 ```
 
-## Convertendo Fator de Escala de Código de Barras
+### Explicação:
 
-Agora, converteremos o fator de escala do código de barras de uma porcentagem para um valor flutuante. Esse fator de escala determina o tamanho do código de barras. Aqui está o código para a conversão:
+- `twipsToPixels` Método: Converte twips (usados em documentos do Word) em pixels.
+- `convertColor` Método: Traduz códigos de cores hexadecimais para`Color` objetos.
+
+## Etapa 2: Implementar o gerador de código de barras personalizado
+
+ Nós implementaremos o`IBarcodeGenerator` interface para gerar códigos de barras e integrá-los com o Aspose.Words.
+
+### Código:
 
 ```java
-/// <resumo>
-/// Converte o fator de escala do código de barras de porcentagem para flutuante.
-/// </resumo>
-/// <param nome="scalingFactor"></param>
-/// <retorna></retorna>
-private static float convertScalingFactor(String scalingFactor) throws Exception {
-	boolean isParsed = false;
-	int percent = tryParseInt(scalingFactor);
-	if (percent != Integer.MIN_VALUE && percent >= 10 && percent <= 10000)
-		isParsed = true;
-	if (!isParsed)
-		throw new Exception("Error! Incorrect scaling factor - " + scalingFactor + ".");
-	return percent / 100.0f;
+class CustomBarcodeGenerator implements IBarcodeGenerator {
+    public BufferedImage getBarcodeImage(BarcodeParameters parameters) {
+        try {
+            BarcodeGenerator gen = new BarcodeGenerator(
+                CustomBarcodeGeneratorUtils.getBarcodeEncodeType(parameters.getBarcodeType()),
+                parameters.getBarcodeValue()
+            );
+
+            gen.getParameters().getBarcode().setBarColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getForegroundColor(), Color.BLACK)
+            );
+            gen.getParameters().setBackColor(
+                CustomBarcodeGeneratorUtils.convertColor(parameters.getBackgroundColor(), Color.WHITE)
+            );
+
+            return gen.generateBarCodeImage();
+        } catch (Exception e) {
+            return new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB);
+        }
+    }
+
+    public BufferedImage getOldBarcodeImage(BarcodeParameters parameters) {
+        throw new UnsupportedOperationException();
+    }
 }
 ```
 
-## Implementando o método GetBarCodeImage()
+### Explicação:
 
- Nesta etapa, implementaremos o`getBarcodeImage`método, que gera a imagem do código de barras com base nos parâmetros fornecidos. Lidaremos com diferentes tipos de código de barras, definiremos cores, ajustaremos dimensões e muito mais. Aqui está o código para este método:
+- `getBarcodeImage` Método:
+  -  Cria um`BarcodeGenerator` exemplo.
+  - Define a cor do código de barras, a cor de fundo e gera a imagem.
+
+## Etapa 3: Gere um código de barras e adicione-o a um documento do Word
+
+Agora, vamos integrar nosso gerador de código de barras em um documento do Word.
+
+### Código:
 
 ```java
-/// <resumo>
-/// Implementação do método GetBarCodeImage() para a interface IBarCodeGenerator.
-/// </resumo>
-/// <param name="parâmetros"></param>
-/// <retorna></retorna>
-public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Exception {
-	// Verifique se o tipo de código de barras e o valor são fornecidos
-	if (parameters.getBarcodeType() == null || parameters.getBarcodeValue() == null)
-		return null;
-	
-	// Crie um BarcodeGenerator com base no tipo de código de barras
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR);
-	String type = parameters.getBarcodeType().toUpperCase();
-	switch (type)
-	{
-		case "QR":
-			generator = new BarcodeGenerator(EncodeTypes.QR);
-			break;
-		// Manuseie outros tipos de código de barras aqui
-	}
-	
-	// Defina o texto do código de barras
-	generator.setCodeText(parameters.getBarcodeValue());
-	
-	// Definir cores de código de barras
-	if (parameters.getForegroundColor() != null)
-		generator.getParameters().getBarcode().setBarColor(convertColor(parameters.getForegroundColor()));
-	if (parameters.getBackgroundColor() != null)
-		generator.getParameters().setBackColor(convertColor(parameters.getBackgroundColor()));
-	
-	// Definir altura e dimensões do símbolo
-	if (parameters.getSymbolHeight() != null)
-	{
-		generator.getParameters().getImageHeight().setPixels(convertSymbolHeight(parameters.getSymbolHeight()));
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	// Personalizar a localização do texto do código
-	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
-	if (parameters.getDisplayText())
-		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
-	
-	// Ajustes adicionais para códigos QR
-	final float SCALE = 2.4f; // Fator de escala empírico para converter código de barras do Word em Aspose.BarCode
-	float xdim = 1.0f;
-	if (generator.getBarcodeType().equals(EncodeTypes.QR))
-	{
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
-		generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageWidth().getInches() * SCALE);
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageWidth().getInches());
-		xdim = generator.getParameters().getImageHeight().getInches() / 25;
-		generator.getParameters().getBarcode().getXDimension().setInches(xdim);
-		generator.getParameters().getBarcode().getBarHeight().setInches(xdim);
-	}
-	
-	// Aplicar fator de escala
-	if (parameters.getScalingFactor() != null)
-	{
-		float scalingFactor = convertScalingFactor(parameters.getScalingFactor());
-		generator.getParameters().getImageHeight().setInches(generator.getParameters().getImageHeight().getInches() * scalingFactor);
-		if (generator.getBarcodeType().equals(EncodeTypes.QR))
-		{
-			generator.getParameters().getImageWidth().setInches(generator.getParameters().getImageHeight().getInches());
-			generator.getParameters().getBarcode().getXDimension().setInches(xdim * scalingFactor);
-			generator.getParameters().getBarcode().getBarHeight().setInches(xdim * scalingFactor);
-		}
-		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
-	}
-	
-	// Gerar e retornar a imagem do código de barras
-	return generator.generateBarCodeImage();
+import com.aspose.words.*;
+
+public class GenerateCustomBarcodeLabels {
+    public static void main(String[] args) throws Exception {
+        // Carregar ou criar um documento do Word
+        Document doc = new Document();
+        DocumentBuilder builder = new DocumentBuilder(doc);
+
+        // Configurar gerador de código de barras personalizado
+        CustomBarcodeGenerator barcodeGenerator = new CustomBarcodeGenerator();
+        BarcodeParameters barcodeParameters = new BarcodeParameters();
+        barcodeParameters.setBarcodeType("QR");
+        barcodeParameters.setBarcodeValue("https://exemplo.com");
+        barcodeParameters.setForegroundColor("000000");
+        barcodeParameters.setBackgroundColor("FFFFFF");
+
+        // Gerar imagem de código de barras
+        BufferedImage barcodeImage = barcodeGenerator.getBarcodeImage(barcodeParameters);
+
+        // Inserir imagem de código de barras em documento do Word
+        builder.insertImage(barcodeImage, 200, 200);
+
+        // Salvar o documento
+        doc.save("CustomBarcodeLabels.docx");
+
+        System.out.println("Barcode labels generated successfully!");
+    }
 }
 ```
 
-## Implementando o método GetOldBarcodeImage()
+### Explicação:
 
- Nesta etapa, implementaremos o`getOldBarcodeImage`método, que gera imagens de código de barras para códigos de barras antigos. Aqui, lidaremos com um tipo de código de barras específico, como POSTNET. Aqui está o código para este método:
-
-```java
-/// <resumo>
-/// Implementação do método GetOldBarcodeImage() para a interface IBarCodeGenerator.
-/// </resumo>
-/// <param name="parâmetros"></param>
-/// <retorna></retorna>
-public BufferedImage getOldBarcodeImage(BarcodeParameters parameters)
-{
-	if (parameters.getPostalAddress() == null)
-		return null;
-	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.POSTNET);
-	{
-		generator.setCodeText(parameters.getPostalAddress());
-	}
-	// Tipo de código rígido para código de barras antigo
-	return generator.generateBarCodeImage();
-}
-```
+- Inicialização de documento: crie ou carregue um documento do Word.
+- Parâmetros do código de barras: defina o tipo, o valor e as cores do código de barras.
+- Inserção de imagem: adicione a imagem do código de barras gerada ao documento do Word.
+- Salvar documento: Salve o arquivo no formato desejado.
 
 ## Conclusão
 
-Neste artigo, exploramos o processo de geração de etiquetas de código de barras personalizadas usando o Aspose.Words para Java. Cobrimos etapas essenciais, desde a configuração da altura do código de barras até a implementação de métodos para geração de código de barras. O Aspose.Words para Java capacita os desenvolvedores a criar etiquetas de código de barras dinâmicas e personalizadas, tornando-o uma ferramenta valiosa para vários setores.
+Seguindo essas etapas, você pode gerar e incorporar perfeitamente etiquetas de código de barras personalizadas em documentos do Word usando o Aspose.Words para Java. Essa abordagem é flexível e pode ser adaptada para atender a vários aplicativos. Boa codificação!
+
 
 ## Perguntas frequentes
 
-### Como posso ajustar o tamanho do código de barras gerado?
+1. Posso usar o Aspose.Words para Java sem uma licença?
+ Sim, mas terá algumas limitações. Obtenha um[licença temporária](https://purchase.aspose.com/temporary-license/) para funcionalidade completa.
 
-Você pode ajustar o tamanho do código de barras gerado definindo a altura do símbolo do código de barras e o fator de escala nos snippets de código fornecidos. Esses parâmetros permitem que você controle as dimensões do código de barras conforme suas necessidades.
+2. Que tipos de códigos de barras posso gerar?
+Aspose.BarCode suporta QR, Code 128, EAN-13 e muitos outros tipos. Verifique o[documentação](https://reference.aspose.com/words/java/) para uma lista completa.
 
-### Posso alterar as cores do código de barras?
+3. Como posso alterar o tamanho do código de barras?
+ Ajuste o`XDimension` e`BarHeight` parâmetros no`BarcodeGenerator` configurações.
 
-Sim, você pode alterar as cores do código de barras especificando as cores de primeiro plano e de fundo no código. Essa personalização permite que você combine a aparência do código de barras com o design do seu documento.
+4. Posso usar fontes personalizadas para códigos de barras?
+ Sim, você pode personalizar fontes de texto de código de barras por meio do`CodeTextParameters` propriedade.
 
-### Quais tipos de código de barras são suportados pelo Aspose.Words para Java?
+5. Onde posso obter ajuda com o Aspose.Words?
+ Visite o[fórum de suporte](https://forum.aspose.com/c/words/8/) para obter assistência.
 
-O Aspose.Words para Java suporta vários tipos de código de barras, incluindo códigos QR, CODE128, CODE39, EAN8, EAN13, UPCA, UPCE, ITF14 e mais. Você pode escolher o tipo de código de barras que atende às necessidades do seu aplicativo.
-
-### Como faço para integrar o código de barras gerado no meu documento do Word?
-
-Para integrar o código de barras gerado em seu documento do Word, você pode usar os recursos de manipulação de documentos do Aspose.Words for Java. Você pode inserir a imagem do código de barras em seu documento no local desejado.
-
-### Existe algum código de exemplo disponível para personalização adicional?
-
- Sim, você pode encontrar trechos de código de exemplo e documentação adicional no site de referência do Aspose.Words para Java:[Aspose.Words para referência da API Java](https://reference.aspose.com/words/java/).

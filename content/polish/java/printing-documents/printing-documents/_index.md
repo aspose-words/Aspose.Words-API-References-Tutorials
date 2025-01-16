@@ -38,7 +38,7 @@ Następnie utworzymy zadanie drukowania, aby wydrukować nasz załadowany dokume
 ```java
 // Utwórz zadanie drukowania, aby wydrukować nasz dokument.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Zainicjuj zestaw atrybutów liczbą stron w dokumencie.
+// Zainicjuj zestaw atrybutów liczbą stron w dokumencie.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Przekaż ustawienia drukarki i inne parametry do drukowanego dokumentu.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Utwórz zadanie drukowania, aby wydrukować nasz dokument.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Zainicjuj zestaw atrybutów liczbą stron w dokumencie.
+// Zainicjuj zestaw atrybutów liczbą stron w dokumencie.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Przekaż ustawienia drukarki i inne parametry do drukowanego dokumentu.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Indeksy początku i końca strony zdefiniowane w zestawie atrybutów.
+        //Indeksy początku i końca strony zdefiniowane w zestawie atrybutów.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Wybierz numer ostatniej strony, która ma zostać wydrukowana na tym arkuszu papieru.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Przejrzyj wybrane strony od zapisanej bieżącej strony do obliczonej
+        // Przejrzyj wybrane strony od zapisanej bieżącej strony do obliczonej
         // ostatnia strona.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Oblicz indeksy kolumn i wierszy.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // Przydatną wartością zwracaną jest skala, w jakiej została wyrenderowana strona.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Narysuj obramowanie strony (miniatura strony może być mniejsza od miniatury)
+                //Narysuj obramowanie strony (miniatura strony może być mniejsza od miniatury)
                 // (rozmiar symbolu zastępczego).
                 if (mPrintPageBorders) {
                     // Uzyskaj rzeczywisty 100% rozmiar strony w punktach.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Zdefiniuj liczbę kolumn i wierszy na arkuszu dla
-        //Papier o orientacji poziomej.
+        // Papier o orientacji poziomej.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ Gratulacje! Udało Ci się wydrukować dokument Word przy użyciu Aspose.Words f
 
 ### P1: Czy mogę wydrukować określone strony dokumentu za pomocą Aspose.Words dla Java?
 
- Tak, możesz określić zakres stron podczas drukowania dokumentu. W przykładzie kodu użyliśmy`attributes.add(new PageRanges(1, doc.getPageCount()))` aby wydrukować wszystkie strony. Możesz dostosować zakres stron według potrzeb.
+ Tak, możesz określić zakres stron podczas drukowania dokumentu. W przykładzie kodu użyliśmy`attributes.add(new PageRanges(1, doc.getPageCount()))`aby wydrukować wszystkie strony. Możesz dostosować zakres stron według potrzeb.
 
 ### P2: Czy Aspose.Words for Java nadaje się do drukowania wsadowego?
 

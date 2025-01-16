@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 
 ## 结论
 
-通过将 WMF 字体缩放到图元文件大小，您可以显著减小从 Word 文档生成的 PDF 文件的大小。此技术有助于优化文档存储和分发，而不会损害视觉内容的质量。遵循上述步骤可确保您的 PDF 文件更易于管理且大小更高效。
+通过将 WMF 字体缩放到图元文件大小，您可以显著减小从 Word 文档生成的 PDF 文件的大小。此技术有助于优化文档存储和分发，而不会影响视觉内容的质量。遵循上述步骤可确保您的 PDF 文件更易于管理且大小更高效。
 
 ## 常见问题解答
 

@@ -89,4 +89,4 @@ Używanie pojedynczego pliku CSS upraszcza zarządzanie i konserwację stylów. 
 Aspose.Words dla platformy .NET obsługuje różne formaty, w tym PDF i TXT, oraz formaty obrazów JPEG i PNG.
 
 ### Gdzie mogę znaleźć więcej materiałów na temat Aspose.Words dla .NET?
- Sprawdź[dokumentacja](https://reference.aspose.com/words/net/)aby uzyskać kompleksowe przewodniki i odniesienia do API.
+ Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać kompleksowe przewodniki i odniesienia do API.

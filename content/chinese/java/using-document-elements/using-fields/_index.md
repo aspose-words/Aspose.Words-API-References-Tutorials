@@ -89,7 +89,7 @@ HandleMergeField 类的源代码
 ```java
     private static class HandleMergeField implements IFieldMergingCallback
     {
-        /// <摘要>
+        //<摘要>
         //文档中的每个邮件合并字段都会调用此处理程序，
         /// 针对数据源中找到的每条记录。
         /// </摘要>
@@ -241,7 +241,7 @@ HandleMergeField 类的源代码
         {
             //什么也不做。
         }
-        /// <摘要>
+        //<摘要>
         /// 当邮件合并引擎在文档中遇到 Image:XXX 合并字段时调用此方法。
         /// 您有机会返回一个图像对象、文件名或包含图像的流。
         /// </摘要>
@@ -294,7 +294,7 @@ HandleMergeField 类的源代码
     }
     private static class HandleMergeFieldAlternatingRows implements IFieldMergingCallback
     {
-        /// <摘要>
+        //<摘要>
         /// 对文档中遇到的每个合并字段进行调用。
         /// 我们可以将一些数据返回给邮件合并引擎或者对文档执行其他操作。
         /// 在这种情况下，我们修改单元格格式。
@@ -325,14 +325,14 @@ HandleMergeField 类的源代码
         private DocumentBuilder mBuilder;
         private int mRowIdx;
     }
-    /// <摘要>
+    //<摘要>
     /// 如果值为奇数，则返回 true；如果值为偶数，则返回 false。
     /// </摘要>
     private static boolean isOdd(int value)
     {
         return (value / 2 * 2) == value;
     }
-    /// <摘要>
+    //<摘要>
     /// 创建 DataTable 并用数据填充。
     /// 在现实生活中，这个 DataTable 应该从数据库中填充。
     /// </摘要>

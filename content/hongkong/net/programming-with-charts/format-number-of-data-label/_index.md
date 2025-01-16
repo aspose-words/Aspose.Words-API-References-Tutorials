@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-charts/format-number-of-data-label/
 ---
 ## 介紹
 
-創建引人入勝且內容豐富的文件通常涉及包含帶有格式良好的數據標籤的圖表。如果您是 .NET 開發人員，希望透過複雜的圖表增強您的 Word 文檔，Aspose.Words for .NET 是一個出色的程式庫，可以幫助您實現這一目標。本教學將引導您逐步完成使用 Aspose.Words for .NET 在圖表中設定數位標籤格式的過程。
+創建引人入勝且內容豐富的文件通常涉及包含帶有格式良好的數據標籤的圖表。如果您是 .NET 開發人員，希望透過複雜的圖表增強 Word 文檔，那麼 Aspose.Words for .NET 是一個出色的程式庫，可以幫助您實現這一目標。本教學將引導您逐步完成使用 Aspose.Words for .NET 在圖表中設定數位標籤格式的過程。
 
 ## 先決條件
 

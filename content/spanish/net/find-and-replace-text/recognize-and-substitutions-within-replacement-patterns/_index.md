@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-El`Document` El objeto es el núcleo de Aspose.Words. Representa el documento Word completo.
+ El`Document` El objeto es el núcleo de Aspose.Words. Representa el documento Word completo.
 
 ## Paso 2: Agregar texto al documento
 
@@ -50,7 +50,7 @@ A continuación, agreguemos algo de texto al documento. Este texto será el obje
 builder.Write("Jason give money to Paul.");
 ```
 
-El`DocumentBuilder` La clase es una herramienta poderosa para agregar texto y otros elementos a su documento.
+ El`DocumentBuilder` La clase es una herramienta poderosa para agregar texto y otros elementos a su documento.
 
 ## Paso 3: Definir el patrón Regex
 
@@ -70,7 +70,7 @@ Aspose.Words le permite utilizar sustituciones en sus reemplazos. Debe configura
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
-El`FindReplaceOptions` La clase proporciona varias opciones para personalizar sus operaciones de búsqueda y reemplazo.
+ El`FindReplaceOptions` La clase proporciona varias opciones para personalizar sus operaciones de búsqueda y reemplazo.
 
 ## Paso 5: Realizar el reemplazo
 

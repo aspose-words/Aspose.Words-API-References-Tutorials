@@ -45,7 +45,7 @@ Tento fragment kódu nejprve definuje cestu k adresáři, kde se nachází váš
 
 ## Krok 2: Otevřete záložku
 
- Představte si záložku jako příznak označující konkrétní místo v dokumentu. Abychom mohli upravit jeho obsah, musíme jej nejprve najít. Aspose.Words nabízí`Bookmarks` sběr v rámci`Range` objekt, což vám umožní načíst konkrétní záložku podle jejího názvu. Uděláme to takto:
+ Představte si záložku jako příznak označující konkrétní místo v dokumentu. Abychom mohli upravit jeho obsah, musíme jej nejprve najít. Aspose.Words nabízí`Bookmarks` sběr v rámci`Range` objekt, což vám umožní načíst konkrétní záložku podle jejího názvu. Děláme to takto:
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks["MyBookmark1"];
@@ -69,7 +69,7 @@ Tento fragment kódu načte aktuální název (`name`) a text (`text`) cílené 
 
 ## Krok 4: Aktualizujte název záložky (volitelné)
 
- Představte si přejmenování kapitoly v knize. Podobně můžete přejmenovat záložky, aby lépe odrážely jejich obsah nebo účel. Aspose.Words vám umožňuje upravit`Name` vlastnictví`Bookmark` objekt:
+ Představte si přejmenování kapitoly v knize. Podobně můžete přejmenovat záložky, aby lépe odrážely jejich obsah nebo účel. Aspose.Words vám umožňuje upravit`Name` vlastnictvím`Bookmark` objekt:
 
 ```csharp
 bookmark.Name = "RenamedBookmark";
@@ -79,7 +79,7 @@ Zde je další tip: Názvy záložek mohou obsahovat písmena, čísla a podtrž
 
 ## Krok 5: Aktualizujte text záložky
 
- Nyní přichází ta vzrušující část: úprava skutečného obsahu spojeného se záložkou. Aspose.Words vám umožňuje přímo aktualizovat`Text` vlastnictví`Bookmark` objekt:
+ Nyní přichází ta vzrušující část: úprava skutečného obsahu spojeného se záložkou. Aspose.Words vám umožňuje přímo aktualizovat`Text` vlastnictvím`Bookmark` objekt:
 
 ```csharp
 bookmark.Text = "This is a new bookmarked text.";

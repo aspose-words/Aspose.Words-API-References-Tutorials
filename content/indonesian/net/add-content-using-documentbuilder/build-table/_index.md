@@ -19,7 +19,7 @@ Sebelum memulai petualangan membuat meja, pastikan semua perlengkapan sudah dipe
 - .NET Framework (4.0 atau lebih tinggi)
 - Aspose.Words untuk pustaka .NET
 
- Jika Anda belum memiliki Aspose.Words, Anda dapat dengan mudah[unduh disini](https://releases.aspose.com/words/net/) Anda juga bisa memulai dengan[uji coba gratis](https://releases.aspose.com/) jika Anda ingin mencoba. Bagi mereka yang siap untuk mengambil risiko, Anda dapat[beli lisensi](https://purchase.aspose.com/buy) , atau jika Anda membutuhkan lebih banyak waktu untuk mengevaluasi, ambil[lisensi sementara](https://purchase.aspose.com/temporary-license/).
+ Jika Anda belum memiliki Aspose.Words, Anda dapat dengan mudah[unduh disini](https://releases.aspose.com/words/net/) Anda juga bisa memulai dengan[uji coba gratis](https://releases.aspose.com/) jika Anda ingin mencoba. Bagi mereka yang siap untuk mengambil risiko, Anda dapat[beli lisensi](https://purchase.aspose.com/buy) atau jika Anda membutuhkan lebih banyak waktu untuk mengevaluasi, ambil[lisensi sementara](https://purchase.aspose.com/temporary-license/).
 
 ## Mengimpor Ruang Nama
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Dengan menggunakan`StartTable` kami memberi tahu Aspose.Words bahwa kami akan membuat tabel.`InsertCell` metode menambahkan sel pertama, dan`AutoFit` memastikan kolom kita memiliki lebar tetap.
+ Dengan menggunakan`StartTable` , kami memberi tahu Aspose.Words bahwa kami akan membuat tabel.`InsertCell` metode menambahkan sel pertama, dan`AutoFit` memastikan kolom kita memiliki lebar tetap.
 
 ## Langkah 3: Format Baris Pertama
 

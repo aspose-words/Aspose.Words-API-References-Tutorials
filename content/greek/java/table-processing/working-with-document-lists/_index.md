@@ -38,23 +38,11 @@ url: /el/java/table-processing/working-with-document-lists/
 // Εισαγάγετε απαιτούμενα πακέτα
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Αρχικοποιήστε ένα νέο Έγγραφο
-        Document doc = new Document();
-
-        // Δημιουργήστε μια λίστα
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Προσθήκη στοιχείων λίστας
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Αποθηκεύστε το έγγραφο
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Τροποποίηση λίστας εγγράφων
@@ -69,21 +57,18 @@ public class DocumentListExample {
 Ακολουθεί ένα απόσπασμα κώδικα για την τροποποίηση μιας λίστας εγγράφων:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Φορτώστε ένα υπάρχον έγγραφο
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Πρόσβαση στη λίστα
-        List list = doc.getLists().get(0);
-
-        // Προσθέστε ένα νέο στοιχείο
-        list.getListItems().add("New Item");
-
-        // Αποθηκεύστε το τροποποιημένο έγγραφο
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Ελέγξτε εάν η παράγραφος είναι μέρος μιας λίστας.
+    if (paragraph.isListItem()) {
+        // Ενημερώστε την τελευταία παράγραφο της λίστας.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Εξαγωγή πληροφοριών από μια λίστα εγγράφων
@@ -97,23 +82,21 @@ public class ModifyDocumentListExample {
 Ακολουθεί ένα απόσπασμα κώδικα για την εξαγωγή πληροφοριών από μια λίστα εγγράφων:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Φορτώστε το έγγραφο
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Πρόσβαση στη λίστα
-        List list = doc.getLists().get(0);
-
-        // Επαναλάβετε τα στοιχεία της λίστας και εκτυπώστε τα
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Συχνές Ερωτήσεις (FAQ)
+## Σύναψη
+
+Σε αυτόν τον περιεκτικό οδηγό, εξερευνήσαμε τον κόσμο της εργασίας με λίστες εγγράφων χρησιμοποιώντας το Aspose.Words για Java. Έχετε μάθει πώς να δημιουργείτε, να τροποποιείτε και να εξάγετε πληροφορίες από λίστες εγγράφων, όλα με τη δύναμη και την ευελιξία του Aspose.Words για Java. Ξεκινήστε να εφαρμόζετε αυτές τις τεχνικές στα έργα σας Java σήμερα και βελτιστοποιήστε τις εργασίες αυτοματισμού εγγράφων σας.
+
+
+## Συχνές ερωτήσεις
 
 ### Πώς μπορώ να προσθέσω κουκκίδες σε μια λίστα εγγράφων;
  Για να προσθέσετε κουκκίδες σε μια λίστα εγγράφων, χρησιμοποιήστε το κατάλληλο ListTemplate κατά τη δημιουργία της λίστας. Για παράδειγμα, χρησιμοποιήστε`ListTemplate.BULLET_DEFAULT` αντί για`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ public class ExtractListItemsExample {
 
 ### Υποστηρίζει το Aspose.Words για Java την εργασία με πίνακες σε έγγραφα;
 Ναι, το Aspose.Words για Java παρέχει εκτεταμένη υποστήριξη για εργασία με πίνακες, επιτρέποντάς σας να δημιουργείτε, να τροποποιείτε και να εξάγετε δεδομένα πινάκων χωρίς κόπο.
-
-## Σύναψη
-
-Σε αυτόν τον περιεκτικό οδηγό, εξερευνήσαμε τον κόσμο της εργασίας με λίστες εγγράφων χρησιμοποιώντας το Aspose.Words για Java. Έχετε μάθει πώς να δημιουργείτε, να τροποποιείτε και να εξάγετε πληροφορίες από λίστες εγγράφων, όλα με τη δύναμη και την ευελιξία του Aspose.Words για Java. Ξεκινήστε να εφαρμόζετε αυτές τις τεχνικές στα έργα σας Java σήμερα και βελτιστοποιήστε τις εργασίες αυτοματισμού εγγράφων σας.

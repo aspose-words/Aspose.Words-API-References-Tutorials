@@ -19,11 +19,7 @@ Bevor wir uns mit der Einbettung von OLE-Objekten und ActiveX-Steuerelementen be
 - Aspose.Words für Python-Bibliothek installiert
 - Ein grundlegendes Verständnis der Word-Dokumentstruktur
 
-## Einbetten von OLE-Objekten
-
-Mithilfe von OLE-Objekten können Sie externe Dateien wie Tabellenkalkulationen oder Präsentationen nahtlos in Ihre Word-Dokumente integrieren. Gehen Sie folgendermaßen vor, um ein OLE-Objekt einzubetten:
-
-### Schritt 1: Erforderliche Bibliotheken hinzufügen
+## Schritt 1: Erforderliche Bibliotheken hinzufügen
 
 Beginnen Sie mit dem Importieren der erforderlichen Module aus der Aspose.Words-Bibliothek und aller anderen Abhängigkeiten:
 
@@ -31,7 +27,7 @@ Beginnen Sie mit dem Importieren der erforderlichen Module aus der Aspose.Words-
 import aspose.words as aw
 ```
 
-### Schritt 2: Erstellen eines Word-Dokuments
+## Schritt 2: Erstellen eines Word-Dokuments
 
 Erstellen Sie mit Aspose.Words für Python ein neues Word-Dokument:
 
@@ -39,42 +35,16 @@ Erstellen Sie mit Aspose.Words für Python ein neues Word-Dokument:
 doc = aw.Document()
 ```
 
-### Schritt 3: Einfügen eines OLE-Objekts
+## Schritt 3: Einfügen eines OLE-Objekts
 
 Jetzt können Sie ein OLE-Objekt in Ihr Dokument einfügen. Lassen Sie uns beispielsweise eine Excel-Tabelle einbetten:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## Einbetten von ActiveX-Steuerelementen
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", Wahr, Wahr, Keine)
 
-ActiveX-Steuerelemente verleihen Ihren Dokumenten Interaktivität und ermöglichen Benutzern die Interaktion mit eingebetteten Inhalten. Gehen Sie folgendermaßen vor, um ein ActiveX-Steuerelement einzubetten:
-
-### Schritt 1: Erforderliche Bibliotheken hinzufügen
-
-Beginnen Sie wie bei OLE-Objekten mit dem Importieren der erforderlichen Module:
-
-```python
-import aspose.words as aw
-```
-
-### Schritt 2: Erstellen eines Word-Dokuments
-
-Erstellen Sie ein neues Word-Dokument:
-
-```python
-doc = aw.Document()
-```
-
-### Schritt 3: Einfügen eines ActiveX-Steuerelements
-
-Angenommen, Sie möchten einen Multimedia-Player einbetten. So geht's:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Verbesserung der Interaktivität und Funktionalität

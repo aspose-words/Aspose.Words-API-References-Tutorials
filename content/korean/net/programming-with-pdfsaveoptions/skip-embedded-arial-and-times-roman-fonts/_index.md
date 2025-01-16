@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 네, 필요한 경우 다른 글꼴을 포함하지 않도록 저장 옵션을 구성할 수 있습니다.
 
 ### Aspose.Words for .NET은 무료인가요?
-Aspose.Words for .NET은 다운로드할 수 있는 무료 평가판을 제공합니다.[여기](https://releases.aspose.com/) , 하지만 전체 액세스를 위해서는 라이센스를 구매해야 합니다.[여기](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET은 다운로드할 수 있는 무료 평가판을 제공합니다.[여기](https://releases.aspose.com/) , 하지만 전체 액세스를 위해서는 라이센스를 구매해야 합니다.[여기](https://purchase.aspose.com/buy).
 
 ### Aspose.Words for .NET에 대한 추가 튜토리얼은 어디에서 찾을 수 있나요?
- 포괄적인 문서와 튜토리얼을 찾을 수 있습니다.[여기](https://reference.aspose.com/words/net/).
+포괄적인 문서와 튜토리얼을 찾을 수 있습니다.[여기](https://reference.aspose.com/words/net/).

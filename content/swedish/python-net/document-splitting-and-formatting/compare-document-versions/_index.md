@@ -7,7 +7,7 @@ type: docs
 weight: 13
 url: /sv/python-net/document-splitting-and-formatting/compare-document-versions/
 ---
-I dagens snabba värld av samarbetande dokumentskapande är det viktigt att upprätthålla korrekt versionskontroll för att säkerställa noggrannhet och förhindra fel. Ett kraftfullt verktyg som kan hjälpa till i denna process är Aspose.Words för Python, ett API utformat för att manipulera och hantera Word-dokument programmatiskt. Den här artikeln guidar dig genom processen att jämföra dokumentversioner med Aspose.Words för Python, vilket gör att du kan implementera effektiv revisionskontroll i dina projekt.
+dagens snabba värld av samarbetande dokumentskapande är det viktigt att upprätthålla korrekt versionskontroll för att säkerställa noggrannhet och förhindra fel. Ett kraftfullt verktyg som kan hjälpa till i denna process är Aspose.Words för Python, ett API utformat för att manipulera och hantera Word-dokument programmatiskt. Den här artikeln guidar dig genom processen att jämföra dokumentversioner med Aspose.Words för Python, vilket gör att du kan implementera effektiv revisionskontroll i dina projekt.
 
 ## Introduktion
 
@@ -45,16 +45,6 @@ doc2 = aw.Document(doc2_path)
 
 ```python
 comparison = doc1.compare(doc2, "Author Name", datetime.now())
-```
-
-## Markera ändringar
-
-För att göra ändringarna mer synliga kan du markera dem:
-
-```python
-highlighter = aw.markup.HighlightColor.GRAY
-for change in comparison.changes:
-    change.format_revision(highlighter)
 ```
 
 ## Acceptera eller avvisa ändringar

@@ -49,7 +49,7 @@ Das Rendern von Dokumenten ist unerlässlich, wenn Sie diese in verschiedene For
 
 ```java
 // Rendern Sie das Dokument als PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Sie können ersetzen`SaveFormat.PDF` mit dem gewünschten Format zum Rendern.

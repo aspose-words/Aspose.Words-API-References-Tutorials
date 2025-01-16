@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## Metni Değiştirme
-
-Çalıştırmaların veya paragrafların metinlerini doğrudan ayarlayarak metni değiştirebilirsiniz:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## Biçimlendirme ile Çalışma
 
 Aspose.Words, şu biçimlendirme stilleriyle çalışmanıza olanak tanır:

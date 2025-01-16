@@ -19,7 +19,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/document-revisio
 在我们开始之前，请确保你已经安装了 Aspose.Words for Python。你可以从[这里](https://releases.aspose.com/words/python/)。安装完成后，您可以在 Python 脚本中导入必要的模块即可开始使用。
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## 加载和显示文档
@@ -27,7 +27,7 @@ import asposewords
 要使用文档，首先需要将其加载到 Python 应用程序中。使用以下代码片段加载文档并显示其内容：
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 当对文档进行任何更改时，Aspose.Words 可以自动将其作为修订进行跟踪。例如，如果我们想替换特定的单词，我们可以在跟踪更改的同时进行替换：
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words 允许您比较两个文档以直观地看到它们之间的差异：
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 协作者可以向文档添加评论和注释。您可以通过编程方式管理以下元素：
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 您可以自定义修订在文档中的显示方式，例如更改插入和删除的文本的颜色：
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## 保存和共享文档
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 与合作者分享最终文档以获得进一步的反馈。
-
-## 有效合作的秘诀
-
-1. 用有意义的评论清晰地标记修订内容。
-2. 向所有合作者传达修订指南。
-3. 定期审查并接受/拒绝修订。
-4. 使用 Aspose.Words 的比较功能进行全面的文档分析。
 
 ## 结论
 

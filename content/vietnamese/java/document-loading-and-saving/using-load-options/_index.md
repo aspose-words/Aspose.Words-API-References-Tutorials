@@ -43,7 +43,7 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.setConvertShapeToOfficeMath(true);
 
 Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 ```
 
  Mã này trình bày cách chuyển đổi hình dạng thành các đối tượng Office Math trong quá trình tải tài liệu.`setConvertShapeToOfficeMath(true)`phương pháp cho phép chuyển đổi này.
@@ -136,7 +136,7 @@ public void convertShapeToOfficeMath() throws Exception {
 		loadOptions.setConvertShapeToOfficeMath(true);
 	}
 	Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 }
 @Test
 public void setMsWordVersion() throws Exception {
@@ -210,4 +210,4 @@ Trong hướng dẫn này, chúng tôi đã đi sâu vào nhiều khía cạnh k
 
 ###  Mục đích của việc này là gì?`setTempFolder` method in Load Options?
 
-Các`setTempFolder`Phương pháp này cho phép bạn chỉ định thư mục lưu trữ các tập tin tạm thời trong quá trình xử lý tài liệu.
+ Các`setTempFolder`Phương pháp này cho phép bạn chỉ định thư mục lưu trữ các tập tin tạm thời trong quá trình xử lý tài liệu.

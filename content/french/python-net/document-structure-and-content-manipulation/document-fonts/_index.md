@@ -15,7 +15,7 @@ La mise en forme efficace d'un document ne se limite pas à transmettre le conte
 
 ## Importance des polices et du style de texte
 
-Les polices et les styles de texte sont la représentation visuelle du ton et de l'emphase de votre contenu. Le bon choix de police peut susciter des émotions et améliorer l'expérience globale de l'utilisateur. Le style de texte, comme le texte en gras ou en italique, permet de mettre en valeur les points cruciaux, rendant le contenu plus lisible et attrayant.
+Les polices et les styles de texte sont la représentation visuelle du ton et de l'emphase de votre contenu. Le choix de la bonne police peut susciter des émotions et améliorer l'expérience globale de l'utilisateur. Le style de texte, comme le texte en gras ou en italique, permet de mettre en valeur les points cruciaux, rendant le contenu plus lisible et attrayant.
 
 ## Notions de base sur les polices de caractères
 
@@ -54,12 +54,13 @@ Vous pouvez utiliser Aspose.Words pour appliquer l'italique à des parties de te
 ```python
 # Import the required classes
 from aspose.words import Document, Font, Style
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply italic style
 font = run.font
@@ -76,12 +77,13 @@ Pour mettre en surbrillance du texte, vous pouvez ajuster la couleur d'arrière-
 ```python
 # Import the required classes
 from aspose.words import Document, Color
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply background color
 run.font.highlight_color = Color.YELLOW
@@ -97,15 +99,16 @@ L'alignement peut être défini à l'aide de styles. Voici un exemple :
 ```python
 # Import the required classes
 from aspose.words import Document, ParagraphAlignment
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set alignment
-paragraph.paragraph_format.alignment = ParagraphAlignment.RIGHT
+paragraph.paragraph_format.alignment = aw.ParagraphAlignment.RIGHT
 
 # Save the modified document
 doc.save("modified_document.docx")
@@ -113,17 +116,18 @@ doc.save("modified_document.docx")
 
 ### Espacement des lignes pour une meilleure lisibilité
 
-L'application d'un espacement de ligne approprié améliore la lisibilité. Vous pouvez y parvenir en utilisant Aspose.Words :
+L'application d'un espacement de ligne approprié améliore la lisibilité. Vous pouvez y parvenir en utilisant Aspose.Words :
 
 ```python
 # Import the required classes
 from aspose.words import Document, LineSpacingRule
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set line spacing
 paragraph.paragraph_format.line_spacing_rule = LineSpacingRule.MULTIPLE

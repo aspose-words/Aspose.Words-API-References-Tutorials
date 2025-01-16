@@ -49,7 +49,7 @@ doc.print("printerName");
 
 ```java
 // दस्तावेज़ को PDF में प्रस्तुत करें
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  आप प्रतिस्थापित कर सकते हैं`SaveFormat.PDF` प्रतिपादन के लिए वांछित प्रारूप के साथ।

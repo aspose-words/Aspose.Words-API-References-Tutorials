@@ -101,7 +101,7 @@ private Document getDocument() {
 /// Получает документ страницы.
 /// </резюме>
 /// <param name="pageIndex">
-/// Индекс страницы на основе 1.
+/// Индекс страницы, основанный на 1.
 /// </параметр>
 /// <возвращает>
 /// <see cref="Документ"/>.
@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <резюме>
-/// Получает документ диапазона страниц.
+//Получает документ диапазона страниц.
 /// </резюме>
-//<param name="startIndex">
+/// <param name="startIndex">
 /// 1-й индекс стартовой страницы.
 /// </параметр>
 /// <param name="endIndex">

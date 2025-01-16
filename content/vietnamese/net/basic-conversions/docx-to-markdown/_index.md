@@ -59,7 +59,7 @@ Aspose.Words hỗ trợ nhiều định dạng tài liệu bao gồm DOCX, DOC, 
 Có, Aspose.Words cung cấp các API mạnh mẽ để thao tác với bảng, hình ảnh, định dạng văn bản và nhiều thứ khác trong tài liệu.
 
 ### Tôi có thể tìm tài liệu chi tiết về Aspose.Words cho .NET ở đâu?
-Tài liệu chi tiết có sẵn[đây](https://reference.aspose.com/words/net/).
+ Tài liệu chi tiết có sẵn[đây](https://reference.aspose.com/words/net/).
 
 ### Làm thế nào tôi có thể nhận được giấy phép tạm thời cho Aspose.Words dành cho .NET?
 Bạn có thể xin giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).

@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
-El`unprotect` El método elimina cualquier protección aplicada al documento, haciéndolo accesible sin contraseña.
+ El`unprotect` El método elimina cualquier protección aplicada al documento, haciéndolo accesible sin contraseña.
 
 ## Comprobación del tipo de protección del documento
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
-El`getProtectionType` El método devuelve un entero que representa el tipo de protección aplicado al documento.
+ El`getProtectionType` El método devuelve un entero que representa el tipo de protección aplicado al documento.
 
 
 ## Conclusión

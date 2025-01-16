@@ -10,7 +10,7 @@ url: /hu/java/document-conversion-and-export/formatting-tables-and-table-styles/
 
 ## Bevezetés
 
-A dokumentumok formázásakor a táblázatok döntő szerepet játszanak az adatok rendezésében és egyértelmű megjelenítésében. Ha Java-val és Aspose.Words-szel dolgozik, akkor hatékony eszközök állnak rendelkezésére a táblázatok létrehozásához és formázásához a dokumentumokban. Akár egyszerű táblázatot tervez, akár fejlett stílusokat alkalmaz, az Aspose.Words for Java számos olyan funkciót kínál, amelyek segítségével professzionális megjelenésű eredményeket érhet el.
+dokumentumok formázásakor a táblázatok döntő szerepet játszanak az adatok rendszerezésében és egyértelmű megjelenítésében. Ha Java-val és Aspose.Words-szel dolgozik, akkor hatékony eszközök állnak rendelkezésére a táblázatok létrehozásához és formázásához a dokumentumokban. Akár egyszerű táblázatot tervez, akár fejlett stílusokat alkalmaz, az Aspose.Words for Java számos olyan funkciót kínál, amelyek segítségével professzionális megjelenésű eredményeket érhet el.
 
 Ebben az útmutatóban végigvezetjük a táblázatok formázásán és a táblázatstílusok alkalmazásán az Aspose.Words for Java használatával. Megtanulja, hogyan állíthat be táblázatszegélyeket, hogyan alkalmazhat cellaárnyékolást, és hogyan használhat táblázatstílusokat a dokumentumok megjelenésének javítására. A végére rendelkezni fog azzal a képességgel, hogy jól formázott táblázatokat készítsen, amelyek kiemelik adatait.
 
@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Hozzon létre nagyobb kereteket a sor első cellájához.
+// Hozzon létre nagyobb kereteket a sor első cellájához.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -157,7 +157,7 @@ doc.save("BuildTableWithStyle.docx");
 Ebben a példában:
 - Táblázatstílus beállítása: Egy előre meghatározott stílust alkalmazunk (`MEDIUM_SHADING_1_ACCENT_1`) az asztalra. Ez a stílus magában foglalja a táblázat különböző részeinek formázását.
 - Stílusbeállítások: Meghatározzuk, hogy az első oszlopot, a sorsávokat és az első sort a stílusbeállításoknak megfelelően kell formázni.
--  AutoFit: Használjuk`AUTO_FIT_TO_CONTENTS` hogy a táblázat méretét a tartalom alapján állítsa be.
+-  AutoFit: használjuk`AUTO_FIT_TO_CONTENTS` hogy a táblázat méretét a tartalom alapján állítsa be.
 
 ## Következtetés
 
@@ -169,7 +169,7 @@ Az Aspose.Words for Java egy robusztus eszköz, amely kiterjedt szolgáltatások
 
 ### 1. Használhatok olyan egyéni táblázatstílusokat, amelyek nem szerepelnek az alapértelmezett beállításokban?
 
-Igen, az Aspose.Words for Java segítségével egyéni stílusokat határozhat meg és alkalmazhat a táblákra. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/java/) további részletekért az egyéni stílusok létrehozásáról.
+ Igen, az Aspose.Words for Java segítségével egyéni stílusokat határozhat meg és alkalmazhat a táblákra. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/java/) további részletekért az egyéni stílusok létrehozásáról.
 
 ### 2. Hogyan alkalmazhatom a feltételes formázást a táblázatokban?
 

@@ -108,5 +108,5 @@ Ed ecco fatto! Hai creato con successo una tabella formattata in un documento Wo
 ### Posso unire le celle in una tabella utilizzando Aspose.Words per .NET?
  Sì, puoi unire le celle utilizzando`CellFormat.HorizontalMerge` E`CellFormat.VerticalMerge` proprietà.
 
-### Esiste un modo per definire lo stile della tabella con stili predefiniti?
+### Esiste un modo per personalizzare la tabella con stili predefiniti?
  Sì, Aspose.Words per .NET consente di applicare stili di tabella predefiniti utilizzando`Table.Style` proprietà.

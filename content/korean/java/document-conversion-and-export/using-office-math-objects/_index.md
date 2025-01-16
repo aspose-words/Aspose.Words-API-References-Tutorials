@@ -90,7 +90,7 @@ Aspose.Words for Java의 Office Math 객체를 사용하면 문서 내에서 수
 
 ### 문서 내에서 Office Math 방정식을 다르게 정렬할 수 있나요?
 
- 네, Office Math 방정식의 정렬을 제어할 수 있습니다. 다음을 사용하세요.`setJustification` 왼쪽, 오른쪽, 가운데 등의 정렬 옵션을 지정하는 방법입니다.
+ 네, Office Math 방정식의 정렬을 제어할 수 있습니다. 다음을 사용하세요.`setJustification`왼쪽, 오른쪽, 가운데 등의 정렬 옵션을 지정하는 방법입니다.
 
 ### Aspose.Words for Java는 복잡한 수학 문서를 처리하는 데 적합합니까?
 

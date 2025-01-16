@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /fr/java/word-processing/manipulating-document-content/
 ---
-
 ## Introduction
 
 Dans le monde de la programmation Java, la gestion efficace des documents est un aspect crucial de nombreuses applications. Que vous travailliez sur la génération de rapports, la gestion de contrats ou toute autre tâche liée à des documents, Aspose.Words pour Java est un outil puissant à avoir dans votre boîte à outils. Dans ce guide complet, nous allons nous plonger dans les subtilités de la manipulation du contenu des documents avec le nettoyage, les champs et les données XML à l'aide d'Aspose.Words pour Java. Nous vous fournirons des instructions étape par étape ainsi que des exemples de code source pour vous donner les connaissances et les compétences nécessaires pour maîtriser cette bibliothèque polyvalente.
@@ -50,7 +49,8 @@ Les paragraphes vides peuvent être une nuisance. Supprimez-les à l'aide de ce 
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ Il est possible que du contenu caché existe dans vos documents, ce qui peut ent
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 En suivant ces étapes, vous pouvez vous assurer que votre document est propre et prêt pour une manipulation ultérieure.
-
----
 
 ## Travailler avec les champs
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 Les champs ajoutent des fonctionnalités dynamiques à vos documents, améliorant ainsi leur utilité.
 
----
-
-## Incorporation de données XML
-
-L'intégration de données XML dans vos documents peut s'avérer très efficace, notamment pour générer du contenu dynamique. Aspose.Words pour Java simplifie ce processus.
-
-### Liaison de données XML
-
-Liez facilement des données XML à votre document :
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://schémas.exemple'");
-doc.save("document_with_xml_data.docx");
-```
-
-Ce code lie les données XML à des parties spécifiques de votre document, le rendant dynamique et axé sur les données.
-
-## Questions fréquemment posées (FAQ)
-
-### Comment supprimer les paragraphes vides d’un document ?
-   
-   Pour supprimer les paragraphes vides d'un document, vous pouvez parcourir les paragraphes et supprimer ceux qui n'ont pas de contenu textuel. Voici un extrait de code pour vous aider à y parvenir :
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### Puis-je mettre à jour tous les champs d’un document par programmation ?
-
-   Oui, vous pouvez mettre à jour tous les champs d'un document par programmation à l'aide d'Aspose.Words pour Java. Voici comment procéder :
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### Comment lier des données XML à un document ?
-
-   La liaison de données XML à un document est simple avec Aspose.Words pour Java. Vous pouvez utiliser des mappages XML pour y parvenir. Voici un exemple :
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://schémas.exemple'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### Quelle est l’importance de nettoyer le contenu des documents ?
-
-   Le nettoyage du contenu des documents est important pour garantir que vos documents sont exempts d'éléments inutiles, ce qui peut améliorer la lisibilité et réduire la taille du fichier. Cela permet également de maintenir la cohérence du document.
-
-### Comment puis-je supprimer les styles inutilisés d’un document ?
-
-   Vous pouvez supprimer les styles inutilisés d'un document à l'aide d'Aspose.Words pour Java. Voici un exemple :
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### Aspose.Words pour Java est-il adapté à la génération de documents dynamiques avec des données XML ?
-
-   Oui, Aspose.Words pour Java est parfaitement adapté à la génération de documents dynamiques avec des données XML. Il fournit des fonctionnalités robustes pour lier des données XML à des modèles et créer des documents personnalisés.
-
 ## Conclusion
 
 Dans ce guide complet, nous avons exploré le monde de la manipulation du contenu des documents avec le nettoyage, les champs et les données XML à l'aide d'Aspose.Words pour Java. Vous avez appris à nettoyer les documents, à travailler avec les champs et à incorporer les données XML de manière transparente. Ces compétences sont inestimables pour quiconque s'occupe de la gestion de documents dans les applications Java.
+
+## FAQ
+
+### Comment supprimer les paragraphes vides d’un document ?
+   
+Pour supprimer les paragraphes vides d'un document, vous pouvez parcourir les paragraphes et supprimer ceux qui n'ont pas de contenu textuel. Voici un extrait de code pour vous aider à y parvenir :
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### Puis-je mettre à jour tous les champs d’un document par programmation ?
+
+Oui, vous pouvez mettre à jour tous les champs d'un document par programmation à l'aide d'Aspose.Words pour Java. Voici comment procéder :
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### Quelle est l’importance de nettoyer le contenu des documents ?
+
+Le nettoyage du contenu des documents est important pour garantir que vos documents sont exempts d'éléments inutiles, ce qui peut améliorer la lisibilité et réduire la taille du fichier. Cela permet également de maintenir la cohérence du document.
+
+### Comment puis-je supprimer les styles inutilisés d’un document ?
+
+Vous pouvez supprimer les styles inutilisés d'un document à l'aide d'Aspose.Words pour Java. Voici un exemple :
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### Aspose.Words pour Java est-il adapté à la génération de documents dynamiques avec des données XML ?
+
+Oui, Aspose.Words pour Java est parfaitement adapté à la génération de documents dynamiques avec des données XML. Il fournit des fonctionnalités robustes pour lier des données XML à des modèles et créer des documents personnalisés.

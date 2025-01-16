@@ -92,4 +92,4 @@ O Aspose.Words oferece suporte a várias versões do .NET Framework e do .NET Co
 Sim, você pode desvincular cabeçalhos e rodapés usando os métodos da API do Aspose.Words para restaurar a formatação de documentos individuais.
 
 ### Onde posso encontrar documentação mais detalhada sobre o Aspose.Words para .NET?
- Visita[Aspose.Words para documentação .NET](https://reference.aspose.com/words/net/)para guias abrangentes e referências de API.
+ Visita[Aspose.Words para documentação .NET](https://reference.aspose.com/words/net/) para guias abrangentes e referências de API.

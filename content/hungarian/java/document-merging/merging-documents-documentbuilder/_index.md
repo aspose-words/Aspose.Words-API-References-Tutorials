@@ -26,7 +26,7 @@ Mielőtt belevágna a dokumentum-egyesítési folyamatba, győződjön meg arró
 
 ## Új dokumentum létrehozása
 
-A dokumentumok egyesítéséhez létre kell hoznunk egy új dokumentumot, amelybe beillesztjük a tartalmat. A következőképpen teheti meg:
+dokumentumok egyesítéséhez létre kell hoznunk egy új dokumentumot, amelybe beillesztjük a tartalmat. A következőképpen teheti meg:
 
 ```java
 // Inicializálja a Dokumentum objektumot

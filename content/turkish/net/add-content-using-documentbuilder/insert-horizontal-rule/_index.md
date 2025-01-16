@@ -47,7 +47,7 @@ Geliştirme ortamınızı (Visual Studio gibi) açın ve yeni bir C# projesi olu
 
 ### Yeni Bir Belge Oluştur
 
- Ana program dosyanızda, yeni bir örnek oluşturarak başlayın`Document`sınıf. Bu bizim boş tuvalimiz olacak.
+ Ana program dosyanızda, yeni bir örnek oluşturarak başlayın`Document` sınıf. Bu bizim boş tuvalimiz olacak.
 
 ```csharp
 Document doc = new Document();
@@ -113,7 +113,7 @@ Aspose.Words for .NET, geliştiricilerin C# kullanarak Word belgelerini programl
 
 ### Aspose.Words for .NET'i kullanmaya nasıl başlarım?
 
- Kütüphaneyi şu adresten indirerek başlayabilirsiniz:[web sitesi](https://releases.aspose.com/words/net/) ve bunu .NET projenize ekleyin.
+Kütüphaneyi şu adresten indirerek başlayabilirsiniz:[web sitesi](https://releases.aspose.com/words/net/) ve bunu .NET projenize ekleyin.
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
 
@@ -121,8 +121,8 @@ Aspose.Words for .NET, geliştiricilerin C# kullanarak Word belgelerini programl
 
 ### Aspose.Words for .NET hakkında daha fazla öğreticiyi nerede bulabilirim?
 
-The[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) Ayrıntılı eğitimler ve örnekler bulmak için harika bir yer.
+ The[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) Ayrıntılı eğitimler ve örnekler bulmak için harika bir yer.
 
 ### Sorun yaşarsam nasıl destek alabilirim?
 
-Destek almak için şu adresi ziyaret edebilirsiniz:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).
+ Destek almak için şu adresi ziyaret edebilirsiniz:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).

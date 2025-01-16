@@ -105,8 +105,6 @@ Aspose.Words for Python は、Word や PDF 以外にも、HTML、TXT、EPUB な�
 
 Aspose.Words を使用すると、変換されたドキュメントの外観をカスタマイズできます。フォント スタイル、色、配置、段落間隔などの書式設定オプションを適用できます。
 
-#### 例：
-
 ```python
 # Python code for applying formatting during conversion
 import aspose.words as aw
@@ -128,8 +126,6 @@ doc.save("formatted_output.pdf", aw.SaveFormat.PDF)
 ### 画像と表の取り扱い
 
 Aspose.Words を使用すると、変換プロセス中に画像や表を処理できます。画像を抽出し、サイズを変更し、表を操作してドキュメントの構造を維持することができます。
-
-#### 例：
 
 ```python
 # Python code for handling images and tables during conversion
@@ -156,8 +152,6 @@ doc.save("modified_output.pdf", aw.SaveFormat.PDF)
 
 Aspose.Words を使用すると、一貫したフォント レンダリングを保証し、変換されたドキュメントのレイアウトを管理できます。この機能は、さまざまな形式間でドキュメントの一貫性を維持する場合に特に便利です。
 
-#### 例：
-
 ```python
 # Python code for managing fonts and layout during conversion
 import aspose.words as aw
@@ -178,8 +172,6 @@ doc.save("font_modified_output.pdf", aw.SaveFormat.PDF)
 ### 自動化のための Python スクリプトの作成
 
 Python のスクリプト機能は、反復タスクの自動化に最適です。Python スクリプトを記述してバッチ ドキュメント変換を実行し、時間と労力を節約できます。
-
-#### 例：
 
 ```python
 # Python script for batch document conversion
@@ -205,11 +197,7 @@ for filename in input_files:
 
 ### ドキュメントの一括変換
 
-による
-
- Python と Aspose.Words のパワーを組み合わせることで、ドキュメントの一括変換を自動化し、生産性と効率性を向上させることができます。
-
-#### 例：
+Python と Aspose.Words のパワーを組み合わせることで、ドキュメントの一括変換を自動化し、生産性と効率性を向上させることができます。
 
 ```python
 # Python script for batch document conversion using Aspose.Words
@@ -238,14 +226,6 @@ for filename in input_files:
     output_filename = filename.replace(file_ext, ".pdf" if file_ext == ".docx" else ".docx")
     doc.save(os.path.join(output_dir, output_filename))
 ```
-## Python で Aspose.Words を使用する利点
-
-Aspose.Words for Python には、次のようないくつかの利点があります。
-
-- 強力なドキュメント変換機能
-- ドキュメント操作のための豊富な機能
-- Pythonアプリケーションとの簡単な統合
-- 活気あるコミュニティからの継続的なサポートとアップデート
 
 ## 結論
 

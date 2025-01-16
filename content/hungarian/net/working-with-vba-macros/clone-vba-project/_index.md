@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Vba;
 ```
 
-Ezek a sorok tartalmaznak minden olyan funkciót, amelyre szükségünk van a Word dokumentumok és VBA projektek kezeléséhez.
+Ezek a sorok minden olyan funkciót tartalmaznak, amelyre szükségünk van a Word dokumentumok és VBA projektek kezeléséhez.
 
 ## 1. lépés: A dokumentumkönyvtár beállítása
 

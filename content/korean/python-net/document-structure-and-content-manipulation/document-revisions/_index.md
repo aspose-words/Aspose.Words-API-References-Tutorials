@@ -16,10 +16,10 @@ url: /ko/python-net/document-structure-and-content-manipulation/document-revisio
 
 ## Python용 Aspose.Words 설정
 
- 시작하기 전에 Aspose.Words for Python이 설치되어 있는지 확인하세요. 여기에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/)설치가 완료되면 Python 스크립트에서 필요한 모듈을 가져와서 시작할 수 있습니다.
+시작하기 전에 Aspose.Words for Python이 설치되어 있는지 확인하세요. 여기에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/)설치가 완료되면 Python 스크립트에서 필요한 모듈을 가져와서 시작할 수 있습니다.
 
 ```python
-import asposewords
+import aspose.words as aw
 ```
 
 ## 문서 로딩 및 표시
@@ -27,7 +27,7 @@ import asposewords
 문서 작업을 하려면 먼저 Python 애플리케이션에 로드해야 합니다. 다음 코드 조각을 사용하여 문서를 로드하고 해당 내용을 표시합니다.
 
 ```python
-doc = asposewords.Document("document.docx")
+doc = aw.Document("document.docx")
 print(doc.get_text())
 ```
 
@@ -44,7 +44,7 @@ doc.track_revisions = True
 문서에 변경 사항이 있으면 Aspose.Words는 이를 자동으로 수정 사항으로 추적할 수 있습니다. 예를 들어, 특정 단어를 바꾸고 싶은 경우 변경 사항을 추적하면서 바꿀 수 있습니다.
 
 ```python
-run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]
+run = doc.get_child_nodes(aw.NodeType.RUN, True)[0]
 run.text = "modified content"
 ```
 
@@ -63,8 +63,8 @@ for revision in revisions:
 Aspose.Words를 사용하면 두 문서를 비교하여 두 문서의 차이점을 시각화할 수 있습니다.
 
 ```python
-doc1 = asposewords.Document("document_v1.docx")
-doc2 = asposewords.Document("document_v2.docx")
+doc1 = aw.Document("document_v1.docx")
+doc2 = aw.Document("document_v2.docx")
 comparison = doc1.compare(doc2, "John Doe", datetime.now())
 comparison.save("comparison_result.docx")
 ```
@@ -74,8 +74,8 @@ comparison.save("comparison_result.docx")
 공동 작업자는 문서에 주석과 주석을 추가할 수 있습니다. 다음 요소를 프로그래밍 방식으로 관리할 수 있습니다.
 
 ```python
-comment = asposewords.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
-paragraph = doc.get_child(asposewords.NodeType.PARAGRAPH, 0)
+comment = aw.Comment(doc, "John Doe", datetime.now(), "This is a comment.")
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0)
 paragraph.insert_before(comment, paragraph.runs[0])
 ```
 
@@ -84,8 +84,8 @@ paragraph.insert_before(comment, paragraph.runs[0])
 삽입된 텍스트와 삭제된 텍스트의 색상을 변경하는 등 문서에 수정 사항이 표시되는 방식을 사용자 지정할 수 있습니다.
 
 ```python
-doc.revision_options.inserted_color = asposewords.Color.RED
-doc.revision_options.deleted_color = asposewords.Color.BLUE
+doc.revision_options.inserted_text_color = aw.layout.RevisionColor.GREEN
+doc.revision_options.deleted_text_color = aw.layout.RevisionColor.RED
 ```
 
 ## 문서 저장 및 공유
@@ -97,13 +97,6 @@ doc.save("final_document.docx")
 ```
 
 최종 문서를 공동 작업자들과 공유하여 추가 피드백을 받으세요.
-
-## 효과적인 협업을 위한 팁
-
-1. 의미 있는 의견을 담아 개정 내용에 명확하게 라벨을 지정합니다.
-2. 모든 공동 작업자에게 수정 지침을 전달합니다.
-3. 정기적으로 수정 사항을 검토하고 승인/거부합니다.
-4. 포괄적인 문서 분석을 위해 Aspose.Words의 비교 기능을 활용하세요.
 
 ## 결론
 

@@ -27,7 +27,7 @@ Egyes esetekben érdemes lehet manuálisan szabályozni, hogy egy szó hol szaka
 
 ### Automatikus elválasztás
 
-legtöbb esetben az automatikus elválasztást részesítjük előnyben, mivel dinamikusan módosítja a szótöréseket a dokumentum elrendezése és formázása alapján. Ez egységes és tetszetős megjelenést biztosít a különféle eszközökön és képernyőméreteken.
+A legtöbb esetben az automatikus elválasztást részesítjük előnyben, mivel dinamikusan módosítja a szótöréseket a dokumentum elrendezése és formázása alapján. Ez egységes és tetszetős megjelenést biztosít a különféle eszközökön és képernyőméreteken.
 
 ## Az Aspose.Words for Python használata
 
@@ -126,4 +126,4 @@ Az özvegyek és árvák elkerülése érdekében használja az Aspose.Words for
 
 ### Hol érhetem el az Aspose.Words for Python dokumentációját?
 
-Az API dokumentációját a következő címen érheti el[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+ Az API dokumentációját a következő címen érheti el[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

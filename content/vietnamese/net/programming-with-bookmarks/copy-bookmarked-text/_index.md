@@ -112,7 +112,7 @@ Và thế là xong! Bạn đã sao chép thành công văn bản được đánh
 Có, bạn có thể lặp lại nhiều dấu trang và sử dụng cùng một phương pháp để sao chép từng dấu trang.
 
 ### Điều gì xảy ra nếu không tìm thấy dấu trang?
-Các`Range.Bookmarks` tài sản sẽ trở lại`null`, vì vậy hãy đảm bảo bạn xử lý trường hợp này để tránh trường hợp ngoại lệ.
+ Các`Range.Bookmarks` tài sản sẽ trở lại`null`, vì vậy hãy đảm bảo bạn xử lý trường hợp này để tránh trường hợp ngoại lệ.
 
 ### Tôi có thể giữ nguyên định dạng của dấu trang gốc không?
  Chắc chắn rồi! Sử dụng`ImportFormatMode.KeepSourceFormatting` đảm bảo định dạng ban đầu được giữ nguyên.

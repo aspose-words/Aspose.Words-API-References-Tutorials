@@ -27,7 +27,7 @@ url: /th/java/document-loading-and-saving/saving-documents-as-markdown/
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//แทรกตารางด้วยสองเซลล์
+// แทรกตารางด้วยสองเซลล์
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// ตั้งค่าการจัดตำแหน่งเนื้อหาตารางเป็นอัตโนมัติ (กำหนดโดยย่อหน้าแรก)
+//ตั้งค่าการจัดตำแหน่งเนื้อหาตารางเป็นอัตโนมัติ (กำหนดโดยย่อหน้าแรก)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## ขั้นตอนที่ 3: การจัดการรูปภาพ
 
-หากต้องการรวมรูปภาพในเอกสาร Markdown ของคุณ คุณต้องระบุโฟลเดอร์ที่รูปภาพนั้นอยู่ Aspose.Words สำหรับ Java ช่วยให้คุณตั้งค่าโฟลเดอร์รูปภาพใน`MarkdownSaveOptions`.
+ หากต้องการรวมรูปภาพในเอกสาร Markdown ของคุณ คุณต้องระบุโฟลเดอร์ที่รูปภาพนั้นอยู่ Aspose.Words สำหรับ Java ช่วยให้คุณตั้งค่าโฟลเดอร์รูปภาพใน`MarkdownSaveOptions`.
 
 วิธีตั้งค่าโฟลเดอร์รูปภาพและบันทึกเอกสารที่มีรูปภาพดังนี้:
 

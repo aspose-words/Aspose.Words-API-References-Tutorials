@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-Dieser Code teilt das Dokument anhand von Seitenumbrüchen auf und speichert jede Seite im`pages` Liste.
+ Dieser Code teilt das Dokument anhand von Seitenumbrüchen auf und speichert jede Seite im`pages` Liste.
 
 ## Als HTML speichern
 

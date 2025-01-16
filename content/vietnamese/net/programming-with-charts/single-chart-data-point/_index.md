@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-Các`InsertChart` phương pháp này lấy loại biểu đồ, chiều rộng và chiều cao làm tham số. Trong trường hợp này, chúng ta đang chèn biểu đồ đường có chiều rộng là 432 và chiều cao là 252.
+ Các`InsertChart` phương pháp này lấy loại biểu đồ, chiều rộng và chiều cao làm tham số. Trong trường hợp này, chúng ta đang chèn biểu đồ đường có chiều rộng là 432 và chiều cao là 252.
 
 ## Bước 3: Truy cập chuỗi biểu đồ
 

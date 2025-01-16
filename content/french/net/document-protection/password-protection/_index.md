@@ -18,7 +18,7 @@ Avant de plonger dans le vif du sujet de la protection par mot de passe de vos d
 1.  Aspose.Words pour .NET : Assurez-vous que vous disposez de la bibliothèque Aspose.Words pour .NET. Vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : Visual Studio ou tout autre environnement de développement C#.
 3. Connaissances de base en C# : une compréhension fondamentale de la programmation C#.
-4. Licence Aspose : Obtenez une licence auprès de[ici](https://purchase.aspose.com/buy) ou utiliser un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
+4.  Licence Aspose : Obtenez une licence auprès de[ici](https://purchase.aspose.com/buy) ou utiliser un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
 
 ## Importer des espaces de noms
 
@@ -46,7 +46,7 @@ Vous pouvez installer Aspose.Words pour .NET via le gestionnaire de packages NuG
 Install-Package Aspose.Words
 ```
 
-## Étape 2 : charger ou créer un document Word
+## Étape 2 : Charger ou créer un document Word
 
 Maintenant que notre projet est configuré, créons un document Word que nous pouvons protéger.
 
@@ -64,7 +64,7 @@ C'est ici que la magie opère. Nous appliquerons une protection par mot de passe
 
 ### Choisissez le type de protection
 
- Aspose.Words propose différents types de protection, tels que`NoProtection`, `ReadOnly`, `AllowOnlyComments` , et`AllowOnlyFormFields` . Pour cet exemple, nous utiliserons`NoProtection` mais avec un mot de passe, ce qui signifie essentiellement que le document est modifiable mais nécessite un mot de passe pour supprimer la protection.
+ Aspose.Words propose différents types de protection, tels que`NoProtection`, `ReadOnly`, `AllowOnlyComments` , et`AllowOnlyFormFields` Pour cet exemple, nous utiliserons`NoProtection` mais avec un mot de passe, ce qui signifie essentiellement que le document est modifiable mais nécessite un mot de passe pour supprimer la protection.
 
 ### Appliquer la protection
 
@@ -94,7 +94,7 @@ Et voilà ! Vous avez ajouté avec succès une protection par mot de passe à vo
 
 ### Puis-je utiliser différents types de protection avec Aspose.Words ?
 
- Oui, Aspose.Words prend en charge différents types de protection, notamment`ReadOnly`, `AllowOnlyComments` , et`AllowOnlyFormFields`.
+Oui, Aspose.Words prend en charge différents types de protection, notamment`ReadOnly`, `AllowOnlyComments` , et`AllowOnlyFormFields`.
 
 ### Comment puis-je supprimer la protection par mot de passe d’un document ?
 
@@ -110,4 +110,4 @@ Oui, Aspose.Words est compatible avec .NET Core, .NET Framework et d'autres plat
 
 ### Où puis-je trouver plus de documentation sur Aspose.Words ?
 
-Vous pouvez trouver plus de documentation sur le[Page de documentation d'Aspose.Words](https://reference.aspose.com/words/net/).
+ Vous pouvez trouver plus de documentation sur le[Page de documentation d'Aspose.Words](https://reference.aspose.com/words/net/).

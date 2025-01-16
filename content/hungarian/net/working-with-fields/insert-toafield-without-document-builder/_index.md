@@ -65,7 +65,7 @@ doc.FirstSection.Body.AppendChild(para);
 - Bekezdés para = új Bekezdés(doc);: Új bekezdést hoz létre a dokumentumon belül.
 -  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: TA mezőt ad a bekezdéshez. A`FieldType.FieldTOAEntry` meghatározza, hogy ez egy TOA beviteli mező.
 - fieldTA.EntryCategory = "1";: Beállítja a bejegyzés kategóriáját. Ez hasznos a különböző típusú bejegyzések kategorizálásához.
-- fieldTA.LongCitation = "Érték 0";: Megadja a hosszú idézet szövegét. Ez a szöveg fog megjelenni a TOA-ban.
+- fieldTA.LongCitation = "Érték 0";: Megadja a hosszú idézet szövegét. Ez az a szöveg fog megjelenni a TOA-ban.
 - doc.FirstSection.Body.AppendChild(para);: A TA mezőt tartalmazó bekezdést hozzáfűzi a dokumentum törzséhez.
 
 ## 3. lépés: Adja hozzá a TOA mezőt
@@ -102,7 +102,7 @@ Végül mentse el a dokumentumot az újonnan hozzáadott TOA mezővel.
 doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
 
- Ez a kódsor a dokumentumot a megadott könyvtárba menti. Ügyeljen arra, hogy cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahová menteni szeretné a fájlt.
+ Ez a kódsor a dokumentumot a megadott könyvtárba menti. Ügyeljen arra, hogy cserélje ki`"YOUR DOCUMENT DIRECTORY"` azzal a tényleges elérési úttal, ahová menteni szeretné a fájlt.
 
 ## Következtetés
 
@@ -111,7 +111,7 @@ doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx"
 ## GYIK
 
 ### Hozzáadhatok több TA mezőt különböző kategóriákkal?
- Igen, több TA mezőt is felvehet különböző kategóriákkal a`EntryCategory`ingatlan ennek megfelelően.
+ Igen, több TA mezőt is felvehet különböző kategóriákkal a`EntryCategory`tulajdon ennek megfelelően.
 
 ### Hogyan szabhatom testre a TOA megjelenését?
 Testreszabhatja a TOA megjelenését a TOA mező tulajdonságainak, például a bejegyzés formázásának és a kategóriacímkék módosításával.

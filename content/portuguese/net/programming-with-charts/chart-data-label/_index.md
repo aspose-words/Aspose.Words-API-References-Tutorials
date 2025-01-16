@@ -128,7 +128,7 @@ Aspose.Words para .NET é uma poderosa biblioteca de processamento de documentos
 ### Posso testar o Aspose.Words para .NET gratuitamente?
  Sim, você pode obter um[teste gratuito](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/)para avaliar o produto.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?
+### Aspose.Words para .NET é compatível com o .NET Core?
 Sim, o Aspose.Words para .NET é compatível com .NET Core, .NET Standard e .NET Framework.
 
 ### Onde posso obter suporte para o Aspose.Words para .NET?

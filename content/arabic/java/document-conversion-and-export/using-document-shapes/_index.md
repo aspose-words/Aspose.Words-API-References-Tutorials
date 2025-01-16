@@ -14,7 +14,7 @@ url: /ar/java/document-conversion-and-export/using-document-shapes/
 
 ## البدء باستخدام أشكال المستندات
 
-قبل أن ننتقل إلى الكود، دعنا نعد بيئتنا. تأكد من دمج Aspose.Words for Java في مشروعك. إذا لم تكن قد قمت بذلك بالفعل، فيمكنك تنزيله من موقع Aspose على الويب[تنزيل Aspose.Words لجافا](https://releases.aspose.com/words/java/)
+ قبل أن ننتقل إلى الكود، دعنا نعد بيئتنا. تأكد من دمج Aspose.Words for Java في مشروعك. إذا لم تكن قد قمت بذلك بالفعل، فيمكنك تنزيله من موقع Aspose على الويب[تنزيل Aspose.Words لجافا](https://releases.aspose.com/words/java/)
 
 ## إضافة الأشكال إلى المستندات
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

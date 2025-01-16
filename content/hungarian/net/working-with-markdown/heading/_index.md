@@ -90,4 +90,4 @@ Igen, az Aspose.Words for .NET teljesítményre van optimalizálva, és hatékon
 
 ### Hol találok további dokumentációt és támogatást?
 
- Részletes dokumentációért látogasson el a címre[itt](https://reference.aspose.com/words/net/) . Támogatásért nézze meg őket[fórum](https://forum.aspose.com/c/words/8).
+ Részletes dokumentációért látogasson el ide[itt](https://reference.aspose.com/words/net/) . Támogatásért nézze meg őket[fórum](https://forum.aspose.com/c/words/8).

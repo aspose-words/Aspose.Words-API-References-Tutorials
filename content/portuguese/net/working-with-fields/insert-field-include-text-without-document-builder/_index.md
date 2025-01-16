@@ -106,7 +106,7 @@ FieldIncludeText é útil para incluir dinamicamente conteúdo de um documento e
 ### Posso usar esse método para incluir texto de outros formatos de arquivo?  
 FieldIncludeText funciona especificamente com documentos do Word. Para outros formatos, você pode precisar de métodos ou classes diferentes fornecidos pelo Aspose.Words.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?  
+### Aspose.Words para .NET é compatível com o .NET Core?  
 Sim, o Aspose.Words para .NET oferece suporte ao .NET Framework, .NET Core e .NET 5/6.
 
 ### Como posso obter uma avaliação gratuita do Aspose.Words para .NET?  

@@ -19,10 +19,10 @@ url: /ar/python-net/document-combining-and-comparison/generate-table-contents/
 ## تحميل مستند
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## تحديد العناوين والعناوين الفرعية
@@ -31,25 +31,11 @@ doc = asposewords.Document("your_document.docx")
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## إنشاء جدول المحتويات
-
-الآن بعد أن حددنا العناوين والعناوين الفرعية، فلنبدأ في إنشاء جدول المحتويات نفسه. سننشئ قسمًا جديدًا في بداية المستند ونملأه بالمحتوى المناسب.
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## تخصيص جدول المحتويات
@@ -58,21 +44,10 @@ toc_title.paragraph_format.style_name = "Table of Contents Title"
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## إضافة الارتباطات التشعبية
-
-ولجعل جدول المحتويات تفاعليًا، أضف ارتباطات تشعبية تسمح للقراء بالانتقال مباشرة إلى الأقسام المقابلة في المستند.
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+``
 
 ## تصميم جدول المحتويات
 
@@ -81,16 +56,7 @@ for heading in headings:
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## تحديث جدول المحتويات
-
-إذا قمت بإجراء تغييرات على بنية مستندك، فيمكنك بسهولة تحديث جدول المحتويات ليعكس هذه التغييرات.
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## أتمتة العملية
@@ -101,27 +67,13 @@ doc.update_fields()
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## التعامل مع أرقام الصفحات
-
-يمكنك إضافة أرقام الصفحات إلى جدول المحتويات لتزويد القراء بسياق أكثر تفصيلاً حول مكان العثور على أقسام معينة.
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## خاتمة

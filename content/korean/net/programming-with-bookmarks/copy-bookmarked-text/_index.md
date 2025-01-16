@@ -112,7 +112,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 네, 여러 개의 북마크를 반복하면서 동일한 방법으로 각각을 복사할 수 있습니다.
 
 ### 북마크를 찾을 수 없으면 어떻게 되나요?
-그만큼`Range.Bookmarks` 재산은 반환됩니다`null`따라서 예외를 피하기 위해 이 사례를 처리해야 합니다.
+ 그만큼`Range.Bookmarks` 재산은 반환됩니다`null`따라서 예외를 피하기 위해 이 사례를 처리해야 합니다.
 
 ### 원본 책갈피의 서식을 보존할 수 있나요?
  물론입니다! 사용 중`ImportFormatMode.KeepSourceFormatting` 원래 서식이 보존되도록 합니다.

@@ -33,7 +33,7 @@ using Aspose.Words.Tables;
 
 ## Adım 1: DocumentBuilder'ı Başlatın
 
-The`DocumentBuilder` class, belgenize içerik eklemenin hızlı ve kolay bir yolunu sağlar. Hadi başlatalım.
+ The`DocumentBuilder` class, belgenize içerik eklemenin hızlı ve kolay bir yolunu sağlar. Hadi başlatalım.
 
 ```csharp
 // Belgeye içerik eklemek için bir belge oluşturucu kullanın.

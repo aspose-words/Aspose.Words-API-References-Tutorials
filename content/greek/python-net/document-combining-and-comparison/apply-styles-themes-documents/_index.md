@@ -14,7 +14,7 @@ url: /el/python-net/document-combining-and-comparison/apply-styles-themes-docume
 
 ## Ρύθμιση του περιβάλλοντος
 
- Πριν ασχοληθούμε με το στυλ, ας δημιουργήσουμε το περιβάλλον ανάπτυξής μας. Βεβαιωθείτε ότι έχετε εγκαταστήσει το Aspose.Words for Python. Μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/python/).
+Πριν ασχοληθούμε με το στυλ, ας δημιουργήσουμε το περιβάλλον ανάπτυξής μας. Βεβαιωθείτε ότι έχετε εγκαταστήσει το Aspose.Words for Python. Μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/python/).
 
 ## Φόρτωση και αποθήκευση εγγράφων
 
@@ -51,30 +51,8 @@ font.style_identifier = StyleIdentifier.STRONG
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## Προσαρμογή στυλ επικεφαλίδων
-
-Οι επικεφαλίδες δίνουν δομή στα έγγραφα. Προσαρμόστε τα στυλ επικεφαλίδων για καλύτερη ιεραρχία και αναγνωσιμότητα.
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## Χρήση θεμάτων για ενοποιημένη εμφάνιση
-
-Τα θέματα προσφέρουν σταθερή εμφάνιση. Εφαρμόστε ένα θέμα στο έγγραφό σας για μια επαγγελματική πινελιά.
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## Τροποποίηση χρωμάτων και γραμματοσειρών θέματος
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 Προσαρμόστε τα θέματα στις ανάγκες σας προσαρμόζοντας τα χρώματα και τις γραμματοσειρές των θεμάτων.
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## Δημιουργώντας τα δικά σας στυλ
-
-Δημιουργήστε προσαρμοσμένα στυλ για μοναδικά στοιχεία εγγράφων, διασφαλίζοντας ότι η ταυτότητα της επωνυμίας σας λάμπει.
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## Στυλ διαχείρισης με βάση μέρη εγγράφου
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 Εφαρμόστε διαφορετικά στυλ στις κεφαλίδες, τα υποσέλιδα και το περιεχόμενο του σώματος για μια κομψή εμφάνιση.
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## Χειρισμός στυλ σε όλο το έγγραφο
-
-Εφαρμόστε ένα στυλ σε ολόκληρο το έγγραφο με ευκολία.
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## Εκκαθάριση μορφοποίησης και στυλ
-
-Καταργήστε εύκολα στυλ και μορφοποίηση για να ξεκινήσετε από καινούρια.
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## Πρακτικά παραδείγματα και περιπτώσεις χρήσης
-
-Ας εξερευνήσουμε πρακτικά σενάρια όπου τα στυλ και τα θέματα μπορούν να μεταμορφώσουν έγγραφα.
-
-1. Δημιουργία επώνυμων αναφορών
-2. Σχεδιάζοντας εντυπωσιακά βιογραφικά
-3. Μορφοποίηση ακαδημαϊκών εργασιών
-
-## Συμβουλές για αποτελεσματικό στυλ
-
-- Διατηρήστε τα στυλ συνεπή
-- Χρησιμοποιήστε θέματα για γρήγορες αλλαγές
-- Πειραματιστείτε με διαφορετικές γραμματοσειρές και χρώματα
 
 ## Σύναψη
 
@@ -167,4 +109,4 @@ doc.range.clear_formatting()
 
 ### Είναι δυνατή η εκκαθάριση της μορφοποίησης από το έγγραφό μου;
 
- Ναι, μπορείτε εύκολα να αφαιρέσετε τη μορφοποίηση και τα στυλ χρησιμοποιώντας το`clear_formatting()` μέθοδος που παρέχεται από το Aspose.Words για Python.
+Ναι, μπορείτε εύκολα να αφαιρέσετε τη μορφοποίηση και τα στυλ χρησιμοποιώντας το`clear_formatting()` μέθοδος που παρέχεται από το Aspose.Words για Python.

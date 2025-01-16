@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Wyjaśnienie:
-Ten`DocumentBuilder` jest poręcznym narzędziem, które zapewnia metody nawigacji i modyfikacji dokumentu. Tutaj łączymy go z naszym dokumentem docelowym.
+ Ten`DocumentBuilder` jest poręcznym narzędziem, które zapewnia metody nawigacji i modyfikacji dokumentu. Tutaj łączymy go z naszym dokumentem docelowym.
 
 ## Krok 3: Przejdź do końca dokumentu i wstaw podział strony
 

@@ -80,7 +80,7 @@ foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
 제목: 스마트 아트 그래픽 새로 고침
 
 설명:
-그만큼`UpdateSmartArtDrawing` 이 메서드는 Smart Art 그래픽을 새로 고쳐 문서의 데이터나 레이아웃의 변경 사항을 반영합니다. 이 메서드는 이전 단계에서 식별된 각 Smart Art 모양에서 호출해야 합니다.
+ 그만큼`UpdateSmartArtDrawing` 이 메서드는 Smart Art 그래픽을 새로 고쳐 문서의 데이터나 레이아웃의 변경 사항을 반영합니다. 이 메서드는 이전 단계에서 식별된 각 Smart Art 모양에서 호출해야 합니다.
 
 ```csharp
 // 각 Smart Art 모양에 대한 Smart Art 도면 업데이트

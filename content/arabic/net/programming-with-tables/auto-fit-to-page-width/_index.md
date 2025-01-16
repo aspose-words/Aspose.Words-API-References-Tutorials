@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-ال`Aspose.Words` تحتوي مساحة الاسم على الفئات الأساسية لمعالجة مستندات Word، بينما`Aspose.Words.Tables` مخصص خصيصًا للتعامل مع الجداول.
+ ال`Aspose.Words` تحتوي مساحة الاسم على الفئات الأساسية لمعالجة مستندات Word، بينما`Aspose.Words.Tables` مخصص خصيصًا للتعامل مع الجداول.
 
 ## الخطوة 1: إعداد المستند الخاص بك
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- في هذه الخطوة، يمكنك تحديد المسار الذي سيتم تخزين مستندك فيه وتحميله في`Document` الكائن. استبدل`"YOUR DOCUMENT DIRECTORY"`مع المسار الفعلي الذي يوجد به مستندك.
+ في هذه الخطوة، يمكنك تحديد المسار الذي سيتم تخزين مستندك فيه وتحميله في`Document` الكائن. استبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي الذي يوجد به مستندك.
 
 ## الخطوة 2: الوصول إلى الجدول
 
@@ -68,7 +68,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-ال`AutoFit` الطريقة مع`AutoFitBehavior.AutoFitToWindow` يضمن تعديل عرض الجدول ليتناسب مع عرض الصفحة بالكامل.
+ ال`AutoFit` الطريقة مع`AutoFitBehavior.AutoFitToWindow` يضمن تعديل عرض الجدول ليتناسب مع عرض الصفحة بالكامل.
 
 ## الخطوة 4: حفظ المستند المعدل
 

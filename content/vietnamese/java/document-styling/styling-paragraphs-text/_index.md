@@ -182,25 +182,11 @@ Trong ví dụ này, chúng tôi thiết lập căn chỉnh của đoạn văn t
 Tạo danh sách có dấu đầu dòng hoặc đánh số là một tác vụ định dạng tài liệu phổ biến. Aspose.Words for Java giúp bạn thực hiện việc này một cách đơn giản. Sau đây là cách tạo danh sách có dấu đầu dòng:
 
 ```java
-// Tạo một tài liệu mới
-Document doc = new Document();
-
-// Tạo danh sách
-List list = new List(doc);
-
-// Thêm các mục danh sách có dấu đầu dòng
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// Thêm danh sách vào tài liệu
-doc.getFirstSection().getBody().appendChild(list);
-
-// Lưu tài liệu
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 Trong đoạn mã này, chúng ta tạo một danh sách có dấu đầu dòng với ba mục.
@@ -210,24 +196,21 @@ Trong đoạn mã này, chúng ta tạo một danh sách có dấu đầu dòng 
 Siêu liên kết là điều cần thiết để thêm tính tương tác vào tài liệu của bạn. Aspose.Words for Java cho phép bạn chèn siêu liên kết dễ dàng. Sau đây là một ví dụ:
 
 ```java
-// Tạo một tài liệu mới
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Tạo một đoạn văn
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// Tạo siêu liên kết
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// Chèn siêu liên kết và nhấn mạnh nó bằng định dạng tùy chỉnh.
+// Siêu liên kết sẽ là một đoạn văn bản có thể nhấp vào và đưa chúng ta đến vị trí được chỉ định trong URL.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", sai);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// Thêm đoạn văn vào tài liệu
-doc.getFirstSection().getBody().appendChild(para);
-
-// Lưu tài liệu
-doc.save("HyperlinkDocument.docx");
+// Nhấn Ctrl + nhấp chuột trái vào liên kết trong văn bản trong Microsoft Word sẽ đưa chúng ta đến URL thông qua một cửa sổ trình duyệt web mới.
+doc.save("InsertHyperlink.docx");
 ```
 
 Mã này chèn một siêu liên kết đến "https://www.example.com" với nội dung "Truy cập Example.com".
@@ -237,23 +220,7 @@ Mã này chèn một siêu liên kết đến "https://www.example.com" với n�
 Tài liệu thường yêu cầu các yếu tố trực quan như hình ảnh và hình khối. Aspose.Words for Java cho phép bạn chèn hình ảnh và hình khối một cách liền mạch. Sau đây là cách thêm hình ảnh:
 
 ```java
-// Tạo một tài liệu mới
-Document doc = new Document();
-
-// Tạo một đoạn văn
-Paragraph para = new Paragraph(doc);
-
-// Tải hình ảnh từ một tập tin
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// Thêm đoạn văn vào tài liệu
-doc.getFirstSection().getBody().appendChild(para);
-
-// Lưu tài liệu
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 Trong đoạn mã này, chúng ta tải một hình ảnh từ một tệp và chèn vào tài liệu.
@@ -287,27 +254,20 @@ Trong ví dụ này, chúng tôi đặt lề bằng nhau là 1 inch ở tất c�
 Tiêu đề và chân trang rất cần thiết để thêm thông tin nhất quán vào từng trang trong tài liệu của bạn. Sau đây là cách làm việc với tiêu đề và chân trang:
 
 ```java
-// Tạo một tài liệu mới
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Truy cập phần đầu trang và chân trang của phần đầu tiên
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// Thêm nội dung vào tiêu đề
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// Thêm nội dung vào chân trang
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// Thêm nội dung vào phần thân tài liệu
+// Thêm nội dung vào phần thân tài liệu.
 // ...
 
-// Lưu tài liệu
+// Lưu tài liệu.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ Trong đoạn mã này, chúng ta thêm nội dung vào cả phần đầu trang
 Bảng là một cách mạnh mẽ để sắp xếp và trình bày dữ liệu trong tài liệu của bạn. Aspose.Words for Java cung cấp hỗ trợ rộng rãi để làm việc với bảng. Sau đây là ví dụ về cách tạo bảng:
 
 ```java
-// Tạo một tài liệu mới
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Tạo một bảng có 3 hàng và 3 cột
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// Thêm nội dung vào các ô của bảng
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//Thêm bảng vào tài liệu
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// Lưu tài liệu
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// Thay đổi định dạng sẽ áp dụng cho ô hiện tại,
+// và bất kỳ tế bào mới nào mà chúng ta tạo ra bằng trình xây dựng sau đó.
+// Điều này sẽ không ảnh hưởng đến các ô mà chúng ta đã thêm trước đó.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// Tăng chiều cao hàng cho vừa với văn bản theo chiều dọc.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 Trong đoạn mã này, chúng ta tạo một bảng đơn giản có ba hàng và ba cột.
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // Lưu tài liệu dưới dạng PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 Đoạn mã này lưu tài liệu dưới dạng tệp PDF.
@@ -393,7 +372,7 @@ Có, bạn có thể dễ dàng chuyển đổi tài liệu sang PDF bằng Aspo
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### Làm thế nào để định dạng văn bản như
@@ -414,7 +393,7 @@ Bạn có thể kiểm tra trang web Aspose hoặc kho lưu trữ Maven để bi
 Có, Aspose.Words for Java tương thích với Java 11 và các phiên bản mới hơn.
 
 ### Làm thế nào để tôi có thể thiết lập lề trang cho các phần cụ thể trong tài liệu của mình?
-Bạn có thể thiết lập lề trang cho các phần cụ thể của tài liệu bằng cách sử dụng`PageSetup` lớp. Đây là một ví dụ:
+ Bạn có thể thiết lập lề trang cho các phần cụ thể của tài liệu bằng cách sử dụng`PageSetup` lớp. Đây là một ví dụ:
 
 ```java
 Section section = doc.getSections().get(0); // Nhận phần đầu tiên

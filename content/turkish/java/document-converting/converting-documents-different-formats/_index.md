@@ -47,7 +47,7 @@ Ardından, belgenizi hangi biçime dönüştürmek istediğinize karar verin. As
 
 ```java
 // Belgeyi PDF'ye dönüştür
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Çözüm

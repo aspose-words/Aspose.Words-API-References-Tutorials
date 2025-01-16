@@ -54,7 +54,7 @@ doc.save("output.html", saveOptions);
 
 ```java
 // โค้ด Java สำหรับบันทึกเอกสารเป็นรูปภาพ
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // ตั้งค่าความละเอียด (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

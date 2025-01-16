@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 I den här klassen:
-- De`Warning`metoden fångar varningar relaterade till teckensnittsersättning.
-- De`FontWarnings` insamling lagrar dessa varningar för vidare inspektion eller loggning.
+-  De`Warning`metoden fångar varningar relaterade till teckensnittsersättning.
+-  De`FontWarnings` insamling lagrar dessa varningar för vidare inspektion eller loggning.
 
 ## Slutsats
 

@@ -56,7 +56,7 @@ Document doc = new Document("input.docx");
 
 ```java
 //文書をPDFとして保存する
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## ステップ4: 他の形式に変換する
@@ -67,21 +67,21 @@ Aspose.Words for Java では、PDF 以外にもさまざまな形式にドキュ
 
 ```java
 //文書をRTF形式で保存する
-doc.save("output.rtf", SaveFormat.RTF);
+doc.save("output.rtf");
 ```
 
 ### HTML への変換
 
 ```java
 //ドキュメントをHTMLとして保存する
-doc.save("output.html", SaveFormat.HTML);
+doc.save("output.html");
 ```
 
 ### EPUBへの変換
 
 ```java
 //文書をEPUBとして保存する
-doc.save("output.epub", SaveFormat.EPUB);
+doc.save("output.epub");
 ```
 
 ## 効果的なドキュメント変換のヒント

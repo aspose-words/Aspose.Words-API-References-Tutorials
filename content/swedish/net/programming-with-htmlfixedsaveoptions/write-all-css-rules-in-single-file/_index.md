@@ -1,6 +1,6 @@
 ---
-title: Skriv alla CSS-regler i en fil
-linktitle: Skriv alla CSS-regler i en fil
+title: Skriv alla Css-regler i en fil
+linktitle: Skriv alla Css-regler i en fil
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du konverterar Word-dokument till HTML med Aspose.Words för .NET med alla CSS-regler i en enda fil för renare kod och enklare underhåll.
 type: docs
@@ -77,7 +77,7 @@ Och där har du det! Med bara några rader kod har du framgångsrikt konverterat
 ## FAQ's
 
 ### Varför ska jag använda en enda CSS-fil för min HTML-utdata?
-Att använda en enda CSS-fil förenklar hanteringen och underhållet av dina stilar. Det gör din HTML renare och effektivare.
+Att använda en enda CSS-fil förenklar hanteringen och underhållet av dina stilar. Det gör din HTML renare och mer effektiv.
 
 ### Kan jag separera CSS-regler för teckensnitt vid behov?
  Ja, genom att ställa in`SaveFontFaceCssSeparately` till`true`, kan du separera CSS-regler för teckensnitt i en annan fil.
@@ -89,4 +89,4 @@ Att använda en enda CSS-fil förenklar hanteringen och underhållet av dina sti
 Aspose.Words för .NET stöder olika format inklusive PDF, TXT och bildformat som JPEG och PNG.
 
 ### Var kan jag hitta fler resurser på Aspose.Words för .NET?
- Kolla in[dokumentation](https://reference.aspose.com/words/net/)för omfattande guider och API-referenser.
+ Kolla in[dokumentation](https://reference.aspose.com/words/net/) för omfattande guider och API-referenser.

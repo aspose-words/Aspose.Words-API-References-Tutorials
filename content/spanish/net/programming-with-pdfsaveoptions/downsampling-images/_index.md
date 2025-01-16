@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-En este paso, cargamos el documento de Word desde el directorio especificado. Asegúrese de reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real donde se encuentra su documento.
+En este paso, cargamos el documento de Word desde el directorio especificado. Asegúrese de reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde se encuentra su documento.
 
 ## Paso 2: Configurar las opciones de submuestreo
 

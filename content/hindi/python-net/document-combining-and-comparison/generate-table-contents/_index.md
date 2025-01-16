@@ -19,10 +19,10 @@ url: /hi/python-net/document-combining-and-comparison/generate-table-contents/
 ## दस्तावेज़ लोड करना
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## शीर्षकों और उपशीर्षकों को परिभाषित करना
@@ -31,25 +31,11 @@ doc = asposewords.Document("your_document.docx")
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## विषय-सूची तैयार करना
-
-अब जबकि हमने अपने शीर्षक और उपशीर्षक निर्धारित कर लिए हैं, तो चलिए विषय-सूची स्वयं तैयार करते हैं। हम दस्तावेज़ की शुरुआत में एक नया अनुभाग बनाएंगे और उसमें उचित विषय-वस्तु भरेंगे।
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## विषय-सूची को अनुकूलित करना
@@ -58,21 +44,10 @@ toc_title.paragraph_format.style_name = "Table of Contents Title"
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## हाइपरलिंक जोड़ना
-
-विषय-सूची को इंटरैक्टिव बनाने के लिए, हाइपरलिंक जोड़ें जो पाठकों को दस्तावेज़ में संबंधित अनुभागों पर सीधे जाने की अनुमति दें।
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+``
 
 ## विषय-सूची की शैली
 
@@ -81,16 +56,7 @@ for heading in headings:
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## विषय-सूची को अद्यतन करना
-
-यदि आप अपने दस्तावेज़ की संरचना में परिवर्तन करते हैं, तो आप उन परिवर्तनों को प्रतिबिंबित करने के लिए विषय-सूची को आसानी से अद्यतन कर सकते हैं।
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## प्रक्रिया को स्वचालित करना
@@ -101,27 +67,13 @@ doc.update_fields()
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## पृष्ठ संख्या संभालना
-
-आप विषय-सूची में पृष्ठ संख्या जोड़ सकते हैं, ताकि पाठकों को इस बारे में अधिक जानकारी मिल सके कि विशिष्ट अनुभाग कहां मिलेंगे।
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## निष्कर्ष

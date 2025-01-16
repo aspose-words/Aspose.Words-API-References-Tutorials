@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-The`ListIndent` yöntem listeyi girintiler ve bir alt liste oluşturur. Şimdi, iç içe geçmiş yapılacaklar listesi gibi, hiyerarşik bir liste oluşturuyorsunuz.
+ The`ListIndent` yöntem listeyi girintiler ve bir alt liste oluşturur. Şimdi, iç içe geçmiş yapılacaklar listesi gibi, hiyerarşik bir liste oluşturuyorsunuz.
 
 ## Çözüm
 

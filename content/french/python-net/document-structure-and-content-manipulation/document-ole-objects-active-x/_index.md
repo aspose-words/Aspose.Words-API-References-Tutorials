@@ -19,11 +19,7 @@ Avant de nous plonger dans l’intégration d’objets OLE et de contrôles Acti
 - Bibliothèque Aspose.Words pour Python installée
 - Une compréhension de base de la structure du document Word
 
-## Incorporation d'objets OLE
-
-Les objets OLE vous permettent d'intégrer de manière transparente des fichiers externes, tels que des feuilles de calcul ou des présentations, dans vos documents Word. Suivez ces étapes pour intégrer un objet OLE :
-
-### Étape 1 : Ajout des bibliothèques requises
+## Étape 1 : Ajout des bibliothèques requises
 
 Commencez par importer les modules nécessaires de la bibliothèque Aspose.Words et toutes les autres dépendances :
 
@@ -31,7 +27,7 @@ Commencez par importer les modules nécessaires de la bibliothèque Aspose.Words
 import aspose.words as aw
 ```
 
-### Étape 2 : Créer un document Word
+## Étape 2 : Créer un document Word
 
 Créez un nouveau document Word en utilisant Aspose.Words pour Python :
 
@@ -39,42 +35,16 @@ Créez un nouveau document Word en utilisant Aspose.Words pour Python :
 doc = aw.Document()
 ```
 
-### Étape 3 : insertion d'un objet OLE
+## Étape 3 : insertion d'un objet OLE
 
 Vous pouvez maintenant insérer un objet OLE dans votre document. Par exemple, intégrons une feuille de calcul Excel :
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## Intégration de contrôles ActiveX
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", Vrai, Vrai, Aucun)
 
-Les contrôles ActiveX apportent de l'interactivité à vos documents, permettant aux utilisateurs d'interagir avec le contenu intégré. Suivez ces étapes pour intégrer un contrôle ActiveX :
-
-### Étape 1 : Ajout des bibliothèques requises
-
-Tout comme avec les objets OLE, commencez par importer les modules nécessaires :
-
-```python
-import aspose.words as aw
-```
-
-### Étape 2 : Créer un document Word
-
-Créer un nouveau document Word :
-
-```python
-doc = aw.Document()
-```
-
-### Étape 3 : insertion d’un contrôle ActiveX
-
-Supposons que vous souhaitiez intégrer un lecteur multimédia. Voici comment procéder :
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Améliorer l'interactivité et la fonctionnalité

@@ -15,7 +15,7 @@ Ahoj! Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes řeší
 
 Než se vrhneme na to, co potřebujete, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Pokud jste to ještě neudělali, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Pokud jste to ještě neudělali, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Visual Studio: Nebo jakékoli jiné IDE kompatibilní s .NET.
 - Základní porozumění C#: Trocha obeznámenosti s C# vám pomůže projít tento tutoriál.
 -  Aspose Licence: Chyťte a[zkušební verze zdarma](https://releases.aspose.com/) nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pokud to potřebujete na testování.
@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`Document` třída inicializuje nový dokument a`DocumentBuilder` nám pomáhá snadno přidávat obsah do našeho dokumentu.
+ The`Document` třída inicializuje nový dokument a`DocumentBuilder` nám pomáhá snadno přidávat obsah do našeho dokumentu.
 
 ## Krok 2: Vložte sekce
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-The`InsertBreak` metoda vkládá souvislý konec sekce, což nám umožňuje mít různá nastavení pro každou sekci.
+ The`InsertBreak` metoda vkládá souvislý konec sekce, což nám umožňuje mít různá nastavení pro každou sekci.
 
 ## Krok 3: Chraňte dokument
 
@@ -124,7 +124,7 @@ Tento krok zajistí správné uložení dokumentu a jeho opětovné načtení be
 
 ## Závěr
 
-A tady to máte! Pomocí těchto kroků jste úspěšně vytvořili dokument aplikace Word se směsí chráněných a nechráněných částí pomocí Aspose.Words for .NET. Tato metoda je neuvěřitelně užitečná, když potřebujete zamknout určité části dokumentu a ponechat jiné části upravitelné.
+tady to máte! Pomocí těchto kroků jste úspěšně vytvořili dokument aplikace Word se směsí chráněných a nechráněných částí pomocí Aspose.Words for .NET. Tato metoda je neuvěřitelně užitečná, když potřebujete zamknout určité části dokumentu a ponechat jiné části upravitelné.
 
 ## FAQ
 

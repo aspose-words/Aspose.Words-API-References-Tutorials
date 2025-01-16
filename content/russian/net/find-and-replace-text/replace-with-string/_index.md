@@ -71,7 +71,7 @@ builder.Writeln("sad mad bad");
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-The`Replace`Метод прост. Мы указываем слово для поиска, слово для замены и параметры для операции поиска и замены.
+ The`Replace`Метод прост. Мы указываем слово для поиска, слово для замены и параметры для операции поиска и замены.
 
 ## Шаг 5: Сохраните документ.
 

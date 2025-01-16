@@ -112,4 +112,4 @@ Oczywiście! Możesz utworzyć skrypt, aby zautomatyzować ten proces dla wielu 
 
 ### Gdzie mogę uzyskać pomoc, jeśli napotkam problemy?
 
-Ten[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) to świetne miejsce, w którym można uzyskać pomoc i znaleźć rozwiązania typowych problemów.
+ Ten[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) to świetne miejsce, w którym można uzyskać pomoc i znaleźć rozwiązania typowych problemów.

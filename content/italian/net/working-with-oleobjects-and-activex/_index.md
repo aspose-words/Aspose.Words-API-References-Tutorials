@@ -16,7 +16,7 @@ Questi tutorial ti offrono un approccio pratico e passo dopo passo all'elaborazi
 | Titolo | Descrizione |
 | --- | --- |
 | [Inserisci oggetto Ole nel documento Word](./insert-ole-object/) | Scopri come inserire oggetti OLE nei documenti Word usando Aspose.Words per .NET con questa guida passo-passo. Migliora i tuoi documenti con contenuti incorporati. |
-| [Inserisci oggetto Ole in Word con il pacchetto Ole](./insert-ole-object-with-ole-package/) | Scopri come inserire oggetti OLE nei documenti Word usando Aspose.Words per .NET. Segui la nostra guida dettagliata passo dopo passo per incorporare i file senza problemi. |
+| [Inserisci oggetto Ole in Word con pacchetto Ole](./insert-ole-object-with-ole-package/) | Scopri come inserire oggetti OLE nei documenti Word usando Aspose.Words per .NET. Segui la nostra guida dettagliata passo dopo passo per incorporare i file senza problemi. |
 | [Inserisci oggetto Ole nel documento Word come icona](./insert-ole-object-as-icon/) | Scopri come inserire un oggetto OLE come icona nei documenti Word usando Aspose.Words per .NET. Segui la nostra guida passo passo per migliorare i tuoi documenti. |
 | [Inserisci oggetto Ole come icona utilizzando Stream](./insert-ole-object-as-icon-using-stream/) | Scopri come inserire un oggetto OLE come icona utilizzando un flusso con Aspose.Words per .NET in questo tutorial dettagliato e passo dopo passo. |
 | [Leggi le proprietà di Active XControl dal file Word](./read-active-xcontrol-properties/) | Scopri come leggere le proprietà del controllo ActiveX dai file Word usando Aspose.Words per .NET in una guida passo-passo. Migliora le tue competenze di automazione dei documenti. |

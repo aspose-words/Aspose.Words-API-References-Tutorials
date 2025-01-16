@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // ابدأ بتتبع المراجعات
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //إدراج النص مع تنقيحات التتبع
+builder.Writeln("Inserted"); // إدراج النص مع تنقيحات التتبع
 doc.StopTrackRevisions();
 ```
 

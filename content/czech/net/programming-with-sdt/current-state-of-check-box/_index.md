@@ -98,7 +98,7 @@ Chcete-li zpracovat více zaškrtávacích políček, procházeli byste sbírku 
  Ano, můžete vytvořit nová zaškrtávací políčka přidáním strukturovaných značek dokumentu typu`SdtType.Checkbox` k vašemu dokumentu.
 
 ### Je možné vyčíst stav zaškrtávacího políčka z dokumentu?
- Absolutně. Stav zaškrtávacího políčka si můžete přečíst přístupem k`Checked` vlastnictví`StructuredDocumentTag` pokud je typu`SdtType.Checkbox`.
+ Absolutně. Stav zaškrtávacího políčka si můžete přečíst přístupem k`Checked` vlastnictvím`StructuredDocumentTag` pokud je typu`SdtType.Checkbox`.
 
 ### Jak získám dočasnou licenci pro Aspose.Words for .NET?
  Dočasnou licenci můžete získat od[Aspose nákupní stránku](https://purchase.aspose.com/temporary-license/), který umožňuje vyhodnotit plnou funkčnost knihovny.

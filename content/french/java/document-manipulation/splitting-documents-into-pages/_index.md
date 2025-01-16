@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <résumé>
-/// Obtient le document d'une plage de pages.
+//Obtient le document d'une plage de pages.
 /// </summary>
-//<param name="startIndex">
+/// <param name="startIndex">
 /// Index basé sur 1 de la page de démarrage.
 /// </param>
 /// <param name="endIndex">

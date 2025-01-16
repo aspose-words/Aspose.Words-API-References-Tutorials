@@ -112,7 +112,7 @@ I to wszystko! Udało Ci się skopiować zakładkę tekstu z jednego dokumentu W
 Tak, możesz przeglądać wiele zakładek i używać tej samej metody do kopiowania każdej z nich.
 
 ### Co się stanie, jeśli zakładka nie zostanie znaleziona?
-Ten`Range.Bookmarks` nieruchomość powróci`null`, więc upewnij się, że zajmiesz się tym przypadkiem, aby uniknąć wyjątków.
+ Ten`Range.Bookmarks` nieruchomość powróci`null`, więc upewnij się, że zajmiesz się tym przypadkiem, aby uniknąć wyjątków.
 
 ### Czy mogę zachować formatowanie oryginalnej zakładki?
  Oczywiście! Używam`ImportFormatMode.KeepSourceFormatting` zapewnia zachowanie oryginalnego formatowania.

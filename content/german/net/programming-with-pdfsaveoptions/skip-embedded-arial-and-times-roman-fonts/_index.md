@@ -81,7 +81,7 @@ Nein. Da es sich bei Arial und Times Roman um Standardschriften handelt, bleibt 
 Ja, Sie können die Speicheroptionen so konfigurieren, dass das Einbetten anderer Schriftarten bei Bedarf übersprungen wird.
 
 ### Ist Aspose.Words für .NET kostenlos?
-Aspose.Words für .NET bietet eine kostenlose Testversion, die Sie herunterladen können[Hier](https://releases.aspose.com/) , aber für den vollen Zugriff müssen Sie eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
+ Aspose.Words für .NET bietet eine kostenlose Testversion, die Sie herunterladen können[Hier](https://releases.aspose.com/) , aber für den vollen Zugriff müssen Sie eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
 
 ### Wo finde ich weitere Tutorials zu Aspose.Words für .NET?
- Ausführliche Dokumentationen und Tutorials finden Sie[Hier](https://reference.aspose.com/words/net/).
+Ausführliche Dokumentationen und Tutorials finden Sie[Hier](https://reference.aspose.com/words/net/).

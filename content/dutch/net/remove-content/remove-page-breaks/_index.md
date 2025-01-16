@@ -33,7 +33,7 @@ Laten we het proces opsplitsen in eenvoudige, beheersbare stappen.
 
 ## Stap 1: Het project instellen
 
-Eerst moet u uw ontwikkelomgeving instellen en een nieuw project aanmaken.
+Eerst moet u uw ontwikkelomgeving instellen en een nieuw project maken.
 
 Een nieuw project maken in Visual Studio
 1. Open Visual Studio en maak een nieuwe C#-consoletoepassing.
@@ -56,7 +56,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
 ## Stap 3: Toegang tot alineaknooppunten
 
-Nu moeten we toegang krijgen tot alle paragraafknooppunten in het document. Dit zal ons in staat stellen om hun eigenschappen te controleren en te wijzigen.
+Nu moeten we toegang krijgen tot alle alineaknooppunten in het document. Dit zal ons in staat stellen om hun eigenschappen te controleren en te wijzigen.
 
 Toegang tot alineaknooppunten
 ```csharp
@@ -71,7 +71,7 @@ Pagina-einden verwijderen
 ```csharp
 foreach (Paragraph para in paragraphs)
 {
-    // Als de alinea een pagina-einde heeft voordat deze wordt ingesteld, verwijder deze dan.
+    // Als de alinea een pagina-einde heeft vóór de set, verwijder deze dan.
     if (para.ParagraphFormat.PageBreakBefore)
         para.ParagraphFormat.PageBreakBefore = false;
 

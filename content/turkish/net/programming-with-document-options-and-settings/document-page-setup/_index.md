@@ -94,4 +94,4 @@ Evet, geçici bir lisans alarak kullanabilirsiniz.[Burada](https://purchase.aspo
 Çince ve Japonca gibi Asya dilleri de dahil olmak üzere geniş bir yelpazede dili destekler.
 
 ### Daha detaylı dokümanları nerede bulabilirim?
-Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).
+ Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).

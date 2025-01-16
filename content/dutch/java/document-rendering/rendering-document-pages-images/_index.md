@@ -48,7 +48,7 @@ Aspose.Words biedt verschillende opties voor het opslaan van afbeeldingen om het
 
 ```java
 // Initialiseer opties voor het opslaan van afbeeldingen
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Stap 4: Documentpagina's renderen als afbeeldingen

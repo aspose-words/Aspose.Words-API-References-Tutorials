@@ -165,7 +165,7 @@ Sim, você pode modificar o manipulador de retorno de chamada para lidar com mú
  Absolutamente! Você pode baixar uma versão de teste gratuita em[aqui](https://releases.aspose.com/).
 
 ### Como obtenho suporte para o Aspose.Words?
-Você pode obter suporte visitando o[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Você pode obter suporte visitando o[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Posso manter a formatação do documento inserido?
  Sim, o`NodeImporter` A classe permite que você especifique como a formatação é tratada ao importar nós de um documento para outro.

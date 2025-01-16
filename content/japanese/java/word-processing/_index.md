@@ -36,6 +36,6 @@ Aspose.Words for Java を使用してドキュメントの読み込みを最適�
 ### [DOC、HTML、画像オプションによる効率的なドキュメント保存](./efficient-document-saving-options/)
 Aspose.Words for Java で効率的なドキュメント保存を学びます。このステップバイステップのガイドでは、DOC、HTML、および画像オプションについて説明し、ドキュメント管理スキルを向上させます。
 ### [ドキュメントの高度な保存設定をマスターする](./mastering-advanced-save-settings/)
-Aspose.Words for Java を使用して、高度なドキュメント保存設定を習得します。ドキュメントの作成を簡単にフォーマット、保護、最適化、自動化する方法を学びます。
+Aspose.Words for Java を使用して、高度なドキュメント保存設定を習得します。ドキュメントの書式設定、保護、最適化、および作成の自動化を簡単に行う方法を学習します。
 ### [クリーンアップ、フィールド、XML データを使用したドキュメント コンテンツの操作](./manipulating-document-content/)
 Aspose.Words for Java を使用してドキュメント コンテンツを操作する方法を学びます。このステップ バイ ステップ ガイドでは、効率的なドキュメント管理のためのソース コード例を示します。

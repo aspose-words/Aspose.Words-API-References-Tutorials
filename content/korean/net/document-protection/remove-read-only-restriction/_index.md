@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 비밀번호 설정은 선택 사항이지만, 문서를 수정하기 전에 보안을 한층 더 강화할 수 있습니다.
 
 ```csharp
-//최대 15자 길이의 비밀번호를 입력하세요.
+// 최대 15자 길이의 비밀번호를 입력하세요.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ### 해당 문서에 이미 다른 유형의 보호가 적용된 경우에는 어떻게 되나요?
 
-그만큼`doc.Protect(ProtectionType.NoProtection)` 이 방법은 문서에서 모든 유형의 보호 기능이 제거되도록 보장합니다.
+ 그만큼`doc.Protect(ProtectionType.NoProtection)` 이 방법은 문서에서 모든 유형의 보호 기능이 제거되도록 보장합니다.
 
 ### 제한을 제거하기 전에 문서가 읽기 전용인지 알 수 있는 방법이 있나요?
 

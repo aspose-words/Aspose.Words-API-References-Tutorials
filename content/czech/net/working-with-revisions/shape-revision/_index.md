@@ -15,7 +15,7 @@ Programové úpravy dokumentů Wordu mohou být skličující úkol, zejména po
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Měli byste mít nastavené vývojové prostředí, jako je Visual Studio.
 - Základní porozumění C#: Seznámení s programovacím jazykem C# a základními pojmy objektově orientovaného programování.
 - Dokument aplikace Word: Dokument aplikace Word, se kterým můžete pracovat, nebo jej můžete vytvořit během kurzu.

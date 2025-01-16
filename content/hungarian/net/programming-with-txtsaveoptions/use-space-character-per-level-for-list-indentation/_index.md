@@ -104,4 +104,4 @@ Az alábbi lépések végrehajtásával sikeresen létrehozott egy dokumentumot 
 Igen, a lista formázási és behúzási beállításait bármikor módosíthatja a dokumentum mentése előtt.
 
 ### Milyen más dokumentumformátumok támogatják a lista behúzásának beállításait?
-Az Aspose.Words használatakor a szöveges fájlok mellett a lista behúzási beállításai más formátumokra is alkalmazhatók, mint például a DOCX, PDF és HTML.
+A szöveges fájlok mellett a lista behúzási beállításai más formátumokra is alkalmazhatók, mint például a DOCX, PDF és HTML, amikor az Aspose.Words fájlt használja.

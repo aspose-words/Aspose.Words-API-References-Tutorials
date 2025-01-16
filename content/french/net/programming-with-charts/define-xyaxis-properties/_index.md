@@ -78,7 +78,7 @@ Il est maintenant temps de définir les propriétés de l'axe X. Cela comprend l
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // Mesuré en unités d'affichage de l'axe Y (centaines).
+xAxis.CrossesAt = 3; //Mesuré en unités d'affichage de l'axe Y (centaines).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

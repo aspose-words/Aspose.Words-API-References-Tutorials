@@ -105,7 +105,7 @@ Aspose.Words obsługuje dodawanie jednego znaku wodnego na raz. Aby dodać wiele
 
 ### Czy mogę zmienić położenie znaku wodnego?
 
-Ten`WatermarkLayout`właściwość określa orientację, ale precyzyjne regulacje pozycjonowania nie są obsługiwane bezpośrednio. Może być konieczne użycie innych technik w celu dokładnego umiejscowienia.
+ Ten`WatermarkLayout`właściwość określa orientację, ale precyzyjne regulacje pozycjonowania nie są obsługiwane bezpośrednio. Może być konieczne użycie innych technik w celu dokładnego umiejscowienia.
 
 ### A co jeśli potrzebuję półprzezroczystego znaku wodnego?
 

@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-El`Document` El objeto representa todo nuestro documento de Word y el`DocumentBuilder` Nos ayuda a agregar y formatear contenido.
+ El`Document` El objeto representa todo nuestro documento de Word y el`DocumentBuilder` Nos ayuda a agregar y formatear contenido.
 
 ## Paso 3: Definir los bordes del párrafo
 

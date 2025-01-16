@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-De`ListIndent` methode springt de lijst in, waardoor een sublijst ontstaat. U maakt nu een hiërarchische lijst, vergelijkbaar met een geneste to-dolijst.
+ De`ListIndent` methode springt de lijst in, waardoor een sublijst ontstaat. U maakt nu een hiërarchische lijst, vergelijkbaar met een geneste to-dolijst.
 
 ## Conclusie
 

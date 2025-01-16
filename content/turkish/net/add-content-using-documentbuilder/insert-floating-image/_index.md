@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`Document` nesne Word belgesini temsil eder ve`DocumentBuilder` içerik eklenmesine yardımcı olur.
+ The`Document` nesne Word belgesini temsil eder ve`DocumentBuilder` içerik eklenmesine yardımcı olur.
 
 ## Adım 3: Görüntü Yolunu Tanımlayın
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 Her parametrenin anlamı şöyle:
-- `imagePath`Resim dosyanızın yolu.
+- `imagePath`: Resim dosyanızın yolu.
 - `RelativeHorizontalPosition.Margin`: Kenar boşluğuna göre yatay konum.
 - `100`: Kenar boşluğundan yatay uzaklık (puan cinsinden).
 - `RelativeVerticalPosition.Margin`: Kenar boşluğuna göre dikey konum.

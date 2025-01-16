@@ -32,7 +32,7 @@ using Aspose.Words;
 using System.IO;
 ```
 
-Các`Aspose.Words` không gian tên chứa các lớp cốt lõi để xử lý các tài liệu Word, trong khi`System.IO` cung cấp chức năng cho các hoạt động tập tin.
+ Các`Aspose.Words` không gian tên chứa các lớp cốt lõi để xử lý các tài liệu Word, trong khi`System.IO` cung cấp chức năng cho các hoạt động tập tin.
 
 Hãy cùng chia nhỏ quy trình chuyển đổi tệp DOCX sang định dạng RTF thành các bước rõ ràng, dễ quản lý. Làm theo các hướng dẫn này để chuyển đổi suôn sẻ.
 

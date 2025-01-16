@@ -64,7 +64,7 @@ I temi nei documenti Word spesso includono impostazioni per diversi tipi di font
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
-IL`MajorFonts` property fornisce accesso alle impostazioni principali dei font. In questo esempio, stiamo recuperando specificamente il font latino utilizzato nel tema. Puoi usare un codice simile per ottenere altri font principali come i font East Asian o Complex Script.
+ IL`MajorFonts` property fornisce accesso alle impostazioni principali dei font. In questo esempio, stiamo recuperando specificamente il font latino utilizzato nel tema. Puoi usare un codice simile per ottenere altri font principali come i font East Asian o Complex Script.
 
 ## Passaggio 4: Recupera i caratteri secondari
 
@@ -84,7 +84,7 @@ I temi definiscono anche vari colori usati per gli accenti nel documento. Per ot
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
-IL`Colors` proprietà del`Theme` La classe consente di recuperare diversi accenti di colore definiti nel tema, consentendo di gestire e applicare schemi di colori coerenti nei documenti.
+ IL`Colors` proprietà del`Theme` La classe consente di recuperare diversi accenti di colore definiti nel tema, consentendo di gestire e applicare schemi di colori coerenti nei documenti.
 
 ## Conclusione
 

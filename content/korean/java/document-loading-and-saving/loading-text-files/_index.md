@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-// 네 번째 목록은 목록 번호와 목록 항목 내용 사이에 공백이 있습니다.
+//네 번째 목록은 목록 번호와 목록 항목 내용 사이에 공백이 있습니다.
 // LoadOptions 개체의 "DetectNumberingWithWhitespaces"가 true로 설정된 경우에만 목록으로 감지됩니다.
 // 숫자로 시작하는 문단이 실수로 목록으로 감지되는 것을 방지합니다.
 TxtLoadOptions loadOptions = new TxtLoadOptions();
@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
-이 예에서 우리는 텍스트 문서를 로드하고 다음을 사용하여 앞뒤 공백을 제거합니다.`TxtLeadingSpacesOptions.TRIM` 그리고`TxtTrailingSpacesOptions.TRIM`.
+ 이 예에서 우리는 텍스트 문서를 로드하고 다음을 사용하여 앞뒤 공백을 제거합니다.`TxtLeadingSpacesOptions.TRIM` 그리고`TxtTrailingSpacesOptions.TRIM`.
 
 ## 3단계: 텍스트 방향 제어
 
@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-이 코드는 문서 방향을 자동 감지로 설정합니다.`DocumentDirection.AUTO`) 히브리어 텍스트가 있는 텍스트 문서를 로드합니다. 필요에 따라 문서 방향을 조정할 수 있습니다.
+이 코드는 문서 방향을 자동 감지로 설정합니다.`DocumentDirection.AUTO`히브리어 텍스트가 있는 텍스트 문서를 로드합니다. 필요에 따라 문서 방향을 조정할 수 있습니다.
 
 ## Aspose.Words for Java로 텍스트 파일을 로딩하기 위한 완전한 소스 코드
 
@@ -179,7 +179,7 @@ Java용 Aspose.Words를 시작하려면 다음 단계를 따르세요.
 
 ### 로드된 텍스트 문서에서 공백을 어떻게 처리합니까?
 
- 로드된 텍스트 문서에서 선행 및 후행 공백이 처리되는 방식을 제어할 수 있습니다.`TxtLoadOptions` . 다음과 같은 옵션`TxtLeadingSpacesOptions` 그리고`TxtTrailingSpacesOptions` 필요에 따라 공간을 다듬거나 보존할 수 있습니다. 이 가이드의 "공간 처리 옵션" 섹션을 참조하여 예를 들어보세요.
+ 로드된 텍스트 문서에서 선행 및 후행 공백이 처리되는 방식을 제어할 수 있습니다.`TxtLoadOptions` . 다음과 같은 옵션`TxtLeadingSpacesOptions` 그리고`TxtTrailingSpacesOptions`필요에 따라 공간을 다듬거나 보존할 수 있습니다. 이 가이드의 "공간 처리 옵션" 섹션을 참조하여 예를 들어보세요.
 
 ### Aspose.Words for Java에서 텍스트 방향의 중요성은 무엇입니까?
 

@@ -355,4 +355,4 @@ Untuk mengabaikan teks di dalam bidang selama penggantian, Anda dapat mengatur`I
 
 ### Apa fungsi opsi UseLegacyOrder?
 
-Itu`UseLegacyOrder` pilihan di`FindReplaceOptions` memungkinkan Anda menggunakan perintah lama saat melakukan operasi pencarian dan penggantian. Ini dapat berguna dalam skenario tertentu di mana perilaku perintah lama diinginkan.
+ Itu`UseLegacyOrder` pilihan di`FindReplaceOptions` memungkinkan Anda menggunakan perintah lama saat melakukan operasi pencarian dan penggantian. Ini dapat berguna dalam skenario tertentu di mana perilaku perintah lama diinginkan.

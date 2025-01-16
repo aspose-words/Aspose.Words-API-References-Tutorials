@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 Ustawienie hasła jest opcjonalne, ale może zapewnić dodatkową warstwę bezpieczeństwa dokumentu przed jego modyfikacją.
 
 ```csharp
-//Wprowadź hasło składające się z maksymalnie 15 znaków.
+// Wprowadź hasło składające się z maksymalnie 15 znaków.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Tak, ustawienie hasła jest opcjonalne. Możesz bezpośrednio usunąć zalecenie
 
 ### Co się stanie, jeśli dokument ma już inny rodzaj ochrony?
 
-Ten`doc.Protect(ProtectionType.NoProtection)` Metoda ta zapewnia usunięcie z dokumentu wszelkich zabezpieczeń.
+ Ten`doc.Protect(ProtectionType.NoProtection)` Metoda ta zapewnia usunięcie z dokumentu wszelkich zabezpieczeń.
 
 ### Czy istnieje sposób, aby dowiedzieć się, czy dokument jest tylko do odczytu, zanim usunę ograniczenie?
 

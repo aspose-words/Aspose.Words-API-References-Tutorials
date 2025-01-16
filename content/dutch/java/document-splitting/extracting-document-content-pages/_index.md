@@ -40,7 +40,7 @@ public class DocumentExtractor {
 
 ### Aspose.Words toevoegen aan uw project
 
- Om Aspose.Words aan uw project toe te voegen, kopieert u de gedownloade JAR-bestanden naar de map van uw project.`lib` map en voeg ze toe aan je classpath. Je bent nu klaar om de wereld van document extractie in te duiken!
+Om Aspose.Words aan uw project toe te voegen, kopieert u de gedownloade JAR-bestanden naar de map van uw project.`lib` map en voeg ze toe aan je classpath. Je bent nu klaar om de wereld van document extractie in te duiken!
 
 ## Documenten laden en parsen
 
@@ -64,7 +64,7 @@ DocumentVisitor visitor = new DocumentVisitor();
 // Doorloop het document
 doc.accept(visitor);
 
-//Geëxtraheerde inhoud is nu beschikbaar in de bezoekersinterface
+// Geëxtraheerde inhoud is nu beschikbaar in de bezoekersinterface
 String extractedText = visitor.getText();
 ```
 
@@ -90,7 +90,7 @@ String pageText = doc.extractText(pageInfo);
 Om inhoud van alle pagina's te extraheren, kunt u een eenvoudige lus gebruiken:
 
 ```java
-// Het totale aantal pagina's in het document ophalen
+//Het totale aantal pagina's in het document ophalen
 int pageCount = doc.getPageCount();
 
 for (int i = 0; i < pageCount; i++) {
@@ -120,7 +120,7 @@ builder.write("This text is bold.");
 Nadat u de inhoud hebt uitgepakt en bewerkt, kunt u deze opslaan in een nieuw document:
 
 ```java
-//Sla de geëxtraheerde inhoud op in een nieuw document
+// Sla de geëxtraheerde inhoud op in een nieuw document
 doc.save("extracted_content.docx");
 ```
 
@@ -148,7 +148,7 @@ Veelvoorkomende fouten in Aspose.Words voor Java hebben doorgaans betrekking op 
 
 ### Hoe kan ik bijdragen aan de Aspose.Words voor Java-community?
 
-kunt bijdragen door uw kennis te delen op forums, bugs te melden of zelfs codebijdragen in te dienen. Word vandaag nog lid van de levendige Aspose-community!
+U kunt bijdragen door uw kennis te delen op forums, bugs te melden of zelfs codebijdragen in te dienen. Word vandaag nog lid van de levendige Aspose-community!
 
 ### Zijn er licentieoverwegingen?
 

@@ -9,7 +9,7 @@ url: /nl/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 ## Invoering
 
-Hallo! Dus, je hebt met Word-documenten gewerkt en hebt een manier nodig om snel naar het begin of einde van je document te springen, huh? Nou, dan ben je hier aan het juiste adres! In deze gids duiken we in hoe je de cursor naar het begin of einde van een Word-document verplaatst met Aspose.Words voor .NET. Geloof me, aan het einde hiervan navigeer je als een pro door je documenten. Laten we beginnen!
+Hallo! Dus, je hebt met Word-documenten gewerkt en hebt een manier nodig om snel programmatisch naar het begin of einde van je document te springen, hè? Nou, dan ben je hier aan het juiste adres! In deze gids duiken we in hoe je de cursor naar het begin of einde van een Word-document verplaatst met Aspose.Words voor .NET. Geloof me, aan het einde hiervan navigeer je als een professional door je documenten. Laten we beginnen!
 
 ## Vereisten
 
@@ -23,7 +23,7 @@ Heb je dat allemaal? Geweldig, laten we verder gaan!
 
 ## Naamruimten importeren
 
-Allereerst moeten we de benodigde namespaces importeren. Dit is hetzelfde als het inpakken van je tools voordat je een project start. Dit heb je nodig:
+Allereerst moeten we de benodigde namespaces importeren. Dit is hetzelfde als het inpakken van je tools voordat je een project start. Dit is wat je nodig hebt:
 
 ```csharp
 using System;

@@ -16,7 +16,7 @@ Aspose.Words for Java je robustní API, které umožňuje vývojářům Java pra
 
 ## Začínáme s Aspose.Words pro Javu
 
-Než se vrhneme na specifika práce se seznamy dokumentů, ujistíme se, že máte vše správně nastavené:
+Než se vrhneme na specifika práce se seznamy dokumentů, ujistěte se, že máte vše správně nastavené:
 
 ### Předpoklady
 
@@ -38,23 +38,11 @@ Zde je ukázkový fragment kódu, který vám pomůže začít:
 // Importujte požadované balíčky
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Inicializujte nový dokument
-        Document doc = new Document();
-
-        // Vytvořte seznam
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Přidat položky seznamu
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Uložte dokument
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Úprava seznamu dokumentů
@@ -69,21 +57,18 @@ Jakmile vytvoříte seznam dokumentů, může být nutné jej upravit přidání
 Zde je úryvek kódu pro úpravu seznamu dokumentů:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Načíst existující dokument
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Přístup k seznamu
-        List list = doc.getLists().get(0);
-
-        // Přidat novou položku
-        list.getListItems().add("New Item");
-
-        // Uložte upravený dokument
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Zkontrolujte, zda je odstavec součástí seznamu.
+    if (paragraph.isListItem()) {
+        // Aktualizujte poslední odstavec seznamu.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Extrahování informací ze seznamu dokumentů
@@ -97,23 +82,21 @@ V některých případech může být nutné extrahovat informace ze seznamu dok
 Zde je úryvek kódu pro extrahování informací ze seznamu dokumentů:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Vložte dokument
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Přístup k seznamu
-        List list = doc.getLists().get(0);
-
-        // Iterujte položky seznamu a vytiskněte je
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Často kladené otázky (FAQ)
+## Závěr
+
+V tomto komplexním průvodci jsme prozkoumali svět práce se seznamy dokumentů pomocí Aspose.Words for Java. Naučili jste se vytvářet, upravovat a extrahovat informace ze seznamů dokumentů, to vše s výkonem a flexibilitou Aspose.Words for Java. Začněte implementovat tyto techniky do svých projektů Java ještě dnes a zefektivněte své úlohy automatizace dokumentů.
+
+
+## FAQ
 
 ### Jak přidám odrážky do seznamu dokumentů?
  Chcete-li do seznamu dokumentů přidat odrážky, použijte při vytváření seznamu příslušnou šablonu ListTemplate. Například použijte`ListTemplate.BULLET_DEFAULT` místo`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ Chcete-li převést seznam dokumentů do PDF, jednoduše načtěte dokument pomo
 
 ### Podporuje Aspose.Words for Java práci s tabulkami v dokumentech?
 Ano, Aspose.Words for Java poskytuje rozsáhlou podporu pro práci s tabulkami, což vám umožňuje snadno vytvářet, upravovat a extrahovat tabulková data.
-
-## Závěr
-
-V tomto komplexním průvodci jsme prozkoumali svět práce se seznamy dokumentů pomocí Aspose.Words for Java. Naučili jste se vytvářet, upravovat a extrahovat informace ze seznamů dokumentů, to vše s výkonem a flexibilitou Aspose.Words for Java. Začněte implementovat tyto techniky do svých projektů Java ještě dnes a zefektivněte své úlohy automatizace dokumentů.

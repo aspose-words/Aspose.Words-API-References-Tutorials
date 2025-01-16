@@ -9,7 +9,7 @@ url: /hu/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_s
 ---
 ## Bevezetés
 
-Készen áll arra, hogy belemerüljön az OOXML ISO 29500_2008_Strict szabványnak való megfelelés világába? Vegyünk egy utazást ezen az átfogó oktatóanyagon az Aspose.Words for .NET használatával. Az egyes lépéseket lebontjuk, így rendkívül könnyen követhető és végrehajtható. Szóval, kösd be, és kezdjük!
+Készen áll arra, hogy belemerüljön az OOXML ISO 29500_2008_Strict szabványnak való megfelelés világába? Vegyünk egy utazást ezen az átfogó oktatóanyagon az Aspose.Words for .NET használatával. Az egyes lépéseket lebontjuk, így rendkívül könnyen követhető és végrehajtható. Szóval, csatt, és kezdjük!
 
 ## Előfeltételek
 

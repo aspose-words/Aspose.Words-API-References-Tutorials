@@ -16,7 +16,7 @@ Danh sách có hai loại chính: có dấu đầu dòng và có số. Chúng ch
 
 ## Thiết lập môi trường
 
-Trước khi chúng ta đi sâu vào việc tạo và quản lý danh sách, hãy đảm bảo bạn đã cài đặt thư viện Aspose.Words for Python. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/python/) . Ngoài ra, hãy tham khảo tài liệu API tại[liên kết này](https://reference.aspose.com/words/python-net/) để biết thông tin chi tiết.
+ Trước khi chúng ta đi sâu vào việc tạo và quản lý danh sách, hãy đảm bảo bạn đã cài đặt thư viện Aspose.Words for Python. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/python/) . Ngoài ra, hãy tham khảo tài liệu API tại[liên kết này](https://reference.aspose.com/words/python-net/) để biết thông tin chi tiết.
 
 ## Tạo danh sách có dấu đầu dòng
 
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]

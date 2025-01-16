@@ -45,7 +45,7 @@ using Aspose.Words.Tables;
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-The`DocumentBuilder` класс — это универсальный инструмент, позволяющий создавать и изменять документ.
+ The`DocumentBuilder` класс — это универсальный инструмент, позволяющий создавать и изменять документ.
 
 ## Шаг 2: Вставьте гиперссылку
 

@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## Text ersetzen
-
-Manchmal möchten Sie vielleicht bestimmten Text durch neuen Inhalt ersetzen. Hier ist ein Beispiel dafür:
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## Bilder entfernen
 
 Wenn Sie Bilder aus dem Dokument entfernen müssen, können Sie einen ähnlichen Ansatz verwenden. Identifizieren Sie zunächst die Bilder und entfernen Sie sie dann:
@@ -94,23 +81,7 @@ for section in doc.sections:
         doc.remove_child(section)
 ```
 
-## Suchen und Ersetzen mit Regex
-
-Reguläre Ausdrücke bieten eine leistungsstarke Möglichkeit, Inhalte zu suchen und zu ersetzen:
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
-```
-
-## Extrahieren spezifischer Inhalte
+## Extrahieren bestimmter Inhalte
 
 Manchmal müssen Sie möglicherweise bestimmte Inhalte aus einem Dokument extrahieren:
 

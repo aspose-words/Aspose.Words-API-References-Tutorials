@@ -20,7 +20,7 @@ Avant de passer aux détails, il y a quelques éléments dont vous aurez besoin.
 - Connaissances de base de C# : Bien que nous expliquerons tout, une compréhension de base de C# sera bénéfique.
 - Document Word avec typographie asiatique : disposer d'un document Word qui inclut une typographie asiatique. Ce sera notre fichier de travail.
 
-Vous avez tout ce qu'il vous faut ? Super ! Passons à la configuration de votre projet.
+Vous avez tout reçu ? Super ! Passons à la configuration de votre projet.
 
 ## Importer des espaces de noms
 

@@ -7,128 +7,137 @@ type: docs
 weight: 14
 url: /hu/java/table-processing/table-contents-generation/
 ---
-
-Készen áll arra, hogy elinduljon a tartalomjegyzék (TOC) generálásának elsajátítása felé az Aspose.Words for Java használatával? Ebben az átfogó útmutatóban felfedezzük a dinamikus és tetszetős TOC-k könnyű létrehozásának művészetét. Fel lesz szerelve azokkal a tudással és készségekkel, amelyek ahhoz szükségesek, hogy ezt a funkciót zökkenőmentesen implementálhasd Java-alkalmazásaiban. Szóval, ugorjunk bele!
-
 ## Bevezetés
 
-A tartalomjegyzék (TOC) minden jól strukturált dokumentum lényeges eleme. Útitervet biztosít az olvasóknak, így könnyedén navigálhatnak a hosszú dokumentumok között. Az Aspose.Words for Java egy hatékony API, amely leegyszerűsíti a tartalomjegyzék létrehozását Java alkalmazásokban. Ebben a lépésenkénti útmutatóban mindent megtudunk, amit tudnia kell a TOC-k dinamikus létrehozásához az Aspose.Words for Java használatával.
+Küzdött már valaha egy dinamikus és professzionális megjelenésű tartalomjegyzék (TOC) létrehozásával a Word-dokumentumokban? Ne keressen tovább! Az Aspose.Words for Java segítségével a teljes folyamatot automatizálhatja, így időt takaríthat meg és biztosítja a pontosságot. Akár átfogó jelentést, akár akadémiai dolgozatot készít, ez az oktatóanyag végigvezeti Önt a Java segítségével programozott TOC létrehozásán. Készen állsz a merülésre? Kezdjük is!
 
-## Az Aspose.Words for Java első lépései
+## Előfeltételek
 
-Mielőtt belemerülnénk a TOC generálás sajátosságaiba, állítsuk be a környezetünket, és ismerkedjünk meg az Aspose.Words for Java programmal.
+A kódolás megkezdése előtt győződjön meg arról, hogy rendelkezik a következőkkel:
 
-### Környezetének beállítása
+1.  Java Development Kit (JDK): telepítve van a rendszerére. Letöltheti innen[Az Oracle webhelye](https://www.oracle.com/java/technologies/javase-downloads.html).
+2.  Aspose.Words for Java Library: Töltse le a legújabb verziót a[kiadási oldal](https://releases.aspose.com/words/java/).
+3. Integrált fejlesztői környezet (IDE): például az IntelliJ IDEA, az Eclipse vagy a NetBeans.
+4.  Aspose ideiglenes licenc: Az értékelési korlátozások elkerülése érdekében szerezze be a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).
 
- kezdéshez győződjön meg arról, hogy az Aspose.Words for Java telepítve van. Letöltheti a weboldalról[itt](https://releases.aspose.com/words/java/).
+## Csomagok importálása
 
-### Új Java projekt létrehozása
-
-Kezdje azzal, hogy hozzon létre egy új Java-projektet kedvenc integrált fejlesztőkörnyezetében (IDE).
-
-### Az Aspose.Words for Java hozzáadása projektjéhez
-
-Adja hozzá az Aspose.Words for Java könyvtárat a projekthez úgy, hogy belefoglalja a függőségekbe.
-
-### Az Aspose.Words inicializálása
-
-A Java kódban inicializálja az Aspose.Words fájlt a vele való munka megkezdéséhez.
+Az Aspose.Words for Java hatékony használatához importálja a szükséges osztályokat. Íme az import:
 
 ```java
-// Az Aspose.Words inicializálása
-com.aspose.words.Document doc = new com.aspose.words.Document();
+import com.aspose.words.*;
 ```
 
-## Tartalomjegyzék (TOC)
+Kövesse ezeket a lépéseket dinamikus tartalomjegyzék létrehozásához a Word-dokumentumban.
 
-Mielőtt belevágnánk a TOC-ok létrehozásába, ismerjük meg mélyebben, mik ezek és hogyan működnek.
+## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
 
-### Mi az a Tartalomjegyzék?
+ Az első lépés egy új dokumentum létrehozása és a`DocumentBuilder` osztályt manipulálni.
 
-A tartalomjegyzék egy lista, amely a dokumentum elején jelenik meg, és hivatkozásokat tartalmaz a dokumentum különböző szakaszaira vagy fejezeteire. Hasznos navigációs eszközként szolgál az olvasók számára.
-
-### Hogyan működik a TOC-generálás?
-
-TOC létrehozása magában foglalja a dokumentumon belüli meghatározott címsorok vagy tartalom azonosítását, és az ezekre a szakaszokra mutató hivatkozások létrehozását. Az Aspose.Words for Java leegyszerűsíti ezt a folyamatot azáltal, hogy automatizálja a TOC-k előállítását előre meghatározott szabályok alapján.
-
-## Alapvető tartalomjegyzék létrehozása
-
-Most, hogy szilárd alapokkal rendelkezünk, készítsünk egy alap TOC-t az Aspose.Words for Java segítségével.
 
 ```java
-// Hozzon létre egy új tartalomjegyzéket
-com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-tocField.update();
+string dataDir = "Your Document Directory";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-A fenti kód egy alapvető tartalomjegyzéket hoz létre a dokumentumban. Tovább testreszabhatja a szintek, a formázás és egyebek megadásával.
+- `Document`: A Word dokumentumot jelöli.
+- `DocumentBuilder`: Segítő osztály, amely lehetővé teszi a dokumentum egyszerű kezelését.
 
-## Speciális TOC testreszabás
+## 2. lépés: Helyezze be a tartalomjegyzéket
 
-Az Aspose.Words for Java kiterjedt testreszabási lehetőségeket kínál a TOC-hoz. Nézzünk meg néhány speciális funkciót:
+Most pedig illesszük be a TOC-t a dokumentum elejére.
 
-### TOC stílusok testreszabása
-
-Meghatározhatja a tartalomjegyzék-stílusokat, hogy azok illeszkedjenek a dokumentum esztétikájához.
 
 ```java
-// TOC stílusok testreszabása
-com.aspose.words.Style tocStyle = doc.getStyles().add(StyleType.PARAGRAPH, "MyTOCStyle");
-tocStyle.getFont().setSize(16);
-tocStyle.getFont().setBold(true);
+builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+builder.insertBreak(BreakType.PAGE_BREAK);
 ```
 
-### Beleértve a konkrét címsorokat is
+- `insertTableOfContents`: TOC mezőt szúr be. A paraméterek megadják:
+  - `\o "1-3"`: Tartalmazza az 1–3. szintű címsorokat.
+  - `\h`: Hiperhivatkozások létrehozása a bejegyzésekben.
+  - `\z`: Az oldalszámok letiltása webes dokumentumokhoz.
+  - `\u`: Stílusok megőrzése a hiperhivatkozásokhoz.
+- `insertBreak`: Oldaltörést ad a tartalomjegyzék után.
 
-Kiválaszthatja, hogy mely címsorokat vegye fel a tartalomjegyzékbe, a vázlatszintjük megadásával.
+## 3. lépés: Adjon hozzá címeket a tartalomjegyzék feltöltéséhez
+
+A TOC feltöltéséhez fejlécstílusú bekezdéseket kell hozzáadnia.
+
 
 ```java
-// Csak meghatározott címsorokat tartalmazzon
-tocField.setCode("TOC \\o \"1-3\" \\h \\z");
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 1");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_2);
+builder.writeln("Heading 1.1");
+builder.writeln("Heading 1.2");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 2");
 ```
 
-## Forráskód hozzáadása a TOC-generáláshoz
+- `setStyleIdentifier` : A bekezdésstílust egy adott címsorszintre állítja (pl.`HEADING_1`, `HEADING_2`).
+- `writeln`: Szöveget ad hozzá a dokumentumhoz a megadott stílusban.
 
-Lépjünk egy lépéssel tovább a forráskód integrálásával a TOC létrehozásának automatizálása érdekében a Java-alkalmazásokban.
+## 4. lépés: Beágyazott címsorok hozzáadása
+
+A TOC-szintek bemutatásához használjon beágyazott címsorokat.
+
 
 ```java
-// Automatizálja a TOC generálását Java nyelven
-public void generateTOC() {
-    com.aspose.words.Document doc = new com.aspose.words.Document();
-    com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-    tocField.update();
-    // Adjon hozzá további testreszabásokat itt
-}
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_3);
+builder.writeln("Heading 3.1.1");
+builder.writeln("Heading 3.1.2");
+builder.writeln("Heading 3.1.3");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_4);
+builder.writeln("Heading 3.1.3.1");
+builder.writeln("Heading 3.1.3.2");
 ```
 
-Azáltal, hogy a TOC generálást egy módszerbe foglalja, könnyen beépítheti projektjeibe.
+- Adjon hozzá mélyebb szintek címsorait a hierarchia megjelenítéséhez a tartalomjegyzékben.
 
-## GYIK
+## 5. lépés: Frissítse a TOC mezőket
 
-### Hogyan frissíthetek egy meglévő TOC-t?
+A TOC mezőt frissíteni kell a legújabb fejlécek megjelenítéséhez.
 
-A dokumentumban meglévő tartalomjegyzék frissítéséhez egyszerűen kattintson rá a jobb gombbal, és válassza a "Mező frissítése" lehetőséget. Az Aspose.Words for Java frissíti a tartalomjegyzéket a dokumentum fejlécében bekövetkezett változások alapján.
 
-### Létrehozhatok több TOC-t egyetlen dokumentumban?
+```java
+doc.updateFields();
+```
 
-Igen, több tartalomjegyzéket is létrehozhat egyetlen dokumentumban. Használjon különböző mezőkódokat minden tartalomjegyzékhez, és szükség szerint módosítsa a beállításokat.
+- `updateFields`: Frissíti a dokumentum összes mezőjét, biztosítva, hogy a tartalomjegyzék tükrözze a hozzáadott címsorokat.
 
-### Az Aspose.Words for Java alkalmas kis és nagy dokumentumokhoz egyaránt?
+## 6. lépés: Mentse el a dokumentumot
 
-Teljesen! Az Aspose.Words for Java sokoldalú, és különböző méretű dokumentumokat képes kezelni, a kis jelentésektől a kiterjedt regényekig.
+Végül mentse a dokumentumot a kívánt formátumba.
 
-### Testreszabhatom a TOC-bejegyzéseim megjelenését?
 
-Biztosan! Egyéni stílusokat határozhat meg a tartalomjegyzék-bejegyzésekhez, hogy illeszkedjenek a dokumentum tervéhez és formázásához.
+```java
+doc.save(dataDir + "DocumentBuilder.InsertToc.docx");
+```
 
-### Az Aspose.Words for Java támogatja a kereszthivatkozásokat a tartalomjegyzékben?
-
-Igen, a tartalomjegyzékben kereszthivatkozásokat hozhat létre, amelyek a dokumentum bizonyos szakaszaira vagy oldalaira hivatkoznak.
-
-### Az Aspose.Words for Java alkalmas webes alkalmazásokhoz?
-
-Valójában az Aspose.Words for Java zökkenőmentesen integrálható webalkalmazásokba, így dinamikusan hozható létre tartalomjegyzék.
+- `save` : Exportálja a dokumentumot a`.docx` fájlt. Megadhat más formátumokat is, mint pl`.pdf` vagy`.txt` ha szükséges.
 
 ## Következtetés
 
-Ebben az átfogó útmutatóban megvizsgáltuk a tartalomjegyzék (TOC) létrehozásának művészetét az Aspose.Words for Java használatával. Megtanulta, hogyan állíthatja be a környezetét, hogyan hozhat létre alapvető és haladó tartalomjegyzékeket, és hogyan integrálhatja a tartalomjegyzék generálását a Java projektekbe forráskóddal. Az Aspose.Words for Java lehetővé teszi, hogy dokumentumait dinamikus és tetszetős tartalomjegyzékekkel javítsa. Most pedig alkalmazza ezt a tudást lenyűgöző tartalomjegyzékek létrehozásához Java-alkalmazásaiban. Boldog kódolást!
+Gratulálok! Sikeresen létrehozott egy dinamikus tartalomjegyzéket egy Word-dokumentumban az Aspose.Words for Java használatával. Néhány sornyi kóddal automatizált egy olyan feladatot, amely egyébként órákig is eltarthatna. Szóval, mi lesz ezután? Kísérletezzen különböző címsorstílusokkal és formátumokkal, hogy a tartalomjegyzékét az adott igényekhez igazítsa.
+
+## GYIK
+
+### Testreszabhatom a TOC formátumot?
+Teljesen! Beállíthatja a tartalomjegyzék paramétereit, például az oldalszámokat, a szöveg igazítását vagy az egyéni címsorstílusok használatát.
+
+### Kötelező licenc az Aspose.Words for Java számára?
+ Igen, a teljes funkcionalitáshoz licenc szükséges. Kezdheti a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).
+
+### Létrehozhatok TOC-t egy meglévő dokumentumhoz?
+ Igen! Helyezze be a dokumentumot a`Document` objektumot, és kövesse ugyanazokat a lépéseket a tartalomjegyzék beszúrásához és frissítéséhez.
+
+### Ez működik PDF-exportálásnál?
+ Igen, a tartalomjegyzék megjelenik a PDF-ben, ha menti a dokumentumot`.pdf` formátum.
+
+### Hol találok további dokumentációt?
+ Nézze meg a[Aspose.Words for Java dokumentáció](https://reference.aspose.com/words/java/) további példákért és részletekért.

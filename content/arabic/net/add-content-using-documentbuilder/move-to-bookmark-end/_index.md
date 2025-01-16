@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### فهم MoveToBookmark
 
-ال`MoveToBookmark`تتيح لك الطريقة الانتقال إلى إشارة مرجعية محددة داخل مستندك. توقيع الطريقة هو:
+ ال`MoveToBookmark`تتيح لك الطريقة الانتقال إلى إشارة مرجعية محددة داخل مستندك. توقيع الطريقة هو:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

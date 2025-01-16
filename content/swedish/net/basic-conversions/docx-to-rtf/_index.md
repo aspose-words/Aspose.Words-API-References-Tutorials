@@ -32,7 +32,7 @@ using Aspose.Words;
 using System.IO;
 ```
 
-De`Aspose.Words` namespace innehåller kärnklasserna för hantering av Word-dokument, while`System.IO` ger funktionalitet för filoperationer.
+ De`Aspose.Words` namespace innehåller kärnklasserna för hantering av Word-dokument, while`System.IO` ger funktionalitet för filoperationer.
 
 Låt oss bryta ner processen att konvertera en DOCX-fil till RTF-format i tydliga, hanterbara steg. Följ dessa instruktioner för att uppnå omvandlingen smidigt.
 

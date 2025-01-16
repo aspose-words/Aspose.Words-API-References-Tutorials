@@ -78,7 +78,7 @@ secondTable.Remove();
 
 ## Steg 5: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet. Detta steg säkerställer att dina ändringar skrivs till filen:
+Spara slutligen det ändrade dokumentet. Detta steg säkerställer att dina ändringar skrivs till filen:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
@@ -112,4 +112,4 @@ Absolut! Du kan skapa ett skript för att automatisera denna process för flera 
 
 ### Var kan jag få hjälp om jag stöter på problem?
 
-De[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) är ett bra ställe att få hjälp och hitta lösningar på vanliga problem.
+ De[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) är ett bra ställe att få hjälp och hitta lösningar på vanliga problem.

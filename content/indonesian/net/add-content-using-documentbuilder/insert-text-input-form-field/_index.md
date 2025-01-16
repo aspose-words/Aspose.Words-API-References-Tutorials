@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Langkah 3: Inisialisasi DocumentBuilder
 
-Itu`DocumentBuilder` kelas adalah alat utama kita untuk menambahkan konten ke dalam dokumen. Anggap saja sebagai pena yang menulis di kanvas dokumen Word.
+ Itu`DocumentBuilder` kelas adalah alat utama kita untuk menambahkan konten ke dalam dokumen. Anggap saja sebagai pena yang menulis di kanvas dokumen Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <tóm tắt>
-/// Lấy tài liệu của một phạm vi trang.
+//Lấy tài liệu của một phạm vi trang.
 /// </tóm tắt>
-//<param name="startIndex">
+/// <param name="startIndex">
 /// Chỉ mục dựa trên trang bắt đầu.
 /// </tham số>
 /// <param name="endIndex">

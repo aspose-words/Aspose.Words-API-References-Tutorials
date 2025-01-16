@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-In questo passaggio, stiamo caricando il documento Word dalla directory specificata. Assicurati di sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo in cui si trova il documento.
+In questo passaggio, stiamo caricando il documento Word dalla directory specificata. Assicurati di sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo in cui si trova il documento.
 
 ## Passaggio 2: configurare le opzioni di downsampling
 

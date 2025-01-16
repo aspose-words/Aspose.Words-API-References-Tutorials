@@ -51,19 +51,6 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_remove, replacement, False, False)
 ```
 
-## Mengganti Teks
-
-Terkadang, Anda mungkin ingin mengganti teks tertentu dengan konten baru. Berikut contoh cara melakukannya:
-
-```python
-text_to_replace = "old text"
-new_text = "new text"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    if text_to_replace in paragraph.get_text():
-        paragraph.get_range().replace(text_to_replace, new_text, False, False)
-```
-
 ## Menghapus Gambar
 
 Jika Anda perlu menghapus gambar dari dokumen, Anda dapat menggunakan pendekatan serupa. Pertama, identifikasi gambar dan kemudian hapus:
@@ -92,22 +79,6 @@ Menghapus seluruh bagian dari dokumen dapat dilakukan seperti ini:
 for section in doc.sections:
     if "delete-this-section" in section.get_text():
         doc.remove_child(section)
-```
-
-## Temukan dan Ganti dengan Regex
-
-Ekspresi reguler menawarkan cara yang ampuh untuk menemukan dan mengganti konten:
-
-```python
-import re
-
-pattern = r"\b\d{4}\b"  # Example: Replace four-digit numbers
-replacement = "****"
-
-for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
-    text = paragraph.get_text()
-    new_text = re.sub(pattern, replacement, text)
-    paragraph.get_range().text = new_text
 ```
 
 ## Mengekstrak Konten Tertentu

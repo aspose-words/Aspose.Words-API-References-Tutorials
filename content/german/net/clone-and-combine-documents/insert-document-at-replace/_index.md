@@ -165,7 +165,7 @@ Ja, Sie können den Rückrufhandler so ändern, dass er mehrere Einfügungen ver
  Auf jeden Fall! Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/).
 
 ### Wie erhalte ich Support für Aspose.Words?
-Sie erhalten Unterstützung durch den Besuch der[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).
+ Sie erhalten Unterstützung durch den Besuch der[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).
 
 ### Kann ich die Formatierung des eingefügten Dokuments beibehalten?
  Ja, die`NodeImporter` Mit der Klasse können Sie angeben, wie die Formatierung beim Importieren von Knoten von einem Dokument in ein anderes gehandhabt wird.

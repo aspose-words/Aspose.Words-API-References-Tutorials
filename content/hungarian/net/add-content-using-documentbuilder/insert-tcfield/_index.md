@@ -75,11 +75,11 @@ Végül mentsük el a dokumentumunkat. Itt jön össze minden kemény munkánk.
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-Fellendülés! Most hozott létre egy Word-dokumentumot TC mezővel. Milyen fantasztikus ez?
+Fellendülés! Most hozott létre egy Word-dokumentumot TC mezővel. Milyen fantasztikus?
 
 ## Következtetés
 
- És megvan! Végigjártuk, hogyan lehet TC-mezőt beszúrni egy Word-dokumentumba az Aspose.Words for .NET használatával. Elég egyértelmű, igaz? Ezekkel a készségekkel most már profi módon automatizálhatja és testreszabhatja Word-dokumentumait. Ha bármilyen kérdése van, vagy bármilyen problémába ütközik, ne habozzon megnézni a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy nyúljanak hozzájuk[támogatási fórum](https://forum.aspose.com/c/words/8). Boldog kódolást!
+ És megvan! Végigjártuk, hogyan lehet TC-mezőt beszúrni egy Word-dokumentumba az Aspose.Words for .NET használatával. Elég egyértelmű, igaz? Ezekkel a készségekkel most már profi módon automatizálhatja és testreszabhatja Word-dokumentumait. Ha bármilyen kérdése van, vagy bármilyen problémába ütközik, ne habozzon megnézni a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy nyúljon hozzájuk[támogatási fórum](https://forum.aspose.com/c/words/8). Boldog kódolást!
 
 ## GYIK
 

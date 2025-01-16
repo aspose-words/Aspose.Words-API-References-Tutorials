@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Thay đổi trục X thành danh mục thay vì ngày tháng.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Được đo theo đơn vị hiển thị của trục Y (hàng trăm).
+xAxis.setCrossesAt(3.0); //Được đo theo đơn vị hiển thị của trục Y (hàng trăm).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ Trong hướng dẫn này, chúng ta đã khám phá cách làm việc với bi�
 
 ### Làm thế nào để định dạng nhãn dữ liệu theo định dạng số tùy chỉnh?
 
- Bạn có thể định dạng nhãn dữ liệu bằng cách truy cập`DataLabels` thuộc tính của một chuỗi và thiết lập mã định dạng mong muốn bằng cách sử dụng`getNumberFormat().setFormatCode()`.
+Bạn có thể định dạng nhãn dữ liệu bằng cách truy cập`DataLabels` thuộc tính của một chuỗi và thiết lập mã định dạng mong muốn bằng cách sử dụng`getNumberFormat().setFormatCode()`.
 
 ### Làm thế nào để tùy chỉnh thuộc tính trục trong biểu đồ?
 
@@ -139,7 +139,7 @@ Trong hướng dẫn này, chúng ta đã khám phá cách làm việc với bi�
 
 ### Làm thế nào tôi có thể tạo các loại biểu đồ khác như biểu đồ phân tán hoặc biểu đồ diện tích?
 
-Bạn có thể tạo nhiều loại biểu đồ khác nhau bằng cách chỉ định các loại biểu đồ thích hợp.`ChartType` khi chèn biểu đồ bằng cách sử dụng`builder.insertChart(ChartType.TYPE, width, height)`.
+ Bạn có thể tạo nhiều loại biểu đồ khác nhau bằng cách chỉ định các loại biểu đồ thích hợp.`ChartType` khi chèn biểu đồ bằng cách sử dụng`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Làm thế nào để ẩn trục biểu đồ?
 

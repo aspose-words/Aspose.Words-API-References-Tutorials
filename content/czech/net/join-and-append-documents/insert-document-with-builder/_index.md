@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Krok 3: Vytvoření objektu DocumentBuilder
 
-The`DocumentBuilder` class je mocný nástroj v knihovně Aspose.Words. Umožňuje nám procházet a manipulovat s dokumentem.
+ The`DocumentBuilder` class je mocný nástroj v knihovně Aspose.Words. Umožňuje nám procházet a manipulovat s dokumentem.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);

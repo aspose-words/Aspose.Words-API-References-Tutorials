@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
 ## 介紹
 
-有沒有想過如何讓 Word 文件中的目錄 (TOC) 變得生動活潑？也許您希望這些製表位能夠完美對齊以達到專業的風格。您來對地方了！今天，我們將深入探討如何使用 Aspose.Words for .NET 變更 TOC 製表位。堅持下去，我保證您會帶著所有的專業知識離開，讓您的 TOC 看起來時髦而整潔。
+有沒有想過如何讓 Word 文件中的目錄 (TOC) 變得生動活潑？也許您希望這些製表位能夠完美對齊以達到專業的風格。您來對地方了！今天，我們將深入探討如何使用 Aspose.Words for .NET 變更 TOC 製表位。堅持下去，我保證你會帶著所有的專業知識離開，讓你的 TOC 看起來時髦和整潔。
 
 ## 先決條件
 

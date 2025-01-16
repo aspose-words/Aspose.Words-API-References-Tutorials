@@ -44,10 +44,7 @@ Das Akzeptieren von Änderungen ist ein wichtiger Schritt bei der Fertigstellung
 
 ```java
 // Alle Revisionen akzeptieren
-doc.acceptAllRevisions();
-
-// Akzeptieren einer bestimmten Revision nach Index
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## Ablehnen von Änderungen
@@ -56,10 +53,7 @@ In manchen Fällen müssen Sie bestimmte Änderungen ablehnen. Aspose.Words für
 
 ```java
 // Alle Revisionen ablehnen
-doc.rejectAllRevisions();
-
-// Eine bestimmte Revision nach Index ablehnen
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## Speichern des Dokuments

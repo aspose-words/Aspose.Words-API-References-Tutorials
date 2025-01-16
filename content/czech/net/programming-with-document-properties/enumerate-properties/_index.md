@@ -15,11 +15,11 @@ Chcete pracovat s dokumenty Wordu programově? Aspose.Words for .NET je výkonn�
 
 Než se pustíme do výukového programu, je několik věcí, které budete potřebovat:
 
--  Aspose.Words pro .NET: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words pro .NET: Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Doporučuje se Visual Studio, ale můžete použít libovolné IDE C#.
 - Základní znalost C#: Základní znalost C# vám pomůže pokračovat.
 
-Tak pojďme rovnou do toho!
+Teď pojďme rovnou do toho!
 
 ## Krok 1: Nastavení vašeho projektu
 

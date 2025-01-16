@@ -35,7 +35,7 @@ Maintenant, décomposons le processus en étapes simples et faciles à suivre.
 
 ## Étape 1 : Configuration du document
 
-Titre : Initialiser votre document
+Titre : Initialiser votre document
 
 Tout d'abord, vous devez créer un nouveau document et un générateur de document. Considérez cette étape comme la préparation de votre toile et de votre pinceau avant de commencer votre chef-d'œuvre.
 
@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-Le`InsertChart` la méthode insère un graphique de type spécifié (colonne dans ce cas) et de dimensions dans le document.
+ Le`InsertChart` la méthode insère un graphique de type spécifié (colonne dans ce cas) et de dimensions dans le document.
 
 ## Étape 3 : Personnalisation de la série de graphiques
 
@@ -86,7 +86,7 @@ Enfin, formatons les nombres sur l'axe Y pour les rendre plus lisibles. C'est co
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-Le`FormatCode` La propriété vous permet de définir un format personnalisé pour les nombres sur l'axe. Dans cet exemple,`#,##0`garantit que les grands nombres sont affichés avec des virgules pour les milliers.
+ Le`FormatCode` La propriété vous permet de définir un format personnalisé pour les nombres sur l'axe. Dans cet exemple,`#,##0`garantit que les grands nombres sont affichés avec des virgules pour les milliers.
 
 ## Étape 5 : enregistrement du document
 

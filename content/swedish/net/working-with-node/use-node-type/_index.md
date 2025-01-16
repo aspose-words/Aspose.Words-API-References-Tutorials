@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Steg 2: Öppna NodeType-egenskapen
 
-De`NodeType` egenskap är en grundläggande funktion i Aspose.Words. Det låter dig identifiera vilken typ av nod du har att göra med. För att komma åt den här egenskapen, använd helt enkelt följande kod:
+ De`NodeType` egenskap är en grundläggande funktion i Aspose.Words. Det låter dig identifiera vilken typ av nod du har att göra med. För att komma åt den här egenskapen, använd helt enkelt följande kod:
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -63,7 +63,7 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 ###  Vad är`NodeType` property in Aspose.Words?
 
-De`NodeType` egenskap identifierar typen av nod i ett dokument, till exempel dokument, avsnitt, stycke, körning eller tabell.
+ De`NodeType` egenskap identifierar typen av nod i ett dokument, till exempel dokument, avsnitt, stycke, körning eller tabell.
 
 ###  Hur kontrollerar jag`NodeType` of a node?
 

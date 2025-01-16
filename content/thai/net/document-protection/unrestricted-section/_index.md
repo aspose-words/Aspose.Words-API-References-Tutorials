@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-การ`Document` คลาสจะเริ่มต้นเอกสารใหม่และ`DocumentBuilder` ช่วยให้เราเพิ่มเนื้อหาลงในเอกสารได้อย่างง่ายดาย
+ การ`Document` คลาสจะเริ่มต้นเอกสารใหม่และ`DocumentBuilder` ช่วยให้เราเพิ่มเนื้อหาลงในเอกสารได้อย่างง่ายดาย
 
 ## ขั้นตอนที่ 2: แทรกส่วนต่างๆ
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-การ`InsertBreak` วิธีการแทรกตัวแบ่งส่วนต่อเนื่อง ช่วยให้เราตั้งค่าแต่ละส่วนได้ต่างกัน
+ การ`InsertBreak` วิธีการแทรกตัวแบ่งส่วนต่อเนื่อง ช่วยให้เราตั้งค่าแต่ละส่วนได้ต่างกัน
 
 ## ขั้นตอนที่ 3: ปกป้องเอกสาร
 

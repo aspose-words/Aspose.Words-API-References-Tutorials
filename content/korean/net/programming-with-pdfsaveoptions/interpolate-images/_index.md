@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-그만큼`InterpolateImages` 속성이 설정되었습니다`true` PDF의 이미지가 보간되어 품질이 향상되도록 합니다.
+ 그만큼`InterpolateImages` 속성이 설정되었습니다`true` PDF의 이미지가 보간되어 품질이 향상되도록 합니다.
 
 ## 4단계: 문서를 PDF로 저장
 

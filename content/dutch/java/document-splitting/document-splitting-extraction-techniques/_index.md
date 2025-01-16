@@ -80,7 +80,7 @@ Document doc = new Document("input.docx");
 // Een afbeeldingextractor maken
 ImageExtractor extractor = new ImageExtractor(doc);
 
-// Afbeeldingen uit het document halen
+//Afbeeldingen uit het document halen
 while (extractor.hasNext()) {
     extractor.getNextImage("output_" + extractor.getCurrentImageIndex() + ".png");
 }
@@ -115,7 +115,7 @@ Bij het werken met documenten is het essentieel om foutgevallen netjes af te han
 
 Aspose.Words voor Java biedt robuuste mogelijkheden voor het splitsen van documenten en het extraheren van inhoud. Met de stapsgewijze handleiding en broncodevoorbeelden die hier worden gegeven, bent u goed toegerust om taken voor documentmanipulatie met vertrouwen aan te pakken.
 
-U kunt de documentatie van Aspose.Words voor Java raadplegen voor meer geavanceerde functies en mogelijkheden.
+kunt de documentatie van Aspose.Words voor Java raadplegen voor meer geavanceerde functies en mogelijkheden.
 
 ## Veelgestelde vragen
 

@@ -96,7 +96,7 @@ Dataetiketter är avgörande för att göra ditt diagram informativt. Vi kommer 
 // Få tillgång till insamlingen av dataetiketter
 ChartDataLabelCollection labels = series.DataLabels;
 
-// Ställ in dataetikettalternativ
+// Ställ in alternativ för dataetikett
 labels.ShowPercentage = true;
 labels.ShowValue = true;
 labels.ShowLeaderLines = false;

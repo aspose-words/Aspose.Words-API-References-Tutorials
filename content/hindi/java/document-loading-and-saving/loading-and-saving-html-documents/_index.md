@@ -1,6 +1,6 @@
 ---
-title: Java के लिए Aspose.Words के साथ HTML दस्तावेज़ लोड करना और सहेजना
-linktitle: HTML दस्तावेज़ों को लोड करना और सहेजना
+title: HTML दस्तावेज़ लोड करना और सहेजना
+linktitle: HTML दस्तावेज़ लोड करना और सहेजना
 second_title: Aspose.Words जावा दस्तावेज़ प्रसंस्करण एपीआई
 description: Aspose.Words for Java का उपयोग करके Java में HTML दस्तावेज़ों को लोड और सहेजना सीखें। सहज दस्तावेज़ एकीकरण के लिए कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
 type: docs
@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
  अब जबकि हमने HTML को लोड कर लिया है`Document`, हम इसे Word दस्तावेज़ के रूप में सहेज सकते हैं। आइए इसे DOCX प्रारूप में सहेजें:
 
 ```java
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
  यह कोड बचाता है`Document` DOCX फ़ाइल के रूप में, जो कि Word दस्तावेज़ों के लिए एक सामान्य प्रारूप है।
@@ -68,7 +68,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 	loadOptions.setPreferredControlType(HtmlControlType.STRUCTURED_DOCUMENT_TAG);
 }
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
-doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx");
 ```
 
 ## निष्कर्ष
@@ -95,4 +95,4 @@ Aspose.Words कई तरह के दस्तावेज़ प्रार
 
 ### मैं Java के लिए Aspose.Words के लिए अधिक दस्तावेज़ और उदाहरण कहां पा सकता हूं?
 
- आप Aspose.Words for Java दस्तावेज़ीकरण वेबसाइट पर विस्तृत दस्तावेज़ीकरण, कोड उदाहरण और ट्यूटोरियल पा सकते हैं:[जावा दस्तावेज़ीकरण के लिए Aspose.Words](https://reference.aspose.com/words/java/).
+आप Aspose.Words for Java दस्तावेज़ीकरण वेबसाइट पर विस्तृत दस्तावेज़ीकरण, कोड उदाहरण और ट्यूटोरियल पा सकते हैं:[जावा दस्तावेज़ीकरण के लिए Aspose.Words](https://reference.aspose.com/words/java/).

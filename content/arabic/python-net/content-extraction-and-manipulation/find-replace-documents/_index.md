@@ -18,7 +18,7 @@ url: /ar/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 1.  تثبيت Python: تأكد من تثبيت Python على نظامك. يمكنك تنزيله من[هنا](https://www.python.org/downloads/).
 
-2. Aspose.Words for Python: يجب أن يكون لديك Aspose.Words for Python مثبتًا. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/python/).
+2.  Aspose.Words for Python: يجب أن يكون لديك Aspose.Words for Python مثبتًا. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/python/).
 
 3. إعداد المستندات: قم بإعداد مستند Word الذي تريد إجراء عمليات البحث والاستبدال عليه.
 
@@ -118,4 +118,4 @@ doc.save("path/to/save/document.docx")
 
 ### هل يمكنني استبدال النص مع متابعة التغييرات التي أجريتها؟
 
- نعم، يمكنك تتبع التغييرات باستخدام`revision` ميزة Aspose.Words تسمح لك بتتبع جميع التعديلات التي أجريتها على المستند.
+ نعم، يمكنك تتبع التغييرات باستخدام`revision`ميزة Aspose.Words تسمح لك بتتبع جميع التعديلات التي أجريتها على المستند.

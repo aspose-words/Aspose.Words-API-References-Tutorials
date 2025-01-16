@@ -54,7 +54,7 @@ A continuación, debemos configurar las opciones para guardar el documento. Aqu�
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-El`OoxmlSaveOptions`La clase nos permite especificar varias opciones para guardar archivos DOCX. Aquí, configuramos la`Password`propiedad a`"password"` Puedes reemplazar`"password"` con la contraseña que elijas. Esta contraseña será necesaria para abrir el archivo DOCX cifrado.
+ El`OoxmlSaveOptions`La clase nos permite especificar varias opciones para guardar archivos DOCX. Aquí, configuramos la`Password`propiedad a`"password"` Puedes reemplazar`"password"` con la contraseña que elijas. Esta contraseña será necesaria para abrir el archivo DOCX cifrado.
 
 ## Paso 3: Guarde el documento cifrado
 
@@ -65,7 +65,7 @@ Por último, guardaremos el documento utilizando las opciones de guardado config
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-El`Save` método de la`Document` La clase se utiliza para guardar el documento. Proporcionamos la ruta y el nombre de archivo del documento cifrado, junto con la`saveOptions` Lo configuramos anteriormente. El documento ahora se guarda como un archivo DOCX cifrado.
+ El`Save` método de la`Document` La clase se utiliza para guardar el documento. Proporcionamos la ruta y el nombre de archivo del documento cifrado, junto con la`saveOptions` Lo configuramos anteriormente. El documento ahora se guarda como un archivo DOCX cifrado.
 
 ## Conclusión
 

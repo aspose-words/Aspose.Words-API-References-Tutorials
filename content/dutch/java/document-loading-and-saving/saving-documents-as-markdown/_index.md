@@ -27,7 +27,7 @@ Laten we beginnen met het maken van een Word-document dat we later naar Markdown
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-//Een tabel met twee cellen invoegen
+// Een tabel met twee cellen invoegen
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-// Stel de uitlijning van de tabelinhoud in op automatisch (bepaald door de eerste alinea)
+//Stel de uitlijning van de tabelinhoud in op automatisch (bepaald door de eerste alinea)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## Stap 3: Afbeeldingen verwerken
 
-Om afbeeldingen in uw Markdown-document op te nemen, moet u de map opgeven waar de afbeeldingen zich bevinden. Met Aspose.Words voor Java kunt u de map met afbeeldingen in de`MarkdownSaveOptions`.
+ Om afbeeldingen in uw Markdown-document op te nemen, moet u de map opgeven waar de afbeeldingen zich bevinden. Met Aspose.Words voor Java kunt u de map met afbeeldingen in de`MarkdownSaveOptions`.
 
 Hier leest u hoe u de map met afbeeldingen instelt en het document met afbeeldingen opslaat:
 

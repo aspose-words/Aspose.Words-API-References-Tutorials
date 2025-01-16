@@ -112,7 +112,7 @@ Et voilà ! Vous avez copié avec succès le texte marqué d'un signet d'un docu
 Oui, vous pouvez parcourir plusieurs signets et utiliser la même méthode pour copier chacun d'eux.
 
 ### Que se passe-t-il si le signet n'est pas trouvé ?
-Le`Range.Bookmarks` la propriété reviendra`null`, assurez-vous donc de gérer ce cas pour éviter les exceptions.
+ Le`Range.Bookmarks` la propriété reviendra`null`, assurez-vous donc de gérer ce cas pour éviter les exceptions.
 
 ### Puis-je conserver la mise en forme du signet d’origine ?
  Absolument ! En utilisant`ImportFormatMode.KeepSourceFormatting` garantit que la mise en forme d'origine est préservée.

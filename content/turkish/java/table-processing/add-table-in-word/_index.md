@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Adım 6: Bir Tablo Oluşturun ve Satır Ekleyin
 
-Yeni bir tane oluştur`Table` nesneyi seçin ve satır ve sütun sayısını belirtin.
+ Yeni bir tane oluştur`Table` nesneyi seçin ve satır ve sütun sayısını belirtin.
 
 ```java
 Table table = new Table(doc);
@@ -52,8 +52,11 @@ table.ensureMinimum();
 for (int row = 0; row < rowCount; row++) {
     Row tableRow = new Row(doc);
     for (int col = 0; col < columnCount; col++) {
+        Paragraph paragraph = new Paragraph(doc);
+        paragraph.appendChild(new Run(doc, "Row " + (row + 1) + ", Column " + (col + 1)));
+
         Cell cell = new Cell(doc);
-        cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
+        cell.appendChild(paragraph);
         tableRow.appendChild(cell);
     }
     table.appendChild(tableRow);
@@ -70,47 +73,10 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Adım 8: Belgeyi Kaydedin
 
- Word belgesini istediğiniz konuma kaydetmek için:`save()` yöntem.
+Word belgesini istediğiniz konuma kaydetmek için:`save()` yöntem.
 
 ```java
-doc.save(""output.docx"");
-```
-
-## Adım 9: Kodu Tamamlayın
-
-İşte Java için Aspose.Words kullanarak Word'e tablo eklemeye yönelik tam kod:
-
-```java
-import com.aspose.words.*;
-
-public class AddTableInWord {
-    public static void main(String[] args) throws Exception {
-        // Adım 5: Yeni bir Word belgesi oluşturun
-        Document doc = new Document();
-
-        // Adım 6: Bir Tablo Oluşturun ve Satır Ekleyin
-        Table table = new Table(doc);
-        int rowCount = 5; // Tablodaki satır sayısı
-        int columnCount = 3; // Tablodaki sütun sayısı
-        table.ensureMinimum();
-
-        for (int row = 0; row < rowCount; row++) {
-            Row tableRow = new Row(doc);
-            for (int col = 0; col < columnCount; col++) {
-                Cell cell = new Cell(doc);
-                cell.appendChild(new Paragraph(doc, ""Row "" + (row + 1) + "", Column "" + (col + 1)));
-                tableRow.appendChild(cell);
-            }
-            table.appendChild(tableRow);
-        }
-
-        // Adım 7: Tabloyu Belgeye Ekleyin
-        doc.getFirstSection().getBody().appendChild(table);
-
-        // Adım 8: Belgeyi Kaydedin
-        doc.save(""output.docx"");
-    }
-}
+doc.save("output.docx");
 ```
 
 ## Çözüm

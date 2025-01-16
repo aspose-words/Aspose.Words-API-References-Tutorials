@@ -49,7 +49,7 @@ doc.print("printerName");
 
 ```java
 // Αποδώστε το έγγραφο σε PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Μπορείτε να αντικαταστήσετε`SaveFormat.PDF` με την επιθυμητή μορφή για απόδοση.

@@ -83,7 +83,7 @@ En daar heb je het! Je hebt de veldupdatecultuurbron in Aspose.Words voor .NET s
 ## Veelgestelde vragen
 
 ###  Wat is het doel van het instellen van de`LocaleId`?
-De`LocaleId` Hiermee worden de culturele instellingen voor de tekst opgegeven, die van invloed zijn op de manier waarop datums en andere landspecifieke gegevens worden opgemaakt.
+ De`LocaleId` Hiermee worden de culturele instellingen voor de tekst opgegeven. Deze bepalen hoe datums en andere landspecifieke gegevens worden opgemaakt.
 
 ### Kan ik een andere landinstelling dan Duits gebruiken?
  Ja, u kunt de`LocaleId`naar een geldige locale-ID. Bijvoorbeeld 1033 voor Engels (Verenigde Staten).

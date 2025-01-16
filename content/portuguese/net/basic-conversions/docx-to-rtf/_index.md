@@ -32,7 +32,7 @@ using Aspose.Words;
 using System.IO;
 ```
 
-O`Aspose.Words` namespace contém as classes principais para manipular documentos do Word, enquanto`System.IO` fornece funcionalidade para operações de arquivo.
+ O`Aspose.Words` namespace contém as classes principais para manipular documentos do Word, enquanto`System.IO` fornece funcionalidade para operações de arquivo.
 
 Vamos dividir o processo de conversão de um arquivo DOCX para o formato RTF em etapas claras e gerenciáveis. Siga estas instruções para realizar a conversão sem problemas.
 

@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-그만큼`InsertChart` 이 방법은 차트 유형, 너비, 높이를 매개변수로 사용합니다. 이 경우 너비가 432이고 높이가 252인 선형 차트를 삽입합니다.
+ 그만큼`InsertChart` 이 방법은 차트 유형, 너비, 높이를 매개변수로 사용합니다. 이 경우 너비가 432이고 높이가 252인 선형 차트를 삽입합니다.
 
 ## 3단계: 차트 시리즈에 액세스
 

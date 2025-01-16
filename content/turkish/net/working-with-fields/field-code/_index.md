@@ -42,7 +42,7 @@ Word belgesinde alan kodlarını çıkarma ve bunlarla çalışma sürecini par�
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Açıklama: Değiştir`"YOUR DOCUMENTS DIRECTORY"` belgenizin saklandığı gerçek yol ile. Bu yol, Aspose.Words'e çalışmak istediğiniz dosyayı nerede bulacağını söyler.
+ Açıklama: Değiştir`"YOUR DOCUMENTS DIRECTORY"` belgenizin saklandığı gerçek yol ile. Bu yol, Aspose.Words'e çalışmak istediğiniz dosyanın nerede bulunacağını söyler.
 
 ## Adım 2: Belgeyi Yükleyin
 

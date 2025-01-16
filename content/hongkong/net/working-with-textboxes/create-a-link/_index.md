@@ -18,7 +18,7 @@ url: /zh-hant/net/working-with-textboxes/create-a-link/
 1. Aspose.Words for .NET 函式庫：您需要最新版本的 Aspose.Words for .NET。你可以[在這裡下載](https://releases.aspose.com/words/net/).
 2. 開發環境：編寫和測試程式碼需要 .NET 開發環境（例如 Visual Studio）。
 3. 基本 C# 知識：對 C# 的基本了解將幫助您理解程式碼範例。
-4. 範例 Word 文件：雖然對於本教學課程來說並不是絕對必要的，但使用範例 Word 文件來測試連結的文字方塊可能會有所幫助。
+4. 範例 Word 文件：雖然對於本教學課程來說並不是絕對必要的，但是使用範例 Word 文件來測試連結的文字方塊可能會有所幫助。
 
 ## 導入命名空間
 

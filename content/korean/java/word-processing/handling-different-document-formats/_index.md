@@ -37,13 +37,6 @@ Aspose.Words for Java의 주요 장점 중 하나는 다양한 문서 형식을 
 Document doc = new Document("sample.docx");
 ```
 
-### PDF 문서 로딩
-
-```java
-// PDF 문서 로드
-Document doc = new Document("sample.pdf");
-```
-
 ## 문서 수정 및 저장
 
 문서를 로드한 후에는 간단한 텍스트 바꾸기부터 복잡한 서식 변경까지 다양한 작업을 수행할 수 있습니다.
@@ -71,7 +64,7 @@ Aspose.Words for Java는 다양한 문서 형식 간의 원활한 변환을 허�
 Document doc = new Document("sample.docx");
 
 // PDF로 저장
-doc.save("sample.pdf", SaveFormat.PDF);
+doc.save("sample.pdf");
 ```
 
 ## 이미지 및 테이블 처리
@@ -81,7 +74,7 @@ doc.save("sample.pdf", SaveFormat.PDF);
 ### 문서에 이미지 추가
 
 ```java
-// 문서 로드
+//문서 로드
 Document doc = new Document("document.docx");
 
 // 이미지 삽입

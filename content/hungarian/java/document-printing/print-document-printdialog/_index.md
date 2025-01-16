@@ -2,7 +2,7 @@
 title: Dokumentum nyomtatása a PrintDialog segítségével
 linktitle: Dokumentum nyomtatása a PrintDialog segítségével
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan nyomtathat dokumentumokat az Aspose.Words for Java használatával a PrintDialog segítségével. Ebben a lépésenkénti útmutatóban testreszabhatja a beállításokat, nyomtathat konkrét oldalakat és még sok mást.
+description: Ismerje meg, hogyan nyomtathat dokumentumokat az Aspose.Words for Java használatával a PrintDialog segítségével. Ebben a lépésenkénti útmutatóban testreszabhatja a beállításokat, nyomtathat konkrét oldalakat stb.
 type: docs
 weight: 14
 url: /hu/java/document-printing/print-document-printdialog/
@@ -22,7 +22,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a következő e
 
 ## A Java projekt beállítása
 
-A kezdéshez hozzon létre egy új Java-projektet a kívánt integrált fejlesztési környezetben (IDE). Győződjön meg arról, hogy a JDK telepítve van.
+kezdéshez hozzon létre egy új Java-projektet a kívánt integrált fejlesztési környezetben (IDE). Győződjön meg arról, hogy a JDK telepítve van.
 
 ## Az Aspose.Words for Java hozzáadása projektjéhez
 

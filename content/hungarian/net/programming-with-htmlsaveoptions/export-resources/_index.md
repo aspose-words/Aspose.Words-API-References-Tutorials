@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 Ezek a névterek kulcsfontosságúak az Aspose.Words osztályok és metódusok eléréséhez, amelyeket oktatóanyagunkban fogunk használni.
 
-Bontsuk fel az erőforrások exportálásának folyamatát, amikor egy Word-dokumentumot HTML formátumban mentünk. Lépésről lépésre tesszük, így könnyen követhető.
+Bontsuk le az erőforrások exportálásának folyamatát, amikor egy Word-dokumentumot HTML-ként mentünk. Lépésről lépésre tesszük, így könnyen követhető.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
 

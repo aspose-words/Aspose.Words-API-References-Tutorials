@@ -15,7 +15,7 @@ Ahoj, kolegové kodéři! Pokud se ponoříte do světa Aspose.Words pro .NET, j
 
 Než si ušpiníme ruce, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu. Pokud ne, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2.  Licenční soubor: Potřebujete platný licenční soubor. Pokud žádný nemáte, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro testovací účely.
 3. Základní znalost C#: Předpokládá se základní znalost programování v C#.
 

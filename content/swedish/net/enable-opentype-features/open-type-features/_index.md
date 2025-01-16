@@ -56,7 +56,7 @@ Skapa en strängvariabel för att hålla sökvägen till din dokumentkatalog. De
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Ersätta`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen där ditt dokument finns.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument finns.
 
 ### Laddar dokumentet
 

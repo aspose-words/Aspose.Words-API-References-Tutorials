@@ -66,19 +66,17 @@ comment = doc.comments[0]
 comment.text = "Updated insight: " + comment.text
 
 # Resolve a comment
-comment.resolved = True
-```
+comments = doc.get_child_nodes(aw.NodeType.COMMENT, True)
 
-## Antworten und Unterhaltungen handhaben
+parent_comment = comments[0].as_comment()
+for child in parent_comment.replies:
+	child_comment = child.as_comment()
+	# Get comment parent and status.
+	print(child_comment.ancestor.id)
+	print(child_comment.done)
 
-Kommentare können Teil von Unterhaltungen sein, und Antworten verleihen Diskussionen mehr Tiefe. Mit Aspose.Words für Python können Sie Kommentarantworten verwalten:
-
-```python
-# Add a reply to a comment
-reply = aw.Comment(doc, "Alice", "I agree with John.")
-reply.parent_comment = comment
-reply.date_time = aw.DateTime.now()
-comment.replies.add(reply)
+	# And update comment Done mark.
+	child_comment.done = True
 ```
 
 ## Formatieren und Gestalten von Kommentaren
@@ -125,7 +123,7 @@ doc.import_comments("comments.xml")
 
 Aspose.Words für Python vereinfacht die Arbeit mit Kommentaren in Word-Dokumenten und bietet eine umfassende API zum Hinzufügen, Abrufen, Ändern und Verwalten von Kommentaren. Durch die Integration von Aspose.Words für Python in Ihre Projekte können Sie die Zusammenarbeit verbessern und den Überprüfungsprozess in Ihren Dokumenten optimieren.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Was ist Aspose.Words für Python?
 

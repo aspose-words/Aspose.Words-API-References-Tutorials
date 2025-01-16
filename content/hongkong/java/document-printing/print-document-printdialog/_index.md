@@ -11,7 +11,7 @@ url: /zh-hant/java/document-printing/print-document-printdialog/
 
 ## 介紹
 
-列印文件是許多 Java 應用程式中的常見要求。 Aspose.Words for Java 透過提供方便的文件操作和列印 API 簡化了這項任務。
+列印文件是許多 Java 應用程式中的常見要求。 Aspose.Words for Java 透過提供用於文件操作和列印的便利 API 簡化了此任務。
 
 ## 先決條件
 

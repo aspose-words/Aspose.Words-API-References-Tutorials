@@ -23,7 +23,7 @@ Alanlar, verileri dinamik olarak görüntüleyen bir belgedeki yer tutuculardır
  Bir alan eklemek için şunu kullanabilirsiniz:`FieldBuilder` sınıf. Örneğin, geçerli bir tarih alanı eklemek için:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Alanlarla Belge Üretiminin Otomatikleştirilmesi
-
-Alanlar, otomatik belge üretimi için olmazsa olmazdır. Alanları harici kaynaklardan gelen verilerle doldurabilirsiniz:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Alanları Veri Kaynaklarıyla Entegre Etme

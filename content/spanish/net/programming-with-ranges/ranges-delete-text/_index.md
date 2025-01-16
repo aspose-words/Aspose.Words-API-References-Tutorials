@@ -61,7 +61,7 @@ Una vez cargado el documento, podemos proceder a eliminar texto de un rango espe
 2.  Eliminar el rango: utilice el`Range.Delete` Método para eliminar todo el texto dentro de esta sección.
 
 ```csharp
-//Eliminar el texto de la primera sección del documento
+// Eliminar el texto de la primera sección del documento
 doc.Sections[0].Range.Delete();
 ```
 
@@ -89,7 +89,7 @@ Aspose.Words para .NET es una biblioteca de clases para procesar documentos de W
 
 ### ¿Puedo eliminar texto de un párrafo específico en lugar de una sección?
 
-Sí, puedes eliminar texto de un párrafo específico accediendo al párrafo deseado y usando el`Range.Delete` método.
+ Sí, puedes eliminar texto de un párrafo específico accediendo al párrafo deseado y usando el`Range.Delete` método.
 
 ### ¿Es posible eliminar texto condicionalmente?
 

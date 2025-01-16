@@ -71,7 +71,7 @@ public void setEndnoteOptions() throws Exception {
 
 ## 6. Anpassa slutnotinställningar
 
-Du kan ytterligare anpassa slutnoteinställningarna för att uppfylla dina dokumentkrav.
+Du kan ytterligare anpassa slutnotinställningarna för att uppfylla dina dokumentkrav.
 
 ## Komplett källkod
 ```java

@@ -14,7 +14,7 @@ url: /th/python-net/document-combining-and-comparison/apply-styles-themes-docume
 
 ## การจัดเตรียมสภาพแวดล้อม
 
- ก่อนจะเริ่มลงมือออกแบบสไตล์ เรามาตั้งค่าสภาพแวดล้อมการพัฒนากันก่อน ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Aspose.Words for Python แล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/python/).
+ก่อนจะเริ่มลงมือออกแบบสไตล์ เรามาตั้งค่าสภาพแวดล้อมการพัฒนากันก่อน ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Aspose.Words for Python แล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/python/).
 
 ## การโหลดและการบันทึกเอกสาร
 
@@ -51,30 +51,8 @@ font.style_identifier = StyleIdentifier.STRONG
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## การปรับแต่งรูปแบบหัวเรื่อง
-
-หัวเรื่องช่วยให้เอกสารมีโครงสร้าง ปรับแต่งรูปแบบหัวเรื่องเพื่อให้มีลำดับชั้นและอ่านง่ายขึ้น
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## การใช้ธีมเพื่อให้ดูเป็นอันหนึ่งอันเดียวกัน
-
-ธีมต่างๆ มอบรูปลักษณ์ที่สม่ำเสมอ ใช้ธีมกับเอกสารของคุณเพื่อให้ดูเป็นมืออาชีพ
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## การปรับเปลี่ยนสีธีมและแบบอักษร
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 ปรับแต่งธีมให้เหมาะกับความต้องการของคุณโดยการปรับแต่งสีธีมและแบบอักษร
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## การสร้างสไตล์ของคุณเอง
-
-สร้างรูปแบบที่กำหนดเองสำหรับองค์ประกอบเอกสารที่มีเอกลักษณ์เฉพาะ ช่วยให้มั่นใจว่าเอกลักษณ์แบรนด์ของคุณโดดเด่น
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## การจัดการรูปแบบตามส่วนต่างๆ ของเอกสาร
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 ใช้รูปแบบที่แตกต่างกันกับส่วนหัว ส่วนท้าย และเนื้อหาเนื้อหาเพื่อให้ดูสวยงาม
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## การจัดการสไตล์ทั่วทั้งเอกสาร
-
-ใช้สไตล์กับเอกสารทั้งหมดได้อย่างง่ายดาย
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## การล้างรูปแบบและสไตล์
-
-ลบรูปแบบและการจัดรูปแบบได้อย่างง่ายดายเพื่อเริ่มต้นใหม่
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## ตัวอย่างเชิงปฏิบัติและกรณีการใช้งาน
-
-มาสำรวจสถานการณ์จริงที่สไตล์และธีมสามารถเปลี่ยนแปลงเอกสารได้
-
-1. การสร้างรายงานแบรนด์
-2. การออกแบบประวัติย่อที่น่าทึ่ง
-3. การจัดรูปแบบเอกสารวิชาการ
-
-## เคล็ดลับสำหรับการจัดแต่งทรงผมอย่างมีประสิทธิภาพ
-
-- รักษาสไตล์ให้สม่ำเสมอ
-- ใช้ธีมสำหรับการแปลงโฉมอย่างรวดเร็ว
-- ทดลองใช้แบบอักษรและสีที่แตกต่างกัน
 
 ## บทสรุป
 
@@ -167,4 +109,4 @@ doc.range.clear_formatting()
 
 ### ฉันสามารถล้างการจัดรูปแบบจากเอกสารของฉันได้หรือไม่
 
- ใช่ คุณสามารถลบการจัดรูปแบบและสไตล์ได้อย่างง่ายดายโดยใช้`clear_formatting()` วิธีการที่ให้มาโดย Aspose.Words สำหรับ Python
+ใช่ คุณสามารถลบการจัดรูปแบบและสไตล์ได้อย่างง่ายดายโดยใช้`clear_formatting()` วิธีการที่ให้มาโดย Aspose.Words สำหรับ Python

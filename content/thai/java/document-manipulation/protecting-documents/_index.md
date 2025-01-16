@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
-การ`unprotect` วิธีการนี้จะลบการป้องกันใดๆ ที่ใช้กับเอกสาร ทำให้สามารถเข้าถึงได้โดยไม่ต้องใช้รหัสผ่าน
+ การ`unprotect` วิธีการนี้จะลบการป้องกันใดๆ ที่ใช้กับเอกสาร ทำให้สามารถเข้าถึงได้โดยไม่ต้องใช้รหัสผ่าน
 
 ## การตรวจสอบประเภทการป้องกันเอกสาร
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
-การ`getProtectionType` วิธีการส่งคืนค่าจำนวนเต็มที่แสดงถึงประเภทการป้องกันที่ใช้กับเอกสาร
+ การ`getProtectionType` วิธีการส่งคืนค่าจำนวนเต็มที่แสดงถึงประเภทการป้องกันที่ใช้กับเอกสาร
 
 
 ## บทสรุป

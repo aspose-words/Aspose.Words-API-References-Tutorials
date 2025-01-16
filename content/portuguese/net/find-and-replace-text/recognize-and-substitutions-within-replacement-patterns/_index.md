@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-O`Document` objeto é o núcleo do Aspose.Words. Ele representa o documento Word inteiro.
+ O`Document` objeto é o núcleo do Aspose.Words. Ele representa o documento Word inteiro.
 
 ## Etapa 2: Adicionar texto ao documento
 
@@ -50,7 +50,7 @@ Em seguida, vamos adicionar algum texto ao documento. Esse texto será o alvo de
 builder.Write("Jason give money to Paul.");
 ```
 
-O`DocumentBuilder` class é uma ferramenta poderosa para adicionar texto e outros elementos ao seu documento.
+ O`DocumentBuilder` class é uma ferramenta poderosa para adicionar texto e outros elementos ao seu documento.
 
 ## Etapa 3: Defina o padrão Regex
 
@@ -64,13 +64,13 @@ Regex regex = new Regex(@"([A-z]+) give money to ([A-z]+)");
 
 ## Etapa 4: Defina as opções de substituição
 
-Aspose.Words permite que você use substituições em suas substituições. Você precisa definir essas opções antes de executar a substituição.
+O Aspose.Words permite que você use substituições em suas substituições. Você precisa definir essas opções antes de executar a substituição.
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
-O`FindReplaceOptions` A classe fornece várias opções para personalizar suas operações de localização e substituição.
+ O`FindReplaceOptions` A classe fornece várias opções para personalizar suas operações de localização e substituição.
 
 ## Etapa 5: Execute a substituição
 

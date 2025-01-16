@@ -15,7 +15,7 @@ Vytváření poutavých a informativních dokumentů často zahrnuje zahrnutí g
 
 Než se ponoříte do kódu, musíte mít splněno několik předpokladů:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud jste jej ještě nenainstalovali, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud jste jej ještě nenainstalovali, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Měli byste mít nastavené vývojové prostředí .NET. Visual Studio je vysoce doporučeno.
 - Základní znalost C#: Znalost programování v C# je nezbytná, protože tento tutoriál zahrnuje psaní a porozumění kódu C#.
 -  Dočasná licence: Chcete-li používat Aspose.Words bez jakýchkoli omezení, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/).

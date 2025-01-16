@@ -40,8 +40,6 @@ Tìm hiểu cách sử dụng các tính năng bình luận trong Tài liệu Wo
 Tìm hiểu cách xử lý các trường và dữ liệu trong tài liệu Word bằng Aspose.Words cho Python. Hướng dẫn từng bước với các ví dụ mã cho nội dung động, tự động hóa và nhiều hơn nữa. 
 ### [Hiểu về Phông chữ và Kiểu chữ trong Tài liệu Word](./document-fonts/)
 Khám phá thế giới phông chữ và kiểu chữ trong tài liệu Word. Tìm hiểu cách tăng khả năng đọc và hấp dẫn trực quan bằng Aspose.Words for Python. Hướng dẫn toàn diện với các ví dụ từng bước.
-### [Khám phá chú thích cuối trang và chú thích cuối văn bản trong tài liệu Word](./document-footnotes-endnotes/)
-Khám phá cách sử dụng chú thích và chú thích cuối trang hiệu quả trong tài liệu Word bằng Aspose.Words for Python. Tìm hiểu cách thêm, tùy chỉnh và quản lý các thành phần này theo chương trình. 
 ### [Làm chủ các trường biểu mẫu và thu thập dữ liệu trong tài liệu Word](./document-form-fields/)
 Nắm vững nghệ thuật tạo và quản lý các trường biểu mẫu trong tài liệu Word với Aspose.Words cho Python. Học cách thu thập dữ liệu hiệu quả và tăng cường sự tương tác của người dùng. 
 ### [Thao tác Header và Footer trong Tài liệu Word](./document-headers-footers/)
@@ -52,8 +50,6 @@ Tìm hiểu cách quản lý ngắt dòng và luồng văn bản trong tài li�
 Tìm hiểu cách tạo và quản lý danh sách trong tài liệu Word bằng Aspose.Words Python API. Hướng dẫn từng bước với mã nguồn để định dạng danh sách, tùy chỉnh, lồng nhau và nhiều hơn nữa. 
 ### [Sử dụng định dạng Markdown trong tài liệu Word](./document-markdown/)
 Tìm hiểu cách tích hợp định dạng Markdown vào tài liệu Word bằng Aspose.Words cho Python. Hướng dẫn từng bước với các ví dụ mã để tạo nội dung động và hấp dẫn về mặt hình ảnh. 
-### [Hiểu và điều hướng các nút tài liệu](./document-nodes/)
-Học cách thao tác tài liệu Word bằng Aspose.Words for Python. Hướng dẫn từng bước này bao gồm tải, định dạng, bảng, hình ảnh và nhiều hơn nữa. Nâng cao kỹ năng xử lý tài liệu của bạn ngay hôm nay!
 ### [Nhúng các đối tượng OLE và điều khiển ActiveX vào tài liệu Word](./document-ole-objects-active-x/)
  Tìm hiểu cách nhúng các đối tượng OLE và điều khiển ActiveX vào tài liệu Word bằng Aspose.Words for Python. Tạo tài liệu tương tác và động một cách liền mạch.
 ### [Định dạng đoạn văn và văn bản trong tài liệu Word](./document-paragraphs/)
@@ -65,4 +61,4 @@ Tìm hiểu cách quản lý các phần và bố cục tài liệu bằng Aspos
 ### [Cải thiện nội dung trực quan bằng hộp văn bản trong tài liệu Word](./document-textboxes/)
 Cải thiện hình ảnh tài liệu bằng Aspose.Words Python! Tìm hiểu từng bước cách tạo và tùy chỉnh hộp văn bản trong tài liệu Word. Nâng cao bố cục nội dung, định dạng và kiểu dáng cho tài liệu hấp dẫn.
 ### [Mở khóa Tự động hóa Nâng cao với Macro VBA trong Tài liệu Word](./document-vba-macros/)
-Mở khóa tính năng tự động hóa nâng cao trong tài liệu Word bằng Aspose.Words Python API và macro VBA. Tìm hiểu từng bước với mã nguồn và Câu hỏi thường gặp. Nâng cao năng suất ngay bây giờ. Truy cập tại[Liên kết].
+ Mở khóa tính năng tự động hóa nâng cao trong tài liệu Word bằng Aspose.Words Python API và macro VBA. Tìm hiểu từng bước với mã nguồn và Câu hỏi thường gặp. Nâng cao năng suất ngay bây giờ. Truy cập tại[Liên kết].

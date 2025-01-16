@@ -89,4 +89,4 @@ Die Verwendung einer einzigen CSS-Datei vereinfacht die Verwaltung und Wartung I
 Aspose.Words für .NET unterstützt verschiedene Formate, darunter PDF, TXT und Bildformate wie JPEG und PNG.
 
 ### Wo finde ich weitere Ressourcen zu Aspose.Words für .NET?
- Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/)für umfassende Anleitungen und API-Referenzen.
+ Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für umfassende Anleitungen und API-Referenzen.

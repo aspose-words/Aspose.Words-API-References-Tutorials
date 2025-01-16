@@ -44,18 +44,6 @@ for paragraph in doc.get_child_nodes(doc.is_paragraph, True):
     text += paragraph.get_text()
 ```
 
-## Trích xuất hình ảnh
-
-Để trích xuất hình ảnh từ tài liệu:
-
-```python
-for shape in doc.get_child_nodes(doc.is_shape, True):
-    if shape.has_image:
-        image = shape.image_data.to_bytes()
-        with open("image.png", "wb") as f:
-            f.write(image)
-```
-
 ## Quản lý định dạng
 
 Giữ nguyên định dạng trong quá trình trích xuất:

@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // X 軸を日付ではなくカテゴリに変更します。
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Y 軸の表示単位 (百) で測定されます。
+xAxis.setCrossesAt(3.0); // 軸の表示単位 (百) で測定されます。
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);

@@ -2,7 +2,7 @@
 title: 効率化のためのドキュメントオプションと設定の微調整
 linktitle: 効率化のためのドキュメントオプションと設定の微調整
 second_title: Aspose.Words Python ドキュメント管理 API
-description: Aspose.Words for Python を使用して Word 文書を効率的に操作する方法を学びます。ソース コードを使用したステップ バイ ステップ ガイド。
+description: Aspose.Words for Python を使用して Word 文書を効率的に操作する方法を学びます。ソース コード付きのステップ バイ ステップ ガイド。
 type: docs
 weight: 11
 url: /ja/python-net/document-options-and-settings/manage-document-options-settings/

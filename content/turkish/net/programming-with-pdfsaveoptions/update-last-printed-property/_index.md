@@ -80,7 +80,7 @@ Son yazdırılan özelliğin güncellenmesi, özellikle belge yazdırma işlemin
 Evet, Aspose.Words for .NET yazar, başlık, konu ve daha fazlası gibi çeşitli belge özelliklerini güncellemenize olanak tanır.
 
 ### Aspose.Words for .NET ücretsiz mi?
-Aspose.Words for .NET, indirebileceğiniz ücretsiz bir deneme sürümü sunuyor[Burada](https://releases.aspose.com/)Uzun süreli kullanım için lisans satın almanız gerekecektir.
+ Aspose.Words for .NET, indirebileceğiniz ücretsiz bir deneme sürümü sunuyor[Burada](https://releases.aspose.com/)Uzun süreli kullanım için lisans satın almanız gerekecektir.
 
 ### Aspose.Words for .NET hakkında daha fazla dokümanı nerede bulabilirim?
-Ayrıntılı belgeleri Aspose.Words for .NET'te bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+ Ayrıntılı belgeleri Aspose.Words for .NET'te bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

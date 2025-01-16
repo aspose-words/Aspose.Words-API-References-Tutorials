@@ -56,7 +56,7 @@ Agora vamos comparar os documentos usando o método Compare da classe Document. 
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-O`Compare` método compara o documento A com o documento B e salva as alterações no documento A. Você pode especificar o nome do autor e a data da comparação para referência.
+ O`Compare` método compara o documento A com o documento B e salva as alterações no documento A. Você pode especificar o nome do autor e a data da comparação para referência.
 
 ## Conclusão
 

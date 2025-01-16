@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <összefoglaló>
-/// Lekéri egy oldaltartomány dokumentumát.
+//Lekéri egy oldaltartomány dokumentumát.
 /// </summary>
-//<param name="startIndex">
+/// <param name="startIndex">
 /// A kezdőoldal 1 alapú indexe.
 /// </param>
 /// <param name="endIndex">

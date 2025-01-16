@@ -80,7 +80,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 
 ## 常見問題解答
 
-### 我可以為文件中的多個表格新增標題和說明嗎？
+### 我可以為文件中的多個表格新增標題和描述嗎？
 是的，您可以對要更新的每個表重複此過程。
 
 ### 表格標題和描述有哪些實際用途？

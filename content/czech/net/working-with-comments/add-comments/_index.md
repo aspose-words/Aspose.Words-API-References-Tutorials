@@ -100,7 +100,7 @@ Aspose.Words for .NET je výkonné rozhraní API, které umožňuje vývojářů
 
 ### Mohu přidat více komentářů k jednomu dokumentu?
 
-Ano, k jednomu dokumentu můžete přidat více komentářů opakováním procesu vytváření a přidávání komentářů k různým odstavcům nebo textovým úsekům.
+Ano, k jednomu dokumentu můžete přidat více komentářů opakováním procesu vytváření a přidávání komentářů do různých odstavců nebo textových úseků.
 
 ### Jak mohu upravit vzhled komentářů?
 

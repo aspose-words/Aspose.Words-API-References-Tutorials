@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Erläuterung:
-Der`DocumentBuilder` ist ein praktisches Tool, das Methoden zum Navigieren und Ändern des Dokuments bereitstellt. Hier verknüpfen wir es mit unserem Zieldokument.
+ Der`DocumentBuilder` ist ein praktisches Tool, das Methoden zum Navigieren und Ändern des Dokuments bereitstellt. Hier verknüpfen wir es mit unserem Zieldokument.
 
 ## Schritt 3: Zum Dokumentende wechseln und einen Seitenumbruch einfügen
 

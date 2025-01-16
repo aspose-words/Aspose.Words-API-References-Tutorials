@@ -9,7 +9,7 @@ url: /it/net/document-formatting/asian-typography-line-break-group/
 ---
 ## Introduzione
 
-Ti sei mai chiesto come mettere a punto la tipografia dei tuoi documenti Word alla perfezione? Soprattutto quando si ha a che fare con le lingue asiatiche, le sfumature delle interruzioni di riga e della formattazione possono essere piuttosto complicate. Ma non preoccuparti, ci pensiamo noi! In questa guida completa, ci immergiamo in come puoi controllare le interruzioni di riga della tipografia asiatica nei documenti Word usando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o alle prime armi, questo tutorial passo dopo passo ti guiderà attraverso tutto ciò che devi sapere. Pronto a rendere impeccabili i tuoi documenti? Cominciamo!
+Ti sei mai chiesto come perfezionare la tipografia dei tuoi documenti Word alla perfezione? Soprattutto quando si ha a che fare con le lingue asiatiche, le sfumature delle interruzioni di riga e della formattazione possono essere piuttosto complicate. Ma non preoccuparti, ci pensiamo noi! In questa guida completa, ci immergiamo in come puoi controllare le interruzioni di riga della tipografia asiatica nei documenti Word usando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o alle prime armi, questo tutorial passo dopo passo ti guiderà attraverso tutto ciò che devi sapere. Pronto a rendere impeccabili i tuoi documenti? Cominciamo!
 
 ## Prerequisiti
 

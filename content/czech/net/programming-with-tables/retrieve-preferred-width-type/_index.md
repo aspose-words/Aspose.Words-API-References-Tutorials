@@ -63,7 +63,7 @@ Tento řádek načte první tabulku z dokumentu. Pokud váš dokument obsahuje v
 
 ## Krok 4: Povolte pro tabulku Automatické přizpůsobení
 
-Aby se zajistilo, že tabulka automaticky upraví sloupce, musíme povolit vlastnost Přizpůsobit.
+Aby se zajistilo, že tabulka automaticky upraví své sloupce, musíme povolit vlastnost Přizpůsobit.
 
 ```csharp
 table.AllowAutoFit = true;
@@ -110,7 +110,7 @@ Ano, můžete procházet každou buňku v tabulce a jednotlivě načíst jejich 
 
 ### Je možné nastavit preferovaný typ šířky programově?
 
- Absolutně! Upřednostňovaný typ šířky a hodnotu můžete nastavit pomocí`PreferredWidth` vlastnictví`CellFormat` třída.
+ Absolutně! Upřednostňovaný typ šířky a hodnotu můžete nastavit pomocí`PreferredWidth` vlastnictvím`CellFormat` třída.
 
 ### Mohu tuto metodu použít pro tabulky v jiných dokumentech než Word?
 

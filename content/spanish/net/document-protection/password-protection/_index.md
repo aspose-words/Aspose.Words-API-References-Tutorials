@@ -18,7 +18,7 @@ Antes de profundizar en los detalles de la protección con contraseña de sus do
 1.  Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words para .NET. Puede[Descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro entorno de desarrollo de C#.
 3. Conocimientos básicos de C#: una comprensión fundamental de la programación en C#.
-4. Licencia Aspose: Obtenga una licencia de[aquí](https://purchase.aspose.com/buy) o utilizar un[licencia temporal](https://purchase.aspose.com/temporary-license/) para evaluación.
+4.  Licencia Aspose: Obtenga una licencia de[aquí](https://purchase.aspose.com/buy) o utilizar un[licencia temporal](https://purchase.aspose.com/temporary-license/) para evaluación.
 
 ## Importar espacios de nombres
 
@@ -64,7 +64,7 @@ Aquí es donde ocurre la magia. Aplicaremos protección con contraseña a nuestr
 
 ### Elija el tipo de protección
 
- Aspose.Words ofrece diferentes tipos de protección, como`NoProtection`, `ReadOnly`, `AllowOnlyComments` , y`AllowOnlyFormFields` Para este ejemplo, utilizaremos`NoProtection` pero con una contraseña, lo que esencialmente significa que el documento es editable pero requiere una contraseña para eliminar la protección.
+ Aspose.Words ofrece diferentes tipos de protección, como`NoProtection`, `ReadOnly`, `AllowOnlyComments` , y`AllowOnlyFormFields`Para este ejemplo, utilizaremos`NoProtection` pero con una contraseña, lo que esencialmente significa que el documento es editable pero requiere una contraseña para eliminar la protección.
 
 ### Aplicar protección
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### ¿Puedo utilizar diferentes tipos de protección con Aspose.Words?
 
- Sí, Aspose.Words admite varios tipos de protección, incluidos`ReadOnly`, `AllowOnlyComments` , y`AllowOnlyFormFields`.
+Sí, Aspose.Words admite varios tipos de protección, incluidos`ReadOnly`, `AllowOnlyComments` , y`AllowOnlyFormFields`.
 
 ### ¿Cómo puedo eliminar la protección con contraseña de un documento?
 
@@ -110,4 +110,4 @@ Sí, Aspose.Words es compatible con .NET Core, .NET Framework y otras plataforma
 
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Words?
 
-Puede encontrar más documentación en el[Página de documentación de Aspose.Words](https://reference.aspose.com/words/net/).
+ Puede encontrar más documentación en el[Página de documentación de Aspose.Words](https://reference.aspose.com/words/net/).

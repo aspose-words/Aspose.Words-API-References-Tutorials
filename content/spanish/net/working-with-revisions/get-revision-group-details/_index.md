@@ -106,4 +106,4 @@ Es una potente biblioteca .NET para crear, editar, convertir e imprimir document
  Sí, Aspose.Words para .NET requiere una licencia para tener todas las funciones. Puedes comprar una[aquí](https://purchase.aspose.com/buy) o obtener una licencia temporal[aquí](https://purchase.aspose.com/temporary-license/).
 
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Words para .NET?
-La documentación detallada está disponible[aquí](https://reference.aspose.com/words/net/).
+ La documentación detallada está disponible[aquí](https://reference.aspose.com/words/net/).

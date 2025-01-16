@@ -40,20 +40,16 @@ url: /zh/python-net/document-structure-and-content-manipulation/
 了解如何使用 Aspose.Words for Python 处理 Word 文档中的字段和数据。包含动态内容、自动化等代码示例的分步指南。 
 ### [了解 Word 文档中的字体和文本样式](./document-fonts/)
 探索 Word 文档中的字体和文本样式世界。了解如何使用 Aspose.Words for Python 增强可读性和视觉吸引力。包含分步示例的综合指南。
-### [探索 Word 文档中的脚注和尾注](./document-footnotes-endnotes/)
-探索如何使用 Aspose.Words for Python 在 Word 文档中有效使用脚注和尾注。学习以编程方式添加、自定义和管理这些元素。 
 ### [掌握 Word 文档中的表单字段和数据捕获](./document-form-fields/)
 掌握使用 Aspose.Words for Python 在 Word 文档中创建和管理表单字段的技巧。学习高效捕获数据并增强用户参与度。 
 ### [操作 Word 文档中的页眉和页脚](./document-headers-footers/)
 学习使用 Aspose.Words for Python 操作 Word 文档中的页眉和页脚。分步指南，包含自定义、添加、删除等源代码。立即增强您的文档格式！
 ### [管理 Word 文档中的连字和文本流](./document-hyphenation/)
-了解如何使用 Aspose.Words for Python 管理 Word 文档中的连字和文本流。使用分步示例和源代码创建精美、易读的文档。 
+了解如何使用 Aspose.Words for Python 管理 Word 文档中的连字符和文本流。使用分步示例和源代码创建精美、易读的文档。 
 ### [在 Word 文档中创建和管理列表](./document-lists/)
 了解如何使用 Aspose.Words Python API 在 Word 文档中创建和管理列表。分步指南，包含列表格式化、自定义、嵌套等的源代码。 
 ### [在 Word 文档中使用 Markdown 格式](./document-markdown/)
 了解如何使用 Aspose.Words for Python 将 Markdown 格式集成到 Word 文档中。分步指南，包含创建动态且具有视觉吸引力的内容的代码示例。 
-### [理解和导航文档节点](./document-nodes/)
-学习使用 Aspose.Words for Python 处理 Word 文档。本分步指南涵盖加载、格式化、表格、图像等。立即提升您的文档处理技能！
 ### [在 Word 文档中嵌入 OLE 对象和 ActiveX 控件](./document-ole-objects-active-x/)
  了解如何使用 Aspose.Words for Python 在 Word 文档中嵌入 OLE 对象和 ActiveX 控件。无缝创建交互式动态文档。
 ### [在 Word 文档中格式化段落和文本](./document-paragraphs/)

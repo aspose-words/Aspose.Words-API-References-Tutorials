@@ -25,7 +25,7 @@ url: /zh/net/working-with-fields/get-mail-merge-field-names/
 
 ## 导入命名空间
 
-首先，您需要在 C# 代码中导入必要的命名空间。这样您就可以访问 Aspose.Words 功能。以下是如何添加它们：
+首先，您需要在 C# 代码中导入必要的命名空间。这样您就可以访问 Aspose.Words 功能。以下是如何包含它们：
 
 ```csharp
 using Aspose.Words;

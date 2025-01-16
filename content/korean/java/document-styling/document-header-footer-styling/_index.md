@@ -87,7 +87,7 @@ header.appendChild(field);
 
 ### 특정 섹션에서 머리글이나 바닥글을 제거하려면 어떻게 해야 하나요?
 
-특정 섹션에서 머리글이나 바닥글을 제거하려면 다음을 수행하세요.`HeaderFooter` 객체와 그 내용을 null로 설정합니다. 예를 들어:
+ 특정 섹션에서 머리글이나 바닥글을 제거하려면 다음을 수행하세요.`HeaderFooter` 객체와 그 내용을 null로 설정합니다. 예를 들어:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### 문서 제목 등의 사용자 정의 필드를 머리글이나 바닥글에 추가할 수 있나요?
 
-네, 헤더나 푸터에 사용자 정의 필드를 추가할 수 있습니다.`Run` 요소를 헤더 또는 푸터 콘텐츠에 삽입하여 원하는 텍스트를 제공합니다. 필요에 따라 서식을 사용자 정의합니다.
+ 네, 헤더나 푸터에 사용자 정의 필드를 추가할 수 있습니다.`Run` 요소를 헤더 또는 푸터 콘텐츠에 삽입하여 원하는 텍스트를 제공합니다. 필요에 따라 서식을 사용자 정의합니다.
 
 ### Aspose.Words for Java는 다양한 문서 형식과 호환됩니까?
 

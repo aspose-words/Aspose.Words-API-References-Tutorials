@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Big document.docx");
 ```
 
-这里，我们从指定目录加载了一个名为“Big document.docx”的文档。请确保替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档存储的实际路径。
+这里，我们从指定目录加载了一个名为“Big document.docx”的文档。请确保替换`"YOUR DOCUMENT DIRECTORY"`使用存储文档的实际路径。
 
 ## 步骤 2：循环遍历各个部分
 

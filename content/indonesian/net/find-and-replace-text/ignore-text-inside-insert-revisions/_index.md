@@ -37,7 +37,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Mulai melacak revisi
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted"); //Sisipkan teks dengan revisi pelacakan
+builder.Writeln("Inserted"); // Sisipkan teks dengan revisi pelacakan
 doc.StopTrackRevisions();
 ```
 

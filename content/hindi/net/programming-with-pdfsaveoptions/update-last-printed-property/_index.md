@@ -80,7 +80,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 हां, .NET के लिए Aspose.Words आपको विभिन्न दस्तावेज़ गुणों को अपडेट करने की अनुमति देता है, जैसे लेखक, शीर्षक, विषय, और बहुत कुछ।
 
 ### क्या Aspose.Words for .NET निःशुल्क है?
-Aspose.Words for .NET एक निःशुल्क परीक्षण प्रदान करता है जिसे आप डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/)विस्तारित उपयोग के लिए, आपको लाइसेंस खरीदना होगा।
+ Aspose.Words for .NET एक निःशुल्क परीक्षण प्रदान करता है जिसे आप डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/)विस्तारित उपयोग के लिए, आपको लाइसेंस खरीदना होगा।
 
 ### मैं .NET के लिए Aspose.Words पर अधिक दस्तावेज़ कहां पा सकता हूं?
-आप .NET के लिए Aspose.Words पर विस्तृत दस्तावेज़ पा सकते हैं[यहाँ](https://reference.aspose.com/words/net/).
+ आप .NET के लिए Aspose.Words पर विस्तृत दस्तावेज़ पा सकते हैं[यहाँ](https://reference.aspose.com/words/net/).

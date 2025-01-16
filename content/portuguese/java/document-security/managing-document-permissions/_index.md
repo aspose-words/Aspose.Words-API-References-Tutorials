@@ -16,7 +16,7 @@ No mundo digital de hoje, o gerenciamento de documentos é um aspecto crítico d
 
 Antes de mergulharmos no gerenciamento de permissões de documentos, vamos começar configurando o Aspose.Words para Java. Siga estas etapas para começar:
 
-1.  Baixe Aspose.Words para Java: Visite[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) para baixar a versão mais recente do Aspose.Words para Java.
+1.  Baixe Aspose.Words para Java: Visite[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)para baixar a versão mais recente do Aspose.Words para Java.
 
 2. Instalar Aspose.Words para Java: Depois de baixar a biblioteca, siga as instruções de instalação para configurá-la no seu ambiente de desenvolvimento Java.
 
@@ -52,21 +52,12 @@ Aqui está um exemplo de trecho de código Java para definir permissões de docu
 // Carregue o documento
 Document doc = new Document("sample.docx");
 
-// Definir controle de acesso
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Aplicar proteção de documento
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Salvar o documento
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Perguntas Frequentes (FAQs)
+## Perguntas frequentes
 
-## Como posso remover a proteção do documento?
+### Como posso remover a proteção do documento?
 
 Para remover a proteção do documento, basta abrir o documento protegido e, se ele for protegido por senha, fornecer a senha correta. Em seguida, use Aspose.Words para Java para remover a proteção da seguinte forma:
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Posso definir permissões para usuários específicos?
+### Posso definir permissões para usuários específicos?
 
 Sim, o Aspose.Words para Java permite que você defina permissões para usuários ou grupos específicos. Você pode definir quem pode acessar e editar o documento.
 
-## É possível criptografar um documento com várias senhas?
+### É possível criptografar um documento com várias senhas?
 
 Não, o Aspose.Words para Java suporta criptografia de senha única. Você pode definir uma senha para proteger o documento.
 
-## Como posso verificar as permissões de um documento?
+### Como posso verificar as permissões de um documento?
 
 Você pode usar o Aspose.Words para Java para verificar as permissões de um documento examinando suas configurações de proteção e opções de controle de acesso.
 
-## Posso automatizar o gerenciamento de permissões de documentos?
+### Posso automatizar o gerenciamento de permissões de documentos?
 
 Com certeza! Você pode integrar o Aspose.Words para Java em seus aplicativos para automatizar o gerenciamento de permissões de documentos, tornando-o uma parte perfeita do seu fluxo de trabalho de documentos.
 
-## se eu esquecer a senha do documento?
+### E se eu esquecer a senha do documento?
 
 Se você esquecer a senha do documento, não há como recuperá-la. Certifique-se de manter um registro de suas senhas em um lugar seguro.
 

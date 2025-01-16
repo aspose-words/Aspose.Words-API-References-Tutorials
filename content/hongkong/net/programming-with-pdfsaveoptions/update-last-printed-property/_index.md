@@ -80,7 +80,7 @@ Aspose.Words for .NET 是一個功能強大的程式庫，用於 .NET 應用程�
 是的，Aspose.Words for .NET 可讓您更新各種文件屬性，例如作者、標題、主題等。
 
 ### Aspose.Words for .NET 是免費的嗎？
-Aspose.Words for .NET 提供免費試用版，您可以下載[這裡](https://releases.aspose.com/)。如需擴充使用，您需要購買授權。
+ Aspose.Words for .NET 提供免費試用版，您可以下載[這裡](https://releases.aspose.com/)。如需擴充使用，您需要購買授權。
 
 ### 在哪裡可以找到有關 Aspose.Words for .NET 的更多文件？
 您可以找到有關 Aspose.Words for .NET 的詳細文檔[這裡](https://reference.aspose.com/words/net/).

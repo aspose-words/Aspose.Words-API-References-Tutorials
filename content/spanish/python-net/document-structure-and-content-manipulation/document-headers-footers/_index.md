@@ -23,7 +23,7 @@ pip install aspose-words
 2. Importar el módulo: importe el módulo requerido en su script de Python.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Cómo agregar un encabezado y pie de página simples
@@ -33,30 +33,18 @@ Para agregar un encabezado y pie de página básicos a su documento de Word, sig
 1. Creación de un documento: cree un nuevo documento de Word utilizando Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Agregar encabezado y pie de página: utilice el`sections` propiedad del documento para acceder a las secciones. Luego, utilice el`headers_footers` Propiedad para agregar encabezados y pies de página.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Agregar contenido: agregue contenido al encabezado y al pie de página.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Guardar el documento: guarde el documento con el encabezado y el pie de página.
+3. Guardar el documento: guarde el documento con el encabezado y el pie de página.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Agregar tablas: incorporar tablas para obtener información tabular.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Campos dinámicos: utilice campos dinámicos para la inserción automática de datos.
+2. Campos dinámicos: utilice campos dinámicos para la inserción automática de datos.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. Personalice según sea necesario: personalice cada encabezado y pie de página según sus requisitos.
 
 ## Eliminación de encabezados y pies de página
 
@@ -150,4 +128,4 @@ Sí, puedes borrar el contenido de los encabezados y pies de página para elimin
 
 ### ¿Dónde puedo obtener más información sobre Aspose.Words para Python?
 
-Para obtener documentación y ejemplos más detallados, visite[Referencia de la API de Aspose.Words para Python](https://reference.aspose.com/words/python-net/).
+ Para obtener documentación y ejemplos más detallados, visite[Referencia de la API de Aspose.Words para Python](https://reference.aspose.com/words/python-net/).

@@ -9,7 +9,7 @@ url: /nl/net/programming-with-document-options-and-settings/view-options/
 ---
 ## Invoering
 
-Hallo, medeprogrammeur! Heb je je ooit afgevraagd hoe je de manier waarop je je Word-documenten bekijkt kunt veranderen met Aspose.Words voor .NET? Of je nu wilt overschakelen naar een ander weergavetype of wilt in- en uitzoomen om je document perfect te bekijken, je bent hier aan het juiste adres. Vandaag duiken we in de wereld van Aspose.Words voor .NET, met een specifieke focus op het manipuleren van weergaveopties. We splitsen alles op in eenvoudige, begrijpelijke stappen, zodat je in no time een expert bent. Klaar? Laten we beginnen!
+Hallo, medeprogrammeur! Heb je je ooit afgevraagd hoe je de manier waarop je je Word-documenten bekijkt kunt veranderen met Aspose.Words voor .NET? Of je nu wilt overschakelen naar een ander weergavetype of wilt in- en uitzoomen om je document perfect te bekijken, je bent hier aan het juiste adres. Vandaag duiken we in de wereld van Aspose.Words voor .NET, met een specifieke focus op het manipuleren van weergaveopties. We zullen alles opsplitsen in eenvoudige, begrijpelijke stappen, zodat je in no time een expert bent. Klaar? Laten we beginnen!
 
 ## Vereisten
 
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Laten we de verschillende stappen voor het aanpassen van de weergaveopties van uw Word-document eens nader bekijken.
+Laten we de stappen voor het aanpassen van de weergaveopties van uw Word-document eens nader bekijken.
 
 ## Stap 1: Laad uw document
 

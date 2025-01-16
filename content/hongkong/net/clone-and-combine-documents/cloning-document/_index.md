@@ -35,7 +35,7 @@ using Aspose.Words;
 首先，您需要在 Visual Studio 中設定專案。如果您已經準備好項目，則可以跳過此步驟。如果沒有，請按照以下步驟操作：
 
 1. 開啟 Visual Studio：啟動 Visual Studio 並建立一個新的 C# 控制台應用程式專案。
-2. 為您的專案命名：為您的專案指定一個有意義的名稱。像這樣的東西`CloneWordDocumentDemo`會做。
+2. 為您的專案命名：為您的專案指定一個有意義的名稱。類似的東西`CloneWordDocumentDemo`會做。
 3. 新增 Aspose.Words 參考：在解決方案資源管理器中以滑鼠右鍵按一下您的項目，選擇`Manage NuGet Packages`，並蒐索`Aspose.Words`。安裝它。
 
 ## 第 2 步：準備環境

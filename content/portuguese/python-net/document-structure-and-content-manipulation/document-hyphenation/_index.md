@@ -11,7 +11,7 @@ Hifenização e fluxo de texto são aspectos cruciais quando se trata de criar d
 
 ## Compreendendo a hifenização
 
-### O que é hifenização?
+### que é hifenização?
 
 Hifenização é o processo de quebrar uma palavra no final de uma linha para melhorar a aparência e a legibilidade do texto. Ela previne espaçamentos estranhos e grandes lacunas entre palavras, criando um fluxo visual mais suave no documento.
 
@@ -27,7 +27,7 @@ Em alguns casos, você pode querer controlar manualmente onde uma palavra quebra
 
 ### Hifenização Automática
 
-hifenização automática é o método preferido na maioria dos casos, pois ajusta dinamicamente as quebras de palavras com base no layout e na formatação do documento. Isso garante uma aparência consistente e agradável em vários dispositivos e tamanhos de tela.
+A hifenização automática é o método preferido na maioria dos casos, pois ajusta dinamicamente as quebras de palavras com base no layout e na formatação do documento. Isso garante uma aparência consistente e agradável em vários dispositivos e tamanhos de tela.
 
 ## Utilizando Aspose.Words para Python
 
@@ -126,4 +126,4 @@ Para evitar viúvas e órfãos, utilize as opções fornecidas pelo Aspose.Words
 
 ### Onde posso acessar a documentação do Aspose.Words para Python?
 
-Você pode acessar a documentação da API em[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+ Você pode acessar a documentação da API em[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

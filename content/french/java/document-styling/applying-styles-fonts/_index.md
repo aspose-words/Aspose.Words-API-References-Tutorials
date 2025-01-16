@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /fr/java/document-styling/applying-styles-fonts/
 ---
-Dans le monde du traitement de documents, Aspose.Words pour Java se distingue comme un outil puissant pour manipuler et formater des documents. Si vous cherchez à créer des documents avec des styles et des polices personnalisés, vous êtes au bon endroit. Ce guide complet vous guidera pas à pas tout au long du processus, avec des exemples de code source. À la fin de cet article, vous aurez l'expertise nécessaire pour appliquer facilement des styles et des polices à vos documents.
+Dans le monde du traitement de documents, Aspose.Words for Java se distingue comme un outil puissant pour manipuler et formater des documents. Si vous cherchez à créer des documents avec des styles et des polices personnalisés, vous êtes au bon endroit. Ce guide complet vous guidera pas à pas tout au long du processus, avec des exemples de code source. À la fin de cet article, vous aurez l'expertise nécessaire pour appliquer facilement des styles et des polices à vos documents.
 
 ## Introduction
 
@@ -16,7 +16,7 @@ Aspose.Words for Java est une API basée sur Java qui permet aux développeurs d
 ## Application des styles et des polices : les bases
 
 ### Commencer
- Pour commencer, vous devez configurer votre environnement de développement Java et télécharger la bibliothèque Aspose.Words pour Java. Vous pouvez trouver le lien de téléchargement[ici](https://releases.aspose.com/words/java/)Assurez-vous d'inclure la bibliothèque dans votre projet.
+Pour commencer, vous devez configurer votre environnement de développement Java et télécharger la bibliothèque Aspose.Words pour Java. Vous pouvez trouver le lien de téléchargement[ici](https://releases.aspose.com/words/java/)Assurez-vous d'inclure la bibliothèque dans votre projet.
 
 ### Créer un document
 Commençons par créer un nouveau document en utilisant Aspose.Words pour Java :
@@ -87,7 +87,7 @@ builder.getFont().setShadow(true);
 Combinez plusieurs styles pour une mise en forme complexe des documents :
 
 ```java
-//Combinez les styles pour un look unique
+// Combinez les styles pour un look unique
 builder.getParagraphFormat().setStyleName("CustomStyle");
 builder.getFont().setBold(true);
 ```
@@ -107,7 +107,7 @@ Aspose.Words pour Java offre de puissantes fonctionnalités de mise en forme con
 Absolument ! Aspose.Words pour Java prend en charge une large gamme de polices et de caractères de différentes langues et scripts.
 
 ### Comment puis-je ajouter des hyperliens à du texte avec des styles spécifiques ?
- Pour ajouter des hyperliens au texte, utilisez le`FieldHyperlink`classe en combinaison avec des styles pour obtenir le formatage souhaité.
+ Pour ajouter des hyperliens au texte, utilisez le`FieldHyperlink` classe en combinaison avec des styles pour obtenir le formatage souhaité.
 
 ### Existe-t-il des limites quant à la taille ou à la complexité des documents ?
 Aspose.Words pour Java peut gérer des documents de tailles et de complexité variables. Cependant, les documents extrêmement volumineux peuvent nécessiter des ressources mémoire supplémentaires.

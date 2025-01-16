@@ -114,5 +114,5 @@ Aspose.Words for .NET 是一個函式庫，可讓您在 .NET 應用程式中以�
 ### 如何過濾樣式以僅顯示特定類型？
 您可以透過檢查屬性來過濾樣式，例如`IsBuiltin`或使用基於樣式屬性的自訂邏輯。
 
-### 在哪裡可以找到更多關於 Aspose.Words for .NET 的資源？
+### 在哪裡可以找到更多有關 Aspose.Words for .NET 的資源？
 您可以探索更多[這裡](https://reference.aspose.com/words/net/).

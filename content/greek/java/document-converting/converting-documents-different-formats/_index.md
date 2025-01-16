@@ -47,7 +47,7 @@ Document doc = new Document("sample.docx");
 
 ```java
 // Μετατρέψτε το έγγραφο σε PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Σύναψη

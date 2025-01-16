@@ -105,7 +105,7 @@ Och där har du det! 🎉 Du har framgångsrikt nått och manipulerat avsnitt i 
 
 ## Vanliga frågor
 
-### Hur kommer jag åt flera avsnitt i ett dokument?
+### Hur får jag åtkomst till flera avsnitt i ett dokument?
 
 Du kan använda en loop för att iterera genom alla avsnitt i dokumentet.
 

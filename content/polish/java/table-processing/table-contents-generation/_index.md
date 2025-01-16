@@ -7,128 +7,137 @@ type: docs
 weight: 14
 url: /pl/java/table-processing/table-contents-generation/
 ---
-
-Czy jesteś gotowy wyruszyć w podróż, aby opanować generowanie spisu treści (TOC) przy użyciu Aspose.Words dla Java? W tym kompleksowym przewodniku odkryjemy sztukę tworzenia dynamicznych i wizualnie atrakcyjnych spisów treści bez wysiłku. Zostaniesz wyposażony w wiedzę i umiejętności potrzebne do bezproblemowego wdrożenia tej funkcji w swoich aplikacjach Java. Więc zanurzmy się!
-
 ## Wstęp
 
-Spis treści (TOC) jest niezbędnym elementem każdego dobrze ustrukturyzowanego dokumentu. Zapewnia czytelnikom mapę drogową, umożliwiając im łatwe poruszanie się po długich dokumentach. Aspose.Words for Java to potężne API, które upraszcza generowanie spisu treści w aplikacjach Java. W tym przewodniku krok po kroku omówimy wszystko, co musisz wiedzieć, aby dynamicznie tworzyć spisy treści przy użyciu Aspose.Words for Java.
+Czy kiedykolwiek miałeś problem z utworzeniem dynamicznego i profesjonalnie wyglądającego spisu treści (TOC) w dokumentach Word? Nie szukaj dalej! Dzięki Aspose.Words for Java możesz zautomatyzować cały proces, oszczędzając czas i zapewniając dokładność. Niezależnie od tego, czy tworzysz kompleksowy raport, czy pracę naukową, ten samouczek przeprowadzi Cię przez programowe generowanie spisu treści za pomocą Javy. Gotowy do działania? Zaczynajmy!
 
-## Pierwsze kroki z Aspose.Words dla Java
+## Wymagania wstępne
 
-Zanim zagłębimy się w szczegóły generowania spisu treści, skonfigurujmy nasze środowisko i zapoznajmy się z Aspose.Words dla Java.
+Zanim zaczniemy kodować, upewnij się, że masz następujące rzeczy:
 
-### Konfigurowanie środowiska
+1.  Java Development Kit (JDK): Zainstalowany w systemie. Możesz go pobrać z[Strona internetowa Oracle](https://www.oracle.com/java/technologies/javase-downloads.html).
+2.  Biblioteka Aspose.Words dla Java: Pobierz najnowszą wersję ze strony[strona wydania](https://releases.aspose.com/words/java/).
+3. Zintegrowane środowisko programistyczne (IDE): takie jak IntelliJ IDEA, Eclipse lub NetBeans.
+4.  Licencja tymczasowa Aspose: Aby uniknąć ograniczeń dotyczących oceny, uzyskaj[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
 
-Aby rozpocząć, upewnij się, że masz zainstalowany Aspose.Words for Java. Możesz go pobrać ze strony internetowej[Tutaj](https://releases.aspose.com/words/java/).
+## Importuj pakiety
 
-### Tworzenie nowego projektu Java
-
-Zacznij od utworzenia nowego projektu Java w swoim ulubionym zintegrowanym środowisku programistycznym (IDE).
-
-### Dodawanie Aspose.Words dla Java do projektu
-
-Dodaj bibliotekę Aspose.Words for Java do swojego projektu, uwzględniając ją w zależnościach.
-
-### Inicjalizacja Aspose.Words
-
-W kodzie Java zainicjuj Aspose.Words, aby rozpocząć pracę.
+Aby skutecznie używać Aspose.Words dla Java, upewnij się, że importujesz wymagane klasy. Oto importy:
 
 ```java
-// Zainicjuj Aspose.Words
-com.aspose.words.Document doc = new com.aspose.words.Document();
+import com.aspose.words.*;
 ```
 
-## Zrozumienie spisu treści (TOC)
+Aby wygenerować dynamiczny spis treści w dokumencie Word, wykonaj poniższe czynności.
 
-Zanim przejdziemy do tworzenia spisów treści, przyjrzyjmy się bliżej temu, czym one są i jak działają.
+## Krok 1: Zainicjuj dokument i DocumentBuilder
 
-### Czym jest spis treści?
+ Pierwszym krokiem jest utworzenie nowego dokumentu i użycie`DocumentBuilder` klasa, aby nią manipulować.
 
-Spis treści to lista, która pojawia się na początku dokumentu i zawiera linki do różnych sekcji lub rozdziałów w dokumencie. Służy jako pomocne narzędzie nawigacyjne dla czytelników.
-
-### Jak działa generowanie spisu treści?
-
-Generowanie spisu treści obejmuje identyfikację konkretnych nagłówków lub treści w dokumencie i tworzenie linków do tych sekcji. Aspose.Words for Java upraszcza ten proces, automatyzując generowanie spisów treści na podstawie wstępnie zdefiniowanych reguł.
-
-## Generowanie podstawowego spisu treści
-
-Teraz, gdy mamy już solidne podstawy, możemy wygenerować podstawowy spis treści przy użyciu Aspose.Words dla Java.
 
 ```java
-// Utwórz nowy spis treści
-com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-tocField.update();
+string dataDir = "Your Document Directory";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Powyższy kod tworzy podstawowy spis treści w dokumencie. Możesz go dalej dostosować, określając poziomy, formatowanie i inne.
+- `Document`:Reprezentuje dokument Word.
+- `DocumentBuilder`:Klasa pomocnicza umożliwiająca łatwą manipulację dokumentem.
 
-## Zaawansowana personalizacja spisu treści
+## Krok 2: Wstaw spis treści
 
-Aspose.Words for Java oferuje rozbudowane opcje dostosowywania spisów treści. Przyjrzyjmy się niektórym zaawansowanym funkcjom:
+Teraz wstawmy spis treści na początku dokumentu.
 
-### Dostosowywanie stylów spisu treści
-
-Możesz zdefiniować style spisu treści tak, aby odpowiadały estetyce Twojego dokumentu.
 
 ```java
-// Dostosuj style spisu treści
-com.aspose.words.Style tocStyle = doc.getStyles().add(StyleType.PARAGRAPH, "MyTOCStyle");
-tocStyle.getFont().setSize(16);
-tocStyle.getFont().setBold(true);
+builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+builder.insertBreak(BreakType.PAGE_BREAK);
 ```
 
-### Włączając określone nagłówki
+- `insertTableOfContents`: Wstawia pole TOC. Parametry określają:
+  - `\o "1-3"`:Uwzględnij nagłówki poziomów od 1 do 3.
+  - `\h`:Utwórz wpisy w postaci hiperłączy.
+  - `\z`: Wyłącz numerację stron w dokumentach internetowych.
+  - `\u`:Zachowaj style hiperłączy.
+- `insertBreak`: Dodaje podział strony po spisie treści.
 
-Możesz wybrać, które nagłówki chcesz uwzględnić w spisie treści, określając ich poziomy konspektu.
+## Krok 3: Dodaj nagłówki, aby wypełnić spis treści
+
+Aby uzupełnić spis treści, należy dodać akapity ze stylami nagłówków.
+
 
 ```java
-// Uwzględnij tylko określone nagłówki
-tocField.setCode("TOC \\o \"1-3\" \\h \\z");
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 1");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_2);
+builder.writeln("Heading 1.1");
+builder.writeln("Heading 1.2");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 2");
 ```
 
-## Dodawanie kodu źródłowego do generowania spisu treści
+- `setStyleIdentifier` : Ustawia styl akapitu na określony poziom nagłówka (np.`HEADING_1`, `HEADING_2`).
+- `writeln`: Dodaje do dokumentu tekst o określonym stylu.
 
-Pójdźmy o krok dalej i zintegrujmy kod źródłowy, aby zautomatyzować generowanie spisu treści w aplikacjach Java.
+## Krok 4: Dodaj zagnieżdżone nagłówki
+
+Aby zademonstrować poziomy spisu treści, należy zastosować zagnieżdżone nagłówki.
+
 
 ```java
-// Zautomatyzuj generowanie spisu treści w Javie
-public void generateTOC() {
-    com.aspose.words.Document doc = new com.aspose.words.Document();
-    com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-    tocField.update();
-    // Dodaj tutaj więcej dostosowań
-}
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_3);
+builder.writeln("Heading 3.1.1");
+builder.writeln("Heading 3.1.2");
+builder.writeln("Heading 3.1.3");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_4);
+builder.writeln("Heading 3.1.3.1");
+builder.writeln("Heading 3.1.3.2");
 ```
 
-Dzięki umieszczeniu generowania spisu treści w metodzie możesz łatwo włączyć ją do swoich projektów.
+- Dodaj nagłówki głębszych poziomów, aby pokazać hierarchię w spisie treści.
 
-## Często zadawane pytania
+## Krok 5: Aktualizacja pól spisu treści
 
-### Jak mogę zaktualizować istniejący spis treści?
+Aby wyświetlić najnowsze nagłówki, należy zaktualizować pole spisu treści.
 
-Aby zaktualizować istniejący spis treści w dokumencie, po prostu kliknij go prawym przyciskiem myszy i wybierz „Aktualizuj pole”. Aspose.Words for Java odświeży spis treści na podstawie wszelkich zmian w nagłówkach dokumentu.
 
-### Czy mogę wygenerować wiele spisów treści w jednym dokumencie?
+```java
+doc.updateFields();
+```
 
-Tak, możesz wygenerować wiele spisów treści w jednym dokumencie. Użyj różnych kodów pól dla każdego spisu treści i dostosuj ich ustawienia według potrzeb.
+- `updateFields`: Odświeża wszystkie pola w dokumencie, zapewniając, że spis treści odzwierciedla dodane nagłówki.
 
-### Czy Aspose.Words for Java nadaje się zarówno do małych, jak i dużych dokumentów?
+## Krok 6: Zapisz dokument
 
-Oczywiście! Aspose.Words for Java jest wszechstronny i może obsługiwać dokumenty o różnych rozmiarach, od małych raportów po obszerne powieści.
+Na koniec zapisz dokument w wybranym formacie.
 
-### Czy mogę dostosować wygląd wpisów w spisie treści?
 
-Oczywiście! Możesz zdefiniować niestandardowe style dla wpisów TOC, aby pasowały do projektu i formatowania Twojego dokumentu.
+```java
+doc.save(dataDir + "DocumentBuilder.InsertToc.docx");
+```
 
-### Czy Aspose.Words for Java obsługuje odnośniki krzyżowe w spisie treści?
-
-Tak, możesz tworzyć odnośniki wewnątrz spisu treści, aby utworzyć łącza do konkretnych sekcji lub stron w dokumencie.
-
-### Czy Aspose.Words for Java nadaje się do aplikacji internetowych?
-
-Rzeczywiście, Aspose.Words for Java można bezproblemowo zintegrować z aplikacjami internetowymi w celu dynamicznego generowania spisów treści.
+- `save` :Eksportuje dokument do`.docx` plik. Możesz określić inne formaty, takie jak`.pdf` Lub`.txt` jeśli to konieczne.
 
 ## Wniosek
 
-tym kompleksowym przewodniku zgłębiliśmy sztukę generowania spisu treści (TOC) przy użyciu Aspose.Words for Java. Nauczyłeś się, jak skonfigurować środowisko, tworzyć podstawowe i zaawansowane spisy treści, a nawet integrować generowanie spisu treści z projektami Java za pomocą kodu źródłowego. Aspose.Words for Java umożliwia wzbogacanie dokumentów o dynamiczne i atrakcyjne wizualnie spisy treści. Teraz możesz zastosować tę wiedzę, aby tworzyć oszałamiające spisy treści w swoich aplikacjach Java. Miłego kodowania!
+Gratulacje! Udało Ci się utworzyć dynamiczny spis treści w dokumencie Word przy użyciu Aspose.Words for Java. Za pomocą zaledwie kilku linijek kodu zautomatyzowałeś zadanie, które w przeciwnym razie mogłoby zająć godziny. Co dalej? Spróbuj poeksperymentować z różnymi stylami i formatami nagłówków, aby dostosować spis treści do konkretnych potrzeb.
+
+## Najczęściej zadawane pytania
+
+### Czy mogę dodatkowo dostosować format spisu treści?
+Oczywiście! Możesz dostosować parametry spisu treści, takie jak uwzględnienie numerów stron, wyrównanie tekstu lub użycie niestandardowych stylów nagłówków.
+
+### Czy licencja jest obowiązkowa dla Aspose.Words for Java?
+ Tak, licencja jest wymagana do pełnej funkcjonalności. Możesz zacząć od[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
+
+### Czy mogę wygenerować spis treści dla istniejącego dokumentu?
+ Tak! Załaduj dokument do`Document` obiekt i wykonaj te same kroki, aby wstawić i zaktualizować spis treści.
+
+### Czy to działa w przypadku eksportu do pliku PDF?
+ Tak, spis treści pojawi się w pliku PDF, jeśli zapiszesz dokument w formacie`.pdf` format.
+
+### Gdzie mogę znaleźć więcej dokumentacji?
+ Sprawdź[Aspose.Words dla dokumentacji Java](https://reference.aspose.com/words/java/) aby zobaczyć więcej przykładów i szczegółów.

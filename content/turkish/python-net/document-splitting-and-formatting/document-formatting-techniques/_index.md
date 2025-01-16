@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Yazı Tipi Stilleri ve Boyutlarını Uygulama
-
-Yazı tipi stilleri ve boyutları uygulayarak belgenizin okunabilirliğini ve görsel çekiciliğini artırın. Bir paragrafın yazı tipi stilini ve boyutunu değiştirmek için aşağıdaki kodu kullanın:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Paragrafları ve Başlıkları Biçimlendirme
+## Paragrafları Biçimlendirme
 
 Belgenizi etkili bir şekilde yapılandırmak için paragrafları ve başlıkları biçimlendirmek çok önemlidir. Bunu aşağıdaki kodu kullanarak elde edin:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Listeler ve Madde İşaretleriyle Çalışma
 
 Listeler ve madde işaretleri içeriği düzenler ve netlik sağlar. Bunları Aspose.Words kullanarak uygulayın:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Sayfa Düzeni ve Kenar Boşluklarını Yönetme
+## Sayfa Düzenini Yönetme
 
 En iyi sunum için sayfa düzenini ve kenar boşluklarını kontrol edin:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Stiller ve Temalar Uygulama

@@ -7,90 +7,145 @@ type: docs
 weight: 13
 url: /id/java/document-security/digital-signatures-in-documents/
 ---
+## Perkenalan
 
-Tanda tangan digital berperan penting dalam memastikan keaslian dan integritas dokumen digital. Tanda tangan digital menyediakan cara untuk memverifikasi bahwa dokumen tidak dirusak dan memang dibuat atau disetujui oleh penanda tangan yang ditunjuk. Dalam panduan langkah demi langkah ini, kita akan menjelajahi cara menerapkan tanda tangan digital dalam dokumen menggunakan Aspose.Words untuk Java. Kita akan membahas semuanya mulai dari menyiapkan lingkungan hingga menambahkan tanda tangan digital ke dokumen Anda. Mari kita mulai!
+Di dunia digital yang semakin berkembang, kebutuhan akan penandatanganan dokumen yang aman dan dapat diverifikasi tidak pernah lebih penting dari sebelumnya. Baik Anda seorang profesional bisnis, pakar hukum, atau sekadar seseorang yang sering mengirim dokumen, memahami cara menerapkan tanda tangan digital dapat menghemat waktu Anda dan memastikan integritas dokumen Anda. Dalam tutorial ini, kita akan membahas cara menggunakan Aspose.Words untuk Java guna menambahkan tanda tangan digital ke dokumen dengan mudah. Bersiaplah untuk terjun ke dunia tanda tangan digital dan tingkatkan manajemen dokumen Anda!
 
 ## Prasyarat
 
-Sebelum kita mulai menerapkannya, pastikan Anda telah memenuhi prasyarat berikut:
+Sebelum kita masuk ke inti penambahan tanda tangan digital, mari pastikan Anda memiliki semua yang dibutuhkan untuk memulai:
 
--  Aspose.Words untuk Java: Unduh dan instal Aspose.Words untuk Java dari[Di Sini](https://releases.aspose.com/words/java/).
+1.  Java Development Kit (JDK): Pastikan Anda telah menginstal JDK di komputer Anda. Anda dapat mengunduhnya dari[Situs web Oracle](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 
-## Menyiapkan Proyek Anda
+2.  Aspose.Words untuk Java: Anda memerlukan pustaka Aspose.Words. Anda dapat mengunduhnya dari[halaman rilis](https://releases.aspose.com/words/java/).
 
-1. Buat proyek Java baru di Lingkungan Pengembangan Terpadu (IDE) pilihan Anda.
+3. Editor Kode: Gunakan editor kode atau IDE pilihan Anda (seperti IntelliJ IDEA, Eclipse, atau NetBeans) untuk menulis kode Java Anda.
 
-2. Tambahkan pustaka Aspose.Words untuk Java ke proyek Anda dengan menyertakan file JAR di classpath Anda.
+4.  Sertifikat Digital: Untuk menandatangani dokumen, Anda memerlukan sertifikat digital dalam format PFX. Jika Anda tidak memilikinya, Anda dapat membuat lisensi sementara dari[Halaman lisensi sementara Aspose](https://purchase.aspose.com/temporary-license/).
 
-## Menambahkan Tanda Tangan Digital
+5. Pengetahuan Dasar Java: Keakraban dengan pemrograman Java akan membantu Anda memahami potongan kode yang akan kita gunakan.
 
-Sekarang, mari kita lanjutkan untuk menambahkan tanda tangan digital ke dokumen:
+## Paket Impor
+
+Untuk memulai, kita perlu mengimpor paket yang diperlukan dari pustaka Aspose.Words. Berikut ini yang akan Anda perlukan dalam berkas Java Anda:
 
 ```java
-// Inisialisasi Aspose.Words
-com.aspose.words.Document doc = new com.aspose.words.Document("your_document.docx");
-
-// Buat objek DigitalSignature
-com.aspose.words.digitalSignatures.DigitalSignature digitalSignature = new com.aspose.words.digitalSignatures.DigitalSignature();
-
-// Tetapkan jalur sertifikat
-digitalSignature.setCertificateFile("your_certificate.pfx");
-
-//Tetapkan kata sandi untuk sertifikat
-digitalSignature.setPassword("your_password");
-
-// Tanda tangani dokumennya
-doc.getDigitalSignatures().add(digitalSignature);
-
-// Simpan dokumen
-doc.save("signed_document.docx");
+import com.aspose.words.*;
+import java.util.Date;
+import java.util.UUID;
 ```
 
-## Memverifikasi Tanda Tangan Digital
+Impor ini akan memungkinkan Anda mengakses kelas dan metode yang diperlukan untuk membuat dan memanipulasi dokumen, serta menangani tanda tangan digital.
 
-Untuk memverifikasi tanda tangan digital dalam dokumen, ikuti langkah-langkah berikut:
+Sekarang setelah prasyarat kita terpenuhi dan paket-paket yang diperlukan telah diimpor, mari kita uraikan proses penambahan tanda tangan digital ke dalam langkah-langkah yang lebih mudah dikelola.
+
+## Langkah 1: Buat Dokumen Baru
+
+Pertama-tama, kita perlu membuat dokumen baru tempat kita akan menyisipkan baris tanda tangan. Berikut cara melakukannya:
 
 ```java
-// Muat dokumen yang telah ditandatangani
-com.aspose.words.Document signedDoc = new com.aspose.words.Document("signed_document.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
-// Periksa apakah dokumen tersebut ditandatangani secara digital
-if (signedDoc.getDigitalSignatures().getCount() > 0) {
-    // Verifikasi tanda tangan digital
-    boolean isValid = signedDoc.getDigitalSignatures().get(0).isValid();
-    
-    if (isValid) {
-        System.out.println("Digital signature is valid.");
-    } else {
-        System.out.println("Digital signature is not valid.");
-    }
-} else {
-    System.out.println("Document is not digitally signed.");
+-  Kami membuat contoh baru`Document` objek, yang mewakili dokumen Word kita.
+-  Itu`DocumentBuilder` adalah alat yang hebat yang membantu kita membuat dan memanipulasi dokumen kita dengan mudah.
+
+## Langkah 2: Konfigurasikan Opsi Baris Tanda Tangan
+
+Selanjutnya, kita akan mengatur opsi untuk baris tanda tangan kita. Di sinilah Anda menentukan siapa yang menandatangani, jabatannya, dan detail relevan lainnya.
+
+```java
+SignatureLineOptions signatureLineOptions = new SignatureLineOptions();
+{
+    signatureLineOptions.setSigner("yourname");
+    signatureLineOptions.setSignerTitle("Worker");
+    signatureLineOptions.setEmail("yourname@aspose.com");
+    signatureLineOptions.setShowDate(true);
+    signatureLineOptions.setDefaultInstructions(false);
+    signatureLineOptions.setInstructions("Please sign here.");
+    signatureLineOptions.setAllowComments(true);
 }
 ```
+ 
+-  Di sini, kita membuat sebuah instance dari`SignatureLineOptions` dan tetapkan berbagai parameter seperti nama penanda tangan, jabatan, email, dan instruksi. Kustomisasi ini memastikan bahwa baris tanda tangan jelas dan informatif.
+
+## Langkah 3: Masukkan Baris Tanda Tangan
+
+Setelah kita menyiapkan pilihan kita, waktunya untuk memasukkan baris tanda tangan ke dalam dokumen.
+
+```java
+SignatureLine signatureLine = builder.insertSignatureLine(signatureLineOptions).getSignatureLine();
+signatureLine.setProviderId(UUID.fromString("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2"));
+```
+ 
+-  Kami menggunakan`insertSignatureLine` metode dari`DocumentBuilder` untuk menambahkan baris tanda tangan ke dokumen kita.`getSignatureLine()` metode mengambil baris tanda tangan yang dibuat, yang dapat kita manipulasi lebih lanjut.
+- Kami juga menetapkan ID penyedia unik untuk baris tanda tangan, yang membantu mengidentifikasi penyedia tanda tangan.
+
+## Langkah 4: Simpan Dokumen
+
+Sebelum kita menandatangani dokumen, mari kita simpan di lokasi yang kita inginkan.
+
+```java
+doc.save(getArtifactsDir() + "SignDocuments.SignatureLineProviderId.docx");
+```
+ 
+-  Itu`save` metode ini digunakan untuk menyimpan dokumen dengan baris tanda tangan yang disisipkan. Pastikan untuk mengganti`getArtifactsDir()` dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen Anda.
+
+## Langkah 5: Konfigurasikan Opsi Tanda
+
+Sekarang, mari kita atur opsi untuk menandatangani dokumen. Ini termasuk menentukan baris tanda tangan mana yang akan ditandatangani dan menambahkan komentar.
+
+```java
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setSignatureLineId(signatureLine.getId());
+    signOptions.setProviderId(signatureLine.getProviderId());
+    signOptions.setComments("Document was signed by Aspose");
+    signOptions.setSignTime(new Date());
+}
+```
+ 
+-  Kami membuat sebuah contoh dari`SignOptions` dan konfigurasikan dengan ID baris tanda tangan, ID penyedia, komentar, dan waktu penandatanganan saat ini. Langkah ini penting untuk memastikan bahwa tanda tangan dikaitkan dengan benar dengan baris tanda tangan yang kita buat sebelumnya.
+
+## Langkah 6: Buat Pemegang Sertifikat
+
+Untuk menandatangani dokumen, kita perlu membuat pemegang sertifikat menggunakan berkas PFX kita.
+
+```java
+CertificateHolder certHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
+```
+ 
+-  Itu`CertificateHolder.create`metode mengambil jalur ke berkas PFX Anda dan kata sandinya. Objek ini akan digunakan untuk mengautentikasi proses penandatanganan.
+
+## Langkah 7: Tandatangani Dokumen
+
+Akhirnya, saatnya menandatangani dokumen! Berikut cara melakukannya:
+
+```java
+DigitalSignatureUtil.sign(getArtifactsDir() + "SignDocuments.SignatureLineProviderId.docx", 
+    getArtifactsDir() + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
+```
+ 
+-  Itu`DigitalSignatureUtil.sign` Metode ini mengambil jalur dokumen asli, jalur untuk dokumen yang ditandatangani, pemegang sertifikat, dan opsi penandatanganan. Metode ini menerapkan tanda tangan digital ke dokumen Anda.
 
 ## Kesimpulan
 
-Dalam panduan ini, kita telah mempelajari cara menerapkan tanda tangan digital dalam dokumen menggunakan Aspose.Words untuk Java. Ini adalah langkah penting dalam memastikan keaslian dan integritas dokumen digital Anda. Dengan mengikuti langkah-langkah yang diuraikan di sini, Anda dapat dengan yakin menambahkan dan memverifikasi tanda tangan digital dalam aplikasi Java Anda.
+Nah, itu dia! Anda telah berhasil menambahkan tanda tangan digital ke dokumen menggunakan Aspose.Words untuk Java. Proses ini tidak hanya meningkatkan keamanan dokumen Anda, tetapi juga menyederhanakan proses penandatanganan, sehingga memudahkan pengelolaan dokumen penting. Saat Anda terus bekerja dengan tanda tangan digital, Anda akan menemukan bahwa tanda tangan digital dapat meningkatkan alur kerja Anda secara signifikan dan memberikan ketenangan pikiran. 
 
-## Tanya Jawab Umum
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu tanda tangan digital?
+Tanda tangan digital adalah teknik kriptografi yang memvalidasi keaslian dan integritas suatu dokumen.
 
-Tanda tangan digital adalah teknik kriptografi yang memverifikasi keaslian dan integritas dokumen atau pesan digital.
+### Apakah saya memerlukan perangkat lunak khusus untuk membuat tanda tangan digital?
+Ya, Anda memerlukan pustaka seperti Aspose.Words untuk Java untuk membuat dan mengelola tanda tangan digital secara terprogram.
 
-### Dapatkah saya menggunakan sertifikat yang ditandatangani sendiri untuk tanda tangan digital?
+### Dapatkah saya menggunakan sertifikat yang ditandatangani sendiri untuk menandatangani dokumen?
+Ya, Anda dapat menggunakan sertifikat yang ditandatangani sendiri, tetapi mungkin tidak dipercaya oleh semua penerima.
 
-Ya, Anda dapat menggunakan sertifikat yang ditandatangani sendiri, tetapi mungkin tidak memberikan tingkat kepercayaan yang sama seperti sertifikat dari Otoritas Sertifikat (CA) tepercaya.
+### Apakah dokumen saya aman setelah ditandatangani?
+Ya, tanda tangan digital menyediakan lapisan keamanan, memastikan bahwa dokumen tidak diubah setelah penandatanganan.
 
-### Apakah Aspose.Words untuk Java kompatibel dengan format dokumen lain?
-
-Ya, Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOCX, PDF, HTML, dan banyak lagi.
-
-### Bagaimana cara memperoleh sertifikat digital untuk menandatangani dokumen?
-
-Anda dapat memperoleh sertifikat digital dari Otoritas Sertifikat (CA) tepercaya atau membuat sertifikat yang ditandatangani sendiri menggunakan alat seperti OpenSSL.
-
-### Apakah tanda tangan digital mengikat secara hukum?
-
-Di banyak yurisdiksi, tanda tangan digital mengikat secara hukum dan memiliki kekuatan yang sama dengan tanda tangan tulisan tangan. Namun, penting untuk berkonsultasi dengan pakar hukum untuk persyaratan hukum khusus di wilayah Anda.
+### Di mana saya dapat mempelajari lebih lanjut tentang Aspose.Words?
+ Anda dapat menjelajahi[Dokumentasi Aspose.Words](https://reference.aspose.com/words/java/) untuk rincian lebih lanjut dan fitur-fitur lanjutan.

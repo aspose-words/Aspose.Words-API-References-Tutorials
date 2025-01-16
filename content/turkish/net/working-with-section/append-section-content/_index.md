@@ -120,7 +120,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programatik olarak olu
 
 ## 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 
-Destek almak için şu adresi ziyaret edebilirsiniz:[Aspose destek forumu](https://forum.aspose.com/c/words/8).
+ Destek almak için şu adresi ziyaret edebilirsiniz:[Aspose destek forumu](https://forum.aspose.com/c/words/8).
 
 ## 5. Aspose.Words for .NET ile diğer belge türlerini düzenleyebilir miyim?
 

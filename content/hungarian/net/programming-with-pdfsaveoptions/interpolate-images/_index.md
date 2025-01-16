@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-A`InterpolateImages` tulajdonság értékre van állítva`true` annak biztosítása érdekében, hogy a PDF-ben lévő képek interpolálva legyenek, javítva azok minőségét.
+ A`InterpolateImages` tulajdonság értékre van állítva`true` annak biztosítása érdekében, hogy a PDF-ben lévő képek interpolálva legyenek, javítva azok minőségét.
 
 ## 4. lépés: Mentse el a dokumentumot PDF formátumban
 

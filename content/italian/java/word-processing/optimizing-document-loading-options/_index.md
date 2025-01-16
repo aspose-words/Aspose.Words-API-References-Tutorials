@@ -46,7 +46,7 @@ Document document = new Document(htmlFilePath, loadOptions);
 
 ### Caricamento dei documenti RTF
 
-I documenti Rich Text Format (RTF) sono spesso utilizzati per la loro compatibilità su diverse piattaforme. Aspose.Words for Java semplifica il caricamento efficiente di documenti RTF:
+documenti Rich Text Format (RTF) sono spesso utilizzati per la loro compatibilità su diverse piattaforme. Aspose.Words for Java semplifica il caricamento efficiente di documenti RTF:
 
 ```java
 // Aggiungere le importazioni necessarie
@@ -66,7 +66,7 @@ Document document = new Document(rtfFilePath, loadOptions);
 
 ### Caricamento documenti TXT
 
-documenti di testo normale (TXT) sono leggeri e facili da usare. Ecco come puoi caricarli usando Aspose.Words per Java:
+I documenti di testo normale (TXT) sono leggeri e facili da usare. Ecco come puoi caricarli usando Aspose.Words per Java:
 
 ```java
 // Aggiungere le importazioni necessarie

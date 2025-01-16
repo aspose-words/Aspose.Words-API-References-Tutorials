@@ -150,7 +150,7 @@ Aspose.Words for Java의 정리 옵션은 메일 병합 프로세스 중에 문�
 
 ###  의 목적은 무엇입니까?`REMOVE_UNUSED_REGIONS` cleanup option?
 
-그만큼`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` 옵션은 메일 병합 프로세스 중에 해당 데이터가 없는 문서의 영역을 제거하는 데 사용됩니다. 사용하지 않는 자리 표시자를 제거하여 문서를 깔끔하게 유지하는 데 도움이 됩니다.
+ 그만큼`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` 옵션은 메일 병합 프로세스 중에 해당 데이터가 없는 문서의 영역을 제거하는 데 사용됩니다. 사용하지 않는 자리 표시자를 제거하여 문서를 깔끔하게 유지하는 데 도움이 됩니다.
 
 ### Aspose.Words for Java를 사용하여 문서에서 빈 테이블 행을 제거할 수 있나요?
 
@@ -166,7 +166,7 @@ Aspose.Words for Java의 정리 옵션은 메일 병합 프로세스 중에 문�
 
 ###  차이점은 무엇입니까?`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-그만큼`REMOVE_EMPTY_FIELDS` 옵션은 메일 병합 프로세스 중에 데이터가 없거나 비어 있는 병합 필드를 제거합니다. 반면에,`REMOVE_UNUSED_FIELDS`옵션은 병합 중에 데이터가 채워지지 않은 병합 필드를 제거합니다. 이러한 필드 중에서 선택하는 것은 내용이 없는 필드를 제거할지 또는 특정 병합 작업에서 사용되지 않는 필드를 제거할지에 따라 달라집니다.
+ 그만큼`REMOVE_EMPTY_FIELDS` 옵션은 메일 병합 프로세스 중에 데이터가 없거나 비어 있는 병합 필드를 제거합니다. 반면에,`REMOVE_UNUSED_FIELDS`옵션은 병합 중에 데이터가 채워지지 않은 병합 필드를 제거합니다. 이러한 필드 중에서 선택하는 것은 내용이 없는 필드를 제거할지 또는 특정 병합 작업에서 사용되지 않는 필드를 제거할지에 따라 달라집니다.
 
 ### 구두점이 있는 문단을 제거할 수 있도록 어떻게 할 수 있나요?
 

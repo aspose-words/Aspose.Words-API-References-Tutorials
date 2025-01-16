@@ -355,4 +355,4 @@ Um Text in Feldern beim Ersetzen zu ignorieren, können Sie die`IgnoreFields` Ei
 
 ### Wofür ist die Option UseLegacyOrder?
 
-Der`UseLegacyOrder` Option in`FindReplaceOptions` ermöglicht Ihnen, bei Such- und Ersetzungsvorgängen die alte Reihenfolge zu verwenden. Dies kann in bestimmten Szenarien nützlich sein, in denen das alte Reihenfolgeverhalten erwünscht ist.
+ Der`UseLegacyOrder` Option in`FindReplaceOptions` ermöglicht Ihnen, bei Such- und Ersetzungsvorgängen die alte Reihenfolge zu verwenden. Dies kann in bestimmten Szenarien nützlich sein, in denen das alte Reihenfolgeverhalten erwünscht ist.

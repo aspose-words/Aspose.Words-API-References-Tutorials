@@ -106,7 +106,7 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 嵌套字段是其中包含其他字段的字段。它允許文件中包含更複雜和有條件的內容。
 
 ### 我可以在 IF 欄位中使用其他欄位嗎？
-是的，您可以在 IF 欄位中嵌套各種欄位（例如日期、時間和作者）來建立動態內容。
+是的，您可以在 IF 欄位中嵌套各種欄位（例如日期、時間和作者）以建立動態內容。
 
 ### Aspose.Words for .NET 是免費的嗎？
  Aspose.Words for .NET 是一個商業庫，但您可以獲得[免費試用](https://releases.aspose.com/)嘗試一下。

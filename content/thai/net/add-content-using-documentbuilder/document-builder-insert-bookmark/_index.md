@@ -71,7 +71,7 @@ builder.StartBookmark("FineBookmark");
 builder.Writeln("This is just a fine bookmark.");
 ```
 
-การ`Writeln` วิธีการเพิ่มย่อหน้าใหม่พร้อมข้อความที่ระบุลงในเอกสาร
+ การ`Writeln` วิธีการเพิ่มย่อหน้าใหม่พร้อมข้อความที่ระบุลงในเอกสาร
 
 ## ขั้นตอนที่ 5: สิ้นสุดการบุ๊กมาร์ก
 
@@ -81,7 +81,7 @@ builder.Writeln("This is just a fine bookmark.");
 builder.EndBookmark("FineBookmark");
 ```
 
-การ`EndBookmark` วิธีการนี้จะทำให้บุ๊กมาร์กที่เราเริ่มไว้ก่อนหน้านี้เสร็จสมบูรณ์
+ การ`EndBookmark` วิธีการนี้จะทำให้บุ๊กมาร์กที่เราเริ่มไว้ก่อนหน้านี้เสร็จสมบูรณ์
 
 ## ขั้นตอนที่ 6: บันทึกเอกสาร
 

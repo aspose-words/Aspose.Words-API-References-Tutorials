@@ -23,7 +23,7 @@ pip install aspose-words
 2. De module importeren: importeer de vereiste module in uw Python-script.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Een eenvoudige kop- en voettekst toevoegen
@@ -33,30 +33,18 @@ Volg deze stappen om een eenvoudige kop- en voettekst aan uw Word-document toe t
 1. Een document maken: maak een nieuw Word-document met Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Kop- en voettekst toevoegen: gebruik de`sections` eigenschap van het document om toegang te krijgen tot secties. Gebruik vervolgens de`headers_footers` eigenschap om kop- en voetteksten toe te voegen.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Inhoud toevoegen: Voeg inhoud toe aan de kop- en voettekst.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Het document opslaan: Sla het document op met de kop- en voettekst.
+3. Het document opslaan: Sla het document op met de kop- en voettekst.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Tabellen toevoegen: Voeg tabellen toe voor tabelvormige informatie.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Dynamische velden: gebruik dynamische velden voor automatische gegevensinvoeging.
+2. Dynamische velden: gebruik dynamische velden voor automatische gegevensinvoeging.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. Aanpassen naar behoefte: pas elke kop- en voettekst aan volgens uw wensen.
 
 ## Kop- en voetteksten verwijderen
 
@@ -150,4 +128,4 @@ Ja, u kunt de inhoud van kop- en voetteksten wissen om ze effectief te verwijder
 
 ### Waar kan ik meer leren over Aspose.Words voor Python?
 
-Voor meer gedetailleerde documentatie en voorbeelden, bezoek de[Aspose.Words voor Python API-referentie](https://reference.aspose.com/words/python-net/).
+ Voor meer gedetailleerde documentatie en voorbeelden, bezoek de[Aspose.Words voor Python API-referentie](https://reference.aspose.com/words/python-net/).

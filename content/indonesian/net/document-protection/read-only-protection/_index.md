@@ -53,13 +53,13 @@ Penjelasan:
 Selanjutnya, kita perlu mengatur kata sandi untuk proteksi penulisan. Kata sandi ini dapat terdiri dari 15 karakter.
 
 ```csharp
-//Masukkan kata sandi yang panjangnya hingga 15 karakter.
+// Masukkan kata sandi yang panjangnya hingga 15 karakter.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
 Penjelasan:
 
-- Itu`SetPassword` metode dipanggil pada`WriteProtection` milik dokumen.
+-  Itu`SetPassword` metode dipanggil pada`WriteProtection` milik dokumen.
 - Kami menyediakan kata sandi ("MyPassword" dalam kasus ini) yang akan diperlukan untuk menghapus perlindungan.
 
 ## Langkah 3: Aktifkan Rekomendasi Hanya Baca
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Penjelasan:
 
-- Itu`ReadOnlyRecommended` properti diatur ke`true`.
+-  Itu`ReadOnlyRecommended` properti diatur ke`true`.
 - Ini akan meminta pengguna untuk membuka dokumen dalam mode baca-saja, meskipun mereka dapat memilih untuk mengabaikan rekomendasi tersebut.
 
 ## Langkah 4: Terapkan Perlindungan Hanya Baca
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Penjelasan:
 
-- Itu`Protect` metode dipanggil pada dokumen dengan`ProtectionType.ReadOnly` sebagai argumen.
+-  Itu`Protect` metode dipanggil pada dokumen dengan`ProtectionType.ReadOnly` sebagai argumen.
 - Metode ini menegakkan perlindungan baca-saja, mencegah modifikasi apa pun pada dokumen tanpa kata sandi.
 
 ## Langkah 5: Simpan Dokumen
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Penjelasan:
 
-- Itu`Save` Metode ini dipanggil pada dokumen, yang menentukan jalur dan nama file.
+-  Itu`Save` Metode ini dipanggil pada dokumen, yang menentukan jalur dan nama file.
 - Dokumen disimpan dengan perlindungan baca-saja.
 
 ## Kesimpulan

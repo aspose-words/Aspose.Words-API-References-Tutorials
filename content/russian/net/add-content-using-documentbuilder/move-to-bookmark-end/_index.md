@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Понимание MoveToBookmark
 
-The`MoveToBookmark`Метод позволяет вам перейти к определенной закладке в вашем документе. Сигнатура метода:
+ The`MoveToBookmark`Метод позволяет вам перейти к определенной закладке в вашем документе. Сигнатура метода:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

@@ -14,7 +14,7 @@ Stalo se vám, že jste potřebovali zabezpečit dokument heslem? Nejsi sám. S 
 ## Předpoklady
 
 Než si ušpiníme ruce nějakým kódem, budete potřebovat několik věcí:
-1.  Aspose.Words pro .NET: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pro .NET: Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo libovolné C# IDE dle vašeho výběru.
 3. .NET Framework: Ujistěte se, že jej máte nainstalovaný.
 4.  Licence: Můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/) nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro plné funkce.

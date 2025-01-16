@@ -60,7 +60,7 @@ try {
 ```
 
 Magyarázat:
-- A`try-catch` blokk biztosítja, hogy a dokumentum betöltése során felmerülő hibákat a rendszer rögzíti és megfelelően kezeli.
+-  A`try-catch`blokk biztosítja, hogy a dokumentum betöltése során felmerülő hibákat a rendszer rögzíti és megfelelően kezeli.
 
 ## 2. lépés: Inicializálja az ImageSaveOptions opciót
 
@@ -71,7 +71,7 @@ A dokumentum betöltése után a következő lépés a dokumentum képként tör
 `ImageSaveOptions` egy olyan osztály, amely lehetővé teszi annak megadását, hogy a dokumentumot hogyan kell képként menteni.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 Magyarázat:

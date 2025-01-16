@@ -7,7 +7,7 @@ type: docs
 weight: 14
 url: /pt/python-net/document-splitting-and-formatting/document-formatting-techniques/
 ---
-A formatação de documentos desempenha um papel fundamental na apresentação de conteúdo com impacto visual. No reino da programação, o Aspose.Words para Python se destaca como uma ferramenta poderosa para dominar técnicas de formatação de documentos. Quer você esteja criando relatórios, gerando faturas ou projetando folhetos, o Aspose.Words permite que você manipule documentos programaticamente. Este artigo o guiará por várias técnicas de formatação de documentos usando o Aspose.Words para Python, garantindo que seu conteúdo se destaque em termos de estilo e apresentação.
+formatação de documentos desempenha um papel fundamental na apresentação de conteúdo com impacto visual. No reino da programação, o Aspose.Words para Python se destaca como uma ferramenta poderosa para dominar técnicas de formatação de documentos. Quer você esteja criando relatórios, gerando faturas ou projetando folhetos, o Aspose.Words permite que você manipule documentos programaticamente. Este artigo o guiará por várias técnicas de formatação de documentos usando o Aspose.Words para Python, garantindo que seu conteúdo se destaque em termos de estilo e apresentação.
 
 ## Introdução ao Aspose.Words para Python
 
@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Aplicando estilos e tamanhos de fonte
-
-Melhore a legibilidade e o apelo visual do seu documento aplicando estilos e tamanhos de fonte. Use o seguinte código para alterar o estilo e o tamanho da fonte de um parágrafo:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Formatação de parágrafos e títulos
+## Formatando Parágrafos
 
 Para estruturar seu documento efetivamente, formatar parágrafos e títulos é crucial. Faça isso usando o código abaixo:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Trabalhando com listas e marcadores
 
 Listas e marcadores organizam o conteúdo e fornecem clareza. Implemente-os usando Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Gerenciando Layout de Página e Margens
+## Gerenciando o layout da página
 
 Controle o layout da página e as margens para uma apresentação ideal:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Aplicando Estilos e Temas
@@ -169,6 +154,6 @@ pip install aspose-words
  Sim, você pode proteger seu documento configurando a proteção de documentos usando o`protect` método.
 
 ### Para quais formatos posso exportar meus documentos?
-O Aspose.Words permite que você exporte seus documentos para vários formatos, incluindo PDF, DOCX e muito mais.
+Aspose.Words permite que você exporte seus documentos para vários formatos, incluindo PDF, DOCX e muito mais.
 
  Para mais detalhes e para acessar a documentação e downloads do Aspose.Words for Python, visite[aqui](https://reference.aspose.com/words/python-net/).

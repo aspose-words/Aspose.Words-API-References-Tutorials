@@ -15,7 +15,7 @@ V tomto tutoriálu se ponoříme do toho, jak vložit pole autora do dokumentu a
 
 Než se pustíme do výukového programu, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET Library: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Visual Studio: Zde napíšeme a spustíme náš kód.
 - .NET Framework: Ujistěte se, že je na vašem počítači nainstalováno.
 - Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
@@ -86,7 +86,7 @@ Nyní je čas vložit pole autora do našeho dokumentu.
 FieldAuthor field = (FieldAuthor)para.AppendField(FieldType.FieldAuthor, false);
 ```
 
-2. Nastavit jméno autora: Nastavte jméno autora. Toto je název, který se objeví v dokumentu.
+2. Nastavit jméno autora: Nastavte jméno autora. Toto je jméno, které se objeví v dokumentu.
 
 ```csharp
 field.AuthorName = "Test1";

@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-Các`InsertChart` phương pháp này chèn một biểu đồ có kiểu được chỉ định (trong trường hợp này là Cột) và kích thước vào tài liệu.
+ Các`InsertChart` phương pháp này chèn một biểu đồ có kiểu được chỉ định (trong trường hợp này là Cột) và kích thước vào tài liệu.
 
 ## Bước 3: Tùy chỉnh Chuỗi Biểu đồ
 
@@ -86,7 +86,7 @@ Cuối cùng, hãy định dạng các con số trên trục Y để dễ đọc
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-Các`FormatCode` thuộc tính cho phép bạn thiết lập định dạng tùy chỉnh cho các số trên trục. Trong ví dụ này,`#,##0`đảm bảo rằng các số lớn được hiển thị với dấu phẩy cho hàng nghìn.
+ Các`FormatCode` thuộc tính cho phép bạn thiết lập định dạng tùy chỉnh cho các số trên trục. Trong ví dụ này,`#,##0`đảm bảo rằng các số lớn được hiển thị với dấu phẩy cho hàng nghìn.
 
 ## Bước 5: Lưu tài liệu
 

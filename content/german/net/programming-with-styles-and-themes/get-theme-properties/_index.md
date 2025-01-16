@@ -64,7 +64,7 @@ Designs in Word-Dokumenten enthalten häufig Einstellungen für verschiedene Sch
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
-Der`MajorFonts` -Eigenschaft bietet Zugriff auf die wichtigsten Schriftarteinstellungen. In diesem Beispiel rufen wir speziell die im Design verwendete lateinische Schriftart ab. Sie können ähnlichen Code verwenden, um andere wichtige Schriftarten wie ostasiatische oder komplexe Skriptschriftarten abzurufen.
+ Der`MajorFonts` -Eigenschaft bietet Zugriff auf die wichtigsten Schriftarteinstellungen. In diesem Beispiel rufen wir speziell die im Design verwendete lateinische Schriftart ab. Sie können ähnlichen Code verwenden, um andere wichtige Schriftarten wie ostasiatische oder komplexe Skriptschriftarten abzurufen.
 
 ## Schritt 4: Kleinere Schriftarten abrufen
 
@@ -84,7 +84,7 @@ Designs definieren auch verschiedene Farben, die für Akzente im Dokument verwen
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
-Der`Colors` Eigentum der`Theme` Mit der Klasse können Sie verschiedene im Design definierte Farbakzente abrufen und so einheitliche Farbschemata in Ihren Dokumenten verwalten und anwenden.
+ Der`Colors` Eigentum der`Theme` Mit der Klasse können Sie verschiedene im Design definierte Farbakzente abrufen und so einheitliche Farbschemata in Ihren Dokumenten verwalten und anwenden.
 
 ## Abschluss
 
@@ -96,7 +96,7 @@ Egal, ob Sie das Aussehen eines einzelnen Dokuments anpassen oder Vorlagen für 
 
 ### Was ist Aspose.Words für .NET?
 
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Verwalten und Bearbeiten von Word-Dokumenten in .NET-Anwendungen. Sie bietet umfangreiche Funktionen zum Erstellen, Bearbeiten und Konvertieren von Dokumenten.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Verwalten und Bearbeiten von Word-Dokumenten in .NET-Anwendungen. Es bietet umfangreiche Funktionen zum Erstellen, Bearbeiten und Konvertieren von Dokumenten.
 
 ### Wie installiere ich Aspose.Words für .NET?
 

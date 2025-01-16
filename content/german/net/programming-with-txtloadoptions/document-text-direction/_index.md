@@ -89,7 +89,7 @@ Das Festlegen der Textrichtung in Word-Dokumenten ist mit Aspose.Words für .NET
 
 ###  Was ist der`DocumentDirection` property used for?
 
-Der`DocumentDirection` Immobilien in`TxtLoadOptions` bestimmt die Textrichtung für das Dokument. Sie kann eingestellt werden auf`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , oder`DocumentDirection.RightToLeft`.
+ Der`DocumentDirection` Immobilien in`TxtLoadOptions` bestimmt die Textrichtung für das Dokument. Sie kann eingestellt werden auf`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , oder`DocumentDirection.RightToLeft`.
 
 ### Kann ich die Textrichtung für bestimmte Absätze statt für das gesamte Dokument festlegen?
 

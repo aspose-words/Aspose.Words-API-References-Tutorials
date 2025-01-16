@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /pt/java/word-processing/mastering-advanced-save-settings/
 ---
+
 Você está pronto para levar suas habilidades de processamento de documentos para o próximo nível? Neste guia abrangente, vamos nos aprofundar no domínio de configurações avançadas de salvamento para documentos usando o Aspose.Words para Java. Seja você um desenvolvedor experiente ou apenas começando, vamos guiá-lo pelas complexidades da manipulação de documentos com o Aspose.Words para Java.
 
 ## Introdução
@@ -25,13 +26,13 @@ Aprenda a especificar o formato e a orientação dos seus documentos. Seja uma c
 ```java
 // Definir formato do documento para DOCX
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
-// Definir orientação da página como Paisagem
+//Definir orientação da página como Paisagem
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## Controlando as margens da página
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 polegada
 pageSetup.setRightMargin(72.0); // 1 polegada
 pageSetup.setTopMargin(36.0); // 0,5 polegada
 pageSetup.setBottomMargin(36.0); // 0,5 polegada
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## Gerenciando Cabeçalhos e Rodapés
@@ -56,11 +57,11 @@ Cabeçalhos e rodapés geralmente contêm informações críticas. Explore como 
 ```java
 // Adicione um cabeçalho à primeira página
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## Incorporando fontes para visualização em várias plataformas
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## Protegendo seus documentos
@@ -85,7 +86,7 @@ Segurança importa, especialmente ao lidar com documentos sensíveis. Aprenda co
 // Proteja o documento com uma senha
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## Personalizando marcas d'água
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## Otimizando o tamanho do documento
@@ -111,7 +112,7 @@ Arquivos de documentos grandes podem ser difíceis de manejar. Descubra técnica
 // Otimizar o tamanho do documento
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## Exportando para diferentes formatos
@@ -121,7 +122,7 @@ doc.save("optimized_document.docx", SaveFormat.DOCX);
 ```java
 // Exportar para PDF
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## Automatizando a geração de documentos
@@ -133,7 +134,7 @@ A automação é um divisor de águas para a geração de documentos. Aprenda co
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## Trabalhando com metadados de documentos
@@ -143,28 +144,31 @@ Metadados contêm informações valiosas sobre um documento. Exploraremos como t
 ```java
 // Acessar e modificar metadados de documentos
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## Manipulando versões de documentos
 
-O versionamento de documentos é crucial em ambientes colaborativos. Descubra como gerenciar diferentes versões de seus documentos de forma eficaz.
+versionamento de documentos é crucial em ambientes colaborativos. Descubra como gerenciar diferentes versões de seus documentos de forma eficaz.
 
 ```java
-// Comparar versões de documentos
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+// Comparar documentos com revisões gerará uma exceção.
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## Comparação avançada de documentos
+
+Compare documentos com precisão usando técnicas avançadas fornecidas pelo Aspose.Words para Java.
 
 ```java
 // Comparação avançada de documentos
@@ -217,7 +221,7 @@ O Aspose.Words para Java oferece suporte à exportação de documentos para vár
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### O Aspose.Words para Java é adequado para geração de documentos em lote?
@@ -228,7 +232,7 @@ Sim, o Aspose.Words para Java é adequado para geração de documentos em lote, 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### Como posso comparar diferenças entre dois documentos do Word?

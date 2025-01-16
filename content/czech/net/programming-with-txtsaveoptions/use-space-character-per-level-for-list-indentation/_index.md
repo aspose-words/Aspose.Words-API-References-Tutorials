@@ -104,4 +104,4 @@ Pomocí těchto kroků jste úspěšně vytvořili dokument s víceúrovňovým 
 Ano, před uložením dokumentu můžete kdykoli upravit formátování seznamu a nastavení odsazení.
 
 ### Jaké další formáty dokumentů podporují nastavení odsazení seznamu?
-Kromě textových souborů lze při použití Aspose.Words použít nastavení odsazení seznamu na jiné formáty, jako je DOCX, PDF a HTML.
+Kromě textových souborů lze nastavení odsazení seznamu použít i na jiné formáty, jako je DOCX, PDF a HTML, když používáte Aspose.Words.

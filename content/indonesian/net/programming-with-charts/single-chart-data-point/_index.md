@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-Itu`InsertChart` Metode ini mengambil tipe grafik, lebar, dan tinggi sebagai parameter. Dalam kasus ini, kita memasukkan grafik garis dengan lebar 432 dan tinggi 252.
+ Itu`InsertChart` Metode ini mengambil tipe grafik, lebar, dan tinggi sebagai parameter. Dalam kasus ini, kita memasukkan grafik garis dengan lebar 432 dan tinggi 252.
 
 ## Langkah 3: Akses Seri Bagan
 

@@ -95,7 +95,7 @@ Aspose.Words for Java obsługuje różne typy rozszerzeń internetowych, w tym t
 
 ### Jak mogę testować i wyświetlać podgląd rozszerzeń internetowych w moim dokumencie?
 
-Testowanie i podgląd rozszerzeń internetowych w dokumencie można wykonać, otwierając dokument w środowisku, które obsługuje konkretny typ rozszerzenia internetowego, który dodałeś. Na przykład, jeśli dodałeś dodatek Office (OMEX), możesz otworzyć dokument w aplikacji Office, która obsługuje dodatki, takiej jak Microsoft Word. Umożliwia to interakcję z funkcjonalnością rozszerzenia internetowego i testowanie jej w dokumencie.
+Testowanie i podgląd rozszerzeń internetowych w dokumencie można wykonać, otwierając dokument w środowisku, które obsługuje konkretny typ rozszerzenia internetowego, który dodałeś. Na przykład, jeśli dodałeś dodatek Office (OMEX), możesz otworzyć dokument w aplikacji Office, która obsługuje dodatki, takiej jak Microsoft Word. Umożliwia to interakcję i testowanie funkcjonalności rozszerzenia internetowego w dokumencie.
 
 ### Czy istnieją jakieś ograniczenia lub kwestie związane ze zgodnością podczas korzystania z rozszerzeń internetowych w Aspose.Words dla Java?
 

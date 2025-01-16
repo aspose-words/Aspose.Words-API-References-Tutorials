@@ -71,7 +71,7 @@ Adicionamos uma linha simples de texto com a qual trabalharemos. Sinta-se à von
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
-O`Replace` método é direto. Especificamos a palavra a ser encontrada, a palavra de substituição e as opções para a operação de localizar e substituir.
+ O`Replace` método é direto. Especificamos a palavra a ser encontrada, a palavra de substituição e as opções para a operação de localizar e substituir.
 
 ## Etapa 5: Salve o documento
 

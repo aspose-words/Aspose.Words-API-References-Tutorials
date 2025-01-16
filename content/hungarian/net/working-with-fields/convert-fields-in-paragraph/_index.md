@@ -9,7 +9,7 @@ url: /hu/net/working-with-fields/convert-fields-in-paragraph/
 ---
 ## Bevezetés
 
-Volt már valaha olyan, hogy belegabalyodott a Word-dokumentumok mezőinek hálójába, különösen akkor, ha ezeket az alattomos IF-mezőket egyszerű szöveggé akarja konvertálni? Nos, nem vagy egyedül. Ma belemerülünk abba, hogyan lehet ezt elsajátítani az Aspose.Words for .NET segítségével. Képzelje el, hogy varázslóként varázsló varázspálcával alakítja át a mezőket egy pöccintéssel a kódjával. Érdekesen hangzik? Kezdjük el ezt a varázslatos utazást!
+Volt már valaha olyan, hogy belegabalyodott a Word-dokumentumok mezőinek hálójába, különösen akkor, ha ezeket az alattomos IF-mezőket egyszerű szöveggé akarja konvertálni? Nos, nem vagy egyedül. Ma belemerülünk abba, hogyan lehet ezt elsajátítani az Aspose.Words for .NET segítségével. Képzelje el, hogy varázslóként varázsló varázspálcával alakítja át a mezőket egy pöccintéssel a kódjával. Izgalmasnak hangzik? Kezdjük el ezt a varázslatos utazást!
 
 ## Előfeltételek
 

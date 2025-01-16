@@ -94,5 +94,5 @@ doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ### Πού μπορώ να βρω την τεκμηρίωση;
  Διατίθεται ολοκληρωμένη τεκμηρίωση[εδώ](https://reference.aspose.com/words/net/).
 
-### Πώς μπορώ να λάβω υποστήριξη;
+### Πώς λαμβάνω υποστήριξη;
  Για υποστήριξη, επισκεφτείτε το Aspose.Words[δικαστήριο](https://forum.aspose.com/c/words/8).

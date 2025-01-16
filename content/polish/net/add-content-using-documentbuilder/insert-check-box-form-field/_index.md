@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Krok 3: Inicjalizacja narzędzia Document Builder
 
-Ten`DocumentBuilder` class to narzędzie, które wybierasz, aby dodać treść do dokumentu. Pomyśl o nim jak o swoim pędzlu i palecie.
+ Ten`DocumentBuilder` class to narzędzie, które wybierasz, aby dodać treść do dokumentu. Pomyśl o nim jak o swoim pędzlu i palecie.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

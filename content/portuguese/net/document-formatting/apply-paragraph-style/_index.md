@@ -84,7 +84,7 @@ E aí está! Você acabou de estilizar seu documento do Word usando o Aspose.Wor
 
 ### Posso aplicar vários estilos em um único documento?
 
-Absolutamente! Você pode aplicar estilos diferentes a parágrafos diferentes para atender às suas necessidades.
+Claro! Você pode aplicar estilos diferentes a parágrafos diferentes para atender às suas necessidades.
 
 ### E se eu quiser usar um estilo personalizado?
 

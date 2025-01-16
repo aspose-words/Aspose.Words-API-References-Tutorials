@@ -124,7 +124,7 @@ I masz! Udało Ci się wyeksportować pole formularza wprowadzania tekstu jako z
 
 ### Czy mogę dostosować eksportowany kod HTML?
 
- Oczywiście! Aspose.Words udostępnia różne opcje dostosowywania wyjścia HTML. Zapoznaj się z[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Oczywiście! Aspose.Words udostępnia różne opcje dostosowywania wyjścia HTML. Zapoznaj się z[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### Czy Aspose.Words jest kompatybilny z .NET Core?
 

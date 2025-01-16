@@ -29,7 +29,7 @@ Amikor közösen dolgozunk a dokumentumokon, nagyon fontos nyomon követni a kü
 
 ## Dokumentumverziók betöltése
 
-A dokumentumok verzióinak összehasonlításához be kell töltenie a fájlokat a memóriába. Íme, hogyan:
+dokumentumok verzióinak összehasonlításához be kell töltenie a fájlokat a memóriába. Íme, hogyan:
 
 ```python
 doc1_path = "path/to/first/document.docx"
@@ -45,16 +45,6 @@ doc2 = aw.Document(doc2_path)
 
 ```python
 comparison = doc1.compare(doc2, "Author Name", datetime.now())
-```
-
-## Változások kiemelése
-
-A változtatások láthatóbbá tételéhez kiemelheti őket:
-
-```python
-highlighter = aw.markup.HighlightColor.GRAY
-for change in comparison.changes:
-    change.format_revision(highlighter)
 ```
 
 ## Változások elfogadása vagy elutasítása
@@ -96,4 +86,4 @@ Igen, az Aspose.Words for Python különféle dokumentumformátumokat támogat, 
 ### Automatizálhatom az összehasonlítási folyamatot?
 Természetesen az Aspose.Words for Python integrálható a munkafolyamatba a dokumentumverziók automatikus összehasonlítása érdekében.
 
-hatékony felülvizsgálat-ellenőrzés megvalósítása elengedhetetlen a mai együttműködésen alapuló munkakörnyezetekben. Az Aspose.Words for Python leegyszerűsíti a folyamatot, lehetővé téve a dokumentumverziók zökkenőmentes összehasonlítását és kezelését. Akkor minek várni? Kezdje el integrálni ezt a hatékony eszközt projektjeibe, és javítsa a revízióvezérlési munkafolyamatot.
+A hatékony felülvizsgálat-ellenőrzés megvalósítása elengedhetetlen a mai együttműködésen alapuló munkakörnyezetekben. Az Aspose.Words for Python leegyszerűsíti a folyamatot, lehetővé téve a dokumentumverziók zökkenőmentes összehasonlítását és kezelését. Akkor minek várni? Kezdje el integrálni ezt a hatékony eszközt projektjeibe, és javítsa a revízióvezérlési munkafolyamatot.

@@ -73,7 +73,7 @@ Questo frammento di codice presuppone che tu voglia clonare la prima tabella nel
 Table tableClone = (Table) table.Clone(true);
 ```
 
-IL`true` Il parametro garantisce che il clone includa tutta la formattazione e il contenuto della tabella originale.
+ IL`true` Il parametro garantisce che il clone includa tutta la formattazione e il contenuto della tabella originale.
 
 ## Passaggio 5: inserire la tabella clonata nel documento
 
@@ -115,7 +115,7 @@ La clonazione di tabelle nei documenti Word tramite Aspose.Words per .NET è un 
 Sì, è possibile clonare più tabelle eseguendo un'iterazione su ogni tabella nel documento e applicando la stessa logica di clonazione.
 
 ### Cosa succede se la tabella contiene celle unite?
-IL`Clone` Il metodo conserva tutta la formattazione, comprese le celle unite, garantendo un duplicato esatto della tabella.
+ IL`Clone` Il metodo conserva tutta la formattazione, comprese le celle unite, garantendo un duplicato esatto della tabella.
 
 ### Come faccio a clonare una tabella specifica in base al nome?
 È possibile identificare le tabelle in base a proprietà personalizzate o contenuti univoci e quindi clonare la tabella desiderata utilizzando passaggi simili.

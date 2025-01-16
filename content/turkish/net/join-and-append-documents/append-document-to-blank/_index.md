@@ -122,7 +122,7 @@ Evet, birden fazla belgeyi tekrar tekrar çağırarak ekleyebilirsiniz.`AppendDo
 
 ### Kaynak belgenin farklı bir biçimlendirmesi varsa ne olur?
 
-The`ImportFormatMode.KeepSourceFormatting` kaynak belgenin biçimlendirmesinin eklendiğinde korunmasını sağlar.
+ The`ImportFormatMode.KeepSourceFormatting` kaynak belgenin biçimlendirmesinin eklendiğinde korunmasını sağlar.
 
 ### Aspose.Words'ü kullanmak için lisansa ihtiyacım var mı?
 

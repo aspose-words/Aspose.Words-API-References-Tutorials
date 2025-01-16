@@ -16,7 +16,7 @@ Szia kódolótárs! Ha valaha is fontproblémákkal küszködött a Word-dokumen
 Mielőtt elkezdenénk, győződjünk meg arról, hogy rendelkezik-e mindennel, amire szüksége van:
 
 1.  Aspose.Words for .NET: Ha még nem tette meg, letöltheti[itt](https://releases.aspose.com/words/net/).
-2.  Érvényes licenc: licencet vásárolhat[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+2.  Érvényes licenc: licencet vásárolhat[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
 3. Alapvető ismeretek a C#-ról és a .NET-ről: Ez az oktatóanyag feltételezi, hogy kényelmesen ismeri az alapvető programozási fogalmakat a C# nyelven.
 4. Visual Studio: Bármely verzió, amely támogatja a .NET-keretrendszert.
 
@@ -93,7 +93,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
  Az Aspose.Words for .NET letölthető innen[itt](https://releases.aspose.com/words/net/). Kövesse a dokumentációban található telepítési utasításokat.
 
 ### Használhatom az Aspose.Words for .NET-et licenc nélkül?
- Igen, de ennek lesznek bizonyos korlátai. A teljes funkcionalitás érdekében licencet vásárolhat[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+ Igen, de ennek lesznek bizonyos korlátai. A teljes funkcionalitás érdekében licencet vásárolhat[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Miért nem jelennek meg megfelelően a betűtípusaim a HTML-ben?
  Ez akkor fordulhat elő, ha a betűtípusok nincsenek megfelelően feloldva az átalakítás során. Használata`ResolveFontNames = true` be`HtmlSaveOptions` segíthet a probléma megoldásában.

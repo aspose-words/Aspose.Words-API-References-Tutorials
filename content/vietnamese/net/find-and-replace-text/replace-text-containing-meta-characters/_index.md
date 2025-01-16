@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Chúng tôi đang tạo ra một`FindReplaceOptions`đối tượng và căn chỉnh đoạn văn vào giữa.
+ Chúng tôi đang tạo ra một`FindReplaceOptions` đối tượng và căn chỉnh đoạn văn vào giữa.
 
 ## Bước 4: Thay thế văn bản bằng ký tự Meta
 
 Đây là bước mà phép thuật xảy ra! Chúng ta sẽ thay thế từ "section" theo sau là ngắt đoạn và thêm gạch chân.
 
 ```csharp
-// Nhân đôi mỗi ngắt đoạn sau từ "section", thêm một chút gạch chân và căn giữa.
+//Nhân đôi mỗi ngắt đoạn sau từ "section", thêm một chút gạch chân và căn giữa.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

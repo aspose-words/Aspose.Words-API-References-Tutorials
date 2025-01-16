@@ -10,7 +10,7 @@ url: /fr/net/programming-with-shapes/detect-smart-art-shape/
 
 ## Introduction
 
-Bonjour ! Avez-vous déjà eu besoin de travailler avec SmartArt dans des documents Word par programmation ? Que vous automatisiez des rapports, créiez des documents dynamiques ou que vous vous lanciez simplement dans le traitement de documents, Aspose.Words pour .NET est là pour vous. Dans ce didacticiel, nous découvrirons comment détecter des formes SmartArt dans des documents Word à l'aide d'Aspose.Words pour .NET. Nous détaillerons chaque étape dans un guide détaillé et facile à suivre. À la fin de cet article, vous serez en mesure d'identifier sans effort les formes SmartArt dans n'importe quel document Word !
+Bonjour ! Avez-vous déjà eu besoin de travailler avec SmartArt dans des documents Word par programmation ? Que vous automatisiez des rapports, créiez des documents dynamiques ou que vous vous lanciez simplement dans le traitement de documents, Aspose.Words pour .NET est là pour vous. Dans ce didacticiel, nous découvrirons comment détecter des formes SmartArt dans des documents Word à l'aide d'Aspose.Words pour .NET. Nous détaillerons chaque étape dans un guide détaillé et facile à suivre. À la fin de cet article, vous serez en mesure d'identifier les formes SmartArt dans n'importe quel document Word sans effort !
 
 ## Prérequis
 
@@ -98,7 +98,7 @@ Aspose.Words pour .NET est une bibliothèque puissante qui permet aux développe
 
 ### 4. Comment puis-je obtenir de l'aide pour Aspose.Words pour .NET ?
 
-Vous pouvez obtenir de l'aide en visitant le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
+ Vous pouvez obtenir de l'aide en visitant le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
 
 ### 5. Puis-je manipuler les formes SmartArt par programmation ?
 

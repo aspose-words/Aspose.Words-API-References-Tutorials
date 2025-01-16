@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Ten`DocumentBuilder` jest klasą pomocniczą, która upraszcza proces tworzenia dokumentów.
+ Ten`DocumentBuilder` jest klasą pomocniczą, która upraszcza proces tworzenia dokumentów.
 
 ## Krok 3: Uruchom tabelę
 

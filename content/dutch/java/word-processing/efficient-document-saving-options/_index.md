@@ -54,7 +54,7 @@ Soms moet u elke pagina van uw document opslaan als een afbeelding. Aspose.Words
 
 ```java
 // Java-code om een document als afbeeldingen op te slaan
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Stel de resolutie in (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

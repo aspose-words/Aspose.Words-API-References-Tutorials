@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Penjelasan:
-Itu`DocumentBuilder` adalah alat praktis yang menyediakan metode untuk menavigasi dan mengubah dokumen. Di sini, kita akan menghubungkannya ke dokumen tujuan.
+ Itu`DocumentBuilder` adalah alat praktis yang menyediakan metode untuk menavigasi dan mengubah dokumen. Di sini, kita akan menghubungkannya ke dokumen tujuan.
 
 ## Langkah 3: Pindah ke Akhir Dokumen dan Sisipkan Hentian Halaman
 

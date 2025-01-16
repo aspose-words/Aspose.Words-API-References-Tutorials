@@ -129,4 +129,4 @@ Met deze vaardigheden kunt u de visuele presentatie van uw tabellen verbeteren, 
  Absoluut! Je kunt elke kleur gebruiken die beschikbaar is in de`System.Drawing.Color` klas.
 
 ### Hoe kan ik de tabel horizontaal centreren?  
-De`table.Alignment = TableAlignment.Center;` regel in de code centreert de tabel horizontaal op de pagina.
+ De`table.Alignment = TableAlignment.Center;` regel in de code centreert de tabel horizontaal op de pagina.

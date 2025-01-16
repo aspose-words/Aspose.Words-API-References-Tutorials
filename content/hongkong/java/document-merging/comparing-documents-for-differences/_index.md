@@ -7,82 +7,151 @@ type: docs
 weight: 12
 url: /zh-hant/java/document-merging/comparing-documents-for-differences/
 ---
+## 介紹
 
-## 比較文檔差異簡介
-
-在不斷發展的文件管理世界中，確保文件的準確性和一致性至關重要。無論您是處理法律合約、財務報告，還是只是追蹤文件中的修訂，比較文件差異的能力都是至關重要的功能。本逐步指南將引導您完成使用 Aspose.Words for Java（一個用於處理 Word 文件的強大 API）比較文件差異的過程。
+有沒有想過如何找出兩個 Word 文件之間的每一個差異？也許您正在修改文件或嘗試尋找協作者所做的變更。手動比較可能很乏味且容易出錯，但使用 Aspose.Words for Java，一切變得輕而易舉！該庫使您能夠輕鬆地自動進行文件比較、突出顯示修訂並合併更改。
 
 ## 先決條件
 
-在我們深入了解細節之前，讓我們確保您擁有所需的一切：
+在開始編寫程式碼之前，請確保您已準備好以下內容：  
+1. 您的系統上安裝了 Java 開發工具包 (JDK)。  
+2.  Aspose.Words for Java 函式庫。你可以[在這裡下載](https://releases.aspose.com/words/java/).  
+3. IntelliJ IDEA 或 Eclipse 等開發環境。  
+4. 基本熟悉 Java 程式設計。  
+5. 有效的 Aspose 許可證。如果您沒有，請取得一個[臨時許可證在這裡](https://purchase.aspose.com/temporary-license/).
 
-- Java 程式設計的基礎知識。
--  Aspose.Words for Java 程式庫已安裝。你可以下載它[這裡](https://releases.aspose.com/words/java/).
-- 整合開發環境 (IDE)，例如 IntelliJ IDEA 或 Eclipse。
+## 導入包
 
-## 設定您的 Java 項目
-
-首先，在 IDE 中建立一個新的 Java 項目，並將 Aspose.Words 函式庫新增至專案相依性。
-
-## 第 1 步：載入文檔
-
-比較文檔的第一步是載入要比較的文檔。您可以使用以下程式碼片段載入兩個文件：
+要使用Aspose.Words，您需要匯入必要的類別。以下是所需的導入：
 
 ```java
-//載入原始文檔
-Document docOriginal = new Document("original_document.docx");
-
-//載入修改後的文檔
-Document docModified = new Document("modified_document.docx");
+import com.aspose.words.*;
+import java.util.Date;
 ```
 
-代替`"original_document.docx"`和`"modified_document.docx"`以及您自己的文件的路徑。
+確保這些套件已正確新增至您的專案依賴項。
 
-## 第 2 步：比較文檔
 
-現在您已經加載了文檔，是時候對它們進行比較了。 Aspose.Words 提供了一個方便的方法來比較文件。您可以這樣做：
+在本節中，我們將把該過程分解為簡單的步驟。
+
+
+## 第 1 步：設定您的文檔
+
+首先，您需要兩個文檔：一個代表原始文檔，另一個代表編輯後的版本。創建它們的方法如下：
 
 ```java
-//比較兩個文檔
-DocumentComparer comparer = new DocumentComparer(docOriginal, docModified);
-comparer.compare();
+Document doc1 = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc1);
+builder.writeln("This is the original document.");
+
+Document doc2 = new Document();
+builder = new DocumentBuilder(doc2);
+builder.writeln("This is the edited document.");
 ```
 
-## 第三步：保存比較結果
+這將在記憶體中建立兩個具有基本內容的文件。您也可以使用載入現有的 Word 文檔`new Document("path/to/document.docx")`.
 
-比較文件後，您需要儲存結果。 Aspose.Words可讓您將比較結果儲存為新文件。方法如下：
+
+## 第 2 步：檢查現有修訂
+
+Word 文件中的修訂代表追蹤的變更。在比較之前，請確保兩個文件都不包含預先存在的修訂：
 
 ```java
-//保存比較結果
-comparer.save("comparison_result.docx");
+if (doc1.getRevisions().getCount() == 0 && doc2.getRevisions().getCount() == 0) {
+    System.out.println("No revisions found. Proceeding with comparison...");
+}
 ```
 
-## 第 4 步：查看差異
+如果存在修訂，您可能需要在繼續之前接受或拒絕它們。
 
-現在您已儲存比較結果，您可以查看原始文件和修改後的文件之間的差異。開啟“comparison_result.docx”以查看突出顯示的變更。
+
+## 第 3 步：比較文件
+
+使用`compare`尋找差異的方法。此方法比較目標文件（`doc2`）與來源文件（`doc1`）：
+
+```java
+doc1.compare(doc2, "AuthorName", new Date());
+```
+
+這裡：
+- AuthorName 是進行更改的人的姓名。
+- 日期是比較時間戳。
+
+
+## 第 4 步：流程修訂
+
+比較後，Aspose.Words 將在來源文件中產生修訂（`doc1`）。我們來分析一下這些修改：
+
+```java
+for (Revision r : doc1.getRevisions()) {
+    System.out.println("Revision type: " + r.getRevisionType());
+    System.out.println("Node type: " + r.getParentNode().getNodeType());
+    System.out.println("Changed text: " + r.getParentNode().getText());
+}
+```
+
+此循環提供有關每個修訂的詳細信息，例如更改類型和受影響的文字。
+
+
+## 第 5 步：接受所有修改
+
+如果您想要來源文件（`doc1`) 來配對目標文件 (`doc2`），接受所有修改：
+
+```java
+doc1.getRevisions().acceptAll();
+```
+
+本次更新`doc1`以反映所做的所有更改`doc2`.
+
+
+## 步驟6：儲存更新後的文檔
+
+最後，將更新後的文檔儲存到磁碟：
+
+```java
+doc1.save("Document.Compare.docx");
+```
+
+若要確認更改，請重新載入文件並驗證沒有剩餘的修訂：
+
+```java
+doc1 = new Document("Document.Compare.docx");
+if (doc1.getRevisions().getCount() == 0) {
+    System.out.println("Documents are now identical.");
+}
+```
+
+
+## 第 7 步：驗證文檔相等性
+
+為了確保文件相同，請比較它們的文字：
+
+```java
+if (doc1.getText().trim().equals(doc2.getText().trim())) {
+    System.out.println("Documents are equal.");
+}
+```
+
+如果文字匹配，恭喜您 - 您已成功比較並同步文件！
+
 
 ## 結論
 
-使用 Aspose.Words for Java 比較文件的差異是一個簡單的過程，可以大大增強您的文件管理工作流程。借助這個強大的 API，您可以輕鬆確保文件的準確性和一致性。
+有了 Aspose.Words for Java，文件比較不再是苦差事。只需幾行程式碼，您就可以找出差異、處理修訂並確保文件一致性。無論您是管理協作寫作專案還是審核法律文件，此功能都會改變遊戲規則。
 
 ## 常見問題解答
 
-### 如何安裝 Aspose.Words for Java？
+### 我可以將文件與圖像和表格進行比較嗎？  
+是的，Aspose.Words 支援比較複雜的文檔，包括具有圖像、表格和格式的文檔。
 
-若要安裝 Aspose.Words for Java，請造訪下載頁面[這裡](https://releases.aspose.com/words/java/)並按照提供的安裝說明進行操作。
+### 我需要許可證才能使用此功能嗎？  
+是的，完整功能需要許可證。得到一個[臨時許可證在這裡](https://purchase.aspose.com/temporary-license/).
 
-### 我可以比較不同格式的文檔，例如 DOCX 和 PDF 嗎？
+### 如果存在預先存在的修訂會怎樣？  
+您必須在比較文件之前接受或拒絕它們以避免衝突。
 
-Aspose.Words 主要處理 DOCX 格式的 Word 文件。要比較不同格式的文檔，您可能需要先將它們轉換為 DOCX 格式。
+### 我可以突出顯示文件中的修訂嗎？  
+是的，Aspose.Words 允許您自訂修訂的顯示方式，例如反白顯示變更。
 
-### 使用 Aspose.Words 時文件大小有限制嗎？
-
-Aspose.Words 可以有效地處理大型文檔，但在處理極大的文件時必須考慮系統的記憶體和效能。
-
-### 我可以自訂比較結果中突出顯示差異的方式嗎？
-
-是的，Aspose.Words可讓您自訂比較結果文件中差異的外觀，例如對新增和刪除的內容使用不同的顏色或樣式。
-
-### 是否有 Aspose.Words 的試用版可供測試？
-
-是的，您可以從網站要求 Aspose.Words for Java 的免費試用版。這使您可以在購買之前探索其特性和功能。
+### 其他程式語言是否提供此功能？  
+是的，Aspose.Words 支援多種語言，包括 .NET 和 Python。

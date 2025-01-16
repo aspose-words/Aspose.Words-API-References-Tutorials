@@ -14,7 +14,7 @@ Trong hướng dẫn toàn diện này, chúng ta sẽ đi sâu vào thế giớ
 
 ## Bắt đầu với Hình dạng Tài liệu
 
-Trước khi bắt đầu code, hãy thiết lập môi trường của chúng ta. Đảm bảo bạn đã tích hợp Aspose.Words for Java vào dự án của mình. Nếu bạn chưa có, bạn có thể tải xuống từ trang web Aspose[Tải xuống Aspose.Words cho Java](https://releases.aspose.com/words/java/)
+ Trước khi bắt đầu code, hãy thiết lập môi trường của chúng ta. Đảm bảo bạn đã tích hợp Aspose.Words for Java vào dự án của mình. Nếu bạn chưa có, bạn có thể tải xuống từ trang web Aspose[Tải xuống Aspose.Words cho Java](https://releases.aspose.com/words/java/)
 
 ## Thêm hình dạng vào tài liệu
 
@@ -67,7 +67,7 @@ builder.writeln();
 shape = builder.insertShape(ShapeType.TEXT_BOX, 50.0, 50.0);
 shape.setRotation(30.0);
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.DOCX);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_TRANSITIONAL);
 
 doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptions);

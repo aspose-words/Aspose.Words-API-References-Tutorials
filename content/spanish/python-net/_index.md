@@ -26,12 +26,8 @@ Domine el procesamiento de documentos de Word con Aspose.Words para Python. Los 
 Domine la creación de documentos con Aspose.Words para Python. Cree documentos dinámicos, personalice el formato y agilice el procesamiento de documentos de Word.
 ### [Automatización de palabras](./word-automation/)
 Automatice las tareas de procesamiento de textos con Aspose.Words para Python. Agilice la gestión de documentos y aumente la eficiencia en la automatización de textos.
-### [Inteligencia documental](./document-intelligence/)
-Descubra información valiosa de sus documentos con Document Intelligence de Aspose.Words para Python. Automatice el análisis, la extracción de texto y la clasificación.
 ### [Conversión de documentos](./document-conversion/)
 Convierta documentos de un formato a otro de forma eficiente con Aspose.Words para Python. Agilice el procesamiento de documentos de Word y simplifique sus tareas de gestión de documentos. 
-### [Protección de documentos](./document-protection/)
-¡Proteja sus documentos con Aspose.Words para Python! Implemente cifrado de contraseñas, permisos de usuario y firmas digitales para una protección sólida de los documentos.
 ### [Estructura de documentos y manipulación de contenidos](./document-structure-and-content-manipulation/)
 Explora los tutoriales de Aspose.Words para Python y .NET, centrados en la estructura de documentos y la manipulación de contenido. Aprende a navegar, extraer y modificar elementos de documentos de manera eficiente. Se proporcionan ejemplos de código fuente.
 ### [Extracción y manipulación de contenido](./content-extraction-and-manipulation/)
@@ -42,7 +38,5 @@ Descubra tutoriales completos sobre la combinación y comparación de documentos
 Explora los tutoriales de Aspose.Words sobre división y formato de documentos en Python y .NET. Aprende a dividir y formatear documentos de manera eficiente, mejorando tus tareas de procesamiento de documentos. 
 ### [Opciones y configuraciones del documento](./document-options-and-settings/)
 Explora los tutoriales de Aspose.Words sobre opciones y configuraciones de documentos en Python y .NET. Aprende a optimizar la creación y el formato de documentos con instrucciones paso a paso y ejemplos de código fuente.
-### [Visualización y formato de datos](./data-visualization-and-formatting/)
-Descubra los tutoriales de Aspose.Words sobre visualización y formato de datos en Python y .NET. Aprenda a presentar datos de manera eficaz, crear informes sorprendentes y dar formato a documentos mediante programación.
 ### [Tablas y formato](./tables-and-formatting/)
 Sumérjase en los tutoriales de Aspose.Words sobre tablas y formato en aplicaciones Python y .NET. Aprenda a crear, personalizar y aplicar estilo a las tablas para obtener documentos visualmente atractivos. 

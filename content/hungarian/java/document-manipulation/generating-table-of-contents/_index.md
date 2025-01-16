@@ -99,4 +99,4 @@ Ha több szintet szeretne felvenni a TOC-ba, módosíthatja a TOC mezőt, és me
 
 ### Módosíthatom a tabulátorpozíciókat bizonyos tartalomjegyzék-bejegyzéseknél?
 
-Igen, ahogy a fenti kódpéldában is látható, módosíthatja a tabulátorhelyek pozícióit az adott tartalomjegyzék-bejegyzéseknél a bekezdések iterációjával és a tabulátorok megfelelő módosításával.
+Igen, ahogy a fenti kódpéldában is látható, módosíthatja az adott tartalomjegyzék-bejegyzések tabulátorpozícióit a bekezdések iterációjával és a tabulátorok megfelelő módosításával.

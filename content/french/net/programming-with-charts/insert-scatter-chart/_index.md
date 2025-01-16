@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Étape 2 : insérer le graphique à nuage de points
+## Étape 2 : insérer le graphique en nuage de points
 
  Utilisez le`InsertChart` méthode de la`DocumentBuilder` classe pour insérer un graphique en nuage de points dans le document.
 

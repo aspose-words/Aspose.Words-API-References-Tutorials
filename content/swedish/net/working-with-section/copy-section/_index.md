@@ -10,7 +10,7 @@ url: /sv/net/working-with-section/copy-section/
 
 ## Introduktion
 
-Hej där, Word-entusiaster! 📄 Har du någonsin behövt kopiera ett avsnitt från ett Word-dokument till ett annat, men blivit fastlåst av den upprepade manuella ansträngningen? Nåväl, oroa dig inte mer! Med Aspose.Words för .NET kan du automatisera denna uppgift med lätthet. Den här guiden leder dig genom processen att kopiera avsnitt mellan dokument steg för steg, vilket säkerställer att du kan effektivisera ditt arbetsflöde för dokumenthantering. Redo att dyka i? Låt oss komma igång!
+Hej där, Word-entusiaster! 📄 Har du någonsin behövt kopiera ett avsnitt från ett Word-dokument till ett annat, men blivit fastlåst av den upprepade manuella ansträngningen? Nåväl, oroa dig inte längre! Med Aspose.Words för .NET kan du automatisera denna uppgift med lätthet. Den här guiden leder dig genom processen att kopiera avsnitt mellan dokument steg för steg, vilket säkerställer att du kan effektivisera ditt arbetsflöde för dokumenthantering. Redo att dyka i? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -54,7 +54,7 @@ Document dstDoc = new Document();
 ```
 
 - `string dataDir = "YOUR DOCUMENT DIRECTORY";` anger katalogsökvägen där dina dokument lagras.
-- `Document srcDoc = new Document(dataDir + "Document.docx");` läser in Word-källdokumentet.
+- `Document srcDoc = new Document(dataDir + "Document.docx");` laddar Word-källdokumentet.
 - `Document dstDoc = new Document();` initierar ett nytt tomt Word-dokument.
 
 ## Steg 3: Identifiera och kopiera avsnittet
@@ -101,7 +101,7 @@ Du kan kopiera flera avsnitt genom att iterera genom avsnittssamlingen i källdo
 
 ### Kan jag ändra det kopierade avsnittet innan jag lägger till det i måldokumentet?
 
-Ja, du kan ändra egenskaperna och innehållet för det kopierade avsnittet innan du lägger till det i måldokumentet.
+Ja, du kan ändra egenskaperna och innehållet i det kopierade avsnittet innan du lägger till det i måldokumentet.
 
 ### Är Aspose.Words för .NET kompatibelt med alla versioner av Word-dokument?
 

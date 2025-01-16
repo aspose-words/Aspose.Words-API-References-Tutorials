@@ -106,4 +106,4 @@ Oczywiście! Możesz go używać z dowolnym językiem .NET, w tym C#, VB.NET i A
  Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz kupić jedną[Tutaj](https://purchase.aspose.com/buy) lub uzyskaj tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
-Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
+ Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).

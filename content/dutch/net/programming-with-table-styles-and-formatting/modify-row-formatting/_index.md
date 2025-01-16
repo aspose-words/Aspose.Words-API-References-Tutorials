@@ -61,7 +61,7 @@ Nu de tabel toegankelijk is, is de volgende stap het ophalen van de eerste rij. 
 Row firstRow = table.FirstRow;
 ```
 
-De`FirstRow` property geeft ons de eerste rij in de tabel. Nu zijn we klaar om de opmaak te wijzigen.
+ De`FirstRow` property geeft ons de eerste rij in de tabel. Nu zijn we klaar om de opmaak te wijzigen.
 
 ## Stap 4: Rijranden wijzigen
 

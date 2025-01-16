@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", save
 
 ## Conclusión
 
-¡Y ya está! Con solo unas pocas líneas de código, ha configurado correctamente Aspose.Words para .NET para que omita las viñetas de imágenes al guardar un documento. Esto puede resultar increíblemente útil cuando necesita una apariencia limpia y uniforme sin la distracción de las viñetas de imágenes.
+¡Y ya está! Con solo unas pocas líneas de código, ha configurado correctamente Aspose.Words para .NET para que omita las viñetas de imágenes al guardar un documento. Esto puede resultar increíblemente útil cuando necesita una apariencia limpia y consistente sin la distracción de las viñetas de imágenes.
 
 ## Preguntas frecuentes
 

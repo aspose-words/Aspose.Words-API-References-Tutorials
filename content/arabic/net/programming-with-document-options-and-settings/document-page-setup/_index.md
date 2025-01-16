@@ -94,4 +94,4 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 إنه يدعم مجموعة واسعة من اللغات بما في ذلك اللغات الآسيوية مثل الصينية واليابانية.
 
 ### أين يمكنني العثور على المزيد من الوثائق التفصيلية؟
-الوثائق التفصيلية متاحة[هنا](https://reference.aspose.com/words/net/).
+ الوثائق التفصيلية متاحة[هنا](https://reference.aspose.com/words/net/).

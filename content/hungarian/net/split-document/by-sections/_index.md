@@ -86,7 +86,7 @@ Végül minden új dokumentumot egyedi néven mentünk el. Ez a lépés biztosí
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-A`Save` metódus a szakaszindex alapján egyedi néven menti az új dokumentumot a megadott könyvtárba.
+ A`Save` metódus a szakaszindex alapján egyedi néven menti az új dokumentumot a megadott könyvtárba.
 
 ## Következtetés
 

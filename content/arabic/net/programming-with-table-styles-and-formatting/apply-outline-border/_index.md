@@ -129,4 +129,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx"
  بالتأكيد! يمكنك استخدام أي لون متوفر في`System.Drawing.Color` فصل.
 
 ### كيف أقوم بمحاذاة الجدول أفقياً؟  
-ال`table.Alignment = TableAlignment.Center;` يقوم السطر الموجود في الكود بمركز الجدول أفقياً على الصفحة.
+ ال`table.Alignment = TableAlignment.Center;` يقوم السطر الموجود في الكود بمركز الجدول أفقياً على الصفحة.

@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 Parola belirlemek isteğe bağlıdır, ancak belgenizi değiştirmeden önce ona ekstra bir güvenlik katmanı ekleyebilir.
 
 ```csharp
-//En fazla 15 karakter uzunluğunda bir şifre girin.
+// En fazla 15 karakter uzunluğunda bir şifre girin.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Evet, parola ayarlamak isteğe bağlıdır. Salt okunur önerisini doğrudan kal
 
 ### Belgenin zaten farklı bir koruma türü varsa ne olur?
 
-The`doc.Protect(ProtectionType.NoProtection)` yöntem, belgeden her türlü korumanın kaldırılmasını sağlar.
+ The`doc.Protect(ProtectionType.NoProtection)` yöntem, belgeden her türlü korumanın kaldırılmasını sağlar.
 
 ### Kısıtlamayı kaldırmadan önce bir belgenin salt okunur olup olmadığını bilmenin bir yolu var mı?
 

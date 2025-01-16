@@ -15,7 +15,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-html/
 
 단계별 가이드를 살펴보기 전에 필요한 모든 것을 갖추었는지 확인해 보겠습니다. 간단한 체크리스트는 다음과 같습니다.
 
-1. Aspose.Words for .NET 라이브러리: 아직 다운로드하지 않았다면 Aspose.Words for .NET 라이브러리를 다운로드해야 합니다. 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET 라이브러리: 아직 다운로드하지 않았다면 Aspose.Words for .NET 라이브러리를 다운로드해야 합니다. 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 개발 환경이 설정되어 있는지 확인하세요.
 3. .NET Framework: 컴퓨터에 .NET Framework가 설치되어 있는지 확인하세요.
 4. 기본 C# 지식: C#에 대한 약간의 지식이 있으면 많은 도움이 됩니다.
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## 3단계: DocumentBuilder 초기화
 
-HTML을 삽입하려면 다음의 도움이 필요합니다.`DocumentBuilder` 클래스. 이 편리한 클래스를 사용하면 문서에 콘텐츠를 쉽게 추가할 수 있습니다.
+ HTML을 삽입하려면 다음의 도움이 필요합니다.`DocumentBuilder` 클래스. 이 편리한 클래스를 사용하면 문서에 콘텐츠를 쉽게 추가할 수 있습니다.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -88,7 +88,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 
 Word 문서에 HTML을 삽입하는 것이 그 어느 때보다 쉬워졌죠? Aspose.Words for .NET을 사용하면 HTML의 힘과 Word 문서의 다양성을 매끄럽게 결합할 수 있습니다. 보고서 생성을 자동화하든 아름답게 포맷된 문서를 제작하든, 이 도구가 바로 여러분에게 딱 맞는 솔루션입니다.
 
-질문이 있거나 추가 지원이 필요한 경우 주저하지 말고 다음을 확인하세요.[선적 서류 비치](https://reference.aspose.com/words/net/), [지원 포럼](https://forum.aspose.com/c/words/8) 또는 자신을 얻으십시오[임시 면허](https://purchase.aspose.com/temporary-license/) Aspose.Words for .NET의 모든 잠재력을 활용하세요.
+ 질문이 있거나 추가 지원이 필요한 경우 주저하지 말고 다음을 확인하세요.[선적 서류 비치](https://reference.aspose.com/words/net/), [지원 포럼](https://forum.aspose.com/c/words/8) 또는 자신을 얻으십시오[임시 면허](https://purchase.aspose.com/temporary-license/) Aspose.Words for .NET의 모든 잠재력을 활용하세요.
 
 즐거운 코딩 되세요!
 
@@ -107,4 +107,4 @@ Word 문서에 HTML을 삽입하는 것이 그 어느 때보다 쉬워졌죠? As
  당신은 시작할 수 있습니다[무료 체험](https://releases.aspose.com/) 또는 획득하다[임시 면허](https://purchase.aspose.com/temporary-license/) 모든 기능을 보려면 클릭하세요.
 
 ### 더 많은 튜토리얼과 예제는 어디에서 볼 수 있나요?  
-그만큼[선적 서류 비치](https://reference.aspose.com/words/net/) 그리고[지원 포럼](https://forum.aspose.com/c/words/8)더 자세한 가이드와 커뮤니티 지원을 얻기 위한 좋은 출발점입니다.
+ 그만큼[선적 서류 비치](https://reference.aspose.com/words/net/) 그리고[지원 포럼](https://forum.aspose.com/c/words/8) 더 자세한 가이드와 커뮤니티 지원을 얻기 위한 좋은 출발점입니다.

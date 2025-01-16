@@ -9,7 +9,7 @@ url: /cs/net/programming-with-charts/chart-data-label/
 ---
 ## Zavedení
 
-Chcete vylepšit své aplikace .NET dynamickými a přizpůsobenými možnostmi zpracování dokumentů? Aspose.Words for .NET může být právě vaší odpovědí! V této příručce se ponoříme hluboko do přizpůsobení štítků dat grafu pomocí Aspose.Words for .NET, výkonné knihovny pro vytváření, úpravy a převod dokumentů aplikace Word. Ať už jste zkušený vývojář nebo teprve začínáte, tento tutoriál vás provede každým krokem a zajistí, že pochopíte, jak tento nástroj efektivně využívat.
+Chcete vylepšit své aplikace .NET dynamickými a přizpůsobenými možnostmi zpracování dokumentů? Aspose.Words pro .NET může být právě vaší odpovědí! V této příručce se ponoříme hluboko do přizpůsobení štítků dat grafu pomocí Aspose.Words for .NET, výkonné knihovny pro vytváření, úpravy a převod dokumentů aplikace Word. Ať už jste zkušený vývojář nebo teprve začínáte, tento tutoriál vás provede každým krokem a zajistí, že pochopíte, jak tento nástroj efektivně využívat.
 
 ## Předpoklady
 

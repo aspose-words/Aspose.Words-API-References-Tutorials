@@ -24,7 +24,7 @@ Aspose.Words for .NET のチュートリアルでは、アプリケーション�
 | [インポート形式オプションを追加](./append-with-import-format-options/) | Aspose.Words for .NET を使用すると、詳細なステップバイステップのガイダンスに従って書式を維持しながら、Word 文書を簡単に追加できます。 |
 | [異なるページ設定](./different-page-setup/) | Aspose.Words for .NET を使用して Word 文書を結合するときに、さまざまなページ構成を設定する方法を学びます。ステップ バイ ステップ ガイドが含まれています。 |
 | [連続参加](./join-continuous/) | Aspose.Words for .NET を使用して 2 つの Word 文書をシームレスに結合する方法を学びます。スムーズで効率的な文書の結合については、ステップ バイ ステップ ガイドに従ってください。 |
-| [新しいページに参加する](./join-new-page/) | Aspose.Words for .NET を使用して Word でドキュメントを結合および追加する方法を学びます。効率的なドキュメントの結合については、ステップバイステップのガイドに従ってください。 |
+| [新しいページに参加する](./join-new-page/) | Aspose.Words for .NET を使用して Word でドキュメントを結合および追加する方法を学びます。効率的なドキュメントのマージについては、ステップバイステップのガイドに従ってください。 |
 | [ソースの書式を維持](./keep-source-formatting/) | Aspose.Words for .NET を使用して、書式設定を保持しながら Word 文書を結合する方法を学びます。ドキュメント アセンブリ タスクを自動化したい開発者に最適です。 |
 | [テーブルをまとめる](./keep-source-together/) | このステップバイステップガイドでは、Aspose.Words for .NET を使用して、表がページ間で分割されないようにする方法を学びます。整然としたプロフェッショナルな外観の Word 文書を実現します。 |
 | [リストのソース書式を保持](./list-keep-source-formatting/) | Aspose.Words for .NET を使用して、書式を保持しながら Word 文書を結合する方法を学びます。このチュートリアルでは、シームレスな文書結合の手順を順を追って説明します。 |

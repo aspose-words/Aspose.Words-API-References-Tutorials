@@ -9,7 +9,7 @@ url: /nl/net/working-with-fonts/set-true-type-fonts-folder/
 ---
 ## Invoering
 
-we duiken in de fascinerende wereld van lettertypebeheer in Word-documenten met Aspose.Words voor .NET. Als u ooit moeite hebt gehad met het insluiten van de juiste lettertypen of ervoor te zorgen dat uw document er op elk apparaat perfect uitziet, bent u hier aan het juiste adres. We leiden u door het proces van het instellen van een True Type Fonts-map om het lettertypebeheer van uw document te stroomlijnen en consistentie en duidelijkheid in uw documenten te garanderen.
+we duiken in de fascinerende wereld van lettertypebeheer in Word-documenten met Aspose.Words voor .NET. Als u ooit moeite hebt gehad met het insluiten van de juiste lettertypen of ervoor te zorgen dat uw document er op elk apparaat perfect uitziet, bent u hier aan het juiste adres. We leiden u door het proces van het instellen van een True Type Fonts-map om het lettertypebeheer van uw document te stroomlijnen, en consistentie en duidelijkheid in uw documenten te garanderen.
 
 ## Vereisten
 

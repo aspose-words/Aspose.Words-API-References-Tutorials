@@ -2,7 +2,7 @@
 title: フィールドの変更 カルチャーソースの更新
 linktitle: フィールドの変更 カルチャーソースの更新
 second_title: Aspose.Words ドキュメント処理 API
-description: このガイドでは、Aspose.Words for .NET でフィールド更新カルチャ ソースを変更する方法を学習します。さまざまなカルチャに基づいて日付の書式を簡単に制御します。
+description: このガイドでは、Aspose.Words for .NET でフィールド更新カルチャ ソースを変更する方法を説明します。さまざまなカルチャに基づいて日付の書式を簡単に制御します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/change-field-update-culture-source/
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET でフィールド更新カルチャ ソースを正常に変更できました。次の手順に従うことで、指定したカルチャ設定に従って、Word ドキュメントに日付やその他のフィールド値が表示されるようになります。これは、国際的なユーザー向けにドキュメントを生成する場合に特に便利です。
+これで完了です。Aspose.Words for .NET でフィールド更新カルチャ ソースを正常に変更できました。次の手順に従うことで、Word ドキュメントに日付やその他のフィールド値が指定されたカルチャ設定に従って表示されるようになります。これは、国際的なユーザー向けのドキュメントを生成する場合に特に役立ちます。
 
 ## よくある質問
 

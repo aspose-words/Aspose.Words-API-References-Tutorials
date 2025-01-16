@@ -90,7 +90,7 @@ IAiModelText model = (IAiModelText)AiModel.Create(AiModelType.Gpt4OMini).WithApi
 
 - 确保将 API 密钥存储为环境变量。这就像保护你的秘密武器一样！
 
-## 步骤 4：生成第一份文档的摘要
+## 步骤 4：生成第一个文档的摘要
 
 现在，让我们为第一个文档创建摘要。我们还将设置参数来定义摘要长度。
 

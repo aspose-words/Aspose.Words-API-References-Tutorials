@@ -33,7 +33,7 @@ Agora, vamos detalhar o processo de colocar texto em negrito em um documento do 
 
 ## Etapa 1: inicializar o DocumentBuilder
 
-O`DocumentBuilder` class fornece uma maneira rápida e fácil de adicionar conteúdo ao seu documento. Vamos inicializá-lo.
+ O`DocumentBuilder` class fornece uma maneira rápida e fácil de adicionar conteúdo ao seu documento. Vamos inicializá-lo.
 
 ```csharp
 // Use um construtor de documentos para adicionar conteúdo ao documento.

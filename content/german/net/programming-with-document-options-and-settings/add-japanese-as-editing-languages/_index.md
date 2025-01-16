@@ -40,7 +40,7 @@ Nachdem Sie diese Namespaces importiert haben, können Sie mit dem Codieren begi
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-Der`LoadOptions` Mit der Klasse können Sie anpassen, wie Dokumente geladen werden. Hier fangen wir gerade erst damit an.
+ Der`LoadOptions` Mit der Klasse können Sie anpassen, wie Dokumente geladen werden. Hier fangen wir gerade erst damit an.
 
 ## Schritt 2: Japanisch als Bearbeitungssprache hinzufügen
 

@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## 2단계: NodeType 속성에 액세스
 
-그만큼`NodeType` 속성은 Aspose.Words의 기본 기능입니다. 이를 통해 다루고 있는 노드의 유형을 식별할 수 있습니다. 이 속성에 액세스하려면 다음 코드를 사용하면 됩니다.
+ 그만큼`NodeType` 속성은 Aspose.Words의 기본 기능입니다. 이를 통해 다루고 있는 노드의 유형을 식별할 수 있습니다. 이 속성에 액세스하려면 다음 코드를 사용하면 됩니다.
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -63,7 +63,7 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 ###  무엇입니까?`NodeType` property in Aspose.Words?
 
-그만큼`NodeType` 속성은 문서 내의 노드 유형(예: 문서, 섹션, 단락, 실행 또는 표)을 식별합니다.
+ 그만큼`NodeType` 속성은 문서 내의 노드 유형(예: 문서, 섹션, 단락, 실행 또는 표)을 식별합니다.
 
 ###  어떻게 확인합니까?`NodeType` of a node?
 

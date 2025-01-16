@@ -11,7 +11,7 @@ url: /ko/python-net/document-splitting-and-formatting/combine-clone-documents/
 
 ## Aspose.Words 설치
 
-세부 사항을 살펴보기 전에 Aspose.Words for Python을 설정해야 합니다. 다음 링크를 사용하여 다운로드하고 설치할 수 있습니다.[Python용 Aspose.Words 다운로드](https://releases.aspose.com/words/python/). 
+ 세부 사항을 살펴보기 전에 Aspose.Words for Python을 설정해야 합니다. 다음 링크를 사용하여 다운로드하고 설치할 수 있습니다.[Python용 Aspose.Words 다운로드](https://releases.aspose.com/words/python/). 
 
 ## 문서 결합
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## 고급 기술
-
-### 텍스트 바꾸기
-
-Aspose.Words를 사용하면 문서에서 텍스트를 쉽게 찾아 바꿀 수 있습니다.
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### 서식 수정
+## 서식 수정
 
 Aspose.Words를 사용하여 서식을 수정할 수도 있습니다.
 
@@ -127,7 +108,7 @@ Aspose.Words for Python은 문서 워크플로를 손쉽게 조작하고 개선�
  활용하다`range.replace()` 텍스트를 효율적으로 찾아 바꾸기 위한 적절한 옵션과 함께 방법을 알아보세요.
 
 ### Aspose.Words는 서식 수정을 지원하나요?
-물론입니다. 다음과 같은 방법을 사용하여 서식을 수정할 수 있습니다.`run.font.size` 그리고`run.font.bold`.
+ 물론입니다. 다음과 같은 방법을 사용하여 서식을 수정할 수 있습니다.`run.font.size` 그리고`run.font.bold`.
 
 ### Aspose.Words 문서는 어디에서 볼 수 있나요?
  포괄적인 문서는 다음에서 찾을 수 있습니다.[Python API 참조를 위한 Aspose.Words](https://reference.aspose.com/words/python-net/).

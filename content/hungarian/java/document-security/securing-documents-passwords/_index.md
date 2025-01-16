@@ -13,11 +13,11 @@ Fedezze fel az Aspose.Words for Java erejét, hogy jelszavakkal védje dokumentu
 
 ## Bevezetés
 
-mai digitális világban az adatbiztonság a legfontosabb. Akár bizalmas üzleti dokumentumokat, akár személyes fájlokat kezel, döntő fontosságú annak biztosítása, hogy csak az arra jogosult személyek férhessenek hozzá a dokumentumokhoz. Ez a részletes útmutató bemutatja, hogyan használhatja az Aspose.Words for Java szoftvert, amellyel jelszavak alkalmazásával robusztus biztonsági réteget adhat dokumentumaihoz.
+A mai digitális világban az adatbiztonság a legfontosabb. Akár bizalmas üzleti dokumentumokat, akár személyes fájlokat kezel, döntő fontosságú annak biztosítása, hogy csak az arra jogosult személyek férhessenek hozzá a dokumentumokhoz. Ez a részletes útmutató bemutatja, hogyan használhatja az Aspose.Words for Java szoftvert, amellyel jelszavak alkalmazásával robusztus biztonsági réteget adhat dokumentumaihoz.
 
 ## Az Aspose.Words beállítása Java számára
 
- Mielőtt belevágnánk a dokumentumok biztonságába, győződjön meg arról, hogy az Aspose.Words for Java be van állítva a Java-környezetben. Ha még nem tette meg, letöltheti innen[itt](https://releases.aspose.com/words/java/).
+Mielőtt belevágnánk a dokumentumok biztonságába, győződjön meg arról, hogy az Aspose.Words for Java be van állítva a Java-környezetben. Ha még nem tette meg, letöltheti innen[itt](https://releases.aspose.com/words/java/).
 
 ## Dokumentumok védelme: lépésről lépésre
 

@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Passaggio 4: utilizzare l'allineamento automatico del contenuto della tabella
 
-IL`Auto`l'opzione di allineamento prende l'allineamento dal primo paragrafo nella colonna della tabella corrispondente. Questo può essere utile quando hai allineamenti misti in una singola tabella.
+ IL`Auto`l'opzione di allineamento prende l'allineamento dal primo paragrafo nella colonna della tabella corrispondente. Questo può essere utile quando hai allineamenti misti in una singola tabella.
 
 ```csharp
 // Imposta l'allineamento su Auto.

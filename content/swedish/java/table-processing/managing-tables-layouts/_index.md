@@ -18,7 +18,7 @@ Innan vi dyker in i de tekniska detaljerna, låt oss kort utforska varför hante
 
 ## Komma igång med Aspose.Words för Java
 
- För att börja vår resa måste du ha Aspose.Words för Java installerat och konfigurerat. Om du inte har gjort detta ännu kan du ladda ner det från Asposes webbplats[här](https://releases.aspose.com/words/java/). När du har installerat biblioteket är du redo att utnyttja dess möjligheter för att hantera tabeller och layouter effektivt.
+ För att börja vår resa måste du ha Aspose.Words för Java installerat och konfigurerat. Om du inte har gjort detta ännu kan du ladda ner det från Asposes webbplats[här](https://releases.aspose.com/words/java/)När du har installerat biblioteket är du redo att utnyttja dess möjligheter för att hantera tabeller och layouter effektivt.
 
 ## Grundläggande bordshantering
 
@@ -110,7 +110,7 @@ Ja, du kan slå samman celler i en tabell med Aspose.Words, som visas i guiden.
  Inga bekymmer! Du kan enkelt dela tidigare sammanslagna celler genom att ställa in deras horisontella sammanfogningsegenskap till`NONE`.
 
 ### Hur kan jag lägga till en sidbrytning före en tabell?
- För att infoga en sidbrytning före en tabell, ändra teckensnittets`PageBreakBefore` egendom som visats.
+För att infoga en sidbrytning före en tabell, ändra teckensnittets`PageBreakBefore` egendom som visats.
 
 ### Är Aspose.Words kompatibel med olika dokumentformat?
 Absolut! Aspose.Words för Java stöder olika dokumentformat, vilket gör det till ett mångsidigt val för dokumenthantering.
@@ -120,4 +120,4 @@ Absolut! Aspose.Words för Java stöder olika dokumentformat, vilket gör det ti
 
 ## Slutsats
 
-den här omfattande guiden har vi utforskat in- och utsidan av att hantera tabeller och layouter i dokument med Aspose.Words för Java. Från grundläggande tabellskapande till avancerad layoutmanipulation har du nu kunskapen och källkodsexemplen för att förbättra dina dokumentbearbetningsmöjligheter. Kom ihåg att effektiv dokumentlayout är avgörande för att skapa professionella dokument, och Aspose.Words ger dig verktygen för att uppnå just det.
+I den här omfattande guiden har vi utforskat in- och utsidan av att hantera tabeller och layouter i dokument med Aspose.Words för Java. Från grundläggande tabellskapande till avancerad layoutmanipulation har du nu kunskapen och källkodsexemplen för att förbättra dina dokumentbearbetningsmöjligheter. Kom ihåg att effektiv dokumentlayout är avgörande för att skapa professionella dokument, och Aspose.Words ger dig verktygen för att uppnå just det.

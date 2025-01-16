@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
-De`unprotect` Met deze methode wordt alle beveiliging van het document verwijderd, waardoor het document toegankelijk wordt zonder wachtwoord.
+ De`unprotect` Met deze methode wordt alle beveiliging van het document verwijderd, waardoor het document toegankelijk wordt zonder wachtwoord.
 
 ## Controle van het type documentbeveiliging
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
-De`getProtectionType` De methode retourneert een geheel getal dat het beveiligingstype vertegenwoordigt dat op het document is toegepast.
+ De`getProtectionType` De methode retourneert een geheel getal dat het beveiligingstype vertegenwoordigt dat op het document is toegepast.
 
 
 ## Conclusie

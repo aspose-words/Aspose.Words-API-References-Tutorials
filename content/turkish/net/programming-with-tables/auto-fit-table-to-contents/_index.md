@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-The`Aspose.Words` namespace, Word belgelerini işlemek için temel işlevselliği sağlarken`Aspose.Words.Tables` Tablolarla çalışmaya özel sınıfları içerir.
+ The`Aspose.Words` namespace, Word belgelerini işlemek için temel işlevselliği sağlarken`Aspose.Words.Tables` Tablolarla çalışmaya özel sınıfları içerir.
 
 ## Adım 1: Belge Dizininizi Ayarlayın
 
@@ -88,7 +88,7 @@ Aspose.Words for .NET kullanarak tabloları içeriklere otomatik olarak uydurmak
 ## SSS
 
 ### Bir tabloda yalnızca belirli sütunları otomatik olarak sığdırabilir miyim?
-The`AutoFit` yöntem tüm tabloya uygulanır. Belirli sütunları ayarlamanız gerekiyorsa, sütun genişliklerini manuel olarak ayarlamanız gerekebilir.
+ The`AutoFit` yöntem tüm tabloya uygulanır. Belirli sütunları ayarlamanız gerekiyorsa, sütun genişliklerini manuel olarak ayarlamanız gerekebilir.
 
 ### Belgem birden fazla tablo içeriyorsa ne yapmalıyım?
  Belgedeki tüm tablolar arasında gezinmek için şunu kullanabilirsiniz:`doc.GetChildNodes(NodeType.Table, true)` ve gerektiğinde otomatik uyumu uygulayın.

@@ -19,7 +19,7 @@ Zde jsou některé z výhod používání Aspose.Words for Java pro zpracování
 * Komplexní sada API pro zpracování tabulek
 * Podrobné konzultace a dokumentace
 * Snadno použitelné API
-* Podpora široké škály formátů dokumentů
+* Podpora pro širokou škálu formátů dokumentů
 * Vysoký výkon a škálovatelnost
 
 

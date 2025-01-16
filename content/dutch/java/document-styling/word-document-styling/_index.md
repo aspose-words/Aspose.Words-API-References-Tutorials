@@ -280,7 +280,7 @@ Om een document te splitsen, kunt u specifieke secties opslaan in afzonderlijke 
 Met Aspose.Words voor Java kunt u documenten converteren naar verschillende formaten, zoals PDF, HTML en meer.
 
 ```java
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Geavanceerde stylingtechnieken

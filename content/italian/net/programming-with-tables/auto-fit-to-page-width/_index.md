@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-IL`Aspose.Words` namespace contiene le classi principali per la manipolazione dei documenti Word, mentre`Aspose.Words.Tables` è specificamente per la gestione delle tabelle.
+ IL`Aspose.Words` namespace contiene le classi principali per la manipolazione dei documenti Word, mentre`Aspose.Words.Tables` è specificamente per la gestione delle tabelle.
 
 ## Passaggio 1: imposta il tuo documento
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- In questo passaggio, definisci il percorso in cui è archiviato il tuo documento e lo carichi in un`Document` oggetto. Sostituisci`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo in cui si trova il documento.
+ In questo passaggio, definisci il percorso in cui è archiviato il tuo documento e lo carichi in un`Document` oggetto. Sostituisci`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo in cui si trova il documento.
 
 ## Passaggio 2: accedi alla tabella
 
@@ -68,9 +68,9 @@ Ora che hai la tabella, puoi applicare la funzionalità di adattamento automatic
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-IL`AutoFit` metodo con`AutoFitBehavior.AutoFitToWindow` assicura che la larghezza della tabella venga regolata in modo da adattarsi all'intera larghezza della pagina.
+ IL`AutoFit` metodo con`AutoFitBehavior.AutoFitToWindow` assicura che la larghezza della tabella venga regolata in modo da adattarsi all'intera larghezza della pagina.
 
-## Passaggio 4: Salvare il documento modificato
+## Passaggio 4: salvare il documento modificato
 
 Una volta adattata automaticamente la tabella, il passaggio finale consiste nel salvare le modifiche in un nuovo documento:
 

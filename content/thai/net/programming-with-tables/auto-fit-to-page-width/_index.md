@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-การ`Aspose.Words` เนมสเปซประกอบด้วยคลาสหลักสำหรับการจัดการเอกสาร Word ในขณะที่`Aspose.Words.Tables` มีไว้สำหรับการจัดการตารางโดยเฉพาะ
+ การ`Aspose.Words` เนมสเปซประกอบด้วยคลาสหลักสำหรับการจัดการเอกสาร Word ในขณะที่`Aspose.Words.Tables` มีไว้สำหรับการจัดการตารางโดยเฉพาะ
 
 ## ขั้นตอนที่ 1: ตั้งค่าเอกสารของคุณ
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- ในขั้นตอนนี้ คุณกำหนดเส้นทางที่จัดเก็บเอกสารของคุณและโหลดลงใน`Document` วัตถุ. แทนที่`"YOUR DOCUMENT DIRECTORY"`ด้วยเส้นทางจริงที่เอกสารของคุณตั้งอยู่
+ ในขั้นตอนนี้ คุณกำหนดเส้นทางที่จัดเก็บเอกสารของคุณและโหลดลงใน`Document` วัตถุ. แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงที่เอกสารของคุณตั้งอยู่
 
 ## ขั้นตอนที่ 2: เข้าถึงตาราง
 
@@ -68,7 +68,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
-การ`AutoFit` วิธีการด้วย`AutoFitBehavior.AutoFitToWindow` ช่วยให้แน่ใจว่าความกว้างของตารางถูกปรับให้พอดีกับความกว้างทั้งหมดของหน้า
+ การ`AutoFit` วิธีการด้วย`AutoFitBehavior.AutoFitToWindow` ช่วยให้แน่ใจว่าความกว้างของตารางถูกปรับให้พอดีกับความกว้างทั้งหมดของหน้า
 
 ## ขั้นตอนที่ 4: บันทึกเอกสารที่แก้ไข
 

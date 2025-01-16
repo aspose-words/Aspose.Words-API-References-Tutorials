@@ -38,7 +38,7 @@ using Aspose.Words.Drawing;
 
 ## 1단계: DocumentBuilder 만들기
 
-그만큼`DocumentBuilder` 클래스는 문서에 콘텐츠를 추가하고 서식을 지정하는 데 도움이 됩니다.`DocumentBuilder` 객체를 사용하면 텍스트를 삽입하고 조작할 수 있는 도구를 설정할 수 있습니다.
+ 그만큼`DocumentBuilder` 클래스는 문서에 콘텐츠를 추가하고 서식을 지정하는 데 도움이 됩니다.`DocumentBuilder` 객체를 사용하면 텍스트를 삽입하고 조작할 수 있는 도구를 설정할 수 있습니다.
 
 ```csharp
 // 문서 작업을 위해 DocumentBuilder 인스턴스를 생성합니다.

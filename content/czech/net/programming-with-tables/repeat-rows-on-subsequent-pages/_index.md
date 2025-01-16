@@ -112,7 +112,7 @@ tady to máte! Pomocí několika řádků kódu můžete pomocí Aspose.Words fo
  Absolutně! Můžete přidat tolik sloupců, kolik potřebujete, vložením více buněk do`InsertCell` metoda.
 
 ### Jak mohu zajistit, aby se další řádky opakovaly na následujících stránkách?
- Chcete-li, aby se libovolný řádek opakoval, nastavte`RowFormat.HeadingFormat`majetek do`true` pro daný řádek.
+ Chcete-li, aby se libovolný řádek opakoval, nastavte`RowFormat.HeadingFormat`majetek do`true` pro tento konkrétní řádek.
 
 ### Mohu použít tuto metodu pro existující tabulky v dokumentu?
  Ano, existující tabulky můžete upravovat tak, že k nim přistoupíte prostřednictvím`Document` objekt a použití podobného formátování.

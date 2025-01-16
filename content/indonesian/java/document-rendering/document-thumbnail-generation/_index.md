@@ -40,7 +40,7 @@ Sekarang, mari selami proses pembuatan gambar mini dari dokumen yang dimuat.
 ```java
 // Kode Java untuk membuat thumbnail dokumen
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ Pembuatan gambar mini dokumen menggunakan Aspose.Words untuk Java menawarkan car
 
 ### Bagaimana cara menginstal Aspose.Words untuk Java?
 
- Untuk menginstal Aspose.Words untuk Java, kunjungi halaman unduhan[Di Sini](https://releases.aspose.com/words/java/)dan ikuti petunjuk instalasi yang disediakan.
+Untuk menginstal Aspose.Words untuk Java, kunjungi halaman unduhan[Di Sini](https://releases.aspose.com/words/java/)dan ikuti petunjuk instalasi yang disediakan.
 
 ### Bisakah saya menyesuaikan ukuran gambar mini yang dihasilkan?
 

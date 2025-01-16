@@ -11,7 +11,7 @@ Säkert! Här är en steg-för-steg-guide om hur du utför dokumentkryptering oc
 
 # Dokumentkryptering och dekryptering med Aspose.Words för Java
 
-I den här handledningen kommer vi att utforska hur man krypterar och dekrypterar dokument med Aspose.Words för Java. Dokumentkryptering säkerställer att dina känsliga uppgifter förblir säkra och endast kan nås av behöriga användare.
+den här handledningen kommer vi att utforska hur man krypterar och dekrypterar dokument med Aspose.Words för Java. Dokumentkryptering säkerställer att dina känsliga uppgifter förblir säkra och endast kan nås av behöriga användare.
 
 ## Förutsättningar
 
@@ -45,7 +45,7 @@ public class DocumentEncryptionExample {
         doc.protect(ProtectionType.READ_ONLY, password);
         
         // Spara det krypterade dokumentet
-        doc.save("encrypted_document.docx", SaveFormat.DOCX);
+        doc.save("encrypted_document.docx");
         
         System.out.println("Document encrypted successfully!");
     }
@@ -64,7 +64,7 @@ import com.aspose.words.SaveFormat;
 
 public class DocumentDecryptionExample {
     public static void main(String[] args) throws Exception {
-        // Ladda det krypterade dokumentet
+        //Ladda det krypterade dokumentet
         Document doc = new Document("encrypted_document.docx");
         
         // Ange lösenordet för dekryptering
@@ -74,7 +74,7 @@ public class DocumentDecryptionExample {
         doc.unprotect(password);
         
         // Spara det dekrypterade dokumentet
-        doc.save("decrypted_document.docx", SaveFormat.DOCX);
+        doc.save("decrypted_document.docx");
         
         System.out.println("Document decrypted successfully!");
     }

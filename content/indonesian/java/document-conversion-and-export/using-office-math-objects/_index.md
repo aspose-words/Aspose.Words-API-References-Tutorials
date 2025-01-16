@@ -90,7 +90,7 @@ Objek Office Math di Aspose.Words untuk Java memungkinkan Anda untuk merepresent
 
 ### Dapatkah saya menyelaraskan persamaan Office Math secara berbeda dalam dokumen saya?
 
- Ya, Anda dapat mengontrol penyelarasan persamaan Office Math. Gunakan`setJustification` metode untuk menentukan opsi perataan seperti kiri, kanan, atau tengah.
+ Ya, Anda dapat mengontrol penyelarasan persamaan Office Math. Gunakan`setJustification`metode untuk menentukan opsi perataan seperti kiri, kanan, atau tengah.
 
 ### Apakah Aspose.Words untuk Java cocok untuk menangani dokumen matematika yang rumit?
 

@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Các`Document` lớp khởi tạo một tài liệu mới và`DocumentBuilder` giúp chúng ta dễ dàng thêm nội dung vào tài liệu.
+ Các`Document` lớp khởi tạo một tài liệu mới và`DocumentBuilder` giúp chúng ta dễ dàng thêm nội dung vào tài liệu.
 
 ## Bước 2: Chèn Phần
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
-Các`InsertBreak` phương pháp này chèn một ngắt phần liên tục, cho phép chúng ta có các thiết lập khác nhau cho mỗi phần.
+ Các`InsertBreak` phương pháp này chèn một ngắt phần liên tục, cho phép chúng ta có các thiết lập khác nhau cho mỗi phần.
 
 ## Bước 3: Bảo vệ tài liệu
 

@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`Document` объект представляет собой документ Word, а`DocumentBuilder` помогает в добавлении в него контента.
+ The`Document` объект представляет собой документ Word, а`DocumentBuilder` помогает в добавлении в него контента.
 
 ## Шаг 3: Определите путь изображения
 
@@ -91,7 +91,7 @@ builder.InsertImage(imagePath,
 ```
 
 Вот что означает каждый параметр:
-- `imagePath`Путь к файлу изображения.
+- `imagePath`: Путь к файлу изображения.
 - `RelativeHorizontalPosition.Margin`: Горизонтальное положение относительно поля.
 - `100`: Горизонтальное смещение от поля (в пунктах).
 - `RelativeVerticalPosition.Margin`: Вертикальное положение относительно поля.

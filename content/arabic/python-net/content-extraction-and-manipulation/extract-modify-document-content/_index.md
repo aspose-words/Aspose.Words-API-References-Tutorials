@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## تعديل النص
-
-يمكنك تعديل النص عن طريق ضبط نص التشغيلات أو الفقرات بشكل مباشر:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## العمل مع التنسيق
 
 يتيح لك Aspose.Words العمل مع أنماط التنسيق:

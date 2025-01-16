@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Hiểu về MoveToBookmark
 
-Các`MoveToBookmark`phương pháp cho phép bạn điều hướng đến một dấu trang cụ thể trong tài liệu của bạn. Chữ ký phương pháp là:
+ Các`MoveToBookmark`phương pháp cho phép bạn điều hướng đến một dấu trang cụ thể trong tài liệu của bạn. Chữ ký phương pháp là:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

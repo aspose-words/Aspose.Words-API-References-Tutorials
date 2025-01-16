@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Tạo đường viền lớn hơn cho ô đầu tiên của hàng này.
+// Tạo đường viền lớn hơn cho ô đầu tiên của hàng này.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -169,7 +169,7 @@ Aspose.Words for Java là một công cụ mạnh mẽ cung cấp nhiều tính 
 
 ### 1. Tôi có thể sử dụng các kiểu bảng tùy chỉnh không có trong các tùy chọn mặc định không?
 
-Có, bạn có thể xác định và áp dụng các kiểu tùy chỉnh cho bảng của mình bằng Aspose.Words cho Java. Kiểm tra[tài liệu](https://reference.aspose.com/words/java/) để biết thêm chi tiết về cách tạo kiểu tùy chỉnh.
+ Có, bạn có thể xác định và áp dụng các kiểu tùy chỉnh cho bảng của mình bằng Aspose.Words cho Java. Kiểm tra[tài liệu](https://reference.aspose.com/words/java/) để biết thêm chi tiết về cách tạo kiểu tùy chỉnh.
 
 ### 2. Làm thế nào để áp dụng định dạng có điều kiện cho bảng?
 

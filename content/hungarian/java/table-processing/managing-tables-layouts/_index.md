@@ -18,7 +18,7 @@ Mielőtt belemerülnénk a technikai részletekbe, nézzük meg röviden, hogy a
 
 ## Az Aspose.Words for Java első lépései
 
- Utazásunk megkezdéséhez telepítenie és be kell állítania az Aspose.Words for Java programot. Ha még nem tette meg, letöltheti az Aspose webhelyéről[itt](https://releases.aspose.com/words/java/). Miután telepítette a könyvtárat, készen áll arra, hogy kihasználja a képességeit a táblázatok és elrendezések hatékony kezelésére.
+ Utazásunk megkezdéséhez telepítenie és be kell állítania az Aspose.Words for Java programot. Ha még nem tette meg, letöltheti az Aspose webhelyéről[itt](https://releases.aspose.com/words/java/)Miután telepítette a könyvtárat, készen áll arra, hogy kihasználja a képességeit a táblázatok és elrendezések hatékony kezelésére.
 
 ## Alapvető táblázatkezelés
 
@@ -73,7 +73,7 @@ table.getRows().get(1).remove();
 
 ### Cellák egyesítése
 
-A cellák összevonása általános követelmény a dokumentumelrendezéseknél. Az Aspose.Words jelentősen leegyszerűsíti ezt a feladatot. A táblázat celláinak egyesítéséhez használja a következő kódot:
+cellák összevonása általános követelmény a dokumentumelrendezéseknél. Az Aspose.Words jelentősen leegyszerűsíti ezt a feladatot. A táblázat celláinak egyesítéséhez használja a következő kódot:
 
 ```java
 table.getRows().get(0).getCells().get(0).getCellFormat().setHorizontalMerge(CellMerge.FIRST);
@@ -110,7 +110,7 @@ Igen, egyesíthet cellákat egy táblázatban az Aspose.Words használatával, a
  Semmi gond! Könnyedén feloszthatja a korábban egyesített cellákat, ha vízszintes egyesítési tulajdonságukat értékre állítja`NONE`.
 
 ### Hogyan adhatok oldaltörést a táblázat elé?
- Ha oldaltörést szeretne beszúrni a táblázat elé, módosítsa a betűtípust`PageBreakBefore` tulajdonság a bemutatott módon.
+Ha oldaltörést szeretne beszúrni a táblázat elé, módosítsa a betűtípust`PageBreakBefore` tulajdonság a bemutatott módon.
 
 ### Az Aspose.Words kompatibilis a különböző dokumentumformátumokkal?
 Teljesen! Az Aspose.Words for Java különféle dokumentumformátumokat támogat, így sokoldalú választás a dokumentumkezeléshez.

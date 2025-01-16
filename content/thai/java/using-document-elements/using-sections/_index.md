@@ -112,7 +112,7 @@ public void cloneSection() throws Exception {
 
 ### คำถามที่ 4: ฉันสามารถค้นหาการสนับสนุนสำหรับ Aspose.Words สำหรับ Java ได้ที่ไหน
 
- หากต้องการการสนับสนุนและความช่วยเหลือ คุณสามารถเยี่ยมชมฟอรัม Aspose.Words for Java[ที่นี่](https://forum.aspose.com/).
+ หากต้องการการสนับสนุนและความช่วยเหลือ คุณสามารถเยี่ยมชมฟอรัม Aspose.Words สำหรับ Java[ที่นี่](https://forum.aspose.com/).
 
 ### คำถามที่ 5: ฉันจะซื้อใบอนุญาตสำหรับ Aspose.Words สำหรับ Java ได้อย่างไร
 

@@ -12,7 +12,7 @@ Siete pronti a immergervi nel mondo della manipolazione dei documenti in Java co
 
 ## Introduzione
 
-Aspose.Words for Java è una solida API che consente agli sviluppatori Java di lavorare con vari aspetti dell'elaborazione dei documenti. In questa guida, ci concentreremo sulla gestione degli elenchi di documenti, un'attività fondamentale nell'automazione dei documenti. Che tu abbia bisogno di creare, modificare o estrarre informazioni dagli elenchi di documenti, Aspose.Words for Java ti copre.
+Aspose.Words for Java è una solida API che consente agli sviluppatori Java di lavorare con vari aspetti dell'elaborazione dei documenti. In questa guida, ci concentreremo sulla gestione degli elenchi di documenti, un'attività fondamentale nell'automazione dei documenti. Che tu debba creare, modificare o estrarre informazioni dagli elenchi di documenti, Aspose.Words for Java ti copre.
 
 ## Introduzione ad Aspose.Words per Java
 
@@ -38,23 +38,11 @@ Ecco un frammento di codice di esempio per iniziare:
 // Importa i pacchetti richiesti
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Inizializza un nuovo documento
-        Document doc = new Document();
-
-        // Crea una lista
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // Aggiungi elementi all'elenco
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // Salva il documento
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## Modifica di un elenco di documenti
@@ -69,21 +57,18 @@ Una volta creato un elenco di documenti, potresti doverlo modificare aggiungendo
 Ecco un frammento di codice per modificare un elenco di documenti:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // Carica un documento esistente
-        Document doc = new Document("DocumentListExample.docx");
-
-        // Accedi all'elenco
-        List list = doc.getLists().get(0);
-
-        // Aggiungi un nuovo elemento
-        list.getListItems().add("New Item");
-
-        // Salvare il documento modificato
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // Controlla se il paragrafo fa parte di un elenco.
+    if (paragraph.isListItem()) {
+        // Aggiornare l'ultimo paragrafo dell'elenco.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## Estrazione di informazioni da un elenco di documenti
@@ -97,23 +82,21 @@ In alcuni casi, potresti dover estrarre informazioni da un elenco di documenti, 
 Ecco un frammento di codice per estrarre informazioni da un elenco di documenti:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // Carica il documento
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // Accedi all'elenco
-        List list = doc.getLists().get(0);
-
-        // Scorrere gli elementi dell'elenco e stamparli
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
 
-## Domande frequenti (FAQ)
+## Conclusione
+
+In questa guida completa, abbiamo esplorato il mondo del lavoro con elenchi di documenti utilizzando Aspose.Words per Java. Hai imparato come creare, modificare ed estrarre informazioni dagli elenchi di documenti, il tutto con la potenza e la flessibilità di Aspose.Words per Java. Inizia a implementare queste tecniche nei tuoi progetti Java oggi stesso e semplifica le tue attività di automazione dei documenti.
+
+
+## Domande frequenti
 
 ### Come posso aggiungere punti elenco a un elenco di documenti?
  Per aggiungere punti elenco a un elenco di documenti, utilizzare il ListTemplate appropriato quando si crea l'elenco. Ad esempio, utilizzare`ListTemplate.BULLET_DEFAULT` invece di`ListTemplate.NUMBER_DEFAULT`.
@@ -129,7 +112,3 @@ Per convertire un elenco di documenti in PDF, basta caricare il documento usando
 
 ### Aspose.Words per Java supporta l'utilizzo delle tabelle nei documenti?
 Sì, Aspose.Words per Java fornisce un ampio supporto per lavorare con le tabelle, consentendo di creare, modificare ed estrarre dati tabulari senza sforzo.
-
-## Conclusione
-
-In questa guida completa, abbiamo esplorato il mondo del lavoro con elenchi di documenti utilizzando Aspose.Words per Java. Hai imparato come creare, modificare ed estrarre informazioni dagli elenchi di documenti, il tutto con la potenza e la flessibilità di Aspose.Words per Java. Inizia a implementare queste tecniche nei tuoi progetti Java oggi stesso e semplifica le tue attività di automazione dei documenti.

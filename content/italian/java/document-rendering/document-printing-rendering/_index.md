@@ -49,7 +49,7 @@ Il rendering dei documenti è essenziale quando devi convertirli in formati dive
 
 ```java
 // Rendere il documento in PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Puoi sostituire`SaveFormat.PDF` con il formato desiderato per il rendering.

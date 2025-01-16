@@ -86,7 +86,7 @@ Tot slot slaan we elk nieuw document op met een unieke naam. Deze stap zorgt erv
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
-De`Save` Met deze methode wordt het nieuwe document opgeslagen in de opgegeven map met een unieke naam op basis van de sectie-index.
+ De`Save` Met deze methode wordt het nieuwe document opgeslagen in de opgegeven map met een unieke naam op basis van de sectie-index.
 
 ## Conclusie
 

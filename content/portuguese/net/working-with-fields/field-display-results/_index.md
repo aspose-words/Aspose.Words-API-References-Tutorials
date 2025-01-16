@@ -60,7 +60,7 @@ Os campos em documentos do Word podem ser dinâmicos, o que significa que eles n
 document.UpdateFields();
 ```
 
-O`UpdateFields` método itera por todos os campos no documento e os atualiza com os dados mais recentes. Esta etapa é crucial se seus campos dependem de conteúdo dinâmico, como datas ou cálculos.
+ O`UpdateFields` método itera por todos os campos no documento e os atualiza com os dados mais recentes. Esta etapa é crucial se seus campos dependem de conteúdo dinâmico, como datas ou cálculos.
 
 ## Etapa 3: Exibir resultados de campo
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
-O`DisplayResult` propriedade do`Field` A classe retorna o valor formatado do campo. A`foreach` O loop percorre todos os campos do documento e imprime seus resultados.
+ O`DisplayResult` propriedade do`Field` A classe retorna o valor formatado do campo. A`foreach` O loop percorre todos os campos do documento e imprime seus resultados.
 
 ## Conclusão
 
@@ -97,4 +97,4 @@ Você pode atualizar vários tipos de campos, incluindo campos de data, propried
 Campos que exigem entrada do usuário (como campos de formulário) precisarão ser preenchidos manualmente ou por meio de código adicional.
 
 ### É possível exibir resultados de campo em um formato diferente?  
-O`DisplayResult` property fornece a saída formatada. Se você precisar de um formato diferente, considere processamento adicional com base em seus requisitos.
+ O`DisplayResult` property fornece a saída formatada. Se você precisar de um formato diferente, considere processamento adicional com base em seus requisitos.

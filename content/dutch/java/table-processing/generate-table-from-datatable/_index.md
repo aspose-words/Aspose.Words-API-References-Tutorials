@@ -7,91 +7,203 @@ type: docs
 weight: 11
 url: /nl/java/table-processing/generate-table-from-datatable/
 ---
+## Invoering
 
-In deze tutorial laten we zien hoe u een tabel genereert uit een DataTable met Aspose.Words voor Java. De DataTable is een fundamentele datastructuur die tabelgegevens bevat, en met de krachtige tabelverwerkingsfuncties van Aspose.Words kunnen we eenvoudig een goed geformatteerde tabel in een Word-document maken. Volg de onderstaande stapsgewijze handleiding om een tabel te genereren en deze te integreren in uw tekstverwerkingstoepassing.
+Het dynamisch maken van tabellen uit gegevensbronnen is een veelvoorkomende taak in veel toepassingen. Of u nu rapporten, facturen of gegevenssamenvattingen genereert, het programmatisch vullen van een tabel met gegevens kan u veel tijd en moeite besparen. In deze tutorial onderzoeken we hoe u een tabel genereert uit een DataTable met behulp van Aspose.Words voor Java. We splitsen het proces op in beheersbare stappen, zodat u elk onderdeel goed begrijpt.
 
-## Stap 1: Stel uw ontwikkelomgeving in
+## Vereisten
 
-Voordat we beginnen, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+Voordat we in de code duiken, controleren we of je alles hebt wat je nodig hebt om te beginnen:
 
-- Java Development Kit (JDK) op uw systeem geïnstalleerd.
-- Aspose.Words voor de Java-bibliotheek is gedownload en wordt in uw project gebruikt.
+1.  Java Development Kit (JDK): Zorg ervoor dat u JDK op uw machine hebt geïnstalleerd. U kunt het downloaden van de[Oracle-website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+   
+2.  Aspose.Words voor Java: U hebt de Aspose.Words-bibliotheek nodig. U kunt de nieuwste versie downloaden van[Aspose's releasepagina](https://releases.aspose.com/words/java/).
 
-## Stap 2: Bereid uw DataTable voor
+3. IDE: Een Integrated Development Environment (IDE) zoals IntelliJ IDEA of Eclipse maakt het coderen eenvoudiger.
 
-Eerst moet u uw DataTable voorbereiden met de vereiste gegevens. Een DataTable is als een virtuele tabel met rijen en kolommen. Vul deze met gegevens die u in de tabel wilt weergeven.
+4. Basiskennis van Java: Kennis van Java-programmeerconcepten helpt u de codefragmenten beter te begrijpen.
 
-```java
-// Maak een voorbeeld DataTable en voeg rijen en kolommen toe
-DataTable dataTable = new DataTable(""Employees"");
-dataTable.getColumns().add(""ID"", Integer.class);
-dataTable.getColumns().add(""Name"", String.class);
-dataTable.getRows().add(101, ""John Doe"");
-dataTable.getRows().add(102, ""Jane Smith"");
-dataTable.getRows().add(103, ""Michael Johnson"");
-```
+5. Voorbeeldgegevens: Voor deze tutorial gebruiken we een XML-bestand met de naam "List of people.xml" om een gegevensbron te simuleren. U kunt dit bestand met voorbeeldgegevens maken om te testen.
 
-## Stap 3: Genereer en formatteer de tabel
+## Stap 1: Maak een nieuw document
 
-Nu gaan we een nieuw document maken en de tabel genereren met behulp van de gegevens uit de DataTable. We passen ook opmaak toe om het uiterlijk van de tabel te verbeteren.
+Eerst moeten we een nieuw document maken waar onze tabel zal staan. Dit is het canvas voor ons werk.
 
 ```java
-// Een nieuw document maken
 Document doc = new Document();
-
-// Maak een tabel met hetzelfde aantal kolommen als de DataTable
-Table table = doc.getFirstSection().getBody().appendTable();
-table.ensureMinimum();
-
-// Voeg de koprij met kolomnamen toe
-Row headerRow = table.getRows().get(0);
-for (DataColumn column : dataTable.getColumns()) {
-    Cell cell = headerRow.getCells().add(column.getColumnName());
-    cell.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
-}
-
-// Gegevensrijen toevoegen aan de tabel
-for (DataRow dataRow : dataTable.getRows()) {
-    Row newRow = table.getRows().add();
-    for (DataColumn column : dataTable.getColumns()) {
-        Cell cell = newRow.getCells().add(dataRow.get(column.getColumnName()).toString());
-    }
-}
 ```
 
-## Stap 4: Sla het document op
+ Hier instantiëren we een nieuwe`Document` object. Dit zal dienen als ons werkdocument waarin we onze tabel zullen bouwen.
 
-Sla ten slotte het document met de gegenereerde tabel op de gewenste locatie op.
+## Stap 2: DocumentBuilder initialiseren
+
+ Vervolgens gebruiken we de`DocumentBuilder` klasse, waarmee we het document gemakkelijker kunnen bewerken.
 
 ```java
-// Document opslaan
-doc.save(""output.docx"");
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Door deze stappen te volgen, kunt u succesvol een tabel genereren uit een DataTable en deze opnemen in uw documentverwerkingsapplicatie met Aspose.Words voor Java. Deze bibliotheek met veel functies vereenvoudigt tabelverwerking en tekstverwerkingstaken, zodat u moeiteloos professionele en goed georganiseerde documenten kunt maken.
+ De`DocumentBuilder` object biedt methoden om tabellen, tekst en andere elementen in het document in te voegen.
+
+## Stap 3: Stel de pagina-oriëntatie in
+
+Omdat we verwachten dat onze tabel breed wordt, stellen we de pagina-oriëntatie in op liggend.
+
+```java
+doc.getFirstSection().getPageSetup().setOrientation(Orientation.LANDSCAPE);
+```
+
+Deze stap is cruciaal omdat het ervoor zorgt dat de tabel netjes op de pagina past, zonder dat deze wordt afgesneden.
+
+## Stap 4: Gegevens laden uit XML
+
+ Nu moeten we onze gegevens uit het XML-bestand in een`DataTable`. Dit is waar onze gegevens vandaan komen.
+
+```java
+DataSet ds = new DataSet();
+ds.readXml(getMyDir() + "List of people.xml");
+DataTable dataTable = ds.getTables().get(0);
+```
+
+ Hier lezen we het XML-bestand en halen de eerste tabel uit de dataset. Dit`DataTable` bevat de gegevens die we in ons document willen weergeven.
+
+## Stap 5: Importeer de tabel uit DataTable
+
+Nu komt het spannende gedeelte: het importeren van onze gegevens in het document als een tabel.
+
+```java
+Table table = importTableFromDataTable(builder, dataTable, true);
+```
+
+ Wij noemen de methode`importTableFromDataTable` , het passeren van de`DocumentBuilder` , ons`DataTable`en een Booleaanse waarde om aan te geven of kolomkoppen moeten worden opgenomen.
+
+## Stap 6: Stijl de tafel
+
+Zodra we onze tafel hebben, kunnen we hem stylen om hem er mooi uit te laten zien.
+
+```java
+table.setStyleIdentifier(StyleIdentifier.MEDIUM_LIST_2_ACCENT_1);
+table.setStyleOptions(TableStyleOptions.FIRST_ROW | TableStyleOptions.ROW_BANDS | TableStyleOptions.LAST_COLUMN);
+```
+
+Deze code past een vooraf gedefinieerde stijl toe op de tabel, waardoor de visuele aantrekkingskracht en leesbaarheid worden verbeterd.
+
+## Stap 7: Verwijder ongewenste cellen
+
+Als u kolommen hebt die u niet wilt weergeven, bijvoorbeeld een afbeeldingskolom, kunt u deze eenvoudig verwijderen.
+
+```java
+table.getFirstRow().getLastCell().removeAllChildren();
+```
+
+Met deze stap zorgen we ervoor dat onze tabel alleen de relevante informatie weergeeft.
+
+## Stap 8: Sla het document op
+
+Ten slotte slaan we ons document op met de gegenereerde tabel.
+
+```java
+doc.save(getArtifactsDir() + "WorkingWithTables.BuildTableFromDataTable.docx");
+```
+
+Met deze regel wordt het document in de opgegeven map opgeslagen, zodat u de resultaten kunt bekijken.
+
+## De importTableFromDataTable-methode
+
+ Laten we eens wat beter kijken naar de`importTableFromDataTable` methode. Deze methode is verantwoordelijk voor het maken van de tabelstructuur en het vullen ervan met gegevens.
+
+### Stap 1: Start de tafel
+
+Eerst moeten we een nieuwe tabel in het document starten.
+
+```java
+Table table = builder.startTable();
+```
+
+Hiermee wordt een nieuwe tabel in ons document geïnitialiseerd.
+
+### Stap 2: Kolomkoppen toevoegen
+
+ Als we kolomkoppen willen opnemen, controleren we de`importColumnHeadings` vlag.
+
+```java
+if (importColumnHeadings) {
+    // Originele opmaak opslaan
+    boolean boldValue = builder.getFont().getBold();
+    int paragraphAlignmentValue = builder.getParagraphFormat().getAlignment();
+
+    // Koptekstopmaak instellen
+    builder.getFont().setBold(true);
+    builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
+
+    // Kolomnamen invoegen
+    for (DataColumn column : dataTable.getColumns()) {
+        builder.insertCell();
+        builder.writeln(column.getColumnName());
+    }
+
+    builder.endRow();
+
+    // Herstel originele opmaak
+    builder.getFont().setBold(boldValue);
+    builder.getParagraphFormat().setAlignment(paragraphAlignmentValue);
+}
+```
+
+ Dit codeblok formatteert de koprij en voegt de namen van de kolommen uit de`DataTable`.
+
+### Stap 3: Vul de tabel met gegevens
+
+ Nu doorlopen we elke rij van de`DataTable` om gegevens in de tabel in te voegen.
+
+```java
+for (DataRow dataRow : (Iterable<DataRow>) dataTable.getRows()) {
+    for (Object item : dataRow.getItemArray()) {
+        builder.insertCell();
+        switch (item.getClass().getName()) {
+            case "DateTime":
+                Date dateTime = (Date) item;
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMMM d, yyyy");
+                builder.write(simpleDateFormat.format(dateTime));
+                break;
+            default:
+                builder.write(item.toString());
+                break;
+        }
+    }
+    builder.endRow();
+}
+```
+
+In dit gedeelte behandelen we verschillende gegevenstypen, waarbij we datums op de juiste manier opmaken en andere gegevens als tekst invoegen.
+
+### Stap 4: Sluit de tafel af
+
+Ten slotte ronden we de tabel af, nadat alle gegevens zijn ingevoerd.
+
+```java
+builder.endTable();
+```
+
+ Deze regel markeert het einde van onze tabel, waardoor de`DocumentBuilder` om te weten dat we klaar zijn met dit gedeelte.
 
 ## Conclusie
 
-Gefeliciteerd! U hebt succesvol geleerd hoe u een tabel genereert uit een DataTable met Aspose.Words voor Java. Deze stapsgewijze handleiding demonstreerde het proces van het voorbereiden van een DataTable, het maken en formatteren van een tabel in een Word-document en het opslaan van de uiteindelijke uitvoer. Aspose.Words voor Java biedt een krachtige en flexibele API voor tabelverwerking, waardoor het eenvoudig is om tabelgegevens te beheren en deze op te nemen in uw tekstverwerkingsprojecten.
-
-Door de mogelijkheden van Aspose.Words te benutten, kunt u complexe tabelstructuren verwerken, aangepaste opmaak toepassen en tabellen naadloos integreren in uw documenten. Of u nu rapporten, facturen of een ander document genereert dat een tabelweergave vereist, Aspose.Words stelt u in staat om eenvoudig professionele resultaten te behalen.
-
-Ontdek gerust de vele functies en functionaliteiten die Aspose.Words voor Java biedt om uw documentverwerkingsmogelijkheden te verbeteren en uw Java-toepassingen te stroomlijnen.
+En daar heb je het! Je hebt succesvol geleerd hoe je een tabel genereert uit een DataTable met Aspose.Words voor Java. Door deze stappen te volgen, kun je eenvoudig dynamische tabellen in je documenten maken op basis van verschillende gegevensbronnen. Of je nu rapporten of facturen genereert, deze methode stroomlijnt je workflow en verbetert je documentcreatieproces.
 
 ## Veelgestelde vragen
 
-### 1. Kan ik tabellen genereren met samengevoegde cellen of geneste tabellen?
+### Wat is Aspose.Words voor Java?
+Aspose.Words voor Java is een krachtige bibliotheek voor het programmatisch maken, bewerken en converteren van Word-documenten.
 
-Ja, met Aspose.Words voor Java kunt u tabellen maken met samengevoegde cellen of zelfs tabellen in elkaar nesten. Hiermee kunt u complexe tabellay-outs ontwerpen en gegevens in verschillende formaten weergeven.
+### Kan ik Aspose.Words gratis gebruiken?
+ Ja, Aspose biedt een gratis proefversie. U kunt deze downloaden van[hier](https://releases.aspose.com/).
 
-### 2. Hoe kan ik het uiterlijk van de gegenereerde tabel aanpassen?
+### Hoe kan ik tabellen in Aspose.Words stylen?
+kunt stijlen toepassen met behulp van vooraf gedefinieerde stijl-ID's en opties die door de bibliotheek worden geleverd.
 
-Aspose.Words voor Java biedt een breed scala aan opmaakopties voor tabellen, cellen, rijen en kolommen. U kunt lettertypes, achtergrondkleuren, randen en uitlijning instellen om het gewenste uiterlijk van uw tabel te bereiken.
+### Welke soorten gegevens kan ik in tabellen invoegen?
+U kunt verschillende gegevenstypen invoegen, zoals tekst, getallen en datums, die u naar wens kunt opmaken.
 
-### 3. Kan ik de gegenereerde tabel naar verschillende formaten exporteren?
-
-Absoluut! Aspose.Words voor Java ondersteunt het exporteren van Word-documenten naar verschillende formaten, waaronder PDF, HTML, XPS en meer. U kunt de gegenereerde tabel eenvoudig converteren naar uw gewenste formaat met behulp van de meegeleverde exportopties.
-
-### 4. Is Aspose.Words voor Java geschikt voor grootschalige documentverwerking?
-
-Ja, Aspose.Words voor Java is ontworpen om zowel kleine als grote documentverwerkingstaken efficiënt af te handelen. De geoptimaliseerde verwerkingsengine zorgt voor hoge prestaties en betrouwbare verwerking, zelfs bij grote documenten en complexe tabelstructuren.
+### Waar kan ik ondersteuning krijgen voor Aspose.Words?
+ U kunt ondersteuning vinden en vragen stellen op de[Aspose-forum](https://forum.aspose.com/c/words/8/).

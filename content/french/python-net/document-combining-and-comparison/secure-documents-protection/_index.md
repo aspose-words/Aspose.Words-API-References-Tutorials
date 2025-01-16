@@ -38,14 +38,6 @@ Vous pouvez ajouter un mot de passe à votre document pour restreindre l'accès�
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## Restriction des autorisations d'édition
-
-Pour contrôler qui peut apporter des modifications au document, vous pouvez définir des autorisations de modification :
-
-```python
-protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
-protection.set_editing_groups(["Editors"])
-```
 
 ## Cryptage du contenu des documents
 
@@ -60,8 +52,10 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 Ajoutez une signature numérique pour garantir l'authenticité du document :
 
 ```python
-digital_signature = aw.digital_signatures.DigitalSignature(doc)
-digital_signature.sign("certificate.pfx", "signature_password")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
+			
+aw.digitalsignatures.DigitalSignatureUtil.sign(dst_document_path, dst_document_path, certificate_holder, sign_options)
 ```
 
 ## Filigranage pour la sécurité
@@ -71,15 +65,6 @@ Les filigranes peuvent décourager le partage non autorisé :
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
-```
-
-## Rédaction d'informations sensibles
-
-Pour supprimer définitivement des informations sensibles :
-
-```python
-redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
-doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
 ## Conclusion

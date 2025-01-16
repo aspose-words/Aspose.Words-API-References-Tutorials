@@ -56,7 +56,7 @@ Erstellen Sie eine Zeichenfolgenvariable, die den Pfad zu Ihrem Dokumentverzeich
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Ersetzen`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad, in dem sich Ihr Dokument befindet.
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad, in dem sich Ihr Dokument befindet.
 
 ### Einlegen des Dokuments
 

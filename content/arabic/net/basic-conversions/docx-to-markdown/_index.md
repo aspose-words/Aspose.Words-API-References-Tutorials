@@ -59,7 +59,7 @@ doc.Save(dataDir + "ConvertedDocument.md", SaveFormat.Markdown);
 نعم، يوفر Aspose.Words واجهات برمجة تطبيقات قوية للتعامل مع الجداول والصور وتنسيق النص والمزيد داخل المستندات.
 
 ### أين يمكنني العثور على وثائق مفصلة لـ Aspose.Words لـ .NET؟
-الوثائق التفصيلية متاحة[هنا](https://reference.aspose.com/words/net/).
+ الوثائق التفصيلية متاحة[هنا](https://reference.aspose.com/words/net/).
 
 ### كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Words لـ .NET؟
 يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).

@@ -32,7 +32,7 @@ using Aspose.Words.PageSetup;
 
 ## Étape 1 : Chargez votre document
 
-Tout d'abord, vous devez charger votre document. C'est la base sur laquelle vous construirez la configuration de votre page.
+Tout d'abord, vous devez charger votre document. C'est la base sur laquelle vous allez construire la configuration de votre page.
 
  Créer une nouvelle instance de`Document` classe et chargez votre document à partir d'un répertoire spécifié.
 
@@ -94,4 +94,4 @@ Oui, vous pouvez l'utiliser avec une licence temporaire que vous pouvez obtenir[
 Il prend en charge une large gamme de langues, y compris les langues asiatiques comme le chinois et le japonais.
 
 ### Où puis-je trouver une documentation plus détaillée ?
-Une documentation détaillée est disponible[ici](https://reference.aspose.com/words/net/).
+ Une documentation détaillée est disponible[ici](https://reference.aspose.com/words/net/).

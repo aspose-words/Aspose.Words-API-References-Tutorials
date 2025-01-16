@@ -19,10 +19,10 @@ Trước khi bắt đầu hướng dẫn, hãy đảm bảo bạn đã đáp ứ
 Bước đầu tiên là tải tài liệu mà bạn muốn chia nhỏ và định dạng. Sử dụng đoạn mã sau để thực hiện việc này:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## Bước 2: Chia tài liệu thành các phần
@@ -41,10 +41,10 @@ Bây giờ, giả sử bạn muốn áp dụng định dạng cụ thể cho m�
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## Bước 4: Lưu tài liệu
@@ -55,6 +55,12 @@ Sau khi chia tách và định dạng tài liệu, đã đến lúc lưu các th
 document.save("path/to/save/updated_document.docx")
 ```
 
+## Phần kết luận
+
+Aspose.Words for Python cung cấp một bộ công cụ toàn diện để phân chia và định dạng tài liệu hiệu quả theo nhu cầu của bạn. Bằng cách làm theo các bước được nêu trong hướng dẫn này và sử dụng các ví dụ mã nguồn được cung cấp, bạn có thể quản lý tài liệu của mình một cách liền mạch và trình bày chúng một cách chuyên nghiệp.
+
+Trong hướng dẫn này, chúng tôi đã đề cập đến những điều cơ bản về việc chia tách tài liệu, định dạng và cung cấp giải pháp cho các câu hỏi thường gặp. Bây giờ đến lượt bạn khám phá và thử nghiệm các khả năng của Aspose.Words for Python để nâng cao hơn nữa quy trình quản lý tài liệu của bạn.
+
 ## Câu hỏi thường gặp
 
 ### Làm thế nào để chia một tài liệu thành nhiều tập tin?
@@ -62,7 +68,7 @@ Bạn có thể chia một tài liệu thành nhiều tệp bằng cách lặp l
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ Có, bạn có thể áp dụng định dạng khác nhau cho các đoạn văn 
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### Làm thế nào để thay đổi kiểu phông chữ cho một phần cụ thể?
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### Có thể xóa một phần cụ thể khỏi tài liệu không?
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## Phần kết luận
-Aspose.Words for Python cung cấp một bộ công cụ toàn diện để phân chia và định dạng tài liệu hiệu quả theo nhu cầu của bạn. Bằng cách làm theo các bước được nêu trong hướng dẫn này và sử dụng các ví dụ mã nguồn được cung cấp, bạn có thể quản lý tài liệu của mình một cách liền mạch và trình bày chúng một cách chuyên nghiệp.
-
-Trong hướng dẫn này, chúng tôi đã đề cập đến những điều cơ bản về việc chia tách tài liệu, định dạng và cung cấp giải pháp cho các câu hỏi thường gặp. Bây giờ đến lượt bạn khám phá và thử nghiệm các khả năng của Aspose.Words for Python để nâng cao hơn nữa quy trình quản lý tài liệu của bạn.

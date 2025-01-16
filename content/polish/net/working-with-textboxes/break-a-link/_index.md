@@ -100,7 +100,7 @@ Czasami pole tekstowe może być częścią łańcucha, z innymi polami łączą
 textBox.Previous?.BreakForwardLink();
 ```
 
-Ten`?.` operator zapewnia, że metoda zostanie wywołana tylko wtedy, gdy`Previous` nie jest nullem, co zapobiega potencjalnym błędom w czasie wykonywania.
+ Ten`?.` operator zapewnia, że metoda zostanie wywołana tylko wtedy, gdy`Previous` nie jest nullem, co zapobiega potencjalnym błędom w czasie wykonywania.
 
 ## Wniosek
 

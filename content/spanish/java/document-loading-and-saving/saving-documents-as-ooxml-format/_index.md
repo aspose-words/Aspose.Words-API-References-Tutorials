@@ -91,7 +91,7 @@ import com.aspose.words.SaveFormat;
 Document doc = new Document("LegacyControlChars.doc");
 
 // Cree OoxmlSaveOptions con el formato FLAT_OPC y habilite el mantenimiento de caracteres de control heredados
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setKeepLegacyControlChars(true);
 
 // Guardar el documento con caracteres de control heredados
@@ -148,7 +148,7 @@ public void updateLastSavedTimeProperty() throws Exception
 public void keepLegacyControlChars() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Legacy control character.doc");
-	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC); { saveOptions.setKeepLegacyControlChars(true); }
+	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(); { saveOptions.setKeepLegacyControlChars(true); }
 	doc.save("Your Directory Path" + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
 }
 @Test

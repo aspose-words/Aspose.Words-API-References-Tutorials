@@ -63,7 +63,7 @@ builder.Writeln("A whole paragraph.");
 
 ## Βήμα 4: Αποθηκεύστε το έγγραφο
 
-Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο στη θέση που επιθυμείτε.
+Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο στην επιθυμητή θέση.
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```

@@ -32,7 +32,7 @@ using Aspose.Words;
 
 Om een Docx-bestand naar een byte-array te converteren, volgt u deze stappen:
 ```csharp
-//Laad het Docx-bestand van schijf of stream
+// Laad het Docx-bestand van schijf of stream
 Document doc = new Document("input.docx");
 
 // Sla het document op in een MemoryStream
@@ -64,13 +64,13 @@ Concluderend is het gebruik van Aspose.Words voor .NET om Docx-bestanden te conv
  Nee, u hebt een geldige licentie nodig om Aspose.Words voor .NET in productie te gebruiken. U kunt een tijdelijke licentie verkrijgen[hier](https://purchase.aspose.com/temporary-license/).
 
 ### Hoe kan ik meer te weten komen over Aspose.Words voor .NET-documentatie?
- Bezoek de documentatie[hier](https://reference.aspose.com/words/net/)voor uitgebreide handleidingen en API-referenties.
+ Bezoek de documentatie[hier](https://reference.aspose.com/words/net/) voor uitgebreide handleidingen en API-referenties.
 
 ### Is Aspose.Words geschikt voor het verwerken van grote Docx-bestanden?
 Ja, Aspose.Words voor .NET biedt efficiënt geheugenbeheer en prestatie-optimalisaties voor het verwerken van grote documenten.
 
 ### Waar kan ik communityondersteuning krijgen voor Aspose.Words voor .NET?
- Sluit je aan bij het communityforum[hier](https://forum.aspose.com/c/words/8) om vragen te stellen, kennis te delen en contact te leggen met andere gebruikers.
+ Sluit je aan bij het communityforum[hier](https://forum.aspose.com/c/words/8)om vragen te stellen, kennis te delen en contact te leggen met andere gebruikers.
 
 ### Kan ik Aspose.Words voor .NET gratis uitproberen voordat ik het koop?
  Ja, u kunt een gratis proefversie downloaden[hier](https://releases.aspose.com/) om de kenmerken en mogelijkheden ervan te evalueren.

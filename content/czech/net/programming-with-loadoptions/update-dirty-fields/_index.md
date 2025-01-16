@@ -16,7 +16,7 @@ Byli jste někdy v situaci, kdy máte dokument Wordu plný polí, která je tře
 
 Než se ponoříme do toho nejnutnějšího, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Pokud ne, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Jakákoli verze kompatibilní s Aspose.Words.
 3. Základní znalost C#: Výhodou bude znalost programování v C#.
 4. Ukázkový dokument Word: Dokument se špinavými poli, které je třeba aktualizovat.

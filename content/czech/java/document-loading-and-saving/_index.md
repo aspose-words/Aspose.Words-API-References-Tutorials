@@ -39,7 +39,7 @@ Prozkoumejte všestrannost Aspose.Words pro Java, když se ponoříme do uklád�
 
 Nastavení dokumentů je klíčem k doručování dokumentů šitých na míru vašim přesným požadavkům. Naučte se, jak upravit nastavení, jako je velikost stránky, okraje a písma, abyste dosáhli požadovaného výstupu.
 
-Aspose.Words for Java vám umožňuje převzít kontrolu nad načítáním a ukládáním dokumentů jako nikdy předtím. Náš seznam výukových programů slouží jako váš plán pro zvládnutí této výkonné knihovny. Díky pevnému základu v manipulaci s dokumenty budete připraveni snadno zvládnout i ty nejsložitější úkoly.
+Aspose.Words for Java vám umožňuje převzít kontrolu nad načítáním a ukládáním dokumentů jako nikdy předtím. Náš seznam výukových programů slouží jako váš plán k zvládnutí této výkonné knihovny. Díky pevnému základu v manipulaci s dokumenty budete připraveni snadno zvládnout i ty nejsložitější úkoly.
 
 ## Výukové programy pro načítání a ukládání dokumentů
 ### [Načítání a ukládání dokumentů HTML pomocí Aspose.Words pro Javu](./loading-and-saving-html-documents/)

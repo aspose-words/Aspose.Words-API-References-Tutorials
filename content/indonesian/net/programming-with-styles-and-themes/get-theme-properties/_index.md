@@ -64,7 +64,7 @@ Tema dalam dokumen Word sering kali menyertakan pengaturan untuk berbagai jenis 
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
-Itu`MajorFonts` menyediakan akses ke pengaturan fon utama. Dalam contoh ini, kami secara khusus mengambil fon Latin yang digunakan dalam tema. Anda dapat menggunakan kode serupa untuk mendapatkan fon utama lainnya seperti fon Asia Timur atau Aksara Kompleks.
+ Itu`MajorFonts` menyediakan akses ke pengaturan fon utama. Dalam contoh ini, kami secara khusus mengambil fon Latin yang digunakan dalam tema. Anda dapat menggunakan kode serupa untuk mendapatkan fon utama lainnya seperti fon Asia Timur atau Aksara Kompleks.
 
 ## Langkah 4: Ambil Font Minor
 
@@ -84,7 +84,7 @@ Tema juga menentukan berbagai warna yang digunakan untuk aksen dalam dokumen. Un
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
-Itu`Colors` milik`Theme` kelas memungkinkan Anda mengambil aksen warna berbeda yang ditentukan dalam tema, memungkinkan Anda untuk mengelola dan menerapkan skema warna yang konsisten dalam dokumen Anda.
+ Itu`Colors` milik`Theme` kelas memungkinkan Anda mengambil aksen warna berbeda yang ditentukan dalam tema, memungkinkan Anda untuk mengelola dan menerapkan skema warna yang konsisten dalam dokumen Anda.
 
 ## Kesimpulan
 

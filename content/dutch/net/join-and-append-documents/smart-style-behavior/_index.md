@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Uitleg:
-De`DocumentBuilder` is een handige tool die methoden biedt om door het document te navigeren en het te wijzigen. Hier koppelen we het aan ons bestemmingsdocument.
+ De`DocumentBuilder` is een handige tool die methoden biedt om door het document te navigeren en het te wijzigen. Hier koppelen we het aan ons bestemmingsdocument.
 
 ## Stap 3: Ga naar het einde van het document en voeg een pagina-einde in
 

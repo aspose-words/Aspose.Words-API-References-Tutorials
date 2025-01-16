@@ -66,7 +66,7 @@ Aspose.Words for .NET 是一个功能强大的库，允许您在 .NET 应用程�
 ### 我可以将 Aspose.Words for .NET 与 .NET Core 一起使用吗？
 是的，Aspose.Words for .NET 与 .NET Framework 和 .NET Core 兼容。
 
-### 如何获得 Aspose.Words 的临时许可证？
+### 如何获取 Aspose.Words 的临时许可证？
 您可以从[这里](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET 有免费试用版吗？

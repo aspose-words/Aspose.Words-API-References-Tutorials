@@ -23,7 +23,7 @@ Sebelum kita membahas secara spesifik tentang gaya dan pemformatan tabel dokumen
 2. Impor Pustaka: Impor pustaka Aspose.Words ke skrip Python Anda menggunakan pernyataan impor berikut:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. Muat Dokumen: Muat dokumen yang ada atau buat yang baru menggunakan API Aspose.Words.
@@ -35,7 +35,7 @@ Untuk membuat dan menyisipkan tabel ke dalam dokumen menggunakan Aspose.Words un
 1.  Buat Tabel: Gunakan`DocumentBuilder` kelas untuk membuat tabel baru dan menentukan jumlah baris dan kolom.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ Untuk membuat dan menyisipkan tabel ke dalam dokumen menggunakan Aspose.Words un
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. Pengisi Sel: Tambahkan pengisi pada sel untuk meningkatkan jarak.
@@ -80,32 +80,8 @@ Untuk membuat dan menyisipkan tabel ke dalam dokumen menggunakan Aspose.Words un
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Menata Tabel dengan Aspose.Words
-
-Aspose.Words untuk Python menyediakan berbagai opsi gaya untuk membuat tabel Anda menarik secara visual:
-
-1. Gaya Tabel: Terapkan gaya tabel yang telah ditentukan sebelumnya untuk mendapatkan tampilan profesional.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. Warna Latar Belakang Sel: Ubah warna latar belakang sel untuk menyorot data tertentu.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. Pemformatan Font: Sesuaikan gaya, ukuran, dan warna font agar lebih mudah dibaca.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## Menggabungkan dan Memisahkan Sel untuk Tata Letak Kompleks
@@ -115,30 +91,14 @@ Membuat tata letak tabel yang kompleks sering kali memerlukan penggabungan dan p
 1. Gabungkan Sel: Gabungkan beberapa sel untuk membuat sel tunggal yang lebih besar.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. Membagi Sel: Membagi sel kembali menjadi komponen-komponen individualnya.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## Menyesuaikan Tinggi dan Lebar Baris dan Kolom
-
-Sesuaikan dimensi baris dan kolom untuk tata letak tabel yang seimbang:
-
-1. Sesuaikan Tinggi Baris: Ubah tinggi baris berdasarkan konten.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. Sesuaikan Lebar Kolom: Secara otomatis menyesuaikan lebar kolom agar sesuai dengan konten.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## Menambahkan Batas dan Bayangan pada Tabel
@@ -148,13 +108,13 @@ Tingkatkan tampilan tabel dengan menambahkan batas dan bayangan:
 1. Batas: Sesuaikan batas untuk tabel dan sel.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. Bayangan: Terapkan bayangan pada sel untuk efek yang menarik secara visual.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## Bekerja dengan Konten dan Penyelarasan Sel
@@ -171,7 +131,7 @@ Mengelola konten dan penyelarasan sel secara efisien untuk keterbacaan yang lebi
 2. Perataan Teks: Ratakan teks sel sesuai kebutuhan.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## Menangani Header dan Footer Tabel
@@ -188,26 +148,10 @@ Gabungkan header dan footer ke dalam tabel Anda untuk konteks yang lebih baik:
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## Menyesuaikan Tata Letak Tabel Secara Otomatis
-
-Pastikan tata letak tabel Anda menyesuaikan secara otomatis berdasarkan konten:
-
-1. Sesuaikan Otomatis ke Jendela: Memungkinkan tabel disesuaikan dengan lebar halaman.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. Ubah Ukuran Sel Otomatis: Aktifkan pengubahan ukuran sel otomatis untuk mengakomodasi konten.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## Mengekspor Tabel ke Format Berbeda
 
 Setelah tabel Anda siap, Anda dapat mengekspornya ke berbagai format, seperti PDF atau DOCX:
@@ -215,26 +159,20 @@ Setelah tabel Anda siap, Anda dapat mengekspornya ke berbagai format, seperti PD
 1. Simpan sebagai PDF: Simpan dokumen dengan tabel sebagai berkas PDF.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. Simpan sebagai DOCX: Simpan dokumen sebagai berkas DOCX.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## Pemecahan Masalah dan Tips untuk Manajemen Meja yang Efektif
-
-- Jika tabel tampak terdistorsi, periksa lebar kolom atau tinggi baris yang salah.
-- Uji rendering tabel dalam format berbeda untuk memastikan konsistensi.
-- Untuk tata letak yang rumit, rencanakan penggabungan dan pemisahan sel dengan hati-hati.
-
+	
 ## Kesimpulan
 
 Aspose.Words untuk Python menawarkan perangkat lengkap untuk membuat, menata, dan memformat tabel dokumen. Dengan mengikuti langkah-langkah yang diuraikan dalam artikel ini, Anda dapat mengelola tabel dalam dokumen secara efektif, menyesuaikan tampilannya, dan mengekspornya ke berbagai format. Manfaatkan kekuatan Aspose.Words untuk menyempurnakan presentasi dokumen Anda dan memberikan informasi yang jelas dan menarik secara visual kepada pembaca Anda.
 
-## Tanya Jawab Umum
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menginstal Aspose.Words untuk Python?
 

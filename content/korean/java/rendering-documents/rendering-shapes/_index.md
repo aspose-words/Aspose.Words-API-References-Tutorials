@@ -89,7 +89,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### 질문 3: Aspose.Words for Java에 사용할 수 있는 라이선스 옵션이 있나요?
 
- 예, 라이센스 옵션을 살펴보고 Aspose.Words for Java를 구매할 수 있습니다.[Aspose 웹사이트](https://purchase.aspose.com/buy).
+예, 라이센스 옵션을 살펴보고 Aspose.Words for Java를 구매할 수 있습니다.[Aspose 웹사이트](https://purchase.aspose.com/buy).
 
 ### Q4: 구매하기 전에 Aspose.Words for Java를 사용해 볼 수 있나요?
 
@@ -97,6 +97,6 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### 질문 5: Aspose.Words for Java에 대한 지원이나 질문은 어디에서 받을 수 있나요?
 
-질문이나 지원이 필요하면 다음을 방문하세요.[Aspose.Words for Java 포럼](https://forum.aspose.com/).
+ 질문이나 지원이 필요하면 다음을 방문하세요.[Aspose.Words for Java 포럼](https://forum.aspose.com/).
 
 이제 Aspose.Words for Java로 셰이프 렌더링을 마스터했으니, 문서 처리 프로젝트에서 이 다재다능한 API의 잠재력을 최대한 활용할 준비가 되었습니다. 즐거운 코딩 되세요!

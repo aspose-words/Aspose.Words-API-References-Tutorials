@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## ขั้นตอนที่ 3: เริ่มต้น DocumentBuilder
 
-การ`DocumentBuilder` คลาสเป็นเครื่องมือหลักของเราสำหรับการเพิ่มเนื้อหาลงในเอกสาร ลองนึกภาพว่ามันเป็นปากกาที่เขียนบนผืนผ้าใบของเอกสาร Word
+ การ`DocumentBuilder` คลาสเป็นเครื่องมือหลักของเราสำหรับการเพิ่มเนื้อหาลงในเอกสาร ลองนึกภาพว่ามันเป็นปากกาที่เขียนบนผืนผ้าใบของเอกสาร Word
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

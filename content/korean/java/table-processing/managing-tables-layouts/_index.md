@@ -110,7 +110,7 @@ table.getRows().get(0).getCells().get(0).getParagraphs().get(0).getRuns().get(0)
  걱정하지 마세요! 이전에 병합된 셀을 쉽게 분할하려면 가로 병합 속성을 다음과 같이 설정하세요.`NONE`.
 
 ### 표 앞에 페이지 나누기를 추가하려면 어떻게 해야 하나요?
- 표 앞에 페이지 나누기를 삽입하려면 글꼴을 수정하세요.`PageBreakBefore` 입증된 속성입니다.
+표 앞에 페이지 나누기를 삽입하려면 글꼴을 수정하세요.`PageBreakBefore` 입증된 속성입니다.
 
 ### Aspose.Words는 다양한 문서 형식과 호환됩니까?
 물론입니다! Aspose.Words for Java는 다양한 문서 형식을 지원하여 문서 관리에 다재다능한 선택이 됩니다.

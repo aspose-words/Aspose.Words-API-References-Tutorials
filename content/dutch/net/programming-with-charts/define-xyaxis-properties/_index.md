@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Drawing.Charts;
 ```
 
-We splitsen het proces op in eenvoudige stappen, waarbij elke stap zich richt op een specifiek onderdeel van het definiëren van de XY-aseigenschappen in een grafiek.
+We zullen het proces opsplitsen in eenvoudige stappen, waarbij elke stap zich richt op een specifiek onderdeel van het definiëren van de XY-aseigenschappen in een grafiek.
 
 ## Stap 1: Initialiseer het document en DocumentBuilder
 
@@ -78,7 +78,7 @@ Nu is het tijd om de eigenschappen voor de X-as te definiëren. Dit omvat het in
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // Gemeten in weergave-eenheden van de Y-as (honderden).
+xAxis.CrossesAt = 3; //Gemeten in weergave-eenheden van de Y-as (honderden).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

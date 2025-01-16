@@ -18,7 +18,7 @@ url: /ru/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 1.  Установка Python: Убедитесь, что Python установлен в вашей системе. Вы можете загрузить его с[здесь](https://www.python.org/downloads/).
 
-2. Aspose.Words for Python: Вам необходимо установить Aspose.Words for Python. Вы можете загрузить его с[здесь](https://releases.aspose.com/words/python/).
+2.  Aspose.Words for Python: Вам необходимо установить Aspose.Words for Python. Вы можете загрузить его с[здесь](https://releases.aspose.com/words/python/).
 
 3. Подготовка документа: подготовьте документ Word, в котором вы хотите выполнить операции поиска и замены.
 
@@ -118,4 +118,4 @@ doc.save("path/to/save/document.docx")
 
 ### Могу ли я заменить текст, отслеживая внесенные изменения?
 
- Да, вы можете отслеживать изменения с помощью`revision` Функция Aspose.Words. Позволяет отслеживать все изменения, внесенные в документ.
+ Да, вы можете отслеживать изменения с помощью`revision`Функция Aspose.Words. Позволяет отслеживать все изменения, внесенные в документ.

@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-Ο`InterpolateImages` ιδιοκτησία έχει οριστεί σε`true` για να διασφαλίσετε ότι οι εικόνες στο PDF σας παρεμβάλλονται, βελτιώνοντας την ποιότητά τους.
+ Ο`InterpolateImages` ιδιοκτησία έχει οριστεί σε`true` για να διασφαλίσετε ότι οι εικόνες στο PDF σας παρεμβάλλονται, βελτιώνοντας την ποιότητά τους.
 
 ## Βήμα 4: Αποθηκεύστε το Έγγραφο ως PDF
 

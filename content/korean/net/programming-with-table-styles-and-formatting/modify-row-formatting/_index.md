@@ -61,7 +61,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 Row firstRow = table.FirstRow;
 ```
 
-그만큼`FirstRow` 속성은 테이블의 첫 번째 행을 제공합니다. 이제 서식을 수정할 준비가 되었습니다.
+ 그만큼`FirstRow` 속성은 테이블의 첫 번째 행을 제공합니다. 이제 서식을 수정할 준비가 되었습니다.
 
 ## 4단계: 행 테두리 수정
 

@@ -23,7 +23,7 @@ url: /th/python-net/document-structure-and-content-manipulation/document-fields/
  ในการแทรกฟิลด์คุณสามารถใช้`FieldBuilder` คลาส ตัวอย่างเช่น การแทรกฟิลด์วันที่ปัจจุบัน:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## การสร้างเอกสารอัตโนมัติด้วยฟิลด์
-
-ฟิลด์มีความจำเป็นสำหรับการสร้างเอกสารอัตโนมัติ คุณสามารถป้อนข้อมูลจากแหล่งภายนอกลงในฟิลด์ได้:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## การรวมฟิลด์กับแหล่งข้อมูล

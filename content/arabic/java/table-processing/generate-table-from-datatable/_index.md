@@ -7,91 +7,203 @@ type: docs
 weight: 11
 url: /ar/java/table-processing/generate-table-from-datatable/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سنوضح كيفية إنشاء جدول من جدول بيانات باستخدام Aspose.Words for Java. جدول البيانات هو بنية بيانات أساسية تحتوي على بيانات جدولية، وبفضل ميزات معالجة الجداول القوية في Aspose.Words، يمكننا بسهولة إنشاء جدول بتنسيق جيد في مستند Word. اتبع الدليل خطوة بخطوة أدناه لإنشاء جدول ودمجه في تطبيق معالجة النصوص الخاص بك.
+إن إنشاء الجداول ديناميكيًا من مصادر البيانات يعد مهمة شائعة في العديد من التطبيقات. سواء كنت تقوم بإنشاء تقارير أو فواتير أو ملخصات بيانات، فإن القدرة على ملء جدول بالبيانات برمجيًا يمكن أن توفر لك الكثير من الوقت والجهد. في هذا البرنامج التعليمي، سنستكشف كيفية إنشاء جدول من جدول بيانات باستخدام Aspose.Words for Java. سنقوم بتقسيم العملية إلى خطوات يمكن إدارتها، مما يضمن لك فهمًا واضحًا لكل جزء.
 
-## الخطوة 1: إعداد بيئة التطوير الخاصة بك
+## المتطلبات الأساسية
 
-قبل أن نبدأ، تأكد من أن لديك المتطلبات الأساسية التالية:
+قبل الغوص في الكود، دعنا نتأكد من أن لديك كل ما تحتاجه للبدء:
 
-- تم تثبيت Java Development Kit (JDK) على نظامك.
-- تم تنزيل Aspose.Words لمكتبة Java والإشارة إليها في مشروعك.
+1.  مجموعة تطوير Java (JDK): تأكد من تثبيت JDK على جهازك. يمكنك تنزيله من[موقع أوراكل](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+   
+2.  Aspose.Words for Java: ستحتاج إلى مكتبة Aspose.Words. يمكنك تنزيل أحدث إصدار من[صفحة إصدارات Aspose](https://releases.aspose.com/words/java/).
 
-## الخطوة 2: قم بإعداد جدول البيانات الخاص بك
+3. IDE: بيئة التطوير المتكاملة (IDE) مثل IntelliJ IDEA أو Eclipse سوف تجعل عملية البرمجة أسهل.
 
-أولاً، عليك إعداد جدول البيانات الخاص بك بالبيانات المطلوبة. جدول البيانات يشبه جدولًا افتراضيًا يحتوي على صفوف وأعمدة. املأه بالبيانات التي تريد عرضها في الجدول.
+4. المعرفة الأساسية بلغة Java: ستساعدك المعرفة بمفاهيم برمجة Java على فهم مقتطفات التعليمات البرمجية بشكل أفضل.
 
-```java
-// إنشاء جدول بيانات نموذجي وإضافة صفوف وأعمدة
-DataTable dataTable = new DataTable(""Employees"");
-dataTable.getColumns().add(""ID"", Integer.class);
-dataTable.getColumns().add(""Name"", String.class);
-dataTable.getRows().add(101, ""John Doe"");
-dataTable.getRows().add(102, ""Jane Smith"");
-dataTable.getRows().add(103, ""Michael Johnson"");
-```
+5. بيانات العينة: في هذا البرنامج التعليمي، سنستخدم ملف XML باسم "List of people.xml" لمحاكاة مصدر البيانات. يمكنك إنشاء هذا الملف باستخدام بيانات العينة للاختبار.
 
-## الخطوة 3: إنشاء الجدول وتنسيقه
+## الخطوة 1: إنشاء مستند جديد
 
-الآن، سننشئ مستندًا جديدًا وننشئ الجدول باستخدام البيانات من جدول البيانات. وسنطبق أيضًا التنسيق لتحسين مظهر الجدول.
+أولاً، نحتاج إلى إنشاء مستند جديد حيث سيتم وضع الجدول. هذا هو القماش الذي سنستخدمه في عملنا.
 
 ```java
-// إنشاء مستند جديد
 Document doc = new Document();
-
-// إنشاء جدول بنفس عدد الأعمدة الموجودة في جدول البيانات
-Table table = doc.getFirstSection().getBody().appendTable();
-table.ensureMinimum();
-
-// أضف صف الرأس مع أسماء الأعمدة
-Row headerRow = table.getRows().get(0);
-for (DataColumn column : dataTable.getColumns()) {
-    Cell cell = headerRow.getCells().add(column.getColumnName());
-    cell.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
-}
-
-// إضافة صفوف البيانات إلى الجدول
-for (DataRow dataRow : dataTable.getRows()) {
-    Row newRow = table.getRows().add();
-    for (DataColumn column : dataTable.getColumns()) {
-        Cell cell = newRow.getCells().add(dataRow.get(column.getColumnName()).toString());
-    }
-}
 ```
 
-## الخطوة 4: حفظ المستند
+ هنا، نقوم بإنشاء مثيل جديد`Document` الكائن. سيكون هذا بمثابة وثيقة العمل التي سنقوم من خلالها ببناء الجدول الخاص بنا.
 
-وأخيرًا، احفظ المستند بالجدول الذي تم إنشاؤه في الموقع المطلوب.
+## الخطوة 2: تهيئة DocumentBuilder
+
+ بعد ذلك، سوف نستخدم`DocumentBuilder` الفئة، التي تسمح لنا بالتعامل مع المستند بسهولة أكبر.
 
 ```java
-// حفظ المستند
-doc.save(""output.docx"");
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-باتباع هذه الخطوات، يمكنك إنشاء جدول بنجاح من جدول بيانات ودمجه في تطبيق معالجة المستندات باستخدام Aspose.Words for Java. تعمل هذه المكتبة الغنية بالميزات على تبسيط مهام معالجة الجداول ومعالجة النصوص، مما يسمح لك بإنشاء مستندات احترافية ومنظمة بشكل جيد دون عناء.
+ ال`DocumentBuilder` يوفر الكائن طرقًا لإدراج الجداول والنصوص والعناصر الأخرى في المستند.
+
+## الخطوة 3: تعيين اتجاه الصفحة
+
+نظرًا لأننا نتوقع أن يكون جدولنا عريضًا، فسوف نقوم بتعيين اتجاه الصفحة إلى أفقي.
+
+```java
+doc.getFirstSection().getPageSetup().setOrientation(Orientation.LANDSCAPE);
+```
+
+تعتبر هذه الخطوة بالغة الأهمية لأنها تضمن أن الجدول الخاص بنا يتناسب بشكل جيد مع الصفحة دون أن يتم قطعه.
+
+## الخطوة 4: تحميل البيانات من XML
+
+ الآن، نحتاج إلى تحميل بياناتنا من ملف XML إلى`DataTable`ومن هنا تأتي بياناتنا.
+
+```java
+DataSet ds = new DataSet();
+ds.readXml(getMyDir() + "List of people.xml");
+DataTable dataTable = ds.getTables().get(0);
+```
+
+ هنا، نقرأ ملف XML ونسترد الجدول الأول من مجموعة البيانات.`DataTable` سوف تحتوي على البيانات التي نريد عرضها في مستندنا.
+
+## الخطوة 5: استيراد الجدول من DataTable
+
+الآن يأتي الجزء المثير: استيراد بياناتنا إلى المستند على شكل جدول.
+
+```java
+Table table = importTableFromDataTable(builder, dataTable, true);
+```
+
+ نحن نطلق على هذه الطريقة`importTableFromDataTable` ، مرورا`DocumentBuilder` ، ملكنا`DataTable`، وقيمة منطقية للإشارة إلى ما إذا كان سيتم تضمين عناوين الأعمدة.
+
+## الخطوة 6: تصميم الجدول
+
+بمجرد أن نحصل على طاولتنا، يمكننا تطبيق بعض التصميمات عليها لجعلها تبدو جيدة.
+
+```java
+table.setStyleIdentifier(StyleIdentifier.MEDIUM_LIST_2_ACCENT_1);
+table.setStyleOptions(TableStyleOptions.FIRST_ROW | TableStyleOptions.ROW_BANDS | TableStyleOptions.LAST_COLUMN);
+```
+
+يطبق هذا الكود نمطًا محددًا مسبقًا على الجدول، مما يعزز جاذبيته البصرية وسهولة قراءته.
+
+## الخطوة 7: إزالة الخلايا غير المرغوب فيها
+
+إذا كان لديك أي أعمدة لا تريد عرضها، مثل عمود صورة، فيمكنك إزالته بسهولة.
+
+```java
+table.getFirstRow().getLastCell().removeAllChildren();
+```
+
+تضمن هذه الخطوة أن يعرض جدولنا المعلومات ذات الصلة فقط.
+
+## الخطوة 8: حفظ المستند
+
+وأخيرًا، نحفظ مستندنا بالجدول الذي تم إنشاؤه.
+
+```java
+doc.save(getArtifactsDir() + "WorkingWithTables.BuildTableFromDataTable.docx");
+```
+
+يحفظ هذا السطر المستند في الدليل المحدد، مما يسمح لك بمراجعة النتائج.
+
+## طريقة importTableFromDataTable
+
+ دعونا نلقي نظرة فاحصة على`importTableFromDataTable` الطريقة. هذه الطريقة مسؤولة عن إنشاء بنية الجدول وملئها بالبيانات.
+
+### الخطوة 1: ابدأ الجدول
+
+أولاً، علينا أن نبدأ جدولاً جديدًا في المستند.
+
+```java
+Table table = builder.startTable();
+```
+
+يؤدي هذا إلى تهيئة جدول جديد في مستندنا.
+
+### الخطوة 2: إضافة عناوين الأعمدة
+
+ إذا أردنا تضمين عناوين الأعمدة، نتحقق من`importColumnHeadings` علَم.
+
+```java
+if (importColumnHeadings) {
+    // تخزين التنسيق الأصلي
+    boolean boldValue = builder.getFont().getBold();
+    int paragraphAlignmentValue = builder.getParagraphFormat().getAlignment();
+
+    // تعيين تنسيق العنوان
+    builder.getFont().setBold(true);
+    builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
+
+    // إدراج أسماء الأعمدة
+    for (DataColumn column : dataTable.getColumns()) {
+        builder.insertCell();
+        builder.writeln(column.getColumnName());
+    }
+
+    builder.endRow();
+
+    // استعادة التنسيق الأصلي
+    builder.getFont().setBold(boldValue);
+    builder.getParagraphFormat().setAlignment(paragraphAlignmentValue);
+}
+```
+
+ يقوم هذا الكتلة من التعليمات البرمجية بتنسيق صف العنوان وإدراج أسماء الأعمدة من`DataTable`.
+
+### الخطوة 3: ملء الجدول بالبيانات
+
+ الآن، نمر عبر كل صف من`DataTable` لإدراج البيانات في الجدول.
+
+```java
+for (DataRow dataRow : (Iterable<DataRow>) dataTable.getRows()) {
+    for (Object item : dataRow.getItemArray()) {
+        builder.insertCell();
+        switch (item.getClass().getName()) {
+            case "DateTime":
+                Date dateTime = (Date) item;
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMMM d, yyyy");
+                builder.write(simpleDateFormat.format(dateTime));
+                break;
+            default:
+                builder.write(item.toString());
+                break;
+        }
+    }
+    builder.endRow();
+}
+```
+
+في هذا القسم، سنتعامل مع أنواع مختلفة من البيانات، وتنسيق التواريخ بشكل مناسب أثناء إدراج بيانات أخرى كنص.
+
+### الخطوة 4: إنهاء الجدول
+
+وأخيرًا، ننتهي من الجدول بعد إدخال كافة البيانات.
+
+```java
+builder.endTable();
+```
+
+ يشير هذا الخط إلى نهاية جدولنا، مما يسمح بـ`DocumentBuilder` لنعلم أننا انتهينا من هذا القسم.
 
 ## خاتمة
 
-تهانينا! لقد تعلمت بنجاح كيفية إنشاء جدول من جدول بيانات باستخدام Aspose.Words for Java. يوضح هذا الدليل خطوة بخطوة عملية إعداد جدول بيانات وإنشاء جدول وتنسيقه في مستند Word وحفظ الناتج النهائي. يوفر Aspose.Words for Java واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول، مما يجعل من السهل إدارة البيانات الجدولية ودمجها في مشاريع معالجة النصوص الخاصة بك.
-
-من خلال الاستفادة من إمكانيات Aspose.Words، يمكنك التعامل مع هياكل الجداول المعقدة وتطبيق التنسيق المخصص ودمج الجداول في مستنداتك بسلاسة. سواء كنت تقوم بإنشاء تقارير أو فواتير أو أي مستند آخر يتطلب تمثيلًا جدوليًا، فإن Aspose.Words يمكّنك من تحقيق نتائج احترافية بسهولة.
-
-لا تتردد في استكشاف المزيد من الميزات والوظائف التي يقدمها Aspose.Words for Java لتحسين قدرات معالجة المستندات وتبسيط تطبيقات Java الخاصة بك.
+والآن، لقد تعلمت بنجاح كيفية إنشاء جدول من جدول بيانات باستخدام Aspose.Words for Java. باتباع هذه الخطوات، يمكنك بسهولة إنشاء جداول ديناميكية في مستنداتك استنادًا إلى مصادر بيانات مختلفة. سواء كنت تقوم بإنشاء تقارير أو فواتير، فإن هذه الطريقة ستبسط سير عملك وتعزز عملية إنشاء المستندات.
 
 ## الأسئلة الشائعة
 
-### 1. هل يمكنني إنشاء جداول باستخدام خلايا مدمجة أو جداول متداخلة؟
+### ما هو Aspose.Words لـ Java؟
+Aspose.Words for Java عبارة عن مكتبة قوية لإنشاء مستندات Word ومعالجتها وتحويلها برمجيًا.
 
-نعم، باستخدام Aspose.Words for Java، يمكنك إنشاء جداول بخلايا مدمجة أو حتى تضمين الجداول داخل بعضها البعض. يتيح لك هذا تصميم تخطيطات جداول معقدة وتمثيل البيانات بتنسيقات مختلفة.
+### هل يمكنني استخدام Aspose.Words مجانًا؟
+ نعم، تقدم Aspose نسخة تجريبية مجانية. يمكنك تنزيلها من[هنا](https://releases.aspose.com/).
 
-### 2. كيف يمكنني تخصيص مظهر الجدول الناتج؟
+### كيف أقوم بتنسيق الجداول في Aspose.Words؟
+بإمكانك تطبيق الأنماط باستخدام معرفات الأنماط المحددة مسبقًا والخيارات التي توفرها المكتبة.
 
-يوفر Aspose.Words for Java مجموعة واسعة من خيارات التنسيق للجداول والخلايا والصفوف والأعمدة. يمكنك تعيين أنماط الخطوط وألوان الخلفية والحدود والمحاذاة لتحقيق المظهر المطلوب للجدول.
+### ما هي أنواع البيانات التي يمكنني إدراجها في الجداول؟
+يمكنك إدراج أنواع مختلفة من البيانات، بما في ذلك النصوص والأرقام والتاريخ، والتي يمكن تنسيقها وفقًا لذلك.
 
-### 3. هل يمكنني تصدير الجدول الناتج إلى تنسيقات مختلفة؟
-
-بالتأكيد! يدعم Aspose.Words for Java تصدير مستندات Word إلى تنسيقات مختلفة، بما في ذلك PDF وHTML وXPS والمزيد. يمكنك بسهولة تحويل الجدول الناتج إلى التنسيق المطلوب باستخدام خيارات التصدير المقدمة.
-
-### 4. هل Aspose.Words for Java مناسب لمعالجة المستندات على نطاق واسع؟
-
-نعم، تم تصميم Aspose.Words for Java للتعامل بكفاءة مع مهام معالجة المستندات الصغيرة والكبيرة الحجم. يضمن محرك المعالجة المحسن أداءً عاليًا ومعالجة موثوقة حتى مع المستندات الكبيرة وهياكل الجداول المعقدة.
+### أين يمكنني الحصول على الدعم لـ Aspose.Words؟
+ يمكنك العثور على الدعم وطرح الأسئلة على[منتدى اسبوس](https://forum.aspose.com/c/words/8/).

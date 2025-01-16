@@ -21,7 +21,7 @@ Mielőtt belevetnénk magunkat a helyszíni frissítési kultúra aprólékos el
 
 3. Alapvető C# ismerete: Kényelmesnek kell lennie a C# programozásban és az alapvető Word dokumentumkezelésekben.
 
-4.  Aspose Licenc: A teljes funkcionalitáshoz licencre lehet szüksége. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+4.  Aspose Licenc: A teljes funkcionalitáshoz licencre lehet szüksége. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
 
 5.  Hozzáférés a dokumentációhoz és támogatáshoz: További segítségért a[Aspose Dokumentáció](https://reference.aspose.com/words/net/) és[Támogatási fórum](https://forum.aspose.com/c/words/8) nagyszerű források.
 

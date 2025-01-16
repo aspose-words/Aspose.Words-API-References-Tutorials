@@ -56,7 +56,7 @@ Document doc = new Document("input.docx");
 
 ```java
 // حفظ المستند بصيغة PDF
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## الخطوة 4: التحويل إلى تنسيقات أخرى
@@ -67,21 +67,21 @@ doc.save("output.pdf", SaveFormat.PDF);
 
 ```java
 // حفظ المستند بصيغة RTF
-doc.save("output.rtf", SaveFormat.RTF);
+doc.save("output.rtf");
 ```
 
 ### التحويل إلى HTML
 
 ```java
 // حفظ المستند بصيغة HTML
-doc.save("output.html", SaveFormat.HTML);
+doc.save("output.html");
 ```
 
 ### التحويل إلى EPUB
 
 ```java
 // حفظ المستند بصيغة EPUB
-doc.save("output.epub", SaveFormat.EPUB);
+doc.save("output.epub");
 ```
 
 ## نصائح لتحويل المستندات بشكل فعال

@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-Các`MetafileRenderingOptions` lớp cung cấp các tùy chọn về cách các tệp siêu dữ liệu (như WMF) được hiển thị. Bằng cách thiết lập`ScaleWmfFontsToMetafileSize` ĐẾN`false`, bạn đang hướng dẫn Aspose.Words không thay đổi kích thước phông chữ theo kích thước tệp siêu dữ liệu, điều này có thể giúp giảm kích thước PDF tổng thể.
+ Các`MetafileRenderingOptions` lớp cung cấp các tùy chọn về cách các tệp siêu dữ liệu (như WMF) được hiển thị. Bằng cách thiết lập`ScaleWmfFontsToMetafileSize` ĐẾN`false`, bạn đang hướng dẫn Aspose.Words không thay đổi kích thước phông chữ theo kích thước tệp siêu dữ liệu, điều này có thể giúp giảm kích thước PDF tổng thể.
 
 ## Bước 3: Thiết lập tùy chọn lưu PDF
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-Các`PdfSaveOptions` lớp cho phép bạn chỉ định nhiều thiết lập khác nhau để lưu tài liệu dưới dạng PDF. Bằng cách chỉ định cấu hình trước đó`MetafileRenderingOptions` đến`MetafileRenderingOptions` tài sản của`PdfSaveOptions`, bạn đảm bảo rằng tài liệu được lưu theo cài đặt kết xuất metafile mong muốn của bạn.
+ Các`PdfSaveOptions` lớp cho phép bạn chỉ định nhiều thiết lập khác nhau để lưu tài liệu dưới dạng PDF. Bằng cách chỉ định cấu hình trước đó`MetafileRenderingOptions` đến`MetafileRenderingOptions` tài sản của`PdfSaveOptions`, bạn đảm bảo rằng tài liệu được lưu theo cài đặt kết xuất metafile mong muốn của bạn.
 
 ## Bước 4: Lưu tài liệu dưới dạng PDF
 

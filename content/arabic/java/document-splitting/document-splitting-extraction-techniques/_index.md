@@ -80,7 +80,7 @@ Document doc = new Document("input.docx");
 // إنشاء مستخرج الصور
 ImageExtractor extractor = new ImageExtractor(doc);
 
-// استخراج الصور من المستند
+//استخراج الصور من المستند
 while (extractor.hasNext()) {
     extractor.getNextImage("output_" + extractor.getCurrentImageIndex() + ".png");
 }

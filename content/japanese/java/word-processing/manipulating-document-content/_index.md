@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /ja/java/word-processing/manipulating-document-content/
 ---
-
 ## 導入
 
 Java プログラミングの世界では、効率的なドキュメント管理は多くのアプリケーションにとって重要な要素です。レポートの作成、契約の処理、ドキュメント関連のタスクの処理など、どのような作業であっても、Aspose.Words for Java はツールキットに備えておきたい強力なツールです。この包括的なガイドでは、Aspose.Words for Java を使用してクリーンアップ、フィールド、XML データによるドキュメント コンテンツの操作の詳細を詳しく説明します。この多用途のライブラリを習得するために必要な知識とスキルを身に付けられるよう、ステップ バイ ステップの手順とソース コードの例を紹介します。
@@ -50,7 +49,8 @@ doc.save("cleaned_document.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ doc.save("document_without_empty_paragraphs.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 これらの手順に従うことで、ドキュメントがクリーンな状態になり、さらに操作する準備が整います。
-
----
 
 ## フィールドの操作
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 フィールドはドキュメントに動的な機能を追加し、その有用性を高めます。
 
----
-
-## XMLデータの組み込み
-
-XML データをドキュメントに統合すると、特に動的なコンテンツを生成する場合に強力になります。Aspose.Words for Java はこのプロセスを簡素化します。
-
-### XMLデータのバインディング
-
-XML データを簡単にドキュメントにバインドします。
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://schemas.example'");
-doc.save("document_with_xml_data.docx");
-```
-
-このコードは、XML データをドキュメントの特定の部分にバインドし、動的かつデータ駆動型のものにします。
-
-## よくある質問（FAQ）
-
-### 文書から空の段落を削除するにはどうすればよいですか?
-   
-   ドキュメントから空の段落を削除するには、段落を反復処理して、テキスト コンテンツがない段落を削除します。これを実現するのに役立つコード スニペットを次に示します。
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### ドキュメント内のすべてのフィールドをプログラムで更新できますか?
-
-   はい、Aspose.Words for Java を使用して、ドキュメント内のすべてのフィールドをプログラムで更新できます。手順は次のとおりです。
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### XML データをドキュメントにバインドするにはどうすればよいですか?
-
-   Aspose.Words for Java を使用すると、XML データをドキュメントにバインドするのは簡単です。これを実現するには、XML マッピングを使用できます。次に例を示します。
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://schemas.example'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### ドキュメントのコンテンツをクリーンアップすることの重要性は何ですか?
-
-   ドキュメントのコンテンツをクリーンアップすることは、ドキュメントに不要な要素が含まれないようにするために重要であり、これにより読みやすさが向上し、ファイル サイズが削減されます。また、ドキュメントの一貫性を維持するのにも役立ちます。
-
-### ドキュメントから未使用のスタイルを削除するにはどうすればよいですか?
-
-   Aspose.Words for Java を使用して、ドキュメントから未使用のスタイルを削除できます。次に例を示します。
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### Aspose.Words for Java は、XML データを使用した動的ドキュメントの生成に適していますか?
-
-   はい、Aspose.Words for Java は、XML データを使用した動的なドキュメントの生成に適しています。XML データをテンプレートにバインドし、パーソナライズされたドキュメントを作成するための強力な機能を提供します。
-
 ## 結論
 
 この詳細なガイドでは、Aspose.Words for Java を使用して、クリーンアップ、フィールド、および XML データによるドキュメント コンテンツの操作について説明しました。ドキュメントをクリーンアップし、フィールドを操作し、XML データをシームレスに組み込む方法を学習しました。これらのスキルは、Java アプリケーションでドキュメント管理を行うすべての人にとって非常に貴重です。
+
+## よくある質問
+
+### 文書から空の段落を削除するにはどうすればよいですか?
+   
+ドキュメントから空の段落を削除するには、段落を反復処理して、テキスト コンテンツがない段落を削除します。これを実現するのに役立つコード スニペットを次に示します。
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### ドキュメント内のすべてのフィールドをプログラムで更新できますか?
+
+はい、Aspose.Words for Java を使用して、ドキュメント内のすべてのフィールドをプログラムで更新できます。手順は次のとおりです。
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### ドキュメントのコンテンツをクリーンアップすることの重要性は何ですか?
+
+ドキュメントのコンテンツをクリーンアップすることは、ドキュメントに不要な要素が含まれないようにするために重要であり、これにより読みやすさが向上し、ファイル サイズが削減されます。また、ドキュメントの一貫性を維持するのにも役立ちます。
+
+### ドキュメントから未使用のスタイルを削除するにはどうすればよいですか?
+
+Aspose.Words for Java を使用して、ドキュメントから未使用のスタイルを削除できます。次に例を示します。
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### Aspose.Words for Java は、XML データを使用した動的ドキュメントの生成に適していますか?
+
+はい、Aspose.Words for Java は、XML データを使用した動的なドキュメントの生成に適しています。XML データをテンプレートにバインドし、パーソナライズされたドキュメントを作成するための強力な機能を提供します。

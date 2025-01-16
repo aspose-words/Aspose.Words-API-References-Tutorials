@@ -105,7 +105,7 @@ Aspose.Words, bir defada bir filigran eklemeyi destekler. Birden fazla filigran 
 
 ### Filigranın konumunu ayarlayabilir miyim?
 
-The`WatermarkLayout`özellik yönelimi belirler, ancak hassas konumlandırma ayarlamaları doğrudan desteklenmez. Tam yerleştirme için başka teknikler kullanmanız gerekebilir.
+ The`WatermarkLayout`özellik yönelimi belirler, ancak hassas konumlandırma ayarlamaları doğrudan desteklenmez. Tam yerleştirme için başka teknikler kullanmanız gerekebilir.
 
 ### Yarı saydam bir filigrana ihtiyacım olursa ne olur?
 

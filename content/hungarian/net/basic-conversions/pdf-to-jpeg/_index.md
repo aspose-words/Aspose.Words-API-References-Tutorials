@@ -74,7 +74,7 @@ Miután a PDF-ünk betöltődött, ideje végrehajtani az átalakítást. Ez a l
 
 ## Következtetés
 
-És megvan! A PDF konvertálása JPEG formátumba az Aspose.Words for .NET használatával olyan egyszerű, mint a torta. Csak néhány sornyi kóddal átalakíthatja dokumentumait, és a lehetőségek világát nyithatja meg. Legyen szó fejlesztőről, aki egyszerűsíteni szeretné a munkafolyamatait, vagy csak olyan valaki, aki szereti a kódolást, az Aspose.Words mindent megtalál.
+És megvan! A PDF konvertálása JPEG formátumba az Aspose.Words for .NET használatával olyan egyszerű, mint a torta. Csak néhány sornyi kóddal átalakíthatja dokumentumait, és a lehetőségek világát nyithatja meg. Legyen szó fejlesztőről, aki egyszerűsíteni szeretné a munkafolyamatait, vagy csak olyan valaki, aki szereti a kódot trükközni, az Aspose.Words mindenre kiterjed.
 
 ## GYIK
 

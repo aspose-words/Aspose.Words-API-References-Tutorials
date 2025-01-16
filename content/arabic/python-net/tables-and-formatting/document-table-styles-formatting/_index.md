@@ -23,7 +23,7 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
 2. استيراد المكتبة: استيراد مكتبة Aspose.Words إلى البرنامج النصي Python الخاص بك باستخدام عبارة الاستيراد التالية:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. تحميل مستند: قم بتحميل مستند موجود أو قم بإنشاء مستند جديد باستخدام واجهة برمجة التطبيقات Aspose.Words.
@@ -35,7 +35,7 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
 1.  إنشاء جدول: استخدم`DocumentBuilder` الفئة لإنشاء جدول جديد وتحديد عدد الصفوف والأعمدة.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. حشو الخلايا: أضف حشوًا إلى الخلايا لتحسين التباعد.
@@ -80,32 +80,8 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## تصميم الجداول باستخدام Aspose.Words
-
-يوفر Aspose.Words for Python مجموعة من خيارات التصميم لجعل الجداول الخاصة بك جذابة بصريًا:
-
-1. أنماط الجدول: قم بتطبيق أنماط الجدول المحددة مسبقًا لتحقيق مظهر احترافي.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. لون خلفية الخلية: تغيير لون خلفية الخلية لتسليط الضوء على بيانات محددة.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. تنسيق الخط: تخصيص نمط الخط وحجمه ولونه لتحسين قابلية القراءة.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## دمج الخلايا وتقسيمها للتخطيطات المعقدة
@@ -115,30 +91,14 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
 1. دمج الخلايا: دمج خلايا متعددة لإنشاء خلية واحدة أكبر.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. تقسيم الخلايا: تقسيم الخلايا مرة أخرى إلى مكوناتها الفردية.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## ضبط ارتفاعات وعرض الصفوف والأعمدة
-
-قم بضبط أبعاد الصفوف والأعمدة للحصول على تخطيط جدول متوازن:
-
-1. ضبط ارتفاع الصف: تعديل ارتفاع الصف استنادًا إلى المحتوى.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. ضبط عرض العمود: ضبط عرض العمود تلقائيًا ليناسب المحتوى.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## إضافة الحدود والتظليل إلى الجداول
@@ -148,13 +108,13 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
 1. الحدود: تخصيص الحدود للجداول والخلايا.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. التظليل: قم بتطبيق التظليل على الخلايا للحصول على تأثير جذاب بصريًا.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## العمل مع محتوى الخلية والمحاذاة
@@ -171,7 +131,7 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
 2. محاذاة النص: محاذاة نص الخلية حسب الحاجة.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## التعامل مع رؤوس وتذييلات الجداول
@@ -188,26 +148,10 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## ضبط تخطيط الجدول تلقائيًا
-
-تأكد من تعديل تخطيط الجدول الخاص بك تلقائيًا استنادًا إلى المحتوى:
-
-1. الملاءمة التلقائية للنافذة: السماح للجدول بأن يتناسب مع عرض الصفحة.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. تغيير حجم الخلايا تلقائيًا: تمكين تغيير حجم الخلايا تلقائيًا لاستيعاب المحتوى.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## تصدير الجداول إلى تنسيقات مختلفة
 
 بمجرد أن يصبح الجدول الخاص بك جاهزًا، يمكنك تصديره إلى تنسيقات مختلفة، مثل PDF أو DOCX:
@@ -215,21 +159,15 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
 1. حفظ بتنسيق PDF: احفظ المستند الذي يحتوي على الجدول بتنسيق PDF.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. حفظ بتنسيق DOCX: احفظ المستند بتنسيق ملف DOCX.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## استكشاف الأخطاء وإصلاحها ونصائح لإدارة الطاولات بفعالية
-
-- إذا ظهرت الجداول مشوهة، فتحقق من عدم صحة عرض الأعمدة أو ارتفاع الصفوف.
-- اختبار عرض الجدول بتنسيقات مختلفة لضمان الاتساق.
-- بالنسبة للتخطيطات المعقدة، قم بالتخطيط لدمج الخلايا وتقسيمها بعناية.
-
+	
 ## خاتمة
 
 يوفر Aspose.Words for Python مجموعة أدوات شاملة لإنشاء وتصميم وتنسيق جداول المستندات. باتباع الخطوات الموضحة في هذه المقالة، يمكنك إدارة الجداول في مستنداتك بفعالية وتخصيص مظهرها وتصديرها إلى تنسيقات مختلفة. استغل قوة Aspose.Words لتحسين عروض المستندات الخاصة بك وتقديم معلومات واضحة وجذابة بصريًا لقرائك.

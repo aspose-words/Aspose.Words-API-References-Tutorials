@@ -15,7 +15,7 @@ mai digitális korban a dokumentumok méretének kezelése kulcsfontosságú min
 
 Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
 
-1.  Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Letöltheti a[Aspose honlapja](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Letöltheti a[Aspose honlapja](https://releases.aspose.com/words/net/).
 
 2. A C# alapismeretei: A C# programozás ismerete segít megérteni az oktatóanyagban található kódpéldákat.
 
@@ -55,7 +55,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Itt,`"Rendering.docx"` a minta Word dokumentum neve. Győződjön meg arról, hogy ez a fájl a megadott könyvtárban található.
+ Itt,`"Rendering.docx"` a minta Word-dokumentum neve. Győződjön meg arról, hogy ez a fájl a megadott könyvtárban található.
 
 ## 3. lépés: Az alapvető képtömörítés konfigurálása
 

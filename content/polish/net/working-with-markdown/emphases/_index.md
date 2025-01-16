@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Ten`dataDir` zmienna jest symbolem zastępczym dla katalogu, w którym zapiszesz plik Markdown. Upewnij się, że zastąpiłeś „YOUR DOCUMENT DIRECTORY” rzeczywistą ścieżką.
+ Ten`dataDir` zmienna jest symbolem zastępczym dla katalogu, w którym zapiszesz plik Markdown. Upewnij się, że zastąpiłeś „YOUR DOCUMENT DIRECTORY” rzeczywistą ścieżką.
 
 ## Krok 2: Pisanie zwykłego tekstu
 

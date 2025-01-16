@@ -88,7 +88,7 @@ Ano, do dokumentu můžete přidat více polí se seznamem nebo jiná pole formu
 
 Výchozí vybranou položku můžete změnit úpravou třetího parametru v`InsertComboBox` metoda. Například nastavení na`1` ve výchozím nastavení vybere druhou položku.
 
-### Mohu přizpůsobit vzhled pole se seznamem?
+### Mohu upravit vzhled pole se seznamem?
 
  Vzhled polí formuláře lze upravit pomocí různých vlastností a metod v Aspose.Words. Viz[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 

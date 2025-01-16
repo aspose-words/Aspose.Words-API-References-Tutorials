@@ -48,7 +48,7 @@ Aspose.Words, çıktı biçimini ve kalitesini kontrol etmek için çeşitli gö
 
 ```java
 // Görüntü kaydetme seçeneklerini başlat
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Adım 4: Belge Sayfalarını Görüntü Olarak Oluşturun

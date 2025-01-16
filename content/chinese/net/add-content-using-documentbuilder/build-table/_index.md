@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
-通过使用`StartTable`，我们告诉 Aspose.Words 我们即将创建一个表格。`InsertCell`方法添加第一个单元格，并且`AutoFit`确保我们的列具有固定的宽度。
+通过使用`StartTable` ，我们告诉 Aspose.Words 我们即将创建一个表格。`InsertCell`方法添加第一个单元格，并且`AutoFit`确保我们的列具有固定的宽度。
 
 ## 步骤 3：设置第一行的格式
 
@@ -95,7 +95,7 @@ builder.EndRow();
 
 ## 步骤 5：结束表格
 
-设置完所有行之后，就该完成表创建过程了。
+所有行都设置好后，就该完成表创建过程了。
 
 ```csharp
 builder.EndTable();
@@ -125,7 +125,7 @@ doc.Save("YourDirectoryPath/AddContentUsingDocumentBuilder.BuildTable.docx");
 Aspose.Words for .NET 是一个功能强大的库，可用于以编程方式处理 Word 文档。它允许您创建、编辑和操作文档，而无需 Microsoft Word。
 
 ### 如何安装 Aspose.Words for .NET？
-你可以[点击此处下载 Aspose.Words for .NET](https://releases.aspose.com/words/net/). 按照提供的安装说明在您的开发环境中进行设置。
+你可以[点击此处下载 Aspose.Words for .NET](https://releases.aspose.com/words/net/)按照提供的安装说明在您的开发环境中进行设置。
 
 ### 我可以免费使用 Aspose.Words 吗？
  Aspose.Words 提供[免费试用](https://releases.aspose.com/)以便您可以测试其功能。如需扩展使用，您可以购买许可证或获取[临时执照](https://purchase.aspose.com/temporary-license/).

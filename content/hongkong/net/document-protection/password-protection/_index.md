@@ -9,7 +9,7 @@ url: /zh-hant/net/document-protection/password-protection/
 ---
 ## 介紹
 
-嘿！有沒有想過如何保護您的 Word 文件免於不必要的編輯和窺探？好吧，您很幸運，因為今天我們將使用 Aspose.Words for .NET 深入探討密碼保護的世界。這就像是為你的日記加一把鎖——只是更酷、更精通科技。讓我們一起踏上這段旅程，學習如何確保我們的文件安全無憂！
+嘿！有沒有想過如何保護您的 Word 文件免於不必要的編輯和窺探？好吧，您很幸運，因為今天我們將深入使用 Aspose.Words for .NET 進行密碼保護的世界。這就像是為你的日記加一把鎖——只是更酷、更精通科技。讓我們一起踏上這段旅程，學習如何確保我們的文件安全無憂！
 
 ## 先決條件
 
@@ -18,7 +18,7 @@ url: /zh-hant/net/document-protection/password-protection/
 1.  Aspose.Words for .NET：請確定您擁有 Aspose.Words for .NET 函式庫。你可以[在這裡下載](https://releases.aspose.com/words/net/).
 2. 開發環境：Visual Studio 或任何其他 C# 開發環境。
 3. 基本 C# 知識：對 C# 程式設計的基本了解。
-4. Aspose 許可證：從以下位置取得許可證[這裡](https://purchase.aspose.com/buy)或使用[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
+4.  Aspose 許可證：從以下位置取得許可證[這裡](https://purchase.aspose.com/buy)或使用[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
 
 ## 導入命名空間
 

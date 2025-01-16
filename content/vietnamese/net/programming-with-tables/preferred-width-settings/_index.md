@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-Các`PreferredWidth.Auto` thiết lập cho phép ô này mở rộng hoặc co lại dựa trên không gian còn lại sau khi các ô khác được tính đến. Điều này đảm bảo bố cục bảng trông cân bằng và chuyên nghiệp.
+ Các`PreferredWidth.Auto` thiết lập cho phép ô này mở rộng hoặc co lại dựa trên không gian còn lại sau khi các ô khác được tính đến. Điều này đảm bảo bố cục bảng trông cân bằng và chuyên nghiệp.
 
 ## Bước 5: Hoàn thiện và Lưu Tài liệu
 

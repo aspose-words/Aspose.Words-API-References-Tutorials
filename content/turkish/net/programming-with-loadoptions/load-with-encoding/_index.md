@@ -70,7 +70,7 @@ Bu kod satırı, daha önce belirlediğimiz kodlama seçeneklerini kullanarak be
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET kullanarak belirli bir kodlamaya sahip bir Word belgesini başarıyla yüklediniz. Bu güçlü kütüphane, farklı metin kodlamalarını işlemeyi oldukça kolaylaştırır ve belgelerinizin doğru şekilde işlenmesini sağlar. İster eski belgelerle ister uluslararası metinlerle uğraşıyor olun, Aspose.Words sizin için her şeyi yapar.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak belirli bir kodlamaya sahip bir Word belgesini başarıyla yüklediniz. Bu güçlü kütüphane, farklı metin kodlamalarını işlemeyi oldukça kolaylaştırır ve belgelerinizin doğru şekilde işlenmesini sağlar. İster eski belgelerle uğraşın ister uluslararası metinlerle çalışın, Aspose.Words sizin için her şeyi yapar.
 
 ## SSS
 

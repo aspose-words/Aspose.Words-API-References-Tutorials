@@ -127,7 +127,7 @@ Ankarkommentarer används för att markera och kommentera specifika textavsnitt,
 Ja, du kan lägga till flera kommentarer i samma textavsnitt genom att definiera flera kommentarintervall.
 
 ### Är Aspose.Words för .NET gratis att använda?
-Aspose.Words för .NET erbjuder en gratis testversion som du kan ladda ner[här](https://releases.aspose.com/) . För alla funktioner kan du köpa en licens[här](https://purchase.aspose.com/buy).
+ Aspose.Words för .NET erbjuder en gratis testversion som du kan ladda ner[här](https://releases.aspose.com/) . För alla funktioner kan du köpa en licens[här](https://purchase.aspose.com/buy).
 
 ### Kan jag anpassa utseendet på kommentarerna?
 Medan Aspose.Words fokuserar på funktionalitet, kontrolleras utseendet på kommentarer i Word-dokument i allmänhet av Word självt.

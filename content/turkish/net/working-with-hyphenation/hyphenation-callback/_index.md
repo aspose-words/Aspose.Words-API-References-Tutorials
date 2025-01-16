@@ -99,7 +99,7 @@ Bu blokta eksik sözlüklerle ilgili belirli istisnayı yakalayıp mesajı yazd�
 
 ## Adım 6: Özel Tireleme Geri Çağırma Sınıfını Uygulayın
 
- Şimdi, şunu uygulayalım:`CustomHyphenationCallback` heceleme sözlükleri için istekleri işleyen sınıf.
+ Şimdi, şunu uygulayalım:`CustomHyphenationCallback` Heceleme sözlükleri için istekleri işleyen sınıf.
 
 ```csharp
 public class CustomHyphenationCallback : IHyphenationCallback

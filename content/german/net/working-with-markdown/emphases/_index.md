@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Der`dataDir` Die Variable ist ein Platzhalter für das Verzeichnis, in dem Sie Ihre Markdown-Datei speichern. Achten Sie darauf, „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Pfad zu ersetzen.
+ Der`dataDir` Die Variable ist ein Platzhalter für das Verzeichnis, in dem Sie Ihre Markdown-Datei speichern. Achten Sie darauf, „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Pfad zu ersetzen.
 
 ## Schritt 2: Normalen Text schreiben
 

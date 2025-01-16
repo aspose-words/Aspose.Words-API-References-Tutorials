@@ -32,7 +32,7 @@ Pojďme si tento proces rozdělit na jednoduché, zvládnutelné kroky. Každý 
 
 ## Krok 1: Inicializujte svůj dokument
 
-Nejprve musíme načíst dokument aplikace Word, který chcete převést do formátu PDF. Tady vaše cesta začíná.
+Nejprve musíme načíst dokument aplikace Word, který chcete převést do formátu PDF. Tady začíná vaše cesta.
 
 ```csharp
 // Cesta k adresáři dokumentů.

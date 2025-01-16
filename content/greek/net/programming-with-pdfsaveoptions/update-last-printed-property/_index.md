@@ -80,7 +80,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 Ναι, το Aspose.Words για .NET σάς επιτρέπει να ενημερώσετε διάφορες ιδιότητες εγγράφων, όπως συγγραφέα, τίτλο, θέμα και άλλα.
 
 ### Είναι δωρεάν το Aspose.Words για .NET;
-Το Aspose.Words for .NET προσφέρει μια δωρεάν δοκιμή την οποία μπορείτε να κατεβάσετε[εδώ](https://releases.aspose.com/). Για εκτεταμένη χρήση, θα χρειαστεί να αγοράσετε μια άδεια.
+ Το Aspose.Words for .NET προσφέρει μια δωρεάν δοκιμή την οποία μπορείτε να κατεβάσετε[εδώ](https://releases.aspose.com/). Για εκτεταμένη χρήση, θα χρειαστεί να αγοράσετε μια άδεια.
 
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση για το Aspose.Words για .NET;
-Μπορείτε να βρείτε αναλυτική τεκμηρίωση στο Aspose.Words για .NET[εδώ](https://reference.aspose.com/words/net/).
+ Μπορείτε να βρείτε αναλυτική τεκμηρίωση στο Aspose.Words για .NET[εδώ](https://reference.aspose.com/words/net/).

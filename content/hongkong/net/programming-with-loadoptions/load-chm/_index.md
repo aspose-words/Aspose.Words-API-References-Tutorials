@@ -2,7 +2,7 @@
 title: 在Word文檔中載入Chm文件
 linktitle: 在Word文檔中載入Chm文件
 second_title: Aspose.Words 文件處理 API
-description: 透過此逐步教學課程，使用 Aspose.Words for .NET 將 CHM 檔案輕鬆載入到 Word 文件中。非常適合整合您的技術文件。
+description: 透過此逐步教學課程，使用 Aspose.Words for .NET 輕鬆將 CHM 檔案載入到 Word 文件中。非常適合整合您的技術文件。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-loadoptions/load-chm/

@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## फ़ॉन्ट शैलियाँ और आकार लागू करना
-
-फ़ॉन्ट स्टाइल और साइज़ लागू करके अपने दस्तावेज़ की पठनीयता और दृश्य अपील को बढ़ाएँ। पैराग्राफ़ की फ़ॉन्ट स्टाइल और साइज़ बदलने के लिए निम्न कोड का उपयोग करें:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## पैराग्राफ़ और शीर्षकों का प्रारूपण
+## पैराग्राफ़ का प्रारूपण
 
 अपने दस्तावेज़ को प्रभावी ढंग से संरचित करने के लिए, पैराग्राफ़ और शीर्षकों को फ़ॉर्मेट करना महत्वपूर्ण है। नीचे दिए गए कोड का उपयोग करके इसे प्राप्त करें:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## सूचियों और बुलेट पॉइंट्स के साथ कार्य करना
 
 सूचियाँ और बुलेट पॉइंट सामग्री को व्यवस्थित करते हैं और स्पष्टता प्रदान करते हैं। Aspose.Words का उपयोग करके उन्हें लागू करें:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## पेज लेआउट और मार्जिन प्रबंधित करना
+## पेज लेआउट प्रबंधित करना
 
 इष्टतम प्रस्तुति के लिए पृष्ठ लेआउट और मार्जिन को नियंत्रित करें:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## शैलियाँ और थीम लागू करना

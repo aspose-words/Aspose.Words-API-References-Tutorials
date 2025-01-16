@@ -14,7 +14,7 @@ Ocitli jste se někdy v nálevu a snažili jste se zjistit přesnou polohu tabul
 ## Předpoklady
 
 Než se vrhneme na to, co potřebujete, ujistěte se, že máte vše, co potřebujete:
--  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Pokud ne, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Visual Studio: Bude stačit jakákoli verze, ale vždy se doporučuje nejnovější.
 - .NET Framework: Ujistěte se, že máte .NET Framework 4.0 nebo novější.
 - Dokument aplikace Word: V tomto tutoriálu použijeme dokument s názvem`Tables.docx`.

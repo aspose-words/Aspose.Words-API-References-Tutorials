@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## 글꼴 스타일 및 크기 적용
-
-글꼴 스타일과 크기를 적용하여 문서의 가독성과 시각적 매력을 향상시키세요. 다음 코드를 사용하여 문단의 글꼴 스타일과 크기를 변경하세요.
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## 문단 및 제목 서식 지정
+## 문단 서식 지정
 
 문서를 효과적으로 구성하려면 문단과 제목을 서식 지정하는 것이 중요합니다. 아래 코드를 사용하여 이를 달성하세요.
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## 목록 및 요점 작업
 
 목록과 요점은 콘텐츠를 구성하고 명확성을 제공합니다. Aspose.Words를 사용하여 구현합니다.
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## 페이지 레이아웃 및 여백 관리
+## 페이지 레이아웃 관리
 
 최적의 프레젠테이션을 위해 페이지 레이아웃과 여백을 제어하세요.
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## 스타일 및 테마 적용

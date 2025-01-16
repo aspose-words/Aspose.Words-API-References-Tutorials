@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 
 ## Conclusione
 
-Ed ecco fatto! Hai impostato con successo una cartella True Type Fonts per i tuoi documenti Word usando Aspose.Words per .NET. Questo assicura che i tuoi documenti abbiano un aspetto coerente e professionale su tutte le piattaforme. La gestione dei font è un aspetto critico della creazione di documenti e con Aspose.Words è incredibilmente semplice.
+Ed ecco fatto! Hai impostato con successo una cartella True Type Fonts per i tuoi documenti Word usando Aspose.Words per .NET. Ciò assicura che i tuoi documenti abbiano un aspetto coerente e professionale su tutte le piattaforme. La gestione dei font è un aspetto critico della creazione di documenti e con Aspose.Words è incredibilmente semplice.
 
 ## Domande frequenti
 

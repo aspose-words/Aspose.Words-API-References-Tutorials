@@ -35,7 +35,7 @@ Erfahren Sie, wie Sie mit Aspose.Words Tabellen und Layouts in Ihren Java-Dokume
 Erfahren Sie, wie Sie mit Aspose.Words für Java mit Dokumentlisten in Java arbeiten. Diese Schritt-für-Schritt-Anleitung enthält Quellcodebeispiele für eine effiziente Dokumentbearbeitung.
 ### [Erstellen von Tabellen und Zeilen in Dokumenten](./creating-tables-rows/)
 Erfahren Sie, wie Sie mit Aspose.Words für Java Tabellen und Zeilen in Dokumenten erstellen. Folgen Sie dieser umfassenden Anleitung mit Quellcode und FAQs.
-### [Tabellen in Dokumenten formatieren](./formatting-tables/)
+### [Formatieren von Tabellen in Dokumenten](./formatting-tables/)
 Meistern Sie die Kunst der Tabellenformatierung in Dokumenten mit Aspose.Words für Java. Entdecken Sie Schritt-für-Schritt-Anleitungen und Quellcodebeispiele für eine präzise Tabellenformatierung.
 ### [Inhaltsverzeichnisgenerierung](./table-contents-generation/)
 Erfahren Sie, wie Sie mit Aspose.Words für Java dynamische Inhaltsverzeichnisse erstellen. Meistern Sie die Inhaltsverzeichnisgenerierung mit Schritt-für-Schritt-Anleitung und Quellcodebeispielen.

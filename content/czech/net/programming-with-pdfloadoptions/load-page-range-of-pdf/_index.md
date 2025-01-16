@@ -15,7 +15,7 @@ Pokud jde o práci s PDF v aplikacích .NET, Aspose.Words pro .NET je absolutní
 
 Než začneme, budete potřebovat několik věcí:
 
-1. Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words. Pokud ho ještě nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words. Pokud ho ještě nemáte, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Nastavte své vývojové prostředí pomocí sady Visual Studio nebo jiného preferovaného IDE.
 3.  Licence: Zatímco Aspose.Words nabízí bezplatnou zkušební verzi, zvažte získání a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro plnou funkčnost bez omezení.
 

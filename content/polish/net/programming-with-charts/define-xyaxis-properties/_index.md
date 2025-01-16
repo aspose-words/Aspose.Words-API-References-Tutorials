@@ -78,7 +78,7 @@ Teraz czas zdefiniować właściwości osi X. Obejmuje to ustawienie typu katego
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // Mierzone w jednostkach wyświetlanych na osi Y (setkach).
+xAxis.CrossesAt = 3; //Mierzone w jednostkach wyświetlanych na osi Y (setkach).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

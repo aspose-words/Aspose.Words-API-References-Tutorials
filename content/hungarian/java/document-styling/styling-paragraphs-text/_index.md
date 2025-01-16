@@ -21,7 +21,7 @@ Mielőtt belemerülnénk a kódolási szempontokba, kulcsfontosságú a fejleszt
 
 ## Új dokumentum létrehozása
 
-Kezdjük egy új dokumentum létrehozásával az Aspose.Words for Java használatával. Alább található egy egyszerű kódrészlet a kezdéshez:
+Kezdjük egy új dokumentum létrehozásával az Aspose.Words for Java használatával. Az alábbiakban egy egyszerű kódrészletet talál a kezdéshez:
 
 ```java
 // Hozzon létre egy új dokumentumot
@@ -182,25 +182,11 @@ Ebben a példában a bekezdés igazítását értékre állítjuk
 listák létrehozása felsorolásjelekkel vagy számozással gyakori dokumentumformázási feladat. Az Aspose.Words for Java egyszerűvé teszi. A következőképpen hozhat létre felsorolásjeles listát:
 
 ```java
-// Hozzon létre egy új dokumentumot
-Document doc = new Document();
-
-// Hozzon létre egy listát
-List list = new List(doc);
-
-// Listaelemek hozzáadása pontokkal
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// Adja hozzá a listát a dokumentumhoz
-doc.getFirstSection().getBody().appendChild(list);
-
-// Mentse el a dokumentumot
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 Ebben a kódban egy felsorolásjeles listát hozunk létre három elemből.
@@ -210,50 +196,31 @@ Ebben a kódban egy felsorolásjeles listát hozunk létre három elemből.
 A hiperhivatkozások nélkülözhetetlenek a dokumentumok interaktivitásához. Az Aspose.Words for Java lehetővé teszi a hiperhivatkozások egyszerű beszúrását. Íme egy példa:
 
 ```java
-// Hozzon létre egy új dokumentumot
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Hozzon létre egy bekezdést
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// Hozzon létre egy hiperhivatkozást
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// Szúrjon be egy hiperhivatkozást, és emelje ki egyéni formázással.
+// A hiperhivatkozás egy kattintható szövegrész lesz, amely az URL-ben megadott helyre visz minket.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", false);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// Adja hozzá a bekezdést a dokumentumhoz
-doc.getFirstSection().getBody().appendChild(para);
-
-// Mentse el a dokumentumot
-doc.save("HyperlinkDocument.docx");
+// A Ctrl + bal kattintás a szövegben található hivatkozásra a Microsoft Word alkalmazásban, és egy új webböngésző ablakon keresztül eljut az URL-hez.
+doc.save("InsertHyperlink.docx");
 ```
 
 Ez a kód hiperhivatkozást szúr be a „https://www.example.com” oldalra a „Visit example.com” szöveggel.
 
 ## Képek és alakzatok hozzáadása
 
-A dokumentumokhoz gyakran vizuális elemekre, például képekre és alakzatokra van szükség. Az Aspose.Words for Java lehetővé teszi a képek és alakzatok zökkenőmentes beszúrását. Kép hozzáadása a következőképpen történik:
+dokumentumokhoz gyakran vizuális elemekre, például képekre és alakzatokra van szükség. Az Aspose.Words for Java lehetővé teszi a képek és alakzatok zökkenőmentes beszúrását. Kép hozzáadása a következőképpen történik:
 
 ```java
-// Hozzon létre egy új dokumentumot
-Document doc = new Document();
-
-// Hozzon létre egy bekezdést
-Paragraph para = new Paragraph(doc);
-
-// Kép betöltése fájlból
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// Adja hozzá a bekezdést a dokumentumhoz
-doc.getFirstSection().getBody().appendChild(para);
-
-// Mentse el a dokumentumot
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 Ebben a kódban egy képet betöltünk egy fájlból, és beillesztjük a dokumentumba.
@@ -287,27 +254,20 @@ Ebben a példában egyenlő, 1 hüvelykes margókat állítunk be az oldal minde
 A fejlécek és a láblécek elengedhetetlenek ahhoz, hogy a dokumentum minden oldalára egységes információkat adjon. A fejlécekkel és láblécekkel a következőképpen dolgozhat:
 
 ```java
-// Hozzon létre egy új dokumentumot
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Nyissa meg az első szakasz fejlécét és láblécét
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// Tartalom hozzáadása a fejléchez
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// Tartalom hozzáadása a lábléchez
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// Tartalom hozzáadása a dokumentumtörzshöz
+// Tartalom hozzáadása a dokumentumtörzshöz.
 // ...
 
-// Mentse el a dokumentumot
+// Mentse el a dokumentumot.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -315,29 +275,48 @@ Ebben a kódban tartalmat adunk a dokumentum fejlécéhez és láblécéhez is.
 
 ## Munka a táblázatokkal
 
-A táblázatok hatékony módszert jelentenek az adatok rendszerezésére és bemutatására a dokumentumokban. Az Aspose.Words for Java kiterjedt támogatást nyújt a táblákkal való munkavégzéshez. Íme egy példa táblázat létrehozására:
+táblázatok hatékony módszert jelentenek az adatok rendszerezésére és bemutatására a dokumentumokban. Az Aspose.Words for Java kiterjedt támogatást nyújt a táblákkal való munkavégzéshez. Íme egy példa táblázat létrehozására:
 
 ```java
-// Hozzon létre egy új dokumentumot
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Hozzon létre egy táblázatot 3 sorból és 3 oszlopból
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// Adjon hozzá tartalmat a táblázat celláihoz
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//Adja hozzá a táblázatot a dokumentumhoz
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// Mentse el a dokumentumot
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// A formázás módosítása az aktuális cellára alkalmazza,
+// és minden olyan új cellát, amelyet az építővel később hozunk létre.
+// Ez nem érinti a korábban hozzáadott cellákat.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// Növelje a sor magasságát, hogy illeszkedjen a függőleges szöveghez.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 Ebben a kódban egy egyszerű táblázatot készítünk három sorból és három oszlopból.
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // Mentse el a dokumentumot PDF formátumban
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 Ez a kódrészlet PDF-fájlként menti a dokumentumot.
@@ -393,7 +372,7 @@ Igen, könnyen konvertálhat egy dokumentumot PDF-be az Aspose.Words for Java se
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### Hogyan formázhatom a szöveget így
@@ -414,7 +393,7 @@ Az Aspose webhelyén vagy a Maven tárházában megtekintheti az Aspose.Words fo
 Igen, az Aspose.Words for Java kompatibilis a Java 11 és újabb verzióival.
 
 ### Hogyan állíthatok be oldalmargót a dokumentumom egyes szakaszaihoz?
- dokumentum egyes szakaszaihoz oldalmargókat állíthat be a segítségével`PageSetup` osztály. Íme egy példa:
+ A dokumentum egyes szakaszaihoz oldalmargókat állíthat be a segítségével`PageSetup` osztály. Íme egy példa:
 
 ```java
 Section section = doc.getSections().get(0); // Szerezd meg az első részt

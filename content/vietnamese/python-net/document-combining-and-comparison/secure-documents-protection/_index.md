@@ -38,14 +38,6 @@ Bạn có thể thêm mật khẩu vào tài liệu của mình để hạn ch�
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## Hạn chế quyền chỉnh sửa
-
-Để kiểm soát ai có thể thực hiện thay đổi đối với tài liệu, bạn có thể thiết lập quyền chỉnh sửa:
-
-```python
-protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
-protection.set_editing_groups(["Editors"])
-```
 
 ## Mã hóa nội dung tài liệu
 
@@ -60,8 +52,10 @@ doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 Thêm chữ ký số để đảm bảo tính xác thực của tài liệu:
 
 ```python
-digital_signature = aw.digital_signatures.DigitalSignature(doc)
-digital_signature.sign("certificate.pfx", "signature_password")
+aw.digitalsignatures.DigitalSignatureUtil.sign(MY_DIR + "Digitally signed.docx",
+            ARTIFACTS_DIR + "Document.encrypted_document.docx", cert_holder, sign_options)
+			
+aw.digitalsignatures.DigitalSignatureUtil.sign(dst_document_path, dst_document_path, certificate_holder, sign_options)
 ```
 
 ## Đánh dấu bằng hình mờ để bảo mật
@@ -71,15 +65,6 @@ Hình mờ có thể ngăn chặn việc chia sẻ trái phép:
 ```python
 watermark = aw.drawing.Watermark("Confidential", 100, 200)
 doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
-```
-
-## Biên tập thông tin nhạy cảm
-
-Để xóa thông tin nhạy cảm vĩnh viễn:
-
-```python
-redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
-doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
 ## Phần kết luận

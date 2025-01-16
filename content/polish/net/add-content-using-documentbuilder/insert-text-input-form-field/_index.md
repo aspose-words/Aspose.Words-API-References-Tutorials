@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Krok 3: Zainicjuj DocumentBuilder
 
-Ten`DocumentBuilder` Klasa jest naszym podstawowym narzędziem do dodawania treści do dokumentu. Pomyśl o niej jak o długopisie, który pisze na płótnie dokumentu Word.
+ Ten`DocumentBuilder` Klasa jest naszym podstawowym narzędziem do dodawania treści do dokumentu. Pomyśl o niej jak o długopisie, który pisze na płótnie dokumentu Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

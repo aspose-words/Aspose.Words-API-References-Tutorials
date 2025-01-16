@@ -32,7 +32,7 @@ using Aspose.Words.Tables;
 
 ## 第 1 步：載入您的文檔
 
-第一步是將 Word 文件載入到 Aspose.Words`Document`目的。該物件代表整個文檔。
+第一步是將 Word 文件載入到 Aspose.Words`Document`目的。該物件代表整個文件。
 
 ```csharp
 //文檔目錄的路徑

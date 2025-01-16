@@ -81,12 +81,12 @@ Tím se dokument uloží s aplikovanou ochranou.
 
 ## Závěr
 
-tady to máte! Právě jste se naučili, jak chránit dokument aplikace Word tak, aby bylo možné pomocí Aspose.Words for .NET upravovat pouze pole formuláře. To je užitečná funkce, když potřebujete zajistit, aby určité části dokumentu zůstaly nezměněny, a zároveň umožnit vyplnění konkrétních polí.
+A tady to máte! Právě jste se naučili, jak chránit dokument aplikace Word tak, aby bylo možné pomocí Aspose.Words for .NET upravovat pouze pole formuláře. To je užitečná funkce, když potřebujete zajistit, aby určité části dokumentu zůstaly nezměněny, a zároveň umožnit vyplnění konkrétních polí.
 
 ## FAQ
 
 ###	 Jak mohu odstranit ochranu z dokumentu?  
- K odstranění ochrany použijte`doc.Unprotect("password")` metoda, kde "heslo" je heslo používané k ochraně dokumentu.
+ Pro odstranění ochrany použijte`doc.Unprotect("password")` metoda, kde "heslo" je heslo používané k ochraně dokumentu.
 
 ###	 Mohu použít různé typy ochrany pomocí Aspose.Words pro .NET?  
  Ano, Aspose.Words podporuje různé typy ochrany jako např`ReadOnly`, `NoProtection` a`AllowOnlyRevisions`.

@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## Sửa đổi văn bản
-
-Bạn có thể chỉnh sửa văn bản bằng cách trực tiếp thiết lập văn bản của các đoạn văn hoặc chuỗi văn bản:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## Làm việc với Định dạng
 
 Aspose.Words cho phép bạn làm việc với các kiểu định dạng:

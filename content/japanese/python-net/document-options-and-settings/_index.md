@@ -36,7 +36,7 @@ Aspose.Words チュートリアルの世界へようこそ。ここでは、ド�
 ### [ドキュメントの結合と追加に関する高度なテクニック](./join-append-documents/)
 Python で Aspose.Words を使用してドキュメントを結合および追加するための高度なテクニックを学習します。コード例を使用したステップバイステップのガイドです。
 ### [効率化のためのドキュメントオプションと設定の微調整](./manage-document-options-settings/)
-Aspose.Words for Python を使用して Word 文書を効率的に操作する方法を学びます。ソース コードを使用したステップ バイ ステップ ガイド。
+Aspose.Words for Python を使用して Word 文書を効率的に操作する方法を学びます。ソース コード付きのステップ バイ ステップ ガイド。
 ### [ドキュメントプロパティとメタデータ管理](./document-properties-metadata/)
 Aspose.Words for Python を使用してドキュメントのプロパティとメタデータを管理する方法を学びます。ソース コードを使用したステップ バイ ステップ ガイド。
 ### [Web拡張機能によるドキュメント機能の拡張](./document-functionality-web-extensions/)

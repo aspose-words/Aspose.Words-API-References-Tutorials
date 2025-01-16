@@ -23,7 +23,7 @@ pip install aspose-words
 2. Importando o módulo: importe o módulo necessário no seu script Python.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Adicionando um cabeçalho e rodapé simples
@@ -33,30 +33,18 @@ Para adicionar um cabeçalho e rodapé básicos ao seu documento do Word, siga e
 1. Criando um documento: Crie um novo documento do Word usando o Aspose.Words.
 
 ```python
-doc = aspose.words.Document()
+doc = aw.Document()
 ```
 
 2.  Adicionar cabeçalho e rodapé: use o`sections` propriedade do documento para acessar as seções. Em seguida, utilize o`headers_footers` propriedade para adicionar cabeçalhos e rodapés.
 
 ```python
 section = doc.sections[0]
-header = section.headers_footers[aspose.words.HeaderFooterType.HEADER_PRIMARY]
-footer = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_PRIMARY]
+header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY]
+footer = section.headers_footers[aw.HeaderFooterType.FOOTER_PRIMARY]
 ```
 
-3. Adicionar conteúdo: adicione conteúdo ao cabeçalho e rodapé.
-
-```python
-header_paragraph = header.paragraphs.add()
-header_run = header_paragraph.runs.add()
-header_run.text = "This is the header text."
-
-footer_paragraph = footer.paragraphs.add()
-footer_run = footer_paragraph.runs.add()
-footer_run.text = "Page number: {PAGE} of {NUMPAGES}"
-```
-
-4. Salvando o documento: Salve o documento com o cabeçalho e o rodapé.
+3. Salvando o documento: Salve o documento com o cabeçalho e o rodapé.
 
 ```python
 doc.save("document_with_header_footer.docx")
@@ -73,15 +61,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Adicionar tabelas: incorpore tabelas para obter informações tabulares.
-
-```python
-footer_table = footer.add_table(1, 2)
-footer_table.rows[0].cells[0].text = "Copyright © 2023"
-footer_table.rows[0].cells[1].text = "All rights reserved."
-```
-
-3. Campos dinâmicos: use campos dinâmicos para inserção automática de dados.
+2. Campos dinâmicos: use campos dinâmicos para inserção automática de dados.
 
 ```python
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
@@ -109,8 +89,6 @@ footer_odd = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_EVEN]
 header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
-
-3. Personalize conforme necessário: personalize cada cabeçalho e rodapé de acordo com suas necessidades.
 
 ## Removendo Cabeçalhos e Rodapés
 
@@ -150,4 +128,4 @@ Sim, você pode limpar o conteúdo dos cabeçalhos e rodapés para removê-los e
 
 ### Onde posso aprender mais sobre o Aspose.Words para Python?
 
-Para documentação e exemplos mais detalhados, visite o[Referência da API Aspose.Words para Python](https://reference.aspose.com/words/python-net/).
+ Para documentação e exemplos mais detalhados, visite o[Referência da API Aspose.Words para Python](https://reference.aspose.com/words/python-net/).

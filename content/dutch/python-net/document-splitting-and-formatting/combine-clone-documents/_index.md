@@ -11,7 +11,7 @@ In de snelle digitale wereld van vandaag is documentverwerking een cruciaal aspe
 
 ## Aspose.Words installeren
 
-Voordat we in de details duiken, moet u Aspose.Words voor Python instellen. U kunt het downloaden en installeren via de volgende link:[Download Aspose.Words voor Python](https://releases.aspose.com/words/python/). 
+ Voordat we in de details duiken, moet u Aspose.Words voor Python instellen. U kunt het downloaden en installeren via de volgende link:[Download Aspose.Words voor Python](https://releases.aspose.com/words/python/). 
 
 ## Documenten combineren
 
@@ -75,26 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## Geavanceerde technieken
-
-### Tekst vervangen
-
-Met Aspose.Words kunt u eenvoudig tekst in documenten zoeken en vervangen:
-
-```python
-import aspose.words as aw
-
-doc = aw.Document("document.docx")
-text_replacer = aw.Replacing.ReplacingCallback()
-
-options = aw.Replacing.FindReplaceOptions()
-options.replacing_callback = text_replacer
-
-doc.range.replace("old_text", "new_text", options)
-doc.save("modified_document.docx")
-```
-
-### Opmaak wijzigen
+## Opmaak wijzigen
 
 U kunt de opmaak ook wijzigen met Aspose.Words:
 
@@ -127,7 +108,7 @@ Ja, u kunt een ondiepe kloon uitvoeren om alleen de structuur van een document t
  Gebruik de`range.replace()` methode samen met de juiste opties om tekst efficiënt te zoeken en te vervangen.
 
 ### Ondersteunt Aspose.Words het wijzigen van opmaak?
-Absoluut, u kunt de opmaak wijzigen met behulp van methoden zoals`run.font.size` En`run.font.bold`.
+ Absoluut, u kunt de opmaak wijzigen met behulp van methoden zoals`run.font.size` En`run.font.bold`.
 
 ### Waar kan ik de documentatie van Aspose.Words vinden?
  Uitgebreide documentatie vindt u op[Aspose.Words voor Python API-referentie](https://reference.aspose.com/words/python-net/).

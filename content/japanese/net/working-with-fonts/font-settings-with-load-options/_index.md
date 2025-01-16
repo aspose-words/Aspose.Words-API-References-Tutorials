@@ -55,7 +55,7 @@ LoadOptions loadOptions = new LoadOptions();
 
 ## ステップ3: フォント設定を構成する
 
-では、フォントの設定をしてみましょう。`FontSettings`クラスを作成し、それを読み込みオプションに割り当てます。この手順は、ドキュメント内でフォントがどのように処理されるかを決定するため、非常に重要です。
+さて、フォントの設定をしましょう。`FontSettings`クラスを作成し、それを読み込みオプションに割り当てます。この手順は、ドキュメント内でフォントがどのように処理されるかを決定するため、非常に重要です。
 
 ```csharp
 loadOptions.FontSettings = new FontSettings();
@@ -71,7 +71,7 @@ loadOptions.FontSettings = new FontSettings();
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
-これは、プログラムが、細心の注意を払って構成したすべての設定を使用してドキュメントを最終的に開く、決定的な瞬間です。
+これは、プログラムが最終的に、細心の注意を払って構成したすべての設定を使用してドキュメントを開く、決定的な瞬間です。
 
 ## 結論
 

@@ -112,7 +112,7 @@ Och det är det! Du har framgångsrikt kopierat bokmärkt text från ett Word-do
 Ja, du kan iterera genom flera bokmärken och använda samma metod för att kopiera vart och ett.
 
 ### Vad händer om bokmärket inte hittas?
-De`Range.Bookmarks` egendom kommer tillbaka`null`, så se till att du hanterar det här fallet för att undvika undantag.
+ De`Range.Bookmarks` egendom kommer tillbaka`null`, så se till att du hanterar det här fallet för att undvika undantag.
 
 ### Kan jag behålla formateringen av det ursprungliga bokmärket?
  Absolut! Använder`ImportFormatMode.KeepSourceFormatting` säkerställer att den ursprungliga formateringen bevaras.

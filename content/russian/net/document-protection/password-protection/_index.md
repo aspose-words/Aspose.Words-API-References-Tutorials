@@ -18,7 +18,7 @@ url: /ru/net/document-protection/password-protection/
 1.  Aspose.Words for .NET: Убедитесь, что у вас есть библиотека Aspose.Words for .NET. Вы можете[скачать здесь](https://releases.aspose.com/words/net/).
 2. Среда разработки: Visual Studio или любая другая среда разработки C#.
 3. Базовые знания C#: фундаментальное понимание программирования на C#.
-4. Лицензия Aspose: Получите лицензию от[здесь](https://purchase.aspose.com/buy) или используйте[временная лицензия](https://purchase.aspose.com/temporary-license/) для оценки.
+4.  Лицензия Aspose: Получите лицензию от[здесь](https://purchase.aspose.com/buy) или используйте[временная лицензия](https://purchase.aspose.com/temporary-license/) для оценки.
 
 ## Импорт пространств имен
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ### Выберите тип защиты
 
- Aspose.Words предлагает различные типы защиты, такие как`NoProtection`, `ReadOnly`, `AllowOnlyComments` , и`AllowOnlyFormFields` . Для этого примера мы будем использовать`NoProtection` но с паролем, что по сути означает, что документ можно редактировать, но для снятия защиты требуется пароль.
+ Aspose.Words предлагает различные типы защиты, такие как`NoProtection`, `ReadOnly`, `AllowOnlyComments` , и`AllowOnlyFormFields` Для этого примера мы будем использовать`NoProtection` но с паролем, что по сути означает, что документ можно редактировать, но для снятия защиты требуется пароль.
 
 ### Применить защиту
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### Могу ли я использовать различные типы защиты с Aspose.Words?
 
- Да, Aspose.Words поддерживает различные типы защиты, включая`ReadOnly`, `AllowOnlyComments` , и`AllowOnlyFormFields`.
+Да, Aspose.Words поддерживает различные типы защиты, включая`ReadOnly`, `AllowOnlyComments` , и`AllowOnlyFormFields`.
 
 ### Как снять защиту паролем с документа?
 
@@ -110,4 +110,4 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ### Где я могу найти дополнительную документацию по Aspose.Words?
 
-Дополнительную документацию вы можете найти на[Страница документации Aspose.Words](https://reference.aspose.com/words/net/).
+ Дополнительную документацию вы можете найти на[Страница документации Aspose.Words](https://reference.aspose.com/words/net/).

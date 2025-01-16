@@ -61,7 +61,7 @@ Ahora que la tabla está accesible, el siguiente paso es recuperar la primera fi
 Row firstRow = table.FirstRow;
 ```
 
-El`FirstRow` La propiedad nos da la primera fila de la tabla. Ahora estamos listos para comenzar a modificar su formato.
+ El`FirstRow` La propiedad nos da la primera fila de la tabla. Ahora estamos listos para comenzar a modificar su formato.
 
 ## Paso 4: Modificar los bordes de las filas
 

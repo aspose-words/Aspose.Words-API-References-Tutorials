@@ -89,7 +89,7 @@ Ya, Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOCX, PD
 
 ### Q3: Apakah ada pilihan lisensi yang tersedia untuk Aspose.Words untuk Java?
 
- Ya, Anda dapat menjelajahi opsi lisensi dan membeli Aspose.Words untuk Java di[Situs web Aspose](https://purchase.aspose.com/buy).
+Ya, Anda dapat menjelajahi opsi lisensi dan membeli Aspose.Words untuk Java di[Situs web Aspose](https://purchase.aspose.com/buy).
 
 ### Q4: Dapatkah saya mencoba Aspose.Words untuk Java sebelum membeli?
 
@@ -97,6 +97,6 @@ Ya, Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOCX, PD
 
 ### Q5: Di mana saya dapat mencari dukungan atau mengajukan pertanyaan tentang Aspose.Words untuk Java?
 
-Untuk pertanyaan atau dukungan apa pun, kunjungi[Forum Aspose.Words untuk Java](https://forum.aspose.com/).
+ Untuk pertanyaan atau dukungan apa pun, kunjungi[Forum Aspose.Words untuk Java](https://forum.aspose.com/).
 
 Sekarang setelah Anda menguasai rendering bentuk dengan Aspose.Words untuk Java, Anda siap untuk memanfaatkan sepenuhnya potensi API serbaguna ini dalam proyek pemrosesan dokumen Anda. Selamat membuat kode!

@@ -9,7 +9,7 @@ url: /de/net/split-document/merge-documents/
 ---
 ## Einführung
 
-Mussten Sie schon einmal mehrere Word-Dokumente zu einer zusammenhängenden Datei zusammenführen? Egal, ob Sie Berichte erstellen, ein Projekt zusammenstellen oder einfach nur Ordnung schaffen wollen, das Zusammenführen von Dokumenten kann Ihnen jede Menge Zeit und Mühe sparen. Mit Aspose.Words für .NET wird dieser Vorgang zum Kinderspiel. In diesem Tutorial zeigen wir Ihnen Schritt für Schritt, wie Sie Word-Dokumente mit Aspose.Words für .NET zusammenführen. Dabei werden die einzelnen Schritte aufgeschlüsselt, damit Sie sie problemlos nachvollziehen können. Am Ende führen Sie Dokumente wie ein Profi zusammen!
+Mussten Sie schon einmal mehrere Word-Dokumente zu einer zusammenhängenden Datei zusammenführen? Egal, ob Sie Berichte erstellen, ein Projekt zusammenstellen oder einfach nur Ordnung schaffen wollen, das Zusammenführen von Dokumenten kann Ihnen eine Menge Zeit und Mühe sparen. Mit Aspose.Words für .NET wird dieser Vorgang zum Kinderspiel. In diesem Tutorial zeigen wir Ihnen, wie Sie Word-Dokumente mit Aspose.Words für .NET zusammenführen. Dabei werden die einzelnen Schritte aufgeschlüsselt, damit Sie sie problemlos nachvollziehen können. Am Ende führen Sie Dokumente wie ein Profi zusammen!
 
 ## Voraussetzungen
 
@@ -107,7 +107,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 
 ### Wie erhalte ich Unterstützung für Aspose.Words für .NET?
 
-Sie erhalten Unterstützung durch den Besuch der[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
+ Sie erhalten Unterstützung durch den Besuch der[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
 
 ### Kann ich andere Dateiformate mit Aspose.Words für .NET zusammenführen?
 

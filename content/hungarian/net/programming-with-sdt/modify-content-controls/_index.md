@@ -15,7 +15,7 @@ Ha valaha is dolgozott Word-dokumentumokkal, és módosítania kellett a struktu
 
 Mielőtt belevágnánk a tartalomvezérlők módosításának aprólékos dolgaiba, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-1.  Aspose.Words for .NET telepítve: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET telepítve: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 
 2. Alapvető C# ismerete: Ez az oktatóanyag feltételezi, hogy ismeri az alapvető C# programozási fogalmakat.
 

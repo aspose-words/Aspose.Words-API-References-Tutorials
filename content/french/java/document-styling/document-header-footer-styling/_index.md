@@ -87,7 +87,7 @@ Pour garantir une expérience fluide lors de la stylisation des en-têtes et des
 
 ### Comment puis-je supprimer des en-têtes ou des pieds de page de sections spécifiques ?
 
-Vous pouvez supprimer des en-têtes ou des pieds de page de sections spécifiques en accédant à l'`HeaderFooter` objets et en définissant leur contenu sur null. Par exemple :
+ Vous pouvez supprimer des en-têtes ou des pieds de page de sections spécifiques en accédant à l'`HeaderFooter` objets et en définissant leur contenu sur null. Par exemple :
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Puis-je ajouter des champs personnalisés, tels que des titres de documents, aux en-têtes ou aux pieds de page ?
 
-Oui, vous pouvez ajouter des champs personnalisés aux en-têtes ou aux pieds de page. Créer un`Run` élément et insérez-le dans le contenu de l'en-tête ou du pied de page, en fournissant le texte souhaité. Personnalisez la mise en forme selon vos besoins.
+ Oui, vous pouvez ajouter des champs personnalisés aux en-têtes ou aux pieds de page. Créer un`Run` élément et insérez-le dans le contenu de l'en-tête ou du pied de page, en fournissant le texte souhaité. Personnalisez la mise en forme selon vos besoins.
 
 ### Aspose.Words pour Java est-il compatible avec différents formats de documents ?
 

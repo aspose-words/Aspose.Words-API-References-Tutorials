@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
-การ`InterpolateImages` ทรัพย์สินถูกตั้งค่าเป็น`true` เพื่อให้แน่ใจว่ารูปภาพใน PDF ของคุณได้รับการแทรกเข้าไปเพื่อปรับปรุงคุณภาพของรูปภาพ
+ การ`InterpolateImages` ทรัพย์สินถูกตั้งค่าเป็น`true` เพื่อให้แน่ใจว่ารูปภาพใน PDF ของคุณได้รับการแทรกเข้าไปเพื่อปรับปรุงคุณภาพของรูปภาพ
 
 ## ขั้นตอนที่ 4: บันทึกเอกสารเป็น PDF
 

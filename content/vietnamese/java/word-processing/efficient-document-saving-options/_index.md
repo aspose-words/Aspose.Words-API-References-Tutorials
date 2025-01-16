@@ -54,7 +54,7 @@ doc.save("output.html", saveOptions);
 
 ```java
 // Mã Java để lưu tài liệu dưới dạng hình ảnh
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); // Thiết lập độ phân giải (DPI)
 doc.save("output.png", imageSaveOptions);
 ```

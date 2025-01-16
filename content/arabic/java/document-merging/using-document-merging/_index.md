@@ -167,58 +167,48 @@ public class DocumentMerger {
 
  عن طريق استخدام`ImportFormatMode.KEEP_DIFFERENT_STYLES`يحتفظ Aspose.Words بالأنماط المختلفة بين المستندات المصدر والوجهة، مما يعمل على حل التعارضات بسلاسة.
 
-## 9. أفضل الممارسات لدمج المستندات
-
-- قم دائمًا بالتعامل مع الاستثناءات أثناء دمج المستندات لمنع الأخطاء غير المتوقعة.
-
-- تحقق بانتظام من وجود تحديثات واستخدم الإصدار الأحدث من Aspose.Words for Java للاستفادة من إصلاحات الأخطاء والميزات الجديدة.
-
-- اختبار دمج المستندات مع أنواع وأحجام المستندات المختلفة لضمان الأداء الأمثل.
-
-- فكر في استخدام نظام التحكم في الإصدار لتتبع التغييرات أثناء عمليات دمج المستندات.
-
-## 10. الخاتمة
+## خاتمة
 
 يتيح برنامج Aspose.Words for Java لمطوري Java القدرة على دمج مستندات Word بسهولة. باتباع الدليل خطوة بخطوة في هذه المقالة، يمكنك الآن دمج المستندات والتعامل مع التنسيق وإدراج الفواصل وإدارة التعارضات بسهولة. باستخدام برنامج Aspose.Words for Java، يصبح دمج المستندات عملية سلسة وآلية، مما يوفر الوقت والجهد الثمينين.
 
-## 11. الأسئلة الشائعة 
+## الأسئلة الشائعة 
 
 ### هل يمكنني دمج المستندات ذات التنسيقات والأنماط المختلفة؟
 
-   نعم، يتعامل برنامج Aspose.Words for Java مع دمج المستندات ذات التنسيقات والأنماط المختلفة. تعمل المكتبة على حل التعارضات بذكاء، مما يسمح لك بدمج المستندات من مصادر مختلفة بسلاسة.
+نعم، يتعامل برنامج Aspose.Words for Java مع دمج المستندات ذات التنسيقات والأنماط المختلفة. تعمل المكتبة على حل التعارضات بذكاء، مما يسمح لك بدمج المستندات من مصادر مختلفة بسلاسة.
 
 ### هل يدعم Aspose.Words دمج المستندات الكبيرة بكفاءة؟
 
-   تم تصميم Aspose.Words for Java للتعامل مع المستندات الكبيرة بكفاءة. فهو يستخدم خوارزميات محسنة لدمج المستندات، مما يضمن الأداء العالي حتى مع المحتوى الواسع.
+تم تصميم Aspose.Words for Java للتعامل مع المستندات الكبيرة بكفاءة. فهو يستخدم خوارزميات محسنة لدمج المستندات، مما يضمن الأداء العالي حتى مع المحتوى الواسع.
 
 ### هل يمكنني دمج المستندات المحمية بكلمة مرور باستخدام Aspose.Words لـ Java؟
 
-   نعم، يدعم Aspose.Words for Java دمج المستندات المحمية بكلمة مرور. تأكد من توفير كلمات المرور الصحيحة للوصول إلى هذه المستندات ودمجها.
+نعم، يدعم Aspose.Words for Java دمج المستندات المحمية بكلمة مرور. تأكد من توفير كلمات المرور الصحيحة للوصول إلى هذه المستندات ودمجها.
 
 ### هل من الممكن دمج أقسام محددة من مستندات متعددة؟
 
-   نعم، يتيح لك Aspose.Words دمج أقسام محددة بشكل انتقائي من مستندات مختلفة. وهذا يمنحك تحكمًا دقيقًا في عملية الدمج.
+نعم، يتيح لك Aspose.Words دمج أقسام محددة بشكل انتقائي من مستندات مختلفة. وهذا يمنحك تحكمًا دقيقًا في عملية الدمج.
 
 ### هل يمكنني دمج المستندات التي تحتوي على التغييرات المتعقبة والتعليقات؟
 
-    Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
+بالتأكيد، يمكن لبرنامج Aspose.Words for Java التعامل مع دمج المستندات مع التغييرات والتعليقات المتعقبة. لديك خيار الاحتفاظ بهذه المراجعات أو إزالتها أثناء عملية الدمج.
 
 ### هل يحافظ Aspose.Words على التنسيق الأصلي للمستندات المدمجة؟
 
-    Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
+يحافظ Aspose.Words على تنسيق المستندات المصدرية بشكل افتراضي. ومع ذلك، يمكنك اختيار أوضاع تنسيق استيراد مختلفة للتعامل مع التعارضات والحفاظ على اتساق التنسيق.
 
 ### هل يمكنني دمج المستندات من تنسيقات ملفات غير Word، مثل PDF أو RTF؟
 
-    Aspose.Words is primarily designed for working with Word documents. To merge documents from non-Word file formats, consider using the appropriate Aspose product for that specific format, such as Aspose.PDF or Aspose.RTF.
+تم تصميم Aspose.Words في المقام الأول للعمل مع مستندات Word. لدمج المستندات من تنسيقات ملفات غير Word، فكر في استخدام منتج Aspose المناسب لهذا التنسيق المحدد، مثل Aspose.PDF أو Aspose.RTF.
 
 ### كيف يمكنني التعامل مع إصدارات المستند أثناء الدمج؟
 
-    Document versioning during merging can be achieved by implementing proper version control practices in your application. Aspose.Words focuses on document content merging and doesn't directly manage versioning.
+يمكن تحقيق إصدارات المستندات أثناء الدمج من خلال تنفيذ ممارسات التحكم في الإصدارات المناسبة في تطبيقك. يركز Aspose.Words على دمج محتوى المستندات ولا يدير الإصدارات بشكل مباشر.
 
 ### هل Aspose.Words for Java متوافق مع Java 8 والإصدارات الأحدث؟
 
-    Yes, Aspose.Words for Java is compatible with Java 8 and newer versions. It's always recommended to use the latest Java version for better performance and security.
+نعم، Aspose.Words for Java متوافق مع Java 8 والإصدارات الأحدث. يُنصح دائمًا باستخدام أحدث إصدار من Java لتحسين الأداء والأمان.
 
 ### هل يدعم Aspose.Words دمج المستندات من مصادر بعيدة مثل عناوين URL؟
 
-    Yes, Aspose.Words for Java can load documents from various sources, including URLs, streams, and file paths. You can merge documents fetched from remote locations seamlessly.
+نعم، يمكن لبرنامج Aspose.Words for Java تحميل المستندات من مصادر مختلفة، بما في ذلك عناوين URL، والجداول، ومسارات الملفات. ويمكنك دمج المستندات التي تم جلبها من مواقع بعيدة بسلاسة.

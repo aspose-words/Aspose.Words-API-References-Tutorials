@@ -8,7 +8,7 @@ weight: 19
 url: /fr/python-net/document-structure-and-content-manipulation/document-markdown/
 ---
 
-Dans le monde numérique d'aujourd'hui, la capacité à intégrer de manière transparente différentes technologies est cruciale. En matière de traitement de texte, Microsoft Word est un choix populaire, tandis que Markdown a gagné en popularité pour sa simplicité et sa flexibilité. Mais que se passerait-il si vous pouviez combiner les deux ? C'est là qu'Aspose.Words pour Python entre en jeu. Cette puissante API vous permet d'exploiter le formatage Markdown dans les documents Word, ouvrant ainsi un monde de possibilités pour créer du contenu dynamique et visuellement attrayant. Dans ce guide étape par étape, nous découvrirons comment réaliser cette intégration à l'aide d'Aspose.Words pour Python. Alors, attachez vos ceintures et embarquez pour ce voyage magique de Markdown dans Word !
+Dans le monde numérique d'aujourd'hui, la capacité à intégrer de manière transparente différentes technologies est cruciale. En matière de traitement de texte, Microsoft Word est un choix populaire, tandis que Markdown a gagné en popularité pour sa simplicité et sa flexibilité. Mais que se passerait-il si vous pouviez combiner les deux ? C'est là qu'Aspose.Words pour Python entre en jeu. Cette puissante API vous permet d'exploiter le formatage Markdown dans les documents Word, ouvrant ainsi un monde de possibilités pour créer du contenu dynamique et visuellement attrayant. Dans ce guide étape par étape, nous découvrirons comment réaliser cette intégration à l'aide d'Aspose.Words pour Python. Alors, attachez vos ceintures et embarquez pour ce voyage de la magie Markdown dans Word !
 
 ## Introduction à Aspose.Words pour Python
 
@@ -77,8 +77,8 @@ Aspose.Words offre un contrôle étendu sur la mise en page et le formatage des 
 
 ```python
 section = doc.sections[0]
-section.page_setup.left_margin = aw.convert_util.inch_to_point(1)
-section.page_setup.right_margin = aw.convert_util.inch_to_point(1)
+section.page_setup.left_margin = aw.ConvertUtil.inch_to_point(1)
+section.page_setup.right_margin = aw.ConvertUtil.inch_to_point(1)
 ```
 
 ## Sauvegarde du document

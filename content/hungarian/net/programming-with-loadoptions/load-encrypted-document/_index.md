@@ -1,5 +1,5 @@
 ---
-title: Töltsön be titkosított Word dokumentumot
+title: Titkosított Word-dokumentum betöltése
 linktitle: Töltsön be titkosított dokumentumot a Word dokumentumba
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan tölthet be és menthet titkosított Word dokumentumokat az Aspose.Words for .NET használatával. Biztosítsa dokumentumait egyszerűen új jelszavakkal. Lépésről lépésre útmutató mellékelve.

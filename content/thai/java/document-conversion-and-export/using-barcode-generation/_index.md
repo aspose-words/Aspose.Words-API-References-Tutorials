@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## ตั้งค่าเครื่องกำเนิดบาร์โค้ด
 
- ตั้งค่าเครื่องสร้างบาร์โค้ดแบบกำหนดเองโดยใช้`FieldOptions` คลาส ในตัวอย่างนี้ เราถือว่าคุณได้ใช้งาน`CustomBarcodeGenerator` คลาสในการสร้างบาร์โค้ด แทนที่`CustomBarcodeGenerator` ด้วยตรรกะการสร้างบาร์โค้ดจริงของคุณ:
+ ตั้งค่าเครื่องสร้างบาร์โค้ดแบบกำหนดเองโดยใช้`FieldOptions` คลาส ในตัวอย่างนี้ เราถือว่าคุณได้ใช้งาน`CustomBarcodeGenerator`คลาสในการสร้างบาร์โค้ด แทนที่`CustomBarcodeGenerator` ด้วยตรรกะการสร้างบาร์โค้ดจริงของคุณ:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

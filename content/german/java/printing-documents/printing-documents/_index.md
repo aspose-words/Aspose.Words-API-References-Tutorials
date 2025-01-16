@@ -38,7 +38,7 @@ Als nächstes erstellen wir einen Druckauftrag, um unser geladenes Dokument zu d
 ```java
 // Erstellen Sie einen Druckauftrag, mit dem unser Dokument gedruckt wird.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Initialisieren Sie einen Attributsatz mit der Anzahl der Seiten im Dokument.
+// Initialisieren Sie einen Attributsatz mit der Anzahl der Seiten im Dokument.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Übergeben Sie die Druckereinstellungen zusammen mit den weiteren Parametern an das Druckdokument.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Erstellen Sie einen Druckauftrag, mit dem unser Dokument gedruckt wird.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Initialisieren Sie einen Attributsatz mit der Anzahl der Seiten im Dokument.
+// Initialisieren Sie einen Attributsatz mit der Anzahl der Seiten im Dokument.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Übergeben Sie die Druckereinstellungen zusammen mit den weiteren Parametern an das Druckdokument.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Die Seitenstart- und Seitenendindizes, wie im Attributsatz definiert.
+        //Die Seitenstart- und Seitenendindizes, wie im Attributsatz definiert.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Wählen Sie die Nummer der letzten Seite aus, die auf dieses Blatt Papier gedruckt werden soll.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Durchlaufen Sie die ausgewählten Seiten von der gespeicherten aktuellen Seite bis zur berechneten
+        // Durchlaufen Sie die ausgewählten Seiten von der gespeicherten aktuellen Seite bis zur berechneten
         // letzte Seite.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Berechnen Sie die Spalten- und Zeilenindizes.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // Der nützliche Rückgabewert ist der Maßstab, in dem die Seite gerendert wurde.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Zeichnen Sie die Seitenränder (das Seiten-Thumbnail könnte kleiner sein als das Thumbnail
+                //Zeichnen Sie die Seitenränder (das Seiten-Thumbnail könnte kleiner sein als das Thumbnail
                 // Platzhaltergröße).
                 if (mPrintPageBorders) {
                     // Holen Sie sich die tatsächliche 100 %-Größe der Seite in Punkten.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Definieren Sie die Anzahl der Spalten und Zeilen auf dem Blatt für die
-        //Querformatiges Papier.
+        // Querformatiges Papier.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ Herzlichen Glückwunsch! Sie haben erfolgreich ein Word-Dokument mit Aspose.Word
 
 ### F1: Kann ich mit Aspose.Words für Java bestimmte Seiten eines Dokuments drucken?
 
- Ja, Sie können den Seitenbereich beim Drucken eines Dokuments angeben. Im Codebeispiel haben wir verwendet`attributes.add(new PageRanges(1, doc.getPageCount()))` , um alle Seiten zu drucken. Sie können den Seitenbereich nach Bedarf anpassen.
+ Ja, Sie können den Seitenbereich beim Drucken eines Dokuments angeben. Im Codebeispiel haben wir verwendet`attributes.add(new PageRanges(1, doc.getPageCount()))` um alle Seiten zu drucken. Sie können den Seitenbereich nach Bedarf anpassen.
 
 ### F2: Ist Aspose.Words für Java für den Stapeldruck geeignet?
 

@@ -43,7 +43,7 @@ using Aspose.Words.Tables;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-代替`"YOUR DOCUMENT DIRECTORY"`使用您的文档存储的实际路径。
+代替`"YOUR DOCUMENT DIRECTORY"`使用存储文档的实际路径。
 
 ## 步骤 2：加载文档
 

@@ -18,7 +18,7 @@ url: /ru/python-net/document-options-and-settings/document-functionality-web-ext
 
 - Базовые знания программирования на Python.
 -  Справочник API Aspose.Words для Python (доступен по адресу[здесь](https://reference.aspose.com/words/python-net/).
-- Доступ к библиотеке Aspose.Words для Python (скачать с[здесь](https://releases.aspose.com/words/python/).
+-  Доступ к библиотеке Aspose.Words для Python (скачать с[здесь](https://releases.aspose.com/words/python/).
 
 ## Настройка Aspose.Words для Python
 
@@ -34,7 +34,7 @@ pip install aspose-words
 3. Импортируйте библиотеку в свой скрипт Python.
 
 ```python
-import aspose.words
+import aspose.words as aw
 ```
 
 ## Создание нового документа
@@ -42,7 +42,7 @@ import aspose.words
 Начнем с создания нового документа с помощью Aspose.Words:
 
 ```python
-document = aspose.words.Document()
+document = aw.Document()
 ```
 
 ## Добавление контента в документ
@@ -50,7 +50,7 @@ document = aspose.words.Document()
 Вы можете легко добавлять содержимое в документ с помощью Aspose.Words:
 
 ```python
-builder = aspose.words.DocumentBuilder(document)
+builder = aw.DocumentBuilder(document)
 builder.writeln("Hello, world!")
 ```
 
@@ -61,28 +61,8 @@ builder.writeln("Hello, world!")
 ```python
 font = builder.font
 font.bold = True
-font.size = aspose.words.Size(16)
-font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
-```
-
-## Вставка веб-расширений
-
-Чтобы вставить веб-расширение в документ, выполните следующие действия:
-
-1. Создайте веб-расширение с помощью HTML, CSS и JavaScript.
-2. Преобразуйте веб-расширение в строку, закодированную в base64.
-
-```python
-extension_html = "<div>Your web extension content</div>"
-extension_base64 = aspose.words.Convert.to_base64_string(extension_html)
-```
-
-3. Вставьте веб-расширение в документ:
-
-```python
-extension_node = aspose.words.DrawingML.Inline(doc)
-extension_node.image_data.set_source(extension_base64)
-builder.insert_node(extension_node)
+font.size = aw.Size(16)
+font.color = aw.Color.from_argb(255, 0, 0, 0)
 ```
 
 ## Взаимодействие с веб-расширениями
@@ -98,7 +78,7 @@ builder.insert_node(extension_node)
 После внедрения веб-расширений и внесения необходимых изменений вы можете сохранить документ, используя различные форматы, поддерживаемые Aspose.Words:
 
 ```python
-document.save("output.docx", aspose.words.SaveFormat.DOCX)
+document.save("output.docx")
 ```
 
 ## Советы по оптимизации производительности

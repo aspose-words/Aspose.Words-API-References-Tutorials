@@ -19,10 +19,10 @@ Une table des matières fournit un aperçu de la structure d'un document, permet
 ## Chargement d'un document
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## Définition des titres et des sous-titres
@@ -31,25 +31,11 @@ Pour générer une table des matières, vous devez définir les titres et les so
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## Générer la table des matières
-
-Maintenant que nous avons défini nos titres et sous-titres, générons la table des matières elle-même. Nous allons créer une nouvelle section au début du document et la remplir avec le contenu approprié.
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## Personnaliser la table des matières
@@ -58,21 +44,10 @@ Vous pouvez personnaliser l'apparence de votre table des matières en modifiant 
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## Ajout d'hyperliens
-
-Pour rendre la table des matières interactive, ajoutez des hyperliens qui permettent aux lecteurs d’accéder directement aux sections correspondantes du document.
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+"
 
 ## Styliser la table des matières
 
@@ -81,16 +56,7 @@ Le style de la table des matières implique la définition de styles de paragrap
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## Mise à jour de la table des matières
-
-Si vous apportez des modifications à la structure de votre document, vous pouvez facilement mettre à jour la table des matières pour refléter ces modifications.
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## Automatiser le processus
@@ -101,27 +67,13 @@ Pour gagner du temps et garantir la cohérence, pensez à créer un script qui g
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## Gestion des numéros de page
-
-Vous pouvez ajouter des numéros de page à la table des matières pour fournir aux lecteurs plus de contexte sur l'endroit où trouver des sections spécifiques.
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## Conclusion

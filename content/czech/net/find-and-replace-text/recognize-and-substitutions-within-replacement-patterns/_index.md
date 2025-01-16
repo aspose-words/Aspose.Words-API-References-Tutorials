@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-The`Document` objekt je jádrem Aspose.Words. Představuje celý dokument aplikace Word.
+ The`Document` objekt je jádrem Aspose.Words. Představuje celý dokument aplikace Word.
 
 ## Krok 2: Přidejte text do dokumentu
 
@@ -50,7 +50,7 @@ Dále do dokumentu přidáme nějaký text. Tento text bude cílem našich náhr
 builder.Write("Jason give money to Paul.");
 ```
 
-The`DocumentBuilder` class je výkonný nástroj pro přidávání textu a dalších prvků do vašeho dokumentu.
+ The`DocumentBuilder` class je výkonný nástroj pro přidávání textu a dalších prvků do vašeho dokumentu.
 
 ## Krok 3: Definujte vzor regulárního výrazu
 
@@ -70,7 +70,7 @@ Aspose.Words vám umožňuje používat substituce ve vašich náhradách. Tyto 
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
-The`FindReplaceOptions` class poskytuje různé možnosti pro přizpůsobení operací hledání a nahrazování.
+ The`FindReplaceOptions` class poskytuje různé možnosti pro přizpůsobení operací hledání a nahrazování.
 
 ## Krok 5: Proveďte výměnu
 

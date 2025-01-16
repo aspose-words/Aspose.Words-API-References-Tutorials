@@ -88,7 +88,7 @@ masz to! Za pomocą zaledwie kilku linijek kodu opanowałeś sztukę kontrolowan
 ## Często zadawane pytania
 
 ### Czym jest kontrola przerwania linii na Dalekim Wschodzie?
-Kontrola podziału wiersza na Dalekim Wschodzie to ustawienie, które zarządza sposobem zawijania tekstu w językach azjatyckich, zapewniając właściwe formatowanie i czytelność.
+Kontrola podziału wiersza w językach azjatyckich to ustawienie, które zarządza sposobem zawijania tekstu w językach azjatyckich, zapewniając właściwe formatowanie i czytelność.
 
 ### Dlaczego powinienem wyłączyć wiszące znaki interpunkcyjne?
 Wyłączenie wiszących znaków interpunkcyjnych pomaga zachować przejrzysty i profesjonalny wygląd, zwłaszcza w dokumentach z typografią azjatycką.

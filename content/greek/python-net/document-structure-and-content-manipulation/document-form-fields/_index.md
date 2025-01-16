@@ -17,16 +17,16 @@ url: /el/python-net/document-structure-and-content-manipulation/document-form-fi
 
 Πριν εμβαθύνουμε στη δημιουργία και τον έλεγχο των πεδίων φόρμας, ας ρυθμίσουμε το περιβάλλον μας και ας εξοικειωθούμε με το Aspose.Words for Python. Ακολουθήστε αυτά τα βήματα για να ξεκινήσετε:
 
-1. **Install Aspose.Words:** Ξεκινήστε εγκαθιστώντας τη βιβλιοθήκη Aspose.Words for Python χρησιμοποιώντας την ακόλουθη εντολή pip:
+1. Εγκατάσταση Aspose.Words: Ξεκινήστε εγκαθιστώντας τη βιβλιοθήκη Aspose.Words για Python χρησιμοποιώντας την ακόλουθη εντολή pip:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Εισαγάγετε τη βιβλιοθήκη στο σενάριο Python για να αρχίσετε να χρησιμοποιείτε τις λειτουργίες της.
+2. Εισαγωγή της βιβλιοθήκης: Εισαγάγετε τη βιβλιοθήκη στο σενάριο Python για να αρχίσετε να χρησιμοποιείτε τις λειτουργίες της.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 Με τη ρύθμιση στη θέση του, ας προχωρήσουμε στις βασικές έννοιες της δημιουργίας και διαχείρισης πεδίων φόρμας.
@@ -41,7 +41,7 @@ url: /el/python-net/document-structure-and-content-manipulation/document-form-fi
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Πλαίσια ελέγχου και κουμπιά ραδιοφώνου
@@ -50,12 +50,12 @@ text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeTyp
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Αναπτυσσόμενες λίστες
@@ -64,7 +64,7 @@ radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OL
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Επιλογείς ημερομηνίας
@@ -73,7 +73,7 @@ drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Ρύθμιση ιδιοτήτων των πεδίων φόρμας
@@ -122,7 +122,7 @@ date_picker.text = "2023-08-31"
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Μόλις δημιουργηθεί το πεδίο, μπορείτε να ορίσετε τις ιδιότητές του, όπως όνομα, προεπιλεγμένη τιμή και κείμενο κράτησης θέσης. Ας δούμε πώς να το κάνουμε αυτό:
@@ -150,14 +150,14 @@ text_input_field.placeholder_text = "Enter your full name"
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Για κουμπιά επιλογής, μπορείτε να τα δημιουργήσετε χρησιμοποιώντας τον τύπο σχήματος OLE_OBJECT:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Αφού δημιουργήσετε αυτά τα πεδία, μπορείτε να προσαρμόσετε τις ιδιότητές τους, όπως το όνομα, την προεπιλεγμένη επιλογή και το κείμενο της ετικέτας:
@@ -183,7 +183,7 @@ radio_button.text = "Male"
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Αφού δημιουργήσετε την αναπτυσσόμενη λίστα, μπορείτε να καθορίσετε τη λίστα επιλογών που είναι διαθέσιμες στους χρήστες:
@@ -211,7 +211,7 @@ drop_down.text = "USA"
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Αφού δημιουργήσετε το εργαλείο επιλογής ημερομηνίας, μπορείτε να ορίσετε τις ιδιότητές του, όπως το όνομα και την προεπιλεγμένη ημερομηνία:
@@ -228,11 +228,7 @@ date_picker.text = "2023-08-31"
 
 ## Σύναψη
 
-Η γνώση των πεδίων φόρμας και της σύλληψης δεδομένων σε έγγραφα του Word είναι μια πολύτιμη δεξιότητα που σας δίνει τη δυνατότητα να δημιουργείτε διαδραστικά και αποτελεσματικά έγγραφα για τη συλλογή δεδομένων. Το Aspose.Words για Python παρέχει ένα ολοκληρωμένο σύνολο εργαλείων για τη δημιουργία, την προσαρμογή και την εξαγωγή δεδομένων από πεδία φόρμας. Από απλά πεδία εισαγωγής κειμένου έως σύνθετους υπολογισμούς και μορφοποίηση υπό όρους, οι δυνατότητες είναι τεράστιες.
-
 Σε αυτόν τον οδηγό, έχουμε εξερευνήσει τις βασικές αρχές των πεδίων φόρμας, τους τύπους πεδίων φόρμας, τις ιδιότητες ρύθμισης και την προσαρμογή της συμπεριφοράς τους. Έχουμε επίσης αγγίξει τις βέλτιστες πρακτικές για τη σχεδίαση φορμών και προσφέραμε πληροφορίες για τη βελτιστοποίηση φορμών εγγράφων για τις μηχανές αναζήτησης.
-
-Αξιοποιώντας τη δύναμη του Aspose.Words για Python, μπορείτε να δημιουργήσετε έγγραφα που όχι μόνο καταγράφουν δεδομένα αποτελεσματικά, αλλά ενισχύουν επίσης την αφοσίωση των χρηστών και βελτιστοποιούν τις ροές εργασίας επεξεργασίας δεδομένων. Τώρα, είστε έτοιμοι να ξεκινήσετε το ταξίδι σας για να γίνετε κύριος των πεδίων φορμών και της συλλογής δεδομένων σε έγγραφα του Word.
 
 ## Συχνές ερωτήσεις
 

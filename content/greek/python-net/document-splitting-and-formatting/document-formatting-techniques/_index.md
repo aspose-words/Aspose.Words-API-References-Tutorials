@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Εφαρμογή στυλ και μεγεθών γραμματοσειράς
-
-Βελτιώστε την αναγνωσιμότητα και την οπτική ελκυστικότητα του εγγράφου σας εφαρμόζοντας στυλ και μεγέθη γραμματοσειράς. Χρησιμοποιήστε τον ακόλουθο κώδικα για να αλλάξετε το στυλ γραμματοσειράς και το μέγεθος μιας παραγράφου:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Μορφοποίηση παραγράφων και επικεφαλίδων
+## Μορφοποίηση παραγράφων
 
 Για να δομήσετε αποτελεσματικά το έγγραφό σας, η μορφοποίηση των παραγράφων και των επικεφαλίδων είναι ζωτικής σημασίας. Πετύχετε αυτό χρησιμοποιώντας τον παρακάτω κώδικα:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Εργασία με λίστες και κουκκίδες
 
 Οι λίστες και τα σημεία κουκκίδων οργανώνουν το περιεχόμενο και παρέχουν σαφήνεια. Υλοποιήστε τα χρησιμοποιώντας Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Διαχείριση διάταξης σελίδας και περιθωρίων
+## Διαχείριση διάταξης σελίδας
 
 Ελέγξτε τη διάταξη και τα περιθώρια σελίδας για βέλτιστη παρουσίαση:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Εφαρμογή στυλ και θεμάτων

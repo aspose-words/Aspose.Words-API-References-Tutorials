@@ -1,6 +1,6 @@
 ---
-title: Dokumentum konvertálása
-linktitle: Dokumentum konvertálása
+title: Dokumentum konvertálás
+linktitle: Dokumentum konvertálás
 second_title: Aspose.Words Java Document Processing API
 description: Egyszerűsítse a dokumentumok konvertálását Java nyelven az Aspose.Words segítségével! Tanuljon meg átfogó szövegszerkesztési és dokumentumfeldolgozási útmutatókat
 type: docs

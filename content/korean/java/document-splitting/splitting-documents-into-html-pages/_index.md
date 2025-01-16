@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-이 코드는 페이지 나누기를 기준으로 문서를 분할하고 각 페이지를 저장합니다.`pages` 목록.
+ 이 코드는 페이지 나누기를 기준으로 문서를 분할하고 각 페이지를 저장합니다.`pages` 목록.
 
 ## HTML로 저장하기
 

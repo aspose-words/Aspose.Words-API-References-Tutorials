@@ -66,7 +66,7 @@ foreach (Field f in doc.Range.Fields)
 }
 ```
 
- Dans cet extrait, nous utilisons un`foreach` boucle pour parcourir tous les champs du document. Pour chaque champ, nous vérifions s'il s'agit d'un champ de fusion à l'aide de`f.Type == FieldType.FieldMergeField` . Si c'est le cas, nous le lançons à`FieldMergeField` et ajouter`_Renamed` à son nom.
+ Dans cet extrait, nous utilisons un`foreach` boucle pour parcourir tous les champs du document. Pour chaque champ, nous vérifions s'il s'agit d'un champ de fusion à l'aide`f.Type == FieldType.FieldMergeField` . Si c'est le cas, nous le lançons à`FieldMergeField` et ajouter`_Renamed` à son nom.
 
 ## Étape 3 : Enregistrer le document
 

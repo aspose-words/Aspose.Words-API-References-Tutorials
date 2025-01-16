@@ -18,7 +18,7 @@ Word belgelerinizi parolayla korumanın inceliklerine dalmadan önce, ihtiyacın
 1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesine sahip olduğunuzdan emin olun.[buradan indirin](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio veya herhangi bir C# geliştirme ortamı.
 3. Temel C# Bilgisi: C# programlamanın temel anlayışı.
-4. Aspose Lisansı: Lisans alın[Burada](https://purchase.aspose.com/buy) veya birini kullanın[geçici lisans](https://purchase.aspose.com/temporary-license/) Değerlendirme için.
+4.  Aspose Lisansı: Lisans alın[Burada](https://purchase.aspose.com/buy) veya birini kullanın[geçici lisans](https://purchase.aspose.com/temporary-license/) Değerlendirme için.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 
 ### Koruma Türünü Seçin
 
- Aspose.Words, aşağıdakiler gibi farklı koruma türleri sunar:`NoProtection`, `ReadOnly`, `AllowOnlyComments` , Ve`AllowOnlyFormFields` Bu örnek için şunu kullanacağız:`NoProtection` ancak bir parola ile, yani esasen belgenin düzenlenebilir olduğu ancak korumayı kaldırmak için bir parola gerektiği anlamına gelir.
+ Aspose.Words, aşağıdakiler gibi farklı koruma türleri sunar:`NoProtection`, `ReadOnly`, `AllowOnlyComments` , Ve`AllowOnlyFormFields`Bu örnek için şunu kullanacağız:`NoProtection` ancak bir parola ile, yani esasen belgenin düzenlenebilir olduğu ancak korumayı kaldırmak için bir parola gerektiği anlamına gelir.
 
 ### Korumayı Uygula
 
@@ -94,7 +94,7 @@ Ve işte karşınızda! Aspose.Words for .NET kullanarak Word belgenize başarı
 
 ### Aspose.Words ile farklı koruma türlerini kullanabilir miyim?
 
- Evet, Aspose.Words çeşitli koruma türlerini destekler, bunlar arasında şunlar yer alır:`ReadOnly`, `AllowOnlyComments` , Ve`AllowOnlyFormFields`.
+Evet, Aspose.Words çeşitli koruma türlerini destekler, bunlar arasında şunlar yer alır:`ReadOnly`, `AllowOnlyComments` , Ve`AllowOnlyFormFields`.
 
 ### Bir belgenin parola korumasını nasıl kaldırabilirim?
 
@@ -110,4 +110,4 @@ Evet, Aspose.Words .NET Core, .NET Framework ve diğer .NET platformlarıyla uyu
 
 ### Aspose.Words hakkında daha fazla dokümanı nerede bulabilirim?
 
-Daha fazla belgeyi şu adreste bulabilirsiniz:[Aspose.Words dokümantasyon sayfası](https://reference.aspose.com/words/net/).
+ Daha fazla belgeyi şu adreste bulabilirsiniz:[Aspose.Words dokümantasyon sayfası](https://reference.aspose.com/words/net/).

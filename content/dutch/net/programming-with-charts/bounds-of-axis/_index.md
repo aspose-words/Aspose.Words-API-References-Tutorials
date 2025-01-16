@@ -118,7 +118,7 @@ Aspose.Words voor .NET is een bibliotheek waarmee u programmatisch Word-document
  Ja, u kunt een[gratis proefperiode](https://releases.aspose.com/) of krijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
 
 ### Waar kan ik documentatie vinden voor Aspose.Words voor .NET?
-Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).
+ Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).
 
 ### Hoe kan ik ondersteuning krijgen voor Aspose.Words?
  U kunt de[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.

@@ -56,7 +56,7 @@ Crea una variable de cadena para guardar la ruta al directorio de tu documento. 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real donde se encuentra su documento.
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde se encuentra su documento.
 
 ### Cargando el documento
 

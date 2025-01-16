@@ -38,23 +38,11 @@ Aspose.Words for Java عبارة عن واجهة برمجة تطبيقات قو�
 // استيراد الحزم المطلوبة
 import com.aspose.words.*;
 
-public class DocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // تهيئة مستند جديد
-        Document doc = new Document();
-
-        // إنشاء قائمة
-        List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
-
-        // إضافة عناصر القائمة
-        list.getListItems().add("Item 1");
-        list.getListItems().add("Item 2");
-        list.getListItems().add("Item 3");
-
-        // حفظ المستند
-        doc.save("DocumentListExample.docx");
-    }
-}
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 ## تعديل قائمة المستندات
@@ -69,21 +57,18 @@ public class DocumentListExample {
 فيما يلي مقتطف من التعليمات البرمجية لتعديل قائمة المستندات:
 
 ```java
-public class ModifyDocumentListExample {
-    public static void main(String[] args) throws Exception {
-        // تحميل مستند موجود
-        Document doc = new Document("DocumentListExample.docx");
-
-        // الوصول إلى القائمة
-        List list = doc.getLists().get(0);
-
-        // إضافة عنصر جديد
-        list.getListItems().add("New Item");
-
-        // حفظ المستند المعدل
-        doc.save("ModifiedDocumentListExample.docx");
+Paragraph lastListParagraph = null;
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    // تحقق مما إذا كانت الفقرة جزءًا من قائمة.
+    if (paragraph.isListItem()) {
+        // تحديث الفقرة الأخيرة من القائمة.
+        lastListParagraph = paragraph;
     }
 }
+
+builder.moveTo(lastListParagraph);
+builder.writeln("Item 4");
 ```
 
 ## استخراج المعلومات من قائمة المستندات
@@ -97,21 +82,19 @@ public class ModifyDocumentListExample {
 فيما يلي مقتطف من التعليمات البرمجية لاستخراج المعلومات من قائمة المستندات:
 
 ```java
-public class ExtractListItemsExample {
-    public static void main(String[] args) throws Exception {
-        // تحميل المستند
-        Document doc = new Document("ModifiedDocumentListExample.docx");
-
-        // الوصول إلى القائمة
-        List list = doc.getLists().get(0);
-
-        // التكرار خلال عناصر القائمة وطباعتها
-        for (ListItem listItem : list.getListItems()) {
-            System.out.println(listItem.getText());
-        }
+NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
+for (Paragraph paragraph : (Iterable<Paragraph>) paragraphs) {
+    if (paragraph.isListItem()) {
+        builder.moveTo(paragraph);
+        builder.writeln("Item 4");
     }
 }
 ```
+
+## خاتمة
+
+في هذا الدليل الشامل، استكشفنا عالم العمل مع قوائم المستندات باستخدام Aspose.Words for Java. لقد تعلمت كيفية إنشاء وتعديل واستخراج المعلومات من قوائم المستندات، كل ذلك بفضل قوة ومرونة Aspose.Words for Java. ابدأ في تنفيذ هذه التقنيات في مشاريع Java الخاصة بك اليوم وقم بتبسيط مهام أتمتة المستندات الخاصة بك.
+
 
 ## الأسئلة الشائعة
 
@@ -129,7 +112,3 @@ public class ExtractListItemsExample {
 
 ### هل يدعم Aspose.Words for Java العمل مع الجداول في المستندات؟
 نعم، يوفر Aspose.Words for Java دعمًا واسع النطاق للعمل مع الجداول، مما يسمح لك بإنشاء البيانات الجدولية وتعديلها واستخراجها بسهولة.
-
-## خاتمة
-
-في هذا الدليل الشامل، استكشفنا عالم العمل مع قوائم المستندات باستخدام Aspose.Words for Java. لقد تعلمت كيفية إنشاء وتعديل واستخراج المعلومات من قوائم المستندات، كل ذلك بفضل قوة ومرونة Aspose.Words for Java. ابدأ في تنفيذ هذه التقنيات في مشاريع Java الخاصة بك اليوم وقم بتبسيط مهام أتمتة المستندات الخاصة بك.

@@ -105,7 +105,7 @@ Aspose.Words hỗ trợ thêm từng hình mờ một. Để thêm nhiều hình
 
 ### Tôi có thể điều chỉnh vị trí của hình mờ không?
 
-Các`WatermarkLayout`thuộc tính xác định hướng, nhưng các điều chỉnh vị trí chính xác không được hỗ trợ trực tiếp. Bạn có thể cần sử dụng các kỹ thuật khác để định vị chính xác.
+ Các`WatermarkLayout`thuộc tính xác định hướng, nhưng các điều chỉnh vị trí chính xác không được hỗ trợ trực tiếp. Bạn có thể cần sử dụng các kỹ thuật khác để định vị chính xác.
 
 ### Tôi phải làm sao nếu cần hình mờ bán trong suốt?
 

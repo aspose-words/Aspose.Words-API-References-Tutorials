@@ -56,7 +56,7 @@ Sekarang mari kita bandingkan dokumen menggunakan metode Compare dari kelas Docu
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-Itu`Compare`metode membandingkan dokumen A dengan dokumen B dan menyimpan perubahan pada dokumen A. Anda dapat menentukan nama penulis dan tanggal perbandingan untuk referensi.
+ Itu`Compare`metode membandingkan dokumen A dengan dokumen B dan menyimpan perubahan pada dokumen A. Anda dapat menentukan nama penulis dan tanggal perbandingan untuk referensi.
 
 ## Kesimpulan
 

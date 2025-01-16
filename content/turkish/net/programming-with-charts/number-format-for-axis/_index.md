@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-The`InsertChart` yöntem, belirtilen türde (bu durumda Sütun) ve boyutlarda bir grafiği belgeye ekler.
+ The`InsertChart` yöntem, belirtilen türde (bu durumda Sütun) ve boyutlarda bir grafiği belgeye ekler.
 
 ## Adım 3: Grafik Serisini Özelleştirme
 
@@ -86,7 +86,7 @@ Son olarak, Y eksenindeki sayıları daha okunabilir hale getirmek için biçiml
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-The`FormatCode` özellik, eksendeki sayılar için özel bir biçim ayarlamanıza olanak tanır. Bu örnekte,`#,##0`binler için büyük sayıların virgülle gösterilmesini sağlar.
+ The`FormatCode` özellik, eksendeki sayılar için özel bir biçim ayarlamanıza olanak tanır. Bu örnekte,`#,##0`binler için büyük sayıların virgülle gösterilmesini sağlar.
 
 ## Adım 5: Belgeyi Kaydetme
 

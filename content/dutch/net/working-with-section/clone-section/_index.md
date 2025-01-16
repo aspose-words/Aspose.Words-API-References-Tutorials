@@ -10,7 +10,7 @@ url: /nl/net/working-with-section/clone-section/
 
 ## Invoering
 
-Hallo, mede-programmeurs! 🚀 Heb je jezelf ooit tot je knieën in een Word-documentproject bevonden en wenste je dat je gewoon een sectie kon klonen in plaats van al dat harde werk opnieuw te doen? Nou, raad eens? Met Aspose.Words voor .NET kun je eenvoudig secties in je Word-documenten klonen. Deze tutorial leidt je stap voor stap door het proces, waardoor het een fluitje van een cent wordt om secties in je documenten te repliceren. Laten we er dus meteen induiken en je documentmanipulatietaken een stuk eenvoudiger maken!
+Hallo, mede-programmeurs! 🚀 Heb je jezelf ooit tot je knieën in een Word-documentproject bevonden en wenste je dat je gewoon een sectie kon klonen in plaats van al dat harde werk opnieuw te doen? Nou, raad eens? Met Aspose.Words voor .NET kun je eenvoudig secties in je Word-documenten klonen. Deze tutorial leidt je stap voor stap door het proces, waardoor het een fluitje van een cent wordt om secties in je documenten te repliceren. Dus laten we er meteen induiken en je documentmanipulatietaken een stuk eenvoudiger maken!
 
 ## Vereisten
 

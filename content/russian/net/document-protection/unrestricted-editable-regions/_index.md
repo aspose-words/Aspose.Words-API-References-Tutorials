@@ -16,7 +16,7 @@ url: /ru/net/document-protection/unrestricted-editable-regions/
 Прежде чем начать, убедитесь, что у вас есть следующее:
 
 1.  Aspose.Words для .NET: если вы еще этого не сделали, загрузите его[здесь](https://releases.aspose.com/words/net/).
-2.  Действующая лицензия Aspose: вы можете получить временную лицензию[здесь](https://purchase.aspose.com/temporary-license/).
+2. Действующая лицензия Aspose: вы можете получить временную лицензию[здесь](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: любая последняя версия должна работать нормально.
 4. Базовые знания C# и .NET: это поможет вам следить за кодом.
 

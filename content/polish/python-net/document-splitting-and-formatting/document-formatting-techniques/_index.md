@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Stosowanie stylów i rozmiarów czcionek
-
-Popraw czytelność i atrakcyjność wizualną swojego dokumentu, stosując style i rozmiary czcionek. Użyj następującego kodu, aby zmienić styl i rozmiar czcionki akapitu:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Formatowanie akapitów i nagłówków
+## Formatowanie akapitów
 
 Aby skutecznie ustrukturyzować dokument, formatowanie akapitów i nagłówków jest kluczowe. Osiągnij to, korzystając z poniższego kodu:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Praca z listami i punktami wypunktowanymi
 
 Listy i punkty wypunktowane organizują treść i zapewniają przejrzystość. Wdrażaj je za pomocą Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Zarządzanie układem strony i marginesami
+## Zarządzanie układem strony
 
 Kontroluj układ strony i marginesy, aby uzyskać optymalną prezentację:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Stosowanie stylów i motywów

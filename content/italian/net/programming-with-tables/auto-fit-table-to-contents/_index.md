@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-IL`Aspose.Words` namespace fornisce la funzionalità di base per la gestione dei documenti Word, mentre`Aspose.Words.Tables` include le classi specifiche per lavorare con le tabelle.
+ IL`Aspose.Words` namespace fornisce la funzionalità di base per la gestione dei documenti Word, mentre`Aspose.Words.Tables` include le classi specifiche per lavorare con le tabelle.
 
 ## Passaggio 1: imposta la directory dei documenti
 
@@ -88,7 +88,7 @@ L'adattamento automatico delle tabelle al contenuto tramite Aspose.Words per .NE
 ## Domande frequenti
 
 ### Posso adattare automaticamente solo colonne specifiche in una tabella?
-IL`AutoFit` metodo si applica all'intera tabella. Se hai bisogno di regolare colonne specifiche, potresti dover impostare manualmente le larghezze delle colonne.
+ IL`AutoFit` metodo si applica all'intera tabella. Se hai bisogno di regolare colonne specifiche, potresti dover impostare manualmente le larghezze delle colonne.
 
 ### Cosa succede se il mio documento contiene più tabelle?
  È possibile scorrere tutte le tabelle nel documento utilizzando`doc.GetChildNodes(NodeType.Table, true)` e applicare l'adattamento automatico se necessario.

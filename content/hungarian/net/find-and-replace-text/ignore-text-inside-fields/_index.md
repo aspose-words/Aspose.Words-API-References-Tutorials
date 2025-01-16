@@ -31,7 +31,7 @@ using System.Text.RegularExpressions;
 
 ## 1. lépés: Hozzon létre egy új dokumentumot és Buildert
 
- Először inicializáljon egy új Word-dokumentumot, és a`DocumentBuilder`dokumentumkészítés megkönnyítésére szolgáló objektum:
+ Először inicializáljon egy új Word-dokumentumot, és a`DocumentBuilder` dokumentumkészítés megkönnyítésére szolgáló objektum:
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -59,7 +59,7 @@ Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## 5. lépés: Módosított dokumentumszöveg kiadása
+## 5. lépés: A módosított dokumentumszöveg kiadása
 
 Töltse le és nyomtassa ki a módosított szöveget a végrehajtott cserék ellenőrzéséhez:
 ```csharp
@@ -93,4 +93,4 @@ Igen, az Aspose.Words támogatja a .NET Core-t, amely biztosítja a platformok k
  Látogatás[Aspose.Words Dokumentáció](https://reference.aspose.com/words/net/) átfogó útmutatókért, API-referenciákért és kódpéldákért.
 
 ### Hogyan kaphatok technikai támogatást az Aspose.Wordshez?
- Technikai segítségért látogassa meg a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) ahol közzéteheti kérdéseit, és kapcsolatba léphet a közösséggel.
+ Technikai segítségért keresse fel a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) ahol közzéteheti kérdéseit, és kapcsolatba léphet a közösséggel.

@@ -41,7 +41,7 @@ Document doc = new Document(dataDir + "Revisions.docx");
 
  I det här utdraget, ersätt`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument. Denna kod kommer att ladda`Revisions.docx` fil i`doc` objekt.
 
-## Steg 2: Öppna Revisionssamlingen
+## Steg 2: Öppna Revisions Collection
 
  Låt oss nu komma åt versionerna i dokumentet. Aspose.Words tillhandahåller en`Revisions` samling som vi kan iterera igenom.
 
@@ -106,4 +106,4 @@ Absolut! Du kan använda det med alla .NET-språk, inklusive C#, VB.NET och ASP.
  Ja, Aspose.Words för .NET kräver en licens för full funktionalitet. Du kan köpa en[här](https://purchase.aspose.com/buy) eller få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
 ### Var kan jag hitta mer dokumentation om Aspose.Words för .NET?
-Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
+ Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).

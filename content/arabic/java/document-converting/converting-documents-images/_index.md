@@ -60,7 +60,7 @@ try {
 ```
 
 توضيح:
-- ال`try-catch` تضمن الكتلة أن أي أخطاء تحدث أثناء تحميل المستند يتم اكتشافها وإدارتها بشكل مناسب.
+-  ال`try-catch`تضمن الكتلة أن أي أخطاء تحدث أثناء تحميل المستند يتم اكتشافها وإدارتها بشكل مناسب.
 
 ## الخطوة 2: تهيئة ImageSaveOptions
 
@@ -71,7 +71,7 @@ try {
 `ImageSaveOptions` هي فئة تسمح لك بتحديد كيفية حفظ المستند كصورة.
 
 ```java
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 ```
 
 توضيح:

@@ -35,7 +35,7 @@ using Aspose.Words.DigitalSignatures;
 
 ## الخطوة 1: إعداد مشروعك
 
-أولاً وقبل كل شيء، قم بإعداد مشروع Visual Studio. افتح Visual Studio وقم بإنشاء تطبيق وحدة تحكم C# جديد. قم بتسميته بشيء وصفي مثل "SignEncryptedWordDoc".
+أولاً، قم بإعداد مشروع Visual Studio. افتح Visual Studio وقم بإنشاء تطبيق وحدة تحكم C# جديد. قم بتسميته بشيء وصفي مثل "SignEncryptedWordDoc".
 
 ## الخطوة 2: إضافة Aspose.Words إلى مشروعك
 

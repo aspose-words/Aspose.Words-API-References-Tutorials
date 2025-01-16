@@ -38,7 +38,7 @@ Ensuite, nous allons créer une tâche d'impression pour imprimer notre document
 ```java
 // Créez un travail d’impression pour imprimer notre document.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Initialiser un ensemble d’attributs avec le nombre de pages du document.
+// Initialiser un ensemble d’attributs avec le nombre de pages du document.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Transmettez les paramètres de l’imprimante ainsi que les autres paramètres au document à imprimer.
@@ -60,7 +60,7 @@ string dataDir = "Your Document Directory";
 Document doc = new Document(dataDir + "Rendering.docx");
 // Créez un travail d’impression pour imprimer notre document.
 PrinterJob pj = PrinterJob.getPrinterJob();
-//Initialiser un ensemble d’attributs avec le nombre de pages du document.
+// Initialiser un ensemble d’attributs avec le nombre de pages du document.
 PrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
 attributes.add(new PageRanges(1, doc.getPageCount()));
 // Transmettez les paramètres de l’imprimante ainsi que les autres paramètres au document à imprimer.
@@ -90,7 +90,7 @@ class MultipagePrintDocument implements Printable
         mAttributeSet = attributes;
     }
     public int print(Graphics g, PageFormat pf, int page) {
-        // Les indices de début et de fin de page tels que définis dans l'ensemble d'attributs.
+        //Les indices de début et de fin de page tels que définis dans l'ensemble d'attributs.
         int[][] pageRanges = ((PageRanges) mAttributeSet.get(PageRanges.class)).getMembers();
         int fromPage = pageRanges[0][0] - 1;
         int toPage = pageRanges[0][1] - 1;
@@ -108,7 +108,7 @@ class MultipagePrintDocument implements Printable
         int startPage = pagesOnCurrentSheet + fromPage;
         // Sélectionnez le numéro de la dernière page à imprimer sur cette feuille de papier.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
-        //Parcourez les pages sélectionnées à partir de la page actuelle stockée pour calculer
+        // Parcourez les pages sélectionnées à partir de la page actuelle stockée pour calculer
         // dernière page.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Calculer les indices de colonne et de ligne.
@@ -126,7 +126,7 @@ class MultipagePrintDocument implements Printable
                 // La valeur de retour utile est l'échelle à laquelle la page a été rendue.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
-                // Dessinez les bordures de la page (la vignette de la page peut être plus petite que la vignette
+                //Dessinez les bordures de la page (la vignette de la page peut être plus petite que la vignette
                 // taille de l'espace réservé).
                 if (mPrintPageBorders) {
                     // Obtenez la taille réelle à 100 % de la page en points.
@@ -148,7 +148,7 @@ class MultipagePrintDocument implements Printable
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
         // Définissez le nombre de colonnes et de lignes sur la feuille pour le
-        //Document orienté paysage.
+        // Document orienté paysage.
         switch (pagesPerSheet) {
             case 16:
                 size = new Dimension(4, 4);
@@ -188,7 +188,7 @@ Félicitations ! Vous avez réussi à imprimer un document Word à l'aide d'Asp
 
 ### Q1 : Puis-je imprimer des pages spécifiques d’un document à l’aide d’Aspose.Words pour Java ?
 
- Oui, vous pouvez spécifier la plage de pages lors de l'impression d'un document. Dans l'exemple de code, nous avons utilisé`attributes.add(new PageRanges(1, doc.getPageCount()))` pour imprimer toutes les pages. Vous pouvez ajuster la plage de pages selon vos besoins.
+ Oui, vous pouvez spécifier la plage de pages lors de l'impression d'un document. Dans l'exemple de code, nous avons utilisé`attributes.add(new PageRanges(1, doc.getPageCount()))`pour imprimer toutes les pages. Vous pouvez ajuster la plage de pages selon vos besoins.
 
 ### Q2 : Aspose.Words pour Java est-il adapté à l’impression par lots ?
 

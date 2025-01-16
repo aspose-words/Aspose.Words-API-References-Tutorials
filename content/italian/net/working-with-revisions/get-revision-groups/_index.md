@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Revision;
 ```
 
-Ora scomponiamo il processo di estrazione dei gruppi di revisione da un documento Word in semplici passaggi.
+Ora, scomponiamo il processo di estrazione dei gruppi di revisione da un documento Word in semplici passaggi.
 
 ## Passaggio 1: inizializzare il documento
 

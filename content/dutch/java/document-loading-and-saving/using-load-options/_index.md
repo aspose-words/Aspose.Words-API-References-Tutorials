@@ -43,7 +43,7 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.setConvertShapeToOfficeMath(true);
 
 Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 ```
 
  Deze code laat zien hoe u vormen kunt converteren naar Office Math-objecten tijdens het laden van een document.`setConvertShapeToOfficeMath(true)`methode maakt deze conversie mogelijk.
@@ -136,7 +136,7 @@ public void convertShapeToOfficeMath() throws Exception {
 		loadOptions.setConvertShapeToOfficeMath(true);
 	}
 	Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 }
 @Test
 public void setMsWordVersion() throws Exception {
@@ -210,4 +210,4 @@ In deze tutorial hebben we ons verdiept in verschillende aspecten van het werken
 
 ###  Wat is het doel van de`setTempFolder` method in Load Options?
 
-De`setTempFolder`Met deze methode kunt u de map opgeven waarin tijdelijke bestanden worden opgeslagen tijdens de documentverwerking.
+ De`setTempFolder`Met deze methode kunt u de map opgeven waarin tijdelijke bestanden worden opgeslagen tijdens de documentverwerking.

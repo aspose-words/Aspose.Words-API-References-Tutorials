@@ -78,7 +78,7 @@ Nu är det dags att definiera egenskaperna för X-axeln. Detta inkluderar att st
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; // Mätt i displayenheter för Y-axeln (hundratals).
+xAxis.CrossesAt = 3; //Mätt i displayenheter för Y-axeln (hundratals).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;

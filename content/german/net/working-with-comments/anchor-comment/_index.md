@@ -127,7 +127,7 @@ Ankerkommentare dienen zum Hervorheben und Kommentieren bestimmter Textabschnitt
 Ja, Sie können demselben Textabschnitt mehrere Kommentare hinzufügen, indem Sie mehrere Kommentarbereiche definieren.
 
 ### Ist die Nutzung von Aspose.Words für .NET kostenlos?
-Aspose.Words für .NET bietet eine kostenlose Testversion, die Sie herunterladen können[Hier](https://releases.aspose.com/) Für den vollen Funktionsumfang können Sie eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
+ Aspose.Words für .NET bietet eine kostenlose Testversion, die Sie herunterladen können[Hier](https://releases.aspose.com/) Für den vollen Funktionsumfang können Sie eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
 
 ### Kann ich das Erscheinungsbild der Kommentare anpassen?
 Während sich Aspose.Words auf die Funktionalität konzentriert, wird das Erscheinungsbild von Kommentaren in Word-Dokumenten im Allgemeinen von Word selbst gesteuert.

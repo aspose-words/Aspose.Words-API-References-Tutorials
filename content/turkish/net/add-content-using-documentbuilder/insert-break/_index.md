@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Adım 3: DocumentBuilder'ı Başlatma
 
-The`DocumentBuilder` boya fırçanız gibidir. Belgenize içerik eklemenize yardımcı olur. Hadi başlatalım.
+ The`DocumentBuilder` boya fırçanız gibidir. Belgenize içerik eklemenize yardımcı olur. Hadi başlatalım.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ Eğlenceli değil miydi? Aspose.Words for .NET ile Word belgelerini düzenlemek 
 Aspose.Words for .NET, Word belgeleriyle programatik olarak çalışmak için güçlü bir kütüphanedir. Belgeleri oluşturmaktan ve düzenlemekten farklı biçimler arasında dönüştürmeye kadar çok çeşitli özellikleri destekler.
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
- Evet, bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) özelliklerini keşfetmek için. Uzun süreli kullanım için,[lisans satın al](https://purchase.aspose.com/buy).
+Evet, bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) özelliklerini keşfetmek için. Uzun süreli kullanım için,[lisans satın al](https://purchase.aspose.com/buy).
 
 ### Aspose.Words için nasıl destek alabilirim?
  Destek alabilirsiniz[Aspose topluluk forumu](https://forum.aspose.com/c/words/8)Soru sormak ve deneyimlerinizi paylaşmak için harika bir yer.

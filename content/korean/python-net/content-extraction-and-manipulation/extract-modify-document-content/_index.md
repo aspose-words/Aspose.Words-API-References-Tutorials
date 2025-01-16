@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## 텍스트 수정
-
-런이나 문단의 텍스트를 직접 설정하여 텍스트를 수정할 수 있습니다.
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## 서식 작업
 
 Aspose.Words를 사용하면 다음과 같은 서식 스타일로 작업할 수 있습니다.

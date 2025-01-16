@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich ein Word-Dokument mit einem angepassten Tabellenlayout erstellt und mithilfe von Aspose.Words für .NET ein Wasserzeichen hinzugefügt. Dieses Tutorial sollte eine klare Schritt-für-Schritt-Anleitung bieten, die Ihnen hilft, jeden Teil des Prozesses zu verstehen. Mit diesen Fähigkeiten können Sie nun programmgesteuert anspruchsvollere und angepasstere Word-Dokumente erstellen.
+Und da haben Sie es! Sie haben erfolgreich ein Word-Dokument mit einem angepassten Tabellenlayout erstellt und mithilfe von Aspose.Words für .NET ein Wasserzeichen hinzugefügt. Dieses Tutorial soll Ihnen eine klare Schritt-für-Schritt-Anleitung bieten, die Ihnen hilft, jeden Teil des Prozesses zu verstehen. Mit diesen Fähigkeiten können Sie nun programmgesteuert anspruchsvollere und angepasstere Word-Dokumente erstellen.
 
 ## Häufig gestellte Fragen
 

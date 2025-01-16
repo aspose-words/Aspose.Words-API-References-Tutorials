@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 Установка пароля не является обязательной, но она может обеспечить дополнительный уровень безопасности вашего документа перед его изменением.
 
 ```csharp
-//Введите пароль длиной до 15 символов.
+// Введите пароль длиной до 15 символов.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ### Что произойдет, если документ уже имеет другой тип защиты?
 
-The`doc.Protect(ProtectionType.NoProtection)` Метод гарантирует снятие всех видов защиты с документа.
+ The`doc.Protect(ProtectionType.NoProtection)` Метод гарантирует снятие всех видов защиты с документа.
 
 ### Есть ли способ узнать, доступен ли документ только для чтения, прежде чем снять ограничение?
 

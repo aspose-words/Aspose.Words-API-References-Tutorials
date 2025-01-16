@@ -49,7 +49,7 @@ Ezután konfigurálja a dokumentum mentési beállításait. Itt adhat meg kül�
 
 ```java
 HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.setSaveFormat(SaveFormat.EPUB);
+saveOptions.setSaveFormat();
 saveOptions.setEncoding(StandardCharsets.UTF_8);
 ```
 

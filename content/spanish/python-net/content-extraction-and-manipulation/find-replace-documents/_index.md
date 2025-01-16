@@ -18,7 +18,7 @@ Antes de sumergirnos en las técnicas avanzadas, asegúrese de tener los siguien
 
 1.  Instalación de Python: Asegúrese de que Python esté instalado en su sistema. Puede descargarlo desde[aquí](https://www.python.org/downloads/).
 
-2. Aspose.Words para Python: Necesita tener instalado Aspose.Words para Python. Puede descargarlo desde[aquí](https://releases.aspose.com/words/python/).
+2.  Aspose.Words para Python: Necesita tener instalado Aspose.Words para Python. Puede descargarlo desde[aquí](https://releases.aspose.com/words/python/).
 
 3. Preparación del documento: tenga listo un documento de Word en el que desee realizar operaciones de búsqueda y reemplazo.
 
@@ -118,4 +118,4 @@ Sí, puede utilizar caracteres comodín y expresiones regulares para realizar op
 
 ### ¿Puedo reemplazar texto y mantener un registro de los cambios realizados?
 
- Sí, puedes realizar un seguimiento de los cambios mediante el`revision` Característica de Aspose.Words que le permite realizar un seguimiento de todas las modificaciones realizadas en el documento.
+ Sí, puedes realizar un seguimiento de los cambios mediante el`revision`Característica de Aspose.Words que le permite realizar un seguimiento de todas las modificaciones realizadas en el documento.

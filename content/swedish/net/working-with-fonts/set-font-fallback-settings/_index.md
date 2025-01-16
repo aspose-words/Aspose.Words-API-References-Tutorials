@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Steg 3: Konfigurera teckensnittsinställningar
 
-Skapa en ny`FontSettings` objekt och läs in alternativa teckensnittsinställningar från en XML-fil. Den här XML-filen innehåller reglerna för reservtypsnitt.
+ Skapa en ny`FontSettings` objekt och läs in alternativa teckensnittsinställningar från en XML-fil. Den här XML-filen innehåller reglerna för reservtypsnitt.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

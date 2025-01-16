@@ -16,7 +16,7 @@ Dans le monde numérique d'aujourd'hui, la gestion des documents est un aspect e
 
 Avant de nous plonger dans la gestion des autorisations des documents, commençons par configurer Aspose.Words pour Java. Suivez ces étapes pour commencer :
 
-1.  Téléchargez Aspose.Words pour Java : Visitez[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) pour télécharger la dernière version d'Aspose.Words pour Java.
+1.  Téléchargez Aspose.Words pour Java : Visitez[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)pour télécharger la dernière version d'Aspose.Words pour Java.
 
 2. Installer Aspose.Words pour Java : après avoir téléchargé la bibliothèque, suivez les instructions d'installation pour la configurer dans votre environnement de développement Java.
 
@@ -52,21 +52,12 @@ Voici un exemple d'extrait de code Java pour définir les autorisations des docu
 // Charger le document
 Document doc = new Document("sample.docx");
 
-// Définir le contrôle d'accès
-AccessControl control = doc.getProtection().getProtectionType();
-control.setEditingAllowed(true);
-control.setFormFieldsAllowed(true);
-
-// Appliquer la protection des documents
-doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
-
-// Enregistrer le document
-doc.save("protected_document.docx");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS);
 ```
 
-## Questions fréquemment posées (FAQ)
+## FAQ
 
-## Comment puis-je supprimer la protection d’un document ?
+### Comment puis-je supprimer la protection d’un document ?
 
 Pour supprimer la protection d'un document, ouvrez simplement le document protégé et, s'il est protégé par un mot de passe, indiquez le mot de passe correct. Ensuite, utilisez Aspose.Words pour Java pour supprimer la protection comme suit :
 
@@ -76,23 +67,23 @@ doc.unprotect();
 doc.save("unprotected_document.docx");
 ```
 
-## Puis-je définir des autorisations pour des utilisateurs spécifiques ?
+### Puis-je définir des autorisations pour des utilisateurs spécifiques ?
 
 Oui, Aspose.Words pour Java vous permet de définir des autorisations pour des utilisateurs ou des groupes spécifiques. Vous pouvez définir qui peut accéder au document et le modifier.
 
-## Est-il possible de crypter un document avec plusieurs mots de passe ?
+### Est-il possible de crypter un document avec plusieurs mots de passe ?
 
 Non, Aspose.Words pour Java prend en charge le cryptage par mot de passe unique. Vous pouvez définir un mot de passe pour protéger le document.
 
-## Comment puis-je vérifier les autorisations d'un document ?
+### Comment puis-je vérifier les autorisations d'un document ?
 
 Vous pouvez utiliser Aspose.Words pour Java pour vérifier les autorisations d'un document en examinant ses paramètres de protection et ses options de contrôle d'accès.
 
-## Puis-je automatiser la gestion des autorisations des documents ?
+### Puis-je automatiser la gestion des autorisations des documents ?
 
 Absolument ! Vous pouvez intégrer Aspose.Words for Java dans vos applications pour automatiser la gestion des autorisations des documents, ce qui en fait un élément transparent de votre flux de travail documentaire.
 
-## Que faire si j'oublie le mot de passe du document ?
+### Que faire si j'oublie le mot de passe du document ?
 
 Si vous oubliez le mot de passe du document, il n'y a aucun moyen de le récupérer. Assurez-vous de conserver une trace de vos mots de passe dans un endroit sûr.
 

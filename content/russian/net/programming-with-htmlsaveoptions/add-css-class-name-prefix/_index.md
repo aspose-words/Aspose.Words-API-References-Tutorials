@@ -117,7 +117,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
  Да, вы можете настраивать префикс каждый раз при сохранении документа, изменяя`CssClassNamePrefix` свойство.
 
 ### Поддерживает ли этот метод встроенный CSS?
-The`CssClassNamePrefix`свойство работает с внешним CSS. Для встроенного CSS вам понадобится другой подход.
+ The`CssClassNamePrefix`свойство работает с внешним CSS. Для встроенного CSS вам понадобится другой подход.
 
 ### Как включить другие параметры сохранения HTML?
  Вы можете настроить различные свойства`HtmlSaveOptions` для настройки вашего HTML-вывода. Проверьте[документация](https://reference.aspose.com/words/net/) для более подробной информации.

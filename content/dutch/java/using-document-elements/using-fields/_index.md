@@ -242,7 +242,7 @@ Broncode van klasse HandleMergeField
             // Niets doen.
         }
         /// <samenvatting>
-        /// Dit wordt aangeroepen wanneer de samenvoegfunctie het samenvoegveld Image:XXX in het document tegenkomt.
+        /// Dit wordt aangeroepen wanneer de samenvoegfunctie een samenvoegveld Afbeelding:XXX in het document tegenkomt.
         /// U hebt de mogelijkheid om een Image-object, een bestandsnaam of een stream te retourneren die de afbeelding bevat.
         /// </samenvatting>
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs e) throws Exception

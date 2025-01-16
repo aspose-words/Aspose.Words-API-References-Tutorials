@@ -105,7 +105,7 @@ foreach (Section section in doc.Sections)
 
 ### Entfernt diese Methode alle Arten von Kopf- und Fußzeilen?
 
- Ja,`ClearHeadersFooters()` Entfernt alle Kopf- und Fußzeilen, einschließlich der Kopf- und Fußzeilen der ersten Seite sowie der ungeraden und geraden Seiten.
+ Ja,`ClearHeadersFooters()` Entfernt alle Kopf- und Fußzeilen, einschließlich der ersten Seite sowie der ungeraden und geraden Kopf- und Fußzeilen.
 
 ### Ist Aspose.Words für .NET mit allen Versionen von Word-Dokumenten kompatibel?
 

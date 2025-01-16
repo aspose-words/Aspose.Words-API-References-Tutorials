@@ -9,7 +9,7 @@ url: /pl/net/programming-with-document-options-and-settings/set-page-setup-and-s
 ---
 ## Wstęp
 
-Jeśli chodzi o manipulację dokumentem, kluczowe jest prawidłowe skonfigurowanie układu strony i formatowania sekcji. Niezależnie od tego, czy przygotowujesz raport, tworzysz broszurę czy formatujesz powieść, układ tworzy scenę dla czytelności i profesjonalizmu. Dzięki Aspose.Words dla .NET masz do dyspozycji potężne narzędzie do precyzyjnego dostrojenia tych ustawień programowo. W tym samouczku pokażemy, jak ustawić ustawienia strony i formatowanie sekcji w dokumencie Word za pomocą Aspose.Words dla .NET.
+Jeśli chodzi o manipulację dokumentem, kluczowe jest prawidłowe skonfigurowanie układu strony i formatowania sekcji. Niezależnie od tego, czy przygotowujesz raport, tworzysz broszurę czy formatujesz powieść, układ tworzy scenę dla czytelności i profesjonalizmu. Dzięki Aspose.Words dla .NET masz do dyspozycji potężne narzędzie do precyzyjnego dostrojenia tych ustawień programowo. W tym samouczku pokażemy, jak ustawić układ strony i formatowanie sekcji w dokumencie Word za pomocą Aspose.Words dla .NET.
 
 ## Wymagania wstępne
 

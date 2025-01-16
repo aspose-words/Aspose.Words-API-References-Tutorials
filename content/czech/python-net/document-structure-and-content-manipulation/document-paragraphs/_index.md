@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## Základní formátování textu
 
- Formátování textu v dokumentu aplikace Word je nezbytné pro zdůraznění důležitých bodů a zlepšení čitelnosti. Aspose.Words umožňuje aplikovat různé možnosti formátování, jako např**bold**, *italic*, podtržení a velikost písma:
+Formátování textu v dokumentu aplikace Word je nezbytné pro zdůraznění důležitých bodů a zlepšení čitelnosti. Aspose.Words vám umožňuje použít různé možnosti formátování, jako je tučné písmo, kurzíva, podtržení a velikost písma:
 
 ```python
 # Apply basic text formatting
@@ -173,9 +173,7 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 této komplexní příručce jsme prozkoumali možnosti Aspose.Words pro Python při formátování odstavců a textu v dokumentech Word. Pomocí této výkonné knihovny mohou vývojáři bezproblémově automatizovat formátování dokumentů a zajistit tak jejich obsahu profesionální a uhlazený vzhled.
 
----
-
-## Nejčastější dotazy
+## FAQ
 
 ### Jak nainstaluji Aspose.Words pro Python?
 Chcete-li nainstalovat Aspose.Words pro Python, použijte následující příkaz:

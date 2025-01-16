@@ -48,7 +48,7 @@ Aspose.Words propose diverses options d'enregistrement d'image pour contrôler l
 
 ```java
 // Initialiser les options d'enregistrement de l'image
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 ```
 
 ## Étape 4 : Rendre les pages du document sous forme d'images

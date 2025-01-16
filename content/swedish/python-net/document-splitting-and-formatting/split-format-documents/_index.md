@@ -19,10 +19,10 @@ Innan vi dyker in i handledningen, se till att du har följande förutsättninga
 Det första steget är att ladda dokumentet som du vill dela och formatera. Använd följande kodavsnitt för att uppnå detta:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## Steg 2: Dela upp dokumentet i sektioner
@@ -41,10 +41,10 @@ Låt oss nu säga att du vill tillämpa specifik formatering på ett avsnitt. L�
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## Steg 4: Spara dokumentet
@@ -55,14 +55,20 @@ Efter att ha delat och formaterat dokumentet är det dags att spara ändringarna
 document.save("path/to/save/updated_document.docx")
 ```
 
-## Vanliga frågor
+## Slutsats
+
+Aspose.Words för Python tillhandahåller en omfattande uppsättning verktyg för att effektivt dela upp och formatera dokument efter dina behov. Genom att följa stegen som beskrivs i denna handledning och använda de medföljande källkodsexemplen kan du sömlöst hantera dina dokument och presentera dem professionellt.
+
+I den här handledningen har vi täckt grunderna i dokumentdelning, formatering och tillhandahållit lösningar på vanliga frågor. Nu är det din tur att utforska och experimentera med funktionerna i Aspose.Words för Python för att ytterligare förbättra ditt arbetsflöde för dokumenthantering.
+
+## FAQ's
 
 ### Hur kan jag dela upp ett dokument i flera filer?
 Du kan dela upp ett dokument i flera filer genom att iterera genom avsnitten och spara varje avsnitt som ett separat dokument. Här är ett exempel:
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ Ja, du kan använda olika formatering på stycken i ett avsnitt. Iterera genom s
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### Hur ändrar jag typsnittet för ett specifikt avsnitt?
@@ -84,7 +90,7 @@ for paragraph in section.paragraphs:
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### Är det möjligt att ta bort ett specifikt avsnitt från dokumentet?
@@ -93,8 +99,3 @@ for paragraph in section.paragraphs:
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## Slutsats
-Aspose.Words för Python tillhandahåller en omfattande uppsättning verktyg för att effektivt dela upp och formatera dokument efter dina behov. Genom att följa stegen som beskrivs i denna handledning och använda de medföljande källkodsexemplen kan du sömlöst hantera dina dokument och presentera dem professionellt.
-
-den här handledningen har vi täckt grunderna i dokumentdelning, formatering och tillhandahållit lösningar på vanliga frågor. Nu är det din tur att utforska och experimentera med funktionerna i Aspose.Words för Python för att ytterligare förbättra ditt arbetsflöde för dokumenthantering.

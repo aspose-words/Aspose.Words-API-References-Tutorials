@@ -17,7 +17,7 @@ Než se vrhneme na to, co potřebujete, ujistěte se, že máte vše, co potřeb
 
 1.  Aspose.Words pro .NET: Můžete[stáhnout](https://releases.aspose.com/words/net/) nejnovější verzi.
 2. Vývojové prostředí .NET: Visual Studio funguje perfektně.
-3. Dokument aplikace Word: Ujistěte se, že je zakódován ve formátu, se kterým se zabýváte, například UTF-7.
+3. Dokument aplikace Word: Ujistěte se, že je zakódován ve formátu, se kterým pracujete, například UTF-7.
 
 ## Importovat jmenné prostory
 

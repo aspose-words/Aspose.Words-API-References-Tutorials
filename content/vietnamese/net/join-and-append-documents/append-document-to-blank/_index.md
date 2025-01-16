@@ -122,7 +122,7 @@ Có, bạn có thể thêm nhiều tài liệu bằng cách gọi nhiều lần`
 
 ### Điều gì xảy ra nếu tài liệu nguồn có định dạng khác?
 
-Các`ImportFormatMode.KeepSourceFormatting` đảm bảo định dạng của tài liệu nguồn được giữ nguyên khi thêm vào.
+ Các`ImportFormatMode.KeepSourceFormatting` đảm bảo định dạng của tài liệu nguồn được giữ nguyên khi thêm vào.
 
 ### Tôi có cần giấy phép để sử dụng Aspose.Words không?
 

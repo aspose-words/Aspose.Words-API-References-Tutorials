@@ -44,10 +44,7 @@ for (Revision revision : doc.getRevisions()) {
 
 ```java
 //すべての修正を承認
-doc.acceptAllRevisions();
-
-//インデックスで特定のリビジョンを受け入れる
-doc.acceptRevision(0);
+doc.getRevisions().get(0).accept();
 ```
 
 ## 変更を拒否する
@@ -56,10 +53,7 @@ doc.acceptRevision(0);
 
 ```java
 //すべての修正を拒否
-doc.rejectAllRevisions();
-
-//インデックスで特定のリビジョンを拒否する
-doc.rejectRevision(1);
+doc.getRevisions().get(1).reject();
 ```
 
 ## ドキュメントを保存する

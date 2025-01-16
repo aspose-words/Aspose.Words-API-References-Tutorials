@@ -9,7 +9,7 @@ url: /pl/net/programming-with-document-properties/convert-between-measurement-un
 ---
 ## Wstęp
 
-Cześć! Czy jesteś programistą pracującym z dokumentami Worda przy użyciu Aspose.Words dla .NET? Jeśli tak, często możesz potrzebować ustawić marginesy, nagłówki lub stopki w różnych jednostkach miary. Konwersja między jednostkami, takimi jak cale i punkty, może być trudna, jeśli nie znasz funkcjonalności biblioteki. W tym kompleksowym samouczku przeprowadzimy Cię przez proces konwersji między jednostkami miary przy użyciu Aspose.Words dla .NET. Zanurzmy się i uprośćmy te konwersje!
+Cześć! Czy jesteś programistą pracującym z dokumentami Worda przy użyciu Aspose.Words dla .NET? Jeśli tak, często musisz ustawiać marginesy, nagłówki lub stopki w różnych jednostkach miary. Konwersja między jednostkami, takimi jak cale i punkty, może być trudna, jeśli nie znasz funkcjonalności biblioteki. W tym kompleksowym samouczku przeprowadzimy Cię przez proces konwersji między jednostkami miary przy użyciu Aspose.Words dla .NET. Zanurzmy się i uprośćmy te konwersje!
 
 ## Wymagania wstępne
 
@@ -82,7 +82,7 @@ Zapisuje dokument z określonymi marginesami i odległościami w punktach.
 
 ## Wniosek
 
-I masz! Udało Ci się pomyślnie przekonwertować i ustawić marginesy i odległości w dokumencie Word za pomocą Aspose.Words dla .NET. Postępując zgodnie z tymi krokami, możesz łatwo obsługiwać różne konwersje jednostek, dzięki czemu proces dostosowywania dokumentu będzie dziecinnie prosty. Eksperymentuj z różnymi ustawieniami i odkrywaj rozległe funkcjonalności, jakie oferuje Aspose.Words. Miłego kodowania!
+I masz! Udało Ci się przekonwertować i ustawić marginesy i odległości w dokumencie Word za pomocą Aspose.Words dla .NET. Postępując zgodnie z tymi krokami, możesz łatwo obsługiwać różne konwersje jednostek, dzięki czemu proces dostosowywania dokumentu będzie dziecinnie prosty. Eksperymentuj z różnymi ustawieniami i odkrywaj rozległe funkcjonalności, jakie oferuje Aspose.Words. Miłego kodowania!
 
 ## Najczęściej zadawane pytania
 
@@ -99,4 +99,4 @@ Chociaż możesz używać Aspose.Words bez licencji, niektóre zaawansowane funk
  Tak, możesz dostosować marginesy i inne ustawienia dla różnych sekcji, korzystając z`Section` klasa.
 
 ### Jakie inne funkcje oferuje Aspose.Words?
- Aspose.Words obsługuje szeroki zakres funkcji, w tym konwersję dokumentów, scalanie korespondencji i rozbudowane opcje formatowania. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Aspose.Words obsługuje szeroki zakres funkcji, w tym konwersję dokumentów, scalanie korespondencji i rozbudowane opcje formatowania. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.

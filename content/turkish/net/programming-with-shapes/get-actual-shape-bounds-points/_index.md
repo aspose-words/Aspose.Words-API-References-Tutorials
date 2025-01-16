@@ -69,7 +69,7 @@ Console.Write("\nGets the actual bounds of the shape in points: ");
 Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
-The`GetShapeRenderer` yöntem, şekil için bir işleyici sağlar ve`BoundsInPoints` bize tam ölçüleri verir.
+ The`GetShapeRenderer` yöntem, şekil için bir işleyici sağlar ve`BoundsInPoints` bize tam ölçüleri verir.
 
 ## Çözüm
 

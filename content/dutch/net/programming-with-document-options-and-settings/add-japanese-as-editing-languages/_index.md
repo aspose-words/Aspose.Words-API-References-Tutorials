@@ -40,7 +40,7 @@ Nadat u deze naamruimten hebt geïmporteerd, kunt u beginnen met coderen!
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-De`LoadOptions` klasse kunt u aanpassen hoe documenten worden geladen. Hier beginnen we pas net.
+ De`LoadOptions` klasse kunt u aanpassen hoe documenten worden geladen. Hier beginnen we pas net.
 
 ## Stap 2: Japans toevoegen als bewerkingstaal
 

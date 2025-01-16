@@ -10,7 +10,7 @@ url: /fr/java/document-merging/merging-documents-documentbuilder/
 
 ## Introduction à la fusion de documents avec DocumentBuilder
 
-Dans le monde du traitement de documents, Aspose.Words pour Java est un outil puissant pour manipuler et gérer les documents. L'une de ses principales fonctionnalités est la possibilité de fusionner des documents de manière transparente à l'aide de DocumentBuilder. Dans ce guide étape par étape, nous verrons comment y parvenir à l'aide d'exemples de code, en veillant à ce que vous puissiez exploiter cette capacité pour améliorer vos flux de travail de gestion de documents.
+Dans le monde du traitement de documents, Aspose.Words pour Java est un outil puissant pour la manipulation et la gestion de documents. L'une de ses principales fonctionnalités est la possibilité de fusionner des documents de manière transparente à l'aide de DocumentBuilder. Dans ce guide étape par étape, nous verrons comment y parvenir à l'aide d'exemples de code, en veillant à ce que vous puissiez exploiter cette capacité pour améliorer vos flux de travail de gestion de documents.
 
 ## Prérequis
 

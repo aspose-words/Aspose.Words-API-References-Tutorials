@@ -23,7 +23,7 @@ Než se ponoříme do specifik stylů a formátování tabulek dokumentů, ujist
 2. Import knihovny: Importujte knihovnu Aspose.Words do skriptu Python pomocí následujícího příkazu importu:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. Načíst dokument: Načtěte existující dokument nebo vytvořte nový pomocí Aspose.Words API.
@@ -35,7 +35,7 @@ Chcete-li vytvořit a vložit tabulky do dokumentů pomocí Aspose.Words pro Pyt
 1.  Vytvořte tabulku: Použijte`DocumentBuilder` třídy pro vytvoření nové tabulky a zadání počtu řádků a sloupců.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ Chcete-li vytvořit a vložit tabulky do dokumentů pomocí Aspose.Words pro Pyt
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. Výplň buněk: Přidejte výplň do buněk pro lepší rozestupy.
@@ -80,32 +80,8 @@ Chcete-li vytvořit a vložit tabulky do dokumentů pomocí Aspose.Words pro Pyt
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Styling tabulek s Aspose.Words
-
-Aspose.Words pro Python nabízí řadu možností stylingu, aby byly vaše tabulky vizuálně přitažlivé:
-
-1. Styly tabulek: Použijte předdefinované styly tabulek pro dosažení profesionálního vzhledu.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. Barva pozadí buňky: Změňte barvu pozadí buňky, abyste zvýraznili konkrétní data.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. Formátování písma: Upravte styl, velikost a barvu písma pro lepší čitelnost.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## Slučování a dělení buněk pro komplexní rozvržení
@@ -115,30 +91,14 @@ Vytváření složitých rozložení tabulek často vyžaduje sloučení a rozd�
 1. Sloučit buňky: Sloučením více buněk vytvoříte jednu větší buňku.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. Rozdělit buňky: Rozdělit buňky zpět na jejich jednotlivé složky.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## Nastavení výšky a šířky řádků a sloupců
-
-Dolaďte rozměry řádků a sloupců pro vyvážené rozložení tabulky:
-
-1. Upravit výšku řádku: Upravte výšku řádku podle obsahu.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. Upravit šířku sloupce: Automaticky upraví šířku sloupce tak, aby odpovídala obsahu.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## Přidání ohraničení a stínování do tabulek
@@ -148,13 +108,13 @@ Vylepšete vzhled tabulky přidáním ohraničení a stínování:
 1. Ohraničení: Přizpůsobte ohraničení tabulek a buněk.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. Stínování: Použijte stínování na buňky pro vizuálně přitažlivý efekt.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## Práce s obsahem buňky a zarovnáním
@@ -171,7 +131,7 @@ Efektivně spravujte obsah buněk a zarovnání pro lepší čitelnost:
 2. Zarovnání textu: Zarovnejte text buňky podle potřeby.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## Manipulace se záhlavími a zápatím tabulky
@@ -188,26 +148,10 @@ Zahrňte záhlaví a zápatí do svých tabulek pro lepší kontext:
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## Automatická úprava rozvržení stolu
-
-Zajistěte, aby se rozložení tabulky automaticky přizpůsobilo obsahu:
-
-1. Automaticky přizpůsobit oknu: Umožňuje, aby se tabulka vešla na šířku stránky.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. Automatická změna velikosti buněk: Povolí automatickou změnu velikosti buněk podle obsahu.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## Export tabulek do různých formátů
 
 Jakmile je tabulka připravena, můžete ji exportovat do různých formátů, jako je PDF nebo DOCX:
@@ -215,26 +159,20 @@ Jakmile je tabulka připravena, můžete ji exportovat do různých formátů, j
 1. Uložit jako PDF: Uložte dokument s tabulkou jako soubor PDF.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. Uložit jako DOCX: Uložte dokument jako soubor DOCX.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## Odstraňování problémů a tipy pro efektivní správu tabulek
-
-- Pokud jsou tabulky zkreslené, zkontrolujte, zda nejsou správné šířky sloupců nebo výšky řádků.
-- Otestujte vykreslování tabulky v různých formátech, abyste zajistili konzistenci.
-- U složitých rozvržení naplánujte sloučení a rozdělení buněk pečlivě.
-
+	
 ## Závěr
 
 Aspose.Words pro Python nabízí komplexní sadu nástrojů pro vytváření, stylování a formátování tabulek dokumentů. Podle kroků uvedených v tomto článku můžete efektivně spravovat tabulky v dokumentech, přizpůsobovat jejich vzhled a exportovat je do různých formátů. Využijte sílu Aspose.Words k vylepšení prezentací dokumentů a poskytněte svým čtenářům jasné, vizuálně přitažlivé informace.
 
-## Nejčastější dotazy
+## FAQ
 
 ### Jak nainstaluji Aspose.Words pro Python?
 

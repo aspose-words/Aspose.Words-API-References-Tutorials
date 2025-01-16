@@ -74,7 +74,7 @@ builder.getCellFormat().clearFormatting();
 
 builder.insertCell();
 
-//Bu satırın ilk hücresi için daha büyük kenarlıklar oluşturun.
+// Bu satırın ilk hücresi için daha büyük kenarlıklar oluşturun.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
@@ -169,7 +169,7 @@ Aspose.Words for Java, belge düzenleme için kapsamlı özellikler sunan sağla
 
 ### 1. Varsayılan seçeneklerde bulunmayan özel tablo stilleri kullanabilir miyim?
 
-Evet, Aspose.Words for Java kullanarak tablolarınıza özel stiller tanımlayabilir ve uygulayabilirsiniz.[belgeleme](https://reference.aspose.com/words/java/) Özel stiller oluşturma hakkında daha fazla bilgi için.
+ Evet, Aspose.Words for Java kullanarak tablolarınıza özel stiller tanımlayabilir ve uygulayabilirsiniz.[belgeleme](https://reference.aspose.com/words/java/) Özel stiller oluşturma hakkında daha fazla bilgi için.
 
 ### 2. Tablolara koşullu biçimlendirmeyi nasıl uygulayabilirim?
 

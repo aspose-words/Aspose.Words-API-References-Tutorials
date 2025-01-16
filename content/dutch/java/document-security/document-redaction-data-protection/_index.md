@@ -18,7 +18,7 @@ In deze handleiding leggen we uit hoe u gevoelige informatie uit Word-documenten
 
 Voordat we beginnen met Aspose.Words voor Java, moeten we onze ontwikkelomgeving instellen. Volg deze stappen:
 
-1.  Download en installeer Aspose.Words voor Java: Bezoek[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) om de nieuwste versie van Aspose.Words voor Java te downloaden.
+1.  Download en installeer Aspose.Words voor Java: Bezoek[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)om de nieuwste versie van Aspose.Words voor Java te downloaden.
 
 2. Integreer Aspose.Words in uw project: voeg de Aspose.Words JAR-bestanden toe aan uw Java-project.
 

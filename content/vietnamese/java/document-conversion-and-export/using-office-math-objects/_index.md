@@ -90,7 +90,7 @@ Các đối tượng Office Math trong Aspose.Words for Java cho phép bạn bi�
 
 ### Tôi có thể căn chỉnh các phương trình Office Math theo cách khác nhau trong tài liệu của mình không?
 
- Có, bạn có thể kiểm soát sự căn chỉnh của các phương trình Office Math. Sử dụng`setJustification` phương pháp để chỉ định các tùy chọn căn chỉnh như trái, phải hoặc giữa.
+ Có, bạn có thể kiểm soát sự căn chỉnh của các phương trình Office Math. Sử dụng`setJustification`phương pháp để chỉ định các tùy chọn căn chỉnh như trái, phải hoặc giữa.
 
 ### Aspose.Words for Java có phù hợp để xử lý các tài liệu toán học phức tạp không?
 

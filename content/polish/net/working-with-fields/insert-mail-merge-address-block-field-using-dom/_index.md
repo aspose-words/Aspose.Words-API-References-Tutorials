@@ -122,4 +122,4 @@ Blok adresu korespondencji seryjnej to pole w programie Word, które umożliwia 
  Możesz uzyskać wsparcie od społeczności Aspose i zespołu technicznego[Tutaj](https://forum.aspose.com/c/words/8).
 
 ### Czy mogę zautomatyzować inne aspekty dokumentów Word za pomocą Aspose.Words?
-Oczywiście! Aspose.Words dla .NET oferuje szeroki zakres funkcji do automatyzacji generowania, edytowania, konwersji i innych czynności w dokumentach. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+Oczywiście! Aspose.Words dla .NET oferuje szeroki zakres funkcji do automatyzacji generowania, edytowania, konwersji i innych czynności w dokumentach. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.

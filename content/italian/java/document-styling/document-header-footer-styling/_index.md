@@ -87,7 +87,7 @@ Per garantire un'esperienza fluida durante la definizione dello stile delle inte
 
 ### Come posso rimuovere intestazioni o piè di pagina da sezioni specifiche?
 
-È possibile rimuovere intestazioni o piè di pagina da sezioni specifiche accedendo a`HeaderFooter` oggetti e impostando il loro contenuto su null. Ad esempio:
+ È possibile rimuovere intestazioni o piè di pagina da sezioni specifiche accedendo a`HeaderFooter` oggetti e impostando il loro contenuto su null. Ad esempio:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Posso aggiungere campi personalizzati, come titoli di documenti, alle intestazioni o ai piè di pagina?
 
-Sì, puoi aggiungere campi personalizzati alle intestazioni o ai piè di pagina. Crea un`Run` elemento e inserirlo nel contenuto dell'intestazione o del piè di pagina, fornendo il testo desiderato. Personalizza la formattazione come necessario.
+ Sì, puoi aggiungere campi personalizzati alle intestazioni o ai piè di pagina. Crea un`Run` elemento e inserirlo nel contenuto dell'intestazione o del piè di pagina, fornendo il testo desiderato. Personalizza la formattazione come necessario.
 
 ### Aspose.Words per Java è compatibile con diversi formati di documenti?
 

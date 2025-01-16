@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 はい、複数のコメント範囲を定義することで、同じテキスト セクションに複数のコメントを追加できます。
 
 ### Aspose.Words for .NET は無料で使用できますか?
-Aspose.Words for .NETは無料トライアルを提供しており、ダウンロードすることができます。[ここ](https://releases.aspose.com/)フル機能を利用するにはライセンスを購入してください[ここ](https://purchase.aspose.com/buy).
+ Aspose.Words for .NETは無料トライアルを提供しており、ダウンロードすることができます。[ここ](https://releases.aspose.com/)フル機能を利用するにはライセンスを購入してください[ここ](https://purchase.aspose.com/buy).
 
 ### コメントの外観をカスタマイズできますか?
 Aspose.Words は機能性に重点を置いていますが、Word 文書内のコメントの外観は通常、Word 自体によって制御されます。

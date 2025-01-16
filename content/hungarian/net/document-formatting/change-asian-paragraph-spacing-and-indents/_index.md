@@ -59,7 +59,7 @@ ParagraphFormat format = doc.FirstSection.Body.FirstParagraph.ParagraphFormat;
 Most állítsuk be a bal, jobb és az első sor behúzását karakteregységekkel. Ez döntő fontosságú az ázsiai tipográfia számára, mivel biztosítja a szöveg megfelelő igazítását.
 
 ```csharp
-format.CharacterUnitLeftIndent = 10;  // A ParagrafusFormat.LeftIndent frissítve lesz
+format.CharacterUnitLeftIndent = 10;  // A bekezdésforma.LeftIndent frissítésre kerül
 format.CharacterUnitRightIndent = 10; // A ParagrafusFormat.RightIndent frissítésre kerül
 format.CharacterUnitFirstLineIndent = 20;  // ParagrafusFormat.FirstLineIndent frissítésre kerül
 ```

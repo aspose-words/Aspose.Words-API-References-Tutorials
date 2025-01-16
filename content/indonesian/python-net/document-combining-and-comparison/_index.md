@@ -30,12 +30,8 @@ Di akhir tutorial ini, Anda akan dibekali dengan keterampilan untuk menggabungka
 ## Tutorial Menggabungkan dan Membandingkan Dokumen
 ### [Menggabungkan dan Membandingkan Dokumen di Word](./merge-compare-documents/)
 Gabungkan dan bandingkan dokumen Word dengan mudah menggunakan Aspose.Words untuk Python. Pelajari cara memanipulasi dokumen, menyorot perbedaan, dan mengotomatiskan tugas.
-### [Memanfaatkan Kekuatan Penanda Dokumen](./document-bookmarks/)
-Pelajari cara memanfaatkan kekuatan penanda dokumen menggunakan Aspose.Words untuk Python. Buat, kelola, dan navigasikan melalui penanda dengan panduan langkah demi langkah dan contoh kode.
 ### [Menavigasi Rentang Dokumen untuk Pengeditan Presisi](./document-ranges/)
 Pelajari cara menavigasi dan mengedit rentang dokumen dengan presisi menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk manipulasi konten yang efisien.
-### [Memanfaatkan Tag Dokumen Terstruktur (SDT) untuk Data Terstruktur](./document-sdts/)
-Manfaatkan Kekuatan Structured Document Tags (SDT) untuk Mengatur Konten. Pelajari Cara Menggunakan Aspose.Words untuk Python guna Menerapkan SDT.
 ### [Menerapkan Gaya dan Tema untuk Mengubah Dokumen](./apply-styles-themes-documents/)
 Tingkatkan estetika dokumen dengan Aspose.Words untuk Python. Terapkan gaya, tema, dan kustomisasi dengan mudah.
 ### [Membuat Daftar Isi yang Komprehensif untuk Dokumen Word](./generate-table-contents/)

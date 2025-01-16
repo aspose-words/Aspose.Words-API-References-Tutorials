@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 
 ## Závěr
 
-A tady to máte! Pomocí těchto kroků můžete snadno aktualizovat poslední vytištěnou vlastnost v dokumentu PDF pomocí Aspose.Words for .NET. Tato metoda zajišťuje, že váš proces správy dokumentů zůstane efektivní a aktuální. Vyzkoušejte to a uvidíte, jak vám to zjednoduší pracovní postup.
+tady to máte! Pomocí těchto kroků můžete snadno aktualizovat poslední vytištěnou vlastnost v dokumentu PDF pomocí Aspose.Words for .NET. Tato metoda zajišťuje, že váš proces správy dokumentů zůstane efektivní a aktuální. Vyzkoušejte to a uvidíte, jak vám to zjednoduší pracovní postup.
 
 ## FAQ
 
@@ -80,7 +80,7 @@ Aktualizace poslední vlastnosti tisku pomáhá při sledování využití dokum
 Ano, Aspose.Words for .NET umožňuje aktualizovat různé vlastnosti dokumentu, jako je autor, název, předmět a další.
 
 ### Je Aspose.Words for .NET zdarma?
-Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/). Pro rozšířené použití byste si museli zakoupit licenci.
+ Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/). Pro rozšířené použití byste si museli zakoupit licenci.
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
-Podrobnou dokumentaci najdete na Aspose.Words pro .NET[zde](https://reference.aspose.com/words/net/).
+ Podrobnou dokumentaci najdete na Aspose.Words pro .NET[zde](https://reference.aspose.com/words/net/).

@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Krok 5: Vložte hypertextový odkaz
 
- Nyní vložíme hypertextový odkaz pomocí`InsertHyperlink`metoda. Tato metoda přebírá tři parametry: zobrazovaný text, adresu URL a logickou hodnotu označující, zda má být odkaz formátován jako hypertextový odkaz.
+ Nyní vložíme hypertextový odkaz pomocí`InsertHyperlink` metoda. Tato metoda přebírá tři parametry: zobrazovaný text, adresu URL a logickou hodnotu označující, zda má být odkaz formátován jako hypertextový odkaz.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", nepravda);
@@ -106,7 +106,7 @@ Vkládání hypertextových odkazů do dokumentu aplikace Word pomocí Aspose.Wo
 
 ### Mohu vložit více hypertextových odkazů do jednoho dokumentu?
 
- Ano, můžete vložit více hypertextových odkazů opakováním`InsertHyperlink`metoda pro každý odkaz.
+ Ano, můžete vložit více hypertextových odkazů opakováním`InsertHyperlink` metoda pro každý odkaz.
 
 ### Jak změním barvu hypertextového odkazu?
 
@@ -114,11 +114,11 @@ Vkládání hypertextových odkazů do dokumentu aplikace Word pomocí Aspose.Wo
 
 ### Mohu k obrázku přidat hypertextový odkaz?
 
- Ano, můžete použít`InsertHyperlink` metoda v kombinaci s`InsertImage` pro přidání hypertextových odkazů k obrázkům.
+ Ano, můžete použít`InsertHyperlink` metoda v kombinaci s`InsertImage` přidat hypertextové odkazy na obrázky.
 
 ### Co se stane, když je adresa URL neplatná?
 
-The`InsertHyperlink` metoda neověřuje adresy URL, takže je důležité se před vložením ujistit, že adresy URL jsou správné.
+ The`InsertHyperlink` metoda neověřuje adresy URL, takže je důležité se před vložením ujistit, že adresy URL jsou správné.
 
 ### Je možné odstranit hypertextový odkaz poté, co byl vložen?
 

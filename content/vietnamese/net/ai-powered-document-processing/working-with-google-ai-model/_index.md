@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-Các`Document` lớp từ Aspose.Words cho phép bạn tải các tệp Word vào bộ nhớ. Đảm bảo rằng tên tệp khớp với các tài liệu thực tế trong thư mục của bạn, nếu không bạn sẽ gặp lỗi không tìm thấy tệp!
+ Các`Document` lớp từ Aspose.Words cho phép bạn tải các tệp Word vào bộ nhớ. Đảm bảo rằng tên tệp khớp với các tài liệu thực tế trong thư mục của bạn, nếu không bạn sẽ gặp lỗi không tìm thấy tệp!
 
 ## Bước 3: Lấy khóa API
 

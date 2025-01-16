@@ -2,7 +2,7 @@
 title: Utilisation des listes dans Aspose.Words pour Java
 linktitle: Utilisation des listes
 second_title: API de traitement de documents Java Aspose.Words
-description: Apprenez à utiliser les listes dans Aspose.Words pour Java avec ce didacticiel étape par étape. Organisez et formatez vos documents efficacement.
+description: Apprenez à utiliser les listes dans Aspose.Words pour Java avec ce didacticiel étape par étape. Organisez et formatez efficacement vos documents.
 type: docs
 weight: 18
 url: /fr/java/using-document-elements/using-lists/

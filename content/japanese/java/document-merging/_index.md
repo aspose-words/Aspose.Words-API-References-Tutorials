@@ -27,12 +27,10 @@ Aspose.Words を使用したドキュメント結合チュートリアルでは�
 ### [ドキュメント結合の使用](./using-document-merging/)
 Aspose.Words for Java を使用して Word 文書をシームレスに結合する方法を学びます。わずか数ステップで効率的に結合、フォーマット、競合の処理ができます。今すぐ始めましょう!
 ### [ドキュメントの結合と複製](./combining-cloning-documents/)
-Aspose.Words を使用して、Java でドキュメントを簡単に結合および複製する方法を学びます。このステップ バイ ステップ ガイドでは、知っておく必要のあるすべての内容について説明します。
+Aspose.Words を使用して Java でドキュメントを簡単に結合および複製する方法を学びます。このステップ バイ ステップ ガイドでは、知っておく必要のあるすべての内容について説明します。
 ### [ドキュメントの結合と追加](./joining-appending-documents/)
 Aspose.Words for Java を使用してドキュメントを結合および追加する方法を学びます。効率的なドキュメント操作のためのコード例を含むステップバイステップ ガイド。
 ### [文書の相違点を比較する](./comparing-documents-for-differences/)
 Java で Aspose.Words を使用してドキュメントの相違点を比較する方法を学びます。ステップバイステップのガイドにより、正確なドキュメント管理が保証されます。
 ### [DocumentBuilder によるドキュメントの結合](./merging-documents-documentbuilder/)
 Aspose.Words for Java を使用して Word 文書を操作する方法を学びます。Java でプログラム的に文書を作成、編集、結合、変換します。
-### [ドキュメントの分割と抽出](./document-splitting-extraction/)
-Aspose.Words for Java を使用して、ドキュメントを簡単に分割および抽出する方法を学びます。ステップバイステップのガイダンスでドキュメント処理タスクを簡素化します。

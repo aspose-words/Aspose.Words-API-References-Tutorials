@@ -72,14 +72,6 @@ Bandingkan dokumen sumber dengan dokumen yang dimodifikasi:
 comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
 ```
 
-## Menyorot Perbedaan
-
-Sorot perbedaan antara dokumen-dokumen berikut:
-
-```python
-comparison.highlight_changes()
-```
-
 ## Menyimpan Hasil Perbandingan
 
 Simpan hasil perbandingan ke file baru:

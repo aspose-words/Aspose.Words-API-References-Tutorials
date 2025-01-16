@@ -16,7 +16,7 @@ url: /el/python-net/document-structure-and-content-manipulation/document-lists/
 
 ## Ρύθμιση του περιβάλλοντος
 
-Πριν ξεκινήσουμε τη δημιουργία και τη διαχείριση λιστών, βεβαιωθείτε ότι έχετε εγκαταστήσει τη βιβλιοθήκη Aspose.Words for Python. Μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/python/) . Επιπλέον, ανατρέξτε στην τεκμηρίωση του API στη διεύθυνση[αυτόν τον σύνδεσμο](https://reference.aspose.com/words/python-net/) για αναλυτικές πληροφορίες.
+ Πριν ξεκινήσουμε τη δημιουργία και τη διαχείριση λιστών, βεβαιωθείτε ότι έχετε εγκαταστήσει τη βιβλιοθήκη Aspose.Words for Python. Μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/python/) . Επιπλέον, ανατρέξτε στην τεκμηρίωση του API στη διεύθυνση[αυτόν τον σύνδεσμο](https://reference.aspose.com/words/python-net/) για αναλυτικές πληροφορίες.
 
 ## Δημιουργία λιστών με κουκκίδες
 
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]

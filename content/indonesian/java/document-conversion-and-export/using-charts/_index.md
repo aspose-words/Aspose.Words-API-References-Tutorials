@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Ubah sumbu X menjadi kategori, bukan tanggal.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Diukur dalam satuan tampilan sumbu Y (ratusan).
+xAxis.setCrossesAt(3.0); //Diukur dalam satuan tampilan sumbu Y (ratusan).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ Dalam tutorial ini, kami telah mempelajari cara bekerja dengan bagan menggunakan
 
 ### Bagaimana cara memformat label data dengan format angka khusus?
 
- Anda dapat memformat label data dengan mengakses`DataLabels` properti seri dan pengaturan kode format yang diinginkan menggunakan`getNumberFormat().setFormatCode()`.
+Anda dapat memformat label data dengan mengakses`DataLabels` properti seri dan pengaturan kode format yang diinginkan menggunakan`getNumberFormat().setFormatCode()`.
 
 ### Bagaimana cara menyesuaikan properti sumbu dalam bagan?
 
@@ -139,7 +139,7 @@ Dalam tutorial ini, kami telah mempelajari cara bekerja dengan bagan menggunakan
 
 ### Bagaimana cara membuat jenis grafik lain seperti grafik sebar atau area?
 
-Anda dapat membuat berbagai jenis grafik dengan menentukan jenis yang sesuai`ChartType` saat memasukkan grafik menggunakan`builder.insertChart(ChartType.TYPE, width, height)`.
+ Anda dapat membuat berbagai jenis grafik dengan menentukan jenis yang sesuai`ChartType` saat memasukkan grafik menggunakan`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Bagaimana cara menyembunyikan sumbu grafik?
 

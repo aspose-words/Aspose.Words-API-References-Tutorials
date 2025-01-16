@@ -26,12 +26,8 @@ Zvládněte zpracování textových dokumentů pomocí Aspose.Words pro Python. 
 Vytvoření hlavního dokumentu pomocí Aspose.Words pro Python. Vytvářejte dynamické dokumenty, přizpůsobujte formátování a zefektivněte zpracování textových dokumentů.
 ### [Automatizace slov](./word-automation/)
 Automatizujte úlohy zpracování textu pomocí Aspose.Words pro Python. Zjednodušte správu dokumentů a zvyšte efektivitu automatizace aplikace Word.
-### [Inteligence dokumentů](./document-intelligence/)
-Odemkněte cenné poznatky z vašich dokumentů pomocí Aspose.Words pro Python's Document Intelligence. Automatizujte analýzu, extrakci textu a klasifikaci.
 ### [Konverze dokumentu](./document-conversion/)
 Efektivně převádějte dokumenty mezi formáty pomocí Aspose.Words pro Python. Zjednodušte zpracování textových dokumentů a zjednodušte si úkoly správy dokumentů. 
-### [Ochrana dokumentů](./document-protection/)
-Zabezpečte své dokumenty pomocí Aspose.Words pro Python! Implementujte šifrování hesel, uživatelská oprávnění a digitální podpisy pro robustní ochranu dokumentů.
 ### [Manipulace se strukturou a obsahem dokumentu](./document-structure-and-content-manipulation/)
 Prozkoumejte výukové programy Aspose.Words pro Python a .NET se zaměřením na strukturu dokumentu a manipulaci s obsahem. Naučte se, jak efektivně procházet, extrahovat a upravovat prvky dokumentu. Poskytly příklady zdrojového kódu.
 ### [Extrakce a manipulace s obsahem](./content-extraction-and-manipulation/)
@@ -42,7 +38,5 @@ Objevte komplexní návody na kombinování a porovnávání dokumentů pomocí 
 Prozkoumejte výukové programy Aspose.Words o dělení a formátování dokumentů v Pythonu a .NET. Naučte se efektivně rozdělovat a formátovat dokumenty a vylepšit tak své úlohy zpracování dokumentů. 
 ### [Možnosti a nastavení dokumentu](./document-options-and-settings/)
 Prozkoumejte výukové programy Aspose.Words o možnostech a nastavení dokumentu v Pythonu a .NET. Naučte se optimalizovat vytváření a formátování dokumentů pomocí podrobných pokynů a příkladů zdrojového kódu.
-### [Vizualizace a formátování dat](./data-visualization-and-formatting/)
-Objevte výukové programy Aspose.Words o vizualizaci a formátování dat v Pythonu a .NET. Naučte se efektivně prezentovat data, vytvářet úžasné sestavy a programově formátovat dokumenty.
 ### [Tabulky a formátování](./tables-and-formatting/)
 Ponořte se do výukových programů Aspose.Words o tabulkách a formátování v aplikacích Python a .NET. Naučte se vytvářet, upravovat a upravovat tabulky pro vizuálně působivé dokumenty. 

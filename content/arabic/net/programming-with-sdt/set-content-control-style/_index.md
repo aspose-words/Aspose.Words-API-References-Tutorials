@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
-ال`Styles` ممتلكات`Document` تتيح لنا الفئة الوصول إلى جميع الأنماط المتوفرة في المستند. نستخدم`StyleIdentifier.Quote`لتحديد نمط الاقتباس.
+ ال`Styles` ممتلكات`Document` تتيح لنا الفئة الوصول إلى جميع الأنماط المتوفرة في المستند. نستخدم`StyleIdentifier.Quote`لتحديد نمط الاقتباس.
 
 ## الخطوة 4: تطبيق النمط على علامة المستند المنظم
 

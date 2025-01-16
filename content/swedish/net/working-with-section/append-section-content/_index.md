@@ -120,7 +120,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ## 4. Hur får jag support för Aspose.Words för .NET?
 
-Du kan få stöd genom att besöka[Aspose supportforum](https://forum.aspose.com/c/words/8).
+ Du kan få stöd genom att besöka[Aspose supportforum](https://forum.aspose.com/c/words/8).
 
 ## 5. Kan jag manipulera andra typer av dokument med Aspose.Words för .NET?
 

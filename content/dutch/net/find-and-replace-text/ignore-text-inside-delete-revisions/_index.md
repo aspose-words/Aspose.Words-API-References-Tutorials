@@ -17,7 +17,7 @@ Voordat u met deze tutorial aan de slag gaat, moet u ervoor zorgen dat u aan de 
 - Basiskennis van de programmeertaal C#.
 - Visual Studio op uw systeem geïnstalleerd.
 -  Aspose.Words voor .NET-bibliotheek geïntegreerd in uw project. U kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
-- Toegang tot Aspose.Words voor .NET[documentatie](https://reference.aspose.com/words/net/) ter referentie.
+-  Toegang tot Aspose.Words voor .NET[documentatie](https://reference.aspose.com/words/net/) ter referentie.
 
 ## Naamruimten importeren
 
@@ -38,7 +38,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 2: Tekst invoegen en revisies bijhouden
 
-U kunt tekst in het document invoegen en revisies bijhouden door het bijhouden van revisies te starten en te stoppen:
+kunt tekst in het document invoegen en revisies bijhouden door het bijhouden van revisies te starten en te stoppen:
 ```csharp
 builder.Writeln("Deleted");
 builder.Write("Text");
@@ -67,7 +67,7 @@ Console.WriteLine(doc.GetText());
 
 ## Conclusie
 
-Beheersing van bijgehouden revisies in Word-documenten met Aspose.Words voor .NET stelt ontwikkelaars in staat om documentbewerkingstaken efficiënt te automatiseren. Door gebruik te maken van de uitgebreide API en robuuste functies kunt u naadloos revisieverwerking integreren in uw toepassingen, wat de productiviteit en documentbeheermogelijkheden verbetert.
+Beheersing van bijgehouden revisies in Word-documenten met Aspose.Words voor .NET stelt ontwikkelaars in staat om documentbewerkingstaken efficiënt te automatiseren. Door gebruik te maken van de uitgebreide API en robuuste functies, kunt u naadloos revisieverwerking integreren in uw toepassingen, wat de productiviteit en documentbeheermogelijkheden verbetert.
 
 ## Veelgestelde vragen
 
@@ -75,7 +75,7 @@ Beheersing van bijgehouden revisies in Word-documenten met Aspose.Words voor .NE
 Bijgehouden revisies in Word-documenten zijn wijzigingen die in een document zijn aangebracht en die voor anderen zichtbaar zijn via markeringen. Deze wijzigingen worden vaak gebruikt voor gezamenlijke bewerking en revisie.
 
 ### Hoe kan ik Aspose.Words voor .NET integreren in mijn Visual Studio-project?
-U kunt Aspose.Words voor .NET integreren door de bibliotheek te downloaden van de Aspose-website en ernaar te verwijzen in uw Visual Studio-project.
+kunt Aspose.Words voor .NET integreren door de bibliotheek te downloaden van de Aspose-website en ernaar te verwijzen in uw Visual Studio-project.
 
 ### Kan ik bijgehouden revisies programmatisch terugdraaien met Aspose.Words voor .NET?
 Ja, u kunt bijgehouden revisies programmatisch beheren en terugdraaien met Aspose.Words voor .NET, waardoor u nauwkeurige controle krijgt over de workflows voor documentbewerking.
@@ -84,4 +84,4 @@ Ja, u kunt bijgehouden revisies programmatisch beheren en terugdraaien met Aspos
 Aspose.Words voor .NET is geoptimaliseerd voor het efficiënt verwerken van grote documenten, inclusief documenten met uitgebreide bijgehouden revisies.
 
 ### Waar kan ik meer bronnen en ondersteuning vinden voor Aspose.Words voor .NET?
- kunt uitgebreide documentatie bekijken en ondersteuning krijgen van de Aspose.Words voor .NET-community op[Aspose.Woorden Forum](https://forum.aspose.com/c/words/8).
+ U kunt uitgebreide documentatie bekijken en ondersteuning krijgen van de Aspose.Words voor .NET-community op[Aspose.Woorden Forum](https://forum.aspose.com/c/words/8).

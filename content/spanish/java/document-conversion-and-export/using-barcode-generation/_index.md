@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Establecer generador de código de barras
 
- Configure un generador de código de barras personalizado utilizando el`FieldOptions` clase. En este ejemplo, asumimos que ha implementado una`CustomBarcodeGenerator` Clase para generar el código de barras. Reemplazar`CustomBarcodeGenerator` con su lógica de generación de código de barras actual:
+ Configure un generador de código de barras personalizado utilizando el`FieldOptions` clase. En este ejemplo, asumimos que ha implementado una`CustomBarcodeGenerator`Clase para generar el código de barras. Reemplazar`CustomBarcodeGenerator` con su lógica de generación de código de barras actual:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

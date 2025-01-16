@@ -12,7 +12,7 @@ Bővíteni szeretné dokumentumformázási készségeit Java segítségével? Eb
 
 ## Bevezetés
 
-A dokumentumok formázása kulcsfontosságú szerepet játszik a professzionális megjelenésű dokumentumok létrehozásában. A fejlécek és láblécek alapvető összetevők, amelyek kontextust és szerkezetet biztosítanak a tartalomhoz. Az Aspose.Words for Java segítségével, amely egy hatékony API a dokumentumkezeléshez, könnyedén testreszabhatja a fejléceket és lábléceket, hogy megfeleljenek az Ön egyedi igényeinek.
+dokumentumok formázása kulcsfontosságú szerepet játszik a professzionális megjelenésű dokumentumok létrehozásában. A fejlécek és láblécek alapvető összetevők, amelyek kontextust és szerkezetet biztosítanak a tartalomhoz. Az Aspose.Words for Java segítségével, amely egy hatékony API a dokumentumkezeléshez, könnyedén testreszabhatja a fejléceket és lábléceket, hogy megfeleljenek az Ön egyedi igényeinek.
 
 Ebben az útmutatóban megvizsgáljuk a dokumentumfejlécek és -láblécek Aspose.Words for Java használatával történő stílusának különböző szempontjait. Az alapvető formázástól a fejlett technikákig mindent lefedünk, és gyakorlati kódpéldákkal szolgálunk az egyes lépések illusztrálására. A cikk végére birtokában lesz a csiszolt és tetszetős dokumentumok létrehozásához szükséges ismereteknek és készségeknek.
 
@@ -40,7 +40,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 #### Lábléc létrehozása:
 
-lábléc létrehozása hasonló megközelítést követ:
+A lábléc létrehozása hasonló megközelítést követ:
 
 ```java
 Footer footer = section.getHeadersFooters().add(HeaderFooterType.FOOTER_PRIMARY);
@@ -87,7 +87,7 @@ A dokumentum-fejlécek és -láblécek zökkenőmentes kialakítása érdekében
 
 ### Hogyan távolíthatom el a fejléceket vagy lábléceket bizonyos szakaszokból?
 
-Eltávolíthatja a fejléceket vagy lábléceket adott szakaszokból, ha eléri a`HeaderFooter` objektumokat, és tartalmukat nullra állítjuk. Például:
+ Eltávolíthatja a fejléceket vagy lábléceket adott szakaszokból, ha eléri a`HeaderFooter` objektumokat, és tartalmukat nullra állítjuk. Például:
 
 ```java
 header.removeAllChildren();
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Hozzáadhatok egyéni mezőket, például dokumentumcímeket a fejlécekhez vagy láblécekhez?
 
-Igen, egyéni mezőket is hozzáadhat a fejlécekhez vagy láblécekhez. Hozzon létre a`Run` elemet, és illessze be a fejléc vagy lábléc tartalmába, megadva a kívánt szöveget. Igény szerint testreszabhatja a formázást.
+ Igen, egyéni mezőket is hozzáadhat a fejlécekhez vagy láblécekhez. Hozzon létre a`Run` elemet, és illessze be a fejléc vagy lábléc tartalmába, megadva a kívánt szöveget. Igény szerint testreszabhatja a formázást.
 
 ### Az Aspose.Words for Java kompatibilis a különböző dokumentumformátumokkal?
 

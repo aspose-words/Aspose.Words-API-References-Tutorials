@@ -150,7 +150,7 @@ As opções de limpeza no Aspose.Words para Java são configurações que permit
 
 ###  Qual é o propósito do`REMOVE_UNUSED_REGIONS` cleanup option?
 
-O`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` A opção é usada para remover regiões em um documento que não têm dados correspondentes durante o processo de mala direta. Ela ajuda a manter seu documento organizado, livrando-se de espaços reservados não utilizados.
+ O`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` A opção é usada para remover regiões em um documento que não têm dados correspondentes durante o processo de mala direta. Ela ajuda a manter seu documento organizado, livrando-se de espaços reservados não utilizados.
 
 ### Posso remover linhas de tabela vazias de um documento usando o Aspose.Words para Java?
 
@@ -166,7 +166,7 @@ O`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` A opção é usada para remover
 
 ###  Qual é a diferença entre`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-O`REMOVE_EMPTY_FIELDS` opção remove campos de mesclagem que não têm dados ou estão vazios durante o processo de mala direta. Por outro lado, a`REMOVE_UNUSED_FIELDS`opção remove campos de mesclagem que não são preenchidos com dados durante a mesclagem. A escolha entre eles depende se você deseja remover campos sem conteúdo ou aqueles que não são usados na operação de mesclagem específica.
+ O`REMOVE_EMPTY_FIELDS` opção remove campos de mesclagem que não têm dados ou estão vazios durante o processo de mala direta. Por outro lado, a`REMOVE_UNUSED_FIELDS`opção remove campos de mesclagem que não são preenchidos com dados durante a mesclagem. A escolha entre eles depende se você deseja remover campos sem conteúdo ou aqueles que não são usados na operação de mesclagem específica.
 
 ### Como posso habilitar a remoção de parágrafos com sinais de pontuação?
 

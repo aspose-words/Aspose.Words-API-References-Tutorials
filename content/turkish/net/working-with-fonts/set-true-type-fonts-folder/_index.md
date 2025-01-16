@@ -69,7 +69,7 @@ doc.FontSettings = fontSettings;
 
 ## Adım 5: Belgeyi Kaydedin
 
-Son olarak, belgeyi kaydedeceğiz. Bunu çeşitli formatlarda kaydedebilirsiniz, ancak bu eğitim için onu PDF olarak kaydedeceğiz.
+Son olarak, belgeyi kaydedeceğiz. Çeşitli formatlarda kaydedebilirsiniz, ancak bu eğitim için onu PDF olarak kaydedeceğiz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");

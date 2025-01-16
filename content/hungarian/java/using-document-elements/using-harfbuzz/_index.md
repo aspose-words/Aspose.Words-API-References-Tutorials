@@ -59,7 +59,7 @@ string dataDir = "Your Document Directory";
 string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
 // Amikor beállítjuk a szövegformáló gyárat, az elrendezés elkezdi használni az OpenType szolgáltatásait.
-// Egy példány tulajdonság a BasicTextShaperCache objektumcsomagolást adja vissza a HarfBuzzTextShaperFactory-t.
+// Egy példány tulajdonság a BasicTextShaperCache objektumcsomagolást adja vissza a HarfBuzzTextShaperFactory-ban.
 doc.getLayoutOptions().setTextShaperFactory(HarfBuzzTextShaperFactory.getInstance());
 doc.save(outPath + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```

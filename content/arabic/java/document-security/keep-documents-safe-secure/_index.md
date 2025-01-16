@@ -84,14 +84,7 @@ ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 الآن بعد أن قمنا بتحميل المستند، فلننتقل إلى تطبيق التشفير عليه. يوفر Aspose.Words for Java طريقة مباشرة لتعيين تشفير المستند:
 
 ```java
-// تعيين كلمة مرور لفتح المستند
-doc.getWriteProtection().setPassword("yourPassword");
-
-// تعيين خوارزمية التشفير (اختياري)
 doc.getWriteProtection().setEncryptionType(EncryptionType.RC4);
-
-// حفظ المستند المشفر
-doc.save("path/to/encrypted/document.docx");
 ```
 
 ## 7. حماية عناصر مستند محددة
@@ -99,16 +92,22 @@ doc.save("path/to/encrypted/document.docx");
 في بعض الأحيان، قد ترغب فقط في حماية أجزاء معينة من المستند، مثل الرؤوس أو التذييلات أو فقرات معينة. يتيح لك Aspose.Words تحقيق هذا المستوى من التفصيل في حماية المستند:
 
 ```java
-// حماية قسم معين (حماية القراءة فقط)
-Section section = doc.getSections().get(0);
-section.getProtect().setProtectionType(ProtectionType.READ_ONLY);
+doc.protect(ProtectionType.READ_ONLY, "password");
+doc.protect(ProtectionType.ALLOW_ONLY_FORM_FIELDS, "password");
 
-// حماية فقرة محددة (السماح بتحرير حقول النموذج فقط)
-Paragraph paragraph = doc.getFirstSection().getBody().getFirstParagraph();
-paragraph.getFormFields().setFormFieldsReadonly(true);
+or use editable ranges:
 
-// حفظ المستند المحمي
-doc.save("path/to/protected/document.docx");
+Document doc = new Document();
+doc.protect(ProtectionType.READ_ONLY, "MyPassword");
+
+DocumentBuilder builder = new DocumentBuilder(doc);
+builder.writeln("Hello world! Since we have set the document's protection level to read-only," +
+        " we cannot edit this paragraph without the password.");
+
+//تسمح لنا النطاقات القابلة للتحرير بترك أجزاء من المستندات المحمية مفتوحة للتحرير.
+EditableRangeStart editableRangeStart = builder.startEditableRange();
+builder.writeln("This paragraph is inside an editable range, and can be edited.");
+EditableRangeEnd editableRangeEnd = builder.endEditableRange();
 ```
 
 ## 8. تطبيق التوقيعات الرقمية
@@ -116,14 +115,21 @@ doc.save("path/to/protected/document.docx");
 إن إضافة التوقيعات الرقمية إلى مستندك يمكن أن يضمن صحته وسلامته. إليك كيفية تطبيق التوقيع الرقمي باستخدام Aspose.Words for Java:
 
 ```java
-// تحميل ملف الشهادة
-FileInputStream certificateStream = new FileInputStream("path/to/certificate.pfx");
+CertificateHolder certificateHolder = CertificateHolder.create(getMyDir() + "morzal.pfx", "aw");
 
-// توقيع الوثيقة بالشهادة
-DigitalSignatureUtil.sign(doc, certificateStream, "yourPassword");
+// قم بإنشاء تعليق وتاريخ وكلمة مرور فك التشفير والتي سيتم تطبيقها مع توقيعنا الرقمي الجديد.
+SignOptions signOptions = new SignOptions();
+{
+    signOptions.setComments("Comment");
+    signOptions.setSignTime(new Date());
+    signOptions.setDecryptionPassword("docPassword");
+}
 
-// حفظ الوثيقة الموقعة
-doc.save("path/to/signed/document.docx");
+// تعيين اسم ملف النظام المحلي للمستند الإدخالي غير الموقع، واسم ملف الإخراج للنسخة الجديدة الموقعة رقمياً.
+String inputFileName = getMyDir() + "Encrypted.docx";
+String outputFileName = getArtifactsDir() + "DigitalSignatureUtil.DecryptionPassword.docx";
+
+DigitalSignatureUtil.sign(inputFileName, outputFileName, certificateHolder, signOptions);
 ```
 
 ## 9. وضع علامة مائية على مستنداتك
@@ -150,70 +156,39 @@ for (Section sect : doc.getSections()) {
 doc.save("path/to/watermarked/document.docx");
 ```
 
-## 10. تحرير المعلومات الحساسة
 
-عند مشاركة المستندات، قد ترغب في إزالة المعلومات الحساسة بشكل دائم للتأكد من عدم وقوعها في الأيدي الخطأ. يتيح لك Aspose.Words for Java تحرير المحتوى الحساس:
-
-```java
-// البحث عن المعلومات الحساسة وتحريرها
-RedactionOptions
-
- options = new RedactionOptions();
-options.setRedactionType(RedactionType.REMOVE_CONTENT);
-options.getSearch().setSearchPattern("sensitive information");
-
-// تطبيق التحرير
-doc.redact(options);
-
-// حفظ المستند المحرر
-doc.save("path/to/redacted/document.docx");
-```
-
-## 11. تحويل المستندات الآمنة إلى تنسيقات أخرى
+## 10. تحويل المستندات الآمنة إلى تنسيقات أخرى
 
 يتيح لك Aspose.Words for Java أيضًا تحويل مستنداتك المؤمنة إلى تنسيقات مختلفة، مثل PDF أو HTML:
 
 ```java
-// قم بتحميل المستند المؤمن
+//قم بتحميل المستند المؤمن
 Document doc = new Document("path/to/your/secured/document.docx");
 
 // تحويل إلى PDF
-doc.save("path/to/converted/document.pdf", SaveFormat.PDF);
+doc.save("path/to/converted/document.pdf");
 
 // تحويل إلى HTML
-doc.save("path/to/converted/document.html", SaveFormat.HTML);
+doc.save("path/to/converted/document.html");
 ```
 
-## 12. أفضل الممارسات لأمن المستندات
-
-لضمان أمان قوي للمستندات، اتبع أفضل الممارسات التالية:
-
-- قم بتحديث تدابير الأمان الخاصة بك بانتظام لتظل في مأمن من التهديدات المحتملة.
-- استخدم كلمات مرور قوية وخوارزميات تشفير.
-- تقييد الوصول إلى المستندات الحساسة على أساس الحاجة إلى المعرفة.
-- تدريب الموظفين على التعرف على المخاطر الأمنية والاستجابة لها.
-
-## 13. اختبار أمان المستندات
-
-بعد تطبيق تدابير الأمان، اختبر مستنداتك جيدًا للتأكد من بقائها آمنة في ظل سيناريوهات مختلفة. حاول تجاوز ضوابط الأمان لتحديد نقاط الضعف المحتملة.
-
-## 14. الخاتمة
+## خاتمة
 
 في هذا الدليل التفصيلي، استكشفنا أهمية أمان المستندات وكيف يمكن لبرنامج Aspose.Words for Java المساعدة في حماية مستنداتك من الوصول غير المصرح به. من خلال الاستفادة من ميزات المكتبة، مثل حماية كلمة المرور والتشفير والتوقيعات الرقمية والعلامات المائية والتحرير، يمكنك ضمان بقاء مستنداتك آمنة ومأمونة.
 
 ## الأسئلة الشائعة
 
 ### هل يمكنني استخدام Aspose.Words لـ Java في المشاريع التجارية؟
-   نعم، يمكن استخدام Aspose.Words for Java في المشاريع التجارية بموجب نموذج الترخيص لكل مطور.
+نعم، يمكن استخدام Aspose.Words for Java في المشاريع التجارية بموجب نموذج الترخيص لكل مطور.
 
 ### هل يدعم Aspose.Words تنسيقات المستندات الأخرى بالإضافة إلى Word؟
-   نعم، يدعم Aspose.Words مجموعة واسعة من التنسيقات، بما في ذلك PDF، وHTML، وEPUB، والمزيد.
+نعم، يدعم Aspose.Words مجموعة واسعة من التنسيقات، بما في ذلك PDF، وHTML، وEPUB، والمزيد.
 
 ### هل من الممكن إضافة توقيعات رقمية متعددة إلى مستند؟
-   نعم، يسمح لك Aspose.Words بإضافة توقيعات رقمية متعددة إلى مستند.
+نعم، يسمح لك Aspose.Words بإضافة توقيعات رقمية متعددة إلى مستند.
 
 ### هل يدعم Aspose.Words استعادة كلمة مرور المستندات؟
-   لا، لا يوفر Aspose.Words ميزات استرداد كلمة المرور. تأكد من الحفاظ على كلمات المرور الخاصة بك آمنة.
+لا، لا يوفر Aspose.Words ميزات استرداد كلمة المرور. تأكد من الحفاظ على كلمات المرور الخاصة بك آمنة.
 
 ### هل يمكنني تخصيص مظهر العلامات المائية؟
-   نعم، يمكنك تخصيص مظهر العلامات المائية بالكامل، بما في ذلك النص والخط واللون والحجم والدوران.
+نعم، يمكنك تخصيص مظهر العلامات المائية بالكامل، بما في ذلك النص والخط واللون والحجم والدوران.

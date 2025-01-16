@@ -130,7 +130,7 @@ Och där har du det! Du har framgångsrikt skapat en ny signaturrad och angett l
 ## FAQ's
 
 ### Kan jag anpassa utseendet på signaturlinjen?
-Absolut! Du kan justera olika alternativ i`SignatureLineOptions` för att passa dina behov.
+ Absolut! Du kan justera olika alternativ i`SignatureLineOptions`för att passa dina behov.
 
 ### Vad händer om jag inte har ett PFX-certifikat?
 Du måste skaffa en från en betrodd certifikatutfärdare. Det är viktigt för digital signering av dokument.

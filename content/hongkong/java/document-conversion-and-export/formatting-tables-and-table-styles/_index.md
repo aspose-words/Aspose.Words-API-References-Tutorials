@@ -2,7 +2,7 @@
 title: 設定表格格式和表格樣式
 linktitle: 設定表格格式和表格樣式
 second_title: Aspose.Words Java 文件處理 API
-description: 了解如何使用 Aspose.Words for Java 設定表格格式和套用樣式。本逐步指南涵蓋設定邊框、為儲存格新增底紋以及套用表格樣式。
+description: 了解如何使用 Aspose.Words for Java 設定表格格式和套用樣式。本逐步指南涵蓋設定邊框、為儲存格新增底紋和套用表格樣式。
 type: docs
 weight: 17
 url: /zh-hant/java/document-conversion-and-export/formatting-tables-and-table-styles/

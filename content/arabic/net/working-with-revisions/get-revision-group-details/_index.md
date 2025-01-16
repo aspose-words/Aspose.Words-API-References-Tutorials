@@ -106,4 +106,4 @@ foreach (Revision revision in doc.Revisions)
  نعم، يتطلب Aspose.Words for .NET ترخيصًا للحصول على الوظائف الكاملة. يمكنك شراء ترخيص[هنا](https://purchase.aspose.com/buy) أو الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
 
 ### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Words لـ .NET؟
-الوثائق التفصيلية متاحة[هنا](https://reference.aspose.com/words/net/).
+ الوثائق التفصيلية متاحة[هنا](https://reference.aspose.com/words/net/).

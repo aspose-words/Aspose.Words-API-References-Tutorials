@@ -105,7 +105,7 @@ Aspose.Words ondersteunt het toevoegen van één watermerk per keer. Om meerdere
 
 ### Kan ik de positie van het watermerk aanpassen?
 
-De`WatermarkLayout`property bepaalt de oriëntatie, maar nauwkeurige positioneringsaanpassingen worden niet rechtstreeks ondersteund. Mogelijk moet u andere technieken gebruiken voor exacte plaatsing.
+ De`WatermarkLayout`property bepaalt de oriëntatie, maar nauwkeurige positioneringsaanpassingen worden niet rechtstreeks ondersteund. Mogelijk moet u andere technieken gebruiken voor exacte plaatsing.
 
 ### Wat als ik een semi-transparant watermerk nodig heb?
 

@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### MoveToBookmark'ı Anlamak
 
-The`MoveToBookmark`method, belgeniz içinde belirli bir yer işaretine gitmenizi sağlar. Method imzası şudur:
+ The`MoveToBookmark`method, belgeniz içinde belirli bir yer işaretine gitmenizi sağlar. Method imzası şudur:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

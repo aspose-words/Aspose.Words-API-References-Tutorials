@@ -30,7 +30,7 @@ url: /el/java/document-manipulation/splitting-documents-into-pages/
 
 ## 4. Κατανόηση του Πηγαίου Κώδικα
 
-Ο πηγαίος κώδικας που παρείχατε έχει σχεδιαστεί για να χωρίζει ένα έγγραφο σε ξεχωριστές σελίδες. Ας αναλύσουμε τα βασικά συστατικά:
+Ο πηγαίος κώδικας που παρείχατε έχει σχεδιαστεί για να χωρίζει ένα έγγραφο σε ξεχωριστές σελίδες. Ας αναλύσουμε τα βασικά στοιχεία:
 
 ```java
 String fileName = FilenameUtils.getBaseName(docName);
@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <περίληψη>
-/// Λαμβάνει το έγγραφο μιας περιοχής σελίδων.
+//Λαμβάνει το έγγραφο μιας περιοχής σελίδων.
 /// </summary>
-//<param name="startIndex">
+/// <param name="startIndex">
 /// Ευρετήριο βασισμένο σε 1 της αρχικής σελίδας.
 /// </param>
 /// <param name="endIndex">
@@ -135,7 +135,7 @@ public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exce
 /// </summary>
 class PageNumberFinder
 {
-// Χαρτίζει τον κόμβο σε αριθμούς σελίδας έναρξης/τελικής.
+// Χαρτίζει τον κόμβο σε αριθμούς σελίδας έναρξης/τελικού.
 // Αυτό χρησιμοποιείται για την παράκαμψη των αριθμών σελίδων βάσης που παρέχονται από τον συλλέκτη όταν το έγγραφο χωρίζεται.
 private Map<Node, Integer> nodeStartPageLookup = new HashMap<>();
 private Map<Node, Integer> nodeEndPageLookup = new HashMap<>();

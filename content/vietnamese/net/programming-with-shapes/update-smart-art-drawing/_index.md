@@ -80,7 +80,7 @@ Việc xác định hình dạng Smart Art đảm bảo rằng bạn chỉ cố 
 Tiêu đề: Làm mới đồ họa nghệ thuật thông minh
 
 Giải thích:
-Các`UpdateSmartArtDrawing` phương pháp làm mới đồ họa Smart Art, đảm bảo rằng nó phản ánh mọi thay đổi trong dữ liệu hoặc bố cục của tài liệu. Phương pháp này phải được gọi trên mỗi hình dạng Smart Art được xác định ở bước trước.
+ Các`UpdateSmartArtDrawing` phương pháp làm mới đồ họa Smart Art, đảm bảo rằng nó phản ánh mọi thay đổi trong dữ liệu hoặc bố cục của tài liệu. Phương pháp này phải được gọi trên mỗi hình dạng Smart Art được xác định ở bước trước.
 
 ```csharp
 // Cập nhật bản vẽ Smart Art cho từng hình dạng Smart Art

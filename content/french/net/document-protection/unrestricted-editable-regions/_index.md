@@ -16,7 +16,7 @@ Si vous avez toujours voulu protéger un document Word tout en permettant la mod
 Avant de commencer, assurez-vous de disposer des éléments suivants :
 
 1.  Aspose.Words pour .NET : Si vous ne l'avez pas déjà fait, téléchargez-le[ici](https://releases.aspose.com/words/net/).
-2.  Une licence Aspose valide : Vous pouvez obtenir une licence temporaire[ici](https://purchase.aspose.com/temporary-license/).
+2. Une licence Aspose valide : Vous pouvez obtenir une licence temporaire[ici](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio : toute version récente devrait fonctionner correctement.
 4. Connaissances de base de C# et .NET : cela vous aidera à suivre le code.
 

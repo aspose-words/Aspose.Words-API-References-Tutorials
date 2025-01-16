@@ -7,91 +7,203 @@ type: docs
 weight: 11
 url: /ko/java/table-processing/generate-table-from-datatable/
 ---
+## 소개
 
-이 튜토리얼에서는 Aspose.Words for Java를 사용하여 DataTable에서 테이블을 생성하는 방법을 보여드리겠습니다. DataTable은 표 형식의 데이터를 보관하는 기본 데이터 구조이며 Aspose.Words의 강력한 테이블 처리 기능을 사용하면 Word 문서에서 잘 포맷된 테이블을 쉽게 만들 수 있습니다. 아래의 단계별 가이드를 따라 테이블을 생성하고 워드 프로세싱 애플리케이션에 통합하세요.
+데이터 소스에서 동적으로 테이블을 만드는 것은 많은 애플리케이션에서 일반적인 작업입니다. 보고서, 송장 또는 데이터 요약을 생성하든, 프로그래밍 방식으로 테이블에 데이터를 채울 수 있다면 많은 시간과 노력을 절약할 수 있습니다. 이 튜토리얼에서는 Aspose.Words for Java를 사용하여 DataTable에서 테이블을 생성하는 방법을 살펴보겠습니다. 프로세스를 관리 가능한 단계로 나누어 각 부분을 명확하게 이해할 수 있도록 하겠습니다.
 
-## 1단계: 개발 환경 설정
+## 필수 조건
 
-시작하기에 앞서 다음과 같은 전제 조건이 충족되었는지 확인하세요.
+코드를 살펴보기 전에 시작하는 데 필요한 모든 것이 있는지 확인해 보겠습니다.
 
-- 시스템에 Java Development Kit(JDK)가 설치되어 있어야 합니다.
-- Java 라이브러리인 Aspose.Words를 프로젝트에 다운로드하여 참조했습니다.
+1.  Java Development Kit(JDK): 컴퓨터에 JDK가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[오라클 웹사이트](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+   
+2.  Java용 Aspose.Words: Aspose.Words 라이브러리가 필요합니다. 최신 버전은 다음에서 다운로드할 수 있습니다.[Aspose의 릴리스 페이지](https://releases.aspose.com/words/java/).
 
-## 2단계: DataTable 준비
+3. IDE: IntelliJ IDEA나 Eclipse와 같은 통합 개발 환경(IDE)을 사용하면 코딩이 더 쉬워집니다.
 
-먼저, 필요한 데이터로 DataTable을 준비해야 합니다. DataTable은 행과 열을 보관하는 가상 테이블과 같습니다. 테이블에 표시하려는 데이터로 채우세요.
+4. Java에 대한 기본 지식: Java 프로그래밍 개념에 익숙하면 코드 조각을 더 잘 이해하는 데 도움이 됩니다.
 
-```java
-// 샘플 DataTable을 만들고 행과 열을 추가합니다.
-DataTable dataTable = new DataTable(""Employees"");
-dataTable.getColumns().add(""ID"", Integer.class);
-dataTable.getColumns().add(""Name"", String.class);
-dataTable.getRows().add(101, ""John Doe"");
-dataTable.getRows().add(102, ""Jane Smith"");
-dataTable.getRows().add(103, ""Michael Johnson"");
-```
+5. 샘플 데이터: 이 튜토리얼에서는 "List of people.xml"이라는 XML 파일을 사용하여 데이터 소스를 시뮬레이션합니다. 테스트를 위해 샘플 데이터로 이 파일을 만들 수 있습니다.
 
-## 3단계: 표 생성 및 서식 지정
+## 1단계: 새 문서 만들기
 
-이제 새 문서를 만들고 DataTable의 데이터를 사용하여 표를 생성합니다. 또한 표의 모양을 개선하기 위해 서식을 적용합니다.
+먼저, 테이블이 위치할 새 문서를 만들어야 합니다. 이것이 우리 작업의 캔버스입니다.
 
 ```java
-// 새 문서 만들기
 Document doc = new Document();
-
-// DataTable과 같은 수의 열이 있는 Table을 생성합니다.
-Table table = doc.getFirstSection().getBody().appendTable();
-table.ensureMinimum();
-
-// 열 이름이 있는 헤더 행을 추가합니다.
-Row headerRow = table.getRows().get(0);
-for (DataColumn column : dataTable.getColumns()) {
-    Cell cell = headerRow.getCells().add(column.getColumnName());
-    cell.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);
-}
-
-// 테이블에 데이터 행 추가
-for (DataRow dataRow : dataTable.getRows()) {
-    Row newRow = table.getRows().add();
-    for (DataColumn column : dataTable.getColumns()) {
-        Cell cell = newRow.getCells().add(dataRow.get(column.getColumnName()).toString());
-    }
-}
 ```
 
-## 4단계: 문서 저장
+ 여기서 우리는 새로운 것을 인스턴스화합니다`Document` 객체입니다. 이것은 우리가 테이블을 만들 작업 문서 역할을 할 것입니다.
 
-마지막으로 생성된 표가 포함된 문서를 원하는 위치에 저장합니다.
+## 2단계: DocumentBuilder 초기화
+
+ 다음으로, 우리는 다음을 사용할 것입니다.`DocumentBuilder` 문서를 더 쉽게 조작할 수 있게 해주는 클래스입니다.
 
 ```java
-// 문서 저장
-doc.save(""output.docx"");
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-이러한 단계를 따르면 DataTable에서 테이블을 성공적으로 생성하고 Aspose.Words for Java를 사용하여 문서 처리 애플리케이션에 통합할 수 있습니다. 이 기능이 풍부한 라이브러리는 테이블 처리 및 워드 처리 작업을 간소화하여 전문적이고 잘 구성된 문서를 손쉽게 만들 수 있습니다.
+ 그만큼`DocumentBuilder` 객체는 문서에 표, 텍스트 및 기타 요소를 삽입하는 방법을 제공합니다.
+
+## 3단계: 페이지 방향 설정
+
+우리는 테이블이 넓을 것으로 예상하므로 페이지 방향을 가로로 설정합니다.
+
+```java
+doc.getFirstSection().getPageSetup().setOrientation(Orientation.LANDSCAPE);
+```
+
+이 단계는 표가 잘리지 않고 페이지에 꼭 맞는지 확인하는 데 매우 중요합니다.
+
+## 4단계: XML에서 데이터 로드
+
+ 이제 XML 파일에서 데이터를 로드해야 합니다.`DataTable`. 이것이 바로 우리의 데이터가 나오는 곳입니다.
+
+```java
+DataSet ds = new DataSet();
+ds.readXml(getMyDir() + "List of people.xml");
+DataTable dataTable = ds.getTables().get(0);
+```
+
+ 여기서 우리는 XML 파일을 읽고 데이터 세트에서 첫 번째 테이블을 검색합니다.`DataTable` 문서에 표시하려는 데이터를 보관합니다.
+
+## 5단계: DataTable에서 테이블 가져오기
+
+이제 흥미로운 단계가 시작됩니다. 데이터를 표 형태로 문서에 가져오는 것입니다.
+
+```java
+Table table = importTableFromDataTable(builder, dataTable, true);
+```
+
+ 우리는 이 방법을 호출합니다`importTableFromDataTable` , 통과`DocumentBuilder` , 우리의`DataTable`, 열 제목을 포함할지 여부를 나타내는 부울 값입니다.
+
+## 6단계: 테이블 스타일 지정
+
+테이블이 완성되면 스타일을 적용해 보기 좋게 만들 수 있습니다.
+
+```java
+table.setStyleIdentifier(StyleIdentifier.MEDIUM_LIST_2_ACCENT_1);
+table.setStyleOptions(TableStyleOptions.FIRST_ROW | TableStyleOptions.ROW_BANDS | TableStyleOptions.LAST_COLUMN);
+```
+
+이 코드는 표에 미리 정의된 스타일을 적용해 시각적 매력과 가독성을 향상시킵니다.
+
+## 7단계: 원치 않는 세포 제거
+
+이미지 열 등 표시하고 싶지 않은 열이 있는 경우 쉽게 제거할 수 있습니다.
+
+```java
+table.getFirstRow().getLastCell().removeAllChildren();
+```
+
+이 단계를 거치면 표에 관련 정보만 표시됩니다.
+
+## 8단계: 문서 저장
+
+마지막으로 생성된 표와 함께 문서를 저장합니다.
+
+```java
+doc.save(getArtifactsDir() + "WorkingWithTables.BuildTableFromDataTable.docx");
+```
+
+이 줄은 지정된 디렉토리에 문서를 저장하여 결과를 검토할 수 있도록 합니다.
+
+## importTableFromDataTable 메서드
+
+ 좀 더 자세히 살펴보겠습니다.`importTableFromDataTable` 방법. 이 방법은 테이블 구조를 만들고 데이터로 채우는 역할을 합니다.
+
+### 1단계: 테이블 시작
+
+먼저, 문서에서 새 표를 시작해야 합니다.
+
+```java
+Table table = builder.startTable();
+```
+
+이렇게 하면 문서에 새로운 표가 초기화됩니다.
+
+### 2단계: 열 제목 추가
+
+ 열 제목을 포함하려면 다음을 확인합니다.`importColumnHeadings` 깃발.
+
+```java
+if (importColumnHeadings) {
+    // 원래 포맷을 저장하세요
+    boolean boldValue = builder.getFont().getBold();
+    int paragraphAlignmentValue = builder.getParagraphFormat().getAlignment();
+
+    // 제목 서식 설정
+    builder.getFont().setBold(true);
+    builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
+
+    // 열 이름 삽입
+    for (DataColumn column : dataTable.getColumns()) {
+        builder.insertCell();
+        builder.writeln(column.getColumnName());
+    }
+
+    builder.endRow();
+
+    // 원래 서식 복원
+    builder.getFont().setBold(boldValue);
+    builder.getParagraphFormat().setAlignment(paragraphAlignmentValue);
+}
+```
+
+ 이 코드 블록은 제목 행을 포맷하고 열 이름을 삽입합니다.`DataTable`.
+
+### 3단계: 데이터로 표 채우기
+
+ 이제 각 행을 반복합니다.`DataTable` 테이블에 데이터를 삽입합니다.
+
+```java
+for (DataRow dataRow : (Iterable<DataRow>) dataTable.getRows()) {
+    for (Object item : dataRow.getItemArray()) {
+        builder.insertCell();
+        switch (item.getClass().getName()) {
+            case "DateTime":
+                Date dateTime = (Date) item;
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMMM d, yyyy");
+                builder.write(simpleDateFormat.format(dateTime));
+                break;
+            default:
+                builder.write(item.toString());
+                break;
+        }
+    }
+    builder.endRow();
+}
+```
+
+이 섹션에서는 다양한 데이터 유형을 처리하고 날짜를 적절히 형식화하며 다른 데이터를 텍스트로 삽입합니다.
+
+### 4단계: 테이블 종료
+
+마지막으로 모든 데이터를 삽입하면 표를 완성합니다.
+
+```java
+builder.endTable();
+```
+
+ 이 줄은 테이블의 끝을 표시하여 다음을 허용합니다.`DocumentBuilder` 이 섹션이 끝났음을 알려드립니다.
 
 ## 결론
 
-축하합니다! Aspose.Words for Java를 사용하여 DataTable에서 테이블을 생성하는 방법을 성공적으로 배웠습니다. 이 단계별 가이드는 DataTable을 준비하고, Word 문서에서 테이블을 만들고 서식을 지정하고, 최종 출력을 저장하는 과정을 보여주었습니다. Aspose.Words for Java는 테이블 처리를 위한 강력하고 유연한 API를 제공하여 테이블 데이터를 쉽게 관리하고 워드 프로세싱 프로젝트에 통합할 수 있습니다.
-
-Aspose.Words의 기능을 활용하면 복잡한 표 구조를 처리하고, 사용자 지정 서식을 적용하고, 표를 문서에 원활하게 통합할 수 있습니다. 보고서, 송장 또는 표 형식 표현이 필요한 다른 문서를 생성하든 Aspose.Words를 사용하면 손쉽게 전문적인 결과를 얻을 수 있습니다.
-
-Aspose.Words for Java가 제공하는 더 많은 기능과 기능을 탐색하여 문서 처리 기능을 향상하고 Java 애플리케이션을 간소화해 보세요.
+이제 다 봤습니다! Aspose.Words for Java를 사용하여 DataTable에서 테이블을 생성하는 방법을 성공적으로 배웠습니다. 이러한 단계를 따르면 다양한 데이터 소스를 기반으로 문서에서 동적 테이블을 쉽게 만들 수 있습니다. 보고서나 송장을 생성하든 이 방법은 워크플로를 간소화하고 문서 생성 프로세스를 향상시킵니다.
 
 ## 자주 묻는 질문
 
-### 1. 병합된 셀이나 중첩된 표가 있는 표를 생성할 수 있나요?
+### Java용 Aspose.Words란 무엇인가요?
+Aspose.Words for Java는 Word 문서를 프로그래밍 방식으로 만들고, 조작하고, 변환하기 위한 강력한 라이브러리입니다.
 
-네, Aspose.Words for Java를 사용하면 병합된 셀이 있는 테이블을 만들거나 서로 중첩된 테이블을 만들 수도 있습니다. 이를 통해 복잡한 테이블 레이아웃을 디자인하고 다양한 형식으로 데이터를 표현할 수 있습니다.
+### Aspose.Words를 무료로 사용할 수 있나요?
+ 네, Aspose는 무료 체험판을 제공합니다. 여기에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).
 
-### 2. 생성된 표의 모양을 어떻게 사용자 지정할 수 있나요?
+### Aspose.Words에서 표 스타일을 어떻게 지정하나요?
+라이브러리에서 제공하는 미리 정의된 스타일 식별자와 옵션을 사용하여 스타일을 적용할 수 있습니다.
 
-Aspose.Words for Java는 표, 셀, 행 및 열에 대한 광범위한 서식 옵션을 제공합니다. 원하는 표 모양을 얻기 위해 글꼴 스타일, 배경색, 테두리 및 정렬을 설정할 수 있습니다.
+### 어떤 유형의 데이터를 표에 삽입할 수 있나요?
+텍스트, 숫자, 날짜 등 다양한 데이터 유형을 삽입할 수 있으며, 이에 따라 형식을 지정할 수 있습니다.
 
-### 3. 생성된 표를 다른 형식으로 내보낼 수 있나요?
-
-물론입니다! Aspose.Words for Java는 Word 문서를 PDF, HTML, XPS 등 다양한 형식으로 내보내는 것을 지원합니다. 제공된 내보내기 옵션을 사용하여 생성된 표를 원하는 형식으로 쉽게 변환할 수 있습니다.
-
-### 4. Aspose.Words for Java는 대규모 문서 처리에 적합합니까?
-
-네, Aspose.Words for Java는 소규모 및 대규모 문서 처리 작업을 효율적으로 처리하도록 설계되었습니다. 최적화된 처리 엔진은 대규모 문서와 복잡한 테이블 구조에서도 높은 성능과 안정적인 처리를 보장합니다.
+### Aspose.Words에 대한 지원은 어디서 받을 수 있나요?
+ 지원을 받고 질문할 수 있습니다.[Aspose 포럼](https://forum.aspose.com/c/words/8/).

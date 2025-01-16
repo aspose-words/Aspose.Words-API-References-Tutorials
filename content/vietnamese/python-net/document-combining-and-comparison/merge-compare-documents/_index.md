@@ -72,14 +72,6 @@ So sánh tài liệu nguồn với tài liệu đã sửa đổi:
 comparison = source_doc.compare(modified_doc, "John Doe", datetime.now())
 ```
 
-## Làm nổi bật sự khác biệt
-
-Nêu rõ sự khác biệt giữa các tài liệu:
-
-```python
-comparison.highlight_changes()
-```
-
 ## Lưu kết quả so sánh
 
 Lưu kết quả so sánh vào một tệp mới:

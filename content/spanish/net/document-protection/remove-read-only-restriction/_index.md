@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 Establecer una contraseña es opcional, pero puede agregar una capa adicional de seguridad a su documento antes de modificarlo.
 
 ```csharp
-//Introduzca una contraseña de hasta 15 caracteres.
+// Introduzca una contraseña de hasta 15 caracteres.
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
@@ -101,7 +101,7 @@ Sí, configurar una contraseña es opcional. Puedes eliminar directamente la rec
 
 ### ¿Qué pasa si el documento ya tiene un tipo de protección diferente?
 
-El`doc.Protect(ProtectionType.NoProtection)` El método garantiza que se eliminen todos los tipos de protecciones del documento.
+ El`doc.Protect(ProtectionType.NoProtection)` El método garantiza que se eliminen todos los tipos de protecciones del documento.
 
 ### ¿Hay alguna manera de saber si un documento es de solo lectura antes de eliminar la restricción?
 

@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
-ال`unprotect` تزيل هذه الطريقة أي حماية مطبقة على المستند، مما يجعله في متناول الجميع دون الحاجة إلى كلمة مرور.
+ ال`unprotect` تزيل هذه الطريقة أي حماية مطبقة على المستند، مما يجعله في متناول الجميع دون الحاجة إلى كلمة مرور.
 
 ## التحقق من نوع حماية المستندات
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
-ال`getProtectionType` تعيد الطريقة عددًا صحيحًا يمثل نوع الحماية المطبق على المستند.
+ ال`getProtectionType` تعيد الطريقة عددًا صحيحًا يمثل نوع الحماية المطبق على المستند.
 
 
 ## خاتمة

@@ -54,7 +54,7 @@ doc.save("output.html", saveOptions);
 
 ```java
 //將文件儲存為映像的 Java 程式碼
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions imageSaveOptions = new ImageSaveOptions();
 imageSaveOptions.setResolution(300); //設定解析度（DPI）
 doc.save("output.png", imageSaveOptions);
 ```

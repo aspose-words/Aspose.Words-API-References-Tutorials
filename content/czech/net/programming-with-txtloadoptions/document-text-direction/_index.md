@@ -89,7 +89,7 @@ Nastavení směru textu v dokumentech aplikace Word je s Aspose.Words pro .NET j
 
 ###  Co je`DocumentDirection` property used for?
 
-The`DocumentDirection` majetek v`TxtLoadOptions` určuje směr textu dokumentu. Dá se nastavit na`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` nebo`DocumentDirection.RightToLeft`.
+ The`DocumentDirection` majetek v`TxtLoadOptions` určuje směr textu dokumentu. Dá se nastavit na`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` nebo`DocumentDirection.RightToLeft`.
 
 ### Mohu nastavit směr textu pro konkrétní odstavce místo celého dokumentu?
 
@@ -105,4 +105,4 @@ The`DocumentDirection` majetek v`TxtLoadOptions` určuje směr textu dokumentu. 
 
 ### Kde najdu další informace o Aspose.Words pro .NET?
 
- Pro více podrobností se podívejte na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) . Můžete také prozkoumat další zdroje, např[Odkaz ke stažení](https://releases.aspose.com/words/net/), [Nakoupit](https://purchase.aspose.com/buy), [Bezplatná zkušební verze](https://releases.aspose.com/), [Dočasná licence](https://purchase.aspose.com/temporary-license/) a[Podpora](https://forum.aspose.com/c/words/8).
+ Pro více podrobností se podívejte na[Aspose.Words pro .NET dokumentaci](https://reference.aspose.com/words/net/) . Můžete také prozkoumat další zdroje, např[Odkaz ke stažení](https://releases.aspose.com/words/net/), [Nakoupit](https://purchase.aspose.com/buy), [Bezplatná zkušební verze](https://releases.aspose.com/), [Dočasná licence](https://purchase.aspose.com/temporary-license/) a[Podpora](https://forum.aspose.com/c/words/8).

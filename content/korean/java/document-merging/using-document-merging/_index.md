@@ -167,58 +167,48 @@ public class DocumentMerger {
 
  사용하여`ImportFormatMode.KEEP_DIFFERENT_STYLES`Aspose.Words는 소스 문서와 대상 문서 간의 서로 다른 스타일을 유지하여 충돌을 우아하게 해결합니다.
 
-## 9. 문서 병합을 위한 모범 사례
-
-- 예상치 못한 오류를 방지하려면 문서 병합 중에 항상 예외를 처리하세요.
-
-- 정기적으로 업데이트를 확인하고 Aspose.Words for Java의 최신 버전을 사용하면 버그 수정 및 새로운 기능의 이점을 누릴 수 있습니다.
-
-- 최적의 성능을 보장하기 위해 다양한 문서 유형과 크기로 문서 병합을 테스트합니다.
-
-- 문서 병합 작업 중 변경 사항을 추적하려면 버전 제어 시스템을 사용하는 것을 고려하세요.
-
-## 10. 결론
+## 결론
 
 Aspose.Words for Java는 Java 개발자에게 Word 문서를 손쉽게 병합할 수 있는 기능을 제공합니다. 이 문서의 단계별 가이드를 따르면 이제 문서를 병합하고, 서식을 처리하고, 줄바꿈을 삽입하고, 충돌을 쉽게 관리할 수 있습니다. Aspose.Words for Java를 사용하면 문서 병합이 원활하고 자동화된 프로세스가 되어 귀중한 시간과 노력을 절약할 수 있습니다.
 
-## 11. 자주 묻는 질문 
+## 자주 묻는 질문 
 
 ### 서로 다른 형식과 스타일의 문서를 병합할 수 있나요?
 
-   네, Aspose.Words for Java는 다양한 형식과 스타일의 문서를 병합합니다. 라이브러리는 충돌을 지능적으로 해결하여 다양한 소스의 문서를 원활하게 병합할 수 있습니다.
+네, Aspose.Words for Java는 다양한 형식과 스타일의 문서를 병합합니다. 라이브러리는 충돌을 지능적으로 해결하여 다양한 소스의 문서를 원활하게 병합할 수 있습니다.
 
 ### Aspose.Words는 대용량 문서를 효율적으로 병합하는 것을 지원합니까?
 
-   Aspose.Words for Java는 대용량 문서를 효율적으로 처리하도록 설계되었습니다. 문서 병합을 위해 최적화된 알고리즘을 사용하여 방대한 콘텐츠에서도 높은 성능을 보장합니다.
+Aspose.Words for Java는 대용량 문서를 효율적으로 처리하도록 설계되었습니다. 문서 병합을 위해 최적화된 알고리즘을 사용하여 방대한 콘텐츠에서도 높은 성능을 보장합니다.
 
 ### Aspose.Words for Java를 사용하여 암호로 보호된 문서를 병합할 수 있나요?
 
-   네, Aspose.Words for Java는 암호로 보호된 문서 병합을 지원합니다. 이러한 문서에 액세스하고 병합하려면 올바른 암호를 제공해야 합니다.
+네, Aspose.Words for Java는 암호로 보호된 문서 병합을 지원합니다. 이러한 문서에 액세스하고 병합하려면 올바른 암호를 제공해야 합니다.
 
 ### 여러 문서의 특정 섹션을 병합할 수 있나요?
 
-   네, Aspose.Words를 사용하면 다양한 문서에서 특정 섹션을 선택적으로 병합할 수 있습니다. 이를 통해 병합 프로세스를 세부적으로 제어할 수 있습니다.
+네, Aspose.Words를 사용하면 다양한 문서에서 특정 섹션을 선택적으로 병합할 수 있습니다. 이를 통해 병합 프로세스를 세부적으로 제어할 수 있습니다.
 
 ### 추적된 변경 사항과 주석이 있는 문서를 병합할 수 있나요?
 
-    Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
+물론입니다. Aspose.Words for Java는 추적된 변경 사항과 주석이 있는 문서 병합을 처리할 수 있습니다. 병합 프로세스 중에 이러한 개정 사항을 보존하거나 제거할 수 있는 옵션이 있습니다.
 
 ### Aspose.Words는 병합된 문서의 원래 서식을 보존합니까?
 
-    Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
+Aspose.Words는 기본적으로 소스 문서의 서식을 보존합니다. 그러나 충돌을 처리하고 서식 일관성을 유지하기 위해 다른 가져오기 서식 모드를 선택할 수 있습니다.
 
 ### PDF나 RTF 등 Word가 아닌 파일 형식의 문서를 병합할 수 있나요?
 
-    Aspose.Words is primarily designed for working with Word documents. To merge documents from non-Word file formats, consider using the appropriate Aspose product for that specific format, such as Aspose.PDF or Aspose.RTF.
+Aspose.Words는 주로 Word 문서 작업을 위해 설계되었습니다. Word가 아닌 파일 형식의 문서를 병합하려면 Aspose.PDF 또는 Aspose.RTF와 같이 해당 형식에 적합한 Aspose 제품을 사용하는 것을 고려하세요.
 
 ### 병합하는 동안 문서 버전 관리를 어떻게 처리할 수 있나요?
 
-    Document versioning during merging can be achieved by implementing proper version control practices in your application. Aspose.Words focuses on document content merging and doesn't directly manage versioning.
+병합 중 문서 버전 관리는 애플리케이션에서 적절한 버전 관리 관행을 구현하여 달성할 수 있습니다. Aspose.Words는 문서 콘텐츠 병합에 초점을 맞추고 버전 관리를 직접 관리하지 않습니다.
 
 ### Aspose.Words for Java는 Java 8 이상 버전과 호환됩니까?
 
-    Yes, Aspose.Words for Java is compatible with Java 8 and newer versions. It's always recommended to use the latest Java version for better performance and security.
+네, Aspose.Words for Java는 Java 8 이상 버전과 호환됩니다. 더 나은 성능과 보안을 위해 항상 최신 Java 버전을 사용하는 것이 좋습니다.
 
 ### Aspose.Words는 URL과 같은 원격 소스의 문서 병합을 지원합니까?
 
-    Yes, Aspose.Words for Java can load documents from various sources, including URLs, streams, and file paths. You can merge documents fetched from remote locations seamlessly.
+네, Aspose.Words for Java는 URL, 스트림, 파일 경로를 포함한 다양한 소스에서 문서를 로드할 수 있습니다. 원격 위치에서 가져온 문서를 원활하게 병합할 수 있습니다.

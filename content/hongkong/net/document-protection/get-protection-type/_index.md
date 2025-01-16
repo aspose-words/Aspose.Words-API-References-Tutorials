@@ -15,7 +15,7 @@ url: /zh-hant/net/document-protection/get-protection-type/
 
 在我們進入編碼部分之前，讓我們確保您擁有所需的一切：
 
-1.  Aspose.Words for .NET Library：如果您還沒有安裝，請下載並安裝[Aspose.Words for .NET 函式庫](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library：如果您還沒有安裝，請下載並安裝[Aspose.Words for .NET 函式庫](https://releases.aspose.com/words/net/).
 2. 開發環境：像Visual Studio這樣的IDE。
 3. C# 基礎知識：熟悉 C# 程式設計將有助於您跟進。
 
@@ -75,7 +75,7 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 Aspose.Words for .NET 是一個功能強大的程式庫，可讓您以程式設計方式建立、編輯、轉換和操作 Word 文件。
 
 ### 我可以免費使用 Aspose.Words 嗎？
-您可以從[免費試用](https://releases.aspose.com/) ，但要獲得完整功能，您需要購買許可證。查看[購買選項](https://purchase.aspose.com/buy).
+您可以從[免費試用](https://releases.aspose.com/)，但要獲得完整功能，您需要購買許可證。查看[購買選項](https://purchase.aspose.com/buy).
 
 ### Aspose.Words 可以偵測哪些保護類型？
 Aspose.Words可以偵測各種保護類型，例如NoProtection、ReadOnly、AllowOnlyRevisions、AllowOnlyComments和AllowOnlyFormFields。

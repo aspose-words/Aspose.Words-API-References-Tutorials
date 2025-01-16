@@ -23,7 +23,7 @@ Les champs sont des espaces réservés dans un document qui affichent des donné
  Pour insérer un champ, vous pouvez utiliser le`FieldBuilder` classe. Par exemple, pour insérer un champ de date du jour :
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Automatiser la génération de documents avec des champs
-
-Les champs sont essentiels pour la génération automatisée de documents. Vous pouvez renseigner les champs avec des données provenant de sources externes :
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Intégration des champs aux sources de données

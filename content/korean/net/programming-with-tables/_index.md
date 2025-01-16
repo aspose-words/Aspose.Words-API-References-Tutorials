@@ -23,7 +23,7 @@ url: /ko/net/programming-with-tables/
 | [HTML에서 테이블 삽입](./insert-table-from-html/) | Aspose.Words for .NET을 사용하여 HTML에서 Word 문서로 표를 삽입하는 방법을 알아보세요. 원활한 문서 통합을 위한 자세한 가이드를 따르세요. |
 | [간단한 테이블 만들기](./create-simple-table/) | Aspose.Words for .NET을 사용하여 Word 문서에서 간단한 표를 만드는 방법을 단계별 포괄적인 가이드를 통해 알아보세요. |
 | [포맷된 표](./formatted-table/) | 이 자세한 단계별 가이드를 통해 Aspose.Words for .NET을 사용하여 Word 문서에서 표를 만들고 서식을 지정하는 방법을 알아보세요. |
-| [중첩 테이블](./nested-table/) | Aspose.Words for .NET을 사용하여 Word 문서에서 중첩된 테이블을 만드는 방법을 가이드를 통해 알아보세요. 복잡한 문서 레이아웃을 프로그래밍 방식으로 생성하는 데 완벽합니다. |
+| [중첩 테이블](./nested-table/) | Aspose.Words for .NET을 사용하여 Word 문서에서 중첩된 테이블을 만드는 방법을 가이드를 통해 알아보세요. 복잡한 문서 레이아웃을 프로그래밍 방식으로 생성하는 데 적합합니다. |
 | [행 결합](./combine-rows/) | Aspose.Words for .NET을 사용하여 여러 테이블의 행을 하나로 결합하는 방법을 단계별 가이드를 통해 알아보세요. |
 | [테이블 분할](./split-table/) | Aspose.Words for .NET을 사용하여 Word 문서에서 테이블을 분할하는 방법을 알아보세요. 단계별 가이드를 통해 테이블 관리를 쉽고 효율적으로 할 수 있습니다. |
 | [행 형식 페이지 간 나누기 비활성화](./row-format-disable-break-across-pages/) | Aspose.Words for .NET을 사용하여 Word 문서의 여러 페이지에서 행 나누기를 비활성화하여 표의 가독성과 서식을 유지하는 방법을 알아보세요. |

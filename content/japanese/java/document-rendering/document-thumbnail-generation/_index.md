@@ -40,7 +40,7 @@ Document doc = new Document("sample.docx");
 ```java
 //ドキュメントのサムネイルを生成するJavaコード
 ByteArrayOutputStream stream = new ByteArrayOutputStream();
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
+ImageSaveOptions options = new ImageSaveOptions();
 doc.save(stream, options);
 ```
 
@@ -66,7 +66,7 @@ Aspose.Words for Java を使用したドキュメント サムネイル生成は
 
 ### Aspose.Words for Java をインストールするにはどうすればよいですか?
 
- Aspose.Words for Javaをインストールするには、ダウンロードページにアクセスしてください。[ここ](https://releases.aspose.com/words/java/)提供されているインストール手順に従ってください。
+Aspose.Words for Javaをインストールするには、ダウンロードページにアクセスしてください。[ここ](https://releases.aspose.com/words/java/)提供されているインストール手順に従ってください。
 
 ### 生成されたサムネイルのサイズをカスタマイズできますか?
 

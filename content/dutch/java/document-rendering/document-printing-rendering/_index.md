@@ -49,7 +49,7 @@ Het renderen van documenten is essentieel wanneer u ze naar verschillende format
 
 ```java
 // Het document naar PDF renderen
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
  Je kunt vervangen`SaveFormat.PDF` met het gewenste formaat voor rendering.

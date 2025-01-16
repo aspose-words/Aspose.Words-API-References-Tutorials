@@ -95,7 +95,7 @@ Los controles de anclaje verticales controlan dónde se posiciona el texto dentr
 ### ¿Puedo utilizar otras formas además de cuadros de texto?
 Sí, puedes usar el anclaje vertical con otras formas, aunque los cuadros de texto son el caso de uso más común.
 
-### ¿Cómo cambio el punto de ancla después de crear el cuadro de texto?
+### ¿Cómo cambio el punto de anclaje después de crear el cuadro de texto?
  Puede cambiar el punto de anclaje configurando el`VerticalAnchor` propiedad en el objeto de forma de cuadro de texto.
 
 ### ¿Es posible anclar texto en el medio del cuadro de texto?

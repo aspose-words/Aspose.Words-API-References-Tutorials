@@ -92,7 +92,7 @@ Console.WriteLine("Preferred Width Type: " + type);
 Console.WriteLine("Preferred Width Value: " + value);
 ```
 
-Những dòng này sẽ in loại chiều rộng và giá trị ưa thích ra bảng điều khiển, cho phép bạn xem kết quả thực thi mã của mình.
+Những dòng này sẽ in loại chiều rộng và giá trị ưu tiên ra bảng điều khiển, cho phép bạn xem kết quả thực thi mã của mình.
 
 ## Phần kết luận
 

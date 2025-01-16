@@ -18,10 +18,10 @@ Innan vi dyker in i detaljerna, låt oss se till att du har allt konfigurerat:
 
 1. Grundläggande kunskaper i C#: Du bör vara bekväm med C#-syntax och koncept.
 2.  Aspose.Words för .NET: Ladda ner det[här](https://releases.aspose.com/words/net/) . Om du bara utforskar kan du börja med en[gratis provperiod](https://releases.aspose.com/).
-3. Visual Studio: Alla senaste versioner bör fungera, men den senaste versionen rekommenderas.
+3. Visual Studio: Alla nyare versioner bör fungera, men den senaste versionen rekommenderas.
 4. .NET Framework: Se till att det är installerat på ditt system.
 
-Redo att komma igång? Fantastisk! Låt oss hoppa direkt in.
+Redo att börja? Fantastisk! Låt oss hoppa direkt in.
 
 ## Importera namnområden
 
@@ -98,7 +98,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ### 4. Hur får jag support för Aspose.Words för .NET?
 
-Du kan få stöd genom att besöka[Aspose supportforum](https://forum.aspose.com/c/words/8).
+ Du kan få stöd genom att besöka[Aspose supportforum](https://forum.aspose.com/c/words/8).
 
 ### 5. Kan jag manipulera SmartArt-former programmatiskt?
 

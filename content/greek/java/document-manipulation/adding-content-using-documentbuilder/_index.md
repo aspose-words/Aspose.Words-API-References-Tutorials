@@ -35,7 +35,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Ξεκινήστε ένα τραπέζι
+//Ξεκινήστε ένα τραπέζι
 Table table = builder.startTable();
 
 // Εισαγάγετε κελιά και περιεχόμενο

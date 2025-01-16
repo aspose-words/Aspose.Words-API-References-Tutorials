@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-이 코드에서 다음을 바꾸세요.`"YOUR DOCUMENT DIRECTORY"`문서가 위치한 실제 경로를 사용합니다.
+이 코드에서 다음을 바꾸세요.`"YOUR DOCUMENT DIRECTORY"` 문서가 위치한 실제 경로를 사용합니다.
 
 ## 2단계: 각주 위치 설정
 
@@ -93,4 +93,4 @@ Aspose.Words for .NET은 .NET 애플리케이션용으로 설계되었지만 C#,
 
 ### Aspose.Words for .NET에 대한 더 자세한 문서는 어디에서 찾을 수 있나요?
 
-자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).
+ 자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).

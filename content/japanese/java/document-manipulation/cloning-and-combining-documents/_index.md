@@ -84,7 +84,7 @@ clone.save("Your Directory Path" + "ClonedDocument.docx");
 
 ### ブックマークにドキュメントを挿入するにはどうすればいいですか?
 
- Aspose.Words for Javaでブックマークにドキュメントを挿入するには、ブックマークの名前を検索し、`insertDocument`コンテンツを挿入する方法。次に例を示します。
+ Aspose.Words for Javaのブックマークにドキュメントを挿入するには、ブックマークの名前を検索し、`insertDocument`コンテンツを挿入する方法。次に例を示します。
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");
@@ -96,7 +96,7 @@ mainDoc.save("Your Directory Path" + "CombinedDocument.docx");
 
 ### Aspose.Words for Java で差し込み印刷中にドキュメントを挿入するにはどうすればよいですか?
 
-フィールド結合コールバックを設定し、挿入するドキュメントを指定することにより、Aspose.Words for Java での差し込み印刷中にドキュメントを挿入できます。次に例を示します。
+Aspose.Words for Java では、フィールド結合コールバックを設定し、挿入するドキュメントを指定することにより、差し込み印刷中にドキュメントを挿入できます。次に例を示します。
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");

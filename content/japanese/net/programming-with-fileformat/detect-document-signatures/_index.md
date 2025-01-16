@@ -58,7 +58,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ステップ3: ファイル形式の検出
 
-次に、ドキュメントのファイル形式を検出して、Word ドキュメントであることを確認する必要があります。
+次に、ドキュメントのファイル形式を検出して、それが Word ドキュメントであることを確認する必要があります。
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");

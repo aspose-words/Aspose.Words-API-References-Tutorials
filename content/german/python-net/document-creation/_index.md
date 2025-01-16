@@ -12,7 +12,7 @@ Die Dokumenterstellung ist ein grundlegender Aspekt der Textverarbeitung und Dok
 
 ## Nutzung der Python Document API
 
-In diesen Tutorials erkunden Entwickler die Python Document API von Aspose.Words. Die Bibliothek bietet eine Vielzahl von Funktionen zum Erstellen und Verwalten von Word-Dokumenten, sodass Benutzer die Formatierung anpassen, Text, Bilder, Tabellen und mehr einfügen können. Durch die Nutzung der Leistungsfähigkeit der Python Document API können Entwickler die Aufgaben der Dokumenterstellung und -verwaltung optimieren.
+In diesen Tutorials erkunden Entwickler die Python Document API von Aspose.Words. Die Bibliothek bietet eine Vielzahl von Funktionen zum Erstellen und Verwalten von Word-Dokumenten, sodass Benutzer die Formatierung anpassen, Text, Bilder, Tabellen und mehr einfügen können. Indem sie die Leistung der Python Document API nutzen, können Entwickler die Aufgaben der Dokumenterstellung und -verwaltung optimieren.
 
 ## Vereinfachung der Word-Dokumentenverarbeitung
 

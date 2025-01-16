@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-El`DocumentBuilder` es una clase auxiliar que simplifica el proceso de creación de documentos.
+ El`DocumentBuilder` es una clase auxiliar que simplifica el proceso de creación de documentos.
 
 ## Paso 3: Iniciar la tabla
 

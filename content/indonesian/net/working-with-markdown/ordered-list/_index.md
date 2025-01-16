@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Itu`ListIndent` metode membuat indentasi pada daftar, sehingga membuat sub-daftar. Sekarang Anda membuat daftar hierarkis, seperti daftar tugas bertingkat.
+ Itu`ListIndent` metode membuat indentasi pada daftar, sehingga membuat sub-daftar. Sekarang Anda membuat daftar hierarkis, seperti daftar tugas bertingkat.
 
 ## Kesimpulan
 

@@ -9,7 +9,7 @@ url: /it/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff
 ---
 ## Introduzione
 
-Ti sei mai chiesto come controllare la soglia per la binarizzazione TIFF nei tuoi documenti Word? Sei nel posto giusto! Questa guida ti guiderà passo dopo passo nel processo usando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o alle prime armi, troverai questo tutorial coinvolgente, facile da seguire e ricco di tutti i dettagli di cui hai bisogno per portare a termine il lavoro. Pronto a tuffarti? Andiamo!
+Ti sei mai chiesto come controllare la soglia per la binarizzazione TIFF nei tuoi documenti Word? Sei nel posto giusto! Questa guida ti guiderà passo dopo passo nel processo usando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o che tu stia appena iniziando, troverai questo tutorial coinvolgente, facile da seguire e ricco di tutti i dettagli di cui hai bisogno per portare a termine il lavoro. Pronto a tuffarti? Andiamo!
 
 ## Prerequisiti
 

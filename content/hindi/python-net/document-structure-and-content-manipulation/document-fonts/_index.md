@@ -54,12 +54,13 @@ url: /hi/python-net/document-structure-and-content-manipulation/document-fonts/
 ```python
 # Import the required classes
 from aspose.words import Document, Font, Style
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply italic style
 font = run.font
@@ -76,12 +77,13 @@ doc.save("modified_document.docx")
 ```python
 # Import the required classes
 from aspose.words import Document, Color
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific run of text
-run = doc.get_child_nodes().get(0).get_child(NodeType.RUN, 0, True)
+run = doc.get_child(aw.NodeType.RUN, 0, True).as_run()
 
 # Apply background color
 run.font.highlight_color = Color.YELLOW
@@ -97,15 +99,16 @@ doc.save("modified_document.docx")
 ```python
 # Import the required classes
 from aspose.words import Document, ParagraphAlignment
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set alignment
-paragraph.paragraph_format.alignment = ParagraphAlignment.RIGHT
+paragraph.paragraph_format.alignment = aw.ParagraphAlignment.RIGHT
 
 # Save the modified document
 doc.save("modified_document.docx")
@@ -118,12 +121,13 @@ doc.save("modified_document.docx")
 ```python
 # Import the required classes
 from aspose.words import Document, LineSpacingRule
+import aspose.words as aw
 
 # Load the document
 doc = Document("document.docx")
 
 # Access a specific paragraph
-paragraph = doc.get_child_nodes().get(0).get_child(NodeType.PARAGRAPH, 0, True)
+paragraph = doc.get_child(aw.NodeType.PARAGRAPH, 0, True).as_paragraph()
 
 # Set line spacing
 paragraph.paragraph_format.line_spacing_rule = LineSpacingRule.MULTIPLE
@@ -141,7 +145,7 @@ Aspose.Words for Python फ़ॉन्ट और टेक्स्ट स्�
 
 दस्तावेज़ निर्माण के क्षेत्र में, फ़ॉन्ट और टेक्स्ट स्टाइलिंग दृश्य अपील को बढ़ाने और जानकारी को प्रभावी ढंग से संप्रेषित करने के लिए शक्तिशाली उपकरण हैं। फ़ॉन्ट, टेक्स्ट स्टाइल की मूल बातें समझकर और पायथन के लिए Aspose.Words जैसे उपकरणों का उपयोग करके, आप ऐसे पेशेवर दस्तावेज़ बना सकते हैं जो आपके दर्शकों का ध्यान आकर्षित करें और बनाए रखें।
 
-## पूछे जाने वाले प्रश्न
+## अक्सर पूछे जाने वाले प्रश्न
 
 ### मैं Python के लिए Aspose.Words का उपयोग करके फ़ॉन्ट का रंग कैसे बदलूं?
 

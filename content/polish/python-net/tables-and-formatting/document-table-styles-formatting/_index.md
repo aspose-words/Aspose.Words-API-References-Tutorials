@@ -23,7 +23,7 @@ Zanim zagłębimy się w szczegóły dotyczące stylów i formatowania tabel dok
 2. Importowanie biblioteki: Zaimportuj bibliotekę Aspose.Words do skryptu Pythona, używając następującego polecenia importu:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. Załaduj dokument: Załaduj istniejący dokument lub utwórz nowy za pomocą interfejsu API Aspose.Words.
@@ -35,7 +35,7 @@ Aby utworzyć i wstawić tabele do dokumentów za pomocą Aspose.Words dla języ
 1.  Utwórz tabelę: Użyj`DocumentBuilder` Klasa umożliwiająca utworzenie nowej tabeli i określenie liczby wierszy i kolumn.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ Aby utworzyć i wstawić tabele do dokumentów za pomocą Aspose.Words dla języ
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. Wypełnienie komórek: Dodaj wypełnienie do komórek w celu poprawy odstępów.
@@ -80,32 +80,8 @@ Aby utworzyć i wstawić tabele do dokumentów za pomocą Aspose.Words dla języ
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Stylizowanie tabel za pomocą Aspose.Words
-
-Aspose.Words for Python oferuje szereg opcji stylizacji, dzięki którym tabele będą wyglądać atrakcyjnie:
-
-1. Style tabeli: Zastosuj predefiniowane style tabeli, aby uzyskać profesjonalny wygląd.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. Kolor tła komórki: Zmień kolor tła komórki, aby wyróżnić określone dane.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. Formatowanie czcionki: Dostosuj styl, rozmiar i kolor czcionki, aby zwiększyć czytelność.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## Łączenie i dzielenie komórek w przypadku złożonych układów
@@ -115,30 +91,14 @@ Tworzenie złożonych układów tabel często wymaga scalania i dzielenia komór
 1. Scalanie komórek: Scalanie wielu komórek w celu utworzenia jednej, większej komórki.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. Rozdzielanie komórek: Rozdzielanie komórek z powrotem na ich pojedyncze składniki.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## Dostosowywanie wysokości i szerokości wierszy i kolumn
-
-Dopasuj wymiary wierszy i kolumn, aby uzyskać zrównoważony układ tabeli:
-
-1. Dostosuj wysokość wiersza: Zmień wysokość wiersza na podstawie zawartości.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. Dostosuj szerokość kolumny: Automatyczne dostosowywanie szerokości kolumny do zawartości.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## Dodawanie obramowań i cieniowania do tabel
@@ -148,13 +108,13 @@ Ulepsz wygląd tabeli, dodając obramowania i cieniowanie:
 1. Obramowanie: Dostosuj obramowanie tabel i komórek.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. Cieniowanie: Zastosuj cieniowanie w komórkach, aby uzyskać atrakcyjny efekt wizualny.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## Praca z zawartością i wyrównaniem komórek
@@ -171,7 +131,7 @@ Skutecznie zarządzaj zawartością i wyrównaniem komórek, aby zapewnić lepsz
 2. Wyrównanie tekstu: Wyrównaj tekst komórki w razie potrzeby.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## Obsługa nagłówków i stopek tabeli
@@ -188,26 +148,10 @@ Aby uzyskać lepszy kontekst, dodaj do tabel nagłówki i stopki:
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## Automatyczne dostosowywanie układu tabeli
-
-Upewnij się, że układ tabeli dostosowuje się automatycznie na podstawie zawartości:
-
-1. Automatyczne dopasowanie do okna: umożliwia dopasowanie tabeli do szerokości strony.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. Automatyczna zmiana rozmiaru komórek: włącz automatyczną zmianę rozmiaru komórek w celu dopasowania ich do zawartości.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## Eksportowanie tabel do różnych formatów
 
 Gdy tabela będzie już gotowa, możesz wyeksportować ją do różnych formatów, takich jak PDF lub DOCX:
@@ -215,26 +159,20 @@ Gdy tabela będzie już gotowa, możesz wyeksportować ją do różnych formató
 1. Zapisz jako PDF: Zapisz dokument z tabelą jako plik PDF.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. Zapisz jako DOCX: Zapisz dokument jako plik DOCX.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## Rozwiązywanie problemów i wskazówki dotyczące efektywnego zarządzania tabelami
-
-- Jeśli tabele wydają się zniekształcone, sprawdź, czy szerokości kolumn i wysokości wierszy są nieprawidłowe.
-- Przetestuj renderowanie tabeli w różnych formatach, aby zapewnić spójność.
-- W przypadku skomplikowanych układów należy dokładnie zaplanować scalanie i dzielenie komórek.
-
+	
 ## Wniosek
 
 Aspose.Words for Python oferuje kompleksowy zestaw narzędzi do tworzenia, stylizowania i formatowania tabel dokumentów. Postępując zgodnie z krokami opisanymi w tym artykule, możesz skutecznie zarządzać tabelami w dokumentach, dostosowywać ich wygląd i eksportować je do różnych formatów. Wykorzystaj moc Aspose.Words, aby ulepszyć prezentacje dokumentów i zapewnić czytelnikom jasne, atrakcyjne wizualnie informacje.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak zainstalować Aspose.Words dla języka Python?
 

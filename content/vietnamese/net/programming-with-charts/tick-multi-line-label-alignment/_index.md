@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Bước 3: Sử dụng DocumentBuilder
 
-Các`DocumentBuilder` class trong Aspose.Words là một công cụ mạnh mẽ giúp xây dựng tài liệu. Chúng ta sẽ sử dụng nó để chèn biểu đồ vào tài liệu của mình.
+ Các`DocumentBuilder` class trong Aspose.Words là một công cụ mạnh mẽ giúp xây dựng tài liệu. Chúng ta sẽ sử dụng nó để chèn biểu đồ vào tài liệu của mình.
 
  Khởi tạo một thể hiện của`DocumentBuilder` lớp, truyền đối tượng tài liệu của chúng ta cho hàm tạo của nó.
 

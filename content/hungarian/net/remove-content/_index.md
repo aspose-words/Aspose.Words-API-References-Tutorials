@@ -16,7 +16,7 @@ Akár Word-dokumentumokat kell kezelnie, létrehoznia, konvertálnia vagy gener�
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Oldaltörések eltávolítása a Word dokumentumból](./remove-page-breaks/) | A lépésenkénti útmutatónkból megtudhatja, hogyan távolíthat el oldaltöréseket egy Word-dokumentumban az Aspose.Words for .NET használatával. Fejlessze dokumentumkezelési készségeit. |
+| [Oldaltörések eltávolítása a Word dokumentumból](./remove-page-breaks/) | A lépésenkénti útmutatónkból megtudhatja, hogyan távolíthat el oldaltöréseket egy Word-dokumentumban az Aspose.Words for .NET használatával. Növelje dokumentumkezelési készségeit. |
 | [Távolítsa el a szakasztöréseket a Word dokumentumból](./remove-section-breaks/) | Ismerje meg, hogyan távolíthatja el a szakasztöréseket a Word dokumentumokból az Aspose.Words for .NET használatával. Ez a részletes, lépésenkénti útmutató biztosítja a zökkenőmentes dokumentumkezelést és -szerkesztést.|
 | [Távolítsa el a lábléceket a Word dokumentumból](./remove-footers/) | Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan távolíthat el láblécet a Word dokumentumokból az Aspose.Words for .NET használatával. |
-| [Távolítsa el a tartalomjegyzéket a Word-dokumentumból](./remove-table-of-contents/) | Ismerje meg, hogyan távolíthatja el a tartalomjegyzéket egy Word-dokumentumból az Aspose.Words for .NET használatával. |
+| [Távolítsa el a tartalomjegyzéket a Word dokumentumból](./remove-table-of-contents/) | Ismerje meg, hogyan távolíthatja el a tartalomjegyzéket egy Word-dokumentumból az Aspose.Words for .NET használatával. |

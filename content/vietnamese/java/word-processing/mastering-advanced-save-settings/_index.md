@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /vi/java/word-processing/mastering-advanced-save-settings/
 ---
+
 Bạn đã sẵn sàng đưa kỹ năng xử lý tài liệu của mình lên một tầm cao mới chưa? Trong hướng dẫn toàn diện này, chúng ta sẽ đi sâu vào việc nắm vững các thiết lập lưu nâng cao cho tài liệu bằng Aspose.Words for Java. Cho dù bạn là một nhà phát triển dày dạn kinh nghiệm hay chỉ mới bắt đầu, chúng tôi sẽ hướng dẫn bạn qua những điều phức tạp của thao tác tài liệu bằng Aspose.Words for Java.
 
 ## Giới thiệu
@@ -25,13 +26,13 @@ Tìm hiểu cách chỉ định định dạng và hướng của tài liệu. C
 ```java
 // Đặt định dạng tài liệu thành DOCX
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
-// Đặt hướng trang thành Ngang
+//Đặt hướng trang thành Ngang
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## Kiểm soát lề trang
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 inch
 pageSetup.setRightMargin(72.0); // 1 inch
 pageSetup.setTopMargin(36.0); // 0,5 inch
 pageSetup.setBottomMargin(36.0); // 0,5 inch
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## Quản lý Header và Footer
@@ -56,11 +57,11 @@ Tiêu đề và chân trang thường chứa thông tin quan trọng. Khám phá
 ```java
 // Thêm tiêu đề vào trang đầu tiên
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## Nhúng phông chữ để xem đa nền tảng
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## Bảo vệ tài liệu của bạn
@@ -85,7 +86,7 @@ Vấn đề bảo mật, đặc biệt là khi xử lý các tài liệu nhạy 
 // Bảo vệ tài liệu bằng mật khẩu
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## Tùy chỉnh hình mờ
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## Tối ưu hóa kích thước tài liệu
@@ -111,7 +112,7 @@ Các tệp tài liệu lớn có thể khó sử dụng. Khám phá các kỹ th
 // Tối ưu hóa kích thước tài liệu
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## Xuất sang các định dạng khác nhau
@@ -121,7 +122,7 @@ doc.save("optimized_document.docx", SaveFormat.DOCX);
 ```java
 // Xuất sang PDF
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## Tự động hóa việc tạo tài liệu
@@ -133,7 +134,7 @@ Tự động hóa là một công cụ thay đổi cuộc chơi trong việc t�
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## Làm việc với siêu dữ liệu tài liệu
@@ -143,9 +144,8 @@ Siêu dữ liệu chứa thông tin có giá trị về một tài liệu. Chún
 ```java
 // Truy cập và sửa đổi siêu dữ liệu tài liệu
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## Xử lý các phiên bản tài liệu
@@ -153,18 +153,22 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 Phiên bản tài liệu rất quan trọng trong môi trường cộng tác. Tìm hiểu cách quản lý hiệu quả các phiên bản khác nhau của tài liệu.
 
 ```java
-// So sánh các phiên bản tài liệu
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+// So sánh các tài liệu với bản sửa đổi sẽ đưa ra ngoại lệ.
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## So sánh tài liệu nâng cao
+
+So sánh các tài liệu một cách chính xác bằng các kỹ thuật tiên tiến do Aspose.Words cung cấp cho Java.
 
 ```java
 // So sánh tài liệu nâng cao
@@ -217,7 +221,7 @@ Aspose.Words for Java hỗ trợ xuất tài liệu sang nhiều định dạng 
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Aspose.Words for Java có phù hợp để tạo tài liệu hàng loạt không?
@@ -228,7 +232,7 @@ Có, Aspose.Words for Java rất phù hợp để tạo tài liệu hàng loạt
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### Làm thế nào tôi có thể so sánh sự khác biệt giữa hai tài liệu Word?

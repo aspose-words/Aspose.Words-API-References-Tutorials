@@ -8,7 +8,7 @@ weight: 11
 url: /ru/python-net/document-structure-and-content-manipulation/document-comments/
 ---
 
-Комментарии играют важную роль в совместной работе и рецензировании документов, позволяя нескольким людям делиться своими мыслями и предложениями в документе Word. Aspose.Words для Python предоставляет мощный API, который позволяет разработчикам без усилий работать с комментариями в документах Word. В этой статье мы рассмотрим, как использовать функции комментариев в документах Word с помощью Aspose.Words для Python.
+Комментарии играют важную роль в совместной работе и рецензировании документов, позволяя нескольким людям обмениваться мыслями и предложениями в документе Word. Aspose.Words для Python предоставляет мощный API, который позволяет разработчикам без труда работать с комментариями в документах Word. В этой статье мы рассмотрим, как использовать функции комментариев в документах Word с помощью Aspose.Words для Python.
 
 ## Введение
 
@@ -66,19 +66,17 @@ comment = doc.comments[0]
 comment.text = "Updated insight: " + comment.text
 
 # Resolve a comment
-comment.resolved = True
-```
+comments = doc.get_child_nodes(aw.NodeType.COMMENT, True)
 
-## Обработка ответов и разговоров
+parent_comment = comments[0].as_comment()
+for child in parent_comment.replies:
+	child_comment = child.as_comment()
+	# Get comment parent and status.
+	print(child_comment.ancestor.id)
+	print(child_comment.done)
 
-Комментарии могут быть частью бесед, а ответы добавляют глубину обсуждениям. Aspose.Words для Python позволяет управлять ответами на комментарии:
-
-```python
-# Add a reply to a comment
-reply = aw.Comment(doc, "Alice", "I agree with John.")
-reply.parent_comment = comment
-reply.date_time = aw.DateTime.now()
-comment.replies.add(reply)
+	# And update comment Done mark.
+	child_comment.done = True
 ```
 
 ## Форматирование и стилизация комментариев

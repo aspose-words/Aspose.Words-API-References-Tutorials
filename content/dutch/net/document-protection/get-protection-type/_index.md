@@ -15,7 +15,7 @@ Hallo! Heb je je ooit afgevraagd hoe je het type bescherming van je Word-documen
 
 Voordat we met coderen beginnen, willen we eerst controleren of je alles hebt wat je nodig hebt:
 
-1.  Aspose.Words voor .NET-bibliotheek: Als u dat nog niet hebt gedaan, download en installeer dan de[Aspose.Words voor .NET-bibliotheek](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET-bibliotheek: Als u dat nog niet hebt gedaan, download en installeer dan de[Aspose.Words voor .NET-bibliotheek](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Een IDE zoals Visual Studio.
 3. Basiskennis van C#: Kennis van C#-programmering helpt u de cursus te volgen.
 
@@ -41,7 +41,7 @@ Allereerst, stel uw C#-project in Visual Studio in. Dit is hoe:
 
 ## Stap 2: Laad uw document
 
- Nu uw project is ingesteld, laden we het Word-document dat u wilt controleren. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw document.
+Nu uw project is ingesteld, laden we het Word-document dat u wilt controleren. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw document.
 
 ```csharp
 // Pad naar uw documentenmap
@@ -75,13 +75,13 @@ En daar heb je het! Je hebt het beveiligingstype van een Word-document succesvol
 Aspose.Words voor .NET is een krachtige bibliotheek waarmee u programmatisch Word-documenten kunt maken, bewerken, converteren en manipuleren.
 
 ### Kan ik Aspose.Words gratis gebruiken?
- Je kunt beginnen met een[gratis proefperiode](https://releases.aspose.com/) , maar voor volledige functionaliteit moet u een licentie aanschaffen. Bekijk de[aankoopopties](https://purchase.aspose.com/buy).
+ Je kunt beginnen met een[gratis proefperiode](https://releases.aspose.com/) maar voor volledige functionaliteit moet u een licentie aanschaffen. Bekijk de[aankoopopties](https://purchase.aspose.com/buy).
 
 ### Welke beschermingstypen kan Aspose.Words detecteren?
 Aspose.Words kan verschillende beveiligingstypen detecteren, zoals NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments en AllowOnlyFormFields.
 
 ### Hoe kan ik ondersteuning krijgen als ik problemen ondervind?
-Voor eventuele problemen kunt u terecht bij de[Aspose.Words ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.
+ Voor eventuele problemen kunt u terecht bij de[Aspose.Words ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.
 
 ### Is Aspose.Words compatibel met .NET Core?
 Ja, Aspose.Words is compatibel met zowel .NET Framework als .NET Core.

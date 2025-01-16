@@ -38,7 +38,7 @@ Bontsuk le a folyamatot egyszerű lépésekre:
 Document doc = new Document();
 ```
 
-## 2. lépés: Nyissa meg a téma objektumot
+## 2. lépés: Nyissa meg a témaobjektumot
 
 Ezután el kell érnie a`Theme` objektumot a dokumentumból. A`Theme` Az objektum a dokumentum témájához kapcsolódó tulajdonságokat tartalmaz, beleértve a betűtípusokat és a színeket.
 

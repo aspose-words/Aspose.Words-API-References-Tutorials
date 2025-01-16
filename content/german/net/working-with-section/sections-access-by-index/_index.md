@@ -10,7 +10,7 @@ url: /de/net/working-with-section/sections-access-by-index/
 
 ## Einführung
 
-Hallo, Dokument-Zauberer! 🧙‍♂️ Haben Sie sich schon einmal im Netz eines Word-Dokuments mit zahlreichen Abschnitten verheddert, von denen jeder eine magische Manipulation benötigt? Keine Angst, denn heute tauchen wir in die bezaubernde Welt von Aspose.Words für .NET ein. Wir werden lernen, wie man mit einigen einfachen, aber leistungsstarken Techniken auf Abschnitte in einem Word-Dokument zugreift und diese bearbeitet. Also schnappen Sie sich Ihren Programmierzauberstab und legen Sie los!
+Hallo, Dokument-Zauberer! 🧙‍♂️ Haben Sie sich schon einmal im Netz eines Word-Dokuments mit zahlreichen Abschnitten verheddert, von denen jeder eine magische Handhabe der Manipulation benötigt? Keine Angst, denn heute tauchen wir in die bezaubernde Welt von Aspose.Words für .NET ein. Wir werden lernen, wie man mit einigen einfachen, aber leistungsstarken Techniken auf Abschnitte in einem Word-Dokument zugreift und diese bearbeitet. Also schnappen Sie sich Ihren Programmierzauberstab und legen Sie los!
 
 ## Voraussetzungen
 

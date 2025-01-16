@@ -128,12 +128,12 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して、Word 文書にスタイリッシュな表を作成できました。この強力なライブラリを使用すると、Word 文書を自動化し、ニーズに合わせてカスタマイズすることが簡単になります。レポート、請求書、またはその他の種類の文書を作成する場合でも、Aspose.Words が役立ちます。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書にスタイリッシュな表を作成できました。この強力なライブラリを使用すると、Word 文書を自動化し、ニーズに合わせてカスタマイズすることが簡単になります。レポート、請求書、その他の種類の文書を作成する場合でも、Aspose.Words が役立ちます。
 
 ## よくある質問
 
 ### Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、開発者が C# を使用してプログラム的に Word 文書を作成、編集、操作できるようにする強力なライブラリです。
+Aspose.Words for .NET は、開発者が C# を使用してプログラムで Word 文書を作成、編集、操作できるようにする強力なライブラリです。
 
 ### Aspose.Words for .NET を使用して既存のテーブルにスタイルを設定できますか?
 はい、Aspose.Words for .NET を使用すると、Word 文書内の新しい表と既存の表の両方にスタイルを設定できます。

@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Schritt 3: DocumentBuilder initialisieren
 
-Der`DocumentBuilder` Klasse ist unser primäres Werkzeug zum Hinzufügen von Inhalten zum Dokument. Stellen Sie es sich als einen Stift vor, der auf die Arbeitsfläche des Word-Dokuments schreibt.
+ Der`DocumentBuilder` Klasse ist unser primäres Werkzeug zum Hinzufügen von Inhalten zum Dokument. Stellen Sie es sich als einen Stift vor, der auf die Arbeitsfläche des Word-Dokuments schreibt.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

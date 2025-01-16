@@ -65,7 +65,7 @@ for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 
 ## Lavorare con sezioni e intestazioni/piè di pagina:
 
-Dividi il tuo documento in sezioni e personalizza intestazioni e piè di pagina:
+Dividi il documento in sezioni e personalizza intestazioni e piè di pagina:
 
 ```python
 section = doc.sections[0]

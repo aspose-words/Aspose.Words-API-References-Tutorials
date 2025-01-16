@@ -38,9 +38,15 @@ Mari kita mulai dengan membuat dokumen Word baru dan menambahkan kotak teks ke d
 import aspose.words as aw
 
 doc = aw.Document()
-builder = aw.DocumentBuilder(doc)
-
-textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
+builder = aw.DocumentBuilder(doc=doc)
+textbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_BOX)
+textbox.width = 100
+textbox.height = 100
+textbox.text_box.layout_flow = aw.drawing.LayoutFlow.BOTTOM_TO_TOP
+textbox.append_child(aw.Paragraph(doc))
+builder.insert_node(textbox)
+builder.move_to(textbox.first_paragraph)
+builder.write('This text is flipped 90 degrees to the left.')
 ```
 
  Dalam kode ini, kita membuat yang baru`Document` dan sebuah`DocumentBuilder` . Itu`insert_text_box` Metode ini digunakan untuk menambahkan kotak teks ke dalam dokumen. Anda dapat menyesuaikan konten, posisi, dan ukuran kotak teks sesuai dengan kebutuhan Anda.

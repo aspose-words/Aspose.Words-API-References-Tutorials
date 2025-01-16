@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /th/python-net/word-automation/word-automation-made-easy/
 ---
-
 ## การแนะนำ
 
 ในโลกยุคปัจจุบันที่ทุกอย่างดำเนินไปอย่างรวดเร็ว การทำให้กระบวนการทำงานอัตโนมัติกลายมาเป็นสิ่งสำคัญในการปรับปรุงประสิทธิภาพและผลผลิต หนึ่งในกระบวนการดังกล่าวก็คือ การทำให้ Word Automation ซึ่งเราสามารถสร้าง จัดการ และประมวลผลเอกสาร Word ได้ด้วยการเขียนโปรแกรม ในบทช่วยสอนแบบทีละขั้นตอนนี้ เราจะมาสำรวจวิธีการทำให้ Word Automation เกิดขึ้นได้อย่างง่ายดายโดยใช้ Aspose.Words for Python ซึ่งเป็นไลบรารีที่มีประสิทธิภาพซึ่งมีคุณสมบัติมากมายสำหรับการประมวลผลคำและการจัดการเอกสาร
@@ -67,14 +66,27 @@ font.bold = True
 ตารางเป็นองค์ประกอบสำคัญในเอกสาร Word และ Aspose.Words ช่วยให้ทำงานกับตารางได้อย่างง่ายดาย
 
 ```python
-# Add a table to the document
-table = doc.get_child_nodes(aw.NodeType.TABLE, True).add()
-
-# Add rows and cells to the table
-table.ensure_minimum()
-for row in table.rows:
-    for cell in row.cells:
-        cell.get_first_paragraph().get_runs().add("Cell Text")
+builder = aw.DocumentBuilder(doc=doc)
+table = builder.start_table()
+builder.insert_cell()
+builder.write('City')
+builder.insert_cell()
+builder.write('Country')
+builder.end_row()
+builder.insert_cell()
+builder.write('London')
+builder.insert_cell()
+builder.write('U.K.')
+builder.end_table()
+# Use the first row's "RowFormat" property to modify the formatting
+# of the contents of all cells in this row.
+row_format = table.first_row.row_format
+row_format.height = 25
+row_format.borders.get_by_border_type(aw.BorderType.BOTTOM).color = aspose.pydrawing.Color.red
+# Use the "CellFormat" property of the first cell in the last row to modify the formatting of that cell's contents.
+cell_format = table.last_row.first_cell.cell_format
+cell_format.width = 100
+cell_format.shading.background_pattern_color = aspose.pydrawing.Color.orange
 ```
 
 ## การแทรกภาพและรูปทรง
@@ -107,7 +119,7 @@ section.page_setup.orientation = aw.Orientation.LANDSCAPE
 
 ```python
 # Save the document to a file
-doc.save("output.docx", aw.SaveFormat.DOCX)
+doc.save("output.docx")
 ```
 
 ## คุณสมบัติการทำงานอัตโนมัติของคำขั้นสูง

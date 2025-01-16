@@ -15,7 +15,7 @@ Ha valami díszes sorformázással szeretné feldobni Word-dokumentumait, akkor 
 
 Mielőtt belemerülnénk a kódba, győződjünk meg arról, hogy mindennel rendelkezünk, ami az induláshoz szükséges:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha még nem tette meg, letöltheti a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha még nem tette meg, letöltheti a webhelyről[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: AC# fejlesztői környezet, például a Visual Studio.
 3. Alapvető C# ismerete: A C# programozás ismerete elengedhetetlen.
 4. Dokumentumkönyvtár: Egy könyvtár, ahová a dokumentumot mentheti.

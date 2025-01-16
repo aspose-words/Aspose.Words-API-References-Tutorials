@@ -52,7 +52,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions();
 
 ### 제목 개요 수준 설정
 
-그만큼`HeadingsOutlineLevels` 속성은 PDF 개요에 포함해야 하는 제목 레벨 수를 정의합니다. 예를 들어, 3으로 설정하면 PDF 개요에 최대 3레벨의 제목이 포함됩니다.
+ 그만큼`HeadingsOutlineLevels` 속성은 PDF 개요에 포함해야 하는 제목 레벨 수를 정의합니다. 예를 들어, 3으로 설정하면 PDF 개요에 최대 3레벨의 제목이 포함됩니다.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### 확장된 개요 수준 설정
 
-그만큼`ExpandedOutlineLevels`속성은 PDF를 열 때 기본적으로 확장해야 하는 개요의 레벨 수를 제어합니다. 이를 1로 설정하면 최상위 제목이 확장되어 주요 섹션을 명확하게 볼 수 있습니다.
+ 그만큼`ExpandedOutlineLevels`속성은 PDF를 열 때 기본적으로 확장해야 하는 개요의 레벨 수를 제어합니다. 이를 1로 설정하면 최상위 제목이 확장되어 주요 섹션을 명확하게 볼 수 있습니다.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

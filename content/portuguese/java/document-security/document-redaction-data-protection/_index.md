@@ -18,7 +18,7 @@ Neste guia, exploraremos como redigir informações confidenciais de documentos 
 
 Antes de começarmos a trabalhar com Aspose.Words para Java, precisamos configurar nosso ambiente de desenvolvimento. Siga estes passos:
 
-1.  Baixe e instale o Aspose.Words para Java: Visite[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) para baixar a versão mais recente do Aspose.Words para Java.
+1.  Baixe e instale o Aspose.Words para Java: Visite[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)para baixar a versão mais recente do Aspose.Words para Java.
 
 2. Integre o Aspose.Words ao seu projeto: adicione os arquivos JAR do Aspose.Words ao seu projeto Java.
 

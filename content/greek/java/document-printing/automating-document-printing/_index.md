@@ -80,7 +80,7 @@ if (!pj.printDialog(attributes)) {
 
 ## Βήμα 4: Δημιουργήστε και διαμορφώστε το AsposeWordsPrintDocument
 
- Αυτό το βήμα περιλαμβάνει τη δημιουργία ενός`AsposeWordsPrintDocument` αντικείμενο απόδοσης του εγγράφου για εκτύπωση.
+ Αυτό το βήμα περιλαμβάνει τη δημιουργία ενός`AsposeWordsPrintDocument` αντικείµενο απόδοσης του εγγράφου για εκτύπωση.
 
 ```java
 AsposeWordsPrintDocument awPrintDoc = new AsposeWordsPrintDocument(doc);

@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Giải thích:
-Các`DocumentBuilder` là một công cụ tiện dụng cung cấp các phương pháp để điều hướng và sửa đổi tài liệu. Ở đây, chúng tôi đang liên kết nó với tài liệu đích của mình.
+ Các`DocumentBuilder` là một công cụ tiện dụng cung cấp các phương pháp để điều hướng và sửa đổi tài liệu. Ở đây, chúng tôi đang liên kết nó với tài liệu đích của mình.
 
 ## Bước 3: Di chuyển đến cuối tài liệu và chèn ngắt trang
 

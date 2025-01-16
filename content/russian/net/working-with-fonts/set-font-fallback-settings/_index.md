@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Шаг 3: Настройте параметры шрифта
 
-Создать новый`FontSettings` объект и загрузить настройки резервного шрифта из XML-файла. Этот XML-файл содержит правила резервного шрифта.
+ Создать новый`FontSettings` объект и загрузить настройки резервного шрифта из XML-файла. Этот XML-файл содержит правила резервного шрифта.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

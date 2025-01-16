@@ -14,7 +14,7 @@ Style i motywy są kluczowe w zachowaniu spójności i estetyki dokumentów. Sty
 
 ## Konfigurowanie środowiska
 
- Zanim przejdziemy do stylizacji, skonfigurujmy nasze środowisko programistyczne. Upewnij się, że masz zainstalowany Aspose.Words dla Pythona. Możesz go pobrać ze strony[Tutaj](https://releases.aspose.com/words/python/).
+Zanim przejdziemy do stylizacji, skonfigurujmy nasze środowisko programistyczne. Upewnij się, że masz zainstalowany Aspose.Words dla Pythona. Możesz go pobrać ze strony[Tutaj](https://releases.aspose.com/words/python/).
 
 ## Ładowanie i zapisywanie dokumentów
 
@@ -51,30 +51,8 @@ Style wpływają również na formatowanie akapitu. Dostosuj wyrównania, odstę
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## Dostosowywanie stylów nagłówków
-
-Nagłówki nadają dokumentom strukturę. Dostosuj style nagłówków, aby uzyskać lepszą hierarchię i czytelność.
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## Korzystanie z motywów w celu uzyskania jednolitego wyglądu
-
-Motywy oferują spójny wygląd. Zastosuj motyw do swojego dokumentu, aby uzyskać profesjonalny wygląd.
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## Modyfikowanie kolorów i czcionek motywu
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 Dostosuj motywy do swoich potrzeb, zmieniając kolory i czcionki motywu.
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## Tworzenie własnych stylów
-
-Twórz niestandardowe style dla wyjątkowych elementów dokumentów, dzięki czemu wyróżnisz swoją markę.
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## Zarządzanie stylem na podstawie części dokumentu
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 Zastosuj różne style do nagłówków, stopek i treści, aby uzyskać dopracowany wygląd.
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## Obsługa stylów w całym dokumencie
-
-Łatwe stosowanie stylu do całego dokumentu.
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## Czyszczenie formatowania i stylów
-
-Łatwo usuwaj style i formatowanie, aby zacząć od nowa.
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## Praktyczne przykłady i przypadki użycia
-
-Przyjrzyjmy się praktycznym scenariuszom, w których style i motywy mogą przekształcać dokumenty.
-
-1. Tworzenie raportów markowych
-2. Projektowanie oszałamiających życiorysów
-3. Formatowanie prac naukowych
-
-## Wskazówki dotyczące efektywnej stylizacji
-
-- Zachowaj spójność stylów
-- Użyj motywów do szybkich metamorfoz
-- Eksperymentuj z różnymi czcionkami i kolorami
 
 ## Wniosek
 
@@ -167,4 +109,4 @@ Motywy zapewniają spójny wygląd i styl poprzez grupowanie stylów, co skutkuj
 
 ### Czy można usunąć formatowanie z dokumentu?
 
- Tak, możesz łatwo usunąć formatowanie i style za pomocą`clear_formatting()` metoda udostępniona przez Aspose.Words dla Pythona.
+Tak, możesz łatwo usunąć formatowanie i style za pomocą`clear_formatting()` metoda udostępniona przez Aspose.Words dla Pythona.

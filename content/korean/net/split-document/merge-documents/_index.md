@@ -107,7 +107,7 @@ Aspose.Words for .NET은 개발자가 Word 문서를 프로그래밍 방식으�
 
 ### Aspose.Words for .NET에 대한 지원을 받으려면 어떻게 해야 하나요?
 
-방문하면 지원을 받을 수 있습니다.[Aspose 지원 포럼](https://forum.aspose.com/c/words/8).
+ 방문하면 지원을 받을 수 있습니다.[Aspose 지원 포럼](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words for .NET을 사용하여 다른 파일 형식을 병합할 수 있나요?
 

@@ -150,7 +150,7 @@ Opruimopties in Aspose.Words voor Java zijn instellingen waarmee u verschillende
 
 ###  Wat is het doel van de`REMOVE_UNUSED_REGIONS` cleanup option?
 
-De`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` optie wordt gebruikt om regio's in een document te verwijderen die geen corresponderende gegevens hebben tijdens het samenvoegproces. Het helpt uw document opgeruimd te houden door ongebruikte tijdelijke aanduidingen te verwijderen.
+ De`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` optie wordt gebruikt om regio's in een document te verwijderen die geen corresponderende gegevens hebben tijdens het samenvoegproces. Het helpt uw document opgeruimd te houden door ongebruikte tijdelijke aanduidingen te verwijderen.
 
 ### Kan ik lege tabelrijen uit een document verwijderen met Aspose.Words voor Java?
 
@@ -166,7 +166,7 @@ De`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` optie wordt gebruikt om regio'
 
 ###  Wat is het verschil tussen`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-De`REMOVE_EMPTY_FIELDS` optie verwijdert samenvoegvelden die geen gegevens bevatten of leeg zijn tijdens het samenvoegproces. Aan de andere kant, de`REMOVE_UNUSED_FIELDS`optie verwijdert samenvoegvelden die niet zijn gevuld met gegevens tijdens de samenvoeging. De keuze tussen deze twee hangt af van of u velden zonder inhoud wilt verwijderen of velden die niet worden gebruikt in de specifieke samenvoegbewerking.
+ De`REMOVE_EMPTY_FIELDS` optie verwijdert samenvoegvelden die geen gegevens bevatten of leeg zijn tijdens het samenvoegproces. Aan de andere kant, de`REMOVE_UNUSED_FIELDS`optie verwijdert samenvoegvelden die niet zijn gevuld met gegevens tijdens de samenvoeging. De keuze tussen deze twee hangt af van of u velden zonder inhoud wilt verwijderen of velden die niet worden gebruikt in de specifieke samenvoegbewerking.
 
 ### Hoe kan ik het verwijderen van alinea's met leestekens inschakelen?
 

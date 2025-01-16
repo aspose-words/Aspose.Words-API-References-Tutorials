@@ -191,7 +191,7 @@ Aspose.Words を使用すると、ドキュメント内の複数のセクショ�
 ```	
 copyHeadersFootersFromPreviousSection メソッドのソースコード
 ```java
-    /// <要約>
+    //<要約>
     //前のセクションのヘッダー/フッターを複製して、指定したセクションにコピーします。
     /// </要約>
     private void copyHeadersFootersFromPreviousSection(Section section)

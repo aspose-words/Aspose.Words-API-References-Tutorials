@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Drawing.Charts;
 ```
 
-我們將把這個過程分解為簡單的步驟，每個步驟都專注於定義圖表中 XY 軸屬性的特定部分。
+我們將把該過程分解為簡單的步驟，每個步驟都專注於定義圖表中 XY 軸屬性的特定部分。
 
 ## 第 1 步：初始化 Document 和 DocumentBuilder
 

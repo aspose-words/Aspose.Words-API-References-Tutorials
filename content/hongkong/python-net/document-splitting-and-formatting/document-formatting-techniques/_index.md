@@ -7,7 +7,7 @@ type: docs
 weight: 14
 url: /zh-hant/python-net/document-splitting-and-formatting/document-formatting-techniques/
 ---
-文檔格式在呈現具有視覺衝擊力的內容方面發揮關鍵作用。在程式設計領域，Aspose.Words for Python 是掌握文件格式化技術的強大工具。無論您是建立報告、產生發票還是設計小冊子，Aspose.Words 都使您能夠以程式設計方式操作文件。本文將指導您使用 Aspose.Words for Python 完成各種文件格式化技術，確保您的內容在風格和簡報方面脫穎而出。
+文檔格式在呈現具有視覺衝擊力的內容方面發揮關鍵作用。在程式設計領域，Aspose.Words for Python 是掌握文件格式化技術的強大工具。無論您是建立報告、產生發票還是設計小冊子，Aspose.Words 都使您能夠以程式設計方式操作文件。本文將指導您使用 Aspose.Words for Python 了解各種文件格式化技術，確保您的內容在風格和簡報方面脫穎而出。
 
 ## Python 版 Aspose.Words 簡介
 
@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## 應用程式字體樣式和大小
-
-透過套用字體樣式和大小來增強文件的可讀性和視覺吸引力。使用以下程式碼變更段落的字體樣式和大小：
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## 設定段落和標題的格式
+## 設定段落格式
 
 為了有效地建立文檔，格式化段落和標題至關重要。使用以下程式碼實現此目的：
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## 使用清單和項目符號
 
 清單和要點組織內容並提供清晰度。使用 Aspose.Words 實現它們：
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## 管理頁面佈局和邊距
+## 管理頁面佈局
 
 控制頁面佈局和邊距以實現最佳呈現：
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## 應用程式樣式和主題

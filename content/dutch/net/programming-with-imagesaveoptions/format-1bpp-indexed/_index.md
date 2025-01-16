@@ -9,7 +9,7 @@ url: /nl/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
 ## Invoering
 
-Heb je je ooit afgevraagd hoe je een Word-document kunt opslaan als een zwart-witafbeelding met slechts een paar regels code? Nou, dan heb je geluk! Vandaag duiken we in een handige kleine truc met Aspose.Words voor .NET waarmee je je documenten kunt converteren naar 1Bpp geïndexeerde afbeeldingen. Dit formaat is perfect voor bepaalde soorten digitale archivering, afdrukken of wanneer je ruimte moet besparen. We zullen elke stap uitleggen om het zo makkelijk mogelijk te maken. Klaar om te beginnen? Laten we erin duiken!
+Heb je je ooit afgevraagd hoe je een Word-document kunt opslaan als een zwart-witafbeelding met slechts een paar regels code? Nou, dan heb je geluk! Vandaag duiken we in een handige kleine truc met Aspose.Words voor .NET waarmee je je documenten kunt converteren naar 1Bpp geïndexeerde afbeeldingen. Dit formaat is perfect voor bepaalde soorten digitale archivering, afdrukken of wanneer je ruimte moet besparen. We zullen elke stap uitsplitsen om het zo makkelijk mogelijk te maken. Klaar om te beginnen? Laten we erin duiken!
 
 ## Vereisten
 

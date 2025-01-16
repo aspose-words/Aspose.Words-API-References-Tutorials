@@ -110,9 +110,9 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <sommario>
-/// Ottiene il documento di un intervallo di pagine.
+//Ottiene il documento di un intervallo di pagine.
 /// </sommario>
-//<param name="indiceInizio">
+/// <param name="indiceInizio">
 /// Indice basato su 1 della pagina iniziale.
 /// </parametro>
 /// <param name="endIndex">

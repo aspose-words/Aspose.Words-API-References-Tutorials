@@ -40,7 +40,7 @@ Po zaimportowaniu tych przestrzeni nazw możesz rozpocząć kodowanie!
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-Ten`LoadOptions` Klasa pozwala dostosować sposób ładowania dokumentów. Tutaj dopiero zaczynamy.
+ Ten`LoadOptions` Klasa pozwala dostosować sposób ładowania dokumentów. Tutaj dopiero zaczynamy.
 
 ## Krok 2: Dodaj język japoński jako język edycji
 
@@ -99,7 +99,7 @@ masz to! Udało Ci się dodać japoński jako język edycji do dokumentu za pomo
  Tak, potrzebujesz licencji do użytku komercyjnego. Możesz ją kupić[Tutaj](https://purchase.aspose.com/buy) lub uzyskaj tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### Jakie inne funkcje oferuje Aspose.Words dla .NET?
- Aspose.Words dla .NET oferuje szeroki zakres funkcji, w tym generowanie dokumentów, konwersję, manipulację i wiele więcej. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Aspose.Words dla .NET oferuje szeroki zakres funkcji, w tym generowanie dokumentów, konwersję, manipulację i wiele więcej. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### Czy mogę wypróbować Aspose.Words dla .NET przed zakupem?
  Oczywiście! Możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).

@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Krok 3: Włączanie ponownego uruchamiania numerowania stron:
 
- W tym samym`PageSetup` obiekt pierwszej sekcji dokumentu źródłowego, ustaw`RestartPageNumbering`nieruchomość do`true`Ten kluczowy krok nakazuje Aspose.Words ponowne zainicjowanie numeracji stron dla dołączonej zawartości.
+ W tym samym`PageSetup` obiekt pierwszej sekcji dokumentu źródłowego, ustaw`RestartPageNumbering`nieruchomość do`true`Ten kluczowy krok instruuje Aspose.Words, aby ponownie zainicjował numerację stron dla dołączonej zawartości.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

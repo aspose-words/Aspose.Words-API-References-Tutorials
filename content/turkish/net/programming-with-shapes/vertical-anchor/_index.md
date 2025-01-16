@@ -102,4 +102,4 @@ Evet, dikey sabitlemeyi diğer şekillerde de kullanabilirsiniz, ancak en yaygı
  Kesinlikle! Sadece kullan`TextBoxAnchor.Center` metni metin kutusu içinde dikey olarak ortalamak için.
 
 ### Aspose.Words for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
- Şuna bir göz atın:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) Daha fazla bilgi ve rehber için.
+ Şuna bir göz atın:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) Daha detaylı bilgi ve rehberler için.

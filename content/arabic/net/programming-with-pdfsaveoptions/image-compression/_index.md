@@ -15,7 +15,7 @@ url: /ar/net/programming-with-pdfsaveoptions/image-compression/
 
 قبل الخوض في البرنامج التعليمي، تأكد من توفر المتطلبات الأساسية التالية:
 
-1.  Aspose.Words for .NET: يجب أن يكون لديك Aspose.Words for .NET مثبتًا. يمكنك تنزيله من[موقع اسبوس](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: يجب أن يكون لديك Aspose.Words for .NET مثبتًا. يمكنك تنزيله من[موقع اسبوس](https://releases.aspose.com/words/net/).
 
 2. المعرفة الأساسية بلغة C#: ستساعدك المعرفة ببرمجة C# على فهم أمثلة التعليمات البرمجية المقدمة في هذا البرنامج التعليمي.
 

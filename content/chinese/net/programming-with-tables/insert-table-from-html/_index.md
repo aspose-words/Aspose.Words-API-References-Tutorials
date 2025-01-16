@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 第 2 步：创建新文档
 
-接下来，您将创建一个新的 Word 文档。此文档将作为您插入 HTML 表格的画布。
+接下来，您将创建一个新的 Word 文档。此文档将成为您插入 HTML 表格的画布。
 
 ```csharp
 Document doc = new Document();

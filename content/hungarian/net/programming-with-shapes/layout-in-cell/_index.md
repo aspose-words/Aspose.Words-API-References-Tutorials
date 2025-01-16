@@ -18,7 +18,7 @@ Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy mindennel rendel
 1.  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words for .NET könyvtár. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Szüksége lesz egy .NET-tel beállított fejlesztői környezetre. A Visual Studio nagyszerű választás, ha ajánlásokat keres.
 3. Alapvető C# ismerete: Bár minden lépést elmagyarázok, a C# alapvető ismerete segít a könnyebb követésben.
-4.  Dokumentumkönyvtár: Készítsen egy könyvtár elérési utat, ahová a dokumentumokat mentheti. Erre úgy fogunk hivatkozni`YOUR DOCUMENT DIRECTORY`.
+4.  Dokumentumkönyvtár: Készítsen egy könyvtár elérési utat, ahová a dokumentumokat mentheti. Ezt úgy fogjuk hivatkozni`YOUR DOCUMENT DIRECTORY`.
 
 ## Névterek importálása
 

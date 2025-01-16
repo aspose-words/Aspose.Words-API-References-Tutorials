@@ -15,7 +15,7 @@ Při práci s dokumenty aplikace Word může být zásadním úkolem zajistit, a
 
 Než se ponoříme do podrobného průvodce, ujistěte se, že máme vše, co potřebujeme:
 
-1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud ho ještě nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud ho ještě nemáte, můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Ujistěte se, že máte nastavené vývojové prostředí .NET. Visual Studio je vysoce doporučeno.
 3. Ukázkové dokumenty: Připravte si dva dokumenty aplikace Word, které chcete porovnat.
 
@@ -65,7 +65,7 @@ docA.Compare(docBClone, "user", DateTime.Now);
 
 ## Krok 5: Zkontrolujte revize
 
- Po porovnání dokumentů můžete zkontrolovat`Revisions` sběru, abyste zjistili, zda existují nějaké rozdíly. Pokud je sbírka prázdná, dokumenty jsou totožné.
+ Po porovnání dokumentů můžete zkontrolovat`Revisions` sběr, abyste zjistili, zda existují nějaké rozdíly. Pokud je sbírka prázdná, dokumenty jsou totožné.
 
 ```csharp
 Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");

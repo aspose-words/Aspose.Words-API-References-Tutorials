@@ -47,7 +47,7 @@ Most itt az ideje konvertálni a betöltött dokumentumot a kiválasztott kimene
 
 ```java
 // Konvertálja a dokumentumot PDF-be
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ## Következtetés

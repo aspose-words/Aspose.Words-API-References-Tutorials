@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-Der`PreferredWidth.Auto` Mit dieser Einstellung kann diese Zelle je nach dem verbleibenden Platz nach Berücksichtigung der anderen Zellen erweitert oder verkleinert werden. Dadurch wird sichergestellt, dass das Tabellenlayout ausgewogen und professionell aussieht.
+ Der`PreferredWidth.Auto` Mit dieser Einstellung kann diese Zelle je nach dem verbleibenden Platz nach Berücksichtigung der anderen Zellen erweitert oder verkleinert werden. Dadurch wird sichergestellt, dass das Tabellenlayout ausgewogen und professionell aussieht.
 
 ## Schritt 5: Dokument fertigstellen und speichern
 
@@ -111,7 +111,7 @@ Dieser Schritt finalisiert die Tabelle und speichert das Dokument unter dem Date
 
 ## Abschluss
 
-Das Erstellen von Tabellen mit bevorzugten Breiteneinstellungen in Aspose.Words für .NET ist unkompliziert, wenn Sie die verschiedenen verfügbaren Größenoptionen verstanden haben. Unabhängig davon, ob Sie feste, relative oder automatische Zellenbreiten benötigen, bietet Aspose.Words die Flexibilität, verschiedene Tabellenlayout-Szenarien effizient zu handhaben. Indem Sie die in diesem Handbuch beschriebenen Schritte befolgen, können Sie sicherstellen, dass Ihre Tabellen in Ihren Word-Dokumenten gut strukturiert und optisch ansprechend sind.
+Das Erstellen von Tabellen mit bevorzugten Breiteneinstellungen in Aspose.Words für .NET ist unkompliziert, wenn Sie die verschiedenen verfügbaren Größenoptionen kennen. Unabhängig davon, ob Sie feste, relative oder automatische Zellenbreiten benötigen, bietet Aspose.Words die Flexibilität, verschiedene Tabellenlayout-Szenarien effizient zu handhaben. Indem Sie die in diesem Handbuch beschriebenen Schritte befolgen, können Sie sicherstellen, dass Ihre Tabellen in Ihren Word-Dokumenten gut strukturiert und optisch ansprechend sind.
 
 ## Häufig gestellte Fragen
 

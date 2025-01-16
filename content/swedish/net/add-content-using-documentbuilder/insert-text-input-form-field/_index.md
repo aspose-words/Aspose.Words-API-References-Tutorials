@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Steg 3: Initiera DocumentBuilder
 
-De`DocumentBuilder` klass är vårt primära verktyg för att lägga till innehåll i dokumentet. Se det som en penna som skriver på Word-dokumentets duk.
+ De`DocumentBuilder` klass är vårt primära verktyg för att lägga till innehåll i dokumentet. Se det som en penna som skriver på Word-dokumentets duk.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

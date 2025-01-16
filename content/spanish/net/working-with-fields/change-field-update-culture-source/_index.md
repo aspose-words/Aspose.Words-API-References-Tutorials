@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ## Preguntas frecuentes
 
 ###  ¿Cuál es el propósito de establecer el`LocaleId`?
-El`LocaleId` especifica la configuración cultural del texto, lo que afecta cómo se formatean las fechas y otros datos sensibles a la configuración regional.
+ El`LocaleId` especifica la configuración cultural del texto, lo que afecta cómo se formatean las fechas y otros datos sensibles a la configuración regional.
 
 ### ¿Puedo utilizar una configuración regional distinta al alemán?
  Sí, puedes configurar el`LocaleId` cualquier identificador de configuración regional válido. Por ejemplo, 1033 para inglés (Estados Unidos).

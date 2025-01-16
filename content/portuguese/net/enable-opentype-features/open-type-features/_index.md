@@ -56,7 +56,7 @@ Crie uma variável de string para armazenar o caminho para o diretório do seu d
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real onde seu documento está localizado.
+ Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real onde seu documento está localizado.
 
 ### Carregando o documento
 

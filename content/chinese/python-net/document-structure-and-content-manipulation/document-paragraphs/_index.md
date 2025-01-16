@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## 基本文本格式
 
-在 Word 文档中格式化文本对于强调要点和提高可读性至关重要。Aspose.Words 允许您应用各种格式化选项，例如**bold**, *italic*、下划线和字体大小：
+在 Word 文档中格式化文本对于强调要点和提高可读性至关重要。 Aspose.Words 允许您应用各种格式化选项，例如粗体、斜体、下划线和字体大小：
 
 ```python
 # Apply basic text formatting
@@ -172,8 +172,6 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 ## 结论
 
 在本综合指南中，我们探索了 Aspose.Words for Python 在 Word 文档中格式化段落和文本的功能。通过使用这个强大的库，开发人员可以无缝地自动化文档格式化，确保其内容具有专业和精致的外观。
-
----
 
 ## 常见问题解答
 

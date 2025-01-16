@@ -54,7 +54,7 @@ Document doc = new Document(dataDir + "Document.docx");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
-그만큼`OoxmlSaveOptions`클래스를 사용하면 DOCX 파일을 저장하기 위한 다양한 옵션을 지정할 수 있습니다. 여기서는 다음을 설정합니다.`Password`재산에`"password"` . 교체할 수 있습니다`"password"` 원하는 비밀번호로. 이 비밀번호는 암호화된 DOCX 파일을 여는 데 필요합니다.
+ 그만큼`OoxmlSaveOptions`클래스를 사용하면 DOCX 파일을 저장하기 위한 다양한 옵션을 지정할 수 있습니다. 여기서는 다음을 설정합니다.`Password`재산에`"password"` . 교체할 수 있습니다`"password"` 원하는 비밀번호로. 이 비밀번호는 암호화된 DOCX 파일을 여는 데 필요합니다.
 
 ## 3단계: 암호화된 문서 저장
 
@@ -65,7 +65,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
-그만큼`Save` 의 방법`Document` 클래스는 문서를 저장하는 데 사용됩니다. 암호화된 문서의 경로와 파일 이름을 제공합니다.`saveOptions` 이전에 구성했습니다. 문서는 이제 암호화된 DOCX 파일로 저장됩니다.
+ 그만큼`Save` 의 방법`Document` 클래스는 문서를 저장하는 데 사용됩니다. 암호화된 문서의 경로와 파일 이름을 제공합니다.`saveOptions` 이전에 구성했습니다. 문서는 이제 암호화된 DOCX 파일로 저장됩니다.
 
 ## 결론
 

@@ -23,7 +23,7 @@ Trường là chỗ giữ chỗ trong tài liệu hiển thị dữ liệu độ
  Để chèn một trường, bạn có thể sử dụng`FieldBuilder` lớp. Ví dụ, để chèn trường ngày hiện tại:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Tự động tạo tài liệu với các trường
-
-Các trường là cần thiết để tạo tài liệu tự động. Bạn có thể điền dữ liệu từ các nguồn bên ngoài vào các trường:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Tích hợp các trường với các nguồn dữ liệu

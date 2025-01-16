@@ -7,6 +7,7 @@ type: docs
 weight: 13
 url: /cs/java/word-processing/mastering-advanced-save-settings/
 ---
+
 Jste připraveni posunout své dovednosti v oblasti zpracování dokumentů na další úroveň? V tomto komplexním průvodci se ponoříme hluboko do zvládnutí pokročilých nastavení ukládání dokumentů pomocí Aspose.Words for Java. Ať už jste zkušený vývojář nebo teprve začínáte, provedeme vás složitostí manipulace s dokumenty pomocí Aspose.Words for Java.
 
 ## Zavedení
@@ -25,13 +26,13 @@ Zjistěte, jak určit formát a orientaci dokumentů. Ať už se jedná o standa
 ```java
 // Nastavte formát dokumentu na DOCX
 Document doc = new Document();
-doc.save("output.docx", SaveFormat.DOCX);
+doc.save("output.docx");
 
-// Nastavte orientaci stránky na šířku
+//Nastavte orientaci stránky na šířku
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
-docLandscape.save("landscape.docx", SaveFormat.DOCX);
+docLandscape.save("landscape.docx");
 ```
 
 ## Ovládání okrajů stránek
@@ -46,7 +47,7 @@ pageSetup.setLeftMargin(72.0); // 1 palec
 pageSetup.setRightMargin(72.0); // 1 palec
 pageSetup.setTopMargin(36.0); // 0,5 palce
 pageSetup.setBottomMargin(36.0); // 0,5 palce
-doc.save("custom_margins.docx", SaveFormat.DOCX);
+doc.save("custom_margins.docx");
 ```
 
 ## Správa záhlaví a zápatí
@@ -56,11 +57,11 @@ Záhlaví a zápatí často obsahují důležité informace. Prozkoumejte, jak s
 ```java
 // Přidejte záhlaví na první stránku
 Document doc = new Document();
-Section section = doc.getSections().get(0);
+Section section = doc.getFirstSection();
 HeaderFooter header = section.getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_FIRST);
 header.appendChild(new Paragraph(doc));
 header.getFirstParagraph().appendChild(new Run(doc, "Header on the First Page"));
-doc.save("header_first_page.docx", SaveFormat.DOCX);
+doc.save("header_first_page.docx");
 ```
 
 ## Vkládání písem pro zobrazení napříč platformami
@@ -74,7 +75,7 @@ FontSettings fontSettings = new FontSettings();
 fontSettings.setFontsFolder("C:\\Windows\\Fonts", true);
 doc.setFontSettings(fontSettings);
 doc.getStyles().get(StyleIdentifier.NORMAL).getFont().setName("Arial");
-doc.save("embedded_fonts.docx", SaveFormat.DOCX);
+doc.save("embedded_fonts.docx");
 ```
 
 ## Ochrana vašich dokumentů
@@ -85,7 +86,7 @@ Na bezpečnosti záleží zejména při práci s citlivými dokumenty. Naučte s
 // Chraňte dokument heslem
 Document doc = new Document();
 doc.protect(ProtectionType.READ_ONLY, "my_password");
-doc.save("protected_document.docx", SaveFormat.DOCX);
+doc.save("protected_document.docx");
 ```
 
 ## Přizpůsobení vodoznaků
@@ -100,7 +101,7 @@ watermark.getTextPath().setText("Confidential");
 watermark.setWidth(100);
 watermark.setHeight(50);
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
-doc.save("watermarked_document.docx", SaveFormat.DOCX);
+doc.save("watermarked_document.docx");
 ```
 
 ## Optimalizace velikosti dokumentu
@@ -111,7 +112,7 @@ Velké soubory dokumentů mohou být nepraktické. Objevte techniky pro optimali
 // Optimalizujte velikost dokumentu
 Document doc = new Document("large_document.docx");
 doc.cleanup();
-doc.save("optimized_document.docx", SaveFormat.DOCX);
+doc.save("optimized_document.docx");
 ```
 
 ## Export do různých formátů
@@ -121,7 +122,7 @@ Někdy potřebujete svůj dokument v různých formátech. Aspose.Words for Java
 ```java
 // Export do PDF
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ## Automatizace generování dokumentů
@@ -133,7 +134,7 @@ Automatizace je pro generování dokumentů zásadní změnou. Naučte se automa
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ## Práce s metadaty dokumentu
@@ -143,9 +144,8 @@ Metadata obsahují cenné informace o dokumentu. Prozkoumáme, jak pracovat s me
 ```java
 // Přístup a úprava metadat dokumentu
 Document doc = new Document("document.docx");
-DocumentProperty authorProperty = doc.getBuiltInDocumentProperties().getAuthor();
-authorProperty.setValue("John Doe");
-doc.save("modified_metadata.docx", SaveFormat.DOCX);
+doc.getBuiltInDocumentProperties().setAuthor("John Doe");
+doc.save("modified_metadata.docx");
 ```
 
 ## Manipulace s verzemi dokumentů
@@ -153,18 +153,22 @@ doc.save("modified_metadata.docx", SaveFormat.DOCX);
 Verze dokumentů jsou klíčové v prostředích pro spolupráci. Zjistěte, jak efektivně spravovat různé verze vašich dokumentů.
 
 ```java
-// Porovnejte verze dokumentů
-Document doc1 = new Document("version1.docx");
-Document doc2 = new Document("version2.docx");
-DocumentComparer comparer = new DocumentComparer(doc1, doc2);
-comparer.compare("comparison_result.docx");
-``
+Document docOriginal = new Document();
+DocumentBuilder builder = new DocumentBuilder(docOriginal);
+builder.writeln("This is the original document.");
 
-`
+Document docEdited = new Document();
+builder = new DocumentBuilder(docEdited);
+builder.writeln("This is the edited document.");
 
-## Advanced Document Comparison
+// Porovnání dokumentů s revizemi vyvolá výjimku.
+if (docOriginal.getRevisions().getCount() == 0 && docEdited.getRevisions().getCount() == 0)
+	docOriginal.compare(docEdited, "authorName", new Date());
+```
 
-Compare documents with precision using advanced techniques provided by Aspose.Words for Java.
+## Pokročilé srovnání dokumentů
+
+Porovnejte dokumenty s přesností pomocí pokročilých technik poskytovaných Aspose.Words for Java.
 
 ```java
 // Pokročilé srovnání dokumentů
@@ -217,7 +221,7 @@ Aspose.Words for Java podporuje export dokumentů do různých formátů, včetn
 
 ```java
 Document doc = new Document("document.docx");
-doc.save("document.pdf", SaveFormat.PDF);
+doc.save("document.pdf");
 ```
 
 ### Je Aspose.Words for Java vhodný pro dávkové generování dokumentů?
@@ -228,7 +232,7 @@ Ano, Aspose.Words for Java se dobře hodí pro dávkové generování dokumentů
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, World!");
-doc.save("automated_document.docx", SaveFormat.DOCX);
+doc.save("automated_document.docx");
 ```
 
 ### Jak mohu porovnat rozdíly mezi dvěma dokumenty aplikace Word?

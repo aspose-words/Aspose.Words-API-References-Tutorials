@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Explication:
-Le`DocumentBuilder` est un outil pratique qui fournit des méthodes pour naviguer et modifier le document. Ici, nous le lions à notre document de destination.
+ Le`DocumentBuilder` est un outil pratique qui fournit des méthodes pour naviguer et modifier le document. Ici, nous le lions à notre document de destination.
 
 ## Étape 3 : Accédez à la fin du document et insérez un saut de page
 

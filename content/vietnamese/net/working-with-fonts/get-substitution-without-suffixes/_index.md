@@ -93,8 +93,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 Trong lớp này:
-- Các`Warning`phương pháp này ghi lại các cảnh báo liên quan đến việc thay thế phông chữ.
-- Các`FontWarnings` bộ sưu tập lưu trữ những cảnh báo này để kiểm tra hoặc ghi nhật ký sau này.
+-  Các`Warning`phương pháp này ghi lại các cảnh báo liên quan đến việc thay thế phông chữ.
+-  Các`FontWarnings` bộ sưu tập lưu trữ những cảnh báo này để kiểm tra hoặc ghi nhật ký sau này.
 
 ## Phần kết luận
 

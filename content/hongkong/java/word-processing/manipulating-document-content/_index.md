@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /zh-hant/java/word-processing/manipulating-document-content/
 ---
-
 ## 介紹
 
 在 Java 程式設計領域，高效率的文件管理是許多應用程式的重要面向。無論您是要產生報表、處理合約或處理任何與文件相關的任務，Aspose.Words for Java 都是您工具包中的強大工具。在本綜合指南中，我們將深入研究使用 Aspose.Words for Java 透過清理、欄位和 XML 資料來操作文件內容的複雜性。我們將提供逐步說明以及原始程式碼範例，以使您掌握掌握這個多功能庫所需的知識和技能。
@@ -50,7 +49,8 @@ doc.save("cleaned_document.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ doc.save("document_without_empty_paragraphs.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 透過執行這些步驟，您可以確保文件乾淨並準備好進行進一步操作。
-
----
 
 ## 使用字段
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 欄位為您的文件添加動態功能，從而增強其實用性。
 
----
-
-## 合併 XML 數據
-
-將 XML 資料整合到文件中的功能非常強大，尤其是對於產生動態內容而言。 Aspose.Words for Java 簡化了這個過程。
-
-### 綁定 XML 數據
-
-輕鬆將 XML 資料綁定到您的文件：
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://schemas.example'");
-doc.save("document_with_xml_data.docx");
-```
-
-該程式碼將 XML 資料綁定到文件的特定部分，使其成為動態且資料驅動的。
-
-## 常見問題 (FAQ)
-
-### 如何從文件中刪除空段落？
-   
-   若要從文件中刪除空段落，您可以迭代段落並刪除那些沒有文字內容的段落。這是一個可以幫助您實現此目的的程式碼片段：
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### 我可以透過程式設計方式更新文件中的所有欄位嗎？
-
-   是的，您可以使用 Aspose.Words for Java 以程式設計方式更新文件中的所有欄位。您可以這樣做：
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### 如何將 XML 資料綁定到文件？
-
-   使用 Aspose.Words for Java 將 XML 資料綁定到文件非常簡單。您可以使用 XML 映射來實現此目的。這是一個例子：
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://schemas.example'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### 清理文檔內容的重要性是什麼？
-
-   清理文件內容對於確保文件中不含不必要的元素非常重要，這可以提高可讀性並減少文件大小。它還有助於保持文件的一致性。
-
-### 如何從文件中刪除未使用的樣式？
-
-   您可以使用 Aspose.Words for Java 從文件中刪除未使用的樣式。這是一個例子：
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### Aspose.Words for Java 適合用 XML 資料產生動態文件嗎？
-
-   是的，Aspose.Words for Java 非常適合用 XML 資料產生動態文件。它提供了將 XML 資料綁定到模板和建立個人化文件的強大功能。
-
 ## 結論
 
 在這份內容廣泛的指南中，我們探索了使用 Aspose.Words for Java 透過清理、欄位和 XML 資料來操作文件內容的世界。您已經了解如何清理文件、使用欄位以及無縫合併 XML 資料。這些技能對於任何在 Java 應用程式中處理文件管理的人來說都是非常寶貴的。
+
+## 常見問題解答
+
+### 如何從文件中刪除空段落？
+   
+若要從文件中刪除空段落，您可以迭代段落並刪除那些沒有文字內容的段落。這是一個可以幫助您實現此目的的程式碼片段：
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### 我可以透過程式設計方式更新文件中的所有欄位嗎？
+
+是的，您可以使用 Aspose.Words for Java 以程式設計方式更新文件中的所有欄位。您可以這樣做：
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### 清理文檔內容的重要性是什麼？
+
+清理文件內容對於確保文件中不含不必要的元素非常重要，這可以提高可讀性並減少文件大小。它還有助於保持文件的一致性。
+
+### 如何從文件中刪除未使用的樣式？
+
+您可以使用 Aspose.Words for Java 從文件中刪除未使用的樣式。這是一個例子：
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### Aspose.Words for Java 適合用 XML 資料產生動態文件嗎？
+
+是的，Aspose.Words for Java 非常適合用 XML 資料產生動態文件。它提供了將 XML 資料綁定到模板和建立個人化文件的強大功能。

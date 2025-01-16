@@ -17,7 +17,7 @@ Bu eğitime başlamadan önce aşağıdaki ön koşulların mevcut olduğundan e
 - C# programlama dilinin temel bilgisi.
 - Sisteminizde Visual Studio yüklü.
 -  Projenize entegre edilmiş .NET kütüphanesi için Aspose.Words. Bunu şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/net/).
-- Aspose.Words for .NET'e erişim[belgeleme](https://reference.aspose.com/words/net/) Referans için.
+-  Aspose.Words for .NET'e erişim[belgeleme](https://reference.aspose.com/words/net/) Referans için.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -84,4 +84,4 @@ Evet, Aspose.Words for .NET'i kullanarak izlenen revizyonları programlı bir ş
 Aspose.Words for .NET, kapsamlı revizyon takibi içerenler de dahil olmak üzere büyük belgeleri verimli bir şekilde işlemek için optimize edilmiştir.
 
 ### Aspose.Words for .NET için daha fazla kaynak ve desteği nerede bulabilirim?
-Aspose.Words for .NET topluluğundan kapsamlı belgeleri inceleyebilir ve destek alabilirsiniz.[Aspose.Words Forum](https://forum.aspose.com/c/words/8).
+ Aspose.Words for .NET topluluğundan kapsamlı belgeleri inceleyebilir ve destek alabilirsiniz.[Aspose.Words Forum](https://forum.aspose.com/c/words/8).

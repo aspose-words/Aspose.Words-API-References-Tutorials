@@ -14,7 +14,7 @@ In questo tutorial, illustreremo il processo di creazione di una tabella con una
 ## Prerequisiti
 
 Prima di iniziare, assicurati di avere quanto segue:
-1.  Libreria Aspose.Words per .NET installata. Puoi scaricarla da[Sito web di Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words per la libreria .NET installata. Puoi scaricarla da[Sito web di Aspose](https://releases.aspose.com/words/net/).
 2. Conoscenza di base di C# e XML.
 
 ## Importazione degli spazi dei nomi

@@ -100,7 +100,7 @@ Parfois, une zone de texte peut faire partie d'une chaîne, avec d'autres zones 
 textBox.Previous?.BreakForwardLink();
 ```
 
-Le`?.` l'opérateur garantit que la méthode n'est appelée que si`Previous` n'est pas nul, évitant ainsi les erreurs d'exécution potentielles.
+ Le`?.` l'opérateur garantit que la méthode n'est appelée que si`Previous` n'est pas nul, évitant ainsi les erreurs d'exécution potentielles.
 
 ## Conclusion
 

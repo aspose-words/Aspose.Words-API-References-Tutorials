@@ -81,7 +81,7 @@ No, no lo hará. Dado que Arial y Times Roman son fuentes estándar, la aparienc
 Sí, puedes configurar las opciones de guardado para omitir la incrustación de otras fuentes si es necesario.
 
 ### ¿Aspose.Words para .NET es gratuito?
-Aspose.Words para .NET ofrece una prueba gratuita que puedes descargar[aquí](https://releases.aspose.com/) , pero para tener acceso completo, necesitas comprar una licencia[aquí](https://purchase.aspose.com/buy).
+ Aspose.Words para .NET ofrece una prueba gratuita que puedes descargar[aquí](https://releases.aspose.com/) , pero para tener acceso completo, necesitas comprar una licencia[aquí](https://purchase.aspose.com/buy).
 
 ### ¿Dónde puedo encontrar más tutoriales sobre Aspose.Words para .NET?
- Puede encontrar documentación completa y tutoriales.[aquí](https://reference.aspose.com/words/net/).
+Puede encontrar documentación completa y tutoriales.[aquí](https://reference.aspose.com/words/net/).

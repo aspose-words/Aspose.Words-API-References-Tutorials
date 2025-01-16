@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-El`Document` El objeto representa el documento de Word y el`DocumentBuilder` Ayuda a agregarle contenido.
+ El`Document` El objeto representa el documento de Word y el`DocumentBuilder` Ayuda a agregarle contenido.
 
 ## Paso 3: Definir la ruta de la imagen
 

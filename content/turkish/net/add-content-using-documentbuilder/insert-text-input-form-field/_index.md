@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Adım 3: DocumentBuilder'ı Başlatın
 
-The`DocumentBuilder` sınıf, belgeye içerik eklemek için birincil aracımızdır. Bunu Word belge tuvaline yazan bir kalem olarak düşünün.
+ The`DocumentBuilder` sınıf, belgeye içerik eklemek için birincil aracımızdır. Bunu Word belge tuvaline yazan bir kalem olarak düşünün.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

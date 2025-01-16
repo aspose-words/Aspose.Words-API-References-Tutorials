@@ -182,25 +182,11 @@ I det här exemplet ställer vi in justeringen av stycket till
 Att skapa listor med punkter eller numrering är en vanlig dokumentformateringsuppgift. Aspose.Words för Java gör det enkelt. Så här skapar du en punktlista:
 
 ```java
-// Skapa ett nytt dokument
-Document doc = new Document();
-
-// Skapa en lista
-List list = new List(doc);
-
-// Lägg till listobjekt med punkter
-list.getListFormat().setListType(ListTemplateType.BULLET_DEFAULT);
-list.getListFormat().setListLevelNumber(0);
-
-list.appendChild(new ListItem(doc, "Item 1"));
-list.appendChild(new ListItem(doc, "Item 2"));
-list.appendChild(new ListItem(doc, "Item 3"));
-
-// Lägg till listan i dokumentet
-doc.getFirstSection().getBody().appendChild(list);
-
-// Spara dokumentet
-doc.save("BulletedListDocument.docx");
+List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
+builder.getListFormat().setList(list);
+builder.writeln("Item 1");
+builder.writeln("Item 2");
+builder.writeln("Item 3");
 ```
 
 I den här koden skapar vi en punktlista med tre objekt.
@@ -210,24 +196,21 @@ I den här koden skapar vi en punktlista med tre objekt.
 Hyperlänkar är viktiga för att lägga till interaktivitet till dina dokument. Aspose.Words för Java låter dig infoga hyperlänkar enkelt. Här är ett exempel:
 
 ```java
-// Skapa ett nytt dokument
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Skapa ett stycke
-Paragraph para = new Paragraph(doc);
+builder.write("For more information, please visit the ");
 
-// Skapa en hyperlänk
-Hyperlink link = new Hyperlink(doc);
-link.setAddress("https://www.example.com");
-link.appendChild(new Run(doc, "Visit Example.com"));
+// Infoga en hyperlänk och framhäva den med anpassad formatering.
+// Hyperlänken kommer att vara en klickbar textbit som tar oss till den plats som anges i URL:en.
+builder.getFont().setColor(Color.BLUE);
+builder.getFont().setUnderline(Underline.SINGLE);
+builder.insertHyperlink("Google website", "https://www.google.com", false);
+builder.getFont().clearFormatting();
+builder.writeln(".");
 
-para.appendChild(link);
-
-// Lägg till stycket i dokumentet
-doc.getFirstSection().getBody().appendChild(para);
-
-// Spara dokumentet
-doc.save("HyperlinkDocument.docx");
+// Ctrl + vänsterklicka på länken i texten i Microsoft Word tar oss till URL:en via ett nytt webbläsarfönster.
+doc.save("InsertHyperlink.docx");
 ```
 
 Den här koden infogar en hyperlänk till "https://www.example.com" med texten "Besök exempel.com."
@@ -237,23 +220,7 @@ Den här koden infogar en hyperlänk till "https://www.example.com" med texten "
 Dokument kräver ofta visuella element som bilder och former. Aspose.Words för Java låter dig infoga bilder och former sömlöst. Så här lägger du till en bild:
 
 ```java
-// Skapa ett nytt dokument
-Document doc = new Document();
-
-// Skapa ett stycke
-Paragraph para = new Paragraph(doc);
-
-// Ladda en bild från en fil
-Shape image = new Shape(doc, ShapeType.IMAGE);
-image.getImageData().setImage("path/to/your/image.png");
-
-para.appendChild(image);
-
-// Lägg till stycket i dokumentet
-doc.getFirstSection().getBody().appendChild(para);
-
-// Spara dokumentet
-doc.save("ImageDocument.docx");
+builder.insertImage("path/to/your/image.png");
 ```
 
 I den här koden laddar vi en bild från en fil och infogar den i dokumentet.
@@ -287,27 +254,20 @@ I det här exemplet ställer vi in lika marginaler på 1 tum på alla sidor av s
 Sidhuvud och sidfötter är viktiga för att lägga till konsekvent information på varje sida i ditt dokument. Så här arbetar du med sidhuvuden och sidfötter:
 
 ```java
-// Skapa ett nytt dokument
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Öppna sidhuvudet och sidfoten i det första avsnittet
-HeaderFooter header = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.HEADER_PRIMARY);
-HeaderFooter footer = doc.getFirstSection().getHeadersFooters().getByHeaderFooterType(HeaderFooterType.FOOTER_PRIMARY);
+builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
+builder.write("Header Text");
+builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
-// Lägg till innehåll i rubriken
-Run headerRun = new Run(doc, "Header Text");
-header.appendChild(headerRun);
+builder.write("Page Number: ");
+builder.insertField(FieldType.FIELD_PAGE, true);
 
-// Lägg till innehåll i sidfoten
-Run footerRun = new Run(doc, "Page Number: ");
-footer.appendChild(footerRun);
-Field pageField = new Field(doc, FieldType.FIELD_PAGE);
-footer.appendChild(pageField);
-
-// Lägg till innehåll i dokumentets brödtext
+// Lägg till innehåll i dokumentets brödtext.
 // ...
 
-// Spara dokumentet
+// Spara dokumentet.
 doc.save("HeaderFooterDocument.docx");
 ```
 
@@ -318,26 +278,45 @@ I den här koden lägger vi till innehåll i både sidhuvudet och sidfoten i dok
 Tabeller är ett kraftfullt sätt att organisera och presentera data i dina dokument. Aspose.Words för Java ger omfattande stöd för att arbeta med tabeller. Här är ett exempel på hur du skapar en tabell:
 
 ```java
-// Skapa ett nytt dokument
 Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Skapa en tabell med 3 rader och 3 kolumner
-Table table = new Table(doc);
-table.ensureMinimum();
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
-table.getRows().add(new Row(doc));
+builder.startTable();
 
-// Lägg till innehåll i tabellcellerna
-table.getFirstRow().getCells().get(0).appendChild(new Paragraph(doc, "Row 1, Cell 1"));
-table.getFirstRow().getCells().get(1).appendChild(new Paragraph(doc, "Row 1, Cell 2"));
-table.getFirstRow().getCells().get(2).appendChild(new Paragraph(doc, "Row 1, Cell 3"));
+builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-//Lägg till tabellen i dokumentet
-doc.getFirstSection().getBody().appendChild(table);
+builder.insertCell();
+builder.write("Row 1, Col 1");
 
-// Spara dokumentet
-doc.save("TableDocument.docx");
+builder.insertCell();
+builder.write("Row 1, Col 2");
+builder.endRow();
+
+// Om du ändrar formateringen tillämpas den på den aktuella cellen,
+// och eventuella nya celler som vi skapar med byggaren efteråt.
+// Detta kommer inte att påverka de celler som vi har lagt till tidigare.
+builder.getCellFormat().getShading().clearFormatting();
+
+builder.insertCell();
+builder.write("Row 2, Col 1");
+
+builder.insertCell();
+builder.write("Row 2, Col 2");
+
+builder.endRow();
+
+// Öka radhöjden så att den passar den vertikala texten.
+builder.insertCell();
+builder.getRowFormat().setHeight(150.0);
+builder.getCellFormat().setOrientation(TextOrientation.UPWARD);
+builder.write("Row 3, Col 1");
+
+builder.insertCell();
+builder.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
+builder.write("Row 3, Col 2");
+
+builder.endRow();
+builder.endTable();
 ```
 
 I den här koden skapar vi en enkel tabell med tre rader och tre kolumner.
@@ -354,7 +333,7 @@ Document doc = new Document();
 // ...
 
 // Spara dokumentet som en PDF
-doc.save("Document.pdf", SaveFormat.PDF);
+doc.save("Document.pdf");
 ```
 
 Detta kodavsnitt sparar dokumentet som en PDF-fil.
@@ -393,7 +372,7 @@ Ja, du kan enkelt konvertera ett dokument till PDF med Aspose.Words för Java. H
 
 ```java
 Document doc = new Document("input.docx");
-doc.save("output.pdf", SaveFormat.PDF);
+doc.save("output.pdf");
 ```
 
 ### Hur formaterar jag text som
@@ -414,7 +393,7 @@ Du kan kolla på Aspose-webbplatsen eller Maven-förrådet för den senaste vers
 Ja, Aspose.Words för Java är kompatibelt med Java 11 och senare versioner.
 
 ### Hur kan jag ställa in sidmarginaler för specifika delar av mitt dokument?
-Du kan ställa in sidmarginaler för specifika delar av ditt dokument med hjälp av`PageSetup` klass. Här är ett exempel:
+ Du kan ställa in sidmarginaler för specifika delar av ditt dokument med hjälp av`PageSetup` klass. Här är ett exempel:
 
 ```java
 Section section = doc.getSections().get(0); // Skaffa det första avsnittet
@@ -427,6 +406,6 @@ pageSetup.setBottomMargin(72); // Nedre marginal i poäng
 
 ## Slutsats
 
-I den här omfattande guiden har vi utforskat de kraftfulla funktionerna i Aspose.Words för Java för att utforma stycken och text i dokument. Du har lärt dig hur du skapar, formaterar och förbättrar dina dokument programmatiskt, från grundläggande textmanipulering till avancerade funktioner. Aspose.Words för Java ger utvecklare möjlighet att automatisera dokumentformateringsuppgifter effektivt. Fortsätt att öva och experimentera med olika funktioner för att bli skicklig i dokumentstil med Aspose.Words för Java.
+den här omfattande guiden har vi utforskat de kraftfulla funktionerna i Aspose.Words för Java för att utforma stycken och text i dokument. Du har lärt dig hur du skapar, formaterar och förbättrar dina dokument programmatiskt, från grundläggande textmanipulering till avancerade funktioner. Aspose.Words för Java ger utvecklare möjlighet att automatisera dokumentformateringsuppgifter effektivt. Fortsätt att öva och experimentera med olika funktioner för att bli skicklig i dokumentstil med Aspose.Words för Java.
 
 Nu när du har en gedigen förståelse för hur du formaterar stycken och text i dokument med Aspose.Words för Java, är du redo att skapa vackert formaterade dokument skräddarsydda för dina specifika behov. Glad kodning!

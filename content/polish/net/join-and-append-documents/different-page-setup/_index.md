@@ -80,7 +80,7 @@ srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 
 ## Krok 4: Dopasuj ustawienia konfiguracji strony
 
-Aby uniknąć niespójności układu, upewnij się, że ustawienia strony w pierwszej sekcji dokumentu źródłowego są zgodne z ustawieniami w ostatniej sekcji dokumentu docelowego.
+Aby uniknąć jakichkolwiek niespójności układu, upewnij się, że ustawienia strony w pierwszej sekcji dokumentu źródłowego są zgodne z ustawieniami w ostatniej sekcji dokumentu docelowego.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;

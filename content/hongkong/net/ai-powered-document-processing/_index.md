@@ -33,4 +33,4 @@ url: /zh-hant/net/ai-powered-document-processing/
 | [使用 AI 模型](./working-with-ai-model/) | 了解如何使用 Aspose.Words for .NET 透過 AI 總結文件。增強文件管理的簡單步驟。 |
 | [使用 Google AI 模型](./working-with-google-ai-model/) | 使用 Aspose.Words for .NET 和 Google AI 提昇文件處理能力，輕鬆建立簡潔的摘要。 |
 | [使用開放人工智慧模型](./working-with-open-ai-model/) | 使用 Aspose.Words for .NET 和 OpenAI 強大的模型來解鎖高效的文件摘要。現在就深入了解這份綜合指南。 |
-| [使用匯總選項](./working-with-summarize-options/) | 學習使用 Aspose.Words for .NET 有效總結 Word 文檔，以及我們有關整合 AI 模型的逐步指南，以獲取快速見解。 |
+| [使用匯總選項](./working-with-summarize-options/) | 透過我們有關整合 AI 模型的逐步指南來快速獲得見解，學習使用 Aspose.Words for .NET 有效總結 Word 文件。 |

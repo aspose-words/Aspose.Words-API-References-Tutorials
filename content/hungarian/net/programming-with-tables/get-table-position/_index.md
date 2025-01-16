@@ -14,7 +14,7 @@ Előfordult már, hogy a pácban találta magát, amikor megpróbálta kitaláln
 ## Előfeltételek
 
 Mielőtt belevágnánk az apróságokba, győződjünk meg arról, hogy mindennel megvan, amire szüksége van:
--  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 - Visual Studio: Bármelyik verzió megfelel, de mindig a legújabb ajánlott.
 - .NET-keretrendszer: Győződjön meg arról, hogy rendelkezik a .NET-keretrendszer 4.0-s vagy újabb verziójával.
 - Word-dokumentum: Ehhez az oktatóanyaghoz a következő dokumentumot fogjuk használni`Tables.docx`.

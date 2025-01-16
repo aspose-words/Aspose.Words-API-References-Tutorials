@@ -17,16 +17,16 @@ Pole formuláře jsou interaktivní prvky v dokumentu, které umožňují uživa
 
 Než se ponoříme do vytváření a ovládání formulářových polí, nastavíme naše prostředí a seznámíme se s Aspose.Words pro Python. Chcete-li začít, postupujte takto:
 
-1. **Install Aspose.Words:** Začněte instalací knihovny Aspose.Words pro Python pomocí následujícího příkazu pip:
+1. Instalace Aspose.Words: Začněte instalací knihovny Aspose.Words pro Python pomocí následujícího příkazu pip:
    
    ```python
    pip install aspose-words
    ```
 
-2. **Import the Library:** Importujte knihovnu do svého skriptu Python a začněte používat její funkce.
+2. Import knihovny: Importujte knihovnu do skriptu Python, abyste mohli začít používat její funkce.
    
    ```python
-   import aspose.words
+   import aspose.words as aw
    ```
 
 S nastavením přejdeme k základním konceptům vytváření a správy polí formuláře.
@@ -41,7 +41,7 @@ Pole pro zadávání textu umožňují uživatelům zadávat text. Chcete-li vyt
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 ### Zaškrtávací políčka a přepínače
@@ -50,21 +50,21 @@ Zaškrtávací políčka a přepínače se používají pro výběr z více mož
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 ### Rozbalovací seznamy
 
-Rozbalovací seznamy poskytují uživatelům výběr možností. Vytvořte jej takto:
+Rozbalovací seznamy poskytují uživatelům výběr možností. Vytvořte si ho takto:
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 ### Výběr data
@@ -73,7 +73,7 @@ Výběr data umožňuje uživatelům pohodlně vybírat data. Postup vytvoření
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 ## Nastavení vlastností polí formuláře
@@ -122,7 +122,7 @@ Pole pro zadávání textu jsou univerzální a běžně se používají pro zac
 
 ```python
 # Create a new text input form field
-text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
+text_input_field = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_TEXT, 100, 100, 200, 20)
 ```
 
 Jakmile je pole vytvořeno, můžete nastavit jeho vlastnosti, jako je název, výchozí hodnota a zástupný text. Podívejme se, jak na to:
@@ -150,14 +150,14 @@ Chcete-li vytvořit zaškrtávací pole formuláře, použijte
 
 ```python
 # Create a checkbox form field
-checkbox = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
+checkbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.CHECK_BOX, 100, 150, 15, 15)
 ```
 
 Přepínače můžete vytvořit pomocí typu tvaru OLE_OBJECT:
 
 ```python
 # Create a radio button form field
-radio_button = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
+radio_button = aw.drawing.Shape(doc, aw.drawing.ShapeType.OLE_OBJECT, 100, 200, 15, 15)
 ```
 
 Po vytvoření těchto polí můžete upravit jejich vlastnosti, jako je název, výchozí výběr a text štítku:
@@ -183,7 +183,7 @@ Rozbalovací seznamy jsou užitečné pro scénáře, kdy uživatelé potřebuj�
 
 ```python
 # Create a drop-down list form field
-drop_down = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
+drop_down = aw.drawing.Shape(doc, aw.drawing.ShapeType.COMBO_BOX, 100, 250, 100, 20)
 ```
 
 Po vytvoření rozevíracího seznamu můžete určit seznam možností dostupných uživatelům:
@@ -211,7 +211,7 @@ Nástroje pro výběr data zjednodušují proces získávání dat od uživatel�
 
 ```python
 # Create a date picker form field
-date_picker = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
+date_picker = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_INPUT_DATE, 100, 300, 100, 20)
 ```
 
 Po vytvoření nástroje pro výběr data můžete nastavit jeho vlastnosti, jako je název a výchozí datum:
@@ -228,13 +228,9 @@ Nástroje pro výběr data vylepšují uživatelskou zkušenost při zachycován
 
 ## Závěr
 
-Zvládnutí polí formulářů a zachycování dat v dokumentech aplikace Word je cenná dovednost, která vám umožňuje vytvářet interaktivní a efektivní dokumenty pro sběr dat. Aspose.Words pro Python poskytuje komplexní sadu nástrojů pro vytváření, přizpůsobení a extrahování dat z polí formuláře. Od jednoduchých polí pro zadávání textu až po složité výpočty a podmíněné formátování, možnosti jsou obrovské.
-
 V této příručce jsme prozkoumali základy polí formuláře, typy polí formuláře, nastavení vlastností a přizpůsobení jejich chování. Dotkli jsme se také osvědčených postupů pro návrh formulářů a nabídli pohledy na optimalizaci formulářů dokumentů pro vyhledávače.
 
-Využitím výkonu Aspose.Words pro Python můžete vytvářet dokumenty, které nejen efektivně zachycují data, ale také zvyšují zapojení uživatelů a zefektivňují pracovní postupy zpracování dat. Nyní jste připraveni vydat se na cestu stát se mistrem polí formulářů a zachycování dat v dokumentech aplikace Word.
-
-## Nejčastější dotazy
+## FAQ
 
 ### Jak nainstaluji Aspose.Words pro Python?
 

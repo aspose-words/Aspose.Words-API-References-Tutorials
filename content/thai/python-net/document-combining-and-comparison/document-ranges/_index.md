@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## การรวมเอกสาร
-
-การรวมเอกสารเข้าด้วยกันอย่างราบรื่นถือเป็นทักษะที่มีค่า การนำทางผ่านเอกสารช่วยให้เรารวมเอกสารได้อย่างมีประสิทธิภาพ:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## การแยกเอกสาร
 
 บางครั้งเราอาจจำเป็นต้องแบ่งเอกสารออกเป็นส่วนย่อยๆ การนำทางเอกสารช่วยให้เราบรรลุเป้าหมายดังกล่าวได้:
@@ -117,8 +109,8 @@ for section in sections:
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

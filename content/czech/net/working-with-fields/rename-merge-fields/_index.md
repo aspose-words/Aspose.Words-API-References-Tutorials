@@ -9,7 +9,7 @@ url: /cs/net/working-with-fields/rename-merge-fields/
 ---
 ## Zavedení
 
-Přejmenování slučovacích polí v dokumentech aplikace Word může být náročný úkol, pokud nejste obeznámeni se správnými nástroji a technikami. Ale nebojte se, mám vás zajištěné! V této příručce se ponoříme do procesu přejmenování slučovacích polí pomocí Aspose.Words for .NET, výkonné knihovny, se kterou je manipulace s dokumenty hračkou. Ať už jste zkušený vývojář nebo teprve začínáte, tento návod vás krok za krokem provede vším, co potřebujete vědět.
+Přejmenování slučovacích polí v dokumentech aplikace Word může být náročný úkol, pokud nejste obeznámeni se správnými nástroji a technikami. Ale nebojte se, mám vás v pořádku! V této příručce se ponoříme do procesu přejmenování slučovacích polí pomocí Aspose.Words for .NET, výkonné knihovny, se kterou je manipulace s dokumenty hračkou. Ať už jste zkušený vývojář nebo teprve začínáte, tento návod vás krok za krokem provede vším, co potřebujete vědět.
 
 ## Předpoklady
 

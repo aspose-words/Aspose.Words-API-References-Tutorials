@@ -43,7 +43,7 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.setConvertShapeToOfficeMath(true);
 
 Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 ```
 
  Ez a kód bemutatja, hogyan lehet alakzatokat Office Math objektummá konvertálni a dokumentumbetöltés során. A`setConvertShapeToOfficeMath(true)`módszer lehetővé teszi ezt az átalakítást.
@@ -136,7 +136,7 @@ public void convertShapeToOfficeMath() throws Exception {
 		loadOptions.setConvertShapeToOfficeMath(true);
 	}
 	Document doc = new Document("Your Directory Path" + "Office math.docx", loadOptions);
-	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
+	doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx");
 }
 @Test
 public void setMsWordVersion() throws Exception {
@@ -210,4 +210,4 @@ Ebben az oktatóanyagban az Aspose.Words for Java betöltési beállításaival 
 
 ###  Mi a célja a`setTempFolder` method in Load Options?
 
-A`setTempFolder`metódus lehetővé teszi annak a mappának a megadását, ahol a dokumentumfeldolgozás során ideiglenes fájlokat tárolnak.
+ A`setTempFolder`metódus lehetővé teszi annak a mappának a megadását, ahol a dokumentumfeldolgozás során ideiglenes fájlokat tárolnak.

@@ -61,7 +61,7 @@ Da die Tabelle nun zugänglich ist, besteht der nächste Schritt darin, die erst
 Row firstRow = table.FirstRow;
 ```
 
-Der`FirstRow` -Eigenschaft gibt uns die erste Zeile in der Tabelle. Jetzt können wir mit der Änderung der Formatierung beginnen.
+ Der`FirstRow` -Eigenschaft gibt uns die erste Zeile in der Tabelle. Jetzt können wir mit der Änderung der Formatierung beginnen.
 
 ## Schritt 4: Zeilenränder ändern
 

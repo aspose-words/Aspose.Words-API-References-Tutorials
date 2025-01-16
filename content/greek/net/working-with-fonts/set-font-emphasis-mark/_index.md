@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 // Αρχικοποιήστε ένα νέο Έγγραφο
 Document document = new Document();
 
-// Αρχικοποιήστε το DocumentBuilder με το έγγραφο
+// Εκκινήστε το DocumentBuilder με το έγγραφο
 DocumentBuilder builder = new DocumentBuilder(document);
 ```
 

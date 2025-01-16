@@ -15,7 +15,7 @@ Aspose.Words para .NET es una potente biblioteca para manejar documentos de Word
 
 Antes de pasar al código, asegurémonos de que tienes todo configurado:
 
-1.  Aspose.Words para .NET: Necesita tener instalado Aspose.Words para .NET. Puede descargarlo desde el sitio web[Página de lanzamientos de Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words para .NET: Necesita tener instalado Aspose.Words para .NET. Puede descargarlo desde el sitio web[Página de lanzamientos de Aspose](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro entorno de desarrollo de C#.
 3. Conocimientos básicos de C#: será beneficioso comprender los conceptos básicos de programación de C#.
 
@@ -39,7 +39,7 @@ Antes de comenzar a manipular el documento, debe definir la ruta al directorio d
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real donde desea guardar sus documentos.
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde desea guardar sus documentos.
 
 ## Paso 2: Crear un nuevo documento
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## Paso 4: Reemplazo de texto mediante el carácter meta de salto de párrafo
 
- Los metacaracteres pueden representar varios elementos como párrafos, tabulaciones y saltos de línea. Aquí, usamos`&p` para representar un salto de párrafo.
+Los metacaracteres pueden representar varios elementos como párrafos, tabulaciones y saltos de línea. Aquí, usamos`&p` para representar un salto de párrafo.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");

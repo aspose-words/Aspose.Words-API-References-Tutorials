@@ -62,7 +62,7 @@ Document firstDoc = new Document(MyDir + "Big document.docx");
 Document secondDoc = new Document(MyDir + "Document.docx");
 ```
 
-Der`Document` Mit der Klasse von Aspose.Words können Sie Word-Dateien in den Speicher laden. Stellen Sie sicher, dass die Dateinamen mit den tatsächlichen Dokumenten in Ihrem Verzeichnis übereinstimmen, sonst treten Fehler auf, bei denen die Datei nicht gefunden wurde!
+ Der`Document` Mit der Klasse von Aspose.Words können Sie Word-Dateien in den Speicher laden. Stellen Sie sicher, dass die Dateinamen mit den tatsächlichen Dokumenten in Ihrem Verzeichnis übereinstimmen, sonst treten Fehler auf, bei denen die Datei nicht gefunden wurde!
 
 ## Schritt 3: Abrufen des API-Schlüssels
 

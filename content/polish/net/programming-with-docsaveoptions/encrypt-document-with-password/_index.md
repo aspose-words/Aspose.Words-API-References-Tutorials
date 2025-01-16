@@ -91,7 +91,7 @@ masz to! Właśnie nauczyłeś się, jak zaszyfrować dokument hasłem, używaj�
 ## Najczęściej zadawane pytania
 
 ### Czy mogę użyć innego typu szyfrowania?
- Tak, Aspose.Words dla .NET obsługuje różne metody szyfrowania. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Tak, Aspose.Words dla .NET obsługuje różne metody szyfrowania. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać więcej szczegółów.
 
 ### Co się stanie, jeśli zapomnę hasła do dokumentu?
 Niestety, jeśli zapomnisz hasła, nie będziesz mieć dostępu do dokumentu. Upewnij się, że Twoje hasła są bezpieczne!

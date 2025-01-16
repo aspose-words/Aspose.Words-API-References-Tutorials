@@ -38,7 +38,7 @@ is_root: true
 | [使用 Sdt 進行文字處理](./programming-with-sdt/) | 了解如何在 Aspose.Words for .NET 中使用結構化內容控制項 (SDT) 進行程式設計。按照 C# 中的逐步教學和範例程式碼操作和自訂 Word 文件中的結構化內容控制項。 |  
 | [具有樣式和主題的文字處理](./programming-with-styles-and-themes/) | 了解 Aspose.Words for .NET 中的程式設計風格和主題。透過逐步教學和 C# 程式碼範例，了解如何在 Word 文件中建立、套用和自訂樣式和主題。 |  
 | [使用目錄進行文字處理](./programming-with-table-of-content/) | 探索 Aspose.Words for .NET 中的 TOC 程式設計。透過逐步教學和 C# 程式碼範例，了解如何在 Word 文件中建立和操作目錄。 |  
-| [文件保護](./document-protection/) | 了解如何使用 Aspose.Words for .NET 保護 Word 文件。這些教學將引導您完成各種保護方法，例如鎖定變更、密碼保護、限制對文件元素的存取等等。 |  
+| [文件保護](./document-protection/) | 了解如何使用 Aspose.Words for .NET 保護 Word 文件。這些教學將引導您了解各種保護方法，例如鎖定變更、密碼保護、限制對文件元素的存取等等。 |  
 | [使用數位簽名進行文字處理](./programming-with-digital-signatures/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中新增和管理數位簽章。這些教學將指導您完成產生數位簽章並將其新增至文件中的步驟。 |  
 | [拆分文檔](./split-document/) | 了解如何使用 Aspose.Words for .NET 將 Word 文件有效地拆分為單獨的部分。請按照逐步教學並使用 C# 程式碼範例來學習不同的文件分割技術。 |  
 | [使用 Documentbuilder 新增內容](./add-content-using-documentbuilder/) | 了解如何使用 DocumentBuilder 和 Aspose.Words for .NET 將內容新增至 Word 文件。帶有詳細程式碼範例的實踐教學。 |  

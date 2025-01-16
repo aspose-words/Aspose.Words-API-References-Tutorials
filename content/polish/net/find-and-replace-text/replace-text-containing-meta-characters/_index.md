@@ -69,14 +69,14 @@ FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
- Tworzymy`FindReplaceOptions`obiekt i ustawienie wyrównania akapitu do środka.
+ Tworzymy`FindReplaceOptions` obiekt i ustawienie wyrównania akapitu do środka.
 
 ## Krok 4: Zastąp tekst znakami meta
 
 W tym kroku dzieje się magia! Zastąpimy słowo „sekcja”, a następnie podział akapitu i dodamy podkreślenie.
 
 ```csharp
-// Podwój każdy podział akapitu po słowie „sekcja”, dodaj rodzaj podkreślenia i wyśrodkuj.
+//Podwój każdy podział akapitu po słowie „sekcja”, dodaj rodzaj podkreślenia i wyśrodkuj.
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 

@@ -84,7 +84,7 @@ Låt oss se resultatet av vår saneringsoperation genom att räkna stilarna igen
  Skriv ut antalet nya stilar: Använd`Console.WriteLine` för att visa det uppdaterade antalet stilar.
 
 ```csharp
-// Antalet stilar efter rengöring minskades.
+// Antalet stilar efter Cleanup minskade.
 Console.WriteLine(doc.Styles.Count);
 ```
 

@@ -165,7 +165,7 @@ Oui, vous pouvez modifier le gestionnaire de rappel pour gérer plusieurs insert
  Absolument ! Vous pouvez télécharger une version d'essai gratuite à partir de[ici](https://releases.aspose.com/).
 
 ### Comment puis-je obtenir de l'aide pour Aspose.Words ?
-Vous pouvez obtenir de l'aide en visitant le[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Vous pouvez obtenir de l'aide en visitant le[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Puis-je conserver la mise en forme du document inséré ?
  Oui, le`NodeImporter` La classe vous permet de spécifier comment le formatage est géré lors de l'importation de nœuds d'un document à un autre.

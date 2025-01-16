@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 설명:
-그만큼`DocumentBuilder` 문서를 탐색하고 수정하는 방법을 제공하는 편리한 도구입니다. 여기서는 대상 문서에 연결합니다.
+ 그만큼`DocumentBuilder` 문서를 탐색하고 수정하는 방법을 제공하는 편리한 도구입니다. 여기서는 대상 문서에 연결합니다.
 
 ## 3단계: 문서 끝으로 이동하고 페이지 나누기 삽입
 

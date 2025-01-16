@@ -86,7 +86,7 @@ IF フィールドは、特定の条件に基づいてテキストを表示す�
 Aspose.Words for .NET は幅広い Word ドキュメント形式をサポートし、さまざまなバージョンの Microsoft Word との互換性を確保します。
 
 ### Aspose.Words for .NET を使用して Word 文書内の他のタスクを自動化できますか?
-もちろんです! Aspose.Words for .NET には、書式設定、結合など、Word ドキュメントの自動化と操作のための豊富な機能が備わっています。
+もちろんです! Aspose.Words for .NET は、書式設定、結合など、Word ドキュメントの自動化と操作のための豊富な機能を提供します。
 
 ### Aspose.Words for .NET のその他のチュートリアルや例はどこで見つかりますか?
 より多くのチュートリアルと例については、[Aspose.Words for .NET ドキュメント](https://reference.aspose.com/words/net/).

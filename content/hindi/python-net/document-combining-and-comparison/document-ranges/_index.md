@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## दस्तावेज़ों का विलय
-
-दस्तावेजों को सहजता से संयोजित करना एक मूल्यवान कौशल है। दस्तावेजों के माध्यम से नेविगेट करने से हमें उन्हें कुशलतापूर्वक मर्ज करने में मदद मिलती है:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## दस्तावेज़ों का विभाजन
 
 कभी-कभी, हमें किसी दस्तावेज़ को छोटे भागों में विभाजित करने की आवश्यकता हो सकती है। दस्तावेज़ को नेविगेट करने से हमें यह हासिल करने में मदद मिलती है:
@@ -117,8 +109,8 @@ for section in sections:
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

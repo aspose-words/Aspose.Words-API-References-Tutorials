@@ -130,7 +130,7 @@ A tady to máte! Úspěšně jste vytvořili nový řádek podpisu a nastavili I
 ## FAQ
 
 ### Mohu přizpůsobit vzhled řádku podpisu?
-Absolutně! Můžete vyladit různé možnosti v`SignatureLineOptions` aby vyhovoval vašim potřebám.
+ Absolutně! Můžete vyladit různé možnosti v`SignatureLineOptions`aby vyhovoval vašim potřebám.
 
 ### Co když nemám certifikát PFX?
 Budete jej muset získat od důvěryhodné certifikační autority. Je to nezbytné pro digitální podepisování dokumentů.

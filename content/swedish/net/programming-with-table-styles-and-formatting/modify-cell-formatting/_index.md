@@ -16,9 +16,9 @@ Om du någonsin har märkt att du brottas med Word-dokument och försöker få c
 Innan vi börjar, se till att du har följande:
 
 1. Aspose.Words för .NET - Du kan ladda ner det[här](https://releases.aspose.com/words/net/).
-2. Visual Studio - Eller någon annan IDE du väljer.
+2. Visual Studio - Eller vilken annan IDE du väljer.
 3. Grundläggande kunskaper om C# - Detta hjälper dig att följa med i kodexemplen.
-4.  Ett Word-dokument - Närmare bestämt ett som innehåller en tabell. Vi kommer att använda en fil som heter`Tables.docx`.
+4.  Ett Word-dokument - Närmare bestämt ett som innehåller en tabell. Vi kommer att använda en fil med namnet`Tables.docx`.
 
 ## Importera namnområden
 

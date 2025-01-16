@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## 3. lépés: A DocumentBuilder inicializálása
 
-A`DocumentBuilder` olyan, mint az ecset. Segítségével tartalmat adhat a dokumentumhoz. Inicializáljuk.
+ A`DocumentBuilder` olyan, mint az ecset. Segítségével tartalmat adhat a dokumentumhoz. Inicializáljuk.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ Hát nem volt szórakoztató? Az Aspose.Words for .NET segítségével a Word do
 Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való programozott munkavégzéshez. A funkciók széles skáláját támogatja, a dokumentumok létrehozásától és szerkesztésétől a különböző formátumok közötti konvertálásig.
 
 ### Használhatom ingyenesen az Aspose.Words-t?
- Igen, kezdheti a[ingyenes próbaverzió](https://releases.aspose.com/) jellemzőinek feltárására. Hosszú távú használat esetén megteheti[licencet vásárolni](https://purchase.aspose.com/buy).
+Igen, kezdheti a[ingyenes próbaverzió](https://releases.aspose.com/) jellemzőinek feltárására. Hosszú távú használat esetén megteheti[licencet vásárolni](https://purchase.aspose.com/buy).
 
 ### Hogyan kaphatok támogatást az Aspose.Words számára?
  Támogatást kaphat a[Aspose közösségi fórum](https://forum.aspose.com/c/words/8). Ez egy nagyszerű hely, ahol kérdéseket tehet fel és megoszthatja tapasztalatait.

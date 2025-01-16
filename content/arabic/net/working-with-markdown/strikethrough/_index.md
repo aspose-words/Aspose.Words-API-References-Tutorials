@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## الخطوة 1: تهيئة DocumentBuilder
 
-ال`DocumentBuilder` class هي أداة قوية في Aspose.Words تسمح لك بإضافة محتوى إلى مستندك بسهولة.
+ ال`DocumentBuilder` class هي أداة قوية في Aspose.Words تسمح لك بإضافة محتوى إلى مستندك بسهولة.
 
 ```csharp
 // تهيئة DocumentBuilder.

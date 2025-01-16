@@ -23,7 +23,7 @@ Kolom adalah tempat penampung dalam dokumen yang menampilkan data secara dinamis
  Untuk memasukkan bidang, Anda dapat menggunakan`FieldBuilder` kelas. Misalnya, untuk memasukkan kolom tanggal saat ini:
 
 ```python
-from asposewords import Document, FieldBuilder
+from aspose.words import Document, FieldBuilder
 
 doc = Document()
 builder = FieldBuilder(doc)
@@ -56,15 +56,6 @@ field = doc.range.fields[0]
 if field:
     field_code = field.get_field_code()
     field_result = field.result
-```
-
-## Mengotomatiskan Pembuatan Dokumen dengan Fields
-
-Kolom sangat penting untuk pembuatan dokumen otomatis. Anda dapat mengisi kolom dengan data dari sumber eksternal:
-
-```python
-data = fetch_data_from_database()
-builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 ```
 
 ## Mengintegrasikan Bidang dengan Sumber Data
@@ -111,7 +102,7 @@ doc.update_fields()
 
 Penanganan kolom dan data secara efektif dalam dokumen Word memungkinkan Anda membuat dokumen yang dinamis dan otomatis. Aspose.Words untuk Python menyederhanakan proses ini, dengan menawarkan berbagai fitur.
 
-## Tanya Jawab Umum
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara memperbarui nilai bidang secara manual?
 

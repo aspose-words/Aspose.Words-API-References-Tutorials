@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## 3단계: 문서 빌더 초기화
 
-그만큼`DocumentBuilder` 클래스는 문서에 콘텐츠를 추가하는 데 선택할 수 있는 도구입니다. 브러시와 팔레트라고 생각하세요.
+ 그만큼`DocumentBuilder` 클래스는 문서에 콘텐츠를 추가하는 데 선택할 수 있는 도구입니다. 브러시와 팔레트라고 생각하세요.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

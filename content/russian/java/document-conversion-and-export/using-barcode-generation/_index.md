@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Установить генератор штрих-кода
 
- Установите пользовательский генератор штрихкодов с помощью`FieldOptions` класс. В этом примере мы предполагаем, что вы реализовали`CustomBarcodeGenerator` класс для генерации штрих-кода. Заменить`CustomBarcodeGenerator` с вашей фактической логикой генерации штрихкода:
+ Установите пользовательский генератор штрихкодов с помощью`FieldOptions` класс. В этом примере мы предполагаем, что вы реализовали`CustomBarcodeGenerator`класс для генерации штрих-кода. Заменить`CustomBarcodeGenerator` с вашей фактической логикой генерации штрихкода:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

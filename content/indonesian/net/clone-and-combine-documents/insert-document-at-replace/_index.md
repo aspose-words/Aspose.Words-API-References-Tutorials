@@ -165,7 +165,7 @@ Ya, Anda dapat memodifikasi pengendali panggilan balik untuk menangani beberapa 
  Tentu saja! Anda dapat mengunduh uji coba gratis dari[Di Sini](https://releases.aspose.com/).
 
 ### Bagaimana cara mendapatkan dukungan untuk Aspose.Words?
-Anda bisa mendapatkan dukungan dengan mengunjungi[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Anda bisa mendapatkan dukungan dengan mengunjungi[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Bisakah saya mempertahankan format dokumen yang disisipkan?
  Ya, itu`NodeImporter` kelas memungkinkan Anda menentukan bagaimana pemformatan ditangani saat mengimpor node dari satu dokumen ke dokumen lainnya.

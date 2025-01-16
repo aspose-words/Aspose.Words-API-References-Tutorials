@@ -17,7 +17,7 @@ Innan du dyker in i denna handledning, se till att du har följande förutsättn
 - Grundläggande kunskaper i programmeringsspråket C#.
 - Visual Studio installerat på ditt system.
 -  Aspose.Words för .NET-bibliotek integrerat i ditt projekt. Du kan ladda ner den från[här](https://releases.aspose.com/words/net/).
-- Tillgång till Aspose.Words för .NET[dokumentation](https://reference.aspose.com/words/net/) för referens.
+-  Tillgång till Aspose.Words för .NET[dokumentation](https://reference.aspose.com/words/net/) för referens.
 
 ## Importera namnområden
 
@@ -84,4 +84,4 @@ Ja, du kan programmatiskt hantera och återställa spårade revisioner med Aspos
 Aspose.Words för .NET är optimerat för att hantera stora dokument effektivt, inklusive de med omfattande spårade revisioner.
 
 ### Var kan jag hitta fler resurser och support för Aspose.Words för .NET?
-Du kan utforska omfattande dokumentation och få support från Aspose.Words för .NET-gemenskapen på[Aspose.Words Forum](https://forum.aspose.com/c/words/8).
+ Du kan utforska omfattande dokumentation och få support från Aspose.Words för .NET-gemenskapen på[Aspose.Words Forum](https://forum.aspose.com/c/words/8).

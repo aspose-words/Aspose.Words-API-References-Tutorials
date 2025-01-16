@@ -40,16 +40,6 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
     print(text)
 ```
 
-## Modyfikowanie tekstu
-
-Możesz modyfikować tekst poprzez bezpośrednie ustawienie tekstu serii lub akapitów:
-
-```python
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
-    if "old_text" in para.get_text():
-        para.get_runs().get(0).set_text("new_text")
-```
-
 ## Praca z formatowaniem
 
 Aspose.Words umożliwia pracę ze stylami formatowania:

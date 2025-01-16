@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Adım 3: Belge Oluşturucuyu Başlatma
 
-The`DocumentBuilder` class, belgeye içerik eklemek için tercih ettiğiniz araçtır. Bunu fırçanız ve paletiniz olarak düşünün.
+ The`DocumentBuilder` class, belgeye içerik eklemek için tercih ettiğiniz araçtır. Bunu fırçanız ve paletiniz olarak düşünün.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

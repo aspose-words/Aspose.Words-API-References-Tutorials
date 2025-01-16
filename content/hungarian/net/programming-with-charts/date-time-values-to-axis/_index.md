@@ -9,7 +9,7 @@ url: /hu/net/programming-with-charts/date-time-values-to-axis/
 ---
 ## Bevezetés
 
-diagramok dokumentumokban történő létrehozása hatékony módja lehet az adatok megjelenítésének. Az idősorok adatainak kezelésekor a dátum és az idő értékek hozzáadása a diagram tengelyéhez elengedhetetlen az egyértelműség érdekében. Ebben az oktatóanyagban végigvezetjük a dátum- és időértékek diagram tengelyéhez való hozzáadásának folyamatán az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató segít a környezet beállításában, a kód megírásában és a folyamat egyes részeinek megértésében. Merüljünk el!
+diagramok dokumentumokban történő létrehozása hatékony módja lehet az adatok megjelenítésének. Az idősorok adatainak kezelésekor a dátum és az idő értékek hozzáadása a diagram tengelyéhez elengedhetetlen az egyértelműség érdekében. Ebben az oktatóanyagban végigvezetjük a dátum- és időértékek diagram tengelyéhez való hozzáadásának folyamatán az Aspose.Words for .NET segítségével. Ez a lépésenkénti útmutató segít a környezet beállításában, a kód megírásában és a folyamat egyes részeinek megértésében. Merüljünk el!
 
 ## Előfeltételek
 

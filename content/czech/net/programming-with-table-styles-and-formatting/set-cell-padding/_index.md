@@ -2,7 +2,7 @@
 title: Nastavte odsazení buněk
 linktitle: Nastavte odsazení buněk
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak nastavit odsazení buněk v dokumentech aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem. Snadno vylepšete formátování tabulky dokumentu.
+description: Naučte se, jak nastavit odsazení buněk v dokumentech aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem. Zlepšete snadno formátování tabulky dokumentu.
 type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/set-cell-padding/
@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Pojďme si tento proces rozdělit na jednoduché, zvládnutelné kroky. Připraveni? Jdeme!
+Pojďme si tento proces rozdělit na jednoduché, zvládnutelné kroky. Připraveni? Jdeme na to!
 
 ## Krok 1: Vytvořte nový dokument
 
@@ -45,7 +45,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Začněte stavět svůj stůl
 
- Nyní, když máme dokument, začněme sestavovat tabulku. Použijeme`DocumentBuilder` pro vložení buněk a řádků.
+ Nyní, když máme dokument, začněme sestavovat tabulku. Použijeme`DocumentBuilder` pro vkládání buněk a řádků.
 
 ```csharp
 // Začněte stavět stůl

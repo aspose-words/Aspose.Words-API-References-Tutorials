@@ -73,7 +73,7 @@ Potongan kode ini mengasumsikan Anda ingin mengkloning tabel pertama dalam dokum
 Table tableClone = (Table) table.Clone(true);
 ```
 
-Itu`true` parameter memastikan bahwa klon menyertakan semua pemformatan dan konten dari tabel asli.
+ Itu`true` parameter memastikan bahwa klon menyertakan semua pemformatan dan konten dari tabel asli.
 
 ## Langkah 5: Masukkan Tabel Kloning ke dalam Dokumen
 
@@ -115,7 +115,7 @@ Mengkloning tabel dalam dokumen Word menggunakan Aspose.Words for .NET merupakan
 Ya, Anda dapat mengkloning beberapa tabel dengan mengulangi setiap tabel dalam dokumen dan menerapkan logika kloning yang sama.
 
 ### Bagaimana jika tabel memiliki sel yang tergabung?
-Itu`Clone` metode mempertahankan semua pemformatan, termasuk sel yang digabungkan, memastikan duplikat tabel yang tepat.
+ Itu`Clone` metode mempertahankan semua pemformatan, termasuk sel yang digabungkan, memastikan duplikat tabel yang tepat.
 
 ### Bagaimana cara mengkloning tabel tertentu berdasarkan nama?
 Anda dapat mengidentifikasi tabel berdasarkan properti khusus atau konten unik, lalu mengkloning tabel yang diinginkan menggunakan langkah serupa.

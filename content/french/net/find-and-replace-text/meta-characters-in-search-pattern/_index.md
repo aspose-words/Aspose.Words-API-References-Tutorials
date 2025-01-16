@@ -15,7 +15,7 @@ Aspose.Words pour .NET est une bibliothèque puissante pour la gestion des docum
 
 Avant de passer au code, assurons-nous que tout est configuré :
 
-1.  Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Vous pouvez le télécharger à partir du[Page de publication d'Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Vous pouvez le télécharger à partir du[Page de publication d'Aspose](https://releases.aspose.com/words/net/).
 2. Environnement de développement : Visual Studio ou tout autre environnement de développement C#.
 3. Connaissances de base de C# : La compréhension des bases de la programmation C# sera bénéfique.
 
@@ -39,7 +39,7 @@ Avant de commencer à manipuler le document, vous devez définir le chemin d'acc
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin réel où vous souhaitez enregistrer vos documents.
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où vous souhaitez enregistrer vos documents.
 
 ## Étape 2 : Créer un nouveau document
 
@@ -61,7 +61,7 @@ builder.Writeln("This is Line 2");
 
 ## Étape 4 : Remplacement du texte à l'aide du métacaractère de saut de paragraphe
 
- Les métacaractères peuvent représenter divers éléments tels que des paragraphes, des tabulations et des sauts de ligne. Ici, nous utilisons`&p` pour représenter un saut de paragraphe.
+Les métacaractères peuvent représenter divers éléments tels que des paragraphes, des tabulations et des sauts de ligne. Ici, nous utilisons`&p` pour représenter un saut de paragraphe.
 
 ```csharp
 doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");

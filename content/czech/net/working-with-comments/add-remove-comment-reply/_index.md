@@ -55,7 +55,7 @@ comment.RemoveReply(comment.Replies[0]);
 
 ## Krok 4: Přidejte novou odpověď
 
-Nyní přidáme novou odpověď na komentář. Můžete zadat jméno autora, iniciály, datum a čas odpovědi a text odpovědi.
+Nyní přidáme ke komentáři novou odpověď. Můžete zadat jméno autora, iniciály, datum a čas odpovědi a text odpovědi.
 
 ```csharp
 comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New reply");

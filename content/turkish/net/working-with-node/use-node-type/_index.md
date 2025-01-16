@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Adım 2: NodeType Özelliğine Erişim
 
-The`NodeType` property, Aspose.Words'deki temel bir özelliktir. İlgilendiğiniz düğümün türünü belirlemenizi sağlar. Bu özelliğe erişmek için, aşağıdaki kodu kullanmanız yeterlidir:
+ The`NodeType` property, Aspose.Words'deki temel bir özelliktir. İlgilendiğiniz düğümün türünü belirlemenizi sağlar. Bu özelliğe erişmek için, aşağıdaki kodu kullanmanız yeterlidir:
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -63,7 +63,7 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 ###  Nedir?`NodeType` property in Aspose.Words?
 
-The`NodeType` özellik, bir belge içindeki düğüm türünü (Belge, Bölüm, Paragraf, Çalışma veya Tablo gibi) tanımlar.
+ The`NodeType` özellik, bir belge içindeki düğüm türünü (Belge, Bölüm, Paragraf, Çalışma veya Tablo gibi) tanımlar.
 
 ###  Nasıl kontrol edebilirim?`NodeType` of a node?
 

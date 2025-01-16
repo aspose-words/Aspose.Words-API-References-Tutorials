@@ -16,7 +16,7 @@ Las listas se presentan en dos tipos principales: con viñetas y numeradas. Perm
 
 ## Configuración del entorno
 
-Antes de comenzar a crear y administrar listas, asegúrese de tener instalada la biblioteca Aspose.Words para Python. Puede descargarla desde[aquí](https://releases.aspose.com/words/python/) Además, consulte la documentación de la API en[Este enlace](https://reference.aspose.com/words/python-net/) para obtener información detallada.
+ Antes de comenzar a crear y administrar listas, asegúrese de tener instalada la biblioteca Aspose.Words para Python. Puede descargarla desde[aquí](https://releases.aspose.com/words/python/) Además, consulte la documentación de la API en[Este enlace](https://reference.aspose.com/words/python-net/) para obtener información detallada.
 
 ## Creación de listas con viñetas
 
@@ -68,11 +68,6 @@ doc.list_templates.add(list_template)
 # Add a list level to the template
 list_level = ListLevel(list_template)
 list_template.list_levels.append(list_level)
-
-# Customize the list formatting
-list_level.number_format = "%1."
-list_level.alignment = ListLevel.Alignment.LEFT
-list_level.text_position = 36  # Position of the number
 
 # Add list items
 list_item_texts = ["Item A", "Item B", "Item C"]

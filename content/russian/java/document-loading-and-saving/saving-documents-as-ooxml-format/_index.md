@@ -10,7 +10,7 @@ url: /ru/java/document-loading-and-saving/saving-documents-as-ooxml-format/
 
 ## Введение в сохранение документов в формате OOXML в Aspose.Words для Java
 
-В этом руководстве мы рассмотрим, как сохранять документы в формате OOXML с помощью Aspose.Words for Java. OOXML (Office Open XML) — это формат файла, используемый Microsoft Word и другими офисными приложениями. Мы рассмотрим различные параметры и настройки для сохранения документов в формате OOXML.
+В этом руководстве мы рассмотрим, как сохранять документы в формате OOXML с помощью Aspose.Words for Java. OOXML (Office Open XML) — это формат файлов, используемый Microsoft Word и другими офисными приложениями. Мы рассмотрим различные параметры и настройки для сохранения документов в формате OOXML.
 
 ## Предпосылки
 
@@ -91,7 +91,7 @@ import com.aspose.words.SaveFormat;
 Document doc = new Document("LegacyControlChars.doc");
 
 // Создайте OoxmlSaveOptions с форматом FLAT_OPC и включите сохранение устаревших управляющих символов.
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setKeepLegacyControlChars(true);
 
 // Сохраните документ с использованием устаревших управляющих символов.
@@ -148,7 +148,7 @@ public void updateLastSavedTimeProperty() throws Exception
 public void keepLegacyControlChars() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Legacy control character.doc");
-	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC); { saveOptions.setKeepLegacyControlChars(true); }
+	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(); { saveOptions.setKeepLegacyControlChars(true); }
 	doc.save("Your Directory Path" + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
 }
 @Test

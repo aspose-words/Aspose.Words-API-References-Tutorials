@@ -129,4 +129,4 @@ Com essas habilidades, você pode aprimorar a apresentação visual de suas tabe
  Claro! Você pode usar qualquer cor disponível no`System.Drawing.Color` aula.
 
 ### Como faço para centralizar a tabela horizontalmente?  
-O`table.Alignment = TableAlignment.Center;` a linha no código centraliza a tabela horizontalmente na página.
+ O`table.Alignment = TableAlignment.Center;` a linha no código centraliza a tabela horizontalmente na página.

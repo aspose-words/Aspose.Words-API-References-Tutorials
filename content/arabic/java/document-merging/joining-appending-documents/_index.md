@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-ال`ImportFormatMode.KEEP_SOURCE_FORMATTING` يضمن الخيار الحفاظ على تنسيق المستندات المصدرية.
+ ال`ImportFormatMode.KEEP_SOURCE_FORMATTING` يضمن الخيار الحفاظ على تنسيق المستندات المصدرية.
 
 ## الخطوة 5: حفظ النتيجة
 

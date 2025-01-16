@@ -21,7 +21,7 @@ Zde jsou některé z klíčových výhod používání Aspose.Words pro Java:
 * Komplexní sada funkcí pro zpracování textu a zpracování dokumentů
 * Rozsáhlá dokumentace a návody
 * Snadno použitelné API
-* Podpora široké škály formátů dokumentů
+* Podpora pro širokou škálu formátů dokumentů
 * Vysoký výkon a škálovatelnost
 
 ## Návody na zpracování textu

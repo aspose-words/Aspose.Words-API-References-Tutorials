@@ -9,7 +9,7 @@ url: /it/net/document-formatting/multilevel-list-formatting/
 ---
 ## Introduzione
 
-Se sei uno sviluppatore che desidera automatizzare la creazione e la formattazione di documenti Word, Aspose.Words per .NET è una vera svolta. Oggi, approfondiremo come padroneggiare la formattazione di elenchi multilivello utilizzando questa potente libreria. Che tu stia creando documenti strutturati, delineando report o generando documentazione tecnica, gli elenchi multilivello possono migliorare la leggibilità e l'organizzazione dei tuoi contenuti.
+Se sei uno sviluppatore che desidera automatizzare la creazione e la formattazione di documenti Word, Aspose.Words per .NET è un punto di svolta. Oggi, ci immergeremo in come padroneggiare la formattazione di elenchi multilivello utilizzando questa potente libreria. Che tu stia creando documenti strutturati, delineando report o generando documentazione tecnica, gli elenchi multilivello possono migliorare la leggibilità e l'organizzazione dei tuoi contenuti.
 
 ## Prerequisiti
 

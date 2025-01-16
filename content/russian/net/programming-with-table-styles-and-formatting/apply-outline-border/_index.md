@@ -129,4 +129,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx"
  Конечно! Вы можете использовать любой цвет, доступный в`System.Drawing.Color` сорт.
 
 ### Как выровнять таблицу по центру по горизонтали?  
-The`table.Alignment = TableAlignment.Center;` строка в коде выравнивает таблицу по горизонтали на странице.
+ The`table.Alignment = TableAlignment.Center;` строка в коде выравнивает таблицу по горизонтали на странице.

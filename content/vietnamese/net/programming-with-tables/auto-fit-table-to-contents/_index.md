@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Các`Aspose.Words` không gian tên cung cấp chức năng cốt lõi để xử lý các tài liệu Word, trong khi`Aspose.Words.Tables` bao gồm các lớp dành riêng cho việc làm việc với bảng.
+ Các`Aspose.Words` không gian tên cung cấp chức năng cốt lõi để xử lý các tài liệu Word, trong khi`Aspose.Words.Tables` bao gồm các lớp dành riêng cho việc làm việc với bảng.
 
 ## Bước 1: Thiết lập thư mục tài liệu của bạn
 
@@ -88,7 +88,7 @@ Tự động điều chỉnh bảng theo nội dung bằng Aspose.Words cho .NET
 ## Câu hỏi thường gặp
 
 ### Tôi có thể tự động điều chỉnh chỉ một số cột cụ thể trong bảng không?
-Các`AutoFit` phương pháp áp dụng cho toàn bộ bảng. Nếu bạn cần điều chỉnh các cột cụ thể, bạn có thể cần phải đặt chiều rộng cột theo cách thủ công.
+ Các`AutoFit` phương pháp áp dụng cho toàn bộ bảng. Nếu bạn cần điều chỉnh các cột cụ thể, bạn có thể cần phải đặt chiều rộng cột theo cách thủ công.
 
 ### Nếu tài liệu của tôi chứa nhiều bảng thì sao?
  Bạn có thể lặp qua tất cả các bảng trong tài liệu bằng cách sử dụng`doc.GetChildNodes(NodeType.Table, true)` và áp dụng chế độ tự động điều chỉnh khi cần thiết.

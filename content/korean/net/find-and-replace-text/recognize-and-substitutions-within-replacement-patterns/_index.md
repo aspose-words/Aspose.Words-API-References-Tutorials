@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-그만큼`Document` 객체는 Aspose.Words의 핵심입니다. 전체 Word 문서를 나타냅니다.
+ 그만큼`Document` 객체는 Aspose.Words의 핵심입니다. 전체 Word 문서를 나타냅니다.
 
 ## 2단계: 문서에 텍스트 추가
 
@@ -50,7 +50,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Jason give money to Paul.");
 ```
 
-그만큼`DocumentBuilder` class는 문서에 텍스트와 다른 요소를 추가하는 강력한 도구입니다.
+ 그만큼`DocumentBuilder` class는 문서에 텍스트와 다른 요소를 추가하는 강력한 도구입니다.
 
 ## 3단계: 정규식 패턴 정의
 
@@ -70,7 +70,7 @@ Aspose.Words를 사용하면 대체에서 대체를 사용할 수 있습니다. 
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
-그만큼`FindReplaceOptions` 클래스는 찾기 및 바꾸기 작업을 사용자 정의하기 위한 다양한 옵션을 제공합니다.
+ 그만큼`FindReplaceOptions` 클래스는 찾기 및 바꾸기 작업을 사용자 정의하기 위한 다양한 옵션을 제공합니다.
 
 ## 5단계: 교체 수행
 

@@ -30,12 +30,8 @@ Bu eğitimlerin sonunda, Aspose.Words kullanarak belgeleri sorunsuz bir şekilde
 ## Belge Birleştirme ve Karşılaştırma Eğitimleri
 ### [Word'de Belgeleri Birleştirme ve Karşılaştırma](./merge-compare-documents/)
 Aspose.Words for Python kullanarak Word belgelerini zahmetsizce birleştirin ve karşılaştırın. Belgeleri nasıl düzenleyeceğinizi, farklılıkları nasıl vurgulayacağınızı ve görevleri nasıl otomatikleştireceğinizi öğrenin.
-### [Belge Yer İşaretlerinin Gücünden Yararlanma](./document-bookmarks/)
-Python için Aspose.Words'ü kullanarak belge yer imlerinin gücünden nasıl yararlanacağınızı öğrenin. Adım adım kılavuzlar ve kod örnekleriyle yer imleri oluşturun, yönetin ve yer imleri arasında gezinin.
 ### [Hassas Düzenleme için Belge Aralıklarında Gezinme](./document-ranges/)
 Python için Aspose.Words'ü kullanarak belge aralıklarında hassas bir şekilde gezinmeyi ve düzenlemeyi öğrenin. Verimli içerik düzenleme için kaynak kodlu adım adım kılavuz.
-### [Yapılandırılmış Veriler için Yapılandırılmış Belge Etiketlerinin (SDT'ler) Kullanılması](./document-sdts/)
-İçeriği Düzenlemek İçin Yapılandırılmış Belge Etiketlerinin (SDT'ler) Gücünü Açın. SDT'leri Uygulamak İçin Aspose.Words for Python'ı Nasıl Kullanacağınızı Öğrenin.
 ### [Belgeleri Dönüştürmek İçin Stiller ve Temalar Uygulama](./apply-styles-themes-documents/)
 Aspose.Words for Python ile belge estetiğini geliştirin. Stilleri, temaları ve özelleştirmeleri zahmetsizce uygulayın.
 ### [Word Belgeleri İçin Kapsamlı İçindekiler Tablosu Oluşturma](./generate-table-contents/)

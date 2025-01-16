@@ -15,7 +15,7 @@ Pokud jde o manipulaci s dokumenty, je zásadní správné nastavení rozvržen�
 
 Než se ponoříme do kódu, pojďme si pokrýt, co potřebujete, abyste mohli začít.
 
--  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete[stáhněte si to zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Jakékoli .NET kompatibilní IDE (např. Visual Studio).
 - Základní znalost C#: Znalost programování v C# je nezbytná.
 

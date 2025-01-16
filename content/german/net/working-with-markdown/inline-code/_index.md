@@ -109,7 +109,7 @@ Ja, Sie können jede Schriftart verwenden, die Ihren Anforderungen entspricht. S
 In Aspose.Words können Sie immer nur einen Stil gleichzeitig anwenden. Wenn Sie Stile kombinieren müssen, sollten Sie einen neuen Stil erstellen, der alle gewünschten Formatierungen enthält.
 
 ### Wie wende ich Stile auf vorhandenen Text in einem Dokument an?
- Um Stile auf bestehenden Text anzuwenden, müssen Sie zuerst den Text auswählen und dann den gewünschten Stil mit dem`Font.Style` Eigentum.
+ Um Stile auf vorhandenen Text anzuwenden, müssen Sie zuerst den Text auswählen und dann den gewünschten Stil mithilfe der`Font.Style` Eigentum.
 
 ### Kann ich Aspose.Words für andere Dokumentformate verwenden?
 Aspose.Words wurde speziell für Word-Dokumente entwickelt. Für andere Formate müssen Sie möglicherweise andere Bibliotheken verwenden oder die Dokumente in ein kompatibles Format konvertieren.

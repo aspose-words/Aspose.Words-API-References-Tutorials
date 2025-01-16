@@ -15,7 +15,7 @@ Sziasztok kódolótársak! Ha az Aspose.Words for .NET világába merül, az egy
 
 Mielőtt bemocskolnánk a kezünket, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy a könyvtár telepítve van. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy a könyvtár telepítve van. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2.  Licencfájl: érvényes licencfájlra van szüksége. Ha nincs, akkor kaphat a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) tesztelési célokra.
 3. Alapvető C# ismeretek: Feltételezzük a C# programozás alapvető ismereteit.
 

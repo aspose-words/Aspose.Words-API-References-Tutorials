@@ -52,7 +52,7 @@ Teraz ustawmy opcje konturu.
 
 ### Ustaw poziomy konspektu nagłówków
 
-Ten`HeadingsOutlineLevels` Właściwość definiuje, ile poziomów nagłówków powinno być zawartych w konspekcie PDF. Na przykład, jeśli ustawisz ją na 3, będzie zawierać do trzech poziomów nagłówków w konspekcie PDF.
+ Ten`HeadingsOutlineLevels` Właściwość definiuje, ile poziomów nagłówków powinno być zawartych w konspekcie PDF. Na przykład, jeśli ustawisz ją na 3, będzie zawierać do trzech poziomów nagłówków w konspekcie PDF.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Ustaw rozszerzone poziomy konturu
 
-Ten`ExpandedOutlineLevels`właściwość kontroluje, ile poziomów konspektu powinno być domyślnie rozszerzone po otwarciu pliku PDF. Ustawienie tej wartości na 1 spowoduje rozszerzenie nagłówków najwyższego poziomu, dając wyraźny widok głównych sekcji.
+ Ten`ExpandedOutlineLevels`właściwość kontroluje, ile poziomów konspektu powinno być domyślnie rozszerzone po otwarciu pliku PDF. Ustawienie tej wartości na 1 spowoduje rozszerzenie nagłówków najwyższego poziomu, dając wyraźny widok głównych sekcji.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

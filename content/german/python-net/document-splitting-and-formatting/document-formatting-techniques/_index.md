@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Anwenden von Schriftstilen und -größen
-
-Verbessern Sie die Lesbarkeit und die visuelle Attraktivität Ihres Dokuments, indem Sie Schriftstile und -größen anwenden. Verwenden Sie den folgenden Code, um den Schriftstil und die Größe eines Absatzes zu ändern:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Absätze und Überschriften formatieren
+## Absätze formatieren
 
 Um Ihr Dokument effektiv zu strukturieren, ist die Formatierung von Absätzen und Überschriften entscheidend. Dies erreichen Sie mit dem folgenden Code:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Arbeiten mit Listen und Aufzählungszeichen
 
 Listen und Aufzählungszeichen strukturieren den Inhalt und sorgen für Übersichtlichkeit. Implementieren Sie sie mit Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Seitenlayout und Ränder verwalten
+## Seitenlayout verwalten
 
 Steuern Sie Seitenlayout und Ränder für eine optimale Darstellung:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Anwenden von Stilen und Designs

@@ -45,9 +45,6 @@ from aspose.words import Section, Paragraph
 
 # Add a new section
 section = doc.sections.add()
-
-# Add a paragraph to the section
-paragraph = section.add_paragraph("Hello, Aspose.Words!")
 ```
 
 ## Werken met tekstinhoud
@@ -161,19 +158,6 @@ doc.save("output_document.docx")
 doc.save("output_document.pdf", SaveFormat.PDF)
 ```
 
-## Automatisering van documentgeneratie
-
-Aspose.Words blinkt uit in het automatiseren van workflows voor het genereren van documenten:
-
-```python
-# Generate multiple documents
-for data in dataset:
-    new_doc = Document()
-    # Populate the document with data
-    # ...
-    new_doc.save(f"document_{data.id}.docx")
-```
-
 ## Beste praktijken en tips
 
 - Houd uw code georganiseerd door functies te gebruiken voor verschillende documentmanipulatietaken.
@@ -188,7 +172,7 @@ In dit artikel hebben we de mogelijkheden van Aspose.Words Python voor het beher
 
 ### Hoe kan ik Aspose.Words Python installeren?
 
-kunt Aspose.Words Python installeren met de volgende pip-opdracht:
+U kunt Aspose.Words Python installeren met de volgende pip-opdracht:
 
 ```python
 pip install aspose-words

@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Κατανόηση του MoveToBookmark
 
-Ο`MoveToBookmark`Η μέθοδος σάς επιτρέπει να πλοηγηθείτε σε έναν συγκεκριμένο σελιδοδείκτη στο έγγραφό σας. Η υπογραφή της μεθόδου είναι:
+ Ο`MoveToBookmark`Η μέθοδος σάς επιτρέπει να πλοηγηθείτε σε έναν συγκεκριμένο σελιδοδείκτη στο έγγραφό σας. Η υπογραφή της μεθόδου είναι:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);

@@ -7,128 +7,137 @@ type: docs
 weight: 14
 url: /it/java/table-processing/table-contents-generation/
 ---
-
-Siete pronti a intraprendere un viaggio per padroneggiare la generazione di indici (TOC) usando Aspose.Words per Java? In questa guida completa, esploreremo l'arte di creare indici dinamici e visivamente accattivanti senza sforzo. Sarete dotati delle conoscenze e delle competenze necessarie per implementare questa funzionalità senza problemi nelle vostre applicazioni Java. Quindi, tuffiamoci subito!
-
 ## Introduzione
 
-Il sommario (TOC) è un componente essenziale di qualsiasi documento ben strutturato. Fornisce ai lettori una roadmap, consentendo loro di navigare facilmente in documenti lunghi. Aspose.Words per Java è una potente API che semplifica la generazione di TOC nelle applicazioni Java. In questa guida passo passo, tratteremo tutto ciò che devi sapere per creare TOC in modo dinamico utilizzando Aspose.Words per Java.
+Hai mai avuto difficoltà a creare un indice dinamico e dall'aspetto professionale nei tuoi documenti Word? Non cercare oltre! Con Aspose.Words per Java, puoi automatizzare l'intero processo, risparmiando tempo e garantendo accuratezza. Che tu stia creando un report completo o un articolo accademico, questo tutorial ti guiderà nella generazione di un indice a livello di programmazione con Java. Pronto a tuffarti? Cominciamo!
 
-## Introduzione ad Aspose.Words per Java
+## Prerequisiti
 
-Prima di addentrarci nei dettagli della generazione del TOC, configuriamo il nostro ambiente e prendiamo familiarità con Aspose.Words per Java.
+Prima di iniziare a programmare, assicurati di avere quanto segue:
 
-### Impostazione dell'ambiente
+1.  Java Development Kit (JDK): installato sul tuo sistema. Puoi scaricarlo da[Sito web di Oracle](https://www.oracle.com/java/technologies/javase-downloads.html).
+2.  Aspose.Words per la libreria Java: scarica l'ultima versione da[pagina di rilascio](https://releases.aspose.com/words/java/).
+3. Ambiente di sviluppo integrato (IDE): come IntelliJ IDEA, Eclipse o NetBeans.
+4.  Licenza temporanea Aspose: per evitare limitazioni di valutazione, ottenere una[licenza temporanea](https://purchase.aspose.com/temporary-license/).
 
-Per iniziare, assicurati di avere Aspose.Words for Java installato. Puoi scaricarlo dal sito web[Qui](https://releases.aspose.com/words/java/).
+## Importa pacchetti
 
-### Creazione di un nuovo progetto Java
-
-Inizia creando un nuovo progetto Java nel tuo ambiente di sviluppo integrato (IDE) preferito.
-
-### Aggiungere Aspose.Words per Java al tuo progetto
-
-Aggiungi la libreria Aspose.Words per Java al tuo progetto includendola nelle tue dipendenze.
-
-### Inizializzazione di Aspose.Words
-
-Nel codice Java, inizializza Aspose.Words per iniziare a lavorarci.
+Per usare Aspose.Words per Java in modo efficace, assicurati di importare le classi richieste. Ecco le importazioni:
 
 ```java
-// Inizializza Aspose.Words
-com.aspose.words.Document doc = new com.aspose.words.Document();
+import com.aspose.words.*;
 ```
 
-## Comprensione dell'indice (TOC)
+Per generare un indice dinamico nel documento Word, segui questi passaggi.
 
-Prima di addentrarci nella generazione degli TOC, cerchiamo di capire meglio cosa sono e come funzionano.
+## Passaggio 1: inizializzare il documento e DocumentBuilder
 
-### Cos'è un indice?
+ Il primo passo è creare un nuovo documento e utilizzare il`DocumentBuilder` classe per manipolarlo.
 
-Un indice è un elenco che appare all'inizio di un documento e fornisce collegamenti a varie sezioni o capitoli all'interno del documento. Serve come utile strumento di navigazione per i lettori.
-
-### Come funziona la generazione del TOC?
-
-La generazione di TOC implica l'identificazione di titoli o contenuti specifici all'interno del documento e la creazione di link a tali sezioni. Aspose.Words per Java semplifica questo processo automatizzando la generazione di TOC in base a regole predefinite.
-
-## Generazione di un indice di base
-
-Ora che abbiamo solide basi, generiamo un indice di base utilizzando Aspose.Words per Java.
 
 ```java
-// Crea un nuovo indice
-com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-tocField.update();
+string dataDir = "Your Document Directory";
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Il codice sopra crea un indice di base nel tuo documento. Puoi personalizzarlo ulteriormente specificando i livelli, la formattazione e altro.
+- `Document`: Rappresenta il documento Word.
+- `DocumentBuilder`: Una classe helper che consente una facile manipolazione del documento.
 
-## Personalizzazione avanzata del TOC
+## Passaggio 2: inserire l'indice
 
-Aspose.Words per Java offre ampie opzioni di personalizzazione per i tuoi TOC. Esploriamo alcune funzionalità avanzate:
+Ora inseriamo l'indice all'inizio del documento.
 
-### Personalizzazione degli stili di indice
-
-Puoi definire gli stili del sommario in modo che corrispondano all'estetica del tuo documento.
 
 ```java
-// Personalizza gli stili del TOC
-com.aspose.words.Style tocStyle = doc.getStyles().add(StyleType.PARAGRAPH, "MyTOCStyle");
-tocStyle.getFont().setSize(16);
-tocStyle.getFont().setBold(true);
+builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
+builder.insertBreak(BreakType.PAGE_BREAK);
 ```
 
-### Inclusi titoli specifici
+- `insertTableOfContents`: Inserisce un campo TOC. I parametri specificano:
+  - `\o "1-3"`: Includere titoli dei livelli da 1 a 3.
+  - `\h`: Trasforma le voci in collegamenti ipertestuali.
+  - `\z`: Sopprimi i numeri di pagina nei documenti web.
+  - `\u`: Mantieni gli stili per i collegamenti ipertestuali.
+- `insertBreak`: Aggiunge un'interruzione di pagina dopo l'indice.
 
-Puoi scegliere quali titoli includere nel tuo indice specificandone i livelli di struttura.
+## Passaggio 3: aggiungere titoli per popolare il sommario
+
+Per popolare l'indice è necessario aggiungere paragrafi con stili di intestazione.
+
 
 ```java
-// Includi solo titoli specifici
-tocField.setCode("TOC \\o \"1-3\" \\h \\z");
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 1");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_2);
+builder.writeln("Heading 1.1");
+builder.writeln("Heading 1.2");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
+builder.writeln("Heading 2");
 ```
 
-## Aggiunta del codice sorgente per la generazione del TOC
+- `setStyleIdentifier` : Imposta lo stile del paragrafo su un livello di intestazione specifico (ad esempio,`HEADING_1`, `HEADING_2`).
+- `writeln`: Aggiunge testo al documento con lo stile specificato.
 
-Facciamo un ulteriore passo avanti integrando il codice sorgente per automatizzare la generazione di TOC nelle tue applicazioni Java.
+## Passaggio 4: aggiungere intestazioni nidificate
+
+Per dimostrare i livelli dell'indice, includere titoli nidificati.
+
 
 ```java
-// Automatizzare la generazione di TOC in Java
-public void generateTOC() {
-    com.aspose.words.Document doc = new com.aspose.words.Document();
-    com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
-    tocField.update();
-    // Aggiungi qui altre personalizzazioni
-}
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_3);
+builder.writeln("Heading 3.1.1");
+builder.writeln("Heading 3.1.2");
+builder.writeln("Heading 3.1.3");
+
+builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_4);
+builder.writeln("Heading 3.1.3.1");
+builder.writeln("Heading 3.1.3.2");
 ```
 
-Incapsulando la generazione del TOC in un metodo, puoi incorporarla facilmente nei tuoi progetti.
+- Aggiungere titoli di livelli più profondi per mostrare la gerarchia nell'indice.
 
-## Domande frequenti
+## Passaggio 5: Aggiorna i campi del sommario
 
-### Come posso aggiornare un indice esistente?
+Il campo TOC deve essere aggiornato per visualizzare le intestazioni più recenti.
 
-Per aggiornare un indice esistente nel documento, è sufficiente fare clic destro su di esso e selezionare "Aggiorna campo". Aspose.Words per Java aggiornerà l'indice in base a eventuali modifiche nelle intestazioni del documento.
 
-### Posso generare più TOC in un unico documento?
+```java
+doc.updateFields();
+```
 
-Sì, puoi generare più TOC in un singolo documento. Utilizza codici di campo diversi per ogni TOC e personalizza le impostazioni in base alle tue esigenze.
+- `updateFields`: Aggiorna tutti i campi del documento, assicurando che l'indice rifletta le intestazioni aggiunte.
 
-### Aspose.Words per Java è adatto sia per documenti di piccole che di grandi dimensioni?
+## Passaggio 6: Salvare il documento
 
-Assolutamente! Aspose.Words per Java è versatile e può gestire documenti di varie dimensioni, da piccoli report a romanzi estesi.
+Infine, salva il documento nel formato desiderato.
 
-### Posso personalizzare l'aspetto delle voci del mio indice?
 
-Certamente! Puoi definire stili personalizzati per le voci del sommario in modo che corrispondano al design e alla formattazione del tuo documento.
+```java
+doc.save(dataDir + "DocumentBuilder.InsertToc.docx");
+```
 
-### Aspose.Words per Java supporta i riferimenti incrociati all'interno dell'indice?
-
-Sì, puoi creare riferimenti incrociati all'interno dell'indice per collegarti a sezioni o pagine specifiche del tuo documento.
-
-### Aspose.Words per Java è adatto alle applicazioni web?
-
-In effetti, Aspose.Words per Java può essere integrato perfettamente nelle applicazioni web per generare TOC in modo dinamico.
+- `save` : Esporta il documento in un`.docx` file. Puoi specificare altri formati come`.pdf` O`.txt` se necessario.
 
 ## Conclusione
 
-In questa guida completa, abbiamo esplorato l'arte della generazione di indici (TOC) utilizzando Aspose.Words per Java. Hai imparato come impostare il tuo ambiente, creare indici di base e avanzati e persino integrare la generazione di indici nei tuoi progetti Java con codice sorgente. Aspose.Words per Java ti consente di migliorare i tuoi documenti con indici dinamici e visivamente accattivanti. Ora, vai avanti e applica questa conoscenza per creare indici sbalorditivi nelle tue applicazioni Java. Buona codifica!
+Congratulazioni! Hai creato con successo un indice dinamico in un documento Word usando Aspose.Words per Java. Con solo poche righe di codice, hai automatizzato un'attività che altrimenti potrebbe richiedere ore. Quindi, cosa c'è dopo? Prova a sperimentare diversi stili e formati di intestazione per adattare il tuo indice a esigenze specifiche.
+
+## Domande frequenti
+
+### Posso personalizzare ulteriormente il formato dell'indice?
+Assolutamente! Puoi modificare i parametri del TOC, come includere i numeri di pagina, allineare il testo o usare stili di intestazione personalizzati.
+
+### Per Aspose.Words per Java è obbligatoria una licenza?
+ Sì, è richiesta una licenza per la piena funzionalità. Puoi iniziare con una[licenza temporanea](https://purchase.aspose.com/temporary-license/).
+
+### Posso generare un indice per un documento esistente?
+ Sì! Carica il documento in un`Document` oggetto e seguire gli stessi passaggi per inserire e aggiornare l'indice.
+
+### Funziona anche per le esportazioni in formato PDF?
+ Sì, il sommario apparirà nel PDF se salvi il documento in`.pdf` formato.
+
+### Dove posso trovare ulteriore documentazione?
+ Dai un'occhiata al[Documentazione di Aspose.Words per Java](https://reference.aspose.com/words/java/) per ulteriori esempi e dettagli.

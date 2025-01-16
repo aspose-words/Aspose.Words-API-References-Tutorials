@@ -15,7 +15,7 @@ url: /ru/net/programming-with-txtsaveoptions/add-bidi-marks/
 
 Прежде чем погрузиться в код, убедитесь, что у вас есть следующее:
 
-1.  Aspose.Words for .NET: Вам необходимо установить Aspose.Words for .NET. Вы можете загрузить его с[Страница загрузок Aspose](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Вам необходимо установить Aspose.Words for .NET. Вы можете загрузить его с[Страница загрузок Aspose](https://releases.aspose.com/words/net/).
 2. .NET Framework или .NET Core: убедитесь, что у вас настроена совместимая среда .NET для запуска примеров.
 3. Базовые знания C#: знакомство с языком программирования C# и основными операциями в .NET.
 

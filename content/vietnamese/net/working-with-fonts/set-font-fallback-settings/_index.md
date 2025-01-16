@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Bước 3: Cấu hình cài đặt phông chữ
 
-Tạo một cái mới`FontSettings` đối tượng và tải cài đặt phông chữ dự phòng từ tệp XML. Tệp XML này chứa các quy tắc cho phông chữ dự phòng.
+ Tạo một cái mới`FontSettings` đối tượng và tải cài đặt phông chữ dự phòng từ tệp XML. Tệp XML này chứa các quy tắc cho phông chữ dự phòng.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

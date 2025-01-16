@@ -33,7 +33,7 @@ using Aspose.Words.Tables;
 
 ## 1단계: DocumentBuilder 초기화
 
-그만큼`DocumentBuilder` 클래스는 문서에 콘텐츠를 추가하는 빠르고 쉬운 방법을 제공합니다. 초기화해 보겠습니다.
+ 그만큼`DocumentBuilder` 클래스는 문서에 콘텐츠를 추가하는 빠르고 쉬운 방법을 제공합니다. 초기화해 보겠습니다.
 
 ```csharp
 // 문서 작성 도구를 사용하여 문서에 내용을 추가합니다.

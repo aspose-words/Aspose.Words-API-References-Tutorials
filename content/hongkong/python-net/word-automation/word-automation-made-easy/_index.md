@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /zh-hant/python-net/word-automation/word-automation-made-easy/
 ---
-
 ## 介紹
 
 在當今快節奏的世界中，自動化任務對於提高效率和生產力至關重要。其中一項任務是 Word Automation，我們可以透過程式設計方式建立、操作和處理 Word 文件。在本逐步教學中，我們將探索如何使用 Aspose.Words for Python 輕鬆實現 Word 自動化，這是一個功能強大的函式庫，為文字處理和文件操作提供了廣泛的功能。
@@ -67,14 +66,27 @@ font.bold = True
 表格是 Word 文件中的關鍵元素，Aspose.Words 讓使用它們變得容易。
 
 ```python
-# Add a table to the document
-table = doc.get_child_nodes(aw.NodeType.TABLE, True).add()
-
-# Add rows and cells to the table
-table.ensure_minimum()
-for row in table.rows:
-    for cell in row.cells:
-        cell.get_first_paragraph().get_runs().add("Cell Text")
+builder = aw.DocumentBuilder(doc=doc)
+table = builder.start_table()
+builder.insert_cell()
+builder.write('City')
+builder.insert_cell()
+builder.write('Country')
+builder.end_row()
+builder.insert_cell()
+builder.write('London')
+builder.insert_cell()
+builder.write('U.K.')
+builder.end_table()
+# Use the first row's "RowFormat" property to modify the formatting
+# of the contents of all cells in this row.
+row_format = table.first_row.row_format
+row_format.height = 25
+row_format.borders.get_by_border_type(aw.BorderType.BOTTOM).color = aspose.pydrawing.Color.red
+# Use the "CellFormat" property of the first cell in the last row to modify the formatting of that cell's contents.
+cell_format = table.last_row.first_cell.cell_format
+cell_format.width = 100
+cell_format.shading.background_pattern_color = aspose.pydrawing.Color.orange
 ```
 
 ## 插入圖像和形狀
@@ -107,7 +119,7 @@ section.page_setup.orientation = aw.Orientation.LANDSCAPE
 
 ```python
 # Save the document to a file
-doc.save("output.docx", aw.SaveFormat.DOCX)
+doc.save("output.docx")
 ```
 
 ## 進階 Word 自動化功能
@@ -152,7 +164,7 @@ Word Automation 涉及以程式設計方式與 Word 文件進行互動。 Aspose
 A6：是的，您可以使用 Aspose.Words for Python 輕鬆地將圖片插入 Word 文件中，從而增強生成文件的視覺效果。
 
 ### 我可以使用 Aspose.Words 將 Word 文件匯出為不同的文件格式嗎？
-絕對地！ Aspose.Words支援多種檔案格式匯出，包括PDF、DOCX、RTF、HTML等，為不同需求提供彈性。
+絕對地！ Aspose.Words支援多種文件格式匯出，包括PDF、DOCX、RTF、HTML等，為不同需求提供彈性。
 
 ### Aspose.Words 適合自動化郵件合併作業嗎？
 是的，Aspose.Words 支援郵件合併功能，可讓您將不同來源的資料合併到 Word 範本中，從而簡化產生個人化文件的過程。

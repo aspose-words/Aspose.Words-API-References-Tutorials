@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-Der`InsertChart` Die Methode fügt ein Diagramm des angegebenen Typs (in diesem Fall „Spalte“) und der angegebenen Dimensionen in das Dokument ein.
+ Der`InsertChart` Die Methode fügt ein Diagramm des angegebenen Typs (in diesem Fall „Spalte“) und der angegebenen Dimensionen in das Dokument ein.
 
 ## Schritt 3: Anpassen der Diagrammserie
 
@@ -86,7 +86,7 @@ Zum Schluss formatieren wir die Zahlen auf der Y-Achse, um sie lesbarer zu mache
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-Der`FormatCode` Mit dieser Eigenschaft können Sie ein benutzerdefiniertes Format für die Zahlen auf der Achse festlegen. In diesem Beispiel`#,##0`sorgt dafür, dass große Zahlen mit Tausenderkommas angezeigt werden.
+ Der`FormatCode` Mit dieser Eigenschaft können Sie ein benutzerdefiniertes Format für die Zahlen auf der Achse festlegen. In diesem Beispiel`#,##0`sorgt dafür, dass große Zahlen mit Tausenderkommas angezeigt werden.
 
 ## Schritt 5: Speichern des Dokuments
 

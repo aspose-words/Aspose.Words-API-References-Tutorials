@@ -9,7 +9,7 @@ url: /it/net/join-and-append-documents/keep-source-together/
 ---
 ## Introduzione
 
-Le tabelle sono una parte essenziale di molti documenti Word, ma a volte potresti imbatterti in una situazione in cui la tua tabella si divide su due pagine. Ciò può interrompere il flusso del tuo documento e comprometterne la leggibilità. Non sarebbe bello se ci fosse un modo per tenere insieme l'intera tabella in una pagina? Bene, con Aspose.Words per .NET, c'è una soluzione semplice a questo problema! In questo tutorial, ti guideremo attraverso come impedire che le tabelle si dividano su più pagine, assicurandoti che il tuo documento abbia un aspetto ordinato e professionale.
+Le tabelle sono una parte essenziale di molti documenti Word, ma a volte potresti imbatterti in una situazione in cui la tua tabella si divide su due pagine. Ciò può interrompere il flusso del tuo documento e comprometterne la leggibilità. Non sarebbe bello se ci fosse un modo per tenere insieme l'intera tabella in una pagina? Bene, con Aspose.Words per .NET, c'è una soluzione semplice a questo problema! In questo tutorial, ti mostreremo come impedire che le tabelle si dividano su più pagine, assicurandoti che il tuo documento abbia un aspetto ordinato e professionale.
 
 ## Prerequisiti
 

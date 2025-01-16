@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Modificare l'asse X in modo che sia una categoria anziché una data.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // Misurato in unità di visualizzazione dell'asse Y (centinaia).
+xAxis.setCrossesAt(3.0); //Misurato in unità di visualizzazione dell'asse Y (centinaia).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -131,7 +131,7 @@ In questo tutorial, abbiamo esplorato come lavorare con i grafici usando Aspose.
 
 ### Come posso formattare le etichette dati con formati numerici personalizzati?
 
- È possibile formattare le etichette dati accedendo a`DataLabels` proprietà di una serie e impostazione del codice formato desiderato utilizzando`getNumberFormat().setFormatCode()`.
+È possibile formattare le etichette dati accedendo a`DataLabels` proprietà di una serie e impostazione del codice formato desiderato utilizzando`getNumberFormat().setFormatCode()`.
 
 ### Come posso personalizzare le proprietà degli assi in un grafico?
 
@@ -139,7 +139,7 @@ In questo tutorial, abbiamo esplorato come lavorare con i grafici usando Aspose.
 
 ### Come posso creare altri tipi di grafici, come grafici a dispersione o ad area?
 
-È possibile creare vari tipi di grafici specificando l'appropriato`ChartType` quando si inserisce il grafico utilizzando`builder.insertChart(ChartType.TYPE, width, height)`.
+ È possibile creare vari tipi di grafici specificando l'appropriato`ChartType` quando si inserisce il grafico utilizzando`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Come posso nascondere un asse di un grafico?
 

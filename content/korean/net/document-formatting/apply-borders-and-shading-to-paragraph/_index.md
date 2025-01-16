@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-그만큼`Document` 객체는 전체 Word 문서를 나타내며`DocumentBuilder` 콘텐츠를 추가하고 형식을 지정하는 데 도움이 됩니다.
+ 그만큼`Document` 객체는 전체 Word 문서를 나타내며`DocumentBuilder` 콘텐츠를 추가하고 형식을 지정하는 데 도움이 됩니다.
 
 ## 3단계: 문단 테두리 정의
 

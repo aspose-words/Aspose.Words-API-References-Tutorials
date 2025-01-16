@@ -9,7 +9,7 @@ url: /it/net/working-with-formfields/insert-form-fields/
 ---
 ## Introduzione
 
-campi modulo nei documenti Word possono essere incredibilmente utili per creare moduli o modelli interattivi. Che tu stia generando un sondaggio, un modulo di domanda o qualsiasi altro documento che richieda l'input dell'utente, i campi modulo sono essenziali. In questo tutorial, ti guideremo attraverso il processo di inserimento di un campo modulo casella combinata in un documento Word utilizzando Aspose.Words per .NET. Tratteremo tutto, dai prerequisiti ai passaggi dettagliati, assicurandoti di avere una comprensione completa del processo.
+campi modulo nei documenti Word possono essere incredibilmente utili per creare moduli o modelli interattivi. Che tu stia generando un sondaggio, un modulo di domanda o qualsiasi altro documento che richieda l'input dell'utente, i campi modulo sono essenziali. In questo tutorial, ti guideremo attraverso il processo di inserimento di un campo modulo casella combinata in un documento Word utilizzando Aspose.Words per .NET. Tratteremo tutto, dai prerequisiti ai passaggi dettagliati, assicurandoti una comprensione completa del processo.
 
 ## Prerequisiti
 

@@ -9,7 +9,7 @@ url: /cs/net/working-with-markdown/indented-code/
 ---
 ## Zavedení
 
-Přemýšleli jste někdy, jak přidat dotek přizpůsobení vašim dokumentům Word pomocí Aspose.Words pro .NET? Představte si, že máte možnost stylizovat text pomocí specifického formátování nebo přesně spravovat obsah, a to vše při použití robustní knihovny navržené pro bezproblémovou manipulaci s dokumenty. V tomto tutoriálu se ponoříme do toho, jak můžete stylizovat text, abyste vytvořili odsazené bloky kódu v dokumentech aplikace Word. Ať už chcete přidat úryvkům kódu profesionální vkus nebo jednoduše potřebujete čistý způsob prezentace informací, Aspose.Words nabízí výkonné řešení.
+Přemýšleli jste někdy, jak přidat dotek přizpůsobení vašim dokumentům Word pomocí Aspose.Words pro .NET? Představte si, že máte možnost stylizovat text pomocí specifického formátování nebo přesně spravovat obsah, a to vše při použití robustní knihovny navržené pro bezproblémovou manipulaci s dokumenty. V tomto tutoriálu se ponoříme do toho, jak můžete stylizovat text, abyste vytvořili odsazené bloky kódu v dokumentech aplikace Word. Ať už chcete přidat úryvkům kódu profesionální vkus nebo prostě potřebujete čistý způsob prezentace informací, Aspose.Words nabízí výkonné řešení.
 
 ## Předpoklady
 

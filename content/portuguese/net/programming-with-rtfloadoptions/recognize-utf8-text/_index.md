@@ -91,7 +91,7 @@ Absolutamente! O Aspose.Words para .NET suporta vários formatos, incluindo DOC,
 
  Você pode obter uma licença temporária em[aqui](https://purchase.aspose.com/temporary-license/). Isso permite que você experimente todos os recursos sem nenhuma limitação.
 
-### O Aspose.Words para .NET é compatível com o .NET Core?
+### Aspose.Words para .NET é compatível com o .NET Core?
 
 Sim, o Aspose.Words para .NET é compatível com o .NET Core, o que o torna versátil para diferentes ambientes de desenvolvimento.
 

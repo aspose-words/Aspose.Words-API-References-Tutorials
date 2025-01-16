@@ -19,10 +19,10 @@ url: /th/python-net/document-combining-and-comparison/generate-table-contents/
 ## การโหลดเอกสาร
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## การกำหนดหัวเรื่องและหัวเรื่องย่อย
@@ -31,25 +31,11 @@ doc = asposewords.Document("your_document.docx")
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## การสร้างสารบัญ
-
-ตอนนี้เราได้กำหนดหัวข้อและหัวข้อย่อยเรียบร้อยแล้ว เรามาสร้างสารบัญกันเลย เราจะสร้างส่วนใหม่ที่จุดเริ่มต้นของเอกสารและใส่เนื้อหาที่เหมาะสมลงไป
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## การปรับแต่งสารบัญ
@@ -58,21 +44,10 @@ toc_title.paragraph_format.style_name = "Table of Contents Title"
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## การเพิ่มไฮเปอร์ลิงก์
-
-หากต้องการให้สารบัญมีการโต้ตอบได้ ให้เพิ่มไฮเปอร์ลิงก์ที่ให้ผู้อ่านข้ามไปยังส่วนที่เกี่ยวข้องในเอกสารได้โดยตรง
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+-
 
 ## การจัดรูปแบบสารบัญ
 
@@ -81,16 +56,7 @@ for heading in headings:
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## การอัปเดตสารบัญ
-
-หากคุณทำการเปลี่ยนแปลงโครงสร้างเอกสาร คุณสามารถอัปเดตสารบัญเพื่อสะท้อนถึงการเปลี่ยนแปลงเหล่านั้นได้อย่างง่ายดาย
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## การทำให้กระบวนการเป็นอัตโนมัติ
@@ -101,27 +67,13 @@ doc.update_fields()
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## การจัดการหมายเลขหน้า
-
-คุณสามารถเพิ่มหมายเลขหน้าลงในสารบัญเพื่อให้ผู้อ่านทราบบริบทเพิ่มเติมเกี่ยวกับตำแหน่งที่จะค้นหาส่วนต่างๆ เฉพาะเจาะจงได้
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## บทสรุป

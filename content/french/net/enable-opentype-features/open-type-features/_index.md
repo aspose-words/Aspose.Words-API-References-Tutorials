@@ -56,7 +56,7 @@ Créez une variable de chaîne pour contenir le chemin d'accès à votre répert
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin réel où se trouve votre document.
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où se trouve votre document.
 
 ### Chargement du document
 

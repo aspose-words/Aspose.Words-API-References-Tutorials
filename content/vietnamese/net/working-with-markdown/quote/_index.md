@@ -44,7 +44,7 @@ Các không gian tên này cung cấp cho bạn quyền truy cập vào các l�
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Các`DocumentBuilder` class là cổng thông tin để bạn xây dựng và tùy chỉnh tài liệu của mình. Hãy coi nó như cây đũa thần để tạo tài liệu Word!
+ Các`DocumentBuilder` class là cổng thông tin để bạn xây dựng và tùy chỉnh tài liệu của mình. Hãy coi nó như cây đũa thần để tạo tài liệu Word!
 
 ## Bước 2: Thêm Blockquote
 

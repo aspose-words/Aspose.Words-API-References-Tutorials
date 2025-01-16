@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Passaggio 2: creare un nuovo documento
 
-Crea un nuovo`Document` oggetto che fungerà da base per il documento Word.
+ Crea un nuovo`Document` oggetto che fungerà da base per il documento Word.
 
 ```csharp
 Document doc = new Document();
@@ -120,4 +120,4 @@ Oltre al testo formattato, Aspose.Words supporta altri tipi di testo formattato 
  Puoi crearne più di uno`StructuredDocumentTag` istanze e aggiungerle in sequenza al corpo del documento.
 
 ### Posso usare Aspose.Words per modificare documenti esistenti?
-Sì, Aspose.Words consente di aprire, modificare e salvare documenti Word esistenti, nonché di aggiungere o aggiornare SDT.
+Sì, Aspose.Words consente di aprire, modificare e salvare documenti Word esistenti, inclusa l'aggiunta o l'aggiornamento di SDT.

@@ -7,7 +7,7 @@ type: docs
 weight: 1500
 url: /pl/net/join-and-append-documents/
 ---
-Samouczki Aspose.Words for .NET przeprowadzą Cię przez różne funkcje i techniki przetwarzania tekstu z dokumentami Word w Twoich aplikacjach. Jednym z takich samouczków jest „Join and Merge Documents”, który pokazuje, jak połączyć wiele dokumentów Word w jeden. Dowiesz się, jak używać`Document` klasa do otwierania i manipulowania dokumentami, a także`AppendDocument` metoda dodawania zawartości jednego dokumentu do drugiego. Ten samouczek zawiera instrukcje krok po kroku, jak wykonać tę operację z łatwością.
+Samouczki Aspose.Words for .NET przeprowadzą Cię przez różne funkcje i techniki przetwarzania tekstu z dokumentami Word w Twoich aplikacjach. Jednym z takich samouczków jest „Join and Merge Documents”, który pokazuje, jak połączyć wiele dokumentów Word w jeden. Nauczysz się, jak używać`Document` klasa do otwierania i manipulowania dokumentami, a także`AppendDocument` metoda dodawania zawartości jednego dokumentu do drugiego. Ten samouczek zawiera instrukcje krok po kroku, jak wykonać tę operację z łatwością.
 
  Innym świetnym samouczkiem jest „Zamień tekst w dokumencie”, który pokazuje, jak wykonywać automatyczne zamiany tekstu w dokumencie Word. Nauczysz się, jak używać`FindReplaceOptions` I`Document` klasy do znajdowania i zamieniania tekstu, określając elastyczne opcje wyszukiwania. Ten samouczek przeprowadzi Cię przez proces zamiany tekstu w dokumencie, umożliwiając automatyzację tego żmudnego zadania.
 
@@ -23,7 +23,7 @@ Te samouczki Aspose.Words for .NET dostarczają cennych zasobów do opanowania p
 | [Dołącz dokument do pustego miejsca](./append-document-to-blank/) | Dowiedz się, jak bezproblemowo dołączyć dokument do pustego dokumentu za pomocą Aspose.Words dla .NET. Zawiera przewodnik krok po kroku, fragmenty kodu i często zadawane pytania. |
 | [Dołącz z opcjami formatu importu](./append-with-import-format-options/) | Bezproblemowo dołączaj dokumenty Word za pomocą Aspose.Words for .NET, zachowując formatowanie dzięki szczegółowym instrukcjom krok po kroku. |
 | [Różne ustawienia strony](./different-page-setup/) | Dowiedz się, jak ustawić różne konfiguracje stron podczas scalania dokumentów Word za pomocą Aspose.Words dla .NET. Zawiera przewodnik krok po kroku. |
-| [Dołącz do Continuous](./join-continuous/) | Dowiedz się, jak bezproblemowo połączyć dwa dokumenty Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać płynne i wydajne scalanie dokumentów. |
+| [Dołącz do Continuous](./join-continuous/) | Dowiedz się, jak płynnie połączyć dwa dokumenty Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby płynnie i wydajnie scalić dokumenty. |
 | [Dołącz do nowej strony](./join-new-page/) | Dowiedz się, jak łączyć i dołączać dokumenty w programie Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby skutecznie scalać dokumenty. |
 | [Zachowaj formatowanie źródłowe](./keep-source-formatting/) | Dowiedz się, jak scalać dokumenty Word, zachowując formatowanie, korzystając z Aspose.Words dla .NET. Idealne dla programistów, którzy chcą zautomatyzować zadania związane z montażem dokumentów. |
 | [Trzymaj stół razem](./keep-source-together/) | Dowiedz się, jak zapobiegać dzieleniu tabel na strony za pomocą Aspose.Words dla .NET dzięki temu przewodnikowi krok po kroku. Zapewnij schludne, profesjonalnie wyglądające dokumenty Word |

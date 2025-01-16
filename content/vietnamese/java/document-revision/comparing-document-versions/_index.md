@@ -7,86 +7,117 @@ type: docs
 weight: 11
 url: /vi/java/document-revision/comparing-document-versions/
 ---
-
 ## Giới thiệu
 
-So sánh tài liệu bao gồm việc phân tích hai hoặc nhiều phiên bản của một tài liệu để xác định sự khác biệt và điểm tương đồng. Aspose.Words for Java cung cấp các công cụ để thực hiện nhiệm vụ này một cách hiệu quả. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn toàn bộ quy trình, từ thiết lập môi trường phát triển của bạn đến lưu tài liệu đã so sánh.
+Khi làm việc với các tài liệu Word theo chương trình, việc so sánh hai phiên bản tài liệu là một yêu cầu phổ biến. Cho dù bạn đang theo dõi các thay đổi hay đảm bảo tính nhất quán giữa các bản nháp, Aspose.Words for Java giúp quá trình này trở nên liền mạch. Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách so sánh hai tài liệu Word bằng Aspose.Words for Java, với hướng dẫn từng bước, giọng điệu đàm thoại và nhiều chi tiết để bạn tham gia.
 
-## Thiết lập môi trường phát triển của bạn
+## Điều kiện tiên quyết
 
-Trước khi chúng ta đi sâu vào so sánh tài liệu, bạn cần thiết lập môi trường phát triển của mình. Đảm bảo bạn đã cài đặt Aspose.Words for Java. Bạn có thể tải xuống từ trang web[đây](https://releases.aspose.com/words/java/).
+Trước khi tìm hiểu mã, hãy đảm bảo rằng bạn đã có mọi thứ cần thiết: 
 
-## Đang tải tài liệu
+1. Bộ công cụ phát triển Java (JDK): Đảm bảo máy của bạn đã cài đặt JDK 8 trở lên. 
+2.  Aspose.Words cho Java: Tải xuống[phiên bản mới nhất ở đây](https://releases.aspose.com/words/java/).  
+3. Môi trường phát triển tích hợp (IDE): Sử dụng bất kỳ IDE Java nào bạn thích, chẳng hạn như IntelliJ IDEA hoặc Eclipse.
+4.  Giấy phép Aspose: Bạn có thể nhận được[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để có đầy đủ tính năng hoặc khám phá bằng bản dùng thử miễn phí.
 
-Để so sánh các phiên bản tài liệu, trước tiên bạn cần tải các tài liệu bạn muốn phân tích. Aspose.Words for Java giúp bạn thực hiện việc này dễ dàng với khả năng tải tài liệu mạnh mẽ của nó.
 
-```java
-// Tải tài liệu gốc
-Document originalDocument = new Document("original.docx");
+## Nhập gói
 
-// Tải tài liệu đã sửa đổi
-Document revisedDocument = new Document("revised.docx");
-```
-
-## So sánh các phiên bản tài liệu
-
-Bây giờ chúng ta đã tải xong tài liệu, hãy tiến hành so sánh. Aspose.Words for Java cung cấp một phương pháp đơn giản cho việc này.
+Để sử dụng Aspose.Words for Java trong dự án của bạn, bạn sẽ cần phải nhập các gói cần thiết. Sau đây là một đoạn mã để đưa vào đầu mã của bạn:
 
 ```java
-// So sánh các tài liệu
-DocumentComparer comparer = new DocumentComparer(originalDocument, revisedDocument);
-comparer.compare();
+import com.aspose.words.*;
+import java.util.Date;
 ```
 
-## Xác định những thay đổi
+Hãy chia nhỏ quy trình thành các bước dễ quản lý. Sẵn sàng bắt đầu chưa? Bắt đầu thôi!
 
-Sau khi so sánh, điều cần thiết là xác định những thay đổi được thực hiện giữa hai tài liệu. Aspose.Words for Java giúp chúng ta lấy thông tin này.
+## Bước 1: Thiết lập môi trường dự án của bạn
+
+Trước tiên, bạn cần thiết lập dự án Java của mình với Aspose.Words. Thực hiện theo các bước sau: 
+
+1.  Thêm tệp JAR Aspose.Words vào dự án của bạn. Nếu bạn đang sử dụng Maven, chỉ cần bao gồm phụ thuộc sau vào`pom.xml` tài liệu:
+   ```xml
+   <dependency>
+       <groupId>com.aspose</groupId>
+       <artifactId>aspose-words</artifactId>
+       <version>Latest-Version</version>
+   </dependency>
+   ```
+    Thay thế`Latest-Version` với số phiên bản từ[trang tải xuống](https://releases.aspose.com/words/java/).
+
+2. Mở dự án của bạn trong IDE và đảm bảo rằng thư viện Aspose.Words đã được thêm chính xác vào classpath.
+
+
+## Bước 2: Tải tài liệu Word
+
+Để so sánh hai tài liệu Word, bạn sẽ cần tải chúng vào ứng dụng của mình bằng cách sử dụng`Document` lớp học.
 
 ```java
-// Nhận danh sách các thay đổi
-List<DocumentChange> changes = comparer.getChanges();
+String dataDir = "Your Document Directory";
+Document docA = new Document(dataDir + "DocumentA.doc");
+Document docB = new Document(dataDir + "DocumentB.doc");
 ```
 
-## Áp dụng thay đổi
+- `dataDir`: Biến này giữ đường dẫn đến thư mục chứa tài liệu Word của bạn.
+- `DocumentA.doc` Và`DocumentB.doc`: Thay thế những tên này bằng tên tệp thực tế của bạn.
 
-Sau khi xác định được những thay đổi, bạn có thể chọn áp dụng chúng một cách có chọn lọc hoặc áp dụng tất cả cùng lúc cho một trong các tài liệu.
+
+## Bước 3: So sánh các tài liệu
+
+ Bây giờ, chúng ta sẽ sử dụng`compare` phương pháp do Aspose.Words cung cấp. Phương pháp này xác định sự khác biệt giữa hai tài liệu.
 
 ```java
-// Áp dụng các thay đổi cho tài liệu gốc
-comparer.applyChangesToOriginalDocument();
+docA.compare(docB, "user", new Date());
 ```
 
-## Lưu tài liệu đã so sánh
+- `docA.compare(docB, "user", new Date())` : Điều này so sánh`docA` với`docB`. 
+- `"user"`: Chuỗi này biểu thị tên của tác giả thực hiện thay đổi. Bạn có thể tùy chỉnh khi cần.
+- `new Date()`: Đặt ngày và giờ để so sánh.
 
-Sau khi áp dụng các thay đổi, đã đến lúc lưu tài liệu đã so sánh để sử dụng sau này.
+## Bước 4: Kiểm tra kết quả so sánh
+
+ Sau khi so sánh các tài liệu, bạn có thể phân tích sự khác biệt bằng cách sử dụng`getRevisions` phương pháp.
 
 ```java
-// Lưu tài liệu đã so sánh
-originalDocument.save("compared_document.docx");
+if (docA.getRevisions().getCount() == 0)
+    System.out.println("Documents are equal");
+else
+    System.out.println("Documents are not equal");
 ```
+
+- `getRevisions().getCount()`: Đếm số lần sửa đổi (khác biệt) giữa các tài liệu.
+- Tùy thuộc vào số lượng, bảng điều khiển sẽ in ra các tài liệu có giống hệt nhau hay không.
+
+
+## Bước 5: Lưu Tài liệu đã so sánh (Tùy chọn)
+
+Nếu bạn muốn lưu tài liệu đã so sánh cùng với bản sửa đổi, bạn có thể thực hiện dễ dàng.
+
+```java
+docA.save(dataDir + "ComparedDocument.docx");
+```
+
+-  Các`save`phương pháp này ghi những thay đổi vào một tệp mới, giữ nguyên bản sửa đổi.
+
 
 ## Phần kết luận
 
-So sánh các phiên bản tài liệu là một nhiệm vụ quan trọng trong nhiều tình huống và Aspose.Words for Java đơn giản hóa quy trình này. Với API mạnh mẽ của mình, bạn có thể tải, so sánh, xác định các thay đổi, áp dụng chúng và lưu tài liệu đã so sánh một cách hiệu quả. Hướng dẫn này cung cấp hướng dẫn từng bước về toàn bộ quy trình.
+So sánh các tài liệu Word theo chương trình là một việc dễ dàng với Aspose.Words for Java. Bằng cách làm theo hướng dẫn từng bước này, bạn đã học được cách thiết lập môi trường, tải tài liệu, thực hiện so sánh và diễn giải kết quả. Cho dù bạn là nhà phát triển hay người học tò mò, công cụ mạnh mẽ này có thể hợp lý hóa quy trình làm việc của bạn.
 
 ## Câu hỏi thường gặp
 
-### Aspose.Words for Java có chính xác đến mức nào trong việc xác định những thay đổi?
+###  Mục đích của việc này là gì?`compare` method in Aspose.Words?  
+ Các`compare` Phương pháp này xác định sự khác biệt giữa hai tài liệu Word và đánh dấu chúng là bản sửa đổi.
 
-Aspose.Words for Java có độ chính xác cao trong việc xác định các thay đổi giữa các phiên bản tài liệu. Nó sử dụng các thuật toán tiên tiến để đảm bảo độ chính xác.
+###  Tôi có thể so sánh các tài liệu ở định dạng khác không?`.doc` or `.docx`?  
+ Có! Aspose.Words hỗ trợ nhiều định dạng khác nhau, bao gồm`.rtf`, `.odt` , Và`.txt`.
 
-### Tôi có thể tùy chỉnh cách áp dụng thay đổi vào tài liệu không?
+### Làm sao tôi có thể bỏ qua những thay đổi cụ thể trong quá trình so sánh?  
+ Bạn có thể tùy chỉnh các tùy chọn so sánh bằng cách sử dụng`CompareOptions` lớp trong Aspose.Words.
 
-Có, bạn có thể tùy chỉnh cách áp dụng thay đổi theo yêu cầu cụ thể của mình.
+### Aspose.Words cho Java có miễn phí không?  
+ Không, nhưng bạn có thể khám phá nó bằng một[dùng thử miễn phí](https://releases.aspose.com/) hoặc yêu cầu một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
 
-### Có giới hạn về kích thước tài liệu có thể so sánh bằng Aspose.Words cho Java không?
-
-Aspose.Words for Java có thể xử lý các tài liệu có nhiều kích cỡ khác nhau, phù hợp cho cả so sánh quy mô nhỏ và lớn.
-
-### Aspose.Words for Java có hỗ trợ các định dạng tài liệu khác ngoài DOCX không?
-
-Có, Aspose.Words for Java hỗ trợ nhiều định dạng tài liệu khác nhau, bao gồm DOC, RTF, HTML, v.v.
-
-### Tôi có thể truy cập tài liệu về Aspose.Words for Java ở đâu?
-
- Bạn có thể tìm thấy tài liệu toàn diện về Aspose.Words cho Java tại[đây](https://reference.aspose.com/words/java/).
+### Điều gì xảy ra với sự khác biệt về định dạng trong quá trình so sánh?  
+Aspose.Words có thể phát hiện và đánh dấu những thay đổi định dạng là bản sửa đổi, tùy thuộc vào cài đặt của bạn.

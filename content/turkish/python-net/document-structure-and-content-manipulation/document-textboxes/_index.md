@@ -38,9 +38,15 @@ Yeni bir Word belgesi oluşturarak ve ona bir metin kutusu ekleyerek başlayalı
 import aspose.words as aw
 
 doc = aw.Document()
-builder = aw.DocumentBuilder(doc)
-
-textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
+builder = aw.DocumentBuilder(doc=doc)
+textbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_BOX)
+textbox.width = 100
+textbox.height = 100
+textbox.text_box.layout_flow = aw.drawing.LayoutFlow.BOTTOM_TO_TOP
+textbox.append_child(aw.Paragraph(doc))
+builder.insert_node(textbox)
+builder.move_to(textbox.first_paragraph)
+builder.write('This text is flipped 90 degrees to the left.')
 ```
 
  Bu kodda yeni bir tane oluşturuyoruz`Document` ve bir`DocumentBuilder` .`insert_text_box` yöntemi, belgeye bir metin kutusu eklemek için kullanılır. Metin kutusunun içeriğini, konumunu ve boyutunu gereksinimlerinize göre özelleştirebilirsiniz.

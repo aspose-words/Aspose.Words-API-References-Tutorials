@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Krok 4: Použijte automatické zarovnání obsahu tabulky
 
-The`Auto`volba zarovnání převezme zarovnání z prvního odstavce v odpovídajícím sloupci tabulky. To může být užitečné, když máte smíšená zarovnání v jedné tabulce.
+ The`Auto`volba zarovnání převezme zarovnání z prvního odstavce v odpovídajícím sloupci tabulky. To může být užitečné, když máte smíšená zarovnání v jedné tabulce.
 
 ```csharp
 // Nastavte zarovnání na Auto.

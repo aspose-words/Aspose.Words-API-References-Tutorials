@@ -15,7 +15,7 @@ url: /zh/net/add-content-using-documentbuilder/insert-html/
 
 在深入了解分步指南之前，让我们先确保我们已经准备好了所需的一切。以下是一份快速检查清单：
 
-1. Aspose.Words for .NET 库：如果您还没有下载，您需要下载 Aspose.Words for .NET 库。您可以获取它[这里](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET 库：如果您还没有下载，您需要下载 Aspose.Words for .NET 库。您可以获取它[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：确保您已经设置了开发环境，例如 Visual Studio。
 3. .NET Framework：确保您的机器上安装了.NET 框架。
 4. 基本 C# 知识：对 C# 有一点熟悉将会大有帮助。

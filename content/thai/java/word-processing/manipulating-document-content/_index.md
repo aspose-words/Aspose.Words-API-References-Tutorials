@@ -7,7 +7,6 @@ type: docs
 weight: 14
 url: /th/java/word-processing/manipulating-document-content/
 ---
-
 ## การแนะนำ
 
 ในโลกของการเขียนโปรแกรม Java การจัดการเอกสารอย่างมีประสิทธิภาพถือเป็นส่วนสำคัญของแอปพลิเคชันต่างๆ มากมาย ไม่ว่าคุณจะทำงานเกี่ยวกับการสร้างรายงาน จัดการสัญญา หรือจัดการกับงานที่เกี่ยวข้องกับเอกสารใดๆ Aspose.Words for Java เป็นเครื่องมืออันทรงพลังที่ควรมีไว้ในชุดเครื่องมือของคุณ ในคู่มือที่ครอบคลุมนี้ เราจะเจาะลึกถึงความซับซ้อนของการจัดการเนื้อหาเอกสารด้วยการล้างข้อมูล ฟิลด์ และข้อมูล XML โดยใช้ Aspose.Words for Java เราจะให้คำแนะนำทีละขั้นตอนพร้อมกับตัวอย่างโค้ดต้นฉบับเพื่อเสริมความรู้และทักษะที่จำเป็นในการเชี่ยวชาญไลบรารีอเนกประสงค์นี้
@@ -50,7 +49,8 @@ doc.save("cleaned_document.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_without_empty_paragraphs.docx");
 ```
 
@@ -60,13 +60,12 @@ doc.save("document_without_empty_paragraphs.docx");
 
 ```java
 Document doc = new Document("document.docx");
-doc.getRange().getRuns().removeIf(run -> run.getFont().getHidden());
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
 doc.save("document_stripped_of_hidden_content.docx");
 ```
 
 โดยทำตามขั้นตอนเหล่านี้ คุณสามารถมั่นใจได้ว่าเอกสารของคุณสะอาดและพร้อมสำหรับการจัดการเพิ่มเติม
-
----
 
 ## การทำงานกับฟิลด์
 
@@ -96,80 +95,47 @@ doc.save("document_with_inserted_fields.docx");
 
 ฟิลด์เพิ่มความสามารถแบบไดนามิกให้กับเอกสารของคุณ ส่งผลให้เอกสารของคุณมีประโยชน์มากขึ้น
 
----
-
-## การรวมข้อมูล XML
-
-การผสานรวมข้อมูล XML ลงในเอกสารของคุณอาจมีประสิทธิภาพ โดยเฉพาะอย่างยิ่งสำหรับการสร้างเนื้อหาแบบไดนามิก Aspose.Words สำหรับ Java ช่วยลดความซับซ้อนของกระบวนการนี้
-
-### การผูกข้อมูล XML
-
-ผูกข้อมูล XML เข้ากับเอกสารของคุณได้อย่างง่ายดาย:
-
-```java
-Document doc = new Document("template.docx");
-XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-xmlMapping.setMappingName("customer");
-xmlMapping.setXPath("/order/customer");
-xmlMapping.setPrefixMappings("xmlns:ns='http://โครงร่าง.ตัวอย่าง'");
-doc.save("document_with_xml_data.docx");
-```
-
-โค้ดนี้จะผูกข้อมูล XML เข้ากับส่วนเฉพาะของเอกสารของคุณ ทำให้เป็นแบบไดนามิกและขับเคลื่อนด้วยข้อมูล
-
-## คำถามที่พบบ่อย (FAQs)
-
-### ฉันจะลบย่อหน้าว่างออกจากเอกสารได้อย่างไร
-   
-   หากต้องการลบย่อหน้าว่างออกจากเอกสาร คุณสามารถทำซ้ำในย่อหน้าเหล่านั้นและลบย่อหน้าที่ไม่มีเนื้อหาข้อความได้ ต่อไปนี้คือตัวอย่างโค้ดที่จะช่วยให้คุณทำสิ่งนี้ได้:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.getRange().getParagraphs().removeIf(p -> p.getText().trim().isEmpty());
-   doc.save("document_without_empty_paragraphs.docx");
-   ```
-
-### ฉันสามารถอัปเดตฟิลด์ทั้งหมดในเอกสารผ่านโปรแกรมได้หรือไม่
-
-   ใช่ คุณสามารถอัปเดตฟิลด์ทั้งหมดในเอกสารด้วยโปรแกรมโดยใช้ Aspose.Words สำหรับ Java คุณสามารถทำได้ดังนี้:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.updateFields();
-   doc.save("document_with_updated_fields.docx");
-   ```
-
-### ฉันจะผูกข้อมูล XML กับเอกสารได้อย่างไร?
-
-   การเชื่อมโยงข้อมูล XML กับเอกสารเป็นเรื่องง่ายด้วย Aspose.Words สำหรับ Java คุณสามารถใช้การแมป XML เพื่อให้บรรลุสิ่งนี้ได้ นี่คือตัวอย่าง:
-
-   ```java
-   Document doc = new Document("template.docx");
-   XmlMapping xmlMapping = doc.getRange().getXmlMapping();
-   xmlMapping.setMappingName("customer");
-   xmlMapping.setXPath("/order/customer");
-   xmlMapping.setPrefixMappings("xmlns:ns='http://โครงร่าง.ตัวอย่าง'");
-   doc.save("document_with_xml_data.docx");
-   ```
-
-### การทำความสะอาดเนื้อหาเอกสารมีความสำคัญอย่างไร?
-
-   การทำความสะอาดเนื้อหาเอกสารเป็นสิ่งสำคัญเพื่อให้แน่ใจว่าเอกสารของคุณไม่มีองค์ประกอบที่ไม่จำเป็น ซึ่งจะช่วยให้อ่านง่ายขึ้นและลดขนาดไฟล์ได้ นอกจากนี้ยังช่วยรักษาความสอดคล้องของเอกสารอีกด้วย
-
-### ฉันจะลบรูปแบบที่ไม่ได้ใช้ออกจากเอกสารได้อย่างไร
-
-   คุณสามารถลบสไตล์ที่ไม่ได้ใช้จากเอกสารได้โดยใช้ Aspose.Words สำหรับ Java นี่คือตัวอย่าง:
-
-   ```java
-   Document doc = new Document("document.docx");
-   doc.cleanup();
-   doc.save("cleaned_document.docx");
-   ```
-
-### Aspose.Words สำหรับ Java เหมาะกับการสร้างเอกสารแบบไดนามิกที่มีข้อมูล XML หรือไม่
-
-   ใช่ Aspose.Words สำหรับ Java เหมาะอย่างยิ่งสำหรับการสร้างเอกสารแบบไดนามิกด้วยข้อมูล XML โดยมีคุณสมบัติที่แข็งแกร่งสำหรับการผูกข้อมูล XML เข้ากับเทมเพลตและสร้างเอกสารส่วนบุคคล
-
 ## บทสรุป
 
 ในคู่มือที่ครอบคลุมนี้ เราได้สำรวจโลกของการจัดการเนื้อหาเอกสารด้วยการล้างข้อมูล ฟิลด์ และข้อมูล XML โดยใช้ Aspose.Words สำหรับ Java คุณได้เรียนรู้วิธีการล้างข้อมูลเอกสาร ทำงานกับฟิลด์ และผสานข้อมูล XML ได้อย่างราบรื่น ทักษะเหล่านี้มีค่าอย่างยิ่งสำหรับทุกคนที่ต้องจัดการกับการจัดการเอกสารในแอปพลิเคชัน Java
+
+## คำถามที่พบบ่อย
+
+### ฉันจะลบย่อหน้าว่างออกจากเอกสารได้อย่างไร
+   
+หากต้องการลบย่อหน้าว่างออกจากเอกสาร คุณสามารถทำซ้ำในย่อหน้าเหล่านั้นและลบย่อหน้าที่ไม่มีเนื้อหาข้อความได้ ต่อไปนี้คือตัวอย่างโค้ดที่จะช่วยให้คุณทำสิ่งนี้ได้:
+
+```java
+Document doc = new Document("document.docx");
+List<Paragraph> paragraphs = Arrays.asList(doc.getFirstSection().getBody().getParagraphs().toArray());
+paragraphs.removeIf(p -> p.getText().trim().isEmpty());
+doc.save("document_without_empty_paragraphs.docx");
+```
+
+### ฉันสามารถอัปเดตฟิลด์ทั้งหมดในเอกสารผ่านโปรแกรมได้หรือไม่
+
+ใช่ คุณสามารถอัปเดตฟิลด์ทั้งหมดในเอกสารด้วยโปรแกรมโดยใช้ Aspose.Words สำหรับ Java คุณสามารถทำได้ดังนี้:
+
+```java
+Document doc = new Document("document.docx");
+doc.updateFields();
+doc.save("document_with_updated_fields.docx");
+```
+
+### การทำความสะอาดเนื้อหาเอกสารมีความสำคัญอย่างไร?
+
+การทำความสะอาดเนื้อหาเอกสารเป็นสิ่งสำคัญเพื่อให้แน่ใจว่าเอกสารของคุณไม่มีองค์ประกอบที่ไม่จำเป็น ซึ่งจะช่วยให้อ่านง่ายขึ้นและลดขนาดไฟล์ได้ นอกจากนี้ยังช่วยรักษาความสอดคล้องของเอกสารอีกด้วย
+
+### ฉันจะลบรูปแบบที่ไม่ได้ใช้ออกจากเอกสารได้อย่างไร
+
+คุณสามารถลบสไตล์ที่ไม่ได้ใช้จากเอกสารได้โดยใช้ Aspose.Words สำหรับ Java นี่คือตัวอย่าง:
+
+```java
+Document doc = new Document("document.docx");
+doc.cleanup();
+doc.save("cleaned_document.docx");
+```
+
+### Aspose.Words สำหรับ Java เหมาะกับการสร้างเอกสารแบบไดนามิกที่มีข้อมูล XML หรือไม่
+
+ใช่ Aspose.Words สำหรับ Java เหมาะอย่างยิ่งสำหรับการสร้างเอกสารแบบไดนามิกด้วยข้อมูล XML โดยมีคุณสมบัติที่แข็งแกร่งสำหรับการผูกข้อมูล XML เข้ากับเทมเพลตและสร้างเอกสารส่วนบุคคล

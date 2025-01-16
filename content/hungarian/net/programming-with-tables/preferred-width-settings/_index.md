@@ -96,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
-A`PreferredWidth.Auto` A beállítás lehetővé teszi, hogy ez a cella kibővüljön vagy összehúzódjon a többi cella elszámolása után hagyott hely alapján. Ez biztosítja, hogy az asztal elrendezése kiegyensúlyozott és professzionális legyen.
+ A`PreferredWidth.Auto` A beállítás lehetővé teszi, hogy ez a cella kibővüljön vagy összehúzódjon a többi cella elszámolása után hagyott hely alapján. Ez biztosítja, hogy az asztal elrendezése kiegyensúlyozott és professzionális legyen.
 
 ## 5. lépés: Véglegesítse és mentse a dokumentumot
 
