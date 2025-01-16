@@ -19,11 +19,7 @@ Before we delve into embedding OLE objects and ActiveX controls, let's ensure yo
 - Aspose.Words for Python library installed
 - A basic understanding of Word document structure
 
-## Embedding OLE Objects
-
-OLE objects allow you to seamlessly integrate external files, such as spreadsheets or presentations, into your Word documents. Follow these steps to embed an OLE object:
-
-### Step 1: Adding Required Libraries
+## Step 1: Adding Required Libraries
 
 Begin by importing the necessary modules from the Aspose.Words library and any other dependencies:
 
@@ -31,7 +27,7 @@ Begin by importing the necessary modules from the Aspose.Words library and any o
 import aspose.words as aw
 ```
 
-### Step 2: Creating a Word Document
+## Step 2: Creating a Word Document
 
 Create a new Word document using Aspose.Words for Python:
 
@@ -39,42 +35,16 @@ Create a new Word document using Aspose.Words for Python:
 doc = aw.Document()
 ```
 
-### Step 3: Inserting an OLE Object
+## Step 3: Inserting an OLE Object
 
 Now, you can insert an OLE object into your document. For example, let's embed an Excel spreadsheet:
 
 ```python
-ole_stream = open('path_to_spreadsheet.xlsx', 'rb')
-ole_shape = doc.shapes.add_ole_object(100, 100, 300, 200, ole_stream.read())
-ole_stream.close()
-```
+builder = aw.DocumentBuilder(doc)
 
-## Embedding ActiveX Controls
+builder.insert_ole_object("http://www.aspose.com", "htmlfile", True, True, None)
 
-ActiveX controls bring interactivity to your documents, allowing users to interact with embedded content. Follow these steps to embed an ActiveX control:
-
-### Step 1: Adding Required Libraries
-
-Just like with OLE objects, start by importing the necessary modules:
-
-```python
-import aspose.words as aw
-```
-
-### Step 2: Creating a Word Document
-
-Create a new Word document:
-
-```python
-doc = aw.Document()
-```
-
-### Step 3: Inserting an ActiveX Control
-
-Let's say you want to embed a multimedia player. Here's how you can do it:
-
-```python
-activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)
+doc.save(ARTIFACTS_DIR + "WorkingWithOleObjectsAndActiveX.insert_ole_object.docx")
 ```
 
 ## Enhancing Interactivity and Functionality

@@ -51,30 +51,8 @@ Styles also influence paragraph formatting. Adjust alignments, spacing, and more
 from asposewords import ParagraphAlignment
 
 # Apply centered alignment
-paragraph = doc.range.paragraph_format
+paragraph = doc.first_section.body.first_paragraph.paragraph_format
 paragraph.alignment = ParagraphAlignment.CENTER
-```
-
-## Customizing Heading Styles
-
-Headings give structure to documents. Customize heading styles for better hierarchy and readability.
-
-```python
-# Customize heading style
-style = doc.styles.add_style(StyleIdentifier.HEADING_1)
-style.font.size = 16
-style.font.bold = True
-```
-
-## Using Themes for a Unified Look
-
-Themes offer a consistent appearance. Apply a theme to your document for a professional touch.
-
-```python
-from asposewords import ThemeColor
-
-# Apply theme color
-doc.theme.color = ThemeColor.ACCENT_1
 ```
 
 ## Modifying Theme Colors and Fonts
@@ -82,21 +60,12 @@ doc.theme.color = ThemeColor.ACCENT_1
 Tailor themes to your needs by adjusting theme colors and fonts.
 
 ```python
+
 # Modify theme colors
-doc.theme.color = ThemeColor.ACCENT_2
+doc.theme.color = ThemeColor.ACCENT2
 
 # Change theme font
 doc.theme.major_fonts.latin = "Arial"
-```
-
-## Creating Your Own Styles
-
-Craft custom styles for unique document elements, ensuring your brand identity shines.
-
-```python
-# Create custom style
-custom_style = doc.styles.add_style(StyleIdentifier.USER)
-custom_style.font.color = "FF9900"
 ```
 
 ## Managing Style Based on Document Parts
@@ -104,44 +73,17 @@ custom_style.font.color = "FF9900"
 Apply styles differently to headers, footers, and body content for a polished look.
 
 ```python
+import aspose.words as aw
 from asposewords import HeaderFooterType
 
 # Apply style to header
-header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
-header.paragraph_format.style = custom_style
+header = doc.first_section.headers_footers.add(aw.HeaderFooter(doc, aw.HeaderFooterType.HEADER_PRIMARY))
+
+style = doc.styles.add(aw.StyleType.PARAGRAPH, 'MyStyle1')
+style.font.size = 24
+style.font.name = 'Verdana'
+header.paragraph_format.style = style
 ```
-
-## Handling Document-wide Styles
-
-Apply a style to the entire document with ease.
-
-```python
-# Apply style document-wide
-doc.styles.default_paragraph_format.style = custom_style
-```
-
-## Clearing Formatting and Styles
-
-Easily remove styles and formatting to start fresh.
-
-```python
-# Clear formatting
-doc.range.clear_formatting()
-```
-
-## Practical Examples and Use Cases
-
-Let's explore practical scenarios where styles and themes can transform documents.
-
-1. Creating Branded Reports
-2. Designing Stunning Resumes
-3. Formatting Academic Papers
-
-## Tips for Efficient Styling
-
-- Keep Styles Consistent
-- Use Themes for Quick Makeovers
-- Experiment with Different Fonts and Colors
 
 ## Conclusion
 

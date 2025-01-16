@@ -19,10 +19,10 @@ Before we begin, ensure you have Aspose.Words for Python installed. You can down
 ## Loading a Document
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-doc = asposewords.Document("your_document.docx")
+doc = aw.Document("your_document.docx")
 ```
 
 ## Defining Headings and Subheadings
@@ -31,25 +31,11 @@ To generate a table of contents, you need to define the headings and subheadings
 
 ```python
 # Define headings and subheadings
-for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
+for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
     if para.paragraph_format.style_name == "Heading 1":
         # Add main heading
     elif para.paragraph_format.style_name == "Heading 2":
         # Add subheading
-```
-
-## Generating the Table of Contents
-
-Now that we have our headings and subheadings defined, let's generate the table of contents itself. We'll create a new section at the beginning of the document and populate it with the appropriate content.
-
-```python
-# Create a new section for the table of contents
-toc_section = doc.sections.insert_before(doc.sections[0])
-toc_body = toc_section.body
-
-# Add the title of the table of contents
-toc_title = toc_body.append_paragraph("Table of Contents")
-toc_title.paragraph_format.style_name = "Table of Contents Title"
 ```
 
 ## Customizing the Table of Contents
@@ -58,21 +44,10 @@ You can customize the appearance of your table of contents by adjusting fonts, s
 
 ```python
 # Customize the appearance of the table of contents
-for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
+for para in toc_body.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
-
-## Adding Hyperlinks
-
-To make the table of contents interactive, add hyperlinks that allow readers to jump directly to the corresponding sections in the document.
-
-```python
-# Add hyperlinks to headings
-for heading in headings:
-    entry = toc_body.append_paragraph(heading.text)
-    entry.paragraph_format.style_name = "TOC Entries"
-    entry.hyperlink = "#" + heading.get_text().replace(" ", "_")
-```
+``
 
 ## Styling the Table of Contents
 
@@ -81,16 +56,7 @@ Styling the table of contents involves defining appropriate paragraph styles for
 ```python
 # Define styles for the table of contents
 toc_title.style.name = "Table of Contents Title"
-doc.styles.add_style("Table of Contents Title", asposewords.StyleType.PARAGRAPH)
-```
-
-## Updating the Table of Contents
-
-If you make changes to your document's structure, you can easily update the table of contents to reflect those changes.
-
-```python
-# Update the table of contents
-doc.update_fields()
+doc.styles.add_style("Table of Contents Title", aw.StyleType.PARAGRAPH)
 ```
 
 ## Automating the Process
@@ -101,27 +67,13 @@ To save time and ensure consistency, consider creating a script that automatical
 # Automation script
 def generate_table_of_contents(document_path):
     # Load the document
-    doc = asposewords.Document(document_path)
+    doc = aw.Document(document_path)
 
     # ... (Rest of the code)
 
     # Update the table of contents
     doc.update_fields()
     doc.save(document_path)
-```
-
-## Handling Page Numbers
-
-You can add page numbers to the table of contents to provide readers with more context about where to find specific sections.
-
-```python
-# Add page numbers to table of contents
-for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
-    entry_text = entry.get_text()
-    entry_page = doc.get_page_number(entry)
-    entry_text += " - Page " + str(entry_page)
-    entry.clear_contents()
-    entry.append_text(entry_text)
 ```
 
 ## Conclusion

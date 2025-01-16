@@ -92,14 +92,6 @@ range = doc.range
 extracted_text = range.text
 ```
 
-## Merging Documents
-
-Combining documents seamlessly is a valuable skill. Navigating through documents helps us merge them efficiently:
-
-```python
-destination_doc.append_document(source_doc, import_format_mode)
-```
-
 ## Splitting Documents
 
 At times, we might need to split a document into smaller parts. Navigating the document helps us achieve this:
@@ -117,8 +109,8 @@ Headers and footers often require distinct treatment. Navigating these regions a
 
 ```python
 for section in doc.sections:
-    header = section.headers_footers.link_to_previous(False).first_header
-    footer = section.headers_footers.link_to_previous(False).first_footer
+    header = section.headers_footers.link_to_previous(False)
+    footer = section.headers_footers.link_to_previous(False)
     # Your code to work with headers and footers goes here
 ```
 

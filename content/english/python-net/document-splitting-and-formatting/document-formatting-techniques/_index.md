@@ -35,29 +35,15 @@ builder.writeln("Hello, Aspose.Words!")
 doc.save("basic_document.docx")
 ```
 
-## Applying Font Styles and Sizes
-
-Enhance your document's readability and visual appeal by applying font styles and sizes. Use the following code to change the font style and size of a paragraph:
-
-```python
-# Assuming you have a paragraph object
-paragraph.runs[0].font.bold = True
-paragraph.runs[0].font.size = aw.Length(14, aw.LengthUnit.POINTS)
-```
-
-## Formatting Paragraphs and Headings
+## Formatting Paragraphs
 
 To structure your document effectively, formatting paragraphs and headings is crucial. Achieve this using the code below:
 
 ```python
 # For paragraphs
 paragraph.alignment = aw.ParagraphAlignment.CENTER
-paragraph.line_spacing = 1.5
-
-# For headings
-builder.insert_heading("Heading 1", 1)
+builder.paragraph_format.line_spacing = 1.5
 ```
-
 ## Working with Lists and Bullet Points
 
 Lists and bullet points organize content and provide clarity. Implement them using Aspose.Words:
@@ -93,14 +79,13 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Managing Page Layout and Margins
+## Managing Page Layout
 
 Control page layout and margins for optimal presentation:
 
 ```python
 page_setup = doc.page_setup
 page_setup.orientation = aw.Orientation.LANDSCAPE
-page_setup.top_margin = aw.Length(1, aw.LengthUnit.INCHES)
 ```
 
 ## Applying Styles and Themes

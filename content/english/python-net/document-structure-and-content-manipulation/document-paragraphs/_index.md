@@ -38,7 +38,7 @@ new_doc = aw.Document()
 
 ## Basic Text Formatting
 
-Formatting text within a Word document is essential for emphasizing important points and improving readability. Aspose.Words allows you to apply various formatting options, such as **bold**, *italic*, underline, and font size:
+Formatting text within a Word document is essential for emphasizing important points and improving readability. Aspose.Words allows you to apply various formatting options, such as bold, italic, underline, and font size:
 
 ```python
 # Apply basic text formatting
@@ -173,9 +173,7 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 In this comprehensive guide, we explored the capabilities of Aspose.Words for Python in formatting paragraphs and text within Word documents. By using this powerful library, developers can seamlessly automate document formatting, ensuring a professional and polished appearance for their content.
 
----
-
-## FAQs
+## FAQ's
 
 ### How do I install Aspose.Words for Python?
 To install Aspose.Words for Python, use the following command:

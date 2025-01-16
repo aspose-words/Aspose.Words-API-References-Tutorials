@@ -40,8 +40,6 @@ Learn how to utilize comment features in Word Documents using Aspose.Words for P
 Learn how to handle fields and data in Word documents using Aspose.Words for Python. Step-by-step guide with code examples for dynamic content, automation, and more. 
 ### [Understanding Fonts and Text Styling in Word Documents](./document-fonts/)
 Explore the world of fonts and text styling in Word documents. Learn how to enhance readability and visual appeal using Aspose.Words for Python. Comprehensive guide with step-by-step examples.
-### [Exploring Footnotes and Endnotes in Word Documents](./document-footnotes-endnotes/)
-Explore how to effectively use footnotes and endnotes in Word documents using Aspose.Words for Python. Learn to add, customize, and manage these elements programmatically. 
 ### [Mastering Form Fields and Data Capture in Word Documents](./document-form-fields/)
 Master the art of creating and managing form fields in Word documents with Aspose.Words for Python. Learn to capture data efficiently and enhance user engagement. 
 ### [Manipulating Headers and Footers in Word Documents](./document-headers-footers/)
@@ -52,8 +50,6 @@ Learn how to manage hyphenation and text flow in Word documents using Aspose.Wor
 Learn how to create and manage lists in Word documents using Aspose.Words Python API. Step-by-step guide with source code for list formatting, customization, nesting, and more. 
 ### [Utilizing Markdown Formatting in Word Documents](./document-markdown/)
 Learn how to integrate Markdown formatting into Word documents using Aspose.Words for Python. Step-by-step guide with code examples for dynamic and visually appealing content creation. 
-### [Understanding and Navigating Document Nodes](./document-nodes/)
-Learn to manipulate Word documents using Aspose.Words for Python. This step-by-step guide covers loading, formatting, tables, images, and more. Boost your document processing skills today!
 ### [Embedding OLE Objects and ActiveX Controls in Word Documents](./document-ole-objects-active-x/)
  Learn how to embed OLE objects and ActiveX controls in Word documents using Aspose.Words for Python. Create interactive and dynamic documents seamlessly.
 ### [Formatting Paragraphs and Text in Word Documents](./document-paragraphs/)

@@ -23,7 +23,7 @@ Before we dive into the specifics of document table styles and formatting, let's
 2. Import the Library: Import the Aspose.Words library into your Python script using the following import statement:
 
     ```python
-    import aspose.words
+    import aspose.words as aw
     ```
 
 3. Load a Document: Load an existing document or create a new one using the Aspose.Words API.
@@ -35,7 +35,7 @@ To create and insert tables into documents using Aspose.Words for Python, follow
 1. Create a Table: Use the `DocumentBuilder` class to create a new table and specify the number of rows and columns.
 
     ```python
-    builder = aspose.words.DocumentBuilder(doc)
+    builder = aw.DocumentBuilder(doc)
     table = builder.start_table()
     ```
 
@@ -65,7 +65,7 @@ Basic table formatting can be achieved using methods provided by the `Table` and
 
     ```python
     for cell in table.first_row.cells:
-        cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
+        cell.cell_format.preferred_width = aw.PreferredWidth.from_points(100)
     ```
 
 2. Cell Padding: Add padding to cells for improved spacing.
@@ -80,32 +80,8 @@ Basic table formatting can be achieved using methods provided by the `Table` and
 
     ```python
     for row in table.rows:
-        row.row_format.height_rule = aspose.words.HeightRule.AT_LEAST
-        row.row_format.height = aspose.words.ConvertUtil.inch_to_points(1)
-    ```
-
-## Styling Tables with Aspose.Words
-
-Aspose.Words for Python provides a range of styling options to make your tables visually appealing:
-
-1. Table Styles: Apply predefined table styles to achieve a professional look.
-
-    ```python
-    table.style = aspose.words.StyleIdentifier.LIGHT_LIST_ACCENT_5
-    ```
-
-2. Cell Background Color: Change cell background color to highlight specific data.
-
-    ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(240, 240, 240)
-    ```
-
-3. Font Formatting: Customize font style, size, and color for better readability.
-
-    ```python
-    run = cell.paragraphs[0].runs[0]
-    run.font.size = aspose.words.Size(12, aspose.words.SizeUnit.POINTS)
-    run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
+        row.row_format.height_rule = aw.HeightRule.AT_LEAST
+        row.row_format.height = aw.ConvertUtil.inch_to_points(1)
     ```
 
 ## Merging and Splitting Cells for Complex Layouts
@@ -115,30 +91,14 @@ Creating complex table layouts often requires merging and splitting cells:
 1. Merge Cells: Merge multiple cells to create a single larger cell.
 
     ```python
-    table.rows[0].cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.FIRST
-    table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
+    table.rows[0].cells[0].cell_format.horizontal_merge = aw.CellMerge.FIRST
+    table.rows[0].cells[1].cell_format.horizontal_merge = aw.CellMerge.PREVIOUS
     ```
 
 2. Split Cells: Split cells back into their individual components.
 
     ```python
-    cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
-    ```
-
-## Adjusting Row and Column Heights and Widths
-
-Fine-tune row and column dimensions for a balanced table layout:
-
-1. Adjust Row Height: Modify row height based on content.
-
-    ```python
-    row.row_format.height_rule = aspose.words.HeightRule.AUTO
-    ```
-
-2. Adjust Column Width: Automatically adjust column width to fit content.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)
+    cell.cell_format.horizontal_merge = aw.CellMerge.NONE
     ```
 
 ## Adding Borders and Shading to Tables
@@ -148,13 +108,13 @@ Enhance table appearance by adding borders and shading:
 1. Borders: Customize borders for tables and cells.
 
     ```python
-    table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))
+    table.set_borders(0.5, aw.LineStyle.SINGLE, aw.Color.from_rgb(0, 0, 0))
     ```
 
 2. Shading: Apply shading to cells for a visually appealing effect.
 
     ```python
-    cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
+    cell.cell_format.shading.background_pattern_color = aw.Color.from_rgb(230, 230, 230)
     ```
 
 ## Working with Cell Content and Alignment
@@ -171,7 +131,7 @@ Efficiently manage cell content and alignment for better readability:
 2. Text Alignment: Align cell text as needed.
 
     ```python
-    cell.paragraphs[0].paragraph_format.alignment = aspose.words.ParagraphAlignment.CENTER
+    cell.paragraphs[0].paragraph_format.alignment = aw.ParagraphAlignment.CENTER
     ```
 
 ## Handling Table Headers and Footers
@@ -188,26 +148,10 @@ Incorporate headers and footers into your tables for better context:
 
     ```python
     footer_row = table.append_row()
-    footer_row.cells[0].cell_format.horizontal_merge = aspose.words.CellMerge.NONE
+    footer_row.cells[0].cell_format.horizontal_merge = aw.CellMerge.NONE
     footer_row.cells[0].paragraphs[0].runs[0].text = "Total"
     ```
 	
-## Automatically Adjusting Table Layout
-
-Ensure that your table layout adjusts automatically based on content:
-
-1. Auto Fit to Window: Allow the table to fit within the page width.
-
-    ```python
-    table.allow_auto_fit = True
-    ```
-
-2. Auto Resize Cells: Enable automatic cell resizing to accommodate content.
-
-    ```python
-    table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)
-    ```
-
 ## Exporting Tables to Different Formats
 
 Once your table is ready, you can export it to various formats, such as PDF or DOCX:
@@ -215,26 +159,20 @@ Once your table is ready, you can export it to various formats, such as PDF or D
 1. Save as PDF: Save the document with the table as a PDF file.
 
     ```python
-    doc.save("table_document.pdf", aspose.words.SaveFormat.PDF)
+    doc.save("table_document.pdf", aw.SaveFormat.PDF)
     ```
 
 2. Save as DOCX: Save the document as a DOCX file.
 
     ```python
-    doc.save("table_document.docx", aspose.words.SaveFormat.DOCX)
+    doc.save("table_document.docx", aw.SaveFormat.DOCX)
     ```
-
-## Troubleshooting and Tips for Effective Table Management
-
-- If tables appear distorted, check for incorrect column widths or row heights.
-- Test table rendering in different formats to ensure consistency.
-- For complex layouts, plan cell merging and splitting carefully.
-
+	
 ## Conclusion
 
 Aspose.Words for Python offers a comprehensive toolkit for creating, styling, and formatting document tables. By following the steps outlined in this article, you can effectively manage tables in your documents, customize their appearance, and export them to various formats. Harness the power of Aspose.Words to enhance your document presentations and provide clear, visually appealing information to your readers.
 
-## FAQs
+## FAQ's
 
 ### How do I install Aspose.Words for Python?
 

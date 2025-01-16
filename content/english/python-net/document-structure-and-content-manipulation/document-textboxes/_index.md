@@ -38,9 +38,15 @@ Let's start by creating a new Word document and adding a textbox to it. Here's a
 import aspose.words as aw
 
 doc = aw.Document()
-builder = aw.DocumentBuilder(doc)
-
-textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
+builder = aw.DocumentBuilder(doc=doc)
+textbox = aw.drawing.Shape(doc, aw.drawing.ShapeType.TEXT_BOX)
+textbox.width = 100
+textbox.height = 100
+textbox.text_box.layout_flow = aw.drawing.LayoutFlow.BOTTOM_TO_TOP
+textbox.append_child(aw.Paragraph(doc))
+builder.insert_node(textbox)
+builder.move_to(textbox.first_paragraph)
+builder.write('This text is flipped 90 degrees to the left.')
 ```
 
 In this code, we create a new `Document` and a `DocumentBuilder`. The `insert_text_box` method is used to add a textbox to the document. You can customize the content, position, and size of the textbox according to your requirements.

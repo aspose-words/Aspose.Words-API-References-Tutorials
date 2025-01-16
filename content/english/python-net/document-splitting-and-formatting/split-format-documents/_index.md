@@ -19,10 +19,10 @@ Before we dive into the tutorial, make sure you have the following prerequisites
 The first step is to load the document that you want to split and format. Use the following code snippet to achieve this:
 
 ```python
-import asposewords
+import aspose.words as aw
 
 # Load the document
-document = asposewords.Document("path/to/your/document.docx")
+document = aw.Document("path/to/your/document.docx")
 ```
 
 ## Step 2: Split Document into Sections
@@ -41,10 +41,10 @@ Now, let's say you want to apply specific formatting to a section. For example, 
 section = sections[0]
 
 # Update page margins
-section.page_setup.left_margin = asposewords.pt_to_px(1)
-section.page_setup.right_margin = asposewords.pt_to_px(1)
-section.page_setup.top_margin = asposewords.pt_to_px(1)
-section.page_setup.bottom_margin = asposewords.pt_to_px(1)
+section.page_setup.left_margin = aw.pt_to_px(1)
+section.page_setup.right_margin = aw.pt_to_px(1)
+section.page_setup.top_margin = aw.pt_to_px(1)
+section.page_setup.bottom_margin = aw.pt_to_px(1)
 ```
 
 ## Step 4: Save the Document
@@ -55,14 +55,20 @@ After splitting and formatting the document, it's time to save the changes. You 
 document.save("path/to/save/updated_document.docx")
 ```
 
-## FAQs
+## Conclusion
+
+Aspose.Words for Python provides a comprehensive set of tools to efficiently split and format documents according to your needs. By following the steps outlined in this tutorial and utilizing the provided source code examples, you can seamlessly manage your documents and present them professionally.
+
+In this tutorial, we've covered the basics of document splitting, formatting, and provided solutions to common questions. Now it's your turn to explore and experiment with the capabilities of Aspose.Words for Python to further enhance your document management workflow.
+
+## FAQ's
 
 ### How can I split a document into multiple files?
 You can split a document into multiple files by iterating through the sections and saving each section as a separate document. Here's an example:
 
 ```python
 for i, section in enumerate(sections):
-    new_document = asposewords.Document()
+    new_document = aw.Document()
     new_document.append_clone(section)
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
@@ -74,7 +80,7 @@ Yes, you can apply different formatting to paragraphs within a section. Iterate 
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.bold = True
-        run.font.color = asposewords.Color.RED
+        run.font.color = aw.Color.RED
 ```
 
 ### How do I change the font style for a specific section?
@@ -84,7 +90,7 @@ You can change the font style for a specific section by iterating through the pa
 for paragraph in section.paragraphs:
     for run in paragraph.runs:
         run.font.name = "Arial"
-        run.font.size = asposewords.pt_to_px(12)
+        run.font.size = aw.pt_to_px(12)
 ```
 
 ### Is it possible to remove a specific section from the document?
@@ -93,8 +99,3 @@ Yes, you can remove a specific section from the document using the `sections.rem
 ```python
 document.sections.remove(section_to_remove)
 ```
-
-## Conclusion
-Aspose.Words for Python provides a comprehensive set of tools to efficiently split and format documents according to your needs. By following the steps outlined in this tutorial and utilizing the provided source code examples, you can seamlessly manage your documents and present them professionally.
-
-In this tutorial, we've covered the basics of document splitting, formatting, and provided solutions to common questions. Now it's your turn to explore and experiment with the capabilities of Aspose.Words for Python to further enhance your document management workflow.
